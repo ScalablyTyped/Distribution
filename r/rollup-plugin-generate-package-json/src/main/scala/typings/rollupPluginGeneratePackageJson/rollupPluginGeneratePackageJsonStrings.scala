@@ -87,18 +87,6 @@ object rollupPluginGeneratePackageJsonStrings {
   inline def Exclamationmarkx64: Exclamationmarkx64 = "!x64".asInstanceOf[Exclamationmarkx64]
   
   @js.native
-  sealed trait Exports extends StObject
-  inline def Exports: Exports = "Exports".asInstanceOf[Exports]
-  
-  @js.native
-  sealed trait Imports extends StObject
-  inline def Imports: Imports = "Imports".asInstanceOf[Imports]
-  
-  @js.native
-  sealed trait PackageJsonStandard extends StObject
-  inline def PackageJsonStandard: PackageJsonStandard = "PackageJsonStandard".asInstanceOf[PackageJsonStandard]
-  
-  @js.native
   sealed trait aix extends StObject
   inline def aix: aix = "aix".asInstanceOf[aix]
   

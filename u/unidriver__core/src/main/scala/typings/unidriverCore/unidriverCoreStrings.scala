@@ -1,6 +1,6 @@
 package typings.unidriverCore
 
-import typings.unidriverCore.keyTypesMod.KeyDefinitionType
+import typings.unidriverCore.distKeyTypesMod.KeyDefinitionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -212,7 +212,7 @@ object unidriverCoreStrings {
   inline def Backquote: Backquote = "Backquote".asInstanceOf[Backquote]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.unidriverCore.keyTypesMod.KeyDefinitionType because Already inherited */ @js.native
+  - typings.unidriverCore.distKeyTypesMod.KeyDefinitionType because Already inherited */ @js.native
   sealed trait Backslash
     extends StObject
        with KeyDefinitionType
@@ -273,7 +273,7 @@ object unidriverCoreStrings {
   inline def Colon: Colon = ":".asInstanceOf[Colon]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.unidriverCore.keyTypesMod.KeyDefinitionType because Already inherited */ @js.native
+  - typings.unidriverCore.distKeyTypesMod.KeyDefinitionType because Already inherited */ @js.native
   sealed trait Comma
     extends StObject
        with KeyDefinitionType
@@ -1190,7 +1190,7 @@ object unidriverCoreStrings {
   inline def Select: Select = "Select".asInstanceOf[Select]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.unidriverCore.keyTypesMod.KeyDefinitionType because Already inherited */ @js.native
+  - typings.unidriverCore.distKeyTypesMod.KeyDefinitionType because Already inherited */ @js.native
   sealed trait Semicolon
     extends StObject
        with KeyDefinitionType
@@ -1215,14 +1215,14 @@ object unidriverCoreStrings {
   inline def ShiftRight: ShiftRight = "ShiftRight".asInstanceOf[ShiftRight]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.unidriverCore.keyTypesMod.KeyDefinitionType because Already inherited */ @js.native
+  - typings.unidriverCore.distKeyTypesMod.KeyDefinitionType because Already inherited */ @js.native
   sealed trait Slash
     extends StObject
        with KeyDefinitionType
   inline def Slash: Slash = "Slash".asInstanceOf[Slash]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.unidriverCore.keyTypesMod.KeyDefinitionType because Already inherited */ @js.native
+  - typings.unidriverCore.distKeyTypesMod.KeyDefinitionType because Already inherited */ @js.native
   sealed trait Space
     extends StObject
        with KeyDefinitionType

@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object dbusStrings {
   
   @js.native
-  sealed trait PickMatching extends StObject
-  inline def PickMatching: PickMatching = "PickMatching".asInstanceOf[PickMatching]
-  
-  @js.native
   sealed trait session
     extends StObject
        with busType

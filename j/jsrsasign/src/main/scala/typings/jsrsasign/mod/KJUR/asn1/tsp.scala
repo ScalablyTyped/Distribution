@@ -718,7 +718,7 @@ object tsp {
   open class TimeStampReq ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.TimeStampReq {
-    def this(params: Mi) = this()
+    def this(params: Certreq) = this()
     
     /**
       * get hexadecimal string of ASN.1 TLV bytes
@@ -869,5 +869,5 @@ object tsp {
     *  nonce: '9abcf318...',            // nonce (OPTION)
     *  certreq: true}                   // certReq (OPTION)
     */
-  inline def parseTimeStampReq(reqHex: String): Certreq = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTimeStampReq")(reqHex.asInstanceOf[js.Any]).asInstanceOf[Certreq]
+  inline def parseTimeStampReq(reqHex: String): Mi = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTimeStampReq")(reqHex.asInstanceOf[js.Any]).asInstanceOf[Mi]
 }

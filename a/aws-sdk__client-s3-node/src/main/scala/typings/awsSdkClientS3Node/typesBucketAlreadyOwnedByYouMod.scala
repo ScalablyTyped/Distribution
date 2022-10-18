@@ -1,6 +1,6 @@
 package typings.awsSdkClientS3Node
 
-import typings.awsSdkClientS3Node.createBucketExceptionsUnionMod.CreateBucketExceptionsUnion
+import typings.awsSdkClientS3Node.typesCreateBucketExceptionsUnionMod.CreateBucketExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

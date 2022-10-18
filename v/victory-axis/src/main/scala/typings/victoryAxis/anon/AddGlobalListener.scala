@@ -9,7 +9,7 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import typings.std.Pick
 import typings.std.Record
-import typings.victoryCore.eventsMod.ComponentEvent
+import typings.victoryCore.libVictoryUtilEventsMod.ComponentEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -144,6 +144,8 @@ trait AddGlobalListener extends StObject {
   def renderData(props: Any, shouldRenderDatum: js.Function1[/* datum */ Any, Boolean]): DetailedReactHTMLElement[Any, HTMLElement] = js.native
   
   def setState[K /* <: scala.Nothing */](): Unit = js.native
+  def setState[K /* <: scala.Nothing */](state: js.Object | (Pick[js.Object, K])): Unit = js.native
+  def setState[K /* <: scala.Nothing */](state: js.Object | (Pick[js.Object, K]), callback: js.Function0[Unit]): Unit = js.native
   def setState[K /* <: scala.Nothing */](
     state: js.Function2[
       /* prevState */ js.Object, 
@@ -159,11 +161,7 @@ trait AddGlobalListener extends StObject {
     ],
     callback: js.Function0[Unit]
   ): Unit = js.native
-  def setState[K /* <: scala.Nothing */](state: js.Object): Unit = js.native
-  def setState[K /* <: scala.Nothing */](state: js.Object, callback: js.Function0[Unit]): Unit = js.native
   def setState[K /* <: scala.Nothing */](state: Null, callback: js.Function0[Unit]): Unit = js.native
-  def setState[K /* <: scala.Nothing */](state: Pick[js.Object, K]): Unit = js.native
-  def setState[K /* <: scala.Nothing */](state: Pick[js.Object, K], callback: js.Function0[Unit]): Unit = js.native
   
   def shouldComponentUpdate(
     nextProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_victory-core.EventMixinCommonProps */ Any

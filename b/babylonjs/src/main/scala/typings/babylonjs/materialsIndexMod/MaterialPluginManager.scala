@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "MaterialPluginManager")
 @js.native
 open class MaterialPluginManager protected ()
-  extends typings.babylonjs.materialPluginManagerMod.MaterialPluginManager {
+  extends typings.babylonjs.materialsMaterialPluginManagerMod.MaterialPluginManager {
   /**
     * Creates a new instance of the plugin manager
     * @param material material that this manager will manage the plugins for
     */
-  def this(material: typings.babylonjs.materialMod.Material) = this()
+  def this(material: typings.babylonjs.materialsMaterialMod.Material) = this()
 }
 /* static members */
 object MaterialPluginManager {

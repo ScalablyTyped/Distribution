@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler", "Expression")
+/* note: abstract class */ @JSImport("@angular/compiler", "Expression")
 @js.native
-abstract class Expression () extends StObject {
+open class Expression () extends StObject {
   def this(`type`: Type) = this()
   def this(`type`: Null, sourceSpan: ParseSourceSpan) = this()
   def this(`type`: Unit, sourceSpan: ParseSourceSpan) = this()

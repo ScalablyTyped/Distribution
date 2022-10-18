@@ -1,8 +1,8 @@
 package typings.mmdbLib
 
-import typings.mmdbLib.metadataMod.Metadata
-import typings.mmdbLib.responseMod.Response
-import typings.mmdbLib.typesMod.ReaderOptions
+import typings.mmdbLib.libMetadataMod.Metadata
+import typings.mmdbLib.libReaderResponseMod.Response
+import typings.mmdbLib.libTypesMod.ReaderOptions
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -2,7 +2,6 @@ package typings.std
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.anon.AcceptNode
 import typings.std.anon.LookupNamespaceURI
 import typings.std.stdStrings.`public-key`
@@ -17,18 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AlgorithmIdentifier = Algorithm | java.lang.String
 
-type ArrayBufferLike = SharedArrayBuffer | js.typedarray.ArrayBuffer
+type ArrayBufferLike = js.typedarray.ArrayBuffer | SharedArrayBuffer
 
 /** Available only in secure contexts. */
 type AudioWorklet = Worklet
 
 type AutoKeyword = auto
-
-/**
-  * Recursively unwraps the "awaited type" of a type. Non-promise "thenables" should resolve to `never`. This emulates the behavior of `await`.
-  */
-type Awaited[T] = (// the argument to `then` was not callable
-T) | Any
 
 type BigInteger = js.typedarray.Uint8Array
 
@@ -83,11 +76,6 @@ type ConstrainDouble = Double | ConstrainDoubleRange
 
 type ConstrainULong = Double | ConstrainULongRange
 
-/**
-  * Obtain the parameters of a constructor function type in a tuple
-  */
-type ConstructorParameters[T /* <: Instantiable1[/* args */ Any, Any] */] = Any
-
 type DOMHighResTimeStamp = Double
 
 /** Used by the dataset HTML attribute to represent data for custom attributes added to elements. */
@@ -104,8 +92,8 @@ type DocumentTimeline = AnimationTimeline
 type ElementTagNameMap = HTMLElementTagNameMap & (Pick[
 SVGElementTagNameMap, 
 Exclude[
-  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any, 
-  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any
+  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.std.stdStrings.a, typings.std.stdStrings.animate, typings.std.stdStrings.animateMotion */ Any, 
+  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.std.stdStrings.a, typings.std.stdStrings.abbr, typings.std.stdStrings.address */ Any
 ]])
 
 type EpochTimeStamp = Double
@@ -117,16 +105,6 @@ type EvalError = js.Error
 type EventListener = js.Function1[/* evt */ Event, Unit]
 
 type EventListenerOrEventListenerObject = EventListener | EventListenerObject
-
-/**
-  * Exclude from T those types that are assignable to U
-  */
-type Exclude[T, U] = T
-
-/**
-  * Extract from T those types that are assignable to U
-  */
-type Extract[T, U] = T
 
 type FileCallback = js.Function1[/* file */ File, Unit]
 
@@ -186,11 +164,6 @@ StringDictionary[java.lang.String]
 
 type InputDeviceInfo = MediaDeviceInfo
 
-/**
-  * Obtain the return type of a constructor function type
-  */
-type InstanceType[T /* <: Instantiable1[/* args */ Any, Any] */] = Any
-
 type Int32List = js.typedarray.Int32Array | js.Array[GLint]
 
 type IntersectionObserverCallback = js.Function2[
@@ -240,11 +213,6 @@ type NotificationPermissionCallback = js.Function1[/* permission */ Notification
   */
 type Omit[T, K /* <: /* keyof any */ java.lang.String */] = Pick[T, Exclude[/* keyof T */ java.lang.String, K]]
 
-/**
-  * Removes the 'this' parameter from a function type.
-  */
-type OmitThisParameter[T] = T | (js.Function1[/* args */ Any, Any])
-
 type OnBeforeUnloadEventHandler = OnBeforeUnloadEventHandlerNonNull | Null
 
 type OnBeforeUnloadEventHandlerNonNull = js.Function1[/* event */ Event, java.lang.String | Null]
@@ -266,16 +234,16 @@ type ParameterDecorator = js.Function3[
 Unit]
 
 /**
-  * Obtain the parameters of a function type in a tuple
-  */
-type Parameters[T /* <: js.Function1[/* args */ Any, Any] */] = Any
-
-/**
   * Make all properties in T optional
   */
-type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]:? T[P]}
-  */ typings.std.stdStrings.Partial & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ P in keyof T ]:? T[P]}
+  }}}
+  */
+type Partial[T] = T
 
 type PaymentRequestUpdateEventInit = EventInit
 
@@ -288,9 +256,14 @@ type PerformancePaintTiming = PerformanceEntry
 /**
   * From T, pick a set of properties whose keys are in the union K
   */
-type Pick[T, K /* <: /* keyof T */ java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in K ]: T[P]}
-  */ typings.std.stdStrings.Pick & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ P in K ]: T[P]}
+  }}}
+  */
+type Pick[T, K /* <: /* keyof T */ java.lang.String */] = T
 
 type PositionCallback = js.Function1[/* position */ GeolocationPosition, Unit]
 
@@ -338,12 +311,24 @@ type ReadableStreamReader[T] = ReadableStreamDefaultReader[T]
 /**
   * Make all properties in T readonly
   */
-type Readonly[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{readonly [ P in keyof T ]: T[P]}
-  */ typings.std.stdStrings.Readonly & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {readonly [ P in keyof T ]: T[P]}
+  }}}
+  */
+type Readonly[T] = T
 
 /**
   * Construct a type with a set of properties K of type T
+  */
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation throws away the known field names. 
+  * TS definition: {{{
+  {[ P in K ]: T}
+  }}}
   */
 type Record[K /* <: /* keyof any */ java.lang.String */, T] = StringDictionary[T]
 
@@ -356,16 +341,16 @@ type RequestInfo = Request | java.lang.String
 /**
   * Make all properties in T required
   */
-type Required[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: -? T[P]}
-  */ typings.std.stdStrings.Required & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ P in keyof T ]: -? T[P]}
+  }}}
+  */
+type Required[T] = T
 
 type ResizeObserverCallback = js.Function2[/* entries */ js.Array[ResizeObserverEntry], /* observer */ ResizeObserver, Unit]
-
-/**
-  * Obtain the return type of a function type
-  */
-type ReturnType[T /* <: js.Function1[/* args */ Any, Any] */] = Any
 
 type SVGMatrix = DOMMatrix
 
@@ -376,11 +361,6 @@ type SVGRect = DOMRect
 type StaticRange = AbstractRange
 
 type SyntaxError = js.Error
-
-/**
-  * Extracts the type of the 'this' parameter of a function type, or 'unknown' if the function type has no 'this' parameter.
-  */
-type ThisParameterType[T] = Any
 
 type TimerHandler = java.lang.String | js.Function
 

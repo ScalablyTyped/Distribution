@@ -3,7 +3,7 @@ package typings.formatjsIntl
 import typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptions
 import typings.formatjsEcma402Abstract.typesPluralRulesMod.LDMLPluralRule
-import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
+import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
 import typings.formatjsIntl.anon.Formats
 import typings.formatjsIntl.anon.Locale
 import typings.formatjsIntl.anon.OnError

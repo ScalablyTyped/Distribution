@@ -1,6 +1,6 @@
 package typings.stylelint.anon
 
-import typings.postcss.resultMod.Message
+import typings.postcss.libResultMod.Message
 import typings.stylelint.mod.PostcssResult
 import typings.stylelint.mod.StylelintPostcssResult
 import typings.stylelint.mod.WarningOptions

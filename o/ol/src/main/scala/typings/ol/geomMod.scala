@@ -1,8 +1,8 @@
 package typings.ol
 
-import typings.ol.circleMod.default
 import typings.ol.coordinateMod.Coordinate
-import typings.ol.geometryLayoutMod.GeometryLayout
+import typings.ol.geomCircleMod.default
+import typings.ol.geomGeometryLayoutMod.GeometryLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,22 +18,22 @@ object geomMod {
     def this(center: Coordinate, opt_radius: Unit, opt_layout: GeometryLayout) = this()
   }
   
-  @JSImport("ol/geom", "Geometry")
+  /* note: abstract class */ @JSImport("ol/geom", "Geometry")
   @js.native
-  abstract class Geometry ()
-    extends typings.ol.geometryMod.default
+  open class Geometry ()
+    extends typings.ol.geomGeometryMod.default
   
   @JSImport("ol/geom", "GeometryCollection")
   @js.native
   open class GeometryCollection ()
-    extends typings.ol.geometryCollectionMod.default {
-    def this(opt_geometries: js.Array[typings.ol.geometryMod.default]) = this()
+    extends typings.ol.geomGeometryCollectionMod.default {
+    def this(opt_geometries: js.Array[typings.ol.geomGeometryMod.default]) = this()
   }
   
   @JSImport("ol/geom", "LineString")
   @js.native
   open class LineString protected ()
-    extends typings.ol.lineStringMod.default {
+    extends typings.ol.geomLineStringMod.default {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }
@@ -41,7 +41,7 @@ object geomMod {
   @JSImport("ol/geom", "LinearRing")
   @js.native
   open class LinearRing protected ()
-    extends typings.ol.linearRingMod.default {
+    extends typings.ol.geomLinearRingMod.default {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }
@@ -49,19 +49,19 @@ object geomMod {
   @JSImport("ol/geom", "MultiLineString")
   @js.native
   open class MultiLineString protected ()
-    extends typings.ol.multiLineStringMod.default {
-    def this(coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default]) = this()
+    extends typings.ol.geomMultiLineStringMod.default {
+    def this(coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.geomLineStringMod.default]) = this()
     def this(
-      coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default],
+      coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.geomLineStringMod.default],
       opt_layout: GeometryLayout
     ) = this()
     def this(
-      coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default],
+      coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.geomLineStringMod.default],
       opt_layout: Unit,
       opt_ends: js.Array[Double]
     ) = this()
     def this(
-      coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default],
+      coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.geomLineStringMod.default],
       opt_layout: GeometryLayout,
       opt_ends: js.Array[Double]
     ) = this()
@@ -70,7 +70,7 @@ object geomMod {
   @JSImport("ol/geom", "MultiPoint")
   @js.native
   open class MultiPoint protected ()
-    extends typings.ol.multiPointMod.default {
+    extends typings.ol.geomMultiPointMod.default {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }
@@ -78,19 +78,19 @@ object geomMod {
   @JSImport("ol/geom", "MultiPolygon")
   @js.native
   open class MultiPolygon protected ()
-    extends typings.ol.multiPolygonMod.default {
-    def this(coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default]) = this()
+    extends typings.ol.geomMultiPolygonMod.default {
+    def this(coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.geomPolygonMod.default]) = this()
     def this(
-      coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default],
+      coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.geomPolygonMod.default],
       opt_layout: GeometryLayout
     ) = this()
     def this(
-      coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default],
+      coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.geomPolygonMod.default],
       opt_layout: Unit,
       opt_endss: js.Array[js.Array[Double]]
     ) = this()
     def this(
-      coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default],
+      coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.geomPolygonMod.default],
       opt_layout: GeometryLayout,
       opt_endss: js.Array[js.Array[Double]]
     ) = this()
@@ -99,7 +99,7 @@ object geomMod {
   @JSImport("ol/geom", "Point")
   @js.native
   open class Point protected ()
-    extends typings.ol.pointMod.default {
+    extends typings.ol.geomPointMod.default {
     def this(coordinates: Coordinate) = this()
     def this(coordinates: Coordinate, opt_layout: GeometryLayout) = this()
   }
@@ -107,7 +107,7 @@ object geomMod {
   @JSImport("ol/geom", "Polygon")
   @js.native
   open class Polygon protected ()
-    extends typings.ol.polygonMod.default {
+    extends typings.ol.geomPolygonMod.default {
     def this(coordinates: js.Array[js.Array[Coordinate] | Double]) = this()
     def this(coordinates: js.Array[js.Array[Coordinate] | Double], opt_layout: GeometryLayout) = this()
     def this(coordinates: js.Array[js.Array[Coordinate] | Double], opt_layout: Unit, opt_ends: js.Array[Double]) = this()
@@ -118,8 +118,8 @@ object geomMod {
     ) = this()
   }
   
-  @JSImport("ol/geom", "SimpleGeometry")
+  /* note: abstract class */ @JSImport("ol/geom", "SimpleGeometry")
   @js.native
-  abstract class SimpleGeometry ()
-    extends typings.ol.simpleGeometryMod.default
+  open class SimpleGeometry ()
+    extends typings.ol.geomSimpleGeometryMod.default
 }

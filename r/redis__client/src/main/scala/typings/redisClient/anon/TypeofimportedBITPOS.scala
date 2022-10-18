@@ -1,8 +1,8 @@
 package typings.redisClient.anon
 
-import typings.redisClient.genericTransformersMod.BitValue
-import typings.redisClient.libCommandsMod.RedisCommandArgument
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsGenericTransformersMod.BitValue
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import typings.redisClient.redisClientStrings.BIT
 import typings.redisClient.redisClientStrings.BYTE
 import org.scalablytyped.runtime.StObject

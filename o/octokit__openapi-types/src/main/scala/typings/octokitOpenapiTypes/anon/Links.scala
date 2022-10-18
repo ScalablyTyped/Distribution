@@ -8,7 +8,7 @@ trait Links extends StObject {
   
   var _links: Html
   
-  var commit: AuthorCommentsurl
+  var commit: Stats
   
   var name: String
   
@@ -17,7 +17,7 @@ trait Links extends StObject {
   
   var `protected`: Boolean
   
-  var protection: Blockcreations
+  var protection: Allowforcepushes
   
   /** Format: uri */
   var protection_url: String
@@ -29,10 +29,10 @@ object Links {
   
   inline def apply(
     _links: Html,
-    commit: AuthorCommentsurl,
+    commit: Stats,
     name: String,
     `protected`: Boolean,
-    protection: Blockcreations,
+    protection: Allowforcepushes,
     protection_url: String
   ): Links = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any], protection_url = protection_url.asInstanceOf[js.Any])
@@ -42,7 +42,7 @@ object Links {
   
   extension [Self <: Links](x: Self) {
     
-    inline def setCommit(value: AuthorCommentsurl): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: Stats): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -52,7 +52,7 @@ object Links {
     
     inline def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
     
-    inline def setProtection(value: Blockcreations): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
+    inline def setProtection(value: Allowforcepushes): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
     
     inline def setProtection_url(value: String): Self = StObject.set(x, "protection_url", value.asInstanceOf[js.Any])
     

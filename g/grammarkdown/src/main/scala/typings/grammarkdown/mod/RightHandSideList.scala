@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grammarkdown", "RightHandSideList")
 @js.native
-class RightHandSideList ()
-  extends typings.grammarkdown.nodesMod.RightHandSideList {
-  def this(elements: js.Array[typings.grammarkdown.nodesMod.RightHandSide]) = this()
+open class RightHandSideList ()
+  extends typings.grammarkdown.distNodesMod.RightHandSideList {
+  def this(elements: js.Array[typings.grammarkdown.distNodesMod.RightHandSide]) = this()
 }

@@ -404,6 +404,8 @@ object mod {
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
+    var customSuggestionsContainer: js.UndefOr[js.Function1[/* children */ ReactNode, js.UndefOr[ReactNode]]] = js.undefined
+    
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
@@ -948,6 +950,10 @@ object mod {
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
+      
+      inline def setCustomSuggestionsContainer(value: /* children */ ReactNode => js.UndefOr[ReactNode]): Self = StObject.set(x, "customSuggestionsContainer", js.Any.fromFunction1(value))
+      
+      inline def setCustomSuggestionsContainerUndefined: Self = StObject.set(x, "customSuggestionsContainer", js.undefined)
       
       inline def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,6 @@
 package typings.sassEmbedded.anon
 
-import typings.sassEmbedded.pluginThisMod.LegacyPluginThis
+import typings.sassEmbedded.distTypesLegacyPluginThisMod.LegacyPluginThis
 import typings.sassEmbedded.sassEmbeddedInts.`0`
 import typings.sassEmbedded.sassEmbeddedInts.`10`
 import typings.sassEmbedded.sassEmbeddedInts.`1`

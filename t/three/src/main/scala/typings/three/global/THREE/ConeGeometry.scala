@@ -34,5 +34,5 @@ object ConeGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.coneGeometryMod.ConeGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.coneGeometryMod.ConeGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesConeGeometryMod.ConeGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesConeGeometryMod.ConeGeometry]
 }

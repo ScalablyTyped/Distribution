@@ -22,9 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.iobroker.objectsMod.global.ioBroker.ScriptObject
   - typings.iobroker.objectsMod.global.ioBroker.OtherObject
 */
-trait AnyObject
-  extends StObject
-     with _ObjectIdToObjectType[Any, Any]
+trait AnyObject extends StObject
 object AnyObject {
   
   inline def AdapterObject(_id: String, common: AdapterCommon, native: Record[String, Any]): typings.iobroker.objectsMod.global.ioBroker.AdapterObject = {

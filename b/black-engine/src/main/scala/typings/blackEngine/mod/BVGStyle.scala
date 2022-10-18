@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "BVGStyle")
 @js.native
 open class BVGStyle ()
-  extends typings.blackEngine.bvgstyleMod.BVGStyle
+  extends typings.blackEngine.parsersBvgstyleMod.BVGStyle

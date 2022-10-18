@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "Renderer")
 @js.native
 open class Renderer protected ()
-  extends typings.typedoc.outputMod.Renderer {
+  extends typings.typedoc.distLibOutputMod.Renderer {
   /**
     * Create new Component instance.
     */
-  def this(owner: typings.typedoc.applicationMod.Application) = this()
+  def this(owner: typings.typedoc.distLibApplicationMod.Application) = this()
 }
 /* static members */
 object Renderer {

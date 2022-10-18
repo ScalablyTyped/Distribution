@@ -10,7 +10,7 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.reactPaymentInputs.anon.Arialabel
 import typings.reactPaymentInputs.anon.AutoComplete
-import typings.reactPaymentInputs.anon.CardNumber
+import typings.reactPaymentInputs.anon.CardNumberCardType
 import typings.reactPaymentInputs.anon.Error
 import typings.reactPaymentInputs.anon.ErrorText
 import typings.reactPaymentInputs.anon.ExpiryDate
@@ -49,7 +49,7 @@ object mod {
   
   inline def getCardNumberError(
     cardNumber: String,
-    cardNumberValidator: js.Function1[/* props */ CardNumber, String],
+    cardNumberValidator: js.Function1[/* props */ CardNumberCardType, String],
     hasErrorMessages: typings.reactPaymentInputs.anon.ErrorMessages
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getCardNumberError")(cardNumber.asInstanceOf[js.Any], cardNumberValidator.asInstanceOf[js.Any], hasErrorMessages.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -373,7 +373,7 @@ object mod {
     /**
       * Set custom card number validator function
       */
-    var cardNumberValidator: js.UndefOr[js.Function1[/* props */ CardNumber, String]] = js.undefined
+    var cardNumberValidator: js.UndefOr[js.Function1[/* props */ CardNumberCardType, String]] = js.undefined
     
     /**
       * Set custom cvc validator function
@@ -423,7 +423,7 @@ object mod {
       
       inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      inline def setCardNumberValidator(value: /* props */ CardNumber => String): Self = StObject.set(x, "cardNumberValidator", js.Any.fromFunction1(value))
+      inline def setCardNumberValidator(value: /* props */ CardNumberCardType => String): Self = StObject.set(x, "cardNumberValidator", js.Any.fromFunction1(value))
       
       inline def setCardNumberValidatorUndefined: Self = StObject.set(x, "cardNumberValidator", js.undefined)
       

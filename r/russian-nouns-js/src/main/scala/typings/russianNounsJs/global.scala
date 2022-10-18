@@ -1,7 +1,7 @@
 package typings.russianNounsJs
 
-import typings.russianNounsJs.lemmaMod.Lemma
-import typings.russianNounsJs.lemmaMod.LemmaOptions
+import typings.russianNounsJs.srcLemmaMod.Lemma
+import typings.russianNounsJs.srcLemmaMod.LemmaOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

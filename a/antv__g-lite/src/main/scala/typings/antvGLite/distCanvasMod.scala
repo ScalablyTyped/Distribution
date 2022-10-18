@@ -1,22 +1,22 @@
 package typings.antvGLite
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.antvGLite.abstractRendererMod.IRenderer
 import typings.antvGLite.anon.Rendered
-import typings.antvGLite.displayObjectsMod.DisplayObject
-import typings.antvGLite.displayObjectsMod.Group
+import typings.antvGLite.distAbstractRendererMod.IRenderer
+import typings.antvGLite.distDisplayObjectsMod.DisplayObject
+import typings.antvGLite.distDisplayObjectsMod.Group
+import typings.antvGLite.distDomInterfacesMod.DisplayObjectConfig
+import typings.antvGLite.distDomInterfacesMod.ICanvas
+import typings.antvGLite.distDomInterfacesMod.IChildNode
+import typings.antvGLite.distDomMod.Document
+import typings.antvGLite.distDomMod.EventTarget
+import typings.antvGLite.distServicesRenderingContextMod.RenderingContext
+import typings.antvGLite.distShapesPointMod.PointLike
 import typings.antvGLite.distTypesMod.BaseStyleProps
 import typings.antvGLite.distTypesMod.CanvasConfig
 import typings.antvGLite.distTypesMod.Cursor
 import typings.antvGLite.distTypesMod.ParsedBaseStyleProps
-import typings.antvGLite.domInterfacesMod.DisplayObjectConfig
-import typings.antvGLite.domInterfacesMod.ICanvas
-import typings.antvGLite.domInterfacesMod.IChildNode
-import typings.antvGLite.domMod.Document
-import typings.antvGLite.domMod.EventTarget
-import typings.antvGLite.pointMod.PointLike
-import typings.antvGLite.renderingContextMod.RenderingContext
-import typings.manaSyringe.coreMod.Syringe.Container
+import typings.manaSyringe.libCoreMod.Syringe.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

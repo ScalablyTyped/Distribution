@@ -17,7 +17,7 @@ trait TypeofNgControlStatusGrou
   
   var ɵdir: ɵɵDirectiveDeclaration[
     NgControlStatusGroup, 
-    String, 
+    /* [formGroupName],[formArrayName],[ngModelGroup],[formGroup],form:not([ngNoForm]),[ngForm] */ String, 
     scala.Nothing, 
     js.Object, 
     js.Object, 

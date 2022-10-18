@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +18,7 @@ trait CheckDataAccessRequest extends StObject {
   
   /** The values of request attributes associated with this access request. */
   var requestAttributes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.CheckDataAccessRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Optional. The view for CheckDataAccessResponse. If unspecified, defaults to `BASIC` and returns `consented` as `TRUE` or `FALSE`. */
@@ -45,9 +42,7 @@ object CheckDataAccessRequest {
     inline def setDataIdUndefined: Self = StObject.set(x, "dataId", js.undefined)
     
     inline def setRequestAttributes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.CheckDataAccessRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
     
     inline def setRequestAttributesUndefined: Self = StObject.set(x, "requestAttributes", js.undefined)

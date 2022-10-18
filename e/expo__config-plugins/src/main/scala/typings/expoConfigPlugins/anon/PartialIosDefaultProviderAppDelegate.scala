@@ -1,8 +1,8 @@
 package typings.expoConfigPlugins.anon
 
-import typings.expoConfigPlugins.createBaseModMod.BaseModProviderMethods
-import typings.expoConfigPlugins.iosConfigTypesMod.InfoPlist
-import typings.expoConfigPlugins.iosPathsMod.AppDelegateProjectFile
+import typings.expoConfigPlugins.buildIosIosConfigDottypesMod.InfoPlist
+import typings.expoConfigPlugins.buildIosPathsMod.AppDelegateProjectFile
+import typings.expoConfigPlugins.buildPluginsCreateBaseModMod.BaseModProviderMethods
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

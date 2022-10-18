@@ -38,7 +38,7 @@ object AudioListing {
     
     inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
-    inline def setAudioVarargs(value: AudioResource*): Self = StObject.set(x, "audio", js.Array(value :_*))
+    inline def setAudioVarargs(value: AudioResource*): Self = StObject.set(x, "audio", js.Array(value*))
     
     inline def setContainer(value: AudioResource): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

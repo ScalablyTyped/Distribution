@@ -64,7 +64,7 @@ trait LinkedWorkbook
   
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-    * Whereas the original Excel.LinkedWorkbook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedWorkbookData`) that contains shallow copies of any loaded child properties from the original object.
+    * Whereas the original `Excel.LinkedWorkbook` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedWorkbookData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): LinkedWorkbookData = js.native
 }

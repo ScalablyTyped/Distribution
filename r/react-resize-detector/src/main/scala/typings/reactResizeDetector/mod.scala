@@ -4,14 +4,14 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.PropsWithoutRef
 import typings.react.mod.RefAttributes
+import typings.reactResizeDetector.buildResizeDetectorMod.ComponentsProps
+import typings.reactResizeDetector.buildUseResizeDetectorMod.FunctionProps
+import typings.reactResizeDetector.buildUseResizeDetectorMod.UseResizeDetectorReturn
+import typings.reactResizeDetector.buildWithResizeDetectorMod.OptionalKey
+import typings.reactResizeDetector.buildWithResizeDetectorMod.Without
 import typings.reactResizeDetector.reactResizeDetectorStrings.height
 import typings.reactResizeDetector.reactResizeDetectorStrings.targetRef
 import typings.reactResizeDetector.reactResizeDetectorStrings.width
-import typings.reactResizeDetector.resizeDetectorMod.ComponentsProps
-import typings.reactResizeDetector.useResizeDetectorMod.FunctionProps
-import typings.reactResizeDetector.useResizeDetectorMod.UseResizeDetectorReturn
-import typings.reactResizeDetector.withResizeDetectorMod.OptionalKey
-import typings.reactResizeDetector.withResizeDetectorMod.Without
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +26,7 @@ object mod {
   @JSImport("react-resize-detector", JSImport.Default)
   @js.native
   open class default[ElementT /* <: HTMLElement */] protected ()
-    extends typings.reactResizeDetector.resizeDetectorMod.default[ElementT] {
+    extends typings.reactResizeDetector.buildResizeDetectorMod.default[ElementT] {
     def this(props: ComponentsProps[ElementT]) = this()
   }
   

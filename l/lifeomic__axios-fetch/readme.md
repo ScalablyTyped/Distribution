@@ -1,7 +1,7 @@
 
 # Scala.js typings for lifeomic__axios-fetch
 
-Typings are for version 3.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 A WebAPI Fetch implementation backed by an Axios client

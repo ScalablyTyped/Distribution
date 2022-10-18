@@ -40,7 +40,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactRouter.contextMod.RelativeRoutingType
+import typings.reactRouter.distLibContextMod.RelativeRoutingType
 import typings.reactRouterDom.anon.IsActive
 import typings.reactRouterDom.mod.LinkProps
 import typings.reactRouterHashLink.reactRouterHashLinkStrings.`additions removals`
@@ -93,7 +93,7 @@ import typings.reactRouterHashLink.reactRouterHashLinkStrings.tree
 import typings.reactRouterHashLink.reactRouterHashLinkStrings.url
 import typings.reactRouterHashLink.reactRouterHashLinkStrings.vertical
 import typings.reactRouterHashLink.reactRouterHashLinkStrings.yes
-import typings.remixRunRouter.historyMod.To
+import typings.remixRunRouter.distHistoryMod.To
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLAnchorElement

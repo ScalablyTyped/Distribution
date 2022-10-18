@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param geometry
   * @param [thresholdAngle=1]
   */
-open class EdgesGeometry[TBufferGeometry /* <: typings.three.bufferGeometryMod.BufferGeometry */] ()
+open class EdgesGeometry[TBufferGeometry /* <: typings.three.srcCoreBufferGeometryMod.BufferGeometry */] ()
   extends typings.three.mod.EdgesGeometry[TBufferGeometry] {
   def this(geometry: TBufferGeometry) = this()
   def this(geometry: TBufferGeometry, thresholdAngle: Double) = this()

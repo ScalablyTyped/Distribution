@@ -32,7 +32,7 @@ object AlignedElement {
     
     inline def setElement_pairUndefined: Self = StObject.set(x, "element_pair", js.undefined)
     
-    inline def setElement_pairVarargs(value: ElementPair*): Self = StObject.set(x, "element_pair", js.Array(value :_*))
+    inline def setElement_pairVarargs(value: ElementPair*): Self = StObject.set(x, "element_pair", js.Array(value*))
     
     inline def setIdentical_text(value: Boolean): Self = StObject.set(x, "identical_text", value.asInstanceOf[js.Any])
     
@@ -42,7 +42,7 @@ object AlignedElement {
     
     inline def setProvenance_idsUndefined: Self = StObject.set(x, "provenance_ids", js.undefined)
     
-    inline def setProvenance_idsVarargs(value: String*): Self = StObject.set(x, "provenance_ids", js.Array(value :_*))
+    inline def setProvenance_idsVarargs(value: String*): Self = StObject.set(x, "provenance_ids", js.Array(value*))
     
     inline def setSignificant_elements(value: Boolean): Self = StObject.set(x, "significant_elements", value.asInstanceOf[js.Any])
     

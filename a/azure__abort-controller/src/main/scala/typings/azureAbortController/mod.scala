@@ -1,7 +1,7 @@
 package typings.azureAbortController
 
-import typings.azureAbortController.abortSignalMod.AbortSignalLike
-import typings.azureAbortController.abortSignalMod.AbortSignal_
+import typings.azureAbortController.typesSrcAbortSignalMod.AbortSignalLike
+import typings.azureAbortController.typesSrcAbortSignalMod.AbortSignal_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object mod {
     * @param parentSignals - The AbortSignals that will signal aborted on the AbortSignal associated with this controller.
     */
   open class AbortController ()
-    extends typings.azureAbortController.abortControllerMod.AbortController {
+    extends typings.azureAbortController.typesSrcAbortControllerMod.AbortController {
     /**
       * @param parentSignals - The AbortSignals that will signal aborted on the AbortSignal associated with this controller.
       */
@@ -38,7 +38,7 @@ object mod {
   @JSImport("@azure/abort-controller", "AbortError")
   @js.native
   open class AbortError ()
-    extends typings.azureAbortController.abortControllerMod.AbortError {
+    extends typings.azureAbortController.typesSrcAbortControllerMod.AbortError {
     def this(message: String) = this()
   }
   

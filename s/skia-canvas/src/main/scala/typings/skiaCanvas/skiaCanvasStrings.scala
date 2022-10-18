@@ -1,8 +1,8 @@
 package typings.skiaCanvas
 
-import typings.skiaCanvas.mod.CursorStyle
-import typings.skiaCanvas.mod.ExportFormat
-import typings.skiaCanvas.mod.FitStyle
+import typings.skiaCanvas.libMod.CursorStyle
+import typings.skiaCanvas.libMod.ExportFormat
+import typings.skiaCanvas.libMod.FitStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

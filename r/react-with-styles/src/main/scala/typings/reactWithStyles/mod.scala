@@ -143,17 +143,41 @@ object mod {
     inline def theme_=(x: js.UndefOr[Validator[Theme]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
   }
   
-  type ComponentClassProps[C] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    C extends new (props : infer P, context : any | undefined): any ? P : never
+    }}}
+    */
+  @js.native
+  trait ComponentClassProps[C] extends StObject
   
   type ElementConfig[C] = LibraryManagedAttributes[C, ElementProps[C]]
   
-  type ElementProps[C] = SFCProps[C] | ComponentClassProps[C]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    C extends react.react.ComponentClass<any, react.react.ComponentState> ? react-with-styles.react-with-styles.ComponentClassProps<C> : C extends react.react.FC<any> ? react-with-styles.react-with-styles.SFCProps<C> : any
+    }}}
+    */
+  @js.native
+  trait ElementProps[C] extends StObject
   
   type Nullable[T] = js.UndefOr[T | Null]
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  type SFCProps[C] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    C extends (props : infer P & {  children :react.react.ReactNode | undefined}, context : any | undefined): any ? P : never
+    }}}
+    */
+  @js.native
+  trait SFCProps[C] extends StObject
   
   type Styles = StringDictionary[Nullable[CSSPropertiespseudoSelect]]
   

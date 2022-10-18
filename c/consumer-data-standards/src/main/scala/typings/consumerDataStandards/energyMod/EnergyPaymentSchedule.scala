@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.consumerDataStandards.anon.BillFrequency
 import typings.consumerDataStandards.anon.Bsb
 import typings.consumerDataStandards.anon.CalculationType
+import typings.consumerDataStandards.anon.PaymentFrequency
 import typings.consumerDataStandards.consumerDataStandardsStrings.cardDebit
+import typings.consumerDataStandards.consumerDataStandardsStrings.digitalWallet
 import typings.consumerDataStandards.consumerDataStandardsStrings.directDebit
 import typings.consumerDataStandards.consumerDataStandardsStrings.manualPayment
 import org.scalablytyped.runtime.StObject
@@ -26,6 +28,11 @@ trait EnergyPaymentSchedule
   var cardDebit: js.UndefOr[CalculationType | Null] = js.undefined
   
   /**
+    * Represents a regular payment from a digital wallet. Mandatory if paymentScheduleUType is set to digitalWallet
+    */
+  var digitalWallet: js.UndefOr[PaymentFrequency | Null] = js.undefined
+  
+  /**
     * Represents a regular direct debit from a specified bank account. Mandatory if paymentScheduleUType is set to directDebit
     */
   var directDebit: js.UndefOr[Bsb | Null] = js.undefined
@@ -38,11 +45,11 @@ trait EnergyPaymentSchedule
   /**
     * The type of object present in this response
     */
-  var paymentScheduleUType: cardDebit | directDebit | manualPayment
+  var paymentScheduleUType: cardDebit | directDebit | manualPayment | digitalWallet
 }
 object EnergyPaymentSchedule {
   
-  inline def apply(paymentScheduleUType: cardDebit | directDebit | manualPayment): EnergyPaymentSchedule = {
+  inline def apply(paymentScheduleUType: cardDebit | directDebit | manualPayment | digitalWallet): EnergyPaymentSchedule = {
     val __obj = js.Dynamic.literal(paymentScheduleUType = paymentScheduleUType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnergyPaymentSchedule]
   }
@@ -61,6 +68,12 @@ object EnergyPaymentSchedule {
     
     inline def setCardDebitUndefined: Self = StObject.set(x, "cardDebit", js.undefined)
     
+    inline def setDigitalWallet(value: PaymentFrequency): Self = StObject.set(x, "digitalWallet", value.asInstanceOf[js.Any])
+    
+    inline def setDigitalWalletNull: Self = StObject.set(x, "digitalWallet", null)
+    
+    inline def setDigitalWalletUndefined: Self = StObject.set(x, "digitalWallet", js.undefined)
+    
     inline def setDirectDebit(value: Bsb): Self = StObject.set(x, "directDebit", value.asInstanceOf[js.Any])
     
     inline def setDirectDebitNull: Self = StObject.set(x, "directDebit", null)
@@ -73,6 +86,6 @@ object EnergyPaymentSchedule {
     
     inline def setManualPaymentUndefined: Self = StObject.set(x, "manualPayment", js.undefined)
     
-    inline def setPaymentScheduleUType(value: cardDebit | directDebit | manualPayment): Self = StObject.set(x, "paymentScheduleUType", value.asInstanceOf[js.Any])
+    inline def setPaymentScheduleUType(value: cardDebit | directDebit | manualPayment | digitalWallet): Self = StObject.set(x, "paymentScheduleUType", value.asInstanceOf[js.Any])
   }
 }

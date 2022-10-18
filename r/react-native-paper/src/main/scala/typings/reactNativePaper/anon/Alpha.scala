@@ -18,14 +18,14 @@ trait Alpha extends StObject {
   
   var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
 }
 object Alpha {
   
   inline def apply(
     alpha: Double,
     family: regular | medium | light | thin,
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   ): Alpha = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alpha]
@@ -43,6 +43,6 @@ object Alpha {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

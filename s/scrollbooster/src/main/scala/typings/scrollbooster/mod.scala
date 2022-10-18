@@ -3,6 +3,7 @@ package typings.scrollbooster
 import typings.scrollbooster.anon.Bottom
 import typings.scrollbooster.anon.PartialScrollBoosterOptio
 import typings.scrollbooster.anon.RequiredPosition
+import typings.scrollbooster.anon.X
 import typings.scrollbooster.scrollboosterStrings.all
 import typings.scrollbooster.scrollboosterStrings.horizontal
 import typings.scrollbooster.scrollboosterStrings.mouse
@@ -216,7 +217,7 @@ object mod {
     
     var borderCollision: Bottom
     
-    var dragOffset: Double
+    var dragOffset: X
     
     var isDragging: Boolean
     
@@ -228,7 +229,7 @@ object mod {
     
     inline def apply(
       borderCollision: Bottom,
-      dragOffset: Double,
+      dragOffset: X,
       isDragging: Boolean,
       isMoving: Boolean,
       position: RequiredPosition
@@ -241,7 +242,7 @@ object mod {
       
       inline def setBorderCollision(value: Bottom): Self = StObject.set(x, "borderCollision", value.asInstanceOf[js.Any])
       
-      inline def setDragOffset(value: Double): Self = StObject.set(x, "dragOffset", value.asInstanceOf[js.Any])
+      inline def setDragOffset(value: X): Self = StObject.set(x, "dragOffset", value.asInstanceOf[js.Any])
       
       inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
       

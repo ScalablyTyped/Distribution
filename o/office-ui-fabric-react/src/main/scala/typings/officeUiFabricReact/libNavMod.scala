@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.navTypesMod.INavProps
+import typings.officeUiFabricReact.libComponentsNavNavDottypesMod.INavProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object libNavMod {
   @JSImport("office-ui-fabric-react/lib/Nav", "NavBase")
   @js.native
   open class NavBase protected ()
-    extends typings.officeUiFabricReact.navMod.NavBase {
+    extends typings.officeUiFabricReact.libComponentsNavMod.NavBase {
     def this(props: INavProps) = this()
   }
   /* static members */

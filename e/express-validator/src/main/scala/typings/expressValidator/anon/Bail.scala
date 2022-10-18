@@ -1,16 +1,16 @@
 package typings.expressValidator.anon
 
-import typings.expressValidator.baseMod.CustomValidator
-import typings.expressValidator.baseMod.DynamicMessageCreator
-import typings.expressValidator.baseMod.Meta
-import typings.expressValidator.schemaMod.ValidatorSchemaOptions
-import typings.expressValidator.validationChainMod.ValidationChain
+import typings.expressValidator.srcBaseMod.CustomValidator
+import typings.expressValidator.srcBaseMod.DynamicMessageCreator
+import typings.expressValidator.srcBaseMod.Meta
+import typings.expressValidator.srcChainValidationChainMod.ValidationChain
+import typings.expressValidator.srcMiddlewaresSchemaMod.ValidatorSchemaOptions
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Bail[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88 */ Any */]
+trait Bail[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88, starting with typings.expressValidator.expressValidatorStrings.not, typings.expressValidator.expressValidatorStrings.withMessage, typings.expressValidator.expressValidatorStrings.custom */ Any */]
   extends StObject
      with ValidatorSchemaOptions[K] {
   
@@ -30,12 +30,12 @@ trait Bail[K /* <: /* keyof express-validator.express-validator/src/chain/valida
 }
 object Bail {
   
-  inline def apply[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88 */ Any */](): Bail[K] = {
+  inline def apply[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88, starting with typings.expressValidator.expressValidatorStrings.not, typings.expressValidator.expressValidatorStrings.withMessage, typings.expressValidator.expressValidatorStrings.custom */ Any */](): Bail[K] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bail[K]]
   }
   
-  extension [Self <: Bail[?], K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88 */ Any */](x: Self & Bail[K]) {
+  extension [Self <: Bail[?], K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88, starting with typings.expressValidator.expressValidatorStrings.not, typings.expressValidator.expressValidatorStrings.withMessage, typings.expressValidator.expressValidatorStrings.custom */ Any */](x: Self & Bail[K]) {
     
     inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
     

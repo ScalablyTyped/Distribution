@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /** @internal */
-type HyperFormulaNS = typings.hyperformula.hyperFormulaMod.HyperFormula
+type HyperFormulaNS = typings.hyperformula.typingsHyperFormulaMod.HyperFormula

@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsBackendWasm
 
-import typings.tensorflowTfjsBackendWasm.backendWasmMod.WasmBinaryName
+import typings.tensorflowTfjsBackendWasm.distBackendWasmMod.WasmBinaryName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,10 +22,6 @@ object tensorflowTfjsBackendWasmStrings {
   @js.native
   sealed trait int32 extends StObject
   inline def int32: int32 = "int32".asInstanceOf[int32]
-  
-  @js.native
-  sealed trait setWasmPaths extends StObject
-  inline def setWasmPaths: setWasmPaths = "setWasmPaths".asInstanceOf[setWasmPaths]
   
   @js.native
   sealed trait string extends StObject

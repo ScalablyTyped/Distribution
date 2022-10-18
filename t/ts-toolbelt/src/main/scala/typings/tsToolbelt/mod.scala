@@ -1,7 +1,7 @@
 package typings.tsToolbelt
 
-import typings.tsToolbelt.booleanInternalMod.Boolean
-import typings.tsToolbelt.equalsMod.Equals
+import typings.tsToolbelt.outAnyEqualsMod.Equals
+import typings.tsToolbelt.outBooleanInternalMod.Boolean
 import typings.tsToolbelt.tsToolbeltInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

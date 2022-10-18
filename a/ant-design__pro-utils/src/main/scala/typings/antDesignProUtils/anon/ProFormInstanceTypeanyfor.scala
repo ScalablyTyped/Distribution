@@ -1,8 +1,8 @@
 package typings.antDesignProUtils.anon
 
 import typings.antDesignProUtils.antDesignProUtilsBooleans.`true`
-import typings.antd.useFormMod.FormInstance
-import typings.rcFieldForm.interfaceMod.NamePath
+import typings.antd.libFormHooksUseFormMod.FormInstance
+import typings.rcFieldForm.esInterfaceMod.NamePath
 import typings.react.mod.MutableRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

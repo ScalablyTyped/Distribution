@@ -1,7 +1,7 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.layoutMod._LayoutOffset
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaTypings.typesSpecLayoutMod._LayoutOffset
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

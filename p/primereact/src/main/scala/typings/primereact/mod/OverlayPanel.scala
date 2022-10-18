@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.overlaypanelMod.OverlayPanelProps
+import typings.primereact.overlaypanelOverlaypanelMod.OverlayPanelProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "OverlayPanel")
 @js.native
 open class OverlayPanel protected ()
-  extends typings.primereact.overlaypanelMod.OverlayPanel {
+  extends typings.primereact.overlaypanelOverlaypanelMod.OverlayPanel {
   def this(props: OverlayPanelProps) = this()
   /**
     * @deprecated

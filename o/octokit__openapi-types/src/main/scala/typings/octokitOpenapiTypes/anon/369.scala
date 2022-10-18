@@ -6,22 +6,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `369` extends StObject {
   
-  /** The name of the codespace. */
-  var codespace_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['codespace-name'] */ js.Any
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-discussion'] */ js.Any
+  ]
 }
 object `369` {
   
   inline def apply(
-    codespace_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['codespace-name'] */ js.Any
+    applicationSlashjson: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-discussion'] */ js.Any
+    ]
   ): `369` = {
-    val __obj = js.Dynamic.literal(codespace_name = codespace_name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`369`]
   }
   
   extension [Self <: `369`](x: Self) {
     
-    inline def setCodespace_name(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['codespace-name'] */ js.Any
-    ): Self = StObject.set(x, "codespace_name", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-discussion'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationSlashjsonVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-discussion'] */ js.Any)*
+    ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

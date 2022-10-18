@@ -1,6 +1,6 @@
 package typings.expoLocalization
 
-import typings.expoLocalization.localizationTypesMod.Localization
+import typings.expoLocalization.buildLocalizationDottypesMod.Localization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

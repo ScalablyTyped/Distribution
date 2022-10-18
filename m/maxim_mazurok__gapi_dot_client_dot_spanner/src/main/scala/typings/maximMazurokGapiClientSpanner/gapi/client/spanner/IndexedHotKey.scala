@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait IndexedHotKey extends StObject {
     * ScanData.VisualizationData.indexed_keys repeated field.
     */
   var sparseHotKeys: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.IndexedHotKey & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any
   ] = js.undefined
 }
 object IndexedHotKey {
@@ -27,9 +24,7 @@ object IndexedHotKey {
   extension [Self <: IndexedHotKey](x: Self) {
     
     inline def setSparseHotKeys(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.IndexedHotKey & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any
     ): Self = StObject.set(x, "sparseHotKeys", value.asInstanceOf[js.Any])
     
     inline def setSparseHotKeysUndefined: Self = StObject.set(x, "sparseHotKeys", js.undefined)

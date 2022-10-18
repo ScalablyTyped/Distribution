@@ -1,19 +1,11 @@
 package typings.angularDevkitCore
 
-import typings.angularDevkitCore.loggerLoggerMod.LogLevel
+import typings.angularDevkitCore.srcLoggerLoggerMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularDevkitCoreStrings {
-  
-  @js.native
-  sealed trait DeepReadonlyObject extends StObject
-  inline def DeepReadonlyObject: DeepReadonlyObject = "DeepReadonlyObject".asInstanceOf[DeepReadonlyObject]
-  
-  @js.native
-  sealed trait Readwrite extends StObject
-  inline def Readwrite: Readwrite = "Readwrite".asInstanceOf[Readwrite]
   
   @js.native
   sealed trait Set extends StObject

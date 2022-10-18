@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MergedRollupOptions
   extends StObject
-     with InputOptions {
+     with InputOptionsWithPlugins {
   
   var output: js.Array[OutputOptions]
 }
 object MergedRollupOptions {
   
-  inline def apply(output: js.Array[OutputOptions]): MergedRollupOptions = {
-    val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
+  inline def apply(output: js.Array[OutputOptions], plugins: js.Array[Plugin]): MergedRollupOptions = {
+    val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergedRollupOptions]
   }
   

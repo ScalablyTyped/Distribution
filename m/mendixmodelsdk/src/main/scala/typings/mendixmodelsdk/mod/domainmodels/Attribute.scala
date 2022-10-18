@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.domainmodels
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenDomainmodelsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "domainmodels.Attribute")
 @js.native
 open class Attribute protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.Attribute {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.domainmodels.Attribute {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object Attribute {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Attribute]
   
   /**
     * Creates and returns a new Attribute instance in the SDK and on the server.
@@ -47,7 +47,7 @@ object Attribute {
     * of the parent Entity element passed as argument.
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Entity): typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Entity): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Attribute]
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.Attribute.structureTypeName")

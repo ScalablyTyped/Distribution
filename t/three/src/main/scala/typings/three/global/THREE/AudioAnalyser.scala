@@ -13,6 +13,6 @@ open class AudioAnalyser protected ()
     * @param audio
     * @param [fftSize=2048]
     */
-  def this(audio: typings.three.audioMod.Audio[AudioNode]) = this()
-  def this(audio: typings.three.audioMod.Audio[AudioNode], fftSize: Double) = this()
+  def this(audio: typings.three.srcAudioAudioMod.Audio[AudioNode]) = this()
+  def this(audio: typings.three.srcAudioAudioMod.Audio[AudioNode], fftSize: Double) = this()
 }

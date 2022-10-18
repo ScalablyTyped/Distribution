@@ -1,7 +1,7 @@
 package typings.opentelemetryApiMetrics
 
-import typings.opentelemetryApiMetrics.meterMod.Meter
-import typings.opentelemetryApiMetrics.metricsMod.MetricsAPI
+import typings.opentelemetryApiMetrics.buildSrcApiMetricsMod.MetricsAPI
+import typings.opentelemetryApiMetrics.buildSrcTypesMeterMod.Meter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +17,11 @@ object mod {
   object ValueType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.opentelemetryApiMetrics.metricMod.ValueType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.opentelemetryApiMetrics.buildSrcTypesMetricMod.ValueType & Double] = js.native
     
-    /* 1 */ val DOUBLE: typings.opentelemetryApiMetrics.metricMod.ValueType.DOUBLE & Double = js.native
+    /* 1 */ val DOUBLE: typings.opentelemetryApiMetrics.buildSrcTypesMetricMod.ValueType.DOUBLE & Double = js.native
     
-    /* 0 */ val INT: typings.opentelemetryApiMetrics.metricMod.ValueType.INT & Double = js.native
+    /* 0 */ val INT: typings.opentelemetryApiMetrics.buildSrcTypesMetricMod.ValueType.INT & Double = js.native
   }
   
   inline def createNoopMeter(): Meter = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoopMeter")().asInstanceOf[Meter]

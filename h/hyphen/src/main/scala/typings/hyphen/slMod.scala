@@ -1,19 +1,31 @@
 package typings.hyphen
 
-import org.scalablytyped.runtime.Shortcut
+import typings.hyphen.mod.HyphenationFunctionAsync
+import typings.hyphen.mod.HyphenationFunctionSync
 import typings.hyphen.mod.PatternsDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object slMod extends Shortcut {
+object slMod {
   
-  @JSImport("hyphen/patterns/sl", JSImport.Namespace)
+  @JSImport("hyphen/sl", "hyphenate")
   @js.native
-  val ^ : PatternsDefinition = js.native
+  val hyphenate: HyphenationFunctionAsync = js.native
   
-  type _To = PatternsDefinition
+  @JSImport("hyphen/sl", "hyphenateHTML")
+  @js.native
+  val hyphenateHTML: HyphenationFunctionAsync = js.native
   
-  /* This means you don't have to write `^`, but can instead just say `slMod.foo` */
-  override def _to: PatternsDefinition = ^
+  @JSImport("hyphen/sl", "hyphenateHTMLSync")
+  @js.native
+  val hyphenateHTMLSync: HyphenationFunctionSync = js.native
+  
+  @JSImport("hyphen/sl", "hyphenateSync")
+  @js.native
+  val hyphenateSync: HyphenationFunctionSync = js.native
+  
+  @JSImport("hyphen/sl", "patterns")
+  @js.native
+  val patterns: PatternsDefinition = js.native
 }

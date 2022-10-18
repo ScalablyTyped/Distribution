@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.meshoptCompressionMod.IMeshoptCompressionConfiguration
+import typings.babylonjs.meshesCompressionMeshoptCompressionMod.IMeshoptCompressionConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructor
   */
 open class MeshoptCompression ()
-  extends typings.babylonjs.babylonjsIndexMod.MeshoptCompression
+  extends typings.babylonjs.meshesIndexMod.MeshoptCompression
 /* static members */
 object MeshoptCompression {
   

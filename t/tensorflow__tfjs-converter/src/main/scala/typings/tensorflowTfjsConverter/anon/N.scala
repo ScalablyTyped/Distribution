@@ -20,7 +20,7 @@ trait N extends StObject {
   
   var transpose_b: Unit
   
-  var value: Tensor
+  var value: TensorDtypeString
 }
 object N {
   
@@ -32,7 +32,7 @@ object N {
     shape: Unit,
     transpose_a: Unit,
     transpose_b: Unit,
-    value: Tensor
+    value: TensorDtypeString
   ): N = {
     val __obj = js.Dynamic.literal(N = N.asInstanceOf[js.Any], T = T.asInstanceOf[js.Any], Tidx = Tidx.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], transpose_a = transpose_a.asInstanceOf[js.Any], transpose_b = transpose_b.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[N]
@@ -54,6 +54,6 @@ object N {
     
     inline def setTranspose_b(value: Unit): Self = StObject.set(x, "transpose_b", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: Tensor): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TensorDtypeString): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

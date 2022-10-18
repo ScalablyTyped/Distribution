@@ -1,7 +1,7 @@
 package typings.rehypeReact
 
-import typings.rehypeReact.complexTypesMod.ComponentsWithNodeOptions
-import typings.rehypeReact.complexTypesMod.ComponentsWithoutNodeOptions
+import typings.rehypeReact.libComplexTypesMod.ComponentsWithNodeOptions
+import typings.rehypeReact.libComplexTypesMod.ComponentsWithoutNodeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

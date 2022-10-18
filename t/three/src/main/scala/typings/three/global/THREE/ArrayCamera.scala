@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ArrayCamera ()
   extends typings.three.mod.ArrayCamera {
-  def this(cameras: js.Array[typings.three.perspectiveCameraMod.PerspectiveCamera]) = this()
+  def this(cameras: js.Array[typings.three.srcCamerasPerspectiveCameraMod.PerspectiveCamera]) = this()
 }

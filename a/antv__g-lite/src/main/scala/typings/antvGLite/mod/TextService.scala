@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "TextService")
 @js.native
 open class TextService protected ()
-  extends typings.antvGLite.servicesMod.TextService {
-  def this(offscreenCanvas: typings.antvGLite.offscreenCanvasCreatorMod.OffscreenCanvasCreator) = this()
+  extends typings.antvGLite.distServicesMod.TextService {
+  def this(offscreenCanvas: typings.antvGLite.distServicesOffscreenCanvasCreatorMod.OffscreenCanvasCreator) = this()
 }

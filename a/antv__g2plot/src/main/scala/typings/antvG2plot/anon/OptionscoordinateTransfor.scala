@@ -1,24 +1,24 @@
 package typings.antvG2plot.anon
 
+import typings.antvG2.libChartLayoutPaddingCalMod.PaddingCalCtor
+import typings.antvG2.libChartViewMod.View
 import typings.antvG2.libInterfaceMod.SyncViewPaddingFn
-import typings.antvG2.paddingCalMod.PaddingCalCtor
-import typings.antvG2.viewMod.View
-import typings.antvG2plot.animationMod.Animation
-import typings.antvG2plot.annotationMod.Annotation
 import typings.antvG2plot.antvG2plotStrings.auto
 import typings.antvG2plot.antvG2plotStrings.canvas
 import typings.antvG2plot.antvG2plotStrings.svg
-import typings.antvG2plot.attrMod.ColorAttr
-import typings.antvG2plot.attrMod.PatternAttr
-import typings.antvG2plot.axisMod.Axis
-import typings.antvG2plot.coordinateMod.Transformations
-import typings.antvG2plot.interactionMod.Interaction
-import typings.antvG2plot.metaMod.Meta
-import typings.antvG2plot.scrollbarMod.Scrollbar
-import typings.antvG2plot.sliderMod.Slider
-import typings.antvG2plot.tooltipMod.Tooltip
-import typings.antvG2plot.typesCommonMod.Datum
-import typings.antvG2plot.utilsPatternMod.PatternOption
+import typings.antvG2plot.libTypesAnimationMod.Animation
+import typings.antvG2plot.libTypesAnnotationMod.Annotation
+import typings.antvG2plot.libTypesAttrMod.ColorAttr
+import typings.antvG2plot.libTypesAttrMod.PatternAttr
+import typings.antvG2plot.libTypesAxisMod.Axis
+import typings.antvG2plot.libTypesCommonMod.Datum
+import typings.antvG2plot.libTypesCoordinateMod.Transformations
+import typings.antvG2plot.libTypesInteractionMod.Interaction
+import typings.antvG2plot.libTypesMetaMod.Meta
+import typings.antvG2plot.libTypesScrollbarMod.Scrollbar
+import typings.antvG2plot.libTypesSliderMod.Slider
+import typings.antvG2plot.libTypesTooltipMod.Tooltip
+import typings.antvG2plot.libUtilsPatternMod.PatternOption
 import typings.std.CanvasPattern
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -88,13 +88,13 @@ trait OptionscoordinateTransfor extends StObject {
     * @title 数据标签
     * @description 设置数据标签
     */
-  val label: js.UndefOr[typings.antvG2plot.typesLabelMod.Label] = js.undefined
+  val label: js.UndefOr[typings.antvG2plot.libTypesLabelMod.Label] = js.undefined
   
   /**
     * @title 图例
     * @description 设置画布图例 legend 的配置项
     */
-  val legend: js.UndefOr[typings.antvG2plot.typesLegendMod.Legend] = js.undefined
+  val legend: js.UndefOr[typings.antvG2plot.libTypesLegendMod.Legend] = js.undefined
   
   /**
     * @title 是否裁剪
@@ -162,7 +162,7 @@ trait OptionscoordinateTransfor extends StObject {
     * @title 图表状态
     * @description 设置画布配置 active，inactive，selected 三种状态的样式，也可在 Theme 主题中配置
     */
-  val state: js.UndefOr[typings.antvG2plot.stateMod.State] = js.undefined
+  val state: js.UndefOr[typings.antvG2plot.libTypesStateMod.State] = js.undefined
   
   /**
     * @title 是否支持 CSS transform
@@ -275,11 +275,11 @@ object OptionscoordinateTransfor {
     
     inline def setInteractionsVarargs(value: Interaction*): Self = StObject.set(x, "interactions", js.Array(value*))
     
-    inline def setLabel(value: typings.antvG2plot.typesLabelMod.Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: typings.antvG2plot.libTypesLabelMod.Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setLegend(value: typings.antvG2plot.typesLegendMod.Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: typings.antvG2plot.libTypesLegendMod.Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
@@ -327,7 +327,7 @@ object OptionscoordinateTransfor {
     
     inline def setSliderUndefined: Self = StObject.set(x, "slider", js.undefined)
     
-    inline def setState(value: typings.antvG2plot.stateMod.State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: typings.antvG2plot.libTypesStateMod.State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     

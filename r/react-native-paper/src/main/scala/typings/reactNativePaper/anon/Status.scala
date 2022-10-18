@@ -19,7 +19,7 @@ trait Status extends StObject {
   
   var testID: js.UndefOr[String] = js.undefined
   
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   var uncheckedColor: js.UndefOr[String] = js.undefined
 }
@@ -27,7 +27,7 @@ object Status {
   
   inline def apply(
     status: checked | unchecked | indeterminate,
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   ): Status = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Status]
@@ -53,7 +53,7 @@ object Status {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setUncheckedColor(value: String): Self = StObject.set(x, "uncheckedColor", value.asInstanceOf[js.Any])
     

@@ -4,7 +4,6 @@ import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.system.storage.StorageCapacityInfo
 import typings.chromeApps.chrome.system.storage.StorageUnitInfo
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,10 +34,7 @@ trait TypeofstorageEjectDevice extends StObject {
       /* result */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode */ js.Any, 
         /* keyof typeof EjectDeviceResultCode */ String, 
-        Exclude[
-          /* keyof typeof EjectDeviceResultCode */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode] */ js.Any
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof EjectDeviceResultCode extends keyof typeof EjectDeviceResultCode ? std.Exclude<keyof typeof EjectDeviceResultCode, typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode]> : never */ js.Any
       ], 
       Unit
     ]
@@ -68,10 +64,7 @@ object TypeofstorageEjectDevice {
       /* result */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode */ js.Any, 
         /* keyof typeof EjectDeviceResultCode */ String, 
-        Exclude[
-          /* keyof typeof EjectDeviceResultCode */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode] */ js.Any
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof EjectDeviceResultCode extends keyof typeof EjectDeviceResultCode ? std.Exclude<keyof typeof EjectDeviceResultCode, typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode]> : never */ js.Any
       ], 
       Unit
     ]) => Unit,
@@ -91,10 +84,7 @@ object TypeofstorageEjectDevice {
           /* result */ ToStringLiteral[
             /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode */ js.Any, 
             /* keyof typeof EjectDeviceResultCode */ String, 
-            Exclude[
-              /* keyof typeof EjectDeviceResultCode */ String, 
-              /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode] */ js.Any
-            ]
+            /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof EjectDeviceResultCode extends keyof typeof EjectDeviceResultCode ? std.Exclude<keyof typeof EjectDeviceResultCode, typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode]> : never */ js.Any
           ], 
           Unit
         ]) => Unit

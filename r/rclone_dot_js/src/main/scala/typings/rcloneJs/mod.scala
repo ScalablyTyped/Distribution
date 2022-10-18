@@ -2,7 +2,7 @@ package typings.rcloneJs
 
 import org.scalablytyped.runtime.Shortcut
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeChildProcessMod.ChildProcess
+import typings.node.nodeColonchildProcessMod.ChildProcess
 import typings.rcloneJs.anon.Promises
 import typings.rcloneJs.anon.RecordCommandApiFn
 import org.scalablytyped.runtime.StObject

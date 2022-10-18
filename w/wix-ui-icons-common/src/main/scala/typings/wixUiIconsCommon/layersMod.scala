@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsLayersMod.LayersProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layersMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/Layers", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Layers", JSImport.Default)
   @js.native
   val default: FC[LayersProps] = js.native
-  
-  trait LayersProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object LayersProps {
-    
-    inline def apply(): LayersProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[LayersProps]
-    }
-    
-    extension [Self <: LayersProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[LayersProps]
   

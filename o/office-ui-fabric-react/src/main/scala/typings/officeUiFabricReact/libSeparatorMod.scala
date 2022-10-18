@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.separatorTypesMod.ISeparatorProps
+import typings.officeUiFabricReact.libComponentsSeparatorSeparatorDottypesMod.ISeparatorProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

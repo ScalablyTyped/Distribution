@@ -1,6 +1,6 @@
 package typings.reactNativePaper.anon
 
-import typings.callstackReactThemeProvider.hoistNonReactStaticsMod.NonReactStatics
+import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonReactStatics
 import typings.react.mod.ComponentProps
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
@@ -9,7 +9,7 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.buttonMod.Props
+import typings.reactNativePaper.libTypescriptComponentsButtonMod.Props
 import typings.reactNativePaper.reactNativePaperStrings.children
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -27,7 +27,7 @@ trait Duration extends StObject {
     (Omit[
       ComponentProps[
         (ComponentType[
-          PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy
+          PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
         ]) & (NonReactStatics[
           ComponentType[Props] & (js.Function1[
             /* hasDisabledCompactModeDarkLoadingIconButtonColorChildrenUppercaseAccessibilityLabelAccessibilityHintOnPressOnLongPressStyleThemeContentStyleLabelStyleTestIDAccessibleRest */ Props, 
@@ -62,7 +62,7 @@ trait Duration extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * Whether the Snackbar is currently visible.
@@ -78,7 +78,7 @@ object Duration {
   
   inline def apply(
     onDismiss: () => Unit,
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme,
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme,
     visible: Boolean
   ): Duration = {
     val __obj = js.Dynamic.literal(onDismiss = js.Any.fromFunction0(onDismiss), theme = theme.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
@@ -91,7 +91,7 @@ object Duration {
       value: (Omit[
           ComponentProps[
             (ComponentType[
-              PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy
+              PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
             ]) & (NonReactStatics[
               ComponentType[Props] & (js.Function1[
                 /* hasDisabledCompactModeDarkLoadingIconButtonColorChildrenUppercaseAccessibilityLabelAccessibilityHintOnPressOnLongPressStyleThemeContentStyleLabelStyleTestIDAccessibleRest */ Props, 
@@ -126,7 +126,7 @@ object Duration {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

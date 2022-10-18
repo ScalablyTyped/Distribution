@@ -2,7 +2,7 @@ package typings.ckeditorCkeditor5Language
 
 import typings.ckeditorCkeditor5Language.anon.TypeofTextPartLanguageEdi
 import typings.ckeditorCkeditor5Language.anon.TypeofTextPartLanguageUI
-import typings.ckeditorCkeditor5Language.textpartlanguageMod.default
+import typings.ckeditorCkeditor5Language.srcTextpartlanguageMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-language", "TextPartLanguageEditing")
   @js.native
   open class TextPartLanguageEditing ()
-    extends typings.ckeditorCkeditor5Language.textpartlanguageeditingMod.default
+    extends typings.ckeditorCkeditor5Language.srcTextpartlanguageeditingMod.default
   /* static members */
   object TextPartLanguageEditing {
     
@@ -39,7 +39,7 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-language", "TextPartLanguageUI")
   @js.native
   open class TextPartLanguageUI ()
-    extends typings.ckeditorCkeditor5Language.textpartlanguageuiMod.default
+    extends typings.ckeditorCkeditor5Language.srcTextpartlanguageuiMod.default
   /* static members */
   object TextPartLanguageUI {
     

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xmldsigjs", "RsaPssWithoutParamsSha256")
 @js.native
 open class RsaPssWithoutParamsSha256 ()
-  extends typings.xmldsigjs.algorithmsMod.RsaPssWithoutParamsSha256
+  extends typings.xmldsigjs.buildTypesAlgorithmsMod.RsaPssWithoutParamsSha256

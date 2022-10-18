@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionProps
+import typings.officeUiFabricReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDottypesMod.IChoiceGroupOptionProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

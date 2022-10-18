@@ -1,10 +1,8 @@
 package typings.wordpressComponents
 
 import typings.react.mod.global.JSX.Element
-import typings.wordpressComponents.anon.Multiple
 import typings.wordpressComponents.anon.OmitHTMLPropsHTMLSelectEl
 import typings.wordpressComponents.anon.OnChange
-import typings.wordpressComponents.anon.`2`
 import typings.wordpressComponents.baseControlMod.BaseControl.ControlProps
 import typings.wordpressComponents.selectControlMod.SelectControl.Props
 import org.scalablytyped.runtime.StObject
@@ -64,6 +62,6 @@ object selectControlMod {
       }
     }
     
-    type Props[T /* <: String | js.Array[String] */] = OmitHTMLPropsHTMLSelectEl & ControlProps & OnChange[T] & (`2` | Multiple)
+    type Props[T /* <: String | js.Array[String] */] = OmitHTMLPropsHTMLSelectEl & ControlProps & OnChange[T] & (/* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<string> ? {  multiple :true} : {  multiple :false | undefined} */ js.Any)
   }
 }

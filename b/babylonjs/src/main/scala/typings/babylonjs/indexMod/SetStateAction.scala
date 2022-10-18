@@ -20,6 +20,6 @@ open class SetStateAction protected ()
     triggerOptions: Any,
     target: Any,
     value: String,
-    condition: typings.babylonjs.conditionMod.Condition
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
 }

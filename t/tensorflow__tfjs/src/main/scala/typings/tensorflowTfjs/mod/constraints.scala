@@ -1,9 +1,9 @@
 package typings.tensorflowTfjs.mod
 
-import typings.tensorflowTfjsLayers.constraintsMod.Constraint
-import typings.tensorflowTfjsLayers.constraintsMod.MaxNormArgs
-import typings.tensorflowTfjsLayers.constraintsMod.MinMaxNormArgs
-import typings.tensorflowTfjsLayers.constraintsMod.UnitNormArgs
+import typings.tensorflowTfjsLayers.distConstraintsMod.Constraint
+import typings.tensorflowTfjsLayers.distConstraintsMod.MaxNormArgs
+import typings.tensorflowTfjsLayers.distConstraintsMod.MinMaxNormArgs
+import typings.tensorflowTfjsLayers.distConstraintsMod.UnitNormArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

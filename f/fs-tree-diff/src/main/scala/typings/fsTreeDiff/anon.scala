@@ -1,6 +1,6 @@
 package typings.fsTreeDiff
 
-import typings.fsTreeDiff.entryMod.BaseEntry
+import typings.fsTreeDiff.libEntryMod.BaseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

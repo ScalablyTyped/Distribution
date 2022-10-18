@@ -14,8 +14,8 @@ open class KhronosTextureContainer2 protected ()
     * @param engine The engine to use
     * @param numWorkers The number of workers for async operations. Specify `0` to disable web workers and run synchronously in the current context.
     */
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine) = this()
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, numWorkers: Double) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine, numWorkers: Double) = this()
 }
 /* static members */
 object KhronosTextureContainer2 {

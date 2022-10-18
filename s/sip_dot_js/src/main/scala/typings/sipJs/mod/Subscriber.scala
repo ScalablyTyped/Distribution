@@ -1,6 +1,6 @@
 package typings.sipJs.mod
 
-import typings.sipJs.subscriberOptionsMod.SubscriberOptions
+import typings.sipJs.libApiSubscriberOptionsMod.SubscriberOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Subscriber")
 @js.native
 open class Subscriber protected ()
-  extends typings.sipJs.apiMod.Subscriber {
+  extends typings.sipJs.libApiMod.Subscriber {
   /**
     * Constructor.
     * @param userAgent - User agent. See {@link UserAgent} for details.
@@ -17,13 +17,13 @@ open class Subscriber protected ()
     * @param options - Options bucket. See {@link SubscriberOptions} for details.
     */
   def this(
-    userAgent: typings.sipJs.userAgentMod.UserAgent,
-    targetURI: typings.sipJs.coreMod.URI,
+    userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
+    targetURI: typings.sipJs.libCoreMod.URI,
     eventType: String
   ) = this()
   def this(
-    userAgent: typings.sipJs.userAgentMod.UserAgent,
-    targetURI: typings.sipJs.coreMod.URI,
+    userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
+    targetURI: typings.sipJs.libCoreMod.URI,
     eventType: String,
     options: SubscriberOptions
   ) = this()

@@ -1,6 +1,8 @@
 package typings.xrm.Xrm.Controls
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.xrm.Xrm.Attributes.Attribute
+import typings.xrm.Xrm.Events.ContextSensitiveHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,6 +26,12 @@ trait StandardControl
   def addNotification(notification: AddControlNotificationOptions): Unit = js.native
   
   /**
+    * Adds an event handler to the OnOutputChange event.
+    * @param handler The function to add to the OnOutputChange event.
+    */
+  def addOnOutputChange(handler: ContextSensitiveHandler): Unit = js.native
+  
+  /**
     * Clears the notification identified by uniqueId.
     * @param uniqueId (Optional) Unique identifier.
     * @returns true if it succeeds, false if it fails.
@@ -44,6 +52,19 @@ trait StandardControl
     */
   @JSName("getAttribute")
   def getAttribute_T_T[T /* <: Attribute[Any] */](): T = js.native
+  
+  /**
+    * Returns a dictionary of the output properties of the control.
+    * @returns: A dictionary for the output parameters from the control.
+    *    For a PCF control this is of the pattern <controlname>.fieldControl.<outputname>, e.g. telephone1.fieldControl.isValid
+    */
+  def getOutputs(): StringDictionary[FieldControlOutput] = js.native
+  
+  /**
+    * Removes an event handler from the OnOutputChange event.
+    * @param handler The function to remove from the OnOutputChange event.
+    */
+  def removeOnOutputChange(handler: ContextSensitiveHandler): Unit = js.native
   
   /**
     * Sets a control-local notification message.

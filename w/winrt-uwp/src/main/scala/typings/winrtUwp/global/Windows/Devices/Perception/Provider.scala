@@ -23,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Provider {
   
   /** A string used to identify the type classification of a frame. */
-  @JSGlobal("Windows.Devices.Perception.Provider.KnownPerceptionFrameKind")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Perception.Provider.KnownPerceptionFrameKind")
   @js.native
-  abstract class KnownPerceptionFrameKind ()
+  open class KnownPerceptionFrameKind ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Perception.Provider.KnownPerceptionFrameKind
   object KnownPerceptionFrameKind {
@@ -141,9 +141,9 @@ object Provider {
   }
   
   /** Represents a frame of data from the device. */
-  @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrame")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrame")
   @js.native
-  abstract class PerceptionFrame ()
+  open class PerceptionFrame ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrame {
     
@@ -190,9 +190,9 @@ object Provider {
   }
   
   /** Static methods for managing IPerceptionFrameProvider registration and unregistration, PerceptionFaceAuthenticationGroup registration and unregistration, PerceptionControlGroup registration and unregistration, PerceptionCorrelationGroup registration and unregistration, IPerceptionFrameProvider availablity, and publishing a new PerceptionFrame for an IPerceptionFrameProvider. */
-  @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService")
   @js.native
-  abstract class PerceptionFrameProviderManagerService ()
+  open class PerceptionFrameProviderManagerService ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService
   object PerceptionFrameProviderManagerService {
@@ -310,9 +310,9 @@ object Provider {
   }
   
   /** A request from an app that's in control of this IPerceptionFrameProvider to update a property. */
-  @JSGlobal("Windows.Devices.Perception.Provider.PerceptionPropertyChangeRequest")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Perception.Provider.PerceptionPropertyChangeRequest")
   @js.native
-  abstract class PerceptionPropertyChangeRequest ()
+  open class PerceptionPropertyChangeRequest ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionPropertyChangeRequest {
     

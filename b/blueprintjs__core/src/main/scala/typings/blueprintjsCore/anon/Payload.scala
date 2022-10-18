@@ -2,8 +2,8 @@ package typings.blueprintjsCore.anon
 
 import typings.blueprintjsCore.blueprintjsCoreStrings.ADD_HOTKEYS
 import typings.blueprintjsCore.blueprintjsCoreStrings.REMOVE_HOTKEYS
-import typings.blueprintjsCore.hotkeyConfigMod.HotkeyConfig
-import typings.blueprintjsCore.hotkeysProviderMod.HotkeysAction
+import typings.blueprintjsCore.libEsmContextHotkeysHotkeysProviderMod.HotkeysAction
+import typings.blueprintjsCore.libEsmHooksHotkeysHotkeyConfigMod.HotkeyConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,14 +1,14 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.addressMod.address.AddressData
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DECLARATIVE
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NATURAL
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NORMAL
-import typings.mangopay2NodejsSdk.typesMod.CountryISO
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
-import typings.mangopay2NodejsSdk.userMod.user.IncomeRange
-import typings.mangopay2NodejsSdk.userMod.user.KYCLevel
-import typings.mangopay2NodejsSdk.userMod.user.UserCategory
+import typings.mangopay2NodejsSdk.typingsModelsAddressMod.address.AddressData
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.IncomeRange
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.KYCLevel
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.UserCategory
+import typings.mangopay2NodejsSdk.typingsTypesMod.CountryISO
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,9 +32,9 @@ trait MakeKeysRequiredPartialUsCapacity extends StObject {
   
   var Id: js.UndefOr[String] = js.undefined
   
-  var IncomeRange: js.UndefOr[typings.mangopay2NodejsSdk.userMod.user.IncomeRange] = js.undefined
+  var IncomeRange: js.UndefOr[typings.mangopay2NodejsSdk.typingsModelsUserMod.user.IncomeRange] = js.undefined
   
-  var KYCLevel: js.UndefOr[typings.mangopay2NodejsSdk.userMod.user.KYCLevel] = js.undefined
+  var KYCLevel: js.UndefOr[typings.mangopay2NodejsSdk.typingsModelsUserMod.user.KYCLevel] = js.undefined
   
   var LastName: String
   
@@ -52,7 +52,7 @@ trait MakeKeysRequiredPartialUsCapacity extends StObject {
   
   var TermsAndConditionsAccepted: Boolean
   
-  var UserCategory: js.UndefOr[typings.mangopay2NodejsSdk.userMod.user.UserCategory] = js.undefined
+  var UserCategory: js.UndefOr[typings.mangopay2NodejsSdk.typingsModelsUserMod.user.UserCategory] = js.undefined
 }
 object MakeKeysRequiredPartialUsCapacity {
   

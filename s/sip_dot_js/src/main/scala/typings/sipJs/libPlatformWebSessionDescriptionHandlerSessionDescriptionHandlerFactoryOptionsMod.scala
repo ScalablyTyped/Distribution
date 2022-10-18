@@ -1,0 +1,11 @@
+package typings.sipJs
+
+import typings.sipJs.libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerConfigurationMod.SessionDescriptionHandlerConfiguration
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerFactoryOptionsMod {
+  
+  type SessionDescriptionHandlerFactoryOptions = SessionDescriptionHandlerConfiguration
+}

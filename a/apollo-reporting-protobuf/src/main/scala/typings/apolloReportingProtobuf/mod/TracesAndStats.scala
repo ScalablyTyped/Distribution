@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apolloProtobufjs.mod.IConversionOptions
 import typings.apolloProtobufjs.mod.Reader
 import typings.apolloProtobufjs.mod.Writer
-import typings.apolloReportingProtobuf.protobufMod.ITracesAndStats
+import typings.apolloReportingProtobuf.generatedProtobufMod.ITracesAndStats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [properties] Properties to set
   */
 open class TracesAndStats ()
-  extends typings.apolloReportingProtobuf.protobufMod.TracesAndStats {
+  extends typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats {
   def this(properties: ITracesAndStats) = this()
 }
 /* static members */
@@ -31,11 +31,11 @@ object TracesAndStats {
     * @param [properties] Properties to set
     * @returns TracesAndStats instance
     */
-  inline def create(): typings.apolloReportingProtobuf.protobufMod.TracesAndStats = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TracesAndStats]
-  inline def create(properties: ITracesAndStats): typings.apolloReportingProtobuf.protobufMod.TracesAndStats = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TracesAndStats]
+  inline def create(): typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats]
+  inline def create(properties: ITracesAndStats): typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats]
   
-  inline def decode(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.protobufMod.TracesAndStats = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TracesAndStats]
-  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.apolloReportingProtobuf.protobufMod.TracesAndStats = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TracesAndStats]
+  inline def decode(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats]
   /**
     * Decodes a TracesAndStats message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,10 +44,10 @@ object TracesAndStats {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  inline def decode(reader: Reader): typings.apolloReportingProtobuf.protobufMod.TracesAndStats = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TracesAndStats]
-  inline def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.protobufMod.TracesAndStats = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TracesAndStats]
+  inline def decode(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats]
+  inline def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats]
   
-  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.protobufMod.TracesAndStats = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TracesAndStats]
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats]
   /**
     * Decodes a TracesAndStats message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -55,7 +55,7 @@ object TracesAndStats {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  inline def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.protobufMod.TracesAndStats = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TracesAndStats]
+  inline def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats]
   
   /**
     * Encodes the specified TracesAndStats message. Does not implicitly {@link TracesAndStats.verify|verify} messages.
@@ -81,8 +81,11 @@ object TracesAndStats {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: typings.apolloReportingProtobuf.protobufMod.TracesAndStats): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
-  inline def toObject(message: typings.apolloReportingProtobuf.protobufMod.TracesAndStats, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(
+    message: typings.apolloReportingProtobuf.generatedProtobufMod.TracesAndStats,
+    options: IConversionOptions
+  ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a TracesAndStats message.

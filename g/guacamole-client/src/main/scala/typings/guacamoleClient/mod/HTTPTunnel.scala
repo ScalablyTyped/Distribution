@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "HTTPTunnel")
 @js.native
 open class HTTPTunnel protected ()
-  extends typings.guacamoleClient.httptunnelMod.HTTPTunnel {
+  extends typings.guacamoleClient.libHttptunnelMod.HTTPTunnel {
   /**
     * @param tunnelURL The URL of the HTTP tunneling service.
     * @param [crossDomain=false] Whether tunnel requests will be cross-domain, and thus must use CORS

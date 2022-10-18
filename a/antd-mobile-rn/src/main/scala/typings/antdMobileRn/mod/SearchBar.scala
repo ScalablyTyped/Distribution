@@ -2,8 +2,8 @@ package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.AntLocale
 import typings.antdMobileRn.anon.OnBlur
-import typings.antdMobileRn.searchBarIndexNativeMod.SearchBarNativeProps
-import typings.antdMobileRn.searchBarIndexNativeMod.default
+import typings.antdMobileRn.libSearchBarIndexDotnativeMod.SearchBarNativeProps
+import typings.antdMobileRn.libSearchBarIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

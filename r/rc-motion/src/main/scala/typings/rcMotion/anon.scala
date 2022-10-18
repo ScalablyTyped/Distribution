@@ -1,12 +1,12 @@
 package typings.rcMotion
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.rcMotion.cssmotionMod.MotionName
-import typings.rcMotion.diffMod.DiffStatus
-import typings.rcMotion.interfaceMod.MotionEndEventHandler
-import typings.rcMotion.interfaceMod.MotionEvent
-import typings.rcMotion.interfaceMod.MotionEventHandler
-import typings.rcMotion.interfaceMod.MotionPrepareEventHandler
+import typings.rcMotion.esCssmotionMod.MotionName
+import typings.rcMotion.esInterfaceMod.MotionEndEventHandler
+import typings.rcMotion.esInterfaceMod.MotionEvent
+import typings.rcMotion.esInterfaceMod.MotionEventHandler
+import typings.rcMotion.esInterfaceMod.MotionPrepareEventHandler
+import typings.rcMotion.esUtilDiffMod.DiffStatus
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.Ref

@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides helper methods for reading and writing a file using the absolute path or URI of the file. */
-@JSGlobal("Windows.Storage.PathIO")
+/* note: abstract class */ @JSGlobal("Windows.Storage.PathIO")
 @js.native
-abstract class PathIO ()
+open class PathIO ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.PathIO
 object PathIO {

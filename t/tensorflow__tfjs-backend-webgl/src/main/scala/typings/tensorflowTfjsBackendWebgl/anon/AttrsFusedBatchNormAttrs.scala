@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsBackendWebgl.anon
 
-import typings.tensorflowTfjsBackendWebgl.backendWebglMod.MathBackendWebGL
-import typings.tensorflowTfjsCore.kernelNamesMod.FusedBatchNormAttrs
-import typings.tensorflowTfjsCore.kernelNamesMod.FusedBatchNormInputs
+import typings.tensorflowTfjsBackendWebgl.distBackendWebglMod.MathBackendWebGL
+import typings.tensorflowTfjsCore.distKernelNamesMod.FusedBatchNormAttrs
+import typings.tensorflowTfjsCore.distKernelNamesMod.FusedBatchNormInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

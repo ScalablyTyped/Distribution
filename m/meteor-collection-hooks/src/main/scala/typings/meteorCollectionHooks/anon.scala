@@ -1,7 +1,7 @@
 package typings.meteorCollectionHooks
 
-import typings.meteorCollectionHooks.mod.CollectionHooks.HookOptionValue
-import typings.meteorCollectionHooks.mod.CollectionHooks.ModifierOptions
+import typings.meteorCollectionHooks.meteorMongoMod.CollectionHooks.HookOptionValue
+import typings.meteorCollectionHooks.meteorMongoMod.CollectionHooks.ModifierOptions
 import typings.meteorTypings.Mongo.Cursor
 import typings.meteorTypings.Mongo.FieldSpecifier
 import typings.meteorTypings.Mongo.Modifier

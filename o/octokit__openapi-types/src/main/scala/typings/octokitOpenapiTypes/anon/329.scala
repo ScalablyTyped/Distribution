@@ -7,16 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `329` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['secret-scanning-location'] */ js.Any
-  ]
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['organization-dependabot-secret'] */ js.Any
 }
 object `329` {
   
   inline def apply(
-    applicationSlashjson: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['secret-scanning-location'] */ js.Any
-    ]
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['organization-dependabot-secret'] */ js.Any
   ): `329` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
@@ -26,13 +22,7 @@ object `329` {
   extension [Self <: `329`](x: Self) {
     
     inline def setApplicationSlashjson(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['secret-scanning-location'] */ js.Any
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['organization-dependabot-secret'] */ js.Any
     ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['secret-scanning-location'] */ js.Any)*
-    ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

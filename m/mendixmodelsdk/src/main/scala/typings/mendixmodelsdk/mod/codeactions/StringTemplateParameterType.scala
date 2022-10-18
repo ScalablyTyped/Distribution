@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.codeactions
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.codeactionsMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCodeactionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "codeactions.StringTemplateParameterType")
 @js.native
 open class StringTemplateParameterType protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.codeactions.StringTemplateParameterType {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.codeactions.StringTemplateParameterType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,7 +40,7 @@ object StringTemplateParameterType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.codeactionsMod.codeactions.StringTemplateParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.StringTemplateParameterType]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.StringTemplateParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.StringTemplateParameterType]
   
   /* static member */
   @JSImport("mendixmodelsdk", "codeactions.StringTemplateParameterType.structureTypeName")

@@ -7,7 +7,7 @@ import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.express.mod.RouterOptions
 import typings.expressServeStaticCore.mod.Express
-import typings.marko.templateMod.Template
+import typings.marko.srcRuntimeHtmlTemplateMod.Template
 import typings.qs.mod.IParseOptions
 import typings.serveStatic.mod.RequestHandlerConstructor
 import typings.std.Record
@@ -114,6 +114,7 @@ object expressMod {
     x: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof bodyParser.urlencoded */ Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urlencoded")(x.asInstanceOf[js.Any])
   
+  /* augmented module */
   object expressServeStaticCoreAugmentingMod {
     
     @js.native

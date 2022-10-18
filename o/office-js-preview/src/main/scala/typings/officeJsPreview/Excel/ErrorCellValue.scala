@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a cell value which contains an error.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 /* Rewritten from type alias, can be one of: 
   - typings.officeJsPreview.Excel.BlockedErrorCellValue

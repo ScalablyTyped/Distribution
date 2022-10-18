@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "XRWindowsMotionController")
 @js.native
 open class XRWindowsMotionController protected ()
-  extends typings.babylonjs.legacyMod.XRWindowsMotionController {
+  extends typings.babylonjs.legacyLegacyMod.XRWindowsMotionController {
   /**
     * Construct a new XR-Based windows motion controller
     *

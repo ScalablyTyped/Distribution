@@ -1,8 +1,6 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
+import typings.grommet.componentsTipMod.TipProps
 import typings.grommet.grommetStrings.`3xl`
 import typings.grommet.grommetStrings.`4xl`
 import typings.grommet.grommetStrings.`5xl`
@@ -21,7 +19,9 @@ import typings.grommet.grommetStrings.tip
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
 import typings.grommet.grommetStrings.xxlarge
-import typings.grommet.tipMod.TipProps
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.ColorType

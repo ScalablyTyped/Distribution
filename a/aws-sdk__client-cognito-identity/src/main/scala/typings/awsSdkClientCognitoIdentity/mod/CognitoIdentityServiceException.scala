@@ -1,6 +1,6 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
-import typings.awsSdkSmithyClient.exceptionsMod.ServiceExceptionOptions
+import typings.awsSdkSmithyClient.distTypesExceptionsMod.ServiceExceptionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "CognitoIdentityServiceException")
 @js.native
 open class CognitoIdentityServiceException protected ()
-  extends typings.awsSdkClientCognitoIdentity.cognitoIdentityServiceExceptionMod.CognitoIdentityServiceException {
+  extends typings.awsSdkClientCognitoIdentity.distTypesModelsCognitoIdentityServiceExceptionMod.CognitoIdentityServiceException {
   /**
     * @internal
     */

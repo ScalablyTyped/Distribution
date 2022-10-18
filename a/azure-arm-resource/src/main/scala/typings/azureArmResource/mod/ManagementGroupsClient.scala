@@ -1,6 +1,6 @@
 package typings.azureArmResource.mod
 
-import typings.azureArmResource.managementGroupsClientMod.^
+import typings.azureArmResource.libManagementManagementGroupsClientMod.^
 import typings.msRest.mod.ServiceClientCredentials
 import typings.msRestAzure.mod.AzureServiceClientOptions
 import org.scalablytyped.runtime.StObject

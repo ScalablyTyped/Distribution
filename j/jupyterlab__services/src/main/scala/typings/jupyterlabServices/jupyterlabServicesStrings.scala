@@ -1,24 +1,20 @@
 package typings.jupyterlabServices
 
-import typings.jupyterlabServices.contentsMod.Contents.ContentType
-import typings.jupyterlabServices.contentsMod.Contents._FileFormat
-import typings.jupyterlabServices.messagesMod.Channel
-import typings.jupyterlabServices.messagesMod.ControlMessageType
-import typings.jupyterlabServices.messagesMod.IOPubMessageType
-import typings.jupyterlabServices.messagesMod.MessageType
-import typings.jupyterlabServices.messagesMod.ShellMessageType
-import typings.jupyterlabServices.messagesMod.Status
-import typings.jupyterlabServices.messagesMod.StdinMessageType
-import typings.jupyterlabServices.terminalTerminalMod.ConnectionStatus
+import typings.jupyterlabServices.libContentsMod.Contents.ContentType
+import typings.jupyterlabServices.libContentsMod.Contents._FileFormat
+import typings.jupyterlabServices.libKernelMessagesMod.Channel
+import typings.jupyterlabServices.libKernelMessagesMod.ControlMessageType
+import typings.jupyterlabServices.libKernelMessagesMod.IOPubMessageType
+import typings.jupyterlabServices.libKernelMessagesMod.MessageType
+import typings.jupyterlabServices.libKernelMessagesMod.ShellMessageType
+import typings.jupyterlabServices.libKernelMessagesMod.Status
+import typings.jupyterlabServices.libKernelMessagesMod.StdinMessageType
+import typings.jupyterlabServices.libTerminalTerminalMod.ConnectionStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jupyterlabServicesStrings {
-  
-  @js.native
-  sealed trait DeepPartial extends StObject
-  inline def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   
   @js.native
   sealed trait abort extends StObject
@@ -113,14 +109,14 @@ object jupyterlabServicesStrings {
   sealed trait connected
     extends StObject
        with ConnectionStatus
-       with typings.jupyterlabServices.kernelKernelMod.ConnectionStatus
+       with typings.jupyterlabServices.libKernelKernelMod.ConnectionStatus
   inline def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
   sealed trait connecting
     extends StObject
        with ConnectionStatus
-       with typings.jupyterlabServices.kernelKernelMod.ConnectionStatus
+       with typings.jupyterlabServices.libKernelKernelMod.ConnectionStatus
   inline def connecting: connecting = "connecting".asInstanceOf[connecting]
   
   @js.native
@@ -169,14 +165,14 @@ object jupyterlabServicesStrings {
   @js.native
   sealed trait disconnect
     extends StObject
-       with typings.jupyterlabServices.terminalTerminalMod.MessageType
+       with typings.jupyterlabServices.libTerminalTerminalMod.MessageType
   inline def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
   
   @js.native
   sealed trait disconnected
     extends StObject
        with ConnectionStatus
-       with typings.jupyterlabServices.kernelKernelMod.ConnectionStatus
+       with typings.jupyterlabServices.libKernelKernelMod.ConnectionStatus
   inline def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   
   @js.native
@@ -412,7 +408,7 @@ object jupyterlabServicesStrings {
   @js.native
   sealed trait set_size
     extends StObject
-       with typings.jupyterlabServices.terminalTerminalMod.MessageType
+       with typings.jupyterlabServices.libTerminalTerminalMod.MessageType
   inline def set_size: set_size = "set_size".asInstanceOf[set_size]
   
   @js.native
@@ -460,13 +456,13 @@ object jupyterlabServicesStrings {
   sealed trait stdin
     extends StObject
        with Channel
-       with typings.jupyterlabServices.terminalTerminalMod.MessageType
+       with typings.jupyterlabServices.libTerminalTerminalMod.MessageType
   inline def stdin: stdin = "stdin".asInstanceOf[stdin]
   
   @js.native
   sealed trait stdout
     extends StObject
-       with typings.jupyterlabServices.terminalTerminalMod.MessageType
+       with typings.jupyterlabServices.libTerminalTerminalMod.MessageType
   inline def stdout: stdout = "stdout".asInstanceOf[stdout]
   
   @js.native

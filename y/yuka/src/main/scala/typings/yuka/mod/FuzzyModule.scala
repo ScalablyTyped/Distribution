@@ -1,6 +1,6 @@
 package typings.yuka.mod
 
-import typings.yuka.fuzzyModuleMod.DefuzTypes
+import typings.yuka.srcFuzzyFuzzyModuleMod.DefuzTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new fuzzy module.
   */
 open class FuzzyModule ()
-  extends typings.yuka.yukaMod.FuzzyModule
+  extends typings.yuka.srcYukaMod.FuzzyModule
 /* static members */
 object FuzzyModule {
   

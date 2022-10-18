@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Device")
 @js.native
 open class Device ()
-  extends typings.blackEngine.deviceMod.Device
+  extends typings.blackEngine.systemDeviceMod.Device

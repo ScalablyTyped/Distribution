@@ -1,7 +1,7 @@
 package typings.ol
 
-import typings.ol.bingMapsMod.Options
-import typings.ol.bingMapsMod.default
+import typings.ol.sourceBingMapsMod.Options
+import typings.ol.sourceBingMapsMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,27 +17,27 @@ object sourceMod {
   @JSImport("ol/source", "CartoDB")
   @js.native
   open class CartoDB protected ()
-    extends typings.ol.cartoDBMod.default {
-    def this(options: typings.ol.cartoDBMod.Options) = this()
+    extends typings.ol.sourceCartoDBMod.default {
+    def this(options: typings.ol.sourceCartoDBMod.Options) = this()
   }
   
   @JSImport("ol/source", "Cluster")
   @js.native
   open class Cluster protected ()
-    extends typings.ol.clusterMod.default {
-    def this(options: typings.ol.clusterMod.Options) = this()
+    extends typings.ol.sourceClusterMod.default {
+    def this(options: typings.ol.sourceClusterMod.Options) = this()
   }
   
   @JSImport("ol/source", "IIIF")
   @js.native
   open class IIIF ()
-    extends typings.ol.iiifMod.default {
-    def this(opt_options: typings.ol.iiifMod.Options) = this()
+    extends typings.ol.sourceIiifMod.default {
+    def this(opt_options: typings.ol.sourceIiifMod.Options) = this()
   }
   
-  @JSImport("ol/source", "Image")
+  /* note: abstract class */ @JSImport("ol/source", "Image")
   @js.native
-  abstract class Image protected ()
+  open class Image protected ()
     extends typings.ol.sourceImageMod.default {
     def this(options: typings.ol.sourceImageMod.Options) = this()
   }
@@ -45,55 +45,55 @@ object sourceMod {
   @JSImport("ol/source", "ImageArcGISRest")
   @js.native
   open class ImageArcGISRest ()
-    extends typings.ol.imageArcGISRestMod.default {
-    def this(opt_options: typings.ol.imageArcGISRestMod.Options) = this()
+    extends typings.ol.sourceImageArcGISRestMod.default {
+    def this(opt_options: typings.ol.sourceImageArcGISRestMod.Options) = this()
   }
   
   @JSImport("ol/source", "ImageCanvas")
   @js.native
   open class ImageCanvas ()
-    extends typings.ol.imageCanvasMod.default {
-    def this(opt_options: typings.ol.imageCanvasMod.Options) = this()
+    extends typings.ol.sourceImageCanvasMod.default {
+    def this(opt_options: typings.ol.sourceImageCanvasMod.Options) = this()
   }
   
   @JSImport("ol/source", "ImageMapGuide")
   @js.native
   open class ImageMapGuide protected ()
-    extends typings.ol.imageMapGuideMod.default {
-    def this(options: typings.ol.imageMapGuideMod.Options) = this()
+    extends typings.ol.sourceImageMapGuideMod.default {
+    def this(options: typings.ol.sourceImageMapGuideMod.Options) = this()
   }
   
   @JSImport("ol/source", "ImageStatic")
   @js.native
   open class ImageStatic protected ()
-    extends typings.ol.imageStaticMod.default {
-    def this(options: typings.ol.imageStaticMod.Options) = this()
+    extends typings.ol.sourceImageStaticMod.default {
+    def this(options: typings.ol.sourceImageStaticMod.Options) = this()
   }
   
   @JSImport("ol/source", "ImageWMS")
   @js.native
   open class ImageWMS ()
-    extends typings.ol.imageWMSMod.default {
-    def this(opt_options: typings.ol.imageWMSMod.Options) = this()
+    extends typings.ol.sourceImageWMSMod.default {
+    def this(opt_options: typings.ol.sourceImageWMSMod.Options) = this()
   }
   
   @JSImport("ol/source", "OSM")
   @js.native
   open class OSM ()
-    extends typings.ol.osmMod.default {
-    def this(opt_options: typings.ol.osmMod.Options) = this()
+    extends typings.ol.sourceOsmMod.default {
+    def this(opt_options: typings.ol.sourceOsmMod.Options) = this()
   }
   
   @JSImport("ol/source", "Raster")
   @js.native
   open class Raster protected ()
-    extends typings.ol.rasterMod.default {
-    def this(options: typings.ol.rasterMod.Options) = this()
+    extends typings.ol.sourceRasterMod.default {
+    def this(options: typings.ol.sourceRasterMod.Options) = this()
   }
   
-  @JSImport("ol/source", "Source")
+  /* note: abstract class */ @JSImport("ol/source", "Source")
   @js.native
-  abstract class Source protected ()
+  open class Source protected ()
     extends typings.ol.sourceSourceMod.default {
     def this(options: typings.ol.sourceSourceMod.Options) = this()
   }
@@ -101,13 +101,13 @@ object sourceMod {
   @JSImport("ol/source", "Stamen")
   @js.native
   open class Stamen protected ()
-    extends typings.ol.stamenMod.default {
-    def this(options: typings.ol.stamenMod.Options) = this()
+    extends typings.ol.sourceStamenMod.default {
+    def this(options: typings.ol.sourceStamenMod.Options) = this()
   }
   
-  @JSImport("ol/source", "Tile")
+  /* note: abstract class */ @JSImport("ol/source", "Tile")
   @js.native
-  abstract class Tile protected ()
+  open class Tile protected ()
     extends typings.ol.sourceTileMod.default {
     def this(options: typings.ol.sourceTileMod.Options) = this()
   }
@@ -115,55 +115,55 @@ object sourceMod {
   @JSImport("ol/source", "TileArcGISRest")
   @js.native
   open class TileArcGISRest ()
-    extends typings.ol.tileArcGISRestMod.default {
-    def this(opt_options: typings.ol.tileArcGISRestMod.Options) = this()
+    extends typings.ol.sourceTileArcGISRestMod.default {
+    def this(opt_options: typings.ol.sourceTileArcGISRestMod.Options) = this()
   }
   
   @JSImport("ol/source", "TileDebug")
   @js.native
   open class TileDebug ()
-    extends typings.ol.tileDebugMod.default {
-    def this(opt_options: typings.ol.tileDebugMod.Options) = this()
+    extends typings.ol.sourceTileDebugMod.default {
+    def this(opt_options: typings.ol.sourceTileDebugMod.Options) = this()
   }
   
   @JSImport("ol/source", "TileImage")
   @js.native
   open class TileImage protected ()
-    extends typings.ol.tileImageMod.default {
-    def this(options: typings.ol.tileImageMod.Options) = this()
+    extends typings.ol.sourceTileImageMod.default {
+    def this(options: typings.ol.sourceTileImageMod.Options) = this()
   }
   
   @JSImport("ol/source", "TileJSON")
   @js.native
   open class TileJSON protected ()
-    extends typings.ol.tileJSONMod.default {
-    def this(options: typings.ol.tileJSONMod.Options) = this()
+    extends typings.ol.sourceTileJSONMod.default {
+    def this(options: typings.ol.sourceTileJSONMod.Options) = this()
   }
   
   @JSImport("ol/source", "TileWMS")
   @js.native
   open class TileWMS ()
-    extends typings.ol.tileWMSMod.default {
-    def this(opt_options: typings.ol.tileWMSMod.Options) = this()
+    extends typings.ol.sourceTileWMSMod.default {
+    def this(opt_options: typings.ol.sourceTileWMSMod.Options) = this()
   }
   
   @JSImport("ol/source", "UTFGrid")
   @js.native
   open class UTFGrid protected ()
-    extends typings.ol.utfgridMod.default {
-    def this(options: typings.ol.utfgridMod.Options) = this()
+    extends typings.ol.sourceUtfgridMod.default {
+    def this(options: typings.ol.sourceUtfgridMod.Options) = this()
   }
   
   @JSImport("ol/source", "UrlTile")
   @js.native
   open class UrlTile protected ()
-    extends typings.ol.urlTileMod.default {
-    def this(options: typings.ol.urlTileMod.Options) = this()
+    extends typings.ol.sourceUrlTileMod.default {
+    def this(options: typings.ol.sourceUrlTileMod.Options) = this()
   }
   
   @JSImport("ol/source", "Vector")
   @js.native
-  open class Vector[GeomType /* <: typings.ol.geometryMod.default */] ()
+  open class Vector[GeomType /* <: typings.ol.geomGeometryMod.default */] ()
     extends typings.ol.sourceVectorMod.default[GeomType] {
     def this(opt_options: typings.ol.sourceVectorMod.Options) = this()
   }
@@ -178,21 +178,21 @@ object sourceMod {
   @JSImport("ol/source", "WMTS")
   @js.native
   open class WMTS protected ()
-    extends typings.ol.wmtsMod.default {
-    def this(options: typings.ol.wmtsMod.Options) = this()
+    extends typings.ol.sourceWmtsMod.default {
+    def this(options: typings.ol.sourceWmtsMod.Options) = this()
   }
   
   @JSImport("ol/source", "XYZ")
   @js.native
   open class XYZ ()
-    extends typings.ol.xyzMod.default {
-    def this(opt_options: typings.ol.xyzMod.Options) = this()
+    extends typings.ol.sourceXyzMod.default {
+    def this(opt_options: typings.ol.sourceXyzMod.Options) = this()
   }
   
   @JSImport("ol/source", "Zoomify")
   @js.native
   open class Zoomify protected ()
-    extends typings.ol.zoomifyMod.default {
-    def this(opt_options: typings.ol.zoomifyMod.Options) = this()
+    extends typings.ol.sourceZoomifyMod.default {
+    def this(opt_options: typings.ol.sourceZoomifyMod.Options) = this()
   }
 }

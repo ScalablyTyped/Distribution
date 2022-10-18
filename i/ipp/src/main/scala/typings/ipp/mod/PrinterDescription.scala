@@ -323,7 +323,7 @@ trait PrinterDescription extends StObject {
   
   var `job-creation-attributes-supported`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
     ]
   ] = js.undefined
   
@@ -733,7 +733,7 @@ trait PrinterDescription extends StObject {
   
   var `printer-get-attributes-supported`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203 */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
     ]
   ] = js.undefined
   
@@ -751,7 +751,7 @@ trait PrinterDescription extends StObject {
   
   var `printer-mandatory-job-attributes`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203 */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
     ]
   ] = js.undefined
   
@@ -1472,13 +1472,15 @@ object PrinterDescription {
     
     inline def `setJob-creation-attributes-supported`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
         ]
     ): Self = StObject.set(x, "job-creation-attributes-supported", value.asInstanceOf[js.Any])
     
     inline def `setJob-creation-attributes-supportedUndefined`: Self = StObject.set(x, "job-creation-attributes-supported", js.undefined)
     
-    inline def `setJob-creation-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any)*): Self = StObject.set(x, "job-creation-attributes-supported", js.Array(value*))
+    inline def `setJob-creation-attributes-supportedVarargs`(
+      value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any)*
+    ): Self = StObject.set(x, "job-creation-attributes-supported", js.Array(value*))
     
     inline def `setJob-delay-output-until-default`(value: JobDelayOutputUntil): Self = StObject.set(x, "job-delay-output-until-default", value.asInstanceOf[js.Any])
     
@@ -2458,13 +2460,15 @@ object PrinterDescription {
     
     inline def `setPrinter-get-attributes-supported`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203 */ Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
         ]
     ): Self = StObject.set(x, "printer-get-attributes-supported", value.asInstanceOf[js.Any])
     
     inline def `setPrinter-get-attributes-supportedUndefined`: Self = StObject.set(x, "printer-get-attributes-supported", js.undefined)
     
-    inline def `setPrinter-get-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203 */ Any)*): Self = StObject.set(x, "printer-get-attributes-supported", js.Array(value*))
+    inline def `setPrinter-get-attributes-supportedVarargs`(
+      value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any)*
+    ): Self = StObject.set(x, "printer-get-attributes-supported", js.Array(value*))
     
     inline def `setPrinter-icc-profiles`(value: js.Array[PrinterIccProfiles]): Self = StObject.set(x, "printer-icc-profiles", value.asInstanceOf[js.Any])
     
@@ -2498,13 +2502,15 @@ object PrinterDescription {
     
     inline def `setPrinter-mandatory-job-attributes`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203 */ Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
         ]
     ): Self = StObject.set(x, "printer-mandatory-job-attributes", value.asInstanceOf[js.Any])
     
     inline def `setPrinter-mandatory-job-attributesUndefined`: Self = StObject.set(x, "printer-mandatory-job-attributes", js.undefined)
     
-    inline def `setPrinter-mandatory-job-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203 */ Any)*): Self = StObject.set(x, "printer-mandatory-job-attributes", js.Array(value*))
+    inline def `setPrinter-mandatory-job-attributesVarargs`(
+      value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any)*
+    ): Self = StObject.set(x, "printer-mandatory-job-attributes", js.Array(value*))
     
     inline def `setPrinter-more-info-manufacturer`(value: String): Self = StObject.set(x, "printer-more-info-manufacturer", value.asInstanceOf[js.Any])
     

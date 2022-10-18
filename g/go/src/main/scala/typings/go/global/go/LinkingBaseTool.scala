@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that are used during any linking operation, as well as access to the existing diagram's nodes and link
   * (if any) that are involved with the linking operation.
   */
-@JSGlobal("go.LinkingBaseTool")
+/* note: abstract class */ @JSGlobal("go.LinkingBaseTool")
 @js.native
 /**
   * Don't construct this directly -- this is an abstract class.
   */
-abstract class LinkingBaseTool ()
+open class LinkingBaseTool ()
   extends typings.go.mod.LinkingBaseTool

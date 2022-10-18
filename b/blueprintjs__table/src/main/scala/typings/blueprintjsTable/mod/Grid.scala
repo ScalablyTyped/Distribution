@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "Grid")
 @js.native
 open class Grid protected ()
-  extends typings.blueprintjsTable.commonMod.Grid {
+  extends typings.blueprintjsTable.libEsmCommonMod.Grid {
   /**
     * This constructor accumulates the heights and widths in `O(n)`, saving
     * time in later calculations.

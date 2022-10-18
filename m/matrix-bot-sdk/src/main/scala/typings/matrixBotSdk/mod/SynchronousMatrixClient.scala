@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("matrix-bot-sdk", "SynchronousMatrixClient")
+/* note: abstract class */ @JSImport("matrix-bot-sdk", "SynchronousMatrixClient")
 @js.native
-abstract class SynchronousMatrixClient protected ()
-  extends typings.matrixBotSdk.synchronousMatrixClientMod.SynchronousMatrixClient {
+open class SynchronousMatrixClient protected ()
+  extends typings.matrixBotSdk.libSynchronousMatrixClientMod.SynchronousMatrixClient {
   /**
     * Creates a new SynchronousMatrixClient. Note that this accepts a MatrixClient, though
     * much of the class's properties are not brought over. Always convert your MatrixClient
@@ -15,5 +15,5 @@ abstract class SynchronousMatrixClient protected ()
     * properties are proxied over.
     * @param {MatrixClient} baseClient The client to wrap.
     */
-  /* protected */ def this(baseClient: typings.matrixBotSdk.matrixClientMod.MatrixClient) = this()
+  /* protected */ def this(baseClient: typings.matrixBotSdk.libMatrixClientMod.MatrixClient) = this()
 }

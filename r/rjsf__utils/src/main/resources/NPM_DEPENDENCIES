@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@rjsf/utils" : "5.0.0-beta.8"
+      "@rjsf/utils" : "5.0.0-beta.11"
     }
   ],
   "test-dependencies" : [
     {
-      "@rjsf/utils" : "5.0.0-beta.8"
+      "@rjsf/utils" : "5.0.0-beta.11"
     }
   ],
   "compile-devDependencies" : [

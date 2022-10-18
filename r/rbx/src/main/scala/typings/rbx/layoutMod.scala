@@ -5,11 +5,11 @@ import typings.rbx.anon.PickBadgeHelpersPropsFloa
 import typings.rbx.anon.PreferHelpersPropsOverrid
 import typings.rbx.anon.PreferHelpersPropsOverridBackgroundColor
 import typings.rbx.anon.`6`
-import typings.rbx.dividerDividerMod.DividerProps
-import typings.rbx.exoticMod.ForwardRefAsExoticComponent
-import typings.rbx.exoticMod.FromReactType
-import typings.rbx.helpersMod.HelpersPropsOverrides
-import typings.rbx.heroHeroMod.HeroModifierProps
+import typings.rbx.baseExoticMod.ForwardRefAsExoticComponent
+import typings.rbx.baseHelpersMod.HelpersPropsOverrides
+import typings.rbx.layoutDividerDividerMod.DividerProps
+import typings.rbx.layoutHeroHeroMod.HeroModifierProps
+import typings.rbx.layoutSectionSectionMod.SectionProps
 import typings.rbx.rbxStrings.as
 import typings.rbx.rbxStrings.backgroundColor
 import typings.rbx.rbxStrings.badge
@@ -47,7 +47,6 @@ import typings.rbx.rbxStrings.tooltipMultiline
 import typings.rbx.rbxStrings.tooltipPosition
 import typings.rbx.rbxStrings.tooltipResponsive
 import typings.rbx.rbxStrings.unselectable
-import typings.rbx.sectionSectionMod.SectionProps
 import typings.react.mod.ComponentProps
 import typings.react.mod.ElementType
 import typings.react.mod.RefAttributes
@@ -79,7 +78,9 @@ object layoutMod {
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 
             hidden | color | overlay | size | italic | relative | tooltip | as | className | badge | badgeColor | badgeOutlined | badgeRounded | badgeSize | clearfix | pull | marginless | paddingless | radiusless | shadowless | unselectable | clipped | responsive | textAlign | textSize | tooltipActive | tooltipColor | tooltipMultiline | tooltipPosition | tooltipResponsive | backgroundColor | textColor | textTransform | textWeight | invisible | srOnly | gradient
           ]
-        ]) & (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
+        ]) & (RefAttributes[
+          /* import warning: importer.ImportType#apply Failed type conversion: TAsComponent extends 'symbol' | 'object' | 'big' | 'link' | 'small' | 'sub' | 'sup' | 'track' | 'progress' | 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'label' | 'legend' | 'li' | 'main' | 'map' | 'mark' | 'menu' | 'meta' | 'meter' | 'nav' | 'noscript' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'script' | 'section' | 'select' | 'source' | 'span' | 'strong' | 'style' | 'summary' | 'table' | 'tbody' | 'td' | 'template' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'svg' | 'switch' | 'text' | 'textPath' | 'tspan' | 'use' | 'view' | 'menuitem' | 'keygen' | 'noindex' | 'webview' | 'animate' | 'animateMotion' | 'animateTransform' | 'feDropShadow' | 'mpath' ? rbx.rbx/base/exotic.FromReactType<TAsComponent> : TAsComponent */ js.Any
+        ])
     ): Element | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
     
     @JSImport("rbx/layout", "Hero")

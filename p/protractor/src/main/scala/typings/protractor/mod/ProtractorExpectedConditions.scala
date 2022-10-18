@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("protractor", "ProtractorExpectedConditions")
 @js.native
 open class ProtractorExpectedConditions protected ()
-  extends typings.protractor.expectedConditionsMod.ProtractorExpectedConditions {
-  def this(browser: typings.protractor.browserMod.ProtractorBrowser) = this()
+  extends typings.protractor.builtExpectedConditionsMod.ProtractorExpectedConditions {
+  def this(browser: typings.protractor.builtBrowserMod.ProtractorBrowser) = this()
 }

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +15,7 @@ trait PivotTable extends StObject {
     * `1` is for column `D`. This field is deprecated in favor of filter_specs.
     */
   var criteria: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.PivotFilterCriteria}
-    */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.PivotTable & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.PivotFilterCriteria} */ js.Any
   ] = js.undefined
   
   /** Output only. The data execution status for data source pivot tables. */
@@ -61,9 +58,7 @@ object PivotTable {
     inline def setColumnsVarargs(value: PivotGroup*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCriteria(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.PivotFilterCriteria}
-      */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.PivotTable & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.PivotFilterCriteria} */ js.Any
     ): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)

@@ -1,7 +1,7 @@
 package typings.awsSdkProtocolHttp
 
-import typings.awsSdkProtocolHttp.httpRequestMod.HttpRequestOptions
-import typings.awsSdkProtocolHttp.httpResponseMod.HttpResponseOptions
+import typings.awsSdkProtocolHttp.distTypesHttpRequestMod.HttpRequestOptions
+import typings.awsSdkProtocolHttp.distTypesHttpResponseMod.HttpResponseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object mod {
   @JSImport("@aws-sdk/protocol-http", "HttpRequest")
   @js.native
   open class HttpRequest protected ()
-    extends typings.awsSdkProtocolHttp.httpRequestMod.HttpRequest {
+    extends typings.awsSdkProtocolHttp.distTypesHttpRequestMod.HttpRequest {
     def this(options: HttpRequestOptions) = this()
   }
   /* static members */
@@ -31,7 +31,7 @@ object mod {
   @JSImport("@aws-sdk/protocol-http", "HttpResponse")
   @js.native
   open class HttpResponse protected ()
-    extends typings.awsSdkProtocolHttp.httpResponseMod.HttpResponse {
+    extends typings.awsSdkProtocolHttp.distTypesHttpResponseMod.HttpResponse {
     def this(options: HttpResponseOptions) = this()
   }
   /* static members */

@@ -51,16 +51,17 @@ trait Component[TProperties] extends StObject {
     */
   def option(options: Partial[TProperties]): Unit = js.native
   /**
-    * Gets the value of a single property.
-    */
-  def option[TPropertyName /* <: String */](optionName: TPropertyName): Any | (/* import warning: importer.ImportType#apply Failed type conversion: TProperties[TPropertyName] */ js.Any) = js.native
-  /**
     * Updates the value of a single property.
     */
   def option[TPropertyName /* <: String */](
     optionName: TPropertyName,
-    optionValue: Any | (/* import warning: importer.ImportType#apply Failed type conversion: TProperties[TPropertyName] */ js.Any)
+    optionValue: /* import warning: importer.ImportType#apply Failed type conversion: TPropertyName extends keyof TProperties ? TProperties[TPropertyName] : unknown */ js.Any
   ): Unit = js.native
+  /**
+    * Gets the value of a single property.
+    */
+  @JSName("option")
+  def option_TPropertyName_Any[TPropertyName /* <: String */](optionName: TPropertyName): /* import warning: importer.ImportType#apply Failed type conversion: TPropertyName extends keyof TProperties ? TProperties[TPropertyName] : unknown */ js.Any = js.native
   
   /**
     * Resets a property to its default value.

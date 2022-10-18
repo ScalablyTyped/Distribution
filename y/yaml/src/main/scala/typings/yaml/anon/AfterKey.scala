@@ -12,7 +12,7 @@ trait AfterKey extends StObject {
   
   var inFlow: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[typings.yaml.scalarMod.Scalar.Type] = js.undefined
+  var `type`: js.UndefOr[typings.yaml.distNodesScalarMod.Scalar.Type] = js.undefined
 }
 object AfterKey {
   
@@ -35,7 +35,7 @@ object AfterKey {
     
     inline def setInFlowUndefined: Self = StObject.set(x, "inFlow", js.undefined)
     
-    inline def setType(value: typings.yaml.scalarMod.Scalar.Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.yaml.distNodesScalarMod.Scalar.Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

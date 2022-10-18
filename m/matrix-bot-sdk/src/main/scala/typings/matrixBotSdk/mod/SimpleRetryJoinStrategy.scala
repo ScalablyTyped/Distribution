@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "SimpleRetryJoinStrategy")
 @js.native
 open class SimpleRetryJoinStrategy ()
-  extends typings.matrixBotSdk.joinRoomStrategyMod.SimpleRetryJoinStrategy
+  extends typings.matrixBotSdk.libStrategiesJoinRoomStrategyMod.SimpleRetryJoinStrategy

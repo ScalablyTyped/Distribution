@@ -3,12 +3,12 @@ package typings.reactRouterDom
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributeAnchorTarget
 import typings.react.mod.RefAttributes
-import typings.reactRouter.contextMod.RelativeRoutingType
+import typings.reactRouter.distLibContextMod.RelativeRoutingType
 import typings.reactRouterDom.mod.FormProps
 import typings.reactRouterDom.mod.SubmitTarget
-import typings.remixRunRouter.routerMod.HydrationState
-import typings.remixRunRouter.utilsMod.FormEncType
-import typings.remixRunRouter.utilsMod.FormMethod
+import typings.remixRunRouter.distRouterMod.HydrationState
+import typings.remixRunRouter.distUtilsMod.FormEncType
+import typings.remixRunRouter.distUtilsMod.FormMethod
 import typings.std.FormData
 import typings.std.HTMLFormElement
 import typings.std.ReturnType

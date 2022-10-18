@@ -8,7 +8,7 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.TouchEventHandler
 import typings.react.mod.WheelEventHandler
-import typings.reactVis.anon.Horizontal
+import typings.reactVis.anon.Vertical
 import typings.reactVis.mod.^
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -65,7 +65,7 @@ type RVGet[T /* <: AbstractSeriesPoint */, K /* <: /* keyof T */ String */] = js
 /* datapoint */ T, 
 /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any]
 
-type RVGetAlignStyle = js.Function3[/* align */ Horizontal, /* x */ Double, /* y */ Double, CSSProperties]
+type RVGetAlignStyle = js.Function3[/* align */ Vertical, /* x */ Double, /* y */ Double, CSSProperties]
 
 type RVGetNull[T /* <: AbstractSeriesPoint */] = js.Function1[/* datapoint */ T, Any]
 

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the TimedMetadataTrack::TrackFailed event. */
-@JSGlobal("Windows.Media.Core.TimedMetadataTrackFailedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.TimedMetadataTrackFailedEventArgs")
 @js.native
-abstract class TimedMetadataTrackFailedEventArgs ()
+open class TimedMetadataTrackFailedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.TimedMetadataTrackFailedEventArgs {
   

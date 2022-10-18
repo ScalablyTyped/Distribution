@@ -312,7 +312,7 @@ object drawing {
     /**
       * The completed overlay.
       */
-    var overlay: Marker | Null | Polygon | Polyline | Rectangle | Circle
+    var overlay: Marker_ | Null | Polygon | Polyline | Rectangle | Circle
     
     /**
       * The completed overlay&#39;s type.
@@ -329,7 +329,7 @@ object drawing {
     
     extension [Self <: OverlayCompleteEvent](x: Self) {
       
-      inline def setOverlay(value: Marker | Polygon | Polyline | Rectangle | Circle): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: Marker_ | Polygon | Polyline | Rectangle | Circle): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
       inline def setOverlayNull: Self = StObject.set(x, "overlay", null)
       

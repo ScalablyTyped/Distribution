@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl.anon
 
-import typings.tensorflowTfjsBackendWebgl.shaderCompilerMod.UniformType
+import typings.tensorflowTfjsBackendWebgl.distShaderCompilerMod.UniformType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

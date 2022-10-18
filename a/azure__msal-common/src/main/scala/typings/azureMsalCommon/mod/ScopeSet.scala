@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "ScopeSet")
 @js.native
 open class ScopeSet protected ()
-  extends typings.azureMsalCommon.scopeSetMod.ScopeSet {
+  extends typings.azureMsalCommon.distRequestScopeSetMod.ScopeSet {
   def this(inputScopes: js.Array[String]) = this()
 }
 /* static members */
@@ -23,5 +23,5 @@ object ScopeSet {
     * @param appClientId
     * @param scopesRequired
     */
-  inline def fromString(inputScopeString: String): typings.azureMsalCommon.scopeSetMod.ScopeSet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(inputScopeString.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.scopeSetMod.ScopeSet]
+  inline def fromString(inputScopeString: String): typings.azureMsalCommon.distRequestScopeSetMod.ScopeSet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(inputScopeString.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distRequestScopeSetMod.ScopeSet]
 }

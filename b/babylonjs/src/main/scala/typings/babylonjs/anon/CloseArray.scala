@@ -1,9 +1,9 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathColorMod.Color4
-import typings.babylonjs.mathVectorMod.Vector2
-import typings.babylonjs.mathVectorMod.Vector3
-import typings.babylonjs.mathVectorMod.Vector4
+import typings.babylonjs.mathsMathDotcolorMod.Color4
+import typings.babylonjs.mathsMathDotvectorMod.Vector2
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
+import typings.babylonjs.mathsMathDotvectorMod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ trait CloseArray extends StObject {
   
   var frontUVs: js.UndefOr[Vector4] = js.undefined
   
-  var instance: js.UndefOr[typings.babylonjs.meshMod.Mesh] = js.undefined
+  var instance: js.UndefOr[typings.babylonjs.meshesMeshMod.Mesh] = js.undefined
   
   var invertUV: js.UndefOr[Boolean] = js.undefined
   
@@ -65,7 +65,7 @@ object CloseArray {
     
     inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
     
-    inline def setInstance(value: typings.babylonjs.meshMod.Mesh): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: typings.babylonjs.meshesMeshMod.Mesh): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     

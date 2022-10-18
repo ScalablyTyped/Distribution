@@ -1,11 +1,11 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.binMod.BinParams
-import typings.vegaLite.compositemarkMod.CompositeAggregate
-import typings.vegaLite.srcTimeunitMod.TimeUnitParams
+import typings.vegaLite.buildSrcBinMod.BinParams
+import typings.vegaLite.buildSrcCompositemarkMod.CompositeAggregate
+import typings.vegaLite.buildSrcTimeunitMod.TimeUnitParams
 import typings.vegaLite.vegaLiteStrings.binned
-import typings.vegaTypings.encodeMod.Text
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaTypings.typesSpecEncodeMod.Text
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ trait Aggregate extends StObject {
     *
     * __See also:__ [`aggregate`](https://vega.github.io/vega-lite/docs/aggregate.html) documentation.
     */
-  var aggregate: js.UndefOr[typings.vegaLite.aggregateMod.Aggregate | CompositeAggregate] = js.undefined
+  var aggregate: js.UndefOr[typings.vegaLite.buildSrcAggregateMod.Aggregate | CompositeAggregate] = js.undefined
   
   /**
     * Relative position on a band of a stacked, binned, time unit, or band scale. For example, the marks will be positioned at the beginning of the band if set to `0`, and at the middle of the band if set to `0.5`.
@@ -65,7 +65,7 @@ trait Aggregate extends StObject {
     *
     * __See also:__ [`timeUnit`](https://vega.github.io/vega-lite/docs/timeunit.html) documentation.
     */
-  var timeUnit: js.UndefOr[typings.vegaLite.srcTimeunitMod.TimeUnit | TimeUnitParams] = js.undefined
+  var timeUnit: js.UndefOr[typings.vegaLite.buildSrcTimeunitMod.TimeUnit | TimeUnitParams] = js.undefined
   
   var title: js.UndefOr[SignalRef | Text] = js.undefined
   
@@ -110,7 +110,7 @@ object Aggregate {
   
   extension [Self <: Aggregate](x: Self) {
     
-    inline def setAggregate(value: typings.vegaLite.aggregateMod.Aggregate | CompositeAggregate): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    inline def setAggregate(value: typings.vegaLite.buildSrcAggregateMod.Aggregate | CompositeAggregate): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
     inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
@@ -126,7 +126,7 @@ object Aggregate {
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setTimeUnit(value: typings.vegaLite.srcTimeunitMod.TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: typings.vegaLite.buildSrcTimeunitMod.TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     
     inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
     

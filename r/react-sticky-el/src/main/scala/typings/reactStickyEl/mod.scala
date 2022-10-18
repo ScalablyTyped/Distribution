@@ -63,7 +63,7 @@ object mod {
         * Defaults to 'div'.
         */
       var holderCmp: js.UndefOr[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.reactStickyEl.reactStickyElStrings.a, typings.reactStickyEl.reactStickyElStrings.abbr, typings.reactStickyEl.reactStickyElStrings.address */ Any
           ] = js.undefined
       
       /**
@@ -143,7 +143,7 @@ object mod {
         * Defaults to 'div'.
         */
       var wrapperCmp: js.UndefOr[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.reactStickyEl.reactStickyElStrings.a, typings.reactStickyEl.reactStickyElStrings.abbr, typings.reactStickyEl.reactStickyElStrings.address */ Any
           ] = js.undefined
     }
     object Props {
@@ -171,7 +171,9 @@ object mod {
         
         inline def setHideOnBoundaryHitUndefined: Self = StObject.set(x, "hideOnBoundaryHit", js.undefined)
         
-        inline def setHolderCmp(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any): Self = StObject.set(x, "holderCmp", value.asInstanceOf[js.Any])
+        inline def setHolderCmp(
+          value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.reactStickyEl.reactStickyElStrings.a, typings.reactStickyEl.reactStickyElStrings.abbr, typings.reactStickyEl.reactStickyElStrings.address */ Any
+        ): Self = StObject.set(x, "holderCmp", value.asInstanceOf[js.Any])
         
         inline def setHolderCmpUndefined: Self = StObject.set(x, "holderCmp", js.undefined)
         
@@ -207,7 +209,9 @@ object mod {
         
         inline def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
         
-        inline def setWrapperCmp(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any): Self = StObject.set(x, "wrapperCmp", value.asInstanceOf[js.Any])
+        inline def setWrapperCmp(
+          value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.reactStickyEl.reactStickyElStrings.a, typings.reactStickyEl.reactStickyElStrings.abbr, typings.reactStickyEl.reactStickyElStrings.address */ Any
+        ): Self = StObject.set(x, "wrapperCmp", value.asInstanceOf[js.Any])
         
         inline def setWrapperCmpUndefined: Self = StObject.set(x, "wrapperCmp", js.undefined)
       }

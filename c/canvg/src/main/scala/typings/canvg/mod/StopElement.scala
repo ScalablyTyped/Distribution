@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "StopElement")
 @js.native
 open class StopElement protected ()
-  extends typings.canvg.documentMod.StopElement {
-  def this(document: typings.canvg.documentDocumentMod.Document, node: HTMLElement) = this()
-  def this(document: typings.canvg.documentDocumentMod.Document, node: HTMLElement, captureTextNodes: Boolean) = this()
+  extends typings.canvg.distDocumentMod.StopElement {
+  def this(document: typings.canvg.distDocumentDocumentMod.Document, node: HTMLElement) = this()
+  def this(
+    document: typings.canvg.distDocumentDocumentMod.Document,
+    node: HTMLElement,
+    captureTextNodes: Boolean
+  ) = this()
 }

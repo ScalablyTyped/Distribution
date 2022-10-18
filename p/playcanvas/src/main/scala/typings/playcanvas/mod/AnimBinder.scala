@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @ignore
   */
-@JSImport("playcanvas", "AnimBinder")
-@js.native
-open class AnimBinder () extends StObject {
+trait AnimBinder extends StObject {
   
   /**
     * Resolve the provided target path and return an instance of {@link AnimTarget} which will
@@ -22,50 +20,35 @@ open class AnimBinder () extends StObject {
     * @param {string} path - The animation curve path to resolve.
     * @returns {AnimTarget|null} - Returns the target instance on success and null otherwise.
     */
-  def resolve(path: String): AnimTarget | Null = js.native
+  def resolve(path: String): AnimTarget | Null
   
   /**
     * Called when the {@link AnimEvaluator} no longer has a curve driving the given key.
     *
     * @param {string} path - The animation curve path which is no longer driven.
     */
-  def unresolve(path: String): Unit = js.native
+  def unresolve(path: String): Unit
   
   /**
     * Called by {@link AnimEvaluator} once a frame after animation updates are done.
     *
     * @param {number} deltaTime - Amount of time that passed in the current update.
     */
-  def update(deltaTime: Double): Unit = js.native
+  def update(deltaTime: Double): Unit
 }
 object AnimBinder {
   
-  @JSImport("playcanvas", "AnimBinder")
-  @js.native
-  val ^ : js.Any = js.native
+  inline def apply(resolve: String => AnimTarget | Null, unresolve: String => Unit, update: Double => Unit): AnimBinder = {
+    val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction1(resolve), unresolve = js.Any.fromFunction1(unresolve), update = js.Any.fromFunction1(update))
+    __obj.asInstanceOf[AnimBinder]
+  }
   
-  /**
-    * Converts a locator array into its string version.
-    *
-    * @param {string|string[]} entityPath - The entity location in the scene defined as an array or
-    * string path.
-    * @param {string} component - The component of the entity the property is located under.
-    * @param {string|string[]} propertyPath - The property location in the entity defined as an array
-    * or string path.
-    * @returns {string} The locator encoded as a string.
-    * @example
-    * // returns 'spotLight/light/color.r'
-    * encode(['spotLight'], 'light', ['color', 'r']);
-    */
-  /* static member */
-  inline def encode(entityPath: String, component: String, propertyPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(entityPath.asInstanceOf[js.Any], component.asInstanceOf[js.Any], propertyPath.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encode(entityPath: String, component: String, propertyPath: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(entityPath.asInstanceOf[js.Any], component.asInstanceOf[js.Any], propertyPath.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encode(entityPath: js.Array[String], component: String, propertyPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(entityPath.asInstanceOf[js.Any], component.asInstanceOf[js.Any], propertyPath.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encode(entityPath: js.Array[String], component: String, propertyPath: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(entityPath.asInstanceOf[js.Any], component.asInstanceOf[js.Any], propertyPath.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  /* static member */
-  inline def joinPath(pathSegments: Any, character: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(pathSegments.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Any]
-  
-  /* static member */
-  inline def splitPath(path: Any, character: Any): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splitPath")(path.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  extension [Self <: AnimBinder](x: Self) {
+    
+    inline def setResolve(value: String => AnimTarget | Null): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+    
+    inline def setUnresolve(value: String => Unit): Self = StObject.set(x, "unresolve", js.Any.fromFunction1(value))
+    
+    inline def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+  }
 }

@@ -3,8 +3,8 @@ package typings.blueprintjsCore.mod
 import typings.blueprintjsCore.anon.AnimationState
 import typings.blueprintjsCore.anon.Height
 import typings.blueprintjsCore.anon.PartialCollapseProps
-import typings.blueprintjsCore.collapseMod.CollapseProps
-import typings.blueprintjsCore.collapseMod.ICollapseState
+import typings.blueprintjsCore.libEsmComponentsCollapseCollapseMod.CollapseProps
+import typings.blueprintjsCore.libEsmComponentsCollapseCollapseMod.ICollapseState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Collapse")
 @js.native
 open class Collapse protected ()
-  extends typings.blueprintjsCore.componentsMod.Collapse {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Collapse {
   def this(props: CollapseProps) = this()
   def this(props: CollapseProps, context: Any) = this()
 }

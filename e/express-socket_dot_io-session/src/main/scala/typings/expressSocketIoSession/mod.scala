@@ -2,8 +2,8 @@ package typings.expressSocketIoSession
 
 import typings.express.mod.RequestHandler
 import typings.expressSocketIoSession.anon.SessionPartialSessionData
+import typings.socketIo.distTypedEventsMod.DefaultEventsMap
 import typings.socketIo.mod.Socket
-import typings.socketIo.typedEventsMod.DefaultEventsMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,0 +1,42 @@
+package typings.wixUiIconsCommon
+
+import org.scalablytyped.runtime.Shortcut
+import typings.react.mod.FC
+import typings.react.mod.SVGAttributes
+import typings.std.SVGElement
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distSrcClassicEditorGeneralDistComponentsTextAlignRightMod extends Shortcut {
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/general/dist/components/TextAlignRight", JSImport.Default)
+  @js.native
+  val default: FC[TextAlignRightProps] = js.native
+  
+  trait TextAlignRightProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
+    
+    var size: js.UndefOr[String | Double] = js.undefined
+  }
+  object TextAlignRightProps {
+    
+    inline def apply(): TextAlignRightProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TextAlignRightProps]
+    }
+    
+    extension [Self <: TextAlignRightProps](x: Self) {
+      
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    }
+  }
+  
+  type _To = FC[TextAlignRightProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `distSrcClassicEditorGeneralDistComponentsTextAlignRightMod.foo` */
+  override def _to: FC[TextAlignRightProps] = default
+}

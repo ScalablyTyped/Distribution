@@ -1,11 +1,11 @@
 package typings.interactjsTypes
 
-import typings.interactjsTypes.interactEventMod.EventPhase
-import typings.interactjsTypes.interactableMod.DeltaSource
-import typings.interactjsTypes.interactablePreventDefaultMod.PreventDefaultValue
-import typings.interactjsTypes.resizePluginMod.EdgeName
-import typings.interactjsTypes.scopeMod.ListenerName
-import typings.interactjsTypes.typesMod.ActionName
+import typings.interactjsTypes.actionsResizePluginMod.EdgeName
+import typings.interactjsTypes.coreInteractEventMod.EventPhase
+import typings.interactjsTypes.coreInteractableMod.DeltaSource
+import typings.interactjsTypes.coreInteractablePreventDefaultMod.PreventDefaultValue
+import typings.interactjsTypes.coreScopeMod.ListenerName
+import typings.interactjsTypes.coreTypesMod.ActionName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,14 +15,6 @@ object interactjsTypesStrings {
   @js.native
   sealed trait DOMContentLoaded extends StObject
   inline def DOMContentLoaded: DOMContentLoaded = "DOMContentLoaded".asInstanceOf[DOMContentLoaded]
-  
-  @js.native
-  sealed trait DevToolsOptions extends StObject
-  inline def DevToolsOptions: DevToolsOptions = "DevToolsOptions".asInstanceOf[DevToolsOptions]
-  
-  @js.native
-  sealed trait OrBoolean extends StObject
-  inline def OrBoolean: OrBoolean = "OrBoolean".asInstanceOf[OrBoolean]
   
   @js.native
   sealed trait __backCompatOption extends StObject

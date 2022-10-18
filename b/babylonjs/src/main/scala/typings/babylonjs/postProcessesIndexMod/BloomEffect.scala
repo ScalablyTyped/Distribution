@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "BloomEffect")
 @js.native
 open class BloomEffect protected ()
-  extends typings.babylonjs.bloomEffectMod.BloomEffect {
+  extends typings.babylonjs.postProcessesBloomEffectMod.BloomEffect {
   /**
     * Creates a new instance of @see BloomEffect
     * @param scene The scene the effect belongs to.

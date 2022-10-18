@@ -15,7 +15,15 @@ object helpersMod {
   
   type Intersection[T /* <: js.Object */, U /* <: js.Object */] = Pick[T, Extract[/* keyof T */ String, /* keyof U */ String]]
   
-  type KnownKeys[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]: string extends K? never : number extends K? never : K} extends {[ _ in keyof T ]: infer U} ? U : never
+    }}}
+    */
+  @js.native
+  trait KnownKeys[T] extends StObject
   
   type OptionalKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: -? {} extends std.Pick<T, K>? K : never}[keyof T] */ js.Any
   

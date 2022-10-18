@@ -1,7 +1,7 @@
 package typings.rdfExt
 
-import typings.rdfExt.propTypeMod.PropType
-import typings.rdfExt.quadMod.QuadExt
+import typings.rdfExt.libPropTypeMod.PropType
+import typings.rdfExt.libQuadMod.QuadExt
 import typings.rdfExt.rdfExtStrings.`object`
 import typings.rdfExt.rdfExtStrings.graph
 import typings.rdfExt.rdfExtStrings.language

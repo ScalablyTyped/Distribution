@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.webXRHitTestMod.IWebXRHitTestOptions
+import typings.babylonjs.xRFeaturesWebXRHitTestMod.IWebXRHitTestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXRHitTest")
 @js.native
 open class WebXRHitTest protected ()
-  extends typings.babylonjs.legacyMod.WebXRHitTest {
+  extends typings.babylonjs.legacyLegacyMod.WebXRHitTest {
   /**
     * Creates a new instance of the hit test feature
     * @param _xrSessionManager an instance of WebXRSessionManager
     * @param options options to use when constructing this feature
     */
-  def this(_xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager) = this()
+  def this(_xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager) = this()
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     /**
     * options to use when constructing this feature
     */

@@ -2,10 +2,10 @@ package typings.vscodeLanguageserver.mod
 
 import typings.vscodeLanguageserver.vscodeLanguageserverStrings.textDocumentSlashsemanticTokens
 import typings.vscodeLanguageserver.vscodeLanguageserverStrings.textDocumentSlashsemanticTokensSlashfullSlashdelta
-import typings.vscodeLanguageserverProtocol.protocolSemanticTokensMod.SemanticTokensDeltaParams
-import typings.vscodeLanguageserverProtocol.protocolSemanticTokensMod.SemanticTokensDeltaPartialResult
-import typings.vscodeLanguageserverProtocol.protocolSemanticTokensMod.SemanticTokensPartialResult
-import typings.vscodeLanguageserverProtocol.protocolSemanticTokensMod.SemanticTokensRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotsemanticTokensMod.SemanticTokensDeltaParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotsemanticTokensMod.SemanticTokensDeltaPartialResult
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotsemanticTokensMod.SemanticTokensPartialResult
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotsemanticTokensMod.SemanticTokensRegistrationOptions
 import typings.vscodeLanguageserverTypes.mod.SemanticTokensDelta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object SemanticTokensDeltaRequest {
   
   @JSImport("vscode-languageserver", "SemanticTokensDeltaRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver", "SemanticTokensDeltaRequest.method")
   @js.native
@@ -28,7 +28,7 @@ object SemanticTokensDeltaRequest {
   
   @JSImport("vscode-languageserver", "SemanticTokensDeltaRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     SemanticTokensDeltaParams, 
     typings.vscodeLanguageserverTypes.mod.SemanticTokens | SemanticTokensDelta | Null, 
     SemanticTokensPartialResult | SemanticTokensDeltaPartialResult, 

@@ -1,22 +1,22 @@
 package typings.antvGSvg
 
-import typings.antvGLite.contextServiceMod.ContextService
-import typings.antvGLite.cssInterfacesMod.StyleValueRegistry
-import typings.antvGLite.displayObjectsPathMod.ParsedPathStyleProps
+import typings.antvGLite.distCameraInterfacesMod.ICamera
+import typings.antvGLite.distCssInterfacesMod.StyleValueRegistry
+import typings.antvGLite.distDisplayObjectsImageMod.ParsedImageStyleProps
+import typings.antvGLite.distDisplayObjectsLineMod.ParsedLineStyleProps
+import typings.antvGLite.distDisplayObjectsPathMod.ParsedPathStyleProps
+import typings.antvGLite.distDisplayObjectsPolylineMod.ParsedPolylineStyleProps
+import typings.antvGLite.distDisplayObjectsRectMod.ParsedRectStyleProps
+import typings.antvGLite.distDisplayObjectsTextMod.ParsedTextStyleProps
+import typings.antvGLite.distServicesContextServiceMod.ContextService
+import typings.antvGLite.distServicesRenderingContextMod.RenderingContext
 import typings.antvGLite.distTypesMod.CanvasConfig
 import typings.antvGLite.distTypesMod.RendererConfig
 import typings.antvGLite.distTypesMod.Shape
-import typings.antvGLite.imageMod.ParsedImageStyleProps
-import typings.antvGLite.interfacesMod.ICamera
-import typings.antvGLite.lineMod.ParsedLineStyleProps
 import typings.antvGLite.mod.AbstractRenderer
 import typings.antvGLite.mod.Syringe.DefinedToken
-import typings.antvGLite.polylineMod.ParsedPolylineStyleProps
-import typings.antvGLite.rectMod.ParsedRectStyleProps
-import typings.antvGLite.renderingContextMod.RenderingContext
-import typings.antvGLite.textMod.ParsedTextStyleProps
 import typings.antvGPluginSvgRenderer.anon.PartialSVGRendererPluginO
-import typings.antvGPluginSvgRenderer.defsMod.DefElementManager
+import typings.antvGPluginSvgRenderer.distShapesDefsMod.DefElementManager
 import typings.antvGSvg.anon.PartialSVGRendererConfig
 import typings.manaSyringe.mod.SyringeModule
 import typings.std.Document
@@ -117,9 +117,9 @@ object mod {
         contextService: ContextService[SVGElement],
         renderingContext: RenderingContext,
         styleValueRegistry: StyleValueRegistry,
-        createElementContribution: typings.antvGPluginSvgRenderer.tokensMod.ElementLifeCycleContribution,
+        createElementContribution: typings.antvGPluginSvgRenderer.distTokensMod.ElementLifeCycleContribution,
         defElementManager: DefElementManager,
-        pluginOptions: typings.antvGPluginSvgRenderer.tokensMod.SVGRendererPluginOptions
+        pluginOptions: typings.antvGPluginSvgRenderer.distTokensMod.SVGRendererPluginOptions
       ) = this()
     }
     /* static members */

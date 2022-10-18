@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-jsonrpc", "ConnectionError")
 @js.native
 open class ConnectionError protected ()
-  extends typings.vscodeJsonrpc.connectionMod.ConnectionError {
-  def this(code: typings.vscodeJsonrpc.connectionMod.ConnectionErrors, message: String) = this()
+  extends typings.vscodeJsonrpc.libCommonConnectionMod.ConnectionError {
+  def this(code: typings.vscodeJsonrpc.libCommonConnectionMod.ConnectionErrors, message: String) = this()
 }

@@ -26,7 +26,7 @@ trait TLSSocketOptions
   /**
     * An optional net.Server instance.
     */
-  var server: js.UndefOr[typings.node.nodeNetMod.Server] = js.undefined
+  var server: js.UndefOr[typings.node.nodeColonnetMod.Server] = js.undefined
   
   /**
     * An optional Buffer instance containing a TLS session.
@@ -50,7 +50,7 @@ object TLSSocketOptions {
     
     inline def setRequestOCSPUndefined: Self = StObject.set(x, "requestOCSP", js.undefined)
     
-    inline def setServer(value: typings.node.nodeNetMod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: typings.node.nodeColonnetMod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     

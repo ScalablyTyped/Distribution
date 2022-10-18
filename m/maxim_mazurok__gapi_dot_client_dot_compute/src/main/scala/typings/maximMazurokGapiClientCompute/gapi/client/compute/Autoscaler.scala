@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,9 +42,7 @@ trait Autoscaler extends StObject {
   
   /** [Output Only] Status information of existing scaling schedules. */
   var scalingScheduleStatus: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.ScalingScheduleStatus}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.Autoscaler & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.ScalingScheduleStatus} */ js.Any
   ] = js.undefined
   
   /** [Output Only] Server-defined URL for the resource. */
@@ -112,9 +109,7 @@ object Autoscaler {
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     inline def setScalingScheduleStatus(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.ScalingScheduleStatus}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.Autoscaler & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.ScalingScheduleStatus} */ js.Any
     ): Self = StObject.set(x, "scalingScheduleStatus", value.asInstanceOf[js.Any])
     
     inline def setScalingScheduleStatusUndefined: Self = StObject.set(x, "scalingScheduleStatus", js.undefined)

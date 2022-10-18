@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object materialUiStylesStrings {
   
   @js.native
-  sealed trait ThemeWithProps extends StObject
-  inline def ThemeWithProps: ThemeWithProps = "ThemeWithProps".asInstanceOf[ThemeWithProps]
-  
-  @js.native
   sealed trait className extends StObject
   inline def className: className = "className".asInstanceOf[className]
   

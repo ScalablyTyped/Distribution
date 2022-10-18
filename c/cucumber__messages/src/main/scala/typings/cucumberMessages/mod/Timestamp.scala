@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@cucumber/messages", "Timestamp")
 @js.native
 open class Timestamp ()
-  extends typings.cucumberMessages.messagesMod.Timestamp
+  extends typings.cucumberMessages.distCjsSrcMessagesMod.Timestamp

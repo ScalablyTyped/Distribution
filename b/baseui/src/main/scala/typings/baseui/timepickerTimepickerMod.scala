@@ -59,7 +59,7 @@ object timepickerTimepickerMod {
         js.Array[Readonlyxstringanyidstrin]
       ] = js.native
     
-    var dateHelpers: typings.baseui.dateHelpersMod.default[T] = js.native
+    var dateHelpers: typings.baseui.datepickerUtilsDateHelpersMod.default[T] = js.native
     
     def getTimeWindowInSeconds(step: Double): Start = js.native
     

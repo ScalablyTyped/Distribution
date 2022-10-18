@@ -4,10 +4,10 @@ import typings.node.timersMod.global.NodeJS.Timeout
 import typings.react.mod.DOMAttributes
 import typings.react.mod.MutableRefObject
 import typings.react.mod.RefObject
-import typings.reactToastify.typesMod.Id
-import typings.reactToastify.typesMod.Toast
-import typings.reactToastify.typesMod.ToastPosition
-import typings.reactToastify.typesMod.TypeOptions
+import typings.reactToastify.distTypesMod.Id
+import typings.reactToastify.distTypesMod.Toast
+import typings.reactToastify.distTypesMod.ToastPosition
+import typings.reactToastify.distTypesMod.TypeOptions
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject

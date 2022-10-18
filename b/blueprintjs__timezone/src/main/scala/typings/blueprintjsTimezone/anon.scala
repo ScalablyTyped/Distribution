@@ -1,16 +1,16 @@
 package typings.blueprintjsTimezone
 
-import typings.blueprintjsCore.alignmentMod.Alignment
-import typings.blueprintjsCore.inputGroupMod.InputGroupProps2
-import typings.blueprintjsCore.intentMod.Intent
-import typings.blueprintjsCore.popoverMod.PopoverInteractionKind
-import typings.blueprintjsCore.popoverSharedPropsMod.PopoverPosition
-import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsCore.libEsmCommonAlignmentMod.Alignment
+import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
+import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
+import typings.blueprintjsCore.libEsmComponentsFormsInputGroupMod.InputGroupProps2
+import typings.blueprintjsCore.libEsmComponentsPopoverPopoverMod.PopoverInteractionKind
+import typings.blueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition
+import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.button
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.reset
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.submit
-import typings.blueprintjsTimezone.timezoneDisplayFormatMod.TimezoneDisplayFormat
+import typings.blueprintjsTimezone.libEsmComponentsTimezonePickerTimezoneDisplayFormatMod.TimezoneDisplayFormat
 import typings.popperJs.mod.Boundary
 import typings.popperJs.mod.Modifiers
 import typings.popperJs.mod.Placement
@@ -248,7 +248,7 @@ object anon {
     var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
     
     var targetTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsTimezone.blueprintjsTimezoneStrings.a, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbr, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.address */ Any
       ] = js.undefined
     
     var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -256,7 +256,7 @@ object anon {
     var usePortal: js.UndefOr[Boolean] = js.undefined
     
     var wrapperTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsTimezone.blueprintjsTimezoneStrings.a, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbr, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.address */ Any
       ] = js.undefined
   }
   object PartialIPopoverProps {
@@ -424,7 +424,9 @@ object anon {
       
       inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
       
-      inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
+      inline def setTargetTagName(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsTimezone.blueprintjsTimezoneStrings.a, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbr, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.address */ Any
+      ): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
       
       inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
       
@@ -438,7 +440,9 @@ object anon {
       
       inline def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
       
-      inline def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
+      inline def setWrapperTagName(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsTimezone.blueprintjsTimezoneStrings.a, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbr, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.address */ Any
+      ): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
       
       inline def setWrapperTagNameUndefined: Self = StObject.set(x, "wrapperTagName", js.undefined)
     }

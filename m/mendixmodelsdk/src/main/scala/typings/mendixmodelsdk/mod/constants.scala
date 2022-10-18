@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +13,9 @@ object constants {
   @JSImport("mendixmodelsdk", "constants.Constant")
   @js.native
   open class Constant protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.constants.Constant {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.constants.Constant {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
@@ -33,7 +33,7 @@ object constants {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.constantsMod.constants.Constant = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.constantsMod.constants.Constant]
+    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenConstantsMod.constants.Constant = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenConstantsMod.constants.Constant]
     
     /* static member */
     @JSImport("mendixmodelsdk", "constants.Constant.structureTypeName")
@@ -44,7 +44,7 @@ object constants {
     /* static member */
     @JSImport("mendixmodelsdk", "constants.Constant.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.constantsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.constantsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenConstantsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenConstantsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
 }

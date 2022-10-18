@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolWorkspaceFolderMod.DidChangeWorkspaceFoldersParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotworkspaceFolderMod.DidChangeWorkspaceFoldersParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashdidChangeWorkspaceFolders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object DidChangeWorkspaceFoldersNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidChangeWorkspaceFoldersNotification.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "DidChangeWorkspaceFoldersNotification.method")
   @js.native
@@ -18,5 +18,5 @@ object DidChangeWorkspaceFoldersNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidChangeWorkspaceFoldersNotification.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[DidChangeWorkspaceFoldersParams, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[DidChangeWorkspaceFoldersParams, Unit] = js.native
 }

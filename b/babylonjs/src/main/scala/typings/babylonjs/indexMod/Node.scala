@@ -54,7 +54,7 @@ object Node {
   /**
     * @internal
     */
-  inline def _AnimationRangeFactory(_name: String, _from: Double, _to: Double): typings.babylonjs.animationRangeMod.AnimationRange = (^.asInstanceOf[js.Dynamic].applyDynamic("_AnimationRangeFactory")(_name.asInstanceOf[js.Any], _from.asInstanceOf[js.Any], _to.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationRangeMod.AnimationRange]
+  inline def _AnimationRangeFactory(_name: String, _from: Double, _to: Double): typings.babylonjs.animationsAnimationRangeMod.AnimationRange = (^.asInstanceOf[js.Dynamic].applyDynamic("_AnimationRangeFactory")(_name.asInstanceOf[js.Any], _from.asInstanceOf[js.Any], _to.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationRangeMod.AnimationRange]
   
   @JSImport("babylonjs/index", "Node._NodeConstructors")
   @js.native

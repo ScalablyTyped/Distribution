@@ -43,7 +43,11 @@ inline def ERR_INVALID_SIGNATURE: String = ^.asInstanceOf[js.Dynamic].selectDyna
 
 inline def ERR_INVALID_VERSION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("ERR_INVALID_VERSION").asInstanceOf[String]
 
+inline def ERR_ITERATOR_COMPLETED_TOO_SOON: String = ^.asInstanceOf[js.Dynamic].selectDynamic("ERR_ITERATOR_COMPLETED_TOO_SOON").asInstanceOf[String]
+
 inline def ERR_LOCAL_FILE_HEADER_NOT_FOUND: String = ^.asInstanceOf[js.Dynamic].selectDynamic("ERR_LOCAL_FILE_HEADER_NOT_FOUND").asInstanceOf[String]
+
+inline def ERR_SPLIT_ZIP_FILE: String = ^.asInstanceOf[js.Dynamic].selectDynamic("ERR_SPLIT_ZIP_FILE").asInstanceOf[String]
 
 inline def ERR_UNSUPPORTED_COMPRESSION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("ERR_UNSUPPORTED_COMPRESSION").asInstanceOf[String]
 
@@ -68,6 +72,7 @@ type CodecStream = TransformStream[Any, Any]
 /** 
   * Represents a URL stored into a `string`.
   */
+// deno-lint-ignore no-empty-interface
 type URLString = String
 
 /**

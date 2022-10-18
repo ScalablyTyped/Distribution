@@ -5224,6 +5224,10 @@ object mod {
   @js.native
   val PinFilled: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "Plan")
+  @js.native
+  val Plan: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "Plane")
   @js.native
   val Plane: CarbonIconType = js.native
@@ -7735,6 +7739,18 @@ object mod {
   @JSImport("@carbon/icons-react", "WatsonHealthICa_2D")
   @js.native
   val WatsonHealthICa2D: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "WatsonHealthImageAvailabilityLocal")
+  @js.native
+  val WatsonHealthImageAvailabilityLocal: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "WatsonHealthImageAvailabilityRetrieving")
+  @js.native
+  val WatsonHealthImageAvailabilityRetrieving: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "WatsonHealthImageAvailabilityUnavailable")
+  @js.native
+  val WatsonHealthImageAvailabilityUnavailable: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "WatsonHealthInteractiveSegmentationCursor")
   @js.native

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a section of a card that is arranged as a table in card view.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait CardLayoutTableSection
   extends StObject
@@ -20,8 +19,7 @@ trait CardLayoutTableSection
     * Represents the type of layout for this section.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var layout: typings.officeJsPreview.officeJsPreviewStrings.Table
 }

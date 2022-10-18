@@ -1,6 +1,6 @@
 package typings.typedoc.mod
 
-import typings.typedoc.commentMod.CommentDisplayPart
+import typings.typedoc.distLibModelsCommentsCommentMod.CommentDisplayPart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "CommentTag")
 @js.native
 open class CommentTag protected ()
-  extends typings.typedoc.modelsMod.CommentTag {
+  extends typings.typedoc.distLibModelsMod.CommentTag {
   /**
     * Create a new CommentTag instance.
     */

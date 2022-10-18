@@ -12,7 +12,7 @@ import typings.maplibreGl.maplibreGlStrings.ln2
 import typings.maplibreGl.maplibreGlStrings.miter
 import typings.maplibreGl.maplibreGlStrings.none
 import typings.maplibreGl.maplibreGlStrings.pi
-import typings.maplibreGl.maplibreGlStrings.properties_
+import typings.maplibreGl.maplibreGlStrings.properties
 import typings.maplibreGl.maplibreGlStrings.round
 import typings.maplibreGl.maplibreGlStrings.square
 import typings.maplibreGl.maplibreGlStrings.visible
@@ -55,7 +55,7 @@ object Linecap {
     inline def `setLine-joinUndefined`: Self = StObject.set(x, "line-join", js.undefined)
     
     inline def `setLine-joinVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "line-join", js.Array(value*))
     
     inline def `setLine-miter-limit`(value: PropertyValueSpecification[Double]): Self = StObject.set(x, "line-miter-limit", value.asInstanceOf[js.Any])
@@ -71,7 +71,7 @@ object Linecap {
     inline def `setLine-sort-keyUndefined`: Self = StObject.set(x, "line-sort-key", js.undefined)
     
     inline def `setLine-sort-keyVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "line-sort-key", js.Array(value*))
     
     inline def setVisibility(value: visible | none): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])

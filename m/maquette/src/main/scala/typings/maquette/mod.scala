@@ -1,14 +1,14 @@
 package typings.maquette
 
-import typings.maquette.interfacesMod.CalculationCache
-import typings.maquette.interfacesMod.Mapping
-import typings.maquette.interfacesMod.Projection
-import typings.maquette.interfacesMod.ProjectionOptions
-import typings.maquette.interfacesMod.Projector
-import typings.maquette.interfacesMod.ProjectorOptions
-import typings.maquette.interfacesMod.VNode
-import typings.maquette.interfacesMod.VNodeChild
-import typings.maquette.interfacesMod.VNodeProperties
+import typings.maquette.distInterfacesMod.CalculationCache
+import typings.maquette.distInterfacesMod.Mapping
+import typings.maquette.distInterfacesMod.Projection
+import typings.maquette.distInterfacesMod.ProjectionOptions
+import typings.maquette.distInterfacesMod.Projector
+import typings.maquette.distInterfacesMod.ProjectorOptions
+import typings.maquette.distInterfacesMod.VNode
+import typings.maquette.distInterfacesMod.VNodeChild
+import typings.maquette.distInterfacesMod.VNodeProperties
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

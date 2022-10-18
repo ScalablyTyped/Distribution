@@ -2,8 +2,8 @@ package typings.expressStatusMonitor
 
 import typings.express.mod.RequestHandler
 import typings.expressStatusMonitor.anon.Cpu
+import typings.socketIo.distTypedEventsMod.DefaultEventsMap
 import typings.socketIo.mod.Server
-import typings.socketIo.typedEventsMod.DefaultEventsMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

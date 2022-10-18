@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait LocalIntegerValueBlock
-  extends ValueBlock
+  extends StObject
+     with ValueBlock
      with IDerConvertible {
   
   /* private */ var _valueDec: scala.Any = js.native

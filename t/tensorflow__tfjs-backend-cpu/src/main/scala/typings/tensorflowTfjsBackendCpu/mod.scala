@@ -3,12 +3,12 @@ package typings.tensorflowTfjsBackendCpu
 import typings.tensorflowTfjsBackendCpu.anon.Indices
 import typings.tensorflowTfjsBackendCpu.anon.OutDtype
 import typings.tensorflowTfjsBackendCpu.anon.Shape
-import typings.tensorflowTfjsBackendCpu.binaryTypesMod.SimpleBinaryKernelImpl
+import typings.tensorflowTfjsBackendCpu.distUtilsBinaryTypesMod.SimpleBinaryKernelImpl
+import typings.tensorflowTfjsBackendCpu.distUtilsUnaryTypesMod.SimpleUnaryImpl
 import typings.tensorflowTfjsBackendCpu.tensorflowTfjsBackendCpuStrings.bool
 import typings.tensorflowTfjsBackendCpu.tensorflowTfjsBackendCpuStrings.float32
 import typings.tensorflowTfjsBackendCpu.tensorflowTfjsBackendCpuStrings.int32
 import typings.tensorflowTfjsBackendCpu.tensorflowTfjsBackendCpuStrings.string
-import typings.tensorflowTfjsBackendCpu.unaryTypesMod.SimpleUnaryImpl
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
@@ -25,7 +25,7 @@ object mod {
   @JSImport("@tensorflow/tfjs-backend-cpu", "MathBackendCPU")
   @js.native
   open class MathBackendCPU ()
-    extends typings.tensorflowTfjsBackendCpu.baseMod.MathBackendCPU
+    extends typings.tensorflowTfjsBackendCpu.distBaseMod.MathBackendCPU
   /* static members */
   object MathBackendCPU {
     
@@ -146,6 +146,27 @@ object mod {
     val notEqualImpl: SimpleBinaryKernelImpl = js.native
     
     inline def prodImpl(xShape: js.Array[Double], xDtype: DataType, xVals: TypedArray, reductionAxes: js.Array[Double]): OutDtype = (^.asInstanceOf[js.Dynamic].applyDynamic("prodImpl")(xShape.asInstanceOf[js.Any], xDtype.asInstanceOf[js.Any], xVals.asInstanceOf[js.Any], reductionAxes.asInstanceOf[js.Any])).asInstanceOf[OutDtype]
+    
+    inline def raggedGatherImpl(
+      paramsNestedSplits: js.Array[TypedArray],
+      paramsNestedSplitsShapes: js.Array[js.Array[Double]],
+      paramsDenseValues: TypedArray,
+      paramsDenseValuesShape: js.Array[Double],
+      paramsDenseValuesDType: DataType,
+      indices: TypedArray,
+      indicesShape: js.Array[Double],
+      outputRaggedRank: Double
+    ): js.Tuple3[js.Array[TypedArray], TypedArray, js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("raggedGatherImpl")(paramsNestedSplits.asInstanceOf[js.Any], paramsNestedSplitsShapes.asInstanceOf[js.Any], paramsDenseValues.asInstanceOf[js.Any], paramsDenseValuesShape.asInstanceOf[js.Any], paramsDenseValuesDType.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], indicesShape.asInstanceOf[js.Any], outputRaggedRank.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[TypedArray], TypedArray, js.Array[Double]]]
+    
+    inline def raggedRangeImpl(
+      starts: TypedArray,
+      startsShape: js.Array[Double],
+      startsDType: DataType,
+      limits: TypedArray,
+      limitsShape: js.Array[Double],
+      deltas: TypedArray,
+      deltasShape: js.Array[Double]
+    ): js.Tuple2[TypedArray, TypedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("raggedRangeImpl")(starts.asInstanceOf[js.Any], startsShape.asInstanceOf[js.Any], startsDType.asInstanceOf[js.Any], limits.asInstanceOf[js.Any], limitsShape.asInstanceOf[js.Any], deltas.asInstanceOf[js.Any], deltasShape.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[TypedArray, TypedArray]]
     
     inline def raggedTensorToTensorImpl(
       shape: TypedArray,
@@ -296,5 +317,5 @@ object mod {
   
   @JSImport("@tensorflow/tfjs-backend-cpu", "version_cpu")
   @js.native
-  val versionCpu: /* "3.20.0" */ String = js.native
+  val versionCpu: /* "4.0.0" */ String = js.native
 }

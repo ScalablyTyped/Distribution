@@ -1,7 +1,7 @@
 package typings.tempWrite
 
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,10 +32,10 @@ object mod {
     	*/
     inline def apply(fileContent: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     inline def apply(fileContent: String, filePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def apply(fileContent: ReadableStream): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    inline def apply(fileContent: ReadableStream, filePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     inline def apply(fileContent: Buffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     inline def apply(fileContent: Buffer, filePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    inline def apply(fileContent: ReadableStream[Any]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-    inline def apply(fileContent: ReadableStream[Any], filePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
     @JSImport("temp-write", JSImport.Default)
     @js.native

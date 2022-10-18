@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactJsonschemaFormStrings {
   
   @js.native
-  sealed trait IdSchema extends StObject
-  inline def IdSchema: IdSchema = "IdSchema".asInstanceOf[IdSchema]
-  
-  @js.native
-  sealed trait PathSchema extends StObject
-  inline def PathSchema: PathSchema = "PathSchema".asInstanceOf[PathSchema]
-  
-  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   

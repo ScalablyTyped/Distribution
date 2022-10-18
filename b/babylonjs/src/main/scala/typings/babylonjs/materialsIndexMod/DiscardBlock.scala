@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "DiscardBlock")
 @js.native
 open class DiscardBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.DiscardBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.DiscardBlock {
   /**
     * Create a new DiscardBlock
     * @param name defines the block name

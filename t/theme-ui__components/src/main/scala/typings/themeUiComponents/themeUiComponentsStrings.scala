@@ -1,15 +1,11 @@
 package typings.themeUiComponents
 
-import typings.themeUiComponents.boxMod.BoxSystemPropsKeys
+import typings.themeUiComponents.distDeclarationsSrcBoxMod.BoxSystemPropsKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeUiComponentsStrings {
-  
-  @js.native
-  sealed trait Assign extends StObject
-  inline def Assign: Assign = "Assign".asInstanceOf[Assign]
   
   @js.native
   sealed trait a extends StObject

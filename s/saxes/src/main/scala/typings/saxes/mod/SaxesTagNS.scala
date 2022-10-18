@@ -6,9 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Required<saxes.saxes.SaxesTag> & {  attributes :std.Record<string, saxes.saxes.SaxesAttributeNS>} */
-trait SaxesTagNS
-  extends StObject
-     with TagForOptions[Any] {
+trait SaxesTagNS extends StObject {
   
   var attributes: (Record[String, SaxesAttributeNS | String]) & (Record[String, SaxesAttributeNS])
   

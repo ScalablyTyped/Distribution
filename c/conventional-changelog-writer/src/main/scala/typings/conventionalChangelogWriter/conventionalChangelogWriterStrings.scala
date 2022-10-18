@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object conventionalChangelogWriterStrings {
   
   @js.native
-  sealed trait Omit extends StObject
-  inline def Omit: Omit = "Omit".asInstanceOf[Omit]
-  
-  @js.native
   sealed trait raw extends StObject
   inline def raw: raw = "raw".asInstanceOf[raw]
 }

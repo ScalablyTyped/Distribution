@@ -3,7 +3,7 @@ package typings.jestSnapshot
 import typings.expect.anon.readonlyprintExpectedvalu
 import typings.expect.mod.MatcherContext
 import typings.expect.mod.MatcherFunctionWithContext
-import typings.jestExpectUtils.mod.Tester
+import typings.jestExpectUtils.mod.EqualsFunction
 import typings.jestHasteMap.mod.IHasteFS
 import typings.jestSnapshot.anon.FilesRemoved
 import typings.jestTypes.mod.ProjectConfig
@@ -148,14 +148,14 @@ object mod {
     inline def apply(
       assertionCalls: Double,
       dontThrow: () => Unit,
-      equals_ : (/* a */ Any, /* b */ Any, /* customTesters */ js.UndefOr[js.Array[Tester]], /* strictCheck */ js.UndefOr[Boolean]) => Boolean,
+      equals_ : EqualsFunction,
       isExpectingAssertions: Boolean,
       snapshotState: SnapshotState,
       suppressedErrors: js.Array[js.Error],
       utils: readonlyprintExpectedvalu
     ): Context = {
       val __obj = js.Dynamic.literal(assertionCalls = assertionCalls.asInstanceOf[js.Any], dontThrow = js.Any.fromFunction0(dontThrow), isExpectingAssertions = isExpectingAssertions.asInstanceOf[js.Any], snapshotState = snapshotState.asInstanceOf[js.Any], suppressedErrors = suppressedErrors.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any])
-      __obj.updateDynamic("equals")(js.Any.fromFunction4(equals_))
+      __obj.updateDynamic("equals")(equals_.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
     

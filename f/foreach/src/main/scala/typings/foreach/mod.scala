@@ -19,7 +19,7 @@ object mod {
     target: O,
     callbackfn: js.ThisFunction3[
       /* this */ THIS_ARG, 
-      /* value */ Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: O extends std.Record<string, infer T> ? T : unknown */ /* value */ /* import warning: importer.ImportType#apply Failed type conversion: O extends std.ArrayLike<infer T> ? T : unknown */ js.Any, 
       (/* index */ Double) | (/* property */ String), 
       /* target */ /* array */ O, 
       Unit
@@ -29,7 +29,7 @@ object mod {
     target: O,
     callbackfn: js.ThisFunction3[
       /* this */ THIS_ARG, 
-      /* value */ Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: O extends std.Record<string, infer T> ? T : unknown */ /* value */ /* import warning: importer.ImportType#apply Failed type conversion: O extends std.ArrayLike<infer T> ? T : unknown */ js.Any, 
       (/* index */ Double) | (/* property */ String), 
       /* target */ /* array */ O, 
       Unit

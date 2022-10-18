@@ -1,6 +1,5 @@
 package typings.reactRouterNavigationCore
 
-import org.scalablytyped.runtime.TopLevel
 import typings.history.mod.History
 import typings.history.mod.Location
 import typings.react.mod.ComponentClass
@@ -10,7 +9,7 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactRouter.componentsMod.RouterProps
+import typings.reactRouter.distLibComponentsMod.RouterProps
 import typings.reactRouterNavigationCore.anon.Cards
 import typings.reactRouterNavigationCore.anon.ForceSync
 import typings.reactRouterNavigationCore.anon.LoadedTabs
@@ -158,9 +157,7 @@ object mod {
     }
   }
   
-  trait Route[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.reactRouterNavigationCore.reactRouterNavigationCoreStrings.Route & TopLevel[Any] */] extends StObject {
+  trait Route[Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */] extends StObject {
     
     var key: String
     
@@ -172,16 +169,12 @@ object mod {
   }
   object Route {
     
-    inline def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typings.reactRouterNavigationCore.reactRouterNavigationCoreStrings.Route & TopLevel[Any] */](key: String, routeName: String): Route[Params] = {
+    inline def apply[Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](key: String, routeName: String): Route[Params] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Route[Params]]
     }
     
-    extension [Self <: Route[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typings.reactRouterNavigationCore.reactRouterNavigationCoreStrings.Route & TopLevel[Any] */](x: Self & Route[Params]) {
+    extension [Self <: Route[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](x: Self & Route[Params]) {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

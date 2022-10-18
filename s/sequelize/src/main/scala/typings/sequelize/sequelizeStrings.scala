@@ -100,10 +100,6 @@ object sequelizeStrings {
   inline def DO: DO = "DO".asInstanceOf[DO]
   
   @js.native
-  sealed trait DefineModelAttributes extends StObject
-  inline def DefineModelAttributes: DefineModelAttributes = "DefineModelAttributes".asInstanceOf[DefineModelAttributes]
-  
-  @js.native
   sealed trait EE extends StObject
   inline def EE: EE = "EE".asInstanceOf[EE]
   
@@ -396,10 +392,6 @@ object sequelizeStrings {
   @js.native
   sealed trait VG extends StObject
   inline def VG: VG = "VG".asInstanceOf[VG]
-  
-  @js.native
-  sealed trait WhereOptions extends StObject
-  inline def WhereOptions: WhereOptions = "WhereOptions".asInstanceOf[WhereOptions]
   
   @js.native
   sealed trait XK extends StObject

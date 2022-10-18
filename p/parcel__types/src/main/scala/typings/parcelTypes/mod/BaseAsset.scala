@@ -2,8 +2,8 @@ package typings.parcelTypes.mod
 
 import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
-import typings.parcelFs.typesMod.FileSystem
 import typings.parcelSourceMap.mod.default
+import typings.std.FileSystem
 import typings.std.URLSearchParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

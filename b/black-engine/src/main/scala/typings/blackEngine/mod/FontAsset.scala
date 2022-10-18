@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "FontAsset")
 @js.native
 open class FontAsset protected ()
-  extends typings.blackEngine.fontAssetMod.FontAsset {
+  extends typings.blackEngine.assetsFontAssetMod.FontAsset {
   def this(name: String, url: String, isLocal: Boolean) = this()
 }

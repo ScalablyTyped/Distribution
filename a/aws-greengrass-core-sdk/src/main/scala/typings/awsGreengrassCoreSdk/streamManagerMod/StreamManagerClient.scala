@@ -1,6 +1,6 @@
 package typings.awsGreengrassCoreSdk.streamManagerMod
 
-import typings.awsGreengrassCoreSdk.clientMod.StreamManagerClientOptions
+import typings.awsGreengrassCoreSdk.streamManagerClientMod.StreamManagerClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,6 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opts.logger
   */
 open class StreamManagerClient ()
-  extends typings.awsGreengrassCoreSdk.clientMod.StreamManagerClient {
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.StreamManagerClient {
   def this(opts: StreamManagerClientOptions) = this()
 }

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/core", "PathIsFileException")
 @js.native
 open class PathIsFileException protected ()
-  extends typings.angularDevkitCore.exceptionMod.PathIsFileException {
+  extends typings.angularDevkitCore.srcExceptionMod.PathIsFileException {
   def this(path: String) = this()
 }

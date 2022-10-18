@@ -1,8 +1,8 @@
 package typings.reduxTestUtils
 
 import typings.redux.mod.AnyAction
-import typings.reduxTestUtils.dispatchMockMod.MockDispatch
-import typings.reduxTestUtils.storeMockMod.MockStore
+import typings.reduxTestUtils.distUtilsDispatchMockMod.MockDispatch
+import typings.reduxTestUtils.distUtilsStoreMockMod.MockStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.blueprintjsTable.mod
 
 import typings.blueprintjsTable.anon.ValidationMapColumnIntera
-import typings.blueprintjsTable.columnHeaderCellMod.IColumnHeaderCellProps
+import typings.blueprintjsTable.libEsmHeadersColumnHeaderCellMod.IColumnHeaderCellProps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "ColumnHeaderCell")
 @js.native
 open class ColumnHeaderCell protected ()
-  extends typings.blueprintjsTable.columnHeaderCellMod.ColumnHeaderCell {
+  extends typings.blueprintjsTable.libEsmHeadersColumnHeaderCellMod.ColumnHeaderCell {
   def this(props: IColumnHeaderCellProps) = this()
   def this(props: IColumnHeaderCellProps, context: Any) = this()
 }

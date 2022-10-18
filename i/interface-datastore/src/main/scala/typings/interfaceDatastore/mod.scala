@@ -10,7 +10,7 @@ object mod {
   @JSImport("interface-datastore", "Key")
   @js.native
   open class Key protected ()
-    extends typings.interfaceDatastore.keyMod.Key {
+    extends typings.interfaceDatastore.distSrcKeyMod.Key {
     /**
       * @param {string | Uint8Array} s
       * @param {boolean} [clean]
@@ -30,7 +30,7 @@ object mod {
     /**
       * @param {*} other
       */
-    inline def asKey(other: Any): typings.interfaceDatastore.keyMod.Key | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(other.asInstanceOf[js.Any]).asInstanceOf[typings.interfaceDatastore.keyMod.Key | Null]
+    inline def asKey(other: Any): typings.interfaceDatastore.distSrcKeyMod.Key | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(other.asInstanceOf[js.Any]).asInstanceOf[typings.interfaceDatastore.distSrcKeyMod.Key | Null]
     
     /**
       * Returns a randomly (uuid) generated key.
@@ -43,7 +43,7 @@ object mod {
       * // => Key('/f98719ea086343f7b71f32ea9d9d521d')
       * ```
       */
-    inline def random(): typings.interfaceDatastore.keyMod.Key = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.interfaceDatastore.keyMod.Key]
+    inline def random(): typings.interfaceDatastore.distSrcKeyMod.Key = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.interfaceDatastore.distSrcKeyMod.Key]
     
     /**
       * Constructs a key out of a namespace array.
@@ -57,26 +57,26 @@ object mod {
       * // => Key('/one/two')
       * ```
       */
-    inline def withNamespaces(list: js.Array[String]): typings.interfaceDatastore.keyMod.Key = ^.asInstanceOf[js.Dynamic].applyDynamic("withNamespaces")(list.asInstanceOf[js.Any]).asInstanceOf[typings.interfaceDatastore.keyMod.Key]
+    inline def withNamespaces(list: js.Array[String]): typings.interfaceDatastore.distSrcKeyMod.Key = ^.asInstanceOf[js.Dynamic].applyDynamic("withNamespaces")(list.asInstanceOf[js.Any]).asInstanceOf[typings.interfaceDatastore.distSrcKeyMod.Key]
   }
   
-  type Batch = typings.interfaceStore.mod.Batch[typings.interfaceDatastore.keyMod.Key, js.typedarray.Uint8Array]
+  type Batch = typings.interfaceStore.mod.Batch[typings.interfaceDatastore.distSrcKeyMod.Key, js.typedarray.Uint8Array]
   
-  type Datastore = Store[typings.interfaceDatastore.keyMod.Key, js.typedarray.Uint8Array]
+  type Datastore = Store[typings.interfaceDatastore.distSrcKeyMod.Key, js.typedarray.Uint8Array]
   
-  type KeyQuery = typings.interfaceStore.mod.KeyQuery[typings.interfaceDatastore.keyMod.Key]
+  type KeyQuery = typings.interfaceStore.mod.KeyQuery[typings.interfaceDatastore.distSrcKeyMod.Key]
   
-  type KeyQueryFilter = typings.interfaceStore.mod.KeyQueryFilter[typings.interfaceDatastore.keyMod.Key]
+  type KeyQueryFilter = typings.interfaceStore.mod.KeyQueryFilter[typings.interfaceDatastore.distSrcKeyMod.Key]
   
-  type KeyQueryOrder = typings.interfaceStore.mod.KeyQueryOrder[typings.interfaceDatastore.keyMod.Key]
+  type KeyQueryOrder = typings.interfaceStore.mod.KeyQueryOrder[typings.interfaceDatastore.distSrcKeyMod.Key]
   
   type Options = typings.interfaceStore.mod.Options
   
-  type Pair = typings.interfaceStore.mod.Pair[typings.interfaceDatastore.keyMod.Key, js.typedarray.Uint8Array]
+  type Pair = typings.interfaceStore.mod.Pair[typings.interfaceDatastore.distSrcKeyMod.Key, js.typedarray.Uint8Array]
   
-  type Query = typings.interfaceStore.mod.Query[typings.interfaceDatastore.keyMod.Key, js.typedarray.Uint8Array]
+  type Query = typings.interfaceStore.mod.Query[typings.interfaceDatastore.distSrcKeyMod.Key, js.typedarray.Uint8Array]
   
-  type QueryFilter = typings.interfaceStore.mod.QueryFilter[typings.interfaceDatastore.keyMod.Key, js.typedarray.Uint8Array]
+  type QueryFilter = typings.interfaceStore.mod.QueryFilter[typings.interfaceDatastore.distSrcKeyMod.Key, js.typedarray.Uint8Array]
   
-  type QueryOrder = typings.interfaceStore.mod.QueryOrder[typings.interfaceDatastore.keyMod.Key, js.typedarray.Uint8Array]
+  type QueryOrder = typings.interfaceStore.mod.QueryOrder[typings.interfaceDatastore.distSrcKeyMod.Key, js.typedarray.Uint8Array]
 }

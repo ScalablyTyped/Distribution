@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grammarkdown", "InvalidSymbol")
 @js.native
-class InvalidSymbol ()
-  extends typings.grammarkdown.nodesMod.InvalidSymbol
+open class InvalidSymbol ()
+  extends typings.grammarkdown.distNodesMod.InvalidSymbol

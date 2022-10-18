@@ -7,16 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `269` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['issue-event-for-issue'] */ js.Any
-  ]
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['feed'] */ js.Any
 }
 object `269` {
   
   inline def apply(
-    applicationSlashjson: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['issue-event-for-issue'] */ js.Any
-    ]
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['feed'] */ js.Any
   ): `269` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
@@ -26,13 +22,7 @@ object `269` {
   extension [Self <: `269`](x: Self) {
     
     inline def setApplicationSlashjson(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['issue-event-for-issue'] */ js.Any
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['feed'] */ js.Any
     ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['issue-event-for-issue'] */ js.Any)*
-    ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import typings.baseui.baseuiStrings.div
 import typings.baseui.popoverTypesMod.ArrowStylePropsArg
 import typings.baseui.popoverTypesMod.BodyStylePropsArg
 import typings.baseui.popoverTypesMod.InnerStylePropsArg
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import typings.styletronStandard.mod.StyleObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

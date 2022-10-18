@@ -3,13 +3,38 @@ package typings.mongodbMemoryServer
 import typings.mongodbMemoryServerCore.anon.PartialMongoMemoryReplSet
 import typings.mongodbMemoryServerCore.anon.PartialMongodOpts
 import typings.mongodbMemoryServerCore.anon.RequiredMongoBinaryOpts
-import typings.mongodbMemoryServerCore.mongoBinaryMod.MongoBinaryOpts
-import typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServerOpts
+import typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServerOpts
+import typings.mongodbMemoryServerCore.libUtilMongoBinaryMod.MongoBinaryOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("mongodb-memory-server", JSImport.Default)
+  @js.native
+  /**
+    * Create an Mongo-Memory-Sever Instance
+    * @param opts Mongo-Memory-Sever Options
+    */
+  open class default ()
+    extends typings.mongodbMemoryServerCore.mod.default {
+    def this(opts: MongoMemoryServerOpts) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("mongodb-memory-server", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Create an Mongo-Memory-Sever Instance that can be awaited
+      * @param opts Mongo-Memory-Sever Options
+      */
+    inline def create(): js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer]]
+    inline def create(opts: MongoMemoryServerOpts): js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer]]
+  }
   
   @JSImport("mongodb-memory-server", "MongoBinary")
   @js.native
@@ -42,7 +67,7 @@ object mod {
   @JSImport("mongodb-memory-server", "MongoInstance")
   @js.native
   open class MongoInstance protected ()
-    extends typings.mongodbMemoryServerCore.mongoInstanceMod.MongoInstance {
+    extends typings.mongodbMemoryServerCore.libUtilMongoInstanceMod.MongoInstance {
     def this(opts: PartialMongodOpts) = this()
   }
   /* static members */
@@ -56,13 +81,13 @@ object mod {
       * Create an new instance an call method "start"
       * @param opts Options passed to the new instance
       */
-    inline def create(opts: PartialMongodOpts): js.Promise[typings.mongodbMemoryServerCore.mongoInstanceMod.MongoInstance] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.mongoInstanceMod.MongoInstance]]
+    inline def create(opts: PartialMongodOpts): js.Promise[typings.mongodbMemoryServerCore.libUtilMongoInstanceMod.MongoInstance] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.libUtilMongoInstanceMod.MongoInstance]]
   }
   
   @JSImport("mongodb-memory-server", "MongoMemoryReplSet")
   @js.native
   open class MongoMemoryReplSet ()
-    extends typings.mongodbMemoryServerCore.mongoMemoryReplSetMod.MongoMemoryReplSet {
+    extends typings.mongodbMemoryServerCore.libMongoMemoryReplSetMod.MongoMemoryReplSet {
     def this(opts: PartialMongoMemoryReplSet) = this()
   }
   /* static members */
@@ -76,8 +101,8 @@ object mod {
       * Create an instance of "MongoMemoryReplSet" and call start
       * @param opts Options for the ReplSet
       */
-    inline def create(): js.Promise[typings.mongodbMemoryServerCore.mongoMemoryReplSetMod.MongoMemoryReplSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.mongoMemoryReplSetMod.MongoMemoryReplSet]]
-    inline def create(opts: PartialMongoMemoryReplSet): js.Promise[typings.mongodbMemoryServerCore.mongoMemoryReplSetMod.MongoMemoryReplSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.mongoMemoryReplSetMod.MongoMemoryReplSet]]
+    inline def create(): js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryReplSetMod.MongoMemoryReplSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryReplSetMod.MongoMemoryReplSet]]
+    inline def create(opts: PartialMongoMemoryReplSet): js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryReplSetMod.MongoMemoryReplSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryReplSetMod.MongoMemoryReplSet]]
   }
   
   @JSImport("mongodb-memory-server", "MongoMemoryServer")
@@ -101,7 +126,7 @@ object mod {
       * Create an Mongo-Memory-Sever Instance that can be awaited
       * @param opts Mongo-Memory-Sever Options
       */
-    inline def create(): js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer]]
-    inline def create(opts: MongoMemoryServerOpts): js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer]]
+    inline def create(): js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer]]
+    inline def create(opts: MongoMemoryServerOpts): js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer]]
   }
 }

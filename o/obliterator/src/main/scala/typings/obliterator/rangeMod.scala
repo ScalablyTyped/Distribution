@@ -11,7 +11,5 @@ object rangeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(end: Double): IterableIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(end.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Double]]
-  inline def default(start: Double, end: Double): IterableIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Double]]
   inline def default(start: Double, end: Double, step: Double): IterableIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Double]]
 }

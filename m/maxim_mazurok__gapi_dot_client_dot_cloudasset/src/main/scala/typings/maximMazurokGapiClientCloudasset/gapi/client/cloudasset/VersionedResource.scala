@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +12,7 @@ trait VersionedResource extends StObject {
     * definition for each supported resource type in this table: `https://cloud.google.com/asset-inventory/docs/supported-asset-types#searchable_asset_types`
     */
   var resource: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.VersionedResource & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -34,9 +31,7 @@ object VersionedResource {
   extension [Self <: VersionedResource](x: Self) {
     
     inline def setResource(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.VersionedResource & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)

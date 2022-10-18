@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ol.assertionErrorMod.default
 import typings.ol.collectionMod.Options
 import typings.ol.extentMod.Extent
+import typings.ol.imageCanvasMod.Loader
+import typings.ol.imageMod.LoadFunction
 import typings.ol.imageStateMod.ImageState
-import typings.ol.olImageCanvasMod.Loader
-import typings.ol.olImageMod.LoadFunction
 import typings.ol.pluggableMapMod.FrameState
 import typings.ol.pluggableMapMod.MapOptions
 import typings.ol.tileQueueMod.PriorityFunction
@@ -47,8 +47,8 @@ object mod {
   
   @JSImport("ol", "Feature")
   @js.native
-  open class Feature[GeomType /* <: typings.ol.geometryMod.default */] ()
-    extends typings.ol.olFeatureMod.default[GeomType] {
+  open class Feature[GeomType /* <: typings.ol.geomGeometryMod.default */] ()
+    extends typings.ol.featureMod.default[GeomType] {
     def this(opt_geometryOrProperties: GeomType) = this()
     def this(opt_geometryOrProperties: StringDictionary[Any]) = this()
   }
@@ -63,14 +63,14 @@ object mod {
   @JSImport("ol", "Graticule")
   @js.native
   open class Graticule ()
-    extends typings.ol.graticuleMod.default {
-    def this(opt_options: typings.ol.graticuleMod.Options) = this()
+    extends typings.ol.layerGraticuleMod.default {
+    def this(opt_options: typings.ol.layerGraticuleMod.Options) = this()
   }
   
   @JSImport("ol", "Image")
   @js.native
   open class Image protected ()
-    extends typings.ol.olImageMod.default {
+    extends typings.ol.imageMod.default {
     def this(
       extent: Extent,
       resolution: Double,
@@ -89,9 +89,9 @@ object mod {
     ) = this()
   }
   
-  @JSImport("ol", "ImageBase")
+  /* note: abstract class */ @JSImport("ol", "ImageBase")
   @js.native
-  abstract class ImageBase protected ()
+  open class ImageBase protected ()
     extends typings.ol.imageBaseMod.default {
     def this(extent: Extent, resolution: Double, pixelRatio: Double, state: ImageState) = this()
     def this(extent: Extent, resolution: Unit, pixelRatio: Double, state: ImageState) = this()
@@ -100,7 +100,7 @@ object mod {
   @JSImport("ol", "ImageCanvas")
   @js.native
   open class ImageCanvas protected ()
-    extends typings.ol.olImageCanvasMod.default {
+    extends typings.ol.imageCanvasMod.default {
     def this(extent: Extent, resolution: Double, pixelRatio: Double, canvas: HTMLCanvasElement) = this()
     def this(
       extent: Extent,
@@ -120,15 +120,15 @@ object mod {
       state: TileState,
       src: String,
       crossOrigin: String,
-      tileLoadFunction: typings.ol.olTileMod.LoadFunction
+      tileLoadFunction: typings.ol.tileMod.LoadFunction
     ) = this()
     def this(
       tileCoord: TileCoord,
       state: TileState,
       src: String,
       crossOrigin: String,
-      tileLoadFunction: typings.ol.olTileMod.LoadFunction,
-      opt_options: typings.ol.olTileMod.Options
+      tileLoadFunction: typings.ol.tileMod.LoadFunction,
+      opt_options: typings.ol.tileMod.Options
     ) = this()
   }
   
@@ -142,7 +142,7 @@ object mod {
   @JSImport("ol", "Map")
   @js.native
   open class Map protected ()
-    extends typings.ol.olMapMod.default {
+    extends typings.ol.mapMod.default {
     def this(options: MapOptions) = this()
   }
   
@@ -215,12 +215,12 @@ object mod {
     def this(options: MapOptions) = this()
   }
   
-  @JSImport("ol", "Tile")
+  /* note: abstract class */ @JSImport("ol", "Tile")
   @js.native
-  abstract class Tile protected ()
-    extends typings.ol.olTileMod.default {
+  open class Tile protected ()
+    extends typings.ol.tileMod.default {
     def this(tileCoord: TileCoord, state: TileState) = this()
-    def this(tileCoord: TileCoord, state: TileState, opt_options: typings.ol.olTileMod.Options) = this()
+    def this(tileCoord: TileCoord, state: TileState, opt_options: typings.ol.tileMod.Options) = this()
   }
   
   @JSImport("ol", "TileCache")
@@ -256,7 +256,7 @@ object mod {
       urlTileCoord: TileCoord,
       getSourceTiles: js.Function1[
             /* p0 */ typings.ol.vectorRenderTileMod.VectorRenderTile, 
-            js.Array[typings.ol.olVectorTileMod.default]
+            js.Array[typings.ol.vectorTileMod.default]
           ]
     ) = this()
   }
@@ -264,21 +264,21 @@ object mod {
   @JSImport("ol", "VectorTile")
   @js.native
   open class VectorTile protected ()
-    extends typings.ol.olVectorTileMod.default {
+    extends typings.ol.vectorTileMod.default {
     def this(
       tileCoord: TileCoord,
       state: TileState,
       src: String,
-      format: typings.ol.featureMod.default,
-      tileLoadFunction: typings.ol.olTileMod.LoadFunction
+      format: typings.ol.formatFeatureMod.default,
+      tileLoadFunction: typings.ol.tileMod.LoadFunction
     ) = this()
     def this(
       tileCoord: TileCoord,
       state: TileState,
       src: String,
-      format: typings.ol.featureMod.default,
-      tileLoadFunction: typings.ol.olTileMod.LoadFunction,
-      opt_options: typings.ol.olTileMod.Options
+      format: typings.ol.formatFeatureMod.default,
+      tileLoadFunction: typings.ol.tileMod.LoadFunction,
+      opt_options: typings.ol.tileMod.Options
     ) = this()
   }
   

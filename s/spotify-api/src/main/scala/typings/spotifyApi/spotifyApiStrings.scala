@@ -7,20 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object spotifyApiStrings {
   
   @js.native
+  sealed trait ALBUM extends StObject
+  inline def ALBUM: ALBUM = "ALBUM".asInstanceOf[ALBUM]
+  
+  @js.native
   sealed trait C extends StObject
   inline def C: C = "C".asInstanceOf[C]
+  
+  @js.native
+  sealed trait COMPILATION extends StObject
+  inline def COMPILATION: COMPILATION = "COMPILATION".asInstanceOf[COMPILATION]
   
   @js.native
   sealed trait P extends StObject
   inline def P: P = "P".asInstanceOf[P]
   
   @js.native
+  sealed trait SINGLE extends StObject
+  inline def SINGLE: SINGLE = "SINGLE".asInstanceOf[SINGLE]
+  
+  @js.native
   sealed trait ad extends StObject
   inline def ad: ad = "ad".asInstanceOf[ad]
   
   @js.native
-  sealed trait album extends StObject
-  inline def album: album = "album".asInstanceOf[album]
+  sealed trait album_ extends StObject
+  inline def album_ : album_ = "album".asInstanceOf[album_]
   
   @js.native
   sealed trait appears_on extends StObject
@@ -35,8 +47,8 @@ object spotifyApiStrings {
   inline def audio_features: audio_features = "audio_features".asInstanceOf[audio_features]
   
   @js.native
-  sealed trait compilation extends StObject
-  inline def compilation: compilation = "compilation".asInstanceOf[compilation]
+  sealed trait compilation_ extends StObject
+  inline def compilation_ : compilation_ = "compilation".asInstanceOf[compilation_]
   
   @js.native
   sealed trait context extends StObject
@@ -71,8 +83,8 @@ object spotifyApiStrings {
   inline def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait single extends StObject
-  inline def single: single = "single".asInstanceOf[single]
+  sealed trait single_ extends StObject
+  inline def single_ : single_ = "single".asInstanceOf[single_]
   
   @js.native
   sealed trait track extends StObject

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.baseui.anon.CountrySelect
 import typings.baseui.anon.CountrySelectContainer
 import typings.baseui.anon.PartialState
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.baseui.selectTypesMod.OnChangeParams
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ReactElement

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "EffectFallbacks")
 @js.native
 open class EffectFallbacks ()
-  extends typings.babylonjs.legacyMod.EffectFallbacks
+  extends typings.babylonjs.legacyLegacyMod.EffectFallbacks

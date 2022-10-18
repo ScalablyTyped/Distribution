@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "TextMetricsData")
 @js.native
 open class TextMetricsData ()
-  extends typings.blackEngine.textMetricsMod.TextMetricsData
+  extends typings.blackEngine.displayTextTextMetricsMod.TextMetricsData

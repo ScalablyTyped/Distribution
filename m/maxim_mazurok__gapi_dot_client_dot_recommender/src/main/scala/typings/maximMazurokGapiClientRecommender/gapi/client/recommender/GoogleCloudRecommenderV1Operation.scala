@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +19,7 @@ trait GoogleCloudRecommenderV1Operation extends StObject {
     * ["x@example.com", "y@example.com"] } ``` When both path_filters and path_value_matchers are set, an implicit AND must be performed.
     */
   var pathFilters: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -30,9 +27,7 @@ trait GoogleCloudRecommenderV1Operation extends StObject {
     * match, use path_filters. When both path_filters and path_value_matchers are set, an implicit AND must be performed.
     */
   var pathValueMatchers: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.recommender.gapi.client.recommender.GoogleCloudRecommenderV1ValueMatcher}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.recommender.gapi.client.recommender.GoogleCloudRecommenderV1ValueMatcher} */ js.Any
   ] = js.undefined
   
   /** Contains the fully qualified resource name. This field is always populated. ex: //cloudresourcemanager.googleapis.com/projects/foo. */
@@ -75,9 +70,7 @@ object GoogleCloudRecommenderV1Operation {
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setPathFilters(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
     inline def setPathFiltersUndefined: Self = StObject.set(x, "pathFilters", js.undefined)
@@ -85,9 +78,7 @@ object GoogleCloudRecommenderV1Operation {
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     inline def setPathValueMatchers(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.recommender.gapi.client.recommender.GoogleCloudRecommenderV1ValueMatcher}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.recommender.gapi.client.recommender.GoogleCloudRecommenderV1ValueMatcher} */ js.Any
     ): Self = StObject.set(x, "pathValueMatchers", value.asInstanceOf[js.Any])
     
     inline def setPathValueMatchersUndefined: Self = StObject.set(x, "pathValueMatchers", js.undefined)

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-languageserver", "_LanguagesImpl")
 @js.native
 open class LanguagesImpl ()
-  extends typings.vscodeLanguageserver.serverMod.LanguagesImpl
+  extends typings.vscodeLanguageserver.libCommonServerMod.LanguagesImpl

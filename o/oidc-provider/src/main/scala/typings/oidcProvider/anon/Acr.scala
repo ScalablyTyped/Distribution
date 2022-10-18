@@ -1,13 +1,10 @@
 package typings.oidcProvider.anon
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Acr
-  extends StObject
-     with /* key */ StringDictionary[Any] {
+trait Acr extends StObject {
   
   var accountId: String
   
@@ -15,14 +12,14 @@ trait Acr
   
   var amr: js.UndefOr[js.Array[String]] = js.undefined
   
-  var remember: js.UndefOr[Boolean] = js.undefined
+  var cookie: String
   
-  var ts: js.UndefOr[Double] = js.undefined
+  var uid: String
 }
 object Acr {
   
-  inline def apply(accountId: String): Acr = {
-    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any])
+  inline def apply(accountId: String, cookie: String, uid: String): Acr = {
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], cookie = cookie.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Acr]
   }
   
@@ -40,12 +37,8 @@ object Acr {
     
     inline def setAmrVarargs(value: String*): Self = StObject.set(x, "amr", js.Array(value*))
     
-    inline def setRemember(value: Boolean): Self = StObject.set(x, "remember", value.asInstanceOf[js.Any])
+    inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
-    inline def setRememberUndefined: Self = StObject.set(x, "remember", js.undefined)
-    
-    inline def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
-    
-    inline def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

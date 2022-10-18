@@ -1,7 +1,7 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.typesMod.Nullable
-import typings.babylonjs.webXRHandTrackingMod.XRHandMeshRigMapping
+import typings.babylonjs.xRFeaturesWebXRHandTrackingMod.XRHandMeshRigMapping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,18 +25,18 @@ open class WebXRHand protected ()
     */
   def this(
     /** The controller to which the hand correlates. */
-  xrController: typings.babylonjs.webXRInputSourceMod.WebXRInputSource,
-    _jointMeshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh],
-    _handMesh: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh],
+  xrController: typings.babylonjs.xRWebXRInputSourceMod.WebXRInputSource,
+    _jointMeshes: js.Array[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
+    _handMesh: Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
     /** An optional rig mapping for the hand mesh. If not provided (but a hand mesh is provided),
     * it will be assumed that the hand mesh's bones are named directly after the WebXR bone names. */
   rigMapping: Nullable[XRHandMeshRigMapping]
   ) = this()
   def this(
     /** The controller to which the hand correlates. */
-  xrController: typings.babylonjs.webXRInputSourceMod.WebXRInputSource,
-    _jointMeshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh],
-    _handMesh: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh],
+  xrController: typings.babylonjs.xRWebXRInputSourceMod.WebXRInputSource,
+    _jointMeshes: js.Array[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
+    _handMesh: Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
     /** An optional rig mapping for the hand mesh. If not provided (but a hand mesh is provided),
     * it will be assumed that the hand mesh's bones are named directly after the WebXR bone names. */
   rigMapping: Nullable[XRHandMeshRigMapping],
@@ -44,9 +44,9 @@ open class WebXRHand protected ()
   ) = this()
   def this(
     /** The controller to which the hand correlates. */
-  xrController: typings.babylonjs.webXRInputSourceMod.WebXRInputSource,
-    _jointMeshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh],
-    _handMesh: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh],
+  xrController: typings.babylonjs.xRWebXRInputSourceMod.WebXRInputSource,
+    _jointMeshes: js.Array[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
+    _handMesh: Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
     /** An optional rig mapping for the hand mesh. If not provided (but a hand mesh is provided),
     * it will be assumed that the hand mesh's bones are named directly after the WebXR bone names. */
   rigMapping: Nullable[XRHandMeshRigMapping],
@@ -55,9 +55,9 @@ open class WebXRHand protected ()
   ) = this()
   def this(
     /** The controller to which the hand correlates. */
-  xrController: typings.babylonjs.webXRInputSourceMod.WebXRInputSource,
-    _jointMeshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh],
-    _handMesh: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh],
+  xrController: typings.babylonjs.xRWebXRInputSourceMod.WebXRInputSource,
+    _jointMeshes: js.Array[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
+    _handMesh: Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
     /** An optional rig mapping for the hand mesh. If not provided (but a hand mesh is provided),
     * it will be assumed that the hand mesh's bones are named directly after the WebXR bone names. */
   rigMapping: Nullable[XRHandMeshRigMapping],
@@ -66,9 +66,9 @@ open class WebXRHand protected ()
   ) = this()
   def this(
     /** The controller to which the hand correlates. */
-  xrController: typings.babylonjs.webXRInputSourceMod.WebXRInputSource,
-    _jointMeshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh],
-    _handMesh: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh],
+  xrController: typings.babylonjs.xRWebXRInputSourceMod.WebXRInputSource,
+    _jointMeshes: js.Array[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
+    _handMesh: Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
     /** An optional rig mapping for the hand mesh. If not provided (but a hand mesh is provided),
     * it will be assumed that the hand mesh's bones are named directly after the WebXR bone names. */
   rigMapping: Nullable[XRHandMeshRigMapping],
@@ -78,9 +78,9 @@ open class WebXRHand protected ()
   ) = this()
   def this(
     /** The controller to which the hand correlates. */
-  xrController: typings.babylonjs.webXRInputSourceMod.WebXRInputSource,
-    _jointMeshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh],
-    _handMesh: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh],
+  xrController: typings.babylonjs.xRWebXRInputSourceMod.WebXRInputSource,
+    _jointMeshes: js.Array[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
+    _handMesh: Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
     /** An optional rig mapping for the hand mesh. If not provided (but a hand mesh is provided),
     * it will be assumed that the hand mesh's bones are named directly after the WebXR bone names. */
   rigMapping: Nullable[XRHandMeshRigMapping],
@@ -90,9 +90,9 @@ open class WebXRHand protected ()
   ) = this()
   def this(
     /** The controller to which the hand correlates. */
-  xrController: typings.babylonjs.webXRInputSourceMod.WebXRInputSource,
-    _jointMeshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh],
-    _handMesh: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh],
+  xrController: typings.babylonjs.xRWebXRInputSourceMod.WebXRInputSource,
+    _jointMeshes: js.Array[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
+    _handMesh: Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
     /** An optional rig mapping for the hand mesh. If not provided (but a hand mesh is provided),
     * it will be assumed that the hand mesh's bones are named directly after the WebXR bone names. */
   rigMapping: Nullable[XRHandMeshRigMapping],
@@ -102,9 +102,9 @@ open class WebXRHand protected ()
   ) = this()
   def this(
     /** The controller to which the hand correlates. */
-  xrController: typings.babylonjs.webXRInputSourceMod.WebXRInputSource,
-    _jointMeshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh],
-    _handMesh: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh],
+  xrController: typings.babylonjs.xRWebXRInputSourceMod.WebXRInputSource,
+    _jointMeshes: js.Array[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
+    _handMesh: Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
     /** An optional rig mapping for the hand mesh. If not provided (but a hand mesh is provided),
     * it will be assumed that the hand mesh's bones are named directly after the WebXR bone names. */
   rigMapping: Nullable[XRHandMeshRigMapping],

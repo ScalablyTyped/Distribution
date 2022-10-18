@@ -61,9 +61,9 @@ object libNodeMod {
     var type_Comment: typings.domelementtype.mod.ElementType.Comment = js.native
   }
   
-  @JSImport("domhandler/lib/node", "DataNode")
+  /* note: abstract class */ @JSImport("domhandler/lib/node", "DataNode")
   @js.native
-  abstract class DataNode protected () extends Node {
+  open class DataNode protected () extends Node {
     /**
       * @param data The content of the data node
       */
@@ -157,9 +157,9 @@ object libNodeMod {
     var `x-attribsPrefix`: js.UndefOr[Record[String, String]] = js.native
   }
   
-  @JSImport("domhandler/lib/node", "Node")
+  /* note: abstract class */ @JSImport("domhandler/lib/node", "Node")
   @js.native
-  abstract class Node () extends StObject {
+  open class Node () extends StObject {
     
     /**
       * Clone this node, and optionally its children.
@@ -223,9 +223,9 @@ object libNodeMod {
     val `type`: ElementType = js.native
   }
   
-  @JSImport("domhandler/lib/node", "NodeWithChildren")
+  /* note: abstract class */ @JSImport("domhandler/lib/node", "NodeWithChildren")
   @js.native
-  abstract class NodeWithChildren protected () extends Node {
+  open class NodeWithChildren protected () extends Node {
     /**
       * @param children Children of the node. Only certain node types can have children.
       */

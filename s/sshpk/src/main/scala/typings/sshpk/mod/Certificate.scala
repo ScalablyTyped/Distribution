@@ -1,7 +1,7 @@
 package typings.sshpk.mod
 
 import typings.node.bufferMod.global.Buffer
-import typings.sshpk.anon.X509
+import typings.sshpk.anon.Openssh
 import typings.sshpk.mod.Format.OpenSshSignatureExt
 import typings.sshpk.mod.Format.WriteOptions
 import typings.sshpk.mod.Format.x509SignatureExt
@@ -40,7 +40,7 @@ open class Certificate protected () extends StObject {
   
   def signWith(key: PrivateKey): Unit = js.native
   
-  var signatures: X509 = js.native
+  var signatures: Openssh = js.native
   
   var subjectKey: Key = js.native
   

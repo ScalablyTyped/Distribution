@@ -3,17 +3,17 @@ package typings.sentryNode
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import typings.sentryCore.anon.FnCall
+import typings.sentryCore.anon.FnCallCallback
+import typings.sentryCore.anon.FnCallContextCustomSamplingContext
+import typings.sentryCore.anon.FnCallEventHint
+import typings.sentryCore.anon.FnCallExceptionHint
+import typings.sentryCore.anon.FnCallMessageLevelHint
+import typings.sentryCore.anon.FnCallNameContext
+import typings.sentryCore.anon.FnCallUser
 import typings.sentryCore.mod.Integrations.FunctionToString
 import typings.sentryCore.mod.Integrations.InboundFilters
-import typings.sentryHub.anon.FnCall
-import typings.sentryHub.anon.FnCallBreadcrumbHint
-import typings.sentryHub.anon.FnCallCallback
-import typings.sentryHub.anon.FnCallContextCustomSamplingContext
-import typings.sentryHub.anon.FnCallEventHint
-import typings.sentryHub.anon.FnCallMessageLevelHint
-import typings.sentryHub.anon.FnCallNameContext
-import typings.sentryHub.anon.FnCallUser
-import typings.sentryHub.hubMod.Carrier
+import typings.sentryCore.typesHubMod.Carrier
 import typings.sentryNode.anon.Breadcrumbs
 import typings.sentryNode.anon.Include
 import typings.sentryNode.anon.Key
@@ -31,45 +31,45 @@ import typings.sentryNode.anon.TypeofLinkedErrors
 import typings.sentryNode.anon.TypeofModules
 import typings.sentryNode.anon.TypeofOnUncaughtException
 import typings.sentryNode.anon.TypeofOnUnhandledRejectio
-import typings.sentryNode.contextMod.ContextOptions
-import typings.sentryNode.contextlinesMod.ContextLinesOptions
-import typings.sentryNode.handlersMod.MiddlewareError
-import typings.sentryNode.handlersMod.RequestHandlerOptions
-import typings.sentryNode.integrationsMod.Console
-import typings.sentryNode.integrationsMod.Context
-import typings.sentryNode.integrationsMod.ContextLines
-import typings.sentryNode.integrationsMod.Http
-import typings.sentryNode.integrationsMod.LinkedErrors
-import typings.sentryNode.integrationsMod.Modules
-import typings.sentryNode.integrationsMod.OnUncaughtException
-import typings.sentryNode.integrationsMod.OnUnhandledRejection
-import typings.sentryNode.requestDataDeprecatedMod.ExpressRequest
-import typings.sentryNode.requestDataDeprecatedMod.ParseRequestOptions
-import typings.sentryNode.transportsHttpMod.NodeTransportOptions
-import typings.sentryNode.typesMod.NodeClientOptions
-import typings.sentryNode.typesMod.NodeOptions
-import typings.sentryTypes.breadcrumbMod.Breadcrumb
-import typings.sentryTypes.clientMod.Client
-import typings.sentryTypes.eventMod.Event
-import typings.sentryTypes.eventMod.EventHint
-import typings.sentryTypes.eventprocessorMod.EventProcessor
-import typings.sentryTypes.extraMod.Extra
-import typings.sentryTypes.extraMod.Extras
-import typings.sentryTypes.miscMod.ExtractedNodeRequestData
-import typings.sentryTypes.miscMod.Primitive
-import typings.sentryTypes.optionsMod.ClientOptions
-import typings.sentryTypes.scopeMod.CaptureContext
-import typings.sentryTypes.severityMod.Severity
-import typings.sentryTypes.severityMod.SeverityLevel
-import typings.sentryTypes.stacktraceMod.StackParser
-import typings.sentryTypes.transactionMod.CustomSamplingContext
-import typings.sentryTypes.transactionMod.TransactionContext
-import typings.sentryTypes.transportMod.BaseTransportOptions
-import typings.sentryTypes.transportMod.InternalBaseTransportOptions
-import typings.sentryTypes.transportMod.Transport
-import typings.sentryTypes.transportMod.TransportRequestExecutor
-import typings.sentryTypes.userMod.User
-import typings.sentryUtils.promisebufferMod.PromiseBuffer
+import typings.sentryNode.typesHandlersMod.MiddlewareError
+import typings.sentryNode.typesHandlersMod.RequestHandlerOptions
+import typings.sentryNode.typesIntegrationsContextMod.ContextOptions
+import typings.sentryNode.typesIntegrationsContextlinesMod.ContextLinesOptions
+import typings.sentryNode.typesIntegrationsMod.Console
+import typings.sentryNode.typesIntegrationsMod.Context
+import typings.sentryNode.typesIntegrationsMod.ContextLines
+import typings.sentryNode.typesIntegrationsMod.Http
+import typings.sentryNode.typesIntegrationsMod.LinkedErrors
+import typings.sentryNode.typesIntegrationsMod.Modules
+import typings.sentryNode.typesIntegrationsMod.OnUncaughtException
+import typings.sentryNode.typesIntegrationsMod.OnUnhandledRejection
+import typings.sentryNode.typesRequestDataDeprecatedMod.ExpressRequest
+import typings.sentryNode.typesRequestDataDeprecatedMod.ParseRequestOptions
+import typings.sentryNode.typesTransportsHttpMod.NodeTransportOptions
+import typings.sentryNode.typesTypesMod.NodeClientOptions
+import typings.sentryNode.typesTypesMod.NodeOptions
+import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
+import typings.sentryTypes.typesClientMod.Client
+import typings.sentryTypes.typesEventMod.Event
+import typings.sentryTypes.typesEventMod.EventHint
+import typings.sentryTypes.typesEventprocessorMod.EventProcessor
+import typings.sentryTypes.typesExtraMod.Extra
+import typings.sentryTypes.typesExtraMod.Extras
+import typings.sentryTypes.typesMiscMod.ExtractedNodeRequestData
+import typings.sentryTypes.typesMiscMod.Primitive
+import typings.sentryTypes.typesOptionsMod.ClientOptions
+import typings.sentryTypes.typesScopeMod.CaptureContext
+import typings.sentryTypes.typesSeverityMod.Severity
+import typings.sentryTypes.typesSeverityMod.SeverityLevel
+import typings.sentryTypes.typesStacktraceMod.StackParser
+import typings.sentryTypes.typesTransactionMod.CustomSamplingContext
+import typings.sentryTypes.typesTransactionMod.TransactionContext
+import typings.sentryTypes.typesTransportMod.BaseTransportOptions
+import typings.sentryTypes.typesTransportMod.InternalBaseTransportOptions
+import typings.sentryTypes.typesTransportMod.Transport
+import typings.sentryTypes.typesTransportMod.TransportRequestExecutor
+import typings.sentryTypes.typesUserMod.User
+import typings.sentryUtils.typesPromisebufferMod.PromiseBuffer
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -169,14 +169,14 @@ object mod {
   open class Hub ()
     extends typings.sentryCore.mod.Hub {
     def this(client: Client[ClientOptions[BaseTransportOptions]]) = this()
-    def this(client: Unit, scope: typings.sentryHub.scopeMod.Scope) = this()
-    def this(client: Client[ClientOptions[BaseTransportOptions]], scope: typings.sentryHub.scopeMod.Scope) = this()
+    def this(client: Unit, scope: typings.sentryCore.typesScopeMod.Scope) = this()
+    def this(client: Client[ClientOptions[BaseTransportOptions]], scope: typings.sentryCore.typesScopeMod.Scope) = this()
     def this(client: Unit, scope: Unit, _version: Double) = this()
-    def this(client: Unit, scope: typings.sentryHub.scopeMod.Scope, _version: Double) = this()
+    def this(client: Unit, scope: typings.sentryCore.typesScopeMod.Scope, _version: Double) = this()
     def this(client: Client[ClientOptions[BaseTransportOptions]], scope: Unit, _version: Double) = this()
     def this(
       client: Client[ClientOptions[BaseTransportOptions]],
-      scope: typings.sentryHub.scopeMod.Scope,
+      scope: typings.sentryCore.typesScopeMod.Scope,
       _version: Double
     ) = this()
   }
@@ -191,7 +191,7 @@ object mod {
     @JSImport("@sentry/node", "Integrations.Console")
     @js.native
     open class Console ()
-      extends typings.sentryNode.integrationsMod.Console
+      extends typings.sentryNode.typesIntegrationsMod.Console
     @JSImport("@sentry/node", "Integrations.Console")
     @js.native
     def Console: TypeofConsole = js.native
@@ -201,7 +201,7 @@ object mod {
     @JSImport("@sentry/node", "Integrations.Context")
     @js.native
     open class Context ()
-      extends typings.sentryNode.integrationsMod.Context {
+      extends typings.sentryNode.typesIntegrationsMod.Context {
       def this(_options: ContextOptions) = this()
     }
     @JSImport("@sentry/node", "Integrations.Context")
@@ -212,7 +212,7 @@ object mod {
     @JSImport("@sentry/node", "Integrations.ContextLines")
     @js.native
     open class ContextLines ()
-      extends typings.sentryNode.integrationsMod.ContextLines {
+      extends typings.sentryNode.typesIntegrationsMod.ContextLines {
       def this(_options: ContextLinesOptions) = this()
     }
     @JSImport("@sentry/node", "Integrations.ContextLines")
@@ -239,7 +239,7 @@ object mod {
       * @inheritDoc
       */
     open class Http ()
-      extends typings.sentryNode.integrationsMod.Http {
+      extends typings.sentryNode.typesIntegrationsMod.Http {
       def this(options: Breadcrumbs) = this()
     }
     @JSImport("@sentry/node", "Integrations.Http")
@@ -264,7 +264,7 @@ object mod {
       * @inheritDoc
       */
     open class LinkedErrors ()
-      extends typings.sentryNode.integrationsMod.LinkedErrors {
+      extends typings.sentryNode.typesIntegrationsMod.LinkedErrors {
       def this(options: Key) = this()
     }
     @JSImport("@sentry/node", "Integrations.LinkedErrors")
@@ -276,7 +276,7 @@ object mod {
     @JSImport("@sentry/node", "Integrations.Modules")
     @js.native
     open class Modules ()
-      extends typings.sentryNode.integrationsMod.Modules
+      extends typings.sentryNode.typesIntegrationsMod.Modules
     @JSImport("@sentry/node", "Integrations.Modules")
     @js.native
     def Modules: TypeofModules = js.native
@@ -289,7 +289,7 @@ object mod {
       * @inheritDoc
       */
     open class OnUncaughtException ()
-      extends typings.sentryNode.integrationsMod.OnUncaughtException {
+      extends typings.sentryNode.typesIntegrationsMod.OnUncaughtException {
       def this(_options: OnFatalError) = this()
     }
     @JSImport("@sentry/node", "Integrations.OnUncaughtException")
@@ -304,7 +304,7 @@ object mod {
       * @inheritDoc
       */
     open class OnUnhandledRejection ()
-      extends typings.sentryNode.integrationsMod.OnUnhandledRejection {
+      extends typings.sentryNode.typesIntegrationsMod.OnUnhandledRejection {
       def this(_options: Mode) = this()
     }
     @JSImport("@sentry/node", "Integrations.OnUnhandledRejection")
@@ -316,7 +316,7 @@ object mod {
   @JSImport("@sentry/node", "NodeClient")
   @js.native
   open class NodeClient protected ()
-    extends typings.sentryNode.clientMod.NodeClient {
+    extends typings.sentryNode.typesClientMod.NodeClient {
     /**
       * Creates a new Node SDK instance.
       * @param options Configuration options for this SDK.
@@ -326,7 +326,7 @@ object mod {
   
   @JSImport("@sentry/node", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.14.0" */ String = js.native
+  val SDK_VERSION: /* "7.15.0" */ String = js.native
   
   @JSImport("@sentry/node", "Scope")
   @js.native
@@ -339,7 +339,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def clone(scope: typings.sentryHub.scopeMod.Scope): typings.sentryHub.scopeMod.Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(scope.asInstanceOf[js.Any]).asInstanceOf[typings.sentryHub.scopeMod.Scope]
+    inline def clone(scope: typings.sentryCore.typesScopeMod.Scope): typings.sentryCore.typesScopeMod.Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(scope.asInstanceOf[js.Any]).asInstanceOf[typings.sentryCore.typesScopeMod.Scope]
   }
   
   @JSImport("@sentry/node", "Severity")
@@ -347,22 +347,22 @@ object mod {
   object Severity extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.sentryTypes.severityMod.Severity & String] = js.native
+    def apply(value: String): js.UndefOr[typings.sentryTypes.typesSeverityMod.Severity & String] = js.native
     
-    /* "debug" */ val Debug: typings.sentryTypes.severityMod.Severity.Debug & String = js.native
+    /* "debug" */ val Debug: typings.sentryTypes.typesSeverityMod.Severity.Debug & String = js.native
     
-    /* "error" */ val Error: typings.sentryTypes.severityMod.Severity.Error & String = js.native
+    /* "error" */ val Error: typings.sentryTypes.typesSeverityMod.Severity.Error & String = js.native
     
-    /* "fatal" */ val Fatal: typings.sentryTypes.severityMod.Severity.Fatal & String = js.native
+    /* "fatal" */ val Fatal: typings.sentryTypes.typesSeverityMod.Severity.Fatal & String = js.native
     
-    /* "info" */ val Info: typings.sentryTypes.severityMod.Severity.Info & String = js.native
+    /* "info" */ val Info: typings.sentryTypes.typesSeverityMod.Severity.Info & String = js.native
     
-    /* "log" */ val Log: typings.sentryTypes.severityMod.Severity.Log & String = js.native
+    /* "log" */ val Log: typings.sentryTypes.typesSeverityMod.Severity.Log & String = js.native
     
-    /* "warning" */ val Warning: typings.sentryTypes.severityMod.Severity.Warning & String = js.native
+    /* "warning" */ val Warning: typings.sentryTypes.typesSeverityMod.Severity.Warning & String = js.native
   }
   
-  inline def addBreadcrumb(breadcrumb: Breadcrumb): ReturnType[FnCallBreadcrumbHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("addBreadcrumb")(breadcrumb.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallBreadcrumbHint]]
+  inline def addBreadcrumb(breadcrumb: Breadcrumb): ReturnType[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("addBreadcrumb")(breadcrumb.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCall]]
   
   inline def addGlobalEventProcessor(callback: EventProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlobalEventProcessor")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -379,8 +379,8 @@ object mod {
   inline def captureEvent(event: Event): ReturnType[FnCallEventHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallEventHint]]
   inline def captureEvent(event: Event, hint: EventHint): ReturnType[FnCallEventHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallEventHint]]
   
-  inline def captureException(exception: Any): ReturnType[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(exception.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCall]]
-  inline def captureException(exception: Any, captureContext: CaptureContext): ReturnType[FnCall] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(exception.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCall]]
+  inline def captureException(exception: Any): ReturnType[FnCallExceptionHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(exception.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallExceptionHint]]
+  inline def captureException(exception: Any, captureContext: CaptureContext): ReturnType[FnCallExceptionHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(exception.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallExceptionHint]]
   
   inline def captureMessage(message: String): ReturnType[FnCallMessageLevelHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
   inline def captureMessage(message: String, captureContext: CaptureContext): ReturnType[FnCallMessageLevelHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
@@ -390,7 +390,7 @@ object mod {
   inline def close(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[js.Promise[Boolean]]
   inline def close(timeout: Double): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  inline def configureScope(callback: js.Function1[/* scope */ typings.sentryHub.scopeMod.Scope, Unit]): ReturnType[FnCallCallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("configureScope")(callback.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallCallback]]
+  inline def configureScope(callback: js.Function1[/* scope */ typings.sentryCore.typesScopeMod.Scope, Unit]): ReturnType[FnCallCallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("configureScope")(callback.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallCallback]]
   
   inline def createTransport(options: InternalBaseTransportOptions, makeRequest: TransportRequestExecutor): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(options.asInstanceOf[js.Any], makeRequest.asInstanceOf[js.Any])).asInstanceOf[Transport]
   inline def createTransport(
@@ -422,9 +422,9 @@ object mod {
   inline def flush(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[js.Promise[Boolean]]
   inline def flush(timeout: Double): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  inline def getCurrentHub(): typings.sentryHub.hubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentHub")().asInstanceOf[typings.sentryHub.hubMod.Hub]
+  inline def getCurrentHub(): typings.sentryCore.typesHubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentHub")().asInstanceOf[typings.sentryCore.typesHubMod.Hub]
   
-  inline def getHubFromCarrier(carrier: Carrier): typings.sentryHub.hubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getHubFromCarrier")(carrier.asInstanceOf[js.Any]).asInstanceOf[typings.sentryHub.hubMod.Hub]
+  inline def getHubFromCarrier(carrier: Carrier): typings.sentryCore.typesHubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getHubFromCarrier")(carrier.asInstanceOf[js.Any]).asInstanceOf[typings.sentryCore.typesHubMod.Hub]
   
   inline def getSentryRelease(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSentryRelease")().asInstanceOf[js.UndefOr[String]]
   inline def getSentryRelease(fallback: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSentryRelease")(fallback.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
@@ -434,7 +434,7 @@ object mod {
   
   inline def lastEventId(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastEventId")().asInstanceOf[js.UndefOr[String]]
   
-  inline def makeMain(hub: typings.sentryHub.hubMod.Hub): typings.sentryHub.hubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMain")(hub.asInstanceOf[js.Any]).asInstanceOf[typings.sentryHub.hubMod.Hub]
+  inline def makeMain(hub: typings.sentryCore.typesHubMod.Hub): typings.sentryCore.typesHubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMain")(hub.asInstanceOf[js.Any]).asInstanceOf[typings.sentryCore.typesHubMod.Hub]
   
   inline def makeNodeTransport(options: NodeTransportOptions): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("makeNodeTransport")(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
   
@@ -455,5 +455,5 @@ object mod {
   inline def startTransaction(context: TransactionContext): ReturnType[FnCallContextCustomSamplingContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("startTransaction")(context.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallContextCustomSamplingContext]]
   inline def startTransaction(context: TransactionContext, customSamplingContext: CustomSamplingContext): ReturnType[FnCallContextCustomSamplingContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("startTransaction")(context.asInstanceOf[js.Any], customSamplingContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallContextCustomSamplingContext]]
   
-  inline def withScope(callback: js.Function1[/* scope */ typings.sentryHub.scopeMod.Scope, Unit]): ReturnType[FnCallCallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("withScope")(callback.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallCallback]]
+  inline def withScope(callback: js.Function1[/* scope */ typings.sentryCore.typesScopeMod.Scope, Unit]): ReturnType[FnCallCallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("withScope")(callback.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallCallback]]
 }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-node", "GetObjectTaggingCommand")
 @js.native
 open class GetObjectTaggingCommand protected ()
-  extends typings.awsSdkClientS3Node.getObjectTaggingCommandMod.GetObjectTaggingCommand {
+  extends typings.awsSdkClientS3Node.commandsGetObjectTaggingCommandMod.GetObjectTaggingCommand {
   def this(input: GetObjectTaggingInput) = this()
 }

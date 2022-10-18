@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolSemanticTokensMod.SemanticTokensRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotsemanticTokensMod.SemanticTokensRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashsemanticTokens
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,5 +14,5 @@ object SemanticTokensRegistrationType {
   
   @JSImport("vscode-languageserver-protocol", "SemanticTokensRegistrationType.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.RegistrationType[SemanticTokensRegistrationOptions] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.RegistrationType[SemanticTokensRegistrationOptions] = js.native
 }

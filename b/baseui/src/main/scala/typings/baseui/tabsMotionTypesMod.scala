@@ -3,7 +3,7 @@ package typings.baseui
 import typings.baseui.anon.ActiveKey
 import typings.baseui.anon.sizeIconPropssizecolorIco
 import typings.baseui.baseuiStrings.change_
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ComponentType
 import typings.react.mod.Key
 import typings.react.mod.ReactNode

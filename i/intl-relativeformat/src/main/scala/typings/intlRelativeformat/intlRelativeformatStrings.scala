@@ -1,8 +1,8 @@
 package typings.intlRelativeformat
 
-import typings.intlRelativeformat.typesMod.DATA_FIELD
-import typings.intlRelativeformat.typesMod.STYLE
-import typings.intlRelativeformat.typesMod.SUPPORTED_FIELD
+import typings.intlRelativeformat.libTypesMod.DATA_FIELD
+import typings.intlRelativeformat.libTypesMod.STYLE
+import typings.intlRelativeformat.libTypesMod.SUPPORTED_FIELD
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

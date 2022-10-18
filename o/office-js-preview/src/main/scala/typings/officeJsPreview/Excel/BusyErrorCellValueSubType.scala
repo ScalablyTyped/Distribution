@@ -10,8 +10,7 @@ sealed trait BusyErrorCellValueSubType extends StObject
   * Represents types of #BUSY! errors.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 @JSGlobal("Excel.BusyErrorCellValueSubType")
 @js.native
@@ -21,8 +20,7 @@ object BusyErrorCellValueSubType extends StObject {
     * An error caused by external links. Displays as error type #BUSY! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait externalLinksGeneric
@@ -33,8 +31,7 @@ object BusyErrorCellValueSubType extends StObject {
     * An error that displays while an image is loading. Displays as error type #BUSY! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait loadingImage
@@ -45,8 +42,7 @@ object BusyErrorCellValueSubType extends StObject {
     * An unknown type of error. Displays as error type #BUSY! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait unknown

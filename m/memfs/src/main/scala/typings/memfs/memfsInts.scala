@@ -1,6 +1,6 @@
 package typings.memfs
 
-import typings.memfs.constantsMod.S
+import typings.memfs.libConstantsMod.S
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

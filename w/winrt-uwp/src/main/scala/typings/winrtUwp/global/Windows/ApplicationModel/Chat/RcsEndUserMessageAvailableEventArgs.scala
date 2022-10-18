@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the data for a MessageAvailableChanged event. */
-@JSGlobal("Windows.ApplicationModel.Chat.RcsEndUserMessageAvailableEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.RcsEndUserMessageAvailableEventArgs")
 @js.native
-abstract class RcsEndUserMessageAvailableEventArgs ()
+open class RcsEndUserMessageAvailableEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.RcsEndUserMessageAvailableEventArgs {
   

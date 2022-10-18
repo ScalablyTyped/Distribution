@@ -4,7 +4,7 @@ import typings.ionic.anon.PartialConfigFile
 import typings.ionic.definitionsMod.CommandMetadataOption
 import typings.ionic.definitionsMod.ConfigFile
 import typings.ionic.definitionsMod.IConfig
-import typings.ionicCliFramework.configMod.BaseConfigOptions
+import typings.ionicCliFramework.libConfigMod.BaseConfigOptions
 import typings.minimist.mod.ParsedArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

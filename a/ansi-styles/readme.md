@@ -1,7 +1,7 @@
 
 # Scala.js typings for ansi-styles
 
-Typings are for version 6.1.1
+Typings are for version 6.2.1
 
 ## Library description:
 ANSI escape codes for styling strings in the terminal

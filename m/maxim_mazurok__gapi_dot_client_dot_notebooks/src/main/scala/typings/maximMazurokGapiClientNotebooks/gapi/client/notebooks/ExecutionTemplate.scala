@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +35,7 @@ trait ExecutionTemplate extends StObject {
     * Use fields to efficiently index between various types of executions.
     */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.ExecutionTemplate & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -110,9 +107,7 @@ object ExecutionTemplate {
     inline def setKernelSpecUndefined: Self = StObject.set(x, "kernelSpec", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.ExecutionTemplate & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

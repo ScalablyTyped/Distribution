@@ -4,7 +4,7 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.iconMod.IconSource
+import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait PickPropsstylecoloronPres extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var actions: js.Array[LabelTextColor]
+  var actions: js.Array[LabelStyle]
   
   var backdropColor: js.UndefOr[String] = js.undefined
   
@@ -41,7 +41,7 @@ trait PickPropsstylecoloronPres extends StObject {
 object PickPropsstylecoloronPres {
   
   inline def apply(
-    actions: js.Array[LabelTextColor],
+    actions: js.Array[LabelStyle],
     icon: IconSource,
     onStateChange: /* state */ Open => Unit,
     open: Boolean,
@@ -57,9 +57,9 @@ object PickPropsstylecoloronPres {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
-    inline def setActions(value: js.Array[LabelTextColor]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[LabelStyle]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: LabelTextColor*): Self = StObject.set(x, "actions", js.Array(value*))
+    inline def setActionsVarargs(value: LabelStyle*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setBackdropColor(value: String): Self = StObject.set(x, "backdropColor", value.asInstanceOf[js.Any])
     

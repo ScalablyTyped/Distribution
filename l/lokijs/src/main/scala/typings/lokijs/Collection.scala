@@ -1,7 +1,6 @@
 package typings.lokijs
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.lokijs.anon.AdaptiveBinaryIndices
 import typings.lokijs.anon.Age
 import typings.lokijs.anon.AndArray
@@ -124,9 +123,7 @@ trait Collection[E /* <: js.Object */]
     */
   def avg(field: String): Double = js.native
   
-  var binaryIndices: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof E ]: lokijs.BinaryIndex}
-    */ typings.lokijs.lokijsStrings.Collection & TopLevel[Any] = js.native
+  var binaryIndices: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof E ]: lokijs.BinaryIndex} */ js.Any = js.native
   
   /**
     * Retrieve doc by Unique index
@@ -142,9 +139,7 @@ trait Collection[E /* <: js.Object */]
   @JSName("by")
   def by_Union(field: /* keyof E */ String): js.UndefOr[E | (js.Function1[/* value */ Any, js.UndefOr[E]])] = js.native
   
-  var cachedBinaryIndex: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof E ]: lokijs.BinaryIndex}
-    */ typings.lokijs.lokijsStrings.Collection & TopLevel[Any]) | Null = js.native
+  var cachedBinaryIndex: (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof E ]: lokijs.BinaryIndex} */ js.Any) | Null = js.native
   
   var cachedData: js.Array[E] | Null = js.native
   

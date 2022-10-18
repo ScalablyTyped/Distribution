@@ -1,8 +1,8 @@
 package typings.tuyaPanelKit.anon
 
-import typings.tuyaPanelKit.routersTypesMod.NavigationState
-import typings.tuyaPanelKit.routersTypesMod.ParamListBase
-import typings.tuyaPanelKit.routersTypesMod.PartialRoute
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.NavigationState
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.ParamListBase
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.PartialRoute
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,7 @@ trait Routes[State /* <: NavigationState[ParamListBase] */] extends StObject {
   // tslint:disable-next-line array-type
   var routes: js.Array[
     PartialRoute[
-      typings.tuyaPanelKit.routersTypesMod.Route[
+      typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[
         /* import warning: importer.ImportType#apply Failed type conversion: State['routeNames'][number] */ js.Any, 
         js.UndefOr[js.Object]
       ]
@@ -27,7 +27,7 @@ object Routes {
   inline def apply[State /* <: NavigationState[ParamListBase] */](
     routes: js.Array[
       PartialRoute[
-        typings.tuyaPanelKit.routersTypesMod.Route[
+        typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[
           /* import warning: importer.ImportType#apply Failed type conversion: State['routeNames'][number] */ js.Any, 
           js.UndefOr[js.Object]
         ]
@@ -43,7 +43,7 @@ object Routes {
     inline def setRoutes(
       value: js.Array[
           PartialRoute[
-            typings.tuyaPanelKit.routersTypesMod.Route[
+            typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[
               /* import warning: importer.ImportType#apply Failed type conversion: State['routeNames'][number] */ js.Any, 
               js.UndefOr[js.Object]
             ]
@@ -53,7 +53,7 @@ object Routes {
     
     inline def setRoutesVarargs(
       value: (PartialRoute[
-          typings.tuyaPanelKit.routersTypesMod.Route[
+          typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[
             /* import warning: importer.ImportType#apply Failed type conversion: State['routeNames'][number] */ js.Any, 
             js.UndefOr[js.Object]
           ]

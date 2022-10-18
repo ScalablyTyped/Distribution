@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-common-js", "Display")
 @js.native
 open class Display ()
-  extends typings.guacamoleCommonJs.displayMod.Display
+  extends typings.guacamoleCommonJs.libDisplayMod.Display

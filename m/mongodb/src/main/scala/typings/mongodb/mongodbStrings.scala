@@ -43,22 +43,10 @@ object mongodbStrings {
   inline def ALPNProtocols: ALPNProtocols = "ALPNProtocols".asInstanceOf[ALPNProtocols]
   
   @js.native
-  sealed trait AcceptedFields extends StObject
-  inline def AcceptedFields: AcceptedFields = "AcceptedFields".asInstanceOf[AcceptedFields]
-  
-  @js.native
   sealed trait DEFAULT
     extends StObject
        with AuthMechanism
   inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
-  
-  @js.native
-  sealed trait Filter extends StObject
-  inline def Filter: Filter = "Filter".asInstanceOf[Filter]
-  
-  @js.native
-  sealed trait FilterOperations extends StObject
-  inline def FilterOperations: FilterOperations = "FilterOperations".asInstanceOf[FilterOperations]
   
   @js.native
   sealed trait GSSAPI
@@ -107,22 +95,10 @@ object mongodbStrings {
   inline def `MONGODB-X509`: `MONGODB-X509` = "MONGODB-X509".asInstanceOf[`MONGODB-X509`]
   
   @js.native
-  sealed trait MatchKeysAndValues extends StObject
-  inline def MatchKeysAndValues: MatchKeysAndValues = "MatchKeysAndValues".asInstanceOf[MatchKeysAndValues]
-  
-  @js.native
   sealed trait Mongos
     extends StObject
        with ServerType
   inline def Mongos: Mongos = "Mongos".asInstanceOf[Mongos]
-  
-  @js.native
-  sealed trait NestedPathsOfType extends StObject
-  inline def NestedPathsOfType: NestedPathsOfType = "NestedPathsOfType".asInstanceOf[NestedPathsOfType]
-  
-  @js.native
-  sealed trait NotAcceptedFields extends StObject
-  inline def NotAcceptedFields: NotAcceptedFields = "NotAcceptedFields".asInstanceOf[NotAcceptedFields]
   
   @js.native
   sealed trait PLAIN
@@ -135,18 +111,6 @@ object mongodbStrings {
     extends StObject
        with ServerType
   inline def PossiblePrimary: PossiblePrimary = "PossiblePrimary".asInstanceOf[PossiblePrimary]
-  
-  @js.native
-  sealed trait PullAllOperator extends StObject
-  inline def PullAllOperator: PullAllOperator = "PullAllOperator".asInstanceOf[PullAllOperator]
-  
-  @js.native
-  sealed trait PullOperator extends StObject
-  inline def PullOperator: PullOperator = "PullOperator".asInstanceOf[PullOperator]
-  
-  @js.native
-  sealed trait PushOperator extends StObject
-  inline def PushOperator: PushOperator = "PushOperator".asInstanceOf[PushOperator]
   
   @js.native
   sealed trait RSArbiter
@@ -219,14 +183,6 @@ object mongodbStrings {
     extends StObject
        with AuthMechanism
   inline def `SCRAM-SHA-256`: `SCRAM-SHA-256` = "SCRAM-SHA-256".asInstanceOf[`SCRAM-SHA-256`]
-  
-  @js.native
-  sealed trait SchemaMember extends StObject
-  inline def SchemaMember: SchemaMember = "SchemaMember".asInstanceOf[SchemaMember]
-  
-  @js.native
-  sealed trait SetFields extends StObject
-  inline def SetFields: SetFields = "SetFields".asInstanceOf[SetFields]
   
   @js.native
   sealed trait Sharded

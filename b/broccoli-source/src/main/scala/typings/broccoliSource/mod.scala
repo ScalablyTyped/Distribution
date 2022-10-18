@@ -8,8 +8,8 @@ import typings.broccoliNodeApi.mod.NodeCommon
 import typings.broccoliNodeApi.mod.SourceNode
 import typings.broccoliNodeApi.mod.SourceNodeInfo
 import typings.broccoliNodeApi.mod.TransformNode
-import typings.broccoliSource.interfacesMod.ConstructorOptions
-import typings.broccoliSource.interfacesMod.MapSeriesIterator
+import typings.broccoliSource.distSrcInterfacesMod.ConstructorOptions
+import typings.broccoliSource.distSrcInterfacesMod.MapSeriesIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

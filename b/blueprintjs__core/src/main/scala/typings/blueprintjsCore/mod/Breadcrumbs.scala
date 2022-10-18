@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.PartialBreadcrumbsProps
-import typings.blueprintjsCore.breadcrumbsMod.BreadcrumbsProps
+import typings.blueprintjsCore.libEsmComponentsBreadcrumbsBreadcrumbsMod.BreadcrumbsProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Breadcrumbs")
 @js.native
 open class Breadcrumbs protected ()
-  extends typings.blueprintjsCore.componentsMod.Breadcrumbs {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Breadcrumbs {
   def this(props: BreadcrumbsProps) = this()
   def this(props: BreadcrumbsProps, context: Any) = this()
 }

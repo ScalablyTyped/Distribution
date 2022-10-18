@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "http-parser-js" : "0.5.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "http-parser-js" : "0.5.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

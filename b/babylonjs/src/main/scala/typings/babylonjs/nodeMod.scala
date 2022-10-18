@@ -1,20 +1,20 @@
 package typings.babylonjs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babylonjs.abstractActionManagerMod.AbstractActionManager
-import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.abstractSceneMod.AbstractScene
-import typings.babylonjs.animatableMod.Animatable
-import typings.babylonjs.animationMod.Animation
-import typings.babylonjs.animationPropertiesOverrideMod.AnimationPropertiesOverride
-import typings.babylonjs.animationRangeMod.AnimationRange
-import typings.babylonjs.anon.Max
-import typings.babylonjs.behaviorMod.Behavior
-import typings.babylonjs.behaviorMod.IBehaviorAware
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.iInspectableMod.IInspectable
-import typings.babylonjs.mathVectorMod.Matrix
-import typings.babylonjs.observableMod.Observable
+import typings.babylonjs.actionsAbstractActionManagerMod.AbstractActionManager
+import typings.babylonjs.animationsAnimatableMod.Animatable
+import typings.babylonjs.animationsAnimationMod.Animation
+import typings.babylonjs.animationsAnimationPropertiesOverrideMod.AnimationPropertiesOverride
+import typings.babylonjs.animationsAnimationRangeMod.AnimationRange
+import typings.babylonjs.anon.MaxMin
+import typings.babylonjs.behaviorsBehaviorMod.Behavior
+import typings.babylonjs.behaviorsBehaviorMod.IBehaviorAware
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.mathsMathDotvectorMod.Matrix
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
+import typings.babylonjs.miscIInspectableMod.IInspectable
+import typings.babylonjs.miscObservableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -356,16 +356,16 @@ object nodeMod {
       * @param predicate defines a callback function that can be customize to filter what meshes should be included in the list used to compute the bounding vectors
       * @returns the new bounding vectors
       */
-    def getHierarchyBoundingVectors(): Max = js.native
-    def getHierarchyBoundingVectors(includeDescendants: Boolean): Max = js.native
+    def getHierarchyBoundingVectors(): MaxMin = js.native
+    def getHierarchyBoundingVectors(includeDescendants: Boolean): MaxMin = js.native
     def getHierarchyBoundingVectors(
       includeDescendants: Boolean,
       predicate: Nullable[js.Function1[/* abstractMesh */ AbstractMesh, Boolean]]
-    ): Max = js.native
+    ): MaxMin = js.native
     def getHierarchyBoundingVectors(
       includeDescendants: Unit,
       predicate: Nullable[js.Function1[/* abstractMesh */ AbstractMesh, Boolean]]
-    ): Max = js.native
+    ): MaxMin = js.native
     
     /**
       * Gets the scene of the node

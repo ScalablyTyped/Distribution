@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object supportedLocalesMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/SupportedLocales", JSImport.Namespace)
+  @JSImport("@formatjs/ecma402-abstract/SupportedLocales", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

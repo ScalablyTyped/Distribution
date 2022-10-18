@@ -10,7 +10,7 @@ object mod {
   
   inline def apply(cmd: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   inline def apply(cmd: String, cb: js.Function2[/* err */ js.Error | Null, /* path */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(cmd: String, options: AsyncOptions & OptionsAll & OptionsFirst): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def apply(cmd: String, options: AsyncOptions & OptionsFirst & OptionsAll): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def apply(
     cmd: String,
     options: (AsyncOptions & OptionsAll & OptionsFirst) | AsyncOptions,

@@ -1,21 +1,21 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "Element")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "Element")
 @js.native
-abstract class Element[TModel /* <: IAbstractModel */] protected ()
-  extends typings.mendixmodelsdk.internalMod.Element[TModel] {
+open class Element[TModel /* <: IAbstractModel */] protected ()
+  extends typings.mendixmodelsdk.srcSdkInternalMod.Element[TModel] {
   def this(
-    model: typings.mendixmodelsdk.abstractModelMod.AbstractModel,
+    model: typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: typings.mendixmodelsdk.unitsMod.ModelUnit[IAbstractModel],
-    container: typings.mendixmodelsdk.elementsMod.AbstractElement[IAbstractModel, Container]
+    unit: typings.mendixmodelsdk.srcSdkInternalUnitsMod.ModelUnit[IAbstractModel],
+    container: typings.mendixmodelsdk.srcSdkInternalElementsMod.AbstractElement[IAbstractModel, Container]
   ) = this()
 }

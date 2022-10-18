@@ -58,9 +58,9 @@ object global {
       * class, and for actual class definitions, please see the
       * Events_* interfaces above.
       */
-    @JSGlobal("Backbone.EventsMixin")
+    /* note: abstract class */ @JSGlobal("Backbone.EventsMixin")
     @js.native
-    abstract class EventsMixin () extends StObject
+    open class EventsMixin () extends StObject
     
     @JSGlobal("Backbone.History")
     @js.native

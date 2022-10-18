@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Id extends StObject {
   
-  var database: js.UndefOr[Any] = js.undefined
+  var database: js.UndefOr[typings.nginstackEngine.libDatabaseDbtrackerpoolMod.Database] = js.undefined
   
   var id: js.UndefOr[Double] = js.undefined
   
@@ -23,7 +23,7 @@ object Id {
   
   extension [Self <: Id](x: Self) {
     
-    inline def setDatabase(value: Any): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: typings.nginstackEngine.libDatabaseDbtrackerpoolMod.Database): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
     inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     

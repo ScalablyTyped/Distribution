@@ -1,11 +1,11 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.mappingsMod.mappings.MappingDocument
-import typings.mendixmodelsdk.mappingsMod.mappings.ObjectMappingElement
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenMappingsMod.mappings.MappingDocument
+import typings.mendixmodelsdk.srcGenMappingsMod.mappings.ObjectMappingElement
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +18,9 @@ object importmappings {
   @JSImport("mendixmodelsdk", "importmappings.ImportMapping")
   @js.native
   open class ImportMapping protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.importmappings.ImportMapping {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.importmappings.ImportMapping {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
@@ -38,7 +38,7 @@ object importmappings {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.importmappingsMod.importmappings.ImportMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.importmappingsMod.importmappings.ImportMapping]
+    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportMapping]
     
     /* static member */
     @JSImport("mendixmodelsdk", "importmappings.ImportMapping.structureTypeName")
@@ -49,8 +49,8 @@ object importmappings {
     /* static member */
     @JSImport("mendixmodelsdk", "importmappings.ImportMapping.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.importmappingsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.importmappingsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenImportmappingsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenImportmappingsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -59,14 +59,14 @@ object importmappings {
   @JSImport("mendixmodelsdk", "importmappings.ImportObjectMappingElement")
   @js.native
   open class ImportObjectMappingElement protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.importmappings.ImportObjectMappingElement {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.importmappings.ImportObjectMappingElement {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ImportObjectMappingElement {
@@ -81,7 +81,7 @@ object importmappings {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.importmappingsMod.importmappings.ImportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.importmappingsMod.importmappings.ImportObjectMappingElement]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportObjectMappingElement]
     
     /**
       * Creates and returns a new ImportObjectMappingElement instance in the SDK and on the server.
@@ -89,7 +89,7 @@ object importmappings {
       * of the parent mappings.MappingDocument element passed as argument.
       */
     /* static member */
-    inline def createInMappingDocumentUnderRootMappingElements(container: MappingDocument): typings.mendixmodelsdk.importmappingsMod.importmappings.ImportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMappingDocumentUnderRootMappingElements")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.importmappingsMod.importmappings.ImportObjectMappingElement]
+    inline def createInMappingDocumentUnderRootMappingElements(container: MappingDocument): typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMappingDocumentUnderRootMappingElements")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportObjectMappingElement]
     
     /**
       * Creates and returns a new ImportObjectMappingElement instance in the SDK and on the server.
@@ -97,7 +97,7 @@ object importmappings {
       * of the parent mappings.ObjectMappingElement element passed as argument.
       */
     /* static member */
-    inline def createInObjectMappingElementUnderChildren(container: ObjectMappingElement): typings.mendixmodelsdk.importmappingsMod.importmappings.ImportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInObjectMappingElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.importmappingsMod.importmappings.ImportObjectMappingElement]
+    inline def createInObjectMappingElementUnderChildren(container: ObjectMappingElement): typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInObjectMappingElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportObjectMappingElement]
     
     /* static member */
     @JSImport("mendixmodelsdk", "importmappings.ImportObjectMappingElement.structureTypeName")
@@ -108,8 +108,8 @@ object importmappings {
     /* static member */
     @JSImport("mendixmodelsdk", "importmappings.ImportObjectMappingElement.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.importmappingsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.importmappingsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenImportmappingsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenImportmappingsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -118,14 +118,14 @@ object importmappings {
   @JSImport("mendixmodelsdk", "importmappings.ImportValueMappingElement")
   @js.native
   open class ImportValueMappingElement protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.importmappings.ImportValueMappingElement {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.importmappings.ImportValueMappingElement {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ImportValueMappingElement {
@@ -140,7 +140,7 @@ object importmappings {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.importmappingsMod.importmappings.ImportValueMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.importmappingsMod.importmappings.ImportValueMappingElement]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportValueMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportValueMappingElement]
     
     /**
       * Creates and returns a new ImportValueMappingElement instance in the SDK and on the server.
@@ -148,7 +148,7 @@ object importmappings {
       * of the parent mappings.ObjectMappingElement element passed as argument.
       */
     /* static member */
-    inline def createIn(container: ObjectMappingElement): typings.mendixmodelsdk.importmappingsMod.importmappings.ImportValueMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.importmappingsMod.importmappings.ImportValueMappingElement]
+    inline def createIn(container: ObjectMappingElement): typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportValueMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportValueMappingElement]
     
     /* static member */
     @JSImport("mendixmodelsdk", "importmappings.ImportValueMappingElement.structureTypeName")
@@ -159,7 +159,7 @@ object importmappings {
     /* static member */
     @JSImport("mendixmodelsdk", "importmappings.ImportValueMappingElement.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.importmappingsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.importmappingsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenImportmappingsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenImportmappingsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
 }

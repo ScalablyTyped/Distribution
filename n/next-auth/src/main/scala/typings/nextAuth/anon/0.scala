@@ -1,28 +1,25 @@
 package typings.nextAuth.anon
 
-import typings.nextAuth.adaptersMod.TypeORMAccountModel
-import typings.nextAuth.adaptersMod.TypeORMSessionModel
-import typings.nextAuth.adaptersMod.TypeORMUserModel
-import typings.nextAuth.adaptersMod.TypeORMVerificationRequestModel
+import typings.nextAuth.jwtTypesMod.JWT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0`[A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */] extends StObject {
+trait `0` extends StObject {
   
-  var models: js.UndefOr[Session[A, U, S, VR]] = js.undefined
+  var token: JWT | Null
 }
 object `0` {
   
-  inline def apply[A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */](): `0`[A, U, S, VR] = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`0`[A, U, S, VR]]
+  inline def apply(): `0` = {
+    val __obj = js.Dynamic.literal(token = null)
+    __obj.asInstanceOf[`0`]
   }
   
-  extension [Self <: `0`[?, ?, ?, ?], A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */](x: Self & (`0`[A, U, S, VR])) {
+  extension [Self <: `0`](x: Self) {
     
-    inline def setModels(value: Session[A, U, S, VR]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setToken(value: JWT): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
+    inline def setTokenNull: Self = StObject.set(x, "token", null)
   }
 }

@@ -11,16 +11,16 @@ import typings.angular.mod.IQService
 import typings.angular.mod.IRootScopeService
 import typings.angular.mod.ITimeoutService
 import typings.angular.mod.auto.IInjectorService
-import typings.ngTable.ngTableColumnMod.NgTableColumn
-import typings.ngTable.ngTableControllerMod.ITableScope
-import typings.ngTable.ngTableDefaultsMod.IDefaults
-import typings.ngTable.ngTableParamsMod.IParamValues
-import typings.ngTable.ngTableSettingsMod.ISettings
-import typings.ngTable.ngTableSettingsMod.NgTableSettings
-import typings.ngTable.publicInterfacesMod.IColumnDef
-import typings.ngTable.publicInterfacesMod.IDynamicTableColDef
-import typings.ngTable.publicInterfacesMod.IFilterConfigValues
-import typings.ngTable.publicInterfacesMod.ITableInputAttributes
+import typings.ngTable.srcBrowserNgTableColumnMod.NgTableColumn
+import typings.ngTable.srcBrowserNgTableControllerMod.ITableScope
+import typings.ngTable.srcBrowserPublicInterfacesMod.IColumnDef
+import typings.ngTable.srcBrowserPublicInterfacesMod.IDynamicTableColDef
+import typings.ngTable.srcBrowserPublicInterfacesMod.IFilterConfigValues
+import typings.ngTable.srcBrowserPublicInterfacesMod.ITableInputAttributes
+import typings.ngTable.srcCoreNgTableDefaultsMod.IDefaults
+import typings.ngTable.srcCoreNgTableParamsMod.IParamValues
+import typings.ngTable.srcCoreNgTableSettingsMod.ISettings
+import typings.ngTable.srcCoreNgTableSettingsMod.NgTableSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +30,7 @@ object mod {
   @JSImport("ng-table", "NgTableController")
   @js.native
   open class NgTableController[TParams, TCol /* <: IColumnDef | IDynamicTableColDef */] protected ()
-    extends typings.ngTable.browserMod.NgTableController[TParams, TCol] {
+    extends typings.ngTable.srcBrowserMod.NgTableController[TParams, TCol] {
     def this(
       $scope: ITableScope[TParams],
       $timeout: ITimeoutService,
@@ -40,7 +40,7 @@ object mod {
       $element: IAugmentedJQuery,
       $document: IDocumentService,
       ngTableColumn: NgTableColumn[TCol],
-      ngTableEventsChannel: typings.ngTable.coreMod.NgTableEventsChannel
+      ngTableEventsChannel: typings.ngTable.srcCoreMod.NgTableEventsChannel
     ) = this()
   }
   /* static members */
@@ -59,12 +59,12 @@ object mod {
   @JSImport("ng-table", "NgTableDefaultGetDataProvider")
   @js.native
   open class NgTableDefaultGetDataProvider ()
-    extends typings.ngTable.coreMod.NgTableDefaultGetDataProvider
+    extends typings.ngTable.srcCoreMod.NgTableDefaultGetDataProvider
   
   @JSImport("ng-table", "NgTableEventsChannel")
   @js.native
   open class NgTableEventsChannel protected ()
-    extends typings.ngTable.coreMod.NgTableEventsChannel {
+    extends typings.ngTable.srcCoreMod.NgTableEventsChannel {
     def this($rootScope: IRootScopeService) = this()
   }
   /* static members */
@@ -83,7 +83,7 @@ object mod {
   @JSImport("ng-table", "NgTableFilterConfig")
   @js.native
   open class NgTableFilterConfig protected ()
-    extends typings.ngTable.browserMod.NgTableFilterConfig {
+    extends typings.ngTable.srcBrowserMod.NgTableFilterConfig {
     def this(/**
       * Readonly copy of the final values used to configure the service.
       */
@@ -105,7 +105,7 @@ object mod {
   @JSImport("ng-table", "NgTableFilterConfigProvider")
   @js.native
   open class NgTableFilterConfigProvider protected ()
-    extends typings.ngTable.browserMod.NgTableFilterConfigProvider {
+    extends typings.ngTable.srcBrowserMod.NgTableFilterConfigProvider {
     def this($injector: IInjectorService) = this()
   }
   /* static members */
@@ -124,7 +124,7 @@ object mod {
   @JSImport("ng-table", "NgTableParams")
   @js.native
   open class NgTableParams[T] ()
-    extends typings.ngTable.coreMod.NgTableParams[T] {
+    extends typings.ngTable.srcCoreMod.NgTableParams[T] {
     def this(baseParameters: Boolean) = this()
     def this(baseParameters: IParamValues[T]) = this()
     def this(baseParameters: Boolean, baseSettings: ISettings[T]) = this()
@@ -152,7 +152,7 @@ object mod {
       $q: IQService,
       $log: ILogService,
       ngTableDefaults: IDefaults,
-      ngTableEventsChannel: typings.ngTable.ngTableEventsChannelMod.NgTableEventsChannel,
+      ngTableEventsChannel: typings.ngTable.srcCoreNgTableEventsChannelMod.NgTableEventsChannel,
       ngTableSettings: NgTableSettings
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")($q.asInstanceOf[js.Any], $log.asInstanceOf[js.Any], ngTableDefaults.asInstanceOf[js.Any], ngTableEventsChannel.asInstanceOf[js.Any], ngTableSettings.asInstanceOf[js.Any])).asInstanceOf[Unit]
     

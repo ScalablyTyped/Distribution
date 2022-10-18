@@ -1,7 +1,10 @@
 package typings.jupyterlabHubExtension
 
 import org.scalablytyped.runtime.Shortcut
-import typings.jupyterlabApplication.frontendMod.JupyterFrontEndPlugin
+import typings.jupyterlabApplication.libFrontendMod.JupyterFrontEnd.IShell
+import typings.jupyterlabApplication.libFrontendMod.JupyterFrontEndPlugin
+import typings.jupyterlabHubExtension.jupyterlabHubExtensionStrings.desktop
+import typings.jupyterlabHubExtension.jupyterlabHubExtensionStrings.mobile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +13,7 @@ object mod extends Shortcut {
   
   @JSImport("@jupyterlab/hub-extension", JSImport.Default)
   @js.native
-  val default: js.Array[JupyterFrontEndPlugin[js.Any]] = js.native
+  val default: js.Array[JupyterFrontEndPlugin[Any, IShell, desktop | mobile]] = js.native
   
   object CommandIDs {
     
@@ -27,8 +30,8 @@ object mod extends Shortcut {
     val restart: String = js.native
   }
   
-  type _To = js.Array[JupyterFrontEndPlugin[js.Any]]
+  type _To = js.Array[JupyterFrontEndPlugin[Any, IShell, desktop | mobile]]
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: js.Array[JupyterFrontEndPlugin[js.Any]] = default
+  override def _to: js.Array[JupyterFrontEndPlugin[Any, IShell, desktop | mobile]] = default
 }

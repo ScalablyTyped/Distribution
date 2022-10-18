@@ -17,16 +17,16 @@ object Search {
   object Core {
     
     /** Provides data for the RequestingFocusOnKeyboardInput event. */
-    @JSGlobal("Windows.ApplicationModel.Search.Core.RequestingFocusOnKeyboardInputEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.Core.RequestingFocusOnKeyboardInputEventArgs")
     @js.native
-    abstract class RequestingFocusOnKeyboardInputEventArgs ()
+    open class RequestingFocusOnKeyboardInputEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Search.Core.RequestingFocusOnKeyboardInputEventArgs
     
     /** Enables access to the search suggestions that the SearchSuggestionManager provides. */
-    @JSGlobal("Windows.ApplicationModel.Search.Core.SearchSuggestion")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.Core.SearchSuggestion")
     @js.native
-    abstract class SearchSuggestion ()
+    open class SearchSuggestion ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Search.Core.SearchSuggestion {
       
@@ -81,9 +81,9 @@ object Search {
          with typings.winrtUwp.Windows.ApplicationModel.Search.Core.SearchSuggestionManager
     
     /** Provides data for the SuggestionsRequested event. */
-    @JSGlobal("Windows.ApplicationModel.Search.Core.SearchSuggestionsRequestedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.Core.SearchSuggestionsRequestedEventArgs")
     @js.native
-    abstract class SearchSuggestionsRequestedEventArgs ()
+    open class SearchSuggestionsRequestedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Search.Core.SearchSuggestionsRequestedEventArgs {
       
@@ -131,9 +131,9 @@ object Search {
   }
   
   /** Represents and manages the search pane that opens when a user activates the Search charm. The search pane provides a consistent, touch-friendly search box and optional search suggestions. */
-  @JSGlobal("Windows.ApplicationModel.Search.SearchPane")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.SearchPane")
   @js.native
-  abstract class SearchPane ()
+  open class SearchPane ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.SearchPane
   object SearchPane {
@@ -155,9 +155,9 @@ object Search {
   }
   
   /** Provides data for a querychanged event that is associated with a searchPane object. */
-  @JSGlobal("Windows.ApplicationModel.Search.SearchPaneQueryChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.SearchPaneQueryChangedEventArgs")
   @js.native
-  abstract class SearchPaneQueryChangedEventArgs ()
+  open class SearchPaneQueryChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneQueryChangedEventArgs {
     
@@ -175,9 +175,9 @@ object Search {
   }
   
   /** Provides information about query text that the user enters through an Input Method Editor (IME). */
-  @JSGlobal("Windows.ApplicationModel.Search.SearchPaneQueryLinguisticDetails")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.SearchPaneQueryLinguisticDetails")
   @js.native
-  abstract class SearchPaneQueryLinguisticDetails ()
+  open class SearchPaneQueryLinguisticDetails ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneQueryLinguisticDetails {
     
@@ -195,9 +195,9 @@ object Search {
   }
   
   /** Provides data for a querysubmitted event that is associated with a searchPane instance. */
-  @JSGlobal("Windows.ApplicationModel.Search.SearchPaneQuerySubmittedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.SearchPaneQuerySubmittedEventArgs")
   @js.native
-  abstract class SearchPaneQuerySubmittedEventArgs ()
+  open class SearchPaneQuerySubmittedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneQuerySubmittedEventArgs {
     
@@ -215,9 +215,9 @@ object Search {
   }
   
   /** Provides data for a resultsuggestionchosen event that is associated with a searchPane object. */
-  @JSGlobal("Windows.ApplicationModel.Search.SearchPaneResultSuggestionChosenEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.SearchPaneResultSuggestionChosenEventArgs")
   @js.native
-  abstract class SearchPaneResultSuggestionChosenEventArgs ()
+  open class SearchPaneResultSuggestionChosenEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneResultSuggestionChosenEventArgs {
     
@@ -227,9 +227,9 @@ object Search {
   }
   
   /** Stores suggestions and information about the request for suggestions. */
-  @JSGlobal("Windows.ApplicationModel.Search.SearchPaneSuggestionsRequest")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.SearchPaneSuggestionsRequest")
   @js.native
-  abstract class SearchPaneSuggestionsRequest ()
+  open class SearchPaneSuggestionsRequest ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneSuggestionsRequest {
     
@@ -250,9 +250,9 @@ object Search {
   }
   
   /** Enables the app to signal when it has finished populating a searchSuggestionCollection object while handling the suggestionsrequested event. Apps should use a deferral if and only if they need to respond to a request for suggestions asynchronously. */
-  @JSGlobal("Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestDeferral")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestDeferral")
   @js.native
-  abstract class SearchPaneSuggestionsRequestDeferral ()
+  open class SearchPaneSuggestionsRequestDeferral ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestDeferral {
     
@@ -262,9 +262,9 @@ object Search {
   }
   
   /** Provides data for a suggestionsrequested event that is associated with a searchPane object. */
-  @JSGlobal("Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestedEventArgs")
   @js.native
-  abstract class SearchPaneSuggestionsRequestedEventArgs ()
+  open class SearchPaneSuggestionsRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestedEventArgs {
     
@@ -286,9 +286,9 @@ object Search {
   }
   
   /** Provides data for a visibilitychanged event that is associated with a searchPane object. */
-  @JSGlobal("Windows.ApplicationModel.Search.SearchPaneVisibilityChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.SearchPaneVisibilityChangedEventArgs")
   @js.native
-  abstract class SearchPaneVisibilityChangedEventArgs ()
+  open class SearchPaneVisibilityChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneVisibilityChangedEventArgs {
     
@@ -329,9 +329,9 @@ object Search {
   }
   
   /** Represents a collection of search suggestions to be displayed in the search pane in response to a suggestionsrequested event. */
-  @JSGlobal("Windows.ApplicationModel.Search.SearchSuggestionCollection")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.SearchSuggestionCollection")
   @js.native
-  abstract class SearchSuggestionCollection ()
+  open class SearchSuggestionCollection ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.SearchSuggestionCollection {
     
@@ -379,9 +379,9 @@ object Search {
   }
   
   /** Stores suggestions and information about the request for suggestions. */
-  @JSGlobal("Windows.ApplicationModel.Search.SearchSuggestionsRequest")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.SearchSuggestionsRequest")
   @js.native
-  abstract class SearchSuggestionsRequest ()
+  open class SearchSuggestionsRequest ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.SearchSuggestionsRequest {
     
@@ -402,9 +402,9 @@ object Search {
   }
   
   /** Enables the app to signal when it has finished populating a SearchSuggestionCollection object while handling the SuggestionsRequested event. Use a deferral if and only if your app needs to respond to a request for suggestions asynchronously. */
-  @JSGlobal("Windows.ApplicationModel.Search.SearchSuggestionsRequestDeferral")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Search.SearchSuggestionsRequestDeferral")
   @js.native
-  abstract class SearchSuggestionsRequestDeferral ()
+  open class SearchSuggestionsRequestDeferral ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.SearchSuggestionsRequestDeferral {
     

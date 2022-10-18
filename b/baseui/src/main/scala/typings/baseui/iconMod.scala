@@ -5,7 +5,7 @@ import typings.baseui.anon.Theme
 import typings.baseui.baseuiStrings.svg
 import typings.baseui.iconTypesMod.StyledComponentArgs
 import typings.react.mod.ForwardRefExoticComponent
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import typings.styletronStandard.mod.StyleObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

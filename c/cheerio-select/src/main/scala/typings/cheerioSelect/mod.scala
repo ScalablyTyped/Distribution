@@ -1,7 +1,7 @@
 package typings.cheerioSelect
 
-import typings.cssSelect.pseudoSelectorsFiltersMod.Filter
-import typings.cssSelect.pseudoSelectorsPseudosMod.Pseudo
+import typings.cssSelect.libPseudoSelectorsFiltersMod.Filter
+import typings.cssSelect.libPseudoSelectorsPseudosMod.Pseudo
 import typings.domhandler.libNodeMod.AnyNode
 import typings.domhandler.mod.Document
 import typings.domhandler.mod.Element

@@ -1,9 +1,9 @@
 package typings.expoConfigPlugins.anon
 
-import typings.expoConfigPlugins.manifestMod.ManifestApplication
-import typings.expoConfigPlugins.manifestMod.ManifestPermission
-import typings.expoConfigPlugins.manifestMod.ManifestUsesFeature
-import typings.expoConfigPlugins.manifestMod.ManifestUsesPermission
+import typings.expoConfigPlugins.buildAndroidManifestMod.ManifestApplication
+import typings.expoConfigPlugins.buildAndroidManifestMod.ManifestPermission
+import typings.expoConfigPlugins.buildAndroidManifestMod.ManifestUsesFeature
+import typings.expoConfigPlugins.buildAndroidManifestMod.ManifestUsesPermission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _empty extends StObject {
   
   @JSName("$")
-  var $: Package
+  var $: Dictkey
   
   var application: js.UndefOr[js.Array[ManifestApplication]] = js.undefined
   
@@ -25,14 +25,14 @@ trait _empty extends StObject {
 }
 object _empty {
   
-  inline def apply($: Package): _empty = {
+  inline def apply($: Dictkey): _empty = {
     val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any])
     __obj.asInstanceOf[_empty]
   }
   
   extension [Self <: _empty](x: Self) {
     
-    inline def set$(value: Package): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+    inline def set$(value: Dictkey): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     
     inline def setApplication(value: js.Array[ManifestApplication]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

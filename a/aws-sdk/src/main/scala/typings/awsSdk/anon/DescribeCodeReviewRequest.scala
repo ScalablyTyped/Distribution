@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.codegurureviewerMod.Arn
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsCodegurureviewerMod.Arn
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

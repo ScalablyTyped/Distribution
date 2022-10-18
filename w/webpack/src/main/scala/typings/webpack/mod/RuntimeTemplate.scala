@@ -55,7 +55,7 @@ trait RuntimeTemplate extends StObject {
   def destructureObject(items: Any, value: Any): String = js.native
   def destructureObject(items: Unit, value: Any): String = js.native
   
-  def emptyFunction(): (`x EqualssignGreaterthansign LeftcurlybracketRightcurlybracket`) | String = js.native
+  def emptyFunction(): (`x EqualssignGreaterthansign LeftcurlybracketRightcurlybracket`) | (/* function() {} */ String) = js.native
   
   def exportFromImport(__0: AsiSafe): String = js.native
   

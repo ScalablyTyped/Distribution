@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "ObjectUtils")
 @js.native
 open class ObjectUtils ()
-  extends typings.primereact.utilsMod.ObjectUtils
+  extends typings.primereact.utilsUtilsMod.ObjectUtils
 /* static members */
 object ObjectUtils {
   

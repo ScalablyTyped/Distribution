@@ -1,8 +1,8 @@
 package typings.fpTs.mod
 
-import typings.fpTs.ordMod.Ord_
-import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
-import typings.fpTs.refinementMod.Refinement
+import typings.fpTs.libOrdMod.Ord_
+import typings.fpTs.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
+import typings.fpTs.libRefinementMod.Refinement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +15,11 @@ object string {
   
   @JSImport("fp-ts", "string.Eq")
   @js.native
-  val Eq: typings.fpTs.eqMod.Eq[String] = js.native
+  val Eq: typings.fpTs.libEqMod.Eq[String] = js.native
   
   @JSImport("fp-ts", "string.Monoid")
   @js.native
-  val Monoid: typings.fpTs.monoidMod.Monoid[String] = js.native
+  val Monoid: typings.fpTs.libMonoidMod.Monoid[String] = js.native
   
   @JSImport("fp-ts", "string.Ord")
   @js.native
@@ -27,11 +27,11 @@ object string {
   
   @JSImport("fp-ts", "string.Semigroup")
   @js.native
-  val Semigroup: typings.fpTs.semigroupMod.Semigroup[String] = js.native
+  val Semigroup: typings.fpTs.libSemigroupMod.Semigroup[String] = js.native
   
   @JSImport("fp-ts", "string.Show")
   @js.native
-  val Show: typings.fpTs.showMod.Show[String] = js.native
+  val Show: typings.fpTs.libShowMod.Show[String] = js.native
   
   @JSImport("fp-ts", "string.empty")
   @js.native

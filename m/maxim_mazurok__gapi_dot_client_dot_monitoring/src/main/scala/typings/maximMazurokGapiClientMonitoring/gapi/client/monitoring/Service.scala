@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,9 +51,7 @@ trait Service extends StObject {
     * value, the empty string may be supplied for the label value.
     */
   var userLabels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Service & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object Service {
@@ -119,9 +116,7 @@ object Service {
     inline def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
     
     inline def setUserLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Service & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)

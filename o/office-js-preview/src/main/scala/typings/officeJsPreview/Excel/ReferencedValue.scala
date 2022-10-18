@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the value in a cell.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 /* Rewritten from type alias, can be one of: 
   - typings.officeJsPreview.Excel.ArrayCellValue

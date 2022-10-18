@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/app" : "0.7.33"
+      "@firebase/app" : "0.8.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/app" : "0.7.33"
+      "@firebase/app" : "0.8.2"
     }
   ],
   "compile-devDependencies" : [

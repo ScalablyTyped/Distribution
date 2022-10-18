@@ -1,7 +1,7 @@
 package typings.atlaskitVisuallyHidden
 
 import org.scalablytyped.runtime.Shortcut
-import typings.atlaskitVisuallyHidden.typesMod.VisuallyHiddenProps
+import typings.atlaskitVisuallyHidden.distTypesTypesMod.VisuallyHiddenProps
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

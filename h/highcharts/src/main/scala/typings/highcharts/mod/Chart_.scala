@@ -1,7 +1,7 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
-import typings.highcharts.boostCanvasMod.highchartsAugmentingMod.Chart
+import typings.highcharts.modulesBoostCanvasMod.highchartsAugmentingMod.Chart
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -163,7 +163,10 @@ open class Chart_ protected () extends StObject {
     * @param options
     *        The series options for the new, detailed series.
     */
-  def addSeriesAsDrilldown(point: typings.highcharts.drilldownMod.highchartsAugmentingMod.Point, options: SeriesOptionsType): Unit = js.native
+  def addSeriesAsDrilldown(
+    point: typings.highcharts.modulesDrilldownMod.highchartsAugmentingMod.Point,
+    options: SeriesOptionsType
+  ): Unit = js.native
   
   /**
     * All the axes in the chart.
@@ -205,7 +208,7 @@ open class Chart_ protected () extends StObject {
   /**
     * The data parser for this chart.
     */
-  var data: js.UndefOr[typings.highcharts.dataMod.highchartsAugmentingMod.Data] = js.native
+  var data: js.UndefOr[typings.highcharts.modulesDataMod.highchartsAugmentingMod.Data] = js.native
   
   /**
     * Remove the chart and purge memory. This method is called internally
@@ -279,7 +282,7 @@ open class Chart_ protected () extends StObject {
     *
     * @return X and Y coordinates in terms of projected values
     */
-  def fromLatLonToPoint(lonLat: typings.highcharts.mapMod.highchartsAugmentingMod.MapLonLatObject): typings.highcharts.mapMod.highchartsAugmentingMod.ProjectedXY = js.native
+  def fromLatLonToPoint(lonLat: typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject): typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY = js.native
   
   /**
     * Deprecated. Use `MapView.projectedUnitsToLonLat` instead.
@@ -290,10 +293,10 @@ open class Chart_ protected () extends StObject {
     *
     * @return An object with `lat` and `lon` properties.
     */
-  def fromPointToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.Point): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
-  def fromPointToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.ProjectedXY): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
+  def fromPointToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.Point): js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
+  def fromPointToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY): js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
   
-  var fullscreen: typings.highcharts.exportingMod.highchartsAugmentingMod.Fullscreen & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Fullscreen */ Any) = js.native
+  var fullscreen: typings.highcharts.modulesExportingMod.highchartsAugmentingMod.Fullscreen & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Fullscreen */ Any) = js.native
   
   /**
     * Get an axis, series or point object by `id` as given in the configuration
@@ -334,7 +337,7 @@ open class Chart_ protected () extends StObject {
     *
     * @return The points currently under the cursor.
     */
-  def getCurrentSonifyPoints(): js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.Point] = js.native
+  def getCurrentSonifyPoints(): js.Array[typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Point] = js.native
   
   /**
     * Export-data module required. Returns a two-dimensional array
@@ -487,7 +490,7 @@ open class Chart_ protected () extends StObject {
     *
     * @return true if the chart is in series boost mode
     */
-  def isChartSeriesBoosting(chart: typings.highcharts.boostMod.highchartsAugmentingMod.Chart): Boolean = js.native
+  def isChartSeriesBoosting(chart: typings.highcharts.modulesBoostMod.highchartsAugmentingMod.Chart): Boolean = js.native
   
   /**
     * Check whether a given point is within the plot area.
@@ -805,7 +808,7 @@ open class Chart_ protected () extends StObject {
   def setSize(width: Unit, height: Unit, animation: Boolean): Unit = js.native
   def setSize(width: Unit, height: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
   
-  def setSonifyCursor(points: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.Point]): Unit = js.native
+  def setSonifyCursor(points: js.Array[typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Point]): Unit = js.native
   /**
     * Set the cursor to a point or set of points in different series.
     *
@@ -814,7 +817,7 @@ open class Chart_ protected () extends StObject {
     *        points under the cursor, the points have to be in different
     *        series that are being played simultaneously.
     */
-  def setSonifyCursor(points: typings.highcharts.sonificationMod.highchartsAugmentingMod.Point): Unit = js.native
+  def setSonifyCursor(points: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Point): Unit = js.native
   
   /**
     * Shortcut to set the subtitle options. This can also be done from
@@ -878,7 +881,7 @@ open class Chart_ protected () extends StObject {
     *        options set on chart and series.
     */
   def sonify(): Unit = js.native
-  def sonify(options: typings.highcharts.sonificationMod.highchartsAugmentingMod.SonificationOptions): Unit = js.native
+  def sonify(options: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.SonificationOptions): Unit = js.native
   
   /**
     * Whether the chart is in styled mode, meaning all presentatinoal
@@ -923,7 +926,7 @@ open class Chart_ protected () extends StObject {
     *
     * @return An object with `x` and `y` properties.
     */
-  def transformFromLatLon(latLon: typings.highcharts.mapMod.highchartsAugmentingMod.MapLonLatObject, transform: Any): typings.highcharts.mapMod.highchartsAugmentingMod.ProjectedXY = js.native
+  def transformFromLatLon(latLon: typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject, transform: Any): typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY = js.native
   
   /**
     * Highcharts Maps only. Get latLon from point using specified transform
@@ -940,8 +943,8 @@ open class Chart_ protected () extends StObject {
     *
     * @return An object with `lat` and `lon` properties.
     */
-  def transformToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.Point, transform: Any): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
-  def transformToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.ProjectedXY, transform: Any): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
+  def transformToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.Point, transform: Any): js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
+  def transformToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY, transform: Any): js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
   
   /**
     * A generic function to update any element of the chart. Elements can be

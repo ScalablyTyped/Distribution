@@ -1,5 +1,8 @@
 package typings.expoPrebuildConfig.anon
 
+import typings.expoPrebuildConfig.buildPluginsUnversionedExpoSplashScreenInterfaceBuilderMod.IBBoolean
+import typings.expoPrebuildConfig.buildPluginsUnversionedExpoSplashScreenInterfaceBuilderMod.IBContentMode
+import typings.expoPrebuildConfig.buildPluginsUnversionedExpoSplashScreenInterfaceBuilderMod.IBTextAlignment
 import typings.expoPrebuildConfig.expoPrebuildConfigStrings.alignBaselines
 import typings.expoPrebuildConfig.expoPrebuildConfigStrings.characterWrap
 import typings.expoPrebuildConfig.expoPrebuildConfigStrings.clip
@@ -8,9 +11,6 @@ import typings.expoPrebuildConfig.expoPrebuildConfigStrings.middleTruncation
 import typings.expoPrebuildConfig.expoPrebuildConfigStrings.none
 import typings.expoPrebuildConfig.expoPrebuildConfigStrings.tailTruncation
 import typings.expoPrebuildConfig.expoPrebuildConfigStrings.wordWrap
-import typings.expoPrebuildConfig.interfaceBuilderMod.IBBoolean
-import typings.expoPrebuildConfig.interfaceBuilderMod.IBContentMode
-import typings.expoPrebuildConfig.interfaceBuilderMod.IBTextAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

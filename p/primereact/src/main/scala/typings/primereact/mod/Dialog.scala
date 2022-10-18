@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.dialogMod.DialogProps
+import typings.primereact.dialogDialogMod.DialogProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Dialog")
 @js.native
 open class Dialog protected ()
-  extends typings.primereact.dialogMod.Dialog {
+  extends typings.primereact.dialogDialogMod.Dialog {
   def this(props: DialogProps) = this()
   /**
     * @deprecated

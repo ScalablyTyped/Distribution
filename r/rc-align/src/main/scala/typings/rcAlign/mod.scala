@@ -1,8 +1,8 @@
 package typings.rcAlign
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcAlign.alignMod.AlignProps
-import typings.rcAlign.alignMod.RefAlign
+import typings.rcAlign.esAlignMod.AlignProps
+import typings.rcAlign.esAlignMod.RefAlign
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject

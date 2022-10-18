@@ -5,13 +5,13 @@ import typings.d3Scale.mod.ScaleQuantize_
 import typings.d3Scale.mod.ScaleSequential_
 import typings.nivoCore.mod.CompleteTheme
 import typings.nivoCore.mod.ValueFormat
+import typings.nivoLegends.distTypesTypesMod.LegendAnchor
+import typings.nivoLegends.distTypesTypesMod.LegendDirection
 import typings.nivoLegends.nivoLegendsStrings.after
 import typings.nivoLegends.nivoLegendsStrings.before
 import typings.nivoLegends.nivoLegendsStrings.end
 import typings.nivoLegends.nivoLegendsStrings.middle
 import typings.nivoLegends.nivoLegendsStrings.start
-import typings.nivoLegends.typesTypesMod.LegendAnchor
-import typings.nivoLegends.typesTypesMod.LegendDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,10 +109,6 @@ object anchorLegendAnchortransla {
     inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
     inline def setTickFormat(value: ValueFormat[Double, Unit]): Self = StObject.set(x, "tickFormat", value.asInstanceOf[js.Any])
-    
-    inline def setTickFormatFunction1(value: Double => String): Self = StObject.set(x, "tickFormat", js.Any.fromFunction1(value))
-    
-    inline def setTickFormatFunction2(value: (Double, Unit) => String): Self = StObject.set(x, "tickFormat", js.Any.fromFunction2(value))
     
     inline def setTickFormatUndefined: Self = StObject.set(x, "tickFormat", js.undefined)
     

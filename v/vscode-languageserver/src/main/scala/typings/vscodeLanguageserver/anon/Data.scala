@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserver.anon
 
-import typings.vscodeLanguageserverProtocol.protocolNotebookMod.NotebookCell
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.NotebookCell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

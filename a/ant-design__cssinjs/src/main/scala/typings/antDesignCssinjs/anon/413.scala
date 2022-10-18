@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.antDesignCssinjs.keyframesMod.default
+import typings.antDesignCssinjs.esKeyframesMod.default
 import typings.csstype.mod.Property.AnimationName
 import typings.std.Extract
 import typings.std.NonNullable

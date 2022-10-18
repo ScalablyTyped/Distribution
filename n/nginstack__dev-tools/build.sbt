@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nginstack__dev-tools"
-version := "64.0-dt-20220915Z-8b1405"
+version := "65.0-dt-20221014Z-ecc835"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

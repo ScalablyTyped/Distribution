@@ -36,18 +36,18 @@ object SpeechRecognitionResults {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: SpeechRecognitionResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SpeechRecognitionResult*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setSpeaker_labels(value: js.Array[SpeakerLabelsResult]): Self = StObject.set(x, "speaker_labels", value.asInstanceOf[js.Any])
     
     inline def setSpeaker_labelsUndefined: Self = StObject.set(x, "speaker_labels", js.undefined)
     
-    inline def setSpeaker_labelsVarargs(value: SpeakerLabelsResult*): Self = StObject.set(x, "speaker_labels", js.Array(value :_*))
+    inline def setSpeaker_labelsVarargs(value: SpeakerLabelsResult*): Self = StObject.set(x, "speaker_labels", js.Array(value*))
     
     inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

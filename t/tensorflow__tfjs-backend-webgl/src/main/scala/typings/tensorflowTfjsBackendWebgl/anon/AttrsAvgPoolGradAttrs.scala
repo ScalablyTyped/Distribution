@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsBackendWebgl.anon
 
-import typings.tensorflowTfjsBackendWebgl.backendWebglMod.MathBackendWebGL
-import typings.tensorflowTfjsCore.kernelNamesMod.AvgPoolGradAttrs
-import typings.tensorflowTfjsCore.kernelNamesMod.AvgPoolGradInputs
+import typings.tensorflowTfjsBackendWebgl.distBackendWebglMod.MathBackendWebGL
+import typings.tensorflowTfjsCore.distKernelNamesMod.AvgPoolGradAttrs
+import typings.tensorflowTfjsCore.distKernelNamesMod.AvgPoolGradInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

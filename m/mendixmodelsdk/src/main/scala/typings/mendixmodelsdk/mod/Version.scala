@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "Version")
 @js.native
 open class Version protected ()
-  extends typings.mendixmodelsdk.internalMod.Version {
+  extends typings.mendixmodelsdk.srcSdkInternalMod.Version {
   def this(major: Double, minor: Double, patch: Double) = this()
 }
 /* static members */
@@ -28,5 +28,5 @@ object Version {
     * This function is memoised to keep memory and time consumption low,
     * given that only a handful of versions exist at any time anyway.
     */
-  inline def parse(versionString: String): typings.mendixmodelsdk.versionChecksMod.Version = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(versionString.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.versionChecksMod.Version]
+  inline def parse(versionString: String): typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.Version = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(versionString.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.Version]
 }

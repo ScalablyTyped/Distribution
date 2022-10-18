@@ -4,35 +4,33 @@ import typings.officeUiFabricReact.anon.CheckboxVisibility
 import typings.officeUiFabricReact.anon.CollapseAllVisibility
 import typings.officeUiFabricReact.anon.IsSelectedOnFocus
 import typings.officeUiFabricReact.anon.RequiredPickIShimmeredDet
-import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnProps
-import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnStyleProps
-import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnStyles
-import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps
-import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderStyleProps
-import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderStyles
-import typings.officeUiFabricReact.detailsListBaseMod.IDetailsListState
-import typings.officeUiFabricReact.detailsListTypesMod.IColumn
-import typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps
-import typings.officeUiFabricReact.detailsListTypesMod.IDetailsListStyleProps
-import typings.officeUiFabricReact.detailsListTypesMod.IDetailsListStyles
-import typings.officeUiFabricReact.detailsRowBaseMod.IDetailsRowState
-import typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckProps
-import typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckStyleProps
-import typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckStyles
-import typings.officeUiFabricReact.detailsRowFieldsTypesMod.IDetailsRowFieldsProps
-import typings.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps
-import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps
-import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowStyleProps
-import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowStyles
-import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps
-import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState
-import typings.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListStyles
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsColumnDottypesMod.IDetailsColumnProps
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsColumnDottypesMod.IDetailsColumnStyleProps
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsColumnDottypesMod.IDetailsColumnStyles
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.IDetailsHeaderBaseProps
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.IDetailsHeaderStyleProps
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.IDetailsHeaderStyles
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsListDotbaseMod.IDetailsListState
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.IColumn
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.IDetailsListProps
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.IDetailsListStyleProps
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.IDetailsListStyles
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowCheckDottypesMod.IDetailsRowCheckProps
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowCheckDottypesMod.IDetailsRowCheckStyleProps
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowCheckDottypesMod.IDetailsRowCheckStyles
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowDotbaseMod.IDetailsRowState
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowDottypesMod.ICellStyleProps
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowDottypesMod.IDetailsRowBaseProps
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowDottypesMod.IDetailsRowStyleProps
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowDottypesMod.IDetailsRowStyles
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowFieldsDottypesMod.IDetailsRowFieldsProps
+import typings.officeUiFabricReact.libComponentsDetailsListShimmeredDetailsListDottypesMod.IShimmeredDetailsListStyles
+import typings.officeUiFabricReact.libUtilitiesSelectionSelectionZoneMod.ISelectionZoneProps
+import typings.officeUiFabricReact.libUtilitiesSelectionSelectionZoneMod.ISelectionZoneState
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
-import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptions
-import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptionsWithRequiredGetKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,13 +46,15 @@ object libDetailsListMod {
   object CheckboxVisibility extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.CheckboxVisibility & Double
+      ] = js.native
     
-    /* 1 */ val always: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility.always & Double = js.native
+    /* 1 */ val always: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.CheckboxVisibility.always & Double = js.native
     
-    /* 2 */ val hidden: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility.hidden & Double = js.native
+    /* 2 */ val hidden: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.CheckboxVisibility.hidden & Double = js.native
     
-    /* 0 */ val onHover: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility.onHover & Double = js.native
+    /* 0 */ val onHover: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.CheckboxVisibility.onHover & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "CollapseAllVisibility")
@@ -62,11 +62,13 @@ object libDetailsListMod {
   object CollapseAllVisibility extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.CollapseAllVisibility & Double
+      ] = js.native
     
-    /* 0 */ val hidden: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility.hidden & Double = js.native
+    /* 0 */ val hidden: typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.CollapseAllVisibility.hidden & Double = js.native
     
-    /* 1 */ val visible: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility.visible & Double = js.native
+    /* 1 */ val visible: typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.CollapseAllVisibility.visible & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "ColumnActionsMode")
@@ -74,13 +76,15 @@ object libDetailsListMod {
   object ColumnActionsMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.detailsListTypesMod.ColumnActionsMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnActionsMode & Double
+      ] = js.native
     
-    /* 1 */ val clickable: typings.officeUiFabricReact.detailsListTypesMod.ColumnActionsMode.clickable & Double = js.native
+    /* 1 */ val clickable: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnActionsMode.clickable & Double = js.native
     
-    /* 0 */ val disabled: typings.officeUiFabricReact.detailsListTypesMod.ColumnActionsMode.disabled & Double = js.native
+    /* 0 */ val disabled: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnActionsMode.disabled & Double = js.native
     
-    /* 2 */ val hasDropdown: typings.officeUiFabricReact.detailsListTypesMod.ColumnActionsMode.hasDropdown & Double = js.native
+    /* 2 */ val hasDropdown: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnActionsMode.hasDropdown & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "ColumnDragEndLocation")
@@ -88,13 +92,15 @@ object libDetailsListMod {
   object ColumnDragEndLocation extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.detailsListTypesMod.ColumnDragEndLocation & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnDragEndLocation & Double
+      ] = js.native
     
-    /* 2 */ val header: typings.officeUiFabricReact.detailsListTypesMod.ColumnDragEndLocation.header & Double = js.native
+    /* 2 */ val header: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnDragEndLocation.header & Double = js.native
     
-    /* 0 */ val outside: typings.officeUiFabricReact.detailsListTypesMod.ColumnDragEndLocation.outside & Double = js.native
+    /* 0 */ val outside: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnDragEndLocation.outside & Double = js.native
     
-    /* 1 */ val surface: typings.officeUiFabricReact.detailsListTypesMod.ColumnDragEndLocation.surface & Double = js.native
+    /* 1 */ val surface: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnDragEndLocation.surface & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "ConstrainMode")
@@ -102,11 +108,13 @@ object libDetailsListMod {
   object ConstrainMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.detailsListTypesMod.ConstrainMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ConstrainMode & Double
+      ] = js.native
     
-    /* 1 */ val horizontalConstrained: typings.officeUiFabricReact.detailsListTypesMod.ConstrainMode.horizontalConstrained & Double = js.native
+    /* 1 */ val horizontalConstrained: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ConstrainMode.horizontalConstrained & Double = js.native
     
-    /* 0 */ val unconstrained: typings.officeUiFabricReact.detailsListTypesMod.ConstrainMode.unconstrained & Double = js.native
+    /* 0 */ val unconstrained: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ConstrainMode.unconstrained & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "DEFAULT_CELL_STYLE_PROPS")
@@ -137,7 +145,7 @@ object libDetailsListMod {
   @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsColumnBase")
   @js.native
   open class DetailsColumnBase protected ()
-    extends typings.officeUiFabricReact.detailsListMod.DetailsColumnBase {
+    extends typings.officeUiFabricReact.libComponentsDetailsListMod.DetailsColumnBase {
     def this(props: IDetailsColumnProps) = this()
   }
   
@@ -148,7 +156,7 @@ object libDetailsListMod {
   @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsHeaderBase")
   @js.native
   open class DetailsHeaderBase protected ()
-    extends typings.officeUiFabricReact.detailsListMod.DetailsHeaderBase {
+    extends typings.officeUiFabricReact.libComponentsDetailsListMod.DetailsHeaderBase {
     def this(props: IDetailsHeaderBaseProps) = this()
   }
   /* static members */
@@ -171,7 +179,7 @@ object libDetailsListMod {
   @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsListBase")
   @js.native
   open class DetailsListBase protected ()
-    extends typings.officeUiFabricReact.detailsListMod.DetailsListBase {
+    extends typings.officeUiFabricReact.libComponentsDetailsListMod.DetailsListBase {
     def this(props: IDetailsListProps) = this()
   }
   /* static members */
@@ -194,11 +202,13 @@ object libDetailsListMod {
   object DetailsListLayoutMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.detailsListTypesMod.DetailsListLayoutMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.DetailsListLayoutMode & Double
+      ] = js.native
     
-    /* 0 */ val fixedColumns: typings.officeUiFabricReact.detailsListTypesMod.DetailsListLayoutMode.fixedColumns & Double = js.native
+    /* 0 */ val fixedColumns: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.DetailsListLayoutMode.fixedColumns & Double = js.native
     
-    /* 1 */ val justified: typings.officeUiFabricReact.detailsListTypesMod.DetailsListLayoutMode.justified & Double = js.native
+    /* 1 */ val justified: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.DetailsListLayoutMode.justified & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRow")
@@ -208,7 +218,7 @@ object libDetailsListMod {
   @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowBase")
   @js.native
   open class DetailsRowBase protected ()
-    extends typings.officeUiFabricReact.detailsListMod.DetailsRowBase {
+    extends typings.officeUiFabricReact.libComponentsDetailsListMod.DetailsRowBase {
     def this(props: IDetailsRowBaseProps) = this()
   }
   /* static members */
@@ -311,25 +321,27 @@ object libDetailsListMod {
   object SelectAllVisibility extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.SelectAllVisibility & Double
+      ] = js.native
     
-    /* 1 */ val hidden: typings.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility.hidden & Double = js.native
+    /* 1 */ val hidden: typings.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.SelectAllVisibility.hidden & Double = js.native
     
-    /* 0 */ val none: typings.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility.none & Double = js.native
+    /* 0 */ val none: typings.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.SelectAllVisibility.none & Double = js.native
     
-    /* 2 */ val visible: typings.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility.visible & Double = js.native
+    /* 2 */ val visible: typings.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.SelectAllVisibility.visible & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "Selection")
   @js.native
   open class Selection[TItem] protected ()
-    extends typings.officeUiFabricReact.detailsListMod.Selection[TItem] {
+    extends typings.officeUiFabricReact.libComponentsDetailsListMod.Selection[TItem] {
     /**
       * Create a new Selection. If `TItem` does not have a `key` property, you must provide an options
       * object with a `getKey` implementation. Providing options is optional otherwise.
       * (At most one `options` object is accepted.)
       */
-    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: js.Array[Any | ISelectionOptions[TItem] | ISelectionOptionsWithRequiredGetKey[TItem]]) = this()
+    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: /* import warning: importer.ImportType#apply Failed type conversion: TItem extends @uifabric/utilities.@uifabric/utilities/lib/selection/Selection.types.IObjectWithKey ? [] | [@uifabric/utilities.@uifabric/utilities/lib/selection/Selection.ISelectionOptions<TItem>] : [@uifabric/utilities.@uifabric/utilities/lib/selection/Selection.ISelectionOptionsWithRequiredGetKey<TItem>] */ js.Any) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "SelectionDirection")
@@ -337,11 +349,13 @@ object libDetailsListMod {
   object SelectionDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.uifabricUtilities.selectionTypesMod.SelectionDirection & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionDirection & Double
+      ] = js.native
     
-    /* 0 */ val horizontal: typings.uifabricUtilities.selectionTypesMod.SelectionDirection.horizontal & Double = js.native
+    /* 0 */ val horizontal: typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionDirection.horizontal & Double = js.native
     
-    /* 1 */ val vertical: typings.uifabricUtilities.selectionTypesMod.SelectionDirection.vertical & Double = js.native
+    /* 1 */ val vertical: typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionDirection.vertical & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "SelectionMode")
@@ -349,19 +363,21 @@ object libDetailsListMod {
   object SelectionMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.uifabricUtilities.selectionTypesMod.SelectionMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionMode & Double
+      ] = js.native
     
-    /* 2 */ val multiple: typings.uifabricUtilities.selectionTypesMod.SelectionMode.multiple & Double = js.native
+    /* 2 */ val multiple: typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionMode.multiple & Double = js.native
     
-    /* 0 */ val none: typings.uifabricUtilities.selectionTypesMod.SelectionMode.none & Double = js.native
+    /* 0 */ val none: typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionMode.none & Double = js.native
     
-    /* 1 */ val single: typings.uifabricUtilities.selectionTypesMod.SelectionMode.single & Double = js.native
+    /* 1 */ val single: typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionMode.single & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "SelectionZone")
   @js.native
   open class SelectionZone protected ()
-    extends typings.officeUiFabricReact.detailsListMod.SelectionZone {
+    extends typings.officeUiFabricReact.libComponentsDetailsListMod.SelectionZone {
     def this(props: ISelectionZoneProps) = this()
   }
   /* static members */

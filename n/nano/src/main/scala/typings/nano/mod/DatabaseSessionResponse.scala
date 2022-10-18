@@ -4,31 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/server/authn.html#get--_session
+/** Database _session response.
+  * @see Docs: {@link http://docs.couchdb.org/en/latest/api/server/authn.html#get--_session} */
 trait DatabaseSessionResponse extends StObject {
   
-  // Server authentication configuration
-  var info: js.Any
+  /** Server authentication configuration */
+  var info: Any
   
-  // Operation status
+  /** Operation status */
   var ok: Boolean
   
-  // User context for the current user
-  var userCtx: js.Any
+  /** User context for the current user */
+  var userCtx: Any
 }
 object DatabaseSessionResponse {
   
-  inline def apply(info: js.Any, ok: Boolean, userCtx: js.Any): DatabaseSessionResponse = {
+  inline def apply(info: Any, ok: Boolean, userCtx: Any): DatabaseSessionResponse = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], userCtx = userCtx.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseSessionResponse]
   }
   
   extension [Self <: DatabaseSessionResponse](x: Self) {
     
-    inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    inline def setUserCtx(value: js.Any): Self = StObject.set(x, "userCtx", value.asInstanceOf[js.Any])
+    inline def setUserCtx(value: Any): Self = StObject.set(x, "userCtx", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,13 @@
 package typings.tensorflowModelsFaceDetection
 
+import typings.tensorflowModelsFaceDetection.distFaceDetectorMod.FaceDetector
+import typings.tensorflowModelsFaceDetection.distMediapipeTypesMod.MediaPipeFaceDetectorMediaPipeModelConfig
+import typings.tensorflowModelsFaceDetection.distTfjsTypesMod.MediaPipeFaceDetectorTfjsModelConfig
 import typings.tensorflowModelsFaceDetection.distTypesMod.SupportedModels
-import typings.tensorflowModelsFaceDetection.faceDetectorMod.FaceDetector
 import typings.tensorflowModelsFaceDetection.tensorflowModelsFaceDetectionStrings.full
 import typings.tensorflowModelsFaceDetection.tensorflowModelsFaceDetectionStrings.short
-import typings.tensorflowModelsFaceDetection.tfjsTypesMod.MediaPipeFaceDetectorTfjsModelConfig
-import typings.tensorflowModelsFaceDetection.typesMod.MediaPipeFaceDetectorMediaPipeModelConfig
 import typings.tensorflowTfjsConverter.mod.GraphModel
-import typings.tensorflowTfjsCore.typesMod.IOHandler
+import typings.tensorflowTfjsCore.distIoTypesMod.IOHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,14 +21,14 @@ object mod {
   @JSImport("@tensorflow-models/face-detection", "MediaPipeFaceDetectorMediaPipe")
   @js.native
   open class MediaPipeFaceDetectorMediaPipe protected ()
-    extends typings.tensorflowModelsFaceDetection.detectorMod.MediaPipeFaceDetectorMediaPipe {
+    extends typings.tensorflowModelsFaceDetection.distMediapipeDetectorMod.MediaPipeFaceDetectorMediaPipe {
     def this(config: MediaPipeFaceDetectorMediaPipeModelConfig) = this()
   }
   
   @JSImport("@tensorflow-models/face-detection", "MediaPipeFaceDetectorTfjs")
   @js.native
   open class MediaPipeFaceDetectorTfjs protected ()
-    extends typings.tensorflowModelsFaceDetection.tfjsDetectorMod.MediaPipeFaceDetectorTfjs {
+    extends typings.tensorflowModelsFaceDetection.distTfjsDetectorMod.MediaPipeFaceDetectorTfjs {
     def this(detectorModelType: short | full, detectorModel: GraphModel[String | IOHandler], maxFaces: Double) = this()
   }
   
@@ -43,6 +43,6 @@ object mod {
   }
   
   inline def createDetector(model: SupportedModels): js.Promise[FaceDetector] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDetector")(model.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FaceDetector]]
-  inline def createDetector(model: SupportedModels, modelConfig: MediaPipeFaceDetectorTfjsModelConfig): js.Promise[FaceDetector] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDetector")(model.asInstanceOf[js.Any], modelConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FaceDetector]]
   inline def createDetector(model: SupportedModels, modelConfig: MediaPipeFaceDetectorMediaPipeModelConfig): js.Promise[FaceDetector] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDetector")(model.asInstanceOf[js.Any], modelConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FaceDetector]]
+  inline def createDetector(model: SupportedModels, modelConfig: MediaPipeFaceDetectorTfjsModelConfig): js.Promise[FaceDetector] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDetector")(model.asInstanceOf[js.Any], modelConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FaceDetector]]
 }

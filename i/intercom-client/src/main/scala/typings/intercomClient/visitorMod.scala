@@ -120,15 +120,15 @@ object visitorMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.intercomClient.anon.Id
+    - typings.intercomClient.anon.IdString
     - typings.intercomClient.anon.Userid
   */
   trait VisitorIdentifier extends StObject
   object VisitorIdentifier {
     
-    inline def Id(id: String): typings.intercomClient.anon.Id = {
+    inline def IdString(id: String): typings.intercomClient.anon.IdString = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.intercomClient.anon.Id]
+      __obj.asInstanceOf[typings.intercomClient.anon.IdString]
     }
     
     inline def Userid(user_id: String): typings.intercomClient.anon.Userid = {

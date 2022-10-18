@@ -1,6 +1,7 @@
 package typings.ronilaukkarinenGulpStylelint
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.ReadWriteStream
 import typings.ronilaukkarinenGulpStylelint.ronilaukkarinenGulpStylelintBooleans.`true`
 import typings.std.Record
 import typings.stylelint.mod.Config
@@ -21,8 +22,8 @@ object mod extends Shortcut {
   @js.native
   trait GulpStylelint extends StObject {
     
-    def apply(): Any = js.native
-    def apply(options: Options): Any = js.native
+    def apply(): ReadWriteStream = js.native
+    def apply(options: Options): ReadWriteStream = js.native
     
     var formatters: Record[String, Formatter] = js.native
   }

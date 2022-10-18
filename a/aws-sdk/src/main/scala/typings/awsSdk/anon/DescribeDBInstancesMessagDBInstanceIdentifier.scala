@@ -1,10 +1,10 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.neptuneMod.Filter
-import typings.awsSdk.neptuneMod.FilterList
-import typings.awsSdk.neptuneMod.IntegerOptional
-import typings.awsSdk.neptuneMod.String
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsNeptuneMod.Filter
+import typings.awsSdk.clientsNeptuneMod.FilterList
+import typings.awsSdk.clientsNeptuneMod.IntegerOptional
+import typings.awsSdk.clientsNeptuneMod.String
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

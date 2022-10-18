@@ -1,8 +1,8 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.GPURenderPipeline
+import typings.babylonjs.enginesWebGPUWebgpuCacheRenderPipelineTreeMod.NodeState
 import typings.babylonjs.typesMod.Nullable
-import typings.babylonjs.webgpuCacheRenderPipelineTreeMod.NodeState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

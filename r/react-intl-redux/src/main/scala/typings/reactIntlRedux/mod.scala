@@ -1,6 +1,5 @@
 package typings.reactIntlRedux
 
-import typings.reactRedux.mod.ProviderProps
 import typings.redux.mod.Action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,20 +13,13 @@ object mod {
   
   @JSImport("react-intl-redux", "IntlProvider")
   @js.native
-  class IntlProvider ()
+  open class IntlProvider ()
     extends typings.reactIntl.mod.IntlProvider
   
-  @JSImport("react-intl-redux", "Provider")
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReduxProvider<A> * / any */ @JSImport("react-intl-redux", "Provider")
   @js.native
-  class Provider[A /* <: Action[js.Any] */] protected ()
-    extends typings.reactRedux.mod.Provider[A] {
-    def this(props: ProviderProps[A]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: ProviderProps[A], context: js.Any) = this()
-  }
+  open class Provider[A /* <: Action[Any] */] () extends StObject
   
   inline def intlReducer(state: Unit, action: IntlAction): IntlState = (^.asInstanceOf[js.Dynamic].applyDynamic("intlReducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IntlState]
   inline def intlReducer(state: IntlState, action: IntlAction): IntlState = (^.asInstanceOf[js.Dynamic].applyDynamic("intlReducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IntlState]
@@ -36,13 +28,13 @@ object mod {
   
   trait IntlAction
     extends StObject
-       with Action[js.Any] {
+       with Action[Any] {
     
     var payload: js.UndefOr[IntlState] = js.undefined
   }
   object IntlAction {
     
-    inline def apply(`type`: js.Any): IntlAction = {
+    inline def apply(`type`: Any): IntlAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntlAction]
@@ -58,28 +50,28 @@ object mod {
   
   trait IntlState extends StObject {
     
-    var formats: js.UndefOr[js.Any] = js.undefined
+    var formats: js.UndefOr[Any] = js.undefined
     
     var locale: String
     
-    var messages: js.Any
+    var messages: Any
   }
   object IntlState {
     
-    inline def apply(locale: String, messages: js.Any): IntlState = {
+    inline def apply(locale: String, messages: Any): IntlState = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntlState]
     }
     
     extension [Self <: IntlState](x: Self) {
       
-      inline def setFormats(value: js.Any): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: Any): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
       inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      inline def setMessages(value: js.Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     }
   }
 }

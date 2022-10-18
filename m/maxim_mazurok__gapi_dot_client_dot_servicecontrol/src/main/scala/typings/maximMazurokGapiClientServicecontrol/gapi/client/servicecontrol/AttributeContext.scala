@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +15,7 @@ trait AttributeContext extends StObject {
   /** Supports extensions for advanced use cases, such as logs and metrics. */
   var extensions: js.UndefOr[
     js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ]
   ] = js.undefined
   
@@ -59,18 +56,14 @@ object AttributeContext {
     
     inline def setExtensions(
       value: js.Array[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
         ]
     ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     inline def setExtensionsVarargs(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext & TopLevel[Any])*
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any)*
     ): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setOrigin(value: Peer): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])

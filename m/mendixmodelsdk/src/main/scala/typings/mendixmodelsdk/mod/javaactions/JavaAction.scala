@@ -1,8 +1,8 @@
 package typings.mendixmodelsdk.mod.javaactions
 
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenJavaactionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "javaactions.JavaAction")
 @js.native
 open class JavaAction protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.javaactions.JavaAction {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.javaactions.JavaAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -33,7 +33,7 @@ object JavaAction {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  inline def createIn(container: IFolderBase): typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction]
+  inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.JavaAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.JavaAction]
   
   /* static member */
   @JSImport("mendixmodelsdk", "javaactions.JavaAction.structureTypeName")

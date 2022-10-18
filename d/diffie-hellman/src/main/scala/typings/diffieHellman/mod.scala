@@ -1,5 +1,6 @@
 package typings.diffieHellman
 
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.cryptoMod.BinaryToTextEncoding
 import typings.node.cryptoMod.DiffieHellmanGroup
 import typings.node.cryptoMod.DiffieHellman_
@@ -73,18 +74,18 @@ object mod {
     generatorEncoding: BinaryToTextEncoding
   ): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], primeEncoding.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], generatorEncoding.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
   inline def createDiffieHellman(prime: String, primeEncoding: BinaryToTextEncoding, generator: js.typedarray.ArrayBuffer): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], primeEncoding.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
-  inline def createDiffieHellman(prime: String, primeEncoding: BinaryToTextEncoding, generator: js.typedarray.ArrayBufferView): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], primeEncoding.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
   inline def createDiffieHellman(prime: String, primeEncoding: BinaryToTextEncoding, generator: Double): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], primeEncoding.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
+  inline def createDiffieHellman(prime: String, primeEncoding: BinaryToTextEncoding, generator: ArrayBufferView): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], primeEncoding.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
   inline def createDiffieHellman(prime: js.typedarray.ArrayBuffer): DiffieHellman_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any]).asInstanceOf[DiffieHellman_]
-  inline def createDiffieHellman(prime: js.typedarray.ArrayBufferView): DiffieHellman_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any]).asInstanceOf[DiffieHellman_]
-  inline def createDiffieHellman(prime: js.typedarray.ArrayBufferView, generator: String, generatorEncoding: BinaryToTextEncoding): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], generatorEncoding.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
-  inline def createDiffieHellman(prime: js.typedarray.ArrayBufferView, generator: js.typedarray.ArrayBuffer): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
-  inline def createDiffieHellman(prime: js.typedarray.ArrayBufferView, generator: js.typedarray.ArrayBufferView): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
-  inline def createDiffieHellman(prime: js.typedarray.ArrayBufferView, generator: Double): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
   inline def createDiffieHellman(prime: js.typedarray.ArrayBuffer, generator: String, generatorEncoding: BinaryToTextEncoding): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], generatorEncoding.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
   inline def createDiffieHellman(prime: js.typedarray.ArrayBuffer, generator: js.typedarray.ArrayBuffer): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
-  inline def createDiffieHellman(prime: js.typedarray.ArrayBuffer, generator: js.typedarray.ArrayBufferView): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
   inline def createDiffieHellman(prime: js.typedarray.ArrayBuffer, generator: Double): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
+  inline def createDiffieHellman(prime: js.typedarray.ArrayBuffer, generator: ArrayBufferView): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
+  inline def createDiffieHellman(prime: ArrayBufferView): DiffieHellman_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any]).asInstanceOf[DiffieHellman_]
+  inline def createDiffieHellman(prime: ArrayBufferView, generator: String, generatorEncoding: BinaryToTextEncoding): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], generatorEncoding.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
+  inline def createDiffieHellman(prime: ArrayBufferView, generator: js.typedarray.ArrayBuffer): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
+  inline def createDiffieHellman(prime: ArrayBufferView, generator: Double): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
+  inline def createDiffieHellman(prime: ArrayBufferView, generator: ArrayBufferView): DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman_]
   
   /**
     * Creates a predefined `DiffieHellmanGroup` key exchange object. The

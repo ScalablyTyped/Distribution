@@ -1,7 +1,6 @@
 package typings.director
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.director.anon.Allow
 import typings.director.anon.Method
 import typings.director.anon.Only
@@ -27,9 +26,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("director", "AbstractRouterBase")
+  /* note: abstract class */ @JSImport("director", "AbstractRouterBase")
   @js.native
-  abstract class AbstractRouterBase[ThisType] () extends StObject {
+  open class AbstractRouterBase[ThisType] () extends StObject {
     def this(routes: RoutingTable[ThisType]) = this()
     
     /**
@@ -887,9 +886,15 @@ object mod {
       * Helper interface that checks if any dynamically generated helper methods
       * were accidentally omitted from the definition of `director.http.Router`.
       */
-    type HttpRouterGeneratedMethodsCheck = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in director.director.http.HttpRouterGeneratedMethodNames ]: {None (this : director.director.http.Router, path : string, options : director.director.http.HttpRouteHandlerOptions, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : std.RegExp, options : director.director.http.HttpRouteHandlerOptions, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : string, options : undefined, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : std.RegExp, options : undefined, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : string, options : null, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : std.RegExp, options : null, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : string, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : std.RegExp, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void}}
-      */ typings.director.directorStrings.HttpRouterGeneratedMethodsCheck & TopLevel[Any]
+    /** NOTE: Mapped type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      {[ key in director.director.http.HttpRouterGeneratedMethodNames ]: {None (this : director.director.http.Router, path : string, options : director.director.http.HttpRouteHandlerOptions, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : std.RegExp, options : director.director.http.HttpRouteHandlerOptions, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : string, options : undefined, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : std.RegExp, options : undefined, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : string, options : null, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : std.RegExp, options : null, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : string, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, path : std.RegExp, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void, None (this : director.director.http.Router, route : director.director.RouteEntry<director.director.http.HttpRouterContext>): void}}
+      }}}
+      */
+    @js.native
+    trait HttpRouterGeneratedMethodsCheck extends StObject
     
     trait HttpRoutingOptions
       extends StObject

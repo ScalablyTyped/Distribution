@@ -33,8 +33,7 @@ trait ChangedEventDetail extends StObject {
     Unlike `valueAfter`, `valueAsJsonAfter` can represent all cell values, such as formatted number, web image, and entity data types.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var valueAsJsonAfter: CellValue
   
@@ -43,8 +42,7 @@ trait ChangedEventDetail extends StObject {
     Unlike `valueBefore`, `valueAsJsonBefore` can represent all cell values, such as formatted number, web image, and entity data types.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var valueAsJsonBefore: CellValue
   

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,9 +22,7 @@ trait SoftwareConfig extends StObject {
     * pig.properties spark: spark-defaults.conf yarn: yarn-site.xmlFor more information, see Cluster properties (https://cloud.google.com/dataproc/docs/concepts/cluster-properties).
     */
   var properties: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SoftwareConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object SoftwareConfig {
@@ -48,9 +45,7 @@ object SoftwareConfig {
     inline def setOptionalComponentsVarargs(value: String*): Self = StObject.set(x, "optionalComponents", js.Array(value*))
     
     inline def setProperties(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SoftwareConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)

@@ -1,6 +1,6 @@
 package typings.typedoc.anon
 
-import typings.typedoc.schemaMod.CommentDisplayPart
+import typings.typedoc.distLibSerializationSchemaMod.CommentDisplayPart
 import typings.typedoc.typedocStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Kind
   extends StObject
      with CommentDisplayPart
-     with typings.typedoc.commentMod.CommentDisplayPart {
+     with typings.typedoc.distLibModelsCommentsCommentMod.CommentDisplayPart {
   
   var kind: text
   

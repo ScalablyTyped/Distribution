@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  type AutoOptions = typings.lowlight.coreMod.AutoOptions
+  type AutoOptions = typings.lowlight.libCoreMod.AutoOptions
   
-  type Options = typings.lowlight.coreMod.Options
+  type Options = typings.lowlight.libCoreMod.Options
   
-  type Root = typings.lowlight.coreMod.Root
+  type Root = typings.lowlight.libCoreMod.Root
 }

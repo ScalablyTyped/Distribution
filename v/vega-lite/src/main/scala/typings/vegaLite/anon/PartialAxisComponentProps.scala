@@ -1,38 +1,34 @@
 package typings.vegaLite.anon
 
-import typings.std.Exclude
-import typings.vegaLite.axisMod.ConditionalAxisColor
-import typings.vegaLite.axisMod.ConditionalAxisLabelAlign
-import typings.vegaLite.axisMod.ConditionalAxisLabelBaseline
-import typings.vegaLite.axisMod.ConditionalAxisLabelFontStyle
-import typings.vegaLite.axisMod.ConditionalAxisLabelFontWeight
-import typings.vegaLite.axisMod.ConditionalAxisNumber
-import typings.vegaLite.axisMod.ConditionalAxisNumberArray
-import typings.vegaLite.axisMod.ConditionalAxisString
-import typings.vegaLite.channeldefMod.FieldDefBase
+import typings.vegaLite.buildSrcAxisMod.ConditionalAxisColor
+import typings.vegaLite.buildSrcAxisMod.ConditionalAxisLabelAlign
+import typings.vegaLite.buildSrcAxisMod.ConditionalAxisLabelBaseline
+import typings.vegaLite.buildSrcAxisMod.ConditionalAxisLabelFontStyle
+import typings.vegaLite.buildSrcAxisMod.ConditionalAxisLabelFontWeight
+import typings.vegaLite.buildSrcAxisMod.ConditionalAxisNumber
+import typings.vegaLite.buildSrcAxisMod.ConditionalAxisNumberArray
+import typings.vegaLite.buildSrcAxisMod.ConditionalAxisString
+import typings.vegaLite.buildSrcChanneldefMod.FieldDefBase
 import typings.vegaLite.vegaLiteStrings.center
 import typings.vegaLite.vegaLiteStrings.extent
-import typings.vegaTypings.axisMod.AxisEncode
-import typings.vegaTypings.axisMod.AxisOrient
-import typings.vegaTypings.axisMod.LabelOverlap
-import typings.vegaTypings.axisMod.TickCount
-import typings.vegaTypings.axisMod.TimeFormatSpecifier
-import typings.vegaTypings.encodeMod.ColorValueRef
-import typings.vegaTypings.encodeMod.NumericValueRef
-import typings.vegaTypings.encodeMod.ScaledValueRef
-import typings.vegaTypings.encodeMod.Text
-import typings.vegaTypings.signalMod.SignalRef
-import typings.vegaTypings.valuesMod.AlignValue
-import typings.vegaTypings.valuesMod.AnchorValue
-import typings.vegaTypings.valuesMod.BooleanValue
-import typings.vegaTypings.valuesMod.ColorValue
-import typings.vegaTypings.valuesMod.DashArrayValue
-import typings.vegaTypings.valuesMod.FontStyleValue
-import typings.vegaTypings.valuesMod.FontWeightValue
-import typings.vegaTypings.valuesMod.NumberValue
-import typings.vegaTypings.valuesMod.StringValue
-import typings.vegaTypings.valuesMod.StrokeCapValue
-import typings.vegaTypings.valuesMod.TextBaselineValue
+import typings.vegaTypings.typesSpecAxisMod.AxisEncode
+import typings.vegaTypings.typesSpecAxisMod.AxisOrient
+import typings.vegaTypings.typesSpecAxisMod.LabelOverlap
+import typings.vegaTypings.typesSpecAxisMod.TickCount
+import typings.vegaTypings.typesSpecAxisMod.TimeFormatSpecifier
+import typings.vegaTypings.typesSpecEncodeMod.Text
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
+import typings.vegaTypings.typesSpecValuesMod.AlignValue
+import typings.vegaTypings.typesSpecValuesMod.AnchorValue
+import typings.vegaTypings.typesSpecValuesMod.BooleanValue
+import typings.vegaTypings.typesSpecValuesMod.ColorValue
+import typings.vegaTypings.typesSpecValuesMod.DashArrayValue
+import typings.vegaTypings.typesSpecValuesMod.FontStyleValue
+import typings.vegaTypings.typesSpecValuesMod.FontWeightValue
+import typings.vegaTypings.typesSpecValuesMod.NumberValue
+import typings.vegaTypings.typesSpecValuesMod.StringValue
+import typings.vegaTypings.typesSpecValuesMod.StrokeCapValue
+import typings.vegaTypings.typesSpecValuesMod.TextBaselineValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,51 +62,48 @@ trait PartialAxisComponentProps extends StObject {
   
   var format: js.UndefOr[String | TimeFormatSpecifier | SignalRef] = js.undefined
   
-  var formatType: js.UndefOr[typings.vegaTypings.axisMod.FormatType | SignalRef] = js.undefined
+  var formatType: js.UndefOr[typings.vegaTypings.typesSpecAxisMod.FormatType | SignalRef] = js.undefined
   
   var grid: js.UndefOr[Boolean] = js.undefined
   
   var gridCap: js.UndefOr[StrokeCapValue] = js.undefined
   
   var gridColor: js.UndefOr[
-    (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.ColorValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisColor[SignalRef]
   ] = js.undefined
   
   var gridDash: js.UndefOr[
-    (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.DashArrayValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.DashArrayValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.DashArrayValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumberArray[SignalRef]
   ] = js.undefined
   
   var gridDashOffset: js.UndefOr[
-    (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
   ] = js.undefined
   
   var gridOpacity: js.UndefOr[
-    (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
   ] = js.undefined
   
   var gridScale: js.UndefOr[String] = js.undefined
   
   var gridWidth: js.UndefOr[
-    (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
   ] = js.undefined
   
   var labelAlign: js.UndefOr[
-    (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelAlign[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.AlignValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.AlignValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.AlignValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisLabelAlign[SignalRef]
   ] = js.undefined
   
   var labelAngle: js.UndefOr[NumberValue] = js.undefined
   
   var labelBaseline: js.UndefOr[
-    (Exclude[
-      js.UndefOr[TextBaselineValue], 
-      ScaledValueRef[Any] | NumericValueRef | ColorValueRef
-    ]) | SignalRef | ConditionalAxisLabelBaseline[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.TextBaselineValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.TextBaselineValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.TextBaselineValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisLabelBaseline[SignalRef]
   ] = js.undefined
   
   var labelBound: js.UndefOr[Double | Boolean | SignalRef] = js.undefined
   
   var labelColor: js.UndefOr[
-    (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.ColorValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisColor[SignalRef]
   ] = js.undefined
   
   var labelExpr: js.UndefOr[String] = js.undefined
@@ -120,19 +113,19 @@ trait PartialAxisComponentProps extends StObject {
   var labelFlushOffset: js.UndefOr[Double | SignalRef] = js.undefined
   
   var labelFont: js.UndefOr[
-    (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisString[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.StringValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.StringValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.StringValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisString[SignalRef]
   ] = js.undefined
   
   var labelFontSize: js.UndefOr[
-    (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
   ] = js.undefined
   
   var labelFontStyle: js.UndefOr[
-    (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelFontStyle[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.FontStyleValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.FontStyleValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.FontStyleValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisLabelFontStyle[SignalRef]
   ] = js.undefined
   
   var labelFontWeight: js.UndefOr[
-    (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelFontWeight[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.FontWeightValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.FontWeightValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.FontWeightValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisLabelFontWeight[SignalRef]
   ] = js.undefined
   
   var labelLimit: js.UndefOr[NumberValue] = js.undefined
@@ -140,17 +133,17 @@ trait PartialAxisComponentProps extends StObject {
   var labelLineHeight: js.UndefOr[NumberValue] = js.undefined
   
   var labelOffset: js.UndefOr[
-    (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
   ] = js.undefined
   
   var labelOpacity: js.UndefOr[
-    (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
   ] = js.undefined
   
   var labelOverlap: js.UndefOr[LabelOverlap | SignalRef] = js.undefined
   
   var labelPadding: js.UndefOr[
-    (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
   ] = js.undefined
   
   var labelSeparation: js.UndefOr[Double | SignalRef] = js.undefined
@@ -174,17 +167,17 @@ trait PartialAxisComponentProps extends StObject {
   var tickCap: js.UndefOr[StrokeCapValue] = js.undefined
   
   var tickColor: js.UndefOr[
-    (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.ColorValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisColor[SignalRef]
   ] = js.undefined
   
   var tickCount: js.UndefOr[TickCount] = js.undefined
   
   var tickDash: js.UndefOr[
-    (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.DashArrayValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.DashArrayValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.DashArrayValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumberArray[SignalRef]
   ] = js.undefined
   
   var tickDashOffset: js.UndefOr[
-    (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
   ] = js.undefined
   
   var tickExtra: js.UndefOr[BooleanValue] = js.undefined
@@ -194,22 +187,24 @@ trait PartialAxisComponentProps extends StObject {
   var tickOffset: js.UndefOr[NumberValue] = js.undefined
   
   var tickOpacity: js.UndefOr[
-    (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
   ] = js.undefined
   
   var tickRound: js.UndefOr[BooleanValue] = js.undefined
   
   var tickSize: js.UndefOr[
-    (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
   ] = js.undefined
   
   var tickWidth: js.UndefOr[
-    (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+    (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
   ] = js.undefined
   
   var ticks: js.UndefOr[BooleanValue] = js.undefined
   
-  var title: js.UndefOr[Text | (js.Array[FieldDefBase[String, typings.vegaLite.binMod.Bin]]) | SignalRef] = js.undefined
+  var title: js.UndefOr[
+    Text | (js.Array[FieldDefBase[String, typings.vegaLite.buildSrcBinMod.Bin]]) | SignalRef
+  ] = js.undefined
   
   var titleAlign: js.UndefOr[AlignValue] = js.undefined
   
@@ -310,7 +305,7 @@ object PartialAxisComponentProps {
     
     inline def setFormat(value: String | TimeFormatSpecifier | SignalRef): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setFormatType(value: typings.vegaTypings.axisMod.FormatType | SignalRef): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
+    inline def setFormatType(value: typings.vegaTypings.typesSpecAxisMod.FormatType | SignalRef): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
     inline def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
     
@@ -323,29 +318,25 @@ object PartialAxisComponentProps {
     inline def setGridCapUndefined: Self = StObject.set(x, "gridCap", js.undefined)
     
     inline def setGridColor(
-      value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.ColorValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisColor[SignalRef]
     ): Self = StObject.set(x, "gridColor", value.asInstanceOf[js.Any])
-    
-    inline def setGridColorNull: Self = StObject.set(x, "gridColor", null)
     
     inline def setGridColorUndefined: Self = StObject.set(x, "gridColor", js.undefined)
     
     inline def setGridDash(
-      value: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.DashArrayValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.DashArrayValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.DashArrayValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumberArray[SignalRef]
     ): Self = StObject.set(x, "gridDash", value.asInstanceOf[js.Any])
     
     inline def setGridDashOffset(
-      value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
     ): Self = StObject.set(x, "gridDashOffset", value.asInstanceOf[js.Any])
     
     inline def setGridDashOffsetUndefined: Self = StObject.set(x, "gridDashOffset", js.undefined)
     
     inline def setGridDashUndefined: Self = StObject.set(x, "gridDash", js.undefined)
     
-    inline def setGridDashVarargs(value: Double*): Self = StObject.set(x, "gridDash", js.Array(value*))
-    
     inline def setGridOpacity(
-      value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
     ): Self = StObject.set(x, "gridOpacity", value.asInstanceOf[js.Any])
     
     inline def setGridOpacityUndefined: Self = StObject.set(x, "gridOpacity", js.undefined)
@@ -357,13 +348,13 @@ object PartialAxisComponentProps {
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     inline def setGridWidth(
-      value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
     ): Self = StObject.set(x, "gridWidth", value.asInstanceOf[js.Any])
     
     inline def setGridWidthUndefined: Self = StObject.set(x, "gridWidth", js.undefined)
     
     inline def setLabelAlign(
-      value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelAlign[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.AlignValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.AlignValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.AlignValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisLabelAlign[SignalRef]
     ): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
     
     inline def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
@@ -373,10 +364,7 @@ object PartialAxisComponentProps {
     inline def setLabelAngleUndefined: Self = StObject.set(x, "labelAngle", js.undefined)
     
     inline def setLabelBaseline(
-      value: (Exclude[
-          js.UndefOr[TextBaselineValue], 
-          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
-        ]) | SignalRef | ConditionalAxisLabelBaseline[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.TextBaselineValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.TextBaselineValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.TextBaselineValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisLabelBaseline[SignalRef]
     ): Self = StObject.set(x, "labelBaseline", value.asInstanceOf[js.Any])
     
     inline def setLabelBaselineUndefined: Self = StObject.set(x, "labelBaseline", js.undefined)
@@ -386,10 +374,8 @@ object PartialAxisComponentProps {
     inline def setLabelBoundUndefined: Self = StObject.set(x, "labelBound", js.undefined)
     
     inline def setLabelColor(
-      value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.ColorValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisColor[SignalRef]
     ): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
-    
-    inline def setLabelColorNull: Self = StObject.set(x, "labelColor", null)
     
     inline def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
@@ -406,17 +392,17 @@ object PartialAxisComponentProps {
     inline def setLabelFlushUndefined: Self = StObject.set(x, "labelFlush", js.undefined)
     
     inline def setLabelFont(
-      value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisString[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.StringValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.StringValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.StringValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisString[SignalRef]
     ): Self = StObject.set(x, "labelFont", value.asInstanceOf[js.Any])
     
     inline def setLabelFontSize(
-      value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
     ): Self = StObject.set(x, "labelFontSize", value.asInstanceOf[js.Any])
     
     inline def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
     
     inline def setLabelFontStyle(
-      value: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelFontStyle[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.FontStyleValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.FontStyleValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.FontStyleValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisLabelFontStyle[SignalRef]
     ): Self = StObject.set(x, "labelFontStyle", value.asInstanceOf[js.Any])
     
     inline def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
@@ -424,7 +410,7 @@ object PartialAxisComponentProps {
     inline def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
     
     inline def setLabelFontWeight(
-      value: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelFontWeight[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.FontWeightValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.FontWeightValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.FontWeightValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisLabelFontWeight[SignalRef]
     ): Self = StObject.set(x, "labelFontWeight", value.asInstanceOf[js.Any])
     
     inline def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
@@ -438,13 +424,13 @@ object PartialAxisComponentProps {
     inline def setLabelLineHeightUndefined: Self = StObject.set(x, "labelLineHeight", js.undefined)
     
     inline def setLabelOffset(
-      value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
     ): Self = StObject.set(x, "labelOffset", value.asInstanceOf[js.Any])
     
     inline def setLabelOffsetUndefined: Self = StObject.set(x, "labelOffset", js.undefined)
     
     inline def setLabelOpacity(
-      value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
     ): Self = StObject.set(x, "labelOpacity", value.asInstanceOf[js.Any])
     
     inline def setLabelOpacityUndefined: Self = StObject.set(x, "labelOpacity", js.undefined)
@@ -454,7 +440,7 @@ object PartialAxisComponentProps {
     inline def setLabelOverlapUndefined: Self = StObject.set(x, "labelOverlap", js.undefined)
     
     inline def setLabelPadding(
-      value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
     ): Self = StObject.set(x, "labelPadding", value.asInstanceOf[js.Any])
     
     inline def setLabelPaddingUndefined: Self = StObject.set(x, "labelPadding", js.undefined)
@@ -500,10 +486,8 @@ object PartialAxisComponentProps {
     inline def setTickCapUndefined: Self = StObject.set(x, "tickCap", js.undefined)
     
     inline def setTickColor(
-      value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.ColorValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.ColorValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisColor[SignalRef]
     ): Self = StObject.set(x, "tickColor", value.asInstanceOf[js.Any])
-    
-    inline def setTickColorNull: Self = StObject.set(x, "tickColor", null)
     
     inline def setTickColorUndefined: Self = StObject.set(x, "tickColor", js.undefined)
     
@@ -512,18 +496,16 @@ object PartialAxisComponentProps {
     inline def setTickCountUndefined: Self = StObject.set(x, "tickCount", js.undefined)
     
     inline def setTickDash(
-      value: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.DashArrayValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.DashArrayValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.DashArrayValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumberArray[SignalRef]
     ): Self = StObject.set(x, "tickDash", value.asInstanceOf[js.Any])
     
     inline def setTickDashOffset(
-      value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
     ): Self = StObject.set(x, "tickDashOffset", value.asInstanceOf[js.Any])
     
     inline def setTickDashOffsetUndefined: Self = StObject.set(x, "tickDashOffset", js.undefined)
     
     inline def setTickDashUndefined: Self = StObject.set(x, "tickDash", js.undefined)
-    
-    inline def setTickDashVarargs(value: Double*): Self = StObject.set(x, "tickDash", js.Array(value*))
     
     inline def setTickExtra(value: BooleanValue): Self = StObject.set(x, "tickExtra", value.asInstanceOf[js.Any])
     
@@ -538,7 +520,7 @@ object PartialAxisComponentProps {
     inline def setTickOffsetUndefined: Self = StObject.set(x, "tickOffset", js.undefined)
     
     inline def setTickOpacity(
-      value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
     ): Self = StObject.set(x, "tickOpacity", value.asInstanceOf[js.Any])
     
     inline def setTickOpacityUndefined: Self = StObject.set(x, "tickOpacity", js.undefined)
@@ -548,13 +530,13 @@ object PartialAxisComponentProps {
     inline def setTickRoundUndefined: Self = StObject.set(x, "tickRound", js.undefined)
     
     inline def setTickSize(
-      value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
     ): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
     
     inline def setTickSizeUndefined: Self = StObject.set(x, "tickSize", js.undefined)
     
     inline def setTickWidth(
-      value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
     ): Self = StObject.set(x, "tickWidth", value.asInstanceOf[js.Any])
     
     inline def setTickWidthUndefined: Self = StObject.set(x, "tickWidth", js.undefined)
@@ -563,7 +545,7 @@ object PartialAxisComponentProps {
     
     inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
-    inline def setTitle(value: Text | (js.Array[FieldDefBase[String, typings.vegaLite.binMod.Bin]]) | SignalRef): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Text | (js.Array[FieldDefBase[String, typings.vegaLite.buildSrcBinMod.Bin]]) | SignalRef): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleAlign(value: AlignValue): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
     
@@ -623,7 +605,7 @@ object PartialAxisComponentProps {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTitleVarargs(value: ((FieldDefBase[String, typings.vegaLite.binMod.Bin]) | String)*): Self = StObject.set(x, "title", js.Array(value*))
+    inline def setTitleVarargs(value: ((FieldDefBase[String, typings.vegaLite.buildSrcBinMod.Bin]) | String)*): Self = StObject.set(x, "title", js.Array(value*))
     
     inline def setTitleX(value: NumberValue): Self = StObject.set(x, "titleX", value.asInstanceOf[js.Any])
     

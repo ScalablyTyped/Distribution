@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,9 +93,7 @@ trait JobConfigurationQuery extends StObject {
     * data source can then be queried as if it were a standard BigQuery table.
     */
   var tableDefinitions: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.bigquery.gapi.client.bigquery.ExternalDataConfiguration}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.JobConfigurationQuery & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.bigquery.gapi.client.bigquery.ExternalDataConfiguration} */ js.Any
   ] = js.undefined
   
   /** Time-based partitioning specification for the destination table. Only one of timePartitioning and rangePartitioning should be specified. */
@@ -213,9 +210,7 @@ object JobConfigurationQuery {
     inline def setSchemaUpdateOptionsVarargs(value: String*): Self = StObject.set(x, "schemaUpdateOptions", js.Array(value*))
     
     inline def setTableDefinitions(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.bigquery.gapi.client.bigquery.ExternalDataConfiguration}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.JobConfigurationQuery & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.bigquery.gapi.client.bigquery.ExternalDataConfiguration} */ js.Any
     ): Self = StObject.set(x, "tableDefinitions", value.asInstanceOf[js.Any])
     
     inline def setTableDefinitionsUndefined: Self = StObject.set(x, "tableDefinitions", js.undefined)

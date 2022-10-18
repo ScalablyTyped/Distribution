@@ -231,7 +231,7 @@ trait TouchableWithoutFeedbackPAccessibilityElementsHidden extends StObject {
     */
   var testID: js.UndefOr[String] = js.undefined
   
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * If true, doesn't play a system sound on touch.
@@ -246,7 +246,7 @@ object TouchableWithoutFeedbackPAccessibilityElementsHidden {
   
   inline def apply(
     onPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & (js.UndefOr[js.Function0[Unit | Null]]),
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   ): TouchableWithoutFeedbackPAccessibilityElementsHidden = {
     val __obj = js.Dynamic.literal(onPress = onPress.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchableWithoutFeedbackPAccessibilityElementsHidden]
@@ -408,7 +408,7 @@ object TouchableWithoutFeedbackPAccessibilityElementsHidden {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
     

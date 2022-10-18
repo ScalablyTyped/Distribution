@@ -1,7 +1,8 @@
 package typings.mrmlncReaddirEnhanced
 
+import typings.node.NodeJS.ErrnoException
+import typings.node.NodeJS.ReadableStream
 import typings.node.fsMod.Stats
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,8 +40,8 @@ object mod {
   inline def readdirAsyncStat(root: String, options: Options): js.Promise[js.Array[Entry]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirAsyncStat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Entry]]]
   inline def readdirAsyncStat(root: String, options: Options, callback: CallbackEntry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirAsyncStat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def readdirStreamStat(root: String): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirStreamStat")(root.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
-  inline def readdirStreamStat(root: String, options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirStreamStat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def readdirStreamStat(root: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirStreamStat")(root.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def readdirStreamStat(root: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirStreamStat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
   inline def readdirSyncStat(root: String): js.Array[Entry] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirSyncStat")(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[Entry]]
   inline def readdirSyncStat(root: String, options: Options): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSyncStat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
@@ -52,15 +53,15 @@ object mod {
   
   object stream {
     
-    inline def apply(root: String): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
-    inline def apply(root: String, options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+    inline def apply(root: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+    inline def apply(root: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
     
     @JSImport("@mrmlnc/readdir-enhanced", "stream")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def stat(root: String): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
-    inline def stat(root: String, options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+    inline def stat(root: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+    inline def stat(root: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   }
   
   object sync {
@@ -76,11 +77,7 @@ object mod {
     inline def stat(root: String, options: Options): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
   }
   
-  type Callback[T] = js.Function2[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-    /* result */ T, 
-    Unit
-  ]
+  type Callback[T] = js.Function2[/* err */ ErrnoException, /* result */ T, Unit]
   
   type CallbackEntry = Callback[js.Array[Entry]]
   

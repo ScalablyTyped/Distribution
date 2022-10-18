@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("angular-ui-router", "StateProvider")
 @js.native
 open class StateProvider protected ()
-  extends typings.angularUiRouter.stateProviderMod.StateProvider {
+  extends typings.angularUiRouter.libStateProviderMod.StateProvider {
   def this(
     stateRegistry: typings.uirouterCore.mod.StateRegistry,
     stateService: typings.uirouterCore.mod.StateService

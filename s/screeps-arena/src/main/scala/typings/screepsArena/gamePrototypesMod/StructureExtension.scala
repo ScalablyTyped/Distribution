@@ -1,7 +1,7 @@
 package typings.screepsArena.gamePrototypesMod
 
 import typings.screepsArena.anon.StoreResourceConstant
-import typings.screepsArena.constantsMod._BuildableStructure
+import typings.screepsArena.gameConstantsMod._BuildableStructure
 import typings.screepsArena.gamePrototypesMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

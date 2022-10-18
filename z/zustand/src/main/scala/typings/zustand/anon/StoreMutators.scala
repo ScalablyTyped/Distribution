@@ -1,6 +1,6 @@
 package typings.zustand.anon
 
-import typings.zustand.vanillaMod.StoreMutatorIdentifier
+import typings.zustand.esmVanillaMod.StoreMutatorIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,17 +1,22 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.includesDeepMod._IncludesDeep
-import typings.tsToolbelt.internalMod.Match
-import typings.tsToolbelt.iterationMod.Iteration
-import typings.tsToolbelt.nextMod.Next
-import typings.tsToolbelt.objectUnionOfMod.UnionOf
+import typings.tsToolbelt.outAnyInternalMod.Match
+import typings.tsToolbelt.outCommunityIncludesDeepMod._IncludesDeep
+import typings.tsToolbelt.outIterationIterationMod.Iteration
+import typings.tsToolbelt.outIterationNextMod.Next
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `012`[O, M /* <: Any */, `match` /* <: Match */, limit /* <: Double */, I /* <: Iteration */] extends StObject {
   
-  var `0`: _IncludesDeep[O | UnionOf[O], M, `match`, limit, Next[I]]
+  var `0`: _IncludesDeep[
+    /* import warning: importer.ImportType#apply Failed type conversion: O extends object ? ts-toolbelt.ts-toolbelt/out/Object/UnionOf.UnionOf<O> : O */ js.Any, 
+    M, 
+    `match`, 
+    limit, 
+    Next[I]
+  ]
   
   var `1`: typings.tsToolbelt.tsToolbeltInts.`1`
   
@@ -19,7 +24,15 @@ trait `012`[O, M /* <: Any */, `match` /* <: Match */, limit /* <: Double */, I 
 }
 object `012` {
   
-  inline def apply[O, M /* <: Any */, `match` /* <: Match */, limit /* <: Double */, I /* <: Iteration */](`0`: _IncludesDeep[O | UnionOf[O], M, `match`, limit, Next[I]]): `012`[O, M, `match`, limit, I] = {
+  inline def apply[O, M /* <: Any */, `match` /* <: Match */, limit /* <: Double */, I /* <: Iteration */](
+    `0`: _IncludesDeep[
+      /* import warning: importer.ImportType#apply Failed type conversion: O extends object ? ts-toolbelt.ts-toolbelt/out/Object/UnionOf.UnionOf<O> : O */ js.Any, 
+      M, 
+      `match`, 
+      limit, 
+      Next[I]
+    ]
+  ): `012`[O, M, `match`, limit, I] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
     __obj.updateDynamic("1")(1)
@@ -29,7 +42,15 @@ object `012` {
   
   extension [Self <: `012`[?, ?, ?, ?, ?], O, M /* <: Any */, `match` /* <: Match */, limit /* <: Double */, I /* <: Iteration */](x: Self & (`012`[O, M, `match`, limit, I])) {
     
-    inline def set0(value: _IncludesDeep[O | UnionOf[O], M, `match`, limit, Next[I]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def set0(
+      value: _IncludesDeep[
+          /* import warning: importer.ImportType#apply Failed type conversion: O extends object ? ts-toolbelt.ts-toolbelt/out/Object/UnionOf.UnionOf<O> : O */ js.Any, 
+          M, 
+          `match`, 
+          limit, 
+          Next[I]
+        ]
+    ): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
     inline def set1(value: typings.tsToolbelt.tsToolbeltInts.`1`): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     

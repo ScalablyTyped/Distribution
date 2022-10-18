@@ -3,7 +3,6 @@ package typings.immutable
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.immutable.mod.Seq.Indexed
 import typings.immutable.mod.Seq.Keyed
 import typings.immutable.mod.Seq.Set
@@ -2566,9 +2565,7 @@ object mod {
     inline def apply[K, V](): Map[K, V] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Map[K, V]]
     inline def apply[K, V](collection: js.Iterable[js.Tuple2[K, V]]): Map[K, V] = ^.asInstanceOf[js.Dynamic].apply(collection.asInstanceOf[js.Any]).asInstanceOf[Map[K, V]]
     inline def apply[K /* <: String | js.Symbol */, V](
-      obj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in K ]:? V}
-      */ typings.immutable.immutableStrings.^ & TopLevel[Any]
+      obj: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]:? V} */ js.Any
     ): Map[K, V] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Map[K, V]]
     
     @JSImport("immutable", "Map")
@@ -2912,9 +2909,7 @@ object mod {
       * Note: This method may not be overridden. Objects with custom
       * serialization to plain JS may override toJSON() instead.
       */
-    def toJS(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof TProps ]: unknown}
-      */ typings.immutable.immutableStrings.Record & TopLevel[Any] = js.native
+    def toJS(): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof TProps ]: unknown} */ js.Any = js.native
     
     /**
       * Shallowly converts this Record to equivalent native JavaScript Object.

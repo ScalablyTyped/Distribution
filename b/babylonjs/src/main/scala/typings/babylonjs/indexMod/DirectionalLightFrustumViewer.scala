@@ -14,7 +14,7 @@ open class DirectionalLightFrustumViewer protected ()
     * @param camera camera used to retrieve the minZ / maxZ values if the shadowMinZ/shadowMaxZ values of the light are not setup
     */
   def this(
-    light: typings.babylonjs.directionalLightMod.DirectionalLight,
-    camera: typings.babylonjs.cameraMod.Camera
+    light: typings.babylonjs.lightsDirectionalLightMod.DirectionalLight,
+    camera: typings.babylonjs.camerasCameraMod.Camera
   ) = this()
 }

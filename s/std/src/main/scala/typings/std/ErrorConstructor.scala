@@ -20,7 +20,7 @@ Instantiable0[js.Error]
       js.Error
     ] {
   
-  /* standard es2022.error */
+  /* standard es5 */
   def apply(): js.Error = js.native
   def apply(message: java.lang.String): js.Error = js.native
   def apply(message: java.lang.String, options: ErrorOptions): js.Error = js.native

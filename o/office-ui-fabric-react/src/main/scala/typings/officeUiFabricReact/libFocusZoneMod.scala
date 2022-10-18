@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
+import typings.fluentuiReactFocus.libComponentsFocusZoneFocusZoneDottypesMod.IFocusZoneProps
 import typings.officeUiFabricReact.officeUiFabricReactInts.`0`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`1`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`2`
@@ -13,7 +13,7 @@ object libFocusZoneMod {
   @JSImport("office-ui-fabric-react/lib/FocusZone", "FocusZone")
   @js.native
   open class FocusZone protected ()
-    extends typings.officeUiFabricReact.focusZoneMod.FocusZone {
+    extends typings.officeUiFabricReact.libComponentsFocusZoneMod.FocusZone {
     def this(props: IFocusZoneProps) = this()
   }
   /* static members */
@@ -47,15 +47,17 @@ object libFocusZoneMod {
   object FocusZoneDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.fluentuiReactFocus.libComponentsFocusZoneFocusZoneDottypesMod.FocusZoneDirection & Double
+      ] = js.native
     
-    /* 2 */ val bidirectional: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.bidirectional & Double = js.native
+    /* 2 */ val bidirectional: typings.fluentuiReactFocus.libComponentsFocusZoneFocusZoneDottypesMod.FocusZoneDirection.bidirectional & Double = js.native
     
-    /* 3 */ val domOrder: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.domOrder & Double = js.native
+    /* 3 */ val domOrder: typings.fluentuiReactFocus.libComponentsFocusZoneFocusZoneDottypesMod.FocusZoneDirection.domOrder & Double = js.native
     
-    /* 1 */ val horizontal: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.horizontal & Double = js.native
+    /* 1 */ val horizontal: typings.fluentuiReactFocus.libComponentsFocusZoneFocusZoneDottypesMod.FocusZoneDirection.horizontal & Double = js.native
     
-    /* 0 */ val vertical: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.vertical & Double = js.native
+    /* 0 */ val vertical: typings.fluentuiReactFocus.libComponentsFocusZoneFocusZoneDottypesMod.FocusZoneDirection.vertical & Double = js.native
   }
   
   object FocusZoneTabbableElements {

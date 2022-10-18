@@ -1,6 +1,6 @@
 package typings.stormReactDiagrams.mod
 
-import typings.stormReactDiagrams.baseWidgetMod.BaseWidgetProps
+import typings.stormReactDiagrams.distSrcWidgetsBaseWidgetMod.BaseWidgetProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "BaseWidget")
 @js.native
 open class BaseWidget[P /* <: BaseWidgetProps */, S] protected ()
-  extends typings.stormReactDiagrams.baseWidgetMod.BaseWidget[P, S] {
+  extends typings.stormReactDiagrams.distSrcWidgetsBaseWidgetMod.BaseWidget[P, S] {
   def this(name: String, props: P) = this()
 }

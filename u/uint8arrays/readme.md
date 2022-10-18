@@ -1,7 +1,7 @@
 
 # Scala.js typings for uint8arrays
 
-Typings are for version 3.1.0
+Typings are for version 4.0.2
 
 ## Library description:
 Utility functions to make dealing with Uint8Arrays easier

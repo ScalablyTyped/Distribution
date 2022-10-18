@@ -1,20 +1,20 @@
 package typings.officeUiFabricReact.anon
 
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.colorPickerTypesMod.IColorPicker
-import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerStrings
-import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerStyleProps
-import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerStyles
-import typings.officeUiFabricReact.interfacesMod.IColor
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsColorPickerColorPickerDottypesMod.IColorPicker
+import typings.officeUiFabricReact.libComponentsColorPickerColorPickerDottypesMod.IColorPickerStrings
+import typings.officeUiFabricReact.libComponentsColorPickerColorPickerDottypesMod.IColorPickerStyleProps
+import typings.officeUiFabricReact.libComponentsColorPickerColorPickerDottypesMod.IColorPickerStyles
+import typings.officeUiFabricReact.libUtilitiesColorInterfacesMod.IColor
 import typings.officeUiFabricReact.officeUiFabricReactStrings.alpha
 import typings.officeUiFabricReact.officeUiFabricReactStrings.none
 import typings.officeUiFabricReact.officeUiFabricReactStrings.transparency
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import typings.std.HTMLElement
-import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricUtilities.createRefMod.IRefObject
+import typings.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricUtilities.libCreateRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

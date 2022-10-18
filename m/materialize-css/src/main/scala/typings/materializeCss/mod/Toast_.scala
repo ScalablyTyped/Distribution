@@ -1,6 +1,7 @@
 package typings.materializeCss.mod
 
 import typings.materializeCss.M.Toast
+import typings.materializeCss.M.ToastOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,6 +18,18 @@ open class Toast_ ()
     */
   /* CompleteClass */
   override def dismiss(): Unit = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: ToastOptions = js.native
   
   /**
     * Describes the current pan state of the Toast.

@@ -1,6 +1,6 @@
 package typings.awsSdkMiddlewareSerde
 
-import typings.awsSdkTypes.httpMod.Endpoint
+import typings.awsSdkTypes.distTypesHttpMod.Endpoint
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object anon {
   
   trait UrlParser extends StObject {
     
-    var urlParser: js.UndefOr[typings.awsSdkTypes.utilMod.UrlParser] = js.undefined
+    var urlParser: js.UndefOr[typings.awsSdkTypes.distTypesUtilMod.UrlParser] = js.undefined
   }
   object UrlParser {
     

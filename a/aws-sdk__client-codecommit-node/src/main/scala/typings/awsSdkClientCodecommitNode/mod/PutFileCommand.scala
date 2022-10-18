@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-codecommit-node", "PutFileCommand")
 @js.native
 open class PutFileCommand protected ()
-  extends typings.awsSdkClientCodecommitNode.putFileCommandMod.PutFileCommand {
+  extends typings.awsSdkClientCodecommitNode.commandsPutFileCommandMod.PutFileCommand {
   def this(input: PutFileInput) = this()
 }

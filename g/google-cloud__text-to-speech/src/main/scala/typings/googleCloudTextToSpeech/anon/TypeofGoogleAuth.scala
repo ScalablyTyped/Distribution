@@ -2,7 +2,7 @@ package typings.googleCloudTextToSpeech.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.googleAuthLibrary.anon.TypeofDefaultTransporter
-import typings.googleAuthLibrary.authclientMod.AuthClient
+import typings.googleAuthLibrary.buildSrcAuthAuthclientMod.AuthClient
 import typings.googleGax.mod.GoogleAuth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

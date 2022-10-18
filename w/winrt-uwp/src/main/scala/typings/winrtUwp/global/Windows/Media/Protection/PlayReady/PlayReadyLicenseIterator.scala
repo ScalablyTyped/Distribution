@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides for iteration of the PlayReadyLicense class. */
-@JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyLicenseIterator")
+/* note: abstract class */ @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyLicenseIterator")
 @js.native
-abstract class PlayReadyLicenseIterator ()
+open class PlayReadyLicenseIterator ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyLicenseIterator {
   

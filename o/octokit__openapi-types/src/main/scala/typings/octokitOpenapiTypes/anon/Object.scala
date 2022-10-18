@@ -1,53 +1,36 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.blob
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.commit
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.tree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Object extends StObject {
   
-  /** @description The tag message. */
-  var message: String
+  var node_id: String
   
-  /** @description The SHA of the git object this is tagging. */
-  var `object`: String
+  var `object`: ShaType
   
-  /** @description The tag's name. This is typically a version (e.g., "v0.0.1"). */
-  var tag: String
+  var ref: String
   
-  /** @description An object with information about the individual creating the tag. */
-  var tagger: js.UndefOr[Date] = js.undefined
-  
-  /**
-    * @description The type of the object we're tagging. Normally this is a `commit` but it can also be a `tree` or a `blob`.
-    * @enum {string}
-    */
-  var `type`: commit | tree | blob
+  /** Format: uri */
+  var url: String
 }
 object Object {
   
-  inline def apply(message: String, `object`: String, tag: String, `type`: commit | tree | blob): Object = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+  inline def apply(node_id: String, `object`: ShaType, ref: String, url: String): Object = {
+    val __obj = js.Dynamic.literal(node_id = node_id.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Object]
   }
   
   extension [Self <: Object](x: Self) {
     
-    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: ShaType): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setTagger(value: Date): Self = StObject.set(x, "tagger", value.asInstanceOf[js.Any])
-    
-    inline def setTaggerUndefined: Self = StObject.set(x, "tagger", js.undefined)
-    
-    inline def setType(value: commit | tree | blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsBackendCpu.anon
 
-import typings.tensorflowTfjsBackendCpu.backendCpuMod.MathBackendCPU
-import typings.tensorflowTfjsCore.kernelNamesMod.NonMaxSuppressionV3Attrs
-import typings.tensorflowTfjsCore.kernelNamesMod.NonMaxSuppressionV3Inputs
+import typings.tensorflowTfjsBackendCpu.distBackendCpuMod.MathBackendCPU
+import typings.tensorflowTfjsCore.distKernelNamesMod.NonMaxSuppressionV3Attrs
+import typings.tensorflowTfjsCore.distKernelNamesMod.NonMaxSuppressionV3Inputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

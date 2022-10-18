@@ -421,7 +421,15 @@ object mod {
     }
   }
   
-  type FlowEventTypeFromFlowEvent[T /* <: FlowEvent */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends flowjs.flowjs.FlowEventFromEventName<infer U> ? U : never
+    }}}
+    */
+  @js.native
+  trait FlowEventTypeFromFlowEvent[T /* <: FlowEvent */] extends StObject
   
   trait FlowFile extends StObject {
     

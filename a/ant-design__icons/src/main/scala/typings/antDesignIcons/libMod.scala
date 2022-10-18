@@ -2,10 +2,10 @@ package typings.antDesignIcons
 
 import typings.antDesignIcons.anon.PickAntdIconPropsmaxrequi
 import typings.antDesignIcons.anon.PickIconComponentPropsmax
-import typings.antDesignIcons.componentsContextMod.IconContextProps
-import typings.antDesignIcons.componentsIconFontMod.CustomIconOptions
-import typings.antDesignIcons.componentsIconFontMod.IconFontProps
-import typings.antDesignIcons.componentsTwoTonePrimaryColorMod.TwoToneColor
+import typings.antDesignIcons.distComponentsContextMod.IconContextProps
+import typings.antDesignIcons.libComponentsIconFontMod.CustomIconOptions
+import typings.antDesignIcons.libComponentsIconFontMod.IconFontProps
+import typings.antDesignIcons.libComponentsTwoTonePrimaryColorMod.TwoToneColor
 import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.Provider

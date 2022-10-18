@@ -1,6 +1,6 @@
 package typings.victoryLine
 
-import typings.victoryLine.victoryLineMod.VictoryLineTTargetType
+import typings.victoryLine.libVictoryLineMod.VictoryLineTTargetType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

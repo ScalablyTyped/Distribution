@@ -7,11 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "Constraint")
 @js.native
 open class Constraint protected ()
-  extends typings.webcola.vpscMod.Constraint {
-  def this(left: typings.webcola.vpscMod.Variable, right: typings.webcola.vpscMod.Variable, gap: Double) = this()
+  extends typings.webcola.distSrcVpscMod.Constraint {
   def this(
-    left: typings.webcola.vpscMod.Variable,
-    right: typings.webcola.vpscMod.Variable,
+    left: typings.webcola.distSrcVpscMod.Variable,
+    right: typings.webcola.distSrcVpscMod.Variable,
+    gap: Double
+  ) = this()
+  def this(
+    left: typings.webcola.distSrcVpscMod.Variable,
+    right: typings.webcola.distSrcVpscMod.Variable,
     gap: Double,
     equality: Boolean
   ) = this()

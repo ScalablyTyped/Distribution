@@ -11,4 +11,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://doc.babylonjs.com/how_to/how_to_use_postprocessrenderpipeline
   */
 open class PostProcessRenderPipelineManager ()
-  extends typings.babylonjs.renderPipelineIndexMod.PostProcessRenderPipelineManager
+  extends typings.babylonjs.postProcessesRenderPipelineIndexMod.PostProcessRenderPipelineManager

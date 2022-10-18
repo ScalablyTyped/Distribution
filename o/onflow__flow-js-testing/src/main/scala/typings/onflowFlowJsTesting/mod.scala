@@ -1,19 +1,19 @@
 package typings.onflowFlowJsTesting
 
 import typings.node.bufferMod.global.Buffer
-import typings.onflowFlowJsTesting.accountMod.Address
-import typings.onflowFlowJsTesting.accountMod.KeyObject
-import typings.onflowFlowJsTesting.accountMod.SignerInfo
 import typings.onflowFlowJsTesting.anon.AddressMap
 import typings.onflowFlowJsTesting.anon.Args
 import typings.onflowFlowJsTesting.anon.Keys
 import typings.onflowFlowJsTesting.anon.Name
 import typings.onflowFlowJsTesting.anon.Pkey
-import typings.onflowFlowJsTesting.interactionMod.Interaction
-import typings.onflowFlowJsTesting.interactionMod.ScriptProps
-import typings.onflowFlowJsTesting.interactionMod.ScriptResponse
-import typings.onflowFlowJsTesting.interactionMod.TransactionProps
-import typings.onflowFlowJsTesting.interactionMod.TransactionResponse
+import typings.onflowFlowJsTesting.srcAccountMod.Address
+import typings.onflowFlowJsTesting.srcAccountMod.KeyObject
+import typings.onflowFlowJsTesting.srcAccountMod.SignerInfo
+import typings.onflowFlowJsTesting.srcInteractionMod.Interaction
+import typings.onflowFlowJsTesting.srcInteractionMod.ScriptProps
+import typings.onflowFlowJsTesting.srcInteractionMod.ScriptResponse
+import typings.onflowFlowJsTesting.srcInteractionMod.TransactionProps
+import typings.onflowFlowJsTesting.srcInteractionMod.TransactionResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,25 +27,25 @@ object mod {
   @JSImport("@onflow/flow-js-testing", "Emulator")
   @js.native
   open class Emulator_ ()
-    extends typings.onflowFlowJsTesting.emulatorMod.Emulator_
+    extends typings.onflowFlowJsTesting.srcEmulatorMod.Emulator_
   
   @JSImport("@onflow/flow-js-testing", "HashAlgorithm")
   @js.native
-  val HashAlgorithm: typings.onflowFlowJsTesting.cryptoMod.HashAlgorithm = js.native
+  val HashAlgorithm: typings.onflowFlowJsTesting.srcCryptoMod.HashAlgorithm = js.native
   
   @JSImport("@onflow/flow-js-testing", "SignatureAlgorithm")
   @js.native
-  val SignatureAlgorithm: typings.onflowFlowJsTesting.cryptoMod.SignatureAlgorithm = js.native
+  val SignatureAlgorithm: typings.onflowFlowJsTesting.srcCryptoMod.SignatureAlgorithm = js.native
   
   inline def createAccount(props: Keys): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(props.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  inline def deployContract(props: Args): js.Promise[TransactionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("deployContract")(props.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransactionResponse]]
+  inline def deployContract(props: AddressMap): js.Promise[TransactionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("deployContract")(props.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransactionResponse]]
   
-  inline def deployContractByName(props: AddressMap): js.Promise[TransactionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("deployContractByName")(props.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransactionResponse]]
+  inline def deployContractByName(props: Args): js.Promise[TransactionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("deployContractByName")(props.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransactionResponse]]
   
   @JSImport("@onflow/flow-js-testing", "emulator")
   @js.native
-  val emulator: typings.onflowFlowJsTesting.emulatorMod.Emulator_ = js.native
+  val emulator: typings.onflowFlowJsTesting.srcEmulatorMod.Emulator_ = js.native
   
   inline def executeScript(name: String): js.Promise[ScriptResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ScriptResponse]]
   inline def executeScript(name: String, args: js.Array[Any]): js.Promise[ScriptResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ScriptResponse]]
@@ -65,8 +65,8 @@ object mod {
   
   inline def getTemplate(file: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   inline def getTemplate(file: String, addressMap: Unit, byAddress: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(file.asInstanceOf[js.Any], addressMap.asInstanceOf[js.Any], byAddress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def getTemplate(file: String, addressMap: typings.onflowFlowJsTesting.accountMod.AddressMap): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(file.asInstanceOf[js.Any], addressMap.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def getTemplate(file: String, addressMap: typings.onflowFlowJsTesting.accountMod.AddressMap, byAddress: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(file.asInstanceOf[js.Any], addressMap.asInstanceOf[js.Any], byAddress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getTemplate(file: String, addressMap: typings.onflowFlowJsTesting.srcAccountMod.AddressMap): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(file.asInstanceOf[js.Any], addressMap.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getTemplate(file: String, addressMap: typings.onflowFlowJsTesting.srcAccountMod.AddressMap, byAddress: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(file.asInstanceOf[js.Any], addressMap.asInstanceOf[js.Any], byAddress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def getTimestampOffset(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimestampOffset")().asInstanceOf[js.Promise[String]]
   

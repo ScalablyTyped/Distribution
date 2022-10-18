@@ -547,7 +547,6 @@ import typings.csstype.mod.Property.ZIndex
 import typings.csstype.mod.Property.Zoom
 import typings.jss.mod.StyleSheetFactoryOptions
 import typings.materialUiStyles.anon.Classes
-import typings.materialUiStyles.anon.Theme
 import typings.materialUiTypes.mod.PropInjector
 import typings.react.mod.Ref
 import typings.std.FontFace
@@ -7992,7 +7991,15 @@ object withStylesWithStylesMod {
   
   type ClassKeyInferable[Theme, Props /* <: js.Object */] = String | (Styles[Theme, Props, String])
   
-  type ClassKeyOfStyles[StylesOrClassKey] = Any | StylesOrClassKey
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    StylesOrClassKey extends string ? StylesOrClassKey : StylesOrClassKey extends @material-ui/styles.@material-ui/styles/withStyles/withStyles.StyleRulesCallback<any, any, infer ClassKey> ? ClassKey : StylesOrClassKey extends @material-ui/styles.@material-ui/styles/withStyles/withStyles.StyleRules<any, infer ClassKey> ? ClassKey : never
+    }}}
+    */
+  @js.native
+  trait ClassKeyOfStyles[StylesOrClassKey] extends StObject
   
   type ClassNameMap[ClassKey /* <: String */] = Record[ClassKey, String]
   
@@ -8002,7 +8009,11 @@ object withStylesWithStylesMod {
        with // Allow pseudo selectors and media queries
   /* k */ StringDictionary[
           js.UndefOr[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 548 */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 548, starting with typings.csstype.mod.Property.ScrollMarginBlockStart[scala.Double | java.lang.String], scala.Unit, typings.materialUiStyles.withStylesWithStylesMod.PropsFunc[
+  Props, 
+  js.UndefOr[
+    / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 546, starting with scala.Unit, typings.csstype.mod.Property.AccentColor, typings.csstype.mod.Property.AlignContent * / scala.Any
+  ]] */ Any
           ]
         ]
   object CreateCSSProperties {
@@ -8054,7 +8065,15 @@ object withStylesWithStylesMod {
   
   type PropsFunc[Props /* <: js.Object */, T] = js.Function1[/* props */ Props, T]
   
-  type PropsOfStyles[StylesType] = js.Object
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    StylesType extends @material-ui/styles.@material-ui/styles/withStyles/withStyles.Styles<any, infer Props, string> ? Props : {}
+    }}}
+    */
+  @js.native
+  trait PropsOfStyles[StylesType] extends StObject
   
   type StyleRules[Props /* <: js.Object */, ClassKey /* <: String */] = Record[
     ClassKey, 
@@ -8097,9 +8116,17 @@ object withStylesWithStylesMod {
   
   type Styles[Theme, Props /* <: js.Object */, ClassKey /* <: String */] = (StyleRules[Props, ClassKey]) | (StyleRulesCallback[Theme, Props, ClassKey])
   
-  type ThemeOfStyles[StylesType] = js.Object
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    StylesType extends @material-ui/styles.@material-ui/styles/withStyles/withStyles.Styles<infer Theme, any, string> ? Theme : {}
+    }}}
+    */
+  @js.native
+  trait ThemeOfStyles[StylesType] extends StObject
   
-  type WithStyles[StylesType /* <: ClassKeyInferable[Any, Any] */, IncludeTheme /* <: js.UndefOr[Boolean] */] = (js.Object | Theme[StylesType]) & Classes[StylesType] & PropsOfStyles[StylesType]
+  type WithStyles[StylesType /* <: ClassKeyInferable[Any, Any] */, IncludeTheme /* <: js.UndefOr[Boolean] */] = (/* import warning: importer.ImportType#apply Failed type conversion: IncludeTheme extends true ? {  theme :@material-ui/styles.@material-ui/styles/withStyles/withStyles.ThemeOfStyles<StylesType>} : {} */ js.Any) & Classes[StylesType] & PropsOfStyles[StylesType]
   
   trait WithStylesOptions[Theme]
     extends StObject

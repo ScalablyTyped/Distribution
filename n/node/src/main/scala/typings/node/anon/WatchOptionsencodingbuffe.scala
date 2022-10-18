@@ -1,8 +1,8 @@
 package typings.node.anon
 
+import typings.node.AbortSignal
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.nodeStrings.buffer_
-import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

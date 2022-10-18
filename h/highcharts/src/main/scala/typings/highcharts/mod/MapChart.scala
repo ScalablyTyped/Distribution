@@ -1,6 +1,6 @@
 package typings.highcharts.mod
 
-import typings.highcharts.mapMod.highchartsAugmentingMod.Chart
+import typings.highcharts.modulesMapMod.highchartsAugmentingMod.Chart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

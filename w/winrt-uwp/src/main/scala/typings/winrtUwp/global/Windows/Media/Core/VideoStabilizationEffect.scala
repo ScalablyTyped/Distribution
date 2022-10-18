@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an effect that stabilizes a video stream. */
-@JSGlobal("Windows.Media.Core.VideoStabilizationEffect")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.VideoStabilizationEffect")
 @js.native
-abstract class VideoStabilizationEffect ()
+open class VideoStabilizationEffect ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.VideoStabilizationEffect

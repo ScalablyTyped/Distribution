@@ -1,14 +1,13 @@
 package typings.reactNavigationRouters.anon
 
-import typings.reactNavigationRouters.typesMod.NavigationState
-import typings.reactNavigationRouters.typesMod.ParamListBase
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.InitialState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait State extends StObject {
   
-  var state: js.UndefOr[NavigationState[ParamListBase] | PartialStateNavigationSta] = js.undefined
+  var state: js.UndefOr[InitialState] = js.undefined
 }
 object State {
   
@@ -19,7 +18,7 @@ object State {
   
   extension [Self <: State](x: Self) {
     
-    inline def setState(value: NavigationState[ParamListBase] | PartialStateNavigationSta): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: InitialState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

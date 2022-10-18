@@ -8,7 +8,7 @@ import typings.ol.olStrings.imageloadstart
 import typings.ol.pluggableMapMod.FrameState
 import typings.ol.projMod.ProjectionLike
 import typings.ol.sourceSourceMod.AttributionLike
-import typings.ol.stateMod.State
+import typings.ol.sourceStateMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,22 +19,22 @@ object sourceImageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("ol/source/Image", JSImport.Default)
+  /* note: abstract class */ @JSImport("ol/source/Image", JSImport.Default)
   @js.native
-  abstract class default protected () extends ImageSource {
+  open class default protected () extends ImageSource {
     def this(options: Options) = this()
   }
   
   @JSImport("ol/source/Image", "ImageSourceEvent")
   @js.native
   open class ImageSourceEvent protected ()
-    extends typings.ol.eventMod.default {
-    def this(`type`: String, image: typings.ol.olImageMod.default) = this()
+    extends typings.ol.eventsEventMod.default {
+    def this(`type`: String, image: typings.ol.imageMod.default) = this()
     
     /**
       * The image related to the event.
       */
-    var image: typings.ol.olImageMod.default = js.native
+    var image: typings.ol.imageMod.default = js.native
   }
   
   @js.native
@@ -65,7 +65,7 @@ object sourceImageMod {
     /* "imageloadstart" */ val IMAGELOADSTART: typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADSTART & String = js.native
   }
   
-  inline def defaultImageLoadFunction(image: typings.ol.olImageMod.default, src: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultImageLoadFunction")(image.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defaultImageLoadFunction(image: typings.ol.imageMod.default, src: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultImageLoadFunction")(image.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait ImageSource
@@ -77,20 +77,20 @@ object sourceImageMod {
       extent: Extent,
       resolution: Double,
       pixelRatio: Double,
-      projection: typings.ol.projectionMod.default
+      projection: typings.ol.projProjectionMod.default
     ): typings.ol.imageBaseMod.default = js.native
     
     /* protected */ def getImageInternal(
       extent: Extent,
       resolution: Double,
       pixelRatio: Double,
-      projection: typings.ol.projectionMod.default
+      projection: typings.ol.projProjectionMod.default
     ): typings.ol.imageBaseMod.default = js.native
     
     /**
       * Handle image change events.
       */
-    /* protected */ def handleImageChange(event: typings.ol.eventMod.default): Unit = js.native
+    /* protected */ def handleImageChange(event: typings.ol.eventsEventMod.default): Unit = js.native
     
     @JSName("on")
     def on_imageloadend(`type`: imageloadend, listener: js.Function1[/* evt */ ImageSourceEvent, Unit]): EventsKey = js.native

@@ -24,8 +24,8 @@ import typings.naudiodon.naudiodonStrings.SoundManager
 import typings.naudiodon.naudiodonStrings.Unknown
 import typings.naudiodon.naudiodonStrings.WASAPI
 import typings.naudiodon.naudiodonStrings.WDMKS
-import typings.std.ReadableStream
-import typings.std.WritableStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -303,38 +303,18 @@ object mod {
   trait IoStreamDuplex
     extends StObject
        with IoStream
-       with ReadableStream[Any]
-       with WritableStream[Any] {
-    
-    /**
-      * Abort the stream. Throws away any pending bytes.
-      * The optional callback will execute when the abort has completed.
-      */
-    /* InferMemberOverrides */
-    override def abort(): Unit & js.Promise[Unit] = js.native
-    
-    /* standard dom */
-    /* InferMemberOverrides */
-    override val locked: Boolean = js.native
-  }
+       with ReadableStream
+       with WritableStream
   
   @js.native
   trait IoStreamRead
     extends StObject
        with IoStream
-       with ReadableStream[Any]
+       with ReadableStream
   
   @js.native
   trait IoStreamWrite
     extends StObject
        with IoStream
-       with WritableStream[Any] {
-    
-    /**
-      * Abort the stream. Throws away any pending bytes.
-      * The optional callback will execute when the abort has completed.
-      */
-    /* InferMemberOverrides */
-    override def abort(): Unit & js.Promise[Unit] = js.native
-  }
+       with WritableStream
 }

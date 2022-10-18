@@ -1,6 +1,6 @@
 package typings.bizcharts.anon
 
-import typings.antvG2.geometryBaseMod.default
+import typings.antvG2.libGeometryBaseMod.default
 import typings.antvG2.libInterfaceMod.MappingDatum
 import typings.antvG2.libInterfaceMod.ShapePoint
 import typings.antvG2.libInterfaceMod.TooltipTitle

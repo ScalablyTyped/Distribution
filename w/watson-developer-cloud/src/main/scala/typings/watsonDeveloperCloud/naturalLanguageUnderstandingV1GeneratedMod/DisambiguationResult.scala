@@ -37,6 +37,6 @@ object DisambiguationResult {
     
     inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
     
-    inline def setSubtypeVarargs(value: String*): Self = StObject.set(x, "subtype", js.Array(value :_*))
+    inline def setSubtypeVarargs(value: String*): Self = StObject.set(x, "subtype", js.Array(value*))
   }
 }

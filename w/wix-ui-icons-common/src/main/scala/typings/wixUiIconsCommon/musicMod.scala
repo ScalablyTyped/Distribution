@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsMusicMod.MusicProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsMusicMod.MusicProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object musicMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Music", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Music", JSImport.Default)
   @js.native
   val default: FC[MusicProps] = js.native
   

@@ -271,31 +271,31 @@ object mod {
   object TimeSeriesAggregationType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType & String] = js.native
     
-    /* "avg" */ val AVERAGE: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.AVERAGE & String = js.native
+    /* "avg" */ val AVERAGE: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.AVERAGE & String = js.native
     
-    /* "count" */ val COUNT: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.COUNT & String = js.native
+    /* "count" */ val COUNT: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.COUNT & String = js.native
     
-    /* "first" */ val FIRST: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.FIRST & String = js.native
+    /* "first" */ val FIRST: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.FIRST & String = js.native
     
-    /* "last" */ val LAST: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.LAST & String = js.native
+    /* "last" */ val LAST: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.LAST & String = js.native
     
-    /* "max" */ val MAXIMUM: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.MAXIMUM & String = js.native
+    /* "max" */ val MAXIMUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.MAXIMUM & String = js.native
     
-    /* "min" */ val MINIMUM: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.MINIMUM & String = js.native
+    /* "min" */ val MINIMUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.MINIMUM & String = js.native
     
-    /* "range" */ val RANGE: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.RANGE & String = js.native
+    /* "range" */ val RANGE: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.RANGE & String = js.native
     
-    /* "std.p" */ val STD_P: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.STD_P & String = js.native
+    /* "std.p" */ val STD_P: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.STD_P & String = js.native
     
-    /* "std.s" */ val STD_S: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.STD_S & String = js.native
+    /* "std.s" */ val STD_S: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.STD_S & String = js.native
     
-    /* "sum" */ val SUM: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.SUM & String = js.native
+    /* "sum" */ val SUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.SUM & String = js.native
     
-    /* "var.p" */ val VAR_P: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.VAR_P & String = js.native
+    /* "var.p" */ val VAR_P: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.VAR_P & String = js.native
     
-    /* "var.s" */ val VAR_S: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.VAR_S & String = js.native
+    /* "var.s" */ val VAR_S: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.VAR_S & String = js.native
   }
   
   @JSImport("@redis/time-series", "TimeSeriesDuplicatePolicies")
@@ -303,19 +303,19 @@ object mod {
   object TimeSeriesDuplicatePolicies extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies & String] = js.native
+    def apply(value: String): js.UndefOr[typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies & String] = js.native
     
-    /* "BLOCK" */ val BLOCK: typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies.BLOCK & String = js.native
+    /* "BLOCK" */ val BLOCK: typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies.BLOCK & String = js.native
     
-    /* "FIRST" */ val FIRST: typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies.FIRST & String = js.native
+    /* "FIRST" */ val FIRST: typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies.FIRST & String = js.native
     
-    /* "LAST" */ val LAST: typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies.LAST & String = js.native
+    /* "LAST" */ val LAST: typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies.LAST & String = js.native
     
-    /* "MAX" */ val MAX: typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies.MAX & String = js.native
+    /* "MAX" */ val MAX: typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies.MAX & String = js.native
     
-    /* "MIN" */ val MIN: typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies.MIN & String = js.native
+    /* "MIN" */ val MIN: typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies.MIN & String = js.native
     
-    /* "SUM" */ val SUM: typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies.SUM & String = js.native
+    /* "SUM" */ val SUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies.SUM & String = js.native
   }
   
   @JSImport("@redis/time-series", "TimeSeriesEncoding")
@@ -323,10 +323,10 @@ object mod {
   object TimeSeriesEncoding extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.redisTimeSeries.commandsMod.TimeSeriesEncoding & String] = js.native
+    def apply(value: String): js.UndefOr[typings.redisTimeSeries.distCommandsMod.TimeSeriesEncoding & String] = js.native
     
-    /* "COMPRESSED" */ val COMPRESSED: typings.redisTimeSeries.commandsMod.TimeSeriesEncoding.COMPRESSED & String = js.native
+    /* "COMPRESSED" */ val COMPRESSED: typings.redisTimeSeries.distCommandsMod.TimeSeriesEncoding.COMPRESSED & String = js.native
     
-    /* "UNCOMPRESSED" */ val UNCOMPRESSED: typings.redisTimeSeries.commandsMod.TimeSeriesEncoding.UNCOMPRESSED & String = js.native
+    /* "UNCOMPRESSED" */ val UNCOMPRESSED: typings.redisTimeSeries.distCommandsMod.TimeSeriesEncoding.UNCOMPRESSED & String = js.native
   }
 }

@@ -1,29 +1,29 @@
 package typings.surveyKnockout.mod
 
-import typings.surveyKnockout.anon.ActionsCell
 import typings.surveyKnockout.anon.AsCell
 import typings.surveyKnockout.anon.Body
-import typings.surveyKnockout.anon.Button
-import typings.surveyKnockout.anon.ButtonAdd
+import typings.surveyKnockout.anon.ButtonNextDisabled
 import typings.surveyKnockout.anon.Cell
 import typings.surveyKnockout.anon.CheckboxControlLabel
+import typings.surveyKnockout.anon.ChoiceCell
 import typings.surveyKnockout.anon.ChooseFile
-import typings.surveyKnockout.anon.CleanButton
-import typings.surveyKnockout.anon.CleanButtonIconId
-import typings.surveyKnockout.anon.ClearButton
-import typings.surveyKnockout.anon.Column
+import typings.surveyKnockout.anon.CleanButtonSvg
+import typings.surveyKnockout.anon.CleanItemButton
 import typings.surveyKnockout.anon.Complete
 import typings.surveyKnockout.anon.Container
 import typings.surveyKnockout.anon.ControlLabel
 import typings.surveyKnockout.anon.Controls
 import typings.surveyKnockout.anon.Description
+import typings.surveyKnockout.anon.DetailButtonExpanded
 import typings.surveyKnockout.anon.Error
 import typings.surveyKnockout.anon.Icon
 import typings.surveyKnockout.anon.Image
-import typings.surveyKnockout.anon.Item
 import typings.surveyKnockout.anon.ItemCaption
-import typings.surveyKnockout.anon.ItemChecked
+import typings.surveyKnockout.anon.ItemInline
+import typings.surveyKnockout.anon.ItemLabel
 import typings.surveyKnockout.anon.ItemText
+import typings.surveyKnockout.anon.Label
+import typings.surveyKnockout.anon.MaxText
 import typings.surveyKnockout.anon.Root
 import typings.surveyKnockout.anon.ThemeMark
 import org.scalablytyped.runtime.StObject
@@ -59,8 +59,8 @@ object defaultStandardCss {
   
   @JSImport("survey-knockout", "defaultStandardCss.checkbox")
   @js.native
-  def checkbox: Column = js.native
-  inline def checkbox_=(x: Column): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkbox")(x.asInstanceOf[js.Any])
+  def checkbox: ItemInline = js.native
+  inline def checkbox_=(x: ItemInline): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkbox")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultStandardCss.comment")
   @js.native
@@ -84,8 +84,8 @@ object defaultStandardCss {
   
   @JSImport("survey-knockout", "defaultStandardCss.dropdown")
   @js.native
-  def dropdown: CleanButton = js.native
-  inline def dropdown_=(x: CleanButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropdown")(x.asInstanceOf[js.Any])
+  def dropdown: CleanButtonSvg = js.native
+  inline def dropdown_=(x: CleanButtonSvg): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropdown")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultStandardCss.error")
   @js.native
@@ -130,8 +130,8 @@ object defaultStandardCss {
   
   @JSImport("survey-knockout", "defaultStandardCss.imagepicker")
   @js.native
-  def imagepicker: ItemChecked = js.native
-  inline def imagepicker_=(x: ItemChecked): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imagepicker")(x.asInstanceOf[js.Any])
+  def imagepicker: ItemText = js.native
+  inline def imagepicker_=(x: ItemText): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imagepicker")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultStandardCss.logo")
   @js.native
@@ -151,18 +151,18 @@ object defaultStandardCss {
   
   @JSImport("survey-knockout", "defaultStandardCss.matrixdropdown")
   @js.native
-  def matrixdropdown: ActionsCell = js.native
-  inline def matrixdropdown_=(x: ActionsCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matrixdropdown")(x.asInstanceOf[js.Any])
+  def matrixdropdown: ChoiceCell = js.native
+  inline def matrixdropdown_=(x: ChoiceCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matrixdropdown")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultStandardCss.matrixdynamic")
   @js.native
-  def matrixdynamic: Button = js.native
-  inline def matrixdynamic_=(x: Button): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matrixdynamic")(x.asInstanceOf[js.Any])
+  def matrixdynamic: DetailButtonExpanded = js.native
+  inline def matrixdynamic_=(x: DetailButtonExpanded): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matrixdynamic")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultStandardCss.multipletext")
   @js.native
-  def multipletext: Item = js.native
-  inline def multipletext_=(x: Item): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multipletext")(x.asInstanceOf[js.Any])
+  def multipletext: ItemLabel = js.native
+  inline def multipletext_=(x: ItemLabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multipletext")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultStandardCss.navigation")
   @js.native
@@ -198,8 +198,8 @@ object defaultStandardCss {
   
   @JSImport("survey-knockout", "defaultStandardCss.paneldynamic")
   @js.native
-  def paneldynamic: ButtonAdd = js.native
-  inline def paneldynamic_=(x: ButtonAdd): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("paneldynamic")(x.asInstanceOf[js.Any])
+  def paneldynamic: ButtonNextDisabled = js.native
+  inline def paneldynamic_=(x: ButtonNextDisabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("paneldynamic")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultStandardCss.progress")
   @js.native
@@ -286,8 +286,8 @@ object defaultStandardCss {
   
   @JSImport("survey-knockout", "defaultStandardCss.radiogroup")
   @js.native
-  def radiogroup: ClearButton = js.native
-  inline def radiogroup_=(x: ClearButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radiogroup")(x.asInstanceOf[js.Any])
+  def radiogroup: Label = js.native
+  inline def radiogroup_=(x: Label): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radiogroup")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultStandardCss.ranking")
   @js.native
@@ -296,8 +296,8 @@ object defaultStandardCss {
   
   @JSImport("survey-knockout", "defaultStandardCss.rating")
   @js.native
-  def rating: ItemText = js.native
-  inline def rating_=(x: ItemText): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rating")(x.asInstanceOf[js.Any])
+  def rating: MaxText = js.native
+  inline def rating_=(x: MaxText): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rating")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultStandardCss.root")
   @js.native
@@ -321,8 +321,8 @@ object defaultStandardCss {
   
   @JSImport("survey-knockout", "defaultStandardCss.tagbox")
   @js.native
-  def tagbox: CleanButtonIconId = js.native
-  inline def tagbox_=(x: CleanButtonIconId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
+  def tagbox: CleanItemButton = js.native
+  inline def tagbox_=(x: CleanItemButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultStandardCss.text")
   @js.native

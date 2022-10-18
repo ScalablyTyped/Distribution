@@ -1,19 +1,19 @@
 package typings.plottable
 
-import typings.plottable.axisMod.AxisOrientation
-import typings.plottable.barPlotMod.BarAlignment
-import typings.plottable.barPlotMod.BarOrientation
-import typings.plottable.barPlotMod.LabelsPosition
-import typings.plottable.componentMod.XAlignment
-import typings.plottable.componentMod.YAlignment
-import typings.plottable.easingAnimatorMod.EaseName
-import typings.plottable.linePlotMod.CurveName
-import typings.plottable.plotMod.Renderer
-import typings.plottable.renderControllerMod.Policy
-import typings.plottable.stackingUtilsMod.IStackingOrder
-import typings.plottable.timeAxisMod.TierLabelPosition
-import typings.plottable.timeAxisMod.TimeAxisOrientation
-import typings.plottable.timeAxisMod.TimeInterval
+import typings.plottable.buildSrcAnimatorsEasingAnimatorMod.EaseName
+import typings.plottable.buildSrcAxesAxisMod.AxisOrientation
+import typings.plottable.buildSrcAxesTimeAxisMod.TierLabelPosition
+import typings.plottable.buildSrcAxesTimeAxisMod.TimeAxisOrientation
+import typings.plottable.buildSrcAxesTimeAxisMod.TimeInterval
+import typings.plottable.buildSrcComponentsComponentMod.XAlignment
+import typings.plottable.buildSrcComponentsComponentMod.YAlignment
+import typings.plottable.buildSrcCoreRenderControllerMod.Policy
+import typings.plottable.buildSrcPlotsBarPlotMod.BarAlignment
+import typings.plottable.buildSrcPlotsBarPlotMod.BarOrientation
+import typings.plottable.buildSrcPlotsBarPlotMod.LabelsPosition
+import typings.plottable.buildSrcPlotsLinePlotMod.CurveName
+import typings.plottable.buildSrcPlotsPlotMod.Renderer
+import typings.plottable.buildSrcUtilsStackingUtilsMod.IStackingOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -296,10 +296,6 @@ object plottableStrings {
     extends StObject
        with CurveName
   inline def linearClosed: linearClosed = "linearClosed".asInstanceOf[linearClosed]
-  
-  @js.native
-  sealed trait makeEnum extends StObject
-  inline def makeEnum: makeEnum = "makeEnum".asInstanceOf[makeEnum]
   
   @js.native
   sealed trait middle

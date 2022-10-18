@@ -1,7 +1,7 @@
 package typings.broadcastChannel
 
-import typings.broadcastChannel.broadcastChannelMod.EventContext
-import typings.broadcastChannel.broadcastChannelMod.MethodType
+import typings.broadcastChannel.typesBroadcastChannelMod.EventContext
+import typings.broadcastChannel.typesBroadcastChannelMod.MethodType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

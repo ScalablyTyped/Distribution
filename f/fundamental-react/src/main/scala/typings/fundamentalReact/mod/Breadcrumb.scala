@@ -3,7 +3,7 @@ package typings.fundamentalReact.mod
 import typings.fundamentalReact.anon.FunctionComponentBreadcru
 import typings.fundamentalReact.anon.PartialBreadcrumbProps
 import typings.fundamentalReact.anon.WeakValidationMapBreadcru
-import typings.fundamentalReact.breadcrumbMod.BreadcrumbProps
+import typings.fundamentalReact.libBreadcrumbBreadcrumbMod.BreadcrumbProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

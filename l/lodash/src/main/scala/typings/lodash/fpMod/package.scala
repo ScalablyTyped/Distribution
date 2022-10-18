@@ -1,6 +1,5 @@
 package typings.lodash.fpMod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.lodash.anon.Typeoflodash
 import typings.lodash.lodashBooleans.`false`
 import typings.lodash.lodashBooleans.`true`
@@ -972,9 +971,7 @@ Dictionary[TResult]]
 
 type LodashMapValues2x1[T, TResult] = js.Function1[
 /* obj */ js.UndefOr[T | Null], 
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: TResult}
-  */ typings.lodash.lodashStrings.LodashMapValues2x1 & TopLevel[Any]]
+/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: TResult} */ js.Any]
 
 type LodashMapValues5x1[T, TKey /* <: /* keyof T */ String */] = js.Function1[
 /* obj */ js.UndefOr[Dictionary[T] | NumericDictionary[T] | Null], 

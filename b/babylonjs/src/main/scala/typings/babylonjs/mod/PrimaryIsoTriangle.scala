@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "_PrimaryIsoTriangle")
 @js.native
 open class PrimaryIsoTriangle ()
-  extends typings.babylonjs.legacyMod.PrimaryIsoTriangle
+  extends typings.babylonjs.legacyLegacyMod.PrimaryIsoTriangle

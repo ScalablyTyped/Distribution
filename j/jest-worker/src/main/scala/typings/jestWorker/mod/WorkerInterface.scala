@@ -1,6 +1,6 @@
 package typings.jestWorker.mod
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +12,9 @@ trait WorkerInterface extends StObject {
   
   def getMemoryUsage(): js.Promise[Double | Null] = js.native
   
-  def getStderr(): ReadableStream[Any] | Null = js.native
+  def getStderr(): ReadableStream | Null = js.native
   
-  def getStdout(): ReadableStream[Any] | Null = js.native
+  def getStdout(): ReadableStream | Null = js.native
   
   def getWorkerId(): Double = js.native
   

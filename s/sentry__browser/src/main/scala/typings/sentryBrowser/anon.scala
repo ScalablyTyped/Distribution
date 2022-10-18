@@ -2,13 +2,13 @@ package typings.sentryBrowser
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.sentryBrowser.globalhandlersMod.GlobalHandlersIntegrations
-import typings.sentryBrowser.integrationsMod.Breadcrumbs
-import typings.sentryBrowser.integrationsMod.Dedupe
-import typings.sentryBrowser.integrationsMod.GlobalHandlers
-import typings.sentryBrowser.integrationsMod.HttpContext
-import typings.sentryBrowser.integrationsMod.LinkedErrors
-import typings.sentryBrowser.integrationsMod.TryCatch
+import typings.sentryBrowser.typesIntegrationsGlobalhandlersMod.GlobalHandlersIntegrations
+import typings.sentryBrowser.typesIntegrationsMod.Breadcrumbs
+import typings.sentryBrowser.typesIntegrationsMod.Dedupe
+import typings.sentryBrowser.typesIntegrationsMod.GlobalHandlers
+import typings.sentryBrowser.typesIntegrationsMod.HttpContext
+import typings.sentryBrowser.typesIntegrationsMod.LinkedErrors
+import typings.sentryBrowser.typesIntegrationsMod.TryCatch
 import typings.sentryCore.mod.Integrations.FunctionToString
 import typings.sentryCore.mod.Integrations.InboundFilters
 import org.scalablytyped.runtime.StObject
@@ -94,7 +94,7 @@ object anon {
   
   trait Mechanism extends StObject {
     
-    var mechanism: js.UndefOr[typings.sentryTypes.mechanismMod.Mechanism] = js.undefined
+    var mechanism: js.UndefOr[typings.sentryTypes.typesMechanismMod.Mechanism] = js.undefined
   }
   object Mechanism {
     
@@ -105,7 +105,7 @@ object anon {
     
     extension [Self <: Mechanism](x: Self) {
       
-      inline def setMechanism(value: typings.sentryTypes.mechanismMod.Mechanism): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
+      inline def setMechanism(value: typings.sentryTypes.typesMechanismMod.Mechanism): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
       inline def setMechanismUndefined: Self = StObject.set(x, "mechanism", js.undefined)
     }

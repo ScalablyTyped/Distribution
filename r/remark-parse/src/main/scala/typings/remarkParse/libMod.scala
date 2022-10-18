@@ -12,7 +12,7 @@ object libMod {
   
   inline def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
   inline def default(options: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def default(options: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(options: typings.mdastUtilFromMarkdown.libMod.Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Options = typings.mdastUtilFromMarkdown.mod.Options
   

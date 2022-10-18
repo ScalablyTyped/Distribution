@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "FreeCameraKeyboardMoveInput")
 @js.native
 open class FreeCameraKeyboardMoveInput ()
-  extends typings.babylonjs.babylonjsMod.FreeCameraKeyboardMoveInput
+  extends typings.babylonjs.camerasIndexMod.FreeCameraKeyboardMoveInput

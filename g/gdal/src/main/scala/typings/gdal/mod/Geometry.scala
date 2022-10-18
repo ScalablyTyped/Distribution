@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gdal", "Geometry")
+/* note: abstract class */ @JSImport("gdal", "Geometry")
 @js.native
-abstract class Geometry () extends StObject {
+open class Geometry () extends StObject {
   
   def boundary(): Geometry = js.native
   

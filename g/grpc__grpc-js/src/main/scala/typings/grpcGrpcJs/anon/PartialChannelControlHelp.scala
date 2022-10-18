@@ -1,12 +1,12 @@
 package typings.grpcGrpcJs.anon
 
-import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
-import typings.grpcGrpcJs.channelzMod.ChannelRef
-import typings.grpcGrpcJs.channelzMod.SubchannelRef
-import typings.grpcGrpcJs.connectivityStateMod.ConnectivityState
-import typings.grpcGrpcJs.pickerMod.Picker
-import typings.grpcGrpcJs.subchannelAddressMod.SubchannelAddress
-import typings.grpcGrpcJs.subchannelInterfaceMod.SubchannelInterface
+import typings.grpcGrpcJs.buildSrcChannelOptionsMod.ChannelOptions
+import typings.grpcGrpcJs.buildSrcChannelzMod.ChannelRef
+import typings.grpcGrpcJs.buildSrcChannelzMod.SubchannelRef
+import typings.grpcGrpcJs.buildSrcConnectivityStateMod.ConnectivityState
+import typings.grpcGrpcJs.buildSrcPickerMod.Picker
+import typings.grpcGrpcJs.buildSrcSubchannelAddressMod.SubchannelAddress
+import typings.grpcGrpcJs.buildSrcSubchannelInterfaceMod.SubchannelInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

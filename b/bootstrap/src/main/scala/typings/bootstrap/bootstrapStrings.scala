@@ -1,6 +1,7 @@
 package typings.bootstrap
 
-import typings.bootstrap.carouselMod.Carousel.Direction
+import typings.bootstrap.jsDistCarouselMod.Carousel.Direction
+import typings.bootstrap.jsDistTooltipMod.Tooltip.PopoverPlacement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +13,15 @@ object bootstrapStrings {
   inline def alert: alert = "alert".asInstanceOf[alert]
   
   @js.native
-  sealed trait auto extends StObject
+  sealed trait auto
+    extends StObject
+       with PopoverPlacement
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait bottom extends StObject
+  sealed trait bottom
+    extends StObject
+       with PopoverPlacement
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
@@ -103,6 +108,7 @@ object bootstrapStrings {
   sealed trait left
     extends StObject
        with Direction
+       with PopoverPlacement
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
@@ -153,6 +159,7 @@ object bootstrapStrings {
   sealed trait right
     extends StObject
        with Direction
+       with PopoverPlacement
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
@@ -200,7 +207,9 @@ object bootstrapStrings {
   inline def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   
   @js.native
-  sealed trait top extends StObject
+  sealed trait top
+    extends StObject
+       with PopoverPlacement
   inline def top: top = "top".asInstanceOf[top]
   
   @js.native

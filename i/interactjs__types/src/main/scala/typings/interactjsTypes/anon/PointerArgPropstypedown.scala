@@ -1,8 +1,8 @@
 package typings.interactjsTypes.anon
 
+import typings.interactjsTypes.corePointerInfoMod.PointerInfo
+import typings.interactjsTypes.coreTypesMod.PointerEventType
 import typings.interactjsTypes.interactjsTypesStrings.down
-import typings.interactjsTypes.pointerInfoMod.PointerInfo
-import typings.interactjsTypes.typesMod.PointerEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +14,9 @@ trait PointerArgPropstypedown extends StObject {
   
   var eventTarget: typings.std.Node
   
-  var interaction: typings.interactjsTypes.interactionMod.Interaction[scala.Nothing]
+  var interaction: typings.interactjsTypes.coreInteractionMod.Interaction[scala.Nothing]
   
-  var pointer: typings.interactjsTypes.typesMod.PointerType
+  var pointer: typings.interactjsTypes.coreTypesMod.PointerType
   
   var pointerIndex: Double
   
@@ -29,8 +29,8 @@ object PointerArgPropstypedown {
   inline def apply(
     event: PointerEventType,
     eventTarget: typings.std.Node,
-    interaction: typings.interactjsTypes.interactionMod.Interaction[scala.Nothing],
-    pointer: typings.interactjsTypes.typesMod.PointerType,
+    interaction: typings.interactjsTypes.coreInteractionMod.Interaction[scala.Nothing],
+    pointer: typings.interactjsTypes.coreTypesMod.PointerType,
     pointerIndex: Double,
     pointerInfo: PointerInfo
   ): PointerArgPropstypedown = {
@@ -45,9 +45,9 @@ object PointerArgPropstypedown {
     
     inline def setEventTarget(value: typings.std.Node): Self = StObject.set(x, "eventTarget", value.asInstanceOf[js.Any])
     
-    inline def setInteraction(value: typings.interactjsTypes.interactionMod.Interaction[scala.Nothing]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+    inline def setInteraction(value: typings.interactjsTypes.coreInteractionMod.Interaction[scala.Nothing]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
-    inline def setPointer(value: typings.interactjsTypes.typesMod.PointerType): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+    inline def setPointer(value: typings.interactjsTypes.coreTypesMod.PointerType): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     
     inline def setPointerIndex(value: Double): Self = StObject.set(x, "pointerIndex", value.asInstanceOf[js.Any])
     

@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsDeleteMod.DeleteProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsDeleteMod.DeleteProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deleteMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Delete", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Delete", JSImport.Default)
   @js.native
   val default: FC[DeleteProps] = js.native
   

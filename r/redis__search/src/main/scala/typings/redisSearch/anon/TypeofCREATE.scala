@@ -1,7 +1,7 @@
 package typings.redisSearch.anon
 
-import typings.redisSearch.commandsMod.RediSearchSchema
-import typings.redisSearch.createMod.CreateOptions
+import typings.redisSearch.distCommandsCreateMod.CreateOptions
+import typings.redisSearch.distCommandsMod.RediSearchSchema
 import typings.redisSearch.redisSearchStrings.OK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

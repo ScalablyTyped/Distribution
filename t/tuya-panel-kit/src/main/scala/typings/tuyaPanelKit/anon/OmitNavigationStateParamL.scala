@@ -2,7 +2,7 @@ package typings.tuyaPanelKit.anon
 
 import typings.std.Extract
 import typings.std.Omit
-import typings.tuyaPanelKit.commonActionsMod._ResetState
+import typings.tuyaPanelKit.`@reactNavigationRoutersCommonActionsMod`._ResetState
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`false`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.key
 import org.scalablytyped.runtime.StObject
@@ -29,7 +29,10 @@ trait OmitNavigationStateParamL
   
   // tslint:disable-next-line array-type
   var routes: js.Array[
-    Omit[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]], key]
+    Omit[
+      typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[String, js.UndefOr[js.Object]], 
+      key
+    ]
   ]
   
   var stale: `false`
@@ -48,7 +51,10 @@ object OmitNavigationStateParamL {
       ]
     ],
     routes: js.Array[
-      Omit[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]], key]
+      Omit[
+        typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[String, js.UndefOr[js.Object]], 
+        key
+      ]
     ],
     `type`: String
   ): OmitNavigationStateParamL = {
@@ -87,11 +93,19 @@ object OmitNavigationStateParamL {
     
     inline def setRoutes(
       value: js.Array[
-          Omit[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]], key]
+          Omit[
+            typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[String, js.UndefOr[js.Object]], 
+            key
+          ]
         ]
     ): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    inline def setRoutesVarargs(value: (Omit[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]], key])*): Self = StObject.set(x, "routes", js.Array(value*))
+    inline def setRoutesVarargs(
+      value: (Omit[
+          typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[String, js.UndefOr[js.Object]], 
+          key
+        ])*
+    ): Self = StObject.set(x, "routes", js.Array(value*))
     
     inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     

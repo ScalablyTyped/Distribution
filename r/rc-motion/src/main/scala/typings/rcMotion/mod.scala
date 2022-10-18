@@ -2,7 +2,7 @@ package typings.rcMotion
 
 import org.scalablytyped.runtime.Shortcut
 import typings.rcMotion.anon.CSSMotionPropsrefRefanyun
-import typings.rcMotion.cssmotionlistMod.CSSMotionListProps
+import typings.rcMotion.esCssmotionlistMod.CSSMotionListProps
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ForwardRefExoticComponent

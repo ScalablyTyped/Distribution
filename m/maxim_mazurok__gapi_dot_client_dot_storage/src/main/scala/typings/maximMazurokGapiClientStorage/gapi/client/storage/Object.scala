@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientStorage.gapi.client.storage
 
-import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientStorage.anon.EncryptionAlgorithm
 import typings.maximMazurokGapiClientStorage.anon.Entity
 import org.scalablytyped.runtime.StObject
@@ -77,9 +76,7 @@ trait Object extends StObject {
   
   /** User-provided metadata, in key/value pairs. */
   var metadata: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Object & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -221,9 +218,7 @@ object Object {
     inline def setMediaLinkUndefined: Self = StObject.set(x, "mediaLink", js.undefined)
     
     inline def setMetadata(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Object & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

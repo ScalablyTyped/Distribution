@@ -88,7 +88,9 @@ object mod {
     * Note that the 'error' event may be emitted multiple times! depending on the callback you are registering, you way want to wrap it using [once][].
     */
   @js.native
-  trait Transaction extends Queryable {
+  trait Transaction
+    extends StObject
+       with Queryable {
     
     /**
       * Issue a COMMIT (or RELEASE ... in the case of nested transactions) statement to the database.

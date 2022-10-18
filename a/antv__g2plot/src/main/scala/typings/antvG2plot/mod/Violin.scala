@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialViolinOptions
-import typings.antvG2plot.violinTypesMod.ViolinOptions
+import typings.antvG2plot.libPlotsViolinTypesMod.ViolinOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Violin")
 @js.native
 open class Violin protected ()
-  extends typings.antvG2plot.plotsViolinMod.Violin {
+  extends typings.antvG2plot.libPlotsViolinMod.Violin {
   def this(container: String, options: ViolinOptions) = this()
   def this(container: HTMLElement, options: ViolinOptions) = this()
 }

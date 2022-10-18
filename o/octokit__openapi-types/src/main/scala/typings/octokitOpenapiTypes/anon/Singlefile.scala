@@ -25,7 +25,11 @@ trait Singlefile extends StObject {
   var permissions: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /** @description The repositories this token has access to */
-  var repositories: js.UndefOr[js.Array[Allowupdatebranch]] = js.undefined
+  var repositories: js.UndefOr[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
+    ]
+  ] = js.undefined
   
   /**
     * @description Describe whether all repositories have been selected or there's a selection involved
@@ -57,11 +61,17 @@ object Singlefile {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setRepositories(value: js.Array[Allowupdatebranch]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
+    inline def setRepositories(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
     inline def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
     
-    inline def setRepositoriesVarargs(value: Allowupdatebranch*): Self = StObject.set(x, "repositories", js.Array(value*))
+    inline def setRepositoriesVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any)*
+    ): Self = StObject.set(x, "repositories", js.Array(value*))
     
     inline def setRepository_selection(value: all | selected): Self = StObject.set(x, "repository_selection", value.asInstanceOf[js.Any])
     

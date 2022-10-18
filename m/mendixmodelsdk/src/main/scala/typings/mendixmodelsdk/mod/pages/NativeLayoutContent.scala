@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.NativeLayoutContent")
 @js.native
 open class NativeLayoutContent protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.NativeLayoutContent {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.NativeLayoutContent {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object NativeLayoutContent {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.NativeLayoutContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.NativeLayoutContent]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.NativeLayoutContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.NativeLayoutContent]
   
   /**
     * Creates and returns a new NativeLayoutContent instance in the SDK and on the server.
@@ -50,7 +50,7 @@ object NativeLayoutContent {
     *  8.0.0 and higher
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.Layout): typings.mendixmodelsdk.pagesMod.pages.NativeLayoutContent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.NativeLayoutContent]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Layout): typings.mendixmodelsdk.srcGenPagesMod.pages.NativeLayoutContent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.NativeLayoutContent]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.NativeLayoutContent.structureTypeName")

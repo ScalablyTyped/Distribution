@@ -1,6 +1,6 @@
 package typings.konva.anon
 
-import typings.konva.typesMod.Vector2d
+import typings.konva.libTypesMod.Vector2d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

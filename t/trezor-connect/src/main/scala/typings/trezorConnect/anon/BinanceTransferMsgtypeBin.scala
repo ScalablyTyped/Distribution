@@ -1,7 +1,7 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.binanceMod.BinancePreparedMessage
-import typings.trezorConnect.protobufMod.BinanceInputOutput
+import typings.trezorConnect.libTypescriptNetworksBinanceMod.BinancePreparedMessage
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.BinanceInputOutput
 import typings.trezorConnect.trezorConnectStrings.BinanceTransferMsg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

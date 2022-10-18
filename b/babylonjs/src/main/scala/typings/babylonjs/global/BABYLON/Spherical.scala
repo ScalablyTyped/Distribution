@@ -234,7 +234,7 @@ open class Spherical protected ()
   
   /**
     * Gets a Vector3 from the current spherical coordinates
-    * @returns the Vector3
+    * @returns the (x, y,z) form of the current Spherical
     */
   /* CompleteClass */
   override def toVector3(): typings.babylonjs.BABYLON.Vector3 = js.native

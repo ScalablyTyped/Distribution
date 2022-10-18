@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "SkewX")
 @js.native
 open class SkewX protected ()
-  extends typings.canvg.transformMod.SkewX {
+  extends typings.canvg.distTransformMod.SkewX {
   def this(
-    document: typings.canvg.documentMod.Document,
+    document: typings.canvg.distDocumentMod.Document,
     skew: String,
     transformOrigin: js.Tuple2[
-        typings.canvg.propertyMod.Property[String], 
-        typings.canvg.propertyMod.Property[String]
+        typings.canvg.distPropertyMod.Property[String], 
+        typings.canvg.distPropertyMod.Property[String]
       ]
   ) = this()
 }

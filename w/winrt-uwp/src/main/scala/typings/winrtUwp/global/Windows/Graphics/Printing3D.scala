@@ -27,9 +27,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Printing3D {
   
   /** Creates the 3D printing experience. */
-  @JSGlobal("Windows.Graphics.Printing3D.Print3DManager")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing3D.Print3DManager")
   @js.native
-  abstract class Print3DManager ()
+  open class Print3DManager ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Print3DManager
   object Print3DManager {
@@ -54,16 +54,16 @@ object Printing3D {
   }
   
   /** Represents a 3D print job. */
-  @JSGlobal("Windows.Graphics.Printing3D.Print3DTask")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing3D.Print3DTask")
   @js.native
-  abstract class Print3DTask ()
+  open class Print3DTask ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Print3DTask
   
   /** Provides data for the Completed event of the 3D print request. */
-  @JSGlobal("Windows.Graphics.Printing3D.Print3DTaskCompletedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing3D.Print3DTaskCompletedEventArgs")
   @js.native
-  abstract class Print3DTaskCompletedEventArgs ()
+  open class Print3DTaskCompletedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Print3DTaskCompletedEventArgs {
     
@@ -119,9 +119,9 @@ object Printing3D {
   }
   
   /** Represents a 3D print job request. */
-  @JSGlobal("Windows.Graphics.Printing3D.Print3DTaskRequest")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing3D.Print3DTaskRequest")
   @js.native
-  abstract class Print3DTaskRequest ()
+  open class Print3DTaskRequest ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Print3DTaskRequest {
     
@@ -137,9 +137,9 @@ object Printing3D {
   }
   
   /** Provides data for the TaskRequested event. */
-  @JSGlobal("Windows.Graphics.Printing3D.Print3DTaskRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing3D.Print3DTaskRequestedEventArgs")
   @js.native
-  abstract class Print3DTaskRequestedEventArgs ()
+  open class Print3DTaskRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Print3DTaskRequestedEventArgs {
     
@@ -149,9 +149,9 @@ object Printing3D {
   }
   
   /** Provides data for the SourceChanged event. */
-  @JSGlobal("Windows.Graphics.Printing3D.Print3DTaskSourceChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing3D.Print3DTaskSourceChangedEventArgs")
   @js.native
-  abstract class Print3DTaskSourceChangedEventArgs ()
+  open class Print3DTaskSourceChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Print3DTaskSourceChangedEventArgs {
     
@@ -161,9 +161,9 @@ object Printing3D {
   }
   
   /** Provides data for the Print3DTaskSourceRequestedHandler delegate. */
-  @JSGlobal("Windows.Graphics.Printing3D.Print3DTaskSourceRequestedArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing3D.Print3DTaskSourceRequestedArgs")
   @js.native
-  abstract class Print3DTaskSourceRequestedArgs ()
+  open class Print3DTaskSourceRequestedArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Print3DTaskSourceRequestedArgs {
     
@@ -598,9 +598,9 @@ object Printing3D {
   }
   
   /** Provides data for the VerifyAsync method. */
-  @JSGlobal("Windows.Graphics.Printing3D.Printing3DMeshVerificationResult")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing3D.Printing3DMeshVerificationResult")
   @js.native
-  abstract class Printing3DMeshVerificationResult ()
+  open class Printing3DMeshVerificationResult ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DMeshVerificationResult {
     

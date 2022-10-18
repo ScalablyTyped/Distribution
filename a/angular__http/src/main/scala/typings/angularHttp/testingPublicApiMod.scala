@@ -10,12 +10,12 @@ object testingPublicApiMod {
   @JSImport("@angular/http/testing/public_api", "MockBackend")
   @js.native
   open class MockBackend ()
-    extends typings.angularHttp.srcTestingMod.MockBackend
+    extends typings.angularHttp.testingSrcTestingMod.MockBackend
   
   @JSImport("@angular/http/testing/public_api", "MockConnection")
   @js.native
   open class MockConnection protected ()
-    extends typings.angularHttp.srcTestingMod.MockConnection {
+    extends typings.angularHttp.testingSrcTestingMod.MockConnection {
     def this(req: Request) = this()
   }
 }

@@ -11,4 +11,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
   */
 open class FlyCameraMouseInput ()
-  extends typings.babylonjs.babylonjsMod.FlyCameraMouseInput
+  extends typings.babylonjs.camerasIndexMod.FlyCameraMouseInput

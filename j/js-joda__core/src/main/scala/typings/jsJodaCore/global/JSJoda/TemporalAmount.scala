@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("JSJoda.TemporalAmount")
+/* note: abstract class */ @JSGlobal("JSJoda.TemporalAmount")
 @js.native
-abstract class TemporalAmount ()
+open class TemporalAmount ()
   extends typings.jsJodaCore.mod.TemporalAmount

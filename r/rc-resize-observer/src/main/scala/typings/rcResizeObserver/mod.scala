@@ -1,6 +1,6 @@
 package typings.rcResizeObserver
 
-import typings.rcResizeObserver.collectionMod.CollectionProps
+import typings.rcResizeObserver.esCollectionMod.CollectionProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.RefObject

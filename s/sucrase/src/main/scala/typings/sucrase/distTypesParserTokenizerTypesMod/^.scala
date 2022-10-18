@@ -1,0 +1,9 @@
+package typings.sucrase.distTypesParserTokenizerTypesMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("sucrase/dist/types/parser/tokenizer/types", JSImport.Namespace)
+@js.native
+object ^ extends StObject

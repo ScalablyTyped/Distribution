@@ -1,16 +1,16 @@
 package typings.mendixmodelsdk
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.commonMod.common.IErrorCallback
-import typings.mendixmodelsdk.configurationMod.configuration.ISdkConfig
-import typings.mendixmodelsdk.elementsMod.Element
-import typings.mendixmodelsdk.imodelserverclientMod.IModelServerClient
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.iworkingcopyeventMod.BuildResultStatus
-import typings.mendixmodelsdk.structuresMod.Structure
-import typings.mendixmodelsdk.structuresMod.aliases.IContainer
-import typings.mendixmodelsdk.utilsMod.utils.IMap
+import typings.mendixmodelsdk.srcCommonMod.common.IErrorCallback
+import typings.mendixmodelsdk.srcSdkConfigurationMod.configuration.ISdkConfig
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalElementsMod.Element
+import typings.mendixmodelsdk.srcSdkInternalImodelserverclientMod.IModelServerClient
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.Structure
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.IContainer
+import typings.mendixmodelsdk.srcSdkInternalWorkingCopyEventsIworkingcopyeventMod.BuildResultStatus
+import typings.mendixmodelsdk.srcSdkUtilsMod.utils.IMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

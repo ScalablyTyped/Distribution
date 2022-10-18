@@ -1,10 +1,10 @@
 package typings.slateReact.anon
 
-import typings.slate.elementMod.Element
-import typings.slate.rangeMod.Range
-import typings.slateReact.editableMod.RenderElementProps
-import typings.slateReact.editableMod.RenderLeafProps
-import typings.slateReact.editableMod.RenderPlaceholderProps
+import typings.slate.distInterfacesElementMod.Element
+import typings.slate.distInterfacesRangeMod.Range
+import typings.slateReact.distComponentsEditableMod.RenderElementProps
+import typings.slateReact.distComponentsEditableMod.RenderLeafProps
+import typings.slateReact.distComponentsEditableMod.RenderPlaceholderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,5 +1,6 @@
 package typings.gulpSourcemaps
 
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.bufferMod.global.BufferEncoding
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
@@ -12,17 +13,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def init(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Any]
-  inline def init(opts: InitOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def init(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[ReadWriteStream]
+  inline def init(opts: InitOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
-  inline def mapSources(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapSources")().asInstanceOf[Any]
-  inline def mapSources(mapper: SourceMapMapper): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapSources")(mapper.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def mapSources(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("mapSources")().asInstanceOf[ReadWriteStream]
+  inline def mapSources(mapper: SourceMapMapper): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("mapSources")(mapper.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
-  inline def write(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")().asInstanceOf[Any]
-  inline def write(opts: WriteOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def write(path: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def write(path: String, opts: WriteOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def write(path: Unit, opts: WriteOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def write(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("write")().asInstanceOf[ReadWriteStream]
+  inline def write(opts: WriteOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def write(path: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def write(path: String, opts: WriteOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def write(path: Unit, opts: WriteOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   trait CloneOptions extends StObject {
     

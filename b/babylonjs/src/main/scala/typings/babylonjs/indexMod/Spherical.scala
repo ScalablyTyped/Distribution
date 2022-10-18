@@ -28,14 +28,14 @@ object Spherical {
     * @param array the array to convert
     * @returns the converted spherical
     */
-  inline def FromArray(array: js.Array[Double]): typings.babylonjs.mathPolarMod.Spherical = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathPolarMod.Spherical]
+  inline def FromArray(array: js.Array[Double]): typings.babylonjs.mathsMathDotpolarMod.Spherical = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotpolarMod.Spherical]
   
   /**
     * Gets a Spherical from a Vector3
     * @param vector defines the vector in (x, y, z) coordinate space
     * @returns a new Spherical
     */
-  inline def FromVector3(vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]): typings.babylonjs.mathPolarMod.Spherical = ^.asInstanceOf[js.Dynamic].applyDynamic("FromVector3")(vector.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathPolarMod.Spherical]
+  inline def FromVector3(vector: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3]): typings.babylonjs.mathsMathDotpolarMod.Spherical = ^.asInstanceOf[js.Dynamic].applyDynamic("FromVector3")(vector.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotpolarMod.Spherical]
   
   /**
     * Assigns the spherical coordinates from a Vector3
@@ -44,7 +44,7 @@ object Spherical {
     * @returns the updated ref
     */
   inline def FromVector3ToRef(
-    vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    ref: typings.babylonjs.mathPolarMod.Spherical
-  ): typings.babylonjs.mathPolarMod.Spherical = (^.asInstanceOf[js.Dynamic].applyDynamic("FromVector3ToRef")(vector.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPolarMod.Spherical]
+    vector: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    ref: typings.babylonjs.mathsMathDotpolarMod.Spherical
+  ): typings.babylonjs.mathsMathDotpolarMod.Spherical = (^.asInstanceOf[js.Dynamic].applyDynamic("FromVector3ToRef")(vector.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotpolarMod.Spherical]
 }

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [right=0] - Represents the right border of this fuzzy set.
   */
 open class TriangularFuzzySet ()
-  extends typings.yuka.yukaMod.TriangularFuzzySet {
+  extends typings.yuka.srcYukaMod.TriangularFuzzySet {
   def this(left: Double) = this()
   def this(left: Double, midpoint: Double) = this()
   def this(left: Unit, midpoint: Double) = this()

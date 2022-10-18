@@ -2,7 +2,7 @@ package typings.cheerio
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.cheerio.cheerioStrings._empty
-import typings.cheerio.libLoadMod.CheerioAPI
+import typings.cheerio.libEsmLoadMod.CheerioAPI
 import typings.cheerio.libOptionsMod.CheerioOptions
 import typings.cheerio.libOptionsMod.InternalOptions
 import typings.cheerio.libStaticMod.WritableArrayLike
@@ -33,14 +33,14 @@ object mod {
   @js.native
   val default: CheerioAPI = js.native
   
-  @JSImport("cheerio", "Cheerio")
+  /* note: abstract class */ @JSImport("cheerio", "Cheerio")
   @js.native
-  abstract class Cheerio[T] protected ()
-    extends typings.cheerio.cheerioMod.Cheerio[T] {
+  open class Cheerio[T] protected ()
+    extends typings.cheerio.libCheerioMod.Cheerio[T] {
     def this(elements: Unit, root: Null, options: InternalOptions) = this()
     def this(
       elements: Unit,
-      root: typings.cheerio.cheerioMod.Cheerio[typings.domhandler.mod.Document],
+      root: typings.cheerio.libCheerioMod.Cheerio[typings.domhandler.mod.Document],
       options: InternalOptions
     ) = this()
     def this(elements: ArrayLike[T], root: Null, options: InternalOptions) = this()
@@ -55,7 +55,7 @@ object mod {
       */
     def this(
       elements: ArrayLike[T],
-      root: typings.cheerio.cheerioMod.Cheerio[typings.domhandler.mod.Document],
+      root: typings.cheerio.libCheerioMod.Cheerio[typings.domhandler.mod.Document],
       options: InternalOptions
     ) = this()
   }
@@ -89,9 +89,9 @@ object mod {
     def this(name: String, attribs: StringDictionary[String], children: Unit, `type`: Tag) = this()
   }
   
-  @JSImport("cheerio", "Node")
+  /* note: abstract class */ @JSImport("cheerio", "Node")
   @js.native
-  abstract class Node ()
+  open class Node ()
     extends typings.domhandler.mod.Node
   
   @JSImport("cheerio", "contains")
@@ -107,23 +107,27 @@ object mod {
   inline def load(content: String): CheerioAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any]).asInstanceOf[CheerioAPI]
   inline def load(content: String, options: Null, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
   inline def load(content: String, options: Unit, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
-  inline def load(content: String, options: CheerioOptions): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
-  inline def load(content: String, options: CheerioOptions, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
+  inline def load(content: String, options: typings.cheerio.libEsmOptionsMod.CheerioOptions): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
+  inline def load(content: String, options: typings.cheerio.libEsmOptionsMod.CheerioOptions, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
   inline def load(content: js.Array[AnyNode]): CheerioAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any]).asInstanceOf[CheerioAPI]
   inline def load(content: js.Array[AnyNode], options: Null, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
   inline def load(content: js.Array[AnyNode], options: Unit, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
-  inline def load(content: js.Array[AnyNode], options: CheerioOptions): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
-  inline def load(content: js.Array[AnyNode], options: CheerioOptions, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
+  inline def load(content: js.Array[AnyNode], options: typings.cheerio.libEsmOptionsMod.CheerioOptions): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
+  inline def load(
+    content: js.Array[AnyNode],
+    options: typings.cheerio.libEsmOptionsMod.CheerioOptions,
+    isDocument: Boolean
+  ): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
   inline def load(content: AnyNode): CheerioAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any]).asInstanceOf[CheerioAPI]
   inline def load(content: AnyNode, options: Null, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
   inline def load(content: AnyNode, options: Unit, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
-  inline def load(content: AnyNode, options: CheerioOptions): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
-  inline def load(content: AnyNode, options: CheerioOptions, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
+  inline def load(content: AnyNode, options: typings.cheerio.libEsmOptionsMod.CheerioOptions): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
+  inline def load(content: AnyNode, options: typings.cheerio.libEsmOptionsMod.CheerioOptions, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
   inline def load(content: Buffer): CheerioAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any]).asInstanceOf[CheerioAPI]
   inline def load(content: Buffer, options: Null, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
   inline def load(content: Buffer, options: Unit, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
-  inline def load(content: Buffer, options: CheerioOptions): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
-  inline def load(content: Buffer, options: CheerioOptions, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
+  inline def load(content: Buffer, options: typings.cheerio.libEsmOptionsMod.CheerioOptions): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
+  inline def load(content: Buffer, options: typings.cheerio.libEsmOptionsMod.CheerioOptions, isDocument: Boolean): CheerioAPI = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], isDocument.asInstanceOf[js.Any])).asInstanceOf[CheerioAPI]
   
   inline def merge[T](arr1: WritableArrayLike[T], arr2: ArrayLike[T]): js.UndefOr[ArrayLike[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ArrayLike[T]]]
   
@@ -139,8 +143,8 @@ object mod {
   @JSImport("cheerio", "root")
   @js.native
   val root: js.ThisFunction0[
-    /* this */ CheerioAPI, 
-    typings.cheerio.cheerioMod.Cheerio[typings.domhandler.mod.Document]
+    /* this */ typings.cheerio.libLoadMod.CheerioAPI, 
+    typings.cheerio.libCheerioMod.Cheerio[typings.domhandler.mod.Document]
   ] = js.native
   
   inline def text(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[String]

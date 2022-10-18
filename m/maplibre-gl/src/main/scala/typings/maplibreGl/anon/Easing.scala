@@ -6,14 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Easing extends StObject {
   
-  var duration: js.UndefOr[Double] = js.undefined
+  var duration: Double
   
-  var easing: js.UndefOr[js.Function1[/* _ */ Double, Double]] = js.undefined
+  def easing(_underscore: Double): Double
+  
+  var start: Double
 }
 object Easing {
   
-  inline def apply(): Easing = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(duration: Double, easing: Double => Double, start: Double): Easing = {
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], easing = js.Any.fromFunction1(easing), start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Easing]
   }
   
@@ -21,10 +23,8 @@ object Easing {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setEasing(value: Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
     
-    inline def setEasing(value: /* _ */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
-    
-    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

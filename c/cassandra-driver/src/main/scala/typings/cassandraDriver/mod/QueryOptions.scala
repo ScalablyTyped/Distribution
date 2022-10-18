@@ -1,7 +1,7 @@
 package typings.cassandraDriver.mod
 
-import typings.cassandraDriver.policiesMod.policies.retry.RetryPolicy
-import typings.cassandraDriver.typesMod.types.Long
+import typings.cassandraDriver.libPoliciesMod.policies.retry.RetryPolicy
+import typings.cassandraDriver.libTypesMod.types.Long
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

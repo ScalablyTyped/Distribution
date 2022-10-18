@@ -1,7 +1,7 @@
 package typings.antd.anon
 
-import typings.antd.treeTreeMod.AntTreeNodeProps
-import typings.antd.treeTreeMod.TreeLeafIcon
+import typings.antd.libTreeTreeMod.AntTreeNodeProps
+import typings.antd.libTreeTreeMod.TreeLeafIcon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

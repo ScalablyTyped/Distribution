@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.isoundoptionsMod.ISoundOptions
+import typings.babylonjs.audioInterfacesIsoundoptionsMod.ISoundOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Sound")
 @js.native
 open class Sound protected ()
-  extends typings.babylonjs.legacyMod.Sound {
+  extends typings.babylonjs.legacyLegacyMod.Sound {
   /**
     * Create a sound and attach it to a scene
     * @param name Name of your sound
@@ -76,13 +76,13 @@ object Sound {
     * @param sourceSound Define a sound place holder if do not need to instantiate a new one
     * @returns the newly parsed sound
     */
-  inline def Parse(parsedSound: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.soundMod.Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.soundMod.Sound]
+  inline def Parse(parsedSound: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.audioSoundMod.Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.audioSoundMod.Sound]
   inline def Parse(
     parsedSound: Any,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
-    sourceSound: typings.babylonjs.soundMod.Sound
-  ): typings.babylonjs.soundMod.Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sourceSound.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.soundMod.Sound]
+    sourceSound: typings.babylonjs.audioSoundMod.Sound
+  ): typings.babylonjs.audioSoundMod.Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sourceSound.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.audioSoundMod.Sound]
   
   /**
     * @internal

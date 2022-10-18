@@ -1,14 +1,14 @@
 package typings.node.anon
 
 import typings.node.nodeStrings.option
-import typings.node.utilMod._PreciseTokenForOptions
+import typings.node.utilMod.OptionToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InlineValue[K /* <: String */]
+trait InlineValue
   extends StObject
-     with _PreciseTokenForOptions[K, Any] {
+     with OptionToken {
   
   var index: Double
   
@@ -16,7 +16,7 @@ trait InlineValue[K /* <: String */]
   
   var kind: option
   
-  var name: K
+  var name: String
   
   var rawName: String
   
@@ -24,12 +24,12 @@ trait InlineValue[K /* <: String */]
 }
 object InlineValue {
   
-  inline def apply[K /* <: String */](index: Double, inlineValue: Unit, name: K, rawName: String, value: Unit): InlineValue[K] = {
+  inline def apply(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): InlineValue = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InlineValue[K]]
+    __obj.asInstanceOf[InlineValue]
   }
   
-  extension [Self <: InlineValue[?], K /* <: String */](x: Self & InlineValue[K]) {
+  extension [Self <: InlineValue](x: Self) {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -37,7 +37,7 @@ object InlineValue {
     
     inline def setKind(value: option): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setRawName(value: String): Self = StObject.set(x, "rawName", value.asInstanceOf[js.Any])
     

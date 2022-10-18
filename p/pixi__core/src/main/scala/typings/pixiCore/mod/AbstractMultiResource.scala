@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pixi/core", "AbstractMultiResource")
+/* note: abstract class */ @JSImport("@pixi/core", "AbstractMultiResource")
 @js.native
-abstract class AbstractMultiResource protected () extends Resource {
+open class AbstractMultiResource protected () extends Resource {
   /**
     * @param length
     * @param options - Options to for Resource constructor

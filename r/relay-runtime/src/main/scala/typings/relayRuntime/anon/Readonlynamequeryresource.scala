@@ -1,10 +1,10 @@
 package typings.relayRuntime.anon
 
+import typings.relayRuntime.libStoreRelayStoreTypesMod.LogEvent
+import typings.relayRuntime.libStoreRelayStoreTypesMod.OperationAvailability
+import typings.relayRuntime.libStoreRelayStoreTypesMod.OperationDescriptor
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.RenderPolicy
 import typings.relayRuntime.relayRuntimeStrings.queryresourceDotfetch
-import typings.relayRuntime.relayRuntimeTypesMod.RenderPolicy
-import typings.relayRuntime.relayStoreTypesMod.LogEvent
-import typings.relayRuntime.relayStoreTypesMod.OperationAvailability
-import typings.relayRuntime.relayStoreTypesMod.OperationDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait Readonlynamequeryresource
   extends StObject
      with LogEvent {
   
-  val fetchPolicy: typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy
+  val fetchPolicy: typings.relayRuntime.libUtilRelayRuntimeTypesMod.FetchPolicy
   
   val name: queryresourceDotfetch
   
@@ -33,7 +33,7 @@ trait Readonlynamequeryresource
 object Readonlynamequeryresource {
   
   inline def apply(
-    fetchPolicy: typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy,
+    fetchPolicy: typings.relayRuntime.libUtilRelayRuntimeTypesMod.FetchPolicy,
     operation: OperationDescriptor,
     profilerContext: Any,
     queryAvailability: OperationAvailability,
@@ -47,7 +47,7 @@ object Readonlynamequeryresource {
   
   extension [Self <: Readonlynamequeryresource](x: Self) {
     
-    inline def setFetchPolicy(value: typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+    inline def setFetchPolicy(value: typings.relayRuntime.libUtilRelayRuntimeTypesMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
     
     inline def setName(value: queryresourceDotfetch): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

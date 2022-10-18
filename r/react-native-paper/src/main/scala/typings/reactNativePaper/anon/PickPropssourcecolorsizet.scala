@@ -2,7 +2,7 @@ package typings.reactNativePaper.anon
 
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.ImageURISource
-import typings.reactNativePaper.iconMod.IconSource
+import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

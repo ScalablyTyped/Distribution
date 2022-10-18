@@ -3,21 +3,21 @@ package typings.baseui
 import typings.baseui.anon.Anchor
 import typings.baseui.anon.Background
 import typings.baseui.anon.BackgroundHeight
+import typings.baseui.anon.BackgroundRound
 import typings.baseui.anon.ColorHeight
-import typings.baseui.anon.ColorRound
 import typings.baseui.anon.ColorSize
 import typings.baseui.anon.Dragging
 import typings.baseui.anon.ForceCircle
 import typings.baseui.anon.LabelOffset
 import typings.baseui.anon.PerformTranslate
 import typings.baseui.anon.Position
-import typings.baseui.anon.PositionSize
 import typings.baseui.anon.Radius
 import typings.baseui.anon.Round
-import typings.baseui.anon.`16`
+import typings.baseui.anon.Stroked
+import typings.baseui.anon.`13`
 import typings.baseui.baseuiStrings.div
 import typings.baseui.mapMarkerTypesMod.AnchorPositions
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +38,7 @@ object mapMarkerStyledComponentsMod {
   
   @JSImport("baseui/map-marker/styled-components", "StyledBadgeEnhancerRoot")
   @js.native
-  val StyledBadgeEnhancerRoot: StyletronComponent[div, PositionSize] = js.native
+  val StyledBadgeEnhancerRoot: StyletronComponent[div, Position] = js.native
   
   @JSImport("baseui/map-marker/styled-components", "StyledConsumerLocationPuckCore")
   @js.native
@@ -78,15 +78,15 @@ object mapMarkerStyledComponentsMod {
   
   @JSImport("baseui/map-marker/styled-components", "StyledFloatingMarkerRoot")
   @js.native
-  val StyledFloatingMarkerRoot: StyletronComponent[div, `16`] = js.native
+  val StyledFloatingMarkerRoot: StyletronComponent[div, `13`] = js.native
   
   @JSImport("baseui/map-marker/styled-components", "StyledInnerXSmallAnchor")
   @js.native
-  val StyledInnerXSmallAnchor: StyletronComponent[div, ColorRound] = js.native
+  val StyledInnerXSmallAnchor: StyletronComponent[div, Round] = js.native
   
   @JSImport("baseui/map-marker/styled-components", "StyledInnerXXSmallAnchor")
   @js.native
-  val StyledInnerXXSmallAnchor: StyletronComponent[div, ColorRound] = js.native
+  val StyledInnerXXSmallAnchor: StyletronComponent[div, Round] = js.native
   
   @JSImport("baseui/map-marker/styled-components", "StyledLocationPuckApproximation")
   @js.native
@@ -98,11 +98,11 @@ object mapMarkerStyledComponentsMod {
   
   @JSImport("baseui/map-marker/styled-components", "StyledOuterXSmallAnchor")
   @js.native
-  val StyledOuterXSmallAnchor: StyletronComponent[div, Round] = js.native
+  val StyledOuterXSmallAnchor: StyletronComponent[div, BackgroundRound] = js.native
   
   @JSImport("baseui/map-marker/styled-components", "StyledOuterXXSmallAnchor")
   @js.native
-  val StyledOuterXXSmallAnchor: StyletronComponent[div, Round] = js.native
+  val StyledOuterXXSmallAnchor: StyletronComponent[div, BackgroundRound] = js.native
   
   @JSImport("baseui/map-marker/styled-components", "StyledPinHead")
   @js.native
@@ -110,7 +110,7 @@ object mapMarkerStyledComponentsMod {
   
   @JSImport("baseui/map-marker/styled-components", "StyledStrokedLabel")
   @js.native
-  val StyledStrokedLabel: StyletronComponent[div, Position] = js.native
+  val StyledStrokedLabel: StyletronComponent[div, Stroked] = js.native
   
   @JSImport("baseui/map-marker/styled-components", "StyledStrokedLabelContainer")
   @js.native

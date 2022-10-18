@@ -1,8 +1,8 @@
 package typings.regexpMatchIndices
 
-import typings.regexpMatchIndices.regexpMatchIndicesMod.RegExpExecArray
 import typings.regexpMatchIndices.regexpMatchIndicesStrings.`lazy`
 import typings.regexpMatchIndices.regexpMatchIndicesStrings.`spec-compliant`
+import typings.regexpMatchIndices.typesMod.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

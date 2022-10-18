@@ -7,11 +7,11 @@ import typings.node.httpsMod.Agent
 import typings.node.httpsMod.RequestOptions
 import typings.node.httpsMod.Server
 import typings.node.httpsMod.ServerOptions
-import typings.node.nodeHttpMod.ClientRequest
-import typings.node.nodeHttpMod.IncomingMessage
-import typings.node.nodeHttpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
-import typings.node.nodeUrlMod.URL
+import typings.node.nodeColonhttpMod.ClientRequest
+import typings.node.nodeColonhttpMod.IncomingMessage
+import typings.node.nodeColonhttpMod.ServerResponse
+import typings.node.nodeColonnetMod.Socket
+import typings.node.nodeColonurlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

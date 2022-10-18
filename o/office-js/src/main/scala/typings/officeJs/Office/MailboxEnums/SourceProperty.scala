@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait SourceProperty extends StObject
 /**
   * Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
-  * 
+  *
   * @remarks
   * [Api set: Mailbox 1.2]
-  * 
+  *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
   */
 @JSGlobal("Office.MailboxEnums.SourceProperty")

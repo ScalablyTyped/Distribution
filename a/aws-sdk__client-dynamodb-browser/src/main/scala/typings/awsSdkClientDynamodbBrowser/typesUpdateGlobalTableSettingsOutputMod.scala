@@ -1,8 +1,8 @@
 package typings.awsSdkClientDynamodbBrowser
 
-import typings.awsSdkClientDynamodbBrowser.outputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkClientDynamodbBrowser.typesOutputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientDynamodbBrowser.typesReplicaSettingsDescriptionMod.UnmarshalledReplicaSettingsDescription
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

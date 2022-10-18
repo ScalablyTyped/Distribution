@@ -1,9 +1,9 @@
 package typings.styleValueTypes
 
-import typings.styleValueTypes.typesMod.Color
-import typings.styleValueTypes.typesMod.HSLA
-import typings.styleValueTypes.typesMod.RGBA
-import typings.styleValueTypes.typesMod.ValueType
+import typings.styleValueTypes.libTypesMod.Color
+import typings.styleValueTypes.libTypesMod.HSLA
+import typings.styleValueTypes.libTypesMod.RGBA
+import typings.styleValueTypes.libTypesMod.ValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

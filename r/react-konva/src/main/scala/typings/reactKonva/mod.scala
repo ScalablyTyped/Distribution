@@ -44,8 +44,8 @@ import typings.konva.mod.Konva.Transformer
 import typings.konva.mod.Konva.TransformerConfig
 import typings.konva.mod.Konva.Wedge
 import typings.konva.mod.Konva.WedgeConfig
-import typings.reactKonva.reactKonvaMod.KonvaNodeComponent
-import typings.reactKonva.reactKonvaMod.StageProps
+import typings.reactKonva.reactKonvaCoreMod.KonvaNodeComponent
+import typings.reactKonva.reactKonvaCoreMod.StageProps
 import typings.reactReconciler.mod.Reconciler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

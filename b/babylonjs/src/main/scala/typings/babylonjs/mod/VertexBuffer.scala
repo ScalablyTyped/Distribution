@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "VertexBuffer")
 @js.native
 open class VertexBuffer protected ()
-  extends typings.babylonjs.legacyMod.VertexBuffer {
+  extends typings.babylonjs.legacyLegacyMod.VertexBuffer {
   /**
     * Constructor
     * @param engine the engine
@@ -28,7 +28,7 @@ open class VertexBuffer protected ()
     */
   def this(
     engine: Any,
-    data: DataArray | typings.babylonjs.bufferMod.Buffer | typings.babylonjs.dataBufferMod.DataBuffer,
+    data: DataArray | typings.babylonjs.buffersBufferMod.Buffer | typings.babylonjs.buffersDataBufferMod.DataBuffer,
     kind: String,
     updatable: Boolean,
     postponeInternalCreation: js.UndefOr[Boolean],

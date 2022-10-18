@@ -6,23 +6,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `297` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['page-deployment'] */ js.Any
+  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any
+  
+  var `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any
+  
+  var `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any
 }
 object `297` {
   
   inline def apply(
-    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['page-deployment'] */ js.Any
+    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any,
+    `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any,
+    `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any
   ): `297` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+    __obj.updateDynamic("304")(`304`.asInstanceOf[js.Any])
+    __obj.updateDynamic("401")(`401`.asInstanceOf[js.Any])
+    __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`297`]
   }
   
   extension [Self <: `297`](x: Self) {
     
-    inline def setApplicationSlashjson(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['page-deployment'] */ js.Any
-    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def set304(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any
+    ): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
+    
+    inline def set401(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any
+    ): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
+    
+    inline def set403(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any
+    ): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
   }
 }

@@ -5,8 +5,7 @@ import typings.baseui.baseuiStrings.cm_
 import typings.baseui.baseuiStrings.in_
 import typings.baseui.baseuiStrings.mm_
 import typings.baseui.baseuiStrings.pt_
-import typings.baseui.overridesMod.Override
-import typings.react.mod.ReactElement
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -195,7 +194,7 @@ object layoutGridTypesMod {
     var behavior: js.UndefOr[Behavior] = js.undefined
     
     /** Children should be Cells. */
-    var children: ReactElement | js.Array[ReactElement]
+    var children: ReactNode
     
     /** Gap on either side of grid container at each breakpoint. */
     var gridMargins: js.UndefOr[Responsive[Double]] = js.undefined
@@ -211,8 +210,8 @@ object layoutGridTypesMod {
   }
   object GridProps {
     
-    inline def apply(children: ReactElement | js.Array[ReactElement]): GridProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    inline def apply(): GridProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridProps]
     }
     
@@ -228,9 +227,9 @@ object layoutGridTypesMod {
       
       inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
       
-      inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setGridMargins(value: Responsive[Double]): Self = StObject.set(x, "gridMargins", value.asInstanceOf[js.Any])
       

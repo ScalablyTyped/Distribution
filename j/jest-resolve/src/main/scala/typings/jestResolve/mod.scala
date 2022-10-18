@@ -99,7 +99,7 @@ object mod {
   inline def resolveSequencer(resolver: Null, hasFilePathRootDirRequireResolveFunction: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSequencer")(resolver.asInstanceOf[js.Any], hasFilePathRootDirRequireResolveFunction.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def resolveSequencer(resolver: Unit, hasFilePathRootDirRequireResolveFunction: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSequencer")(resolver.asInstanceOf[js.Any], hasFilePathRootDirRequireResolveFunction.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def resolveTestEnvironment(hasRootDirTestEnvironmentRequireResolveFunction: RequireResolveFunction): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveTestEnvironment")(hasRootDirTestEnvironmentRequireResolveFunction.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def resolveTestEnvironment(hasRootDirFilePathRequireResolveFunction: RequireResolveFunction): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveTestEnvironment")(hasRootDirFilePathRequireResolveFunction.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def resolveWatchPlugin(resolver: String, hasFilePathRootDirRequireResolveFunction: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveWatchPlugin")(resolver.asInstanceOf[js.Any], hasFilePathRootDirRequireResolveFunction.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def resolveWatchPlugin(resolver: Null, hasFilePathRootDirRequireResolveFunction: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveWatchPlugin")(resolver.asInstanceOf[js.Any], hasFilePathRootDirRequireResolveFunction.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -419,7 +419,9 @@ object mod {
     extends StObject
        with JestResolver {
     
-    var async: AsyncResolver
+    def async(path: String, options: ResolverOptions): js.Promise[String]
+    @JSName("async")
+    var async_Original: AsyncResolver
     
     var sync: js.UndefOr[SyncResolver] = js.undefined
   }
@@ -529,7 +531,10 @@ object mod {
     var conditions: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Instance of default resolver. */
-    var defaultResolver: SyncResolver
+    def defaultResolver(path: String, options: ResolverOptions): String
+    /** Instance of default resolver. */
+    @JSName("defaultResolver")
+    var defaultResolver_Original: SyncResolver
     
     /** List of file extensions to search in order. */
     var extensions: js.UndefOr[js.Array[String]] = js.undefined
@@ -616,7 +621,9 @@ object mod {
     
     var async: js.UndefOr[AsyncResolver] = js.undefined
     
-    var sync: SyncResolver
+    def sync(path: String, options: ResolverOptions): String
+    @JSName("sync")
+    var sync_Original: SyncResolver
   }
   object ResolverSyncObject {
     

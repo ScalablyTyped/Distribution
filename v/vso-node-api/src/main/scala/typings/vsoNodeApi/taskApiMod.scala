@@ -1,17 +1,17 @@
 package typings.vsoNodeApi
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
-import typings.vsoNodeApi.taskAgentInterfacesMod.PlanGroupStatusFilter
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskAttachment
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskLog
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskOrchestrationPlan
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskOrchestrationQueuedPlanGroup
-import typings.vsoNodeApi.taskAgentInterfacesMod.Timeline
-import typings.vsoNodeApi.taskAgentInterfacesMod.TimelineRecord
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
-import typings.vsoNodeApi.vssinterfacesMod.VssJsonCollectionWrapperV
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonVssinterfacesMod.VssJsonCollectionWrapperV
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.PlanGroupStatusFilter
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskAttachment
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskLog
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskOrchestrationPlan
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskOrchestrationQueuedPlanGroup
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.Timeline
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TimelineRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +30,7 @@ object taskApiMod {
     
     def appendLogContent(
       customHeaders: Any,
-      contentStream: ReadableStream[Any],
+      contentStream: ReadableStream,
       scopeIdentifier: String,
       hubName: String,
       planId: String,
@@ -48,7 +48,7 @@ object taskApiMod {
     
     def createAttachment(
       customHeaders: Any,
-      contentStream: ReadableStream[Any],
+      contentStream: ReadableStream,
       scopeIdentifier: String,
       hubName: String,
       planId: String,
@@ -82,7 +82,7 @@ object taskApiMod {
       recordId: String,
       `type`: String,
       name: String
-    ): js.Promise[ReadableStream[Any]] = js.native
+    ): js.Promise[ReadableStream] = js.native
     
     def getAttachments(
       scopeIdentifier: String,

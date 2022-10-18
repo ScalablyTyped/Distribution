@@ -1,7 +1,7 @@
 package typings.xstate.anon
 
-import typings.xstate.typesMod.MachineOptionsDelays
-import typings.xstate.typesMod.Prop
+import typings.xstate.libTypesMod.MachineOptionsDelays
+import typings.xstate.libTypesMod.Prop
 import typings.xstate.xstateStrings.eventsCausingDelays
 import typings.xstate.xstateStrings.indexedEvents
 import typings.xstate.xstateStrings.resolved

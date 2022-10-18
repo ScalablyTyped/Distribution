@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Appsurl extends StObject {
   
-  var apps: js.Array[Slug]
+  var apps: js.Array[Events]
   
   /** Format: uri */
   var apps_url: String
   
-  var teams: js.Array[Repositoriesurl]
+  var teams: js.Array[Privacy]
   
   /** Format: uri */
   var teams_url: String
@@ -27,9 +27,9 @@ trait Appsurl extends StObject {
 object Appsurl {
   
   inline def apply(
-    apps: js.Array[Slug],
+    apps: js.Array[Events],
     apps_url: String,
-    teams: js.Array[Repositoriesurl],
+    teams: js.Array[Privacy],
     teams_url: String,
     url: String,
     users: js.Array[Eventsurl],
@@ -41,15 +41,15 @@ object Appsurl {
   
   extension [Self <: Appsurl](x: Self) {
     
-    inline def setApps(value: js.Array[Slug]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
+    inline def setApps(value: js.Array[Events]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     
-    inline def setAppsVarargs(value: Slug*): Self = StObject.set(x, "apps", js.Array(value*))
+    inline def setAppsVarargs(value: Events*): Self = StObject.set(x, "apps", js.Array(value*))
     
     inline def setApps_url(value: String): Self = StObject.set(x, "apps_url", value.asInstanceOf[js.Any])
     
-    inline def setTeams(value: js.Array[Repositoriesurl]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+    inline def setTeams(value: js.Array[Privacy]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
     
-    inline def setTeamsVarargs(value: Repositoriesurl*): Self = StObject.set(x, "teams", js.Array(value*))
+    inline def setTeamsVarargs(value: Privacy*): Self = StObject.set(x, "teams", js.Array(value*))
     
     inline def setTeams_url(value: String): Self = StObject.set(x, "teams_url", value.asInstanceOf[js.Any])
     

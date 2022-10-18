@@ -1,8 +1,8 @@
 package typings.sassEmbedded
 
-import typings.sassEmbedded.listMod._ListSeparator
-import typings.sassEmbedded.typesOptionsMod.OutputStyle
-import typings.sassEmbedded.typesOptionsMod.Syntax
+import typings.sassEmbedded.distTypesOptionsMod.OutputStyle
+import typings.sassEmbedded.distTypesOptionsMod.Syntax
+import typings.sassEmbedded.distTypesValueListMod._ListSeparator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

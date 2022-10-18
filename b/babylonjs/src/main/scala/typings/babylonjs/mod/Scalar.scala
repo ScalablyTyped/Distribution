@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Scalar")
 @js.native
 open class Scalar ()
-  extends typings.babylonjs.legacyMod.Scalar
+  extends typings.babylonjs.legacyLegacyMod.Scalar
 /* static members */
 object Scalar {
   

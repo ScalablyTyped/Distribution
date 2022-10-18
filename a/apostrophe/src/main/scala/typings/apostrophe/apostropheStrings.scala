@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object apostropheStrings {
   
   @js.native
-  sealed trait AposConstructor extends StObject
-  inline def AposConstructor: AposConstructor = "AposConstructor".asInstanceOf[AposConstructor]
-  
-  @js.native
   sealed trait `apostrophe-admin-bar`
     extends StObject
        with AposCoreModules

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__blob
 
-Typings are for version 3.18.0
+Typings are for version 3.19.0
 
 ## Library description:
 Blob utilities for WordPress.

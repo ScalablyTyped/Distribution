@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "LinkSets")
 @js.native
 open class LinkSets ()
-  extends typings.webcola.powergraphMod.LinkSets
+  extends typings.webcola.distSrcPowergraphMod.LinkSets

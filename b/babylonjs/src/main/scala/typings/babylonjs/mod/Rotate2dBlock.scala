@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Rotate2dBlock")
 @js.native
 open class Rotate2dBlock protected ()
-  extends typings.babylonjs.legacyMod.Rotate2dBlock {
+  extends typings.babylonjs.legacyLegacyMod.Rotate2dBlock {
   /**
     * Creates a new Rotate2dBlock
     * @param name defines the block name

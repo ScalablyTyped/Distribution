@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.drawerMod.DrawerProps
+import typings.blueprintjsCore.libEsmComponentsDrawerDrawerMod.DrawerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Drawer")
 @js.native
 open class Drawer protected ()
-  extends typings.blueprintjsCore.componentsMod.Drawer {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Drawer {
   def this(props: DrawerProps) = this()
   def this(props: DrawerProps, context: Any) = this()
 }

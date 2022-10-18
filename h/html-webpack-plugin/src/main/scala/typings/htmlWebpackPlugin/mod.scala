@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.htmlWebpackPlugin.anon.AssetTags
 import typings.htmlWebpackPlugin.anon.Assets
 import typings.htmlWebpackPlugin.anon.BodyTags
-import typings.htmlWebpackPlugin.anon.Css
+import typings.htmlWebpackPlugin.anon.BodyTagsHeadTags
 import typings.htmlWebpackPlugin.anon.DictmetaAttributeName
+import typings.htmlWebpackPlugin.anon.Favicon
 import typings.htmlWebpackPlugin.anon.Files
 import typings.htmlWebpackPlugin.anon.HeadTags
 import typings.htmlWebpackPlugin.anon.Html
 import typings.htmlWebpackPlugin.anon.OutputName
-import typings.htmlWebpackPlugin.anon.Plugin
 import typings.htmlWebpackPlugin.htmlWebpackPluginBooleans.`false`
 import typings.htmlWebpackPlugin.htmlWebpackPluginBooleans.`true`
 import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.all
@@ -72,27 +72,27 @@ object mod {
   
   trait Hooks extends StObject {
     
-    var afterEmit: AsyncSeriesWaterfallHook[Plugin, UnsetAdditionalOptions]
+    var afterEmit: AsyncSeriesWaterfallHook[OutputName, UnsetAdditionalOptions]
     
-    var afterTemplateExecution: AsyncSeriesWaterfallHook[Html, UnsetAdditionalOptions]
+    var afterTemplateExecution: AsyncSeriesWaterfallHook[HeadTags, UnsetAdditionalOptions]
     
-    var alterAssetTagGroups: AsyncSeriesWaterfallHook[HeadTags, UnsetAdditionalOptions]
+    var alterAssetTagGroups: AsyncSeriesWaterfallHook[BodyTags, UnsetAdditionalOptions]
     
     var alterAssetTags: AsyncSeriesWaterfallHook[AssetTags, UnsetAdditionalOptions]
     
     var beforeAssetTagGeneration: AsyncSeriesWaterfallHook[Assets, UnsetAdditionalOptions]
     
-    var beforeEmit: AsyncSeriesWaterfallHook[OutputName, UnsetAdditionalOptions]
+    var beforeEmit: AsyncSeriesWaterfallHook[Html, UnsetAdditionalOptions]
   }
   object Hooks {
     
     inline def apply(
-      afterEmit: AsyncSeriesWaterfallHook[Plugin, UnsetAdditionalOptions],
-      afterTemplateExecution: AsyncSeriesWaterfallHook[Html, UnsetAdditionalOptions],
-      alterAssetTagGroups: AsyncSeriesWaterfallHook[HeadTags, UnsetAdditionalOptions],
+      afterEmit: AsyncSeriesWaterfallHook[OutputName, UnsetAdditionalOptions],
+      afterTemplateExecution: AsyncSeriesWaterfallHook[HeadTags, UnsetAdditionalOptions],
+      alterAssetTagGroups: AsyncSeriesWaterfallHook[BodyTags, UnsetAdditionalOptions],
       alterAssetTags: AsyncSeriesWaterfallHook[AssetTags, UnsetAdditionalOptions],
       beforeAssetTagGeneration: AsyncSeriesWaterfallHook[Assets, UnsetAdditionalOptions],
-      beforeEmit: AsyncSeriesWaterfallHook[OutputName, UnsetAdditionalOptions]
+      beforeEmit: AsyncSeriesWaterfallHook[Html, UnsetAdditionalOptions]
     ): Hooks = {
       val __obj = js.Dynamic.literal(afterEmit = afterEmit.asInstanceOf[js.Any], afterTemplateExecution = afterTemplateExecution.asInstanceOf[js.Any], alterAssetTagGroups = alterAssetTagGroups.asInstanceOf[js.Any], alterAssetTags = alterAssetTags.asInstanceOf[js.Any], beforeAssetTagGeneration = beforeAssetTagGeneration.asInstanceOf[js.Any], beforeEmit = beforeEmit.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hooks]
@@ -100,17 +100,17 @@ object mod {
     
     extension [Self <: Hooks](x: Self) {
       
-      inline def setAfterEmit(value: AsyncSeriesWaterfallHook[Plugin, UnsetAdditionalOptions]): Self = StObject.set(x, "afterEmit", value.asInstanceOf[js.Any])
+      inline def setAfterEmit(value: AsyncSeriesWaterfallHook[OutputName, UnsetAdditionalOptions]): Self = StObject.set(x, "afterEmit", value.asInstanceOf[js.Any])
       
-      inline def setAfterTemplateExecution(value: AsyncSeriesWaterfallHook[Html, UnsetAdditionalOptions]): Self = StObject.set(x, "afterTemplateExecution", value.asInstanceOf[js.Any])
+      inline def setAfterTemplateExecution(value: AsyncSeriesWaterfallHook[HeadTags, UnsetAdditionalOptions]): Self = StObject.set(x, "afterTemplateExecution", value.asInstanceOf[js.Any])
       
-      inline def setAlterAssetTagGroups(value: AsyncSeriesWaterfallHook[HeadTags, UnsetAdditionalOptions]): Self = StObject.set(x, "alterAssetTagGroups", value.asInstanceOf[js.Any])
+      inline def setAlterAssetTagGroups(value: AsyncSeriesWaterfallHook[BodyTags, UnsetAdditionalOptions]): Self = StObject.set(x, "alterAssetTagGroups", value.asInstanceOf[js.Any])
       
       inline def setAlterAssetTags(value: AsyncSeriesWaterfallHook[AssetTags, UnsetAdditionalOptions]): Self = StObject.set(x, "alterAssetTags", value.asInstanceOf[js.Any])
       
       inline def setBeforeAssetTagGeneration(value: AsyncSeriesWaterfallHook[Assets, UnsetAdditionalOptions]): Self = StObject.set(x, "beforeAssetTagGeneration", value.asInstanceOf[js.Any])
       
-      inline def setBeforeEmit(value: AsyncSeriesWaterfallHook[OutputName, UnsetAdditionalOptions]): Self = StObject.set(x, "beforeEmit", value.asInstanceOf[js.Any])
+      inline def setBeforeEmit(value: AsyncSeriesWaterfallHook[Html, UnsetAdditionalOptions]): Self = StObject.set(x, "beforeEmit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -327,8 +327,8 @@ object mod {
     var templateParameters: js.UndefOr[
         `false` | (js.Function4[
           /* compilation */ Any, 
-          /* assets */ Css, 
-          /* assetTags */ BodyTags, 
+          /* assets */ Favicon, 
+          /* assetTags */ BodyTagsHeadTags, 
           /* options */ ProcessedOptions, 
           StringDictionary[Any] | js.Promise[StringDictionary[Any]]
         ]) | StringDictionary[Any]
@@ -426,15 +426,15 @@ object mod {
       inline def setTemplateParameters(
         value: `false` | (js.Function4[
               /* compilation */ Any, 
-              /* assets */ Css, 
-              /* assetTags */ BodyTags, 
+              /* assets */ Favicon, 
+              /* assetTags */ BodyTagsHeadTags, 
               /* options */ ProcessedOptions, 
               StringDictionary[Any] | js.Promise[StringDictionary[Any]]
             ]) | StringDictionary[Any]
       ): Self = StObject.set(x, "templateParameters", value.asInstanceOf[js.Any])
       
       inline def setTemplateParametersFunction4(
-        value: (/* compilation */ Any, /* assets */ Css, /* assetTags */ BodyTags, /* options */ ProcessedOptions) => StringDictionary[Any] | js.Promise[StringDictionary[Any]]
+        value: (/* compilation */ Any, /* assets */ Favicon, /* assetTags */ BodyTagsHeadTags, /* options */ ProcessedOptions) => StringDictionary[Any] | js.Promise[StringDictionary[Any]]
       ): Self = StObject.set(x, "templateParameters", js.Any.fromFunction4(value))
       
       inline def setTemplateParametersUndefined: Self = StObject.set(x, "templateParameters", js.undefined)
@@ -489,8 +489,8 @@ object mod {
     
     var templateParameters: `false` | (js.Function4[
         /* compilation */ Any, 
-        /* assets */ Css, 
-        /* assetTags */ BodyTags, 
+        /* assets */ Favicon, 
+        /* assetTags */ BodyTagsHeadTags, 
         /* options */ this.type, 
         StringDictionary[Any] | js.Promise[StringDictionary[Any]]
       ]) | StringDictionary[Any]
@@ -519,8 +519,8 @@ object mod {
       templateContent: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[Any], String | js.Promise[String]]) | js.Promise[String],
       templateParameters: `false` | (js.Function4[
           /* compilation */ Any, 
-          /* assets */ Css, 
-          /* assetTags */ BodyTags, 
+          /* assets */ Favicon, 
+          /* assetTags */ BodyTagsHeadTags, 
           ProcessedOptions, 
           StringDictionary[Any] | js.Promise[StringDictionary[Any]]
         ]) | StringDictionary[Any],
@@ -576,15 +576,15 @@ object mod {
       inline def setTemplateParameters(
         value: `false` | (js.Function4[
               /* compilation */ Any, 
-              /* assets */ Css, 
-              /* assetTags */ BodyTags, 
+              /* assets */ Favicon, 
+              /* assetTags */ BodyTagsHeadTags, 
               ProcessedOptions, 
               StringDictionary[Any] | js.Promise[StringDictionary[Any]]
             ]) | StringDictionary[Any]
       ): Self = StObject.set(x, "templateParameters", value.asInstanceOf[js.Any])
       
       inline def setTemplateParametersFunction4(
-        value: (/* compilation */ Any, /* assets */ Css, /* assetTags */ BodyTags, ProcessedOptions) => StringDictionary[Any] | js.Promise[StringDictionary[Any]]
+        value: (/* compilation */ Any, /* assets */ Favicon, /* assetTags */ BodyTagsHeadTags, ProcessedOptions) => StringDictionary[Any] | js.Promise[StringDictionary[Any]]
       ): Self = StObject.set(x, "templateParameters", js.Any.fromFunction4(value))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])

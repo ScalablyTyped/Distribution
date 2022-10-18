@@ -5,14 +5,14 @@ import typings.react.mod.global.JSX.Element
 import typings.reactAliceCarousel.anon.ActiveIndex
 import typings.reactAliceCarousel.anon.ReadonlyProps
 import typings.reactAliceCarousel.anon.ReadonlyState
+import typings.reactAliceCarousel.libTypesMod.EventObject
+import typings.reactAliceCarousel.libTypesMod.EventType
+import typings.reactAliceCarousel.libTypesMod.Props
+import typings.reactAliceCarousel.libTypesMod.SlideTo
+import typings.reactAliceCarousel.libTypesMod.State
 import typings.reactAliceCarousel.reactAliceCarouselBooleans.`false`
-import typings.reactAliceCarousel.typesMod.EventObject
-import typings.reactAliceCarousel.typesMod.EventType
-import typings.reactAliceCarousel.typesMod.Props
-import typings.reactAliceCarousel.typesMod.SlideTo
-import typings.reactAliceCarousel.typesMod.State
 import typings.std.Event
-import typings.vanillaSwipe.typesMod.EventData
+import typings.vanillaSwipe.libTypesMod.EventData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,11 +42,11 @@ object mod {
   object AnimationType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.AnimationType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.libTypesMod.AnimationType & String] = js.native
     
-    /* "fadeout" */ val FADEOUT: typings.reactAliceCarousel.typesMod.AnimationType.FADEOUT & String = js.native
+    /* "fadeout" */ val FADEOUT: typings.reactAliceCarousel.libTypesMod.AnimationType.FADEOUT & String = js.native
     
-    /* "slide" */ val SLIDE: typings.reactAliceCarousel.typesMod.AnimationType.SLIDE & String = js.native
+    /* "slide" */ val SLIDE: typings.reactAliceCarousel.libTypesMod.AnimationType.SLIDE & String = js.native
   }
   
   @JSImport("react-alice-carousel", "AutoPlayStrategy")
@@ -54,15 +54,15 @@ object mod {
   object AutoPlayStrategy extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.AutoPlayStrategy & String] = js.native
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.libTypesMod.AutoPlayStrategy & String] = js.native
     
-    /* "action" */ val ACTION: typings.reactAliceCarousel.typesMod.AutoPlayStrategy.ACTION & String = js.native
+    /* "action" */ val ACTION: typings.reactAliceCarousel.libTypesMod.AutoPlayStrategy.ACTION & String = js.native
     
-    /* "all" */ val ALL: typings.reactAliceCarousel.typesMod.AutoPlayStrategy.ALL & String = js.native
+    /* "all" */ val ALL: typings.reactAliceCarousel.libTypesMod.AutoPlayStrategy.ALL & String = js.native
     
-    /* "default" */ val DEFAULT: typings.reactAliceCarousel.typesMod.AutoPlayStrategy.DEFAULT & String = js.native
+    /* "default" */ val DEFAULT: typings.reactAliceCarousel.libTypesMod.AutoPlayStrategy.DEFAULT & String = js.native
     
-    /* "none" */ val NONE: typings.reactAliceCarousel.typesMod.AutoPlayStrategy.NONE & String = js.native
+    /* "none" */ val NONE: typings.reactAliceCarousel.libTypesMod.AutoPlayStrategy.NONE & String = js.native
   }
   
   @JSImport("react-alice-carousel", "AutoplayDirection")
@@ -70,11 +70,11 @@ object mod {
   object AutoplayDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.AutoplayDirection & String] = js.native
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.libTypesMod.AutoplayDirection & String] = js.native
     
-    /* "ltr" */ val LTR: typings.reactAliceCarousel.typesMod.AutoplayDirection.LTR & String = js.native
+    /* "ltr" */ val LTR: typings.reactAliceCarousel.libTypesMod.AutoplayDirection.LTR & String = js.native
     
-    /* "rtl" */ val RTL: typings.reactAliceCarousel.typesMod.AutoplayDirection.RTL & String = js.native
+    /* "rtl" */ val RTL: typings.reactAliceCarousel.libTypesMod.AutoplayDirection.RTL & String = js.native
   }
   
   @JSImport("react-alice-carousel", "Classnames")
@@ -82,43 +82,43 @@ object mod {
   object Classnames extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.Classnames & String] = js.native
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.libTypesMod.Classnames & String] = js.native
     
-    /* "animated animated-out fadeOut" */ val ANIMATED: typings.reactAliceCarousel.typesMod.Classnames.ANIMATED & String = js.native
+    /* "animated animated-out fadeOut" */ val ANIMATED: typings.reactAliceCarousel.libTypesMod.Classnames.ANIMATED & String = js.native
     
-    /* "alice-carousel__next-btn" */ val BUTTON_NEXT: typings.reactAliceCarousel.typesMod.Classnames.BUTTON_NEXT & String = js.native
+    /* "alice-carousel__next-btn" */ val BUTTON_NEXT: typings.reactAliceCarousel.libTypesMod.Classnames.BUTTON_NEXT & String = js.native
     
-    /* "alice-carousel__next-btn-item" */ val BUTTON_NEXT_ITEM: typings.reactAliceCarousel.typesMod.Classnames.BUTTON_NEXT_ITEM & String = js.native
+    /* "alice-carousel__next-btn-item" */ val BUTTON_NEXT_ITEM: typings.reactAliceCarousel.libTypesMod.Classnames.BUTTON_NEXT_ITEM & String = js.native
     
-    /* "alice-carousel__next-btn-wrapper" */ val BUTTON_NEXT_WRAPPER: typings.reactAliceCarousel.typesMod.Classnames.BUTTON_NEXT_WRAPPER & String = js.native
+    /* "alice-carousel__next-btn-wrapper" */ val BUTTON_NEXT_WRAPPER: typings.reactAliceCarousel.libTypesMod.Classnames.BUTTON_NEXT_WRAPPER & String = js.native
     
-    /* "alice-carousel__prev-btn" */ val BUTTON_PREV: typings.reactAliceCarousel.typesMod.Classnames.BUTTON_PREV & String = js.native
+    /* "alice-carousel__prev-btn" */ val BUTTON_PREV: typings.reactAliceCarousel.libTypesMod.Classnames.BUTTON_PREV & String = js.native
     
-    /* "alice-carousel__prev-btn-item" */ val BUTTON_PREV_ITEM: typings.reactAliceCarousel.typesMod.Classnames.BUTTON_PREV_ITEM & String = js.native
+    /* "alice-carousel__prev-btn-item" */ val BUTTON_PREV_ITEM: typings.reactAliceCarousel.libTypesMod.Classnames.BUTTON_PREV_ITEM & String = js.native
     
-    /* "alice-carousel__prev-btn-wrapper" */ val BUTTON_PREV_WRAPPER: typings.reactAliceCarousel.typesMod.Classnames.BUTTON_PREV_WRAPPER & String = js.native
+    /* "alice-carousel__prev-btn-wrapper" */ val BUTTON_PREV_WRAPPER: typings.reactAliceCarousel.libTypesMod.Classnames.BUTTON_PREV_WRAPPER & String = js.native
     
-    /* "alice-carousel__dots" */ val DOTS: typings.reactAliceCarousel.typesMod.Classnames.DOTS & String = js.native
+    /* "alice-carousel__dots" */ val DOTS: typings.reactAliceCarousel.libTypesMod.Classnames.DOTS & String = js.native
     
-    /* "alice-carousel__dots-item" */ val DOTS_ITEM: typings.reactAliceCarousel.typesMod.Classnames.DOTS_ITEM & String = js.native
+    /* "alice-carousel__dots-item" */ val DOTS_ITEM: typings.reactAliceCarousel.libTypesMod.Classnames.DOTS_ITEM & String = js.native
     
-    /* "alice-carousel__play-btn" */ val PLAY_BTN: typings.reactAliceCarousel.typesMod.Classnames.PLAY_BTN & String = js.native
+    /* "alice-carousel__play-btn" */ val PLAY_BTN: typings.reactAliceCarousel.libTypesMod.Classnames.PLAY_BTN & String = js.native
     
-    /* "alice-carousel__play-btn-item" */ val PLAY_BTN_ITEM: typings.reactAliceCarousel.typesMod.Classnames.PLAY_BTN_ITEM & String = js.native
+    /* "alice-carousel__play-btn-item" */ val PLAY_BTN_ITEM: typings.reactAliceCarousel.libTypesMod.Classnames.PLAY_BTN_ITEM & String = js.native
     
-    /* "alice-carousel__play-btn-wrapper" */ val PLAY_BTN_WRAPPER: typings.reactAliceCarousel.typesMod.Classnames.PLAY_BTN_WRAPPER & String = js.native
+    /* "alice-carousel__play-btn-wrapper" */ val PLAY_BTN_WRAPPER: typings.reactAliceCarousel.libTypesMod.Classnames.PLAY_BTN_WRAPPER & String = js.native
     
-    /* "alice-carousel" */ val ROOT: typings.reactAliceCarousel.typesMod.Classnames.ROOT & String = js.native
+    /* "alice-carousel" */ val ROOT: typings.reactAliceCarousel.libTypesMod.Classnames.ROOT & String = js.native
     
-    /* "alice-carousel__slide-info" */ val SLIDE_INFO: typings.reactAliceCarousel.typesMod.Classnames.SLIDE_INFO & String = js.native
+    /* "alice-carousel__slide-info" */ val SLIDE_INFO: typings.reactAliceCarousel.libTypesMod.Classnames.SLIDE_INFO & String = js.native
     
-    /* "alice-carousel__slide-info-item" */ val SLIDE_INFO_ITEM: typings.reactAliceCarousel.typesMod.Classnames.SLIDE_INFO_ITEM & String = js.native
+    /* "alice-carousel__slide-info-item" */ val SLIDE_INFO_ITEM: typings.reactAliceCarousel.libTypesMod.Classnames.SLIDE_INFO_ITEM & String = js.native
     
-    /* "alice-carousel__stage" */ val STAGE: typings.reactAliceCarousel.typesMod.Classnames.STAGE & String = js.native
+    /* "alice-carousel__stage" */ val STAGE: typings.reactAliceCarousel.libTypesMod.Classnames.STAGE & String = js.native
     
-    /* "alice-carousel__stage-item" */ val STAGE_ITEM: typings.reactAliceCarousel.typesMod.Classnames.STAGE_ITEM & String = js.native
+    /* "alice-carousel__stage-item" */ val STAGE_ITEM: typings.reactAliceCarousel.libTypesMod.Classnames.STAGE_ITEM & String = js.native
     
-    /* "alice-carousel__wrapper" */ val WRAPPER: typings.reactAliceCarousel.typesMod.Classnames.WRAPPER & String = js.native
+    /* "alice-carousel__wrapper" */ val WRAPPER: typings.reactAliceCarousel.libTypesMod.Classnames.WRAPPER & String = js.native
   }
   
   @JSImport("react-alice-carousel", "ControlsStrategy")
@@ -126,13 +126,13 @@ object mod {
   object ControlsStrategy extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.ControlsStrategy & String] = js.native
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.libTypesMod.ControlsStrategy & String] = js.native
     
-    /* "alternate" */ val ALTERNATE: typings.reactAliceCarousel.typesMod.ControlsStrategy.ALTERNATE & String = js.native
+    /* "alternate" */ val ALTERNATE: typings.reactAliceCarousel.libTypesMod.ControlsStrategy.ALTERNATE & String = js.native
     
-    /* "default" */ val DEFAULT: typings.reactAliceCarousel.typesMod.ControlsStrategy.DEFAULT & String = js.native
+    /* "default" */ val DEFAULT: typings.reactAliceCarousel.libTypesMod.ControlsStrategy.DEFAULT & String = js.native
     
-    /* "responsive" */ val RESPONSIVE: typings.reactAliceCarousel.typesMod.ControlsStrategy.RESPONSIVE & String = js.native
+    /* "responsive" */ val RESPONSIVE: typings.reactAliceCarousel.libTypesMod.ControlsStrategy.RESPONSIVE & String = js.native
   }
   
   @JSImport("react-alice-carousel", "EventType")
@@ -140,15 +140,15 @@ object mod {
   object EventType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.EventType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.libTypesMod.EventType & String] = js.native
     
-    /* "action" */ val ACTION: typings.reactAliceCarousel.typesMod.EventType.ACTION & String = js.native
+    /* "action" */ val ACTION: typings.reactAliceCarousel.libTypesMod.EventType.ACTION & String = js.native
     
-    /* "init" */ val INIT: typings.reactAliceCarousel.typesMod.EventType.INIT & String = js.native
+    /* "init" */ val INIT: typings.reactAliceCarousel.libTypesMod.EventType.INIT & String = js.native
     
-    /* "resize" */ val RESIZE: typings.reactAliceCarousel.typesMod.EventType.RESIZE & String = js.native
+    /* "resize" */ val RESIZE: typings.reactAliceCarousel.libTypesMod.EventType.RESIZE & String = js.native
     
-    /* "update" */ val UPDATE: typings.reactAliceCarousel.typesMod.EventType.UPDATE & String = js.native
+    /* "update" */ val UPDATE: typings.reactAliceCarousel.libTypesMod.EventType.UPDATE & String = js.native
   }
   
   @JSImport("react-alice-carousel", "Modifiers")
@@ -156,23 +156,23 @@ object mod {
   object Modifiers extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.Modifiers & String] = js.native
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.libTypesMod.Modifiers & String] = js.native
     
-    /* "__active" */ val ACTIVE: typings.reactAliceCarousel.typesMod.Modifiers.ACTIVE & String = js.native
+    /* "__active" */ val ACTIVE: typings.reactAliceCarousel.libTypesMod.Modifiers.ACTIVE & String = js.native
     
-    /* "__cloned" */ val CLONED: typings.reactAliceCarousel.typesMod.Modifiers.CLONED & String = js.native
+    /* "__cloned" */ val CLONED: typings.reactAliceCarousel.libTypesMod.Modifiers.CLONED & String = js.native
     
-    /* "__custom" */ val CUSTOM: typings.reactAliceCarousel.typesMod.Modifiers.CUSTOM & String = js.native
+    /* "__custom" */ val CUSTOM: typings.reactAliceCarousel.libTypesMod.Modifiers.CUSTOM & String = js.native
     
-    /* "__inactive" */ val INACTIVE: typings.reactAliceCarousel.typesMod.Modifiers.INACTIVE & String = js.native
+    /* "__inactive" */ val INACTIVE: typings.reactAliceCarousel.libTypesMod.Modifiers.INACTIVE & String = js.native
     
-    /* "__pause" */ val PAUSE: typings.reactAliceCarousel.typesMod.Modifiers.PAUSE & String = js.native
+    /* "__pause" */ val PAUSE: typings.reactAliceCarousel.libTypesMod.Modifiers.PAUSE & String = js.native
     
-    /* "__separator" */ val SEPARATOR: typings.reactAliceCarousel.typesMod.Modifiers.SEPARATOR & String = js.native
+    /* "__separator" */ val SEPARATOR: typings.reactAliceCarousel.libTypesMod.Modifiers.SEPARATOR & String = js.native
     
-    /* "__ssr" */ val SSR: typings.reactAliceCarousel.typesMod.Modifiers.SSR & String = js.native
+    /* "__ssr" */ val SSR: typings.reactAliceCarousel.libTypesMod.Modifiers.SSR & String = js.native
     
-    /* "__target" */ val TARGET: typings.reactAliceCarousel.typesMod.Modifiers.TARGET & String = js.native
+    /* "__target" */ val TARGET: typings.reactAliceCarousel.libTypesMod.Modifiers.TARGET & String = js.native
   }
   
   @js.native

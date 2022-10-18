@@ -56,9 +56,9 @@ object wsMod {
     inline def connect(url: String, params: Params, callback: Executor): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Response]
   }
   
-  @JSImport("k6/ws", "Socket")
+  /* note: abstract class */ @JSImport("k6/ws", "Socket")
   @js.native
-  abstract class Socket () extends StObject {
+  open class Socket () extends StObject {
     
     /**
       * Close connection.
@@ -148,9 +148,9 @@ object wsMod {
     def setTimeout(handler: TimerHandler, delay: Double): Unit = js.native
   }
   
-  @JSImport("k6/ws", "WebSocketError")
+  /* note: abstract class */ @JSImport("k6/ws", "WebSocketError")
   @js.native
-  abstract class WebSocketError () extends StObject {
+  open class WebSocketError () extends StObject {
     
     /** Error message. */
     def error(): String = js.native
@@ -166,7 +166,15 @@ object wsMod {
   
   type ErrorEventHandler = js.Function1[/* error */ WebSocketError, Unit]
   
-  type EventHandler[ET /* <: EventType */] = PongEventHandler | PingEventHandler | OpenEventHandler | BinaryMessageEventHandler | MessageEventHandler | ErrorEventHandler | CloseEventHandler
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    ET extends 'close' ? k6.k6/ws.CloseEventHandler : ET extends 'error' ? k6.k6/ws.ErrorEventHandler : ET extends 'message' ? k6.k6/ws.MessageEventHandler : ET extends 'binaryMessage' ? k6.k6/ws.BinaryMessageEventHandler : ET extends 'open' ? k6.k6/ws.OpenEventHandler : ET extends 'ping' ? k6.k6/ws.PingEventHandler : ET extends 'pong' ? k6.k6/ws.PongEventHandler : never
+    }}}
+    */
+  @js.native
+  trait EventHandler[ET /* <: EventType */] extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.k6.k6Strings.close

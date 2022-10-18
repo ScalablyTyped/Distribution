@@ -46,8 +46,6 @@ object mod {
   open class Headers () extends StObject {
     def this(init: HeadersInit) = this()
     
-    def apply(): IterableIterator[js.Tuple2[String, String]] = js.native
-    
     def append(name: String, value: String): Unit = js.native
     
     def delete(name: String): Unit = js.native
@@ -65,11 +63,14 @@ object mod {
     
     def has(name: String): Boolean = js.native
     
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[IterableIterator[js.Tuple2[String, String]]] = js.native
+    
     def keys(): IterableIterator[String] = js.native
     
     def set(name: String, value: String): Unit = js.native
     
-    def values(): /* import warning: importer.ImportType#apply Failed type conversion: std.IterableIterator<string>[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.iterator * / any] */ js.Any = js.native
+    def values(): IterableIterator[String] = js.native
   }
   
   @JSImport("electron-fetch", "Request")

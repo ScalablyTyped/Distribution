@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents completion information for a task at the time a completion notification is sent. */
-@JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskCompletedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskCompletedEventArgs")
 @js.native
-abstract class BackgroundTaskCompletedEventArgs ()
+open class BackgroundTaskCompletedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundTaskCompletedEventArgs {
   

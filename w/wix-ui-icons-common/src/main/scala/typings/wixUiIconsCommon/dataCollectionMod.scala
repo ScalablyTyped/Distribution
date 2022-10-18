@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsDataCollectionMod.DataCollectionProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsDataCollectionMod.DataCollectionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataCollectionMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/DataCollection", JSImport.Default)
+  @JSImport("wix-ui-icons-common/DataCollection", JSImport.Default)
   @js.native
   val default: FC[DataCollectionProps] = js.native
   

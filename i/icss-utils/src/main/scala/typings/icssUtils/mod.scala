@@ -1,9 +1,9 @@
 package typings.icssUtils
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.postcss.libNodeMod.ChildNode
 import typings.postcss.mod.Container
 import typings.postcss.mod.Rule_
-import typings.postcss.nodeMod.ChildNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

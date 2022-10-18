@@ -1,7 +1,7 @@
 package typings.physijs.mod
 
-import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.mod.Vector3
+import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,13 +39,13 @@ open class Vehicle protected () extends StObject {
     amount: Double,
     wheel: typings.three.mod.Mesh[
       BufferGeometry, 
-      typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material]
+      typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
     ]
   ): Unit = js.native
   
   var mesh: typings.three.mod.Mesh[
     BufferGeometry, 
-    typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material]
+    typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
   ] = js.native
   
   def setBrake(amount: Double): Unit = js.native
@@ -53,7 +53,7 @@ open class Vehicle protected () extends StObject {
     amount: Double,
     wheel: typings.three.mod.Mesh[
       BufferGeometry, 
-      typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material]
+      typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
     ]
   ): Unit = js.native
   
@@ -62,14 +62,14 @@ open class Vehicle protected () extends StObject {
     amount: Double,
     wheel: typings.three.mod.Mesh[
       BufferGeometry, 
-      typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material]
+      typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
     ]
   ): Unit = js.native
   
   var wheels: js.Array[
     typings.three.mod.Mesh[
       BufferGeometry, 
-      typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material]
+      typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
     ]
   ] = js.native
 }

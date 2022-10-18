@@ -1,8 +1,8 @@
 package typings.reactMdAppBar
 
-import typings.reactMdAppBar.appBarMod.AppBarHeight
-import typings.reactMdAppBar.appBarMod.AppBarPosition
-import typings.reactMdAppBar.appBarMod.AppBarTheme
+import typings.reactMdAppBar.typesAppBarMod.AppBarHeight
+import typings.reactMdAppBar.typesAppBarMod.AppBarPosition
+import typings.reactMdAppBar.typesAppBarMod.AppBarTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

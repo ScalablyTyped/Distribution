@@ -1,7 +1,7 @@
 package typings.recurlyRecurlyJs.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.recurlyRecurlyJs.subscriptionMod.SubscriptionPricingStateTax
+import typings.recurlyRecurlyJs.libPricingSubscriptionMod.SubscriptionPricingStateTax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

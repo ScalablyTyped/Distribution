@@ -81,7 +81,7 @@ object mod {
     inline def fromPromise[T](promise: js.Promise[T]): Future[T, js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Future[T, js.Error]]
     
     inline def fromResult[T](
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T extends undefined ? [] | [undefined] : [T] is not an array type */ args: js.Array[Any | T | Unit]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T extends undefined ? [] | [undefined] : [T] is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: T extends undefined ? [] | [undefined] : [T] */ js.Any
     ): Future[T, js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromResult")(args.asInstanceOf[js.Any]).asInstanceOf[Future[T, js.Error]]
     
     inline def onUnhandledRejection(future: Future[Any, js.Error]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUnhandledRejection")(future.asInstanceOf[js.Any]).asInstanceOf[Unit]

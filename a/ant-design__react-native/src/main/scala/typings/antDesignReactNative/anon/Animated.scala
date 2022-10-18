@@ -2,7 +2,7 @@ package typings.antDesignReactNative.anon
 
 import typings.antDesignReactNative.antDesignReactNativeStrings.bottom
 import typings.antDesignReactNative.antDesignReactNativeStrings.top
-import typings.antDesignReactNative.tabsPropsTypeMod.TabData
+import typings.antDesignReactNative.libTabsPropsTypeMod.TabData
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle

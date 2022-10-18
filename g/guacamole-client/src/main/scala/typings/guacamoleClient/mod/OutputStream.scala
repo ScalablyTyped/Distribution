@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "OutputStream")
 @js.native
 open class OutputStream protected ()
-  extends typings.guacamoleClient.outputStreamMod.OutputStream {
+  extends typings.guacamoleClient.libOutputStreamMod.OutputStream {
   /**
     * @param client The client owning this stream.
     * @param index The index of this stream.
     */
-  def this(client: typings.guacamoleClient.clientMod.Client, index: Double) = this()
+  def this(client: typings.guacamoleClient.libClientMod.Client, index: Double) = this()
 }

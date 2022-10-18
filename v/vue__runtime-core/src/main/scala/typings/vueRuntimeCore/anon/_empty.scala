@@ -1,96 +1,26 @@
 package typings.vueRuntimeCore.anon
 
-import typings.std.Omit
-import typings.std.Partial
-import typings.vueRuntimeCore.mod.ComponentOptionsBase
-import typings.vueRuntimeCore.mod.ComponentPublicInstance
-import typings.vueRuntimeCore.mod.Data
-import typings.vueRuntimeCore.mod.EmitFn
-import typings.vueRuntimeCore.mod.EmitsOptions
-import typings.vueRuntimeCore.mod.MergedComponentOptionsOverride
-import typings.vueRuntimeCore.mod.Slots
-import typings.vueRuntimeCore.mod.WatchOptions
-import typings.vueRuntimeCore.mod.WatchStopHandle
-import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
+import typings.vueRuntimeCore.mod.ComponentInternalInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait _empty[// raw bindings returned from setup()
-D, MakeDefaultsOptional /* <: Boolean */, Defaults, P, PublicProps, E /* <: EmitsOptions */, Options] extends StObject {
+trait _empty extends StObject {
   
+  // directly bailing on ComponentPublicInstance results in recursion
+  // so we use this as a bail hint
   @JSName("$")
-  var $: typings.vueRuntimeCore.mod.ComponentInternalInstance = js.native
+  var $: ComponentInternalInstance
+}
+object _empty {
   
-  @JSName("$attrs")
-  var $attrs: Data = js.native
+  inline def apply($: ComponentInternalInstance): _empty = {
+    val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_empty]
+  }
   
-  @JSName("$data")
-  var $data: D = js.native
-  
-  @JSName("$el")
-  var $el: Any = js.native
-  
-  @JSName("$emit")
-  var $emit: EmitFn[E, /* keyof E */ String] = js.native
-  
-  @JSName("$forceUpdate")
-  def $forceUpdate(): Unit = js.native
-  
-  @JSName("$nextTick")
-  def $nextTick[T](): js.Promise[Unit] = js.native
-  @JSName("$nextTick")
-  def $nextTick[T](fn: js.ThisFunction0[/* this */ T, Unit]): js.Promise[Unit] = js.native
-  @JSName("$nextTick")
-  var $nextTick_Original: FnCall = js.native
-  
-  @JSName("$options")
-  var $options: Options & MergedComponentOptionsOverride = js.native
-  
-  @JSName("$parent")
-  var $parent: (ComponentPublicInstance[
-    js.Object, 
-    js.Object, 
-    js.Object, 
-    js.Object, 
-    js.Object, 
-    js.Object, 
-    js.Object, 
-    js.Object, 
-    `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
-  ]) | Null = js.native
-  
-  @JSName("$props")
-  var $props: (P & PublicProps) | (Partial[Defaults] & (Omit[P & PublicProps, /* keyof Defaults */ String])) = js.native
-  
-  @JSName("$refs")
-  var $refs: Data = js.native
-  
-  @JSName("$root")
-  var $root: (ComponentPublicInstance[
-    js.Object, 
-    js.Object, 
-    js.Object, 
-    js.Object, 
-    js.Object, 
-    js.Object, 
-    js.Object, 
-    js.Object, 
-    `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
-  ]) | Null = js.native
-  
-  @JSName("$slots")
-  var $slots: Slots = js.native
-  
-  @JSName("$watch")
-  def $watch(source: String, cb: js.Function): WatchStopHandle = js.native
-  @JSName("$watch")
-  def $watch(source: String, cb: js.Function, options: WatchOptions[Boolean]): WatchStopHandle = js.native
-  @JSName("$watch")
-  def $watch(source: js.Function, cb: js.Function): WatchStopHandle = js.native
-  @JSName("$watch")
-  def $watch(source: js.Function, cb: js.Function, options: WatchOptions[Boolean]): WatchStopHandle = js.native
+  extension [Self <: _empty](x: Self) {
+    
+    inline def set$(value: ComponentInternalInstance): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+  }
 }

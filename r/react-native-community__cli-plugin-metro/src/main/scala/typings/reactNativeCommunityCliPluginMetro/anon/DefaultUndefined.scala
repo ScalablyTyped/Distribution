@@ -12,12 +12,12 @@ trait DefaultUndefined extends StObject {
   
   var name: String
   
-  var parse: Unit
+  def parse(`val`: String): js.Array[String]
 }
 object DefaultUndefined {
   
-  inline def apply(default: Unit, description: String, name: String, parse: Unit): DefaultUndefined = {
-    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any])
+  inline def apply(default: Unit, description: String, name: String, parse: String => js.Array[String]): DefaultUndefined = {
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse))
     __obj.asInstanceOf[DefaultUndefined]
   }
   
@@ -29,6 +29,6 @@ object DefaultUndefined {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setParse(value: Unit): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    inline def setParse(value: String => js.Array[String]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
   }
 }

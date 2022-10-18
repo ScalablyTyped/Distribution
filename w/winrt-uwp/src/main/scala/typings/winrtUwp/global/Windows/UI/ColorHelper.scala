@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides static helper methods for processing Color values. C# and Microsoft Visual Basic code should use methods of Color instead. */
-@JSGlobal("Windows.UI.ColorHelper")
+/* note: abstract class */ @JSGlobal("Windows.UI.ColorHelper")
 @js.native
-abstract class ColorHelper ()
+open class ColorHelper ()
   extends StObject
      with typings.winrtUwp.Windows.UI.ColorHelper
 object ColorHelper {

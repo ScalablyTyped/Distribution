@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ open class VolumetricLightScatteringPostProcess protected ()
   def this(
     name: String,
     ratio: Any,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     mesh: js.UndefOr[typings.babylonjs.BABYLON.Mesh],
     samples: js.UndefOr[Double],
     samplingMode: js.UndefOr[Double],

@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class Vision ()
   extends typings.yuka.mod.Vision {
-  def this(owner: typings.yuka.gameEntityMod.GameEntity) = this()
+  def this(owner: typings.yuka.srcCoreGameEntityMod.GameEntity) = this()
 }

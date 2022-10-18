@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientWebfonts
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientWebfonts.anon.Accesstoken
 import org.scalablytyped.runtime.StObject
@@ -23,9 +22,7 @@ object gapi {
         
         /** The font files (with all supported scripts) for each one of the available variants, as a key : value map. */
         var files: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientWebfonts.maximMazurokGapiClientWebfontsStrings.Webfont & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
               ] = js.undefined
         
         /** This kind represents a webfont object in the webfonts service. */
@@ -61,9 +58,7 @@ object gapi {
           inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
           
           inline def setFiles(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientWebfonts.maximMazurokGapiClientWebfontsStrings.Webfont & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
           ): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
           
           inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)

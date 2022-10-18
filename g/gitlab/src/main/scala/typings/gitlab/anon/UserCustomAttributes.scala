@@ -2,34 +2,40 @@ package typings.gitlab.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.gitlab.baseServiceMod.BaseServiceOptions
-import typings.gitlab.servicesMod.UserGPGKeys
-import typings.gitlab.servicesMod.UserImpersonationTokens
-import typings.gitlab.servicesMod.UserKeys
-import typings.gitlab.servicesMod.Users
+import typings.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
+import typings.gitlab.distTypesCoreServicesMod.UserGPGKeys
+import typings.gitlab.distTypesCoreServicesMod.UserImpersonationTokens
+import typings.gitlab.distTypesCoreServicesMod.UserKeys
+import typings.gitlab.distTypesCoreServicesMod.Users
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait UserCustomAttributes extends StObject {
   
-  var UserCustomAttributes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.UserCustomAttributes]
+  var UserCustomAttributes: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distTypesCoreServicesMod.UserCustomAttributes
+  ]
   
-  var UserEmails: Instantiable0[typings.gitlab.servicesMod.UserEmails]
+  var UserEmails: Instantiable0[typings.gitlab.distTypesCoreServicesMod.UserEmails]
   
-  var UserGPGKeys: Instantiable0[typings.gitlab.servicesMod.UserGPGKeys]
+  var UserGPGKeys: Instantiable0[typings.gitlab.distTypesCoreServicesMod.UserGPGKeys]
   
-  var UserImpersonationTokens: Instantiable0[typings.gitlab.servicesMod.UserImpersonationTokens]
+  var UserImpersonationTokens: Instantiable0[typings.gitlab.distTypesCoreServicesMod.UserImpersonationTokens]
   
-  var UserKeys: Instantiable0[typings.gitlab.servicesMod.UserKeys]
+  var UserKeys: Instantiable0[typings.gitlab.distTypesCoreServicesMod.UserKeys]
   
-  var Users: Instantiable0[typings.gitlab.servicesMod.Users]
+  var Users: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Users]
 }
 object UserCustomAttributes {
   
   inline def apply(
-    UserCustomAttributes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.UserCustomAttributes],
-    UserEmails: Instantiable0[typings.gitlab.servicesMod.UserEmails],
+    UserCustomAttributes: Instantiable1[
+      /* options */ BaseServiceOptions, 
+      typings.gitlab.distTypesCoreServicesMod.UserCustomAttributes
+    ],
+    UserEmails: Instantiable0[typings.gitlab.distTypesCoreServicesMod.UserEmails],
     UserGPGKeys: Instantiable0[UserGPGKeys],
     UserImpersonationTokens: Instantiable0[UserImpersonationTokens],
     UserKeys: Instantiable0[UserKeys],
@@ -42,10 +48,13 @@ object UserCustomAttributes {
   extension [Self <: UserCustomAttributes](x: Self) {
     
     inline def setUserCustomAttributes(
-      value: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.UserCustomAttributes]
+      value: Instantiable1[
+          /* options */ BaseServiceOptions, 
+          typings.gitlab.distTypesCoreServicesMod.UserCustomAttributes
+        ]
     ): Self = StObject.set(x, "UserCustomAttributes", value.asInstanceOf[js.Any])
     
-    inline def setUserEmails(value: Instantiable0[typings.gitlab.servicesMod.UserEmails]): Self = StObject.set(x, "UserEmails", value.asInstanceOf[js.Any])
+    inline def setUserEmails(value: Instantiable0[typings.gitlab.distTypesCoreServicesMod.UserEmails]): Self = StObject.set(x, "UserEmails", value.asInstanceOf[js.Any])
     
     inline def setUserGPGKeys(value: Instantiable0[UserGPGKeys]): Self = StObject.set(x, "UserGPGKeys", value.asInstanceOf[js.Any])
     

@@ -1,47 +1,46 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Plussign1
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`-1`
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.confused
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.eyes
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.heart
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.hooray
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.laugh
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `481` extends StObject {
   
-  /** Returns a single [reaction type](https://docs.github.com/rest/reference/reactions#reaction-types). Omit this parameter to list all reactions to a team discussion. */
-  var content: js.UndefOr[Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes] = js.undefined
+  var dismissed_comment: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-alert-dismissed-comment'] */ js.Any
+  ] = js.undefined
   
-  /** Page number of the results to fetch. */
-  var page: js.UndefOr[Double] = js.undefined
+  var dismissed_reason: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-alert-dismissed-reason'] */ js.Any
+  ] = js.undefined
   
-  /** The number of results per page (max 100). */
-  var per_page: js.UndefOr[Double] = js.undefined
+  var state: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-alert-set-state'] */ js.Any
 }
 object `481` {
   
-  inline def apply(): `481` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    state: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-alert-set-state'] */ js.Any
+  ): `481` = {
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[`481`]
   }
   
   extension [Self <: `481`](x: Self) {
     
-    inline def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setDismissed_comment(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-alert-dismissed-comment'] */ js.Any
+    ): Self = StObject.set(x, "dismissed_comment", value.asInstanceOf[js.Any])
     
-    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setDismissed_commentUndefined: Self = StObject.set(x, "dismissed_comment", js.undefined)
     
-    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setDismissed_reason(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-alert-dismissed-reason'] */ js.Any
+    ): Self = StObject.set(x, "dismissed_reason", value.asInstanceOf[js.Any])
     
-    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setDismissed_reasonUndefined: Self = StObject.set(x, "dismissed_reason", js.undefined)
     
-    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
-    
-    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setState(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-alert-set-state'] */ js.Any
+    ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

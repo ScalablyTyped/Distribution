@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data when an app is activated to remove an appointment from the user’s calendar. */
-@JSGlobal("Windows.UI.WebUI.WebUIAppointmentsProviderRemoveAppointmentActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUIAppointmentsProviderRemoveAppointmentActivatedEventArgs")
 @js.native
-abstract class WebUIAppointmentsProviderRemoveAppointmentActivatedEventArgs ()
+open class WebUIAppointmentsProviderRemoveAppointmentActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUIAppointmentsProviderRemoveAppointmentActivatedEventArgs {
   

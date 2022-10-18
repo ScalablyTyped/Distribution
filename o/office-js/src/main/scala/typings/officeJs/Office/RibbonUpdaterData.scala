@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Specifies changes to the ribbon, such as the enabled or disabled status of a button.
-	 *
-	 * @remarks
+  *
+  * @remarks
   *
   * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
   */
@@ -15,7 +15,7 @@ trait RibbonUpdaterData extends StObject {
   
   /**
     * Collection of tabs whose state is set with the call of `requestUpdate`.
-  		 */
+    */
   var tabs: js.Array[Tab]
 }
 object RibbonUpdaterData {

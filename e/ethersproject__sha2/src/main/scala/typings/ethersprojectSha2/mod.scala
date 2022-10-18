@@ -1,7 +1,7 @@
 package typings.ethersprojectSha2
 
 import typings.ethersprojectBytes.mod.BytesLike
-import typings.ethersprojectSha2.typesMod.SupportedAlgorithm
+import typings.ethersprojectSha2.libTypesMod.SupportedAlgorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +17,11 @@ object mod {
   object SupportedAlgorithm extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.ethersprojectSha2.typesMod.SupportedAlgorithm & String] = js.native
+    def apply(value: String): js.UndefOr[typings.ethersprojectSha2.libTypesMod.SupportedAlgorithm & String] = js.native
     
-    /* "sha256" */ val sha256: typings.ethersprojectSha2.typesMod.SupportedAlgorithm.sha256 & String = js.native
+    /* "sha256" */ val sha256: typings.ethersprojectSha2.libTypesMod.SupportedAlgorithm.sha256 & String = js.native
     
-    /* "sha512" */ val sha512: typings.ethersprojectSha2.typesMod.SupportedAlgorithm.sha512 & String = js.native
+    /* "sha512" */ val sha512: typings.ethersprojectSha2.libTypesMod.SupportedAlgorithm.sha512 & String = js.native
   }
   
   inline def computeHmac(algorithm: SupportedAlgorithm, key: BytesLike, data: BytesLike): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]

@@ -10,7 +10,7 @@ import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.avatarMod.AvatarIcon
+import typings.reactNativeElements.distAvatarAvatarMod.AvatarIcon
 import typings.reactNativeElements.reactNativeElementsStrings.Component
 import typings.reactNativeElements.reactNativeElementsStrings.large
 import typings.reactNativeElements.reactNativeElementsStrings.medium

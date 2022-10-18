@@ -1,6 +1,6 @@
 package typings.angularDevkitCore.anon
 
-import typings.angularDevkitCore.utilsMod.JsonValue
+import typings.angularDevkitCore.srcJsonUtilsMod.JsonValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

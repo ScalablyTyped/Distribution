@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new instance PointParticleEmitter
   */
 open class PointParticleEmitter ()
-  extends typings.babylonjs.emitterTypesIndexMod.PointParticleEmitter
+  extends typings.babylonjs.particlesEmitterTypesIndexMod.PointParticleEmitter

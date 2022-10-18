@@ -67,6 +67,7 @@ object complexTypesMod {
     }
   }
   
+  /* augmented module */
   object hastAugmentingMod {
     
     trait ElementContentMap extends StObject {

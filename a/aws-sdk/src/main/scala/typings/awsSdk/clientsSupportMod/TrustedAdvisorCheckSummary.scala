@@ -1,0 +1,65 @@
+package typings.awsSdk.clientsSupportMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait TrustedAdvisorCheckSummary extends StObject {
+  
+  /**
+    * Summary information that relates to the category of the check. Cost Optimizing is the only category that is currently supported.
+    */
+  var categorySpecificSummary: TrustedAdvisorCategorySpecificSummary
+  
+  /**
+    * The unique identifier for the Trusted Advisor check.
+    */
+  var checkId: String
+  
+  /**
+    * Specifies whether the Trusted Advisor check has flagged resources.
+    */
+  var hasFlaggedResources: js.UndefOr[Boolean] = js.undefined
+  
+  var resourcesSummary: TrustedAdvisorResourcesSummary
+  
+  /**
+    * The alert status of the check: "ok" (green), "warning" (yellow), "error" (red), or "not_available".
+    */
+  var status: String
+  
+  /**
+    * The time of the last refresh of the check.
+    */
+  var timestamp: String
+}
+object TrustedAdvisorCheckSummary {
+  
+  inline def apply(
+    categorySpecificSummary: TrustedAdvisorCategorySpecificSummary,
+    checkId: String,
+    resourcesSummary: TrustedAdvisorResourcesSummary,
+    status: String,
+    timestamp: String
+  ): TrustedAdvisorCheckSummary = {
+    val __obj = js.Dynamic.literal(categorySpecificSummary = categorySpecificSummary.asInstanceOf[js.Any], checkId = checkId.asInstanceOf[js.Any], resourcesSummary = resourcesSummary.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TrustedAdvisorCheckSummary]
+  }
+  
+  extension [Self <: TrustedAdvisorCheckSummary](x: Self) {
+    
+    inline def setCategorySpecificSummary(value: TrustedAdvisorCategorySpecificSummary): Self = StObject.set(x, "categorySpecificSummary", value.asInstanceOf[js.Any])
+    
+    inline def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
+    
+    inline def setHasFlaggedResources(value: Boolean): Self = StObject.set(x, "hasFlaggedResources", value.asInstanceOf[js.Any])
+    
+    inline def setHasFlaggedResourcesUndefined: Self = StObject.set(x, "hasFlaggedResources", js.undefined)
+    
+    inline def setResourcesSummary(value: TrustedAdvisorResourcesSummary): Self = StObject.set(x, "resourcesSummary", value.asInstanceOf[js.Any])
+    
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+  }
+}

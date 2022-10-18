@@ -2,11 +2,11 @@ package typings.wdioTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
-import typings.wdioTypes.optionsMod.RequestLibOptions
-import typings.wdioTypes.optionsMod.RequestLibResponse
-import typings.wdioTypes.optionsMod.SauceRegions
-import typings.wdioTypes.optionsMod.SupportedProtocols
-import typings.wdioTypes.optionsMod.WebDriverLogTypes
+import typings.wdioTypes.buildOptionsMod.RequestLibOptions
+import typings.wdioTypes.buildOptionsMod.RequestLibResponse
+import typings.wdioTypes.buildOptionsMod.SauceRegions
+import typings.wdioTypes.buildOptionsMod.SupportedProtocols
+import typings.wdioTypes.buildOptionsMod.WebDriverLogTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -14,7 +14,16 @@ trait TypeofMinValidator
   extends StObject
      with Instantiable0[MinValidator] {
   
-  var ɵdir: ɵɵDirectiveDeclaration[MinValidator, String, scala.Nothing, Min, js.Object, scala.Nothing, scala.Nothing, `false`] = js.native
+  var ɵdir: ɵɵDirectiveDeclaration[
+    MinValidator, 
+    /* input[type=number][min][formControlName],input[type=number][min][formControl],input[type=number][min][ngModel] */ String, 
+    scala.Nothing, 
+    Min, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[MinValidator, scala.Nothing] = js.native
 }

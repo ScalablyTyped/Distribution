@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the PlaybackRateChangeRequested event. */
-@JSGlobal("Windows.Media.PlaybackRateChangeRequestedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.PlaybackRateChangeRequestedEventArgs")
 @js.native
-abstract class PlaybackRateChangeRequestedEventArgs ()
+open class PlaybackRateChangeRequestedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.PlaybackRateChangeRequestedEventArgs {
   

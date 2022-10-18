@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Element extends StObject {
   
-  var componentInstance: typings.vueDevtoolsApi.componentMod.ComponentInstance
+  var componentInstance: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance
   
   var element: HTMLElement | Any
 }
 object Element {
   
   inline def apply(
-    componentInstance: typings.vueDevtoolsApi.componentMod.ComponentInstance,
+    componentInstance: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance,
     element: HTMLElement | Any
   ): Element = {
     val __obj = js.Dynamic.literal(componentInstance = componentInstance.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
@@ -23,7 +23,7 @@ object Element {
   
   extension [Self <: Element](x: Self) {
     
-    inline def setComponentInstance(value: typings.vueDevtoolsApi.componentMod.ComponentInstance): Self = StObject.set(x, "componentInstance", value.asInstanceOf[js.Any])
+    inline def setComponentInstance(value: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance): Self = StObject.set(x, "componentInstance", value.asInstanceOf[js.Any])
     
     inline def setElement(value: HTMLElement | Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }

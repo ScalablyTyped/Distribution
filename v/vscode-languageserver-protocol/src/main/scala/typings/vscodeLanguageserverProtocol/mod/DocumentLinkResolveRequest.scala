@@ -9,7 +9,7 @@ object DocumentLinkResolveRequest {
   
   @JSImport("vscode-languageserver-protocol", "DocumentLinkResolveRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "DocumentLinkResolveRequest.method")
   @js.native
@@ -17,7 +17,7 @@ object DocumentLinkResolveRequest {
   
   @JSImport("vscode-languageserver-protocol", "DocumentLinkResolveRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     typings.vscodeLanguageserverTypes.mod.DocumentLink, 
     typings.vscodeLanguageserverTypes.mod.DocumentLink, 
     scala.Nothing, 

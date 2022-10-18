@@ -1,23 +1,21 @@
 package typings.fluentuiStyleUtilities
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.fluentuiMergeStyles.deepPartialMod.DeepPartial
-import typings.fluentuiMergeStyles.ikeyframesMod.IKeyframes
-import typings.fluentuiMergeStyles.irawstyleMod.IRawStyle
-import typings.fluentuiMergeStyles.irawstylebaseMod.IFontFace
-import typings.fluentuiMergeStyles.irawstylebaseMod.IFontWeight
-import typings.fluentuiMergeStyles.istyleMod.IStyle
-import typings.fluentuiMergeStyles.istyleMod.IStyleBaseArray
-import typings.fluentuiMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.fluentuiMergeStyles.istylesetMod.IConcatenatedStyleSet
-import typings.fluentuiMergeStyles.istylesetMod.IProcessedStyleSet
-import typings.fluentuiMergeStyles.istylesetMod.IStyleSet
-import typings.fluentuiMergeStyles.objectOnlyMod.ObjectOnly
-import typings.fluentuiMergeStyles.stylesheetMod.ISerializedStylesheet
-import typings.fluentuiMergeStyles.stylesheetMod.IStyleSheetConfig
+import typings.fluentuiMergeStyles.libDeepPartialMod.DeepPartial
+import typings.fluentuiMergeStyles.libIkeyframesMod.IKeyframes
+import typings.fluentuiMergeStyles.libIrawstyleMod.IRawStyle
+import typings.fluentuiMergeStyles.libIrawstylebaseMod.IFontFace
+import typings.fluentuiMergeStyles.libIrawstylebaseMod.IFontWeight
+import typings.fluentuiMergeStyles.libIstyleMod.IStyle
+import typings.fluentuiMergeStyles.libIstyleMod.IStyleBaseArray
+import typings.fluentuiMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.fluentuiMergeStyles.libIstylesetMod.IConcatenatedStyleSet
+import typings.fluentuiMergeStyles.libIstylesetMod.IProcessedStyleSet
+import typings.fluentuiMergeStyles.libIstylesetMod.IStyleSet
+import typings.fluentuiMergeStyles.libObjectOnlyMod.ObjectOnly
+import typings.fluentuiMergeStyles.libStylesheetMod.ISerializedStylesheet
+import typings.fluentuiMergeStyles.libStylesheetMod.IStyleSheetConfig
 import typings.fluentuiStyleUtilities.anon.PartialIIconOptions
-import typings.fluentuiStyleUtilities.colorClassNamesMod.IColorClassNames
 import typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesBooleans.`false`
 import typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesInts.`0`
 import typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesInts.`1`
@@ -28,21 +26,22 @@ import typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesStrings.borderBottom
 import typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesStrings.horizontal
 import typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesStrings.relative
 import typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesStrings.vertical
-import typings.fluentuiStyleUtilities.getGlobalClassNamesMod.GlobalClassNames
-import typings.fluentuiStyleUtilities.iconsMod.IIconRecord
-import typings.fluentuiStyleUtilities.iconsMod.IIconSubset
-import typings.fluentuiStyleUtilities.igetfocusstylesMod.IGetFocusStylesOptions
-import typings.fluentuiTheme.ianimationstylesMod.IAnimationStyles
-import typings.fluentuiTheme.ianimationstylesMod.IAnimationVariables
-import typings.fluentuiTheme.ieffectsMod.IEffects
-import typings.fluentuiTheme.ifontstylesMod.IFontStyles
-import typings.fluentuiTheme.ipaletteMod.IPalette
-import typings.fluentuiTheme.ischemeMod.ISchemeNames
-import typings.fluentuiTheme.ithemeMod.IPartialTheme
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.fluentuiTheme.themeMod.PartialTheme
-import typings.fluentuiTheme.themeMod.Theme
-import typings.fluentuiUtilities.customizerContextMod.ICustomizerContext
+import typings.fluentuiStyleUtilities.libClassNamesColorClassNamesMod.IColorClassNames
+import typings.fluentuiStyleUtilities.libInterfacesIgetfocusstylesMod.IGetFocusStylesOptions
+import typings.fluentuiStyleUtilities.libStylesGetGlobalClassNamesMod.GlobalClassNames
+import typings.fluentuiStyleUtilities.libUtilitiesIconsMod.IIconRecord
+import typings.fluentuiStyleUtilities.libUtilitiesIconsMod.IIconSubset
+import typings.fluentuiTheme.libTypesIanimationstylesMod.IAnimationStyles
+import typings.fluentuiTheme.libTypesIanimationstylesMod.IAnimationVariables
+import typings.fluentuiTheme.libTypesIeffectsMod.IEffects
+import typings.fluentuiTheme.libTypesIfontstylesMod.IFontStyles
+import typings.fluentuiTheme.libTypesIpaletteMod.IPalette
+import typings.fluentuiTheme.libTypesIschemeMod.ISchemeNames
+import typings.fluentuiTheme.libTypesIthemeMod.IPartialTheme
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.fluentuiTheme.libTypesThemeMod.PartialTheme
+import typings.fluentuiTheme.libTypesThemeMod.Theme
+import typings.fluentuiUtilities.libCustomizationsCustomizerContextMod.ICustomizerContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -564,6 +563,13 @@ object mod {
         /* borderWidth */ String, 
         String
       ] = js.native
+    inline def continuousPulseAnimationDouble(
+      beaconColorOne: String,
+      beaconColorTwo: String,
+      innerDimension: String,
+      outerDimension: String,
+      borderWidth: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("continuousPulseAnimationDouble")(beaconColorOne.asInstanceOf[js.Any], beaconColorTwo.asInstanceOf[js.Any], innerDimension.asInstanceOf[js.Any], outerDimension.asInstanceOf[js.Any], borderWidth.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def continuousPulseAnimationDouble_=(
       x: js.Function5[
           /* beaconColorOne */ String, 
@@ -585,6 +591,13 @@ object mod {
         /* borderWidth */ String, 
         String
       ] = js.native
+    inline def continuousPulseAnimationSingle(
+      beaconColorOne: String,
+      beaconColorTwo: String,
+      innerDimension: String,
+      outerDimension: String,
+      borderWidth: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("continuousPulseAnimationSingle")(beaconColorOne.asInstanceOf[js.Any], beaconColorTwo.asInstanceOf[js.Any], innerDimension.asInstanceOf[js.Any], outerDimension.asInstanceOf[js.Any], borderWidth.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def continuousPulseAnimationSingle_=(
       x: js.Function5[
           /* beaconColorOne */ String, 
@@ -599,6 +612,8 @@ object mod {
     @JSImport("@fluentui/style-utilities", "PulsingBeaconAnimationStyles.createDefaultAnimation")
     @js.native
     def createDefaultAnimation: js.Function2[/* animationName */ String, /* delayLength */ js.UndefOr[String], IRawStyle] = js.native
+    inline def createDefaultAnimation(animationName: String): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultAnimation")(animationName.asInstanceOf[js.Any]).asInstanceOf[IRawStyle]
+    inline def createDefaultAnimation(animationName: String, delayLength: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultAnimation")(animationName.asInstanceOf[js.Any], delayLength.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
     inline def createDefaultAnimation_=(x: js.Function2[/* animationName */ String, /* delayLength */ js.UndefOr[String], IRawStyle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createDefaultAnimation")(x.asInstanceOf[js.Any])
   }
   
@@ -653,7 +668,7 @@ object mod {
   @JSImport("@fluentui/style-utilities", "Stylesheet")
   @js.native
   open class Stylesheet ()
-    extends typings.fluentuiStyleUtilities.mergeStylesMod.Stylesheet {
+    extends typings.fluentuiStyleUtilities.libMergeStylesMod.Stylesheet {
     def this(config: IStyleSheetConfig) = this()
     def this(config: Unit, serializedStylesheet: ISerializedStylesheet) = this()
     def this(config: IStyleSheetConfig, serializedStylesheet: ISerializedStylesheet) = this()
@@ -668,7 +683,7 @@ object mod {
     /**
       * Gets the singleton instance.
       */
-    inline def getInstance(): typings.fluentuiMergeStyles.stylesheetMod.Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.fluentuiMergeStyles.stylesheetMod.Stylesheet]
+    inline def getInstance(): typings.fluentuiMergeStyles.libStylesheetMod.Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.fluentuiMergeStyles.libStylesheetMod.Stylesheet]
   }
   
   @JSImport("@fluentui/style-utilities", "ThemeSettingName")
@@ -705,11 +720,7 @@ object mod {
     val ScrollablePane: Double = js.native
   }
   
-  inline def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]:? string}
-    */ typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesStrings.buildClassMap & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClassMap")(styles.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]:? string}
-    */ typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesStrings.buildClassMap & TopLevel[Any]]
+  inline def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]:? string} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClassMap")(styles.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]:? string} */ js.Any]
   
   inline def concatStyleSets[TStyleSet](): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")().asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet]]]
   inline def concatStyleSets[TStyleSet](styleSet: TStyleSet): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet]]]
@@ -787,7 +798,7 @@ object mod {
   inline def getFadedOverflowStyle(
     theme: ITheme,
     color: js.UndefOr[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154 */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154, starting with typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesStrings.bodyBackground, typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesStrings.bodyBackgroundHovered, typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesStrings.bodyBackgroundChecked */ Any
     ],
     direction: js.UndefOr[horizontal | vertical],
     width: js.UndefOr[String | Double],

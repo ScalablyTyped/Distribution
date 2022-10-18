@@ -1,11 +1,11 @@
 package typings.mendixmodelsdk.mod.settings
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.settingsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenSettingsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 9.10.0: introduced
   */
-@JSImport("mendixmodelsdk", "settings.JarLocationBase")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "settings.JarLocationBase")
 @js.native
-abstract class JarLocationBase protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.settings.JarLocationBase {
+open class JarLocationBase protected ()
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.settings.JarLocationBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,

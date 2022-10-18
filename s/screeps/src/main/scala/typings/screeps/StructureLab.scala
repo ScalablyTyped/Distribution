@@ -13,8 +13,7 @@ trait StructureLab
   extends StObject
      with OwnedStructure[STRUCTURE_LAB]
      with AnyOwnedStructure
-     with AnyStoreStructure
-     with ConcreteStructure[Any] {
+     with AnyStoreStructure {
   
   /**
     * Boosts creep body part using the containing mineral compound. The creep has to be at adjacent square to the lab. Boosting one body part consumes 30 mineral units and 20 energy units.

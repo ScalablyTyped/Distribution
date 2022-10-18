@@ -1,5 +1,7 @@
 package typings.materializecssMaterialize.mod
 
+import typings.materializecssMaterialize.M.DatepickerOptions
+import typings.materializecssMaterialize.MElements
 import typings.materializecssMaterialize.anon.PartialDatepickerOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -10,7 +12,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Datepicker ()
   extends StObject
-     with typings.materializecssMaterialize.M.Datepicker
+     with typings.materializecssMaterialize.M.Datepicker {
+  
+  /* CompleteClass */
+  override def close(): Unit = js.native
+  
+  /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
+  
+  /* CompleteClass */
+  var isOpen: Boolean = js.native
+  
+  /* CompleteClass */
+  override def open(): Unit = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: DatepickerOptions = js.native
+}
 object Datepicker {
   
   @JSImport("@materializecss/materialize", "Datepicker")
@@ -27,13 +57,8 @@ object Datepicker {
     * Init Datepickers
     */
   /* static member */
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any
-  ): js.Array[typings.materializecssMaterialize.M.Datepicker] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Datepicker]]
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any,
-    options: PartialDatepickerOptions
-  ): js.Array[typings.materializecssMaterialize.M.Datepicker] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Datepicker]]
+  inline def init(els: MElements): js.Array[typings.materializecssMaterialize.M.Datepicker] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Datepicker]]
+  inline def init(els: MElements, options: PartialDatepickerOptions): js.Array[typings.materializecssMaterialize.M.Datepicker] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Datepicker]]
   /**
     * Init Datepicker
     */

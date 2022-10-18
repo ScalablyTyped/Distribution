@@ -6,8 +6,8 @@ import typings.broccoliNodeApi.mod.InputNode
 import typings.broccoliNodeApi.mod.NodeCommon
 import typings.broccoliNodeApi.mod.TransformNodeInfo
 import typings.broccoliOutputWrapper.mod.FSOutput
-import typings.broccoliPlugin.interfacesMod.MapSeriesIterator
-import typings.broccoliPlugin.interfacesMod.PluginOptions
+import typings.broccoliPlugin.distInterfacesMod.MapSeriesIterator
+import typings.broccoliPlugin.distInterfacesMod.PluginOptions
 import typings.fsMerger.mod.FS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

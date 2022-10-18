@@ -1,6 +1,6 @@
 package typings.auth0.mod
 
-import typings.auth0.anon.NameString
+import typings.auth0.anon.Name
 import typings.auth0.anon.ObjectWithIdPagingOptions
 import typings.auth0.anon.ObjectWithIdPagingOptionsFields
 import typings.auth0.anon.ObjectWithIdPagingOptionsId
@@ -79,8 +79,8 @@ open class OrganizationsManager () extends StObject {
   def getByID(params: ObjectWithId): js.Promise[Organization] = js.native
   def getByID(params: ObjectWithId, cb: js.Function2[/* err */ js.Error, /* organization */ Organization, Unit]): Unit = js.native
   
-  def getByName(params: NameString): js.Promise[Organization] = js.native
-  def getByName(params: NameString, cb: js.Function2[/* err */ js.Error, /* organization */ Organization, Unit]): Unit = js.native
+  def getByName(params: Name): js.Promise[Organization] = js.native
+  def getByName(params: Name, cb: js.Function2[/* err */ js.Error, /* organization */ Organization, Unit]): Unit = js.native
   
   def getEnabledConnection(params: ObjectWithIdconnectionids): js.Promise[OrganizationConnection] = js.native
   def getEnabledConnection(

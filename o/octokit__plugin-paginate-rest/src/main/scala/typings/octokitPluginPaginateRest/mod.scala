@@ -2,7 +2,7 @@ package typings.octokitPluginPaginateRest
 
 import typings.octokitCore.mod.Octokit
 import typings.octokitPluginPaginateRest.anon.Paginate
-import typings.octokitPluginPaginateRest.typesMod.ComposePaginateInterface
+import typings.octokitPluginPaginateRest.distTypesTypesMod.ComposePaginateInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,6 +36,6 @@ object mod {
   @JSImport("@octokit/plugin-paginate-rest", "paginatingEndpoints")
   @js.native
   val paginatingEndpoints: js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 185, starting with typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashappSlashhookSlashdeliveries`, typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashappSlashinstallations`, / * GET /enterprises/{enterprise}/actions/permissions/organizations * / java.lang.String */ Any
   ] = js.native
 }

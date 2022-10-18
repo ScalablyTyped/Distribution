@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object utilsMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/utils", JSImport.Namespace)
+  @JSImport("@formatjs/ecma402-abstract/utils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@formatjs/ecma402-abstract/lib/utils", "UNICODE_EXTENSION_SEQUENCE_REGEX")
+  @JSImport("@formatjs/ecma402-abstract/utils", "UNICODE_EXTENSION_SEQUENCE_REGEX")
   @js.native
   val UNICODE_EXTENSION_SEQUENCE_REGEX: js.RegExp = js.native
   
@@ -32,8 +32,8 @@ object utilsMod {
   inline def invariant(condition: Boolean, message: String): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts condition */ Boolean]
   inline def invariant(condition: Boolean, message: String, Err: Any): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any], Err.asInstanceOf[js.Any])).asInstanceOf[/* asserts condition */ Boolean]
   
-  inline def isLiteralPart(patternPart: Value): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/utils.LiteralPart */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralPart")(patternPart.asInstanceOf[js.Any]).asInstanceOf[/* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/utils.LiteralPart */ Boolean]
-  inline def isLiteralPart(patternPart: LiteralPart): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/utils.LiteralPart */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralPart")(patternPart.asInstanceOf[js.Any]).asInstanceOf[/* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/utils.LiteralPart */ Boolean]
+  inline def isLiteralPart(patternPart: Value): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/utils.LiteralPart */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralPart")(patternPart.asInstanceOf[js.Any]).asInstanceOf[/* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/utils.LiteralPart */ Boolean]
+  inline def isLiteralPart(patternPart: LiteralPart): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/utils.LiteralPart */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralPart")(patternPart.asInstanceOf[js.Any]).asInstanceOf[/* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/utils.LiteralPart */ Boolean]
   
   inline def repeat(s: String, times: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(s.asInstanceOf[js.Any], times.asInstanceOf[js.Any])).asInstanceOf[String]
   

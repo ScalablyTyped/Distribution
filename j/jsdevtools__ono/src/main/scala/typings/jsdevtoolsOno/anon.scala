@@ -1,6 +1,6 @@
 package typings.jsdevtoolsOno
 
-import typings.jsdevtoolsOno.typesMod.ErrorLike
+import typings.jsdevtoolsOno.esmTypesMod.ErrorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

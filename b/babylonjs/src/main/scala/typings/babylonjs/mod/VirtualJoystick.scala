@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param customizations Defines the options we want to customize the VirtualJoystick
   */
 open class VirtualJoystick ()
-  extends typings.babylonjs.legacyMod.VirtualJoystick {
+  extends typings.babylonjs.legacyLegacyMod.VirtualJoystick {
   def this(leftJoystick: Boolean) = this()
   def this(leftJoystick: Boolean, customizations: PartialVirtualJoystickCus) = this()
   def this(leftJoystick: Unit, customizations: PartialVirtualJoystickCus) = this()

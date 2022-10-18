@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object svelteStrings {
   
   @js.native
-  sealed trait StoresValues extends StObject
-  inline def StoresValues: StoresValues = "StoresValues".asInstanceOf[StoresValues]
-  
-  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   

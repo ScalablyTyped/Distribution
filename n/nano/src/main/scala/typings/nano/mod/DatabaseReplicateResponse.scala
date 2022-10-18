@@ -4,22 +4,23 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate
+/** Database _replicate response.
+  * @see Docs: {@link http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate} */
 trait DatabaseReplicateResponse extends StObject {
   
-  // Replication history
+  /** Replication history */
   var history: js.Array[DatabaseReplicationHistoryItem]
   
-  // Replication status
+  /** Replication status */
   var ok: Boolean
   
-  // Replication protocol version
+  /** Replication protocol version */
   var replication_id_version: Double
   
-  // Unique session ID
+  /** Unique session ID */
   var session_id: String
   
-  // Last sequence number read from source database
+  /** Last sequence number read from source database */
   var source_last_seq: Double
 }
 object DatabaseReplicateResponse {
@@ -39,7 +40,7 @@ object DatabaseReplicateResponse {
     
     inline def setHistory(value: js.Array[DatabaseReplicationHistoryItem]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    inline def setHistoryVarargs(value: DatabaseReplicationHistoryItem*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: DatabaseReplicationHistoryItem*): Self = StObject.set(x, "history", js.Array(value*))
     
     inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     

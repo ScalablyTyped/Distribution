@@ -1,7 +1,7 @@
 package typings.xstate.anon
 
-import typings.xstate.typesMod.MachineOptionsGuards
-import typings.xstate.typesMod.Prop
+import typings.xstate.libTypesMod.MachineOptionsGuards
+import typings.xstate.libTypesMod.Prop
 import typings.xstate.xstateStrings.eventsCausingGuards
 import typings.xstate.xstateStrings.indexedEvents
 import typings.xstate.xstateStrings.resolved

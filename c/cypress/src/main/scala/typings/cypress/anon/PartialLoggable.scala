@@ -1,20 +1,25 @@
 package typings.cypress.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<cypress.Cypress.Loggable> */
-trait PartialLoggable extends js.Object {
+trait PartialLoggable extends StObject {
+  
   var log: js.UndefOr[Boolean] = js.undefined
 }
-
 object PartialLoggable {
-  @scala.inline
-  def apply(log: js.UndefOr[Boolean] = js.undefined): PartialLoggable = {
+  
+  inline def apply(): PartialLoggable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialLoggable]
   }
+  
+  extension [Self <: PartialLoggable](x: Self) {
+    
+    inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+  }
 }
-

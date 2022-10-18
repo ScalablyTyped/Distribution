@@ -1,7 +1,7 @@
 package typings.dxf
 
-import typings.dxf.entitiesMod.Entity
-import typings.dxf.entitiesMod.LayerGroupedEntities
+import typings.dxf.handlersEntitiesMod.Entity
+import typings.dxf.handlersEntitiesMod.LayerGroupedEntities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

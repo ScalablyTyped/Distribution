@@ -5,7 +5,7 @@ import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
 import typings.baseui.baseuiStrings.mini
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

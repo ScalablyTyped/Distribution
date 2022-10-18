@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +23,7 @@ trait SeqMapTask extends StObject {
   
   /** The user function to invoke. */
   var userFn: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.SeqMapTask & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object SeqMapTask {
@@ -63,9 +60,7 @@ object SeqMapTask {
     inline def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
     
     inline def setUserFn(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.SeqMapTask & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "userFn", value.asInstanceOf[js.Any])
     
     inline def setUserFnUndefined: Self = StObject.set(x, "userFn", js.undefined)

@@ -1,10 +1,10 @@
 package typings.fpTs.mod
 
-import typings.fpTs.magmaMod.Magma
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.ordMod.Ord_
-import typings.fpTs.refinementMod.Refinement
-import typings.fpTs.semigroupMod.Semigroup
+import typings.fpTs.libMagmaMod.Magma
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libOrdMod.Ord_
+import typings.fpTs.libRefinementMod.Refinement
+import typings.fpTs.libSemigroupMod.Semigroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +13,15 @@ object number {
   
   @JSImport("fp-ts", "number.Bounded")
   @js.native
-  val Bounded: typings.fpTs.boundedMod.Bounded[Double] = js.native
+  val Bounded: typings.fpTs.libBoundedMod.Bounded[Double] = js.native
   
   @JSImport("fp-ts", "number.Eq")
   @js.native
-  val Eq: typings.fpTs.eqMod.Eq[Double] = js.native
+  val Eq: typings.fpTs.libEqMod.Eq[Double] = js.native
   
   @JSImport("fp-ts", "number.Field")
   @js.native
-  val Field: typings.fpTs.fieldMod.Field[Double] = js.native
+  val Field: typings.fpTs.libFieldMod.Field[Double] = js.native
   
   @JSImport("fp-ts", "number.MagmaSub")
   @js.native
@@ -49,7 +49,7 @@ object number {
   
   @JSImport("fp-ts", "number.Show")
   @js.native
-  val Show: typings.fpTs.showMod.Show[Double] = js.native
+  val Show: typings.fpTs.libShowMod.Show[Double] = js.native
   
   @JSImport("fp-ts", "number.isNumber")
   @js.native

@@ -1,6 +1,6 @@
 package typings.reactMdDialog
 
-import typings.reactMdDialog.dialogFooterMod.DialogFooterAlignment
+import typings.reactMdDialog.typesDialogFooterMod.DialogFooterAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

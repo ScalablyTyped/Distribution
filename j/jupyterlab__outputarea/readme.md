@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__outputarea
 
-Typings are for version 2.2.4
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Notebook Output Area
@@ -10,10 +10,10 @@ JupyterLab - Notebook Output Area
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/outputarea |
 | Keywords           | - |
-| # releases         | 129 |
-| # dependents       | 26 |
-| # downloads        | 1776170 |
-| # stars            | 0 |
+| # releases         | 141 |
+| # dependents       | 0.0 |
+| # downloads        | 242973.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

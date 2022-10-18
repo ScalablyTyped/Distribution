@@ -2,7 +2,7 @@ package typings.chartJs.mod
 
 import typings.chartJs.chartJsStrings.center
 import typings.chartJs.chartJsStrings.inner
-import typings.chartJs.colorMod.Color
+import typings.chartJs.typesColorMod.Color
 import typings.std.CanvasLineJoin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

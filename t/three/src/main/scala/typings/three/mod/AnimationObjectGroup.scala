@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "AnimationObjectGroup")
 @js.native
 open class AnimationObjectGroup protected ()
-  extends typings.three.threeMod.AnimationObjectGroup {
+  extends typings.three.srcThreeMod.AnimationObjectGroup {
   def this(args: Any*) = this()
 }

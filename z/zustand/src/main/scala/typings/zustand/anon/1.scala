@@ -1,43 +1,26 @@
 package typings.zustand.anon
 
-import typings.immer.typesExternalMod.Draft
-import typings.std.Partial
-import typings.zustand.immerMod.SkipTwo
+import typings.zustand.vanillaMod.StoreMutatorIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `1` extends StObject {
+trait `1`[Mos /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */] extends StObject {
   
-  def setState(
-    nextStateOrUpdater: js.Function1[/* state */ Draft[Any], Unit],
-    shouldReplace: Boolean,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param a because its type SkipTwo<A> is not an array type */ a: SkipTwo[Any]
-  ): Any = js.native
-  def setState(
-    nextStateOrUpdater: js.Function1[/* state */ Draft[Any], Unit],
-    shouldReplace: Unit,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param a because its type SkipTwo<A> is not an array type */ a: SkipTwo[Any]
-  ): Any = js.native
-  def setState(
-    nextStateOrUpdater: Any,
-    shouldReplace: Boolean,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param a because its type SkipTwo<A> is not an array type */ a: SkipTwo[Any]
-  ): Any = js.native
-  def setState(
-    nextStateOrUpdater: Any,
-    shouldReplace: Unit,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param a because its type SkipTwo<A> is not an array type */ a: SkipTwo[Any]
-  ): Any = js.native
-  def setState(
-    nextStateOrUpdater: Partial[Any],
-    shouldReplace: Boolean,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param a because its type SkipTwo<A> is not an array type */ a: SkipTwo[Any]
-  ): Any = js.native
-  def setState(
-    nextStateOrUpdater: Partial[Any],
-    shouldReplace: Unit,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param a because its type SkipTwo<A> is not an array type */ a: SkipTwo[Any]
-  ): Any = js.native
+  @JSName("$$storeMutators")
+  var DollarDollarstoreMutators: js.UndefOr[Mos] = js.undefined
+}
+object `1` {
+  
+  inline def apply[Mos /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */](): `1`[Mos] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`1`[Mos]]
+  }
+  
+  extension [Self <: `1`[?], Mos /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */](x: Self & `1`[Mos]) {
+    
+    inline def setDollarDollarstoreMutators(value: Mos): Self = StObject.set(x, "$$storeMutators", value.asInstanceOf[js.Any])
+    
+    inline def setDollarDollarstoreMutatorsUndefined: Self = StObject.set(x, "$$storeMutators", js.undefined)
+  }
 }

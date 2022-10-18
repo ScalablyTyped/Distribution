@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult exte
     * `PredictRequest.params`. * `score`: Prediction score in double value. Will be set if `returnItemScore` is set to true in `PredictRequest.params`.
     */
   var itemMetadata: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult {
@@ -34,9 +31,7 @@ object GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult {
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setItemMetadata(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "itemMetadata", value.asInstanceOf[js.Any])
     
     inline def setItemMetadataUndefined: Self = StObject.set(x, "itemMetadata", js.undefined)

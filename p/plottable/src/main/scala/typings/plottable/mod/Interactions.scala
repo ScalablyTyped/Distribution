@@ -1,8 +1,8 @@
 package typings.plottable.mod
 
 import typings.plottable.anon.X
-import typings.plottable.interfacesMod.Point
-import typings.plottable.scaleMod.TransformableScale
+import typings.plottable.buildSrcCoreInterfacesMod.Point
+import typings.plottable.buildSrcScalesScaleMod.TransformableScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object Interactions {
   @JSImport("plottable", "Interactions.Click")
   @js.native
   open class Click ()
-    extends typings.plottable.interactionsMod.Click
+    extends typings.plottable.buildSrcInteractionsMod.Click
   /* static members */
   object Click {
     
@@ -33,7 +33,7 @@ object Interactions {
   @JSImport("plottable", "Interactions.Drag")
   @js.native
   open class Drag ()
-    extends typings.plottable.interactionsMod.Drag {
+    extends typings.plottable.buildSrcInteractionsMod.Drag {
     def this(mouseButton: Double) = this()
   }
   /* static members */
@@ -52,7 +52,7 @@ object Interactions {
   @JSImport("plottable", "Interactions.Key")
   @js.native
   open class Key ()
-    extends typings.plottable.interactionsMod.Key
+    extends typings.plottable.buildSrcInteractionsMod.Key
   
   @JSImport("plottable", "Interactions.PanZoom")
   @js.native
@@ -65,7 +65,7 @@ object Interactions {
     * @param {TransformableScale} [yScale] The y-scale to update on panning/zooming.
     */
   open class PanZoom ()
-    extends typings.plottable.interactionsMod.PanZoom {
+    extends typings.plottable.buildSrcInteractionsMod.PanZoom {
     def this(xScale: TransformableScale[Any, Double]) = this()
     def this(xScale: Unit, yScale: TransformableScale[Any, Double]) = this()
     def this(xScale: TransformableScale[Any, Double], yScale: TransformableScale[Any, Double]) = this()
@@ -96,7 +96,7 @@ object Interactions {
   @JSImport("plottable", "Interactions.Pointer")
   @js.native
   open class Pointer ()
-    extends typings.plottable.interactionsMod.Pointer
+    extends typings.plottable.buildSrcInteractionsMod.Pointer
   
   inline def zoomOut(value: Double, zoom: Double, center: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomOut")(value.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

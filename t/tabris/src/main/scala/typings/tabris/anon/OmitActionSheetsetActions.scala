@@ -202,7 +202,7 @@ trait OmitActionSheetsetActions extends StObject {
       typings.tabris.global.tabris.ActionSheet, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & `13`
+  ]) & `1`
   
   var message: String
   
@@ -318,7 +318,7 @@ object OmitActionSheetsetActions {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.ActionSheet, 
       Omit[typings.tabris.global.tabris.ActionSheet, set | jsxAttributes]
-    ]) & `13`,
+    ]) & `1`,
     message: String,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.ActionSheet,
     on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.ActionSheet,
@@ -389,7 +389,7 @@ object OmitActionSheetsetActions {
       value: (JSXAttributes[
           typings.tabris.global.tabris.ActionSheet, 
           Omit[typings.tabris.global.tabris.ActionSheet, set | jsxAttributes]
-        ]) & `13`
+        ]) & `1`
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])

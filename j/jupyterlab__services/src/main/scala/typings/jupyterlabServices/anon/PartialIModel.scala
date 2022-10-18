@@ -1,7 +1,7 @@
 package typings.jupyterlabServices.anon
 
-import typings.jupyterlabServices.contentsMod.Contents.ContentType
-import typings.jupyterlabServices.contentsMod.Contents.FileFormat
+import typings.jupyterlabServices.libContentsMod.Contents.ContentType
+import typings.jupyterlabServices.libContentsMod.Contents.FileFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

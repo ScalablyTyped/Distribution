@@ -2,8 +2,8 @@ package typings.awsSdkClientXrayNode
 
 import typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.KMS
 import typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.NONE
-import typings.awsSdkClientXrayNode.inputTypesUnionMod.InputTypesUnion
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientXrayNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

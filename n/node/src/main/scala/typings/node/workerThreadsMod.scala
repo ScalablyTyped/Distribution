@@ -1,15 +1,17 @@
 package typings.node
 
+import typings.node.NodeJS.Dict
+import typings.node.NodeJS.RefCounted
 import typings.node.anon.Message
-import typings.node.nodeStreamMod.Readable
-import typings.node.nodeStreamMod.Writable
+import typings.node.nodeColonstreamMod.Readable
+import typings.node.nodeColonstreamMod.Writable
+import typings.node.nodeColonurlMod.URL
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.error
 import typings.node.nodeStrings.exit
 import typings.node.nodeStrings.message
 import typings.node.nodeStrings.messageerror
 import typings.node.nodeStrings.online
-import typings.node.nodeUrlMod.URL
 import typings.node.perfHooksMod.EventLoopUtilityFunction
 import typings.node.perfHooksMod.EventLoopUtilization
 import typings.node.vmMod.Context
@@ -53,10 +55,11 @@ object workerThreadsMod {
     * ```
     * @since v15.4.0
     */
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.RefCounted * / any */ @JSImport("worker_threads", "BroadcastChannel")
+  @JSImport("worker_threads", "BroadcastChannel")
   @js.native
-  open class BroadcastChannel protected () extends StObject {
+  open class BroadcastChannel protected ()
+    extends StObject
+       with RefCounted {
     def this(name: String) = this()
     
     /**
@@ -84,6 +87,12 @@ object workerThreadsMod {
       * @param message Any cloneable JavaScript value.
       */
     def postMessage(message: Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def ref(): this.type = js.native
+    
+    /* CompleteClass */
+    override def unref(): this.type = js.native
   }
   
   /**
@@ -609,6 +618,45 @@ object workerThreadsMod {
     */
   inline def getEnvironmentData(key: Serializable): Serializable = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironmentData")(key.asInstanceOf[js.Any]).asInstanceOf[Serializable]
   
+  object global {
+    
+    /**
+      * `BroadcastChannel` class is a global reference for `require('worker_threads').BroadcastChannel`
+      * https://nodejs.org/api/globals.html#broadcastchannel
+      * @since v18.0.0
+      */
+    @JSGlobal("BroadcastChannel")
+    @js.native
+    def BroadcastChannel: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   BroadcastChannel :infer T} ? T : new (name : string): node.worker_threads.BroadcastChannel */ js.Any = js.native
+    inline def BroadcastChannel_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   BroadcastChannel :infer T} ? T : new (name : string): node.worker_threads.BroadcastChannel */ js.Any
+    ): Unit = js.Dynamic.global.updateDynamic("BroadcastChannel")(x.asInstanceOf[js.Any])
+    
+    /**
+      * `MessageChannel` class is a global reference for `require('worker_threads').MessageChannel`
+      * https://nodejs.org/api/globals.html#messagechannel
+      * @since v15.0.0
+      */
+    @JSGlobal("MessageChannel")
+    @js.native
+    def MessageChannel: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   MessageChannel :infer T} ? T : new (): node.worker_threads.MessageChannel */ js.Any = js.native
+    inline def MessageChannel_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   MessageChannel :infer T} ? T : new (): node.worker_threads.MessageChannel */ js.Any
+    ): Unit = js.Dynamic.global.updateDynamic("MessageChannel")(x.asInstanceOf[js.Any])
+    
+    /**
+      * `MessagePort` class is a global reference for `require('worker_threads').MessagePort`
+      * https://nodejs.org/api/globals.html#messageport
+      * @since v15.0.0
+      */
+    @JSGlobal("MessagePort")
+    @js.native
+    def MessagePort: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   MessagePort :infer T} ? T : new (): node.worker_threads.MessagePort */ js.Any = js.native
+    inline def MessagePort_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   MessagePort :infer T} ? T : new (): node.worker_threads.MessagePort */ js.Any
+    ): Unit = js.Dynamic.global.updateDynamic("MessagePort")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("worker_threads", "isMainThread")
   @js.native
   val isMainThread: Boolean = js.native
@@ -767,8 +815,8 @@ object workerThreadsMod {
     - js.typedarray.ArrayBuffer
     - typings.node.workerThreadsMod.MessagePort
     - typings.node.fsPromisesMod.FileHandle
-    - typings.node.nodeCryptoMod.X509Certificate
-    - typings.node.nodeBufferMod.Blob
+    - typings.node.nodeColoncryptoMod.X509Certificate
+    - typings.node.nodeColonbufferMod.Blob
   */
   type TransferListItem = _TransferListItem | js.typedarray.ArrayBuffer
   
@@ -782,9 +830,7 @@ object workerThreadsMod {
       */
     var argv: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var env: js.UndefOr[
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any) | js.Symbol
-      ] = js.undefined
+    var env: js.UndefOr[Dict[String] | js.Symbol] = js.undefined
     
     var eval: js.UndefOr[Boolean] = js.undefined
     
@@ -825,9 +871,7 @@ object workerThreadsMod {
       
       inline def setArgvVarargs(value: Any*): Self = StObject.set(x, "argv", js.Array(value*))
       
-      inline def setEnv(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any) | js.Symbol
-      ): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Dict[String] | js.Symbol): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       

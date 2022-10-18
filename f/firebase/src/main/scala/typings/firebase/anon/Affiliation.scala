@@ -1,14 +1,15 @@
 package typings.firebase.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebase.firebaseMod.firebase.analytics.Item
+import typings.firebase.compatMod.firebase.analytics.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Affiliation
   extends StObject
-     with /* key */ StringDictionary[Any] {
+     with /** Custom claims set by the developer */
+/* claim */ StringDictionary[Any] {
   
   var affiliation: js.UndefOr[String] = js.undefined
   
@@ -18,9 +19,9 @@ trait Affiliation
   
   var items: js.UndefOr[js.Array[Item]] = js.undefined
   
-  var shipping: js.UndefOr[typings.firebase.firebaseMod.firebase.analytics.Currency] = js.undefined
+  var shipping: js.UndefOr[typings.firebase.compatMod.firebase.analytics.Currency] = js.undefined
   
-  var tax: js.UndefOr[typings.firebase.firebaseMod.firebase.analytics.Currency] = js.undefined
+  var tax: js.UndefOr[typings.firebase.compatMod.firebase.analytics.Currency] = js.undefined
   
   var transaction_id: js.UndefOr[String] = js.undefined
   
@@ -53,11 +54,11 @@ object Affiliation {
     
     inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setShipping(value: typings.firebase.firebaseMod.firebase.analytics.Currency): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+    inline def setShipping(value: typings.firebase.compatMod.firebase.analytics.Currency): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
     
     inline def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
     
-    inline def setTax(value: typings.firebase.firebaseMod.firebase.analytics.Currency): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
+    inline def setTax(value: typings.firebase.compatMod.firebase.analytics.Currency): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
     
     inline def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
     

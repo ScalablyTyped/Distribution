@@ -63,9 +63,9 @@ object mod {
     var versionNeededToExtract: Double = js.native
   }
   
-  @JSImport("yauzl", "RandomAccessReader")
+  /* note: abstract class */ @JSImport("yauzl", "RandomAccessReader")
   @js.native
-  abstract class RandomAccessReader () extends EventEmitter {
+  open class RandomAccessReader () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     def _readStreamForRange(start: Double, end: Double): Unit = js.native

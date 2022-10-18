@@ -1,6 +1,6 @@
 package typings.wordpressBlocks.anon
 
-import typings.wordpressBlocks.categoriesMod.Category
+import typings.wordpressBlocks.apiCategoriesMod.Category
 import typings.wordpressBlocks.mod.BlockConfiguration
 import typings.wordpressBlocks.mod.BlockStyle
 import org.scalablytyped.runtime.StObject

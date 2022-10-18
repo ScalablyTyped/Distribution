@@ -1,6 +1,6 @@
 package typings.octokitPluginPaginateRest.anon
 
-import typings.octokitPluginPaginateRest.typesMod.GetResultsType
+import typings.octokitPluginPaginateRest.distTypesTypesMod.GetResultsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

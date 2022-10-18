@@ -15,5 +15,5 @@ object mapBrowserEventHandlerMod {
   
   @js.native
   trait MapBrowserEventHandler
-    extends typings.ol.targetMod.default
+    extends typings.ol.eventsTargetMod.default
 }

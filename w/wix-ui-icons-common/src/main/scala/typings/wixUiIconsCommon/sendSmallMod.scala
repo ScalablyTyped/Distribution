@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsSendSmallMod.SendSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sendSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/SendSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/SendSmall", JSImport.Default)
   @js.native
   val default: FC[SendSmallProps] = js.native
-  
-  trait SendSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object SendSmallProps {
-    
-    inline def apply(): SendSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SendSmallProps]
-    }
-    
-    extension [Self <: SendSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[SendSmallProps]
   

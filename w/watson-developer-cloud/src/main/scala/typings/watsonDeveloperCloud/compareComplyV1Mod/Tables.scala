@@ -44,19 +44,19 @@ object Tables {
     
     inline def setBody_cellsUndefined: Self = StObject.set(x, "body_cells", js.undefined)
     
-    inline def setBody_cellsVarargs(value: BodyCells*): Self = StObject.set(x, "body_cells", js.Array(value :_*))
+    inline def setBody_cellsVarargs(value: BodyCells*): Self = StObject.set(x, "body_cells", js.Array(value*))
     
     inline def setColumn_headers(value: js.Array[ColumnHeaders]): Self = StObject.set(x, "column_headers", value.asInstanceOf[js.Any])
     
     inline def setColumn_headersUndefined: Self = StObject.set(x, "column_headers", js.undefined)
     
-    inline def setColumn_headersVarargs(value: ColumnHeaders*): Self = StObject.set(x, "column_headers", js.Array(value :_*))
+    inline def setColumn_headersVarargs(value: ColumnHeaders*): Self = StObject.set(x, "column_headers", js.Array(value*))
     
     inline def setKey_value_pairs(value: js.Array[KeyValuePair]): Self = StObject.set(x, "key_value_pairs", value.asInstanceOf[js.Any])
     
     inline def setKey_value_pairsUndefined: Self = StObject.set(x, "key_value_pairs", js.undefined)
     
-    inline def setKey_value_pairsVarargs(value: KeyValuePair*): Self = StObject.set(x, "key_value_pairs", js.Array(value :_*))
+    inline def setKey_value_pairsVarargs(value: KeyValuePair*): Self = StObject.set(x, "key_value_pairs", js.Array(value*))
     
     inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
@@ -66,7 +66,7 @@ object Tables {
     
     inline def setRow_headersUndefined: Self = StObject.set(x, "row_headers", js.undefined)
     
-    inline def setRow_headersVarargs(value: RowHeaders*): Self = StObject.set(x, "row_headers", js.Array(value :_*))
+    inline def setRow_headersVarargs(value: RowHeaders*): Self = StObject.set(x, "row_headers", js.Array(value*))
     
     inline def setSection_title(value: SectionTitle): Self = StObject.set(x, "section_title", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object Tables {
     
     inline def setTable_headersUndefined: Self = StObject.set(x, "table_headers", js.undefined)
     
-    inline def setTable_headersVarargs(value: TableHeaders*): Self = StObject.set(x, "table_headers", js.Array(value :_*))
+    inline def setTable_headersVarargs(value: TableHeaders*): Self = StObject.set(x, "table_headers", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

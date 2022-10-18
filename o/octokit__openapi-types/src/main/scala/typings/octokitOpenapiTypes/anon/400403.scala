@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `400403` extends StObject {
   
   /** Response */
-  var `200`: Content192
+  var `200`: Content455
   
   var `400`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['bad_request'] */ js.Any
   
@@ -20,7 +20,7 @@ trait `400403` extends StObject {
 object `400403` {
   
   inline def apply(
-    `200`: Content192,
+    `200`: Content455,
     `400`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['bad_request'] */ js.Any,
     `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['code_scanning_forbidden_write'] */ js.Any,
     `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any,
@@ -37,7 +37,7 @@ object `400403` {
   
   extension [Self <: `400403`](x: Self) {
     
-    inline def set200(value: Content192): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: Content455): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
     inline def set400(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['bad_request'] */ js.Any

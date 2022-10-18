@@ -3,13 +3,13 @@ package typings.hapiSubtext
 import typings.hapiSubtext.hapiSubtextStrings.data
 import typings.hapiSubtext.hapiSubtextStrings.file
 import typings.hapiSubtext.hapiSubtextStrings.stream
+import typings.node.NodeJS.WritableStream
 import typings.node.httpMod.IncomingMessage
 import typings.node.streamMod.Transform
 import typings.node.zlibMod.BrotliOptions
 import typings.node.zlibMod.ZlibOptions
 import typings.std.Partial
 import typings.std.Record
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def parse(req: IncomingMessage, tap: Null, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(req.asInstanceOf[js.Any], tap.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
-  inline def parse(req: IncomingMessage, tap: WritableStream[Any], options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(req.asInstanceOf[js.Any], tap.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def parse(req: IncomingMessage, tap: WritableStream, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(req.asInstanceOf[js.Any], tap.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
   trait ContentDecoders extends StObject {
     

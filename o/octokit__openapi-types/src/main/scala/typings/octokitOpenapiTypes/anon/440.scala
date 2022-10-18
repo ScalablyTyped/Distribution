@@ -7,11 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `440` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: js.Array[CommittedatUrl]
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['protected-branch-admin-enforced'] */ js.Any
 }
 object `440` {
   
-  inline def apply(applicationSlashjson: js.Array[CommittedatUrl]): `440` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['protected-branch-admin-enforced'] */ js.Any
+  ): `440` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`440`]
@@ -19,8 +21,8 @@ object `440` {
   
   extension [Self <: `440`](x: Self) {
     
-    inline def setApplicationSlashjson(value: js.Array[CommittedatUrl]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonVarargs(value: CommittedatUrl*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['protected-branch-admin-enforced'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

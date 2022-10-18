@@ -21,9 +21,9 @@ object mod extends Shortcut {
   @js.native
   val default: Expect_ = js.native
   
-  @JSImport("expect", "AsymmetricMatcher")
+  /* note: abstract class */ @JSImport("expect", "AsymmetricMatcher")
   @js.native
-  abstract class AsymmetricMatcher[T] protected ()
+  open class AsymmetricMatcher[T] protected ()
     extends StObject
        with AsymmetricMatcher2 {
     def this(sample: T) = this()
@@ -193,8 +193,12 @@ object mod extends Shortcut {
     
     def dontThrow(): Unit
     
+    def equals(a: Any, b: Any): Boolean
+    def equals(a: Any, b: Any, customTesters: js.Array[Tester]): Boolean
+    def equals(a: Any, b: Any, customTesters: js.Array[Tester], strictCheck: Boolean): Boolean
+    def equals(a: Any, b: Any, customTesters: Unit, strictCheck: Boolean): Boolean
     @JSName("equals")
-    var equals_FMatcherContext: EqualsFunction
+    var equals_Original: EqualsFunction
     
     val error: js.UndefOr[js.Error] = js.undefined
     
@@ -380,8 +384,12 @@ object mod extends Shortcut {
     
     def dontThrow(): Unit
     
+    def equals(a: Any, b: Any): Boolean
+    def equals(a: Any, b: Any, customTesters: js.Array[Tester]): Boolean
+    def equals(a: Any, b: Any, customTesters: js.Array[Tester], strictCheck: Boolean): Boolean
+    def equals(a: Any, b: Any, customTesters: Unit, strictCheck: Boolean): Boolean
     @JSName("equals")
-    var equals_FMatcherUtils: EqualsFunction
+    var equals_Original: EqualsFunction
     
     var utils: readonlyprintExpectedvalu
   }
@@ -420,6 +428,7 @@ object mod extends Shortcut {
     /**
       * Ensure that the last call to a mock function has returned a specified value.
       */
+    def lastReturnedWith(): R = js.native
     def lastReturnedWith(expected: Any): R = js.native
     
     /**
@@ -430,6 +439,7 @@ object mod extends Shortcut {
     /**
       * Ensure that the nth call to a mock function has returned a specified value.
       */
+    def nthReturnedWith(nth: Double): R = js.native
     def nthReturnedWith(nth: Double, expected: Any): R = js.native
     
     /**
@@ -575,6 +585,7 @@ object mod extends Shortcut {
       * If the last call to the mock function threw an error, then this matcher will fail
       * no matter what value you provided as the expected return value.
       */
+    def toHaveLastReturnedWith(): R = js.native
     def toHaveLastReturnedWith(expected: Any): R = js.native
     
     /**
@@ -588,6 +599,7 @@ object mod extends Shortcut {
       * If the nth call to the mock function threw an error, then this matcher will fail
       * no matter what value you provided as the expected return value.
       */
+    def toHaveNthReturnedWith(nth: Double): R = js.native
     def toHaveNthReturnedWith(nth: Double, expected: Any): R = js.native
     
     /**
@@ -622,6 +634,7 @@ object mod extends Shortcut {
     /**
       * Use to ensure that a mock function returned a specific value.
       */
+    def toHaveReturnedWith(): R = js.native
     def toHaveReturnedWith(expected: Any): R = js.native
     
     /**
@@ -649,6 +662,7 @@ object mod extends Shortcut {
     /**
       * Ensure that a mock function has returned a specified value at least once.
       */
+    def toReturnWith(): R = js.native
     def toReturnWith(expected: Any): R = js.native
     
     /**

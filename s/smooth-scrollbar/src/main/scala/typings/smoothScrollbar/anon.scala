@@ -2,8 +2,8 @@ package typings.smoothScrollbar
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.smoothScrollbar.scrollbarMod.Scrollbar
-import typings.smoothScrollbar.smoothScrollbarMod.ScrollbarPlugin
+import typings.smoothScrollbar.interfacesScrollbarMod.Scrollbar
+import typings.smoothScrollbar.pluginMod.ScrollbarPlugin
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -242,12 +242,9 @@ object anon {
   @js.native
   trait TypeofScrollbarPlugin
     extends StObject
-       with Instantiable1[
-          /* scrollbar */ typings.smoothScrollbar.smoothScrollbarScrollbarMod.Scrollbar, 
-          ScrollbarPlugin
-        ]
+       with Instantiable1[/* scrollbar */ typings.smoothScrollbar.scrollbarMod.Scrollbar, ScrollbarPlugin]
        with Instantiable2[
-          /* scrollbar */ typings.smoothScrollbar.smoothScrollbarScrollbarMod.Scrollbar, 
+          /* scrollbar */ typings.smoothScrollbar.scrollbarMod.Scrollbar, 
           /* options */ Any, 
           ScrollbarPlugin
         ] {

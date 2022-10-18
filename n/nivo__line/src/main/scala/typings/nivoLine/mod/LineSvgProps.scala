@@ -2,7 +2,7 @@ package typings.nivoLine.mod
 
 import typings.nivoCore.mod.ModernMotionProps
 import typings.nivoCore.mod.SvgDefsAndFill
-import typings.nivoLine.anon.XFormatted
+import typings.nivoLine.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +44,7 @@ object LineSvgProps {
     
     inline def setPointLabel(value: String | AccessorFunc): Self = StObject.set(x, "pointLabel", value.asInstanceOf[js.Any])
     
-    inline def setPointLabelFunction1(value: /* datum */ XFormatted => String): Self = StObject.set(x, "pointLabel", js.Any.fromFunction1(value))
+    inline def setPointLabelFunction1(value: /* datum */ X => String): Self = StObject.set(x, "pointLabel", js.Any.fromFunction1(value))
     
     inline def setPointLabelUndefined: Self = StObject.set(x, "pointLabel", js.undefined)
     

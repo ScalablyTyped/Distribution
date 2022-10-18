@@ -2,10 +2,10 @@ package typings.azureCoreClient.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.azureCoreClient.mod.^
-import typings.azureCoreRestPipeline.coreRestPipelineMod.AuthorizeRequestOnChallengeOptions
-import typings.azureCoreRestPipeline.coreRestPipelineMod.Pipeline
-import typings.azureCoreRestPipeline.coreRestPipelineMod.PipelinePolicy
-import typings.azureCoreRestPipeline.coreRestPipelineMod.PipelineRequest
+import typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.AuthorizeRequestOnChallengeOptions
+import typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.Pipeline
+import typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.PipelinePolicy
+import typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.PipelineRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

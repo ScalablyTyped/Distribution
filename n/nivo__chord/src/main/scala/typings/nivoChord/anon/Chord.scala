@@ -1,7 +1,7 @@
 package typings.nivoChord.anon
 
 import typings.d3Chord.mod.ChordLayout
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScale
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param scene defines the hosting scene
   */
 open class PhysicsViewer ()
-  extends typings.babylonjs.legacyMod.PhysicsViewer {
+  extends typings.babylonjs.legacyLegacyMod.PhysicsViewer {
   def this(scene: typings.babylonjs.sceneMod.Scene) = this()
 }

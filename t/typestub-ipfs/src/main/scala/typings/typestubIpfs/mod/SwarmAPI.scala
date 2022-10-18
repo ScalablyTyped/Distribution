@@ -10,15 +10,15 @@ trait SwarmAPI extends StObject {
   def addrs(): js.Promise[js.Array[PeerInfo]] = js.native
   def addrs(callback: Callback[js.Array[PeerInfo]]): Unit = js.native
   
-  def connect(maddr: String): js.Promise[js.Any] = js.native
-  def connect(maddr: String, callback: Callback[js.Any]): Unit = js.native
-  def connect(maddr: Multiaddr): js.Promise[js.Any] = js.native
-  def connect(maddr: Multiaddr, callback: Callback[js.Any]): Unit = js.native
+  def connect(maddr: String): js.Promise[Any] = js.native
+  def connect(maddr: String, callback: Callback[Any]): Unit = js.native
+  def connect(maddr: Multiaddr): js.Promise[Any] = js.native
+  def connect(maddr: Multiaddr, callback: Callback[Any]): Unit = js.native
   
-  def disconnect(maddr: String): js.Promise[js.Any] = js.native
-  def disconnect(maddr: String, callback: Callback[js.Any]): Unit = js.native
-  def disconnect(maddr: Multiaddr): js.Promise[js.Any] = js.native
-  def disconnect(maddr: Multiaddr, callback: Callback[js.Any]): Unit = js.native
+  def disconnect(maddr: String): js.Promise[Any] = js.native
+  def disconnect(maddr: String, callback: Callback[Any]): Unit = js.native
+  def disconnect(maddr: Multiaddr): js.Promise[Any] = js.native
+  def disconnect(maddr: Multiaddr, callback: Callback[Any]): Unit = js.native
   
   def filters(callback: Callback[Unit]): scala.Nothing = js.native
   

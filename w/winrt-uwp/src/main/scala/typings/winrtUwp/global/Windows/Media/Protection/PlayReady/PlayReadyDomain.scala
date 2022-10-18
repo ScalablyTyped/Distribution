@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to metadata about a domain to which the current system is a member. */
-@JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyDomain")
+/* note: abstract class */ @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyDomain")
 @js.native
-abstract class PlayReadyDomain ()
+open class PlayReadyDomain ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyDomain {
   

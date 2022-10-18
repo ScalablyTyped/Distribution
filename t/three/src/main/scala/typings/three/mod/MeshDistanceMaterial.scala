@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.meshDistanceMaterialMod.MeshDistanceMaterialParameters
+import typings.three.srcMaterialsMeshDistanceMaterialMod.MeshDistanceMaterialParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "MeshDistanceMaterial")
 @js.native
 open class MeshDistanceMaterial ()
-  extends typings.three.threeMod.MeshDistanceMaterial {
+  extends typings.three.srcThreeMod.MeshDistanceMaterial {
   def this(parameters: MeshDistanceMaterialParameters) = this()
 }

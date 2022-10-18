@@ -1,7 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "CubeTexture")
 @js.native
 open class CubeTexture protected ()
-  extends typings.babylonjs.texturesIndexMod.CubeTexture {
+  extends typings.babylonjs.materialsTexturesIndexMod.CubeTexture {
   /**
     * Creates a cube texture to use with reflection for instance. It can be based upon dds or six images as well
     * as prefiltered data.
@@ -67,8 +67,8 @@ object CubeTexture {
     * @param noMipmap specifies if mip maps are not used
     * @returns a cube texture
     */
-  inline def CreateFromImages(files: js.Array[String], scene: Scene): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromImages")(files.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
-  inline def CreateFromImages(files: js.Array[String], scene: Scene, noMipmap: Boolean): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromImages")(files.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], noMipmap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
+  inline def CreateFromImages(files: js.Array[String], scene: Scene): typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromImages")(files.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture]
+  inline def CreateFromImages(files: js.Array[String], scene: Scene, noMipmap: Boolean): typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromImages")(files.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], noMipmap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture]
   
   /**
     * Creates and return a texture created from prefilterd data by tools like IBL Baker or Lys.
@@ -78,10 +78,10 @@ object CubeTexture {
     * @param createPolynomials defines whether or not to create polynomial harmonics from the texture data if necessary
     * @returns the prefiltered texture
     */
-  inline def CreateFromPrefilteredData(url: String, scene: Scene): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
-  inline def CreateFromPrefilteredData(url: String, scene: Scene, forcedExtension: Any): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forcedExtension.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
-  inline def CreateFromPrefilteredData(url: String, scene: Scene, forcedExtension: Any, createPolynomials: Boolean): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forcedExtension.asInstanceOf[js.Any], createPolynomials.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
-  inline def CreateFromPrefilteredData(url: String, scene: Scene, forcedExtension: Unit, createPolynomials: Boolean): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forcedExtension.asInstanceOf[js.Any], createPolynomials.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
+  inline def CreateFromPrefilteredData(url: String, scene: Scene): typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture]
+  inline def CreateFromPrefilteredData(url: String, scene: Scene, forcedExtension: Any): typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forcedExtension.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture]
+  inline def CreateFromPrefilteredData(url: String, scene: Scene, forcedExtension: Any, createPolynomials: Boolean): typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forcedExtension.asInstanceOf[js.Any], createPolynomials.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture]
+  inline def CreateFromPrefilteredData(url: String, scene: Scene, forcedExtension: Unit, createPolynomials: Boolean): typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromPrefilteredData")(url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forcedExtension.asInstanceOf[js.Any], createPolynomials.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture]
   
   /**
     * Parses text to create a cube texture
@@ -90,5 +90,5 @@ object CubeTexture {
     * @param rootUrl defines the root url of the cube texture
     * @returns a cube texture
     */
-  inline def Parse(parsedTexture: Any, scene: Scene, rootUrl: String): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
+  inline def Parse(parsedTexture: Any, scene: Scene, rootUrl: String): typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture]
 }

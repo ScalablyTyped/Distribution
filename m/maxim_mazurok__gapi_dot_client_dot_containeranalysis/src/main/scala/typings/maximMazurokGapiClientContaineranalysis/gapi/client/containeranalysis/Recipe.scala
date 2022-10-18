@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +13,7 @@ trait Recipe extends StObject {
     */
   var arguments: js.UndefOr[
     js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Recipe & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ]
   ] = js.undefined
   
@@ -38,9 +35,7 @@ trait Recipe extends StObject {
     */
   var environment: js.UndefOr[
     js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Recipe & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ]
   ] = js.undefined
   
@@ -58,18 +53,14 @@ object Recipe {
     
     inline def setArguments(
       value: js.Array[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Recipe & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
         ]
     ): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
     inline def setArgumentsVarargs(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Recipe & TopLevel[Any])*
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any)*
     ): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setDefinedInMaterial(value: String): Self = StObject.set(x, "definedInMaterial", value.asInstanceOf[js.Any])
@@ -82,18 +73,14 @@ object Recipe {
     
     inline def setEnvironment(
       value: js.Array[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Recipe & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
         ]
     ): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     inline def setEnvironmentVarargs(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Recipe & TopLevel[Any])*
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any)*
     ): Self = StObject.set(x, "environment", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 // Note: this file is auto concatenated to the end of the bundled d.ts during
 // build.
+/* augmented module */
 object vueReactivityAugmentingMod {
   
   trait RefUnwrapBailTypes extends StObject {

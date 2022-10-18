@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Foundation.Metadata.GCPressureAttribute")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.Metadata.GCPressureAttribute")
 @js.native
-abstract class GCPressureAttribute ()
+open class GCPressureAttribute ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Metadata.GCPressureAttribute

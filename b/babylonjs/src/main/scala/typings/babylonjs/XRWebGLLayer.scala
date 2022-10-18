@@ -6,19 +6,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * A layer which provides a WebGL framebuffer to render into, enabling hardware accelerated
+  * rendering of 3D graphics to be presented on the XR device. *
+  * ref: https://immersive-web.github.io/webxr/#xrwebgllayer-interface
+  */
 @js.native
 trait XRWebGLLayer
   extends StObject
      with EventTarget {
   
-  // Methods for EventTarget required through XRLayer
-  def addEventListener(): Unit = js.native
-  
   val antialias: Boolean = js.native
   
-  def dispatchEvent(): Boolean = js.native
-  
-  var fixedFoveation: js.UndefOr[Double | Null] = js.native
+  var fixedFoveation: js.UndefOr[Double] = js.native
   
   val framebuffer: WebGLFramebuffer = js.native
   
@@ -26,9 +26,7 @@ trait XRWebGLLayer
   
   val framebufferWidth: Double = js.native
   
-  def getViewport(view: XRView): XRViewport = js.native
+  def getViewport(view: XRView): js.UndefOr[XRViewport] = js.native
   
   val ignoreDepthValues: Boolean = js.native
-  
-  def removeEventListener(): Unit = js.native
 }

@@ -1,6 +1,6 @@
 package typings.blueprintjsPopover2
 
-import typings.blueprintjsPopover2.popover2Mod.Popover2InteractionKind
+import typings.blueprintjsPopover2.libEsmPopover2Mod.Popover2InteractionKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,30 +10,6 @@ object blueprintjsPopover2Strings {
   @js.native
   sealed trait FORCE_DISABLED_STATE extends StObject
   inline def FORCE_DISABLED_STATE: FORCE_DISABLED_STATE = "FORCE_DISABLED_STATE".asInstanceOf[FORCE_DISABLED_STATE]
-  
-  @js.native
-  sealed trait IPopover2SharedProps extends StObject
-  inline def IPopover2SharedProps: IPopover2SharedProps = "IPopover2SharedProps".asInstanceOf[IPopover2SharedProps]
-  
-  @js.native
-  sealed trait ITooltip2Props extends StObject
-  inline def ITooltip2Props: ITooltip2Props = "ITooltip2Props".asInstanceOf[ITooltip2Props]
-  
-  @js.native
-  sealed trait PartialOmitPopover2PropsH extends StObject
-  inline def PartialOmitPopover2PropsH: PartialOmitPopover2PropsH = "PartialOmitPopover2PropsH".asInstanceOf[PartialOmitPopover2PropsH]
-  
-  @js.native
-  sealed trait PartialOmitPopover2PropsHAutoFocus extends StObject
-  inline def PartialOmitPopover2PropsHAutoFocus: PartialOmitPopover2PropsHAutoFocus = "PartialOmitPopover2PropsHAutoFocus".asInstanceOf[PartialOmitPopover2PropsHAutoFocus]
-  
-  @js.native
-  sealed trait PartialTooltip2PropsHTMLP extends StObject
-  inline def PartialTooltip2PropsHTMLP: PartialTooltip2PropsHTMLP = "PartialTooltip2PropsHTMLP".asInstanceOf[PartialTooltip2PropsHTMLP]
-  
-  @js.native
-  sealed trait Popover2PropsHTMLPropsHTM extends StObject
-  inline def Popover2PropsHTMLPropsHTM: Popover2PropsHTMLPropsHTM = "Popover2PropsHTMLPropsHTM".asInstanceOf[Popover2PropsHTMLPropsHTM]
   
   @js.native
   sealed trait RESET_DISABLED_STATE extends StObject

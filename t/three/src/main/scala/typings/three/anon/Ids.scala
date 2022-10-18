@@ -1,9 +1,9 @@
 package typings.three.anon
 
 import typings.std.Set
-import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.materialMod.Material
-import typings.three.threeMod.Mesh
+import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcMaterialsMaterialMod.Material
+import typings.three.srcThreeMod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

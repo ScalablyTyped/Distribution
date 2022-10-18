@@ -12,7 +12,7 @@ object babylonjsMaterialsMaterialAugmentingMod {
     /**
       * Plugin manager for this material
       */
-    var pluginManager: js.UndefOr[typings.babylonjs.materialPluginManagerMod.MaterialPluginManager] = js.undefined
+    var pluginManager: js.UndefOr[typings.babylonjs.materialsMaterialPluginManagerMod.MaterialPluginManager] = js.undefined
   }
   object Material {
     
@@ -23,7 +23,7 @@ object babylonjsMaterialsMaterialAugmentingMod {
     
     extension [Self <: typings.babylonjs.materialsIndexMod.babylonjsMaterialsMaterialAugmentingMod.Material](x: Self) {
       
-      inline def setPluginManager(value: typings.babylonjs.materialPluginManagerMod.MaterialPluginManager): Self = StObject.set(x, "pluginManager", value.asInstanceOf[js.Any])
+      inline def setPluginManager(value: typings.babylonjs.materialsMaterialPluginManagerMod.MaterialPluginManager): Self = StObject.set(x, "pluginManager", value.asInstanceOf[js.Any])
       
       inline def setPluginManagerUndefined: Self = StObject.set(x, "pluginManager", js.undefined)
     }

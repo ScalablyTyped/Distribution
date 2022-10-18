@@ -1,8 +1,8 @@
 package typings.mdastUtilFromMarkdown
 
-import typings.mdastUtilFromMarkdown.anon.CanContainEols
+import typings.mdastUtilFromMarkdown.anon.Enter
 import typings.mdastUtilFromMarkdown.anon.FnCall
-import typings.mdastUtilFromMarkdown.anon.OmitCompileContextsliceSe
+import typings.mdastUtilFromMarkdown.anon.OmitCompileContextsliceSeBuffer
 import typings.mdastUtilFromMarkdown.anon.PartialCompileDataFields
 import typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownStrings.characterReferenceMarkerHexadecimal
 import typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownStrings.characterReferenceMarkerNumeric
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libMod {
   
-  @JSImport("mdast-util-from-markdown/dev/lib", "fromMarkdown")
+  @JSImport("mdast-util-from-markdown/lib", "fromMarkdown")
   @js.native
   val fromMarkdown: (js.Function3[/* value */ Value, /* encoding */ Encoding, /* options */ js.UndefOr[Options], Root]) & (js.Function2[/* value */ Value, /* options */ js.UndefOr[Options], Root]) = js.native
   
@@ -61,7 +61,7 @@ object libMod {
     /**
       * Get data from the key-value store.
       */
-    def getData[K /* <: String */](key: K): /* import warning: importer.ImportType#apply Failed type conversion: mdast-util-from-markdown.mdast-util-from-markdown/dev/lib.CompileData[K] */ js.Any = js.native
+    def getData[K /* <: String */](key: K): /* import warning: importer.ImportType#apply Failed type conversion: mdast-util-from-markdown.mdast-util-from-markdown/lib.CompileData[K] */ js.Any = js.native
     
     /**
       * Stop capturing and access the output data.
@@ -234,16 +234,16 @@ object libMod {
   
   type Node = Root | Content
   
-  type NormalizedExtension = (Record[String, (Record[String, Any]) | js.Array[Any]]) & CanContainEols
+  type NormalizedExtension = (Record[String, (Record[String, Any]) | js.Array[Any]]) & Enter
   
   type OnEnterError = js.ThisFunction2[
-    /* this */ OmitCompileContextsliceSe, 
+    /* this */ OmitCompileContextsliceSeBuffer, 
     /* left */ js.UndefOr[Token], 
     /* right */ Token, 
     Unit
   ]
   
-  type OnExitError = js.ThisFunction2[/* this */ OmitCompileContextsliceSe, /* left */ Token, /* right */ Token, Unit]
+  type OnExitError = js.ThisFunction2[/* this */ OmitCompileContextsliceSeBuffer, /* left */ Token, /* right */ Token, Unit]
   
   trait Options
     extends StObject
@@ -259,7 +259,7 @@ object libMod {
   
   type Paragraph = typings.mdast.mod.Paragraph
   
-  /* Inlined std.Extract<mdast-util-from-markdown.mdast-util-from-markdown/dev/lib.Node, mdast-util-from-markdown.mdast-util-from-markdown/dev/lib.UnistParent> */
+  /* Inlined std.Extract<mdast-util-from-markdown.mdast-util-from-markdown/lib.Node, mdast-util-from-markdown.mdast-util-from-markdown/lib.UnistParent> */
   type Parent = children
   
   type ParseOptions = typings.micromarkUtilTypes.mod.ParseOptions

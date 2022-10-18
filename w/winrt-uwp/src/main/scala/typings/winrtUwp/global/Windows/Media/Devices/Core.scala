@@ -96,9 +96,9 @@ object Core {
   }
   
   /** Provides information about the variable photo sequence capabilities of the capture device. */
-  @JSGlobal("Windows.Media.Devices.Core.FrameControlCapabilities")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Devices.Core.FrameControlCapabilities")
   @js.native
-  abstract class FrameControlCapabilities ()
+  open class FrameControlCapabilities ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.FrameControlCapabilities {
     
@@ -161,9 +161,9 @@ object Core {
   }
   
   /** Provides information about the exposure time capabilities of the capture device for frames in a variable photo sequences. */
-  @JSGlobal("Windows.Media.Devices.Core.FrameExposureCapabilities")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Devices.Core.FrameExposureCapabilities")
   @js.native
-  abstract class FrameExposureCapabilities ()
+  open class FrameExposureCapabilities ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.FrameExposureCapabilities {
     
@@ -185,9 +185,9 @@ object Core {
   }
   
   /** Provides information about the exposure compensation capabilities of the capture device for frames in a variable photo sequences. */
-  @JSGlobal("Windows.Media.Devices.Core.FrameExposureCompensationCapabilities")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Devices.Core.FrameExposureCompensationCapabilities")
   @js.native
-  abstract class FrameExposureCompensationCapabilities ()
+  open class FrameExposureCompensationCapabilities ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.FrameExposureCompensationCapabilities {
     
@@ -209,9 +209,9 @@ object Core {
   }
   
   /** Represents the exposure compensation settings for a frame in a variable photo sequence. */
-  @JSGlobal("Windows.Media.Devices.Core.FrameExposureCompensationControl")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Devices.Core.FrameExposureCompensationControl")
   @js.native
-  abstract class FrameExposureCompensationControl ()
+  open class FrameExposureCompensationControl ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.FrameExposureCompensationControl {
     
@@ -221,9 +221,9 @@ object Core {
   }
   
   /** Represents the exposure time settings for a frame in a variable photo sequence. */
-  @JSGlobal("Windows.Media.Devices.Core.FrameExposureControl")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Devices.Core.FrameExposureControl")
   @js.native
-  abstract class FrameExposureControl ()
+  open class FrameExposureControl ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.FrameExposureControl {
     
@@ -237,9 +237,9 @@ object Core {
   }
   
   /** Provides information about the flash capabilities of the capture device for frames in a variable photo sequences. */
-  @JSGlobal("Windows.Media.Devices.Core.FrameFlashCapabilities")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Devices.Core.FrameFlashCapabilities")
   @js.native
-  abstract class FrameFlashCapabilities ()
+  open class FrameFlashCapabilities ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.FrameFlashCapabilities {
     
@@ -257,9 +257,9 @@ object Core {
   }
   
   /** Represents the flash settings for a frame in a variable photo sequence. */
-  @JSGlobal("Windows.Media.Devices.Core.FrameFlashControl")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Devices.Core.FrameFlashControl")
   @js.native
-  abstract class FrameFlashControl ()
+  open class FrameFlashControl ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.FrameFlashControl {
     
@@ -296,9 +296,9 @@ object Core {
   }
   
   /** Provides information about the focus capabilities of the capture device for frames in a variable photo sequences. */
-  @JSGlobal("Windows.Media.Devices.Core.FrameFocusCapabilities")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Devices.Core.FrameFocusCapabilities")
   @js.native
-  abstract class FrameFocusCapabilities ()
+  open class FrameFocusCapabilities ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.FrameFocusCapabilities {
     
@@ -320,9 +320,9 @@ object Core {
   }
   
   /** Represents the focus settings for a frame in a variable photo sequence. */
-  @JSGlobal("Windows.Media.Devices.Core.FrameFocusControl")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Devices.Core.FrameFocusControl")
   @js.native
-  abstract class FrameFocusControl ()
+  open class FrameFocusControl ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.FrameFocusControl {
     
@@ -332,9 +332,9 @@ object Core {
   }
   
   /** Provides information about the ISO speed capabilities of the capture device for frames in a variable photo sequences. */
-  @JSGlobal("Windows.Media.Devices.Core.FrameIsoSpeedCapabilities")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Devices.Core.FrameIsoSpeedCapabilities")
   @js.native
-  abstract class FrameIsoSpeedCapabilities ()
+  open class FrameIsoSpeedCapabilities ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.FrameIsoSpeedCapabilities {
     
@@ -356,9 +356,9 @@ object Core {
   }
   
   /** Represents the ISO speed settings for a frame in a variable photo sequence. */
-  @JSGlobal("Windows.Media.Devices.Core.FrameIsoSpeedControl")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Devices.Core.FrameIsoSpeedControl")
   @js.native
-  abstract class FrameIsoSpeedControl ()
+  open class FrameIsoSpeedControl ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.FrameIsoSpeedControl {
     
@@ -372,9 +372,9 @@ object Core {
   }
   
   /** Represents the settings for a variable photo sequence. */
-  @JSGlobal("Windows.Media.Devices.Core.VariablePhotoSequenceController")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Devices.Core.VariablePhotoSequenceController")
   @js.native
-  abstract class VariablePhotoSequenceController ()
+  open class VariablePhotoSequenceController ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.VariablePhotoSequenceController {
     

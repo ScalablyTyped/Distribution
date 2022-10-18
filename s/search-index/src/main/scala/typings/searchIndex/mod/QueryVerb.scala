@@ -1,5 +1,6 @@
 package typings.searchIndex.mod
 
+import typings.searchIndex.anon.EXCLUDE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,8 +21,8 @@ object QueryVerb {
     __obj.asInstanceOf[typings.searchIndex.mod.AND]
   }
   
-  inline def NOT(EXCLUDE: Token, INCLUDE: Token): typings.searchIndex.mod.NOT = {
-    val __obj = js.Dynamic.literal(EXCLUDE = EXCLUDE.asInstanceOf[js.Any], INCLUDE = INCLUDE.asInstanceOf[js.Any])
+  inline def NOT(NOT: EXCLUDE): typings.searchIndex.mod.NOT = {
+    val __obj = js.Dynamic.literal(NOT = NOT.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.searchIndex.mod.NOT]
   }
   

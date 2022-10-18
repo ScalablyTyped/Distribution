@@ -1,22 +1,25 @@
 package typings.octokitOpenapiTypes.anon
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `159` extends StObject {
   
-  var path: Attemptnumber
+  @JSName("application/json")
+  var applicationSlashjson: StringDictionary[Double]
 }
 object `159` {
   
-  inline def apply(path: Attemptnumber): `159` = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+  inline def apply(applicationSlashjson: StringDictionary[Double]): `159` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`159`]
   }
   
   extension [Self <: `159`](x: Self) {
     
-    inline def setPath(value: Attemptnumber): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(value: StringDictionary[Double]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsBackendWebgl.anon
 
-import typings.tensorflowTfjsBackendWebgl.backendWebglMod.MathBackendWebGL
-import typings.tensorflowTfjsCore.kernelNamesMod.Conv3DBackpropFilterV2Attrs
-import typings.tensorflowTfjsCore.kernelNamesMod.Conv3DBackpropFilterV2Inputs
+import typings.tensorflowTfjsBackendWebgl.distBackendWebglMod.MathBackendWebGL
+import typings.tensorflowTfjsCore.distKernelNamesMod.Conv3DBackpropFilterV2Attrs
+import typings.tensorflowTfjsCore.distKernelNamesMod.Conv3DBackpropFilterV2Inputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

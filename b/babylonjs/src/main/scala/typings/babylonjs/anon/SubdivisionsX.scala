@@ -14,8 +14,6 @@ trait SubdivisionsX extends StObject {
   
   var subdivisionsY: js.UndefOr[Double] = js.undefined
   
-  var updatable: js.UndefOr[Boolean] = js.undefined
-  
   var width: js.UndefOr[Double] = js.undefined
 }
 object SubdivisionsX {
@@ -42,10 +40,6 @@ object SubdivisionsX {
     inline def setSubdivisionsY(value: Double): Self = StObject.set(x, "subdivisionsY", value.asInstanceOf[js.Any])
     
     inline def setSubdivisionsYUndefined: Self = StObject.set(x, "subdivisionsY", js.undefined)
-    
-    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
-    
-    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

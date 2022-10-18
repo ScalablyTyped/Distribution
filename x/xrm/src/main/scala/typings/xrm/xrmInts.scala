@@ -3,6 +3,7 @@ package typings.xrm
 import typings.xrm.XrmEnum.AttributeRequiredLevel
 import typings.xrm.XrmEnum.AttributeTypeCode
 import typings.xrm.XrmEnum.ClientFormFactor
+import typings.xrm.XrmEnum.FormDataLoadState
 import typings.xrm.XrmEnum.FormType
 import typings.xrm.XrmEnum.GridControlContext
 import typings.xrm.XrmEnum.OpenFileOptions
@@ -36,6 +37,7 @@ object xrmInts {
        with AttributeRequiredLevel
        with AttributeTypeCode
        with ClientFormFactor
+       with FormDataLoadState
        with FormType
        with GridControlContext
        with OpenFileOptions
@@ -121,6 +123,7 @@ object xrmInts {
        with AttributeRequiredLevel
        with AttributeTypeCode
        with ClientFormFactor
+       with FormDataLoadState
        with FormType
        with GridControlContext
        with OpenFileOptions
@@ -142,6 +145,7 @@ object xrmInts {
        with AttributeRequiredLevel
        with AttributeTypeCode
        with ClientFormFactor
+       with FormDataLoadState
        with FormType
        with GridControlContext
        with StageCategory

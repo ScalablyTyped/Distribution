@@ -1,6 +1,5 @@
 package typings.raphael.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.raphael.anon.ArraykeyofRaphaelReadAttr
 import typings.raphael.anon.PartialRaphaelAttributes
 import typings.raphael.anon.PartialRaphaelGlowSetting
@@ -198,9 +197,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends StObjec
     */
   def attr[// Trick compiler into inferring a tuple type without the consumer having to specify the tuple type explicitly
   // https://github.com/microsoft/TypeScript/issues/22679
-  K /* <: ArraykeyofRaphaelReadAttr */](attributeNames: K): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof K ]: K[P] extends 'transform'? raphael.raphael.RaphaelReadAttributes[K[P]] | undefined : never}
-    */ typings.raphael.raphaelStrings.RaphaelBaseElement & TopLevel[Any] = js.native
+  K /* <: ArraykeyofRaphaelReadAttr */](attributeNames: K): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof K ]: K[P] extends 'transform'? raphael.raphael.RaphaelReadAttributes[K[P]] | undefined : never} */ js.Any = js.native
   /**
     * Set the given attribute of this element to the given value.
     * @typeparam K Type of the attribute name to set.

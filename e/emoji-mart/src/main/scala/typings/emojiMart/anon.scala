@@ -1,7 +1,7 @@
 package typings.emojiMart
 
-import typings.emojiMart.nimbleEmojiIndexMod.EmojiData
-import typings.emojiMart.nimbleEmojiIndexMod.EmojiEntry
+import typings.emojiMart.distEsUtilsEmojiIndexNimbleEmojiIndexMod.EmojiData
+import typings.emojiMart.distEsUtilsEmojiIndexNimbleEmojiIndexMod.EmojiEntry
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

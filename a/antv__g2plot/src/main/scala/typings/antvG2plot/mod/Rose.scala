@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialRoseOptions
-import typings.antvG2plot.roseTypesMod.RoseOptions
+import typings.antvG2plot.libPlotsRoseTypesMod.RoseOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Rose")
 @js.native
 open class Rose protected ()
-  extends typings.antvG2plot.roseMod.Rose {
+  extends typings.antvG2plot.libPlotsRoseMod.Rose {
   def this(container: String, options: RoseOptions) = this()
   def this(container: HTMLElement, options: RoseOptions) = this()
 }

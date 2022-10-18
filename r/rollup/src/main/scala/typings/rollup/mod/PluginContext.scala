@@ -1,8 +1,7 @@
 package typings.rollup.mod
 
-import typings.rollup.anon.Custom
-import typings.rollup.anon.Line
-import typings.rollup.anon.Name
+import typings.rollup.anon.Assertions
+import typings.rollup.anon.Column
 import typings.rollup.anon.idstringresolveDependenci
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
@@ -18,37 +17,16 @@ trait PluginContext
   
   var cache: PluginCache = js.native
   
-  /** @deprecated Use `this.emitFile` instead */
-  def emitAsset(name: String): String = js.native
-  def emitAsset(name: String, source: String): String = js.native
-  def emitAsset(name: String, source: js.typedarray.Uint8Array): String = js.native
-  /** @deprecated Use `this.emitFile` instead */
-  @JSName("emitAsset")
-  var emitAsset_Original: EmitAsset = js.native
-  
-  /** @deprecated Use `this.emitFile` instead */
-  def emitChunk(id: String): String = js.native
-  def emitChunk(id: String, options: Name): String = js.native
-  /** @deprecated Use `this.emitFile` instead */
-  @JSName("emitChunk")
-  var emitChunk_Original: EmitChunk = js.native
-  
   def emitFile(emittedFile: EmittedFile): String = js.native
   @JSName("emitFile")
   var emitFile_Original: EmitFile = js.native
   
-  def error(err: String): scala.Nothing = js.native
-  def error(err: String, pos: Double): scala.Nothing = js.native
-  def error(err: String, pos: Line): scala.Nothing = js.native
-  def error(err: RollupError): scala.Nothing = js.native
-  def error(err: RollupError, pos: Double): scala.Nothing = js.native
-  def error(err: RollupError, pos: Line): scala.Nothing = js.native
-  
-  /** @deprecated Use `this.getFileName` instead */
-  def getAssetFileName(assetReferenceId: String): String = js.native
-  
-  /** @deprecated Use `this.getFileName` instead */
-  def getChunkFileName(chunkReferenceId: String): String = js.native
+  def error(error: String): scala.Nothing = js.native
+  def error(error: String, pos: Double): scala.Nothing = js.native
+  def error(error: String, pos: Column): scala.Nothing = js.native
+  def error(error: RollupError): scala.Nothing = js.native
+  def error(error: RollupError, pos: Double): scala.Nothing = js.native
+  def error(error: RollupError, pos: Column): scala.Nothing = js.native
   
   def getFileName(fileReferenceId: String): String = js.native
   
@@ -60,13 +38,6 @@ trait PluginContext
   
   def getWatchFiles(): js.Array[String] = js.native
   
-  /** @deprecated Use `this.resolve` instead */
-  def isExternal(source: String, importer: String, isResolved: Boolean): Boolean = js.native
-  def isExternal(source: String, importer: Unit, isResolved: Boolean): Boolean = js.native
-  /** @deprecated Use `this.resolve` instead */
-  @JSName("isExternal")
-  var isExternal_Original: IsExternal = js.native
-  
   def load(options: idstringresolveDependenci): js.Promise[ModuleInfo] = js.native
   
   /** @deprecated Use `this.getModuleIds` instead */
@@ -77,20 +48,16 @@ trait PluginContext
   
   def resolve(source: String): js.Promise[ResolvedId | Null] = js.native
   def resolve(source: String, importer: String): js.Promise[ResolvedId | Null] = js.native
-  def resolve(source: String, importer: String, options: Custom): js.Promise[ResolvedId | Null] = js.native
-  def resolve(source: String, importer: Unit, options: Custom): js.Promise[ResolvedId | Null] = js.native
-  
-  /** @deprecated Use `this.resolve` instead */
-  def resolveId(source: String): js.Promise[String | Null] = js.native
-  def resolveId(source: String, importer: String): js.Promise[String | Null] = js.native
+  def resolve(source: String, importer: String, options: Assertions): js.Promise[ResolvedId | Null] = js.native
+  def resolve(source: String, importer: Unit, options: Assertions): js.Promise[ResolvedId | Null] = js.native
   
   def setAssetSource(assetReferenceId: String, source: String): Unit = js.native
   def setAssetSource(assetReferenceId: String, source: js.typedarray.Uint8Array): Unit = js.native
   
   def warn(warning: String): Unit = js.native
   def warn(warning: String, pos: Double): Unit = js.native
-  def warn(warning: String, pos: Line): Unit = js.native
+  def warn(warning: String, pos: Column): Unit = js.native
   def warn(warning: RollupWarning): Unit = js.native
   def warn(warning: RollupWarning, pos: Double): Unit = js.native
-  def warn(warning: RollupWarning, pos: Line): Unit = js.native
+  def warn(warning: RollupWarning, pos: Column): Unit = js.native
 }

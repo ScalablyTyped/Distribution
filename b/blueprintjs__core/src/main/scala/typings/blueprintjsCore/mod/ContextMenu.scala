@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.contextMenuMod.IOffset
+import typings.blueprintjsCore.libEsmComponentsContextMenuContextMenuMod.IOffset
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

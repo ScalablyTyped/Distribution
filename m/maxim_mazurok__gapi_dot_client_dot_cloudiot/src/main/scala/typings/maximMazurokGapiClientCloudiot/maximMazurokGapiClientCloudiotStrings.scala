@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientCloudiotStrings {
   
   @js.native
-  sealed trait Device extends StObject
-  inline def Device: Device = "Device".asInstanceOf[Device]
-  
-  @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
   sealed trait cloudiot extends StObject
   inline def cloudiot: cloudiot = "cloudiot".asInstanceOf[cloudiot]
   

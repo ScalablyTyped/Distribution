@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("watson-developer-cloud/sdk", "TextToSpeechV1")
 @js.native
-class TextToSpeechV1 protected () extends ^ {
-  def this(options: js.Any) = this()
+open class TextToSpeechV1 protected () extends ^ {
+  def this(options: Any) = this()
 }

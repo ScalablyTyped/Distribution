@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DiagnosticPullMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.vscodeLanguageclient.diagnosticMod.DiagnosticPullMode & String] = js.native
+  def apply(value: String): js.UndefOr[typings.vscodeLanguageclient.libCommonDiagnosticMod.DiagnosticPullMode & String] = js.native
   
-  /* "onSave" */ val onSave: typings.vscodeLanguageclient.diagnosticMod.DiagnosticPullMode.onSave & String = js.native
+  /* "onSave" */ val onSave: typings.vscodeLanguageclient.libCommonDiagnosticMod.DiagnosticPullMode.onSave & String = js.native
   
-  /* "onType" */ val onType: typings.vscodeLanguageclient.diagnosticMod.DiagnosticPullMode.onType & String = js.native
+  /* "onType" */ val onType: typings.vscodeLanguageclient.libCommonDiagnosticMod.DiagnosticPullMode.onType & String = js.native
 }

@@ -2,7 +2,7 @@ package typings.consumerDataStandards.energySdhMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.consumerDataStandards.anon.CommissioningDate
-import typings.consumerDataStandards.anon.ExportLimitkva
+import typings.consumerDataStandards.anon.ExportLimitKva
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ trait EnergyDerRecord
   var approvedCapacity: Double
   
   /**
-    * The number of phases available for the installation of DER
+    * The number of phases available for the installation of DER. Acceptable values are 1, 2 or 3.
     */
   var availablePhasesCount: Double
   
@@ -29,19 +29,19 @@ trait EnergyDerRecord
   var hasCentralProtectionControl: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * The number of phases that DER is connected to
+    * The number of phases that DER is connected to. Acceptable values are 1, 2 or 3.
     */
   var installedPhasesCount: Double
   
   /**
     * For identification of small generating units designed with the ability to operate in an islanded mode
     */
-  var islandableInstallation: String
+  var islandableInstallation: Boolean
   
   /**
     * Required only when the hasCentralProtectionAndControl flag is set to true.  One or more of the object fields will be provided to describe the protection modes in place
     */
-  var protectionMode: js.UndefOr[ExportLimitkva | Null] = js.undefined
+  var protectionMode: js.UndefOr[ExportLimitKva | Null] = js.undefined
   
   /**
     * The independent ID of the service point, known in the industry as the National Meter Identifier (NMI). Note that the servicePointId will be replaced with NMI for all interactions between Data Holder and AEMO.
@@ -55,7 +55,7 @@ object EnergyDerRecord {
     approvedCapacity: Double,
     availablePhasesCount: Double,
     installedPhasesCount: Double,
-    islandableInstallation: String,
+    islandableInstallation: Boolean,
     servicePointId: String
   ): EnergyDerRecord = {
     val __obj = js.Dynamic.literal(acConnections = acConnections.asInstanceOf[js.Any], approvedCapacity = approvedCapacity.asInstanceOf[js.Any], availablePhasesCount = availablePhasesCount.asInstanceOf[js.Any], installedPhasesCount = installedPhasesCount.asInstanceOf[js.Any], islandableInstallation = islandableInstallation.asInstanceOf[js.Any], servicePointId = servicePointId.asInstanceOf[js.Any])
@@ -80,9 +80,9 @@ object EnergyDerRecord {
     
     inline def setInstalledPhasesCount(value: Double): Self = StObject.set(x, "installedPhasesCount", value.asInstanceOf[js.Any])
     
-    inline def setIslandableInstallation(value: String): Self = StObject.set(x, "islandableInstallation", value.asInstanceOf[js.Any])
+    inline def setIslandableInstallation(value: Boolean): Self = StObject.set(x, "islandableInstallation", value.asInstanceOf[js.Any])
     
-    inline def setProtectionMode(value: ExportLimitkva): Self = StObject.set(x, "protectionMode", value.asInstanceOf[js.Any])
+    inline def setProtectionMode(value: ExportLimitKva): Self = StObject.set(x, "protectionMode", value.asInstanceOf[js.Any])
     
     inline def setProtectionModeNull: Self = StObject.set(x, "protectionMode", null)
     

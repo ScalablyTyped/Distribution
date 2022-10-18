@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grammarkdown", "LinkReference")
 @js.native
-class LinkReference ()
-  extends typings.grammarkdown.nodesMod.LinkReference {
+open class LinkReference ()
+  extends typings.grammarkdown.distNodesMod.LinkReference {
   def this(text: String) = this()
 }

@@ -1,5 +1,6 @@
 package typings.node.cryptoMod
 
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
@@ -161,7 +162,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   def update(data: String, inputEncoding: Unit, outputEncoding: Encoding): String = js.native
   def update(data: String, inputEncoding: Encoding): Buffer = js.native
   def update(data: String, inputEncoding: Encoding, outputEncoding: Encoding): String = js.native
-  def update(data: js.typedarray.ArrayBufferView, inputEncoding: Unit, outputEncoding: Encoding): String = js.native
+  def update(data: ArrayBufferView, inputEncoding: Unit, outputEncoding: Encoding): String = js.native
   /**
     * Updates the cipher with `data`. If the `inputEncoding` argument is given,
     * the `data`argument is a string using the specified encoding. If the `inputEncoding`argument is not given, `data` must be a `Buffer`, `TypedArray`, or`DataView`. If `data` is a `Buffer`,

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait Request extends StObject {
     * case-insensitive.
     */
   var headers: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Request & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The HTTP request `Host` header value. */
@@ -67,9 +64,7 @@ object Request {
     inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setHeaders(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Request & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)

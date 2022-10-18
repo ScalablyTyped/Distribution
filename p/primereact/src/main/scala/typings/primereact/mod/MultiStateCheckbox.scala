@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.multistatecheckboxMod.MultiStateCheckboxProps
+import typings.primereact.multistatecheckboxMultistatecheckboxMod.MultiStateCheckboxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "MultiStateCheckbox")
 @js.native
 open class MultiStateCheckbox protected ()
-  extends typings.primereact.multistatecheckboxMod.MultiStateCheckbox {
+  extends typings.primereact.multistatecheckboxMultistatecheckboxMod.MultiStateCheckbox {
   def this(props: MultiStateCheckboxProps) = this()
   /**
     * @deprecated

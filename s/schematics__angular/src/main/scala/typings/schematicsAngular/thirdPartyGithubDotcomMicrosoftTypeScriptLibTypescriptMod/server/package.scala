@@ -1,0 +1,27 @@
+package typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.server
+
+import typings.schematicsAngular.schematicsAngularStrings.actionColonColoninvalidate
+import typings.schematicsAngular.schematicsAngularStrings.actionColonColonpackageInstalled
+import typings.schematicsAngular.schematicsAngularStrings.actionColonColonset
+import typings.schematicsAngular.schematicsAngularStrings.eventColonColonbeginInstallTypes
+import typings.schematicsAngular.schematicsAngularStrings.eventColonColonendInstallTypes
+import typings.schematicsAngular.schematicsAngularStrings.eventColonColoninitializationFailed
+import typings.schematicsAngular.schematicsAngularStrings.eventColonColontypesRegistry
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+
+type ActionInvalidate = actionColonColoninvalidate
+
+type ActionPackageInstalled = actionColonColonpackageInstalled
+
+type ActionSet = actionColonColonset
+
+type EventBeginInstallTypes = eventColonColonbeginInstallTypes
+
+type EventEndInstallTypes = eventColonColonendInstallTypes
+
+type EventInitializationFailed = eventColonColoninitializationFailed
+
+type EventTypesRegistry = eventColonColontypesRegistry

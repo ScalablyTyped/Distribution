@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientIapStrings {
   
   @js.native
-  sealed trait Resource extends StObject
-  inline def Resource: Resource = "Resource".asInstanceOf[Resource]
-  
-  @js.native
   sealed trait iap extends StObject
   inline def iap: iap = "iap".asInstanceOf[iap]
   

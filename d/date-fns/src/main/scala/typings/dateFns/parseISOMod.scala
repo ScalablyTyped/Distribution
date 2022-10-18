@@ -1,21 +1,19 @@
 package typings.dateFns
 
-import org.scalablytyped.runtime.Shortcut
+import typings.dateFns.anon.AdditionalDigits
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseISOMod {
   
-  object default extends Shortcut {
+  object default {
     
-    @JSImport("date-fns/esm/fp/parseISO", JSImport.Default)
+    inline def apply(argument: String): js.Date = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    inline def apply(argument: String, options: AdditionalDigits): js.Date = (^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    
+    @JSImport("date-fns/parseISO", JSImport.Default)
     @js.native
-    val ^ : CurriedFn1[String, js.Date] = js.native
-    
-    type _To = CurriedFn1[String, js.Date]
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn1[String, js.Date] = ^
+    val ^ : js.Any = js.native
   }
 }

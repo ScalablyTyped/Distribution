@@ -1,6 +1,6 @@
 package typings.redisSearch.anon
 
-import typings.redisSearch.commandsMod.PropertyName
+import typings.redisSearch.distCommandsMod.PropertyName
 import typings.redisSearch.redisSearchStrings.ASC
 import typings.redisSearch.redisSearchStrings.DESC
 import org.scalablytyped.runtime.StObject

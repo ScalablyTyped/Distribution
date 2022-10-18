@@ -1,7 +1,7 @@
 package typings.router5TransitionPath
 
-import typings.router5TransitionPath.transitionPathMod.State
-import typings.router5TransitionPath.transitionPathMod.TransitionPath
+import typings.router5TransitionPath.distTransitionPathMod.State
+import typings.router5TransitionPath.distTransitionPathMod.TransitionPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

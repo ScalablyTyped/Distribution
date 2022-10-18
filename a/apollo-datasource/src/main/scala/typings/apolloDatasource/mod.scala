@@ -1,15 +1,15 @@
 package typings.apolloDatasource
 
-import typings.apolloUtilsKeyvaluecache.keyValueCacheMod.KeyValueCache
+import typings.apolloUtilsKeyvaluecache.distKeyValueCacheMod.KeyValueCache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("apollo-datasource", "DataSource")
+  /* note: abstract class */ @JSImport("apollo-datasource", "DataSource")
   @js.native
-  abstract class DataSource[TContext] () extends StObject {
+  open class DataSource[TContext] () extends StObject {
     
     var initialize: js.UndefOr[js.Function1[/* config */ DataSourceConfig[TContext], Unit | js.Promise[Unit]]] = js.native
   }

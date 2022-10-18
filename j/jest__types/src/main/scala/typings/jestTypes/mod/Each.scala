@@ -16,12 +16,6 @@ trait Each[EachFn /* <: TestFn | BlockFn */] extends StObject {
     /* timeout */ js.UndefOr[Double], 
     Unit
   ] = js.native
-  def apply[T /* <: Array[Any] */](table: T): js.Function3[
-    /* name */ String | NameLike, 
-    /* fn */ js.Function1[/* args */ T, ReturnType[EachFn]], 
-    /* timeout */ js.UndefOr[Double], 
-    Unit
-  ] = js.native
   def apply[T /* <: Record[String, Any] */](table: js.Array[T]): js.Function3[
     /* name */ String | NameLike, 
     /* fn */ js.Function1[/* arg */ T, ReturnType[EachFn]], 

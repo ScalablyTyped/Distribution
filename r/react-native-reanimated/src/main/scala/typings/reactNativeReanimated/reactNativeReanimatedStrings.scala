@@ -11,22 +11,6 @@ object reactNativeReanimatedStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait AdaptTransforms extends StObject
-  inline def AdaptTransforms: AdaptTransforms = "AdaptTransforms".asInstanceOf[AdaptTransforms]
-  
-  @js.native
-  sealed trait AnimateStyle extends StObject
-  inline def AnimateStyle: AnimateStyle = "AnimateStyle".asInstanceOf[AnimateStyle]
-  
-  @js.native
-  sealed trait EventMapping extends StObject
-  inline def EventMapping: EventMapping = "EventMapping".asInstanceOf[EventMapping]
-  
-  @js.native
-  sealed trait EventMappingArray extends StObject
-  inline def EventMappingArray: EventMappingArray = "EventMappingArray".asInstanceOf[EventMappingArray]
-  
-  @js.native
   sealed trait HSV extends StObject
   inline def HSV: HSV = "HSV".asInstanceOf[HSV]
   

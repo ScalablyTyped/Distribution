@@ -30,9 +30,9 @@ trait LocalContextMapViewOptions extends StObject {
   var directionsOptions: js.UndefOr[Null | MapDirectionsOptionsLiteral] = js.undefined
   
   /**
-    * The DOM Element backing the view.
+    * This Field is read-only. The DOM Element backing the view.
     */
-  var element: js.UndefOr[Element | Null] = js.undefined
+  var element: js.UndefOr[Null | Element] = js.undefined
   
   /**
     * A soft boundary or hint to use when searching for places.

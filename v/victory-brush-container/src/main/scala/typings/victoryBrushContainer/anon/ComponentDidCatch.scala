@@ -69,6 +69,8 @@ trait ComponentDidCatch extends StObject {
   def render(): ReactNode = js.native
   
   def setState[K /* <: scala.Nothing */](): Unit = js.native
+  def setState[K /* <: scala.Nothing */](state: js.Object | (Pick[js.Object, K])): Unit = js.native
+  def setState[K /* <: scala.Nothing */](state: js.Object | (Pick[js.Object, K]), callback: js.Function0[Unit]): Unit = js.native
   def setState[K /* <: scala.Nothing */](
     state: js.Function2[
       /* prevState */ js.Object, 
@@ -84,11 +86,7 @@ trait ComponentDidCatch extends StObject {
     ],
     callback: js.Function0[Unit]
   ): Unit = js.native
-  def setState[K /* <: scala.Nothing */](state: js.Object): Unit = js.native
-  def setState[K /* <: scala.Nothing */](state: js.Object, callback: js.Function0[Unit]): Unit = js.native
   def setState[K /* <: scala.Nothing */](state: Null, callback: js.Function0[Unit]): Unit = js.native
-  def setState[K /* <: scala.Nothing */](state: Pick[js.Object, K]): Unit = js.native
-  def setState[K /* <: scala.Nothing */](state: Pick[js.Object, K], callback: js.Function0[Unit]): Unit = js.native
   
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[/* nextProps */ js.Object, /* nextState */ js.Object, /* nextContext */ Any, Boolean]

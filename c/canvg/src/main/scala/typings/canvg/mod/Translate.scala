@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "Translate")
 @js.native
 open class Translate protected ()
-  extends typings.canvg.transformMod.Translate {
-  def this(_underscore: typings.canvg.documentMod.Document, point: String) = this()
+  extends typings.canvg.distTransformMod.Translate {
+  def this(_underscore: typings.canvg.distDocumentMod.Document, point: String) = this()
 }

@@ -4,23 +4,23 @@ import typings.d3Selection.mod.Selection_
 import typings.lodash.mod.MemoizedFunction
 import typings.plottable.anon.MaximumExtents
 import typings.plottable.anon.PickSVGRectxywidthheight
-import typings.plottable.entityStoreMod.IPositionedEntity
-import typings.plottable.interfacesMod.Bounds
-import typings.plottable.interfacesMod.IAccessor
-import typings.plottable.interfacesMod.IEntityBounds
-import typings.plottable.interfacesMod.Point
-import typings.plottable.interfacesMod.Range
-import typings.plottable.interfacesMod.SimpleSelection
-import typings.plottable.mathUtilsMod.ICssTransformMatrix
-import typings.plottable.mathUtilsMod.ITranslateVector
+import typings.plottable.buildSrcCoreInterfacesMod.Bounds
+import typings.plottable.buildSrcCoreInterfacesMod.IAccessor
+import typings.plottable.buildSrcCoreInterfacesMod.IEntityBounds
+import typings.plottable.buildSrcCoreInterfacesMod.Point
+import typings.plottable.buildSrcCoreInterfacesMod.Range
+import typings.plottable.buildSrcCoreInterfacesMod.SimpleSelection
+import typings.plottable.buildSrcUtilsEntityStoreMod.IPositionedEntity
+import typings.plottable.buildSrcUtilsMathUtilsMod.ICssTransformMatrix
+import typings.plottable.buildSrcUtilsMathUtilsMod.ITranslateVector
+import typings.plottable.buildSrcUtilsRTreeMod.IDistanceFunction
+import typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult
+import typings.plottable.buildSrcUtilsRTreeSplitStrategiesMod.IRTreeSplitStrategy
+import typings.plottable.buildSrcUtilsStackingUtilsMod.GenericStackingResult
+import typings.plottable.buildSrcUtilsStackingUtilsMod.IStackingOrder
+import typings.plottable.buildSrcUtilsStackingUtilsMod.StackingResult
 import typings.plottable.plottableStrings.bottomup
 import typings.plottable.plottableStrings.topdown
-import typings.plottable.rTreeMod.IDistanceFunction
-import typings.plottable.rTreeMod.QueryPredicateResult
-import typings.plottable.rTreeSplitStrategiesMod.IRTreeSplitStrategy
-import typings.plottable.stackingUtilsMod.GenericStackingResult
-import typings.plottable.stackingUtilsMod.IStackingOrder
-import typings.plottable.stackingUtilsMod.StackingResult
 import typings.std.ClientRect
 import typings.std.Element
 import typings.std.Event
@@ -56,14 +56,14 @@ object Utils {
   @JSImport("plottable", "Utils.Bucket")
   @js.native
   open class Bucket protected ()
-    extends typings.plottable.utilsMod.Bucket {
+    extends typings.plottable.buildSrcUtilsMod.Bucket {
     def this(index: Double, xValue: Double, yValue: Double) = this()
   }
   
   @JSImport("plottable", "Utils.CallbackSet")
   @js.native
   open class CallbackSet[CB /* <: js.Function */] ()
-    extends typings.plottable.utilsMod.CallbackSet[CB]
+    extends typings.plottable.buildSrcUtilsMod.CallbackSet[CB]
   
   object Color {
     
@@ -132,12 +132,12 @@ object Utils {
   @JSImport("plottable", "Utils.EntityStore")
   @js.native
   open class EntityStore[T /* <: IPositionedEntity */] ()
-    extends typings.plottable.utilsMod.EntityStore[T]
+    extends typings.plottable.buildSrcUtilsMod.EntityStore[T]
   
   @JSImport("plottable", "Utils.Map")
   @js.native
   open class Map[K, V] ()
-    extends typings.plottable.utilsMod.Map[K, V]
+    extends typings.plottable.buildSrcUtilsMod.Map[K, V]
   
   object Math {
     
@@ -211,19 +211,19 @@ object Utils {
     object QueryPredicateResult extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.plottable.rTreeMod.QueryPredicateResult & Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult & Double] = js.native
       
-      /* 1 */ val FAIL: typings.plottable.rTreeMod.QueryPredicateResult.FAIL & Double = js.native
+      /* 1 */ val FAIL: typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult.FAIL & Double = js.native
       
-      /* 0 */ val PASS: typings.plottable.rTreeMod.QueryPredicateResult.PASS & Double = js.native
+      /* 0 */ val PASS: typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult.PASS & Double = js.native
       
-      /* 2 */ val PASS_AND_OVERWRITE: typings.plottable.rTreeMod.QueryPredicateResult.PASS_AND_OVERWRITE & Double = js.native
+      /* 2 */ val PASS_AND_OVERWRITE: typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult.PASS_AND_OVERWRITE & Double = js.native
     }
     
     @JSImport("plottable", "Utils.RTree.RTree")
     @js.native
     open class RTree[T] ()
-      extends typings.plottable.utilsMod.RTree.RTree[T] {
+      extends typings.plottable.buildSrcUtilsMod.RTree.RTree[T] {
       def this(maxNodeChildren: Double) = this()
       def this(maxNodeChildren: Double, splitStrategy: IRTreeSplitStrategy) = this()
       def this(maxNodeChildren: Unit, splitStrategy: IRTreeSplitStrategy) = this()
@@ -232,7 +232,7 @@ object Utils {
     @JSImport("plottable", "Utils.RTree.RTreeBounds")
     @js.native
     open class RTreeBounds protected ()
-      extends typings.plottable.utilsMod.RTree.RTreeBounds {
+      extends typings.plottable.buildSrcUtilsMod.RTree.RTreeBounds {
       def this(xl: Double, yl: Double, xh: Double, yh: Double) = this()
     }
     /* static members */
@@ -248,7 +248,7 @@ object Utils {
         *
         * If `p.x` is inside the bounds returns `0`.
         */
-      inline def absoluteDistanceToFarEdgeX(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToFarEdgeX")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def absoluteDistanceToFarEdgeX(bounds: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToFarEdgeX")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Returns the orthogonal absolute distance in the y-dimension from point
@@ -256,7 +256,7 @@ object Utils {
         *
         * If `p.y` is inside the bounds returns `0`.
         */
-      inline def absoluteDistanceToFarEdgeY(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToFarEdgeY")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def absoluteDistanceToFarEdgeY(bounds: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToFarEdgeY")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Returns the orthogonal absolute distance in the x-dimension from point
@@ -264,7 +264,7 @@ object Utils {
         *
         * If `p.x` is inside the bounds returns `0`.
         */
-      inline def absoluteDistanceToNearEdgeX(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToNearEdgeX")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def absoluteDistanceToNearEdgeX(bounds: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToNearEdgeX")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Returns the orthogonal absolute distance in the y-dimension from point
@@ -272,11 +272,11 @@ object Utils {
         *
         * If `p.y` is inside the bounds returns `0`.
         */
-      inline def absoluteDistanceToNearEdgeY(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToNearEdgeY")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def absoluteDistanceToNearEdgeY(bounds: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToNearEdgeY")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      inline def bounds(bounds: Bounds): typings.plottable.rTreeMod.RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(bounds.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
+      inline def bounds(bounds: Bounds): typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(bounds.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds]
       
-      inline def distanceSquaredToFarEdge(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceSquaredToFarEdge")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def distanceSquaredToFarEdge(bounds: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceSquaredToFarEdge")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Returns the distance squared from `p` to the nearest edge of `bounds`. If
@@ -284,46 +284,58 @@ object Utils {
         *
         * https://gamedev.stackexchange.com/questions/44483/how-do-i-calculate-distance-between-a-point-and-an-axis-aligned-rectangle
         */
-      inline def distanceSquaredToNearEdge(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceSquaredToNearEdge")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def distanceSquaredToNearEdge(bounds: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceSquaredToNearEdge")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      inline def entityBounds(bounds: IEntityBounds): typings.plottable.rTreeMod.RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("entityBounds")(bounds.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
+      inline def entityBounds(bounds: IEntityBounds): typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("entityBounds")(bounds.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds]
       
       /**
         * Returns true if `a` overlaps `b` in the x and y axes.
         *
         * Touching counts as overlap.
         */
-      inline def isBoundsOverlapBounds(a: typings.plottable.rTreeMod.RTreeBounds, b: typings.plottable.rTreeMod.RTreeBounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapBounds")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def isBoundsOverlapBounds(
+        a: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds,
+        b: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds
+      ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapBounds")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /**
         * Returns true if `a` overlaps `b` in the x axis only.
         *
         * Touching counts as overlap.
         */
-      inline def isBoundsOverlapX(a: typings.plottable.rTreeMod.RTreeBounds, b: typings.plottable.rTreeMod.RTreeBounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapX")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def isBoundsOverlapX(
+        a: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds,
+        b: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds
+      ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapX")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /**
         * Returns true if `a` overlaps `b` in the y axis only.
         *
         * Touching counts as overlap.
         */
-      inline def isBoundsOverlapY(a: typings.plottable.rTreeMod.RTreeBounds, b: typings.plottable.rTreeMod.RTreeBounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapY")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def isBoundsOverlapY(
+        a: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds,
+        b: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds
+      ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapY")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      inline def pointPair(p0: Point, p1: Point): typings.plottable.rTreeMod.RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("pointPair")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
+      inline def pointPair(p0: Point, p1: Point): typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("pointPair")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds]
       
-      inline def points(points: js.Array[Point]): typings.plottable.rTreeMod.RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("points")(points.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
+      inline def points(points: js.Array[Point]): typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("points")(points.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds]
       
-      inline def union(b0: typings.plottable.rTreeMod.RTreeBounds, b1: typings.plottable.rTreeMod.RTreeBounds): typings.plottable.rTreeMod.RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(b0.asInstanceOf[js.Any], b1.asInstanceOf[js.Any])).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
+      inline def union(
+        b0: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds,
+        b1: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds
+      ): typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(b0.asInstanceOf[js.Any], b1.asInstanceOf[js.Any])).asInstanceOf[typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds]
       
-      inline def unionAll(bounds: js.Array[typings.plottable.rTreeMod.RTreeBounds]): typings.plottable.rTreeMod.RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("unionAll")(bounds.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
+      inline def unionAll(bounds: js.Array[typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds]): typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("unionAll")(bounds.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds]
       
-      inline def xywh(x: Double, y: Double, w: Double, h: Double): typings.plottable.rTreeMod.RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("xywh")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
+      inline def xywh(x: Double, y: Double, w: Double, h: Double): typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("xywh")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds]
     }
     
     @JSImport("plottable", "Utils.RTree.RTreeNode")
     @js.native
     open class RTreeNode[T] protected ()
-      extends typings.plottable.utilsMod.RTree.RTreeNode[T] {
+      extends typings.plottable.buildSrcUtilsMod.RTree.RTreeNode[T] {
       def this(leaf: Boolean) = this()
     }
     /* static members */
@@ -333,18 +345,24 @@ object Utils {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def valueNode[T](bounds: typings.plottable.rTreeMod.RTreeBounds, value: T): typings.plottable.rTreeMod.RTreeNode[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("valueNode")(bounds.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.plottable.rTreeMod.RTreeNode[T]]
+      inline def valueNode[T](bounds: typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds, value: T): typings.plottable.buildSrcUtilsRTreeMod.RTreeNode[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("valueNode")(bounds.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.plottable.buildSrcUtilsRTreeMod.RTreeNode[T]]
     }
     
-    inline def createMinimizingNodePredicate[T](point: Point, nearFn: IDistanceFunction, farFn: IDistanceFunction): js.Function1[/* node */ typings.plottable.rTreeMod.RTreeNode[T], QueryPredicateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinimizingNodePredicate")(point.asInstanceOf[js.Any], nearFn.asInstanceOf[js.Any], farFn.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* node */ typings.plottable.rTreeMod.RTreeNode[T], QueryPredicateResult]]
+    inline def createMinimizingNodePredicate[T](point: Point, nearFn: IDistanceFunction, farFn: IDistanceFunction): js.Function1[
+        /* node */ typings.plottable.buildSrcUtilsRTreeMod.RTreeNode[T], 
+        QueryPredicateResult
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinimizingNodePredicate")(point.asInstanceOf[js.Any], nearFn.asInstanceOf[js.Any], farFn.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+        /* node */ typings.plottable.buildSrcUtilsRTreeMod.RTreeNode[T], 
+        QueryPredicateResult
+      ]]
     
     inline def createNodeSort[T](point: Point, distanceFn: IDistanceFunction): js.Function2[
-        /* a */ typings.plottable.rTreeMod.RTreeNode[T], 
-        /* b */ typings.plottable.rTreeMod.RTreeNode[T], 
+        /* a */ typings.plottable.buildSrcUtilsRTreeMod.RTreeNode[T], 
+        /* b */ typings.plottable.buildSrcUtilsRTreeMod.RTreeNode[T], 
         Double
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNodeSort")(point.asInstanceOf[js.Any], distanceFn.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-        /* a */ typings.plottable.rTreeMod.RTreeNode[T], 
-        /* b */ typings.plottable.rTreeMod.RTreeNode[T], 
+        /* a */ typings.plottable.buildSrcUtilsRTreeMod.RTreeNode[T], 
+        /* b */ typings.plottable.buildSrcUtilsRTreeMod.RTreeNode[T], 
         Double
       ]]
   }
@@ -352,7 +370,7 @@ object Utils {
   @JSImport("plottable", "Utils.Set")
   @js.native
   open class Set[T] ()
-    extends typings.plottable.utilsMod.Set[T]
+    extends typings.plottable.buildSrcUtilsMod.Set[T]
   
   object Stacking {
     
@@ -382,12 +400,12 @@ object Utils {
     val normalizeKey: (js.Function1[/* key */ Any, String]) & MemoizedFunction = js.native
     
     inline def stack(
-      datasets: js.Array[typings.plottable.datasetMod.Dataset],
+      datasets: js.Array[typings.plottable.buildSrcCoreDatasetMod.Dataset],
       keyAccessor: IAccessor[Any],
       valueAccessor: IAccessor[Double]
     ): StackingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], valueAccessor.asInstanceOf[js.Any])).asInstanceOf[StackingResult]
     inline def stack(
-      datasets: js.Array[typings.plottable.datasetMod.Dataset],
+      datasets: js.Array[typings.plottable.buildSrcCoreDatasetMod.Dataset],
       keyAccessor: IAccessor[Any],
       valueAccessor: IAccessor[Double],
       stackingOrder: IStackingOrder
@@ -401,7 +419,7 @@ object Utils {
   @JSImport("plottable", "Utils.Translator")
   @js.native
   open class Translator protected ()
-    extends typings.plottable.utilsMod.Translator {
+    extends typings.plottable.buildSrcUtilsMod.Translator {
     def this(_rootElement: HTMLElement) = this()
   }
   /* static members */
@@ -414,7 +432,7 @@ object Utils {
     /**
       * Is the event's target part of the given component's DOM tree?
       */
-    inline def isEventInside(component: typings.plottable.componentMod.Component, e: Event): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEventInside")(component.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isEventInside(component: typings.plottable.buildSrcComponentsComponentMod.Component, e: Event): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEventInside")(component.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   object Window {
@@ -438,5 +456,5 @@ object Utils {
   
   inline def coerceExternalD3[S /* <: Selection_[Any, Any, Any, Any] */](externalD3Selection: S): S = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceExternalD3")(externalD3Selection.asInstanceOf[js.Any]).asInstanceOf[S]
   
-  inline def getTranslator(component: typings.plottable.componentMod.Component): typings.plottable.transformAwareTranslatorMod.Translator = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslator")(component.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.transformAwareTranslatorMod.Translator]
+  inline def getTranslator(component: typings.plottable.buildSrcComponentsComponentMod.Component): typings.plottable.buildSrcUtilsTransformAwareTranslatorMod.Translator = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslator")(component.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.buildSrcUtilsTransformAwareTranslatorMod.Translator]
 }

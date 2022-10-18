@@ -1,6 +1,5 @@
 package typings.reactDevtoolsInline.commonsMod
 
-import typings.reactDevtoolsInline.anon.CommitIndex
 import typings.std.Map
 import typings.std.PromiseLike
 import typings.std.Record
@@ -16,8 +15,6 @@ type BatchUID = Double
 type CanViewElementSource = js.Function1[/* inspectedElement */ InspectedElement, Boolean]
 
 type Context = FetchFileWithCaching | Null
-
-type EventParams[T] = T
 
 type FBSourceMetadata = js.Tuple2[js.UndefOr[Any], js.UndefOr[ReactSourceMetadata | Null]]
 
@@ -44,7 +41,7 @@ type GetFiberIDForNative = js.Function2[
 Double | Null]
 
 type HookEventListener[EV /* <: HookEvents */] = js.Function1[
-/* params */ Any | (/* import warning: importer.ImportType#apply Failed type conversion: react-devtools-inline.react-devtools-inline/commons.HookEventPayload[EV] */ js.Any), 
+/* import warning: importer.ImportType#apply Failed type conversion: EV extends 'renderer' | 'operations' | 'traceUpdates' | 'react-devtools' | 'renderer-attached' | 'shutdown' | 'fastRefreshScheduled' | 'unsupported-renderer-version' ? react-devtools-inline.react-devtools-inline/commons.HookEventPayload[EV] : unknown */ /* params */ js.Any, 
 Any]
 
 type HookName = String | Null
@@ -91,4 +88,4 @@ type ViewAttributeSource = js.Function2[/* id */ Double, /* path */ js.Array[Str
 
 type ViewElementSource = js.Function2[/* id */ Double, /* inspectedElement */ InspectedElement, Unit]
 
-type getCommitTree = js.Function1[/* options */ CommitIndex, CommitTree]
+type getCommitTree = js.Function1[/* options */ typings.reactDevtoolsInline.anon.ProfilerStore, CommitTree]

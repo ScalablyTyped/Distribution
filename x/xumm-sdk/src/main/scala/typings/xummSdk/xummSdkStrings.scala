@@ -1,9 +1,9 @@
 package typings.xummSdk
 
-import typings.xummSdk.xummApiMod.XrplTransactionType
-import typings.xummSdk.xummApiMod.XummCancelReason
-import typings.xummSdk.xummApiMod.XummQrQuality
-import typings.xummSdk.xummApiMod.XummTransactionApprovalType
+import typings.xummSdk.distSrcTypesXummApiMod.XrplTransactionType
+import typings.xummSdk.distSrcTypesXummApiMod.XummCancelReason
+import typings.xummSdk.distSrcTypesXummApiMod.XummQrQuality
+import typings.xummSdk.distSrcTypesXummApiMod.XummTransactionApprovalType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

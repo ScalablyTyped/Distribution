@@ -1,7 +1,7 @@
 package typings.carbonElements.mod
 
 import typings.carbonElements.anon.FontFamily
-import typings.carbonElements.anon.FontWeight
+import typings.carbonElements.anon.FontWeightAny
 import typings.carbonElements.carbonElementsInts.`0`
 import typings.carbonElements.carbonElementsInts.`16`
 import typings.carbonElements.carbonElementsInts.`8`
@@ -148,19 +148,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def background: Numbersignffffff = ^.asInstanceOf[js.Dynamic].selectDynamic("background").asInstanceOf[Numbersignffffff]
 
-inline def backgroundActive: String = ^.asInstanceOf[js.Dynamic].selectDynamic("backgroundActive").asInstanceOf[String]
+inline def backgroundActive: /* rgba(141, 141, 141, 0.5) */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("backgroundActive").asInstanceOf[/* rgba(141, 141, 141, 0.5) */ String]
 
 inline def backgroundBrand: Numbersign0f62fe = ^.asInstanceOf[js.Dynamic].selectDynamic("backgroundBrand").asInstanceOf[Numbersign0f62fe]
 
-inline def backgroundHover: String = ^.asInstanceOf[js.Dynamic].selectDynamic("backgroundHover").asInstanceOf[String]
+inline def backgroundHover: /* rgba(141, 141, 141, 0.12) */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("backgroundHover").asInstanceOf[/* rgba(141, 141, 141, 0.12) */ String]
 
 inline def backgroundInverse: Numbersign393939 = ^.asInstanceOf[js.Dynamic].selectDynamic("backgroundInverse").asInstanceOf[Numbersign393939]
 
 inline def backgroundInverseHover: Numbersign474747 = ^.asInstanceOf[js.Dynamic].selectDynamic("backgroundInverseHover").asInstanceOf[Numbersign474747]
 
-inline def backgroundSelected: String = ^.asInstanceOf[js.Dynamic].selectDynamic("backgroundSelected").asInstanceOf[String]
+inline def backgroundSelected: /* rgba(141, 141, 141, 0.2) */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("backgroundSelected").asInstanceOf[/* rgba(141, 141, 141, 0.2) */ String]
 
-inline def backgroundSelectedHover: String = ^.asInstanceOf[js.Dynamic].selectDynamic("backgroundSelectedHover").asInstanceOf[String]
+inline def backgroundSelectedHover: /* rgba(141, 141, 141, 0.32) */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("backgroundSelectedHover").asInstanceOf[/* rgba(141, 141, 141, 0.32) */ String]
 
 inline def baseFontSize: `16` = ^.asInstanceOf[js.Dynamic].selectDynamic("baseFontSize").asInstanceOf[`16`]
 
@@ -310,7 +310,7 @@ inline def focusInverse: Numbersignffffff = ^.asInstanceOf[js.Dynamic].selectDyn
 
 inline def fontFamily(name: Any): FontFamily = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFamily")(name.asInstanceOf[js.Any]).asInstanceOf[FontFamily]
 
-inline def fontWeight(weight: Any): FontWeight = ^.asInstanceOf[js.Dynamic].applyDynamic("fontWeight")(weight.asInstanceOf[js.Any]).asInstanceOf[FontWeight]
+inline def fontWeight(weight: Any): FontWeightAny = ^.asInstanceOf[js.Dynamic].applyDynamic("fontWeight")(weight.asInstanceOf[js.Any]).asInstanceOf[FontWeightAny]
 
 inline def getTypeSize(step: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeSize")(step.asInstanceOf[js.Any]).asInstanceOf[Any]
 
@@ -356,7 +356,7 @@ inline def green90: Numbersign022d0d = ^.asInstanceOf[js.Dynamic].selectDynamic(
 
 inline def highlight: Numbersignd0e2ff = ^.asInstanceOf[js.Dynamic].selectDynamic("highlight").asInstanceOf[Numbersignd0e2ff]
 
-inline def iconDisabled: String = ^.asInstanceOf[js.Dynamic].selectDynamic("iconDisabled").asInstanceOf[String]
+inline def iconDisabled: /* rgba(22, 22, 22, 0.25) */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("iconDisabled").asInstanceOf[/* rgba(22, 22, 22, 0.25) */ String]
 
 inline def iconInverse: Numbersignffffff = ^.asInstanceOf[js.Dynamic].selectDynamic("iconInverse").asInstanceOf[Numbersignffffff]
 
@@ -478,7 +478,7 @@ inline def orange60: Numbersignba4e00 = ^.asInstanceOf[js.Dynamic].selectDynamic
 
 inline def orange70: Numbersign8a3800 = ^.asInstanceOf[js.Dynamic].selectDynamic("orange70").asInstanceOf[Numbersign8a3800]
 
-inline def overlay: String = ^.asInstanceOf[js.Dynamic].selectDynamic("overlay").asInstanceOf[String]
+inline def overlay: /* rgba(22, 22, 22, 0.5) */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("overlay").asInstanceOf[/* rgba(22, 22, 22, 0.5) */ String]
 
 inline def print(block: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(block.asInstanceOf[js.Any]).asInstanceOf[String]
 
@@ -530,7 +530,7 @@ inline def rgba(hexcode: Any, opacity: Any): String = (^.asInstanceOf[js.Dynamic
 
 inline def scale: js.Array[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("scale").asInstanceOf[js.Array[Any]]
 
-inline def shadow: String = ^.asInstanceOf[js.Dynamic].selectDynamic("shadow").asInstanceOf[String]
+inline def shadow: /* rgba(0, 0, 0, 0.3) */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("shadow").asInstanceOf[/* rgba(0, 0, 0, 0.3) */ String]
 
 inline def size2XLarge: `5rem` = ^.asInstanceOf[js.Dynamic].selectDynamic("size2XLarge").asInstanceOf[`5rem`]
 
@@ -648,7 +648,7 @@ inline def teal80: Numbersign004144 = ^.asInstanceOf[js.Dynamic].selectDynamic("
 
 inline def teal90: Numbersign022b30 = ^.asInstanceOf[js.Dynamic].selectDynamic("teal90").asInstanceOf[Numbersign022b30]
 
-inline def textDisabled: String = ^.asInstanceOf[js.Dynamic].selectDynamic("textDisabled").asInstanceOf[String]
+inline def textDisabled: /* rgba(22, 22, 22, 0.25) */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("textDisabled").asInstanceOf[/* rgba(22, 22, 22, 0.25) */ String]
 
 inline def textError: Numbersignda1e28 = ^.asInstanceOf[js.Dynamic].selectDynamic("textError").asInstanceOf[Numbersignda1e28]
 
@@ -660,7 +660,7 @@ inline def textOnColor: Numbersignffffff = ^.asInstanceOf[js.Dynamic].selectDyna
 
 inline def textOnColorDisabled: Numbersign8d8d8d = ^.asInstanceOf[js.Dynamic].selectDynamic("textOnColorDisabled").asInstanceOf[Numbersign8d8d8d]
 
-inline def textPlaceholder: String = ^.asInstanceOf[js.Dynamic].selectDynamic("textPlaceholder").asInstanceOf[String]
+inline def textPlaceholder: /* rgba(22, 22, 22, 0.4) */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("textPlaceholder").asInstanceOf[/* rgba(22, 22, 22, 0.4) */ String]
 
 inline def textPrimary: Numbersign161616 = ^.asInstanceOf[js.Dynamic].selectDynamic("textPrimary").asInstanceOf[Numbersign161616]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fnSymbolForMod extends Shortcut {
   
-  @JSImport("core-js/library/fn/symbol/for", JSImport.Namespace)
+  @JSImport("core-js/fn/symbol/for", JSImport.Namespace)
   @js.native
   val ^ : Any = js.native
   

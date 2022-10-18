@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,14 +26,14 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera
+    camera: Nullable[typings.babylonjs.BABYLON.Camera]
   ) = this()
   def this(
     name: String,
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double
   ) = this()
   def this(
@@ -40,7 +41,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
@@ -49,7 +50,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
@@ -58,7 +59,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: Unit,
     textureFormat: Double
@@ -68,7 +69,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine,
     textureFormat: Double
@@ -78,7 +79,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: Unit,
     textureFormat: Double
@@ -88,7 +89,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     textureFormat: Double
@@ -98,7 +99,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: Unit,
     textureFormat: Double,
@@ -109,7 +110,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: Unit,
     textureFormat: Unit,
@@ -120,7 +121,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine,
     textureFormat: Double,
@@ -131,7 +132,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine,
     textureFormat: Unit,
@@ -142,7 +143,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: Unit,
     textureFormat: Double,
@@ -153,7 +154,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: Unit,
     textureFormat: Unit,
@@ -164,7 +165,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     textureFormat: Double,
@@ -175,7 +176,7 @@ open class TonemapPostProcess protected ()
     _operator: typings.babylonjs.BABYLON.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     textureFormat: Unit,

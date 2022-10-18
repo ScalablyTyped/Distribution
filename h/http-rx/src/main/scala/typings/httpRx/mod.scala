@@ -3,6 +3,7 @@ package typings.httpRx
 import org.scalablytyped.runtime.Shortcut
 import typings.request.mod.CoreOptions
 import typings.request.mod.Response
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,23 +17,23 @@ object mod extends Shortcut {
   @js.native
   trait HttpRx extends StObject {
     
-    def delete(url: String): Any = js.native
-    def delete(url: String, options: CoreOptions): Any = js.native
+    def delete(url: String): Observable_[ResponseWrapper] = js.native
+    def delete(url: String, options: CoreOptions): Observable_[ResponseWrapper] = js.native
     
-    def get(url: String): Any = js.native
-    def get(url: String, options: CoreOptions): Any = js.native
+    def get(url: String): Observable_[ResponseWrapper] = js.native
+    def get(url: String, options: CoreOptions): Observable_[ResponseWrapper] = js.native
     
-    def head(url: String): Any = js.native
-    def head(url: String, options: CoreOptions): Any = js.native
+    def head(url: String): Observable_[ResponseWrapper] = js.native
+    def head(url: String, options: CoreOptions): Observable_[ResponseWrapper] = js.native
     
-    def patch(url: String): Any = js.native
-    def patch(url: String, options: CoreOptions): Any = js.native
+    def patch(url: String): Observable_[ResponseWrapper] = js.native
+    def patch(url: String, options: CoreOptions): Observable_[ResponseWrapper] = js.native
     
-    def post(url: String): Any = js.native
-    def post(url: String, options: CoreOptions): Any = js.native
+    def post(url: String): Observable_[ResponseWrapper] = js.native
+    def post(url: String, options: CoreOptions): Observable_[ResponseWrapper] = js.native
     
-    def put(url: String): Any = js.native
-    def put(url: String, options: CoreOptions): Any = js.native
+    def put(url: String): Observable_[ResponseWrapper] = js.native
+    def put(url: String, options: CoreOptions): Observable_[ResponseWrapper] = js.native
   }
   
   trait ResponseWrapper extends StObject {

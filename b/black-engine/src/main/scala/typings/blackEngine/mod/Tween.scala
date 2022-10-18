@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Tween")
 @js.native
 open class Tween protected ()
-  extends typings.blackEngine.tweenMod.Tween {
+  extends typings.blackEngine.animationTweenMod.Tween {
   def this(values: Any) = this()
   def this(values: Any, duration: Double) = this()
   def this(values: Any, duration: Double, properties: Any) = this()

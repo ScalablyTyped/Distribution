@@ -1,6 +1,5 @@
 package typings.summernote.mod.global.Summernote
 
-import org.scalablytyped.runtime.TopLevel
 import typings.jquery.JQuery.Node
 import typings.summernote.summernoteStrings.color
 import typings.summernote.summernoteStrings.float
@@ -25,10 +24,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 type EditImageCallback = js.Function1[/* $image */ Node, Unit]
-
-type SummernoteUndocumentedCallbacks = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ key in std.Exclude<'onBeforeCommand' | 'onChange' | 'onChangeCodeview' | 'onDialogShown' | 'onEnter' | 'onFocus' | 'onBlur' | 'onBlurCodeview' | 'onImageLinkInsert' | 'onImageUpload' | 'onImageUploadError' | 'onInit' | 'onKeyup' | 'onKeydown' | 'onMouseDown' | 'onMouseUp' | 'onPaste' | 'onScroll', string> ]: (args : ...any): void}
-  */ typings.summernote.summernoteStrings.SummernoteUndocumentedCallbacks & TopLevel[Any]
 
 type colorsDef = js.Array[js.Array[js.Array[String]]]
 

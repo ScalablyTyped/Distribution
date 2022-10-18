@@ -3,12 +3,12 @@ package typings.workboxStrategies
 import typings.std.CacheQueryOptions
 import typings.std.RequestInit
 import typings.std.Response
-import typings.workboxCore.workboxPluginMod.WorkboxPlugin
-import typings.workboxRouting.routeHandlerMod.RouteHandlerCallback
-import typings.workboxRouting.routeHandlerMod.RouteHandlerCallbackContext
-import typings.workboxRouting.routeHandlerMod.RouteHandlerObject
-import typings.workboxStrategies.makeRequestCallbackMod.MakeRequestCallback
-import typings.workboxStrategies.makeRequestCallbackMod.MakeRequestCallbackOptions
+import typings.workboxCore.typesWorkboxPluginMod.WorkboxPlugin
+import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerCallback
+import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerCallbackContext
+import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerObject
+import typings.workboxStrategies.typesMakeRequestCallbackMod.MakeRequestCallback
+import typings.workboxStrategies.typesMakeRequestCallbackMod.MakeRequestCallbackOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SuspendMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.vscodeLanguageclient.clientMod.SuspendMode & String] = js.native
+  def apply(value: String): js.UndefOr[typings.vscodeLanguageclient.libCommonClientMod.SuspendMode & String] = js.native
   
-  /* "off" */ val off: typings.vscodeLanguageclient.clientMod.SuspendMode.off & String = js.native
+  /* "off" */ val off: typings.vscodeLanguageclient.libCommonClientMod.SuspendMode.off & String = js.native
   
-  /* "on" */ val on: typings.vscodeLanguageclient.clientMod.SuspendMode.on & String = js.native
+  /* "on" */ val on: typings.vscodeLanguageclient.libCommonClientMod.SuspendMode.on & String = js.native
 }

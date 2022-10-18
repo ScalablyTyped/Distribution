@@ -1,8 +1,8 @@
 package typings.redisSearch.anon
 
-import typings.redisSearch.spellcheckMod.SpellCheckOptions
-import typings.redisSearch.spellcheckMod.SpellCheckRawReply
-import typings.redisSearch.spellcheckMod.SpellCheckReply
+import typings.redisSearch.distCommandsSpellcheckMod.SpellCheckOptions
+import typings.redisSearch.distCommandsSpellcheckMod.SpellCheckRawReply
+import typings.redisSearch.distCommandsSpellcheckMod.SpellCheckReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

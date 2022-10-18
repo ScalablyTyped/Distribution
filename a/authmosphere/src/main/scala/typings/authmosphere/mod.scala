@@ -1,14 +1,14 @@
 package typings.authmosphere
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.authmosphere.getTokenInfoMod.GetTokenInfo
-import typings.authmosphere.loggerMod.Logger
-import typings.authmosphere.mockOptionsMod.MockOptions
-import typings.authmosphere.oauthconfigMod.OAuthConfig
-import typings.authmosphere.oauthconfigMod.TokenCacheOAuthConfig
-import typings.authmosphere.tokenCacheConfigMod.CacheConfig
-import typings.authmosphere.tokenCacheConfigMod.TokenCacheOptions
-import typings.authmosphere.tokenMod.Token
+import typings.authmosphere.libSrcTypesGetTokenInfoMod.GetTokenInfo
+import typings.authmosphere.libSrcTypesLoggerMod.Logger
+import typings.authmosphere.libSrcTypesMockOptionsMod.MockOptions
+import typings.authmosphere.libSrcTypesOauthconfigMod.OAuthConfig
+import typings.authmosphere.libSrcTypesOauthconfigMod.TokenCacheOAuthConfig
+import typings.authmosphere.libSrcTypesTokenCacheConfigMod.CacheConfig
+import typings.authmosphere.libSrcTypesTokenCacheConfigMod.TokenCacheOptions
+import typings.authmosphere.libSrcTypesTokenMod.Token
 import typings.nock.mod.Scope
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -26,15 +26,15 @@ object mod {
   object OAuthGrantType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.authmosphere.oauthgranttypeMod.OAuthGrantType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.authmosphere.libSrcTypesOauthgranttypeMod.OAuthGrantType & String] = js.native
     
-    /* "authorization_code" */ val AUTHORIZATION_CODE_GRANT: typings.authmosphere.oauthgranttypeMod.OAuthGrantType.AUTHORIZATION_CODE_GRANT & String = js.native
+    /* "authorization_code" */ val AUTHORIZATION_CODE_GRANT: typings.authmosphere.libSrcTypesOauthgranttypeMod.OAuthGrantType.AUTHORIZATION_CODE_GRANT & String = js.native
     
-    /* "client_credentials" */ val CLIENT_CREDENTIALS_GRANT: typings.authmosphere.oauthgranttypeMod.OAuthGrantType.CLIENT_CREDENTIALS_GRANT & String = js.native
+    /* "client_credentials" */ val CLIENT_CREDENTIALS_GRANT: typings.authmosphere.libSrcTypesOauthgranttypeMod.OAuthGrantType.CLIENT_CREDENTIALS_GRANT & String = js.native
     
-    /* "password" */ val PASSWORD_CREDENTIALS_GRANT: typings.authmosphere.oauthgranttypeMod.OAuthGrantType.PASSWORD_CREDENTIALS_GRANT & String = js.native
+    /* "password" */ val PASSWORD_CREDENTIALS_GRANT: typings.authmosphere.libSrcTypesOauthgranttypeMod.OAuthGrantType.PASSWORD_CREDENTIALS_GRANT & String = js.native
     
-    /* "refresh_token" */ val REFRESH_TOKEN_GRANT: typings.authmosphere.oauthgranttypeMod.OAuthGrantType.REFRESH_TOKEN_GRANT & String = js.native
+    /* "refresh_token" */ val REFRESH_TOKEN_GRANT: typings.authmosphere.libSrcTypesOauthgranttypeMod.OAuthGrantType.REFRESH_TOKEN_GRANT & String = js.native
   }
   
   /**
@@ -54,7 +54,7 @@ object mod {
   @JSImport("authmosphere", "TokenCache")
   @js.native
   open class TokenCache protected ()
-    extends typings.authmosphere.tokenCacheMod.TokenCache {
+    extends typings.authmosphere.libSrcTokenCacheMod.TokenCache {
     /**
       * @param tokenConfig
       * @param oauthConfig
@@ -69,7 +69,7 @@ object mod {
   
   @JSImport("authmosphere", "authenticationMiddleware")
   @js.native
-  val authenticationMiddleware: typings.authmosphere.expressToolingMod.authenticationMiddleware = js.native
+  val authenticationMiddleware: typings.authmosphere.libSrcExpressToolingMod.authenticationMiddleware = js.native
   
   /**
     * Removes generated tokens and mocked endpoints.
@@ -156,7 +156,7 @@ object mod {
   
   @JSImport("authmosphere", "requireScopesMiddleware")
   @js.native
-  val requireScopesMiddleware: typings.authmosphere.expressToolingMod.requireScopesMiddleware = js.native
+  val requireScopesMiddleware: typings.authmosphere.libSrcExpressToolingMod.requireScopesMiddleware = js.native
   
   inline def safeLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLogger")().asInstanceOf[Logger]
   inline def safeLogger(logger: Logger): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Logger]

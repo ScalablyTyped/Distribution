@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolkit
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +26,7 @@ trait IdentitytoolkitRelyingpartyCreateAuthUriRequest extends StObject {
     * response_type, scope, redirect_uri, state, oauth_token.
     */
   var customParameter: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientIdentitytoolkit.maximMazurokGapiClientIdentitytoolkitStrings.IdentitytoolkitRelyingpartyCreateAuthUriRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The hosted domain to restrict sign-in to accounts at that domain for Google Apps hosted accounts. */
@@ -92,9 +89,7 @@ object IdentitytoolkitRelyingpartyCreateAuthUriRequest {
     inline def setContinueUriUndefined: Self = StObject.set(x, "continueUri", js.undefined)
     
     inline def setCustomParameter(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientIdentitytoolkit.maximMazurokGapiClientIdentitytoolkitStrings.IdentitytoolkitRelyingpartyCreateAuthUriRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "customParameter", value.asInstanceOf[js.Any])
     
     inline def setCustomParameterUndefined: Self = StObject.set(x, "customParameter", js.undefined)

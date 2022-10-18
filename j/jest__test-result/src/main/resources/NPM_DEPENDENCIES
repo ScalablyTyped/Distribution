@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jest/test-result" : "29.1.2"
+      "@jest/test-result" : "29.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jest/test-result" : "29.1.2"
+      "@jest/test-result" : "29.2.0"
     }
   ],
   "compile-devDependencies" : [

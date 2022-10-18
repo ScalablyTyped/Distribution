@@ -9,13 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Use the {@link SyncClient.list} method to obtain a reference to a Sync list.
   * Information about rate limits can be found [here](https://www.twilio.com/docs/sync/limits).
   */
-@JSImport("twilio-sync", "SyncList")
 @js.native
-open class SyncList protected () extends Closeable {
-  /**
-    * @internal
-    */
-  def this(syncListImpl: SyncListImpl) = this()
+trait SyncList extends Closeable {
   
   def dateExpires: String = js.native
   
@@ -254,95 +249,4 @@ open class SyncList protected () extends Closeable {
   
   // private props
   def uri: String = js.native
-}
-object SyncList {
-  
-  /**
-    * Fired when a new item appears in the list, regardless of whether its creator was local or remote.
-    *
-    * Parameters:
-    * 1. object `args` - info object provided with the event. It has the following properties:
-    *     * {@link SyncListItem} `item` - added item
-    *     * boolean `isLocal` - equals true if the item was added by a local actor, false otherwise
-    * @example
-    * ```typescript
-    * list.on('itemAdded', (args) => {
-    *   console.log(`List item ${args.item.index} was added`);
-    *   console.log('args.item.data:', args.item.data);
-    *   console.log('args.isLocal:', args.isLocal);
-    * });
-    * ```
-    * @event
-    */
-  /* static member */
-  @JSImport("twilio-sync", "SyncList.itemAdded")
-  @js.native
-  val itemAdded: /* "itemAdded" */ String = js.native
-  
-  /**
-    * Fired when a list item is removed, regardless of whether the remover was local or remote.
-    *
-    * Parameters:
-    * 1. object `args` - info object provided with the event. It has the following properties:
-    *     * number `index` - index of the removed item
-    *     * boolean `isLocal` - equals true if the item was removed by a local actor, false otherwise
-    *     * object `previousItemData` - contains a snapshot of the item data before the removal
-    * @example
-    * ```typescript
-    * list.on('itemRemoved', (args) => {
-    *   console.log(`List item ${args.index} was removed`);
-    *   console.log('args.previousItemData:', args.previousItemData);
-    *   console.log('args.isLocal:', args.isLocal);
-    * });
-    * ```
-    * @event
-    */
-  /* static member */
-  @JSImport("twilio-sync", "SyncList.itemRemoved")
-  @js.native
-  val itemRemoved: /* "itemRemoved" */ String = js.native
-  
-  /**
-    * Fired when a list item is updated (not added or removed, but changed), regardless of whether the updater was local or remote.
-    *
-    * Parameters:
-    * 1. object `args` - info object provided with the event. It has the following properties:
-    *     * {@link SyncListItem} `item` - updated item
-    *     * boolean `isLocal` - equals true if the item was updated by a local actor, false otherwise
-    *     * object `previousItemData` - contains a snapshot of the item data before the update
-    * @example
-    * ```typescript
-    * list.on('itemUpdated', (args) => {
-    *   console.log(`List item ${args.item.index} was updated`);
-    *   console.log('args.item.data:', args.item.data);
-    *   console.log('args.isLocal:', args.isLocal);
-    *   console.log('args.previousItemData:', args.previousItemData);
-    * });
-    * ```
-    * @event
-    */
-  /* static member */
-  @JSImport("twilio-sync", "SyncList.itemUpdated")
-  @js.native
-  val itemUpdated: /* "itemUpdated" */ String = js.native
-  
-  /**
-    * Fired when a list is deleted entirely, by any actor local or remote.
-    *
-    * Parameters:
-    * 1. object `args` - info object provided with the event. It has the following properties:
-    *     * boolean `isLocal` - equals true if the list was removed by a local actor, false otherwise
-    * @example
-    * ```typescript
-    * list.on('removed', (args) => {
-    *   console.log(`List ${list.sid} was removed`);
-    *   console.log('args.isLocal:', args.isLocal);
-    * });
-    * ```
-    * @event
-    */
-  /* static member */
-  @JSImport("twilio-sync", "SyncList.removed")
-  @js.native
-  val removed: /* "removed" */ String = js.native
 }

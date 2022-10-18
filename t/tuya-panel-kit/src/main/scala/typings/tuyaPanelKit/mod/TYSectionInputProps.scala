@@ -1,7 +1,7 @@
 package typings.tuyaPanelKit.mod
 
 import typings.react.mod.ReactNode
-import typings.reactNative.anon.Start
+import typings.reactNative.anon.End
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -31,7 +31,7 @@ import typings.reactNative.mod.TextInputSubmitEditingEventData
 import typings.reactNative.mod.TextInputTextInputEventData
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.tuyaPanelKit.anon.BoardBg
+import typings.tuyaPanelKit.anon.CellBg
 import typings.tuyaPanelKit.anon.Container
 import typings.tuyaPanelKit.tuyaPanelKitStrings.URL
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`birthdate-day`
@@ -422,7 +422,7 @@ trait TYSectionInputProps extends StObject {
   
   var selectTextOnFocus: js.UndefOr[Boolean] = js.undefined
   
-  var selection: js.UndefOr[Start] = js.undefined
+  var selection: js.UndefOr[End] = js.undefined
   
   var selectionColor: js.UndefOr[ColorValue] = js.undefined
   
@@ -452,7 +452,7 @@ trait TYSectionInputProps extends StObject {
     none_ | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode
   ] = js.undefined
   
-  var theme: js.UndefOr[BoardBg] = js.undefined
+  var theme: js.UndefOr[CellBg] = js.undefined
   
   /**
     * @language zh-CN
@@ -1065,7 +1065,7 @@ object TYSectionInputProps {
     
     inline def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
     
-    inline def setSelection(value: Start): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: End): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     inline def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     
@@ -1125,7 +1125,7 @@ object TYSectionInputProps {
     
     inline def setTextContentTypeUndefined: Self = StObject.set(x, "textContentType", js.undefined)
     
-    inline def setTheme(value: BoardBg): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: CellBg): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     

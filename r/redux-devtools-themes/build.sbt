@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-devtools-themes"
-version := "1.0-dt-20211202Z-7b44e4"
+version := "1.0-dt-20211202Z-a4a740"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 package typings.matrixBotSdk.mod
 
-import typings.matrixBotSdk.istorageproviderMod.IStorageProvider
+import typings.matrixBotSdk.libStorageIstorageproviderMod.IStorageProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "PantalaimonClient")
 @js.native
 open class PantalaimonClient protected ()
-  extends typings.matrixBotSdk.pantalaimonClientMod.PantalaimonClient {
+  extends typings.matrixBotSdk.libPantalaimonClientMod.PantalaimonClient {
   /**
     * Creates a new PantalaimonClient class for interacting with Pantalaimon. The storage
     * provider given will also be used in the client.

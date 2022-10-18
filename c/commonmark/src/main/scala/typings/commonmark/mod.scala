@@ -91,7 +91,7 @@ object mod {
     /**
       * a String, either ) or . for an ordered list.
       */
-    var listDelimiter: String | Dot = js.native
+    var listDelimiter: (/* ) */ String) | Dot = js.native
     
     /**
       * a Number, the starting number of an ordered list.

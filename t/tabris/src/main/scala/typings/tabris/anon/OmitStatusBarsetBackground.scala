@@ -207,7 +207,7 @@ trait OmitStatusBarsetBackground extends StObject {
       typings.tabris.global.tabris.StatusBar_, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & `15`
+  ]) & `4`
   
   def off(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], Unit]): typings.tabris.global.tabris.StatusBar_
   def off(
@@ -315,7 +315,7 @@ object OmitStatusBarsetBackground {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.StatusBar_, 
       Omit[typings.tabris.global.tabris.StatusBar_, set | jsxAttributes]
-    ]) & `15`,
+    ]) & `4`,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.StatusBar_,
     on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.StatusBar_,
     onBackgroundChanged: ChangeListeners[typings.tabris.global.tabris.StatusBar_, background],
@@ -385,7 +385,7 @@ object OmitStatusBarsetBackground {
       value: (JSXAttributes[
           typings.tabris.global.tabris.StatusBar_, 
           Omit[typings.tabris.global.tabris.StatusBar_, set | jsxAttributes]
-        ]) & `15`
+        ]) & `4`
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setOff(

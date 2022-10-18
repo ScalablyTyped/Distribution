@@ -7,9 +7,9 @@ import typings.domelementtype.mod.ElementType.Tag
 import typings.domhandler.libNodeMod.ChildNode
 import typings.domhandler.mod.DomHandlerOptions
 import typings.htmlReactParser.anon.Dictkey
-import typings.htmlReactParser.attributesToPropsMod.Attributes
-import typings.htmlReactParser.attributesToPropsMod.Props
 import typings.htmlReactParser.htmlReactParserBooleans.`false`
+import typings.htmlReactParser.libAttributesToPropsMod.Attributes
+import typings.htmlReactParser.libAttributesToPropsMod.Props
 import typings.htmlparser2.libParserMod.ParserOptions
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -78,9 +78,9 @@ object mod {
     def this(name: String, attribs: StringDictionary[String], children: Unit, `type`: Tag) = this()
   }
   
-  @JSImport("html-react-parser", "Node")
+  /* note: abstract class */ @JSImport("html-react-parser", "Node")
   @js.native
-  abstract class Node ()
+  open class Node ()
     extends typings.domhandler.mod.Node
   
   @JSImport("html-react-parser", "ProcessingInstruction")

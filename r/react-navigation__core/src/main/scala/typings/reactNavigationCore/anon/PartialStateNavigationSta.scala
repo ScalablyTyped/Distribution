@@ -1,7 +1,7 @@
 package typings.reactNavigationCore.anon
 
 import typings.reactNavigationCore.reactNavigationCoreBooleans.`true`
-import typings.reactNavigationRouters.typesMod.PartialRoute
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.PartialRoute
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,7 +27,7 @@ trait PartialStateNavigationSta extends StObject {
   
   val routes: js.Array[
     PartialRoute[
-      typings.reactNavigationRouters.typesMod.Route[
+      typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route[
         /* import warning: importer.ImportType#apply Failed type conversion: std.Array<std.Extract<keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase, string>>[number] */ js.Any, 
         js.UndefOr[js.Object]
       ]
@@ -43,7 +43,7 @@ object PartialStateNavigationSta {
   inline def apply(
     routes: js.Array[
       PartialRoute[
-        typings.reactNavigationRouters.typesMod.Route[
+        typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route[
           /* import warning: importer.ImportType#apply Failed type conversion: std.Array<std.Extract<keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase, string>>[number] */ js.Any, 
           js.UndefOr[js.Object]
         ]
@@ -91,7 +91,7 @@ object PartialStateNavigationSta {
     inline def setRoutes(
       value: js.Array[
           PartialRoute[
-            typings.reactNavigationRouters.typesMod.Route[
+            typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route[
               /* import warning: importer.ImportType#apply Failed type conversion: std.Array<std.Extract<keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase, string>>[number] */ js.Any, 
               js.UndefOr[js.Object]
             ]
@@ -101,7 +101,7 @@ object PartialStateNavigationSta {
     
     inline def setRoutesVarargs(
       value: (PartialRoute[
-          typings.reactNavigationRouters.typesMod.Route[
+          typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route[
             /* import warning: importer.ImportType#apply Failed type conversion: std.Array<std.Extract<keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase, string>>[number] */ js.Any, 
             js.UndefOr[js.Object]
           ]

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object GradientType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.antvGLite.cssgradientvalueMod.GradientType & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.antvGLite.distCssCssomCssgradientvalueMod.GradientType & Double] = js.native
   
-  /* 0 */ val Constant: typings.antvGLite.cssgradientvalueMod.GradientType.Constant & Double = js.native
+  /* 0 */ val Constant: typings.antvGLite.distCssCssomCssgradientvalueMod.GradientType.Constant & Double = js.native
   
-  /* 1 */ val LinearGradient: typings.antvGLite.cssgradientvalueMod.GradientType.LinearGradient & Double = js.native
+  /* 1 */ val LinearGradient: typings.antvGLite.distCssCssomCssgradientvalueMod.GradientType.LinearGradient & Double = js.native
   
-  /* 2 */ val RadialGradient: typings.antvGLite.cssgradientvalueMod.GradientType.RadialGradient & Double = js.native
+  /* 2 */ val RadialGradient: typings.antvGLite.distCssCssomCssgradientvalueMod.GradientType.RadialGradient & Double = js.native
 }

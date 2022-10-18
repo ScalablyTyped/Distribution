@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "y-protocols" : "1.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "y-protocols" : "1.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

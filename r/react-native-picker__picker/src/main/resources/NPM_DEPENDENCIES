@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-native-picker/picker" : "2.4.4"
+      "@react-native-picker/picker" : "2.4.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-native-picker/picker" : "2.4.4"
+      "@react-native-picker/picker" : "2.4.7"
     }
   ],
   "compile-devDependencies" : [

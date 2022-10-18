@@ -13,11 +13,11 @@ trait NewName extends StObject {
   
   var oldName: String
   
-  var position: ReturnType[js.Function0[Root]]
+  var position: ReturnType[js.Function0[Path]]
 }
 object NewName {
   
-  inline def apply(newName: String, oldName: String, position: ReturnType[js.Function0[Root]]): NewName = {
+  inline def apply(newName: String, oldName: String, position: ReturnType[js.Function0[Path]]): NewName = {
     val __obj = js.Dynamic.literal(newName = newName.asInstanceOf[js.Any], oldName = oldName.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], baseVersion = null)
     __obj.asInstanceOf[NewName]
   }
@@ -32,6 +32,6 @@ object NewName {
     
     inline def setOldName(value: String): Self = StObject.set(x, "oldName", value.asInstanceOf[js.Any])
     
-    inline def setPosition(value: ReturnType[js.Function0[Root]]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: ReturnType[js.Function0[Path]]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

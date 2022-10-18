@@ -1,9 +1,9 @@
 package typings.paypalPaypalJs.anon
 
-import typings.paypalPaypalJs.subscriptionsCommonsMod.API
-import typings.paypalPaypalJs.subscriptionsCommonsMod.IntegrationArtifact
-import typings.paypalPaypalJs.subscriptionsCommonsMod.ProductCode
-import typings.paypalPaypalJs.subscriptionsCommonsMod.ProductFeature
+import typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod.API
+import typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod.IntegrationArtifact
+import typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod.ProductCode
+import typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod.ProductFeature
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

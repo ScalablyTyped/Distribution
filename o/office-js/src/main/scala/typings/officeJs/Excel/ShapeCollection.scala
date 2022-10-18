@@ -33,7 +33,7 @@ trait ShapeCollection
     * @param geometricShapeType Represents the type of the geometric shape. See `Excel.GeometricShapeType` for details.
     */
   def addGeometricShape(
-    geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+    geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.officeJs.officeJsStrings.LineInverse, typings.officeJs.officeJsStrings.Triangle, typings.officeJs.officeJsStrings.RightTriangle */ Any
   ): Shape = js.native
   /**
     * Adds a geometric shape to the worksheet. Returns a `Shape` object that represents the new shape.

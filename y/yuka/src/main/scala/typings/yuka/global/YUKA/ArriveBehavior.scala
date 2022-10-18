@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class ArriveBehavior ()
   extends typings.yuka.mod.ArriveBehavior {
-  def this(target: typings.yuka.vector3Mod.Vector3) = this()
+  def this(target: typings.yuka.srcMathVector3Mod.Vector3) = this()
   def this(target: Unit, deceleration: Double) = this()
-  def this(target: typings.yuka.vector3Mod.Vector3, deceleration: Double) = this()
+  def this(target: typings.yuka.srcMathVector3Mod.Vector3, deceleration: Double) = this()
   def this(target: Unit, deceleration: Double, tolerance: Double) = this()
   def this(target: Unit, deceleration: Unit, tolerance: Double) = this()
-  def this(target: typings.yuka.vector3Mod.Vector3, deceleration: Double, tolerance: Double) = this()
-  def this(target: typings.yuka.vector3Mod.Vector3, deceleration: Unit, tolerance: Double) = this()
+  def this(target: typings.yuka.srcMathVector3Mod.Vector3, deceleration: Double, tolerance: Double) = this()
+  def this(target: typings.yuka.srcMathVector3Mod.Vector3, deceleration: Unit, tolerance: Double) = this()
 }

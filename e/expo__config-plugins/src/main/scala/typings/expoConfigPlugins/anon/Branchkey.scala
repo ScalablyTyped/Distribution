@@ -1,9 +1,9 @@
 package typings.expoConfigPlugins.anon
 
+import typings.expoConfigPlugins.buildIosIosConfigDottypesMod.InterfaceOrientation
+import typings.expoConfigPlugins.buildIosIosConfigDottypesMod.InterfaceStyle
+import typings.expoConfigPlugins.buildIosIosConfigDottypesMod.URLScheme
 import typings.expoConfigPlugins.expoConfigPluginsStrings.SplashScreen
-import typings.expoConfigPlugins.iosConfigTypesMod.InterfaceOrientation
-import typings.expoConfigPlugins.iosConfigTypesMod.InterfaceStyle
-import typings.expoConfigPlugins.iosConfigTypesMod.URLScheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

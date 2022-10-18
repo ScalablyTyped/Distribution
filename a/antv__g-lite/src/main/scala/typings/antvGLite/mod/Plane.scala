@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "Plane")
 @js.native
 open class Plane ()
-  extends typings.antvGLite.shapesMod.Plane {
+  extends typings.antvGLite.distShapesMod.Plane {
   def this(distance: Double) = this()
   def this(distance: Double, normal: vec3) = this()
   def this(distance: Unit, normal: vec3) = this()

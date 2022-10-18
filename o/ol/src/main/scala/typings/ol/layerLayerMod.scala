@@ -29,14 +29,14 @@ object layerLayerMod {
   
   @js.native
   trait Layer[SourceType /* <: typings.ol.sourceSourceMod.default */]
-    extends typings.ol.baseMod.default {
+    extends typings.ol.layerBaseMod.default {
     
     /**
       * Create a renderer for this layer.
       */
     /* protected */ def createRenderer(): typings.ol.rendererLayerMod.default[Layer[typings.ol.sourceSourceMod.default]] = js.native
     
-    def getFeatures(pixel: Pixel): js.Promise[js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]] = js.native
+    def getFeatures(pixel: Pixel): js.Promise[js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]]] = js.native
     
     /**
       * Get the renderer for this layer.
@@ -199,7 +199,7 @@ object layerLayerMod {
     
     var opacity: Double
     
-    var sourceState: typings.ol.stateMod.State
+    var sourceState: typings.ol.sourceStateMod.State
     
     var visible: Boolean
     
@@ -215,7 +215,7 @@ object layerLayerMod {
       minResolution: Double,
       minZoom: Double,
       opacity: Double,
-      sourceState: typings.ol.stateMod.State,
+      sourceState: typings.ol.sourceStateMod.State,
       visible: Boolean,
       zIndex: Double
     ): State = {
@@ -243,7 +243,7 @@ object layerLayerMod {
       
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      inline def setSourceState(value: typings.ol.stateMod.State): Self = StObject.set(x, "sourceState", value.asInstanceOf[js.Any])
+      inline def setSourceState(value: typings.ol.sourceStateMod.State): Self = StObject.set(x, "sourceState", value.asInstanceOf[js.Any])
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       

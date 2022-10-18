@@ -2,7 +2,7 @@ package typings.googleCloudTextToSpeech.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.googleGax.mod.ChannelCredentials
-import typings.grpcGrpcJs.channelCredentialsMod.VerifyOptions
+import typings.grpcGrpcJs.buildSrcChannelCredentialsMod.VerifyOptions
 import typings.node.bufferMod.global.Buffer
 import typings.node.tlsMod.SecureContext
 import org.scalablytyped.runtime.StObject
@@ -24,13 +24,13 @@ trait TypeofChannelCredentialsInstantiable
     * @param secureContext The return value of tls.createSecureContext()
     * @param verifyOptions Additional options to modify certificate verification
     */
-  def createFromSecureContext(secureContext: SecureContext): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createFromSecureContext(secureContext: SecureContext, verifyOptions: VerifyOptions): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
+  def createFromSecureContext(secureContext: SecureContext): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials = js.native
+  def createFromSecureContext(secureContext: SecureContext, verifyOptions: VerifyOptions): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials = js.native
   
   /**
     * Return a new ChannelCredentials instance with no credentials.
     */
-  def createInsecure(): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
+  def createInsecure(): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials = js.native
   
   /**
     * Return a new ChannelCredentials instance with a given set of credentials.
@@ -46,5 +46,5 @@ trait TypeofChannelCredentialsInstantiable
     privateKey: js.UndefOr[Buffer | Null],
     certChain: js.UndefOr[Buffer | Null],
     verifyOptions: js.UndefOr[VerifyOptions]
-  ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
+  ): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials = js.native
 }

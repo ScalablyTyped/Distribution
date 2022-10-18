@@ -1909,6 +1909,14 @@ trait WebContents_ extends EventEmitter {
   def openDevTools(options: OpenDevToolsOptions): Unit = js.native
   
   /**
+    * A `WebFrameMain` property that represents the frame that opened this
+    * WebContents, either with open(), or by navigating a link with a target
+    * attribute.
+    *
+    */
+  val opener: WebFrameMain_ = js.native
+  
+  /**
     * Executes the editing command `paste` in web page.
     */
   def paste(): Unit = js.native

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +23,7 @@ trait ConnectionProfile extends StObject {
     * Example: `{ "name": "wrench", "mass": "1.3kg", "count": "3" }`.
     */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.ConnectionProfile & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** A MySQL database connection profile. */
@@ -73,9 +70,7 @@ object ConnectionProfile {
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.ConnectionProfile & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

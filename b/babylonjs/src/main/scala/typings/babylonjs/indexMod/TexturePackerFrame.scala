@@ -17,7 +17,7 @@ open class TexturePackerFrame protected ()
     */
   def this(
     id: Double,
-    scale: typings.babylonjs.mathVectorMod.Vector2,
-    offset: typings.babylonjs.mathVectorMod.Vector2
+    scale: typings.babylonjs.mathsMathDotvectorMod.Vector2,
+    offset: typings.babylonjs.mathsMathDotvectorMod.Vector2
   ) = this()
 }

@@ -16,13 +16,13 @@ open class BoundingInfo protected ()
     * @param worldMatrix defines the new world matrix
     */
   def this(
-    minimum: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    maximum: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
+    minimum: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    maximum: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3]
   ) = this()
   def this(
-    minimum: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    maximum: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    worldMatrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]
+    minimum: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    maximum: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    worldMatrix: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   ) = this()
 }
 /* static members */

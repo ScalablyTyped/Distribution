@@ -4,7 +4,7 @@ import typings.redux.mod.Action
 import typings.redux.mod.Reducer
 import typings.redux.mod.StoreEnhancer
 import typings.reduxDevtools.anon.Instantiable
-import typings.reduxDevtools.createDevToolsMod.Monitor
+import typings.reduxDevtools.libCreateDevToolsMod.Monitor
 import typings.reduxDevtoolsInstrument.mod.CommitAction
 import typings.reduxDevtoolsInstrument.mod.ImportStateAction
 import typings.reduxDevtoolsInstrument.mod.InstrumentExt

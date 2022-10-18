@@ -3180,7 +3180,7 @@ object Layui {
       * @param [fn] 回调    (tip:this:any)
       */
     def on(
-      eventName: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ Any,
+      eventName: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.layuiSrc.layuiSrcStrings.fullscreenchange, typings.layuiSrc.layuiSrcStrings.fullscreenerror, typings.layuiSrc.layuiSrcStrings.copy */ Any,
       fn: js.Function1[/* args */ Any, Any]
     ): js.Array[HTMLElement] = js.native
     

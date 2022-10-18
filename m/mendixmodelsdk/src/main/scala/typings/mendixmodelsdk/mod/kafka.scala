@@ -1,11 +1,11 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute
-import typings.mendixmodelsdk.domainmodelsMod.domainmodels.Entity
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Attribute
+import typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Entity
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +22,9 @@ object kafka {
   @JSImport("mendixmodelsdk", "kafka.ConsumedKafkaService")
   @js.native
   open class ConsumedKafkaService protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.kafka.ConsumedKafkaService {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.kafka.ConsumedKafkaService {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
@@ -42,7 +42,7 @@ object kafka {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.kafkaMod.kafka.ConsumedKafkaService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.ConsumedKafkaService]
+    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenKafkaMod.kafka.ConsumedKafkaService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenKafkaMod.kafka.ConsumedKafkaService]
     
     /* static member */
     @JSImport("mendixmodelsdk", "kafka.ConsumedKafkaService.structureTypeName")
@@ -53,8 +53,8 @@ object kafka {
     /* static member */
     @JSImport("mendixmodelsdk", "kafka.ConsumedKafkaService.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.kafkaMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.kafkaMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenKafkaMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenKafkaMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -63,14 +63,14 @@ object kafka {
   @JSImport("mendixmodelsdk", "kafka.KafkaMappedValue")
   @js.native
   open class KafkaMappedValue protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.kafka.KafkaMappedValue {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.kafka.KafkaMappedValue {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object KafkaMappedValue {
@@ -85,7 +85,7 @@ object kafka {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.kafkaMod.kafka.KafkaMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.KafkaMappedValue]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenKafkaMod.kafka.KafkaMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenKafkaMod.kafka.KafkaMappedValue]
     
     /**
       * Creates and returns a new KafkaMappedValue instance in the SDK and on the server.
@@ -96,7 +96,7 @@ object kafka {
       *  9.0.2 and higher
       */
     /* static member */
-    inline def createIn(container: Attribute): typings.mendixmodelsdk.kafkaMod.kafka.KafkaMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.KafkaMappedValue]
+    inline def createIn(container: Attribute): typings.mendixmodelsdk.srcGenKafkaMod.kafka.KafkaMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenKafkaMod.kafka.KafkaMappedValue]
     
     /* static member */
     @JSImport("mendixmodelsdk", "kafka.KafkaMappedValue.structureTypeName")
@@ -107,8 +107,8 @@ object kafka {
     /* static member */
     @JSImport("mendixmodelsdk", "kafka.KafkaMappedValue.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.kafkaMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.kafkaMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenKafkaMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenKafkaMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -121,14 +121,14 @@ object kafka {
   @JSImport("mendixmodelsdk", "kafka.KafkaRemoteEntitySource")
   @js.native
   open class KafkaRemoteEntitySource protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.kafka.KafkaRemoteEntitySource {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.kafka.KafkaRemoteEntitySource {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object KafkaRemoteEntitySource {
@@ -143,7 +143,7 @@ object kafka {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.kafkaMod.kafka.KafkaRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.KafkaRemoteEntitySource]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenKafkaMod.kafka.KafkaRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenKafkaMod.kafka.KafkaRemoteEntitySource]
     
     /**
       * Creates and returns a new KafkaRemoteEntitySource instance in the SDK and on the server.
@@ -154,7 +154,7 @@ object kafka {
       *  8.11.0 and higher
       */
     /* static member */
-    inline def createIn(container: Entity): typings.mendixmodelsdk.kafkaMod.kafka.KafkaRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.KafkaRemoteEntitySource]
+    inline def createIn(container: Entity): typings.mendixmodelsdk.srcGenKafkaMod.kafka.KafkaRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenKafkaMod.kafka.KafkaRemoteEntitySource]
     
     /* static member */
     @JSImport("mendixmodelsdk", "kafka.KafkaRemoteEntitySource.structureTypeName")
@@ -165,8 +165,8 @@ object kafka {
     /* static member */
     @JSImport("mendixmodelsdk", "kafka.KafkaRemoteEntitySource.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.kafkaMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.kafkaMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenKafkaMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenKafkaMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -179,14 +179,14 @@ object kafka {
   @JSImport("mendixmodelsdk", "kafka.PublishedKafkaResource")
   @js.native
   open class PublishedKafkaResource protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.kafka.PublishedKafkaResource {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.kafka.PublishedKafkaResource {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object PublishedKafkaResource {
@@ -201,7 +201,7 @@ object kafka {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResource]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenKafkaMod.kafka.PublishedKafkaResource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenKafkaMod.kafka.PublishedKafkaResource]
     
     /**
       * Creates and returns a new PublishedKafkaResource instance in the SDK and on the server.
@@ -212,7 +212,7 @@ object kafka {
       *  8.14.0 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaService): typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResource]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenKafkaMod.kafka.PublishedKafkaService): typings.mendixmodelsdk.srcGenKafkaMod.kafka.PublishedKafkaResource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenKafkaMod.kafka.PublishedKafkaResource]
     
     /* static member */
     @JSImport("mendixmodelsdk", "kafka.PublishedKafkaResource.structureTypeName")
@@ -223,8 +223,8 @@ object kafka {
     /* static member */
     @JSImport("mendixmodelsdk", "kafka.PublishedKafkaResource.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.kafkaMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.kafkaMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenKafkaMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenKafkaMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -237,14 +237,14 @@ object kafka {
   @JSImport("mendixmodelsdk", "kafka.PublishedKafkaResourceAttribute")
   @js.native
   open class PublishedKafkaResourceAttribute protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.kafka.PublishedKafkaResourceAttribute {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.kafka.PublishedKafkaResourceAttribute {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object PublishedKafkaResourceAttribute {
@@ -259,7 +259,7 @@ object kafka {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResourceAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResourceAttribute]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenKafkaMod.kafka.PublishedKafkaResourceAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenKafkaMod.kafka.PublishedKafkaResourceAttribute]
     
     /**
       * Creates and returns a new PublishedKafkaResourceAttribute instance in the SDK and on the server.
@@ -270,7 +270,7 @@ object kafka {
       *  9.0.1 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResource): typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResourceAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResourceAttribute]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenKafkaMod.kafka.PublishedKafkaResource): typings.mendixmodelsdk.srcGenKafkaMod.kafka.PublishedKafkaResourceAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenKafkaMod.kafka.PublishedKafkaResourceAttribute]
     
     /* static member */
     @JSImport("mendixmodelsdk", "kafka.PublishedKafkaResourceAttribute.structureTypeName")
@@ -281,8 +281,8 @@ object kafka {
     /* static member */
     @JSImport("mendixmodelsdk", "kafka.PublishedKafkaResourceAttribute.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.kafkaMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.kafkaMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenKafkaMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenKafkaMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -295,9 +295,9 @@ object kafka {
   @JSImport("mendixmodelsdk", "kafka.PublishedKafkaService")
   @js.native
   open class PublishedKafkaService protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.kafka.PublishedKafkaService {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.kafka.PublishedKafkaService {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
@@ -315,7 +315,7 @@ object kafka {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaService]
+    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenKafkaMod.kafka.PublishedKafkaService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenKafkaMod.kafka.PublishedKafkaService]
     
     /* static member */
     @JSImport("mendixmodelsdk", "kafka.PublishedKafkaService.structureTypeName")
@@ -326,7 +326,7 @@ object kafka {
     /* static member */
     @JSImport("mendixmodelsdk", "kafka.PublishedKafkaService.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.kafkaMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.kafkaMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenKafkaMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenKafkaMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
 }

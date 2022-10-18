@@ -8,7 +8,7 @@ import typings.reactNative.anon.AutoscrollToTopThreshold
 import typings.reactNative.anon.AverageItemLength
 import typings.reactNative.anon.Changed
 import typings.reactNative.anon.DistanceFromEnd
-import typings.reactNative.anon.Index
+import typings.reactNative.anon.Length
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -193,7 +193,7 @@ object mod {
     var getItemCount: js.UndefOr[js.Function1[/* data */ Any, Double]] = js.undefined
     
     var getItemLayout: js.UndefOr[
-        js.Function2[/* data */ js.UndefOr[js.Array[Image] | Null], /* index */ Double, Index]
+        js.Function2[/* data */ js.UndefOr[js.Array[Image] | Null], /* index */ Double, Length]
       ] = js.undefined
     
     var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
@@ -585,7 +585,7 @@ object mod {
       
       inline def setGetItemCountUndefined: Self = StObject.set(x, "getItemCount", js.undefined)
       
-      inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[Image] | Null], /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
+      inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[Image] | Null], /* index */ Double) => Length): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
       
       inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
       

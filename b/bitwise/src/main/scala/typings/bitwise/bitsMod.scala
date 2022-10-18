@@ -1,8 +1,8 @@
 package typings.bitwise
 
-import typings.bitwise.bitwiseTypesMod.Bit
-import typings.bitwise.bitwiseTypesMod.Bits
-import typings.bitwise.bitwiseTypesMod.BooleanBits
+import typings.bitwise.typesMod.Bit
+import typings.bitwise.typesMod.Bits
+import typings.bitwise.typesMod.BooleanBits
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

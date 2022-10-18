@@ -2,8 +2,8 @@ package typings.awsSdkClientKmsNode
 
 import typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KEY_MATERIAL_DOES_NOT_EXPIRE
 import typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KEY_MATERIAL_EXPIRES
-import typings.awsSdkClientKmsNode.inputTypesUnionMod.InputTypesUnion
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientKmsNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

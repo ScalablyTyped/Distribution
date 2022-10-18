@@ -1,6 +1,6 @@
 package typings.tcomb.mod
 
-import typings.tcomb.anon.Name
+import typings.tcomb.anon.IdentityKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Refinement_[T] extends Type[T] {
   
   @JSName("meta")
-  var meta_Refinement_ : Name[T] = js.native
+  var meta_Refinement_ : IdentityKind[T] = js.native
   
   def update(instance: T, spec: UpdatePatch): T = js.native
   @JSName("update")

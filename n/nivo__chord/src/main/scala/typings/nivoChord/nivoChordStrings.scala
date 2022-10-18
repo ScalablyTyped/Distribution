@@ -1,6 +1,6 @@
 package typings.nivoChord
 
-import typings.nivoChord.typesMod.LayerId
+import typings.nivoChord.distTypesTypesMod.LayerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

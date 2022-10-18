@@ -1,17 +1,17 @@
 package typings.unsplashJs.anon
 
-import typings.unsplashJs.unsplashJsStrings.featured
-import typings.unsplashJs.unsplashJsStrings.latest
-import typings.unsplashJs.unsplashJsStrings.oldest
-import typings.unsplashJs.unsplashJsStrings.position
+import typings.unsplashJs.distMethodsTopicsMod.TopicOrderBy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined unsplash-js.unsplash-js/dist/helpers/typescript.OmitStrict<unsplash-js.unsplash-js/dist/types/request.PaginationParams, 'orderBy'> & {  orderBy :'featured' | 'latest' | 'oldest' | 'position' | undefined,   topicIdsOrSlugs :std.Array<string> | undefined} */
+/* Inlined unsplash-js.unsplash-js/dist/helpers/typescript.OmitStrict<unsplash-js.unsplash-js/dist/types/request.PaginationParams, 'orderBy'> & {  orderBy :unsplash-js.unsplash-js/dist/methods/topics.TopicOrderBy | undefined,   topicIdsOrSlugs :std.Array<string> | undefined} */
 trait OmitStrictPaginationParam extends StObject {
   
-  var orderBy: js.UndefOr[featured | latest | oldest | position] = js.undefined
+  /**
+    * default: `position`
+    */
+  var orderBy: js.UndefOr[TopicOrderBy] = js.undefined
   
   var page: js.UndefOr[Double] = js.undefined
   
@@ -28,7 +28,7 @@ object OmitStrictPaginationParam {
   
   extension [Self <: OmitStrictPaginationParam](x: Self) {
     
-    inline def setOrderBy(value: featured | latest | oldest | position): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: TopicOrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     

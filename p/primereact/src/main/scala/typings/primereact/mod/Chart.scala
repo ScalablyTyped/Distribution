@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.chartMod.ChartProps
+import typings.primereact.chartChartMod.ChartProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Chart")
 @js.native
 open class Chart protected ()
-  extends typings.primereact.chartMod.Chart {
+  extends typings.primereact.chartChartMod.Chart {
   def this(props: ChartProps) = this()
   /**
     * @deprecated

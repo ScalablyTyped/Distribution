@@ -25,7 +25,7 @@ trait XMultiServiceFactory
     * @returns instance
     */
   def createInstance(aServiceSpecifier: String): XInterface = js.native
-  def createInstance[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1363 */ Any */](aServiceSpecifier: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-libreoffice.LibreOffice.ServicesNameMap[K] */ js.Any = js.native
+  def createInstance[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1363, starting with typings.activexLibreoffice.activexLibreofficeStrings.comDotsunDotstarDotaccessibilityDotAccessible, typings.activexLibreoffice.activexLibreofficeStrings.comDotsunDotstarDotaccessibilityDotAccessibleContext, typings.activexLibreoffice.activexLibreofficeStrings.comDotsunDotstarDotaccessibilityDotMSAAService */ Any */](aServiceSpecifier: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-libreoffice.LibreOffice.ServicesNameMap[K] */ js.Any = js.native
   
   /**
     * Creates an instance classified by the specified name and passes the arguments to that instance.
@@ -34,7 +34,7 @@ trait XMultiServiceFactory
     * @returns instance
     */
   def createInstanceWithArguments(ServiceSpecifier: String, Arguments: SeqEquiv[Any]): XInterface = js.native
-  def createInstanceWithArguments[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1363 */ Any */](ServiceSpecifier: K, Arguments: SeqEquiv[Any]): /* import warning: importer.ImportType#apply Failed type conversion: activex-libreoffice.LibreOffice.ServicesNameMap[K] */ js.Any = js.native
+  def createInstanceWithArguments[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1363, starting with typings.activexLibreoffice.activexLibreofficeStrings.comDotsunDotstarDotaccessibilityDotAccessible, typings.activexLibreoffice.activexLibreofficeStrings.comDotsunDotstarDotaccessibilityDotAccessibleContext, typings.activexLibreoffice.activexLibreofficeStrings.comDotsunDotstarDotaccessibilityDotMSAAService */ Any */](ServiceSpecifier: K, Arguments: SeqEquiv[Any]): /* import warning: importer.ImportType#apply Failed type conversion: activex-libreoffice.LibreOffice.ServicesNameMap[K] */ js.Any = js.native
   
   /**
     * Provides the available names of the factory to be used to create instances.

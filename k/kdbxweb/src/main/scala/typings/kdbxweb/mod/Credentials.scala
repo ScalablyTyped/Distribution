@@ -1,6 +1,6 @@
 package typings.kdbxweb.mod
 
-import typings.kdbxweb.kdbxCredentialsMod.KdbxChallengeResponseFn
+import typings.kdbxweb.distTypesFormatKdbxCredentialsMod.KdbxChallengeResponseFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,33 +8,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("kdbxweb", "Credentials")
 @js.native
 open class Credentials ()
-  extends typings.kdbxweb.kdbxCredentialsMod.KdbxCredentials {
-  def this(password: typings.kdbxweb.protectedValueMod.ProtectedValue) = this()
+  extends typings.kdbxweb.distTypesFormatKdbxCredentialsMod.KdbxCredentials {
+  def this(password: typings.kdbxweb.distTypesCryptoProtectedValueMod.ProtectedValue) = this()
   def this(password: Null, keyFile: js.typedarray.ArrayBuffer) = this()
   def this(password: Null, keyFile: js.typedarray.Uint8Array) = this()
-  def this(password: typings.kdbxweb.protectedValueMod.ProtectedValue, keyFile: js.typedarray.ArrayBuffer) = this()
-  def this(password: typings.kdbxweb.protectedValueMod.ProtectedValue, keyFile: js.typedarray.Uint8Array) = this()
+  def this(
+    password: typings.kdbxweb.distTypesCryptoProtectedValueMod.ProtectedValue,
+    keyFile: js.typedarray.ArrayBuffer
+  ) = this()
+  def this(
+    password: typings.kdbxweb.distTypesCryptoProtectedValueMod.ProtectedValue,
+    keyFile: js.typedarray.Uint8Array
+  ) = this()
   def this(password: Null, keyFile: js.typedarray.ArrayBuffer, challengeResponse: KdbxChallengeResponseFn) = this()
   def this(password: Null, keyFile: js.typedarray.Uint8Array, challengeResponse: KdbxChallengeResponseFn) = this()
   def this(password: Null, keyFile: Null, challengeResponse: KdbxChallengeResponseFn) = this()
   def this(password: Null, keyFile: Unit, challengeResponse: KdbxChallengeResponseFn) = this()
   def this(
-    password: typings.kdbxweb.protectedValueMod.ProtectedValue,
+    password: typings.kdbxweb.distTypesCryptoProtectedValueMod.ProtectedValue,
     keyFile: js.typedarray.ArrayBuffer,
     challengeResponse: KdbxChallengeResponseFn
   ) = this()
   def this(
-    password: typings.kdbxweb.protectedValueMod.ProtectedValue,
+    password: typings.kdbxweb.distTypesCryptoProtectedValueMod.ProtectedValue,
     keyFile: js.typedarray.Uint8Array,
     challengeResponse: KdbxChallengeResponseFn
   ) = this()
   def this(
-    password: typings.kdbxweb.protectedValueMod.ProtectedValue,
+    password: typings.kdbxweb.distTypesCryptoProtectedValueMod.ProtectedValue,
     keyFile: Null,
     challengeResponse: KdbxChallengeResponseFn
   ) = this()
   def this(
-    password: typings.kdbxweb.protectedValueMod.ProtectedValue,
+    password: typings.kdbxweb.distTypesCryptoProtectedValueMod.ProtectedValue,
     keyFile: Unit,
     challengeResponse: KdbxChallengeResponseFn
   ) = this()

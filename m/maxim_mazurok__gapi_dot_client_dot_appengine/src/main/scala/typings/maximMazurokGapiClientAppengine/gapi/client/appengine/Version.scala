@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,16 +23,12 @@ trait Version extends StObject {
   
   /** Metadata settings that are supplied to this version to enable beta runtime features. */
   var betaSettings: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Environment variables available to the build environment.Only returned in GET requests if view=FULL is set. */
   var buildEnvVariables: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Time that this version was created.@OutputOnly */
@@ -66,9 +61,7 @@ trait Version extends StObject {
   
   /** Environment variables available to the application.Only returned in GET requests if view=FULL is set. */
   var envVariables: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Custom static error pages. Limited to 10KB per page.Only returned in GET requests if view=FULL is set. */
@@ -193,17 +186,13 @@ object Version {
     inline def setBasicScalingUndefined: Self = StObject.set(x, "basicScaling", js.undefined)
     
     inline def setBetaSettings(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "betaSettings", value.asInstanceOf[js.Any])
     
     inline def setBetaSettingsUndefined: Self = StObject.set(x, "betaSettings", js.undefined)
     
     inline def setBuildEnvVariables(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "buildEnvVariables", value.asInstanceOf[js.Any])
     
     inline def setBuildEnvVariablesUndefined: Self = StObject.set(x, "buildEnvVariables", js.undefined)
@@ -241,9 +230,7 @@ object Version {
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     inline def setEnvVariables(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Version & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "envVariables", value.asInstanceOf[js.Any])
     
     inline def setEnvVariablesUndefined: Self = StObject.set(x, "envVariables", js.undefined)

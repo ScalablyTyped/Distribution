@@ -23,7 +23,7 @@ object SfProductCardHorizontal extends Shortcut {
     
     var linkComponentTag: String
     
-    var wishlistIconClasses: `sf-product-card-horizontal__wishlist-icon` | String
+    var wishlistIconClasses: `sf-product-card-horizontal__wishlist-icon` | (/* sf-product-card-horizontal__wishlist-icon sf-product-card-horizontal--on-wishlist */ String)
   }
   object Computed {
     
@@ -31,7 +31,7 @@ object SfProductCardHorizontal extends Shortcut {
       ariaLabel: (`Remove from wishlist`) | (`Add to wishlist`),
       currentWishlistIcon: Icon,
       linkComponentTag: String,
-      wishlistIconClasses: `sf-product-card-horizontal__wishlist-icon` | String
+      wishlistIconClasses: `sf-product-card-horizontal__wishlist-icon` | (/* sf-product-card-horizontal__wishlist-icon sf-product-card-horizontal--on-wishlist */ String)
     ): Computed = {
       val __obj = js.Dynamic.literal(ariaLabel = ariaLabel.asInstanceOf[js.Any], currentWishlistIcon = currentWishlistIcon.asInstanceOf[js.Any], linkComponentTag = linkComponentTag.asInstanceOf[js.Any], wishlistIconClasses = wishlistIconClasses.asInstanceOf[js.Any])
       __obj.asInstanceOf[Computed]
@@ -45,7 +45,9 @@ object SfProductCardHorizontal extends Shortcut {
       
       inline def setLinkComponentTag(value: String): Self = StObject.set(x, "linkComponentTag", value.asInstanceOf[js.Any])
       
-      inline def setWishlistIconClasses(value: `sf-product-card-horizontal__wishlist-icon` | String): Self = StObject.set(x, "wishlistIconClasses", value.asInstanceOf[js.Any])
+      inline def setWishlistIconClasses(
+        value: `sf-product-card-horizontal__wishlist-icon` | (/* sf-product-card-horizontal__wishlist-icon sf-product-card-horizontal--on-wishlist */ String)
+      ): Self = StObject.set(x, "wishlistIconClasses", value.asInstanceOf[js.Any])
     }
   }
   

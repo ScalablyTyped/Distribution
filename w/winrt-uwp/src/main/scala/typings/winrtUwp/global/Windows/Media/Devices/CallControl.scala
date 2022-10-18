@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the properties, commands and events for handling calls on a telephony related device. */
-@JSGlobal("Windows.Media.Devices.CallControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.CallControl")
 @js.native
-abstract class CallControl ()
+open class CallControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.CallControl
 object CallControl {

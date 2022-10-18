@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsFileProtectOutlinedMod.FileProtectOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileProtectOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/FileProtectOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/FileProtectOutlined", JSImport.Default)
   @js.native
   val default: FileProtectOutlinedIconType = js.native
-  
-  @js.native
-  trait FileProtectOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_FileProtectOutlinedIconType: String = js.native
-  }
   
   type _To = FileProtectOutlinedIconType
   

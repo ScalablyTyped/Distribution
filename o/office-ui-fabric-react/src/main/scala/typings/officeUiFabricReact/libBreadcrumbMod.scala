@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.breadcrumbTypesMod.IBreadcrumbProps
+import typings.officeUiFabricReact.libComponentsBreadcrumbBreadcrumbDottypesMod.IBreadcrumbProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object libBreadcrumbMod {
   @JSImport("office-ui-fabric-react/lib/Breadcrumb", "BreadcrumbBase")
   @js.native
   open class BreadcrumbBase protected ()
-    extends typings.officeUiFabricReact.breadcrumbMod.BreadcrumbBase {
+    extends typings.officeUiFabricReact.libComponentsBreadcrumbMod.BreadcrumbBase {
     def this(props: IBreadcrumbProps) = this()
   }
   /* static members */

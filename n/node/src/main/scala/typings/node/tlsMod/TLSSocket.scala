@@ -4,8 +4,8 @@ import typings.node.anon.RejectUnauthorized
 import typings.node.bufferMod.global.Buffer
 import typings.node.nodeBooleans.`false`
 import typings.node.nodeBooleans.`true`
-import typings.node.nodeCryptoMod.X509Certificate
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColoncryptoMod.X509Certificate
+import typings.node.nodeColonnetMod.Socket
 import typings.node.nodeStrings.OCSPResponse
 import typings.node.nodeStrings.keylog
 import typings.node.nodeStrings.secureConnect

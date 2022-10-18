@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcCoreProvidersOauthMod {
   
-  @JSImport("@firebase/auth/dist/src/core/providers/oauth", "BaseOAuthProvider")
+  /* note: abstract class */ @JSImport("@firebase/auth/dist/src/core/providers/oauth", "BaseOAuthProvider")
   @js.native
-  abstract class BaseOAuthProvider protected () extends FederatedAuthProvider {
+  open class BaseOAuthProvider protected () extends FederatedAuthProvider {
     /**
       * Constructor for generic OAuth providers.
       *

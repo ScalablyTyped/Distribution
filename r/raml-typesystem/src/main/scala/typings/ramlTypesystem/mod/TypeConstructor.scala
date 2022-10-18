@@ -55,7 +55,7 @@ open class TypeConstructor protected () extends StObject {
     * returns a constructed type instance
     * @returns {IParsedType}
     */
-  def getResult(): typings.ramlTypesystem.typesystemInterfacesMod.IParsedType = js.native
+  def getResult(): typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IParsedType = js.native
   
   /* private */ var target: Any = js.native
 }

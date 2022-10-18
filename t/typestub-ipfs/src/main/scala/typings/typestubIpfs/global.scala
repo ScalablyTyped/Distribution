@@ -12,7 +12,7 @@ object global {
     
     @JSGlobal("ipfs")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.typestubIpfs.mod.^ {
       def this(options: Options) = this()
     }

@@ -1,6 +1,6 @@
 package typings.ecol
 
-import typings.ecol.collectionEventMod.CollectionEvent.Type
+import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.InstanceType
+import typings.tuyaPanelKit.`@reactNavigationStackTypesMod`.StackNavigationOptions
 import typings.tuyaPanelKit.anon.ActiveStyle
 import typings.tuyaPanelKit.anon.DpId
 import typings.tuyaPanelKit.anon.OmitNavigationContainerPr
 import typings.tuyaPanelKit.mod.^
-import typings.tuyaPanelKit.stackTypesMod.StackNavigationOptions
 import typings.tuyaPanelKit.themeMod.GlobalTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

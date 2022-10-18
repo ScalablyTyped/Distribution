@@ -16,5 +16,5 @@ open class Session protected ()
     *     capabilities.
     * @constructor
     */
-  def this(id: String, capabilities: typings.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
+  def this(id: String, capabilities: typings.seleniumWebdriver.libCapabilitiesMod.Capabilities) = this()
 }

@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.dynamodbMod.TableName
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsDynamodbMod.TableName
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait DescribeTableInputwaiterW extends StObject {
   /**
     * The name of the table to describe.
     */
-  var TableName: typings.awsSdk.dynamodbMod.TableName
+  var TableName: typings.awsSdk.clientsDynamodbMod.TableName
 }
 object DescribeTableInputwaiterW {
   

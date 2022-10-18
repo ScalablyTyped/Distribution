@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides static properties of color frame sources. */
-@JSGlobal("Windows.Devices.Perception.KnownPerceptionColorFrameSourceProperties")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.KnownPerceptionColorFrameSourceProperties")
 @js.native
-abstract class KnownPerceptionColorFrameSourceProperties ()
+open class KnownPerceptionColorFrameSourceProperties ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.KnownPerceptionColorFrameSourceProperties
 object KnownPerceptionColorFrameSourceProperties {

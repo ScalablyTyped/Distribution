@@ -10,7 +10,7 @@ object Errors {
   @JSImport("postmark", "Errors.ApiInputError")
   @js.native
   open class ApiInputError protected ()
-    extends typings.postmark.errorsErrorsMod.ApiInputError {
+    extends typings.postmark.distClientErrorsErrorsMod.ApiInputError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   /* static members */
@@ -25,20 +25,20 @@ object Errors {
     def ERROR_CODES: InactiveRecipient = js.native
     inline def ERROR_CODES_=(x: InactiveRecipient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR_CODES")(x.asInstanceOf[js.Any])
     
-    inline def buildSpecificError(message: String, code: Double, statusCode: Double): typings.postmark.errorsErrorsMod.ApiInputError = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSpecificError")(message.asInstanceOf[js.Any], code.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[typings.postmark.errorsErrorsMod.ApiInputError]
+    inline def buildSpecificError(message: String, code: Double, statusCode: Double): typings.postmark.distClientErrorsErrorsMod.ApiInputError = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSpecificError")(message.asInstanceOf[js.Any], code.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[typings.postmark.distClientErrorsErrorsMod.ApiInputError]
   }
   
   @JSImport("postmark", "Errors.HttpError")
   @js.native
   open class HttpError protected ()
-    extends typings.postmark.errorsErrorsMod.HttpError {
+    extends typings.postmark.distClientErrorsErrorsMod.HttpError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   
   @JSImport("postmark", "Errors.InactiveRecipientsError")
   @js.native
   open class InactiveRecipientsError protected ()
-    extends typings.postmark.errorsErrorsMod.InactiveRecipientsError {
+    extends typings.postmark.distClientErrorsErrorsMod.InactiveRecipientsError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   /* static members */
@@ -59,28 +59,28 @@ object Errors {
   @JSImport("postmark", "Errors.InternalServerError")
   @js.native
   open class InternalServerError protected ()
-    extends typings.postmark.errorsErrorsMod.InternalServerError {
+    extends typings.postmark.distClientErrorsErrorsMod.InternalServerError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   
   @JSImport("postmark", "Errors.InvalidAPIKeyError")
   @js.native
   open class InvalidAPIKeyError protected ()
-    extends typings.postmark.errorsErrorsMod.InvalidAPIKeyError {
+    extends typings.postmark.distClientErrorsErrorsMod.InvalidAPIKeyError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   
   @JSImport("postmark", "Errors.InvalidEmailRequestError")
   @js.native
   open class InvalidEmailRequestError protected ()
-    extends typings.postmark.errorsErrorsMod.InvalidEmailRequestError {
+    extends typings.postmark.distClientErrorsErrorsMod.InvalidEmailRequestError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   
   @JSImport("postmark", "Errors.PostmarkError")
   @js.native
   open class PostmarkError protected ()
-    extends typings.postmark.errorsErrorsMod.PostmarkError {
+    extends typings.postmark.distClientErrorsErrorsMod.PostmarkError {
     def this(message: String) = this()
     def this(message: String, code: Double) = this()
     def this(message: String, code: Double, statusCode: Double) = this()
@@ -90,21 +90,21 @@ object Errors {
   @JSImport("postmark", "Errors.RateLimitExceededError")
   @js.native
   open class RateLimitExceededError protected ()
-    extends typings.postmark.errorsErrorsMod.RateLimitExceededError {
+    extends typings.postmark.distClientErrorsErrorsMod.RateLimitExceededError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   
   @JSImport("postmark", "Errors.ServiceUnavailablerError")
   @js.native
   open class ServiceUnavailablerError protected ()
-    extends typings.postmark.errorsErrorsMod.ServiceUnavailablerError {
+    extends typings.postmark.distClientErrorsErrorsMod.ServiceUnavailablerError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   
   @JSImport("postmark", "Errors.UnknownError")
   @js.native
   open class UnknownError protected ()
-    extends typings.postmark.errorsErrorsMod.UnknownError {
+    extends typings.postmark.distClientErrorsErrorsMod.UnknownError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
 }

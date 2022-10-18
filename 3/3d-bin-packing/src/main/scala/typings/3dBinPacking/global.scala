@@ -554,9 +554,9 @@ object global {
       *
       * @author Jeongho Nam <http://samchon.org>
       */
-    @JSGlobal("boxologic.Instance")
+    /* note: abstract class */ @JSGlobal("boxologic.Instance")
     @js.native
-    abstract class Instance protected ()
+    open class Instance protected ()
       extends StObject
          with typings.`3dBinPacking`.boxologic.Instance {
       /**

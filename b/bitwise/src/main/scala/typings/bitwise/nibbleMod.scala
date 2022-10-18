@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object nibbleMod {
   
-  @JSImport("bitwise/esm/nibble", JSImport.Namespace)
+  @JSImport("bitwise/nibble", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   object default {
     
-    @JSImport("bitwise/esm/nibble", JSImport.Default)
+    @JSImport("bitwise/nibble", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

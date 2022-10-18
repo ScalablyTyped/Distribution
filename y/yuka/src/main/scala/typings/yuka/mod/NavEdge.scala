@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [cost=-1] - The cost of this edge.
   */
 open class NavEdge ()
-  extends typings.yuka.yukaMod.NavEdge {
+  extends typings.yuka.srcYukaMod.NavEdge {
   def this(from: Double) = this()
   def this(from: Double, to: Double) = this()
   def this(from: Unit, to: Double) = this()

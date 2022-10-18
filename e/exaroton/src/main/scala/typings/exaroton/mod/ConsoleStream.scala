@@ -11,7 +11,7 @@ trait ConsoleStream extends Stream {
   
   /* private */ def ansiRegex(pattern: String): js.RegExp = js.native
   /* private */ def ansiRegex(pattern: String, flags: String): js.RegExp = js.native
-  /* standard es2015.core */
+  /* standard es5 */
   /* private */ def ansiRegex(pattern: js.RegExp): js.RegExp = js.native
   /* private */ def ansiRegex(pattern: js.RegExp, flags: String): js.RegExp = js.native
   /* private */ @JSName("ansiRegex")

@@ -3,11 +3,11 @@ package typings.semanticUiReact.mod
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.accordionAccordionAccordionMod.AccordionAccordionProps
-import typings.semanticUiReact.accordionAccordionMod.AccordionComponent
-import typings.semanticUiReact.accordionAccordionMod.AccordionProps
-import typings.semanticUiReact.accordionPanelMod.default
-import typings.semanticUiReact.accordionTitleMod.AccordionTitleProps
+import typings.semanticUiReact.distCommonjsModulesAccordionAccordionAccordionMod.AccordionAccordionProps
+import typings.semanticUiReact.distCommonjsModulesAccordionAccordionMod.AccordionComponent
+import typings.semanticUiReact.distCommonjsModulesAccordionAccordionMod.AccordionProps
+import typings.semanticUiReact.distCommonjsModulesAccordionAccordionPanelMod.default
+import typings.semanticUiReact.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

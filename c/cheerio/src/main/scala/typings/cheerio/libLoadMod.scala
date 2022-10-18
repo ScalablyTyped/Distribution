@@ -1,7 +1,7 @@
 package typings.cheerio
 
-import typings.cheerio.cheerioMod.Cheerio
 import typings.cheerio.cheerioStrings._empty
+import typings.cheerio.libCheerioMod.Cheerio
 import typings.cheerio.libOptionsMod.CheerioOptions
 import typings.cheerio.libOptionsMod.InternalOptions
 import typings.cheerio.libStaticMod.WritableArrayLike
@@ -9,7 +9,6 @@ import typings.cheerio.libTypesMod.BasicAcceptedElems
 import typings.domhandler.libNodeMod.AnyNode
 import typings.domhandler.libNodeMod.ParentNode
 import typings.domhandler.mod.Document
-import typings.domhandler.mod.Element
 import typings.node.bufferMod.global.Buffer
 import typings.std.ArrayLike
 import typings.std.ReturnType
@@ -76,57 +75,101 @@ object libLoadMod {
       *   contents of the document to query.
       * @param root - Optional HTML document string.
       */
-    def apply[T /* <: AnyNode */, S /* <: String */](): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Null, root: Unit, options: CheerioOptions): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Null, root: BasicAcceptedElems[Document]): Cheerio[T | Element] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Null, root: Unit, options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Null, root: BasicAcceptedElems[Document]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     def apply[T /* <: AnyNode */, S /* <: String */](
       selector: BasicAcceptedElems[T] | S,
       context: Null,
       root: BasicAcceptedElems[Document],
       options: CheerioOptions
-    ): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Unit, root: Unit, options: CheerioOptions): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Unit, root: BasicAcceptedElems[Document]): Cheerio[T | Element] = js.native
+    ): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Unit, root: Unit, options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Unit, root: BasicAcceptedElems[Document]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     def apply[T /* <: AnyNode */, S /* <: String */](
       selector: BasicAcceptedElems[T] | S,
       context: Unit,
       root: BasicAcceptedElems[Document],
       options: CheerioOptions
-    ): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: BasicAcceptedElems[AnyNode]): Cheerio[T | Element] = js.native
+    ): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: BasicAcceptedElems[AnyNode]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     def apply[T /* <: AnyNode */, S /* <: String */](
       selector: BasicAcceptedElems[T] | S,
       context: BasicAcceptedElems[AnyNode],
       root: Unit,
       options: CheerioOptions
-    ): Cheerio[T | Element] = js.native
+    ): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     def apply[T /* <: AnyNode */, S /* <: String */](
       selector: BasicAcceptedElems[T] | S,
       context: BasicAcceptedElems[AnyNode],
       root: BasicAcceptedElems[Document]
-    ): Cheerio[T | Element] = js.native
+    ): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     def apply[T /* <: AnyNode */, S /* <: String */](
       selector: BasicAcceptedElems[T] | S,
       context: BasicAcceptedElems[AnyNode],
       root: BasicAcceptedElems[Document],
       options: CheerioOptions
-    ): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Null, root: Unit, options: CheerioOptions): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Null, root: BasicAcceptedElems[Document]): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Null, root: BasicAcceptedElems[Document], options: CheerioOptions): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Unit, root: Unit, options: CheerioOptions): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Unit, root: BasicAcceptedElems[Document]): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Unit, root: BasicAcceptedElems[Document], options: CheerioOptions): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: BasicAcceptedElems[AnyNode]): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: BasicAcceptedElems[AnyNode], root: Unit, options: CheerioOptions): Cheerio[T | Element] = js.native
-    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: BasicAcceptedElems[AnyNode], root: BasicAcceptedElems[Document]): Cheerio[T | Element] = js.native
+    ): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Null, root: Unit, options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Null, root: BasicAcceptedElems[Document]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Null, root: BasicAcceptedElems[Document], options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Unit, root: Unit, options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Unit, root: BasicAcceptedElems[Document]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Unit, root: BasicAcceptedElems[Document], options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: BasicAcceptedElems[AnyNode]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: BasicAcceptedElems[AnyNode], root: Unit, options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
+    def apply[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: BasicAcceptedElems[AnyNode], root: BasicAcceptedElems[Document]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     def apply[T /* <: AnyNode */, S /* <: String */](
       selector: Unit,
       context: BasicAcceptedElems[AnyNode],
       root: BasicAcceptedElems[Document],
       options: CheerioOptions
-    ): Cheerio[T | Element] = js.native
+    ): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     
     /**
       * The options the document was originally loaded with.

@@ -1,8 +1,22 @@
 package typings.firebaseStorage
 
 import typings.firebaseApp.mod.FirebaseApp
+import typings.firebaseAppCheckInteropTypes.mod.AppCheckInternalComponentName
+import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
+import typings.firebaseComponent.mod.Provider
 import typings.firebaseStorage.anon.MockUserToken
+import typings.firebaseStorage.distSrcImplementationErrorMod.StorageError
+import typings.firebaseStorage.distSrcImplementationStringMod.StringData
+import typings.firebaseStorage.distSrcImplementationStringMod.StringFormat
 import typings.firebaseStorage.distSrcMetadataMod.Metadata
+import typings.firebaseStorage.distSrcPublicTypesMod.FirebaseStorage
+import typings.firebaseStorage.distSrcPublicTypesMod.FullMetadata
+import typings.firebaseStorage.distSrcPublicTypesMod.ListOptions
+import typings.firebaseStorage.distSrcPublicTypesMod.ListResult
+import typings.firebaseStorage.distSrcPublicTypesMod.SettableMetadata
+import typings.firebaseStorage.distSrcPublicTypesMod.StorageReference
+import typings.firebaseStorage.distSrcPublicTypesMod.UploadMetadata
+import typings.firebaseStorage.distSrcPublicTypesMod.UploadResult
 import typings.firebaseStorage.firebaseStorageStrings.base64
 import typings.firebaseStorage.firebaseStorageStrings.base64url
 import typings.firebaseStorage.firebaseStorageStrings.canceled
@@ -12,19 +26,8 @@ import typings.firebaseStorage.firebaseStorageStrings.paused
 import typings.firebaseStorage.firebaseStorageStrings.raw
 import typings.firebaseStorage.firebaseStorageStrings.running
 import typings.firebaseStorage.firebaseStorageStrings.success
-import typings.firebaseStorage.implementationErrorMod.StorageError
-import typings.firebaseStorage.implementationStringMod.StringData
-import typings.firebaseStorage.implementationStringMod.StringFormat
-import typings.firebaseStorage.srcPublicTypesMod.FirebaseStorage
-import typings.firebaseStorage.srcPublicTypesMod.FullMetadata
-import typings.firebaseStorage.srcPublicTypesMod.ListOptions
-import typings.firebaseStorage.srcPublicTypesMod.ListResult
-import typings.firebaseStorage.srcPublicTypesMod.SettableMetadata
-import typings.firebaseStorage.srcPublicTypesMod.StorageReference
-import typings.firebaseStorage.srcPublicTypesMod.UploadMetadata
-import typings.firebaseStorage.srcPublicTypesMod.UploadResult
+import typings.node.NodeJS.ReadableStream
 import typings.std.Blob
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +41,7 @@ object distSrcMod {
   @JSImport("@firebase/storage/dist/src", "_FbsBlob")
   @js.native
   open class FbsBlob protected ()
-    extends typings.firebaseStorage.srcApiMod.FbsBlob {
+    extends typings.firebaseStorage.distSrcApiMod.FbsBlob {
     def this(data: js.typedarray.ArrayBuffer) = this()
     def this(data: js.typedarray.Uint8Array) = this()
     def this(data: Blob) = this()
@@ -53,34 +56,34 @@ object distSrcMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getBlob(args: (String | typings.firebaseStorage.implementationBlobMod.FbsBlob)*): typings.firebaseStorage.implementationBlobMod.FbsBlob | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlob")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseStorage.implementationBlobMod.FbsBlob | Null]
+    inline def getBlob(args: (String | typings.firebaseStorage.distSrcImplementationBlobMod.FbsBlob)*): typings.firebaseStorage.distSrcImplementationBlobMod.FbsBlob | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlob")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseStorage.distSrcImplementationBlobMod.FbsBlob | Null]
   }
   
   @JSImport("@firebase/storage/dist/src", "_FirebaseStorageImpl")
   @js.native
   open class FirebaseStorageImpl protected ()
-    extends typings.firebaseStorage.srcApiMod.FirebaseStorageImpl {
+    extends typings.firebaseStorage.distSrcApiMod.FirebaseStorageImpl {
     def this(
       /**
       * FirebaseApp associated with this StorageService instance.
       */
     app: FirebaseApp,
-      _authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
+      _authProvider: Provider[FirebaseAuthInternalName],
       /**
       * @internal
       */
-    _appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any
+    _appCheckProvider: Provider[AppCheckInternalComponentName]
     ) = this()
     def this(
       /**
       * FirebaseApp associated with this StorageService instance.
       */
     app: FirebaseApp,
-      _authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
+      _authProvider: Provider[FirebaseAuthInternalName],
       /**
       * @internal
       */
-    _appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any,
+    _appCheckProvider: Provider[AppCheckInternalComponentName],
       /**
       * @internal
       */
@@ -91,11 +94,11 @@ object distSrcMod {
       * FirebaseApp associated with this StorageService instance.
       */
     app: FirebaseApp,
-      _authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
+      _authProvider: Provider[FirebaseAuthInternalName],
       /**
       * @internal
       */
-    _appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any,
+    _appCheckProvider: Provider[AppCheckInternalComponentName],
       /**
       * @internal
       */
@@ -107,11 +110,11 @@ object distSrcMod {
       * FirebaseApp associated with this StorageService instance.
       */
     app: FirebaseApp,
-      _authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
+      _authProvider: Provider[FirebaseAuthInternalName],
       /**
       * @internal
       */
-    _appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any,
+    _appCheckProvider: Provider[AppCheckInternalComponentName],
       /**
       * @internal
       */
@@ -123,7 +126,7 @@ object distSrcMod {
   @JSImport("@firebase/storage/dist/src", "_Location")
   @js.native
   open class Location protected ()
-    extends typings.firebaseStorage.srcApiMod.Location {
+    extends typings.firebaseStorage.distSrcApiMod.Location {
     def this(bucket: String, path: String) = this()
   }
   /* static members */
@@ -133,19 +136,19 @@ object distSrcMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def makeFromBucketSpec(bucketString: String, host: String): typings.firebaseStorage.implementationLocationMod.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromBucketSpec")(bucketString.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.implementationLocationMod.Location]
+    inline def makeFromBucketSpec(bucketString: String, host: String): typings.firebaseStorage.distSrcImplementationLocationMod.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromBucketSpec")(bucketString.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.distSrcImplementationLocationMod.Location]
     
-    inline def makeFromUrl(url: String, host: String): typings.firebaseStorage.implementationLocationMod.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromUrl")(url.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.implementationLocationMod.Location]
+    inline def makeFromUrl(url: String, host: String): typings.firebaseStorage.distSrcImplementationLocationMod.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromUrl")(url.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.distSrcImplementationLocationMod.Location]
   }
   
   @JSImport("@firebase/storage/dist/src", "_Reference")
   @js.native
   open class Reference protected ()
-    extends typings.firebaseStorage.srcApiMod.Reference {
-    def this(_service: typings.firebaseStorage.srcServiceMod.FirebaseStorageImpl, location: String) = this()
+    extends typings.firebaseStorage.distSrcApiMod.Reference {
+    def this(_service: typings.firebaseStorage.distSrcServiceMod.FirebaseStorageImpl, location: String) = this()
     def this(
-      _service: typings.firebaseStorage.srcServiceMod.FirebaseStorageImpl,
-      location: typings.firebaseStorage.implementationLocationMod.Location
+      _service: typings.firebaseStorage.distSrcServiceMod.FirebaseStorageImpl,
+      location: typings.firebaseStorage.distSrcImplementationLocationMod.Location
     ) = this()
   }
   
@@ -251,19 +254,19 @@ object distSrcMod {
   @JSImport("@firebase/storage/dist/src", "_UploadTask")
   @js.native
   open class UploadTask protected ()
-    extends typings.firebaseStorage.srcApiMod.UploadTask {
+    extends typings.firebaseStorage.distSrcApiMod.UploadTask {
     /**
       * @param ref - The firebaseStorage.Reference object this task came
       *     from, untyped to avoid cyclic dependencies.
       * @param blob - The blob to upload.
       */
     def this(
-      ref: typings.firebaseStorage.srcReferenceMod.Reference,
-      blob: typings.firebaseStorage.implementationBlobMod.FbsBlob
+      ref: typings.firebaseStorage.distSrcReferenceMod.Reference,
+      blob: typings.firebaseStorage.distSrcImplementationBlobMod.FbsBlob
     ) = this()
     def this(
-      ref: typings.firebaseStorage.srcReferenceMod.Reference,
-      blob: typings.firebaseStorage.implementationBlobMod.FbsBlob,
+      ref: typings.firebaseStorage.distSrcReferenceMod.Reference,
+      blob: typings.firebaseStorage.distSrcImplementationBlobMod.FbsBlob,
       metadata: Metadata
     ) = this()
   }
@@ -281,7 +284,7 @@ object distSrcMod {
   inline def getBytes(ref: StorageReference): js.Promise[js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBytes")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
   inline def getBytes(ref: StorageReference, maxDownloadSizeBytes: Double): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBytes")(ref.asInstanceOf[js.Any], maxDownloadSizeBytes.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
   
-  inline def getChild(ref: StorageReference, childPath: String): typings.firebaseStorage.srcReferenceMod.Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("_getChild")(ref.asInstanceOf[js.Any], childPath.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.srcReferenceMod.Reference]
+  inline def getChild(ref: StorageReference, childPath: String): typings.firebaseStorage.distSrcReferenceMod.Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("_getChild")(ref.asInstanceOf[js.Any], childPath.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.distSrcReferenceMod.Reference]
   
   inline def getDownloadURL(ref: StorageReference): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDownloadURL")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
@@ -292,8 +295,8 @@ object distSrcMod {
   inline def getStorage(app: FirebaseApp): FirebaseStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorage")(app.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorage]
   inline def getStorage(app: FirebaseApp, bucketUrl: String): FirebaseStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorage")(app.asInstanceOf[js.Any], bucketUrl.asInstanceOf[js.Any])).asInstanceOf[FirebaseStorage]
   
-  inline def getStream(ref: StorageReference): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(ref.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
-  inline def getStream(ref: StorageReference, maxDownloadSizeBytes: Double): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(ref.asInstanceOf[js.Any], maxDownloadSizeBytes.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def getStream(ref: StorageReference): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(ref.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def getStream(ref: StorageReference, maxDownloadSizeBytes: Double): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(ref.asInstanceOf[js.Any], maxDownloadSizeBytes.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
   inline def invalidArgument(message: String): StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("_invalidArgument")(message.asInstanceOf[js.Any]).asInstanceOf[StorageError]
   
@@ -318,34 +321,35 @@ object distSrcMod {
   inline def uploadBytes(ref: StorageReference, data: Blob): js.Promise[UploadResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytes")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UploadResult]]
   inline def uploadBytes(ref: StorageReference, data: Blob, metadata: UploadMetadata): js.Promise[UploadResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytes")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UploadResult]]
   
-  inline def uploadBytesResumable(ref: StorageReference, data: js.typedarray.ArrayBuffer): typings.firebaseStorage.srcPublicTypesMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.srcPublicTypesMod.UploadTask]
-  inline def uploadBytesResumable(ref: StorageReference, data: js.typedarray.ArrayBuffer, metadata: UploadMetadata): typings.firebaseStorage.srcPublicTypesMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.srcPublicTypesMod.UploadTask]
-  inline def uploadBytesResumable(ref: StorageReference, data: js.typedarray.Uint8Array): typings.firebaseStorage.srcPublicTypesMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.srcPublicTypesMod.UploadTask]
-  inline def uploadBytesResumable(ref: StorageReference, data: js.typedarray.Uint8Array, metadata: UploadMetadata): typings.firebaseStorage.srcPublicTypesMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.srcPublicTypesMod.UploadTask]
-  inline def uploadBytesResumable(ref: StorageReference, data: Blob): typings.firebaseStorage.srcPublicTypesMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.srcPublicTypesMod.UploadTask]
-  inline def uploadBytesResumable(ref: StorageReference, data: Blob, metadata: UploadMetadata): typings.firebaseStorage.srcPublicTypesMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.srcPublicTypesMod.UploadTask]
+  inline def uploadBytesResumable(ref: StorageReference, data: js.typedarray.ArrayBuffer): typings.firebaseStorage.distSrcPublicTypesMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.distSrcPublicTypesMod.UploadTask]
+  inline def uploadBytesResumable(ref: StorageReference, data: js.typedarray.ArrayBuffer, metadata: UploadMetadata): typings.firebaseStorage.distSrcPublicTypesMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.distSrcPublicTypesMod.UploadTask]
+  inline def uploadBytesResumable(ref: StorageReference, data: js.typedarray.Uint8Array): typings.firebaseStorage.distSrcPublicTypesMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.distSrcPublicTypesMod.UploadTask]
+  inline def uploadBytesResumable(ref: StorageReference, data: js.typedarray.Uint8Array, metadata: UploadMetadata): typings.firebaseStorage.distSrcPublicTypesMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.distSrcPublicTypesMod.UploadTask]
+  inline def uploadBytesResumable(ref: StorageReference, data: Blob): typings.firebaseStorage.distSrcPublicTypesMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.distSrcPublicTypesMod.UploadTask]
+  inline def uploadBytesResumable(ref: StorageReference, data: Blob, metadata: UploadMetadata): typings.firebaseStorage.distSrcPublicTypesMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.distSrcPublicTypesMod.UploadTask]
   
   inline def uploadString(ref: StorageReference, value: String): js.Promise[UploadResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadString")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UploadResult]]
   inline def uploadString(ref: StorageReference, value: String, format: Unit, metadata: UploadMetadata): js.Promise[UploadResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadString")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UploadResult]]
   inline def uploadString(ref: StorageReference, value: String, format: StringFormat): js.Promise[UploadResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadString")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UploadResult]]
   inline def uploadString(ref: StorageReference, value: String, format: StringFormat, metadata: UploadMetadata): js.Promise[UploadResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadString")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UploadResult]]
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {
       
-      var storage: typings.firebaseStorage.publicTypesMod.FirebaseStorage
+      var storage: FirebaseStorage
     }
     object NameServiceMapping {
       
-      inline def apply(storage: typings.firebaseStorage.publicTypesMod.FirebaseStorage): NameServiceMapping = {
+      inline def apply(storage: FirebaseStorage): NameServiceMapping = {
         val __obj = js.Dynamic.literal(storage = storage.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
       extension [Self <: NameServiceMapping](x: Self) {
         
-        inline def setStorage(value: typings.firebaseStorage.publicTypesMod.FirebaseStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+        inline def setStorage(value: FirebaseStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       }
     }
   }

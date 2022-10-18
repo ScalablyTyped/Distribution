@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "PageEvent")
 @js.native
 open class PageEvent[Model] protected ()
-  extends typings.typedoc.outputMod.PageEvent[Model] {
+  extends typings.typedoc.distLibOutputMod.PageEvent[Model] {
   /**
     * Create a new Event instance.
     */

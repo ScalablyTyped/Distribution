@@ -424,9 +424,9 @@ object global {
         * This key derivation function is meant to conform with EVP_BytesToKey.
         * www.openssl.org/docs/crypto/EVP_BytesToKey.html
         */
-      @JSGlobal("RNCryptoJS.algo.EvpKDF")
+      /* note: abstract class */ @JSGlobal("RNCryptoJS.algo.EvpKDF")
       @js.native
-      abstract class EvpKDF () extends StObject {
+      open class EvpKDF () extends StObject {
         
         def compute(password: String, salt: WordArray): WordArray = js.native
         /**
@@ -468,9 +468,9 @@ object global {
       /**
         * HMAC algorithm.
         */
-      @JSGlobal("RNCryptoJS.algo.HMAC")
+      /* note: abstract class */ @JSGlobal("RNCryptoJS.algo.HMAC")
       @js.native
-      abstract class HMAC () extends StObject {
+      open class HMAC () extends StObject {
         
         def finalize(messageUpdate: String): WordArray = js.native
         def finalize(messageUpdate: WordArray): WordArray = js.native
@@ -530,9 +530,9 @@ object global {
       /**
         * Password-Based Key Derivation Function 2 algorithm.
         */
-      @JSGlobal("RNCryptoJS.algo.PBKDF2")
+      /* note: abstract class */ @JSGlobal("RNCryptoJS.algo.PBKDF2")
       @js.native
-      abstract class PBKDF2 () extends StObject {
+      open class PBKDF2 () extends StObject {
         
         def compute(password: String, salt: WordArray): WordArray = js.native
         /**

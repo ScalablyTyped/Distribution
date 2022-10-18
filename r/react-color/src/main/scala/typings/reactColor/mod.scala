@@ -6,10 +6,10 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
-import typings.reactColor.alphaMod.default
 import typings.reactColor.anon.PartialClassesany
-import typings.reactColor.colorWrapMod.ExportedColorProps
-import typings.reactColor.colorWrapMod.InjectedColorProps
+import typings.reactColor.libComponentsAlphaAlphaMod.default
+import typings.reactColor.libComponentsCommonColorWrapMod.ExportedColorProps
+import typings.reactColor.libComponentsCommonColorWrapMod.InjectedColorProps
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,27 +28,27 @@ object mod {
   @JSImport("react-color", "BlockPicker")
   @js.native
   open class BlockPicker ()
-    extends typings.reactColor.blockMod.default
+    extends typings.reactColor.libComponentsBlockBlockMod.default
   
   @JSImport("react-color", "Checkboard")
   @js.native
   open class Checkboard ()
-    extends typings.reactColor.checkboardMod.default
+    extends typings.reactColor.libComponentsCommonCheckboardMod.default
   
   @JSImport("react-color", "ChromePicker")
   @js.native
   open class ChromePicker ()
-    extends typings.reactColor.chromeMod.default
+    extends typings.reactColor.libComponentsChromeChromeMod.default
   
   @JSImport("react-color", "CirclePicker")
   @js.native
   open class CirclePicker ()
-    extends typings.reactColor.circleMod.default
+    extends typings.reactColor.libComponentsCircleCircleMod.default
   
   @JSImport("react-color", "CompactPicker")
   @js.native
   open class CompactPicker ()
-    extends typings.reactColor.compactMod.default
+    extends typings.reactColor.libComponentsCompactCompactMod.default
   
   inline def CustomPicker[A](component: ComponentClass[A & InjectedColorProps, ComponentState]): ComponentClass[A & ExportedColorProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomPicker")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A & ExportedColorProps, ComponentState]]
   inline def CustomPicker[A](component: FunctionComponent[A & InjectedColorProps]): ComponentClass[A & ExportedColorProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomPicker")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A & ExportedColorProps, ComponentState]]
@@ -56,42 +56,42 @@ object mod {
   @JSImport("react-color", "GithubPicker")
   @js.native
   open class GithubPicker ()
-    extends typings.reactColor.githubMod.default
+    extends typings.reactColor.libComponentsGithubGithubMod.default
   
   @JSImport("react-color", "HuePicker")
   @js.native
   open class HuePicker ()
-    extends typings.reactColor.hueHueMod.default
+    extends typings.reactColor.libComponentsHueHueMod.default
   
   @JSImport("react-color", "MaterialPicker")
   @js.native
   open class MaterialPicker ()
-    extends typings.reactColor.materialMod.default
+    extends typings.reactColor.libComponentsMaterialMaterialMod.default
   
   @JSImport("react-color", "PhotoshopPicker")
   @js.native
   open class PhotoshopPicker ()
-    extends typings.reactColor.photoshopMod.default
+    extends typings.reactColor.libComponentsPhotoshopPhotoshopMod.default
   
   @JSImport("react-color", "SketchPicker")
   @js.native
   open class SketchPicker ()
-    extends typings.reactColor.sketchMod.default
+    extends typings.reactColor.libComponentsSketchSketchMod.default
   
   @JSImport("react-color", "SliderPicker")
   @js.native
   open class SliderPicker ()
-    extends typings.reactColor.sliderMod.default
+    extends typings.reactColor.libComponentsSliderSliderMod.default
   
   @JSImport("react-color", "SwatchesPicker")
   @js.native
   open class SwatchesPicker ()
-    extends typings.reactColor.swatchesMod.default
+    extends typings.reactColor.libComponentsSwatchesSwatchesMod.default
   
   @JSImport("react-color", "TwitterPicker")
   @js.native
   open class TwitterPicker ()
-    extends typings.reactColor.twitterMod.default
+    extends typings.reactColor.libComponentsTwitterTwitterMod.default
   
   /* Rewritten from type alias, can be one of: 
     - java.lang.String

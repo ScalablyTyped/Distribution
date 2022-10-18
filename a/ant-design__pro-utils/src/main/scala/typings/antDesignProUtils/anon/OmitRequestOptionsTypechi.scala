@@ -2,7 +2,7 @@ package typings.antDesignProUtils.anon
 
 import typings.antDesignProUtils.antDesignProUtilsStrings.children
 import typings.antDesignProUtils.antDesignProUtilsStrings.optionType
-import typings.antDesignProUtils.typingMod.RequestOptionsType
+import typings.antDesignProUtils.esTypingMod.RequestOptionsType
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactText
 import typings.std.Omit

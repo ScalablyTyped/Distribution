@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the ErrorOccurred event. */
-@JSGlobal("Windows.Devices.PointOfService.BarcodeScannerErrorOccurredEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.BarcodeScannerErrorOccurredEventArgs")
 @js.native
-abstract class BarcodeScannerErrorOccurredEventArgs ()
+open class BarcodeScannerErrorOccurredEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.BarcodeScannerErrorOccurredEventArgs {
   

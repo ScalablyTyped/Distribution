@@ -6,6 +6,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * A transform described by a position and orientation. When interpreting an
+  * XRRigidTransform the orientation is always applied prior to the position.
+  *
+  * ref: https://immersive-web.github.io/webxr/#xrrigidtransform-interface
+  */
 @JSGlobal("XRRigidTransform")
 @js.native
 open class XRRigidTransform ()
@@ -16,14 +22,14 @@ open class XRRigidTransform ()
   def this(position: DOMPointInit, direction: DOMPointInit) = this()
   
   /* CompleteClass */
-  var inverse: typings.babylonjs.XRRigidTransform = js.native
+  override val inverse: typings.babylonjs.XRRigidTransform = js.native
   
   /* CompleteClass */
-  var matrix: js.typedarray.Float32Array = js.native
+  override val matrix: js.typedarray.Float32Array = js.native
   
   /* CompleteClass */
-  var orientation: DOMPointReadOnly = js.native
+  override val orientation: DOMPointReadOnly = js.native
   
   /* CompleteClass */
-  var position: DOMPointReadOnly = js.native
+  override val position: DOMPointReadOnly = js.native
 }

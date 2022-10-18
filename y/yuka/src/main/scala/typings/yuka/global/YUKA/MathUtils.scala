@@ -25,9 +25,9 @@ object MathUtils {
     * @return The signed area.
     */
   inline def area(
-    a: typings.yuka.vector3Mod.Vector3,
-    b: typings.yuka.vector3Mod.Vector3,
-    c: typings.yuka.vector3Mod.Vector3
+    a: typings.yuka.srcMathVector3Mod.Vector3,
+    b: typings.yuka.srcMathVector3Mod.Vector3,
+    c: typings.yuka.srcMathVector3Mod.Vector3
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**

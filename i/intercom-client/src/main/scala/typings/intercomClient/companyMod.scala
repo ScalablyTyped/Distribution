@@ -1,7 +1,7 @@
 package typings.intercomClient
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.intercomClient.anon.Name
+import typings.intercomClient.anon.Id
 import typings.intercomClient.anon.Next
 import typings.intercomClient.intercomClientStrings.company
 import typings.intercomClient.intercomClientStrings.companyDotlist
@@ -29,7 +29,7 @@ object companyMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var plan: js.UndefOr[String | Name] = js.undefined
+    var plan: js.UndefOr[String | Id] = js.undefined
     
     var remote_created_at: js.UndefOr[Double] = js.undefined
     
@@ -83,7 +83,7 @@ object companyMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setPlan(value: String | Name): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: String | Id): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
       inline def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
       
@@ -114,7 +114,7 @@ object companyMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.intercomClient.anon.Id
+    - typings.intercomClient.anon.IdString
     - typings.intercomClient.anon.Companyid
   */
   trait CompanyIdentifier extends StObject
@@ -125,9 +125,9 @@ object companyMod {
       __obj.asInstanceOf[typings.intercomClient.anon.Companyid]
     }
     
-    inline def Id(id: String): typings.intercomClient.anon.Id = {
+    inline def IdString(id: String): typings.intercomClient.anon.IdString = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.intercomClient.anon.Id]
+      __obj.asInstanceOf[typings.intercomClient.anon.IdString]
     }
   }
   

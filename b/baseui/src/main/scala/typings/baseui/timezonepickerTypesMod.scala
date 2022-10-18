@@ -1,7 +1,7 @@
 package typings.baseui
 
+import typings.baseui.helpersOverridesMod.Override
 import typings.baseui.inputTypesMod.Size
-import typings.baseui.overridesMod.Override
 import typings.baseui.selectTypesMod.Option
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

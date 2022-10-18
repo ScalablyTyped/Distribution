@@ -1,8 +1,8 @@
 package typings.reactNativeModal
 
-import typings.reactNativeModal.typesMod.Direction
-import typings.reactNativeModal.typesMod.Orientation
-import typings.reactNativeModal.typesMod.PresentationStyle
+import typings.reactNativeModal.distTypesMod.Direction
+import typings.reactNativeModal.distTypesMod.Orientation
+import typings.reactNativeModal.distTypesMod.PresentationStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

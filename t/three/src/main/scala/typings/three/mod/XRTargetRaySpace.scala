@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "XRTargetRaySpace")
 @js.native
 open class XRTargetRaySpace ()
-  extends typings.three.threeMod.XRTargetRaySpace
+  extends typings.three.srcThreeMod.XRTargetRaySpace

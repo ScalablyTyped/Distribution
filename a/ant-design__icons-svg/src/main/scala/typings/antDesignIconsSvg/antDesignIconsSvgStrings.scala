@@ -1,7 +1,7 @@
 package typings.antDesignIconsSvg
 
-import typings.antDesignIconsSvg.typesMod.ThemeType
-import typings.antDesignIconsSvg.typesMod.ThemeTypeUpperCase
+import typings.antDesignIconsSvg.libTypesMod.ThemeType
+import typings.antDesignIconsSvg.libTypesMod.ThemeTypeUpperCase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

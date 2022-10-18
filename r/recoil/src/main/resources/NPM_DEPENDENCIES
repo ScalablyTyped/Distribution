@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "recoil" : "0.7.5"
+      "recoil" : "0.7.6"
     }
   ],
   "test-dependencies" : [
     {
-      "recoil" : "0.7.5"
+      "recoil" : "0.7.6"
     }
   ],
   "compile-devDependencies" : [

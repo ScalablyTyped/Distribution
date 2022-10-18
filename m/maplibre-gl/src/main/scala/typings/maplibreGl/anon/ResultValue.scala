@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResultValue[E]
   extends StObject
-     with typings.maplibreGl.styleSpecMod.Result[Any, E] {
+     with typings.maplibreGl.distStyleSpecMod.Result[Any, E] {
   
   var result: error
   

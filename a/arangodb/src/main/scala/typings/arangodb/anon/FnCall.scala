@@ -1,7 +1,7 @@
 package typings.arangodb.anon
 
-import typings.arangodb.arangodbRequestMod.RequestOptions
-import typings.arangodb.arangodbRequestMod.Response
+import typings.arangodb.requestMod.RequestOptions
+import typings.arangodb.requestMod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

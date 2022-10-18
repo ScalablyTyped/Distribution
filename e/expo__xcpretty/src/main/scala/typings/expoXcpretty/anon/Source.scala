@@ -1,6 +1,6 @@
 package typings.expoXcpretty.anon
 
-import typings.expoXcpretty.parsePodfileLockMod.ExternalSource
+import typings.expoXcpretty.buildUtilsParsePodfileLockMod.ExternalSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

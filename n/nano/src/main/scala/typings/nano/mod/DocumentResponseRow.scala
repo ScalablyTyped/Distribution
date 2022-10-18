@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Bulk API per-document response with document body. */
 trait DocumentResponseRow[D]
   extends StObject
      with DocumentResponseRowMeta {

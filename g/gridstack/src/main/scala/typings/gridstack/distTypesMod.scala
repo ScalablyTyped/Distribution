@@ -20,9 +20,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesMod {
   
-  @JSImport("gridstack/dist/types", "GridDefaults")
+  @JSImport("gridstack/dist/types", "dragInDefaultOptions")
   @js.native
-  val GridDefaults: GridStackOptions = js.native
+  val dragInDefaultOptions: DDDragInOpt = js.native
+  
+  @JSImport("gridstack/dist/types", "gridDefaults")
+  @js.native
+  val gridDefaults: GridStackOptions = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.gridstack.gridstackStrings.moveScale
@@ -48,7 +52,6 @@ object distTypesMod {
     extends StObject
        with DDDragOpt {
     
-    /** used when dragging item from the outside, and canceling (ex: 'invalid' or your own method)*/
     /** helper function when dropping (ex: 'clone' or your own method) */
     var helper: js.UndefOr[String | (js.Function1[/* event */ Event, HTMLElement])] = js.undefined
   }
@@ -76,6 +79,9 @@ object distTypesMod {
     
     /** class selector of items that can be dragged. default to '.grid-stack-item-content' */
     var handle: js.UndefOr[String] = js.undefined
+    
+    /** if set (true | msec), dragging placement (collision) will only happen after a pause by the user. Note: this is Global */
+    var pause: js.UndefOr[Boolean | Double] = js.undefined
   }
   object DDDragOpt {
     
@@ -93,6 +99,10 @@ object distTypesMod {
       inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
       inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+      
+      inline def setPause(value: Boolean | Double): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      
+      inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
     }
   }
   
@@ -391,15 +401,6 @@ object distTypesMod {
     /** disallows resizing of widgets (default?: false). */
     var disableResize: js.UndefOr[Boolean] = js.undefined
     
-    /** allows to drag external items using this selector - see dragInOptions. (default: undefined) */
-    var dragIn: js.UndefOr[String] = js.undefined
-    
-    /** allows to drag external items using these options. See `GridStack.setupDragIn()` instead (not per grid really).
-      * (default?: { handle: '.grid-stack-item-content', appendTo: 'body' })
-      * helper can be 'clone' or your own function (set what the drag/dropped item will be instead)
-      */
-    var dragInOptions: js.UndefOr[DDDragInOpt] = js.undefined
-    
     /** allows to override UI draggable options. (default?: { handle?: '.grid-stack-item-content', appendTo?: 'body' }) */
     var draggable: js.UndefOr[DDDragOpt] = js.undefined
     
@@ -497,6 +498,13 @@ object distTypesMod {
     
     /** if `true` will add style element to `<head>` otherwise will add it to element's parent node (default `false`). */
     var styleInHead: js.UndefOr[Boolean] = js.undefined
+    
+    /** list of differences in options for automatically created sub-grids under us */
+    var subGrid: js.UndefOr[GridStackOptions] = js.undefined
+    
+    /** enable/disable the creation of sub-grids on the fly by dragging items completely
+      * over others (nest) vs partially (push). Forces `DDDragOpt.pause=true` to accomplish that. */
+    var subGridDynamic: js.UndefOr[Boolean] = js.undefined
   }
   object GridStackOptions {
     
@@ -562,14 +570,6 @@ object distTypesMod {
       inline def setDisableResize(value: Boolean): Self = StObject.set(x, "disableResize", value.asInstanceOf[js.Any])
       
       inline def setDisableResizeUndefined: Self = StObject.set(x, "disableResize", js.undefined)
-      
-      inline def setDragIn(value: String): Self = StObject.set(x, "dragIn", value.asInstanceOf[js.Any])
-      
-      inline def setDragInOptions(value: DDDragInOpt): Self = StObject.set(x, "dragInOptions", value.asInstanceOf[js.Any])
-      
-      inline def setDragInOptionsUndefined: Self = StObject.set(x, "dragInOptions", js.undefined)
-      
-      inline def setDragInUndefined: Self = StObject.set(x, "dragIn", js.undefined)
       
       inline def setDraggable(value: DDDragOpt): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
@@ -674,6 +674,14 @@ object distTypesMod {
       inline def setStyleInHead(value: Boolean): Self = StObject.set(x, "styleInHead", value.asInstanceOf[js.Any])
       
       inline def setStyleInHeadUndefined: Self = StObject.set(x, "styleInHead", js.undefined)
+      
+      inline def setSubGrid(value: GridStackOptions): Self = StObject.set(x, "subGrid", value.asInstanceOf[js.Any])
+      
+      inline def setSubGridDynamic(value: Boolean): Self = StObject.set(x, "subGridDynamic", value.asInstanceOf[js.Any])
+      
+      inline def setSubGridDynamicUndefined: Self = StObject.set(x, "subGridDynamic", js.undefined)
+      
+      inline def setSubGridUndefined: Self = StObject.set(x, "subGrid", js.undefined)
     }
   }
   

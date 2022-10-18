@@ -1,6 +1,7 @@
 package typings.hapiHapi.mod
 
 import typings.hapiShot.anon.Req
+import typings.node.NodeJS.Dict
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.OutgoingHttpHeaders
 import org.scalablytyped.runtime.StObject
@@ -32,7 +33,7 @@ object ServerInjectResponse {
     request: Request,
     statusCode: Double,
     statusMessage: String,
-    trailers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any
+    trailers: Dict[String]
   ): ServerInjectResponse = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], rawPayload = rawPayload.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any], trailers = trailers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerInjectResponse]

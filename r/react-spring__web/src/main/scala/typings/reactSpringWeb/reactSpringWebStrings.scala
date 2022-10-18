@@ -1,24 +1,12 @@
 package typings.reactSpringWeb
 
-import typings.reactSpringWeb.animatedMod.StylePropKeys
-import typings.reactSpringWeb.primitivesMod.Primitives_
+import typings.reactSpringWeb.distDeclarationsSrcAnimatedMod.StylePropKeys
+import typings.reactSpringWeb.distDeclarationsSrcPrimitivesMod.Primitives_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactSpringWebStrings {
-  
-  @js.native
-  sealed trait AnimatedObject extends StObject
-  inline def AnimatedObject: AnimatedObject = "AnimatedObject".asInstanceOf[AnimatedObject]
-  
-  @js.native
-  sealed trait AnimatedProps extends StObject
-  inline def AnimatedProps: AnimatedProps = "AnimatedProps".asInstanceOf[AnimatedProps]
-  
-  @js.native
-  sealed trait AnimatedStyles extends StObject
-  inline def AnimatedStyles: AnimatedStyles = "AnimatedStyles".asInstanceOf[AnimatedStyles]
   
   @js.native
   sealed trait KhtmlBoxAlign

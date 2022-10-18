@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "VideoNullDriver")
 @js.native
 open class VideoNullDriver protected ()
-  extends typings.blackEngine.videoNullDriverMod.VideoNullDriver {
+  extends typings.blackEngine.driversVideoNullDriverMod.VideoNullDriver {
   def this(containerElement: HTMLElement, width: Double, height: Double) = this()
 }
 object VideoNullDriver {
   
   @JSImport("black-engine", "VideoNullDriver.sessionPool")
   @js.native
-  val sessionPool: typings.blackEngine.objectPoolMod.ObjectPool = js.native
+  val sessionPool: typings.blackEngine.utilsObjectPoolMod.ObjectPool = js.native
 }

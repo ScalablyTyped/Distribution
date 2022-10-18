@@ -19,7 +19,7 @@ import typings.adhan.adhanStrings.shafi
 import typings.adhan.adhanStrings.sunrise
 import typings.adhan.adhanStrings.twilightangle
 import typings.adhan.adhanStrings.up
-import typings.adhan.coordinatesMod.default
+import typings.adhan.libTypesCoordinatesMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,20 +119,20 @@ object anon {
     
     var date: js.Date
     
-    var solarTime: typings.adhan.solarTimeMod.default
+    var solarTime: typings.adhan.libTypesSolarTimeMod.default
     
     var tomorrow: js.Date
     
-    var tomorrowSolarTime: typings.adhan.solarTimeMod.default
+    var tomorrowSolarTime: typings.adhan.libTypesSolarTimeMod.default
   }
   object Coordinates {
     
     inline def apply(
       coordinates: default,
       date: js.Date,
-      solarTime: typings.adhan.solarTimeMod.default,
+      solarTime: typings.adhan.libTypesSolarTimeMod.default,
       tomorrow: js.Date,
-      tomorrowSolarTime: typings.adhan.solarTimeMod.default
+      tomorrowSolarTime: typings.adhan.libTypesSolarTimeMod.default
     ): Coordinates = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], solarTime = solarTime.asInstanceOf[js.Any], tomorrow = tomorrow.asInstanceOf[js.Any], tomorrowSolarTime = tomorrowSolarTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[Coordinates]
@@ -144,11 +144,11 @@ object anon {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      inline def setSolarTime(value: typings.adhan.solarTimeMod.default): Self = StObject.set(x, "solarTime", value.asInstanceOf[js.Any])
+      inline def setSolarTime(value: typings.adhan.libTypesSolarTimeMod.default): Self = StObject.set(x, "solarTime", value.asInstanceOf[js.Any])
       
       inline def setTomorrow(value: js.Date): Self = StObject.set(x, "tomorrow", value.asInstanceOf[js.Any])
       
-      inline def setTomorrowSolarTime(value: typings.adhan.solarTimeMod.default): Self = StObject.set(x, "tomorrowSolarTime", value.asInstanceOf[js.Any])
+      inline def setTomorrowSolarTime(value: typings.adhan.libTypesSolarTimeMod.default): Self = StObject.set(x, "tomorrowSolarTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,48 +195,48 @@ object anon {
   
   trait Dubai extends StObject {
     
-    def Dubai(): typings.adhan.calculationParametersMod.default
+    def Dubai(): typings.adhan.libTypesCalculationParametersMod.default
     
-    def Egyptian(): typings.adhan.calculationParametersMod.default
+    def Egyptian(): typings.adhan.libTypesCalculationParametersMod.default
     
-    def Karachi(): typings.adhan.calculationParametersMod.default
+    def Karachi(): typings.adhan.libTypesCalculationParametersMod.default
     
-    def Kuwait(): typings.adhan.calculationParametersMod.default
+    def Kuwait(): typings.adhan.libTypesCalculationParametersMod.default
     
-    def MoonsightingCommittee(): typings.adhan.calculationParametersMod.default
+    def MoonsightingCommittee(): typings.adhan.libTypesCalculationParametersMod.default
     
-    def MuslimWorldLeague(): typings.adhan.calculationParametersMod.default
+    def MuslimWorldLeague(): typings.adhan.libTypesCalculationParametersMod.default
     
-    def NorthAmerica(): typings.adhan.calculationParametersMod.default
+    def NorthAmerica(): typings.adhan.libTypesCalculationParametersMod.default
     
-    def Other(): typings.adhan.calculationParametersMod.default
+    def Other(): typings.adhan.libTypesCalculationParametersMod.default
     
-    def Qatar(): typings.adhan.calculationParametersMod.default
+    def Qatar(): typings.adhan.libTypesCalculationParametersMod.default
     
-    def Singapore(): typings.adhan.calculationParametersMod.default
+    def Singapore(): typings.adhan.libTypesCalculationParametersMod.default
     
-    def Tehran(): typings.adhan.calculationParametersMod.default
+    def Tehran(): typings.adhan.libTypesCalculationParametersMod.default
     
-    def Turkey(): typings.adhan.calculationParametersMod.default
+    def Turkey(): typings.adhan.libTypesCalculationParametersMod.default
     
-    def UmmAlQura(): typings.adhan.calculationParametersMod.default
+    def UmmAlQura(): typings.adhan.libTypesCalculationParametersMod.default
   }
   object Dubai {
     
     inline def apply(
-      Dubai: () => typings.adhan.calculationParametersMod.default,
-      Egyptian: () => typings.adhan.calculationParametersMod.default,
-      Karachi: () => typings.adhan.calculationParametersMod.default,
-      Kuwait: () => typings.adhan.calculationParametersMod.default,
-      MoonsightingCommittee: () => typings.adhan.calculationParametersMod.default,
-      MuslimWorldLeague: () => typings.adhan.calculationParametersMod.default,
-      NorthAmerica: () => typings.adhan.calculationParametersMod.default,
-      Other: () => typings.adhan.calculationParametersMod.default,
-      Qatar: () => typings.adhan.calculationParametersMod.default,
-      Singapore: () => typings.adhan.calculationParametersMod.default,
-      Tehran: () => typings.adhan.calculationParametersMod.default,
-      Turkey: () => typings.adhan.calculationParametersMod.default,
-      UmmAlQura: () => typings.adhan.calculationParametersMod.default
+      Dubai: () => typings.adhan.libTypesCalculationParametersMod.default,
+      Egyptian: () => typings.adhan.libTypesCalculationParametersMod.default,
+      Karachi: () => typings.adhan.libTypesCalculationParametersMod.default,
+      Kuwait: () => typings.adhan.libTypesCalculationParametersMod.default,
+      MoonsightingCommittee: () => typings.adhan.libTypesCalculationParametersMod.default,
+      MuslimWorldLeague: () => typings.adhan.libTypesCalculationParametersMod.default,
+      NorthAmerica: () => typings.adhan.libTypesCalculationParametersMod.default,
+      Other: () => typings.adhan.libTypesCalculationParametersMod.default,
+      Qatar: () => typings.adhan.libTypesCalculationParametersMod.default,
+      Singapore: () => typings.adhan.libTypesCalculationParametersMod.default,
+      Tehran: () => typings.adhan.libTypesCalculationParametersMod.default,
+      Turkey: () => typings.adhan.libTypesCalculationParametersMod.default,
+      UmmAlQura: () => typings.adhan.libTypesCalculationParametersMod.default
     ): Dubai = {
       val __obj = js.Dynamic.literal(Dubai = js.Any.fromFunction0(Dubai), Egyptian = js.Any.fromFunction0(Egyptian), Karachi = js.Any.fromFunction0(Karachi), Kuwait = js.Any.fromFunction0(Kuwait), MoonsightingCommittee = js.Any.fromFunction0(MoonsightingCommittee), MuslimWorldLeague = js.Any.fromFunction0(MuslimWorldLeague), NorthAmerica = js.Any.fromFunction0(NorthAmerica), Other = js.Any.fromFunction0(Other), Qatar = js.Any.fromFunction0(Qatar), Singapore = js.Any.fromFunction0(Singapore), Tehran = js.Any.fromFunction0(Tehran), Turkey = js.Any.fromFunction0(Turkey), UmmAlQura = js.Any.fromFunction0(UmmAlQura))
       __obj.asInstanceOf[Dubai]
@@ -244,31 +244,31 @@ object anon {
     
     extension [Self <: Dubai](x: Self) {
       
-      inline def setDubai(value: () => typings.adhan.calculationParametersMod.default): Self = StObject.set(x, "Dubai", js.Any.fromFunction0(value))
+      inline def setDubai(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "Dubai", js.Any.fromFunction0(value))
       
-      inline def setEgyptian(value: () => typings.adhan.calculationParametersMod.default): Self = StObject.set(x, "Egyptian", js.Any.fromFunction0(value))
+      inline def setEgyptian(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "Egyptian", js.Any.fromFunction0(value))
       
-      inline def setKarachi(value: () => typings.adhan.calculationParametersMod.default): Self = StObject.set(x, "Karachi", js.Any.fromFunction0(value))
+      inline def setKarachi(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "Karachi", js.Any.fromFunction0(value))
       
-      inline def setKuwait(value: () => typings.adhan.calculationParametersMod.default): Self = StObject.set(x, "Kuwait", js.Any.fromFunction0(value))
+      inline def setKuwait(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "Kuwait", js.Any.fromFunction0(value))
       
-      inline def setMoonsightingCommittee(value: () => typings.adhan.calculationParametersMod.default): Self = StObject.set(x, "MoonsightingCommittee", js.Any.fromFunction0(value))
+      inline def setMoonsightingCommittee(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "MoonsightingCommittee", js.Any.fromFunction0(value))
       
-      inline def setMuslimWorldLeague(value: () => typings.adhan.calculationParametersMod.default): Self = StObject.set(x, "MuslimWorldLeague", js.Any.fromFunction0(value))
+      inline def setMuslimWorldLeague(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "MuslimWorldLeague", js.Any.fromFunction0(value))
       
-      inline def setNorthAmerica(value: () => typings.adhan.calculationParametersMod.default): Self = StObject.set(x, "NorthAmerica", js.Any.fromFunction0(value))
+      inline def setNorthAmerica(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "NorthAmerica", js.Any.fromFunction0(value))
       
-      inline def setOther(value: () => typings.adhan.calculationParametersMod.default): Self = StObject.set(x, "Other", js.Any.fromFunction0(value))
+      inline def setOther(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "Other", js.Any.fromFunction0(value))
       
-      inline def setQatar(value: () => typings.adhan.calculationParametersMod.default): Self = StObject.set(x, "Qatar", js.Any.fromFunction0(value))
+      inline def setQatar(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "Qatar", js.Any.fromFunction0(value))
       
-      inline def setSingapore(value: () => typings.adhan.calculationParametersMod.default): Self = StObject.set(x, "Singapore", js.Any.fromFunction0(value))
+      inline def setSingapore(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "Singapore", js.Any.fromFunction0(value))
       
-      inline def setTehran(value: () => typings.adhan.calculationParametersMod.default): Self = StObject.set(x, "Tehran", js.Any.fromFunction0(value))
+      inline def setTehran(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "Tehran", js.Any.fromFunction0(value))
       
-      inline def setTurkey(value: () => typings.adhan.calculationParametersMod.default): Self = StObject.set(x, "Turkey", js.Any.fromFunction0(value))
+      inline def setTurkey(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "Turkey", js.Any.fromFunction0(value))
       
-      inline def setUmmAlQura(value: () => typings.adhan.calculationParametersMod.default): Self = StObject.set(x, "UmmAlQura", js.Any.fromFunction0(value))
+      inline def setUmmAlQura(value: () => typings.adhan.libTypesCalculationParametersMod.default): Self = StObject.set(x, "UmmAlQura", js.Any.fromFunction0(value))
     }
   }
   

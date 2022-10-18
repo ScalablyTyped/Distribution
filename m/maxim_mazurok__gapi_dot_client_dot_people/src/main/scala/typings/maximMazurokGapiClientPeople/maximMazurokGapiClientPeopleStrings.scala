@@ -7,18 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientPeopleStrings {
   
   @js.native
-  sealed trait BatchUpdateContactsRequest extends StObject
-  inline def BatchUpdateContactsRequest: BatchUpdateContactsRequest = "BatchUpdateContactsRequest".asInstanceOf[BatchUpdateContactsRequest]
-  
-  @js.native
-  sealed trait BatchUpdateContactsResponse extends StObject
-  inline def BatchUpdateContactsResponse: BatchUpdateContactsResponse = "BatchUpdateContactsResponse".asInstanceOf[BatchUpdateContactsResponse]
-  
-  @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
   sealed trait people extends StObject
   inline def people: people = "people".asInstanceOf[people]
   

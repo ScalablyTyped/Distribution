@@ -14,8 +14,8 @@ open class VideoRecorder protected ()
     * @param engine Defines the BabylonJS Engine you wish to record.
     * @param options Defines options that can be used to customize the capture.
     */
-  def this(engine: typings.babylonjs.engineMod.Engine) = this()
-  def this(engine: typings.babylonjs.engineMod.Engine, options: PartialVideoRecorderOptio) = this()
+  def this(engine: typings.babylonjs.enginesEngineMod.Engine) = this()
+  def this(engine: typings.babylonjs.enginesEngineMod.Engine, options: PartialVideoRecorderOptio) = this()
 }
 /* static members */
 object VideoRecorder {
@@ -29,7 +29,7 @@ object VideoRecorder {
     * @param engine Defines the Babylon Engine.
     * @returns true if supported otherwise false.
     */
-  inline def IsSupported(engine: typings.babylonjs.engineMod.Engine): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSupported")(engine.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def IsSupported(engine: typings.babylonjs.enginesEngineMod.Engine): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSupported")(engine.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("babylonjs/index", "VideoRecorder._DefaultOptions")
   @js.native

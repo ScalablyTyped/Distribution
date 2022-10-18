@@ -5,7 +5,7 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRoute
-import typings.reactNavigationDrawer.typesMod.DrawerItem
+import typings.reactNavigationDrawer.libTypescriptSrcTypesMod.DrawerItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
 An editor selection holds one or more selection ranges.
 */
-@JSImport("@codemirror/state", "EditorSelection")
 @js.native
-/* private */ open class EditorSelection () extends StObject {
+trait EditorSelection extends StObject {
   
   /**
     Extend this selection with an extra range.
@@ -66,52 +65,4 @@ An editor selection holds one or more selection ranges.
     JSON.
     */
   def toJSON(): Any = js.native
-}
-object EditorSelection {
-  
-  @JSImport("@codemirror/state", "EditorSelection")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    Sort and merge the given set of ranges, creating a valid
-    selection.
-    */
-  /* static member */
-  inline def create(ranges: js.Array[SelectionRange]): EditorSelection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(ranges.asInstanceOf[js.Any]).asInstanceOf[EditorSelection]
-  inline def create(ranges: js.Array[SelectionRange], mainIndex: Double): EditorSelection = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(ranges.asInstanceOf[js.Any], mainIndex.asInstanceOf[js.Any])).asInstanceOf[EditorSelection]
-  
-  /**
-    Create a cursor selection range at the given position. You can
-    safely ignore the optional arguments in most situations.
-    */
-  /* static member */
-  inline def cursor(pos: Double): SelectionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("cursor")(pos.asInstanceOf[js.Any]).asInstanceOf[SelectionRange]
-  inline def cursor(pos: Double, assoc: Double): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("cursor")(pos.asInstanceOf[js.Any], assoc.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
-  inline def cursor(pos: Double, assoc: Double, bidiLevel: Double): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("cursor")(pos.asInstanceOf[js.Any], assoc.asInstanceOf[js.Any], bidiLevel.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
-  inline def cursor(pos: Double, assoc: Double, bidiLevel: Double, goalColumn: Double): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("cursor")(pos.asInstanceOf[js.Any], assoc.asInstanceOf[js.Any], bidiLevel.asInstanceOf[js.Any], goalColumn.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
-  inline def cursor(pos: Double, assoc: Double, bidiLevel: Unit, goalColumn: Double): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("cursor")(pos.asInstanceOf[js.Any], assoc.asInstanceOf[js.Any], bidiLevel.asInstanceOf[js.Any], goalColumn.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
-  inline def cursor(pos: Double, assoc: Unit, bidiLevel: Double): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("cursor")(pos.asInstanceOf[js.Any], assoc.asInstanceOf[js.Any], bidiLevel.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
-  inline def cursor(pos: Double, assoc: Unit, bidiLevel: Double, goalColumn: Double): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("cursor")(pos.asInstanceOf[js.Any], assoc.asInstanceOf[js.Any], bidiLevel.asInstanceOf[js.Any], goalColumn.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
-  inline def cursor(pos: Double, assoc: Unit, bidiLevel: Unit, goalColumn: Double): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("cursor")(pos.asInstanceOf[js.Any], assoc.asInstanceOf[js.Any], bidiLevel.asInstanceOf[js.Any], goalColumn.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
-  
-  /**
-    Create a selection from a JSON representation.
-    */
-  /* static member */
-  inline def fromJSON(json: Any): EditorSelection = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[EditorSelection]
-  
-  /**
-    Create a selection range.
-    */
-  /* static member */
-  inline def range(anchor: Double, head: Double): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(anchor.asInstanceOf[js.Any], head.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
-  inline def range(anchor: Double, head: Double, goalColumn: Double): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(anchor.asInstanceOf[js.Any], head.asInstanceOf[js.Any], goalColumn.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
-  
-  /**
-    Create a selection holding a single range.
-    */
-  /* static member */
-  inline def single(anchor: Double): EditorSelection = ^.asInstanceOf[js.Dynamic].applyDynamic("single")(anchor.asInstanceOf[js.Any]).asInstanceOf[EditorSelection]
-  inline def single(anchor: Double, head: Double): EditorSelection = (^.asInstanceOf[js.Dynamic].applyDynamic("single")(anchor.asInstanceOf[js.Any], head.asInstanceOf[js.Any])).asInstanceOf[EditorSelection]
 }

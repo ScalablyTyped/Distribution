@@ -1,6 +1,6 @@
 package typings.develarSchemaUtils
 
-import typings.develarSchemaUtils.validateMod.ValidationErrorConfiguration
+import typings.develarSchemaUtils.declarationsValidateMod.ValidationErrorConfiguration
 import typings.jsonSchema.mod.JSONSchema4
 import typings.jsonSchema.mod.JSONSchema6
 import typings.jsonSchema.mod.JSONSchema7

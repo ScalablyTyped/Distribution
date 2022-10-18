@@ -13,12 +13,17 @@ open class Bounds_ () extends StObject {
   
   def contains(pointOrBounds: BoundsExpression | PointExpression): Boolean = js.native
   
-  def extend(point: PointExpression): this.type = js.native
+  // Returns a new Bounds
+  def equals(otherBounds: BoundsExpression): Boolean = js.native
+  
+  // tslint:disable:unified-signatures
+  def extend(point: BoundsExpression | PointExpression): this.type = js.native
   
   def getBottomLeft(): Point_ = js.native
   
   def getBottomRight(): Point_ = js.native
   
+  // tslint:enable:unified-signatures
   def getCenter(): Point_ = js.native
   def getCenter(round: Boolean): Point_ = js.native
   
@@ -37,4 +42,6 @@ open class Bounds_ () extends StObject {
   var min: js.UndefOr[Point_] = js.native
   
   def overlaps(otherBounds: BoundsExpression): Boolean = js.native
+  
+  def pad(bufferRatio: Double): Bounds_ = js.native
 }

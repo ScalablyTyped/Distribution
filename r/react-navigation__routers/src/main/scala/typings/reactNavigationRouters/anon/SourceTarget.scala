@@ -1,6 +1,6 @@
 package typings.reactNavigationRouters.anon
 
-import typings.reactNavigationRouters.drawerRouterMod.DrawerActionType
+import typings.reactNavigationRouters.libTypescriptSrcDrawerRouterMod.DrawerActionType
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.CLOSE_DRAWER
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.OPEN_DRAWER
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.TOGGLE_DRAWER

@@ -1,9 +1,9 @@
 package typings.xstate.anon
 
 import typings.std.Record
-import typings.xstate.typesMod.BaseActionObject
-import typings.xstate.typesMod.EventObject
-import typings.xstate.typesMod.IndexByType
+import typings.xstate.libTypesMod.BaseActionObject
+import typings.xstate.libTypesMod.EventObject
+import typings.xstate.libTypesMod.IndexByType
 import typings.xstate.xstateStrings.__XSTATE_ALLOW_ANY_INVOKE_DATA_HACK__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

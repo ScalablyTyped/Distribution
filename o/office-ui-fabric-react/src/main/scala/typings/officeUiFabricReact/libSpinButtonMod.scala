@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.spinButtonSpinButtonMod.DefaultProps
-import typings.officeUiFabricReact.spinButtonTypesMod.ISpinButtonProps
+import typings.officeUiFabricReact.libComponentsSpinButtonSpinButtonDottypesMod.ISpinButtonProps
+import typings.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.DefaultProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,20 +14,20 @@ object libSpinButtonMod {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection & Double
+        typings.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection & Double
       ] = js.native
     
-    /* -1 */ val down: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.down & Double = js.native
+    /* -1 */ val down: typings.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection.down & Double = js.native
     
-    /* 0 */ val notSpinning: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.notSpinning & Double = js.native
+    /* 0 */ val notSpinning: typings.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection.notSpinning & Double = js.native
     
-    /* 1 */ val up: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.up & Double = js.native
+    /* 1 */ val up: typings.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection.up & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/SpinButton", "SpinButton")
   @js.native
   open class SpinButton protected ()
-    extends typings.officeUiFabricReact.spinButtonMod.SpinButton {
+    extends typings.officeUiFabricReact.libComponentsSpinButtonMod.SpinButton {
     def this(props: ISpinButtonProps) = this()
   }
   /* static members */

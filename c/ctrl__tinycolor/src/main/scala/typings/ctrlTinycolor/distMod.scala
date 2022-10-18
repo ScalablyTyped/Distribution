@@ -6,7 +6,7 @@ import typings.ctrlTinycolor.anon.NumberifyRGBA
 import typings.ctrlTinycolor.anon.PartialTinyColorOptions
 import typings.ctrlTinycolor.ctrlTinycolorBooleans.`false`
 import typings.ctrlTinycolor.ctrlTinycolorStrings.name
-import typings.ctrlTinycolor.interfacesMod.RGBA
+import typings.ctrlTinycolor.distInterfacesMod.RGBA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -325,12 +325,12 @@ object distMod {
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - scala.Double
-    - typings.ctrlTinycolor.interfacesMod.RGB
-    - typings.ctrlTinycolor.interfacesMod.RGBA
-    - typings.ctrlTinycolor.interfacesMod.HSL
-    - typings.ctrlTinycolor.interfacesMod.HSLA
-    - typings.ctrlTinycolor.interfacesMod.HSV
-    - typings.ctrlTinycolor.interfacesMod.HSVA
+    - typings.ctrlTinycolor.distInterfacesMod.RGB
+    - typings.ctrlTinycolor.distInterfacesMod.RGBA
+    - typings.ctrlTinycolor.distInterfacesMod.HSL
+    - typings.ctrlTinycolor.distInterfacesMod.HSLA
+    - typings.ctrlTinycolor.distInterfacesMod.HSV
+    - typings.ctrlTinycolor.distInterfacesMod.HSVA
     - typings.ctrlTinycolor.distMod.TinyColor_
   */
   type ColorInput = _ColorInput | String | Double

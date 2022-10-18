@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-codecommit-node", "GetMergeConflictsCommand")
 @js.native
 open class GetMergeConflictsCommand protected ()
-  extends typings.awsSdkClientCodecommitNode.getMergeConflictsCommandMod.GetMergeConflictsCommand {
+  extends typings.awsSdkClientCodecommitNode.commandsGetMergeConflictsCommandMod.GetMergeConflictsCommand {
   def this(input: GetMergeConflictsInput) = this()
 }

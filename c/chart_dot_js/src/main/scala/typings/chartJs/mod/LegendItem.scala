@@ -1,6 +1,6 @@
 package typings.chartJs.mod
 
-import typings.chartJs.colorMod.Color
+import typings.chartJs.typesColorMod.Color
 import typings.std.CanvasLineCap
 import typings.std.CanvasLineJoin
 import org.scalablytyped.runtime.StObject

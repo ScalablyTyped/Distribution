@@ -6,6 +6,7 @@ import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsCurrenc
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsNotation
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsStyle
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsUnitDisplay
+import typings.formatjsEcma402Abstract.typesNumberMod.UseGroupingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,17 +31,12 @@ trait CompactDisplay extends StObject {
   
   var unitDisplay: js.UndefOr[NumberFormatOptionsUnitDisplay] = js.undefined
   
-  var useGrouping: Boolean
+  var useGrouping: js.UndefOr[UseGroupingType] = js.undefined
 }
 object CompactDisplay {
   
-  inline def apply(
-    notation: NumberFormatOptionsNotation,
-    numberingSystem: String,
-    style: NumberFormatOptionsStyle,
-    useGrouping: Boolean
-  ): CompactDisplay = {
-    val __obj = js.Dynamic.literal(notation = notation.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], useGrouping = useGrouping.asInstanceOf[js.Any])
+  inline def apply(notation: NumberFormatOptionsNotation, numberingSystem: String, style: NumberFormatOptionsStyle): CompactDisplay = {
+    val __obj = js.Dynamic.literal(notation = notation.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompactDisplay]
   }
   
@@ -76,6 +72,8 @@ object CompactDisplay {
     
     inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    inline def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+    inline def setUseGrouping(value: UseGroupingType): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+    
+    inline def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
   }
 }

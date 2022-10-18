@@ -10,8 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("office-ui-fabric-react", "CommandButton")
 @js.native
 open class CommandButton ()
-  extends typings.officeUiFabricReact.actionButtonMod.ActionButton
+  extends typings.officeUiFabricReact.libComponentsButtonActionButtonActionButtonMod.ActionButton
 object CommandButton {
   
-  inline def apply: Instantiable0[typings.officeUiFabricReact.actionButtonMod.ActionButton] = ^.asInstanceOf[js.Dynamic].selectDynamic("CommandButton").asInstanceOf[Instantiable0[typings.officeUiFabricReact.actionButtonMod.ActionButton]]
+  inline def apply: Instantiable0[
+    typings.officeUiFabricReact.libComponentsButtonActionButtonActionButtonMod.ActionButton
+  ] = ^.asInstanceOf[js.Dynamic].selectDynamic("CommandButton").asInstanceOf[Instantiable0[
+    typings.officeUiFabricReact.libComponentsButtonActionButtonActionButtonMod.ActionButton
+  ]]
 }

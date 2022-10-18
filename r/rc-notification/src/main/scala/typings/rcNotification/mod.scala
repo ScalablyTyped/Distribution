@@ -1,8 +1,8 @@
 package typings.rcNotification
 
-import typings.rcNotification.noticeMod.NoticeProps
-import typings.rcNotification.useNotificationMod.NotificationAPI
-import typings.rcNotification.useNotificationMod.NotificationConfig
+import typings.rcNotification.esNoticeMod.NoticeProps
+import typings.rcNotification.esUseNotificationMod.NotificationAPI
+import typings.rcNotification.esUseNotificationMod.NotificationConfig
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes

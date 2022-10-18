@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Ocr {
   
   /** Provides optical character recognition (OCR) functionality. */
-  @JSGlobal("Windows.Media.Ocr.OcrEngine")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Ocr.OcrEngine")
   @js.native
-  abstract class OcrEngine ()
+  open class OcrEngine ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Ocr.OcrEngine {
     
@@ -76,9 +76,9 @@ object Ocr {
   }
   
   /** Represents a single line of text recognized by the OCR engine and returned as part of the OcrResult . */
-  @JSGlobal("Windows.Media.Ocr.OcrLine")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Ocr.OcrLine")
   @js.native
-  abstract class OcrLine ()
+  open class OcrLine ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Ocr.OcrLine {
     
@@ -92,9 +92,9 @@ object Ocr {
   }
   
   /** Contains the results of Optical Character Recognition (OCR). */
-  @JSGlobal("Windows.Media.Ocr.OcrResult")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Ocr.OcrResult")
   @js.native
-  abstract class OcrResult ()
+  open class OcrResult ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Ocr.OcrResult {
     
@@ -112,9 +112,9 @@ object Ocr {
   }
   
   /** Represents a single word in a line of text recognized by the OCR engine and returned as part of the OcrLine . */
-  @JSGlobal("Windows.Media.Ocr.OcrWord")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Ocr.OcrWord")
   @js.native
-  abstract class OcrWord ()
+  open class OcrWord ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Ocr.OcrWord {
     

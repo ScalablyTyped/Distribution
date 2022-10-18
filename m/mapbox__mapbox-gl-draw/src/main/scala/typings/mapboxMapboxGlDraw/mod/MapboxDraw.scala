@@ -27,8 +27,13 @@ trait MapboxDraw
   def add(geojson: Geometry): js.Array[String] = js.native
   
   def changeMode(mode: Exclude[DrawMode, direct_select | simple_select | draw_line_string]): this.type = js.native
-  def changeMode[T /* <: String */](mode: T): this.type = js.native
-  def changeMode[T /* <: String */](mode: T, options: Any): this.type = js.native
+  def changeMode[T /* <: String */](
+    mode: T & (/* import warning: importer.ImportType#apply Failed type conversion: T extends @mapbox/mapbox-gl-draw.@mapbox/mapbox-gl-draw.DrawMode ? never : T */ js.Any)
+  ): this.type = js.native
+  def changeMode[T /* <: String */](
+    mode: T & (/* import warning: importer.ImportType#apply Failed type conversion: T extends @mapbox/mapbox-gl-draw.@mapbox/mapbox-gl-draw.DrawMode ? never : T */ js.Any),
+    options: Any
+  ): this.type = js.native
   @JSName("changeMode")
   def changeMode_directselect(mode: direct_select, options: FeatureId): this.type = js.native
   @JSName("changeMode")

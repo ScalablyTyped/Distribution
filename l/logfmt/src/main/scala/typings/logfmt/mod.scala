@@ -6,6 +6,7 @@ import typings.logfmt.anon.ContentType
 import typings.logfmt.anon.Contentlength
 import typings.logfmt.anon.Delimiter
 import typings.logfmt.anon.End
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
@@ -64,11 +65,11 @@ object mod extends Shortcut {
     
     var stream: WritableStream = js.native
     
-    def streamParser(): Any = js.native
-    def streamParser(options: End): Any = js.native
+    def streamParser(): ReadWriteStream = js.native
+    def streamParser(options: End): ReadWriteStream = js.native
     
-    def streamStringify(): Any = js.native
-    def streamStringify(options: Delimiter): Any = js.native
+    def streamStringify(): ReadWriteStream = js.native
+    def streamStringify(options: Delimiter): ReadWriteStream = js.native
     
     def stringify(data: js.Object): String = js.native
     

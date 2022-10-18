@@ -10,7 +10,7 @@ import typings.baseui.tagTypesMod.TagProps
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.std.HTMLSpanElement
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

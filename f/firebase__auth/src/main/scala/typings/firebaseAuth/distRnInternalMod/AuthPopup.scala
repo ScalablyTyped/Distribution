@@ -1,0 +1,13 @@
+package typings.firebaseAuth.distRnInternalMod
+
+import typings.std.Window
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("@firebase/auth/dist/rn/internal", "AuthPopup")
+@js.native
+open class AuthPopup ()
+  extends typings.firebaseAuth.distRnSrcPlatformBrowserUtilPopupMod.AuthPopup {
+  def this(window: Window) = this()
+}

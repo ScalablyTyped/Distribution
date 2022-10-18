@@ -5,8 +5,8 @@ import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.AT_S
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.AT_TIMESTAMP
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.LATEST
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.TRIM_HORIZON
-import typings.awsSdkClientKinesisBrowser.inputTypesUnionMod.InputTypesUnion
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientKinesisBrowser.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

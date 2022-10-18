@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  /* augmented module */
   object wordpressDataAugmentingMod {
     
     @JSImport("@wordpress/data", JSImport.Namespace)

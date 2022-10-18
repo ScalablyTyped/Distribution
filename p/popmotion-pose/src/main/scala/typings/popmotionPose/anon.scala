@@ -1,6 +1,7 @@
 package typings.popmotionPose
 
 import typings.popmotionEasing.mod.Easing
+import typings.popmotionPose.libTypesMod.CubicBezierArgs
 import typings.popmotionPose.popmotionPoseStrings.anticipate
 import typings.popmotionPose.popmotionPoseStrings.backIn
 import typings.popmotionPose.popmotionPoseStrings.backInOut
@@ -13,7 +14,6 @@ import typings.popmotionPose.popmotionPoseStrings.easeInOut
 import typings.popmotionPose.popmotionPoseStrings.easeOut
 import typings.popmotionPose.popmotionPoseStrings.linear
 import typings.popmotionPose.popmotionPoseStrings.tween
-import typings.popmotionPose.typesMod.CubicBezierArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

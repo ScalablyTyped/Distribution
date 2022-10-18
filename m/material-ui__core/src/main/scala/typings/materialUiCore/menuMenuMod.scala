@@ -59,12 +59,12 @@ import typings.materialUiCore.materialUiCoreStrings.url
 import typings.materialUiCore.materialUiCoreStrings.vertical
 import typings.materialUiCore.materialUiCoreStrings.yes
 import typings.materialUiCore.menuListMenuListMod.MenuListProps
-import typings.materialUiCore.mod.ModalManager
+import typings.materialUiCore.modalModalManagerMod.ModalManager
 import typings.materialUiCore.popoverPopoverMod.PopoverActions
 import typings.materialUiCore.popoverPopoverMod.PopoverOrigin
 import typings.materialUiCore.popoverPopoverMod.PopoverPosition
 import typings.materialUiCore.popoverPopoverMod.PopoverReference
-import typings.materialUiCore.transitionMod.TransitionProps
+import typings.materialUiCore.transitionsTransitionMod.TransitionProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -157,7 +157,7 @@ object menuMenuMod {
       * Props applied to the transition element.
       * By default, the element is based on this [`Transition`](http://reactcommunity.org/react-transition-group/transition) component.
       */
-    var TransitionProps: js.UndefOr[typings.materialUiCore.transitionMod.TransitionProps] = js.undefined
+    var TransitionProps: js.UndefOr[typings.materialUiCore.transitionsTransitionMod.TransitionProps] = js.undefined
     
     var about: js.UndefOr[String] = js.undefined
     
@@ -625,7 +625,9 @@ object menuMenuMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
-    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    var ref: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLDivElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
@@ -1507,11 +1509,9 @@ object menuMenuMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
-      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
-      
-      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRef(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLDivElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       

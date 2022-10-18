@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** @internal */
 open class RequestPendingError ()
-  extends typings.sipJs.apiMod.RequestPendingError {
+  extends typings.sipJs.libApiMod.RequestPendingError {
   def this(message: String) = this()
 }

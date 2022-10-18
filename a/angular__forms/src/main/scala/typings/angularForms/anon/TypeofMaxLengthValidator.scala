@@ -16,7 +16,7 @@ trait TypeofMaxLengthValidator
   
   var ɵdir: ɵɵDirectiveDeclaration[
     MaxLengthValidator, 
-    String, 
+    /* [maxlength][formControlName],[maxlength][formControl],[maxlength][ngModel] */ String, 
     scala.Nothing, 
     Maxlength, 
     js.Object, 

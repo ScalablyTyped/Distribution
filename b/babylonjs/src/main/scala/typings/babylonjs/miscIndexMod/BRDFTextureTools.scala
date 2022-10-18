@@ -1,6 +1,6 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.baseTextureMod.BaseTexture
+import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

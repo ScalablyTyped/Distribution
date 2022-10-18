@@ -1,8 +1,8 @@
 package typings.crocks
 
 import typings.crocks.asyncAsyncMod.Async
-import typings.crocks.typesMod.UnaryFunction
-import typings.crocks.typesMod.VariadicFunction
+import typings.crocks.internalTypesMod.UnaryFunction
+import typings.crocks.internalTypesMod.VariadicFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

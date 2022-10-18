@@ -1,7 +1,7 @@
 package typings.cucumberCiEnvironment
 
-import typings.cucumberCiEnvironment.typesMod.CiEnvironment
-import typings.cucumberCiEnvironment.typesMod.Env
+import typings.cucumberCiEnvironment.distCjsSrcTypesMod.CiEnvironment
+import typings.cucumberCiEnvironment.distCjsSrcTypesMod.Env
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

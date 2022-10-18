@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientBillingbudgetsStrings {
   
   @js.native
-  sealed trait GoogleCloudBillingBudgetsV1Filter extends StObject
-  inline def GoogleCloudBillingBudgetsV1Filter: GoogleCloudBillingBudgetsV1Filter = "GoogleCloudBillingBudgetsV1Filter".asInstanceOf[GoogleCloudBillingBudgetsV1Filter]
-  
-  @js.native
   sealed trait billingbudgets extends StObject
   inline def billingbudgets: billingbudgets = "billingbudgets".asInstanceOf[billingbudgets]
   

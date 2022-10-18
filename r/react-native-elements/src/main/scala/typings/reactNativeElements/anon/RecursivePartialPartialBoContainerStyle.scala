@@ -3,7 +3,7 @@ package typings.reactNativeElements.anon
 import typings.reactNative.mod.ModalProps
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.themeMod.RecursivePartial
+import typings.reactNativeElements.distConfigThemeMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

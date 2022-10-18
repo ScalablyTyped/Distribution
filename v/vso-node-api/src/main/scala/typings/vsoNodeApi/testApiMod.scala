@@ -1,71 +1,71 @@
 package typings.vsoNodeApi
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
-import typings.vsoNodeApi.coreInterfacesMod.TeamContext
-import typings.vsoNodeApi.testInterfacesMod.AggregatedDataForResultTrend
-import typings.vsoNodeApi.testInterfacesMod.BuildCoverage
-import typings.vsoNodeApi.testInterfacesMod.BuildReference
-import typings.vsoNodeApi.testInterfacesMod.CloneOperationInformation
-import typings.vsoNodeApi.testInterfacesMod.CodeCoverageData
-import typings.vsoNodeApi.testInterfacesMod.CodeCoverageSummary
-import typings.vsoNodeApi.testInterfacesMod.CustomTestFieldDefinition
-import typings.vsoNodeApi.testInterfacesMod.CustomTestFieldScope
-import typings.vsoNodeApi.testInterfacesMod.LinkedWorkItemsQuery
-import typings.vsoNodeApi.testInterfacesMod.LinkedWorkItemsQueryResult
-import typings.vsoNodeApi.testInterfacesMod.PlanUpdateModel
-import typings.vsoNodeApi.testInterfacesMod.PointUpdateModel
-import typings.vsoNodeApi.testInterfacesMod.ReleaseReference
-import typings.vsoNodeApi.testInterfacesMod.ResultDetails
-import typings.vsoNodeApi.testInterfacesMod.ResultRetentionSettings
-import typings.vsoNodeApi.testInterfacesMod.ResultsFilter
-import typings.vsoNodeApi.testInterfacesMod.RunCreateModel
-import typings.vsoNodeApi.testInterfacesMod.RunUpdateModel
-import typings.vsoNodeApi.testInterfacesMod.SuiteCreateModel
-import typings.vsoNodeApi.testInterfacesMod.SuiteEntry
-import typings.vsoNodeApi.testInterfacesMod.SuiteEntryUpdateModel
-import typings.vsoNodeApi.testInterfacesMod.SuiteTestCase
-import typings.vsoNodeApi.testInterfacesMod.SuiteUpdateModel
-import typings.vsoNodeApi.testInterfacesMod.TestActionResultModel
-import typings.vsoNodeApi.testInterfacesMod.TestAttachment
-import typings.vsoNodeApi.testInterfacesMod.TestAttachmentReference
-import typings.vsoNodeApi.testInterfacesMod.TestAttachmentRequestModel
-import typings.vsoNodeApi.testInterfacesMod.TestCaseResult
-import typings.vsoNodeApi.testInterfacesMod.TestConfiguration
-import typings.vsoNodeApi.testInterfacesMod.TestIterationDetailsModel
-import typings.vsoNodeApi.testInterfacesMod.TestMessageLogDetails
-import typings.vsoNodeApi.testInterfacesMod.TestOutcome
-import typings.vsoNodeApi.testInterfacesMod.TestPlan
-import typings.vsoNodeApi.testInterfacesMod.TestPlanCloneRequest
-import typings.vsoNodeApi.testInterfacesMod.TestPoint
-import typings.vsoNodeApi.testInterfacesMod.TestPointsQuery
-import typings.vsoNodeApi.testInterfacesMod.TestResultDocument
-import typings.vsoNodeApi.testInterfacesMod.TestResultHistory
-import typings.vsoNodeApi.testInterfacesMod.TestResultParameterModel
-import typings.vsoNodeApi.testInterfacesMod.TestResultSummary
-import typings.vsoNodeApi.testInterfacesMod.TestResultTrendFilter
-import typings.vsoNodeApi.testInterfacesMod.TestResultsContext
-import typings.vsoNodeApi.testInterfacesMod.TestResultsDetails
-import typings.vsoNodeApi.testInterfacesMod.TestResultsGroupsForBuild
-import typings.vsoNodeApi.testInterfacesMod.TestResultsGroupsForRelease
-import typings.vsoNodeApi.testInterfacesMod.TestResultsQuery
-import typings.vsoNodeApi.testInterfacesMod.TestRun
-import typings.vsoNodeApi.testInterfacesMod.TestRunCoverage
-import typings.vsoNodeApi.testInterfacesMod.TestRunPublishContext
-import typings.vsoNodeApi.testInterfacesMod.TestRunState
-import typings.vsoNodeApi.testInterfacesMod.TestRunStatistic
-import typings.vsoNodeApi.testInterfacesMod.TestSession
-import typings.vsoNodeApi.testInterfacesMod.TestSessionSource
-import typings.vsoNodeApi.testInterfacesMod.TestSettings
-import typings.vsoNodeApi.testInterfacesMod.TestSuite
-import typings.vsoNodeApi.testInterfacesMod.TestSuiteCloneRequest
-import typings.vsoNodeApi.testInterfacesMod.TestSummaryForWorkItem
-import typings.vsoNodeApi.testInterfacesMod.TestToWorkItemLinks
-import typings.vsoNodeApi.testInterfacesMod.TestVariable
-import typings.vsoNodeApi.testInterfacesMod.WorkItemReference
-import typings.vsoNodeApi.testInterfacesMod.WorkItemToTestLinks
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCoreInterfacesMod.TeamContext
+import typings.vsoNodeApi.interfacesTestInterfacesMod.AggregatedDataForResultTrend
+import typings.vsoNodeApi.interfacesTestInterfacesMod.BuildCoverage
+import typings.vsoNodeApi.interfacesTestInterfacesMod.BuildReference
+import typings.vsoNodeApi.interfacesTestInterfacesMod.CloneOperationInformation
+import typings.vsoNodeApi.interfacesTestInterfacesMod.CodeCoverageData
+import typings.vsoNodeApi.interfacesTestInterfacesMod.CodeCoverageSummary
+import typings.vsoNodeApi.interfacesTestInterfacesMod.CustomTestFieldDefinition
+import typings.vsoNodeApi.interfacesTestInterfacesMod.CustomTestFieldScope
+import typings.vsoNodeApi.interfacesTestInterfacesMod.LinkedWorkItemsQuery
+import typings.vsoNodeApi.interfacesTestInterfacesMod.LinkedWorkItemsQueryResult
+import typings.vsoNodeApi.interfacesTestInterfacesMod.PlanUpdateModel
+import typings.vsoNodeApi.interfacesTestInterfacesMod.PointUpdateModel
+import typings.vsoNodeApi.interfacesTestInterfacesMod.ReleaseReference
+import typings.vsoNodeApi.interfacesTestInterfacesMod.ResultDetails
+import typings.vsoNodeApi.interfacesTestInterfacesMod.ResultRetentionSettings
+import typings.vsoNodeApi.interfacesTestInterfacesMod.ResultsFilter
+import typings.vsoNodeApi.interfacesTestInterfacesMod.RunCreateModel
+import typings.vsoNodeApi.interfacesTestInterfacesMod.RunUpdateModel
+import typings.vsoNodeApi.interfacesTestInterfacesMod.SuiteCreateModel
+import typings.vsoNodeApi.interfacesTestInterfacesMod.SuiteEntry
+import typings.vsoNodeApi.interfacesTestInterfacesMod.SuiteEntryUpdateModel
+import typings.vsoNodeApi.interfacesTestInterfacesMod.SuiteTestCase
+import typings.vsoNodeApi.interfacesTestInterfacesMod.SuiteUpdateModel
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestActionResultModel
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestAttachment
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestAttachmentReference
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestAttachmentRequestModel
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestCaseResult
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestConfiguration
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestIterationDetailsModel
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestMessageLogDetails
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestOutcome
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestPlan
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestPlanCloneRequest
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestPoint
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestPointsQuery
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestResultDocument
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestResultHistory
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestResultParameterModel
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestResultSummary
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestResultTrendFilter
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestResultsContext
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestResultsDetails
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestResultsGroupsForBuild
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestResultsGroupsForRelease
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestResultsQuery
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestRun
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestRunCoverage
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestRunPublishContext
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestRunState
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestRunStatistic
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestSession
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestSessionSource
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestSettings
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestSuite
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestSuiteCloneRequest
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestSummaryForWorkItem
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestToWorkItemLinks
+import typings.vsoNodeApi.interfacesTestInterfacesMod.TestVariable
+import typings.vsoNodeApi.interfacesTestInterfacesMod.WorkItemReference
+import typings.vsoNodeApi.interfacesTestInterfacesMod.WorkItemToTestLinks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -406,9 +406,9 @@ object testApiMod {
     def getTestIterations(project: String, runId: Double, testCaseResultId: Double): js.Promise[js.Array[TestIterationDetailsModel]] = js.native
     def getTestIterations(project: String, runId: Double, testCaseResultId: Double, includeActionResults: Boolean): js.Promise[js.Array[TestIterationDetailsModel]] = js.native
     
-    def getTestResultAttachmentContent(project: String, runId: Double, testCaseResultId: Double, attachmentId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getTestResultAttachmentContent(project: String, runId: Double, testCaseResultId: Double, attachmentId: Double): js.Promise[ReadableStream] = js.native
     
-    def getTestResultAttachmentZip(project: String, runId: Double, testCaseResultId: Double, attachmentId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getTestResultAttachmentZip(project: String, runId: Double, testCaseResultId: Double, attachmentId: Double): js.Promise[ReadableStream] = js.native
     
     def getTestResultAttachments(project: String, runId: Double, testCaseResultId: Double): js.Promise[js.Array[TestAttachment]] = js.native
     
@@ -672,9 +672,9 @@ object testApiMod {
     
     def getTestResultsByQuery(query: TestResultsQuery, project: String): js.Promise[TestResultsQuery] = js.native
     
-    def getTestRunAttachmentContent(project: String, runId: Double, attachmentId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getTestRunAttachmentContent(project: String, runId: Double, attachmentId: Double): js.Promise[ReadableStream] = js.native
     
-    def getTestRunAttachmentZip(project: String, runId: Double, attachmentId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getTestRunAttachmentZip(project: String, runId: Double, attachmentId: Double): js.Promise[ReadableStream] = js.native
     
     def getTestRunAttachments(project: String, runId: Double): js.Promise[js.Array[TestAttachment]] = js.native
     

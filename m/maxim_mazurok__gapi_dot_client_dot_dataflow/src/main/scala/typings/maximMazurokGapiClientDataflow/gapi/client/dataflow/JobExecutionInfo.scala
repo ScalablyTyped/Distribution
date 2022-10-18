@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait JobExecutionInfo extends StObject {
   
   /** A mapping from each stage to the information about that stage. */
   var stages: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.JobExecutionStageInfo}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.JobExecutionInfo & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.JobExecutionStageInfo} */ js.Any
   ] = js.undefined
 }
 object JobExecutionInfo {
@@ -24,9 +21,7 @@ object JobExecutionInfo {
   extension [Self <: JobExecutionInfo](x: Self) {
     
     inline def setStages(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.JobExecutionStageInfo}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.JobExecutionInfo & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.JobExecutionStageInfo} */ js.Any
     ): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     
     inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)

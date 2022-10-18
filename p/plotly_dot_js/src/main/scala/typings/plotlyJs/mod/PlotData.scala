@@ -1,16 +1,16 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.anon.End
-import typings.plotlyJs.anon.PartialBoxPlotMarkerColor
-import typings.plotlyJs.anon.PartialColorBarBgcolor
-import typings.plotlyJs.anon.PartialDataTitleFont
+import typings.plotlyJs.anon.PartialBoxPlotMarker
+import typings.plotlyJs.anon.PartialColorBar
+import typings.plotlyJs.anon.PartialDataTitle
 import typings.plotlyJs.anon.PartialDelta
 import typings.plotlyJs.anon.PartialFont
-import typings.plotlyJs.anon.PartialGaugeBgcolor
+import typings.plotlyJs.anon.PartialGaugeAxis
 import typings.plotlyJs.anon.PartialHoverLabel
 import typings.plotlyJs.anon.PartialPattern
-import typings.plotlyJs.anon.PartialPlotMarkerCauto
-import typings.plotlyJs.anon.PartialPlotNumberFont
+import typings.plotlyJs.anon.PartialPlotMarkerAutocolorscale
+import typings.plotlyJs.anon.PartialPlotNumber
 import typings.plotlyJs.anon.PartialScatterLine
 import typings.plotlyJs.anon.PartialScatterMarkerLine
 import typings.plotlyJs.anon.Partialrownumbercolumnnum
@@ -148,7 +148,7 @@ trait PlotData extends StObject {
   
   var cliponaxis: Boolean
   
-  var colorbar: PartialColorBarBgcolor
+  var colorbar: PartialColorBar
   
   var colorscale: ColorScale
   
@@ -172,7 +172,7 @@ trait PlotData extends StObject {
   
   var fillpattern: PartialPattern
   
-  var gauge: PartialGaugeBgcolor
+  var gauge: PartialGaugeAxis
   
   var groupnorm: _empty | fraction | percent
   
@@ -234,7 +234,7 @@ trait PlotData extends StObject {
   
   var lon: js.Array[Datum]
   
-  var marker: PartialPlotMarkerCauto | PartialBoxPlotMarkerColor
+  var marker: PartialPlotMarkerAutocolorscale | PartialBoxPlotMarker
   
   @JSName("marker.color")
   var markerDotcolor: Color
@@ -295,7 +295,7 @@ trait PlotData extends StObject {
   
   var name: String
   
-  var number: PartialPlotNumberFont
+  var number: PartialPlotNumber
   
   var offset: Double
   
@@ -331,9 +331,11 @@ trait PlotData extends StObject {
   
   var textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside | auto | none
   
+  var texttemplate: String | js.Array[String]
+  
   var theta: js.Array[Datum]
   
-  var title: PartialDataTitleFont
+  var title: PartialDataTitle
   
   var transforms: js.Array[DataTransform]
   
@@ -357,6 +359,8 @@ trait PlotData extends StObject {
   
   var xgap: Double
   
+  var xhoverformat: String
+  
   var xy: js.typedarray.Float32Array
   
   var y: (js.Array[js.Array[Datum] | Datum]) | TypedArray
@@ -364,6 +368,8 @@ trait PlotData extends StObject {
   var yaxis: String
   
   var ygap: Double
+  
+  var yhoverformat: String
   
   var z: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray
   
@@ -382,7 +388,7 @@ object PlotData {
     boxpoints: all | outliers | suspectedoutliers | `false`,
     branchvalues: total | remainder,
     cliponaxis: Boolean,
-    colorbar: PartialColorBarBgcolor,
+    colorbar: PartialColorBar,
     colorscale: ColorScale,
     connectgaps: Boolean,
     customdata: js.Array[js.Array[Datum] | Datum],
@@ -394,7 +400,7 @@ object PlotData {
     fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext,
     fillcolor: String,
     fillpattern: PartialPattern,
-    gauge: PartialGaugeBgcolor,
+    gauge: PartialGaugeAxis,
     groupnorm: _empty | fraction | percent,
     histfunc: count | sum | avg | min | max,
     hole: Double,
@@ -422,7 +428,7 @@ object PlotData {
     locationmode: `ISO-3` | `USA-states` | (`country names`) | `geojson-id`,
     locations: js.Array[Datum],
     lon: js.Array[Datum],
-    marker: PartialPlotMarkerCauto | PartialBoxPlotMarkerColor,
+    marker: PartialPlotMarkerAutocolorscale | PartialBoxPlotMarker,
     markerDotcolor: Color,
     markerDotcolorscale: ColorScale | js.Array[ColorScale],
     markerDotline: PartialScatterMarkerLine,
@@ -443,7 +449,7 @@ object PlotData {
     markerDotsymbol: MarkerSymbol | js.Array[MarkerSymbol],
     mode: lines | markers | text | linesPlussignmarkers | textPlussignmarkers | textPlussignlines | textPlussignlinesPlussignmarkers | none | gauge | number | delta | numberPlussigndelta | gaugePlussignnumber | gaugePlussignnumberPlussigndelta | gaugePlussigndelta,
     name: String,
-    number: PartialPlotNumberFont,
+    number: PartialPlotNumber,
     offset: Double,
     opacity: Double,
     orientation: v | h,
@@ -461,8 +467,9 @@ object PlotData {
     textfont: PartialFont,
     textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none,
     textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside | auto | none,
+    texttemplate: String | js.Array[String],
     theta: js.Array[Datum],
-    title: PartialDataTitleFont,
+    title: PartialDataTitle,
     transforms: js.Array[DataTransform],
     transpose: Boolean,
     `type`: PlotType,
@@ -474,16 +481,18 @@ object PlotData {
     xaxis: String,
     xbins: End,
     xgap: Double,
+    xhoverformat: String,
     xy: js.typedarray.Float32Array,
     y: (js.Array[js.Array[Datum] | Datum]) | TypedArray,
     yaxis: String,
     ygap: Double,
+    yhoverformat: String,
     z: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray,
     zmax: Double,
     zmin: Double,
     zsmooth: fast | best | `false`
   ): PlotData = {
-    val __obj = js.Dynamic.literal(autobinx = autobinx.asInstanceOf[js.Any], automargin = automargin.asInstanceOf[js.Any], boxmean = boxmean.asInstanceOf[js.Any], boxpoints = boxpoints.asInstanceOf[js.Any], branchvalues = branchvalues.asInstanceOf[js.Any], cliponaxis = cliponaxis.asInstanceOf[js.Any], colorbar = colorbar.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps.asInstanceOf[js.Any], customdata = customdata.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], error_x = error_x.asInstanceOf[js.Any], error_y = error_y.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor.asInstanceOf[js.Any], fillpattern = fillpattern.asInstanceOf[js.Any], gauge = gauge.asInstanceOf[js.Any], groupnorm = groupnorm.asInstanceOf[js.Any], histfunc = histfunc.asInstanceOf[js.Any], hole = hole.asInstanceOf[js.Any], hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], hovertext = hovertext.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any], j = j.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], legendgroup = legendgroup.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], locationmode = locationmode.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], pointpos = pointpos.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], reversescale = reversescale.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], selectedpoints = selectedpoints.asInstanceOf[js.Any], showlegend = showlegend.asInstanceOf[js.Any], showscale = showscale.asInstanceOf[js.Any], stackgaps = stackgaps.asInstanceOf[js.Any], stackgroup = stackgroup.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textfont = textfont.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], transforms = transforms.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xbins = xbins.asInstanceOf[js.Any], xgap = xgap.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], ygap = ygap.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any], zmax = zmax.asInstanceOf[js.Any], zmin = zmin.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autobinx = autobinx.asInstanceOf[js.Any], automargin = automargin.asInstanceOf[js.Any], boxmean = boxmean.asInstanceOf[js.Any], boxpoints = boxpoints.asInstanceOf[js.Any], branchvalues = branchvalues.asInstanceOf[js.Any], cliponaxis = cliponaxis.asInstanceOf[js.Any], colorbar = colorbar.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps.asInstanceOf[js.Any], customdata = customdata.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], error_x = error_x.asInstanceOf[js.Any], error_y = error_y.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor.asInstanceOf[js.Any], fillpattern = fillpattern.asInstanceOf[js.Any], gauge = gauge.asInstanceOf[js.Any], groupnorm = groupnorm.asInstanceOf[js.Any], histfunc = histfunc.asInstanceOf[js.Any], hole = hole.asInstanceOf[js.Any], hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], hovertext = hovertext.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any], j = j.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], legendgroup = legendgroup.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], locationmode = locationmode.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], pointpos = pointpos.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], reversescale = reversescale.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], selectedpoints = selectedpoints.asInstanceOf[js.Any], showlegend = showlegend.asInstanceOf[js.Any], showscale = showscale.asInstanceOf[js.Any], stackgaps = stackgaps.asInstanceOf[js.Any], stackgroup = stackgroup.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textfont = textfont.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], texttemplate = texttemplate.asInstanceOf[js.Any], theta = theta.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], transforms = transforms.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xbins = xbins.asInstanceOf[js.Any], xgap = xgap.asInstanceOf[js.Any], xhoverformat = xhoverformat.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], ygap = ygap.asInstanceOf[js.Any], yhoverformat = yhoverformat.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any], zmax = zmax.asInstanceOf[js.Any], zmin = zmin.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
     __obj.updateDynamic("line.color")(lineDotcolor.asInstanceOf[js.Any])
     __obj.updateDynamic("line.dash")(lineDotdash.asInstanceOf[js.Any])
     __obj.updateDynamic("line.shape")(lineDotshape.asInstanceOf[js.Any])
@@ -526,7 +535,7 @@ object PlotData {
     
     inline def setCliponaxis(value: Boolean): Self = StObject.set(x, "cliponaxis", value.asInstanceOf[js.Any])
     
-    inline def setColorbar(value: PartialColorBarBgcolor): Self = StObject.set(x, "colorbar", value.asInstanceOf[js.Any])
+    inline def setColorbar(value: PartialColorBar): Self = StObject.set(x, "colorbar", value.asInstanceOf[js.Any])
     
     inline def setColorscale(value: ColorScale): Self = StObject.set(x, "colorscale", value.asInstanceOf[js.Any])
     
@@ -554,7 +563,7 @@ object PlotData {
     
     inline def setFillpattern(value: PartialPattern): Self = StObject.set(x, "fillpattern", value.asInstanceOf[js.Any])
     
-    inline def setGauge(value: PartialGaugeBgcolor): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
+    inline def setGauge(value: PartialGaugeAxis): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
     
     inline def setGroupnorm(value: _empty | fraction | percent): Self = StObject.set(x, "groupnorm", value.asInstanceOf[js.Any])
     
@@ -628,7 +637,7 @@ object PlotData {
     
     inline def setLonVarargs(value: Datum*): Self = StObject.set(x, "lon", js.Array(value*))
     
-    inline def setMarker(value: PartialPlotMarkerCauto | PartialBoxPlotMarkerColor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PartialPlotMarkerAutocolorscale | PartialBoxPlotMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerDotcolor(value: Color): Self = StObject.set(x, "marker.color", value.asInstanceOf[js.Any])
     
@@ -686,7 +695,7 @@ object PlotData {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNumber(value: PartialPlotNumberFont): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: PartialPlotNumber): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
@@ -734,11 +743,15 @@ object PlotData {
       value: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside | auto | none
     ): Self = StObject.set(x, "textposition", value.asInstanceOf[js.Any])
     
+    inline def setTexttemplate(value: String | js.Array[String]): Self = StObject.set(x, "texttemplate", value.asInstanceOf[js.Any])
+    
+    inline def setTexttemplateVarargs(value: String*): Self = StObject.set(x, "texttemplate", js.Array(value*))
+    
     inline def setTheta(value: js.Array[Datum]): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
     
     inline def setThetaVarargs(value: Datum*): Self = StObject.set(x, "theta", js.Array(value*))
     
-    inline def setTitle(value: PartialDataTitleFont): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: PartialDataTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTransforms(value: js.Array[DataTransform]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
     
@@ -770,6 +783,8 @@ object PlotData {
     
     inline def setXgap(value: Double): Self = StObject.set(x, "xgap", value.asInstanceOf[js.Any])
     
+    inline def setXhoverformat(value: String): Self = StObject.set(x, "xhoverformat", value.asInstanceOf[js.Any])
+    
     inline def setXy(value: js.typedarray.Float32Array): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
     
     inline def setY(value: (js.Array[js.Array[Datum] | Datum]) | TypedArray): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
@@ -779,6 +794,8 @@ object PlotData {
     inline def setYaxis(value: String): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
     
     inline def setYgap(value: Double): Self = StObject.set(x, "ygap", value.asInstanceOf[js.Any])
+    
+    inline def setYhoverformat(value: String): Self = StObject.set(x, "yhoverformat", value.asInstanceOf[js.Any])
     
     inline def setZ(value: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     

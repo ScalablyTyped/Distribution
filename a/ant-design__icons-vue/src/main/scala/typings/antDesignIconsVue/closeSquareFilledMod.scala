@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCloseSquareFilledMod.CloseSquareFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object closeSquareFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CloseSquareFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CloseSquareFilled", JSImport.Default)
   @js.native
   val default: CloseSquareFilledIconType = js.native
-  
-  @js.native
-  trait CloseSquareFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CloseSquareFilledIconType: String = js.native
-  }
   
   type _To = CloseSquareFilledIconType
   

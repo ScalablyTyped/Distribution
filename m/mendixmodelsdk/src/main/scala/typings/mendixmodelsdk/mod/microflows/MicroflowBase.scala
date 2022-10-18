@@ -1,16 +1,16 @@
 package typings.mendixmodelsdk.mod.microflows
 
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "microflows.MicroflowBase")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "microflows.MicroflowBase")
 @js.native
-abstract class MicroflowBase protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.microflows.MicroflowBase {
+open class MicroflowBase protected ()
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.microflows.MicroflowBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,

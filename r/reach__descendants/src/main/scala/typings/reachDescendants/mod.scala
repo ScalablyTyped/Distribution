@@ -3,8 +3,6 @@ package typings.reachDescendants
 import typings.reachDescendants.anon.Callback
 import typings.reachDescendants.anon.Children
 import typings.reachDescendants.reachDescendantsStrings.index
-import typings.reachDescendants.srcMod.Descendant
-import typings.reachDescendants.srcMod.DescendantContextValue
 import typings.react.mod.Context
 import typings.react.mod.Dispatch
 import typings.react.mod.KeyboardEvent
@@ -75,4 +73,60 @@ object mod {
   inline def useDescendants[DescendantType /* <: Descendant[HTMLElement] */](ctx: Context[DescendantContextValue[DescendantType]]): js.Array[DescendantType] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDescendants")(ctx.asInstanceOf[js.Any]).asInstanceOf[js.Array[DescendantType]]
   
   inline def useDescendantsInit[DescendantType /* <: Descendant[HTMLElement] */](): js.Tuple2[js.Array[DescendantType], Dispatch[SetStateAction[js.Array[DescendantType]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDescendantsInit")().asInstanceOf[js.Tuple2[js.Array[DescendantType], Dispatch[SetStateAction[js.Array[DescendantType]]]]]
+  
+  trait Descendant[ElementType] extends StObject {
+    
+    var element: SomeElement[ElementType] | Null
+    
+    var index: Double
+  }
+  object Descendant {
+    
+    inline def apply[ElementType](index: Double): Descendant[ElementType] = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], element = null)
+      __obj.asInstanceOf[Descendant[ElementType]]
+    }
+    
+    extension [Self <: Descendant[?], ElementType](x: Self & Descendant[ElementType]) {
+      
+      inline def setElement(value: SomeElement[ElementType]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      
+      inline def setElementNull: Self = StObject.set(x, "element", null)
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DescendantContextValue[DescendantType /* <: Descendant[HTMLElement] */] extends StObject {
+    
+    var descendants: js.Array[DescendantType]
+    
+    def registerDescendant(descendant: DescendantType): js.Function0[Unit]
+  }
+  object DescendantContextValue {
+    
+    inline def apply[DescendantType /* <: Descendant[HTMLElement] */](descendants: js.Array[DescendantType], registerDescendant: DescendantType => js.Function0[Unit]): DescendantContextValue[DescendantType] = {
+      val __obj = js.Dynamic.literal(descendants = descendants.asInstanceOf[js.Any], registerDescendant = js.Any.fromFunction1(registerDescendant))
+      __obj.asInstanceOf[DescendantContextValue[DescendantType]]
+    }
+    
+    extension [Self <: DescendantContextValue[?], DescendantType /* <: Descendant[HTMLElement] */](x: Self & DescendantContextValue[DescendantType]) {
+      
+      inline def setDescendants(value: js.Array[DescendantType]): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
+      
+      inline def setDescendantsVarargs(value: DescendantType*): Self = StObject.set(x, "descendants", js.Array(value*))
+      
+      inline def setRegisterDescendant(value: DescendantType => js.Function0[Unit]): Self = StObject.set(x, "registerDescendant", js.Any.fromFunction1(value))
+    }
+  }
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Element ? T : std.HTMLElement
+    }}}
+    */
+  @js.native
+  trait SomeElement[T] extends StObject
 }

@@ -332,6 +332,10 @@ open class ManagementClient[A, U] protected () extends StObject {
     cb: js.Function2[/* err */ js.Error, /* response */ UserBlocks, Unit]
   ): Unit = js.native
   
+  // User Logs
+  def getUserLogs(params: UsersLogsQuery): js.Promise[js.Array[LogEvent]] = js.native
+  def getUserLogs(params: UsersLogsQuery, cb: js.Function2[/* err */ js.Error, /* data */ js.Array[LogEvent], Unit]): Unit = js.native
+  
   def getUserPermissions(params: GetUserPermissionsData): js.Promise[js.Array[Permission]] = js.native
   def getUserPermissions(params: GetUserPermissionsDataPaged): js.Promise[PermissionPage] = js.native
   def getUserPermissions(

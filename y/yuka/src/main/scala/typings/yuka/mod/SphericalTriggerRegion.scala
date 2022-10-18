@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [radius=0] - The radius of the region.
   */
 open class SphericalTriggerRegion ()
-  extends typings.yuka.yukaMod.SphericalTriggerRegion {
+  extends typings.yuka.srcYukaMod.SphericalTriggerRegion {
   def this(radius: Double) = this()
 }

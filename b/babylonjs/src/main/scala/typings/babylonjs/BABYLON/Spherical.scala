@@ -196,7 +196,7 @@ trait Spherical extends StObject {
   
   /**
     * Gets a Vector3 from the current spherical coordinates
-    * @returns the Vector3
+    * @returns the (x, y,z) form of the current Spherical
     */
   def toVector3(): Vector3
   

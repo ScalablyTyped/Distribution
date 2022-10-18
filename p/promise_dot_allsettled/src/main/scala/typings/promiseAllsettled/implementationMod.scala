@@ -1,6 +1,5 @@
 package typings.promiseAllsettled
 
-import org.scalablytyped.runtime.TopLevel
 import typings.promiseAllsettled.typesMod.PromiseResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,11 +15,23 @@ object implementationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  type PromiseResultTuple[T /* <: Array[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: promise.allsettled.promise.allsettled/types.PromiseResult<T[P], unknown>}
-    */ typings.promiseAllsettled.promiseAllsettledStrings.PromiseResultTuple & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: promise.allsettled.promise.allsettled/types.PromiseResult<T[P], unknown>}
+    }}}
+    */
+  @js.native
+  trait PromiseResultTuple[T /* <: Array[Any] */] extends StObject
   
-  type PromiseTuple[T /* <: Array[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: std.Promise<T[P]> | T[P]}
-    */ typings.promiseAllsettled.promiseAllsettledStrings.PromiseTuple & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: std.Promise<T[P]> | T[P]}
+    }}}
+    */
+  @js.native
+  trait PromiseTuple[T /* <: Array[Any] */] extends StObject
 }

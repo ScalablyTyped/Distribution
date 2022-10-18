@@ -44,10 +44,6 @@ object reduxFormStrings {
   inline def forEach: forEach = "forEach".asInstanceOf[forEach]
   
   @js.native
-  sealed trait formValues extends StObject
-  inline def formValues: formValues = "formValues".asInstanceOf[formValues]
-  
-  @js.native
   sealed trait get extends StObject
   inline def get: get = "get".asInstanceOf[get]
   

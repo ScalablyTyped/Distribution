@@ -1,7 +1,7 @@
 package typings.googleCloudTextToSpeech.anon
 
-import typings.grpcGrpcJs.callCredentialsMod.CallCredentials
-import typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
+import typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials
+import typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

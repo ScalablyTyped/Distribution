@@ -1,6 +1,6 @@
 package typings.babylonjs.xRIndexMod
 
-import typings.babylonjs.webXRHandTrackingMod.IWebXRHandTrackingOptions
+import typings.babylonjs.xRFeaturesWebXRHandTrackingMod.IWebXRHandTrackingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXRHandTracking")
 @js.native
 open class WebXRHandTracking protected ()
-  extends typings.babylonjs.featuresIndexMod.WebXRHandTracking {
+  extends typings.babylonjs.xRFeaturesIndexMod.WebXRHandTracking {
   /**
     * Creates a new instance of the XR hand tracking feature.
     * @param _xrSessionManager An instance of WebXRSessionManager.
     * @param options Options to use when constructing this feature.
     */
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     /** Options to use when constructing this feature. */
   options: IWebXRHandTrackingOptions
   ) = this()

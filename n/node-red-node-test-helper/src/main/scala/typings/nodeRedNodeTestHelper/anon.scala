@@ -8,9 +8,9 @@ import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.node.httpsMod.ServerOptions
-import typings.node.nodeHttpMod.IncomingMessage
-import typings.node.nodeHttpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonhttpMod.IncomingMessage
+import typings.node.nodeColonhttpMod.ServerResponse
+import typings.node.nodeColonnetMod.Socket
 import typings.nodeRedNodeTestHelper.nodeRedNodeTestHelperBooleans.`false`
 import typings.nodeRedRuntime.anon.Authenticate
 import typings.nodeRedRuntime.anon.Console

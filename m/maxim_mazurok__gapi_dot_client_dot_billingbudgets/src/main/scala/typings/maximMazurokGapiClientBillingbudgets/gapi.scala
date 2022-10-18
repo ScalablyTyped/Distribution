@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientBillingbudgets
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientBillingbudgets.anon.Accesstoken
 import typings.maximMazurokGapiClientBillingbudgets.anon.Alt
@@ -224,9 +223,7 @@ object gapi {
           * and unlabeled usage. An object containing a single `"key": value` pair. Example: `{ "name": "wrench" }`. _Currently, multiple entries or multiple values per entry are not allowed._
           */
         var labels: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: std.Array<any>}
-          */ typings.maximMazurokGapiClientBillingbudgets.maximMazurokGapiClientBillingbudgetsStrings.GoogleCloudBillingBudgetsV1Filter & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: std.Array<any>} */ js.Any
               ] = js.undefined
         
         /**
@@ -276,9 +273,7 @@ object gapi {
           inline def setCustomPeriodUndefined: Self = StObject.set(x, "customPeriod", js.undefined)
           
           inline def setLabels(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: std.Array<any>}
-            */ typings.maximMazurokGapiClientBillingbudgets.maximMazurokGapiClientBillingbudgetsStrings.GoogleCloudBillingBudgetsV1Filter & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: std.Array<any>} */ js.Any
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

@@ -1,7 +1,7 @@
 package typings.atlaskitAnalyticsNextStableReactContext
 
 import org.scalablytyped.runtime.Shortcut
-import typings.atlaskitAnalyticsNextStableReactContext.typesMod.AnalyticsReactContextInterface
+import typings.atlaskitAnalyticsNextStableReactContext.distCjsTypesMod.AnalyticsReactContextInterface
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

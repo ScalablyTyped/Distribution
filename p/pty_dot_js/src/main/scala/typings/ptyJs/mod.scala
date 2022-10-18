@@ -1,12 +1,12 @@
 package typings.ptyJs
 
+import typings.node.NodeJS.WritableStream
 import typings.node.netMod.Socket
 import typings.ptyJs.anon.Cols
 import typings.ptyJs.anon.End
 import typings.ptyJs.anon.Fd
 import typings.ptyJs.anon.Master
 import typings.ptyJs.anon.Pid
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,8 +81,8 @@ object mod {
     var pid: Double = js.native
     
     // NodeJS Stream interface
-    def pipe[T /* <: WritableStream[Any] */](destination: T): T = js.native
-    def pipe[T /* <: WritableStream[Any] */](destination: T, options: End): T = js.native
+    def pipe[T /* <: WritableStream */](destination: T): T = js.native
+    def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
     
     /** Read-only name of the process associated with the slave end of the pseudo-terminal. */
     var process: String = js.native

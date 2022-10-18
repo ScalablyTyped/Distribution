@@ -2,7 +2,7 @@ package typings.reactDatepicker
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.dateFns.mod.Locale
-import typings.popperjsCore.enumsMod.Placement
+import typings.popperjsCore.libEnumsMod.Placement
 import typings.react.mod.Component
 import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
@@ -327,10 +327,12 @@ object mod {
     var onChangeRaw: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.native
     
     @JSName("onChange")
-    def onChange_false(date: (js.Tuple2[js.Date | Null, js.Date | Null]) | js.Date | Null): Unit = js.native
+    def onChange_false(
+      date: /* import warning: importer.ImportType#apply Failed type conversion: WithRange extends false | undefined ? std.Date | null : [std.Date | null, std.Date | null] */ js.Any
+    ): Unit = js.native
     @JSName("onChange")
     def onChange_false(
-      date: (js.Tuple2[js.Date | Null, js.Date | Null]) | js.Date | Null,
+      date: /* import warning: importer.ImportType#apply Failed type conversion: WithRange extends false | undefined ? std.Date | null : [std.Date | null, std.Date | null] */ js.Any,
       event: SyntheticEvent[Any, Event]
     ): Unit = js.native
     

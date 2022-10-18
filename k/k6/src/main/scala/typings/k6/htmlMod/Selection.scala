@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "Selection")
+/* note: abstract class */ @JSImport("k6/html", "Selection")
 @js.native
-abstract class Selection () extends StObject {
+open class Selection () extends StObject {
   
   /**
     * Get the value of an attribute for the first element in the Selection.

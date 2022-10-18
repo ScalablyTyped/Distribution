@@ -3,7 +3,6 @@ package typings.std
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -158,7 +157,7 @@ Instantiable0[js.Object]
     * @param o Object that contains the properties and methods. This can be an object that you created or an existing Document Object Model (DOM) object.
     */
   /* standard es2017.object */
-  def getOwnPropertyDescriptors[T](o: T): typings.std.stdStrings.ObjectConstructor & TopLevel[T] & (/* standard es2017.object */
+  def getOwnPropertyDescriptors[T](o: T): (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: std.TypedPropertyDescriptor<T[P]>} */ js.Any) & (/* standard es2017.object */
   StringDictionary[js.PropertyDescriptor]) = js.native
   
   /**
@@ -224,7 +223,7 @@ Instantiable0[js.Object]
     * Returns the names of the enumerable string properties and methods of an object.
     * @param o Object that contains the properties and methods. This can be an object that you created or an existing Document Object Model (DOM) object.
     */
-  /* standard es2015.core */
+  /* standard es5 */
   def keys(o: js.Object): js.Array[java.lang.String] = js.native
   
   /**

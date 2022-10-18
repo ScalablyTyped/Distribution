@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the altimeter reading–changed event. */
-@JSGlobal("Windows.Devices.Sensors.AltimeterReadingChangedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.AltimeterReadingChangedEventArgs")
 @js.native
-abstract class AltimeterReadingChangedEventArgs ()
+open class AltimeterReadingChangedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.AltimeterReadingChangedEventArgs {
   

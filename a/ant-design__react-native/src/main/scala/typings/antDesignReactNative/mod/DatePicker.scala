@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.Mode
-import typings.antDesignReactNative.datePickerMod.default
+import typings.antDesignReactNative.libDatePickerMod.default
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

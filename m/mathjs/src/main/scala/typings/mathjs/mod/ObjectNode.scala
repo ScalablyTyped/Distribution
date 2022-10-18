@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ObjectNode
   extends StObject
-     with MathNodeCommon
-     with _MathNode {
+     with MathNode {
   
   var isObjectNode: `true` = js.native
   

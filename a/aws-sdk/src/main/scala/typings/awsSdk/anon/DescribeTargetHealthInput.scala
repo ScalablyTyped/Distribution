@@ -1,9 +1,9 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.elbv2Mod.TargetDescription
-import typings.awsSdk.elbv2Mod.TargetDescriptions
-import typings.awsSdk.elbv2Mod.TargetGroupArn
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsElbv2Mod.TargetDescription
+import typings.awsSdk.clientsElbv2Mod.TargetDescriptions
+import typings.awsSdk.clientsElbv2Mod.TargetGroupArn
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait DescribeTargetHealthInput extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the target group.
     */
-  var TargetGroupArn: typings.awsSdk.elbv2Mod.TargetGroupArn
+  var TargetGroupArn: typings.awsSdk.clientsElbv2Mod.TargetGroupArn
   
   /**
     * The targets.

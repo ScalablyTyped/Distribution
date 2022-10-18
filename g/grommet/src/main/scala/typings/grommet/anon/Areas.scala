@@ -1,10 +1,10 @@
 package typings.grommet.anon
 
-import typings.grommet.boxMod.BoxProps
-import typings.grommet.gridMod.AreasType
-import typings.grommet.gridMod.GridColumnsType
-import typings.grommet.gridMod.GridGapType
-import typings.grommet.gridMod.GridSizeType
+import typings.grommet.componentsBoxMod.BoxProps
+import typings.grommet.componentsGridMod.AreasType
+import typings.grommet.componentsGridMod.GridColumnsType
+import typings.grommet.componentsGridMod.GridGapType
+import typings.grommet.componentsGridMod.GridSizeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "ServerOutOfMemoryException")
 @js.native
 open class ServerOutOfMemoryException ()
-  extends typings.awsGreengrassCoreSdk.clientMod.ServerOutOfMemoryException
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.ServerOutOfMemoryException

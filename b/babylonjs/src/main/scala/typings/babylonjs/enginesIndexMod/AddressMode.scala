@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AddressMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.AddressMode & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.AddressMode & String] = js.native
   
-  /* "clamp-to-edge" */ val ClampToEdge: typings.babylonjs.webgpuConstantsMod.AddressMode.ClampToEdge & String = js.native
+  /* "clamp-to-edge" */ val ClampToEdge: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.AddressMode.ClampToEdge & String = js.native
   
-  /* "mirror-repeat" */ val MirrorRepeat: typings.babylonjs.webgpuConstantsMod.AddressMode.MirrorRepeat & String = js.native
+  /* "mirror-repeat" */ val MirrorRepeat: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.AddressMode.MirrorRepeat & String = js.native
   
-  /* "repeat" */ val Repeat: typings.babylonjs.webgpuConstantsMod.AddressMode.Repeat & String = js.native
+  /* "repeat" */ val Repeat: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.AddressMode.Repeat & String = js.native
 }

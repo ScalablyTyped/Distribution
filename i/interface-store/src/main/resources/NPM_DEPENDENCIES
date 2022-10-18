@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "interface-store" : "3.0.0"
+      "interface-store" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "interface-store" : "3.0.0"
+      "interface-store" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

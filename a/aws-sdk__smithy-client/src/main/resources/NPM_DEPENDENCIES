@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/smithy-client" : "3.180.0"
+      "@aws-sdk/smithy-client" : "3.190.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/smithy-client" : "3.180.0"
+      "@aws-sdk/smithy-client" : "3.190.0"
     }
   ],
   "compile-devDependencies" : [

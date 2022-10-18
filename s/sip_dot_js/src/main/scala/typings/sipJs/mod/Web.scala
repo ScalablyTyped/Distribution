@@ -1,12 +1,12 @@
 package typings.sipJs.mod
 
-import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerModifier
-import typings.sipJs.coreMod.Logger
-import typings.sipJs.mediaStreamFactoryMod.MediaStreamFactory
-import typings.sipJs.sessionDescriptionHandlerConfigurationMod.SessionDescriptionHandlerConfiguration
-import typings.sipJs.sessionDescriptionHandlerSessionDescriptionHandlerFactoryMod.SessionDescriptionHandlerFactory
-import typings.sipJs.simpleUserOptionsMod.SimpleUserOptions
-import typings.sipJs.transportOptionsMod.TransportOptions
+import typings.sipJs.libApiSessionDescriptionHandlerMod.SessionDescriptionHandlerModifier
+import typings.sipJs.libCoreMod.Logger
+import typings.sipJs.libPlatformWebSessionDescriptionHandlerMediaStreamFactoryMod.MediaStreamFactory
+import typings.sipJs.libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerConfigurationMod.SessionDescriptionHandlerConfiguration
+import typings.sipJs.libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerFactoryMod.SessionDescriptionHandlerFactory
+import typings.sipJs.libPlatformWebSimpleUserSimpleUserOptionsMod.SimpleUserOptions
+import typings.sipJs.libPlatformWebTransportTransportOptionsMod.TransportOptions
 import typings.std.MediaStream
 import typings.std.MediaStreamConstraints
 import typings.std.RTCConfiguration
@@ -24,7 +24,7 @@ object Web {
   @JSImport("sip.js", "Web.SessionDescriptionHandler")
   @js.native
   open class SessionDescriptionHandler protected ()
-    extends typings.sipJs.webMod.SessionDescriptionHandler {
+    extends typings.sipJs.libPlatformWebMod.SessionDescriptionHandler {
     /**
       * Constructor
       * @param logger - A logger
@@ -59,7 +59,7 @@ object Web {
   @JSImport("sip.js", "Web.SimpleUser")
   @js.native
   open class SimpleUser protected ()
-    extends typings.sipJs.webMod.SimpleUser {
+    extends typings.sipJs.libPlatformWebMod.SimpleUser {
     /**
       * Constructs a new instance of the `SimpleUser` class.
       * @param server - SIP WebSocket Server URL.
@@ -72,7 +72,7 @@ object Web {
   @JSImport("sip.js", "Web.Transport")
   @js.native
   open class Transport protected ()
-    extends typings.sipJs.webMod.Transport {
+    extends typings.sipJs.libPlatformWebMod.Transport {
     def this(logger: Logger) = this()
     def this(logger: Logger, options: TransportOptions) = this()
   }
@@ -101,7 +101,7 @@ object Web {
   inline def defaultSessionDescriptionHandlerFactory(
     mediaStreamFactory: js.Function2[
       /* constraints */ MediaStreamConstraints, 
-      /* sessionDescriptionHandler */ typings.sipJs.sessionDescriptionHandlerSessionDescriptionHandlerMod.SessionDescriptionHandler, 
+      /* sessionDescriptionHandler */ typings.sipJs.libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerMod.SessionDescriptionHandler, 
       js.Promise[MediaStream]
     ]
   ): SessionDescriptionHandlerFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSessionDescriptionHandlerFactory")(mediaStreamFactory.asInstanceOf[js.Any]).asInstanceOf[SessionDescriptionHandlerFactory]

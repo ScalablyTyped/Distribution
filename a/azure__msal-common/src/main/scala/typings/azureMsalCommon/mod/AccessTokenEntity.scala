@@ -1,6 +1,6 @@
 package typings.azureMsalCommon.mod
 
-import typings.azureMsalCommon.icryptoMod.ICrypto
+import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "AccessTokenEntity")
 @js.native
 open class AccessTokenEntity ()
-  extends typings.azureMsalCommon.accessTokenEntityMod.AccessTokenEntity
+  extends typings.azureMsalCommon.distCacheEntitiesAccessTokenEntityMod.AccessTokenEntity
 /* static members */
 object AccessTokenEntity {
   
@@ -38,12 +38,12 @@ object AccessTokenEntity {
     extExpiresOn: Double,
     cryptoUtils: ICrypto,
     refreshOn: js.UndefOr[Double],
-    tokenType: js.UndefOr[typings.azureMsalCommon.constantsMod.AuthenticationScheme],
+    tokenType: js.UndefOr[typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme],
     userAssertionHash: js.UndefOr[String],
     keyId: js.UndefOr[String],
     requestedClaims: js.UndefOr[String],
     requestedClaimsHash: js.UndefOr[String]
-  ): typings.azureMsalCommon.accessTokenEntityMod.AccessTokenEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccessTokenEntity")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], tenantId.asInstanceOf[js.Any], scopes.asInstanceOf[js.Any], expiresOn.asInstanceOf[js.Any], extExpiresOn.asInstanceOf[js.Any], cryptoUtils.asInstanceOf[js.Any], refreshOn.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any], userAssertionHash.asInstanceOf[js.Any], keyId.asInstanceOf[js.Any], requestedClaims.asInstanceOf[js.Any], requestedClaimsHash.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accessTokenEntityMod.AccessTokenEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccessTokenEntityMod.AccessTokenEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccessTokenEntity")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], tenantId.asInstanceOf[js.Any], scopes.asInstanceOf[js.Any], expiresOn.asInstanceOf[js.Any], extExpiresOn.asInstanceOf[js.Any], cryptoUtils.asInstanceOf[js.Any], refreshOn.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any], userAssertionHash.asInstanceOf[js.Any], keyId.asInstanceOf[js.Any], requestedClaims.asInstanceOf[js.Any], requestedClaimsHash.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccessTokenEntityMod.AccessTokenEntity]
   
   /**
     * Validates an entity: checks for all expected params

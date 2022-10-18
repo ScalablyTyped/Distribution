@@ -1,11 +1,11 @@
 package typings.memfs
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.memfs.libNodeMod.Link
+import typings.memfs.libNodeMod.Node
 import typings.memfs.memfsBooleans.`false`
 import typings.memfs.memfsBooleans.`true`
 import typings.memfs.memfsStrings.string
-import typings.memfs.nodeMod.Link
-import typings.memfs.nodeMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -497,16 +497,16 @@ object anon {
   
   trait File extends StObject {
     
-    var File: Instantiable1[/* args (repeated) */ Any, typings.memfs.nodeMod.File]
+    var File: Instantiable1[/* args (repeated) */ Any, typings.memfs.libNodeMod.File]
     
-    var Link: Instantiable1[/* args (repeated) */ Any, typings.memfs.nodeMod.Link]
+    var Link: Instantiable1[/* args (repeated) */ Any, typings.memfs.libNodeMod.Link]
     
-    var Node: Instantiable1[/* args (repeated) */ Any, typings.memfs.nodeMod.Node]
+    var Node: Instantiable1[/* args (repeated) */ Any, typings.memfs.libNodeMod.Node]
   }
   object File {
     
     inline def apply(
-      File: Instantiable1[/* args (repeated) */ Any, typings.memfs.nodeMod.File],
+      File: Instantiable1[/* args (repeated) */ Any, typings.memfs.libNodeMod.File],
       Link: Instantiable1[/* args (repeated) */ Any, Link],
       Node: Instantiable1[/* args (repeated) */ Any, Node]
     ): File = {
@@ -516,7 +516,7 @@ object anon {
     
     extension [Self <: File](x: Self) {
       
-      inline def setFile(value: Instantiable1[/* args (repeated) */ Any, typings.memfs.nodeMod.File]): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
+      inline def setFile(value: Instantiable1[/* args (repeated) */ Any, typings.memfs.libNodeMod.File]): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
       
       inline def setLink(value: Instantiable1[/* args (repeated) */ Any, Link]): Self = StObject.set(x, "Link", value.asInstanceOf[js.Any])
       

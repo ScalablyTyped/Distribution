@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the exposure settings on a capture device. */
-@JSGlobal("Windows.Media.Devices.ExposureControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.ExposureControl")
 @js.native
-abstract class ExposureControl ()
+open class ExposureControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.ExposureControl {
   

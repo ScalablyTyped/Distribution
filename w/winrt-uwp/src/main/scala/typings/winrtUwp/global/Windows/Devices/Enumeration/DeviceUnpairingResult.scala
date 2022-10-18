@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about the result of attempting to unpair a device. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceUnpairingResult")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.DeviceUnpairingResult")
 @js.native
-abstract class DeviceUnpairingResult ()
+open class DeviceUnpairingResult ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DeviceUnpairingResult {
   

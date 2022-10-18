@@ -1,9 +1,9 @@
 package typings.jupyterlabPropertyInspector
 
-import typings.jupyterlabApplication.shellMod.ILabShell
-import typings.jupyterlabPropertyInspector.tokenMod.IPropertyInspector
+import typings.jupyterlabApplication.libShellMod.ILabShell
+import typings.jupyterlabPropertyInspector.libTokenMod.IPropertyInspector
+import typings.jupyterlabTranslation.libTokensMod.ITranslator
 import typings.luminoCoreutils.mod.Token
-import typings.luminoMessaging.mod.Message
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,25 +13,29 @@ object mod {
   
   @JSImport("@jupyterlab/property-inspector", "IPropertyInspectorProvider")
   @js.native
-  val IPropertyInspectorProvider: Token[typings.jupyterlabPropertyInspector.tokenMod.IPropertyInspectorProvider] = js.native
+  val IPropertyInspectorProvider: Token[typings.jupyterlabPropertyInspector.libTokenMod.IPropertyInspectorProvider] = js.native
   
   @JSImport("@jupyterlab/property-inspector", "SideBarPropertyInspectorProvider")
   @js.native
-  class SideBarPropertyInspectorProvider protected () extends PropertyInspectorProvider {
+  open class SideBarPropertyInspectorProvider protected () extends PropertyInspectorProvider {
     /**
       * Construct a new Side Bar Property Inspector.
       */
     def this(labshell: ILabShell) = this()
     def this(labshell: ILabShell, placeholder: Widget) = this()
+    def this(labshell: ILabShell, placeholder: Unit, translator: ITranslator) = this()
+    def this(labshell: ILabShell, placeholder: Widget, translator: ITranslator) = this()
     
-    /* private */ var _labshell: js.Any = js.native
+    /* private */ var _labshell: Any = js.native
     
     /**
       * Handle the case when the current widget is not in our tracker.
       */
-    /* private */ var _onShellCurrentChanged: js.Any = js.native
+    /* private */ var _onShellCurrentChanged: Any = js.native
     
-    /* private */ var _placeholder: js.Any = js.native
+    /* private */ var _placeholder: Any = js.native
+    
+    /* private */ var _trans: Any = js.native
     
     /**
       * Register a widget in the property inspector provider.
@@ -46,6 +50,8 @@ object mod {
       */
     /* CompleteClass */
     override def register(widget: Widget): IPropertyInspector = js.native
+    
+    /* protected */ var translator: ITranslator = js.native
   }
   
   /**
@@ -54,26 +60,26 @@ object mod {
   @js.native
   trait PropertyInspectorProvider
     extends Widget
-       with typings.jupyterlabPropertyInspector.tokenMod.IPropertyInspectorProvider {
+       with typings.jupyterlabPropertyInspector.libTokenMod.IPropertyInspectorProvider {
     
-    /* private */ var _inspectors: js.Any = js.native
+    /* private */ var _inspectors: Any = js.native
     
     /**
       * Handle a change to the current widget in the tracker.
       */
-    /* private */ var _onCurrentChanged: js.Any = js.native
+    /* private */ var _onCurrentChanged: Any = js.native
     
     /**
       * Handle inspector actions.
       */
-    /* private */ var _onInspectorAction: js.Any = js.native
+    /* private */ var _onInspectorAction: Any = js.native
     
     /**
       * Handle the disposal of a widget.
       */
-    /* private */ var _onWidgetDisposed: js.Any = js.native
+    /* private */ var _onWidgetDisposed: Any = js.native
     
-    /* private */ var _tracker: js.Any = js.native
+    /* private */ var _tracker: Any = js.native
     
     /**
       * The current widget being tracked by the inspector.
@@ -93,14 +99,6 @@ object mod {
       */
     /* InferMemberOverrides */
     override def dispose(): Unit = js.native
-    
-    /**
-      * Process a message sent to the handler.
-      *
-      * @param msg - The message to be processed.
-      */
-    /* InferMemberOverrides */
-    override def processMessage(msg: Message): Unit = js.native
     
     /**
       * Refresh the content for the current widget.

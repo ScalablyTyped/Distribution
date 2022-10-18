@@ -1,15 +1,13 @@
 package typings.grommet.anon
 
-import typings.grommet.utilsMod.BackgroundType
+import typings.grommet.utilsMod.BorderType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `9` extends StObject {
   
-  var background: js.UndefOr[BackgroundType] = js.undefined
-  
-  var border: js.UndefOr[`4`] = js.undefined
+  var border: js.UndefOr[BorderType] = js.undefined
 }
 object `9` {
   
@@ -20,12 +18,10 @@ object `9` {
   
   extension [Self <: `9`](x: Self) {
     
-    inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
-    
-    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
-    
-    inline def setBorder(value: `4`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: BorderType): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setBorderVarargs(value: ColorError*): Self = StObject.set(x, "border", js.Array(value*))
   }
 }

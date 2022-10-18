@@ -1,6 +1,6 @@
 package typings.azureCoreClient.mod
 
-import typings.azureAbortController.abortSignalMod.AbortSignalLike
+import typings.azureAbortController.typesSrcAbortSignalMod.AbortSignalLike
 import typings.azureCoreTracing.mod.OperationTracingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

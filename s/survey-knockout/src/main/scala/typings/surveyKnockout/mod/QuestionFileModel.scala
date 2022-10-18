@@ -202,7 +202,9 @@ open class QuestionFileModel protected () extends Question {
   /*
     * Remove file item programmatically.
     */
-  def removeFile(content: Any): Unit = js.native
+  def removeFile(name: String): Unit = js.native
+  
+  /* protected */ def removeFileByContent(content: Any): Unit = js.native
   
   /*
     * The remove file button caption.

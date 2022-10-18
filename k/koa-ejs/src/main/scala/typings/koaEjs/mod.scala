@@ -215,6 +215,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object koaAugmentingMod {
     
     @js.native

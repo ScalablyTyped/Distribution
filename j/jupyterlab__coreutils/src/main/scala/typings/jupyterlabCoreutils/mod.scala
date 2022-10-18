@@ -1,11 +1,11 @@
 package typings.jupyterlabCoreutils
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jupyterlabCoreutils.activitymonitorMod.ActivityMonitor.IOptions
 import typings.jupyterlabCoreutils.anon.Download
-import typings.jupyterlabCoreutils.pageconfigMod.PageConfig.IGetUrlOptions
-import typings.jupyterlabCoreutils.urlMod.URLExt.IUrl
-import typings.luminoCoreutils.jsonMod.PartialJSONObject
+import typings.jupyterlabCoreutils.libActivitymonitorMod.ActivityMonitor.IOptions
+import typings.jupyterlabCoreutils.libPageconfigMod.PageConfig.IGetUrlOptions
+import typings.jupyterlabCoreutils.libUrlMod.URLExt.IUrl
+import typings.luminoCoreutils.typesJsonMod.PartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object mod {
   @JSImport("@jupyterlab/coreutils", "ActivityMonitor")
   @js.native
   open class ActivityMonitor[Sender, Args] protected ()
-    extends typings.jupyterlabCoreutils.activitymonitorMod.ActivityMonitor[Sender, Args] {
+    extends typings.jupyterlabCoreutils.libActivitymonitorMod.ActivityMonitor[Sender, Args] {
     /**
       * Construct a new activity monitor.
       */
@@ -35,7 +35,7 @@ object mod {
     @JSImport("@jupyterlab/coreutils", "MarkdownCodeBlocks.MarkdownCodeBlock")
     @js.native
     open class MarkdownCodeBlock protected ()
-      extends typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock {
+      extends typings.jupyterlabCoreutils.libMarkdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock {
       def this(startLine: Double) = this()
     }
     
@@ -47,9 +47,9 @@ object mod {
       * @returns An array of MarkdownCodeBlocks.
       */
     inline def findMarkdownCodeBlocks(text: String): js.Array[
-        typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock
+        typings.jupyterlabCoreutils.libMarkdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findMarkdownCodeBlocks")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[
-        typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock
+        typings.jupyterlabCoreutils.libMarkdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock
       ]]
     
     /**

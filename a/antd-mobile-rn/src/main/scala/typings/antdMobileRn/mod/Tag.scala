@@ -1,8 +1,8 @@
 package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.AfterClose
-import typings.antdMobileRn.tagIndexNativeMod.TagNativeProps
-import typings.antdMobileRn.tagIndexNativeMod.default
+import typings.antdMobileRn.libTagIndexDotnativeMod.TagNativeProps
+import typings.antdMobileRn.libTagIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,5 +1,6 @@
 package typings.node.childProcessMod
 
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.nodeStrings.buffer_
 import org.scalablytyped.runtime.StObject
@@ -12,7 +13,7 @@ trait SpawnSyncOptions
   
   var encoding: js.UndefOr[BufferEncoding | buffer_ | Null] = js.undefined
   
-  var input: js.UndefOr[String | js.typedarray.ArrayBufferView] = js.undefined
+  var input: js.UndefOr[String | ArrayBufferView] = js.undefined
   
   var maxBuffer: js.UndefOr[Double] = js.undefined
 }
@@ -31,7 +32,7 @@ object SpawnSyncOptions {
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setInput(value: String | js.typedarray.ArrayBufferView): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String | ArrayBufferView): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     

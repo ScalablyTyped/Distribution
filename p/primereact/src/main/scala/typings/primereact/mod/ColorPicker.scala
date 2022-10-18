@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.colorpickerMod.ColorPickerProps
+import typings.primereact.colorpickerColorpickerMod.ColorPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "ColorPicker")
 @js.native
 open class ColorPicker protected ()
-  extends typings.primereact.colorpickerMod.ColorPicker {
+  extends typings.primereact.colorpickerColorpickerMod.ColorPicker {
   def this(props: ColorPickerProps) = this()
   /**
     * @deprecated

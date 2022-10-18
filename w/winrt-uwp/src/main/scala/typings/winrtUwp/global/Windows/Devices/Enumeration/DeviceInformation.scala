@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a device. This class allows access to well-known device properties as well as additional properties specified during device enumeration. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceInformation")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.DeviceInformation")
 @js.native
-abstract class DeviceInformation ()
+open class DeviceInformation ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation {
   

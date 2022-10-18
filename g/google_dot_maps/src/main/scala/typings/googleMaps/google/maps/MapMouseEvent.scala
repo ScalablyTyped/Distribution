@@ -31,7 +31,7 @@ trait MapMouseEvent extends StObject {
   /**
     * The latitude/longitude that was below the cursor when the event occurred.
     */
-  var latLng: LatLng | Null
+  var latLng: Null | LatLng
   
   /**
     * Prevents this event from propagating further.

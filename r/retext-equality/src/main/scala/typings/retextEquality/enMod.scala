@@ -1,7 +1,7 @@
 package typings.retextEquality
 
 import typings.nlcst.mod.Root
-import typings.retextEquality.factoryMod.Options
+import typings.retextEquality.libFactoryMod.Options
 import typings.unified.mod.Transformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

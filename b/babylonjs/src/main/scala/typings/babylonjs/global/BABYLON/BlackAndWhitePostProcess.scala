@@ -21,47 +21,52 @@ open class BlackAndWhitePostProcess protected ()
     * @param engine The engine which the post process will be applied. (default: current engine)
     * @param reusable If the post process can be reused on the same frame. (default: false)
     */
-  def this(name: String, options: Double, camera: typings.babylonjs.BABYLON.Camera) = this()
-  def this(name: String, options: PostProcessOptions, camera: typings.babylonjs.BABYLON.Camera) = this()
-  def this(name: String, options: Double, camera: typings.babylonjs.BABYLON.Camera, samplingMode: Double) = this()
+  def this(name: String, options: Double, camera: Nullable[typings.babylonjs.BABYLON.Camera]) = this()
+  def this(name: String, options: PostProcessOptions, camera: Nullable[typings.babylonjs.BABYLON.Camera]) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
+    samplingMode: Double
+  ) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double
   ) = this()
   def this(
     name: String,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
     name: String,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
   def this(
     name: String,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: Unit,
     reusable: Boolean
@@ -69,7 +74,7 @@ open class BlackAndWhitePostProcess protected ()
   def this(
     name: String,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
@@ -77,7 +82,7 @@ open class BlackAndWhitePostProcess protected ()
   def this(
     name: String,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: Unit,
     reusable: Boolean
@@ -85,7 +90,7 @@ open class BlackAndWhitePostProcess protected ()
   def this(
     name: String,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
@@ -93,7 +98,7 @@ open class BlackAndWhitePostProcess protected ()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: Unit,
     reusable: Boolean
@@ -101,7 +106,7 @@ open class BlackAndWhitePostProcess protected ()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
@@ -109,7 +114,7 @@ open class BlackAndWhitePostProcess protected ()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: Unit,
     reusable: Boolean
@@ -117,7 +122,7 @@ open class BlackAndWhitePostProcess protected ()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean

@@ -4,11 +4,9 @@ import typings.chromeApps.anon.WIFI
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chromeAppsStrings.None
 import typings.chromeApps.chromeAppsStrings.WI_FI
-import typings.chromeApps.chromeAppsStrings.WiFi
 import typings.chromeApps.chromeAppsStrings.`WEP-PSK`
 import typings.chromeApps.chromeAppsStrings.`WPA-EAP`
 import typings.chromeApps.chromeAppsStrings.`WPA-PSK`
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,11 +52,21 @@ object config {
     var Security: js.UndefOr[None | `WEP-PSK` | `WPA-PSK` | `WPA-EAP`] = js.undefined
     
     /** Currently only WiFi supported. */
-    var Type: ToStringLiteral[WIFI, WI_FI, Exclude[WI_FI, WiFi]]
+    var Type: ToStringLiteral[
+        WIFI, 
+        WI_FI, 
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  WI_FI :'WiFi'} extends keyof {  WI_FI :'WiFi'} ? std.Exclude<keyof {  WI_FI :'WiFi'}, 'WiFi'> : never */ js.Any
+      ]
   }
   object NetworkInfo {
     
-    inline def apply(Type: ToStringLiteral[WIFI, WI_FI, Exclude[WI_FI, WiFi]]): NetworkInfo = {
+    inline def apply(
+      Type: ToStringLiteral[
+          WIFI, 
+          WI_FI, 
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  WI_FI :'WiFi'} extends keyof {  WI_FI :'WiFi'} ? std.Exclude<keyof {  WI_FI :'WiFi'}, 'WiFi'> : never */ js.Any
+        ]
+    ): NetworkInfo = {
       val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetworkInfo]
     }
@@ -85,7 +93,13 @@ object config {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "Security", js.undefined)
       
-      inline def setType(value: ToStringLiteral[WIFI, WI_FI, Exclude[WI_FI, WiFi]]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(
+        value: ToStringLiteral[
+              WIFI, 
+              WI_FI, 
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  WI_FI :'WiFi'} extends keyof {  WI_FI :'WiFi'} ? std.Exclude<keyof {  WI_FI :'WiFi'}, 'WiFi'> : never */ js.Any
+            ]
+      ): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
   

@@ -24,9 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Connectivity {
   
   /** Provides access to property values containing information on current usage of the attributed network connection. */
-  @JSGlobal("Windows.Networking.Connectivity.AttributedNetworkUsage")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.AttributedNetworkUsage")
   @js.native
-  abstract class AttributedNetworkUsage ()
+  open class AttributedNetworkUsage ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.AttributedNetworkUsage {
     
@@ -104,9 +104,9 @@ object Connectivity {
   }
   
   /** Provides access to property values that indicate the current cost of a network connection. */
-  @JSGlobal("Windows.Networking.Connectivity.ConnectionCost")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.ConnectionCost")
   @js.native
-  abstract class ConnectionCost ()
+  open class ConnectionCost ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.ConnectionCost {
     
@@ -132,9 +132,9 @@ object Connectivity {
   }
   
   /** Represents a network connection, which includes either the currently connected network or prior network connections. Provides information about the connection status and connectivity statistics. */
-  @JSGlobal("Windows.Networking.Connectivity.ConnectionProfile")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.ConnectionProfile")
   @js.native
-  abstract class ConnectionProfile ()
+  open class ConnectionProfile ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile
   
@@ -184,9 +184,9 @@ object Connectivity {
   }
   
   /** The ConnectionSession class is used to represent a connection to an access point established with AcquireConnectionAsync . */
-  @JSGlobal("Windows.Networking.Connectivity.ConnectionSession")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.ConnectionSession")
   @js.native
-  abstract class ConnectionSession ()
+  open class ConnectionSession ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.ConnectionSession {
     
@@ -200,9 +200,9 @@ object Connectivity {
   }
   
   /** Provides the start time and duration for an established or prior connection. */
-  @JSGlobal("Windows.Networking.Connectivity.ConnectivityInterval")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.ConnectivityInterval")
   @js.native
-  abstract class ConnectivityInterval ()
+  open class ConnectivityInterval ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.ConnectivityInterval {
     
@@ -216,9 +216,9 @@ object Connectivity {
   }
   
   /** Methods defined by the ConnectivityManager class enable enforcement of traffic routing on a specific network adapter for the specified destination suffix. Once a policy is set using AddHttpRoutePolicy , traffic that matches the policy will either be routed or dropped. */
-  @JSGlobal("Windows.Networking.Connectivity.ConnectivityManager")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.ConnectivityManager")
   @js.native
-  abstract class ConnectivityManager ()
+  open class ConnectivityManager ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.ConnectivityManager
   object ConnectivityManager {
@@ -251,9 +251,9 @@ object Connectivity {
   }
   
   /** Represents the current status information for the data plan associated with a connection. */
-  @JSGlobal("Windows.Networking.Connectivity.DataPlanStatus")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.DataPlanStatus")
   @js.native
-  abstract class DataPlanStatus ()
+  open class DataPlanStatus ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.DataPlanStatus {
     
@@ -283,9 +283,9 @@ object Connectivity {
   }
   
   /** Represents data plan specific data usage information for a connection. */
-  @JSGlobal("Windows.Networking.Connectivity.DataPlanUsage")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.DataPlanUsage")
   @js.native
-  abstract class DataPlanUsage ()
+  open class DataPlanUsage ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.DataPlanUsage {
     
@@ -299,9 +299,9 @@ object Connectivity {
   }
   
   /** Represents data usage information returned by the ConnectionProfile.GetLocalUsage method. */
-  @JSGlobal("Windows.Networking.Connectivity.DataUsage")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.DataUsage")
   @js.native
-  abstract class DataUsage ()
+  open class DataUsage ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.DataUsage {
     
@@ -349,9 +349,9 @@ object Connectivity {
   }
   
   /** Represents the association between an IP address and an adapter on the network. */
-  @JSGlobal("Windows.Networking.Connectivity.IPInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.IPInformation")
   @js.native
-  abstract class IPInformation ()
+  open class IPInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.IPInformation {
     
@@ -365,9 +365,9 @@ object Connectivity {
   }
   
   /** Represents physical identification data for a specific NetworkAdapter object. */
-  @JSGlobal("Windows.Networking.Connectivity.LanIdentifier")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.LanIdentifier")
   @js.native
-  abstract class LanIdentifier ()
+  open class LanIdentifier ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.LanIdentifier {
     
@@ -385,9 +385,9 @@ object Connectivity {
   }
   
   /** Represents the port specific data that enables LAN locality capabilities. */
-  @JSGlobal("Windows.Networking.Connectivity.LanIdentifierData")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.LanIdentifierData")
   @js.native
-  abstract class LanIdentifierData ()
+  open class LanIdentifierData ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.LanIdentifierData {
     
@@ -401,9 +401,9 @@ object Connectivity {
   }
   
   /** Represents a network adapter. */
-  @JSGlobal("Windows.Networking.Connectivity.NetworkAdapter")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.NetworkAdapter")
   @js.native
-  abstract class NetworkAdapter ()
+  open class NetworkAdapter ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.NetworkAdapter {
     
@@ -532,9 +532,9 @@ object Connectivity {
   }
   
   /** Provides access to network connection information for the local machine. */
-  @JSGlobal("Windows.Networking.Connectivity.NetworkInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.NetworkInformation")
   @js.native
-  abstract class NetworkInformation ()
+  open class NetworkInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.NetworkInformation
   object NetworkInformation {
@@ -620,9 +620,9 @@ object Connectivity {
   }
   
   /** Represents a connected network. */
-  @JSGlobal("Windows.Networking.Connectivity.NetworkItem")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.NetworkItem")
   @js.native
-  abstract class NetworkItem ()
+  open class NetworkItem ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.NetworkItem {
     
@@ -639,9 +639,9 @@ object Connectivity {
   }
   
   /** Represents the current network security settings. */
-  @JSGlobal("Windows.Networking.Connectivity.NetworkSecuritySettings")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.NetworkSecuritySettings")
   @js.native
-  abstract class NetworkSecuritySettings ()
+  open class NetworkSecuritySettings ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.NetworkSecuritySettings {
     
@@ -655,9 +655,9 @@ object Connectivity {
   }
   
   /** Indicates which properties of a network have changed after a network state change background trigger. */
-  @JSGlobal("Windows.Networking.Connectivity.NetworkStateChangeEventDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.NetworkStateChangeEventDetails")
   @js.native
-  abstract class NetworkStateChangeEventDetails ()
+  open class NetworkStateChangeEventDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.NetworkStateChangeEventDetails {
     
@@ -710,9 +710,9 @@ object Connectivity {
   }
   
   /** Represents network usage statistics returned by the ConnectionProfile . GetNetworkUsageAsync method. */
-  @JSGlobal("Windows.Networking.Connectivity.NetworkUsage")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.NetworkUsage")
   @js.native
-  abstract class NetworkUsage ()
+  open class NetworkUsage ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.NetworkUsage {
     
@@ -730,9 +730,9 @@ object Connectivity {
   }
   
   /** Represents the proxy configuration for the current user. */
-  @JSGlobal("Windows.Networking.Connectivity.ProxyConfiguration")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.ProxyConfiguration")
   @js.native
-  abstract class ProxyConfiguration ()
+  open class ProxyConfiguration ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.ProxyConfiguration {
     
@@ -807,9 +807,9 @@ object Connectivity {
   }
   
   /** Used to access information specific to a WLAN connection. */
-  @JSGlobal("Windows.Networking.Connectivity.WlanConnectionProfileDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.WlanConnectionProfileDetails")
   @js.native
-  abstract class WlanConnectionProfileDetails ()
+  open class WlanConnectionProfileDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.WlanConnectionProfileDetails {
     
@@ -822,9 +822,9 @@ object Connectivity {
   }
   
   /** Used to access information specific to a WWAN connection. */
-  @JSGlobal("Windows.Networking.Connectivity.WwanConnectionProfileDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Connectivity.WwanConnectionProfileDetails")
   @js.native
-  abstract class WwanConnectionProfileDetails ()
+  open class WwanConnectionProfileDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.WwanConnectionProfileDetails {
     

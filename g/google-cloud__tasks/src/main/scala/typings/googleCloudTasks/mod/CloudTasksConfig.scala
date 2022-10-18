@@ -1,7 +1,7 @@
 package typings.googleCloudTasks.mod
 
-import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
-import typings.googleAuthLibrary.googleauthMod.JSONClient
+import typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.JSONClient
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

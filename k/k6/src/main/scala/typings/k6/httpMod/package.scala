@@ -1,7 +1,6 @@
 package typings.k6.httpMod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.k6.anon.Replace
 import typings.k6.httpMod.^
 import typings.k6.mod.bytes
@@ -163,10 +162,6 @@ type BatchRequest = _BatchRequest | String | ArrayBatchRequest
 
 type BatchRequests = js.Array[BatchRequest] | StringDictionary[BatchRequest]
 
-type BatchResponses[Q] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof Q ]: Q[K] extends k6.k6/http.RefinedBatchRequest<infer RT>? k6.k6/http.RefinedResponse<any> : never}
-  */ typings.k6.k6Strings.BatchResponses & TopLevel[Q]
-
 type CookieJarCookies = StringDictionary[js.Array[String]]
 
 type ExpectedStatusesCallback = StringDictionary[scala.Nothing]
@@ -180,8 +175,6 @@ type ParamsCookieValue = String | Replace
   - typings.k6.httpMod.ObjectRefinedBatchRequest[RT]
 */
 type RefinedBatchRequest[RT /* <: js.UndefOr[ResponseType] */] = _RefinedBatchRequest[RT] | String | ArrayRefinedBatchRequest[RT]
-
-type RefinedResponseBody[RT /* <: js.UndefOr[ResponseType] */] = String | Null | bytes
 
 type RequestBody = String | StructuredRequestBody | js.typedarray.ArrayBuffer
 

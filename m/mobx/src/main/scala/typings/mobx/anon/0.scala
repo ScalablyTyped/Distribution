@@ -14,27 +14,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `0` extends StObject {
   
-  val `0`: String
+  val `0`: /* Invalid value for configuration 'enforceActions', expected 'never', 'always' or 'observed' */ String
   
   def `1`(annotationType: Any, key: PropertyKey): String
   
-  val `10`: String
+  val `10`: /* 'has()' can only be used on observable objects, arrays and maps */ String
   
-  val `11`: String
+  val `11`: /* 'get()' can only be used on observable objects, arrays and maps */ String
   
   val `12`: `Invalid annotation`
   
-  val `13`: String
+  val `13`: /* Dynamic observable objects cannot be frozen. If you're passing observables to 3rd party component/function that calls Object.freeze, pass copy instead: toJS(observable) */ String
   
   val `14`: `Intercept handlers should return nothing or a change object`
   
-  val `15`: String
+  val `15`: /* Observable arrays cannot be frozen. If you're passing observables to 3rd party component/function that calls Object.freeze, pass copy instead: toJS(observable) */ String
   
-  val `16`: String
+  val `16`: /* Modification exception: the internal structure of an observable array was changed. */ String
   
   def `17`(index: Any, length: Any): String
   
-  val `18`: String
+  val `18`: /* mobx.map requires Map polyfill for the current browser. Check babel-polyfill or core-js/es6/map.js */ String
   
   def `19`(other: Any): String
   
@@ -42,7 +42,7 @@ trait `0` extends StObject {
   
   def `21`(dataStructure: Any): String
   
-  val `22`: String
+  val `22`: /* mobx.set requires Set polyfill for the current browser. Check babel-polyfill or core-js/es6/set.js */ String
   
   val `23`: `It is not possible to get index atoms from arrays`
   
@@ -68,25 +68,25 @@ trait `0` extends StObject {
   
   def `34`(name: Any): String
   
-  val `35`: String
+  val `35`: /* There are multiple, different versions of MobX active. Make sure MobX is loaded only once or use `configure({ isolateGlobalState: true })` */ String
   
-  val `36`: String
+  val `36`: /* isolateGlobalState should be called before MobX is running any reactions */ String
   
   def `37`(method: Any): String
   
-  val `38`: String
+  val `38`: /* 'ownKeys()' can only be used on observable objects */ String
   
-  val `39`: String
+  val `39`: /* 'defineProperty()' can only be used on observable objects */ String
   
-  val `5`: String
+  val `5`: /* 'keys()' can only be used on observable objects, arrays, sets and maps */ String
   
-  val `6`: String
+  val `6`: /* 'values()' can only be used on observable objects, arrays, sets and maps */ String
   
-  val `7`: String
+  val `7`: /* 'entries()' can only be used on observable objects, arrays and maps */ String
   
-  val `8`: String
+  val `8`: /* 'set()' can only be used on observable objects, arrays and maps */ String
   
-  val `9`: String
+  val `9`: /* 'remove()' can only be used on observable objects, arrays and maps */ String
 }
 object `0` {
   
@@ -148,27 +148,37 @@ object `0` {
   
   extension [Self <: `0`](x: Self) {
     
-    inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def set0(
+      value: /* Invalid value for configuration 'enforceActions', expected 'never', 'always' or 'observed' */ String
+    ): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
     inline def set1(value: (Any, PropertyKey) => String): Self = StObject.set(x, "1", js.Any.fromFunction2(value))
     
-    inline def set10(value: String): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
+    inline def set10(value: /* 'has()' can only be used on observable objects, arrays and maps */ String): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
     
-    inline def set11(value: String): Self = StObject.set(x, "11", value.asInstanceOf[js.Any])
+    inline def set11(value: /* 'get()' can only be used on observable objects, arrays and maps */ String): Self = StObject.set(x, "11", value.asInstanceOf[js.Any])
     
     inline def set12(value: `Invalid annotation`): Self = StObject.set(x, "12", value.asInstanceOf[js.Any])
     
-    inline def set13(value: String): Self = StObject.set(x, "13", value.asInstanceOf[js.Any])
+    inline def set13(
+      value: /* Dynamic observable objects cannot be frozen. If you're passing observables to 3rd party component/function that calls Object.freeze, pass copy instead: toJS(observable) */ String
+    ): Self = StObject.set(x, "13", value.asInstanceOf[js.Any])
     
     inline def set14(value: `Intercept handlers should return nothing or a change object`): Self = StObject.set(x, "14", value.asInstanceOf[js.Any])
     
-    inline def set15(value: String): Self = StObject.set(x, "15", value.asInstanceOf[js.Any])
+    inline def set15(
+      value: /* Observable arrays cannot be frozen. If you're passing observables to 3rd party component/function that calls Object.freeze, pass copy instead: toJS(observable) */ String
+    ): Self = StObject.set(x, "15", value.asInstanceOf[js.Any])
     
-    inline def set16(value: String): Self = StObject.set(x, "16", value.asInstanceOf[js.Any])
+    inline def set16(
+      value: /* Modification exception: the internal structure of an observable array was changed. */ String
+    ): Self = StObject.set(x, "16", value.asInstanceOf[js.Any])
     
     inline def set17(value: (Any, Any) => String): Self = StObject.set(x, "17", js.Any.fromFunction2(value))
     
-    inline def set18(value: String): Self = StObject.set(x, "18", value.asInstanceOf[js.Any])
+    inline def set18(
+      value: /* mobx.map requires Map polyfill for the current browser. Check babel-polyfill or core-js/es6/map.js */ String
+    ): Self = StObject.set(x, "18", value.asInstanceOf[js.Any])
     
     inline def set19(value: Any => String): Self = StObject.set(x, "19", js.Any.fromFunction1(value))
     
@@ -176,7 +186,9 @@ object `0` {
     
     inline def set21(value: Any => String): Self = StObject.set(x, "21", js.Any.fromFunction1(value))
     
-    inline def set22(value: String): Self = StObject.set(x, "22", value.asInstanceOf[js.Any])
+    inline def set22(
+      value: /* mobx.set requires Set polyfill for the current browser. Check babel-polyfill or core-js/es6/set.js */ String
+    ): Self = StObject.set(x, "22", value.asInstanceOf[js.Any])
     
     inline def set23(value: `It is not possible to get index atoms from arrays`): Self = StObject.set(x, "23", value.asInstanceOf[js.Any])
     
@@ -202,24 +214,26 @@ object `0` {
     
     inline def set34(value: Any => String): Self = StObject.set(x, "34", js.Any.fromFunction1(value))
     
-    inline def set35(value: String): Self = StObject.set(x, "35", value.asInstanceOf[js.Any])
+    inline def set35(
+      value: /* There are multiple, different versions of MobX active. Make sure MobX is loaded only once or use `configure({ isolateGlobalState: true })` */ String
+    ): Self = StObject.set(x, "35", value.asInstanceOf[js.Any])
     
-    inline def set36(value: String): Self = StObject.set(x, "36", value.asInstanceOf[js.Any])
+    inline def set36(value: /* isolateGlobalState should be called before MobX is running any reactions */ String): Self = StObject.set(x, "36", value.asInstanceOf[js.Any])
     
     inline def set37(value: Any => String): Self = StObject.set(x, "37", js.Any.fromFunction1(value))
     
-    inline def set38(value: String): Self = StObject.set(x, "38", value.asInstanceOf[js.Any])
+    inline def set38(value: /* 'ownKeys()' can only be used on observable objects */ String): Self = StObject.set(x, "38", value.asInstanceOf[js.Any])
     
-    inline def set39(value: String): Self = StObject.set(x, "39", value.asInstanceOf[js.Any])
+    inline def set39(value: /* 'defineProperty()' can only be used on observable objects */ String): Self = StObject.set(x, "39", value.asInstanceOf[js.Any])
     
-    inline def set5(value: String): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+    inline def set5(value: /* 'keys()' can only be used on observable objects, arrays, sets and maps */ String): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
     
-    inline def set6(value: String): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+    inline def set6(value: /* 'values()' can only be used on observable objects, arrays, sets and maps */ String): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
     
-    inline def set7(value: String): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
+    inline def set7(value: /* 'entries()' can only be used on observable objects, arrays and maps */ String): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
     
-    inline def set8(value: String): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
+    inline def set8(value: /* 'set()' can only be used on observable objects, arrays and maps */ String): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
     
-    inline def set9(value: String): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
+    inline def set9(value: /* 'remove()' can only be used on observable objects, arrays and maps */ String): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
   }
 }

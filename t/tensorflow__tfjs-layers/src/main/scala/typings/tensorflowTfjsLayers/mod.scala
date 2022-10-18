@@ -1,154 +1,160 @@
 package typings.tensorflowTfjsLayers
 
+import typings.tensorflowTfjsCore.distIoTypesMod.IOHandler
+import typings.tensorflowTfjsCore.distIoTypesMod.LoadOptions
+import typings.tensorflowTfjsCore.distSerializationMod.ConfigDict
+import typings.tensorflowTfjsCore.distSerializationMod.SerializableConstructor
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.mod.serialization.Serializable
-import typings.tensorflowTfjsCore.serializationMod.ConfigDict
-import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
-import typings.tensorflowTfjsCore.typesMod.IOHandler
-import typings.tensorflowTfjsCore.typesMod.LoadOptions
-import typings.tensorflowTfjsLayers.advancedActivationsMod.ELU
-import typings.tensorflowTfjsLayers.advancedActivationsMod.ELULayerArgs
-import typings.tensorflowTfjsLayers.advancedActivationsMod.LeakyReLU
-import typings.tensorflowTfjsLayers.advancedActivationsMod.LeakyReLULayerArgs
-import typings.tensorflowTfjsLayers.advancedActivationsMod.PReLU
-import typings.tensorflowTfjsLayers.advancedActivationsMod.PReLULayerArgs
-import typings.tensorflowTfjsLayers.advancedActivationsMod.ReLU
-import typings.tensorflowTfjsLayers.advancedActivationsMod.ReLULayerArgs
-import typings.tensorflowTfjsLayers.advancedActivationsMod.Softmax
-import typings.tensorflowTfjsLayers.advancedActivationsMod.SoftmaxLayerArgs
-import typings.tensorflowTfjsLayers.advancedActivationsMod.ThresholdedReLU
-import typings.tensorflowTfjsLayers.advancedActivationsMod.ThresholdedReLULayerArgs
-import typings.tensorflowTfjsLayers.baseCallbacksMod.BaseCallback
-import typings.tensorflowTfjsLayers.baseCallbacksMod.BaseCallbackConstructor
-import typings.tensorflowTfjsLayers.baseCallbacksMod.CustomCallbackArgs
-import typings.tensorflowTfjsLayers.baseCallbacksMod.YieldEveryOptions
-import typings.tensorflowTfjsLayers.callbacksMod.EarlyStoppingCallbackArgs
-import typings.tensorflowTfjsLayers.callbacksMod.EarlyStopping_
-import typings.tensorflowTfjsLayers.constraintsMod.Constraint
-import typings.tensorflowTfjsLayers.constraintsMod.MaxNormArgs
-import typings.tensorflowTfjsLayers.constraintsMod.MinMaxNormArgs
-import typings.tensorflowTfjsLayers.constraintsMod.UnitNormArgs
-import typings.tensorflowTfjsLayers.containerMod.ContainerArgs
-import typings.tensorflowTfjsLayers.convolutionalDepthwiseMod.DepthwiseConv2DLayerArgs
-import typings.tensorflowTfjsLayers.convolutionalDepthwiseMod.DepthwiseConv2D_
-import typings.tensorflowTfjsLayers.convolutionalMod.Conv1D_
-import typings.tensorflowTfjsLayers.convolutionalMod.Conv2DTranspose
-import typings.tensorflowTfjsLayers.convolutionalMod.Conv2D_
-import typings.tensorflowTfjsLayers.convolutionalMod.Conv3D_
-import typings.tensorflowTfjsLayers.convolutionalMod.ConvLayerArgs
-import typings.tensorflowTfjsLayers.convolutionalMod.Cropping2D
-import typings.tensorflowTfjsLayers.convolutionalMod.Cropping2DLayerArgs
-import typings.tensorflowTfjsLayers.convolutionalMod.SeparableConv2D
-import typings.tensorflowTfjsLayers.convolutionalMod.SeparableConvLayerArgs
-import typings.tensorflowTfjsLayers.convolutionalMod.UpSampling2D
-import typings.tensorflowTfjsLayers.convolutionalMod.UpSampling2DLayerArgs
-import typings.tensorflowTfjsLayers.convolutionalRecurrentMod.ConvLSTM2D
-import typings.tensorflowTfjsLayers.convolutionalRecurrentMod.ConvLSTM2DArgs
-import typings.tensorflowTfjsLayers.convolutionalRecurrentMod.ConvLSTM2DCell
-import typings.tensorflowTfjsLayers.convolutionalRecurrentMod.ConvLSTM2DCellArgs
-import typings.tensorflowTfjsLayers.coreMod.Activation
-import typings.tensorflowTfjsLayers.coreMod.ActivationLayerArgs
-import typings.tensorflowTfjsLayers.coreMod.Dense
-import typings.tensorflowTfjsLayers.coreMod.DenseLayerArgs
-import typings.tensorflowTfjsLayers.coreMod.Dropout
-import typings.tensorflowTfjsLayers.coreMod.DropoutLayerArgs
-import typings.tensorflowTfjsLayers.coreMod.Flatten
-import typings.tensorflowTfjsLayers.coreMod.FlattenLayerArgs
-import typings.tensorflowTfjsLayers.coreMod.Masking
-import typings.tensorflowTfjsLayers.coreMod.MaskingArgs
-import typings.tensorflowTfjsLayers.coreMod.Permute
-import typings.tensorflowTfjsLayers.coreMod.PermuteLayerArgs
-import typings.tensorflowTfjsLayers.coreMod.RepeatVector
-import typings.tensorflowTfjsLayers.coreMod.RepeatVectorLayerArgs
-import typings.tensorflowTfjsLayers.coreMod.Reshape
-import typings.tensorflowTfjsLayers.coreMod.ReshapeLayerArgs
-import typings.tensorflowTfjsLayers.coreMod.SpatialDropout1D
-import typings.tensorflowTfjsLayers.coreMod.SpatialDropout1DLayerConfig
+import typings.tensorflowTfjsLayers.distBaseCallbacksMod.BaseCallback
+import typings.tensorflowTfjsLayers.distBaseCallbacksMod.BaseCallbackConstructor
+import typings.tensorflowTfjsLayers.distBaseCallbacksMod.CustomCallbackArgs
+import typings.tensorflowTfjsLayers.distBaseCallbacksMod.YieldEveryOptions
+import typings.tensorflowTfjsLayers.distCallbacksMod.EarlyStoppingCallbackArgs
+import typings.tensorflowTfjsLayers.distCallbacksMod.EarlyStopping_
+import typings.tensorflowTfjsLayers.distConstraintsMod.Constraint
+import typings.tensorflowTfjsLayers.distConstraintsMod.MaxNormArgs
+import typings.tensorflowTfjsLayers.distConstraintsMod.MinMaxNormArgs
+import typings.tensorflowTfjsLayers.distConstraintsMod.UnitNormArgs
+import typings.tensorflowTfjsLayers.distEngineContainerMod.ContainerArgs
+import typings.tensorflowTfjsLayers.distEngineInputLayerMod.InputConfig
+import typings.tensorflowTfjsLayers.distEngineInputLayerMod.InputLayer
+import typings.tensorflowTfjsLayers.distEngineInputLayerMod.InputLayerArgs
+import typings.tensorflowTfjsLayers.distEngineTopologyMod.InputSpecArgs
+import typings.tensorflowTfjsLayers.distEngineTopologyMod.Layer
+import typings.tensorflowTfjsLayers.distEngineTopologyMod.LayerArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.ConstantArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.IdentityArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.Initializer
+import typings.tensorflowTfjsLayers.distInitializersMod.OrthogonalArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.RandomNormalArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.RandomUniformArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.SeedOnlyInitializerArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.TruncatedNormalArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.VarianceScalingArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.Zeros
+import typings.tensorflowTfjsLayers.distKerasFormatCommonMod.Shape
+import typings.tensorflowTfjsLayers.distKerasFormatTypesMod.PyJsonDict
+import typings.tensorflowTfjsLayers.distLayersAdvancedActivationsMod.ELU
+import typings.tensorflowTfjsLayers.distLayersAdvancedActivationsMod.ELULayerArgs
+import typings.tensorflowTfjsLayers.distLayersAdvancedActivationsMod.LeakyReLU
+import typings.tensorflowTfjsLayers.distLayersAdvancedActivationsMod.LeakyReLULayerArgs
+import typings.tensorflowTfjsLayers.distLayersAdvancedActivationsMod.PReLU
+import typings.tensorflowTfjsLayers.distLayersAdvancedActivationsMod.PReLULayerArgs
+import typings.tensorflowTfjsLayers.distLayersAdvancedActivationsMod.ReLU
+import typings.tensorflowTfjsLayers.distLayersAdvancedActivationsMod.ReLULayerArgs
+import typings.tensorflowTfjsLayers.distLayersAdvancedActivationsMod.Softmax
+import typings.tensorflowTfjsLayers.distLayersAdvancedActivationsMod.SoftmaxLayerArgs
+import typings.tensorflowTfjsLayers.distLayersAdvancedActivationsMod.ThresholdedReLU
+import typings.tensorflowTfjsLayers.distLayersAdvancedActivationsMod.ThresholdedReLULayerArgs
+import typings.tensorflowTfjsLayers.distLayersConvolutionalDepthwiseMod.DepthwiseConv2DLayerArgs
+import typings.tensorflowTfjsLayers.distLayersConvolutionalDepthwiseMod.DepthwiseConv2D_
+import typings.tensorflowTfjsLayers.distLayersConvolutionalMod.Conv1D_
+import typings.tensorflowTfjsLayers.distLayersConvolutionalMod.Conv2DTranspose
+import typings.tensorflowTfjsLayers.distLayersConvolutionalMod.Conv2D_
+import typings.tensorflowTfjsLayers.distLayersConvolutionalMod.Conv3D_
+import typings.tensorflowTfjsLayers.distLayersConvolutionalMod.ConvLayerArgs
+import typings.tensorflowTfjsLayers.distLayersConvolutionalMod.Cropping2D
+import typings.tensorflowTfjsLayers.distLayersConvolutionalMod.Cropping2DLayerArgs
+import typings.tensorflowTfjsLayers.distLayersConvolutionalMod.SeparableConv2D
+import typings.tensorflowTfjsLayers.distLayersConvolutionalMod.SeparableConvLayerArgs
+import typings.tensorflowTfjsLayers.distLayersConvolutionalMod.UpSampling2D
+import typings.tensorflowTfjsLayers.distLayersConvolutionalMod.UpSampling2DLayerArgs
+import typings.tensorflowTfjsLayers.distLayersConvolutionalRecurrentMod.ConvLSTM2D
+import typings.tensorflowTfjsLayers.distLayersConvolutionalRecurrentMod.ConvLSTM2DArgs
+import typings.tensorflowTfjsLayers.distLayersConvolutionalRecurrentMod.ConvLSTM2DCell
+import typings.tensorflowTfjsLayers.distLayersConvolutionalRecurrentMod.ConvLSTM2DCellArgs
+import typings.tensorflowTfjsLayers.distLayersCoreMod.Activation
+import typings.tensorflowTfjsLayers.distLayersCoreMod.ActivationLayerArgs
+import typings.tensorflowTfjsLayers.distLayersCoreMod.Dense
+import typings.tensorflowTfjsLayers.distLayersCoreMod.DenseLayerArgs
+import typings.tensorflowTfjsLayers.distLayersCoreMod.Dropout
+import typings.tensorflowTfjsLayers.distLayersCoreMod.DropoutLayerArgs
+import typings.tensorflowTfjsLayers.distLayersCoreMod.Flatten
+import typings.tensorflowTfjsLayers.distLayersCoreMod.FlattenLayerArgs
+import typings.tensorflowTfjsLayers.distLayersCoreMod.Masking
+import typings.tensorflowTfjsLayers.distLayersCoreMod.MaskingArgs
+import typings.tensorflowTfjsLayers.distLayersCoreMod.Permute
+import typings.tensorflowTfjsLayers.distLayersCoreMod.PermuteLayerArgs
+import typings.tensorflowTfjsLayers.distLayersCoreMod.RepeatVector
+import typings.tensorflowTfjsLayers.distLayersCoreMod.RepeatVectorLayerArgs
+import typings.tensorflowTfjsLayers.distLayersCoreMod.Reshape
+import typings.tensorflowTfjsLayers.distLayersCoreMod.ReshapeLayerArgs
+import typings.tensorflowTfjsLayers.distLayersCoreMod.SpatialDropout1D
+import typings.tensorflowTfjsLayers.distLayersCoreMod.SpatialDropout1DLayerConfig
+import typings.tensorflowTfjsLayers.distLayersEmbeddingsMod.Embedding
+import typings.tensorflowTfjsLayers.distLayersEmbeddingsMod.EmbeddingLayerArgs
+import typings.tensorflowTfjsLayers.distLayersMergeMod.Add_
+import typings.tensorflowTfjsLayers.distLayersMergeMod.Average_
+import typings.tensorflowTfjsLayers.distLayersMergeMod.ConcatenateLayerArgs
+import typings.tensorflowTfjsLayers.distLayersMergeMod.Concatenate_
+import typings.tensorflowTfjsLayers.distLayersMergeMod.Dot
+import typings.tensorflowTfjsLayers.distLayersMergeMod.DotLayerArgs
+import typings.tensorflowTfjsLayers.distLayersMergeMod.Maximum_
+import typings.tensorflowTfjsLayers.distLayersMergeMod.Minimum_
+import typings.tensorflowTfjsLayers.distLayersMergeMod.Multiply_
+import typings.tensorflowTfjsLayers.distLayersNoiseMod.AlphaDropout
+import typings.tensorflowTfjsLayers.distLayersNoiseMod.AlphaDropoutArgs
+import typings.tensorflowTfjsLayers.distLayersNoiseMod.GaussianDropout
+import typings.tensorflowTfjsLayers.distLayersNoiseMod.GaussianDropoutArgs
+import typings.tensorflowTfjsLayers.distLayersNoiseMod.GaussianNoise
+import typings.tensorflowTfjsLayers.distLayersNoiseMod.GaussianNoiseArgs
+import typings.tensorflowTfjsLayers.distLayersNormalizationMod.BatchNormalizationLayerArgs
+import typings.tensorflowTfjsLayers.distLayersNormalizationMod.BatchNormalization_
+import typings.tensorflowTfjsLayers.distLayersNormalizationMod.LayerNormalization
+import typings.tensorflowTfjsLayers.distLayersNormalizationMod.LayerNormalizationLayerArgs
+import typings.tensorflowTfjsLayers.distLayersPaddingMod.ZeroPadding2D
+import typings.tensorflowTfjsLayers.distLayersPaddingMod.ZeroPadding2DLayerArgs
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.AveragePooling1D
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.AveragePooling2D
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.AveragePooling3D
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.GlobalAveragePooling1D
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.GlobalAveragePooling2D
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.GlobalMaxPooling1D
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.GlobalMaxPooling2D
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.GlobalPooling2DLayerArgs
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.MaxPooling1D
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.MaxPooling2D
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.MaxPooling3D
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.Pooling1DLayerArgs
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.Pooling2DLayerArgs
+import typings.tensorflowTfjsLayers.distLayersPoolingMod.Pooling3DLayerArgs
+import typings.tensorflowTfjsLayers.distLayersPreprocessingCategoryEncodingMod.CategoryEncoding
+import typings.tensorflowTfjsLayers.distLayersPreprocessingCategoryEncodingMod.CategoryEncodingArgs
+import typings.tensorflowTfjsLayers.distLayersPreprocessingImagePreprocessingMod.Rescaling
+import typings.tensorflowTfjsLayers.distLayersPreprocessingImagePreprocessingMod.RescalingArgs
+import typings.tensorflowTfjsLayers.distLayersPreprocessingImageResizingMod.Resizing
+import typings.tensorflowTfjsLayers.distLayersPreprocessingImageResizingMod.ResizingArgs
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.GRU
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.GRUCell
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.GRUCellLayerArgs
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.GRULayerArgs
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.LSTM
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.LSTMCell
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.LSTMCellLayerArgs
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.LSTMLayerArgs
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.RNNLayerArgs
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.RNN_
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.SimpleRNN
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.SimpleRNNCell
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.SimpleRNNCellLayerArgs
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.SimpleRNNLayerArgs
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.StackedRNNCells
+import typings.tensorflowTfjsLayers.distLayersRecurrentMod.StackedRNNCellsArgs
+import typings.tensorflowTfjsLayers.distLayersWrappersMod.Bidirectional
+import typings.tensorflowTfjsLayers.distLayersWrappersMod.BidirectionalLayerArgs
+import typings.tensorflowTfjsLayers.distLayersWrappersMod.TimeDistributed
+import typings.tensorflowTfjsLayers.distLayersWrappersMod.WrapperLayerArgs
+import typings.tensorflowTfjsLayers.distModelsMod.ModelAndWeightsConfig
+import typings.tensorflowTfjsLayers.distModelsMod.Sequential
+import typings.tensorflowTfjsLayers.distModelsMod.SequentialArgs
+import typings.tensorflowTfjsLayers.distRegularizersMod.L1Args
+import typings.tensorflowTfjsLayers.distRegularizersMod.L1L2Args
+import typings.tensorflowTfjsLayers.distRegularizersMod.L2Args
+import typings.tensorflowTfjsLayers.distRegularizersMod.Regularizer
 import typings.tensorflowTfjsLayers.distTypesMod.Kwargs
-import typings.tensorflowTfjsLayers.embeddingsMod.Embedding
-import typings.tensorflowTfjsLayers.embeddingsMod.EmbeddingLayerArgs
-import typings.tensorflowTfjsLayers.initializersMod.ConstantArgs
-import typings.tensorflowTfjsLayers.initializersMod.IdentityArgs
-import typings.tensorflowTfjsLayers.initializersMod.Initializer
-import typings.tensorflowTfjsLayers.initializersMod.OrthogonalArgs
-import typings.tensorflowTfjsLayers.initializersMod.RandomNormalArgs
-import typings.tensorflowTfjsLayers.initializersMod.RandomUniformArgs
-import typings.tensorflowTfjsLayers.initializersMod.SeedOnlyInitializerArgs
-import typings.tensorflowTfjsLayers.initializersMod.TruncatedNormalArgs
-import typings.tensorflowTfjsLayers.initializersMod.VarianceScalingArgs
-import typings.tensorflowTfjsLayers.initializersMod.Zeros
-import typings.tensorflowTfjsLayers.inputLayerMod.InputConfig
-import typings.tensorflowTfjsLayers.inputLayerMod.InputLayer
-import typings.tensorflowTfjsLayers.inputLayerMod.InputLayerArgs
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
-import typings.tensorflowTfjsLayers.mergeMod.Add_
-import typings.tensorflowTfjsLayers.mergeMod.Average_
-import typings.tensorflowTfjsLayers.mergeMod.ConcatenateLayerArgs
-import typings.tensorflowTfjsLayers.mergeMod.Concatenate_
-import typings.tensorflowTfjsLayers.mergeMod.Dot
-import typings.tensorflowTfjsLayers.mergeMod.DotLayerArgs
-import typings.tensorflowTfjsLayers.mergeMod.Maximum_
-import typings.tensorflowTfjsLayers.mergeMod.Minimum_
-import typings.tensorflowTfjsLayers.mergeMod.Multiply_
-import typings.tensorflowTfjsLayers.modelsMod.ModelAndWeightsConfig
-import typings.tensorflowTfjsLayers.modelsMod.Sequential
-import typings.tensorflowTfjsLayers.modelsMod.SequentialArgs
-import typings.tensorflowTfjsLayers.noiseMod.AlphaDropout
-import typings.tensorflowTfjsLayers.noiseMod.AlphaDropoutArgs
-import typings.tensorflowTfjsLayers.noiseMod.GaussianDropout
-import typings.tensorflowTfjsLayers.noiseMod.GaussianDropoutArgs
-import typings.tensorflowTfjsLayers.noiseMod.GaussianNoise
-import typings.tensorflowTfjsLayers.noiseMod.GaussianNoiseArgs
-import typings.tensorflowTfjsLayers.normalizationMod.BatchNormalizationLayerArgs
-import typings.tensorflowTfjsLayers.normalizationMod.BatchNormalization_
-import typings.tensorflowTfjsLayers.normalizationMod.LayerNormalization
-import typings.tensorflowTfjsLayers.normalizationMod.LayerNormalizationLayerArgs
-import typings.tensorflowTfjsLayers.paddingMod.ZeroPadding2D
-import typings.tensorflowTfjsLayers.paddingMod.ZeroPadding2DLayerArgs
-import typings.tensorflowTfjsLayers.poolingMod.AveragePooling1D
-import typings.tensorflowTfjsLayers.poolingMod.AveragePooling2D
-import typings.tensorflowTfjsLayers.poolingMod.AveragePooling3D
-import typings.tensorflowTfjsLayers.poolingMod.GlobalAveragePooling1D
-import typings.tensorflowTfjsLayers.poolingMod.GlobalAveragePooling2D
-import typings.tensorflowTfjsLayers.poolingMod.GlobalMaxPooling1D
-import typings.tensorflowTfjsLayers.poolingMod.GlobalMaxPooling2D
-import typings.tensorflowTfjsLayers.poolingMod.GlobalPooling2DLayerArgs
-import typings.tensorflowTfjsLayers.poolingMod.MaxPooling1D
-import typings.tensorflowTfjsLayers.poolingMod.MaxPooling2D
-import typings.tensorflowTfjsLayers.poolingMod.MaxPooling3D
-import typings.tensorflowTfjsLayers.poolingMod.Pooling1DLayerArgs
-import typings.tensorflowTfjsLayers.poolingMod.Pooling2DLayerArgs
-import typings.tensorflowTfjsLayers.poolingMod.Pooling3DLayerArgs
-import typings.tensorflowTfjsLayers.recurrentMod.GRU
-import typings.tensorflowTfjsLayers.recurrentMod.GRUCell
-import typings.tensorflowTfjsLayers.recurrentMod.GRUCellLayerArgs
-import typings.tensorflowTfjsLayers.recurrentMod.GRULayerArgs
-import typings.tensorflowTfjsLayers.recurrentMod.LSTM
-import typings.tensorflowTfjsLayers.recurrentMod.LSTMCell
-import typings.tensorflowTfjsLayers.recurrentMod.LSTMCellLayerArgs
-import typings.tensorflowTfjsLayers.recurrentMod.LSTMLayerArgs
-import typings.tensorflowTfjsLayers.recurrentMod.RNNLayerArgs
-import typings.tensorflowTfjsLayers.recurrentMod.RNN_
-import typings.tensorflowTfjsLayers.recurrentMod.SimpleRNN
-import typings.tensorflowTfjsLayers.recurrentMod.SimpleRNNCell
-import typings.tensorflowTfjsLayers.recurrentMod.SimpleRNNCellLayerArgs
-import typings.tensorflowTfjsLayers.recurrentMod.SimpleRNNLayerArgs
-import typings.tensorflowTfjsLayers.recurrentMod.StackedRNNCells
-import typings.tensorflowTfjsLayers.recurrentMod.StackedRNNCellsArgs
-import typings.tensorflowTfjsLayers.regularizersMod.L1Args
-import typings.tensorflowTfjsLayers.regularizersMod.L1L2Args
-import typings.tensorflowTfjsLayers.regularizersMod.L2Args
-import typings.tensorflowTfjsLayers.regularizersMod.Regularizer
-import typings.tensorflowTfjsLayers.topologyMod.InputSpecArgs
-import typings.tensorflowTfjsLayers.topologyMod.Layer
-import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
-import typings.tensorflowTfjsLayers.typesMod.PyJsonDict
-import typings.tensorflowTfjsLayers.wrappersMod.Bidirectional
-import typings.tensorflowTfjsLayers.wrappersMod.BidirectionalLayerArgs
-import typings.tensorflowTfjsLayers.wrappersMod.TimeDistributed
-import typings.tensorflowTfjsLayers.wrappersMod.WrapperLayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -159,10 +165,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-layers", "Callback")
+  /* note: abstract class */ @JSImport("@tensorflow/tfjs-layers", "Callback")
   @js.native
-  abstract class Callback ()
-    extends typings.tensorflowTfjsLayers.callbacksMod.Callback
+  open class Callback ()
+    extends typings.tensorflowTfjsLayers.distCallbacksMod.Callback
   
   @JSImport("@tensorflow/tfjs-layers", "CallbackList")
   @js.native
@@ -173,7 +179,7 @@ object mod {
     *   callback execution time.
     */
   open class CallbackList ()
-    extends typings.tensorflowTfjsLayers.baseCallbacksMod.CallbackList {
+    extends typings.tensorflowTfjsLayers.distBaseCallbacksMod.CallbackList {
     def this(callbacks: js.Array[BaseCallback]) = this()
     def this(callbacks: js.Array[BaseCallback], queueLength: Double) = this()
     def this(callbacks: Unit, queueLength: Double) = this()
@@ -182,7 +188,7 @@ object mod {
   @JSImport("@tensorflow/tfjs-layers", "CustomCallback")
   @js.native
   open class CustomCallback protected ()
-    extends typings.tensorflowTfjsLayers.baseCallbacksMod.CustomCallback {
+    extends typings.tensorflowTfjsLayers.distBaseCallbacksMod.CustomCallback {
     def this(args: CustomCallbackArgs) = this()
     def this(args: CustomCallbackArgs, yieldEvery: YieldEveryOptions) = this()
   }
@@ -196,19 +202,19 @@ object mod {
   @JSImport("@tensorflow/tfjs-layers", "History")
   @js.native
   open class History ()
-    extends typings.tensorflowTfjsLayers.baseCallbacksMod.History
+    extends typings.tensorflowTfjsLayers.distBaseCallbacksMod.History
   
   @JSImport("@tensorflow/tfjs-layers", "InputSpec")
   @js.native
   open class InputSpec protected ()
-    extends typings.tensorflowTfjsLayers.topologyMod.InputSpec {
+    extends typings.tensorflowTfjsLayers.distEngineTopologyMod.InputSpec {
     def this(args: InputSpecArgs) = this()
   }
   
   @JSImport("@tensorflow/tfjs-layers", "LayerVariable")
   @js.native
   open class LayerVariable protected ()
-    extends typings.tensorflowTfjsLayers.variablesMod.LayerVariable {
+    extends typings.tensorflowTfjsLayers.distVariablesMod.LayerVariable {
     /**
       * Construct Variable from a `tf.Tensor`.
       *
@@ -244,7 +250,7 @@ object mod {
   @JSImport("@tensorflow/tfjs-layers", "LayersModel")
   @js.native
   open class LayersModel protected ()
-    extends typings.tensorflowTfjsLayers.trainingMod.LayersModel {
+    extends typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel {
     def this(args: ContainerArgs) = this()
   }
   /* static members */
@@ -317,7 +323,7 @@ object mod {
   @JSImport("@tensorflow/tfjs-layers", "SymbolicTensor")
   @js.native
   open class SymbolicTensor protected ()
-    extends typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor {
+    extends typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor {
     /**
       *
       * @param dtype
@@ -335,14 +341,14 @@ object mod {
       dtype: DataType,
       shape: Shape,
       sourceLayer: Layer,
-      inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
+      inputs: js.Array[typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor],
       callArgs: Kwargs
     ) = this()
     def this(
       dtype: DataType,
       shape: Shape,
       sourceLayer: Layer,
-      inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
+      inputs: js.Array[typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor],
       callArgs: Kwargs,
       name: String
     ) = this()
@@ -350,7 +356,7 @@ object mod {
       dtype: DataType,
       shape: Shape,
       sourceLayer: Layer,
-      inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
+      inputs: js.Array[typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor],
       callArgs: Kwargs,
       name: String,
       outputTensorIndex: Double
@@ -359,7 +365,7 @@ object mod {
       dtype: DataType,
       shape: Shape,
       sourceLayer: Layer,
-      inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
+      inputs: js.Array[typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor],
       callArgs: Kwargs,
       name: Unit,
       outputTensorIndex: Double
@@ -433,7 +439,7 @@ object mod {
     inline def zeros(): Zeros = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")().asInstanceOf[Zeros]
   }
   
-  inline def input(config: InputConfig): typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(config.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor]
+  inline def input(config: InputConfig): typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(config.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor]
   
   object layers {
     
@@ -441,10 +447,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.Layer")
+    /* note: abstract class */ @JSImport("@tensorflow/tfjs-layers", "layers.Layer")
     @js.native
-    abstract class Layer ()
-      extends typings.tensorflowTfjsLayers.exportsLayersMod.Layer {
+    open class Layer ()
+      extends typings.tensorflowTfjsLayers.distExportsLayersMod.Layer {
       def this(args: LayerArgs) = this()
     }
     /* static members */
@@ -463,20 +469,20 @@ object mod {
         *
         * @returns The unique name.
         */
-      inline def nodeKey(layer: typings.tensorflowTfjsLayers.topologyMod.Layer, nodeIndex: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeKey")(layer.asInstanceOf[js.Any], nodeIndex.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def nodeKey(layer: typings.tensorflowTfjsLayers.distEngineTopologyMod.Layer, nodeIndex: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeKey")(layer.asInstanceOf[js.Any], nodeIndex.asInstanceOf[js.Any])).asInstanceOf[String]
     }
     
-    @JSImport("@tensorflow/tfjs-layers", "layers.RNNCell")
+    /* note: abstract class */ @JSImport("@tensorflow/tfjs-layers", "layers.RNNCell")
     @js.native
-    abstract class RNNCell ()
-      extends typings.tensorflowTfjsLayers.exportsLayersMod.RNNCell {
+    open class RNNCell ()
+      extends typings.tensorflowTfjsLayers.distExportsLayersMod.RNNCell {
       def this(args: LayerArgs) = this()
     }
     
     @JSImport("@tensorflow/tfjs-layers", "layers.RNN")
     @js.native
     open class RNN_ protected ()
-      extends typings.tensorflowTfjsLayers.exportsLayersMod.RNN_ {
+      extends typings.tensorflowTfjsLayers.distExportsLayersMod.RNN_ {
       def this(args: RNNLayerArgs) = this()
     }
     /* static members */
@@ -530,6 +536,8 @@ object mod {
     
     inline def bidirectional(args: BidirectionalLayerArgs): Bidirectional = ^.asInstanceOf[js.Dynamic].applyDynamic("bidirectional")(args.asInstanceOf[js.Any]).asInstanceOf[Bidirectional]
     
+    inline def categoryEncoding(args: CategoryEncodingArgs): CategoryEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("categoryEncoding")(args.asInstanceOf[js.Any]).asInstanceOf[CategoryEncoding]
+    
     inline def concatenate(): Concatenate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")().asInstanceOf[Concatenate_]
     inline def concatenate(args: ConcatenateLayerArgs): Concatenate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(args.asInstanceOf[js.Any]).asInstanceOf[Concatenate_]
     
@@ -541,7 +549,7 @@ object mod {
     
     inline def conv3d(args: ConvLayerArgs): Conv3D_ = ^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(args.asInstanceOf[js.Any]).asInstanceOf[Conv3D_]
     
-    inline def conv3dTranspose(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def conv3dTranspose(args: ConvLayerArgs): typings.tensorflowTfjsLayers.distEngineTopologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.distEngineTopologyMod.Layer]
     
     inline def convLstm2d(args: ConvLSTM2DArgs): ConvLSTM2D = ^.asInstanceOf[js.Dynamic].applyDynamic("convLstm2d")(args.asInstanceOf[js.Any]).asInstanceOf[ConvLSTM2D]
     
@@ -591,7 +599,7 @@ object mod {
     
     inline def gruCell(args: GRUCellLayerArgs): GRUCell = ^.asInstanceOf[js.Dynamic].applyDynamic("gruCell")(args.asInstanceOf[js.Any]).asInstanceOf[GRUCell]
     
-    inline def input(config: InputConfig): typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(config.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor]
+    inline def input(config: InputConfig): typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(config.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor]
     
     inline def inputLayer(args: InputLayerArgs): InputLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("inputLayer")(args.asInstanceOf[js.Any]).asInstanceOf[InputLayer]
     
@@ -641,9 +649,15 @@ object mod {
     
     inline def repeatVector(args: RepeatVectorLayerArgs): RepeatVector = ^.asInstanceOf[js.Dynamic].applyDynamic("repeatVector")(args.asInstanceOf[js.Any]).asInstanceOf[RepeatVector]
     
+    inline def rescaling(): Rescaling = ^.asInstanceOf[js.Dynamic].applyDynamic("rescaling")().asInstanceOf[Rescaling]
+    inline def rescaling(args: RescalingArgs): Rescaling = ^.asInstanceOf[js.Dynamic].applyDynamic("rescaling")(args.asInstanceOf[js.Any]).asInstanceOf[Rescaling]
+    
     inline def reshape(args: ReshapeLayerArgs): Reshape = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(args.asInstanceOf[js.Any]).asInstanceOf[Reshape]
     
-    inline def rnn(args: RNNLayerArgs): typings.tensorflowTfjsLayers.recurrentMod.RNN_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rnn")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.recurrentMod.RNN_]
+    inline def resizing(): Resizing = ^.asInstanceOf[js.Dynamic].applyDynamic("resizing")().asInstanceOf[Resizing]
+    inline def resizing(args: ResizingArgs): Resizing = ^.asInstanceOf[js.Dynamic].applyDynamic("resizing")(args.asInstanceOf[js.Any]).asInstanceOf[Resizing]
+    
+    inline def rnn(args: RNNLayerArgs): typings.tensorflowTfjsLayers.distLayersRecurrentMod.RNN_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rnn")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.distLayersRecurrentMod.RNN_]
     
     inline def separableConv2d(args: SeparableConvLayerArgs): SeparableConv2D = ^.asInstanceOf[js.Dynamic].applyDynamic("separableConv2d")(args.asInstanceOf[js.Any]).asInstanceOf[SeparableConv2D]
     
@@ -669,10 +683,10 @@ object mod {
     inline def zeroPadding2d(args: ZeroPadding2DLayerArgs): ZeroPadding2D = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroPadding2d")(args.asInstanceOf[js.Any]).asInstanceOf[ZeroPadding2D]
   }
   
-  inline def loadLayersModel(pathOrIOHandler: String): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
-  inline def loadLayersModel(pathOrIOHandler: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
-  inline def loadLayersModel(pathOrIOHandler: IOHandler): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
-  inline def loadLayersModel(pathOrIOHandler: IOHandler, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
+  inline def loadLayersModel(pathOrIOHandler: String): js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
+  inline def loadLayersModel(pathOrIOHandler: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
+  inline def loadLayersModel(pathOrIOHandler: IOHandler): js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
+  inline def loadLayersModel(pathOrIOHandler: IOHandler, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
   
   object metrics {
     
@@ -711,7 +725,7 @@ object mod {
     inline def sparseCategoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseCategoricalAccuracy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   }
   
-  inline def model(args: ContainerArgs): typings.tensorflowTfjsLayers.trainingMod.LayersModel = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.trainingMod.LayersModel]
+  inline def model(args: ContainerArgs): typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]
   
   object models {
     
@@ -719,10 +733,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
-    inline def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig, customObjects: ConfigDict): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
-    inline def modelFromJSON(modelAndWeightsConfig: PyJsonDict): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
-    inline def modelFromJSON(modelAndWeightsConfig: PyJsonDict, customObjects: ConfigDict): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
+    inline def modelFromJSON(modelAndWeightsConfig: PyJsonDict): js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
+    inline def modelFromJSON(modelAndWeightsConfig: PyJsonDict, customObjects: ConfigDict): js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
+    inline def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig): js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
+    inline def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig, customObjects: ConfigDict): js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
   }
   
   inline def registerCallbackConstructor(verbosityLevel: Double, callbackConstructor: BaseCallbackConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCallbackConstructor")(verbosityLevel.asInstanceOf[js.Any], callbackConstructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -748,5 +762,5 @@ object mod {
   
   @JSImport("@tensorflow/tfjs-layers", "version_layers")
   @js.native
-  val versionLayers: /* "3.20.0" */ String = js.native
+  val versionLayers: /* "4.0.0" */ String = js.native
 }

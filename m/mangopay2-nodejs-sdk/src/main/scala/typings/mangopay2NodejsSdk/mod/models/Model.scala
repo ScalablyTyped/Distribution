@@ -6,11 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mangopay2-nodejs-sdk", "models.Model")
 @js.native
-open class Model[T] protected ()
+open class Model[T /* <: js.Object */] protected ()
   extends StObject
      with ModelMethods[T] {
   def this(data: T) = this()
   
-  def setData(attribute: Any): this.type = js.native
   def setData(attribute: Any, value: Any): this.type = js.native
 }

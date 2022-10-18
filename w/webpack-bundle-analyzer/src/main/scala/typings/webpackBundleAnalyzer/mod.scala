@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.webpack.mod.Compiler
 import typings.webpack.mod.Stats
 import typings.webpack.mod.StatsOptions
 import typings.webpack.mod.WebpackPluginInstance
+import typings.webpackBundleAnalyzer.anon.BoundAddress
 import typings.webpackBundleAnalyzer.mod.BundleAnalyzerPlugin.Options
 import typings.webpackBundleAnalyzer.mod.BundleAnalyzerPlugin.Stats.ToJsonOptions
 import typings.webpackBundleAnalyzer.webpackBundleAnalyzerStrings.auto
@@ -174,6 +175,12 @@ object mod {
       var analyzerPort: js.UndefOr[Double | auto] = js.undefined
       
       /**
+        * The URL printed to console with server mode.
+        * @default 'http://${listenHost}:${boundAddress.port}'
+        */
+      var analyzerUrl: js.UndefOr[js.Function1[/* options */ BoundAddress, String]] = js.undefined
+      
+      /**
         * Module sizes to show in report by default.
         * Should be one of "stat", "parsed" or "gzip".
         * @default 'parsed'
@@ -255,6 +262,10 @@ object mod {
         inline def setAnalyzerPort(value: Double | auto): Self = StObject.set(x, "analyzerPort", value.asInstanceOf[js.Any])
         
         inline def setAnalyzerPortUndefined: Self = StObject.set(x, "analyzerPort", js.undefined)
+        
+        inline def setAnalyzerUrl(value: /* options */ BoundAddress => String): Self = StObject.set(x, "analyzerUrl", js.Any.fromFunction1(value))
+        
+        inline def setAnalyzerUrlUndefined: Self = StObject.set(x, "analyzerUrl", js.undefined)
         
         inline def setDefaultSizes(value: parsed | stat | gzip): Self = StObject.set(x, "defaultSizes", value.asInstanceOf[js.Any])
         

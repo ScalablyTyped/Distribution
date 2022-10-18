@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,9 +46,7 @@ trait Job extends StObject {
     * size.
     */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Job & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains this job. */
@@ -113,9 +110,7 @@ trait Job extends StObject {
   
   /** The map of transform name prefixes of the job to be replaced to the corresponding name prefixes of the new job. */
   var transformNameMapping: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Job & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The type of Cloud Dataflow job. */
@@ -167,9 +162,7 @@ object Job {
     inline def setJobMetadataUndefined: Self = StObject.set(x, "jobMetadata", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Job & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -233,9 +226,7 @@ object Job {
     inline def setTempFilesVarargs(value: String*): Self = StObject.set(x, "tempFiles", js.Array(value*))
     
     inline def setTransformNameMapping(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Job & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "transformNameMapping", value.asInstanceOf[js.Any])
     
     inline def setTransformNameMappingUndefined: Self = StObject.set(x, "transformNameMapping", js.undefined)

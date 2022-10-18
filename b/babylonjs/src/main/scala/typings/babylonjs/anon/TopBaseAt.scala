@@ -1,7 +1,7 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathColorMod.Color4
-import typings.babylonjs.mathVectorMod.Vector4
+import typings.babylonjs.BABYLON.Color4
+import typings.babylonjs.BABYLON.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

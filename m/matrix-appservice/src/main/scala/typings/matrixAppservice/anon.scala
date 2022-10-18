@@ -1,6 +1,6 @@
 package typings.matrixAppservice
 
-import typings.matrixAppservice.appServiceRegistrationMod.RegexObj
+import typings.matrixAppservice.libAppServiceRegistrationMod.RegexObj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

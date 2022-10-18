@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object rtlScrollerMod {
   
-  @JSImport("@material/tab-scroller/rtl-scroller", JSImport.Default)
+  /* note: abstract class */ @JSImport("@material/tab-scroller/rtl-scroller", JSImport.Default)
   @js.native
-  abstract class default protected () extends MDCTabScrollerRTL {
+  open class default protected () extends MDCTabScrollerRTL {
     def this(adapter: MDCTabScrollerAdapter) = this()
   }
   
-  @JSImport("@material/tab-scroller/rtl-scroller", "MDCTabScrollerRTL")
+  /* note: abstract class */ @JSImport("@material/tab-scroller/rtl-scroller", "MDCTabScrollerRTL")
   @js.native
-  abstract class MDCTabScrollerRTL protected () extends StObject {
+  open class MDCTabScrollerRTL protected () extends StObject {
     def this(adapter: MDCTabScrollerAdapter) = this()
     
     /* protected */ val adapter: MDCTabScrollerAdapter = js.native

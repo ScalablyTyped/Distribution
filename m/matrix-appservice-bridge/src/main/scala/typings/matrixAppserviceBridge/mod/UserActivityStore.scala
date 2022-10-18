@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "UserActivityStore")
 @js.native
 open class UserActivityStore protected ()
-  extends typings.matrixAppserviceBridge.userActivityStoreMod.UserActivityStore {
+  extends typings.matrixAppserviceBridge.libComponentsUserActivityStoreMod.UserActivityStore {
   /**
     * Construct a store suitable for user bridging information.
     * @param db The connected NEDB database instance

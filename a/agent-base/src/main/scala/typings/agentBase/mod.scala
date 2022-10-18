@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.agentBase.agentBaseBooleans.`false`
 import typings.agentBase.agentBaseBooleans.`true`
 import typings.agentBase.anon.PickAgentaddRequest
+import typings.node.AbortSignal
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.eventsMod.EventEmitter
@@ -15,7 +17,6 @@ import typings.node.streamMod.Duplex
 import typings.node.tlsMod.KeyObject
 import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureVersion
-import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -186,8 +187,8 @@ object mod {
     var createConnection: js.UndefOr[
         js.Function2[
           /* options */ this.type, 
-          /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ typings.node.nodeNetMod.Socket, Unit], 
-          typings.node.nodeNetMod.Socket
+          /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ typings.node.nodeColonnetMod.Socket, Unit], 
+          typings.node.nodeColonnetMod.Socket
         ]
       ] = js.undefined
     
@@ -245,7 +246,7 @@ object mod {
       inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
       inline def setCreateConnection(
-        value: (HttpRequestOptions, /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ typings.node.nodeNetMod.Socket, Unit]) => typings.node.nodeNetMod.Socket
+        value: (HttpRequestOptions, /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ typings.node.nodeColonnetMod.Socket, Unit]) => typings.node.nodeColonnetMod.Socket
       ): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
       
       inline def setCreateConnectionUndefined: Self = StObject.set(x, "createConnection", js.undefined)
@@ -277,12 +278,7 @@ object mod {
       inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
       inline def setLookup(
-        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-              /* address */ String, 
-              /* family */ Double, 
-              Unit
-            ]) => Unit
+        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
       ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
       
       inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
@@ -354,8 +350,8 @@ object mod {
     var createConnection: js.UndefOr[
         js.Function2[
           /* options */ this.type, 
-          /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ typings.node.nodeNetMod.Socket, Unit], 
-          typings.node.nodeNetMod.Socket
+          /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ typings.node.nodeColonnetMod.Socket, Unit], 
+          typings.node.nodeColonnetMod.Socket
         ]
       ] = js.undefined
     
@@ -471,7 +467,7 @@ object mod {
       inline def setClientCertEngineUndefined: Self = StObject.set(x, "clientCertEngine", js.undefined)
       
       inline def setCreateConnection(
-        value: (HttpsRequestOptions, /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ typings.node.nodeNetMod.Socket, Unit]) => typings.node.nodeNetMod.Socket
+        value: (HttpsRequestOptions, /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ typings.node.nodeColonnetMod.Socket, Unit]) => typings.node.nodeColonnetMod.Socket
       ): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
       
       inline def setCreateConnectionUndefined: Self = StObject.set(x, "createConnection", js.undefined)
@@ -527,12 +523,7 @@ object mod {
       inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
       inline def setLookup(
-        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-              /* address */ String, 
-              /* family */ Double, 
-              Unit
-            ]) => Unit
+        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
       ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
       
       inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)

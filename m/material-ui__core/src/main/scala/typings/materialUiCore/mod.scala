@@ -10,7 +10,6 @@ import typings.materialUiCore.accordionSummaryAccordionSummaryMod.AccordionSumma
 import typings.materialUiCore.anon.HandleContainerOverflow
 import typings.materialUiCore.anon.IsFocusVisible
 import typings.materialUiCore.anon.PartialWithMobileDialog
-import typings.materialUiCore.anon.Style
 import typings.materialUiCore.anon.`4`
 import typings.materialUiCore.anon.`7`
 import typings.materialUiCore.anon.`8`
@@ -37,14 +36,8 @@ import typings.materialUiCore.chipChipMod.ChipTypeMap
 import typings.materialUiCore.circularProgressCircularProgressMod.CircularProgressProps
 import typings.materialUiCore.clickAwayListenerClickAwayListenerMod.ClickAwayListenerProps
 import typings.materialUiCore.collapseCollapseMod.CollapseProps
-import typings.materialUiCore.colorManipulatorMod.ColorObject
 import typings.materialUiCore.containerContainerMod.ContainerTypeMap
-import typings.materialUiCore.createBreakpointsMod.Breakpoint
-import typings.materialUiCore.createChainedFunctionMod.ChainedFunction
-import typings.materialUiCore.createThemeMod.Theme
-import typings.materialUiCore.createThemeMod.ThemeOptions
 import typings.materialUiCore.cssBaselineCssBaselineMod.CssBaselineProps
-import typings.materialUiCore.debounceMod.Cancelable
 import typings.materialUiCore.dialogActionsDialogActionsMod.DialogActionsProps
 import typings.materialUiCore.dialogContentDialogContentMod.DialogContentProps
 import typings.materialUiCore.dialogContentTextDialogContentTextMod.DialogContentTextTypeMap
@@ -61,6 +54,7 @@ import typings.materialUiCore.fadeFadeMod.FadeProps
 import typings.materialUiCore.filledInputFilledInputMod.FilledInputProps
 import typings.materialUiCore.formControlFormControlMod.FormControlTypeMap
 import typings.materialUiCore.formControlLabelFormControlLabelMod.FormControlLabelProps
+import typings.materialUiCore.formControlUseFormControlMod.FormControlState
 import typings.materialUiCore.formGroupFormGroupMod.FormGroupProps
 import typings.materialUiCore.formHelperTextFormHelperTextMod.FormHelperTextTypeMap
 import typings.materialUiCore.formLabelFormLabelMod.FormLabelTypeMap
@@ -368,6 +362,7 @@ import typings.materialUiCore.menuItemMenuItemMod.MenuItemTypeMap
 import typings.materialUiCore.menuListMenuListMod.MenuListProps
 import typings.materialUiCore.menuMenuMod.MenuProps
 import typings.materialUiCore.mobileStepperMobileStepperMod.MobileStepperProps
+import typings.materialUiCore.modalMod.default
 import typings.materialUiCore.modalModalMod.ModalProps
 import typings.materialUiCore.nativeSelectNativeSelectMod.NativeSelectProps
 import typings.materialUiCore.noSsrNoSsrMod.NoSsrProps
@@ -378,8 +373,8 @@ import typings.materialUiCore.popoverPopoverMod.PopoverProps
 import typings.materialUiCore.popperPopperMod.PopperProps
 import typings.materialUiCore.portalPortalMod.PortalProps
 import typings.materialUiCore.radioGroupRadioGroupMod.RadioGroupProps
+import typings.materialUiCore.radioGroupUseRadioGroupMod.RadioGroupState
 import typings.materialUiCore.radioRadioMod.RadioProps
-import typings.materialUiCore.responsiveFontSizesMod.ResponsiveFontSizesOptions
 import typings.materialUiCore.rootRefRootRefMod.RootRefProps
 import typings.materialUiCore.selectSelectMod.SelectProps
 import typings.materialUiCore.slideSlideMod.SlideProps
@@ -393,7 +388,17 @@ import typings.materialUiCore.stepIconStepIconMod.StepIconProps
 import typings.materialUiCore.stepLabelStepLabelMod.StepLabelProps
 import typings.materialUiCore.stepStepMod.StepProps
 import typings.materialUiCore.stepperStepperMod.StepperProps
-import typings.materialUiCore.styledMod.ComponentCreator
+import typings.materialUiCore.stylesColorManipulatorMod.ColorObject
+import typings.materialUiCore.stylesCreateBreakpointsMod.Breakpoint
+import typings.materialUiCore.stylesCreateThemeMod.Theme
+import typings.materialUiCore.stylesCreateThemeMod.ThemeOptions
+import typings.materialUiCore.stylesResponsiveFontSizesMod.ResponsiveFontSizesOptions
+import typings.materialUiCore.stylesStyledMod.ComponentCreator
+import typings.materialUiCore.stylesTransitionsMod.Duration_
+import typings.materialUiCore.stylesTransitionsMod.Easing_
+import typings.materialUiCore.stylesWithStylesMod.WithStyles
+import typings.materialUiCore.stylesWithThemeMod.ThemedComponentProps
+import typings.materialUiCore.stylesWithThemeMod.WithTheme
 import typings.materialUiCore.svgIconSvgIconMod.SvgIconTypeMap
 import typings.materialUiCore.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps
 import typings.materialUiCore.switchSwitchMod.SwitchProps
@@ -414,20 +419,15 @@ import typings.materialUiCore.textFieldTextFieldMod.TextFieldProps
 import typings.materialUiCore.textareaAutosizeTextareaAutosizeMod.TextareaAutosizeProps
 import typings.materialUiCore.toolbarToolbarMod.ToolbarTypeMap
 import typings.materialUiCore.tooltipTooltipMod.TooltipProps
-import typings.materialUiCore.transitionsMod.Duration_
-import typings.materialUiCore.transitionsMod.Easing_
 import typings.materialUiCore.typographyTypographyMod.TypographyTypeMap
 import typings.materialUiCore.unstableTrapFocusUnstableTrapFocusMod.TrapFocusProps
-import typings.materialUiCore.useControlledMod.UseControlledProps
-import typings.materialUiCore.useFormControlMod.FormControlState
 import typings.materialUiCore.useMediaQueryUseMediaQueryMod.Options
-import typings.materialUiCore.useRadioGroupMod.RadioGroupState
 import typings.materialUiCore.useScrollTriggerUseScrollTriggerMod.UseScrollTriggerOptions
+import typings.materialUiCore.utilsCreateChainedFunctionMod.ChainedFunction
+import typings.materialUiCore.utilsDebounceMod.Cancelable
+import typings.materialUiCore.utilsUseControlledMod.UseControlledProps
 import typings.materialUiCore.withMobileDialogWithMobileDialogMod.WithMobileDialog
 import typings.materialUiCore.withMobileDialogWithMobileDialogMod.WithMobileDialogOptions
-import typings.materialUiCore.withStylesMod.WithStyles
-import typings.materialUiCore.withThemeMod.ThemedComponentProps
-import typings.materialUiCore.withThemeMod.WithTheme
 import typings.materialUiCore.withWidthWithWidthMod.WithWidth
 import typings.materialUiCore.withWidthWithWidthMod.WithWidthOptions
 import typings.materialUiCore.withWidthWithWidthMod.WithWidthProps
@@ -435,7 +435,6 @@ import typings.materialUiCore.zoomZoomMod.ZoomProps
 import typings.materialUiStyles.createGenerateClassNameCreateGenerateClassNameMod.GenerateClassNameOptions
 import typings.materialUiStyles.stylesProviderStylesProviderMod.StylesProviderProps
 import typings.materialUiStyles.themeProviderThemeProviderMod.ThemeProviderProps
-import typings.materialUiStyles.withStylesWithStylesMod.ClassNameMap
 import typings.materialUiStyles.withStylesWithStylesMod.StyleRules
 import typings.materialUiStyles.withStylesWithStylesMod.StyledComponentProps
 import typings.materialUiStyles.withStylesWithStylesMod.Styles
@@ -461,6 +460,8 @@ object mod {
   @JSImport("@material-ui/core", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(props: ZoomProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def Accordion(props: AccordionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Accordion")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -1088,6 +1089,11 @@ object mod {
   
   inline def MobileStepper(props: MobileStepperProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MobileStepper")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
+  @JSImport("@material-ui/core", "Modal")
+  @js.native
+  open class Modal () extends default {
+    def this(opts: HandleContainerOverflow) = this()
+  }
   /**
     * Modal is a lower-level construct that is leveraged by the following components:
     *
@@ -1115,8 +1121,18 @@ object mod {
   @JSImport("@material-ui/core", "ModalManager")
   @js.native
   open class ModalManager ()
-    extends typings.materialUiCore.modalMod.ModalManager {
+    extends StObject
+       with typings.materialUiCore.modalModalManagerMod.ModalManager {
     def this(opts: HandleContainerOverflow) = this()
+    
+    /* CompleteClass */
+    override def add(modal: Any, container: Any): Double = js.native
+    
+    /* CompleteClass */
+    override def isTopModal(modal: Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def remove(modal: Any): Unit = js.native
   }
   
   inline def MuiThemeProvider[T](props: ThemeProviderProps[T]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MuiThemeProvider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
@@ -1186,7 +1202,8 @@ object mod {
   @JSImport("@material-ui/core", "ServerStyleSheets")
   @js.native
   open class ServerStyleSheets ()
-    extends typings.materialUiCore.stylesMod.ServerStyleSheets {
+    extends StObject
+       with typings.materialUiStyles.serverStyleSheetsServerStyleSheetsMod.ServerStyleSheets {
     def this(options: js.Object) = this()
   }
   
@@ -3622,12 +3639,12 @@ object mod {
   
   inline def lighten(color: String, coefficient: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(color.asInstanceOf[js.Any], coefficient.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def makeStyles[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey]): js.Function1[js.UndefOr[Any | (/* props */ Props)], ClassNameMap[ClassKey]] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[js.UndefOr[Any | (/* props */ Props)], ClassNameMap[ClassKey]]]
+  inline def makeStyles[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey]): /* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any]
   
   inline def makeStyles_withTheme[Theme, Props /* <: js.Object */, ClassKey /* <: String */](
     styles: Styles[Theme, Props, ClassKey],
     options: Omit[WithStylesOptions[Theme], typings.materialUiCore.materialUiCoreStrings.withTheme]
-  ): js.Function1[js.UndefOr[Any | (/* props */ Props)], ClassNameMap[ClassKey]] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[js.UndefOr[Any | (/* props */ Props)], ClassNameMap[ClassKey]]]
+  ): /* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any]
   
   inline def ownerDocument(): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("ownerDocument")().asInstanceOf[Document]
   inline def ownerDocument(node: Node): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("ownerDocument")(node.asInstanceOf[js.Any]).asInstanceOf[Document]
@@ -3887,5 +3904,5 @@ object mod {
     }
   }
   
-  type StandardProps[C, ClassKey /* <: String */, Removals /* <: /* keyof C */ String */] = (Omit[C, classes | Removals]) & StyledComponentProps[ClassKey] & Style[C]
+  type StandardProps[C, ClassKey /* <: String */, Removals /* <: /* keyof C */ String */] = (Omit[C, classes | Removals]) & StyledComponentProps[ClassKey] & typings.materialUiCore.anon.Ref[C]
 }

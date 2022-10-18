@@ -1,5 +1,7 @@
 package typings.materializeCss.mod
 
+import typings.materializeCss.M.MaterialboxOptions
+import typings.materializeCss.MElements
 import typings.materializeCss.anon.PartialMaterialboxOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -25,16 +27,34 @@ open class Materialbox ()
   override def close(): Unit = js.native
   
   /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
     * If the materialbox is no longer being animated
     */
   /* CompleteClass */
   var doneAnimating: Boolean = js.native
   
   /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
+  
+  /**
     * Open materialbox
     */
   /* CompleteClass */
   override def open(): Unit = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: MaterialboxOptions = js.native
   
   /**
     * Original height of image
@@ -70,13 +90,8 @@ object Materialbox {
     * Init Materialboxes
     */
   /* static member */
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any
-  ): js.Array[typings.materializeCss.M.Materialbox] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Materialbox]]
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any,
-    options: PartialMaterialboxOptions
-  ): js.Array[typings.materializeCss.M.Materialbox] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Materialbox]]
+  inline def init(els: MElements): js.Array[typings.materializeCss.M.Materialbox] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Materialbox]]
+  inline def init(els: MElements, options: PartialMaterialboxOptions): js.Array[typings.materializeCss.M.Materialbox] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Materialbox]]
   /**
     * Init Materialbox
     */

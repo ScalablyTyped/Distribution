@@ -174,7 +174,7 @@ object anon {
     
     var onopentagname: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.undefined
     
-    var onparserinit: js.UndefOr[js.Function1[/* parser */ typings.htmlparser2.parserMod.Parser, Unit]] = js.undefined
+    var onparserinit: js.UndefOr[js.Function1[/* parser */ typings.htmlparser2.libEsmParserMod.Parser, Unit]] = js.undefined
     
     var onprocessinginstruction: js.UndefOr[js.Function2[/* name */ String, /* data */ String, Unit]] = js.undefined
     
@@ -233,7 +233,7 @@ object anon {
       
       inline def setOnopentagnameUndefined: Self = StObject.set(x, "onopentagname", js.undefined)
       
-      inline def setOnparserinit(value: /* parser */ typings.htmlparser2.parserMod.Parser => Unit): Self = StObject.set(x, "onparserinit", js.Any.fromFunction1(value))
+      inline def setOnparserinit(value: /* parser */ typings.htmlparser2.libEsmParserMod.Parser => Unit): Self = StObject.set(x, "onparserinit", js.Any.fromFunction1(value))
       
       inline def setOnparserinitUndefined: Self = StObject.set(x, "onparserinit", js.undefined)
       

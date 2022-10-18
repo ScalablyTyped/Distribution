@@ -4,6 +4,8 @@ import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pPeerId.libp2pPeerIdStrings.Ed25519
 import typings.libp2pPeerId.libp2pPeerIdStrings.RSA
 import typings.libp2pPeerId.libp2pPeerIdStrings.secp256k1
+import typings.multiformats.cidMod.CID
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +20,7 @@ object mod {
   
   inline def peerIdFromBytes(buf: js.typedarray.Uint8Array): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("peerIdFromBytes")(buf.asInstanceOf[js.Any]).asInstanceOf[PeerId]
   
-  inline def peerIdFromCID(
-    cid: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
-  ): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("peerIdFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
+  inline def peerIdFromCID(cid: CID[Any, Double, Double, Version]): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("peerIdFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
   
   inline def peerIdFromKeys(publicKey: js.typedarray.Uint8Array): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("peerIdFromKeys")(publicKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   inline def peerIdFromKeys(publicKey: js.typedarray.Uint8Array, privateKey: js.typedarray.Uint8Array): js.Promise[PeerId] = (^.asInstanceOf[js.Dynamic].applyDynamic("peerIdFromKeys")(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PeerId]]
@@ -55,7 +55,7 @@ object mod {
     
     def toBytes(): js.typedarray.Uint8Array = js.native
     
-    def toCID(): Any = js.native
+    def toCID(): CID[Any, Double, Double, Version] = js.native
     
     /**
       * Returns Multiaddr as a JSON encoded object

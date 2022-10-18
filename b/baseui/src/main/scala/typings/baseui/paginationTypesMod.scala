@@ -3,7 +3,7 @@ package typings.baseui
 import typings.baseui.anon.EventAny
 import typings.baseui.anon.NextPage
 import typings.baseui.baseuiStrings.changePage
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

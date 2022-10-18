@@ -1,6 +1,6 @@
 package typings.apolloUtilsKeyvaluecache
 
-import typings.apolloUtilsKeyvaluecache.keyValueCacheMod.KeyValueCache
+import typings.apolloUtilsKeyvaluecache.distKeyValueCacheMod.KeyValueCache
 import typings.apolloUtilsLogger.mod.Logger
 import typings.lruCache.mod.Options
 import org.scalablytyped.runtime.StObject
@@ -12,7 +12,7 @@ object mod {
   @JSImport("@apollo/utils.keyvaluecache", "ErrorsAreMissesCache")
   @js.native
   open class ErrorsAreMissesCache[V] protected ()
-    extends typings.apolloUtilsKeyvaluecache.errorsAreMissesCacheMod.ErrorsAreMissesCache[V] {
+    extends typings.apolloUtilsKeyvaluecache.distErrorsAreMissesCacheMod.ErrorsAreMissesCache[V] {
     def this(cache: KeyValueCache[V]) = this()
     def this(cache: KeyValueCache[V], logger: Logger) = this()
   }
@@ -20,7 +20,7 @@ object mod {
   @JSImport("@apollo/utils.keyvaluecache", "InMemoryLRUCache")
   @js.native
   open class InMemoryLRUCache[T] ()
-    extends typings.apolloUtilsKeyvaluecache.inMemoryLRUCacheMod.InMemoryLRUCache[T] {
+    extends typings.apolloUtilsKeyvaluecache.distInMemoryLRUCacheMod.InMemoryLRUCache[T] {
     def this(lruCacheOpts: Options[String, T]) = this()
   }
   /* static members */
@@ -36,7 +36,7 @@ object mod {
   @JSImport("@apollo/utils.keyvaluecache", "PrefixingKeyValueCache")
   @js.native
   open class PrefixingKeyValueCache[V] protected ()
-    extends typings.apolloUtilsKeyvaluecache.prefixingKeyValueCacheMod.PrefixingKeyValueCache[V] {
+    extends typings.apolloUtilsKeyvaluecache.distPrefixingKeyValueCacheMod.PrefixingKeyValueCache[V] {
     def this(wrapped: KeyValueCache[V], prefix: String) = this()
   }
 }

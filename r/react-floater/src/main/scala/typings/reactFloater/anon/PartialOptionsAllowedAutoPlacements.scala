@@ -1,9 +1,9 @@
 package typings.reactFloater.anon
 
-import typings.popperjsCore.enumsMod.Boundary
-import typings.popperjsCore.enumsMod.Placement
-import typings.popperjsCore.enumsMod.RootBoundary
-import typings.popperjsCore.typesMod.Padding
+import typings.popperjsCore.libEnumsMod.Boundary
+import typings.popperjsCore.libEnumsMod.Placement
+import typings.popperjsCore.libEnumsMod.RootBoundary
+import typings.popperjsCore.libTypesMod.Padding
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

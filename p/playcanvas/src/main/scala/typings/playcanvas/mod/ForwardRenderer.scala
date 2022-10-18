@@ -10,16 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @ignore
   */
-@JSImport("playcanvas", "ForwardRenderer")
 @js.native
-open class ForwardRenderer protected () extends StObject {
-  /**
-    * Create a new ForwardRenderer instance.
-    *
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used by the renderer.
-    * @hideconstructor
-    */
-  def this(graphicsDevice: GraphicsDevice) = this()
+trait ForwardRenderer extends StObject {
   
   var _camerasRendered: Double = js.native
   
@@ -421,29 +413,4 @@ open class ForwardRenderer protected () extends StObject {
   var viewProjId: ScopeId = js.native
   
   var viewUniformFormat: UniformBufferFormat = js.native
-}
-object ForwardRenderer {
-  
-  @JSImport("playcanvas", "ForwardRenderer")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
-  @JSImport("playcanvas", "ForwardRenderer.skipRenderAfter")
-  @js.native
-  def skipRenderAfter: Double = js.native
-  inline def skipRenderAfter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("skipRenderAfter")(x.asInstanceOf[js.Any])
-  
-  /* static member */
-  @JSImport("playcanvas", "ForwardRenderer.skipRenderCamera")
-  @js.native
-  def skipRenderCamera: Any = js.native
-  inline def skipRenderCamera_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("skipRenderCamera")(x.asInstanceOf[js.Any])
-  
-  /* static member */
-  @JSImport("playcanvas", "ForwardRenderer._skipRenderCounter")
-  @js.native
-  def skipRenderCounter: Double = js.native
-  
-  inline def skipRenderCounter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_skipRenderCounter")(x.asInstanceOf[js.Any])
 }

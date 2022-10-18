@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "XHRAssetLoader")
 @js.native
 open class XHRAssetLoader protected ()
-  extends typings.blackEngine.xhrassetloaderMod.XHRAssetLoader {
+  extends typings.blackEngine.assetsLoadersXhrassetloaderMod.XHRAssetLoader {
   def this(url: Any) = this()
 }

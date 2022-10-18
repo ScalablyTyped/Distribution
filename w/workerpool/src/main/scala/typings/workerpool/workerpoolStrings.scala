@@ -11,10 +11,6 @@ object workerpoolStrings {
   inline def CancellationError: CancellationError = "CancellationError".asInstanceOf[CancellationError]
   
   @js.native
-  sealed trait Proxy extends StObject
-  inline def Proxy: Proxy = "Proxy".asInstanceOf[Proxy]
-  
-  @js.native
   sealed trait TimeoutError extends StObject
   inline def TimeoutError: TimeoutError = "TimeoutError".asInstanceOf[TimeoutError]
   

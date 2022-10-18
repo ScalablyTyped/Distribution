@@ -1,23 +1,35 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.firestoreSrcLocalPersistencePromiseMod.PersistencePromise
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelDocumentMod.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `35` extends StObject {
   
-  def forEach(cb: js.Function1[/* el */ PersistencePromise[Any], Unit]): Unit
+  var added: js.UndefOr[js.Array[Document]] = js.undefined
+  
+  var removed: js.UndefOr[js.Array[Document]] = js.undefined
 }
 object `35` {
   
-  inline def apply(forEach: js.Function1[/* el */ PersistencePromise[Any], Unit] => Unit): `35` = {
-    val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction1(forEach))
+  inline def apply(): `35` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`35`]
   }
   
   extension [Self <: `35`](x: Self) {
     
-    inline def setForEach(value: js.Function1[/* el */ PersistencePromise[Any], Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+    inline def setAdded(value: js.Array[Document]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    
+    inline def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
+    
+    inline def setAddedVarargs(value: Document*): Self = StObject.set(x, "added", js.Array(value*))
+    
+    inline def setRemoved(value: js.Array[Document]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    
+    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+    
+    inline def setRemovedVarargs(value: Document*): Self = StObject.set(x, "removed", js.Array(value*))
   }
 }

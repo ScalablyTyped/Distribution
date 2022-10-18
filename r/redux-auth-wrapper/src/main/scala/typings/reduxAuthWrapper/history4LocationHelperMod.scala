@@ -1,7 +1,7 @@
 package typings.reduxAuthWrapper
 
-import typings.reduxAuthWrapper.locationHelperMod.LocationHelper
-import typings.reduxAuthWrapper.locationHelperMod.LocationHelperConfig
+import typings.reduxAuthWrapper.history3LocationHelperMod.LocationHelper
+import typings.reduxAuthWrapper.history3LocationHelperMod.LocationHelperConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

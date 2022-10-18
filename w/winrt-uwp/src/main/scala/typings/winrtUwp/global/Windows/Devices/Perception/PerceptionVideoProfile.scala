@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Windows.Devices.Perception video profile. */
-@JSGlobal("Windows.Devices.Perception.PerceptionVideoProfile")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.PerceptionVideoProfile")
 @js.native
-abstract class PerceptionVideoProfile ()
+open class PerceptionVideoProfile ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.PerceptionVideoProfile {
   

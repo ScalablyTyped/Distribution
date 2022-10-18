@@ -1,39 +1,28 @@
 package typings.errorCause
 
-import org.scalablytyped.runtime.Shortcut
-import typings.std.ErrorOptions
+import typings.errorCause.anon.Cause
 import typings.std.TypeErrorConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object typeErrorMod extends Shortcut {
+object typeErrorMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("error-cause/base/TypeError", JSImport.Default)
+  @JSImport("error-cause/TypeError", JSImport.Default)
   @js.native
-  /* standard es2022.error */
   open class default ()
     extends StObject
-       with typings.std.Error {
-    def this(message: String) = this()
-    def this(message: String, options: ErrorOptions) = this()
-    def this(message: Unit, options: ErrorOptions) = this()
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var message: String = js.native
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var name: String = js.native
+       with TypeError {
+    def this(reason: String) = this()
+    def this(reason: String, options: Cause) = this()
+    def this(reason: Unit, options: Cause) = this()
   }
-  @JSImport("error-cause/base/TypeError", JSImport.Default)
+  
   @js.native
-  val default: TypeErrorConstructor = js.native
-  
-  type _To = TypeErrorConstructor
-  
-  /* This means you don't have to write `default`, but can instead just say `typeErrorMod.foo` */
-  override def _to: TypeErrorConstructor = default
+  trait TypeError
+    extends StObject
+       with TypeErrorConstructor {
+    
+    var cause: Any = js.native
+  }
 }

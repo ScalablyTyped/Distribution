@@ -7,12 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dictkey
   extends StObject
-     with /**
-  * Custom attributes/extensions. Must be strings. Added to the event as is.
-  *
-  * @see https://github.com/cloudevents/spec/blob/v1.0/spec.md#extension-context-attributes
-  */
-/* key */ StringDictionary[Any] {
+     with /* key */ StringDictionary[Any] {
   
   /**
     * Provider-specific identity details corresponding

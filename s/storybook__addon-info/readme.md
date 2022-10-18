@@ -10,10 +10,10 @@ A Storybook addon to show additional information for your stories.
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-info |
 | Keywords           | addon, storybook |
-| # releases         | 318 |
-| # dependents       | 105 |
-| # downloads        | 16795808 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 635459.0 |
+| # stars            | 72512.0 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook#readme)

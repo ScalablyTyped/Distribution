@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Shape ()
   extends typings.three.mod.Shape {
-  def this(points: js.Array[typings.three.vector2Mod.Vector2]) = this()
+  def this(points: js.Array[typings.three.srcMathVector2Mod.Vector2]) = this()
 }

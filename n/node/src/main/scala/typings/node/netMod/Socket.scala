@@ -41,7 +41,8 @@ open class Socket () extends StObject {
     *   5. end
     *   6. error
     *   7. lookup
-    *   8. timeout
+    *   8. ready
+    *   9. timeout
     */
   def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("addListener")
@@ -207,6 +208,12 @@ open class Socket () extends StObject {
   val localAddress: js.UndefOr[String] = js.native
   
   /**
+    * The string representation of the local IP family. `'IPv4'` or `'IPv6'`.
+    * @since v18.8.0
+    */
+  val localFamily: js.UndefOr[String] = js.native
+  
+  /**
     * The numeric representation of the local port. For example, `80` or `21`.
     * @since v0.9.6
     */
@@ -368,6 +375,18 @@ open class Socket () extends StObject {
     * @since v0.5.10
     */
   val remotePort: js.UndefOr[Double] = js.native
+  
+  /**
+    * Close the TCP connection by sending an RST packet and destroy the stream.
+    * If this TCP socket is in connecting status, it will send an RST packet
+    * and destroy this TCP socket once it is connected. Otherwise, it will call
+    * `socket.destroy` with an `ERR_SOCKET_CLOSED` Error. If this is not a TCP socket
+    * (for example, a pipe), calling this method will immediately throw
+    * an `ERR_INVALID_HANDLE_TYPE` Error.
+    * @since v18.3.0
+    * @return The socket itself.
+    */
+  def resetAndDestroy(): this.type = js.native
   
   /**
     * Resumes reading after a call to `socket.pause()`.

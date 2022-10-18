@@ -115,10 +115,6 @@ object angularStrings {
   inline def $xhrFactory: $xhrFactory = "$xhrFactory".asInstanceOf[$xhrFactory]
   
   @js.native
-  sealed trait IQService extends StObject
-  inline def IQService: IQService = "IQService".asInstanceOf[IQService]
-  
-  @js.native
   sealed trait abort extends StObject
   inline def abort: abort = "abort".asInstanceOf[abort]
   

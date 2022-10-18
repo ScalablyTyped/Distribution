@@ -1,25 +1,13 @@
 package typings.cypress.Cypress
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
+/* keyof cypress.Cypress.PrevSubjectMap<unknown> */ /* Rewritten from type alias, can be one of: 
   - typings.cypress.cypressStrings.optional
   - typings.cypress.cypressStrings.element
   - typings.cypress.cypressStrings.document
   - typings.cypress.cypressStrings.window
 */
-trait PrevSubject extends js.Object
-
-object PrevSubject {
-  @scala.inline
-  def document: typings.cypress.cypressStrings.document = "document".asInstanceOf[typings.cypress.cypressStrings.document]
-  @scala.inline
-  def element: typings.cypress.cypressStrings.element = "element".asInstanceOf[typings.cypress.cypressStrings.element]
-  @scala.inline
-  def optional: typings.cypress.cypressStrings.optional = "optional".asInstanceOf[typings.cypress.cypressStrings.optional]
-  @scala.inline
-  def window: typings.cypress.cypressStrings.window = "window".asInstanceOf[typings.cypress.cypressStrings.window]
-}
-
+trait PrevSubject extends StObject

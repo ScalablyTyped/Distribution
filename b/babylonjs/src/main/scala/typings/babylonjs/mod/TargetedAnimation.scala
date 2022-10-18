@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "TargetedAnimation")
 @js.native
 open class TargetedAnimation ()
-  extends typings.babylonjs.legacyMod.TargetedAnimation
+  extends typings.babylonjs.legacyLegacyMod.TargetedAnimation

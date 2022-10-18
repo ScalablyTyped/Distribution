@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Coordinate extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.mathAxisMod.Coordinate & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.mathsMathDotaxisMod.Coordinate & Double] = js.native
   
-  /* 0 */ val X: typings.babylonjs.mathAxisMod.Coordinate.X & Double = js.native
+  /* 0 */ val X: typings.babylonjs.mathsMathDotaxisMod.Coordinate.X & Double = js.native
   
-  /* 1 */ val Y: typings.babylonjs.mathAxisMod.Coordinate.Y & Double = js.native
+  /* 1 */ val Y: typings.babylonjs.mathsMathDotaxisMod.Coordinate.Y & Double = js.native
   
-  /* 2 */ val Z: typings.babylonjs.mathAxisMod.Coordinate.Z & Double = js.native
+  /* 2 */ val Z: typings.babylonjs.mathsMathDotaxisMod.Coordinate.Z & Double = js.native
 }

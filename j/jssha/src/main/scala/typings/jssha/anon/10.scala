@@ -1,16 +1,18 @@
 package typings.jssha.anon
 
-import typings.jssha.sha3Mod.FixedLengthOptionsNoEncodingType
-import typings.jssha.sha3Mod.GenericInputType
+import typings.jssha.distSha3Mod.EncodingType
+import typings.jssha.distSha3Mod.FixedLengthOptionsEncodingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `10`
   extends StObject
-     with FixedLengthOptionsNoEncodingType {
+     with FixedLengthOptionsEncodingType {
   
-  var hmacKey: js.UndefOr[GenericInputType] = js.undefined
+  var encoding: js.UndefOr[EncodingType] = js.undefined
+  
+  var numRounds: js.UndefOr[Double] = js.undefined
 }
 object `10` {
   
@@ -21,8 +23,12 @@ object `10` {
   
   extension [Self <: `10`](x: Self) {
     
-    inline def setHmacKey(value: GenericInputType): Self = StObject.set(x, "hmacKey", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    inline def setHmacKeyUndefined: Self = StObject.set(x, "hmacKey", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setNumRounds(value: Double): Self = StObject.set(x, "numRounds", value.asInstanceOf[js.Any])
+    
+    inline def setNumRoundsUndefined: Self = StObject.set(x, "numRounds", js.undefined)
   }
 }

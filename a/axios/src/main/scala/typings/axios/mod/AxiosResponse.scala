@@ -10,7 +10,7 @@ trait AxiosResponse[T, D] extends StObject {
   
   var data: T
   
-  var headers: AxiosResponseHeaders
+  var headers: RawAxiosResponseHeaders | AxiosResponseHeaders
   
   var request: js.UndefOr[Any] = js.undefined
   
@@ -23,7 +23,7 @@ object AxiosResponse {
   inline def apply[T, D](
     config: AxiosRequestConfig[D],
     data: T,
-    headers: AxiosResponseHeaders,
+    headers: RawAxiosResponseHeaders | AxiosResponseHeaders,
     status: Double,
     statusText: String
   ): AxiosResponse[T, D] = {
@@ -37,7 +37,7 @@ object AxiosResponse {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setHeaders(value: AxiosResponseHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RawAxiosResponseHeaders | AxiosResponseHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

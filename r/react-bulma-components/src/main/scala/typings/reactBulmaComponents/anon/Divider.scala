@@ -1,11 +1,11 @@
 package typings.reactBulmaComponents.anon
 
 import typings.react.mod.ReactElement
-import typings.reactBulmaComponents.componentsMod.ElementProps
-import typings.reactBulmaComponents.componentsMod.RenderAsComponent
-import typings.reactBulmaComponents.dropdownMod.DropdownItemProps
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.hr
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.renderAs
+import typings.reactBulmaComponents.srcComponentsDropdownMod.DropdownItemProps
+import typings.reactBulmaComponents.srcComponentsMod.ElementProps
+import typings.reactBulmaComponents.srcComponentsMod.RenderAsComponent
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

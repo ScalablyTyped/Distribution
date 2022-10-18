@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,9 +32,7 @@ trait BulkInsertInstanceResource extends StObject {
   
   /** Per-instance properties to be set on individual instances. Keys of this map specify requested instance names. Can be empty if name_pattern is used. */
   var perInstanceProperties: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.BulkInsertInstanceResourcePerInstanceProperties}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.BulkInsertInstanceResource & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.BulkInsertInstanceResourcePerInstanceProperties} */ js.Any
   ] = js.undefined
   
   /**
@@ -76,9 +73,7 @@ object BulkInsertInstanceResource {
     inline def setNamePatternUndefined: Self = StObject.set(x, "namePattern", js.undefined)
     
     inline def setPerInstanceProperties(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.BulkInsertInstanceResourcePerInstanceProperties}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.BulkInsertInstanceResource & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.BulkInsertInstanceResourcePerInstanceProperties} */ js.Any
     ): Self = StObject.set(x, "perInstanceProperties", value.asInstanceOf[js.Any])
     
     inline def setPerInstancePropertiesUndefined: Self = StObject.set(x, "perInstanceProperties", js.undefined)

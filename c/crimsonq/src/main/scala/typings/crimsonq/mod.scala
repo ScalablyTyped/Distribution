@@ -5,7 +5,7 @@ import typings.crimsonq.anon.Key
 import typings.crimsonq.anon.TypeofIORedis
 import typings.crimsonq.crimsonqStrings.completed
 import typings.crimsonq.crimsonqStrings.failed
-import typings.ioredis.redisOptionsMod.RedisOptions
+import typings.ioredis.builtRedisRedisOptionsMod.RedisOptions
 import typings.node.eventsMod.EventEmitter
 import typings.std.ErrorConstructor
 import typings.std.ErrorOptions
@@ -132,7 +132,7 @@ object mod {
   
   trait CommandResult extends StObject {
     
-    /* standard es2022.error */
+    /* standard es5 */
     def error(): js.Error
     def error(message: String): js.Error
     def error(message: String, options: ErrorOptions): js.Error

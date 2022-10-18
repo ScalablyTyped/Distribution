@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jridgewell/trace-mapping" : "0.3.15"
+      "@jridgewell/trace-mapping" : "0.3.17"
     }
   ],
   "test-dependencies" : [
     {
-      "@jridgewell/trace-mapping" : "0.3.15"
+      "@jridgewell/trace-mapping" : "0.3.17"
     }
   ],
   "compile-devDependencies" : [

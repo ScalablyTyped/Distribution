@@ -5,14 +5,18 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("canvg", "Element")
+/* note: abstract class */ @JSImport("canvg", "Element")
 @js.native
-abstract class Element protected ()
-  extends typings.canvg.documentMod.Element {
-  def this(document: typings.canvg.documentDocumentMod.Document) = this()
-  def this(document: typings.canvg.documentDocumentMod.Document, node: HTMLElement) = this()
-  def this(document: typings.canvg.documentDocumentMod.Document, node: Unit, captureTextNodes: Boolean) = this()
-  def this(document: typings.canvg.documentDocumentMod.Document, node: HTMLElement, captureTextNodes: Boolean) = this()
+open class Element protected ()
+  extends typings.canvg.distDocumentMod.Element {
+  def this(document: typings.canvg.distDocumentDocumentMod.Document) = this()
+  def this(document: typings.canvg.distDocumentDocumentMod.Document, node: HTMLElement) = this()
+  def this(document: typings.canvg.distDocumentDocumentMod.Document, node: Unit, captureTextNodes: Boolean) = this()
+  def this(
+    document: typings.canvg.distDocumentDocumentMod.Document,
+    node: HTMLElement,
+    captureTextNodes: Boolean
+  ) = this()
 }
 /* static members */
 object Element {

@@ -1,9 +1,9 @@
 package typings.babylonjs.xRIndexMod
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
-import typings.babylonjs.boundingSphereMod.BoundingSphere
-import typings.babylonjs.pickingInfoMod.PickingInfo
-import typings.babylonjs.webXRNearInteractionMod.IWebXRNearInteractionOptions
+import typings.babylonjs.collisionsPickingInfoMod.PickingInfo
+import typings.babylonjs.cullingBoundingSphereMod.BoundingSphere
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
+import typings.babylonjs.xRFeaturesWebXRNearInteractionMod.IWebXRNearInteractionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXRNearInteraction")
 @js.native
 open class WebXRNearInteraction protected ()
-  extends typings.babylonjs.featuresIndexMod.WebXRNearInteraction {
+  extends typings.babylonjs.xRFeaturesIndexMod.WebXRNearInteraction {
   /**
     * constructs a new background remover module
     * @param _xrSessionManager the session manager for this module
     * @param _options read-only options to be used in this module
     */
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     _options: IWebXRNearInteractionOptions
   ) = this()
 }

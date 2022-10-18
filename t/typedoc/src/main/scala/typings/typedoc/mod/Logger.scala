@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "Logger")
 @js.native
 open class Logger ()
-  extends typings.typedoc.libUtilsMod.Logger
+  extends typings.typedoc.distLibUtilsMod.Logger

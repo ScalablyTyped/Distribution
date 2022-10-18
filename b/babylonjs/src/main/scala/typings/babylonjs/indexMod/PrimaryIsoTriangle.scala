@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "_PrimaryIsoTriangle")
 @js.native
 open class PrimaryIsoTriangle ()
-  extends typings.babylonjs.babylonjsIndexMod.PrimaryIsoTriangle
+  extends typings.babylonjs.meshesIndexMod.PrimaryIsoTriangle

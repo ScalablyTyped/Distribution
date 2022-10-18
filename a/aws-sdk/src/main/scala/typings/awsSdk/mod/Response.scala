@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-sdk", "Response")
 @js.native
 open class Response[D, E] ()
-  extends typings.awsSdk.coreMod.Response[D, E]
+  extends typings.awsSdk.libCoreMod.Response[D, E]

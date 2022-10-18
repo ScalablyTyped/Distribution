@@ -1,12 +1,12 @@
 package typings.fpTs.mod
 
-import typings.fpTs.chainMod.Chain
-import typings.fpTs.chainMod.Chain1
-import typings.fpTs.chainMod.Chain2
-import typings.fpTs.chainMod.Chain2C
-import typings.fpTs.chainMod.Chain3
-import typings.fpTs.chainMod.Chain3C
-import typings.fpTs.chainMod.Chain4
+import typings.fpTs.libChainMod.Chain
+import typings.fpTs.libChainMod.Chain1
+import typings.fpTs.libChainMod.Chain2
+import typings.fpTs.libChainMod.Chain2C
+import typings.fpTs.libChainMod.Chain3
+import typings.fpTs.libChainMod.Chain3C
+import typings.fpTs.libChainMod.Chain4
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

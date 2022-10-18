@@ -1,17 +1,17 @@
 package typings.babylonjs
 
-import typings.babylonjs.iphysicsengineMod.IPhysicsEngine
-import typings.babylonjs.iphysicsengineMod.IPhysicsEnginePlugin
-import typings.babylonjs.mathVectorMod.Quaternion
-import typings.babylonjs.mathVectorMod.Vector3
-import typings.babylonjs.meshMod.Mesh
+import typings.babylonjs.mathsMathDotvectorMod.Quaternion
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
+import typings.babylonjs.meshesMeshMod.Mesh
+import typings.babylonjs.miscObservableMod.Observable
+import typings.babylonjs.miscObservableMod.Observer
 import typings.babylonjs.nodeMod.Node
-import typings.babylonjs.observableMod.Observable
-import typings.babylonjs.observableMod.Observer
-import typings.babylonjs.physicsImpostorMod.IPhysicsEnabledObject
-import typings.babylonjs.physicsImpostorMod.PhysicsImpostorParameters
-import typings.babylonjs.physicsJointMod.DistanceJointData
-import typings.babylonjs.physicsJointMod.PhysicsJointData
+import typings.babylonjs.physicsIphysicsengineMod.IPhysicsEngine
+import typings.babylonjs.physicsIphysicsengineMod.IPhysicsEnginePlugin
+import typings.babylonjs.physicsPhysicsImpostorMod.IPhysicsEnabledObject
+import typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostorParameters
+import typings.babylonjs.physicsPhysicsJointMod.DistanceJointData
+import typings.babylonjs.physicsPhysicsJointMod.PhysicsJointData
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -70,7 +70,7 @@ object physicsIndexMod {
   @JSImport("babylonjs/Physics/index", "DistanceJoint")
   @js.native
   open class DistanceJoint protected ()
-    extends typings.babylonjs.physicsJointMod.DistanceJoint {
+    extends typings.babylonjs.physicsPhysicsJointMod.DistanceJoint {
     /**
       *
       * @param jointData The data for the Distance-Joint
@@ -81,7 +81,7 @@ object physicsIndexMod {
   @JSImport("babylonjs/Physics/index", "Hinge2Joint")
   @js.native
   open class Hinge2Joint protected ()
-    extends typings.babylonjs.physicsJointMod.Hinge2Joint {
+    extends typings.babylonjs.physicsPhysicsJointMod.Hinge2Joint {
     /**
       * Initializes the Hinge2-Joint
       * @param jointData The joint data for the Hinge2-Joint
@@ -92,7 +92,7 @@ object physicsIndexMod {
   @JSImport("babylonjs/Physics/index", "HingeJoint")
   @js.native
   open class HingeJoint protected ()
-    extends typings.babylonjs.physicsJointMod.HingeJoint {
+    extends typings.babylonjs.physicsPhysicsJointMod.HingeJoint {
     /**
       * Initializes the Hinge-Joint
       * @param jointData The joint data for the Hinge-Joint
@@ -103,7 +103,7 @@ object physicsIndexMod {
   @JSImport("babylonjs/Physics/index", "MotorEnabledJoint")
   @js.native
   open class MotorEnabledJoint protected ()
-    extends typings.babylonjs.physicsJointMod.MotorEnabledJoint {
+    extends typings.babylonjs.physicsPhysicsJointMod.MotorEnabledJoint {
     /**
       * Initializes the Motor-Enabled Joint
       * @param type The type of the joint
@@ -128,7 +128,7 @@ object physicsIndexMod {
   @JSImport("babylonjs/Physics/index", "PhysicsEngine")
   @js.native
   open class PhysicsEngine protected ()
-    extends typings.babylonjs.physicsEngineMod.PhysicsEngine {
+    extends typings.babylonjs.physicsPhysicsEngineMod.PhysicsEngine {
     /**
       * Creates a new Physics Engine
       * @param gravity defines the gravity vector used by the simulation
@@ -162,7 +162,7 @@ object physicsIndexMod {
   @JSImport("babylonjs/Physics/index", "PhysicsEngineSceneComponent")
   @js.native
   open class PhysicsEngineSceneComponent protected ()
-    extends typings.babylonjs.physicsEngineComponentMod.PhysicsEngineSceneComponent {
+    extends typings.babylonjs.physicsPhysicsEngineComponentMod.PhysicsEngineSceneComponent {
     /**
       * Creates a new instance of the component for the given scene
       * @param scene Defines the scene to register the component in
@@ -173,7 +173,7 @@ object physicsIndexMod {
   @JSImport("babylonjs/Physics/index", "PhysicsHelper")
   @js.native
   open class PhysicsHelper protected ()
-    extends typings.babylonjs.physicsHelperMod.PhysicsHelper {
+    extends typings.babylonjs.physicsPhysicsHelperMod.PhysicsHelper {
     /**
       * Initializes the Physics helper
       * @param scene Babylon.js scene
@@ -184,7 +184,7 @@ object physicsIndexMod {
   @JSImport("babylonjs/Physics/index", "PhysicsImpostor")
   @js.native
   open class PhysicsImpostor protected ()
-    extends typings.babylonjs.physicsImpostorMod.PhysicsImpostor {
+    extends typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostor {
     /**
       * Initializes the physics imposter
       * @param object The physics-enabled object used as the physics imposter
@@ -387,7 +387,7 @@ object physicsIndexMod {
   @JSImport("babylonjs/Physics/index", "PhysicsJoint")
   @js.native
   open class PhysicsJoint protected ()
-    extends typings.babylonjs.physicsJointMod.PhysicsJoint {
+    extends typings.babylonjs.physicsPhysicsJointMod.PhysicsJoint {
     /**
       * Initializes the physics joint
       * @param type The type of the physics joint
@@ -504,41 +504,41 @@ object physicsIndexMod {
   @JSImport("babylonjs/Physics/index", "PhysicsRadialExplosionEventOptions")
   @js.native
   open class PhysicsRadialExplosionEventOptions ()
-    extends typings.babylonjs.physicsHelperMod.PhysicsRadialExplosionEventOptions
+    extends typings.babylonjs.physicsPhysicsHelperMod.PhysicsRadialExplosionEventOptions
   
   @JSImport("babylonjs/Physics/index", "PhysicsRadialImpulseFalloff")
   @js.native
   object PhysicsRadialImpulseFalloff extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.babylonjs.physicsPhysicsHelperMod.PhysicsRadialImpulseFalloff & Double] = js.native
     
-    /* 0 */ val Constant: typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff.Constant & Double = js.native
+    /* 0 */ val Constant: typings.babylonjs.physicsPhysicsHelperMod.PhysicsRadialImpulseFalloff.Constant & Double = js.native
     
-    /* 1 */ val Linear: typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff.Linear & Double = js.native
+    /* 1 */ val Linear: typings.babylonjs.physicsPhysicsHelperMod.PhysicsRadialImpulseFalloff.Linear & Double = js.native
   }
   
   @JSImport("babylonjs/Physics/index", "PhysicsUpdraftEventOptions")
   @js.native
   open class PhysicsUpdraftEventOptions ()
-    extends typings.babylonjs.physicsHelperMod.PhysicsUpdraftEventOptions
+    extends typings.babylonjs.physicsPhysicsHelperMod.PhysicsUpdraftEventOptions
   
   @JSImport("babylonjs/Physics/index", "PhysicsUpdraftMode")
   @js.native
   object PhysicsUpdraftMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.babylonjs.physicsPhysicsHelperMod.PhysicsUpdraftMode & Double] = js.native
     
-    /* 0 */ val Center: typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode.Center & Double = js.native
+    /* 0 */ val Center: typings.babylonjs.physicsPhysicsHelperMod.PhysicsUpdraftMode.Center & Double = js.native
     
-    /* 1 */ val Perpendicular: typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode.Perpendicular & Double = js.native
+    /* 1 */ val Perpendicular: typings.babylonjs.physicsPhysicsHelperMod.PhysicsUpdraftMode.Perpendicular & Double = js.native
   }
   
   @JSImport("babylonjs/Physics/index", "PhysicsVortexEventOptions")
   @js.native
   open class PhysicsVortexEventOptions ()
-    extends typings.babylonjs.physicsHelperMod.PhysicsVortexEventOptions
+    extends typings.babylonjs.physicsPhysicsHelperMod.PhysicsVortexEventOptions
   
   /* augmented module */
   object babylonjsMeshesAbstractMeshAugmentingMod {
@@ -550,7 +550,7 @@ object physicsIndexMod {
       var _disposePhysicsObserver: Nullable[Observer[Node]] = js.native
       
       /** @internal */
-      var _physicsImpostor: Nullable[typings.babylonjs.physicsImpostorMod.PhysicsImpostor] = js.native
+      var _physicsImpostor: Nullable[typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostor] = js.native
       
       /** Apply a physic impulse to the mesh
         * @param force defines the force to apply
@@ -558,20 +558,20 @@ object physicsIndexMod {
         * @returns the current mesh
         * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
         */
-      def applyImpulse(force: Vector3, contactPoint: Vector3): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
+      def applyImpulse(force: Vector3, contactPoint: Vector3): typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
       
       /**
         * Gets the current physics impostor
         * @see https://doc.babylonjs.com/features/physics_engine
         * @returns a physics impostor or null
         */
-      def getPhysicsImpostor(): Nullable[typings.babylonjs.physicsImpostorMod.PhysicsImpostor] = js.native
+      def getPhysicsImpostor(): Nullable[typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostor] = js.native
       
       /**
         * Gets or sets impostor used for physic simulation
         * @see https://doc.babylonjs.com/features/physics_engine
         */
-      var physicsImpostor: Nullable[typings.babylonjs.physicsImpostorMod.PhysicsImpostor] = js.native
+      var physicsImpostor: Nullable[typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostor] = js.native
       
       /**
         * Creates a physic joint between two meshes
@@ -582,8 +582,8 @@ object physicsIndexMod {
         * @returns the current mesh
         * @see https://www.babylonjs-playground.com/#0BS5U0#0
         */
-      def setPhysicsLinkWith(otherMesh: Mesh, pivot1: Vector3, pivot2: Vector3): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
-      def setPhysicsLinkWith(otherMesh: Mesh, pivot1: Vector3, pivot2: Vector3, options: Any): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
+      def setPhysicsLinkWith(otherMesh: Mesh, pivot1: Vector3, pivot2: Vector3): typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
+      def setPhysicsLinkWith(otherMesh: Mesh, pivot1: Vector3, pivot2: Vector3, options: Any): typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
     }
   }
   
@@ -636,12 +636,16 @@ object physicsIndexMod {
       /**
         * An event triggered when physic simulation has been done
         */
-      var onAfterPhysicsObservable: Observable[typings.babylonjs.physicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene] = js.native
+      var onAfterPhysicsObservable: Observable[
+            typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene
+          ] = js.native
       
       /**
         * An event triggered when physic simulation is about to be run
         */
-      var onBeforePhysicsObservable: Observable[typings.babylonjs.physicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene] = js.native
+      var onBeforePhysicsObservable: Observable[
+            typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene
+          ] = js.native
     }
   }
 }

@@ -1,7 +1,7 @@
 package typings.tslint.mod
 
-import typings.tslint.runnerMod.Logger
-import typings.tslint.testMod.TestResult
+import typings.tslint.libRunnerMod.Logger
+import typings.tslint.libTestMod.TestResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

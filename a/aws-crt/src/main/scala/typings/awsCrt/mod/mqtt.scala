@@ -1,12 +1,12 @@
 package typings.awsCrt.mod
 
-import typings.awsCrt.httpMod.HttpProxyAuthenticationType
-import typings.awsCrt.mqttMod.Payload
-import typings.awsCrt.mqttMod.QoS
-import typings.awsCrt.nativeHttpMod.HttpProxyConnectionType
-import typings.awsCrt.nativeIoMod.ClientBootstrap
-import typings.awsCrt.nativeIoMod.TlsConnectionOptions
-import typings.awsCrt.nativeMqttMod.MqttConnectionConfig
+import typings.awsCrt.distCommonHttpMod.HttpProxyAuthenticationType
+import typings.awsCrt.distCommonMqttMod.Payload
+import typings.awsCrt.distCommonMqttMod.QoS
+import typings.awsCrt.distNativeHttpMod.HttpProxyConnectionType
+import typings.awsCrt.distNativeIoMod.ClientBootstrap
+import typings.awsCrt.distNativeIoMod.TlsConnectionOptions
+import typings.awsCrt.distNativeMqttMod.MqttConnectionConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object mqtt {
   @JSImport("aws-crt", "mqtt.HttpProxyOptions")
   @js.native
   open class HttpProxyOptions protected ()
-    extends typings.awsCrt.nativeMqttMod.HttpProxyOptions {
+    extends typings.awsCrt.distNativeMqttMod.HttpProxyOptions {
     /**
       *
       * @param host_name Name of the proxy server to connect through
@@ -267,19 +267,19 @@ object mqtt {
     *          default system-wide bootstrap (recommended).
     */
   open class MqttClient ()
-    extends typings.awsCrt.nativeMqttMod.MqttClient {
+    extends typings.awsCrt.distNativeMqttMod.MqttClient {
     def this(bootstrap: ClientBootstrap) = this()
   }
   
   @JSImport("aws-crt", "mqtt.MqttClientConnection")
   @js.native
   open class MqttClientConnection protected ()
-    extends typings.awsCrt.nativeMqttMod.MqttClientConnection {
+    extends typings.awsCrt.distNativeMqttMod.MqttClientConnection {
     /**
       * @param client The client that owns this connection
       * @param config The configuration for this connection
       */
-    def this(client: typings.awsCrt.nativeMqttMod.MqttClient, config: MqttConnectionConfig) = this()
+    def this(client: typings.awsCrt.distNativeMqttMod.MqttClient, config: MqttConnectionConfig) = this()
   }
   /* static members */
   object MqttClientConnection {
@@ -354,7 +354,7 @@ object mqtt {
   @JSImport("aws-crt", "mqtt.MqttWill")
   @js.native
   open class MqttWill protected ()
-    extends typings.awsCrt.nativeMqttMod.MqttWill {
+    extends typings.awsCrt.distNativeMqttMod.MqttWill {
     def this(
       /** Topic to publish Will message on. */
     topic: String,
@@ -380,12 +380,12 @@ object mqtt {
   object QoS extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.awsCrt.mqttMod.QoS & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.awsCrt.distCommonMqttMod.QoS & Double] = js.native
     
-    /* 1 */ val AtLeastOnce: typings.awsCrt.mqttMod.QoS.AtLeastOnce & Double = js.native
+    /* 1 */ val AtLeastOnce: typings.awsCrt.distCommonMqttMod.QoS.AtLeastOnce & Double = js.native
     
-    /* 0 */ val AtMostOnce: typings.awsCrt.mqttMod.QoS.AtMostOnce & Double = js.native
+    /* 0 */ val AtMostOnce: typings.awsCrt.distCommonMqttMod.QoS.AtMostOnce & Double = js.native
     
-    /* 2 */ val ExactlyOnce: typings.awsCrt.mqttMod.QoS.ExactlyOnce & Double = js.native
+    /* 2 */ val ExactlyOnce: typings.awsCrt.distCommonMqttMod.QoS.ExactlyOnce & Double = js.native
   }
 }

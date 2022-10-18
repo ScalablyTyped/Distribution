@@ -15,6 +15,6 @@ object CompressPDF {
     
     @JSImport("@adobe/pdfservices-node-sdk", "CompressPDF.options.CompressionLevel")
     @js.native
-    val CompressionLevel: typings.adobePdfservicesNodeSdk.compressPdfOptionsMod.CompressionLevel = js.native
+    val CompressionLevel: typings.adobePdfservicesNodeSdk.operationOptionCompresspdfCompressPdfOptionsMod.CompressionLevel = js.native
   }
 }

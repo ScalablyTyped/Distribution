@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "TooltipSimple")
 @js.native
 open class TooltipSimple protected ()
-  extends typings.carbonComponents.componentsMod.TooltipSimple {
+  extends typings.carbonComponents.globalsJsComponentsMod.TooltipSimple {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialTooltipSimpleOptio) = this()
 }

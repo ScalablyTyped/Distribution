@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,9 +67,7 @@ trait Device extends StObject {
     * size of all keys and values must be less than 256 KB, and the maximum number of key-value pairs is 500.
     */
   var metadata: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudiot.maximMazurokGapiClientCloudiotStrings.Device & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -149,9 +146,7 @@ object Device {
     inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
     inline def setMetadata(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudiot.maximMazurokGapiClientCloudiotStrings.Device & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

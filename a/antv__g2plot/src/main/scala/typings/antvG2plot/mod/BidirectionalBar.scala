@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialBidirectionalBarOp
-import typings.antvG2plot.bidirectionalBarTypesMod.BidirectionalBarOptions
+import typings.antvG2plot.libPlotsBidirectionalBarTypesMod.BidirectionalBarOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "BidirectionalBar")
 @js.native
 open class BidirectionalBar protected ()
-  extends typings.antvG2plot.bidirectionalBarMod.BidirectionalBar {
+  extends typings.antvG2plot.libPlotsBidirectionalBarMod.BidirectionalBar {
   def this(container: String, options: BidirectionalBarOptions) = this()
   def this(container: HTMLElement, options: BidirectionalBarOptions) = this()
 }

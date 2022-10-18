@@ -1,6 +1,6 @@
 package typings.fabric.fabricImplMod
 
-import typings.fabric.anon.LeftTop
+import typings.fabric.anon.Left
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +26,7 @@ trait IUtilDomMisc extends StObject {
     * Returns offset for a given element
     * @param element Element to get offset for
     */
-  def getElementOffset(element: HTMLElement): LeftTop = js.native
+  def getElementOffset(element: HTMLElement): Left = js.native
   
   /**
     * Returns style attribute value of a given element
@@ -46,7 +46,7 @@ trait IUtilDomMisc extends StObject {
     * Returns element scroll offsets
     * @param element Element to operate on
     */
-  def getScrollLeftTop(element: HTMLElement): LeftTop = js.native
+  def getScrollLeftTop(element: HTMLElement): Left = js.native
   
   /**
     * Creates specified element with specified attributes

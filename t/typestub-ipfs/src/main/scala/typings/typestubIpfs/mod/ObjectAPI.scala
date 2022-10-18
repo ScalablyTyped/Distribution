@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ObjectAPI extends StObject {
   
-  def data(multihash: Multihash): js.Promise[js.Any] = js.native
-  def data(multihash: Multihash, callback: Callback[js.Any]): Unit = js.native
-  def data(multihash: Multihash, options: GetObjectOptions): js.Promise[js.Any] = js.native
-  def data(multihash: Multihash, options: GetObjectOptions, callback: Callback[js.Any]): Unit = js.native
+  def data(multihash: Multihash): js.Promise[Any] = js.native
+  def data(multihash: Multihash, callback: Callback[Any]): Unit = js.native
+  def data(multihash: Multihash, options: GetObjectOptions): js.Promise[Any] = js.native
+  def data(multihash: Multihash, options: GetObjectOptions, callback: Callback[Any]): Unit = js.native
   
-  def get(multihash: Multihash): js.Promise[js.Any] = js.native
-  def get(multihash: Multihash, callback: Callback[js.Any]): Unit = js.native
-  def get(multihash: Multihash, options: GetObjectOptions): js.Promise[js.Any] = js.native
-  def get(multihash: Multihash, options: GetObjectOptions, callback: Callback[js.Any]): Unit = js.native
+  def get(multihash: Multihash): js.Promise[Any] = js.native
+  def get(multihash: Multihash, callback: Callback[Any]): Unit = js.native
+  def get(multihash: Multihash, options: GetObjectOptions): js.Promise[Any] = js.native
+  def get(multihash: Multihash, options: GetObjectOptions, callback: Callback[Any]): Unit = js.native
   
   def links(multihash: Multihash): js.Promise[js.Array[DAGLink]] = js.native
   def links(multihash: Multihash, callback: Callback[js.Array[DAGLink]]): Unit = js.native
@@ -30,10 +30,10 @@ trait ObjectAPI extends StObject {
   
   var patch: ObjectPatchAPI = js.native
   
-  def put(obj: Obj): js.Promise[js.Any] = js.native
-  def put(obj: Obj, callback: Callback[js.Any]): Unit = js.native
-  def put(obj: Obj, options: PutObjectOptions): js.Promise[js.Any] = js.native
-  def put(obj: Obj, options: PutObjectOptions, callback: Callback[js.Any]): Unit = js.native
+  def put(obj: Obj): js.Promise[Any] = js.native
+  def put(obj: Obj, callback: Callback[Any]): Unit = js.native
+  def put(obj: Obj, options: PutObjectOptions): js.Promise[Any] = js.native
+  def put(obj: Obj, options: PutObjectOptions, callback: Callback[Any]): Unit = js.native
   
   def stat(multihash: Multihash): js.Promise[ObjectStat] = js.native
   def stat(multihash: Multihash, callback: Callback[ObjectStat]): Unit = js.native

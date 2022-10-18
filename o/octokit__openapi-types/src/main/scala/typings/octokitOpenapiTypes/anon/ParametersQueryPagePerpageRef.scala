@@ -8,11 +8,11 @@ trait ParametersQueryPagePerpageRef extends StObject {
   
   var parameters: QueryPagePerpageRef
   
-  var responses: `200Content515`
+  var responses: `200Content453`
 }
 object ParametersQueryPagePerpageRef {
   
-  inline def apply(parameters: QueryPagePerpageRef, responses: `200Content515`): ParametersQueryPagePerpageRef = {
+  inline def apply(parameters: QueryPagePerpageRef, responses: `200Content453`): ParametersQueryPagePerpageRef = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryPagePerpageRef]
   }
@@ -21,6 +21,6 @@ object ParametersQueryPagePerpageRef {
     
     inline def setParameters(value: QueryPagePerpageRef): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content515`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content453`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

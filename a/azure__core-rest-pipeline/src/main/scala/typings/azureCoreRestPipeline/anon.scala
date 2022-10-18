@@ -1,6 +1,6 @@
 package typings.azureCoreRestPipeline
 
-import typings.azureCoreRestPipeline.`31CoreRestPipelineMod`.PipelinePhase
+import typings.azureCoreRestPipeline.types3Dot1CoreRestPipelineMod.PipelinePhase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,7 +58,7 @@ object anon {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var phase: js.UndefOr[typings.azureCoreRestPipeline.coreRestPipelineMod.PipelinePhase] = js.undefined
+    var phase: js.UndefOr[typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.PipelinePhase] = js.undefined
   }
   object Phase {
     
@@ -73,7 +73,7 @@ object anon {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setPhase(value: typings.azureCoreRestPipeline.coreRestPipelineMod.PipelinePhase): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+      inline def setPhase(value: typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.PipelinePhase): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
       
       inline def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
     }

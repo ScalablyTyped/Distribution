@@ -1,6 +1,6 @@
 package typings.ssimJs
 
-import typings.ssimJs.typesMod.Shape
+import typings.ssimJs.distTypesMod.Shape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -12,11 +12,11 @@ trait Views extends StObject {
   /** @example 3782 */
   var uniques: Double
   
-  var views: js.Array[Uniques]
+  var views: js.Array[Count]
 }
 object Views {
   
-  inline def apply(count: Double, uniques: Double, views: js.Array[Uniques]): Views = {
+  inline def apply(count: Double, uniques: Double, views: js.Array[Count]): Views = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], uniques = uniques.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
     __obj.asInstanceOf[Views]
   }
@@ -27,8 +27,8 @@ object Views {
     
     inline def setUniques(value: Double): Self = StObject.set(x, "uniques", value.asInstanceOf[js.Any])
     
-    inline def setViews(value: js.Array[Uniques]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    inline def setViews(value: js.Array[Count]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
-    inline def setViewsVarargs(value: Uniques*): Self = StObject.set(x, "views", js.Array(value*))
+    inline def setViewsVarargs(value: Count*): Self = StObject.set(x, "views", js.Array(value*))
   }
 }

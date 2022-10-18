@@ -1,11 +1,11 @@
 package typings.cucumberMessages.mod.messages
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.IPickleStepArgument
-import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.IPickleDocString
-import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.IPickleTable
-import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.IPickleTableRow
-import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.IPickleTableCell
+import typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.IPickleStepArgument
+import typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.IPickleDocString
+import typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.IPickleTable
+import typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.IPickleTableRow
+import typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.IPickleTableCell
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [properties] Properties to set
   */
 open class PickleStepArgument ()
-  extends typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument {
+  extends typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument {
   def this(properties: IPickleStepArgument) = this()
 }
 object PickleStepArgument {
@@ -38,7 +38,7 @@ object PickleStepArgument {
     * @param [properties] Properties to set
     */
   open class PickleDocString ()
-    extends typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString {
+    extends typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString {
     def this(properties: IPickleDocString) = this()
   }
   object PickleDocString {
@@ -53,11 +53,11 @@ object PickleStepArgument {
       * @returns PickleDocString instance
       */
     /* static member */
-    inline def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
-    inline def create(properties: IPickleDocString): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
+    inline def create(): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
+    inline def create(properties: IPickleDocString): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
     
-    inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
-    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
+    inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
     /**
       * Decodes a PickleDocString message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -67,10 +67,10 @@ object PickleStepArgument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    inline def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
-    inline def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
+    inline def decode(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
+    inline def decode(reader: Reader, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
     
-    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
     /**
       * Decodes a PickleDocString message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -79,7 +79,7 @@ object PickleStepArgument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    inline def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
+    inline def decodeDelimited(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
     
     /**
       * Encodes the specified PickleDocString message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleDocString.verify|verify} messages.
@@ -107,7 +107,7 @@ object PickleStepArgument {
       * @returns PickleDocString
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString]
     
     /**
       * Creates a plain object from a PickleDocString message. Also converts values to other types if specified.
@@ -117,10 +117,10 @@ object PickleStepArgument {
       */
     /* static member */
     inline def toObject(
-      message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString
+      message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString
     ): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
-      message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString,
+      message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleDocString,
       options: IConversionOptions
     ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
@@ -141,7 +141,7 @@ object PickleStepArgument {
     * @param [properties] Properties to set
     */
   open class PickleTable ()
-    extends typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable {
+    extends typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable {
     def this(properties: IPickleTable) = this()
   }
   object PickleTable {
@@ -158,7 +158,7 @@ object PickleStepArgument {
       * @param [properties] Properties to set
       */
     open class PickleTableRow ()
-      extends typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow {
+      extends typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow {
       def this(properties: IPickleTableRow) = this()
     }
     object PickleTableRow {
@@ -175,7 +175,7 @@ object PickleStepArgument {
         * @param [properties] Properties to set
         */
       open class PickleTableCell ()
-        extends typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell {
+        extends typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell {
         def this(properties: IPickleTableCell) = this()
       }
       object PickleTableCell {
@@ -190,11 +190,11 @@ object PickleStepArgument {
           * @returns PickleTableCell instance
           */
         /* static member */
-        inline def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
-        inline def create(properties: IPickleTableCell): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
+        inline def create(): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
+        inline def create(properties: IPickleTableCell): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
         
-        inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
-        inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
+        inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
         /**
           * Decodes a PickleTableCell message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -204,10 +204,10 @@ object PickleStepArgument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        inline def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
-        inline def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
+        inline def decode(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
+        inline def decode(reader: Reader, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
         
-        inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
         /**
           * Decodes a PickleTableCell message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -216,7 +216,7 @@ object PickleStepArgument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        inline def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
+        inline def decodeDelimited(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
         
         /**
           * Encodes the specified PickleTableCell message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.verify|verify} messages.
@@ -244,7 +244,7 @@ object PickleStepArgument {
           * @returns PickleTableCell
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
+        inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell]
         
         /**
           * Creates a plain object from a PickleTableCell message. Also converts values to other types if specified.
@@ -254,10 +254,10 @@ object PickleStepArgument {
           */
         /* static member */
         inline def toObject(
-          message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell
+          message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell
         ): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
         inline def toObject(
-          message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell,
+          message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell,
           options: IConversionOptions
         ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
@@ -276,11 +276,11 @@ object PickleStepArgument {
         * @returns PickleTableRow instance
         */
       /* static member */
-      inline def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
-      inline def create(properties: IPickleTableRow): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
+      inline def create(): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
+      inline def create(properties: IPickleTableRow): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
       
-      inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
-      inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
+      inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
       /**
         * Decodes a PickleTableRow message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -290,10 +290,10 @@ object PickleStepArgument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      inline def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
-      inline def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
+      inline def decode(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
+      inline def decode(reader: Reader, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
       
-      inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
       /**
         * Decodes a PickleTableRow message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -302,7 +302,7 @@ object PickleStepArgument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      inline def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
+      inline def decodeDelimited(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
       
       /**
         * Encodes the specified PickleTableRow message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.verify|verify} messages.
@@ -330,7 +330,7 @@ object PickleStepArgument {
         * @returns PickleTableRow
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
+      inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow]
       
       /**
         * Creates a plain object from a PickleTableRow message. Also converts values to other types if specified.
@@ -340,10 +340,10 @@ object PickleStepArgument {
         */
       /* static member */
       inline def toObject(
-        message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow
+        message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow
       ): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
       inline def toObject(
-        message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow,
+        message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow,
         options: IConversionOptions
       ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
@@ -362,11 +362,11 @@ object PickleStepArgument {
       * @returns PickleTable instance
       */
     /* static member */
-    inline def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
-    inline def create(properties: IPickleTable): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
+    inline def create(): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
+    inline def create(properties: IPickleTable): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
     
-    inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
-    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
+    inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
     /**
       * Decodes a PickleTable message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -376,10 +376,10 @@ object PickleStepArgument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    inline def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
-    inline def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
+    inline def decode(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
+    inline def decode(reader: Reader, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
     
-    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
     /**
       * Decodes a PickleTable message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -388,7 +388,7 @@ object PickleStepArgument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    inline def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
+    inline def decodeDelimited(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
     
     /**
       * Encodes the specified PickleTable message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleTable.verify|verify} messages.
@@ -416,7 +416,7 @@ object PickleStepArgument {
       * @returns PickleTable
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable]
     
     /**
       * Creates a plain object from a PickleTable message. Also converts values to other types if specified.
@@ -426,10 +426,10 @@ object PickleStepArgument {
       */
     /* static member */
     inline def toObject(
-      message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable
+      message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable
     ): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
-      message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable,
+      message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument.PickleTable,
       options: IConversionOptions
     ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
@@ -448,11 +448,11 @@ object PickleStepArgument {
     * @returns PickleStepArgument instance
     */
   /* static member */
-  inline def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
-  inline def create(properties: IPickleStepArgument): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
+  inline def create(): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
+  inline def create(properties: IPickleStepArgument): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
   
-  inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
-  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
+  inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
   /**
     * Decodes a PickleStepArgument message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -462,10 +462,10 @@ object PickleStepArgument {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  inline def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
-  inline def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
+  inline def decode(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
+  inline def decode(reader: Reader, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
   
-  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
   /**
     * Decodes a PickleStepArgument message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -474,7 +474,7 @@ object PickleStepArgument {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  inline def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
+  inline def decodeDelimited(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
   
   /**
     * Encodes the specified PickleStepArgument message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.verify|verify} messages.
@@ -502,7 +502,7 @@ object PickleStepArgument {
     * @returns PickleStepArgument
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
+  inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument]
   
   /**
     * Creates a plain object from a PickleStepArgument message. Also converts values to other types if specified.
@@ -511,9 +511,11 @@ object PickleStepArgument {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   inline def toObject(
-    message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument,
+    message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument
+  ): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(
+    message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.PickleStepArgument,
     options: IConversionOptions
   ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   

@@ -1,15 +1,14 @@
 package typings.fpTs.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.applicativeMod.Applicative2
-import typings.fpTs.applyMod.Apply2
-import typings.fpTs.chainMod.Chain2
-import typings.fpTs.fromStateMod.FromState2
-import typings.fpTs.functorMod.Functor2
-import typings.fpTs.monadMod.Monad2
-import typings.fpTs.pointedMod.Pointed2
-import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
-import typings.fpTs.stateMod.State_
+import typings.fpTs.libApplicativeMod.Applicative2
+import typings.fpTs.libApplyMod.Apply2
+import typings.fpTs.libChainMod.Chain2
+import typings.fpTs.libFromStateMod.FromState2
+import typings.fpTs.libFunctorMod.Functor2
+import typings.fpTs.libMonadMod.Monad2
+import typings.fpTs.libPointedMod.Pointed2
+import typings.fpTs.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
+import typings.fpTs.libStateMod.State_
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,31 +22,31 @@ object state {
   
   @JSImport("fp-ts", "state.Applicative")
   @js.native
-  val Applicative: Applicative2[typings.fpTs.stateMod.URI] = js.native
+  val Applicative: Applicative2[typings.fpTs.libStateMod.URI] = js.native
   
   @JSImport("fp-ts", "state.Apply")
   @js.native
-  val Apply: Apply2[typings.fpTs.stateMod.URI] = js.native
+  val Apply: Apply2[typings.fpTs.libStateMod.URI] = js.native
   
   @JSImport("fp-ts", "state.Chain")
   @js.native
-  val Chain_ : Chain2[typings.fpTs.stateMod.URI] = js.native
+  val Chain_ : Chain2[typings.fpTs.libStateMod.URI] = js.native
   
   @JSImport("fp-ts", "state.FromState")
   @js.native
-  val FromState: FromState2[typings.fpTs.stateMod.URI] = js.native
+  val FromState: FromState2[typings.fpTs.libStateMod.URI] = js.native
   
   @JSImport("fp-ts", "state.Functor")
   @js.native
-  val Functor: Functor2[typings.fpTs.stateMod.URI] = js.native
+  val Functor: Functor2[typings.fpTs.libStateMod.URI] = js.native
   
   @JSImport("fp-ts", "state.Monad")
   @js.native
-  val Monad: Monad2[typings.fpTs.stateMod.URI] = js.native
+  val Monad: Monad2[typings.fpTs.libStateMod.URI] = js.native
   
   @JSImport("fp-ts", "state.Pointed")
   @js.native
-  val Pointed: Pointed2[typings.fpTs.stateMod.URI] = js.native
+  val Pointed: Pointed2[typings.fpTs.libStateMod.URI] = js.native
   
   @JSImport("fp-ts", "state.URI")
   @js.native
@@ -61,17 +60,13 @@ object state {
     /* fa */ State_[E, A], 
     State_[
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apS")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ State_[E, A], 
     State_[
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -81,17 +76,13 @@ object state {
     /* ma */ State_[E, A], 
     State_[
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* ma */ State_[E, A], 
     State_[
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -99,17 +90,13 @@ object state {
     /* fa */ State_[Any, Any], 
     State_[
       Any, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindTo")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* fa */ State_[Any, Any], 
     State_[
       Any, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ]]
   
@@ -133,16 +120,25 @@ object state {
   
   inline def gets[S, A](f: js.Function1[/* s */ S, A]): State_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("gets")(f.asInstanceOf[js.Any]).asInstanceOf[State_[S, A]]
   
+  inline def let[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, B]): js.Function1[
+    /* fa */ State_[Any, A], 
+    State_[
+      Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("let")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* fa */ State_[Any, A], 
+    State_[
+      Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ]]
+  
   inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ State_[Any, A], State_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ State_[Any, A], State_[Any, B]]]
   
   inline def modify[S](f: js.Function1[/* s */ S, S]): State_[S, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("modify")(f.asInstanceOf[js.Any]).asInstanceOf[State_[S, Unit]]
   
-  @JSImport("fp-ts", "state.of")
-  @js.native
-  val of: js.Function1[
-    /* a */ Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
-  ] = js.native
+  inline def of[S, A](a: A): State_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any]).asInstanceOf[State_[S, A]]
   
   inline def put[S](s: S): State_[S, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(s.asInstanceOf[js.Any]).asInstanceOf[State_[S, Unit]]
   
@@ -150,7 +146,7 @@ object state {
   
   @JSImport("fp-ts", "state.state")
   @js.native
-  val state: Monad2[typings.fpTs.stateMod.URI] = js.native
+  val state: Monad2[typings.fpTs.libStateMod.URI] = js.native
   
   inline def traverseArray[A, S, B](f: js.Function1[/* a */ A, State_[S, B]]): js.Function1[/* as */ js.Array[A], State_[S, js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseArray")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], State_[S, js.Array[B]]]]
   
@@ -160,9 +156,10 @@ object state {
   
   inline def traverseReadonlyNonEmptyArrayWithIndex[A, S, B](f: js.Function2[/* index */ Double, /* a */ A, State_[S, B]]): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], State_[S, ReadonlyNonEmptyArray_[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseReadonlyNonEmptyArrayWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], State_[S, ReadonlyNonEmptyArray_[B]]]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native
-    trait URItoKind[A] extends StObject
+    trait URItoKind2[E, A] extends StObject
   }
 }

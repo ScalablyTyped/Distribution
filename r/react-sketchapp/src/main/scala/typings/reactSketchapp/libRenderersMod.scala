@@ -1,13 +1,13 @@
 package typings.reactSketchapp
 
+import typings.reactSketchapp.libRenderersArtboardRendererMod.ArtboardRenderer
+import typings.reactSketchapp.libRenderersImageRendererMod.ImageRenderer
+import typings.reactSketchapp.libRenderersSvgRendererMod.SvgRenderer
+import typings.reactSketchapp.libRenderersSymbolInstanceRendererMod.SymbolInstanceRenderer
+import typings.reactSketchapp.libRenderersSymbolMasterRendererMod.SymbolMasterRenderer
+import typings.reactSketchapp.libRenderersTextRendererMod.TextRenderer
+import typings.reactSketchapp.libRenderersViewRendererMod.ViewRenderer
 import typings.reactSketchapp.libTypesMod.PlatformBridge
-import typings.reactSketchapp.renderersArtboardRendererMod.ArtboardRenderer
-import typings.reactSketchapp.renderersImageRendererMod.ImageRenderer
-import typings.reactSketchapp.renderersSvgRendererMod.SvgRenderer
-import typings.reactSketchapp.renderersSymbolInstanceRendererMod.SymbolInstanceRenderer
-import typings.reactSketchapp.renderersSymbolMasterRendererMod.SymbolMasterRenderer
-import typings.reactSketchapp.renderersTextRendererMod.TextRenderer
-import typings.reactSketchapp.renderersViewRendererMod.ViewRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

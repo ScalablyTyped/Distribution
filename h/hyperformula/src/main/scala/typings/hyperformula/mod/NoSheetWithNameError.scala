@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "NoSheetWithNameError")
 @js.native
 open class NoSheetWithNameError protected ()
-  extends typings.hyperformula.errorsMod.NoSheetWithNameError {
+  extends typings.hyperformula.typingsErrorsMod.NoSheetWithNameError {
   def this(sheetName: String) = this()
 }

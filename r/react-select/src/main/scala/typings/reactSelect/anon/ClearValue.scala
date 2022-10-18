@@ -1,24 +1,31 @@
 package typings.reactSelect.anon
 
-import typings.reactSelect.componentsInputMod.InputProps
-import typings.reactSelect.componentsMultiValueMod.MultiValueProps
-import typings.reactSelect.componentsPlaceholderMod.PlaceholderProps
-import typings.reactSelect.componentsSingleValueMod.SingleValueProps
-import typings.reactSelect.containersMod.ContainerProps
-import typings.reactSelect.containersMod.IndicatorsContainerProps
-import typings.reactSelect.containersMod.ValueContainerProps
-import typings.reactSelect.controlMod.ControlProps
-import typings.reactSelect.groupMod.GroupHeadingProps
-import typings.reactSelect.groupMod.GroupProps
-import typings.reactSelect.indicatorsMod.ClearIndicatorProps
-import typings.reactSelect.indicatorsMod.DropdownIndicatorProps
-import typings.reactSelect.indicatorsMod.IndicatorSeparatorProps
-import typings.reactSelect.indicatorsMod.LoadingIndicatorProps
-import typings.reactSelect.menuMod.MenuListProps
-import typings.reactSelect.menuMod.MenuProps
-import typings.reactSelect.menuMod.NoticeProps
-import typings.reactSelect.menuMod.PortalStyleArgs
-import typings.reactSelect.optionMod.OptionProps
+import typings.reactSelect.distDeclarationsSrcComponentsContainersMod.ContainerProps
+import typings.reactSelect.distDeclarationsSrcComponentsContainersMod.IndicatorsContainerProps
+import typings.reactSelect.distDeclarationsSrcComponentsContainersMod.ValueContainerProps
+import typings.reactSelect.distDeclarationsSrcComponentsControlMod.ControlProps
+import typings.reactSelect.distDeclarationsSrcComponentsGroupMod.GroupHeadingProps
+import typings.reactSelect.distDeclarationsSrcComponentsGroupMod.GroupProps
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.ClearIndicatorProps
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.DropdownIndicatorProps
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.IndicatorSeparatorProps
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.LoadingIndicatorProps
+import typings.reactSelect.distDeclarationsSrcComponentsInputMod.InputProps
+import typings.reactSelect.distDeclarationsSrcComponentsMenuMod.MenuListProps
+import typings.reactSelect.distDeclarationsSrcComponentsMenuMod.MenuProps
+import typings.reactSelect.distDeclarationsSrcComponentsMenuMod.NoticeProps
+import typings.reactSelect.distDeclarationsSrcComponentsMenuMod.PortalStyleArgs
+import typings.reactSelect.distDeclarationsSrcComponentsMultiValueMod.MultiValueProps
+import typings.reactSelect.distDeclarationsSrcComponentsOptionMod.OptionProps
+import typings.reactSelect.distDeclarationsSrcComponentsPlaceholderMod.PlaceholderProps
+import typings.reactSelect.distDeclarationsSrcComponentsSingleValueMod.SingleValueProps
+import typings.reactSelect.distDeclarationsSrcSelectMod.Props
+import typings.reactSelect.distDeclarationsSrcTypesMod.CSSObjectWithLabel
+import typings.reactSelect.distDeclarationsSrcTypesMod.GroupBase
+import typings.reactSelect.distDeclarationsSrcTypesMod.OnChangeValue
+import typings.reactSelect.distDeclarationsSrcTypesMod.OptionsOrGroups
+import typings.reactSelect.distDeclarationsSrcTypesMod.SetValueAction
+import typings.reactSelect.distDeclarationsSrcTypesMod.Theme
 import typings.reactSelect.reactSelectStrings.clearIndicator
 import typings.reactSelect.reactSelectStrings.container
 import typings.reactSelect.reactSelectStrings.control
@@ -41,13 +48,6 @@ import typings.reactSelect.reactSelectStrings.option
 import typings.reactSelect.reactSelectStrings.placeholder
 import typings.reactSelect.reactSelectStrings.singleValue
 import typings.reactSelect.reactSelectStrings.valueContainer
-import typings.reactSelect.selectMod.Props
-import typings.reactSelect.typesMod.CSSObjectWithLabel
-import typings.reactSelect.typesMod.GroupBase
-import typings.reactSelect.typesMod.OnChangeValue
-import typings.reactSelect.typesMod.OptionsOrGroups
-import typings.reactSelect.typesMod.SetValueAction
-import typings.reactSelect.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,7 +106,7 @@ trait ClearValue[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option]
   @JSName("getStyles")
   def getStyles_valueContainer(key: valueContainer, props: ValueContainerProps[Option, IsMulti, Group]): CSSObjectWithLabel = js.native
   
-  def getValue(): typings.reactSelect.typesMod.Options[Option] = js.native
+  def getValue(): typings.reactSelect.distDeclarationsSrcTypesMod.Options[Option] = js.native
   
   var hasValue: Boolean = js.native
   

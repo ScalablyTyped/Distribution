@@ -1,7 +1,7 @@
 package typings.storybookAddonKnobs.anon
 
-import typings.storybookAddonKnobs.buttonMod.ButtonTypeKnob
-import typings.storybookAddonKnobs.buttonMod.ButtonTypeOnClickProp
+import typings.storybookAddonKnobs.distComponentsTypesButtonMod.ButtonTypeKnob
+import typings.storybookAddonKnobs.distComponentsTypesButtonMod.ButtonTypeOnClickProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

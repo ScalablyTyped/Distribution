@@ -15,7 +15,7 @@ object physicsPluginsIndexMod {
     * @param overlappingPairCache can be used to specify your own overlapping pair cache
     */
   open class AmmoJSPlugin ()
-    extends typings.babylonjs.ammoJSPluginMod.AmmoJSPlugin {
+    extends typings.babylonjs.physicsPluginsAmmoJSPluginMod.AmmoJSPlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()
     def this(_useDeltaForWorldStep: Boolean, ammoInjection: Any) = this()
     def this(_useDeltaForWorldStep: Unit, ammoInjection: Any) = this()
@@ -43,7 +43,7 @@ object physicsPluginsIndexMod {
   @JSImport("babylonjs/Physics/Plugins/index", "CannonJSPlugin")
   @js.native
   open class CannonJSPlugin ()
-    extends typings.babylonjs.cannonJSPluginMod.CannonJSPlugin {
+    extends typings.babylonjs.physicsPluginsCannonJSPluginMod.CannonJSPlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()
     def this(_useDeltaForWorldStep: Boolean, iterations: Double) = this()
     def this(_useDeltaForWorldStep: Unit, iterations: Double) = this()
@@ -56,7 +56,7 @@ object physicsPluginsIndexMod {
   @JSImport("babylonjs/Physics/Plugins/index", "OimoJSPlugin")
   @js.native
   open class OimoJSPlugin ()
-    extends typings.babylonjs.oimoJSPluginMod.OimoJSPlugin {
+    extends typings.babylonjs.physicsPluginsOimoJSPluginMod.OimoJSPlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()
     def this(_useDeltaForWorldStep: Boolean, iterations: Double) = this()
     def this(_useDeltaForWorldStep: Unit, iterations: Double) = this()

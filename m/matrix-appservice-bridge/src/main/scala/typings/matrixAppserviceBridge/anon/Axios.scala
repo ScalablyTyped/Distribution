@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.anon
 
-import typings.matrixAppserviceBridge.matrixHostResolverMod.DnsInterface
+import typings.matrixAppserviceBridge.libUtilsMatrixHostResolverMod.DnsInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

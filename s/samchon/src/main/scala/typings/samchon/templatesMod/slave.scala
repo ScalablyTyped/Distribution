@@ -1,6 +1,6 @@
 package typings.samchon.templatesMod
 
-import typings.samchon.invokeMod.Invoke
+import typings.samchon.protocolInvokeInvokeMod.Invoke
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object slave {
     * Default Constructor.
     */
   open class InvokeHistory ()
-    extends typings.samchon.slaveMod.InvokeHistory {
+    extends typings.samchon.templatesSlaveMod.InvokeHistory {
     /**
       * Construct from an {@link Invoke} message.
       *
@@ -25,7 +25,7 @@ object slave {
   @JSImport("samchon/templates", "slave.PInvoke")
   @js.native
   open class PInvoke protected ()
-    extends typings.samchon.slaveMod.PInvoke {
+    extends typings.samchon.templatesSlaveMod.PInvoke {
     /**
       * Initializer Constructor.
       *
@@ -35,32 +35,32 @@ object slave {
       */
     def this(
       invoke: Invoke,
-      history: typings.samchon.invokeHistoryMod.InvokeHistory,
-      slaveSystem: typings.samchon.slaveSystemMod.SlaveSystem
+      history: typings.samchon.templatesSlaveInvokeHistoryMod.InvokeHistory,
+      slaveSystem: typings.samchon.templatesSlaveSlaveSystemMod.SlaveSystem
     ) = this()
   }
   
-  @JSImport("samchon/templates", "slave.SlaveClient")
+  /* note: abstract class */ @JSImport("samchon/templates", "slave.SlaveClient")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class SlaveClient ()
-    extends typings.samchon.slaveMod.SlaveClient
+  open class SlaveClient ()
+    extends typings.samchon.templatesSlaveMod.SlaveClient
   
-  @JSImport("samchon/templates", "slave.SlaveServer")
+  /* note: abstract class */ @JSImport("samchon/templates", "slave.SlaveServer")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class SlaveServer ()
-    extends typings.samchon.slaveMod.SlaveServer
+  open class SlaveServer ()
+    extends typings.samchon.templatesSlaveMod.SlaveServer
   
-  @JSImport("samchon/templates", "slave.SlaveSystem")
+  /* note: abstract class */ @JSImport("samchon/templates", "slave.SlaveSystem")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class SlaveSystem ()
-    extends typings.samchon.slaveMod.SlaveSystem
+  open class SlaveSystem ()
+    extends typings.samchon.templatesSlaveMod.SlaveSystem
 }

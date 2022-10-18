@@ -316,9 +316,9 @@ object global {
     @js.native
     val GRANearestNeighbor: String = js.native
     
-    @JSGlobal("gdal.Geometry")
+    /* note: abstract class */ @JSGlobal("gdal.Geometry")
     @js.native
-    abstract class Geometry ()
+    open class Geometry ()
       extends typings.gdal.mod.Geometry
     /* static members */
     object Geometry {

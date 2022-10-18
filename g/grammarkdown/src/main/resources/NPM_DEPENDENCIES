@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "grammarkdown" : "2.2.7"
+      "grammarkdown" : "3.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "grammarkdown" : "2.2.7"
+      "grammarkdown" : "3.2.0"
     }
   ],
   "compile-devDependencies" : [

@@ -14,9 +14,9 @@ sealed trait GoToType extends StObject
 object GoToType extends StObject {
   
   /**
-    * Goes to a binding object using the specified binding id.
-    * 
-    * Supported hosts: Excel, Word
+    * Goes to a binding object using the specified binding ID.
+    *
+    * Supported applications: Excel, Word
     */
   @js.native
   sealed trait Binding
@@ -25,8 +25,8 @@ object GoToType extends StObject {
   
   /**
     * Goes to the specified index by slide number or {@link Office.Index}.
-    * 
-    * Supported hosts: PowerPoint
+    *
+    * Supported applications: PowerPoint
     */
   @js.native
   sealed trait Index
@@ -36,8 +36,8 @@ object GoToType extends StObject {
   /**
     * Goes to a named item using that item's name.
     * In Excel, you can use any structured reference for a named range or table: "Worksheet2!Table1"
-    * 
-    * Supported hosts: Excel
+    *
+    * Supported applications: Excel
     */
   @js.native
   sealed trait NamedItem
@@ -45,9 +45,9 @@ object GoToType extends StObject {
        with GoToType
   
   /**
-    * Goes to a slide using the specified id.
-    * 
-    * Supported hosts: PowerPoint
+    * Goes to a slide using the specified ID.
+    *
+    * Supported applications: PowerPoint
     */
   @js.native
   sealed trait Slide

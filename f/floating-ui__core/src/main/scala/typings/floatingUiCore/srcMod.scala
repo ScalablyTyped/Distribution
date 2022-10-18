@@ -1,5 +1,6 @@
 package typings.floatingUiCore
 
+import typings.floatingUiCore.anon.Fn
 import typings.floatingUiCore.anon.PartialLimitShiftOptions
 import typings.floatingUiCore.anon.PartialOptions
 import typings.floatingUiCore.anon.PartialOptionsOptions
@@ -8,13 +9,13 @@ import typings.floatingUiCore.anon.PartialOptionsOptionsApply
 import typings.floatingUiCore.anon.PartialOptionsOptionsBoundary
 import typings.floatingUiCore.anon.PartialOptionsOptionsCrossAxis
 import typings.floatingUiCore.anon.PartialOptionsPadding
-import typings.floatingUiCore.arrowMod.Options
-import typings.floatingUiCore.typesMod.ClientRectObject
-import typings.floatingUiCore.typesMod.ComputePosition_
-import typings.floatingUiCore.typesMod.Middleware
-import typings.floatingUiCore.typesMod.MiddlewareArguments
-import typings.floatingUiCore.typesMod.Rect
-import typings.floatingUiCore.typesMod.SideObject
+import typings.floatingUiCore.srcMiddlewareArrowMod.Options
+import typings.floatingUiCore.srcTypesMod.ClientRectObject
+import typings.floatingUiCore.srcTypesMod.ComputePosition_
+import typings.floatingUiCore.srcTypesMod.Middleware
+import typings.floatingUiCore.srcTypesMod.MiddlewareArguments
+import typings.floatingUiCore.srcTypesMod.Rect
+import typings.floatingUiCore.srcTypesMod.SideObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,11 +47,11 @@ object srcMod {
   inline def `inline`(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("inline")().asInstanceOf[Middleware]
   inline def `inline`(options: PartialOptionsPadding): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("inline")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
-  inline def limitShift(): typings.floatingUiCore.anon.Options = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")().asInstanceOf[typings.floatingUiCore.anon.Options]
-  inline def limitShift(options: PartialLimitShiftOptions): typings.floatingUiCore.anon.Options = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")(options.asInstanceOf[js.Any]).asInstanceOf[typings.floatingUiCore.anon.Options]
+  inline def limitShift(): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")().asInstanceOf[Fn]
+  inline def limitShift(options: PartialLimitShiftOptions): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")(options.asInstanceOf[js.Any]).asInstanceOf[Fn]
   
   inline def offset(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")().asInstanceOf[Middleware]
-  inline def offset(value: typings.floatingUiCore.offsetMod.Options): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(value.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def offset(value: typings.floatingUiCore.srcMiddlewareOffsetMod.Options): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(value.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
   inline def rectToClientRect(rect: Rect): ClientRectObject = ^.asInstanceOf[js.Dynamic].applyDynamic("rectToClientRect")(rect.asInstanceOf[js.Any]).asInstanceOf[ClientRectObject]
   

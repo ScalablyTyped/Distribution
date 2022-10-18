@@ -11,7 +11,7 @@ object mod {
   @JSImport("rc-steps", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.rcSteps.stepsMod.default
+    extends typings.rcSteps.libStepsMod.default
   /* static members */
   object default {
     
@@ -21,8 +21,8 @@ object mod {
     
     @JSImport("rc-steps", "default.Step")
     @js.native
-    def Step: Instantiable0[typings.rcSteps.stepMod.default] = js.native
-    inline def Step_=(x: Instantiable0[typings.rcSteps.stepMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
+    def Step: Instantiable0[typings.rcSteps.libStepMod.default] = js.native
+    inline def Step_=(x: Instantiable0[typings.rcSteps.libStepMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-steps", "default.defaultProps")
     @js.native
@@ -33,5 +33,5 @@ object mod {
   @JSImport("rc-steps", "Step")
   @js.native
   open class Step ()
-    extends typings.rcSteps.stepMod.default
+    extends typings.rcSteps.libStepMod.default
 }

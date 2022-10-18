@@ -1,8 +1,8 @@
 package typings.randomJs
 
-import typings.randomJs.typesMod.Distribution
-import typings.randomJs.typesMod.Engine
-import typings.randomJs.typesMod.StringDistribution
+import typings.randomJs.distTypesMod.Distribution
+import typings.randomJs.distTypesMod.Engine
+import typings.randomJs.distTypesMod.StringDistribution
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +21,7 @@ object mod {
     * Instead, use the static methods `seed`, `seedWithArray`, or `autoSeed`.
     */
   /* private */ open class MersenneTwister19937 ()
-    extends typings.randomJs.mersenneTwister19937Mod.MersenneTwister19937
+    extends typings.randomJs.distEngineMersenneTwister19937Mod.MersenneTwister19937
   /* static members */
   object MersenneTwister19937 {
     
@@ -33,19 +33,19 @@ object mod {
       * Returns a MersenneTwister19937 seeded with the current time and
       * a series of natively-generated random values
       */
-    inline def autoSeed(): typings.randomJs.mersenneTwister19937Mod.MersenneTwister19937 = ^.asInstanceOf[js.Dynamic].applyDynamic("autoSeed")().asInstanceOf[typings.randomJs.mersenneTwister19937Mod.MersenneTwister19937]
+    inline def autoSeed(): typings.randomJs.distEngineMersenneTwister19937Mod.MersenneTwister19937 = ^.asInstanceOf[js.Dynamic].applyDynamic("autoSeed")().asInstanceOf[typings.randomJs.distEngineMersenneTwister19937Mod.MersenneTwister19937]
     
     /**
       * Returns a MersenneTwister19937 seeded with an initial int32 value
       * @param initial the initial seed value
       */
-    inline def seed(initial: Double): typings.randomJs.mersenneTwister19937Mod.MersenneTwister19937 = ^.asInstanceOf[js.Dynamic].applyDynamic("seed")(initial.asInstanceOf[js.Any]).asInstanceOf[typings.randomJs.mersenneTwister19937Mod.MersenneTwister19937]
+    inline def seed(initial: Double): typings.randomJs.distEngineMersenneTwister19937Mod.MersenneTwister19937 = ^.asInstanceOf[js.Dynamic].applyDynamic("seed")(initial.asInstanceOf[js.Any]).asInstanceOf[typings.randomJs.distEngineMersenneTwister19937Mod.MersenneTwister19937]
     
     /**
       * Returns a MersenneTwister19937 seeded with zero or more int32 values
       * @param source A series of int32 values
       */
-    inline def seedWithArray(source: ArrayLike[Double]): typings.randomJs.mersenneTwister19937Mod.MersenneTwister19937 = ^.asInstanceOf[js.Dynamic].applyDynamic("seedWithArray")(source.asInstanceOf[js.Any]).asInstanceOf[typings.randomJs.mersenneTwister19937Mod.MersenneTwister19937]
+    inline def seedWithArray(source: ArrayLike[Double]): typings.randomJs.distEngineMersenneTwister19937Mod.MersenneTwister19937 = ^.asInstanceOf[js.Dynamic].applyDynamic("seedWithArray")(source.asInstanceOf[js.Any]).asInstanceOf[typings.randomJs.distEngineMersenneTwister19937Mod.MersenneTwister19937]
   }
   
   @JSImport("random-js", "Random")
@@ -55,7 +55,7 @@ object mod {
     * @param engine The engine to use (defaults to a `Math.random`-based implementation)
     */
   open class Random ()
-    extends typings.randomJs.randomMod.Random {
+    extends typings.randomJs.distRandomMod.Random {
     def this(engine: Engine) = this()
   }
   

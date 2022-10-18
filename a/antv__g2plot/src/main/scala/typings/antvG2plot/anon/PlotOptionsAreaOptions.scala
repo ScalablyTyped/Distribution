@@ -1,27 +1,27 @@
 package typings.antvG2plot.anon
 
+import typings.antvG2.libChartLayoutPaddingCalMod.PaddingCalCtor
+import typings.antvG2.libChartViewMod.View
 import typings.antvG2.libInterfaceMod.SyncViewPaddingFn
-import typings.antvG2.paddingCalMod.PaddingCalCtor
-import typings.antvG2.viewMod.View
-import typings.antvG2plot.animationMod.Animation
-import typings.antvG2plot.annotationMod.Annotation
 import typings.antvG2plot.antvG2plotStrings.auto
 import typings.antvG2plot.antvG2plotStrings.canvas
 import typings.antvG2plot.antvG2plotStrings.svg
-import typings.antvG2plot.attrMod.ColorAttr
-import typings.antvG2plot.attrMod.PatternAttr
-import typings.antvG2plot.attrMod.ShapeStyle
-import typings.antvG2plot.attrMod.StyleAttr
-import typings.antvG2plot.axisMod.Axis
-import typings.antvG2plot.baseMod.MappingOptions
-import typings.antvG2plot.coordinateMod.Transformations
-import typings.antvG2plot.interactionMod.Interaction
-import typings.antvG2plot.metaMod.Meta
-import typings.antvG2plot.scrollbarMod.Scrollbar
-import typings.antvG2plot.sliderMod.Slider
-import typings.antvG2plot.tooltipMod.Tooltip
-import typings.antvG2plot.typesCommonMod.Datum
-import typings.antvG2plot.utilsPatternMod.PatternOption
+import typings.antvG2plot.libAdaptorGeometriesBaseMod.MappingOptions
+import typings.antvG2plot.libTypesAnimationMod.Animation
+import typings.antvG2plot.libTypesAnnotationMod.Annotation
+import typings.antvG2plot.libTypesAttrMod.ColorAttr
+import typings.antvG2plot.libTypesAttrMod.PatternAttr
+import typings.antvG2plot.libTypesAttrMod.ShapeStyle
+import typings.antvG2plot.libTypesAttrMod.StyleAttr
+import typings.antvG2plot.libTypesAxisMod.Axis
+import typings.antvG2plot.libTypesCommonMod.Datum
+import typings.antvG2plot.libTypesCoordinateMod.Transformations
+import typings.antvG2plot.libTypesInteractionMod.Interaction
+import typings.antvG2plot.libTypesMetaMod.Meta
+import typings.antvG2plot.libTypesScrollbarMod.Scrollbar
+import typings.antvG2plot.libTypesSliderMod.Slider
+import typings.antvG2plot.libTypesTooltipMod.Tooltip
+import typings.antvG2plot.libUtilsPatternMod.PatternOption
 import typings.std.CanvasPattern
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -57,9 +57,9 @@ trait PlotOptionsAreaOptions extends StObject {
   
   var isStack: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[typings.antvG2plot.typesLabelMod.Label] = js.undefined
+  var label: js.UndefOr[typings.antvG2plot.libTypesLabelMod.Label] = js.undefined
   
-  var legend: js.UndefOr[typings.antvG2plot.typesLegendMod.Legend] = js.undefined
+  var legend: js.UndefOr[typings.antvG2plot.libTypesLegendMod.Legend] = js.undefined
   
   var limitInPlot: js.UndefOr[Boolean] = js.undefined
   
@@ -91,7 +91,7 @@ trait PlotOptionsAreaOptions extends StObject {
   
   var startOnZero: js.UndefOr[Boolean] = js.undefined
   
-  var state: js.UndefOr[typings.antvG2plot.stateMod.State] = js.undefined
+  var state: js.UndefOr[typings.antvG2plot.libTypesStateMod.State] = js.undefined
   
   var supportCSSTransform: js.UndefOr[Boolean] = js.undefined
   
@@ -188,11 +188,11 @@ object PlotOptionsAreaOptions {
     
     inline def setIsStackUndefined: Self = StObject.set(x, "isStack", js.undefined)
     
-    inline def setLabel(value: typings.antvG2plot.typesLabelMod.Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: typings.antvG2plot.libTypesLabelMod.Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setLegend(value: typings.antvG2plot.typesLegendMod.Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: typings.antvG2plot.libTypesLegendMod.Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
@@ -260,7 +260,7 @@ object PlotOptionsAreaOptions {
     
     inline def setStartOnZeroUndefined: Self = StObject.set(x, "startOnZero", js.undefined)
     
-    inline def setState(value: typings.antvG2plot.stateMod.State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: typings.antvG2plot.libTypesStateMod.State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     

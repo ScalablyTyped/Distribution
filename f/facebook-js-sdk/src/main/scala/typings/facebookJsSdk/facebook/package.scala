@@ -11,8 +11,6 @@ type EducationExperience = Any
 
 type Experience = Any
 
-type FacebookEventCallback[TEvent /* <: FacebookEventType */] = (js.Function1[/* response */ StatusResponse, Unit]) | js.Function0[Unit]
-
 type Page = Any
 
 type PaymentPricepoints = Any

@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsStopOutlinedMod.StopOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stopOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/StopOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/StopOutlined", JSImport.Default)
   @js.native
   val default: StopOutlinedIconType = js.native
-  
-  @js.native
-  trait StopOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_StopOutlinedIconType: String = js.native
-  }
   
   type _To = StopOutlinedIconType
   

@@ -1,7 +1,7 @@
 package typings.screepsArena.gamePrototypesMod
 
-import typings.screepsArena.constantsMod.ERR_NOT_OWNER
-import typings.screepsArena.constantsMod.OK
+import typings.screepsArena.gameConstantsMod.ERR_NOT_OWNER
+import typings.screepsArena.gameConstantsMod.OK
 import typings.screepsArena.gamePrototypesMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

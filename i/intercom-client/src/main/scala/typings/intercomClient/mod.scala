@@ -34,7 +34,7 @@ import typings.intercomClient.userMod.UserIdentifier
 import typings.intercomClient.visitorMod.Visitor
 import typings.intercomClient.visitorMod.VisitorIdentifier
 import typings.node.httpMod.IncomingMessage
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.request.mod.CoreOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

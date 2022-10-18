@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "FramingBehavior")
 @js.native
 open class FramingBehavior ()
-  extends typings.babylonjs.legacyMod.FramingBehavior
+  extends typings.babylonjs.legacyLegacyMod.FramingBehavior
 /* static members */
 object FramingBehavior {
   
@@ -20,8 +20,8 @@ object FramingBehavior {
     */
   @JSImport("babylonjs", "FramingBehavior.EasingFunction")
   @js.native
-  def EasingFunction: typings.babylonjs.easingMod.ExponentialEase = js.native
-  inline def EasingFunction_=(x: typings.babylonjs.easingMod.ExponentialEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
+  def EasingFunction: typings.babylonjs.animationsEasingMod.ExponentialEase = js.native
+  inline def EasingFunction_=(x: typings.babylonjs.animationsEasingMod.ExponentialEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
   
   /**
     * The easing mode used by animations

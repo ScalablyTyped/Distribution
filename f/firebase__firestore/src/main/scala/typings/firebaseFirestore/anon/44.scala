@@ -1,7 +1,7 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.distPrivateMod.FieldPath
-import typings.firebaseFirestore.distPrivateMod.SetOptions
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldPathMod.FieldPath
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.SetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

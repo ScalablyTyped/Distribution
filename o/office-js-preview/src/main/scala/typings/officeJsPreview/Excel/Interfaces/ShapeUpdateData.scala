@@ -42,7 +42,7 @@ trait ShapeUpdateData extends StObject {
     * [Api set: ExcelApi 1.9]
     */
   var geometricShapeType: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.officeJsPreview.Excel.GeometricShapeType, typings.officeJsPreview.officeJsPreviewStrings.LineInverse, typings.officeJsPreview.officeJsPreviewStrings.Triangle */ Any
   ] = js.undefined
   
   /**
@@ -150,7 +150,9 @@ object ShapeUpdateData {
     
     inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    inline def setGeometricShapeType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any): Self = StObject.set(x, "geometricShapeType", value.asInstanceOf[js.Any])
+    inline def setGeometricShapeType(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.officeJsPreview.Excel.GeometricShapeType, typings.officeJsPreview.officeJsPreviewStrings.LineInverse, typings.officeJsPreview.officeJsPreviewStrings.Triangle */ Any
+    ): Self = StObject.set(x, "geometricShapeType", value.asInstanceOf[js.Any])
     
     inline def setGeometricShapeTypeUndefined: Self = StObject.set(x, "geometricShapeType", js.undefined)
     

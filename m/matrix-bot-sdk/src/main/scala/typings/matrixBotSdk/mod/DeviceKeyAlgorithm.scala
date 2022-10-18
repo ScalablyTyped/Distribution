@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DeviceKeyAlgorithm extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.matrixBotSdk.cryptoMod.DeviceKeyAlgorithm & String] = js.native
+  def apply(value: String): js.UndefOr[typings.matrixBotSdk.libModelsCryptoMod.DeviceKeyAlgorithm & String] = js.native
   
-  /* "curve25519" */ val Curve25519: typings.matrixBotSdk.cryptoMod.DeviceKeyAlgorithm.Curve25519 & String = js.native
+  /* "curve25519" */ val Curve25519: typings.matrixBotSdk.libModelsCryptoMod.DeviceKeyAlgorithm.Curve25519 & String = js.native
   
-  /* "ed25519" */ val Ed25519: typings.matrixBotSdk.cryptoMod.DeviceKeyAlgorithm.Ed25519 & String = js.native
+  /* "ed25519" */ val Ed25519: typings.matrixBotSdk.libModelsCryptoMod.DeviceKeyAlgorithm.Ed25519 & String = js.native
 }

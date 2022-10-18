@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "tensorflow__tfjs-node"
-version := "3.20.0-97632d"
+version := "4.0.0-4e39e5"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
-  "org.scalablytyped" %%% "tensorflow__tfjs" % "3.20.0-d53ba7",
-  "org.scalablytyped" %%% "tensorflow__tfjs-converter" % "3.20.0-ab77df",
-  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "3.20.0-d049ea",
-  "org.scalablytyped" %%% "tensorflow__tfjs-data" % "3.20.0-2f2223",
-  "org.scalablytyped" %%% "tensorflow__tfjs-layers" % "3.20.0-358339",
-  "org.scalablytyped" %%% "webgpu__types" % "0.1.21-cf69c2")
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "tensorflow__tfjs" % "4.0.0-470f2c",
+  "org.scalablytyped" %%% "tensorflow__tfjs-converter" % "4.0.0-512b78",
+  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "4.0.0-7737a0",
+  "org.scalablytyped" %%% "tensorflow__tfjs-data" % "4.0.0-7a7129",
+  "org.scalablytyped" %%% "tensorflow__tfjs-layers" % "4.0.0-a977ae",
+  "org.scalablytyped" %%% "webgpu__types" % "0.1.22-16be7f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

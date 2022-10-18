@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  @js.native
-  trait `0` extends StObject
-  
   trait Get[T] extends StObject {
     
     def get(): T

@@ -45,7 +45,7 @@ trait Subject extends StObject {
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`. The `value` property of the result is the subject of the item.
@@ -93,7 +93,7 @@ trait Subject extends StObject {
     * - `DataExceedsMaximumSize`: The subject parameter is longer than 255 characters.
     *
     * @param subject - The subject of the appointment or message. The string is limited to 255 characters.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`. If setting the subject fails, the `asyncResult.error` property will contain an error code.

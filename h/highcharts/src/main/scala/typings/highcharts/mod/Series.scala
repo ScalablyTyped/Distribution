@@ -596,7 +596,9 @@ open class Series protected () extends StObject {
     *        options set on chart and series.
     */
   def sonify(): Unit = js.native
-  def sonify(options: typings.highcharts.sonificationMod.highchartsAugmentingMod.SonifySeriesOptionsObject): Unit = js.native
+  def sonify(
+    options: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.SonifySeriesOptionsObject
+  ): Unit = js.native
   
   /**
     * Translate data points from raw data values to chart specific positioning

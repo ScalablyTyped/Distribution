@@ -1,8 +1,5 @@
 package typings.mobxStateTree
 
-import typings.mobxStateTree.actionContextMod.IActionContext
-import typings.mobxStateTree.actionMod.IMiddlewareEvent
-import typings.mobxStateTree.actionMod.IMiddlewareHandler
 import typings.mobxStateTree.anon.AcceptsUndefined
 import typings.mobxStateTree.anon.Fn0
 import typings.mobxStateTree.anon.Fn1
@@ -22,52 +19,55 @@ import typings.mobxStateTree.anon.FnCallTypeDefaultValueOrFunctionOptionalValues
 import typings.mobxStateTree.anon.FnCallTypeProcessorsName
 import typings.mobxStateTree.anon.FnCallValue
 import typings.mobxStateTree.anon.OnInvalidated
-import typings.mobxStateTree.arrayMod.IArrayType
-import typings.mobxStateTree.createActionTrackingMiddleware2Mod.IActionTrackingMiddleware2Hooks
-import typings.mobxStateTree.createActionTrackingMiddlewareMod.IActionTrackingMiddlewareHooks
-import typings.mobxStateTree.customMod.CustomTypeOptions
-import typings.mobxStateTree.enumerationMod.UnionStringArray
-import typings.mobxStateTree.flowMod.FlowReturn
-import typings.mobxStateTree.identifierMod.ReferenceIdentifier
-import typings.mobxStateTree.jsonPatchMod.IJsonPatch
-import typings.mobxStateTree.livelinessCheckingMod.LivelinessMode
-import typings.mobxStateTree.mapMod.IMapType
-import typings.mobxStateTree.maybeMod.IMaybe
-import typings.mobxStateTree.maybeMod.IMaybeNull
-import typings.mobxStateTree.modelMod.CustomJoin
-import typings.mobxStateTree.modelMod.IAnyModelType
-import typings.mobxStateTree.modelMod.IModelType
-import typings.mobxStateTree.modelMod.ModelCreationType2
-import typings.mobxStateTree.modelMod.ModelInstanceType
-import typings.mobxStateTree.modelMod.ModelProperties
-import typings.mobxStateTree.modelMod.ModelPropertiesDeclaration
-import typings.mobxStateTree.modelMod.ModelPropertiesDeclarationToProperties
-import typings.mobxStateTree.modelMod.ModelSnapshotType2
-import typings.mobxStateTree.mstOperationsMod.IModelReflectionData
-import typings.mobxStateTree.mstOperationsMod.IModelReflectionPropertiesData
-import typings.mobxStateTree.mstOperationsMod.IPatchRecorder
-import typings.mobxStateTree.mstOperationsMod.TypeOrStateTreeNodeToStateTreeNode
-import typings.mobxStateTree.nodeUtilsMod.IAnyStateTreeNode
-import typings.mobxStateTree.nodeUtilsMod.IStateTreeNode
-import typings.mobxStateTree.onActionMod.IActionRecorder
-import typings.mobxStateTree.onActionMod.ISerializedActionCall
-import typings.mobxStateTree.optionalMod.IOptionalIType
-import typings.mobxStateTree.optionalMod.OptionalDefaultValueOrFunction
-import typings.mobxStateTree.optionalMod.ValidOptionalValues
-import typings.mobxStateTree.referenceMod.IReferenceType
-import typings.mobxStateTree.referenceMod.ReferenceOptions
-import typings.mobxStateTree.referenceMod.ReferenceOptionsGetSet
-import typings.mobxStateTree.snapshotProcessorMod.ISnapshotProcessor
-import typings.mobxStateTree.snapshotProcessorMod.ISnapshotProcessors
-import typings.mobxStateTree.snapshotProcessorMod.NotCustomized
-import typings.mobxStateTree.typeMod.ExtractCSTWithSTN
-import typings.mobxStateTree.typeMod.IAnyComplexType
-import typings.mobxStateTree.typeMod.IAnyType
-import typings.mobxStateTree.typeMod.ISimpleType
-import typings.mobxStateTree.typeMod.IType
-import typings.mobxStateTree.unionMod.ITypeUnion
-import typings.mobxStateTree.unionMod.UnionOptions
-import typings.mobxStateTree.utilsMod.IDisposer
+import typings.mobxStateTree.distCoreActionContextMod.IActionContext
+import typings.mobxStateTree.distCoreActionMod.IMiddlewareEvent
+import typings.mobxStateTree.distCoreActionMod.IMiddlewareHandler
+import typings.mobxStateTree.distCoreFlowMod.FlowReturn
+import typings.mobxStateTree.distCoreJsonPatchMod.IJsonPatch
+import typings.mobxStateTree.distCoreMstOperationsMod.IModelReflectionData
+import typings.mobxStateTree.distCoreMstOperationsMod.IModelReflectionPropertiesData
+import typings.mobxStateTree.distCoreMstOperationsMod.IPatchRecorder
+import typings.mobxStateTree.distCoreMstOperationsMod.TypeOrStateTreeNodeToStateTreeNode
+import typings.mobxStateTree.distCoreNodeLivelinessCheckingMod.LivelinessMode
+import typings.mobxStateTree.distCoreNodeNodeUtilsMod.IAnyStateTreeNode
+import typings.mobxStateTree.distCoreNodeNodeUtilsMod.IStateTreeNode
+import typings.mobxStateTree.distCoreTypeTypeMod.ExtractCSTWithSTN
+import typings.mobxStateTree.distCoreTypeTypeMod.IAnyComplexType
+import typings.mobxStateTree.distCoreTypeTypeMod.IAnyType
+import typings.mobxStateTree.distCoreTypeTypeMod.ISimpleType
+import typings.mobxStateTree.distCoreTypeTypeMod.IType
+import typings.mobxStateTree.distMiddlewaresCreateActionTrackingMiddleware2Mod.IActionTrackingMiddleware2Hooks
+import typings.mobxStateTree.distMiddlewaresCreateActionTrackingMiddlewareMod.IActionTrackingMiddlewareHooks
+import typings.mobxStateTree.distMiddlewaresOnActionMod.IActionRecorder
+import typings.mobxStateTree.distMiddlewaresOnActionMod.ISerializedActionCall
+import typings.mobxStateTree.distTypesComplexTypesArrayMod.IArrayType
+import typings.mobxStateTree.distTypesComplexTypesMapMod.IMapType
+import typings.mobxStateTree.distTypesComplexTypesModelMod.CustomJoin
+import typings.mobxStateTree.distTypesComplexTypesModelMod.IAnyModelType
+import typings.mobxStateTree.distTypesComplexTypesModelMod.IModelType
+import typings.mobxStateTree.distTypesComplexTypesModelMod.ModelCreationType2
+import typings.mobxStateTree.distTypesComplexTypesModelMod.ModelInstanceType
+import typings.mobxStateTree.distTypesComplexTypesModelMod.ModelProperties
+import typings.mobxStateTree.distTypesComplexTypesModelMod.ModelPropertiesDeclaration
+import typings.mobxStateTree.distTypesComplexTypesModelMod.ModelPropertiesDeclarationToProperties
+import typings.mobxStateTree.distTypesComplexTypesModelMod.ModelSnapshotType2
+import typings.mobxStateTree.distTypesUtilityTypesCustomMod.CustomTypeOptions
+import typings.mobxStateTree.distTypesUtilityTypesEnumerationMod.UnionStringArray
+import typings.mobxStateTree.distTypesUtilityTypesIdentifierMod.ReferenceIdentifier
+import typings.mobxStateTree.distTypesUtilityTypesMaybeMod.IMaybe
+import typings.mobxStateTree.distTypesUtilityTypesMaybeMod.IMaybeNull
+import typings.mobxStateTree.distTypesUtilityTypesOptionalMod.IOptionalIType
+import typings.mobxStateTree.distTypesUtilityTypesOptionalMod.OptionalDefaultValueOrFunction
+import typings.mobxStateTree.distTypesUtilityTypesOptionalMod.ValidOptionalValues
+import typings.mobxStateTree.distTypesUtilityTypesReferenceMod.IReferenceType
+import typings.mobxStateTree.distTypesUtilityTypesReferenceMod.ReferenceOptions
+import typings.mobxStateTree.distTypesUtilityTypesReferenceMod.ReferenceOptionsGetSet
+import typings.mobxStateTree.distTypesUtilityTypesSnapshotProcessorMod.ISnapshotProcessor
+import typings.mobxStateTree.distTypesUtilityTypesSnapshotProcessorMod.ISnapshotProcessors
+import typings.mobxStateTree.distTypesUtilityTypesSnapshotProcessorMod.NotCustomized
+import typings.mobxStateTree.distTypesUtilityTypesUnionMod.ITypeUnion
+import typings.mobxStateTree.distTypesUtilityTypesUnionMod.UnionOptions
+import typings.mobxStateTree.distUtilsMod.IDisposer
 import typings.std.Generator
 import typings.std.IterableIterator
 import typings.std.PromiseLike
@@ -102,9 +102,9 @@ object mod {
   
   inline def castFlowReturn[T](`val`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("castFlowReturn")(`val`.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def castToReferenceSnapshot[I](instance: I): ReferenceIdentifier | I = ^.asInstanceOf[js.Dynamic].applyDynamic("castToReferenceSnapshot")(instance.asInstanceOf[js.Any]).asInstanceOf[ReferenceIdentifier | I]
+  inline def castToReferenceSnapshot[I](instance: I): /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<I, mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.IAnyStateTreeNode> extends never ? I : mobx-state-tree.mobx-state-tree/dist/types/utility-types/identifier.ReferenceIdentifier */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("castToReferenceSnapshot")(instance.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: std.Extract<I, mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.IAnyStateTreeNode> extends never ? I : mobx-state-tree.mobx-state-tree/dist/types/utility-types/identifier.ReferenceIdentifier */ js.Any]
   
-  inline def castToSnapshot[I](snapshotOrInstance: I): (/* import warning: importer.ImportType#apply Failed type conversion: mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.TypeOfValue<I>['CreationType'] */ js.Any) | I = ^.asInstanceOf[js.Dynamic].applyDynamic("castToSnapshot")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.TypeOfValue<I>['CreationType'] */ js.Any) | I]
+  inline def castToSnapshot[I](snapshotOrInstance: I): /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<I, mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.IAnyStateTreeNode> extends never ? I : mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.TypeOfValue<I>['CreationType'] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("castToSnapshot")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: std.Extract<I, mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.IAnyStateTreeNode> extends never ? I : mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.TypeOfValue<I>['CreationType'] */ js.Any]
   
   inline def cast_CreationType[O](
     snapshotOrInstance: /* import warning: importer.ImportType#apply Failed type conversion: mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.TypeOfValue<O>['CreationType'] */ js.Any
@@ -159,8 +159,8 @@ object mod {
   
   inline def getPathParts(target: IAnyStateTreeNode): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathParts")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  inline def getPropertyMembers(typeOrNode: IAnyModelType): IModelReflectionPropertiesData = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropertyMembers")(typeOrNode.asInstanceOf[js.Any]).asInstanceOf[IModelReflectionPropertiesData]
   inline def getPropertyMembers(typeOrNode: IAnyStateTreeNode): IModelReflectionPropertiesData = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropertyMembers")(typeOrNode.asInstanceOf[js.Any]).asInstanceOf[IModelReflectionPropertiesData]
+  inline def getPropertyMembers(typeOrNode: IAnyModelType): IModelReflectionPropertiesData = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropertyMembers")(typeOrNode.asInstanceOf[js.Any]).asInstanceOf[IModelReflectionPropertiesData]
   
   inline def getRelativePath(base: IAnyStateTreeNode, target: IAnyStateTreeNode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelativePath")(base.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -1068,6 +1068,7 @@ object mod {
       ]]
     inline def union[CA, SA, TA, CB, SB, TB, CC, SC, TC](A: IType[CA, SA, TA], B: IType[CB, SB, TB], C: IType[CC, SC, TC]): ITypeUnion[CA | CB | CC, SA | SB | SC, TA | TB | TC] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], C.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[CA | CB | CC, SA | SB | SC, TA | TB | TC]]
     inline def union[CA, SA, TA, CB, SB, TB, CC, SC, TC](options: UnionOptions, A: IType[CA, SA, TA], B: IType[CB, SB, TB], C: IType[CC, SC, TC]): ITypeUnion[CA | CB | CC, SA | SB | SC, TA | TB | TC] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(options.asInstanceOf[js.Any], A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], C.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[CA | CB | CC, SA | SB | SC, TA | TB | TC]]
+    inline def union[CA, SA, TA, CB, SB, TB, CC, SC, TC, CD, SD, TD](A: IType[CA, SA, TA], B: IType[CB, SB, TB], C: IType[CC, SC, TC], D: IType[CD, SD, TD]): ITypeUnion[CA | CB | CC | CD, SA | SB | SC | SD, TA | TB | TC | TD] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], C.asInstanceOf[js.Any], D.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[CA | CB | CC | CD, SA | SB | SC | SD, TA | TB | TC | TD]]
     inline def union[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC](A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB], C: IModelType[PC, OC, FCC, FSC]): ITypeUnion[
         ModelCreationType2[PA | PB | PC, FCA | FCB | FCC], 
         ModelSnapshotType2[PA | PB | PC, FSA | FSB | FSC], 
@@ -1077,7 +1078,13 @@ object mod {
         ModelSnapshotType2[PA | PB | PC, FSA | FSB | FSC], 
         ModelInstanceType[PA | PB | PC, OA | OB | OC]
       ]]
-    inline def union[CA, SA, TA, CB, SB, TB, CC, SC, TC, CD, SD, TD](A: IType[CA, SA, TA], B: IType[CB, SB, TB], C: IType[CC, SC, TC], D: IType[CD, SD, TD]): ITypeUnion[CA | CB | CC | CD, SA | SB | SC | SD, TA | TB | TC | TD] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], C.asInstanceOf[js.Any], D.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[CA | CB | CC | CD, SA | SB | SC | SD, TA | TB | TC | TD]]
+    inline def union[CA, SA, TA, CB, SB, TB, CC, SC, TC, CD, SD, TD](
+      options: UnionOptions,
+      A: IType[CA, SA, TA],
+      B: IType[CB, SB, TB],
+      C: IType[CC, SC, TC],
+      D: IType[CD, SD, TD]
+    ): ITypeUnion[CA | CB | CC | CD, SA | SB | SC | SD, TA | TB | TC | TD] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(options.asInstanceOf[js.Any], A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], C.asInstanceOf[js.Any], D.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[CA | CB | CC | CD, SA | SB | SC | SD, TA | TB | TC | TD]]
     inline def union[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC](
       options: UnionOptions,
       A: IModelType[PA, OA, FCA, FSA],
@@ -1092,13 +1099,6 @@ object mod {
         ModelSnapshotType2[PA | PB | PC, FSA | FSB | FSC], 
         ModelInstanceType[PA | PB | PC, OA | OB | OC]
       ]]
-    inline def union[CA, SA, TA, CB, SB, TB, CC, SC, TC, CD, SD, TD](
-      options: UnionOptions,
-      A: IType[CA, SA, TA],
-      B: IType[CB, SB, TB],
-      C: IType[CC, SC, TC],
-      D: IType[CD, SD, TD]
-    ): ITypeUnion[CA | CB | CC | CD, SA | SB | SC | SD, TA | TB | TC | TD] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(options.asInstanceOf[js.Any], A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], C.asInstanceOf[js.Any], D.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[CA | CB | CC | CD, SA | SB | SC | SD, TA | TB | TC | TD]]
     inline def union[CA, SA, TA, CB, SB, TB, CC, SC, TC, CD, SD, TD, CE, SE, TE](
       A: IType[CA, SA, TA],
       B: IType[CB, SB, TB],
@@ -1242,22 +1242,6 @@ object mod {
         SA | SB | SC | SD | SE | SF | SG, 
         TA | TB | TC | TD | TE | TF | TG
       ]]
-    inline def union[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF](
-      A: IModelType[PA, OA, FCA, FSA],
-      B: IModelType[PB, OB, FCB, FSB],
-      C: IModelType[PC, OC, FCC, FSC],
-      D: IModelType[PD, OD, FCD, FSD],
-      E: IModelType[PE, OE, FCE, FSE],
-      F: IModelType[PF, OF, FCF, FSF]
-    ): ITypeUnion[
-        ModelCreationType2[PA | PB | PC | PD | PE | PF, FCA | FCB | FCC | FCD | FCE | FCF], 
-        ModelSnapshotType2[PA | PB | PC | PD | PE | PF, FSA | FSB | FSC | FSD | FSE | FSF], 
-        ModelInstanceType[PA | PB | PC | PD | PE | PF, OA | OB | OC | OD | OE | OF]
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], C.asInstanceOf[js.Any], D.asInstanceOf[js.Any], E.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[
-        ModelCreationType2[PA | PB | PC | PD | PE | PF, FCA | FCB | FCC | FCD | FCE | FCF], 
-        ModelSnapshotType2[PA | PB | PC | PD | PE | PF, FSA | FSB | FSC | FSD | FSE | FSF], 
-        ModelInstanceType[PA | PB | PC | PD | PE | PF, OA | OB | OC | OD | OE | OF]
-      ]]
     inline def union[CA, SA, TA, CB, SB, TB, CC, SC, TC, CD, SD, TD, CE, SE, TE, CF, SF, TF, CG, SG, TG, CH, SH, TH](
       A: IType[CA, SA, TA],
       B: IType[CB, SB, TB],
@@ -1277,7 +1261,6 @@ object mod {
         TA | TB | TC | TD | TE | TF | TG | TH
       ]]
     inline def union[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF](
-      options: UnionOptions,
       A: IModelType[PA, OA, FCA, FSA],
       B: IModelType[PB, OB, FCB, FSB],
       C: IModelType[PC, OC, FCC, FSC],
@@ -1288,7 +1271,7 @@ object mod {
         ModelCreationType2[PA | PB | PC | PD | PE | PF, FCA | FCB | FCC | FCD | FCE | FCF], 
         ModelSnapshotType2[PA | PB | PC | PD | PE | PF, FSA | FSB | FSC | FSD | FSE | FSF], 
         ModelInstanceType[PA | PB | PC | PD | PE | PF, OA | OB | OC | OD | OE | OF]
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(options.asInstanceOf[js.Any], A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], C.asInstanceOf[js.Any], D.asInstanceOf[js.Any], E.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], C.asInstanceOf[js.Any], D.asInstanceOf[js.Any], E.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[
         ModelCreationType2[PA | PB | PC | PD | PE | PF, FCA | FCB | FCC | FCD | FCE | FCF], 
         ModelSnapshotType2[PA | PB | PC | PD | PE | PF, FSA | FSB | FSC | FSD | FSE | FSF], 
         ModelInstanceType[PA | PB | PC | PD | PE | PF, OA | OB | OC | OD | OE | OF]
@@ -1311,6 +1294,23 @@ object mod {
         CA | CB | CC | CD | CE | CF | CG | CH, 
         SA | SB | SC | SD | SE | SF | SG | SH, 
         TA | TB | TC | TD | TE | TF | TG | TH
+      ]]
+    inline def union[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF](
+      options: UnionOptions,
+      A: IModelType[PA, OA, FCA, FSA],
+      B: IModelType[PB, OB, FCB, FSB],
+      C: IModelType[PC, OC, FCC, FSC],
+      D: IModelType[PD, OD, FCD, FSD],
+      E: IModelType[PE, OE, FCE, FSE],
+      F: IModelType[PF, OF, FCF, FSF]
+    ): ITypeUnion[
+        ModelCreationType2[PA | PB | PC | PD | PE | PF, FCA | FCB | FCC | FCD | FCE | FCF], 
+        ModelSnapshotType2[PA | PB | PC | PD | PE | PF, FSA | FSB | FSC | FSD | FSE | FSF], 
+        ModelInstanceType[PA | PB | PC | PD | PE | PF, OA | OB | OC | OD | OE | OF]
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(options.asInstanceOf[js.Any], A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], C.asInstanceOf[js.Any], D.asInstanceOf[js.Any], E.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[
+        ModelCreationType2[PA | PB | PC | PD | PE | PF, FCA | FCB | FCC | FCD | FCE | FCF], 
+        ModelSnapshotType2[PA | PB | PC | PD | PE | PF, FSA | FSB | FSC | FSD | FSE | FSF], 
+        ModelInstanceType[PA | PB | PC | PD | PE | PF, OA | OB | OC | OD | OE | OF]
       ]]
     inline def union[CA, SA, TA, CB, SB, TB, CC, SC, TC, CD, SD, TD, CE, SE, TE, CF, SF, TF, CG, SG, TG, CH, SH, TH, CI, SI, TI](
       A: IType[CA, SA, TA],

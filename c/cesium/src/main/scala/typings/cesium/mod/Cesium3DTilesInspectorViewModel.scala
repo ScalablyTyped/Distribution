@@ -109,6 +109,11 @@ open class Cesium3DTilesInspectorViewModel protected () extends StObject {
   var geometricErrorScale: Double = js.native
   
   /**
+    * Gets or sets the JSON for the tileset enableDebugWireframe attribute.  This property is observable.
+    */
+  var hasEnabledWireframe: Boolean = js.native
+  
+  /**
     * Gets or sets the flag which, when true, only tiles that meet the maximum screen space error will ever be downloaded.
     * This property is observable.
     */

@@ -44,7 +44,7 @@ object mod {
     *  : never
     * }
     */
-  inline def apply[I /* <: js.Iterable[Any] | AsyncIterable[Any] */](iterable: I): AsyncPeekable[Any] | Peekable[Any] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[AsyncPeekable[Any] | Peekable[Any]]
+  inline def apply[I /* <: js.Iterable[Any] | AsyncIterable[Any] */](iterable: I): /* import warning: importer.ImportType#apply Failed type conversion: I extends std.Iterable<infer T> ? it-peekable.it-peekable.Peekable<T> : I extends std.AsyncIterable<infer T_1> ? it-peekable.it-peekable.AsyncPeekable<T_1> : never */ js.Any = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: I extends std.Iterable<infer T> ? it-peekable.it-peekable.Peekable<T> : I extends std.AsyncIterable<infer T_1> ? it-peekable.it-peekable.AsyncPeekable<T_1> : never */ js.Any]
   
   @JSImport("it-peekable", JSImport.Namespace)
   @js.native

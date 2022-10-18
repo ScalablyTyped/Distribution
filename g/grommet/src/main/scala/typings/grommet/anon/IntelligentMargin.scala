@@ -10,7 +10,7 @@ trait IntelligentMargin extends StObject {
   
   var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var border: js.UndefOr[Width] = js.undefined
+  var border: js.UndefOr[RadiusWidth] = js.undefined
   
   var intelligentMargin: js.UndefOr[Boolean] = js.undefined
   
@@ -33,7 +33,7 @@ object IntelligentMargin {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBorder(value: Width): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: RadiusWidth): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     

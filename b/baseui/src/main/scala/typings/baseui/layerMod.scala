@@ -1,10 +1,10 @@
 package typings.baseui
 
 import typings.baseui.baseuiStrings.auto
+import typings.baseui.layerLayersManagerMod.default
 import typings.baseui.layerTypesMod.LayerProps
 import typings.baseui.layerTypesMod.LayersContextProps
 import typings.baseui.layerTypesMod.LayersManagerProps
-import typings.baseui.layersManagerMod.default
 import typings.react.mod.Context
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -87,7 +87,7 @@ object layerMod {
   @JSImport("baseui/layer", "TetherBehavior")
   @js.native
   open class TetherBehavior ()
-    extends typings.baseui.tetherMod.default
+    extends typings.baseui.layerTetherMod.default
   object TetherBehavior {
     
     /* static member */

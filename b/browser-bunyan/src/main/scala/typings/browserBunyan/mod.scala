@@ -9,7 +9,7 @@ import typings.browserBunyan.mod.BrowserBunyan.ConsoleFormattedStreamOptions
 import typings.bunyan.mod.LoggerOptions
 import typings.bunyan.mod.RingBufferOptions
 import typings.bunyan.mod.RotatingFileStreamOptions
-import typings.std.WritableStream
+import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,7 @@ object mod extends Shortcut {
   @js.native
   open class ConsoleFormattedStream ()
     extends StObject
-       with WritableStream[Any] {
+       with WritableStream {
     def this(options: ConsoleFormattedStreamOptions) = this()
   }
   
@@ -41,7 +41,7 @@ object mod extends Shortcut {
   @js.native
   open class ConsoleRawStream ()
     extends StObject
-       with WritableStream[Any] {
+       with WritableStream {
     def this(options: ConsoleFormattedStreamOptions) = this()
   }
   
@@ -63,7 +63,7 @@ object mod extends Shortcut {
   
   object BrowserBunyan {
     
-    type ConsoleFormattedStream = Instantiable1[/* options */ js.UndefOr[ConsoleFormattedStreamOptions], WritableStream[Any]]
+    type ConsoleFormattedStream = Instantiable1[/* options */ js.UndefOr[ConsoleFormattedStreamOptions], WritableStream]
     
     trait ConsoleFormattedStreamLevelStyle extends StObject {
       
@@ -157,7 +157,7 @@ object mod extends Shortcut {
       }
     }
     
-    type ConsoleRawStream = Instantiable1[/* options */ js.UndefOr[ConsoleFormattedStreamOptions], WritableStream[Any]]
+    type ConsoleRawStream = Instantiable1[/* options */ js.UndefOr[ConsoleFormattedStreamOptions], WritableStream]
   }
   type BrowserBunyan = (Instantiable1[/* options */ LoggerOptions, typings.bunyan.mod.^]) & Typeofbunyan & typings.browserBunyan.anon.ConsoleFormattedStream
   

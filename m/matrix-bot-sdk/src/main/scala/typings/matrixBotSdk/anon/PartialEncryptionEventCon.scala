@@ -1,6 +1,6 @@
 package typings.matrixBotSdk.anon
 
-import typings.matrixBotSdk.encryptionEventMod.RoomEncryptionAlgorithm
+import typings.matrixBotSdk.libModelsEventsEncryptionEventMod.RoomEncryptionAlgorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

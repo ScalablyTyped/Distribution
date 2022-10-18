@@ -1,14 +1,14 @@
 package typings.atom.anon
 
-import typings.atom.mod.Point
-import typings.atom.mod.PointCompatible
-import typings.atom.mod.RangeCompatible
-import typings.atom.mod.RangeLike
+import typings.atom.dependenciesTextBufferSrcPointMod.PointCompatible
+import typings.atom.dependenciesTextBufferSrcRangeMod.RangeCompatible
+import typings.atom.dependenciesTextBufferSrcRangeMod.RangeLike
+import typings.atom.dependenciesTextBufferSrcTextBufferMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Readonly<atom.atom.Range> */
+/* Inlined std.Readonly<atom.atom/dependencies/text-buffer/src/range.Range> */
 @js.native
 trait ReadonlyRange extends StObject {
   
@@ -24,13 +24,13 @@ trait ReadonlyRange extends StObject {
   
   def coversSameRows(otherRange: RangeLike): Boolean = js.native
   
-  val deserialize: js.UndefOr[js.Any] = js.native
+  val deserialize: js.UndefOr[Any] = js.native
   
   val end: Point = js.native
   
   def freeze(): this.type = js.native
   
-  val fromObject: js.UndefOr[js.Any] = js.native
+  val fromObject: js.UndefOr[Any] = js.native
   
   def getRowCount(): Double = js.native
   

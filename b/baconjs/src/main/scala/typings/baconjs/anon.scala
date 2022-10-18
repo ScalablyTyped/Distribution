@@ -1,8 +1,8 @@
 package typings.baconjs
 
-import typings.baconjs.typesMod.Subscribe
-import typings.baconjs.updatebarrierMod.EventSink
-import typings.baconjs.updatebarrierMod.Observable
+import typings.baconjs.typesInternalUpdatebarrierMod.EventSink
+import typings.baconjs.typesInternalUpdatebarrierMod.Observable
+import typings.baconjs.typesTypesMod.Subscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

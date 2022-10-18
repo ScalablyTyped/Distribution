@@ -9,20 +9,16 @@ trait Email
   extends StObject
      with /* k */ StringDictionary[js.UndefOr[Any]] {
   
-  /**
-    * The email address to which issues should be reported.
-    */
   var email: js.UndefOr[String] = js.undefined
   
-  /**
-    * The url to your project's issue tracker.
-    */
+  var name: String
+  
   var url: js.UndefOr[String] = js.undefined
 }
 object Email {
   
-  inline def apply(): Email = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(name: String): Email = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Email]
   }
   
@@ -31,6 +27,8 @@ object Email {
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

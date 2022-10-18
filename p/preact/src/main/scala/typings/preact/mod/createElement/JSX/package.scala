@@ -3,7 +3,6 @@ package typings.preact.mod.createElement.JSX
 import org.scalablytyped.runtime.StringDictionary
 import typings.preact.anon.CurrentTarget
 import typings.preact.anon.TargetedEventEventTargetE
-import typings.preact.jsxMod.Defaultize
 import typings.preact.mod.Component
 import typings.preact.mod.ComponentType
 import typings.preact.mod.FunctionComponent
@@ -19,15 +18,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AllCSSProperties = StringDictionary[js.UndefOr[String | Double | Null]]
 
-type AnimationEventHandler[Target /* <: EventTarget */] = typings.preact.jsxMod.JSXInternal.EventHandler[typings.preact.jsxMod.JSXInternal.TargetedAnimationEvent[Target]]
+type AnimationEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedAnimationEvent[Target]]
 
-type ClipboardEventHandler[Target /* <: EventTarget */] = typings.preact.jsxMod.JSXInternal.EventHandler[typings.preact.jsxMod.JSXInternal.TargetedClipboardEvent[Target]]
+type ClipboardEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedClipboardEvent[Target]]
 
-type CompositionEventHandler[Target /* <: EventTarget */] = typings.preact.jsxMod.JSXInternal.EventHandler[typings.preact.jsxMod.JSXInternal.TargetedCompositionEvent[Target]]
+type CompositionEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedCompositionEvent[Target]]
 
-type DetailedHTMLProps[HA /* <: typings.preact.jsxMod.JSXInternal.HTMLAttributes[RefType] */, RefType /* <: EventTarget */] = HA
+type DetailedHTMLProps[HA /* <: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[RefType] */, RefType /* <: EventTarget */] = HA
 
-type DragEventHandler[Target /* <: EventTarget */] = typings.preact.jsxMod.JSXInternal.EventHandler[typings.preact.jsxMod.JSXInternal.TargetedDragEvent[Target]]
+type DragEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target]]
 
 type Element = VNode[Any]
 
@@ -37,24 +36,22 @@ type ElementType[P] = (/* import warning: importer.ImportType#apply Failed type 
 
 type EventHandler[E /* <: TargetedEventEventTargetE */] = js.ThisFunction1[/* this */ scala.Nothing, /* event */ E, Unit]
 
-type FocusEventHandler[Target /* <: EventTarget */] = typings.preact.jsxMod.JSXInternal.EventHandler[typings.preact.jsxMod.JSXInternal.TargetedFocusEvent[Target]]
+type FocusEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedFocusEvent[Target]]
 
-type GenericEventHandler[Target /* <: EventTarget */] = typings.preact.jsxMod.JSXInternal.EventHandler[typings.preact.jsxMod.JSXInternal.TargetedEvent[Target, Event]]
+type GenericEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event]]
 
-type KeyboardEventHandler[Target /* <: EventTarget */] = typings.preact.jsxMod.JSXInternal.EventHandler[typings.preact.jsxMod.JSXInternal.TargetedKeyboardEvent[Target]]
+type KeyboardEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedKeyboardEvent[Target]]
 
-type LibraryManagedAttributes[Component, Props] = Props | (Defaultize[Props, Any])
+type MouseEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target]]
 
-type MouseEventHandler[Target /* <: EventTarget */] = typings.preact.jsxMod.JSXInternal.EventHandler[typings.preact.jsxMod.JSXInternal.TargetedMouseEvent[Target]]
-
-type PointerEventHandler[Target /* <: EventTarget */] = typings.preact.jsxMod.JSXInternal.EventHandler[typings.preact.jsxMod.JSXInternal.TargetedPointerEvent[Target]]
+type PointerEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target]]
 
 type TargetedEvent[Target /* <: EventTarget */, TypedEvent /* <: Event */] = (Omit[TypedEvent, currentTarget]) & CurrentTarget[Target]
 
-type TouchEventHandler[Target /* <: EventTarget */] = typings.preact.jsxMod.JSXInternal.EventHandler[typings.preact.jsxMod.JSXInternal.TargetedTouchEvent[Target]]
+type TouchEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedTouchEvent[Target]]
 
-type TransitionEventHandler[Target /* <: EventTarget */] = typings.preact.jsxMod.JSXInternal.EventHandler[typings.preact.jsxMod.JSXInternal.TargetedTransitionEvent[Target]]
+type TransitionEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedTransitionEvent[Target]]
 
-type UIEventHandler[Target /* <: EventTarget */] = typings.preact.jsxMod.JSXInternal.EventHandler[typings.preact.jsxMod.JSXInternal.TargetedUIEvent[Target]]
+type UIEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedUIEvent[Target]]
 
-type WheelEventHandler[Target /* <: EventTarget */] = typings.preact.jsxMod.JSXInternal.EventHandler[typings.preact.jsxMod.JSXInternal.TargetedWheelEvent[Target]]
+type WheelEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedWheelEvent[Target]]

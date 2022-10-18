@@ -2,7 +2,7 @@ package typings.c3.mod
 
 import typings.c3.anon.Left
 import typings.c3.anon.Name
-import typings.c3.anon.PositionShow
+import typings.c3.anon.Position
 import typings.c3.c3Strings.asc
 import typings.c3.c3Strings.desc
 import typings.std.SVGElement
@@ -38,7 +38,7 @@ trait TooltipOptions extends StObject {
   /** Show the tooltips based on the horizontal position of the mouse. */
   var horizontal: js.UndefOr[Boolean] = js.undefined
   
-  var init: js.UndefOr[PositionShow] = js.undefined
+  var init: js.UndefOr[Position] = js.undefined
   
   /**
     * Set tooltip values order.
@@ -101,7 +101,7 @@ object TooltipOptions {
     
     inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    inline def setInit(value: PositionShow): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: Position): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     

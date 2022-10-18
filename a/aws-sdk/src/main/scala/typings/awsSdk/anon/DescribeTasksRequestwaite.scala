@@ -1,10 +1,10 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.ecsMod.String
-import typings.awsSdk.ecsMod.StringList
-import typings.awsSdk.ecsMod.TaskField
-import typings.awsSdk.ecsMod.TaskFieldList
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsEcsMod.String
+import typings.awsSdk.clientsEcsMod.StringList
+import typings.awsSdk.clientsEcsMod.TaskField
+import typings.awsSdk.clientsEcsMod.TaskFieldList
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

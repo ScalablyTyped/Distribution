@@ -1,7 +1,7 @@
 package typings.tuyaPanelKit.anon
 
 import typings.std.Extract
-import typings.tuyaPanelKit.typesMod.EventMapBase
+import typings.tuyaPanelKit.`@reactNavigationCoreTypesMod`.EventMapBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

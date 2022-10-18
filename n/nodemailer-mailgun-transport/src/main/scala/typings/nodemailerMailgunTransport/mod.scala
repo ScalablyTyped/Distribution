@@ -25,7 +25,7 @@ object mod {
     
     /* CompleteClass */
     override def send(
-      mail: typings.nodemailer.mailMessageMod.^[Any],
+      mail: typings.nodemailer.libMailerMailMessageMod.^[Any],
       callback: js.Function2[/* err */ js.Error | Null, Any, Unit]
     ): Unit = js.native
     
@@ -86,7 +86,7 @@ object mod {
   
   type Information = js.Object
   
-  type MailOptions = typings.nodemailer.mailerMod.Options
+  type MailOptions = typings.nodemailer.libMailerMod.Options
   
   trait Options extends StObject {
     

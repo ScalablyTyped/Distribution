@@ -9,7 +9,7 @@ trait Element extends StObject {
   var element: typings.std.Element
   
   var tree: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EcmarkdownNode */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EcmarkdownNode */ Any
   ] = js.undefined
 }
 object Element {
@@ -24,7 +24,7 @@ object Element {
     inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     inline def setTree(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EcmarkdownNode */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EcmarkdownNode */ Any
     ): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
     inline def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)

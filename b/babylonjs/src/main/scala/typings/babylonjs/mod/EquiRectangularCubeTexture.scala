@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "EquiRectangularCubeTexture")
 @js.native
 open class EquiRectangularCubeTexture protected ()
-  extends typings.babylonjs.legacyMod.EquiRectangularCubeTexture {
+  extends typings.babylonjs.legacyLegacyMod.EquiRectangularCubeTexture {
   /**
     * Instantiates an EquiRectangularCubeTexture from the following parameters.
     * @param url The location of the image

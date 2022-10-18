@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-pinpoint-browser", "GetEmailChannelCommand")
 @js.native
 open class GetEmailChannelCommand protected ()
-  extends typings.awsSdkClientPinpointBrowser.getEmailChannelCommandMod.GetEmailChannelCommand {
+  extends typings.awsSdkClientPinpointBrowser.commandsGetEmailChannelCommandMod.GetEmailChannelCommand {
   def this(input: GetEmailChannelInput) = this()
 }

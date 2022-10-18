@@ -27,5 +27,5 @@ trait Earcon extends StObject {
     * @param options
     *        Override existing options.
     */
-  def sonify(options: typings.highcharts.sonificationMod.highchartsAugmentingMod.EarconOptionsObject): Unit = js.native
+  def sonify(options: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconOptionsObject): Unit = js.native
 }

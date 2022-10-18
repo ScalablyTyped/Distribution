@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +35,7 @@ trait Job extends StObject {
     * empty, but, if present, must contain 1 to 63 characters, and must conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be associated with a job.
     */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Job & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Optional. Job is a Pig job. */
@@ -114,9 +111,7 @@ object Job {
     inline def setJobUuidUndefined: Self = StObject.set(x, "jobUuid", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Job & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

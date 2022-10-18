@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.uifabricMergeStyles.stylesheetMod.IStyleSheetConfig
+import typings.uifabricMergeStyles.libStylesheetMod.IStyleSheetConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("office-ui-fabric-react", "Stylesheet")
 @js.native
 open class Stylesheet ()
-  extends typings.officeUiFabricReact.stylingMod.Stylesheet {
+  extends typings.officeUiFabricReact.libStylingMod.Stylesheet {
   def this(config: IStyleSheetConfig) = this()
 }
 /* static members */
@@ -21,5 +21,5 @@ object Stylesheet {
   /**
     * Gets the singleton instance.
     */
-  inline def getInstance(): typings.uifabricMergeStyles.stylesheetMod.Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.uifabricMergeStyles.stylesheetMod.Stylesheet]
+  inline def getInstance(): typings.uifabricMergeStyles.libStylesheetMod.Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.uifabricMergeStyles.libStylesheetMod.Stylesheet]
 }

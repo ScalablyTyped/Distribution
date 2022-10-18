@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.knobMod.KnobProps
+import typings.primereact.knobKnobMod.KnobProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Knob")
 @js.native
 open class Knob protected ()
-  extends typings.primereact.knobMod.Knob {
+  extends typings.primereact.knobKnobMod.Knob {
   def this(props: KnobProps) = this()
   /**
     * @deprecated

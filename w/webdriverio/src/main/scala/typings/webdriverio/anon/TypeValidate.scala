@@ -1,7 +1,7 @@
 package typings.webdriverio.anon
 
-import typings.wdioTypes.optionsMod.RequestLibOptions
-import typings.wdioTypes.optionsMod.RequestLibResponse
+import typings.wdioTypes.buildOptionsMod.RequestLibOptions
+import typings.wdioTypes.buildOptionsMod.RequestLibResponse
 import typings.webdriverio.webdriverioStrings.`object`
 import typings.webdriverio.webdriverioStrings.boolean
 import typings.webdriverio.webdriverioStrings.function

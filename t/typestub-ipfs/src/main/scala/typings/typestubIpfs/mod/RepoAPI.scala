@@ -9,10 +9,10 @@ trait RepoAPI extends StObject {
   
   def gc(): Unit = js.native
   
-  def init(bits: Double, empty: Boolean, callback: Callback[js.Any]): Unit = js.native
+  def init(bits: Double, empty: Boolean, callback: Callback[Any]): Unit = js.native
   
   def path(): String = js.native
   
-  def version(callback: Callback[js.Any]): Unit = js.native
-  def version(options: js.Any, callback: Callback[js.Any]): Unit = js.native
+  def version(callback: Callback[Any]): Unit = js.native
+  def version(options: Any, callback: Callback[Any]): Unit = js.native
 }

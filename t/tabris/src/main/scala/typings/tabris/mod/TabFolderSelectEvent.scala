@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TabFolderSelectEvent[Target] extends EventObject[Target] {
   
-  val selection: typings.tabris.mod.Tab | (/* import warning: importer.ImportType#apply Failed type conversion: Target['selection'] */ js.Any) = js.native
+  val selection: /* import warning: importer.ImportType#apply Failed type conversion: Target extends tabris.tabris.TabFolder<any> ? Target['selection'] : tabris.tabris.Tab */ js.Any = js.native
 }

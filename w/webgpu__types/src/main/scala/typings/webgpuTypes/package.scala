@@ -46,6 +46,8 @@ type GPUMapModeFlags = Double
 
 type GPUOrigin2D = js.Iterable[GPUIntegerCoordinate] | GPUOrigin2DDict
 
+type GPUOrigin2DStrict = js.Iterable[GPUIntegerCoordinate] | GPUOrigin2DDictStrict
+
 type GPUOrigin3D = js.Iterable[GPUIntegerCoordinate] | GPUOrigin3DDict
 
 type GPUPipelineConstantValue = Double

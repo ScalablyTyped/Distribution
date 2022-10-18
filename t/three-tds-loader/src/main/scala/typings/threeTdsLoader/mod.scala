@@ -3,13 +3,13 @@ package typings.threeTdsLoader
 import typings.std.ErrorEvent
 import typings.std.EventTarget
 import typings.std.ProgressEvent
-import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.eventDispatcherMod.Event
-import typings.three.materialMod.Material
 import typings.three.mod.Color
 import typings.three.mod.Mesh
 import typings.three.mod.Object3D
 import typings.three.mod.Texture
+import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreEventDispatcherMod.Event
+import typings.three.srcMaterialsMaterialMod.Material
 import typings.threeTdsLoader.anon.TypeofTHREE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

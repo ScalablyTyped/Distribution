@@ -7,11 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `433` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: js.Array[Pushprotectionbypassedat]
+  var applicationSlashjson: js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['autolink'] */ js.Any
+  ]
 }
 object `433` {
   
-  inline def apply(applicationSlashjson: js.Array[Pushprotectionbypassedat]): `433` = {
+  inline def apply(
+    applicationSlashjson: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['autolink'] */ js.Any
+    ]
+  ): `433` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`433`]
@@ -19,8 +25,14 @@ object `433` {
   
   extension [Self <: `433`](x: Self) {
     
-    inline def setApplicationSlashjson(value: js.Array[Pushprotectionbypassedat]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['autolink'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: Pushprotectionbypassedat*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setApplicationSlashjsonVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['autolink'] */ js.Any)*
+    ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

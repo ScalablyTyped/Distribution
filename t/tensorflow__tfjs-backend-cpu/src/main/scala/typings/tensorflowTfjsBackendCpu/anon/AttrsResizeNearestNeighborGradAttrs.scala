@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsBackendCpu.anon
 
-import typings.tensorflowTfjsBackendCpu.backendCpuMod.MathBackendCPU
-import typings.tensorflowTfjsCore.kernelNamesMod.ResizeNearestNeighborGradAttrs
-import typings.tensorflowTfjsCore.kernelNamesMod.ResizeNearestNeighborGradInputs
+import typings.tensorflowTfjsBackendCpu.distBackendCpuMod.MathBackendCPU
+import typings.tensorflowTfjsCore.distKernelNamesMod.ResizeNearestNeighborGradAttrs
+import typings.tensorflowTfjsCore.distKernelNamesMod.ResizeNearestNeighborGradInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

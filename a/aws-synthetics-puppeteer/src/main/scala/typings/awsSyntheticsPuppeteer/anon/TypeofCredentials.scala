@@ -1,7 +1,7 @@
 package typings.awsSyntheticsPuppeteer.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.awsSdk.credentialsMod.CredentialsOptions
+import typings.awsSdk.libCredentialsMod.CredentialsOptions
 import typings.awsSdk.mod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

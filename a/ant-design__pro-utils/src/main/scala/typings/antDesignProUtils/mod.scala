@@ -1,18 +1,16 @@
 package typings.antDesignProUtils
 
-import typings.antDesignCssinjs.useStyleRegisterMod.CSSInterpolation
-import typings.antDesignCssinjs.useStyleRegisterMod.CSSObject
+import typings.antDesignCssinjs.esHooksUseStyleRegisterMod.CSSInterpolation
+import typings.antDesignCssinjs.esHooksUseStyleRegisterMod.CSSObject
 import typings.antDesignProUtils.anon.ActionRender
 import typings.antDesignProUtils.anon.Cancel
 import typings.antDesignProUtils.anon.CancelEditable
-import typings.antDesignProUtils.anon.Children
 import typings.antDesignProUtils.anon.ChildrenColumnName
 import typings.antDesignProUtils.anon.ColSize
 import typings.antDesignProUtils.anon.Current
 import typings.antDesignProUtils.anon.DataSource
 import typings.antDesignProUtils.anon.DateFormat
 import typings.antDesignProUtils.anon.Ellipsis
-import typings.antDesignProUtils.anon.ErrorInfo
 import typings.antDesignProUtils.anon.HashId
 import typings.antDesignProUtils.anon.Id
 import typings.antDesignProUtils.anon.Params
@@ -25,25 +23,25 @@ import typings.antDesignProUtils.antDesignProUtilsInts.`1`
 import typings.antDesignProUtils.antDesignProUtilsStrings.delete
 import typings.antDesignProUtils.antDesignProUtilsStrings.top
 import typings.antDesignProUtils.antDesignProUtilsStrings.update
-import typings.antDesignProUtils.conversionMomentValueMod.DateFormatter
-import typings.antDesignProUtils.dateArrayFormatterMod.FormatType
-import typings.antDesignProUtils.dropdownFooterMod.DropdownFooterProps
-import typings.antDesignProUtils.fieldLabelMod.FieldLabelProps
-import typings.antDesignProUtils.filterDropdownMod.DropdownProps
-import typings.antDesignProUtils.inlineErrorFormItemMod.InlineErrorFormItemProps
-import typings.antDesignProUtils.parseValueToMomentMod.DateValue
-import typings.antDesignProUtils.transformKeySubmitValueMod.DataFormatMapType
-import typings.antDesignProUtils.typingMod.SearchTransformKeyFn
-import typings.antDesignProUtils.useEditableArrayMod.RecordKey
-import typings.antDesignProUtils.useEditableArrayMod.RowEditableConfig
-import typings.antDesignProUtils.useSafeStateMod.SetState
-import typings.antDesignProUtils.useStyleMod.ProAliasToken
-import typings.antDesignProUtils.useStyleMod.UseStyleResult
-import typings.antd.useFormMod.FormInstance
+import typings.antDesignProUtils.esComponentsDropdownFooterMod.DropdownFooterProps
+import typings.antDesignProUtils.esComponentsFieldLabelMod.FieldLabelProps
+import typings.antDesignProUtils.esComponentsFilterDropdownMod.DropdownProps
+import typings.antDesignProUtils.esComponentsInlineErrorFormItemMod.InlineErrorFormItemProps
+import typings.antDesignProUtils.esConversionMomentValueMod.DateFormatter
+import typings.antDesignProUtils.esDateArrayFormatterMod.FormatType
+import typings.antDesignProUtils.esParseValueToMomentMod.DateValue
+import typings.antDesignProUtils.esTransformKeySubmitValueMod.DataFormatMapType
+import typings.antDesignProUtils.esTypingMod.SearchTransformKeyFn
+import typings.antDesignProUtils.esUseEditableArrayMod.RecordKey
+import typings.antDesignProUtils.esUseEditableArrayMod.RowEditableConfig
+import typings.antDesignProUtils.esUseSafeStateMod.SetState
+import typings.antDesignProUtils.esUseStyleMod.ProAliasToken
+import typings.antDesignProUtils.esUseStyleMod.UseStyleResult
+import typings.antd.libFormHooksUseFormMod.FormInstance
 import typings.dayjs.mod.Dayjs
-import typings.rcFieldForm.interfaceMod.NamePath
+import typings.rcFieldForm.esInterfaceMod.NamePath
 import typings.rcUtil.anon.DefaultValue
-import typings.rcUtil.useMergedStateMod.Updater
+import typings.rcUtil.libHooksUseMergedStateMod.Updater
 import typings.react.mod.Context
 import typings.react.mod.DependencyList
 import typings.react.mod.EffectCallback
@@ -70,27 +68,6 @@ object mod {
   @JSImport("@ant-design/pro-utils", "DropdownFooter")
   @js.native
   val DropdownFooter: FC[DropdownFooterProps] = js.native
-  
-  @JSImport("@ant-design/pro-utils", "ErrorBoundary")
-  @js.native
-  open class ErrorBoundary protected ()
-    extends typings.antDesignProUtils.errorBoundaryMod.ErrorBoundary {
-    def this(props: Children) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: Children, context: Any) = this()
-  }
-  object ErrorBoundary {
-    
-    @JSImport("@ant-design/pro-utils", "ErrorBoundary")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    inline def getDerivedStateFromError(error: js.Error): ErrorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrorInfo]
-  }
   
   @JSImport("@ant-design/pro-utils", "FieldLabel")
   @js.native
@@ -343,6 +320,11 @@ object mod {
   inline def useSafeState[T](defaultValue: js.Function0[T]): js.Tuple2[js.UndefOr[T], SetState[js.UndefOr[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeState")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.UndefOr[T], SetState[js.UndefOr[T]]]]
   
   inline def useStyle(componentName: String, styleFn: js.Function1[/* token */ ProAliasToken, CSSInterpolation]): UseStyleResult = (^.asInstanceOf[js.Dynamic].applyDynamic("useStyle")(componentName.asInstanceOf[js.Any], styleFn.asInstanceOf[js.Any])).asInstanceOf[UseStyleResult]
+  inline def useStyle(
+    componentName: String,
+    styleFn: js.Function1[/* token */ ProAliasToken, CSSInterpolation],
+    deps: Record[String, Any]
+  ): UseStyleResult = (^.asInstanceOf[js.Dynamic].applyDynamic("useStyle")(componentName.asInstanceOf[js.Any], styleFn.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[UseStyleResult]
   
   /**
     * 如果 antd 里面没有，就用我 mock 的，这样 antd@4 和 antd@5 可以兼容

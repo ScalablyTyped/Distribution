@@ -116,6 +116,7 @@ object mod {
   /** The short-locale of a user */
   type ShortLocale = String
   
+  /* augmented module */
   object expressServeStaticCoreAugmentingMod {
     
     trait Request extends StObject {

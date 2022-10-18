@@ -1,17 +1,17 @@
 package typings.esbuildWasm.anon
 
-import typings.esbuildWasm.browserMod.AnalyzeMetafileOptions
-import typings.esbuildWasm.browserMod.BuildIncremental
-import typings.esbuildWasm.browserMod.BuildOptions
-import typings.esbuildWasm.browserMod.BuildResult
-import typings.esbuildWasm.browserMod.FormatMessagesOptions
-import typings.esbuildWasm.browserMod.InitializeOptions
-import typings.esbuildWasm.browserMod.Metafile
-import typings.esbuildWasm.browserMod.PartialMessage
-import typings.esbuildWasm.browserMod.ServeOptions
-import typings.esbuildWasm.browserMod.ServeResult
-import typings.esbuildWasm.browserMod.TransformOptions
-import typings.esbuildWasm.browserMod.TransformResult
+import typings.esbuildWasm.libBrowserMod.AnalyzeMetafileOptions
+import typings.esbuildWasm.libBrowserMod.BuildIncremental
+import typings.esbuildWasm.libBrowserMod.BuildOptions
+import typings.esbuildWasm.libBrowserMod.BuildResult
+import typings.esbuildWasm.libBrowserMod.FormatMessagesOptions
+import typings.esbuildWasm.libBrowserMod.InitializeOptions
+import typings.esbuildWasm.libBrowserMod.Metafile
+import typings.esbuildWasm.libBrowserMod.PartialMessage
+import typings.esbuildWasm.libBrowserMod.ServeOptions
+import typings.esbuildWasm.libBrowserMod.ServeResult
+import typings.esbuildWasm.libBrowserMod.TransformOptions
+import typings.esbuildWasm.libBrowserMod.TransformResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsSoundCloudSmallMod.SoundCloudSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object soundCloudSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/SoundCloudSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/SoundCloudSmall", JSImport.Default)
   @js.native
   val default: FC[SoundCloudSmallProps] = js.native
-  
-  trait SoundCloudSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object SoundCloudSmallProps {
-    
-    inline def apply(): SoundCloudSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SoundCloudSmallProps]
-    }
-    
-    extension [Self <: SoundCloudSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[SoundCloudSmallProps]
   

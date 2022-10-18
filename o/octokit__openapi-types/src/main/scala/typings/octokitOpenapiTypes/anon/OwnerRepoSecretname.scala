@@ -7,27 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OwnerRepoSecretname extends StObject {
   
   /** The account owner of the repository. The name is not case sensitive. */
-  var owner: String
+  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
   
   /** The name of the repository. The name is not case sensitive. */
-  var repo: String
+  var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
   
   /** The name of the secret. */
-  var secret_name: String
+  var secret_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['secret-name'] */ js.Any
 }
 object OwnerRepoSecretname {
   
-  inline def apply(owner: String, repo: String, secret_name: String): OwnerRepoSecretname = {
+  inline def apply(
+    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any,
+    repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any,
+    secret_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['secret-name'] */ js.Any
+  ): OwnerRepoSecretname = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], secret_name = secret_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[OwnerRepoSecretname]
   }
   
   extension [Self <: OwnerRepoSecretname](x: Self) {
     
-    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
+    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
+    ): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    inline def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
+    inline def setSecret_name(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['secret-name'] */ js.Any
+    ): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
   }
 }

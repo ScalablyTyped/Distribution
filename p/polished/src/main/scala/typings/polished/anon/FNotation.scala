@@ -19,7 +19,7 @@ trait FNotation extends StObject {
   
   var rightToLeft: `0`
   
-  var symbol: String
+  var symbol: /* ( */ String
 }
 object FNotation {
   
@@ -44,6 +44,6 @@ object FNotation {
     
     inline def setRightToLeft(value: `0`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
-    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: /* ( */ String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

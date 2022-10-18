@@ -1,6 +1,6 @@
 package typings.antd.anon
 
-import typings.antDesignIcons.componentsTwoTonePrimaryColorMod.TwoToneColor
+import typings.antDesignIcons.libComponentsTwoTonePrimaryColorMod.TwoToneColor
 import typings.antd.antdStrings.`additions removals`
 import typings.antd.antdStrings.`additions text`
 import typings.antd.antdStrings.`inline`

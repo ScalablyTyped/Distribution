@@ -39,7 +39,7 @@ object PowerPoint {
     var context_Application: typings.officeJs.PowerPoint.RequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -82,7 +82,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -522,7 +522,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -572,7 +572,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -607,7 +607,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -653,7 +653,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -677,7 +677,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -727,7 +727,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -837,7 +837,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -909,7 +909,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -933,7 +933,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -957,7 +957,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -981,7 +981,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -1005,7 +1005,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -1029,7 +1029,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -1053,7 +1053,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -1077,7 +1077,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -1101,7 +1101,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -1125,7 +1125,7 @@ object PowerPoint {
     var context: ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */

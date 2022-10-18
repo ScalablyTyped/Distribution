@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsCore.mod
 
-import typings.tensorflowTfjsCore.serializationMod.ConfigDict
-import typings.tensorflowTfjsCore.serializationMod.Serializable
-import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
+import typings.tensorflowTfjsCore.distSerializationMod.ConfigDict
+import typings.tensorflowTfjsCore.distSerializationMod.Serializable
+import typings.tensorflowTfjsCore.distSerializationMod.SerializableConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@tensorflow/tfjs-core", "AdagradOptimizer")
 @js.native
 open class AdagradOptimizer protected ()
-  extends typings.tensorflowTfjsCore.baseMod.AdagradOptimizer {
+  extends typings.tensorflowTfjsCore.distBaseMod.AdagradOptimizer {
   def this(learningRate: Double) = this()
   def this(learningRate: Double, initialAccumulatorValue: Double) = this()
 }

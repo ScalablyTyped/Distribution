@@ -1,13 +1,13 @@
 package typings.ethereumjsCommon
 
-import typings.ethereumjsCommon.enumsMod.ConsensusAlgorithm
-import typings.ethereumjsCommon.enumsMod.ConsensusType
-import typings.ethereumjsCommon.typesMod.BootstrapNodeConfig
-import typings.ethereumjsCommon.typesMod.CasperConfig
-import typings.ethereumjsCommon.typesMod.CliqueConfig
-import typings.ethereumjsCommon.typesMod.EthashConfig
-import typings.ethereumjsCommon.typesMod.GenesisBlockConfig
-import typings.ethereumjsCommon.typesMod.HardforkConfig
+import typings.ethereumjsCommon.distEnumsMod.ConsensusAlgorithm
+import typings.ethereumjsCommon.distEnumsMod.ConsensusType
+import typings.ethereumjsCommon.distTypesMod.BootstrapNodeConfig
+import typings.ethereumjsCommon.distTypesMod.CasperConfig
+import typings.ethereumjsCommon.distTypesMod.CliqueConfig
+import typings.ethereumjsCommon.distTypesMod.EthashConfig
+import typings.ethereumjsCommon.distTypesMod.GenesisBlockConfig
+import typings.ethereumjsCommon.distTypesMod.HardforkConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.yaml.anon
 
-import typings.yaml.cstMod.Token
-import typings.yaml.schemaSchemaMod.Schema
-import typings.yaml.stringifyMod.StringifyContext
+import typings.yaml.distParseCstMod.Token
+import typings.yaml.distSchemaSchemaMod.Schema
+import typings.yaml.distStringifyStringifyMod.StringifyContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait ReadonlyCollection extends StObject {
   
   val anchor: js.UndefOr[String] = js.native
   
-  def clone(schema: Schema): typings.yaml.collectionMod.Collection = js.native
+  def clone(schema: Schema): typings.yaml.distNodesCollectionMod.Collection = js.native
   
   val comment: js.UndefOr[String | Null] = js.native
   
@@ -46,7 +46,7 @@ trait ReadonlyCollection extends StObject {
   
   val maxFlowStringSingleLineLength: js.UndefOr[Any] = js.native
   
-  val range: js.UndefOr[typings.yaml.nodeMod.Range | Null] = js.native
+  val range: js.UndefOr[typings.yaml.distNodesNodeMod.Range | Null] = js.native
   
   val schema: js.UndefOr[Schema] = js.native
   

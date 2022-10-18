@@ -1,6 +1,6 @@
 package typings.redisClient.anon
 
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import typings.redisClient.redisClientStrings.ASYNC
 import typings.redisClient.redisClientStrings.OK
 import typings.redisClient.redisClientStrings.SYNC

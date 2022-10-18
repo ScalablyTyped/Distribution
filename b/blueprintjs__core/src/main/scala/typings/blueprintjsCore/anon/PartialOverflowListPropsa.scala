@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.anon
 
-import typings.blueprintjsCore.boundaryMod.Boundary
+import typings.blueprintjsCore.libEsmCommonBoundaryMod.Boundary
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactChild
 import typings.react.mod.ReactNode
@@ -30,7 +30,7 @@ trait PartialOverflowListPropsa extends StObject {
   var style: js.UndefOr[CSSProperties] = js.undefined
   
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
   ] = js.undefined
   
   var visibleItemRenderer: js.UndefOr[js.Function2[/* item */ Any, /* index */ Double, ReactChild]] = js.undefined
@@ -82,7 +82,9 @@ object PartialOverflowListPropsa {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+    ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     

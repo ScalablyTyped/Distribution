@@ -1,7 +1,7 @@
 package typings.redisBloom.anon
 
-import typings.redisBloom.listWITHCOUNTMod.ListWithCountRawReply
-import typings.redisBloom.listWITHCOUNTMod.ListWithCountReply
+import typings.redisBloom.distCommandsTopKListWITHCOUNTMod.ListWithCountRawReply
+import typings.redisBloom.distCommandsTopKListWITHCOUNTMod.ListWithCountReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

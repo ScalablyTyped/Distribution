@@ -72,7 +72,7 @@ trait InternetHeaders extends StObject {
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
     * @param names - The names of the internet headers to be returned.
-    * @param options - An object literal that contains one or more of the following properties:
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -115,7 +115,7 @@ trait InternetHeaders extends StObject {
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
     * @param names - The names of the internet headers to be removed.
-    * @param options - An object literal that contains one or more of the following properties:
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -178,7 +178,7 @@ trait InternetHeaders extends StObject {
     *
     * @param headers - The names and corresponding values of the headers to be set. Should be a dictionary object with keys being the names of the
     *                internet headers and values being the values of the internet headers.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.

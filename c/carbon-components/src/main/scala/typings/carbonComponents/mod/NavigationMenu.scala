@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "NavigationMenu")
 @js.native
 open class NavigationMenu protected ()
-  extends typings.carbonComponents.componentsMod.NavigationMenu {
+  extends typings.carbonComponents.globalsJsComponentsMod.NavigationMenu {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialNavigationMenuOpti) = this()
 }

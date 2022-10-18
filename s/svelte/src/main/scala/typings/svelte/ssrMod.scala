@@ -1,53 +1,66 @@
 package typings.svelte
 
-import typings.svelte.anon.Render
+import typings.std.Extract
+import typings.std.Map
+import typings.std.Record
+import typings.svelte.typesRuntimeInternalDevMod.ComponentConstructorOptions
+import typings.svelte.typesRuntimeInternalLifecycleMod.DispatchOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object ssrMod {
   
-  @JSImport("svelte/types/runtime/internal/ssr", JSImport.Namespace)
+  @JSImport("svelte/ssr", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addAttribute(name: Any, value: Any, boolean: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("add_attribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], boolean.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def addClasses(classes: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("add_classes")(classes.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def addStyles(style_object: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("add_styles")(style_object.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def createSsrComponent(fn: Any): Render = ^.asInstanceOf[js.Dynamic].applyDynamic("create_ssr_component")(fn.asInstanceOf[js.Any]).asInstanceOf[Render]
-  
-  inline def debug(file: Any, line: Any, column: Any, values: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(file.asInstanceOf[js.Any], line.asInstanceOf[js.Any], column.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def each(items: Any, fn: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(items.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def escape(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def escape(value: Any, is_attr: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any], is_attr.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def escapeAttributeValue(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("escape_attribute_value")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def escapeObject(obj: Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("escape_object")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  
-  @JSImport("svelte/types/runtime/internal/ssr", "invalid_attribute_name_character")
+  @JSImport("svelte/ssr", "SvelteComponent")
   @js.native
-  val invalidAttributeNameCharacter: js.RegExp = js.native
-  
-  inline def isVoid(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is_void")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def mergeSsrStyles(style_attribute: Any, style_directive: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("merge_ssr_styles")(style_attribute.asInstanceOf[js.Any], style_directive.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  
-  object missingComponent {
-    
-    @JSImport("svelte/types/runtime/internal/ssr", "missing_component")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def render(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("$$render")().asInstanceOf[String]
+  open class SvelteComponent protected ()
+    extends typings.svelte.mod.SvelteComponent {
+    def this(options: ComponentConstructorOptions[Record[String, Any]]) = this()
   }
   
-  inline def spread(args: Any, attrs_to_add: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("spread")(args.asInstanceOf[js.Any], attrs_to_add.asInstanceOf[js.Any])).asInstanceOf[String]
+  @JSImport("svelte/ssr", "SvelteComponentTyped")
+  @js.native
+  open class SvelteComponentTyped[Props /* <: Record[String, Any] */, Events /* <: Record[String, Any] */, Slots /* <: Record[String, Any] */] protected ()
+    extends typings.svelte.mod.SvelteComponentTyped[Props, Events, Slots] {
+    def this(options: ComponentConstructorOptions[Props]) = this()
+  }
   
-  inline def validateComponent(component: Any, name: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("validate_component")(component.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def afterUpdate(fn: js.Function0[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterUpdate")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def beforeUpdate(fn: js.Function0[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeUpdate")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def createEventDispatcher[EventMap /* <: js.Object */](): js.Function3[
+    /* type */ Extract[/* keyof EventMap */ String, String], 
+    /* detail */ js.UndefOr[
+      /* import warning: importer.ImportType#apply Failed type conversion: EventMap[std.Extract<keyof EventMap, string>] */ js.Any
+    ], 
+    /* options */ js.UndefOr[DispatchOptions], 
+    Boolean
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventDispatcher")().asInstanceOf[js.Function3[
+    /* type */ Extract[/* keyof EventMap */ String, String], 
+    /* detail */ js.UndefOr[
+      /* import warning: importer.ImportType#apply Failed type conversion: EventMap[std.Extract<keyof EventMap, string>] */ js.Any
+    ], 
+    /* options */ js.UndefOr[DispatchOptions], 
+    Boolean
+  ]]
+  
+  inline def getAllContexts[T /* <: Map[Any, Any] */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllContexts")().asInstanceOf[T]
+  
+  inline def getContext[T](key: Any): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(key.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  inline def hasContext(key: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasContext")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def onDestroy(fn: js.Function0[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDestroy")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def onMount(fn: js.Function0[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMount")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def setContext[T](key: Any, context: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def tick(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("tick")().asInstanceOf[js.Promise[Unit]]
 }

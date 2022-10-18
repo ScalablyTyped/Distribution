@@ -1,12 +1,12 @@
 package typings.matrixBotSdk
 
-import typings.matrixBotSdk.createRoomMod.RoomPreset
-import typings.matrixBotSdk.createRoomMod.RoomVisibility
-import typings.matrixBotSdk.joinRulesEventMod.JoinRule
-import typings.matrixBotSdk.membershipEventMod.EffectiveMembership
-import typings.matrixBotSdk.membershipEventMod.Membership
-import typings.matrixBotSdk.messageEventMod._MessageType
-import typings.matrixBotSdk.presenceEventMod.PresenceState
+import typings.matrixBotSdk.libModelsCreateRoomMod.RoomPreset
+import typings.matrixBotSdk.libModelsCreateRoomMod.RoomVisibility
+import typings.matrixBotSdk.libModelsEventsJoinRulesEventMod.JoinRule
+import typings.matrixBotSdk.libModelsEventsMembershipEventMod.EffectiveMembership
+import typings.matrixBotSdk.libModelsEventsMembershipEventMod.Membership
+import typings.matrixBotSdk.libModelsEventsMessageEventMod._MessageType
+import typings.matrixBotSdk.libModelsEventsPresenceEventMod.PresenceState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,10 +28,6 @@ object matrixBotSdkStrings {
   @js.native
   sealed trait GET extends StObject
   inline def GET: GET = "GET".asInstanceOf[GET]
-  
-  @js.native
-  sealed trait OTKCounts extends StObject
-  inline def OTKCounts: OTKCounts = "OTKCounts".asInstanceOf[OTKCounts]
   
   @js.native
   sealed trait POST extends StObject

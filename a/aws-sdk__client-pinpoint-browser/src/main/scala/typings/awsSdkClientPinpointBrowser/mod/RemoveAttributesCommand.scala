@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-pinpoint-browser", "RemoveAttributesCommand")
 @js.native
 open class RemoveAttributesCommand protected ()
-  extends typings.awsSdkClientPinpointBrowser.removeAttributesCommandMod.RemoveAttributesCommand {
+  extends typings.awsSdkClientPinpointBrowser.commandsRemoveAttributesCommandMod.RemoveAttributesCommand {
   def this(input: RemoveAttributesInput) = this()
 }

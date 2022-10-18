@@ -62,7 +62,7 @@ import typings.reactNative.mod.ViewPagerAndroidProps
 import typings.reactNative.mod.ViewProps
 import typings.reactNative.mod.VirtualizedList
 import typings.reactNative.mod.VirtualizedListProps
-import typings.styledComponents.constructorsConstructWithOptionsMod.NativeStyled
+import typings.styledComponents.nativeDistDistConstructorsConstructWithOptionsMod.NativeStyled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

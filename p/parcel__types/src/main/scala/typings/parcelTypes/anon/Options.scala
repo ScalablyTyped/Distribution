@@ -3,48 +3,43 @@ package typings.parcelTypes.anon
 import typings.parcelTypes.mod.FilePath
 import typings.parcelTypes.mod.PluginLogger
 import typings.parcelTypes.mod.PluginOptions
-import typings.parcelTypes.mod.ResolveFn
+import typings.parcelTypes.mod.ResolveConfigFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Options[ConfigType] extends StObject {
+trait Options extends StObject {
   
   var asset: typings.parcelTypes.mod.Asset
-  
-  var config: ConfigType
   
   var logger: PluginLogger
   
   var options: PluginOptions
   
-  def resolve(from: FilePath, to: String): js.Promise[FilePath]
-  @JSName("resolve")
-  var resolve_Original: ResolveFn
+  def resolveConfig(configNames: js.Array[FilePath]): js.Promise[js.UndefOr[FilePath | Null]]
+  @JSName("resolveConfig")
+  var resolveConfig_Original: ResolveConfigFn
 }
 object Options {
   
-  inline def apply[ConfigType](
+  inline def apply(
     asset: typings.parcelTypes.mod.Asset,
-    config: ConfigType,
     logger: PluginLogger,
     options: PluginOptions,
-    resolve: (/* from */ FilePath, /* to */ String) => js.Promise[FilePath]
-  ): Options[ConfigType] = {
-    val __obj = js.Dynamic.literal(asset = asset.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], resolve = js.Any.fromFunction2(resolve))
-    __obj.asInstanceOf[Options[ConfigType]]
+    resolveConfig: /* configNames */ js.Array[FilePath] => js.Promise[js.UndefOr[FilePath | Null]]
+  ): Options = {
+    val __obj = js.Dynamic.literal(asset = asset.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], resolveConfig = js.Any.fromFunction1(resolveConfig))
+    __obj.asInstanceOf[Options]
   }
   
-  extension [Self <: Options[?], ConfigType](x: Self & Options[ConfigType]) {
+  extension [Self <: Options](x: Self) {
     
     inline def setAsset(value: typings.parcelTypes.mod.Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
-    
-    inline def setConfig(value: ConfigType): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setLogger(value: PluginLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     inline def setOptions(value: PluginOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setResolve(value: (/* from */ FilePath, /* to */ String) => js.Promise[FilePath]): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
+    inline def setResolveConfig(value: /* configNames */ js.Array[FilePath] => js.Promise[js.UndefOr[FilePath | Null]]): Self = StObject.set(x, "resolveConfig", js.Any.fromFunction1(value))
   }
 }

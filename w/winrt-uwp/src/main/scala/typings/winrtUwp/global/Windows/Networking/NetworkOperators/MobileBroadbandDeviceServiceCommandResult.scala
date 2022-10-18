@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of a mobile broadband device service command. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceCommandResult")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceCommandResult")
 @js.native
-abstract class MobileBroadbandDeviceServiceCommandResult ()
+open class MobileBroadbandDeviceServiceCommandResult ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceCommandResult {
   

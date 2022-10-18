@@ -12,4 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor
   */
 open class Scale[D, R] ()
-  extends typings.plottable.scaleMod.Scale[D, R]
+  extends typings.plottable.buildSrcScalesScaleMod.Scale[D, R]

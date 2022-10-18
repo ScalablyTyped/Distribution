@@ -1,6 +1,6 @@
 package typings.nivoArcs.anon
 
-import typings.nivoArcs.typesTypesMod.DatumWithArc
+import typings.nivoArcs.distTypesTypesMod.DatumWithArc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

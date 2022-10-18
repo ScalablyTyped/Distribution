@@ -1,11 +1,11 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.dmsMod.BooleanOptional
-import typings.awsSdk.dmsMod.Filter
-import typings.awsSdk.dmsMod.FilterList
-import typings.awsSdk.dmsMod.IntegerOptional
-import typings.awsSdk.dmsMod.String
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsDmsMod.BooleanOptional
+import typings.awsSdk.clientsDmsMod.Filter
+import typings.awsSdk.clientsDmsMod.FilterList
+import typings.awsSdk.clientsDmsMod.IntegerOptional
+import typings.awsSdk.clientsDmsMod.String
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

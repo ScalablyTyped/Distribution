@@ -1,6 +1,6 @@
 package typings.babylonjs.materialsIndexMod
 
-import typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial
+import typings.babylonjs.mathsSphericalPolynomialMod.SphericalPolynomial
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

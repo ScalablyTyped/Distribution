@@ -1,6 +1,6 @@
 package typings.jupyterlabTooltip
 
-import typings.jupyterlabTooltip.widgetMod.Tooltip.IOptions
+import typings.jupyterlabTooltip.libWidgetMod.Tooltip.IOptions
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,12 +10,12 @@ object mod {
   
   @JSImport("@jupyterlab/tooltip", "ITooltipManager")
   @js.native
-  val ITooltipManager: Token[typings.jupyterlabTooltip.tokensMod.ITooltipManager] = js.native
+  val ITooltipManager: Token[typings.jupyterlabTooltip.libTokensMod.ITooltipManager] = js.native
   
   @JSImport("@jupyterlab/tooltip", "Tooltip")
   @js.native
-  class Tooltip protected ()
-    extends typings.jupyterlabTooltip.widgetMod.Tooltip {
+  open class Tooltip protected ()
+    extends typings.jupyterlabTooltip.libWidgetMod.Tooltip {
     /**
       * Instantiate a tooltip.
       */

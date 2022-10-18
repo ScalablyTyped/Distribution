@@ -1,7 +1,7 @@
 package typings.opentelemetryExporterZipkin
 
-import typings.opentelemetryExporterZipkin.typesMod.ExporterConfig
-import typings.opentelemetryExporterZipkin.typesMod.SendFn
+import typings.opentelemetryExporterZipkin.buildSrcTypesMod.ExporterConfig
+import typings.opentelemetryExporterZipkin.buildSrcTypesMod.SendFn
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object mod {
   @JSImport("@opentelemetry/exporter-zipkin", "ZipkinExporter")
   @js.native
   open class ZipkinExporter ()
-    extends typings.opentelemetryExporterZipkin.zipkinMod.ZipkinExporter {
+    extends typings.opentelemetryExporterZipkin.buildSrcZipkinMod.ZipkinExporter {
     def this(config: ExporterConfig) = this()
   }
   

@@ -21,8 +21,8 @@ open class SpotLight protected ()
     */
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
-    direction: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    direction: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     angle: Double,
     exponent: Double,
     scene: typings.babylonjs.sceneMod.Scene

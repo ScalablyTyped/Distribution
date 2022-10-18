@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "InitialVelocity")
 @js.native
 open class InitialVelocity protected ()
-  extends typings.blackEngine.initialVelocityMod.InitialVelocity {
-  def this(values: (Double | typings.blackEngine.vectorScatterBaseMod.VectorScatterBase)*) = this()
+  extends typings.blackEngine.particlesModsInitialVelocityMod.InitialVelocity {
+  def this(values: (Double | typings.blackEngine.scattersVectorScatterBaseMod.VectorScatterBase)*) = this()
 }

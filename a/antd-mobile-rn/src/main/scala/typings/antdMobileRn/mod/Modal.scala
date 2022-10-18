@@ -1,6 +1,6 @@
 package typings.antdMobileRn.mod
 
-import typings.antdMobileRn.modalIndexNativeMod.default
+import typings.antdMobileRn.libModalIndexDotnativeMod.default
 import typings.propTypes.mod.Requireable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

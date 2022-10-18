@@ -1,15 +1,17 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.srcModelDocumentMod.Document
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcUtilErrorMod.FirestoreError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `27` extends StObject {
   
-  var added: js.UndefOr[js.Array[Document]] = js.undefined
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var removed: js.UndefOr[js.Array[Document]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.undefined
+  
+  var next: js.UndefOr[js.Function1[/* value */ Unit, Unit]] = js.undefined
 }
 object `27` {
   
@@ -20,16 +22,16 @@ object `27` {
   
   extension [Self <: `27`](x: Self) {
     
-    inline def setAdded(value: js.Array[Document]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    inline def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setAddedVarargs(value: Document*): Self = StObject.set(x, "added", js.Array(value*))
+    inline def setError(value: /* error */ FirestoreError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    inline def setRemoved(value: js.Array[Document]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+    inline def setNext(value: /* value */ Unit => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     
-    inline def setRemovedVarargs(value: Document*): Self = StObject.set(x, "removed", js.Array(value*))
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
   }
 }

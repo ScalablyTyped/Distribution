@@ -30,95 +30,95 @@ object mod {
     
     @JSImport("multibase", "codes.0")
     @js.native
-    val `0`: typings.multibase.baseMod.^ = js.native
+    val `0`: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.7")
     @js.native
-    val `7`: typings.multibase.baseMod.^ = js.native
+    val `7`: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.9")
     @js.native
-    val `9`: typings.multibase.baseMod.^ = js.native
+    val `9`: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.B")
     @js.native
-    val B_ : typings.multibase.baseMod.^ = js.native
+    val B_ : typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.C")
     @js.native
-    val C_ : typings.multibase.baseMod.^ = js.native
+    val C_ : typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.F")
     @js.native
-    val F_ : typings.multibase.baseMod.^ = js.native
+    val F_ : typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.K")
     @js.native
-    val K_ : typings.multibase.baseMod.^ = js.native
+    val K_ : typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.M")
     @js.native
-    val M_ : typings.multibase.baseMod.^ = js.native
+    val M_ : typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.T")
     @js.native
-    val T_ : typings.multibase.baseMod.^ = js.native
+    val T_ : typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.U")
     @js.native
-    val U_ : typings.multibase.baseMod.^ = js.native
+    val U_ : typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.V")
     @js.native
-    val V_ : typings.multibase.baseMod.^ = js.native
+    val V_ : typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.Z")
     @js.native
-    val Z_ : typings.multibase.baseMod.^ = js.native
+    val Z_ : typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.\u0000")
     @js.native
-    val _empty: typings.multibase.baseMod.^ = js.native
+    val _empty: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.b")
     @js.native
-    val b: typings.multibase.baseMod.^ = js.native
+    val b: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.c")
     @js.native
-    val c: typings.multibase.baseMod.^ = js.native
+    val c: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.f")
     @js.native
-    val f: typings.multibase.baseMod.^ = js.native
+    val f: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.h")
     @js.native
-    val h: typings.multibase.baseMod.^ = js.native
+    val h: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.k")
     @js.native
-    val k: typings.multibase.baseMod.^ = js.native
+    val k: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.m")
     @js.native
-    val m: typings.multibase.baseMod.^ = js.native
+    val m: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.t")
     @js.native
-    val t: typings.multibase.baseMod.^ = js.native
+    val t: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.u")
     @js.native
-    val u: typings.multibase.baseMod.^ = js.native
+    val u: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.v")
     @js.native
-    val v: typings.multibase.baseMod.^ = js.native
+    val v: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "codes.z")
     @js.native
-    val z: typings.multibase.baseMod.^ = js.native
+    val z: typings.multibase.distSrcBaseMod.^ = js.native
   }
   
   inline def decode(data: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
@@ -163,115 +163,115 @@ object mod {
   inline def encodingFromData(data: String): Base = ^.asInstanceOf[js.Dynamic].applyDynamic("encodingFromData")(data.asInstanceOf[js.Any]).asInstanceOf[Base]
   inline def encodingFromData(data: js.typedarray.Uint8Array): Base = ^.asInstanceOf[js.Dynamic].applyDynamic("encodingFromData")(data.asInstanceOf[js.Any]).asInstanceOf[Base]
   
-  inline def isEncoded(data: String): `false` | typings.multibase.typesMod.BaseName = ^.asInstanceOf[js.Dynamic].applyDynamic("isEncoded")(data.asInstanceOf[js.Any]).asInstanceOf[`false` | typings.multibase.typesMod.BaseName]
+  inline def isEncoded(data: String): `false` | typings.multibase.distSrcTypesMod.BaseName = ^.asInstanceOf[js.Dynamic].applyDynamic("isEncoded")(data.asInstanceOf[js.Any]).asInstanceOf[`false` | typings.multibase.distSrcTypesMod.BaseName]
   /**
     * Is the given data multibase encoded?
     *
     * @param {Uint8Array|string} data
     */
-  inline def isEncoded(data: js.typedarray.Uint8Array): `false` | typings.multibase.typesMod.BaseName = ^.asInstanceOf[js.Dynamic].applyDynamic("isEncoded")(data.asInstanceOf[js.Any]).asInstanceOf[`false` | typings.multibase.typesMod.BaseName]
+  inline def isEncoded(data: js.typedarray.Uint8Array): `false` | typings.multibase.distSrcTypesMod.BaseName = ^.asInstanceOf[js.Dynamic].applyDynamic("isEncoded")(data.asInstanceOf[js.Any]).asInstanceOf[`false` | typings.multibase.distSrcTypesMod.BaseName]
   
   /* Inlined std.Readonly<std.Record<multibase.multibase/dist/src/types.BaseName, multibase.multibase/dist/src/base.^>> */
   object names {
     
     @JSImport("multibase", "names.base10")
     @js.native
-    val base10: typings.multibase.baseMod.^ = js.native
+    val base10: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base16")
     @js.native
-    val base16: typings.multibase.baseMod.^ = js.native
+    val base16: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base16upper")
     @js.native
-    val base16upper: typings.multibase.baseMod.^ = js.native
+    val base16upper: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base2")
     @js.native
-    val base2: typings.multibase.baseMod.^ = js.native
+    val base2: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base32")
     @js.native
-    val base32: typings.multibase.baseMod.^ = js.native
+    val base32: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base32hex")
     @js.native
-    val base32hex: typings.multibase.baseMod.^ = js.native
+    val base32hex: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base32hexpad")
     @js.native
-    val base32hexpad: typings.multibase.baseMod.^ = js.native
+    val base32hexpad: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base32hexpadupper")
     @js.native
-    val base32hexpadupper: typings.multibase.baseMod.^ = js.native
+    val base32hexpadupper: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base32hexupper")
     @js.native
-    val base32hexupper: typings.multibase.baseMod.^ = js.native
+    val base32hexupper: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base32pad")
     @js.native
-    val base32pad: typings.multibase.baseMod.^ = js.native
+    val base32pad: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base32padupper")
     @js.native
-    val base32padupper: typings.multibase.baseMod.^ = js.native
+    val base32padupper: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base32upper")
     @js.native
-    val base32upper: typings.multibase.baseMod.^ = js.native
+    val base32upper: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base32z")
     @js.native
-    val base32z: typings.multibase.baseMod.^ = js.native
+    val base32z: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base36")
     @js.native
-    val base36: typings.multibase.baseMod.^ = js.native
+    val base36: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base36upper")
     @js.native
-    val base36upper: typings.multibase.baseMod.^ = js.native
+    val base36upper: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base58btc")
     @js.native
-    val base58btc: typings.multibase.baseMod.^ = js.native
+    val base58btc: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base58flickr")
     @js.native
-    val base58flickr: typings.multibase.baseMod.^ = js.native
+    val base58flickr: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base64")
     @js.native
-    val base64: typings.multibase.baseMod.^ = js.native
+    val base64: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base64pad")
     @js.native
-    val base64pad: typings.multibase.baseMod.^ = js.native
+    val base64pad: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base64url")
     @js.native
-    val base64url: typings.multibase.baseMod.^ = js.native
+    val base64url: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base64urlpad")
     @js.native
-    val base64urlpad: typings.multibase.baseMod.^ = js.native
+    val base64urlpad: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.base8")
     @js.native
-    val base8: typings.multibase.baseMod.^ = js.native
+    val base8: typings.multibase.distSrcBaseMod.^ = js.native
     
     @JSImport("multibase", "names.identity")
     @js.native
-    val identity: typings.multibase.baseMod.^ = js.native
+    val identity: typings.multibase.distSrcBaseMod.^ = js.native
   }
   
-  type Base = typings.multibase.baseMod.^
+  type Base = typings.multibase.distSrcBaseMod.^
   
-  type BaseCode = typings.multibase.typesMod.BaseCode
+  type BaseCode = typings.multibase.distSrcTypesMod.BaseCode
   
-  type BaseName = typings.multibase.typesMod.BaseName
+  type BaseName = typings.multibase.distSrcTypesMod.BaseName
   
-  type BaseNameOrCode = typings.multibase.typesMod.BaseNameOrCode
+  type BaseNameOrCode = typings.multibase.distSrcTypesMod.BaseNameOrCode
 }

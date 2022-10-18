@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates that the interface contains overridable methods. */
-@JSGlobal("Windows.Foundation.Metadata.OverridableAttribute")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.Metadata.OverridableAttribute")
 @js.native
-abstract class OverridableAttribute ()
+open class OverridableAttribute ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Metadata.OverridableAttribute

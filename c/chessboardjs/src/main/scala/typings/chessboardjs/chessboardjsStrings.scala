@@ -3,15 +3,12 @@ package typings.chessboardjs
 import typings.chessboardjs.mod.DropOffBoardType
 import typings.chessboardjs.mod.OrientationType
 import typings.chessboardjs.mod.SpeedType
+import typings.chessboardjs.mod._PositionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chessboardjsStrings {
-  
-  @js.native
-  sealed trait BoardPositionType extends StObject
-  inline def BoardPositionType: BoardPositionType = "BoardPositionType".asInstanceOf[BoardPositionType]
   
   @js.native
   sealed trait black
@@ -46,7 +43,9 @@ object chessboardjsStrings {
   inline def snapback: snapback = "snapback".asInstanceOf[snapback]
   
   @js.native
-  sealed trait start extends StObject
+  sealed trait start
+    extends StObject
+       with _PositionType
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native

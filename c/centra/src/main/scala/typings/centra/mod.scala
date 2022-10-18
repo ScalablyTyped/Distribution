@@ -25,6 +25,7 @@ import typings.centra.centraStrings.setHost
 import typings.centra.centraStrings.signal
 import typings.centra.centraStrings.socketPath
 import typings.centra.centraStrings.timeout
+import typings.node.AbortSignal
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.node.httpMod.IncomingHttpHeaders
@@ -32,9 +33,8 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.httpMod.RequestOptions
 import typings.node.netMod.LookupFunction
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.node.urlMod.URL_
-import typings.std.AbortSignal
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

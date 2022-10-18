@@ -17,9 +17,7 @@ object mod {
   
   inline def shape[T /* <: SvgElements */](svgElementName: T, svgProps: SvgProperties[T]): Shape_ = (^.asInstanceOf[js.Dynamic].applyDynamic("shape")(svgElementName.asInstanceOf[js.Any], svgProps.asInstanceOf[js.Any])).asInstanceOf[Shape_]
   
-  trait CircleProps
-    extends StObject
-       with _SvgProperties[Any] {
+  trait CircleProps extends StObject {
     
     var cx: Double
     
@@ -44,9 +42,7 @@ object mod {
     }
   }
   
-  trait EllipseProps
-    extends StObject
-       with _SvgProperties[Any] {
+  trait EllipseProps extends StObject {
     
     var cx: Double
     
@@ -98,9 +94,7 @@ object mod {
     }
   }
   
-  trait LineProps
-    extends StObject
-       with _SvgProperties[Any] {
+  trait LineProps extends StObject {
     
     var x1: Double
     
@@ -166,9 +160,7 @@ object mod {
     }
   }
   
-  trait PathProps
-    extends StObject
-       with _SvgProperties[Any] {
+  trait PathProps extends StObject {
     
     var d: String
   }
@@ -206,9 +198,7 @@ object mod {
     }
   }
   
-  trait PolygonProps
-    extends StObject
-       with _SvgProperties[Any] {
+  trait PolygonProps extends StObject {
     
     var points: String
   }
@@ -227,9 +217,7 @@ object mod {
   
   type PolylineProps = PolygonProps
   
-  trait RectProps
-    extends StObject
-       with _SvgProperties[Any] {
+  trait RectProps extends StObject {
     
     var height: Double
     
@@ -323,48 +311,13 @@ object mod {
     inline def rect: typings.svgIntersections.svgIntersectionsStrings.rect = "rect".asInstanceOf[typings.svgIntersections.svgIntersectionsStrings.rect]
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.svgIntersections.mod.PathProps
-    - typings.svgIntersections.mod.PolylineProps
-    - typings.svgIntersections.mod.PolygonProps
-    - typings.svgIntersections.mod.EllipseProps
-    - typings.svgIntersections.mod.CircleProps
-    - typings.svgIntersections.mod.RectProps
-    - typings.svgIntersections.mod.LineProps
-  */
-  type SvgProperties[T /* <: SvgElements */] = _SvgProperties[T] | PolylineProps
-  
-  trait _SvgProperties[T /* <: SvgElements */] extends StObject
-  object _SvgProperties {
-    
-    inline def CircleProps(cx: Double, cy: Double, r: Double): typings.svgIntersections.mod.CircleProps = {
-      val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.svgIntersections.mod.CircleProps]
-    }
-    
-    inline def EllipseProps(cx: Double, cy: Double, rx: Double, ry: Double): typings.svgIntersections.mod.EllipseProps = {
-      val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], rx = rx.asInstanceOf[js.Any], ry = ry.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.svgIntersections.mod.EllipseProps]
-    }
-    
-    inline def LineProps(x1: Double, x2: Double, y1: Double, y2: Double): typings.svgIntersections.mod.LineProps = {
-      val __obj = js.Dynamic.literal(x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.svgIntersections.mod.LineProps]
-    }
-    
-    inline def PathProps(d: String): typings.svgIntersections.mod.PathProps = {
-      val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.svgIntersections.mod.PathProps]
-    }
-    
-    inline def PolygonProps(points: String): typings.svgIntersections.mod.PolygonProps = {
-      val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.svgIntersections.mod.PolygonProps]
-    }
-    
-    inline def RectProps(height: Double, width: Double, x: Double, y: Double): typings.svgIntersections.mod.RectProps = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.svgIntersections.mod.RectProps]
-    }
-  }
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends 'line' ? svg-intersections.svg-intersections.LineProps : T extends 'rect' ? svg-intersections.svg-intersections.RectProps : T extends 'circle' ? svg-intersections.svg-intersections.CircleProps : T extends 'ellipse' ? svg-intersections.svg-intersections.EllipseProps : T extends 'polygon' ? svg-intersections.svg-intersections.PolygonProps : T extends 'polyline' ? svg-intersections.svg-intersections.PolylineProps : T extends 'path' ? svg-intersections.svg-intersections.PathProps : never
+    }}}
+    */
+  @js.native
+  trait SvgProperties[T /* <: SvgElements */] extends StObject
 }

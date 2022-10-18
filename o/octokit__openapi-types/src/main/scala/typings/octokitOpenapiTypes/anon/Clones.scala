@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Clones extends StObject {
   
-  var clones: js.Array[Uniques]
+  var clones: js.Array[Count]
   
   /** @example 173 */
   var count: Double
@@ -16,16 +16,16 @@ trait Clones extends StObject {
 }
 object Clones {
   
-  inline def apply(clones: js.Array[Uniques], count: Double, uniques: Double): Clones = {
+  inline def apply(clones: js.Array[Count], count: Double, uniques: Double): Clones = {
     val __obj = js.Dynamic.literal(clones = clones.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], uniques = uniques.asInstanceOf[js.Any])
     __obj.asInstanceOf[Clones]
   }
   
   extension [Self <: Clones](x: Self) {
     
-    inline def setClones(value: js.Array[Uniques]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
+    inline def setClones(value: js.Array[Count]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
     
-    inline def setClonesVarargs(value: Uniques*): Self = StObject.set(x, "clones", js.Array(value*))
+    inline def setClonesVarargs(value: Count*): Self = StObject.set(x, "clones", js.Array(value*))
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

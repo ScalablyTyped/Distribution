@@ -1,7 +1,7 @@
 package typings.seleniumWebdriver.mod
 
 import typings.seleniumWebdriver.chromeMod.ServiceBuilder
-import typings.seleniumWebdriver.loggingMod.Preferences
+import typings.seleniumWebdriver.libLoggingMod.Preferences
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,7 +66,7 @@ open class Builder () extends StObject {
     * to use.
     * @return {!Capabilities} The current capabilities for this builder.
     */
-  def getCapabilities(): typings.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  def getCapabilities(): typings.seleniumWebdriver.libCapabilitiesMod.Capabilities = js.native
   
   /**
     * @return {chrome.Options} the Chrome specific options currently configured
@@ -263,5 +263,5 @@ open class Builder () extends StObject {
     * @return {!Builder} A self reference.
     */
   def withCapabilities(capabilities: js.Object): Builder = js.native
-  def withCapabilities(capabilities: typings.seleniumWebdriver.capabilitiesMod.Capabilities): Builder = js.native
+  def withCapabilities(capabilities: typings.seleniumWebdriver.libCapabilitiesMod.Capabilities): Builder = js.native
 }

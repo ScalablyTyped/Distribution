@@ -1,11 +1,11 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.XRHandedness
-import typings.babylonjs.abstractMeshMod.AbstractMesh
-import typings.babylonjs.mathVectorMod.Vector3
-import typings.babylonjs.pickingInfoMod.PickingInfo
+import typings.babylonjs.collisionsPickingInfoMod.PickingInfo
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.webXRInputMod.WebXRInput
+import typings.babylonjs.xRWebXRInputMod.WebXRInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

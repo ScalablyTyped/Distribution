@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param geometry An instance of BufferGeometry.
   * @param material An instance of Material (optional).
   */
-open class Points[TGeometry /* <: typings.three.bufferGeometryMod.BufferGeometry */, TMaterial /* <: typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material] */] ()
-  extends typings.three.threeMod.Points[TGeometry, TMaterial] {
+open class Points[TGeometry /* <: typings.three.srcCoreBufferGeometryMod.BufferGeometry */, TMaterial /* <: typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material] */] ()
+  extends typings.three.srcThreeMod.Points[TGeometry, TMaterial] {
   def this(geometry: TGeometry) = this()
   def this(geometry: TGeometry, material: TMaterial) = this()
   def this(geometry: Unit, material: TMaterial) = this()

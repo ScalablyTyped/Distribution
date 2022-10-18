@@ -11,11 +11,11 @@ trait SimpleAssertion
      with Base[typings.regexpTree.regexpTreeStrings.Assertion]
      with Assertion {
   
-  var kind: ^ | $ | String
+  var kind: ^ | $ | (/* \b */ String)
 }
 object SimpleAssertion {
   
-  inline def apply(kind: ^ | $ | String): SimpleAssertion = {
+  inline def apply(kind: ^ | $ | (/* \b */ String)): SimpleAssertion = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Assertion")
     __obj.asInstanceOf[SimpleAssertion]
@@ -23,6 +23,6 @@ object SimpleAssertion {
   
   extension [Self <: SimpleAssertion](x: Self) {
     
-    inline def setKind(value: ^ | $ | String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ^ | $ | (/* \b */ String)): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

@@ -14,24 +14,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [rotation=Matrix()] - The rotation of this OBB.
   */
 open class OBB ()
-  extends typings.yuka.yukaMod.OBB {
-  def this(center: typings.yuka.vector3Mod.Vector3) = this()
-  def this(center: Unit, halfSizes: typings.yuka.vector3Mod.Vector3) = this()
-  def this(center: typings.yuka.vector3Mod.Vector3, halfSizes: typings.yuka.vector3Mod.Vector3) = this()
-  def this(center: Unit, halfSizes: Unit, rotation: typings.yuka.matrix3Mod.Matrix3) = this()
+  extends typings.yuka.srcYukaMod.OBB {
+  def this(center: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(center: Unit, halfSizes: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(center: typings.yuka.srcMathVector3Mod.Vector3, halfSizes: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(center: Unit, halfSizes: Unit, rotation: typings.yuka.srcMathMatrix3Mod.Matrix3) = this()
   def this(
     center: Unit,
-    halfSizes: typings.yuka.vector3Mod.Vector3,
-    rotation: typings.yuka.matrix3Mod.Matrix3
+    halfSizes: typings.yuka.srcMathVector3Mod.Vector3,
+    rotation: typings.yuka.srcMathMatrix3Mod.Matrix3
   ) = this()
   def this(
-    center: typings.yuka.vector3Mod.Vector3,
+    center: typings.yuka.srcMathVector3Mod.Vector3,
     halfSizes: Unit,
-    rotation: typings.yuka.matrix3Mod.Matrix3
+    rotation: typings.yuka.srcMathMatrix3Mod.Matrix3
   ) = this()
   def this(
-    center: typings.yuka.vector3Mod.Vector3,
-    halfSizes: typings.yuka.vector3Mod.Vector3,
-    rotation: typings.yuka.matrix3Mod.Matrix3
+    center: typings.yuka.srcMathVector3Mod.Vector3,
+    halfSizes: typings.yuka.srcMathVector3Mod.Vector3,
+    rotation: typings.yuka.srcMathMatrix3Mod.Matrix3
   ) = this()
 }

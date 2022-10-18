@@ -1,16 +1,16 @@
 package typings.twilioVideo
 
-import typings.twilioVideo.loglevelMod.Log.LogLevelDesc
-import typings.twilioVideo.trackMod.Track.Kind
-import typings.twilioVideo.trackMod.Track.Priority
-import typings.twilioVideo.typesMod.AudioCodec
-import typings.twilioVideo.typesMod.BandwidthProfileMode
-import typings.twilioVideo.typesMod.ClientTrackSwitchOffControl
-import typings.twilioVideo.typesMod.LogLevel
-import typings.twilioVideo.typesMod.NoiseCancellationVendor
-import typings.twilioVideo.typesMod.TrackSwitchOffMode
-import typings.twilioVideo.typesMod.VideoCodec
-import typings.twilioVideo.typesMod.VideoContentPreferencesMode
+import typings.twilioVideo.tsdefLoglevelMod.Log.LogLevelDesc
+import typings.twilioVideo.tsdefTrackMod.Track.Kind
+import typings.twilioVideo.tsdefTrackMod.Track.Priority
+import typings.twilioVideo.tsdefTypesMod.AudioCodec
+import typings.twilioVideo.tsdefTypesMod.BandwidthProfileMode
+import typings.twilioVideo.tsdefTypesMod.ClientTrackSwitchOffControl
+import typings.twilioVideo.tsdefTypesMod.LogLevel
+import typings.twilioVideo.tsdefTypesMod.NoiseCancellationVendor
+import typings.twilioVideo.tsdefTypesMod.TrackSwitchOffMode
+import typings.twilioVideo.tsdefTypesMod.VideoCodec
+import typings.twilioVideo.tsdefTypesMod.VideoContentPreferencesMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

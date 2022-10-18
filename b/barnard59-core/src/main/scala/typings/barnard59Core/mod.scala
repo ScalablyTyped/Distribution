@@ -3,9 +3,9 @@ package typings.barnard59Core
 import typings.barnard59Core.barnard59CoreStrings.debug
 import typings.barnard59Core.barnard59CoreStrings.error
 import typings.barnard59Core.barnard59CoreStrings.info
+import typings.barnard59Core.libFactoryPipelineMod.CreatePipeline
 import typings.barnard59Core.libPipelineMod.default
-import typings.barnard59Core.pipelineMod.CreatePipeline
-import typings.barnard59Core.runMod.Run
+import typings.barnard59Core.libRunMod.Run
 import typings.clownface.mod.GraphPointer
 import typings.rdfLoadersRegistry.mod.LoaderRegistry
 import typings.rdfjsTypes.dataModelMod.Quad

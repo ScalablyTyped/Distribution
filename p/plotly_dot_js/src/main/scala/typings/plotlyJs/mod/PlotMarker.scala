@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.anon.Colorsrc
-import typings.plotlyJs.anon.PartialColorBarBgcolor
+import typings.plotlyJs.anon.PartialColorBar
 import typings.plotlyJs.anon.PartialPadding
 import typings.plotlyJs.anon.PartialPattern
 import typings.plotlyJs.anon.PartialScatterMarkerLine
@@ -23,7 +23,7 @@ trait PlotMarker extends StObject {
   
   var color: js.UndefOr[Color | js.Array[Color]] = js.undefined
   
-  var colorbar: js.UndefOr[PartialColorBarBgcolor] = js.undefined
+  var colorbar: js.UndefOr[PartialColorBar] = js.undefined
   
   var colors: js.UndefOr[js.Array[Color]] = js.undefined
   
@@ -97,7 +97,7 @@ object PlotMarker {
       value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Color | Double | Null | String])*
     ): Self = StObject.set(x, "color", js.Array(value*))
     
-    inline def setColorbar(value: PartialColorBarBgcolor): Self = StObject.set(x, "colorbar", value.asInstanceOf[js.Any])
+    inline def setColorbar(value: PartialColorBar): Self = StObject.set(x, "colorbar", value.asInstanceOf[js.Any])
     
     inline def setColorbarUndefined: Self = StObject.set(x, "colorbar", js.undefined)
     

@@ -1,7 +1,7 @@
 package typings.reactNativeCommunityCliPlatformIos.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNativeCommunityCliPlatformIos.typesMod.Device
+import typings.reactNativeCommunityCliPlatformIos.buildTypesMod.Device
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

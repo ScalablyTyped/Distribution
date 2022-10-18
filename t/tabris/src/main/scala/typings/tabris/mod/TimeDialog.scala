@@ -1,7 +1,7 @@
 package typings.tabris.mod
 
-import typings.tabris.anon.Children
 import typings.tabris.anon.OmitTimeDialogset
+import typings.tabris.anon.`3`
 import typings.tabris.tabrisStrings.date
 import typings.tabris.tabrisStrings.set
 import org.scalablytyped.runtime.StObject
@@ -30,7 +30,7 @@ open class TimeDialog () extends Popup {
     * @constant
     */
   @JSName("jsxAttributes")
-  val jsxAttributes_TimeDialog: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
+  val jsxAttributes_TimeDialog: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
   
   /**
     * Fired when the time dialog was closed.

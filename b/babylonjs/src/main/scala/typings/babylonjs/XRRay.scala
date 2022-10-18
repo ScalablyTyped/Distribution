@@ -5,14 +5,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// Experimental/Draft features
+// AR Hit testing
 trait XRRay extends StObject {
   
-  var direction: DOMPointReadOnly
+  val direction: DOMPointReadOnly
   
-  var matrix: js.typedarray.Float32Array
+  val matrix: js.typedarray.Float32Array
   
-  var origin: DOMPointReadOnly
+  val origin: DOMPointReadOnly
 }
 object XRRay {
   

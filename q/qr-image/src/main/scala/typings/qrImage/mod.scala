@@ -1,7 +1,7 @@
 package typings.qrImage
 
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def image(text: String): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
-  inline def image(text: String, level: ecLevel): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
-  inline def image(text: String, options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def image(text: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def image(text: String, level: ecLevel): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def image(text: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
   inline def imageSync(text: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
   inline def imageSync(text: String, level: ecLevel): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Buffer]

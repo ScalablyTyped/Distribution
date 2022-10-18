@@ -9,19 +9,19 @@ trait FilesAPI extends StObject {
   
   def add(data: FileContent): js.Promise[js.Array[IPFSFile]] = js.native
   def add(data: FileContent, callback: Callback[js.Array[IPFSFile]]): Unit = js.native
-  def add(data: FileContent, options: js.Any): js.Promise[js.Array[IPFSFile]] = js.native
-  def add(data: FileContent, options: js.Any, callback: Callback[js.Array[IPFSFile]]): Unit = js.native
+  def add(data: FileContent, options: Any): js.Promise[js.Array[IPFSFile]] = js.native
+  def add(data: FileContent, options: Any, callback: Callback[js.Array[IPFSFile]]): Unit = js.native
   
   def cat(hash: Multihash): js.Promise[FileContent] = js.native
   def cat(hash: Multihash, callback: Callback[FileContent]): Unit = js.native
   
-  def createAddStream(callback: Callback[js.Any]): Unit = js.native
-  def createAddStream(options: js.Any, callback: Callback[js.Any]): Unit = js.native
+  def createAddStream(callback: Callback[Any]): Unit = js.native
+  def createAddStream(options: Any, callback: Callback[Any]): Unit = js.native
   
-  def createPullStream(options: js.Any): js.Any = js.native
+  def createPullStream(options: Any): Any = js.native
   
   def get(hash: Multihash): js.Promise[IPFSFile | js.Array[IPFSGetResult]] = js.native
   def get(hash: Multihash, callback: Callback[IPFSFile | js.Array[IPFSGetResult]]): Unit = js.native
   
-  def getPull(hash: Multihash, callback: Callback[js.Any]): Unit = js.native
+  def getPull(hash: Multihash, callback: Callback[Any]): Unit = js.native
 }

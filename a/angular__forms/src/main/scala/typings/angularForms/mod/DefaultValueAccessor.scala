@@ -110,7 +110,7 @@ object DefaultValueAccessor {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     DefaultValueAccessor, 
-    String, 
+    /* input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl] */ String, 
     scala.Nothing, 
     js.Object, 
     js.Object, 
@@ -121,7 +121,7 @@ object DefaultValueAccessor {
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       DefaultValueAccessor, 
-      String, 
+      /* input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl] */ String, 
       scala.Nothing, 
       js.Object, 
       js.Object, 

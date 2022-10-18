@@ -1,6 +1,6 @@
 package typings.awsCrt.mod
 
-import typings.awsCrt.cryptoMod.Hashable
+import typings.awsCrt.distCommonCryptoMod.Hashable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,22 +14,22 @@ object crypto {
   @JSImport("aws-crt", "crypto.Md5Hash")
   @js.native
   open class Md5Hash ()
-    extends typings.awsCrt.nativeCryptoMod.Md5Hash
+    extends typings.awsCrt.distNativeCryptoMod.Md5Hash
   
   @JSImport("aws-crt", "crypto.Sha1Hash")
   @js.native
   open class Sha1Hash ()
-    extends typings.awsCrt.nativeCryptoMod.Sha1Hash
+    extends typings.awsCrt.distNativeCryptoMod.Sha1Hash
   
   @JSImport("aws-crt", "crypto.Sha256Hash")
   @js.native
   open class Sha256Hash ()
-    extends typings.awsCrt.nativeCryptoMod.Sha256Hash
+    extends typings.awsCrt.distNativeCryptoMod.Sha256Hash
   
   @JSImport("aws-crt", "crypto.Sha256Hmac")
   @js.native
   open class Sha256Hmac protected ()
-    extends typings.awsCrt.nativeCryptoMod.Sha256Hmac {
+    extends typings.awsCrt.distNativeCryptoMod.Sha256Hmac {
     def this(secret: Hashable) = this()
   }
   

@@ -26,7 +26,7 @@ object NgControlStatusGroup {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     NgControlStatusGroup, 
-    String, 
+    /* [formGroupName],[formArrayName],[ngModelGroup],[formGroup],form:not([ngNoForm]),[ngForm] */ String, 
     scala.Nothing, 
     js.Object, 
     js.Object, 
@@ -37,7 +37,7 @@ object NgControlStatusGroup {
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       NgControlStatusGroup, 
-      String, 
+      /* [formGroupName],[formArrayName],[ngModelGroup],[formGroup],form:not([ngNoForm]),[ngForm] */ String, 
       scala.Nothing, 
       js.Object, 
       js.Object, 

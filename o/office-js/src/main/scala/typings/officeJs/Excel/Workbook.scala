@@ -168,6 +168,16 @@ trait Workbook
   def getIsActiveCollabSession(): ClientResult[Boolean] = js.native
   
   /**
+    * Returns a `LinkedEntityCellValue` based on the provided `LinkedEntityId`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    *
+    * @param linkedEntityCellValueId An identifier that specifies an individual `LinkedEntityCellValue`.
+    */
+  def getLinkedEntityCellValue(linkedEntityCellValueId: LinkedEntityId): ClientResult[LinkedEntityCellValue] = js.native
+  
+  /**
     * Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method will throw an error.
     *
     * @remarks

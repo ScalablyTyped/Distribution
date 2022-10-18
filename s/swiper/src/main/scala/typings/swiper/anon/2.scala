@@ -1,6 +1,6 @@
 package typings.swiper.anon
 
-import typings.swiper.a11yMod.A11yOptions
+import typings.swiper.swiperStrings.auto
 import typings.vueRuntimeCore.mod.PropConstructor
 import typings.vueRuntimeCore.mod.PropType
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ trait `2` extends StObject {
   
   var default: Unit
   
-  var `type`: PropType[A11yOptions | Boolean]
+  var `type`: PropType[js.UndefOr[Double | auto]]
 }
 object `2` {
   
-  inline def apply(default: Unit, `type`: PropType[A11yOptions | Boolean]): `2` = {
+  inline def apply(default: Unit, `type`: PropType[js.UndefOr[Double | auto]]): `2` = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`2`]
@@ -25,10 +25,10 @@ object `2` {
     
     inline def setDefault(value: Unit): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    inline def setType(value: PropType[A11yOptions | Boolean]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PropType[js.UndefOr[Double | auto]]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeFunction0(value: () => A11yOptions | Boolean): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+    inline def setTypeFunction0(value: () => js.UndefOr[Double | auto]): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
     
-    inline def setTypeVarargs(value: (PropConstructor[A11yOptions | Boolean])*): Self = StObject.set(x, "type", js.Array(value*))
+    inline def setTypeVarargs(value: (PropConstructor[js.UndefOr[Double | auto]])*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

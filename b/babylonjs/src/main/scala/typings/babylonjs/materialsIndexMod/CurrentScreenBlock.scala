@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "CurrentScreenBlock")
 @js.native
 open class CurrentScreenBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.CurrentScreenBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.CurrentScreenBlock {
   /**
     * Create a new CurrentScreenBlock
     * @param name defines the block name

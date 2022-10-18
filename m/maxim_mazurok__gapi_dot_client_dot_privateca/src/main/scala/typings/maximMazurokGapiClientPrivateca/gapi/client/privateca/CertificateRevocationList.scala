@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait CertificateRevocationList extends StObject {
   
   /** Optional. Labels with user-defined metadata. */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateRevocationList & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Output only. The resource name for this CertificateRevocationList in the format `projects/ *‍/locations/ *‍/caPools/ *certificateAuthorities/ *‍/ certificateRevocationLists/ *`. */
@@ -59,9 +56,7 @@ object CertificateRevocationList {
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateRevocationList & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

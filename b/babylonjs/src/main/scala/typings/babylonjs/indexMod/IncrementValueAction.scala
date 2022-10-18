@@ -22,6 +22,6 @@ open class IncrementValueAction protected ()
     target: Any,
     propertyPath: String,
     value: Any,
-    condition: typings.babylonjs.conditionMod.Condition
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
 }

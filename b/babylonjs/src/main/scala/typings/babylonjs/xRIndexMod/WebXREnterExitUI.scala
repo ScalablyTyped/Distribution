@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXREnterExitUI")
 @js.native
 open class WebXREnterExitUI protected ()
-  extends typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUI {
+  extends typings.babylonjs.xRWebXREnterExitUIMod.WebXREnterExitUI {
   /**
     * Construct a new EnterExit UI class
     *
@@ -18,7 +18,7 @@ open class WebXREnterExitUI protected ()
   def this(
     _scene: Scene,
     /** version of the options passed to this UI */
-  options: typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUIOptions
+  options: typings.babylonjs.xRWebXREnterExitUIMod.WebXREnterExitUIOptions
   ) = this()
 }
 /* static members */
@@ -37,7 +37,7 @@ object WebXREnterExitUI {
     */
   inline def CreateAsync(
     scene: Scene,
-    helper: typings.babylonjs.webXRExperienceHelperMod.WebXRExperienceHelper,
-    options: typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUIOptions
-  ): js.Promise[typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUI] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any], helper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUI]]
+    helper: typings.babylonjs.xRWebXRExperienceHelperMod.WebXRExperienceHelper,
+    options: typings.babylonjs.xRWebXREnterExitUIMod.WebXREnterExitUIOptions
+  ): js.Promise[typings.babylonjs.xRWebXREnterExitUIMod.WebXREnterExitUI] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any], helper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.xRWebXREnterExitUIMod.WebXREnterExitUI]]
 }

@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an activated event raised when the app is activated from a voice command. */
-@JSGlobal("Windows.UI.WebUI.WebUIVoiceCommandActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUIVoiceCommandActivatedEventArgs")
 @js.native
-abstract class WebUIVoiceCommandActivatedEventArgs ()
+open class WebUIVoiceCommandActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUIVoiceCommandActivatedEventArgs {
   

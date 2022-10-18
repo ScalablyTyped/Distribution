@@ -4,30 +4,31 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** ChangesReader options */
 trait ChangesReaderOptions extends StObject {
   
-  // number of changes per API call
+  /** number of changes per API call */
   var batchSize: js.UndefOr[Double] = js.undefined
   
-  // whether to get a faster changes feed by supplying 'seq_interval'  
+  /** whether to get a faster changes feed by supplying 'seq_interval'   */
   var fastChanges: js.UndefOr[Boolean] = js.undefined
   
-  // whether to return document bodies too
+  /** whether to return document bodies too */
   var includeDocs: js.UndefOr[Boolean] = js.undefined
   
-  // additional query string parameters
+  /** additional query string parameters */
   var qs: js.UndefOr[js.Object] = js.undefined
   
-  // a MangoSelector defining the slice of the changes feed to return
+  /** a MangoSelector defining the slice of the changes feed to return */
   var selector: js.UndefOr[MangoSelector] = js.undefined
   
-  // where to begin the changes feed: 0, now or a sequence token
+  /** where to begin the changes feed: 0, now or a sequence token */
   var since: js.UndefOr[String] = js.undefined
   
-  // number of milliseconds when the longpoll request will timeout
+  /** number of milliseconds when the longpoll request will timeout */
   var timeout: js.UndefOr[Double] = js.undefined
   
-  // whether to require a callback before performing the next request (get/start only)
+  /** whether to require a callback before performing the next request (get/start only) */
   @JSName("wait")
   var wait_FChangesReaderOptions: js.UndefOr[Boolean] = js.undefined
 }

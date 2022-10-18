@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a revision to a chat message. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageChange")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageChange")
 @js.native
-abstract class ChatMessageChange ()
+open class ChatMessageChange ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageChange {
   

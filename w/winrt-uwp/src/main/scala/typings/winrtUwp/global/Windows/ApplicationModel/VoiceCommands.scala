@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object VoiceCommands {
   
   /** The command given to Cortana, using either speech or text, and routed to a background app. */
-  @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommand")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommand")
   @js.native
-  abstract class VoiceCommand ()
+  open class VoiceCommand ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommand {
     
@@ -39,9 +39,9 @@ object VoiceCommands {
   }
   
   /** Contains event data for the VoiceCommandCompleted event. */
-  @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletedEventArgs")
   @js.native
-  abstract class VoiceCommandCompletedEventArgs ()
+  open class VoiceCommandCompletedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletedEventArgs {
     
@@ -76,9 +76,9 @@ object VoiceCommands {
   }
   
   /** The response to the question specified by the background app and shown on the Cortana confirmation screen. This screen is displayed when the background app service calls RequestConfirmationAsync . */
-  @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandConfirmationResult")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandConfirmationResult")
   @js.native
-  abstract class VoiceCommandConfirmationResult ()
+  open class VoiceCommandConfirmationResult ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandConfirmationResult {
     
@@ -156,9 +156,9 @@ object VoiceCommands {
   }
   
   /** Enables operations on a specific installed command set. */
-  @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinition")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinition")
   @js.native
-  abstract class VoiceCommandDefinition ()
+  open class VoiceCommandDefinition ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinition {
     
@@ -181,9 +181,9 @@ object VoiceCommands {
   }
   
   /** A static class that enables installing command sets from a Voice Command Definition (VCD) file, and getting installed command sets. */
-  @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinitionManager")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinitionManager")
   @js.native
-  abstract class VoiceCommandDefinitionManager ()
+  open class VoiceCommandDefinitionManager ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinitionManager
   object VoiceCommandDefinitionManager {
@@ -217,9 +217,9 @@ object VoiceCommands {
   }
   
   /** The result obtained from the disambiguation screen displayed on the Cortana canvas. */
-  @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandDisambiguationResult")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandDisambiguationResult")
   @js.native
-  abstract class VoiceCommandDisambiguationResult ()
+  open class VoiceCommandDisambiguationResult ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandDisambiguationResult {
     
@@ -229,9 +229,9 @@ object VoiceCommands {
   }
   
   /** The response from a background app service for progress, confirmation, disambiguation, completion, or failure screens displayed on the Cortana canvas. */
-  @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse")
   @js.native
-  abstract class VoiceCommandResponse ()
+  open class VoiceCommandResponse ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse {
     
@@ -310,9 +310,9 @@ object VoiceCommands {
   }
   
   /** The background app service connection to Cortana. */
-  @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection")
   @js.native
-  abstract class VoiceCommandServiceConnection ()
+  open class VoiceCommandServiceConnection ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection
   object VoiceCommandServiceConnection {

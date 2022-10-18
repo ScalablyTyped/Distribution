@@ -6,7 +6,6 @@ import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.notifications.NotificationOptions
 import typings.chromeApps.chromeAppsBooleans.`true`
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,10 +86,7 @@ trait Typeofnotifications extends StObject {
       /* level */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof PermissionLevel */ js.Any, 
         /* keyof typeof PermissionLevel */ String, 
-        Exclude[
-          /* keyof typeof PermissionLevel */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof PermissionLevel[keyof typeof PermissionLevel] */ js.Any
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof PermissionLevel extends keyof typeof PermissionLevel ? std.Exclude<keyof typeof PermissionLevel, typeof PermissionLevel[keyof typeof PermissionLevel]> : never */ js.Any
       ], 
       Unit
     ]

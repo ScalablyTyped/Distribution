@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "io-ts" : "2.2.18"
+      "io-ts" : "2.2.19"
     }
   ],
   "test-dependencies" : [
     {
-      "io-ts" : "2.2.18"
+      "io-ts" : "2.2.19"
     }
   ],
   "compile-devDependencies" : [

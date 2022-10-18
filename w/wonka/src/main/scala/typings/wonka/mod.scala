@@ -1,20 +1,19 @@
 package typings.wonka
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.AsyncIterable
 import typings.std.Event
 import typings.std.HTMLElement
-import typings.wonka.callbagMod.Callbag
-import typings.wonka.combineMod.TypeOfSourceArray
-import typings.wonka.observableMod.Observable
-import typings.wonka.pipeMod.UnaryFn
-import typings.wonka.typesMod.Observer
-import typings.wonka.typesMod.Operator
-import typings.wonka.typesMod.Source
-import typings.wonka.typesMod.Subject
-import typings.wonka.typesMod.Subscription
-import typings.wonka.typesMod.TeardownFn
+import typings.wonka.distTypesCallbagMod.Callbag
+import typings.wonka.distTypesCombineMod.TypeOfSourceArray
+import typings.wonka.distTypesObservableMod.Observable
+import typings.wonka.distTypesPipeMod.UnaryFn
+import typings.wonka.distTypesTypesMod.Observer
+import typings.wonka.distTypesTypesMod.Operator
+import typings.wonka.distTypesTypesMod.Source
+import typings.wonka.distTypesTypesMod.Subject
+import typings.wonka.distTypesTypesMod.Subscription
+import typings.wonka.distTypesTypesMod.TeardownFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,7 +93,7 @@ object mod {
   
   inline def onStart[T](callback: js.Function0[Unit]): Operator[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("onStart")(callback.asInstanceOf[js.Any]).asInstanceOf[Operator[T, T]]
   
-  inline def pipe[T, R](source: Source[T], consumer: UnaryFn[Source[T], R]): R = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(source.asInstanceOf[js.Any], consumer.asInstanceOf[js.Any])).asInstanceOf[R]
+  inline def pipe[T, A](source: Source[T], op1: UnaryFn[Source[T], Source[A]]): Source[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(source.asInstanceOf[js.Any], op1.asInstanceOf[js.Any])).asInstanceOf[Source[A]]
   inline def pipe[T, A, R](source: Source[T], op1: UnaryFn[Source[T], Source[A]], consumer: UnaryFn[Source[A], R]): R = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(source.asInstanceOf[js.Any], op1.asInstanceOf[js.Any], consumer.asInstanceOf[js.Any])).asInstanceOf[R]
   inline def pipe[T, A, B, C](
     source: Source[T],
@@ -219,7 +218,7 @@ object mod {
   
   inline def pipe_TAB_Source[T, A, B](source: Source[T], op1: UnaryFn[Source[T], Source[A]], op2: UnaryFn[Source[A], Source[B]]): Source[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(source.asInstanceOf[js.Any], op1.asInstanceOf[js.Any], op2.asInstanceOf[js.Any])).asInstanceOf[Source[B]]
   
-  inline def pipe_TA_Source[T, A](source: Source[T], op1: UnaryFn[Source[T], Source[A]]): Source[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(source.asInstanceOf[js.Any], op1.asInstanceOf[js.Any])).asInstanceOf[Source[A]]
+  inline def pipe_TR_R[T, R](source: Source[T], consumer: UnaryFn[Source[T], R]): R = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(source.asInstanceOf[js.Any], consumer.asInstanceOf[js.Any])).asInstanceOf[R]
   
   inline def publish[T](source: Source[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("publish")(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -262,13 +261,9 @@ object mod {
   inline def toPromise[T](source: Source[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPromise")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
   inline def zip[Sources /* <: StringDictionary[Source[Any]] */](sources: Sources): Source[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ Property in keyof Sources ]: wonka.wonka/dist/types/types.TypeOfSource<Sources[Property]>}
-    */ typings.wonka.wonkaStrings.zip & TopLevel[Sources]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ Property in keyof Sources ]: wonka.wonka/dist/types/types.TypeOfSource<Sources[Property]>} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(sources.asInstanceOf[js.Any]).asInstanceOf[Source[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ Property in keyof Sources ]: wonka.wonka/dist/types/types.TypeOfSource<Sources[Property]>}
-    */ typings.wonka.wonkaStrings.zip & TopLevel[Sources]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ Property in keyof Sources ]: wonka.wonka/dist/types/types.TypeOfSource<Sources[Property]>} */ js.Any
   ]]
   inline def zip[Sources /* <: Array[Source[Any]] */](
     sources: /* import warning: importer.ImportType#apply c repeated non-array type: Sources */ js.Array[Sources]

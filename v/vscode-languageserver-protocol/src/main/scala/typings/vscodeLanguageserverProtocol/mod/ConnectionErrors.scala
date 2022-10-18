@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ConnectionErrors extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.vscodeJsonrpc.connectionMod.ConnectionErrors & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.vscodeJsonrpc.libCommonConnectionMod.ConnectionErrors & Double] = js.native
   
-  /* 3 */ val AlreadyListening: typings.vscodeJsonrpc.connectionMod.ConnectionErrors.AlreadyListening & Double = js.native
+  /* 3 */ val AlreadyListening: typings.vscodeJsonrpc.libCommonConnectionMod.ConnectionErrors.AlreadyListening & Double = js.native
   
-  /* 1 */ val Closed: typings.vscodeJsonrpc.connectionMod.ConnectionErrors.Closed & Double = js.native
+  /* 1 */ val Closed: typings.vscodeJsonrpc.libCommonConnectionMod.ConnectionErrors.Closed & Double = js.native
   
-  /* 2 */ val Disposed: typings.vscodeJsonrpc.connectionMod.ConnectionErrors.Disposed & Double = js.native
+  /* 2 */ val Disposed: typings.vscodeJsonrpc.libCommonConnectionMod.ConnectionErrors.Disposed & Double = js.native
 }

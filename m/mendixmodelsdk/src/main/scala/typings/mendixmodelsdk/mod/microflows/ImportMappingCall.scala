@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.microflows
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "microflows.ImportMappingCall")
 @js.native
 open class ImportMappingCall protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.microflows.ImportMappingCall {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.microflows.ImportMappingCall {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object ImportMappingCall {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.ImportMappingCall = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ImportMappingCall]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ImportMappingCall = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ImportMappingCall]
   
   /**
     * Creates and returns a new ImportMappingCall instance in the SDK and on the server.
@@ -44,7 +44,7 @@ object ImportMappingCall {
     * of the parent ResultHandling element passed as argument.
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling): typings.mendixmodelsdk.microflowsMod.microflows.ImportMappingCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ImportMappingCall]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ImportMappingCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ImportMappingCall]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.ImportMappingCall.structureTypeName")

@@ -1,9 +1,11 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
 import typings.grommet.utilsMod.ColorType
+import typings.grommet.utilsMod.GapType
+import typings.grommet.utilsMod.PadType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,21 +19,23 @@ trait Check extends StObject {
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var container: js.UndefOr[`16`] = js.undefined
-  
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var font: js.UndefOr[`24`] = js.undefined
+  var gap: js.UndefOr[GapType] = js.undefined
   
-  var gap: js.UndefOr[String] = js.undefined
-  
-  var hover: js.UndefOr[`23`] = js.undefined
+  var hover: js.UndefOr[BackgroundBorder] = js.undefined
   
   var icon: js.UndefOr[ExtendSize] = js.undefined
   
-  var icons: js.UndefOr[Circle] = js.undefined
+  var icons: js.UndefOr[Checked] = js.undefined
+  
+  var label: js.UndefOr[`14`] = js.undefined
+  
+  var pad: js.UndefOr[PadType] = js.undefined
   
   var size: js.UndefOr[String] = js.undefined
+  
+  var toggle: js.UndefOr[Knob] = js.undefined
 }
 object Check {
   
@@ -54,25 +58,17 @@ object Check {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setContainer(value: `16`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
-    
-    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
-    
     inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, Any]] => ExtendValue[Record[String, Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setFont(value: `24`): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
-    
-    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
-    
-    inline def setGap(value: String): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setGap(value: GapType): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    inline def setHover(value: `23`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: BackgroundBorder): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
@@ -80,12 +76,24 @@ object Check {
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    inline def setIcons(value: Circle): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Checked): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    
+    inline def setLabel(value: `14`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setPad(value: PadType): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    
+    inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
     
     inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setToggle(value: Knob): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+    
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
   }
 }

@@ -6,17 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `1` extends StObject {
   
-  var harvest: typings.screeps.screepsInts.`7`
+  var filter: js.UndefOr[Any | String] = js.undefined
 }
 object `1` {
   
   inline def apply(): `1` = {
-    val __obj = js.Dynamic.literal(harvest = 7)
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`1`]
   }
   
   extension [Self <: `1`](x: Self) {
     
-    inline def setHarvest(value: typings.screeps.screepsInts.`7`): Self = StObject.set(x, "harvest", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Any | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

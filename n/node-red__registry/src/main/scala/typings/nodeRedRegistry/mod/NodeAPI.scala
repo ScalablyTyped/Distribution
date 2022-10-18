@@ -5,9 +5,9 @@ import typings.express.mod.Express
 import typings.expressServeStaticCore.mod.Application
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpsMod.Server
-import typings.node.nodeHttpMod.IncomingMessage
-import typings.node.nodeHttpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonhttpMod.IncomingMessage
+import typings.node.nodeColonhttpMod.ServerResponse
+import typings.node.nodeColonnetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -3,9 +3,6 @@ package typings.chromeApps.chrome
 import typings.chromeApps.anon.ECDSASIGN
 import typings.chromeApps.chromeAppsStrings.ECDSA_SIGN
 import typings.chromeApps.chromeAppsStrings.RSA_SIGN
-import typings.chromeApps.chromeAppsStrings.ecdsaSign
-import typings.chromeApps.chromeAppsStrings.rsaSign
-import typings.std.Exclude
 import typings.std.KeyAlgorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -51,7 +48,7 @@ object platformKeys {
         ToStringLiteral[
           ECDSASIGN, 
           /* keyof chrome-apps.anon.ECDSASIGN */ RSA_SIGN | ECDSA_SIGN, 
-          Exclude[/* keyof chrome-apps.anon.ECDSASIGN */ RSA_SIGN | ECDSA_SIGN, rsaSign | ecdsaSign]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  RSA_SIGN :'rsaSign',   ECDSA_SIGN :'ecdsaSign'} extends keyof {  RSA_SIGN :'rsaSign',   ECDSA_SIGN :'ecdsaSign'} ? std.Exclude<keyof {  RSA_SIGN :'rsaSign',   ECDSA_SIGN :'ecdsaSign'}, 'rsaSign' | 'ecdsaSign'> : never */ js.Any
         ]
       ]
   }
@@ -63,7 +60,7 @@ object platformKeys {
           ToStringLiteral[
             ECDSASIGN, 
             /* keyof chrome-apps.anon.ECDSASIGN */ RSA_SIGN | ECDSA_SIGN, 
-            Exclude[/* keyof chrome-apps.anon.ECDSASIGN */ RSA_SIGN | ECDSA_SIGN, rsaSign | ecdsaSign]
+            /* import warning: importer.ImportType#apply Failed type conversion: keyof {  RSA_SIGN :'rsaSign',   ECDSA_SIGN :'ecdsaSign'} extends keyof {  RSA_SIGN :'rsaSign',   ECDSA_SIGN :'ecdsaSign'} ? std.Exclude<keyof {  RSA_SIGN :'rsaSign',   ECDSA_SIGN :'ecdsaSign'}, 'rsaSign' | 'ecdsaSign'> : never */ js.Any
           ]
         ]
     ): ClientCertificateRequest = {
@@ -82,7 +79,7 @@ object platformKeys {
               ToStringLiteral[
                 ECDSASIGN, 
                 /* keyof chrome-apps.anon.ECDSASIGN */ RSA_SIGN | ECDSA_SIGN, 
-                Exclude[/* keyof chrome-apps.anon.ECDSASIGN */ RSA_SIGN | ECDSA_SIGN, rsaSign | ecdsaSign]
+                /* import warning: importer.ImportType#apply Failed type conversion: keyof {  RSA_SIGN :'rsaSign',   ECDSA_SIGN :'ecdsaSign'} extends keyof {  RSA_SIGN :'rsaSign',   ECDSA_SIGN :'ecdsaSign'} ? std.Exclude<keyof {  RSA_SIGN :'rsaSign',   ECDSA_SIGN :'ecdsaSign'}, 'rsaSign' | 'ecdsaSign'> : never */ js.Any
               ]
             ]
       ): Self = StObject.set(x, "certificateTypes", value.asInstanceOf[js.Any])
@@ -91,7 +88,7 @@ object platformKeys {
         value: (ToStringLiteral[
               ECDSASIGN, 
               /* keyof chrome-apps.anon.ECDSASIGN */ RSA_SIGN | ECDSA_SIGN, 
-              Exclude[/* keyof chrome-apps.anon.ECDSASIGN */ RSA_SIGN | ECDSA_SIGN, rsaSign | ecdsaSign]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  RSA_SIGN :'rsaSign',   ECDSA_SIGN :'ecdsaSign'} extends keyof {  RSA_SIGN :'rsaSign',   ECDSA_SIGN :'ecdsaSign'} ? std.Exclude<keyof {  RSA_SIGN :'rsaSign',   ECDSA_SIGN :'ecdsaSign'}, 'rsaSign' | 'ecdsaSign'> : never */ js.Any
             ])*
       ): Self = StObject.set(x, "certificateTypes", js.Array(value*))
     }

@@ -1,13 +1,13 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.keysMod.Keys
-import typings.tsToolbelt.objectExcludeKeysMod.ExcludeMatch
+import typings.tsToolbelt.outAnyKeysMod.Keys
+import typings.tsToolbelt.outObjectExcludeKeysMod.ExcludeMatch
+import typings.tsToolbelt.outUnionExcludeMod.Exclude
 import typings.tsToolbelt.tsToolbeltStrings.`Lessthansign-contains`
 import typings.tsToolbelt.tsToolbeltStrings.`Lessthansign-extends`
 import typings.tsToolbelt.tsToolbeltStrings.`contains-Greaterthansign`
 import typings.tsToolbelt.tsToolbeltStrings.`extends-Greaterthansign`
 import typings.tsToolbelt.tsToolbeltStrings.equals
-import typings.tsToolbelt.unionExcludeMod.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

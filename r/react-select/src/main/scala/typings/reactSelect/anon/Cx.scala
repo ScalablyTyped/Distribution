@@ -1,18 +1,18 @@
 package typings.reactSelect.anon
 
 import typings.react.mod.ReactNode
-import typings.reactSelect.menuMod.ChildrenProps
-import typings.reactSelect.selectMod.Props
-import typings.reactSelect.typesMod.CX
-import typings.reactSelect.typesMod.CoercedMenuPlacement
-import typings.reactSelect.typesMod.GetStyles
-import typings.reactSelect.typesMod.GroupBase
-import typings.reactSelect.typesMod.MenuPlacement
-import typings.reactSelect.typesMod.MenuPosition
-import typings.reactSelect.typesMod.OnChangeValue
-import typings.reactSelect.typesMod.OptionsOrGroups
-import typings.reactSelect.typesMod.SetValueAction
-import typings.reactSelect.typesMod.Theme
+import typings.reactSelect.distDeclarationsSrcComponentsMenuMod.ChildrenProps
+import typings.reactSelect.distDeclarationsSrcSelectMod.Props
+import typings.reactSelect.distDeclarationsSrcTypesMod.CX
+import typings.reactSelect.distDeclarationsSrcTypesMod.CoercedMenuPlacement
+import typings.reactSelect.distDeclarationsSrcTypesMod.GetStyles
+import typings.reactSelect.distDeclarationsSrcTypesMod.GroupBase
+import typings.reactSelect.distDeclarationsSrcTypesMod.MenuPlacement
+import typings.reactSelect.distDeclarationsSrcTypesMod.MenuPosition
+import typings.reactSelect.distDeclarationsSrcTypesMod.OnChangeValue
+import typings.reactSelect.distDeclarationsSrcTypesMod.OptionsOrGroups
+import typings.reactSelect.distDeclarationsSrcTypesMod.SetValueAction
+import typings.reactSelect.distDeclarationsSrcTypesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +28,7 @@ trait Cx[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] ext
   
   var getStyles: GetStyles[Option, IsMulti, Group] = js.native
   
-  def getValue(): typings.reactSelect.typesMod.Options[Option] = js.native
+  def getValue(): typings.reactSelect.distDeclarationsSrcTypesMod.Options[Option] = js.native
   
   var hasValue: Boolean = js.native
   

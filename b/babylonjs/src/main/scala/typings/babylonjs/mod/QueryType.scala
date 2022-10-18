@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object QueryType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.QueryType & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.QueryType & String] = js.native
   
-  /* "occlusion" */ val Occlusion: typings.babylonjs.webgpuConstantsMod.QueryType.Occlusion & String = js.native
+  /* "occlusion" */ val Occlusion: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.QueryType.Occlusion & String = js.native
   
-  /* "timestamp" */ val Timestamp: typings.babylonjs.webgpuConstantsMod.QueryType.Timestamp & String = js.native
+  /* "timestamp" */ val Timestamp: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.QueryType.Timestamp & String = js.native
 }

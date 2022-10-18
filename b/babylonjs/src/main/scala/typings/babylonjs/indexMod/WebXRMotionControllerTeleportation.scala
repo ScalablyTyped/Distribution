@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.webXRControllerTeleportationMod.IWebXRTeleportationOptions
+import typings.babylonjs.xRFeaturesWebXRControllerTeleportationMod.IWebXRTeleportationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ open class WebXRMotionControllerTeleportation protected ()
     * @param _options configuration object for this feature
     */
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     _options: IWebXRTeleportationOptions
   ) = this()
 }

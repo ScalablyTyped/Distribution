@@ -1,11 +1,11 @@
 package typings.floatingUiDom.anon
 
-import typings.floatingUiCore.typesMod.ElementRects
-import typings.floatingUiCore.typesMod.MiddlewareData
-import typings.floatingUiCore.typesMod.Placement
-import typings.floatingUiCore.typesMod.Platform
-import typings.floatingUiCore.typesMod.Strategy
-import typings.floatingUiDom.typesMod.Elements
+import typings.floatingUiCore.srcTypesMod.ElementRects
+import typings.floatingUiCore.srcTypesMod.MiddlewareData
+import typings.floatingUiCore.srcTypesMod.Placement
+import typings.floatingUiCore.srcTypesMod.Platform
+import typings.floatingUiCore.srcTypesMod.Strategy
+import typings.floatingUiDom.srcTypesMod.Elements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

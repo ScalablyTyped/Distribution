@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.anon
 
-import typings.matrixAppserviceBridge.encryptionMod.ClientEncryptionStore
+import typings.matrixAppserviceBridge.libComponentsEncryptionMod.ClientEncryptionStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

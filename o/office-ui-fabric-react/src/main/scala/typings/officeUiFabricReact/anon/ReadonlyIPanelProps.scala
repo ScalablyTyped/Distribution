@@ -1,8 +1,17 @@
 package typings.officeUiFabricReact.anon
 
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.focusTrapZoneTypesMod.IFocusTrapZoneProps
-import typings.officeUiFabricReact.layerTypesMod.ILayerProps
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsFocusTrapZoneFocusTrapZoneDottypesMod.IFocusTrapZoneProps
+import typings.officeUiFabricReact.libComponentsLayerLayerDottypesMod.ILayerProps
+import typings.officeUiFabricReact.libComponentsOverlayOverlayDottypesMod.IOverlayProps
+import typings.officeUiFabricReact.libComponentsPanelPanelDotbaseMod.PanelBase
+import typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.IPanel
+import typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.IPanelHeaderRenderer
+import typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.IPanelProps
+import typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.IPanelStyleProps
+import typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.IPanelStyles
+import typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.PanelType
+import typings.officeUiFabricReact.libComponentsPopupPopupDottypesMod.IPopupProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions removals`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions text`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`inline`
@@ -53,15 +62,6 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.tree
 import typings.officeUiFabricReact.officeUiFabricReactStrings.url
 import typings.officeUiFabricReact.officeUiFabricReactStrings.vertical
 import typings.officeUiFabricReact.officeUiFabricReactStrings.yes
-import typings.officeUiFabricReact.overlayTypesMod.IOverlayProps
-import typings.officeUiFabricReact.panelBaseMod.PanelBase
-import typings.officeUiFabricReact.panelTypesMod.IPanel
-import typings.officeUiFabricReact.panelTypesMod.IPanelHeaderRenderer
-import typings.officeUiFabricReact.panelTypesMod.IPanelProps
-import typings.officeUiFabricReact.panelTypesMod.IPanelStyleProps
-import typings.officeUiFabricReact.panelTypesMod.IPanelStyles
-import typings.officeUiFabricReact.panelTypesMod.PanelType
-import typings.officeUiFabricReact.popupTypesMod.IPopupProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -102,10 +102,10 @@ import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
-import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricUtilities.createRefMod.IRefObject
-import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
+import typings.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricUtilities.libCreateRefMod.IRefObject
+import typings.uifabricUtilities.libIrenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

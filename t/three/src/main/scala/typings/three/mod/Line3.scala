@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Line3")
 @js.native
 open class Line3 ()
-  extends typings.three.threeMod.Line3 {
-  def this(start: typings.three.vector3Mod.Vector3) = this()
-  def this(start: Unit, end: typings.three.vector3Mod.Vector3) = this()
-  def this(start: typings.three.vector3Mod.Vector3, end: typings.three.vector3Mod.Vector3) = this()
+  extends typings.three.srcThreeMod.Line3 {
+  def this(start: typings.three.srcMathVector3Mod.Vector3) = this()
+  def this(start: Unit, end: typings.three.srcMathVector3Mod.Vector3) = this()
+  def this(start: typings.three.srcMathVector3Mod.Vector3, end: typings.three.srcMathVector3Mod.Vector3) = this()
 }

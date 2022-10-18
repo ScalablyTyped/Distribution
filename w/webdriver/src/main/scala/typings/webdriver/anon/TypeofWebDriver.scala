@@ -1,9 +1,9 @@
 package typings.webdriver.anon
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.webdriver.buildTypesMod.AttachOptions
+import typings.webdriver.buildTypesMod.Client
 import typings.webdriver.mod.WebDriver
-import typings.webdriver.typesMod.AttachOptions
-import typings.webdriver.typesMod.Client
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,34 +75,37 @@ trait TypeofWebDriver
     commandWrapper: js.Function1[/* repeated */ Any, Any]
   ): Client = js.native
   
-  def newSession(options: typings.wdioTypes.optionsMod.WebDriver): js.Promise[Client] = js.native
-  def newSession(options: typings.wdioTypes.optionsMod.WebDriver, modifier: js.Function1[/* repeated */ Any, Any]): js.Promise[Client] = js.native
+  def newSession(options: typings.wdioTypes.buildOptionsMod.WebDriver): js.Promise[Client] = js.native
   def newSession(
-    options: typings.wdioTypes.optionsMod.WebDriver,
+    options: typings.wdioTypes.buildOptionsMod.WebDriver,
+    modifier: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Client] = js.native
+  def newSession(
+    options: typings.wdioTypes.buildOptionsMod.WebDriver,
     modifier: js.Function1[/* repeated */ Any, Any],
     userPrototype: js.Object
   ): js.Promise[Client] = js.native
   def newSession(
-    options: typings.wdioTypes.optionsMod.WebDriver,
+    options: typings.wdioTypes.buildOptionsMod.WebDriver,
     modifier: js.Function1[/* repeated */ Any, Any],
     userPrototype: js.Object,
     customCommandWrapper: js.Function1[/* repeated */ Any, Any]
   ): js.Promise[Client] = js.native
   def newSession(
-    options: typings.wdioTypes.optionsMod.WebDriver,
+    options: typings.wdioTypes.buildOptionsMod.WebDriver,
     modifier: js.Function1[/* repeated */ Any, Any],
     userPrototype: Unit,
     customCommandWrapper: js.Function1[/* repeated */ Any, Any]
   ): js.Promise[Client] = js.native
-  def newSession(options: typings.wdioTypes.optionsMod.WebDriver, modifier: Unit, userPrototype: js.Object): js.Promise[Client] = js.native
+  def newSession(options: typings.wdioTypes.buildOptionsMod.WebDriver, modifier: Unit, userPrototype: js.Object): js.Promise[Client] = js.native
   def newSession(
-    options: typings.wdioTypes.optionsMod.WebDriver,
+    options: typings.wdioTypes.buildOptionsMod.WebDriver,
     modifier: Unit,
     userPrototype: js.Object,
     customCommandWrapper: js.Function1[/* repeated */ Any, Any]
   ): js.Promise[Client] = js.native
   def newSession(
-    options: typings.wdioTypes.optionsMod.WebDriver,
+    options: typings.wdioTypes.buildOptionsMod.WebDriver,
     modifier: Unit,
     userPrototype: Unit,
     customCommandWrapper: js.Function1[/* repeated */ Any, Any]

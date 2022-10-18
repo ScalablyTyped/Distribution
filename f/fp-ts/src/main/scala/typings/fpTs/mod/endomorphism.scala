@@ -1,8 +1,8 @@
 package typings.fpTs.mod
 
-import typings.fpTs.endomorphismMod.Endomorphism
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.semigroupMod.Semigroup
+import typings.fpTs.libEndomorphismMod.Endomorphism
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libSemigroupMod.Semigroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +21,7 @@ object endomorphism {
   
   inline def getSemigroup[A](): Semigroup[Endomorphism[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSemigroup")().asInstanceOf[Semigroup[Endomorphism[A]]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native

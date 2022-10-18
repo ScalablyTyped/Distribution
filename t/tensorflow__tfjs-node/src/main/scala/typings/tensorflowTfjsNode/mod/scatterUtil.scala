@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsNode.mod
 
+import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distOpsScatterNdUtilMod.ScatterShapeInfo
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
-import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
-import typings.tensorflowTfjsCore.scatterNdUtilMod.ScatterShapeInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

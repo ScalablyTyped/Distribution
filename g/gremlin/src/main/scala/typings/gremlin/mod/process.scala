@@ -10,33 +10,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object process {
   
-  @JSImport("gremlin", "process")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("gremlin", "process.AnonymousTraversalSource")
-  @js.native
-  open class AnonymousTraversalSource[S /* <: GraphTraversalSource[GraphTraversal] */] () extends StObject {
+  trait AnonymousTraversalSource[S /* <: GraphTraversalSource[GraphTraversal] */] extends StObject {
     
-    def withGraph(graph: Graph): S = js.native
+    def withGraph(graph: Graph): S
     
-    def withRemote(remoteConnection: RemoteConnection): S = js.native
+    def withRemote(remoteConnection: RemoteConnection): S
   }
   object AnonymousTraversalSource {
     
-    @JSImport("gremlin", "process.AnonymousTraversalSource")
-    @js.native
-    val ^ : js.Any = js.native
+    inline def apply[S /* <: GraphTraversalSource[GraphTraversal] */](withGraph: Graph => S, withRemote: RemoteConnection => S): AnonymousTraversalSource[S] = {
+      val __obj = js.Dynamic.literal(withGraph = js.Any.fromFunction1(withGraph), withRemote = js.Any.fromFunction1(withRemote))
+      __obj.asInstanceOf[AnonymousTraversalSource[S]]
+    }
     
-    /* static member */
-    inline def traversal[S /* <: GraphTraversalSource[GraphTraversal] */](): AnonymousTraversalSource[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")().asInstanceOf[AnonymousTraversalSource[S]]
-    inline def traversal[S /* <: GraphTraversalSource[GraphTraversal] */](traversalSourceClass: Newable[S]): AnonymousTraversalSource[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")(traversalSourceClass.asInstanceOf[js.Any]).asInstanceOf[AnonymousTraversalSource[S]]
+    extension [Self <: AnonymousTraversalSource[?], S /* <: GraphTraversalSource[GraphTraversal] */](x: Self & AnonymousTraversalSource[S]) {
+      
+      inline def setWithGraph(value: Graph => S): Self = StObject.set(x, "withGraph", js.Any.fromFunction1(value))
+      
+      inline def setWithRemote(value: RemoteConnection => S): Self = StObject.set(x, "withRemote", js.Any.fromFunction1(value))
+    }
   }
   
-  @JSImport("gremlin", "process.Bytecode")
   @js.native
-  open class Bytecode () extends StObject {
-    def this(toClone: Bytecode) = this()
+  trait Bytecode extends StObject {
     
     def addSource(name: String): Bytecode = js.native
     def addSource(name: String, values: js.Array[Any]): Bytecode = js.native
@@ -45,16 +41,12 @@ object process {
     def addStep(name: String, values: js.Array[Any]): Bytecode = js.native
   }
   
-  @JSImport("gremlin", "process.EnumValue")
-  @js.native
-  open class EnumValue protected () extends StObject {
-    def this(typeName: String, elementName: String) = this()
-  }
+  trait EnumValue extends StObject
   
-  @JSImport("gremlin", "process.GraphTraversal")
   @js.native
-  open class GraphTraversal protected () extends Traversal_ {
-    def this(graph: Nullable[Graph], traversalStrategies: Nullable[TraversalStrategies], bytecode: Bytecode) = this()
+  trait GraphTraversal
+    extends StObject
+       with Traversal {
     
     def V(args: Any*): this.type = js.native
     
@@ -273,521 +265,106 @@ object process {
     def write(args: Any*): this.type = js.native
   }
   
-  @JSImport("gremlin", "process.GraphTraversalSource")
-  @js.native
-  open class GraphTraversalSource[T /* <: GraphTraversal */] protected () extends StObject {
-    def this(graph: Nullable[Graph], traversalStrategies: Nullable[TraversalStrategies]) = this()
-    def this(graph: Nullable[Graph], traversalStrategies: Nullable[TraversalStrategies], bytecode: Bytecode) = this()
-    def this(
-      graph: Nullable[Graph],
-      traversalStrategies: Nullable[TraversalStrategies],
-      bytecode: Unit,
-      graphTraversalSourceClass: Newable[GraphTraversalSource[GraphTraversal]]
-    ) = this()
-    def this(
-      graph: Nullable[Graph],
-      traversalStrategies: Nullable[TraversalStrategies],
-      bytecode: Bytecode,
-      graphTraversalSourceClass: Newable[GraphTraversalSource[GraphTraversal]]
-    ) = this()
-    def this(
-      graph: Nullable[Graph],
-      traversalStrategies: Nullable[TraversalStrategies],
-      bytecode: Unit,
-      graphTraversalSourceClass: Unit,
-      graphTraversalClass: Newable[T]
-    ) = this()
-    def this(
-      graph: Nullable[Graph],
-      traversalStrategies: Nullable[TraversalStrategies],
-      bytecode: Unit,
-      graphTraversalSourceClass: Newable[GraphTraversalSource[GraphTraversal]],
-      graphTraversalClass: Newable[T]
-    ) = this()
-    def this(
-      graph: Nullable[Graph],
-      traversalStrategies: Nullable[TraversalStrategies],
-      bytecode: Bytecode,
-      graphTraversalSourceClass: Unit,
-      graphTraversalClass: Newable[T]
-    ) = this()
-    def this(
-      graph: Nullable[Graph],
-      traversalStrategies: Nullable[TraversalStrategies],
-      bytecode: Bytecode,
-      graphTraversalSourceClass: Newable[GraphTraversalSource[GraphTraversal]],
-      graphTraversalClass: Newable[T]
-    ) = this()
+  trait GraphTraversalSource[T /* <: GraphTraversal */] extends StObject {
     
-    def E(args: Any*): T = js.native
+    def E(args: Any*): T
     
-    def V(args: Any*): T = js.native
+    def V(args: Any*): T
     
-    def addE(args: Any*): T = js.native
+    def addE(args: Any*): T
     
-    def addV(args: Any*): T = js.native
+    def addV(args: Any*): T
     
-    def inject(args: Any*): T = js.native
+    def inject(args: Any*): T
     
-    def io(args: Any*): T = js.native
+    def io(args: Any*): T
     
-    def mergeE(args: Any*): T = js.native
+    def mergeE(args: Any*): T
     
-    def mergeV(args: Any*): T = js.native
+    def mergeV(args: Any*): T
     
-    def tx(): Transaction[this.type] = js.native
+    def tx(): Transaction[this.type]
     
-    def withBulk(args: Any*): this.type = js.native
+    def withBulk(args: Any*): this.type
     
-    def withPath(args: Any*): this.type = js.native
+    def withPath(args: Any*): this.type
     
-    def withRemote(remoteConnection: RemoteConnection): this.type = js.native
+    def withRemote(remoteConnection: RemoteConnection): this.type
     
-    def withSack(args: Any*): this.type = js.native
+    def withSack(args: Any*): this.type
     
-    def withSideEffect(args: Any*): this.type = js.native
+    def withSideEffect(args: Any*): this.type
     
-    def withStrategies(args: Any*): this.type = js.native
+    def withStrategies(args: Any*): this.type
     
-    def with_(args: Any*): this.type = js.native
+    def with_(args: Any*): this.type
     
-    def withoutStrategies(args: Any*): this.type = js.native
+    def withoutStrategies(args: Any*): this.type
+  }
+  object GraphTraversalSource {
+    
+    inline def apply[T /* <: GraphTraversal */](
+      E: /* repeated */ Any => T,
+      V: /* repeated */ Any => T,
+      addE: /* repeated */ Any => T,
+      addV: /* repeated */ Any => T,
+      inject: /* repeated */ Any => T,
+      io: /* repeated */ Any => T,
+      mergeE: /* repeated */ Any => T,
+      mergeV: /* repeated */ Any => T,
+      tx: () => Transaction[GraphTraversalSource[T]],
+      withBulk: /* repeated */ Any => GraphTraversalSource[T],
+      withPath: /* repeated */ Any => GraphTraversalSource[T],
+      withRemote: RemoteConnection => GraphTraversalSource[T],
+      withSack: /* repeated */ Any => GraphTraversalSource[T],
+      withSideEffect: /* repeated */ Any => GraphTraversalSource[T],
+      withStrategies: /* repeated */ Any => GraphTraversalSource[T],
+      with_ : /* repeated */ Any => GraphTraversalSource[T],
+      withoutStrategies: /* repeated */ Any => GraphTraversalSource[T]
+    ): GraphTraversalSource[T] = {
+      val __obj = js.Dynamic.literal(E = js.Any.fromFunction1(E), V = js.Any.fromFunction1(V), addE = js.Any.fromFunction1(addE), addV = js.Any.fromFunction1(addV), inject = js.Any.fromFunction1(inject), io = js.Any.fromFunction1(io), mergeE = js.Any.fromFunction1(mergeE), mergeV = js.Any.fromFunction1(mergeV), tx = js.Any.fromFunction0(tx), withBulk = js.Any.fromFunction1(withBulk), withPath = js.Any.fromFunction1(withPath), withRemote = js.Any.fromFunction1(withRemote), withSack = js.Any.fromFunction1(withSack), withSideEffect = js.Any.fromFunction1(withSideEffect), withStrategies = js.Any.fromFunction1(withStrategies), with_ = js.Any.fromFunction1(with_), withoutStrategies = js.Any.fromFunction1(withoutStrategies))
+      __obj.asInstanceOf[GraphTraversalSource[T]]
+    }
+    
+    extension [Self <: GraphTraversalSource[?], T /* <: GraphTraversal */](x: Self & GraphTraversalSource[T]) {
+      
+      inline def setAddE(value: /* repeated */ Any => T): Self = StObject.set(x, "addE", js.Any.fromFunction1(value))
+      
+      inline def setAddV(value: /* repeated */ Any => T): Self = StObject.set(x, "addV", js.Any.fromFunction1(value))
+      
+      inline def setE(value: /* repeated */ Any => T): Self = StObject.set(x, "E", js.Any.fromFunction1(value))
+      
+      inline def setInject(value: /* repeated */ Any => T): Self = StObject.set(x, "inject", js.Any.fromFunction1(value))
+      
+      inline def setIo(value: /* repeated */ Any => T): Self = StObject.set(x, "io", js.Any.fromFunction1(value))
+      
+      inline def setMergeE(value: /* repeated */ Any => T): Self = StObject.set(x, "mergeE", js.Any.fromFunction1(value))
+      
+      inline def setMergeV(value: /* repeated */ Any => T): Self = StObject.set(x, "mergeV", js.Any.fromFunction1(value))
+      
+      inline def setTx(value: () => Transaction[GraphTraversalSource[T]]): Self = StObject.set(x, "tx", js.Any.fromFunction0(value))
+      
+      inline def setV(value: /* repeated */ Any => T): Self = StObject.set(x, "V", js.Any.fromFunction1(value))
+      
+      inline def setWithBulk(value: /* repeated */ Any => GraphTraversalSource[T]): Self = StObject.set(x, "withBulk", js.Any.fromFunction1(value))
+      
+      inline def setWithPath(value: /* repeated */ Any => GraphTraversalSource[T]): Self = StObject.set(x, "withPath", js.Any.fromFunction1(value))
+      
+      inline def setWithRemote(value: RemoteConnection => GraphTraversalSource[T]): Self = StObject.set(x, "withRemote", js.Any.fromFunction1(value))
+      
+      inline def setWithSack(value: /* repeated */ Any => GraphTraversalSource[T]): Self = StObject.set(x, "withSack", js.Any.fromFunction1(value))
+      
+      inline def setWithSideEffect(value: /* repeated */ Any => GraphTraversalSource[T]): Self = StObject.set(x, "withSideEffect", js.Any.fromFunction1(value))
+      
+      inline def setWithStrategies(value: /* repeated */ Any => GraphTraversalSource[T]): Self = StObject.set(x, "withStrategies", js.Any.fromFunction1(value))
+      
+      inline def setWith_(value: /* repeated */ Any => GraphTraversalSource[T]): Self = StObject.set(x, "with_", js.Any.fromFunction1(value))
+      
+      inline def setWithoutStrategies(value: /* repeated */ Any => GraphTraversalSource[T]): Self = StObject.set(x, "withoutStrategies", js.Any.fromFunction1(value))
+    }
   }
   
-  @JSImport("gremlin", "process.P")
-  @js.native
-  open class P protected () extends StObject {
-    def this(operator: EnumValue, value: Any) = this()
-    def this(operator: EnumValue, value: Any, other: Any) = this()
-    
-    def and(): P = js.native
-    def and(arg: Any): P = js.native
-    
-    def or(): P = js.native
-    def or(arg: Any): P = js.native
-  }
-  object P {
-    
-    @JSImport("gremlin", "process.P")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    inline def between(args: Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("between")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[P]
-    
-    /* static member */
-    inline def eq_(args: Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("eq")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[P]
-    
-    /* static member */
-    inline def gt(args: Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("gt")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[P]
-    
-    /* static member */
-    inline def gte(args: Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("gte")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[P]
-    
-    /* static member */
-    inline def inside(args: Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("inside")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[P]
-    
-    /* static member */
-    inline def lt(args: Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("lt")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[P]
-    
-    /* static member */
-    inline def lte(args: Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("lte")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[P]
-    
-    /* static member */
-    inline def neq(args: Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("neq")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[P]
-    
-    /* static member */
-    inline def not(args: Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[P]
-    
-    /* static member */
-    inline def outside(args: Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("outside")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[P]
-    
-    /* static member */
-    inline def test(args: Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[P]
-    
-    /* static member */
-    inline def within(args: Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[P]
-    
-    /* static member */
-    inline def without(args: Any*): P = ^.asInstanceOf[js.Dynamic].applyDynamic("without")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[P]
-  }
-  
-  @JSImport("gremlin", "process.TextP")
-  @js.native
-  open class TextP protected () extends StObject {
-    def this(operator: EnumValue, value: String) = this()
-    def this(operator: EnumValue, value: String, other: Any) = this()
-    
-    def and(): P = js.native
-    def and(arg: Any): P = js.native
-    
-    def or(): P = js.native
-    def or(arg: Any): P = js.native
-  }
-  object TextP {
-    
-    @JSImport("gremlin", "process.TextP")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    inline def containing(args: Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("containing")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[TextP]
-    
-    /* static member */
-    inline def endingWith(args: Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("endingWith")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[TextP]
-    
-    /* static member */
-    inline def notContaining(args: Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("notContaining")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[TextP]
-    
-    /* static member */
-    inline def notEndingWith(args: Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("notEndingWith")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[TextP]
-    
-    /* static member */
-    inline def notRegex(args: Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("notRegex")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[TextP]
-    
-    /* static member */
-    inline def notStartingWith(args: Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("notStartingWith")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[TextP]
-    
-    /* static member */
-    inline def regex(args: Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("regex")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[TextP]
-    
-    /* static member */
-    inline def startingWith(args: Any*): TextP = ^.asInstanceOf[js.Dynamic].applyDynamic("startingWith")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[TextP]
-  }
-  
-  @JSImport("gremlin", "process.Transaction")
-  @js.native
-  open class Transaction[S /* <: GraphTraversalSource[GraphTraversal] */] protected () extends StObject {
-    def this(_g: S) = this()
-    
-    def begin(): S = js.native
-    
-    def close(): js.Promise[Unit] = js.native
-    
-    def commit(): js.Promise[Any] = js.native
-    
-    var isOpen: Boolean = js.native
-    
-    def rollback(): js.Promise[Unit] = js.native
-  }
-  
-  @JSImport("gremlin", "process.Translator")
-  @js.native
-  open class Translator protected () extends StObject {
-    def this(traversalSource: AnonymousTraversalSource[GraphTraversalSource[GraphTraversal]]) = this()
-    def this(traversalSource: GraphTraversalSource[GraphTraversal]) = this()
-    
-    def getTraversalSource(): Translator = js.native
-    
-    def of(traversalSource: String): Unit = js.native
-    def of(traversalSource: AnonymousTraversalSource[GraphTraversalSource[GraphTraversal]]): Unit = js.native
-    def of(traversalSource: GraphTraversalSource[GraphTraversal]): Unit = js.native
-    
-    def translate(bytecode: Bytecode): String = js.native
-  }
-  
-  @JSImport("gremlin", "process.TraversalSideEffects")
-  @js.native
-  open class TraversalSideEffects () extends StObject
-  
-  @JSImport("gremlin", "process.TraversalStrategies")
-  @js.native
-  open class TraversalStrategies () extends StObject {
-    def this(parent: TraversalStrategies) = this()
-    
-    def addStrategy(strategy: TraversalStrategy): Unit = js.native
-    
-    def applyStrategies(traversal: Traversal_): js.Promise[Traversal_] = js.native
-    
-    def removeStrategy(strategy: TraversalStrategy): Any = js.native
-  }
-  
-  @JSImport("gremlin", "process.TraversalStrategy")
-  @js.native
-  open class TraversalStrategy () extends StObject {
-    
-    @JSName("apply")
-    def apply(traversal: Traversal_): js.Promise[Traversal_] = js.native
-  }
-  
-  @JSImport("gremlin", "process.Traversal")
-  @js.native
-  open class Traversal_ protected ()
-    extends StObject
-       with AsyncIterableIterator[Any] {
-    def this(graph: Nullable[Graph], traversalStrategies: Nullable[TraversalStrategies], bytecode: Bytecode) = this()
-    
-    def getBytecode(): Bytecode = js.native
-    
-    def hasNext(): js.Promise[Boolean] = js.native
-    
-    def iterate(): js.Promise[Unit] = js.native
-    
-    def next(): js.Promise[IteratorResult[Any, Any]] = js.native
-    
-    def toList(): js.Promise[js.Array[Traverser]] = js.native
-  }
-  
-  @JSImport("gremlin", "process.Traverser")
-  @js.native
-  open class Traverser protected () extends StObject {
-    def this(`object`: Any) = this()
-    def this(`object`: Any, bulk: Double) = this()
-  }
-  
-  object barrier {
-    
-    @JSImport("gremlin", "process.barrier")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("gremlin", "process.barrier.normSack")
-    @js.native
-    def normSack: EnumValue = js.native
-    inline def normSack_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normSack")(x.asInstanceOf[js.Any])
-  }
-  
-  object cardinality {
-    
-    @JSImport("gremlin", "process.cardinality")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("gremlin", "process.cardinality.list")
-    @js.native
-    def list: EnumValue = js.native
-    inline def list_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("list")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.cardinality.set")
-    @js.native
-    def set: EnumValue = js.native
-    inline def set_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("set")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.cardinality.single")
-    @js.native
-    def single: EnumValue = js.native
-    inline def single_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("single")(x.asInstanceOf[js.Any])
-  }
-  
-  object column {
-    
-    @JSImport("gremlin", "process.column")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("gremlin", "process.column.keys")
-    @js.native
-    def keys: EnumValue = js.native
-    inline def keys_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keys")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.column.values")
-    @js.native
-    def values: EnumValue = js.native
-    inline def values_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("values")(x.asInstanceOf[js.Any])
-  }
-  
-  object direction {
-    
-    @JSImport("gremlin", "process.direction")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("gremlin", "process.direction.both")
-    @js.native
-    def both: EnumValue = js.native
-    inline def both_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("both")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.direction.in")
-    @js.native
-    def in: EnumValue = js.native
-    inline def in_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("in")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.direction.out")
-    @js.native
-    def out: EnumValue = js.native
-    inline def out_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("out")(x.asInstanceOf[js.Any])
-  }
-  
-  object graphSONVersion {
-    
-    @JSImport("gremlin", "process.graphSONVersion")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("gremlin", "process.graphSONVersion.v1_0")
-    @js.native
-    def v10: EnumValue = js.native
-    
-    inline def v10_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1_0")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.graphSONVersion.v2_0")
-    @js.native
-    def v20: EnumValue = js.native
-    
-    inline def v20_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2_0")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.graphSONVersion.v3_0")
-    @js.native
-    def v30: EnumValue = js.native
-    
-    inline def v30_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3_0")(x.asInstanceOf[js.Any])
-  }
-  
-  object gryoVersion {
-    
-    @JSImport("gremlin", "process.gryoVersion")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("gremlin", "process.gryoVersion.v1_0")
-    @js.native
-    def v10: EnumValue = js.native
-    
-    inline def v10_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1_0")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.gryoVersion.v3_0")
-    @js.native
-    def v30: EnumValue = js.native
-    
-    inline def v30_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3_0")(x.asInstanceOf[js.Any])
-  }
-  
-  @JSImport("gremlin", "process.operator")
-  @js.native
-  val operator: Operator_ = js.native
-  
-  object order {
-    
-    @JSImport("gremlin", "process.order")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("gremlin", "process.order.asc")
-    @js.native
-    def asc: EnumValue = js.native
-    inline def asc_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asc")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.order.decr")
-    @js.native
-    def decr: EnumValue = js.native
-    inline def decr_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decr")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.order.desc")
-    @js.native
-    def desc: EnumValue = js.native
-    inline def desc_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desc")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.order.incr")
-    @js.native
-    def incr: EnumValue = js.native
-    inline def incr_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incr")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.order.shuffle")
-    @js.native
-    def shuffle: EnumValue = js.native
-    inline def shuffle_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shuffle")(x.asInstanceOf[js.Any])
-  }
-  
-  object pick {
-    
-    @JSImport("gremlin", "process.pick")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("gremlin", "process.pick.any")
-    @js.native
-    def any: EnumValue = js.native
-    inline def any_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.pick.none")
-    @js.native
-    def none: EnumValue = js.native
-    inline def none_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
-  }
-  
-  object pop {
-    
-    @JSImport("gremlin", "process.pop")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("gremlin", "process.pop.all")
-    @js.native
-    def all: EnumValue = js.native
-    inline def all_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.pop.first")
-    @js.native
-    def first: EnumValue = js.native
-    inline def first_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("first")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.pop.last")
-    @js.native
-    def last: EnumValue = js.native
-    inline def last_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("last")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.pop.mixed")
-    @js.native
-    def mixed: EnumValue = js.native
-    inline def mixed_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mixed")(x.asInstanceOf[js.Any])
-  }
-  
-  object scope {
-    
-    @JSImport("gremlin", "process.scope")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("gremlin", "process.scope.global")
-    @js.native
-    def global: EnumValue = js.native
-    inline def global_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.scope.local")
-    @js.native
-    def local: EnumValue = js.native
-    inline def local_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("local")(x.asInstanceOf[js.Any])
-  }
-  
-  @JSImport("gremlin", "process.statics")
-  @js.native
-  val statics: Statics_[GraphTraversal] = js.native
-  
-  object t {
-    
-    @JSImport("gremlin", "process.t")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("gremlin", "process.t.id")
-    @js.native
-    def id: EnumValue = js.native
-    inline def id_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.t.key")
-    @js.native
-    def key: EnumValue = js.native
-    inline def key_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("key")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.t.label")
-    @js.native
-    def label: EnumValue = js.native
-    inline def label_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
-    
-    @JSImport("gremlin", "process.t.value")
-    @js.native
-    def value: EnumValue = js.native
-    inline def value_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
-  }
-  
-  inline def traversal[S /* <: GraphTraversalSource[GraphTraversal] */](): AnonymousTraversalSource[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")().asInstanceOf[AnonymousTraversalSource[S]]
-  inline def traversal[S /* <: GraphTraversalSource[GraphTraversal] */](traversalSourceClass: Newable[S]): AnonymousTraversalSource[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")(traversalSourceClass.asInstanceOf[js.Any]).asInstanceOf[AnonymousTraversalSource[S]]
-  
-  @JSImport("gremlin", "process.withOptions")
-  @js.native
-  val withOptions: WithOptions_ = js.native
-  
-  trait Operator_ extends StObject {
+  trait Operator extends StObject {
     
     var addAll: EnumValue
     
@@ -811,7 +388,7 @@ object process {
     
     var sumLong: EnumValue
   }
-  object Operator_ {
+  object Operator {
     
     inline def apply(
       addAll: EnumValue,
@@ -825,12 +402,12 @@ object process {
       or: EnumValue,
       sum: EnumValue,
       sumLong: EnumValue
-    ): Operator_ = {
+    ): Operator = {
       val __obj = js.Dynamic.literal(addAll = addAll.asInstanceOf[js.Any], and = and.asInstanceOf[js.Any], assign = assign.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], minus = minus.asInstanceOf[js.Any], mult = mult.asInstanceOf[js.Any], or = or.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any], sumLong = sumLong.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Operator_]
+      __obj.asInstanceOf[Operator]
     }
     
-    extension [Self <: Operator_](x: Self) {
+    extension [Self <: Operator](x: Self) {
       
       inline def setAddAll(value: EnumValue): Self = StObject.set(x, "addAll", value.asInstanceOf[js.Any])
       
@@ -856,7 +433,17 @@ object process {
     }
   }
   
-  trait Statics_[T /* <: GraphTraversal */] extends StObject {
+  @js.native
+  trait P extends StObject {
+    
+    def and(): P = js.native
+    def and(arg: Any): P = js.native
+    
+    def or(): P = js.native
+    def or(arg: Any): P = js.native
+  }
+  
+  trait Statics[T /* <: GraphTraversal */] extends StObject {
     
     def V(args: Any*): T
     
@@ -1046,7 +633,7 @@ object process {
     
     def where(args: Any*): T
   }
-  object Statics_ {
+  object Statics {
     
     inline def apply[T /* <: GraphTraversal */](
       V: /* repeated */ Any => T,
@@ -1143,13 +730,13 @@ object process {
       valueMap: /* repeated */ Any => T,
       values: /* repeated */ Any => T,
       where: /* repeated */ Any => T
-    ): Statics_[T] = {
+    ): Statics[T] = {
       val __obj = js.Dynamic.literal(V = js.Any.fromFunction1(V), addE = js.Any.fromFunction1(addE), addV = js.Any.fromFunction1(addV), aggregate = js.Any.fromFunction1(aggregate), and = js.Any.fromFunction1(and), as = js.Any.fromFunction1(as), barrier = js.Any.fromFunction1(barrier), both = js.Any.fromFunction1(both), bothE = js.Any.fromFunction1(bothE), bothV = js.Any.fromFunction1(bothV), branch = js.Any.fromFunction1(branch), call = js.Any.fromFunction1(call), cap = js.Any.fromFunction1(cap), choose = js.Any.fromFunction1(choose), coalesce = js.Any.fromFunction1(coalesce), coin = js.Any.fromFunction1(coin), constant = js.Any.fromFunction1(constant), count = js.Any.fromFunction1(count), cyclicPath = js.Any.fromFunction1(cyclicPath), dedup = js.Any.fromFunction1(dedup), drop = js.Any.fromFunction1(drop), elementMap = js.Any.fromFunction1(elementMap), emit = js.Any.fromFunction1(emit), fail = js.Any.fromFunction1(fail), filter = js.Any.fromFunction1(filter), flatMap = js.Any.fromFunction1(flatMap), fold = js.Any.fromFunction1(fold), group = js.Any.fromFunction1(group), groupCount = js.Any.fromFunction1(groupCount), has = js.Any.fromFunction1(has), hasId = js.Any.fromFunction1(hasId), hasKey = js.Any.fromFunction1(hasKey), hasLabel = js.Any.fromFunction1(hasLabel), hasNot = js.Any.fromFunction1(hasNot), hasValue = js.Any.fromFunction1(hasValue), id = js.Any.fromFunction1(id), identity = js.Any.fromFunction1(identity), inE = js.Any.fromFunction1(inE), inV = js.Any.fromFunction1(inV), in_ = js.Any.fromFunction1(in_), index = js.Any.fromFunction1(index), inject = js.Any.fromFunction1(inject), is = js.Any.fromFunction1(is), key = js.Any.fromFunction1(key), label = js.Any.fromFunction1(label), limit = js.Any.fromFunction1(limit), local = js.Any.fromFunction1(local), loops = js.Any.fromFunction1(loops), map = js.Any.fromFunction1(map), math = js.Any.fromFunction1(math), max = js.Any.fromFunction1(max), mean = js.Any.fromFunction1(mean), mergeE = js.Any.fromFunction1(mergeE), mergeV = js.Any.fromFunction1(mergeV), min = js.Any.fromFunction1(min), not = js.Any.fromFunction1(not), optional = js.Any.fromFunction1(optional), or = js.Any.fromFunction1(or), order = js.Any.fromFunction1(order), otherV = js.Any.fromFunction1(otherV), out = js.Any.fromFunction1(out), outE = js.Any.fromFunction1(outE), outV = js.Any.fromFunction1(outV), path = js.Any.fromFunction1(path), project = js.Any.fromFunction1(project), properties = js.Any.fromFunction1(properties), property = js.Any.fromFunction1(property), propertyMap = js.Any.fromFunction1(propertyMap), range = js.Any.fromFunction1(range), repeat = js.Any.fromFunction1(repeat), sack = js.Any.fromFunction1(sack), sample = js.Any.fromFunction1(sample), select = js.Any.fromFunction1(select), sideEffect = js.Any.fromFunction1(sideEffect), simplePath = js.Any.fromFunction1(simplePath), skip = js.Any.fromFunction1(skip), store = js.Any.fromFunction1(store), subgraph = js.Any.fromFunction1(subgraph), sum = js.Any.fromFunction1(sum), tail = js.Any.fromFunction1(tail), timeLimit = js.Any.fromFunction1(timeLimit), times = js.Any.fromFunction1(times), to = js.Any.fromFunction1(to), toE = js.Any.fromFunction1(toE), toV = js.Any.fromFunction1(toV), tree = js.Any.fromFunction1(tree), unfold = js.Any.fromFunction1(unfold), union = js.Any.fromFunction1(union), until = js.Any.fromFunction1(until), value = js.Any.fromFunction1(value), valueMap = js.Any.fromFunction1(valueMap), values = js.Any.fromFunction1(values), where = js.Any.fromFunction1(where))
       __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
-      __obj.asInstanceOf[Statics_[T]]
+      __obj.asInstanceOf[Statics[T]]
     }
     
-    extension [Self <: Statics_[?], T /* <: GraphTraversal */](x: Self & Statics_[T]) {
+    extension [Self <: Statics[?], T /* <: GraphTraversal */](x: Self & Statics[T]) {
       
       inline def setAddE(value: /* repeated */ Any => T): Self = StObject.set(x, "addE", js.Any.fromFunction1(value))
       
@@ -1341,7 +928,135 @@ object process {
     }
   }
   
-  trait WithOptions_ extends StObject {
+  @js.native
+  trait TextP extends StObject {
+    
+    def and(): P = js.native
+    def and(arg: Any): P = js.native
+    
+    def or(): P = js.native
+    def or(arg: Any): P = js.native
+  }
+  
+  trait Transaction[S /* <: GraphTraversalSource[GraphTraversal] */] extends StObject {
+    
+    def begin(): S
+    
+    def close(): js.Promise[Unit]
+    
+    def commit(): js.Promise[Any]
+    
+    var isOpen: Boolean
+    
+    def rollback(): js.Promise[Unit]
+  }
+  object Transaction {
+    
+    inline def apply[S /* <: GraphTraversalSource[GraphTraversal] */](
+      begin: () => S,
+      close: () => js.Promise[Unit],
+      commit: () => js.Promise[Any],
+      isOpen: Boolean,
+      rollback: () => js.Promise[Unit]
+    ): Transaction[S] = {
+      val __obj = js.Dynamic.literal(begin = js.Any.fromFunction0(begin), close = js.Any.fromFunction0(close), commit = js.Any.fromFunction0(commit), isOpen = isOpen.asInstanceOf[js.Any], rollback = js.Any.fromFunction0(rollback))
+      __obj.asInstanceOf[Transaction[S]]
+    }
+    
+    extension [Self <: Transaction[?], S /* <: GraphTraversalSource[GraphTraversal] */](x: Self & Transaction[S]) {
+      
+      inline def setBegin(value: () => S): Self = StObject.set(x, "begin", js.Any.fromFunction0(value))
+      
+      inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      
+      inline def setCommit(value: () => js.Promise[Any]): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
+      
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      
+      inline def setRollback(value: () => js.Promise[Unit]): Self = StObject.set(x, "rollback", js.Any.fromFunction0(value))
+    }
+  }
+  
+  @js.native
+  trait Translator extends StObject {
+    
+    def getTraversalSource(): Translator = js.native
+    
+    def of(traversalSource: String): Unit = js.native
+    def of(traversalSource: AnonymousTraversalSource[GraphTraversalSource[GraphTraversal]]): Unit = js.native
+    def of(traversalSource: GraphTraversalSource[GraphTraversal]): Unit = js.native
+    
+    def translate(bytecode: Bytecode): String = js.native
+  }
+  
+  @js.native
+  trait Traversal
+    extends StObject
+       with AsyncIterableIterator[Any] {
+    
+    def getBytecode(): Bytecode = js.native
+    
+    def hasNext(): js.Promise[Boolean] = js.native
+    
+    def iterate(): js.Promise[Unit] = js.native
+    
+    def next(): js.Promise[IteratorResult[Any, Any]] = js.native
+    
+    def toList(): js.Promise[js.Array[Traverser]] = js.native
+  }
+  
+  trait TraversalSideEffects extends StObject
+  
+  trait TraversalStrategies extends StObject {
+    
+    def addStrategy(strategy: TraversalStrategy): Unit
+    
+    def applyStrategies(traversal: Traversal): js.Promise[Traversal]
+    
+    def removeStrategy(strategy: TraversalStrategy): Any
+  }
+  object TraversalStrategies {
+    
+    inline def apply(
+      addStrategy: TraversalStrategy => Unit,
+      applyStrategies: Traversal => js.Promise[Traversal],
+      removeStrategy: TraversalStrategy => Any
+    ): TraversalStrategies = {
+      val __obj = js.Dynamic.literal(addStrategy = js.Any.fromFunction1(addStrategy), applyStrategies = js.Any.fromFunction1(applyStrategies), removeStrategy = js.Any.fromFunction1(removeStrategy))
+      __obj.asInstanceOf[TraversalStrategies]
+    }
+    
+    extension [Self <: TraversalStrategies](x: Self) {
+      
+      inline def setAddStrategy(value: TraversalStrategy => Unit): Self = StObject.set(x, "addStrategy", js.Any.fromFunction1(value))
+      
+      inline def setApplyStrategies(value: Traversal => js.Promise[Traversal]): Self = StObject.set(x, "applyStrategies", js.Any.fromFunction1(value))
+      
+      inline def setRemoveStrategy(value: TraversalStrategy => Any): Self = StObject.set(x, "removeStrategy", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait TraversalStrategy extends StObject {
+    
+    @JSName("apply")
+    def apply(traversal: Traversal): js.Promise[Traversal]
+  }
+  object TraversalStrategy {
+    
+    inline def apply(apply: Traversal => js.Promise[Traversal]): TraversalStrategy = {
+      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
+      __obj.asInstanceOf[TraversalStrategy]
+    }
+    
+    extension [Self <: TraversalStrategy](x: Self) {
+      
+      inline def setApply(value: Traversal => js.Promise[Traversal]): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait Traverser extends StObject
+  
+  trait WithOptions extends StObject {
     
     var all: Double
     
@@ -1363,7 +1078,7 @@ object process {
     
     var values: Double
   }
-  object WithOptions_ {
+  object WithOptions {
     
     inline def apply(
       all: Double,
@@ -1376,12 +1091,12 @@ object process {
       none: Double,
       tokens: String,
       values: Double
-    ): WithOptions_ = {
+    ): WithOptions = {
       val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any], indexer = indexer.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-      __obj.asInstanceOf[WithOptions_]
+      __obj.asInstanceOf[WithOptions]
     }
     
-    extension [Self <: WithOptions_](x: Self) {
+    extension [Self <: WithOptions](x: Self) {
       
       inline def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       

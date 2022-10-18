@@ -28,7 +28,7 @@ object promises {
   @JSImport("dns", "promises.Resolver")
   @js.native
   open class Resolver ()
-    extends typings.node.nodeColondnsMod.Resolver {
+    extends typings.node.nodeColondnsPromisesMod.Resolver {
     def this(options: ResolverOptions) = this()
   }
   

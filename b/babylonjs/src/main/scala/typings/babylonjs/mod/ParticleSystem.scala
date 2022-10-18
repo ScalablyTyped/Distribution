@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.iparticlesystemMod.IParticleSystem
+import typings.babylonjs.particlesIparticlesystemMod.IParticleSystem
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ParticleSystem")
 @js.native
 open class ParticleSystem protected ()
-  extends typings.babylonjs.legacyMod.ParticleSystem {
+  extends typings.babylonjs.legacyLegacyMod.ParticleSystem {
+  def this(name: String, capacity: Double, sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine) = this()
   /**
     * Instantiates a particle system.
     * Particles are often small sprites used to simulate hard-to-reproduce phenomena like fire, smoke, water, or abstract visual effects like magic glitter and faery dust.
@@ -21,18 +22,31 @@ open class ParticleSystem protected ()
     * @param epsilon Offset used to render the particles
     */
   def this(name: String, capacity: Double, sceneOrEngine: typings.babylonjs.sceneMod.Scene) = this()
-  def this(name: String, capacity: Double, sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine) = this()
   def this(
     name: String,
     capacity: Double,
-    sceneOrEngine: typings.babylonjs.sceneMod.Scene,
-    customEffect: Nullable[typings.babylonjs.effectMod.Effect]
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    customEffect: Nullable[typings.babylonjs.materialsEffectMod.Effect]
   ) = this()
   def this(
     name: String,
     capacity: Double,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    customEffect: Nullable[typings.babylonjs.effectMod.Effect]
+    sceneOrEngine: typings.babylonjs.sceneMod.Scene,
+    customEffect: Nullable[typings.babylonjs.materialsEffectMod.Effect]
+  ) = this()
+  def this(
+    name: String,
+    capacity: Double,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    customEffect: Unit,
+    isAnimationSheetEnabled: Boolean
+  ) = this()
+  def this(
+    name: String,
+    capacity: Double,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    customEffect: Nullable[typings.babylonjs.materialsEffectMod.Effect],
+    isAnimationSheetEnabled: Boolean
   ) = this()
   def this(
     name: String,
@@ -45,22 +59,40 @@ open class ParticleSystem protected ()
     name: String,
     capacity: Double,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
-    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
+    customEffect: Nullable[typings.babylonjs.materialsEffectMod.Effect],
     isAnimationSheetEnabled: Boolean
   ) = this()
   def this(
     name: String,
     capacity: Double,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
     customEffect: Unit,
-    isAnimationSheetEnabled: Boolean
+    isAnimationSheetEnabled: Boolean,
+    epsilon: Double
   ) = this()
   def this(
     name: String,
     capacity: Double,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
-    isAnimationSheetEnabled: Boolean
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    customEffect: Unit,
+    isAnimationSheetEnabled: Unit,
+    epsilon: Double
+  ) = this()
+  def this(
+    name: String,
+    capacity: Double,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    customEffect: Nullable[typings.babylonjs.materialsEffectMod.Effect],
+    isAnimationSheetEnabled: Boolean,
+    epsilon: Double
+  ) = this()
+  def this(
+    name: String,
+    capacity: Double,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    customEffect: Nullable[typings.babylonjs.materialsEffectMod.Effect],
+    isAnimationSheetEnabled: Unit,
+    epsilon: Double
   ) = this()
   def this(
     name: String,
@@ -82,7 +114,7 @@ open class ParticleSystem protected ()
     name: String,
     capacity: Double,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
-    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
+    customEffect: Nullable[typings.babylonjs.materialsEffectMod.Effect],
     isAnimationSheetEnabled: Boolean,
     epsilon: Double
   ) = this()
@@ -90,39 +122,7 @@ open class ParticleSystem protected ()
     name: String,
     capacity: Double,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
-    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
-    isAnimationSheetEnabled: Unit,
-    epsilon: Double
-  ) = this()
-  def this(
-    name: String,
-    capacity: Double,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    customEffect: Unit,
-    isAnimationSheetEnabled: Boolean,
-    epsilon: Double
-  ) = this()
-  def this(
-    name: String,
-    capacity: Double,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    customEffect: Unit,
-    isAnimationSheetEnabled: Unit,
-    epsilon: Double
-  ) = this()
-  def this(
-    name: String,
-    capacity: Double,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
-    isAnimationSheetEnabled: Boolean,
-    epsilon: Double
-  ) = this()
-  def this(
-    name: String,
-    capacity: Double,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
+    customEffect: Nullable[typings.babylonjs.materialsEffectMod.Effect],
     isAnimationSheetEnabled: Unit,
     epsilon: Double
   ) = this()
@@ -155,6 +155,31 @@ object ParticleSystem {
   @js.native
   val BILLBOARDMODE_Y: Double = js.native
   
+  inline def Parse(
+    parsedParticleSystem: Any,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    rootUrl: String
+  ): typings.babylonjs.particlesParticleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesParticleSystemMod.ParticleSystem]
+  inline def Parse(
+    parsedParticleSystem: Any,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    rootUrl: String,
+    doNotStart: Boolean
+  ): typings.babylonjs.particlesParticleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesParticleSystemMod.ParticleSystem]
+  inline def Parse(
+    parsedParticleSystem: Any,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    rootUrl: String,
+    doNotStart: Boolean,
+    capacity: Double
+  ): typings.babylonjs.particlesParticleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesParticleSystemMod.ParticleSystem]
+  inline def Parse(
+    parsedParticleSystem: Any,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    rootUrl: String,
+    doNotStart: Unit,
+    capacity: Double
+  ): typings.babylonjs.particlesParticleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesParticleSystemMod.ParticleSystem]
   /**
     * Parses a JSON object to create a particle system.
     * @param parsedParticleSystem The JSON object to parse
@@ -164,52 +189,27 @@ object ParticleSystem {
     * @param capacity defines the system capacity (if null or undefined the sotred capacity will be used)
     * @returns the Parsed particle system
     */
-  inline def Parse(parsedParticleSystem: Any, sceneOrEngine: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
+  inline def Parse(parsedParticleSystem: Any, sceneOrEngine: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.particlesParticleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesParticleSystemMod.ParticleSystem]
   inline def Parse(
     parsedParticleSystem: Any,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
     doNotStart: Boolean
-  ): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
+  ): typings.babylonjs.particlesParticleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesParticleSystemMod.ParticleSystem]
   inline def Parse(
     parsedParticleSystem: Any,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
     doNotStart: Boolean,
     capacity: Double
-  ): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
+  ): typings.babylonjs.particlesParticleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesParticleSystemMod.ParticleSystem]
   inline def Parse(
     parsedParticleSystem: Any,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
     doNotStart: Unit,
     capacity: Double
-  ): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
-  inline def Parse(
-    parsedParticleSystem: Any,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    rootUrl: String
-  ): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
-  inline def Parse(
-    parsedParticleSystem: Any,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    rootUrl: String,
-    doNotStart: Boolean
-  ): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
-  inline def Parse(
-    parsedParticleSystem: Any,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    rootUrl: String,
-    doNotStart: Boolean,
-    capacity: Double
-  ): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
-  inline def Parse(
-    parsedParticleSystem: Any,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    rootUrl: String,
-    doNotStart: Unit,
-    capacity: Double
-  ): typings.babylonjs.particleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemMod.ParticleSystem]
+  ): typings.babylonjs.particlesParticleSystemMod.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesParticleSystemMod.ParticleSystem]
   
   /**
     * @internal
@@ -231,6 +231,12 @@ object ParticleSystem {
   inline def _GetEffectCreationOptions(isAnimationSheetEnabled: Boolean, useLogarithmicDepth: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetEffectCreationOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], useLogarithmicDepth.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   inline def _GetEffectCreationOptions(isAnimationSheetEnabled: Unit, useLogarithmicDepth: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetEffectCreationOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], useLogarithmicDepth.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
+  inline def _Parse(
+    parsedParticleSystem: Any,
+    particleSystem: IParticleSystem,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    rootUrl: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedParticleSystem.asInstanceOf[js.Any], particleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * @internal
     */
@@ -238,12 +244,6 @@ object ParticleSystem {
     parsedParticleSystem: Any,
     particleSystem: IParticleSystem,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
-    rootUrl: String
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedParticleSystem.asInstanceOf[js.Any], particleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def _Parse(
-    parsedParticleSystem: Any,
-    particleSystem: IParticleSystem,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
     rootUrl: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedParticleSystem.asInstanceOf[js.Any], particleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

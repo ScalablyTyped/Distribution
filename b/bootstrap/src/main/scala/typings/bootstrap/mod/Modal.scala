@@ -1,12 +1,12 @@
 package typings.bootstrap.mod
 
 import typings.bootstrap.anon.PartialOptionsBackdrop
-import typings.bootstrap.baseComponentMod.GetInstanceFactory
-import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.jsDistBaseComponentMod.GetInstanceFactory
+import typings.bootstrap.jsDistBaseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.jsDistModalMod.Modal.Options
+import typings.bootstrap.jsDistModalMod.Modal.jQueryInterface
+import typings.bootstrap.jsDistModalMod.default
 import typings.bootstrap.mod.global.Element
-import typings.bootstrap.modalMod.Modal.Options
-import typings.bootstrap.modalMod.Modal.jQueryInterface
-import typings.bootstrap.modalMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,17 +41,17 @@ object Modal {
   object Events extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.bootstrap.modalMod.Modal.Events & String] = js.native
+    def apply(value: String): js.UndefOr[typings.bootstrap.jsDistModalMod.Modal.Events & String] = js.native
     
-    /* "hidden.bs.modal" */ val hidden: typings.bootstrap.modalMod.Modal.Events.hidden & String = js.native
+    /* "hidden.bs.modal" */ val hidden: typings.bootstrap.jsDistModalMod.Modal.Events.hidden & String = js.native
     
-    /* "hide.bs.modal" */ val hide: typings.bootstrap.modalMod.Modal.Events.hide & String = js.native
+    /* "hide.bs.modal" */ val hide: typings.bootstrap.jsDistModalMod.Modal.Events.hide & String = js.native
     
-    /* "hidePrevented.bs.modal" */ val hidePrevented: typings.bootstrap.modalMod.Modal.Events.hidePrevented & String = js.native
+    /* "hidePrevented.bs.modal" */ val hidePrevented: typings.bootstrap.jsDistModalMod.Modal.Events.hidePrevented & String = js.native
     
-    /* "show.bs.modal" */ val show: typings.bootstrap.modalMod.Modal.Events.show & String = js.native
+    /* "show.bs.modal" */ val show: typings.bootstrap.jsDistModalMod.Modal.Events.show & String = js.native
     
-    /* "shown.bs.modal" */ val shown: typings.bootstrap.modalMod.Modal.Events.shown & String = js.native
+    /* "shown.bs.modal" */ val shown: typings.bootstrap.jsDistModalMod.Modal.Events.shown & String = js.native
   }
   
   /**
@@ -61,8 +61,8 @@ object Modal {
   /* static member */
   @JSImport("bootstrap", "Modal.getInstance")
   @js.native
-  def getInstance: GetInstanceFactory[typings.bootstrap.modalMod.Modal] = js.native
-  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.modalMod.Modal]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+  def getInstance: GetInstanceFactory[typings.bootstrap.jsDistModalMod.Modal] = js.native
+  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistModalMod.Modal]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
   
   /**
     * Static method which allows you to get the modal instance associated with
@@ -71,12 +71,12 @@ object Modal {
   /* static member */
   @JSImport("bootstrap", "Modal.getOrCreateInstance")
   @js.native
-  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.modalMod.Modal, PartialOptionsBackdrop] = js.native
-  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.modalMod.Modal, PartialOptionsBackdrop]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistModalMod.Modal, PartialOptionsBackdrop] = js.native
+  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistModalMod.Modal, PartialOptionsBackdrop]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("bootstrap", "Modal.jQueryInterface")
   @js.native
-  def jQueryInterface: typings.bootstrap.modalMod.Modal.jQueryInterface = js.native
+  def jQueryInterface: typings.bootstrap.jsDistModalMod.Modal.jQueryInterface = js.native
   inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
 }

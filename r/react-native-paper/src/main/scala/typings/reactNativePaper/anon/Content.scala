@@ -1,11 +1,11 @@
 package typings.reactNativePaper.anon
 
-import typings.callstackReactThemeProvider.hoistNonReactStaticsMod.NonReactStatics
+import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonReactStatics
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
-import typings.reactNativePaper.cardMod.ElevatedCardProps
-import typings.reactNativePaper.cardMod.OutlinedCardProps
-import typings.reactNativePaper.cardMod.Props
+import typings.reactNativePaper.libTypescriptComponentsCardCardMod.ElevatedCardProps
+import typings.reactNativePaper.libTypescriptComponentsCardCardMod.OutlinedCardProps
+import typings.reactNativePaper.libTypescriptComponentsCardCardMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait Content extends StObject {
     hasCardElevationOnLongPressOnPressCardModeChildrenStyleThemeTestIDAccessibleRest: OutlinedCardProps & Props & ElevatedCardProps
   ): Element = js.native
   
-  var Actions: CallPropsDisplayNameString = js.native
+  var Actions: DisplayNameString = js.native
   
   var Content: CallHasIndexTotalSiblingsStyleRest = js.native
   
@@ -27,7 +27,7 @@ trait Content extends StObject {
   ]) = js.native
   
   var Title: ComponentType[PickViewPropsRefAttributeAccessibilityLabel] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityLanguage] & CallHasTitleTitleStyleTitleNumberOfLinesSubtitleSubtitleStyleSubtitleNumberOfLinesLeftLeftStyleRightRightStyleStyle, 
+    ComponentType[ViewPropsRefAttributesVieAccessibilityLabel] & CallHasTitleTitleStyleTitleNumberOfLinesSubtitleSubtitleStyleSubtitleNumberOfLinesLeftLeftStyleRightRightStyleStyle, 
     js.Object
   ]) = js.native
 }

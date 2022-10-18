@@ -6,17 +6,17 @@ import typings.asn1js.mod.GeneralizedTime
 import typings.asn1js.mod.Integer
 import typings.asn1js.mod.ObjectIdentifier
 import typings.asn1js.mod.UTCTime
-import typings.peculiarAsn1Schema.decoratorsMod.AsnPropDecorator
-import typings.peculiarAsn1Schema.decoratorsMod.AsnTypeDecorator
-import typings.peculiarAsn1Schema.decoratorsMod.IAsn1PropOptions
-import typings.peculiarAsn1Schema.decoratorsMod.IAsn1SequenceOptions
-import typings.peculiarAsn1Schema.decoratorsMod.IAsn1SetOptions
-import typings.peculiarAsn1Schema.decoratorsMod.IAsn1TypeOptions
-import typings.peculiarAsn1Schema.enumsMod.AsnPropTypes
-import typings.peculiarAsn1Schema.typesMod.AnyConverterType
-import typings.peculiarAsn1Schema.typesMod.IAsnConverter
-import typings.peculiarAsn1Schema.typesMod.IEmptyConstructor
-import typings.peculiarAsn1Schema.typesMod.IntegerConverterType
+import typings.peculiarAsn1Schema.buildTypesDecoratorsMod.AsnPropDecorator
+import typings.peculiarAsn1Schema.buildTypesDecoratorsMod.AsnTypeDecorator
+import typings.peculiarAsn1Schema.buildTypesDecoratorsMod.IAsn1PropOptions
+import typings.peculiarAsn1Schema.buildTypesDecoratorsMod.IAsn1SequenceOptions
+import typings.peculiarAsn1Schema.buildTypesDecoratorsMod.IAsn1SetOptions
+import typings.peculiarAsn1Schema.buildTypesDecoratorsMod.IAsn1TypeOptions
+import typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes
+import typings.peculiarAsn1Schema.buildTypesTypesMod.AnyConverterType
+import typings.peculiarAsn1Schema.buildTypesTypesMod.IAsnConverter
+import typings.peculiarAsn1Schema.buildTypesTypesMod.IEmptyConstructor
+import typings.peculiarAsn1Schema.buildTypesTypesMod.IntegerConverterType
 import typings.pvtsutils.mod.BufferSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,10 +32,10 @@ object mod {
   @js.native
   val AsnAnyConverter: IAsnConverter[AnyConverterType, AsnType] = js.native
   
-  @JSImport("@peculiar/asn1-schema", "AsnArray")
+  /* note: abstract class */ @JSImport("@peculiar/asn1-schema", "AsnArray")
   @js.native
-  abstract class AsnArray[T] ()
-    extends typings.peculiarAsn1Schema.objectsMod.AsnArray[T] {
+  open class AsnArray[T] ()
+    extends typings.peculiarAsn1Schema.buildTypesObjectsMod.AsnArray[T] {
     def this(items: js.Array[T]) = this()
   }
   
@@ -60,7 +60,7 @@ object mod {
   @JSImport("@peculiar/asn1-schema", "AsnConvert")
   @js.native
   open class AsnConvert ()
-    extends typings.peculiarAsn1Schema.convertMod.AsnConvert
+    extends typings.peculiarAsn1Schema.buildTypesConvertMod.AsnConvert
   /* static members */
   object AsnConvert {
     
@@ -137,7 +137,7 @@ object mod {
   @JSImport("@peculiar/asn1-schema", "AsnParser")
   @js.native
   open class AsnParser ()
-    extends typings.peculiarAsn1Schema.parserMod.AsnParser
+    extends typings.peculiarAsn1Schema.buildTypesParserMod.AsnParser
   /* static members */
   object AsnParser {
     
@@ -171,74 +171,74 @@ object mod {
   object AsnPropTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.peculiarAsn1Schema.enumsMod.AsnPropTypes & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes & Double] = js.native
     
-    /* 1 */ val Any: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.Any & Double = js.native
+    /* 1 */ val Any: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.Any & Double = js.native
     
-    /* 4 */ val BitString: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.BitString & Double = js.native
+    /* 4 */ val BitString: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.BitString & Double = js.native
     
-    /* 9 */ val BmpString: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.BmpString & Double = js.native
+    /* 9 */ val BmpString: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.BmpString & Double = js.native
     
-    /* 2 */ val Boolean: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.Boolean & Double = js.native
+    /* 2 */ val Boolean: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.Boolean & Double = js.native
     
-    /* 19 */ val CharacterString: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.CharacterString & Double = js.native
+    /* 19 */ val CharacterString: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.CharacterString & Double = js.native
     
-    /* 22 */ val DATE: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.DATE & Double = js.native
+    /* 22 */ val DATE: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.DATE & Double = js.native
     
-    /* 24 */ val DateTime: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.DateTime & Double = js.native
+    /* 24 */ val DateTime: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.DateTime & Double = js.native
     
-    /* 25 */ val Duration: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.Duration & Double = js.native
+    /* 25 */ val Duration: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.Duration & Double = js.native
     
-    /* 6 */ val Enumerated: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.Enumerated & Double = js.native
+    /* 6 */ val Enumerated: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.Enumerated & Double = js.native
     
-    /* 18 */ val GeneralString: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.GeneralString & Double = js.native
+    /* 18 */ val GeneralString: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.GeneralString & Double = js.native
     
-    /* 21 */ val GeneralizedTime: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.GeneralizedTime & Double = js.native
+    /* 21 */ val GeneralizedTime: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.GeneralizedTime & Double = js.native
     
-    /* 16 */ val GraphicString: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.GraphicString & Double = js.native
+    /* 16 */ val GraphicString: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.GraphicString & Double = js.native
     
-    /* 15 */ val IA5String: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.IA5String & Double = js.native
+    /* 15 */ val IA5String: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.IA5String & Double = js.native
     
-    /* 5 */ val Integer: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.Integer & Double = js.native
+    /* 5 */ val Integer: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.Integer & Double = js.native
     
-    /* 27 */ val Null: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.Null & Double = js.native
+    /* 27 */ val Null: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.Null & Double = js.native
     
-    /* 11 */ val NumericString: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.NumericString & Double = js.native
+    /* 11 */ val NumericString: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.NumericString & Double = js.native
     
-    /* 7 */ val ObjectIdentifier: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.ObjectIdentifier & Double = js.native
+    /* 7 */ val ObjectIdentifier: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.ObjectIdentifier & Double = js.native
     
-    /* 3 */ val OctetString: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.OctetString & Double = js.native
+    /* 3 */ val OctetString: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.OctetString & Double = js.native
     
-    /* 12 */ val PrintableString: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.PrintableString & Double = js.native
+    /* 12 */ val PrintableString: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.PrintableString & Double = js.native
     
-    /* 26 */ val TIME: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.TIME & Double = js.native
+    /* 26 */ val TIME: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.TIME & Double = js.native
     
-    /* 13 */ val TeletexString: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.TeletexString & Double = js.native
+    /* 13 */ val TeletexString: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.TeletexString & Double = js.native
     
-    /* 23 */ val TimeOfDay: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.TimeOfDay & Double = js.native
+    /* 23 */ val TimeOfDay: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.TimeOfDay & Double = js.native
     
-    /* 20 */ val UTCTime: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.UTCTime & Double = js.native
+    /* 20 */ val UTCTime: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.UTCTime & Double = js.native
     
-    /* 10 */ val UniversalString: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.UniversalString & Double = js.native
+    /* 10 */ val UniversalString: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.UniversalString & Double = js.native
     
-    /* 8 */ val Utf8String: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.Utf8String & Double = js.native
+    /* 8 */ val Utf8String: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.Utf8String & Double = js.native
     
-    /* 14 */ val VideotexString: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.VideotexString & Double = js.native
+    /* 14 */ val VideotexString: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.VideotexString & Double = js.native
     
-    /* 17 */ val VisibleString: typings.peculiarAsn1Schema.enumsMod.AsnPropTypes.VisibleString & Double = js.native
+    /* 17 */ val VisibleString: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes.VisibleString & Double = js.native
   }
   
   @JSImport("@peculiar/asn1-schema", "AsnSchemaValidationError")
   @js.native
   open class AsnSchemaValidationError ()
-    extends typings.peculiarAsn1Schema.errorsMod.AsnSchemaValidationError
+    extends typings.peculiarAsn1Schema.buildTypesErrorsMod.AsnSchemaValidationError
   
   inline def AsnSequenceType(options: IAsn1SequenceOptions): AsnTypeDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AsnSequenceType")(options.asInstanceOf[js.Any]).asInstanceOf[AsnTypeDecorator]
   
   @JSImport("@peculiar/asn1-schema", "AsnSerializer")
   @js.native
   open class AsnSerializer ()
-    extends typings.peculiarAsn1Schema.serializerMod.AsnSerializer
+    extends typings.peculiarAsn1Schema.buildTypesSerializerMod.AsnSerializer
   /* static members */
   object AsnSerializer {
     
@@ -277,13 +277,13 @@ object mod {
   object AsnTypeTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.peculiarAsn1Schema.enumsMod.AsnTypeTypes & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnTypeTypes & Double] = js.native
     
-    /* 2 */ val Choice: typings.peculiarAsn1Schema.enumsMod.AsnTypeTypes.Choice & Double = js.native
+    /* 2 */ val Choice: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnTypeTypes.Choice & Double = js.native
     
-    /* 0 */ val Sequence: typings.peculiarAsn1Schema.enumsMod.AsnTypeTypes.Sequence & Double = js.native
+    /* 0 */ val Sequence: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnTypeTypes.Sequence & Double = js.native
     
-    /* 1 */ val Set: typings.peculiarAsn1Schema.enumsMod.AsnTypeTypes.Set & Double = js.native
+    /* 1 */ val Set: typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnTypeTypes.Set & Double = js.native
   }
   
   @JSImport("@peculiar/asn1-schema", "AsnUTCTimeConverter")
@@ -309,7 +309,7 @@ object mod {
   @JSImport("@peculiar/asn1-schema", "BitString")
   @js.native
   open class BitString[T /* <: Double */] ()
-    extends typings.peculiarAsn1Schema.indexMod.BitString[T] {
+    extends typings.peculiarAsn1Schema.buildTypesTypesIndexMod.BitString[T] {
     def this(value: T) = this()
     def this(value: BufferSource) = this()
     def this(value: BufferSource, unusedBits: Double) = this()
@@ -318,7 +318,7 @@ object mod {
   @JSImport("@peculiar/asn1-schema", "OctetString")
   @js.native
   open class OctetString ()
-    extends typings.peculiarAsn1Schema.indexMod.OctetString {
+    extends typings.peculiarAsn1Schema.buildTypesTypesIndexMod.OctetString {
     def this(byteLength: Double) = this()
     def this(bytes: js.Array[Double]) = this()
     def this(bytes: BufferSource) = this()

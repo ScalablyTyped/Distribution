@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Engines/index", "ValidatedNativeDataStream")
 @js.native
 open class ValidatedNativeDataStream ()
-  extends typings.babylonjs.nativeIndexMod.ValidatedNativeDataStream
+  extends typings.babylonjs.enginesNativeIndexMod.ValidatedNativeDataStream

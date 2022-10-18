@@ -1,5 +1,6 @@
 package typings.googleMaps.google.maps
 
+import typings.googleMaps.google.maps.marker.AdvancedMarkerView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ trait InfoWindowOpenOptions extends StObject {
     * anchor. The InfoWindow will be rendered on the same map or panorama as
     * the anchor <strong>(when available)</strong>.
     */
-  var anchor: js.UndefOr[MVCObject | Null] = js.undefined
+  var anchor: js.UndefOr[MVCObject | Null | AdvancedMarkerView] = js.undefined
   
   /**
     * The map or panorama on which to render this InfoWindow.
@@ -41,7 +42,7 @@ object InfoWindowOpenOptions {
   
   extension [Self <: InfoWindowOpenOptions](x: Self) {
     
-    inline def setAnchor(value: MVCObject): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: MVCObject | AdvancedMarkerView): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     inline def setAnchorNull: Self = StObject.set(x, "anchor", null)
     

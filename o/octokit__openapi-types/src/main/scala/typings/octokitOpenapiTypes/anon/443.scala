@@ -7,11 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `443` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: js.Array[Nodeid]
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['branch-restriction-policy'] */ js.Any
 }
 object `443` {
   
-  inline def apply(applicationSlashjson: js.Array[Nodeid]): `443` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['branch-restriction-policy'] */ js.Any
+  ): `443` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`443`]
@@ -19,8 +21,8 @@ object `443` {
   
   extension [Self <: `443`](x: Self) {
     
-    inline def setApplicationSlashjson(value: js.Array[Nodeid]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonVarargs(value: Nodeid*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['branch-restriction-policy'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

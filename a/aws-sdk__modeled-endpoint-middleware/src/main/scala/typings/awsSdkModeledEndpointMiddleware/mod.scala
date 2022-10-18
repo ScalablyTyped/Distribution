@@ -1,7 +1,7 @@
 package typings.awsSdkModeledEndpointMiddleware
 
-import typings.awsSdkTypes.middlewareMod.BuildMiddleware
-import typings.awsSdkTypes.utilMod.UrlParser
+import typings.awsSdkTypes.distTypesMiddlewareMod.BuildMiddleware
+import typings.awsSdkTypes.distTypesUtilMod.UrlParser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

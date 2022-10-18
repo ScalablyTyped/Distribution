@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WorkerPool")
 @js.native
 open class WorkerPool protected ()
-  extends typings.babylonjs.legacyMod.WorkerPool {
+  extends typings.babylonjs.legacyLegacyMod.WorkerPool {
   /**
     * Constructor
     * @param workers Array of workers to use for actions

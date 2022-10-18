@@ -1,6 +1,6 @@
 package typings.sipJs.mod
 
-import typings.sipJs.registererOptionsMod.RegistererOptions
+import typings.sipJs.libApiRegistererOptionsMod.RegistererOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Registerer")
 @js.native
 open class Registerer protected ()
-  extends typings.sipJs.apiMod.Registerer {
+  extends typings.sipJs.libApiMod.Registerer {
   /**
     * Constructs a new instance of the `Registerer` class.
     * @param userAgent - User agent. See {@link UserAgent} for details.
     * @param options - Options bucket. See {@link RegistererOptions} for details.
     */
-  def this(userAgent: typings.sipJs.userAgentMod.UserAgent) = this()
-  def this(userAgent: typings.sipJs.userAgentMod.UserAgent, options: RegistererOptions) = this()
+  def this(userAgent: typings.sipJs.libApiUserAgentMod.UserAgent) = this()
+  def this(userAgent: typings.sipJs.libApiUserAgentMod.UserAgent, options: RegistererOptions) = this()
 }
 /* static members */
 object Registerer {

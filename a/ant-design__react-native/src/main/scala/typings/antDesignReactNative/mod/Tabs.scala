@@ -1,8 +1,8 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.TypeofDefaultTabBar
-import typings.antDesignReactNative.tabsMod.default
-import typings.antDesignReactNative.tabsPropsTypeMod.PropsType
+import typings.antDesignReactNative.libTabsMod.default
+import typings.antDesignReactNative.libTabsPropsTypeMod.PropsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

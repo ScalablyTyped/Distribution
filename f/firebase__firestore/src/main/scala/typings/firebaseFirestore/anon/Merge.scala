@@ -1,6 +1,6 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.mod.SetOptions
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcLiteApiReferenceMod.SetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Merge
   extends StObject
      with SetOptions
-     with typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.SetOptions
+     with typings.firebaseFirestore.mod.SetOptions
+     with typings.firebaseFirestore.distLiteInternalMod.SetOptions
+     with typings.firebaseFirestore.distInternalMod.SetOptions
+     with typings.firebaseFirestore.distFirestoreSrcLiteApiReferenceMod.SetOptions
      with typings.firebaseFirestore.distLiteMod.SetOptions
-     with typings.firebaseFirestore.liteInternalMod.SetOptions
-     with typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.SetOptions
-     with typings.firebaseFirestore.srcLiteApiReferenceMod.SetOptions
-     with typings.firebaseFirestore.distPrivateMod.SetOptions
-     with typings.firebaseFirestore.privateMod.SetOptions
-     with typings.firebaseFirestore.internalMod.SetOptions
-     with typings.firebaseFirestore.liteApiReferenceMod.SetOptions {
+     with typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.SetOptions
+     with typings.firebaseFirestore.distLiteFirestoreSrcLiteApiReferenceMod.SetOptions
+     with typings.firebaseFirestore.distLitePrivateMod.SetOptions
+     with typings.firebaseFirestore.distPrivateMod.SetOptions {
   
   val merge: js.UndefOr[Boolean] = js.undefined
 }

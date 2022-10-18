@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Oriented")
 @js.native
 open class Oriented ()
-  extends typings.blackEngine.orientedMod.Oriented {
+  extends typings.blackEngine.particlesModsOrientedMod.Oriented {
   def this(angleShift: Double) = this()
 }

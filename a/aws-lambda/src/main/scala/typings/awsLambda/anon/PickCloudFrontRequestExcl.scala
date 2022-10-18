@@ -1,7 +1,7 @@
 package typings.awsLambda.anon
 
-import typings.awsLambda.cloudfrontMod.CloudFrontHeaders
-import typings.awsLambda.cloudfrontMod.CloudFrontOrigin
+import typings.awsLambda.commonCloudfrontMod.CloudFrontHeaders
+import typings.awsLambda.commonCloudfrontMod.CloudFrontOrigin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

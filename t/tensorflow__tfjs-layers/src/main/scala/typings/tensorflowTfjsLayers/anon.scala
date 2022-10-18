@@ -2,8 +2,8 @@ package typings.tensorflowTfjsLayers
 
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsLayers.baseCallbacksMod.History
-import typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor
+import typings.tensorflowTfjsLayers.distBaseCallbacksMod.History
+import typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +12,20 @@ object anon {
   
   trait CallbackList extends StObject {
     
-    var callbackList: typings.tensorflowTfjsLayers.baseCallbacksMod.CallbackList
+    var callbackList: typings.tensorflowTfjsLayers.distBaseCallbacksMod.CallbackList
     
     var history: History
   }
   object CallbackList {
     
-    inline def apply(callbackList: typings.tensorflowTfjsLayers.baseCallbacksMod.CallbackList, history: History): CallbackList = {
+    inline def apply(callbackList: typings.tensorflowTfjsLayers.distBaseCallbacksMod.CallbackList, history: History): CallbackList = {
       val __obj = js.Dynamic.literal(callbackList = callbackList.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallbackList]
     }
     
     extension [Self <: CallbackList](x: Self) {
       
-      inline def setCallbackList(value: typings.tensorflowTfjsLayers.baseCallbacksMod.CallbackList): Self = StObject.set(x, "callbackList", value.asInstanceOf[js.Any])
+      inline def setCallbackList(value: typings.tensorflowTfjsLayers.distBaseCallbacksMod.CallbackList): Self = StObject.set(x, "callbackList", value.asInstanceOf[js.Any])
       
       inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     }
@@ -139,14 +139,14 @@ object anon {
   
   trait RecipientMap extends StObject {
     
-    var recipientMap: typings.tensorflowTfjsLayers.executorMod.RecipientMap
+    var recipientMap: typings.tensorflowTfjsLayers.distEngineExecutorMod.RecipientMap
     
     var sorted: js.Array[SymbolicTensor]
   }
   object RecipientMap {
     
     inline def apply(
-      recipientMap: typings.tensorflowTfjsLayers.executorMod.RecipientMap,
+      recipientMap: typings.tensorflowTfjsLayers.distEngineExecutorMod.RecipientMap,
       sorted: js.Array[SymbolicTensor]
     ): RecipientMap = {
       val __obj = js.Dynamic.literal(recipientMap = recipientMap.asInstanceOf[js.Any], sorted = sorted.asInstanceOf[js.Any])
@@ -155,7 +155,7 @@ object anon {
     
     extension [Self <: RecipientMap](x: Self) {
       
-      inline def setRecipientMap(value: typings.tensorflowTfjsLayers.executorMod.RecipientMap): Self = StObject.set(x, "recipientMap", value.asInstanceOf[js.Any])
+      inline def setRecipientMap(value: typings.tensorflowTfjsLayers.distEngineExecutorMod.RecipientMap): Self = StObject.set(x, "recipientMap", value.asInstanceOf[js.Any])
       
       inline def setSorted(value: js.Array[SymbolicTensor]): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
       

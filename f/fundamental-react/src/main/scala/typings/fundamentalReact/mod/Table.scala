@@ -2,7 +2,7 @@ package typings.fundamentalReact.mod
 
 import typings.fundamentalReact.anon.PartialTableProps
 import typings.fundamentalReact.anon.WeakValidationMapTablePro
-import typings.fundamentalReact.tableMod.TableProps
+import typings.fundamentalReact.libTableTableMod.TableProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

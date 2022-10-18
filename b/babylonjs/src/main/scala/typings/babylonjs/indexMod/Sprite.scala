@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.spriteManagerMod.ISpriteManager
+import typings.babylonjs.spritesSpriteManagerMod.ISpriteManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,5 +30,5 @@ object Sprite {
     * @param manager defines the hosting manager
     * @returns the new sprite
     */
-  inline def Parse(parsedSprite: Any, manager: typings.babylonjs.spriteManagerMod.SpriteManager): typings.babylonjs.spriteMod.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSprite.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.spriteMod.Sprite]
+  inline def Parse(parsedSprite: Any, manager: typings.babylonjs.spritesSpriteManagerMod.SpriteManager): typings.babylonjs.spritesSpriteMod.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSprite.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.spritesSpriteMod.Sprite]
 }

@@ -1,8 +1,8 @@
 package typings.azureMsalCommon.anon
 
-import typings.azureMsalCommon.icryptoMod.PkceCodes
-import typings.azureMsalCommon.icryptoMod.SignedHttpRequestParameters
-import typings.azureMsalCommon.signedHttpRequestMod.SignedHttpRequest
+import typings.azureMsalCommon.distCryptoIcryptoMod.PkceCodes
+import typings.azureMsalCommon.distCryptoIcryptoMod.SignedHttpRequestParameters
+import typings.azureMsalCommon.distCryptoSignedHttpRequestMod.SignedHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

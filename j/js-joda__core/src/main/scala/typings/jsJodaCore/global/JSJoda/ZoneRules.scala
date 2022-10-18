@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("JSJoda.ZoneRules")
+/* note: abstract class */ @JSGlobal("JSJoda.ZoneRules")
 @js.native
-abstract class ZoneRules ()
+open class ZoneRules ()
   extends typings.jsJodaCore.mod.ZoneRules
 /* static members */
 object ZoneRules {

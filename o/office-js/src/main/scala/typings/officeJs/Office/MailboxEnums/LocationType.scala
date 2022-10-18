@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait LocationType extends StObject
 /**
   * Specifies an appointment location's type.
-  * 
+  *
   * @remarks
   * [Api set: Mailbox 1.8]
-  * 
+  *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.LocationType")

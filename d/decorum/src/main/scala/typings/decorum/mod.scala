@@ -20,9 +20,9 @@ object mod {
   inline def AlphaNumeric(message: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AlphaNumeric")(message.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def AlphaNumeric(message: MessageHandler[PatternValidator]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AlphaNumeric")(message.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("decorum", "BaseValidator")
+  /* note: abstract class */ @JSImport("decorum", "BaseValidator")
   @js.native
-  abstract class BaseValidator protected () extends StObject {
+  open class BaseValidator protected () extends StObject {
     /**
       * Initializes the {BaseValidator}
       * @param validatorKey A unique "key" by which to identify this field validator i.e. length, maxlength,

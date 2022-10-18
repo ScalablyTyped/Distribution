@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "AtlasTexture")
 @js.native
 open class AtlasTexture protected ()
-  extends typings.blackEngine.atlasTextureMod.AtlasTexture {
+  extends typings.blackEngine.texturesAtlasTextureMod.AtlasTexture {
   def this(nativeElement: Any, jsonObject: Any) = this()
   def this(nativeElement: Any, jsonObject: Any, scale: Double) = this()
 }

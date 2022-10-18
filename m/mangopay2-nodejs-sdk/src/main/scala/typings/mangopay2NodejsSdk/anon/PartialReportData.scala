@@ -3,9 +3,9 @@ package typings.mangopay2NodejsSdk.anon
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CSV
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSACTION
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WALLET
-import typings.mangopay2NodejsSdk.reportMod.report.Column
-import typings.mangopay2NodejsSdk.reportMod.report.Filters
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
+import typings.mangopay2NodejsSdk.typingsModelsReportMod.report.Column
+import typings.mangopay2NodejsSdk.typingsModelsReportMod.report.Filters
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ trait PartialReportData extends StObject {
   
   var DownloadURL: js.UndefOr[String] = js.undefined
   
-  var Filters: js.UndefOr[typings.mangopay2NodejsSdk.reportMod.report.Filters] = js.undefined
+  var Filters: js.UndefOr[typings.mangopay2NodejsSdk.typingsModelsReportMod.report.Filters] = js.undefined
   
   var Id: js.UndefOr[String] = js.undefined
   

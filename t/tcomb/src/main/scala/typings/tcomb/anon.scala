@@ -113,12 +113,14 @@ object anon {
     
     var kind: String
     
+    var map: js.Object
+    
     var name: String
   }
   object Identity {
     
-    inline def apply(identity: Boolean, kind: String, name: String): Identity = {
-      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    inline def apply(identity: Boolean, kind: String, map: js.Object, name: String): Identity = {
+      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Identity]
     }
     
@@ -127,6 +129,8 @@ object anon {
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
       inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      
+      inline def setMap(value: js.Object): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -140,104 +144,13 @@ object anon {
     
     var name: String
     
-    var types: js.Array[Constructor[T]]
-  }
-  object IdentityKind {
-    
-    inline def apply[T](identity: Boolean, kind: String, name: String, types: js.Array[Constructor[T]]): IdentityKind[T] = {
-      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IdentityKind[T]]
-    }
-    
-    extension [Self <: IdentityKind[?], T](x: Self & IdentityKind[T]) {
-      
-      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
-      
-      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setTypes(value: js.Array[Constructor[T]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
-      
-      inline def setTypesVarargs(value: Constructor[T]*): Self = StObject.set(x, "types", js.Array(value*))
-    }
-  }
-  
-  trait Kind[T] extends StObject {
-    
-    var identity: Boolean
-    
-    var kind: String
-    
-    var name: String
-    
-    def predicate(x: Any): /* is T */ Boolean
-    @JSName("predicate")
-    var predicate_Original: TypeGuardPredicate[T]
-  }
-  object Kind {
-    
-    inline def apply[T](identity: Boolean, kind: String, name: String, predicate: /* x */ Any => /* is T */ Boolean): Kind[T] = {
-      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], predicate = js.Any.fromFunction1(predicate))
-      __obj.asInstanceOf[Kind[T]]
-    }
-    
-    extension [Self <: Kind[?], T](x: Self & Kind[T]) {
-      
-      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
-      
-      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setPredicate(value: /* x */ Any => /* is T */ Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
-    }
-  }
-  
-  trait Map extends StObject {
-    
-    var identity: Boolean
-    
-    var kind: String
-    
-    var map: js.Object
-    
-    var name: String
-  }
-  object Map {
-    
-    inline def apply(identity: Boolean, kind: String, map: js.Object, name: String): Map = {
-      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Map]
-    }
-    
-    extension [Self <: Map](x: Self) {
-      
-      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
-      
-      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-      
-      inline def setMap(value: js.Object): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Name[T] extends StObject {
-    
-    var identity: Boolean
-    
-    var kind: String
-    
-    var name: String
-    
     def predicate(x: Any): /* is T */ Boolean
     @JSName("predicate")
     var predicate_Original: TypeGuardPredicate[T]
     
     var `type`: Constructor[T]
   }
-  object Name {
+  object IdentityKind {
     
     inline def apply[T](
       identity: Boolean,
@@ -245,13 +158,13 @@ object anon {
       name: String,
       predicate: /* x */ Any => /* is T */ Boolean,
       `type`: Constructor[T]
-    ): Name[T] = {
+    ): IdentityKind[T] = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], predicate = js.Any.fromFunction1(predicate))
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Name[T]]
+      __obj.asInstanceOf[IdentityKind[T]]
     }
     
-    extension [Self <: Name[?], T](x: Self & Name[T]) {
+    extension [Self <: IdentityKind[?], T](x: Self & IdentityKind[T]) {
       
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
@@ -265,7 +178,7 @@ object anon {
     }
   }
   
-  trait Props extends StObject {
+  trait Kind extends StObject {
     
     var identity: Boolean
     
@@ -277,14 +190,14 @@ object anon {
     
     var strict: Boolean
   }
-  object Props {
+  object Kind {
     
-    inline def apply(identity: Boolean, kind: String, name: String, props: StructProps, strict: Boolean): Props = {
+    inline def apply(identity: Boolean, kind: String, name: String, props: StructProps, strict: Boolean): Kind = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], strict = strict.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Props]
+      __obj.asInstanceOf[Kind]
     }
     
-    extension [Self <: Props](x: Self) {
+    extension [Self <: Kind](x: Self) {
       
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
@@ -295,6 +208,93 @@ object anon {
       inline def setProps(value: StructProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait KindName extends StObject {
+    
+    var identity: Boolean
+    
+    var kind: String
+    
+    var name: String
+  }
+  object KindName {
+    
+    inline def apply(identity: Boolean, kind: String, name: String): KindName = {
+      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[KindName]
+    }
+    
+    extension [Self <: KindName](x: Self) {
+      
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Name extends StObject {
+    
+    var identity: Boolean
+    
+    var kind: String
+    
+    var name: String
+    
+    var types: js.Array[Constructor[Any]]
+  }
+  object Name {
+    
+    inline def apply(identity: Boolean, kind: String, name: String, types: js.Array[Constructor[Any]]): Name = {
+      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Name]
+    }
+    
+    extension [Self <: Name](x: Self) {
+      
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setTypes(value: js.Array[Constructor[Any]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      
+      inline def setTypesVarargs(value: Constructor[Any]*): Self = StObject.set(x, "types", js.Array(value*))
+    }
+  }
+  
+  trait Predicate[T] extends StObject {
+    
+    var identity: Boolean
+    
+    var kind: String
+    
+    var name: String
+    
+    def predicate(x: Any): /* is T */ Boolean
+    @JSName("predicate")
+    var predicate_Original: TypeGuardPredicate[T]
+  }
+  object Predicate {
+    
+    inline def apply[T](identity: Boolean, kind: String, name: String, predicate: /* x */ Any => /* is T */ Boolean): Predicate[T] = {
+      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], predicate = js.Any.fromFunction1(predicate))
+      __obj.asInstanceOf[Predicate[T]]
+    }
+    
+    extension [Self <: Predicate[?], T](x: Self & Predicate[T]) {
+      
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPredicate(value: /* x */ Any => /* is T */ Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
     }
   }
   
@@ -328,7 +328,7 @@ object anon {
     }
   }
   
-  trait Types extends StObject {
+  trait Types[T] extends StObject {
     
     var identity: Boolean
     
@@ -336,16 +336,16 @@ object anon {
     
     var name: String
     
-    var types: js.Array[Constructor[Any]]
+    var types: js.Array[Constructor[T]]
   }
   object Types {
     
-    inline def apply(identity: Boolean, kind: String, name: String, types: js.Array[Constructor[Any]]): Types = {
+    inline def apply[T](identity: Boolean, kind: String, name: String, types: js.Array[Constructor[T]]): Types[T] = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Types]
+      __obj.asInstanceOf[Types[T]]
     }
     
-    extension [Self <: Types](x: Self) {
+    extension [Self <: Types[?], T](x: Self & Types[T]) {
       
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
@@ -353,9 +353,9 @@ object anon {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setTypes(value: js.Array[Constructor[Any]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[Constructor[T]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      inline def setTypesVarargs(value: Constructor[Any]*): Self = StObject.set(x, "types", js.Array(value*))
+      inline def setTypesVarargs(value: Constructor[T]*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
 }

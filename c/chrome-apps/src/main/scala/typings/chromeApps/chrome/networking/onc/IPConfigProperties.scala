@@ -19,7 +19,9 @@ trait IPConfigProperties[M /* <: ManagedObject */, B, S, SL, L] extends StObject
   var RoutingPrefix: js.UndefOr[L] = js.undefined
   
   /** The IP configuration type. Can be IPv4 or IPv6. */
-  var Type: js.UndefOr[IPConfigurationType | ManagedType[IPConfigurationType]] = js.undefined
+  var Type: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedType<chrome-apps.chrome.networking.onc.IPConfigurationType> : chrome-apps.chrome.networking.onc.IPConfigurationType | undefined */ js.Any
+  ] = js.undefined
   
   /** The URL for WEb Proxy Auto-Discovery, as reported over DHCP. */
   var WebProxyAutoDiscoveryUrl: js.UndefOr[S] = js.undefined
@@ -49,7 +51,9 @@ object IPConfigProperties {
     
     inline def setRoutingPrefixUndefined: Self = StObject.set(x, "RoutingPrefix", js.undefined)
     
-    inline def setType(value: IPConfigurationType | ManagedType[IPConfigurationType]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedType<chrome-apps.chrome.networking.onc.IPConfigurationType> : chrome-apps.chrome.networking.onc.IPConfigurationType | undefined */ js.Any
+    ): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     

@@ -14,31 +14,31 @@ trait Rotate extends StObject {
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.data.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.label)
     *
     * `width` or `height` can be specified when using background
     * image, or auto adapted by default.
     *
-    * If set as `'auto'`, the color will assigned as visual
-    * color, such as series color.
+    * If set as `'auto'`, the color will assigned as visual color,
+    * such as series color.
     *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.backgroundColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   
   /**
     * Border color of the text fregment.
     *
-    * If set as `'auto'`, the color will assigned as visual
-    * color, such as series color.
+    * If set as `'auto'`, the color will assigned as visual color,
+    * such as series color.
     *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   
@@ -46,7 +46,7 @@ trait Rotate extends StObject {
     * Border radius of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.borderRadius
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   
@@ -54,20 +54,20 @@ trait Rotate extends StObject {
     * Border width of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * text color.
     *
-    * If set as `'auto'`, the color will assigned as visual
-    * color, such as series color.
+    * If set as `'auto'`, the color will assigned as visual color,
+    * such as series color.
     *
     *
     * @default
-    * ""#fff""
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.color
+    * '#000'
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.color
     */
   var color: js.UndefOr[String] = js.undefined
   
@@ -82,7 +82,7 @@ trait Rotate extends StObject {
     *
     * @default
     * 5
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.distance
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.distance
     */
   var distance: js.UndefOr[Double] = js.undefined
   
@@ -94,7 +94,7 @@ trait Rotate extends StObject {
     *
     * @default
     * "sans-serif"
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.fontFamily
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   
@@ -103,8 +103,8 @@ trait Rotate extends StObject {
     *
     *
     * @default
-    * 12
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.fontSize
+    * 11
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   
@@ -120,7 +120,7 @@ trait Rotate extends StObject {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.fontStyle
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   
@@ -138,55 +138,9 @@ trait Rotate extends StObject {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.fontWeight
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.fontWeight
     */
-  var fontWeight: js.UndefOr[String | Double] = js.undefined
-  
-  /**
-    * Data label formatter, which supports string template
-    * and callback function.
-    * In either form, `\n` is supported to represent a
-    * new line.
-    *
-    * **String template**
-    *
-    * Model variation includes:
-    *
-    * + `{a}`: series name.
-    * + `{b}`: the name of a data item.
-    * + `{c}`: the value of a data item.
-    * + `{@xxx}: the value of a dimension named`'xxx'`,
-    * for example,`{@product}`refers the value of`'product'\`
-    * dimension。
-    * + `{@[n]}: the value of a dimension at the index
-    * of`n`, for example,`{@\[3\]}\` refers the value at
-    * dimensions\[3\].
-    *
-    * **example:**
-    *
-    * ```
-    * formatter: '{b}: {@score}'
-    *
-    * ```
-    *
-    * **Callback function**
-    *
-    * Callback function is in form of:
-    *
-    * ```
-    * (params: Object|Array) => string
-    *
-    * ```
-    *
-    * where `params` is the single dataset needed by formatter,
-    * which is formed as:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.data.emphasis.label)
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.formatter
-    */
-  var formatter: js.UndefOr[js.Function | String] = js.undefined
+  var fontWeight: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Height of the text block.
@@ -194,54 +148,52 @@ trait Rotate extends StObject {
     * You may want to use it in some cases like using background
     * image (see `backgroundColor`).
     *
-    * Notice, `width` and `height` specifies the width
-    * and height of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width and height
+    * of the content, without `padding`.
     *
-    * Notice, `width` and `height` only work when `rich`
-    * specified.
+    * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.height
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Line height of the text fregment.
     *
-    * If `lineHeight` is not set in `rich`, `lineHeight`
-    * in parent level will be used. For example:
+    * If `lineHeight` is not set in `rich`, `lineHeight` in parent
+    * level will be used. For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.data.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.label)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.lineHeight
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to move text slightly.
-    * For example: `[30, 40]` means move `30` horizontally
-    * and move `40` vertically.
+    * For example: `[30, 40]` means move `30` horizontally and
+    * move `40` vertically.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.offset
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.offset
     */
   var offset: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Padding of the text fregment, for example:
     *
-    * + `padding: [3, 4, 5, 6]`: represents padding of
-    * `[top, right, bottom, left]`.
+    * + `padding: [3, 4, 5, 6]`: represents padding of `[top, right,
+    * bottom, left]`.
     * + `padding: 4`: represents `padding: [4, 4, 4, 4]`.
-    * + `padding: [3, 4]`: represents `padding: [3, 4,
-    * 3, 4]`.
+    * + `padding: [3, 4]`: represents `padding: [3, 4, 3, 4]`.
     *
-    * Notice, `width` and `height` specifies the width
-    * and height of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width and height
+    * of the content, without `padding`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.padding
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.padding
     */
   var padding: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
@@ -252,11 +204,11 @@ trait Rotate extends StObject {
     *
     * + \[x, y\]
     *
-    * Use relative percentage, or absolute pixel values
-    * to represent position of label relative to top-left
-    * corner of bounding box. For example:
+    * Use relative percentage, or absolute pixel values to represent
+    * position of label relative to top-left corner of bounding
+    * box. For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.data.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.label)
     *
     * + 'top'
     *
@@ -278,40 +230,42 @@ trait Rotate extends StObject {
     * .
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.position
+    * @default
+    * "left"
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.position
     */
   var position: js.UndefOr[js.Array[Any] | String] = js.undefined
   
   /**
-    * "Rich text styles" can be defined in this `rich`
-    * property. For example:
+    * "Rich text styles" can be defined in this `rich` property.
+    * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.data.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.label)
     *
     * For more details, see
     * [Rich Text](https://echarts.apache.org/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.rich
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.rich
     */
   var rich: js.UndefOr[
     /**
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Align]
   ] = js.undefined
   
   /**
-    * Rotate label, from -90 degree to 90, positive value
-    * represents rotate anti-clockwise.
+    * Rotate label, from -90 degree to 90, positive value represents
+    * rotate anti-clockwise.
     *
     * See:
     * [label rotation](https://echarts.apache.org/examples/en/editor.html?c=bar-label-rotation)
     * .
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.rotate
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.rotate
     */
   var rotate: js.UndefOr[Double] = js.undefined
   
@@ -319,7 +273,7 @@ trait Rotate extends StObject {
     * Show blur of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -329,7 +283,7 @@ trait Rotate extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   
@@ -337,7 +291,7 @@ trait Rotate extends StObject {
     * Shadow X offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -345,7 +299,7 @@ trait Rotate extends StObject {
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
@@ -353,20 +307,22 @@ trait Rotate extends StObject {
     * Whether to show label.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.show
+    * @default
+    * "true"
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Storke color of the text.
     *
-    * If set as `'auto'`, the color will assigned as visual
-    * color, such as series color.
+    * If set as `'auto'`, the color will assigned as visual color,
+    * such as series color.
     *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.textBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   
@@ -374,7 +330,7 @@ trait Rotate extends StObject {
     * Storke line width of the text.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.textBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   
@@ -382,7 +338,7 @@ trait Rotate extends StObject {
     * Shadow blue of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.textShadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -392,7 +348,7 @@ trait Rotate extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.textShadowColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   
@@ -400,7 +356,7 @@ trait Rotate extends StObject {
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.textShadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -408,7 +364,7 @@ trait Rotate extends StObject {
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.textShadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
   
@@ -416,26 +372,23 @@ trait Rotate extends StObject {
     * Width of the text block.
     * It is the width of the text by default.
     * In most cases, there is no need to specify it.
-    * You may want to use it in some cases like make simple
-    * table or using background image (see `backgroundColor`).
+    * You may want to use it in some cases like make simple table
+    * or using background image (see `backgroundColor`).
     *
-    * Notice, `width` and `height` specifies the width
-    * and height of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width and height
+    * of the content, without `padding`.
     *
-    * `width` can also be percent string, like `'100%'`,
-    * which represents the percent of `contentWidth` (that
-    * is, the width without `padding`) of its container
-    * box.
-    * It is based on `contentWidth` because that each text
-    * fregment is layout based on the `content box`, where
-    * it makes no sense that calculating width based on
-    * `outerWith` in prectice.
+    * `width` can also be percent string, like `'100%'`, which
+    * represents the percent of `contentWidth` (that is, the width
+    * without `padding`) of its container box.
+    * It is based on `contentWidth` because that each text fregment
+    * is layout based on the `content box`, where it makes no sense
+    * that calculating width based on `outerWith` in prectice.
     *
-    * Notice, `width` and `height` only work when `rich`
-    * specified.
+    * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.width
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -484,13 +437,9 @@ object Rotate {
     
     inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    inline def setFontWeight(value: String | Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: Double | String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
-    
-    inline def setFormatter(value: js.Function | String): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
-    
-    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -520,7 +469,7 @@ object Rotate {
     
     inline def setRich(
       value: /**
-      * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
+      * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.rich.%3Cuser%20defined%20style%20name%3E
       */
     StringDictionary[Align]
     ): Self = StObject.set(x, "rich", value.asInstanceOf[js.Any])

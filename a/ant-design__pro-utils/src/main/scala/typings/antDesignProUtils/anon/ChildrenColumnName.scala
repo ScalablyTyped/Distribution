@@ -1,8 +1,8 @@
 package typings.antDesignProUtils.anon
 
-import typings.antDesignProUtils.useEditableArrayMod.RecordKey
-import typings.rcTable.interfaceMod.GetRowKey
-import typings.rcTable.interfaceMod.Key
+import typings.antDesignProUtils.esUseEditableArrayMod.RecordKey
+import typings.rcTable.libInterfaceMod.GetRowKey
+import typings.rcTable.libInterfaceMod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

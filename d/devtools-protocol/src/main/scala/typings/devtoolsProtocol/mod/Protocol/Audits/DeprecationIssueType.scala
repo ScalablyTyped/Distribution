@@ -30,8 +30,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.LocalCSSFileExtensionRejected
   - typings.devtoolsProtocol.devtoolsProtocolStrings.MediaSourceAbortRemove
   - typings.devtoolsProtocol.devtoolsProtocolStrings.MediaSourceDurationTruncatingBuffered
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.NavigateEventRestoreScroll
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.NavigateEventTransitionWhile
   - typings.devtoolsProtocol.devtoolsProtocolStrings.NoSysexWebMIDIWithoutPermission
   - typings.devtoolsProtocol.devtoolsProtocolStrings.NotificationInsecureOrigin
   - typings.devtoolsProtocol.devtoolsProtocolStrings.NotificationPermissionRequestedIframe
@@ -39,6 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.OpenWebDatabaseInsecureContext
   - typings.devtoolsProtocol.devtoolsProtocolStrings.OverflowVisibleOnReplacedElement
   - typings.devtoolsProtocol.devtoolsProtocolStrings.PaymentInstruments
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PaymentRequestCSPViolation
   - typings.devtoolsProtocol.devtoolsProtocolStrings.PersistentQuotaType
   - typings.devtoolsProtocol.devtoolsProtocolStrings.PictureSourceSrc
   - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefixedCancelAnimationFrame
@@ -113,10 +112,6 @@ object DeprecationIssueType {
   
   inline def MediaSourceDurationTruncatingBuffered: typings.devtoolsProtocol.devtoolsProtocolStrings.MediaSourceDurationTruncatingBuffered = "MediaSourceDurationTruncatingBuffered".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.MediaSourceDurationTruncatingBuffered]
   
-  inline def NavigateEventRestoreScroll: typings.devtoolsProtocol.devtoolsProtocolStrings.NavigateEventRestoreScroll = "NavigateEventRestoreScroll".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.NavigateEventRestoreScroll]
-  
-  inline def NavigateEventTransitionWhile: typings.devtoolsProtocol.devtoolsProtocolStrings.NavigateEventTransitionWhile = "NavigateEventTransitionWhile".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.NavigateEventTransitionWhile]
-  
   inline def NoSysexWebMIDIWithoutPermission: typings.devtoolsProtocol.devtoolsProtocolStrings.NoSysexWebMIDIWithoutPermission = "NoSysexWebMIDIWithoutPermission".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.NoSysexWebMIDIWithoutPermission]
   
   inline def NotificationInsecureOrigin: typings.devtoolsProtocol.devtoolsProtocolStrings.NotificationInsecureOrigin = "NotificationInsecureOrigin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.NotificationInsecureOrigin]
@@ -130,6 +125,8 @@ object DeprecationIssueType {
   inline def OverflowVisibleOnReplacedElement: typings.devtoolsProtocol.devtoolsProtocolStrings.OverflowVisibleOnReplacedElement = "OverflowVisibleOnReplacedElement".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.OverflowVisibleOnReplacedElement]
   
   inline def PaymentInstruments: typings.devtoolsProtocol.devtoolsProtocolStrings.PaymentInstruments = "PaymentInstruments".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PaymentInstruments]
+  
+  inline def PaymentRequestCSPViolation: typings.devtoolsProtocol.devtoolsProtocolStrings.PaymentRequestCSPViolation = "PaymentRequestCSPViolation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PaymentRequestCSPViolation]
   
   inline def PersistentQuotaType: typings.devtoolsProtocol.devtoolsProtocolStrings.PersistentQuotaType = "PersistentQuotaType".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PersistentQuotaType]
   

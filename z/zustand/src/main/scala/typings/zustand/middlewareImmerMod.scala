@@ -1,9 +1,7 @@
 package typings.zustand
 
 import typings.std.Omit
-import typings.zustand.anon.`3`
-import typings.zustand.zustandVanillaMod.StateCreator
-import typings.zustand.zustandVanillaMod.StoreMutatorIdentifier
+import typings.zustand.vanillaMod.StateCreator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,27 +12,40 @@ object middlewareImmerMod {
   @js.native
   val immer: Immer_ = js.native
   
+  type Immer_ = js.Function1[
+    /* initializer */ StateCreator[
+      Any, 
+      /* import warning: importer.ImportType#apply c repeated non-array type: [] */ js.Array[js.Array[Any]], 
+      js.Array[Any], 
+      Any
+    ], 
+    StateCreator[
+      Any, 
+      js.Array[Any], 
+      /* import warning: importer.ImportType#apply c repeated non-array type: [] */ js.Array[js.Array[Any]], 
+      Any
+    ]
+  ]
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends [] ? [] : T extends [unknown] ? [] : T extends [unknown | undefined] ? [] : T extends [unknown, unknown, ...infer A] ? A : T extends [unknown, unknown | undefined, ...infer A] ? A : T extends [unknown | undefined, unknown | undefined, ...infer A] ? A : never
+    }}}
+    */
   @js.native
-  trait Immer_ extends StObject {
-    
-    def apply[T, Mps /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */, Mcs /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */](
-      initializer: StateCreator[
-          T, 
-          /* import warning: importer.ImportType#apply c repeated non-array type: Mps */ js.Array[Mps], 
-          Mcs, 
-          T
-        ]
-    ): StateCreator[
-        T, 
-        Mps, 
-        /* import warning: importer.ImportType#apply c repeated non-array type: Mcs */ js.Array[Mcs], 
-        T
-      ] = js.native
-  }
+  trait SkipTwo[T] extends StObject
   
-  type SkipTwo[T] = Any | js.Array[Any]
-  
-  type StoreImmer[S] = `3`
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S extends {getState (): infer T,   setState :infer SetState} ? SetState extends (a : infer A): infer Sr ? {setState (nextStateOrUpdater : T, shouldReplace : boolean, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : std.Partial<T>, shouldReplace : boolean, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : (state : immer.immer/dist/types/types-external.Draft<T>): void, shouldReplace : boolean, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : T, shouldReplace : undefined, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : std.Partial<T>, shouldReplace : undefined, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : (state : immer.immer/dist/types/types-external.Draft<T>): void, shouldReplace : undefined, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr} : never : never
+    }}}
+    */
+  @js.native
+  trait StoreImmer[S] extends StObject
   
   type WithImmer[S] = Write[S, StoreImmer[S]]
   

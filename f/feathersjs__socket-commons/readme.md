@@ -10,10 +10,10 @@ Shared functionality for websocket providers
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/socket-commons |
 | Keywords           | feathers, feathers-plugin |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 331962 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7527.0 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/feathersjs/socket-commons)

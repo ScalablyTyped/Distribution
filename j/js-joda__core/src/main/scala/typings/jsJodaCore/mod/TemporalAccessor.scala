@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@js-joda/core", "TemporalAccessor")
+/* note: abstract class */ @JSImport("@js-joda/core", "TemporalAccessor")
 @js.native
-abstract class TemporalAccessor () extends StObject {
+open class TemporalAccessor () extends StObject {
   
   /**
     * Gets the value of the specified field as an integer number.

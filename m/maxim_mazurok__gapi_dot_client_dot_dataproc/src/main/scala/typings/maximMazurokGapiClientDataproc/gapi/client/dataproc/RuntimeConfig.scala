@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait RuntimeConfig extends StObject {
   
   /** Optional. A mapping of property names to values, which are used to configure workload execution. */
   var properties: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.RuntimeConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Optional. Version of the batch runtime. */
@@ -34,9 +31,7 @@ object RuntimeConfig {
     inline def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
     
     inline def setProperties(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.RuntimeConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)

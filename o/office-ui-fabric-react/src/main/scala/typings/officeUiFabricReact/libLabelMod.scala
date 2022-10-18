@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.labelTypesMod.ILabelProps
+import typings.officeUiFabricReact.libComponentsLabelLabelDottypesMod.ILabelProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object libLabelMod {
   @JSImport("office-ui-fabric-react/lib/Label", "LabelBase")
   @js.native
   open class LabelBase protected ()
-    extends typings.officeUiFabricReact.labelMod.LabelBase {
+    extends typings.officeUiFabricReact.libComponentsLabelMod.LabelBase {
     def this(props: ILabelProps) = this()
     /**
       * @deprecated

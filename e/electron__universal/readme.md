@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron__universal
 
-Typings are for version 1.3.0
+Typings are for version 1.3.1
 
 ## Library description:
 Utility for creating Universal macOS applications from two x64 and arm64 Electron applications

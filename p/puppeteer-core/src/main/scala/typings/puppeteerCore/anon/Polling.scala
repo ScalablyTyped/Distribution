@@ -1,6 +1,6 @@
 package typings.puppeteerCore.anon
 
-import typings.puppeteerCore.commonElementHandleMod.ElementHandle
+import typings.puppeteerCore.libEsmPuppeteerCommonElementHandleMod.ElementHandle
 import typings.puppeteerCore.puppeteerCoreStrings.mutation
 import typings.puppeteerCore.puppeteerCoreStrings.raf
 import typings.std.Map

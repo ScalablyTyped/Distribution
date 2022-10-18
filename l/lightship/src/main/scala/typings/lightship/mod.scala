@@ -1,7 +1,7 @@
 package typings.lightship
 
-import typings.lightship.typesMod.ConfigurationInput
-import typings.lightship.typesMod.Lightship
+import typings.lightship.distSrcTypesMod.ConfigurationInput
+import typings.lightship.distSrcTypesMod.Lightship
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

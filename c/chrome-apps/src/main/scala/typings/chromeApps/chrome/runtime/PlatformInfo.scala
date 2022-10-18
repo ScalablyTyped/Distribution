@@ -12,18 +12,6 @@ import typings.chromeApps.chromeAppsStrings.OPENBSD
 import typings.chromeApps.chromeAppsStrings.WIN
 import typings.chromeApps.chromeAppsStrings.X86_32
 import typings.chromeApps.chromeAppsStrings.X86_64
-import typings.chromeApps.chromeAppsStrings.`x86-32`
-import typings.chromeApps.chromeAppsStrings.`x86-64`
-import typings.chromeApps.chromeAppsStrings.android_
-import typings.chromeApps.chromeAppsStrings.arm_
-import typings.chromeApps.chromeAppsStrings.cros_
-import typings.chromeApps.chromeAppsStrings.linux_
-import typings.chromeApps.chromeAppsStrings.mac_
-import typings.chromeApps.chromeAppsStrings.mips64_
-import typings.chromeApps.chromeAppsStrings.mips_
-import typings.chromeApps.chromeAppsStrings.openbsd_
-import typings.chromeApps.chromeAppsStrings.win_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,10 +29,7 @@ trait PlatformInfo extends StObject {
   var arch: ToStringLiteral[
     ARM, 
     /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-    Exclude[
-      /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-      mips64_ | arm_ | `x86-64` | `x86-32` | mips_
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} extends keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} ? std.Exclude<keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'}, 'mips64' | 'arm' | 'x86-64' | 'x86-32' | 'mips'> : never */ js.Any
   ]
   
   /**
@@ -54,10 +39,7 @@ trait PlatformInfo extends StObject {
   var nacl_arch: ToStringLiteral[
     ARM, 
     /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-    Exclude[
-      /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-      mips64_ | arm_ | `x86-64` | `x86-32` | mips_
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} extends keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} ? std.Exclude<keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'}, 'mips64' | 'arm' | 'x86-64' | 'x86-32' | 'mips'> : never */ js.Any
   ]
   
   /**
@@ -67,10 +49,7 @@ trait PlatformInfo extends StObject {
   var os: ToStringLiteral[
     ANDROID, 
     /* keyof chrome-apps.anon.ANDROID */ typings.chromeApps.chromeAppsStrings.ANDROID | CROS | LINUX | MAC | OPENBSD | WIN, 
-    Exclude[
-      /* keyof chrome-apps.anon.ANDROID */ typings.chromeApps.chromeAppsStrings.ANDROID | CROS | LINUX | MAC | OPENBSD | WIN, 
-      linux_ | openbsd_ | android_ | win_ | cros_ | mac_
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ANDROID :'android',   CROS :'cros',   LINUX :'linux',   MAC :'mac',   OPENBSD :'openbsd',   WIN :'win'} extends keyof {  ANDROID :'android',   CROS :'cros',   LINUX :'linux',   MAC :'mac',   OPENBSD :'openbsd',   WIN :'win'} ? std.Exclude<keyof {  ANDROID :'android',   CROS :'cros',   LINUX :'linux',   MAC :'mac',   OPENBSD :'openbsd',   WIN :'win'}, 'linux' | 'openbsd' | 'android' | 'win' | 'cros' | 'mac'> : never */ js.Any
   ]
 }
 object PlatformInfo {
@@ -79,26 +58,17 @@ object PlatformInfo {
     arch: ToStringLiteral[
       ARM, 
       /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-      Exclude[
-        /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-        mips64_ | arm_ | `x86-64` | `x86-32` | mips_
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} extends keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} ? std.Exclude<keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'}, 'mips64' | 'arm' | 'x86-64' | 'x86-32' | 'mips'> : never */ js.Any
     ],
     nacl_arch: ToStringLiteral[
       ARM, 
       /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-      Exclude[
-        /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-        mips64_ | arm_ | `x86-64` | `x86-32` | mips_
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} extends keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} ? std.Exclude<keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'}, 'mips64' | 'arm' | 'x86-64' | 'x86-32' | 'mips'> : never */ js.Any
     ],
     os: ToStringLiteral[
       ANDROID, 
       /* keyof chrome-apps.anon.ANDROID */ typings.chromeApps.chromeAppsStrings.ANDROID | CROS | LINUX | MAC | OPENBSD | WIN, 
-      Exclude[
-        /* keyof chrome-apps.anon.ANDROID */ typings.chromeApps.chromeAppsStrings.ANDROID | CROS | LINUX | MAC | OPENBSD | WIN, 
-        linux_ | openbsd_ | android_ | win_ | cros_ | mac_
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ANDROID :'android',   CROS :'cros',   LINUX :'linux',   MAC :'mac',   OPENBSD :'openbsd',   WIN :'win'} extends keyof {  ANDROID :'android',   CROS :'cros',   LINUX :'linux',   MAC :'mac',   OPENBSD :'openbsd',   WIN :'win'} ? std.Exclude<keyof {  ANDROID :'android',   CROS :'cros',   LINUX :'linux',   MAC :'mac',   OPENBSD :'openbsd',   WIN :'win'}, 'linux' | 'openbsd' | 'android' | 'win' | 'cros' | 'mac'> : never */ js.Any
     ]
   ): PlatformInfo = {
     val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], nacl_arch = nacl_arch.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any])
@@ -111,10 +81,7 @@ object PlatformInfo {
       value: ToStringLiteral[
           ARM, 
           /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-          Exclude[
-            /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-            mips64_ | arm_ | `x86-64` | `x86-32` | mips_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} extends keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} ? std.Exclude<keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'}, 'mips64' | 'arm' | 'x86-64' | 'x86-32' | 'mips'> : never */ js.Any
         ]
     ): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     
@@ -122,10 +89,7 @@ object PlatformInfo {
       value: ToStringLiteral[
           ARM, 
           /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-          Exclude[
-            /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-            mips64_ | arm_ | `x86-64` | `x86-32` | mips_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} extends keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} ? std.Exclude<keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'}, 'mips64' | 'arm' | 'x86-64' | 'x86-32' | 'mips'> : never */ js.Any
         ]
     ): Self = StObject.set(x, "nacl_arch", value.asInstanceOf[js.Any])
     
@@ -133,10 +97,7 @@ object PlatformInfo {
       value: ToStringLiteral[
           ANDROID, 
           /* keyof chrome-apps.anon.ANDROID */ typings.chromeApps.chromeAppsStrings.ANDROID | CROS | LINUX | MAC | OPENBSD | WIN, 
-          Exclude[
-            /* keyof chrome-apps.anon.ANDROID */ typings.chromeApps.chromeAppsStrings.ANDROID | CROS | LINUX | MAC | OPENBSD | WIN, 
-            linux_ | openbsd_ | android_ | win_ | cros_ | mac_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ANDROID :'android',   CROS :'cros',   LINUX :'linux',   MAC :'mac',   OPENBSD :'openbsd',   WIN :'win'} extends keyof {  ANDROID :'android',   CROS :'cros',   LINUX :'linux',   MAC :'mac',   OPENBSD :'openbsd',   WIN :'win'} ? std.Exclude<keyof {  ANDROID :'android',   CROS :'cros',   LINUX :'linux',   MAC :'mac',   OPENBSD :'openbsd',   WIN :'win'}, 'linux' | 'openbsd' | 'android' | 'win' | 'cros' | 'mac'> : never */ js.Any
         ]
     ): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
   }

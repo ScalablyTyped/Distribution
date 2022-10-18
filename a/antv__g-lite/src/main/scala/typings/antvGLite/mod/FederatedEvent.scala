@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  within the boundary's jurisdiction.
   */
 open class FederatedEvent[N /* <: Event */, T] ()
-  extends typings.antvGLite.domMod.FederatedEvent[N, T] {
-  def this(manager: typings.antvGLite.servicesMod.EventService) = this()
+  extends typings.antvGLite.distDomMod.FederatedEvent[N, T] {
+  def this(manager: typings.antvGLite.distServicesMod.EventService) = this()
 }

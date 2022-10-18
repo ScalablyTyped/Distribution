@@ -2,7 +2,7 @@ package typings.ol
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.extentMod.Extent
-import typings.ol.geometryTypeMod.GeometryType
+import typings.ol.geomGeometryTypeMod.GeometryType
 import typings.ol.projMod.ProjectionLike
 import typings.ol.projMod.TransformFunction
 import org.scalablytyped.runtime.StObject

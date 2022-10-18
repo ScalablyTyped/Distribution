@@ -60,7 +60,7 @@ object mod {
   inline def getDefaultRegistry[T, F](): Omit[Registry[T, F], schemaUtils] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultRegistry")().asInstanceOf[Omit[Registry[T, F], schemaUtils]]
   
   /** A Higher-Order component that creates a wrapper around a `Form` with the overrides from the `WithThemeProps` */
-  inline def withTheme[T, F](themeProps: WithThemeProps[T, F]): ForwardRefExoticComponent[(FormProps[T, F]) & (RefAttributes[Form[T, F]])] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTheme")(themeProps.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[(FormProps[T, F]) & (RefAttributes[Form[T, F]])]]
+  inline def withTheme[T, F](themeProps: ThemeProps[T, F]): ForwardRefExoticComponent[(FormProps[T, F]) & (RefAttributes[Form[T, F]])] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTheme")(themeProps.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[(FormProps[T, F]) & (RefAttributes[Form[T, F]])]]
   
   /** The `Form` component renders the outer form and all the fields defined in the `schema` */
   @js.native
@@ -125,9 +125,12 @@ object mod {
       *
       * @param formData - The new form data from a change to a field
       * @param newErrorSchema - The new `ErrorSchema` based on the field change
+      * @param id - The id of the field that caused the change
       */
     def onChange(formData: T): Unit = js.native
+    def onChange(formData: T, newErrorSchema: Unit, id: String): Unit = js.native
     def onChange(formData: T, newErrorSchema: ErrorSchema[T]): Unit = js.native
+    def onChange(formData: T, newErrorSchema: ErrorSchema[T], id: String): Unit = js.native
     
     /** Callback function to handle when a field on the form is focused. Calls the `onFocus` callback for the `Form` if it
       * was provided.
@@ -162,14 +165,24 @@ object mod {
     /** Provides a function that can be used to programmatically submit the `Form` */
     def submit(): Unit = js.native
     
-    /** Validates the `formData` against the `schema` using the `schemaUtils`, returning the results.
+    /** Validates the `formData` against the `schema` using the `altSchemaUtils` (if provided otherwise it uses the
+      * `schemaUtils` in the state), returning the results.
       *
-      * @param schemaUtils - The schemaUtils to use for validation
       * @param formData - The new form data to validate
       * @param schema - The schema used to validate against
+      * @param altSchemaUtils - The alternate schemaUtils to use for validation
       */
-    def validate(schemaUtils: SchemaUtilsType[T], formData: T): ValidationData[T] = js.native
-    def validate(schemaUtils: SchemaUtilsType[T], formData: T, schema: JSONSchema7): ValidationData[T] = js.native
+    def validate(formData: T): ValidationData[T] = js.native
+    def validate(formData: T, schema: Unit, altSchemaUtils: SchemaUtilsType[T]): ValidationData[T] = js.native
+    def validate(formData: T, schema: JSONSchema7): ValidationData[T] = js.native
+    def validate(formData: T, schema: JSONSchema7, altSchemaUtils: SchemaUtilsType[T]): ValidationData[T] = js.native
+    
+    /** Programmatically validate the form. If `onError` is provided, then it will be called with the list of errors the
+      * same way as would happen on form submission.
+      *
+      * @returns - True if the form is valid, false otherwise.
+      */
+    def validateForm(): Boolean = js.native
   }
   
   /** The properties that are passed to the `Form` */
@@ -291,9 +304,10 @@ object mod {
     var onBlur: js.UndefOr[js.Function2[/* id */ String, /* data */ Any, Unit]] = js.undefined
     
     /** If you plan on being notified every time the form data are updated, you can pass an `onChange` handler, which will
-      * receive the same args as `onSubmit` any time a value is updated in the form
+      * receive the same args as `onSubmit` any time a value is updated in the form. Can also return the `id` of the field
+      * that caused the change
       */
-    var onChange: js.UndefOr[js.Function1[/* data */ IChangeEvent[T, F], Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* data */ IChangeEvent[T, F], /* id */ js.UndefOr[String], Unit]] = js.undefined
     
     /** To react when submitted form data are invalid, pass an `onError` handler. It will be passed the list of
       * encountered errors
@@ -454,7 +468,7 @@ object mod {
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(value: /* data */ IChangeEvent[T, F] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: (/* data */ IChangeEvent[T, F], /* id */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -668,7 +682,7 @@ object mod {
     * overridden while creating a theme
     */
   /* Inlined std.Pick<@rjsf/core.@rjsf/core.FormProps<T, F>, 'fields' | 'templates' | 'widgets' | '_internalFormWrapper'> */
-  trait WithThemeProps[T, F] extends StObject {
+  trait ThemeProps[T, F] extends StObject {
     
     var _internalFormWrapper: js.UndefOr[ElementType[Any]] = js.undefined
     
@@ -680,14 +694,14 @@ object mod {
     
     var widgets: js.UndefOr[RegistryWidgetsType[T, F]] = js.undefined
   }
-  object WithThemeProps {
+  object ThemeProps {
     
-    inline def apply[T, F](): WithThemeProps[T, F] = {
+    inline def apply[T, F](): ThemeProps[T, F] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[WithThemeProps[T, F]]
+      __obj.asInstanceOf[ThemeProps[T, F]]
     }
     
-    extension [Self <: WithThemeProps[?, ?], T, F](x: Self & (WithThemeProps[T, F])) {
+    extension [Self <: ThemeProps[?, ?], T, F](x: Self & (ThemeProps[T, F])) {
       
       inline def setFields(value: RegistryFieldsType[T, F]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

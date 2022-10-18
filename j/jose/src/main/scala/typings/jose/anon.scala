@@ -1,7 +1,7 @@
 package typings.jose
 
-import typings.jose.typesMod.JWEHeaderParameters
-import typings.jose.typesMod.JWSHeaderParameters
+import typings.jose.distTypesTypesMod.JWEHeaderParameters
+import typings.jose.distTypesTypesMod.JWSHeaderParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.dateIoCore
 
-import typings.dateIoCore.mod.Unit
+import typings.dateIoCore.iutilsMod.Unit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

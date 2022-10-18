@@ -1,6 +1,6 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.anon.PartialDataTitleFont
+import typings.plotlyJs.anon.PartialDataTitle
 import typings.plotlyJs.anon.PartialFont
 import typings.plotlyJs.anon.PartialRangeSelectorActivecolor
 import typings.plotlyJs.anon.PartialRangeSlider
@@ -178,7 +178,7 @@ object LayoutAxis {
     ticktext: js.Array[String],
     tickvals: js.Array[Any],
     tickwidth: Double,
-    title: String | PartialDataTitleFont,
+    title: String | PartialDataTitle,
     titlefont: PartialFont,
     `type`: AxisType,
     visible: Boolean,

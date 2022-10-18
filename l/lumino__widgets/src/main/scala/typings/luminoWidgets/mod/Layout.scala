@@ -1,21 +1,21 @@
 package typings.luminoWidgets.mod
 
-import typings.luminoWidgets.layoutMod.Layout.HorizontalAlignment
-import typings.luminoWidgets.layoutMod.Layout.IOptions
-import typings.luminoWidgets.layoutMod.Layout.VerticalAlignment
+import typings.luminoWidgets.typesLayoutMod.Layout.HorizontalAlignment
+import typings.luminoWidgets.typesLayoutMod.Layout.IOptions
+import typings.luminoWidgets.typesLayoutMod.Layout.VerticalAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/widgets", "Layout")
+/* note: abstract class */ @JSImport("@lumino/widgets", "Layout")
 @js.native
 /**
   * Construct a new layout.
   *
   * @param options - The options for initializing the layout.
   */
-abstract class Layout ()
-  extends typings.luminoWidgets.layoutMod.Layout {
+open class Layout ()
+  extends typings.luminoWidgets.typesLayoutMod.Layout {
   def this(options: IOptions) = this()
 }
 object Layout {
@@ -41,7 +41,7 @@ object Layout {
     *
     * Some layout implementations may ignore horizontal alignment.
     */
-  inline def getHorizontalAlignment(widget: typings.luminoWidgets.widgetMod.Widget): HorizontalAlignment = ^.asInstanceOf[js.Dynamic].applyDynamic("getHorizontalAlignment")(widget.asInstanceOf[js.Any]).asInstanceOf[HorizontalAlignment]
+  inline def getHorizontalAlignment(widget: typings.luminoWidgets.typesWidgetMod.Widget): HorizontalAlignment = ^.asInstanceOf[js.Dynamic].applyDynamic("getHorizontalAlignment")(widget.asInstanceOf[js.Any]).asInstanceOf[HorizontalAlignment]
   
   /**
     * Get the vertical alignment for a widget.
@@ -60,7 +60,7 @@ object Layout {
     *
     * Some layout implementations may ignore vertical alignment.
     */
-  inline def getVerticalAlignment(widget: typings.luminoWidgets.widgetMod.Widget): VerticalAlignment = ^.asInstanceOf[js.Dynamic].applyDynamic("getVerticalAlignment")(widget.asInstanceOf[js.Any]).asInstanceOf[VerticalAlignment]
+  inline def getVerticalAlignment(widget: typings.luminoWidgets.typesWidgetMod.Widget): VerticalAlignment = ^.asInstanceOf[js.Dynamic].applyDynamic("getVerticalAlignment")(widget.asInstanceOf[js.Any]).asInstanceOf[VerticalAlignment]
   
   /**
     * Set the horizontal alignment for a widget.
@@ -83,7 +83,7 @@ object Layout {
     * message to widget's parent, provided the parent has a layout
     * installed.
     */
-  inline def setHorizontalAlignment(widget: typings.luminoWidgets.widgetMod.Widget, value: HorizontalAlignment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHorizontalAlignment")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setHorizontalAlignment(widget: typings.luminoWidgets.typesWidgetMod.Widget, value: HorizontalAlignment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHorizontalAlignment")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Set the vertical alignment for a widget.
@@ -106,5 +106,5 @@ object Layout {
     * message to widget's parent, provided the parent has a layout
     * installed.
     */
-  inline def setVerticalAlignment(widget: typings.luminoWidgets.widgetMod.Widget, value: VerticalAlignment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVerticalAlignment")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setVerticalAlignment(widget: typings.luminoWidgets.typesWidgetMod.Widget, value: VerticalAlignment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVerticalAlignment")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

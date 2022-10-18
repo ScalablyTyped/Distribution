@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the advanced photo capture behavior on a capture device. */
-@JSGlobal("Windows.Media.Devices.AdvancedPhotoControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.AdvancedPhotoControl")
 @js.native
-abstract class AdvancedPhotoControl ()
+open class AdvancedPhotoControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.AdvancedPhotoControl {
   

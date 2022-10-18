@@ -4,24 +4,24 @@ import typings.hapiBoom.mod.Boom
 import typings.hapiBoom.mod.unauthorized.Attributes
 import typings.hapiBoom.mod.unauthorized.MissingAuth
 import typings.hapiHapi.mod.Server_
-import typings.hapiHawk.clientMod.AuthenticateOptions
-import typings.hapiHawk.clientMod.Authentication
-import typings.hapiHawk.clientMod.BewitOptions
-import typings.hapiHawk.clientMod.Credentials
-import typings.hapiHawk.clientMod.HeaderOptions
-import typings.hapiHawk.clientMod.Header_
-import typings.hapiHawk.clientMod.MessageOptions
-import typings.hapiHawk.clientMod.Message_
-import typings.hapiHawk.cryptoMod.Artifacts
-import typings.hapiHawk.cryptoMod.TimestampMessage_
-import typings.hapiHawk.serverMod.AuthenticateBewitOptions
-import typings.hapiHawk.serverMod.AuthenticateMessageOptions
-import typings.hapiHawk.serverMod.AuthenticatedBewit
-import typings.hapiHawk.serverMod.AuthenticatedMessage
-import typings.hapiHawk.serverMod.CredentialsFunc
-import typings.hapiHawk.utilsMod.CustomRequest
-import typings.hapiHawk.utilsMod.Host
-import typings.hapiHawk.utilsMod.ParseRequestOptions
+import typings.hapiHawk.libClientMod.AuthenticateOptions
+import typings.hapiHawk.libClientMod.Authentication
+import typings.hapiHawk.libClientMod.BewitOptions
+import typings.hapiHawk.libClientMod.Credentials
+import typings.hapiHawk.libClientMod.HeaderOptions
+import typings.hapiHawk.libClientMod.Header_
+import typings.hapiHawk.libClientMod.MessageOptions
+import typings.hapiHawk.libClientMod.Message_
+import typings.hapiHawk.libCryptoMod.Artifacts
+import typings.hapiHawk.libCryptoMod.TimestampMessage_
+import typings.hapiHawk.libServerMod.AuthenticateBewitOptions
+import typings.hapiHawk.libServerMod.AuthenticateMessageOptions
+import typings.hapiHawk.libServerMod.AuthenticatedBewit
+import typings.hapiHawk.libServerMod.AuthenticatedMessage
+import typings.hapiHawk.libServerMod.CredentialsFunc
+import typings.hapiHawk.libUtilsMod.CustomRequest
+import typings.hapiHawk.libUtilsMod.Host
+import typings.hapiHawk.libUtilsMod.ParseRequestOptions
 import typings.hapiSntp.mod.Options
 import typings.hapiSntp.mod.TimeOptions
 import typings.node.cryptoMod.Hash
@@ -112,12 +112,12 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def authenticate(req: IncomingMessage, credentialsFunc: CredentialsFunc): js.Promise[typings.hapiHawk.serverMod.Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.hapiHawk.serverMod.Authentication]]
+      inline def authenticate(req: IncomingMessage, credentialsFunc: CredentialsFunc): js.Promise[typings.hapiHawk.libServerMod.Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.hapiHawk.libServerMod.Authentication]]
       inline def authenticate(
         req: IncomingMessage,
         credentialsFunc: CredentialsFunc,
-        options: typings.hapiHawk.serverMod.AuthenticateOptions
-      ): js.Promise[typings.hapiHawk.serverMod.Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.hapiHawk.serverMod.Authentication]]
+        options: typings.hapiHawk.libServerMod.AuthenticateOptions
+      ): js.Promise[typings.hapiHawk.libServerMod.Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.hapiHawk.libServerMod.Authentication]]
       
       inline def authenticateBewit(req: IncomingMessage, credentialsFunc: CredentialsFunc): AuthenticatedBewit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateBewit")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any])).asInstanceOf[AuthenticatedBewit]
       inline def authenticateBewit(req: IncomingMessage, credentialsFunc: CredentialsFunc, options: AuthenticateBewitOptions): AuthenticatedBewit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateBewit")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AuthenticatedBewit]
@@ -133,18 +133,18 @@ object global {
       
       inline def authenticatePayload(
         payload: String,
-        credentials: typings.hapiHawk.serverMod.Credentials,
+        credentials: typings.hapiHawk.libServerMod.Credentials,
         artifacts: Artifacts,
         contentType: String
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatePayload")(payload.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       inline def authenticatePayloadHash(calculatedHash: String, artifacts: Artifacts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatePayloadHash")(calculatedHash.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      inline def header(credentials: typings.hapiHawk.serverMod.Credentials, artifacts: Artifacts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def header(credentials: typings.hapiHawk.libServerMod.Credentials, artifacts: Artifacts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[String]
       inline def header(
-        credentials: typings.hapiHawk.serverMod.Credentials,
+        credentials: typings.hapiHawk.libServerMod.Credentials,
         artifacts: Artifacts,
-        options: typings.hapiHawk.serverMod.HeaderOptions
+        options: typings.hapiHawk.libServerMod.HeaderOptions
       ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     }
     

@@ -1,8 +1,8 @@
 package typings.mqtt
 
-import typings.mqtt.clientMod.IStream
-import typings.mqtt.clientOptionsMod.IClientOptions
-import typings.mqtt.storeOptionsMod.IStoreOptions
+import typings.mqtt.typesLibClientMod.IStream
+import typings.mqtt.typesLibClientOptionsMod.IClientOptions
+import typings.mqtt.typesLibStoreOptionsMod.IStoreOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +16,9 @@ object mod {
   @JSImport("mqtt", "Client")
   @js.native
   open class Client protected ()
-    extends typings.mqtt.clientMod.MqttClient {
+    extends typings.mqtt.typesLibClientMod.MqttClient {
     def this(
-      streamBuilder: js.Function1[/* client */ typings.mqtt.clientMod.MqttClient, IStream],
+      streamBuilder: js.Function1[/* client */ typings.mqtt.typesLibClientMod.MqttClient, IStream],
       options: IClientOptions
     ) = this()
   }
@@ -26,9 +26,9 @@ object mod {
   @JSImport("mqtt", "MqttClient")
   @js.native
   open class MqttClient protected ()
-    extends typings.mqtt.connectMod.MqttClient {
+    extends typings.mqtt.typesLibConnectMod.MqttClient {
     def this(
-      streamBuilder: js.Function1[/* client */ typings.mqtt.clientMod.MqttClient, IStream],
+      streamBuilder: js.Function1[/* client */ typings.mqtt.typesLibClientMod.MqttClient, IStream],
       options: IClientOptions
     ) = this()
   }
@@ -41,7 +41,7 @@ object mod {
   @JSImport("mqtt", "Store")
   @js.native
   open class Store protected ()
-    extends typings.mqtt.storeMod.Store {
+    extends typings.mqtt.typesLibStoreMod.Store {
     /**
       * Store constructor
       *
@@ -60,7 +60,7 @@ object mod {
     * @constructor
     */
   open class UniqueMessageIdProvider ()
-    extends typings.mqtt.uniqueMessageIdProviderMod.UniqueMessageIdProvider
+    extends typings.mqtt.typesLibUniqueMessageIdProviderMod.UniqueMessageIdProvider
   
   /**
     * connect - connect to an MQTT broker.
@@ -68,12 +68,12 @@ object mod {
     * @param {String} brokerUrl - url of the broker
     * @param {Object} opts - see MqttClient#constructor
     */
-  inline def connect(brokerUrl: String): typings.mqtt.clientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any]).asInstanceOf[typings.mqtt.clientMod.MqttClient]
-  inline def connect(brokerUrl: String, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.clientMod.MqttClient]
+  inline def connect(brokerUrl: String): typings.mqtt.typesLibClientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any]).asInstanceOf[typings.mqtt.typesLibClientMod.MqttClient]
+  inline def connect(brokerUrl: String, opts: IClientOptions): typings.mqtt.typesLibClientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.typesLibClientMod.MqttClient]
   /**
     * connect - connect to an MQTT broker.
     *
     * @param {Object} opts - see MqttClient#constructor
     */
-  inline def connect(opts: IClientOptions): typings.mqtt.clientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.mqtt.clientMod.MqttClient]
+  inline def connect(opts: IClientOptions): typings.mqtt.typesLibClientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.mqtt.typesLibClientMod.MqttClient]
 }

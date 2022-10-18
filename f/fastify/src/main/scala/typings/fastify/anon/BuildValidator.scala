@@ -1,7 +1,7 @@
 package typings.fastify.anon
 
 import typings.fastJsonStringify.mod.Options
-import typings.fastify.schemaMod.FastifySerializerCompiler
+import typings.fastify.typesSchemaMod.FastifySerializerCompiler
 import typings.fastifyAjvCompiler.mod.Ajv
 import typings.fastifyAjvCompiler.mod.ValidatorCompiler
 import typings.std.Record
@@ -36,7 +36,7 @@ object BuildValidator {
     
     inline def setBuildSerializerUndefined: Self = StObject.set(x, "buildSerializer", js.undefined)
     
-    inline def setBuildValidator(value: (/* externalSchemas */ Any, /* options */ typings.ajv.coreMod.Options) => Ajv): Self = StObject.set(x, "buildValidator", js.Any.fromFunction2(value))
+    inline def setBuildValidator(value: (/* externalSchemas */ Any, /* options */ typings.ajv.distCoreMod.Options) => Ajv): Self = StObject.set(x, "buildValidator", js.Any.fromFunction2(value))
     
     inline def setBuildValidatorUndefined: Self = StObject.set(x, "buildValidator", js.undefined)
   }

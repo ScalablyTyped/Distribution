@@ -55,4 +55,24 @@ trait NamedItemArrayValues
     * [Api set: ExcelApi 1.7]
     */
   val values: js.Array[js.Array[Any]] = js.native
+  
+  /**
+    * A JSON representation of the values in this named item array.
+    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItemArrayValues.valuesAsJsonLocal`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  val valuesAsJson: js.Array[js.Array[CellValue]] = js.native
+  
+  /**
+    * A JSON representation of the values in this named item array.
+    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItemArrayValues.valuesAsJson`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  val valuesAsJsonLocal: js.Array[js.Array[CellValue]] = js.native
 }

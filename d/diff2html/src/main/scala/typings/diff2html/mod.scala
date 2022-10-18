@@ -1,12 +1,12 @@
 package typings.diff2html
 
-import typings.diff2html.diffParserMod.DiffParserConfig
-import typings.diff2html.hoganjsUtilsMod.HoganJsUtilsConfig
-import typings.diff2html.lineByLineRendererMod.LineByLineRendererConfig
-import typings.diff2html.typesMod.DiffFile
-import typings.diff2html.typesMod.DiffStyleType
-import typings.diff2html.typesMod.LineMatchingType
-import typings.diff2html.typesMod.OutputFormatType
+import typings.diff2html.libDiffParserMod.DiffParserConfig
+import typings.diff2html.libHoganjsUtilsMod.HoganJsUtilsConfig
+import typings.diff2html.libLineByLineRendererMod.LineByLineRendererConfig
+import typings.diff2html.libTypesMod.DiffFile
+import typings.diff2html.libTypesMod.DiffStyleType
+import typings.diff2html.libTypesMod.LineMatchingType
+import typings.diff2html.libTypesMod.OutputFormatType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,8 +79,8 @@ object mod {
   inline def parse(diffInput: String, configuration: Diff2HtmlConfig): js.Array[DiffFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(diffInput.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[js.Array[DiffFile]]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.diff2html.renderUtilsMod.RenderConfig because Already inherited
-  - typings.diff2html.sideBySideRendererMod.SideBySideRendererConfig because var conflicts: diffStyle, matchWordsThreshold, matching, matchingMaxComparisons, maxLineLengthHighlight, maxLineSizeInBlockForComparison, renderNothingWhenEmpty. Inlined  */ trait Diff2HtmlConfig
+  - typings.diff2html.libRenderUtilsMod.RenderConfig because Already inherited
+  - typings.diff2html.libSideBySideRendererMod.SideBySideRendererConfig because var conflicts: diffStyle, matchWordsThreshold, matching, matchingMaxComparisons, maxLineLengthHighlight, maxLineSizeInBlockForComparison, renderNothingWhenEmpty. Inlined  */ trait Diff2HtmlConfig
     extends StObject
        with DiffParserConfig
        with LineByLineRendererConfig

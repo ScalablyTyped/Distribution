@@ -7,19 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `200301404` extends StObject {
   
   /** Response */
-  var `200`: Content5
+  var `200`: ContentApplicationjsonAppslug
   
-  var `301`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any
+  var `301`: Content6
   
-  var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+  var `404`: Content6
 }
 object `200301404` {
   
-  inline def apply(
-    `200`: Content5,
-    `301`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any,
-    `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
-  ): `200301404` = {
+  inline def apply(`200`: ContentApplicationjsonAppslug, `301`: Content6, `404`: Content6): `200301404` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("301")(`301`.asInstanceOf[js.Any])
@@ -29,14 +25,10 @@ object `200301404` {
   
   extension [Self <: `200301404`](x: Self) {
     
-    inline def set200(value: Content5): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: ContentApplicationjsonAppslug): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set301(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any
-    ): Self = StObject.set(x, "301", value.asInstanceOf[js.Any])
+    inline def set301(value: Content6): Self = StObject.set(x, "301", value.asInstanceOf[js.Any])
     
-    inline def set404(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
-    ): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content6): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

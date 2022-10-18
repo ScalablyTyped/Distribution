@@ -10,8 +10,8 @@ import typings.fundamentalReact.fundamentalReactStrings.LayoutPanelDotFilters
 import typings.fundamentalReact.fundamentalReactStrings.LayoutPanelDotFooter
 import typings.fundamentalReact.fundamentalReactStrings.LayoutPanelDotHead
 import typings.fundamentalReact.fundamentalReactStrings.LayoutPanelDotHeader
-import typings.fundamentalReact.layoutPanelMod.LayoutPanelHeadProps
-import typings.fundamentalReact.layoutPanelMod.default
+import typings.fundamentalReact.libLayoutPanelLayoutPanelMod.LayoutPanelHeadProps
+import typings.fundamentalReact.libLayoutPanelLayoutPanelMod.default
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import typings.react.mod.Context

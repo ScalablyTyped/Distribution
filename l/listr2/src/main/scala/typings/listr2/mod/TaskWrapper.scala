@@ -5,9 +5,9 @@ import typings.listr2.listr2Booleans.`false`
 import typings.listr2.listr2Booleans.`true`
 import typings.listr2.listr2Strings.enabled
 import typings.listr2.listr2Strings.skip
+import typings.node.NodeJS.WritableStream
 import typings.node.processMod.global.NodeJS.WriteStream
 import typings.std.Omit
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,7 +81,7 @@ trait TaskWrapper[Ctx, Renderer /* <: ListrRendererFactory */] extends StObject 
     *
     * This returns a fake stream to pass any stream inside Listr as task data.
     */
-  def stdout(): WriteStream & WritableStream[Any] = js.native
+  def stdout(): WriteStream & WritableStream = js.native
   
   var task: Task[Ctx, ListrRendererFactory] = js.native
   

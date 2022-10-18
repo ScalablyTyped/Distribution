@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables an app to override the system processing of raw keyboard input, including key combinations such as shortcut keys, access keys (or hot keys), accelerator keys, and application keys. */
-@JSGlobal("Windows.UI.Input.KeyboardDeliveryInterceptor")
+/* note: abstract class */ @JSGlobal("Windows.UI.Input.KeyboardDeliveryInterceptor")
 @js.native
-abstract class KeyboardDeliveryInterceptor ()
+open class KeyboardDeliveryInterceptor ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.KeyboardDeliveryInterceptor
 object KeyboardDeliveryInterceptor {

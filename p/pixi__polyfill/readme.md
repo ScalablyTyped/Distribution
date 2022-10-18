@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__polyfill
 
-Typings are for version 6.5.4
+Typings are for version 6.5.6
 
 ## Library description:
 Support for legacy browser JavaScript environments

@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PBRAnisotropicConfiguration")
 @js.native
 open class PBRAnisotropicConfiguration protected ()
-  extends typings.babylonjs.legacyMod.PBRAnisotropicConfiguration {
-  def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial) = this()
-  def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial, addToPluginList: Boolean) = this()
+  extends typings.babylonjs.legacyLegacyMod.PBRAnisotropicConfiguration {
+  def this(material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial) = this()
+  def this(
+    material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial,
+    addToPluginList: Boolean
+  ) = this()
 }

@@ -34,6 +34,13 @@ trait Config extends StObject {
   var audioTracks: js.UndefOr[js.Array[AudioTrack]] = js.undefined
   
   /**
+  		 * Background Volume
+  		 *
+  		 * @see [Audio tracks]{@link https://github.com/mifi/editly#arbitrary-audio-tracks}
+  		 */
+  var backgroundAudioVolume: js.UndefOr[String | Double] = js.undefined
+  
+  /**
   		 * List of clip objects that will be played in sequence.
   		 * Each clip can have one or more layers.
   		 *
@@ -175,6 +182,10 @@ object Config {
     inline def setAudioTracksUndefined: Self = StObject.set(x, "audioTracks", js.undefined)
     
     inline def setAudioTracksVarargs(value: AudioTrack*): Self = StObject.set(x, "audioTracks", js.Array(value*))
+    
+    inline def setBackgroundAudioVolume(value: String | Double): Self = StObject.set(x, "backgroundAudioVolume", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundAudioVolumeUndefined: Self = StObject.set(x, "backgroundAudioVolume", js.undefined)
     
     inline def setClips(value: js.Array[Clip]): Self = StObject.set(x, "clips", value.asInstanceOf[js.Any])
     

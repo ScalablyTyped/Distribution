@@ -2,10 +2,10 @@ package typings.baseui
 
 import typings.baseui.baseuiStrings.li_
 import typings.baseui.baseuiStrings.ul
-import typings.baseui.emoticonRatingMod.default
+import typings.baseui.ratingEmoticonRatingMod.default
 import typings.baseui.ratingTypesMod.StyledRatingItemProps
 import typings.baseui.ratingTypesMod.StyledRootProps
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +34,7 @@ object ratingMod {
   @JSImport("baseui/rating", "StarRating")
   @js.native
   open class StarRating ()
-    extends typings.baseui.starRatingMod.default
+    extends typings.baseui.ratingStarRatingMod.default
   object StarRating {
     
     /* static member */

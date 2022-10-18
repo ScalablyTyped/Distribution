@@ -1,21 +1,22 @@
 package typings.fpTs.mod
 
-import typings.fpTs.functorMod.Functor
-import typings.fpTs.functorMod.Functor1
-import typings.fpTs.functorMod.Functor2
-import typings.fpTs.functorMod.Functor2C
-import typings.fpTs.functorMod.Functor3
-import typings.fpTs.functorMod.Functor3C
-import typings.fpTs.functorMod.Functor4
-import typings.fpTs.functorMod.FunctorComposition
-import typings.fpTs.functorMod.FunctorComposition11
-import typings.fpTs.functorMod.FunctorComposition12
-import typings.fpTs.functorMod.FunctorComposition12C
-import typings.fpTs.functorMod.FunctorComposition21
-import typings.fpTs.functorMod.FunctorComposition22
-import typings.fpTs.functorMod.FunctorComposition22C
-import typings.fpTs.functorMod.FunctorComposition23C
-import typings.fpTs.functorMod.FunctorComposition2C1
+import typings.fpTs.libFunctorMod.Functor
+import typings.fpTs.libFunctorMod.Functor1
+import typings.fpTs.libFunctorMod.Functor2
+import typings.fpTs.libFunctorMod.Functor2C
+import typings.fpTs.libFunctorMod.Functor3
+import typings.fpTs.libFunctorMod.Functor3C
+import typings.fpTs.libFunctorMod.Functor4
+import typings.fpTs.libFunctorMod.FunctorComposition
+import typings.fpTs.libFunctorMod.FunctorComposition11
+import typings.fpTs.libFunctorMod.FunctorComposition12
+import typings.fpTs.libFunctorMod.FunctorComposition12C
+import typings.fpTs.libFunctorMod.FunctorComposition21
+import typings.fpTs.libFunctorMod.FunctorComposition22
+import typings.fpTs.libFunctorMod.FunctorComposition22C
+import typings.fpTs.libFunctorMod.FunctorComposition23C
+import typings.fpTs.libFunctorMod.FunctorComposition2C1
+import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -193,6 +194,115 @@ object functor {
   inline def getFunctorComposition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, E](F: Functor2C[F, E], G: Functor1[G]): FunctorComposition2C1[F, G, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFunctorComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[FunctorComposition2C1[F, G, E]]
   inline def getFunctorComposition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](F: Functor2[F], G: Functor2C[G, E]): FunctorComposition22C[F, G, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFunctorComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[FunctorComposition22C[F, G, E]]
   inline def getFunctorComposition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](F: Functor2[F], G: Functor3C[G, E]): FunctorComposition23C[F, G, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFunctorComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[FunctorComposition23C[F, G, E]]
+  
+  inline def let[F](F: Functor[F]): js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("let")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ]]
+  inline def let[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](F: Functor1[F]): js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("let")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ]]
+  inline def let[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: Functor2[F]): js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("let")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ]]
+  inline def let[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: Functor3[F]): js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("let")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ]]
+  /**
+    * @since 2.13.0
+    */
+  inline def let[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](F: Functor4[F]): js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("let")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ]]
+  inline def let[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](F: Functor2C[F, E]): js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("let")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ]]
+  inline def let[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](F: Functor3C[F, E]): js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("let")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* name */ Exclude[String, /* keyof any */ String], 
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}> */ Any
+    ]
+  ]]
   
   inline def map[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](F: Functor1[F], G: Functor1[G]): js.Function1[
     /* f */ js.Function1[/* a */ Any, Any], 

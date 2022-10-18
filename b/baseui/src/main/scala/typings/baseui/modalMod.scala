@@ -1,8 +1,8 @@
 package typings.baseui
 
 import org.scalablytyped.runtime.Shortcut
-import typings.baseui.anon.`18`
-import typings.baseui.anon.`19`
+import typings.baseui.anon.`15`
+import typings.baseui.anon.`16`
 import typings.baseui.baseuiStrings.$colors
 import typings.baseui.baseuiStrings.$disabled
 import typings.baseui.baseuiStrings.$isFocusVisible
@@ -30,7 +30,7 @@ import typings.baseui.baseuiStrings.size
 import typings.baseui.baseuiStrings.startEnhancer
 import typings.baseui.buttonTypesMod.ButtonProps
 import typings.baseui.buttonTypesMod.SharedStyleProps
-import typings.baseui.focusOnceMod.Props
+import typings.baseui.modalFocusOnceMod.Props
 import typings.baseui.modalModalMod.default
 import typings.baseui.modalTypesMod.ModalOverrides
 import typings.baseui.modalTypesMod.RoleProp
@@ -46,7 +46,7 @@ import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
 import typings.std.Omit
 import typings.std.Pick
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -129,8 +129,8 @@ object modalMod {
       
       @JSImport("baseui/modal", "Modal.defaultProps.onClose")
       @js.native
-      def onClose: js.UndefOr[js.Function1[/* a */ `18`, Any]] = js.native
-      inline def onClose_=(x: js.UndefOr[js.Function1[/* a */ `18`, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onClose")(x.asInstanceOf[js.Any])
+      def onClose: js.UndefOr[js.Function1[/* a */ `15`, Any]] = js.native
+      inline def onClose_=(x: js.UndefOr[js.Function1[/* a */ `15`, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onClose")(x.asInstanceOf[js.Any])
       
       @JSImport("baseui/modal", "Modal.defaultProps.overrides")
       @js.native
@@ -171,7 +171,7 @@ object modalMod {
       ButtonProps & SharedStyleProps & (Omit[
         Any, 
         $colors | $kind | $isSelected | $shape | $size | $isLoading | $disabled | $isFocusVisible | children | colors | disabled | endEnhancer | isLoading | isSelected | kind | onClick | overrides | shape | size | startEnhancer | `type`
-      ]) & `19`, 
+      ]) & `16`, 
       String | Double | js.Symbol
     ]) & RefAttributes[HTMLButtonElement]
   ] = js.native

@@ -1,19 +1,19 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.channeldefMod.ChannelDef
-import typings.vegaLite.channeldefMod.FieldDefWithoutScale
-import typings.vegaLite.channeldefMod.OrderFieldDef
-import typings.vegaLite.channeldefMod.SecondaryChannelDef
-import typings.vegaLite.channeldefMod.StringFieldDef
-import typings.vegaLite.scaleComponentMod.ScaleComponent
-import typings.vegaLite.srcStackMod.StackProperties
-import typings.vegaLite.srcTypeMod.StandardType
+import typings.vegaLite.buildSrcChanneldefMod.ChannelDef
+import typings.vegaLite.buildSrcChanneldefMod.FieldDefWithoutScale
+import typings.vegaLite.buildSrcChanneldefMod.OrderFieldDef
+import typings.vegaLite.buildSrcChanneldefMod.SecondaryChannelDef
+import typings.vegaLite.buildSrcChanneldefMod.StringFieldDef
+import typings.vegaLite.buildSrcCompileScaleComponentMod.ScaleComponent
+import typings.vegaLite.buildSrcStackMod.StackProperties
+import typings.vegaLite.buildSrcTypeMod.StandardType
+import typings.vegaLite.buildSrcVegaDotschemaMod.VgValueRef
 import typings.vegaLite.vegaLiteStrings.radius
 import typings.vegaLite.vegaLiteStrings.theta
 import typings.vegaLite.vegaLiteStrings.x
 import typings.vegaLite.vegaLiteStrings.y
-import typings.vegaLite.vegaSchemaMod.VgValueRef
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,17 +23,17 @@ trait MidPointParamschannelxyra extends StObject {
   
   var bandPosition: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var channel: typings.vegaLite.channelMod.Channel & (x | y | radius | theta)
+  var channel: typings.vegaLite.buildSrcChannelMod.Channel & (x | y | radius | theta)
   
   var channel2Def: js.UndefOr[SecondaryChannelDef[String]] = js.undefined
   
   var channelDef: ChannelDef[String]
   
-  var config: typings.vegaLite.srcConfigMod.Config[SignalRef]
+  var config: typings.vegaLite.buildSrcConfigMod.Config[SignalRef]
   
   var defaultRef: VgValueRef | js.Function0[VgValueRef]
   
-  var markDef: typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, SignalRef]
+  var markDef: typings.vegaLite.buildSrcMarkMod.MarkDef[typings.vegaLite.buildSrcMarkMod.Mark, SignalRef]
   
   var offset: js.UndefOr[Double | SignalRef | VgValueRef] = js.undefined
   
@@ -46,10 +46,10 @@ trait MidPointParamschannelxyra extends StObject {
 object MidPointParamschannelxyra {
   
   inline def apply(
-    channel: typings.vegaLite.channelMod.Channel & (x | y | radius | theta),
-    config: typings.vegaLite.srcConfigMod.Config[SignalRef],
+    channel: typings.vegaLite.buildSrcChannelMod.Channel & (x | y | radius | theta),
+    config: typings.vegaLite.buildSrcConfigMod.Config[SignalRef],
     defaultRef: VgValueRef | js.Function0[VgValueRef],
-    markDef: typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, SignalRef],
+    markDef: typings.vegaLite.buildSrcMarkMod.MarkDef[typings.vegaLite.buildSrcMarkMod.Mark, SignalRef],
     scale: ScaleComponent,
     scaleName: String
   ): MidPointParamschannelxyra = {
@@ -64,7 +64,7 @@ object MidPointParamschannelxyra {
     inline def setBandPositionUndefined: Self = StObject.set(x, "bandPosition", js.undefined)
     
     inline def setChannel(
-      value: typings.vegaLite.channelMod.Channel & (typings.vegaLite.vegaLiteStrings.x | y | radius | theta)
+      value: typings.vegaLite.buildSrcChannelMod.Channel & (typings.vegaLite.vegaLiteStrings.x | y | radius | theta)
     ): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     inline def setChannel2Def(value: SecondaryChannelDef[String]): Self = StObject.set(x, "channel2Def", value.asInstanceOf[js.Any])
@@ -81,13 +81,13 @@ object MidPointParamschannelxyra {
       value: ((FieldDefWithoutScale[String, StandardType]) | OrderFieldDef[String] | StringFieldDef[String])*
     ): Self = StObject.set(x, "channelDef", js.Array(value*))
     
-    inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: typings.vegaLite.buildSrcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setDefaultRef(value: VgValueRef | js.Function0[VgValueRef]): Self = StObject.set(x, "defaultRef", value.asInstanceOf[js.Any])
     
     inline def setDefaultRefFunction0(value: () => VgValueRef): Self = StObject.set(x, "defaultRef", js.Any.fromFunction0(value))
     
-    inline def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
+    inline def setMarkDef(value: typings.vegaLite.buildSrcMarkMod.MarkDef[typings.vegaLite.buildSrcMarkMod.Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
     
     inline def setOffset(value: Double | SignalRef | VgValueRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

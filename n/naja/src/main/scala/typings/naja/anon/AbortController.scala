@@ -9,7 +9,7 @@ trait AbortController extends StObject {
   
   var abortController: typings.std.AbortController
   
-  var options: typings.naja.najaMod.Options
+  var options: typings.naja.distNajaMod.Options
   
   var promise: js.Promise[Response]
   
@@ -19,7 +19,7 @@ object AbortController {
   
   inline def apply(
     abortController: typings.std.AbortController,
-    options: typings.naja.najaMod.Options,
+    options: typings.naja.distNajaMod.Options,
     promise: js.Promise[Response],
     request: typings.std.Request
   ): AbortController = {
@@ -31,7 +31,7 @@ object AbortController {
     
     inline def setAbortController(value: typings.std.AbortController): Self = StObject.set(x, "abortController", value.asInstanceOf[js.Any])
     
-    inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.naja.distNajaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setPromise(value: js.Promise[Response]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     

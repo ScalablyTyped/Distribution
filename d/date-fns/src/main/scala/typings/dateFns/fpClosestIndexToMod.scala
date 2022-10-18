@@ -9,7 +9,7 @@ object fpClosestIndexToMod {
   
   object default extends Shortcut {
     
-    @JSImport("date-fns/esm/fp/closestIndexTo", JSImport.Default)
+    @JSImport("date-fns/fp/closestIndexTo", JSImport.Default)
     @js.native
     val ^ : CurriedFn2[js.Array[js.Date | Double], js.Date | Double, js.UndefOr[Double]] = js.native
     

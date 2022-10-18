@@ -135,6 +135,7 @@ object mod extends Shortcut {
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
   override def _to: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginObject<ScrollOptions> */ Any) & ScrollTo = default
   
+  /* augmented module */
   object vueTypesVueAugmentingMod {
     
     trait Vue extends StObject {

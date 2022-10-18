@@ -2,16 +2,16 @@ package typings.hapi.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.catbox.mod.ClientOptions
-import typings.hapi.anon.Concurrent
 import typings.hapi.anon.Encoding
 import typings.hapi.anon.IsCaseSensitive
 import typings.hapi.anon.Log
+import typings.hapi.anon.MaxEventLoopDelay
 import typings.hapi.anon.Parser
 import typings.hapi.hapiBooleans.`false`
 import typings.mimos.mod.MimosOptions
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,7 +111,7 @@ trait ServerOptions extends StObject {
     * * maxRssBytes - maximum process RSS size over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     * * maxEventLoopDelay - maximum event loop delay duration in milliseconds over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     */
-  var load: js.UndefOr[Concurrent] = js.undefined
+  var load: js.UndefOr[MaxEventLoopDelay] = js.undefined
   
   /**
     * Default value: none.
@@ -180,10 +180,10 @@ trait ServerOptions extends StObject {
     */
   var tls: js.UndefOr[
     Boolean | (typings.node.httpsMod.ServerOptions[
-      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
       Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ]
     ])
   ] = js.undefined
@@ -245,7 +245,7 @@ object ServerOptions {
     
     inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
     
-    inline def setLoad(value: Concurrent): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: MaxEventLoopDelay): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
@@ -279,10 +279,10 @@ object ServerOptions {
     
     inline def setTls(
       value: Boolean | (typings.node.httpsMod.ServerOptions[
-          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
           Instantiable1[
             /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+            typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
           ]
         ])
     ): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])

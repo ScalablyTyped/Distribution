@@ -6,40 +6,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Projectid extends StObject {
   
-  /** The organization name. The name is not case sensitive. */
-  @JSName("org")
-  var org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
+  var column_name: String
   
-  /** The unique identifier of the project. */
-  var project_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any
+  var id: Double
   
-  /** The slug of the team name. */
-  var team_slug: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-slug'] */ js.Any
+  var previous_column_name: js.UndefOr[String] = js.undefined
+  
+  var project_id: Double
+  
+  /** Format: uri */
+  var project_url: String
+  
+  /** Format: uri */
+  var url: String
 }
 object Projectid {
   
-  inline def apply(
-    org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any,
-    project_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any,
-    team_slug: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-slug'] */ js.Any
-  ): Projectid = {
-    val __obj = js.Dynamic.literal(project_id = project_id.asInstanceOf[js.Any], team_slug = team_slug.asInstanceOf[js.Any])
-    __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
+  inline def apply(column_name: String, id: Double, project_id: Double, project_url: String, url: String): Projectid = {
+    val __obj = js.Dynamic.literal(column_name = column_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any], project_url = project_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Projectid]
   }
   
   extension [Self <: Projectid](x: Self) {
     
-    inline def setOrg_(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
-    ): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setColumn_name(value: String): Self = StObject.set(x, "column_name", value.asInstanceOf[js.Any])
     
-    inline def setProject_id(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any
-    ): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setTeam_slug(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-slug'] */ js.Any
-    ): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
+    inline def setPrevious_column_name(value: String): Self = StObject.set(x, "previous_column_name", value.asInstanceOf[js.Any])
+    
+    inline def setPrevious_column_nameUndefined: Self = StObject.set(x, "previous_column_name", js.undefined)
+    
+    inline def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    
+    inline def setProject_url(value: String): Self = StObject.set(x, "project_url", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

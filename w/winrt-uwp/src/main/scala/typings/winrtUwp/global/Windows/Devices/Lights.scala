@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Lights {
   
   /** Represents a lamp device. */
-  @JSGlobal("Windows.Devices.Lights.Lamp")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Lights.Lamp")
   @js.native
-  abstract class Lamp ()
+  open class Lamp ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Lights.Lamp
   object Lamp {
@@ -44,9 +44,9 @@ object Lights {
   }
   
   /** Provides data for the AvailabilityChanged event. */
-  @JSGlobal("Windows.Devices.Lights.LampAvailabilityChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Lights.LampAvailabilityChangedEventArgs")
   @js.native
-  abstract class LampAvailabilityChangedEventArgs ()
+  open class LampAvailabilityChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Lights.LampAvailabilityChangedEventArgs {
     

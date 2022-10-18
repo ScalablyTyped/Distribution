@@ -1,8 +1,8 @@
 package typings.engineIoParser
 
-import typings.engineIoParser.commonsMod.BinaryType
-import typings.engineIoParser.commonsMod.Packet
-import typings.engineIoParser.commonsMod.RawData
+import typings.engineIoParser.buildEsmCommonsMod.BinaryType
+import typings.engineIoParser.buildEsmCommonsMod.Packet
+import typings.engineIoParser.buildEsmCommonsMod.RawData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

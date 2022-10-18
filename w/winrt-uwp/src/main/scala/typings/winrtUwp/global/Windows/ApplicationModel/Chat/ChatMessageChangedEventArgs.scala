@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents event parameters used by the event handler that processes message change events. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageChangedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageChangedEventArgs")
 @js.native
-abstract class ChatMessageChangedEventArgs ()
+open class ChatMessageChangedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageChangedEventArgs {
   

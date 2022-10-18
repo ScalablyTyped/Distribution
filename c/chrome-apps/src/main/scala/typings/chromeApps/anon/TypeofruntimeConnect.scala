@@ -15,7 +15,6 @@ import typings.chromeApps.chrome.runtime.RuntimeEvent
 import typings.chromeApps.chrome.runtime.UpdateAvailableDetails
 import typings.chromeApps.chrome.runtime.UpdateCheckDetails
 import typings.filesystem.DirectoryEntry
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -145,10 +144,7 @@ trait TypeofruntimeConnect extends StObject {
       /* reason */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof OnRestartRequiredReason */ js.Any, 
         /* keyof typeof OnRestartRequiredReason */ String, 
-        Exclude[
-          /* keyof typeof OnRestartRequiredReason */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof OnRestartRequiredReason[keyof typeof OnRestartRequiredReason] */ js.Any
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof OnRestartRequiredReason extends keyof typeof OnRestartRequiredReason ? std.Exclude<keyof typeof OnRestartRequiredReason, typeof OnRestartRequiredReason[keyof typeof OnRestartRequiredReason]> : never */ js.Any
       ], 
       Unit
     ]
@@ -197,10 +193,7 @@ trait TypeofruntimeConnect extends StObject {
       /* status */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof RequestUpdateCheckStatus */ js.Any, 
         /* keyof typeof RequestUpdateCheckStatus */ String, 
-        Exclude[
-          /* keyof typeof RequestUpdateCheckStatus */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof RequestUpdateCheckStatus[keyof typeof RequestUpdateCheckStatus] */ js.Any
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof RequestUpdateCheckStatus extends keyof typeof RequestUpdateCheckStatus ? std.Exclude<keyof typeof RequestUpdateCheckStatus, typeof RequestUpdateCheckStatus[keyof typeof RequestUpdateCheckStatus]> : never */ js.Any
       ], 
       /* details */ js.UndefOr[UpdateCheckDetails], 
       Unit

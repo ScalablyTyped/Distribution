@@ -1,6 +1,6 @@
 package typings.gitlab
 
-import typings.gitlab.resourceAccessRequestsMod.AccessLevel
+import typings.gitlab.distTypesCoreTemplatesResourceAccessRequestsMod.AccessLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +11,14 @@ object gitlabInts {
   sealed trait `10`
     extends StObject
        with AccessLevel
-       with typings.gitlab.servicesMod.AccessLevel
+       with typings.gitlab.distTypesCoreServicesMod.AccessLevel
   inline def `10`: `10` = 10.asInstanceOf[`10`]
   
   @js.native
   sealed trait `20`
     extends StObject
        with AccessLevel
-       with typings.gitlab.servicesMod.AccessLevel
+       with typings.gitlab.distTypesCoreServicesMod.AccessLevel
   inline def `20`: `20` = 20.asInstanceOf[`20`]
   
   @js.native
@@ -29,7 +29,7 @@ object gitlabInts {
   sealed trait `30`
     extends StObject
        with AccessLevel
-       with typings.gitlab.servicesMod.AccessLevel
+       with typings.gitlab.distTypesCoreServicesMod.AccessLevel
   inline def `30`: `30` = 30.asInstanceOf[`30`]
   
   @js.native
@@ -40,13 +40,13 @@ object gitlabInts {
   sealed trait `40`
     extends StObject
        with AccessLevel
-       with typings.gitlab.servicesMod.AccessLevel
+       with typings.gitlab.distTypesCoreServicesMod.AccessLevel
   inline def `40`: `40` = 40.asInstanceOf[`40`]
   
   @js.native
   sealed trait `50`
     extends StObject
        with AccessLevel
-       with typings.gitlab.servicesMod.AccessLevel
+       with typings.gitlab.distTypesCoreServicesMod.AccessLevel
   inline def `50`: `50` = 50.asInstanceOf[`50`]
 }

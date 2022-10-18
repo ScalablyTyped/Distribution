@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolNotebookMod.DidChangeNotebookDocumentParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.DidChangeNotebookDocumentParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.notebookDocumentSlashdidChange
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.notebookDocumentSlashsync
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ object DidChangeNotebookDocumentNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidChangeNotebookDocumentNotification.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "DidChangeNotebookDocumentNotification.method")
   @js.native
@@ -24,5 +24,5 @@ object DidChangeNotebookDocumentNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidChangeNotebookDocumentNotification.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[DidChangeNotebookDocumentParams, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[DidChangeNotebookDocumentParams, Unit] = js.native
 }

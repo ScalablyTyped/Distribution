@@ -69,18 +69,18 @@ import typings.reactNativeElements.anon.platformiosandroiddefault
 import typings.reactNativeElements.anon.titlestringReactElementun
 import typings.reactNativeElements.anon.valuenumberundefinedvaria
 import typings.reactNativeElements.anon.withPointerbooleanundefin
-import typings.reactNativeElements.buttonMod.ButtonProps
-import typings.reactNativeElements.chipMod.ChipProps
-import typings.reactNativeElements.colorsMod.Colors
-import typings.reactNativeElements.headerMod.HeaderProps
-import typings.reactNativeElements.iconMod.IconType
+import typings.reactNativeElements.distBadgeWithBadgeMod.withBadgeOptions
+import typings.reactNativeElements.distButtonsButtonMod.ButtonProps
+import typings.reactNativeElements.distButtonsChipMod.ChipProps
+import typings.reactNativeElements.distConfigColorsMod.Colors
+import typings.reactNativeElements.distConfigThemeProviderMod.ThemeProps
+import typings.reactNativeElements.distConfigThemeProviderMod.ThemeProviderState
+import typings.reactNativeElements.distHeaderHeaderMod.HeaderProps
+import typings.reactNativeElements.distIconsIconMod.IconType
 import typings.reactNativeElements.reactNativeElementsStrings.replaceTheme
 import typings.reactNativeElements.reactNativeElementsStrings.theme
 import typings.reactNativeElements.reactNativeElementsStrings.updateTheme
-import typings.reactNativeElements.themeProviderMod.ThemeProps
-import typings.reactNativeElements.themeProviderMod.ThemeProviderState
-import typings.reactNativeElements.withBadgeMod.withBadgeOptions
-import typings.reactNativeRatings.tapRatingMod.TapRatingProps
+import typings.reactNativeRatings.distTapRatingMod.TapRatingProps
 import typings.std.Omit
 import typings.std.Partial
 import typings.std.Pick
@@ -208,7 +208,7 @@ object mod {
   
   @JSImport("react-native-elements", "TabView")
   @js.native
-  val TabView: typings.reactNativeElements.tabViewMod.TabView = js.native
+  val TabView: typings.reactNativeElements.distTabTabViewMod.TabView = js.native
   
   @JSImport("react-native-elements", "Text")
   @js.native
@@ -225,7 +225,7 @@ object mod {
   @JSImport("react-native-elements", "ThemeProvider")
   @js.native
   open class ThemeProvider protected ()
-    extends typings.reactNativeElements.configMod.ThemeProvider {
+    extends typings.reactNativeElements.distConfigMod.ThemeProvider {
     def this(props: ThemeUseDark) = this()
   }
   /* static members */

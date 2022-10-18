@@ -33,7 +33,7 @@ object ClassificationCollection {
     
     inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
-    inline def setCollectionVarargs(value: CollectionItem*): Self = StObject.set(x, "collection", js.Array(value :_*))
+    inline def setCollectionVarargs(value: CollectionItem*): Self = StObject.set(x, "collection", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

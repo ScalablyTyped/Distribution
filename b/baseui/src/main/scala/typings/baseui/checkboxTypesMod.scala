@@ -1,7 +1,7 @@
 package typings.baseui
 
 import typings.baseui.baseuiStrings.default_
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefObject

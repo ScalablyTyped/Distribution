@@ -1,7 +1,7 @@
 
 # Scala.js typings for pouchdb-find
 
-Typings are for version 6.3
+Typings are for version 7.3
 
 ## Library description:
 Easy-to-use query language for PouchDB

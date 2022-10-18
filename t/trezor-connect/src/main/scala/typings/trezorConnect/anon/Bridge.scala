@@ -1,7 +1,7 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.eventsMod.BridgeInfo
-import typings.trezorConnect.eventsMod.UdevInfo
+import typings.trezorConnect.libTypescriptEventsMod.BridgeInfo
+import typings.trezorConnect.libTypescriptEventsMod.UdevInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

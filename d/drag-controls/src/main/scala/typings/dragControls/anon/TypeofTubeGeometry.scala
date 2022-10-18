@@ -11,5 +11,5 @@ trait TypeofTubeGeometry
   extends StObject
      with Instantiable0[TubeGeometry] {
   
-  def fromJSON(data: Any): typings.three.tubeGeometryMod.TubeGeometry = js.native
+  def fromJSON(data: Any): typings.three.srcGeometriesTubeGeometryMod.TubeGeometry = js.native
 }

@@ -1,6 +1,5 @@
 package typings.esmUtils
 
-import org.scalablytyped.runtime.TopLevel
 import typings.esmUtils.anon.Dirname
 import typings.std.ImportMeta
 import org.scalablytyped.runtime.StObject
@@ -17,9 +16,15 @@ object mod {
   
   type JsonArray = js.Array[JsonValue]
   
-  type JsonObject = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ Key in string ]:? esm-utils.esm-utils.JsonValue}
-    */ typings.esmUtils.esmUtilsStrings.JsonObject & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ Key in string ]:? esm-utils.esm-utils.JsonValue}
+    }}}
+    */
+  @js.native
+  trait JsonObject extends StObject
   
   type JsonPrimitive = String | Double | Boolean | Null
   

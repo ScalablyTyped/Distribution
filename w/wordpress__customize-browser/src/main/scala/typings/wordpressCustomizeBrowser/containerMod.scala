@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object containerMod {
   
-  @JSImport("@wordpress/customize-browser/Container", "Container")
+  /* note: abstract class */ @JSImport("@wordpress/customize-browser/Container", "Container")
   @js.native
-  abstract class Container protected () extends Class {
+  open class Container protected () extends Class {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     

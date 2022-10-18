@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PBRSubSurfaceConfiguration")
 @js.native
 open class PBRSubSurfaceConfiguration protected ()
-  extends typings.babylonjs.legacyMod.PBRSubSurfaceConfiguration {
-  def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial) = this()
-  def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial, addToPluginList: Boolean) = this()
+  extends typings.babylonjs.legacyLegacyMod.PBRSubSurfaceConfiguration {
+  def this(material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial) = this()
+  def this(
+    material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial,
+    addToPluginList: Boolean
+  ) = this()
 }

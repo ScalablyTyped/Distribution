@@ -7,14 +7,15 @@ import typings.needle.needleStrings.basic
 import typings.needle.needleStrings.digest
 import typings.needle.needleStrings.json
 import typings.needle.needleStrings.xml
+import typings.node.AbortSignal
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.httpMod.Agent
 import typings.node.httpMod.IncomingMessage
 import typings.node.netMod.LookupFunction
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.node.tlsMod.SecureContextOptions
-import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,7 +131,7 @@ object mod {
   
   object core {
     
-    type BodyData = Buffer | KeyValue | typings.std.ReadableStream[Any] | String | Null
+    type BodyData = Buffer | KeyValue | typings.node.NodeJS.ReadableStream | String | Null
     
     type Cookies = StringDictionary[Any]
     
@@ -257,12 +258,7 @@ object mod {
         inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
         
         inline def setLookup(
-          value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-                  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-                  /* address */ String, 
-                  /* family */ Double, 
-                  Unit
-                ]) => Unit
+          value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
         ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
         
         inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
@@ -361,7 +357,7 @@ object mod {
       var raw: Buffer = js.native
     }
     
-    type ReadableStream = typings.std.ReadableStream[Any]
+    type ReadableStream = typings.node.NodeJS.ReadableStream
     
     trait RedirectOptions extends StObject {
       

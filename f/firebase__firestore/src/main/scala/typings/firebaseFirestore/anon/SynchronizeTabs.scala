@@ -1,6 +1,6 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.firestoreSrcUtilAsyncQueueMod.AsyncQueue
+import typings.firebaseFirestore.distPackagesFirestoreSrcUtilAsyncQueueMod.AsyncQueue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

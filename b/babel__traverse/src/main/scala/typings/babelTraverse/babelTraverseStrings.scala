@@ -525,10 +525,6 @@ object babelTraverseStrings {
   inline def FlowType: FlowType = "FlowType".asInstanceOf[FlowType]
   
   @js.native
-  sealed trait FnCall extends StObject
-  inline def FnCall: FnCall = "FnCall".asInstanceOf[FnCall]
-  
-  @js.native
   sealed trait For
     extends StObject
        with NodeType
@@ -875,10 +871,6 @@ object babelTraverseStrings {
     extends StObject
        with NodeType
   inline def NewExpression: NewExpression = "NewExpression".asInstanceOf[NewExpression]
-  
-  @js.native
-  sealed trait NodePaths extends StObject
-  inline def NodePaths: NodePaths = "NodePaths".asInstanceOf[NodePaths]
   
   @js.native
   sealed trait Noop
@@ -1715,10 +1707,6 @@ object babelTraverseStrings {
   inline def TypeofTypeAnnotation: TypeofTypeAnnotation = "TypeofTypeAnnotation".asInstanceOf[TypeofTypeAnnotation]
   
   @js.native
-  sealed trait Typeofvisitors extends StObject
-  inline def Typeofvisitors: Typeofvisitors = "Typeofvisitors".asInstanceOf[Typeofvisitors]
-  
-  @js.native
   sealed trait UnaryExpression
     extends StObject
        with NodeType
@@ -1807,10 +1795,6 @@ object babelTraverseStrings {
     extends StObject
        with BindingKind
   inline def const: const = "const".asInstanceOf[const]
-  
-  @js.native
-  sealed trait explode extends StObject
-  inline def explode: explode = "explode".asInstanceOf[explode]
   
   @js.native
   sealed trait hoisted

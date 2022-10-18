@@ -1,6 +1,6 @@
 package typings.webpackDevMiddleware
 
-import typings.webpackDevMiddleware.setupHooksMod._StatsOptions
+import typings.webpackDevMiddleware.typesUtilsSetupHooksMod._StatsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

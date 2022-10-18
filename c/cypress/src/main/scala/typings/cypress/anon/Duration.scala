@@ -1,23 +1,28 @@
 package typings.cypress.anon
 
 import typings.cypress.JQuery._SpeedSettings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Duration
-  extends _SpeedSettings[js.Any] {
+  extends StObject
+     with _SpeedSettings[Any] {
+  
   /**
     * A string or number determining how long the animation will run.
     */
   var duration: typings.cypress.JQuery.Duration
 }
-
 object Duration {
-  @scala.inline
-  def apply(duration: typings.cypress.JQuery.Duration): Duration = {
+  
+  inline def apply(duration: typings.cypress.JQuery.Duration): Duration = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Duration]
   }
+  
+  extension [Self <: Duration](x: Self) {
+    
+    inline def setDuration(value: typings.cypress.JQuery.Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+  }
 }
-

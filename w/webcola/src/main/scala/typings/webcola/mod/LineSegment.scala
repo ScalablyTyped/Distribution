@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "LineSegment")
 @js.native
 open class LineSegment protected ()
-  extends typings.webcola.geomMod.LineSegment {
+  extends typings.webcola.distSrcGeomMod.LineSegment {
   def this(x1: Double, y1: Double, x2: Double, y2: Double) = this()
 }

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an ambient-light sensor. */
-@JSGlobal("Windows.Devices.Sensors.LightSensor")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.LightSensor")
 @js.native
-abstract class LightSensor ()
+open class LightSensor ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.LightSensor
 object LightSensor {

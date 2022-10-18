@@ -32,5 +32,5 @@ object TorusKnotGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.torusKnotGeometryMod.TorusKnotGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.torusKnotGeometryMod.TorusKnotGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesTorusKnotGeometryMod.TorusKnotGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesTorusKnotGeometryMod.TorusKnotGeometry]
 }

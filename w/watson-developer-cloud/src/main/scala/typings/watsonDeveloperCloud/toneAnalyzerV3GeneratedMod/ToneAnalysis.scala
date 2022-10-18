@@ -28,6 +28,6 @@ object ToneAnalysis {
     
     inline def setSentences_toneUndefined: Self = StObject.set(x, "sentences_tone", js.undefined)
     
-    inline def setSentences_toneVarargs(value: SentenceAnalysis*): Self = StObject.set(x, "sentences_tone", js.Array(value :_*))
+    inline def setSentences_toneVarargs(value: SentenceAnalysis*): Self = StObject.set(x, "sentences_tone", js.Array(value*))
   }
 }

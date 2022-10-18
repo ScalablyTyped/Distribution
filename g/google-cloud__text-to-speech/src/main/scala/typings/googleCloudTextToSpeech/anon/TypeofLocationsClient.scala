@@ -1,9 +1,9 @@
 package typings.googleCloudTextToSpeech.anon
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.googleGax.clientInterfaceMod.ClientOptions
-import typings.googleGax.grpcMod.GrpcClient
-import typings.googleGax.locationServiceMod.LocationsClient
+import typings.googleGax.buildSrcClientInterfaceMod.ClientOptions
+import typings.googleGax.buildSrcGrpcMod.GrpcClient
+import typings.googleGax.buildSrcLocationServiceMod.LocationsClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

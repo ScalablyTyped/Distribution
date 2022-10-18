@@ -2,6 +2,7 @@ package typings.blockstoreDatastoreAdapter
 
 import typings.interfaceStore.mod.Store
 import typings.itPushable.mod.Pushable_
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.multiformats.mod.CID
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
@@ -16,7 +17,7 @@ object mod {
   @js.native
   open class BlockstoreDatastoreAdapter protected ()
     extends StObject
-       with Store[CID, js.typedarray.Uint8Array] {
+       with Store[CID[Any, Double, Double, Version], js.typedarray.Uint8Array] {
     /**
       * @param {Datastore} datastore
       */
@@ -24,57 +25,33 @@ object mod {
     
     var child: typings.interfaceDatastore.mod.Datastore = js.native
     
+    def deleteMany(cids: js.Iterable[typings.multiformats.cidMod.CID[Any, Double, Double, Version]]): Pushable_[Any] = js.native
     def deleteMany(
-      cids: js.Iterable[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
-        ]
-    ): Pushable_[Any] = js.native
-    def deleteMany(
-      cids: js.Iterable[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
-        ],
+      cids: js.Iterable[typings.multiformats.cidMod.CID[Any, Double, Double, Version]],
       options: typings.interfaceBlockstore.mod.Options
     ): Pushable_[Any] = js.native
     /**
       * @param {AsyncIterable<CID> | Iterable<CID>} cids
       * @param {Options} [options]
       */
+    def deleteMany(cids: AsyncIterable[typings.multiformats.cidMod.CID[Any, Double, Double, Version]]): Pushable_[Any] = js.native
     def deleteMany(
-      cids: AsyncIterable[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
-        ]
-    ): Pushable_[Any] = js.native
-    def deleteMany(
-      cids: AsyncIterable[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
-        ],
+      cids: AsyncIterable[typings.multiformats.cidMod.CID[Any, Double, Double, Version]],
       options: typings.interfaceBlockstore.mod.Options
     ): Pushable_[Any] = js.native
     
+    def getMany(cids: js.Iterable[typings.multiformats.cidMod.CID[Any, Double, Double, Version]]): AsyncGenerator[js.typedarray.Uint8Array, Unit, Any] = js.native
     def getMany(
-      cids: js.Iterable[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
-        ]
-    ): AsyncGenerator[js.typedarray.Uint8Array, Unit, Any] = js.native
-    def getMany(
-      cids: js.Iterable[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
-        ],
+      cids: js.Iterable[typings.multiformats.cidMod.CID[Any, Double, Double, Version]],
       options: typings.interfaceBlockstore.mod.Options
     ): AsyncGenerator[js.typedarray.Uint8Array, Unit, Any] = js.native
     /**
       * @param {AsyncIterable<CID> | Iterable<CID>} cids
       * @param {Options} [options]
       */
+    def getMany(cids: AsyncIterable[typings.multiformats.cidMod.CID[Any, Double, Double, Version]]): AsyncGenerator[js.typedarray.Uint8Array, Unit, Any] = js.native
     def getMany(
-      cids: AsyncIterable[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
-        ]
-    ): AsyncGenerator[js.typedarray.Uint8Array, Unit, Any] = js.native
-    def getMany(
-      cids: AsyncIterable[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
-        ],
+      cids: AsyncIterable[typings.multiformats.cidMod.CID[Any, Double, Double, Version]],
       options: typings.interfaceBlockstore.mod.Options
     ): AsyncGenerator[js.typedarray.Uint8Array, Unit, Any] = js.native
     

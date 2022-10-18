@@ -1,6 +1,6 @@
 package typings.grommet.anon
 
-import typings.grommet.dropMod.DropProps
+import typings.grommet.componentsDropMod.DropProps
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

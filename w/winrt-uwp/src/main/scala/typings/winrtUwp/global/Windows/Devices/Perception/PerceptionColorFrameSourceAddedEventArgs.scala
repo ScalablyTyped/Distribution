@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Event data for color frame source added events. */
-@JSGlobal("Windows.Devices.Perception.PerceptionColorFrameSourceAddedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.PerceptionColorFrameSourceAddedEventArgs")
 @js.native
-abstract class PerceptionColorFrameSourceAddedEventArgs ()
+open class PerceptionColorFrameSourceAddedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.PerceptionColorFrameSourceAddedEventArgs {
   

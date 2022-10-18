@@ -3,7 +3,7 @@ package typings.materialChips
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialChips.anon.PartialMDCChipAdapterAddClass
 import typings.materialChips.deprecatedChipAdapterMod.MDCChipAdapter
-import typings.materialChips.trailingactionTypesMod.MDCChipTrailingActionNavigationEvent
+import typings.materialChips.deprecatedTrailingactionTypesMod.MDCChipTrailingActionNavigationEvent
 import typings.std.DOMRect
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent

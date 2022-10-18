@@ -3,7 +3,7 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.requestParametersMod.RequestParameters
+import typings.octokitTypes.distTypesRequestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -63,7 +63,7 @@ trait Code extends StObject {
     * language:go`](https://github.com/search?utf8=%E2%9C%93&q=amazing+language%3Ago&type=Code) is.
     */
   @JSName("code")
-  var code_Original: `687`
+  var code_Original: `701`
   
   /**
     * Find commits via various criteria on the default branch (usually `master`). This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).
@@ -97,7 +97,7 @@ trait Code extends StObject {
     * `q=repo:octocat/Spoon-Knife+css`
     */
   @JSName("commits")
-  var commits_Original: `688`
+  var commits_Original: `702`
   
   /**
     * Find issues by state and keyword. This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).
@@ -139,7 +139,7 @@ trait Code extends StObject {
     * **Note:** For [user-to-server](https://docs.github.com/developers/apps/identifying-and-authorizing-users-for-github-apps#user-to-server-requests) GitHub App requests, you can't retrieve a combination of issues and pull requests in a single query. Requests that don't include the `is:issue` or `is:pull-request` qualifier will receive an HTTP `422 Unprocessable Entity` response. To get results for both issues and pull requests, you must send separate queries for issues and pull requests. For more information about the `is` qualifier, see "[Searching only issues or pull requests](https://docs.github.com/github/searching-for-information-on-github/searching-issues-and-pull-requests#search-only-issues-or-pull-requests)."
     */
   @JSName("issuesAndPullRequests")
-  var issuesAndPullRequests_Original: `689`
+  var issuesAndPullRequests_Original: `703`
   
   /**
     * Find labels in a repository with names or descriptions that match search keywords. Returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).
@@ -175,7 +175,7 @@ trait Code extends StObject {
     * The labels that best match the query appear first in the search results.
     */
   @JSName("labels")
-  var labels_Original: `690`
+  var labels_Original: `704`
   
   /**
     * Find repositories via various criteria. This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).
@@ -211,7 +211,7 @@ trait Code extends StObject {
     * This query searches for repositories with the word `tetris` in the name, the description, or the README. The results are limited to repositories where the primary language is assembly. The results are sorted by stars in descending order, so that the most popular repositories appear first in the search results.
     */
   @JSName("repos")
-  var repos_Original: `691`
+  var repos_Original: `705`
   
   /**
     * Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination). See "[Searching topics](https://docs.github.com/articles/searching-topics/)" for a detailed list of qualifiers.
@@ -247,7 +247,7 @@ trait Code extends StObject {
     * This query searches for topics with the keyword `ruby` and limits the results to find only topics that are featured. The topics that are the best match for the query appear first in the search results.
     */
   @JSName("topics")
-  var topics_Original: `692`
+  var topics_Original: `706`
   
   /**
     * Find users via various criteria. This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).
@@ -283,18 +283,18 @@ trait Code extends StObject {
     * This query searches for users with the name `tom`. The results are restricted to users with more than 42 repositories and over 1,000 followers.
     */
   @JSName("users")
-  var users_Original: `693`
+  var users_Original: `707`
 }
 object Code {
   
   inline def apply(
-    code: `687`,
-    commits: `688`,
-    issuesAndPullRequests: `689`,
-    labels: `690`,
-    repos: `691`,
-    topics: `692`,
-    users: `693`
+    code: `701`,
+    commits: `702`,
+    issuesAndPullRequests: `703`,
+    labels: `704`,
+    repos: `705`,
+    topics: `706`,
+    users: `707`
   ): Code = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], commits = commits.asInstanceOf[js.Any], issuesAndPullRequests = issuesAndPullRequests.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], repos = repos.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
     __obj.asInstanceOf[Code]
@@ -302,18 +302,18 @@ object Code {
   
   extension [Self <: Code](x: Self) {
     
-    inline def setCode(value: `687`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: `701`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setCommits(value: `688`): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+    inline def setCommits(value: `702`): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    inline def setIssuesAndPullRequests(value: `689`): Self = StObject.set(x, "issuesAndPullRequests", value.asInstanceOf[js.Any])
+    inline def setIssuesAndPullRequests(value: `703`): Self = StObject.set(x, "issuesAndPullRequests", value.asInstanceOf[js.Any])
     
-    inline def setLabels(value: `690`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: `704`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setRepos(value: `691`): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
+    inline def setRepos(value: `705`): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
     
-    inline def setTopics(value: `692`): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+    inline def setTopics(value: `706`): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
-    inline def setUsers(value: `693`): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: `707`): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
   }
 }

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("THREE.Interpolant")
+/* note: abstract class */ @JSGlobal("THREE.Interpolant")
 @js.native
-abstract class Interpolant protected ()
+open class Interpolant protected ()
   extends StObject
      with typings.forgeViewer.THREE.Interpolant {
   def this(parameterPositions: Any, samplesValues: Any, sampleSize: Double) = this()

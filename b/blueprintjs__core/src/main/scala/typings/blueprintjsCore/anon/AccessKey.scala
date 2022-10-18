@@ -51,6 +51,7 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.url
 import typings.blueprintjsCore.blueprintjsCoreStrings.vertical
 import typings.blueprintjsCore.blueprintjsCoreStrings.yes
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEventHandler
 import typings.react.mod.CompositionEventHandler
@@ -81,7 +82,7 @@ trait AccessKey extends StObject {
   
   var `aria-atomic`: js.UndefOr[Boolean] = js.native
   
-  var `aria-autocomplete`: js.UndefOr[`inline` | both | none | list] = js.native
+  var `aria-autocomplete`: js.UndefOr[none | list | `inline` | both] = js.native
   
   var `aria-busy`: js.UndefOr[Boolean] = js.native
   
@@ -95,7 +96,7 @@ trait AccessKey extends StObject {
   
   var `aria-controls`: js.UndefOr[String] = js.native
   
-  var `aria-current`: js.UndefOr[Boolean | location | time | page | step | date] = js.native
+  var `aria-current`: js.UndefOr[Boolean | time | location | page | step | date] = js.native
   
   var `aria-describedby`: js.UndefOr[String] = js.native
   
@@ -103,7 +104,7 @@ trait AccessKey extends StObject {
   
   var `aria-disabled`: js.UndefOr[Boolean] = js.native
   
-  var `aria-dropeffect`: js.UndefOr[link | none | copy | move | execute | popup] = js.native
+  var `aria-dropeffect`: js.UndefOr[none | link | move | copy | execute | popup] = js.native
   
   var `aria-errormessage`: js.UndefOr[String] = js.native
   
@@ -113,7 +114,7 @@ trait AccessKey extends StObject {
   
   var `aria-grabbed`: js.UndefOr[Boolean] = js.native
   
-  var `aria-haspopup`: js.UndefOr[Boolean | grid | dialog | menu | listbox | tree] = js.native
+  var `aria-haspopup`: js.UndefOr[Boolean | grid | menu | tree | dialog | listbox] = js.native
   
   var `aria-hidden`: js.UndefOr[Boolean] = js.native
   
@@ -148,7 +149,7 @@ trait AccessKey extends StObject {
   var `aria-readonly`: js.UndefOr[Boolean] = js.native
   
   var `aria-relevant`: js.UndefOr[
-    all | text | additions | (`additions removals`) | (`additions text`) | removals | (`removals additions`) | (`removals text`) | (`text additions`) | (`text removals`)
+    text | additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | (`text additions`) | (`text removals`)
   ] = js.native
   
   var `aria-required`: js.UndefOr[Boolean] = js.native
@@ -165,7 +166,7 @@ trait AccessKey extends StObject {
   
   var `aria-setsize`: js.UndefOr[Double] = js.native
   
-  var `aria-sort`: js.UndefOr[none | other | ascending | descending] = js.native
+  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
   
   var `aria-valuemax`: js.UndefOr[Double] = js.native
   
@@ -185,7 +186,7 @@ trait AccessKey extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
-  var contentEditable: js.UndefOr[inherit | Boolean] = js.native
+  var contentEditable: js.UndefOr[Boolean | inherit] = js.native
   
   var contextMenu: js.UndefOr[String] = js.native
   
@@ -207,7 +208,7 @@ trait AccessKey extends StObject {
   
   var inlist: js.UndefOr[Any] = js.native
   
-  var inputMode: js.UndefOr[search | numeric | none | url | text | decimal | tel | email] = js.native
+  var inputMode: js.UndefOr[none | text | search | tel | url | email | numeric | decimal] = js.native
   
   var is: js.UndefOr[String] = js.native
   
@@ -558,7 +559,7 @@ trait AccessKey extends StObject {
   
   var results: js.UndefOr[Double] = js.native
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[AriaRole] = js.native
   
   var security: js.UndefOr[String] = js.native
   

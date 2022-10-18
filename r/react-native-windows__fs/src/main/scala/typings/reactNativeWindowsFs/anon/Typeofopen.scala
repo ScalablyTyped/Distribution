@@ -1,5 +1,6 @@
 package typings.reactNativeWindowsFs.anon
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.Mode
 import typings.node.fsMod.OpenMode
 import typings.node.fsMod.PathLike
@@ -10,90 +11,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Typeofopen extends StObject {
   
-  def apply(
-    path: PathLike,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* fd */ Double, 
-      Unit
-    ]
-  ): Unit = js.native
+  def apply(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]): Unit = js.native
   def apply(
     path: PathLike,
     flags: Unit,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* fd */ Double, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     flags: Unit,
     mode: Null,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* fd */ Double, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     flags: Unit,
     mode: Unit,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* fd */ Double, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     flags: Unit,
     mode: Mode,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* fd */ Double, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     flags: OpenMode,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* fd */ Double, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     flags: OpenMode,
     mode: Null,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* fd */ Double, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     flags: OpenMode,
     mode: Unit,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* fd */ Double, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     flags: OpenMode,
     mode: Mode,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* fd */ Double, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
 }

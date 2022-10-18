@@ -2,10 +2,10 @@ package typings.dragControls
 
 import typings.dragControls.anon.THREE
 import typings.std.HTMLCanvasElement
-import typings.three.eventDispatcherMod.Event
 import typings.three.mod.Camera
 import typings.three.mod.EventDispatcher
 import typings.three.mod.Object3D
+import typings.three.srcCoreEventDispatcherMod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

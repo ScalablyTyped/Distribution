@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.spriteMaterialMod.SpriteMaterialParameters
+import typings.three.srcMaterialsSpriteMaterialMod.SpriteMaterialParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "SpriteMaterial")
 @js.native
 open class SpriteMaterial ()
-  extends typings.three.threeMod.SpriteMaterial {
+  extends typings.three.srcThreeMod.SpriteMaterial {
   def this(parameters: SpriteMaterialParameters) = this()
 }

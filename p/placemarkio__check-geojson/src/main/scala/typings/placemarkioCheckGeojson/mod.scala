@@ -2,7 +2,7 @@ package typings.placemarkioCheckGeojson
 
 import typings.geojson.mod.GeoJSON
 import typings.placemarkioCheckGeojson.anon.Rejected
-import typings.placemarkioCheckGeojson.typesMod.HintIssue
+import typings.placemarkioCheckGeojson.distTypesMod.HintIssue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object mod {
   @JSImport("@placemarkio/check-geojson", "HintError")
   @js.native
   open class HintError protected ()
-    extends typings.placemarkioCheckGeojson.errorsMod.HintError {
+    extends typings.placemarkioCheckGeojson.distErrorsMod.HintError {
     def this(issues: js.Array[HintIssue]) = this()
   }
   

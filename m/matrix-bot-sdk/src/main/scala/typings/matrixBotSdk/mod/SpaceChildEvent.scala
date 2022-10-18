@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "SpaceChildEvent")
 @js.native
 open class SpaceChildEvent protected ()
-  extends typings.matrixBotSdk.spaceChildEventMod.SpaceChildEvent {
+  extends typings.matrixBotSdk.libModelsEventsSpaceChildEventMod.SpaceChildEvent {
   def this(event: Any) = this()
 }

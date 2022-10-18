@@ -1,6 +1,6 @@
 package typings.unsplashJs.anon
 
-import typings.unsplashJs.responseMod.ApiResponse
+import typings.unsplashJs.distHelpersResponseMod.ApiResponse
 import typings.unsplashJs.unsplashJsStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

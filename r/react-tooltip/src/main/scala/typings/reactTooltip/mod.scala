@@ -129,6 +129,9 @@ object mod {
     // Add 1px white border
     var border: js.UndefOr[Boolean] = js.undefined
     
+    // A custom class name to use for the border
+    var borderClass: js.UndefOr[String] = js.undefined
+    
     // Popup border color
     var borderColor: js.UndefOr[String] = js.undefined
     
@@ -159,17 +162,23 @@ object mod {
     var effect: js.UndefOr[Effect] = js.undefined
     
     // Custom event to trigger tooltip
-    var event: js.UndefOr[String] = js.undefined
+    var event: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102, starting with typings.reactTooltip.reactTooltipStrings.fullscreenchange, typings.reactTooltip.reactTooltipStrings.fullscreenerror, typings.reactTooltip.reactTooltipStrings.copy */ Any
+      ] = js.undefined
     
     // Custom event to hide tooltip
     // (this requires the event prop as well)
-    var eventOff: js.UndefOr[String] = js.undefined
+    var eventOff: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102, starting with typings.reactTooltip.reactTooltipStrings.fullscreenchange, typings.reactTooltip.reactTooltipStrings.fullscreenerror, typings.reactTooltip.reactTooltipStrings.copy */ Any
+      ] = js.undefined
     
     // Function to dynamically generate the tooltip content
     var getContent: js.UndefOr[GetContent] = js.undefined
     
     // Global event to hide tooltip
-    var globalEventOff: js.UndefOr[String] = js.undefined
+    var globalEventOff: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102, starting with typings.reactTooltip.reactTooltipStrings.fullscreenchange, typings.reactTooltip.reactTooltipStrings.fullscreenerror, typings.reactTooltip.reactTooltipStrings.copy */ Any
+      ] = js.undefined
     
     // Inject raw HTML? (This is a security risk)
     var html: js.UndefOr[Boolean] = js.undefined
@@ -236,7 +245,7 @@ object mod {
     var uuid: js.UndefOr[String] = js.undefined
     
     // The tooltip parent component;
-    // default = 'div' 
+    // default = 'div'
     var wrapper: js.UndefOr[div | span] = js.undefined
   }
   object TooltipProps {
@@ -269,6 +278,10 @@ object mod {
       inline def setBodyModeUndefined: Self = StObject.set(x, "bodyMode", js.undefined)
       
       inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      
+      inline def setBorderClass(value: String): Self = StObject.set(x, "borderClass", value.asInstanceOf[js.Any])
+      
+      inline def setBorderClassUndefined: Self = StObject.set(x, "borderClass", js.undefined)
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -312,9 +325,13 @@ object mod {
       
       inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
       
-      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102, starting with typings.reactTooltip.reactTooltipStrings.fullscreenchange, typings.reactTooltip.reactTooltipStrings.fullscreenerror, typings.reactTooltip.reactTooltipStrings.copy */ Any
+      ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      inline def setEventOff(value: String): Self = StObject.set(x, "eventOff", value.asInstanceOf[js.Any])
+      inline def setEventOff(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102, starting with typings.reactTooltip.reactTooltipStrings.fullscreenchange, typings.reactTooltip.reactTooltipStrings.fullscreenerror, typings.reactTooltip.reactTooltipStrings.copy */ Any
+      ): Self = StObject.set(x, "eventOff", value.asInstanceOf[js.Any])
       
       inline def setEventOffUndefined: Self = StObject.set(x, "eventOff", js.undefined)
       
@@ -326,7 +343,9 @@ object mod {
       
       inline def setGetContentUndefined: Self = StObject.set(x, "getContent", js.undefined)
       
-      inline def setGlobalEventOff(value: String): Self = StObject.set(x, "globalEventOff", value.asInstanceOf[js.Any])
+      inline def setGlobalEventOff(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102, starting with typings.reactTooltip.reactTooltipStrings.fullscreenchange, typings.reactTooltip.reactTooltipStrings.fullscreenerror, typings.reactTooltip.reactTooltipStrings.copy */ Any
+      ): Self = StObject.set(x, "globalEventOff", value.asInstanceOf[js.Any])
       
       inline def setGlobalEventOffUndefined: Self = StObject.set(x, "globalEventOff", js.undefined)
       

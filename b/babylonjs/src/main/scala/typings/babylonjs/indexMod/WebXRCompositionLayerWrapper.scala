@@ -1,8 +1,8 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.XRCompositionLayer
-import typings.babylonjs.webXRLayerWrapperMod.WebXRLayerType
-import typings.babylonjs.webXRRenderTargetTextureProviderMod.WebXRLayerRenderTargetTextureProvider
+import typings.babylonjs.xRWebXRLayerWrapperMod.WebXRLayerType
+import typings.babylonjs.xRWebXRRenderTargetTextureProviderMod.WebXRLayerRenderTargetTextureProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ open class WebXRCompositionLayerWrapper protected ()
     layerType: WebXRLayerType,
     isMultiview: Boolean,
     createRTTProvider: js.Function1[
-        /* xrSessionManager */ typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager, 
+        /* xrSessionManager */ typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager, 
         WebXRLayerRenderTargetTextureProvider
       ]
   ) = this()

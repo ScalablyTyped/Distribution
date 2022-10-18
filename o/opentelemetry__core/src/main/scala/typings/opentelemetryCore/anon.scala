@@ -1,6 +1,6 @@
 package typings.opentelemetryCore
 
-import typings.opentelemetryApi.diagTypesMod.DiagLogLevel
+import typings.opentelemetryApi.buildSrcDiagTypesMod.DiagLogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

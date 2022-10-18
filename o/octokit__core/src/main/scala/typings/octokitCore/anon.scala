@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.octokitRequestError.mod.RequestError
 import typings.octokitTypes.anon.Format
 import typings.octokitTypes.anon.RequestHeadersacceptstrin
-import typings.octokitTypes.octokitResponseMod.OctokitResponse
-import typings.octokitTypes.requestMethodMod.RequestMethod
-import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
-import typings.octokitTypes.urlMod.Url
+import typings.octokitTypes.distTypesOctokitResponseMod.OctokitResponse
+import typings.octokitTypes.distTypesRequestMethodMod.RequestMethod
+import typings.octokitTypes.distTypesRequestRequestOptionsMod.RequestRequestOptions
+import typings.octokitTypes.distTypesUrlMod.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

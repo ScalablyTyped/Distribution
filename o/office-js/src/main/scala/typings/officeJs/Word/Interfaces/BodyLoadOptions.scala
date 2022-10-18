@@ -99,7 +99,7 @@ trait BodyLoadOptions extends StObject {
   var text: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'.
+    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Additional types ‘Footnote’, ‘Endnote’, and ‘NoteItem’ are supported in WordApiOnline 1.1 and later.
     *
     * @remarks
     * [Api set: WordApi 1.3]

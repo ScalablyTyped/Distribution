@@ -1,6 +1,6 @@
 package typings.baseui.anon
 
-import typings.baseui.utilsTypesMod.DateIOAdapter
+import typings.baseui.datepickerUtilsTypesMod.DateIOAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

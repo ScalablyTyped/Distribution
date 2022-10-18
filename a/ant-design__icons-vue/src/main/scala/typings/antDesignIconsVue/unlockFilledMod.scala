@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsUnlockFilledMod.UnlockFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unlockFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/UnlockFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/UnlockFilled", JSImport.Default)
   @js.native
   val default: UnlockFilledIconType = js.native
-  
-  @js.native
-  trait UnlockFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_UnlockFilledIconType: String = js.native
-  }
   
   type _To = UnlockFilledIconType
   

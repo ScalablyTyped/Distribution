@@ -1,10 +1,10 @@
 package typings.antvGLite.mod
 
+import typings.antvGLite.distDomInterfacesMod.IElement
+import typings.antvGLite.distDomInterfacesMod.IEventTarget
+import typings.antvGLite.distDomInterfacesMod.INode
 import typings.antvGLite.distTypesMod.BaseStyleProps
 import typings.antvGLite.distTypesMod.ParsedBaseStyleProps
-import typings.antvGLite.domInterfacesMod.IElement
-import typings.antvGLite.domInterfacesMod.IEventTarget
-import typings.antvGLite.domInterfacesMod.INode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "Element")
 @js.native
 open class Element[StyleProps /* <: BaseStyleProps */, ParsedStyleProps /* <: ParsedBaseStyleProps */] ()
-  extends typings.antvGLite.domMod.Element[StyleProps, ParsedStyleProps]
+  extends typings.antvGLite.distDomMod.Element[StyleProps, ParsedStyleProps]
 /* static members */
 object Element {
   

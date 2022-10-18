@@ -2,7 +2,7 @@ package typings.storybookComponents.anon
 
 import typings.std.Element
 import typings.std.HTMLElement
-import typings.storybookComponents.popperjsCoreLibTypesMod.VirtualElement
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.VirtualElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

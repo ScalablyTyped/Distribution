@@ -1,21 +1,22 @@
 package typings.firebaseAdmin
 
-import typings.firebaseAdmin.coreMod.App
-import typings.firebaseAdmin.coreMod.AppOptions
-import typings.firebaseAdmin.credentialMod.Credential
-import typings.firebaseAdmin.credentialMod.ServiceAccount
+import typings.firebaseAdmin.libAppCoreMod.App
+import typings.firebaseAdmin.libAppCoreMod.AppOptions
+import typings.firebaseAdmin.libAppCredentialMod.Credential
+import typings.firebaseAdmin.libAppCredentialMod.ServiceAccount
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object appMod {
   
-  @JSImport("firebase-admin/lib/app", JSImport.Namespace)
+  @JSImport("firebase-admin/app", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("firebase-admin/lib/app", "SDK_VERSION")
+  @JSImport("firebase-admin/app", "SDK_VERSION")
   @js.native
   val SDK_VERSION: String = js.native
   

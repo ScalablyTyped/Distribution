@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `3` extends StObject {
   
-  var appName: js.UndefOr[typings.firebaseAuth.srcModelAuthMod.AppName] = js.undefined
+  var appName: js.UndefOr[typings.firebaseAuth.distEsm2017SrcModelAuthMod.AppName] = js.undefined
 }
 object `3` {
   
@@ -17,7 +17,7 @@ object `3` {
   
   extension [Self <: `3`](x: Self) {
     
-    inline def setAppName(value: typings.firebaseAuth.srcModelAuthMod.AppName): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: typings.firebaseAuth.distEsm2017SrcModelAuthMod.AppName): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
     inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
   }

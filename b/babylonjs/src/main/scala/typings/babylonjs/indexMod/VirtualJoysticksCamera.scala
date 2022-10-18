@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "VirtualJoysticksCamera")
 @js.native
 open class VirtualJoysticksCamera protected ()
-  extends typings.babylonjs.babylonjsMod.VirtualJoysticksCamera {
+  extends typings.babylonjs.camerasIndexMod.VirtualJoysticksCamera {
   /**
     * Instantiates a VirtualJoysticksCamera. It can be useful in First Person Shooter game for instance.
     * It is identical to the Free Camera and simply adds by default a virtual joystick.
@@ -17,10 +17,10 @@ open class VirtualJoysticksCamera protected ()
     * @param position Define the start position of the camera in the scene
     * @param scene Define the scene the camera belongs to
     */
-  def this(name: String, position: typings.babylonjs.mathVectorMod.Vector3) = this()
+  def this(name: String, position: typings.babylonjs.mathsMathDotvectorMod.Vector3) = this()
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
 }

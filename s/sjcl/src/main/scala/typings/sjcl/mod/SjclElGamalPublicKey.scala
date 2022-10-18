@@ -1,6 +1,6 @@
 package typings.sjcl.mod
 
-import typings.sjcl.anon.Tag
+import typings.sjcl.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class SjclElGamalPublicKey () extends SjclECCPublicKey {
   
-  def kem(paranoia: Double): Tag = js.native
+  def kem(paranoia: Double): Key = js.native
 }

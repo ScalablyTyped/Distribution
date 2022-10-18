@@ -1,6 +1,6 @@
 package typings.nivoPie
 
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoPie.anon.ActiveId
 import typings.nivoPie.anon.ArcGenerator
 import typings.nivoPie.anon.CenterX
@@ -11,7 +11,12 @@ import typings.nivoPie.anon.Datum
 import typings.nivoPie.anon.From
 import typings.nivoPie.anon.InnerRadius
 import typings.nivoPie.anon.Theme
-import typings.nivoPie.hooksMod.MayHaveLabel
+import typings.nivoPie.distTypesHooksMod.MayHaveLabel
+import typings.nivoPie.distTypesTypesMod.CompletePieSvgProps
+import typings.nivoPie.distTypesTypesMod.ComputedDatum
+import typings.nivoPie.distTypesTypesMod.PieCanvasProps
+import typings.nivoPie.distTypesTypesMod.PieCustomLayerProps
+import typings.nivoPie.distTypesTypesMod.PieSvgProps
 import typings.nivoPie.nivoPieStrings.activeInnerRadiusOffset
 import typings.nivoPie.nivoPieStrings.activeOuterRadiusOffset
 import typings.nivoPie.nivoPieStrings.arc
@@ -34,11 +39,6 @@ import typings.nivoPie.nivoPieStrings.startAngle
 import typings.nivoPie.nivoPieStrings.value
 import typings.nivoPie.nivoPieStrings.valueFormat
 import typings.nivoPie.nivoPieStrings.width
-import typings.nivoPie.typesMod.CompletePieSvgProps
-import typings.nivoPie.typesMod.ComputedDatum
-import typings.nivoPie.typesMod.PieCanvasProps
-import typings.nivoPie.typesMod.PieCustomLayerProps
-import typings.nivoPie.typesMod.PieSvgProps
 import typings.react.mod.global.JSX.Element
 import typings.std.Omit
 import typings.std.Partial

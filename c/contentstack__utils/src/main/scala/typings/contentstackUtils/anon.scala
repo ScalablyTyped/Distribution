@@ -1,8 +1,8 @@
 package typings.contentstackUtils
 
-import typings.contentstackUtils.embeddedObjectMod.EmbeddedItem
-import typings.contentstackUtils.embeddedObjectMod.EntryEmbedable
-import typings.contentstackUtils.jsonRteModelMod.EntryNode
+import typings.contentstackUtils.distTypesModelsEmbeddedObjectMod.EmbeddedItem
+import typings.contentstackUtils.distTypesModelsEmbeddedObjectMod.EntryEmbedable
+import typings.contentstackUtils.distTypesModelsJsonRteModelMod.EntryNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object anon {
     
     var paths: js.Array[String]
     
-    var renderOption: js.UndefOr[typings.contentstackUtils.optionsMod.RenderOption] = js.undefined
+    var renderOption: js.UndefOr[typings.contentstackUtils.distTypesOptionsMod.RenderOption] = js.undefined
   }
   object Entry {
     
@@ -34,7 +34,7 @@ object anon {
       
       inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
       
-      inline def setRenderOption(value: typings.contentstackUtils.optionsMod.RenderOption): Self = StObject.set(x, "renderOption", value.asInstanceOf[js.Any])
+      inline def setRenderOption(value: typings.contentstackUtils.distTypesOptionsMod.RenderOption): Self = StObject.set(x, "renderOption", value.asInstanceOf[js.Any])
       
       inline def setRenderOptionUndefined: Self = StObject.set(x, "renderOption", js.undefined)
     }
@@ -61,14 +61,14 @@ object anon {
     
     var entry: EntryEmbedable | js.Array[EntryEmbedable]
     
-    var paths: js.UndefOr[js.Array[String]] = js.undefined
+    var paths: js.Array[String]
     
-    var renderOption: js.UndefOr[typings.contentstackUtils.optionsMod.RenderOption] = js.undefined
+    var renderOption: js.UndefOr[typings.contentstackUtils.distTypesOptionsMod.RenderOption] = js.undefined
   }
   object Paths {
     
-    inline def apply(entry: EntryEmbedable | js.Array[EntryEmbedable]): Paths = {
-      val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any])
+    inline def apply(entry: EntryEmbedable | js.Array[EntryEmbedable], paths: js.Array[String]): Paths = {
+      val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
       __obj.asInstanceOf[Paths]
     }
     
@@ -80,11 +80,9 @@ object anon {
       
       inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
-      
       inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
       
-      inline def setRenderOption(value: typings.contentstackUtils.optionsMod.RenderOption): Self = StObject.set(x, "renderOption", value.asInstanceOf[js.Any])
+      inline def setRenderOption(value: typings.contentstackUtils.distTypesOptionsMod.RenderOption): Self = StObject.set(x, "renderOption", value.asInstanceOf[js.Any])
       
       inline def setRenderOptionUndefined: Self = StObject.set(x, "renderOption", js.undefined)
     }
@@ -94,14 +92,14 @@ object anon {
     
     var entry: EntryEmbedable | js.Array[EntryEmbedable]
     
-    var paths: js.Array[String]
+    var paths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var renderOption: js.UndefOr[typings.contentstackUtils.optionsMod.RenderOption] = js.undefined
+    var renderOption: js.UndefOr[typings.contentstackUtils.distTypesOptionsMod.RenderOption] = js.undefined
   }
   object RenderOption {
     
-    inline def apply(entry: EntryEmbedable | js.Array[EntryEmbedable], paths: js.Array[String]): RenderOption = {
-      val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
+    inline def apply(entry: EntryEmbedable | js.Array[EntryEmbedable]): RenderOption = {
+      val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderOption]
     }
     
@@ -113,9 +111,11 @@ object anon {
       
       inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      
       inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
       
-      inline def setRenderOption(value: typings.contentstackUtils.optionsMod.RenderOption): Self = StObject.set(x, "renderOption", value.asInstanceOf[js.Any])
+      inline def setRenderOption(value: typings.contentstackUtils.distTypesOptionsMod.RenderOption): Self = StObject.set(x, "renderOption", value.asInstanceOf[js.Any])
       
       inline def setRenderOptionUndefined: Self = StObject.set(x, "renderOption", js.undefined)
     }

@@ -48,7 +48,7 @@ trait TableBinding
     *  - Each row in the array you pass as the data argument must have the same number of rows as the table being updated. If not, the entire
     * operation will fail.
     *
-    *  - Each row and cell in the array must successfully add that row or cell to the table in the newly added column(s). If any row or cell
+    *  - Each row and cell in the array must successfully add that row or cell to the table in the newly added columns. If any row or cell
     * fails to be set for any reason, the entire operation will fail.
     *
     *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
@@ -94,7 +94,7 @@ trait TableBinding
     *  - Each row in the array you pass as the data argument must have the same number of columns as the table being updated. If not, the entire
     * operation will fail.
     *
-    *  - Each column and cell in the array must successfully add that column or cell to the table in the newly added rows(s). If any column or
+    *  - Each column and cell in the array must successfully add that column or cell to the table in the newly added rows. If any column or
     * cell fails to be set for any reason, the entire operation will fail.
     *
     *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
@@ -138,7 +138,7 @@ trait TableBinding
   var columnCount: Double = js.native
   
   /**
-    * Deletes all non-header rows and their values in the table, shifting appropriately for the host application.
+    * Deletes all non-header rows and their values in the table, shifting appropriately for the Office application.
     *
     * @remarks
     *
@@ -162,43 +162,43 @@ trait TableBinding
     *
     * Each JavaScript object in the return value array has this form: `{cells:{ cell_range }, format:{ format_definition }}`
     *
-    * The `cells:` property specifies the range you want format using one of the following values:
+    * The `cells:` property specifies the range you want format using one of the following values.
     *
     * **Supported ranges in cells property**
     *
     * <table>
     *   <tr>
-    *     <th>cells range settings</th>
+    *     <th><code>cells</code> range settings</th>
     *     <th>Description</th>
     *   </tr>
     *   <tr>
-    *     <td>`{row: n}`</td>
+    *     <td><code>{row: n}</code></td>
     *     <td>Specifies the range that is the zero-based nth row of data in the table.</td>
     *   </tr>
     *   <tr>
-    *     <td>`{column: n}`</td>
+    *     <td><code>{column: n}</code></td>
     *     <td>Specifies the range that is the zero-based nth column of data in the table.</td>
     *   </tr>
     *   <tr>
-    *     <td>`{row: i, column: j}`</td>
+    *     <td><code>{row: i, column: j}</code></td>
     *     <td>Specifies the single cell that is the ith row and jth column of the table.</td>
     *   </tr>
     *   <tr>
-    *     <td>`Office.Table.All`</td>
+    *     <td><code>Office.Table.All</code></td>
     *     <td>Specifies the entire table, including column headers, data, and totals (if any).</td>
     *   </tr>
     *   <tr>
-    *     <td>`Office.Table.Data`</td>
+    *     <td><code>Office.Table.Data</code></td>
     *     <td>Specifies only the data in the table (no headers and totals).</td>
     *   </tr>
     *   <tr>
-    *     <td>`Office.Table.Headers`</td>
+    *     <td><code>Office.Table.Headers</code></td>
     *     <td>Specifies only the header row.</td>
     *   </tr>
     * </table>
     *
     * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-    * (Right-click \> Format Cells or Home \> Format \> Format Cells).
+    * (Right-click then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
     *
     * @param cellReference An object literal containing name-value pairs that specify the range of cells to get formatting from.
     * @param formats An array specifying the format properties to get.
@@ -293,7 +293,7 @@ trait TableBinding
     *
     * @remarks
     *
-    * When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the Insert tab), both Office host
+    * When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the Insert tab), both Office
     * applications create a single row of headers followed by a single blank row. However, if your add-in's script creates a binding for this
     * newly inserted table (for example, by using the {@link Office.Bindings}.addFromSelectionAsync method), and then checks the value of the
     * rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel on the web.
@@ -320,43 +320,43 @@ trait TableBinding
     *
     * Each JavaScript object in the cellFormat array has this form: `{cells:{ cell_range }, format:{ format_definition }}`
     *
-    * The `cells:` property specifies the range you want format using one of the following values:
+    * The `cells:` property specifies the range you want format using one of the following values.
     *
     * **Supported ranges in cells property**
     *
     * <table>
     *   <tr>
-    *     <th>cells range settings</th>
+    *     <th><code>cells</code> range settings</th>
     *     <th>Description</th>
     *   </tr>
     *   <tr>
-    *     <td>`{row: n}`</td>
+    *     <td><code>{row: n}</code></td>
     *     <td>Specifies the range that is the zero-based nth row of data in the table.</td>
     *   </tr>
     *   <tr>
-    *     <td>`{column: n}`</td>
+    *     <td><code>{column: n}</code></td>
     *     <td>Specifies the range that is the zero-based nth column of data in the table.</td>
     *   </tr>
     *   <tr>
-    *     <td>`{row: i, column: j}`</td>
+    *     <td><code>{row: i, column: j}</code></td>
     *     <td>Specifies the single cell that is the ith row and jth column of the table.</td>
     *   </tr>
     *   <tr>
-    *     <td>`Office.Table.All`</td>
+    *     <td><code>Office.Table.All</code></td>
     *     <td>Specifies the entire table, including column headers, data, and totals (if any).</td>
     *   </tr>
     *   <tr>
-    *     <td>`Office.Table.Data`</td>
+    *     <td><code>Office.Table.Data</code></td>
     *     <td>Specifies only the data in the table (no headers and totals).</td>
     *   </tr>
     *   <tr>
-    *     <td>`Office.Table.Headers`</td>
+    *     <td><code>Office.Table.Headers</code></td>
     *     <td>Specifies only the header row.</td>
     *   </tr>
     * </table>
     *
     * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-    * (Right-click \> Format Cells or Home \> Format \> Format Cells).
+    * (Right-click then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
     *
     * You specify the value of the `format:` property as a list of one or more property name - value pairs in a JavaScript object literal. The
     * property name specifies the name of the formatting property to set, and value specifies the property value.
@@ -390,7 +390,7 @@ trait TableBinding
     *
     * Setting formatting with the optional parameters of the `Document.setSelectedDataAsync` and `TableBinding.setDataAsync` methods only works
     * to set formatting when writing data the first time.
-    * To make formatting changes after writing data, use the following methods:
+    * To make formatting changes after writing data, use the following methods.
     *
     *  - To update cell formatting, such as font color and style, use the `TableBinding.setFormatsAsync` method (this method).
     *
@@ -431,23 +431,23 @@ trait TableBinding
     * <table>
     *   <tr>
     *     <th>Property</th>
-    *     <th>Use to...</th>
+    *     <th>Use</th>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.value</td>
-    *     <td>Always returns undefined because there is no data or object to retrieve when setting formats.</td>
+    *     <td><code>AsyncResult.value</code></td>
+    *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when setting formats</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.status</td>
-    *     <td>Determine the success or failure of the operation.</td>
+    *     <td><code>AsyncResult.status</code></td>
+    *     <td>Determine the success or failure of the operation</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.error</td>
-    *     <td>Access an Error object that provides error information if the operation failed.</td>
+    *     <td><code>AsyncResult.error</code></td>
+    *     <td>Access an Error object that provides error information if the operation failed</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.asyncContext</td>
-    *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+    *     <td><code>AsyncResult.asyncContext</code></td>
+    *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
     *   </tr>
     * </table>
     *

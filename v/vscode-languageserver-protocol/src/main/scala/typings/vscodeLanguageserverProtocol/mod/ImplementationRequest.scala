@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolImplementationMod.ImplementationParams
-import typings.vscodeLanguageserverProtocol.protocolImplementationMod.ImplementationRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotimplementationMod.ImplementationParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotimplementationMod.ImplementationRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashimplementation
 import typings.vscodeLanguageserverTypes.mod.Definition
 import org.scalablytyped.runtime.StObject
@@ -12,7 +12,7 @@ object ImplementationRequest {
   
   @JSImport("vscode-languageserver-protocol", "ImplementationRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "ImplementationRequest.method")
   @js.native
@@ -20,7 +20,7 @@ object ImplementationRequest {
   
   @JSImport("vscode-languageserver-protocol", "ImplementationRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     ImplementationParams, 
     Definition | js.Array[typings.vscodeLanguageserverTypes.mod.LocationLink] | Null, 
     js.Array[

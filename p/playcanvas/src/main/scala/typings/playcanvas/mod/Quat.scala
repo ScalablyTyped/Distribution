@@ -8,41 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A quaternion.
   */
-@JSImport("playcanvas", "Quat")
 @js.native
-/**
-  * Create a new Quat instance.
-  *
-  * @param {number|number[]} [x] - The quaternion's x component. Defaults to 0. If x is an array
-  * of length 4, the array will be used to populate all components.
-  * @param {number} [y] - The quaternion's y component. Defaults to 0.
-  * @param {number} [z] - The quaternion's z component. Defaults to 0.
-  * @param {number} [w] - The quaternion's w component. Defaults to 1.
-  */
-open class Quat () extends StObject {
-  def this(x: js.Array[Double]) = this()
-  def this(x: Double) = this()
-  def this(x: js.Array[Double], y: Double) = this()
-  def this(x: Double, y: Double) = this()
-  def this(x: Unit, y: Double) = this()
-  def this(x: js.Array[Double], y: Double, z: Double) = this()
-  def this(x: js.Array[Double], y: Unit, z: Double) = this()
-  def this(x: Double, y: Double, z: Double) = this()
-  def this(x: Double, y: Unit, z: Double) = this()
-  def this(x: Unit, y: Double, z: Double) = this()
-  def this(x: Unit, y: Unit, z: Double) = this()
-  def this(x: js.Array[Double], y: Double, z: Double, w: Double) = this()
-  def this(x: js.Array[Double], y: Double, z: Unit, w: Double) = this()
-  def this(x: js.Array[Double], y: Unit, z: Double, w: Double) = this()
-  def this(x: js.Array[Double], y: Unit, z: Unit, w: Double) = this()
-  def this(x: Double, y: Double, z: Double, w: Double) = this()
-  def this(x: Double, y: Double, z: Unit, w: Double) = this()
-  def this(x: Double, y: Unit, z: Double, w: Double) = this()
-  def this(x: Double, y: Unit, z: Unit, w: Double) = this()
-  def this(x: Unit, y: Double, z: Double, w: Double) = this()
-  def this(x: Unit, y: Double, z: Unit, w: Double) = this()
-  def this(x: Unit, y: Unit, z: Double, w: Double) = this()
-  def this(x: Unit, y: Unit, z: Unit, w: Double) = this()
+trait Quat extends StObject {
   
   def conjugate(): Quat = js.native
   
@@ -324,28 +291,4 @@ open class Quat () extends StObject {
     * @type {number}
     */
   var z: Double = js.native
-}
-object Quat {
-  
-  /**
-    * A constant quaternion set to [0, 0, 0, 1] (the identity).
-    *
-    * @type {Quat}
-    * @readonly
-    */
-  /* static member */
-  @JSImport("playcanvas", "Quat.IDENTITY")
-  @js.native
-  val IDENTITY: Quat = js.native
-  
-  /**
-    * A constant quaternion set to [0, 0, 0, 0].
-    *
-    * @type {Quat}
-    * @readonly
-    */
-  /* static member */
-  @JSImport("playcanvas", "Quat.ZERO")
-  @js.native
-  val ZERO: Quat = js.native
 }

@@ -1,8 +1,8 @@
 package typings.uirouterAngularjs.mod.core
 
-import typings.uirouterCore.transitionHookMod.GetErrorHandler
-import typings.uirouterCore.transitionHookMod.GetResultHandler
-import typings.uirouterCore.transitionInterfaceMod.PathType
+import typings.uirouterCore.libTransitionInterfaceMod.PathType
+import typings.uirouterCore.libTransitionTransitionHookMod.GetErrorHandler
+import typings.uirouterCore.libTransitionTransitionHookMod.GetResultHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,20 +13,20 @@ open class TransitionEventType protected ()
   extends typings.uirouterCore.mod.TransitionEventType {
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean,
@@ -34,7 +34,7 @@ open class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Unit,
@@ -42,7 +42,7 @@ open class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean,
@@ -51,7 +51,7 @@ open class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean,
@@ -60,7 +60,7 @@ open class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Unit,
@@ -69,7 +69,7 @@ open class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Unit,
@@ -78,7 +78,7 @@ open class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean,
@@ -88,7 +88,7 @@ open class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean,
@@ -98,7 +98,7 @@ open class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean,
@@ -108,7 +108,7 @@ open class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean,
@@ -118,7 +118,7 @@ open class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Unit,
@@ -128,7 +128,7 @@ open class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Unit,
@@ -138,7 +138,7 @@ open class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Unit,
@@ -148,7 +148,7 @@ open class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Unit,

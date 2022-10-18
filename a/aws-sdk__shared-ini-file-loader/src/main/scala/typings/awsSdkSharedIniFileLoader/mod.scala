@@ -1,12 +1,12 @@
 package typings.awsSdkSharedIniFileLoader
 
 import typings.awsSdkSharedIniFileLoader.anon.Profile
-import typings.awsSdkSharedIniFileLoader.getSSOTokenFromFileMod.SSOToken
-import typings.awsSdkSharedIniFileLoader.loadSharedConfigFilesMod.SharedConfigInit
-import typings.awsSdkSharedIniFileLoader.loadSsoSessionDataMod.SsoSessionInit
-import typings.awsSdkSharedIniFileLoader.parseKnownFilesMod.SourceProfileInit
-import typings.awsSdkTypes.profileMod.ParsedIniData
-import typings.awsSdkTypes.profileMod.SharedConfigFiles
+import typings.awsSdkSharedIniFileLoader.distTypesGetSSOTokenFromFileMod.SSOToken
+import typings.awsSdkSharedIniFileLoader.distTypesLoadSharedConfigFilesMod.SharedConfigInit
+import typings.awsSdkSharedIniFileLoader.distTypesLoadSsoSessionDataMod.SsoSessionInit
+import typings.awsSdkSharedIniFileLoader.distTypesParseKnownFilesMod.SourceProfileInit
+import typings.awsSdkTypes.distTypesProfileMod.ParsedIniData
+import typings.awsSdkTypes.distTypesProfileMod.SharedConfigFiles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

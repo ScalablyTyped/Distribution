@@ -12,6 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@material/textfield", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialTextfield.iconMod.default {
+    def this(adapter: PartialMDCTextFieldIconAd) = this()
+  }
+  
   /**
     * Label should always float for these types as they show some UI even if value
     * is empty.
@@ -23,11 +30,11 @@ object mod {
   @JSImport("@material/textfield", "MDCTextField")
   @js.native
   open class MDCTextField protected ()
-    extends typings.materialTextfield.materialTextfieldMod.MDCTextField {
+    extends typings.materialTextfield.componentMod.MDCTextField {
     def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
-      foundation: typings.materialTextfield.materialTextfieldFoundationMod.MDCTextFieldFoundation,
+      foundation: typings.materialTextfield.foundationMod.MDCTextFieldFoundation,
       args: Any*
     ) = this()
   }
@@ -38,7 +45,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: typings.std.Element): typings.materialTextfield.materialTextfieldMod.MDCTextField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.materialTextfieldMod.MDCTextField]
+    inline def attachTo(root: typings.std.Element): typings.materialTextfield.componentMod.MDCTextField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.componentMod.MDCTextField]
   }
   
   @JSImport("@material/textfield", "MDCTextFieldCharacterCounter")
@@ -48,7 +55,7 @@ object mod {
     def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
-      foundation: typings.materialTextfield.foundationMod.MDCTextFieldCharacterCounterFoundation,
+      foundation: typings.materialTextfield.characterCounterFoundationMod.MDCTextFieldCharacterCounterFoundation,
       args: Any*
     ) = this()
   }
@@ -59,7 +66,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: typings.std.Element): typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter]
+    inline def attachTo(root: typings.std.Element): typings.materialTextfield.characterCounterComponentMod.MDCTextFieldCharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.characterCounterComponentMod.MDCTextFieldCharacterCounter]
   }
   
   @JSImport("@material/textfield", "MDCTextFieldCharacterCounterFoundation")
@@ -76,7 +83,7 @@ object mod {
     * @param foundationMap Map from subcomponent names to their subfoundations.
     */
   open class MDCTextFieldFoundation ()
-    extends typings.materialTextfield.materialTextfieldFoundationMod.MDCTextFieldFoundation {
+    extends typings.materialTextfield.foundationMod.MDCTextFieldFoundation {
     def this(adapter: PartialMDCTextFieldAdapte) = this()
     def this(adapter: Unit, foundationMap: PartialMDCTextFieldFounda) = this()
     def this(adapter: PartialMDCTextFieldAdapte, foundationMap: PartialMDCTextFieldFounda) = this()

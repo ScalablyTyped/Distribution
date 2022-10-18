@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [cost=0] - The cost of this edge.
   */
 open class Edge ()
-  extends typings.yuka.yukaMod.Edge {
+  extends typings.yuka.srcYukaMod.Edge {
   def this(from: Double) = this()
   def this(from: Double, to: Double) = this()
   def this(from: Unit, to: Double) = this()

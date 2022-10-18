@@ -12,20 +12,20 @@ object babylonjsMeshesSubMeshAugmentingMod {
     
     /** @internal */
     def _projectOnTrianglesToRef(
-      vector: typings.babylonjs.mathVectorMod.Vector3,
-      positions: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+      vector: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+      positions: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3],
       indices: IndicesArray,
       step: Double,
       checkStopper: Boolean,
-      ref: typings.babylonjs.mathVectorMod.Vector3
+      ref: typings.babylonjs.mathsMathDotvectorMod.Vector3
     ): Double
     
     /** @internal */
     def _projectOnUnIndexedTrianglesToRef(
-      vector: typings.babylonjs.mathVectorMod.Vector3,
-      positions: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+      vector: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+      positions: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3],
       indices: IndicesArray,
-      ref: typings.babylonjs.mathVectorMod.Vector3
+      ref: typings.babylonjs.mathsMathDotvectorMod.Vector3
     ): Double
     
     /**
@@ -38,18 +38,18 @@ object babylonjsMeshesSubMeshAugmentingMod {
       * @returns distance from the point and the submesh, or -1 if the mesh rendering mode doesn't support projections
       */
     def projectToRef(
-      vector: typings.babylonjs.mathVectorMod.Vector3,
-      positions: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+      vector: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+      positions: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3],
       indices: IndicesArray,
-      ref: typings.babylonjs.mathVectorMod.Vector3
+      ref: typings.babylonjs.mathsMathDotvectorMod.Vector3
     ): Double
   }
   object SubMesh {
     
     inline def apply(
-      _projectOnTrianglesToRef: (typings.babylonjs.mathVectorMod.Vector3, js.Array[typings.babylonjs.mathVectorMod.Vector3], IndicesArray, Double, Boolean, typings.babylonjs.mathVectorMod.Vector3) => Double,
-      _projectOnUnIndexedTrianglesToRef: (typings.babylonjs.mathVectorMod.Vector3, js.Array[typings.babylonjs.mathVectorMod.Vector3], IndicesArray, typings.babylonjs.mathVectorMod.Vector3) => Double,
-      projectToRef: (typings.babylonjs.mathVectorMod.Vector3, js.Array[typings.babylonjs.mathVectorMod.Vector3], IndicesArray, typings.babylonjs.mathVectorMod.Vector3) => Double
+      _projectOnTrianglesToRef: (typings.babylonjs.mathsMathDotvectorMod.Vector3, js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3], IndicesArray, Double, Boolean, typings.babylonjs.mathsMathDotvectorMod.Vector3) => Double,
+      _projectOnUnIndexedTrianglesToRef: (typings.babylonjs.mathsMathDotvectorMod.Vector3, js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3], IndicesArray, typings.babylonjs.mathsMathDotvectorMod.Vector3) => Double,
+      projectToRef: (typings.babylonjs.mathsMathDotvectorMod.Vector3, js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3], IndicesArray, typings.babylonjs.mathsMathDotvectorMod.Vector3) => Double
     ): typings.babylonjs.mod.babylonjsMeshesSubMeshAugmentingMod.SubMesh = {
       val __obj = js.Dynamic.literal(_projectOnTrianglesToRef = js.Any.fromFunction6(_projectOnTrianglesToRef), _projectOnUnIndexedTrianglesToRef = js.Any.fromFunction4(_projectOnUnIndexedTrianglesToRef), projectToRef = js.Any.fromFunction4(projectToRef))
       __obj.asInstanceOf[typings.babylonjs.mod.babylonjsMeshesSubMeshAugmentingMod.SubMesh]
@@ -58,15 +58,15 @@ object babylonjsMeshesSubMeshAugmentingMod {
     extension [Self <: typings.babylonjs.mod.babylonjsMeshesSubMeshAugmentingMod.SubMesh](x: Self) {
       
       inline def setProjectToRef(
-        value: (typings.babylonjs.mathVectorMod.Vector3, js.Array[typings.babylonjs.mathVectorMod.Vector3], IndicesArray, typings.babylonjs.mathVectorMod.Vector3) => Double
+        value: (typings.babylonjs.mathsMathDotvectorMod.Vector3, js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3], IndicesArray, typings.babylonjs.mathsMathDotvectorMod.Vector3) => Double
       ): Self = StObject.set(x, "projectToRef", js.Any.fromFunction4(value))
       
       inline def set_projectOnTrianglesToRef(
-        value: (typings.babylonjs.mathVectorMod.Vector3, js.Array[typings.babylonjs.mathVectorMod.Vector3], IndicesArray, Double, Boolean, typings.babylonjs.mathVectorMod.Vector3) => Double
+        value: (typings.babylonjs.mathsMathDotvectorMod.Vector3, js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3], IndicesArray, Double, Boolean, typings.babylonjs.mathsMathDotvectorMod.Vector3) => Double
       ): Self = StObject.set(x, "_projectOnTrianglesToRef", js.Any.fromFunction6(value))
       
       inline def set_projectOnUnIndexedTrianglesToRef(
-        value: (typings.babylonjs.mathVectorMod.Vector3, js.Array[typings.babylonjs.mathVectorMod.Vector3], IndicesArray, typings.babylonjs.mathVectorMod.Vector3) => Double
+        value: (typings.babylonjs.mathsMathDotvectorMod.Vector3, js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3], IndicesArray, typings.babylonjs.mathsMathDotvectorMod.Vector3) => Double
       ): Self = StObject.set(x, "_projectOnUnIndexedTrianglesToRef", js.Any.fromFunction4(value))
     }
   }

@@ -1,13 +1,13 @@
 package typings.mendixmodelsdk.mod.webservices
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.appservicesMod.appservices.Msd
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
-import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenAppservicesMod.appservices.Msd
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenWebservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "webservices.WsdlDescription")
 @js.native
 open class WsdlDescription protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.webservices.WsdlDescription {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.webservices.WsdlDescription {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,7 +37,7 @@ object WsdlDescription {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenWebservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWebservicesMod.webservices.WsdlDescription]
   
   /**
     * Creates and returns a new WsdlDescription instance in the SDK and on the server.
@@ -48,7 +48,7 @@ object WsdlDescription {
     *  9.0.2 and higher
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.webservicesMod.webservices.ImportedWebService): typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenWebservicesMod.webservices.ImportedWebService): typings.mendixmodelsdk.srcGenWebservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWebservicesMod.webservices.WsdlDescription]
   
   /**
     * Creates and returns a new WsdlDescription instance in the SDK and on the server.
@@ -56,7 +56,7 @@ object WsdlDescription {
     * of the parent ImportedWebService element passed as argument.
     */
   /* static member */
-  inline def createInImportedWebServiceUnderWsdlDescription(container: typings.mendixmodelsdk.webservicesMod.webservices.ImportedWebService): typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportedWebServiceUnderWsdlDescription")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription]
+  inline def createInImportedWebServiceUnderWsdlDescription(container: typings.mendixmodelsdk.srcGenWebservicesMod.webservices.ImportedWebService): typings.mendixmodelsdk.srcGenWebservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportedWebServiceUnderWsdlDescription")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWebservicesMod.webservices.WsdlDescription]
   
   /**
     * Creates and returns a new WsdlDescription instance in the SDK and on the server.
@@ -67,7 +67,7 @@ object WsdlDescription {
     *  6.0.0 to 9.0.1
     */
   /* static member */
-  inline def createInMsdUnderWsdlDescription(container: Msd): typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdUnderWsdlDescription")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription]
+  inline def createInMsdUnderWsdlDescription(container: Msd): typings.mendixmodelsdk.srcGenWebservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdUnderWsdlDescription")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWebservicesMod.webservices.WsdlDescription]
   
   /* static member */
   @JSImport("mendixmodelsdk", "webservices.WsdlDescription.structureTypeName")

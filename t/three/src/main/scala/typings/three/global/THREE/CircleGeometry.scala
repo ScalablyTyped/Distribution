@@ -37,5 +37,5 @@ object CircleGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.circleGeometryMod.CircleGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.circleGeometryMod.CircleGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesCircleGeometryMod.CircleGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesCircleGeometryMod.CircleGeometry]
 }

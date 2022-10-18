@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "AbstractMessageReader")
+/* note: abstract class */ @JSImport("vscode-languageserver-protocol", "AbstractMessageReader")
 @js.native
-abstract class AbstractMessageReader ()
+open class AbstractMessageReader ()
   extends typings.vscodeJsonrpc.mod.AbstractMessageReader

@@ -10,9 +10,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the authentication context that contains details of the current authentication attempt and provides methods to perform the authentication. */
-@JSGlobal("Windows.Networking.NetworkOperators.HotspotAuthenticationContext")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.HotspotAuthenticationContext")
 @js.native
-abstract class HotspotAuthenticationContext ()
+open class HotspotAuthenticationContext ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationContext {
   

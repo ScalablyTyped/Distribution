@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "before-after-hook" : "2.2.2"
+      "before-after-hook" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "before-after-hook" : "2.2.2"
+      "before-after-hook" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

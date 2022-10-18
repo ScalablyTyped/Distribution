@@ -10,10 +10,10 @@ Run your Atom package tests using Mocha
 | ------------------ | :-------------: |
 | Full name          | atom-mocha-test-runner |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 11186 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 552.6666666666666 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/BinaryMuse/atom-mocha-test-runner#readme)

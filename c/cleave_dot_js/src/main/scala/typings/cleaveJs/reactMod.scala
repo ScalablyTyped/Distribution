@@ -1,7 +1,7 @@
 package typings.cleaveJs
 
 import org.scalablytyped.runtime.Shortcut
-import typings.cleaveJs.propsMod.Props
+import typings.cleaveJs.reactPropsMod.Props
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState

@@ -2,9 +2,9 @@ package typings.nteractTransformVdom
 
 import typings.nteractTransformVdom.anon.MediaType
 import typings.nteractTransformVdom.anon.PartialProps
-import typings.nteractTransformVdom.eventToObjectMod.SerializedEvent
+import typings.nteractTransformVdom.libEventToObjectMod.SerializedEvent
+import typings.nteractTransformVdom.libObjectToReactMod.VDOMEl
 import typings.nteractTransformVdom.nteractTransformVdomStrings.applicationSlashvdomDotv1Plussignjson
-import typings.nteractTransformVdom.objectToReactMod.VDOMEl
 import typings.react.mod.PureComponent
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject

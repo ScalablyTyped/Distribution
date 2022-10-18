@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "AElement")
 @js.native
 open class AElement protected ()
-  extends typings.canvg.documentMod.AElement {
-  def this(document: typings.canvg.documentDocumentMod.Document, node: HTMLElement) = this()
-  def this(document: typings.canvg.documentDocumentMod.Document, node: HTMLElement, captureTextNodes: Boolean) = this()
+  extends typings.canvg.distDocumentMod.AElement {
+  def this(document: typings.canvg.distDocumentDocumentMod.Document, node: HTMLElement) = this()
+  def this(
+    document: typings.canvg.distDocumentDocumentMod.Document,
+    node: HTMLElement,
+    captureTextNodes: Boolean
+  ) = this()
 }

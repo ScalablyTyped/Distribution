@@ -1,6 +1,6 @@
 package typings.fastify.anon
 
-import typings.ajv.coreMod.Options
+import typings.ajv.distCoreMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

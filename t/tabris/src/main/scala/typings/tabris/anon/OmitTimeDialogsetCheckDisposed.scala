@@ -200,7 +200,7 @@ trait OmitTimeDialogsetCheckDisposed extends StObject {
       typings.tabris.global.tabris.TimeDialog, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & Children
+  ]) & `3`
   
   def off(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], Unit]): typings.tabris.global.tabris.TimeDialog
   def off(
@@ -308,7 +308,7 @@ object OmitTimeDialogsetCheckDisposed {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.TimeDialog, 
       Omit[typings.tabris.global.tabris.TimeDialog, set | jsxAttributes]
-    ]) & Children,
+    ]) & `3`,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.TimeDialog,
     on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.TimeDialog,
     onClose: Listeners[TimeDialogCloseEvent[typings.tabris.global.tabris.TimeDialog]],
@@ -373,7 +373,7 @@ object OmitTimeDialogsetCheckDisposed {
       value: (JSXAttributes[
           typings.tabris.global.tabris.TimeDialog, 
           Omit[typings.tabris.global.tabris.TimeDialog, set | jsxAttributes]
-        ]) & Children
+        ]) & `3`
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setOff(

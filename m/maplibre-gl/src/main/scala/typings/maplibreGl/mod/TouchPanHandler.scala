@@ -1,6 +1,5 @@
 package typings.maplibreGl.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.mapboxPointGeometry.mod.^
 import typings.maplibreGl.anon.Around
 import typings.maplibreGl.anon.CooperativeGestures
@@ -31,9 +30,7 @@ open class TouchPanHandler protected () extends StObject {
   
   var _sum: ^ = js.native
   
-  var _touches: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in string | number ]: @mapbox/point-geometry.@mapbox/point-geometry.^}
-    */ typings.maplibreGl.maplibreGlStrings.TouchPanHandler & TopLevel[Any] = js.native
+  var _touches: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in string | number ]: @mapbox/point-geometry.@mapbox/point-geometry.^} */ js.Any = js.native
   
   def disable(): scala.Unit = js.native
   

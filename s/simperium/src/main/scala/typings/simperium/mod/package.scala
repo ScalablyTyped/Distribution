@@ -1,10 +1,8 @@
 package typings.simperium.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.simperium.anon.Authorize
 import typings.simperium.mod.^
-import typings.std.NonNullable
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,17 +21,19 @@ type ChangeVersion = String
 
 type DMPDiff = String
 
-type EntitiesCallback[T, E] = js.Function2[/* error */ NonNullable[E] | Null, /* entities */ js.UndefOr[js.Array[T]], Unit]
+type EntitiesCallback[T, E] = js.Function2[
+/* import warning: importer.ImportType#apply Failed type conversion: E extends null ? null : std.NonNullable<E> */ /* error */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: E extends null ? std.Array<T> : undefined */ /* entities */ js.Any, 
+Unit]
 
-type EntityCallback[T, E] = js.Function2[/* error */ NonNullable[E] | Null, /* entity */ js.UndefOr[T], Unit]
+type EntityCallback[T, E] = js.Function2[
+/* import warning: importer.ImportType#apply Failed type conversion: E extends null ? null : std.NonNullable<E> */ /* error */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: E extends null ? T : undefined */ /* entity */ js.Any, 
+Unit]
 
 type EntityId = String
 
 type Heartbeat = CustomEventEmitter[HeartbeatEvent]
-
-type JSONDiff[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? simperium.simperium.DiffOp<T[K]>}
-  */ typings.simperium.simperiumStrings.JSONDiff & TopLevel[T]
 
 type LocalQueue[T] = CustomEventEmitter[LocalQueueEvent[T]]
 

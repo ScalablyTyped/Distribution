@@ -1,6 +1,6 @@
 package typings.baseui
 
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.baseui.stylesTypesMod.Theme
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject

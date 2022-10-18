@@ -1,10 +1,10 @@
 package typings.loremIpsum
 
-import typings.loremIpsum.formatsMod.LoremFormat
-import typings.loremIpsum.generatorMod.IGeneratorOptions
-import typings.loremIpsum.generatorMod.IPrng
-import typings.loremIpsum.loremIpsumMod.default
-import typings.loremIpsum.unitsMod.LoremUnit
+import typings.loremIpsum.typesSrcConstantsFormatsMod.LoremFormat
+import typings.loremIpsum.typesSrcConstantsUnitsMod.LoremUnit
+import typings.loremIpsum.typesSrcLibGeneratorMod.IGeneratorOptions
+import typings.loremIpsum.typesSrcLibGeneratorMod.IPrng
+import typings.loremIpsum.typesSrcLibLoremIpsumMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

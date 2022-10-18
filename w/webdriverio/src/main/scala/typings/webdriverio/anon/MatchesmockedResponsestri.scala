@@ -3,9 +3,9 @@ package typings.webdriverio.anon
 import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import typings.wdioTypes.mod.JsonCompatible
-import typings.webdriverio.interceptionTypesMod.MixedContentType
-import typings.webdriverio.interceptionTypesMod.ReferrerPolicy
-import typings.webdriverio.interceptionTypesMod.ResourcePriority
+import typings.webdriverio.buildUtilsInterceptionTypesMod.MixedContentType
+import typings.webdriverio.buildUtilsInterceptionTypesMod.ReferrerPolicy
+import typings.webdriverio.buildUtilsInterceptionTypesMod.ResourcePriority
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

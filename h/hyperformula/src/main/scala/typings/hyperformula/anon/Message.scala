@@ -1,6 +1,6 @@
 package typings.hyperformula.anon
 
-import typings.hyperformula.astMod.ParsingErrorType
+import typings.hyperformula.typingsParserAstMod.ParsingErrorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

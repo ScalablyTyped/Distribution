@@ -1,10 +1,10 @@
 package typings.grommet.anon
 
-import typings.grommet.anchorMod.AnchorProps
-import typings.grommet.boxMod.BoxProps
+import typings.grommet.componentsAnchorMod.AnchorProps
+import typings.grommet.componentsBoxMod.BoxProps
+import typings.grommet.componentsTextMod.TextProps
 import typings.grommet.grommetStrings.column
 import typings.grommet.grommetStrings.row
-import typings.grommet.textMod.TextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ trait Actions extends StObject {
   
   var actions: js.UndefOr[AnchorProps] = js.undefined
   
-  var close: js.UndefOr[Icon] = js.undefined
+  var close: js.UndefOr[ColorIcon] = js.undefined
   
   var container: js.UndefOr[BoxProps] = js.undefined
   
@@ -56,7 +56,7 @@ object Actions {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setClose(value: Icon): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: ColorIcon): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     

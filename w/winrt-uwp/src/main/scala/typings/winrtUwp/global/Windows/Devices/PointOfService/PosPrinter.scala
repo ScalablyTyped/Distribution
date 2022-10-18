@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a point-of-service printer. */
-@JSGlobal("Windows.Devices.PointOfService.PosPrinter")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.PosPrinter")
 @js.native
-abstract class PosPrinter ()
+open class PosPrinter ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.PosPrinter
 object PosPrinter {

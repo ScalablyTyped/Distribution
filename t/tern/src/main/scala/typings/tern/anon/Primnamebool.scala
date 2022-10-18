@@ -1,9 +1,9 @@
 package typings.tern.anon
 
-import typings.tern.inferMod.ANull
-import typings.tern.inferMod.AVal
-import typings.tern.inferMod.Prim
-import typings.tern.inferMod.Type
+import typings.tern.libInferMod.ANull
+import typings.tern.libInferMod.AVal
+import typings.tern.libInferMod.Prim
+import typings.tern.libInferMod.Type
 import typings.tern.ternStrings.bool
 import typings.tern.ternStrings.number
 import typings.tern.ternStrings.string
@@ -32,10 +32,10 @@ trait Primnamebool extends StObject {
   
   def getSymbolType(args: Any*): js.UndefOr[ANull] = js.native
   
-  def getType(): Prim = js.native
+  def getType(): Type = js.native
   def getType(args: Any*): js.UndefOr[ANull | Null] = js.native
   @JSName("getType")
-  def getType_Type(): Type = js.native
+  def getType_Prim(): Prim = js.native
   
   def hasType(args: Any*): Boolean = js.native
   /** Queries whether the AVal _currently_ holds the given type. */

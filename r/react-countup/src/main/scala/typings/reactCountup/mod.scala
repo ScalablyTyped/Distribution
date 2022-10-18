@@ -1,9 +1,9 @@
 package typings.reactCountup
 
 import typings.react.mod.FC
-import typings.reactCountup.countUpMod.CountUpProps
-import typings.reactCountup.typesMod.CountUpApi
-import typings.reactCountup.useCountUpMod.useCountUpProps
+import typings.reactCountup.buildCountUpMod.CountUpProps
+import typings.reactCountup.buildTypesMod.CountUpApi
+import typings.reactCountup.buildUseCountUpMod.useCountUpProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for webgpu__types
 
-Typings are for version 0.1.21
+Typings are for version 0.1.22
 
 ## Library description:
 This package defines Typescript types (`.d.ts`) for the upcoming [WebGPU standard](https://github.com/gpuweb/gpuweb/wiki/Implementation-Status).

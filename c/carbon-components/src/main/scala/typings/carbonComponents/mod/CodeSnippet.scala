@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "CodeSnippet")
 @js.native
 open class CodeSnippet protected ()
-  extends typings.carbonComponents.componentsMod.CodeSnippet {
+  extends typings.carbonComponents.globalsJsComponentsMod.CodeSnippet {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialCodeSnippetOptions) = this()
 }

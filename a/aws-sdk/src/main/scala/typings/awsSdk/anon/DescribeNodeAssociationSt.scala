@@ -1,8 +1,8 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.opsworkscmMod.NodeAssociationStatusToken
-import typings.awsSdk.opsworkscmMod.ServerName
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsOpsworkscmMod.NodeAssociationStatusToken
+import typings.awsSdk.clientsOpsworkscmMod.ServerName
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,12 +16,12 @@ trait DescribeNodeAssociationSt extends StObject {
   /**
     * The token returned in either the AssociateNodeResponse or the DisassociateNodeResponse. 
     */
-  var NodeAssociationStatusToken: typings.awsSdk.opsworkscmMod.NodeAssociationStatusToken
+  var NodeAssociationStatusToken: typings.awsSdk.clientsOpsworkscmMod.NodeAssociationStatusToken
   
   /**
     * The name of the server from which to disassociate the node. 
     */
-  var ServerName: typings.awsSdk.opsworkscmMod.ServerName
+  var ServerName: typings.awsSdk.clientsOpsworkscmMod.ServerName
 }
 object DescribeNodeAssociationSt {
   

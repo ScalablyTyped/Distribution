@@ -40,7 +40,12 @@ object mod {
   
   @JSImport("file-saver", "saveAs")
   @js.native
-  val saveAs: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FileSaver */ Any = js.native
+  val saveAs: js.Function3[
+    /* data */ Blob | String, 
+    /* filename */ js.UndefOr[String], 
+    /* disableAutoBOM */ js.UndefOr[Boolean], 
+    Unit
+  ] = js.native
   
   trait FileSaverOptions extends StObject {
     

@@ -37,6 +37,31 @@ object anon {
     }
   }
   
+  trait HasToRemoveScriptWrapper extends StObject {
+    
+    var hasToRemoveScriptWrapper: js.UndefOr[Boolean] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
+  }
+  object HasToRemoveScriptWrapper {
+    
+    inline def apply(): HasToRemoveScriptWrapper = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[HasToRemoveScriptWrapper]
+    }
+    
+    extension [Self <: HasToRemoveScriptWrapper](x: Self) {
+      
+      inline def setHasToRemoveScriptWrapper(value: Boolean): Self = StObject.set(x, "hasToRemoveScriptWrapper", value.asInstanceOf[js.Any])
+      
+      inline def setHasToRemoveScriptWrapperUndefined: Self = StObject.set(x, "hasToRemoveScriptWrapper", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    }
+  }
+  
   trait ModuleName extends StObject {
     
     var moduleName: String

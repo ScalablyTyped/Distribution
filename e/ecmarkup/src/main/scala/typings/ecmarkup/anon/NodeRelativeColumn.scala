@@ -1,7 +1,7 @@
 package typings.ecmarkup.anon
 
 import typings.ecmarkup.ecmarkupStrings.contents
-import typings.ecmarkup.specMod.Warning
+import typings.ecmarkup.libSpecMod.Warning
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

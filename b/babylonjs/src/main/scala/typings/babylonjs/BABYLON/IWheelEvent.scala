@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IWheelEvent
   extends StObject
-     with IMouseEvent
-     with DeviceSourceEvent[Any] {
+     with IMouseEvent {
   
   /**
     * Units for delta value

@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsSyncOutlinedMod.SyncOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syncOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/SyncOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/SyncOutlined", JSImport.Default)
   @js.native
   val default: SyncOutlinedIconType = js.native
-  
-  @js.native
-  trait SyncOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_SyncOutlinedIconType: String = js.native
-  }
   
   type _To = SyncOutlinedIconType
   

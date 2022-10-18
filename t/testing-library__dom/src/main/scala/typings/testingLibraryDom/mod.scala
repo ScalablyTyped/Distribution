@@ -11,44 +11,44 @@ import typings.std.Parameters
 import typings.std.ReturnType
 import typings.testingLibraryDom.anon.PartialConfig
 import typings.testingLibraryDom.anon.Typeofqueries
-import typings.testingLibraryDom.configMod.Config
-import typings.testingLibraryDom.configMod.ConfigFn
-import typings.testingLibraryDom.eventsMod.CreateFunction
-import typings.testingLibraryDom.eventsMod.CreateObject
-import typings.testingLibraryDom.eventsMod.FireFunction
-import typings.testingLibraryDom.eventsMod.FireObject
-import typings.testingLibraryDom.getQueriesForElementMod.BoundFunctions
-import typings.testingLibraryDom.getQueriesForElementMod.Queries
-import typings.testingLibraryDom.matchesMod.DefaultNormalizerOptions
-import typings.testingLibraryDom.matchesMod.NormalizerFn
-import typings.testingLibraryDom.prettyDomMod.PrettyDOMOptions
-import typings.testingLibraryDom.queriesMod.AllByBoundAttribute
-import typings.testingLibraryDom.queriesMod.AllByRole
-import typings.testingLibraryDom.queriesMod.AllByText
-import typings.testingLibraryDom.queriesMod.FindAllByBoundAttribute
-import typings.testingLibraryDom.queriesMod.FindAllByRole_
-import typings.testingLibraryDom.queriesMod.FindAllByText_
-import typings.testingLibraryDom.queriesMod.FindByBoundAttribute
-import typings.testingLibraryDom.queriesMod.FindByRole_
-import typings.testingLibraryDom.queriesMod.FindByText_
-import typings.testingLibraryDom.queriesMod.GetByBoundAttribute
-import typings.testingLibraryDom.queriesMod.GetByRole_
-import typings.testingLibraryDom.queriesMod.GetByText_
-import typings.testingLibraryDom.queriesMod.QueryByBoundAttribute
-import typings.testingLibraryDom.queriesMod.QueryByRole_
-import typings.testingLibraryDom.queriesMod.QueryByText_
-import typings.testingLibraryDom.queryHelpersMod.AllByAttribute
-import typings.testingLibraryDom.queryHelpersMod.BuiltQueryMethods
-import typings.testingLibraryDom.queryHelpersMod.GetAllBy
-import typings.testingLibraryDom.queryHelpersMod.GetErrorFunction
-import typings.testingLibraryDom.queryHelpersMod.QueryByAttribute_
-import typings.testingLibraryDom.screenMod.Screen_
-import typings.testingLibraryDom.suggestionsMod.Method
-import typings.testingLibraryDom.suggestionsMod.Suggestion
-import typings.testingLibraryDom.suggestionsMod.Variant
 import typings.testingLibraryDom.testingLibraryDomBooleans.`false`
 import typings.testingLibraryDom.testingLibraryDomBooleans.`true`
-import typings.testingLibraryDom.waitForMod.waitForOptions
+import typings.testingLibraryDom.typesConfigMod.Config
+import typings.testingLibraryDom.typesConfigMod.ConfigFn
+import typings.testingLibraryDom.typesEventsMod.CreateFunction
+import typings.testingLibraryDom.typesEventsMod.CreateObject
+import typings.testingLibraryDom.typesEventsMod.FireFunction
+import typings.testingLibraryDom.typesEventsMod.FireObject
+import typings.testingLibraryDom.typesGetQueriesForElementMod.BoundFunctions
+import typings.testingLibraryDom.typesGetQueriesForElementMod.Queries
+import typings.testingLibraryDom.typesMatchesMod.DefaultNormalizerOptions
+import typings.testingLibraryDom.typesMatchesMod.NormalizerFn
+import typings.testingLibraryDom.typesPrettyDomMod.PrettyDOMOptions
+import typings.testingLibraryDom.typesQueriesMod.AllByBoundAttribute
+import typings.testingLibraryDom.typesQueriesMod.AllByRole
+import typings.testingLibraryDom.typesQueriesMod.AllByText
+import typings.testingLibraryDom.typesQueriesMod.FindAllByBoundAttribute
+import typings.testingLibraryDom.typesQueriesMod.FindAllByRole_
+import typings.testingLibraryDom.typesQueriesMod.FindAllByText_
+import typings.testingLibraryDom.typesQueriesMod.FindByBoundAttribute
+import typings.testingLibraryDom.typesQueriesMod.FindByRole_
+import typings.testingLibraryDom.typesQueriesMod.FindByText_
+import typings.testingLibraryDom.typesQueriesMod.GetByBoundAttribute
+import typings.testingLibraryDom.typesQueriesMod.GetByRole_
+import typings.testingLibraryDom.typesQueriesMod.GetByText_
+import typings.testingLibraryDom.typesQueriesMod.QueryByBoundAttribute
+import typings.testingLibraryDom.typesQueriesMod.QueryByRole_
+import typings.testingLibraryDom.typesQueriesMod.QueryByText_
+import typings.testingLibraryDom.typesQueryHelpersMod.AllByAttribute
+import typings.testingLibraryDom.typesQueryHelpersMod.BuiltQueryMethods
+import typings.testingLibraryDom.typesQueryHelpersMod.GetAllBy
+import typings.testingLibraryDom.typesQueryHelpersMod.GetErrorFunction
+import typings.testingLibraryDom.typesQueryHelpersMod.QueryByAttribute_
+import typings.testingLibraryDom.typesScreenMod.Screen_
+import typings.testingLibraryDom.typesSuggestionsMod.Method
+import typings.testingLibraryDom.typesSuggestionsMod.Suggestion
+import typings.testingLibraryDom.typesSuggestionsMod.Variant
+import typings.testingLibraryDom.typesWaitForMod.waitForOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -285,8 +285,8 @@ object mod {
       
       @JSImport("@testing-library/dom", "prettyFormat.DEFAULT_OPTIONS.compareKeys")
       @js.native
-      def compareKeys: Unit = js.native
-      inline def compareKeys_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareKeys")(x.asInstanceOf[js.Any])
+      def compareKeys: /* undefined */ Any = js.native
+      inline def compareKeys_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareKeys")(x.asInstanceOf[js.Any])
       
       @JSImport("@testing-library/dom", "prettyFormat.DEFAULT_OPTIONS.escapeRegex")
       @js.native

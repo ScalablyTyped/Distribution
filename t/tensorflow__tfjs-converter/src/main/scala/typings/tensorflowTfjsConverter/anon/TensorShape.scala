@@ -8,12 +8,14 @@ trait TensorShape extends StObject {
   
   var dtype: String
   
-  var tensorShape: DimArray
+  var name: String
+  
+  var tensorShape: Dim
 }
 object TensorShape {
   
-  inline def apply(dtype: String, tensorShape: DimArray): TensorShape = {
-    val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], tensorShape = tensorShape.asInstanceOf[js.Any])
+  inline def apply(dtype: String, name: String, tensorShape: Dim): TensorShape = {
+    val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tensorShape = tensorShape.asInstanceOf[js.Any])
     __obj.asInstanceOf[TensorShape]
   }
   
@@ -21,6 +23,8 @@ object TensorShape {
     
     inline def setDtype(value: String): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     
-    inline def setTensorShape(value: DimArray): Self = StObject.set(x, "tensorShape", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setTensorShape(value: Dim): Self = StObject.set(x, "tensorShape", value.asInstanceOf[js.Any])
   }
 }

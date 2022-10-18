@@ -1,6 +1,6 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.engineComputeShaderMod.ComputeBindingType
+import typings.babylonjs.enginesExtensionsEngineDotcomputeShaderMod.ComputeBindingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

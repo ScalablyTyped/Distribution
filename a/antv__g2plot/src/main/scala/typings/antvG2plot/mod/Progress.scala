@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialProgressOptions
-import typings.antvG2plot.progressTypesMod.ProgressOptions
+import typings.antvG2plot.libPlotsProgressTypesMod.ProgressOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Progress")
 @js.native
 open class Progress protected ()
-  extends typings.antvG2plot.progressMod.Progress {
+  extends typings.antvG2plot.libPlotsProgressMod.Progress {
   def this(container: String, options: ProgressOptions) = this()
   def this(container: HTMLElement, options: ProgressOptions) = this()
 }

@@ -5,31 +5,31 @@ import typings.fpTs.anon.Fn13
 import typings.fpTs.anon.FnCallAM
 import typings.fpTs.anon.FnCallKM
 import typings.fpTs.anon.FnCallMeThat
-import typings.fpTs.compactableMod.Compactable2
-import typings.fpTs.eitherMod.Either_
-import typings.fpTs.eqMod.Eq
-import typings.fpTs.filterableMod.Filterable2
-import typings.fpTs.filterableWithIndexMod.FilterableWithIndex2C
-import typings.fpTs.foldableMod.Foldable
-import typings.fpTs.foldableMod.Foldable1
-import typings.fpTs.foldableMod.Foldable2
-import typings.fpTs.foldableMod.Foldable2C
-import typings.fpTs.foldableMod.Foldable3
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndex2C
-import typings.fpTs.functorMod.Functor2
-import typings.fpTs.magmaMod.Magma
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.optionMod.Option_
-import typings.fpTs.ordMod.Ord_
-import typings.fpTs.predicateMod.Predicate
-import typings.fpTs.refinementMod.Refinement
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.separatedMod.Separated_
-import typings.fpTs.showMod.Show
-import typings.fpTs.traversableWithIndexMod.TraversableWithIndex2C
-import typings.fpTs.unfoldableMod.Unfoldable
-import typings.fpTs.unfoldableMod.Unfoldable1
-import typings.fpTs.witherableMod.Witherable2C
+import typings.fpTs.libCompactableMod.Compactable2
+import typings.fpTs.libEitherMod.Either_
+import typings.fpTs.libEqMod.Eq
+import typings.fpTs.libFilterableMod.Filterable2
+import typings.fpTs.libFilterableWithIndexMod.FilterableWithIndex2C
+import typings.fpTs.libFoldableMod.Foldable
+import typings.fpTs.libFoldableMod.Foldable1
+import typings.fpTs.libFoldableMod.Foldable2
+import typings.fpTs.libFoldableMod.Foldable2C
+import typings.fpTs.libFoldableMod.Foldable3
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex2C
+import typings.fpTs.libFunctorMod.Functor2
+import typings.fpTs.libMagmaMod.Magma
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libOptionMod.Option_
+import typings.fpTs.libOrdMod.Ord_
+import typings.fpTs.libPredicateMod.Predicate
+import typings.fpTs.libRefinementMod.Refinement
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libSeparatedMod.Separated_
+import typings.fpTs.libShowMod.Show
+import typings.fpTs.libTraversableWithIndexMod.TraversableWithIndex2C
+import typings.fpTs.libUnfoldableMod.Unfoldable
+import typings.fpTs.libUnfoldableMod.Unfoldable1
+import typings.fpTs.libWitherableMod.Witherable2C
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -43,15 +43,15 @@ object map {
   
   @JSImport("fp-ts", "map.Compactable")
   @js.native
-  val Compactable: Compactable2[typings.fpTs.mapMod.URI] = js.native
+  val Compactable: Compactable2[typings.fpTs.libMapMod.URI] = js.native
   
   @JSImport("fp-ts", "map.Filterable")
   @js.native
-  val Filterable: Filterable2[typings.fpTs.mapMod.URI] = js.native
+  val Filterable: Filterable2[typings.fpTs.libMapMod.URI] = js.native
   
   @JSImport("fp-ts", "map.Functor")
   @js.native
-  val Functor: Functor2[typings.fpTs.mapMod.URI] = js.native
+  val Functor: Functor2[typings.fpTs.libMapMod.URI] = js.native
   
   @JSImport("fp-ts", "map.URI")
   @js.native
@@ -146,7 +146,7 @@ object map {
   
   inline def getEq[K, A](SK: Eq[K], SA: Eq[A]): Eq[Map[K, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEq")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[Eq[Map[K, A]]]
   
-  inline def getFilterableWithIndex[K](): FilterableWithIndex2C[typings.fpTs.mapMod.URI, K, K] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterableWithIndex")().asInstanceOf[FilterableWithIndex2C[typings.fpTs.mapMod.URI, K, K]]
+  inline def getFilterableWithIndex[K](): FilterableWithIndex2C[typings.fpTs.libMapMod.URI, K, K] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterableWithIndex")().asInstanceOf[FilterableWithIndex2C[typings.fpTs.libMapMod.URI, K, K]]
   
   inline def getFoldable[K](O: Ord_[K]): Foldable2C[typings.fpTs.fpTsStrings.Map, K] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFoldable")(O.asInstanceOf[js.Any]).asInstanceOf[Foldable2C[typings.fpTs.fpTsStrings.Map, K]]
   
@@ -164,7 +164,7 @@ object map {
   
   inline def getUnionSemigroup[K, A](E: Eq[K], S: Semigroup[A]): Semigroup[Map[K, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnionSemigroup")(E.asInstanceOf[js.Any], S.asInstanceOf[js.Any])).asInstanceOf[Semigroup[Map[K, A]]]
   
-  inline def getWitherable[K](O: Ord_[K]): (Witherable2C[typings.fpTs.mapMod.URI, K]) & (TraversableWithIndex2C[typings.fpTs.mapMod.URI, K, K]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getWitherable")(O.asInstanceOf[js.Any]).asInstanceOf[(Witherable2C[typings.fpTs.mapMod.URI, K]) & (TraversableWithIndex2C[typings.fpTs.mapMod.URI, K, K])]
+  inline def getWitherable[K](O: Ord_[K]): (Witherable2C[typings.fpTs.libMapMod.URI, K]) & (TraversableWithIndex2C[typings.fpTs.libMapMod.URI, K, K]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getWitherable")(O.asInstanceOf[js.Any]).asInstanceOf[(Witherable2C[typings.fpTs.libMapMod.URI, K]) & (TraversableWithIndex2C[typings.fpTs.libMapMod.URI, K, K])]
   
   inline def insertAt[K](E: Eq[K]): js.Function2[/* k */ K, /* a */ Any, js.Function1[/* m */ Map[K, Any], Map[K, Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertAt")(E.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* k */ K, /* a */ Any, js.Function1[/* m */ Map[K, Any], Map[K, Any]]]]
   
@@ -176,7 +176,7 @@ object map {
   
   inline def keys[K](O: Ord_[K]): js.Function1[/* m */ Map[K, Any], js.Array[K]] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ Map[K, Any], js.Array[K]]]
   
-  inline def lookup[K](E: Eq[K]): Fn13[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(E.asInstanceOf[js.Any]).asInstanceOf[Fn13[K]]
+  inline def lookup[K](E: Eq[K]): FnCallKM[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(E.asInstanceOf[js.Any]).asInstanceOf[FnCallKM[K]]
   
   inline def lookupWithKey[K](E: Eq[K]): Fn12[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupWithKey")(E.asInstanceOf[js.Any]).asInstanceOf[Fn12[K]]
   
@@ -186,9 +186,9 @@ object map {
   
   @JSImport("fp-ts", "map.map_")
   @js.native
-  val map_ : Filterable2[typings.fpTs.mapMod.URI] = js.native
+  val map_ : Filterable2[typings.fpTs.libMapMod.URI] = js.native
   
-  inline def member[K](E: Eq[K]): FnCallKM[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("member")(E.asInstanceOf[js.Any]).asInstanceOf[FnCallKM[K]]
+  inline def member[K](E: Eq[K]): Fn13[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("member")(E.asInstanceOf[js.Any]).asInstanceOf[Fn13[K]]
   
   inline def modifyAt[K](E: Eq[K]): js.Function2[
     /* k */ K, 

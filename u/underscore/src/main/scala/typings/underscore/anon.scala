@@ -1,6 +1,5 @@
 package typings.underscore
 
-import org.scalablytyped.runtime.TopLevel
 import typings.underscore.mod.Chain
 import typings.underscore.mod.ChainSingle
 import typings.underscore.mod.Collection
@@ -17,33 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object anon {
   
   @js.native
-  trait Fn0[T, V] extends StObject {
-    
-    def apply(): Chain[IterateeResult[Null, T], js.Array[IterateeResult[Null, T]]] = js.native
-    def apply(iteratee: String): Chain[IterateeResult[String, T], js.Array[IterateeResult[String, T]]] = js.native
-    def apply(iteratee: String, context: Any): Chain[IterateeResult[String, T], js.Array[IterateeResult[String, T]]] = js.native
-    def apply(iteratee: js.Array[String | Double]): Chain[
-        IterateeResult[js.Array[String | Double], T], 
-        js.Array[IterateeResult[js.Array[String | Double], T]]
-      ] = js.native
-    def apply(iteratee: js.Array[String | Double], context: Any): Chain[
-        IterateeResult[js.Array[String | Double], T], 
-        js.Array[IterateeResult[js.Array[String | Double], T]]
-      ] = js.native
-    def apply(iteratee: Double): Chain[IterateeResult[Double, T], js.Array[IterateeResult[Double, T]]] = js.native
-    def apply(iteratee: Double, context: Any): Chain[IterateeResult[Double, T], js.Array[IterateeResult[Double, T]]] = js.native
-    def apply(iteratee: Null, context: Any): Chain[IterateeResult[Null, T], js.Array[IterateeResult[Null, T]]] = js.native
-    def apply(iteratee: Unit, context: Any): Chain[IterateeResult[Unit, T], js.Array[IterateeResult[Unit, T]]] = js.native
-    def apply[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.Fn0 & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
-    def apply[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.Fn0 & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: Any): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
-  }
-  
-  @js.native
-  trait Fn1[V] extends StObject {
+  trait Fn0[V] extends StObject {
     
     def apply[TResult](
       iteratee: MemoCollectionIterator[
@@ -61,14 +34,30 @@ object anon {
   }
   
   @js.native
-  trait Fn2[T] extends StObject {
+  trait Fn1[T] extends StObject {
     
     def apply(): ChainSingle[js.UndefOr[T]] = js.native
     def apply(n: Double): Chain[T, js.Array[T]] = js.native
   }
   
   @js.native
-  trait FnCall extends StObject {
+  trait FnCall[T, V] extends StObject {
+    
+    def apply(): js.Array[IterateeResult[Null, T]] = js.native
+    def apply(iteratee: String): js.Array[IterateeResult[String, T]] = js.native
+    def apply(iteratee: String, context: Any): js.Array[IterateeResult[String, T]] = js.native
+    def apply(iteratee: js.Array[String | Double]): js.Array[IterateeResult[js.Array[String | Double], T]] = js.native
+    def apply(iteratee: js.Array[String | Double], context: Any): js.Array[IterateeResult[js.Array[String | Double], T]] = js.native
+    def apply(iteratee: Double): js.Array[IterateeResult[Double, T]] = js.native
+    def apply(iteratee: Double, context: Any): js.Array[IterateeResult[Double, T]] = js.native
+    def apply(iteratee: Null, context: Any): js.Array[IterateeResult[Null, T]] = js.native
+    def apply(iteratee: Unit, context: Any): js.Array[IterateeResult[Unit, T]] = js.native
+    def apply[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](iteratee: I): js.Array[IterateeResult[I, T]] = js.native
+    def apply[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](iteratee: I, context: Any): js.Array[IterateeResult[I, T]] = js.native
+  }
+  
+  @js.native
+  trait FnCallCollectionIterateeContext extends StObject {
     
     def apply[V /* <: Collection[Any] */](collection: V): js.Array[IterateeResult[Null, TypeOfCollection[V, scala.Nothing]]] = js.native
     def apply[V /* <: Collection[Any] */](collection: V, iteratee: String): js.Array[IterateeResult[String, TypeOfCollection[V, scala.Nothing]]] = js.native
@@ -79,12 +68,8 @@ object anon {
     def apply[V /* <: Collection[Any] */](collection: V, iteratee: Double, context: Any): js.Array[IterateeResult[Double, TypeOfCollection[V, scala.Nothing]]] = js.native
     def apply[V /* <: Collection[Any] */](collection: V, iteratee: Null, context: Any): js.Array[IterateeResult[Null, TypeOfCollection[V, scala.Nothing]]] = js.native
     def apply[V /* <: Collection[Any] */](collection: V, iteratee: Unit, context: Any): js.Array[IterateeResult[Unit, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def apply[V /* <: Collection[Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.FnCall & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def apply[V /* <: Collection[Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.FnCall & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I, context: Any): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def apply[V /* <: Collection[Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](collection: V, iteratee: I): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def apply[V /* <: Collection[Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](collection: V, iteratee: I, context: Any): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
   }
   
   @js.native
@@ -144,21 +129,23 @@ object anon {
   @js.native
   trait FnCallIterateeContext[T, V] extends StObject {
     
-    def apply(): js.Array[IterateeResult[Null, T]] = js.native
-    def apply(iteratee: String): js.Array[IterateeResult[String, T]] = js.native
-    def apply(iteratee: String, context: Any): js.Array[IterateeResult[String, T]] = js.native
-    def apply(iteratee: js.Array[String | Double]): js.Array[IterateeResult[js.Array[String | Double], T]] = js.native
-    def apply(iteratee: js.Array[String | Double], context: Any): js.Array[IterateeResult[js.Array[String | Double], T]] = js.native
-    def apply(iteratee: Double): js.Array[IterateeResult[Double, T]] = js.native
-    def apply(iteratee: Double, context: Any): js.Array[IterateeResult[Double, T]] = js.native
-    def apply(iteratee: Null, context: Any): js.Array[IterateeResult[Null, T]] = js.native
-    def apply(iteratee: Unit, context: Any): js.Array[IterateeResult[Unit, T]] = js.native
-    def apply[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.FnCallIterateeContext & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): js.Array[IterateeResult[I, T]] = js.native
-    def apply[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.FnCallIterateeContext & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: Any): js.Array[IterateeResult[I, T]] = js.native
+    def apply(): Chain[IterateeResult[Null, T], js.Array[IterateeResult[Null, T]]] = js.native
+    def apply(iteratee: String): Chain[IterateeResult[String, T], js.Array[IterateeResult[String, T]]] = js.native
+    def apply(iteratee: String, context: Any): Chain[IterateeResult[String, T], js.Array[IterateeResult[String, T]]] = js.native
+    def apply(iteratee: js.Array[String | Double]): Chain[
+        IterateeResult[js.Array[String | Double], T], 
+        js.Array[IterateeResult[js.Array[String | Double], T]]
+      ] = js.native
+    def apply(iteratee: js.Array[String | Double], context: Any): Chain[
+        IterateeResult[js.Array[String | Double], T], 
+        js.Array[IterateeResult[js.Array[String | Double], T]]
+      ] = js.native
+    def apply(iteratee: Double): Chain[IterateeResult[Double, T], js.Array[IterateeResult[Double, T]]] = js.native
+    def apply(iteratee: Double, context: Any): Chain[IterateeResult[Double, T], js.Array[IterateeResult[Double, T]]] = js.native
+    def apply(iteratee: Null, context: Any): Chain[IterateeResult[Null, T], js.Array[IterateeResult[Null, T]]] = js.native
+    def apply(iteratee: Unit, context: Any): Chain[IterateeResult[Unit, T], js.Array[IterateeResult[Unit, T]]] = js.native
+    def apply[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](iteratee: I): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
+    def apply[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](iteratee: I, context: Any): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
   }
   
   @js.native

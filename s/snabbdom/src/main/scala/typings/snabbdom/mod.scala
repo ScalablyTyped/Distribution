@@ -2,15 +2,15 @@ package typings.snabbdom
 
 import typings.snabbdom.anon.Key
 import typings.snabbdom.anon.PartialModule
-import typings.snabbdom.hMod.VNodeChildren
-import typings.snabbdom.htmldomapiMod.DOMAPI
-import typings.snabbdom.initMod.Options
-import typings.snabbdom.jsxMod.FunctionComponent
-import typings.snabbdom.jsxMod.JsxVNodeChildren
-import typings.snabbdom.moduleMod.Module
-import typings.snabbdom.thunkMod.ThunkFn
-import typings.snabbdom.vnodeMod.VNodeData
-import typings.snabbdom.vnodeMod.VNode_
+import typings.snabbdom.buildHMod.VNodeChildren
+import typings.snabbdom.buildHtmldomapiMod.DOMAPI
+import typings.snabbdom.buildInitMod.Options
+import typings.snabbdom.buildJsxMod.FunctionComponent
+import typings.snabbdom.buildJsxMod.JsxVNodeChildren
+import typings.snabbdom.buildModulesModuleMod.Module
+import typings.snabbdom.buildThunkMod.ThunkFn
+import typings.snabbdom.buildVnodeMod.VNodeData
+import typings.snabbdom.buildVnodeMod.VNode_
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.Node

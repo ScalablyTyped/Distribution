@@ -1,6 +1,6 @@
 package typings.glaze
 
-import typings.glaze.loggerMod.LogLevel
+import typings.glaze.distTypesLoggerMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,10 +74,6 @@ object glazeStrings {
   @js.native
   sealed trait Dot7s extends StObject
   inline def Dot7s: Dot7s = ".7s".asInstanceOf[Dot7s]
-  
-  @js.native
-  sealed trait ThemedStyle extends StObject
-  inline def ThemedStyle: ThemedStyle = "ThemedStyle".asInstanceOf[ThemedStyle]
   
   @js.native
   sealed trait aliases extends StObject
@@ -190,10 +186,6 @@ object glazeStrings {
   inline def marginY: marginY = "marginY".asInstanceOf[marginY]
   
   @js.native
-  sealed trait modularScale extends StObject
-  inline def modularScale: modularScale = "modularScale".asInstanceOf[modularScale]
-  
-  @js.native
   sealed trait opacity extends StObject
   inline def opacity: opacity = "opacity".asInstanceOf[opacity]
   
@@ -252,10 +244,6 @@ object glazeStrings {
   @js.native
   sealed trait spacing extends StObject
   inline def spacing: spacing = "spacing".asInstanceOf[spacing]
-  
-  @js.native
-  sealed trait symmetricScale extends StObject
-  inline def symmetricScale: symmetricScale = "symmetricScale".asInstanceOf[symmetricScale]
   
   @js.native
   sealed trait top extends StObject

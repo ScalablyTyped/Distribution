@@ -1,6 +1,6 @@
 package typings.antvG2plot.anon
 
-import typings.antvG2plot.typesCommonMod.Region
+import typings.antvG2plot.libTypesCommonMod.Region
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

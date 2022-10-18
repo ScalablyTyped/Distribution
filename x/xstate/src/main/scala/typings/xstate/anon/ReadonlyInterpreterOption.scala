@@ -1,6 +1,6 @@
 package typings.xstate.anon
 
-import typings.xstate.typesMod.AnyInterpreter
+import typings.xstate.libTypesMod.AnyInterpreter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Readonly<xstate.xstate/lib/types.InterpreterOptions> */
 trait ReadonlyInterpreterOption extends StObject {
   
-  val clock: js.UndefOr[typings.xstate.interpreterMod.Clock] = js.undefined
+  val clock: js.UndefOr[typings.xstate.libInterpreterMod.Clock] = js.undefined
   
   val deferEvents: js.UndefOr[Boolean] = js.undefined
   
@@ -31,7 +31,7 @@ object ReadonlyInterpreterOption {
   
   extension [Self <: ReadonlyInterpreterOption](x: Self) {
     
-    inline def setClock(value: typings.xstate.interpreterMod.Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
+    inline def setClock(value: typings.xstate.libInterpreterMod.Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     
     inline def setClockUndefined: Self = StObject.set(x, "clock", js.undefined)
     

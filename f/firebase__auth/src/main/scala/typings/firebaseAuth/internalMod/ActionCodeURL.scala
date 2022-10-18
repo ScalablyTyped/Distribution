@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/auth/dist/cordova/internal", "ActionCodeURL")
+@JSImport("@firebase/auth/internal", "ActionCodeURL")
 @js.native
 open class ActionCodeURL protected ()
-  extends typings.firebaseAuth.cordovaMod.ActionCodeURL {
+  extends typings.firebaseAuth.distInternalMod.ActionCodeURL {
   /**
     * @param actionLink - The link from which to extract the URL.
     * @returns The {@link ActionCodeURL} object, or null if the link is invalid.
@@ -19,7 +19,7 @@ open class ActionCodeURL protected ()
 /* static members */
 object ActionCodeURL {
   
-  @JSImport("@firebase/auth/dist/cordova/internal", "ActionCodeURL")
+  @JSImport("@firebase/auth/internal", "ActionCodeURL")
   @js.native
   val ^ : js.Any = js.native
   
@@ -32,5 +32,5 @@ object ActionCodeURL {
     *
     * @public
     */
-  inline def parseLink(link: String): typings.firebaseAuth.actionCodeUrlMod.ActionCodeURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLink")(link.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.actionCodeUrlMod.ActionCodeURL | Null]
+  inline def parseLink(link: String): typings.firebaseAuth.distSrcCoreActionCodeUrlMod.ActionCodeURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLink")(link.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.distSrcCoreActionCodeUrlMod.ActionCodeURL | Null]
 }

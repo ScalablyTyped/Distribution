@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.orderlistMod.OrderListProps
+import typings.primereact.orderlistOrderlistMod.OrderListProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "OrderList")
 @js.native
 open class OrderList protected ()
-  extends typings.primereact.orderlistMod.OrderList {
+  extends typings.primereact.orderlistOrderlistMod.OrderList {
   def this(props: OrderListProps) = this()
   /**
     * @deprecated

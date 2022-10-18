@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object pixiCoreStrings {
   
   @js.native
-  sealed trait RenderTexturePool extends StObject
-  inline def RenderTexturePool: RenderTexturePool = "RenderTexturePool".asInstanceOf[RenderTexturePool]
-  
-  @js.native
   sealed trait notMultiplied extends StObject
   inline def notMultiplied: notMultiplied = "notMultiplied".asInstanceOf[notMultiplied]
 }

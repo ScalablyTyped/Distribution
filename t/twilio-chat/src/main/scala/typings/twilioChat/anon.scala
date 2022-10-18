@@ -77,55 +77,6 @@ object anon {
     
     var conversations: String
     
-    var current_user: String
-    
-    var media_service: String
-    
-    var messages_receipts: String
-    
-    var my_conversations: String
-    
-    var typing: String
-    
-    var users: String
-  }
-  object Conversations {
-    
-    inline def apply(
-      conversations: String,
-      current_user: String,
-      media_service: String,
-      messages_receipts: String,
-      my_conversations: String,
-      typing: String,
-      users: String
-    ): Conversations = {
-      val __obj = js.Dynamic.literal(conversations = conversations.asInstanceOf[js.Any], current_user = current_user.asInstanceOf[js.Any], media_service = media_service.asInstanceOf[js.Any], messages_receipts = messages_receipts.asInstanceOf[js.Any], my_conversations = my_conversations.asInstanceOf[js.Any], typing = typing.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Conversations]
-    }
-    
-    extension [Self <: Conversations](x: Self) {
-      
-      inline def setConversations(value: String): Self = StObject.set(x, "conversations", value.asInstanceOf[js.Any])
-      
-      inline def setCurrent_user(value: String): Self = StObject.set(x, "current_user", value.asInstanceOf[js.Any])
-      
-      inline def setMedia_service(value: String): Self = StObject.set(x, "media_service", value.asInstanceOf[js.Any])
-      
-      inline def setMessages_receipts(value: String): Self = StObject.set(x, "messages_receipts", value.asInstanceOf[js.Any])
-      
-      inline def setMy_conversations(value: String): Self = StObject.set(x, "my_conversations", value.asInstanceOf[js.Any])
-      
-      inline def setTyping(value: String): Self = StObject.set(x, "typing", value.asInstanceOf[js.Any])
-      
-      inline def setUsers(value: String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait CurrentUser extends StObject {
-    
-    var conversations: String
-    
     var currentUser: String
     
     var mediaService: String
@@ -138,7 +89,7 @@ object anon {
     
     var users: String
   }
-  object CurrentUser {
+  object Conversations {
     
     inline def apply(
       conversations: String,
@@ -148,12 +99,12 @@ object anon {
       myConversations: String,
       typing: String,
       users: String
-    ): CurrentUser = {
+    ): Conversations = {
       val __obj = js.Dynamic.literal(conversations = conversations.asInstanceOf[js.Any], currentUser = currentUser.asInstanceOf[js.Any], mediaService = mediaService.asInstanceOf[js.Any], messagesReceipts = messagesReceipts.asInstanceOf[js.Any], myConversations = myConversations.asInstanceOf[js.Any], typing = typing.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CurrentUser]
+      __obj.asInstanceOf[Conversations]
     }
     
-    extension [Self <: CurrentUser](x: Self) {
+    extension [Self <: Conversations](x: Self) {
       
       inline def setConversations(value: String): Self = StObject.set(x, "conversations", value.asInstanceOf[js.Any])
       
@@ -164,6 +115,55 @@ object anon {
       inline def setMessagesReceipts(value: String): Self = StObject.set(x, "messagesReceipts", value.asInstanceOf[js.Any])
       
       inline def setMyConversations(value: String): Self = StObject.set(x, "myConversations", value.asInstanceOf[js.Any])
+      
+      inline def setTyping(value: String): Self = StObject.set(x, "typing", value.asInstanceOf[js.Any])
+      
+      inline def setUsers(value: String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Currentuser extends StObject {
+    
+    var conversations: String
+    
+    var current_user: String
+    
+    var media_service: String
+    
+    var messages_receipts: String
+    
+    var my_conversations: String
+    
+    var typing: String
+    
+    var users: String
+  }
+  object Currentuser {
+    
+    inline def apply(
+      conversations: String,
+      current_user: String,
+      media_service: String,
+      messages_receipts: String,
+      my_conversations: String,
+      typing: String,
+      users: String
+    ): Currentuser = {
+      val __obj = js.Dynamic.literal(conversations = conversations.asInstanceOf[js.Any], current_user = current_user.asInstanceOf[js.Any], media_service = media_service.asInstanceOf[js.Any], messages_receipts = messages_receipts.asInstanceOf[js.Any], my_conversations = my_conversations.asInstanceOf[js.Any], typing = typing.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Currentuser]
+    }
+    
+    extension [Self <: Currentuser](x: Self) {
+      
+      inline def setConversations(value: String): Self = StObject.set(x, "conversations", value.asInstanceOf[js.Any])
+      
+      inline def setCurrent_user(value: String): Self = StObject.set(x, "current_user", value.asInstanceOf[js.Any])
+      
+      inline def setMedia_service(value: String): Self = StObject.set(x, "media_service", value.asInstanceOf[js.Any])
+      
+      inline def setMessages_receipts(value: String): Self = StObject.set(x, "messages_receipts", value.asInstanceOf[js.Any])
+      
+      inline def setMy_conversations(value: String): Self = StObject.set(x, "my_conversations", value.asInstanceOf[js.Any])
       
       inline def setTyping(value: String): Self = StObject.set(x, "typing", value.asInstanceOf[js.Any])
       

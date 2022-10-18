@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param segmentLength radius of discretization for Trajectory points
   */
 open class Trajectory ()
-  extends typings.babylonjs.legacyMod.Trajectory {
+  extends typings.babylonjs.legacyLegacyMod.Trajectory {
   def this(segmentLength: Double) = this()
 }
 /* static members */
@@ -26,7 +26,7 @@ object Trajectory {
     * @param json serialized JSON string
     * @returns deserialized Trajectory
     */
-  inline def Deserialize(json: String): typings.babylonjs.trajectoryClassifierMod.Trajectory = ^.asInstanceOf[js.Dynamic].applyDynamic("Deserialize")(json.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.trajectoryClassifierMod.Trajectory]
+  inline def Deserialize(json: String): typings.babylonjs.miscTrajectoryClassifierMod.Trajectory = ^.asInstanceOf[js.Dynamic].applyDynamic("Deserialize")(json.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.miscTrajectoryClassifierMod.Trajectory]
   
   @JSImport("babylonjs", "Trajectory._BestMatch")
   @js.native

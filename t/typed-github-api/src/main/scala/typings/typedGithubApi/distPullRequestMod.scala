@@ -1,19 +1,19 @@
 package typings.typedGithubApi
 
 import typings.moment.mod.Moment
+import typings.typedGithubApi.distGithubRefMod.GitHubRef
+import typings.typedGithubApi.distGithubRefMod.OptionsOrRef
+import typings.typedGithubApi.distInterfacesBranchMod.BranchSummary
+import typings.typedGithubApi.distInterfacesBranchMod.BranchSummaryWithRepository
+import typings.typedGithubApi.distInterfacesIssueMod.Issue
+import typings.typedGithubApi.distInterfacesMilestoneMod.Milestone
+import typings.typedGithubApi.distInterfacesPullRequestMod.PullRequest
+import typings.typedGithubApi.distInterfacesPullRequestMod.Review
+import typings.typedGithubApi.distInterfacesPullRequestMod.ReviewComment
+import typings.typedGithubApi.distInterfacesPullRequestMod.ReviewRequests
+import typings.typedGithubApi.distInterfacesPullRequestMod.Team
+import typings.typedGithubApi.distInterfacesUserMod.UserSummary
 import typings.typedGithubApi.distIssueMod.IssueCommentClass
-import typings.typedGithubApi.githubRefMod.GitHubRef
-import typings.typedGithubApi.githubRefMod.OptionsOrRef
-import typings.typedGithubApi.interfacesBranchMod.BranchSummary
-import typings.typedGithubApi.interfacesBranchMod.BranchSummaryWithRepository
-import typings.typedGithubApi.interfacesIssueMod.Issue
-import typings.typedGithubApi.interfacesMilestoneMod.Milestone
-import typings.typedGithubApi.interfacesPullRequestMod.PullRequest
-import typings.typedGithubApi.interfacesPullRequestMod.Review
-import typings.typedGithubApi.interfacesPullRequestMod.ReviewComment
-import typings.typedGithubApi.interfacesPullRequestMod.ReviewRequests
-import typings.typedGithubApi.interfacesPullRequestMod.Team
-import typings.typedGithubApi.interfacesUserMod.UserSummary
 import typings.typedGithubApi.typedGithubApiStrings.APPROVED
 import typings.typedGithubApi.typedGithubApiStrings.CHANGES_REQUESTED
 import typings.typedGithubApi.typedGithubApiStrings.COMMENTED
@@ -32,7 +32,7 @@ object distPullRequestMod {
   open class PullRequestClass protected ()
     extends GitHubRef
        with PullRequest {
-    def this(data: typings.typedGithubApi.pullRequestMod.PullRequest, options: OptionsOrRef) = this()
+    def this(data: typings.typedGithubApi.distApiInterfacesPullRequestMod.PullRequest, options: OptionsOrRef) = this()
     
     /* CompleteClass */
     var assignee: UserSummary | Null = js.native
@@ -104,7 +104,7 @@ object distPullRequestMod {
   open class ReviewClass protected ()
     extends GitHubRef
        with Review {
-    def this(data: typings.typedGithubApi.pullRequestMod.Review, options: OptionsOrRef) = this()
+    def this(data: typings.typedGithubApi.distApiInterfacesPullRequestMod.Review, options: OptionsOrRef) = this()
     
     /* CompleteClass */
     var body: String = js.native
@@ -126,11 +126,11 @@ object distPullRequestMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.typedGithubApi.interfacesIssueMod.IssueComment because Already inherited
-  - typings.typedGithubApi.interfacesPullRequestMod.ReviewComment because var conflicts: body, createdAt, createdBy, htmlUri, id, updatedAt. Inlined diffHunk, position */ @JSImport("typed-github-api/dist/pull-request", "ReviewCommentClass")
+  - typings.typedGithubApi.distInterfacesIssueMod.IssueComment because Already inherited
+  - typings.typedGithubApi.distInterfacesPullRequestMod.ReviewComment because var conflicts: body, createdAt, createdBy, htmlUri, id, updatedAt. Inlined diffHunk, position */ @JSImport("typed-github-api/dist/pull-request", "ReviewCommentClass")
   @js.native
   open class ReviewCommentClass protected () extends IssueCommentClass {
-    def this(data: typings.typedGithubApi.pullRequestMod.ReviewComment, options: OptionsOrRef) = this()
+    def this(data: typings.typedGithubApi.distApiInterfacesPullRequestMod.ReviewComment, options: OptionsOrRef) = this()
     
     var diffHunk: String = js.native
     
@@ -142,7 +142,7 @@ object distPullRequestMod {
   open class TeamClass protected ()
     extends GitHubRef
        with Team {
-    def this(data: typings.typedGithubApi.teamMod.Team, options: OptionsOrRef) = this()
+    def this(data: typings.typedGithubApi.distApiInterfacesTeamMod.Team, options: OptionsOrRef) = this()
     
     /* CompleteClass */
     var description: String = js.native

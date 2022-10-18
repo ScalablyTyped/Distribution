@@ -1,13 +1,12 @@
 package typings.cesium.anon
 
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LowFrameRateMessage extends StObject {
   
-  var container: Element | String
+  var container: typings.std.Element | String
   
   var lowFrameRateMessage: js.UndefOr[String] = js.undefined
   
@@ -15,14 +14,14 @@ trait LowFrameRateMessage extends StObject {
 }
 object LowFrameRateMessage {
   
-  inline def apply(container: Element | String, scene: typings.cesium.mod.Scene): LowFrameRateMessage = {
+  inline def apply(container: typings.std.Element | String, scene: typings.cesium.mod.Scene): LowFrameRateMessage = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
     __obj.asInstanceOf[LowFrameRateMessage]
   }
   
   extension [Self <: LowFrameRateMessage](x: Self) {
     
-    inline def setContainer(value: Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: typings.std.Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setLowFrameRateMessage(value: String): Self = StObject.set(x, "lowFrameRateMessage", value.asInstanceOf[js.Any])
     

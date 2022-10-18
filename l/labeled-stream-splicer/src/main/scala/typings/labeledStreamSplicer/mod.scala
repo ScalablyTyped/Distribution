@@ -1,8 +1,9 @@
 package typings.labeledStreamSplicer
 
+import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.TransformOptions
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ object mod {
   
   type LabeledStreamList = js.Array[String | Stream | js.Array[Stream]]
   
-  type Stream = ReadableStream[Any] | WritableStream[Any] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any)
+  type Stream = ReadableStream | WritableStream | ReadWriteStream
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in std.Exclude<keyof node.stream.Duplex, 'push' | 'unshift'> ]: node.stream.Duplex[P]} */ @js.native

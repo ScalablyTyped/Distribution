@@ -15,6 +15,8 @@ trait ViewSnapshot extends StObject {
   
   val fromCache: Boolean = js.native
   
+  val hasCachedResults: Boolean = js.native
+  
   def hasPendingWrites: Boolean = js.native
   
   def isEqual(other: ViewSnapshot): Boolean = js.native

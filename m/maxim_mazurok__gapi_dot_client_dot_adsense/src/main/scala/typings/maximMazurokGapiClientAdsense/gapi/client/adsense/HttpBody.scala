@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAdsense.gapi.client.adsense
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +15,7 @@ trait HttpBody extends StObject {
   /** Application specific response metadata. Must be set in the first response for streaming APIs. */
   var extensions: js.UndefOr[
     js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientAdsense.maximMazurokGapiClientAdsenseStrings.HttpBody & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ]
   ] = js.undefined
 }
@@ -41,18 +38,14 @@ object HttpBody {
     
     inline def setExtensions(
       value: js.Array[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAdsense.maximMazurokGapiClientAdsenseStrings.HttpBody & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
         ]
     ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     inline def setExtensionsVarargs(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAdsense.maximMazurokGapiClientAdsenseStrings.HttpBody & TopLevel[Any])*
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any)*
     ): Self = StObject.set(x, "extensions", js.Array(value*))
   }
 }

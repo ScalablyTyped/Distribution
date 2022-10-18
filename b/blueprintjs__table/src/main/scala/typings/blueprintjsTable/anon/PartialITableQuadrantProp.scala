@@ -1,7 +1,7 @@
 package typings.blueprintjsTable.anon
 
-import typings.blueprintjsTable.gridMod.Grid
-import typings.blueprintjsTable.tableQuadrantMod.QuadrantType
+import typings.blueprintjsTable.libEsmCommonGridMod.Grid
+import typings.blueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType
 import typings.react.mod.CSSProperties
 import typings.react.mod.EventHandler
 import typings.react.mod.NativeUIEvent

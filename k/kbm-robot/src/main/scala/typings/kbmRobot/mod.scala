@@ -58,11 +58,11 @@ object mod extends Shortcut {
     
     inline def ALT: typings.kbmRobot.kbmRobotStrings.ALT = "ALT".asInstanceOf[typings.kbmRobot.kbmRobotStrings.ALT]
     
-    inline def Apostrophe: String = String.asInstanceOf[String]
+    inline def Apostrophe: /* ' */ String = "'".asInstanceOf[/* ' */ String]
     
     inline def BACKSPACE: typings.kbmRobot.kbmRobotStrings.BACKSPACE = "BACKSPACE".asInstanceOf[typings.kbmRobot.kbmRobotStrings.BACKSPACE]
     
-    inline def Backslash: String = String.asInstanceOf[String]
+    inline def Backslash: /* \ */ String = "\\".asInstanceOf[/* \ */ String]
     
     inline def CAPS_LOCK: typings.kbmRobot.kbmRobotStrings.CAPS_LOCK = "CAPS_LOCK".asInstanceOf[typings.kbmRobot.kbmRobotStrings.CAPS_LOCK]
     
@@ -798,7 +798,7 @@ object mod extends Shortcut {
     - typings.kbmRobot.kbmRobotStrings.Equalssign
     - typings.kbmRobot.kbmRobotStrings.`[`
     - typings.kbmRobot.kbmRobotStrings.`]`
-    - java.lang.String
+    - / * \ * / java.lang.String
     - typings.kbmRobot.kbmRobotStrings.Semicolon
     - typings.kbmRobot.kbmRobotStrings.Comma
     - typings.kbmRobot.kbmRobotStrings.Dot
@@ -819,7 +819,7 @@ object mod extends Shortcut {
     - typings.kbmRobot.kbmRobotStrings.KP_8
     - typings.kbmRobot.kbmRobotStrings.KP_9
   */
-  type Key = _Key | String
+  type Key = _Key | (/* \ */ String)
   
   type MouseButton = _MouseButton | (/* template literal string: ${_MouseButton}${_MouseButton} */ String)
   

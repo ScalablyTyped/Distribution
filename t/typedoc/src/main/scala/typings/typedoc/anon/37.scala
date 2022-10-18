@@ -1,23 +1,23 @@
 package typings.typedoc.anon
 
-import typings.typedoc.typedocStrings.cname
+import typings.typedoc.typedocStrings.modifierTags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `37` extends StObject {
   
-  var name: cname
+  var name: modifierTags
 }
 object `37` {
   
   inline def apply(): `37` = {
-    val __obj = js.Dynamic.literal(name = "cname")
+    val __obj = js.Dynamic.literal(name = "modifierTags")
     __obj.asInstanceOf[`37`]
   }
   
   extension [Self <: `37`](x: Self) {
     
-    inline def setName(value: cname): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: modifierTags): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

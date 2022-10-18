@@ -1,16 +1,16 @@
 package typings.firebaseAnalytics.anon
 
+import typings.firebaseAnalytics.distEsmSrcPublicTypesMod.ConsentSettings
+import typings.firebaseAnalytics.distEsmSrcPublicTypesMod.ControlParams
+import typings.firebaseAnalytics.distEsmSrcPublicTypesMod.CustomParams
+import typings.firebaseAnalytics.distEsmSrcPublicTypesMod.EventParams
+import typings.firebaseAnalytics.distEsmSrcTypesMod.Gtag
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.config
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.consent
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.default
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.event
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.set
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.update
-import typings.firebaseAnalytics.publicTypesMod.ConsentSettings
-import typings.firebaseAnalytics.publicTypesMod.ControlParams
-import typings.firebaseAnalytics.publicTypesMod.CustomParams
-import typings.firebaseAnalytics.publicTypesMod.EventParams
-import typings.firebaseAnalytics.typesMod.Gtag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,7 +7,7 @@ import typings.node.netMod.Server
 import typings.node.streamMod.PassThrough
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.TlsOptions
-import typings.nodemailer.sharedMod.Logger
+import typings.nodemailer.libSharedMod.Logger
 import typings.smtpServer.smtpServerBooleans.`false`
 import typings.smtpServer.smtpServerStrings.LOGIN
 import typings.smtpServer.smtpServerStrings.PLAIN

@@ -1,8 +1,8 @@
 package typings.awsSdkBuildTypes
 
-import typings.awsSdkBuildTypes.apiModelMod.MemberLocation
-import typings.awsSdkBuildTypes.apiModelMod.Type
-import typings.awsSdkBuildTypes.customizationMod.RuntimeTarget
+import typings.awsSdkBuildTypes.buildApiModelMod.MemberLocation
+import typings.awsSdkBuildTypes.buildApiModelMod.Type
+import typings.awsSdkBuildTypes.buildCustomizationMod.RuntimeTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

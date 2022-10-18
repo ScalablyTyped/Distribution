@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "ColorScatterBase")
 @js.native
 open class ColorScatterBase ()
-  extends typings.blackEngine.colorScatterBaseMod.ColorScatterBase
+  extends typings.blackEngine.scattersColorScatterBaseMod.ColorScatterBase

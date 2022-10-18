@@ -1,10 +1,10 @@
 package typings.redisClient.anon
 
-import typings.redisClient.libCommandsMod.RedisCommandArgument
-import typings.redisClient.libCommandsMod.RedisCommandArguments
-import typings.redisClient.xpendingRANGEMod.XPendingRangeOptions
-import typings.redisClient.xpendingRANGEMod.XPendingRangeRawReply
-import typings.redisClient.xpendingRANGEMod.XPendingRangeReply
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsXpendingRANGEMod.XPendingRangeOptions
+import typings.redisClient.distLibCommandsXpendingRANGEMod.XPendingRangeRawReply
+import typings.redisClient.distLibCommandsXpendingRANGEMod.XPendingRangeReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

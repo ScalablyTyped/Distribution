@@ -14,6 +14,7 @@ import typings.mz.mzStrings.SRV
 import typings.mz.mzStrings.TXT
 import typings.mz.mzStrings.ipv4first
 import typings.mz.mzStrings.verbatim
+import typings.node.NodeJS.ErrnoException
 import typings.node.anon.Hostname
 import typings.node.dnsMod.AnyRecord
 import typings.node.dnsMod.CaaRecord
@@ -159,69 +160,38 @@ object dnsMod {
   inline def lookup(hostname: String): js.Promise[js.Tuple2[String, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[String, Double]]]
   inline def lookup(
     hostname: String,
-    callback: js.Function3[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* address */ String, 
-      /* family */ Double, 
-      Unit
-    ]
+    callback: js.Function3[ErrnoException | Null, /* address */ String, /* family */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def lookup(
     hostname: String,
     family: Double,
-    callback: js.Function3[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* address */ String, 
-      /* family */ Double, 
-      Unit
-    ]
+    callback: js.Function3[ErrnoException | Null, /* address */ String, /* family */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], family.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def lookup(hostname: String, options: Double): js.Promise[js.Tuple2[String, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, Double]]]
   inline def lookup(hostname: String, options: LookupAllOptions): js.Promise[js.Array[LookupAddress]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[LookupAddress]]]
   inline def lookup(
     hostname: String,
     options: LookupAllOptions,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[LookupAddress], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[LookupAddress], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def lookup(hostname: String, options: LookupOneOptions): js.Promise[js.Tuple2[String, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, Double]]]
   inline def lookup(
     hostname: String,
-    // `options` can't be mixed into `family`
-  // tslint:disable-next-line: unified-signatures
-  options: LookupOneOptions,
-    callback: js.Function3[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* address */ String, 
-      /* family */ Double, 
-      Unit
-    ]
+    options: LookupOneOptions,
+    callback: js.Function3[ErrnoException | Null, /* address */ String, /* family */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def lookup(hostname: String, options: LookupOptions): js.Promise[(js.Tuple2[String, Double]) | js.Array[LookupAddress]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[(js.Tuple2[String, Double]) | js.Array[LookupAddress]]]
   inline def lookup(
     hostname: String,
     options: LookupOptions,
-    callback: js.Function3[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* address */ String | js.Array[LookupAddress], 
-      /* family */ Double, 
-      Unit
-    ]
+    callback: js.Function3[ErrnoException | Null, js.Array[LookupAddress] | String, /* family */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def lookupService(address: String, port: Double): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupService")(address.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
   inline def lookupService(
     address: String,
     port: Double,
-    callback: js.Function3[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* hostname */ String, 
-      /* service */ String, 
-      Unit
-    ]
+    callback: js.Function3[ErrnoException | Null, /* hostname */ String, /* service */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupService")(address.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object promises {
@@ -593,21 +563,13 @@ object dnsMod {
   inline def resolve(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   inline def resolve(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def resolve(hostname: String, rrtype: A | AAAA | CNAME | NS | PTR): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   inline def resolve(
     hostname: String,
     rrtype: A | AAAA | CNAME | NS | PTR,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def resolve(hostname: String, rrtype: String): js.Promise[
     (js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | SoaRecord
@@ -618,245 +580,169 @@ object dnsMod {
     hostname: String,
     rrtype: String,
     callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ (js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | SoaRecord, 
+      ErrnoException | Null, 
+      (js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | SoaRecord, 
       Unit
     ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(
+    hostname: String,
+    rrtype: AAAA,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(hostname: String, rrtype: ANY): js.Promise[js.Array[AnyRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[AnyRecord]]]
+  inline def resolve(
+    hostname: String,
+    rrtype: ANY,
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[AnyRecord], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(
+    hostname: String,
+    rrtype: A,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(
+    hostname: String,
+    rrtype: CNAME,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(hostname: String, rrtype: MX): js.Promise[js.Array[MxRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[MxRecord]]]
+  inline def resolve(
+    hostname: String,
+    rrtype: MX,
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[MxRecord], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(hostname: String, rrtype: NAPTR): js.Promise[js.Array[NaptrRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NaptrRecord]]]
+  inline def resolve(
+    hostname: String,
+    rrtype: NAPTR,
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[NaptrRecord], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(
+    hostname: String,
+    rrtype: NS,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(
+    hostname: String,
+    rrtype: PTR,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(hostname: String, rrtype: SOA): js.Promise[SoaRecord] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SoaRecord]]
+  inline def resolve(
+    hostname: String,
+    rrtype: SOA,
+    callback: js.Function2[ErrnoException | Null, /* addresses */ SoaRecord, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(hostname: String, rrtype: SRV): js.Promise[js.Array[SrvRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[SrvRecord]]]
+  inline def resolve(
+    hostname: String,
+    rrtype: SRV,
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[SrvRecord], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolve(hostname: String, rrtype: TXT): js.Promise[js.Array[js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Array[String]]]]
+  inline def resolve(
+    hostname: String,
+    rrtype: TXT,
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[js.Array[String]], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resolve4(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   inline def resolve4(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def resolve4(hostname: String, options: ResolveOptions): js.Promise[js.Array[RecordWithTtl | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl | String]]]
   inline def resolve4(
     hostname: String,
     options: ResolveOptions,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[RecordWithTtl | String], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[RecordWithTtl | String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def resolve4(hostname: String, options: ResolveWithTtlOptions): js.Promise[js.Array[RecordWithTtl]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl]]]
   inline def resolve4(
     hostname: String,
     options: ResolveWithTtlOptions,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[RecordWithTtl], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[RecordWithTtl], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resolve6(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   inline def resolve6(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def resolve6(hostname: String, options: ResolveOptions): js.Promise[js.Array[RecordWithTtl | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl | String]]]
   inline def resolve6(
     hostname: String,
     options: ResolveOptions,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[RecordWithTtl | String], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[RecordWithTtl | String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def resolve6(hostname: String, options: ResolveWithTtlOptions): js.Promise[js.Array[RecordWithTtl]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl]]]
   inline def resolve6(
     hostname: String,
     options: ResolveWithTtlOptions,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[RecordWithTtl], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[RecordWithTtl], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resolveAny(hostname: String): js.Promise[js.Array[AnyRecord]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAny")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[AnyRecord]]]
   inline def resolveAny(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[AnyRecord], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[AnyRecord], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAny")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resolveCaa(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* records */ js.Array[CaaRecord], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* records */ js.Array[CaaRecord], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveCaa")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resolveCname(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveCname")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   inline def resolveCname(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveCname")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resolveMx(hostname: String): js.Promise[js.Array[MxRecord]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveMx")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[MxRecord]]]
   inline def resolveMx(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[MxRecord], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[MxRecord], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveMx")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resolveNaptr(hostname: String): js.Promise[js.Array[NaptrRecord]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveNaptr")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[NaptrRecord]]]
   inline def resolveNaptr(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[NaptrRecord], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[NaptrRecord], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveNaptr")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resolveNs(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveNs")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   inline def resolveNs(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveNs")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resolvePtr(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePtr")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   inline def resolvePtr(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePtr")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resolveSoa(hostname: String): js.Promise[SoaRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSoa")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SoaRecord]]
-  inline def resolveSoa(
-    hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* address */ SoaRecord, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSoa")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveSoa(hostname: String, callback: js.Function2[ErrnoException | Null, /* address */ SoaRecord, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSoa")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resolveSrv(hostname: String): js.Promise[js.Array[SrvRecord]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSrv")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[SrvRecord]]]
   inline def resolveSrv(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[SrvRecord], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[SrvRecord], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSrv")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resolveTxt(hostname: String): js.Promise[js.Array[js.Array[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveTxt")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Array[String]]]]
   inline def resolveTxt(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[js.Array[String]], 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, /* addresses */ js.Array[js.Array[String]], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTxt")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def resolve_ANY(hostname: String, rrtype: ANY): js.Promise[js.Array[AnyRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[AnyRecord]]]
-  inline def resolve_ANY(
-    hostname: String,
-    rrtype: ANY,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[AnyRecord], 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def resolve_MX(hostname: String, rrtype: MX): js.Promise[js.Array[MxRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[MxRecord]]]
-  inline def resolve_MX(
-    hostname: String,
-    rrtype: MX,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[MxRecord], 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def resolve_NAPTR(hostname: String, rrtype: NAPTR): js.Promise[js.Array[NaptrRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NaptrRecord]]]
-  inline def resolve_NAPTR(
-    hostname: String,
-    rrtype: NAPTR,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[NaptrRecord], 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def resolve_SOA(hostname: String, rrtype: SOA): js.Promise[SoaRecord] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SoaRecord]]
-  inline def resolve_SOA(
-    hostname: String,
-    rrtype: SOA,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ SoaRecord, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def resolve_SRV(hostname: String, rrtype: SRV): js.Promise[js.Array[SrvRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[SrvRecord]]]
-  inline def resolve_SRV(
-    hostname: String,
-    rrtype: SRV,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[SrvRecord], 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def resolve_TXT(hostname: String, rrtype: TXT): js.Promise[js.Array[js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Array[String]]]]
-  inline def resolve_TXT(
-    hostname: String,
-    rrtype: TXT,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[js.Array[String]], 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def reverse(ip: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(ip.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   inline def reverse(
     ip: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* domains */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* hostnames */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(ip.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setDefaultResultOrder(order: ipv4first | verbatim): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultResultOrder")(order.asInstanceOf[js.Any]).asInstanceOf[Unit]

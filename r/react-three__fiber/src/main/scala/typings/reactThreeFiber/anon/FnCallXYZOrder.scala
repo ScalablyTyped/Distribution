@@ -1,6 +1,6 @@
 package typings.reactThreeFiber.anon
 
-import typings.three.eulerMod.Euler
+import typings.three.srcMathEulerMod.Euler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

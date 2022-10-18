@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jest/source-map" : "29.0.0"
+      "@jest/source-map" : "29.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jest/source-map" : "29.0.0"
+      "@jest/source-map" : "29.2.0"
     }
   ],
   "compile-devDependencies" : [

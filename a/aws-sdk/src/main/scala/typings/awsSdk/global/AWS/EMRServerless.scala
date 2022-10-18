@@ -1,6 +1,6 @@
 package typings.awsSdk.global.AWS
 
-import typings.awsSdk.emrserverlessMod.ClientConfiguration
+import typings.awsSdk.clientsEmrserverlessMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

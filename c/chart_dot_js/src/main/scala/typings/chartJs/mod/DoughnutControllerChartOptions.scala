@@ -1,8 +1,8 @@
 package typings.chartJs.mod
 
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsBooleans.`false`
 import typings.chartJs.chartJsStrings.doughnut
+import typings.chartJs.typesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.styledComponents.sheetMod.default
-import typings.styledComponents.sheetSheetMod.GlobalStylesAllocationMap
-import typings.styledComponents.sheetSheetMod.NamesAllocationMap
-import typings.styledComponents.sheetSheetMod.SheetConstructorArgs
+import typings.styledComponents.nativeDistDistSheetMod.default
+import typings.styledComponents.nativeDistDistSheetSheetMod.GlobalStylesAllocationMap
+import typings.styledComponents.nativeDistDistSheetSheetMod.NamesAllocationMap
+import typings.styledComponents.nativeDistDistSheetSheetMod.SheetConstructorArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

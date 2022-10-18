@@ -6,16 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EncodingFlag extends StObject {
   
-  var encoding: js.UndefOr[String] = js.undefined
+  var encoding: String
   
   var flag: js.UndefOr[String] = js.undefined
-  
-  var mode: js.UndefOr[String] = js.undefined
 }
 object EncodingFlag {
   
-  inline def apply(): EncodingFlag = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(encoding: String): EncodingFlag = {
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncodingFlag]
   }
   
@@ -23,14 +21,8 @@ object EncodingFlag {
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
-    
     inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
     inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
-    
-    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
-    
-    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

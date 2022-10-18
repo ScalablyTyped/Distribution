@@ -1,19 +1,10 @@
 package typings.jasmine
 
-import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  @js.native
-  trait Instantiable
-    extends StObject
-       with Instantiable1[
-          /* import warning: importer.ImportType#apply Failed type conversion: infer A */ /* args */ js.Any, 
-          /* import warning: importer.ImportType#apply Failed type conversion: infer V */ js.Any
-        ]
   
   trait Random extends StObject {
     

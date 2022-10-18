@@ -6,56 +6,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Waittimer extends StObject {
   
-  /**
-    * @description Whether the currently authenticated user can approve the deployment
-    * @example true
-    */
-  var current_user_can_approve: Boolean
+  var deployment_branch_policy: js.UndefOr[Custombranchpolicies | Null] = js.undefined
   
-  var environment: HtmlurlId
+  /** @description The people or teams that may review jobs that reference the environment. You can list up to six users or teams as reviewers. The reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed. */
+  var reviewers: js.UndefOr[js.Array[IdType] | Null] = js.undefined
   
-  /** @description The people or teams that may approve jobs that reference the environment. You can list up to six users or teams as reviewers. The reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed. */
-  var reviewers: js.Array[`501`]
-  
-  /**
-    * @description The set duration of the wait timer
-    * @example 30
-    */
-  var wait_timer: Double
-  
-  /**
-    * Format: date-time
-    * @description The time that the wait timer began.
-    * @example 2020-11-23T22:00:40Z
-    */
-  var wait_timer_started_at: String | Null
+  var wait_timer: js.UndefOr[Double] = js.undefined
 }
 object Waittimer {
   
-  inline def apply(
-    current_user_can_approve: Boolean,
-    environment: HtmlurlId,
-    reviewers: js.Array[`501`],
-    wait_timer: Double
-  ): Waittimer = {
-    val __obj = js.Dynamic.literal(current_user_can_approve = current_user_can_approve.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], reviewers = reviewers.asInstanceOf[js.Any], wait_timer = wait_timer.asInstanceOf[js.Any], wait_timer_started_at = null)
+  inline def apply(): Waittimer = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Waittimer]
   }
   
   extension [Self <: Waittimer](x: Self) {
     
-    inline def setCurrent_user_can_approve(value: Boolean): Self = StObject.set(x, "current_user_can_approve", value.asInstanceOf[js.Any])
+    inline def setDeployment_branch_policy(value: Custombranchpolicies): Self = StObject.set(x, "deployment_branch_policy", value.asInstanceOf[js.Any])
     
-    inline def setEnvironment(value: HtmlurlId): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setDeployment_branch_policyNull: Self = StObject.set(x, "deployment_branch_policy", null)
     
-    inline def setReviewers(value: js.Array[`501`]): Self = StObject.set(x, "reviewers", value.asInstanceOf[js.Any])
+    inline def setDeployment_branch_policyUndefined: Self = StObject.set(x, "deployment_branch_policy", js.undefined)
     
-    inline def setReviewersVarargs(value: `501`*): Self = StObject.set(x, "reviewers", js.Array(value*))
+    inline def setReviewers(value: js.Array[IdType]): Self = StObject.set(x, "reviewers", value.asInstanceOf[js.Any])
+    
+    inline def setReviewersNull: Self = StObject.set(x, "reviewers", null)
+    
+    inline def setReviewersUndefined: Self = StObject.set(x, "reviewers", js.undefined)
+    
+    inline def setReviewersVarargs(value: IdType*): Self = StObject.set(x, "reviewers", js.Array(value*))
     
     inline def setWait_timer(value: Double): Self = StObject.set(x, "wait_timer", value.asInstanceOf[js.Any])
     
-    inline def setWait_timer_started_at(value: String): Self = StObject.set(x, "wait_timer_started_at", value.asInstanceOf[js.Any])
-    
-    inline def setWait_timer_started_atNull: Self = StObject.set(x, "wait_timer_started_at", null)
+    inline def setWait_timerUndefined: Self = StObject.set(x, "wait_timer", js.undefined)
   }
 }

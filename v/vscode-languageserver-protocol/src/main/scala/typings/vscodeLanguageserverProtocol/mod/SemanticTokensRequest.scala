@@ -1,8 +1,8 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolSemanticTokensMod.SemanticTokensParams
-import typings.vscodeLanguageserverProtocol.protocolSemanticTokensMod.SemanticTokensPartialResult
-import typings.vscodeLanguageserverProtocol.protocolSemanticTokensMod.SemanticTokensRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotsemanticTokensMod.SemanticTokensParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotsemanticTokensMod.SemanticTokensPartialResult
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotsemanticTokensMod.SemanticTokensRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashsemanticTokens
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashsemanticTokensSlashfull
 import org.scalablytyped.runtime.StObject
@@ -13,7 +13,7 @@ object SemanticTokensRequest {
   
   @JSImport("vscode-languageserver-protocol", "SemanticTokensRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "SemanticTokensRequest.method")
   @js.native
@@ -26,7 +26,7 @@ object SemanticTokensRequest {
   
   @JSImport("vscode-languageserver-protocol", "SemanticTokensRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     SemanticTokensParams, 
     typings.vscodeLanguageserverTypes.mod.SemanticTokens | Null, 
     SemanticTokensPartialResult, 

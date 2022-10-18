@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.
-  * 
-  * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+  *
+  * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
   * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
   * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
-  * 
+  *
   * Parent interfaces:
   *
   * - {@link Office.ItemCompose | ItemCompose}
-  * 
+  *
   * - {@link Office.Appointment | Appointment}
   */
 @js.native
@@ -37,19 +37,19 @@ trait AppointmentCompose
     *
     * @remarks
     * [Api set: Mailbox 1.1]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `AttachmentSizeExceeded`: The attachment is larger than allowed.
-    * 
+    *
     * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.
-    * 
+    *
     * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
-    * 
+    *
     * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -77,22 +77,22 @@ trait AppointmentCompose
     *
     * @remarks
     * [Api set: Mailbox 1.1]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `AttachmentSizeExceeded`: The attachment is larger than allowed.
-    * 
+    *
     * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.
-    * 
+    *
     * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
-    * 
+    *
     * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     *        `isInline`: If true, indicates that the attachment will be shown inline in the message body,
     *                    and should not be displayed in the attachment list.
@@ -117,25 +117,25 @@ trait AppointmentCompose
     * This method returns the attachment identifier in the `asyncResult.value` object.
     *
     * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
-    * 
+    *
     * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API.
     * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.
     *
     * @remarks
     * [Api set: Mailbox 1.8]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `AttachmentSizeExceeded`: The attachment is larger than allowed.
-    * 
+    *
     * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.
-    * 
+    *
     * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
-    * 
+    *
     * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the
     * {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
     * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted.
@@ -145,7 +145,7 @@ trait AppointmentCompose
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                             of type `Office.AsyncResult`.
-    *                  On success, the attachment identifier will be provided in the `asyncResult.value` property. 
+    *                  On success, the attachment identifier will be provided in the `asyncResult.value` property.
     *                  If uploading the attachment fails, the `asyncResult` object will contain
     *                  an `Error` object that provides a description of the error.
     */
@@ -162,39 +162,39 @@ trait AppointmentCompose
     * This method returns the attachment identifier in the `asyncResult.value` object.
     *
     * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
-    * 
+    *
     * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API.
     * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.
     *
     * @remarks
     * [Api set: Mailbox 1.8]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `AttachmentSizeExceeded`: The attachment is larger than allowed.
-    * 
+    *
     * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.
-    * 
+    *
     * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
-    * 
+    *
     * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the
     * {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
     * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted.
     * For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
-    * 
+    *
     * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     *        `isInline`: If true, indicates that the attachment will be shown inline in the message body
     *                    and should not be displayed in the attachment list.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                             of type `Office.AsyncResult`.
-    *                  On success, the attachment identifier will be provided in the `asyncResult.value` property. 
+    *                  On success, the attachment identifier will be provided in the `asyncResult.value` property.
     *                  If uploading the attachment fails, the `asyncResult` object will contain
     *                  an `Error` object that provides a description of the error.
     */
@@ -217,21 +217,21 @@ trait AppointmentCompose
   ): Unit = js.native
   /**
     * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-    * 
+    *
     * For supported events, refer to the Item object model
     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.7]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * @param eventType - The event that should invoke the handler.
-    * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
+    * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
     *                The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.
-    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, 
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def addHandlerAsync(eventType: EventType, handler: Any): Unit = js.native
@@ -242,23 +242,23 @@ trait AppointmentCompose
   ): Unit = js.native
   /**
     * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-    * 
+    *
     * For supported events, refer to the Item object model
     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.7]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * @param eventType - The event that should invoke the handler.
-    * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
+    * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
     *                The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, 
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def addHandlerAsync(eventType: EventType, handler: Any, options: AsyncContextOptions): Unit = js.native
@@ -272,32 +272,32 @@ trait AppointmentCompose
   /**
     * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
     *
-    * The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the compose form. 
-    * If you specify a callback function, the method is called with one parameter, `asyncResult`, which contains either the attachment identifier or 
-    * a code that indicates any error that occurred while attaching the item. 
+    * The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the compose form.
+    * If you specify a callback function, the method is called with one parameter, `asyncResult`, which contains either the attachment identifier or
+    * a code that indicates any error that occurred while attaching the item.
     * You can use the `options` parameter to pass state information to the callback function, if needed.
     *
     * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
     *
-    * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that 
+    * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that
     * you are editing; however, this is not supported and is not recommended.
     *
     * @remarks
     * [Api set: Mailbox 1.1]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
-    * 
+    *
     * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of
     *                             type `Office.AsyncResult`.
-    *                 On success, the attachment identifier will be provided in the `asyncResult.value` property. 
+    *                 On success, the attachment identifier will be provided in the `asyncResult.value` property.
     *                 If adding the attachment fails, the `asyncResult` object will contain
     *                 an `Error` object that provides a description of the error.
     */
@@ -310,34 +310,34 @@ trait AppointmentCompose
   /**
     * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
     *
-    * The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the compose form. 
-    * If you specify a callback function, the method is called with one parameter, `asyncResult`, which contains either the attachment identifier or 
-    * a code that indicates any error that occurred while attaching the item. 
+    * The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the compose form.
+    * If you specify a callback function, the method is called with one parameter, `asyncResult`, which contains either the attachment identifier or
+    * a code that indicates any error that occurred while attaching the item.
     * You can use the `options` parameter to pass state information to the callback function, if needed.
     *
     * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
     *
-    * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that 
+    * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that
     * you are editing; however, this is not supported and is not recommended.
     *
     * @remarks
     * [Api set: Mailbox 1.1]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
-    * 
+    *
     * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of
     *                             type `Office.AsyncResult`.
-    *                 On success, the attachment identifier will be provided in the `asyncResult.value` property. 
+    *                 On success, the attachment identifier will be provided in the `asyncResult.value` property.
     *                 If adding the attachment fails, the `asyncResult` object will contain
     *                 an `Error` object that provides a description of the error.
     */
@@ -354,9 +354,9 @@ trait AppointmentCompose
     *
     * @remarks
     * [Api set: Mailbox 1.1]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var body: Body = js.native
@@ -368,7 +368,7 @@ trait AppointmentCompose
     * [Api set: Mailbox 1.8]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var categories: Categories = js.native
@@ -376,19 +376,19 @@ trait AppointmentCompose
   /**
     * Closes the current item that is being composed
     *
-    * The behaviors of the `close` method depends on the current state of the item being composed. 
+    * The behaviors of the `close` method depends on the current state of the item being composed.
     * If the item has unsaved changes, the client prompts the user to save, discard, or close the action.
     *
     * In the Outlook desktop client, if the message is an inline reply, the `close` method has no effect.
     *
-    * **Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using `saveAsync`, the user is prompted to save, 
+    * **Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using `saveAsync`, the user is prompted to save,
     * discard, or cancel even if no changes have occurred since the item was last saved.
     *
     * @remarks
     * [Api set: Mailbox 1.3]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   def close(): Unit = js.native
@@ -428,7 +428,7 @@ trait AppointmentCompose
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -439,10 +439,10 @@ trait AppointmentCompose
   /**
     * Gets or sets the date and time that the appointment is to end.
     *
-    * The `end` property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value. 
+    * The `end` property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value.
     * You can use the `convertToLocalClientTime` method to convert the `end` property value to the client's local date and time.
     *
-    * When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to convert the local time on 
+    * When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to convert the local time on
     * the client to UTC for the server.
     *
     * **Important**: In the Windows client, you can't use this property to update the end of a recurrence.
@@ -450,7 +450,7 @@ trait AppointmentCompose
     * @remarks
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var end: Time = js.native
@@ -458,40 +458,40 @@ trait AppointmentCompose
   /**
     * Gets or sets the locations of the appointment. The `enhancedLocation` property returns an {@link Office.EnhancedLocation | EnhancedLocation}
     * object that provides methods to get, remove, or add locations on an item.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.8]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var enhancedLocation: EnhancedLocation = js.native
   
   /**
     * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
-    * 
+    *
     * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
     * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
-    * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
-    * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+    * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+    * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
     * continue in a separate window.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.8]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `AttachmentTypeNotSupported`: The attachment type isn't supported. Unsupported types include embedded images in Rich Text Format,
     *                               or item attachment types other than email or calendar items (such as a contact or task item).
     *
     * - `InvalidAttachmentId`: The attachment identifier does not exist.
-    * 
-    * @param attachmentId - The identifier of the attachment you want to get. 
+    *
+    * @param attachmentId - The identifier of the attachment you want to get.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain
     *                an error code with the reason for the failure.
@@ -503,29 +503,29 @@ trait AppointmentCompose
   ): Unit = js.native
   /**
     * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
-    * 
+    *
     * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
     * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
-    * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
-    * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+    * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+    * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
     * continue in a separate window.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.8]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `AttachmentTypeNotSupported`: The attachment type isn't supported. Unsupported types include embedded images in Rich Text Format,
     *                               or item attachment types other than email or calendar items (such as a contact or task item).
     *
     * - `InvalidAttachmentId`: The attachment identifier does not exist.
-    * 
-    * @param attachmentId - The identifier of the attachment you want to get. 
-    * @param options - An object literal that contains one or more of the following properties.
+    *
+    * @param attachmentId - The identifier of the attachment you want to get.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain
@@ -540,14 +540,14 @@ trait AppointmentCompose
   
   /**
     * Gets the item's attachments as an array.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.8]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
     *                 the failure.
@@ -556,15 +556,15 @@ trait AppointmentCompose
   def getAttachmentsAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetailsCompose]], Unit]): Unit = js.native
   /**
     * Gets the item's attachments as an array.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.8]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
-    * @param options - An object literal that contains one or more of the following properties.
+    *
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
@@ -604,7 +604,7 @@ trait AppointmentCompose
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                             of type `Office.AsyncResult`.
@@ -619,7 +619,7 @@ trait AppointmentCompose
     * Asynchronously gets the ID of a saved item.
     *
     * When invoked, this method returns the item ID via the callback function.
-    * 
+    *
     * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API),
     * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
     * Until the item is synced, the `itemId` is not recognized and using it returns an error.
@@ -628,13 +628,13 @@ trait AppointmentCompose
     * [Api set: Mailbox 1.8]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
-    * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
-    * 
+    *
+    * - `ItemNotSaved`: The ID can't be retrieved until the item is saved.
+    *
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                   of type `Office.AsyncResult`.
     */
@@ -643,7 +643,7 @@ trait AppointmentCompose
     * Asynchronously gets the ID of a saved item.
     *
     * When invoked, this method returns the item ID via the callback function.
-    * 
+    *
     * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API),
     * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
     * Until the item is synced, the `itemId` is not recognized and using it returns an error.
@@ -652,14 +652,14 @@ trait AppointmentCompose
     * [Api set: Mailbox 1.8]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
-    * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
-    * 
-    * @param options - An object literal that contains one or more of the following properties.
+    *
+    * - `ItemNotSaved`: The ID can't be retrieved until the item is saved.
+    *
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                   of type `Office.AsyncResult`.
@@ -675,10 +675,10 @@ trait AppointmentCompose
   /**
     * Asynchronously returns selected data from the subject or body of a message.
     *
-    * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. 
+    * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data.
     * If a field other than the body or subject is selected, the method returns the `InvalidSelection` error.
     *
-    * To access the selected data from the callback function, call `asyncResult.value.data`. 
+    * To access the selected data from the callback function, call `asyncResult.value.data`.
     * To access the `source` property that the selection comes from, call `asyncResult.value.sourceProperty`, which will be either `body` or `subject`.
     *
     * @returns
@@ -686,24 +686,24 @@ trait AppointmentCompose
     *
     * @remarks
     * [Api set: Mailbox 1.2]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
-    * @param coercionType - Requests a format for the data. If `Text`, the method returns the plain text as a string, removing any HTML tags present. 
+    * @param coercionType - Requests a format for the data. If `Text`, the method returns the plain text as a string, removing any HTML tags present.
     *                     If `HTML`, the method returns the selected text, whether it is plaintext or HTML.
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
-    *                 type `Office.AsyncResult`.
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
+    *                   of type `Office.AsyncResult`.
     */
   def getSelectedDataAsync(coercionType: CoercionType, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   /**
     * Asynchronously returns selected data from the subject or body of a message.
     *
-    * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. 
+    * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data.
     * If a field other than the body or subject is selected, the method returns the `InvalidSelection` error.
     *
-    * To access the selected data from the callback function, call `asyncResult.value.data`. 
+    * To access the selected data from the callback function, call `asyncResult.value.data`.
     * To access the `source` property that the selection comes from, call `asyncResult.value.sourceProperty`, which will be either `body` or `subject`.
     *
     * @returns
@@ -713,12 +713,12 @@ trait AppointmentCompose
     * [Api set: Mailbox 1.2]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
-    * @param coercionType - Requests a format for the data. If `Text`, the method returns the plain text as a string, removing any HTML tags present. 
+    * @param coercionType - Requests a format for the data. If `Text`, the method returns the plain text as a string, removing any HTML tags present.
     *                     If `HTML`, the method returns the selected text, whether it is plaintext or HTML.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                   of type `Office.AsyncResult`.
@@ -739,12 +739,12 @@ trait AppointmentCompose
     *
     * @remarks
     * [Api set: Mailbox 1.8]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
-    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    *
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
     *                 The `value` property of the result is the properties of the shared item.
     */
@@ -759,14 +759,14 @@ trait AppointmentCompose
     *
     * @remarks
     * [Api set: Mailbox 1.8]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
-    * @param options - An object literal that contains one or more of the following properties.
+    *
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
     *                 The `value` property of the result is the properties of the shared item.
     */
@@ -809,7 +809,7 @@ trait AppointmentCompose
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                   type `Office.AsyncResult`.
@@ -824,7 +824,7 @@ trait AppointmentCompose
     * @remarks
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var itemType: ItemType | String = js.native
@@ -832,36 +832,36 @@ trait AppointmentCompose
   /**
     * Asynchronously loads custom properties for this add-in on the selected item.
     *
-    * Custom properties are stored as key/value pairs on a per-app, per-item basis. 
-    * This method returns a `CustomProperties` object in the callback, which provides methods to access the custom properties specific to the 
+    * Custom properties are stored as key/value pairs on a per-app, per-item basis.
+    * This method returns a `CustomProperties` object in the callback, which provides methods to access the custom properties specific to the
     * current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used as secure storage.
     *
-    * The custom properties are provided as a `CustomProperties` object in the `asyncResult.value` property. 
-    * This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to 
+    * The custom properties are provided as a `CustomProperties` object in the `asyncResult.value` property.
+    * This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to
     * the server.
     *
     * @remarks
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
-    * @param userContext - Optional. Developers can provide any object they wish to access in the callback function. 
+    * @param userContext - Optional. Developers can provide any object they wish to access in the callback function.
     *                    This object can be accessed by the `asyncResult.asyncContext` property in the callback function.
     */
   def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], Unit]): Unit = js.native
   def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], Unit], userContext: Any): Unit = js.native
   
   /**
-    * Gets or sets the location of an appointment. The `location` property returns a {@link Office.Location | Location} object that provides methods that are 
+    * Gets or sets the location of an appointment. The `location` property returns a {@link Office.Location | Location} object that provides methods that are
     * used to get and set the location of the appointment.
     *
     * @remarks
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var location: Location = js.native
@@ -871,9 +871,9 @@ trait AppointmentCompose
     *
     * @remarks
     * [Api set: Mailbox 1.3]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var notificationMessages: NotificationMessages = js.native
@@ -888,41 +888,41 @@ trait AppointmentCompose
     * @remarks
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var optionalAttendees: Recipients = js.native
   
   /**
-    * Gets the organizer for the specified meeting. 
-    * 
+    * Gets the organizer for the specified meeting.
+    *
     * The `organizer` property returns an {@link Office.Organizer | Organizer} object that provides a method to get the organizer value.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.7]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var organizer: Organizer = js.native
   
   /**
     * Gets or sets the recurrence pattern of an appointment.
-    * 
-    * The `recurrence` property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance 
+    *
+    * The `recurrence` property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance
     * in a series. `null` is returned for single appointments and meeting requests of single appointments.
-    * 
+    *
     * **Note**: Meeting requests have an `itemClass` value of `IPM.Schedule.Meeting.Request`.
-    * 
-    * **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single 
+    *
+    * **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single
     * appointment and NOT a part of a series.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.7]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var recurrence: Recurrence = js.native
@@ -930,27 +930,27 @@ trait AppointmentCompose
   /**
     * Removes an attachment from a message or appointment.
     *
-    * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. 
-    * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
-    * in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
-    * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+    * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item.
+    * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment
+    * in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+    * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
     * continue in a separate window.
     *
     * @remarks
     * [Api set: Mailbox 1.1]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `InvalidAttachmentId`: The attachment identifier does not exist.
     *
     * @param attachmentId - The identifier of the attachment to remove. The maximum string length of the `attachmentId`
     *                       is 200 characters in Outlook on the web and on Windows.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-    *                             type `Office.AsyncResult`. 
+    *                             type `Office.AsyncResult`.
     *                 If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
     */
   def removeAttachmentAsync(attachmentId: String): Unit = js.native
@@ -958,29 +958,29 @@ trait AppointmentCompose
   /**
     * Removes an attachment from a message or appointment.
     *
-    * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. 
-    * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
-    * in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
-    * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+    * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item.
+    * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment
+    * in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+    * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
     * continue in a separate window.
     *
     * @remarks
     * [Api set: Mailbox 1.1]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `InvalidAttachmentId`: The attachment identifier does not exist.
     *
     * @param attachmentId - The identifier of the attachment to remove. The maximum string length of the `attachmentId`
     *                       is 200 characters in Outlook on the web and on Windows.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-    *                             type `Office.AsyncResult`. 
+    *                             type `Office.AsyncResult`.
     *                 If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
     */
   def removeAttachmentAsync(attachmentId: String, options: AsyncContextOptions): Unit = js.native
@@ -1000,40 +1000,40 @@ trait AppointmentCompose
   ): Unit = js.native
   /**
     * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-    * 
+    *
     * For supported events, refer to the Item object model
     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.7]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * @param eventType - The event that should revoke the handler.
-    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, 
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def removeHandlerAsync(eventType: EventType): Unit = js.native
   def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   /**
     * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-    * 
+    *
     * For supported events, refer to the Item object model
     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.7]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * @param eventType - The event that should revoke the handler.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, 
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def removeHandlerAsync(eventType: EventType, options: AsyncContextOptions): Unit = js.native
@@ -1053,7 +1053,7 @@ trait AppointmentCompose
     * @remarks
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var requiredAttendees: Recipients = js.native
@@ -1061,18 +1061,18 @@ trait AppointmentCompose
   /**
     * Asynchronously saves an item.
     *
-    * When invoked, this method saves the current message as a draft and returns the item ID via the callback function. 
+    * When invoked, this method saves the current message as a draft and returns the item ID via the callback function.
     * In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.
     *
-    * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal 
-    * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. 
+    * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal
+    * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent.
     * Saving an existing appointment will send an update to added or removed attendees.
     *
     * When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
     * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
     *
-    * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that 
-    * when Outlook is in cached mode, it may take some time before the item is actually synced to the server. 
+    * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that
+    * when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
     * Until the item is synced, using the item ID will return an error.
     *
     * **Note**: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
@@ -1081,13 +1081,13 @@ trait AppointmentCompose
     *
     * @remarks
     * [Api set: Mailbox 1.3]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `InvalidAttachmentId`: The attachment identifier does not exist.
     *
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of
@@ -1097,19 +1097,19 @@ trait AppointmentCompose
   /**
     * Asynchronously saves an item.
     *
-    * When invoked, this method saves the current message as a draft and returns the item ID via the callback function. 
-    * In Outlook on the web or Outlook in online mode, the item is saved to the server. 
+    * When invoked, this method saves the current message as a draft and returns the item ID via the callback function.
+    * In Outlook on the web or Outlook in online mode, the item is saved to the server.
     * In Outlook in cached mode, the item is saved to the local cache.
     *
-    * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal 
-    * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. 
+    * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal
+    * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent.
     * Saving an existing appointment will send an update to added or removed attendees.
     *
     * When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
     * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
     *
     * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware
-    * that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. 
+    * that when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
     * Until the item is synced, using the item ID will return an error.
     *
     * **Note**: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
@@ -1120,39 +1120,39 @@ trait AppointmentCompose
     * [Api set: Mailbox 1.3]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `InvalidAttachmentId`: The attachment identifier does not exist.
-    * 
-    * @param options - An object literal that contains one or more of the following properties.
+    *
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-    *                   type `Office.AsyncResult`. 
+    *                   type `Office.AsyncResult`.
     */
   def saveAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   
   /**
-    * Gets the id of the series that an instance belongs to.
-    * 
+    * Gets the ID of the series that an instance belongs to.
+    *
     * In Outlook on the web and desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID of the parent (series) item
     * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
-    * 
-    * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier. 
-    * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. 
-    * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`. 
+    *
+    * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
+    * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API.
+    * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
     * For more details, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
-    * 
-    * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests 
+    *
+    * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
     * and returns `undefined` for any other items that are not meeting requests.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.7]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var seriesId: String = js.native
@@ -1174,24 +1174,24 @@ trait AppointmentCompose
   /**
     * Asynchronously inserts data into the body or subject of a message.
     *
-    * The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
-    * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
+    * The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of the item, or, if text is
+    * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned.
     * After insertion, the cursor is placed at the end of the inserted content.
     *
     * @remarks
     * [Api set: Mailbox 1.2]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `InvalidAttachmentId`: The attachment identifier does not exist.
-    * 
-    * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
+    *
+    * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters.
     *             If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.
-    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
     */
   def setSelectedDataAsync(data: String): Unit = js.native
@@ -1199,33 +1199,33 @@ trait AppointmentCompose
   /**
     * Asynchronously inserts data into the body or subject of a message.
     *
-    * The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
-    * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
+    * The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of the item, or, if text is
+    * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned.
     * After insertion, the cursor is placed at the end of the inserted content.
     *
     * @remarks
     * [Api set: Mailbox 1.2]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `InvalidAttachmentId`: The attachment identifier does not exist.
-    * 
-    * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
+    *
+    * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters.
     *             If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-    *        `coercionType`: If text, the current style is applied in Outlook on the web and Windows. 
-    *                      If the field is an HTML editor, only the text data is inserted, even if the data is HTML. 
-    *                      If html and the field supports HTML (the subject doesn't), the current style is applied in Outlook on the web and the 
-    *                      default style is applied in Outlook on desktop clients. 
-    *                      If the field is a text field, an `InvalidDataFormat` error is returned. 
-    *                      If `coercionType` is not set, the result depends on the field: if the field is HTML then HTML is used; 
+    *        `coercionType`: If text, the current style is applied in Outlook on the web and Windows.
+    *                      If the field is an HTML editor, only the text data is inserted, even if the data is HTML.
+    *                      If html and the field supports HTML (the subject doesn't), the current style is applied in Outlook on the web and the
+    *                      default style is applied in Outlook on desktop clients.
+    *                      If the field is a text field, an `InvalidDataFormat` error is returned.
+    *                      If `coercionType` is not set, the result depends on the field: if the field is HTML then HTML is used;
     *                      if the field is text, then plain text is used.
-    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
     */
   def setSelectedDataAsync(data: String, options: AsyncContextOptions & CoercionTypeOptions): Unit = js.native
@@ -1238,10 +1238,10 @@ trait AppointmentCompose
   /**
     * Gets or sets the date and time that the appointment is to begin.
     *
-    * The `start` property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value. 
+    * The `start` property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value.
     * You can use the `convertToLocalClientTime` method to convert the value to the client's local date and time.
     *
-    * When you use the `Time.setAsync` method to set the start time, you should use the `convertToUtcClientTime` method to convert the local time on 
+    * When you use the `Time.setAsync` method to set the start time, you should use the `convertToUtcClientTime` method to convert the local time on
     * the client to UTC for the server.
     *
     * **Important**: In the Windows client, you can't use this property to update the start of a recurrence.
@@ -1249,7 +1249,7 @@ trait AppointmentCompose
     * @remarks
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var start: Time = js.native
@@ -1264,7 +1264,7 @@ trait AppointmentCompose
     * @remarks
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var subject: Subject = js.native

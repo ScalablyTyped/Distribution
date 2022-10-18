@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Receives multiple service request objects that are necessary to enable the playback ability for a given content header. */
-@JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyContentResolver")
+/* note: abstract class */ @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyContentResolver")
 @js.native
-abstract class PlayReadyContentResolver ()
+open class PlayReadyContentResolver ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyContentResolver
 object PlayReadyContentResolver {

@@ -1,10 +1,8 @@
 package typings.voilabPdfTable
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.pdfkit.PDFKit.Mixins.TextOptions
 import typings.pdfkit.PDFKit.PDFDocument
-import typings.std.Omit
 import typings.std.Partial
 import typings.voilabPdfTable.anon.Align
 import typings.voilabPdfTable.anon.Cancel
@@ -28,7 +26,15 @@ object mod {
     def this(pdf: PDFDocument, conf: VoilabPdfTableConfig[T]) = this()
   }
   
-  type DistributiveOmit[T, K /* <: /* keyof T */ String */] = Omit[T, K]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends unknown ? std.Omit<T, K> : never
+    }}}
+    */
+  @js.native
+  trait DistributiveOmit[T, K /* <: /* keyof T */ String */] extends StObject
   
   @js.native
   trait VoilabPdfTable[T] extends StObject {
@@ -271,9 +277,15 @@ object mod {
   
   type VoilabPdfTableDefaultType = StringDictionary[js.UndefOr[String | Double]]
   
-  type VoilabPdfTableHeader[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]: string}
-    */ typings.voilabPdfTable.voilabPdfTableStrings.VoilabPdfTableHeader & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ key in keyof T ]: string}
+    }}}
+    */
+  @js.native
+  trait VoilabPdfTableHeader[T] extends StObject
   
   trait VoilabPdfTablePlugin[T] extends StObject {
     

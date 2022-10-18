@@ -1,6 +1,6 @@
 package typings.sentryNode.anon
 
-import typings.sentryNode.handlersMod.MiddlewareError
+import typings.sentryNode.typesHandlersMod.MiddlewareError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

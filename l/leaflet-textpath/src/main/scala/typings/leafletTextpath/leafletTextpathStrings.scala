@@ -1,6 +1,6 @@
 package typings.leafletTextpath
 
-import typings.leafletTextpath.mod._TextPathOrientation
+import typings.leafletTextpath.leafletMod._TextPathOrientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

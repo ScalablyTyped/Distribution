@@ -1,6 +1,7 @@
 package typings.gulpChanged
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.vinyl.mod.File
@@ -21,14 +22,18 @@ object mod extends Shortcut {
   @js.native
   trait IGulpChanged extends StObject {
     
-    def apply(destination: String): Any = js.native
-    def apply(destination: String, options: IOptions): Any = js.native
-    def apply(destination: IDestination): Any = js.native
-    def apply(destination: IDestination, options: IOptions): Any = js.native
+    def apply(destination: String): ReadWriteStream = js.native
+    def apply(destination: String, options: IOptions): ReadWriteStream = js.native
+    def apply(destination: IDestination): ReadWriteStream = js.native
+    def apply(destination: IDestination, options: IOptions): ReadWriteStream = js.native
     
-    var compareContents: IComparator = js.native
+    def compareContents(stream: Transform, sourceFile: File, destPath: String): Unit = js.native
+    @JSName("compareContents")
+    var compareContents_Original: IComparator = js.native
     
-    var compareLastModifiedTime: IComparator = js.native
+    def compareLastModifiedTime(stream: Transform, sourceFile: File, destPath: String): Unit = js.native
+    @JSName("compareLastModifiedTime")
+    var compareLastModifiedTime_Original: IComparator = js.native
   }
   
   trait IOptions extends StObject {

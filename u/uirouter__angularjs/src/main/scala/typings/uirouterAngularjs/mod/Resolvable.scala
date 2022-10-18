@@ -1,7 +1,7 @@
 package typings.uirouterAngularjs.mod
 
-import typings.uirouterCore.resolveInterfaceMod.ResolvableLiteral
-import typings.uirouterCore.resolveInterfaceMod.ResolvePolicy
+import typings.uirouterCore.libResolveInterfaceMod.ResolvableLiteral
+import typings.uirouterCore.libResolveInterfaceMod.ResolvePolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Resolvable protected ()
   extends typings.uirouterCore.mod.Resolvable {
-  /** This constructor creates a Resolvable copy */
-  def this(resolvable: typings.uirouterCore.resolvableMod.Resolvable) = this()
   /** This constructor creates a new Resolvable from the plain old [[ResolvableLiteral]] javascript object */
   def this(resolvable: ResolvableLiteral) = this()
+  /** This constructor creates a Resolvable copy */
+  def this(resolvable: typings.uirouterCore.libResolveResolvableMod.Resolvable) = this()
   /**
     * This constructor creates a new `Resolvable`
     *
@@ -49,5 +49,5 @@ object Resolvable {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromData(token: Any, data: Any): typings.uirouterCore.resolvableMod.Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.resolvableMod.Resolvable]
+  inline def fromData(token: Any, data: Any): typings.uirouterCore.libResolveResolvableMod.Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.libResolveResolvableMod.Resolvable]
 }

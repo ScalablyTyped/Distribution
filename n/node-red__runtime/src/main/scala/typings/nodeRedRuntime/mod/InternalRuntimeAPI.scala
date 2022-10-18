@@ -5,9 +5,9 @@ import typings.express.mod.Express
 import typings.expressServeStaticCore.mod.Application
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpsMod.Server
-import typings.node.nodeHttpMod.IncomingMessage
-import typings.node.nodeHttpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonhttpMod.IncomingMessage
+import typings.node.nodeColonhttpMod.ServerResponse
+import typings.node.nodeColonnetMod.Socket
 import typings.nodeRedUtil.mod.I18n
 import typings.nodeRedUtil.mod.Log
 import typings.nodeRedUtil.mod.Util

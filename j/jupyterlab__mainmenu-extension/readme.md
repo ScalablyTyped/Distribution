@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__mainmenu-extension
 
-Typings are for version 2.2.6
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Main Menu Extension
@@ -10,10 +10,10 @@ JupyterLab - Main Menu Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/mainmenu-extension |
 | Keywords           | - |
-| # releases         | 129 |
-| # dependents       | 1 |
-| # downloads        | 1455056 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 193118.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a name-value pair in a URL query string. Use the IWwwFormUrlDecoderEntry interface instead; see Remarks. */
-@JSGlobal("Windows.Foundation.WwwFormUrlDecoderEntry")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.WwwFormUrlDecoderEntry")
 @js.native
-abstract class WwwFormUrlDecoderEntry ()
+open class WwwFormUrlDecoderEntry ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.WwwFormUrlDecoderEntry {
   

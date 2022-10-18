@@ -5,10 +5,10 @@ import typings.angularCompiler.mod.R3ClassMetadata
 import typings.angularCompiler.mod.R3FactoryMetadata
 import typings.angularCompiler.mod.R3NgModuleMetadata
 import typings.angularCompiler.mod.SchemaMetadata
-import typings.angularCompilerCli.ngModuleSrcHandlerMod.TopLevelImportedExpression
-import typings.angularCompilerCli.ngtscImportsMod.Reference
-import typings.angularCompilerCli.srcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcHostMod.DeclarationNode
+import typings.angularCompilerCli.srcNgtscAnnotationsNgModuleSrcHandlerMod.TopLevelImportedExpression
+import typings.angularCompilerCli.srcNgtscImportsMod.Reference
+import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
+import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

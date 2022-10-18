@@ -1,16 +1,15 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.chartJs.anon.CanvasHTMLCanvasElement
 import typings.chartJs.anon.Fn
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsBooleans.`false`
-import typings.chartJs.elementMod.Element
-import typings.chartJs.geometricMod.Point
 import typings.chartJs.mod.^
-import typings.chartJs.utilsMod.DeepPartial
-import typings.chartJs.utilsMod.DistributiveArray
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesElementMod.Element
+import typings.chartJs.typesGeometricMod.Point
+import typings.chartJs.typesUtilsMod.DeepPartial
+import typings.chartJs.typesUtilsMod.DistributiveArray
 import typings.std.ArrayLike
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
@@ -92,10 +91,6 @@ TType /* <: ChartType */] = (DeepPartial[
 type ChartOptions[TType /* <: ChartType */] = DeepPartial[
 CoreChartOptions[TType] & ElementChartOptions[TType] & PluginChartOptions[TType] & DatasetChartOptions[TType] & ScaleChartOptions[TType] & (/* import warning: importer.ImportType#apply Failed type conversion: chart.js.chart.js.ChartTypeRegistry[TType]['chartOptions'] */ js.Any)]
 
-type DatasetChartOptions[TType /* <: ChartType */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ key in TType ]: {  datasets :chart.js.chart.js.ChartTypeRegistry[key]['datasetOptions']}}
-  */ typings.chartJs.chartJsStrings.DatasetChartOptions & TopLevel[ChartTypeRegistry]
-
 type DefaultDataPoint[TType /* <: ChartType */] = DistributiveArray[
 /* import warning: importer.ImportType#apply Failed type conversion: chart.js.chart.js.ChartTypeRegistry[TType]['defaultDataPoint'] */ js.Any]
 
@@ -165,15 +160,7 @@ type Scriptable[T, TContext] = T | (js.Function2[/* ctx */ TContext, /* options 
 
 type ScriptableAndArray[T, TContext] = js.Array[T] | (Scriptable[T, TContext])
 
-type ScriptableAndArrayOptions[T, TContext] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: chart.js.chart.js.ScriptableAndArray<T[P], TContext>}
-  */ typings.chartJs.chartJsStrings.ScriptableAndArrayOptions & TopLevel[T]
-
 type ScriptableAndScriptableOptions[T, TContext] = (Scriptable[T, TContext]) | (ScriptableOptions[T, TContext])
-
-type ScriptableOptions[T, TContext] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: chart.js.chart.js.Scriptable<T[P], TContext>}
-  */ typings.chartJs.chartJsStrings.ScriptableOptions & TopLevel[T]
 
 type TooltipPositionerFunction[TType /* <: ChartType */] = js.ThisFunction2[
 /* this */ TooltipModel[TType], 

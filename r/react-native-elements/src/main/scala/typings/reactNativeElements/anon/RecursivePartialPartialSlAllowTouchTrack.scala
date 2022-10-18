@@ -4,12 +4,12 @@ import typings.reactNative.mod.Animated.SpringAnimationConfig
 import typings.reactNative.mod.Animated.TimingAnimationConfig
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
+import typings.reactNativeElements.distConfigThemeMod.RecursivePartial
+import typings.reactNativeElements.distSliderSliderMod.Sizable
 import typings.reactNativeElements.reactNativeElementsStrings.horizontal
 import typings.reactNativeElements.reactNativeElementsStrings.spring
 import typings.reactNativeElements.reactNativeElementsStrings.timing
 import typings.reactNativeElements.reactNativeElementsStrings.vertical
-import typings.reactNativeElements.sliderMod.Sizable
-import typings.reactNativeElements.themeMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

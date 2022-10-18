@@ -803,7 +803,7 @@ object mod {
       *
       * @param value Unknown value to be used or scaleImplicit to set implicit scale generation.
       */
-    def unknown[NewUnknown](value: NewUnknown): ScaleOrdinal_[Domain, Range, NewUnknown | scala.Nothing] = js.native
+    def unknown[NewUnknown](value: NewUnknown): /* import warning: importer.ImportType#apply Failed type conversion: NewUnknown extends {  name :'implicit'} ? d3-scale.d3-scale.ScaleOrdinal<Domain, Range, never> : d3-scale.d3-scale.ScaleOrdinal<Domain, Range, NewUnknown> */ js.Any = js.native
   }
   
   @js.native
@@ -1640,5 +1640,13 @@ object mod {
     def unknown[NewUnknown](value: NewUnknown): ScaleTime_[Range, Output, NewUnknown] = js.native
   }
   
-  type UnknownReturnType[Unknown, DefaultUnknown] = Unknown | DefaultUnknown
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [Unknown] extends [never] ? DefaultUnknown : Unknown
+    }}}
+    */
+  @js.native
+  trait UnknownReturnType[Unknown, DefaultUnknown] extends StObject
 }

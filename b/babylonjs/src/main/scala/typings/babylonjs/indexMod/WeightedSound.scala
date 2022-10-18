@@ -14,5 +14,5 @@ open class WeightedSound protected ()
     * @param sounds Array of Sounds that will be selected from.
     * @param weights Array of number values for selection weights; length must equal sounds, values will be normalized to 1
     */
-  def this(loop: Boolean, sounds: js.Array[typings.babylonjs.soundMod.Sound], weights: js.Array[Double]) = this()
+  def this(loop: Boolean, sounds: js.Array[typings.babylonjs.audioSoundMod.Sound], weights: js.Array[Double]) = this()
 }

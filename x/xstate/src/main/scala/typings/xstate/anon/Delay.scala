@@ -1,7 +1,7 @@
 package typings.xstate.anon
 
-import typings.xstate.typesMod.EventObject
-import typings.xstate.typesMod.Expr
+import typings.xstate.libTypesMod.EventObject
+import typings.xstate.libTypesMod.Expr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

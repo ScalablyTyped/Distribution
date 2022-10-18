@@ -1,8 +1,7 @@
 package typings.flashpointLauncher.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.flashpointLauncher.anon.DeepPartialAppPreferencesAppPathOverrides
+import typings.flashpointLauncher.anon.DeepPartialAppPreferences
 import typings.flashpointLauncher.anon.Key
 import typings.flashpointLauncher.mod.^
 import typings.std.Record
@@ -65,8 +64,8 @@ inline def onExtConfigChange: Event[Key] = ^.asInstanceOf[js.Dynamic].selectDyna
   * @param onError Callback for error handling
   * @returns Updated Preferences data
   */
-inline def overwritePreferenceData(data: DeepPartialAppPreferencesAppPathOverrides): js.Promise[AppPreferencesData] = ^.asInstanceOf[js.Dynamic].applyDynamic("overwritePreferenceData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AppPreferencesData]]
-inline def overwritePreferenceData(data: DeepPartialAppPreferencesAppPathOverrides, onError: js.Function1[/* error */ String, Unit]): js.Promise[AppPreferencesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("overwritePreferenceData")(data.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AppPreferencesData]]
+inline def overwritePreferenceData(data: DeepPartialAppPreferences): js.Promise[AppPreferencesData] = ^.asInstanceOf[js.Dynamic].applyDynamic("overwritePreferenceData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AppPreferencesData]]
+inline def overwritePreferenceData(data: DeepPartialAppPreferences, onError: js.Function1[/* error */ String, Unit]): js.Promise[AppPreferencesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("overwritePreferenceData")(data.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AppPreferencesData]]
 
 /**
   * Register a disposable to its parent. They must not be the same.
@@ -93,11 +92,6 @@ inline def unzipFile(filePath: String, outDir: String, opts: ZipExtractOptions):
 
 /** Version of the Flashpoint Launcher */
 inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
-
-/** Utility type. Recursively set all properties as optional. */
-type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? T[K] extends flashpoint-launcher.flashpoint-launcher.ObjectLike? flashpoint-launcher.flashpoint-launcher.DeepPartial<T[K]> : T[K]}
-  */ typings.flashpointLauncher.flashpointLauncherStrings.DeepPartial & TopLevel[Any]
 
 type Event[T] = js.Function3[
 /* listener */ js.Function1[/* e */ T, Any], 

@@ -1,6 +1,6 @@
 package typings.gitlab.mod
 
-import typings.gitlab.baseServiceMod.BaseServiceOptions
+import typings.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("gitlab", "GroupMembers")
 @js.native
 open class GroupMembers protected ()
-  extends typings.gitlab.servicesMod.GroupMembers {
+  extends typings.gitlab.distTypesCoreServicesMod.GroupMembers {
   def this(options: BaseServiceOptions) = this()
 }

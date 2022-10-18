@@ -1,7 +1,7 @@
 package typings.vegaLite.anon
 
-import typings.vegaTypings.encodeMod.LinearGradient
-import typings.vegaTypings.encodeMod.RadialGradient
+import typings.vegaTypings.typesSpecEncodeMod.LinearGradient
+import typings.vegaTypings.typesSpecEncodeMod.RadialGradient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

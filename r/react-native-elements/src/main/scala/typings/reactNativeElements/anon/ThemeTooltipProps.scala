@@ -6,10 +6,10 @@ import typings.react.mod.ReactElement
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.inputMod.InputProps
+import typings.reactNativeElements.distInputInputMod.InputProps
+import typings.reactNativeElements.distSearchbarSearchBarMod.SearchBarProps
 import typings.reactNativeElements.reactNativeElementsStrings.onLongPress
 import typings.reactNativeElements.reactNativeElementsStrings.onPress
-import typings.reactNativeElements.searchBarMod.SearchBarProps
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

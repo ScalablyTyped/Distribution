@@ -50,22 +50,22 @@ object SceneOptimizerOptions {
     * @param targetFrameRate defines the target frame rate (60 by default)
     * @returns a SceneOptimizerOptions object
     */
-  inline def HighDegradationAllowed(): typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("HighDegradationAllowed")().asInstanceOf[typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions]
-  inline def HighDegradationAllowed(targetFrameRate: Double): typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("HighDegradationAllowed")(targetFrameRate.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions]
+  inline def HighDegradationAllowed(): typings.babylonjs.miscSceneOptimizerMod.SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("HighDegradationAllowed")().asInstanceOf[typings.babylonjs.miscSceneOptimizerMod.SceneOptimizerOptions]
+  inline def HighDegradationAllowed(targetFrameRate: Double): typings.babylonjs.miscSceneOptimizerMod.SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("HighDegradationAllowed")(targetFrameRate.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.miscSceneOptimizerMod.SceneOptimizerOptions]
   
   /**
     * Creates a list of pre-defined optimizations aimed to reduce the visual impact on the scene
     * @param targetFrameRate defines the target frame rate (60 by default)
     * @returns a SceneOptimizerOptions object
     */
-  inline def LowDegradationAllowed(): typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("LowDegradationAllowed")().asInstanceOf[typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions]
-  inline def LowDegradationAllowed(targetFrameRate: Double): typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("LowDegradationAllowed")(targetFrameRate.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions]
+  inline def LowDegradationAllowed(): typings.babylonjs.miscSceneOptimizerMod.SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("LowDegradationAllowed")().asInstanceOf[typings.babylonjs.miscSceneOptimizerMod.SceneOptimizerOptions]
+  inline def LowDegradationAllowed(targetFrameRate: Double): typings.babylonjs.miscSceneOptimizerMod.SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("LowDegradationAllowed")(targetFrameRate.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.miscSceneOptimizerMod.SceneOptimizerOptions]
   
   /**
     * Creates a list of pre-defined optimizations aimed to have a moderate impact on the scene visual
     * @param targetFrameRate defines the target frame rate (60 by default)
     * @returns a SceneOptimizerOptions object
     */
-  inline def ModerateDegradationAllowed(): typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("ModerateDegradationAllowed")().asInstanceOf[typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions]
-  inline def ModerateDegradationAllowed(targetFrameRate: Double): typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("ModerateDegradationAllowed")(targetFrameRate.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.sceneOptimizerMod.SceneOptimizerOptions]
+  inline def ModerateDegradationAllowed(): typings.babylonjs.miscSceneOptimizerMod.SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("ModerateDegradationAllowed")().asInstanceOf[typings.babylonjs.miscSceneOptimizerMod.SceneOptimizerOptions]
+  inline def ModerateDegradationAllowed(targetFrameRate: Double): typings.babylonjs.miscSceneOptimizerMod.SceneOptimizerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("ModerateDegradationAllowed")(targetFrameRate.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.miscSceneOptimizerMod.SceneOptimizerOptions]
 }

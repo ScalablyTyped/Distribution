@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "EnvironmentHelper")
 @js.native
 open class EnvironmentHelper protected ()
-  extends typings.babylonjs.legacyMod.EnvironmentHelper {
+  extends typings.babylonjs.legacyLegacyMod.EnvironmentHelper {
   /**
     * constructor
     * @param options Defines the options we want to customize the helper

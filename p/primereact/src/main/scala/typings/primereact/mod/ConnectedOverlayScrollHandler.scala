@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "ConnectedOverlayScrollHandler")
 @js.native
 open class ConnectedOverlayScrollHandler protected ()
-  extends typings.primereact.utilsMod.ConnectedOverlayScrollHandler {
+  extends typings.primereact.utilsUtilsMod.ConnectedOverlayScrollHandler {
   def this(element: Any) = this()
   def this(element: Any, listener: js.Function0[Unit]) = this()
 }

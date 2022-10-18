@@ -25,6 +25,6 @@ object Production {
     
     inline def setRhses(value: js.Array[RightHandSide | OneOfList]): Self = StObject.set(x, "rhses", value.asInstanceOf[js.Any])
     
-    inline def setRhsesVarargs(value: (RightHandSide | OneOfList)*): Self = StObject.set(x, "rhses", js.Array(value :_*))
+    inline def setRhsesVarargs(value: (RightHandSide | OneOfList)*): Self = StObject.set(x, "rhses", js.Array(value*))
   }
 }

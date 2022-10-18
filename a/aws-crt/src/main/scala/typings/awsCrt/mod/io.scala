@@ -1,10 +1,10 @@
 package typings.awsCrt.mod
 
-import typings.awsCrt.ioMod.SocketDomain
-import typings.awsCrt.ioMod.SocketType
-import typings.awsCrt.nativeIoMod.LogLevel
-import typings.awsCrt.nativeIoMod.Pkcs11Lib.InitializeFinalizeBehavior
-import typings.awsCrt.nativeIoMod.TlsContextOptions.Pkcs11Options
+import typings.awsCrt.distCommonIoMod.SocketDomain
+import typings.awsCrt.distCommonIoMod.SocketType
+import typings.awsCrt.distNativeIoMod.LogLevel
+import typings.awsCrt.distNativeIoMod.Pkcs11Lib.InitializeFinalizeBehavior
+import typings.awsCrt.distNativeIoMod.TlsContextOptions.Pkcs11Options
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,19 +19,19 @@ object io {
   @JSImport("aws-crt", "io.ClientBootstrap")
   @js.native
   open class ClientBootstrap ()
-    extends typings.awsCrt.nativeIoMod.ClientBootstrap
+    extends typings.awsCrt.distNativeIoMod.ClientBootstrap
   
   @JSImport("aws-crt", "io.ClientTlsContext")
   @js.native
   open class ClientTlsContext ()
-    extends typings.awsCrt.nativeIoMod.ClientTlsContext {
-    def this(ctx_opt: typings.awsCrt.nativeIoMod.TlsContextOptions) = this()
+    extends typings.awsCrt.distNativeIoMod.ClientTlsContext {
+    def this(ctx_opt: typings.awsCrt.distNativeIoMod.TlsContextOptions) = this()
   }
   
   @JSImport("aws-crt", "io.InputStream")
   @js.native
   open class InputStream protected ()
-    extends typings.awsCrt.nativeIoMod.InputStream {
+    extends typings.awsCrt.distNativeIoMod.InputStream {
     def this(source: Readable) = this()
   }
   
@@ -40,27 +40,27 @@ object io {
   object LogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.awsCrt.nativeIoMod.LogLevel & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.awsCrt.distNativeIoMod.LogLevel & Double] = js.native
     
-    /* 5 */ val DEBUG: typings.awsCrt.nativeIoMod.LogLevel.DEBUG & Double = js.native
+    /* 5 */ val DEBUG: typings.awsCrt.distNativeIoMod.LogLevel.DEBUG & Double = js.native
     
-    /* 2 */ val ERROR: typings.awsCrt.nativeIoMod.LogLevel.ERROR & Double = js.native
+    /* 2 */ val ERROR: typings.awsCrt.distNativeIoMod.LogLevel.ERROR & Double = js.native
     
-    /* 1 */ val FATAL: typings.awsCrt.nativeIoMod.LogLevel.FATAL & Double = js.native
+    /* 1 */ val FATAL: typings.awsCrt.distNativeIoMod.LogLevel.FATAL & Double = js.native
     
-    /* 4 */ val INFO: typings.awsCrt.nativeIoMod.LogLevel.INFO & Double = js.native
+    /* 4 */ val INFO: typings.awsCrt.distNativeIoMod.LogLevel.INFO & Double = js.native
     
-    /* 0 */ val NONE: typings.awsCrt.nativeIoMod.LogLevel.NONE & Double = js.native
+    /* 0 */ val NONE: typings.awsCrt.distNativeIoMod.LogLevel.NONE & Double = js.native
     
-    /* 6 */ val TRACE: typings.awsCrt.nativeIoMod.LogLevel.TRACE & Double = js.native
+    /* 6 */ val TRACE: typings.awsCrt.distNativeIoMod.LogLevel.TRACE & Double = js.native
     
-    /* 3 */ val WARN: typings.awsCrt.nativeIoMod.LogLevel.WARN & Double = js.native
+    /* 3 */ val WARN: typings.awsCrt.distNativeIoMod.LogLevel.WARN & Double = js.native
   }
   
   @JSImport("aws-crt", "io.Pkcs11Lib")
   @js.native
   open class Pkcs11Lib protected ()
-    extends typings.awsCrt.nativeIoMod.Pkcs11Lib {
+    extends typings.awsCrt.distNativeIoMod.Pkcs11Lib {
     /**
       * @param path - Path to PKCS#11 library.
       * @param behavior - Specifies how `C_Initialize()` and `C_Finalize()`
@@ -79,21 +79,21 @@ object io {
     object InitializeFinalizeBehavior extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.awsCrt.nativeIoMod.Pkcs11Lib.InitializeFinalizeBehavior & Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.awsCrt.distNativeIoMod.Pkcs11Lib.InitializeFinalizeBehavior & Double] = js.native
       
-      /* 0 */ val DEFAULT: typings.awsCrt.nativeIoMod.Pkcs11Lib.InitializeFinalizeBehavior.DEFAULT & Double = js.native
+      /* 0 */ val DEFAULT: typings.awsCrt.distNativeIoMod.Pkcs11Lib.InitializeFinalizeBehavior.DEFAULT & Double = js.native
       
-      /* 1 */ val OMIT: typings.awsCrt.nativeIoMod.Pkcs11Lib.InitializeFinalizeBehavior.OMIT & Double = js.native
+      /* 1 */ val OMIT: typings.awsCrt.distNativeIoMod.Pkcs11Lib.InitializeFinalizeBehavior.OMIT & Double = js.native
       
-      /* 2 */ val STRICT: typings.awsCrt.nativeIoMod.Pkcs11Lib.InitializeFinalizeBehavior.STRICT & Double = js.native
+      /* 2 */ val STRICT: typings.awsCrt.distNativeIoMod.Pkcs11Lib.InitializeFinalizeBehavior.STRICT & Double = js.native
     }
   }
   
   @JSImport("aws-crt", "io.ServerTlsContext")
   @js.native
   open class ServerTlsContext ()
-    extends typings.awsCrt.nativeIoMod.ServerTlsContext {
-    def this(ctx_opt: typings.awsCrt.nativeIoMod.TlsContextOptions) = this()
+    extends typings.awsCrt.distNativeIoMod.ServerTlsContext {
+    def this(ctx_opt: typings.awsCrt.distNativeIoMod.TlsContextOptions) = this()
   }
   
   @JSImport("aws-crt", "io.SocketDomain")
@@ -101,19 +101,19 @@ object io {
   object SocketDomain extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.awsCrt.ioMod.SocketDomain & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.awsCrt.distCommonIoMod.SocketDomain & Double] = js.native
     
-    /* 0 */ val IPV4: typings.awsCrt.ioMod.SocketDomain.IPV4 & Double = js.native
+    /* 0 */ val IPV4: typings.awsCrt.distCommonIoMod.SocketDomain.IPV4 & Double = js.native
     
-    /* 1 */ val IPV6: typings.awsCrt.ioMod.SocketDomain.IPV6 & Double = js.native
+    /* 1 */ val IPV6: typings.awsCrt.distCommonIoMod.SocketDomain.IPV6 & Double = js.native
     
-    /* 2 */ val LOCAL: typings.awsCrt.ioMod.SocketDomain.LOCAL & Double = js.native
+    /* 2 */ val LOCAL: typings.awsCrt.distCommonIoMod.SocketDomain.LOCAL & Double = js.native
   }
   
   @JSImport("aws-crt", "io.SocketOptions")
   @js.native
   open class SocketOptions protected ()
-    extends typings.awsCrt.nativeIoMod.SocketOptions {
+    extends typings.awsCrt.distNativeIoMod.SocketOptions {
     def this(
       `type`: js.UndefOr[SocketType],
       domain: js.UndefOr[SocketDomain],
@@ -130,34 +130,38 @@ object io {
   object SocketType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.awsCrt.ioMod.SocketType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.awsCrt.distCommonIoMod.SocketType & Double] = js.native
     
-    /* 1 */ val DGRAM: typings.awsCrt.ioMod.SocketType.DGRAM & Double = js.native
+    /* 1 */ val DGRAM: typings.awsCrt.distCommonIoMod.SocketType.DGRAM & Double = js.native
     
-    /* 0 */ val STREAM: typings.awsCrt.ioMod.SocketType.STREAM & Double = js.native
+    /* 0 */ val STREAM: typings.awsCrt.distCommonIoMod.SocketType.STREAM & Double = js.native
   }
   
   @JSImport("aws-crt", "io.TlsConnectionOptions")
   @js.native
   open class TlsConnectionOptions protected ()
-    extends typings.awsCrt.nativeIoMod.TlsConnectionOptions {
-    def this(tls_ctx: typings.awsCrt.nativeIoMod.TlsContext) = this()
-    def this(tls_ctx: typings.awsCrt.nativeIoMod.TlsContext, server_name: String) = this()
-    def this(tls_ctx: typings.awsCrt.nativeIoMod.TlsContext, server_name: String, alpn_list: js.Array[String]) = this()
-    def this(tls_ctx: typings.awsCrt.nativeIoMod.TlsContext, server_name: Unit, alpn_list: js.Array[String]) = this()
+    extends typings.awsCrt.distNativeIoMod.TlsConnectionOptions {
+    def this(tls_ctx: typings.awsCrt.distNativeIoMod.TlsContext) = this()
+    def this(tls_ctx: typings.awsCrt.distNativeIoMod.TlsContext, server_name: String) = this()
+    def this(
+      tls_ctx: typings.awsCrt.distNativeIoMod.TlsContext,
+      server_name: String,
+      alpn_list: js.Array[String]
+    ) = this()
+    def this(tls_ctx: typings.awsCrt.distNativeIoMod.TlsContext, server_name: Unit, alpn_list: js.Array[String]) = this()
   }
   
-  @JSImport("aws-crt", "io.TlsContext")
+  /* note: abstract class */ @JSImport("aws-crt", "io.TlsContext")
   @js.native
-  abstract class TlsContext protected ()
-    extends typings.awsCrt.nativeIoMod.TlsContext {
-    def this(ctx_opt: typings.awsCrt.nativeIoMod.TlsContextOptions) = this()
+  open class TlsContext protected ()
+    extends typings.awsCrt.distNativeIoMod.TlsContext {
+    def this(ctx_opt: typings.awsCrt.distNativeIoMod.TlsContextOptions) = this()
   }
   
   @JSImport("aws-crt", "io.TlsContextOptions")
   @js.native
   open class TlsContextOptions ()
-    extends typings.awsCrt.nativeIoMod.TlsContextOptions
+    extends typings.awsCrt.distNativeIoMod.TlsContextOptions
   /* static members */
   object TlsContextOptions {
     
@@ -173,7 +177,7 @@ object io {
       *
       * @returns newly configured TlsContextOptions object
       */
-    inline def create_client_with_mtls(certificate: String, private_key: String): typings.awsCrt.nativeIoMod.TlsContextOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create_client_with_mtls")(certificate.asInstanceOf[js.Any], private_key.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.nativeIoMod.TlsContextOptions]
+    inline def create_client_with_mtls(certificate: String, private_key: String): typings.awsCrt.distNativeIoMod.TlsContextOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create_client_with_mtls")(certificate.asInstanceOf[js.Any], private_key.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.distNativeIoMod.TlsContextOptions]
     
     /**
       * Create options configured for mutual TLS in client mode,
@@ -183,7 +187,7 @@ object io {
       *
       * @returns newly configured TlsContextOptions object
       */
-    inline def create_client_with_mtls_from_path(certificate_filepath: String, private_key_filepath: String): typings.awsCrt.nativeIoMod.TlsContextOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create_client_with_mtls_from_path")(certificate_filepath.asInstanceOf[js.Any], private_key_filepath.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.nativeIoMod.TlsContextOptions]
+    inline def create_client_with_mtls_from_path(certificate_filepath: String, private_key_filepath: String): typings.awsCrt.distNativeIoMod.TlsContextOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create_client_with_mtls_from_path")(certificate_filepath.asInstanceOf[js.Any], private_key_filepath.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.distNativeIoMod.TlsContextOptions]
     
     /**
       * Create options configured for mutual TLS in client mode,
@@ -195,7 +199,7 @@ object io {
       *
       * @returns newly configured TlsContextOptions object
       */
-    inline def create_client_with_mtls_pkcs11(options: Pkcs11Options): typings.awsCrt.nativeIoMod.TlsContextOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create_client_with_mtls_pkcs11")(options.asInstanceOf[js.Any]).asInstanceOf[typings.awsCrt.nativeIoMod.TlsContextOptions]
+    inline def create_client_with_mtls_pkcs11(options: Pkcs11Options): typings.awsCrt.distNativeIoMod.TlsContextOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create_client_with_mtls_pkcs11")(options.asInstanceOf[js.Any]).asInstanceOf[typings.awsCrt.distNativeIoMod.TlsContextOptions]
     
     /**
       * Create options for mutual TLS in client mode,
@@ -205,12 +209,12 @@ object io {
       *
       * @returns newly configured TlsContextOptions object
       */
-    inline def create_client_with_mtls_pkcs12_from_path(pkcs12_filepath: String, pkcs12_password: String): typings.awsCrt.nativeIoMod.TlsContextOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create_client_with_mtls_pkcs12_from_path")(pkcs12_filepath.asInstanceOf[js.Any], pkcs12_password.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.nativeIoMod.TlsContextOptions]
+    inline def create_client_with_mtls_pkcs12_from_path(pkcs12_filepath: String, pkcs12_password: String): typings.awsCrt.distNativeIoMod.TlsContextOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create_client_with_mtls_pkcs12_from_path")(pkcs12_filepath.asInstanceOf[js.Any], pkcs12_password.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.distNativeIoMod.TlsContextOptions]
     
     /**
       * @deprecated Renamed [[create_client_with_mtls_pkcs12_from_path]]
       */
-    inline def create_client_with_mtls_pkcs_from_path(pkcs12_filepath: String, pkcs12_password: String): typings.awsCrt.nativeIoMod.TlsContextOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create_client_with_mtls_pkcs_from_path")(pkcs12_filepath.asInstanceOf[js.Any], pkcs12_password.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.nativeIoMod.TlsContextOptions]
+    inline def create_client_with_mtls_pkcs_from_path(pkcs12_filepath: String, pkcs12_password: String): typings.awsCrt.distNativeIoMod.TlsContextOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create_client_with_mtls_pkcs_from_path")(pkcs12_filepath.asInstanceOf[js.Any], pkcs12_password.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.distNativeIoMod.TlsContextOptions]
     
     /**
       * Create options configured for mutual TLS in client mode,
@@ -222,7 +226,7 @@ object io {
       *      The path must use backslashes and end with the certificate's thumbprint.
       *      Example: `CurrentUser\MY\A11F8A9B5DF5B98BA3508FBCA575D09570E0D2C6`
       */
-    inline def create_client_with_mtls_windows_cert_store_path(certificate_path: String): typings.awsCrt.nativeIoMod.TlsContextOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create_client_with_mtls_windows_cert_store_path")(certificate_path.asInstanceOf[js.Any]).asInstanceOf[typings.awsCrt.nativeIoMod.TlsContextOptions]
+    inline def create_client_with_mtls_windows_cert_store_path(certificate_path: String): typings.awsCrt.distNativeIoMod.TlsContextOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create_client_with_mtls_windows_cert_store_path")(certificate_path.asInstanceOf[js.Any]).asInstanceOf[typings.awsCrt.distNativeIoMod.TlsContextOptions]
     
     /**
       * Creates TLS context with peer verification disabled, along with a certificate and private key
@@ -231,7 +235,7 @@ object io {
       *
       * @returns newly configured TlsContextOptions object
       */
-    inline def create_server_with_mtls_from_path(certificate_filepath: String, private_key_filepath: String): typings.awsCrt.nativeIoMod.TlsContextOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create_server_with_mtls_from_path")(certificate_filepath.asInstanceOf[js.Any], private_key_filepath.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.nativeIoMod.TlsContextOptions]
+    inline def create_server_with_mtls_from_path(certificate_filepath: String, private_key_filepath: String): typings.awsCrt.distNativeIoMod.TlsContextOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create_server_with_mtls_from_path")(certificate_filepath.asInstanceOf[js.Any], private_key_filepath.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.distNativeIoMod.TlsContextOptions]
     
     /**
       * Creates TLS context with peer verification disabled, along with a certificate and private key
@@ -241,7 +245,7 @@ object io {
       *
       * @returns newly configured TlsContextOptions object
       */
-    inline def create_server_with_mtls_pkcs_from_path(pkcs12_filepath: String, pkcs12_password: String): typings.awsCrt.nativeIoMod.TlsContextOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create_server_with_mtls_pkcs_from_path")(pkcs12_filepath.asInstanceOf[js.Any], pkcs12_password.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.nativeIoMod.TlsContextOptions]
+    inline def create_server_with_mtls_pkcs_from_path(pkcs12_filepath: String, pkcs12_password: String): typings.awsCrt.distNativeIoMod.TlsContextOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create_server_with_mtls_pkcs_from_path")(pkcs12_filepath.asInstanceOf[js.Any], pkcs12_password.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.distNativeIoMod.TlsContextOptions]
   }
   
   @JSImport("aws-crt", "io.TlsVersion")
@@ -249,19 +253,19 @@ object io {
   object TlsVersion extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.awsCrt.ioMod.TlsVersion & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.awsCrt.distCommonIoMod.TlsVersion & Double] = js.native
     
-    /* 128 */ val Default: typings.awsCrt.ioMod.TlsVersion.Default & Double = js.native
+    /* 128 */ val Default: typings.awsCrt.distCommonIoMod.TlsVersion.Default & Double = js.native
     
-    /* 0 */ val SSLv3: typings.awsCrt.ioMod.TlsVersion.SSLv3 & Double = js.native
+    /* 0 */ val SSLv3: typings.awsCrt.distCommonIoMod.TlsVersion.SSLv3 & Double = js.native
     
-    /* 1 */ val TLSv1: typings.awsCrt.ioMod.TlsVersion.TLSv1 & Double = js.native
+    /* 1 */ val TLSv1: typings.awsCrt.distCommonIoMod.TlsVersion.TLSv1 & Double = js.native
     
-    /* 2 */ val TLSv1_1: typings.awsCrt.ioMod.TlsVersion.TLSv1_1 & Double = js.native
+    /* 2 */ val TLSv1_1: typings.awsCrt.distCommonIoMod.TlsVersion.TLSv1_1 & Double = js.native
     
-    /* 3 */ val TLSv1_2: typings.awsCrt.ioMod.TlsVersion.TLSv1_2 & Double = js.native
+    /* 3 */ val TLSv1_2: typings.awsCrt.distCommonIoMod.TlsVersion.TLSv1_2 & Double = js.native
     
-    /* 4 */ val TLSv1_3: typings.awsCrt.ioMod.TlsVersion.TLSv1_3 & Double = js.native
+    /* 4 */ val TLSv1_3: typings.awsCrt.distCommonIoMod.TlsVersion.TLSv1_3 & Double = js.native
   }
   
   inline def enableLogging(level: LogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable_logging")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]

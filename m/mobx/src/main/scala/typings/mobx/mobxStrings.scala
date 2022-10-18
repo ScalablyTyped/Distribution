@@ -155,10 +155,6 @@ object mobxStrings {
   inline def `9`: `9` = "9".asInstanceOf[`9`]
   
   @js.native
-  sealed trait AnnotationsMap extends StObject
-  inline def AnnotationsMap: AnnotationsMap = "AnnotationsMap".asInstanceOf[AnnotationsMap]
-  
-  @js.native
   sealed trait `Expecting some object` extends StObject
   inline def `Expecting some object`: `Expecting some object` = ("Expecting some object").asInstanceOf[`Expecting some object`]
   
@@ -205,10 +201,6 @@ object mobxStrings {
   @js.native
   sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
-  
-  @js.native
-  sealed trait getOwnPropertyDescriptors extends StObject
-  inline def getOwnPropertyDescriptors: getOwnPropertyDescriptors = "getOwnPropertyDescriptors".asInstanceOf[getOwnPropertyDescriptors]
   
   @js.native
   sealed trait ifavailable extends StObject

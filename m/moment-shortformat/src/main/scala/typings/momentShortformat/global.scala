@@ -283,7 +283,7 @@ object global {
     inline def weekdaysShort(localeSorted: Boolean, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* augmented module */
-    object mod {
+    object momentMod {
       
       @js.native
       trait Moment extends StObject {

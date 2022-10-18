@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,56 +18,56 @@ open class AnaglyphPostProcess protected ()
     * @param engine defines hosting engine
     * @param reusable defines if the postprocess will be reused multiple times per frame
     */
-  def this(name: String, options: Double, rigCameras: js.Array[typings.babylonjs.cameraMod.Camera]) = this()
+  def this(name: String, options: Double, rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera]
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
   def this(
     name: String,
     options: Double,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double
   ) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double
   ) = this()
   def this(
     name: String,
     options: Double,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine
+    engine: typings.babylonjs.enginesEngineMod.Engine
   ) = this()
   def this(
     name: String,
     options: Double,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine
+    engine: typings.babylonjs.enginesEngineMod.Engine
   ) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine
+    engine: typings.babylonjs.enginesEngineMod.Engine
   ) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine
+    engine: typings.babylonjs.enginesEngineMod.Engine
   ) = this()
   def this(
     name: String,
     options: Double,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
     engine: Unit,
     reusable: Boolean
@@ -75,15 +75,15 @@ open class AnaglyphPostProcess protected ()
   def this(
     name: String,
     options: Double,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
     options: Double,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
     engine: Unit,
     reusable: Boolean
@@ -91,15 +91,15 @@ open class AnaglyphPostProcess protected ()
   def this(
     name: String,
     options: Double,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
     engine: Unit,
     reusable: Boolean
@@ -107,15 +107,15 @@ open class AnaglyphPostProcess protected ()
   def this(
     name: String,
     options: PostProcessOptions,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
     engine: Unit,
     reusable: Boolean
@@ -123,9 +123,9 @@ open class AnaglyphPostProcess protected ()
   def this(
     name: String,
     options: PostProcessOptions,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     reusable: Boolean
   ) = this()
 }

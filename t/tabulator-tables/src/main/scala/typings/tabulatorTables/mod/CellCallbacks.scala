@@ -30,6 +30,8 @@ trait CellCallbacks extends StObject {
   /** callback for when a cell in this column is being edited by the user. */
   var cellEditing: js.UndefOr[CellEditEventCallback] = js.undefined
   
+  var cellMouseDown: js.UndefOr[CellEventCallback] = js.undefined
+  
   /** callback for when the mouse pointer enters a cell */
   var cellMouseEnter: js.UndefOr[CellEventCallback] = js.undefined
   
@@ -44,6 +46,8 @@ trait CellCallbacks extends StObject {
   
   /** callback for when the mouse pointer enters a cell or one of its child elements */
   var cellMouseOver: js.UndefOr[CellEventCallback] = js.undefined
+  
+  var cellMouseUp: js.UndefOr[CellEventCallback] = js.undefined
   
   /** callback for when user taps on a cell in this column, triggered in touch displays. */
   var cellTap: js.UndefOr[CellEventCallback] = js.undefined
@@ -88,6 +92,10 @@ object CellCallbacks {
     
     inline def setCellEditingUndefined: Self = StObject.set(x, "cellEditing", js.undefined)
     
+    inline def setCellMouseDown(value: (/* e */ UIEvent, /* cell */ CellComponent) => Unit): Self = StObject.set(x, "cellMouseDown", js.Any.fromFunction2(value))
+    
+    inline def setCellMouseDownUndefined: Self = StObject.set(x, "cellMouseDown", js.undefined)
+    
     inline def setCellMouseEnter(value: (/* e */ UIEvent, /* cell */ CellComponent) => Unit): Self = StObject.set(x, "cellMouseEnter", js.Any.fromFunction2(value))
     
     inline def setCellMouseEnterUndefined: Self = StObject.set(x, "cellMouseEnter", js.undefined)
@@ -107,6 +115,10 @@ object CellCallbacks {
     inline def setCellMouseOver(value: (/* e */ UIEvent, /* cell */ CellComponent) => Unit): Self = StObject.set(x, "cellMouseOver", js.Any.fromFunction2(value))
     
     inline def setCellMouseOverUndefined: Self = StObject.set(x, "cellMouseOver", js.undefined)
+    
+    inline def setCellMouseUp(value: (/* e */ UIEvent, /* cell */ CellComponent) => Unit): Self = StObject.set(x, "cellMouseUp", js.Any.fromFunction2(value))
+    
+    inline def setCellMouseUpUndefined: Self = StObject.set(x, "cellMouseUp", js.undefined)
     
     inline def setCellTap(value: (/* e */ UIEvent, /* cell */ CellComponent) => Unit): Self = StObject.set(x, "cellTap", js.Any.fromFunction2(value))
     

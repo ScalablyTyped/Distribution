@@ -9,13 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object NodeMaterialBlockTargets extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.babylonjs.materialsNodeEnumsNodeMaterialBlockTargetsMod.NodeMaterialBlockTargets & Double
+  ] = js.native
   
-  /* 2 */ val Fragment: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets.Fragment & Double = js.native
+  /* 2 */ val Fragment: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockTargetsMod.NodeMaterialBlockTargets.Fragment & Double = js.native
   
-  /* 4 */ val Neutral: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets.Neutral & Double = js.native
+  /* 4 */ val Neutral: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockTargetsMod.NodeMaterialBlockTargets.Neutral & Double = js.native
   
-  /* 1 */ val Vertex: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets.Vertex & Double = js.native
+  /* 1 */ val Vertex: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockTargetsMod.NodeMaterialBlockTargets.Vertex & Double = js.native
   
-  /* 3 */ val VertexAndFragment: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets.VertexAndFragment & Double = js.native
+  /* 3 */ val VertexAndFragment: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockTargetsMod.NodeMaterialBlockTargets.VertexAndFragment & Double = js.native
 }

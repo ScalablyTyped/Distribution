@@ -3,7 +3,7 @@ package typings.rollupPluginTypescript2
 import org.scalablytyped.runtime.Shortcut
 import typings.rollup.mod.PluginImpl
 import typings.rollupPluginTypescript2.anon.TypeoftsTypes
-import typings.rollupPluginTypescript2.ioptionsMod.TransformerFactoryCreator
+import typings.rollupPluginTypescript2.distIoptionsMod.TransformerFactoryCreator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

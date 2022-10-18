@@ -1,5 +1,6 @@
 package typings.gulpPostcss
 
+import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
-  inline def apply(callback: js.Function1[/* file */ File, typings.gulpPostcss.anon.Options]): Any = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def apply(plugins: js.Array[Any]): Any = ^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def apply(plugins: js.Array[Any], options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def apply(plugins: Unit, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(callback: js.Function1[/* file */ File, typings.gulpPostcss.anon.Options]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(plugins: js.Array[Any]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(plugins: js.Array[Any], options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(plugins: Unit, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-postcss", JSImport.Namespace)
   @js.native

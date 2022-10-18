@@ -1,6 +1,5 @@
 package typings.formol
 
-import org.scalablytyped.runtime.TopLevel
 import typings.formol.anon.Dictk
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
@@ -455,9 +454,7 @@ object mod {
     var validator: js.UndefOr[
         js.Function1[
           /* v */ V, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]:? string | null}
-      */ typings.formol.formolStrings.FormolProps & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]:? string | null} */ js.Any
         ]
       ] = js.undefined
   }
@@ -525,9 +522,7 @@ object mod {
       inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
       
       inline def setValidator(
-        value: /* v */ V => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ K in keyof V ]:? string | null}
-        */ typings.formol.formolStrings.FormolProps & TopLevel[Any]
+        value: /* v */ V => /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]:? string | null} */ js.Any
       ): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
       
       inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)

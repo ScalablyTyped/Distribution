@@ -1,6 +1,6 @@
 package typings.jsTokens.anon
 
-import typings.jsTokens.jsTokensStrings.MultiLineComment
+import typings.jsTokens.jsTokensStrings.TemplateTail
 import typings.jsTokens.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait ClosedBoolean
   
   var closed: Boolean
   
-  var `type`: MultiLineComment
+  var `type`: TemplateTail
   
   var value: String
 }
@@ -20,7 +20,7 @@ object ClosedBoolean {
   
   inline def apply(closed: Boolean, value: String): ClosedBoolean = {
     val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("MultiLineComment")
+    __obj.updateDynamic("type")("TemplateTail")
     __obj.asInstanceOf[ClosedBoolean]
   }
   
@@ -28,7 +28,7 @@ object ClosedBoolean {
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
-    inline def setType(value: MultiLineComment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TemplateTail): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

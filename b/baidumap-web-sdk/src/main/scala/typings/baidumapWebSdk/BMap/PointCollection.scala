@@ -1,6 +1,5 @@
 package typings.baidumapWebSdk.BMap
 
-import typings.baidumapWebSdk.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +10,11 @@ trait PointCollection
   
   def clear(): Unit
   
-  def onclick(event: Type): Unit
+  def onclick(event: typings.baidumapWebSdk.anon.Point): Unit
   
-  def onmouseout(event: Type): Unit
+  def onmouseout(event: typings.baidumapWebSdk.anon.Point): Unit
   
-  def onmouseover(event: Type): Unit
+  def onmouseover(event: typings.baidumapWebSdk.anon.Point): Unit
   
   def setPoints(points: js.Array[Point]): Unit
   
@@ -25,9 +24,9 @@ object PointCollection {
   
   inline def apply(
     clear: () => Unit,
-    onclick: Type => Unit,
-    onmouseout: Type => Unit,
-    onmouseover: Type => Unit,
+    onclick: typings.baidumapWebSdk.anon.Point => Unit,
+    onmouseout: typings.baidumapWebSdk.anon.Point => Unit,
+    onmouseover: typings.baidumapWebSdk.anon.Point => Unit,
     setPoints: js.Array[Point] => Unit,
     setStyles: PointCollectionOption => Unit
   ): PointCollection = {
@@ -39,11 +38,11 @@ object PointCollection {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    inline def setOnclick(value: Type => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
+    inline def setOnclick(value: typings.baidumapWebSdk.anon.Point => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
-    inline def setOnmouseout(value: Type => Unit): Self = StObject.set(x, "onmouseout", js.Any.fromFunction1(value))
+    inline def setOnmouseout(value: typings.baidumapWebSdk.anon.Point => Unit): Self = StObject.set(x, "onmouseout", js.Any.fromFunction1(value))
     
-    inline def setOnmouseover(value: Type => Unit): Self = StObject.set(x, "onmouseover", js.Any.fromFunction1(value))
+    inline def setOnmouseover(value: typings.baidumapWebSdk.anon.Point => Unit): Self = StObject.set(x, "onmouseover", js.Any.fromFunction1(value))
     
     inline def setSetPoints(value: js.Array[Point] => Unit): Self = StObject.set(x, "setPoints", js.Any.fromFunction1(value))
     

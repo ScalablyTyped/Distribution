@@ -1,7 +1,7 @@
 package typings.forkTsCheckerWebpackPlugin
 
-import typings.forkTsCheckerWebpackPlugin.formatterOptionsMod.FormatterType
-import typings.forkTsCheckerWebpackPlugin.issueSeverityMod.IssueSeverity
+import typings.forkTsCheckerWebpackPlugin.libFormatterFormatterOptionsMod.FormatterType
+import typings.forkTsCheckerWebpackPlugin.libIssueIssueSeverityMod.IssueSeverity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -5,11 +5,11 @@ import typings.jupyterlabApputils.mod.VDomModel
 import typings.jupyterlabApputils.mod.VDomRenderer
 import typings.jupyterlabLauncher.mod.ILauncher.IItemOptions
 import typings.jupyterlabLauncher.mod.ILauncher.IOptions
-import typings.jupyterlabTranslation.tokensMod.ITranslator
-import typings.luminoAlgorithm.iterMod.IIterator
+import typings.jupyterlabTranslation.libTokensMod.ITranslator
+import typings.luminoAlgorithm.typesIterMod.IIterator
 import typings.luminoCommands.mod.CommandRegistry
-import typings.luminoCoreutils.jsonMod.ReadonlyJSONObject
 import typings.luminoCoreutils.mod.Token
+import typings.luminoCoreutils.typesJsonMod.ReadonlyJSONObject
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
@@ -267,7 +267,6 @@ object mod {
       * It is undefined behavior to use any functionality of the object
       * after it has been disposed unless otherwise explicitly noted.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def dispose(): Unit = js.native
     

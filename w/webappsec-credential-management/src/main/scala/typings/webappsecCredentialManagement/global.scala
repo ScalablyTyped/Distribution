@@ -154,9 +154,9 @@ object global {
     * store.
     */
   // tslint:disable-next-line no-empty-interface
-  @JSGlobal("SiteBoundCredential")
+  /* note: abstract class */ @JSGlobal("SiteBoundCredential")
   @js.native
-  abstract class SiteBoundCredential ()
+  open class SiteBoundCredential ()
     extends StObject
        with typings.webappsecCredentialManagement.SiteBoundCredential {
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@uirouter/core", "BrowserLocationConfig")
 @js.native
 open class BrowserLocationConfig ()
-  extends typings.uirouterCore.vanillaMod.BrowserLocationConfig {
+  extends typings.uirouterCore.libVanillaMod.BrowserLocationConfig {
   def this(router: Any) = this()
   def this(router: Any, _isHtml5: Boolean) = this()
   def this(router: Unit, _isHtml5: Boolean) = this()

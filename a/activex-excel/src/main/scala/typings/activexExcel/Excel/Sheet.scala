@@ -9,6 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexExcel.Excel.Chart
   - typings.activexExcel.Excel.DialogSheet
 */
-trait Sheet
-  extends StObject
-     with AddSheetResult[Any]
+trait Sheet extends StObject

@@ -26,10 +26,6 @@ object onfidoSdkUiStrings {
   inline def EU: EU = "EU".asInstanceOf[EU]
   
   @js.native
-  sealed trait StepConfigMap extends StObject
-  inline def StepConfigMap: StepConfigMap = "StepConfigMap".asInstanceOf[StepConfigMap]
-  
-  @js.native
   sealed trait US
     extends StObject
        with ServerRegions

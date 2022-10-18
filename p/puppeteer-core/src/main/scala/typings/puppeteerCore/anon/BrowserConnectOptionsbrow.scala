@@ -1,9 +1,10 @@
 package typings.puppeteerCore.anon
 
 import typings.devtoolsProtocol.mod.Protocol.Target.TargetInfo
-import typings.puppeteerCore.browserMod.IsPageTargetCallback
-import typings.puppeteerCore.browserMod.TargetFilterCallback
-import typings.puppeteerCore.connectionTransportMod.ConnectionTransport
+import typings.puppeteerCore.libCjsPuppeteerApiBrowserMod.IsPageTargetCallback
+import typings.puppeteerCore.libCjsPuppeteerApiBrowserMod.TargetFilterCallback
+import typings.puppeteerCore.libCjsPuppeteerCommonConnectionTransportMod.ConnectionTransport
+import typings.puppeteerCore.libCjsPuppeteerCommonPuppeteerViewportMod.Viewport
 import typings.puppeteerCore.puppeteerCoreStrings.cdp
 import typings.puppeteerCore.puppeteerCoreStrings.webDriverBiDi
 import org.scalablytyped.runtime.StObject
@@ -25,7 +26,7 @@ trait BrowserConnectOptionsbrow extends StObject {
   /**
     * Sets the viewport for each page.
     */
-  var defaultViewport: js.UndefOr[typings.puppeteerCore.puppeteerViewportMod.Viewport | Null] = js.undefined
+  var defaultViewport: js.UndefOr[Viewport | Null] = js.undefined
   
   /**
     * Whether to ignore HTTPS errors during navigation.
@@ -69,7 +70,7 @@ object BrowserConnectOptionsbrow {
     
     inline def setBrowserWSEndpointUndefined: Self = StObject.set(x, "browserWSEndpoint", js.undefined)
     
-    inline def setDefaultViewport(value: typings.puppeteerCore.puppeteerViewportMod.Viewport): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
+    inline def setDefaultViewport(value: Viewport): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
     
     inline def setDefaultViewportNull: Self = StObject.set(x, "defaultViewport", null)
     

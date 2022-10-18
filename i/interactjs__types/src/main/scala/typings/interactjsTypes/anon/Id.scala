@@ -1,6 +1,6 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.scopeMod.ListenerMap
+import typings.interactjsTypes.coreScopeMod.ListenerMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

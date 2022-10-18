@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,45 +72,45 @@ object mod {
   ]) & WithStop]
   inline def apply(
     server: typings.node.httpsMod.Server[
-      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
       Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ]
     ]
   ): (typings.node.httpsMod.Server[
-    Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+    Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
     Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-      typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
     ]
   ]) & WithStop = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[(typings.node.httpsMod.Server[
-    Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+    Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
     Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-      typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
     ]
   ]) & WithStop]
   inline def apply(
     server: typings.node.httpsMod.Server[
-      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
       Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ]
     ],
     grace: Double
   ): (typings.node.httpsMod.Server[
-    Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+    Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
     Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-      typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
     ]
   ]) & WithStop = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], grace.asInstanceOf[js.Any])).asInstanceOf[(typings.node.httpsMod.Server[
-    Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+    Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
     Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-      typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
     ]
   ]) & WithStop]
   

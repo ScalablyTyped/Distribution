@@ -33,9 +33,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("node-ral", "Balance")
+  /* note: abstract class */ @JSImport("node-ral", "Balance")
   @js.native
-  abstract class Balance () extends StObject {
+  open class Balance () extends StObject {
     
     def fetchServer(balanceContext: BalanceContextClass, conf: Any, prevBackend: Server): Server = js.native
     
@@ -107,9 +107,9 @@ object mod {
   @js.native
   val Config: typings.nodeRal.mod.Config = js.native
   
-  @JSImport("node-ral", "ConfigNormalizer")
+  /* note: abstract class */ @JSImport("node-ral", "ConfigNormalizer")
   @js.native
-  abstract class ConfigNormalizer () extends RalModule {
+  open class ConfigNormalizer () extends RalModule {
     
     def needUpdate(): Boolean = js.native
     def needUpdate(config: Any): Boolean = js.native
@@ -117,9 +117,9 @@ object mod {
     def normalizeConfig(config: Any): typings.nodeRal.mod.Config = js.native
   }
   
-  @JSImport("node-ral", "Converter")
+  /* note: abstract class */ @JSImport("node-ral", "Converter")
   @js.native
-  abstract class Converter () extends RalModule {
+  open class Converter () extends RalModule {
     
     var isStreamify: `false` = js.native
     
@@ -179,9 +179,9 @@ object mod {
     Unit
   ]]
   
-  @JSImport("node-ral", "Protocol")
+  /* note: abstract class */ @JSImport("node-ral", "Protocol")
   @js.native
-  abstract class Protocol () extends RalModule {
+  open class Protocol () extends RalModule {
     
     def _request(config: Any, callback: js.Function1[/* repeated */ Any, Any]): Any = js.native
     
@@ -259,9 +259,9 @@ object mod {
   inline def RALPromise[T](name: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("RALPromise")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   inline def RALPromise[T](name: String, options: js.Object): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("RALPromise")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("node-ral", "RalModule")
+  /* note: abstract class */ @JSImport("node-ral", "RalModule")
   @js.native
-  abstract class RalModule () extends StObject {
+  open class RalModule () extends StObject {
     
     def getCategory(): String = js.native
     

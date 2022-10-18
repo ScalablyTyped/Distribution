@@ -1,7 +1,7 @@
 package typings.testcafeSafeStorage
 
-import typings.testcafeSafeStorage.errorsMod.CODES
-import typings.testcafeSafeStorage.errorsMod.RAU
+import typings.testcafeSafeStorage.libErrorsMod.CODES
+import typings.testcafeSafeStorage.libErrorsMod.RAU
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,16 +12,16 @@ object mod {
   @js.native
   open class default[T] () extends SafeStorage[T] {
     def this(validator: Validator[T]) = this()
-    def this(validator: Unit, cryptoContext: typings.testcafeSafeStorage.cryptoMod.default) = this()
-    def this(validator: Validator[T], cryptoContext: typings.testcafeSafeStorage.cryptoMod.default) = this()
+    def this(validator: Unit, cryptoContext: typings.testcafeSafeStorage.libCryptoMod.default) = this()
+    def this(validator: Validator[T], cryptoContext: typings.testcafeSafeStorage.libCryptoMod.default) = this()
   }
   
   @JSImport("testcafe-safe-storage", "SafeStorage")
   @js.native
   open class SafeStorage[T] () extends StObject {
     def this(validator: Validator[T]) = this()
-    def this(validator: Unit, cryptoContext: typings.testcafeSafeStorage.cryptoMod.default) = this()
-    def this(validator: Validator[T], cryptoContext: typings.testcafeSafeStorage.cryptoMod.default) = this()
+    def this(validator: Unit, cryptoContext: typings.testcafeSafeStorage.libCryptoMod.default) = this()
+    def this(validator: Validator[T], cryptoContext: typings.testcafeSafeStorage.libCryptoMod.default) = this()
     
     /* private */ var _decrypt: Any = js.native
     
@@ -48,29 +48,29 @@ object mod {
     object CODES extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.testcafeSafeStorage.errorsMod.CODES & Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.testcafeSafeStorage.libErrorsMod.CODES & Double] = js.native
       
-      /* 1 */ val E001: typings.testcafeSafeStorage.errorsMod.CODES.E001 & Double = js.native
+      /* 1 */ val E001: typings.testcafeSafeStorage.libErrorsMod.CODES.E001 & Double = js.native
       
-      /* 2 */ val E002: typings.testcafeSafeStorage.errorsMod.CODES.E002 & Double = js.native
+      /* 2 */ val E002: typings.testcafeSafeStorage.libErrorsMod.CODES.E002 & Double = js.native
       
-      /* 3 */ val E003: typings.testcafeSafeStorage.errorsMod.CODES.E003 & Double = js.native
+      /* 3 */ val E003: typings.testcafeSafeStorage.libErrorsMod.CODES.E003 & Double = js.native
     }
     
     @JSImport("testcafe-safe-storage", "errors.LoadedDataInvalid")
     @js.native
     open class LoadedDataInvalid[T /* <: RAU */] ()
-      extends typings.testcafeSafeStorage.errorsMod.LoadedDataInvalid[T]
+      extends typings.testcafeSafeStorage.libErrorsMod.LoadedDataInvalid[T]
     
     @JSImport("testcafe-safe-storage", "errors.MultipleSavedDataDetected")
     @js.native
     open class MultipleSavedDataDetected[T /* <: RAU */] ()
-      extends typings.testcafeSafeStorage.errorsMod.MultipleSavedDataDetected[T]
+      extends typings.testcafeSafeStorage.libErrorsMod.MultipleSavedDataDetected[T]
     
     @JSImport("testcafe-safe-storage", "errors.SavedDataNotDetected")
     @js.native
     open class SavedDataNotDetected[T /* <: RAU */] ()
-      extends typings.testcafeSafeStorage.errorsMod.SavedDataNotDetected[T]
+      extends typings.testcafeSafeStorage.libErrorsMod.SavedDataNotDetected[T]
   }
   
   type ErrorSuppressor = CODES | js.Function

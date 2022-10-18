@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a set of printing instructions that you want to run on the journal printer station. */
-@JSGlobal("Windows.Devices.PointOfService.JournalPrintJob")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.JournalPrintJob")
 @js.native
-abstract class JournalPrintJob ()
+open class JournalPrintJob ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.JournalPrintJob

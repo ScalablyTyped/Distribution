@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Inputs extends StObject {
   
-  var inputs: Input10
+  var inputs: Unknown0
   
-  var outputs: Identity0
+  var outputs: Output0
 }
 object Inputs {
   
-  inline def apply(inputs: Input10, outputs: Identity0): Inputs = {
+  inline def apply(inputs: Unknown0, outputs: Output0): Inputs = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inputs]
   }
   
   extension [Self <: Inputs](x: Self) {
     
-    inline def setInputs(value: Input10): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: Unknown0): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    inline def setOutputs(value: Identity0): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: Output0): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
   }
 }

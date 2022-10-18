@@ -1,6 +1,6 @@
 package typings.xsdSchemaValidator
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.xsdSchemaValidator.anon.File
 import typings.xsdSchemaValidator.anon.Messages
 import org.scalablytyped.runtime.StObject
@@ -19,7 +19,7 @@ object mod {
     callback: js.Function2[/* err */ js.Error, /* result */ Messages, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateXML")(xml.asInstanceOf[js.Any], pathToXsd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def validateXML(
-    xml: ReadableStream[Any],
+    xml: ReadableStream,
     pathToXsd: String,
     callback: js.Function2[/* err */ js.Error, /* result */ Messages, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateXML")(xml.asInstanceOf[js.Any], pathToXsd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

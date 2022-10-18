@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "ContentSwitcher")
 @js.native
 open class ContentSwitcher protected ()
-  extends typings.carbonComponents.componentsMod.ContentSwitcher {
+  extends typings.carbonComponents.globalsJsComponentsMod.ContentSwitcher {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialContentSwitcherOpt) = this()
 }

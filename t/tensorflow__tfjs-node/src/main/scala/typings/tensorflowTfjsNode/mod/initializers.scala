@@ -1,15 +1,15 @@
 package typings.tensorflowTfjsNode.mod
 
-import typings.tensorflowTfjsLayers.initializersMod.ConstantArgs
-import typings.tensorflowTfjsLayers.initializersMod.IdentityArgs
-import typings.tensorflowTfjsLayers.initializersMod.Initializer
-import typings.tensorflowTfjsLayers.initializersMod.OrthogonalArgs
-import typings.tensorflowTfjsLayers.initializersMod.RandomNormalArgs
-import typings.tensorflowTfjsLayers.initializersMod.RandomUniformArgs
-import typings.tensorflowTfjsLayers.initializersMod.SeedOnlyInitializerArgs
-import typings.tensorflowTfjsLayers.initializersMod.TruncatedNormalArgs
-import typings.tensorflowTfjsLayers.initializersMod.VarianceScalingArgs
-import typings.tensorflowTfjsLayers.initializersMod.Zeros
+import typings.tensorflowTfjsLayers.distInitializersMod.ConstantArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.IdentityArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.Initializer
+import typings.tensorflowTfjsLayers.distInitializersMod.OrthogonalArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.RandomNormalArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.RandomUniformArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.SeedOnlyInitializerArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.TruncatedNormalArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.VarianceScalingArgs
+import typings.tensorflowTfjsLayers.distInitializersMod.Zeros
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

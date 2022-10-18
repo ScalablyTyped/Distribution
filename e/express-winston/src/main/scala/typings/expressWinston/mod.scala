@@ -553,18 +553,11 @@ object mod {
        with Request
        with /* other */ StringDictionary[Any]
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - scala.Any because Inheritance from two classes. Inlined 
-  - scala.AnyRef because Inheritance from two classes. Inlined 
-  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
-  - js.Any because Inheritance from two classes. Inlined 
-  - scala.AnyRef because Inheritance from two classes. Inlined 
-  - js.Object because Inheritance from two classes. Inlined 
-  - js.Any because Inheritance from two classes. Inlined 
-  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
-  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
-  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @js.native
-  trait FilterResponse extends Response
+  @js.native
+  trait FilterResponse
+    extends StObject
+       with Response
+       with /* other */ StringDictionary[Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.expressWinston.mod.LoggerOptionsWithTransports

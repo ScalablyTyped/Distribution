@@ -1,6 +1,6 @@
 package typings.opentelemetryPropagatorJaeger
 
-import typings.opentelemetryPropagatorJaeger.typesMod.JaegerPropagatorConfig
+import typings.opentelemetryPropagatorJaeger.buildSrcTypesMod.JaegerPropagatorConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object mod {
   @JSImport("@opentelemetry/propagator-jaeger", "JaegerPropagator")
   @js.native
   open class JaegerPropagator ()
-    extends typings.opentelemetryPropagatorJaeger.jaegerPropagatorMod.JaegerPropagator {
+    extends typings.opentelemetryPropagatorJaeger.buildSrcJaegerPropagatorMod.JaegerPropagator {
     def this(config: JaegerPropagatorConfig) = this()
     def this(customTraceHeader: String) = this()
   }

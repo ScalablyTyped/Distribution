@@ -3843,7 +3843,7 @@ object global {
       * Extend interface 'Selection' by declaration merging with 'd3-selection'
       */
     /* augmented module */
-    object mod {
+    object d3SelectionMod {
       
       /**
         * A D3 Selection of elements.

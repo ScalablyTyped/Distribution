@@ -1,9 +1,9 @@
 package typings.bip174.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.bip174.interfacesMod.Transaction
-import typings.bip174.interfacesMod.TransactionFromBuffer
 import typings.bip174.mod.Psbt
+import typings.bip174.srcLibInterfacesMod.Transaction
+import typings.bip174.srcLibInterfacesMod.TransactionFromBuffer
 import typings.node.bufferMod.global.Buffer
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject

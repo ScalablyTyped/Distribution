@@ -1,7 +1,7 @@
 package typings.inquirer
 
-import typings.inquirer.choicesMod.default
 import typings.inquirer.inquirerStrings.separator
+import typings.inquirer.libObjectsChoicesMod.default
 import typings.inquirer.mod.AllChoiceMap
 import typings.inquirer.mod.Answers
 import typings.inquirer.mod.ChoiceCollection

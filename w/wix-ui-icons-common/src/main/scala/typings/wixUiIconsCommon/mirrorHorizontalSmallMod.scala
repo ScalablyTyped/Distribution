@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsMirrorHorizontalSmallMod.MirrorHorizontalSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mirrorHorizontalSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/MirrorHorizontalSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/MirrorHorizontalSmall", JSImport.Default)
   @js.native
   val default: FC[MirrorHorizontalSmallProps] = js.native
-  
-  trait MirrorHorizontalSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object MirrorHorizontalSmallProps {
-    
-    inline def apply(): MirrorHorizontalSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[MirrorHorizontalSmallProps]
-    }
-    
-    extension [Self <: MirrorHorizontalSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[MirrorHorizontalSmallProps]
   

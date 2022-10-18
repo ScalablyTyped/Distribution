@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolNotebookMod.NotebookDocumentSyncRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.NotebookDocumentSyncRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.notebookDocumentSlashsync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object NotebookDocumentSyncRegistrationType {
   
   @JSImport("vscode-languageserver-protocol", "NotebookDocumentSyncRegistrationType.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "NotebookDocumentSyncRegistrationType.method")
   @js.native
@@ -18,5 +18,5 @@ object NotebookDocumentSyncRegistrationType {
   
   @JSImport("vscode-languageserver-protocol", "NotebookDocumentSyncRegistrationType.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.RegistrationType[NotebookDocumentSyncRegistrationOptions] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.RegistrationType[NotebookDocumentSyncRegistrationOptions] = js.native
 }

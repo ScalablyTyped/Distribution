@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class WebGLLights protected ()
   extends typings.three.mod.WebGLLights {
   def this(
-    extensions: typings.three.webGLExtensionsMod.WebGLExtensions,
-    capabilities: typings.three.webGLCapabilitiesMod.WebGLCapabilities
+    extensions: typings.three.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions,
+    capabilities: typings.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities
   ) = this()
 }

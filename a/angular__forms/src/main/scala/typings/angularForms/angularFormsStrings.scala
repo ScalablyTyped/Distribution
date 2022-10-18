@@ -15,22 +15,10 @@ object angularFormsStrings {
   inline def DISABLED: DISABLED = "DISABLED".asInstanceOf[DISABLED]
   
   @js.native
-  sealed trait FormBuilder extends StObject
-  inline def FormBuilder: FormBuilder = "FormBuilder".asInstanceOf[FormBuilder]
-  
-  @js.native
-  sealed trait FormGroup extends StObject
-  inline def FormGroup: FormGroup = "FormGroup".asInstanceOf[FormGroup]
-  
-  @js.native
   sealed trait INVALID
     extends StObject
        with FormControlStatus
   inline def INVALID: INVALID = "INVALID".asInstanceOf[INVALID]
-  
-  @js.native
-  sealed trait NonNullableFormBuilder extends StObject
-  inline def NonNullableFormBuilder: NonNullableFormBuilder = "NonNullableFormBuilder".asInstanceOf[NonNullableFormBuilder]
   
   @js.native
   sealed trait PENDING
@@ -113,12 +101,12 @@ object angularFormsStrings {
   inline def formControlName: formControlName = "formControlName".asInstanceOf[formControlName]
   
   @js.native
-  sealed trait formGroupName extends StObject
-  inline def formGroupName: formGroupName = "formGroupName".asInstanceOf[formGroupName]
+  sealed trait formGroup extends StObject
+  inline def formGroup: formGroup = "formGroup".asInstanceOf[formGroup]
   
   @js.native
-  sealed trait formGroup_ extends StObject
-  inline def formGroup_ : formGroup_ = "formGroup".asInstanceOf[formGroup_]
+  sealed trait formGroupName extends StObject
+  inline def formGroupName: formGroupName = "formGroupName".asInstanceOf[formGroupName]
   
   @js.native
   sealed trait max extends StObject
@@ -201,16 +189,4 @@ object angularFormsStrings {
   @js.native
   sealed trait value extends StObject
   inline def value: value = "value".asInstanceOf[value]
-  
-  @js.native
-  sealed trait ɵFormGroupRawValue extends StObject
-  inline def ɵFormGroupRawValue: ɵFormGroupRawValue = "\u0275FormGroupRawValue".asInstanceOf[ɵFormGroupRawValue]
-  
-  @js.native
-  sealed trait ɵFormGroupValue extends StObject
-  inline def ɵFormGroupValue: ɵFormGroupValue = "\u0275FormGroupValue".asInstanceOf[ɵFormGroupValue]
-  
-  @js.native
-  sealed trait ɵWriteable extends StObject
-  inline def ɵWriteable: ɵWriteable = "\u0275Writeable".asInstanceOf[ɵWriteable]
 }

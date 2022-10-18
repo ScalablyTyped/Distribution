@@ -165,7 +165,15 @@ object mod {
   
   type Use[I, C] = js.Function2[/* fn */ Plugin[Any, I], /* options */ js.UndefOr[Any], C]
   
-  type context[I] = mixedInstance[I] | Avvio[I]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    I extends null ? avvio.avvio.Avvio<I> : avvio.avvio.mixedInstance<I>
+    }}}
+    */
+  @js.native
+  trait context[I] extends StObject
   
   type mixedInstance[I] = I & Server[I]
 }

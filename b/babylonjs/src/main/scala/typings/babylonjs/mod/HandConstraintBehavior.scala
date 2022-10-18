@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Builds a hand constraint behavior
   */
 open class HandConstraintBehavior ()
-  extends typings.babylonjs.legacyMod.HandConstraintBehavior
+  extends typings.babylonjs.legacyLegacyMod.HandConstraintBehavior

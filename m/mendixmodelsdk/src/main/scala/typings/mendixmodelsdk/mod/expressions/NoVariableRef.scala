@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.expressions
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.expressionsMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenExpressionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "expressions.NoVariableRef")
 @js.native
 open class NoVariableRef protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.expressions.NoVariableRef {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.expressions.NoVariableRef {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -44,7 +44,7 @@ object NoVariableRef {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.expressionsMod.expressions.NoVariableRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.NoVariableRef]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.NoVariableRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.NoVariableRef]
   
   /**
     * Creates and returns a new NoVariableRef instance in the SDK and on the server.
@@ -55,7 +55,7 @@ object NoVariableRef {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression): typings.mendixmodelsdk.expressionsMod.expressions.NoVariableRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.NoVariableRef]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.NoVariableRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.NoVariableRef]
   
   /* static member */
   @JSImport("mendixmodelsdk", "expressions.NoVariableRef.structureTypeName")

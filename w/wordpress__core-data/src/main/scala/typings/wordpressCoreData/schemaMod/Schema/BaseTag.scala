@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BaseTag
   extends StObject
-     with BaseResponse
-     with Tag[Any] {
+     with BaseResponse {
   
   var count: Double
   

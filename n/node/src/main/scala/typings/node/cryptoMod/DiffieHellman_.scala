@@ -1,5 +1,6 @@
 package typings.node.cryptoMod
 
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
@@ -55,12 +56,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param inputEncoding The `encoding` of an `otherPublicKey` string.
     * @param outputEncoding The `encoding` of the return value.
     */
-  def computeSecret(otherPublicKey: js.typedarray.ArrayBufferView): Buffer = js.native
-  def computeSecret(
-    otherPublicKey: js.typedarray.ArrayBufferView,
-    inputEncoding: Null,
-    outputEncoding: BinaryToTextEncoding
-  ): String = js.native
+  def computeSecret(otherPublicKey: ArrayBufferView): Buffer = js.native
+  def computeSecret(otherPublicKey: ArrayBufferView, inputEncoding: Null, outputEncoding: BinaryToTextEncoding): String = js.native
   
   /**
     * Generates private and public Diffie-Hellman key values, and returns
@@ -121,7 +118,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @since v0.5.0
     * @param encoding The `encoding` of the `privateKey` string.
     */
-  def setPrivateKey(privateKey: js.typedarray.ArrayBufferView): Unit = js.native
+  def setPrivateKey(privateKey: ArrayBufferView): Unit = js.native
   
   def setPublicKey(publicKey: String, encoding: BufferEncoding): Unit = js.native
   /**
@@ -131,7 +128,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @since v0.5.0
     * @param encoding The `encoding` of the `publicKey` string.
     */
-  def setPublicKey(publicKey: js.typedarray.ArrayBufferView): Unit = js.native
+  def setPublicKey(publicKey: ArrayBufferView): Unit = js.native
   
   /**
     * A bit field containing any warnings and/or errors resulting from a check

@@ -1,6 +1,6 @@
 package typings.injectionJs
 
-import typings.injectionJs.typeMod.Type
+import typings.injectionJs.facadeTypeMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

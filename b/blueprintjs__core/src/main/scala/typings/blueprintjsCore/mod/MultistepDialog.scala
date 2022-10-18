@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.PartialMultistepDialogPro
-import typings.blueprintjsCore.multistepDialogMod.MultistepDialogProps
+import typings.blueprintjsCore.libEsmComponentsDialogMultistepDialogMod.MultistepDialogProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "MultistepDialog")
 @js.native
 open class MultistepDialog protected ()
-  extends typings.blueprintjsCore.componentsMod.MultistepDialog {
+  extends typings.blueprintjsCore.libEsmComponentsMod.MultistepDialog {
   def this(props: MultistepDialogProps) = this()
   def this(props: MultistepDialogProps, context: Any) = this()
 }

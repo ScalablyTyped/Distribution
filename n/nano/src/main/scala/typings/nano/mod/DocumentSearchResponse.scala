@@ -5,23 +5,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Search response
+  * @see Docs: {@link https://docs.couchdb.org/en/latest/ddocs/search.html#queries} */
 trait DocumentSearchResponse[V] extends StObject {
   
-  // token which if supplied to a subsequent search will return the next page of results.
+  /** token which if supplied to a subsequent search will return the next page of results. */
   var bookmark: String
   
-  // facet counts
+  /** facet counts */
   var counts: js.UndefOr[js.Object] = js.undefined
   
   var highlights: js.UndefOr[js.Object] = js.undefined
   
-  // facet range results
+  /** facet range results */
   var ranges: js.UndefOr[js.Object] = js.undefined
   
-  //  Array of search results
+  /**  Array of search results */
   var rows: js.Array[Doc[V]]
   
-  // Number of documents in the search resykts
+  /** Number of documents in the search resykts */
   var total_rows: Double
 }
 object DocumentSearchResponse {
@@ -49,7 +51,7 @@ object DocumentSearchResponse {
     
     inline def setRows(value: js.Array[Doc[V]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: Doc[V]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Doc[V]*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setTotal_rows(value: Double): Self = StObject.set(x, "total_rows", value.asInstanceOf[js.Any])
   }

@@ -8,16 +8,15 @@ import typings.egg.anon.Enable
 import typings.egg.anon.FastReady
 import typings.egg.anon.Ignore
 import typings.eggLogger.mod.EggLoggerOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.netMod.Socket
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EggAppConfig
   extends StObject
-     with /* prop */ StringDictionary[js.Any] {
+     with /* prop */ StringDictionary[Any] {
   
   /**
     * The current HOME directory
@@ -110,7 +109,8 @@ trait EggAppConfig
     * @property {String} coreLogName - file name of coreLogger
     * @property {String} agentLogName - file name of agent worker log
     * @property {Object} coreLogger - custom config of coreLogger
-    * @property {Boolean} allowDebugAtProd - allow debug log at prod, defaults to true
+    * @property {Boolean} allowDebugAtProd - allow debug log at prod, defaults to false
+    * @property {Boolean} enablePerformanceTimer - using performance.now() timer instead of Date.now() for more more precise milliseconds, defaults to false. e.g.: logger will set 1.456ms instead of 1ms.
     */
   var logger: EggLoggerConfig
   
@@ -121,12 +121,12 @@ trait EggAppConfig
     */
   var name: String
   
-  def onClientError(err: Error, socket: Socket, app: EggApplication): ClientErrorResponse | js.Promise[ClientErrorResponse]
+  def onClientError(err: js.Error, socket: Socket, app: EggApplication): ClientErrorResponse | js.Promise[ClientErrorResponse]
   
   /**
     * package.json
     */
-  var pkg: js.Any
+  var pkg: Any
   
   var rundir: String
   
@@ -143,7 +143,7 @@ trait EggAppConfig
   
   var siteFile: PlainObject[String | Buffer]
   
-  var watcher: PlainObject[js.Any]
+  var watcher: PlainObject[Any]
   
   var workerStartTimeout: Double
 }
@@ -167,12 +167,12 @@ object EggAppConfig {
     logger: EggLoggerConfig,
     middleware: js.Array[String],
     name: String,
-    onClientError: (Error, Socket, EggApplication) => ClientErrorResponse | js.Promise[ClientErrorResponse],
-    pkg: js.Any,
+    onClientError: (js.Error, Socket, EggApplication) => ClientErrorResponse | js.Promise[ClientErrorResponse],
+    pkg: Any,
     rundir: String,
     security: Csp,
     siteFile: PlainObject[String | Buffer],
-    watcher: PlainObject[js.Any],
+    watcher: PlainObject[Any],
     workerStartTimeout: Double
   ): EggAppConfig = {
     val __obj = js.Dynamic.literal(HOME = HOME.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], bodyParser = bodyParser.asInstanceOf[js.Any], customLoader = customLoader.asInstanceOf[js.Any], customLogger = customLogger.asInstanceOf[js.Any], development = development.asInstanceOf[js.Any], dump = dump.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], hostHeaders = hostHeaders.asInstanceOf[js.Any], httpclient = httpclient.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], ipHeaders = ipHeaders.asInstanceOf[js.Any], jsonp = jsonp.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], middleware = middleware.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onClientError = js.Any.fromFunction3(onClientError), pkg = pkg.asInstanceOf[js.Any], rundir = rundir.asInstanceOf[js.Any], security = security.asInstanceOf[js.Any], siteFile = siteFile.asInstanceOf[js.Any], watcher = watcher.asInstanceOf[js.Any], workerStartTimeout = workerStartTimeout.asInstanceOf[js.Any], serverTimeout = null)
@@ -213,13 +213,13 @@ object EggAppConfig {
     
     inline def setMiddleware(value: js.Array[String]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
     
-    inline def setMiddlewareVarargs(value: String*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+    inline def setMiddlewareVarargs(value: String*): Self = StObject.set(x, "middleware", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOnClientError(value: (Error, Socket, EggApplication) => ClientErrorResponse | js.Promise[ClientErrorResponse]): Self = StObject.set(x, "onClientError", js.Any.fromFunction3(value))
+    inline def setOnClientError(value: (js.Error, Socket, EggApplication) => ClientErrorResponse | js.Promise[ClientErrorResponse]): Self = StObject.set(x, "onClientError", js.Any.fromFunction3(value))
     
-    inline def setPkg(value: js.Any): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+    inline def setPkg(value: Any): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
     
     inline def setRundir(value: String): Self = StObject.set(x, "rundir", value.asInstanceOf[js.Any])
     
@@ -231,7 +231,7 @@ object EggAppConfig {
     
     inline def setSiteFile(value: PlainObject[String | Buffer]): Self = StObject.set(x, "siteFile", value.asInstanceOf[js.Any])
     
-    inline def setWatcher(value: PlainObject[js.Any]): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
+    inline def setWatcher(value: PlainObject[Any]): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
     
     inline def setWorkerStartTimeout(value: Double): Self = StObject.set(x, "workerStartTimeout", value.asInstanceOf[js.Any])
   }

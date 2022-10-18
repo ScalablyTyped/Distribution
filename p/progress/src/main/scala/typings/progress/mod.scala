@@ -1,6 +1,6 @@
 package typings.progress
 
-import typings.std.WritableStream
+import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -149,7 +149,7 @@ object mod {
     /**
       * The output stream defaulting to stderr.
       */
-    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
     /**
       * Total number of ticks to complete.
@@ -198,7 +198,7 @@ object mod {
       
       inline def setRenderThrottleUndefined: Self = StObject.set(x, "renderThrottle", js.undefined)
       
-      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       

@@ -1,6 +1,6 @@
 package typings.nivoArcs
 
-import typings.nivoArcs.arcTransitionModeMod.ArcTransitionMode
+import typings.nivoArcs.distTypesArcTransitionModeMod.ArcTransitionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

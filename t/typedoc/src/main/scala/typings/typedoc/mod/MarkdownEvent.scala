@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "MarkdownEvent")
 @js.native
 open class MarkdownEvent protected ()
-  extends typings.typedoc.outputMod.MarkdownEvent {
+  extends typings.typedoc.distLibOutputMod.MarkdownEvent {
   def this(name: String, originalText: String, parsedText: String) = this()
 }
 /* static members */

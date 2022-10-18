@@ -22,7 +22,15 @@ object mod {
   inline def suspend[Keys /* <: Tuple[Any] */, Fn /* <: js.Function1[/* keys */ Keys, js.Promise[Any]] */](fn: Fn, keys: Keys): Await[ReturnType[Fn]] = (^.asInstanceOf[js.Dynamic].applyDynamic("suspend")(fn.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Await[ReturnType[Fn]]]
   inline def suspend[Keys /* <: Tuple[Any] */, Fn /* <: js.Function1[/* keys */ Keys, js.Promise[Any]] */](fn: Fn, keys: Keys, config: Config): Await[ReturnType[Fn]] = (^.asInstanceOf[js.Dynamic].applyDynamic("suspend")(fn.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Await[ReturnType[Fn]]]
   
-  type Await[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Promise<infer V> ? V : never
+    }}}
+    */
+  @js.native
+  trait Await[T] extends StObject
   
   trait Config extends StObject {
     

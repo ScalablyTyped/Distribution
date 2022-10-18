@@ -55,6 +55,8 @@ object anon {
     
     val localContext: Any
     
+    val marker: Any
+    
     val places: Any
     
     val visualization: Any
@@ -73,10 +75,11 @@ object anon {
       geometry: Typeofgeometry,
       journeySharing: Any,
       localContext: Any,
+      marker: Any,
       places: Any,
       visualization: Any
     ): Typeofmaps = {
-      val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], LatLngBounds = LatLngBounds.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Marker = Marker.asInstanceOf[js.Any], OverlayView = OverlayView.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any], drawing = drawing.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], journeySharing = journeySharing.asInstanceOf[js.Any], localContext = localContext.asInstanceOf[js.Any], places = places.asInstanceOf[js.Any], visualization = visualization.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], LatLngBounds = LatLngBounds.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Marker = Marker.asInstanceOf[js.Any], OverlayView = OverlayView.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any], drawing = drawing.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], journeySharing = journeySharing.asInstanceOf[js.Any], localContext = localContext.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], places = places.asInstanceOf[js.Any], visualization = visualization.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofmaps]
     }
     

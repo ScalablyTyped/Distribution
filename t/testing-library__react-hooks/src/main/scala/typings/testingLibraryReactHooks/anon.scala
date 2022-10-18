@@ -2,10 +2,10 @@ package typings.testingLibraryReactHooks
 
 import typings.reactDom.testUtilsMod.VoidOrUndefinedOnly
 import typings.reactTestRenderer.mod.DebugPromiseLike
-import typings.testingLibraryReactHooks.typesMod.RenderResult
-import typings.testingLibraryReactHooks.typesMod.WaitFor
-import typings.testingLibraryReactHooks.typesMod.WaitForNextUpdate
-import typings.testingLibraryReactHooks.typesMod.WaitForValueToChange
+import typings.testingLibraryReactHooks.libTypesMod.RenderResult
+import typings.testingLibraryReactHooks.libTypesMod.WaitFor
+import typings.testingLibraryReactHooks.libTypesMod.WaitForNextUpdate
+import typings.testingLibraryReactHooks.libTypesMod.WaitForValueToChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

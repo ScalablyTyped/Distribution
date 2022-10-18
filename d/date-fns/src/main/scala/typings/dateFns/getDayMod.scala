@@ -1,6 +1,5 @@
 package typings.dateFns
 
-import org.scalablytyped.runtime.Shortcut
 import typings.dateFns.dateFnsInts.`0`
 import typings.dateFns.dateFnsInts.`1`
 import typings.dateFns.dateFnsInts.`2`
@@ -14,15 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getDayMod {
   
-  object default extends Shortcut {
+  object default {
     
-    @JSImport("date-fns/esm/fp/getDay", JSImport.Default)
+    inline def apply(date: js.Date): `0` | `1` | `2` | `3` | `4` | `5` | `6` = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[`0` | `1` | `2` | `3` | `4` | `5` | `6`]
+    inline def apply(date: Double): `0` | `1` | `2` | `3` | `4` | `5` | `6` = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[`0` | `1` | `2` | `3` | `4` | `5` | `6`]
+    
+    @JSImport("date-fns/getDay", JSImport.Default)
     @js.native
-    val ^ : CurriedFn1[js.Date | Double, `0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.native
-    
-    type _To = CurriedFn1[js.Date | Double, `0` | `1` | `2` | `3` | `4` | `5` | `6`]
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn1[js.Date | Double, `0` | `1` | `2` | `3` | `4` | `5` | `6`] = ^
+    val ^ : js.Any = js.native
   }
 }

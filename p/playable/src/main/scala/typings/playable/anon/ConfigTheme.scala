@@ -1,7 +1,7 @@
 package typings.playable.anon
 
-import typings.playable.configMod.IPlayerConfig
-import typings.playable.themeTypesMod.IThemeService
+import typings.playable.distSrcCoreConfigMod.IPlayerConfig
+import typings.playable.distSrcModulesUiCoreThemeTypesMod.IThemeService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

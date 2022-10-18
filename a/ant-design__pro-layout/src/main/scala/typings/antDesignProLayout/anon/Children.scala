@@ -16,7 +16,7 @@ trait Children extends StObject {
   
   var hasHeader: Boolean
   
-  var hasPageContainer: js.UndefOr[Boolean] = js.undefined
+  var hasPageContainer: js.UndefOr[Double] = js.undefined
   
   var isChildrenLayout: js.UndefOr[Boolean] = js.undefined
   
@@ -49,7 +49,7 @@ object Children {
     
     inline def setHasHeader(value: Boolean): Self = StObject.set(x, "hasHeader", value.asInstanceOf[js.Any])
     
-    inline def setHasPageContainer(value: Boolean): Self = StObject.set(x, "hasPageContainer", value.asInstanceOf[js.Any])
+    inline def setHasPageContainer(value: Double): Self = StObject.set(x, "hasPageContainer", value.asInstanceOf[js.Any])
     
     inline def setHasPageContainerUndefined: Self = StObject.set(x, "hasPageContainer", js.undefined)
     

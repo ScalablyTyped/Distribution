@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.prePassRenderTargetMod.PrePassRenderTarget
+import typings.babylonjs.materialsTexturesPrePassRenderTargetMod.PrePassRenderTarget
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

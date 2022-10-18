@@ -13,5 +13,5 @@ open class PostProcessRenderPipeline protected ()
     * @param _engine engine to add the pipeline to
     * @param name name of the pipeline
     */
-  def this(_engine: typings.babylonjs.engineMod.Engine, name: String) = this()
+  def this(_engine: typings.babylonjs.enginesEngineMod.Engine, name: String) = this()
 }

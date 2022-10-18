@@ -1,5 +1,7 @@
 package typings.videoJs.mod.default
 
+import typings.videoJs.anon.GetComponent
+import typings.videoJs.anon.GetTagSettings
 import typings.videoJs.anon.Instantiable
 import typings.videoJs.anon.InstantiableClickableComponent
 import typings.videoJs.anon.InstantiableMenu
@@ -9,8 +11,6 @@ import typings.videoJs.anon.InstantiableModalDialog
 import typings.videoJs.anon.InstantiableMouseTimeDisplay
 import typings.videoJs.anon.InstantiableSpacer
 import typings.videoJs.anon.InstantiableTimeToolTip
-import typings.videoJs.anon.TypeofComponent
-import typings.videoJs.anon.TypeofPlayer
 import typings.videoJs.mod.videojs.Component.ReadyCallback
 import typings.videoJs.mod.videojs.ComponentOptions
 import typings.videoJs.videoJsStrings.Button
@@ -73,7 +73,11 @@ object Component {
   val ^ : js.Any = js.native
   
   inline def getComponent(name: timeTooltip_ | TimeTooltip): InstantiableTimeToolTip = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableTimeToolTip]
-  inline def getComponent(name: String): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
+  inline def getComponent(name: String): GetComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[GetComponent]
+  
+  inline def getComponent_GetComponent(name: typings.videoJs.videoJsStrings.Component | component_): GetComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[GetComponent]
+  
+  inline def getComponent_GetTagSettings(name: typings.videoJs.videoJsStrings.Player | player_): GetTagSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[GetTagSettings]
   
   /**
     * Get a `Component` based on the name it was registered with.
@@ -98,10 +102,6 @@ object Component {
   inline def getComponent_InstantiableMouseTimeDisplay(name: MouseTimeDisplay | mouseTimeDisplay_): InstantiableMouseTimeDisplay = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMouseTimeDisplay]
   
   inline def getComponent_InstantiableSpacer(name: Spacer | spacer_): InstantiableSpacer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableSpacer]
-  
-  inline def getComponent_TypeofComponent(name: typings.videoJs.videoJsStrings.Component | component_): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
-  
-  inline def getComponent_TypeofPlayer(name: typings.videoJs.videoJsStrings.Player | player_): TypeofPlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofPlayer]
   
   /**
     * Register a `Component` with `videojs` given the name and the component.

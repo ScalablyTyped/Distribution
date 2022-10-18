@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("plottable", "Component")
 @js.native
 open class Component ()
-  extends typings.plottable.componentMod.Component
+  extends typings.plottable.buildSrcComponentsComponentMod.Component
 /* static members */
 object Component {
   

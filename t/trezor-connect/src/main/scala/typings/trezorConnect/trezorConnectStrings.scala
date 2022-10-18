@@ -1,11 +1,11 @@
 package typings.trezorConnect
 
-import typings.trezorConnect.accountMod.DiscoveryAccountType
-import typings.trezorConnect.coinInfoMod.BitcoinDefaultFeesKeys
-import typings.trezorConnect.deviceMod.DeviceFirmwareStatus
-import typings.trezorConnect.deviceMod.DeviceMode
-import typings.trezorConnect.deviceMod.DeviceStatus
-import typings.trezorConnect.deviceMod.UnavailableCapability
+import typings.trezorConnect.libTypescriptAccountMod.DiscoveryAccountType
+import typings.trezorConnect.libTypescriptNetworksCoinInfoMod.BitcoinDefaultFeesKeys
+import typings.trezorConnect.libTypescriptTrezorDeviceMod.DeviceFirmwareStatus
+import typings.trezorConnect.libTypescriptTrezorDeviceMod.DeviceMode
+import typings.trezorConnect.libTypescriptTrezorDeviceMod.DeviceStatus
+import typings.trezorConnect.libTypescriptTrezorDeviceMod.UnavailableCapability
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

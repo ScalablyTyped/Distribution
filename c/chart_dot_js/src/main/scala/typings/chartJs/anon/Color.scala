@@ -1,12 +1,12 @@
 package typings.chartJs.anon
 
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsStrings.center
 import typings.chartJs.chartJsStrings.end
 import typings.chartJs.chartJsStrings.start
-import typings.chartJs.geometricMod.ChartArea
 import typings.chartJs.mod.ScriptableAndScriptableOptions
 import typings.chartJs.mod.ScriptableChartContext
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesGeometricMod.ChartArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait Color extends StObject {
     * Color of title
     * @see Defaults.color
     */
-  var color: typings.chartJs.colorMod.Color
+  var color: typings.chartJs.typesColorMod.Color
   
   /**
     * Is the legend title displayed.
@@ -42,7 +42,7 @@ trait Color extends StObject {
 object Color {
   
   inline def apply(
-    color: typings.chartJs.colorMod.Color,
+    color: typings.chartJs.typesColorMod.Color,
     display: Boolean,
     font: ScriptableAndScriptableOptions[PartialFontSpec, ScriptableChartContext],
     position: center | start | end,
@@ -54,7 +54,7 @@ object Color {
   
   extension [Self <: Color](x: Self) {
     
-    inline def setColor(value: typings.chartJs.colorMod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.chartJs.typesColorMod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

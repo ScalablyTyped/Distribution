@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.stylesmapMod.BoxSides
+import typings.ckeditorCkeditor5Engine.srcViewStylesmapMod.BoxSides
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.babylonjs.materialsIndexMod
 
-import typings.babylonjs.effectRendererMod.EffectWrapperCreationOptions
+import typings.babylonjs.materialsEffectRendererMod.EffectWrapperCreationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "EffectWrapper")
 @js.native
 open class EffectWrapper protected ()
-  extends typings.babylonjs.effectRendererMod.EffectWrapper {
+  extends typings.babylonjs.materialsEffectRendererMod.EffectWrapper {
   /**
     * Creates an effect to be renderer
     * @param creationOptions options to create the effect

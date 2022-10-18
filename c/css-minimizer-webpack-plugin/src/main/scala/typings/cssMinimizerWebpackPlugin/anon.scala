@@ -1,19 +1,16 @@
 package typings.cssMinimizerWebpackPlugin
 
-import typings.cssMinimizerWebpackPlugin.mod.DefinedDefaultMinimizerAndOptions
-import typings.cssMinimizerWebpackPlugin.mod.InferDefaultType
-import typings.cssMinimizerWebpackPlugin.mod.Input
-import typings.cssMinimizerWebpackPlugin.mod.MinimizedResult
 import typings.cssMinimizerWebpackPlugin.mod.MinimizerImplementation
+import typings.cssMinimizerWebpackPlugin.mod.MinimizerOptions
 import typings.cssMinimizerWebpackPlugin.mod.Parser
 import typings.cssMinimizerWebpackPlugin.mod.RawSourceMap
 import typings.cssMinimizerWebpackPlugin.mod.Stringifier
 import typings.cssMinimizerWebpackPlugin.mod.Syntax
 import typings.postcss.anon.PickProcessOptionsmapfrom
 import typings.postcss.anon.ToString
+import typings.postcss.libNodeMod.AnyNode
+import typings.postcss.libRootMod.default
 import typings.postcss.mod.Builder
-import typings.postcss.nodeMod.AnyNode
-import typings.postcss.rootMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -127,7 +124,7 @@ object anon {
       inline def setParser(value: String | Syntax | Parser): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
       inline def setParserFunction2(
-        value: (/* css */ String | ToString, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => default | typings.postcss.documentMod.default
+        value: (/* css */ String | ToString, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => default | typings.postcss.libDocumentMod.default
       ): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
       
       inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
@@ -152,14 +149,11 @@ object anon {
     
     var implementation: MinimizerImplementation[T]
     
-    var options: typings.cssMinimizerWebpackPlugin.mod.MinimizerOptions[T]
+    var options: MinimizerOptions[T]
   }
   object Implementation {
     
-    inline def apply[T](
-      implementation: MinimizerImplementation[T],
-      options: typings.cssMinimizerWebpackPlugin.mod.MinimizerOptions[T]
-    ): Implementation[T] = {
+    inline def apply[T](implementation: MinimizerImplementation[T], options: MinimizerOptions[T]): Implementation[T] = {
       val __obj = js.Dynamic.literal(implementation = implementation.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Implementation[T]]
     }
@@ -168,71 +162,7 @@ object anon {
       
       inline def setImplementation(value: MinimizerImplementation[T]): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
-      inline def setImplementationFunction3(
-        value: (/* input */ Input, /* sourceMap */ js.UndefOr[RawSourceMap], /* minifyOptions */ InferDefaultType[T]) => js.Promise[MinimizedResult]
-      ): Self = StObject.set(x, "implementation", js.Any.fromFunction3(value))
-      
-      inline def setOptions(value: typings.cssMinimizerWebpackPlugin.mod.MinimizerOptions[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Minify[T]
-    extends StObject
-       with DefinedDefaultMinimizerAndOptions[T] {
-    
-    var minify: js.UndefOr[MinimizerImplementation[T]] = js.undefined
-    
-    var minimizerOptions: js.UndefOr[typings.cssMinimizerWebpackPlugin.mod.MinimizerOptions[T]] = js.undefined
-  }
-  object Minify {
-    
-    inline def apply[T](): Minify[T] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Minify[T]]
-    }
-    
-    extension [Self <: Minify[?], T](x: Self & Minify[T]) {
-      
-      inline def setMinify(value: MinimizerImplementation[T]): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
-      
-      inline def setMinifyFunction3(
-        value: (/* input */ Input, /* sourceMap */ js.UndefOr[RawSourceMap], /* minifyOptions */ InferDefaultType[T]) => js.Promise[MinimizedResult]
-      ): Self = StObject.set(x, "minify", js.Any.fromFunction3(value))
-      
-      inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
-      
-      inline def setMinimizerOptions(value: typings.cssMinimizerWebpackPlugin.mod.MinimizerOptions[T]): Self = StObject.set(x, "minimizerOptions", value.asInstanceOf[js.Any])
-      
-      inline def setMinimizerOptionsUndefined: Self = StObject.set(x, "minimizerOptions", js.undefined)
-    }
-  }
-  
-  trait MinimizerOptions[T]
-    extends StObject
-       with DefinedDefaultMinimizerAndOptions[T] {
-    
-    var minify: MinimizerImplementation[T]
-    
-    var minimizerOptions: js.UndefOr[typings.cssMinimizerWebpackPlugin.mod.MinimizerOptions[T]] = js.undefined
-  }
-  object MinimizerOptions {
-    
-    inline def apply[T](minify: MinimizerImplementation[T]): MinimizerOptions[T] = {
-      val __obj = js.Dynamic.literal(minify = minify.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MinimizerOptions[T]]
-    }
-    
-    extension [Self <: MinimizerOptions[?], T](x: Self & MinimizerOptions[T]) {
-      
-      inline def setMinify(value: MinimizerImplementation[T]): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
-      
-      inline def setMinifyFunction3(
-        value: (/* input */ Input, /* sourceMap */ js.UndefOr[RawSourceMap], /* minifyOptions */ InferDefaultType[T]) => js.Promise[MinimizedResult]
-      ): Self = StObject.set(x, "minify", js.Any.fromFunction3(value))
-      
-      inline def setMinimizerOptions(value: typings.cssMinimizerWebpackPlugin.mod.MinimizerOptions[T]): Self = StObject.set(x, "minimizerOptions", value.asInstanceOf[js.Any])
-      
-      inline def setMinimizerOptionsUndefined: Self = StObject.set(x, "minimizerOptions", js.undefined)
+      inline def setOptions(value: MinimizerOptions[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,6 +1,6 @@
 package typings.babylonjs.particlesIndexMod
 
-import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param direction2 the max limit of the emission direction (up vector by default)
   */
 open class CylinderDirectedParticleEmitter ()
-  extends typings.babylonjs.emitterTypesIndexMod.CylinderDirectedParticleEmitter {
+  extends typings.babylonjs.particlesEmitterTypesIndexMod.CylinderDirectedParticleEmitter {
   def this(radius: Double) = this()
   def this(radius: Double, height: Double) = this()
   def this(radius: Unit, height: Double) = this()

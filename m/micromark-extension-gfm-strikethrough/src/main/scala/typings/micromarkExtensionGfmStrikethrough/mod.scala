@@ -19,5 +19,5 @@ object mod {
   @js.native
   val gfmStrikethroughHtml: HtmlExtension = js.native
   
-  type Options = typings.micromarkExtensionGfmStrikethrough.libSyntaxMod.Options
+  type Options = typings.micromarkExtensionGfmStrikethrough.devLibSyntaxMod.Options
 }

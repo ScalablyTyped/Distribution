@@ -2,8 +2,8 @@ package typings.soap
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.bufferMod.global.Buffer
-import typings.soap.elementsMod.Element
-import typings.soap.typesMod.IXmlAttribute
+import typings.soap.libTypesMod.IXmlAttribute
+import typings.soap.libWsdlElementsMod.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ErrorType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.eggErrors.errorTypeMod.ErrorType & String] = js.native
+  def apply(value: String): js.UndefOr[typings.eggErrors.libErrorTypeMod.ErrorType & String] = js.native
   
-  /* "BUILTIN" */ val BUILTIN: typings.eggErrors.errorTypeMod.ErrorType.BUILTIN & String = js.native
+  /* "BUILTIN" */ val BUILTIN: typings.eggErrors.libErrorTypeMod.ErrorType.BUILTIN & String = js.native
   
-  /* "ERROR" */ val ERROR: typings.eggErrors.errorTypeMod.ErrorType.ERROR & String = js.native
+  /* "ERROR" */ val ERROR: typings.eggErrors.libErrorTypeMod.ErrorType.ERROR & String = js.native
   
-  /* "EXCEPTION" */ val EXCEPTION: typings.eggErrors.errorTypeMod.ErrorType.EXCEPTION & String = js.native
+  /* "EXCEPTION" */ val EXCEPTION: typings.eggErrors.libErrorTypeMod.ErrorType.EXCEPTION & String = js.native
 }

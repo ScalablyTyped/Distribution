@@ -1,8 +1,8 @@
 package typings.vscodeLanguageclient.mod
 
 import typings.vscodeLanguageclient.vscodeLanguageclientStrings.textDocumentSlashdocumentColor
-import typings.vscodeLanguageserverProtocol.protocolColorProviderMod.DocumentColorParams
-import typings.vscodeLanguageserverProtocol.protocolColorProviderMod.DocumentColorRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotcolorProviderMod.DocumentColorParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotcolorProviderMod.DocumentColorRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ object DocumentColorRequest {
   
   @JSImport("vscode-languageclient", "DocumentColorRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageclient", "DocumentColorRequest.method")
   @js.native
@@ -19,7 +19,7 @@ object DocumentColorRequest {
   
   @JSImport("vscode-languageclient", "DocumentColorRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     DocumentColorParams, 
     js.Array[typings.vscodeLanguageserverTypes.mod.ColorInformation], 
     js.Array[typings.vscodeLanguageserverTypes.mod.ColorInformation], 

@@ -1,9 +1,9 @@
 package typings.grommet.anon
 
+import typings.grommet.componentsVideoMod.controlsItems
 import typings.grommet.grommetBooleans.`false`
 import typings.grommet.grommetStrings.below
 import typings.grommet.grommetStrings.over
-import typings.grommet.videoMod.controlsItems
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

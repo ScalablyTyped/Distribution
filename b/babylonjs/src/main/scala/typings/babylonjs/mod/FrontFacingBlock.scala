@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "FrontFacingBlock")
 @js.native
 open class FrontFacingBlock protected ()
-  extends typings.babylonjs.legacyMod.FrontFacingBlock {
+  extends typings.babylonjs.legacyLegacyMod.FrontFacingBlock {
   /**
     * Creates a new FrontFacingBlock
     * @param name defines the block name

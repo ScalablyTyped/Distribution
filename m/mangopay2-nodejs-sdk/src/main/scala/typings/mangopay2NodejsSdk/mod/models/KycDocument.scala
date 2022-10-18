@@ -1,10 +1,10 @@
 package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.PartialKycDocumentData
-import typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.DocumentStatus
-import typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.KYCDocumentRefusedReasonType
-import typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.KycDocumentData
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
+import typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.DocumentStatus
+import typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.KYCDocumentRefusedReasonType
+import typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.KycDocumentData
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +59,7 @@ open class KycDocument protected ()
     * Gives the type of the KYC document
     */
   /* CompleteClass */
-  var Type: typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.KycDocumentType = js.native
+  var Type: typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.KycDocumentType = js.native
   
   /**
     * The object owner's UserId

@@ -35,13 +35,13 @@ object CompareReturn {
     
     inline def setAligned_elementsUndefined: Self = StObject.set(x, "aligned_elements", js.undefined)
     
-    inline def setAligned_elementsVarargs(value: AlignedElement*): Self = StObject.set(x, "aligned_elements", js.Array(value :_*))
+    inline def setAligned_elementsVarargs(value: AlignedElement*): Self = StObject.set(x, "aligned_elements", js.Array(value*))
     
     inline def setDocuments(value: js.Array[Document]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
     inline def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
     
-    inline def setDocumentsVarargs(value: Document*): Self = StObject.set(x, "documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: Document*): Self = StObject.set(x, "documents", js.Array(value*))
     
     inline def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
     
@@ -55,6 +55,6 @@ object CompareReturn {
     
     inline def setUnaligned_elementsUndefined: Self = StObject.set(x, "unaligned_elements", js.undefined)
     
-    inline def setUnaligned_elementsVarargs(value: UnalignedElement*): Self = StObject.set(x, "unaligned_elements", js.Array(value :_*))
+    inline def setUnaligned_elementsVarargs(value: UnalignedElement*): Self = StObject.set(x, "unaligned_elements", js.Array(value*))
   }
 }

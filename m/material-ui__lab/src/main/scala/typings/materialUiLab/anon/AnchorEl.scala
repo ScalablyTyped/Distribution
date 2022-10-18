@@ -1,6 +1,5 @@
 package typings.materialUiLab.anon
 
-import typings.materialUiLab.useAutocompleteUseAutocompleteMod.AutocompleteFreeSoloValueMapping
 import typings.materialUiLab.useAutocompleteUseAutocompleteMod.Value
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -63,9 +62,10 @@ object AnchorEl {
     id: String,
     inputValue: String,
     popupOpen: Boolean,
-    setAnchorEl: () => Unit
+    setAnchorEl: () => Unit,
+    value: Value[T, Multiple, DisableClearable, FreeSolo]
   ): AnchorEl[T, Multiple, DisableClearable, FreeSolo] = {
-    val __obj = js.Dynamic.literal(dirty = dirty.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], focusedTag = focusedTag.asInstanceOf[js.Any], getClearProps = js.Any.fromFunction0(getClearProps), getInputLabelProps = js.Any.fromFunction0(getInputLabelProps), getInputProps = js.Any.fromFunction0(getInputProps), getListboxProps = js.Any.fromFunction0(getListboxProps), getOptionProps = js.Any.fromFunction1(getOptionProps), getPopupIndicatorProps = js.Any.fromFunction0(getPopupIndicatorProps), getRootProps = js.Any.fromFunction0(getRootProps), getTagProps = js.Any.fromFunction1(getTagProps), groupedOptions = groupedOptions.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], popupOpen = popupOpen.asInstanceOf[js.Any], setAnchorEl = js.Any.fromFunction0(setAnchorEl), anchorEl = null, value = null)
+    val __obj = js.Dynamic.literal(dirty = dirty.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], focusedTag = focusedTag.asInstanceOf[js.Any], getClearProps = js.Any.fromFunction0(getClearProps), getInputLabelProps = js.Any.fromFunction0(getInputLabelProps), getInputProps = js.Any.fromFunction0(getInputProps), getListboxProps = js.Any.fromFunction0(getListboxProps), getOptionProps = js.Any.fromFunction1(getOptionProps), getPopupIndicatorProps = js.Any.fromFunction0(getPopupIndicatorProps), getRootProps = js.Any.fromFunction0(getRootProps), getTagProps = js.Any.fromFunction1(getTagProps), groupedOptions = groupedOptions.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], popupOpen = popupOpen.asInstanceOf[js.Any], setAnchorEl = js.Any.fromFunction0(setAnchorEl), value = value.asInstanceOf[js.Any], anchorEl = null)
     __obj.asInstanceOf[AnchorEl[T, Multiple, DisableClearable, FreeSolo]]
   }
   
@@ -110,9 +110,5 @@ object AnchorEl {
     inline def setSetAnchorEl(value: () => Unit): Self = StObject.set(x, "setAnchorEl", js.Any.fromFunction0(value))
     
     inline def setValue(value: Value[T, Multiple, DisableClearable, FreeSolo]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    
-    inline def setValueNull: Self = StObject.set(x, "value", null)
-    
-    inline def setValueVarargs(value: (T | AutocompleteFreeSoloValueMapping[FreeSolo])*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

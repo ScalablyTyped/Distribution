@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "VoronoiNoiseBlock")
 @js.native
 open class VoronoiNoiseBlock protected ()
-  extends typings.babylonjs.legacyMod.VoronoiNoiseBlock {
+  extends typings.babylonjs.legacyLegacyMod.VoronoiNoiseBlock {
   /**
     * Creates a new VoronoiNoiseBlock
     * @param name defines the block name

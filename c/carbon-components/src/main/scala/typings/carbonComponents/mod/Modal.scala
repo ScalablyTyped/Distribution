@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "Modal")
 @js.native
 open class Modal protected ()
-  extends typings.carbonComponents.componentsMod.Modal {
+  extends typings.carbonComponents.globalsJsComponentsMod.Modal {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialModalOptions) = this()
 }

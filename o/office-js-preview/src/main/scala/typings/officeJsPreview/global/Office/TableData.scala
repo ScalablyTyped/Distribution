@@ -23,7 +23,7 @@ open class TableData ()
     * for a two-column table you would set the header property to [['header1', 'header2']].
     *
     * If you specify null for the headers property (or leaving the property empty when you construct a TableData object), the following results
-    * occur when your code executes:
+    * occur when your code executes.
     *
     * - If you insert a new table, the default column headers for the table are created.
     *
@@ -42,7 +42,7 @@ open class TableData ()
     * string values in a two-column table you would set the rows property to [['a', 'b'], ['c', 'd']].
     *
     * If you specify null for the rows property (or leave the property empty when you construct a TableData object), the following results occur
-    * when your code executes:
+    * when your code executes.
     *
     * - If you insert a new table, a blank row will be inserted.
     *

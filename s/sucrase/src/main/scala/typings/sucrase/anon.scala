@@ -1,6 +1,6 @@
 package typings.sucrase
 
-import typings.sucrase.getImportExportSpecifierInfoMod.ImportExportSpecifierInfo
+import typings.sucrase.distTypesUtilGetImportExportSpecifierInfoMod.ImportExportSpecifierInfo
 import typings.sucrase.sucraseBooleans.`false`
 import typings.sucrase.sucraseBooleans.`true`
 import org.scalablytyped.runtime.StObject

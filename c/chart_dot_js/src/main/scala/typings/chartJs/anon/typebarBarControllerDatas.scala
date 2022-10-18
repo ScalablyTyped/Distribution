@@ -1,7 +1,6 @@
 package typings.chartJs.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsBooleans.`false`
 import typings.chartJs.chartJsStrings.auto
 import typings.chartJs.chartJsStrings.bar
@@ -15,12 +14,13 @@ import typings.chartJs.chartJsStrings.start
 import typings.chartJs.chartJsStrings.top
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
-import typings.chartJs.geometricMod.ChartArea
 import typings.chartJs.mod.AnimationsSpec
 import typings.chartJs.mod.BorderRadius
 import typings.chartJs.mod.ScriptableAndArray
 import typings.chartJs.mod.ScriptableContext
 import typings.chartJs.mod.TransitionsSpec
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesGeometricMod.ChartArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,7 @@ trait typebarBarControllerDatas extends StObject {
   
   var animations: AnimationsSpec[bar]
   
-  var backgroundColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bar]]
+  var backgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bar]]
   
   /**
     * Percent (0-1) of the available width each bar should be within the category width. 1.0 will take the whole category width and put the bars right next to each other.
@@ -47,7 +47,7 @@ trait typebarBarControllerDatas extends StObject {
   
   var base: ScriptableAndArray[Double, ScriptableContext[bar]]
   
-  var borderColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bar]]
+  var borderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bar]]
   
   var borderRadius: ScriptableAndArray[Double | BorderRadius, ScriptableContext[bar]]
   
@@ -75,9 +75,9 @@ trait typebarBarControllerDatas extends StObject {
     */
   var hidden: Boolean
   
-  var hoverBackgroundColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bar]]
+  var hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bar]]
   
-  var hoverBorderColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bar]]
+  var hoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bar]]
   
   var hoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[bar]]
   
@@ -149,11 +149,11 @@ object typebarBarControllerDatas {
   inline def apply(
     animation: `false` | AnimationSpecbaronProgres,
     animations: AnimationsSpec[bar],
-    backgroundColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bar]],
+    backgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bar]],
     barPercentage: Double,
     barThickness: Double | flex,
     base: ScriptableAndArray[Double, ScriptableContext[bar]],
-    borderColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bar]],
+    borderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bar]],
     borderRadius: ScriptableAndArray[Double | BorderRadius, ScriptableContext[bar]],
     borderSkipped: ScriptableAndArray[
       start | end | left | right | bottom | top | middle | Boolean, 
@@ -163,8 +163,8 @@ object typebarBarControllerDatas {
     categoryPercentage: Double,
     clip: Double | ChartArea | `false`,
     hidden: Boolean,
-    hoverBackgroundColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bar]],
-    hoverBorderColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bar]],
+    hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bar]],
+    hoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bar]],
     hoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[bar]],
     indexAxis: x | y,
     inflateAmount: ScriptableAndArray[Double | auto, ScriptableContext[bar]],
@@ -191,13 +191,13 @@ object typebarBarControllerDatas {
     
     inline def setAnimations(value: AnimationsSpec[bar]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundColor(value: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bar]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bar]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorFunction2(
-      value: (ScriptableContext[bar], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[bar], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction2(value))
     
-    inline def setBackgroundColorVarargs(value: typings.chartJs.colorMod.Color*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
+    inline def setBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
     
     inline def setBarPercentage(value: Double): Self = StObject.set(x, "barPercentage", value.asInstanceOf[js.Any])
     
@@ -209,13 +209,13 @@ object typebarBarControllerDatas {
     
     inline def setBaseVarargs(value: Double*): Self = StObject.set(x, "base", js.Array(value*))
     
-    inline def setBorderColor(value: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bar]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bar]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorFunction2(
-      value: (ScriptableContext[bar], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[bar], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "borderColor", js.Any.fromFunction2(value))
     
-    inline def setBorderColorVarargs(value: typings.chartJs.colorMod.Color*): Self = StObject.set(x, "borderColor", js.Array(value*))
+    inline def setBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "borderColor", js.Array(value*))
     
     inline def setBorderRadius(value: ScriptableAndArray[Double | BorderRadius, ScriptableContext[bar]]): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
@@ -248,21 +248,21 @@ object typebarBarControllerDatas {
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    inline def setHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bar]]): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bar]]): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
     
     inline def setHoverBackgroundColorFunction2(
-      value: (ScriptableContext[bar], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[bar], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "hoverBackgroundColor", js.Any.fromFunction2(value))
     
-    inline def setHoverBackgroundColorVarargs(value: typings.chartJs.colorMod.Color*): Self = StObject.set(x, "hoverBackgroundColor", js.Array(value*))
+    inline def setHoverBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "hoverBackgroundColor", js.Array(value*))
     
-    inline def setHoverBorderColor(value: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bar]]): Self = StObject.set(x, "hoverBorderColor", value.asInstanceOf[js.Any])
+    inline def setHoverBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bar]]): Self = StObject.set(x, "hoverBorderColor", value.asInstanceOf[js.Any])
     
     inline def setHoverBorderColorFunction2(
-      value: (ScriptableContext[bar], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[bar], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "hoverBorderColor", js.Any.fromFunction2(value))
     
-    inline def setHoverBorderColorVarargs(value: typings.chartJs.colorMod.Color*): Self = StObject.set(x, "hoverBorderColor", js.Array(value*))
+    inline def setHoverBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "hoverBorderColor", js.Array(value*))
     
     inline def setHoverBorderWidth(value: ScriptableAndArray[Double, ScriptableContext[bar]]): Self = StObject.set(x, "hoverBorderWidth", value.asInstanceOf[js.Any])
     

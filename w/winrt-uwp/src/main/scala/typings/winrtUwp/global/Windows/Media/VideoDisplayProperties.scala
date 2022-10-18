@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides properties for video information that is displayed by SystemMediaTransportControlsDisplayUpdater class. */
-@JSGlobal("Windows.Media.VideoDisplayProperties")
+/* note: abstract class */ @JSGlobal("Windows.Media.VideoDisplayProperties")
 @js.native
-abstract class VideoDisplayProperties ()
+open class VideoDisplayProperties ()
   extends StObject
      with typings.winrtUwp.Windows.Media.VideoDisplayProperties {
   

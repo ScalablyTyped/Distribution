@@ -57,7 +57,7 @@ import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
 import typings.antdMobile.antdMobileStrings.warning
-import typings.antdMobile.buttonButtonMod.ButtonRef
+import typings.antdMobile.esComponentsButtonButtonMod.ButtonRef
 import typings.react.mod.Booleanish
 import typings.react.mod.Key
 import typings.react.mod.MouseEventHandler

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object coreDictMod extends Shortcut {
   
-  @JSImport("core-js/library/core/dict", JSImport.Namespace)
+  @JSImport("core-js/core/dict", JSImport.Namespace)
   @js.native
   val ^ : js.Object & DictConstructor = js.native
   

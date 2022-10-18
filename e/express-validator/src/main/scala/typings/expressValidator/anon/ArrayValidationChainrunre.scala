@@ -1,9 +1,9 @@
 package typings.expressValidator.anon
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.expressValidator.baseMod.Request
-import typings.expressValidator.contextRunnerImplMod.ResultWithContext
-import typings.expressValidator.validationChainMod.ValidationChain
+import typings.expressValidator.srcBaseMod.Request
+import typings.expressValidator.srcChainContextRunnerImplMod.ResultWithContext
+import typings.expressValidator.srcChainValidationChainMod.ValidationChain
 import typings.std.FlatArray
 import typings.std.IterableIterator
 import typings.std.anon.CopyWithin

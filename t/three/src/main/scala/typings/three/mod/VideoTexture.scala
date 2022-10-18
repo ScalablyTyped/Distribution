@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "VideoTexture")
 @js.native
 open class VideoTexture protected ()
-  extends typings.three.threeMod.VideoTexture {
+  extends typings.three.srcThreeMod.VideoTexture {
   /**
     * @param video
     * @param [mapping=THREE.Texture.DEFAULT_MAPPING]

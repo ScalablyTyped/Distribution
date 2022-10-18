@@ -1,6 +1,6 @@
 package typings.nivoTreemap
 
-import typings.nivoTreemap.tilingMod.TileType
+import typings.nivoTreemap.distTypesTilingMod.TileType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

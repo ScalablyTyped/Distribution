@@ -1,8 +1,8 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.signalMod.SignalRef
-import typings.vegaTypings.transformMod.ContourTransform
-import typings.vegaTypings.transformMod.FieldRef
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
+import typings.vegaTypings.typesSpecTransformMod.ContourTransform
+import typings.vegaTypings.typesSpecTransformMod.FieldRef
 import typings.vegaTypings.vegaTypingsStrings.contour
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

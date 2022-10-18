@@ -1,7 +1,7 @@
 package typings.rcOverflow
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcOverflow.overflowMod.FilledOverflowType
+import typings.rcOverflow.esOverflowMod.FilledOverflowType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

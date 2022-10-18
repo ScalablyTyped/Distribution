@@ -1,6 +1,5 @@
 package typings.nodeRedEditorClient.anon
 
-import typings.nodeRedEditorClient.nodeRedEditorClientInts.`0`
 import typings.nodeRedEditorClient.nodeRedEditorClientInts.`1`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -20,7 +19,7 @@ trait NodeInstanceNodePropertie extends StObject {
   
   val id: String = js.native
   
-  var inputs: (js.UndefOr[`0` | `1`]) & (`0` | `1`) = js.native
+  var inputs: (js.UndefOr[typings.nodeRedEditorClient.nodeRedEditorClientInts.`0` | `1`]) & (typings.nodeRedEditorClient.nodeRedEditorClientInts.`0` | `1`) = js.native
   
   var name: js.UndefOr[String] = js.native
   

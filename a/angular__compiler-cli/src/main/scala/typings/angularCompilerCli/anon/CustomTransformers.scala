@@ -1,11 +1,11 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.transformersApiMod.CompilerHost
-import typings.angularCompilerCli.transformersApiMod.CompilerOptions
-import typings.angularCompilerCli.transformersApiMod.EmitFlags
-import typings.angularCompilerCli.transformersApiMod.TsEmitArguments
-import typings.angularCompilerCli.transformersApiMod.TsEmitCallback
-import typings.angularCompilerCli.transformersApiMod.TsMergeEmitResultsCallback
+import typings.angularCompilerCli.srcTransformersApiMod.CompilerHost
+import typings.angularCompilerCli.srcTransformersApiMod.CompilerOptions
+import typings.angularCompilerCli.srcTransformersApiMod.EmitFlags
+import typings.angularCompilerCli.srcTransformersApiMod.TsEmitArguments
+import typings.angularCompilerCli.srcTransformersApiMod.TsEmitCallback
+import typings.angularCompilerCli.srcTransformersApiMod.TsMergeEmitResultsCallback
 import typings.std.Set
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.EmitResult
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CustomTransformers extends StObject {
   
-  var customTransformers: js.UndefOr[typings.angularCompilerCli.transformersApiMod.CustomTransformers] = js.undefined
+  var customTransformers: js.UndefOr[typings.angularCompilerCli.srcTransformersApiMod.CustomTransformers] = js.undefined
   
   var emitCallback: js.UndefOr[TsEmitCallback] = js.undefined
   
@@ -25,7 +25,7 @@ trait CustomTransformers extends StObject {
   
   var gatherDiagnostics: js.UndefOr[
     js.Function1[
-      /* program */ typings.angularCompilerCli.transformersApiMod.Program, 
+      /* program */ typings.angularCompilerCli.srcTransformersApiMod.Program, 
       js.Array[Diagnostic]
     ]
   ] = js.undefined
@@ -36,7 +36,7 @@ trait CustomTransformers extends StObject {
   
   var modifiedResourceFiles: js.UndefOr[Set[String] | Null] = js.undefined
   
-  var oldProgram: js.UndefOr[typings.angularCompilerCli.transformersApiMod.Program] = js.undefined
+  var oldProgram: js.UndefOr[typings.angularCompilerCli.srcTransformersApiMod.Program] = js.undefined
   
   var options: CompilerOptions
   
@@ -51,7 +51,7 @@ object CustomTransformers {
   
   extension [Self <: CustomTransformers](x: Self) {
     
-    inline def setCustomTransformers(value: typings.angularCompilerCli.transformersApiMod.CustomTransformers): Self = StObject.set(x, "customTransformers", value.asInstanceOf[js.Any])
+    inline def setCustomTransformers(value: typings.angularCompilerCli.srcTransformersApiMod.CustomTransformers): Self = StObject.set(x, "customTransformers", value.asInstanceOf[js.Any])
     
     inline def setCustomTransformersUndefined: Self = StObject.set(x, "customTransformers", js.undefined)
     
@@ -67,7 +67,9 @@ object CustomTransformers {
     
     inline def setForceEmitUndefined: Self = StObject.set(x, "forceEmit", js.undefined)
     
-    inline def setGatherDiagnostics(value: /* program */ typings.angularCompilerCli.transformersApiMod.Program => js.Array[Diagnostic]): Self = StObject.set(x, "gatherDiagnostics", js.Any.fromFunction1(value))
+    inline def setGatherDiagnostics(
+      value: /* program */ typings.angularCompilerCli.srcTransformersApiMod.Program => js.Array[Diagnostic]
+    ): Self = StObject.set(x, "gatherDiagnostics", js.Any.fromFunction1(value))
     
     inline def setGatherDiagnosticsUndefined: Self = StObject.set(x, "gatherDiagnostics", js.undefined)
     
@@ -85,7 +87,7 @@ object CustomTransformers {
     
     inline def setModifiedResourceFilesUndefined: Self = StObject.set(x, "modifiedResourceFiles", js.undefined)
     
-    inline def setOldProgram(value: typings.angularCompilerCli.transformersApiMod.Program): Self = StObject.set(x, "oldProgram", value.asInstanceOf[js.Any])
+    inline def setOldProgram(value: typings.angularCompilerCli.srcTransformersApiMod.Program): Self = StObject.set(x, "oldProgram", value.asInstanceOf[js.Any])
     
     inline def setOldProgramUndefined: Self = StObject.set(x, "oldProgram", js.undefined)
     

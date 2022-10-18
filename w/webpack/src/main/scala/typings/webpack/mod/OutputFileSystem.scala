@@ -1,5 +1,6 @@
 package typings.webpack.mod
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,33 +16,17 @@ trait OutputFileSystem extends StObject {
   var lstat: js.UndefOr[
     js.Function2[
       /* arg0 */ String, 
-      /* arg1 */ js.Function2[
-        /* arg0 */ js.UndefOr[
-          Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any)
-        ], 
-        /* arg1 */ js.UndefOr[IStats], 
-        Unit
-      ], 
+      /* arg1 */ js.Function2[/* arg0 */ js.UndefOr[Null | ErrnoException], /* arg1 */ js.UndefOr[IStats], Unit], 
       Unit
     ]
   ] = js.native
   
-  def mkdir(
-    arg0: String,
-    arg1: js.Function1[
-      /* arg0 */ js.UndefOr[
-        Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any)
-      ], 
-      Unit
-    ]
-  ): Unit = js.native
+  def mkdir(arg0: String, arg1: js.Function1[/* arg0 */ js.UndefOr[Null | ErrnoException], Unit]): Unit = js.native
   
   def readFile(
     arg0: String,
     arg1: js.Function2[
-      /* arg0 */ js.UndefOr[
-        Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any)
-      ], 
+      /* arg0 */ js.UndefOr[Null | ErrnoException], 
       /* arg1 */ js.UndefOr[String | Buffer], 
       Unit
     ]
@@ -51,9 +36,7 @@ trait OutputFileSystem extends StObject {
     js.Function2[
       /* arg0 */ String, 
       /* arg1 */ js.Function2[
-        /* arg0 */ js.UndefOr[
-          Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any)
-        ], 
+        /* arg0 */ js.UndefOr[Null | ErrnoException], 
         /* arg1 */ js.UndefOr[js.Array[Buffer | IDirent | String]], 
         Unit
       ], 
@@ -66,58 +49,24 @@ trait OutputFileSystem extends StObject {
   var rmdir: js.UndefOr[
     js.Function2[
       /* arg0 */ String, 
-      /* arg1 */ js.Function1[
-        /* arg0 */ js.UndefOr[
-          Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any)
-        ], 
-        Unit
-      ], 
+      /* arg1 */ js.Function1[/* arg0 */ js.UndefOr[Null | ErrnoException], Unit], 
       Unit
     ]
   ] = js.native
   
   def stat(
     arg0: String,
-    arg1: js.Function2[
-      /* arg0 */ js.UndefOr[
-        Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any)
-      ], 
-      /* arg1 */ js.UndefOr[IStats], 
-      Unit
-    ]
+    arg1: js.Function2[/* arg0 */ js.UndefOr[Null | ErrnoException], /* arg1 */ js.UndefOr[IStats], Unit]
   ): Unit = js.native
   
   var unlink: js.UndefOr[
     js.Function2[
       /* arg0 */ String, 
-      /* arg1 */ js.Function1[
-        /* arg0 */ js.UndefOr[
-          Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any)
-        ], 
-        Unit
-      ], 
+      /* arg1 */ js.Function1[/* arg0 */ js.UndefOr[Null | ErrnoException], Unit], 
       Unit
     ]
   ] = js.native
   
-  def writeFile(
-    arg0: String,
-    arg1: String,
-    arg2: js.Function1[
-      /* arg0 */ js.UndefOr[
-        Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any)
-      ], 
-      Unit
-    ]
-  ): Unit = js.native
-  def writeFile(
-    arg0: String,
-    arg1: Buffer,
-    arg2: js.Function1[
-      /* arg0 */ js.UndefOr[
-        Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any)
-      ], 
-      Unit
-    ]
-  ): Unit = js.native
+  def writeFile(arg0: String, arg1: String, arg2: js.Function1[/* arg0 */ js.UndefOr[Null | ErrnoException], Unit]): Unit = js.native
+  def writeFile(arg0: String, arg1: Buffer, arg2: js.Function1[/* arg0 */ js.UndefOr[Null | ErrnoException], Unit]): Unit = js.native
 }

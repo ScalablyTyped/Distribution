@@ -1,7 +1,7 @@
 package typings.inversifyRestifyUtils
 
-import typings.inversifyRestifyUtils.interfacesMod.interfaces.StrOrRegex
-import typings.inversifyRestifyUtils.interfacesMod.interfaces._RouteOptions
+import typings.inversifyRestifyUtils.dtsInterfacesMod.interfaces.StrOrRegex
+import typings.inversifyRestifyUtils.dtsInterfacesMod.interfaces._RouteOptions
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

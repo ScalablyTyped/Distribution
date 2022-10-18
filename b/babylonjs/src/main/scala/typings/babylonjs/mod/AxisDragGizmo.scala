@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "AxisDragGizmo")
 @js.native
 open class AxisDragGizmo protected ()
-  extends typings.babylonjs.legacyMod.AxisDragGizmo {
+  extends typings.babylonjs.legacyLegacyMod.AxisDragGizmo {
   /**
     * Creates an AxisDragGizmo
     * @param dragAxis The axis which the gizmo will be able to drag on
@@ -17,96 +17,99 @@ open class AxisDragGizmo protected ()
     * @param parent
     * @param thickness display gizmo axis thickness
     */
-  def this(dragAxis: typings.babylonjs.mathVectorMod.Vector3) = this()
-  def this(dragAxis: typings.babylonjs.mathVectorMod.Vector3, color: typings.babylonjs.mathColorMod.Color3) = this()
+  def this(dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     color: Unit,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: Unit,
-    gizmoLayer: Unit,
-    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
-  ) = this()
-  def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: Unit,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
-  ) = this()
-  def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: Unit,
-    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
-  ) = this()
-  def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
-  ) = this()
-  def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     color: Unit,
     gizmoLayer: Unit,
-    parent: Unit,
-    thickness: Double
+    parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo]
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     color: Unit,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo]
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
     gizmoLayer: Unit,
-    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
-    thickness: Double
+    parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo]
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo]
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     color: Unit,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    parent: Unit,
-    thickness: Double
-  ) = this()
-  def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: Unit,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
-    thickness: Double
-  ) = this()
-  def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
     gizmoLayer: Unit,
     parent: Unit,
     thickness: Double
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: Unit,
     gizmoLayer: Unit,
-    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
+    parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo],
     thickness: Double
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: Unit,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
     parent: Unit,
     thickness: Double
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: Unit,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo],
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
+    gizmoLayer: Unit,
+    parent: Unit,
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
+    gizmoLayer: Unit,
+    parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo],
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    parent: Unit,
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo],
     thickness: Double
   ) = this()
 }
@@ -122,28 +125,31 @@ object AxisDragGizmo {
     */
   inline def _CreateArrow(
     scene: typings.babylonjs.sceneMod.Scene,
-    material: typings.babylonjs.standardMaterialMod.StandardMaterial
-  ): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
+    material: typings.babylonjs.materialsStandardMaterialMod.StandardMaterial
+  ): typings.babylonjs.meshesTransformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesTransformNodeMod.TransformNode]
   inline def _CreateArrow(
     scene: typings.babylonjs.sceneMod.Scene,
-    material: typings.babylonjs.standardMaterialMod.StandardMaterial,
+    material: typings.babylonjs.materialsStandardMaterialMod.StandardMaterial,
     thickness: Double
-  ): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
+  ): typings.babylonjs.meshesTransformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesTransformNodeMod.TransformNode]
   inline def _CreateArrow(
     scene: typings.babylonjs.sceneMod.Scene,
-    material: typings.babylonjs.standardMaterialMod.StandardMaterial,
+    material: typings.babylonjs.materialsStandardMaterialMod.StandardMaterial,
     thickness: Double,
     isCollider: Boolean
-  ): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
+  ): typings.babylonjs.meshesTransformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesTransformNodeMod.TransformNode]
   inline def _CreateArrow(
     scene: typings.babylonjs.sceneMod.Scene,
-    material: typings.babylonjs.standardMaterialMod.StandardMaterial,
+    material: typings.babylonjs.materialsStandardMaterialMod.StandardMaterial,
     thickness: Unit,
     isCollider: Boolean
-  ): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
+  ): typings.babylonjs.meshesTransformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesTransformNodeMod.TransformNode]
   
   /**
     * @internal
     */
-  inline def _CreateArrowInstance(scene: typings.babylonjs.sceneMod.Scene, arrow: typings.babylonjs.transformNodeMod.TransformNode): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrowInstance")(scene.asInstanceOf[js.Any], arrow.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
+  inline def _CreateArrowInstance(
+    scene: typings.babylonjs.sceneMod.Scene,
+    arrow: typings.babylonjs.meshesTransformNodeMod.TransformNode
+  ): typings.babylonjs.meshesTransformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrowInstance")(scene.asInstanceOf[js.Any], arrow.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesTransformNodeMod.TransformNode]
 }

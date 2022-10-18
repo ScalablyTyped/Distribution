@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.activityIndicatorMod.default
 import typings.antDesignReactNative.anon.Animating
+import typings.antDesignReactNative.libActivityIndicatorMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

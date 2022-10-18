@@ -3,6 +3,7 @@ package typings.tabris.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.tabris.mod.Action
 import typings.tabris.mod.AnimationOptions
+import typings.tabris.mod.Bounds
 import typings.tabris.mod.BoxDimensions
 import typings.tabris.mod.ChangeListeners
 import typings.tabris.mod.ColorValue
@@ -126,10 +127,10 @@ trait OmitNavigationViewPageAct[PageType /* <: Page */, ActionType /* <: Action 
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `2`[Target], rules: RuleSet[NavigationView[PageType, ActionType]]): NavigationView[PageType, ActionType]
+  def _apply[Target](options: `8`[Target], rules: RuleSet[NavigationView[PageType, ActionType]]): NavigationView[PageType, ActionType]
   @JSName("_apply")
   var _apply_Original: js.Function2[
-    /* options */ `2`[NavigationView[PageType, ActionType]], 
+    /* options */ `8`[NavigationView[PageType, ActionType]], 
     /* rules */ RuleSet[NavigationView[PageType, ActionType]], 
     NavigationView[PageType, ActionType]
   ]
@@ -292,7 +293,7 @@ trait OmitNavigationViewPageAct[PageType /* <: Page */, ActionType /* <: Action 
   @JSName("_wasSet")
   var _wasSet_Original: js.Function1[/* propertyName */ String, Boolean]
   
-  var absoluteBounds: typings.tabris.mod.Bounds
+  var absoluteBounds: Bounds
   
   var actionColor: ColorValue
   
@@ -312,10 +313,10 @@ trait OmitNavigationViewPageAct[PageType /* <: Page */, ActionType /* <: Action 
   var append_Original: js.Function1[/* repeated */ Page | Action, NavigationView[PageType, ActionType]]
   
   @JSName("apply")
-  def apply[Target](options: `2`[Target], rules: RuleSet[NavigationView[PageType, ActionType]]): NavigationView[PageType, ActionType]
+  def apply[Target](options: `8`[Target], rules: RuleSet[NavigationView[PageType, ActionType]]): NavigationView[PageType, ActionType]
   @JSName("apply")
   var apply_Original: js.Function2[
-    /* options */ `2`[NavigationView[PageType, ActionType]], 
+    /* options */ `8`[NavigationView[PageType, ActionType]], 
     /* rules */ RuleSet[NavigationView[PageType, ActionType]], 
     NavigationView[PageType, ActionType]
   ]
@@ -326,7 +327,7 @@ trait OmitNavigationViewPageAct[PageType /* <: Page */, ActionType /* <: Action 
   
   var bottom: ConstraintValue
   
-  var bounds: typings.tabris.mod.Bounds
+  var bounds: Bounds
   
   var centerX: typings.tabris.mod.Offset | auto | `true`
   
@@ -635,7 +636,7 @@ object OmitNavigationViewPageAct {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `2`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType],
+    _apply: (/* options */ `8`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType],
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Page | Action, Page | Action]] => WidgetCollection[Page | Action],
@@ -672,14 +673,14 @@ object OmitNavigationViewPageAct {
     _trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean,
     _triggerChangeEvent: (/* propertyName */ String, /* newEncodedValue */ Any) => Unit,
     _wasSet: /* propertyName */ String => Boolean,
-    absoluteBounds: typings.tabris.mod.Bounds,
+    absoluteBounds: Bounds,
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Page | Action => NavigationView[PageType, ActionType],
     appendTo: /* parent */ Composite[Widget[Any]] => NavigationView[PageType, ActionType],
-    apply: (/* options */ `2`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType],
+    apply: (/* options */ `8`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType],
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
-    bounds: typings.tabris.mod.Bounds,
+    bounds: Bounds,
     centerX: typings.tabris.mod.Offset | auto | `true`,
     centerY: typings.tabris.mod.Offset | auto | `true`,
     children: /* selector */ js.UndefOr[Selector[Page | Action, Page | Action]] => WidgetCollection[Page | Action],
@@ -803,7 +804,7 @@ object OmitNavigationViewPageAct {
     
     inline def set$trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "$trigger", js.Any.fromFunction2(value))
     
-    inline def setAbsoluteBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
+    inline def setAbsoluteBounds(value: Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
     
     inline def setActionColor(value: ColorValue): Self = StObject.set(x, "actionColor", value.asInstanceOf[js.Any])
     
@@ -820,7 +821,7 @@ object OmitNavigationViewPageAct {
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => NavigationView[PageType, ActionType]): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
     inline def setApply(
-      value: (/* options */ `2`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType]
+      value: (/* options */ `8`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType]
     ): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
@@ -831,7 +832,7 @@ object OmitNavigationViewPageAct {
     
     inline def setBottom(value: ConstraintValue): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    inline def setBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     inline def setCenterX(value: typings.tabris.mod.Offset | auto | `true`): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
@@ -1090,7 +1091,7 @@ object OmitNavigationViewPageAct {
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
     inline def set_apply(
-      value: (/* options */ `2`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType]
+      value: (/* options */ `8`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType]
     ): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))

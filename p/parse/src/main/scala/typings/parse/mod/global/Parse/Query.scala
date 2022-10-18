@@ -142,52 +142,52 @@ open class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   def containedBy(
     key: createdAt,
     values: js.Array[
-      (/* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['createdAt'] */ js.Any) | String
+      /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['createdAt'] */ js.Any
     ]
   ): this.type = js.native
   def containedBy(
     key: objectId,
     values: js.Array[
-      (/* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['objectId'] */ js.Any) | String
+      /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['objectId'] */ js.Any
     ]
   ): this.type = js.native
   def containedBy(
     key: updatedAt,
     values: js.Array[
-      (/* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['updatedAt'] */ js.Any) | String
+      /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['updatedAt'] */ js.Any
     ]
   ): this.type = js.native
   @JSName("containedBy")
   def containedBy_attributes[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](
     key: K,
     values: js.Array[
-      (/* import warning: importer.ImportType#apply Failed type conversion: T['attributes'][K] */ js.Any) | String
+      /* import warning: importer.ImportType#apply Failed type conversion: T['attributes'][K] */ js.Any
     ]
   ): this.type = js.native
   
   def containedIn(
     key: createdAt,
     values: js.Array[
-      (/* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['createdAt'] */ js.Any) | String
+      /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['createdAt'] */ js.Any
     ]
   ): this.type = js.native
   def containedIn(
     key: objectId,
     values: js.Array[
-      (/* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['objectId'] */ js.Any) | String
+      /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['objectId'] */ js.Any
     ]
   ): this.type = js.native
   def containedIn(
     key: updatedAt,
     values: js.Array[
-      (/* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['updatedAt'] */ js.Any) | String
+      /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['updatedAt'] */ js.Any
     ]
   ): this.type = js.native
   @JSName("containedIn")
   def containedIn_attributes[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](
     key: K,
     values: js.Array[
-      (/* import warning: importer.ImportType#apply Failed type conversion: T['attributes'][K] */ js.Any) | String
+      /* import warning: importer.ImportType#apply Failed type conversion: T['attributes'][K] */ js.Any
     ]
   ): this.type = js.native
   
@@ -281,23 +281,18 @@ open class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   @JSName("endsWith")
   def endsWith_updatedAt(key: updatedAt, suffix: String): this.type = js.native
   
-  def equalTo(key: createdAt, value: Any | Pointer): this.type = js.native
   def equalTo(
     key: createdAt,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['createdAt'] */ js.Any
   ): this.type = js.native
-  def equalTo(key: objectId, value: Any | Pointer): this.type = js.native
   def equalTo(
     key: objectId,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['objectId'] */ js.Any
   ): this.type = js.native
-  def equalTo(key: updatedAt, value: Any | Pointer): this.type = js.native
   def equalTo(
     key: updatedAt,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['updatedAt'] */ js.Any
   ): this.type = js.native
-  @JSName("equalTo")
-  def equalTo_attributes[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, value: Any | Pointer): this.type = js.native
   @JSName("equalTo")
   def equalTo_attributes[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](
     key: K,
@@ -547,23 +542,18 @@ open class Query[T /* <: Object[Attributes] */] protected () extends StObject {
     ]
   ): this.type = js.native
   
-  def notEqualTo(key: createdAt, value: Any | Pointer): this.type = js.native
   def notEqualTo(
     key: createdAt,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['createdAt'] */ js.Any
   ): this.type = js.native
-  def notEqualTo(key: objectId, value: Any | Pointer): this.type = js.native
   def notEqualTo(
     key: objectId,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['objectId'] */ js.Any
   ): this.type = js.native
-  def notEqualTo(key: updatedAt, value: Any | Pointer): this.type = js.native
   def notEqualTo(
     key: updatedAt,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T['attributes']['updatedAt'] */ js.Any
   ): this.type = js.native
-  @JSName("notEqualTo")
-  def notEqualTo_attributes[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, value: Any | Pointer): this.type = js.native
   @JSName("notEqualTo")
   def notEqualTo_attributes[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](
     key: K,

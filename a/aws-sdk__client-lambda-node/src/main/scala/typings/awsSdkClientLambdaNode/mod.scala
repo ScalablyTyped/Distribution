@@ -41,112 +41,112 @@ object mod {
   @JSImport("@aws-sdk/client-lambda-node", "AddPermissionCommand")
   @js.native
   open class AddPermissionCommand protected ()
-    extends typings.awsSdkClientLambdaNode.addPermissionCommandMod.AddPermissionCommand {
+    extends typings.awsSdkClientLambdaNode.commandsAddPermissionCommandMod.AddPermissionCommand {
     def this(input: AddPermissionInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "CreateAliasCommand")
   @js.native
   open class CreateAliasCommand protected ()
-    extends typings.awsSdkClientLambdaNode.createAliasCommandMod.CreateAliasCommand {
+    extends typings.awsSdkClientLambdaNode.commandsCreateAliasCommandMod.CreateAliasCommand {
     def this(input: CreateAliasInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "CreateEventSourceMappingCommand")
   @js.native
   open class CreateEventSourceMappingCommand protected ()
-    extends typings.awsSdkClientLambdaNode.createEventSourceMappingCommandMod.CreateEventSourceMappingCommand {
+    extends typings.awsSdkClientLambdaNode.commandsCreateEventSourceMappingCommandMod.CreateEventSourceMappingCommand {
     def this(input: CreateEventSourceMappingInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "CreateFunctionCommand")
   @js.native
   open class CreateFunctionCommand protected ()
-    extends typings.awsSdkClientLambdaNode.createFunctionCommandMod.CreateFunctionCommand {
+    extends typings.awsSdkClientLambdaNode.commandsCreateFunctionCommandMod.CreateFunctionCommand {
     def this(input: CreateFunctionInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "DeleteAliasCommand")
   @js.native
   open class DeleteAliasCommand protected ()
-    extends typings.awsSdkClientLambdaNode.deleteAliasCommandMod.DeleteAliasCommand {
+    extends typings.awsSdkClientLambdaNode.commandsDeleteAliasCommandMod.DeleteAliasCommand {
     def this(input: DeleteAliasInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "DeleteEventSourceMappingCommand")
   @js.native
   open class DeleteEventSourceMappingCommand protected ()
-    extends typings.awsSdkClientLambdaNode.deleteEventSourceMappingCommandMod.DeleteEventSourceMappingCommand {
+    extends typings.awsSdkClientLambdaNode.commandsDeleteEventSourceMappingCommandMod.DeleteEventSourceMappingCommand {
     def this(input: DeleteEventSourceMappingInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "DeleteFunctionCommand")
   @js.native
   open class DeleteFunctionCommand protected ()
-    extends typings.awsSdkClientLambdaNode.deleteFunctionCommandMod.DeleteFunctionCommand {
+    extends typings.awsSdkClientLambdaNode.commandsDeleteFunctionCommandMod.DeleteFunctionCommand {
     def this(input: DeleteFunctionInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "DeleteFunctionConcurrencyCommand")
   @js.native
   open class DeleteFunctionConcurrencyCommand protected ()
-    extends typings.awsSdkClientLambdaNode.deleteFunctionConcurrencyCommandMod.DeleteFunctionConcurrencyCommand {
+    extends typings.awsSdkClientLambdaNode.commandsDeleteFunctionConcurrencyCommandMod.DeleteFunctionConcurrencyCommand {
     def this(input: DeleteFunctionConcurrencyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "GetAccountSettingsCommand")
   @js.native
   open class GetAccountSettingsCommand protected ()
-    extends typings.awsSdkClientLambdaNode.getAccountSettingsCommandMod.GetAccountSettingsCommand {
+    extends typings.awsSdkClientLambdaNode.commandsGetAccountSettingsCommandMod.GetAccountSettingsCommand {
     def this(input: GetAccountSettingsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "GetAliasCommand")
   @js.native
   open class GetAliasCommand protected ()
-    extends typings.awsSdkClientLambdaNode.getAliasCommandMod.GetAliasCommand {
+    extends typings.awsSdkClientLambdaNode.commandsGetAliasCommandMod.GetAliasCommand {
     def this(input: GetAliasInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "GetEventSourceMappingCommand")
   @js.native
   open class GetEventSourceMappingCommand protected ()
-    extends typings.awsSdkClientLambdaNode.getEventSourceMappingCommandMod.GetEventSourceMappingCommand {
+    extends typings.awsSdkClientLambdaNode.commandsGetEventSourceMappingCommandMod.GetEventSourceMappingCommand {
     def this(input: GetEventSourceMappingInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "GetFunctionCommand")
   @js.native
   open class GetFunctionCommand protected ()
-    extends typings.awsSdkClientLambdaNode.getFunctionCommandMod.GetFunctionCommand {
+    extends typings.awsSdkClientLambdaNode.commandsGetFunctionCommandMod.GetFunctionCommand {
     def this(input: GetFunctionInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "GetFunctionConfigurationCommand")
   @js.native
   open class GetFunctionConfigurationCommand protected ()
-    extends typings.awsSdkClientLambdaNode.getFunctionConfigurationCommandMod.GetFunctionConfigurationCommand {
+    extends typings.awsSdkClientLambdaNode.commandsGetFunctionConfigurationCommandMod.GetFunctionConfigurationCommand {
     def this(input: GetFunctionConfigurationInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "GetPolicyCommand")
   @js.native
   open class GetPolicyCommand protected ()
-    extends typings.awsSdkClientLambdaNode.getPolicyCommandMod.GetPolicyCommand {
+    extends typings.awsSdkClientLambdaNode.commandsGetPolicyCommandMod.GetPolicyCommand {
     def this(input: GetPolicyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "InvokeAsyncCommand")
   @js.native
   open class InvokeAsyncCommand protected ()
-    extends typings.awsSdkClientLambdaNode.invokeAsyncCommandMod.InvokeAsyncCommand {
+    extends typings.awsSdkClientLambdaNode.commandsInvokeAsyncCommandMod.InvokeAsyncCommand {
     def this(input: InvokeAsyncInput[Readable]) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "InvokeCommand")
   @js.native
   open class InvokeCommand protected ()
-    extends typings.awsSdkClientLambdaNode.invokeCommandMod.InvokeCommand {
+    extends typings.awsSdkClientLambdaNode.commandsInvokeCommandMod.InvokeCommand {
     def this(input: InvokeInput) = this()
   }
   
@@ -167,98 +167,98 @@ object mod {
   @JSImport("@aws-sdk/client-lambda-node", "ListAliasesCommand")
   @js.native
   open class ListAliasesCommand protected ()
-    extends typings.awsSdkClientLambdaNode.listAliasesCommandMod.ListAliasesCommand {
+    extends typings.awsSdkClientLambdaNode.commandsListAliasesCommandMod.ListAliasesCommand {
     def this(input: ListAliasesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "ListEventSourceMappingsCommand")
   @js.native
   open class ListEventSourceMappingsCommand protected ()
-    extends typings.awsSdkClientLambdaNode.listEventSourceMappingsCommandMod.ListEventSourceMappingsCommand {
+    extends typings.awsSdkClientLambdaNode.commandsListEventSourceMappingsCommandMod.ListEventSourceMappingsCommand {
     def this(input: ListEventSourceMappingsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "ListFunctionsCommand")
   @js.native
   open class ListFunctionsCommand protected ()
-    extends typings.awsSdkClientLambdaNode.listFunctionsCommandMod.ListFunctionsCommand {
+    extends typings.awsSdkClientLambdaNode.commandsListFunctionsCommandMod.ListFunctionsCommand {
     def this(input: ListFunctionsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "ListTagsCommand")
   @js.native
   open class ListTagsCommand protected ()
-    extends typings.awsSdkClientLambdaNode.listTagsCommandMod.ListTagsCommand {
+    extends typings.awsSdkClientLambdaNode.commandsListTagsCommandMod.ListTagsCommand {
     def this(input: ListTagsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "ListVersionsByFunctionCommand")
   @js.native
   open class ListVersionsByFunctionCommand protected ()
-    extends typings.awsSdkClientLambdaNode.listVersionsByFunctionCommandMod.ListVersionsByFunctionCommand {
+    extends typings.awsSdkClientLambdaNode.commandsListVersionsByFunctionCommandMod.ListVersionsByFunctionCommand {
     def this(input: ListVersionsByFunctionInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "PublishVersionCommand")
   @js.native
   open class PublishVersionCommand protected ()
-    extends typings.awsSdkClientLambdaNode.publishVersionCommandMod.PublishVersionCommand {
+    extends typings.awsSdkClientLambdaNode.commandsPublishVersionCommandMod.PublishVersionCommand {
     def this(input: PublishVersionInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "PutFunctionConcurrencyCommand")
   @js.native
   open class PutFunctionConcurrencyCommand protected ()
-    extends typings.awsSdkClientLambdaNode.putFunctionConcurrencyCommandMod.PutFunctionConcurrencyCommand {
+    extends typings.awsSdkClientLambdaNode.commandsPutFunctionConcurrencyCommandMod.PutFunctionConcurrencyCommand {
     def this(input: PutFunctionConcurrencyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "RemovePermissionCommand")
   @js.native
   open class RemovePermissionCommand protected ()
-    extends typings.awsSdkClientLambdaNode.removePermissionCommandMod.RemovePermissionCommand {
+    extends typings.awsSdkClientLambdaNode.commandsRemovePermissionCommandMod.RemovePermissionCommand {
     def this(input: RemovePermissionInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "TagResourceCommand")
   @js.native
   open class TagResourceCommand protected ()
-    extends typings.awsSdkClientLambdaNode.tagResourceCommandMod.TagResourceCommand {
+    extends typings.awsSdkClientLambdaNode.commandsTagResourceCommandMod.TagResourceCommand {
     def this(input: TagResourceInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "UntagResourceCommand")
   @js.native
   open class UntagResourceCommand protected ()
-    extends typings.awsSdkClientLambdaNode.untagResourceCommandMod.UntagResourceCommand {
+    extends typings.awsSdkClientLambdaNode.commandsUntagResourceCommandMod.UntagResourceCommand {
     def this(input: UntagResourceInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "UpdateAliasCommand")
   @js.native
   open class UpdateAliasCommand protected ()
-    extends typings.awsSdkClientLambdaNode.updateAliasCommandMod.UpdateAliasCommand {
+    extends typings.awsSdkClientLambdaNode.commandsUpdateAliasCommandMod.UpdateAliasCommand {
     def this(input: UpdateAliasInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "UpdateEventSourceMappingCommand")
   @js.native
   open class UpdateEventSourceMappingCommand protected ()
-    extends typings.awsSdkClientLambdaNode.updateEventSourceMappingCommandMod.UpdateEventSourceMappingCommand {
+    extends typings.awsSdkClientLambdaNode.commandsUpdateEventSourceMappingCommandMod.UpdateEventSourceMappingCommand {
     def this(input: UpdateEventSourceMappingInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "UpdateFunctionCodeCommand")
   @js.native
   open class UpdateFunctionCodeCommand protected ()
-    extends typings.awsSdkClientLambdaNode.updateFunctionCodeCommandMod.UpdateFunctionCodeCommand {
+    extends typings.awsSdkClientLambdaNode.commandsUpdateFunctionCodeCommandMod.UpdateFunctionCodeCommand {
     def this(input: UpdateFunctionCodeInput) = this()
   }
   
   @JSImport("@aws-sdk/client-lambda-node", "UpdateFunctionConfigurationCommand")
   @js.native
   open class UpdateFunctionConfigurationCommand protected ()
-    extends typings.awsSdkClientLambdaNode.updateFunctionConfigurationCommandMod.UpdateFunctionConfigurationCommand {
+    extends typings.awsSdkClientLambdaNode.commandsUpdateFunctionConfigurationCommandMod.UpdateFunctionConfigurationCommand {
     def this(input: UpdateFunctionConfigurationInput) = this()
   }
   

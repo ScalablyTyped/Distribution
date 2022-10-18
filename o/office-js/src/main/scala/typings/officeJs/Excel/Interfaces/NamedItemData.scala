@@ -1,5 +1,6 @@
 package typings.officeJs.Excel.Interfaces
 
+import typings.officeJs.Excel.CellValue
 import typings.officeJs.Excel.NamedItemScope
 import typings.officeJs.Excel.NamedItemType
 import typings.officeJs.officeJsStrings.Array
@@ -76,6 +77,26 @@ trait NamedItemData extends StObject {
   var value: js.UndefOr[Any] = js.undefined
   
   /**
+    * A JSON representation of the values in this named item.
+    Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  var valueAsJson: js.UndefOr[CellValue | String] = js.undefined
+  
+  /**
+    * A JSON representation of the values in this named item.
+    Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  var valueAsJsonLocal: js.UndefOr[CellValue | String] = js.undefined
+  
+  /**
     * Specifies if the object is visible.
     *
     * @remarks
@@ -119,6 +140,14 @@ object NamedItemData {
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueAsJson(value: CellValue | String): Self = StObject.set(x, "valueAsJson", value.asInstanceOf[js.Any])
+    
+    inline def setValueAsJsonLocal(value: CellValue | String): Self = StObject.set(x, "valueAsJsonLocal", value.asInstanceOf[js.Any])
+    
+    inline def setValueAsJsonLocalUndefined: Self = StObject.set(x, "valueAsJsonLocal", js.undefined)
+    
+    inline def setValueAsJsonUndefined: Self = StObject.set(x, "valueAsJson", js.undefined)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

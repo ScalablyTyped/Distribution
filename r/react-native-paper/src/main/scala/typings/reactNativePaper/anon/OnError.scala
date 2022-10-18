@@ -9,7 +9,7 @@ import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.avatarImageMod.AvatarImageSource
+import typings.reactNativePaper.libTypescriptComponentsAvatarAvatarImageMod.AvatarImageSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,13 +63,13 @@ trait OnError extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
 }
 object OnError {
   
   inline def apply(
     source: AvatarImageSource,
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   ): OnError = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnError]
@@ -117,6 +117,6 @@ object OnError {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

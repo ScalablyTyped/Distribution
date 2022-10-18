@@ -1,10 +1,10 @@
 package typings.colord
 
-import typings.colord.a11yMod.ReadabilityOptions
-import typings.colord.a11yMod.colordColordAugmentingMod.Colord
-import typings.colord.harmoniesMod.HarmonyType
-import typings.colord.minifyMod.MinificationOptions
-import typings.colord.namesMod.ConvertOptions
+import typings.colord.pluginsA11yMod.ReadabilityOptions
+import typings.colord.pluginsA11yMod.colordColordAugmentingMod.Colord
+import typings.colord.pluginsHarmoniesMod.HarmonyType
+import typings.colord.pluginsMinifyMod.MinificationOptions
+import typings.colord.pluginsNamesMod.ConvertOptions
 import typings.colord.typesMod.AnyColor
 import typings.colord.typesMod.CmykaColor
 import typings.colord.typesMod.HslaColor
@@ -66,7 +66,7 @@ object colordMod {
       * Returns a value in [0, 1] range.
       */
     def delta(): Double = js.native
-    def delta(color: typings.colord.labMod.colordColordAugmentingMod.Colord): Double = js.native
+    def delta(color: typings.colord.pluginsLabMod.colordColordAugmentingMod.Colord): Double = js.native
     def delta(color: AnyColor): Double = js.native
     
     /**
@@ -83,8 +83,8 @@ object colordMod {
     /**
       * Returns an array of harmony colors as `Colord` instances.
       */
-    def harmonies(): js.Array[typings.colord.harmoniesMod.colordColordAugmentingMod.Colord] = js.native
-    def harmonies(`type`: HarmonyType): js.Array[typings.colord.harmoniesMod.colordColordAugmentingMod.Colord] = js.native
+    def harmonies(): js.Array[typings.colord.pluginsHarmoniesMod.colordColordAugmentingMod.Colord] = js.native
+    def harmonies(`type`: HarmonyType): js.Array[typings.colord.pluginsHarmoniesMod.colordColordAugmentingMod.Colord] = js.native
     
     /**
       * Allows to get or change a hue value.
@@ -148,13 +148,13 @@ object colordMod {
     def minify(): String = js.native
     def minify(options: MinificationOptions): String = js.native
     
-    def mix(color2: typings.colord.mixMod.colordColordAugmentingMod.Colord): typings.colord.mixMod.colordColordAugmentingMod.Colord = js.native
-    def mix(color2: typings.colord.mixMod.colordColordAugmentingMod.Colord, ratio: Double): typings.colord.mixMod.colordColordAugmentingMod.Colord = js.native
+    def mix(color2: typings.colord.pluginsMixMod.colordColordAugmentingMod.Colord): typings.colord.pluginsMixMod.colordColordAugmentingMod.Colord = js.native
+    def mix(color2: typings.colord.pluginsMixMod.colordColordAugmentingMod.Colord, ratio: Double): typings.colord.pluginsMixMod.colordColordAugmentingMod.Colord = js.native
     /**
       * Produces a mixture of two colors through CIE LAB color space and returns a new Colord instance.
       */
-    def mix(color2: AnyColor): typings.colord.mixMod.colordColordAugmentingMod.Colord = js.native
-    def mix(color2: AnyColor, ratio: Double): typings.colord.mixMod.colordColordAugmentingMod.Colord = js.native
+    def mix(color2: AnyColor): typings.colord.pluginsMixMod.colordColordAugmentingMod.Colord = js.native
+    def mix(color2: AnyColor, ratio: Double): typings.colord.pluginsMixMod.colordColordAugmentingMod.Colord = js.native
     
     /* private */ val parsed: Any = js.native
     
@@ -175,14 +175,14 @@ object colordMod {
     /**
       * Generates a shades palette based on original color.
       */
-    def shades(): js.Array[typings.colord.mixMod.colordColordAugmentingMod.Colord] = js.native
-    def shades(count: Double): js.Array[typings.colord.mixMod.colordColordAugmentingMod.Colord] = js.native
+    def shades(): js.Array[typings.colord.pluginsMixMod.colordColordAugmentingMod.Colord] = js.native
+    def shades(count: Double): js.Array[typings.colord.pluginsMixMod.colordColordAugmentingMod.Colord] = js.native
     
     /**
       * Generates a tints palette based on original color.
       */
-    def tints(): js.Array[typings.colord.mixMod.colordColordAugmentingMod.Colord] = js.native
-    def tints(count: Double): js.Array[typings.colord.mixMod.colordColordAugmentingMod.Colord] = js.native
+    def tints(): js.Array[typings.colord.pluginsMixMod.colordColordAugmentingMod.Colord] = js.native
+    def tints(count: Double): js.Array[typings.colord.pluginsMixMod.colordColordAugmentingMod.Colord] = js.native
     
     /**
       * Converts a color to CMYK color space and returns an object.
@@ -274,8 +274,8 @@ object colordMod {
     /**
       * Generates a tones palette based on original color.
       */
-    def tones(): js.Array[typings.colord.mixMod.colordColordAugmentingMod.Colord] = js.native
-    def tones(count: Double): js.Array[typings.colord.mixMod.colordColordAugmentingMod.Colord] = js.native
+    def tones(): js.Array[typings.colord.pluginsMixMod.colordColordAugmentingMod.Colord] = js.native
+    def tones(count: Double): js.Array[typings.colord.pluginsMixMod.colordColordAugmentingMod.Colord] = js.native
   }
   
   inline def colord(input: Colord_): Colord_ = ^.asInstanceOf[js.Dynamic].applyDynamic("colord")(input.asInstanceOf[js.Any]).asInstanceOf[Colord_]

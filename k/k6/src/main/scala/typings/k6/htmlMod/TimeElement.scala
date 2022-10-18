@@ -4,6 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "TimeElement")
+/* note: abstract class */ @JSImport("k6/html", "TimeElement")
 @js.native
-abstract class TimeElement () extends Element
+open class TimeElement () extends Element

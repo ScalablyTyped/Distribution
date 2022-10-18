@@ -11,41 +11,41 @@ object formatjsIcuMessageformatParserStrings {
   sealed trait few
     extends StObject
        with _ValidPluralRule
-       with typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod._ValidPluralRule
+       with typings.formatjsIcuMessageformatParser.libTypesMod._ValidPluralRule
   inline def few: few = "few".asInstanceOf[few]
   
   @js.native
   sealed trait many
     extends StObject
        with _ValidPluralRule
-       with typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod._ValidPluralRule
+       with typings.formatjsIcuMessageformatParser.libTypesMod._ValidPluralRule
   inline def many: many = "many".asInstanceOf[many]
   
   @js.native
   sealed trait one
     extends StObject
        with _ValidPluralRule
-       with typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod._ValidPluralRule
+       with typings.formatjsIcuMessageformatParser.libTypesMod._ValidPluralRule
   inline def one: one = "one".asInstanceOf[one]
   
   @js.native
   sealed trait other
     extends StObject
        with _ValidPluralRule
-       with typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod._ValidPluralRule
+       with typings.formatjsIcuMessageformatParser.libTypesMod._ValidPluralRule
   inline def other: other = "other".asInstanceOf[other]
   
   @js.native
   sealed trait two
     extends StObject
        with _ValidPluralRule
-       with typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod._ValidPluralRule
+       with typings.formatjsIcuMessageformatParser.libTypesMod._ValidPluralRule
   inline def two: two = "two".asInstanceOf[two]
   
   @js.native
   sealed trait zero
     extends StObject
        with _ValidPluralRule
-       with typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod._ValidPluralRule
+       with typings.formatjsIcuMessageformatParser.libTypesMod._ValidPluralRule
   inline def zero: zero = "zero".asInstanceOf[zero]
 }

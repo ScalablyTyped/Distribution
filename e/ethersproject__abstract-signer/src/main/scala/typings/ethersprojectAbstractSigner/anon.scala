@@ -1,6 +1,6 @@
 package typings.ethersprojectAbstractSigner
 
-import typings.ethersprojectBignumber.bignumberMod.BigNumberish
+import typings.ethersprojectBignumber.libBignumberMod.BigNumberish
 import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectTransactions.anon.Address
 import typings.ethersprojectTransactions.mod.AccessListish

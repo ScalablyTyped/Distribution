@@ -1,9 +1,9 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.elbMod.AccessPointName
-import typings.awsSdk.elbMod.Instance
-import typings.awsSdk.elbMod.Instances
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsElbMod.AccessPointName
+import typings.awsSdk.clientsElbMod.Instance
+import typings.awsSdk.clientsElbMod.Instances
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait DescribeEndPointStateInpu extends StObject {
   /**
     * The IDs of the instances.
     */
-  var Instances: js.UndefOr[typings.awsSdk.elbMod.Instances] = js.undefined
+  var Instances: js.UndefOr[typings.awsSdk.clientsElbMod.Instances] = js.undefined
   
   /**
     * The name of the load balancer.

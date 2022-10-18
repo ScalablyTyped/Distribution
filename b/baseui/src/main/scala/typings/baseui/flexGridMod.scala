@@ -1,8 +1,8 @@
 package typings.baseui
 
 import typings.baseui.baseuiStrings.div
+import typings.baseui.flexGridFlexGridItemMod.FlexGridItemComponentType
 import typings.baseui.flexGridFlexGridMod.FlexGridComponentType
-import typings.baseui.flexGridItemMod.FlexGridItemComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

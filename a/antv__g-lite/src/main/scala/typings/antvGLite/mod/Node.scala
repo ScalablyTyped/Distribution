@@ -1,15 +1,15 @@
 package typings.antvGLite.mod
 
-import typings.antvGLite.domInterfacesMod.IEventTarget
-import typings.antvGLite.domInterfacesMod.INode
+import typings.antvGLite.distDomInterfacesMod.IEventTarget
+import typings.antvGLite.distDomInterfacesMod.INode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/g-lite", "Node")
+/* note: abstract class */ @JSImport("@antv/g-lite", "Node")
 @js.native
-abstract class Node ()
-  extends typings.antvGLite.domMod.Node
+open class Node ()
+  extends typings.antvGLite.distDomMod.Node
 /* static members */
 object Node {
   

@@ -1,6 +1,5 @@
 package typings.parse.mod.global.Parse
 
-import typings.parse.mod.global.Parse.Object._Encode
 import typings.parse.mod.global.Parse.Schema._FieldType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Pointer
   extends StObject
-     with _Encode[Any]
      with _FieldType {
   
   var __type: String

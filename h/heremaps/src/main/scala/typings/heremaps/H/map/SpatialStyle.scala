@@ -60,15 +60,21 @@ trait SpatialStyle extends StObject {
 object SpatialStyle {
   
   /**
-    * The style of the end caps for a line, one of 'butt', 'round' or 'square'.
+    * The style of the end caps for a line, one of 'butt', 'round', 'square', 'arrow-head' or 'arrow-tail'.
     */
   /* Rewritten from type alias, can be one of: 
     - typings.heremaps.heremapsStrings.butt
     - typings.heremaps.heremapsStrings.round
     - typings.heremaps.heremapsStrings.square
+    - typings.heremaps.heremapsStrings.`arrow-head`
+    - typings.heremaps.heremapsStrings.`arrow-tail`
   */
   trait LineCap extends StObject
   object LineCap {
+    
+    inline def `arrow-head`: typings.heremaps.heremapsStrings.`arrow-head` = "arrow-head".asInstanceOf[typings.heremaps.heremapsStrings.`arrow-head`]
+    
+    inline def `arrow-tail`: typings.heremaps.heremapsStrings.`arrow-tail` = "arrow-tail".asInstanceOf[typings.heremaps.heremapsStrings.`arrow-tail`]
     
     inline def butt: typings.heremaps.heremapsStrings.butt = "butt".asInstanceOf[typings.heremaps.heremapsStrings.butt]
     

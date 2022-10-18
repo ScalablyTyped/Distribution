@@ -1,9 +1,9 @@
 package typings.upath2
 
 import typings.node.pathMod.ParsedPath
-import typings.upath2.typeMod.IParse
-import typings.upath2.typeMod.IPath
-import typings.upath2.typeMod.IPathPlatform
+import typings.upath2.libTypeMod.IParse
+import typings.upath2.libTypeMod.IPath
+import typings.upath2.libTypeMod.IPathPlatform
 import typings.upath2.upath2Strings.Slash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,11 +16,11 @@ object anon {
     
     var name: js.UndefOr[String | IPathPlatform] = js.undefined
     
-    var sep: String | Slash
+    var sep: (/* \ */ String) | Slash
   }
   object PickIPathsepname {
     
-    inline def apply(sep: String | Slash): PickIPathsepname = {
+    inline def apply(sep: (/* \ */ String) | Slash): PickIPathsepname = {
       val __obj = js.Dynamic.literal(sep = sep.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickIPathsepname]
     }
@@ -31,7 +31,7 @@ object anon {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setSep(value: String | Slash): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
+      inline def setSep(value: (/* \ */ String) | Slash): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
     }
   }
   

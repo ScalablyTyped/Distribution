@@ -1,6 +1,6 @@
 package typings.lambdaPhi
 
-import typings.lambdaPhi.lambdaConfigMod.LambdaConfig
+import typings.lambdaPhi.libLambdaConfigMod.LambdaConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

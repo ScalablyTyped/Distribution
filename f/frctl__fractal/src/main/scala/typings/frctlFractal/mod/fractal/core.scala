@@ -18,9 +18,9 @@ object core {
   
   object entities {
     
-    @JSImport("@frctl/fractal", "fractal.core.entities.Entity")
+    /* note: abstract class */ @JSImport("@frctl/fractal", "fractal.core.entities.Entity")
     @js.native
-    abstract class Entity ()
+    open class Entity ()
       extends typings.frctlFractal.mod.fractal.core.mixins.Entity {
       
       def getContext(): Any = js.native
@@ -71,9 +71,9 @@ object core {
   
   object mixins {
     
-    @JSImport("@frctl/fractal", "fractal.core.mixins.Configurable")
+    /* note: abstract class */ @JSImport("@frctl/fractal", "fractal.core.mixins.Configurable")
     @js.native
-    abstract class Configurable[T] () extends StObject {
+    open class Configurable[T] () extends StObject {
       
       def config(): T = js.native
       def config(config: T): this.type = js.native
@@ -95,10 +95,10 @@ object core {
     /**
       * Combined EventEmitter and Configurable mixins
       */
-    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    /* note: abstract class */ /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.frctlFractal.mod.fractal.core.mixins.Configurable because Inheritance from two classes. Inlined config, config, set, set, get, get */ @JSImport("@frctl/fractal", "fractal.core.mixins.ConfigurableEmitter")
     @js.native
-    abstract class ConfigurableEmitter[T] () extends EventEmitter {
+    open class ConfigurableEmitter[T] () extends EventEmitter {
       def this(options: EventEmitterOptions) = this()
       
       def config(): T = js.native
@@ -118,9 +118,9 @@ object core {
       ): this.type = js.native
     }
     
-    @JSImport("@frctl/fractal", "fractal.core.mixins.Entity")
+    /* note: abstract class */ @JSImport("@frctl/fractal", "fractal.core.mixins.Entity")
     @js.native
-    abstract class Entity () extends StObject {
+    open class Entity () extends StObject {
       
       val alias: String | Null = js.native
       

@@ -1,7 +1,7 @@
 package typings.sipJs.mod.Core
 
-import typings.sipJs.outgoingRequestMod.OutgoingRequestDelegate
-import typings.sipJs.outgoingRequestMod.RequestOptions
+import typings.sipJs.libCoreMessagesOutgoingRequestMod.OutgoingRequestDelegate
+import typings.sipJs.libCoreMessagesOutgoingRequestMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Core.ReferUserAgentClient")
 @js.native
 open class ReferUserAgentClient protected ()
-  extends typings.sipJs.coreMod.ReferUserAgentClient {
-  def this(dialog: typings.sipJs.dialogsMod.SessionDialog) = this()
-  def this(dialog: typings.sipJs.dialogsMod.SessionDialog, delegate: OutgoingRequestDelegate) = this()
-  def this(dialog: typings.sipJs.dialogsMod.SessionDialog, delegate: Unit, options: RequestOptions) = this()
+  extends typings.sipJs.libCoreMod.ReferUserAgentClient {
+  def this(dialog: typings.sipJs.libCoreDialogsMod.SessionDialog) = this()
+  def this(dialog: typings.sipJs.libCoreDialogsMod.SessionDialog, delegate: OutgoingRequestDelegate) = this()
+  def this(dialog: typings.sipJs.libCoreDialogsMod.SessionDialog, delegate: Unit, options: RequestOptions) = this()
   def this(
-    dialog: typings.sipJs.dialogsMod.SessionDialog,
+    dialog: typings.sipJs.libCoreDialogsMod.SessionDialog,
     delegate: OutgoingRequestDelegate,
     options: RequestOptions
   ) = this()

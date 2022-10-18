@@ -1,6 +1,6 @@
 package typings.seleniumWebdriver.anon
 
-import typings.seleniumWebdriver.capabilitiesMod.Capabilities
+import typings.seleniumWebdriver.libCapabilitiesMod.Capabilities
 import typings.seleniumWebdriver.mod.CreateSessionCapabilities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

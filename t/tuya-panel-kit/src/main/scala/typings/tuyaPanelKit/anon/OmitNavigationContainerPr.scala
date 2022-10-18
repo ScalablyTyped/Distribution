@@ -1,9 +1,9 @@
 package typings.tuyaPanelKit.anon
 
-import typings.tuyaPanelKit.routersTypesMod.InitialState
-import typings.tuyaPanelKit.routersTypesMod.NavigationAction
-import typings.tuyaPanelKit.routersTypesMod.NavigationState
-import typings.tuyaPanelKit.routersTypesMod.ParamListBase
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.InitialState
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.NavigationAction
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.NavigationState
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

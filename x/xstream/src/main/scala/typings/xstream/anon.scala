@@ -10,7 +10,7 @@ object anon {
     
     def ease(x: Double, from: Double, to: Double): Double
     @JSName("ease")
-    var ease_Original: typings.xstream.tweenMod.Ease
+    var ease_Original: typings.xstream.extraTweenMod.Ease
   }
   object Ease {
     

@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsRedoMod.RedoProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsRedoMod.RedoProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redoMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Redo", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Redo", JSImport.Default)
   @js.native
   val default: FC[RedoProps] = js.native
   

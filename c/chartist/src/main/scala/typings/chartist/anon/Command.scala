@@ -1,6 +1,6 @@
 package typings.chartist.anon
 
-import typings.chartist.coreTypesMod.SegmentData
+import typings.chartist.distCoreTypesMod.SegmentData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

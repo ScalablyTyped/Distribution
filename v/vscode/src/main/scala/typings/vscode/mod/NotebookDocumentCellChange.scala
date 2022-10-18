@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotebookDocumentCellChange extends StObject {
   
   /**
-    * The affected notebook.
+    * The affected cell.
     */
   val cell: NotebookCell
   

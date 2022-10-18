@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionChain[T]
   extends StObject
-     with LoDashExplicitWrapper[T]
-     with _ExpChain[T] {
+     with LoDashExplicitWrapper[T] {
   
   /**
     * @see _.ary
@@ -26,32 +25,24 @@ trait FunctionChain[T]
   /**
     * @see _.curry
     */
-  def curry(): FunctionChain[
-    (CurriedFunction1[Any, Any]) | (CurriedFunction2[Any, Any, Any]) | (CurriedFunction3[Any, Any, Any, Any]) | (CurriedFunction4[Any, Any, Any, Any, Any]) | (CurriedFunction5[Any, Any, Any, Any, Any, Any]) | (js.Function1[/* repeated */ Any, Any])
-  ] = js.native
-  def curry(arity: Double): FunctionChain[
-    (CurriedFunction1[Any, Any]) | (CurriedFunction2[Any, Any, Any]) | (CurriedFunction3[Any, Any, Any, Any]) | (CurriedFunction4[Any, Any, Any, Any, Any]) | (CurriedFunction5[Any, Any, Any, Any, Any, Any]) | (js.Function1[/* repeated */ Any, Any])
-  ] = js.native
+  def curry(): /* import warning: importer.ImportType#apply Failed type conversion: T extends (arg1 : infer T1): infer R ? lodash.lodash.FunctionChain<lodash.lodash.CurriedFunction1<T1, R>> : T extends (arg1 : infer T1, arg2 : infer T2): infer R ? lodash.lodash.FunctionChain<lodash.lodash.CurriedFunction2<T1, T2, R>> : T extends (arg1 : infer T1, arg2 : infer T2, arg3 : infer T3): infer R ? lodash.lodash.FunctionChain<lodash.lodash.CurriedFunction3<T1, T2, T3, R>> : T extends (arg1 : infer T1, arg2 : infer T2, arg3 : infer T3, arg4 : infer T4): infer R ? lodash.lodash.FunctionChain<lodash.lodash.CurriedFunction4<T1, T2, T3, T4, R>> : T extends (arg1 : infer T1, arg2 : infer T2, arg3 : infer T3, arg4 : infer T4, arg5 : infer T5): infer R ? lodash.lodash.FunctionChain<lodash.lodash.CurriedFunction5<T1, T2, T3, T4, T5, R>> : lodash.lodash.FunctionChain<(args : ...any): any> */ js.Any = js.native
+  def curry(arity: Double): /* import warning: importer.ImportType#apply Failed type conversion: T extends (arg1 : infer T1): infer R ? lodash.lodash.FunctionChain<lodash.lodash.CurriedFunction1<T1, R>> : T extends (arg1 : infer T1, arg2 : infer T2): infer R ? lodash.lodash.FunctionChain<lodash.lodash.CurriedFunction2<T1, T2, R>> : T extends (arg1 : infer T1, arg2 : infer T2, arg3 : infer T3): infer R ? lodash.lodash.FunctionChain<lodash.lodash.CurriedFunction3<T1, T2, T3, R>> : T extends (arg1 : infer T1, arg2 : infer T2, arg3 : infer T3, arg4 : infer T4): infer R ? lodash.lodash.FunctionChain<lodash.lodash.CurriedFunction4<T1, T2, T3, T4, R>> : T extends (arg1 : infer T1, arg2 : infer T2, arg3 : infer T3, arg4 : infer T4, arg5 : infer T5): infer R ? lodash.lodash.FunctionChain<lodash.lodash.CurriedFunction5<T1, T2, T3, T4, T5, R>> : lodash.lodash.FunctionChain<(args : ...any): any> */ js.Any = js.native
   
   /**
     * @see _.curryRight
     */
-  def curryRight(): FunctionChain[
-    (js.Function1[/* repeated */ Any, Any]) | (RightCurriedFunction1[Any, Any]) | (RightCurriedFunction2[Any, Any, Any]) | (RightCurriedFunction3[Any, Any, Any, Any]) | (RightCurriedFunction4[Any, Any, Any, Any, Any]) | (RightCurriedFunction5[Any, Any, Any, Any, Any, Any])
-  ] = js.native
-  def curryRight(arity: Double): FunctionChain[
-    (js.Function1[/* repeated */ Any, Any]) | (RightCurriedFunction1[Any, Any]) | (RightCurriedFunction2[Any, Any, Any]) | (RightCurriedFunction3[Any, Any, Any, Any]) | (RightCurriedFunction4[Any, Any, Any, Any, Any]) | (RightCurriedFunction5[Any, Any, Any, Any, Any, Any])
-  ] = js.native
+  def curryRight(): /* import warning: importer.ImportType#apply Failed type conversion: T extends (arg1 : infer T1): infer R ? lodash.lodash.FunctionChain<lodash.lodash.RightCurriedFunction1<T1, R>> : T extends (arg1 : infer T1, arg2 : infer T2): infer R ? lodash.lodash.FunctionChain<lodash.lodash.RightCurriedFunction2<T1, T2, R>> : T extends (arg1 : infer T1, arg2 : infer T2, arg3 : infer T3): infer R ? lodash.lodash.FunctionChain<lodash.lodash.RightCurriedFunction3<T1, T2, T3, R>> : T extends (arg1 : infer T1, arg2 : infer T2, arg3 : infer T3, arg4 : infer T4): infer R ? lodash.lodash.FunctionChain<lodash.lodash.RightCurriedFunction4<T1, T2, T3, T4, R>> : T extends (arg1 : infer T1, arg2 : infer T2, arg3 : infer T3, arg4 : infer T4, arg5 : infer T5): infer R ? lodash.lodash.FunctionChain<lodash.lodash.RightCurriedFunction5<T1, T2, T3, T4, T5, R>> : lodash.lodash.FunctionChain<(args : ...any): any> */ js.Any = js.native
+  def curryRight(arity: Double): /* import warning: importer.ImportType#apply Failed type conversion: T extends (arg1 : infer T1): infer R ? lodash.lodash.FunctionChain<lodash.lodash.RightCurriedFunction1<T1, R>> : T extends (arg1 : infer T1, arg2 : infer T2): infer R ? lodash.lodash.FunctionChain<lodash.lodash.RightCurriedFunction2<T1, T2, R>> : T extends (arg1 : infer T1, arg2 : infer T2, arg3 : infer T3): infer R ? lodash.lodash.FunctionChain<lodash.lodash.RightCurriedFunction3<T1, T2, T3, R>> : T extends (arg1 : infer T1, arg2 : infer T2, arg3 : infer T3, arg4 : infer T4): infer R ? lodash.lodash.FunctionChain<lodash.lodash.RightCurriedFunction4<T1, T2, T3, T4, R>> : T extends (arg1 : infer T1, arg2 : infer T2, arg3 : infer T3, arg4 : infer T4, arg5 : infer T5): infer R ? lodash.lodash.FunctionChain<lodash.lodash.RightCurriedFunction5<T1, T2, T3, T4, T5, R>> : lodash.lodash.FunctionChain<(args : ...any): any> */ js.Any = js.native
   
-  def debounce(): FunctionChain[DebouncedFunc[T]] = js.native
-  def debounce(wait: Double): FunctionChain[DebouncedFunc[T]] = js.native
-  def debounce(wait: Double, options: DebounceSettings): FunctionChain[DebouncedFunc[T]] = js.native
+  def debounce(): /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : ...any): any ? lodash.lodash.FunctionChain<lodash.lodash.DebouncedFunc<T>> : never */ js.Any = js.native
+  def debounce(wait: Double): /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : ...any): any ? lodash.lodash.FunctionChain<lodash.lodash.DebouncedFunc<T>> : never */ js.Any = js.native
+  def debounce(wait: Double, options: DebounceSettings): /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : ...any): any ? lodash.lodash.FunctionChain<lodash.lodash.DebouncedFunc<T>> : never */ js.Any = js.native
   /**
     * @see _.debounce
     */
-  def debounce(wait: Double, options: DebounceSettingsLeading): FunctionChain[DebouncedFuncLeading[T]] = js.native
-  def debounce(wait: Unit, options: DebounceSettings): FunctionChain[DebouncedFunc[T]] = js.native
-  def debounce(wait: Unit, options: DebounceSettingsLeading): FunctionChain[DebouncedFuncLeading[T]] = js.native
+  def debounce(wait: Double, options: DebounceSettingsLeading): /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : ...any): any ? lodash.lodash.FunctionChain<lodash.lodash.DebouncedFuncLeading<T>> : never */ js.Any = js.native
+  def debounce(wait: Unit, options: DebounceSettings): /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : ...any): any ? lodash.lodash.FunctionChain<lodash.lodash.DebouncedFunc<T>> : never */ js.Any = js.native
+  def debounce(wait: Unit, options: DebounceSettingsLeading): /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : ...any): any ? lodash.lodash.FunctionChain<lodash.lodash.DebouncedFuncLeading<T>> : never */ js.Any = js.native
   
   /**
     * @see _.flip
@@ -245,173 +236,249 @@ trait FunctionChain[T]
   /**
     * @see _.partial
     */
-  def partial(): FunctionChain[T] = js.native
-  /**
-    * @see _.partial
-    */
-  def partial[T1](arg1: T1): FunctionChain[js.Function1[/* ts */ Any, Any]] = js.native
-  /**
-    * @see _.partial
-    */
-  def partial[T2](plc1: __, arg2: T2): FunctionChain[
-    (Function3[Any, Any, Any, Any]) | (Function2[Any, Any, Any]) | (Function1[Any, Any])
+  def partial(): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends (ts : ...any): any ? T : any */ js.Any
   ] = js.native
   /**
     * @see _.partial
     */
-  def partial[T3](plc1: __, plc2: __, arg3: T3): FunctionChain[(Function3[Any, Any, Any, Any]) | (Function2[Any, Any, Any])] = js.native
+  def partial[T1](arg1: T1): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends (t1 : T1, ts : infer TS): infer R ? (ts : TS): R : any */ js.Any
+  ] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T2](arg1: T1, arg2: T2): FunctionChain[js.Function1[/* ts */ Any, Any]] = js.native
+  def partial[T2](plc1: __, arg2: T2): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function2<infer T1, T2, infer R> ? lodash.lodash.Function1<T1, R> : T extends lodash.lodash.Function3<infer T1, T2, infer T3, infer R> ? lodash.lodash.Function2<T1, T3, R> : T extends lodash.lodash.Function4<infer T1, T2, infer T3, infer T4, infer R> ? lodash.lodash.Function3<T1, T3, T4, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T3](arg1: T1, plc2: __, arg3: T3): FunctionChain[(Function2[Any, Any, Any]) | (Function1[Any, Any])] = js.native
+  def partial[T3](plc1: __, plc2: __, arg3: T3): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function3<infer T1, infer T2, T3, infer R> ? lodash.lodash.Function2<T1, T2, R> : T extends lodash.lodash.Function4<infer T1, infer T2, T3, infer T4, infer R> ? lodash.lodash.Function3<T1, T2, T4, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T4](arg1: T1, plc2: __, plc3: __, arg4: T4): FunctionChain[Function2[Any, Any, Any]] = js.native
+  def partial[T1, T2](arg1: T1, arg2: T2): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends (t1 : T1, t2 : T2, ts : infer TS): infer R ? (ts : TS): R : any */ js.Any
+  ] = js.native
   /**
     * @see _.partial
     */
-  def partial[T2, T3](plc1: __, arg2: T2, arg3: T3): FunctionChain[(Function2[Any, Any, Any]) | (Function1[Any, Any])] = js.native
+  def partial[T1, T3](arg1: T1, plc2: __, arg3: T3): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function3<T1, infer T2, T3, infer R> ? lodash.lodash.Function1<T2, R> : T extends lodash.lodash.Function4<T1, infer T2, T3, infer T4, infer R> ? lodash.lodash.Function2<T2, T4, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partial
     */
-  def partial[T2, T4](plc1: __, arg2: T2, plc3: __, arg4: T4): FunctionChain[Function2[Any, Any, Any]] = js.native
+  def partial[T1, T4](arg1: T1, plc2: __, plc3: __, arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<T1, infer T2, infer T3, T4, infer R> ? lodash.lodash.Function2<T2, T3, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partial
     */
-  def partial[T3, T4](plc1: __, plc2: __, arg3: T3, arg4: T4): FunctionChain[Function2[Any, Any, Any]] = js.native
+  def partial[T2, T3](plc1: __, arg2: T2, arg3: T3): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function3<infer T1, T2, T3, infer R> ? lodash.lodash.Function1<T1, R> : T extends lodash.lodash.Function4<infer T1, T2, T3, infer T4, infer R> ? lodash.lodash.Function2<T1, T4, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T2, T3](arg1: T1, arg2: T2, arg3: T3): FunctionChain[js.Function1[/* ts */ Any, Any]] = js.native
+  def partial[T2, T4](plc1: __, arg2: T2, plc3: __, arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<infer T1, T2, infer T3, T4, infer R> ? lodash.lodash.Function2<T1, T3, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T2, T4](arg1: T1, arg2: T2, plc3: __, arg4: T4): FunctionChain[Function1[Any, Any]] = js.native
+  def partial[T3, T4](plc1: __, plc2: __, arg3: T3, arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<infer T1, infer T2, T3, T4, infer R> ? lodash.lodash.Function2<T1, T2, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T3, T4](arg1: T1, plc2: __, arg3: T3, arg4: T4): FunctionChain[Function1[Any, Any]] = js.native
+  def partial[T1, T2, T3](arg1: T1, arg2: T2, arg3: T3): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends (t1 : T1, t2 : T2, t3 : T3, ts : infer TS): infer R ? (ts : TS): R : any */ js.Any
+  ] = js.native
   /**
     * @see _.partial
     */
-  def partial[T2, T3, T4](plc1: __, arg2: T2, arg3: T3, arg4: T4): FunctionChain[Function1[Any, Any]] = js.native
+  def partial[T1, T2, T4](arg1: T1, arg2: T2, plc3: __, arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<T1, T2, infer T3, T4, infer R> ? lodash.lodash.Function1<T3, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T2, T3, T4](arg1: T1, arg2: T2, arg3: T3, arg4: T4): FunctionChain[js.Function1[/* ts */ Any, Any]] = js.native
+  def partial[T1, T3, T4](arg1: T1, plc2: __, arg3: T3, arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<T1, infer T2, T3, T4, infer R> ? lodash.lodash.Function1<T2, R> : any */ js.Any
+  ] = js.native
+  /**
+    * @see _.partial
+    */
+  def partial[T2, T3, T4](plc1: __, arg2: T2, arg3: T3, arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<infer T1, T2, T3, T4, infer R> ? lodash.lodash.Function1<T1, R> : any */ js.Any
+  ] = js.native
+  /**
+    * @see _.partial
+    */
+  def partial[T1, T2, T3, T4](arg1: T1, arg2: T2, arg3: T3, arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends (t1 : T1, t2 : T2, t3 : T3, t4 : T4, ts : infer TS): infer R ? (ts : TS): R : any */ js.Any
+  ] = js.native
   
   /**
     * @see _.partialRight
     */
-  def partialRight(): FunctionChain[T] = js.native
+  def partialRight(): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends (ts : ...any): any ? T : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1](arg1: T1, plc2: __, plc3: __): FunctionChain[Function2[Any, Any, Any]] = js.native
+  def partialRight[T1](arg1: T1, plc2: __, plc3: __): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function3<T1, infer T2, infer T3, infer R> ? lodash.lodash.Function2<T2, T3, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1](arg1: T1, plc2: __, plc3: __, plc4: __): FunctionChain[Function3[Any, Any, Any, Any]] = js.native
+  def partialRight[T1](arg1: T1, plc2: __, plc3: __, plc4: __): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<T1, infer T2, infer T3, infer T4, infer R> ? lodash.lodash.Function3<T2, T3, T4, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T3](arg3: T3, plc4: __): FunctionChain[Function3[Any, Any, Any, Any]] = js.native
+  def partialRight[T3](arg3: T3, plc4: __): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<infer T1, infer T2, T3, infer T4, infer R> ? lodash.lodash.Function3<T1, T2, T4, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
   def partialRight[TS /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param ts because its type TS is not an array type */ ts: TS
-  ): FunctionChain[js.Function0[Any]] = js.native
+  ): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : TS): infer R ? (): R : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T2](arg1: T1, arg2: T2, plc3: __): FunctionChain[Function1[Any, Any]] = js.native
+  def partialRight[T1, T2](arg1: T1, arg2: T2, plc3: __): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function3<T1, T2, infer T3, infer R> ? lodash.lodash.Function1<T3, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T2](arg1: T1, arg2: T2, plc3: __, plc4: __): FunctionChain[Function2[Any, Any, Any]] = js.native
+  def partialRight[T1, T2](arg1: T1, arg2: T2, plc3: __, plc4: __): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<T1, T2, infer T3, infer T4, infer R> ? lodash.lodash.Function2<T3, T4, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T3](arg1: T1, plc2: __, arg3: T3, plc4: __): FunctionChain[Function2[Any, Any, Any]] = js.native
+  def partialRight[T1, T3](arg1: T1, plc2: __, arg3: T3, plc4: __): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<T1, infer T2, infer T3, infer T4, infer R> ? lodash.lodash.Function2<T2, T4, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T4](arg1: T1, plc2: __, plc3: __, arg4: T4): FunctionChain[Function2[Any, Any, Any]] = js.native
+  def partialRight[T1, T4](arg1: T1, plc2: __, plc3: __, arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<T1, infer T2, infer T3, T4, infer R> ? lodash.lodash.Function2<T2, T3, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T2, T4](arg2: T2, plc3: __, arg4: T4): FunctionChain[Function2[Any, Any, Any]] = js.native
+  def partialRight[T2, T4](arg2: T2, plc3: __, arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<infer T1, T2, infer T3, T4, infer R> ? lodash.lodash.Function2<T1, T3, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T3, T4](arg3: T3, arg4: T4): FunctionChain[Function2[Any, Any, Any]] = js.native
+  def partialRight[T3, T4](arg3: T3, arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<infer T1, infer T2, T3, T4, infer R> ? lodash.lodash.Function2<T1, T2, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T2, T3](arg1: T1, arg2: T2, arg3: T3, plc4: __): FunctionChain[Function1[Any, Any]] = js.native
+  def partialRight[T1, T2, T3](arg1: T1, arg2: T2, arg3: T3, plc4: __): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<T1, T2, T3, infer T4, infer R> ? lodash.lodash.Function1<T4, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T2, T4](arg1: T1, arg2: T2, plc3: __, arg4: T4): FunctionChain[Function1[Any, Any]] = js.native
+  def partialRight[T1, T2, T4](arg1: T1, arg2: T2, plc3: __, arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<T1, T2, infer T3, T4, infer R> ? lodash.lodash.Function1<T3, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T3, T4](arg1: T1, plc2: __, arg3: T3, arg4: T4): FunctionChain[Function1[Any, Any]] = js.native
+  def partialRight[T1, T3, T4](arg1: T1, plc2: __, arg3: T3, arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<T1, infer T2, T3, T4, infer R> ? lodash.lodash.Function1<T2, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T2, T3, T4](arg2: T2, arg3: T3, arg4: T4): FunctionChain[Function1[Any, Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
-  @JSName("partialRight")
-  def partialRight_T1[T1](arg1: T1, plc2: __): FunctionChain[Function1[Any, Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
-  @JSName("partialRight")
-  def partialRight_T1T3[T1, T3](arg1: T1, plc2: __, arg3: T3): FunctionChain[Function1[Any, Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
-  @JSName("partialRight")
-  def partialRight_T2[T2](arg2: T2): FunctionChain[Function1[Any, Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
-  @JSName("partialRight")
-  def partialRight_T2[T2](arg2: T2, plc3: __): FunctionChain[Function2[Any, Any, Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
-  @JSName("partialRight")
-  def partialRight_T2[T2](arg2: T2, plc3: __, plc4: __): FunctionChain[Function3[Any, Any, Any, Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
-  @JSName("partialRight")
-  def partialRight_T2T3[T2, T3](arg2: T2, arg3: T3): FunctionChain[Function1[Any, Any]] = js.native
+  def partialRight[T2, T3, T4](arg2: T2, arg3: T3, arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<infer T1, T2, T3, T4, infer R> ? lodash.lodash.Function1<T1, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T2T3[T2, T3](arg2: T2, arg3: T3, plc4: __): FunctionChain[Function2[Any, Any, Any]] = js.native
+  def partialRight_T1[T1](arg1: T1, plc2: __): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function2<T1, infer T2, infer R> ? lodash.lodash.Function1<T2, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T3[T3](arg3: T3): FunctionChain[Function2[Any, Any, Any]] = js.native
+  def partialRight_T1T3[T1, T3](arg1: T1, plc2: __, arg3: T3): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function3<T1, infer T2, T3, infer R> ? lodash.lodash.Function1<T2, R> : any */ js.Any
+  ] = js.native
   /**
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T4[T4](arg4: T4): FunctionChain[Function3[Any, Any, Any, Any]] = js.native
+  def partialRight_T2[T2](arg2: T2): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function2<infer T1, T2, infer R> ? lodash.lodash.Function1<T1, R> : any */ js.Any
+  ] = js.native
+  /**
+    * @see _.partialRight
+    */
+  @JSName("partialRight")
+  def partialRight_T2[T2](arg2: T2, plc3: __): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function3<infer T1, T2, infer T3, infer R> ? lodash.lodash.Function2<T1, T3, R> : any */ js.Any
+  ] = js.native
+  /**
+    * @see _.partialRight
+    */
+  @JSName("partialRight")
+  def partialRight_T2[T2](arg2: T2, plc3: __, plc4: __): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<infer T1, T2, infer T3, infer T4, infer R> ? lodash.lodash.Function3<T1, T3, T4, R> : any */ js.Any
+  ] = js.native
+  /**
+    * @see _.partialRight
+    */
+  @JSName("partialRight")
+  def partialRight_T2T3[T2, T3](arg2: T2, arg3: T3): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function3<infer T1, T2, T3, infer R> ? lodash.lodash.Function1<T1, R> : any */ js.Any
+  ] = js.native
+  /**
+    * @see _.partialRight
+    */
+  @JSName("partialRight")
+  def partialRight_T2T3[T2, T3](arg2: T2, arg3: T3, plc4: __): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<infer T1, T2, T3, infer T4, infer R> ? lodash.lodash.Function2<T1, T4, R> : any */ js.Any
+  ] = js.native
+  /**
+    * @see _.partialRight
+    */
+  @JSName("partialRight")
+  def partialRight_T3[T3](arg3: T3): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function3<infer T1, infer T2, T3, infer R> ? lodash.lodash.Function2<T1, T2, R> : any */ js.Any
+  ] = js.native
+  /**
+    * @see _.partialRight
+    */
+  @JSName("partialRight")
+  def partialRight_T4[T4](arg4: T4): FunctionChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Function4<infer T1, infer T2, infer T3, T4, infer R> ? lodash.lodash.Function3<T1, T2, T3, R> : any */ js.Any
+  ] = js.native
   
   /**
     * @see _.rearg
@@ -433,10 +500,10 @@ trait FunctionChain[T]
   /**
     * @see _.throttle
     */
-  def throttle(): FunctionChain[DebouncedFunc[T]] = js.native
-  def throttle(wait: Double): FunctionChain[DebouncedFunc[T]] = js.native
-  def throttle(wait: Double, options: ThrottleSettings): FunctionChain[DebouncedFunc[T]] = js.native
-  def throttle(wait: Unit, options: ThrottleSettings): FunctionChain[DebouncedFunc[T]] = js.native
+  def throttle(): /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : ...any): any ? lodash.lodash.FunctionChain<lodash.lodash.DebouncedFunc<T>> : never */ js.Any = js.native
+  def throttle(wait: Double): /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : ...any): any ? lodash.lodash.FunctionChain<lodash.lodash.DebouncedFunc<T>> : never */ js.Any = js.native
+  def throttle(wait: Double, options: ThrottleSettings): /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : ...any): any ? lodash.lodash.FunctionChain<lodash.lodash.DebouncedFunc<T>> : never */ js.Any = js.native
+  def throttle(wait: Unit, options: ThrottleSettings): /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : ...any): any ? lodash.lodash.FunctionChain<lodash.lodash.DebouncedFunc<T>> : never */ js.Any = js.native
   
   /**
     * @see _.unary

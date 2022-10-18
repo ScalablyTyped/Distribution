@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "Attribute")
+/* note: abstract class */ @JSImport("k6/html", "Attribute")
 @js.native
-abstract class Attribute () extends StObject {
+open class Attribute () extends StObject {
   
   /** Local part of qualified name. */
   def localName(): String = js.native

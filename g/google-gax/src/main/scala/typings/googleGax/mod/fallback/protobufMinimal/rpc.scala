@@ -11,7 +11,7 @@ object rpc {
   @JSImport("google-gax", "fallback.protobufMinimal.rpc.Service")
   @js.native
   open class Service protected ()
-    extends typings.googleGax.fallbackMod.protobufMinimal.rpc.Service {
+    extends typings.googleGax.buildSrcFallbackMod.protobufMinimal.rpc.Service {
     /**
       * Constructs a new RPC service instance.
       * @param rpcImpl RPC implementation

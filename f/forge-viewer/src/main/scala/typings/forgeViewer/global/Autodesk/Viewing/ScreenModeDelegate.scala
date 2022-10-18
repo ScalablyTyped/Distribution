@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Autodesk.Viewing.ScreenModeDelegate")
+/* note: abstract class */ @JSGlobal("Autodesk.Viewing.ScreenModeDelegate")
 @js.native
-abstract class ScreenModeDelegate protected ()
+open class ScreenModeDelegate protected ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.ScreenModeDelegate {
   def this(viewer: typings.forgeViewer.Autodesk.Viewing.Viewer3D) = this()

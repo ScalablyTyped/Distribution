@@ -2,9 +2,9 @@ package typings.kefir
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.kefir.anon.Ap
 import typings.kefir.anon.Convert
+import typings.kefir.anon.ConvertValue
 import typings.kefir.anon.FlushOnChange
 import typings.kefir.anon.FlushOnEnd
 import typings.kefir.anon.Fn0
@@ -28,7 +28,6 @@ import typings.kefir.anon.Immediate
 import typings.kefir.anon.Leading
 import typings.kefir.anon.Off
 import typings.kefir.anon.Unsubscribe
-import typings.kefir.anon.Value
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.EventTarget
 import typings.std.PromiseLike
@@ -96,7 +95,13 @@ object mod {
     @js.native
     def combine: FnCallObssObssPCombinator = js.native
     inline def combine[T /* <: js.Array[scala.Nothing] */](obss: T): Stream_[scala.Nothing, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[scala.Nothing, scala.Nothing]]
-    inline def combine[T /* <: StringDictionary[Observable[Any, Any]] */, K /* <: StringDictionary[Observable[Any, Any]] */](obss: T, passiveObss: K): Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], Any]]
+    inline def combine[T /* <: StringDictionary[Observable[Any, Any]] */, K /* <: StringDictionary[Observable[Any, Any]] */](obss: T, passiveObss: K): Stream_[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>} */ js.Any, 
+        Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>} */ js.Any, 
+        Any
+      ]]
     inline def combine[T, S, U](obss: js.Array[Observable[T, S]], combinator: js.Function1[/* repeated */ T, U]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
     inline def combine[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: js.Array[Observable[T, S]]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
     inline def combine[T, S, U](
@@ -307,7 +312,7 @@ object mod {
     def endOnError(): Observable[T, S] = js.native
     
     def errorsToValues[U](): Observable[T | U, scala.Nothing] = js.native
-    def errorsToValues[U](handler: js.Function1[/* error */ S, Value[U]]): Observable[T | U, scala.Nothing] = js.native
+    def errorsToValues[U](handler: js.Function1[/* error */ S, ConvertValue[U]]): Observable[T | U, scala.Nothing] = js.native
     
     def filter(): Observable[T, S] = js.native
     def filter(predicate: js.Function1[/* value */ T, Boolean]): Observable[T, S] = js.native
@@ -475,17 +480,19 @@ object mod {
   open class Stream_[T, S] () extends Observable[T, S]
   
   inline def combine[T /* <: StringDictionary[Observable[Any, Any]] */](obss: T): Stream_[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>}
-    */ typings.kefir.kefirStrings.combine & TopLevel[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>} */ js.Any, 
     Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>}
-    */ typings.kefir.kefirStrings.combine & TopLevel[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>} */ js.Any, 
     Any
   ]]
-  inline def combine[T /* <: StringDictionary[Observable[Any, Any]] */, K /* <: StringDictionary[Observable[Any, Any]] */](obss: T, passiveObss: K): Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], Any]]
+  inline def combine[T /* <: StringDictionary[Observable[Any, Any]] */, K /* <: StringDictionary[Observable[Any, Any]] */](obss: T, passiveObss: K): Stream_[
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>} */ js.Any, 
+    Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>} */ js.Any, 
+    Any
+  ]]
   inline def combine[T, S, U](obss: js.Array[Observable[T, S]], combinator: js.Function1[/* repeated */ T, U]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
   inline def combine[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: js.Array[Observable[T, S]]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
   inline def combine[T, S, U](
@@ -683,8 +690,8 @@ object mod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.kefir.anon.Type[V]
-    - typings.kefir.anon.TypeValue[E]
-    - typings.kefir.anon.ValueVoid
+    - typings.kefir.anon.Value[E]
+    - typings.kefir.anon.TypeValue
   */
   trait Event[V, E] extends StObject
   object Event {
@@ -695,16 +702,16 @@ object mod {
       __obj.asInstanceOf[typings.kefir.anon.Type[V]]
     }
     
-    inline def TypeValue[E](value: E): typings.kefir.anon.TypeValue[E] = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("error")
-      __obj.asInstanceOf[typings.kefir.anon.TypeValue[E]]
-    }
-    
-    inline def ValueVoid(value: Unit): typings.kefir.anon.ValueVoid = {
+    inline def TypeValue(value: Unit): typings.kefir.anon.TypeValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("end")
-      __obj.asInstanceOf[typings.kefir.anon.ValueVoid]
+      __obj.asInstanceOf[typings.kefir.anon.TypeValue]
+    }
+    
+    inline def Value[E](value: E): typings.kefir.anon.Value[E] = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("error")
+      __obj.asInstanceOf[typings.kefir.anon.Value[E]]
     }
   }
   

@@ -1,6 +1,6 @@
 package typings.atom.anon
 
-import typings.atom.mod.Point
+import typings.atom.dependenciesTextBufferSrcTextBufferMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

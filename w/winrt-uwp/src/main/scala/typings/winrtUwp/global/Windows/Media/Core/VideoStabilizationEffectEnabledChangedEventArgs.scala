@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the VideoStabilizationEffect::EnabledChanged event. */
-@JSGlobal("Windows.Media.Core.VideoStabilizationEffectEnabledChangedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.VideoStabilizationEffectEnabledChangedEventArgs")
 @js.native
-abstract class VideoStabilizationEffectEnabledChangedEventArgs ()
+open class VideoStabilizationEffectEnabledChangedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.VideoStabilizationEffectEnabledChangedEventArgs {
   

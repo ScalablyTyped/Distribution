@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an instance of a background task that has been triggered to run. */
-@JSGlobal("Windows.UI.WebUI.WebUIBackgroundTaskInstance")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUIBackgroundTaskInstance")
 @js.native
-abstract class WebUIBackgroundTaskInstance ()
+open class WebUIBackgroundTaskInstance ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUIBackgroundTaskInstance
 object WebUIBackgroundTaskInstance {

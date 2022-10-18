@@ -1,7 +1,6 @@
 package typings.rjsfUtils.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.jsonSchema.mod.JSONSchema7
 import typings.jsonSchema.mod.JSONSchema7Definition
 import typings.jsonSchema.mod.JSONSchema7Type
@@ -24,6 +23,7 @@ import typings.rjsfUtils.rjsfUtilsStrings.FieldTemplate
 import typings.rjsfUtils.rjsfUtilsStrings.ObjectFieldTemplate
 import typings.rjsfUtils.rjsfUtilsStrings.TitleFieldTemplate
 import typings.rjsfUtils.rjsfUtilsStrings.UnsupportedFieldTemplate
+import typings.rjsfUtils.rjsfUtilsStrings.WrapIfAdditionalTemplate
 import typings.rjsfUtils.rjsfUtilsStrings.`null`
 import typings.rjsfUtils.rjsfUtilsStrings.`object`
 import typings.rjsfUtils.rjsfUtilsStrings.array
@@ -323,6 +323,9 @@ inline def getTemplate_TitleFieldTemplate[T, F](name: TitleFieldTemplate, regist
 
 inline def getTemplate_UnsupportedFieldTemplate[T, F](name: UnsupportedFieldTemplate, registry: Registry[T, F]): ComponentType[UnsupportedFieldProps[T, F]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(name.asInstanceOf[js.Any], registry.asInstanceOf[js.Any])).asInstanceOf[ComponentType[UnsupportedFieldProps[T, F]]]
 inline def getTemplate_UnsupportedFieldTemplate[T, F](name: UnsupportedFieldTemplate, registry: Registry[T, F], uiOptions: UIOptionsType[T, F]): ComponentType[UnsupportedFieldProps[T, F]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(name.asInstanceOf[js.Any], registry.asInstanceOf[js.Any], uiOptions.asInstanceOf[js.Any])).asInstanceOf[ComponentType[UnsupportedFieldProps[T, F]]]
+
+inline def getTemplate_WrapIfAdditionalTemplate[T, F](name: WrapIfAdditionalTemplate, registry: Registry[T, F]): ComponentType[WrapIfAdditionalTemplateProps[T, F]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(name.asInstanceOf[js.Any], registry.asInstanceOf[js.Any])).asInstanceOf[ComponentType[WrapIfAdditionalTemplateProps[T, F]]]
+inline def getTemplate_WrapIfAdditionalTemplate[T, F](name: WrapIfAdditionalTemplate, registry: Registry[T, F], uiOptions: UIOptionsType[T, F]): ComponentType[WrapIfAdditionalTemplateProps[T, F]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(name.asInstanceOf[js.Any], registry.asInstanceOf[js.Any], uiOptions.asInstanceOf[js.Any])).asInstanceOf[ComponentType[WrapIfAdditionalTemplateProps[T, F]]]
 
 /** Get all passed options from ui:options, and ui:<optionName>, returning them in an object with the `ui:`
   * stripped off.
@@ -994,7 +997,7 @@ inline def utcToLocal(jsonDate: String): String = ^.asInstanceOf[js.Dynamic].app
 type CustomValidator[T] = js.Function2[/* formData */ T, /* errors */ FormValidation[T], FormValidation[T]]
 
 /** Type describing a recursive structure of `FieldErrors`s for an object with a non-empty set of keys */
-type ErrorSchema[T] = FieldErrors & typings.rjsfUtils.rjsfUtilsStrings.ErrorSchema & TopLevel[T]
+type ErrorSchema[T] = FieldErrors & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]:? @rjsf/utils.@rjsf/utils.ErrorSchema<T[key]>} */ js.Any)
 
 /** An `ErrorTransformer` function will take in a list of `errors` and potentially return a transformation of those
   * errors in what ever way it deems necessary
@@ -1008,7 +1011,7 @@ type Field[T, F] = ComponentType[FieldProps[T, F]]
 type FieldError = String
 
 /** Type describing a recursive structure of `FieldValidation`s for an object with a non-empty set of keys */
-type FormValidation[T] = FieldValidation & typings.rjsfUtils.rjsfUtilsStrings.FormValidation & TopLevel[T]
+type FormValidation[T] = FieldValidation & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]:? @rjsf/utils.@rjsf/utils.FormValidation<T[key]>} */ js.Any)
 
 /** The representation of any generic object type, usually used as an intersection on other types to make them more
   * flexible in the properties they support (i.e. anything else)
@@ -1016,15 +1019,10 @@ type FormValidation[T] = FieldValidation & typings.rjsfUtils.rjsfUtilsStrings.Fo
 type GenericObjectType = StringDictionary[Any]
 
 /** Type describing a recursive structure of `FieldId`s for an object with a non-empty set of keys */
-type IdSchema[T] = FieldId & typings.rjsfUtils.rjsfUtilsStrings.IdSchema & TopLevel[T]
-
-/** This type remaps the keys of `Type` to prepend `ui:` onto them. As a result it does not need to be exported */
-type MakeUIType[Type] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ Property in keyof Type as / * template literal string: ui:${string&Property} * / string ]: Type[Property]}
-  */ typings.rjsfUtils.rjsfUtilsStrings.MakeUIType & TopLevel[Type]
+type IdSchema[T] = FieldId & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]:? @rjsf/utils.@rjsf/utils.IdSchema<T[key]>} */ js.Any)
 
 /** Type describing a recursive structure of `FieldPath`s for an object with a non-empty set of keys */
-type PathSchema[T] = FieldPath & typings.rjsfUtils.rjsfUtilsStrings.PathSchema & TopLevel[T]
+type PathSchema[T] = FieldPath & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]:? @rjsf/utils.@rjsf/utils.PathSchema<T[key]>} */ js.Any)
 
 /** Map the JSONSchema7 to our own type so that we can easily bump to JSONSchema8 at some future date and only have to
   * update this one type.

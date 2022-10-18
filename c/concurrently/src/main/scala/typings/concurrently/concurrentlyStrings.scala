@@ -1,7 +1,7 @@
 package typings.concurrently
 
-import typings.concurrently.completionListenerMod._SuccessCondition
-import typings.concurrently.killOthersMod.ProcessCloseCondition
+import typings.concurrently.distSrcCompletionListenerMod._SuccessCondition
+import typings.concurrently.distSrcFlowControlKillOthersMod.ProcessCloseCondition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

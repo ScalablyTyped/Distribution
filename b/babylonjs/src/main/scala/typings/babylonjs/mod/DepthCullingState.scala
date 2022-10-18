@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param reset
   */
 open class DepthCullingState ()
-  extends typings.babylonjs.legacyMod.DepthCullingState {
+  extends typings.babylonjs.legacyLegacyMod.DepthCullingState {
   def this(reset: Boolean) = this()
 }

@@ -1,7 +1,7 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.interfacesMod.ResourceHostContext
-import typings.angularCompilerCli.interfacesMod.TransformResourceResult
+import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ResourceHostContext
+import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.TransformResourceResult
 import typings.std.Set
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.CreateSourceFileOptions

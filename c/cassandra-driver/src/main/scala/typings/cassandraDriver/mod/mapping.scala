@@ -1,7 +1,7 @@
 package typings.cassandraDriver.mod
 
-import typings.cassandraDriver.mappingMod.mapping.MappingOptions
-import typings.cassandraDriver.mappingMod.mapping.q.QueryOperator
+import typings.cassandraDriver.libMappingMod.mapping.MappingOptions
+import typings.cassandraDriver.libMappingMod.mapping.q.QueryOperator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +11,12 @@ object mapping {
   @JSImport("cassandra-driver", "mapping.DefaultTableMappings")
   @js.native
   open class DefaultTableMappings ()
-    extends typings.cassandraDriver.mappingMod.mapping.DefaultTableMappings
+    extends typings.cassandraDriver.libMappingMod.mapping.DefaultTableMappings
   
   @JSImport("cassandra-driver", "mapping.Mapper")
   @js.native
   open class Mapper protected ()
-    extends typings.cassandraDriver.mappingMod.mapping.Mapper {
+    extends typings.cassandraDriver.libMappingMod.mapping.Mapper {
     def this(client: Client) = this()
     def this(client: Client, options: MappingOptions) = this()
   }
@@ -24,7 +24,7 @@ object mapping {
   @JSImport("cassandra-driver", "mapping.UnderscoreCqlToCamelCaseMappings")
   @js.native
   open class UnderscoreCqlToCamelCaseMappings ()
-    extends typings.cassandraDriver.mappingMod.mapping.UnderscoreCqlToCamelCaseMappings
+    extends typings.cassandraDriver.libMappingMod.mapping.UnderscoreCqlToCamelCaseMappings
   
   object q {
     

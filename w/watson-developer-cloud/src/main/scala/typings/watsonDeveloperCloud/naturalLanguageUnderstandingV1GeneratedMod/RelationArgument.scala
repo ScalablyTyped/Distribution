@@ -29,13 +29,13 @@ object RelationArgument {
     
     inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    inline def setEntitiesVarargs(value: RelationEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: RelationEntity*): Self = StObject.set(x, "entities", js.Array(value*))
     
     inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

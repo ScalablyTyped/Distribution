@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0`[Theme /* <: ThemeWithPalette */] extends StObject {
+  trait `0`[Theme /* <: StringDictionary[Any] */] extends StObject {
     
     var theme: Theme
   }
   object `0` {
     
-    inline def apply[Theme /* <: ThemeWithPalette */](theme: Theme): `0`[Theme] = {
+    inline def apply[Theme /* <: StringDictionary[Any] */](theme: Theme): `0`[Theme] = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[`0`[Theme]]
     }
     
-    extension [Self <: `0`[?], Theme /* <: ThemeWithPalette */](x: Self & `0`[Theme]) {
+    extension [Self <: `0`[?], Theme /* <: StringDictionary[Any] */](x: Self & `0`[Theme]) {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
@@ -86,18 +86,18 @@ object anon {
     }
   }
   
-  trait ThemeTheme[Theme /* <: StringDictionary[Any] */] extends StObject {
+  trait ThemeTheme[Theme /* <: ThemeWithPalette */] extends StObject {
     
     var theme: Theme
   }
   object ThemeTheme {
     
-    inline def apply[Theme /* <: StringDictionary[Any] */](theme: Theme): ThemeTheme[Theme] = {
+    inline def apply[Theme /* <: ThemeWithPalette */](theme: Theme): ThemeTheme[Theme] = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThemeTheme[Theme]]
     }
     
-    extension [Self <: ThemeTheme[?], Theme /* <: StringDictionary[Any] */](x: Self & ThemeTheme[Theme]) {
+    extension [Self <: ThemeTheme[?], Theme /* <: ThemeWithPalette */](x: Self & ThemeTheme[Theme]) {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

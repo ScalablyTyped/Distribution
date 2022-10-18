@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Verified extends StObject {
   
-  var payload: js.UndefOr[String | Null] = js.undefined
+  var payload: String | Null
   
-  var reason: js.UndefOr[String] = js.undefined
+  var reason: String
   
-  var signature: js.UndefOr[String | Null] = js.undefined
+  var signature: String | Null
   
-  var verified: js.UndefOr[Boolean] = js.undefined
+  var verified: Boolean
 }
 object Verified {
   
-  inline def apply(): Verified = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(reason: String, verified: Boolean): Verified = {
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any], payload = null, signature = null)
     __obj.asInstanceOf[Verified]
   }
   
@@ -27,20 +27,12 @@ object Verified {
     
     inline def setPayloadNull: Self = StObject.set(x, "payload", null)
     
-    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
-    
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
-    
-    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     inline def setSignatureNull: Self = StObject.set(x, "signature", null)
     
-    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
-    
     inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
-    
-    inline def setVerifiedUndefined: Self = StObject.set(x, "verified", js.undefined)
   }
 }

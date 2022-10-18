@@ -10,10 +10,10 @@ object AmbiguousRoleResolutionType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[
-    typings.awsSdkClientCognitoIdentity.models0Mod.AmbiguousRoleResolutionType & String
+    typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.AmbiguousRoleResolutionType & String
   ] = js.native
   
-  /* "AuthenticatedRole" */ val AUTHENTICATED_ROLE: typings.awsSdkClientCognitoIdentity.models0Mod.AmbiguousRoleResolutionType.AUTHENTICATED_ROLE & String = js.native
+  /* "AuthenticatedRole" */ val AUTHENTICATED_ROLE: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.AmbiguousRoleResolutionType.AUTHENTICATED_ROLE & String = js.native
   
-  /* "Deny" */ val DENY: typings.awsSdkClientCognitoIdentity.models0Mod.AmbiguousRoleResolutionType.DENY & String = js.native
+  /* "Deny" */ val DENY: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.AmbiguousRoleResolutionType.DENY & String = js.native
 }

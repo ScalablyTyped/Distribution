@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about an attempt to change properties on a frame source. */
-@JSGlobal("Windows.Devices.Perception.PerceptionFrameSourcePropertiesChangedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.PerceptionFrameSourcePropertiesChangedEventArgs")
 @js.native
-abstract class PerceptionFrameSourcePropertiesChangedEventArgs ()
+open class PerceptionFrameSourcePropertiesChangedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.PerceptionFrameSourcePropertiesChangedEventArgs {
   

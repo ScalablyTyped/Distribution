@@ -3,7 +3,7 @@ package typings.webpack.mod
 import org.scalablytyped.runtime.Instantiable1
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.node.tlsMod.TlsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

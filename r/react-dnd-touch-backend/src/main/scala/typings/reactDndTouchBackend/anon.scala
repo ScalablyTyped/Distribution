@@ -1,6 +1,6 @@
 package typings.reactDndTouchBackend
 
-import typings.reactDndTouchBackend.interfacesMod.AngleRange
+import typings.reactDndTouchBackend.distInterfacesMod.AngleRange
 import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject

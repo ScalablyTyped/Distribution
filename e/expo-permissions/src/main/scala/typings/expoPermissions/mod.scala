@@ -1,8 +1,8 @@
 package typings.expoPermissions
 
-import typings.expoPermissions.permissionsHooksMod.PermissionsOptions
-import typings.expoPermissions.permissionsTypesMod.PermissionResponse
-import typings.expoPermissions.permissionsTypesMod.PermissionType
+import typings.expoPermissions.buildPermissionsDottypesMod.PermissionResponse
+import typings.expoPermissions.buildPermissionsDottypesMod.PermissionType
+import typings.expoPermissions.buildPermissionsHooksMod.PermissionsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,13 +66,13 @@ object mod {
   object PermissionStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus & String] = js.native
+    def apply(value: String): js.UndefOr[typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus & String] = js.native
     
-    /* "denied" */ val DENIED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.DENIED & String = js.native
+    /* "denied" */ val DENIED: typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus.DENIED & String = js.native
     
-    /* "granted" */ val GRANTED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.GRANTED & String = js.native
+    /* "granted" */ val GRANTED: typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus.GRANTED & String = js.native
     
-    /* "undetermined" */ val UNDETERMINED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.UNDETERMINED & String = js.native
+    /* "undetermined" */ val UNDETERMINED: typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus.UNDETERMINED & String = js.native
   }
   
   @JSImport("expo-permissions", "REMINDERS")

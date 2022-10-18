@@ -1,6 +1,5 @@
 package typings.sass.anon
 
-import typings.sass.pluginThisMod.LegacyPluginThis
 import typings.sass.sassInts.`0`
 import typings.sass.sassInts.`10`
 import typings.sass.sassInts.`1`
@@ -8,6 +7,7 @@ import typings.sass.sassStrings.Carriagereturn
 import typings.sass.sassStrings.CarriagereturnLinefeed
 import typings.sass.sassStrings.Linefeed
 import typings.sass.sassStrings.LinefeedCarriagereturn
+import typings.sass.typesLegacyPluginThisMod.LegacyPluginThis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

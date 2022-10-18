@@ -33,7 +33,7 @@ object ColorStops {
     
     inline def setColorStopsUndefined: Self = StObject.set(x, "colorStops", js.undefined)
     
-    inline def setColorStopsVarargs(value: Color*): Self = StObject.set(x, "colorStops", js.Array(value*))
+    inline def setColorStopsVarargs(value: Offset*): Self = StObject.set(x, "colorStops", js.Array(value*))
     
     inline def setCoords(value: IGradientOptionsCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     

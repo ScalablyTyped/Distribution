@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "MaterialFlags")
 @js.native
 open class MaterialFlags ()
-  extends typings.babylonjs.materialFlagsMod.MaterialFlags
+  extends typings.babylonjs.materialsMaterialFlagsMod.MaterialFlags
 /* static members */
 object MaterialFlags {
   

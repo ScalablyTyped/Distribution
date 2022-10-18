@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__ecma402-abstract
 
-Typings are for version 1.12.0
+Typings are for version 1.13.0
 
 ## Library description:
 A collection of implementation for ECMAScript abstract operations

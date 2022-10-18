@@ -145,7 +145,8 @@ object dataTableTypesMod {
     
     var onSelectOne: js.UndefOr[js.Function1[/* row */ Row, Unit]] = js.undefined
     
-    var onSort: js.UndefOr[js.Function1[/* columnIndex */ Double, Unit]] = js.undefined
+    @JSName("onSort")
+    var onSort_DataTableProps: js.UndefOr[js.Function1[/* columnIndex */ Double, Unit]] = js.undefined
     
     var selectedRowIds: js.UndefOr[Set[String | Double]] = js.undefined
     
@@ -204,16 +205,20 @@ object dataTableTypesMod {
   
   trait ImperativeMethods extends StObject {
     
+    def clearSelection(): Unit
+    
     def getRows(): js.Array[Row]
   }
   object ImperativeMethods {
     
-    inline def apply(getRows: () => js.Array[Row]): ImperativeMethods = {
-      val __obj = js.Dynamic.literal(getRows = js.Any.fromFunction0(getRows))
+    inline def apply(clearSelection: () => Unit, getRows: () => js.Array[Row]): ImperativeMethods = {
+      val __obj = js.Dynamic.literal(clearSelection = js.Any.fromFunction0(clearSelection), getRows = js.Any.fromFunction0(getRows))
       __obj.asInstanceOf[ImperativeMethods]
     }
     
     extension [Self <: ImperativeMethods](x: Self) {
+      
+      inline def setClearSelection(value: () => Unit): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
       
       inline def setGetRows(value: () => js.Array[Row]): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
     }
@@ -391,6 +396,10 @@ object dataTableTypesMod {
     
     var onSelectionChange: js.UndefOr[js.Function1[/* a */ js.Array[Row], Any]] = js.undefined
     
+    var onSort: js.UndefOr[js.Function2[/* columnIndex */ Double, /* sortDirection */ SortDirections, Unit]] = js.undefined
+    
+    var onTextQueryChange: js.UndefOr[js.Function1[/* textQuery */ String, Unit]] = js.undefined
+    
     var resizableColumnWidths: js.UndefOr[Boolean] = js.undefined
     
     var rowActions: js.UndefOr[js.Array[RowAction] | (js.Function1[/* a */ Row, js.Array[RowAction]])] = js.undefined
@@ -477,6 +486,14 @@ object dataTableTypesMod {
       inline def setOnSelectionChange(value: /* a */ js.Array[Row] => Any): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
       
       inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
+      
+      inline def setOnSort(value: (/* columnIndex */ Double, /* sortDirection */ SortDirections) => Unit): Self = StObject.set(x, "onSort", js.Any.fromFunction2(value))
+      
+      inline def setOnSortUndefined: Self = StObject.set(x, "onSort", js.undefined)
+      
+      inline def setOnTextQueryChange(value: /* textQuery */ String => Unit): Self = StObject.set(x, "onTextQueryChange", js.Any.fromFunction1(value))
+      
+      inline def setOnTextQueryChangeUndefined: Self = StObject.set(x, "onTextQueryChange", js.undefined)
       
       inline def setResizableColumnWidths(value: Boolean): Self = StObject.set(x, "resizableColumnWidths", value.asInstanceOf[js.Any])
       

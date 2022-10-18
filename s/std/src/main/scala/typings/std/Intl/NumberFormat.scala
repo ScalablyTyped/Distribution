@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumberFormat extends StObject {
   
   def format(value: js.BigInt): String = js.native
-  /* standard es2020.bigint */
+  /* standard es5 */
   def format(value: Double): String = js.native
   
   def formatRange(start: js.BigInt, end: js.BigInt): String = js.native
@@ -28,6 +28,6 @@ trait NumberFormat extends StObject {
   def formatToParts(number: js.BigInt): js.Array[NumberFormatPart] = js.native
   def formatToParts(number: Double): js.Array[NumberFormatPart] = js.native
   
-  /* standard es2020.bigint */
+  /* standard es5 */
   def resolvedOptions(): ResolvedNumberFormatOptions = js.native
 }

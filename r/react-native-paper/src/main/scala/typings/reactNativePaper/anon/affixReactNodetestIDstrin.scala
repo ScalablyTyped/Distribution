@@ -4,7 +4,7 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
-import typings.reactNativePaper.enumsMod.AdornmentSide
+import typings.reactNativePaper.libTypescriptComponentsTextInputAdornmentEnumsMod.AdornmentSide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

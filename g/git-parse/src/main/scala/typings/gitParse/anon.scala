@@ -1,6 +1,6 @@
 package typings.gitParse
 
-import typings.gitParse.gitLogStreamMod.GitLogStreamErrorHandler
+import typings.gitParse.distGitLogStreamMod.GitLogStreamErrorHandler
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

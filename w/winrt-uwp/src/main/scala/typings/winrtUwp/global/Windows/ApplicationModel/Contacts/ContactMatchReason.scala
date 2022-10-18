@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details about why search results matched the query parameters. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactMatchReason")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactMatchReason")
 @js.native
-abstract class ContactMatchReason ()
+open class ContactMatchReason ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactMatchReason {
   

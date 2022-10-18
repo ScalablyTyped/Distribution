@@ -1,6 +1,5 @@
 package typings.canvasjs.mod
 
-import typings.canvasjs.anon.DataSeries
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,7 +85,7 @@ trait ChartDataCommon extends StObject {
     * A custom formatter function which returns the text to be displayed as indexLabel on dataPoints.
     * @param e event object
     */
-  var indexLabelFormatter: js.UndefOr[js.Function1[/* e */ DataSeries, String]] = js.undefined
+  var indexLabelFormatter: js.UndefOr[js.Function1[/* e */ typings.canvasjs.anon.Chart, String]] = js.undefined
   
   /**
     * Sets the color of line connecting index labels with their dataPoint. It is only applicable for pie and doughnut chart when indexLabelPlacment is outside.
@@ -284,7 +283,7 @@ object ChartDataCommon {
     
     inline def setIndexLabelFontWeightUndefined: Self = StObject.set(x, "indexLabelFontWeight", js.undefined)
     
-    inline def setIndexLabelFormatter(value: /* e */ DataSeries => String): Self = StObject.set(x, "indexLabelFormatter", js.Any.fromFunction1(value))
+    inline def setIndexLabelFormatter(value: /* e */ typings.canvasjs.anon.Chart => String): Self = StObject.set(x, "indexLabelFormatter", js.Any.fromFunction1(value))
     
     inline def setIndexLabelFormatterUndefined: Self = StObject.set(x, "indexLabelFormatter", js.undefined)
     

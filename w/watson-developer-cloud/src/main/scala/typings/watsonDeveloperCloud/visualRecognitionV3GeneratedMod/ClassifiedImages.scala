@@ -34,7 +34,7 @@ object ClassifiedImages {
     
     inline def setImages(value: js.Array[ClassifiedImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    inline def setImagesVarargs(value: ClassifiedImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: ClassifiedImage*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setImages_processed(value: Double): Self = StObject.set(x, "images_processed", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object ClassifiedImages {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: WarningInfo*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: WarningInfo*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

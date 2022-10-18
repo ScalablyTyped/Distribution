@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait Resource extends StObject {
     * preserved when modifying objects. More info: https://kubernetes.io/docs/user-guide/annotations
     */
   var annotations: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Resource & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Output only. The timestamp when the resource was created. This may be either the time creation was initiated or when it was completed. */
@@ -34,9 +31,7 @@ trait Resource extends StObject {
   
   /** The labels or tags on the resource, such as AWS resource tags and Kubernetes resource labels. */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Resource & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -85,9 +80,7 @@ object Resource {
   extension [Self <: Resource](x: Self) {
     
     inline def setAnnotations(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Resource & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
@@ -109,9 +102,7 @@ object Resource {
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Resource & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

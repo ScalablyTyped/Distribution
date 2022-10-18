@@ -8,12 +8,12 @@ trait DataIndex extends StObject {
   
   var dataIndex: Double
   
-  var index: Double
+  var rowIndex: Double
 }
 object DataIndex {
   
-  inline def apply(dataIndex: Double, index: Double): DataIndex = {
-    val __obj = js.Dynamic.literal(dataIndex = dataIndex.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
+  inline def apply(dataIndex: Double, rowIndex: Double): DataIndex = {
+    val __obj = js.Dynamic.literal(dataIndex = dataIndex.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataIndex]
   }
   
@@ -21,6 +21,6 @@ object DataIndex {
     
     inline def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
     
-    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.HTMLCanvasElement
-import typings.babylonjs.webgpuEngineMod.WebGPUEngineOptions
+import typings.babylonjs.enginesWebgpuEngineMod.WebGPUEngineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,8 +31,8 @@ object WebGPUEngine {
     * @param options Defines the options passed to the engine to create the GPU context dependencies
     * @returns a promise that resolves with the created engine
     */
-  inline def CreateAsync(canvas: HTMLCanvasElement): js.Promise[typings.babylonjs.webgpuEngineMod.WebGPUEngine] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(canvas.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.babylonjs.webgpuEngineMod.WebGPUEngine]]
-  inline def CreateAsync(canvas: HTMLCanvasElement, options: WebGPUEngineOptions): js.Promise[typings.babylonjs.webgpuEngineMod.WebGPUEngine] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(canvas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.webgpuEngineMod.WebGPUEngine]]
+  inline def CreateAsync(canvas: HTMLCanvasElement): js.Promise[typings.babylonjs.enginesWebgpuEngineMod.WebGPUEngine] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(canvas.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.babylonjs.enginesWebgpuEngineMod.WebGPUEngine]]
+  inline def CreateAsync(canvas: HTMLCanvasElement, options: WebGPUEngineOptions): js.Promise[typings.babylonjs.enginesWebgpuEngineMod.WebGPUEngine] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(canvas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.enginesWebgpuEngineMod.WebGPUEngine]]
   
   /** true to enable using TintWASM to convert Spir-V to WGSL */
   @JSImport("babylonjs/index", "WebGPUEngine.UseTWGSL")

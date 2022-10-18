@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WiFiProperties[M /* <: ManagedObject */, OF /* <: ObjectFunction */, B, S, L]
   extends StObject
-     with WiFiPropertiesBase[M, String | ManagedDOMString] {
+     with WiFiPropertiesBase[
+      M, 
+      /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMString : string */ js.Any
+    ] {
   
   /**
     * Whether ARP polling of default gateway is allowed.
@@ -33,7 +36,9 @@ trait WiFiProperties[M /* <: ManagedObject */, OF /* <: ObjectFunction */, B, S,
     * The passphrase for WEP/WPA/WPA2 connections.
     * *This property can only be set!*
     */
-  var Passphrase: js.UndefOr[String] = js.undefined
+  var Passphrase: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: OF extends 'setter' ? string : never | undefined */ js.Any
+  ] = js.undefined
   
   /** Signal-to-noise value (in dB) below which roaming to a new network should be attempted. */
   var RoamTreshold: js.UndefOr[L] = js.undefined
@@ -69,7 +74,9 @@ object WiFiProperties {
     
     inline def setHiddenSSIDUndefined: Self = StObject.set(x, "HiddenSSID", js.undefined)
     
-    inline def setPassphrase(value: scala.Nothing | String): Self = StObject.set(x, "Passphrase", value.asInstanceOf[js.Any])
+    inline def setPassphrase(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: OF extends 'setter' ? string : never | undefined */ js.Any
+    ): Self = StObject.set(x, "Passphrase", value.asInstanceOf[js.Any])
     
     inline def setPassphraseUndefined: Self = StObject.set(x, "Passphrase", js.undefined)
     

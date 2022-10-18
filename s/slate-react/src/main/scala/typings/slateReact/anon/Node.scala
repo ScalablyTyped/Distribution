@@ -1,11 +1,11 @@
 package typings.slateReact.anon
 
 import typings.react.mod.global.JSX.Element
-import typings.slate.nodeMod.Ancestor
-import typings.slate.rangeMod.Range
-import typings.slateReact.editableMod.RenderElementProps
-import typings.slateReact.editableMod.RenderLeafProps
-import typings.slateReact.editableMod.RenderPlaceholderProps
+import typings.slate.distInterfacesNodeMod.Ancestor
+import typings.slate.distInterfacesRangeMod.Range
+import typings.slateReact.distComponentsEditableMod.RenderElementProps
+import typings.slateReact.distComponentsEditableMod.RenderLeafProps
+import typings.slateReact.distComponentsEditableMod.RenderPlaceholderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

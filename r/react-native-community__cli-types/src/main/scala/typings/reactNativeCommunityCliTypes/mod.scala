@@ -1,20 +1,20 @@
 package typings.reactNativeCommunityCliTypes
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNativeCommunityCliTypes.androidMod.AndroidDependencyConfig
-import typings.reactNativeCommunityCliTypes.androidMod.AndroidDependencyParams
-import typings.reactNativeCommunityCliTypes.androidMod.AndroidProjectConfig
-import typings.reactNativeCommunityCliTypes.androidMod.AndroidProjectParams
 import typings.reactNativeCommunityCliTypes.anon.Android
 import typings.reactNativeCommunityCliTypes.anon.Cmd
 import typings.reactNativeCommunityCliTypes.anon.Dictkey
 import typings.reactNativeCommunityCliTypes.anon.Dictname
 import typings.reactNativeCommunityCliTypes.anon.Name
 import typings.reactNativeCommunityCliTypes.anon.OmitDependencyConfignamer
-import typings.reactNativeCommunityCliTypes.iosMod.IOSDependencyConfig
-import typings.reactNativeCommunityCliTypes.iosMod.IOSDependencyParams
-import typings.reactNativeCommunityCliTypes.iosMod.IOSProjectConfig
-import typings.reactNativeCommunityCliTypes.iosMod.IOSProjectParams
+import typings.reactNativeCommunityCliTypes.buildAndroidMod.AndroidDependencyConfig
+import typings.reactNativeCommunityCliTypes.buildAndroidMod.AndroidDependencyParams
+import typings.reactNativeCommunityCliTypes.buildAndroidMod.AndroidProjectConfig
+import typings.reactNativeCommunityCliTypes.buildAndroidMod.AndroidProjectParams
+import typings.reactNativeCommunityCliTypes.buildIosMod.IOSDependencyConfig
+import typings.reactNativeCommunityCliTypes.buildIosMod.IOSDependencyParams
+import typings.reactNativeCommunityCliTypes.buildIosMod.IOSProjectConfig
+import typings.reactNativeCommunityCliTypes.buildIosMod.IOSProjectParams
 import typings.reactNativeCommunityCliTypes.reactNativeCommunityCliTypesBooleans.`false`
 import typings.reactNativeCommunityCliTypes.reactNativeCommunityCliTypesBooleans.`true`
 import typings.std.Exclude
@@ -40,13 +40,15 @@ object mod {
     
     var examples: js.UndefOr[js.Array[Cmd]] = js.undefined
     
-    var func: CommandFunction[js.Object] | DetachedCommandFunction[js.Object]
+    var func: /* import warning: importer.ImportType#apply Failed type conversion: IsDetached extends true ? @react-native-community/cli-types.@react-native-community/cli-types.DetachedCommandFunction<std.Object> : @react-native-community/cli-types.@react-native-community/cli-types.CommandFunction<std.Object> */ js.Any
     
     var name: String
     
     var options: js.UndefOr[
         js.Array[
-          CommandOption[(js.Function1[/* ctx */ Config, OptionValue]) | js.Function0[OptionValue]]
+          CommandOption[
+            /* import warning: importer.ImportType#apply Failed type conversion: IsDetached extends true ? (): @react-native-community/cli-types.@react-native-community/cli-types.OptionValue : (ctx : @react-native-community/cli-types.@react-native-community/cli-types.Config): @react-native-community/cli-types.@react-native-community/cli-types.OptionValue */ js.Any
+          ]
         ]
       ] = js.undefined
     
@@ -54,7 +56,10 @@ object mod {
   }
   object Command {
     
-    inline def apply[IsDetached /* <: Boolean */](func: CommandFunction[js.Object] | DetachedCommandFunction[js.Object], name: String): Command[IsDetached] = {
+    inline def apply[IsDetached /* <: Boolean */](
+      func: /* import warning: importer.ImportType#apply Failed type conversion: IsDetached extends true ? @react-native-community/cli-types.@react-native-community/cli-types.DetachedCommandFunction<std.Object> : @react-native-community/cli-types.@react-native-community/cli-types.CommandFunction<std.Object> */ js.Any,
+      name: String
+    ): Command[IsDetached] = {
       val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Command[IsDetached]]
     }
@@ -75,23 +80,27 @@ object mod {
       
       inline def setExamplesVarargs(value: Cmd*): Self = StObject.set(x, "examples", js.Array(value*))
       
-      inline def setFunc(value: CommandFunction[js.Object] | DetachedCommandFunction[js.Object]): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
-      
-      inline def setFuncFunction2(value: (/* argv */ js.Array[String], js.Object) => js.Promise[Unit] | Unit): Self = StObject.set(x, "func", js.Any.fromFunction2(value))
-      
-      inline def setFuncFunction3(value: (/* argv */ js.Array[String], /* ctx */ Config, js.Object) => js.Promise[Unit] | Unit): Self = StObject.set(x, "func", js.Any.fromFunction3(value))
+      inline def setFunc(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: IsDetached extends true ? @react-native-community/cli-types.@react-native-community/cli-types.DetachedCommandFunction<std.Object> : @react-native-community/cli-types.@react-native-community/cli-types.CommandFunction<std.Object> */ js.Any
+      ): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setOptions(
         value: js.Array[
-              CommandOption[(js.Function1[/* ctx */ Config, OptionValue]) | js.Function0[OptionValue]]
+              CommandOption[
+                /* import warning: importer.ImportType#apply Failed type conversion: IsDetached extends true ? (): @react-native-community/cli-types.@react-native-community/cli-types.OptionValue : (ctx : @react-native-community/cli-types.@react-native-community/cli-types.Config): @react-native-community/cli-types.@react-native-community/cli-types.OptionValue */ js.Any
+              ]
             ]
       ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: (CommandOption[(js.Function1[/* ctx */ Config, OptionValue]) | js.Function0[OptionValue]])*): Self = StObject.set(x, "options", js.Array(value*))
+      inline def setOptionsVarargs(
+        value: (CommandOption[
+              /* import warning: importer.ImportType#apply Failed type conversion: IsDetached extends true ? (): @react-native-community/cli-types.@react-native-community/cli-types.OptionValue : (ctx : @react-native-community/cli-types.@react-native-community/cli-types.Config): @react-native-community/cli-types.@react-native-community/cli-types.OptionValue */ js.Any
+            ])*
+      ): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPkg(value: Name): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
       

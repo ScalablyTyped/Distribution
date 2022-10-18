@@ -1,8 +1,8 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
 import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.ColorType
 import typings.std.Record
@@ -18,7 +18,7 @@ trait Knob extends StObject {
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var knob: js.UndefOr[`16`] = js.undefined
+  var knob: js.UndefOr[`10`] = js.undefined
   
   var radius: js.UndefOr[String] = js.undefined
   
@@ -47,7 +47,7 @@ object Knob {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setKnob(value: `16`): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: `10`): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
     inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     

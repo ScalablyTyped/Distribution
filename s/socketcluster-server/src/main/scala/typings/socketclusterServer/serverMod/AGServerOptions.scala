@@ -6,7 +6,7 @@ import typings.jsonwebtoken.mod.Secret
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.socketclusterServer.socketclusterServerInts.`1`
 import typings.socketclusterServer.socketclusterServerInts.`2`
 import typings.socketclusterServer.socketclusterServerStrings.close

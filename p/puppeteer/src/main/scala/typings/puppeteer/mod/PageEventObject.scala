@@ -1,6 +1,5 @@
 package typings.puppeteer.mod
 
-import typings.puppeteer.anon.MetricsTitle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ trait PageEventObject extends StObject {
   
   var framenavigated: Frame
   
-  var metrics: MetricsTitle
+  var metrics: typings.puppeteer.anon.Metrics
   
   var pageerror: js.Error
   
@@ -48,7 +47,7 @@ object PageEventObject {
     frameattached: Frame,
     framedetached: Frame,
     framenavigated: Frame,
-    metrics: MetricsTitle,
+    metrics: typings.puppeteer.anon.Metrics,
     pageerror: js.Error,
     popup: Page,
     request: HTTPRequest,
@@ -77,7 +76,7 @@ object PageEventObject {
     
     inline def setFramenavigated(value: Frame): Self = StObject.set(x, "framenavigated", value.asInstanceOf[js.Any])
     
-    inline def setMetrics(value: MetricsTitle): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: typings.puppeteer.anon.Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     inline def setPageerror(value: js.Error): Self = StObject.set(x, "pageerror", value.asInstanceOf[js.Any])
     

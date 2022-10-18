@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.PublishDiagnosticsParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.PublishDiagnosticsParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashpublishDiagnostics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object PublishDiagnosticsNotification {
   
   @JSImport("vscode-languageserver-protocol", "PublishDiagnosticsNotification.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "PublishDiagnosticsNotification.method")
   @js.native
@@ -18,5 +18,5 @@ object PublishDiagnosticsNotification {
   
   @JSImport("vscode-languageserver-protocol", "PublishDiagnosticsNotification.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[PublishDiagnosticsParams, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[PublishDiagnosticsParams, Unit] = js.native
 }

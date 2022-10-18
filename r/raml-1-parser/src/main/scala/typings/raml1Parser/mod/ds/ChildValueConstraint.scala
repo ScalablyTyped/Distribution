@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("raml-1-parser", "ds.ChildValueConstraint")
 @js.native
 open class ChildValueConstraint protected ()
-  extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.ChildValueConstraint {
+  extends typings.ramlDefinitionSystem.mod.ChildValueConstraint {
   def this(name: String, value: String) = this()
 }

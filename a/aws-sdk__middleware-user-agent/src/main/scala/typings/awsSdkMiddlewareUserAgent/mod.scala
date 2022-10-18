@@ -1,13 +1,13 @@
 package typings.awsSdkMiddlewareUserAgent
 
-import typings.awsSdkMiddlewareUserAgent.configurationsMod.PreviouslyResolved
-import typings.awsSdkMiddlewareUserAgent.configurationsMod.UserAgentInputConfig
-import typings.awsSdkMiddlewareUserAgent.configurationsMod.UserAgentResolvedConfig
-import typings.awsSdkTypes.middlewareMod.AbsoluteLocation
-import typings.awsSdkTypes.middlewareMod.BuildHandler
-import typings.awsSdkTypes.middlewareMod.BuildHandlerOptions
-import typings.awsSdkTypes.middlewareMod.HandlerExecutionContext
-import typings.awsSdkTypes.middlewareMod.Pluggable
+import typings.awsSdkMiddlewareUserAgent.distTypesConfigurationsMod.PreviouslyResolved
+import typings.awsSdkMiddlewareUserAgent.distTypesConfigurationsMod.UserAgentInputConfig
+import typings.awsSdkMiddlewareUserAgent.distTypesConfigurationsMod.UserAgentResolvedConfig
+import typings.awsSdkTypes.distTypesMiddlewareMod.AbsoluteLocation
+import typings.awsSdkTypes.distTypesMiddlewareMod.BuildHandler
+import typings.awsSdkTypes.distTypesMiddlewareMod.BuildHandlerOptions
+import typings.awsSdkTypes.distTypesMiddlewareMod.HandlerExecutionContext
+import typings.awsSdkTypes.distTypesMiddlewareMod.Pluggable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

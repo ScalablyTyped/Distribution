@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param register A custom registry to provide, if not using the global default.
   */
 open class PrometheusMetrics ()
-  extends typings.matrixAppserviceBridge.prometheusmetricsMod.PrometheusMetrics {
+  extends typings.matrixAppserviceBridge.libComponentsPrometheusmetricsMod.PrometheusMetrics {
   def this(register: Registry) = this()
 }
 /* static members */
@@ -29,12 +29,12 @@ object PrometheusMetrics {
   @js.native
   def AgeCounters: Instantiable1[
     /* counterPeriods */ js.UndefOr[js.Array[String]], 
-    typings.matrixAppserviceBridge.agecountersMod.AgeCounters
+    typings.matrixAppserviceBridge.libComponentsAgecountersMod.AgeCounters
   ] = js.native
   inline def AgeCounters_=(
     x: Instantiable1[
       /* counterPeriods */ js.UndefOr[js.Array[String]], 
-      typings.matrixAppserviceBridge.agecountersMod.AgeCounters
+      typings.matrixAppserviceBridge.libComponentsAgecountersMod.AgeCounters
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgeCounters")(x.asInstanceOf[js.Any])
 }

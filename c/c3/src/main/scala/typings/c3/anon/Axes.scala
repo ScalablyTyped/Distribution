@@ -34,7 +34,7 @@ trait Axes extends StObject {
   var data: js.UndefOr[typings.c3.mod.Data] = js.undefined
   
   /** Called when loading completes. */
-  var done: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var done: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   
   /**
     * An object to convert to data to load. Can be in the column form
@@ -104,7 +104,7 @@ object Axes {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
+    inline def setDone(value: () => scala.Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
     
     inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     

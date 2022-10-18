@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait OrgPolicyViolationInfo extends StObject {
     * This payload should not contain any core content.
     */
   var payload: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.OrgPolicyViolationInfo & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -23,9 +20,7 @@ trait OrgPolicyViolationInfo extends StObject {
     * check response for logging purposes.
     */
   var resourceTags: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.OrgPolicyViolationInfo & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Optional. Resource type that the orgpolicy is checked against. Example: compute.googleapis.com/Instance, store.googleapis.com/bucket */
@@ -44,17 +39,13 @@ object OrgPolicyViolationInfo {
   extension [Self <: OrgPolicyViolationInfo](x: Self) {
     
     inline def setPayload(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.OrgPolicyViolationInfo & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     inline def setResourceTags(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.OrgPolicyViolationInfo & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "resourceTags", value.asInstanceOf[js.Any])
     
     inline def setResourceTagsUndefined: Self = StObject.set(x, "resourceTags", js.undefined)

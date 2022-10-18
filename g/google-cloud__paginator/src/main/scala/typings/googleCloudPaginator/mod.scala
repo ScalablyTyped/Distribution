@@ -47,7 +47,7 @@ object mod {
       *     and returns `nextQuery` to receive more results.
       * @return {stream} - Readable object stream.
       */
-    def runAsStream_[T](parsedArguments: ParsedArguments, originalMethod: js.Function): typings.googleCloudPaginator.resourceStreamMod.ResourceStream[T] = js.native
+    def runAsStream_[T](parsedArguments: ParsedArguments, originalMethod: js.Function): typings.googleCloudPaginator.buildSrcResourceStreamMod.ResourceStream[T] = js.native
     
     /**
       * This simply checks to see if `autoPaginate` is set or not, if it's true
@@ -82,14 +82,14 @@ object mod {
     def streamify[T](methodName: String): js.ThisFunction1[
         /* this */ StringDictionary[js.Function], 
         /* repeated */ Any, 
-        typings.googleCloudPaginator.resourceStreamMod.ResourceStream[T]
+        typings.googleCloudPaginator.buildSrcResourceStreamMod.ResourceStream[T]
       ] = js.native
   }
   
   @JSImport("@google-cloud/paginator", "ResourceStream")
   @js.native
   open class ResourceStream[T] protected ()
-    extends typings.googleCloudPaginator.resourceStreamMod.ResourceStream[T] {
+    extends typings.googleCloudPaginator.buildSrcResourceStreamMod.ResourceStream[T] {
     def this(args: ParsedArguments, requestFn: js.Function) = this()
   }
   

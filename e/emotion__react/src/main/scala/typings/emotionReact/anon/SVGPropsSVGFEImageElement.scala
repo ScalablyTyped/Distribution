@@ -432,7 +432,7 @@ trait SVGPropsSVGFEImageElement extends StObject {
   
   var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
-  var css: js.UndefOr[Interpolation[typings.emotionReact.emotionReactMod.Theme]] = js.undefined
+  var css: js.UndefOr[Interpolation[typings.emotionReact.mod.Theme]] = js.undefined
   
   var cursor: js.UndefOr[Double | String] = js.undefined
   
@@ -1413,7 +1413,7 @@ object SVGPropsSVGFEImageElement {
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
-    inline def setCss(value: Interpolation[typings.emotionReact.emotionReactMod.Theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Interpolation[typings.emotionReact.mod.Theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssNull: Self = StObject.set(x, "css", null)
     

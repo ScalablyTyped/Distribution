@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import typings.babylonjs.meshesMeshMod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param gizmoLayer The utility layer the gizmo will be added to
   */
 open class BoundingBoxGizmo ()
-  extends typings.babylonjs.legacyMod.BoundingBoxGizmo {
-  def this(color: typings.babylonjs.mathColorMod.Color3) = this()
-  def this(color: Unit, gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer) = this()
+  extends typings.babylonjs.legacyLegacyMod.BoundingBoxGizmo {
+  def this(color: typings.babylonjs.mathsMathDotcolorMod.Color3) = this()
+  def this(color: Unit, gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer) = this()
   def this(
-    color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
 }
 /* static members */
@@ -32,5 +33,5 @@ object BoundingBoxGizmo {
     * @param mesh the mesh to wrap in the bounding box mesh and make not pickable
     * @returns the bounding box mesh with the passed in mesh as a child
     */
-  inline def MakeNotPickableAndWrapInBoundingBox(mesh: typings.babylonjs.meshMod.Mesh): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeNotPickableAndWrapInBoundingBox")(mesh.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def MakeNotPickableAndWrapInBoundingBox(mesh: Mesh): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeNotPickableAndWrapInBoundingBox")(mesh.asInstanceOf[js.Any]).asInstanceOf[Mesh]
 }

@@ -23,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Usb {
   
   /** The endpoint descriptor for a USB bulk IN endpoint. The descriptor specifies the endpoint type, direction, number and also the maximum number of bytes that can be read from the endpoint, in a single transfer. */
-  @JSGlobal("Windows.Devices.Usb.UsbBulkInEndpointDescriptor")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbBulkInEndpointDescriptor")
   @js.native
-  abstract class UsbBulkInEndpointDescriptor ()
+  open class UsbBulkInEndpointDescriptor ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbBulkInEndpointDescriptor {
     
@@ -43,9 +43,9 @@ object Usb {
   }
   
   /** Represents the pipe that the underlying USB driver opens to communicate with a USB bulk IN endpoint of the device. The app can get an input stream from the pipe and access data is being read from the endpoint. */
-  @JSGlobal("Windows.Devices.Usb.UsbBulkInPipe")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbBulkInPipe")
   @js.native
-  abstract class UsbBulkInPipe ()
+  open class UsbBulkInPipe ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbBulkInPipe {
     
@@ -78,9 +78,9 @@ object Usb {
   }
   
   /** The endpoint descriptor for a USB bulk OUT endpoint. The descriptor specifies the endpoint type, direction, number and also the maximum number of bytes that can be written to the endpoint, in a single transfer. */
-  @JSGlobal("Windows.Devices.Usb.UsbBulkOutEndpointDescriptor")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbBulkOutEndpointDescriptor")
   @js.native
-  abstract class UsbBulkOutEndpointDescriptor ()
+  open class UsbBulkOutEndpointDescriptor ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbBulkOutEndpointDescriptor {
     
@@ -98,9 +98,9 @@ object Usb {
   }
   
   /** Represents the pipe that the underlying USB driver opens to communicate with a USB bulk OUT endpoint of the device. The object provides access to an output stream to which the app can write data to send to the endpoint. */
-  @JSGlobal("Windows.Devices.Usb.UsbBulkOutPipe")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbBulkOutPipe")
   @js.native
-  abstract class UsbBulkOutPipe ()
+  open class UsbBulkOutPipe ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbBulkOutPipe {
     
@@ -125,9 +125,9 @@ object Usb {
   }
   
   /** Provides information about a USB configuration, its descriptors and the interfaces defined within that configuration. For an explanation of a USB configuration, see Section 9.6.3 in the Universal Serial Bus (USB) specification. */
-  @JSGlobal("Windows.Devices.Usb.UsbConfiguration")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbConfiguration")
   @js.native
-  abstract class UsbConfiguration ()
+  open class UsbConfiguration ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbConfiguration {
     
@@ -145,9 +145,9 @@ object Usb {
   }
   
   /** Derives information from the first 9 bytes of a USB configuration descriptor. The information includes the power capabilities of the device when the configuration is active and the number of interfaces included in that configuration. For an explanation of a configuration descriptor, Section 9.6.3 Universal Serial Bus Specification. For information about descriptor fields, see: */
-  @JSGlobal("Windows.Devices.Usb.UsbConfigurationDescriptor")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbConfigurationDescriptor")
   @js.native
-  abstract class UsbConfigurationDescriptor ()
+  open class UsbConfigurationDescriptor ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbConfigurationDescriptor {
     
@@ -249,9 +249,9 @@ object Usb {
   }
   
   /** Provides information about the type of descriptor, its size (in bytes), and gets the descriptor data. */
-  @JSGlobal("Windows.Devices.Usb.UsbDescriptor")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbDescriptor")
   @js.native
-  abstract class UsbDescriptor ()
+  open class UsbDescriptor ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbDescriptor {
     
@@ -272,9 +272,9 @@ object Usb {
   }
   
   /** Represents a USB device. The object provides methods and properties that an app can use to find the device (in the system) with which the app wants to communicate, and sends IN and OUT control transfers to the device. */
-  @JSGlobal("Windows.Devices.Usb.UsbDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbDevice")
   @js.native
-  abstract class UsbDevice ()
+  open class UsbDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbDevice
   object UsbDevice {
@@ -347,9 +347,9 @@ object Usb {
   }
   
   /** Provides a way for the app to create a UsbDeviceClass object by specifying the USB device class of the device. The properties defined in this class represent the supported USB device classes and are passed in the constructor call to instantiate UsbDeviceClass. For information about USB device classes, see the official USB Website for Approved Class Specification Documents. */
-  @JSGlobal("Windows.Devices.Usb.UsbDeviceClasses")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbDeviceClasses")
   @js.native
-  abstract class UsbDeviceClasses ()
+  open class UsbDeviceClasses ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClasses
   object UsbDeviceClasses {
@@ -423,9 +423,9 @@ object Usb {
   }
   
   /** Derives information from the USB device descriptor of the device. For an explanation of the device descriptor, see Table 9.8 in the Universal Serial Bus Specification. */
-  @JSGlobal("Windows.Devices.Usb.UsbDeviceDescriptor")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbDeviceDescriptor")
   @js.native
-  abstract class UsbDeviceDescriptor ()
+  open class UsbDeviceDescriptor ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbDeviceDescriptor {
     
@@ -455,9 +455,9 @@ object Usb {
   }
   
   /** Derives information from the USB endpoint descriptor of the endpoint, such as type, direction, and endpoint number. This object also gets the specific endpoint descriptors based on the type of endpoint. For an explanation of an endpoint descriptor, see Section 9.6.5 in the Universal Serial Bus Specification: */
-  @JSGlobal("Windows.Devices.Usb.UsbEndpointDescriptor")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbEndpointDescriptor")
   @js.native
-  abstract class UsbEndpointDescriptor ()
+  open class UsbEndpointDescriptor ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbEndpointDescriptor {
     
@@ -529,9 +529,9 @@ object Usb {
   }
   
   /** Provides information about the USB interface including its endpoints, the number of alternate settings the interface supports, and gets the entire descriptor set for those settings. It also obtains pipes associated with the endpoints that the interface supports. */
-  @JSGlobal("Windows.Devices.Usb.UsbInterface")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbInterface")
   @js.native
-  abstract class UsbInterface ()
+  open class UsbInterface ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbInterface {
     
@@ -565,9 +565,9 @@ object Usb {
   }
   
   /** Describes a USB alternate setting (of an interface) in an interface descriptor. For an explanation of an interface descriptor, see Section 9.6.5 in the Universal Serial Bus Specification: */
-  @JSGlobal("Windows.Devices.Usb.UsbInterfaceDescriptor")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbInterfaceDescriptor")
   @js.native
-  abstract class UsbInterfaceDescriptor ()
+  open class UsbInterfaceDescriptor ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbInterfaceDescriptor {
     
@@ -614,9 +614,9 @@ object Usb {
   }
   
   /** Provides information about an alternate setting and select that setting. The app can get the USB interface descriptors for the setting and its endpoints, and determine whether this setting is currently selected. */
-  @JSGlobal("Windows.Devices.Usb.UsbInterfaceSetting")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbInterfaceSetting")
   @js.native
-  abstract class UsbInterfaceSetting ()
+  open class UsbInterfaceSetting ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbInterfaceSetting {
     
@@ -657,9 +657,9 @@ object Usb {
   }
   
   /** The endpoint descriptor for a USB interrupt IN endpoint. The descriptor specifies the endpoint type, direction, number and also the maximum number of bytes that can be read from the endpoint, in a single transfer. The app can also get information about how often the host polls the endpoint for data. */
-  @JSGlobal("Windows.Devices.Usb.UsbInterruptInEndpointDescriptor")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbInterruptInEndpointDescriptor")
   @js.native
-  abstract class UsbInterruptInEndpointDescriptor ()
+  open class UsbInterruptInEndpointDescriptor ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbInterruptInEndpointDescriptor {
     
@@ -681,9 +681,9 @@ object Usb {
   }
   
   /** Represents the object that is passed as a parameter to the event handler for the DataReceived event. */
-  @JSGlobal("Windows.Devices.Usb.UsbInterruptInEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbInterruptInEventArgs")
   @js.native
-  abstract class UsbInterruptInEventArgs ()
+  open class UsbInterruptInEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbInterruptInEventArgs {
     
@@ -693,16 +693,16 @@ object Usb {
   }
   
   /** Represents the pipe that the underlying USB driver opens to communicate with a USB interrupt IN endpoint of the device. The object also enables the app to specify an event handler. That handler that gets invoked when data is read from the endpoint. */
-  @JSGlobal("Windows.Devices.Usb.UsbInterruptInPipe")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbInterruptInPipe")
   @js.native
-  abstract class UsbInterruptInPipe ()
+  open class UsbInterruptInPipe ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbInterruptInPipe
   
   /** The endpoint descriptor for a USB interrupt OUT endpoint. The descriptor specifies the endpoint type, direction, number and also the maximum number of bytes that can be written to the endpoint, in a single transfer. The app can also get information about how often the host polls the endpoint to send data. */
-  @JSGlobal("Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor")
   @js.native
-  abstract class UsbInterruptOutEndpointDescriptor ()
+  open class UsbInterruptOutEndpointDescriptor ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor {
     
@@ -724,9 +724,9 @@ object Usb {
   }
   
   /** Represents the pipe that the underlying USB driver opens to communicate with a USB interrupt OUT endpoint of the device. The object provides access to an output stream to which the app can write data to send to the endpoint. */
-  @JSGlobal("Windows.Devices.Usb.UsbInterruptOutPipe")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Usb.UsbInterruptOutPipe")
   @js.native
-  abstract class UsbInterruptOutPipe ()
+  open class UsbInterruptOutPipe ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbInterruptOutPipe {
     

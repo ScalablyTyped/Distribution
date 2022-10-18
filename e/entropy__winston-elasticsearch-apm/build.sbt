@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "entropy__winston-elasticsearch-apm"
-version := "1.0-dt-20211202Z-bc0d16"
+version := "1.0-dt-20211202Z-e89b09"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "elastic-apm-node" % "3.38.0-f03496",
-  "org.scalablytyped" %%% "logform" % "2.4.2-992aea",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
-  "org.scalablytyped" %%% "winston-transport" % "4.5.0-b9d63a")
+  "org.scalablytyped" %%% "elastic-apm-node" % "3.39.0-207a27",
+  "org.scalablytyped" %%% "logform" % "2.4.2-8544ea",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "winston-transport" % "4.5.0-74ff67")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

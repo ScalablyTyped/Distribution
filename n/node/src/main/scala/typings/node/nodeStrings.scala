@@ -390,10 +390,6 @@ object nodeStrings {
   inline def PTR: PTR = "PTR".asInstanceOf[PTR]
   
   @js.native
-  sealed trait ParsedValues extends StObject
-  inline def ParsedValues: ParsedValues = "ParsedValues".asInstanceOf[ParsedValues]
-  
-  @js.native
   sealed trait ProfilerDotconsoleProfileFinished extends StObject
   inline def ProfilerDotconsoleProfileFinished: ProfilerDotconsoleProfileFinished = "Profiler.consoleProfileFinished".asInstanceOf[ProfilerDotconsoleProfileFinished]
   
@@ -1134,6 +1130,10 @@ object nodeStrings {
   @js.native
   sealed trait drain extends StObject
   inline def drain: drain = "drain".asInstanceOf[drain]
+  
+  @js.native
+  sealed trait drop extends StObject
+  inline def drop: drop = "drop".asInstanceOf[drop]
   
   @js.native
   sealed trait dsa

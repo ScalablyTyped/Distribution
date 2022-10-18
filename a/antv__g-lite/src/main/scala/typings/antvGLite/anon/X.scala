@@ -1,10 +1,10 @@
 package typings.antvGLite.anon
 
-import typings.antvGLite.utilsGradientMod.EmNode
-import typings.antvGLite.utilsGradientMod.ExtentKeywordNode
-import typings.antvGLite.utilsGradientMod.PercentNode
-import typings.antvGLite.utilsGradientMod.PositionKeywordNode
-import typings.antvGLite.utilsGradientMod.PxNode
+import typings.antvGLite.distUtilsGradientMod.EmNode
+import typings.antvGLite.distUtilsGradientMod.ExtentKeywordNode
+import typings.antvGLite.distUtilsGradientMod.PercentNode
+import typings.antvGLite.distUtilsGradientMod.PositionKeywordNode
+import typings.antvGLite.distUtilsGradientMod.PxNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

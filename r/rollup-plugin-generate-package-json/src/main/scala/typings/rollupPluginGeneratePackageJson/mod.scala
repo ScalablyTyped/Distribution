@@ -1,7 +1,6 @@
 package typings.rollupPluginGeneratePackageJson
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.rollup.mod.Plugin
 import typings.rollupPluginGeneratePackageJson.anon.DictmoduleName
 import typings.rollupPluginGeneratePackageJson.anon.Directory
@@ -253,9 +252,7 @@ object mod {
     /**
       * Entry points of a module, optionally with conditions and subpath exports.
       */
-    type Exports = Null | String | js.Array[String] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in rollup-plugin-generate-package-json.rollup-plugin-generate-package-json.PackageJson.ExportCondition ]: any}
-      */ typings.rollupPluginGeneratePackageJson.rollupPluginGeneratePackageJsonStrings.Exports & TopLevel[Any]) | StringDictionary[Any]
+    type Exports = Null | String | js.Array[String] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in rollup-plugin-generate-package-json.rollup-plugin-generate-package-json.PackageJson.ExportCondition ]: any} */ js.Any) | StringDictionary[Any]
     
     // eslint-disable-line @typescript-eslint/consistent-indexed-object-style
     /**
@@ -263,9 +260,7 @@ object mod {
       */
     type Imports = // eslint-disable-line @typescript-eslint/consistent-indexed-object-style
     StringDictionary[
-        String | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in rollup-plugin-generate-package-json.rollup-plugin-generate-package-json.PackageJson.ExportCondition ]: rollup-plugin-generate-package-json.rollup-plugin-generate-package-json.PackageJson.Exports}
-      */ typings.rollupPluginGeneratePackageJson.rollupPluginGeneratePackageJsonStrings.Imports & TopLevel[Any])
+        String | (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in rollup-plugin-generate-package-json.rollup-plugin-generate-package-json.PackageJson.ExportCondition ]: rollup-plugin-generate-package-json.rollup-plugin-generate-package-json.PackageJson.Exports} */ js.Any)
       ]
     
     trait JSPMConfiguration extends StObject {
@@ -420,9 +415,7 @@ object mod {
         * Engines that this package runs on.
         */
       var engines: js.UndefOr[
-            /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ EngineName in 'npm' | 'node' | string ]:? string}
-        */ typings.rollupPluginGeneratePackageJson.rollupPluginGeneratePackageJsonStrings.PackageJsonStandard & TopLevel[Any]
+            /* import warning: importer.ImportType#apply Failed type conversion: {[ EngineName in 'npm' | 'node' | string ]:? string} */ js.Any
           ] = js.undefined
       
       /**
@@ -636,9 +629,7 @@ object mod {
         inline def setEngineStrictUndefined: Self = StObject.set(x, "engineStrict", js.undefined)
         
         inline def setEngines(
-          value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ EngineName in 'npm' | 'node' | string ]:? string}
-          */ typings.rollupPluginGeneratePackageJson.rollupPluginGeneratePackageJsonStrings.PackageJsonStandard & TopLevel[Any]
+          value: /* import warning: importer.ImportType#apply Failed type conversion: {[ EngineName in 'npm' | 'node' | string ]:? string} */ js.Any
         ): Self = StObject.set(x, "engines", value.asInstanceOf[js.Any])
         
         inline def setEnginesUndefined: Self = StObject.set(x, "engines", js.undefined)

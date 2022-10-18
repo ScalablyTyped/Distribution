@@ -1,13 +1,13 @@
 package typings.grommet.anon
 
-import typings.grommet.boxMod.BoxProps
+import typings.grommet.componentsBoxMod.BoxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GroupEnd extends StObject {
   
-  var body: js.UndefOr[`16`] = js.undefined
+  var body: js.UndefOr[`10`] = js.undefined
   
   var container: js.UndefOr[BoxProps] = js.undefined
   
@@ -19,7 +19,7 @@ trait GroupEnd extends StObject {
   
   var icons: js.UndefOr[Ascending] = js.undefined
   
-  var pinned: js.UndefOr[Footer] = js.undefined
+  var pinned: js.UndefOr[Header] = js.undefined
   
   var primary: js.UndefOr[`22`] = js.undefined
   
@@ -34,7 +34,7 @@ object GroupEnd {
   
   extension [Self <: GroupEnd](x: Self) {
     
-    inline def setBody(value: `16`): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: `10`): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -58,7 +58,7 @@ object GroupEnd {
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setPinned(value: Footer): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+    inline def setPinned(value: Header): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
     inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     

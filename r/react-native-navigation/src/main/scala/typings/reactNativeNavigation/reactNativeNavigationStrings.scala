@@ -1,11 +1,11 @@
 package typings.reactNativeNavigation
 
-import typings.reactNativeNavigation.componentEventsMod.ComponentType
-import typings.reactNativeNavigation.optionsMod.FontStyle
-import typings.reactNativeNavigation.optionsMod.FontWeight
-import typings.reactNativeNavigation.optionsMod.FontWeightIOS
-import typings.reactNativeNavigation.optionsMod.LayoutOrientation
-import typings.reactNativeNavigation.optionsMod.SystemItemIcon
+import typings.reactNativeNavigation.libDistSrcInterfacesComponentEventsMod.ComponentType
+import typings.reactNativeNavigation.libDistSrcInterfacesOptionsMod.FontStyle
+import typings.reactNativeNavigation.libDistSrcInterfacesOptionsMod.FontWeight
+import typings.reactNativeNavigation.libDistSrcInterfacesOptionsMod.FontWeightIOS
+import typings.reactNativeNavigation.libDistSrcInterfacesOptionsMod.LayoutOrientation
+import typings.reactNativeNavigation.libDistSrcInterfacesOptionsMod.SystemItemIcon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -220,11 +220,19 @@ object reactNativeNavigationStrings {
   inline def entireScreen: entireScreen = "entireScreen".asInstanceOf[entireScreen]
   
   @js.native
+  sealed trait exit extends StObject
+  inline def exit: exit = "exit".asInstanceOf[exit]
+  
+  @js.native
   sealed trait extrabold
     extends StObject
        with FontWeight
        with FontWeightIOS
   inline def extrabold: extrabold = "extrabold".asInstanceOf[extrabold]
+  
+  @js.native
+  sealed trait fade extends StObject
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
   sealed trait fastForward
@@ -233,8 +241,16 @@ object reactNativeNavigationStrings {
   inline def fastForward: fastForward = "fastForward".asInstanceOf[fastForward]
   
   @js.native
+  sealed trait fastOutSlowIn extends StObject
+  inline def fastOutSlowIn: fastOutSlowIn = "fastOutSlowIn".asInstanceOf[fastOutSlowIn]
+  
+  @js.native
   sealed trait fill extends StObject
   inline def fill: fill = "fill".asInstanceOf[fill]
+  
+  @js.native
+  sealed trait first extends StObject
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
   sealed trait fixedSpace
@@ -247,6 +263,10 @@ object reactNativeNavigationStrings {
     extends StObject
        with SystemItemIcon
   inline def flexibleSpace: flexibleSpace = "flexibleSpace".asInstanceOf[flexibleSpace]
+  
+  @js.native
+  sealed trait generic extends StObject
+  inline def generic: generic = "generic".asInstanceOf[generic]
   
   @js.native
   sealed trait heavy
@@ -314,6 +334,10 @@ object reactNativeNavigationStrings {
   inline def mini: mini = "mini".asInstanceOf[mini]
   
   @js.native
+  sealed trait minimal extends StObject
+  inline def minimal: minimal = "minimal".asInstanceOf[minimal]
+  
+  @js.native
   sealed trait never extends StObject
   inline def never: never = "never".asInstanceOf[never]
   
@@ -364,6 +388,10 @@ object reactNativeNavigationStrings {
     extends StObject
        with LayoutOrientation
   inline def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @js.native
+  sealed trait previous extends StObject
+  inline def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
   sealed trait redo
@@ -428,6 +456,24 @@ object reactNativeNavigationStrings {
   inline def semibold: semibold = "semibold".asInstanceOf[semibold]
   
   @js.native
+  sealed trait sensor
+    extends StObject
+       with LayoutOrientation
+  inline def sensor: sensor = "sensor".asInstanceOf[sensor]
+  
+  @js.native
+  sealed trait sensorLandscape
+    extends StObject
+       with LayoutOrientation
+  inline def sensorLandscape: sensorLandscape = "sensorLandscape".asInstanceOf[sensorLandscape]
+  
+  @js.native
+  sealed trait sensorPortrait
+    extends StObject
+       with LayoutOrientation
+  inline def sensorPortrait: sensorPortrait = "sensorPortrait".asInstanceOf[sensorPortrait]
+  
+  @js.native
   sealed trait showWhenActive extends StObject
   inline def showWhenActive: showWhenActive = "showWhenActive".asInstanceOf[showWhenActive]
   
@@ -438,6 +484,10 @@ object reactNativeNavigationStrings {
   @js.native
   sealed trait sidebar extends StObject
   inline def sidebar: sidebar = "sidebar".asInstanceOf[sidebar]
+  
+  @js.native
+  sealed trait slide extends StObject
+  inline def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
   sealed trait spring extends StObject

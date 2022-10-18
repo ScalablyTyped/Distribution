@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "DepthOfFieldMergePostProcess")
 @js.native
 open class DepthOfFieldMergePostProcess protected ()
-  extends typings.babylonjs.legacyMod.DepthOfFieldMergePostProcess {
+  extends typings.babylonjs.legacyLegacyMod.DepthOfFieldMergePostProcess {
   /**
     * Creates a new instance of DepthOfFieldMergePostProcess
     * @param name The name of the effect.
@@ -26,13 +26,13 @@ open class DepthOfFieldMergePostProcess protected ()
     */
   def this(
     name: String,
-    originalFromInput: typings.babylonjs.postProcessMod.PostProcess,
-    circleOfConfusion: typings.babylonjs.postProcessMod.PostProcess,
-    _blurSteps: js.Array[typings.babylonjs.postProcessMod.PostProcess],
+    originalFromInput: typings.babylonjs.postProcessesPostProcessMod.PostProcess,
+    circleOfConfusion: typings.babylonjs.postProcessesPostProcessMod.PostProcess,
+    _blurSteps: js.Array[typings.babylonjs.postProcessesPostProcessMod.PostProcess],
     options: Double | PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: js.UndefOr[Double],
-    engine: js.UndefOr[typings.babylonjs.engineMod.Engine],
+    engine: js.UndefOr[typings.babylonjs.enginesEngineMod.Engine],
     reusable: js.UndefOr[Boolean],
     textureType: js.UndefOr[Double],
     blockCompilation: js.UndefOr[Boolean]

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "InlineLoading")
 @js.native
 open class InlineLoading protected ()
-  extends typings.carbonComponents.componentsMod.InlineLoading {
+  extends typings.carbonComponents.globalsJsComponentsMod.InlineLoading {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialInlineLoadingOptio) = this()
 }

@@ -7,10 +7,8 @@ import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.ResolvedPos
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorModel.mod.Slice
-import typings.prosemirrorState.anon.FromJSON
 import typings.prosemirrorState.anon.Plugins
 import typings.prosemirrorState.anon.State
-import typings.prosemirrorState.anon.`0`
 import typings.prosemirrorTransform.mod.Mappable
 import typings.prosemirrorTransform.mod.Transform
 import typings.prosemirrorView.mod.EditorProps
@@ -29,162 +27,15 @@ object mod {
   */
   @JSImport("prosemirror-state", "AllSelection")
   @js.native
-  open class AllSelection protected () extends Selection {
+  open class AllSelection protected ()
+    extends StObject
+       with Selection {
     /**
       Create an all-selection over the given document.
       */
     def this(doc: Node) = this()
     
     def map(doc: Node): AllSelection = js.native
-  }
-  
-  /**
-  The state of a ProseMirror editor is represented by an object of
-  this type. A state is a persistent data structure—it isn't
-  updated, but rather a new state value is computed from an old one
-  using the [`apply`](https://prosemirror.net/docs/ref/#state.EditorState.apply) method.
-  A state holds a number of built-in fields, and plugins can
-  [define](https://prosemirror.net/docs/ref/#state.PluginSpec.state) additional fields.
-  */
-  @JSImport("prosemirror-state", "EditorState")
-  @js.native
-  open class EditorState () extends StObject {
-    
-    /**
-      Apply the given transaction to produce a new state.
-      */
-    @JSName("apply")
-    def apply(tr: Transaction): EditorState = js.native
-    
-    /**
-      Verbose variant of [`apply`](https://prosemirror.net/docs/ref/#state.EditorState.apply) that
-      returns the precise transactions that were applied (which might
-      be influenced by the [transaction
-      hooks](https://prosemirror.net/docs/ref/#state.PluginSpec.filterTransaction) of
-      plugins) along with the new state.
-      */
-    def applyTransaction(rootTr: Transaction): State = js.native
-    
-    /**
-      The current document.
-      */
-    var doc: Node = js.native
-    
-    /**
-      @ignore
-      */
-    def filterTransaction(tr: Transaction): Boolean = js.native
-    def filterTransaction(tr: Transaction, ignore: Double): Boolean = js.native
-    
-    /**
-      The plugins that are active in this state.
-      */
-    def plugins: js.Array[Plugin[Any]] = js.native
-    
-    /**
-      Create a new state based on this one, but with an adjusted set
-      of active plugins. State fields that exist in both sets of
-      plugins are kept unchanged. Those that no longer exist are
-      dropped, and those that are new are initialized using their
-      [`init`](https://prosemirror.net/docs/ref/#state.StateField.init) method, passing in the new
-      configuration object..
-      */
-    def reconfigure(config: `0`): EditorState = js.native
-    
-    /**
-      The schema of the state's document.
-      */
-    def schema: Schema[Any, Any] = js.native
-    
-    /**
-      The selection.
-      */
-    var selection: Selection = js.native
-    
-    /**
-      A set of marks to apply to the next input. Will be null when
-      no explicit marks have been set.
-      */
-    var storedMarks: js.Array[Mark] | Null = js.native
-    
-    /**
-      Serialize this state to JSON. If you want to serialize the state
-      of plugins, pass an object mapping property names to use in the
-      resulting JSON object to plugin objects. The argument may also be
-      a string or number, in which case it is ignored, to support the
-      way `JSON.stringify` calls `toString` methods.
-      */
-    def toJSON(): Any = js.native
-    def toJSON(pluginFields: StringDictionary[Plugin[Any]]): Any = js.native
-    
-    /**
-      Start a [transaction](https://prosemirror.net/docs/ref/#state.Transaction) from this state.
-      */
-    def tr: Transaction = js.native
-  }
-  object EditorState {
-    
-    @JSImport("prosemirror-state", "EditorState")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      Create a new state.
-      */
-    /* static member */
-    inline def create(config: EditorStateConfig): EditorState = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[EditorState]
-    
-    /**
-      Deserialize a JSON representation of a state. `config` should
-      have at least a `schema` field, and should contain array of
-      plugins to initialize the state with. `pluginFields` can be used
-      to deserialize the state of plugins, by associating plugin
-      instances with the property names they use in the JSON object.
-      */
-    /* static member */
-    inline def fromJSON(config: Plugins, json: Any): EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(config.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[EditorState]
-    inline def fromJSON(config: Plugins, json: Any, pluginFields: StringDictionary[Plugin[Any]]): EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(config.asInstanceOf[js.Any], json.asInstanceOf[js.Any], pluginFields.asInstanceOf[js.Any])).asInstanceOf[EditorState]
-  }
-  
-  /**
-  A node selection is a selection that points at a single node. All
-  nodes marked [selectable](https://prosemirror.net/docs/ref/#model.NodeSpec.selectable) can be the
-  target of a node selection. In such a selection, `from` and `to`
-  point directly before and after the selected node, `anchor` equals
-  `from`, and `head` equals `to`..
-  */
-  @JSImport("prosemirror-state", "NodeSelection")
-  @js.native
-  open class NodeSelection protected () extends Selection {
-    /**
-      Create a node selection. Does not verify the validity of its
-      argument.
-      */
-    def this($pos: ResolvedPos) = this()
-    
-    /**
-      The selected node.
-      */
-    var node: Node = js.native
-  }
-  object NodeSelection {
-    
-    @JSImport("prosemirror-state", "NodeSelection")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      Create a node selection from non-resolved positions.
-      */
-    /* static member */
-    inline def create(doc: Node, from: Double): NodeSelection = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[NodeSelection]
-    
-    /**
-      Determines whether the given node may be selected as a node
-      selection.
-      */
-    /* static member */
-    inline def isSelectable(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectable")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -246,214 +97,6 @@ object mod {
   }
   
   /**
-  Superclass for editor selections. Every selection type should
-  extend this. Should not be instantiated directly.
-  */
-  @JSImport("prosemirror-state", "Selection")
-  @js.native
-  abstract class Selection protected () extends StObject {
-    /**
-      Initialize a selection with the head and anchor and ranges. If no
-      ranges are given, constructs a single range across `$anchor` and
-      `$head`.
-      */
-    def this(
-      /**
-      The resolved anchor of the selection (the side that stays in
-      place when the selection is modified).
-      */
-    $anchor: ResolvedPos,
-      /**
-      The resolved head of the selection (the side that moves when
-      the selection is modified).
-      */
-    $head: ResolvedPos
-    ) = this()
-    def this(
-      /**
-      The resolved anchor of the selection (the side that stays in
-      place when the selection is modified).
-      */
-    $anchor: ResolvedPos,
-      /**
-      The resolved head of the selection (the side that moves when
-      the selection is modified).
-      */
-    $head: ResolvedPos,
-      ranges: js.Array[SelectionRange]
-    ) = this()
-    
-    /**
-      The resolved anchor of the selection (the side that stays in
-      place when the selection is modified).
-      */
-    @JSName("$anchor")
-    val $anchor: ResolvedPos = js.native
-    
-    /**
-      The resolved lower  bound of the selection's main range.
-      */
-    @JSName("$from")
-    def $from: ResolvedPos = js.native
-    
-    /**
-      The resolved head of the selection (the side that moves when
-      the selection is modified).
-      */
-    @JSName("$head")
-    val $head: ResolvedPos = js.native
-    
-    /**
-      The resolved upper bound of the selection's main range.
-      */
-    @JSName("$to")
-    def $to: ResolvedPos = js.native
-    
-    /**
-      The selection's anchor, as an unresolved position.
-      */
-    def anchor: Double = js.native
-    
-    /**
-      Get the content of this selection as a slice.
-      */
-    def content(): Slice = js.native
-    
-    /**
-      Indicates whether the selection contains any content.
-      */
-    def empty: Boolean = js.native
-    
-    /**
-      Test whether the selection is the same as another selection.
-      */
-    def eq(selection: Selection): Boolean = js.native
-    
-    /**
-      The lower bound of the selection's main range.
-      */
-    def from: Double = js.native
-    
-    /**
-      Get a [bookmark](https://prosemirror.net/docs/ref/#state.SelectionBookmark) for this selection,
-      which is a value that can be mapped without having access to a
-      current document, and later resolved to a real selection for a
-      given document again. (This is used mostly by the history to
-      track and restore old selections.) The default implementation of
-      this method just converts the selection to a text selection and
-      returns the bookmark for that.
-      */
-    def getBookmark(): SelectionBookmark = js.native
-    
-    /**
-      The selection's head.
-      */
-    def head: Double = js.native
-    
-    /**
-      Map this selection through a [mappable](https://prosemirror.net/docs/ref/#transform.Mappable)
-      thing. `doc` should be the new document to which we are mapping.
-      */
-    def map(doc: Node, mapping: Mappable): Selection = js.native
-    
-    /**
-      The ranges covered by the selection.
-      */
-    var ranges: js.Array[SelectionRange] = js.native
-    
-    /**
-      Replace the selection with a slice or, if no slice is given,
-      delete the selection. Will append to the given transaction.
-      */
-    def replace(tr: Transaction): Unit = js.native
-    def replace(tr: Transaction, content: Slice): Unit = js.native
-    
-    /**
-      Replace the selection with the given node, appending the changes
-      to the given transaction.
-      */
-    def replaceWith(tr: Transaction, node: Node): Unit = js.native
-    
-    /**
-      The upper bound of the selection's main range.
-      */
-    def to: Double = js.native
-    
-    /**
-      Convert the selection to a JSON representation. When implementing
-      this for a custom selection class, make sure to give the object a
-      `type` property whose value matches the ID under which you
-      [registered](https://prosemirror.net/docs/ref/#state.Selection^jsonID) your class.
-      */
-    def toJSON(): Any = js.native
-    
-    /**
-      Controls whether, when a selection of this type is active in the
-      browser, the selected range should be visible to the user.
-      Defaults to `true`.
-      */
-    var visible: Boolean = js.native
-  }
-  object Selection {
-    
-    @JSImport("prosemirror-state", "Selection")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      Find the cursor or leaf node selection closest to the end of the
-      given document.
-      */
-    /* static member */
-    inline def atEnd(doc: Node): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("atEnd")(doc.asInstanceOf[js.Any]).asInstanceOf[Selection]
-    
-    /**
-      Find the cursor or leaf node selection closest to the start of
-      the given document. Will return an
-      [`AllSelection`](https://prosemirror.net/docs/ref/#state.AllSelection) if no valid position
-      exists.
-      */
-    /* static member */
-    inline def atStart(doc: Node): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("atStart")(doc.asInstanceOf[js.Any]).asInstanceOf[Selection]
-    
-    /**
-      Find a valid cursor or leaf node selection starting at the given
-      position and searching back if `dir` is negative, and forward if
-      positive. When `textOnly` is true, only consider cursor
-      selections. Will return null when no valid selection position is
-      found.
-      */
-    /* static member */
-    inline def findFrom($pos: ResolvedPos, dir: Double): Selection | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findFrom")($pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Selection | Null]
-    inline def findFrom($pos: ResolvedPos, dir: Double, textOnly: Boolean): Selection | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findFrom")($pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], textOnly.asInstanceOf[js.Any])).asInstanceOf[Selection | Null]
-    
-    /**
-      Deserialize the JSON representation of a selection. Must be
-      implemented for custom classes (as a static class method).
-      */
-    /* static member */
-    inline def fromJSON(doc: Node, json: Any): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(doc.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Selection]
-    
-    /**
-      To be able to deserialize selections from JSON, custom selection
-      classes must register themselves with an ID string, so that they
-      can be disambiguated. Try to pick something that's unlikely to
-      clash with classes from other modules.
-      */
-    /* static member */
-    inline def jsonID(id: String, selectionClass: FromJSON): FromJSON = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonID")(id.asInstanceOf[js.Any], selectionClass.asInstanceOf[js.Any])).asInstanceOf[FromJSON]
-    
-    /**
-      Find a valid cursor or leaf node selection near the given
-      position. Searches forward first by default, but if `bias` is
-      negative, it will search backwards first.
-      */
-    /* static member */
-    inline def near($pos: ResolvedPos): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("near")($pos.asInstanceOf[js.Any]).asInstanceOf[Selection]
-    inline def near($pos: ResolvedPos, bias: Double): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("near")($pos.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Selection]
-  }
-  
-  /**
   Represents a selected range in a document.
   */
   @JSImport("prosemirror-state", "SelectionRange")
@@ -484,54 +127,6 @@ object mod {
       */
     @JSName("$to")
     val $to: ResolvedPos = js.native
-  }
-  
-  /**
-  A text selection represents a classical editor selection, with a
-  head (the moving side) and anchor (immobile side), both of which
-  point into textblock nodes. It can be empty (a regular cursor
-  position).
-  */
-  @JSImport("prosemirror-state", "TextSelection")
-  @js.native
-  open class TextSelection protected () extends Selection {
-    /**
-      Construct a text selection between the given points.
-      */
-    def this($anchor: ResolvedPos) = this()
-    def this($anchor: ResolvedPos, $head: ResolvedPos) = this()
-    
-    /**
-      Returns a resolved position if this is a cursor selection (an
-      empty text selection), and null otherwise.
-      */
-    @JSName("$cursor")
-    def $cursor: ResolvedPos | Null = js.native
-  }
-  object TextSelection {
-    
-    @JSImport("prosemirror-state", "TextSelection")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      Return a text selection that spans the given positions or, if
-      they aren't text positions, find a text selection near them.
-      `bias` determines whether the method searches forward (default)
-      or backwards (negative number) first. Will fall back to calling
-      [`Selection.near`](https://prosemirror.net/docs/ref/#state.Selection^near) when the document
-      doesn't contain a valid text position.
-      */
-    /* static member */
-    inline def between($anchor: ResolvedPos, $head: ResolvedPos): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("between")($anchor.asInstanceOf[js.Any], $head.asInstanceOf[js.Any])).asInstanceOf[Selection]
-    inline def between($anchor: ResolvedPos, $head: ResolvedPos, bias: Double): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("between")($anchor.asInstanceOf[js.Any], $head.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Selection]
-    
-    /**
-      Create a text selection from non-resolved positions.
-      */
-    /* static member */
-    inline def create(doc: Node, anchor: Double): TextSelection = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any])).asInstanceOf[TextSelection]
-    inline def create(doc: Node, anchor: Double, head: Double): TextSelection = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], head.asInstanceOf[js.Any])).asInstanceOf[TextSelection]
   }
   
   /**
@@ -713,6 +308,90 @@ object mod {
   ]
   
   /**
+  The state of a ProseMirror editor is represented by an object of
+  this type. A state is a persistent data structure—it isn't
+  updated, but rather a new state value is computed from an old one
+  using the [`apply`](https://prosemirror.net/docs/ref/#state.EditorState.apply) method.
+  A state holds a number of built-in fields, and plugins can
+  [define](https://prosemirror.net/docs/ref/#state.PluginSpec.state) additional fields.
+  */
+  @js.native
+  trait EditorState extends StObject {
+    
+    /**
+      Apply the given transaction to produce a new state.
+      */
+    @JSName("apply")
+    def apply(tr: Transaction): EditorState = js.native
+    
+    /**
+      Verbose variant of [`apply`](https://prosemirror.net/docs/ref/#state.EditorState.apply) that
+      returns the precise transactions that were applied (which might
+      be influenced by the [transaction
+      hooks](https://prosemirror.net/docs/ref/#state.PluginSpec.filterTransaction) of
+      plugins) along with the new state.
+      */
+    def applyTransaction(rootTr: Transaction): State = js.native
+    
+    /**
+      The current document.
+      */
+    var doc: Node = js.native
+    
+    /**
+      @ignore
+      */
+    def filterTransaction(tr: Transaction): Boolean = js.native
+    def filterTransaction(tr: Transaction, ignore: Double): Boolean = js.native
+    
+    /**
+      The plugins that are active in this state.
+      */
+    def plugins: js.Array[Plugin[Any]] = js.native
+    
+    /**
+      Create a new state based on this one, but with an adjusted set
+      of active plugins. State fields that exist in both sets of
+      plugins are kept unchanged. Those that no longer exist are
+      dropped, and those that are new are initialized using their
+      [`init`](https://prosemirror.net/docs/ref/#state.StateField.init) method, passing in the new
+      configuration object..
+      */
+    def reconfigure(config: Plugins): EditorState = js.native
+    
+    /**
+      The schema of the state's document.
+      */
+    def schema: Schema[Any, Any] = js.native
+    
+    /**
+      The selection.
+      */
+    var selection: Selection = js.native
+    
+    /**
+      A set of marks to apply to the next input. Will be null when
+      no explicit marks have been set.
+      */
+    var storedMarks: js.Array[Mark] | Null = js.native
+    
+    /**
+      Serialize this state to JSON. If you want to serialize the state
+      of plugins, pass an object mapping property names to use in the
+      resulting JSON object to plugin objects. The argument may also be
+      a string or number, in which case it is ignored, to support the
+      way `JSON.stringify` calls `toString` methods.
+      */
+    def toJSON(): Any = js.native
+    def toJSON(pluginFields: StringDictionary[Plugin[Any]]): Any = js.native
+    
+    /**
+      Start a [transaction](https://prosemirror.net/docs/ref/#state.Transaction) from this state.
+      */
+    def tr: Transaction = js.native
+  }
+  
+  /**
   The type of object passed to
   [`EditorState.create`](https://prosemirror.net/docs/ref/#state.EditorState^create).
   */
@@ -808,6 +487,24 @@ object mod {
       
       inline def setResolve(value: Node => Selection | NodeSelection): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
+  }
+  
+  /**
+  A node selection is a selection that points at a single node. All
+  nodes marked [selectable](https://prosemirror.net/docs/ref/#model.NodeSpec.selectable) can be the
+  target of a node selection. In such a selection, `from` and `to`
+  point directly before and after the selected node, `anchor` equals
+  `from`, and `head` equals `to`..
+  */
+  @js.native
+  trait NodeSelection
+    extends StObject
+       with Selection {
+    
+    /**
+      The selected node.
+      */
+    var node: Node = js.native
   }
   
   /**
@@ -949,6 +646,125 @@ object mod {
   }
   
   /**
+  Superclass for editor selections. Every selection type should
+  extend this. Should not be instantiated directly.
+  */
+  @js.native
+  trait Selection extends StObject {
+    
+    /**
+      The resolved anchor of the selection (the side that stays in
+      place when the selection is modified).
+      */
+    @JSName("$anchor")
+    val $anchor: ResolvedPos = js.native
+    
+    /**
+      The resolved lower  bound of the selection's main range.
+      */
+    @JSName("$from")
+    def $from: ResolvedPos = js.native
+    
+    /**
+      The resolved head of the selection (the side that moves when
+      the selection is modified).
+      */
+    @JSName("$head")
+    val $head: ResolvedPos = js.native
+    
+    /**
+      The resolved upper bound of the selection's main range.
+      */
+    @JSName("$to")
+    def $to: ResolvedPos = js.native
+    
+    /**
+      The selection's anchor, as an unresolved position.
+      */
+    def anchor: Double = js.native
+    
+    /**
+      Get the content of this selection as a slice.
+      */
+    def content(): Slice = js.native
+    
+    /**
+      Indicates whether the selection contains any content.
+      */
+    def empty: Boolean = js.native
+    
+    /**
+      Test whether the selection is the same as another selection.
+      */
+    def eq(selection: Selection): Boolean = js.native
+    
+    /**
+      The lower bound of the selection's main range.
+      */
+    def from: Double = js.native
+    
+    /**
+      Get a [bookmark](https://prosemirror.net/docs/ref/#state.SelectionBookmark) for this selection,
+      which is a value that can be mapped without having access to a
+      current document, and later resolved to a real selection for a
+      given document again. (This is used mostly by the history to
+      track and restore old selections.) The default implementation of
+      this method just converts the selection to a text selection and
+      returns the bookmark for that.
+      */
+    def getBookmark(): SelectionBookmark = js.native
+    
+    /**
+      The selection's head.
+      */
+    def head: Double = js.native
+    
+    /**
+      Map this selection through a [mappable](https://prosemirror.net/docs/ref/#transform.Mappable)
+      thing. `doc` should be the new document to which we are mapping.
+      */
+    def map(doc: Node, mapping: Mappable): Selection = js.native
+    
+    /**
+      The ranges covered by the selection.
+      */
+    var ranges: js.Array[SelectionRange] = js.native
+    
+    /**
+      Replace the selection with a slice or, if no slice is given,
+      delete the selection. Will append to the given transaction.
+      */
+    def replace(tr: Transaction): Unit = js.native
+    def replace(tr: Transaction, content: Slice): Unit = js.native
+    
+    /**
+      Replace the selection with the given node, appending the changes
+      to the given transaction.
+      */
+    def replaceWith(tr: Transaction, node: Node): Unit = js.native
+    
+    /**
+      The upper bound of the selection's main range.
+      */
+    def to: Double = js.native
+    
+    /**
+      Convert the selection to a JSON representation. When implementing
+      this for a custom selection class, make sure to give the object a
+      `type` property whose value matches the ID under which you
+      [registered](https://prosemirror.net/docs/ref/#state.Selection^jsonID) your class.
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      Controls whether, when a selection of this type is active in the
+      browser, the selected range should be visible to the user.
+      Defaults to `true`.
+      */
+    var visible: Boolean = js.native
+  }
+  
+  /**
   A lightweight, document-independent representation of a selection.
   You can define a custom bookmark type for a custom selection class
   to make the history handle it well.
@@ -1075,5 +891,24 @@ object mod {
       
       inline def setResolve(value: Node => Selection): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
+  }
+  
+  /**
+  A text selection represents a classical editor selection, with a
+  head (the moving side) and anchor (immobile side), both of which
+  point into textblock nodes. It can be empty (a regular cursor
+  position).
+  */
+  @js.native
+  trait TextSelection
+    extends StObject
+       with Selection {
+    
+    /**
+      Returns a resolved position if this is a cursor selection (an
+      empty text selection), and null otherwise.
+      */
+    @JSName("$cursor")
+    def $cursor: ResolvedPos | Null = js.native
   }
 }

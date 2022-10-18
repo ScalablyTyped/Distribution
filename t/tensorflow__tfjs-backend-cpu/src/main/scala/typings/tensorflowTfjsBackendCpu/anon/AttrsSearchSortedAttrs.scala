@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsBackendCpu.anon
 
-import typings.tensorflowTfjsBackendCpu.backendCpuMod.MathBackendCPU
-import typings.tensorflowTfjsCore.kernelNamesMod.SearchSortedAttrs
-import typings.tensorflowTfjsCore.kernelNamesMod.SearchSortedInputs
+import typings.tensorflowTfjsBackendCpu.distBackendCpuMod.MathBackendCPU
+import typings.tensorflowTfjsCore.distKernelNamesMod.SearchSortedAttrs
+import typings.tensorflowTfjsCore.distKernelNamesMod.SearchSortedInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

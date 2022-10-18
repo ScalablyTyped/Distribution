@@ -12,8 +12,8 @@ object mod {
     * The function `previewEmail` returns a `Promise` which resolves with a URL.
     * We automatically open the browser to this URL unless you specify options.open as false
     */
-  inline def apply(message: typings.nodemailer.mailerMod.Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def apply(message: typings.nodemailer.mailerMod.Options, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(message: typings.nodemailer.libMailerMod.Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(message: typings.nodemailer.libMailerMod.Options, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("preview-email", JSImport.Namespace)
   @js.native

@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the value of a cell containing a #FIELD! error.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait FieldErrorCellValue
   extends StObject
@@ -27,8 +26,7 @@ trait FieldErrorCellValue
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: js.UndefOr[error | Error] = js.undefined
   
@@ -38,8 +36,7 @@ trait FieldErrorCellValue
     * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: js.UndefOr[NumbersignFIELDExclamationmark | String] = js.undefined
   
@@ -47,8 +44,7 @@ trait FieldErrorCellValue
     * Represents the type of `FieldErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var errorSubType: js.UndefOr[
     FieldErrorCellValueSubType | Unknown_ | WebImageMissingFilePart | DataProviderError
@@ -58,8 +54,7 @@ trait FieldErrorCellValue
     * Represents the type of `ErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var errorType: js.UndefOr[field | Field] = js.undefined
   
@@ -67,8 +62,7 @@ trait FieldErrorCellValue
     * Represents the field which was not found by FIELDVALUE.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var fieldName: js.UndefOr[String] = js.undefined
   
@@ -76,8 +70,7 @@ trait FieldErrorCellValue
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: typings.officeJsPreview.Excel.CellValueType.error | Error
 }

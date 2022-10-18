@@ -9,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object BrowserCacheLocation extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.azureMsalBrowser.browserConstantsMod.BrowserCacheLocation & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.azureMsalBrowser.distUtilsBrowserConstantsMod.BrowserCacheLocation & String
+  ] = js.native
   
-  /* "localStorage" */ val LocalStorage: typings.azureMsalBrowser.browserConstantsMod.BrowserCacheLocation.LocalStorage & String = js.native
+  /* "localStorage" */ val LocalStorage: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.BrowserCacheLocation.LocalStorage & String = js.native
   
-  /* "memoryStorage" */ val MemoryStorage: typings.azureMsalBrowser.browserConstantsMod.BrowserCacheLocation.MemoryStorage & String = js.native
+  /* "memoryStorage" */ val MemoryStorage: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.BrowserCacheLocation.MemoryStorage & String = js.native
   
-  /* "sessionStorage" */ val SessionStorage: typings.azureMsalBrowser.browserConstantsMod.BrowserCacheLocation.SessionStorage & String = js.native
+  /* "sessionStorage" */ val SessionStorage: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.BrowserCacheLocation.SessionStorage & String = js.native
 }

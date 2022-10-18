@@ -17,6 +17,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+inline def addCommand(descriptor: ICommandDescriptor): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("addCommand")(descriptor.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+
+inline def addEditorAction(descriptor: IActionDescriptor): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("addEditorAction")(descriptor.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+
+inline def addKeybindingRule(rule: IKeybindingRule): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("addKeybindingRule")(rule.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+
+inline def addKeybindingRules(rules: js.Array[IKeybindingRule]): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("addKeybindingRules")(rules.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+
 inline def colorize(text: String, languageId: String, options: IColorizerOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(text.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 
 inline def colorizeElement(domNode: HTMLElement, options: IColorizerElementOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizeElement")(domNode.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
@@ -89,8 +97,6 @@ inline def setModelMarkers(model: ITextModel, owner: String, markers: js.Array[I
 inline def setTheme(themeName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTheme")(themeName.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def tokenize(text: String, languageId: String): js.Array[js.Array[Token]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(text.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Token]]]
-
-type ComputedEditorOptionValue[T /* <: IEditorOption[Any, Any] */] = Any
 
 type ContextKeyValue = js.UndefOr[
 Null | Boolean | Double | String | (js.Array[js.UndefOr[Null | Boolean | Double | String]]) | (Record[String, js.UndefOr[Null | Boolean | Double | String]])]

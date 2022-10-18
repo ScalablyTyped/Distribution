@@ -40,7 +40,7 @@ object LensFlareSystem {
     * @param rootUrl Define the rootUrl of the load sequence to easily find a load relative dependencies such as textures
     * @returns the parsed system
     */
-  inline def Parse(parsedLensFlareSystem: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.lensFlareSystemMod.LensFlareSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLensFlareSystem.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lensFlareSystemMod.LensFlareSystem]
+  inline def Parse(parsedLensFlareSystem: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.lensFlaresLensFlareSystemMod.LensFlareSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLensFlareSystem.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lensFlaresLensFlareSystemMod.LensFlareSystem]
   
   /**
     * @internal

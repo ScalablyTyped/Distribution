@@ -3,12 +3,13 @@ package typings.highland
 import org.scalablytyped.runtime.StringDictionary
 import typings.highland.anon.End
 import typings.highland.highlandStrings.done
+import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Partial
 import typings.std.Pick
 import typings.std.PromiseLike
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,7 +63,7 @@ object Highland {
   }
   
   type OnFinished = js.Function2[
-    /* r */ ReadableStream[Any], 
+    /* r */ ReadableStream, 
     /* cb */ js.Function1[/* repeated */ Any, Unit], 
     Unit | js.Function | CleanupObject
   ]
@@ -697,8 +698,8 @@ object Highland {
         ]
     ): Stream[Partial[R]] = js.native
     
-    def pipe[U /* <: WritableStream[Any] */](dest: U): U = js.native
-    def pipe[U /* <: WritableStream[Any] */](dest: U, options: End): U = js.native
+    def pipe[U /* <: WritableStream */](dest: U): U = js.native
+    def pipe[U /* <: WritableStream */](dest: U, options: End): U = js.native
     /**
       * Pipes a Highland Stream to a [Node Writable
       * Stream](https://nodejs.org/api/stream.html#stream_class_stream_writable).
@@ -1012,9 +1013,7 @@ object Highland {
       */
     def throttle(ms: Double): Stream[R] = js.native
     
-    def through(
-      thru: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-    ): Stream[Any] = js.native
+    def through(thru: ReadWriteStream): Stream[Any] = js.native
     /**
       * Transforms a stream using an arbitrary target transform.
       *
@@ -1132,8 +1131,8 @@ object Highland {
       * _(fs.createReadStream('./abc')).toNodeStream({objectMode: false})
       * _([{a: 1}]).toNodeStream({objectMode: true})
       */
-    def toNodeStream(): ReadableStream[Any] = js.native
-    def toNodeStream(options: js.Object): ReadableStream[Any] = js.native
+    def toNodeStream(): ReadableStream = js.native
+    def toNodeStream(options: js.Object): ReadableStream = js.native
     
     /**
       * Converts the result of a stream to Promise.

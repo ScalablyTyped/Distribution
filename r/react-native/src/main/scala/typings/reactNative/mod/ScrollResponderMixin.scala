@@ -1,6 +1,7 @@
 package typings.reactNative.mod
 
-import typings.reactNative.anon.Width
+import typings.reactNative.anon.AnimatedHeight
+import typings.reactNative.anon.AnimatedX
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -257,10 +258,10 @@ trait ScrollResponderMixin
   def scrollResponderScrollTo(x: Unit, y: Double): Unit = js.native
   def scrollResponderScrollTo(x: Unit, y: Double, animated: Boolean): Unit = js.native
   def scrollResponderScrollTo(x: Unit, y: Unit, animated: Boolean): Unit = js.native
-  def scrollResponderScrollTo(x: typings.reactNative.anon.Animated): Unit = js.native
-  def scrollResponderScrollTo(x: typings.reactNative.anon.Animated, y: Double): Unit = js.native
-  def scrollResponderScrollTo(x: typings.reactNative.anon.Animated, y: Double, animated: Boolean): Unit = js.native
-  def scrollResponderScrollTo(x: typings.reactNative.anon.Animated, y: Unit, animated: Boolean): Unit = js.native
+  def scrollResponderScrollTo(x: AnimatedX): Unit = js.native
+  def scrollResponderScrollTo(x: AnimatedX, y: Double): Unit = js.native
+  def scrollResponderScrollTo(x: AnimatedX, y: Double, animated: Boolean): Unit = js.native
+  def scrollResponderScrollTo(x: AnimatedX, y: Unit, animated: Boolean): Unit = js.native
   
   def scrollResponderTextInputFocusError(e: ScrollResponderEvent): Unit = js.native
   
@@ -270,6 +271,6 @@ trait ScrollResponderMixin
     *
     * @platform ios
     */
-  def scrollResponderZoomTo(rect: Width): Unit = js.native
-  def scrollResponderZoomTo(rect: Width, animated: Boolean): Unit = js.native
+  def scrollResponderZoomTo(rect: AnimatedHeight): Unit = js.native
+  def scrollResponderZoomTo(rect: AnimatedHeight, animated: Boolean): Unit = js.native
 }

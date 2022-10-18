@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "Query")
+/* note: abstract class */ @JSImport("@angular/core", "Query")
 @js.native
-abstract class Query () extends StObject {
+open class Query () extends StObject {
   
   var descendants: Boolean = js.native
   

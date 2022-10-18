@@ -1,14 +1,14 @@
 package typings.reactSpinners
 
 import typings.react.mod.global.JSX.Element
-import typings.reactSpinners.propsMod.LoaderSizeProps
+import typings.reactSpinners.helpersPropsMod.LoaderSizeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dotLoaderMod {
   
-  @JSImport("react-spinners/cjs/DotLoader", JSImport.Namespace)
+  @JSImport("react-spinners/DotLoader", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

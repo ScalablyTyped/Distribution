@@ -1,7 +1,7 @@
 package typings.rcloneJs
 
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeChildProcessMod.ChildProcess
+import typings.node.nodeColonchildProcessMod.ChildProcess
 import typings.rcloneJs.mod.ApiFn
 import typings.rcloneJs.mod.PromisesFn
 import org.scalablytyped.runtime.StObject

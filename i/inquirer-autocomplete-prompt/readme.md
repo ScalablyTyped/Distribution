@@ -1,7 +1,7 @@
 
 # Scala.js typings for inquirer-autocomplete-prompt
 
-Typings are for version 1.3
+Typings are for version 3.0
 
 ## Library description:
 Autocomplete prompt for inquirer

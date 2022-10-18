@@ -1,6 +1,6 @@
 package typings.pathParser
 
-import typings.pathParser.encodingMod.URLParamsEncodingType
+import typings.pathParser.distEncodingMod.URLParamsEncodingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

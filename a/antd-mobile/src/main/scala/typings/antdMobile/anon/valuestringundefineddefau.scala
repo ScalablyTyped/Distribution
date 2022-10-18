@@ -52,7 +52,7 @@ import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.url
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.inputInputMod.InputRef
+import typings.antdMobile.esComponentsInputInputMod.InputRef
 import typings.react.mod.Booleanish
 import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler

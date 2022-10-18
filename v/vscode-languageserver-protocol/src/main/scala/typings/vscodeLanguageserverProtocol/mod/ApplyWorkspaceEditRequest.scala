@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.ApplyWorkspaceEditParams
-import typings.vscodeLanguageserverProtocol.protocolMod.ApplyWorkspaceEditResult
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.ApplyWorkspaceEditParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.ApplyWorkspaceEditResult
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashapplyEdit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object ApplyWorkspaceEditRequest {
   
   @JSImport("vscode-languageserver-protocol", "ApplyWorkspaceEditRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "ApplyWorkspaceEditRequest.method")
   @js.native
@@ -19,5 +19,5 @@ object ApplyWorkspaceEditRequest {
   
   @JSImport("vscode-languageserver-protocol", "ApplyWorkspaceEditRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[ApplyWorkspaceEditParams, ApplyWorkspaceEditResult, scala.Nothing, Unit, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[ApplyWorkspaceEditParams, ApplyWorkspaceEditResult, scala.Nothing, Unit, Unit] = js.native
 }

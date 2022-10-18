@@ -52,9 +52,9 @@ import typings.react.mod.WheelEventHandler
 import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.reactI18next.anon.Call
 import typings.reactI18next.anon.I18n
-import typings.reactI18next.anon.I18nI18n
 import typings.reactI18next.anon.InitialI18nStore
 import typings.reactI18next.anon.Lng
+import typings.reactI18next.anon.Ready
 import typings.reactI18next.anon.WithRef
 import typings.reactI18next.reactI18nextBooleans.`false`
 import typings.reactI18next.reactI18nextStrings.`additions removals`
@@ -128,7 +128,7 @@ object mod {
   
   @JSImport("react-i18next", "I18nContext")
   @js.native
-  val I18nContext: Context[I18nI18n] = js.native
+  val I18nContext: Context[I18n] = js.native
   
   @JSImport("react-i18next", "I18nextProvider")
   @js.native
@@ -2332,7 +2332,7 @@ object mod {
     }
   }
   
-  type UseTranslationResponse = (js.Tuple3[TFunction, i18n, Boolean]) & I18n
+  type UseTranslationResponse = (js.Tuple3[TFunction, i18n, Boolean]) & Ready
   
   trait WithTranslationProps extends StObject {
     

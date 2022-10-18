@@ -8,8 +8,8 @@ import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.NextFunction
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
+import typings.openapiFramework.distSrcTypesMod.OpenAPIFrameworkArgs
 import typings.openapiFramework.mod.default
-import typings.openapiFramework.typesMod.OpenAPIFrameworkArgs
 import typings.openapiTypes.mod.OpenAPIV2.Document
 import typings.std.Record
 import org.scalablytyped.runtime.StObject

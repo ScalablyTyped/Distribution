@@ -1,7 +1,7 @@
 package typings.redisSearch.anon
 
-import typings.redisSearch.infoMod.InfoRawReply
-import typings.redisSearch.infoMod.InfoReply
+import typings.redisSearch.distCommandsInfoMod.InfoRawReply
+import typings.redisSearch.distCommandsInfoMod.InfoReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

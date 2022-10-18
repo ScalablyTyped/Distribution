@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Diagnostics {
   
   /** Provides access to data about the CPU usage of a process. */
-  @JSGlobal("Windows.System.Diagnostics.ProcessCpuUsage")
+  /* note: abstract class */ @JSGlobal("Windows.System.Diagnostics.ProcessCpuUsage")
   @js.native
-  abstract class ProcessCpuUsage ()
+  open class ProcessCpuUsage ()
     extends StObject
        with typings.winrtUwp.Windows.System.Diagnostics.ProcessCpuUsage {
     
@@ -24,9 +24,9 @@ object Diagnostics {
   }
   
   /** Provides data about the CPU usage of the process. */
-  @JSGlobal("Windows.System.Diagnostics.ProcessCpuUsageReport")
+  /* note: abstract class */ @JSGlobal("Windows.System.Diagnostics.ProcessCpuUsageReport")
   @js.native
-  abstract class ProcessCpuUsageReport ()
+  open class ProcessCpuUsageReport ()
     extends StObject
        with typings.winrtUwp.Windows.System.Diagnostics.ProcessCpuUsageReport {
     
@@ -40,9 +40,9 @@ object Diagnostics {
   }
   
   /** Provides diagnostic information about a process, such as CPU usage, disk usage, memory usage and so on. */
-  @JSGlobal("Windows.System.Diagnostics.ProcessDiagnosticInfo")
+  /* note: abstract class */ @JSGlobal("Windows.System.Diagnostics.ProcessDiagnosticInfo")
   @js.native
-  abstract class ProcessDiagnosticInfo ()
+  open class ProcessDiagnosticInfo ()
     extends StObject
        with typings.winrtUwp.Windows.System.Diagnostics.ProcessDiagnosticInfo {
     
@@ -96,9 +96,9 @@ object Diagnostics {
   }
   
   /** Provides access to data about the disk usage of a process. */
-  @JSGlobal("Windows.System.Diagnostics.ProcessDiskUsage")
+  /* note: abstract class */ @JSGlobal("Windows.System.Diagnostics.ProcessDiskUsage")
   @js.native
-  abstract class ProcessDiskUsage ()
+  open class ProcessDiskUsage ()
     extends StObject
        with typings.winrtUwp.Windows.System.Diagnostics.ProcessDiskUsage {
     
@@ -111,9 +111,9 @@ object Diagnostics {
   }
   
   /** Provides data about the disk usage of the process. */
-  @JSGlobal("Windows.System.Diagnostics.ProcessDiskUsageReport")
+  /* note: abstract class */ @JSGlobal("Windows.System.Diagnostics.ProcessDiskUsageReport")
   @js.native
-  abstract class ProcessDiskUsageReport ()
+  open class ProcessDiskUsageReport ()
     extends StObject
        with typings.winrtUwp.Windows.System.Diagnostics.ProcessDiskUsageReport {
     
@@ -143,9 +143,9 @@ object Diagnostics {
   }
   
   /** Provides access to data about the memory usage of a process. */
-  @JSGlobal("Windows.System.Diagnostics.ProcessMemoryUsage")
+  /* note: abstract class */ @JSGlobal("Windows.System.Diagnostics.ProcessMemoryUsage")
   @js.native
-  abstract class ProcessMemoryUsage ()
+  open class ProcessMemoryUsage ()
     extends StObject
        with typings.winrtUwp.Windows.System.Diagnostics.ProcessMemoryUsage {
     
@@ -158,9 +158,9 @@ object Diagnostics {
   }
   
   /** Provides data about the memory usage of the process. */
-  @JSGlobal("Windows.System.Diagnostics.ProcessMemoryUsageReport")
+  /* note: abstract class */ @JSGlobal("Windows.System.Diagnostics.ProcessMemoryUsageReport")
   @js.native
-  abstract class ProcessMemoryUsageReport ()
+  open class ProcessMemoryUsageReport ()
     extends StObject
        with typings.winrtUwp.Windows.System.Diagnostics.ProcessMemoryUsageReport {
     

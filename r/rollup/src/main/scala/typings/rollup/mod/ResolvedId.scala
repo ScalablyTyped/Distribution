@@ -2,6 +2,7 @@ package typings.rollup.mod
 
 import typings.rollup.rollupStrings.`no-treeshake`
 import typings.rollup.rollupStrings.absolute
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,13 +18,14 @@ trait ResolvedId
 object ResolvedId {
   
   inline def apply(
+    assertions: Record[String, String],
     external: Boolean | absolute,
     id: String,
     meta: CustomPluginOptions,
     moduleSideEffects: Boolean | `no-treeshake`,
     syntheticNamedExports: Boolean | String
   ): ResolvedId = {
-    val __obj = js.Dynamic.literal(external = external.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], moduleSideEffects = moduleSideEffects.asInstanceOf[js.Any], syntheticNamedExports = syntheticNamedExports.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(assertions = assertions.asInstanceOf[js.Any], external = external.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], moduleSideEffects = moduleSideEffects.asInstanceOf[js.Any], syntheticNamedExports = syntheticNamedExports.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedId]
   }
   

@@ -2,15 +2,14 @@ package typings.fastGlob
 
 import typings.node.streamMod.Readable
 import typings.nodelibFsScandir.anon.WithFileTypes
-import typings.nodelibFsScandir.typesMod.Dirent
-import typings.nodelibFsScandir.typesMod.ErrnoException
-import typings.nodelibFsStat.fsMod.StatAsynchronousMethod
-import typings.nodelibFsStat.fsMod.StatSynchronousMethod
-import typings.nodelibFsStat.mod.AsyncCallback
-import typings.nodelibFsStat.typesMod.Stats
-import typings.nodelibFsWalk.settingsMod.Options
-import typings.nodelibFsWalk.settingsMod.default
-import typings.nodelibFsWalk.typesMod.Entry
+import typings.nodelibFsScandir.outTypesMod.Dirent
+import typings.nodelibFsScandir.outTypesMod.ErrnoException
+import typings.nodelibFsStat.outAdaptersFsMod.StatAsynchronousMethod
+import typings.nodelibFsStat.outAdaptersFsMod.StatSynchronousMethod
+import typings.nodelibFsStat.outTypesMod.Stats
+import typings.nodelibFsWalk.outSettingsMod.Options
+import typings.nodelibFsWalk.outSettingsMod.default
+import typings.nodelibFsWalk.outTypesMod.Entry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,8 +36,8 @@ object anon {
   trait FnCallPathOptionsOrSettings extends StObject {
     
     def apply(path: String): Stats = js.native
-    def apply(path: String, optionsOrSettings: typings.nodelibFsStat.settingsMod.Options): Stats = js.native
-    def apply(path: String, optionsOrSettings: typings.nodelibFsStat.settingsMod.default): Stats = js.native
+    def apply(path: String, optionsOrSettings: typings.nodelibFsStat.outSettingsMod.Options): Stats = js.native
+    def apply(path: String, optionsOrSettings: typings.nodelibFsStat.outSettingsMod.default): Stats = js.native
   }
   
   /* Inlined std.Partial<fast-glob.fast-glob/out/types.FileSystemAdapter> */
@@ -76,7 +75,7 @@ object anon {
       
       inline def setLstat(
         value: (/* path */ String, /* callback */ js.Function2[
-              /* error */ typings.nodelibFsStat.typesMod.ErrnoException | Null, 
+              /* error */ typings.nodelibFsStat.outTypesMod.ErrnoException | Null, 
               /* stats */ typings.node.fsMod.Stats, 
               Unit
             ]) => Unit
@@ -100,7 +99,7 @@ object anon {
       
       inline def setStat(
         value: (/* path */ String, /* callback */ js.Function2[
-              /* error */ typings.nodelibFsStat.typesMod.ErrnoException | Null, 
+              /* error */ typings.nodelibFsStat.outTypesMod.ErrnoException | Null, 
               /* stats */ typings.node.fsMod.Stats, 
               Unit
             ]) => Unit
@@ -112,37 +111,5 @@ object anon {
       
       inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
     }
-  }
-  
-  @js.native
-  trait Typeofstat extends StObject {
-    
-    def apply(path: String, callback: AsyncCallback): Unit = js.native
-    def apply(
-      path: String,
-      optionsOrSettings: typings.nodelibFsStat.settingsMod.Options,
-      callback: AsyncCallback
-    ): Unit = js.native
-    def apply(
-      path: String,
-      optionsOrSettings: typings.nodelibFsStat.settingsMod.default,
-      callback: AsyncCallback
-    ): Unit = js.native
-  }
-  
-  @js.native
-  trait Typeofwalk extends StObject {
-    
-    def apply(directory: String, callback: typings.nodelibFsWalk.asyncMod.AsyncCallback): Unit = js.native
-    def apply(
-      directory: String,
-      optionsOrSettings: Options,
-      callback: typings.nodelibFsWalk.asyncMod.AsyncCallback
-    ): Unit = js.native
-    def apply(
-      directory: String,
-      optionsOrSettings: default,
-      callback: typings.nodelibFsWalk.asyncMod.AsyncCallback
-    ): Unit = js.native
   }
 }

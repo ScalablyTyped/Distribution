@@ -1,7 +1,7 @@
 package typings.baseui
 
+import typings.baseui.aspectRatioBoxAspectRatioBoxBodyMod.AspectRatioBoxBodyComponentType
 import typings.baseui.aspectRatioBoxAspectRatioBoxMod.AspectRatioCoxComponentType
-import typings.baseui.aspectRatioBoxBodyMod.AspectRatioBoxBodyComponentType
 import typings.baseui.baseuiStrings.div
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.timePickerMod.default
+import typings.fundamentalReact.libTimePickerTimePickerMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

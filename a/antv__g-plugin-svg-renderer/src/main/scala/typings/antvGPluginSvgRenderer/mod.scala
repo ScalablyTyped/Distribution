@@ -1,21 +1,21 @@
 package typings.antvGPluginSvgRenderer
 
-import typings.antvGLite.contextServiceMod.ContextService
-import typings.antvGLite.cssInterfacesMod.StyleValueRegistry
-import typings.antvGLite.displayObjectsPathMod.ParsedPathStyleProps
+import typings.antvGLite.distCameraInterfacesMod.ICamera
+import typings.antvGLite.distCssInterfacesMod.StyleValueRegistry
+import typings.antvGLite.distDisplayObjectsImageMod.ParsedImageStyleProps
+import typings.antvGLite.distDisplayObjectsLineMod.ParsedLineStyleProps
+import typings.antvGLite.distDisplayObjectsPathMod.ParsedPathStyleProps
+import typings.antvGLite.distDisplayObjectsPolylineMod.ParsedPolylineStyleProps
+import typings.antvGLite.distDisplayObjectsRectMod.ParsedRectStyleProps
+import typings.antvGLite.distDisplayObjectsTextMod.ParsedTextStyleProps
+import typings.antvGLite.distServicesContextServiceMod.ContextService
+import typings.antvGLite.distServicesRenderingContextMod.RenderingContext
 import typings.antvGLite.distTypesMod.CanvasConfig
 import typings.antvGLite.distTypesMod.Shape
-import typings.antvGLite.imageMod.ParsedImageStyleProps
-import typings.antvGLite.interfacesMod.ICamera
-import typings.antvGLite.lineMod.ParsedLineStyleProps
 import typings.antvGLite.mod.AbstractRendererPlugin
 import typings.antvGLite.mod.Syringe.DefinedToken
-import typings.antvGLite.polylineMod.ParsedPolylineStyleProps
-import typings.antvGLite.rectMod.ParsedRectStyleProps
-import typings.antvGLite.renderingContextMod.RenderingContext
-import typings.antvGLite.textMod.ParsedTextStyleProps
 import typings.antvGPluginSvgRenderer.anon.PartialSVGRendererPluginO
-import typings.antvGPluginSvgRenderer.defsMod.DefElementManager
+import typings.antvGPluginSvgRenderer.distShapesDefsMod.DefElementManager
 import typings.manaSyringe.mod.SyringeModule
 import typings.std.Document
 import typings.std.Record
@@ -37,7 +37,7 @@ object mod {
   @JSImport("@antv/g-plugin-svg-renderer", "DefaultElementLifeCycleContribution")
   @js.native
   open class DefaultElementLifeCycleContribution protected ()
-    extends typings.antvGPluginSvgRenderer.defaultElementLifeCycleContributionMod.DefaultElementLifeCycleContribution {
+    extends typings.antvGPluginSvgRenderer.distDefaultElementLifeCycleContributionMod.DefaultElementLifeCycleContribution {
     def this(canvasConfig: CanvasConfig) = this()
   }
   
@@ -48,7 +48,7 @@ object mod {
   @JSImport("@antv/g-plugin-svg-renderer", "ElementSVG")
   @js.native
   open class ElementSVG ()
-    extends typings.antvGPluginSvgRenderer.elementSVGMod.ElementSVG
+    extends typings.antvGPluginSvgRenderer.distComponentsElementSVGMod.ElementSVG
   /* static members */
   object ElementSVG {
     
@@ -85,16 +85,16 @@ object mod {
   @JSImport("@antv/g-plugin-svg-renderer", "SVGRendererPlugin")
   @js.native
   open class SVGRendererPlugin protected ()
-    extends typings.antvGPluginSvgRenderer.svgrendererpluginMod.SVGRendererPlugin {
+    extends typings.antvGPluginSvgRenderer.distSvgrendererpluginMod.SVGRendererPlugin {
     def this(
       canvasConfig: CanvasConfig,
       camera: ICamera,
       contextService: ContextService[SVGElement],
       renderingContext: RenderingContext,
       styleValueRegistry: StyleValueRegistry,
-      createElementContribution: typings.antvGPluginSvgRenderer.tokensMod.ElementLifeCycleContribution,
+      createElementContribution: typings.antvGPluginSvgRenderer.distTokensMod.ElementLifeCycleContribution,
       defElementManager: DefElementManager,
-      pluginOptions: typings.antvGPluginSvgRenderer.tokensMod.SVGRendererPluginOptions
+      pluginOptions: typings.antvGPluginSvgRenderer.distTokensMod.SVGRendererPluginOptions
     ) = this()
   }
   /* static members */

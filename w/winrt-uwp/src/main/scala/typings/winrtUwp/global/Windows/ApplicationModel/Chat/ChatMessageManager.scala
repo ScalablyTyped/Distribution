@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to message transports and the message store. Also provides a method to display the UI to compose messages. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageManager")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageManager")
 @js.native
-abstract class ChatMessageManager ()
+open class ChatMessageManager ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageManager
 object ChatMessageManager {

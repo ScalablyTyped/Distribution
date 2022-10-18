@@ -5,9 +5,18 @@ import typings.redux.mod.AnyAction
 import typings.redux.mod.Reducer
 import typings.redux.mod.ReducersMapObject
 import typings.redux.mod.Store
-import typings.reduxPersist.createMigrateMod.MigrationConfig
-import typings.reduxPersist.createTransformMod.TransformConfig
-import typings.reduxPersist.persistReducerMod.PersistPartial
+import typings.reduxPersist.esCreateMigrateMod.MigrationConfig
+import typings.reduxPersist.esCreateTransformMod.TransformConfig
+import typings.reduxPersist.esPersistReducerMod.PersistPartial
+import typings.reduxPersist.esTypesMod.MigrationManifest
+import typings.reduxPersist.esTypesMod.PersistConfig
+import typings.reduxPersist.esTypesMod.PersistMigrate
+import typings.reduxPersist.esTypesMod.Persistoid
+import typings.reduxPersist.esTypesMod.Persistor
+import typings.reduxPersist.esTypesMod.PersistorOptions
+import typings.reduxPersist.esTypesMod.Transform
+import typings.reduxPersist.esTypesMod.TransformInbound
+import typings.reduxPersist.esTypesMod.TransformOutbound
 import typings.reduxPersist.reduxPersistStrings.persistColon
 import typings.reduxPersist.reduxPersistStrings.persistSlashFLUSH
 import typings.reduxPersist.reduxPersistStrings.persistSlashPAUSE
@@ -15,15 +24,6 @@ import typings.reduxPersist.reduxPersistStrings.persistSlashPERSIST
 import typings.reduxPersist.reduxPersistStrings.persistSlashPURGE
 import typings.reduxPersist.reduxPersistStrings.persistSlashREGISTER
 import typings.reduxPersist.reduxPersistStrings.persistSlashREHYDRATE
-import typings.reduxPersist.typesMod.MigrationManifest
-import typings.reduxPersist.typesMod.PersistConfig
-import typings.reduxPersist.typesMod.PersistMigrate
-import typings.reduxPersist.typesMod.Persistoid
-import typings.reduxPersist.typesMod.Persistor
-import typings.reduxPersist.typesMod.PersistorOptions
-import typings.reduxPersist.typesMod.Transform
-import typings.reduxPersist.typesMod.TransformInbound
-import typings.reduxPersist.typesMod.TransformOutbound
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,14 +1,14 @@
 package typings.googleCloudStorage
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.gaxios.commonMod.GaxiosOptions
-import typings.gaxios.commonMod.GaxiosPromise
-import typings.gaxios.commonMod.GaxiosResponse
-import typings.googleCloudStorage.crc32cMod.CRC32CValidator
-import typings.googleCloudStorage.crc32cMod.CRC32CValidatorGenerator
-import typings.googleCloudStorage.utilMod.ApiError
-import typings.googleCloudStorage.utilMod.GoogleErrorBody
-import typings.googleCloudStorage.utilMod.GoogleInnerError
+import typings.gaxios.buildSrcCommonMod.GaxiosOptions
+import typings.gaxios.buildSrcCommonMod.GaxiosPromise
+import typings.gaxios.buildSrcCommonMod.GaxiosResponse
+import typings.googleCloudStorage.buildSrcCrc32cMod.CRC32CValidator
+import typings.googleCloudStorage.buildSrcCrc32cMod.CRC32CValidatorGenerator
+import typings.googleCloudStorage.buildSrcNodejsCommonUtilMod.ApiError
+import typings.googleCloudStorage.buildSrcNodejsCommonUtilMod.GoogleErrorBody
+import typings.googleCloudStorage.buildSrcNodejsCommonUtilMod.GoogleInnerError
 import typings.teenyRequest.mod.CoreOptions
 import typings.teenyRequest.mod.Options
 import org.scalablytyped.runtime.StObject

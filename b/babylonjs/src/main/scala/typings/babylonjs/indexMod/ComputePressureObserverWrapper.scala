@@ -1,7 +1,7 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.computePressureMod.IComputePressureData
-import typings.babylonjs.computePressureMod.IComputePressureThresholds
+import typings.babylonjs.miscComputePressureMod.IComputePressureData
+import typings.babylonjs.miscComputePressureMod.IComputePressureThresholds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

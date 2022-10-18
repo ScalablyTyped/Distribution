@@ -1,13 +1,13 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.CustomWidget
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.ConditionalEditabilitySettings")
 @js.native
 open class ConditionalEditabilitySettings protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.ConditionalEditabilitySettings {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.ConditionalEditabilitySettings {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,7 +37,7 @@ object ConditionalEditabilitySettings {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalEditabilitySettings]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalEditabilitySettings]
   
   /**
     * Creates and returns a new ConditionalEditabilitySettings instance in the SDK and on the server.
@@ -48,7 +48,7 @@ object ConditionalEditabilitySettings {
     *  6.0.0 to 8.0.0
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.ConditionallyEditableWidget): typings.mendixmodelsdk.pagesMod.pages.ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalEditabilitySettings]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionallyEditableWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalEditabilitySettings]
   
   /**
     * Creates and returns a new ConditionalEditabilitySettings instance in the SDK and on the server.
@@ -56,7 +56,7 @@ object ConditionalEditabilitySettings {
     * of the parent ConditionallyEditableWidget element passed as argument.
     */
   /* static member */
-  inline def createInConditionallyEditableWidgetUnderConditionalEditabilitySettings(container: typings.mendixmodelsdk.pagesMod.pages.ConditionallyEditableWidget): typings.mendixmodelsdk.pagesMod.pages.ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionallyEditableWidgetUnderConditionalEditabilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalEditabilitySettings]
+  inline def createInConditionallyEditableWidgetUnderConditionalEditabilitySettings(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionallyEditableWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionallyEditableWidgetUnderConditionalEditabilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalEditabilitySettings]
   
   /**
     * Creates and returns a new ConditionalEditabilitySettings instance in the SDK and on the server.
@@ -67,7 +67,7 @@ object ConditionalEditabilitySettings {
     *  8.1.0 and higher
     */
   /* static member */
-  inline def createInCustomWidgetUnderConditionalEditabilitySettings(container: CustomWidget): typings.mendixmodelsdk.pagesMod.pages.ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderConditionalEditabilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalEditabilitySettings]
+  inline def createInCustomWidgetUnderConditionalEditabilitySettings(container: CustomWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderConditionalEditabilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalEditabilitySettings]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ConditionalEditabilitySettings.structureTypeName")

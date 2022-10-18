@@ -1,8 +1,8 @@
 package typings.konva
 
-import typings.konva.nodeMod.globalCompositeOperationType
-import typings.konva.shapeMod.LineCap
-import typings.konva.shapeMod.LineJoin
+import typings.konva.libNodeMod.globalCompositeOperationType
+import typings.konva.libShapeMod.LineCap
+import typings.konva.libShapeMod.LineJoin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

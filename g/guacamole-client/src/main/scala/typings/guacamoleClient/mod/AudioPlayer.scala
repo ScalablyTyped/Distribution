@@ -1,6 +1,6 @@
 package typings.guacamoleClient.mod
 
-import typings.guacamoleClient.guacCommonMod.Mimetype
+import typings.guacamoleClient.libGuacCommonMod.Mimetype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "AudioPlayer")
 @js.native
 open class AudioPlayer ()
-  extends typings.guacamoleClient.audioPlayerMod.AudioPlayer
+  extends typings.guacamoleClient.libAudioPlayerMod.AudioPlayer
 /* static members */
 object AudioPlayer {
   
@@ -26,7 +26,7 @@ object AudioPlayer {
     * @return A Guacamole.AudioPlayer instance supporting the given mimetype and
     * reading from the given stream, or null if support for the given mimetype is absent.
     */
-  inline def getInstance(stream: typings.guacamoleClient.inputStreamMod.InputStream, mimetype: Mimetype): typings.guacamoleClient.audioPlayerMod.AudioPlayer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[typings.guacamoleClient.audioPlayerMod.AudioPlayer | Null]
+  inline def getInstance(stream: typings.guacamoleClient.libInputStreamMod.InputStream, mimetype: Mimetype): typings.guacamoleClient.libAudioPlayerMod.AudioPlayer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[typings.guacamoleClient.libAudioPlayerMod.AudioPlayer | Null]
   
   /**
     * Returns a list of all mimetypes supported by any built-in

@@ -1,13 +1,13 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.ecrMod.ImageIdentifier
-import typings.awsSdk.ecrMod.ImageIdentifierList
-import typings.awsSdk.ecrMod.LifecyclePolicyPreviewFilter
-import typings.awsSdk.ecrMod.LifecyclePreviewMaxResults
-import typings.awsSdk.ecrMod.NextToken
-import typings.awsSdk.ecrMod.RegistryId
-import typings.awsSdk.ecrMod.RepositoryName
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsEcrMod.ImageIdentifier
+import typings.awsSdk.clientsEcrMod.ImageIdentifierList
+import typings.awsSdk.clientsEcrMod.LifecyclePolicyPreviewFilter
+import typings.awsSdk.clientsEcrMod.LifecyclePreviewMaxResults
+import typings.awsSdk.clientsEcrMod.NextToken
+import typings.awsSdk.clientsEcrMod.RegistryId
+import typings.awsSdk.clientsEcrMod.RepositoryName
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -9,7 +9,7 @@ object fpEachHourOfIntervalIndexMod {
   
   object default extends Shortcut {
     
-    @JSImport("date-fns/esm/fp/eachHourOfInterval/index", JSImport.Default)
+    @JSImport("date-fns/fp/eachHourOfInterval/index", JSImport.Default)
     @js.native
     val ^ : CurriedFn1[Interval, js.Array[js.Date]] = js.native
     

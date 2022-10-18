@@ -3,11 +3,14 @@ package typings.nivoTreemap
 import typings.d3Hierarchy.mod.HierarchyNode
 import typings.d3Hierarchy.mod.RatioSquarifyTilingFactory
 import typings.d3Hierarchy.mod.TreemapLayout
-import typings.nivoColors.inheritedColorMod.InheritedColorConfig
-import typings.nivoColors.ordinalColorScaleMod.DatumIdentityAccessor
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.DatumIdentityAccessor
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoCore.mod.ValueFormat
+import typings.nivoTreemap.distTypesTypesMod.ComputedNode
+import typings.nivoTreemap.distTypesTypesMod.NodeMouseEventHandler
+import typings.nivoTreemap.distTypesTypesMod.TooltipComponent
 import typings.nivoTreemap.nivoTreemapStrings.binary
 import typings.nivoTreemap.nivoTreemapStrings.bottom
 import typings.nivoTreemap.nivoTreemapStrings.dice
@@ -19,9 +22,6 @@ import typings.nivoTreemap.nivoTreemapStrings.slice
 import typings.nivoTreemap.nivoTreemapStrings.sliceDice
 import typings.nivoTreemap.nivoTreemapStrings.squarify
 import typings.nivoTreemap.nivoTreemapStrings.top
-import typings.nivoTreemap.typesMod.ComputedNode
-import typings.nivoTreemap.typesMod.NodeMouseEventHandler
-import typings.nivoTreemap.typesMod.TooltipComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.reactSpringTypes.interpolationMod.EasingFunction
@@ -53,15 +53,15 @@ object anon {
   trait BorderColor[Datum /* <: js.Object */] extends StObject {
     
     var borderColor: js.UndefOr[
-        InheritedColorConfig[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum] & Color]
+        InheritedColorConfig[typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum] & Color]
       ] = js.undefined
     
     var colorBy: js.UndefOr[
-        String | DatumIdentityAccessor[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum]]
+        String | DatumIdentityAccessor[typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum]]
       ] = js.undefined
     
     var colors: js.UndefOr[
-        OrdinalColorScaleConfig[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum]]
+        OrdinalColorScaleConfig[typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum]]
       ] = js.undefined
     
     var data: Datum
@@ -77,7 +77,7 @@ object anon {
     var label: js.UndefOr[
         PropertyAccessor[
           Omit[
-            typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum], 
+            typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum], 
             typings.nivoTreemap.nivoTreemapStrings.label | parentLabel
           ], 
           String
@@ -85,7 +85,7 @@ object anon {
       ] = js.undefined
     
     var labelTextColor: js.UndefOr[
-        InheritedColorConfig[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum] & Color]
+        InheritedColorConfig[typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum] & Color]
       ] = js.undefined
     
     var leavesOnly: js.UndefOr[Boolean] = js.undefined
@@ -99,7 +99,7 @@ object anon {
     var parentLabel: js.UndefOr[
         PropertyAccessor[
           Omit[
-            typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum], 
+            typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum], 
             typings.nivoTreemap.nivoTreemapStrings.parentLabel
           ], 
           String
@@ -113,7 +113,7 @@ object anon {
     var parentLabelSize: js.UndefOr[Double] = js.undefined
     
     var parentLabelTextColor: js.UndefOr[
-        InheritedColorConfig[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum] & Color]
+        InheritedColorConfig[typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum] & Color]
       ] = js.undefined
     
     var tile: js.UndefOr[binary | dice | slice | sliceDice | squarify] = js.undefined
@@ -133,21 +133,25 @@ object anon {
     
     extension [Self <: BorderColor[?], Datum /* <: js.Object */](x: Self & BorderColor[Datum]) {
       
-      inline def setBorderColor(value: InheritedColorConfig[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum] & Color]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderColor(
+        value: InheritedColorConfig[typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum] & Color]
+      ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
       inline def setColorBy(
-        value: String | DatumIdentityAccessor[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum]]
+        value: String | DatumIdentityAccessor[typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum]]
       ): Self = StObject.set(x, "colorBy", value.asInstanceOf[js.Any])
       
-      inline def setColorByFunction1(value: typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum] => String | Double): Self = StObject.set(x, "colorBy", js.Any.fromFunction1(value))
+      inline def setColorByFunction1(value: typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum] => String | Double): Self = StObject.set(x, "colorBy", js.Any.fromFunction1(value))
       
       inline def setColorByUndefined: Self = StObject.set(x, "colorBy", js.undefined)
       
-      inline def setColors(value: OrdinalColorScaleConfig[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum]]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(
+        value: OrdinalColorScaleConfig[typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum]]
+      ): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      inline def setColorsFunction1(value: typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum] => String): Self = StObject.set(x, "colors", js.Any.fromFunction1(value))
+      inline def setColorsFunction1(value: typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum] => String): Self = StObject.set(x, "colors", js.Any.fromFunction1(value))
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
@@ -173,16 +177,24 @@ object anon {
       
       inline def setLabel(
         value: PropertyAccessor[
-              Omit[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum], label | parentLabel], 
+              Omit[
+                typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum], 
+                label | parentLabel
+              ], 
               String
             ]
       ): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelFunction1(
-        value: Omit[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum], label | parentLabel] => String
+        value: Omit[
+              typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum], 
+              label | parentLabel
+            ] => String
       ): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
       
-      inline def setLabelTextColor(value: InheritedColorConfig[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum] & Color]): Self = StObject.set(x, "labelTextColor", value.asInstanceOf[js.Any])
+      inline def setLabelTextColor(
+        value: InheritedColorConfig[typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum] & Color]
+      ): Self = StObject.set(x, "labelTextColor", value.asInstanceOf[js.Any])
       
       inline def setLabelTextColorUndefined: Self = StObject.set(x, "labelTextColor", js.undefined)
       
@@ -206,12 +218,20 @@ object anon {
       
       inline def setParentLabel(
         value: PropertyAccessor[
-              Omit[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum], parentLabel], 
+              Omit[
+                typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum], 
+                parentLabel
+              ], 
               String
             ]
       ): Self = StObject.set(x, "parentLabel", value.asInstanceOf[js.Any])
       
-      inline def setParentLabelFunction1(value: Omit[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum], parentLabel] => String): Self = StObject.set(x, "parentLabel", js.Any.fromFunction1(value))
+      inline def setParentLabelFunction1(
+        value: Omit[
+              typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum], 
+              parentLabel
+            ] => String
+      ): Self = StObject.set(x, "parentLabel", js.Any.fromFunction1(value))
       
       inline def setParentLabelPadding(value: Double): Self = StObject.set(x, "parentLabelPadding", value.asInstanceOf[js.Any])
       
@@ -225,7 +245,9 @@ object anon {
       
       inline def setParentLabelSizeUndefined: Self = StObject.set(x, "parentLabelSize", js.undefined)
       
-      inline def setParentLabelTextColor(value: InheritedColorConfig[typings.nivoTreemap.typesMod.ComputedNodeWithoutStyles[Datum] & Color]): Self = StObject.set(x, "parentLabelTextColor", value.asInstanceOf[js.Any])
+      inline def setParentLabelTextColor(
+        value: InheritedColorConfig[typings.nivoTreemap.distTypesTypesMod.ComputedNodeWithoutStyles[Datum] & Color]
+      ): Self = StObject.set(x, "parentLabelTextColor", value.asInstanceOf[js.Any])
       
       inline def setParentLabelTextColorUndefined: Self = StObject.set(x, "parentLabelTextColor", js.undefined)
       
@@ -238,10 +260,6 @@ object anon {
       inline def setValue(value: PropertyAccessor[Datum, Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueFormat(value: ValueFormat[Double, Unit]): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
-      
-      inline def setValueFormatFunction1(value: Double => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction1(value))
-      
-      inline def setValueFormatFunction2(value: (Double, Unit) => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction2(value))
       
       inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
       
@@ -554,8 +572,121 @@ object anon {
     }
   }
   
-  /* Inlined std.Omit<@nivo/treemap.@nivo/treemap/dist/types/types.ComputedNodeWithoutStyles<@nivo/treemap.@nivo/treemap/dist/types/types.DefaultTreeMapDatum>, 'parentLabel'> */
+  /* Inlined std.Omit<@nivo/treemap.@nivo/treemap/dist/types/types.ComputedNodeWithoutStyles<@nivo/treemap.@nivo/treemap/dist/types/types.DefaultTreeMapDatum>, 'label' | 'parentLabel'> */
   trait OmitComputedNodeWithoutSt extends StObject {
+    
+    var data: OmitDefaultTreeMapDatumch
+    
+    var fill: js.UndefOr[String] = js.undefined
+    
+    var formattedValue: Double | String
+    
+    var height: Double
+    
+    var id: String
+    
+    var isLeaf: Boolean
+    
+    var isParent: Boolean
+    
+    var labelRotation: Double
+    
+    var parentLabelRotation: Double
+    
+    var parentLabelX: Double
+    
+    var parentLabelY: Double
+    
+    var path: String
+    
+    var pathComponents: js.Array[String]
+    
+    var treeDepth: Double
+    
+    var treeHeight: Double
+    
+    var value: Double
+    
+    var width: Double
+    
+    var x: Double
+    
+    var y: Double
+  }
+  object OmitComputedNodeWithoutSt {
+    
+    inline def apply(
+      data: OmitDefaultTreeMapDatumch,
+      formattedValue: Double | String,
+      height: Double,
+      id: String,
+      isLeaf: Boolean,
+      isParent: Boolean,
+      labelRotation: Double,
+      parentLabelRotation: Double,
+      parentLabelX: Double,
+      parentLabelY: Double,
+      path: String,
+      pathComponents: js.Array[String],
+      treeDepth: Double,
+      treeHeight: Double,
+      value: Double,
+      width: Double,
+      x: Double,
+      y: Double
+    ): OmitComputedNodeWithoutSt = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], formattedValue = formattedValue.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLeaf = isLeaf.asInstanceOf[js.Any], isParent = isParent.asInstanceOf[js.Any], labelRotation = labelRotation.asInstanceOf[js.Any], parentLabelRotation = parentLabelRotation.asInstanceOf[js.Any], parentLabelX = parentLabelX.asInstanceOf[js.Any], parentLabelY = parentLabelY.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathComponents = pathComponents.asInstanceOf[js.Any], treeDepth = treeDepth.asInstanceOf[js.Any], treeHeight = treeHeight.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OmitComputedNodeWithoutSt]
+    }
+    
+    extension [Self <: OmitComputedNodeWithoutSt](x: Self) {
+      
+      inline def setData(value: OmitDefaultTreeMapDatumch): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      
+      inline def setFormattedValue(value: Double | String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
+      
+      inline def setIsParent(value: Boolean): Self = StObject.set(x, "isParent", value.asInstanceOf[js.Any])
+      
+      inline def setLabelRotation(value: Double): Self = StObject.set(x, "labelRotation", value.asInstanceOf[js.Any])
+      
+      inline def setParentLabelRotation(value: Double): Self = StObject.set(x, "parentLabelRotation", value.asInstanceOf[js.Any])
+      
+      inline def setParentLabelX(value: Double): Self = StObject.set(x, "parentLabelX", value.asInstanceOf[js.Any])
+      
+      inline def setParentLabelY(value: Double): Self = StObject.set(x, "parentLabelY", value.asInstanceOf[js.Any])
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathComponents(value: js.Array[String]): Self = StObject.set(x, "pathComponents", value.asInstanceOf[js.Any])
+      
+      inline def setPathComponentsVarargs(value: String*): Self = StObject.set(x, "pathComponents", js.Array(value*))
+      
+      inline def setTreeDepth(value: Double): Self = StObject.set(x, "treeDepth", value.asInstanceOf[js.Any])
+      
+      inline def setTreeHeight(value: Double): Self = StObject.set(x, "treeHeight", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Omit<@nivo/treemap.@nivo/treemap/dist/types/types.ComputedNodeWithoutStyles<@nivo/treemap.@nivo/treemap/dist/types/types.DefaultTreeMapDatum>, 'parentLabel'> */
+  trait OmitComputedNodeWithoutStData extends StObject {
     
     var data: OmitDefaultTreeMapDatumch
     
@@ -597,7 +728,7 @@ object anon {
     
     var y: Double
   }
-  object OmitComputedNodeWithoutSt {
+  object OmitComputedNodeWithoutStData {
     
     inline def apply(
       data: OmitDefaultTreeMapDatumch,
@@ -619,123 +750,8 @@ object anon {
       width: Double,
       x: Double,
       y: Double
-    ): OmitComputedNodeWithoutSt = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], formattedValue = formattedValue.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLeaf = isLeaf.asInstanceOf[js.Any], isParent = isParent.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelRotation = labelRotation.asInstanceOf[js.Any], parentLabelRotation = parentLabelRotation.asInstanceOf[js.Any], parentLabelX = parentLabelX.asInstanceOf[js.Any], parentLabelY = parentLabelY.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathComponents = pathComponents.asInstanceOf[js.Any], treeDepth = treeDepth.asInstanceOf[js.Any], treeHeight = treeHeight.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-      __obj.asInstanceOf[OmitComputedNodeWithoutSt]
-    }
-    
-    extension [Self <: OmitComputedNodeWithoutSt](x: Self) {
-      
-      inline def setData(value: OmitDefaultTreeMapDatumch): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
-      
-      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
-      
-      inline def setFormattedValue(value: Double | String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
-      
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
-      
-      inline def setIsParent(value: Boolean): Self = StObject.set(x, "isParent", value.asInstanceOf[js.Any])
-      
-      inline def setLabel(value: String | Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-      
-      inline def setLabelRotation(value: Double): Self = StObject.set(x, "labelRotation", value.asInstanceOf[js.Any])
-      
-      inline def setParentLabelRotation(value: Double): Self = StObject.set(x, "parentLabelRotation", value.asInstanceOf[js.Any])
-      
-      inline def setParentLabelX(value: Double): Self = StObject.set(x, "parentLabelX", value.asInstanceOf[js.Any])
-      
-      inline def setParentLabelY(value: Double): Self = StObject.set(x, "parentLabelY", value.asInstanceOf[js.Any])
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setPathComponents(value: js.Array[String]): Self = StObject.set(x, "pathComponents", value.asInstanceOf[js.Any])
-      
-      inline def setPathComponentsVarargs(value: String*): Self = StObject.set(x, "pathComponents", js.Array(value*))
-      
-      inline def setTreeDepth(value: Double): Self = StObject.set(x, "treeDepth", value.asInstanceOf[js.Any])
-      
-      inline def setTreeHeight(value: Double): Self = StObject.set(x, "treeHeight", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-      
-      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined std.Omit<@nivo/treemap.@nivo/treemap/dist/types/types.ComputedNodeWithoutStyles<@nivo/treemap.@nivo/treemap/dist/types/types.DefaultTreeMapDatum>, 'label' | 'parentLabel'> */
-  trait OmitComputedNodeWithoutStData extends StObject {
-    
-    var data: OmitDefaultTreeMapDatumch
-    
-    var fill: js.UndefOr[String] = js.undefined
-    
-    var formattedValue: Double | String
-    
-    var height: Double
-    
-    var id: String
-    
-    var isLeaf: Boolean
-    
-    var isParent: Boolean
-    
-    var labelRotation: Double
-    
-    var parentLabelRotation: Double
-    
-    var parentLabelX: Double
-    
-    var parentLabelY: Double
-    
-    var path: String
-    
-    var pathComponents: js.Array[String]
-    
-    var treeDepth: Double
-    
-    var treeHeight: Double
-    
-    var value: Double
-    
-    var width: Double
-    
-    var x: Double
-    
-    var y: Double
-  }
-  object OmitComputedNodeWithoutStData {
-    
-    inline def apply(
-      data: OmitDefaultTreeMapDatumch,
-      formattedValue: Double | String,
-      height: Double,
-      id: String,
-      isLeaf: Boolean,
-      isParent: Boolean,
-      labelRotation: Double,
-      parentLabelRotation: Double,
-      parentLabelX: Double,
-      parentLabelY: Double,
-      path: String,
-      pathComponents: js.Array[String],
-      treeDepth: Double,
-      treeHeight: Double,
-      value: Double,
-      width: Double,
-      x: Double,
-      y: Double
     ): OmitComputedNodeWithoutStData = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], formattedValue = formattedValue.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLeaf = isLeaf.asInstanceOf[js.Any], isParent = isParent.asInstanceOf[js.Any], labelRotation = labelRotation.asInstanceOf[js.Any], parentLabelRotation = parentLabelRotation.asInstanceOf[js.Any], parentLabelX = parentLabelX.asInstanceOf[js.Any], parentLabelY = parentLabelY.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathComponents = pathComponents.asInstanceOf[js.Any], treeDepth = treeDepth.asInstanceOf[js.Any], treeHeight = treeHeight.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], formattedValue = formattedValue.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLeaf = isLeaf.asInstanceOf[js.Any], isParent = isParent.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelRotation = labelRotation.asInstanceOf[js.Any], parentLabelRotation = parentLabelRotation.asInstanceOf[js.Any], parentLabelX = parentLabelX.asInstanceOf[js.Any], parentLabelY = parentLabelY.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathComponents = pathComponents.asInstanceOf[js.Any], treeDepth = treeDepth.asInstanceOf[js.Any], treeHeight = treeHeight.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[OmitComputedNodeWithoutStData]
     }
     
@@ -756,6 +772,8 @@ object anon {
       inline def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
       
       inline def setIsParent(value: Boolean): Self = StObject.set(x, "isParent", value.asInstanceOf[js.Any])
+      
+      inline def setLabel(value: String | Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelRotation(value: Double): Self = StObject.set(x, "labelRotation", value.asInstanceOf[js.Any])
       

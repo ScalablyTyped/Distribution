@@ -1,15 +1,15 @@
 package typings.popperjsCore
 
-import typings.popperjsCore.enumsMod.AutoPlacement
-import typings.popperjsCore.enumsMod.BasePlacement
-import typings.popperjsCore.enumsMod.ComputedPlacement
-import typings.popperjsCore.enumsMod.Context
-import typings.popperjsCore.enumsMod.ModifierPhases_
-import typings.popperjsCore.enumsMod.Placement
-import typings.popperjsCore.enumsMod.RootBoundary
-import typings.popperjsCore.enumsMod.Variation
-import typings.popperjsCore.enumsMod.VariationPlacement
-import typings.popperjsCore.typesMod.PositioningStrategy
+import typings.popperjsCore.libEnumsMod.AutoPlacement
+import typings.popperjsCore.libEnumsMod.BasePlacement
+import typings.popperjsCore.libEnumsMod.ComputedPlacement
+import typings.popperjsCore.libEnumsMod.Context
+import typings.popperjsCore.libEnumsMod.ModifierPhases_
+import typings.popperjsCore.libEnumsMod.Placement
+import typings.popperjsCore.libEnumsMod.RootBoundary
+import typings.popperjsCore.libEnumsMod.Variation
+import typings.popperjsCore.libEnumsMod.VariationPlacement
+import typings.popperjsCore.libTypesMod.PositioningStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

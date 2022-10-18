@@ -16,11 +16,11 @@ trait ThemeTheme extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
 }
 object ThemeTheme {
   
-  inline def apply(theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): ThemeTheme = {
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): ThemeTheme = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeTheme]
   }
@@ -33,6 +33,6 @@ object ThemeTheme {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "BundleDescriptor")
 @js.native
 open class BundleDescriptor protected ()
-  extends typings.googleGax.descriptorMod.BundleDescriptor {
+  extends typings.googleGax.buildSrcDescriptorMod.BundleDescriptor {
   /**
     * Describes the structure of bundled call.
     *

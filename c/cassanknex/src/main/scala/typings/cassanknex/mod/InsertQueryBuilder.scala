@@ -1,8 +1,8 @@
 package typings.cassanknex.mod
 
+import typings.cassandraDriver.libTypesMod.types.ResultSet
+import typings.cassandraDriver.libTypesMod.types.Row
 import typings.cassandraDriver.mod.ValueCallback
-import typings.cassandraDriver.typesMod.types.ResultSet
-import typings.cassandraDriver.typesMod.types.Row
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

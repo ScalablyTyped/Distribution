@@ -2,7 +2,6 @@ package typings.grpc.mod
 
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.grpc.anon.File
 import typings.grpc.anon.Serviceurl
 import typings.grpc.grpcStrings.json
@@ -75,10 +74,6 @@ type MetadataValue = String | Buffer
 type PackageDefinition = StringDictionary[ServiceDefinition[Any] | ProtobufTypeDefinition]
 
 type ServerWriteableStream[RequestType, ResponseType] = ServerWritableStream[RequestType, ResponseType]
-
-type ServiceDefinition[ImplementationType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{readonly [ I in keyof ImplementationType ]: grpc.grpc.MethodDefinition<any, any>}
-  */ typings.grpc.grpcStrings.ServiceDefinition & TopLevel[Any]
 
 type StatusListener = js.Function2[/* status */ StatusObject, /* next */ js.Function, Unit]
 

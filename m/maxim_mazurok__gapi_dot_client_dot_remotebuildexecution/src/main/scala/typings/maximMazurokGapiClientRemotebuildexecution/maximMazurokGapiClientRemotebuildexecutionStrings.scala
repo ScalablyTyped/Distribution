@@ -7,30 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientRemotebuildexecutionStrings {
   
   @js.native
-  sealed trait BuildBazelRemoteExecutionV2ExecuteResponse extends StObject
-  inline def BuildBazelRemoteExecutionV2ExecuteResponse: BuildBazelRemoteExecutionV2ExecuteResponse = "BuildBazelRemoteExecutionV2ExecuteResponse".asInstanceOf[BuildBazelRemoteExecutionV2ExecuteResponse]
-  
-  @js.native
-  sealed trait BuildBazelRemoteExecutionV2ExecutedActionMetadata extends StObject
-  inline def BuildBazelRemoteExecutionV2ExecutedActionMetadata: BuildBazelRemoteExecutionV2ExecutedActionMetadata = "BuildBazelRemoteExecutionV2ExecutedActionMetadata".asInstanceOf[BuildBazelRemoteExecutionV2ExecutedActionMetadata]
-  
-  @js.native
-  sealed trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends StObject
-  inline def GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig = "GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig".asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig]
-  
-  @js.native
-  sealed trait GoogleDevtoolsRemoteworkersV1test2CommandResult extends StObject
-  inline def GoogleDevtoolsRemoteworkersV1test2CommandResult: GoogleDevtoolsRemoteworkersV1test2CommandResult = "GoogleDevtoolsRemoteworkersV1test2CommandResult".asInstanceOf[GoogleDevtoolsRemoteworkersV1test2CommandResult]
-  
-  @js.native
-  sealed trait GoogleLongrunningOperation extends StObject
-  inline def GoogleLongrunningOperation: GoogleLongrunningOperation = "GoogleLongrunningOperation".asInstanceOf[GoogleLongrunningOperation]
-  
-  @js.native
-  sealed trait GoogleRpcStatus extends StObject
-  inline def GoogleRpcStatus: GoogleRpcStatus = "GoogleRpcStatus".asInstanceOf[GoogleRpcStatus]
-  
-  @js.native
   sealed trait remotebuildexecution extends StObject
   inline def remotebuildexecution: remotebuildexecution = "remotebuildexecution".asInstanceOf[remotebuildexecution]
   

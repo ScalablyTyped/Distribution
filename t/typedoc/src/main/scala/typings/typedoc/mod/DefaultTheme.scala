@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "DefaultTheme")
 @js.native
 open class DefaultTheme protected ()
-  extends typings.typedoc.outputMod.DefaultTheme {
+  extends typings.typedoc.distLibOutputMod.DefaultTheme {
   /**
     * Create a new DefaultTheme instance.
     *
     * @param renderer  The renderer this theme is attached to.
     * @param basePath  The base path of this theme.
     */
-  def this(renderer: typings.typedoc.rendererMod.Renderer) = this()
+  def this(renderer: typings.typedoc.distLibOutputRendererMod.Renderer) = this()
 }
 /* static members */
 object DefaultTheme {
@@ -35,7 +35,10 @@ object DefaultTheme {
     * @param reflection  The reflection an anchor url should be created for.
     * @param container   The nearest reflection having an own document.
     */
-  inline def applyAnchorUrl(reflection: typings.typedoc.modelsMod.Reflection, container: typings.typedoc.modelsMod.Reflection): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAnchorUrl")(reflection.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyAnchorUrl(
+    reflection: typings.typedoc.distLibModelsMod.Reflection,
+    container: typings.typedoc.distLibModelsMod.Reflection
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAnchorUrl")(reflection.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Generate the css classes for the given reflection and apply them to the
@@ -43,7 +46,10 @@ object DefaultTheme {
     *
     * @param reflection  The reflection whose cssClasses property should be generated.
     */
-  inline def applyReflectionClasses(reflection: typings.typedoc.modelsMod.DeclarationReflection, filters: Record[String, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyReflectionClasses")(reflection.asInstanceOf[js.Any], filters.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyReflectionClasses(
+    reflection: typings.typedoc.distLibModelsMod.DeclarationReflection,
+    filters: Record[String, Boolean]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyReflectionClasses")(reflection.asInstanceOf[js.Any], filters.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Return a url for the given reflection.
@@ -53,12 +59,15 @@ object DefaultTheme {
     * @param separator   The separator used to generate the url.
     * @returns           The generated url.
     */
-  inline def getUrl(reflection: typings.typedoc.modelsMod.Reflection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def getUrl(reflection: typings.typedoc.modelsMod.Reflection, relative: Unit, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getUrl(reflection: typings.typedoc.modelsMod.Reflection, relative: typings.typedoc.modelsMod.Reflection): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getUrl(reflection: typings.typedoc.distLibModelsMod.Reflection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getUrl(reflection: typings.typedoc.distLibModelsMod.Reflection, relative: Unit, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def getUrl(
-    reflection: typings.typedoc.modelsMod.Reflection,
-    relative: typings.typedoc.modelsMod.Reflection,
+    reflection: typings.typedoc.distLibModelsMod.Reflection,
+    relative: typings.typedoc.distLibModelsMod.Reflection
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getUrl(
+    reflection: typings.typedoc.distLibModelsMod.Reflection,
+    relative: typings.typedoc.distLibModelsMod.Reflection,
     separator: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
   

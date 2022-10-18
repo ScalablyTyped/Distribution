@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResponses200Content365 extends StObject {
   
   /**
-    * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets.
+    * Gets the summary of the free and paid GitHub Actions minutes used.
     *
-    * You must authenticate using an access token with the `codespace` or `codespace:secrets` scope to use this endpoint. User must have Codespaces access to use this endpoint.
+    * Paid minutes only apply to workflows in private repositories that use GitHub-hosted runners. Minutes used is listed for each GitHub-hosted runner operating system. Any job re-runs are also included in the usage. The usage returned includes any minute multipliers for macOS and Windows runners, and is rounded up to the nearest whole minute. For more information, see "[Managing billing for GitHub Actions](https://docs.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-actions)".
     *
-    * GitHub Apps must have read access to the `codespaces_user_secrets` user permission to use this endpoint.
+    * Access tokens must have the `repo` or `admin:org` scope.
     */
   var get: Responses200Content365
 }

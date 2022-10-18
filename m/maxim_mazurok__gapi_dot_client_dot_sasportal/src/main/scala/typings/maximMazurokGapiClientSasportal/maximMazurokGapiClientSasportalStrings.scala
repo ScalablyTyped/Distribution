@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientSasportalStrings {
   
   @js.native
-  sealed trait SasPortalOperation extends StObject
-  inline def SasPortalOperation: SasPortalOperation = "SasPortalOperation".asInstanceOf[SasPortalOperation]
-  
-  @js.native
-  sealed trait SasPortalStatus extends StObject
-  inline def SasPortalStatus: SasPortalStatus = "SasPortalStatus".asInstanceOf[SasPortalStatus]
-  
-  @js.native
   sealed trait sasportal extends StObject
   inline def sasportal: sasportal = "sasportal".asInstanceOf[sasportal]
   

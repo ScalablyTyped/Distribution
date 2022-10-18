@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsHighlightsMod.HighlightsProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object highlightsMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/Highlights", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Highlights", JSImport.Default)
   @js.native
   val default: FC[HighlightsProps] = js.native
-  
-  trait HighlightsProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object HighlightsProps {
-    
-    inline def apply(): HighlightsProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[HighlightsProps]
-    }
-    
-    extension [Self <: HighlightsProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[HighlightsProps]
   

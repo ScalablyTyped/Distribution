@@ -1,98 +1,98 @@
 package typings.mafmt
 
-import typings.multiaddr.mod.^
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mafmt/src", "Circuit")
+  @JSImport("mafmt", "Circuit")
   @js.native
-  val Circuit: Mafmt = js.native
+  val Circuit: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "DNS")
+  @JSImport("mafmt", "DNS")
   @js.native
-  val DNS: Mafmt = js.native
+  val DNS: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "DNS4")
+  @JSImport("mafmt", "DNS4")
   @js.native
-  val DNS4: Mafmt = js.native
+  val DNS4: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "DNS6")
+  @JSImport("mafmt", "DNS6")
   @js.native
-  val DNS6: Mafmt = js.native
+  val DNS6: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "HTTP")
+  @JSImport("mafmt", "DNSADDR")
   @js.native
-  val HTTP: Mafmt = js.native
+  val DNSADDR: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "HTTPS")
+  @JSImport("mafmt", "HTTP")
   @js.native
-  val HTTPS: Mafmt = js.native
+  val HTTP: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "IP")
+  @JSImport("mafmt", "HTTPS")
   @js.native
-  val IP: Mafmt = js.native
+  val HTTPS: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "IPFS")
+  @JSImport("mafmt", "IP")
   @js.native
-  val IPFS: Mafmt = js.native
+  val IP: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "P2P")
+  @JSImport("mafmt", "IPFS")
   @js.native
-  val P2P: Mafmt = js.native
+  val IPFS: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "Reliable")
+  @JSImport("mafmt", "P2P")
   @js.native
-  val Reliable: Mafmt = js.native
+  val P2P: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "Stardust")
+  @JSImport("mafmt", "QUIC")
   @js.native
-  val Stardust: Mafmt = js.native
+  val QUIC: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "TCP")
+  @JSImport("mafmt", "Reliable")
   @js.native
-  val TCP: Mafmt = js.native
+  val Reliable: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "UDP")
+  @JSImport("mafmt", "Stardust")
   @js.native
-  val UDP: Mafmt = js.native
+  val Stardust: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "UTP")
+  @JSImport("mafmt", "TCP")
   @js.native
-  val UTP: Mafmt = js.native
+  val TCP: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "WebRTCDirect")
+  @JSImport("mafmt", "UDP")
   @js.native
-  val WebRTCDirect: Mafmt = js.native
+  val UDP: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "WebRTCStar")
+  @JSImport("mafmt", "UTP")
   @js.native
-  val WebRTCStar: Mafmt = js.native
+  val UTP: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "WebSocketStar")
+  @JSImport("mafmt", "WebRTCDirect")
   @js.native
-  val WebSocketStar: Mafmt = js.native
+  val WebRTCDirect: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "WebSockets")
+  @JSImport("mafmt", "WebRTCStar")
   @js.native
-  val WebSockets: Mafmt = js.native
+  val WebRTCStar: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
-  @JSImport("mafmt/src", "WebSocketsSecure")
+  @JSImport("mafmt", "WebSocketStar")
   @js.native
-  val WebSocketsSecure: Mafmt = js.native
+  val WebSocketStar: typings.mafmt.distSrcTypesMod.Mafmt = js.native
   
+  @JSImport("mafmt", "WebSockets")
   @js.native
-  trait Mafmt extends StObject {
-    
-    var input: js.UndefOr[js.Array[Mafmt | js.Function0[this.type]]] = js.native
-    
-    def matches(a: String): Boolean = js.native
-    def matches(a: ^): Boolean = js.native
-    def matches(a: Uint8Array): Boolean = js.native
-    
-    def partialMatch(protos: js.Array[String]): Boolean = js.native
-  }
+  val WebSockets: typings.mafmt.distSrcTypesMod.Mafmt = js.native
+  
+  @JSImport("mafmt", "WebSocketsSecure")
+  @js.native
+  val WebSocketsSecure: typings.mafmt.distSrcTypesMod.Mafmt = js.native
+  
+  type Mafmt = typings.mafmt.distSrcTypesMod.Mafmt
+  
+  type MatchesFunction = typings.mafmt.distSrcTypesMod.MatchesFunction
+  
+  type PartialMatchesFunction = typings.mafmt.distSrcTypesMod.PartialMatchesFunction
 }

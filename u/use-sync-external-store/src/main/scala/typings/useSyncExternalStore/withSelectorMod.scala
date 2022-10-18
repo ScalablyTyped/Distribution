@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object withSelectorMod {
   
-  @JSImport("use-sync-external-store/shim/with-selector", JSImport.Namespace)
+  @JSImport("use-sync-external-store/with-selector", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

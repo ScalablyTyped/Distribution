@@ -3,11 +3,11 @@ package typings.reactSortableTree.mod
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
-import typings.reactDnd.optionsMod.DragPreviewOptions
-import typings.reactDnd.optionsMod.DragSourceOptions
-import typings.reactDnd.typesConnectorsMod.ConnectDragPreview
-import typings.reactDnd.typesConnectorsMod.ConnectDragSource
-import typings.reactDnd.typesConnectorsMod.ConnectableElement
+import typings.reactDnd.distTypesConnectorsMod.ConnectDragPreview
+import typings.reactDnd.distTypesConnectorsMod.ConnectDragSource
+import typings.reactDnd.distTypesConnectorsMod.ConnectableElement
+import typings.reactDnd.distTypesOptionsMod.DragPreviewOptions
+import typings.reactDnd.distTypesOptionsMod.DragSourceOptions
 import typings.reactSortableTree.reactSortableTreeStrings.ltr
 import typings.reactSortableTree.reactSortableTreeStrings.rtl
 import org.scalablytyped.runtime.StObject

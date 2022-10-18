@@ -1,7 +1,7 @@
 package typings.angularCompilerCli.anon
 
 import typings.angularCompiler.mod.R3DirectiveMetadata
-import typings.angularCompilerCli.ngtscMetadataMod.ClassPropertyMapping
+import typings.angularCompilerCli.srcNgtscMetadataMod.ClassPropertyMapping
 import typings.std.Map
 import typings.typescript.mod.Expression
 import org.scalablytyped.runtime.StObject

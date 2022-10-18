@@ -10,14 +10,14 @@ object mod {
   @JSImport("tsconfig-paths-webpack-plugin", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.tsconfigPathsWebpackPlugin.pluginMod.TsconfigPathsPlugin {
+    extends typings.tsconfigPathsWebpackPlugin.libPluginMod.TsconfigPathsPlugin {
     def this(rawOptions: PartialOptions) = this()
   }
   
   @JSImport("tsconfig-paths-webpack-plugin", "TsconfigPathsPlugin")
   @js.native
   open class TsconfigPathsPlugin ()
-    extends typings.tsconfigPathsWebpackPlugin.pluginMod.TsconfigPathsPlugin {
+    extends typings.tsconfigPathsWebpackPlugin.libPluginMod.TsconfigPathsPlugin {
     def this(rawOptions: PartialOptions) = this()
   }
 }

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait GoogleCloudRecommendationengineV1beta1FeatureMap extends StObject {
     * values must be UTF-8 encoded strings. For example: `{ "colors": {"value": ["yellow", "green"]}, "sizes": {"value":["S", "M"]}`
     */
   var categoricalFeatures: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapStringList}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapStringList} */ js.Any
   ] = js.undefined
   
   /**
@@ -22,9 +19,7 @@ trait GoogleCloudRecommendationengineV1beta1FeatureMap extends StObject {
     * {"value":[2.3, 15.4]}, "heights_cm": {"value":[8.1, 6.4]} }`
     */
   var numericalFeatures: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapFloatList}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapFloatList} */ js.Any
   ] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1FeatureMap {
@@ -37,17 +32,13 @@ object GoogleCloudRecommendationengineV1beta1FeatureMap {
   extension [Self <: GoogleCloudRecommendationengineV1beta1FeatureMap](x: Self) {
     
     inline def setCategoricalFeatures(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapStringList}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapStringList} */ js.Any
     ): Self = StObject.set(x, "categoricalFeatures", value.asInstanceOf[js.Any])
     
     inline def setCategoricalFeaturesUndefined: Self = StObject.set(x, "categoricalFeatures", js.undefined)
     
     inline def setNumericalFeatures(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapFloatList}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapFloatList} */ js.Any
     ): Self = StObject.set(x, "numericalFeatures", value.asInstanceOf[js.Any])
     
     inline def setNumericalFeaturesUndefined: Self = StObject.set(x, "numericalFeatures", js.undefined)

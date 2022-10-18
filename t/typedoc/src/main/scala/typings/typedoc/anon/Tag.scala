@@ -1,6 +1,6 @@
 package typings.typedoc.anon
 
-import typings.typedoc.modelsReflectionsMod.Reflection
+import typings.typedoc.distLibModelsReflectionsMod.Reflection
 import typings.typedoc.typedocStrings.`inline-tag`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

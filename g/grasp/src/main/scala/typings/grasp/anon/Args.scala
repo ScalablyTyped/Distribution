@@ -1,7 +1,7 @@
 package typings.grasp.anon
 
 import typings.cliColor.mod.Color
-import typings.node.anon.`6`
+import typings.node.anon.`5`
 import typings.node.processMod.global.NodeJS.ReadStream
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -31,7 +31,7 @@ trait Args extends StObject {
   
   var input: js.UndefOr[String] = js.undefined
   
-  var stdin: js.UndefOr[ReadStream & `6`] = js.undefined
+  var stdin: js.UndefOr[ReadStream & `5`] = js.undefined
   
   var textFormat: js.UndefOr[Color] = js.undefined
 }
@@ -72,7 +72,7 @@ object Args {
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    inline def setStdin(value: ReadStream & `6`): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+    inline def setStdin(value: ReadStream & `5`): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
     
     inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
     

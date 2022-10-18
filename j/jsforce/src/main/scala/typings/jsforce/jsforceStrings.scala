@@ -31,10 +31,6 @@ object jsforceStrings {
   inline def Restricted: Restricted = "Restricted".asInstanceOf[Restricted]
   
   @js.native
-  sealed trait SObject extends StObject
-  inline def SObject: SObject = "SObject".asInstanceOf[SObject]
-  
-  @js.native
   sealed trait Serial extends StObject
   inline def Serial: Serial = "Serial".asInstanceOf[Serial]
   

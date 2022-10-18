@@ -16,26 +16,26 @@ trait TypeofCapabilities
   /**
     * @return {!Capabilities} A basic set of capabilities for Chrome.
     */
-  def chrome(): typings.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  def chrome(): typings.seleniumWebdriver.libCapabilitiesMod.Capabilities = js.native
   
   /**
     * @return {!Capabilities} A basic set of capabilities for Microsoft Edge.
     */
-  def edge(): typings.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  def edge(): typings.seleniumWebdriver.libCapabilitiesMod.Capabilities = js.native
   
   /**
     * @return {!Capabilities} A basic set of capabilities for Firefox.
     */
-  def firefox(): typings.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  def firefox(): typings.seleniumWebdriver.libCapabilitiesMod.Capabilities = js.native
   
   /**
     * @return {!Capabilities} A basic set of capabilities for
     *     Internet Explorer.
     */
-  def ie(): typings.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  def ie(): typings.seleniumWebdriver.libCapabilitiesMod.Capabilities = js.native
   
   /**
     * @return {!Capabilities} A basic set of capabilities for Safari.
     */
-  def safari(): typings.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  def safari(): typings.seleniumWebdriver.libCapabilitiesMod.Capabilities = js.native
 }

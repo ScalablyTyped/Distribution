@@ -1,10 +1,10 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.baseTextureMod.BaseTexture
-import typings.babylonjs.environmentTextureToolsMod.CreateEnvTextureOptions
-import typings.babylonjs.environmentTextureToolsMod.EnvironmentTextureInfo
-import typings.babylonjs.environmentTextureToolsMod.EnvironmentTextureInfoV2
-import typings.babylonjs.internalTextureMod.InternalTexture
+import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
+import typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture
+import typings.babylonjs.miscEnvironmentTextureToolsMod.CreateEnvTextureOptions
+import typings.babylonjs.miscEnvironmentTextureToolsMod.EnvironmentTextureInfo
+import typings.babylonjs.miscEnvironmentTextureToolsMod.EnvironmentTextureInfoV2
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

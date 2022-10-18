@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bitsCircularShiftLeftMod {
   
-  @JSImport("bitwise/esm/bits/circular-shift-left", JSImport.Namespace)
+  @JSImport("bitwise/bits/circular-shift-left", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

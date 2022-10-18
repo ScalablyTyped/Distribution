@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class FuzzyFAIRLY ()
   extends typings.yuka.mod.FuzzyFAIRLY {
-  def this(fuzzyTerm: typings.yuka.fuzzyTermMod.FuzzyTerm) = this()
+  def this(fuzzyTerm: typings.yuka.srcFuzzyFuzzyTermMod.FuzzyTerm) = this()
 }

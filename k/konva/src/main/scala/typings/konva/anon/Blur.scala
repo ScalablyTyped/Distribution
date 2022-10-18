@@ -1,6 +1,6 @@
 package typings.konva.anon
 
-import typings.konva.nodeMod.Filter
+import typings.konva.libNodeMod.Filter
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

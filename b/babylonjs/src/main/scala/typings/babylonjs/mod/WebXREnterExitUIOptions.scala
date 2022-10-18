@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXREnterExitUIOptions")
 @js.native
 open class WebXREnterExitUIOptions ()
-  extends typings.babylonjs.legacyMod.WebXREnterExitUIOptions
+  extends typings.babylonjs.legacyLegacyMod.WebXREnterExitUIOptions

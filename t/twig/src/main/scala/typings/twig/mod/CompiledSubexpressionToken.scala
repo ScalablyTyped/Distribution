@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompiledSubexpressionToken
   extends StObject
-     with CompiledGenericTokenWithMatch[TwigDotexpressionDottypeDotsubexpressionDotend, String] {
+     with CompiledGenericTokenWithMatch[TwigDotexpressionDottypeDotsubexpressionDotend, /* ) */ String] {
   
   var expression: Boolean
   

@@ -13,7 +13,7 @@ import typings.baseui.badgeTypesMod.Placement
 import typings.baseui.badgeTypesMod.Shape
 import typings.baseui.baseuiStrings.div
 import typings.react.mod.global.JSX.Element
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -148,11 +148,11 @@ object badgeMod {
   
   @JSImport("baseui/badge", "StyledHintDot")
   @js.native
-  val StyledHintDot: StyletronComponent[div, ColorHidden] = js.native
+  val StyledHintDot: StyletronComponent[div, Hidden] = js.native
   
   @JSImport("baseui/badge", "StyledNotificationCircle")
   @js.native
-  val StyledNotificationCircle: StyletronComponent[div, Hidden] = js.native
+  val StyledNotificationCircle: StyletronComponent[div, ColorHidden] = js.native
   
   @JSImport("baseui/badge", "StyledPositioner")
   @js.native

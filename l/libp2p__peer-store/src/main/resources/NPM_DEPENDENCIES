@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@libp2p/peer-store" : "3.1.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@libp2p/peer-store" : "3.1.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

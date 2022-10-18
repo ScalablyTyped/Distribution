@@ -1,7 +1,6 @@
 package typings.npmcliPackageJson
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.npmcliPackageJson.anon.DictmoduleName
 import typings.npmcliPackageJson.anon.Directory
 import typings.npmcliPackageJson.anon.Email
@@ -253,17 +252,13 @@ object mod {
     /**
       * Entry points of a module, optionally with conditions and subpath exports.
       */
-    type Exports = Null | String | js.Array[String] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in @npmcli/package-json.@npmcli/package-json.PackageJson.ExportCondition ]: any}
-      */ typings.npmcliPackageJson.npmcliPackageJsonStrings.Exports & TopLevel[Any]) | StringDictionary[Any]
+    type Exports = Null | String | js.Array[String] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in @npmcli/package-json.@npmcli/package-json.PackageJson.ExportCondition ]: any} */ js.Any) | StringDictionary[Any]
     
     /**
       * Import map entries of a module, optionally with conditions.
       */
     type Imports = StringDictionary[
-        String | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in @npmcli/package-json.@npmcli/package-json.PackageJson.ExportCondition ]: @npmcli/package-json.@npmcli/package-json.PackageJson.Exports}
-      */ typings.npmcliPackageJson.npmcliPackageJsonStrings.Imports & TopLevel[Any])
+        String | (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in @npmcli/package-json.@npmcli/package-json.PackageJson.ExportCondition ]: @npmcli/package-json.@npmcli/package-json.PackageJson.Exports} */ js.Any)
       ]
     
     trait JSPMConfiguration extends StObject {
@@ -419,9 +414,7 @@ object mod {
         * Engines that this package runs on.
         */
       var engines: js.UndefOr[
-            /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ EngineName in 'npm' | 'node' | string ]: string}
-        */ typings.npmcliPackageJson.npmcliPackageJsonStrings.PackageJsonStandard & TopLevel[Any]
+            /* import warning: importer.ImportType#apply Failed type conversion: {[ EngineName in 'npm' | 'node' | string ]: string} */ js.Any
           ] = js.undefined
       
       /**
@@ -639,9 +632,7 @@ object mod {
         inline def setEngineStrictUndefined: Self = StObject.set(x, "engineStrict", js.undefined)
         
         inline def setEngines(
-          value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ EngineName in 'npm' | 'node' | string ]: string}
-          */ typings.npmcliPackageJson.npmcliPackageJsonStrings.PackageJsonStandard & TopLevel[Any]
+          value: /* import warning: importer.ImportType#apply Failed type conversion: {[ EngineName in 'npm' | 'node' | string ]: string} */ js.Any
         ): Self = StObject.set(x, "engines", value.asInstanceOf[js.Any])
         
         inline def setEnginesUndefined: Self = StObject.set(x, "engines", js.undefined)

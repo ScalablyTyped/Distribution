@@ -1,6 +1,5 @@
 package typings.ffbinaries
 
-import org.scalablytyped.runtime.TopLevel
 import typings.ffbinaries.anon.Arch
 import typings.ffbinaries.anon.Filename
 import typings.ffbinaries.anon.KinPlatformffmpegstringff
@@ -54,16 +53,8 @@ object mod {
   
   inline def listVersions(callback: js.Function2[/* error */ String | Null, /* versions */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listVersions")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def locateBinariesSync[T /* <: js.Array[Component] */](components: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in T[number] ]: ffbinaries.ffbinaries.LocateResult}
-    */ typings.ffbinaries.ffbinariesStrings.locateBinariesSync & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("locateBinariesSync")(components.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in T[number] ]: ffbinaries.ffbinaries.LocateResult}
-    */ typings.ffbinaries.ffbinariesStrings.locateBinariesSync & TopLevel[Any]]
-  inline def locateBinariesSync[T /* <: js.Array[Component] */](components: T, opts: LocateBinariesOptions): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in T[number] ]: ffbinaries.ffbinaries.LocateResult}
-    */ typings.ffbinaries.ffbinariesStrings.locateBinariesSync & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("locateBinariesSync")(components.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in T[number] ]: ffbinaries.ffbinaries.LocateResult}
-    */ typings.ffbinaries.ffbinariesStrings.locateBinariesSync & TopLevel[Any]]
+  inline def locateBinariesSync[T /* <: js.Array[Component] */](components: T): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in T[number] ]: ffbinaries.ffbinaries.LocateResult} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("locateBinariesSync")(components.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in T[number] ]: ffbinaries.ffbinaries.LocateResult} */ js.Any]
+  inline def locateBinariesSync[T /* <: js.Array[Component] */](components: T, opts: LocateBinariesOptions): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in T[number] ]: ffbinaries.ffbinaries.LocateResult} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("locateBinariesSync")(components.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in T[number] ]: ffbinaries.ffbinaries.LocateResult} */ js.Any]
   
   inline def resolvePlatform(input: String): Platform | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePlatform")(input.asInstanceOf[js.Any]).asInstanceOf[Platform | Null]
   

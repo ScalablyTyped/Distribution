@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides info about an app suspending operation. */
-@JSGlobal("Windows.ApplicationModel.SuspendingOperation")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.SuspendingOperation")
 @js.native
-abstract class SuspendingOperation ()
+open class SuspendingOperation ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.SuspendingOperation {
   

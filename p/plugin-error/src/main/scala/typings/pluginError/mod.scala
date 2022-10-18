@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.TopLevel
 import typings.pluginError.anon.Optionsmessagestring
 import typings.pluginError.anon.Optionspluginstringmessag
 import typings.std.Error
@@ -76,9 +75,7 @@ object mod extends Shortcut {
           /* plugin */ String, 
           (/* error */ js.Error) | (/* error */ Optionsmessagestring) | (/* error */ String), 
           PluginError[
-            (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof std.Error ]: undefined}
-    */ typings.pluginError.pluginErrorStrings.Constructor & TopLevel[Any]) | js.Error
+            (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof std.Error ]: undefined} */ js.Any) | js.Error
           ]
         ]
        with /**
@@ -91,9 +88,7 @@ object mod extends Shortcut {
           (/* error */ js.Error) | (/* error */ String), 
           /* options */ Options, 
           PluginError[
-            (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof std.Error ]: undefined}
-    */ typings.pluginError.pluginErrorStrings.Constructor & TopLevel[Any]) | js.Error
+            (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof std.Error ]: undefined} */ js.Any) | js.Error
           ]
         ]
   

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PropertyType_[T]
   extends StObject
      with SourceFunctionSpecification[T]
-     with typings.maplibreGl.styleSpecMod.SourceFunctionSpecification[T] {
+     with typings.maplibreGl.distStyleSpecMod.SourceFunctionSpecification[T] {
   
   var default: js.UndefOr[T] = js.undefined
   

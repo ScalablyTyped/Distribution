@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.multiselectMod.MultiSelectProps
+import typings.primereact.multiselectMultiselectMod.MultiSelectProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "MultiSelect")
 @js.native
 open class MultiSelect protected ()
-  extends typings.primereact.multiselectMod.MultiSelect {
+  extends typings.primereact.multiselectMultiselectMod.MultiSelect {
   def this(props: MultiSelectProps) = this()
   /**
     * @deprecated

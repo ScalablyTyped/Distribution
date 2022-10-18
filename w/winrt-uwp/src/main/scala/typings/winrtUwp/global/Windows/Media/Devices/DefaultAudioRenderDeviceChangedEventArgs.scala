@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a default audio render device change event. */
-@JSGlobal("Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs")
 @js.native
-abstract class DefaultAudioRenderDeviceChangedEventArgs ()
+open class DefaultAudioRenderDeviceChangedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs {
   

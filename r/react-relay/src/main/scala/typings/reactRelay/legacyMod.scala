@@ -23,26 +23,26 @@ import typings.reactRelay.reactRelayStrings.backward
 import typings.reactRelay.reactRelayStrings.forward
 import typings.reactRelay.reactRelayStrings.relay
 import typings.reactRelay.reactRelayTypesMod.MappedFragmentProps
-import typings.relayRuntime.applyOptimisticMutationMod.OptimisticMutationConfig
-import typings.relayRuntime.commitMutationMod.MutationConfig
-import typings.relayRuntime.commitMutationMod.MutationParameters
-import typings.relayRuntime.readInlineDataMod.KeyType
-import typings.relayRuntime.readInlineDataMod.KeyTypeData
-import typings.relayRuntime.readerNodeMod.ReaderFragment
-import typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest
-import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
-import typings.relayRuntime.relayRuntimeTypesMod.DataID
-import typings.relayRuntime.relayRuntimeTypesMod.Disposable
-import typings.relayRuntime.relayRuntimeTypesMod.OperationType
-import typings.relayRuntime.relayRuntimeTypesMod.Variables
-import typings.relayRuntime.relayStoreTypesMod.Environment
-import typings.relayRuntime.relayStoreTypesMod.HandleFieldPayload
-import typings.relayRuntime.relayStoreTypesMod.ReadOnlyRecordProxy
-import typings.relayRuntime.relayStoreTypesMod.RecordProxy
-import typings.relayRuntime.relayStoreTypesMod.RecordSourceProxy
-import typings.relayRuntime.relayStoreTypesMod.RelayContext
-import typings.relayRuntime.relayStoreTypesMod.StoreUpdater
-import typings.relayRuntime.requestSubscriptionMod.GraphQLSubscriptionConfig
+import typings.relayRuntime.libMutationsApplyOptimisticMutationMod.OptimisticMutationConfig
+import typings.relayRuntime.libMutationsCommitMutationMod.MutationConfig
+import typings.relayRuntime.libMutationsCommitMutationMod.MutationParameters
+import typings.relayRuntime.libQueryRelayModernGraphQLTagMod.GraphQLTaggedNode
+import typings.relayRuntime.libStoreReadInlineDataMod.KeyType
+import typings.relayRuntime.libStoreReadInlineDataMod.KeyTypeData
+import typings.relayRuntime.libStoreRelayStoreTypesMod.Environment
+import typings.relayRuntime.libStoreRelayStoreTypesMod.HandleFieldPayload
+import typings.relayRuntime.libStoreRelayStoreTypesMod.ReadOnlyRecordProxy
+import typings.relayRuntime.libStoreRelayStoreTypesMod.RecordProxy
+import typings.relayRuntime.libStoreRelayStoreTypesMod.RecordSourceProxy
+import typings.relayRuntime.libStoreRelayStoreTypesMod.RelayContext
+import typings.relayRuntime.libStoreRelayStoreTypesMod.StoreUpdater
+import typings.relayRuntime.libSubscriptionRequestSubscriptionMod.GraphQLSubscriptionConfig
+import typings.relayRuntime.libUtilReaderNodeMod.ReaderFragment
+import typings.relayRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.DataID
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Disposable
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.OperationType
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Variables
 import typings.std.Exclude
 import typings.std.Omit
 import typings.std.Pick
@@ -178,7 +178,7 @@ object legacyMod {
     environment: Environment,
     taggedNode: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any,
-    cacheConfig: typings.relayRuntime.relayRuntimeTypesMod.CacheConfig
+    cacheConfig: typings.relayRuntime.libUtilRelayRuntimeTypesMod.CacheConfig
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery_DEPRECATED")(environment.asInstanceOf[js.Any], taggedNode.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], cacheConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
@@ -274,7 +274,7 @@ object legacyMod {
   
   type ContainerProps[Props] = MappedFragmentProps[Pick[Props, Exclude[/* keyof Props */ String, relay]]]
   
-  type PropsWithoutRelay[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */] = LibraryManagedAttributes[C, Omit[ComponentProps[C], relay]]
+  type PropsWithoutRelay[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.reactRelay.reactRelayStrings.a, typings.reactRelay.reactRelayStrings.abbr, typings.reactRelay.reactRelayStrings.address */ Any */] = LibraryManagedAttributes[C, Omit[ComponentProps[C], relay]]
   
   trait QueryRendererProps[TOperation /* <: OperationType */] extends StObject {
     

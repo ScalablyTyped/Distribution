@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "MembershipCache")
 @js.native
 open class MembershipCache ()
-  extends typings.matrixAppserviceBridge.membershipCacheMod.MembershipCache
+  extends typings.matrixAppserviceBridge.libComponentsMembershipCacheMod.MembershipCache

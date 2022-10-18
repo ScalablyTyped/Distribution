@@ -1,12 +1,12 @@
 package typings.vegaLite.anon
 
+import typings.vegaLite.buildSrcVegaDotschemaMod.VgEncodeChannel
 import typings.vegaLite.vegaLiteStrings.axis
 import typings.vegaLite.vegaLiteStrings.domain
 import typings.vegaLite.vegaLiteStrings.grid
 import typings.vegaLite.vegaLiteStrings.labels
 import typings.vegaLite.vegaLiteStrings.ticks
 import typings.vegaLite.vegaLiteStrings.title
-import typings.vegaLite.vegaSchemaMod.VgEncodeChannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

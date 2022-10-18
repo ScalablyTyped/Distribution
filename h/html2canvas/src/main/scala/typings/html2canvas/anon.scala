@@ -1,6 +1,6 @@
 package typings.html2canvas
 
-import typings.html2canvas.cacheStorageMod.Cache
+import typings.html2canvas.distTypesCoreCacheStorageMod.Cache
 import typings.std.Document
 import typings.std.Element
 import typings.std.HTMLCanvasElement

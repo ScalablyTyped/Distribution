@@ -1,27 +1,34 @@
 package typings.reduxForm
 
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.Context
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
-import typings.reduxForm.actionTypesMod.ActionTypes_
-import typings.reduxForm.actionsMod.FormAction
+import typings.reduxForm.anon.FnCall
+import typings.reduxForm.anon.FnCallFormSyncErrorsError
+import typings.reduxForm.anon.FnCallFormSyncWarningsWarning
 import typings.reduxForm.anon.PartialInitializeOptions
-import typings.reduxForm.fieldArrayMod.BaseFieldArrayProps
-import typings.reduxForm.fieldMod.BaseFieldProps
-import typings.reduxForm.fieldMod.GenericFieldHTMLAttributes
-import typings.reduxForm.fieldsMod.BaseFieldsProps
-import typings.reduxForm.formMod.FormProps
-import typings.reduxForm.formNameMod.FormNameProps
-import typings.reduxForm.formSectionMod.FormSectionProps
-import typings.reduxForm.reducerMod.FormReducer
-import typings.reduxForm.reducerMod.FormStateMap
-import typings.reduxForm.reduxFormMod.ConfigProps
-import typings.reduxForm.reduxFormMod.FormContext
-import typings.reduxForm.reduxFormMod.FormDecorator
+import typings.reduxForm.libActionTypesMod.ActionTypes_
+import typings.reduxForm.libActionsMod.FormAction
+import typings.reduxForm.libFieldArrayMod.BaseFieldArrayProps
+import typings.reduxForm.libFieldMod.BaseFieldProps
+import typings.reduxForm.libFieldMod.GenericFieldHTMLAttributes
+import typings.reduxForm.libFieldsMod.BaseFieldsProps
+import typings.reduxForm.libFormMod.FormProps
+import typings.reduxForm.libFormNameMod.FormNameProps
+import typings.reduxForm.libFormSectionMod.FormSectionProps
+import typings.reduxForm.libReducerMod.FormReducer
+import typings.reduxForm.libReducerMod.FormStateMap
+import typings.reduxForm.libReduxFormMod.ConfigProps
+import typings.reduxForm.libReduxFormMod.FormContext
+import typings.reduxForm.libReduxFormMod.FormDecorator
+import typings.reduxForm.libSelectorsMod.BooleanSelector
+import typings.reduxForm.libSelectorsMod.DataSelector
+import typings.reduxForm.libSelectorsMod.ErrorSelector
+import typings.reduxForm.libSelectorsMod.FormOrFieldsBooleanSelector
+import typings.reduxForm.libSelectorsMod.NamesSelector
 import typings.reduxForm.reduxFormStrings.append
 import typings.reduxForm.reduxFormStrings.delete
 import typings.reduxForm.reduxFormStrings.entries
@@ -32,11 +39,6 @@ import typings.reduxForm.reduxFormStrings.has
 import typings.reduxForm.reduxFormStrings.keys
 import typings.reduxForm.reduxFormStrings.set
 import typings.reduxForm.reduxFormStrings.values
-import typings.reduxForm.selectorsMod.BooleanSelector
-import typings.reduxForm.selectorsMod.DataSelector
-import typings.reduxForm.selectorsMod.ErrorSelector
-import typings.reduxForm.selectorsMod.FormOrFieldsBooleanSelector
-import typings.reduxForm.selectorsMod.NamesSelector
 import typings.std.Partial
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
@@ -49,10 +51,273 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  object default {
+    
+    @JSImport("redux-form", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("redux-form", "default.arrayInsert")
+    @js.native
+    def arrayInsert: js.Function4[/* form */ String, /* field */ String, /* index */ Double, /* value */ Any, FormAction] = js.native
+    inline def arrayInsert_=(
+      x: js.Function4[/* form */ String, /* field */ String, /* index */ Double, /* value */ Any, FormAction]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayInsert")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.arrayMove")
+    @js.native
+    def arrayMove: js.Function4[/* form */ String, /* field */ String, /* from */ Double, /* to */ Double, FormAction] = js.native
+    inline def arrayMove_=(
+      x: js.Function4[/* form */ String, /* field */ String, /* from */ Double, /* to */ Double, FormAction]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayMove")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.arrayPop")
+    @js.native
+    def arrayPop: js.Function2[/* form */ String, /* field */ String, FormAction] = js.native
+    inline def arrayPop_=(x: js.Function2[/* form */ String, /* field */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayPop")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.arrayPush")
+    @js.native
+    def arrayPush: js.Function3[/* form */ String, /* field */ String, /* value */ Any, FormAction] = js.native
+    inline def arrayPush_=(x: js.Function3[/* form */ String, /* field */ String, /* value */ Any, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayPush")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.arrayRemove")
+    @js.native
+    def arrayRemove: js.Function3[/* form */ String, /* field */ String, /* index */ Double, FormAction] = js.native
+    
+    @JSImport("redux-form", "default.arrayRemoveAll")
+    @js.native
+    def arrayRemoveAll: js.Function2[/* form */ String, /* field */ String, FormAction] = js.native
+    inline def arrayRemoveAll_=(x: js.Function2[/* form */ String, /* field */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayRemoveAll")(x.asInstanceOf[js.Any])
+    
+    inline def arrayRemove_=(x: js.Function3[/* form */ String, /* field */ String, /* index */ Double, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayRemove")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.arrayShift")
+    @js.native
+    def arrayShift: js.Function2[/* form */ String, /* field */ String, FormAction] = js.native
+    inline def arrayShift_=(x: js.Function2[/* form */ String, /* field */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayShift")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.arraySplice")
+    @js.native
+    def arraySplice: js.Function5[
+        /* form */ String, 
+        /* field */ String, 
+        /* index */ Double, 
+        /* removeNum */ Double, 
+        /* value */ Any, 
+        FormAction
+      ] = js.native
+    inline def arraySplice_=(
+      x: js.Function5[
+          /* form */ String, 
+          /* field */ String, 
+          /* index */ Double, 
+          /* removeNum */ Double, 
+          /* value */ Any, 
+          FormAction
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arraySplice")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.arraySwap")
+    @js.native
+    def arraySwap: js.Function4[
+        /* form */ String, 
+        /* field */ String, 
+        /* indexA */ Double, 
+        /* indexB */ Double, 
+        FormAction
+      ] = js.native
+    inline def arraySwap_=(
+      x: js.Function4[
+          /* form */ String, 
+          /* field */ String, 
+          /* indexA */ Double, 
+          /* indexB */ Double, 
+          FormAction
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arraySwap")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.arrayUnshift")
+    @js.native
+    def arrayUnshift: js.Function3[/* form */ String, /* field */ String, /* value */ Any, FormAction] = js.native
+    inline def arrayUnshift_=(x: js.Function3[/* form */ String, /* field */ String, /* value */ Any, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayUnshift")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.autofill")
+    @js.native
+    def autofill: js.Function3[/* form */ String, /* field */ String, /* value */ Any, FormAction] = js.native
+    inline def autofill_=(x: js.Function3[/* form */ String, /* field */ String, /* value */ Any, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autofill")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.blur")
+    @js.native
+    def blur: js.Function4[
+        /* form */ String, 
+        /* field */ String, 
+        /* value */ Any, 
+        /* touch */ js.UndefOr[Boolean], 
+        FormAction
+      ] = js.native
+    inline def blur_=(
+      x: js.Function4[
+          /* form */ String, 
+          /* field */ String, 
+          /* value */ Any, 
+          /* touch */ js.UndefOr[Boolean], 
+          FormAction
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blur")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.change")
+    @js.native
+    def change: js.Function5[
+        /* form */ String, 
+        /* field */ String, 
+        /* value */ Any, 
+        /* touch */ js.UndefOr[Boolean], 
+        /* persistentSubmitErrors */ js.UndefOr[Boolean], 
+        FormAction
+      ] = js.native
+    inline def change_=(
+      x: js.Function5[
+          /* form */ String, 
+          /* field */ String, 
+          /* value */ Any, 
+          /* touch */ js.UndefOr[Boolean], 
+          /* persistentSubmitErrors */ js.UndefOr[Boolean], 
+          FormAction
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("change")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.clearAsyncError")
+    @js.native
+    def clearAsyncError: js.Function2[/* form */ String, /* field */ String, FormAction] = js.native
+    inline def clearAsyncError_=(x: js.Function2[/* form */ String, /* field */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clearAsyncError")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.clearFields")
+    @js.native
+    def clearFields: js.Function4[
+        /* form */ String, 
+        /* keepTouched */ Boolean, 
+        /* persistentSubmitErrors */ Boolean, 
+        /* repeated */ String, 
+        FormAction
+      ] = js.native
+    inline def clearFields_=(
+      x: js.Function4[
+          /* form */ String, 
+          /* keepTouched */ Boolean, 
+          /* persistentSubmitErrors */ Boolean, 
+          /* repeated */ String, 
+          FormAction
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clearFields")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.clearSubmit")
+    @js.native
+    def clearSubmit: js.Function1[/* form */ String, FormAction] = js.native
+    
+    @JSImport("redux-form", "default.clearSubmitErrors")
+    @js.native
+    def clearSubmitErrors: js.Function1[/* form */ String, FormAction] = js.native
+    inline def clearSubmitErrors_=(x: js.Function1[/* form */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clearSubmitErrors")(x.asInstanceOf[js.Any])
+    
+    inline def clearSubmit_=(x: js.Function1[/* form */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clearSubmit")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.destroy")
+    @js.native
+    def destroy: js.Function1[/* repeated */ String, FormAction] = js.native
+    inline def destroy_=(x: js.Function1[/* repeated */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("destroy")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.focus")
+    @js.native
+    def focus: js.Function2[/* form */ String, /* field */ String, FormAction] = js.native
+    inline def focus_=(x: js.Function2[/* form */ String, /* field */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focus")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.initialize")
+    @js.native
+    def initialize: FnCall = js.native
+    inline def initialize_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("initialize")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.registerField")
+    @js.native
+    def registerField: js.Function3[/* form */ String, /* name */ String, /* type */ FieldType, FormAction] = js.native
+    inline def registerField_=(x: js.Function3[/* form */ String, /* name */ String, /* type */ FieldType, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registerField")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.reset")
+    @js.native
+    def reset: js.Function1[/* form */ String, FormAction] = js.native
+    
+    @JSImport("redux-form", "default.resetSection")
+    @js.native
+    def resetSection: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
+    inline def resetSection_=(x: js.Function2[/* form */ String, /* repeated */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resetSection")(x.asInstanceOf[js.Any])
+    
+    inline def reset_=(x: js.Function1[/* form */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reset")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.setSubmitFailed")
+    @js.native
+    def setSubmitFailed: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
+    inline def setSubmitFailed_=(x: js.Function2[/* form */ String, /* repeated */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setSubmitFailed")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.setSubmitSucceeded")
+    @js.native
+    def setSubmitSucceeded: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
+    inline def setSubmitSucceeded_=(x: js.Function2[/* form */ String, /* repeated */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setSubmitSucceeded")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.startAsyncValidation")
+    @js.native
+    def startAsyncValidation: js.Function1[/* form */ String, FormAction] = js.native
+    inline def startAsyncValidation_=(x: js.Function1[/* form */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("startAsyncValidation")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.startSubmit")
+    @js.native
+    def startSubmit: js.Function1[/* form */ String, FormAction] = js.native
+    inline def startSubmit_=(x: js.Function1[/* form */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("startSubmit")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.stopAsyncValidation")
+    @js.native
+    def stopAsyncValidation: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[Any, Any]], FormAction] = js.native
+    inline def stopAsyncValidation_=(x: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[Any, Any]], FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stopAsyncValidation")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.stopSubmit")
+    @js.native
+    def stopSubmit: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[Any, Any]], FormAction] = js.native
+    inline def stopSubmit_=(x: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[Any, Any]], FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stopSubmit")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.submit")
+    @js.native
+    def submit: js.Function1[/* form */ String, FormAction] = js.native
+    inline def submit_=(x: js.Function1[/* form */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("submit")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.touch")
+    @js.native
+    def touch: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
+    inline def touch_=(x: js.Function2[/* form */ String, /* repeated */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("touch")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.unregisterField")
+    @js.native
+    def unregisterField: js.Function2[/* form */ String, /* name */ String, FormAction] = js.native
+    inline def unregisterField_=(x: js.Function2[/* form */ String, /* name */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unregisterField")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.untouch")
+    @js.native
+    def untouch: js.Function2[/* form */ String, /* repeated */ String, FormAction] = js.native
+    inline def untouch_=(x: js.Function2[/* form */ String, /* repeated */ String, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("untouch")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.updateSyncErrors")
+    @js.native
+    def updateSyncErrors: FnCallFormSyncErrorsError = js.native
+    inline def updateSyncErrors_=(x: FnCallFormSyncErrorsError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("updateSyncErrors")(x.asInstanceOf[js.Any])
+    
+    @JSImport("redux-form", "default.updateSyncWarnings")
+    @js.native
+    def updateSyncWarnings: FnCallFormSyncWarningsWarning = js.native
+    inline def updateSyncWarnings_=(x: FnCallFormSyncWarningsWarning): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("updateSyncWarnings")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("redux-form", "Field")
   @js.native
   open class Field[P /* <: GenericFieldHTMLAttributes | BaseFieldProps[js.Object] */] protected ()
-    extends typings.reduxForm.fieldMod.Field[P] {
+    extends typings.reduxForm.libFieldMod.Field[P] {
     def this(props: P) = this()
     /**
       * @deprecated
@@ -64,7 +329,7 @@ object mod {
   @JSImport("redux-form", "FieldArray")
   @js.native
   open class FieldArray[P, FieldValue] protected ()
-    extends typings.reduxForm.fieldArrayMod.FieldArray[P, FieldValue] {
+    extends typings.reduxForm.libFieldArrayMod.FieldArray[P, FieldValue] {
     def this(props: BaseFieldArrayProps[P, FieldValue]) = this()
     /**
       * @deprecated
@@ -76,7 +341,7 @@ object mod {
   @JSImport("redux-form", "Fields")
   @js.native
   open class Fields[P] protected ()
-    extends typings.reduxForm.fieldsMod.Fields[P] {
+    extends typings.reduxForm.libFieldsMod.Fields[P] {
     def this(props: BaseFieldsProps[P] & P) = this()
     /**
       * @deprecated
@@ -88,7 +353,7 @@ object mod {
   @JSImport("redux-form", "Form")
   @js.native
   open class Form[FormData, P, ErrorType] protected ()
-    extends typings.reduxForm.formMod.Form[FormData, P, ErrorType] {
+    extends typings.reduxForm.libFormMod.Form[FormData, P, ErrorType] {
     def this(props: FormProps[FormData, P, ErrorType]) = this()
     /**
       * @deprecated
@@ -104,7 +369,7 @@ object mod {
   @JSImport("redux-form", "FormSection")
   @js.native
   open class FormSection[P] protected ()
-    extends typings.reduxForm.formSectionMod.FormSection[P] {
+    extends typings.reduxForm.libFormSectionMod.FormSection[P] {
     def this(props: FormSectionProps[P] & P) = this()
     /**
       * @deprecated
@@ -116,7 +381,7 @@ object mod {
   @JSImport("redux-form", "GenericForm")
   @js.native
   open class GenericForm[FormData, P, ErrorType] protected ()
-    extends typings.reduxForm.formMod.GenericForm[FormData, P, ErrorType] {
+    extends typings.reduxForm.libFormMod.GenericForm[FormData, P, ErrorType] {
     def this(props: FormProps[FormData, P, ErrorType]) = this()
     /**
       * @deprecated
@@ -132,7 +397,7 @@ object mod {
   @JSImport("redux-form", "SubmissionError")
   @js.native
   open class SubmissionError[FormData, ErrorType] protected ()
-    extends typings.reduxForm.submissionErrorMod.SubmissionError[FormData, ErrorType] {
+    extends typings.reduxForm.libSubmissionErrorMod.SubmissionError[FormData, ErrorType] {
     def this(errors: FormErrors[FormData, ErrorType]) = this()
   }
   
@@ -186,11 +451,21 @@ object mod {
   inline def formValueSelector[State](form: String, getFormState: js.Function1[/* state */ State, FormStateMap]): js.Function2[/* state */ State, /* repeated */ String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("formValueSelector")(form.asInstanceOf[js.Any], getFormState.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* state */ State, /* repeated */ String, Any]]
   
   inline def formValues[Values, P](obj: Values): js.Function1[
-    /* component */ ComponentType[P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[Any]], 
-    ComponentClass[P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[Any], ComponentState]
+    /* component */ ComponentType[
+      P & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Values ]: any} */ js.Any)
+    ], 
+    ComponentClass[
+      P & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Values ]: any} */ js.Any), 
+      ComponentState
+    ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("formValues")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* component */ ComponentType[P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[Any]], 
-    ComponentClass[P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[Any], ComponentState]
+    /* component */ ComponentType[
+      P & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Values ]: any} */ js.Any)
+    ], 
+    ComponentClass[
+      P & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Values ]: any} */ js.Any), 
+      ComponentState
+    ]
   ]]
   inline def formValues[FormData, K /* <: /* keyof FormData */ append | delete | get | getAll | has | set | forEach | entries | keys | values */, P](names: K*): js.Function1[
     /* component */ ComponentType[P & (Pick[FormData, K])], 
@@ -278,8 +553,7 @@ object mod {
   @js.native
   val reducer: FormReducer = js.native
   
-  inline def reduxForm[FormData, P, ErrorType](config: ConfigProps[FormData, P, ErrorType]): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("reduxForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
-  inline def reduxForm[FormData, P, ErrorType](config: Partial[ConfigProps[FormData, P, ErrorType]]): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("reduxForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
+  inline def reduxForm[FormData, P, ErrorType](config: (ConfigProps[FormData, P, ErrorType]) | (Partial[ConfigProps[FormData, P, ErrorType]])): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("reduxForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
   
   inline def registerField(form: String, name: String, `type`: FieldType): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("registerField")(form.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait FilterView extends StObject {
     * filter_specs.
     */
   var criteria: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.FilterCriteria}
-    */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.FilterView & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.FilterCriteria} */ js.Any
   ] = js.undefined
   
   /**
@@ -48,9 +45,7 @@ object FilterView {
   extension [Self <: FilterView](x: Self) {
     
     inline def setCriteria(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.FilterCriteria}
-      */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.FilterView & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.FilterCriteria} */ js.Any
     ): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)

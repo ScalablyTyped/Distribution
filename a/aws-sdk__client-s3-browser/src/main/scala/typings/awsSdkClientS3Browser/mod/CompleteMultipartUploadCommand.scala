@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-browser", "CompleteMultipartUploadCommand")
 @js.native
 open class CompleteMultipartUploadCommand protected ()
-  extends typings.awsSdkClientS3Browser.completeMultipartUploadCommandMod.CompleteMultipartUploadCommand {
+  extends typings.awsSdkClientS3Browser.commandsCompleteMultipartUploadCommandMod.CompleteMultipartUploadCommand {
   def this(input: CompleteMultipartUploadInput) = this()
 }

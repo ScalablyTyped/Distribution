@@ -14,7 +14,7 @@ object babylonjsCamerasCameraAugmentingMod {
       * @internal
       * For cameras that cannot use multiview images to display directly. (e.g. webVR camera will render to multiview texture, then copy to each eye texture and go from there)
       */
-    var _multiviewTexture: Nullable[typings.babylonjs.renderTargetTextureMod.RenderTargetTexture]
+    var _multiviewTexture: Nullable[typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture]
     
     /**
       * @internal
@@ -49,7 +49,7 @@ object babylonjsCamerasCameraAugmentingMod {
     
     extension [Self <: typings.babylonjs.indexMod.babylonjsCamerasCameraAugmentingMod.Camera](x: Self) {
       
-      inline def set_multiviewTexture(value: Nullable[typings.babylonjs.renderTargetTextureMod.RenderTargetTexture]): Self = StObject.set(x, "_multiviewTexture", value.asInstanceOf[js.Any])
+      inline def set_multiviewTexture(value: Nullable[typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture]): Self = StObject.set(x, "_multiviewTexture", value.asInstanceOf[js.Any])
       
       inline def set_multiviewTextureNull: Self = StObject.set(x, "_multiviewTexture", null)
       

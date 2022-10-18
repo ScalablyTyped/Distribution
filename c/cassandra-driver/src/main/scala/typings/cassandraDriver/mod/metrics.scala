@@ -9,5 +9,5 @@ object metrics {
   @JSImport("cassandra-driver", "metrics.DefaultMetrics")
   @js.native
   open class DefaultMetrics ()
-    extends typings.cassandraDriver.metricsMod.metrics.DefaultMetrics
+    extends typings.cassandraDriver.libMetricsMod.metrics.DefaultMetrics
 }

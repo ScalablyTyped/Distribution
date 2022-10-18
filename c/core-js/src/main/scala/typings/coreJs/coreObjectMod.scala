@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof core.Object` */
 object coreObjectMod {
   
-  @JSImport("core-js/library/core/object", JSImport.Namespace)
+  @JSImport("core-js/core/object", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

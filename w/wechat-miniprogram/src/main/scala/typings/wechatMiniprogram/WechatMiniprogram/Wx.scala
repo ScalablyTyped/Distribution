@@ -248,12 +248,7 @@ trait Wx extends StObject {
   def canvasGetImageData[T /* <: CanvasGetImageDataOption */](
     option: T,
     /** 在自定义组件下，当前组件实例的this，以操作组件内 [canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) 组件 */
-  component: TrivialInstance
-  ): PromisifySuccessResult[T, CanvasGetImageDataOption] = js.native
-  def canvasGetImageData[T /* <: CanvasGetImageDataOption */](
-    option: T,
-    /** 在自定义组件下，当前组件实例的this，以操作组件内 [canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) 组件 */
-  component: typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
+  component: TrivialInstance | typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
   ): PromisifySuccessResult[T, CanvasGetImageDataOption] = js.native
   
   /** [wx.canvasPutImageData(Object object, Object this)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/wx.canvasPutImageData.html)
@@ -265,12 +260,7 @@ trait Wx extends StObject {
   def canvasPutImageData[T /* <: CanvasPutImageDataOption */](
     option: T,
     /** 在自定义组件下，当前组件实例的this，以操作组件内 [canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) 组件 */
-  component: TrivialInstance
-  ): PromisifySuccessResult[T, CanvasPutImageDataOption] = js.native
-  def canvasPutImageData[T /* <: CanvasPutImageDataOption */](
-    option: T,
-    /** 在自定义组件下，当前组件实例的this，以操作组件内 [canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) 组件 */
-  component: typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
+  component: TrivialInstance | typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
   ): PromisifySuccessResult[T, CanvasPutImageDataOption] = js.native
   
   /** [wx.canvasToTempFilePath(Object object, Object this)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/wx.canvasToTempFilePath.html)
@@ -280,12 +270,7 @@ trait Wx extends StObject {
   def canvasToTempFilePath[T /* <: CanvasToTempFilePathOption */](
     option: T,
     /** 在自定义组件下，当前组件实例的this，以操作组件内 [canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) 组件 */
-  component: TrivialInstance
-  ): PromisifySuccessResult[T, CanvasToTempFilePathOption] = js.native
-  def canvasToTempFilePath[T /* <: CanvasToTempFilePathOption */](
-    option: T,
-    /** 在自定义组件下，当前组件实例的this，以操作组件内 [canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) 组件 */
-  component: typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
+  component: TrivialInstance | typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
   ): PromisifySuccessResult[T, CanvasToTempFilePathOption] = js.native
   
   /** [wx.checkIsOpenAccessibility(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/accessibility/wx.checkIsOpenAccessibility.html)
@@ -720,13 +705,7 @@ trait Wx extends StObject {
     /** [audio](https://developers.weixin.qq.com/miniprogram/dev/component/audio.html) 组件的 id */
   id: String,
     /** 在自定义组件下，当前组件实例的this，以操作组件内 [audio](https://developers.weixin.qq.com/miniprogram/dev/component/audio.html) 组件 */
-  component: TrivialInstance
-  ): AudioContext = js.native
-  def createAudioContext(
-    /** [audio](https://developers.weixin.qq.com/miniprogram/dev/component/audio.html) 组件的 id */
-  id: String,
-    /** 在自定义组件下，当前组件实例的this，以操作组件内 [audio](https://developers.weixin.qq.com/miniprogram/dev/component/audio.html) 组件 */
-  component: typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
+  component: TrivialInstance | typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
   ): AudioContext = js.native
   
   /** [wx.createBLEConnection(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/bluetooth-ble/wx.createBLEConnection.html)
@@ -813,13 +792,7 @@ trait Wx extends StObject {
     /** 要获取上下文的 [canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) 组件 canvas-id 属性 */
   canvasId: String,
     /** 在自定义组件下，当前组件实例的this，表示在这个自定义组件下查找拥有 canvas-id 的 [canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) ，如果省略则不在任何自定义组件内查找 */
-  component: TrivialInstance
-  ): CanvasContext = js.native
-  def createCanvasContext(
-    /** 要获取上下文的 [canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) 组件 canvas-id 属性 */
-  canvasId: String,
-    /** 在自定义组件下，当前组件实例的this，表示在这个自定义组件下查找拥有 canvas-id 的 [canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) ，如果省略则不在任何自定义组件内查找 */
-  component: typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
+  component: TrivialInstance | typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
   ): CanvasContext = js.native
   
   /** [[InnerAudioContext](https://developers.weixin.qq.com/miniprogram/dev/api/media/audio/InnerAudioContext.html) wx.createInnerAudioContext()](https://developers.weixin.qq.com/miniprogram/dev/api/media/audio/wx.createInnerAudioContext.html)
@@ -865,13 +838,7 @@ trait Wx extends StObject {
     /** [live-player](https://developers.weixin.qq.com/miniprogram/dev/component/live-player.html) 组件的 id */
   id: String,
     /** 在自定义组件下，当前组件实例的this，以操作组件内 [live-player](https://developers.weixin.qq.com/miniprogram/dev/component/live-player.html) 组件 */
-  component: TrivialInstance
-  ): LivePlayerContext = js.native
-  def createLivePlayerContext(
-    /** [live-player](https://developers.weixin.qq.com/miniprogram/dev/component/live-player.html) 组件的 id */
-  id: String,
-    /** 在自定义组件下，当前组件实例的this，以操作组件内 [live-player](https://developers.weixin.qq.com/miniprogram/dev/component/live-player.html) 组件 */
-  component: typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
+  component: TrivialInstance | typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
   ): LivePlayerContext = js.native
   
   /** [[LivePusherContext](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/LivePusherContext.html) wx.createLivePusherContext()](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/wx.createLivePusherContext.html)
@@ -892,13 +859,7 @@ trait Wx extends StObject {
     /** [map](https://developers.weixin.qq.com/miniprogram/dev/component/map.html) 组件的 id */
   mapId: String,
     /** 在自定义组件下，当前组件实例的this，以操作组件内 [map](https://developers.weixin.qq.com/miniprogram/dev/component/map.html) 组件 */
-  component: TrivialInstance
-  ): MapContext = js.native
-  def createMapContext(
-    /** [map](https://developers.weixin.qq.com/miniprogram/dev/component/map.html) 组件的 id */
-  mapId: String,
-    /** 在自定义组件下，当前组件实例的this，以操作组件内 [map](https://developers.weixin.qq.com/miniprogram/dev/component/map.html) 组件 */
-  component: typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
+  component: TrivialInstance | typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
   ): MapContext = js.native
   
   /** [[MediaAudioPlayer](https://developers.weixin.qq.com/miniprogram/dev/api/media/audio/MediaAudioPlayer.html) wx.createMediaAudioPlayer()](https://developers.weixin.qq.com/miniprogram/dev/api/media/audio/wx.createMediaAudioPlayer.html)
@@ -1050,15 +1011,7 @@ trait Wx extends StObject {
     /** 画布高度 */
   height: Double,
     /** 在自定义组件下，当前组件实例的 this */
-  component: TrivialInstance
-  ): OffscreenCanvas = js.native
-  def createOffscreenCanvas(
-    /** 画布宽度 */
-  width: Double,
-    /** 画布高度 */
-  height: Double,
-    /** 在自定义组件下，当前组件实例的 this */
-  component: typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
+  component: TrivialInstance | typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
   ): OffscreenCanvas = js.native
   
   /** [[RewardedVideoAd](https://developers.weixin.qq.com/miniprogram/dev/api/ad/RewardedVideoAd.html) wx.createRewardedVideoAd(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/ad/wx.createRewardedVideoAd.html)
@@ -1120,13 +1073,7 @@ trait Wx extends StObject {
     /** [video](https://developers.weixin.qq.com/miniprogram/dev/component/video.html) 组件的 id */
   id: String,
     /** 在自定义组件下，当前组件实例的this，以操作组件内 [video](https://developers.weixin.qq.com/miniprogram/dev/component/video.html) 组件 */
-  component: TrivialInstance
-  ): VideoContext = js.native
-  def createVideoContext(
-    /** [video](https://developers.weixin.qq.com/miniprogram/dev/component/video.html) 组件的 id */
-  id: String,
-    /** 在自定义组件下，当前组件实例的this，以操作组件内 [video](https://developers.weixin.qq.com/miniprogram/dev/component/video.html) 组件 */
-  component: typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
+  component: TrivialInstance | typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
   ): VideoContext = js.native
   
   /** [[VideoDecoder](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-decoder/VideoDecoder.html) wx.createVideoDecoder()](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-decoder/wx.createVideoDecoder.html)

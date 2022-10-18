@@ -1,37 +1,28 @@
 package typings.atom.anon
 
-import typings.atom.atomStrings.`12px`
-import typings.atom.atomStrings.`14px`
-import typings.atom.atomStrings.`16px`
-import typings.atom.atomStrings.`18px`
-import typings.atom.atomStrings.`21px`
-import typings.atom.atomStrings.`24px`
-import typings.atom.atomStrings.`28px`
-import typings.atom.atomStrings.`32px`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `24` extends StObject {
   
-  var scopeDescriptor: typings.atom.mod.ScopeDescriptor
+  var scopeDescriptor: typings.atom.srcScopeDescriptorMod.ScopeDescriptor
   
-  var value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`
+  var value: String | Null
 }
 object `24` {
   
-  inline def apply(
-    scopeDescriptor: typings.atom.mod.ScopeDescriptor,
-    value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`
-  ): `24` = {
-    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(scopeDescriptor: typings.atom.srcScopeDescriptorMod.ScopeDescriptor): `24` = {
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = null)
     __obj.asInstanceOf[`24`]
   }
   
   extension [Self <: `24`](x: Self) {
     
-    inline def setScopeDescriptor(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
+    inline def setScopeDescriptor(value: typings.atom.srcScopeDescriptorMod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
   }
 }

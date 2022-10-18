@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "StringReader")
 @js.native
 open class StringReader protected ()
-  extends typings.guacamoleClient.stringReaderMod.StringReader {
+  extends typings.guacamoleClient.libStringReaderMod.StringReader {
   /**
     * @param stream The stream that data will be read from.
     */
-  def this(stream: typings.guacamoleClient.inputStreamMod.InputStream) = this()
+  def this(stream: typings.guacamoleClient.libInputStreamMod.InputStream) = this()
 }

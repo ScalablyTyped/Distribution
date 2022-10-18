@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.closeLargeMod.CloseLargeProps
+import typings.wixUiIconsCommon.distSrcSystemDistComponentsCloseLargeMod.CloseLargeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object systemCloseLargeMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/on-stage/system/CloseLarge", JSImport.Default)
+  @JSImport("wix-ui-icons-common/system/CloseLarge", JSImport.Default)
   @js.native
   val default: FC[CloseLargeProps] = js.native
   

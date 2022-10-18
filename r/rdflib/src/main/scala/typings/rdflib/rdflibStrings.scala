@@ -1,9 +1,9 @@
 package typings.rdflib
 
-import typings.rdflib.fetcherMod.HTTPMethods
-import typings.rdflib.fetcherMod._StatusValues
-import typings.rdflib.typesMod.ContentType
-import typings.rdflib.typesMod.TermType
+import typings.rdflib.libFetcherMod.HTTPMethods
+import typings.rdflib.libFetcherMod._StatusValues
+import typings.rdflib.libTypesMod.ContentType
+import typings.rdflib.libTypesMod.TermType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

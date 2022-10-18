@@ -1,6 +1,6 @@
 package typings.antvG2plot.anon
 
-import typings.antvGBase.typesMod.ColorType
+import typings.antvGBase.libTypesMod.ColorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

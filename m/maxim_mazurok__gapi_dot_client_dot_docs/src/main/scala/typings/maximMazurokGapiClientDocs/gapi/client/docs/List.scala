@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,7 @@ trait List extends StObject {
   
   /** The suggested changes to the list properties, keyed by suggestion ID. */
   var suggestedListPropertiesChanges: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedListProperties}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.List & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedListProperties} */ js.Any
   ] = js.undefined
 }
 object List {
@@ -47,9 +44,7 @@ object List {
     inline def setSuggestedInsertionIdUndefined: Self = StObject.set(x, "suggestedInsertionId", js.undefined)
     
     inline def setSuggestedListPropertiesChanges(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedListProperties}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.List & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedListProperties} */ js.Any
     ): Self = StObject.set(x, "suggestedListPropertiesChanges", value.asInstanceOf[js.Any])
     
     inline def setSuggestedListPropertiesChangesUndefined: Self = StObject.set(x, "suggestedListPropertiesChanges", js.undefined)

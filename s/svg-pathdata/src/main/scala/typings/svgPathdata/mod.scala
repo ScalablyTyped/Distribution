@@ -1,6 +1,9 @@
 package typings.svgPathdata
 
 import typings.svgPathdata.anon.MaxX
+import typings.svgPathdata.libTransformableSVGMod.TransformableSVG
+import typings.svgPathdata.libTypesMod.SVGCommand
+import typings.svgPathdata.libTypesMod.TransformFunction
 import typings.svgPathdata.svgPathdataInts.`128`
 import typings.svgPathdata.svgPathdataInts.`16`
 import typings.svgPathdata.svgPathdataInts.`1`
@@ -11,9 +14,6 @@ import typings.svgPathdata.svgPathdataInts.`4`
 import typings.svgPathdata.svgPathdataInts.`512`
 import typings.svgPathdata.svgPathdataInts.`64`
 import typings.svgPathdata.svgPathdataInts.`8`
-import typings.svgPathdata.transformableSVGMod.TransformableSVG
-import typings.svgPathdata.typesMod.SVGCommand
-import typings.svgPathdata.typesMod.TransformFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -142,7 +142,7 @@ object mod {
   @JSImport("svg-pathdata", "SVGPathDataParser")
   @js.native
   open class SVGPathDataParser ()
-    extends typings.svgPathdata.svgpathdataparserMod.SVGPathDataParser
+    extends typings.svgPathdata.libSvgpathdataparserMod.SVGPathDataParser
   
   object SVGPathDataTransformer {
     

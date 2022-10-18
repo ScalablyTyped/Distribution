@@ -1,7 +1,6 @@
 package typings.webpackConfigUtils
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,14 +14,10 @@ object mod {
   inline def getIfUtils[E /* <: EnvVars | String */](env: E): IfUtils = ^.asInstanceOf[js.Dynamic].applyDynamic("getIfUtils")(env.asInstanceOf[js.Any]).asInstanceOf[IfUtils]
   inline def getIfUtils[E /* <: EnvVars | String */](env: E, vars: js.Array[EnvVars | String]): IfUtils = (^.asInstanceOf[js.Dynamic].applyDynamic("getIfUtils")(env.asInstanceOf[js.Any], vars.asInstanceOf[js.Any])).asInstanceOf[IfUtils]
   inline def getIfUtils[E /* <: EnvVars | String */](
-    env: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in E ]: boolean | string}
-    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.getIfUtils & TopLevel[Any]
+    env: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in E ]: boolean | string} */ js.Any
   ): IfUtils = ^.asInstanceOf[js.Dynamic].applyDynamic("getIfUtils")(env.asInstanceOf[js.Any]).asInstanceOf[IfUtils]
   inline def getIfUtils[E /* <: EnvVars | String */](
-    env: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in E ]: boolean | string}
-    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.getIfUtils & TopLevel[Any],
+    env: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in E ]: boolean | string} */ js.Any,
     vars: js.Array[EnvVars | String]
   ): IfUtils = (^.asInstanceOf[js.Dynamic].applyDynamic("getIfUtils")(env.asInstanceOf[js.Any], vars.asInstanceOf[js.Any])).asInstanceOf[IfUtils]
   
@@ -35,9 +30,7 @@ object mod {
   inline def propIf_I_I[I](a: Any, value: I, alternate: Any): I = (^.asInstanceOf[js.Dynamic].applyDynamic("propIf")(a.asInstanceOf[js.Any], value.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[I]
   
   inline def removeEmpty[T](
-    input: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: T[P]}
-    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.removeEmpty & TopLevel[T]
+    input: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P]} */ js.Any
   ): NonEmptyObject[T, DefinedObjKeys[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeEmpty")(input.asInstanceOf[js.Any]).asInstanceOf[NonEmptyObject[T, DefinedObjKeys[T]]]
   inline def removeEmpty[T](input: js.Array[js.UndefOr[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeEmpty")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
@@ -188,9 +181,14 @@ object mod {
     def apply[Y, N](value: Y, alternate: N): Y | N = js.native
   }
   
-  type NonEmptyObject[T, P /* <: DefinedObjKeys[T] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ PP in P ]: T[PP]}
-    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.NonEmptyObject & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * This translation is imprecise and ignores the effect of the type mapping. 
+    * TS definition: {{{
+    {[ PP in P ]: T[PP]}
+    }}}
+    */
+  type NonEmptyObject[T, P /* <: DefinedObjKeys[T] */] = T
   
   trait _Falsy extends StObject
 }

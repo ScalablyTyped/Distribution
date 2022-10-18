@@ -1,7 +1,5 @@
 package typings.shippo.mod.Shippo
 
-import org.scalablytyped.runtime.TopLevel
-import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -295,10 +293,6 @@ type DistanceUnit = _DistanceUnit | String
   - java.lang.String
 */
 type FEDEXServiceLevel = _FEDEXServiceLevel | String
-
-type GetRequired[T, P /* <: Required[T] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T as T[K] extends P[K]? K : never ]: P[K]}
-  */ typings.shippo.shippoStrings.GetRequired & TopLevel[P]
 
 /* Rewritten from type alias, can be one of: 
   - typings.shippo.shippoStrings.g

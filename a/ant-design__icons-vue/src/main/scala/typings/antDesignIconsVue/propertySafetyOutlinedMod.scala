@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsPropertySafetyOutlinedMod.PropertySafetyOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propertySafetyOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/PropertySafetyOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/PropertySafetyOutlined", JSImport.Default)
   @js.native
   val default: PropertySafetyOutlinedIconType = js.native
-  
-  @js.native
-  trait PropertySafetyOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_PropertySafetyOutlinedIconType: String = js.native
-  }
   
   type _To = PropertySafetyOutlinedIconType
   

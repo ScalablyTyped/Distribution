@@ -1,8 +1,8 @@
 package typings.rfc4648
 
-import typings.rfc4648.codecMod.Encoding
-import typings.rfc4648.codecMod.ParseOptions
-import typings.rfc4648.codecMod.StringifyOptions
+import typings.rfc4648.libSrcCodecMod.Encoding
+import typings.rfc4648.libSrcCodecMod.ParseOptions
+import typings.rfc4648.libSrcCodecMod.StringifyOptions
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

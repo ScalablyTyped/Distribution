@@ -2,29 +2,32 @@ package typings.firebaseFirestore
 
 import typings.firebaseApp.mod.FirebaseApp
 import typings.firebaseFirestore.anon.MockUserToken
-import typings.firebaseFirestore.firestoreSrcApiCredentialsMod.CredentialsProvider
-import typings.firebaseFirestore.firestoreSrcAuthUserMod.User
-import typings.firebaseFirestore.firestoreSrcCoreDatabaseInfoMod.DatabaseId
-import typings.firebaseFirestore.firestoreSrcLiteApiUserDataReaderMod.UntypedFirestoreDataConverter
-import typings.firebaseFirestore.firestoreSrcLiteApiUserDataWriterMod.AbstractUserDataWriter
-import typings.firebaseFirestore.firestoreSrcModelDocumentKeyMod.DocumentKey
-import typings.firebaseFirestore.firestoreSrcModelDocumentMod.Document
-import typings.firebaseFirestore.firestoreSrcModelMutationMod.Mutation
-import typings.firebaseFirestore.firestoreSrcModelPathMod.ResourcePath
-import typings.firebaseFirestore.firestoreSrcUtilByteStringMod.ByteString
-import typings.firebaseFirestore.firestoreSrcUtilErrorMod.FirestoreErrorCode
-import typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.OrderByDirection
-import typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.WhereFilterOp
-import typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentData
-import typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.PartialWithFieldValue
-import typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.Query
-import typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.SetOptions
-import typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.UpdateData
-import typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.WithFieldValue
-import typings.firebaseFirestore.packagesFirestoreSrcLiteApiSettingsMod.FirestoreSettings
-import typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.FirestoreDataConverter
-import typings.firebaseFirestore.packagesFirestoreSrcLiteApiTransactionOptionsMod.TransactionOptions
-import typings.firebaseLogger.srcLoggerMod.LogLevelString
+import typings.firebaseFirestore.anon.`39`
+import typings.firebaseFirestore.distPackagesFirestoreSrcApiCredentialsMod.CredentialsProvider
+import typings.firebaseFirestore.distPackagesFirestoreSrcAuthUserMod.User
+import typings.firebaseFirestore.distPackagesFirestoreSrcCoreDatabaseInfoMod.DatabaseId
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiAggregateTypesMod.AggregateSpec
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiAggregateTypesMod.AggregateSpecData
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.OrderByDirection
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.WhereFilterOp
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentData
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.PartialWithFieldValue
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.Query
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.SetOptions
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.UpdateData
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.WithFieldValue
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSettingsMod.FirestoreSettings
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.FirestoreDataConverter
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiTransactionOptionsMod.TransactionOptions
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiUserDataReaderMod.UntypedFirestoreDataConverter
+import typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiUserDataWriterMod.AbstractUserDataWriter
+import typings.firebaseFirestore.distPackagesFirestoreSrcModelDocumentKeyMod.DocumentKey
+import typings.firebaseFirestore.distPackagesFirestoreSrcModelDocumentMod.Document
+import typings.firebaseFirestore.distPackagesFirestoreSrcModelMutationMod.Mutation
+import typings.firebaseFirestore.distPackagesFirestoreSrcModelPathMod.ResourcePath
+import typings.firebaseFirestore.distPackagesFirestoreSrcUtilByteStringMod.ByteString
+import typings.firebaseFirestore.distPackagesFirestoreSrcUtilErrorMod.FirestoreErrorCode
+import typings.firebaseLogger.distSrcLoggerMod.LogLevelString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,10 +38,23 @@ object distPackagesFirestoreLiteMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("@firebase/firestore/dist/packages/firestore/lite", "AggregateField")
+  @js.native
+  open class AggregateField[T] ()
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiAggregateTypesMod.AggregateField[T]
+  
+  @JSImport("@firebase/firestore/dist/packages/firestore/lite", "AggregateQuerySnapshot")
+  @js.native
+  open class AggregateQuerySnapshot[T /* <: AggregateSpec */] protected ()
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiAggregateTypesMod.AggregateQuerySnapshot[T] {
+    /** @hideconstructor */
+    def this(query: Query[Any], _data: AggregateSpecData[T]) = this()
+  }
+  
   @JSImport("@firebase/firestore/dist/packages/firestore/lite", "Bytes")
   @js.native
   open class Bytes protected ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiBytesMod.Bytes {
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiBytesMod.Bytes {
     /** @hideconstructor */
     def this(byteString: ByteString) = this()
   }
@@ -55,28 +71,28 @@ object distPackagesFirestoreLiteMod {
       *
       * @param base64 - The Base64 string used to create the `Bytes` object.
       */
-    inline def fromBase64String(base64: String): typings.firebaseFirestore.packagesFirestoreSrcLiteApiBytesMod.Bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64String")(base64.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiBytesMod.Bytes]
+    inline def fromBase64String(base64: String): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiBytesMod.Bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64String")(base64.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiBytesMod.Bytes]
     
     /**
       * Creates a new `Bytes` object from the given Uint8Array.
       *
       * @param array - The Uint8Array used to create the `Bytes` object.
       */
-    inline def fromUint8Array(array: js.typedarray.Uint8Array): typings.firebaseFirestore.packagesFirestoreSrcLiteApiBytesMod.Bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(array.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiBytesMod.Bytes]
+    inline def fromUint8Array(array: js.typedarray.Uint8Array): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiBytesMod.Bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(array.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiBytesMod.Bytes]
   }
   
   @JSImport("@firebase/firestore/dist/packages/firestore/lite", "CollectionReference")
   @js.native
   open class CollectionReference[T] protected ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T] {
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T] {
     def this(
-      firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       converter: Null,
       _path: ResourcePath
     ) = this()
     /** @hideconstructor */
     def this(
-      firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       converter: FirestoreDataConverter[T],
       _path: ResourcePath
     ) = this()
@@ -85,9 +101,9 @@ object distPackagesFirestoreLiteMod {
   @JSImport("@firebase/firestore/dist/packages/firestore/lite", "DocumentReference")
   @js.native
   open class DocumentReference[T] protected ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T] {
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T] {
     def this(
-      firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       /**
       * If provided, the `FirestoreDataConverter` associated with this instance.
       */
@@ -96,7 +112,7 @@ object distPackagesFirestoreLiteMod {
     ) = this()
     /** @hideconstructor */
     def this(
-      firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       /**
       * If provided, the `FirestoreDataConverter` associated with this instance.
       */
@@ -108,28 +124,28 @@ object distPackagesFirestoreLiteMod {
   @JSImport("@firebase/firestore/dist/packages/firestore/lite", "DocumentSnapshot")
   @js.native
   open class DocumentSnapshot[T] protected ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T] {
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T] {
     /** @hideconstructor protected */
     def this(
-      _firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      _firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       _userDataWriter: AbstractUserDataWriter,
       _key: DocumentKey
     ) = this()
     def this(
-      _firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      _firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       _userDataWriter: AbstractUserDataWriter,
       _key: DocumentKey,
       _document: Document
     ) = this()
     def this(
-      _firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      _firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       _userDataWriter: AbstractUserDataWriter,
       _key: DocumentKey,
       _document: Null,
       _converter: UntypedFirestoreDataConverter[T]
     ) = this()
     def this(
-      _firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      _firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       _userDataWriter: AbstractUserDataWriter,
       _key: DocumentKey,
       _document: Document,
@@ -140,7 +156,7 @@ object distPackagesFirestoreLiteMod {
   @JSImport("@firebase/firestore/dist/packages/firestore/lite", "FieldPath")
   @js.native
   open class FieldPath protected ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldPathMod.FieldPath {
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldPathMod.FieldPath {
     /**
       * Creates a `FieldPath` from the provided field names. If more than one field
       * name is provided, the path will point to a nested field in a document.
@@ -150,10 +166,10 @@ object distPackagesFirestoreLiteMod {
     def this(fieldNames: String*) = this()
   }
   
-  @JSImport("@firebase/firestore/dist/packages/firestore/lite", "FieldValue")
+  /* note: abstract class */ @JSImport("@firebase/firestore/dist/packages/firestore/lite", "FieldValue")
   @js.native
-  abstract class FieldValue protected ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldValueMod.FieldValue {
+  open class FieldValue protected ()
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldValueMod.FieldValue {
     /**
       * @param _methodName - The public API endpoint that returns this class.
       * @hideconstructor
@@ -164,7 +180,7 @@ object distPackagesFirestoreLiteMod {
   @JSImport("@firebase/firestore/dist/packages/firestore/lite", "Firestore")
   @js.native
   open class Firestore protected ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore {
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore {
     /** @hideconstructor */
     def this(
       _authCredentials: CredentialsProvider[User],
@@ -182,7 +198,7 @@ object distPackagesFirestoreLiteMod {
   @JSImport("@firebase/firestore/dist/packages/firestore/lite", "FirestoreError")
   @js.native
   open class FirestoreError protected ()
-    extends typings.firebaseFirestore.firestoreSrcUtilErrorMod.FirestoreError {
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcUtilErrorMod.FirestoreError {
     /** @hideconstructor */
     def this(
       /**
@@ -199,7 +215,7 @@ object distPackagesFirestoreLiteMod {
   @JSImport("@firebase/firestore/dist/packages/firestore/lite", "GeoPoint")
   @js.native
   open class GeoPoint protected ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiGeoPointMod.GeoPoint {
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiGeoPointMod.GeoPoint {
     /**
       * Creates a new immutable `GeoPoint` object with the provided latitude and
       * longitude values.
@@ -209,36 +225,36 @@ object distPackagesFirestoreLiteMod {
     def this(latitude: Double, longitude: Double) = this()
   }
   
-  @JSImport("@firebase/firestore/dist/packages/firestore/lite", "QueryConstraint")
+  /* note: abstract class */ @JSImport("@firebase/firestore/dist/packages/firestore/lite", "QueryConstraint")
   @js.native
-  abstract class QueryConstraint ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint
+  open class QueryConstraint ()
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint
   
   @JSImport("@firebase/firestore/dist/packages/firestore/lite", "QueryDocumentSnapshot")
   @js.native
   open class QueryDocumentSnapshot[T] protected ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.QueryDocumentSnapshot[T] {
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.QueryDocumentSnapshot[T] {
     /** @hideconstructor protected */
     def this(
-      _firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      _firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       _userDataWriter: AbstractUserDataWriter,
       _key: DocumentKey
     ) = this()
     def this(
-      _firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      _firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       _userDataWriter: AbstractUserDataWriter,
       _key: DocumentKey,
       _document: Document
     ) = this()
     def this(
-      _firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      _firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       _userDataWriter: AbstractUserDataWriter,
       _key: DocumentKey,
       _document: Null,
       _converter: UntypedFirestoreDataConverter[T]
     ) = this()
     def this(
-      _firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      _firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       _userDataWriter: AbstractUserDataWriter,
       _key: DocumentKey,
       _document: Document,
@@ -249,12 +265,12 @@ object distPackagesFirestoreLiteMod {
   @JSImport("@firebase/firestore/dist/packages/firestore/lite", "QuerySnapshot")
   @js.native
   open class QuerySnapshot[T] protected ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T] {
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T] {
     /** @hideconstructor */
     def this(
       _query: Query[T],
       _docs: js.Array[
-            typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.QueryDocumentSnapshot[T]
+            typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.QueryDocumentSnapshot[T]
           ]
     ) = this()
   }
@@ -263,28 +279,28 @@ object distPackagesFirestoreLiteMod {
   @js.native
   open class Query_[T] protected () extends Query[T] {
     def this(
-      firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       /**
       * If provided, the `FirestoreDataConverter` associated with this instance.
       */
     converter: Null,
-      _query: typings.firebaseFirestore.firestoreSrcCoreQueryMod.Query
+      _query: typings.firebaseFirestore.distPackagesFirestoreSrcCoreQueryMod.Query
     ) = this()
     /** @hideconstructor protected */
     def this(
-      firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       /**
       * If provided, the `FirestoreDataConverter` associated with this instance.
       */
     converter: FirestoreDataConverter[T],
-      _query: typings.firebaseFirestore.firestoreSrcCoreQueryMod.Query
+      _query: typings.firebaseFirestore.distPackagesFirestoreSrcCoreQueryMod.Query
     ) = this()
   }
   
   @JSImport("@firebase/firestore/dist/packages/firestore/lite", "Timestamp")
   @js.native
   open class Timestamp protected ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiTimestampMod.Timestamp {
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiTimestampMod.Timestamp {
     /**
       * Creates a new timestamp.
       *
@@ -321,7 +337,7 @@ object distPackagesFirestoreLiteMod {
       * @returns A new `Timestamp` representing the same point in time as the given
       *     date.
       */
-    inline def fromDate(date: js.Date): typings.firebaseFirestore.packagesFirestoreSrcLiteApiTimestampMod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiTimestampMod.Timestamp]
+    inline def fromDate(date: js.Date): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiTimestampMod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiTimestampMod.Timestamp]
     
     /**
       * Creates a new timestamp from the given number of milliseconds.
@@ -331,255 +347,276 @@ object distPackagesFirestoreLiteMod {
       * @returns A new `Timestamp` representing the same point in time as the given
       *     number of milliseconds.
       */
-    inline def fromMillis(milliseconds: Double): typings.firebaseFirestore.packagesFirestoreSrcLiteApiTimestampMod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiTimestampMod.Timestamp]
+    inline def fromMillis(milliseconds: Double): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiTimestampMod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiTimestampMod.Timestamp]
     
     /**
       * Creates a new timestamp with the current date, with millisecond precision.
       *
       * @returns a new timestamp representing the current date.
       */
-    inline def now(): typings.firebaseFirestore.packagesFirestoreSrcLiteApiTimestampMod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiTimestampMod.Timestamp]
+    inline def now(): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiTimestampMod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiTimestampMod.Timestamp]
   }
   
   @JSImport("@firebase/firestore/dist/packages/firestore/lite", "Transaction")
   @js.native
   open class Transaction protected ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiTransactionMod.Transaction {
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiTransactionMod.Transaction {
     /** @hideconstructor */
     def this(
-      _firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
-      _transaction: typings.firebaseFirestore.packagesFirestoreSrcCoreTransactionMod.Transaction
+      _firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      _transaction: typings.firebaseFirestore.distPackagesFirestoreSrcCoreTransactionMod.Transaction
     ) = this()
   }
   
   @JSImport("@firebase/firestore/dist/packages/firestore/lite", "WriteBatch")
   @js.native
   open class WriteBatch_ protected ()
-    extends typings.firebaseFirestore.packagesFirestoreSrcLiteApiWriteBatchMod.WriteBatch_ {
+    extends typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiWriteBatchMod.WriteBatch_ {
     /** @hideconstructor */
     def this(
-      _firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+      _firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
       _commitHandler: js.Function1[/* m */ js.Array[Mutation], js.Promise[Unit]]
     ) = this()
   }
   
   inline def addDoc[T](
-    reference: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T],
+    reference: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T],
     data: WithFieldValue[T]
   ): js.Promise[
-    typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]
+    typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("addDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
-    typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]
+    typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]
   ]]
   
-  inline def arrayRemove(elements: Any*): typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldValueMod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldValueMod.FieldValue]
+  inline def aggregateQuerySnapshotEqual[T /* <: AggregateSpec */](
+    left: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiAggregateTypesMod.AggregateQuerySnapshot[T],
+    right: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiAggregateTypesMod.AggregateQuerySnapshot[T]
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aggregateQuerySnapshotEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def arrayUnion(elements: Any*): typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldValueMod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldValueMod.FieldValue]
+  inline def arrayRemove(elements: Any*): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldValueMod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldValueMod.FieldValue]
+  
+  inline def arrayUnion(elements: Any*): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldValueMod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldValueMod.FieldValue]
   
   inline def collection(
-    firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+    firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
     path: String,
     pathSegments: String*
-  ): typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(firestore.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData]]
+  ): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(firestore.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData]]
   inline def collection(
-    reference: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[Any],
+    reference: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[Any],
     path: String,
     pathSegments: String*
-  ): typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData]]
+  ): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData]]
   inline def collection(
-    reference: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData],
+    reference: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData],
     path: String,
     pathSegments: String*
-  ): typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData]]
+  ): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData]]
   
   inline def collectionGroup(
-    firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+    firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
     collectionId: String
   ): Query[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collectionGroup")(firestore.asInstanceOf[js.Any], collectionId.asInstanceOf[js.Any])).asInstanceOf[Query[DocumentData]]
   
   inline def connectFirestoreEmulator(
-    firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+    firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
     host: String,
     port: Double
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectFirestoreEmulator")(firestore.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def connectFirestoreEmulator(
-    firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+    firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
     host: String,
     port: Double,
     options: MockUserToken
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectFirestoreEmulator")(firestore.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def deleteDoc(
-    reference: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[Any]
+    reference: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[Any]
   ): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDoc")(reference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def deleteField(): typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldValueMod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteField")().asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldValueMod.FieldValue]
+  inline def deleteField(): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldValueMod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteField")().asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldValueMod.FieldValue]
   
   inline def doc(
-    firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+    firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
     path: String,
     pathSegments: String*
-  ): typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(firestore.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData]]
+  ): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(firestore.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData]]
   inline def doc(
-    reference: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[Any],
+    reference: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[Any],
     path: String,
     pathSegments: String*
-  ): typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData]]
+  ): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData]]
   inline def doc[T](
-    reference: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T],
+    reference: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T],
     path: String,
     pathSegments: String*
-  ): typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]]
+  ): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]]
   inline def doc[T](
-    reference: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T],
+    reference: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T],
     path: Unit,
     pathSegments: String*
-  ): typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]]
+  ): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]]
   
-  inline def documentId(): typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldPathMod.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldPathMod.FieldPath]
+  inline def documentId(): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldPathMod.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldPathMod.FieldPath]
   
-  inline def endAt(fieldValues: Any*): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
-  inline def endAt(snapshot: typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[Any]): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def endAt(fieldValues: Any*): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def endAt(
+    snapshot: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[Any]
+  ): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
   
-  inline def endBefore(fieldValues: Any*): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
-  inline def endBefore(snapshot: typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[Any]): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def endBefore(fieldValues: Any*): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def endBefore(
+    snapshot: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[Any]
+  ): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
   
-  inline def getDoc[T](reference: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]): js.Promise[
-    typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T]
+  inline def getCount(query: Query[Any]): js.Promise[
+    typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiAggregateTypesMod.AggregateQuerySnapshot[`39`]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCount")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiAggregateTypesMod.AggregateQuerySnapshot[`39`]
+  ]]
+  
+  inline def getDoc[T](
+    reference: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]
+  ): js.Promise[
+    typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDoc")(reference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
-    typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T]
+    typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T]
   ]]
   
   inline def getDocs[T](query: Query[T]): js.Promise[
-    typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T]
+    typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocs")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
-    typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T]
+    typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T]
   ]]
   
-  inline def getFirestore(): typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirestore")().asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore]
-  inline def getFirestore(app: FirebaseApp): typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirestore")(app.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore]
-  inline def getFirestore(app: FirebaseApp, databaseId: String): typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirestore")(app.asInstanceOf[js.Any], databaseId.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore]
-  inline def getFirestore(databaseId: String): typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirestore")(databaseId.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore]
+  inline def getFirestore(): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirestore")().asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore]
+  inline def getFirestore(app: FirebaseApp): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirestore")(app.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore]
+  inline def getFirestore(app: FirebaseApp, databaseId: String): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirestore")(app.asInstanceOf[js.Any], databaseId.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore]
+  inline def getFirestore(databaseId: String): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirestore")(databaseId.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore]
   
-  inline def increment(n: Double): typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldValueMod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(n.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldValueMod.FieldValue]
+  inline def increment(n: Double): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldValueMod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(n.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldValueMod.FieldValue]
   
-  inline def initializeFirestore(app: FirebaseApp, settings: FirestoreSettings): typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeFirestore")(app.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore]
-  inline def initializeFirestore(app: FirebaseApp, settings: FirestoreSettings, databaseId: String): typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeFirestore")(app.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], databaseId.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore]
+  inline def initializeFirestore(app: FirebaseApp, settings: FirestoreSettings): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeFirestore")(app.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore]
+  inline def initializeFirestore(app: FirebaseApp, settings: FirestoreSettings, databaseId: String): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeFirestore")(app.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], databaseId.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore]
   
-  inline def limit(limit: Double): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("limit")(limit.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def limit(limit: Double): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("limit")(limit.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
   
-  inline def limitToLast(limit: Double): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("limitToLast")(limit.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def limitToLast(limit: Double): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("limitToLast")(limit.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
   
-  inline def orderBy(fieldPath: String): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
-  inline def orderBy(fieldPath: String, directionStr: OrderByDirection): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any], directionStr.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
-  inline def orderBy(fieldPath: typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldPathMod.FieldPath): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def orderBy(fieldPath: String): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def orderBy(fieldPath: String, directionStr: OrderByDirection): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any], directionStr.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def orderBy(fieldPath: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldPathMod.FieldPath): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
   inline def orderBy(
-    fieldPath: typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldPathMod.FieldPath,
+    fieldPath: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldPathMod.FieldPath,
     directionStr: OrderByDirection
-  ): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any], directionStr.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  ): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any], directionStr.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
   
   inline def query[T](
     query: Query[T],
-    queryConstraints: typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint*
+    queryConstraints: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint*
   ): Query[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(query.asInstanceOf[js.Any]).`++`(queryConstraints.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query[T]]
   
   inline def queryEqual[T](left: Query[T], right: Query[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("queryEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def refEqual[T](
-    left: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T],
-    right: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T]
+    left: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T],
+    right: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("refEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def refEqual[T](
-    left: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T],
-    right: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]
+    left: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T],
+    right: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("refEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def refEqual[T](
-    left: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T],
-    right: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T]
+    left: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T],
+    right: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.CollectionReference[T]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("refEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def refEqual[T](
-    left: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T],
-    right: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]
+    left: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T],
+    right: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("refEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def runTransaction[T](
-    firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+    firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
     updateFunction: js.Function1[
-      /* transaction */ typings.firebaseFirestore.packagesFirestoreSrcLiteApiTransactionMod.Transaction, 
+      /* transaction */ typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiTransactionMod.Transaction, 
       js.Promise[T]
     ]
   ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTransaction")(firestore.asInstanceOf[js.Any], updateFunction.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   inline def runTransaction[T](
-    firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore,
+    firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore,
     updateFunction: js.Function1[
-      /* transaction */ typings.firebaseFirestore.packagesFirestoreSrcLiteApiTransactionMod.Transaction, 
+      /* transaction */ typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiTransactionMod.Transaction, 
       js.Promise[T]
     ],
     options: TransactionOptions
   ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTransaction")(firestore.asInstanceOf[js.Any], updateFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  inline def serverTimestamp(): typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldValueMod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldValueMod.FieldValue]
+  inline def serverTimestamp(): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldValueMod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldValueMod.FieldValue]
   
   inline def setDoc[T](
-    reference: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T],
+    reference: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T],
     data: PartialWithFieldValue[T],
     options: SetOptions
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def setDoc[T](
-    reference: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T],
+    reference: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T],
     data: WithFieldValue[T]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def setLogLevel(logLevel: LogLevelString): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(logLevel.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def snapshotEqual[T](
-    left: typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T],
-    right: typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T]
+    left: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T],
+    right: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("snapshotEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def snapshotEqual[T](
-    left: typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T],
-    right: typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T]
+    left: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T],
+    right: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("snapshotEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def snapshotEqual[T](
-    left: typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T],
-    right: typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T]
+    left: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T],
+    right: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[T]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("snapshotEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def snapshotEqual[T](
-    left: typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T],
-    right: typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T]
+    left: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T],
+    right: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.QuerySnapshot[T]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("snapshotEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def startAfter(fieldValues: Any*): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
-  inline def startAfter(snapshot: typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[Any]): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def startAfter(fieldValues: Any*): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def startAfter(
+    snapshot: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[Any]
+  ): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
   
-  inline def startAt(fieldValues: Any*): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
-  inline def startAt(snapshot: typings.firebaseFirestore.packagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[Any]): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def startAt(fieldValues: Any*): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def startAt(
+    snapshot: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiSnapshotMod.DocumentSnapshot[Any]
+  ): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
   
-  inline def terminate(firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("terminate")(firestore.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def terminate(firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("terminate")(firestore.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def updateDoc(
-    reference: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[Any],
+    reference: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[Any],
     field: String,
     value: Any,
     moreFieldsAndValues: Any*
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDoc")((scala.List(reference.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).`++`(moreFieldsAndValues.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Unit]]
   inline def updateDoc(
-    reference: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[Any],
-    field: typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldPathMod.FieldPath,
+    reference: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[Any],
+    field: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldPathMod.FieldPath,
     value: Any,
     moreFieldsAndValues: Any*
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDoc")((scala.List(reference.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).`++`(moreFieldsAndValues.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Unit]]
   inline def updateDoc[T](
-    reference: typings.firebaseFirestore.packagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T],
+    reference: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiReferenceMod.DocumentReference[T],
     data: UpdateData[T]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def where(fieldPath: String, opStr: WhereFilterOp, value: Any): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(fieldPath.asInstanceOf[js.Any], opStr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  inline def where(fieldPath: String, opStr: WhereFilterOp, value: Any): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(fieldPath.asInstanceOf[js.Any], opStr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
   inline def where(
-    fieldPath: typings.firebaseFirestore.packagesFirestoreSrcLiteApiFieldPathMod.FieldPath,
+    fieldPath: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiFieldPathMod.FieldPath,
     opStr: WhereFilterOp,
     value: Any
-  ): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(fieldPath.asInstanceOf[js.Any], opStr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
+  ): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(fieldPath.asInstanceOf[js.Any], opStr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
   
-  inline def writeBatch(firestore: typings.firebaseFirestore.packagesFirestoreSrcLiteApiDatabaseMod.Firestore): typings.firebaseFirestore.packagesFirestoreSrcLiteApiWriteBatchMod.WriteBatch_ = ^.asInstanceOf[js.Dynamic].applyDynamic("writeBatch")(firestore.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiWriteBatchMod.WriteBatch_]
+  inline def writeBatch(firestore: typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiDatabaseMod.Firestore): typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiWriteBatchMod.WriteBatch_ = ^.asInstanceOf[js.Dynamic].applyDynamic("writeBatch")(firestore.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcLiteApiWriteBatchMod.WriteBatch_]
 }

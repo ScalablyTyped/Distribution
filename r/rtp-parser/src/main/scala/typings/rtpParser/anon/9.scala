@@ -1,37 +1,28 @@
 package typings.rtpParser.anon
 
-import typings.rtpParser.rtpParserInts.`44100`
-import typings.rtpParser.rtpParserStrings.A
-import typings.rtpParser.rtpParserStrings.L16
+import typings.rtpParser.rtpParserStrings.V
+import typings.rtpParser.rtpParserStrings.unassigned
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `9` extends StObject {
   
-  var channels: typings.rtpParser.rtpParserInts.`1`
+  var mediaType: V
   
-  var clockRate: `44100`
-  
-  var mediaType: A
-  
-  var name: L16
+  var name: unassigned
 }
 object `9` {
   
   inline def apply(): `9` = {
-    val __obj = js.Dynamic.literal(channels = 1, clockRate = 44100, mediaType = "A", name = "L16")
+    val __obj = js.Dynamic.literal(mediaType = "V", name = "unassigned")
     __obj.asInstanceOf[`9`]
   }
   
   extension [Self <: `9`](x: Self) {
     
-    inline def setChannels(value: typings.rtpParser.rtpParserInts.`1`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: V): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    inline def setClockRate(value: `44100`): Self = StObject.set(x, "clockRate", value.asInstanceOf[js.Any])
-    
-    inline def setMediaType(value: A): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
-    
-    inline def setName(value: L16): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: unassigned): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

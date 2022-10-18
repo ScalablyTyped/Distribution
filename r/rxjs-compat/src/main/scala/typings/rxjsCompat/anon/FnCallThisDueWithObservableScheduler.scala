@@ -1,5 +1,8 @@
 package typings.rxjsCompat.anon
 
+import typings.rxjs.distTypesInternalTypesMod.ObservableInput
+import typings.rxjs.distTypesInternalTypesMod.SchedulerLike
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,22 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisDueWithObservableScheduler extends StObject {
   
-  def apply[T](
-    due: js.Date,
-    withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any
-  ): Any = js.native
-  def apply[T](
-    due: js.Date,
-    withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
-  ): Any = js.native
-  def apply[T](
-    due: Double,
-    withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any
-  ): Any = js.native
-  def apply[T](
-    due: Double,
-    withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
-  ): Any = js.native
+  def apply[T](due: js.Date, withObservable: ObservableInput[T]): Observable_[T] = js.native
+  def apply[T](due: js.Date, withObservable: ObservableInput[T], scheduler: SchedulerLike): Observable_[T] = js.native
+  def apply[T](due: Double, withObservable: ObservableInput[T]): Observable_[T] = js.native
+  def apply[T](due: Double, withObservable: ObservableInput[T], scheduler: SchedulerLike): Observable_[T] = js.native
 }

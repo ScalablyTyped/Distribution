@@ -4,29 +4,29 @@ import typings.protractor.mod.ElementFinder
 import typings.protractor.mod.WebElement
 import typings.unidriverCore.mod.UniDriver
 import typings.wixUiTestUtils.anon.DataHookString
-import typings.wixUiTestUtils.anon.Wrapper
-import typings.wixUiTestUtils.baseDriverMod.BaseUniDriver
-import typings.wixUiTestUtils.protractorHelpersMod.ILocation
-import typings.wixUiTestUtils.protractorHelpersMod.StoryUrlParams
+import typings.wixUiTestUtils.anon.DataHookWrapper
+import typings.wixUiTestUtils.distSrcBaseDriverMod.BaseUniDriver
+import typings.wixUiTestUtils.distSrcProtractorProtractorHelpersMod.ILocation
+import typings.wixUiTestUtils.distSrcProtractorProtractorHelpersMod.StoryUrlParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object protractorMod {
   
-  @JSImport("wix-ui-test-utils/dist/src/protractor", JSImport.Namespace)
+  @JSImport("wix-ui-test-utils/protractor", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   object baseProtractorConfig {
     
-    @JSImport("wix-ui-test-utils/dist/src/protractor", "baseProtractorConfig")
+    @JSImport("wix-ui-test-utils/protractor", "baseProtractorConfig")
     @js.native
     val ^ : js.Any = js.native
     
     inline def afterLaunch(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLaunch")().asInstanceOf[js.Promise[Any]]
     
-    @JSImport("wix-ui-test-utils/dist/src/protractor", "baseProtractorConfig.baseUrl")
+    @JSImport("wix-ui-test-utils/protractor", "baseProtractorConfig.baseUrl")
     @js.native
     def baseUrl: String = js.native
     inline def baseUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseUrl")(x.asInstanceOf[js.Any])
@@ -35,7 +35,7 @@ object protractorMod {
     
     inline def onPrepare(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPrepare")().asInstanceOf[Unit]
     
-    @JSImport("wix-ui-test-utils/dist/src/protractor", "baseProtractorConfig.specs")
+    @JSImport("wix-ui-test-utils/protractor", "baseProtractorConfig.specs")
     @js.native
     def specs: js.Array[String] = js.native
     inline def specs_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specs")(x.asInstanceOf[js.Any])
@@ -60,7 +60,7 @@ object protractorMod {
   
   inline def protractorTestkitFactoryCreator[T](
     driverFactory: js.Function3[/* wrapper */ ElementFinder, /* body */ ElementFinder, /* options */ DataHookString, T]
-  ): js.Function1[/* obj */ Wrapper, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("protractorTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ Wrapper, T]]
+  ): js.Function1[/* obj */ DataHookWrapper, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("protractorTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ DataHookWrapper, T]]
   
   inline def protractorUniTestkitFactoryCreator[T /* <: BaseUniDriver */](
     driverFactory: js.Function3[/* base */ UniDriver[Any], /* body */ UniDriver[Any], /* options */ DataHookString, T]

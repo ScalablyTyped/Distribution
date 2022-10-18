@@ -1,8 +1,8 @@
 package typings.vscodeJsonrpc.mod
 
-import typings.vscodeJsonrpc.messageWriterMod.MessageWriterOptions
-import typings.vscodeJsonrpc.ralMod.RAL.MessageBufferEncoding
-import typings.vscodeJsonrpc.ralMod.RAL.WritableStream
+import typings.vscodeJsonrpc.libCommonMessageWriterMod.MessageWriterOptions
+import typings.vscodeJsonrpc.libCommonRalMod.RAL.MessageBufferEncoding
+import typings.vscodeJsonrpc.libCommonRalMod.RAL.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-jsonrpc", "WriteableStreamMessageWriter")
 @js.native
 open class WriteableStreamMessageWriter protected ()
-  extends typings.vscodeJsonrpc.messageWriterMod.WriteableStreamMessageWriter {
+  extends typings.vscodeJsonrpc.libCommonMessageWriterMod.WriteableStreamMessageWriter {
   def this(writable: WritableStream) = this()
   def this(writable: WritableStream, options: MessageWriterOptions) = this()
   def this(writable: WritableStream, options: MessageBufferEncoding) = this()

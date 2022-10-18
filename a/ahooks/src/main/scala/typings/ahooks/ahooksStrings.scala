@@ -1,8 +1,8 @@
 package typings.ahooks
 
-import typings.ahooks.useDocumentVisibilityMod._VisibilityState
-import typings.ahooks.useExternalMod.Status
-import typings.ahooks.useKeyPressMod.KeyEvent
+import typings.ahooks.libUseDocumentVisibilityMod._VisibilityState
+import typings.ahooks.libUseExternalMod.Status
+import typings.ahooks.libUseKeyPressMod.KeyEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

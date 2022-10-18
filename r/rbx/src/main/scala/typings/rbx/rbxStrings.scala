@@ -67,46 +67,6 @@ object rbxStrings {
   inline def `9by16`: `9by16` = "9by16".asInstanceOf[`9by16`]
   
   @js.native
-  sealed trait ColumnGroupPropsBackgroundColor extends StObject
-  inline def ColumnGroupPropsBackgroundColor: ColumnGroupPropsBackgroundColor = "ColumnGroupPropsBackgroundColor".asInstanceOf[ColumnGroupPropsBackgroundColor]
-  
-  @js.native
-  sealed trait ForwardRefAsExoticComponent extends StObject
-  inline def ForwardRefAsExoticComponent: ForwardRefAsExoticComponent = "ForwardRefAsExoticComponent".asInstanceOf[ForwardRefAsExoticComponent]
-  
-  @js.native
-  sealed trait PickBadgeHelpersPropsFloa extends StObject
-  inline def PickBadgeHelpersPropsFloa: PickBadgeHelpersPropsFloa = "PickBadgeHelpersPropsFloa".asInstanceOf[PickBadgeHelpersPropsFloa]
-  
-  @js.native
-  sealed trait PickBadgeHelpersPropsFloaBackgroundColor extends StObject
-  inline def PickBadgeHelpersPropsFloaBackgroundColor: PickBadgeHelpersPropsFloaBackgroundColor = "PickBadgeHelpersPropsFloaBackgroundColor".asInstanceOf[PickBadgeHelpersPropsFloaBackgroundColor]
-  
-  @js.native
-  sealed trait PickDropdownContainerProp extends StObject
-  inline def PickDropdownContainerProp: PickDropdownContainerProp = "PickDropdownContainerProp".asInstanceOf[PickDropdownContainerProp]
-  
-  @js.native
-  sealed trait PickNavbarContainerPropsf extends StObject
-  inline def PickNavbarContainerPropsf: PickNavbarContainerPropsf = "PickNavbarContainerPropsf".asInstanceOf[PickNavbarContainerPropsf]
-  
-  @js.native
-  sealed trait PickNavbarItemContainerPr extends StObject
-  inline def PickNavbarItemContainerPr: PickNavbarItemContainerPr = "PickNavbarItemContainerPr".asInstanceOf[PickNavbarItemContainerPr]
-  
-  @js.native
-  sealed trait PickNavbarItemContainerPrActive extends StObject
-  inline def PickNavbarItemContainerPrActive: PickNavbarItemContainerPrActive = "PickNavbarItemContainerPrActive".asInstanceOf[PickNavbarItemContainerPrActive]
-  
-  @js.native
-  sealed trait PreferHelpersPropsOverridBackgroundColor extends StObject
-  inline def PreferHelpersPropsOverridBackgroundColor: PreferHelpersPropsOverridBackgroundColor = "PreferHelpersPropsOverridBackgroundColor".asInstanceOf[PreferHelpersPropsOverridBackgroundColor]
-  
-  @js.native
-  sealed trait PreferHelpersPropsOverridBadge extends StObject
-  inline def PreferHelpersPropsOverridBadge: PreferHelpersPropsOverridBadge = "PreferHelpersPropsOverridBadge".asInstanceOf[PreferHelpersPropsOverridBadge]
-  
-  @js.native
   sealed trait active extends StObject
   inline def active: active = "active".asInstanceOf[active]
   

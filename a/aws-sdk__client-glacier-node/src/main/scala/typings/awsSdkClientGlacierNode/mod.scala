@@ -44,119 +44,119 @@ object mod {
   @JSImport("@aws-sdk/client-glacier-node", "AbortMultipartUploadCommand")
   @js.native
   open class AbortMultipartUploadCommand protected ()
-    extends typings.awsSdkClientGlacierNode.abortMultipartUploadCommandMod.AbortMultipartUploadCommand {
+    extends typings.awsSdkClientGlacierNode.commandsAbortMultipartUploadCommandMod.AbortMultipartUploadCommand {
     def this(input: AbortMultipartUploadInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "AbortVaultLockCommand")
   @js.native
   open class AbortVaultLockCommand protected ()
-    extends typings.awsSdkClientGlacierNode.abortVaultLockCommandMod.AbortVaultLockCommand {
+    extends typings.awsSdkClientGlacierNode.commandsAbortVaultLockCommandMod.AbortVaultLockCommand {
     def this(input: AbortVaultLockInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "AddTagsToVaultCommand")
   @js.native
   open class AddTagsToVaultCommand protected ()
-    extends typings.awsSdkClientGlacierNode.addTagsToVaultCommandMod.AddTagsToVaultCommand {
+    extends typings.awsSdkClientGlacierNode.commandsAddTagsToVaultCommandMod.AddTagsToVaultCommand {
     def this(input: AddTagsToVaultInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "CompleteMultipartUploadCommand")
   @js.native
   open class CompleteMultipartUploadCommand protected ()
-    extends typings.awsSdkClientGlacierNode.completeMultipartUploadCommandMod.CompleteMultipartUploadCommand {
+    extends typings.awsSdkClientGlacierNode.commandsCompleteMultipartUploadCommandMod.CompleteMultipartUploadCommand {
     def this(input: CompleteMultipartUploadInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "CompleteVaultLockCommand")
   @js.native
   open class CompleteVaultLockCommand protected ()
-    extends typings.awsSdkClientGlacierNode.completeVaultLockCommandMod.CompleteVaultLockCommand {
+    extends typings.awsSdkClientGlacierNode.commandsCompleteVaultLockCommandMod.CompleteVaultLockCommand {
     def this(input: CompleteVaultLockInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "CreateVaultCommand")
   @js.native
   open class CreateVaultCommand protected ()
-    extends typings.awsSdkClientGlacierNode.createVaultCommandMod.CreateVaultCommand {
+    extends typings.awsSdkClientGlacierNode.commandsCreateVaultCommandMod.CreateVaultCommand {
     def this(input: CreateVaultInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "DeleteArchiveCommand")
   @js.native
   open class DeleteArchiveCommand protected ()
-    extends typings.awsSdkClientGlacierNode.deleteArchiveCommandMod.DeleteArchiveCommand {
+    extends typings.awsSdkClientGlacierNode.commandsDeleteArchiveCommandMod.DeleteArchiveCommand {
     def this(input: DeleteArchiveInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "DeleteVaultAccessPolicyCommand")
   @js.native
   open class DeleteVaultAccessPolicyCommand protected ()
-    extends typings.awsSdkClientGlacierNode.deleteVaultAccessPolicyCommandMod.DeleteVaultAccessPolicyCommand {
+    extends typings.awsSdkClientGlacierNode.commandsDeleteVaultAccessPolicyCommandMod.DeleteVaultAccessPolicyCommand {
     def this(input: DeleteVaultAccessPolicyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "DeleteVaultCommand")
   @js.native
   open class DeleteVaultCommand protected ()
-    extends typings.awsSdkClientGlacierNode.deleteVaultCommandMod.DeleteVaultCommand {
+    extends typings.awsSdkClientGlacierNode.commandsDeleteVaultCommandMod.DeleteVaultCommand {
     def this(input: DeleteVaultInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "DeleteVaultNotificationsCommand")
   @js.native
   open class DeleteVaultNotificationsCommand protected ()
-    extends typings.awsSdkClientGlacierNode.deleteVaultNotificationsCommandMod.DeleteVaultNotificationsCommand {
+    extends typings.awsSdkClientGlacierNode.commandsDeleteVaultNotificationsCommandMod.DeleteVaultNotificationsCommand {
     def this(input: DeleteVaultNotificationsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "DescribeJobCommand")
   @js.native
   open class DescribeJobCommand protected ()
-    extends typings.awsSdkClientGlacierNode.describeJobCommandMod.DescribeJobCommand {
+    extends typings.awsSdkClientGlacierNode.commandsDescribeJobCommandMod.DescribeJobCommand {
     def this(input: DescribeJobInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "DescribeVaultCommand")
   @js.native
   open class DescribeVaultCommand protected ()
-    extends typings.awsSdkClientGlacierNode.describeVaultCommandMod.DescribeVaultCommand {
+    extends typings.awsSdkClientGlacierNode.commandsDescribeVaultCommandMod.DescribeVaultCommand {
     def this(input: DescribeVaultInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "GetDataRetrievalPolicyCommand")
   @js.native
   open class GetDataRetrievalPolicyCommand protected ()
-    extends typings.awsSdkClientGlacierNode.getDataRetrievalPolicyCommandMod.GetDataRetrievalPolicyCommand {
+    extends typings.awsSdkClientGlacierNode.commandsGetDataRetrievalPolicyCommandMod.GetDataRetrievalPolicyCommand {
     def this(input: GetDataRetrievalPolicyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "GetJobOutputCommand")
   @js.native
   open class GetJobOutputCommand protected ()
-    extends typings.awsSdkClientGlacierNode.getJobOutputCommandMod.GetJobOutputCommand {
+    extends typings.awsSdkClientGlacierNode.commandsGetJobOutputCommandMod.GetJobOutputCommand {
     def this(input: GetJobOutputInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "GetVaultAccessPolicyCommand")
   @js.native
   open class GetVaultAccessPolicyCommand protected ()
-    extends typings.awsSdkClientGlacierNode.getVaultAccessPolicyCommandMod.GetVaultAccessPolicyCommand {
+    extends typings.awsSdkClientGlacierNode.commandsGetVaultAccessPolicyCommandMod.GetVaultAccessPolicyCommand {
     def this(input: GetVaultAccessPolicyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "GetVaultLockCommand")
   @js.native
   open class GetVaultLockCommand protected ()
-    extends typings.awsSdkClientGlacierNode.getVaultLockCommandMod.GetVaultLockCommand {
+    extends typings.awsSdkClientGlacierNode.commandsGetVaultLockCommandMod.GetVaultLockCommand {
     def this(input: GetVaultLockInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "GetVaultNotificationsCommand")
   @js.native
   open class GetVaultNotificationsCommand protected ()
-    extends typings.awsSdkClientGlacierNode.getVaultNotificationsCommandMod.GetVaultNotificationsCommand {
+    extends typings.awsSdkClientGlacierNode.commandsGetVaultNotificationsCommandMod.GetVaultNotificationsCommand {
     def this(input: GetVaultNotificationsInput) = this()
   }
   
@@ -177,112 +177,112 @@ object mod {
   @JSImport("@aws-sdk/client-glacier-node", "InitiateJobCommand")
   @js.native
   open class InitiateJobCommand protected ()
-    extends typings.awsSdkClientGlacierNode.initiateJobCommandMod.InitiateJobCommand {
+    extends typings.awsSdkClientGlacierNode.commandsInitiateJobCommandMod.InitiateJobCommand {
     def this(input: InitiateJobInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "InitiateMultipartUploadCommand")
   @js.native
   open class InitiateMultipartUploadCommand protected ()
-    extends typings.awsSdkClientGlacierNode.initiateMultipartUploadCommandMod.InitiateMultipartUploadCommand {
+    extends typings.awsSdkClientGlacierNode.commandsInitiateMultipartUploadCommandMod.InitiateMultipartUploadCommand {
     def this(input: InitiateMultipartUploadInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "InitiateVaultLockCommand")
   @js.native
   open class InitiateVaultLockCommand protected ()
-    extends typings.awsSdkClientGlacierNode.initiateVaultLockCommandMod.InitiateVaultLockCommand {
+    extends typings.awsSdkClientGlacierNode.commandsInitiateVaultLockCommandMod.InitiateVaultLockCommand {
     def this(input: InitiateVaultLockInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "ListJobsCommand")
   @js.native
   open class ListJobsCommand protected ()
-    extends typings.awsSdkClientGlacierNode.listJobsCommandMod.ListJobsCommand {
+    extends typings.awsSdkClientGlacierNode.commandsListJobsCommandMod.ListJobsCommand {
     def this(input: ListJobsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "ListMultipartUploadsCommand")
   @js.native
   open class ListMultipartUploadsCommand protected ()
-    extends typings.awsSdkClientGlacierNode.listMultipartUploadsCommandMod.ListMultipartUploadsCommand {
+    extends typings.awsSdkClientGlacierNode.commandsListMultipartUploadsCommandMod.ListMultipartUploadsCommand {
     def this(input: ListMultipartUploadsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "ListPartsCommand")
   @js.native
   open class ListPartsCommand protected ()
-    extends typings.awsSdkClientGlacierNode.listPartsCommandMod.ListPartsCommand {
+    extends typings.awsSdkClientGlacierNode.commandsListPartsCommandMod.ListPartsCommand {
     def this(input: ListPartsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "ListProvisionedCapacityCommand")
   @js.native
   open class ListProvisionedCapacityCommand protected ()
-    extends typings.awsSdkClientGlacierNode.listProvisionedCapacityCommandMod.ListProvisionedCapacityCommand {
+    extends typings.awsSdkClientGlacierNode.commandsListProvisionedCapacityCommandMod.ListProvisionedCapacityCommand {
     def this(input: ListProvisionedCapacityInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "ListTagsForVaultCommand")
   @js.native
   open class ListTagsForVaultCommand protected ()
-    extends typings.awsSdkClientGlacierNode.listTagsForVaultCommandMod.ListTagsForVaultCommand {
+    extends typings.awsSdkClientGlacierNode.commandsListTagsForVaultCommandMod.ListTagsForVaultCommand {
     def this(input: ListTagsForVaultInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "ListVaultsCommand")
   @js.native
   open class ListVaultsCommand protected ()
-    extends typings.awsSdkClientGlacierNode.listVaultsCommandMod.ListVaultsCommand {
+    extends typings.awsSdkClientGlacierNode.commandsListVaultsCommandMod.ListVaultsCommand {
     def this(input: ListVaultsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "PurchaseProvisionedCapacityCommand")
   @js.native
   open class PurchaseProvisionedCapacityCommand protected ()
-    extends typings.awsSdkClientGlacierNode.purchaseProvisionedCapacityCommandMod.PurchaseProvisionedCapacityCommand {
+    extends typings.awsSdkClientGlacierNode.commandsPurchaseProvisionedCapacityCommandMod.PurchaseProvisionedCapacityCommand {
     def this(input: PurchaseProvisionedCapacityInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "RemoveTagsFromVaultCommand")
   @js.native
   open class RemoveTagsFromVaultCommand protected ()
-    extends typings.awsSdkClientGlacierNode.removeTagsFromVaultCommandMod.RemoveTagsFromVaultCommand {
+    extends typings.awsSdkClientGlacierNode.commandsRemoveTagsFromVaultCommandMod.RemoveTagsFromVaultCommand {
     def this(input: RemoveTagsFromVaultInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "SetDataRetrievalPolicyCommand")
   @js.native
   open class SetDataRetrievalPolicyCommand protected ()
-    extends typings.awsSdkClientGlacierNode.setDataRetrievalPolicyCommandMod.SetDataRetrievalPolicyCommand {
+    extends typings.awsSdkClientGlacierNode.commandsSetDataRetrievalPolicyCommandMod.SetDataRetrievalPolicyCommand {
     def this(input: SetDataRetrievalPolicyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "SetVaultAccessPolicyCommand")
   @js.native
   open class SetVaultAccessPolicyCommand protected ()
-    extends typings.awsSdkClientGlacierNode.setVaultAccessPolicyCommandMod.SetVaultAccessPolicyCommand {
+    extends typings.awsSdkClientGlacierNode.commandsSetVaultAccessPolicyCommandMod.SetVaultAccessPolicyCommand {
     def this(input: SetVaultAccessPolicyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "SetVaultNotificationsCommand")
   @js.native
   open class SetVaultNotificationsCommand protected ()
-    extends typings.awsSdkClientGlacierNode.setVaultNotificationsCommandMod.SetVaultNotificationsCommand {
+    extends typings.awsSdkClientGlacierNode.commandsSetVaultNotificationsCommandMod.SetVaultNotificationsCommand {
     def this(input: SetVaultNotificationsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "UploadArchiveCommand")
   @js.native
   open class UploadArchiveCommand protected ()
-    extends typings.awsSdkClientGlacierNode.uploadArchiveCommandMod.UploadArchiveCommand {
+    extends typings.awsSdkClientGlacierNode.commandsUploadArchiveCommandMod.UploadArchiveCommand {
     def this(input: UploadArchiveInput[Readable]) = this()
   }
   
   @JSImport("@aws-sdk/client-glacier-node", "UploadMultipartPartCommand")
   @js.native
   open class UploadMultipartPartCommand protected ()
-    extends typings.awsSdkClientGlacierNode.uploadMultipartPartCommandMod.UploadMultipartPartCommand {
+    extends typings.awsSdkClientGlacierNode.commandsUploadMultipartPartCommandMod.UploadMultipartPartCommand {
     def this(input: UploadMultipartPartInput[Readable]) = this()
   }
   

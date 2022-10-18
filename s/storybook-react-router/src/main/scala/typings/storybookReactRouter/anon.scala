@@ -1,7 +1,7 @@
 package typings.storybookReactRouter
 
-import typings.reactRouter.mod.MemoryRouterProps
-import typings.storybookAddons.typesMod.StoryApi
+import typings.reactRouter.distLibComponentsMod.MemoryRouterProps
+import typings.storybookAddons.distTs3Dot9TypesMod.StoryApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +14,11 @@ object anon {
     
     var routerProps: MemoryRouterProps
     
-    var story: StoryApi[js.Any]
+    var story: StoryApi[Any]
   }
   object Links {
     
-    inline def apply(links: js.Object, routerProps: MemoryRouterProps, story: StoryApi[js.Any]): Links = {
+    inline def apply(links: js.Object, routerProps: MemoryRouterProps, story: StoryApi[Any]): Links = {
       val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], routerProps = routerProps.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
       __obj.asInstanceOf[Links]
     }
@@ -29,7 +29,7 @@ object anon {
       
       inline def setRouterProps(value: MemoryRouterProps): Self = StObject.set(x, "routerProps", value.asInstanceOf[js.Any])
       
-      inline def setStory(value: StoryApi[js.Any]): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
+      inline def setStory(value: StoryApi[Any]): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
     }
   }
 }

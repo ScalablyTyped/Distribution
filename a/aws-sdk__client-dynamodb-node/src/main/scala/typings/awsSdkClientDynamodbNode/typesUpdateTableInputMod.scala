@@ -1,12 +1,12 @@
 package typings.awsSdkClientDynamodbNode
 
-import typings.awsSdkClientDynamodbNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbNode.typesAttributeDefinitionMod.AttributeDefinition
 import typings.awsSdkClientDynamodbNode.typesGlobalSecondaryIndexUpdateMod.GlobalSecondaryIndexUpdate
+import typings.awsSdkClientDynamodbNode.typesInputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbNode.typesProvisionedThroughputMod.ProvisionedThroughput
 import typings.awsSdkClientDynamodbNode.typesSsespecificationMod.SSESpecification
 import typings.awsSdkClientDynamodbNode.typesStreamSpecificationMod.StreamSpecification
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

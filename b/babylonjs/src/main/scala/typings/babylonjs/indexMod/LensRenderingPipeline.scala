@@ -41,13 +41,13 @@ open class LensRenderingPipeline protected ()
     parameters: Any,
     scene: typings.babylonjs.sceneMod.Scene,
     ratio: Double,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera]
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
   def this(
     name: String,
     parameters: Any,
     scene: typings.babylonjs.sceneMod.Scene,
     ratio: Unit,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera]
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
 }

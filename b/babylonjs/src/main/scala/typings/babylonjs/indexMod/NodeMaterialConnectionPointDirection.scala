@@ -10,10 +10,10 @@ object NodeMaterialConnectionPointDirection extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection & Double
+    typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection & Double
   ] = js.native
   
-  /* 0 */ val Input: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection.Input & Double = js.native
+  /* 0 */ val Input: typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection.Input & Double = js.native
   
-  /* 1 */ val Output: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection.Output & Double = js.native
+  /* 1 */ val Output: typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection.Output & Double = js.native
 }

@@ -1,6 +1,6 @@
 package typings.lyricist.mod
 
-import typings.lyricist.anon.ExcludedpermissionsInteractions
+import typings.lyricist.anon.Excludedpermissions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ trait Album extends StObject {
   
   var cover_arts: js.Array[Any]
   
-  var current_user_metadata: ExcludedpermissionsInteractions
+  var current_user_metadata: Excludedpermissions
   
   var custom_header_image_url: js.UndefOr[Any] = js.undefined
   
@@ -56,7 +56,7 @@ object Album {
     comment_count: Double,
     cover_art_url: String,
     cover_arts: js.Array[Any],
-    current_user_metadata: ExcludedpermissionsInteractions,
+    current_user_metadata: Excludedpermissions,
     description_annotation: DescriptionAnnotation,
     full_title: String,
     header_image_url: String,
@@ -87,7 +87,7 @@ object Album {
     
     inline def setCover_artsVarargs(value: Any*): Self = StObject.set(x, "cover_arts", js.Array(value*))
     
-    inline def setCurrent_user_metadata(value: ExcludedpermissionsInteractions): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
+    inline def setCurrent_user_metadata(value: Excludedpermissions): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
     
     inline def setCustom_header_image_url(value: Any): Self = StObject.set(x, "custom_header_image_url", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def extract(): Transform[js.typedarray.Uint8Array, TarEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")().asInstanceOf[Transform[js.typedarray.Uint8Array, TarEntry]]
-  inline def extract(options: typings.itTar.extractMod.ExtractOptions): Transform[js.typedarray.Uint8Array, TarEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[Transform[js.typedarray.Uint8Array, TarEntry]]
+  inline def extract(options: typings.itTar.distSrcExtractMod.ExtractOptions): Transform[js.typedarray.Uint8Array, TarEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[Transform[js.typedarray.Uint8Array, TarEntry]]
   
   inline def pack(): Transform[TarImportCandidate, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")().asInstanceOf[Transform[TarImportCandidate, js.typedarray.Uint8Array]]
   

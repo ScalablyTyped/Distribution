@@ -21,8 +21,8 @@ inline def levels: Levels_ = ^.asInstanceOf[js.Dynamic].selectDynamic("levels").
 
 inline def recording(): Recording_ = ^.asInstanceOf[js.Dynamic].applyDynamic("recording")().asInstanceOf[Recording_]
 
-inline def shutdown(): Unit | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Unit | Null]
-inline def shutdown(cb: js.Function1[/* error */ js.Error, Unit]): Unit | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit | Null]
+inline def shutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Unit]
+inline def shutdown(cb: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 type AppenderFunction = js.Function1[/* loggingEvent */ LoggingEvent, Unit]
 

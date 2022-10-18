@@ -1,11 +1,11 @@
 package typings.popperjsCore.anon
 
-import typings.popperjsCore.computeStylesMod.RoundOffsets
-import typings.popperjsCore.enumsMod.BasePlacement
-import typings.popperjsCore.enumsMod.Variation
-import typings.popperjsCore.typesMod.Offsets
-import typings.popperjsCore.typesMod.PositioningStrategy
-import typings.popperjsCore.typesMod.Rect
+import typings.popperjsCore.libEnumsMod.BasePlacement
+import typings.popperjsCore.libEnumsMod.Variation
+import typings.popperjsCore.libModifiersComputeStylesMod.RoundOffsets
+import typings.popperjsCore.libTypesMod.Offsets
+import typings.popperjsCore.libTypesMod.PositioningStrategy
+import typings.popperjsCore.libTypesMod.Rect
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

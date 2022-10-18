@@ -1,30 +1,25 @@
 package typings.styledComponents.anon
 
-import typings.react.mod.ComponentProps
-import typings.styledComponents.nativeDistTypesMod.ExecutionContext
-import typings.styledComponents.nativeDistTypesMod.ExtensibleObject
-import typings.styledComponents.nativeDistTypesMod.IStyledComponent
-import typings.styledComponents.nativeDistTypesMod.Interpolation
-import typings.styledComponents.nativeDistTypesMod.NativeTarget
-import typings.styledComponents.nativeDistTypesMod.StyledOptions
-import typings.styledComponents.nativeDistTypesMod.Styles
-import typings.styledComponents.styledComponentsStrings.native
+import typings.styledComponents.nativeDistDistTypesMod.StyledTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `173`[Target /* <: NativeTarget */] extends StObject {
+trait `173`[ActualComponent /* <: StyledTarget */] extends StObject {
   
-  def apply[Props /* <: js.Object */, Statics](
-    initialStyles: Styles[(Any | ComponentProps[Target]) & Props],
-    interpolations: (Interpolation[ExecutionContext & (Any | ComponentProps[Target]) & Props])*
-  ): (IStyledComponent[native, Target, (Any | ComponentProps[Target]) & Props]) & Statics = js.native
+  var as: js.UndefOr[ActualComponent] = js.undefined
+}
+object `173` {
   
-  def attrs(
-    attrs: typings.styledComponents.nativeDistTypesMod.Attrs[ExtensibleObject & (Any | ComponentProps[Target])]
-  ): Any = js.native
+  inline def apply[ActualComponent /* <: StyledTarget */](): `173`[ActualComponent] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`173`[ActualComponent]]
+  }
   
-  @JSName("withConfig")
-  def withConfig_native(config: StyledOptions[native, Any | ComponentProps[Target]]): Any = js.native
+  extension [Self <: `173`[?], ActualComponent /* <: StyledTarget */](x: Self & `173`[ActualComponent]) {
+    
+    inline def setAs(value: ActualComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+  }
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param priority defines the priority of this optimization (0 by default which means first in the list)
   */
 open class CustomOptimization ()
-  extends typings.babylonjs.legacyMod.CustomOptimization {
+  extends typings.babylonjs.legacyLegacyMod.CustomOptimization {
   def this(/**
     * Defines the priority of this optimization (0 by default which means first in the list)
     */

@@ -2,8 +2,8 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.ReadonlyICheckboxProps
 import typings.officeUiFabricReact.anon.ReadonlyICheckboxState
-import typings.officeUiFabricReact.checkboxBaseMod.ICheckboxState
-import typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps
+import typings.officeUiFabricReact.libComponentsCheckboxCheckboxDotbaseMod.ICheckboxState
+import typings.officeUiFabricReact.libComponentsCheckboxCheckboxDottypesMod.ICheckboxProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +18,7 @@ object libCheckboxMod {
   @JSImport("office-ui-fabric-react/lib/Checkbox", "CheckboxBase")
   @js.native
   open class CheckboxBase protected ()
-    extends typings.officeUiFabricReact.checkboxMod.CheckboxBase {
+    extends typings.officeUiFabricReact.libComponentsCheckboxMod.CheckboxBase {
     /**
       * Initialize a new instance of the Checkbox
       * @param props - Props for the component

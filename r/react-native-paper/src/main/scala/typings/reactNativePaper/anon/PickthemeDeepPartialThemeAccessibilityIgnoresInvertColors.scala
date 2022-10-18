@@ -6,27 +6,33 @@ import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.GestureResponderEvent
+import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
+import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
+import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSource
 import typings.reactNativePaper.reactNativePaperStrings.`box-none`
 import typings.reactNativePaper.reactNativePaperStrings.`box-only`
 import typings.reactNativePaper.reactNativePaperStrings.`no-hide-descendants`
 import typings.reactNativePaper.reactNativePaperStrings.assertive
 import typings.reactNativePaper.reactNativePaperStrings.auto
+import typings.reactNativePaper.reactNativePaperStrings.contained
 import typings.reactNativePaper.reactNativePaperStrings.no
 import typings.reactNativePaper.reactNativePaperStrings.none
+import typings.reactNativePaper.reactNativePaperStrings.outlined
 import typings.reactNativePaper.reactNativePaperStrings.polite
+import typings.reactNativePaper.reactNativePaperStrings.text
 import typings.reactNativePaper.reactNativePaperStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<{  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined,   children :react.react.ReactNode | undefined,   dark :boolean | undefined,   statusBarHeight :number | undefined,   children :react.react.ReactNode,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined} & std.Pick<std.Partial<react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View>> & {  dark :boolean | undefined,   children :react.react.ReactNode,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined}, keyof react-native.react-native.ViewProps | 'dark' | keyof react.react.RefAttributes<react-native.react-native.View>>, keyof react-native.react-native.ViewProps | 'dark' | keyof react.react.RefAttributes<react-native.react-native.View> | 'statusBarHeight'> & {  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined} */
+/* Inlined std.Pick<{  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined,   mode :'text' | 'outlined' | 'contained' | undefined,   dark :boolean | undefined,   compact :boolean | undefined,   color :string | undefined,   loading :boolean | undefined,   icon :react-native-paper.react-native-paper/lib/typescript/components/Icon.IconSource | undefined,   disabled :boolean | undefined,   children :react.react.ReactNode,   uppercase :boolean | undefined,   accessibilityLabel :string | undefined,   accessibilityHint :string | undefined,   onPress :(): void | undefined,   onLongPress :(): void | undefined,   contentStyle :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   labelStyle :react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme,   testID :string | undefined} & std.Pick<react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  children :react.react.ReactNode,   style :false | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle> | react-native.react-native.Animated.Value | react-native.react-native.Animated.AnimatedInterpolation<number | string> | react-native.react-native.Animated.WithAnimatedObject<react-native.react-native.ViewStyle> | react-native.react-native.Animated.WithAnimatedArray<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle> | react-native.react-native.RecursiveArray<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle>> | std.Array<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle>>> | null | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme}, keyof react-native.react-native.ViewProps | keyof react.react.RefAttributes<react-native.react-native.View>>, 'color' | 'onPress' | 'onLongPress' | 'icon' | keyof react-native.react-native.ViewProps | 'dark' | keyof react.react.RefAttributes<react-native.react-native.View> | 'mode' | 'uppercase' | 'labelStyle' | 'disabled' | 'compact' | 'loading' | 'contentStyle'> & {  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined} */
 trait PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors extends StObject {
   
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
@@ -59,7 +65,15 @@ trait PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors extends StObject
   
   var collapsable: js.UndefOr[Boolean] = js.undefined
   
+  var color: js.UndefOr[String] = js.undefined
+  
+  var compact: js.UndefOr[Boolean] = js.undefined
+  
+  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  
   var dark: js.UndefOr[Boolean] = js.undefined
+  
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   var focusable: js.UndefOr[Boolean] = js.undefined
   
@@ -67,11 +81,19 @@ trait PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors extends StObject
   
   var hitSlop: js.UndefOr[Insets] = js.undefined
   
+  var icon: js.UndefOr[IconSource] = js.undefined
+  
   var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
   
   var isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
   var key: js.UndefOr[typings.react.mod.Key | Null] = js.undefined
+  
+  var labelStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  
+  var loading: js.UndefOr[Boolean] = js.undefined
+  
+  var mode: js.UndefOr[text | outlined | contained] = js.undefined
   
   var nativeID: js.UndefOr[String] = js.undefined
   
@@ -84,6 +106,8 @@ trait PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors extends StObject
   var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
+  
+  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -114,6 +138,8 @@ trait PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors extends StObject
   var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
   var onPointerUpCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
@@ -155,8 +181,6 @@ trait PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors extends StObject
   
   var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
   
-  var statusBarHeight: js.UndefOr[Double] = js.undefined
-  
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var testID: js.UndefOr[String] = js.undefined
@@ -172,6 +196,8 @@ trait PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors extends StObject
   var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
   
   var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
+  
+  var uppercase: js.UndefOr[Boolean] = js.undefined
 }
 object PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors {
   
@@ -246,9 +272,27 @@ object PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors {
     
     inline def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
     
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+    
+    inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+    
+    inline def setContentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+    
+    inline def setContentStyleNull: Self = StObject.set(x, "contentStyle", null)
+    
+    inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+    
     inline def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
     inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
@@ -261,6 +305,14 @@ object PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors {
     inline def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
     
     inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
+    
+    inline def setIcon(value: IconSource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconFunction1(value: /* props */ IconPropscolorstring => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setIconVarargs(value: ImageURISource*): Self = StObject.set(x, "icon", js.Array(value*))
     
     inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
@@ -275,6 +327,20 @@ object PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors {
     inline def setKeyNull: Self = StObject.set(x, "key", null)
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLabelStyleNull: Self = StObject.set(x, "labelStyle", null)
+    
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    
+    inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    
+    inline def setMode(value: text | outlined | contained): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     inline def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
     
@@ -299,6 +365,10 @@ object PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors {
     inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
     
     inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
+    
+    inline def setOnLongPress(value: () => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction0(value))
+    
+    inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
     
     inline def setOnMagicTap(value: () => Unit): Self = StObject.set(x, "onMagicTap", js.Any.fromFunction0(value))
     
@@ -359,6 +429,10 @@ object PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors {
     inline def setOnPointerUpCaptureUndefined: Self = StObject.set(x, "onPointerUpCapture", js.undefined)
     
     inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
+    
+    inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+    
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     inline def setOnResponderEnd(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderEnd", js.Any.fromFunction1(value))
     
@@ -444,10 +518,6 @@ object PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors {
     
     inline def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
     
-    inline def setStatusBarHeight(value: Double): Self = StObject.set(x, "statusBarHeight", value.asInstanceOf[js.Any])
-    
-    inline def setStatusBarHeightUndefined: Self = StObject.set(x, "statusBarHeight", js.undefined)
-    
     inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleNull: Self = StObject.set(x, "style", null)
@@ -481,5 +551,9 @@ object PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors {
     inline def setTvParallaxTiltAngle(value: Double): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
+    
+    inline def setUppercase(value: Boolean): Self = StObject.set(x, "uppercase", value.asInstanceOf[js.Any])
+    
+    inline def setUppercaseUndefined: Self = StObject.set(x, "uppercase", js.undefined)
   }
 }

@@ -3,8 +3,8 @@ package typings.ethereumjsWallet
 import typings.ethereumjsWallet.anon.Cipher
 import typings.ethereumjsWallet.anon.CipherText
 import typings.ethereumjsWallet.anon.PartialV3Params
-import typings.ethereumjsWallet.hdkeyMod.EthereumHDKey
-import typings.ethereumjsWallet.thirdpartyMod.EtherWalletOptions
+import typings.ethereumjsWallet.distHdkeyMod.EthereumHDKey
+import typings.ethereumjsWallet.distThirdpartyMod.EtherWalletOptions
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -93,7 +93,7 @@ object mod {
   @JSImport("ethereumjs-wallet", "hdkey")
   @js.native
   open class hdkey ()
-    extends typings.ethereumjsWallet.hdkeyMod.default {
+    extends typings.ethereumjsWallet.distHdkeyMod.default {
     def this(_hdkey: Any) = this()
   }
   /* static members */

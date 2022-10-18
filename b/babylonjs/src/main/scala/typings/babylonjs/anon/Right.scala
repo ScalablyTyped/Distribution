@@ -1,6 +1,6 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.webXRHandTrackingMod.XRHandMeshRigMapping
+import typings.babylonjs.xRFeaturesWebXRHandTrackingMod.XRHandMeshRigMapping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

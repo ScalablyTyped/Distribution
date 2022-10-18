@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "MessageStoreReadErrorException")
 @js.native
 open class MessageStoreReadErrorException ()
-  extends typings.awsGreengrassCoreSdk.clientMod.MessageStoreReadErrorException
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.MessageStoreReadErrorException

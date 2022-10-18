@@ -7,19 +7,19 @@ import typings.sass.anon.Brackets
 import typings.sass.anon.DenominatorUnits
 import typings.sass.anon.Hue
 import typings.sass.anon.Quotes
-import typings.sass.compileMod.CompileResult
-import typings.sass.functionMod.types.Boolean
-import typings.sass.functionMod.types.Null
-import typings.sass.legacyExceptionMod.LegacyException
-import typings.sass.listMod.ListSeparator
-import typings.sass.optionsMod.LegacyOptions
-import typings.sass.renderMod.LegacyResult
 import typings.sass.sassBooleans.`false`
 import typings.sass.sassBooleans.`true`
 import typings.sass.sassStrings.async
 import typings.sass.sassStrings.sync
+import typings.sass.typesCompileMod.CompileResult
+import typings.sass.typesLegacyExceptionMod.LegacyException
+import typings.sass.typesLegacyFunctionMod.types.Boolean
+import typings.sass.typesLegacyFunctionMod.types.Null
+import typings.sass.typesLegacyOptionsMod.LegacyOptions
+import typings.sass.typesLegacyRenderMod.LegacyResult
 import typings.sass.typesOptionsMod.Options
 import typings.sass.typesOptionsMod.StringOptions
+import typings.sass.typesValueListMod.ListSeparator
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,7 +34,7 @@ object mod {
   @JSImport("sass", "Exception")
   @js.native
   /* private */ open class Exception ()
-    extends typings.sass.exceptionMod.Exception
+    extends typings.sass.typesExceptionMod.Exception
   
   @JSImport("sass", "FALSE")
   @js.native
@@ -44,7 +44,7 @@ object mod {
     
     @JSImport("sass", "Logger.silent")
     @js.native
-    val silent: typings.sass.loggerMod.Logger = js.native
+    val silent: typings.sass.typesLoggerMod.Logger = js.native
   }
   
   @JSImport("sass", "NULL")
@@ -54,10 +54,10 @@ object mod {
   @JSImport("sass", "SassArgumentList")
   @js.native
   open class SassArgumentList protected ()
-    extends typings.sass.valueMod.SassArgumentList {
+    extends typings.sass.typesValueMod.SassArgumentList {
     def this(
-      contents: js.Array[typings.sass.valueMod.Value],
-      keywords: OrderedMap[String, typings.sass.valueMod.Value]
+      contents: js.Array[typings.sass.typesValueMod.Value],
+      keywords: OrderedMap[String, typings.sass.typesValueMod.Value]
     ) = this()
     /**
       * Creates a new argument list.
@@ -75,35 +75,35 @@ object mod {
       * @param separator - The separator for this list. Defaults to `','`.
       */
     def this(
-      contents: js.Array[typings.sass.valueMod.Value],
-      keywords: Record[String, typings.sass.valueMod.Value]
+      contents: js.Array[typings.sass.typesValueMod.Value],
+      keywords: Record[String, typings.sass.typesValueMod.Value]
     ) = this()
     def this(
-      contents: typings.immutable.mod.List[typings.sass.valueMod.Value],
-      keywords: OrderedMap[String, typings.sass.valueMod.Value]
+      contents: typings.immutable.mod.List[typings.sass.typesValueMod.Value],
+      keywords: OrderedMap[String, typings.sass.typesValueMod.Value]
     ) = this()
     def this(
-      contents: typings.immutable.mod.List[typings.sass.valueMod.Value],
-      keywords: Record[String, typings.sass.valueMod.Value]
+      contents: typings.immutable.mod.List[typings.sass.typesValueMod.Value],
+      keywords: Record[String, typings.sass.typesValueMod.Value]
     ) = this()
     def this(
-      contents: js.Array[typings.sass.valueMod.Value],
-      keywords: OrderedMap[String, typings.sass.valueMod.Value],
+      contents: js.Array[typings.sass.typesValueMod.Value],
+      keywords: OrderedMap[String, typings.sass.typesValueMod.Value],
       separator: ListSeparator
     ) = this()
     def this(
-      contents: js.Array[typings.sass.valueMod.Value],
-      keywords: Record[String, typings.sass.valueMod.Value],
+      contents: js.Array[typings.sass.typesValueMod.Value],
+      keywords: Record[String, typings.sass.typesValueMod.Value],
       separator: ListSeparator
     ) = this()
     def this(
-      contents: typings.immutable.mod.List[typings.sass.valueMod.Value],
-      keywords: OrderedMap[String, typings.sass.valueMod.Value],
+      contents: typings.immutable.mod.List[typings.sass.typesValueMod.Value],
+      keywords: OrderedMap[String, typings.sass.typesValueMod.Value],
       separator: ListSeparator
     ) = this()
     def this(
-      contents: typings.immutable.mod.List[typings.sass.valueMod.Value],
-      keywords: Record[String, typings.sass.valueMod.Value],
+      contents: typings.immutable.mod.List[typings.sass.typesValueMod.Value],
+      keywords: Record[String, typings.sass.typesValueMod.Value],
       separator: ListSeparator
     ) = this()
   }
@@ -111,12 +111,12 @@ object mod {
   @JSImport("sass", "SassBoolean")
   @js.native
   /* private */ open class SassBoolean ()
-    extends typings.sass.booleanMod.SassBoolean
+    extends typings.sass.typesValueBooleanMod.SassBoolean
   
   @JSImport("sass", "SassColor")
   @js.native
   open class SassColor protected ()
-    extends typings.sass.colorMod.SassColor {
+    extends typings.sass.typesValueColorMod.SassColor {
     /**
       * Creates an RGB color.
       *
@@ -143,7 +143,7 @@ object mod {
   @JSImport("sass", "SassFunction")
   @js.native
   open class SassFunction protected ()
-    extends typings.sass.valueFunctionMod.SassFunction {
+    extends typings.sass.typesValueFunctionMod.SassFunction {
     /**
       * Creates a new first-class function that can be invoked using
       * [`meta.call()`](https://sass-lang.com/documentation/modules/meta#call).
@@ -155,7 +155,10 @@ object mod {
       */
     def this(
       signature: String,
-      callback: js.Function1[/* args */ js.Array[typings.sass.valueMod.Value], typings.sass.valueMod.Value]
+      callback: js.Function1[
+            /* args */ js.Array[typings.sass.typesValueMod.Value], 
+            typings.sass.typesValueMod.Value
+          ]
     ) = this()
   }
   
@@ -171,7 +174,7 @@ object mod {
     * `false`.
     */
   open class SassList ()
-    extends typings.sass.valueMod.SassList {
+    extends typings.sass.typesValueMod.SassList {
     /**
       * Creates a new list.
       *
@@ -185,11 +188,11 @@ object mod {
       * @param options.brackets - Whether the list has square brackets. Defaults to
       * `false`.
       */
-    def this(contents: js.Array[typings.sass.valueMod.Value]) = this()
-    def this(contents: typings.immutable.mod.List[typings.sass.valueMod.Value]) = this()
+    def this(contents: js.Array[typings.sass.typesValueMod.Value]) = this()
+    def this(contents: typings.immutable.mod.List[typings.sass.typesValueMod.Value]) = this()
     def this(options: Brackets) = this()
-    def this(contents: js.Array[typings.sass.valueMod.Value], options: Brackets) = this()
-    def this(contents: typings.immutable.mod.List[typings.sass.valueMod.Value], options: Brackets) = this()
+    def this(contents: js.Array[typings.sass.typesValueMod.Value], options: Brackets) = this()
+    def this(contents: typings.immutable.mod.List[typings.sass.typesValueMod.Value], options: Brackets) = this()
   }
   
   @JSImport("sass", "SassMap")
@@ -202,14 +205,14 @@ object mod {
     * Defaults to an empty map.
     */
   open class SassMap ()
-    extends typings.sass.mapMod.SassMap {
-    def this(contents: OrderedMap[typings.sass.valueMod.Value, typings.sass.valueMod.Value]) = this()
+    extends typings.sass.typesValueMapMod.SassMap {
+    def this(contents: OrderedMap[typings.sass.typesValueMod.Value, typings.sass.typesValueMod.Value]) = this()
   }
   
   @JSImport("sass", "SassNumber")
   @js.native
   open class SassNumber protected ()
-    extends typings.sass.numberMod.SassNumber {
+    extends typings.sass.typesValueNumberMod.SassNumber {
     /**
       * Creates a new number with more complex units than just a single numerator.
       *
@@ -244,7 +247,7 @@ object mod {
     * @param options.quotes - Whether the string is quoted. Defaults to `true`.
     */
   open class SassString ()
-    extends typings.sass.stringMod.SassString {
+    extends typings.sass.typesValueStringMod.SassString {
     def this(options: Quotes) = this()
     /**
       * Creates a new string.
@@ -264,10 +267,10 @@ object mod {
   @js.native
   val TRUE: Boolean[`true`] = js.native
   
-  @JSImport("sass", "Value")
+  /* note: abstract class */ @JSImport("sass", "Value")
   @js.native
-  /* protected */ abstract class Value ()
-    extends typings.sass.valueMod.Value
+  /* protected */ open class Value ()
+    extends typings.sass.typesValueMod.Value
   
   inline def compile(path: String): CompileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(path.asInstanceOf[js.Any]).asInstanceOf[CompileResult]
   
@@ -302,40 +305,40 @@ object mod {
   
   @JSImport("sass", "sassFalse")
   @js.native
-  val sassFalse: typings.sass.booleanMod.SassBoolean = js.native
+  val sassFalse: typings.sass.typesValueBooleanMod.SassBoolean = js.native
   
   @JSImport("sass", "sassNull")
   @js.native
-  val sassNull: typings.sass.valueMod.Value = js.native
+  val sassNull: typings.sass.typesValueMod.Value = js.native
   
   @JSImport("sass", "sassTrue")
   @js.native
-  val sassTrue: typings.sass.booleanMod.SassBoolean = js.native
+  val sassTrue: typings.sass.typesValueBooleanMod.SassBoolean = js.native
   
   object types {
     
     @JSImport("sass", "types.Boolean")
     @js.native
     open class Boolean[T /* <: scala.Boolean */] ()
-      extends typings.sass.functionMod.types.Boolean[T]
+      extends typings.sass.typesLegacyFunctionMod.types.Boolean[T]
     /* static members */
     object Boolean {
       
       /** Sass's `false` value. */
       @JSImport("sass", "types.Boolean.FALSE")
       @js.native
-      val FALSE: typings.sass.functionMod.types.Boolean[`false`] = js.native
+      val FALSE: typings.sass.typesLegacyFunctionMod.types.Boolean[`false`] = js.native
       
       /** Sass's `true` value. */
       @JSImport("sass", "types.Boolean.TRUE")
       @js.native
-      val TRUE: typings.sass.functionMod.types.Boolean[`true`] = js.native
+      val TRUE: typings.sass.typesLegacyFunctionMod.types.Boolean[`true`] = js.native
     }
     
     @JSImport("sass", "types.Color")
     @js.native
     open class Color protected ()
-      extends typings.sass.functionMod.types.Color {
+      extends typings.sass.typesLegacyFunctionMod.types.Color {
       /**
         * Creates a new Sass color with alpha, red, green, and blue channels taken
         * from respective two-byte chunks of a hexidecimal number.
@@ -367,14 +370,14 @@ object mod {
     @JSImport("sass", "types.Error")
     @js.native
     open class Error protected ()
-      extends typings.sass.functionMod.types.Error {
+      extends typings.sass.typesLegacyFunctionMod.types.Error {
       def this(message: java.lang.String) = this()
     }
     
     @JSImport("sass", "types.List")
     @js.native
     open class List protected ()
-      extends typings.sass.functionMod.types.List {
+      extends typings.sass.typesLegacyFunctionMod.types.List {
       /**
         * Creates a new Sass list.
         *
@@ -403,7 +406,7 @@ object mod {
     @JSImport("sass", "types.Map")
     @js.native
     open class Map protected ()
-      extends typings.sass.functionMod.types.Map {
+      extends typings.sass.typesLegacyFunctionMod.types.Map {
       /**
         * Creates a new Sass map.
         *
@@ -430,20 +433,20 @@ object mod {
     @JSImport("sass", "types.Null")
     @js.native
     open class Null ()
-      extends typings.sass.functionMod.types.Null
+      extends typings.sass.typesLegacyFunctionMod.types.Null
     /* static members */
     object Null {
       
       /** Sass's singleton `null` value. */
       @JSImport("sass", "types.Null.NULL")
       @js.native
-      val NULL: typings.sass.functionMod.types.Null = js.native
+      val NULL: typings.sass.typesLegacyFunctionMod.types.Null = js.native
     }
     
     @JSImport("sass", "types.Number")
     @js.native
     open class Number protected ()
-      extends typings.sass.functionMod.types.Number {
+      extends typings.sass.typesLegacyFunctionMod.types.Number {
       /**
         * @param value - The numeric value of the number.
         *
@@ -473,7 +476,7 @@ object mod {
     @JSImport("sass", "types.String")
     @js.native
     open class String protected ()
-      extends typings.sass.functionMod.types.String {
+      extends typings.sass.typesLegacyFunctionMod.types.String {
       /**
         * Creates an unquoted string with the given contents.
         *

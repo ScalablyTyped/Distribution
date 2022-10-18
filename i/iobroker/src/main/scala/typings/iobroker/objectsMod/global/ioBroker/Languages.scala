@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.iobroker.iobrokerStrings.it
   - typings.iobroker.iobrokerStrings.es
   - typings.iobroker.iobrokerStrings.pl
+  - typings.iobroker.iobrokerStrings.uk
   - typings.iobroker.iobrokerStrings.`zh-cn`
 */
 trait Languages extends StObject
@@ -36,6 +37,8 @@ object Languages {
   inline def pt: typings.iobroker.iobrokerStrings.pt = "pt".asInstanceOf[typings.iobroker.iobrokerStrings.pt]
   
   inline def ru: typings.iobroker.iobrokerStrings.ru = "ru".asInstanceOf[typings.iobroker.iobrokerStrings.ru]
+  
+  inline def uk: typings.iobroker.iobrokerStrings.uk = "uk".asInstanceOf[typings.iobroker.iobrokerStrings.uk]
   
   inline def `zh-cn`: typings.iobroker.iobrokerStrings.`zh-cn` = "zh-cn".asInstanceOf[typings.iobroker.iobrokerStrings.`zh-cn`]
 }

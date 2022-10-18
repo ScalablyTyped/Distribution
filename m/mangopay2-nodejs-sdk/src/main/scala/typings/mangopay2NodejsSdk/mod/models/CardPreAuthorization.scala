@@ -1,16 +1,16 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.baseMod.base.BrowserInfoData
-import typings.mangopay2NodejsSdk.billingMod.billing.BillingData
-import typings.mangopay2NodejsSdk.cardPreauthorizationMod.cardPreAuthorization.CardPreAuthorizationData
-import typings.mangopay2NodejsSdk.cardPreauthorizationMod.cardPreAuthorization.PreAuthorizationExecutionType
-import typings.mangopay2NodejsSdk.cardPreauthorizationMod.cardPreAuthorization.PreAuthorizationStatus
-import typings.mangopay2NodejsSdk.cardPreauthorizationMod.cardPreAuthorization.UpdateCardPreAuthorization
-import typings.mangopay2NodejsSdk.moneyMod.money.MoneyData
-import typings.mangopay2NodejsSdk.securityInfoMod.securityInfo.SecurityInfoData
-import typings.mangopay2NodejsSdk.shippingMod.shipping.ShippingData
-import typings.mangopay2NodejsSdk.typesMod.CountryISO
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
+import typings.mangopay2NodejsSdk.typingsBaseMod.base.BrowserInfoData
+import typings.mangopay2NodejsSdk.typingsModelsBillingMod.billing.BillingData
+import typings.mangopay2NodejsSdk.typingsModelsCardPreauthorizationMod.cardPreAuthorization.CardPreAuthorizationData
+import typings.mangopay2NodejsSdk.typingsModelsCardPreauthorizationMod.cardPreAuthorization.PreAuthorizationExecutionType
+import typings.mangopay2NodejsSdk.typingsModelsCardPreauthorizationMod.cardPreAuthorization.PreAuthorizationStatus
+import typings.mangopay2NodejsSdk.typingsModelsCardPreauthorizationMod.cardPreAuthorization.UpdateCardPreAuthorization
+import typings.mangopay2NodejsSdk.typingsModelsMoneyMod.money.MoneyData
+import typings.mangopay2NodejsSdk.typingsModelsSecurityInfoMod.securityInfo.SecurityInfoData
+import typings.mangopay2NodejsSdk.typingsModelsShippingMod.shipping.ShippingData
+import typings.mangopay2NodejsSdk.typingsTypesMod.CountryISO
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,7 +93,7 @@ open class CardPreAuthorization protected ()
     * The status of the payment after the PreAuthorization. You can pass the PaymentStatus from "WAITING" to "CANCELED" should you need/want to
     */
   /* CompleteClass */
-  var PaymentStatus: typings.mangopay2NodejsSdk.cardPreauthorizationMod.cardPreAuthorization.PaymentStatus = js.native
+  var PaymentStatus: typings.mangopay2NodejsSdk.typingsModelsCardPreauthorizationMod.cardPreAuthorization.PaymentStatus = js.native
   
   /**
     * Value of the funds remaining on a pre-authorization
@@ -119,7 +119,7 @@ open class CardPreAuthorization protected ()
     * "FORCE" (if you wish to specifically force the secured mode).
     */
   /* CompleteClass */
-  var SecureMode: typings.mangopay2NodejsSdk.typesMod.SecureMode = js.native
+  var SecureMode: typings.mangopay2NodejsSdk.typingsTypesMod.SecureMode = js.native
   
   /**
     * The value is 'true' if the SecureMode was used

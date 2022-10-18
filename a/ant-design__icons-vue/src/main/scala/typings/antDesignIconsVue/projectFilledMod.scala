@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsProjectFilledMod.ProjectFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/ProjectFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/ProjectFilled", JSImport.Default)
   @js.native
   val default: ProjectFilledIconType = js.native
-  
-  @js.native
-  trait ProjectFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_ProjectFilledIconType: String = js.native
-  }
   
   type _To = ProjectFilledIconType
   

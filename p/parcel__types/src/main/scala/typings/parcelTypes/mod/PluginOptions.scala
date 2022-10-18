@@ -1,8 +1,8 @@
 package typings.parcelTypes.mod
 
-import typings.parcelFs.typesMod.FileSystem
-import typings.parcelPackageManager.typesMod.PackageManager
+import typings.parcelPackageManager.libTypesMod.PackageManager
 import typings.parcelTypes.parcelTypesBooleans.`false`
+import typings.std.FileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

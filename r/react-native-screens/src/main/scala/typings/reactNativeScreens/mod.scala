@@ -12,11 +12,11 @@ import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewProps
 import typings.reactNativeScreens.anon.Closing
 import typings.reactNativeScreens.anon.PropsWithChildrenViewProp
-import typings.reactNativeScreens.typescriptTypesMod.ScreenContainerProps
-import typings.reactNativeScreens.typescriptTypesMod.ScreenProps
-import typings.reactNativeScreens.typescriptTypesMod.ScreenStackHeaderConfigProps
-import typings.reactNativeScreens.typescriptTypesMod.ScreenStackProps
-import typings.reactNativeScreens.typescriptTypesMod.SearchBarProps
+import typings.reactNativeScreens.libTypescriptTypesMod.ScreenContainerProps
+import typings.reactNativeScreens.libTypescriptTypesMod.ScreenProps
+import typings.reactNativeScreens.libTypescriptTypesMod.ScreenStackHeaderConfigProps
+import typings.reactNativeScreens.libTypescriptTypesMod.ScreenStackProps
+import typings.reactNativeScreens.libTypescriptTypesMod.SearchBarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

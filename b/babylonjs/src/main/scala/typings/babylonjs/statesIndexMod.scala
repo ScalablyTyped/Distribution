@@ -12,7 +12,7 @@ object statesIndexMod {
     * Initializes the state.
     */
   open class AlphaState ()
-    extends typings.babylonjs.alphaCullingStateMod.AlphaState
+    extends typings.babylonjs.statesAlphaCullingStateMod.AlphaState
   
   @JSImport("babylonjs/States/index", "DepthCullingState")
   @js.native
@@ -21,14 +21,14 @@ object statesIndexMod {
     * @param reset
     */
   open class DepthCullingState ()
-    extends typings.babylonjs.depthCullingStateMod.DepthCullingState {
+    extends typings.babylonjs.statesDepthCullingStateMod.DepthCullingState {
     def this(reset: Boolean) = this()
   }
   
   @JSImport("babylonjs/States/index", "StencilState")
   @js.native
   open class StencilState ()
-    extends typings.babylonjs.stencilStateMod.StencilState
+    extends typings.babylonjs.statesStencilStateMod.StencilState
   /* static members */
   object StencilState {
     
@@ -51,7 +51,7 @@ object statesIndexMod {
   @JSImport("babylonjs/States/index", "StencilStateComposer")
   @js.native
   open class StencilStateComposer ()
-    extends typings.babylonjs.stencilStateComposerMod.StencilStateComposer {
+    extends typings.babylonjs.statesStencilStateComposerMod.StencilStateComposer {
     def this(reset: Boolean) = this()
   }
 }

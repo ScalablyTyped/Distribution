@@ -1,6 +1,6 @@
 package typings.socketclusterClient
 
-import typings.socketclusterClient.clientsocketMod.ClientOptions
+import typings.socketclusterClient.libClientsocketMod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object mod {
   @JSImport("socketcluster-client", "AGClientSocket")
   @js.native
   open class AGClientSocket protected ()
-    extends typings.socketclusterClient.clientsocketMod.^ {
+    extends typings.socketclusterClient.libClientsocketMod.^ {
     def this(opts: ClientOptions) = this()
   }
   
@@ -27,8 +27,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(): typings.socketclusterClient.clientsocketMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.socketclusterClient.clientsocketMod.^]
-    inline def create(options: ClientOptions): typings.socketclusterClient.clientsocketMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.socketclusterClient.clientsocketMod.^]
+    inline def create(): typings.socketclusterClient.libClientsocketMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.socketclusterClient.libClientsocketMod.^]
+    inline def create(options: ClientOptions): typings.socketclusterClient.libClientsocketMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.socketclusterClient.libClientsocketMod.^]
   }
   
   @JSImport("socketcluster-client", "version")

@@ -11,7 +11,7 @@ object fnReflectSetMod {
   inline def apply(target: Any, propertyKey: PropertyKey, value: Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def apply(target: Any, propertyKey: PropertyKey, value: Any, receiver: Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("core-js/library/fn/reflect/set", JSImport.Namespace)
+  @JSImport("core-js/fn/reflect/set", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
 }

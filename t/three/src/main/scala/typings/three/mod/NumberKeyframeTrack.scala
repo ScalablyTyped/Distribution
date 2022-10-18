@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "NumberKeyframeTrack")
 @js.native
 open class NumberKeyframeTrack protected ()
-  extends typings.three.threeMod.NumberKeyframeTrack {
+  extends typings.three.srcThreeMod.NumberKeyframeTrack {
   def this(name: String, times: js.Array[Any], values: js.Array[Any]) = this()
   def this(
     name: String,

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Modifier")
 @js.native
 open class Modifier ()
-  extends typings.blackEngine.modifierMod.Modifier {
+  extends typings.blackEngine.particlesModifierMod.Modifier {
   def this(isInitializer: Boolean) = this()
 }

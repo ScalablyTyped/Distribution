@@ -2,7 +2,7 @@ package typings.luminoWidgets.mod
 
 import typings.luminoMessaging.mod.ConflatableMessage
 import typings.luminoMessaging.mod.Message
-import typings.luminoWidgets.widgetMod.Widget.IOptions
+import typings.luminoWidgets.typesWidgetMod.Widget.IOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options - The options for initializing the widget.
   */
 open class Widget ()
-  extends typings.luminoWidgets.widgetMod.Widget {
+  extends typings.luminoWidgets.typesWidgetMod.Widget {
   def this(options: IOptions) = this()
 }
 object Widget {
@@ -31,7 +31,7 @@ object Widget {
   @JSImport("@lumino/widgets", "Widget.ChildMessage")
   @js.native
   open class ChildMessage protected ()
-    extends typings.luminoWidgets.widgetMod.Widget.ChildMessage {
+    extends typings.luminoWidgets.typesWidgetMod.Widget.ChildMessage {
     /**
       * Construct a new child message.
       *
@@ -39,7 +39,7 @@ object Widget {
       *
       * @param child - The child widget for the message.
       */
-    def this(`type`: String, child: typings.luminoWidgets.widgetMod.Widget) = this()
+    def this(`type`: String, child: typings.luminoWidgets.typesWidgetMod.Widget) = this()
   }
   
   /**
@@ -50,17 +50,17 @@ object Widget {
   object Flag extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.luminoWidgets.widgetMod.Widget.Flag & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.luminoWidgets.typesWidgetMod.Widget.Flag & Double] = js.native
     
-    /* 16 */ val DisallowLayout: typings.luminoWidgets.widgetMod.Widget.Flag.DisallowLayout & Double = js.native
+    /* 16 */ val DisallowLayout: typings.luminoWidgets.typesWidgetMod.Widget.Flag.DisallowLayout & Double = js.native
     
-    /* 2 */ val IsAttached: typings.luminoWidgets.widgetMod.Widget.Flag.IsAttached & Double = js.native
+    /* 2 */ val IsAttached: typings.luminoWidgets.typesWidgetMod.Widget.Flag.IsAttached & Double = js.native
     
-    /* 1 */ val IsDisposed: typings.luminoWidgets.widgetMod.Widget.Flag.IsDisposed & Double = js.native
+    /* 1 */ val IsDisposed: typings.luminoWidgets.typesWidgetMod.Widget.Flag.IsDisposed & Double = js.native
     
-    /* 4 */ val IsHidden: typings.luminoWidgets.widgetMod.Widget.Flag.IsHidden & Double = js.native
+    /* 4 */ val IsHidden: typings.luminoWidgets.typesWidgetMod.Widget.Flag.IsHidden & Double = js.native
     
-    /* 8 */ val IsVisible: typings.luminoWidgets.widgetMod.Widget.Flag.IsVisible & Double = js.native
+    /* 8 */ val IsVisible: typings.luminoWidgets.typesWidgetMod.Widget.Flag.IsVisible & Double = js.native
   }
   
   /**
@@ -84,11 +84,11 @@ object Widget {
   object HiddenMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.luminoWidgets.widgetMod.Widget.HiddenMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.luminoWidgets.typesWidgetMod.Widget.HiddenMode & Double] = js.native
     
-    /* 0 */ val Display: typings.luminoWidgets.widgetMod.Widget.HiddenMode.Display & Double = js.native
+    /* 0 */ val Display: typings.luminoWidgets.typesWidgetMod.Widget.HiddenMode.Display & Double = js.native
     
-    /* 1 */ val Scale: typings.luminoWidgets.widgetMod.Widget.HiddenMode.Scale & Double = js.native
+    /* 1 */ val Scale: typings.luminoWidgets.typesWidgetMod.Widget.HiddenMode.Scale & Double = js.native
   }
   
   /**
@@ -252,7 +252,7 @@ object Widget {
   @JSImport("@lumino/widgets", "Widget.ResizeMessage")
   @js.native
   open class ResizeMessage protected ()
-    extends typings.luminoWidgets.widgetMod.Widget.ResizeMessage {
+    extends typings.luminoWidgets.typesWidgetMod.Widget.ResizeMessage {
     /**
       * Construct a new resize message.
       *
@@ -274,7 +274,7 @@ object Widget {
       */
     @JSImport("@lumino/widgets", "Widget.ResizeMessage.UnknownSize")
     @js.native
-    val UnknownSize: typings.luminoWidgets.widgetMod.Widget.ResizeMessage = js.native
+    val UnknownSize: typings.luminoWidgets.typesWidgetMod.Widget.ResizeMessage = js.native
   }
   
   /**
@@ -294,8 +294,8 @@ object Widget {
     * the widget is already attached, or if the host is not attached
     * to the DOM.
     */
-  inline def attach(widget: typings.luminoWidgets.widgetMod.Widget, host: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def attach(widget: typings.luminoWidgets.widgetMod.Widget, host: HTMLElement, ref: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attach(widget: typings.luminoWidgets.typesWidgetMod.Widget, host: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attach(widget: typings.luminoWidgets.typesWidgetMod.Widget, host: HTMLElement, ref: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Detach the widget from its host DOM node.
@@ -306,5 +306,5 @@ object Widget {
     * This will throw an error if the widget is not a root widget,
     * or if the widget is not attached to the DOM.
     */
-  inline def detach(widget: typings.luminoWidgets.widgetMod.Widget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def detach(widget: typings.luminoWidgets.typesWidgetMod.Widget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

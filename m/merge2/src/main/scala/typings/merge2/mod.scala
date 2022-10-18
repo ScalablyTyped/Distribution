@@ -1,8 +1,8 @@
 package typings.merge2
 
 import typings.merge2.merge2Strings.queueDrain
+import typings.node.NodeJS.ReadableStream
 import typings.node.streamMod.PassThrough
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,7 +94,7 @@ object mod {
     }
   }
   
-  type StreamType = ReadableStream[Any] | Merge2Stream
+  type StreamType = ReadableStream | Merge2Stream
   
   type Streams = StreamType | js.Array[StreamType]
 }

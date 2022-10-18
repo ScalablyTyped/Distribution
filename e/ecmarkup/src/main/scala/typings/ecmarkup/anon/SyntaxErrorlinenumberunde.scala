@@ -7,14 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.SyntaxError & {  line :number | undefined,   column :number | undefined} */
 trait SyntaxErrorlinenumberunde extends StObject {
   
+  /* standard es2022.error */
+  var cause: js.UndefOr[Any] = js.undefined
+  
   var column: js.UndefOr[Double] = js.undefined
   
   var line: js.UndefOr[Double] = js.undefined
   
+  /* standard es5 */
   var message: String
   
+  /* standard es5 */
   var name: String
   
+  /* standard es5 */
   var stack: js.UndefOr[String] = js.undefined
 }
 object SyntaxErrorlinenumberunde {
@@ -25,6 +31,10 @@ object SyntaxErrorlinenumberunde {
   }
   
   extension [Self <: SyntaxErrorlinenumberunde](x: Self) {
+    
+    inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

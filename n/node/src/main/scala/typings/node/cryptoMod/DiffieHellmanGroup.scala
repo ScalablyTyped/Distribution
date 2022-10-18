@@ -1,5 +1,6 @@
 package typings.node.cryptoMod
 
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Omit<node.crypto.DiffieHellman, 'setPublicKey' | 'setPrivateKey'> */
 trait DiffieHellmanGroup extends StObject {
   
-  def computeSecret(otherPublicKey: js.typedarray.ArrayBufferView): Buffer
+  def computeSecret(otherPublicKey: ArrayBufferView): Buffer
   @JSName("computeSecret")
   var computeSecret_Original: js.Function3[
-    /* otherPublicKey */ js.typedarray.ArrayBufferView, 
+    /* otherPublicKey */ ArrayBufferView, 
     /* inputEncoding */ js.UndefOr[Null], 
     /* outputEncoding */ js.UndefOr[Null], 
     Buffer
@@ -74,7 +75,7 @@ object DiffieHellmanGroup {
   extension [Self <: DiffieHellmanGroup](x: Self) {
     
     inline def setComputeSecret(
-      value: (/* otherPublicKey */ js.typedarray.ArrayBufferView, /* inputEncoding */ js.UndefOr[Null], /* outputEncoding */ js.UndefOr[Null]) => Buffer
+      value: (/* otherPublicKey */ ArrayBufferView, /* inputEncoding */ js.UndefOr[Null], /* outputEncoding */ js.UndefOr[Null]) => Buffer
     ): Self = StObject.set(x, "computeSecret", js.Any.fromFunction3(value))
     
     inline def setConstructor(value: () => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction0(value))

@@ -1,8 +1,8 @@
 package typings.blueprintjsTable.anon
 
-import typings.blueprintjsTable.esmRegionsMod.TableLoadingOption
-import typings.blueprintjsTable.gridMod.Grid
-import typings.blueprintjsTable.tableQuadrantMod.QuadrantType
+import typings.blueprintjsTable.libEsmCommonGridMod.Grid
+import typings.blueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType
+import typings.blueprintjsTable.libEsmRegionsMod.TableLoadingOption
 import typings.react.mod.EventHandler
 import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent

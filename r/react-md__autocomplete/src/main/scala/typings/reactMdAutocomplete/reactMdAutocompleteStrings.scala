@@ -1,7 +1,7 @@
 package typings.reactMdAutocomplete
 
-import typings.reactMdAutocomplete.typesMod.AutoCompletion
-import typings.reactMdAutocomplete.typesMod.PreconfiguredFilterFunction
+import typings.reactMdAutocomplete.typesTypesMod.AutoCompletion
+import typings.reactMdAutocomplete.typesTypesMod.PreconfiguredFilterFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

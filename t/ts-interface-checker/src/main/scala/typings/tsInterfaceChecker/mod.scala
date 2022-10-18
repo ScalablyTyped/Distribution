@@ -1,10 +1,10 @@
 package typings.tsInterfaceChecker
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.tsInterfaceChecker.typesMod.ITypeSuite
-import typings.tsInterfaceChecker.typesMod.RestType
-import typings.tsInterfaceChecker.typesMod.TypeSpec
-import typings.tsInterfaceChecker.utilMod.IErrorDetail
+import typings.tsInterfaceChecker.distTypesMod.ITypeSuite
+import typings.tsInterfaceChecker.distTypesMod.RestType
+import typings.tsInterfaceChecker.distTypesMod.TypeSpec
+import typings.tsInterfaceChecker.distUtilMod.IErrorDetail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,15 +18,15 @@ object mod {
   @JSImport("ts-interface-checker", "BasicType")
   @js.native
   open class BasicType protected ()
-    extends typings.tsInterfaceChecker.typesMod.BasicType {
+    extends typings.tsInterfaceChecker.distTypesMod.BasicType {
     def this(validator: js.Function1[/* value */ Any, Boolean], message: String) = this()
   }
   
   @JSImport("ts-interface-checker", "Checker")
   @js.native
   open class Checker protected () extends StObject {
-    def this(suite: ITypeSuite, ttype: typings.tsInterfaceChecker.typesMod.TType) = this()
-    def this(suite: ITypeSuite, ttype: typings.tsInterfaceChecker.typesMod.TType, _path: String) = this()
+    def this(suite: ITypeSuite, ttype: typings.tsInterfaceChecker.distTypesMod.TType) = this()
+    def this(suite: ITypeSuite, ttype: typings.tsInterfaceChecker.distTypesMod.TType, _path: String) = this()
     
     /**
       * Actual implementation of check() and strictCheck().
@@ -67,7 +67,7 @@ object mod {
     /**
       * Return the type for which this is a checker.
       */
-    def getType(): typings.tsInterfaceChecker.typesMod.TType = js.native
+    def getType(): typings.tsInterfaceChecker.distTypesMod.TType = js.native
     
     /**
       * If this checker is for an interface, returns a Checker for the argument-list required to call
@@ -132,47 +132,47 @@ object mod {
   @JSImport("ts-interface-checker", "TArray")
   @js.native
   open class TArray protected ()
-    extends typings.tsInterfaceChecker.typesMod.TArray {
-    def this(ttype: typings.tsInterfaceChecker.typesMod.TType) = this()
+    extends typings.tsInterfaceChecker.distTypesMod.TArray {
+    def this(ttype: typings.tsInterfaceChecker.distTypesMod.TType) = this()
   }
   
   @JSImport("ts-interface-checker", "TEnumLiteral")
   @js.native
   open class TEnumLiteral protected ()
-    extends typings.tsInterfaceChecker.typesMod.TEnumLiteral {
+    extends typings.tsInterfaceChecker.distTypesMod.TEnumLiteral {
     def this(enumName: String, prop: String) = this()
   }
   
   @JSImport("ts-interface-checker", "TEnumType")
   @js.native
   open class TEnumType protected ()
-    extends typings.tsInterfaceChecker.typesMod.TEnumType {
+    extends typings.tsInterfaceChecker.distTypesMod.TEnumType {
     def this(members: StringDictionary[String | Double]) = this()
   }
   
   @JSImport("ts-interface-checker", "TFunc")
   @js.native
   open class TFunc protected ()
-    extends typings.tsInterfaceChecker.typesMod.TFunc {
+    extends typings.tsInterfaceChecker.distTypesMod.TFunc {
     def this(
-      paramList: typings.tsInterfaceChecker.typesMod.TParamList,
-      result: typings.tsInterfaceChecker.typesMod.TType
+      paramList: typings.tsInterfaceChecker.distTypesMod.TParamList,
+      result: typings.tsInterfaceChecker.distTypesMod.TType
     ) = this()
   }
   
   @JSImport("ts-interface-checker", "TIface")
   @js.native
   open class TIface protected ()
-    extends typings.tsInterfaceChecker.typesMod.TIface {
-    def this(bases: js.Array[String], props: js.Array[typings.tsInterfaceChecker.typesMod.TProp]) = this()
+    extends typings.tsInterfaceChecker.distTypesMod.TIface {
+    def this(bases: js.Array[String], props: js.Array[typings.tsInterfaceChecker.distTypesMod.TProp]) = this()
     def this(
       bases: js.Array[String],
-      props: js.Array[typings.tsInterfaceChecker.typesMod.TProp],
-      indexType: typings.tsInterfaceChecker.typesMod.TOptional
+      props: js.Array[typings.tsInterfaceChecker.distTypesMod.TProp],
+      indexType: typings.tsInterfaceChecker.distTypesMod.TOptional
     ) = this()
     def this(
       bases: js.Array[String],
-      props: js.Array[typings.tsInterfaceChecker.typesMod.TProp],
+      props: js.Array[typings.tsInterfaceChecker.distTypesMod.TProp],
       indexType: TypeSpec
     ) = this()
   }
@@ -180,113 +180,113 @@ object mod {
   @JSImport("ts-interface-checker", "TIntersection")
   @js.native
   open class TIntersection protected ()
-    extends typings.tsInterfaceChecker.typesMod.TIntersection {
-    def this(ttypes: js.Array[typings.tsInterfaceChecker.typesMod.TType]) = this()
+    extends typings.tsInterfaceChecker.distTypesMod.TIntersection {
+    def this(ttypes: js.Array[typings.tsInterfaceChecker.distTypesMod.TType]) = this()
   }
   
   @JSImport("ts-interface-checker", "TLiteral")
   @js.native
   open class TLiteral protected ()
-    extends typings.tsInterfaceChecker.typesMod.TLiteral {
+    extends typings.tsInterfaceChecker.distTypesMod.TLiteral {
     def this(value: Any) = this()
   }
   
   @JSImport("ts-interface-checker", "TName")
   @js.native
   open class TName protected ()
-    extends typings.tsInterfaceChecker.typesMod.TName {
+    extends typings.tsInterfaceChecker.distTypesMod.TName {
     def this(name: String) = this()
   }
   
   @JSImport("ts-interface-checker", "TOptional")
   @js.native
   open class TOptional protected ()
-    extends typings.tsInterfaceChecker.typesMod.TOptional {
-    def this(ttype: typings.tsInterfaceChecker.typesMod.TType) = this()
+    extends typings.tsInterfaceChecker.distTypesMod.TOptional {
+    def this(ttype: typings.tsInterfaceChecker.distTypesMod.TType) = this()
   }
   
   @JSImport("ts-interface-checker", "TParam")
   @js.native
   open class TParam protected ()
-    extends typings.tsInterfaceChecker.typesMod.TParam {
-    def this(name: String, ttype: typings.tsInterfaceChecker.typesMod.TType, isOpt: Boolean) = this()
+    extends typings.tsInterfaceChecker.distTypesMod.TParam {
+    def this(name: String, ttype: typings.tsInterfaceChecker.distTypesMod.TType, isOpt: Boolean) = this()
   }
   
   @JSImport("ts-interface-checker", "TParamList")
   @js.native
   open class TParamList protected ()
-    extends typings.tsInterfaceChecker.typesMod.TParamList {
-    def this(params: js.Array[typings.tsInterfaceChecker.typesMod.TParam]) = this()
+    extends typings.tsInterfaceChecker.distTypesMod.TParamList {
+    def this(params: js.Array[typings.tsInterfaceChecker.distTypesMod.TParam]) = this()
   }
   
   @JSImport("ts-interface-checker", "TProp")
   @js.native
   open class TProp protected ()
-    extends typings.tsInterfaceChecker.typesMod.TProp {
-    def this(name: String, ttype: typings.tsInterfaceChecker.typesMod.TType, isOpt: Boolean) = this()
+    extends typings.tsInterfaceChecker.distTypesMod.TProp {
+    def this(name: String, ttype: typings.tsInterfaceChecker.distTypesMod.TType, isOpt: Boolean) = this()
   }
   
   @JSImport("ts-interface-checker", "TTuple")
   @js.native
   open class TTuple protected ()
-    extends typings.tsInterfaceChecker.typesMod.TTuple {
-    def this(ttypes: js.Array[typings.tsInterfaceChecker.typesMod.TType]) = this()
+    extends typings.tsInterfaceChecker.distTypesMod.TTuple {
+    def this(ttypes: js.Array[typings.tsInterfaceChecker.distTypesMod.TType]) = this()
   }
   
-  @JSImport("ts-interface-checker", "TType")
+  /* note: abstract class */ @JSImport("ts-interface-checker", "TType")
   @js.native
-  abstract class TType ()
-    extends typings.tsInterfaceChecker.typesMod.TType
+  open class TType ()
+    extends typings.tsInterfaceChecker.distTypesMod.TType
   
   @JSImport("ts-interface-checker", "TUnion")
   @js.native
   open class TUnion protected ()
-    extends typings.tsInterfaceChecker.typesMod.TUnion {
-    def this(ttypes: js.Array[typings.tsInterfaceChecker.typesMod.TType]) = this()
+    extends typings.tsInterfaceChecker.distTypesMod.TUnion {
+    def this(ttypes: js.Array[typings.tsInterfaceChecker.distTypesMod.TType]) = this()
   }
   
   @JSImport("ts-interface-checker", "VError")
   @js.native
   open class VError protected ()
-    extends typings.tsInterfaceChecker.utilMod.VError {
+    extends typings.tsInterfaceChecker.distUtilMod.VError {
     def this(path: String, message: String) = this()
   }
   
-  inline def array(typeSpec: TypeSpec): typings.tsInterfaceChecker.typesMod.TArray = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(typeSpec.asInstanceOf[js.Any]).asInstanceOf[typings.tsInterfaceChecker.typesMod.TArray]
+  inline def array(typeSpec: TypeSpec): typings.tsInterfaceChecker.distTypesMod.TArray = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(typeSpec.asInstanceOf[js.Any]).asInstanceOf[typings.tsInterfaceChecker.distTypesMod.TArray]
   
   inline def createCheckers(typeSuite: ITypeSuite*): ICheckerSuite = ^.asInstanceOf[js.Dynamic].applyDynamic("createCheckers")(typeSuite.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ICheckerSuite]
   
-  inline def enumlit(name: String, prop: String): typings.tsInterfaceChecker.typesMod.TEnumLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("enumlit")(name.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[typings.tsInterfaceChecker.typesMod.TEnumLiteral]
+  inline def enumlit(name: String, prop: String): typings.tsInterfaceChecker.distTypesMod.TEnumLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("enumlit")(name.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[typings.tsInterfaceChecker.distTypesMod.TEnumLiteral]
   
-  inline def enumtype(values: StringDictionary[String | Double]): typings.tsInterfaceChecker.typesMod.TEnumType = ^.asInstanceOf[js.Dynamic].applyDynamic("enumtype")(values.asInstanceOf[js.Any]).asInstanceOf[typings.tsInterfaceChecker.typesMod.TEnumType]
+  inline def enumtype(values: StringDictionary[String | Double]): typings.tsInterfaceChecker.distTypesMod.TEnumType = ^.asInstanceOf[js.Dynamic].applyDynamic("enumtype")(values.asInstanceOf[js.Any]).asInstanceOf[typings.tsInterfaceChecker.distTypesMod.TEnumType]
   
-  inline def func(resultSpec: TypeSpec, params: typings.tsInterfaceChecker.typesMod.TParam*): typings.tsInterfaceChecker.typesMod.TFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(scala.List(resultSpec.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.tsInterfaceChecker.typesMod.TFunc]
+  inline def func(resultSpec: TypeSpec, params: typings.tsInterfaceChecker.distTypesMod.TParam*): typings.tsInterfaceChecker.distTypesMod.TFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(scala.List(resultSpec.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.tsInterfaceChecker.distTypesMod.TFunc]
   
   inline def iface(
     bases: js.Array[String],
-    props: StringDictionary[typings.tsInterfaceChecker.typesMod.TOptional | TypeSpec]
-  ): typings.tsInterfaceChecker.typesMod.TIface = (^.asInstanceOf[js.Dynamic].applyDynamic("iface")(bases.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.tsInterfaceChecker.typesMod.TIface]
+    props: StringDictionary[typings.tsInterfaceChecker.distTypesMod.TOptional | TypeSpec]
+  ): typings.tsInterfaceChecker.distTypesMod.TIface = (^.asInstanceOf[js.Dynamic].applyDynamic("iface")(bases.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.tsInterfaceChecker.distTypesMod.TIface]
   
   @JSImport("ts-interface-checker", "indexKey")
   @js.native
   val indexKey: js.Symbol = js.native
   
-  inline def intersection(typeSpec: TypeSpec*): typings.tsInterfaceChecker.typesMod.TIntersection = ^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(typeSpec.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.tsInterfaceChecker.typesMod.TIntersection]
+  inline def intersection(typeSpec: TypeSpec*): typings.tsInterfaceChecker.distTypesMod.TIntersection = ^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(typeSpec.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.tsInterfaceChecker.distTypesMod.TIntersection]
   
-  inline def lit(value: Any): typings.tsInterfaceChecker.typesMod.TLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("lit")(value.asInstanceOf[js.Any]).asInstanceOf[typings.tsInterfaceChecker.typesMod.TLiteral]
+  inline def lit(value: Any): typings.tsInterfaceChecker.distTypesMod.TLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("lit")(value.asInstanceOf[js.Any]).asInstanceOf[typings.tsInterfaceChecker.distTypesMod.TLiteral]
   
-  inline def name(value: String): typings.tsInterfaceChecker.typesMod.TName = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(value.asInstanceOf[js.Any]).asInstanceOf[typings.tsInterfaceChecker.typesMod.TName]
+  inline def name(value: String): typings.tsInterfaceChecker.distTypesMod.TName = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(value.asInstanceOf[js.Any]).asInstanceOf[typings.tsInterfaceChecker.distTypesMod.TName]
   
-  inline def opt(typeSpec: TypeSpec): typings.tsInterfaceChecker.typesMod.TOptional = ^.asInstanceOf[js.Dynamic].applyDynamic("opt")(typeSpec.asInstanceOf[js.Any]).asInstanceOf[typings.tsInterfaceChecker.typesMod.TOptional]
+  inline def opt(typeSpec: TypeSpec): typings.tsInterfaceChecker.distTypesMod.TOptional = ^.asInstanceOf[js.Dynamic].applyDynamic("opt")(typeSpec.asInstanceOf[js.Any]).asInstanceOf[typings.tsInterfaceChecker.distTypesMod.TOptional]
   
-  inline def param(name: String, typeSpec: TypeSpec): typings.tsInterfaceChecker.typesMod.TParam = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(name.asInstanceOf[js.Any], typeSpec.asInstanceOf[js.Any])).asInstanceOf[typings.tsInterfaceChecker.typesMod.TParam]
-  inline def param(name: String, typeSpec: TypeSpec, isOpt: Boolean): typings.tsInterfaceChecker.typesMod.TParam = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(name.asInstanceOf[js.Any], typeSpec.asInstanceOf[js.Any], isOpt.asInstanceOf[js.Any])).asInstanceOf[typings.tsInterfaceChecker.typesMod.TParam]
+  inline def param(name: String, typeSpec: TypeSpec): typings.tsInterfaceChecker.distTypesMod.TParam = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(name.asInstanceOf[js.Any], typeSpec.asInstanceOf[js.Any])).asInstanceOf[typings.tsInterfaceChecker.distTypesMod.TParam]
+  inline def param(name: String, typeSpec: TypeSpec, isOpt: Boolean): typings.tsInterfaceChecker.distTypesMod.TParam = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(name.asInstanceOf[js.Any], typeSpec.asInstanceOf[js.Any], isOpt.asInstanceOf[js.Any])).asInstanceOf[typings.tsInterfaceChecker.distTypesMod.TParam]
   
   inline def rest(typeSpec: TypeSpec): RestType = ^.asInstanceOf[js.Dynamic].applyDynamic("rest")(typeSpec.asInstanceOf[js.Any]).asInstanceOf[RestType]
   
-  inline def tuple(typeSpec: TypeSpec*): typings.tsInterfaceChecker.typesMod.TTuple = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(typeSpec.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.tsInterfaceChecker.typesMod.TTuple]
+  inline def tuple(typeSpec: TypeSpec*): typings.tsInterfaceChecker.distTypesMod.TTuple = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(typeSpec.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.tsInterfaceChecker.distTypesMod.TTuple]
   
-  inline def union(typeSpec: TypeSpec*): typings.tsInterfaceChecker.typesMod.TUnion = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(typeSpec.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.tsInterfaceChecker.typesMod.TUnion]
+  inline def union(typeSpec: TypeSpec*): typings.tsInterfaceChecker.distTypesMod.TUnion = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(typeSpec.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.tsInterfaceChecker.distTypesMod.TUnion]
   
   @js.native
   trait CheckerT[T] extends Checker

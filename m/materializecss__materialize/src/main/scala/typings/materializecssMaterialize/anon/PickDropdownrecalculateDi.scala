@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@materializecss/materialize.M.Dropdown, 'recalculateDimensions' | 'open' | 'close' | 'destroy'> */
 trait PickDropdownrecalculateDi extends StObject {
   
-  var close: js.UndefOr[Any] = js.undefined
+  def close(): Unit
+  @JSName("close")
+  var close_Original: js.Function0[Unit]
   
-  var destroy: js.UndefOr[Any] = js.undefined
+  def destroy(): Unit
+  @JSName("destroy")
+  var destroy_Original: js.Function0[Unit]
   
-  var open: js.UndefOr[Any] = js.undefined
+  def open(): Unit
+  @JSName("open")
+  var open_Original: js.Function0[Unit]
   
-  var recalculateDimensions: js.UndefOr[Any] = js.undefined
+  def recalculateDimensions(): Unit
+  @JSName("recalculateDimensions")
+  var recalculateDimensions_Original: js.Function0[Unit]
 }
 object PickDropdownrecalculateDi {
   
-  inline def apply(): PickDropdownrecalculateDi = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(close: () => Unit, destroy: () => Unit, open: () => Unit, recalculateDimensions: () => Unit): PickDropdownrecalculateDi = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), open = js.Any.fromFunction0(open), recalculateDimensions = js.Any.fromFunction0(recalculateDimensions))
     __obj.asInstanceOf[PickDropdownrecalculateDi]
   }
   
   extension [Self <: PickDropdownrecalculateDi](x: Self) {
     
-    inline def setClose(value: Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    inline def setDestroy(value: Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
-    
-    inline def setOpen(value: Any): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
-    
-    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
-    
-    inline def setRecalculateDimensions(value: Any): Self = StObject.set(x, "recalculateDimensions", value.asInstanceOf[js.Any])
-    
-    inline def setRecalculateDimensionsUndefined: Self = StObject.set(x, "recalculateDimensions", js.undefined)
+    inline def setRecalculateDimensions(value: () => Unit): Self = StObject.set(x, "recalculateDimensions", js.Any.fromFunction0(value))
   }
 }

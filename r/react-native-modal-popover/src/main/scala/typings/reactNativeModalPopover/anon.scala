@@ -5,10 +5,10 @@ import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeModalPopover.popoverGeometryMod.Placement
-import typings.reactNativeModalPopover.popoverGeometryMod.Rect
-import typings.reactNativeModalPopover.popoverGeometryMod.Size
-import typings.reactNativeModalPopover.popoverMod.Orientation
+import typings.reactNativeModalPopover.libPopoverGeometryMod.Placement
+import typings.reactNativeModalPopover.libPopoverGeometryMod.Rect
+import typings.reactNativeModalPopover.libPopoverGeometryMod.Size
+import typings.reactNativeModalPopover.libPopoverMod.Orientation
 import typings.reactNativeModalPopover.reactNativeModalPopoverStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

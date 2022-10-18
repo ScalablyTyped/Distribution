@@ -1,8 +1,8 @@
 package typings.openapiFramework
 
-import typings.openapiFramework.typesMod.IOpenAPIFramework
-import typings.openapiFramework.typesMod.OpenAPIFrameworkConstructorArgs
-import typings.openapiFramework.typesMod.OpenAPIFrameworkVisitor
+import typings.openapiFramework.distSrcTypesMod.IOpenAPIFramework
+import typings.openapiFramework.distSrcTypesMod.OpenAPIFrameworkConstructorArgs
+import typings.openapiFramework.distSrcTypesMod.OpenAPIFrameworkVisitor
 import typings.openapiTypes.mod.OpenAPIV3.ServerObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +24,7 @@ object mod {
     var args: OpenAPIFrameworkConstructorArgs = js.native
     
     /* CompleteClass */
-    override val basePaths: js.Array[typings.openapiFramework.basePathMod.default] = js.native
+    override val basePaths: js.Array[typings.openapiFramework.distSrcBasePathMod.default] = js.native
     
     /* private */ /* CompleteClass */
     var customFormats: Any = js.native
@@ -96,7 +96,7 @@ object mod {
   @JSImport("openapi-framework", "BasePath")
   @js.native
   open class BasePath protected ()
-    extends typings.openapiFramework.basePathMod.default {
+    extends typings.openapiFramework.distSrcBasePathMod.default {
     def this(server: ServerObject) = this()
   }
   
@@ -108,7 +108,7 @@ object mod {
     
     /* protected */ var args: OpenAPIFrameworkConstructorArgs
     
-    val basePaths: js.Array[typings.openapiFramework.basePathMod.default]
+    val basePaths: js.Array[typings.openapiFramework.distSrcBasePathMod.default]
     
     /* private */ var customFormats: Any
     
@@ -153,7 +153,7 @@ object mod {
     inline def apply(
       apiDoc: Any,
       args: OpenAPIFrameworkConstructorArgs,
-      basePaths: js.Array[typings.openapiFramework.basePathMod.default],
+      basePaths: js.Array[typings.openapiFramework.distSrcBasePathMod.default],
       customFormats: Any,
       customKeywords: Any,
       dependencies: Any,
@@ -187,9 +187,9 @@ object mod {
       
       inline def setArgs(value: OpenAPIFrameworkConstructorArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setBasePaths(value: js.Array[typings.openapiFramework.basePathMod.default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
+      inline def setBasePaths(value: js.Array[typings.openapiFramework.distSrcBasePathMod.default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
       
-      inline def setBasePathsVarargs(value: typings.openapiFramework.basePathMod.default*): Self = StObject.set(x, "basePaths", js.Array(value*))
+      inline def setBasePathsVarargs(value: typings.openapiFramework.distSrcBasePathMod.default*): Self = StObject.set(x, "basePaths", js.Array(value*))
       
       inline def setCustomFormats(value: Any): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
       

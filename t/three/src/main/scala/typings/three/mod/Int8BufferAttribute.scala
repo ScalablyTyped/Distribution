@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Int8BufferAttribute")
 @js.native
 open class Int8BufferAttribute protected ()
-  extends typings.three.threeMod.Int8BufferAttribute {
+  extends typings.three.srcThreeMod.Int8BufferAttribute {
   def this(array: js.Iterable[Double], itemSize: Double) = this()
   def this(array: js.typedarray.ArrayBuffer, itemSize: Double) = this()
   def this(array: Double, itemSize: Double) = this()

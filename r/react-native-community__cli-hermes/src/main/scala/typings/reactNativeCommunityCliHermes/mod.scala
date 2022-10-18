@@ -3,7 +3,7 @@ package typings.reactNativeCommunityCliHermes
 import typings.reactNativeCommunityCliHermes.anon.Cmd
 import typings.reactNativeCommunityCliHermes.anon.Default
 import typings.reactNativeCommunityCliHermes.anon.Description
-import typings.reactNativeCommunityCliHermes.profileHermesMod.Options
+import typings.reactNativeCommunityCliHermes.buildProfileHermesMod.Options
 import typings.reactNativeCommunityCliTypes.mod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,11 +1,11 @@
 package typings.spotifyApi.SpotifyApi
 
-import typings.spotifyApi.spotifyApiStrings.album
+import typings.spotifyApi.spotifyApiStrings.album_
 import typings.spotifyApi.spotifyApiStrings.appears_on
-import typings.spotifyApi.spotifyApiStrings.compilation
+import typings.spotifyApi.spotifyApiStrings.compilation_
 import typings.spotifyApi.spotifyApiStrings.day
 import typings.spotifyApi.spotifyApiStrings.month
-import typings.spotifyApi.spotifyApiStrings.single
+import typings.spotifyApi.spotifyApiStrings.single_
 import typings.spotifyApi.spotifyApiStrings.year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,12 +24,12 @@ trait AlbumObjectSimplified
     * Possible values are “album”, “single”, “compilation”, “appears_on”.
     * Compare to album_type this field represents relationship between the artist and the album.
     */
-  var album_group: js.UndefOr[album | single | compilation | appears_on] = js.undefined
+  var album_group: js.UndefOr[album_ | single_ | compilation_ | appears_on] = js.undefined
   
   /**
     * The type of the album: one of “album”, “single”, or “compilation”.
     */
-  var album_type: album | single | compilation
+  var album_type: album_ | single_ | compilation_
   
   /**
     * The artists of the album.
@@ -83,12 +83,12 @@ trait AlbumObjectSimplified
   var total_tracks: Double
   
   @JSName("type")
-  var type_AlbumObjectSimplified: album
+  var type_AlbumObjectSimplified: album_
 }
 object AlbumObjectSimplified {
   
   inline def apply(
-    album_type: album | single | compilation,
+    album_type: album_ | single_ | compilation_,
     artists: js.Array[ArtistObjectSimplified],
     external_urls: ExternalUrlObject,
     href: String,
@@ -107,11 +107,11 @@ object AlbumObjectSimplified {
   
   extension [Self <: AlbumObjectSimplified](x: Self) {
     
-    inline def setAlbum_group(value: album | single | compilation | appears_on): Self = StObject.set(x, "album_group", value.asInstanceOf[js.Any])
+    inline def setAlbum_group(value: album_ | single_ | compilation_ | appears_on): Self = StObject.set(x, "album_group", value.asInstanceOf[js.Any])
     
     inline def setAlbum_groupUndefined: Self = StObject.set(x, "album_group", js.undefined)
     
-    inline def setAlbum_type(value: album | single | compilation): Self = StObject.set(x, "album_type", value.asInstanceOf[js.Any])
+    inline def setAlbum_type(value: album_ | single_ | compilation_): Self = StObject.set(x, "album_type", value.asInstanceOf[js.Any])
     
     inline def setArtists(value: js.Array[ArtistObjectSimplified]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     
@@ -141,6 +141,6 @@ object AlbumObjectSimplified {
     
     inline def setTotal_tracks(value: Double): Self = StObject.set(x, "total_tracks", value.asInstanceOf[js.Any])
     
-    inline def setType(value: album): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: album_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "EmitterImpl")
 @js.native
 open class EmitterImpl[T] ()
-  extends typings.sipJs.apiMod.EmitterImpl[T]
+  extends typings.sipJs.libApiMod.EmitterImpl[T]

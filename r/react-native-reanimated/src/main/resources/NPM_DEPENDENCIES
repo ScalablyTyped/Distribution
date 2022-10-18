@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-reanimated" : "2.10.0"
+      "react-native-reanimated" : "2.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-reanimated" : "2.10.0"
+      "react-native-reanimated" : "2.11.0"
     }
   ],
   "compile-devDependencies" : [

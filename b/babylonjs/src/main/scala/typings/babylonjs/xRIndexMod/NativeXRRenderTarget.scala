@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class NativeXRRenderTarget protected ()
   extends typings.babylonjs.xRNativeIndexMod.NativeXRRenderTarget {
-  def this(_xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager) = this()
+  def this(_xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager) = this()
 }

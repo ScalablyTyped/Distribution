@@ -1,7 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.buttonMod.ButtonOptions
-import typings.fundamentalReact.buttonMod.ButtonTypes
 import typings.fundamentalReact.fundamentalReactStrings.`additions removals`
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
 import typings.fundamentalReact.fundamentalReactStrings.`inline`
@@ -55,6 +53,8 @@ import typings.fundamentalReact.fundamentalReactStrings.tree
 import typings.fundamentalReact.fundamentalReactStrings.url
 import typings.fundamentalReact.fundamentalReactStrings.vertical
 import typings.fundamentalReact.fundamentalReactStrings.yes
+import typings.fundamentalReact.libButtonButtonMod.ButtonOptions
+import typings.fundamentalReact.libButtonButtonMod.ButtonTypes
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler

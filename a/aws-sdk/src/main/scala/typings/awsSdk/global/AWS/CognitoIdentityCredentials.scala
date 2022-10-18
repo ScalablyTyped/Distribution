@@ -1,6 +1,6 @@
 package typings.awsSdk.global.AWS
 
-import typings.awsSdk.cognitoIdentityCredentialsMod.CognitoIdentityCredentials.CognitoIdentityOptions
+import typings.awsSdk.libCredentialsCognitoIdentityCredentialsMod.CognitoIdentityCredentials.CognitoIdentityOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,5 +16,8 @@ open class CognitoIdentityCredentials ()
     * Creates a new credentials object with optional configuration.
     */
   def this(options: CognitoIdentityOptions) = this()
-  def this(options: CognitoIdentityOptions, clientConfig: typings.awsSdk.configBaseMod.ConfigurationOptions) = this()
+  def this(
+    options: CognitoIdentityOptions,
+    clientConfig: typings.awsSdk.libConfigBaseMod.ConfigurationOptions
+  ) = this()
 }

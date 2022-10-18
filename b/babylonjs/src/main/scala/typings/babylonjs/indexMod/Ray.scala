@@ -17,15 +17,15 @@ open class Ray protected ()
     */
   def this(
     /** origin point */
-  origin: typings.babylonjs.mathVectorMod.Vector3,
+  origin: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     /** direction */
-  direction: typings.babylonjs.mathVectorMod.Vector3
+  direction: typings.babylonjs.mathsMathDotvectorMod.Vector3
   ) = this()
   def this(
     /** origin point */
-  origin: typings.babylonjs.mathVectorMod.Vector3,
+  origin: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     /** direction */
-  direction: typings.babylonjs.mathVectorMod.Vector3,
+  direction: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     /** length of the ray */
   length: Double
   ) = this()
@@ -53,10 +53,10 @@ object Ray {
     y: Double,
     viewportWidth: Double,
     viewportHeight: Double,
-    world: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    view: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    projection: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]
-  ): typings.babylonjs.rayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], viewportWidth.asInstanceOf[js.Any], viewportHeight.asInstanceOf[js.Any], world.asInstanceOf[js.Any], view.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rayMod.Ray]
+    world: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    view: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    projection: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
+  ): typings.babylonjs.cullingRayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], viewportWidth.asInstanceOf[js.Any], viewportHeight.asInstanceOf[js.Any], world.asInstanceOf[js.Any], view.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cullingRayMod.Ray]
   
   /**
     * Function will create a new transformed ray starting from origin and ending at the end point. Ray's length will be set, and ray will be
@@ -66,12 +66,15 @@ object Ray {
     * @param world a matrix to transform the ray to. Default is the identity matrix.
     * @returns the new ray
     */
-  inline def CreateNewFromTo(origin: typings.babylonjs.mathVectorMod.Vector3, end: typings.babylonjs.mathVectorMod.Vector3): typings.babylonjs.rayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromTo")(origin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rayMod.Ray]
   inline def CreateNewFromTo(
-    origin: typings.babylonjs.mathVectorMod.Vector3,
-    end: typings.babylonjs.mathVectorMod.Vector3,
-    world: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]
-  ): typings.babylonjs.rayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromTo")(origin.asInstanceOf[js.Any], end.asInstanceOf[js.Any], world.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rayMod.Ray]
+    origin: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    end: typings.babylonjs.mathsMathDotvectorMod.Vector3
+  ): typings.babylonjs.cullingRayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromTo")(origin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cullingRayMod.Ray]
+  inline def CreateNewFromTo(
+    origin: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    end: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    world: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
+  ): typings.babylonjs.cullingRayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromTo")(origin.asInstanceOf[js.Any], end.asInstanceOf[js.Any], world.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cullingRayMod.Ray]
   
   /**
     * Transforms a ray by a matrix
@@ -80,9 +83,9 @@ object Ray {
     * @returns the resulting new ray
     */
   inline def Transform(
-    ray: DeepImmutable[typings.babylonjs.rayMod.Ray],
-    matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]
-  ): typings.babylonjs.rayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(ray.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rayMod.Ray]
+    ray: DeepImmutable[typings.babylonjs.cullingRayMod.Ray],
+    matrix: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
+  ): typings.babylonjs.cullingRayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(ray.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cullingRayMod.Ray]
   
   /**
     * Transforms a ray by a matrix
@@ -91,16 +94,16 @@ object Ray {
     * @param result ray to store result in
     */
   inline def TransformToRef(
-    ray: DeepImmutable[typings.babylonjs.rayMod.Ray],
-    matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    result: typings.babylonjs.rayMod.Ray
+    ray: DeepImmutable[typings.babylonjs.cullingRayMod.Ray],
+    matrix: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    result: typings.babylonjs.cullingRayMod.Ray
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformToRef")(ray.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a ray with origin and direction of 0,0,0
     * @returns the new ray
     */
-  inline def Zero(): typings.babylonjs.rayMod.Ray = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.rayMod.Ray]
+  inline def Zero(): typings.babylonjs.cullingRayMod.Ray = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.cullingRayMod.Ray]
   
   @JSImport("babylonjs/index", "Ray._RayDistant")
   @js.native

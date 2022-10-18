@@ -25,16 +25,16 @@ object Provider {
   }
   
   /** Allows you to call the contact picker UI so you can select one or more contacts. */
-  @JSGlobal("Windows.ApplicationModel.Contacts.Provider.ContactPickerUI")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.Provider.ContactPickerUI")
   @js.native
-  abstract class ContactPickerUI ()
+  open class ContactPickerUI ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Contacts.Provider.ContactPickerUI
   
   /** Contains info about a removed contact. Returned when a ContactRemoved event occurs. */
-  @JSGlobal("Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs")
   @js.native
-  abstract class ContactRemovedEventArgs ()
+  open class ContactRemovedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs {
     

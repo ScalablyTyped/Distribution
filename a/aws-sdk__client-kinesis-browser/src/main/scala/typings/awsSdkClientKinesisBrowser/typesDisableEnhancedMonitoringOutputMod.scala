@@ -8,8 +8,8 @@ import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.Outg
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.OutgoingRecords
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ReadProvisionedThroughputExceeded
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.WriteProvisionedThroughputExceeded
-import typings.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkClientKinesisBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "MergeConflictException")
 @js.native
 open class MergeConflictException protected ()
-  extends typings.angularDevkitSchematics.exceptionMod.MergeConflictException {
+  extends typings.angularDevkitSchematics.srcExceptionExceptionMod.MergeConflictException {
   def this(path: String) = this()
 }

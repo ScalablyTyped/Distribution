@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "InplaceDisplay")
 @js.native
 open class InplaceDisplay protected ()
-  extends typings.primereact.inplaceMod.InplaceDisplay {
+  extends typings.primereact.inplaceInplaceMod.InplaceDisplay {
   def this(props: js.Object) = this()
   /**
     * @deprecated

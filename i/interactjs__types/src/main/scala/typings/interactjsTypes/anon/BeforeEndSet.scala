@@ -1,8 +1,8 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.interactjsModifiersTypesMod.ModifierArg
-import typings.interactjsTypes.interactjsModifiersTypesMod.ModifierState
-import typings.interactjsTypes.typesMod.Point
+import typings.interactjsTypes.coreTypesMod.Point
+import typings.interactjsTypes.modifiersTypesMod.ModifierArg
+import typings.interactjsTypes.modifiersTypesMod.ModifierState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

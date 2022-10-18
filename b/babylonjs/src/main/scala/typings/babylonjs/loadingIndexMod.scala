@@ -1,16 +1,16 @@
 package typings.babylonjs
 
 import typings.babylonjs.assetContainerMod.AssetContainer
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.observableMod.Observable
-import typings.babylonjs.sceneLoaderMod.IRegisteredPlugin
-import typings.babylonjs.sceneLoaderMod.ISceneLoaderAsyncResult
-import typings.babylonjs.sceneLoaderMod.ISceneLoaderPlugin
-import typings.babylonjs.sceneLoaderMod.ISceneLoaderPluginAsync
-import typings.babylonjs.sceneLoaderMod.ISceneLoaderPluginFactory
-import typings.babylonjs.sceneLoaderMod.ISceneLoaderProgressEvent
-import typings.babylonjs.sceneLoaderMod.SceneLoaderAnimationGroupLoadingMode
-import typings.babylonjs.sceneLoaderMod.SceneLoaderSuccessCallback
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.loadingSceneLoaderMod.IRegisteredPlugin
+import typings.babylonjs.loadingSceneLoaderMod.ISceneLoaderAsyncResult
+import typings.babylonjs.loadingSceneLoaderMod.ISceneLoaderPlugin
+import typings.babylonjs.loadingSceneLoaderMod.ISceneLoaderPluginAsync
+import typings.babylonjs.loadingSceneLoaderMod.ISceneLoaderPluginFactory
+import typings.babylonjs.loadingSceneLoaderMod.ISceneLoaderProgressEvent
+import typings.babylonjs.loadingSceneLoaderMod.SceneLoaderAnimationGroupLoadingMode
+import typings.babylonjs.loadingSceneLoaderMod.SceneLoaderSuccessCallback
+import typings.babylonjs.miscObservableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import typings.std.File
@@ -27,7 +27,7 @@ object loadingIndexMod {
   @JSImport("babylonjs/Loading/index", "BabylonFileLoaderConfiguration")
   @js.native
   open class BabylonFileLoaderConfiguration ()
-    extends typings.babylonjs.pluginsIndexMod.BabylonFileLoaderConfiguration
+    extends typings.babylonjs.loadingPluginsIndexMod.BabylonFileLoaderConfiguration
   /* static members */
   object BabylonFileLoaderConfiguration {
     
@@ -55,7 +55,7 @@ object loadingIndexMod {
   @JSImport("babylonjs/Loading/index", "DefaultLoadingScreen")
   @js.native
   open class DefaultLoadingScreen protected ()
-    extends typings.babylonjs.loadingScreenMod.DefaultLoadingScreen {
+    extends typings.babylonjs.loadingLoadingScreenMod.DefaultLoadingScreen {
     /**
       * Creates a new default loading screen
       * @param _renderingCanvas defines the canvas used to render the scene
@@ -90,7 +90,7 @@ object loadingIndexMod {
   @JSImport("babylonjs/Loading/index", "SceneLoader")
   @js.native
   open class SceneLoader ()
-    extends typings.babylonjs.sceneLoaderMod.SceneLoader
+    extends typings.babylonjs.loadingSceneLoaderMod.SceneLoader
   /* static members */
   object SceneLoader {
     
@@ -938,21 +938,23 @@ object loadingIndexMod {
   object SceneLoaderAnimationGroupLoadingMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.sceneLoaderMod.SceneLoaderAnimationGroupLoadingMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.babylonjs.loadingSceneLoaderMod.SceneLoaderAnimationGroupLoadingMode & Double
+      ] = js.native
     
-    /* 0 */ val Clean: typings.babylonjs.sceneLoaderMod.SceneLoaderAnimationGroupLoadingMode.Clean & Double = js.native
+    /* 0 */ val Clean: typings.babylonjs.loadingSceneLoaderMod.SceneLoaderAnimationGroupLoadingMode.Clean & Double = js.native
     
-    /* 3 */ val NoSync: typings.babylonjs.sceneLoaderMod.SceneLoaderAnimationGroupLoadingMode.NoSync & Double = js.native
+    /* 3 */ val NoSync: typings.babylonjs.loadingSceneLoaderMod.SceneLoaderAnimationGroupLoadingMode.NoSync & Double = js.native
     
-    /* 1 */ val Stop: typings.babylonjs.sceneLoaderMod.SceneLoaderAnimationGroupLoadingMode.Stop & Double = js.native
+    /* 1 */ val Stop: typings.babylonjs.loadingSceneLoaderMod.SceneLoaderAnimationGroupLoadingMode.Stop & Double = js.native
     
-    /* 2 */ val Sync: typings.babylonjs.sceneLoaderMod.SceneLoaderAnimationGroupLoadingMode.Sync & Double = js.native
+    /* 2 */ val Sync: typings.babylonjs.loadingSceneLoaderMod.SceneLoaderAnimationGroupLoadingMode.Sync & Double = js.native
   }
   
   @JSImport("babylonjs/Loading/index", "SceneLoaderFlags")
   @js.native
   open class SceneLoaderFlags ()
-    extends typings.babylonjs.sceneLoaderFlagsMod.SceneLoaderFlags
+    extends typings.babylonjs.loadingSceneLoaderFlagsMod.SceneLoaderFlags
   /* static members */
   object SceneLoaderFlags {
     

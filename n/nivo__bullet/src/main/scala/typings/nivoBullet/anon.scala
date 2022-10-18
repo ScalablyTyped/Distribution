@@ -1,5 +1,12 @@
 package typings.nivoBullet
 
+import typings.nivoBullet.distTypesTypesMod.BulletMarkersItemProps
+import typings.nivoBullet.distTypesTypesMod.BulletRectsItemProps
+import typings.nivoBullet.distTypesTypesMod.BulletTooltipProps
+import typings.nivoBullet.distTypesTypesMod.ComputedRangeDatum
+import typings.nivoBullet.distTypesTypesMod.Datum
+import typings.nivoBullet.distTypesTypesMod.DatumId
+import typings.nivoBullet.distTypesTypesMod.MouseEventHandler
 import typings.nivoBullet.nivoBulletStrings.after
 import typings.nivoBullet.nivoBulletStrings.auto
 import typings.nivoBullet.nivoBulletStrings.before
@@ -9,18 +16,11 @@ import typings.nivoBullet.nivoBulletStrings.horizontal
 import typings.nivoBullet.nivoBulletStrings.middle
 import typings.nivoBullet.nivoBulletStrings.start
 import typings.nivoBullet.nivoBulletStrings.vertical
-import typings.nivoBullet.typesMod.BulletMarkersItemProps
-import typings.nivoBullet.typesMod.BulletRectsItemProps
-import typings.nivoBullet.typesMod.BulletTooltipProps
-import typings.nivoBullet.typesMod.ComputedRangeDatum
-import typings.nivoBullet.typesMod.Datum
-import typings.nivoBullet.typesMod.DatumId
-import typings.nivoBullet.typesMod.MouseEventHandler
-import typings.nivoColors.inheritedColorMod.InheritedColorConfig
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
 import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.Colors
 import typings.nivoCore.mod.Theme
-import typings.nivoScales.typesMod.ScaleLinear
+import typings.nivoScales.distTypesTypesMod.ScaleLinear
 import typings.react.mod.ComponentType
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent

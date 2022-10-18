@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
-import typings.uifabricUtilities.customizationsMod.ICustomizations
-import typings.uifabricUtilities.customizationsMod.ISettings
+import typings.uifabricUtilities.libCustomizationsCustomizationsMod.ICustomizations
+import typings.uifabricUtilities.libCustomizationsCustomizationsMod.ISettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("office-ui-fabric-react", "Customizations")
 @js.native
 open class Customizations ()
-  extends typings.officeUiFabricReact.utilitiesMod.Customizations
+  extends typings.officeUiFabricReact.libUtilitiesMod.Customizations
 /* static members */
 object Customizations {
   

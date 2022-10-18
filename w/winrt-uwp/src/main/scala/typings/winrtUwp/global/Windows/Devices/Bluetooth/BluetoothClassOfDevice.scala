@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality to determine the Bluetooth Class Of Device (Bluetooth COD) information for a device. */
-@JSGlobal("Windows.Devices.Bluetooth.BluetoothClassOfDevice")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.BluetoothClassOfDevice")
 @js.native
-abstract class BluetoothClassOfDevice ()
+open class BluetoothClassOfDevice ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothClassOfDevice {
   

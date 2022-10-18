@@ -1,6 +1,6 @@
 package typings.jupyterlabTerminalExtension
 
-import typings.jupyterlabTerminal.tokensMod.ITerminal.Theme
+import typings.jupyterlabTerminal.libTokensMod.ITerminal.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,8 @@ object anon {
   trait PartialIOptions extends StObject {
     
     var autoFit: js.UndefOr[Boolean] = js.undefined
+    
+    var closeOnExit: js.UndefOr[Boolean] = js.undefined
     
     var cursorBlink: js.UndefOr[Boolean] = js.undefined
     
@@ -46,6 +48,10 @@ object anon {
       inline def setAutoFit(value: Boolean): Self = StObject.set(x, "autoFit", value.asInstanceOf[js.Any])
       
       inline def setAutoFitUndefined: Self = StObject.set(x, "autoFit", js.undefined)
+      
+      inline def setCloseOnExit(value: Boolean): Self = StObject.set(x, "closeOnExit", value.asInstanceOf[js.Any])
+      
+      inline def setCloseOnExitUndefined: Self = StObject.set(x, "closeOnExit", js.undefined)
       
       inline def setCursorBlink(value: Boolean): Self = StObject.set(x, "cursorBlink", value.asInstanceOf[js.Any])
       

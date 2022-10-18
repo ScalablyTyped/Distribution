@@ -2,6 +2,7 @@ package typings.listr2.mod
 
 import typings.listr2.anon.Count
 import typings.listr2.anon.Duration
+import typings.rxjs.mod.Subject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Create a task from the given set of variables and make it runnable.
   */
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<ListrEvent> * / any */ @js.native
-trait Task[Ctx, Renderer /* <: ListrRendererFactory */] extends StObject {
+@js.native
+trait Task[Ctx, Renderer /* <: ListrRendererFactory */] extends Subject[ListrEvent] {
   
   /**
     * A function to check whether this task should run at all via enable.
@@ -85,7 +85,7 @@ trait Task[Ctx, Renderer /* <: ListrRendererFactory */] extends StObject {
   
   /** This will be triggered each time a new render should happen. */
   @JSName("renderHook$")
-  var renderHook$: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<void> */ Any = js.native
+  var renderHook$: Subject[Unit] = js.native
   
   var rendererOptions: ListrGetRendererOptions[Renderer] = js.native
   

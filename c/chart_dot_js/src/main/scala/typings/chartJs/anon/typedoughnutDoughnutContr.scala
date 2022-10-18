@@ -1,19 +1,19 @@
 package typings.chartJs.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsBooleans.`false`
 import typings.chartJs.chartJsStrings.center
 import typings.chartJs.chartJsStrings.doughnut
 import typings.chartJs.chartJsStrings.inner
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
-import typings.chartJs.geometricMod.ChartArea
 import typings.chartJs.mod.AnimationsSpec
 import typings.chartJs.mod.ArcBorderRadius
 import typings.chartJs.mod.ScriptableAndArray
 import typings.chartJs.mod.ScriptableContext
 import typings.chartJs.mod.TransitionsSpec
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesGeometricMod.ChartArea
 import typings.std.CanvasLineJoin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,11 +26,11 @@ trait typedoughnutDoughnutContr extends StObject {
   
   var animations: AnimationsSpec[doughnut]
   
-  var backgroundColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[doughnut]]
+  var backgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
   
   var borderAlign: ScriptableAndArray[center | inner, ScriptableContext[doughnut]]
   
-  var borderColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[doughnut]]
+  var borderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
   
   var borderJoinStyle: ScriptableAndArray[CanvasLineJoin, ScriptableContext[doughnut]]
   
@@ -57,9 +57,9 @@ trait typedoughnutDoughnutContr extends StObject {
     */
   var hidden: Boolean
   
-  var hoverBackgroundColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[doughnut]]
+  var hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
   
-  var hoverBorderColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[doughnut]]
+  var hoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
   
   var hoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[doughnut]]
   
@@ -129,9 +129,9 @@ object typedoughnutDoughnutContr {
   inline def apply(
     animation: `false` | AnimationSpecdoughnutonPr,
     animations: AnimationsSpec[doughnut],
-    backgroundColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[doughnut]],
+    backgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
     borderAlign: ScriptableAndArray[center | inner, ScriptableContext[doughnut]],
-    borderColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[doughnut]],
+    borderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
     borderJoinStyle: ScriptableAndArray[CanvasLineJoin, ScriptableContext[doughnut]],
     borderRadius: ScriptableAndArray[Double | ArcBorderRadius, ScriptableContext[doughnut]],
     borderWidth: ScriptableAndArray[Double, ScriptableContext[doughnut]],
@@ -139,8 +139,8 @@ object typedoughnutDoughnutContr {
     circumference: Double,
     clip: Double | ChartArea | `false`,
     hidden: Boolean,
-    hoverBackgroundColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[doughnut]],
-    hoverBorderColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[doughnut]],
+    hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
+    hoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
     hoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[doughnut]],
     hoverOffset: ScriptableAndArray[Double, ScriptableContext[doughnut]],
     indexAxis: x | y,
@@ -166,13 +166,13 @@ object typedoughnutDoughnutContr {
     
     inline def setAnimations(value: AnimationsSpec[doughnut]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundColor(value: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction2(value))
     
-    inline def setBackgroundColorVarargs(value: typings.chartJs.colorMod.Color*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
+    inline def setBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
     
     inline def setBorderAlign(value: ScriptableAndArray[center | inner, ScriptableContext[doughnut]]): Self = StObject.set(x, "borderAlign", value.asInstanceOf[js.Any])
     
@@ -180,13 +180,13 @@ object typedoughnutDoughnutContr {
     
     inline def setBorderAlignVarargs(value: (center | inner)*): Self = StObject.set(x, "borderAlign", js.Array(value*))
     
-    inline def setBorderColor(value: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "borderColor", js.Any.fromFunction2(value))
     
-    inline def setBorderColorVarargs(value: typings.chartJs.colorMod.Color*): Self = StObject.set(x, "borderColor", js.Array(value*))
+    inline def setBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "borderColor", js.Array(value*))
     
     inline def setBorderJoinStyle(value: ScriptableAndArray[CanvasLineJoin, ScriptableContext[doughnut]]): Self = StObject.set(x, "borderJoinStyle", value.asInstanceOf[js.Any])
     
@@ -220,21 +220,21 @@ object typedoughnutDoughnutContr {
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    inline def setHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
     
     inline def setHoverBackgroundColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "hoverBackgroundColor", js.Any.fromFunction2(value))
     
-    inline def setHoverBackgroundColorVarargs(value: typings.chartJs.colorMod.Color*): Self = StObject.set(x, "hoverBackgroundColor", js.Array(value*))
+    inline def setHoverBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "hoverBackgroundColor", js.Array(value*))
     
-    inline def setHoverBorderColor(value: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "hoverBorderColor", value.asInstanceOf[js.Any])
+    inline def setHoverBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "hoverBorderColor", value.asInstanceOf[js.Any])
     
     inline def setHoverBorderColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "hoverBorderColor", js.Any.fromFunction2(value))
     
-    inline def setHoverBorderColorVarargs(value: typings.chartJs.colorMod.Color*): Self = StObject.set(x, "hoverBorderColor", js.Array(value*))
+    inline def setHoverBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "hoverBorderColor", js.Array(value*))
     
     inline def setHoverBorderWidth(value: ScriptableAndArray[Double, ScriptableContext[doughnut]]): Self = StObject.set(x, "hoverBorderWidth", value.asInstanceOf[js.Any])
     

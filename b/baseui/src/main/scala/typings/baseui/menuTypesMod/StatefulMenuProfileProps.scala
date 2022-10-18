@@ -2,7 +2,7 @@ package typings.baseui.menuTypesMod
 
 import typings.baseui.anon.Body
 import typings.baseui.anon.PartialStatefulContainerS
-import typings.baseui.anon.`17`
+import typings.baseui.anon.`14`
 import typings.baseui.baseuiStrings.character
 import typings.baseui.baseuiStrings.click
 import typings.baseui.baseuiStrings.enter_
@@ -33,7 +33,7 @@ object StatefulMenuProfileProps {
     getRequiredItemProps: (/* item */ Item, /* index */ Double) => RenderItemProps,
     initialState: InitialState,
     items: Items,
-    keyboardControlNode: `17`,
+    keyboardControlNode: `14`,
     onItemSelect: /* a */ typings.baseui.anon.Item => Any,
     stateReducer: (/* changeType */ js.UndefOr[
       click | moveUp | moveDown | mouseEnter | mouseLeave | focus | reset | character | enter_ | Null

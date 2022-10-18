@@ -3,7 +3,7 @@ package typings.luminoPolling
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoPolling.mod.IPoll.Frequency
 import typings.luminoPolling.mod.IPoll.State
-import typings.luminoPolling.pollMod.Poll.IOptions
+import typings.luminoPolling.typesPollMod.Poll.IOptions
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +14,7 @@ object mod {
   @JSImport("@lumino/polling", "Debouncer")
   @js.native
   open class Debouncer[T, U, V /* <: js.Array[Any] */] protected ()
-    extends typings.luminoPolling.ratelimiterMod.Debouncer[T, U, V] {
+    extends typings.luminoPolling.typesRatelimiterMod.Debouncer[T, U, V] {
     /**
       * Instantiate a rate limiter.
       *
@@ -29,7 +29,7 @@ object mod {
   @JSImport("@lumino/polling", "Poll")
   @js.native
   open class Poll[T, U, V /* <: String */] protected ()
-    extends typings.luminoPolling.pollMod.Poll[T, U, V] {
+    extends typings.luminoPolling.typesPollMod.Poll[T, U, V] {
     /**
       * Instantiate a new poll with exponential backoff in case of failure.
       *
@@ -64,10 +64,10 @@ object mod {
     val NEVER: Double = js.native
   }
   
-  @JSImport("@lumino/polling", "RateLimiter")
+  /* note: abstract class */ @JSImport("@lumino/polling", "RateLimiter")
   @js.native
-  abstract class RateLimiter[T, U, V /* <: js.Array[Any] */] protected ()
-    extends typings.luminoPolling.ratelimiterMod.RateLimiter[T, U, V] {
+  open class RateLimiter[T, U, V /* <: js.Array[Any] */] protected ()
+    extends typings.luminoPolling.typesRatelimiterMod.RateLimiter[T, U, V] {
     /**
       * Instantiate a rate limiter.
       *
@@ -82,7 +82,7 @@ object mod {
   @JSImport("@lumino/polling", "Throttler")
   @js.native
   open class Throttler[T, U, V /* <: js.Array[Any] */] protected ()
-    extends typings.luminoPolling.ratelimiterMod.Throttler[T, U, V] {
+    extends typings.luminoPolling.typesRatelimiterMod.Throttler[T, U, V] {
     /**
       * Instantiate a throttler.
       *
@@ -97,7 +97,7 @@ object mod {
     def this(fn: js.Function1[/* args */ V, T | js.Promise[T]], options: Double) = this()
     def this(
       fn: js.Function1[/* args */ V, T | js.Promise[T]],
-      options: typings.luminoPolling.ratelimiterMod.Throttler.IOptions
+      options: typings.luminoPolling.typesRatelimiterMod.Throttler.IOptions
     ) = this()
   }
   

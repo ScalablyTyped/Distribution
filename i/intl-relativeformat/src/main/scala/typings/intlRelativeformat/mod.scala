@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
 import typings.intlRelativeformat.anon.Locale
 import typings.intlRelativeformat.anon.Now
-import typings.intlRelativeformat.typesMod.LocaleData
-import typings.intlRelativeformat.typesMod.STYLE
-import typings.intlRelativeformat.typesMod.SUPPORTED_FIELD
+import typings.intlRelativeformat.libTypesMod.LocaleData
+import typings.intlRelativeformat.libTypesMod.STYLE
+import typings.intlRelativeformat.libTypesMod.SUPPORTED_FIELD
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

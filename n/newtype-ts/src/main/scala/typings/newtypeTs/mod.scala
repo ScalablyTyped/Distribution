@@ -1,13 +1,13 @@
 package typings.newtypeTs
 
-import typings.fpTs.eqMod.Eq
-import typings.fpTs.fieldMod.Field
-import typings.fpTs.functionMod.Predicate
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.ordMod.Ord_
-import typings.fpTs.ringMod.Ring
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.semiringMod.Semiring
+import typings.fpTs.libEqMod.Eq
+import typings.fpTs.libFieldMod.Field
+import typings.fpTs.libFunctionMod.Predicate
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libOrdMod.Ord_
+import typings.fpTs.libRingMod.Ring
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libSemiringMod.Semiring
 import typings.monocleTs.mod.Iso_
 import typings.monocleTs.mod.Prism_
 import org.scalablytyped.runtime.StObject

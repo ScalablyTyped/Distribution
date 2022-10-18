@@ -1,7 +1,6 @@
 package typings.maplibreGl.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.mapboxPointGeometry.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,9 +27,7 @@ open class SourceCache protected () extends Evented {
   
   var _cache: TileCache = js.native
   
-  var _cacheTimers: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ _ in any ]: std.ReturnType<{readonly ^ <TArgs extends std.Array<any>>(callback : (args : TArgs): void, ms : number, args : TArgs): node.timers.<global>.NodeJS.Timeout, readonly ^ <TArgs extends std.Array<any>>(callback : (args : TArgs): void, ms : undefined, args : TArgs): node.timers.<global>.NodeJS.Timeout, readonly ^ (callback : (args : void): void): node.timers.<global>.NodeJS.Timeout, readonly ^ (callback : (args : void): void, ms : number): node.timers.<global>.NodeJS.Timeout}>}
-    */ typings.maplibreGl.maplibreGlStrings.SourceCache & TopLevel[Any] = js.native
+  var _cacheTimers: /* import warning: importer.ImportType#apply Failed type conversion: {[ _ in any ]: std.ReturnType<{readonly ^ <TArgs extends std.Array<any>>(callback : (args : TArgs): void, ms : number, args : TArgs): node.timers.<global>.NodeJS.Timeout, readonly ^ <TArgs extends std.Array<any>>(callback : (args : TArgs): void, ms : undefined, args : TArgs): node.timers.<global>.NodeJS.Timeout, readonly ^ (callback : (args : void): void): node.timers.<global>.NodeJS.Timeout, readonly ^ (callback : (args : void): void, ms : number): node.timers.<global>.NodeJS.Timeout}>} */ js.Any = js.native
   
   var _coveredTiles: StringDictionary[Boolean] = js.native
   
@@ -63,14 +60,10 @@ open class SourceCache protected () extends Evented {
   	 * @private
   	 */
   def _retainLoadedChildren(
-    idealTiles: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ _ in any ]: maplibre-gl.maplibre-gl.OverscaledTileID}
-    */ typings.maplibreGl.maplibreGlStrings.SourceCache & TopLevel[Any],
+    idealTiles: /* import warning: importer.ImportType#apply Failed type conversion: {[ _ in any ]: maplibre-gl.maplibre-gl.OverscaledTileID} */ js.Any,
     zoom: Double,
     maxCoveringZoom: Double,
-    retain: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ _ in any ]: maplibre-gl.maplibre-gl.OverscaledTileID}
-    */ typings.maplibreGl.maplibreGlStrings.SourceCache & TopLevel[Any]
+    retain: /* import warning: importer.ImportType#apply Failed type conversion: {[ _ in any ]: maplibre-gl.maplibre-gl.OverscaledTileID} */ js.Any
   ): scala.Unit = js.native
   
   def _setTileReloadTimer(id: String, tile: Tile): scala.Unit = js.native
@@ -90,9 +83,7 @@ open class SourceCache protected () extends Evented {
   
   var _tiles: StringDictionary[Tile] = js.native
   
-  var _timers: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ _ in any ]: std.ReturnType<{readonly ^ <TArgs extends std.Array<any>>(callback : (args : TArgs): void, ms : number, args : TArgs): node.timers.<global>.NodeJS.Timeout, readonly ^ <TArgs extends std.Array<any>>(callback : (args : TArgs): void, ms : undefined, args : TArgs): node.timers.<global>.NodeJS.Timeout, readonly ^ (callback : (args : void): void): node.timers.<global>.NodeJS.Timeout, readonly ^ (callback : (args : void): void, ms : number): node.timers.<global>.NodeJS.Timeout}>}
-    */ typings.maplibreGl.maplibreGlStrings.SourceCache & TopLevel[Any] = js.native
+  var _timers: /* import warning: importer.ImportType#apply Failed type conversion: {[ _ in any ]: std.ReturnType<{readonly ^ <TArgs extends std.Array<any>>(callback : (args : TArgs): void, ms : number, args : TArgs): node.timers.<global>.NodeJS.Timeout, readonly ^ <TArgs extends std.Array<any>>(callback : (args : TArgs): void, ms : undefined, args : TArgs): node.timers.<global>.NodeJS.Timeout, readonly ^ (callback : (args : void): void): node.timers.<global>.NodeJS.Timeout, readonly ^ (callback : (args : void): void, ms : number): node.timers.<global>.NodeJS.Timeout}>} */ js.Any = js.native
   
   def _unloadTile(tile: Tile): scala.Unit = js.native
   

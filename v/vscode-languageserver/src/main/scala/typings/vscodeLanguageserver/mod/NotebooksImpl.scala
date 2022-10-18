@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-languageserver", "_NotebooksImpl")
 @js.native
 open class NotebooksImpl ()
-  extends typings.vscodeLanguageserver.serverMod.NotebooksImpl
+  extends typings.vscodeLanguageserver.libCommonServerMod.NotebooksImpl

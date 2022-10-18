@@ -1,11 +1,11 @@
 package typings.jupyterlabSettingregistry
 
-import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IContextMenuItem
-import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IMenu
-import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin
-import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin.Transform
-import typings.luminoCoreutils.jsonMod.PartialJSONValue
-import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
+import typings.jupyterlabSettingregistry.libTokensMod.ISettingRegistry.IContextMenuItem
+import typings.jupyterlabSettingregistry.libTokensMod.ISettingRegistry.IMenu
+import typings.jupyterlabSettingregistry.libTokensMod.ISettingRegistry.IPlugin
+import typings.jupyterlabSettingregistry.libTokensMod.ISettingRegistry.IPlugin.Transform
+import typings.luminoCoreutils.typesJsonMod.PartialJSONValue
+import typings.luminoCoreutils.typesJsonMod.ReadonlyPartialJSONValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

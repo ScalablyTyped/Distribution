@@ -1080,14 +1080,6 @@ object chromeRemoteInterfaceStrings {
   inline def EventBreakpointsDotsetInstrumentationBreakpoint: EventBreakpointsDotsetInstrumentationBreakpoint = "EventBreakpoints.setInstrumentationBreakpoint".asInstanceOf[EventBreakpointsDotsetInstrumentationBreakpoint]
   
   @js.native
-  sealed trait EventCallbacks extends StObject
-  inline def EventCallbacks: EventCallbacks = "EventCallbacks".asInstanceOf[EventCallbacks]
-  
-  @js.native
-  sealed trait EventPromises extends StObject
-  inline def EventPromises: EventPromises = "EventPromises".asInstanceOf[EventPromises]
-  
-  @js.native
   sealed trait FetchDotauthRequired extends StObject
   inline def FetchDotauthRequired: FetchDotauthRequired = "Fetch.authRequired".asInstanceOf[FetchDotauthRequired]
   
@@ -1984,6 +1976,10 @@ object chromeRemoteInterfaceStrings {
   inline def PageDotgenerateTestReport: PageDotgenerateTestReport = "Page.generateTestReport".asInstanceOf[PageDotgenerateTestReport]
   
   @js.native
+  sealed trait PageDotgetAdScriptId extends StObject
+  inline def PageDotgetAdScriptId: PageDotgetAdScriptId = "Page.getAdScriptId".asInstanceOf[PageDotgetAdScriptId]
+  
+  @js.native
   sealed trait PageDotgetAppId extends StObject
   inline def PageDotgetAppId: PageDotgetAppId = "Page.getAppId".asInstanceOf[PageDotgetAppId]
   
@@ -2256,10 +2252,6 @@ object chromeRemoteInterfaceStrings {
   inline def ProfilerDotstartPreciseCoverage: ProfilerDotstartPreciseCoverage = "Profiler.startPreciseCoverage".asInstanceOf[ProfilerDotstartPreciseCoverage]
   
   @js.native
-  sealed trait ProfilerDotstartTypeProfile extends StObject
-  inline def ProfilerDotstartTypeProfile: ProfilerDotstartTypeProfile = "Profiler.startTypeProfile".asInstanceOf[ProfilerDotstartTypeProfile]
-  
-  @js.native
   sealed trait ProfilerDotstop extends StObject
   inline def ProfilerDotstop: ProfilerDotstop = "Profiler.stop".asInstanceOf[ProfilerDotstop]
   
@@ -2268,16 +2260,8 @@ object chromeRemoteInterfaceStrings {
   inline def ProfilerDotstopPreciseCoverage: ProfilerDotstopPreciseCoverage = "Profiler.stopPreciseCoverage".asInstanceOf[ProfilerDotstopPreciseCoverage]
   
   @js.native
-  sealed trait ProfilerDotstopTypeProfile extends StObject
-  inline def ProfilerDotstopTypeProfile: ProfilerDotstopTypeProfile = "Profiler.stopTypeProfile".asInstanceOf[ProfilerDotstopTypeProfile]
-  
-  @js.native
   sealed trait ProfilerDottakePreciseCoverage extends StObject
   inline def ProfilerDottakePreciseCoverage: ProfilerDottakePreciseCoverage = "Profiler.takePreciseCoverage".asInstanceOf[ProfilerDottakePreciseCoverage]
-  
-  @js.native
-  sealed trait ProfilerDottakeTypeProfile extends StObject
-  inline def ProfilerDottakeTypeProfile: ProfilerDottakeTypeProfile = "Profiler.takeTypeProfile".asInstanceOf[ProfilerDottakeTypeProfile]
   
   @js.native
   sealed trait RuntimeDotaddBinding extends StObject

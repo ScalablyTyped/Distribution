@@ -1,7 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "ColorGradingTexture")
 @js.native
 open class ColorGradingTexture protected ()
-  extends typings.babylonjs.texturesIndexMod.ColorGradingTexture {
+  extends typings.babylonjs.materialsTexturesIndexMod.ColorGradingTexture {
+  def this(url: String, sceneOrEngine: ThinEngine) = this()
   /**
     * Instantiates a ColorGradingTexture from the following parameters.
     *
@@ -19,9 +20,8 @@ open class ColorGradingTexture protected ()
     * @param onLoad defines a callback triggered when the texture has been loaded
     */
   def this(url: String, sceneOrEngine: Scene) = this()
-  def this(url: String, sceneOrEngine: ThinEngine) = this()
-  def this(url: String, sceneOrEngine: Scene, onLoad: Nullable[js.Function0[Unit]]) = this()
   def this(url: String, sceneOrEngine: ThinEngine, onLoad: Nullable[js.Function0[Unit]]) = this()
+  def this(url: String, sceneOrEngine: Scene, onLoad: Nullable[js.Function0[Unit]]) = this()
 }
 /* static members */
 object ColorGradingTexture {
@@ -36,7 +36,7 @@ object ColorGradingTexture {
     * @param scene The scene to load the texture in
     * @returns A color grading texture
     */
-  inline def Parse(parsedTexture: Any, scene: Scene): Nullable[typings.babylonjs.colorGradingTextureMod.ColorGradingTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.colorGradingTextureMod.ColorGradingTexture]]
+  inline def Parse(parsedTexture: Any, scene: Scene): Nullable[typings.babylonjs.materialsTexturesColorGradingTextureMod.ColorGradingTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.materialsTexturesColorGradingTextureMod.ColorGradingTexture]]
   
   /**
     * Empty line regex stored for GC.

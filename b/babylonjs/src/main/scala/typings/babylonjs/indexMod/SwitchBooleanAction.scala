@@ -20,6 +20,6 @@ open class SwitchBooleanAction protected ()
     triggerOptions: Any,
     target: Any,
     propertyPath: String,
-    condition: typings.babylonjs.conditionMod.Condition
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
 }

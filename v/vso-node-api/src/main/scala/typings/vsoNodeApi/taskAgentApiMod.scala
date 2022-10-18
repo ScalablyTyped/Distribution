@@ -1,11 +1,11 @@
 package typings.vsoNodeApi
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IHeaders
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.taskAgentApiBaseMod.ITaskAgentApiBase
 import typings.vsoNodeApi.taskAgentApiBaseMod.TaskAgentApiBase
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IHeaders
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,12 +37,12 @@ object taskAgentApiMod {
       * @param {boolean} overwrite
       * @param onResult callback function
       */
-    def uploadTaskDefinition(customHeaders: IHeaders, contentStream: ReadableStream[Any], taskId: String, overwrite: Boolean): js.Promise[Unit] = js.native
+    def uploadTaskDefinition(customHeaders: IHeaders, contentStream: ReadableStream, taskId: String, overwrite: Boolean): js.Promise[Unit] = js.native
   }
   
   @js.native
   trait ITaskAgentApi extends ITaskAgentApiBase {
     
-    def uploadTaskDefinition(customHeaders: IHeaders, contentStream: ReadableStream[Any], taskId: String, overwrite: Boolean): js.Promise[Unit] = js.native
+    def uploadTaskDefinition(customHeaders: IHeaders, contentStream: ReadableStream, taskId: String, overwrite: Boolean): js.Promise[Unit] = js.native
   }
 }

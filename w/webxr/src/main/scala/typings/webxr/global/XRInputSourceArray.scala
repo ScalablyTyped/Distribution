@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of the list are expected to change over time, such as with the XRSession inputSources attribute.
   * ref: https://immersive-web.github.io/webxr/#xrinputsourcearray-interface
   */
-@JSGlobal("XRInputSourceArray")
+/* note: abstract class */ @JSGlobal("XRInputSourceArray")
 @js.native
-abstract class XRInputSourceArray ()
+open class XRInputSourceArray ()
   extends StObject
      with typings.webxr.XRInputSourceArray

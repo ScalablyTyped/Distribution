@@ -1,6 +1,6 @@
 package typings.expoModulesAutolinking
 
-import typings.expoModulesAutolinking.typesMod.SupportedPlatform
+import typings.expoModulesAutolinking.buildTypesMod.SupportedPlatform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

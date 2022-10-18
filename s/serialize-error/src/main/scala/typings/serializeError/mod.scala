@@ -3,7 +3,7 @@ package typings.serializeError
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.ErrorConstructor
 import typings.std.Map
-import typings.typeFest.basicMod.JsonObject
+import typings.typeFest.sourceBasicMod.JsonObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,8 +25,8 @@ object mod {
   
   inline def isErrorLike(value: Any): /* is serialize-error.serialize-error.ErrorLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isErrorLike")(value.asInstanceOf[js.Any]).asInstanceOf[/* is serialize-error.serialize-error.ErrorLike */ Boolean]
   
-  inline def serializeError[ErrorType](error: ErrorType): ErrorObject | ErrorType = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrorObject | ErrorType]
-  inline def serializeError[ErrorType](error: ErrorType, options: Options): ErrorObject | ErrorType = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeError")(error.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ErrorObject | ErrorType]
+  inline def serializeError[ErrorType](error: ErrorType): /* import warning: importer.ImportType#apply Failed type conversion: ErrorType extends type-fest.type-fest/source/primitive.Primitive ? ErrorType : serialize-error.serialize-error.ErrorObject */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeError")(error.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: ErrorType extends type-fest.type-fest/source/primitive.Primitive ? ErrorType : serialize-error.serialize-error.ErrorObject */ js.Any]
+  inline def serializeError[ErrorType](error: ErrorType, options: Options): /* import warning: importer.ImportType#apply Failed type conversion: ErrorType extends type-fest.type-fest/source/primitive.Primitive ? ErrorType : serialize-error.serialize-error.ErrorObject */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeError")(error.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: ErrorType extends type-fest.type-fest/source/primitive.Primitive ? ErrorType : serialize-error.serialize-error.ErrorObject */ js.Any]
   
   trait ErrorLike
     extends StObject

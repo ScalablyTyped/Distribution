@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,9 +31,7 @@ trait Finding extends StObject {
     * }, { "email": "person2@company.com" } ] }
     */
   var contacts: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.securitycenter.gapi.client.securitycenter.ContactDetails}
-    */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.Finding & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.securitycenter.gapi.client.securitycenter.ContactDetails} */ js.Any
   ] = js.undefined
   
   /** Containers associated with the finding. containers provides information for both Kubernetes and non-Kubernetes containers. */
@@ -61,9 +58,7 @@ trait Finding extends StObject {
   
   /** Output only. Third party SIEM/SOAR fields within SCC, contains external system information and external system finding fields. */
   var externalSystems: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.securitycenter.gapi.client.securitycenter.GoogleCloudSecuritycenterV1ExternalSystem}
-    */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.Finding & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.securitycenter.gapi.client.securitycenter.GoogleCloudSecuritycenterV1ExternalSystem} */ js.Any
   ] = js.undefined
   
   /**
@@ -138,9 +133,7 @@ trait Finding extends StObject {
     * must start with a letter and contain alphanumeric characters or underscores only.
     */
   var sourceProperties: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.Finding & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** The state of the finding. */
@@ -183,9 +176,7 @@ object Finding {
     inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value*))
     
     inline def setContacts(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.securitycenter.gapi.client.securitycenter.ContactDetails}
-      */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.Finding & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.securitycenter.gapi.client.securitycenter.ContactDetails} */ js.Any
     ): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
     inline def setContactsUndefined: Self = StObject.set(x, "contacts", js.undefined)
@@ -217,9 +208,7 @@ object Finding {
     inline def setExfiltrationUndefined: Self = StObject.set(x, "exfiltration", js.undefined)
     
     inline def setExternalSystems(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.securitycenter.gapi.client.securitycenter.GoogleCloudSecuritycenterV1ExternalSystem}
-      */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.Finding & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.securitycenter.gapi.client.securitycenter.GoogleCloudSecuritycenterV1ExternalSystem} */ js.Any
     ): Self = StObject.set(x, "externalSystems", value.asInstanceOf[js.Any])
     
     inline def setExternalSystemsUndefined: Self = StObject.set(x, "externalSystems", js.undefined)
@@ -293,9 +282,7 @@ object Finding {
     inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
     inline def setSourceProperties(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.Finding & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "sourceProperties", value.asInstanceOf[js.Any])
     
     inline def setSourcePropertiesUndefined: Self = StObject.set(x, "sourceProperties", js.undefined)

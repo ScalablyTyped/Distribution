@@ -2,8 +2,8 @@ package typings.wordpressAdmin.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.lodash.mod.TemplateExecutor
-import typings.wordpressAdmin.mediaViewsMod.MediaFrame
-import typings.wordpressAdmin.mediaViewsMod.UploaderWindow
+import typings.wordpressAdmin.componentsMediaViewsMod.MediaFrame
+import typings.wordpressAdmin.componentsMediaViewsMod.UploaderWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

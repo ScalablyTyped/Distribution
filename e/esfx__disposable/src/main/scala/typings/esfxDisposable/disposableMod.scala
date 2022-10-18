@@ -1,18 +1,18 @@
 package typings.esfxDisposable
 
-import typings.esfxDisposable.asyncDisposableStackMod._AsyncDisposableLike
+import typings.esfxDisposable.distTypesDisposableMod.DisposableScope
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object disposableMod {
   
-  @JSImport("@esfx/disposable/dist/types/disposable", "Disposable")
+  @JSImport("@esfx/disposable/disposable", "Disposable")
   @js.native
   open class Disposable protected ()
-    extends StObject
-       with _AsyncDisposableLike {
+    extends typings.esfxDisposable.distTypesDisposableMod.Disposable {
     /**
       * Creates a `Disposable` wrapper around a callback used to dispose of a resource.
       * @deprecated Use `DisposableStack` or `{ [Disposable.dispose]() { ... } }` instead.
@@ -21,7 +21,7 @@ object disposableMod {
   }
   object Disposable {
     
-    @JSImport("@esfx/disposable/dist/types/disposable", "Disposable")
+    @JSImport("@esfx/disposable/disposable", "Disposable")
     @js.native
     val ^ : js.Any = js.native
     
@@ -31,14 +31,14 @@ object disposableMod {
       * NOTE: This is not spec-compliant and will not be standardized. It is preferred to use a `DisposableStack`
       * or to implement `Disposable.dispose` yourself instead.
       */
-    inline def create(dispose: js.Function0[Unit]): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[Disposable]
+    inline def create(dispose: js.Function0[Unit]): typings.esfxDisposable.distTypesDisposableMod.Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.distTypesDisposableMod.Disposable]
     
     /**
       * A well-known symbol used to define an explicit resource disposal method on an object.
       *
       * NOTE: Uses `Symbol.dispose` if present.
       */
-    @JSImport("@esfx/disposable/dist/types/disposable", "Disposable.dispose")
+    @JSImport("@esfx/disposable/disposable", "Disposable.dispose")
     @js.native
     val dispose: js.Symbol = js.native
     
@@ -98,34 +98,14 @@ object disposableMod {
       * }
       * ```
       */
-    inline def usingEach(iterable: js.Iterable[js.UndefOr[Disposable | Null]]): Generator[js.UndefOr[Disposable | Null], Unit, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("usingEach")(iterable.asInstanceOf[js.Any]).asInstanceOf[Generator[js.UndefOr[Disposable | Null], Unit, Any]]
-  }
-  
-  trait DisposableScope extends StObject {
-    
-    /**
-      * Tracks an exception from the body of a `for..of` statement. See {@link Disposable.scope}.
-      */
-    def fail(error: Any): Unit
-    
-    /**
-      * Tracks a resource to be disposed at the end of a `for..of` statement. See {@link Disposable.scope}.
-      */
-    def `using`[T /* <: js.UndefOr[Disposable | Null] */](value: T): T
-  }
-  object DisposableScope {
-    
-    inline def apply(fail: Any => Unit, `using`: Any => Any): DisposableScope = {
-      val __obj = js.Dynamic.literal(fail = js.Any.fromFunction1(fail))
-      __obj.updateDynamic("using")(js.Any.fromFunction1(`using`))
-      __obj.asInstanceOf[DisposableScope]
-    }
-    
-    extension [Self <: DisposableScope](x: Self) {
-      
-      inline def setFail(value: Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
-      
-      inline def setUsing(value: Any => Any): Self = StObject.set(x, "using", js.Any.fromFunction1(value))
-    }
+    inline def usingEach(iterable: js.Iterable[js.UndefOr[typings.esfxDisposable.distTypesDisposableMod.Disposable | Null]]): Generator[
+        js.UndefOr[typings.esfxDisposable.distTypesDisposableMod.Disposable | Null], 
+        Unit, 
+        Any
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("usingEach")(iterable.asInstanceOf[js.Any]).asInstanceOf[Generator[
+        js.UndefOr[typings.esfxDisposable.distTypesDisposableMod.Disposable | Null], 
+        Unit, 
+        Any
+      ]]
   }
 }

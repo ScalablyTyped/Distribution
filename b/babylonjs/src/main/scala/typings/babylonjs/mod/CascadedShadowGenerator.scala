@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "CascadedShadowGenerator")
 @js.native
 open class CascadedShadowGenerator protected ()
-  extends typings.babylonjs.legacyMod.CascadedShadowGenerator {
+  extends typings.babylonjs.legacyLegacyMod.CascadedShadowGenerator {
   /**
     * Creates a Cascaded Shadow Generator object.
     * A ShadowGenerator is the required tool to use the shadows.
@@ -17,10 +17,10 @@ open class CascadedShadowGenerator protected ()
     * @param light The directional light object generating the shadows.
     * @param usefulFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
     */
-  def this(mapSize: Double, light: typings.babylonjs.directionalLightMod.DirectionalLight) = this()
+  def this(mapSize: Double, light: typings.babylonjs.lightsDirectionalLightMod.DirectionalLight) = this()
   def this(
     mapSize: Double,
-    light: typings.babylonjs.directionalLightMod.DirectionalLight,
+    light: typings.babylonjs.lightsDirectionalLightMod.DirectionalLight,
     usefulFloatFirst: Boolean
   ) = this()
 }
@@ -66,7 +66,7 @@ object CascadedShadowGenerator {
     * @param scene The scene to create the shadow map for
     * @returns The parsed shadow generator
     */
-  inline def Parse(parsedShadowGenerator: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
+  inline def Parse(parsedShadowGenerator: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator]
   
   @JSImport("babylonjs", "CascadedShadowGenerator._FrustumCornersNDCSpace")
   @js.native

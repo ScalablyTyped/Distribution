@@ -1,6 +1,6 @@
 package typings.angularDevkitSchematics.mod
 
-import typings.angularDevkitSchematics.interfaceMod.SchematicContext
+import typings.angularDevkitSchematics.srcEngineInterfaceMod.SchematicContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "TaskScheduler")
 @js.native
 open class TaskScheduler protected ()
-  extends typings.angularDevkitSchematics.engineMod.TaskScheduler {
+  extends typings.angularDevkitSchematics.srcEngineMod.TaskScheduler {
   def this(_context: SchematicContext) = this()
 }
 /* static members */

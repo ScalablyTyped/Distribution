@@ -1,7 +1,7 @@
 package typings.router5TransitionPath
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.router5TransitionPath.transitionPathMod.SegementParams
+import typings.router5TransitionPath.distTransitionPathMod.SegementParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

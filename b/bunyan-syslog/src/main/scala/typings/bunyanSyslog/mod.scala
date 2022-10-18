@@ -2,8 +2,8 @@ package typings.bunyanSyslog
 
 import typings.bunyanSyslog.bunyanSyslogInts.`0`
 import typings.bunyanSyslog.bunyanSyslogInts.`24`
+import typings.node.NodeJS.WritableStream
 import typings.std.Exclude
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ object mod {
   @js.native
   val authpriv: /* 10 */ Double = js.native
   
-  inline def createBunyanStream(options: StreamOptions): WritableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBunyanStream")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream[Any]]
+  inline def createBunyanStream(options: StreamOptions): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createBunyanStream")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream]
   
   @JSImport("bunyan-syslog", "cron")
   @js.native
@@ -96,13 +96,29 @@ object mod {
   @js.native
   val uucp: /* 8 */ Double = js.native
   
-  type Enumerate[N /* <: Double */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    bunyan-syslog.bunyan-syslog.EnumerateInternal<[], N> extends std.Array<infer E> ? E : never
+    }}}
+    */
+  @js.native
+  trait Enumerate[N /* <: Double */] extends StObject
   
   type EnumerateInternal[A /* <: js.Array[Any] */, N /* <: Double */] = /* import warning: importer.ImportType#apply Failed type conversion: bunyan-syslog.anon.0<A, N>[N extends A['length'] ? 0 : 1] */ js.Any
   
   type Facility = Range[`0`, `24`]
   
-  type PrependNextNum[A /* <: js.Array[Any] */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    A['length'] extends infer T ? (t : T, a : A): void extends (x : infer X): void ? X : never : never
+    }}}
+    */
+  @js.native
+  trait PrependNextNum[A /* <: js.Array[Any] */] extends StObject
   
   type Range[FROM /* <: Double */, TO /* <: Double */] = Exclude[Enumerate[TO], Enumerate[FROM]]
   

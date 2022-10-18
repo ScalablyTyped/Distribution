@@ -1,6 +1,6 @@
 package typings.guacamoleClient.mod
 
-import typings.guacamoleClient.guacCommonMod.Mimetype
+import typings.guacamoleClient.libGuacCommonMod.Mimetype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "AudioRecorder")
 @js.native
 open class AudioRecorder ()
-  extends typings.guacamoleClient.audioRecorderMod.AudioRecorder
+  extends typings.guacamoleClient.libAudioRecorderMod.AudioRecorder
 /* static members */
 object AudioRecorder {
   
@@ -27,7 +27,7 @@ object AudioRecorder {
     * @return A Guacamole.AudioRecorder instance supporting the given mimetype and
     * writing to the given stream, or null if support for the given mimetype is absent.
     */
-  inline def getInstance(stream: typings.guacamoleClient.outputStreamMod.OutputStream, mimetype: Mimetype): typings.guacamoleClient.audioRecorderMod.AudioRecorder | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[typings.guacamoleClient.audioRecorderMod.AudioRecorder | Null]
+  inline def getInstance(stream: typings.guacamoleClient.libOutputStreamMod.OutputStream, mimetype: Mimetype): typings.guacamoleClient.libAudioRecorderMod.AudioRecorder | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[typings.guacamoleClient.libAudioRecorderMod.AudioRecorder | Null]
   
   /**
     * Returns a list of all mimetypes supported by any built-in

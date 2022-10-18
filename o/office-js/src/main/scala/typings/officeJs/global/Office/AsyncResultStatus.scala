@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Specifies the result of an asynchronous call.
-  * 
+  *
   * @remarks
-  * 
+  *
   * Returned by the `status` property of the {@link Office.AsyncResult | AsyncResult} object.
   */
 @JSGlobal("Office.AsyncResultStatus")

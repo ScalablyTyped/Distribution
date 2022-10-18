@@ -2,17 +2,17 @@ package typings.jupyterlabServices
 
 import typings.jupyterlabServices.anon.PartialISettings
 import typings.jupyterlabServices.anon.PickIModelidDeepPartialOm
-import typings.jupyterlabServices.configMod.ConfigSection.IOptions
-import typings.jupyterlabServices.configMod.IConfigSection
-import typings.jupyterlabServices.contentsMod.Contents.ICheckpointModel
-import typings.jupyterlabServices.contentsMod.Contents.IModel
-import typings.jupyterlabServices.kernelRestapiMod.IKernelOptions
-import typings.jupyterlabServices.messagesMod.IClearOutputMsg
-import typings.jupyterlabServices.messagesMod.IMessage
-import typings.jupyterlabServices.messagesMod.MessageType
-import typings.jupyterlabServices.restapiMod.ISpecModels
-import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
-import typings.jupyterlabServices.sessionSessionMod.ISessionOptions
+import typings.jupyterlabServices.libConfigMod.ConfigSection.IOptions
+import typings.jupyterlabServices.libConfigMod.IConfigSection
+import typings.jupyterlabServices.libContentsMod.Contents.ICheckpointModel
+import typings.jupyterlabServices.libContentsMod.Contents.IModel
+import typings.jupyterlabServices.libKernelMessagesMod.IClearOutputMsg
+import typings.jupyterlabServices.libKernelMessagesMod.IMessage
+import typings.jupyterlabServices.libKernelMessagesMod.MessageType
+import typings.jupyterlabServices.libKernelRestapiMod.IKernelOptions
+import typings.jupyterlabServices.libKernelspecRestapiMod.ISpecModels
+import typings.jupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
+import typings.jupyterlabServices.libSessionSessionMod.ISessionOptions
 import typings.std.RequestInit
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
@@ -38,11 +38,11 @@ object mod {
   @JSImport("@jupyterlab/services", "ConfigWithDefaults")
   @js.native
   open class ConfigWithDefaults protected ()
-    extends typings.jupyterlabServices.configMod.ConfigWithDefaults {
+    extends typings.jupyterlabServices.libConfigMod.ConfigWithDefaults {
     /**
       * Create a new config with defaults.
       */
-    def this(options: typings.jupyterlabServices.configMod.ConfigWithDefaults.IOptions) = this()
+    def this(options: typings.jupyterlabServices.libConfigMod.ConfigWithDefaults.IOptions) = this()
   }
   
   object Contents {
@@ -70,8 +70,8 @@ object mod {
     * @param options - The options used to initialize the object.
     */
   open class ContentsManager ()
-    extends typings.jupyterlabServices.contentsMod.ContentsManager {
-    def this(options: typings.jupyterlabServices.contentsMod.ContentsManager.IOptions) = this()
+    extends typings.jupyterlabServices.libContentsMod.ContentsManager {
+    def this(options: typings.jupyterlabServices.libContentsMod.ContentsManager.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/services", "Drive")
@@ -82,8 +82,8 @@ object mod {
     * @param options - The options used to initialize the object.
     */
   open class Drive ()
-    extends typings.jupyterlabServices.contentsMod.Drive {
-    def this(options: typings.jupyterlabServices.contentsMod.Drive.IOptions) = this()
+    extends typings.jupyterlabServices.libContentsMod.Drive {
+    def this(options: typings.jupyterlabServices.libContentsMod.Drive.IOptions) = this()
   }
   
   object KernelAPI {
@@ -96,14 +96,14 @@ object mod {
     @js.native
     val KERNEL_SERVICE_URL: /* "api/kernels" */ String = js.native
     
-    inline def getKernelModel(id: String): js.Promise[js.UndefOr[typings.jupyterlabServices.kernelRestapiMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKernelModel")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.jupyterlabServices.kernelRestapiMod.IModel]]]
-    inline def getKernelModel(id: String, settings: ISettings): js.Promise[js.UndefOr[typings.jupyterlabServices.kernelRestapiMod.IModel]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getKernelModel")(id.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[typings.jupyterlabServices.kernelRestapiMod.IModel]]]
+    inline def getKernelModel(id: String): js.Promise[js.UndefOr[typings.jupyterlabServices.libKernelRestapiMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKernelModel")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.jupyterlabServices.libKernelRestapiMod.IModel]]]
+    inline def getKernelModel(id: String, settings: ISettings): js.Promise[js.UndefOr[typings.jupyterlabServices.libKernelRestapiMod.IModel]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getKernelModel")(id.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[typings.jupyterlabServices.libKernelRestapiMod.IModel]]]
     
     inline def interruptKernel(id: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("interruptKernel")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     inline def interruptKernel(id: String, settings: ISettings): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("interruptKernel")(id.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    inline def listRunning(): js.Promise[js.Array[typings.jupyterlabServices.kernelRestapiMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")().asInstanceOf[js.Promise[js.Array[typings.jupyterlabServices.kernelRestapiMod.IModel]]]
-    inline def listRunning(settings: ISettings): js.Promise[js.Array[typings.jupyterlabServices.kernelRestapiMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.jupyterlabServices.kernelRestapiMod.IModel]]]
+    inline def listRunning(): js.Promise[js.Array[typings.jupyterlabServices.libKernelRestapiMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")().asInstanceOf[js.Promise[js.Array[typings.jupyterlabServices.libKernelRestapiMod.IModel]]]
+    inline def listRunning(settings: ISettings): js.Promise[js.Array[typings.jupyterlabServices.libKernelRestapiMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.jupyterlabServices.libKernelRestapiMod.IModel]]]
     
     inline def restartKernel(id: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("restartKernel")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     inline def restartKernel(id: String, settings: ISettings): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("restartKernel")(id.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
@@ -111,20 +111,20 @@ object mod {
     inline def shutdownKernel(id: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdownKernel")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     inline def shutdownKernel(id: String, settings: ISettings): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("shutdownKernel")(id.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    inline def startNew(): js.Promise[typings.jupyterlabServices.kernelRestapiMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startNew")().asInstanceOf[js.Promise[typings.jupyterlabServices.kernelRestapiMod.IModel]]
-    inline def startNew(options: Unit, settings: ISettings): js.Promise[typings.jupyterlabServices.kernelRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(options.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.kernelRestapiMod.IModel]]
-    inline def startNew(options: IKernelOptions): js.Promise[typings.jupyterlabServices.kernelRestapiMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.jupyterlabServices.kernelRestapiMod.IModel]]
-    inline def startNew(options: IKernelOptions, settings: ISettings): js.Promise[typings.jupyterlabServices.kernelRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(options.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.kernelRestapiMod.IModel]]
+    inline def startNew(): js.Promise[typings.jupyterlabServices.libKernelRestapiMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startNew")().asInstanceOf[js.Promise[typings.jupyterlabServices.libKernelRestapiMod.IModel]]
+    inline def startNew(options: Unit, settings: ISettings): js.Promise[typings.jupyterlabServices.libKernelRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(options.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.libKernelRestapiMod.IModel]]
+    inline def startNew(options: IKernelOptions): js.Promise[typings.jupyterlabServices.libKernelRestapiMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.jupyterlabServices.libKernelRestapiMod.IModel]]
+    inline def startNew(options: IKernelOptions, settings: ISettings): js.Promise[typings.jupyterlabServices.libKernelRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(options.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.libKernelRestapiMod.IModel]]
   }
   
   @JSImport("@jupyterlab/services", "KernelConnection")
   @js.native
   open class KernelConnection protected ()
-    extends typings.jupyterlabServices.kernelMod.KernelConnection {
+    extends typings.jupyterlabServices.libKernelMod.KernelConnection {
     /**
       * Construct a kernel object.
       */
-    def this(options: typings.jupyterlabServices.kernelKernelMod.IKernelConnection.IOptions) = this()
+    def this(options: typings.jupyterlabServices.libKernelKernelMod.IKernelConnection.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/services", "KernelManager")
@@ -135,8 +135,8 @@ object mod {
     * @param options - The default options for kernel.
     */
   open class KernelManager ()
-    extends typings.jupyterlabServices.kernelMod.KernelManager {
-    def this(options: typings.jupyterlabServices.kernelManagerMod.KernelManager.IOptions) = this()
+    extends typings.jupyterlabServices.libKernelMod.KernelManager {
+    def this(options: typings.jupyterlabServices.libKernelManagerMod.KernelManager.IOptions) = this()
   }
   
   object KernelMessage {
@@ -145,7 +145,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createMessage[T /* <: IClearOutputMsg */](options: typings.jupyterlabServices.messagesMod.IOptions[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(options.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def createMessage[T /* <: IClearOutputMsg */](options: typings.jupyterlabServices.libKernelMessagesMod.IOptions[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(options.asInstanceOf[js.Any]).asInstanceOf[T]
     
     inline def isClearOutputMsg(msg: IMessage[MessageType]): /* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IClearOutputMsg */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClearOutputMsg")(msg.asInstanceOf[js.Any]).asInstanceOf[/* is @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IClearOutputMsg */ Boolean]
     
@@ -202,8 +202,8 @@ object mod {
     * @param options - The default options for kernel.
     */
   open class KernelSpecManager ()
-    extends typings.jupyterlabServices.kernelspecMod.KernelSpecManager {
-    def this(options: typings.jupyterlabServices.managerMod.KernelSpecManager.IOptions) = this()
+    extends typings.jupyterlabServices.libKernelspecMod.KernelSpecManager {
+    def this(options: typings.jupyterlabServices.libKernelspecManagerMod.KernelSpecManager.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/services", "NbConvertManager")
@@ -212,8 +212,8 @@ object mod {
     * Create a new nbconvert manager.
     */
   open class NbConvertManager ()
-    extends typings.jupyterlabServices.nbconvertMod.NbConvertManager {
-    def this(options: typings.jupyterlabServices.nbconvertMod.NbConvertManager.IOptions) = this()
+    extends typings.jupyterlabServices.libNbconvertMod.NbConvertManager {
+    def this(options: typings.jupyterlabServices.libNbconvertMod.NbConvertManager.IOptions) = this()
   }
   
   object ServerConnection {
@@ -228,7 +228,7 @@ object mod {
     @JSImport("@jupyterlab/services", "ServerConnection.NetworkError")
     @js.native
     open class NetworkError protected ()
-      extends typings.jupyterlabServices.serverconnectionMod.ServerConnection.NetworkError {
+      extends typings.jupyterlabServices.libServerconnectionMod.ServerConnection.NetworkError {
       /**
         * Create a new network error.
         */
@@ -241,7 +241,7 @@ object mod {
     @JSImport("@jupyterlab/services", "ServerConnection.ResponseError")
     @js.native
     open class ResponseError protected ()
-      extends typings.jupyterlabServices.serverconnectionMod.ServerConnection.ResponseError {
+      extends typings.jupyterlabServices.libServerconnectionMod.ServerConnection.ResponseError {
       /**
         * Create a new response error.
         */
@@ -265,7 +265,7 @@ object mod {
         * @returns A promise that resolves with a `ResponseError` object.
         */
       /* static member */
-      inline def create(response: Response): js.Promise[typings.jupyterlabServices.serverconnectionMod.ServerConnection.ResponseError] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(response.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.jupyterlabServices.serverconnectionMod.ServerConnection.ResponseError]]
+      inline def create(response: Response): js.Promise[typings.jupyterlabServices.libServerconnectionMod.ServerConnection.ResponseError] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(response.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.jupyterlabServices.libServerconnectionMod.ServerConnection.ResponseError]]
     }
     
     /**
@@ -321,34 +321,34 @@ object mod {
     @js.native
     val SESSION_SERVICE_URL: /* "api/sessions" */ String = js.native
     
-    inline def getSessionModel(id: String): js.Promise[typings.jupyterlabServices.sessionSessionMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionModel")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.jupyterlabServices.sessionSessionMod.IModel]]
-    inline def getSessionModel(id: String, settings: ISettings): js.Promise[typings.jupyterlabServices.sessionSessionMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSessionModel")(id.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.sessionSessionMod.IModel]]
+    inline def getSessionModel(id: String): js.Promise[typings.jupyterlabServices.libSessionSessionMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionModel")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.jupyterlabServices.libSessionSessionMod.IModel]]
+    inline def getSessionModel(id: String, settings: ISettings): js.Promise[typings.jupyterlabServices.libSessionSessionMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSessionModel")(id.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.libSessionSessionMod.IModel]]
     
     inline def getSessionUrl(baseUrl: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSessionUrl")(baseUrl.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def listRunning(): js.Promise[js.Array[typings.jupyterlabServices.sessionSessionMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")().asInstanceOf[js.Promise[js.Array[typings.jupyterlabServices.sessionSessionMod.IModel]]]
-    inline def listRunning(settings: ISettings): js.Promise[js.Array[typings.jupyterlabServices.sessionSessionMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.jupyterlabServices.sessionSessionMod.IModel]]]
+    inline def listRunning(): js.Promise[js.Array[typings.jupyterlabServices.libSessionSessionMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")().asInstanceOf[js.Promise[js.Array[typings.jupyterlabServices.libSessionSessionMod.IModel]]]
+    inline def listRunning(settings: ISettings): js.Promise[js.Array[typings.jupyterlabServices.libSessionSessionMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.jupyterlabServices.libSessionSessionMod.IModel]]]
     
     inline def shutdownSession(id: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdownSession")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     inline def shutdownSession(id: String, settings: ISettings): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("shutdownSession")(id.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    inline def startSession(options: ISessionOptions): js.Promise[typings.jupyterlabServices.sessionSessionMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.jupyterlabServices.sessionSessionMod.IModel]]
-    inline def startSession(options: ISessionOptions, settings: ISettings): js.Promise[typings.jupyterlabServices.sessionSessionMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startSession")(options.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.sessionSessionMod.IModel]]
+    inline def startSession(options: ISessionOptions): js.Promise[typings.jupyterlabServices.libSessionSessionMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.jupyterlabServices.libSessionSessionMod.IModel]]
+    inline def startSession(options: ISessionOptions, settings: ISettings): js.Promise[typings.jupyterlabServices.libSessionSessionMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startSession")(options.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.libSessionSessionMod.IModel]]
     
-    inline def updateSession(model: PickIModelidDeepPartialOm): js.Promise[typings.jupyterlabServices.sessionSessionMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSession")(model.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.jupyterlabServices.sessionSessionMod.IModel]]
-    inline def updateSession(model: PickIModelidDeepPartialOm, settings: ISettings): js.Promise[typings.jupyterlabServices.sessionSessionMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSession")(model.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.sessionSessionMod.IModel]]
+    inline def updateSession(model: PickIModelidDeepPartialOm): js.Promise[typings.jupyterlabServices.libSessionSessionMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSession")(model.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.jupyterlabServices.libSessionSessionMod.IModel]]
+    inline def updateSession(model: PickIModelidDeepPartialOm, settings: ISettings): js.Promise[typings.jupyterlabServices.libSessionSessionMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSession")(model.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.libSessionSessionMod.IModel]]
   }
   
   @JSImport("@jupyterlab/services", "SessionManager")
   @js.native
   open class SessionManager protected ()
-    extends typings.jupyterlabServices.sessionMod.SessionManager {
+    extends typings.jupyterlabServices.libSessionMod.SessionManager {
     /**
       * Construct a new session manager.
       *
       * @param options - The default options for each session.
       */
-    def this(options: typings.jupyterlabServices.sessionManagerMod.SessionManager.IOptions) = this()
+    def this(options: typings.jupyterlabServices.libSessionManagerMod.SessionManager.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/services", "SettingManager")
@@ -357,8 +357,8 @@ object mod {
     * Create a new setting manager.
     */
   open class SettingManager ()
-    extends typings.jupyterlabServices.settingMod.SettingManager {
-    def this(options: typings.jupyterlabServices.settingMod.SettingManager.IOptions) = this()
+    extends typings.jupyterlabServices.libSettingMod.SettingManager {
+    def this(options: typings.jupyterlabServices.libSettingMod.SettingManager.IOptions) = this()
   }
   
   object Terminal {
@@ -382,20 +382,20 @@ object mod {
     
     inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
     
-    inline def listRunning(): js.Promise[js.Array[typings.jupyterlabServices.terminalRestapiMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")().asInstanceOf[js.Promise[js.Array[typings.jupyterlabServices.terminalRestapiMod.IModel]]]
-    inline def listRunning(settings: ISettings): js.Promise[js.Array[typings.jupyterlabServices.terminalRestapiMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.jupyterlabServices.terminalRestapiMod.IModel]]]
+    inline def listRunning(): js.Promise[js.Array[typings.jupyterlabServices.libTerminalRestapiMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")().asInstanceOf[js.Promise[js.Array[typings.jupyterlabServices.libTerminalRestapiMod.IModel]]]
+    inline def listRunning(settings: ISettings): js.Promise[js.Array[typings.jupyterlabServices.libTerminalRestapiMod.IModel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listRunning")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.jupyterlabServices.libTerminalRestapiMod.IModel]]]
     
     inline def shutdownTerminal(name: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdownTerminal")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     inline def shutdownTerminal(name: String, settings: ISettings): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("shutdownTerminal")(name.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    inline def startNew(): js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startNew")().asInstanceOf[js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel]]
-    inline def startNew(settings: Unit, name: String): js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel]]
-    inline def startNew(settings: Unit, name: String, cwd: String): js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel]]
-    inline def startNew(settings: Unit, name: Unit, cwd: String): js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel]]
-    inline def startNew(settings: ISettings): js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel]]
-    inline def startNew(settings: ISettings, name: String): js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel]]
-    inline def startNew(settings: ISettings, name: String, cwd: String): js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel]]
-    inline def startNew(settings: ISettings, name: Unit, cwd: String): js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.terminalRestapiMod.IModel]]
+    inline def startNew(): js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startNew")().asInstanceOf[js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel]]
+    inline def startNew(settings: Unit, name: String): js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel]]
+    inline def startNew(settings: Unit, name: String, cwd: String): js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel]]
+    inline def startNew(settings: Unit, name: Unit, cwd: String): js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel]]
+    inline def startNew(settings: ISettings): js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel]]
+    inline def startNew(settings: ISettings, name: String): js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel]]
+    inline def startNew(settings: ISettings, name: String, cwd: String): js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel]]
+    inline def startNew(settings: ISettings, name: Unit, cwd: String): js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jupyterlabServices.libTerminalRestapiMod.IModel]]
   }
   
   @JSImport("@jupyterlab/services", "TerminalManager")
@@ -404,8 +404,8 @@ object mod {
     * Construct a new terminal manager.
     */
   open class TerminalManager ()
-    extends typings.jupyterlabServices.terminalMod.TerminalManager {
-    def this(options: typings.jupyterlabServices.terminalManagerMod.TerminalManager.IOptions) = this()
+    extends typings.jupyterlabServices.libTerminalMod.TerminalManager {
+    def this(options: typings.jupyterlabServices.libTerminalManagerMod.TerminalManager.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/services", "WorkspaceManager")
@@ -414,7 +414,7 @@ object mod {
     * Create a new workspace manager.
     */
   open class WorkspaceManager ()
-    extends typings.jupyterlabServices.workspaceMod.WorkspaceManager {
-    def this(options: typings.jupyterlabServices.workspaceMod.WorkspaceManager.IOptions) = this()
+    extends typings.jupyterlabServices.libWorkspaceMod.WorkspaceManager {
+    def this(options: typings.jupyterlabServices.libWorkspaceMod.WorkspaceManager.IOptions) = this()
   }
 }

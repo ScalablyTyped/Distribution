@@ -15,7 +15,7 @@ import typings.wordpressEditPost.anon.PartialEditorSettings
 import typings.wordpressEditPost.anon.Slug
 import typings.wordpressEditPost.anon.TypeofimportedActions
 import typings.wordpressEditPost.anon.TypeofimportedSelectors
-import typings.wordpressEditPost.pluginBlockSettingsMenuItemMod.PluginBlockSettingsMenuItem.Props
+import typings.wordpressEditPost.componentsBlockSettingsMenuPluginBlockSettingsMenuItemMod.PluginBlockSettingsMenuItem.Props
 import typings.wordpressEditPost.wordpressEditPostStrings.`coreSlashedit-post`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -50,7 +50,9 @@ object mod {
     */
   object PluginDocumentSettingPanel {
     
-    inline def apply(props: typings.wordpressEditPost.pluginDocumentSettingPanelMod.PluginDocumentSettingPanel.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(
+      props: typings.wordpressEditPost.componentsSidebarPluginDocumentSettingPanelMod.PluginDocumentSettingPanel.Props
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/edit-post", "PluginDocumentSettingPanel")
     @js.native
@@ -64,7 +66,9 @@ object mod {
   
   @JSImport("@wordpress/edit-post", "PluginMoreMenuItem")
   @js.native
-  val PluginMoreMenuItem: ComponentType[typings.wordpressEditPost.pluginMoreMenuItemMod.PluginMoreMenuItem.Props] = js.native
+  val PluginMoreMenuItem: ComponentType[
+    typings.wordpressEditPost.componentsHeaderPluginMoreMenuItemMod.PluginMoreMenuItem.Props
+  ] = js.native
   
   /**
     * Renders provided content to the post-publish panel in the publish flow (side panel that opens
@@ -87,7 +91,9 @@ object mod {
     */
   object PluginPostPublishPanel {
     
-    inline def apply(props: typings.wordpressEditPost.pluginPostPublishPanelMod.PluginPostPublishPanel.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(
+      props: typings.wordpressEditPost.componentsSidebarPluginPostPublishPanelMod.PluginPostPublishPanel.Props
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/edit-post", "PluginPostPublishPanel")
     @js.native
@@ -117,7 +123,9 @@ object mod {
     */
   object PluginPostStatusInfo {
     
-    inline def apply(props: typings.wordpressEditPost.pluginPostStatusInfoMod.PluginPostStatusInfo.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(
+      props: typings.wordpressEditPost.componentsSidebarPluginPostStatusInfoMod.PluginPostStatusInfo.Props
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/edit-post", "PluginPostStatusInfo")
     @js.native
@@ -150,7 +158,9 @@ object mod {
     */
   object PluginPrePublishPanel {
     
-    inline def apply(props: typings.wordpressEditPost.pluginPrePublishPanelMod.PluginPrePublishPanel.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(
+      props: typings.wordpressEditPost.componentsSidebarPluginPrePublishPanelMod.PluginPrePublishPanel.Props
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/edit-post", "PluginPrePublishPanel")
     @js.native
@@ -164,12 +174,12 @@ object mod {
   
   @JSImport("@wordpress/edit-post", "PluginSidebar")
   @js.native
-  val PluginSidebar: ComponentType[typings.wordpressEditPost.pluginSidebarMod.PluginSidebar.Props] = js.native
+  val PluginSidebar: ComponentType[typings.wordpressEditPost.componentsSidebarPluginSidebarMod.PluginSidebar.Props] = js.native
   
   @JSImport("@wordpress/edit-post", "PluginSidebarMoreMenuItem")
   @js.native
   val PluginSidebarMoreMenuItem: ComponentType[
-    typings.wordpressEditPost.pluginSidebarMoreMenuItemMod.PluginSidebarMoreMenuItem.Props
+    typings.wordpressEditPost.componentsHeaderPluginSidebarMoreMenuItemMod.PluginSidebarMoreMenuItem.Props
   ] = js.native
   
   inline def initializeEditor(id: String, postType: String, postId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeEditor")(id.asInstanceOf[js.Any], postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any])).asInstanceOf[Unit]

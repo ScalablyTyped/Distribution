@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Informs Windows that an application wishes to participate in printing. The PrintManager class is also used for programmatically initiating printing. */
-@JSGlobal("Windows.Graphics.Printing.PrintManager")
+/* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.PrintManager")
 @js.native
-abstract class PrintManager ()
+open class PrintManager ()
   extends StObject
      with typings.winrtUwp.Windows.Graphics.Printing.PrintManager
 object PrintManager {

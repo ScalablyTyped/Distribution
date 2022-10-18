@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "MatrixUser")
 @js.native
 open class MatrixUser protected ()
-  extends typings.matrixAppserviceBridge.usersMatrixMod.MatrixUser {
+  extends typings.matrixAppserviceBridge.libModelsUsersMatrixMod.MatrixUser {
   /**
     * Construct a Matrix user.
     * @param userId The userId of the user.

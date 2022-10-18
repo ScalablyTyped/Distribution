@@ -2,7 +2,7 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.distComponentsSpotifyMod.SpotifyProps
+import typings.wixUiIconsCommon.distSrcOnStageGeneralDistComponentsSpotifyMod.SpotifyProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

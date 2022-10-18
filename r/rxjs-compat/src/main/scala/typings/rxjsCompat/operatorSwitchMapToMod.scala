@@ -1,5 +1,7 @@
 package typings.rxjsCompat
 
+import typings.rxjs.distTypesInternalTypesMod.ObservableInput
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +12,9 @@ object operatorSwitchMapToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def switchMapTo[T, R](
-    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
-  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("switchMapTo")(observable.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def switchMapTo[T, R](observable: ObservableInput[R]): Observable_[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchMapTo")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable_[R]]
   inline def switchMapTo[T, I, R](
-    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<I> */ Any,
+    observable: ObservableInput[I],
     resultSelector: js.Function4[
       /* outerValue */ T, 
       /* innerValue */ I, 
@@ -22,5 +22,5 @@ object operatorSwitchMapToMod {
       /* innerIndex */ Double, 
       R
     ]
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("switchMapTo")(observable.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Any]
+  ): Observable_[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("switchMapTo")(observable.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable_[R]]
 }

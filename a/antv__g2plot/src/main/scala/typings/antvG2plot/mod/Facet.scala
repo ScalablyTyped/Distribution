@@ -7,7 +7,7 @@ import typings.antvG2plot.antvG2plotStrings.matrix
 import typings.antvG2plot.antvG2plotStrings.mirror
 import typings.antvG2plot.antvG2plotStrings.rect
 import typings.antvG2plot.antvG2plotStrings.tree
-import typings.antvG2plot.facetTypesMod.FacetOptions
+import typings.antvG2plot.libPlotsFacetTypesMod.FacetOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Facet")
 @js.native
 open class Facet protected ()
-  extends typings.antvG2plot.facetMod.Facet {
+  extends typings.antvG2plot.libPlotsFacetMod.Facet {
   def this(
     container: String,
     options: FacetOptions[

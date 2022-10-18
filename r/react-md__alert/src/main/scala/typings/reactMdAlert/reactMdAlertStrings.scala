@@ -1,8 +1,8 @@
 package typings.reactMdAlert
 
-import typings.reactMdAlert.messageQueueContextMod.DuplicateBehavior
-import typings.reactMdAlert.messageQueueContextMod.MessagePriority
-import typings.reactMdAlert.snackbarMod.SnackbarPosition
+import typings.reactMdAlert.typesMessageQueueContextMod.DuplicateBehavior
+import typings.reactMdAlert.typesMessageQueueContextMod.MessagePriority
+import typings.reactMdAlert.typesSnackbarMod.SnackbarPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

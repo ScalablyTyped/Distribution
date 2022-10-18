@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "ProgressIndicator")
 @js.native
 open class ProgressIndicator protected ()
-  extends typings.carbonComponents.componentsMod.ProgressIndicator {
+  extends typings.carbonComponents.globalsJsComponentsMod.ProgressIndicator {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialProgressIndicatorO) = this()
 }

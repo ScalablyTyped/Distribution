@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Initializes the state.
   */
 open class AlphaState ()
-  extends typings.babylonjs.legacyMod.AlphaState
+  extends typings.babylonjs.legacyLegacyMod.AlphaState

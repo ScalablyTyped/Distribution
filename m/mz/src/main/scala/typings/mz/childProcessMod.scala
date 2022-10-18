@@ -4,15 +4,19 @@ import typings.mz.anon.encodingBufferEncodingund
 import typings.mz.anon.encodingbuffernullundefin
 import typings.mz.anon.encodingstringnullundefin
 import typings.mz.mzStrings.buffer
+import typings.node.anon.encodingBufferEncodingExe
+import typings.node.anon.encodingbuffernullExecOpt
 import typings.node.bufferMod.global.Buffer
 import typings.node.childProcessMod.ChildProcessByStdio
 import typings.node.childProcessMod.ChildProcessWithoutNullStreams
 import typings.node.childProcessMod.ExecException
+import typings.node.childProcessMod.ExecFileException
 import typings.node.childProcessMod.ExecFileOptions
 import typings.node.childProcessMod.ExecFileOptionsWithStringEncoding
 import typings.node.childProcessMod.ExecFileSyncOptions
 import typings.node.childProcessMod.ExecFileSyncOptionsWithBufferEncoding
 import typings.node.childProcessMod.ExecFileSyncOptionsWithStringEncoding
+import typings.node.childProcessMod.ExecOptions
 import typings.node.childProcessMod.ExecSyncOptions
 import typings.node.childProcessMod.ExecSyncOptionsWithBufferEncoding
 import typings.node.childProcessMod.ExecSyncOptionsWithStringEncoding
@@ -27,8 +31,9 @@ import typings.node.childProcessMod.SpawnSyncReturns
 import typings.node.childProcessMod.StdioNull
 import typings.node.childProcessMod.StdioPipe
 import typings.node.eventsMod.EventEmitterOptions
-import typings.node.nodeStreamMod.Readable
-import typings.node.nodeStreamMod.Writable
+import typings.node.fsMod.ObjectEncodingOptions
+import typings.node.nodeColonstreamMod.Readable
+import typings.node.nodeColonstreamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,11 +59,108 @@ object childProcessMod {
     def this(options: EventEmitterOptions) = this()
   }
   
-  inline def exec(command: String): js.Promise[js.Tuple2[String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
+  /**
+    * Spawns a shell then executes the `command` within that shell, buffering any
+    * generated output. The `command` string passed to the exec function is processed
+    * directly by the shell and special characters (vary based on [shell](https://en.wikipedia.org/wiki/List_of_command-line_interpreters))
+    * need to be dealt with accordingly:
+    *
+    * ```js
+    * const { exec } = require('child_process');
+    *
+    * exec('"/path/to/test file/test.sh" arg1 arg2');
+    * // Double quotes are used so that the space in the path is not interpreted as
+    * // a delimiter of multiple arguments.
+    *
+    * exec('echo "The \\$HOME variable is $HOME"');
+    * // The $HOME variable is escaped in the first instance, but not in the second.
+    * ```
+    *
+    * **Never pass unsanitized user input to this function. Any input containing shell**
+    * **metacharacters may be used to trigger arbitrary command execution.**
+    *
+    * If a `callback` function is provided, it is called with the arguments`(error, stdout, stderr)`. On success, `error` will be `null`. On error,`error` will be an instance of `Error`. The
+    * `error.code` property will be
+    * the exit code of the process. By convention, any exit code other than `0`indicates an error. `error.signal` will be the signal that terminated the
+    * process.
+    *
+    * The `stdout` and `stderr` arguments passed to the callback will contain the
+    * stdout and stderr output of the child process. By default, Node.js will decode
+    * the output as UTF-8 and pass strings to the callback. The `encoding` option
+    * can be used to specify the character encoding used to decode the stdout and
+    * stderr output. If `encoding` is `'buffer'`, or an unrecognized character
+    * encoding, `Buffer` objects will be passed to the callback instead.
+    *
+    * ```js
+    * const { exec } = require('child_process');
+    * exec('cat *.js missing_file | wc -l', (error, stdout, stderr) => {
+    *   if (error) {
+    *     console.error(`exec error: ${error}`);
+    *     return;
+    *   }
+    *   console.log(`stdout: ${stdout}`);
+    *   console.error(`stderr: ${stderr}`);
+    * });
+    * ```
+    *
+    * If `timeout` is greater than `0`, the parent will send the signal
+    * identified by the `killSignal` property (the default is `'SIGTERM'`) if the
+    * child runs longer than `timeout` milliseconds.
+    *
+    * Unlike the [`exec(3)`](http://man7.org/linux/man-pages/man3/exec.3.html) POSIX system call, `child_process.exec()` does not replace
+    * the existing process and uses a shell to execute the command.
+    *
+    * If this method is invoked as its `util.promisify()` ed version, it returns
+    * a `Promise` for an `Object` with `stdout` and `stderr` properties. The returned`ChildProcess` instance is attached to the `Promise` as a `child` property. In
+    * case of an error (including any error resulting in an exit code other than 0), a
+    * rejected promise is returned, with the same `error` object given in the
+    * callback, but with two additional properties `stdout` and `stderr`.
+    *
+    * ```js
+    * const util = require('util');
+    * const exec = util.promisify(require('child_process').exec);
+    *
+    * async function lsExample() {
+    *   const { stdout, stderr } = await exec('ls');
+    *   console.log('stdout:', stdout);
+    *   console.error('stderr:', stderr);
+    * }
+    * lsExample();
+    * ```
+    *
+    * If the `signal` option is enabled, calling `.abort()` on the corresponding`AbortController` is similar to calling `.kill()` on the child process except
+    * the error passed to the callback will be an `AbortError`:
+    *
+    * ```js
+    * const { exec } = require('child_process');
+    * const controller = new AbortController();
+    * const { signal } = controller;
+    * const child = exec('grep ssh', { signal }, (error) => {
+    *   console.log(error); // an AbortError
+    * });
+    * controller.abort();
+    * ```
+    * @since v0.1.90
+    * @param command The command to run, with space-separated arguments.
+    * @param callback called with the output when process terminates.
+    */
+  inline def exec(command: String): typings.node.childProcessMod.ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any]).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   inline def exec(
     command: String,
-    callback: js.Function3[/* error */ ExecException | Null, /* stdout */ String, /* stderr */ String, Unit]
+    callback: js.Function3[ExecException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  // `options` without an `encoding` means stdout/stderr are definitely `string`.
+  inline def exec(command: String, options: (ObjectEncodingOptions & ExecOptions) | ExecOptions): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  inline def exec(
+    command: String,
+    options: (ObjectEncodingOptions & ExecOptions) | ExecOptions,
+    callback: js.Function3[
+      ExecException | Null, 
+      Buffer | (/* stdout */ String), 
+      Buffer | (/* stderr */ String), 
+      Unit
+    ]
+  ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   inline def exec(
     command: String,
     options: Null,
@@ -102,225 +204,297 @@ object childProcessMod {
       Unit
     ]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  // `options` with well known `encoding` means stdout/stderr are definitely `string`.
+  inline def exec(command: String, options: encodingBufferEncodingExe): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  inline def exec(
+    command: String,
+    options: encodingBufferEncodingExe,
+    callback: js.Function3[
+      ExecException | Null, 
+      Buffer | (/* stdout */ String), 
+      Buffer | (/* stderr */ String), 
+      Unit
+    ]
+  ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  // `options` with `"buffer"` or `null` for `encoding` means stdout/stderr are definitely `Buffer`.
+  inline def exec(command: String, options: encodingbuffernullExecOpt): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  inline def exec(
+    command: String,
+    options: encodingbuffernullExecOpt,
+    callback: js.Function3[/* error */ ExecException | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   
-  inline def execFile(file: String): js.Promise[js.Tuple2[String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
-  inline def execFile(file: String, args: js.Array[String]): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
+  /**
+    * The `child_process.execFile()` function is similar to {@link exec} except that it does not spawn a shell by default. Rather, the specified
+    * executable `file` is spawned directly as a new process making it slightly more
+    * efficient than {@link exec}.
+    *
+    * The same options as {@link exec} are supported. Since a shell is
+    * not spawned, behaviors such as I/O redirection and file globbing are not
+    * supported.
+    *
+    * ```js
+    * const { execFile } = require('child_process');
+    * const child = execFile('node', ['--version'], (error, stdout, stderr) => {
+    *   if (error) {
+    *     throw error;
+    *   }
+    *   console.log(stdout);
+    * });
+    * ```
+    *
+    * The `stdout` and `stderr` arguments passed to the callback will contain the
+    * stdout and stderr output of the child process. By default, Node.js will decode
+    * the output as UTF-8 and pass strings to the callback. The `encoding` option
+    * can be used to specify the character encoding used to decode the stdout and
+    * stderr output. If `encoding` is `'buffer'`, or an unrecognized character
+    * encoding, `Buffer` objects will be passed to the callback instead.
+    *
+    * If this method is invoked as its `util.promisify()` ed version, it returns
+    * a `Promise` for an `Object` with `stdout` and `stderr` properties. The returned`ChildProcess` instance is attached to the `Promise` as a `child` property. In
+    * case of an error (including any error resulting in an exit code other than 0), a
+    * rejected promise is returned, with the same `error` object given in the
+    * callback, but with two additional properties `stdout` and `stderr`.
+    *
+    * ```js
+    * const util = require('util');
+    * const execFile = util.promisify(require('child_process').execFile);
+    * async function getVersion() {
+    *   const { stdout } = await execFile('node', ['--version']);
+    *   console.log(stdout);
+    * }
+    * getVersion();
+    * ```
+    *
+    * **If the `shell` option is enabled, do not pass unsanitized user input to this**
+    * **function. Any input containing shell metacharacters may be used to trigger**
+    * **arbitrary command execution.**
+    *
+    * If the `signal` option is enabled, calling `.abort()` on the corresponding`AbortController` is similar to calling `.kill()` on the child process except
+    * the error passed to the callback will be an `AbortError`:
+    *
+    * ```js
+    * const { execFile } = require('child_process');
+    * const controller = new AbortController();
+    * const { signal } = controller;
+    * const child = execFile('node', ['--version'], { signal }, (error) => {
+    *   console.log(error); // an AbortError
+    * });
+    * controller.abort();
+    * ```
+    * @since v0.1.91
+    * @param file The name or path of the executable file to run.
+    * @param args List of string arguments.
+    * @param callback Called with the output when process terminates.
+    */
+  inline def execFile(file: String): typings.node.childProcessMod.ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any]).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  inline def execFile(file: String, args: js.Array[String]): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   inline def execFile(
     file: String,
     args: js.Array[String],
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+    callback: js.Function3[js.Error | ExecFileException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  inline def execFile(file: String, args: js.Array[String], options: ObjectEncodingOptions & ExecFileOptions): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  inline def execFile(
+    file: String,
+    args: js.Array[String],
+    options: (ObjectEncodingOptions & ExecFileOptions) | ExecFileOptions,
+    callback: js.Function3[
+      js.Error | ExecFileException | Null, 
+      Buffer | (/* stdout */ String), 
+      Buffer | (/* stderr */ String), 
+      Unit
+    ]
+  ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   inline def execFile(
     file: String,
     args: js.Array[String],
     options: Null,
-    callback: js.Function3[
-      /* error */ js.Error | Null, 
-      /* stdout */ String | Buffer, 
-      /* stderr */ String | Buffer, 
-      Unit
-    ]
+    callback: js.Function3[js.Error | ExecFileException | Null, Buffer | String, Buffer | String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   inline def execFile(
     file: String,
     args: js.Array[String],
     options: Unit,
-    callback: js.Function3[
-      /* error */ js.Error | Null, 
-      /* stdout */ String | Buffer, 
-      /* stderr */ String | Buffer, 
-      Unit
-    ]
+    callback: js.Function3[js.Error | ExecFileException | Null, Buffer | String, Buffer | String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(file: String, args: js.Array[String], options: ExecFileOptionsWithBufferEncoding): js.Promise[js.Tuple2[Buffer, Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Buffer, Buffer]]]
   inline def execFile(
     file: String,
     args: js.Array[String],
-    options: ExecFileOptionsWithBufferEncoding,
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
-  ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(file: String, args: js.Array[String], options: ExecFileOptionsWithOtherEncoding): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String | Buffer, String | Buffer]]]
+    options: typings.node.childProcessMod.ExecFileOptionsWithBufferEncoding
+  ): js.Promise[js.Tuple2[Buffer, Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Buffer, Buffer]]]
   inline def execFile(
     file: String,
     args: js.Array[String],
-    options: ExecFileOptionsWithOtherEncoding,
-    callback: js.Function3[
-      /* error */ js.Error | Null, 
-      /* stdout */ String | Buffer, 
-      /* stderr */ String | Buffer, 
-      Unit
-    ]
+    options: typings.node.childProcessMod.ExecFileOptionsWithBufferEncoding,
+    callback: js.Function3[js.Error | ExecFileException | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(file: String, args: js.Array[String], options: ExecFileOptions): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
+  inline def execFile(
+    file: String,
+    args: js.Array[String],
+    options: typings.node.childProcessMod.ExecFileOptionsWithOtherEncoding
+  ): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String | Buffer, String | Buffer]]]
+  inline def execFile(
+    file: String,
+    args: js.Array[String],
+    options: typings.node.childProcessMod.ExecFileOptionsWithOtherEncoding,
+    callback: js.Function3[js.Error | ExecFileException | Null, Buffer | String, Buffer | String, Unit]
+  ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   inline def execFile(file: String, args: js.Array[String], options: ExecFileOptionsWithStringEncoding): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
   inline def execFile(
     file: String,
     args: js.Array[String],
     options: ExecFileOptionsWithStringEncoding,
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ String, /* stderr */ String, Unit]
-  ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(
-    file: String,
-    args: js.Array[String],
-    options: ExecFileOptions,
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+    callback: js.Function3[js.Error | ExecFileException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   inline def execFile(
     file: String,
     args: Null,
-    callback: js.Function3[js.Error | Null, Buffer | (/* stdout */ String), Buffer | (/* stderr */ String), Unit]
+    callback: js.Function3[
+      js.Error | ExecFileException | Null, 
+      Buffer | (/* stdout */ String), 
+      Buffer | (/* stderr */ String), 
+      Unit
+    ]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  inline def execFile(file: String, args: Null, options: ObjectEncodingOptions & ExecFileOptions): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  inline def execFile(
+    file: String,
+    args: Null,
+    options: (ObjectEncodingOptions & ExecFileOptions) | ExecFileOptions,
+    callback: js.Function3[
+      js.Error | ExecFileException | Null, 
+      Buffer | (/* stdout */ String), 
+      Buffer | (/* stderr */ String), 
+      Unit
+    ]
+  ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   inline def execFile(
     file: String,
     args: Null,
     options: Null,
-    callback: js.Function3[
-      /* error */ js.Error | Null, 
-      /* stdout */ String | Buffer, 
-      /* stderr */ String | Buffer, 
-      Unit
-    ]
+    callback: js.Function3[js.Error | ExecFileException | Null, Buffer | String, Buffer | String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   inline def execFile(
     file: String,
     args: Null,
     options: Unit,
-    callback: js.Function3[
-      /* error */ js.Error | Null, 
-      /* stdout */ String | Buffer, 
-      /* stderr */ String | Buffer, 
-      Unit
-    ]
+    callback: js.Function3[js.Error | ExecFileException | Null, Buffer | String, Buffer | String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(file: String, args: Null, options: ExecFileOptionsWithBufferEncoding): js.Promise[js.Tuple2[Buffer, Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Buffer, Buffer]]]
+  inline def execFile(file: String, args: Null, options: typings.node.childProcessMod.ExecFileOptionsWithBufferEncoding): js.Promise[js.Tuple2[Buffer, Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Buffer, Buffer]]]
   inline def execFile(
     file: String,
     args: Null,
-    options: ExecFileOptionsWithBufferEncoding,
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    options: typings.node.childProcessMod.ExecFileOptionsWithBufferEncoding,
+    callback: js.Function3[js.Error | ExecFileException | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(file: String, args: Null, options: ExecFileOptionsWithOtherEncoding): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String | Buffer, String | Buffer]]]
+  inline def execFile(file: String, args: Null, options: typings.node.childProcessMod.ExecFileOptionsWithOtherEncoding): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String | Buffer, String | Buffer]]]
   inline def execFile(
     file: String,
     args: Null,
-    options: ExecFileOptionsWithOtherEncoding,
-    callback: js.Function3[
-      /* error */ js.Error | Null, 
-      /* stdout */ String | Buffer, 
-      /* stderr */ String | Buffer, 
-      Unit
-    ]
+    options: typings.node.childProcessMod.ExecFileOptionsWithOtherEncoding,
+    callback: js.Function3[js.Error | ExecFileException | Null, Buffer | String, Buffer | String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(file: String, args: Null, options: ExecFileOptions): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
   inline def execFile(file: String, args: Null, options: ExecFileOptionsWithStringEncoding): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
   inline def execFile(
     file: String,
     args: Null,
     options: ExecFileOptionsWithStringEncoding,
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ String, /* stderr */ String, Unit]
-  ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(
-    file: String,
-    args: Null,
-    options: ExecFileOptions,
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+    callback: js.Function3[js.Error | ExecFileException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   inline def execFile(
     file: String,
     args: Unit,
-    callback: js.Function3[js.Error | Null, Buffer | (/* stdout */ String), Buffer | (/* stderr */ String), Unit]
+    callback: js.Function3[
+      js.Error | ExecFileException | Null, 
+      Buffer | (/* stdout */ String), 
+      Buffer | (/* stderr */ String), 
+      Unit
+    ]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  inline def execFile(file: String, args: Unit, options: ObjectEncodingOptions & ExecFileOptions): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  inline def execFile(
+    file: String,
+    args: Unit,
+    options: (ObjectEncodingOptions & ExecFileOptions) | ExecFileOptions,
+    callback: js.Function3[
+      js.Error | ExecFileException | Null, 
+      Buffer | (/* stdout */ String), 
+      Buffer | (/* stderr */ String), 
+      Unit
+    ]
+  ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   inline def execFile(
     file: String,
     args: Unit,
     options: Null,
-    callback: js.Function3[
-      /* error */ js.Error | Null, 
-      /* stdout */ String | Buffer, 
-      /* stderr */ String | Buffer, 
-      Unit
-    ]
+    callback: js.Function3[js.Error | ExecFileException | Null, Buffer | String, Buffer | String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   inline def execFile(
     file: String,
     args: Unit,
     options: Unit,
-    callback: js.Function3[
-      /* error */ js.Error | Null, 
-      /* stdout */ String | Buffer, 
-      /* stderr */ String | Buffer, 
-      Unit
-    ]
+    callback: js.Function3[js.Error | ExecFileException | Null, Buffer | String, Buffer | String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(file: String, args: Unit, options: ExecFileOptionsWithBufferEncoding): js.Promise[js.Tuple2[Buffer, Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Buffer, Buffer]]]
+  inline def execFile(file: String, args: Unit, options: typings.node.childProcessMod.ExecFileOptionsWithBufferEncoding): js.Promise[js.Tuple2[Buffer, Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Buffer, Buffer]]]
   inline def execFile(
     file: String,
     args: Unit,
-    options: ExecFileOptionsWithBufferEncoding,
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    options: typings.node.childProcessMod.ExecFileOptionsWithBufferEncoding,
+    callback: js.Function3[js.Error | ExecFileException | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(file: String, args: Unit, options: ExecFileOptionsWithOtherEncoding): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String | Buffer, String | Buffer]]]
+  inline def execFile(file: String, args: Unit, options: typings.node.childProcessMod.ExecFileOptionsWithOtherEncoding): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String | Buffer, String | Buffer]]]
   inline def execFile(
     file: String,
     args: Unit,
-    options: ExecFileOptionsWithOtherEncoding,
-    callback: js.Function3[
-      /* error */ js.Error | Null, 
-      /* stdout */ String | Buffer, 
-      /* stderr */ String | Buffer, 
-      Unit
-    ]
+    options: typings.node.childProcessMod.ExecFileOptionsWithOtherEncoding,
+    callback: js.Function3[js.Error | ExecFileException | Null, Buffer | String, Buffer | String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(file: String, args: Unit, options: ExecFileOptions): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
   inline def execFile(file: String, args: Unit, options: ExecFileOptionsWithStringEncoding): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
   inline def execFile(
     file: String,
     args: Unit,
     options: ExecFileOptionsWithStringEncoding,
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+    callback: js.Function3[js.Error | ExecFileException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  // no `options` definitely means stdout/stderr are `string`.
   inline def execFile(
     file: String,
-    args: Unit,
-    options: ExecFileOptions,
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ String, /* stderr */ String, Unit]
-  ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(
-    file: String,
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+    callback: js.Function3[js.Error | ExecFileException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(file: String, options: ExecFileOptionsWithBufferEncoding): js.Promise[js.Tuple2[Buffer, Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Buffer, Buffer]]]
+  inline def execFile(file: String, options: ObjectEncodingOptions & ExecFileOptions): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  // `options` without an `encoding` means stdout/stderr are definitely `string`.
   inline def execFile(
     file: String,
-    options: ExecFileOptionsWithBufferEncoding,
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
-  ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(file: String, options: ExecFileOptionsWithOtherEncoding): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String | Buffer, String | Buffer]]]
-  inline def execFile(
-    file: String,
-    options: ExecFileOptionsWithOtherEncoding,
+    options: (ObjectEncodingOptions & ExecFileOptions) | ExecFileOptions,
     callback: js.Function3[
-      /* error */ js.Error | Null, 
-      /* stdout */ String | Buffer, 
-      /* stderr */ String | Buffer, 
+      js.Error | ExecFileException | Null, 
+      Buffer | (/* stdout */ String), 
+      Buffer | (/* stderr */ String), 
       Unit
     ]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
-  inline def execFile(file: String, options: ExecFileOptions): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
-  inline def execFile(file: String, options: ExecFileOptionsWithStringEncoding): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
+  inline def execFile(file: String, options: typings.node.childProcessMod.ExecFileOptionsWithBufferEncoding): js.Promise[js.Tuple2[Buffer, Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Buffer, Buffer]]]
+  // `options` with `"buffer"` or `null` for `encoding` means stdout/stderr are definitely `Buffer`.
   inline def execFile(
     file: String,
-    // `options` can't be mixed into `args`
-  // tslint:disable-next-line: unified-signatures
-  options: ExecFileOptionsWithStringEncoding,
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+    options: typings.node.childProcessMod.ExecFileOptionsWithBufferEncoding,
+    callback: js.Function3[js.Error | ExecFileException | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  inline def execFile(file: String, options: typings.node.childProcessMod.ExecFileOptionsWithOtherEncoding): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String | Buffer, String | Buffer]]]
+  // `options` with an `encoding` whose type is `string` means stdout/stderr could either be `Buffer` or `string`.
+  // There is no guarantee the `encoding` is unknown as `string` is a superset of `BufferEncoding`.
   inline def execFile(
     file: String,
-    // `options` can't be mixed into `args`
-  // tslint:disable-next-line: unified-signatures
-  options: ExecFileOptions,
-    callback: js.Function3[/* error */ js.Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+    options: typings.node.childProcessMod.ExecFileOptionsWithOtherEncoding,
+    callback: js.Function3[js.Error | ExecFileException | Null, Buffer | String, Buffer | String, Unit]
+  ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
+  inline def execFile(file: String, options: ExecFileOptionsWithStringEncoding): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
+  // `options` with well known `encoding` means stdout/stderr are definitely `string`.
+  inline def execFile(
+    file: String,
+    options: ExecFileOptionsWithStringEncoding,
+    callback: js.Function3[js.Error | ExecFileException | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): typings.node.childProcessMod.ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.childProcessMod.ChildProcess]
   
   inline def execFileSync(file: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("execFileSync")(file.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
@@ -356,6 +530,13 @@ object childProcessMod {
   inline def execFileSync_Buffer(file: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("execFileSync")(file.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   inline def execFileSync_Buffer(file: String, args: js.Array[String]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileSync")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
+  inline def execFile_Promise(file: String): js.Promise[js.Tuple2[String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
+  inline def execFile_Promise(file: String, args: js.Array[String]): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
+  inline def execFile_Promise(file: String, args: js.Array[String], options: ExecFileOptions): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
+  inline def execFile_Promise(file: String, args: Null, options: ExecFileOptions): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
+  inline def execFile_Promise(file: String, args: Unit, options: ExecFileOptions): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
+  inline def execFile_Promise(file: String, options: ExecFileOptions): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
+  
   inline def execSync(command: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("execSync")(command.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
   inline def execSync(command: String, options: ExecSyncOptions): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("execSync")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   inline def execSync(command: String, options: ExecSyncOptionsWithBufferEncoding): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("execSync")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
@@ -378,6 +559,8 @@ object childProcessMod {
     * @return The stdout from the command.
     */
   inline def execSync_Buffer(command: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("execSync")(command.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  inline def exec_Promise(command: String): js.Promise[js.Tuple2[String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
   
   /**
     * The `child_process.fork()` method is a special case of {@link spawn} used specifically to spawn new Node.js processes.

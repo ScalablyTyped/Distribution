@@ -203,10 +203,6 @@ object gatsbyjsReachRouterStrings {
   inline def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait useParams extends StObject
-  inline def useParams: useParams = "useParams".asInstanceOf[useParams]
-  
-  @js.native
   sealed trait user extends StObject
   inline def user: user = "user".asInstanceOf[user]
   

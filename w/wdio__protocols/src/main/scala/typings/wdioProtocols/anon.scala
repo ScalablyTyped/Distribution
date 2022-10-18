@@ -1,6 +1,6 @@
 package typings.wdioProtocols
 
-import typings.wdioProtocols.typesMod.CommandEndpoint
+import typings.wdioProtocols.buildTypesMod.CommandEndpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

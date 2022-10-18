@@ -1,6 +1,6 @@
 package typings.victoryAxis
 
-import typings.victoryAxis.victoryAxisMod.VictoryAxisTTargetType
+import typings.victoryAxis.libVictoryAxisMod.VictoryAxisTTargetType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

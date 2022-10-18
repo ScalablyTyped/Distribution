@@ -106,6 +106,27 @@ object anon {
     }
   }
   
+  trait Height extends StObject {
+    
+    var height: Double
+    
+    var ref: String
+  }
+  object Height {
+    
+    inline def apply(height: Double, ref: String): Height = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Height]
+    }
+    
+    extension [Self <: Height](x: Self) {
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* Inlined std.Partial<@typeform/embed.@typeform/embed/types/base/iframe-options.HTMLIFrameElementWithStyleString> */
   trait PartialHTMLIFrameElementW extends StObject {
     
@@ -2277,6 +2298,23 @@ object anon {
       inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    }
+  }
+  
+  trait Ref extends StObject {
+    
+    var ref: String
+  }
+  object Ref {
+    
+    inline def apply(ref: String): Ref = {
+      val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Ref]
+    }
+    
+    extension [Self <: Ref](x: Self) {
+      
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
   

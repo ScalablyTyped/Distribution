@@ -5,10 +5,10 @@ import typings.babylonjs.OffscreenCanvas
 import typings.babylonjs.WebGL2RenderingContext
 import typings.babylonjs.anon.Capture
 import typings.babylonjs.anon.CaptureConstraint
-import typings.babylonjs.fileRequestMod.IFileRequest
-import typings.babylonjs.internalTextureLoaderMod.IInternalTextureLoader
-import typings.babylonjs.iofflineproviderMod.IOfflineProvider
-import typings.babylonjs.thinEngineMod.EngineOptions
+import typings.babylonjs.enginesThinEngineMod.EngineOptions
+import typings.babylonjs.materialsTexturesInternalTextureLoaderMod.IInternalTextureLoader
+import typings.babylonjs.miscFileRequestMod.IFileRequest
+import typings.babylonjs.offlineIofflineproviderMod.IOfflineProvider
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Blob
 import typings.std.EventTarget
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ThinEngine")
 @js.native
 open class ThinEngine protected ()
-  extends typings.babylonjs.legacyMod.ThinEngine {
+  extends typings.babylonjs.legacyLegacyMod.ThinEngine {
   /**
     * Creates a new engine
     * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, Babylon.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when Babylon.js is used as a plugin on a system which already used the WebGL context
@@ -207,8 +207,8 @@ object ThinEngine {
     offlineProvider: Unit,
     useArrayBuffer: Boolean,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.miscFileToolsMod.LoadFileError], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
@@ -223,8 +223,8 @@ object ThinEngine {
     offlineProvider: Unit,
     useArrayBuffer: Unit,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.miscFileToolsMod.LoadFileError], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
@@ -260,8 +260,8 @@ object ThinEngine {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.miscFileToolsMod.LoadFileError], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
@@ -276,8 +276,8 @@ object ThinEngine {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Unit,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.miscFileToolsMod.LoadFileError], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
@@ -303,8 +303,8 @@ object ThinEngine {
     offlineProvider: Unit,
     useArrayBuffer: Boolean,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.miscFileToolsMod.LoadFileError], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
@@ -319,8 +319,8 @@ object ThinEngine {
     offlineProvider: Unit,
     useArrayBuffer: Unit,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.miscFileToolsMod.LoadFileError], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
@@ -356,8 +356,8 @@ object ThinEngine {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.miscFileToolsMod.LoadFileError], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
@@ -372,8 +372,8 @@ object ThinEngine {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Unit,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.miscFileToolsMod.LoadFileError], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("_FileToolsLoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]

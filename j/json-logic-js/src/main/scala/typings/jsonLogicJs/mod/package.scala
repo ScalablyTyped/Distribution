@@ -1,7 +1,6 @@
 package typings.jsonLogicJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.jsonLogicJs.jsonLogicJsInts.`80`
 import typings.jsonLogicJs.mod.^
 import typings.std.Record
@@ -36,19 +35,14 @@ type AdditionalOperation = StringDictionary[Any]
   * Used for the "if" operation, which takes an array of odd length
   * and a minimum of three (3) elements.
   */
-type AnyArrayOfOddLengthMin3 = /* import warning: importer.ImportType#apply c repeated non-array type: []['length'] extends json-logic-js.json-logic-js.MAXIMUM_ALLOWED_BOUNDARY ? [] : [any, any] extends [] ? [] : [] extends [] ? any : any */ js.Array[Any | js.Array[Any]]
+type AnyArrayOfOddLengthMin3 = /* import warning: importer.ImportType#apply c repeated non-array type: []['length'] extends json-logic-js.json-logic-js.MAXIMUM_ALLOWED_BOUNDARY ? [] : [any, any] extends [] ? [] : [] extends [] ? json-logic-js.json-logic-js.Mapped<[any, any], [any, any], [...[], 1]> : json-logic-js.json-logic-js.Mapped<[any, any], [] | [...[], ...[any, any]], [...[], 1]> */ js.Array[
+/* import warning: importer.ImportType#apply Failed type conversion: []['length'] extends json-logic-js.json-logic-js.MAXIMUM_ALLOWED_BOUNDARY ? [] : [any, any] extends [] ? [] : [] extends [] ? json-logic-js.json-logic-js.Mapped<[any, any], [any, any], [...[], 1]> : json-logic-js.json-logic-js.Mapped<[any, any], [] | [...[], ...[any, any]], [...[], 1]> */ js.Any]
 
 /**
   * This is a utility type used below for the "if" operation.
   * Original: https://stackoverflow.com/a/68373774/765987
   */
 type MAXIMUM_ALLOWED_BOUNDARY = `80`
-
-type Mapped[Tuple /* <: js.Array[Any] */, Result /* <: js.Array[Any] */, Count /* <: js.Array[Double] */] = Any | js.Array[Any] | Result
-
-type RenameToIn[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T as K extends / * template literal string: in${Uppercase<string>}${Lowercase<string>} * / string? / * template literal string: in * / string : K ]: T[K]}
-  */ typings.jsonLogicJs.jsonLogicJsStrings.RenameToIn & TopLevel[T]
 
 /* Rewritten from type alias, can be one of: 
   - scala.Boolean

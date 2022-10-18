@@ -1,9 +1,8 @@
 package typings.grommet.utilsMod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.grommet.anon.ColorError
 import typings.grommet.anon.Dark
-import typings.grommet.anon.`40`
+import typings.grommet.anon.`38`
 import typings.grommet.utilsMod.^
 import typings.react.mod.ComponentType
 import typings.react.mod.KeyboardEvent
@@ -101,10 +100,6 @@ type ColorType = js.UndefOr[String | Dark]
 
 type DeepFreeze_ = js.Function1[/* obj */ js.Object, DeepReadonly[js.Object]]
 
-type DeepReadonly[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{readonly [ K in keyof T ]: T[K] extends object? grommet.grommet/utils.DeepReadonly<T[K]> : T[K]}
-  */ typings.grommet.grommetStrings.DeepReadonly & TopLevel[Any]
-
 /* Rewritten from type alias, can be one of: 
   - typings.grommet.grommetStrings.none
   - typings.grommet.utilsMod.EdgeSizeType
@@ -138,7 +133,7 @@ type FillType = _FillType | Boolean
 */
 type GapType = _GapType | String
 
-type GraphColorsType = js.Array[String] | `40`
+type GraphColorsType = js.Array[String] | `38`
 
 type GridAreaType = String
 
@@ -163,12 +158,6 @@ type HoverIndicatorType = _HoverIndicatorType | Boolean | String | BackgroundTyp
 type KeyboardType = js.Function1[/* event */ KeyboardEvent[HTMLElement], Unit]
 
 type MarginType = EdgeType
-
-type NonUndefined[T] = T
-
-type NonUndefinedProps[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? grommet.grommet/utils.NonUndefined<T[K]>}
-  */ typings.grommet.grommetStrings.NonUndefinedProps & TopLevel[T]
 
 type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
 
@@ -358,7 +347,7 @@ type PlaceHolderType = String | Element | ReactNode
   - typings.grommet.grommetStrings.stop
   - typings.grommet.grommetStrings.switch
   - typings.grommet.grommetStrings.symbol
-  - typings.grommet.grommetStrings.text_
+  - typings.grommet.grommetStrings.text
   - typings.grommet.grommetStrings.textPath
   - typings.grommet.grommetStrings.tspan
   - typings.grommet.grommetStrings.use
@@ -366,8 +355,6 @@ type PlaceHolderType = String | Element | ReactNode
   - typings.react.mod.ComponentType[scala.Any]
 */
 type PolymorphicType = _PolymorphicType | ComponentType[Any]
-
-type PropsOf[TComponent] = Any
 
 /* Rewritten from type alias, can be one of: 
   - scala.Boolean

@@ -360,7 +360,7 @@ object tsp {
   @js.native
   open class TimeStampReq ()
     extends typings.jsrsasign.mod.KJUR.asn1.tsp.TimeStampReq {
-    def this(params: Mi) = this()
+    def this(params: Certreq) = this()
   }
   
   /**
@@ -411,5 +411,5 @@ object tsp {
     *  nonce: '9abcf318...',            // nonce (OPTION)
     *  certreq: true}                   // certReq (OPTION)
     */
-  inline def parseTimeStampReq(reqHex: String): Certreq = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTimeStampReq")(reqHex.asInstanceOf[js.Any]).asInstanceOf[Certreq]
+  inline def parseTimeStampReq(reqHex: String): Mi = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTimeStampReq")(reqHex.asInstanceOf[js.Any]).asInstanceOf[Mi]
 }

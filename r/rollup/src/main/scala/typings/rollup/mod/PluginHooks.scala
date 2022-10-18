@@ -1,8 +1,5 @@
 package typings.rollup.mod
 
-import typings.rollup.anon.CustomResolution
-import typings.rollup.anon.Left
-import typings.rollup.anon.Sequential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,275 +9,208 @@ K extends rollup.rollup.ParallelPluginHooks? {  sequential :boolean | undefined}
 trait PluginHooks extends StObject {
   
   var augmentChunkHash: ObjectHook[
-    (js.ThisFunction1[/* this */ PluginContext, /* chunk */ PreRenderedChunk, String | Unit]) | (MakeAsync[
-      js.ThisFunction1[/* this */ PluginContext, /* chunk */ PreRenderedChunk, String | Unit]
-    ]), 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'augmentChunkHash' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, chunk : rollup.rollup.RenderedChunk): string | void> : (this : rollup.rollup.PluginContext, chunk : rollup.rollup.RenderedChunk): string | void */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'augmentChunkHash' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
   
   var buildEnd: ObjectHook[
-    (js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[js.Error], Unit]) | (MakeAsync[js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[js.Error], Unit]]), 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'buildEnd' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, error : std.Error | undefined): void> : (this : rollup.rollup.PluginContext, error : std.Error | undefined): void */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'buildEnd' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
   
   var buildStart: ObjectHook[
-    (js.ThisFunction1[/* this */ PluginContext, /* options */ NormalizedInputOptions, Unit]) | (MakeAsync[
-      js.ThisFunction1[/* this */ PluginContext, /* options */ NormalizedInputOptions, Unit]
-    ]), 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'buildStart' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedInputOptions): void> : (this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedInputOptions): void */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'buildStart' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
   
   var closeBundle: ObjectHook[
-    (js.ThisFunction0[/* this */ PluginContext, Unit]) | (MakeAsync[js.ThisFunction0[/* this */ PluginContext, Unit]]), 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'closeBundle' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext): void> : (this : rollup.rollup.PluginContext): void */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'closeBundle' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
   
   var closeWatcher: ObjectHook[
-    (js.ThisFunction0[/* this */ PluginContext, Unit]) | (MakeAsync[js.ThisFunction0[/* this */ PluginContext, Unit]]), 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'closeWatcher' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext): void> : (this : rollup.rollup.PluginContext): void */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'closeWatcher' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
   
   var generateBundle: ObjectHook[
-    (js.ThisFunction3[
-      /* this */ PluginContext, 
-      /* options */ NormalizedOutputOptions, 
-      /* bundle */ OutputBundle, 
-      /* isWrite */ Boolean, 
-      Unit
-    ]) | (MakeAsync[
-      js.ThisFunction3[
-        /* this */ PluginContext, 
-        /* options */ NormalizedOutputOptions, 
-        /* bundle */ OutputBundle, 
-        /* isWrite */ Boolean, 
-        Unit
-      ]
-    ]), 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'generateBundle' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle, isWrite : boolean): void> : (this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle, isWrite : boolean): void */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'generateBundle' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
   
-  var load: ObjectHook[LoadHook | MakeAsync[LoadHook], js.Object | Sequential]
+  var load: ObjectHook[
+    /* import warning: importer.ImportType#apply Failed type conversion: 'load' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.LoadHook> : rollup.rollup.LoadHook */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'load' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+  ]
   
-  var moduleParsed: ObjectHook[ModuleParsedHook | MakeAsync[ModuleParsedHook], js.Object | Sequential]
+  var moduleParsed: ObjectHook[
+    /* import warning: importer.ImportType#apply Failed type conversion: 'moduleParsed' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ModuleParsedHook> : rollup.rollup.ModuleParsedHook */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'moduleParsed' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+  ]
   
   var options: ObjectHook[
-    (js.ThisFunction1[
-      /* this */ MinimalPluginContext, 
-      /* options */ InputOptions, 
-      InputOptions | Null | Unit
-    ]) | (MakeAsync[
-      js.ThisFunction1[
-        /* this */ MinimalPluginContext, 
-        /* options */ InputOptions, 
-        InputOptions | Null | Unit
-      ]
-    ]), 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'options' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.MinimalPluginContext, options : rollup.rollup.InputOptions): rollup.rollup.InputOptions | rollup.rollup.NullValue> : (this : rollup.rollup.MinimalPluginContext, options : rollup.rollup.InputOptions): rollup.rollup.InputOptions | rollup.rollup.NullValue */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'options' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
   
   var outputOptions: ObjectHook[
-    (js.ThisFunction1[/* this */ PluginContext, /* options */ OutputOptions, OutputOptions | Null | Unit]) | (MakeAsync[
-      js.ThisFunction1[/* this */ PluginContext, /* options */ OutputOptions, OutputOptions | Null | Unit]
-    ]), 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'outputOptions' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : rollup.rollup.OutputOptions): rollup.rollup.OutputOptions | rollup.rollup.NullValue> : (this : rollup.rollup.PluginContext, options : rollup.rollup.OutputOptions): rollup.rollup.OutputOptions | rollup.rollup.NullValue */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'outputOptions' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
   
-  var renderChunk: ObjectHook[RenderChunkHook | MakeAsync[RenderChunkHook], js.Object | Sequential]
+  var renderChunk: ObjectHook[
+    /* import warning: importer.ImportType#apply Failed type conversion: 'renderChunk' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.RenderChunkHook> : rollup.rollup.RenderChunkHook */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'renderChunk' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+  ]
   
   var renderDynamicImport: ObjectHook[
-    (js.ThisFunction1[/* this */ PluginContext, /* options */ CustomResolution, Left | Null | Unit]) | (MakeAsync[
-      js.ThisFunction1[/* this */ PluginContext, /* options */ CustomResolution, Left | Null | Unit]
-    ]), 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'renderDynamicImport' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : {  customResolution :string | null,   format :rollup.rollup.InternalModuleFormat,   moduleId :string,   targetModuleId :string | null}): {  left :string,   right :string} | rollup.rollup.NullValue> : (this : rollup.rollup.PluginContext, options : {  customResolution :string | null,   format :rollup.rollup.InternalModuleFormat,   moduleId :string,   targetModuleId :string | null}): {  left :string,   right :string} | rollup.rollup.NullValue */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'renderDynamicImport' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
   
   var renderError: ObjectHook[
-    (js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[js.Error], Unit]) | (MakeAsync[js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[js.Error], Unit]]), 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'renderError' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, error : std.Error | undefined): void> : (this : rollup.rollup.PluginContext, error : std.Error | undefined): void */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'renderError' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
   
   var renderStart: ObjectHook[
-    (js.ThisFunction2[
-      /* this */ PluginContext, 
-      /* outputOptions */ NormalizedOutputOptions, 
-      /* inputOptions */ NormalizedInputOptions, 
-      Unit
-    ]) | (MakeAsync[
-      js.ThisFunction2[
-        /* this */ PluginContext, 
-        /* outputOptions */ NormalizedOutputOptions, 
-        /* inputOptions */ NormalizedInputOptions, 
-        Unit
-      ]
-    ]), 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'renderStart' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, outputOptions : rollup.rollup.NormalizedOutputOptions, inputOptions : rollup.rollup.NormalizedInputOptions): void> : (this : rollup.rollup.PluginContext, outputOptions : rollup.rollup.NormalizedOutputOptions, inputOptions : rollup.rollup.NormalizedInputOptions): void */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'renderStart' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
-  
-  var resolveAssetUrl: ObjectHook[ResolveAssetUrlHook | MakeAsync[ResolveAssetUrlHook], js.Object | Sequential]
   
   var resolveDynamicImport: ObjectHook[
-    ResolveDynamicImportHook | MakeAsync[ResolveDynamicImportHook], 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'resolveDynamicImport' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ResolveDynamicImportHook> : rollup.rollup.ResolveDynamicImportHook */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'resolveDynamicImport' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
   
-  var resolveFileUrl: ObjectHook[ResolveFileUrlHook | MakeAsync[ResolveFileUrlHook], js.Object | Sequential]
+  var resolveFileUrl: ObjectHook[
+    /* import warning: importer.ImportType#apply Failed type conversion: 'resolveFileUrl' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ResolveFileUrlHook> : rollup.rollup.ResolveFileUrlHook */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'resolveFileUrl' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+  ]
   
-  var resolveId: ObjectHook[ResolveIdHook | MakeAsync[ResolveIdHook], js.Object | Sequential]
+  var resolveId: ObjectHook[
+    /* import warning: importer.ImportType#apply Failed type conversion: 'resolveId' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ResolveIdHook> : rollup.rollup.ResolveIdHook */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'resolveId' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+  ]
   
-  var resolveImportMeta: ObjectHook[ResolveImportMetaHook | MakeAsync[ResolveImportMetaHook], js.Object | Sequential]
+  var resolveImportMeta: ObjectHook[
+    /* import warning: importer.ImportType#apply Failed type conversion: 'resolveImportMeta' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ResolveImportMetaHook> : rollup.rollup.ResolveImportMetaHook */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'resolveImportMeta' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+  ]
   
   var shouldTransformCachedModule: ObjectHook[
-    ShouldTransformCachedModuleHook | MakeAsync[ShouldTransformCachedModuleHook], 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'shouldTransformCachedModule' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ShouldTransformCachedModuleHook> : rollup.rollup.ShouldTransformCachedModuleHook */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'shouldTransformCachedModule' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
   
-  var transform: ObjectHook[TransformHook | MakeAsync[TransformHook], js.Object | Sequential]
+  var transform: ObjectHook[
+    /* import warning: importer.ImportType#apply Failed type conversion: 'transform' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.TransformHook> : rollup.rollup.TransformHook */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'transform' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+  ]
   
-  var watchChange: ObjectHook[WatchChangeHook | MakeAsync[WatchChangeHook], js.Object | Sequential]
+  var watchChange: ObjectHook[
+    /* import warning: importer.ImportType#apply Failed type conversion: 'watchChange' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.WatchChangeHook> : rollup.rollup.WatchChangeHook */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'watchChange' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+  ]
   
   var writeBundle: ObjectHook[
-    (js.ThisFunction2[
-      /* this */ PluginContext, 
-      /* options */ NormalizedOutputOptions, 
-      /* bundle */ OutputBundle, 
-      Unit
-    ]) | (MakeAsync[
-      js.ThisFunction2[
-        /* this */ PluginContext, 
-        /* options */ NormalizedOutputOptions, 
-        /* bundle */ OutputBundle, 
-        Unit
-      ]
-    ]), 
-    js.Object | Sequential
+    /* import warning: importer.ImportType#apply Failed type conversion: 'writeBundle' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle): void> : (this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle): void */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: 'writeBundle' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
   ]
 }
 object PluginHooks {
   
   inline def apply(
     augmentChunkHash: ObjectHook[
-      (js.ThisFunction1[/* this */ PluginContext, /* chunk */ PreRenderedChunk, String | Unit]) | (MakeAsync[
-        js.ThisFunction1[/* this */ PluginContext, /* chunk */ PreRenderedChunk, String | Unit]
-      ]), 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'augmentChunkHash' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, chunk : rollup.rollup.RenderedChunk): string | void> : (this : rollup.rollup.PluginContext, chunk : rollup.rollup.RenderedChunk): string | void */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'augmentChunkHash' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ],
     buildEnd: ObjectHook[
-      (js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[js.Error], Unit]) | (MakeAsync[js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[js.Error], Unit]]), 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'buildEnd' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, error : std.Error | undefined): void> : (this : rollup.rollup.PluginContext, error : std.Error | undefined): void */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'buildEnd' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ],
     buildStart: ObjectHook[
-      (js.ThisFunction1[/* this */ PluginContext, /* options */ NormalizedInputOptions, Unit]) | (MakeAsync[
-        js.ThisFunction1[/* this */ PluginContext, /* options */ NormalizedInputOptions, Unit]
-      ]), 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'buildStart' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedInputOptions): void> : (this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedInputOptions): void */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'buildStart' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ],
     closeBundle: ObjectHook[
-      (js.ThisFunction0[/* this */ PluginContext, Unit]) | (MakeAsync[js.ThisFunction0[/* this */ PluginContext, Unit]]), 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'closeBundle' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext): void> : (this : rollup.rollup.PluginContext): void */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'closeBundle' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ],
     closeWatcher: ObjectHook[
-      (js.ThisFunction0[/* this */ PluginContext, Unit]) | (MakeAsync[js.ThisFunction0[/* this */ PluginContext, Unit]]), 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'closeWatcher' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext): void> : (this : rollup.rollup.PluginContext): void */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'closeWatcher' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ],
     generateBundle: ObjectHook[
-      (js.ThisFunction3[
-        /* this */ PluginContext, 
-        /* options */ NormalizedOutputOptions, 
-        /* bundle */ OutputBundle, 
-        /* isWrite */ Boolean, 
-        Unit
-      ]) | (MakeAsync[
-        js.ThisFunction3[
-          /* this */ PluginContext, 
-          /* options */ NormalizedOutputOptions, 
-          /* bundle */ OutputBundle, 
-          /* isWrite */ Boolean, 
-          Unit
-        ]
-      ]), 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'generateBundle' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle, isWrite : boolean): void> : (this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle, isWrite : boolean): void */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'generateBundle' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ],
-    load: ObjectHook[LoadHook | MakeAsync[LoadHook], js.Object | Sequential],
-    moduleParsed: ObjectHook[ModuleParsedHook | MakeAsync[ModuleParsedHook], js.Object | Sequential],
+    load: ObjectHook[
+      /* import warning: importer.ImportType#apply Failed type conversion: 'load' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.LoadHook> : rollup.rollup.LoadHook */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'load' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+    ],
+    moduleParsed: ObjectHook[
+      /* import warning: importer.ImportType#apply Failed type conversion: 'moduleParsed' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ModuleParsedHook> : rollup.rollup.ModuleParsedHook */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'moduleParsed' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+    ],
     options: ObjectHook[
-      (js.ThisFunction1[
-        /* this */ MinimalPluginContext, 
-        /* options */ InputOptions, 
-        InputOptions | Null | Unit
-      ]) | (MakeAsync[
-        js.ThisFunction1[
-          /* this */ MinimalPluginContext, 
-          /* options */ InputOptions, 
-          InputOptions | Null | Unit
-        ]
-      ]), 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'options' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.MinimalPluginContext, options : rollup.rollup.InputOptions): rollup.rollup.InputOptions | rollup.rollup.NullValue> : (this : rollup.rollup.MinimalPluginContext, options : rollup.rollup.InputOptions): rollup.rollup.InputOptions | rollup.rollup.NullValue */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'options' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ],
     outputOptions: ObjectHook[
-      (js.ThisFunction1[/* this */ PluginContext, /* options */ OutputOptions, OutputOptions | Null | Unit]) | (MakeAsync[
-        js.ThisFunction1[/* this */ PluginContext, /* options */ OutputOptions, OutputOptions | Null | Unit]
-      ]), 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'outputOptions' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : rollup.rollup.OutputOptions): rollup.rollup.OutputOptions | rollup.rollup.NullValue> : (this : rollup.rollup.PluginContext, options : rollup.rollup.OutputOptions): rollup.rollup.OutputOptions | rollup.rollup.NullValue */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'outputOptions' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ],
-    renderChunk: ObjectHook[RenderChunkHook | MakeAsync[RenderChunkHook], js.Object | Sequential],
+    renderChunk: ObjectHook[
+      /* import warning: importer.ImportType#apply Failed type conversion: 'renderChunk' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.RenderChunkHook> : rollup.rollup.RenderChunkHook */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'renderChunk' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+    ],
     renderDynamicImport: ObjectHook[
-      (js.ThisFunction1[/* this */ PluginContext, /* options */ CustomResolution, Left | Null | Unit]) | (MakeAsync[
-        js.ThisFunction1[/* this */ PluginContext, /* options */ CustomResolution, Left | Null | Unit]
-      ]), 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'renderDynamicImport' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : {  customResolution :string | null,   format :rollup.rollup.InternalModuleFormat,   moduleId :string,   targetModuleId :string | null}): {  left :string,   right :string} | rollup.rollup.NullValue> : (this : rollup.rollup.PluginContext, options : {  customResolution :string | null,   format :rollup.rollup.InternalModuleFormat,   moduleId :string,   targetModuleId :string | null}): {  left :string,   right :string} | rollup.rollup.NullValue */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'renderDynamicImport' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ],
     renderError: ObjectHook[
-      (js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[js.Error], Unit]) | (MakeAsync[js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[js.Error], Unit]]), 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'renderError' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, error : std.Error | undefined): void> : (this : rollup.rollup.PluginContext, error : std.Error | undefined): void */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'renderError' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ],
     renderStart: ObjectHook[
-      (js.ThisFunction2[
-        /* this */ PluginContext, 
-        /* outputOptions */ NormalizedOutputOptions, 
-        /* inputOptions */ NormalizedInputOptions, 
-        Unit
-      ]) | (MakeAsync[
-        js.ThisFunction2[
-          /* this */ PluginContext, 
-          /* outputOptions */ NormalizedOutputOptions, 
-          /* inputOptions */ NormalizedInputOptions, 
-          Unit
-        ]
-      ]), 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'renderStart' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, outputOptions : rollup.rollup.NormalizedOutputOptions, inputOptions : rollup.rollup.NormalizedInputOptions): void> : (this : rollup.rollup.PluginContext, outputOptions : rollup.rollup.NormalizedOutputOptions, inputOptions : rollup.rollup.NormalizedInputOptions): void */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'renderStart' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ],
-    resolveAssetUrl: ObjectHook[ResolveAssetUrlHook | MakeAsync[ResolveAssetUrlHook], js.Object | Sequential],
     resolveDynamicImport: ObjectHook[
-      ResolveDynamicImportHook | MakeAsync[ResolveDynamicImportHook], 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'resolveDynamicImport' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ResolveDynamicImportHook> : rollup.rollup.ResolveDynamicImportHook */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'resolveDynamicImport' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ],
-    resolveFileUrl: ObjectHook[ResolveFileUrlHook | MakeAsync[ResolveFileUrlHook], js.Object | Sequential],
-    resolveId: ObjectHook[ResolveIdHook | MakeAsync[ResolveIdHook], js.Object | Sequential],
-    resolveImportMeta: ObjectHook[ResolveImportMetaHook | MakeAsync[ResolveImportMetaHook], js.Object | Sequential],
+    resolveFileUrl: ObjectHook[
+      /* import warning: importer.ImportType#apply Failed type conversion: 'resolveFileUrl' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ResolveFileUrlHook> : rollup.rollup.ResolveFileUrlHook */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'resolveFileUrl' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+    ],
+    resolveId: ObjectHook[
+      /* import warning: importer.ImportType#apply Failed type conversion: 'resolveId' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ResolveIdHook> : rollup.rollup.ResolveIdHook */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'resolveId' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+    ],
+    resolveImportMeta: ObjectHook[
+      /* import warning: importer.ImportType#apply Failed type conversion: 'resolveImportMeta' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ResolveImportMetaHook> : rollup.rollup.ResolveImportMetaHook */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'resolveImportMeta' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+    ],
     shouldTransformCachedModule: ObjectHook[
-      ShouldTransformCachedModuleHook | MakeAsync[ShouldTransformCachedModuleHook], 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'shouldTransformCachedModule' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ShouldTransformCachedModuleHook> : rollup.rollup.ShouldTransformCachedModuleHook */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'shouldTransformCachedModule' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ],
-    transform: ObjectHook[TransformHook | MakeAsync[TransformHook], js.Object | Sequential],
-    watchChange: ObjectHook[WatchChangeHook | MakeAsync[WatchChangeHook], js.Object | Sequential],
+    transform: ObjectHook[
+      /* import warning: importer.ImportType#apply Failed type conversion: 'transform' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.TransformHook> : rollup.rollup.TransformHook */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'transform' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+    ],
+    watchChange: ObjectHook[
+      /* import warning: importer.ImportType#apply Failed type conversion: 'watchChange' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.WatchChangeHook> : rollup.rollup.WatchChangeHook */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'watchChange' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+    ],
     writeBundle: ObjectHook[
-      (js.ThisFunction2[
-        /* this */ PluginContext, 
-        /* options */ NormalizedOutputOptions, 
-        /* bundle */ OutputBundle, 
-        Unit
-      ]) | (MakeAsync[
-        js.ThisFunction2[
-          /* this */ PluginContext, 
-          /* options */ NormalizedOutputOptions, 
-          /* bundle */ OutputBundle, 
-          Unit
-        ]
-      ]), 
-      js.Object | Sequential
+      /* import warning: importer.ImportType#apply Failed type conversion: 'writeBundle' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle): void> : (this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle): void */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'writeBundle' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
     ]
   ): PluginHooks = {
-    val __obj = js.Dynamic.literal(augmentChunkHash = augmentChunkHash.asInstanceOf[js.Any], buildEnd = buildEnd.asInstanceOf[js.Any], buildStart = buildStart.asInstanceOf[js.Any], closeBundle = closeBundle.asInstanceOf[js.Any], closeWatcher = closeWatcher.asInstanceOf[js.Any], generateBundle = generateBundle.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], moduleParsed = moduleParsed.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], outputOptions = outputOptions.asInstanceOf[js.Any], renderChunk = renderChunk.asInstanceOf[js.Any], renderDynamicImport = renderDynamicImport.asInstanceOf[js.Any], renderError = renderError.asInstanceOf[js.Any], renderStart = renderStart.asInstanceOf[js.Any], resolveAssetUrl = resolveAssetUrl.asInstanceOf[js.Any], resolveDynamicImport = resolveDynamicImport.asInstanceOf[js.Any], resolveFileUrl = resolveFileUrl.asInstanceOf[js.Any], resolveId = resolveId.asInstanceOf[js.Any], resolveImportMeta = resolveImportMeta.asInstanceOf[js.Any], shouldTransformCachedModule = shouldTransformCachedModule.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], watchChange = watchChange.asInstanceOf[js.Any], writeBundle = writeBundle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(augmentChunkHash = augmentChunkHash.asInstanceOf[js.Any], buildEnd = buildEnd.asInstanceOf[js.Any], buildStart = buildStart.asInstanceOf[js.Any], closeBundle = closeBundle.asInstanceOf[js.Any], closeWatcher = closeWatcher.asInstanceOf[js.Any], generateBundle = generateBundle.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], moduleParsed = moduleParsed.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], outputOptions = outputOptions.asInstanceOf[js.Any], renderChunk = renderChunk.asInstanceOf[js.Any], renderDynamicImport = renderDynamicImport.asInstanceOf[js.Any], renderError = renderError.asInstanceOf[js.Any], renderStart = renderStart.asInstanceOf[js.Any], resolveDynamicImport = resolveDynamicImport.asInstanceOf[js.Any], resolveFileUrl = resolveFileUrl.asInstanceOf[js.Any], resolveId = resolveId.asInstanceOf[js.Any], resolveImportMeta = resolveImportMeta.asInstanceOf[js.Any], shouldTransformCachedModule = shouldTransformCachedModule.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], watchChange = watchChange.asInstanceOf[js.Any], writeBundle = writeBundle.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginHooks]
   }
   
@@ -288,175 +218,155 @@ object PluginHooks {
     
     inline def setAugmentChunkHash(
       value: ObjectHook[
-          (js.ThisFunction1[/* this */ PluginContext, /* chunk */ PreRenderedChunk, String | Unit]) | (MakeAsync[
-            js.ThisFunction1[/* this */ PluginContext, /* chunk */ PreRenderedChunk, String | Unit]
-          ]), 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'augmentChunkHash' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, chunk : rollup.rollup.RenderedChunk): string | void> : (this : rollup.rollup.PluginContext, chunk : rollup.rollup.RenderedChunk): string | void */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'augmentChunkHash' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "augmentChunkHash", value.asInstanceOf[js.Any])
     
     inline def setBuildEnd(
       value: ObjectHook[
-          (js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[js.Error], Unit]) | (MakeAsync[js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[js.Error], Unit]]), 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'buildEnd' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, error : std.Error | undefined): void> : (this : rollup.rollup.PluginContext, error : std.Error | undefined): void */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'buildEnd' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "buildEnd", value.asInstanceOf[js.Any])
     
     inline def setBuildStart(
       value: ObjectHook[
-          (js.ThisFunction1[/* this */ PluginContext, /* options */ NormalizedInputOptions, Unit]) | (MakeAsync[
-            js.ThisFunction1[/* this */ PluginContext, /* options */ NormalizedInputOptions, Unit]
-          ]), 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'buildStart' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedInputOptions): void> : (this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedInputOptions): void */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'buildStart' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "buildStart", value.asInstanceOf[js.Any])
     
     inline def setCloseBundle(
       value: ObjectHook[
-          (js.ThisFunction0[/* this */ PluginContext, Unit]) | (MakeAsync[js.ThisFunction0[/* this */ PluginContext, Unit]]), 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'closeBundle' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext): void> : (this : rollup.rollup.PluginContext): void */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'closeBundle' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "closeBundle", value.asInstanceOf[js.Any])
     
     inline def setCloseWatcher(
       value: ObjectHook[
-          (js.ThisFunction0[/* this */ PluginContext, Unit]) | (MakeAsync[js.ThisFunction0[/* this */ PluginContext, Unit]]), 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'closeWatcher' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext): void> : (this : rollup.rollup.PluginContext): void */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'closeWatcher' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "closeWatcher", value.asInstanceOf[js.Any])
     
     inline def setGenerateBundle(
       value: ObjectHook[
-          (js.ThisFunction3[
-            /* this */ PluginContext, 
-            /* options */ NormalizedOutputOptions, 
-            /* bundle */ OutputBundle, 
-            /* isWrite */ Boolean, 
-            Unit
-          ]) | (MakeAsync[
-            js.ThisFunction3[
-              /* this */ PluginContext, 
-              /* options */ NormalizedOutputOptions, 
-              /* bundle */ OutputBundle, 
-              /* isWrite */ Boolean, 
-              Unit
-            ]
-          ]), 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'generateBundle' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle, isWrite : boolean): void> : (this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle, isWrite : boolean): void */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'generateBundle' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "generateBundle", value.asInstanceOf[js.Any])
     
-    inline def setLoad(value: ObjectHook[LoadHook | MakeAsync[LoadHook], js.Object | Sequential]): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(
+      value: ObjectHook[
+          /* import warning: importer.ImportType#apply Failed type conversion: 'load' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.LoadHook> : rollup.rollup.LoadHook */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'load' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+        ]
+    ): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    inline def setModuleParsed(value: ObjectHook[ModuleParsedHook | MakeAsync[ModuleParsedHook], js.Object | Sequential]): Self = StObject.set(x, "moduleParsed", value.asInstanceOf[js.Any])
+    inline def setModuleParsed(
+      value: ObjectHook[
+          /* import warning: importer.ImportType#apply Failed type conversion: 'moduleParsed' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ModuleParsedHook> : rollup.rollup.ModuleParsedHook */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'moduleParsed' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+        ]
+    ): Self = StObject.set(x, "moduleParsed", value.asInstanceOf[js.Any])
     
     inline def setOptions(
       value: ObjectHook[
-          (js.ThisFunction1[
-            /* this */ MinimalPluginContext, 
-            /* options */ InputOptions, 
-            InputOptions | Null | Unit
-          ]) | (MakeAsync[
-            js.ThisFunction1[
-              /* this */ MinimalPluginContext, 
-              /* options */ InputOptions, 
-              InputOptions | Null | Unit
-            ]
-          ]), 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'options' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.MinimalPluginContext, options : rollup.rollup.InputOptions): rollup.rollup.InputOptions | rollup.rollup.NullValue> : (this : rollup.rollup.MinimalPluginContext, options : rollup.rollup.InputOptions): rollup.rollup.InputOptions | rollup.rollup.NullValue */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'options' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOutputOptions(
       value: ObjectHook[
-          (js.ThisFunction1[/* this */ PluginContext, /* options */ OutputOptions, OutputOptions | Null | Unit]) | (MakeAsync[
-            js.ThisFunction1[/* this */ PluginContext, /* options */ OutputOptions, OutputOptions | Null | Unit]
-          ]), 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'outputOptions' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : rollup.rollup.OutputOptions): rollup.rollup.OutputOptions | rollup.rollup.NullValue> : (this : rollup.rollup.PluginContext, options : rollup.rollup.OutputOptions): rollup.rollup.OutputOptions | rollup.rollup.NullValue */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'outputOptions' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "outputOptions", value.asInstanceOf[js.Any])
     
-    inline def setRenderChunk(value: ObjectHook[RenderChunkHook | MakeAsync[RenderChunkHook], js.Object | Sequential]): Self = StObject.set(x, "renderChunk", value.asInstanceOf[js.Any])
+    inline def setRenderChunk(
+      value: ObjectHook[
+          /* import warning: importer.ImportType#apply Failed type conversion: 'renderChunk' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.RenderChunkHook> : rollup.rollup.RenderChunkHook */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'renderChunk' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+        ]
+    ): Self = StObject.set(x, "renderChunk", value.asInstanceOf[js.Any])
     
     inline def setRenderDynamicImport(
       value: ObjectHook[
-          (js.ThisFunction1[/* this */ PluginContext, /* options */ CustomResolution, Left | Null | Unit]) | (MakeAsync[
-            js.ThisFunction1[/* this */ PluginContext, /* options */ CustomResolution, Left | Null | Unit]
-          ]), 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'renderDynamicImport' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : {  customResolution :string | null,   format :rollup.rollup.InternalModuleFormat,   moduleId :string,   targetModuleId :string | null}): {  left :string,   right :string} | rollup.rollup.NullValue> : (this : rollup.rollup.PluginContext, options : {  customResolution :string | null,   format :rollup.rollup.InternalModuleFormat,   moduleId :string,   targetModuleId :string | null}): {  left :string,   right :string} | rollup.rollup.NullValue */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'renderDynamicImport' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "renderDynamicImport", value.asInstanceOf[js.Any])
     
     inline def setRenderError(
       value: ObjectHook[
-          (js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[js.Error], Unit]) | (MakeAsync[js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[js.Error], Unit]]), 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'renderError' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, error : std.Error | undefined): void> : (this : rollup.rollup.PluginContext, error : std.Error | undefined): void */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'renderError' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "renderError", value.asInstanceOf[js.Any])
     
     inline def setRenderStart(
       value: ObjectHook[
-          (js.ThisFunction2[
-            /* this */ PluginContext, 
-            /* outputOptions */ NormalizedOutputOptions, 
-            /* inputOptions */ NormalizedInputOptions, 
-            Unit
-          ]) | (MakeAsync[
-            js.ThisFunction2[
-              /* this */ PluginContext, 
-              /* outputOptions */ NormalizedOutputOptions, 
-              /* inputOptions */ NormalizedInputOptions, 
-              Unit
-            ]
-          ]), 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'renderStart' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, outputOptions : rollup.rollup.NormalizedOutputOptions, inputOptions : rollup.rollup.NormalizedInputOptions): void> : (this : rollup.rollup.PluginContext, outputOptions : rollup.rollup.NormalizedOutputOptions, inputOptions : rollup.rollup.NormalizedInputOptions): void */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'renderStart' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "renderStart", value.asInstanceOf[js.Any])
     
-    inline def setResolveAssetUrl(value: ObjectHook[ResolveAssetUrlHook | MakeAsync[ResolveAssetUrlHook], js.Object | Sequential]): Self = StObject.set(x, "resolveAssetUrl", value.asInstanceOf[js.Any])
-    
     inline def setResolveDynamicImport(
       value: ObjectHook[
-          ResolveDynamicImportHook | MakeAsync[ResolveDynamicImportHook], 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'resolveDynamicImport' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ResolveDynamicImportHook> : rollup.rollup.ResolveDynamicImportHook */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'resolveDynamicImport' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "resolveDynamicImport", value.asInstanceOf[js.Any])
     
-    inline def setResolveFileUrl(value: ObjectHook[ResolveFileUrlHook | MakeAsync[ResolveFileUrlHook], js.Object | Sequential]): Self = StObject.set(x, "resolveFileUrl", value.asInstanceOf[js.Any])
+    inline def setResolveFileUrl(
+      value: ObjectHook[
+          /* import warning: importer.ImportType#apply Failed type conversion: 'resolveFileUrl' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ResolveFileUrlHook> : rollup.rollup.ResolveFileUrlHook */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'resolveFileUrl' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+        ]
+    ): Self = StObject.set(x, "resolveFileUrl", value.asInstanceOf[js.Any])
     
-    inline def setResolveId(value: ObjectHook[ResolveIdHook | MakeAsync[ResolveIdHook], js.Object | Sequential]): Self = StObject.set(x, "resolveId", value.asInstanceOf[js.Any])
+    inline def setResolveId(
+      value: ObjectHook[
+          /* import warning: importer.ImportType#apply Failed type conversion: 'resolveId' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ResolveIdHook> : rollup.rollup.ResolveIdHook */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'resolveId' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+        ]
+    ): Self = StObject.set(x, "resolveId", value.asInstanceOf[js.Any])
     
     inline def setResolveImportMeta(
-      value: ObjectHook[ResolveImportMetaHook | MakeAsync[ResolveImportMetaHook], js.Object | Sequential]
+      value: ObjectHook[
+          /* import warning: importer.ImportType#apply Failed type conversion: 'resolveImportMeta' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ResolveImportMetaHook> : rollup.rollup.ResolveImportMetaHook */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'resolveImportMeta' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+        ]
     ): Self = StObject.set(x, "resolveImportMeta", value.asInstanceOf[js.Any])
     
     inline def setShouldTransformCachedModule(
       value: ObjectHook[
-          ShouldTransformCachedModuleHook | MakeAsync[ShouldTransformCachedModuleHook], 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'shouldTransformCachedModule' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.ShouldTransformCachedModuleHook> : rollup.rollup.ShouldTransformCachedModuleHook */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'shouldTransformCachedModule' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "shouldTransformCachedModule", value.asInstanceOf[js.Any])
     
-    inline def setTransform(value: ObjectHook[TransformHook | MakeAsync[TransformHook], js.Object | Sequential]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(
+      value: ObjectHook[
+          /* import warning: importer.ImportType#apply Failed type conversion: 'transform' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.TransformHook> : rollup.rollup.TransformHook */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'transform' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+        ]
+    ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    inline def setWatchChange(value: ObjectHook[WatchChangeHook | MakeAsync[WatchChangeHook], js.Object | Sequential]): Self = StObject.set(x, "watchChange", value.asInstanceOf[js.Any])
+    inline def setWatchChange(
+      value: ObjectHook[
+          /* import warning: importer.ImportType#apply Failed type conversion: 'watchChange' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.WatchChangeHook> : rollup.rollup.WatchChangeHook */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'watchChange' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+        ]
+    ): Self = StObject.set(x, "watchChange", value.asInstanceOf[js.Any])
     
     inline def setWriteBundle(
       value: ObjectHook[
-          (js.ThisFunction2[
-            /* this */ PluginContext, 
-            /* options */ NormalizedOutputOptions, 
-            /* bundle */ OutputBundle, 
-            Unit
-          ]) | (MakeAsync[
-            js.ThisFunction2[
-              /* this */ PluginContext, 
-              /* options */ NormalizedOutputOptions, 
-              /* bundle */ OutputBundle, 
-              Unit
-            ]
-          ]), 
-          js.Object | Sequential
+          /* import warning: importer.ImportType#apply Failed type conversion: 'writeBundle' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle): void> : (this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle): void */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'writeBundle' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
         ]
     ): Self = StObject.set(x, "writeBundle", value.asInstanceOf[js.Any])
   }

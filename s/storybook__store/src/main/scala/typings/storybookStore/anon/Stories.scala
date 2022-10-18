@@ -1,8 +1,8 @@
 package typings.storybookStore.anon
 
 import typings.std.Record
-import typings.storybookStore.ts39TypesMod.StoryIndexEntry
-import typings.storybookStore.ts39TypesMod.V2CompatIndexEntry
+import typings.storybookStore.distTs3Dot9TypesMod.StoryIndexEntry
+import typings.storybookStore.distTs3Dot9TypesMod.V2CompatIndexEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

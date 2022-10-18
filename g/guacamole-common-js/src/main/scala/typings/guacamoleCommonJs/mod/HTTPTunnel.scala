@@ -1,5 +1,6 @@
 package typings.guacamoleCommonJs.mod
 
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-common-js", "HTTPTunnel")
 @js.native
 open class HTTPTunnel protected ()
-  extends typings.guacamoleCommonJs.httptunnelMod.HTTPTunnel {
+  extends typings.guacamoleCommonJs.libHttptunnelMod.HTTPTunnel {
   /**
     * @param tunnelURL The URL of the HTTP tunneling service.
     * @param [crossDomain=false] Whether tunnel requests will be cross-domain, and thus must use CORS
@@ -18,6 +19,6 @@ open class HTTPTunnel protected ()
     */
   def this(tunnelURL: String) = this()
   def this(tunnelURL: String, crossDomain: Boolean) = this()
-  def this(tunnelURL: String, crossDomain: Boolean, extraTunnelHeaders: Boolean) = this()
-  def this(tunnelURL: String, crossDomain: Unit, extraTunnelHeaders: Boolean) = this()
+  def this(tunnelURL: String, crossDomain: Boolean, extraTunnelHeaders: Record[String, String]) = this()
+  def this(tunnelURL: String, crossDomain: Unit, extraTunnelHeaders: Record[String, String]) = this()
 }

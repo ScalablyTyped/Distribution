@@ -1,5 +1,6 @@
 package typings.playcanvas.global.pc
 
+import typings.playcanvas.mod.Vec3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +20,5 @@ open class RaycastResult protected ()
     * @param {Vec3} normal - The normal vector of the surface where the ray hit in world space.
     * @hideconstructor
     */
-  def this(
-    entity: typings.playcanvas.mod.Entity,
-    point: typings.playcanvas.mod.Vec3,
-    normal: typings.playcanvas.mod.Vec3
-  ) = this()
+  def this(entity: typings.playcanvas.mod.Entity, point: Vec3, normal: Vec3) = this()
 }

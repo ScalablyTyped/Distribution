@@ -1,11 +1,11 @@
 package typings.reactQuery
 
 import typings.react.mod.ReactElement
-import typings.reactQuery.hydrateMod.HydrateProps
-import typings.reactQuery.hydrationMod.DehydrateOptions
-import typings.reactQuery.hydrationMod.DehydratedState
-import typings.reactQuery.hydrationMod.HydrateOptions
-import typings.reactQuery.queryClientMod.QueryClient
+import typings.reactQuery.typesCoreHydrationMod.DehydrateOptions
+import typings.reactQuery.typesCoreHydrationMod.DehydratedState
+import typings.reactQuery.typesCoreHydrationMod.HydrateOptions
+import typings.reactQuery.typesCoreQueryClientMod.QueryClient
+import typings.reactQuery.typesReactHydrateMod.HydrateProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

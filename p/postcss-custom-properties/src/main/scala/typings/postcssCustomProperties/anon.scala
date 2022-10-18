@@ -1,6 +1,6 @@
 package typings.postcssCustomProperties
 
-import typings.postcssCustomProperties.optionsMod.ExportJSONFunction
+import typings.postcssCustomProperties.distLibOptionsMod.ExportJSONFunction
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

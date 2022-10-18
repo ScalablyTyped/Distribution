@@ -1,7 +1,7 @@
 package typings.firebaseMessagingCompat
 
-import typings.firebaseMessagingCompat.messagingCompatMod.MessagingCompat
-import typings.firebaseMessagingCompat.mod.FirebaseApp
+import typings.firebaseMessagingCompat.appCompatMod.FirebaseApp
+import typings.firebaseMessagingCompat.distSrcMessagingCompatMod.MessagingCompat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

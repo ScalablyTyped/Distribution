@@ -1,8 +1,8 @@
 package typings.jupyterlabApputils
 
-import typings.jupyterlabApputils.hoverboxMod.OutOfViewDisplay
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.default
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.warn
+import typings.jupyterlabApputils.libHoverboxMod.OutOfViewDisplay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

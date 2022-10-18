@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "TooManyRequestsException")
 @js.native
 open class TooManyRequestsException protected ()
-  extends typings.awsSdkClientCognitoIdentity.modelsMod.TooManyRequestsException {
+  extends typings.awsSdkClientCognitoIdentity.distTypesModelsMod.TooManyRequestsException {
   /**
     * @internal
     */

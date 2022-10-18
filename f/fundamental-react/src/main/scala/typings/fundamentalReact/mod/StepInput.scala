@@ -2,7 +2,7 @@ package typings.fundamentalReact.mod
 
 import typings.fundamentalReact.anon.PartialStepInputProps
 import typings.fundamentalReact.anon.WeakValidationMapStepInpu
-import typings.fundamentalReact.stepInputMod.StepInputProps
+import typings.fundamentalReact.libStepInputStepInputMod.StepInputProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

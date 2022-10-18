@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@chevrotain/types", "GAstVisitor")
+/* note: abstract class */ @JSImport("@chevrotain/types", "GAstVisitor")
 @js.native
-abstract class GAstVisitor () extends StObject {
+open class GAstVisitor () extends StObject {
   
   def visit(node: IProduction): Any = js.native
   

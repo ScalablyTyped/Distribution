@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "GroundMesh")
 @js.native
 open class GroundMesh protected ()
-  extends typings.babylonjs.legacyMod.GroundMesh {
+  extends typings.babylonjs.legacyLegacyMod.GroundMesh {
   def this(name: String) = this()
   def this(name: String, scene: typings.babylonjs.sceneMod.Scene) = this()
 }
@@ -24,5 +24,5 @@ object GroundMesh {
     * @param scene the scene to create the ground mesh in
     * @returns the created ground mesh
     */
-  inline def Parse(parsedMesh: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
+  inline def Parse(parsedMesh: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
 }

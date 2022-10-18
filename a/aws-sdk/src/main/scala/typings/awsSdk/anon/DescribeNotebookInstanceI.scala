@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.sagemakerMod.NotebookInstanceName
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsSagemakerMod.NotebookInstanceName
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait DescribeNotebookInstanceI extends StObject {
   /**
     * The name of the notebook instance that you want information about.
     */
-  var NotebookInstanceName: typings.awsSdk.sagemakerMod.NotebookInstanceName
+  var NotebookInstanceName: typings.awsSdk.clientsSagemakerMod.NotebookInstanceName
 }
 object DescribeNotebookInstanceI {
   

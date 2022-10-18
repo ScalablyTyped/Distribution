@@ -2,6 +2,7 @@ package typings.carbone
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.carbone.anon.Rates
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -65,11 +66,7 @@ object mod {
     }
   }
   
-  type ConvertCallback = js.Function2[
-    /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-    /* result */ Buffer, 
-    Unit
-  ]
+  type ConvertCallback = js.Function2[/* err */ ErrnoException | Null, /* result */ Buffer, Unit]
   
   type CurrencyRates = StringDictionary[Double]
   
@@ -219,7 +216,7 @@ object mod {
   }
   
   type RenderCallback = js.Function3[
-    /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+    /* err */ ErrnoException | Null, 
     /* result */ Buffer | String, 
     /* reportName */ String, 
     Unit
@@ -298,11 +295,7 @@ object mod {
     }
   }
   
-  type RenderXMLCallback = js.Function2[
-    /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-    /* xmlResult */ String, 
-    Unit
-  ]
+  type RenderXMLCallback = js.Function2[/* err */ ErrnoException | Null, /* xmlResult */ String, Unit]
   
   trait RenderXMLOptions extends StObject {
     
@@ -388,8 +381,5 @@ object mod {
     }
   }
   
-  type VoidCallback = js.Function1[
-    /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-    Unit
-  ]
+  type VoidCallback = js.Function1[/* err */ ErrnoException | Null, Unit]
 }

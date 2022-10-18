@@ -11,9 +11,9 @@ import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.`eu-west-1`
 import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.`sa-east-1`
 import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.`us-west-1`
 import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.`us-west-2`
-import typings.awsSdkClientS3Node.outputTypesUnionMod._OutputTypesUnion
-import typings.awsSdkTypes.responseMod.MetadataBearer
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkClientS3Node.typesOutputTypesUnionMod._OutputTypesUnion
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

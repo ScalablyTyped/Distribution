@@ -1,6 +1,6 @@
 package typings.reactSpringRafz
 
-import typings.reactSpringRafz.typesMod.VoidFn
+import typings.reactSpringRafz.distDeclarationsSrcTypesMod.VoidFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

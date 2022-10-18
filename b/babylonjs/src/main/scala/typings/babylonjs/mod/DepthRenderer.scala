@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "DepthRenderer")
 @js.native
 open class DepthRenderer protected ()
-  extends typings.babylonjs.legacyMod.DepthRenderer {
+  extends typings.babylonjs.legacyLegacyMod.DepthRenderer {
   /**
     * Instantiates a depth renderer
     * @param scene The scene the renderer belongs to
@@ -22,12 +22,12 @@ open class DepthRenderer protected ()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera]
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Unit,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera]
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
@@ -38,14 +38,14 @@ open class DepthRenderer protected ()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     storeNonLinearDepth: Boolean
   ) = this()
   def this(scene: typings.babylonjs.sceneMod.Scene, `type`: Unit, camera: Unit, storeNonLinearDepth: Boolean) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Unit,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     storeNonLinearDepth: Boolean
   ) = this()
   def this(
@@ -65,14 +65,14 @@ open class DepthRenderer protected ()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     storeNonLinearDepth: Boolean,
     samplingMode: Double
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Double,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     storeNonLinearDepth: Unit,
     samplingMode: Double
   ) = this()
@@ -93,14 +93,14 @@ open class DepthRenderer protected ()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Unit,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     storeNonLinearDepth: Boolean,
     samplingMode: Double
   ) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Unit,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     storeNonLinearDepth: Unit,
     samplingMode: Double
   ) = this()

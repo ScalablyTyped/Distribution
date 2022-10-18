@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ref: https://immersive-web.github.io/webxr/#xrsession-interface
   */
-@JSGlobal("XRSession")
+/* note: abstract class */ @JSGlobal("XRSession")
 @js.native
-abstract class XRSession ()
+open class XRSession ()
   extends StObject
      with typings.webxr.XRSession

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@uifabric/icons" : "7.9.1"
+      "@uifabric/icons" : "7.9.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@uifabric/icons" : "7.9.1"
+      "@uifabric/icons" : "7.9.4"
     }
   ],
   "compile-devDependencies" : [

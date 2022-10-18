@@ -1,6 +1,7 @@
 package typings.rollup.mod
 
 import typings.rollup.rollupStrings.`no-treeshake`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,6 +25,7 @@ trait ModuleJSON
 object ModuleJSON {
   
   inline def apply(
+    assertions: Record[String, String],
     ast: AcornNode,
     code: String,
     customTransformCache: Boolean,
@@ -37,7 +39,7 @@ object ModuleJSON {
     syntheticNamedExports: Boolean | String,
     transformDependencies: js.Array[String]
   ): ModuleJSON = {
-    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], customTransformCache = customTransformCache.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], moduleSideEffects = moduleSideEffects.asInstanceOf[js.Any], originalCode = originalCode.asInstanceOf[js.Any], resolvedIds = resolvedIds.asInstanceOf[js.Any], sourcemapChain = sourcemapChain.asInstanceOf[js.Any], syntheticNamedExports = syntheticNamedExports.asInstanceOf[js.Any], transformDependencies = transformDependencies.asInstanceOf[js.Any], originalSourcemap = null)
+    val __obj = js.Dynamic.literal(assertions = assertions.asInstanceOf[js.Any], ast = ast.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], customTransformCache = customTransformCache.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], moduleSideEffects = moduleSideEffects.asInstanceOf[js.Any], originalCode = originalCode.asInstanceOf[js.Any], resolvedIds = resolvedIds.asInstanceOf[js.Any], sourcemapChain = sourcemapChain.asInstanceOf[js.Any], syntheticNamedExports = syntheticNamedExports.asInstanceOf[js.Any], transformDependencies = transformDependencies.asInstanceOf[js.Any], originalSourcemap = null)
     __obj.asInstanceOf[ModuleJSON]
   }
   

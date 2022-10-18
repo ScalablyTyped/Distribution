@@ -26,7 +26,7 @@ object Trajectory {
     * @param json serialized JSON string
     * @returns deserialized Trajectory
     */
-  inline def Deserialize(json: String): typings.babylonjs.trajectoryClassifierMod.Trajectory = ^.asInstanceOf[js.Dynamic].applyDynamic("Deserialize")(json.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.trajectoryClassifierMod.Trajectory]
+  inline def Deserialize(json: String): typings.babylonjs.miscTrajectoryClassifierMod.Trajectory = ^.asInstanceOf[js.Dynamic].applyDynamic("Deserialize")(json.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.miscTrajectoryClassifierMod.Trajectory]
   
   @JSImport("babylonjs/index", "Trajectory._BestMatch")
   @js.native

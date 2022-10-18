@@ -23,7 +23,7 @@ object collectionMod {
   @JSImport("ol/Collection", "CollectionEvent")
   @js.native
   open class CollectionEvent[T] protected ()
-    extends typings.ol.eventMod.default {
+    extends typings.ol.eventsEventMod.default {
     def this(`type`: CollectionEventType) = this()
     def this(`type`: CollectionEventType, opt_element: T) = this()
     def this(`type`: CollectionEventType, opt_element: T, opt_index: Double) = this()

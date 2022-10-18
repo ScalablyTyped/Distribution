@@ -4,36 +4,35 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack", "EntryPlugin")
-@js.native
-open class EntryPlugin protected () extends StObject {
-  /**
-  	 * An entry plugin which will handle
-  	 * creation of the EntryDependency
-  	 */
-  def this(context: String, entry: String) = this()
-  def this(context: String, entry: String, options: String) = this()
-  def this(context: String, entry: String, options: EntryOptions) = this()
+trait EntryPlugin extends StObject {
   
   /**
   	 * Apply the plugin
   	 */
   @JSName("apply")
-  def apply(compiler: Compiler): Unit = js.native
+  def apply(compiler: Compiler): Unit
   
-  var context: String = js.native
+  var context: String
   
-  var entry: String = js.native
+  var entry: String
   
-  var options: String | EntryOptions = js.native
+  var options: String | EntryOptions
 }
 object EntryPlugin {
   
-  @JSImport("webpack", "EntryPlugin")
-  @js.native
-  val ^ : js.Any = js.native
+  inline def apply(apply: Compiler => Unit, context: String, entry: String, options: String | EntryOptions): EntryPlugin = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), context = context.asInstanceOf[js.Any], entry = entry.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EntryPlugin]
+  }
   
-  /* static member */
-  inline def createDependency(entry: String, options: String): EntryDependency = (^.asInstanceOf[js.Dynamic].applyDynamic("createDependency")(entry.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EntryDependency]
-  inline def createDependency(entry: String, options: EntryOptions): EntryDependency = (^.asInstanceOf[js.Dynamic].applyDynamic("createDependency")(entry.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EntryDependency]
+  extension [Self <: EntryPlugin](x: Self) {
+    
+    inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+    
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setEntry(value: String): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    
+    inline def setOptions(value: String | EntryOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+  }
 }

@@ -26,7 +26,7 @@ trait ReplyFormData extends StObject {
   var htmlBody: js.UndefOr[String] = js.undefined
   
   /**
-    * An object literal that contains the following property.
+    * An object literal that contains the following property:-
     * `asyncContext`: Developers can provide any object they wish to access in the callback function.
     */
   var options: js.UndefOr[AsyncContextOptions] = js.undefined

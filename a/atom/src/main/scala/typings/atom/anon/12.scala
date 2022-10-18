@@ -1,35 +1,31 @@
 package typings.atom.anon
 
-import typings.atom.atomStrings.`12px`
-import typings.atom.atomStrings.`14px`
-import typings.atom.atomStrings.`16px`
-import typings.atom.atomStrings.`18px`
-import typings.atom.atomStrings.`21px`
-import typings.atom.atomStrings.`24px`
-import typings.atom.atomStrings.`28px`
-import typings.atom.atomStrings.`32px`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `12` extends StObject {
   
-  var newValue: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`
+  var newValue: String | Null
   
-  var oldValue: js.UndefOr[`12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`] = js.undefined
+  var oldValue: js.UndefOr[String | Null] = js.undefined
 }
 object `12` {
   
-  inline def apply(newValue: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): `12` = {
-    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
+  inline def apply(): `12` = {
+    val __obj = js.Dynamic.literal(newValue = null)
     __obj.asInstanceOf[`12`]
   }
   
   extension [Self <: `12`](x: Self) {
     
-    inline def setNewValue(value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    inline def setOldValue(value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setNewValueNull: Self = StObject.set(x, "newValue", null)
+    
+    inline def setOldValue(value: String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    
+    inline def setOldValueNull: Self = StObject.set(x, "oldValue", null)
     
     inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }

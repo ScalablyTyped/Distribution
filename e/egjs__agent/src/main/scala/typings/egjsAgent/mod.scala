@@ -1,6 +1,6 @@
 package typings.egjsAgent
 
-import typings.egjsAgent.typesMod.AgentInfo
+import typings.egjsAgent.declarationTypesMod.AgentInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

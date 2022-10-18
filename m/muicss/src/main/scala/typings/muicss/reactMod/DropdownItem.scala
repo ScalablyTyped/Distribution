@@ -1,6 +1,6 @@
 package typings.muicss.reactMod
 
-import typings.muicss.dropdownItemMod.default
+import typings.muicss.libReactDropdownItemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

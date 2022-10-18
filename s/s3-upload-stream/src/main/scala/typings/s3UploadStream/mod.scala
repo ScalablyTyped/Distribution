@@ -1,7 +1,7 @@
 package typings.s3UploadStream
 
+import typings.awsSdk.clientsS3Mod.PutObjectRequest
 import typings.awsSdk.mod.S3
-import typings.awsSdk.s3Mod.PutObjectRequest
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,8 +1,8 @@
 package typings.reactMdPortal
 
 import typings.react.mod.ReactElement
-import typings.reactMdPortal.conditionalPortalMod.ConditionalPortalProps
-import typings.reactMdPortal.portalMod.PortalProps
+import typings.reactMdPortal.typesConditionalPortalMod.ConditionalPortalProps
+import typings.reactMdPortal.typesPortalMod.PortalProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

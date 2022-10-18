@@ -1,6 +1,6 @@
 package typings.reactNativeDocumentPicker
 
-import typings.reactNativeDocumentPicker.fileTypesMod.SupportedPlatforms
+import typings.reactNativeDocumentPicker.libTypescriptFileTypesMod.SupportedPlatforms
 import typings.reactNativeDocumentPicker.mod.DirectoryPickerResponse
 import typings.reactNativeDocumentPicker.mod.DocumentPickerOptions
 import typings.reactNativeDocumentPicker.mod.DocumentPickerResponse
@@ -192,7 +192,7 @@ object anon {
     
     val doc: applicationSlashmsword
     
-    val docx: String
+    val docx: /* application/vnd.openxmlformats-officedocument.wordprocessingml.document */ String
     
     val images: imageSlashAsterisk
     
@@ -202,13 +202,13 @@ object anon {
     
     val ppt: `applicationSlashvndDotms-powerpoint`
     
-    val pptx: String
+    val pptx: /* application/vnd.openxmlformats-officedocument.presentationml.presentation */ String
     
     val video: videoSlashAsterisk
     
     val xls: `applicationSlashvndDotms-excel`
     
-    val xlsx: String
+    val xlsx: /* application/vnd.openxmlformats-officedocument.spreadsheetml.sheet */ String
     
     val zip: applicationSlashzip
   }
@@ -229,7 +229,7 @@ object anon {
       
       inline def setDoc(value: applicationSlashmsword): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
-      inline def setDocx(value: String): Self = StObject.set(x, "docx", value.asInstanceOf[js.Any])
+      inline def setDocx(value: /* application/vnd.openxmlformats-officedocument.wordprocessingml.document */ String): Self = StObject.set(x, "docx", value.asInstanceOf[js.Any])
       
       inline def setImages(value: imageSlashAsterisk): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
@@ -239,13 +239,13 @@ object anon {
       
       inline def setPpt(value: `applicationSlashvndDotms-powerpoint`): Self = StObject.set(x, "ppt", value.asInstanceOf[js.Any])
       
-      inline def setPptx(value: String): Self = StObject.set(x, "pptx", value.asInstanceOf[js.Any])
+      inline def setPptx(value: /* application/vnd.openxmlformats-officedocument.presentationml.presentation */ String): Self = StObject.set(x, "pptx", value.asInstanceOf[js.Any])
       
       inline def setVideo(value: videoSlashAsterisk): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
       inline def setXls(value: `applicationSlashvndDotms-excel`): Self = StObject.set(x, "xls", value.asInstanceOf[js.Any])
       
-      inline def setXlsx(value: String): Self = StObject.set(x, "xlsx", value.asInstanceOf[js.Any])
+      inline def setXlsx(value: /* application/vnd.openxmlformats-officedocument.spreadsheetml.sheet */ String): Self = StObject.set(x, "xlsx", value.asInstanceOf[js.Any])
       
       inline def setZip(value: applicationSlashzip): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
     }
@@ -256,7 +256,7 @@ object anon {
     
     val allFiles: Asterisk
     
-    val audio: String
+    val audio: /* .3g2 .3gp .aac .adt .adts .aif .aifc .aiff .asf .au .m3u .m4a .m4b .mid .midi .mp2 .mp3 .mp4 .rmi .snd .wav .wax .wma */ String
     
     val csv: Dotcsv
     
@@ -293,7 +293,9 @@ object anon {
       
       inline def setAllFiles(value: Asterisk): Self = StObject.set(x, "allFiles", value.asInstanceOf[js.Any])
       
-      inline def setAudio(value: String): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(
+        value: /* .3g2 .3gp .aac .adt .adts .aif .aifc .aiff .asf .au .m3u .m4a .m4b .mid .midi .mp2 .mp3 .mp4 .rmi .snd .wav .wax .wma */ String
+      ): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
       inline def setCsv(value: Dotcsv): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
       

@@ -1,15 +1,15 @@
 package typings.firebaseUtil
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.firebaseUtil.srcCompatMod.Compat
-import typings.firebaseUtil.srcCryptMod.Base64_
-import typings.firebaseUtil.srcEmulatorMod.EmulatorMockTokenOptions
-import typings.firebaseUtil.srcErrorsMod.ErrorMap
-import typings.firebaseUtil.srcJwtMod.DecodedToken
-import typings.firebaseUtil.srcSubscribeMod.ErrorFn
-import typings.firebaseUtil.srcSubscribeMod.Executor
-import typings.firebaseUtil.srcSubscribeMod.Subscribe
+import typings.firebaseUtil.distSrcCompatMod.Compat
+import typings.firebaseUtil.distSrcCryptMod.Base64_
+import typings.firebaseUtil.distSrcDefaultsMod.ExperimentalKey
+import typings.firebaseUtil.distSrcEmulatorMod.EmulatorMockTokenOptions
+import typings.firebaseUtil.distSrcErrorsMod.ErrorMap
+import typings.firebaseUtil.distSrcJwtMod.DecodedToken
+import typings.firebaseUtil.distSrcSubscribeMod.ErrorFn
+import typings.firebaseUtil.distSrcSubscribeMod.Executor
+import typings.firebaseUtil.distSrcSubscribeMod.Subscribe
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,21 +55,19 @@ object distMod {
   @JSImport("@firebase/util/dist", "Deferred")
   @js.native
   open class Deferred[R] ()
-    extends typings.firebaseUtil.srcDeferredMod.Deferred[R]
+    extends typings.firebaseUtil.distSrcDeferredMod.Deferred[R]
   
   @JSImport("@firebase/util/dist", "ErrorFactory")
   @js.native
-  open class ErrorFactory[ErrorCode /* <: String */, ErrorParams /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in ErrorCode ]:? @firebase/util.@firebase/util/dist/src/errors.ErrorData}
-    */ typings.firebaseUtil.firebaseUtilStrings.ErrorFactory & TopLevel[Any] */] protected ()
-    extends typings.firebaseUtil.srcErrorsMod.ErrorFactory[ErrorCode, ErrorParams] {
+  open class ErrorFactory[ErrorCode /* <: String */, ErrorParams /* <: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in ErrorCode ]:? @firebase/util.@firebase/util/dist/src/errors.ErrorData} */ js.Any */] protected ()
+    extends typings.firebaseUtil.distSrcErrorsMod.ErrorFactory[ErrorCode, ErrorParams] {
     def this(service: String, serviceName: String, errors: ErrorMap[ErrorCode]) = this()
   }
   
   @JSImport("@firebase/util/dist", "FirebaseError")
   @js.native
   open class FirebaseError protected ()
-    extends typings.firebaseUtil.srcErrorsMod.FirebaseError {
+    extends typings.firebaseUtil.distSrcErrorsMod.FirebaseError {
     def this(/** The error code for this error. */
     code: String, message: String) = this()
     def this(
@@ -92,7 +90,7 @@ object distMod {
   @JSImport("@firebase/util/dist", "Sha1")
   @js.native
   open class Sha1 ()
-    extends typings.firebaseUtil.srcSha1Mod.Sha1
+    extends typings.firebaseUtil.distSrcSha1Mod.Sha1
   
   inline def areCookiesEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("areCookiesEnabled")().asInstanceOf[Boolean]
   
@@ -138,6 +136,14 @@ object distMod {
   
   inline def extractQuerystring(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractQuerystring")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def getDefaultAppConfig(): js.UndefOr[Record[String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAppConfig")().asInstanceOf[js.UndefOr[Record[String, String]]]
+  
+  inline def getDefaultEmulatorHost(productName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultEmulatorHost")(productName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
+  inline def getDefaultEmulatorHostnameAndPort(productName: String): js.UndefOr[js.Tuple2[/* hostname */ String, /* port */ Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultEmulatorHostnameAndPort")(productName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Tuple2[/* hostname */ String, /* port */ Double]]]
+  
+  inline def getExperimentalSetting[T /* <: ExperimentalKey */](name: T): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/util.@firebase/util/dist/src/defaults.FirebaseDefaults[/ * template literal string: _${T} * / string] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExperimentalSetting")(name.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: @firebase/util.@firebase/util/dist/src/defaults.FirebaseDefaults[/ * template literal string: _${T} * / string] */ js.Any]
+  
   inline def getGlobal(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobal")().asInstanceOf[Any]
   
   inline def getModularInstance[ExpService](service: ExpService): ExpService = ^.asInstanceOf[js.Dynamic].applyDynamic("getModularInstance")(service.asInstanceOf[js.Any]).asInstanceOf[ExpService]
@@ -180,40 +186,24 @@ object distMod {
   inline def jsonEval(str: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonEval")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def map[K /* <: String */, V, U](
-    obj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: V}
-    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any],
+    obj: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: V} */ js.Any,
     fn: js.Function3[
       /* value */ V, 
       /* key */ K, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: V}
-    */ /* obj */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any], 
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: V} */ /* obj */ js.Any, 
       U
     ]
-  ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: U}
-    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: U}
-    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any]]
+  ): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: U} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: U} */ js.Any]
   inline def map[K /* <: String */, V, U](
-    obj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: V}
-    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any],
+    obj: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: V} */ js.Any,
     fn: js.Function3[
       /* value */ V, 
       /* key */ K, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: V}
-    */ /* obj */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any], 
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: V} */ /* obj */ js.Any, 
       U
     ],
     contextObj: Any
-  ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: U}
-    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], contextObj.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: U}
-    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any]]
+  ): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: U} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], contextObj.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: U} */ js.Any]
   
   inline def ordinal(i: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(i.asInstanceOf[js.Any]).asInstanceOf[String]
   

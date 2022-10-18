@@ -1,50 +1,50 @@
 package typings.jose
 
-import typings.jose.base64urlMod.Base64UrlDecode
-import typings.jose.base64urlMod.Base64UrlEncode
-import typings.jose.decodeProtectedHeaderMod.ProtectedHeaderParameters
-import typings.jose.decryptMod.CompactDecryptGetKey
-import typings.jose.flattenedDecryptMod.FlattenedDecryptGetKey
-import typings.jose.flattenedVerifyMod.FlattenedVerifyGetKey
-import typings.jose.generalDecryptMod.GeneralDecryptGetKey
-import typings.jose.generalVerifyMod.GeneralVerifyGetKey
-import typings.jose.generateKeyPairMod.GenerateKeyPairOptions
-import typings.jose.generateKeyPairMod.GenerateKeyPairResult
-import typings.jose.generateSecretMod.GenerateSecretOptions
-import typings.jose.importMod.PEMImportOptions
+import typings.jose.distTypesJweCompactDecryptMod.CompactDecryptGetKey
+import typings.jose.distTypesJweFlattenedDecryptMod.FlattenedDecryptGetKey
+import typings.jose.distTypesJweGeneralDecryptMod.GeneralDecryptGetKey
+import typings.jose.distTypesJwksRemoteMod.RemoteJWKSetOptions
+import typings.jose.distTypesJwksRemoteMod.URL
+import typings.jose.distTypesJwsCompactVerifyMod.CompactVerifyGetKey
+import typings.jose.distTypesJwsFlattenedVerifyMod.FlattenedVerifyGetKey
+import typings.jose.distTypesJwsGeneralVerifyMod.GeneralVerifyGetKey
+import typings.jose.distTypesJwtDecryptMod.JWTDecryptGetKey
+import typings.jose.distTypesJwtDecryptMod.JWTDecryptOptions
+import typings.jose.distTypesJwtUnsecuredMod.UnsecuredResult
+import typings.jose.distTypesJwtVerifyMod.JWTVerifyGetKey
+import typings.jose.distTypesJwtVerifyMod.JWTVerifyOptions
+import typings.jose.distTypesKeyGenerateKeyPairMod.GenerateKeyPairOptions
+import typings.jose.distTypesKeyGenerateKeyPairMod.GenerateKeyPairResult
+import typings.jose.distTypesKeyGenerateSecretMod.GenerateSecretOptions
+import typings.jose.distTypesKeyImportMod.PEMImportOptions
+import typings.jose.distTypesTypesMod.CompactDecryptResult
+import typings.jose.distTypesTypesMod.CompactVerifyResult
+import typings.jose.distTypesTypesMod.DecryptOptions
+import typings.jose.distTypesTypesMod.FlattenedDecryptResult
+import typings.jose.distTypesTypesMod.FlattenedJWE
+import typings.jose.distTypesTypesMod.FlattenedJWSInput
+import typings.jose.distTypesTypesMod.FlattenedVerifyResult
+import typings.jose.distTypesTypesMod.GeneralDecryptResult
+import typings.jose.distTypesTypesMod.GeneralJWE
+import typings.jose.distTypesTypesMod.GeneralJWSInput
+import typings.jose.distTypesTypesMod.GeneralVerifyResult
+import typings.jose.distTypesTypesMod.GetKeyFunction
+import typings.jose.distTypesTypesMod.JSONWebKeySet
+import typings.jose.distTypesTypesMod.JWK
+import typings.jose.distTypesTypesMod.JWSHeaderParameters
+import typings.jose.distTypesTypesMod.JWTClaimVerificationOptions
+import typings.jose.distTypesTypesMod.JWTDecryptResult
+import typings.jose.distTypesTypesMod.JWTPayload
+import typings.jose.distTypesTypesMod.JWTVerifyResult
+import typings.jose.distTypesTypesMod.KeyLike
+import typings.jose.distTypesTypesMod.ResolvedKey
+import typings.jose.distTypesTypesMod.VerifyOptions
+import typings.jose.distTypesUtilBase64urlMod.Base64UrlDecode
+import typings.jose.distTypesUtilBase64urlMod.Base64UrlEncode
+import typings.jose.distTypesUtilDecodeProtectedHeaderMod.ProtectedHeaderParameters
 import typings.jose.joseStrings.sha256
 import typings.jose.joseStrings.sha384
 import typings.jose.joseStrings.sha512
-import typings.jose.jwtDecryptMod.JWTDecryptGetKey
-import typings.jose.jwtDecryptMod.JWTDecryptOptions
-import typings.jose.jwtVerifyMod.JWTVerifyGetKey
-import typings.jose.jwtVerifyMod.JWTVerifyOptions
-import typings.jose.remoteMod.RemoteJWKSetOptions
-import typings.jose.remoteMod.URL
-import typings.jose.typesMod.CompactDecryptResult
-import typings.jose.typesMod.CompactVerifyResult
-import typings.jose.typesMod.DecryptOptions
-import typings.jose.typesMod.FlattenedDecryptResult
-import typings.jose.typesMod.FlattenedJWE
-import typings.jose.typesMod.FlattenedJWSInput
-import typings.jose.typesMod.FlattenedVerifyResult
-import typings.jose.typesMod.GeneralDecryptResult
-import typings.jose.typesMod.GeneralJWE
-import typings.jose.typesMod.GeneralJWSInput
-import typings.jose.typesMod.GeneralVerifyResult
-import typings.jose.typesMod.GetKeyFunction
-import typings.jose.typesMod.JSONWebKeySet
-import typings.jose.typesMod.JWK
-import typings.jose.typesMod.JWSHeaderParameters
-import typings.jose.typesMod.JWTClaimVerificationOptions
-import typings.jose.typesMod.JWTDecryptResult
-import typings.jose.typesMod.JWTPayload
-import typings.jose.typesMod.JWTVerifyResult
-import typings.jose.typesMod.KeyLike
-import typings.jose.typesMod.ResolvedKey
-import typings.jose.typesMod.VerifyOptions
-import typings.jose.unsecuredMod.UnsecuredResult
-import typings.jose.verifyMod.CompactVerifyGetKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,7 +58,7 @@ object mod {
   @JSImport("jose", "CompactEncrypt")
   @js.native
   open class CompactEncrypt protected ()
-    extends typings.jose.encryptMod.CompactEncrypt {
+    extends typings.jose.distTypesJweCompactEncryptMod.CompactEncrypt {
     /** @param plaintext Binary representation of the plaintext to encrypt. */
     def this(plaintext: js.typedarray.Uint8Array) = this()
   }
@@ -66,7 +66,7 @@ object mod {
   @JSImport("jose", "CompactSign")
   @js.native
   open class CompactSign protected ()
-    extends typings.jose.signMod.CompactSign {
+    extends typings.jose.distTypesJwsCompactSignMod.CompactSign {
     /** @param payload Binary representation of the payload to sign. */
     def this(payload: js.typedarray.Uint8Array) = this()
   }
@@ -76,7 +76,7 @@ object mod {
   @JSImport("jose", "EncryptJWT")
   @js.native
   open class EncryptJWT protected ()
-    extends typings.jose.jwtEncryptMod.EncryptJWT {
+    extends typings.jose.distTypesJwtEncryptMod.EncryptJWT {
     /** @param payload The JWT Claims Set object. */
     def this(payload: JWTPayload) = this()
   }
@@ -84,7 +84,7 @@ object mod {
   @JSImport("jose", "FlattenedEncrypt")
   @js.native
   open class FlattenedEncrypt protected ()
-    extends typings.jose.flattenedEncryptMod.FlattenedEncrypt {
+    extends typings.jose.distTypesJweFlattenedEncryptMod.FlattenedEncrypt {
     /** @param plaintext Binary representation of the plaintext to encrypt. */
     def this(plaintext: js.typedarray.Uint8Array) = this()
   }
@@ -92,7 +92,7 @@ object mod {
   @JSImport("jose", "FlattenedSign")
   @js.native
   open class FlattenedSign protected ()
-    extends typings.jose.flattenedSignMod.FlattenedSign {
+    extends typings.jose.distTypesJwsFlattenedSignMod.FlattenedSign {
     /** @param payload Binary representation of the payload to sign. */
     def this(payload: js.typedarray.Uint8Array) = this()
   }
@@ -100,7 +100,7 @@ object mod {
   @JSImport("jose", "GeneralEncrypt")
   @js.native
   open class GeneralEncrypt protected ()
-    extends typings.jose.generalEncryptMod.GeneralEncrypt {
+    extends typings.jose.distTypesJweGeneralEncryptMod.GeneralEncrypt {
     /** @param plaintext Binary representation of the plaintext to encrypt. */
     def this(plaintext: js.typedarray.Uint8Array) = this()
   }
@@ -108,7 +108,7 @@ object mod {
   @JSImport("jose", "GeneralSign")
   @js.native
   open class GeneralSign protected ()
-    extends typings.jose.generalSignMod.GeneralSign {
+    extends typings.jose.distTypesJwsGeneralSignMod.GeneralSign {
     /** @param payload Binary representation of the payload to sign. */
     def this(payload: js.typedarray.Uint8Array) = this()
   }
@@ -116,7 +116,7 @@ object mod {
   @JSImport("jose", "ProduceJWT")
   @js.native
   open class ProduceJWT protected ()
-    extends typings.jose.produceMod.ProduceJWT {
+    extends typings.jose.distTypesJwtProduceMod.ProduceJWT {
     /** @param payload The JWT Claims Set object. */
     def this(payload: JWTPayload) = this()
   }
@@ -124,7 +124,7 @@ object mod {
   @JSImport("jose", "SignJWT")
   @js.native
   open class SignJWT protected ()
-    extends typings.jose.jwtSignMod.SignJWT {
+    extends typings.jose.distTypesJwtSignMod.SignJWT {
     /** @param payload The JWT Claims Set object. */
     def this(payload: JWTPayload) = this()
   }
@@ -132,7 +132,7 @@ object mod {
   @JSImport("jose", "UnsecuredJWT")
   @js.native
   open class UnsecuredJWT protected ()
-    extends typings.jose.unsecuredMod.UnsecuredJWT {
+    extends typings.jose.distTypesJwtUnsecuredMod.UnsecuredJWT {
     /** @param payload The JWT Claims Set object. */
     def this(payload: JWTPayload) = this()
   }
@@ -211,91 +211,91 @@ object mod {
     @JSImport("jose", "errors.JOSEAlgNotAllowed")
     @js.native
     open class JOSEAlgNotAllowed ()
-      extends typings.jose.errorsMod.JOSEAlgNotAllowed {
+      extends typings.jose.distTypesUtilErrorsMod.JOSEAlgNotAllowed {
       def this(message: String) = this()
     }
     
     @JSImport("jose", "errors.JOSEError")
     @js.native
     open class JOSEError ()
-      extends typings.jose.errorsMod.JOSEError {
+      extends typings.jose.distTypesUtilErrorsMod.JOSEError {
       def this(message: String) = this()
     }
     
     @JSImport("jose", "errors.JOSENotSupported")
     @js.native
     open class JOSENotSupported ()
-      extends typings.jose.errorsMod.JOSENotSupported {
+      extends typings.jose.distTypesUtilErrorsMod.JOSENotSupported {
       def this(message: String) = this()
     }
     
     @JSImport("jose", "errors.JWEDecryptionFailed")
     @js.native
     open class JWEDecryptionFailed ()
-      extends typings.jose.errorsMod.JWEDecryptionFailed {
+      extends typings.jose.distTypesUtilErrorsMod.JWEDecryptionFailed {
       def this(message: String) = this()
     }
     
     @JSImport("jose", "errors.JWEInvalid")
     @js.native
     open class JWEInvalid ()
-      extends typings.jose.errorsMod.JWEInvalid {
+      extends typings.jose.distTypesUtilErrorsMod.JWEInvalid {
       def this(message: String) = this()
     }
     
     @JSImport("jose", "errors.JWKInvalid")
     @js.native
     open class JWKInvalid ()
-      extends typings.jose.errorsMod.JWKInvalid {
+      extends typings.jose.distTypesUtilErrorsMod.JWKInvalid {
       def this(message: String) = this()
     }
     
     @JSImport("jose", "errors.JWKSInvalid")
     @js.native
     open class JWKSInvalid ()
-      extends typings.jose.errorsMod.JWKSInvalid {
+      extends typings.jose.distTypesUtilErrorsMod.JWKSInvalid {
       def this(message: String) = this()
     }
     
     @JSImport("jose", "errors.JWKSMultipleMatchingKeys")
     @js.native
     open class JWKSMultipleMatchingKeys ()
-      extends typings.jose.errorsMod.JWKSMultipleMatchingKeys {
+      extends typings.jose.distTypesUtilErrorsMod.JWKSMultipleMatchingKeys {
       def this(message: String) = this()
     }
     
     @JSImport("jose", "errors.JWKSNoMatchingKey")
     @js.native
     open class JWKSNoMatchingKey ()
-      extends typings.jose.errorsMod.JWKSNoMatchingKey {
+      extends typings.jose.distTypesUtilErrorsMod.JWKSNoMatchingKey {
       def this(message: String) = this()
     }
     
     @JSImport("jose", "errors.JWKSTimeout")
     @js.native
     open class JWKSTimeout ()
-      extends typings.jose.errorsMod.JWKSTimeout {
+      extends typings.jose.distTypesUtilErrorsMod.JWKSTimeout {
       def this(message: String) = this()
     }
     
     @JSImport("jose", "errors.JWSInvalid")
     @js.native
     open class JWSInvalid ()
-      extends typings.jose.errorsMod.JWSInvalid {
+      extends typings.jose.distTypesUtilErrorsMod.JWSInvalid {
       def this(message: String) = this()
     }
     
     @JSImport("jose", "errors.JWSSignatureVerificationFailed")
     @js.native
     open class JWSSignatureVerificationFailed ()
-      extends typings.jose.errorsMod.JWSSignatureVerificationFailed {
+      extends typings.jose.distTypesUtilErrorsMod.JWSSignatureVerificationFailed {
       def this(message: String) = this()
     }
     
     @JSImport("jose", "errors.JWTClaimValidationFailed")
     @js.native
     open class JWTClaimValidationFailed protected ()
-      extends typings.jose.errorsMod.JWTClaimValidationFailed {
+      extends typings.jose.distTypesUtilErrorsMod.JWTClaimValidationFailed {
       def this(message: String) = this()
       def this(message: String, claim: String) = this()
       def this(message: String, claim: String, reason: String) = this()
@@ -305,7 +305,7 @@ object mod {
     @JSImport("jose", "errors.JWTExpired")
     @js.native
     open class JWTExpired protected ()
-      extends typings.jose.errorsMod.JWTExpired {
+      extends typings.jose.distTypesUtilErrorsMod.JWTExpired {
       def this(message: String) = this()
       def this(message: String, claim: String) = this()
       def this(message: String, claim: String, reason: String) = this()
@@ -315,7 +315,7 @@ object mod {
     @JSImport("jose", "errors.JWTInvalid")
     @js.native
     open class JWTInvalid ()
-      extends typings.jose.errorsMod.JWTInvalid {
+      extends typings.jose.distTypesUtilErrorsMod.JWTInvalid {
       def this(message: String) = this()
     }
   }

@@ -180,9 +180,9 @@ object Core {
     }
     
     /** Provides methods that enable you to retrieve the parameters of an opacity (fade in or fade out) animation. */
-    @JSGlobal("Windows.UI.Core.AnimationMetrics.OpacityAnimation")
+    /* note: abstract class */ @JSGlobal("Windows.UI.Core.AnimationMetrics.OpacityAnimation")
     @js.native
-    abstract class OpacityAnimation ()
+    open class OpacityAnimation ()
       extends StObject
          with typings.winrtUwp.Windows.UI.Core.AnimationMetrics.OpacityAnimation {
       
@@ -216,9 +216,9 @@ object Core {
     }
     
     /** Provides methods that enable you to retrieve animation property values that are common to all property animation types . */
-    @JSGlobal("Windows.UI.Core.AnimationMetrics.PropertyAnimation")
+    /* note: abstract class */ @JSGlobal("Windows.UI.Core.AnimationMetrics.PropertyAnimation")
     @js.native
-    abstract class PropertyAnimation ()
+    open class PropertyAnimation ()
       extends StObject
          with typings.winrtUwp.Windows.UI.Core.AnimationMetrics.PropertyAnimation {
       
@@ -259,9 +259,9 @@ object Core {
     }
     
     /** Provides methods that enable you to retrieve the parameters for a scaling (growing or shrinking) animation. */
-    @JSGlobal("Windows.UI.Core.AnimationMetrics.ScaleAnimation")
+    /* note: abstract class */ @JSGlobal("Windows.UI.Core.AnimationMetrics.ScaleAnimation")
     @js.native
-    abstract class ScaleAnimation ()
+    open class ScaleAnimation ()
       extends StObject
          with typings.winrtUwp.Windows.UI.Core.AnimationMetrics.ScaleAnimation {
       
@@ -307,9 +307,9 @@ object Core {
     }
     
     /** Provides methods that enable you to retrieve the parameters for a translation (move to a new location) animation. */
-    @JSGlobal("Windows.UI.Core.AnimationMetrics.TranslationAnimation")
+    /* note: abstract class */ @JSGlobal("Windows.UI.Core.AnimationMetrics.TranslationAnimation")
     @js.native
-    abstract class TranslationAnimation ()
+    open class TranslationAnimation ()
       extends StObject
          with typings.winrtUwp.Windows.UI.Core.AnimationMetrics.TranslationAnimation {
       
@@ -349,9 +349,9 @@ object Core {
   }
   
   /** Provides event data for the SystemNavigationManager.BackRequested event. */
-  @JSGlobal("Windows.UI.Core.BackRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Core.BackRequestedEventArgs")
   @js.native
-  abstract class BackRequestedEventArgs ()
+  open class BackRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Core.BackRequestedEventArgs {
     
@@ -361,9 +361,9 @@ object Core {
   }
   
   /** Provides a way for an app to respond to system provided back-navigation events. */
-  @JSGlobal("Windows.UI.Core.SystemNavigationManager")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Core.SystemNavigationManager")
   @js.native
-  abstract class SystemNavigationManager ()
+  open class SystemNavigationManager ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Core.SystemNavigationManager
   object SystemNavigationManager {

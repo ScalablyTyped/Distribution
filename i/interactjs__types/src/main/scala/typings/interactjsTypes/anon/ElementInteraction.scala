@@ -10,13 +10,13 @@ trait ElementInteraction extends StObject {
   
   var element: typings.std.Element
   
-  var interaction: Partial[typings.interactjsTypes.interactionMod.Interaction[drag]]
+  var interaction: Partial[typings.interactjsTypes.coreInteractionMod.Interaction[drag]]
 }
 object ElementInteraction {
   
   inline def apply(
     element: typings.std.Element,
-    interaction: Partial[typings.interactjsTypes.interactionMod.Interaction[drag]]
+    interaction: Partial[typings.interactjsTypes.coreInteractionMod.Interaction[drag]]
   ): ElementInteraction = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], interaction = interaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementInteraction]
@@ -26,6 +26,6 @@ object ElementInteraction {
     
     inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    inline def setInteraction(value: Partial[typings.interactjsTypes.interactionMod.Interaction[drag]]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+    inline def setInteraction(value: Partial[typings.interactjsTypes.coreInteractionMod.Interaction[drag]]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
   }
 }

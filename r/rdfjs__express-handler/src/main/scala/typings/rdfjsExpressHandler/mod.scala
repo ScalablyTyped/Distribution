@@ -124,6 +124,7 @@ object mod extends Shortcut {
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: RdfHandler = ^
   
+  /* augmented module */
   object expressServeStaticCoreAugmentingMod {
     
     trait Request extends StObject {

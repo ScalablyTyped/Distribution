@@ -1,32 +1,34 @@
 package typings.tensorflowTfjsLayers
 
-import typings.tensorflowTfjsLayers.activationConfigMod.ActivationIdentifier
-import typings.tensorflowTfjsLayers.advancedActivationSerializationMod.AdvancedActivationLayerClassName
-import typings.tensorflowTfjsLayers.baseCallbacksMod._YieldEveryOptions
-import typings.tensorflowTfjsLayers.constraintConfigMod.ConstraintClassName
-import typings.tensorflowTfjsLayers.constraintsMod._ConstraintIdentifier
-import typings.tensorflowTfjsLayers.convolutionalSerializationMod.ConvolutionalLayerClassName
-import typings.tensorflowTfjsLayers.coreSerializationMod.CoreLayerClassName
-import typings.tensorflowTfjsLayers.initializerConfigMod.Distribution
-import typings.tensorflowTfjsLayers.initializerConfigMod.DistributionSerialization
-import typings.tensorflowTfjsLayers.initializerConfigMod.FanMode
-import typings.tensorflowTfjsLayers.initializerConfigMod.FanModeSerialization
-import typings.tensorflowTfjsLayers.initializerConfigMod.InitializerClassName
-import typings.tensorflowTfjsLayers.initializersMod._InitializerIdentifier
-import typings.tensorflowTfjsLayers.kerasClassNamesMod.KerasClassName
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.BidirectionalMergeMode
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormat
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormatSerialization
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataType
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.InterpolationFormat
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PaddingMode
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PoolMode
-import typings.tensorflowTfjsLayers.layerSerializationMod.LayerClassName
-import typings.tensorflowTfjsLayers.mergeSerializationMod.MergeLayerClassName
-import typings.tensorflowTfjsLayers.optimizerConfigMod.OptimizerClassName
-import typings.tensorflowTfjsLayers.poolingSerializationMod.PoolingLayerClassName
-import typings.tensorflowTfjsLayers.recurrentSerializationMod.RecurrentLayerClassName
-import typings.tensorflowTfjsLayers.wrappersSerializationMod.WrapperLayerClassName
+import typings.tensorflowTfjsLayers.distBaseCallbacksMod._YieldEveryOptions
+import typings.tensorflowTfjsLayers.distConstraintsMod._ConstraintIdentifier
+import typings.tensorflowTfjsLayers.distInitializersMod._InitializerIdentifier
+import typings.tensorflowTfjsLayers.distKerasFormatActivationConfigMod.ActivationIdentifier
+import typings.tensorflowTfjsLayers.distKerasFormatCommonMod.BidirectionalMergeMode
+import typings.tensorflowTfjsLayers.distKerasFormatCommonMod.DataFormat
+import typings.tensorflowTfjsLayers.distKerasFormatCommonMod.DataFormatSerialization
+import typings.tensorflowTfjsLayers.distKerasFormatCommonMod.DataType
+import typings.tensorflowTfjsLayers.distKerasFormatCommonMod.InterpolationFormat
+import typings.tensorflowTfjsLayers.distKerasFormatCommonMod.PaddingMode
+import typings.tensorflowTfjsLayers.distKerasFormatCommonMod.PoolMode
+import typings.tensorflowTfjsLayers.distKerasFormatConstraintConfigMod.ConstraintClassName
+import typings.tensorflowTfjsLayers.distKerasFormatInitializerConfigMod.Distribution
+import typings.tensorflowTfjsLayers.distKerasFormatInitializerConfigMod.DistributionSerialization
+import typings.tensorflowTfjsLayers.distKerasFormatInitializerConfigMod.FanMode
+import typings.tensorflowTfjsLayers.distKerasFormatInitializerConfigMod.FanModeSerialization
+import typings.tensorflowTfjsLayers.distKerasFormatInitializerConfigMod.InitializerClassName
+import typings.tensorflowTfjsLayers.distKerasFormatKerasClassNamesMod.KerasClassName
+import typings.tensorflowTfjsLayers.distKerasFormatLayersAdvancedActivationSerializationMod.AdvancedActivationLayerClassName
+import typings.tensorflowTfjsLayers.distKerasFormatLayersConvolutionalSerializationMod.ConvolutionalLayerClassName
+import typings.tensorflowTfjsLayers.distKerasFormatLayersCoreSerializationMod.CoreLayerClassName
+import typings.tensorflowTfjsLayers.distKerasFormatLayersLayerSerializationMod.LayerClassName
+import typings.tensorflowTfjsLayers.distKerasFormatLayersMergeSerializationMod.MergeLayerClassName
+import typings.tensorflowTfjsLayers.distKerasFormatLayersPoolingSerializationMod.PoolingLayerClassName
+import typings.tensorflowTfjsLayers.distKerasFormatLayersRecurrentSerializationMod.RecurrentLayerClassName
+import typings.tensorflowTfjsLayers.distKerasFormatLayersWrappersSerializationMod.WrapperLayerClassName
+import typings.tensorflowTfjsLayers.distKerasFormatOptimizerConfigMod.OptimizerClassName
+import typings.tensorflowTfjsLayers.distLayersPreprocessingImageResizingMod.InterpolationType
+import typings.tensorflowTfjsLayers.distLayersPreprocessingPreprocessingUtilsMod.OutputMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -410,10 +412,6 @@ object tensorflowTfjsLayersStrings {
   inline def Permute: Permute = "Permute".asInstanceOf[Permute]
   
   @js.native
-  sealed trait PyJson extends StObject
-  inline def PyJson: PyJson = "PyJson".asInstanceOf[PyJson]
-  
-  @js.native
   sealed trait RMSProp
     extends StObject
        with KerasClassName
@@ -594,6 +592,7 @@ object tensorflowTfjsLayersStrings {
   sealed trait bilinear
     extends StObject
        with InterpolationFormat
+       with InterpolationType
   inline def bilinear: bilinear = "bilinear".asInstanceOf[bilinear]
   
   @js.native
@@ -661,6 +660,12 @@ object tensorflowTfjsLayersStrings {
   @js.native
   sealed trait cosine_proximity extends StObject
   inline def cosine_proximity: cosine_proximity = "cosine_proximity".asInstanceOf[cosine_proximity]
+  
+  @js.native
+  sealed trait count
+    extends StObject
+       with OutputMode
+  inline def count: count = "count".asInstanceOf[count]
   
   @js.native
   sealed trait cpu extends StObject
@@ -777,6 +782,12 @@ object tensorflowTfjsLayersStrings {
   inline def input_shape: input_shape = "input_shape".asInstanceOf[input_shape]
   
   @js.native
+  sealed trait int
+    extends StObject
+       with OutputMode
+  inline def int: int = "int".asInstanceOf[int]
+  
+  @js.native
   sealed trait int32
     extends StObject
        with DataType
@@ -863,6 +874,12 @@ object tensorflowTfjsLayersStrings {
   inline def mul: mul = "mul".asInstanceOf[mul]
   
   @js.native
+  sealed trait multiHot
+    extends StObject
+       with OutputMode
+  inline def multiHot: multiHot = "multiHot".asInstanceOf[multiHot]
+  
+  @js.native
   sealed trait name extends StObject
   inline def name: name = "name".asInstanceOf[name]
   
@@ -870,6 +887,7 @@ object tensorflowTfjsLayersStrings {
   sealed trait nearest
     extends StObject
        with InterpolationFormat
+       with InterpolationType
   inline def nearest: nearest = "nearest".asInstanceOf[nearest]
   
   @js.native
@@ -890,6 +908,12 @@ object tensorflowTfjsLayersStrings {
        with Distribution
        with DistributionSerialization
   inline def normal: normal = "normal".asInstanceOf[normal]
+  
+  @js.native
+  sealed trait oneHot
+    extends StObject
+       with OutputMode
+  inline def oneHot: oneHot = "oneHot".asInstanceOf[oneHot]
   
   @js.native
   sealed trait ones_
@@ -1002,6 +1026,12 @@ object tensorflowTfjsLayersStrings {
   @js.native
   sealed trait temporal extends StObject
   inline def temporal: temporal = "temporal".asInstanceOf[temporal]
+  
+  @js.native
+  sealed trait tfIdf
+    extends StObject
+       with OutputMode
+  inline def tfIdf: tfIdf = "tfIdf".asInstanceOf[tfIdf]
   
   @js.native
   sealed trait trainable extends StObject

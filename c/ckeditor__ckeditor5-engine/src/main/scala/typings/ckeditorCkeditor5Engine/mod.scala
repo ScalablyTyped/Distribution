@@ -8,7 +8,7 @@ import typings.ckeditorCkeditor5Engine.anon.End
 import typings.ckeditorCkeditor5Engine.anon.FnCall
 import typings.ckeditorCkeditor5Engine.anon.NonNullableBoxSides
 import typings.ckeditorCkeditor5Engine.anon.OperationsA
-import typings.ckeditorCkeditor5Engine.anon.Path
+import typings.ckeditorCkeditor5Engine.anon.Value
 import typings.ckeditorCkeditor5Engine.anon.`0`
 import typings.ckeditorCkeditor5Engine.anon.`1`
 import typings.ckeditorCkeditor5Engine.anon.`2`
@@ -18,13 +18,14 @@ import typings.ckeditorCkeditor5Engine.anon.`5`
 import typings.ckeditorCkeditor5Engine.anon.`6`
 import typings.ckeditorCkeditor5Engine.anon.`7`
 import typings.ckeditorCkeditor5Engine.anon.`8`
-import typings.ckeditorCkeditor5Engine.clickobserverMod.default
-import typings.ckeditorCkeditor5Engine.matcherMod.MatcherPattern
-import typings.ckeditorCkeditor5Engine.nodeMod.NodeSet
-import typings.ckeditorCkeditor5Engine.operationMod.Operation
-import typings.ckeditorCkeditor5Engine.positionMod.PositionStickiness
-import typings.ckeditorCkeditor5Engine.stylesmapMod.BoxSides
-import typings.ckeditorCkeditor5Engine.treewalkerMod.TreeWalkerOptions
+import typings.ckeditorCkeditor5Engine.srcModelNodeMod.NodeSet
+import typings.ckeditorCkeditor5Engine.srcModelOperationOperationMod.Operation
+import typings.ckeditorCkeditor5Engine.srcModelPositionMod.PositionStickiness
+import typings.ckeditorCkeditor5Engine.srcModelTreewalkerMod.TreeWalkerOptions
+import typings.ckeditorCkeditor5Engine.srcViewMatcherMod.MatcherPattern
+import typings.ckeditorCkeditor5Engine.srcViewObserverClickobserverMod.default
+import typings.ckeditorCkeditor5Engine.srcViewStylesmapMod.BoxSides
+import typings.ckeditorCkeditor5Engine.srcViewViewMod.View
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.CompositionEvent
@@ -65,63 +66,64 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-engine", "Conversion")
   @js.native
   open class Conversion protected ()
-    extends typings.ckeditorCkeditor5Engine.conversionMod.default {
+    extends typings.ckeditorCkeditor5Engine.srcConversionConversionMod.default {
     def this(
-      downcastDispatchers: js.Array[typings.ckeditorCkeditor5Engine.downcastdispatcherMod.default[js.Object]],
-      upcastDispatchers: js.Array[typings.ckeditorCkeditor5Engine.upcastdispatcherMod.default]
+      downcastDispatchers: js.Array[
+            typings.ckeditorCkeditor5Engine.srcConversionDowncastdispatcherMod.default[js.Object]
+          ],
+      upcastDispatchers: js.Array[typings.ckeditorCkeditor5Engine.srcConversionUpcastdispatcherMod.default]
     ) = this()
     def this(
-      downcastDispatchers: js.Array[typings.ckeditorCkeditor5Engine.downcastdispatcherMod.default[js.Object]],
-      upcastDispatchers: typings.ckeditorCkeditor5Engine.upcastdispatcherMod.default
+      downcastDispatchers: js.Array[
+            typings.ckeditorCkeditor5Engine.srcConversionDowncastdispatcherMod.default[js.Object]
+          ],
+      upcastDispatchers: typings.ckeditorCkeditor5Engine.srcConversionUpcastdispatcherMod.default
     ) = this()
     def this(
-      downcastDispatchers: typings.ckeditorCkeditor5Engine.downcastdispatcherMod.default[js.Object],
-      upcastDispatchers: js.Array[typings.ckeditorCkeditor5Engine.upcastdispatcherMod.default]
+      downcastDispatchers: typings.ckeditorCkeditor5Engine.srcConversionDowncastdispatcherMod.default[js.Object],
+      upcastDispatchers: js.Array[typings.ckeditorCkeditor5Engine.srcConversionUpcastdispatcherMod.default]
     ) = this()
     def this(
-      downcastDispatchers: typings.ckeditorCkeditor5Engine.downcastdispatcherMod.default[js.Object],
-      upcastDispatchers: typings.ckeditorCkeditor5Engine.upcastdispatcherMod.default
+      downcastDispatchers: typings.ckeditorCkeditor5Engine.srcConversionDowncastdispatcherMod.default[js.Object],
+      upcastDispatchers: typings.ckeditorCkeditor5Engine.srcConversionUpcastdispatcherMod.default
     ) = this()
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "DataController")
   @js.native
   open class DataController protected ()
-    extends typings.ckeditorCkeditor5Engine.datacontrollerMod.default {
+    extends typings.ckeditorCkeditor5Engine.srcControllerDatacontrollerMod.default {
     /**
       * Creates a data controller instance.
       */
     def this(
-      model: typings.ckeditorCkeditor5Engine.modelMod.Model,
-      stylesProcessor: typings.ckeditorCkeditor5Engine.stylesmapMod.StylesProcessor
+      model: typings.ckeditorCkeditor5Engine.srcModelModelMod.Model,
+      stylesProcessor: typings.ckeditorCkeditor5Engine.srcViewStylesmapMod.StylesProcessor
     ) = this()
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "DocumentSelection")
   @js.native
   open class DocumentSelection protected ()
-    extends typings.ckeditorCkeditor5Engine.documentselectionMod.default {
-    def this(doc: typings.ckeditorCkeditor5Engine.documentMod.default) = this()
+    extends typings.ckeditorCkeditor5Engine.srcModelDocumentselectionMod.default {
+    def this(doc: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default) = this()
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "DomConverter")
   @js.native
   open class DomConverter protected ()
-    extends typings.ckeditorCkeditor5Engine.domconverterMod.default {
-    def this(document: typings.ckeditorCkeditor5Engine.viewDocumentMod.default) = this()
-    def this(document: typings.ckeditorCkeditor5Engine.viewDocumentMod.default, options: BlockFillerMode) = this()
+    extends typings.ckeditorCkeditor5Engine.srcViewDomconverterMod.default {
+    def this(document: typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default) = this()
+    def this(document: typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default, options: BlockFillerMode) = this()
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "DomEventData")
   @js.native
-  open class DomEventData[V /* <: /* Couldn't translate: 'key not found: IArray(TsIdentLibraryScoped(ckeditor,ckeditor5-engine), TsIdentModule(Some(ckeditor),List(ckeditor5-engine, src, view, view)))' */ Any */, K /* <: InputEvent | ClipboardEvent | TransitionEvent | AnimationEvent | CompositionEvent | FormDataEvent | WheelEvent | ErrorEvent | DragEvent | KeyboardEvent | MouseEvent | SubmitEvent | UIEvent | PointerEvent | TouchEvent | FocusEvent | Event | ProgressEvent[EventTarget] | SecurityPolicyViolationEvent */, L /* <: /* keyof K */ String */] protected ()
-    extends typings.ckeditorCkeditor5Engine.domeventdataMod.default[V, K, L] {
+  open class DomEventData[V /* <: View */, K /* <: InputEvent | ClipboardEvent | TransitionEvent | AnimationEvent | CompositionEvent | FormDataEvent | WheelEvent | ErrorEvent | DragEvent | KeyboardEvent | MouseEvent | SubmitEvent | UIEvent | PointerEvent | TouchEvent | FocusEvent | Event | ProgressEvent[EventTarget] | SecurityPolicyViolationEvent */, L /* <: /* keyof K */ String */] protected ()
+    extends typings.ckeditorCkeditor5Engine.srcViewObserverDomeventdataMod.default[V, K, L] {
+    def this(view: View, domEvent: K) = this()
     def this(
-      view: /* Couldn't translate: 'key not found: IArray(TsIdentLibraryScoped(ckeditor,ckeditor5-engine), TsIdentModule(Some(ckeditor),List(ckeditor5-engine, src, view, view)))' */ Any,
-      domEvent: K
-    ) = this()
-    def this(
-      view: /* Couldn't translate: 'key not found: IArray(TsIdentLibraryScoped(ckeditor,ckeditor5-engine), TsIdentModule(Some(ckeditor),List(ckeditor5-engine, src, view, view)))' */ Any,
+      view: View,
       domEvent: K,
       additionalData: Record[
             L, 
@@ -130,15 +132,15 @@ object mod {
     ) = this()
   }
   
-  @JSImport("@ckeditor/ckeditor5-engine", "DomEventObserver")
+  /* note: abstract class */ @JSImport("@ckeditor/ckeditor5-engine", "DomEventObserver")
   @js.native
-  abstract class DomEventObserver ()
-    extends typings.ckeditorCkeditor5Engine.domeventobserverMod.default
+  open class DomEventObserver ()
+    extends typings.ckeditorCkeditor5Engine.srcViewObserverDomeventobserverMod.default
   
   @JSImport("@ckeditor/ckeditor5-engine", "DowncastWriter")
   @js.native
-  open class DowncastWriter[D /* <: typings.ckeditorCkeditor5Engine.viewDocumentMod.default */] protected ()
-    extends typings.ckeditorCkeditor5Engine.downcastwriterMod.default[D] {
+  open class DowncastWriter[D /* <: typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default */] protected ()
+    extends typings.ckeditorCkeditor5Engine.srcViewDowncastwriterMod.default[D] {
     def this(document: D) = this()
   }
   
@@ -146,13 +148,13 @@ object mod {
   @js.native
   open class EditingController protected ()
     extends StObject
-       with typings.ckeditorCkeditor5Engine.editingcontrollerMod.EditingController {
+       with typings.ckeditorCkeditor5Engine.srcControllerEditingcontrollerMod.EditingController {
     /**
       * Creates an editing controller instance.
       */
     def this(
-      model: typings.ckeditorCkeditor5Engine.modelMod.Model,
-      stylesProcessor: typings.ckeditorCkeditor5Engine.stylesmapMod.StylesProcessor
+      model: typings.ckeditorCkeditor5Engine.srcModelModelMod.Model,
+      stylesProcessor: typings.ckeditorCkeditor5Engine.srcViewStylesmapMod.StylesProcessor
     ) = this()
     
     /**
@@ -166,55 +168,59 @@ object mod {
       * Downcast dispatcher that converts changes from the model to {@link #view the editing view}.
       */
     /* CompleteClass */
-    override val downcastDispatcher: typings.ckeditorCkeditor5Engine.downcastdispatcherMod.default[js.Object] = js.native
+    override val downcastDispatcher: typings.ckeditorCkeditor5Engine.srcConversionDowncastdispatcherMod.default[js.Object] = js.native
     
     /**
       * Mapper which describes the model-view binding.
       */
     /* CompleteClass */
-    override val mapper: typings.ckeditorCkeditor5Engine.mapperMod.default = js.native
+    override val mapper: typings.ckeditorCkeditor5Engine.srcConversionMapperMod.default = js.native
     
     /**
       * Editor model.
       */
     /* CompleteClass */
-    override val model: typings.ckeditorCkeditor5Engine.modelMod.Model = js.native
+    override val model: typings.ckeditorCkeditor5Engine.srcModelModelMod.Model = js.native
     
     /**
       * Editing view controller.
       */
     /* CompleteClass */
-    override val view: /* Couldn't translate: 'key not found: IArray(TsIdentLibraryScoped(ckeditor,ckeditor5-engine), TsIdentModule(Some(ckeditor),List(ckeditor5-engine, src, view, view)))' */ Any = js.native
+    override val view: View = js.native
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "Element")
   @js.native
   open class Element protected ()
-    extends typings.ckeditorCkeditor5Engine.elementMod.default {
+    extends typings.ckeditorCkeditor5Engine.srcModelElementMod.default {
     def this(name: String) = this()
     def this(name: String, attrs: js.Tuple2[String, String]) = this()
     def this(name: String, attrs: Record[String, String]) = this()
     def this(
       name: String,
       attrs: js.Tuple2[String, String],
-      children: js.Iterable[typings.ckeditorCkeditor5Engine.nodeMod.default]
+      children: js.Iterable[typings.ckeditorCkeditor5Engine.srcModelNodeMod.default]
     ) = this()
     def this(
       name: String,
       attrs: js.Tuple2[String, String],
-      children: typings.ckeditorCkeditor5Engine.nodeMod.default
-    ) = this()
-    def this(name: String, attrs: Unit, children: js.Iterable[typings.ckeditorCkeditor5Engine.nodeMod.default]) = this()
-    def this(name: String, attrs: Unit, children: typings.ckeditorCkeditor5Engine.nodeMod.default) = this()
-    def this(
-      name: String,
-      attrs: Record[String, String],
-      children: js.Iterable[typings.ckeditorCkeditor5Engine.nodeMod.default]
+      children: typings.ckeditorCkeditor5Engine.srcModelNodeMod.default
     ) = this()
     def this(
       name: String,
+      attrs: Unit,
+      children: js.Iterable[typings.ckeditorCkeditor5Engine.srcModelNodeMod.default]
+    ) = this()
+    def this(name: String, attrs: Unit, children: typings.ckeditorCkeditor5Engine.srcModelNodeMod.default) = this()
+    def this(
+      name: String,
       attrs: Record[String, String],
-      children: typings.ckeditorCkeditor5Engine.nodeMod.default
+      children: js.Iterable[typings.ckeditorCkeditor5Engine.srcModelNodeMod.default]
+    ) = this()
+    def this(
+      name: String,
+      attrs: Record[String, String],
+      children: typings.ckeditorCkeditor5Engine.srcModelNodeMod.default
     ) = this()
   }
   /* static members */
@@ -224,28 +230,32 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromJSON(json: ReturnType[FnCall]): typings.ckeditorCkeditor5Engine.elementMod.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditorCkeditor5Engine.elementMod.Element]
+    inline def fromJSON(json: ReturnType[FnCall]): typings.ckeditorCkeditor5Engine.srcModelElementMod.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelElementMod.Element]
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "HtmlDataProcessor")
   @js.native
   open class HtmlDataProcessor protected ()
-    extends typings.ckeditorCkeditor5Engine.htmldataprocessorMod.default {
+    extends typings.ckeditorCkeditor5Engine.srcDataprocessorHtmldataprocessorMod.default {
     /**
       * Creates a new instance of the HTML data processor class.
       */
-    def this(document: typings.ckeditorCkeditor5Engine.viewDocumentMod.default) = this()
+    def this(document: typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default) = this()
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "InsertOperation")
   @js.native
   open class InsertOperation protected ()
-    extends typings.ckeditorCkeditor5Engine.insertoperationMod.default {
+    extends typings.ckeditorCkeditor5Engine.srcModelOperationInsertoperationMod.default {
     /**
       * Creates an insert operation.
       */
-    def this(position: typings.ckeditorCkeditor5Engine.positionMod.default, nodes: NodeSet) = this()
-    def this(position: typings.ckeditorCkeditor5Engine.positionMod.default, nodes: NodeSet, baseVersion: Double) = this()
+    def this(position: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default, nodes: NodeSet) = this()
+    def this(
+      position: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default,
+      nodes: NodeSet,
+      baseVersion: Double
+    ) = this()
   }
   /* static members */
   object InsertOperation {
@@ -261,16 +271,16 @@ object mod {
     /**
       * Creates `InsertOperation` object from deserilized object, i.e. from parsed JSON string.
       */
-    inline def fromJSON(json: BaseVersion, document: typings.ckeditorCkeditor5Engine.documentMod.default): typings.ckeditorCkeditor5Engine.insertoperationMod.InsertOperation = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.insertoperationMod.InsertOperation]
+    inline def fromJSON(json: BaseVersion, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): typings.ckeditorCkeditor5Engine.srcModelOperationInsertoperationMod.InsertOperation = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelOperationInsertoperationMod.InsertOperation]
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "LivePosition")
   @js.native
   open class LivePosition protected ()
-    extends typings.ckeditorCkeditor5Engine.livepositionMod.default {
-    def this(root: typings.ckeditorCkeditor5Engine.rootelementMod.default, path: js.Array[Double]) = this()
+    extends typings.ckeditorCkeditor5Engine.srcModelLivepositionMod.default {
+    def this(root: typings.ckeditorCkeditor5Engine.srcModelRootelementMod.default, path: js.Array[Double]) = this()
     def this(
-      root: typings.ckeditorCkeditor5Engine.rootelementMod.default,
+      root: typings.ckeditorCkeditor5Engine.srcModelRootelementMod.default,
       path: js.Array[Double],
       stickiness: PositionStickiness
     ) = this()
@@ -282,14 +292,17 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromPosition(position: typings.ckeditorCkeditor5Engine.positionMod.default): typings.ckeditorCkeditor5Engine.livepositionMod.LivePosition = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPosition")(position.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditorCkeditor5Engine.livepositionMod.LivePosition]
-    inline def fromPosition(position: typings.ckeditorCkeditor5Engine.positionMod.default, stickiness: PositionStickiness): typings.ckeditorCkeditor5Engine.livepositionMod.LivePosition = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPosition")(position.asInstanceOf[js.Any], stickiness.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.livepositionMod.LivePosition]
+    inline def fromPosition(position: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default): typings.ckeditorCkeditor5Engine.srcModelLivepositionMod.LivePosition = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPosition")(position.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelLivepositionMod.LivePosition]
+    inline def fromPosition(
+      position: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default,
+      stickiness: PositionStickiness
+    ): typings.ckeditorCkeditor5Engine.srcModelLivepositionMod.LivePosition = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPosition")(position.asInstanceOf[js.Any], stickiness.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelLivepositionMod.LivePosition]
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "LiveRange")
   @js.native
   open class LiveRange ()
-    extends typings.ckeditorCkeditor5Engine.liverangeMod.default
+    extends typings.ckeditorCkeditor5Engine.srcModelLiverangeMod.default
   /* static members */
   object LiveRange {
     
@@ -297,40 +310,40 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromRange(range: typings.ckeditorCkeditor5Engine.rangeMod.default): typings.ckeditorCkeditor5Engine.liverangeMod.LiveRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRange")(range.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditorCkeditor5Engine.liverangeMod.LiveRange]
+    inline def fromRange(range: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default): typings.ckeditorCkeditor5Engine.srcModelLiverangeMod.LiveRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRange")(range.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelLiverangeMod.LiveRange]
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "MarkerOperation")
   @js.native
   open class MarkerOperation protected ()
-    extends typings.ckeditorCkeditor5Engine.markeroperationMod.default {
+    extends typings.ckeditorCkeditor5Engine.srcModelOperationMarkeroperationMod.default {
     def this(
       name: String,
       oldRange: Null,
-      newRange: typings.ckeditorCkeditor5Engine.rangeMod.default,
-      markers: typings.ckeditorCkeditor5Engine.markercollectionMod.default,
+      newRange: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default,
+      markers: typings.ckeditorCkeditor5Engine.srcModelMarkercollectionMod.default,
       affectsData: Boolean
     ) = this()
     def this(
       name: String,
-      oldRange: typings.ckeditorCkeditor5Engine.rangeMod.default,
-      newRange: typings.ckeditorCkeditor5Engine.rangeMod.default,
-      markers: typings.ckeditorCkeditor5Engine.markercollectionMod.default,
+      oldRange: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default,
+      newRange: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default,
+      markers: typings.ckeditorCkeditor5Engine.srcModelMarkercollectionMod.default,
       affectsData: Boolean
     ) = this()
     def this(
       name: String,
       oldRange: Null,
-      newRange: typings.ckeditorCkeditor5Engine.rangeMod.default,
-      markers: typings.ckeditorCkeditor5Engine.markercollectionMod.default,
+      newRange: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default,
+      markers: typings.ckeditorCkeditor5Engine.srcModelMarkercollectionMod.default,
       affectsData: Boolean,
       baseVersion: Double
     ) = this()
     def this(
       name: String,
-      oldRange: typings.ckeditorCkeditor5Engine.rangeMod.default,
-      newRange: typings.ckeditorCkeditor5Engine.rangeMod.default,
-      markers: typings.ckeditorCkeditor5Engine.markercollectionMod.default,
+      oldRange: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default,
+      newRange: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default,
+      markers: typings.ckeditorCkeditor5Engine.srcModelMarkercollectionMod.default,
       affectsData: Boolean,
       baseVersion: Double
     ) = this()
@@ -349,13 +362,13 @@ object mod {
     /**
       * Creates `MarkerOperation` object from deserialized object, i.e. from parsed JSON string.
       */
-    inline def fromJSON(json: AffectsData, document: typings.ckeditorCkeditor5Engine.documentMod.default): typings.ckeditorCkeditor5Engine.markeroperationMod.MarkerOperation = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.markeroperationMod.MarkerOperation]
+    inline def fromJSON(json: AffectsData, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): typings.ckeditorCkeditor5Engine.srcModelOperationMarkeroperationMod.MarkerOperation = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelOperationMarkeroperationMod.MarkerOperation]
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "Matcher")
   @js.native
   open class Matcher protected ()
-    extends typings.ckeditorCkeditor5Engine.matcherMod.default {
+    extends typings.ckeditorCkeditor5Engine.srcViewMatcherMod.default {
     def this(pattern: MatcherPattern*) = this()
   }
   
@@ -363,27 +376,27 @@ object mod {
   @js.native
   open class Model ()
     extends StObject
-       with typings.ckeditorCkeditor5Engine.modelMod.Model
+       with typings.ckeditorCkeditor5Engine.srcModelModelMod.Model
   
   @JSImport("@ckeditor/ckeditor5-engine", "MouseObserver")
   @js.native
   open class MouseObserver ()
-    extends typings.ckeditorCkeditor5Engine.mouseobserverMod.default
+    extends typings.ckeditorCkeditor5Engine.srcViewObserverMouseobserverMod.default
   
-  @JSImport("@ckeditor/ckeditor5-engine", "Observer")
+  /* note: abstract class */ @JSImport("@ckeditor/ckeditor5-engine", "Observer")
   @js.native
-  abstract class Observer[V /* <: /* Couldn't translate: 'key not found: IArray(TsIdentLibraryScoped(ckeditor,ckeditor5-engine), TsIdentModule(Some(ckeditor),List(ckeditor5-engine, src, view, view)))' */ Any */] protected ()
-    extends typings.ckeditorCkeditor5Engine.observerMod.default[V] {
+  open class Observer[V /* <: View */] protected ()
+    extends typings.ckeditorCkeditor5Engine.srcViewObserverObserverMod.default[V] {
     /**
       * Creates an instance of the observer.
       */
     def this(view: V) = this()
   }
   
-  @JSImport("@ckeditor/ckeditor5-engine", "OperationFactory")
+  /* note: abstract class */ @JSImport("@ckeditor/ckeditor5-engine", "OperationFactory")
   @js.native
-  abstract class OperationFactory ()
-    extends typings.ckeditorCkeditor5Engine.operationfactoryMod.default
+  open class OperationFactory ()
+    extends typings.ckeditorCkeditor5Engine.srcModelOperationOperationfactoryMod.default
   /* static members */
   object OperationFactory {
     
@@ -391,26 +404,26 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromJSON(json: ClassName, document: typings.ckeditorCkeditor5Engine.documentMod.default): typings.ckeditorCkeditor5Engine.attributeoperationMod.default[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.attributeoperationMod.default[Any, Any]]
-    inline def fromJSON(json: `0`, document: typings.ckeditorCkeditor5Engine.documentMod.default): typings.ckeditorCkeditor5Engine.insertoperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.insertoperationMod.default]
-    inline def fromJSON(json: `1`, document: typings.ckeditorCkeditor5Engine.documentMod.default): typings.ckeditorCkeditor5Engine.markeroperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.markeroperationMod.default]
-    inline def fromJSON(json: `2`, document: typings.ckeditorCkeditor5Engine.documentMod.default): typings.ckeditorCkeditor5Engine.moveoperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.moveoperationMod.default]
-    inline def fromJSON(json: `3`, document: typings.ckeditorCkeditor5Engine.documentMod.default): typings.ckeditorCkeditor5Engine.nooperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.nooperationMod.default]
-    inline def fromJSON(json: `4`, document: typings.ckeditorCkeditor5Engine.documentMod.default): typings.ckeditorCkeditor5Engine.renameoperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.renameoperationMod.default]
-    inline def fromJSON(json: `5`, document: typings.ckeditorCkeditor5Engine.documentMod.default): typings.ckeditorCkeditor5Engine.rootattributeoperationMod.default[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.rootattributeoperationMod.default[Any, Any]]
-    inline def fromJSON(json: `6`, document: typings.ckeditorCkeditor5Engine.documentMod.default): typings.ckeditorCkeditor5Engine.splitoperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.splitoperationMod.default]
-    inline def fromJSON(json: `7`, document: typings.ckeditorCkeditor5Engine.documentMod.default): typings.ckeditorCkeditor5Engine.mergeoperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.mergeoperationMod.default]
-    inline def fromJSON(json: `8`, document: typings.ckeditorCkeditor5Engine.documentMod.default): Operation = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[Operation]
+    inline def fromJSON(json: ClassName, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): typings.ckeditorCkeditor5Engine.srcModelOperationAttributeoperationMod.default[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelOperationAttributeoperationMod.default[Any, Any]]
+    inline def fromJSON(json: `0`, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): typings.ckeditorCkeditor5Engine.srcModelOperationInsertoperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelOperationInsertoperationMod.default]
+    inline def fromJSON(json: `1`, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): typings.ckeditorCkeditor5Engine.srcModelOperationMarkeroperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelOperationMarkeroperationMod.default]
+    inline def fromJSON(json: `2`, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): typings.ckeditorCkeditor5Engine.srcModelOperationMoveoperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelOperationMoveoperationMod.default]
+    inline def fromJSON(json: `3`, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): typings.ckeditorCkeditor5Engine.srcModelOperationNooperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelOperationNooperationMod.default]
+    inline def fromJSON(json: `4`, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): typings.ckeditorCkeditor5Engine.srcModelOperationRenameoperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelOperationRenameoperationMod.default]
+    inline def fromJSON(json: `5`, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): typings.ckeditorCkeditor5Engine.srcModelOperationRootattributeoperationMod.default[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelOperationRootattributeoperationMod.default[Any, Any]]
+    inline def fromJSON(json: `6`, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): typings.ckeditorCkeditor5Engine.srcModelOperationSplitoperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelOperationSplitoperationMod.default]
+    inline def fromJSON(json: `7`, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): typings.ckeditorCkeditor5Engine.srcModelOperationMergeoperationMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelOperationMergeoperationMod.default]
+    inline def fromJSON(json: `8`, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): Operation = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[Operation]
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "Range")
   @js.native
   open class Range protected ()
-    extends typings.ckeditorCkeditor5Engine.rangeMod.default {
-    def this(start: typings.ckeditorCkeditor5Engine.positionMod.default) = this()
+    extends typings.ckeditorCkeditor5Engine.srcModelRangeMod.default {
+    def this(start: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default) = this()
     def this(
-      start: typings.ckeditorCkeditor5Engine.positionMod.default,
-      end: typings.ckeditorCkeditor5Engine.positionMod.default
+      start: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default,
+      end: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default
     ) = this()
   }
   /* static members */
@@ -420,28 +433,28 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromJSON(json: ReturnType[js.Function0[End]], doc: Document): typings.ckeditorCkeditor5Engine.rangeMod.Range = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.rangeMod.Range]
+    inline def fromJSON(json: ReturnType[js.Function0[End]], doc: Document): typings.ckeditorCkeditor5Engine.srcModelRangeMod.Range = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.srcModelRangeMod.Range]
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "Renderer")
   @js.native
   open class Renderer protected ()
-    extends typings.ckeditorCkeditor5Engine.rendererMod.default {
+    extends typings.ckeditorCkeditor5Engine.srcViewRendererMod.default {
     def this(
-      domConverter: typings.ckeditorCkeditor5Engine.domconverterMod.default,
-      selection: typings.ckeditorCkeditor5Engine.viewDocumentselectionMod.default
+      domConverter: typings.ckeditorCkeditor5Engine.srcViewDomconverterMod.default,
+      selection: typings.ckeditorCkeditor5Engine.srcViewDocumentselectionMod.default
     ) = this()
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "StylesProcessor")
   @js.native
   open class StylesProcessor ()
-    extends typings.ckeditorCkeditor5Engine.stylesmapMod.StylesProcessor
+    extends typings.ckeditorCkeditor5Engine.srcViewStylesmapMod.StylesProcessor
   
   @JSImport("@ckeditor/ckeditor5-engine", "TreeWalker")
   @js.native
   open class TreeWalker protected ()
-    extends typings.ckeditorCkeditor5Engine.treewalkerMod.default {
+    extends typings.ckeditorCkeditor5Engine.srcModelTreewalkerMod.default {
     /**
       * Creates a range iterator. All parameters are optional, but you have to specify either `boundaries` or `startPosition`.
       */
@@ -451,29 +464,26 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-engine", "UpcastWriter")
   @js.native
   open class UpcastWriter protected ()
-    extends typings.ckeditorCkeditor5Engine.upcastwriterMod.default {
-    def this(document: typings.ckeditorCkeditor5Engine.viewDocumentMod.default) = this()
+    extends typings.ckeditorCkeditor5Engine.srcViewUpcastwriterMod.default {
+    def this(document: typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default) = this()
   }
   
   @JSImport("@ckeditor/ckeditor5-engine", "ViewDocument")
   @js.native
   open class ViewDocument protected ()
-    extends typings.ckeditorCkeditor5Engine.viewDocumentMod.default {
-    def this(stylesProcessor: typings.ckeditorCkeditor5Engine.stylesmapMod.StylesProcessor) = this()
+    extends typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default {
+    def this(stylesProcessor: typings.ckeditorCkeditor5Engine.srcViewStylesmapMod.StylesProcessor) = this()
   }
   
-  inline def addBackgroundRules(stylesProcessor: typings.ckeditorCkeditor5Engine.stylesmapMod.StylesProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBackgroundRules")(stylesProcessor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addBackgroundRules(stylesProcessor: typings.ckeditorCkeditor5Engine.srcViewStylesmapMod.StylesProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBackgroundRules")(stylesProcessor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def addBorderRules(stylesProcessor: typings.ckeditorCkeditor5Engine.stylesmapMod.StylesProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBorderRules")(stylesProcessor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addBorderRules(stylesProcessor: typings.ckeditorCkeditor5Engine.srcViewStylesmapMod.StylesProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBorderRules")(stylesProcessor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def addMarginRules(stylesProcessor: typings.ckeditorCkeditor5Engine.stylesmapMod.StylesProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMarginRules")(stylesProcessor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addMarginRules(stylesProcessor: typings.ckeditorCkeditor5Engine.srcViewStylesmapMod.StylesProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMarginRules")(stylesProcessor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def addPaddingRules(stylesProcessor: typings.ckeditorCkeditor5Engine.stylesmapMod.StylesProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPaddingRules")(stylesProcessor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addPaddingRules(stylesProcessor: typings.ckeditorCkeditor5Engine.srcViewStylesmapMod.StylesProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPaddingRules")(stylesProcessor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def disablePlaceholder(
-    view: /* Couldn't translate: 'key not found: IArray(TsIdentLibraryScoped(ckeditor,ckeditor5-engine), TsIdentModule(Some(ckeditor),List(ckeditor5-engine, src, view, view)))' */ Any,
-    element: typings.ckeditorCkeditor5Engine.viewElementMod.default
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disablePlaceholder")(view.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disablePlaceholder(view: View, element: typings.ckeditorCkeditor5Engine.srcViewElementMod.default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disablePlaceholder")(view.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def enablePlaceholder(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enablePlaceholder")().asInstanceOf[Unit]
   inline def enablePlaceholder(options: typings.ckeditorCkeditor5Engine.anon.Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enablePlaceholder")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -493,13 +503,13 @@ object mod {
   
   inline def getFillerOffset(): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFillerOffset")().asInstanceOf[Double | Null]
   
-  inline def getPositionShorthandNormalizer(shorthand: String): js.Function1[/* value */ String, Path] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionShorthandNormalizer")(shorthand.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ String, Path]]
+  inline def getPositionShorthandNormalizer(shorthand: String): js.Function1[/* value */ String, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionShorthandNormalizer")(shorthand.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ String, Value]]
   
   inline def getShorthandValues(string: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getShorthandValues")(string.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   inline def hidePlaceholder(
-    writer: typings.ckeditorCkeditor5Engine.downcastwriterMod.default[typings.ckeditorCkeditor5Engine.viewDocumentMod.default],
-    element: typings.ckeditorCkeditor5Engine.viewElementMod.default
+    writer: typings.ckeditorCkeditor5Engine.srcViewDowncastwriterMod.default[typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default],
+    element: typings.ckeditorCkeditor5Engine.srcViewElementMod.default
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hidePlaceholder")(writer.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isAttachment(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAttachment")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -518,11 +528,11 @@ object mod {
   
   inline def isURL(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isURL")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def needsPlaceholder(element: typings.ckeditorCkeditor5Engine.viewElementMod.default, keepOnFocus: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("needsPlaceholder")(element.asInstanceOf[js.Any], keepOnFocus.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def needsPlaceholder(element: typings.ckeditorCkeditor5Engine.srcViewElementMod.default, keepOnFocus: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("needsPlaceholder")(element.asInstanceOf[js.Any], keepOnFocus.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def showPlaceholder(
-    writer: typings.ckeditorCkeditor5Engine.downcastwriterMod.default[typings.ckeditorCkeditor5Engine.viewDocumentMod.default],
-    element: typings.ckeditorCkeditor5Engine.viewElementMod.default
+    writer: typings.ckeditorCkeditor5Engine.srcViewDowncastwriterMod.default[typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default],
+    element: typings.ckeditorCkeditor5Engine.srcViewElementMod.default
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("showPlaceholder")(writer.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def transformSets(operationsA: js.Array[Operation], operationsB: js.Array[Operation]): OperationsA = (^.asInstanceOf[js.Dynamic].applyDynamic("transformSets")(operationsA.asInstanceOf[js.Any], operationsB.asInstanceOf[js.Any])).asInstanceOf[OperationsA]

@@ -1,9 +1,9 @@
 package typings.diff2html
 
-import typings.diff2html.renderUtilsMod.CSSLineClass
-import typings.diff2html.typesMod.DiffStyleType
-import typings.diff2html.typesMod.LineMatchingType
-import typings.diff2html.typesMod.OutputFormatType
+import typings.diff2html.libRenderUtilsMod.CSSLineClass
+import typings.diff2html.libTypesMod.DiffStyleType
+import typings.diff2html.libTypesMod.LineMatchingType
+import typings.diff2html.libTypesMod.OutputFormatType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

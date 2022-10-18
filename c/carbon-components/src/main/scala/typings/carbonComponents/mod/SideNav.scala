@@ -1,7 +1,7 @@
 package typings.carbonComponents.mod
 
 import typings.carbonComponents.anon.PartialSideNavOptions
-import typings.carbonComponents.sideNavMod.SideNavOptions
+import typings.carbonComponents.componentsUiShellSideNavMod.SideNavOptions
 import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "SideNav")
 @js.native
 open class SideNav protected ()
-  extends typings.carbonComponents.componentsMod.SideNav {
+  extends typings.carbonComponents.globalsJsComponentsMod.SideNav {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialSideNavOptions) = this()
 }

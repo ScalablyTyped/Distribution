@@ -1,34 +1,46 @@
 package typings.cypress.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Cancellation extends js.Object {
+trait Cancellation extends StObject {
+  
   /** Enable cancellation */
   var cancellation: js.UndefOr[Boolean] = js.undefined
+  
   /** Enable long stack traces */
   var longStackTraces: js.UndefOr[Boolean] = js.undefined
+  
   /** Enable monitoring */
   var monitoring: js.UndefOr[Boolean] = js.undefined
+  
   /** Enable warnings */
   var warnings: js.UndefOr[Boolean | WForgottenReturn] = js.undefined
 }
-
 object Cancellation {
-  @scala.inline
-  def apply(
-    cancellation: js.UndefOr[Boolean] = js.undefined,
-    longStackTraces: js.UndefOr[Boolean] = js.undefined,
-    monitoring: js.UndefOr[Boolean] = js.undefined,
-    warnings: Boolean | WForgottenReturn = null
-  ): Cancellation = {
+  
+  inline def apply(): Cancellation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancellation)) __obj.updateDynamic("cancellation")(cancellation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(longStackTraces)) __obj.updateDynamic("longStackTraces")(longStackTraces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(monitoring)) __obj.updateDynamic("monitoring")(monitoring.get.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cancellation]
   }
+  
+  extension [Self <: Cancellation](x: Self) {
+    
+    inline def setCancellation(value: Boolean): Self = StObject.set(x, "cancellation", value.asInstanceOf[js.Any])
+    
+    inline def setCancellationUndefined: Self = StObject.set(x, "cancellation", js.undefined)
+    
+    inline def setLongStackTraces(value: Boolean): Self = StObject.set(x, "longStackTraces", value.asInstanceOf[js.Any])
+    
+    inline def setLongStackTracesUndefined: Self = StObject.set(x, "longStackTraces", js.undefined)
+    
+    inline def setMonitoring(value: Boolean): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
+    
+    inline def setWarnings(value: Boolean | WForgottenReturn): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+  }
 }
-

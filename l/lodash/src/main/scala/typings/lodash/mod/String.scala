@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait String
   extends StObject
-     with LoDashImplicitWrapper[java.lang.String]
-     with _ImpChain[Any] {
+     with LoDashImplicitWrapper[java.lang.String] {
   
   /**
     * @see _.castArray

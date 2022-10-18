@@ -1,9 +1,10 @@
 package typings.ipfsHttpClient.anon
 
-import typings.cids.mod.^
-import typings.ipfsHttpClient.mod.HttpOptions
+import typings.ipfsCoreTypes.distSrcUtilsMod.AbortOptions
+import typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
+import typings.multiformats.cidMod.CID
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.std.AsyncIterable
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,54 +12,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Get extends StObject {
   
-  def get(cid: String): js.Promise[js.Any] = js.native
+  def get(cid: CID[Any, Double, Double, Version]): js.Promise[js.typedarray.Uint8Array] = js.native
   def get(
-    cid: String,
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_get.GetOptions */ js.Any) & HttpOptions
-  ): js.Promise[js.Any] = js.native
-  def get(cid: ^): js.Promise[js.Any] = js.native
-  def get(
-    cid: ^,
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_get.GetOptions */ js.Any) & HttpOptions
-  ): js.Promise[js.Any] = js.native
-  def get(cid: Uint8Array): js.Promise[js.Any] = js.native
-  def get(
-    cid: Uint8Array,
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_get.GetOptions */ js.Any) & HttpOptions
-  ): js.Promise[js.Any] = js.native
+    cid: CID[Any, Double, Double, Version],
+    options: AbortOptions & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.PreloadOptions */ Any) & HTTPClientExtraOptions
+  ): js.Promise[js.typedarray.Uint8Array] = js.native
   
-  def put(data: js.Any): js.Promise[js.Any] = js.native
+  def put(data: js.typedarray.Uint8Array): js.Promise[CID[Any, Double, Double, Version]] = js.native
   def put(
-    data: js.Any,
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_put.PutOptions */ js.Any) & HttpOptions
-  ): js.Promise[js.Any] = js.native
+    data: js.typedarray.Uint8Array,
+    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.PutOptions */ Any) & HTTPClientExtraOptions
+  ): js.Promise[CID[Any, Double, Double, Version]] = js.native
   
-  def rm(cid: js.Array[^]): AsyncIterable[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_rm.RmSucceess */ js.Any
+  def rm(cid: js.Array[CID[Any, Double, Double, Version]]): AsyncIterable[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.RmResult */ Any
   ] = js.native
   def rm(
-    cid: js.Array[^],
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_rm.RmOptions */ js.Any) & HttpOptions
+    cid: js.Array[CID[Any, Double, Double, Version]],
+    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.RmOptions */ Any) & HTTPClientExtraOptions
   ): AsyncIterable[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_rm.RmSucceess */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.RmResult */ Any
   ] = js.native
-  def rm(cid: ^): AsyncIterable[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_rm.RmSucceess */ js.Any
+  def rm(cid: CID[Any, Double, Double, Version]): AsyncIterable[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.RmResult */ Any
   ] = js.native
   def rm(
-    cid: ^,
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_rm.RmOptions */ js.Any) & HttpOptions
+    cid: CID[Any, Double, Double, Version],
+    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.RmOptions */ Any) & HTTPClientExtraOptions
   ): AsyncIterable[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_rm.RmSucceess */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.RmResult */ Any
   ] = js.native
   
-  def stat(cid: ^): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_stat.Stat */ js.Any
+  def stat(cid: CID[Any, Double, Double, Version]): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.StatResult */ Any
   ] = js.native
   def stat(
-    cid: ^,
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_stat.StatOptions */ js.Any) & HttpOptions
+    cid: CID[Any, Double, Double, Version],
+    options: AbortOptions & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.PreloadOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_stat.Stat */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.StatResult */ Any
   ] = js.native
 }

@@ -1,7 +1,7 @@
 package typings.guacamoleClient
 
-import typings.guacamoleClient.statusMod.Status.Code
-import typings.guacamoleClient.tunnelMod.Tunnel.State
+import typings.guacamoleClient.libClientMod.Client.State
+import typings.guacamoleClient.libStatusMod.Status.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object guacamoleClientInts {
   sealed trait `0`
     extends StObject
        with State
-       with typings.guacamoleClient.clientMod.Client.State
+       with typings.guacamoleClient.libTunnelMod.Tunnel.State
   inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
@@ -189,33 +189,33 @@ object guacamoleClientInts {
   sealed trait `1`
     extends StObject
        with State
-       with typings.guacamoleClient.clientMod.Client.State
+       with typings.guacamoleClient.libTunnelMod.Tunnel.State
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
   sealed trait `2`
     extends StObject
        with State
-       with typings.guacamoleClient.clientMod.Client.State
+       with typings.guacamoleClient.libTunnelMod.Tunnel.State
   inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
   sealed trait `3`
     extends StObject
        with State
-       with typings.guacamoleClient.clientMod.Client.State
+       with typings.guacamoleClient.libTunnelMod.Tunnel.State
   inline def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
   sealed trait `4`
     extends StObject
-       with typings.guacamoleClient.clientMod.Client.State
+       with State
   inline def `4`: `4` = 4.asInstanceOf[`4`]
   
   @js.native
   sealed trait `5`
     extends StObject
-       with typings.guacamoleClient.clientMod.Client.State
+       with State
   inline def `5`: `5` = 5.asInstanceOf[`5`]
   
   @js.native

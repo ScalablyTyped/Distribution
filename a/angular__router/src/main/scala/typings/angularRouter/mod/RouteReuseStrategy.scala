@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/router", "RouteReuseStrategy")
+/* note: abstract class */ @JSImport("@angular/router", "RouteReuseStrategy")
 @js.native
-abstract class RouteReuseStrategy () extends StObject {
+open class RouteReuseStrategy () extends StObject {
   
   /** Retrieves the previously stored route */
   def retrieve(route: ActivatedRouteSnapshot): DetachedRouteHandle | Null = js.native

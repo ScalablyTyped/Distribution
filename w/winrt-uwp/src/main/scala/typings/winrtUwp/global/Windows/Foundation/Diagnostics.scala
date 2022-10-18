@@ -20,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Diagnostics {
   
   /** Enables tracing control flow across asynchronous operations. */
-  @JSGlobal("Windows.Foundation.Diagnostics.AsyncCausalityTracer")
+  /* note: abstract class */ @JSGlobal("Windows.Foundation.Diagnostics.AsyncCausalityTracer")
   @js.native
-  abstract class AsyncCausalityTracer ()
+  open class AsyncCausalityTracer ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Diagnostics.AsyncCausalityTracer
   object AsyncCausalityTracer {
@@ -197,9 +197,9 @@ object Diagnostics {
   }
   
   /** Provides information about an error that occurred. */
-  @JSGlobal("Windows.Foundation.Diagnostics.ErrorDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Foundation.Diagnostics.ErrorDetails")
   @js.native
-  abstract class ErrorDetails ()
+  open class ErrorDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Diagnostics.ErrorDetails {
     
@@ -263,9 +263,9 @@ object Diagnostics {
   }
   
   /** Provides data for the LogFileGenerated event. */
-  @JSGlobal("Windows.Foundation.Diagnostics.LogFileGeneratedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Foundation.Diagnostics.LogFileGeneratedEventArgs")
   @js.native
-  abstract class LogFileGeneratedEventArgs ()
+  open class LogFileGeneratedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Diagnostics.LogFileGeneratedEventArgs {
     
@@ -515,9 +515,9 @@ object Diagnostics {
   }
   
   /** Provides data for the TracingStatusChanged event. */
-  @JSGlobal("Windows.Foundation.Diagnostics.TracingStatusChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Foundation.Diagnostics.TracingStatusChangedEventArgs")
   @js.native
-  abstract class TracingStatusChangedEventArgs ()
+  open class TracingStatusChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Diagnostics.TracingStatusChangedEventArgs {
     

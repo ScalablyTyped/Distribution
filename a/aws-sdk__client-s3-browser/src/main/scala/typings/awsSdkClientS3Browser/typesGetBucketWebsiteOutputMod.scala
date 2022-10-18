@@ -1,12 +1,12 @@
 package typings.awsSdkClientS3Browser
 
-import typings.awsSdkClientS3Browser.outputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkClientS3Browser.typesErrorDocumentMod.UnmarshalledErrorDocument
 import typings.awsSdkClientS3Browser.typesIndexDocumentMod.UnmarshalledIndexDocument
+import typings.awsSdkClientS3Browser.typesOutputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkClientS3Browser.typesRedirectAllRequestsToMod.UnmarshalledRedirectAllRequestsTo
 import typings.awsSdkClientS3Browser.typesRoutingRuleMod.UnmarshalledRoutingRule
-import typings.awsSdkTypes.responseMod.MetadataBearer
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

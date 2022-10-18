@@ -1,11 +1,11 @@
 package typings.cfcsCore
 
 import typings.cfcsCore.anon.Destroy
-import typings.cfcsCore.inlineReactiveMod.ReactiveObject
-import typings.cfcsCore.reactiveAdapterMod.ReactiveAdapter
-import typings.cfcsCore.reactiveSubscribeMod.ReactiveSubscribe
-import typings.cfcsCore.reactiveTypesMod.ReactiveMethods
-import typings.cfcsCore.typesMod.Ref
+import typings.cfcsCore.declarationCoreTypesMod.Ref
+import typings.cfcsCore.declarationReactiveInlineReactiveMod.ReactiveObject
+import typings.cfcsCore.declarationReactiveReactiveAdapterMod.ReactiveAdapter
+import typings.cfcsCore.declarationReactiveReactiveSubscribeMod.ReactiveSubscribe
+import typings.cfcsCore.declarationReactiveTypesMod.ReactiveMethods
 import typings.std.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -21,7 +21,7 @@ object mod {
   @JSImport("@cfcs/core", "Observer")
   @js.native
   open class Observer[Value] ()
-    extends typings.cfcsCore.reactiveMod.Observer[Value] {
+    extends typings.cfcsCore.declarationReactiveMod.Observer[Value] {
     def this(value: Value) = this()
   }
   
@@ -34,17 +34,17 @@ object mod {
   
   inline def camelize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def defineObservers(instance: Any): Record[String, typings.cfcsCore.observerMod.Observer[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineObservers")(instance.asInstanceOf[js.Any]).asInstanceOf[Record[String, typings.cfcsCore.observerMod.Observer[Any]]]
+  inline def defineObservers(instance: Any): Record[String, typings.cfcsCore.declarationReactiveObserverMod.Observer[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineObservers")(instance.asInstanceOf[js.Any]).asInstanceOf[Record[String, typings.cfcsCore.declarationReactiveObserverMod.Observer[Any]]]
   
   inline def findTarget[Target /* <: Element */](): Target | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findTarget")().asInstanceOf[Target | Null]
   inline def findTarget[Target /* <: Element */](target: Target): Target | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findTarget")(target.asInstanceOf[js.Any]).asInstanceOf[Target | Null]
   inline def findTarget[Target /* <: Element */](target: String): Target | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findTarget")(target.asInstanceOf[js.Any]).asInstanceOf[Target | Null]
   inline def findTarget[Target /* <: Element */](target: Ref[Target]): Target | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findTarget")(target.asInstanceOf[js.Any]).asInstanceOf[Target | Null]
   
-  inline def getObserver(instance: Any, name: String): typings.cfcsCore.observerMod.Observer[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getObserver")(instance.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.cfcsCore.observerMod.Observer[Any]]
-  inline def getObserver(instance: Any, name: String, defaultValue: Any): typings.cfcsCore.observerMod.Observer[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getObserver")(instance.asInstanceOf[js.Any], name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.cfcsCore.observerMod.Observer[Any]]
+  inline def getObserver(instance: Any, name: String): typings.cfcsCore.declarationReactiveObserverMod.Observer[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getObserver")(instance.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.cfcsCore.declarationReactiveObserverMod.Observer[Any]]
+  inline def getObserver(instance: Any, name: String, defaultValue: Any): typings.cfcsCore.declarationReactiveObserverMod.Observer[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getObserver")(instance.asInstanceOf[js.Any], name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.cfcsCore.declarationReactiveObserverMod.Observer[Any]]
   
-  inline def getObservers(instance: Any): Record[String, typings.cfcsCore.observerMod.Observer[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getObservers")(instance.asInstanceOf[js.Any]).asInstanceOf[Record[String, typings.cfcsCore.observerMod.Observer[Any]]]
+  inline def getObservers(instance: Any): Record[String, typings.cfcsCore.declarationReactiveObserverMod.Observer[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getObservers")(instance.asInstanceOf[js.Any]).asInstanceOf[Record[String, typings.cfcsCore.declarationReactiveObserverMod.Observer[Any]]]
   
   inline def injectReactiveSubscribe(`object`: Record[String, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectReactiveSubscribe")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -58,13 +58,17 @@ object mod {
   
   inline def keys[T /* <: Record[String, Any] */](obj: T): js.Array[/* keyof T */ String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[/* keyof T */ String]]
   
-  inline def observe[Type](): typings.cfcsCore.observerMod.Observer[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")().asInstanceOf[typings.cfcsCore.observerMod.Observer[Type]]
-  inline def observe[Type](defaultValue: Type): typings.cfcsCore.observerMod.Observer[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[typings.cfcsCore.observerMod.Observer[Type]]
+  inline def observe[Type](): typings.cfcsCore.declarationReactiveObserverMod.Observer[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")().asInstanceOf[typings.cfcsCore.declarationReactiveObserverMod.Observer[Type]]
+  inline def observe[Type](defaultValue: Type): typings.cfcsCore.declarationReactiveObserverMod.Observer[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[typings.cfcsCore.declarationReactiveObserverMod.Observer[Type]]
   
   inline def reactive[Object /* <: Record[String, Any] */](setup: Object): ReactiveObject[Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("reactive")(setup.asInstanceOf[js.Any]).asInstanceOf[ReactiveObject[Object]]
   inline def reactive[Object /* <: Record[String, Any] */](setup: js.Function0[Object]): ReactiveObject[Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("reactive")(setup.asInstanceOf[js.Any]).asInstanceOf[ReactiveObject[Object]]
   
-  inline def setObserver(instance: Any, name: String, observer: typings.cfcsCore.observerMod.Observer[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setObserver")(instance.asInstanceOf[js.Any], name.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setObserver(
+    instance: Any,
+    name: String,
+    observer: typings.cfcsCore.declarationReactiveObserverMod.Observer[Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setObserver")(instance.asInstanceOf[js.Any], name.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def withClassMethods(methods: js.Array[String]): js.Function2[/* prototype */ Any, /* memberName */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("withClassMethods")(methods.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* prototype */ Any, /* memberName */ String, Unit]]
   

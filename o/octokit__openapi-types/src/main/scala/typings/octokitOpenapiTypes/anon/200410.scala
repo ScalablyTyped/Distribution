@@ -7,16 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `200410` extends StObject {
   
   /** Response */
-  var `200`: Content269
+  var `200`: Content146
   
-  var `410`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['gone'] */ js.Any
+  var `410`: Content6
 }
 object `200410` {
   
-  inline def apply(
-    `200`: Content269,
-    `410`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['gone'] */ js.Any
-  ): `200410` = {
+  inline def apply(`200`: Content146, `410`: Content6): `200410` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("410")(`410`.asInstanceOf[js.Any])
@@ -25,10 +22,8 @@ object `200410` {
   
   extension [Self <: `200410`](x: Self) {
     
-    inline def set200(value: Content269): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: Content146): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set410(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['gone'] */ js.Any
-    ): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
+    inline def set410(value: Content6): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
   }
 }

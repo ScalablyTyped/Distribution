@@ -17,7 +17,7 @@ object mod {
   @JSImport("dommatrix", JSImport.Default)
   @js.native
   open class default protected ()
-    extends typings.dommatrix.dommatrixMod.default {
+    extends typings.dommatrix.srcDommatrixMod.default {
     /**
       * @constructor
       * @param {any} args accepts all parameter configurations:

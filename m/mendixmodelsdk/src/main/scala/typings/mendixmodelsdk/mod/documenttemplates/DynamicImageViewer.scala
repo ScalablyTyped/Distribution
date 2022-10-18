@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.documenttemplates
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.documenttemplatesMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenDocumenttemplatesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "documenttemplates.DynamicImageViewer")
 @js.native
 open class DynamicImageViewer protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.DynamicImageViewer {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.documenttemplates.DynamicImageViewer {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object DynamicImageViewer {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DynamicImageViewer]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -47,7 +47,7 @@ object DynamicImageViewer {
     * of the parent DocumentTemplate element passed as argument.
     */
   /* static member */
-  inline def createInDocumentTemplateUnderToplevels(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DocumentTemplate): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateUnderToplevels")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DynamicImageViewer]
+  inline def createInDocumentTemplateUnderToplevels(container: typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DocumentTemplate): typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateUnderToplevels")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DynamicImageViewer]
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
@@ -55,7 +55,7 @@ object DynamicImageViewer {
     * of the parent DropZone element passed as argument.
     */
   /* static member */
-  inline def createInDropZoneUnderWidget(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DropZone): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DynamicImageViewer]
+  inline def createInDropZoneUnderWidget(container: typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DropZone): typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DynamicImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DynamicImageViewer]
   
   /* static member */
   @JSImport("mendixmodelsdk", "documenttemplates.DynamicImageViewer.structureTypeName")

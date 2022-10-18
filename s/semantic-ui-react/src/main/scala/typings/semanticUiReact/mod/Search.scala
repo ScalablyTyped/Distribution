@@ -3,9 +3,9 @@ package typings.semanticUiReact.mod
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.searchResultMod.SearchResultProps
-import typings.semanticUiReact.searchSearchMod.SearchComponent
-import typings.semanticUiReact.searchSearchMod.SearchProps
+import typings.semanticUiReact.distCommonjsModulesSearchSearchMod.SearchComponent
+import typings.semanticUiReact.distCommonjsModulesSearchSearchMod.SearchProps
+import typings.semanticUiReact.distCommonjsModulesSearchSearchResultMod.SearchResultProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

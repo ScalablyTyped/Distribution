@@ -31,41 +31,20 @@ object mod {
   @js.native
   val x86: X86_ = js.native
   
+  @js.native
   trait X64_ extends StObject {
     
-    def hash128(bytes: js.typedarray.Uint8Array): String
-  }
-  object X64_ {
-    
-    inline def apply(hash128: js.typedarray.Uint8Array => String): X64_ = {
-      val __obj = js.Dynamic.literal(hash128 = js.Any.fromFunction1(hash128))
-      __obj.asInstanceOf[X64_]
-    }
-    
-    extension [Self <: X64_](x: Self) {
-      
-      inline def setHash128(value: js.typedarray.Uint8Array => String): Self = StObject.set(x, "hash128", js.Any.fromFunction1(value))
-    }
+    def hash128(bytes: js.typedarray.Uint8Array): String = js.native
+    def hash128(bytes: js.typedarray.Uint8Array, seed: Double): String = js.native
   }
   
+  @js.native
   trait X86_ extends StObject {
     
-    def hash128(bytes: js.typedarray.Uint8Array): String
+    def hash128(bytes: js.typedarray.Uint8Array): String = js.native
+    def hash128(bytes: js.typedarray.Uint8Array, seed: Double): String = js.native
     
-    def hash32(bytes: js.typedarray.Uint8Array): Double
-  }
-  object X86_ {
-    
-    inline def apply(hash128: js.typedarray.Uint8Array => String, hash32: js.typedarray.Uint8Array => Double): X86_ = {
-      val __obj = js.Dynamic.literal(hash128 = js.Any.fromFunction1(hash128), hash32 = js.Any.fromFunction1(hash32))
-      __obj.asInstanceOf[X86_]
-    }
-    
-    extension [Self <: X86_](x: Self) {
-      
-      inline def setHash128(value: js.typedarray.Uint8Array => String): Self = StObject.set(x, "hash128", js.Any.fromFunction1(value))
-      
-      inline def setHash32(value: js.typedarray.Uint8Array => Double): Self = StObject.set(x, "hash32", js.Any.fromFunction1(value))
-    }
+    def hash32(bytes: js.typedarray.Uint8Array): Double = js.native
+    def hash32(bytes: js.typedarray.Uint8Array, seed: Double): Double = js.native
   }
 }

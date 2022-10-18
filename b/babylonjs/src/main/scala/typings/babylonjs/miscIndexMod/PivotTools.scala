@@ -1,6 +1,6 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.transformNodeMod.TransformNode
+import typings.babylonjs.meshesTransformNodeMod.TransformNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "PivotTools")
 @js.native
 open class PivotTools ()
-  extends typings.babylonjs.pivotToolsMod.PivotTools
+  extends typings.babylonjs.miscPivotToolsMod.PivotTools
 /* static members */
 object PivotTools {
   

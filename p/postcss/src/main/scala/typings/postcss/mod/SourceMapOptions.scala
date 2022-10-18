@@ -24,7 +24,7 @@ trait SourceMapOptions extends StObject {
     * If you have set `inline: true`, annotation cannot be disabled.
     */
   var annotation: js.UndefOr[
-    String | Boolean | (js.Function2[/* file */ String, /* root */ typings.postcss.rootMod.default, String])
+    String | Boolean | (js.Function2[/* file */ String, /* root */ typings.postcss.libRootMod.default, String])
   ] = js.undefined
   
   /**
@@ -76,10 +76,10 @@ object SourceMapOptions {
     inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
     
     inline def setAnnotation(
-      value: String | Boolean | (js.Function2[/* file */ String, /* root */ typings.postcss.rootMod.default, String])
+      value: String | Boolean | (js.Function2[/* file */ String, /* root */ typings.postcss.libRootMod.default, String])
     ): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
-    inline def setAnnotationFunction2(value: (/* file */ String, /* root */ typings.postcss.rootMod.default) => String): Self = StObject.set(x, "annotation", js.Any.fromFunction2(value))
+    inline def setAnnotationFunction2(value: (/* file */ String, /* root */ typings.postcss.libRootMod.default) => String): Self = StObject.set(x, "annotation", js.Any.fromFunction2(value))
     
     inline def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
     

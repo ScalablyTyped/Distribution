@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@tensorflow/tfjs-core", "KernelBackend")
 @js.native
 open class KernelBackend ()
-  extends typings.tensorflowTfjsCore.baseMod.KernelBackend
+  extends typings.tensorflowTfjsCore.distBaseMod.KernelBackend

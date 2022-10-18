@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.packerMod.ITexturePackerOptions
+import typings.babylonjs.materialsTexturesPackerPackerMod.ITexturePackerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ open class TexturePacker protected ()
     */
   def this(
     name: String,
-    meshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh],
+    meshes: js.Array[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
     options: ITexturePackerOptions,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()

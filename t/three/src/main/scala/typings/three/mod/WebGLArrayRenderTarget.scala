@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "WebGLArrayRenderTarget")
 @js.native
 open class WebGLArrayRenderTarget protected ()
-  extends typings.three.threeMod.WebGLArrayRenderTarget {
+  extends typings.three.srcThreeMod.WebGLArrayRenderTarget {
   /**
     * Creates a new WebGLArrayRenderTarget.
     *

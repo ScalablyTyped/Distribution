@@ -1,14 +1,9 @@
 package typings.plotlyJs.anon
 
-import typings.plotlyJs.mod.ColorBar
 import typings.plotlyJs.mod.ColorScale
 import typings.plotlyJs.mod.MarkerSymbol
-import typings.plotlyJs.mod.Padding
-import typings.plotlyJs.mod.Pattern
-import typings.plotlyJs.mod.ScatterMarkerLine
 import typings.plotlyJs.plotlyJsStrings.area
 import typings.plotlyJs.plotlyJsStrings.diameter
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +21,7 @@ trait PartialPlotMarker extends StObject {
   
   var color: js.UndefOr[typings.plotlyJs.mod.Color | js.Array[typings.plotlyJs.mod.Color]] = js.undefined
   
-  var colorbar: js.UndefOr[Partial[ColorBar]] = js.undefined
+  var colorbar: js.UndefOr[PartialColorBarBgcolor] = js.undefined
   
   var colors: js.UndefOr[js.Array[typings.plotlyJs.mod.Color]] = js.undefined
   
@@ -34,15 +29,15 @@ trait PartialPlotMarker extends StObject {
   
   var gradient: js.UndefOr[Colorsrc] = js.undefined
   
-  var line: js.UndefOr[Partial[ScatterMarkerLine]] = js.undefined
+  var line: js.UndefOr[PartialScatterMarkerLine] = js.undefined
   
   var maxdisplayed: js.UndefOr[Double] = js.undefined
   
   var opacity: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var pad: js.UndefOr[Partial[Padding]] = js.undefined
+  var pad: js.UndefOr[PartialPadding] = js.undefined
   
-  var pattern: js.UndefOr[Partial[Pattern]] = js.undefined
+  var pattern: js.UndefOr[PartialPattern] = js.undefined
   
   var reversescale: js.UndefOr[Boolean] = js.undefined
   
@@ -97,7 +92,7 @@ object PartialPlotMarker {
         ])*
     ): Self = StObject.set(x, "color", js.Array(value*))
     
-    inline def setColorbar(value: Partial[ColorBar]): Self = StObject.set(x, "colorbar", value.asInstanceOf[js.Any])
+    inline def setColorbar(value: PartialColorBarBgcolor): Self = StObject.set(x, "colorbar", value.asInstanceOf[js.Any])
     
     inline def setColorbarUndefined: Self = StObject.set(x, "colorbar", js.undefined)
     
@@ -117,7 +112,7 @@ object PartialPlotMarker {
     
     inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
     
-    inline def setLine(value: Partial[ScatterMarkerLine]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: PartialScatterMarkerLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
@@ -131,11 +126,11 @@ object PartialPlotMarker {
     
     inline def setOpacityVarargs(value: Double*): Self = StObject.set(x, "opacity", js.Array(value*))
     
-    inline def setPad(value: Partial[Padding]): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: PartialPadding): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
     
-    inline def setPattern(value: Partial[Pattern]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: PartialPattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     

@@ -1,12 +1,12 @@
 package typings.fpTs.mod
 
-import typings.fpTs.fromTheseMod.FromThese
-import typings.fpTs.fromTheseMod.FromThese2
-import typings.fpTs.fromTheseMod.FromThese2C
-import typings.fpTs.fromTheseMod.FromThese3
-import typings.fpTs.fromTheseMod.FromThese3C
-import typings.fpTs.fromTheseMod.FromThese4
-import typings.fpTs.theseMod.These_
+import typings.fpTs.libFromTheseMod.FromThese
+import typings.fpTs.libFromTheseMod.FromThese2
+import typings.fpTs.libFromTheseMod.FromThese2C
+import typings.fpTs.libFromTheseMod.FromThese3
+import typings.fpTs.libFromTheseMod.FromThese3C
+import typings.fpTs.libFromTheseMod.FromThese4
+import typings.fpTs.libTheseMod.These_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

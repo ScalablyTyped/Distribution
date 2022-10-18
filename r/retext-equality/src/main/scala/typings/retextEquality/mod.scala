@@ -13,7 +13,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default(): Unit | (Transformer[Root, Root]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit | (Transformer[Root, Root])]
-  inline def default(options: typings.retextEquality.factoryMod.Options): Unit | (Transformer[Root, Root]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Unit | (Transformer[Root, Root])]
+  inline def default(options: typings.retextEquality.libFactoryMod.Options): Unit | (Transformer[Root, Root]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Unit | (Transformer[Root, Root])]
   
-  type Options = typings.retextEquality.factoryMod.Options
+  type Options = typings.retextEquality.libFactoryMod.Options
 }

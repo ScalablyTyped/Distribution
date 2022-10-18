@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait AndroidConfig extends StObject {
   
   /** Arbitrary key/value payload. If present, it will override google.firebase.fcm.v1.Message.data. */
   var data: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.AndroidConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -60,9 +57,7 @@ object AndroidConfig {
     inline def setCollapseKeyUndefined: Self = StObject.set(x, "collapseKey", js.undefined)
     
     inline def setData(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.AndroidConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

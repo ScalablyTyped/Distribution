@@ -1,10 +1,9 @@
 package typings.nodelibFsWalk
 
 import typings.node.streamMod.Readable
-import typings.nodelibFsWalk.asyncMod.AsyncCallback
-import typings.nodelibFsWalk.settingsMod.Options
-import typings.nodelibFsWalk.settingsMod.default
-import typings.nodelibFsWalk.typesMod.Entry
+import typings.nodelibFsWalk.outSettingsMod.Options
+import typings.nodelibFsWalk.outSettingsMod.default
+import typings.nodelibFsWalk.outTypesMod.Entry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,10 +19,6 @@ object mod {
   open class Settings () extends default {
     def this(_options: Options) = this()
   }
-  
-  inline def walk(directory: String, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(directory.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def walk(directory: String, optionsOrSettings: Options, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(directory.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def walk(directory: String, optionsOrSettings: default, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(directory.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def walkStream(directory: String): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("walkStream")(directory.asInstanceOf[js.Any]).asInstanceOf[Readable]
   inline def walkStream(directory: String, optionsOrSettings: Options): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("walkStream")(directory.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any])).asInstanceOf[Readable]

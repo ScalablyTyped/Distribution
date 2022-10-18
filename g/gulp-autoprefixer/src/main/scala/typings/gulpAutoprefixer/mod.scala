@@ -4,14 +4,15 @@ import typings.gulpAutoprefixer.gulpAutoprefixerBooleans.`false`
 import typings.gulpAutoprefixer.gulpAutoprefixerStrings.`no-2009`
 import typings.gulpAutoprefixer.gulpAutoprefixerStrings.`no-autoplace`
 import typings.gulpAutoprefixer.gulpAutoprefixerStrings.autoplace
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
-  inline def apply(opts: Options): Any = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(opts: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-autoprefixer", JSImport.Namespace)
   @js.native

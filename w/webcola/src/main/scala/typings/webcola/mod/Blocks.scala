@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "Blocks")
 @js.native
 open class Blocks protected ()
-  extends typings.webcola.vpscMod.Blocks {
-  def this(vs: js.Array[typings.webcola.vpscMod.Variable]) = this()
+  extends typings.webcola.distSrcVpscMod.Blocks {
+  def this(vs: js.Array[typings.webcola.distSrcVpscMod.Variable]) = this()
 }

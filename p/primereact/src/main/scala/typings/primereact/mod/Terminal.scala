@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.terminalMod.TerminalProps
+import typings.primereact.terminalTerminalMod.TerminalProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Terminal")
 @js.native
 open class Terminal protected ()
-  extends typings.primereact.terminalMod.Terminal {
+  extends typings.primereact.terminalTerminalMod.Terminal {
   def this(props: TerminalProps) = this()
   /**
     * @deprecated

@@ -1,14 +1,18 @@
 package typings.svelteLeafletjs.mod
 
 import typings.leaflet.mod.Control_.Scale
+import typings.svelte.mod.SvelteComponentTyped
+import typings.svelte.typesRuntimeInternalDevMod.ComponentConstructorOptions
+import typings.svelteLeafletjs.anon.GetScaleControl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SvelteComponentTyped<{  position :L.ControlPosition | undefined,   options :L.Control.ScaleOptions | undefined,   getScaleControl :(): L.Control.Scale | undefined}, never, never> * / any */ @JSImport("svelte-leafletjs", "ScaleControl")
+@JSImport("svelte-leafletjs", "ScaleControl")
 @js.native
-open class ScaleControl () extends StObject {
+open class ScaleControl protected ()
+  extends SvelteComponentTyped[GetScaleControl, scala.Nothing, scala.Nothing] {
+  def this(options: ComponentConstructorOptions[GetScaleControl]) = this()
   
   def getScaleControl(): Scale = js.native
 }

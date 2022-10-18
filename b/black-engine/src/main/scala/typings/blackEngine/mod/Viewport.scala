@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Viewport")
 @js.native
 open class Viewport ()
-  extends typings.blackEngine.viewportMod.Viewport {
+  extends typings.blackEngine.coreViewportMod.Viewport {
   def this(containerElement: HTMLElement) = this()
 }

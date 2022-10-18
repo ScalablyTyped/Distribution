@@ -1,6 +1,6 @@
 package typings.expoSqlite
 
-import typings.expoSqlite.sqliteTypesMod.WebSQLDatabase
+import typings.expoSqlite.buildSqliteDottypesMod.WebSQLDatabase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object mod {
   @JSImport("expo-sqlite", "SQLError")
   @js.native
   open class SQLError ()
-    extends typings.expoSqlite.sqliteTypesMod.SQLError
+    extends typings.expoSqlite.buildSqliteDottypesMod.SQLError
   /* static members */
   object SQLError {
     

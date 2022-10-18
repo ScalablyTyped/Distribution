@@ -1,8 +1,8 @@
 package typings.smoothScrollbar
 
 import typings.smoothScrollbar.anon.XY
-import typings.smoothScrollbar.eventHubMod.EventHandler
-import typings.smoothScrollbar.scrollbarMod.Scrollbar
+import typings.smoothScrollbar.interfacesScrollbarMod.Scrollbar
+import typings.smoothScrollbar.utilsEventHubMod.EventHandler
 import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.Touch
@@ -19,12 +19,12 @@ object utilsMod {
   @JSImport("smooth-scrollbar/utils", "TouchRecord")
   @js.native
   open class TouchRecord ()
-    extends typings.smoothScrollbar.touchRecordMod.TouchRecord
+    extends typings.smoothScrollbar.utilsTouchRecordMod.TouchRecord
   
   @JSImport("smooth-scrollbar/utils", "Tracker")
   @js.native
   open class Tracker protected ()
-    extends typings.smoothScrollbar.touchRecordMod.Tracker {
+    extends typings.smoothScrollbar.utilsTouchRecordMod.Tracker {
     def this(touch: Touch) = this()
   }
   

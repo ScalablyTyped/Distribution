@@ -1,7 +1,7 @@
 package typings.reapop
 
-import typings.reapop.typesMod.Position
-import typings.reapop.typesMod.Status
+import typings.reapop.distReducersNotificationsTypesMod.Position
+import typings.reapop.distReducersNotificationsTypesMod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.socketIoClient
 
-import typings.socketIoClient.socketMod.Socket.DisconnectReason
+import typings.socketIoClient.buildEsmSocketMod.Socket.DisconnectReason
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,6 +30,12 @@ object socketIoClientStrings {
   @js.native
   sealed trait opening extends StObject
   inline def opening: opening = "opening".asInstanceOf[opening]
+  
+  @js.native
+  sealed trait `parse error`
+    extends StObject
+       with DisconnectReason
+  inline def `parse error`: `parse error` = ("parse error").asInstanceOf[`parse error`]
   
   @js.native
   sealed trait `ping timeout`

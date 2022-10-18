@@ -41,7 +41,7 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLImageElement
-import typings.storybookTheming.emotionReactNodeModulesemotionSerializeTypesIndexMod.Interpolation
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.Interpolation
 import typings.storybookTheming.storybookThemingStrings._empty
 import typings.storybookTheming.storybookThemingStrings.`additions removals`
 import typings.storybookTheming.storybookThemingStrings.`additions text`
@@ -368,7 +368,9 @@ trait DetailedHTMLPropsImgHTMLA extends StObject {
   
   var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
-  var css: js.UndefOr[Interpolation[typings.storybookTheming.emotionReactTypesIndexMod.Theme]] = js.undefined
+  var css: js.UndefOr[
+    Interpolation[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme]
+  ] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
@@ -903,7 +905,9 @@ object DetailedHTMLPropsImgHTMLA {
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
-    inline def setCss(value: Interpolation[typings.storybookTheming.emotionReactTypesIndexMod.Theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(
+      value: Interpolation[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme]
+    ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssNull: Self = StObject.set(x, "css", null)
     

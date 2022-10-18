@@ -66,7 +66,7 @@ inline def encodeUnpaddedUrlSafeBase64(b: js.typedarray.ArrayBuffer): String = ^
 inline def encodeUnpaddedUrlSafeBase64(b: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeUnpaddedUrlSafeBase64")(b.asInstanceOf[js.Any]).asInstanceOf[String]
 
 inline def extractRequestError(err: js.Error): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestError")(err.asInstanceOf[js.Any]).asInstanceOf[Any]
-inline def extractRequestError(err: typings.matrixBotSdk.matrixErrorMod.MatrixError): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestError")(err.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def extractRequestError(err: typings.matrixBotSdk.libModelsMatrixErrorMod.MatrixError): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestError")(err.asInstanceOf[js.Any]).asInstanceOf[Any]
 
 inline def getRequestFn(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getRequestFn")().asInstanceOf[Any]
 
@@ -126,4 +126,4 @@ Unit]]
 
 inline def validateSpaceOrderString(order: String): `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSpaceOrderString")(order.asInstanceOf[js.Any]).asInstanceOf[`true`]
 
-inline def wrapRoomEvent(event: Any): typings.matrixBotSdk.roomEventMod.RoomEvent[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRoomEvent")(event.asInstanceOf[js.Any]).asInstanceOf[typings.matrixBotSdk.roomEventMod.RoomEvent[Any]]
+inline def wrapRoomEvent(event: Any): typings.matrixBotSdk.libModelsEventsRoomEventMod.RoomEvent[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRoomEvent")(event.asInstanceOf[js.Any]).asInstanceOf[typings.matrixBotSdk.libModelsEventsRoomEventMod.RoomEvent[Any]]

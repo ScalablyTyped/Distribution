@@ -2,7 +2,7 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsTikTokMod.TikTokProps
+import typings.wixUiIconsCommon.distSrcOnStageGeneralDistComponentsTikTokMod.TikTokProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

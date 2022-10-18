@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the PlaybackPositionChangeRequested event. */
-@JSGlobal("Windows.Media.PlaybackPositionChangeRequestedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.PlaybackPositionChangeRequestedEventArgs")
 @js.native
-abstract class PlaybackPositionChangeRequestedEventArgs ()
+open class PlaybackPositionChangeRequestedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.PlaybackPositionChangeRequestedEventArgs {
   

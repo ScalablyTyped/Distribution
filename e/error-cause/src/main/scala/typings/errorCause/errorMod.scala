@@ -1,31 +1,27 @@
 package typings.errorCause
 
-import org.scalablytyped.runtime.Shortcut
 import typings.errorCause.anon.Cause
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object errorMod extends Shortcut {
+object errorMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("error-cause/base/Error", JSImport.Default)
+  @JSImport("error-cause/Error", JSImport.Default)
   @js.native
-  open class default protected ()
+  open class default ()
     extends StObject
-       with Error {
+       with typings.errorCause.errorMod.Error {
     def this(reason: String) = this()
     def this(reason: String, options: Cause) = this()
+    def this(reason: Unit, options: Cause) = this()
+  }
+  
+  @js.native
+  trait Error
+    extends StObject
+       with ErrorConstructor {
     
-    /* CompleteClass */
     var cause: Any = js.native
   }
-  @JSImport("error-cause/base/Error", JSImport.Default)
-  @js.native
-  val default: ErrorConstructor = js.native
-  
-  type _To = ErrorConstructor
-  
-  /* This means you don't have to write `default`, but can instead just say `errorMod.foo` */
-  override def _to: ErrorConstructor = default
 }

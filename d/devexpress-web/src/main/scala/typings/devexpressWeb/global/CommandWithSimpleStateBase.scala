@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Serves as a base for commands with a simple common command state.
   */
-@JSGlobal("CommandWithSimpleStateBase")
+/* note: abstract class */ @JSGlobal("CommandWithSimpleStateBase")
 @js.native
-abstract class CommandWithSimpleStateBase ()
+open class CommandWithSimpleStateBase ()
   extends StObject
      with typings.devexpressWeb.CommandWithSimpleStateBase {
   

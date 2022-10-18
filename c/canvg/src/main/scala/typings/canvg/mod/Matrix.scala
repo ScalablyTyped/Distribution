@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "Matrix")
 @js.native
 open class Matrix protected ()
-  extends typings.canvg.transformMod.Matrix {
+  extends typings.canvg.distTransformMod.Matrix {
   def this(
-    _underscore: typings.canvg.documentMod.Document,
+    _underscore: typings.canvg.distDocumentMod.Document,
     matrix: String,
     transformOrigin: js.Tuple2[
-        typings.canvg.propertyMod.Property[String], 
-        typings.canvg.propertyMod.Property[String]
+        typings.canvg.distPropertyMod.Property[String], 
+        typings.canvg.distPropertyMod.Property[String]
       ]
   ) = this()
 }

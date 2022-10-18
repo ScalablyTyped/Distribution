@@ -1,7 +1,7 @@
 package typings.preact.mod
 
+import typings.preact.anon.Children
 import typings.preact.anon.Value
-import typings.preact.anon.`0`
 import typings.preact.mod.^
 import typings.std.Document
 import typings.std.DocumentFragment
@@ -57,13 +57,9 @@ type ComponentConstructor[P, S] = ComponentClass[P, S]
 
 type ComponentFactory[P] = ComponentType[P]
 
-type ComponentProps[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 166 */ Any */] = /* import warning: importer.ImportType#apply Failed type conversion: preact.preact/src/jsx.JSXInternal.IntrinsicElements[C] */ js.Any
-
 type ComponentType[P] = (ComponentClass[P, js.Object]) | FunctionComponent[P]
 
-type Consumer[T] = FunctionComponent[`0`[T]]
-
-type ContextType[C /* <: Context[Any] */] = Any
+type Consumer[T] = FunctionComponent[Children[T]]
 
 type FunctionalComponent[P] = FunctionComponent[P]
 
@@ -77,7 +73,7 @@ type PreactProvider[T] = Provider[T]
 
 type Provider[T] = FunctionComponent[Value[T]]
 
-type Ref[T] = RefObject[T] | RefCallback[T]
+type Ref[T] = RefObject[T] | RefCallback[T] | Null
 
 type RefCallback[T] = js.Function1[/* instance */ T | Null, Unit]
 

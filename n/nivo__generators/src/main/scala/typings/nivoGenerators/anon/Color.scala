@@ -8,16 +8,14 @@ trait Color extends StObject {
   
   var color: String
   
-  var height: Double
+  var x: String
   
-  var id: String
-  
-  var size: Double
+  var y: Double
 }
 object Color {
   
-  inline def apply(color: String, height: Double, id: String, size: Double): Color = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+  inline def apply(color: String, x: String, y: Double): Color = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]
   }
   
@@ -25,10 +23,8 @@ object Color {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

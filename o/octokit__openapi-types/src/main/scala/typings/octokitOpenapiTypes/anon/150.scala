@@ -6,17 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `150` extends StObject {
   
-  var content: `149`
+  var labels: js.UndefOr[js.Array[NameString]] = js.undefined
 }
 object `150` {
   
-  inline def apply(content: `149`): `150` = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+  inline def apply(): `150` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`150`]
   }
   
   extension [Self <: `150`](x: Self) {
     
-    inline def setContent(value: `149`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[NameString]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setLabelsVarargs(value: NameString*): Self = StObject.set(x, "labels", js.Array(value*))
   }
 }

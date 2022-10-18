@@ -1,6 +1,6 @@
 package typings.sipJs.mod
 
-import typings.sipJs.notifyMod.IncomingNotifyRequest
+import typings.sipJs.libCoreMessagesMethodsNotifyMod.IncomingNotifyRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Notification")
 @js.native
 open class Notification protected ()
-  extends typings.sipJs.apiMod.Notification {
+  extends typings.sipJs.libApiMod.Notification {
   /** @internal */
   def this(incomingNotifyRequest: IncomingNotifyRequest) = this()
 }

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BABYLON.AbstractAssetTask")
+/* note: abstract class */ @JSGlobal("BABYLON.AbstractAssetTask")
 @js.native
-abstract class AbstractAssetTask protected ()
+open class AbstractAssetTask protected ()
   extends StObject
      with typings.babylonjs.BABYLON.AbstractAssetTask {
   /**

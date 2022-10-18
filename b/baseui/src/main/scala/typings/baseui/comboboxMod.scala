@@ -10,7 +10,7 @@ import typings.baseui.baseuiStrings.li_
 import typings.baseui.baseuiStrings.ul
 import typings.baseui.comboboxTypesMod.ComboboxProps
 import typings.react.mod.global.JSX.Element
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

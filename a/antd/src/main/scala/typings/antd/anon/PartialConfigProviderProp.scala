@@ -1,11 +1,12 @@
 package typings.antd.anon
 
-import typings.antd.configProviderContextMod.CSPConfig
-import typings.antd.configProviderContextMod.DirectionType
-import typings.antd.configProviderSizeContextMod.SizeType
-import typings.antd.defaultRenderEmptyMod.RenderEmptyHandler
+import typings.antd.libConfigProviderContextMod.CSPConfig
+import typings.antd.libConfigProviderContextMod.DirectionType
+import typings.antd.libConfigProviderDefaultRenderEmptyMod.RenderEmptyHandler
+import typings.antd.libConfigProviderSizeContextMod.SizeType
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,13 +32,13 @@ trait PartialConfigProviderProp extends StObject {
   
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ js.UndefOr[HTMLElement], HTMLElement]] = js.undefined
   
-  var getTargetContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
+  var getTargetContainer: js.UndefOr[js.Function0[HTMLElement | Window]] = js.undefined
   
   var iconPrefixCls: js.UndefOr[String] = js.undefined
   
   var input: js.UndefOr[AutoComplete] = js.undefined
   
-  var locale: js.UndefOr[typings.antd.localeProviderMod.Locale] = js.undefined
+  var locale: js.UndefOr[typings.antd.libLocaleProviderMod.Locale] = js.undefined
   
   var pageHeader: js.UndefOr[Ghost] = js.undefined
   
@@ -96,7 +97,7 @@ object PartialConfigProviderProp {
     
     inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
     
-    inline def setGetTargetContainer(value: () => HTMLElement): Self = StObject.set(x, "getTargetContainer", js.Any.fromFunction0(value))
+    inline def setGetTargetContainer(value: () => HTMLElement | Window): Self = StObject.set(x, "getTargetContainer", js.Any.fromFunction0(value))
     
     inline def setGetTargetContainerUndefined: Self = StObject.set(x, "getTargetContainer", js.undefined)
     
@@ -108,7 +109,7 @@ object PartialConfigProviderProp {
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    inline def setLocale(value: typings.antd.localeProviderMod.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: typings.antd.libLocaleProviderMod.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     

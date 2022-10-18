@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Static class that provides well known CSIM file paths. */
-@JSGlobal("Windows.Networking.NetworkOperators.KnownCSimFilePaths")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.KnownCSimFilePaths")
 @js.native
-abstract class KnownCSimFilePaths ()
+open class KnownCSimFilePaths ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.KnownCSimFilePaths
 object KnownCSimFilePaths {

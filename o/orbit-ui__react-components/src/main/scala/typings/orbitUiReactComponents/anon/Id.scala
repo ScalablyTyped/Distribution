@@ -1,6 +1,6 @@
 package typings.orbitUiReactComponents.anon
 
-import typings.orbitUiReactComponents.useMergedRefsMod.MergedRef
+import typings.orbitUiReactComponents.distSharedSrcUseMergedRefsMod.MergedRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

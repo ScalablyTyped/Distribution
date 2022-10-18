@@ -5,7 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.reactNative.anon.Start
+import typings.reactNative.anon.End
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -37,7 +37,8 @@ import typings.reactNative.mod.TextInputSubmitEditingEventData
 import typings.reactNative.mod.TextInputTextInputEventData
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconNode
+import typings.reactNativeElements.distIconsIconMod.IconNode
+import typings.reactNativeElements.distSearchbarSearchBarMod.SearchBarProps
 import typings.reactNativeElements.reactNativeElementsStrings.URL
 import typings.reactNativeElements.reactNativeElementsStrings.`birthdate-day`
 import typings.reactNativeElements.reactNativeElementsStrings.`birthdate-full`
@@ -130,7 +131,6 @@ import typings.reactNativeElements.reactNativeElementsStrings.username
 import typings.reactNativeElements.reactNativeElementsStrings.words
 import typings.reactNativeElements.reactNativeElementsStrings.yes
 import typings.reactNativeElements.reactNativeElementsStrings.yesExcludeDescendants
-import typings.reactNativeElements.searchBarMod.SearchBarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -941,7 +941,7 @@ trait platformiosandroiddefault extends StObject {
     * The start and end of the text input's selection. Set start and end to
     * the same value to position the cursor.
     */
-  var selection: js.UndefOr[Start] = js.native
+  var selection: js.UndefOr[End] = js.native
   
   /**
     * The highlight (and cursor on ios) color of the text input
@@ -1054,7 +1054,7 @@ trait platformiosandroiddefault extends StObject {
     none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode
   ] = js.native
   
-  var theme: js.UndefOr[typings.reactNativeElements.themeMod.Theme[SearchBarProps]] = js.native
+  var theme: js.UndefOr[typings.reactNativeElements.distConfigThemeMod.Theme[SearchBarProps]] = js.native
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.

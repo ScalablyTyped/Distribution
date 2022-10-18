@@ -1,56 +1,56 @@
 package typings.mangopay2NodejsSdk
 
-import typings.mangopay2NodejsSdk.bankAccountMod.bankAccount.BankAccountType
-import typings.mangopay2NodejsSdk.bankAccountMod.bankAccount.DepositAccountType
-import typings.mangopay2NodejsSdk.cardMod.card.CardStatus
-import typings.mangopay2NodejsSdk.cardMod.card.CardValidity
-import typings.mangopay2NodejsSdk.cardPreauthorizationMod.cardPreAuthorization.PaymentStatus
-import typings.mangopay2NodejsSdk.cardPreauthorizationMod.cardPreAuthorization.PreAuthorizationStatus
-import typings.mangopay2NodejsSdk.clientMod.client.BusinessType
-import typings.mangopay2NodejsSdk.clientMod.client.PlatformType
-import typings.mangopay2NodejsSdk.clientMod.client.Sector
-import typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DisputeDocumentType
-import typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.RefusedReasonType
-import typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeReasonType
-import typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeStatus
-import typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeType
-import typings.mangopay2NodejsSdk.eventMod.event.EventType
-import typings.mangopay2NodejsSdk.hookMod.hook.HookStatus
-import typings.mangopay2NodejsSdk.hookMod.hook.HookValidity
-import typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.DocumentStatus
-import typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.KYCDocumentRefusedReasonType
-import typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.KycDocumentType
-import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateCultureCode
-import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateScheme
-import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateStatus
-import typings.mangopay2NodejsSdk.payInMod.payIn.DirectDebitType
-import typings.mangopay2NodejsSdk.payInMod.payIn.FrequencyType
-import typings.mangopay2NodejsSdk.payInMod.payIn.PayInExecutionType
-import typings.mangopay2NodejsSdk.payInMod.payIn.PayInPaymentType
-import typings.mangopay2NodejsSdk.payInMod.payIn.RecurringPaymentStatus
-import typings.mangopay2NodejsSdk.payInMod.payIn.RecurringType
-import typings.mangopay2NodejsSdk.payInMod.payIn.`3DSVersion`
-import typings.mangopay2NodejsSdk.payOutMod.payOut.PayoutModeRequestedType
-import typings.mangopay2NodejsSdk.refundMod.refund.RefundReasonType
-import typings.mangopay2NodejsSdk.reportMod.report.Column
-import typings.mangopay2NodejsSdk.securityInfoMod.securityInfo.AVSResult
-import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionNature
-import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionStatus
-import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionType
-import typings.mangopay2NodejsSdk.typesMod.ApiMethod
-import typings.mangopay2NodejsSdk.typesMod.CountryISO
-import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
-import typings.mangopay2NodejsSdk.typesMod.SecureMode
-import typings.mangopay2NodejsSdk.userMod.user.RequiredUserLegalData
-import typings.mangopay2NodejsSdk.userMod.user.RequiredUserLegalOwnerData
-import typings.mangopay2NodejsSdk.userMod.user.RequiredUserLegalPayerData
-import typings.mangopay2NodejsSdk.userMod.user.RequiredUserNaturalData
-import typings.mangopay2NodejsSdk.userMod.user.RequiredUserNaturalOwnerData
-import typings.mangopay2NodejsSdk.userMod.user.RequiredUserNaturalPayerData
-import typings.mangopay2NodejsSdk.userMod.user.StaticKeys
-import typings.mangopay2NodejsSdk.userMod.user.UserCategory
-import typings.mangopay2NodejsSdk.walletMod.wallet.ClientFundsType
-import typings.mangopay2NodejsSdk.walletMod.wallet.FundsType
+import typings.mangopay2NodejsSdk.typingsModelsBankAccountMod.bankAccount.BankAccountType
+import typings.mangopay2NodejsSdk.typingsModelsBankAccountMod.bankAccount.DepositAccountType
+import typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardStatus
+import typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardValidity
+import typings.mangopay2NodejsSdk.typingsModelsCardPreauthorizationMod.cardPreAuthorization.PaymentStatus
+import typings.mangopay2NodejsSdk.typingsModelsCardPreauthorizationMod.cardPreAuthorization.PreAuthorizationStatus
+import typings.mangopay2NodejsSdk.typingsModelsClientMod.client.BusinessType
+import typings.mangopay2NodejsSdk.typingsModelsClientMod.client.PlatformType
+import typings.mangopay2NodejsSdk.typingsModelsClientMod.client.Sector
+import typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.DisputeDocumentType
+import typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.DocumentStatus
+import typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.RefusedReasonType
+import typings.mangopay2NodejsSdk.typingsModelsDisputeMod.dispute.DisputeReasonType
+import typings.mangopay2NodejsSdk.typingsModelsDisputeMod.dispute.DisputeStatus
+import typings.mangopay2NodejsSdk.typingsModelsDisputeMod.dispute.DisputeType
+import typings.mangopay2NodejsSdk.typingsModelsEventMod.event.EventType
+import typings.mangopay2NodejsSdk.typingsModelsHookMod.hook.HookStatus
+import typings.mangopay2NodejsSdk.typingsModelsHookMod.hook.HookValidity
+import typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.KYCDocumentRefusedReasonType
+import typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.KycDocumentType
+import typings.mangopay2NodejsSdk.typingsModelsMandateMod.mandate.MandateCultureCode
+import typings.mangopay2NodejsSdk.typingsModelsMandateMod.mandate.MandateScheme
+import typings.mangopay2NodejsSdk.typingsModelsMandateMod.mandate.MandateStatus
+import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.DirectDebitType
+import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.FrequencyType
+import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.PayInExecutionType
+import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.PayInPaymentType
+import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.RecurringPaymentStatus
+import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.RecurringType
+import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.`3DSVersion`
+import typings.mangopay2NodejsSdk.typingsModelsPayOutMod.payOut.PayoutModeRequestedType
+import typings.mangopay2NodejsSdk.typingsModelsRefundMod.refund.RefundReasonType
+import typings.mangopay2NodejsSdk.typingsModelsReportMod.report.Column
+import typings.mangopay2NodejsSdk.typingsModelsSecurityInfoMod.securityInfo.AVSResult
+import typings.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionNature
+import typings.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionStatus
+import typings.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.RequiredUserLegalData
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.RequiredUserLegalOwnerData
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.RequiredUserLegalPayerData
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.RequiredUserNaturalData
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.RequiredUserNaturalOwnerData
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.RequiredUserNaturalPayerData
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.StaticKeys
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.UserCategory
+import typings.mangopay2NodejsSdk.typingsModelsWalletMod.wallet.ClientFundsType
+import typings.mangopay2NodejsSdk.typingsModelsWalletMod.wallet.FundsType
+import typings.mangopay2NodejsSdk.typingsTypesMod.ApiMethod
+import typings.mangopay2NodejsSdk.typingsTypesMod.CountryISO
+import typings.mangopay2NodejsSdk.typingsTypesMod.CurrencyISO
+import typings.mangopay2NodejsSdk.typingsTypesMod.SecureMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -324,7 +324,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait BCMC
     extends StObject
-       with typings.mangopay2NodejsSdk.cardMod.card.CardType
+       with typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardType
   inline def BCMC: BCMC = "BCMC".asInstanceOf[BCMC]
   
   @js.native
@@ -486,7 +486,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait BUSINESS
     extends StObject
-       with typings.mangopay2NodejsSdk.userMod.user.LegalPersonType
+       with typings.mangopay2NodejsSdk.typingsModelsUserMod.user.LegalPersonType
   inline def BUSINESS: BUSINESS = "BUSINESS".asInstanceOf[BUSINESS]
   
   @js.native
@@ -596,7 +596,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait CB_VISA_MASTERCARD
     extends StObject
-       with typings.mangopay2NodejsSdk.cardMod.card.CardType
+       with typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardType
   inline def CB_VISA_MASTERCARD: CB_VISA_MASTERCARD = "CB_VISA_MASTERCARD".asInstanceOf[CB_VISA_MASTERCARD]
   
   @js.native
@@ -737,7 +737,7 @@ object mangopay2NodejsSdkStrings {
        with CardStatus
        with DisputeStatus
        with DocumentStatus
-       with typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentStatus
+       with typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.DocumentStatus
        with MandateStatus
        with PreAuthorizationStatus
        with RecurringPaymentStatus
@@ -962,7 +962,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait DINERS
     extends StObject
-       with typings.mangopay2NodejsSdk.cardMod.card.CardType
+       with typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardType
   inline def DINERS: DINERS = "DINERS".asInstanceOf[DINERS]
   
   @js.native
@@ -1208,10 +1208,6 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with Column
   inline def DeclaredFeesCurrency: DeclaredFeesCurrency = "DeclaredFeesCurrency".asInstanceOf[DeclaredFeesCurrency]
-  
-  @js.native
-  sealed trait DeepPartial extends StObject
-  inline def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   
   @js.native
   sealed trait EC
@@ -1759,7 +1755,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait IDEAL
     extends StObject
-       with typings.mangopay2NodejsSdk.cardMod.card.CardType
+       with typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardType
   inline def IDEAL: IDEAL = "IDEAL".asInstanceOf[IDEAL]
   
   @js.native
@@ -2200,7 +2196,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait LEGAL
     extends StObject
-       with typings.mangopay2NodejsSdk.userMod.user.PersonType
+       with typings.mangopay2NodejsSdk.typingsModelsUserMod.user.PersonType
   inline def LEGAL: LEGAL = "LEGAL".asInstanceOf[LEGAL]
   
   @js.native
@@ -2212,7 +2208,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait LIGHT
     extends StObject
-       with typings.mangopay2NodejsSdk.userMod.user.KYCLevel
+       with typings.mangopay2NodejsSdk.typingsModelsUserMod.user.KYCLevel
   inline def LIGHT: LIGHT = "LIGHT".asInstanceOf[LIGHT]
   
   @js.native
@@ -2369,7 +2365,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait MAESTRO
     extends StObject
-       with typings.mangopay2NodejsSdk.cardMod.card.CardType
+       with typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardType
   inline def MAESTRO: MAESTRO = "MAESTRO".asInstanceOf[MAESTRO]
   
   @js.native
@@ -2412,7 +2408,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait MASTERPASS
     extends StObject
-       with typings.mangopay2NodejsSdk.cardMod.card.CardType
+       with typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardType
   inline def MASTERPASS: MASTERPASS = "MASTERPASS".asInstanceOf[MASTERPASS]
   
   @js.native
@@ -2630,10 +2626,6 @@ object mangopay2NodejsSdkStrings {
   inline def MZN: MZN = "MZN".asInstanceOf[MZN]
   
   @js.native
-  sealed trait MakeKeysNullable extends StObject
-  inline def MakeKeysNullable: MakeKeysNullable = "MakeKeysNullable".asInstanceOf[MakeKeysNullable]
-  
-  @js.native
   sealed trait Monthly
     extends StObject
        with FrequencyType
@@ -2654,7 +2646,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait NATURAL
     extends StObject
-       with typings.mangopay2NodejsSdk.userMod.user.PersonType
+       with typings.mangopay2NodejsSdk.typingsModelsUserMod.user.PersonType
   inline def NATURAL: NATURAL = "NATURAL".asInstanceOf[NATURAL]
   
   @js.native
@@ -2824,7 +2816,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait ORGANIZATION
     extends StObject
-       with typings.mangopay2NodejsSdk.userMod.user.LegalPersonType
+       with typings.mangopay2NodejsSdk.typingsModelsUserMod.user.LegalPersonType
   inline def ORGANIZATION: ORGANIZATION = "ORGANIZATION".asInstanceOf[ORGANIZATION]
   
   @js.native
@@ -2852,7 +2844,8 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait OUT_OF_DATE
     extends StObject
-       with typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentStatus
+       with DocumentStatus
+       with typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.DocumentStatus
   inline def OUT_OF_DATE: OUT_OF_DATE = "OUT_OF_DATE".asInstanceOf[OUT_OF_DATE]
   
   @js.native
@@ -2870,7 +2863,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait P24
     extends StObject
-       with typings.mangopay2NodejsSdk.cardMod.card.CardType
+       with typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardType
   inline def P24: P24 = "P24".asInstanceOf[P24]
   
   @js.native
@@ -2966,7 +2959,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait PAYLIB
     extends StObject
-       with typings.mangopay2NodejsSdk.cardMod.card.CardType
+       with typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardType
   inline def PAYLIB: PAYLIB = "PAYLIB".asInstanceOf[PAYLIB]
   
   @js.native
@@ -3316,7 +3309,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait REFUSED
     extends StObject
        with DocumentStatus
-       with typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentStatus
+       with typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.DocumentStatus
   inline def REFUSED: REFUSED = "REFUSED".asInstanceOf[REFUSED]
   
   @js.native
@@ -3328,7 +3321,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait REGULAR
     extends StObject
-       with typings.mangopay2NodejsSdk.userMod.user.KYCLevel
+       with typings.mangopay2NodejsSdk.typingsModelsUserMod.user.KYCLevel
        with TransactionNature
   inline def REGULAR: REGULAR = "REGULAR".asInstanceOf[REGULAR]
   
@@ -3597,7 +3590,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait SOLETRADER
     extends StObject
-       with typings.mangopay2NodejsSdk.userMod.user.LegalPersonType
+       with typings.mangopay2NodejsSdk.typingsModelsUserMod.user.LegalPersonType
   inline def SOLETRADER: SOLETRADER = "SOLETRADER".asInstanceOf[SOLETRADER]
   
   @js.native
@@ -4197,7 +4190,7 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with CardStatus
        with DocumentStatus
-       with typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentStatus
+       with typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.DocumentStatus
        with PaymentStatus
   inline def VALIDATED: VALIDATED = "VALIDATED".asInstanceOf[VALIDATED]
   
@@ -4205,7 +4198,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait VALIDATION_ASKED
     extends StObject
        with DocumentStatus
-       with typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentStatus
+       with typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.DocumentStatus
   inline def VALIDATION_ASKED: VALIDATION_ASKED = "VALIDATION_ASKED".asInstanceOf[VALIDATION_ASKED]
   
   @js.native

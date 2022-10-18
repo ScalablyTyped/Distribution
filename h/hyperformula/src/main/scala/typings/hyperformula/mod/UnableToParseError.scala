@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "UnableToParseError")
 @js.native
 open class UnableToParseError protected ()
-  extends typings.hyperformula.errorsMod.UnableToParseError {
+  extends typings.hyperformula.typingsErrorsMod.UnableToParseError {
   def this(value: Any) = this()
 }

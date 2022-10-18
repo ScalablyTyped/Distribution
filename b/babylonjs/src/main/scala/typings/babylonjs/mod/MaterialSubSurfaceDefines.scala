@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param externalProperties list of external properties to inject into the object
   */
 open class MaterialSubSurfaceDefines ()
-  extends typings.babylonjs.legacyMod.MaterialSubSurfaceDefines {
+  extends typings.babylonjs.legacyLegacyMod.MaterialSubSurfaceDefines {
   def this(externalProperties: org.scalablytyped.runtime.StringDictionary[Default]) = this()
 }

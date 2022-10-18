@@ -1,25 +1,25 @@
 package typings.nivoScales.anon
 
-import typings.nivoScales.typesMod.ScaleValue
+import typings.nivoScales.distTypesComputeMod.SerieDatum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `1`[XValue /* <: ScaleValue */, YValue /* <: ScaleValue */] extends StObject {
+trait `1`[D /* <: SerieDatum */] extends StObject {
   
-  var data: js.Array[DataXY[XValue, YValue]]
+  var data: js.Array[D]
 }
 object `1` {
   
-  inline def apply[XValue /* <: ScaleValue */, YValue /* <: ScaleValue */](data: js.Array[DataXY[XValue, YValue]]): `1`[XValue, YValue] = {
+  inline def apply[D /* <: SerieDatum */](data: js.Array[D]): `1`[D] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`1`[XValue, YValue]]
+    __obj.asInstanceOf[`1`[D]]
   }
   
-  extension [Self <: `1`[?, ?], XValue /* <: ScaleValue */, YValue /* <: ScaleValue */](x: Self & (`1`[XValue, YValue])) {
+  extension [Self <: `1`[?], D /* <: SerieDatum */](x: Self & `1`[D]) {
     
-    inline def setData(value: js.Array[DataXY[XValue, YValue]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: (DataXY[XValue, YValue])*): Self = StObject.set(x, "data", js.Array(value*))
+    inline def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value*))
   }
 }

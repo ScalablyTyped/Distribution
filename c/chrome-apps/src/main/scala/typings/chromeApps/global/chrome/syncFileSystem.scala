@@ -33,7 +33,6 @@ import typings.chromeApps.chromeAppsStrings.synced_
 import typings.chromeApps.chromeAppsStrings.temporary_unavailable_
 import typings.chromeApps.chromeAppsStrings.updated_
 import typings.filesystem.FileEntry
-import typings.std.Exclude
 import typings.std.FileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -202,10 +201,7 @@ object syncFileSystem {
       /* policy */ ToStringLiteral[
         LASTWRITEWIN, 
         /* keyof chrome-apps.anon.LASTWRITEWIN */ LAST_WRITE_WIN | MANUAL, 
-        Exclude[
-          /* keyof chrome-apps.anon.LASTWRITEWIN */ LAST_WRITE_WIN | MANUAL, 
-          last_write_win_ | manual__
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  LAST_WRITE_WIN :'last_write_win',   MANUAL :'manual'} extends keyof {  LAST_WRITE_WIN :'last_write_win',   MANUAL :'manual'} ? std.Exclude<keyof {  LAST_WRITE_WIN :'last_write_win',   MANUAL :'manual'}, 'last_write_win' | 'manual'> : never */ js.Any
       ], 
       Unit
     ]
@@ -223,10 +219,7 @@ object syncFileSystem {
       /* status */ ToStringLiteral[
         CONFLICTING, 
         /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-        Exclude[
-          /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-          synced_ | pending_ | conflicting_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} extends keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} ? std.Exclude<keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'}, 'synced' | 'pending' | 'conflicting'> : never */ js.Any
       ], 
       Unit
     ]
@@ -249,10 +242,7 @@ object syncFileSystem {
       /* status */ ToStringLiteral[
         AUTHENTICATIONREQUIRED, 
         /* keyof chrome-apps.anon.AUTHENTICATIONREQUIRED */ INITIALIZING | RUNNING | AUTHENTICATION_REQUIRED | TEMPORARY_UNAVAILABLE | DISABLED, 
-        Exclude[
-          /* keyof chrome-apps.anon.AUTHENTICATIONREQUIRED */ INITIALIZING | RUNNING | AUTHENTICATION_REQUIRED | TEMPORARY_UNAVAILABLE | DISABLED, 
-          temporary_unavailable_ | authentication_required_ | disabled__ | initializing_ | running_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  INITIALIZING :'initializing',   RUNNING :'running',   AUTHENTICATION_REQUIRED :'authentication_required',   TEMPORARY_UNAVAILABLE :'temporary_unavailable',   DISABLED :'disabled'} extends keyof {  INITIALIZING :'initializing',   RUNNING :'running',   AUTHENTICATION_REQUIRED :'authentication_required',   TEMPORARY_UNAVAILABLE :'temporary_unavailable',   DISABLED :'disabled'} ? std.Exclude<keyof {  INITIALIZING :'initializing',   RUNNING :'running',   AUTHENTICATION_REQUIRED :'authentication_required',   TEMPORARY_UNAVAILABLE :'temporary_unavailable',   DISABLED :'disabled'}, 'temporary_unavailable' | 'authentication_required' | 'disabled' | 'initializing' | 'running'> : never */ js.Any
       ], 
       Unit
     ]
@@ -309,20 +299,14 @@ object syncFileSystem {
     policy: ToStringLiteral[
       LASTWRITEWIN, 
       /* keyof chrome-apps.anon.LASTWRITEWIN */ LAST_WRITE_WIN | MANUAL, 
-      Exclude[
-        /* keyof chrome-apps.anon.LASTWRITEWIN */ LAST_WRITE_WIN | MANUAL, 
-        last_write_win_ | manual__
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  LAST_WRITE_WIN :'last_write_win',   MANUAL :'manual'} extends keyof {  LAST_WRITE_WIN :'last_write_win',   MANUAL :'manual'} ? std.Exclude<keyof {  LAST_WRITE_WIN :'last_write_win',   MANUAL :'manual'}, 'last_write_win' | 'manual'> : never */ js.Any
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConflictResolutionPolicy")(policy.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def setConflictResolutionPolicy(
     policy: ToStringLiteral[
       LASTWRITEWIN, 
       /* keyof chrome-apps.anon.LASTWRITEWIN */ LAST_WRITE_WIN | MANUAL, 
-      Exclude[
-        /* keyof chrome-apps.anon.LASTWRITEWIN */ LAST_WRITE_WIN | MANUAL, 
-        last_write_win_ | manual__
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  LAST_WRITE_WIN :'last_write_win',   MANUAL :'manual'} extends keyof {  LAST_WRITE_WIN :'last_write_win',   MANUAL :'manual'} ? std.Exclude<keyof {  LAST_WRITE_WIN :'last_write_win',   MANUAL :'manual'}, 'last_write_win' | 'manual'> : never */ js.Any
     ],
     callback: js.Function0[Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConflictResolutionPolicy")(policy.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

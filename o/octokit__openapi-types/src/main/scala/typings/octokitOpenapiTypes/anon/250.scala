@@ -6,21 +6,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `250` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: Events | Null
+  /** Page number of the results to fetch. */
+  var page: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
+  ] = js.undefined
+  
+  /** The number of results per page (max 100). */
+  var per_page: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
+  ] = js.undefined
 }
 object `250` {
   
   inline def apply(): `250` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(null)
     __obj.asInstanceOf[`250`]
   }
   
   extension [Self <: `250`](x: Self) {
     
-    inline def setApplicationSlashjson(value: Events): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setPage(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
+    ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonNull: Self = StObject.set(x, "application/json", null)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPer_page(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
+    ): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
   }
 }

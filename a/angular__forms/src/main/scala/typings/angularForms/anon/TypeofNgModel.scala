@@ -40,7 +40,16 @@ trait TypeofNgModel
   /** @nodoc */
   var ngAcceptInputType_isDisabled: Boolean | String = js.native
   
-  var ɵdir: ɵɵDirectiveDeclaration[NgModel, String, js.Array[ngModel], Model, Update, scala.Nothing, scala.Nothing, `false`] = js.native
+  var ɵdir: ɵɵDirectiveDeclaration[
+    NgModel, 
+    /* [ngModel]:not([formControlName]):not([formControl]) */ String, 
+    js.Array[ngModel], 
+    Model, 
+    Update, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgModel, js.Tuple5[HostOptional, Self, Self, Self, Optional]] = js.native
 }

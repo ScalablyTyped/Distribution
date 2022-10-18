@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "CloudBlock")
 @js.native
 open class CloudBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.CloudBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.CloudBlock {
   /**
     * Creates a new CloudBlock
     * @param name defines the block name

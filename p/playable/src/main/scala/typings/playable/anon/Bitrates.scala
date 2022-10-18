@@ -1,7 +1,7 @@
 package typings.playable.anon
 
-import typings.playable.mediaStreamMod.MediaStreamDeliveryPriority
-import typings.playable.mediaStreamMod.MediaStreamType
+import typings.playable.distSrcConstantsMediaStreamMod.MediaStreamDeliveryPriority
+import typings.playable.distSrcConstantsMediaStreamMod.MediaStreamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

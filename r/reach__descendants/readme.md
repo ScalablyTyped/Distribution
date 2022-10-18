@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__descendants
 
-Typings are for version 0.17.0
+Typings are for version 0.18.0
 
 ## Library description:
 A descendant index solution for better accessibility support in compound components

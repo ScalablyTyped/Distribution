@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fullcalendar/common", "Interaction")
+/* note: abstract class */ @JSImport("@fullcalendar/common", "Interaction")
 @js.native
-abstract class Interaction protected () extends StObject {
+open class Interaction protected () extends StObject {
   def this(settings: InteractionSettings) = this()
   
   var component: DateComponent[Any, Dictionary] = js.native

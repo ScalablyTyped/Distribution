@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("couchbase", "SearchQuery")
+/* note: abstract class */ @JSImport("couchbase", "SearchQuery")
 @js.native
-abstract class SearchQuery () extends StObject {
+open class SearchQuery () extends StObject {
   
   /**
     * Adds a SearchFacet object to return information about as part of the execution of this query.
@@ -76,9 +76,9 @@ object SearchQuery {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("couchbase", "SearchQuery.BooleanFieldQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.BooleanFieldQuery")
   @js.native
-  abstract class BooleanFieldQuery () extends Query {
+  open class BooleanFieldQuery () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -93,9 +93,9 @@ object SearchQuery {
     def field(field: String): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.BooleanQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.BooleanQuery")
   @js.native
-  abstract class BooleanQuery () extends Query {
+  open class BooleanQuery () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -128,9 +128,9 @@ object SearchQuery {
     def shouldMin(shouldMin: Double): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.ConjunctionQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.ConjunctionQuery")
   @js.native
-  abstract class ConjunctionQuery () extends Query {
+  open class ConjunctionQuery () extends Query {
     
     /**
       * Specifies additional predicate queries.
@@ -172,9 +172,9 @@ object SearchQuery {
     /* 0 */ val NOT_BOUNDED: typings.couchbase.mod.SearchQuery.Consistency.NOT_BOUNDED & Double = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.DateRangeQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.DateRangeQuery")
   @js.native
-  abstract class DateRangeQuery () extends Query {
+  open class DateRangeQuery () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -209,9 +209,9 @@ object SearchQuery {
     def start(start: js.Date, inclusive: Boolean): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.DisjunctionQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.DisjunctionQuery")
   @js.native
-  abstract class DisjunctionQuery () extends Query {
+  open class DisjunctionQuery () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -231,9 +231,9 @@ object SearchQuery {
     def or(queries: js.Array[Query]): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.DocIdQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.DocIdQuery")
   @js.native
-  abstract class DocIdQuery () extends Query {
+  open class DocIdQuery () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -248,9 +248,9 @@ object SearchQuery {
     def field(field: String): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.GeoBoundingBoxQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.GeoBoundingBoxQuery")
   @js.native
-  abstract class GeoBoundingBoxQuery_ () extends Query {
+  open class GeoBoundingBoxQuery_ () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -265,9 +265,9 @@ object SearchQuery {
     def field(field: String): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.GeoDistanceQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.GeoDistanceQuery")
   @js.native
-  abstract class GeoDistanceQuery_ () extends Query {
+  open class GeoDistanceQuery_ () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -322,17 +322,17 @@ object SearchQuery {
     /* 1 */ val HTML: typings.couchbase.mod.SearchQuery.HighlightStyle.HTML & Double = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.MatchAllQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.MatchAllQuery")
   @js.native
-  abstract class MatchAllQuery () extends Query
+  open class MatchAllQuery () extends Query
   
-  @JSImport("couchbase", "SearchQuery.MatchNoneQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.MatchNoneQuery")
   @js.native
-  abstract class MatchNoneQuery () extends Query
+  open class MatchNoneQuery () extends Query
   
-  @JSImport("couchbase", "SearchQuery.MatchPhraseQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.MatchPhraseQuery")
   @js.native
-  abstract class MatchPhraseQuery () extends Query {
+  open class MatchPhraseQuery () extends Query {
     
     /**
       * Specifies the analyzer to use for the query.
@@ -353,9 +353,9 @@ object SearchQuery {
     def field(field: String): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.MatchQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.MatchQuery")
   @js.native
-  abstract class MatchQuery () extends Query {
+  open class MatchQuery () extends Query {
     
     /**
       * Specifies the analyzer to use for the query.
@@ -388,9 +388,9 @@ object SearchQuery {
     def prefixLength(prefixLength: Double): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.NumericRangeQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.NumericRangeQuery")
   @js.native
-  abstract class NumericRangeQuery () extends Query {
+  open class NumericRangeQuery () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -421,9 +421,9 @@ object SearchQuery {
     def min(min: Double, inclusive: Boolean): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.PhraseQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.PhraseQuery")
   @js.native
-  abstract class PhraseQuery () extends Query {
+  open class PhraseQuery () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -438,9 +438,9 @@ object SearchQuery {
     def field(field: String): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.PrefixQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.PrefixQuery")
   @js.native
-  abstract class PrefixQuery () extends Query {
+  open class PrefixQuery () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -455,13 +455,13 @@ object SearchQuery {
     def field(field: String): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.Query")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.Query")
   @js.native
-  abstract class Query () extends StObject
+  open class Query () extends StObject
   
-  @JSImport("couchbase", "SearchQuery.QueryStringQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.QueryStringQuery")
   @js.native
-  abstract class QueryStringQuery () extends Query {
+  open class QueryStringQuery () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -470,9 +470,9 @@ object SearchQuery {
     def boost(boost: Double): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.RegexpQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.RegexpQuery")
   @js.native
-  abstract class RegexpQuery () extends Query {
+  open class RegexpQuery () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -487,9 +487,9 @@ object SearchQuery {
     def field(field: String): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.TermQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.TermQuery")
   @js.native
-  abstract class TermQuery () extends Query {
+  open class TermQuery () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -516,9 +516,9 @@ object SearchQuery {
     def prefixLength(prefixLength: Double): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.TermRangeQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.TermRangeQuery")
   @js.native
-  abstract class TermRangeQuery () extends Query {
+  open class TermRangeQuery () extends Query {
     
     /**
       * Defines the amount to boost the query.
@@ -549,9 +549,9 @@ object SearchQuery {
     def min(min: String, inclusive: Boolean): this.type = js.native
   }
   
-  @JSImport("couchbase", "SearchQuery.WildcardQuery")
+  /* note: abstract class */ @JSImport("couchbase", "SearchQuery.WildcardQuery")
   @js.native
-  abstract class WildcardQuery () extends Query {
+  open class WildcardQuery () extends Query {
     
     /**
       * Defines the amount to boost the query.

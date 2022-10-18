@@ -1,21 +1,13 @@
 package typings.antDesignProLayout
 
-import typings.antDesignProLayout.baseMenuMod.MenuMode
-import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
-import typings.antDesignProLayout.localesMod.LocaleType
+import typings.antDesignProLayout.esComponentsSiderMenuBaseMenuMod.MenuMode
+import typings.antDesignProLayout.esDefaultSettingsMod.ContentWidth
+import typings.antDesignProLayout.esLocalesMod.LocaleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antDesignProLayoutStrings {
-  
-  @js.native
-  sealed trait BasicRouteProps extends StObject
-  inline def BasicRouteProps: BasicRouteProps = "BasicRouteProps".asInstanceOf[BasicRouteProps]
-  
-  @js.native
-  sealed trait DeepPartial extends StObject
-  inline def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   
   @js.native
   sealed trait Fixed
@@ -32,10 +24,6 @@ object antDesignProLayoutStrings {
   @js.native
   sealed trait _empty extends StObject
   inline def _empty: _empty = "".asInstanceOf[_empty]
-  
-  @js.native
-  sealed trait _internalDisableMenuItemTitleTooltip extends StObject
-  inline def _internalDisableMenuItemTitleTooltip: _internalDisableMenuItemTitleTooltip = "_internalDisableMenuItemTitleTooltip".asInstanceOf[_internalDisableMenuItemTitleTooltip]
   
   @js.native
   sealed trait _internalRenderMenuItem extends StObject

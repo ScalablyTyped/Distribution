@@ -1,7 +1,7 @@
 package typings.reactMonacoEditor.mod
 
 import typings.propTypes.mod.Requireable
-import typings.reactMonacoEditor.typesMod.MonacoEditorProps
+import typings.reactMonacoEditor.libTypesMod.MonacoEditorProps
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-monaco-editor", JSImport.Default)
 @js.native
 open class default protected ()
-  extends typings.reactMonacoEditor.editorMod.default {
+  extends typings.reactMonacoEditor.libEditorMod.default {
   def this(props: MonacoEditorProps) = this()
 }
 object default {

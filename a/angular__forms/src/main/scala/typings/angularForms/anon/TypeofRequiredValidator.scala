@@ -16,7 +16,7 @@ trait TypeofRequiredValidator
   
   var ɵdir: ɵɵDirectiveDeclaration[
     RequiredValidator, 
-    String, 
+    /* :not([type=checkbox])[required][formControlName],:not([type=checkbox])[required][formControl],:not([type=checkbox])[required][ngModel] */ String, 
     scala.Nothing, 
     Required, 
     js.Object, 

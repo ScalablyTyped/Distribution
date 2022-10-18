@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "TextInput")
 @js.native
 open class TextInput protected ()
-  extends typings.carbonComponents.componentsMod.TextInput {
+  extends typings.carbonComponents.globalsJsComponentsMod.TextInput {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialTextInputOptions) = this()
 }

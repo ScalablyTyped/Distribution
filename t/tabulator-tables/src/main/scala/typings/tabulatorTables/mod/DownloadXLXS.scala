@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DownloadXLXS extends StObject {
   
+  var compress: js.UndefOr[Boolean] = js.undefined
+  
   var documentProcessing: js.UndefOr[js.Function1[/* input */ Any, Any]] = js.undefined
   
   /** The sheet name must be a valid Excel sheet name, and cannot include any of the following characters \, /, *, [, ], :, */
@@ -19,6 +21,10 @@ object DownloadXLXS {
   }
   
   extension [Self <: DownloadXLXS](x: Self) {
+    
+    inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+    
+    inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
     inline def setDocumentProcessing(value: /* input */ Any => Any): Self = StObject.set(x, "documentProcessing", js.Any.fromFunction1(value))
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "AsyncLoop")
 @js.native
 open class AsyncLoop protected ()
-  extends typings.babylonjs.legacyMod.AsyncLoop {
+  extends typings.babylonjs.legacyLegacyMod.AsyncLoop {
   /**
     * Constructor.
     * @param iterations the number of iterations.
@@ -20,7 +20,7 @@ open class AsyncLoop protected ()
     * Defines the number of iterations for the loop
     */
   iterations: Double,
-    func: js.Function1[/* asyncLoop */ typings.babylonjs.toolsMod.AsyncLoop, Unit],
+    func: js.Function1[/* asyncLoop */ typings.babylonjs.miscToolsMod.AsyncLoop, Unit],
     successCallback: js.Function0[Unit]
   ) = this()
   def this(
@@ -28,7 +28,7 @@ open class AsyncLoop protected ()
     * Defines the number of iterations for the loop
     */
   iterations: Double,
-    func: js.Function1[/* asyncLoop */ typings.babylonjs.toolsMod.AsyncLoop, Unit],
+    func: js.Function1[/* asyncLoop */ typings.babylonjs.miscToolsMod.AsyncLoop, Unit],
     successCallback: js.Function0[Unit],
     offset: Double
   ) = this()
@@ -52,13 +52,13 @@ object AsyncLoop {
     iterations: Double,
     fn: js.Function1[/* asyncLoop */ this.type, Unit],
     successCallback: js.Function0[Unit]
-  ): typings.babylonjs.toolsMod.AsyncLoop = (^.asInstanceOf[js.Dynamic].applyDynamic("Run")(iterations.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.toolsMod.AsyncLoop]
+  ): typings.babylonjs.miscToolsMod.AsyncLoop = (^.asInstanceOf[js.Dynamic].applyDynamic("Run")(iterations.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.miscToolsMod.AsyncLoop]
   inline def Run(
     iterations: Double,
     fn: js.Function1[/* asyncLoop */ this.type, Unit],
     successCallback: js.Function0[Unit],
     offset: Double
-  ): typings.babylonjs.toolsMod.AsyncLoop = (^.asInstanceOf[js.Dynamic].applyDynamic("Run")(iterations.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.toolsMod.AsyncLoop]
+  ): typings.babylonjs.miscToolsMod.AsyncLoop = (^.asInstanceOf[js.Dynamic].applyDynamic("Run")(iterations.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.miscToolsMod.AsyncLoop]
   
   /**
     * A for-loop that will run a given number of iterations synchronous and the rest async.
@@ -75,14 +75,14 @@ object AsyncLoop {
     syncedIterations: Double,
     fn: js.Function1[/* iteration */ Double, Unit],
     callback: js.Function0[Unit]
-  ): typings.babylonjs.toolsMod.AsyncLoop = (^.asInstanceOf[js.Dynamic].applyDynamic("SyncAsyncForLoop")(iterations.asInstanceOf[js.Any], syncedIterations.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.toolsMod.AsyncLoop]
+  ): typings.babylonjs.miscToolsMod.AsyncLoop = (^.asInstanceOf[js.Dynamic].applyDynamic("SyncAsyncForLoop")(iterations.asInstanceOf[js.Any], syncedIterations.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.miscToolsMod.AsyncLoop]
   inline def SyncAsyncForLoop(
     iterations: Double,
     syncedIterations: Double,
     fn: js.Function1[/* iteration */ Double, Unit],
     callback: js.Function0[Unit],
     breakFunction: js.Function0[Boolean]
-  ): typings.babylonjs.toolsMod.AsyncLoop = (^.asInstanceOf[js.Dynamic].applyDynamic("SyncAsyncForLoop")(iterations.asInstanceOf[js.Any], syncedIterations.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], breakFunction.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.toolsMod.AsyncLoop]
+  ): typings.babylonjs.miscToolsMod.AsyncLoop = (^.asInstanceOf[js.Dynamic].applyDynamic("SyncAsyncForLoop")(iterations.asInstanceOf[js.Any], syncedIterations.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], breakFunction.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.miscToolsMod.AsyncLoop]
   inline def SyncAsyncForLoop(
     iterations: Double,
     syncedIterations: Double,
@@ -90,7 +90,7 @@ object AsyncLoop {
     callback: js.Function0[Unit],
     breakFunction: js.Function0[Boolean],
     timeout: Double
-  ): typings.babylonjs.toolsMod.AsyncLoop = (^.asInstanceOf[js.Dynamic].applyDynamic("SyncAsyncForLoop")(iterations.asInstanceOf[js.Any], syncedIterations.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], breakFunction.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.toolsMod.AsyncLoop]
+  ): typings.babylonjs.miscToolsMod.AsyncLoop = (^.asInstanceOf[js.Dynamic].applyDynamic("SyncAsyncForLoop")(iterations.asInstanceOf[js.Any], syncedIterations.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], breakFunction.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.miscToolsMod.AsyncLoop]
   inline def SyncAsyncForLoop(
     iterations: Double,
     syncedIterations: Double,
@@ -98,5 +98,5 @@ object AsyncLoop {
     callback: js.Function0[Unit],
     breakFunction: Unit,
     timeout: Double
-  ): typings.babylonjs.toolsMod.AsyncLoop = (^.asInstanceOf[js.Dynamic].applyDynamic("SyncAsyncForLoop")(iterations.asInstanceOf[js.Any], syncedIterations.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], breakFunction.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.toolsMod.AsyncLoop]
+  ): typings.babylonjs.miscToolsMod.AsyncLoop = (^.asInstanceOf[js.Dynamic].applyDynamic("SyncAsyncForLoop")(iterations.asInstanceOf[js.Any], syncedIterations.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], breakFunction.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.miscToolsMod.AsyncLoop]
 }

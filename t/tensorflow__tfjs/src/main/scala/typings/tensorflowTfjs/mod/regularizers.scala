@@ -1,9 +1,9 @@
 package typings.tensorflowTfjs.mod
 
-import typings.tensorflowTfjsLayers.regularizersMod.L1Args
-import typings.tensorflowTfjsLayers.regularizersMod.L1L2Args
-import typings.tensorflowTfjsLayers.regularizersMod.L2Args
-import typings.tensorflowTfjsLayers.regularizersMod.Regularizer
+import typings.tensorflowTfjsLayers.distRegularizersMod.L1Args
+import typings.tensorflowTfjsLayers.distRegularizersMod.L1L2Args
+import typings.tensorflowTfjsLayers.distRegularizersMod.L2Args
+import typings.tensorflowTfjsLayers.distRegularizersMod.Regularizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,14 +1,15 @@
 package typings.googleCloudFirestore
 
+import typings.googleCloudFirestore.FirebaseFirestore.AggregateSpec
+import typings.googleCloudFirestore.FirebaseFirestore.AggregateSpecData
 import typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus
 import typings.googleCloudFirestore.FirebaseFirestore.Settings
-import typings.googleCloudFirestore.anon.Instantiable
-import typings.googleCloudFirestore.anon.TypeofFirestoreAdminClien
+import typings.googleCloudFirestore.anon.TypeofFirestoreClient
 import typings.googleCloudFirestore.googleCloudFirestoreStrings.create
 import typings.googleCloudFirestore.googleCloudFirestoreStrings.delete
 import typings.googleCloudFirestore.googleCloudFirestoreStrings.set
 import typings.googleCloudFirestore.googleCloudFirestoreStrings.update
-import typings.googleGax.clientInterfaceMod.ClientOptions
+import typings.googleGax.buildSrcClientInterfaceMod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +19,89 @@ object mod {
   @JSImport("@google-cloud/firestore", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("@google-cloud/firestore", "AggregateField")
+  @js.native
+  /* private */ open class AggregateField[T] ()
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.AggregateField[T]
+  
+  @JSImport("@google-cloud/firestore", "AggregateQuery")
+  @js.native
+  /* private */ open class AggregateQuery[T /* <: AggregateSpec */] ()
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.AggregateQuery[T] {
+    
+    /**
+      * Executes this query.
+      *
+      * @return A promise that will be resolved with the results of the query.
+      */
+    /* CompleteClass */
+    override def get(): js.Promise[typings.googleCloudFirestore.FirebaseFirestore.AggregateQuerySnapshot[T]] = js.native
+    
+    /**
+      * Compares this object with the given object for equality.
+      *
+      * This object is considered "equal" to the other object if and only if
+      * `other` performs the same aggregations as this `AggregateQuery` and
+      * the underlying Query of `other` compares equal to that of this object
+      * using `Query.isEqual()`.
+      *
+      * @param other The object to compare to this object for equality.
+      * @return `true` if this object is "equal" to the given object, as
+      * defined above, or `false` otherwise.
+      */
+    /* CompleteClass */
+    override def isEqual(other: typings.googleCloudFirestore.FirebaseFirestore.AggregateQuery[T]): Boolean = js.native
+    
+    /** The query whose aggregations will be calculated by this object. */
+    /* CompleteClass */
+    override val query: typings.googleCloudFirestore.FirebaseFirestore.Query[Any] = js.native
+  }
+  
+  @JSImport("@google-cloud/firestore", "AggregateQuerySnapshot")
+  @js.native
+  /* private */ open class AggregateQuerySnapshot[T /* <: AggregateSpec */] ()
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.AggregateQuerySnapshot[T] {
+    
+    /**
+      * Returns the results of the aggregations performed over the underlying
+      * query.
+      *
+      * The keys of the returned object will be the same as those of the
+      * `AggregateSpec` object specified to the aggregation method, and the
+      * values will be the corresponding aggregation result.
+      *
+      * @returns The results of the aggregations performed over the underlying
+      * query.
+      */
+    /* CompleteClass */
+    override def data(): AggregateSpecData[T] = js.native
+    
+    /**
+      * Compares this object with the given object for equality.
+      *
+      * Two `AggregateQuerySnapshot` instances are considered "equal" if they
+      * have the same data and their underlying queries compare "equal" using
+      * `AggregateQuery.isEqual()`.
+      *
+      * @param other The object to compare to this object for equality.
+      * @return `true` if this object is "equal" to the given object, as
+      * defined above, or `false` otherwise.
+      */
+    /* CompleteClass */
+    override def isEqual(other: typings.googleCloudFirestore.FirebaseFirestore.AggregateQuerySnapshot[T]): Boolean = js.native
+    
+    /** The query that was executed to produce this result. */
+    /* CompleteClass */
+    override val query: typings.googleCloudFirestore.FirebaseFirestore.AggregateQuery[T] = js.native
+    
+    /** The time this snapshot was read. */
+    /* CompleteClass */
+    override val readTime: typings.googleCloudFirestore.FirebaseFirestore.Timestamp = js.native
+  }
   
   @JSImport("@google-cloud/firestore", "BulkWriter")
   @js.native
@@ -454,51 +538,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@google-cloud/firestore", "v1.FirestoreAdminClient")
     @js.native
-    /**
-      * Construct an instance of FirestoreAdminClient.
-      *
-      * @param {object} [options] - The configuration object.
-      * The options accepted by the constructor are described in detail
-      * in [this document](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#creating-the-client-instance).
-      * The common options are:
-      * @param {object} [options.credentials] - Credentials object.
-      * @param {string} [options.credentials.client_email]
-      * @param {string} [options.credentials.private_key]
-      * @param {string} [options.email] - Account email address. Required when
-      *     using a .pem or .p12 keyFilename.
-      * @param {string} [options.keyFilename] - Full path to the a .json, .pem, or
-      *     .p12 key downloaded from the Google Developers Console. If you provide
-      *     a path to a JSON file, the projectId option below is not necessary.
-      *     NOTE: .pem and .p12 require you to specify options.email as well.
-      * @param {number} [options.port] - The port on which to connect to
-      *     the remote host.
-      * @param {string} [options.projectId] - The project ID from the Google
-      *     Developer's Console, e.g. 'grape-spaceship-123'. We will also check
-      *     the environment variable GCLOUD_PROJECT for your project ID. If your
-      *     app is running in an environment which supports
-      *     {@link https://developers.google.com/identity/protocols/application-default-credentials Application Default Credentials},
-      *     your project ID will be detected automatically.
-      * @param {string} [options.apiEndpoint] - The domain name of the
-      *     API remote host.
-      * @param {gax.ClientConfig} [options.clientConfig] - Client configuration override.
-      *     Follows the structure of {@link gapicConfig}.
-      * @param {boolean} [options.fallback] - Use HTTP fallback mode.
-      *     In fallback mode, a special browser-compatible transport implementation is used
-      *     instead of gRPC transport. In browser context (if the `window` object is defined)
-      *     the fallback mode is enabled automatically; set `options.fallback` to `false`
-      *     if you need to override this behavior.
-      */
-    open class FirestoreAdminClient ()
-      extends typings.googleCloudFirestore.firestoreAdminClientMod.FirestoreAdminClient {
-      def this(opts: ClientOptions) = this()
-    }
-    @JSImport("@google-cloud/firestore", "v1.FirestoreAdminClient")
-    @js.native
-    def FirestoreAdminClient: TypeofFirestoreAdminClien = js.native
-    inline def FirestoreAdminClient_=(x: TypeofFirestoreAdminClien): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreAdminClient")(x.asInstanceOf[js.Any])
+    def FirestoreAdminClient: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imported_firestore_admin_client.FirestoreAdminClient */ Any = js.native
+    inline def FirestoreAdminClient_=(
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imported_firestore_admin_client.FirestoreAdminClient */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreAdminClient")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@google-cloud/firestore", "v1.FirestoreClient")
@@ -538,13 +583,13 @@ object mod {
       *     if you need to override this behavior.
       */
     open class FirestoreClient ()
-      extends typings.googleCloudFirestore.v1FirestoreClientMod.FirestoreClient {
+      extends typings.googleCloudFirestore.typesV1beta1FirestoreClientMod.FirestoreClient {
       def this(opts: ClientOptions) = this()
     }
     @JSImport("@google-cloud/firestore", "v1.FirestoreClient")
     @js.native
-    def FirestoreClient: Instantiable = js.native
-    inline def FirestoreClient_=(x: Instantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreClient")(x.asInstanceOf[js.Any])
+    def FirestoreClient: TypeofFirestoreClient = js.native
+    inline def FirestoreClient_=(x: TypeofFirestoreClient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreClient")(x.asInstanceOf[js.Any])
   }
   
   object v1beta1 {
@@ -591,12 +636,12 @@ object mod {
       *     if you need to override this behavior.
       */
     open class FirestoreClient ()
-      extends typings.googleCloudFirestore.v1FirestoreClientMod.FirestoreClient {
+      extends typings.googleCloudFirestore.typesV1beta1FirestoreClientMod.FirestoreClient {
       def this(opts: ClientOptions) = this()
     }
     @JSImport("@google-cloud/firestore", "v1beta1.FirestoreClient")
     @js.native
-    def FirestoreClient: Instantiable = js.native
-    inline def FirestoreClient_=(x: Instantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreClient")(x.asInstanceOf[js.Any])
+    def FirestoreClient: TypeofFirestoreClient = js.native
+    inline def FirestoreClient_=(x: TypeofFirestoreClient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreClient")(x.asInstanceOf[js.Any])
   }
 }

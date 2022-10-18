@@ -5,10 +5,6 @@ import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.integer
 import typings.chromeApps.chromeAppsStrings.REMOVABLE
 import typings.chromeApps.chromeAppsStrings.UNKNOWN
-import typings.chromeApps.chromeAppsStrings.fixed_
-import typings.chromeApps.chromeAppsStrings.removable_
-import typings.chromeApps.chromeAppsStrings.unknown__
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,10 +67,7 @@ object storage {
     var `type`: ToStringLiteral[
         FIXED, 
         /* keyof chrome-apps.anon.FIXED */ typings.chromeApps.chromeAppsStrings.FIXED | REMOVABLE | UNKNOWN, 
-        Exclude[
-          /* keyof chrome-apps.anon.FIXED */ typings.chromeApps.chromeAppsStrings.FIXED | REMOVABLE | UNKNOWN, 
-          fixed_ | removable_ | unknown__
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  FIXED :'fixed',   REMOVABLE :'removable',   UNKNOWN :'unknown'} extends keyof {  FIXED :'fixed',   REMOVABLE :'removable',   UNKNOWN :'unknown'} ? std.Exclude<keyof {  FIXED :'fixed',   REMOVABLE :'removable',   UNKNOWN :'unknown'}, 'fixed' | 'removable' | 'unknown'> : never */ js.Any
       ]
   }
   object StorageUnitInfo {
@@ -86,10 +79,7 @@ object storage {
       `type`: ToStringLiteral[
           FIXED, 
           /* keyof chrome-apps.anon.FIXED */ typings.chromeApps.chromeAppsStrings.FIXED | REMOVABLE | UNKNOWN, 
-          Exclude[
-            /* keyof chrome-apps.anon.FIXED */ typings.chromeApps.chromeAppsStrings.FIXED | REMOVABLE | UNKNOWN, 
-            fixed_ | removable_ | unknown__
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  FIXED :'fixed',   REMOVABLE :'removable',   UNKNOWN :'unknown'} extends keyof {  FIXED :'fixed',   REMOVABLE :'removable',   UNKNOWN :'unknown'} ? std.Exclude<keyof {  FIXED :'fixed',   REMOVABLE :'removable',   UNKNOWN :'unknown'}, 'fixed' | 'removable' | 'unknown'> : never */ js.Any
         ]
     ): StorageUnitInfo = {
       val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
@@ -109,10 +99,7 @@ object storage {
         value: ToStringLiteral[
               FIXED, 
               /* keyof chrome-apps.anon.FIXED */ typings.chromeApps.chromeAppsStrings.FIXED | REMOVABLE | UNKNOWN, 
-              Exclude[
-                /* keyof chrome-apps.anon.FIXED */ typings.chromeApps.chromeAppsStrings.FIXED | REMOVABLE | UNKNOWN, 
-                fixed_ | removable_ | unknown__
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  FIXED :'fixed',   REMOVABLE :'removable',   UNKNOWN :'unknown'} extends keyof {  FIXED :'fixed',   REMOVABLE :'removable',   UNKNOWN :'unknown'} ? std.Exclude<keyof {  FIXED :'fixed',   REMOVABLE :'removable',   UNKNOWN :'unknown'}, 'fixed' | 'removable' | 'unknown'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

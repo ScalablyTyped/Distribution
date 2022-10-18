@@ -1,8 +1,8 @@
 package typings.mapboxMapboxSdk.anon
 
-import typings.mapboxMapboxSdk.directionsMod.DirectionsProfileExclusion
 import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling
 import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.ferry
+import typings.mapboxMapboxSdk.servicesDirectionsMod.DirectionsProfileExclusion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

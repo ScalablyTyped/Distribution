@@ -54,6 +54,15 @@ object mod {
     var delayTransientStatuses: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * If true, starts DynamoDB using docker, e.g.
+      * docker run -d -p 8000:8000 amazon/dynamodb-local -jar DynamoDBLocal.jar -port 8000 -sharedDb -inMemory
+      * The docker executable may be customized using process.env.DOCKER_PATH, and the docker image through
+      * process.env.DOCKER_IMAGE.
+      * Default: false
+      */
+    var docker: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * A string which sets the initial heap size e.g., '2048m'. This is input to the java -Xms argument
       */
     var heapInitial: js.UndefOr[String] = js.undefined
@@ -108,6 +117,10 @@ object mod {
       inline def setDelayTransientStatuses(value: Boolean): Self = StObject.set(x, "delayTransientStatuses", value.asInstanceOf[js.Any])
       
       inline def setDelayTransientStatusesUndefined: Self = StObject.set(x, "delayTransientStatuses", js.undefined)
+      
+      inline def setDocker(value: Boolean): Self = StObject.set(x, "docker", value.asInstanceOf[js.Any])
+      
+      inline def setDockerUndefined: Self = StObject.set(x, "docker", js.undefined)
       
       inline def setHeapInitial(value: String): Self = StObject.set(x, "heapInitial", value.asInstanceOf[js.Any])
       

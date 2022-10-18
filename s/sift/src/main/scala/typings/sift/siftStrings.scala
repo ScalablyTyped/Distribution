@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object siftStrings {
   
   @js.native
-  sealed trait ShapeQuery extends StObject
-  inline def ShapeQuery: ShapeQuery = "ShapeQuery".asInstanceOf[ShapeQuery]
-  
-  @js.native
   sealed trait g extends StObject
   inline def g: g = "g".asInstanceOf[g]
   

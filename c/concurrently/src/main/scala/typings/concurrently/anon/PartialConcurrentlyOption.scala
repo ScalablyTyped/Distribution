@@ -1,10 +1,10 @@
 package typings.concurrently.anon
 
-import typings.concurrently.commandMod.ChildProcess
-import typings.concurrently.commandMod.KillProcess
-import typings.concurrently.commandMod.SpawnCommand
-import typings.concurrently.completionListenerMod.SuccessCondition
-import typings.concurrently.flowControllerMod.FlowController
+import typings.concurrently.distSrcCommandMod.ChildProcess
+import typings.concurrently.distSrcCommandMod.KillProcess
+import typings.concurrently.distSrcCommandMod.SpawnCommand
+import typings.concurrently.distSrcCompletionListenerMod.SuccessCondition
+import typings.concurrently.distSrcFlowControlFlowControllerMod.FlowController
 import typings.node.childProcessMod.SpawnOptions
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
@@ -24,7 +24,7 @@ trait PartialConcurrentlyOption extends StObject {
   
   var kill: js.UndefOr[KillProcess] = js.undefined
   
-  var logger: js.UndefOr[typings.concurrently.loggerMod.Logger] = js.undefined
+  var logger: js.UndefOr[typings.concurrently.distSrcLoggerMod.Logger] = js.undefined
   
   var maxProcesses: js.UndefOr[Double] = js.undefined
   
@@ -71,7 +71,7 @@ object PartialConcurrentlyOption {
     
     inline def setKillUndefined: Self = StObject.set(x, "kill", js.undefined)
     
-    inline def setLogger(value: typings.concurrently.loggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: typings.concurrently.distSrcLoggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     

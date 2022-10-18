@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientPeople.gapi.client.people
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait BatchUpdateContactsRequest extends StObject {
   
   /** Required. A map of resource names to the person data to be updated. Allows up to 200 contacts in a single request. */
   var contacts: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.people.gapi.client.people.Person}
-    */ typings.maximMazurokGapiClientPeople.maximMazurokGapiClientPeopleStrings.BatchUpdateContactsRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.people.gapi.client.people.Person} */ js.Any
   ] = js.undefined
   
   /**
@@ -43,9 +40,7 @@ object BatchUpdateContactsRequest {
   extension [Self <: BatchUpdateContactsRequest](x: Self) {
     
     inline def setContacts(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.people.gapi.client.people.Person}
-      */ typings.maximMazurokGapiClientPeople.maximMazurokGapiClientPeopleStrings.BatchUpdateContactsRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.people.gapi.client.people.Person} */ js.Any
     ): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
     inline def setContactsUndefined: Self = StObject.set(x, "contacts", js.undefined)

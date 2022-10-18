@@ -1,10 +1,10 @@
 package typings.reactNavigationStack.anon
 
 import typings.reactNavigation.mod.NavigationState
-import typings.reactNavigationStack.vendorTypesMod.StackCardMode
-import typings.reactNavigationStack.vendorTypesMod.StackDescriptorMap
-import typings.reactNavigationStack.vendorTypesMod.StackHeaderMode
-import typings.reactNavigationStack.vendorTypesMod.StackNavigationHelpers
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackCardMode
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackDescriptorMap
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackHeaderMode
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackNavigationHelpers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webgpuTypes.webgpuTypesStrings.`indirect-first-instance`
   - typings.webgpuTypes.webgpuTypesStrings.`shader-f16`
   - typings.webgpuTypes.webgpuTypesStrings.`bgra8unorm-storage`
+  - typings.webgpuTypes.webgpuTypesStrings.`rg11b10ufloat-renderable`
 */
 trait GPUFeatureName extends StObject
 object GPUFeatureName {
@@ -25,6 +26,8 @@ object GPUFeatureName {
   inline def `depth32float-stencil8`: typings.webgpuTypes.webgpuTypesStrings.`depth32float-stencil8` = "depth32float-stencil8".asInstanceOf[typings.webgpuTypes.webgpuTypesStrings.`depth32float-stencil8`]
   
   inline def `indirect-first-instance`: typings.webgpuTypes.webgpuTypesStrings.`indirect-first-instance` = "indirect-first-instance".asInstanceOf[typings.webgpuTypes.webgpuTypesStrings.`indirect-first-instance`]
+  
+  inline def `rg11b10ufloat-renderable`: typings.webgpuTypes.webgpuTypesStrings.`rg11b10ufloat-renderable` = "rg11b10ufloat-renderable".asInstanceOf[typings.webgpuTypes.webgpuTypesStrings.`rg11b10ufloat-renderable`]
   
   inline def `shader-f16`: typings.webgpuTypes.webgpuTypesStrings.`shader-f16` = "shader-f16".asInstanceOf[typings.webgpuTypes.webgpuTypesStrings.`shader-f16`]
   

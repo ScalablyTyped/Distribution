@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@tanem/svg-injector" : "10.1.33"
+      "@tanem/svg-injector" : "10.1.34"
     }
   ],
   "test-dependencies" : [
     {
-      "@tanem/svg-injector" : "10.1.33"
+      "@tanem/svg-injector" : "10.1.34"
     }
   ],
   "compile-devDependencies" : [

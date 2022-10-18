@@ -1,10 +1,10 @@
 package typings.semanticUiReact.mod
 
 import typings.react.mod.FC
-import typings.semanticUiReact.buttonButtonMod.default
-import typings.semanticUiReact.buttonContentMod.ButtonContentProps
-import typings.semanticUiReact.buttonGroupMod.ButtonGroupProps
-import typings.semanticUiReact.buttonOrMod.ButtonOrProps
+import typings.semanticUiReact.distCommonjsElementsButtonButtonContentMod.ButtonContentProps
+import typings.semanticUiReact.distCommonjsElementsButtonButtonGroupMod.ButtonGroupProps
+import typings.semanticUiReact.distCommonjsElementsButtonButtonMod.default
+import typings.semanticUiReact.distCommonjsElementsButtonButtonOrMod.ButtonOrProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

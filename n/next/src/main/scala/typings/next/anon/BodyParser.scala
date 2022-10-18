@@ -20,6 +20,13 @@ trait BodyParser extends StObject {
     * using an external API resolver, like express
     */
   var externalResolver: js.UndefOr[`true`] = js.undefined
+  
+  /**
+    * Configures or disables body size limit warning. Can take a number or
+    * any string format supported by `bytes`, for example `1000`, `'500kb'` or
+    * `'3mb'`.
+    */
+  var responseLimit: js.UndefOr[Double | String | Boolean] = js.undefined
 }
 object BodyParser {
   
@@ -37,5 +44,9 @@ object BodyParser {
     inline def setExternalResolver(value: `true`): Self = StObject.set(x, "externalResolver", value.asInstanceOf[js.Any])
     
     inline def setExternalResolverUndefined: Self = StObject.set(x, "externalResolver", js.undefined)
+    
+    inline def setResponseLimit(value: Double | String | Boolean): Self = StObject.set(x, "responseLimit", value.asInstanceOf[js.Any])
+    
+    inline def setResponseLimitUndefined: Self = StObject.set(x, "responseLimit", js.undefined)
   }
 }

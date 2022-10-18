@@ -1,26 +1,26 @@
 package typings.expoLocation
 
 import typings.expoLocation.anon.PickLocationGeocodedLocat
-import typings.expoLocation.locationTypesMod.LocationAccuracy
-import typings.expoLocation.locationTypesMod.LocationActivityType
-import typings.expoLocation.locationTypesMod.LocationCallback
-import typings.expoLocation.locationTypesMod.LocationGeocodedAddress
-import typings.expoLocation.locationTypesMod.LocationGeocodedLocation
-import typings.expoLocation.locationTypesMod.LocationGeocodingOptions
-import typings.expoLocation.locationTypesMod.LocationGeofencingEventType
-import typings.expoLocation.locationTypesMod.LocationGeofencingRegionState
-import typings.expoLocation.locationTypesMod.LocationHeadingCallback
-import typings.expoLocation.locationTypesMod.LocationHeadingObject
-import typings.expoLocation.locationTypesMod.LocationLastKnownOptions
-import typings.expoLocation.locationTypesMod.LocationObject
-import typings.expoLocation.locationTypesMod.LocationOptions
-import typings.expoLocation.locationTypesMod.LocationPermissionResponse
-import typings.expoLocation.locationTypesMod.LocationProviderStatus
-import typings.expoLocation.locationTypesMod.LocationRegion
-import typings.expoLocation.locationTypesMod.LocationSubscription
-import typings.expoLocation.locationTypesMod.LocationTaskOptions
-import typings.expoModulesCore.permissionsHookMod.PermissionHookOptions
-import typings.expoModulesCore.permissionsInterfaceMod.PermissionResponse
+import typings.expoLocation.buildLocationDottypesMod.LocationAccuracy
+import typings.expoLocation.buildLocationDottypesMod.LocationActivityType
+import typings.expoLocation.buildLocationDottypesMod.LocationCallback
+import typings.expoLocation.buildLocationDottypesMod.LocationGeocodedAddress
+import typings.expoLocation.buildLocationDottypesMod.LocationGeocodedLocation
+import typings.expoLocation.buildLocationDottypesMod.LocationGeocodingOptions
+import typings.expoLocation.buildLocationDottypesMod.LocationGeofencingEventType
+import typings.expoLocation.buildLocationDottypesMod.LocationGeofencingRegionState
+import typings.expoLocation.buildLocationDottypesMod.LocationHeadingCallback
+import typings.expoLocation.buildLocationDottypesMod.LocationHeadingObject
+import typings.expoLocation.buildLocationDottypesMod.LocationLastKnownOptions
+import typings.expoLocation.buildLocationDottypesMod.LocationObject
+import typings.expoLocation.buildLocationDottypesMod.LocationOptions
+import typings.expoLocation.buildLocationDottypesMod.LocationPermissionResponse
+import typings.expoLocation.buildLocationDottypesMod.LocationProviderStatus
+import typings.expoLocation.buildLocationDottypesMod.LocationRegion
+import typings.expoLocation.buildLocationDottypesMod.LocationSubscription
+import typings.expoLocation.buildLocationDottypesMod.LocationTaskOptions
+import typings.expoModulesCore.buildPermissionsHookMod.PermissionHookOptions
+import typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,17 +38,17 @@ object mod {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LocationAccuracy & Double] = js.native
     
-    /* 3 */ val Balanced: typings.expoLocation.locationTypesMod.LocationAccuracy.Balanced & Double = js.native
+    /* 3 */ val Balanced: typings.expoLocation.buildLocationDottypesMod.LocationAccuracy.Balanced & Double = js.native
     
-    /* 6 */ val BestForNavigation: typings.expoLocation.locationTypesMod.LocationAccuracy.BestForNavigation & Double = js.native
+    /* 6 */ val BestForNavigation: typings.expoLocation.buildLocationDottypesMod.LocationAccuracy.BestForNavigation & Double = js.native
     
-    /* 4 */ val High: typings.expoLocation.locationTypesMod.LocationAccuracy.High & Double = js.native
+    /* 4 */ val High: typings.expoLocation.buildLocationDottypesMod.LocationAccuracy.High & Double = js.native
     
-    /* 5 */ val Highest: typings.expoLocation.locationTypesMod.LocationAccuracy.Highest & Double = js.native
+    /* 5 */ val Highest: typings.expoLocation.buildLocationDottypesMod.LocationAccuracy.Highest & Double = js.native
     
-    /* 2 */ val Low: typings.expoLocation.locationTypesMod.LocationAccuracy.Low & Double = js.native
+    /* 2 */ val Low: typings.expoLocation.buildLocationDottypesMod.LocationAccuracy.Low & Double = js.native
     
-    /* 1 */ val Lowest: typings.expoLocation.locationTypesMod.LocationAccuracy.Lowest & Double = js.native
+    /* 1 */ val Lowest: typings.expoLocation.buildLocationDottypesMod.LocationAccuracy.Lowest & Double = js.native
   }
   
   @JSImport("expo-location", "ActivityType")
@@ -58,15 +58,15 @@ object mod {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LocationActivityType & Double] = js.native
     
-    /* 5 */ val Airborne: typings.expoLocation.locationTypesMod.LocationActivityType.Airborne & Double = js.native
+    /* 5 */ val Airborne: typings.expoLocation.buildLocationDottypesMod.LocationActivityType.Airborne & Double = js.native
     
-    /* 2 */ val AutomotiveNavigation: typings.expoLocation.locationTypesMod.LocationActivityType.AutomotiveNavigation & Double = js.native
+    /* 2 */ val AutomotiveNavigation: typings.expoLocation.buildLocationDottypesMod.LocationActivityType.AutomotiveNavigation & Double = js.native
     
-    /* 3 */ val Fitness: typings.expoLocation.locationTypesMod.LocationActivityType.Fitness & Double = js.native
+    /* 3 */ val Fitness: typings.expoLocation.buildLocationDottypesMod.LocationActivityType.Fitness & Double = js.native
     
-    /* 1 */ val Other: typings.expoLocation.locationTypesMod.LocationActivityType.Other & Double = js.native
+    /* 1 */ val Other: typings.expoLocation.buildLocationDottypesMod.LocationActivityType.Other & Double = js.native
     
-    /* 4 */ val OtherNavigation: typings.expoLocation.locationTypesMod.LocationActivityType.OtherNavigation & Double = js.native
+    /* 4 */ val OtherNavigation: typings.expoLocation.buildLocationDottypesMod.LocationActivityType.OtherNavigation & Double = js.native
   }
   
   @JSImport("expo-location", "EventEmitter")
@@ -80,9 +80,9 @@ object mod {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LocationGeofencingEventType & Double] = js.native
     
-    /* 1 */ val Enter: typings.expoLocation.locationTypesMod.LocationGeofencingEventType.Enter & Double = js.native
+    /* 1 */ val Enter: typings.expoLocation.buildLocationDottypesMod.LocationGeofencingEventType.Enter & Double = js.native
     
-    /* 2 */ val Exit: typings.expoLocation.locationTypesMod.LocationGeofencingEventType.Exit & Double = js.native
+    /* 2 */ val Exit: typings.expoLocation.buildLocationDottypesMod.LocationGeofencingEventType.Exit & Double = js.native
   }
   
   @JSImport("expo-location", "GeofencingRegionState")
@@ -92,11 +92,11 @@ object mod {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LocationGeofencingRegionState & Double] = js.native
     
-    /* 1 */ val Inside: typings.expoLocation.locationTypesMod.LocationGeofencingRegionState.Inside & Double = js.native
+    /* 1 */ val Inside: typings.expoLocation.buildLocationDottypesMod.LocationGeofencingRegionState.Inside & Double = js.native
     
-    /* 2 */ val Outside: typings.expoLocation.locationTypesMod.LocationGeofencingRegionState.Outside & Double = js.native
+    /* 2 */ val Outside: typings.expoLocation.buildLocationDottypesMod.LocationGeofencingRegionState.Outside & Double = js.native
     
-    /* 0 */ val Unknown: typings.expoLocation.locationTypesMod.LocationGeofencingRegionState.Unknown & Double = js.native
+    /* 0 */ val Unknown: typings.expoLocation.buildLocationDottypesMod.LocationGeofencingRegionState.Unknown & Double = js.native
   }
   
   @JSImport("expo-location", "LocationAccuracy")
@@ -104,19 +104,19 @@ object mod {
   object LocationAccuracy extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.expoLocation.locationTypesMod.LocationAccuracy & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.expoLocation.buildLocationDottypesMod.LocationAccuracy & Double] = js.native
     
-    /* 3 */ val Balanced: typings.expoLocation.locationTypesMod.LocationAccuracy.Balanced & Double = js.native
+    /* 3 */ val Balanced: typings.expoLocation.buildLocationDottypesMod.LocationAccuracy.Balanced & Double = js.native
     
-    /* 6 */ val BestForNavigation: typings.expoLocation.locationTypesMod.LocationAccuracy.BestForNavigation & Double = js.native
+    /* 6 */ val BestForNavigation: typings.expoLocation.buildLocationDottypesMod.LocationAccuracy.BestForNavigation & Double = js.native
     
-    /* 4 */ val High: typings.expoLocation.locationTypesMod.LocationAccuracy.High & Double = js.native
+    /* 4 */ val High: typings.expoLocation.buildLocationDottypesMod.LocationAccuracy.High & Double = js.native
     
-    /* 5 */ val Highest: typings.expoLocation.locationTypesMod.LocationAccuracy.Highest & Double = js.native
+    /* 5 */ val Highest: typings.expoLocation.buildLocationDottypesMod.LocationAccuracy.Highest & Double = js.native
     
-    /* 2 */ val Low: typings.expoLocation.locationTypesMod.LocationAccuracy.Low & Double = js.native
+    /* 2 */ val Low: typings.expoLocation.buildLocationDottypesMod.LocationAccuracy.Low & Double = js.native
     
-    /* 1 */ val Lowest: typings.expoLocation.locationTypesMod.LocationAccuracy.Lowest & Double = js.native
+    /* 1 */ val Lowest: typings.expoLocation.buildLocationDottypesMod.LocationAccuracy.Lowest & Double = js.native
   }
   
   @JSImport("expo-location", "LocationActivityType")
@@ -124,17 +124,17 @@ object mod {
   object LocationActivityType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.expoLocation.locationTypesMod.LocationActivityType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.expoLocation.buildLocationDottypesMod.LocationActivityType & Double] = js.native
     
-    /* 5 */ val Airborne: typings.expoLocation.locationTypesMod.LocationActivityType.Airborne & Double = js.native
+    /* 5 */ val Airborne: typings.expoLocation.buildLocationDottypesMod.LocationActivityType.Airborne & Double = js.native
     
-    /* 2 */ val AutomotiveNavigation: typings.expoLocation.locationTypesMod.LocationActivityType.AutomotiveNavigation & Double = js.native
+    /* 2 */ val AutomotiveNavigation: typings.expoLocation.buildLocationDottypesMod.LocationActivityType.AutomotiveNavigation & Double = js.native
     
-    /* 3 */ val Fitness: typings.expoLocation.locationTypesMod.LocationActivityType.Fitness & Double = js.native
+    /* 3 */ val Fitness: typings.expoLocation.buildLocationDottypesMod.LocationActivityType.Fitness & Double = js.native
     
-    /* 1 */ val Other: typings.expoLocation.locationTypesMod.LocationActivityType.Other & Double = js.native
+    /* 1 */ val Other: typings.expoLocation.buildLocationDottypesMod.LocationActivityType.Other & Double = js.native
     
-    /* 4 */ val OtherNavigation: typings.expoLocation.locationTypesMod.LocationActivityType.OtherNavigation & Double = js.native
+    /* 4 */ val OtherNavigation: typings.expoLocation.buildLocationDottypesMod.LocationActivityType.OtherNavigation & Double = js.native
   }
   
   @JSImport("expo-location", "LocationGeofencingEventType")
@@ -142,11 +142,13 @@ object mod {
   object LocationGeofencingEventType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.expoLocation.locationTypesMod.LocationGeofencingEventType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.expoLocation.buildLocationDottypesMod.LocationGeofencingEventType & Double
+      ] = js.native
     
-    /* 1 */ val Enter: typings.expoLocation.locationTypesMod.LocationGeofencingEventType.Enter & Double = js.native
+    /* 1 */ val Enter: typings.expoLocation.buildLocationDottypesMod.LocationGeofencingEventType.Enter & Double = js.native
     
-    /* 2 */ val Exit: typings.expoLocation.locationTypesMod.LocationGeofencingEventType.Exit & Double = js.native
+    /* 2 */ val Exit: typings.expoLocation.buildLocationDottypesMod.LocationGeofencingEventType.Exit & Double = js.native
   }
   
   @JSImport("expo-location", "LocationGeofencingRegionState")
@@ -154,13 +156,15 @@ object mod {
   object LocationGeofencingRegionState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.expoLocation.locationTypesMod.LocationGeofencingRegionState & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.expoLocation.buildLocationDottypesMod.LocationGeofencingRegionState & Double
+      ] = js.native
     
-    /* 1 */ val Inside: typings.expoLocation.locationTypesMod.LocationGeofencingRegionState.Inside & Double = js.native
+    /* 1 */ val Inside: typings.expoLocation.buildLocationDottypesMod.LocationGeofencingRegionState.Inside & Double = js.native
     
-    /* 2 */ val Outside: typings.expoLocation.locationTypesMod.LocationGeofencingRegionState.Outside & Double = js.native
+    /* 2 */ val Outside: typings.expoLocation.buildLocationDottypesMod.LocationGeofencingRegionState.Outside & Double = js.native
     
-    /* 0 */ val Unknown: typings.expoLocation.locationTypesMod.LocationGeofencingRegionState.Unknown & Double = js.native
+    /* 0 */ val Unknown: typings.expoLocation.buildLocationDottypesMod.LocationGeofencingRegionState.Unknown & Double = js.native
   }
   
   @JSImport("expo-location", "PermissionStatus")
@@ -168,13 +172,13 @@ object mod {
   object PermissionStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus & String] = js.native
+    def apply(value: String): js.UndefOr[typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus & String] = js.native
     
-    /* "denied" */ val DENIED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.DENIED & String = js.native
+    /* "denied" */ val DENIED: typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus.DENIED & String = js.native
     
-    /* "granted" */ val GRANTED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.GRANTED & String = js.native
+    /* "granted" */ val GRANTED: typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus.GRANTED & String = js.native
     
-    /* "undetermined" */ val UNDETERMINED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.UNDETERMINED & String = js.native
+    /* "undetermined" */ val UNDETERMINED: typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus.UNDETERMINED & String = js.native
   }
   
   inline def enableNetworkProviderAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableNetworkProviderAsync")().asInstanceOf[js.Promise[Unit]]

@@ -8,11 +8,14 @@ trait Inclusive extends StObject {
   
   var inclusive: Boolean
   
-  var value: typings.firebaseFirestore.firestoreProtoApiMod.Value
+  var value: typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.Value
 }
 object Inclusive {
   
-  inline def apply(inclusive: Boolean, value: typings.firebaseFirestore.firestoreProtoApiMod.Value): Inclusive = {
+  inline def apply(
+    inclusive: Boolean,
+    value: typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.Value
+  ): Inclusive = {
     val __obj = js.Dynamic.literal(inclusive = inclusive.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inclusive]
   }
@@ -21,6 +24,6 @@ object Inclusive {
     
     inline def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: typings.firebaseFirestore.firestoreProtoApiMod.Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

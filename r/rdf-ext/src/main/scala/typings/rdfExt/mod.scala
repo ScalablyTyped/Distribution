@@ -13,7 +13,7 @@ object mod {
   @JSImport("rdf-ext", JSImport.Namespace)
   @js.native
   open class ^ ()
-    extends typings.rdfExt.dataFactoryMod.^
+    extends typings.rdfExt.libDataFactoryMod.^
   @JSImport("rdf-ext", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -42,7 +42,7 @@ object mod {
   def waitFor: js.Function1[/* event */ Any, js.Promise[Any]] = js.native
   inline def waitFor_=(x: js.Function1[/* event */ Any, js.Promise[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitFor")(x.asInstanceOf[js.Any])
   
-  type DataFactoryExt = typings.rdfExt.dataFactoryMod.^
+  type DataFactoryExt = typings.rdfExt.libDataFactoryMod.^
   
   trait SinkMap[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */]
     extends StObject

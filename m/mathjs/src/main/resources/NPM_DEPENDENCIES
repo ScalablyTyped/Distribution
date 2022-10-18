@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mathjs" : "11.2.1"
+      "mathjs" : "11.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "mathjs" : "11.2.1"
+      "mathjs" : "11.3.0"
     }
   ],
   "compile-devDependencies" : [

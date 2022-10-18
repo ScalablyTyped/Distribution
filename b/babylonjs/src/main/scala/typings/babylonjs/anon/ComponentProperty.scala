@@ -6,7 +6,7 @@ import typings.babylonjs.babylonjsStrings.transform
 import typings.babylonjs.babylonjsStrings.visibility
 import typings.babylonjs.babylonjsStrings.xAxis
 import typings.babylonjs.babylonjsStrings.yAxis
-import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerComponentStateType
+import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.MotionControllerComponentStateType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

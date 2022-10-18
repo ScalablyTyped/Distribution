@@ -7,6 +7,7 @@ import typings.angularCore.mod.Provider
 import typings.angularCore.mod.Type
 import typings.angularRouter.angularRouterStrings.full
 import typings.angularRouter.angularRouterStrings.prefix
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,11 +90,7 @@ trait Route extends StObject {
   /**
     * An object specifying a lazy-loaded component.
     */
-  var loadComponent: js.UndefOr[
-    js.Function0[
-      Type[Any] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Type<unknown>> */ Any) | js.Promise[Type[Any]]
-    ]
-  ] = js.undefined
+  var loadComponent: js.UndefOr[js.Function0[Type[Any] | Observable_[Type[Any]] | js.Promise[Type[Any]]]] = js.undefined
   
   /**
     * A custom URL-matching function. Cannot be used together with `path`.
@@ -234,14 +231,12 @@ object Route {
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     inline def setLoadChildren(
-      value: () => Type[Any] | NgModuleFactory[Any] | Routes | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Type<any> | Routes> */ Any) | (js.Promise[NgModuleFactory[Any] | Type[Any] | Routes])
+      value: () => Type[Any] | NgModuleFactory[Any] | Routes | (Observable_[Type[Any] | Routes]) | (js.Promise[NgModuleFactory[Any] | Type[Any] | Routes])
     ): Self = StObject.set(x, "loadChildren", js.Any.fromFunction0(value))
     
     inline def setLoadChildrenUndefined: Self = StObject.set(x, "loadChildren", js.undefined)
     
-    inline def setLoadComponent(
-      value: () => Type[Any] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Type<unknown>> */ Any) | js.Promise[Type[Any]]
-    ): Self = StObject.set(x, "loadComponent", js.Any.fromFunction0(value))
+    inline def setLoadComponent(value: () => Type[Any] | Observable_[Type[Any]] | js.Promise[Type[Any]]): Self = StObject.set(x, "loadComponent", js.Any.fromFunction0(value))
     
     inline def setLoadComponentUndefined: Self = StObject.set(x, "loadComponent", js.undefined)
     
@@ -286,7 +281,7 @@ object Route {
     inline def setTitle(value: String | Type[Resolve[String]] | ResolveFn[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleFunction2(
-      value: (/* route */ ActivatedRouteSnapshot, /* state */ RouterStateSnapshot) => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any) | js.Promise[String] | String
+      value: (/* route */ ActivatedRouteSnapshot, /* state */ RouterStateSnapshot) => Observable_[String] | js.Promise[String] | String
     ): Self = StObject.set(x, "title", js.Any.fromFunction2(value))
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)

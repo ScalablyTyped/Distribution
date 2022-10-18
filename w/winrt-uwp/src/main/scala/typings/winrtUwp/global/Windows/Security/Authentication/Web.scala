@@ -38,9 +38,9 @@ object Web {
   object Core {
     
     /** Contains core methods for obtaining tokens from web account providers. */
-    @JSGlobal("Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager")
     @js.native
-    abstract class WebAuthenticationCoreManager ()
+    open class WebAuthenticationCoreManager ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager
     object WebAuthenticationCoreManager {
@@ -227,9 +227,9 @@ object Web {
     }
     
     /** Represents the results of a web token request to an identity provider. */
-    @JSGlobal("Windows.Security.Authentication.Web.Core.WebTokenRequestResult")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.Core.WebTokenRequestResult")
     @js.native
-    abstract class WebTokenRequestResult ()
+    open class WebTokenRequestResult ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult {
       
@@ -376,9 +376,9 @@ object Web {
     }
     
     /** Provides methods for managing web accounts. */
-    @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountManager")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountManager")
     @js.native
-    abstract class WebAccountManager ()
+    open class WebAccountManager ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountManager
     object WebAccountManager {
@@ -520,9 +520,9 @@ object Web {
     }
     
     /** Represents an add account operation. */
-    @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderAddAccountOperation")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderAddAccountOperation")
     @js.native
-    abstract class WebAccountProviderAddAccountOperation ()
+    open class WebAccountProviderAddAccountOperation ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderAddAccountOperation {
       
@@ -536,9 +536,9 @@ object Web {
     }
     
     /** Represents a delete account operation. */
-    @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderDeleteAccountOperation")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderDeleteAccountOperation")
     @js.native
-    abstract class WebAccountProviderDeleteAccountOperation ()
+    open class WebAccountProviderDeleteAccountOperation ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderDeleteAccountOperation {
       
@@ -563,16 +563,16 @@ object Web {
     }
     
     /** Represents a get token silently operation. */
-    @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderGetTokenSilentOperation")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderGetTokenSilentOperation")
     @js.native
-    abstract class WebAccountProviderGetTokenSilentOperation ()
+    open class WebAccountProviderGetTokenSilentOperation ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderGetTokenSilentOperation
     
     /** Represents a manage account operation. */
-    @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderManageAccountOperation")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderManageAccountOperation")
     @js.native
-    abstract class WebAccountProviderManageAccountOperation ()
+    open class WebAccountProviderManageAccountOperation ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderManageAccountOperation {
       
@@ -615,9 +615,9 @@ object Web {
     }
     
     /** Represents a request token operation. */
-    @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderRequestTokenOperation")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderRequestTokenOperation")
     @js.native
-    abstract class WebAccountProviderRequestTokenOperation ()
+    open class WebAccountProviderRequestTokenOperation ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderRequestTokenOperation {
       
@@ -656,9 +656,9 @@ object Web {
     }
     
     /** Represents a retrieve cookies operation made by a web account provider. */
-    @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderRetrieveCookiesOperation")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderRetrieveCookiesOperation")
     @js.native
-    abstract class WebAccountProviderRetrieveCookiesOperation ()
+    open class WebAccountProviderRetrieveCookiesOperation ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderRetrieveCookiesOperation {
       
@@ -695,9 +695,9 @@ object Web {
     }
     
     /** Represents a sign out account operation made by a web account provider. */
-    @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderSignOutAccountOperation")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderSignOutAccountOperation")
     @js.native
-    abstract class WebAccountProviderSignOutAccountOperation ()
+    open class WebAccountProviderSignOutAccountOperation ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderSignOutAccountOperation {
       
@@ -730,9 +730,9 @@ object Web {
     }
     
     /** Provides information about a web account provider trigger. */
-    @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderTriggerDetails")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderTriggerDetails")
     @js.native
-    abstract class WebAccountProviderTriggerDetails ()
+    open class WebAccountProviderTriggerDetails ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderTriggerDetails {
       
@@ -772,9 +772,9 @@ object Web {
     }
     
     /** Represents a request for a token from a client to a provider. */
-    @JSGlobal("Windows.Security.Authentication.Web.Provider.WebProviderTokenRequest")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.Provider.WebProviderTokenRequest")
     @js.native
-    abstract class WebProviderTokenRequest ()
+    open class WebProviderTokenRequest ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebProviderTokenRequest {
       
@@ -838,9 +838,9 @@ object Web {
   }
   
   /** Starts the authentication operation. You can call the methods of this class multiple times in a single application or across multiple applications at the same time. */
-  @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationBroker")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationBroker")
   @js.native
-  abstract class WebAuthenticationBroker ()
+  open class WebAuthenticationBroker ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationBroker
   object WebAuthenticationBroker {
@@ -936,9 +936,9 @@ object Web {
   }
   
   /** Indicates the result of the authentication operation. */
-  @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationResult")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationResult")
   @js.native
-  abstract class WebAuthenticationResult ()
+  open class WebAuthenticationResult ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult {
     

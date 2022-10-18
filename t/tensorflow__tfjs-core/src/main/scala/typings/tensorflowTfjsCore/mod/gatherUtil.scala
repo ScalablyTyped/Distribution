@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsCore.mod
 
-import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

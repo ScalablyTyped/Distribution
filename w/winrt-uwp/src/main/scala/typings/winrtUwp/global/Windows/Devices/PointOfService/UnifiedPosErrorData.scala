@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides error information. */
-@JSGlobal("Windows.Devices.PointOfService.UnifiedPosErrorData")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.UnifiedPosErrorData")
 @js.native
-abstract class UnifiedPosErrorData ()
+open class UnifiedPosErrorData ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.UnifiedPosErrorData {
   

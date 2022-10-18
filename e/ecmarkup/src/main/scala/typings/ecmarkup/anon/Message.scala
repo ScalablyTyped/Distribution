@@ -1,7 +1,7 @@
 package typings.ecmarkup.anon
 
 import typings.ecmarkup.ecmarkupStrings.global
-import typings.ecmarkup.specMod.Warning
+import typings.ecmarkup.libSpecMod.Warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

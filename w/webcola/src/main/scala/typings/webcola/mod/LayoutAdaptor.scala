@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "LayoutAdaptor")
 @js.native
 open class LayoutAdaptor protected ()
-  extends typings.webcola.adaptorMod.LayoutAdaptor {
+  extends typings.webcola.distSrcAdaptorMod.LayoutAdaptor {
   def this(options: Any) = this()
 }

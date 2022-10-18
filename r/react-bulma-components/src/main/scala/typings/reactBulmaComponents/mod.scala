@@ -13,39 +13,6 @@ import typings.reactBulmaComponents.anon.Side
 import typings.reactBulmaComponents.anon.TabBulmaComponent
 import typings.reactBulmaComponents.anon.Text
 import typings.reactBulmaComponents.anon.`0`
-import typings.reactBulmaComponents.blockMod.ContentProps
-import typings.reactBulmaComponents.breadcrumbMod.BreadcrumbProps
-import typings.reactBulmaComponents.buttonMod.ButtonProps
-import typings.reactBulmaComponents.columnsMod.ColumnGroupProps
-import typings.reactBulmaComponents.componentsMod.BulmaComponent
-import typings.reactBulmaComponents.componentsMod.BulmaComponentWithoutModifiers
-import typings.reactBulmaComponents.componentsMod.BulmaComponentWithoutRenderAs
-import typings.reactBulmaComponents.componentsMod.ElementProps
-import typings.reactBulmaComponents.componentsMod.OmitKeys
-import typings.reactBulmaComponents.containerMod.ContainerProps
-import typings.reactBulmaComponents.dropdownMod.DropdownProps
-import typings.reactBulmaComponents.formMod.CheckboxProps
-import typings.reactBulmaComponents.formMod.ControlProps
-import typings.reactBulmaComponents.formMod.FieldProps
-import typings.reactBulmaComponents.formMod.HelpProps
-import typings.reactBulmaComponents.formMod.InputFileProps
-import typings.reactBulmaComponents.formMod.InputProps
-import typings.reactBulmaComponents.formMod.LabelProps
-import typings.reactBulmaComponents.formMod.RadioProps
-import typings.reactBulmaComponents.formMod.SelectProps
-import typings.reactBulmaComponents.formMod.TextareaProps
-import typings.reactBulmaComponents.headingMod.HeadingProps
-import typings.reactBulmaComponents.heroMod.HeroProps
-import typings.reactBulmaComponents.iconMod.IconProps
-import typings.reactBulmaComponents.imageMod.ImageProps
-import typings.reactBulmaComponents.levelMod.LevelProps
-import typings.reactBulmaComponents.messageMod.MessageProps
-import typings.reactBulmaComponents.modalMod.ModalProps
-import typings.reactBulmaComponents.navbarMod.NavbarProps
-import typings.reactBulmaComponents.notificationMod.NotificationProps
-import typings.reactBulmaComponents.paginationMod.PaginationProps
-import typings.reactBulmaComponents.panelMod.PanelProps
-import typings.reactBulmaComponents.progressMod.ProgressProps
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.article
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.aside
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.button
@@ -64,11 +31,44 @@ import typings.reactBulmaComponents.reactBulmaComponentsStrings.select
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.span
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.table
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.textarea
-import typings.reactBulmaComponents.sectionMod.SectionProps
-import typings.reactBulmaComponents.tableMod.TableProps
-import typings.reactBulmaComponents.tabsMod.TabsProps
-import typings.reactBulmaComponents.tagMod.TagProps
-import typings.reactBulmaComponents.tileMod.TileProps
+import typings.reactBulmaComponents.srcComponentsBlockMod.ContentProps
+import typings.reactBulmaComponents.srcComponentsBreadcrumbMod.BreadcrumbProps
+import typings.reactBulmaComponents.srcComponentsButtonMod.ButtonProps
+import typings.reactBulmaComponents.srcComponentsColumnsMod.ColumnGroupProps
+import typings.reactBulmaComponents.srcComponentsContainerMod.ContainerProps
+import typings.reactBulmaComponents.srcComponentsDropdownMod.DropdownProps
+import typings.reactBulmaComponents.srcComponentsFormMod.CheckboxProps
+import typings.reactBulmaComponents.srcComponentsFormMod.ControlProps
+import typings.reactBulmaComponents.srcComponentsFormMod.FieldProps
+import typings.reactBulmaComponents.srcComponentsFormMod.HelpProps
+import typings.reactBulmaComponents.srcComponentsFormMod.InputFileProps
+import typings.reactBulmaComponents.srcComponentsFormMod.InputProps
+import typings.reactBulmaComponents.srcComponentsFormMod.LabelProps
+import typings.reactBulmaComponents.srcComponentsFormMod.RadioProps
+import typings.reactBulmaComponents.srcComponentsFormMod.SelectProps
+import typings.reactBulmaComponents.srcComponentsFormMod.TextareaProps
+import typings.reactBulmaComponents.srcComponentsHeadingMod.HeadingProps
+import typings.reactBulmaComponents.srcComponentsHeroMod.HeroProps
+import typings.reactBulmaComponents.srcComponentsIconMod.IconProps
+import typings.reactBulmaComponents.srcComponentsImageMod.ImageProps
+import typings.reactBulmaComponents.srcComponentsLevelMod.LevelProps
+import typings.reactBulmaComponents.srcComponentsMessageMod.MessageProps
+import typings.reactBulmaComponents.srcComponentsMod.BulmaComponent
+import typings.reactBulmaComponents.srcComponentsMod.BulmaComponentWithoutModifiers
+import typings.reactBulmaComponents.srcComponentsMod.BulmaComponentWithoutRenderAs
+import typings.reactBulmaComponents.srcComponentsMod.ElementProps
+import typings.reactBulmaComponents.srcComponentsMod.OmitKeys
+import typings.reactBulmaComponents.srcComponentsModalMod.ModalProps
+import typings.reactBulmaComponents.srcComponentsNavbarMod.NavbarProps
+import typings.reactBulmaComponents.srcComponentsNotificationMod.NotificationProps
+import typings.reactBulmaComponents.srcComponentsPaginationMod.PaginationProps
+import typings.reactBulmaComponents.srcComponentsPanelMod.PanelProps
+import typings.reactBulmaComponents.srcComponentsProgressMod.ProgressProps
+import typings.reactBulmaComponents.srcComponentsSectionMod.SectionProps
+import typings.reactBulmaComponents.srcComponentsTableMod.TableProps
+import typings.reactBulmaComponents.srcComponentsTabsMod.TabsProps
+import typings.reactBulmaComponents.srcComponentsTagMod.TagProps
+import typings.reactBulmaComponents.srcComponentsTileMod.TileProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -105,7 +105,7 @@ object mod {
   
   @JSImport("react-bulma-components", "Content")
   @js.native
-  val Content: BulmaComponent[typings.reactBulmaComponents.contentMod.ContentProps, div] = js.native
+  val Content: BulmaComponent[typings.reactBulmaComponents.srcComponentsContentMod.ContentProps, div] = js.native
   
   @JSImport("react-bulma-components", "Dropdown")
   @js.native

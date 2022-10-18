@@ -1,6 +1,6 @@
 package typings.micromarkExtensionGfmTable
 
-import typings.micromarkExtensionGfmTable.syntaxMod.Align
+import typings.micromarkExtensionGfmTable.devLibSyntaxMod.Align
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,6 @@
 package typings.codecs
 
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.TopLevel
 import typings.codecs.codecsStrings.`ucs-2`
 import typings.codecs.codecsStrings.`utf-8`
 import typings.codecs.codecsStrings.`utf16-le`
@@ -52,7 +51,15 @@ object mod extends Shortcut {
   
   type BinaryCodec = NamedCodec[binary, String | js.typedarray.Uint8Array, Buffer]
   
-  type Codec[TInput, TFallback, TCodecs] = TFallback | (/* import warning: importer.ImportType#apply Failed type conversion: TCodecs[TInput] */ js.Any) | TInput
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TInput extends codecs.codecs.BaseCodec<any, any> ? TInput : TInput extends null | undefined ? TFallback : TInput extends keyof TCodecs ? TCodecs[TInput] extends codecs.codecs.BaseCodec<any, any> ? TCodecs[TInput] : TFallback : TFallback
+    }}}
+    */
+  @js.native
+  trait Codec[TInput, TFallback, TCodecs] extends StObject
   
   type CodecInput = (BaseCodec[Any, Any]) | CodecNames
   
@@ -133,9 +140,15 @@ object mod extends Shortcut {
     }
   }
   
-  type CodecName[TInput /* <: MaybeCodecInput */, TFallback /* <: NamedCodec[String, Any, Any] */, TCodecs] = js.UndefOr[
-    (/* import warning: importer.ImportType#apply Failed type conversion: TFallback['name'] */ js.Any) | Unit
-  ]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TInput extends null | undefined ? TFallback['name'] : TInput extends codecs.codecs.NamedCodec<string, any, any> ? TInput['name'] : TInput extends codecs.codecs.BaseCodec<any, any> ? undefined : TInput extends keyof TCodecs ? TCodecs[TInput] extends codecs.codecs.NamedCodec<infer Name, any, any> ? Name : undefined : TFallback['name']
+    }}}
+    */
+  @js.native
+  trait CodecName[TInput /* <: MaybeCodecInput */, TFallback /* <: NamedCodec[String, Any, Any] */, TCodecs] extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.codecs.codecsStrings.ascii
@@ -193,15 +206,29 @@ object mod extends Shortcut {
   
   type HexCodec = NamedCodec[hex, String, String]
   
-  type InType[TCodec /* <: MaybeCodecInput */, TFallback /* <: NamedCodec[String, Any, Any] */, TCodecs] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    codecs.codecs.Codec<TCodec, TFallback, TCodecs> extends codecs.codecs.BaseCodec<infer T, any> ? T : unknown
+    }}}
+    */
+  @js.native
+  trait InType[TCodec /* <: MaybeCodecInput */, TFallback /* <: NamedCodec[String, Any, Any] */, TCodecs] extends StObject
   
   type JsonArray = js.Array[JsonValue]
   
   type JsonCodec = NamedCodec[json, Any, JsonValue]
   
-  type JsonObject = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ Key in string ]:? codecs.codecs.JsonValue}
-    */ typings.codecs.codecsStrings.JsonObject & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ Key in string ]:? codecs.codecs.JsonValue}
+    }}}
+    */
+  @js.native
+  trait JsonObject extends StObject
   
   type JsonValue = String | Double | Boolean | Null | JsonObject | Any
   
@@ -237,7 +264,15 @@ object mod extends Shortcut {
     }
   }
   
-  type OutType[TCodec /* <: MaybeCodecInput */, TFallback /* <: NamedCodec[String, Any, Any] */, TCodecs] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    codecs.codecs.Codec<TCodec, TFallback, TCodecs> extends codecs.codecs.BaseCodec<any, infer T> ? T : unknown
+    }}}
+    */
+  @js.native
+  trait OutType[TCodec /* <: MaybeCodecInput */, TFallback /* <: NamedCodec[String, Any, Any] */, TCodecs] extends StObject
   
   type Ucs2Codec = NamedCodec[ucs2, String, String]
   

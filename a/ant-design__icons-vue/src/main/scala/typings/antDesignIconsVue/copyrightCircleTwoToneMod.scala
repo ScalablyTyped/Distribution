@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCopyrightCircleTwoToneMod.CopyrightCircleTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object copyrightCircleTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CopyrightCircleTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CopyrightCircleTwoTone", JSImport.Default)
   @js.native
   val default: CopyrightCircleTwoToneIconType = js.native
-  
-  @js.native
-  trait CopyrightCircleTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CopyrightCircleTwoToneIconType: String = js.native
-  }
   
   type _To = CopyrightCircleTwoToneIconType
   

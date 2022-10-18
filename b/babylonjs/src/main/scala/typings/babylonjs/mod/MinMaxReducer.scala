@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "MinMaxReducer")
 @js.native
 open class MinMaxReducer protected ()
-  extends typings.babylonjs.legacyMod.MinMaxReducer {
+  extends typings.babylonjs.legacyLegacyMod.MinMaxReducer {
   /**
     * Creates a min/max reducer
     * @param camera The camera to use for the post processes
     */
-  def this(camera: typings.babylonjs.cameraMod.Camera) = this()
+  def this(camera: typings.babylonjs.camerasCameraMod.Camera) = this()
 }

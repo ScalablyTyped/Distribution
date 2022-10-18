@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param directionRandomizer defines how much to randomize the particle direction [0-1]
   */
 open class SphereParticleEmitter ()
-  extends typings.babylonjs.legacyMod.SphereParticleEmitter {
+  extends typings.babylonjs.legacyLegacyMod.SphereParticleEmitter {
   def this(/**
     * The radius of the emission sphere.
     */

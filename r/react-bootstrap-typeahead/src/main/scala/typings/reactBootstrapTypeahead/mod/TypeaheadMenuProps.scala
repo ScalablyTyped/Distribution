@@ -90,8 +90,6 @@ object TypeaheadMenuProps {
     
     inline def setLabelKey(value: TypeaheadLabelKey[T]): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
     
-    inline def setLabelKeyFunction1(value: T => String): Self = StObject.set(x, "labelKey", js.Any.fromFunction1(value))
-    
     inline def setLabelKeyUndefined: Self = StObject.set(x, "labelKey", js.undefined)
     
     inline def setMaxHeight(value: String): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.protractor.mod
 
-import typings.protractor.configMod.Config
+import typings.protractor.builtConfigMod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("protractor", "Runner")
 @js.native
 open class Runner protected ()
-  extends typings.protractor.runnerMod.Runner {
+  extends typings.protractor.builtRunnerMod.Runner {
   def this(config: Config) = this()
 }

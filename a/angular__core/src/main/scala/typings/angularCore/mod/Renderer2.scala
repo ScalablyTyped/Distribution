@@ -8,9 +8,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "Renderer2")
+/* note: abstract class */ @JSImport("@angular/core", "Renderer2")
 @js.native
-abstract class Renderer2 () extends StObject {
+open class Renderer2 () extends StObject {
   
   /**
     * Implement this callback to add a class to an element in the DOM.

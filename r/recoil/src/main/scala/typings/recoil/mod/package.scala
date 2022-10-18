@@ -1,9 +1,7 @@
 package typings.recoil.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.FC
-import typings.recoil.anon.ChildrenReactNode
+import typings.recoil.anon.Children
 import typings.recoil.anon.GetInfoUNSTABLE
 import typings.recoil.anon.PreviousSnapshot
 import typings.recoil.mod.^
@@ -14,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def RecoilBridge: FC[ChildrenReactNode] = ^.asInstanceOf[js.Dynamic].selectDynamic("RecoilBridge").asInstanceOf[FC[ChildrenReactNode]]
+inline def RecoilBridge: FC[Children] = ^.asInstanceOf[js.Dynamic].selectDynamic("RecoilBridge").asInstanceOf[FC[Children]]
 
 inline def RecoilRoot: FC[RecoilRootProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("RecoilRoot").asInstanceOf[FC[RecoilRootProps]]
 
@@ -44,13 +42,13 @@ inline def selectorFamily[T, P /* <: SerializableParam */](options: ReadOnlySele
 inline def selectorFamily[T, P /* <: SerializableParam */](options: ReadWriteSelectorFamilyOptions[T, P]): js.Function1[/* param */ P, RecoilState[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectorFamily")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param */ P, RecoilState[T]]]
 
 inline def snapshotUNSTABLE(): Snapshot = ^.asInstanceOf[js.Dynamic].applyDynamic("snapshot_UNSTABLE")().asInstanceOf[Snapshot]
-inline def snapshotUNSTABLE(initializeState: js.Function1[/* shapshot */ MutableSnapshot, Unit]): Snapshot = ^.asInstanceOf[js.Dynamic].applyDynamic("snapshot_UNSTABLE")(initializeState.asInstanceOf[js.Any]).asInstanceOf[Snapshot]
+inline def snapshotUNSTABLE(initializeState: js.Function1[/* mutableSnapshot */ MutableSnapshot, Unit]): Snapshot = ^.asInstanceOf[js.Dynamic].applyDynamic("snapshot_UNSTABLE")(initializeState.asInstanceOf[js.Any]).asInstanceOf[Snapshot]
 
 inline def useGetRecoilValueInfoUNSTABLE(): js.Function1[/* recoilValue */ RecoilValue[Any], RecoilStateInfo[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGetRecoilValueInfo_UNSTABLE")().asInstanceOf[js.Function1[/* recoilValue */ RecoilValue[Any], RecoilStateInfo[Any]]]
 
 inline def useGotoRecoilSnapshot(): js.Function1[/* snapshot */ Snapshot, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGotoRecoilSnapshot")().asInstanceOf[js.Function1[/* snapshot */ Snapshot, Unit]]
 
-inline def useRecoilBridgeAcrossReactRootsUNSTABLE(): FC[ChildrenReactNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRecoilBridgeAcrossReactRoots_UNSTABLE")().asInstanceOf[FC[ChildrenReactNode]]
+inline def useRecoilBridgeAcrossReactRootsUNSTABLE(): FC[Children] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRecoilBridgeAcrossReactRoots_UNSTABLE")().asInstanceOf[FC[Children]]
 
 inline def useRecoilCallback[Args /* <: js.Array[Any] */, Return](fn: js.Function1[/* interface */ CallbackInterface, js.Function1[/* args */ Args, Return]]): js.Function1[/* args */ Args, Return] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRecoilCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Args, Return]]
 inline def useRecoilCallback[Args /* <: js.Array[Any] */, Return](
@@ -131,19 +129,3 @@ type SetRecoilState = js.Function2[
 Unit]
 
 type SetterOrUpdater[T] = js.Function1[/* valOrUpdater */ (js.Function1[/* currVal */ T, T]) | T, Unit]
-
-type UnwrapLoadable[T] = T
-
-type UnwrapLoadables[T /* <: js.Array[Any] | StringDictionary[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: recoil.recoil.UnwrapLoadable<T[P]>}
-  */ typings.recoil.recoilStrings.UnwrapLoadables & TopLevel[T]
-
-type UnwrapRecoilValue[T] = Any
-
-type UnwrapRecoilValueLoadables[T /* <: js.Array[RecoilValue[Any]] | StringDictionary[RecoilValue[Any]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: recoil.recoil.Loadable<recoil.recoil.UnwrapRecoilValue<T[P]>>}
-  */ typings.recoil.recoilStrings.UnwrapRecoilValueLoadables & TopLevel[T]
-
-type UnwrapRecoilValues[T /* <: js.Array[RecoilValue[Any]] | StringDictionary[RecoilValue[Any]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: recoil.recoil.UnwrapRecoilValue<T[P]>}
-  */ typings.recoil.recoilStrings.UnwrapRecoilValues & TopLevel[T]

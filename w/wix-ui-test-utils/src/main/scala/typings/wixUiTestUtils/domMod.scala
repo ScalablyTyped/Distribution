@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object domMod {
   
-  @JSImport("wix-ui-test-utils/dist/src/dom", JSImport.Namespace)
+  @JSImport("wix-ui-test-utils/dom", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

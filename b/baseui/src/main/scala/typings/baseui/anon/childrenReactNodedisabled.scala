@@ -1,7 +1,7 @@
 package typings.baseui.anon
 
-import typings.baseui.typesMod.OnChangeHandler
-import typings.baseui.typesMod.PanelOverrides
+import typings.baseui.accordionTypesMod.OnChangeHandler
+import typings.baseui.accordionTypesMod.PanelOverrides
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent

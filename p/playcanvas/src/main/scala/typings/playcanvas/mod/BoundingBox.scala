@@ -7,19 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Axis-Aligned Bounding Box.
   */
-@JSImport("playcanvas", "BoundingBox")
 @js.native
-/**
-  * Create a new BoundingBox instance. The bounding box is axis-aligned.
-  *
-  * @param {Vec3} [center] - Center of box. The constructor takes a reference of this parameter.
-  * @param {Vec3} [halfExtents] - Half the distance across the box in each axis. The constructor
-  * takes a reference of this parameter. Defaults to 0.5 on each axis.
-  */
-open class BoundingBox () extends StObject {
-  def this(center: Vec3) = this()
-  def this(center: Unit, halfExtents: Vec3) = this()
-  def this(center: Vec3, halfExtents: Vec3) = this()
+trait BoundingBox extends StObject {
   
   def _distanceToBoundingSphereSq(sphere: Any): Double = js.native
   
@@ -150,26 +139,4 @@ open class BoundingBox () extends StObject {
     * @param {Vec3} max - The maximum corner of the AABB.
     */
   def setMinMax(min: Vec3, max: Vec3): Unit = js.native
-}
-object BoundingBox {
-  
-  @JSImport("playcanvas", "BoundingBox")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    * Compute the min and max bounding values to encapsulate all specified vertices.
-    *
-    * @param {number[]|Float32Array} vertices - The vertices used to compute the new size for the
-    * AABB.
-    * @param {Vec3} min - Stored computed min value.
-    * @param {Vec3} max - Stored computed max value.
-    * @param {number} [numVerts] - Number of vertices to use from the beginning of vertices array.
-    * All vertices are used if not specified.
-    */
-  /* static member */
-  inline def computeMinMax(vertices: js.Array[Double], min: Vec3, max: Vec3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("computeMinMax")(vertices.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def computeMinMax(vertices: js.Array[Double], min: Vec3, max: Vec3, numVerts: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("computeMinMax")(vertices.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], numVerts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def computeMinMax(vertices: js.typedarray.Float32Array, min: Vec3, max: Vec3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("computeMinMax")(vertices.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def computeMinMax(vertices: js.typedarray.Float32Array, min: Vec3, max: Vec3, numVerts: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("computeMinMax")(vertices.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], numVerts.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -1,8 +1,8 @@
 package typings.raml1Parser.mod.ds
 
 import typings.raml1Parser.mod.ds.^
-import typings.ramlDefinitionSystem.ramlDefinitionSystemMod.IType
-import typings.ramlDefinitionSystem.ramlDefinitionSystemMod.UniverseProvider
+import typings.ramlDefinitionSystem.mod.IType
+import typings.ramlDefinitionSystem.mod.UniverseProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,16 +29,11 @@ inline def isSourceProvider(`object`: Any): /* is raml-definition-system.raml-de
 
 inline def isUserDefinedClass(clazz: Any): /* is raml-definition-system.raml-definition-system.UserDefinedClass */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUserDefinedClass")(clazz.asInstanceOf[js.Any]).asInstanceOf[/* is raml-definition-system.raml-definition-system.UserDefinedClass */ Boolean]
 
+inline def prop(name: String, desc: String, domain: typings.ramlDefinitionSystem.mod.NodeClass, range: IType): typings.ramlDefinitionSystem.mod.Property = (^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[typings.ramlDefinitionSystem.mod.Property]
 inline def prop(
   name: String,
   desc: String,
-  domain: typings.ramlDefinitionSystem.ramlDefinitionSystemMod.NodeClass,
-  range: IType
-): typings.ramlDefinitionSystem.ramlDefinitionSystemMod.Property = (^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[typings.ramlDefinitionSystem.ramlDefinitionSystemMod.Property]
-inline def prop(
-  name: String,
-  desc: String,
-  domain: typings.ramlDefinitionSystem.ramlDefinitionSystemMod.NodeClass,
+  domain: typings.ramlDefinitionSystem.mod.NodeClass,
   range: IType,
   custom: Boolean
-): typings.ramlDefinitionSystem.ramlDefinitionSystemMod.Property = (^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any], custom.asInstanceOf[js.Any])).asInstanceOf[typings.ramlDefinitionSystem.ramlDefinitionSystemMod.Property]
+): typings.ramlDefinitionSystem.mod.Property = (^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any], custom.asInstanceOf[js.Any])).asInstanceOf[typings.ramlDefinitionSystem.mod.Property]

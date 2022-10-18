@@ -28,7 +28,7 @@ trait Bsb
   var calculationType: STATIC | BALANCE | CALCULATED
   
   /**
-    * Flag indicating that the account details are tokenised and cannot be shared.  False if absent.  If false then bsb and accountNumber should not be expected to be included
+    * Flag indicating that the account details are tokenised and cannot be shared.  False if absent
     */
   var isTokenised: js.UndefOr[Boolean | Null] = js.undefined
   

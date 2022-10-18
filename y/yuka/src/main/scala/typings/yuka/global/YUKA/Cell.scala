@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class Cell ()
   extends typings.yuka.mod.Cell {
-  def this(aabb: typings.yuka.aabbMod.AABB) = this()
+  def this(aabb: typings.yuka.srcMathAabbMod.AABB) = this()
 }

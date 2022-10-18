@@ -176,7 +176,7 @@ object mod {
     
     inline def set(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
-    inline def sign(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def sign(n: Value): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def sin(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
@@ -588,7 +588,7 @@ object mod {
     
     inline def set(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
-    inline def sign(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def sign(n: Value): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def sin(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
@@ -793,7 +793,7 @@ object mod {
       
       def set(`object`: Config): Constructor = js.native
       
-      def sign(n: Value): typings.decimalJs.mod.Decimal = js.native
+      def sign(n: Value): Double = js.native
       
       def sin(n: Value): typings.decimalJs.mod.Decimal = js.native
       

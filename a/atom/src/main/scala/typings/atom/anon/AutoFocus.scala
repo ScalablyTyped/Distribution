@@ -1,6 +1,6 @@
 package typings.atom.anon
 
-import typings.atom.mod.FocusableHTMLElement
+import typings.atom.srcWorkspaceMod.FocusableHTMLElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

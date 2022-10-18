@@ -14,7 +14,7 @@ object mod {
   @JSImport("@ngtools/webpack", "AngularWebpackPlugin")
   @js.native
   open class AngularWebpackPlugin ()
-    extends typings.ngtoolsWebpack.ivyMod.AngularWebpackPlugin {
+    extends typings.ngtoolsWebpack.srcIvyMod.AngularWebpackPlugin {
     def this(options: PartialAngularWebpackPlug) = this()
   }
 }

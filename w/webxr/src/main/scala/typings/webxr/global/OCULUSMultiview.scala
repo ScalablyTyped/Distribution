@@ -7,9 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("OCULUS_multiview")
+/* note: abstract class */ @JSGlobal("OCULUS_multiview")
 @js.native
-abstract class OCULUSMultiview ()
+open class OCULUSMultiview ()
   extends StObject
      with typings.webxr.OCULUSMultiview {
   

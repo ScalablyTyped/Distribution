@@ -1,6 +1,6 @@
 package typings.rxjs.anon
 
-import typings.rxjs.internalTypesMod.ObservableInput
+import typings.rxjs.distTypesInternalTypesMod.ObservableInput
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

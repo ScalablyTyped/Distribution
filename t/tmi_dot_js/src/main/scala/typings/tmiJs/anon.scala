@@ -117,7 +117,7 @@ object anon {
     
     var maxReconnectAttempts: js.UndefOr[Double] = js.undefined
     
-    var maxReconnectInverval: js.UndefOr[Double] = js.undefined
+    var maxReconnectInterval: js.UndefOr[Double] = js.undefined
     
     var port: js.UndefOr[Double] = js.undefined
     
@@ -146,9 +146,9 @@ object anon {
       
       inline def setMaxReconnectAttemptsUndefined: Self = StObject.set(x, "maxReconnectAttempts", js.undefined)
       
-      inline def setMaxReconnectInverval(value: Double): Self = StObject.set(x, "maxReconnectInverval", value.asInstanceOf[js.Any])
+      inline def setMaxReconnectInterval(value: Double): Self = StObject.set(x, "maxReconnectInterval", value.asInstanceOf[js.Any])
       
-      inline def setMaxReconnectInvervalUndefined: Self = StObject.set(x, "maxReconnectInverval", js.undefined)
+      inline def setMaxReconnectIntervalUndefined: Self = StObject.set(x, "maxReconnectInterval", js.undefined)
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       

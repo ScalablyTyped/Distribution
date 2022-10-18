@@ -2,8 +2,8 @@ package typings.reactNativeRatings
 
 import typings.react.mod.FunctionComponent
 import typings.reactNativeRatings.anon.ImageSize
-import typings.reactNativeRatings.swipeRatingMod.default
-import typings.reactNativeRatings.tapRatingMod.TapRatingProps
+import typings.reactNativeRatings.distSwipeRatingMod.default
+import typings.reactNativeRatings.distTapRatingMod.TapRatingProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

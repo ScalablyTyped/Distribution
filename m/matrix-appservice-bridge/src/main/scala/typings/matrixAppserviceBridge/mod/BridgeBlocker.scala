@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "BridgeBlocker")
 @js.native
 open class BridgeBlocker protected ()
-  extends typings.matrixAppserviceBridge.bridgeBlockerMod.BridgeBlocker {
+  extends typings.matrixAppserviceBridge.libComponentsBridgeBlockerMod.BridgeBlocker {
   def this(userLimit: Double) = this()
 }

@@ -25,11 +25,11 @@ import typings.ionicCliFrameworkPrompts.mod.PromptValueCheckbox
 import typings.ionicCliFrameworkPrompts.mod.PromptValueConfirm
 import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
 import typings.ionicUtilsNetwork.mod.NetworkInterface
+import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.streamMod.Transform
 import typings.std.Set
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,9 +84,9 @@ object libServeMod {
   @js.native
   val SERVE_SCRIPT: /* "ionic:serve" */ String = js.native
   
-  @JSImport("ionic/lib/serve", "ServeCLI")
+  /* note: abstract class */ @JSImport("ionic/lib/serve", "ServeCLI")
   @js.native
-  abstract class ServeCLI[T /* <: ServeCLIOptions */] protected () extends EventEmitter {
+  open class ServeCLI[T /* <: ServeCLIOptions */] protected () extends EventEmitter {
     def this(e: ServeRunnerDeps) = this()
     
     /* private */ var _resolvedProgram: Any = js.native
@@ -101,7 +101,7 @@ object libServeMod {
       */
     /* protected */ def buildEnvVars(options: T): js.Promise[ProcessEnv] = js.native
     
-    /* protected */ def createLoggerStream(): WritableStream[Any] = js.native
+    /* protected */ def createLoggerStream(): WritableStream = js.native
     
     /* protected */ def createStreamFilter(filter: js.Function1[/* line */ String, Boolean]): Transform = js.native
     
@@ -187,9 +187,9 @@ object libServeMod {
     /* protected */ def stdoutFilter(line: String): Boolean = js.native
   }
   
-  @JSImport("ionic/lib/serve", "ServeRunner")
+  /* note: abstract class */ @JSImport("ionic/lib/serve", "ServeRunner")
   @js.native
-  abstract class ServeRunner[T /* <: ServeOptions */] ()
+  open class ServeRunner[T /* <: ServeOptions */] ()
     extends StObject
        with Runner[T, ServeDetails] {
     

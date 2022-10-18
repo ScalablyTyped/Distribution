@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PlaceAutocompleteType {
   
-  inline def LeftparenthesiscitiesRightparenthesis: String = String.asInstanceOf[String]
+  inline def LeftparenthesiscitiesRightparenthesis: /* (cities) */ String = "(cities)".asInstanceOf[/* (cities) */ String]
   
-  inline def LeftparenthesisregionsRightparenthesis: String = String.asInstanceOf[String]
+  inline def LeftparenthesisregionsRightparenthesis: /* (regions) */ String = "(regions)".asInstanceOf[/* (regions) */ String]
   
   inline def address: typings.googleMaps.googleMapsStrings.address = "address".asInstanceOf[typings.googleMaps.googleMapsStrings.address]
   

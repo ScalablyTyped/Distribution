@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the encryption algorithm supported by the device. */
-@JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderEncryptionAlgorithms")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderEncryptionAlgorithms")
 @js.native
-abstract class MagneticStripeReaderEncryptionAlgorithms ()
+open class MagneticStripeReaderEncryptionAlgorithms ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReaderEncryptionAlgorithms
 object MagneticStripeReaderEncryptionAlgorithms {

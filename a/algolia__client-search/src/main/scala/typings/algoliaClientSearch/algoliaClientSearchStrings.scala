@@ -17,18 +17,6 @@ object algoliaClientSearchStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait CreateIndex extends StObject
-  inline def CreateIndex: CreateIndex = "CreateIndex".asInstanceOf[CreateIndex]
-  
-  @js.native
-  sealed trait HighlightResult extends StObject
-  inline def HighlightResult: HighlightResult = "HighlightResult".asInstanceOf[HighlightResult]
-  
-  @js.native
-  sealed trait SnippetResult extends StObject
-  inline def SnippetResult: SnippetResult = "SnippetResult".asInstanceOf[SnippetResult]
-  
-  @js.native
   sealed trait addObject
     extends StObject
        with ApiKeyACLType

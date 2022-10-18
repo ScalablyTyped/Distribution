@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "fontagon"
-version := "1.1-dt-20211202Z-685baa"
+version := "1.1-dt-20211202Z-620179"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
-  "org.scalablytyped" %%% "svg2ttf" % "5.0-dt-20211202Z-fe98b9",
-  "org.scalablytyped" %%% "svgicons2svgfont" % "10.0-dt-20211202Z-10431f",
-  "org.scalablytyped" %%% "ttf2woff" % "2.0-dt-20211202Z-90b6ce")
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "svg2ttf" % "5.0-dt-20211202Z-dd4871",
+  "org.scalablytyped" %%% "svgicons2svgfont" % "10.0-dt-20211202Z-c568e6",
+  "org.scalablytyped" %%% "ttf2woff" % "2.0-dt-20211202Z-ebfddf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

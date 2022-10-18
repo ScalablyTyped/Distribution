@@ -2,11 +2,11 @@ package typings.reduxOrm
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.TopLevel
 import typings.reduxOrm.anon.TypeofQuerySet
-import typings.reduxOrm.databaseMod.Database
-import typings.reduxOrm.databaseMod.QueryClause
-import typings.reduxOrm.databaseMod.SchemaSpec
+import typings.reduxOrm.dbDatabaseMod.Database
+import typings.reduxOrm.dbDatabaseMod.QueryClause
+import typings.reduxOrm.dbDatabaseMod.SchemaSpec
+import typings.reduxOrm.dbTableMod.TableOpts
 import typings.reduxOrm.fieldsMod.AttrCreator
 import typings.reduxOrm.fieldsMod.AttributeOpts
 import typings.reduxOrm.fieldsMod.AttributeWithDefault
@@ -40,7 +40,6 @@ import typings.reduxOrm.reduxMod.ORMSelector
 import typings.reduxOrm.reduxMod.Selector
 import typings.reduxOrm.reduxMod.defaultUpdater
 import typings.reduxOrm.sessionMod.OrmSession
-import typings.reduxOrm.tableMod.TableOpts
 import typings.std.Extract
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -671,14 +670,10 @@ object mod {
     ]
   ] */](schemaSpec: SchemaSpec[I]): Database[
     I, 
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-    */ typings.reduxOrm.reduxOrmStrings.createDatabase & TopLevel[I]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDatabase")(schemaSpec.asInstanceOf[js.Any]).asInstanceOf[Database[
     I, 
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-    */ typings.reduxOrm.reduxOrmStrings.createDatabase & TopLevel[I]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>} */ js.Any
   ]]
   
   inline def createReducer[I /* <: IndexedModelClasses[

@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.DidChangeWatchedFilesParams
-import typings.vscodeLanguageserverProtocol.protocolMod.DidChangeWatchedFilesRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.DidChangeWatchedFilesParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.DidChangeWatchedFilesRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashdidChangeWatchedFiles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object DidChangeWatchedFilesNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidChangeWatchedFilesNotification.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "DidChangeWatchedFilesNotification.method")
   @js.native
@@ -19,5 +19,5 @@ object DidChangeWatchedFilesNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidChangeWatchedFilesNotification.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[DidChangeWatchedFilesParams, DidChangeWatchedFilesRegistrationOptions] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[DidChangeWatchedFilesParams, DidChangeWatchedFilesRegistrationOptions] = js.native
 }

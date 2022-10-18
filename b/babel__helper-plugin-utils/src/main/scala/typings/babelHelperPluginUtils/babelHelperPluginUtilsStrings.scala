@@ -1099,10 +1099,6 @@ object babelHelperPluginUtilsStrings {
   inline def TypeofTypeAnnotation: TypeofTypeAnnotation = "TypeofTypeAnnotation".asInstanceOf[TypeofTypeAnnotation]
   
   @js.native
-  sealed trait Typeoftraverse extends StObject
-  inline def Typeoftraverse: Typeoftraverse = "Typeoftraverse".asInstanceOf[Typeoftraverse]
-  
-  @js.native
   sealed trait UnaryExpression extends StObject
   inline def UnaryExpression: UnaryExpression = "UnaryExpression".asInstanceOf[UnaryExpression]
   

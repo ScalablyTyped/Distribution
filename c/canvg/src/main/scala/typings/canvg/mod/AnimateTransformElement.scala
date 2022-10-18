@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "AnimateTransformElement")
 @js.native
 open class AnimateTransformElement protected ()
-  extends typings.canvg.documentMod.AnimateTransformElement {
-  def this(document: typings.canvg.documentDocumentMod.Document, node: HTMLElement) = this()
-  def this(document: typings.canvg.documentDocumentMod.Document, node: HTMLElement, captureTextNodes: Boolean) = this()
+  extends typings.canvg.distDocumentMod.AnimateTransformElement {
+  def this(document: typings.canvg.distDocumentDocumentMod.Document, node: HTMLElement) = this()
+  def this(
+    document: typings.canvg.distDocumentDocumentMod.Document,
+    node: HTMLElement,
+    captureTextNodes: Boolean
+  ) = this()
 }

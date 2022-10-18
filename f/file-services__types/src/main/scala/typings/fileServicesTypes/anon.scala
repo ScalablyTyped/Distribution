@@ -1,10 +1,10 @@
 package typings.fileServicesTypes
 
-import typings.fileServicesTypes.commonFsTypesMod.BufferEncoding
-import typings.fileServicesTypes.commonFsTypesMod.IFileSystemStats
-import typings.fileServicesTypes.commonFsTypesMod.StatSyncOptions
-import typings.fileServicesTypes.commonFsTypesMod._ReadFileOptions
-import typings.fileServicesTypes.commonFsTypesMod._WriteFileOptions
+import typings.fileServicesTypes.distCommonFsTypesMod.BufferEncoding
+import typings.fileServicesTypes.distCommonFsTypesMod.IFileSystemStats
+import typings.fileServicesTypes.distCommonFsTypesMod.StatSyncOptions
+import typings.fileServicesTypes.distCommonFsTypesMod._ReadFileOptions
+import typings.fileServicesTypes.distCommonFsTypesMod._WriteFileOptions
 import typings.fileServicesTypes.fileServicesTypesBooleans.`false`
 import typings.fileServicesTypes.fileServicesTypesBooleans.`true`
 import org.scalablytyped.runtime.StObject

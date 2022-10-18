@@ -1,7 +1,7 @@
 package typings.reactNativePaper.anon
 
 import typings.reactNative.mod.ImageURISource
-import typings.reactNativePaper.iconMod.IconSourceBase
+import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSourceBase
 import typings.reactNativePaper.reactNativePaperStrings.auto
 import typings.reactNativePaper.reactNativePaperStrings.ltr
 import typings.reactNativePaper.reactNativePaperStrings.rtl

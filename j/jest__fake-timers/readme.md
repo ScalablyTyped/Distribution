@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__fake-timers
 
-Typings are for version 24.9.0
+Typings are for version 29.2.0
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | @jest/fake-timers |
 | Keywords           | - |
-| # releases         | 37 |
-| # dependents       | 13 |
-| # downloads        | 369851912 |
-| # stars            | 0 |
+| # releases         | 65 |
+| # dependents       | 0.0 |
+| # downloads        | 8.2798168E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

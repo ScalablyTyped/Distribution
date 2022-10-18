@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-ie-launcher"
-version := "1.0-dt-20211202Z-67c102"
+version := "1.0-dt-20211202Z-bba87d"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

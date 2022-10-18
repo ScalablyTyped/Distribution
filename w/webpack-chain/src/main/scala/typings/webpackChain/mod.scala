@@ -3,9 +3,9 @@ package typings.webpackChain
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpsMod.ServerOptions
-import typings.node.nodeHttpMod.IncomingMessage
-import typings.node.nodeHttpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonhttpMod.IncomingMessage
+import typings.node.nodeColonhttpMod.ServerResponse
+import typings.node.nodeColonnetMod.Socket
 import typings.std.ConstructorParameters
 import typings.webpack.mod.Compiler
 import typings.webpack.mod.Configuration
@@ -341,20 +341,30 @@ object mod {
     override def before(name: String): this.type = js.native
     
     def init[P /* <: PluginType | PluginClass[PluginType] */](
-      value: js.Function2[/* plugin */ P, /* args */ js.Array[Any] | ConstructorParameters[P], PluginType]
+      value: js.Function2[
+          /* plugin */ P, 
+          /* import warning: importer.ImportType#apply Failed type conversion: P extends webpack-chain.webpack-chain.PluginClass<this> ? std.ConstructorParameters<P> : std.Array<any> */ /* args */ js.Any, 
+          PluginType
+        ]
     ): this.type = js.native
     
     def tap[P /* <: PluginClass[PluginType] */](f: js.Function1[/* args */ ConstructorParameters[P], ConstructorParameters[P]]): this.type = js.native
     
     def use(plugin: String): this.type = js.native
-    def use(plugin: String, args: js.Array[Any] | ConstructorParameters[String]): this.type = js.native
+    def use(
+      plugin: String,
+      args: /* import warning: importer.ImportType#apply Failed type conversion: string extends webpack-chain.webpack-chain.PluginClass<webpack.webpack.Plugin> ? std.ConstructorParameters<string> : std.Array<any> */ js.Any
+    ): this.type = js.native
     def use(plugin: PluginClass[PluginType]): this.type = js.native
     def use(
       plugin: PluginClass[PluginType],
-      args: js.Array[Any] | ConstructorParameters[PluginClass[PluginType]]
+      args: /* import warning: importer.ImportType#apply Failed type conversion: webpack-chain.webpack-chain.PluginClass<PluginType> extends webpack-chain.webpack-chain.PluginClass<webpack.webpack.Plugin> ? std.ConstructorParameters<webpack-chain.webpack-chain.PluginClass<PluginType>> : std.Array<any> */ js.Any
     ): this.type = js.native
     def use[P /* <: PluginType */](plugin: P): this.type = js.native
-    def use[P /* <: PluginType */](plugin: P, args: js.Array[Any] | ConstructorParameters[P]): this.type = js.native
+    def use[P /* <: PluginType */](
+      plugin: P,
+      args: /* import warning: importer.ImportType#apply Failed type conversion: P extends webpack-chain.webpack-chain.PluginClass<webpack.webpack.Plugin> ? std.ConstructorParameters<P> : std.Array<any> */ js.Any
+    ): this.type = js.native
   }
   
   @JSImport("webpack-chain", "Plugins")

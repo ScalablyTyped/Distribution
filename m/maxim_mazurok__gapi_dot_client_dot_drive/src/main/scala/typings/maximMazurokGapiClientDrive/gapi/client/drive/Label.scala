@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait Label extends StObject {
   
   /** A map of the label's fields keyed by the field ID. */
   var fields: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.drive.gapi.client.drive.LabelField}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.Label & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.drive.gapi.client.drive.LabelField} */ js.Any
   ] = js.undefined
   
   /** The ID of the label. */
@@ -33,9 +30,7 @@ object Label {
   extension [Self <: Label](x: Self) {
     
     inline def setFields(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.drive.gapi.client.drive.LabelField}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.Label & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.drive.gapi.client.drive.LabelField} */ js.Any
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)

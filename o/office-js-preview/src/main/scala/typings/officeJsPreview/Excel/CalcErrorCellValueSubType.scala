@@ -10,8 +10,7 @@ sealed trait CalcErrorCellValueSubType extends StObject
   * Represents types of #CALC! errors.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 @JSGlobal("Excel.CalcErrorCellValueSubType")
 @js.native
@@ -21,8 +20,7 @@ object CalcErrorCellValueSubType extends StObject {
     * An error caused by including an array in an array. Displays as error type #CALC! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait arrayOfArrays
@@ -33,8 +31,7 @@ object CalcErrorCellValueSubType extends StObject {
     * An error caused by including a range in an array. Displays as error type #CALC! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait arrayOfRanges
@@ -45,8 +42,7 @@ object CalcErrorCellValueSubType extends StObject {
     * An error caused by a data table referencing a pending formula. The pending formula is likely asynchronous. Displays as error type #CALC! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait dataTableReferencedPendingFormula
@@ -57,8 +53,7 @@ object CalcErrorCellValueSubType extends StObject {
     * An error caused by an empty array. Displays as error type #CALC! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait emptyArray
@@ -69,8 +64,7 @@ object CalcErrorCellValueSubType extends StObject {
     * An error caused by a cell's formula evaluating to a lambda value. Displays as error type #CALC! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait lambdaInCell
@@ -82,8 +76,7 @@ object CalcErrorCellValueSubType extends StObject {
     * Some characters, like emoji, may appear to be one character in the Excel UI but are actually processed as surrogate characters. A surrogate character counts as multiple characters toward the maximum character limit.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait textOverflow
@@ -94,8 +87,7 @@ object CalcErrorCellValueSubType extends StObject {
     * An error caused by a `CellValue` object that is too deeply nested within another `CellValue`. Displays as error type #CALC! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait tooDeeplyNested
@@ -106,8 +98,7 @@ object CalcErrorCellValueSubType extends StObject {
     * An error caused by a function referencing too many cells. Displays as error type #CALC! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait tooManyCells
@@ -118,8 +109,7 @@ object CalcErrorCellValueSubType extends StObject {
     * An unknown type of error. Displays as error type #CALC! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait unknown
@@ -130,8 +120,7 @@ object CalcErrorCellValueSubType extends StObject {
     * An error caused by attempting to lift an unsupported formula (such as a Dynamic UDF) over an array. Displays as error type #CALC! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait unsupportedLifting

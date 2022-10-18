@@ -123,7 +123,6 @@ import typings.stripe.mod.Stripe.ProductCreateParams.DefaultPriceData.TaxBehavio
 import typings.stripe.mod.Stripe.Quote.CollectionMethod
 import typings.stripe.mod.Stripe.Quote.Status
 import typings.stripe.mod.Stripe.Radar.ValueList.ItemType
-import typings.stripe.mod.Stripe.RawErrorType
 import typings.stripe.mod.Stripe.Reporting.ReportRunCreateParams.Parameters.ReportingCategory
 import typings.stripe.mod.Stripe.Reporting.ReportRunCreateParams.Parameters.Timezone
 import typings.stripe.mod.Stripe.Review.ClosedReason
@@ -2018,6 +2017,12 @@ object stripeStrings {
     extends StObject
        with Timezone
   inline def AmericaSlashNorth_DakotaSlashNew_Salem: AmericaSlashNorth_DakotaSlashNew_Salem = "America/North_Dakota/New_Salem".asInstanceOf[AmericaSlashNorth_DakotaSlashNew_Salem]
+  
+  @js.native
+  sealed trait AmericaSlashNuuk
+    extends StObject
+       with Timezone
+  inline def AmericaSlashNuuk: AmericaSlashNuuk = "America/Nuuk".asInstanceOf[AmericaSlashNuuk]
   
   @js.native
   sealed trait AmericaSlashOjinaga
@@ -4204,6 +4209,12 @@ object stripeStrings {
   inline def EuropeSlashKirov: EuropeSlashKirov = "Europe/Kirov".asInstanceOf[EuropeSlashKirov]
   
   @js.native
+  sealed trait EuropeSlashKyiv
+    extends StObject
+       with Timezone
+  inline def EuropeSlashKyiv: EuropeSlashKyiv = "Europe/Kyiv".asInstanceOf[EuropeSlashKyiv]
+  
+  @js.native
   sealed trait EuropeSlashLisbon
     extends StObject
        with Timezone
@@ -5923,6 +5934,12 @@ object stripeStrings {
   inline def PacificSlashJohnston: PacificSlashJohnston = "Pacific/Johnston".asInstanceOf[PacificSlashJohnston]
   
   @js.native
+  sealed trait PacificSlashKanton
+    extends StObject
+       with Timezone
+  inline def PacificSlashKanton: PacificSlashKanton = "Pacific/Kanton".asInstanceOf[PacificSlashKanton]
+  
+  @js.native
   sealed trait PacificSlashKiritimati
     extends StObject
        with Timezone
@@ -6389,50 +6406,6 @@ object stripeStrings {
     extends StObject
        with Timezone
   inline def Singapore: Singapore = "Singapore".asInstanceOf[Singapore]
-  
-  @js.native
-  sealed trait StripeAPIError extends StObject
-  inline def StripeAPIError: StripeAPIError = "StripeAPIError".asInstanceOf[StripeAPIError]
-  
-  @js.native
-  sealed trait StripeAuthenticationError extends StObject
-  inline def StripeAuthenticationError: StripeAuthenticationError = "StripeAuthenticationError".asInstanceOf[StripeAuthenticationError]
-  
-  @js.native
-  sealed trait StripeCardError extends StObject
-  inline def StripeCardError: StripeCardError = "StripeCardError".asInstanceOf[StripeCardError]
-  
-  @js.native
-  sealed trait StripeConnectionError extends StObject
-  inline def StripeConnectionError: StripeConnectionError = "StripeConnectionError".asInstanceOf[StripeConnectionError]
-  
-  @js.native
-  sealed trait StripeError extends StObject
-  inline def StripeError: StripeError = "StripeError".asInstanceOf[StripeError]
-  
-  @js.native
-  sealed trait StripeIdempotencyError extends StObject
-  inline def StripeIdempotencyError: StripeIdempotencyError = "StripeIdempotencyError".asInstanceOf[StripeIdempotencyError]
-  
-  @js.native
-  sealed trait StripeInvalidGrantError extends StObject
-  inline def StripeInvalidGrantError: StripeInvalidGrantError = "StripeInvalidGrantError".asInstanceOf[StripeInvalidGrantError]
-  
-  @js.native
-  sealed trait StripeInvalidRequestError extends StObject
-  inline def StripeInvalidRequestError: StripeInvalidRequestError = "StripeInvalidRequestError".asInstanceOf[StripeInvalidRequestError]
-  
-  @js.native
-  sealed trait StripePermissionError extends StObject
-  inline def StripePermissionError: StripePermissionError = "StripePermissionError".asInstanceOf[StripePermissionError]
-  
-  @js.native
-  sealed trait StripeRateLimitError extends StObject
-  inline def StripeRateLimitError: StripeRateLimitError = "StripeRateLimitError".asInstanceOf[StripeRateLimitError]
-  
-  @js.native
-  sealed trait StripeSignatureVerificationError extends StObject
-  inline def StripeSignatureVerificationError: StripeSignatureVerificationError = "StripeSignatureVerificationError".asInstanceOf[StripeSignatureVerificationError]
   
   @js.native
   sealed trait TA
@@ -7803,7 +7776,6 @@ object stripeStrings {
   @js.native
   sealed trait api_error
     extends StObject
-       with RawErrorType
        with typings.stripe.mod.Stripe.Invoice.LastFinalizationError.Type
        with typings.stripe.mod.Stripe.SetupAttempt.SetupError.Type
        with typings.stripe.mod.Stripe.PaymentIntent.LastPaymentError.Type
@@ -8098,16 +8070,6 @@ object stripeStrings {
        with Result
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Card.ThreeDSecure.Result
   inline def authenticated: authenticated = "authenticated".asInstanceOf[authenticated]
-  
-  @js.native
-  sealed trait authentication_error
-    extends StObject
-       with RawErrorType
-  inline def authentication_error: authentication_error = "authentication_error".asInstanceOf[authentication_error]
-  
-  @js.native
-  sealed trait authorization_code extends StObject
-  inline def authorization_code: authorization_code = "authorization_code".asInstanceOf[authorization_code]
   
   @js.native
   sealed trait auto
@@ -8695,6 +8657,20 @@ object stripeStrings {
   inline def bank_nowy_bfg_sa: bank_nowy_bfg_sa = "bank_nowy_bfg_sa".asInstanceOf[bank_nowy_bfg_sa]
   
   @js.native
+  sealed trait bank_of_china
+    extends StObject
+       with typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodData.Fpx.Bank
+       with typings.stripe.mod.Stripe.PaymentMethod.Fpx.Bank
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodData.Fpx.Bank
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodData.Fpx.Bank
+       with typings.stripe.mod.Stripe.PaymentMethodCreateParams.Fpx.Bank
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodData.Fpx.Bank
+       with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Fpx.Bank
+       with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodData.Fpx.Bank
+       with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodData.Fpx.Bank
+  inline def bank_of_china: bank_of_china = "bank_of_china".asInstanceOf[bank_of_china]
+  
+  @js.native
   sealed trait bank_ownership_changed
     extends StObject
        with typings.stripe.mod.Stripe.TestHelpers.Treasury.InboundTransferFailParams.FailureDetails.Code
@@ -8836,10 +8812,6 @@ object stripeStrings {
        with DeviceType
        with typings.stripe.mod.Stripe.Terminal.Reader.DeviceType
   inline def bbpos_wisepos_e: bbpos_wisepos_e = "bbpos_wisepos_e".asInstanceOf[bbpos_wisepos_e]
-  
-  @js.native
-  sealed trait bearer extends StObject
-  inline def bearer: bearer = "bearer".asInstanceOf[bearer]
   
   @js.native
   sealed trait betting_casino_gambling
@@ -9827,7 +9799,6 @@ object stripeStrings {
   @js.native
   sealed trait card_error
     extends StObject
-       with RawErrorType
        with typings.stripe.mod.Stripe.Invoice.LastFinalizationError.Type
        with typings.stripe.mod.Stripe.SetupAttempt.SetupError.Type
        with typings.stripe.mod.Stripe.PaymentIntent.LastPaymentError.Type
@@ -10506,10 +10477,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
        with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def clothing_rental: clothing_rental = "clothing_rental".asInstanceOf[clothing_rental]
-  
-  @js.native
-  sealed trait code extends StObject
-  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
   sealed trait code_verification
@@ -15170,7 +15137,6 @@ object stripeStrings {
   @js.native
   sealed trait idempotency_error
     extends StObject
-       with RawErrorType
        with typings.stripe.mod.Stripe.Invoice.LastFinalizationError.Type
        with typings.stripe.mod.Stripe.SetupAttempt.SetupError.Type
        with typings.stripe.mod.Stripe.PaymentIntent.LastPaymentError.Type
@@ -15916,15 +15882,30 @@ object stripeStrings {
   inline def invalid_currency: invalid_currency = "invalid_currency".asInstanceOf[invalid_currency]
   
   @js.native
-  sealed trait invalid_grant
+  sealed trait invalid_dob_age_under_18
     extends StObject
-       with RawErrorType
-  inline def invalid_grant: invalid_grant = "invalid_grant".asInstanceOf[invalid_grant]
+       with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
+       with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
+       with typings.stripe.mod.Stripe.Person.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.Capability.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.Capability.FutureRequirements.Error.Code
+  inline def invalid_dob_age_under_18: invalid_dob_age_under_18 = "invalid_dob_age_under_18".asInstanceOf[invalid_dob_age_under_18]
+  
+  @js.native
+  sealed trait invalid_representative_country
+    extends StObject
+       with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
+       with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
+       with typings.stripe.mod.Stripe.Person.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.Capability.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.Capability.FutureRequirements.Error.Code
+  inline def invalid_representative_country: invalid_representative_country = "invalid_representative_country".asInstanceOf[invalid_representative_country]
   
   @js.native
   sealed trait invalid_request_error
     extends StObject
-       with RawErrorType
        with typings.stripe.mod.Stripe.Invoice.LastFinalizationError.Type
        with typings.stripe.mod.Stripe.SetupAttempt.SetupError.Type
        with typings.stripe.mod.Stripe.PaymentIntent.LastPaymentError.Type
@@ -20733,12 +20714,6 @@ object stripeStrings {
   inline def railroads: railroads = "railroads".asInstanceOf[railroads]
   
   @js.native
-  sealed trait rate_limit_error
-    extends StObject
-       with RawErrorType
-  inline def rate_limit_error: rate_limit_error = "rate_limit_error".asInstanceOf[rate_limit_error]
-  
-  @js.native
   sealed trait ready
     extends StObject
        with typings.stripe.mod.Stripe.TestHelpers.TestClock.Status
@@ -20884,10 +20859,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.AfterCompletion.Type
        with typings.stripe.mod.Stripe.PaymentLink.AfterCompletion.Type
   inline def redirect: redirect = "redirect".asInstanceOf[redirect]
-  
-  @js.native
-  sealed trait refresh_token extends StObject
-  inline def refresh_token: refresh_token = "refresh_token".asInstanceOf[refresh_token]
   
   @js.native
   sealed trait refund
@@ -24523,10 +24494,6 @@ object stripeStrings {
   inline def utilities: utilities = "utilities".asInstanceOf[utilities]
   
   @js.native
-  sealed trait v1 extends StObject
-  inline def v1: v1 = "v1".asInstanceOf[v1]
-  
-  @js.native
   sealed trait van_lanschot
     extends StObject
        with Bank
@@ -24991,6 +24958,17 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Capability.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Capability.FutureRequirements.Error.Code
   inline def verification_failed_other: verification_failed_other = "verification_failed_other".asInstanceOf[verification_failed_other]
+  
+  @js.native
+  sealed trait verification_failed_residential_address
+    extends StObject
+       with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
+       with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
+       with typings.stripe.mod.Stripe.Person.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.Capability.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.Capability.FutureRequirements.Error.Code
+  inline def verification_failed_residential_address: verification_failed_residential_address = "verification_failed_residential_address".asInstanceOf[verification_failed_residential_address]
   
   @js.native
   sealed trait verification_failed_tax_id_match

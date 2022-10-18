@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Core {
   
   /** Contains static properties that enable you to retrieve algorithm names that can be used in the OpenAlgorithm method of the AsymmetricKeyAlgorithmProvider class. */
-  @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames")
   @js.native
-  abstract class AsymmetricAlgorithmNames ()
+  open class AsymmetricAlgorithmNames ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames
   object AsymmetricAlgorithmNames {
@@ -174,9 +174,9 @@ object Core {
   }
   
   /** Represents a provider of asymmetric (public) key algorithms. For more information, see Cryptographic keys. */
-  @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider")
   @js.native
-  abstract class AsymmetricKeyAlgorithmProvider ()
+  open class AsymmetricKeyAlgorithmProvider ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider
   object AsymmetricKeyAlgorithmProvider {
@@ -210,9 +210,9 @@ object Core {
   }
   
   /** Encrypts, decrypts, and signs content, and verifies digital signatures. */
-  @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine")
   @js.native
-  abstract class CryptographicEngine ()
+  open class CryptographicEngine ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicEngine
   object CryptographicEngine {
@@ -377,9 +377,9 @@ object Core {
   }
   
   /** Represents a reusable hashing object and contains the result of a hashing operation. */
-  @JSGlobal("Windows.Security.Cryptography.Core.CryptographicHash")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.CryptographicHash")
   @js.native
-  abstract class CryptographicHash ()
+  open class CryptographicHash ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicHash {
     
@@ -399,9 +399,9 @@ object Core {
   }
   
   /** Represents a symmetric key or an asymmetric key pair. */
-  @JSGlobal("Windows.Security.Cryptography.Core.CryptographicKey")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.CryptographicKey")
   @js.native
-  abstract class CryptographicKey ()
+  open class CryptographicKey ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicKey
   
@@ -467,9 +467,9 @@ object Core {
   }
   
   /** Contains static properties that enable you to retrieve supported elliptic curve cryptography (ECC) algorithm names. */
-  @JSGlobal("Windows.Security.Cryptography.Core.EccCurveNames")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.EccCurveNames")
   @js.native
-  abstract class EccCurveNames ()
+  open class EccCurveNames ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.EccCurveNames
   object EccCurveNames {
@@ -802,9 +802,9 @@ object Core {
   }
   
   /** Contains data that can be retrieved from encrypted and authenticated data. Authenticated encryption algorithms are opened by using the SymmetricKeyAlgorithmProvider class. */
-  @JSGlobal("Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData")
   @js.native
-  abstract class EncryptedAndAuthenticatedData ()
+  open class EncryptedAndAuthenticatedData ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData {
     
@@ -818,9 +818,9 @@ object Core {
   }
   
   /** Contains static properties that enable you to retrieve algorithm names that can be used in the OpenAlgorithm method of the HashAlgorithmProvider class. */
-  @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmNames")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmNames")
   @js.native
-  abstract class HashAlgorithmNames ()
+  open class HashAlgorithmNames ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.HashAlgorithmNames
   object HashAlgorithmNames {
@@ -866,9 +866,9 @@ object Core {
   }
   
   /** Represents a cryptographic hash provider. For more information about hashes, see MACs, hashes, and signatures. */
-  @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
   @js.native
-  abstract class HashAlgorithmProvider ()
+  open class HashAlgorithmProvider ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.HashAlgorithmProvider {
     
@@ -911,9 +911,9 @@ object Core {
   }
   
   /** Contains static properties that enable you to retrieve algorithm names that can be used in the OpenAlgorithm method of the KeyDerivationAlgorithmProvider class. */
-  @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames")
   @js.native
-  abstract class KeyDerivationAlgorithmNames ()
+  open class KeyDerivationAlgorithmNames ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames
   object KeyDerivationAlgorithmNames {
@@ -1064,9 +1064,9 @@ object Core {
   }
   
   /** Represents a key derivation algorithm provider. */
-  @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider")
   @js.native
-  abstract class KeyDerivationAlgorithmProvider ()
+  open class KeyDerivationAlgorithmProvider ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider {
     
@@ -1098,9 +1098,9 @@ object Core {
   }
   
   /** Represents parameters used when deriving a key. */
-  @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
   @js.native
-  abstract class KeyDerivationParameters ()
+  open class KeyDerivationParameters ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.KeyDerivationParameters {
     
@@ -1168,9 +1168,9 @@ object Core {
   }
   
   /** Contains static properties that enable you to retrieve algorithm names that can be used in the OpenAlgorithm method of the MacAlgorithmProvider class. */
-  @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmNames")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmNames")
   @js.native
-  abstract class MacAlgorithmNames ()
+  open class MacAlgorithmNames ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.MacAlgorithmNames
   object MacAlgorithmNames {
@@ -1223,9 +1223,9 @@ object Core {
   }
   
   /** Represents a message authentication code (MAC). A MAC uses symmetric key cryptography to prevent message tampering. For more information, see MACs, hashes, and signatures. */
-  @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmProvider")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmProvider")
   @js.native
-  abstract class MacAlgorithmProvider ()
+  open class MacAlgorithmProvider ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.MacAlgorithmProvider {
     
@@ -1269,9 +1269,9 @@ object Core {
   }
   
   /** Retrieves a persisted key from a Certificate object. */
-  @JSGlobal("Windows.Security.Cryptography.Core.PersistedKeyProvider")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.PersistedKeyProvider")
   @js.native
-  abstract class PersistedKeyProvider ()
+  open class PersistedKeyProvider ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.PersistedKeyProvider
   object PersistedKeyProvider {
@@ -1302,9 +1302,9 @@ object Core {
   }
   
   /** Contains static properties that enable you to retrieve algorithm names that can be used in the OpenAlgorithm method of the SymmetricKeyAlgorithmProvider class. */
-  @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames")
   @js.native
-  abstract class SymmetricAlgorithmNames ()
+  open class SymmetricAlgorithmNames ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.SymmetricAlgorithmNames
   object SymmetricAlgorithmNames {
@@ -1456,9 +1456,9 @@ object Core {
   }
   
   /** Represents a provider of symmetric key algorithms. For more information, see Cryptographic keys. */
-  @JSGlobal("Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider")
   @js.native
-  abstract class SymmetricKeyAlgorithmProvider ()
+  open class SymmetricKeyAlgorithmProvider ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider {
     

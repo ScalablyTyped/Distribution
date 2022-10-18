@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@apollo/protobufjs", "NamespaceBase")
+/* note: abstract class */ @JSImport("@apollo/protobufjs", "NamespaceBase")
 @js.native
-abstract class NamespaceBase () extends ReflectionObject {
+open class NamespaceBase () extends ReflectionObject {
   
   /**
     * Adds a nested object to this namespace.

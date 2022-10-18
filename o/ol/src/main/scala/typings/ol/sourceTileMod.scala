@@ -5,7 +5,7 @@ import typings.ol.pluggableMapMod.FrameState
 import typings.ol.projMod.ProjectionLike
 import typings.ol.sizeMod.Size
 import typings.ol.sourceSourceMod.AttributionLike
-import typings.ol.stateMod.State
+import typings.ol.sourceStateMod.State
 import typings.ol.tilecoordMod.TileCoord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,22 +13,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sourceTileMod {
   
-  @JSImport("ol/source/Tile", JSImport.Default)
+  /* note: abstract class */ @JSImport("ol/source/Tile", JSImport.Default)
   @js.native
-  abstract class default protected () extends TileSource {
+  open class default protected () extends TileSource {
     def this(options: Options) = this()
   }
   
   @JSImport("ol/source/Tile", "TileSourceEvent")
   @js.native
   open class TileSourceEvent protected ()
-    extends typings.ol.eventMod.default {
-    def this(`type`: String, tile: typings.ol.olTileMod.default) = this()
+    extends typings.ol.eventsEventMod.default {
+    def this(`type`: String, tile: typings.ol.tileMod.default) = this()
     
     /**
       * The tile related to the event.
       */
-    var tile: typings.ol.olTileMod.default = js.native
+    var tile: typings.ol.tileMod.default = js.native
   }
   
   trait Options extends StObject {
@@ -131,27 +131,33 @@ object sourceTileMod {
       */
     def clear(): Unit = js.native
     
-    def expireCache(projection: typings.ol.projectionMod.default, usedTiles: StringDictionary[Boolean]): Unit = js.native
+    def expireCache(projection: typings.ol.projProjectionMod.default, usedTiles: StringDictionary[Boolean]): Unit = js.native
     
     def forEachLoadedTile(
-      projection: typings.ol.projectionMod.default,
+      projection: typings.ol.projProjectionMod.default,
       z: Double,
       tileRange: typings.ol.tileRangeMod.default,
-      callback: js.Function1[/* p0 */ typings.ol.olTileMod.default, Boolean]
+      callback: js.Function1[/* p0 */ typings.ol.tileMod.default, Boolean]
     ): Boolean = js.native
     
-    def getGutterForProjection(projection: typings.ol.projectionMod.default): Double = js.native
+    def getGutterForProjection(projection: typings.ol.projProjectionMod.default): Double = js.native
     
     /**
       * Return the key to be used for all tiles in the source.
       */
     /* protected */ def getKey(): String = js.native
     
-    def getOpaque(projection: typings.ol.projectionMod.default): Boolean = js.native
+    def getOpaque(projection: typings.ol.projProjectionMod.default): Boolean = js.native
     
-    def getTile(z: Double, x: Double, y: Double, pixelRatio: Double, projection: typings.ol.projectionMod.default): typings.ol.olTileMod.default = js.native
+    def getTile(
+      z: Double,
+      x: Double,
+      y: Double,
+      pixelRatio: Double,
+      projection: typings.ol.projProjectionMod.default
+    ): typings.ol.tileMod.default = js.native
     
-    /* protected */ def getTileCacheForProjection(projection: typings.ol.projectionMod.default): typings.ol.tileCacheMod.default = js.native
+    /* protected */ def getTileCacheForProjection(projection: typings.ol.projProjectionMod.default): typings.ol.tileCacheMod.default = js.native
     
     /**
       * Returns a tile coordinate wrapped around the x-axis. When the tile coordinate
@@ -159,14 +165,14 @@ object sourceTileMod {
       * returned.
       */
     def getTileCoordForTileUrlFunction(tileCoord: TileCoord): TileCoord = js.native
-    def getTileCoordForTileUrlFunction(tileCoord: TileCoord, opt_projection: typings.ol.projectionMod.default): TileCoord = js.native
+    def getTileCoordForTileUrlFunction(tileCoord: TileCoord, opt_projection: typings.ol.projProjectionMod.default): TileCoord = js.native
     
     /**
       * Return the tile grid of the tile source.
       */
     def getTileGrid(): typings.ol.tilegridTileGridMod.default = js.native
     
-    def getTileGridForProjection(projection: typings.ol.projectionMod.default): typings.ol.tilegridTileGridMod.default = js.native
+    def getTileGridForProjection(projection: typings.ol.projProjectionMod.default): typings.ol.tilegridTileGridMod.default = js.native
     
     /**
       * Get the tile pixel ratio for this source. Subclasses may override this
@@ -175,7 +181,7 @@ object sourceTileMod {
       */
     def getTilePixelRatio(pixelRatio: Double): Double = js.native
     
-    def getTilePixelSize(z: Double, pixelRatio: Double, projection: typings.ol.projectionMod.default): Size = js.native
+    def getTilePixelSize(z: Double, pixelRatio: Double, projection: typings.ol.projProjectionMod.default): Size = js.native
     
     /**
       * Set the value to be used as the key for all tiles in the source.
@@ -186,18 +192,18 @@ object sourceTileMod {
     
     /* protected */ var tileGrid: typings.ol.tilegridTileGridMod.default = js.native
     
-    /* protected */ var tileOptions: typings.ol.olTileMod.Options = js.native
+    /* protected */ var tileOptions: typings.ol.tileMod.Options = js.native
     
     /* protected */ var tmpSize: Size = js.native
     
     /**
       * Increases the cache size if needed
       */
-    def updateCacheSize(tileCount: Double, projection: typings.ol.projectionMod.default): Unit = js.native
+    def updateCacheSize(tileCount: Double, projection: typings.ol.projProjectionMod.default): Unit = js.native
     
     /**
       * Marks a tile coord as being used, without triggering a load.
       */
-    def useTile(z: Double, x: Double, y: Double, projection: typings.ol.projectionMod.default): Unit = js.native
+    def useTile(z: Double, x: Double, y: Double, projection: typings.ol.projProjectionMod.default): Unit = js.native
   }
 }

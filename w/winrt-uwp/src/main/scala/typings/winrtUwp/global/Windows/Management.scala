@@ -12,9 +12,9 @@ object Management {
   object Core {
     
     /** Enables you to access and manage the app data store for a package family. */
-    @JSGlobal("Windows.Management.Core.ApplicationDataManager")
+    /* note: abstract class */ @JSGlobal("Windows.Management.Core.ApplicationDataManager")
     @js.native
-    abstract class ApplicationDataManager ()
+    open class ApplicationDataManager ()
       extends StObject
          with typings.winrtUwp.Windows.Management.Core.ApplicationDataManager
     object ApplicationDataManager {
@@ -69,9 +69,9 @@ object Management {
     }
     
     /** Provides the result of a deployment request. */
-    @JSGlobal("Windows.Management.Deployment.DeploymentResult")
+    /* note: abstract class */ @JSGlobal("Windows.Management.Deployment.DeploymentResult")
     @js.native
-    abstract class DeploymentResult ()
+    open class DeploymentResult ()
       extends StObject
          with typings.winrtUwp.Windows.Management.Deployment.DeploymentResult {
       
@@ -163,9 +163,9 @@ object Management {
     }
     
     /** Provides information about the users of an installed package. */
-    @JSGlobal("Windows.Management.Deployment.PackageUserInformation")
+    /* note: abstract class */ @JSGlobal("Windows.Management.Deployment.PackageUserInformation")
     @js.native
-    abstract class PackageUserInformation ()
+    open class PackageUserInformation ()
       extends StObject
          with typings.winrtUwp.Windows.Management.Deployment.PackageUserInformation {
       
@@ -188,9 +188,9 @@ object Management {
     
     object Preview {
       
-      @JSGlobal("Windows.Management.Deployment.Preview.ClassicAppManager")
+      /* note: abstract class */ @JSGlobal("Windows.Management.Deployment.Preview.ClassicAppManager")
       @js.native
-      abstract class ClassicAppManager ()
+      open class ClassicAppManager ()
         extends StObject
            with typings.winrtUwp.Windows.Management.Deployment.Preview.ClassicAppManager
       object ClassicAppManager {
@@ -206,9 +206,9 @@ object Management {
         inline def findInstalledApp_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findInstalledApp")(x.asInstanceOf[js.Any])
       }
       
-      @JSGlobal("Windows.Management.Deployment.Preview.InstalledClassicAppInfo")
+      /* note: abstract class */ @JSGlobal("Windows.Management.Deployment.Preview.InstalledClassicAppInfo")
       @js.native
-      abstract class InstalledClassicAppInfo ()
+      open class InstalledClassicAppInfo ()
         extends StObject
            with typings.winrtUwp.Windows.Management.Deployment.Preview.InstalledClassicAppInfo {
         
@@ -237,9 +237,9 @@ object Management {
   
   object Orchestration {
     
-    @JSGlobal("Windows.Management.Orchestration.CurrentAppOrchestration")
+    /* note: abstract class */ @JSGlobal("Windows.Management.Orchestration.CurrentAppOrchestration")
     @js.native
-    abstract class CurrentAppOrchestration ()
+    open class CurrentAppOrchestration ()
       extends StObject
          with typings.winrtUwp.Windows.Management.Orchestration.CurrentAppOrchestration {
       
@@ -260,9 +260,9 @@ object Management {
       inline def getForCurrentView_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
     }
     
-    @JSGlobal("Windows.Management.Orchestration.SingleAppModeContext")
+    /* note: abstract class */ @JSGlobal("Windows.Management.Orchestration.SingleAppModeContext")
     @js.native
-    abstract class SingleAppModeContext ()
+    open class SingleAppModeContext ()
       extends StObject
          with typings.winrtUwp.Windows.Management.Orchestration.SingleAppModeContext {
       
@@ -275,9 +275,9 @@ object Management {
   object Workplace {
     
     /** MDM (Mobile Device Management) policy. */
-    @JSGlobal("Windows.Management.Workplace.MdmPolicy")
+    /* note: abstract class */ @JSGlobal("Windows.Management.Workplace.MdmPolicy")
     @js.native
-    abstract class MdmPolicy ()
+    open class MdmPolicy ()
       extends StObject
          with typings.winrtUwp.Windows.Management.Workplace.MdmPolicy
     object MdmPolicy {
@@ -316,9 +316,9 @@ object Management {
     }
     
     /** Enables Windows Store apps to access select enterprise settings that are managed through group policy or other management services. */
-    @JSGlobal("Windows.Management.Workplace.WorkplaceSettings")
+    /* note: abstract class */ @JSGlobal("Windows.Management.Workplace.WorkplaceSettings")
     @js.native
-    abstract class WorkplaceSettings ()
+    open class WorkplaceSettings ()
       extends StObject
          with typings.winrtUwp.Windows.Management.Workplace.WorkplaceSettings
     object WorkplaceSettings {

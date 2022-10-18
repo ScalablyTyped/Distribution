@@ -20,7 +20,7 @@ import typings.joi.mod.Root
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.node.zlibMod.Gunzip_
 import typings.node.zlibMod.Gzip_
 import org.scalablytyped.runtime.StObject

@@ -98,10 +98,6 @@ object reactNativeStrings {
   inline def All: All = "All".asInstanceOf[All]
   
   @js.native
-  sealed trait AnimatedProps extends StObject
-  inline def AnimatedProps: AnimatedProps = "AnimatedProps".asInstanceOf[AnimatedProps]
-  
-  @js.native
   sealed trait Color extends StObject
   inline def Color: Color = "Color".asInstanceOf[Color]
   
@@ -148,10 +144,6 @@ object reactNativeStrings {
   inline def Library: Library = "Library".asInstanceOf[Library]
   
   @js.native
-  sealed trait NamedStyles extends StObject
-  inline def NamedStyles: NamedStyles = "NamedStyles".asInstanceOf[NamedStyles]
-  
-  @js.native
   sealed trait Normal extends StObject
   inline def Normal: Normal = "Normal".asInstanceOf[Normal]
   
@@ -166,10 +158,6 @@ object reactNativeStrings {
     extends StObject
        with CameraRollAssetType
   inline def Photos: Photos = "Photos".asInstanceOf[Photos]
-  
-  @js.native
-  sealed trait PlatformStatic extends StObject
-  inline def PlatformStatic: PlatformStatic = "PlatformStatic".asInstanceOf[PlatformStatic]
   
   @js.native
   sealed trait RippleAndroid extends StObject
@@ -218,10 +206,6 @@ object reactNativeStrings {
     extends StObject
        with CameraRollAssetType
   inline def Videos: Videos = "Videos".asInstanceOf[Videos]
-  
-  @js.native
-  sealed trait WithAnimatedObject extends StObject
-  inline def WithAnimatedObject: WithAnimatedObject = "WithAnimatedObject".asInstanceOf[WithAnimatedObject]
   
   @js.native
   sealed trait _empty

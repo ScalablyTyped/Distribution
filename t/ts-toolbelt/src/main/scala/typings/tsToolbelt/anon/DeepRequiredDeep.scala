@@ -1,7 +1,7 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.objectRequiredMod.RequiredDeep
-import typings.tsToolbelt.objectRequiredMod.RequiredFlat
+import typings.tsToolbelt.outObjectRequiredMod.RequiredDeep
+import typings.tsToolbelt.outObjectRequiredMod.RequiredFlat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

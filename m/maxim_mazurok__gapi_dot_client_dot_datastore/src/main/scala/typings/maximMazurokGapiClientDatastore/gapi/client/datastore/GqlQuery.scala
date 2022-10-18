@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,7 @@ trait GqlQuery extends StObject {
     * not match regex `__.*__`, and must not be `""`.
     */
   var namedBindings: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.GqlQueryParameter}
-    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GqlQuery & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.GqlQueryParameter} */ js.Any
   ] = js.undefined
   
   /**
@@ -46,9 +43,7 @@ object GqlQuery {
     inline def setAllowLiteralsUndefined: Self = StObject.set(x, "allowLiterals", js.undefined)
     
     inline def setNamedBindings(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.GqlQueryParameter}
-      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GqlQuery & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.GqlQueryParameter} */ js.Any
     ): Self = StObject.set(x, "namedBindings", value.asInstanceOf[js.Any])
     
     inline def setNamedBindingsUndefined: Self = StObject.set(x, "namedBindings", js.undefined)

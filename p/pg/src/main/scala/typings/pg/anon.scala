@@ -20,7 +20,7 @@ import typings.pg.mod.QueryConfig
 import typings.pg.mod.QueryResultRow
 import typings.pg.pgStrings.binary
 import typings.pg.pgStrings.text
-import typings.pgProtocol.messagesMod.MessageName
+import typings.pgProtocol.distMessagesMod.MessageName
 import typings.pgTypes.mod.TypeId
 import typings.pgTypes.mod.TypeParser
 import org.scalablytyped.runtime.StObject

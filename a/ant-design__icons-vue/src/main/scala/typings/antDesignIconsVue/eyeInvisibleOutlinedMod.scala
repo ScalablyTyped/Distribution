@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsEyeInvisibleOutlinedMod.EyeInvisibleOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eyeInvisibleOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/EyeInvisibleOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/EyeInvisibleOutlined", JSImport.Default)
   @js.native
   val default: EyeInvisibleOutlinedIconType = js.native
-  
-  @js.native
-  trait EyeInvisibleOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_EyeInvisibleOutlinedIconType: String = js.native
-  }
   
   type _To = EyeInvisibleOutlinedIconType
   

@@ -133,139 +133,113 @@ object esmMessagesMod {
   /* Inlined {[ P in keyof react-widgets.react-widgets/esm/messages.Messages ]: react-widgets.react-widgets/esm/messages.Messages[P] extends std.Function? react-widgets.react-widgets/esm/messages.Messages[P] : (): string} */
   trait ProcessedMessages extends StObject {
     
-    var createOption: js.Function0[String] | (js.Function2[/* _value */ Any, /* searchTerm */ String, ReactNode])
+    var createOption: /* import warning: importer.ImportType#apply Failed type conversion: (_value : any, searchTerm : string): react.react.ReactNode extends std.Function ? (_value : any, searchTerm : string): react.react.ReactNode : (): string */ js.Any
     
-    var dateButton: js.Function0[String] | LabelMessage
+    var dateButton: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
     
-    var decrement: js.Function0[String] | LabelMessage
+    var decrement: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
     
-    var emptyFilter: js.Function0[String] | RenderableMessage
+    var emptyFilter: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.RenderableMessage extends std.Function ? react-widgets.react-widgets/esm/messages.RenderableMessage : (): string */ js.Any
     
-    var emptyList: js.Function0[String] | RenderableMessage
+    var emptyList: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.RenderableMessage extends std.Function ? react-widgets.react-widgets/esm/messages.RenderableMessage : (): string */ js.Any
     
-    var increment: js.Function0[String] | LabelMessage
+    var increment: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
     
-    var moveBack: js.Function0[String] | LabelMessage
+    var moveBack: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
     
-    var moveForward: js.Function0[String] | LabelMessage
+    var moveForward: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
     
-    var moveToday: js.Function0[String] | LabelMessage
+    var moveToday: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
     
-    var noneSelected: js.Function0[String] | LabelMessage
+    var noneSelected: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
     
-    var openCombobox: js.Function0[String] | LabelMessage
+    var openCombobox: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
     
-    var removeLabel: js.Function0[String] | LabelMessage
+    var removeLabel: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
     
-    var selectedItems: js.Function0[String] | (js.Function1[/* labels */ js.Array[String], String])
+    var selectedItems: /* import warning: importer.ImportType#apply Failed type conversion: (labels : std.Array<string>): string extends std.Function ? (labels : std.Array<string>): string : (): string */ js.Any
     
-    var tagsLabel: js.Function0[String] | LabelMessage
+    var tagsLabel: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
   }
   object ProcessedMessages {
     
     inline def apply(
-      createOption: js.Function0[String] | (js.Function2[/* _value */ Any, /* searchTerm */ String, ReactNode]),
-      dateButton: js.Function0[String] | LabelMessage,
-      decrement: js.Function0[String] | LabelMessage,
-      increment: js.Function0[String] | LabelMessage,
-      moveBack: js.Function0[String] | LabelMessage,
-      moveForward: js.Function0[String] | LabelMessage,
-      moveToday: js.Function0[String] | LabelMessage,
-      noneSelected: js.Function0[String] | LabelMessage,
-      openCombobox: js.Function0[String] | LabelMessage,
-      removeLabel: js.Function0[String] | LabelMessage,
-      selectedItems: js.Function0[String] | (js.Function1[/* labels */ js.Array[String], String]),
-      tagsLabel: js.Function0[String] | LabelMessage
+      createOption: /* import warning: importer.ImportType#apply Failed type conversion: (_value : any, searchTerm : string): react.react.ReactNode extends std.Function ? (_value : any, searchTerm : string): react.react.ReactNode : (): string */ js.Any,
+      dateButton: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any,
+      decrement: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any,
+      emptyFilter: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.RenderableMessage extends std.Function ? react-widgets.react-widgets/esm/messages.RenderableMessage : (): string */ js.Any,
+      emptyList: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.RenderableMessage extends std.Function ? react-widgets.react-widgets/esm/messages.RenderableMessage : (): string */ js.Any,
+      increment: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any,
+      moveBack: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any,
+      moveForward: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any,
+      moveToday: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any,
+      noneSelected: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any,
+      openCombobox: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any,
+      removeLabel: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any,
+      selectedItems: /* import warning: importer.ImportType#apply Failed type conversion: (labels : std.Array<string>): string extends std.Function ? (labels : std.Array<string>): string : (): string */ js.Any,
+      tagsLabel: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
     ): ProcessedMessages = {
-      val __obj = js.Dynamic.literal(createOption = createOption.asInstanceOf[js.Any], dateButton = dateButton.asInstanceOf[js.Any], decrement = decrement.asInstanceOf[js.Any], increment = increment.asInstanceOf[js.Any], moveBack = moveBack.asInstanceOf[js.Any], moveForward = moveForward.asInstanceOf[js.Any], moveToday = moveToday.asInstanceOf[js.Any], noneSelected = noneSelected.asInstanceOf[js.Any], openCombobox = openCombobox.asInstanceOf[js.Any], removeLabel = removeLabel.asInstanceOf[js.Any], selectedItems = selectedItems.asInstanceOf[js.Any], tagsLabel = tagsLabel.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(createOption = createOption.asInstanceOf[js.Any], dateButton = dateButton.asInstanceOf[js.Any], decrement = decrement.asInstanceOf[js.Any], emptyFilter = emptyFilter.asInstanceOf[js.Any], emptyList = emptyList.asInstanceOf[js.Any], increment = increment.asInstanceOf[js.Any], moveBack = moveBack.asInstanceOf[js.Any], moveForward = moveForward.asInstanceOf[js.Any], moveToday = moveToday.asInstanceOf[js.Any], noneSelected = noneSelected.asInstanceOf[js.Any], openCombobox = openCombobox.asInstanceOf[js.Any], removeLabel = removeLabel.asInstanceOf[js.Any], selectedItems = selectedItems.asInstanceOf[js.Any], tagsLabel = tagsLabel.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessedMessages]
     }
     
     extension [Self <: ProcessedMessages](x: Self) {
       
-      inline def setCreateOption(value: js.Function0[String] | (js.Function2[/* _value */ Any, /* searchTerm */ String, ReactNode])): Self = StObject.set(x, "createOption", value.asInstanceOf[js.Any])
+      inline def setCreateOption(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: (_value : any, searchTerm : string): react.react.ReactNode extends std.Function ? (_value : any, searchTerm : string): react.react.ReactNode : (): string */ js.Any
+      ): Self = StObject.set(x, "createOption", value.asInstanceOf[js.Any])
       
-      inline def setCreateOptionFunction0(value: () => String): Self = StObject.set(x, "createOption", js.Any.fromFunction0(value))
+      inline def setDateButton(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
+      ): Self = StObject.set(x, "dateButton", value.asInstanceOf[js.Any])
       
-      inline def setCreateOptionFunction2(value: (/* _value */ Any, /* searchTerm */ String) => ReactNode): Self = StObject.set(x, "createOption", js.Any.fromFunction2(value))
+      inline def setDecrement(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
+      ): Self = StObject.set(x, "decrement", value.asInstanceOf[js.Any])
       
-      inline def setDateButton(value: js.Function0[String] | LabelMessage): Self = StObject.set(x, "dateButton", value.asInstanceOf[js.Any])
+      inline def setEmptyFilter(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.RenderableMessage extends std.Function ? react-widgets.react-widgets/esm/messages.RenderableMessage : (): string */ js.Any
+      ): Self = StObject.set(x, "emptyFilter", value.asInstanceOf[js.Any])
       
-      inline def setDateButtonFunction0(value: () => String): Self = StObject.set(x, "dateButton", js.Any.fromFunction0(value))
+      inline def setEmptyList(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.RenderableMessage extends std.Function ? react-widgets.react-widgets/esm/messages.RenderableMessage : (): string */ js.Any
+      ): Self = StObject.set(x, "emptyList", value.asInstanceOf[js.Any])
       
-      inline def setDateButtonFunction1(value: /* ctx */ Any => String): Self = StObject.set(x, "dateButton", js.Any.fromFunction1(value))
+      inline def setIncrement(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
+      ): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
       
-      inline def setDecrement(value: js.Function0[String] | LabelMessage): Self = StObject.set(x, "decrement", value.asInstanceOf[js.Any])
+      inline def setMoveBack(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
+      ): Self = StObject.set(x, "moveBack", value.asInstanceOf[js.Any])
       
-      inline def setDecrementFunction0(value: () => String): Self = StObject.set(x, "decrement", js.Any.fromFunction0(value))
+      inline def setMoveForward(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
+      ): Self = StObject.set(x, "moveForward", value.asInstanceOf[js.Any])
       
-      inline def setDecrementFunction1(value: /* ctx */ Any => String): Self = StObject.set(x, "decrement", js.Any.fromFunction1(value))
+      inline def setMoveToday(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
+      ): Self = StObject.set(x, "moveToday", value.asInstanceOf[js.Any])
       
-      inline def setEmptyFilter(value: js.Function0[String] | RenderableMessage): Self = StObject.set(x, "emptyFilter", value.asInstanceOf[js.Any])
+      inline def setNoneSelected(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
+      ): Self = StObject.set(x, "noneSelected", value.asInstanceOf[js.Any])
       
-      inline def setEmptyFilterFunction0(value: () => ReactNode | String): Self = StObject.set(x, "emptyFilter", js.Any.fromFunction0(value))
+      inline def setOpenCombobox(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
+      ): Self = StObject.set(x, "openCombobox", value.asInstanceOf[js.Any])
       
-      inline def setEmptyFilterUndefined: Self = StObject.set(x, "emptyFilter", js.undefined)
+      inline def setRemoveLabel(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
+      ): Self = StObject.set(x, "removeLabel", value.asInstanceOf[js.Any])
       
-      inline def setEmptyList(value: js.Function0[String] | RenderableMessage): Self = StObject.set(x, "emptyList", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: (labels : std.Array<string>): string extends std.Function ? (labels : std.Array<string>): string : (): string */ js.Any
+      ): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
-      inline def setEmptyListFunction0(value: () => ReactNode | String): Self = StObject.set(x, "emptyList", js.Any.fromFunction0(value))
-      
-      inline def setEmptyListUndefined: Self = StObject.set(x, "emptyList", js.undefined)
-      
-      inline def setIncrement(value: js.Function0[String] | LabelMessage): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
-      
-      inline def setIncrementFunction0(value: () => String): Self = StObject.set(x, "increment", js.Any.fromFunction0(value))
-      
-      inline def setIncrementFunction1(value: /* ctx */ Any => String): Self = StObject.set(x, "increment", js.Any.fromFunction1(value))
-      
-      inline def setMoveBack(value: js.Function0[String] | LabelMessage): Self = StObject.set(x, "moveBack", value.asInstanceOf[js.Any])
-      
-      inline def setMoveBackFunction0(value: () => String): Self = StObject.set(x, "moveBack", js.Any.fromFunction0(value))
-      
-      inline def setMoveBackFunction1(value: /* ctx */ Any => String): Self = StObject.set(x, "moveBack", js.Any.fromFunction1(value))
-      
-      inline def setMoveForward(value: js.Function0[String] | LabelMessage): Self = StObject.set(x, "moveForward", value.asInstanceOf[js.Any])
-      
-      inline def setMoveForwardFunction0(value: () => String): Self = StObject.set(x, "moveForward", js.Any.fromFunction0(value))
-      
-      inline def setMoveForwardFunction1(value: /* ctx */ Any => String): Self = StObject.set(x, "moveForward", js.Any.fromFunction1(value))
-      
-      inline def setMoveToday(value: js.Function0[String] | LabelMessage): Self = StObject.set(x, "moveToday", value.asInstanceOf[js.Any])
-      
-      inline def setMoveTodayFunction0(value: () => String): Self = StObject.set(x, "moveToday", js.Any.fromFunction0(value))
-      
-      inline def setMoveTodayFunction1(value: /* ctx */ Any => String): Self = StObject.set(x, "moveToday", js.Any.fromFunction1(value))
-      
-      inline def setNoneSelected(value: js.Function0[String] | LabelMessage): Self = StObject.set(x, "noneSelected", value.asInstanceOf[js.Any])
-      
-      inline def setNoneSelectedFunction0(value: () => String): Self = StObject.set(x, "noneSelected", js.Any.fromFunction0(value))
-      
-      inline def setNoneSelectedFunction1(value: /* ctx */ Any => String): Self = StObject.set(x, "noneSelected", js.Any.fromFunction1(value))
-      
-      inline def setOpenCombobox(value: js.Function0[String] | LabelMessage): Self = StObject.set(x, "openCombobox", value.asInstanceOf[js.Any])
-      
-      inline def setOpenComboboxFunction0(value: () => String): Self = StObject.set(x, "openCombobox", js.Any.fromFunction0(value))
-      
-      inline def setOpenComboboxFunction1(value: /* ctx */ Any => String): Self = StObject.set(x, "openCombobox", js.Any.fromFunction1(value))
-      
-      inline def setRemoveLabel(value: js.Function0[String] | LabelMessage): Self = StObject.set(x, "removeLabel", value.asInstanceOf[js.Any])
-      
-      inline def setRemoveLabelFunction0(value: () => String): Self = StObject.set(x, "removeLabel", js.Any.fromFunction0(value))
-      
-      inline def setRemoveLabelFunction1(value: /* ctx */ Any => String): Self = StObject.set(x, "removeLabel", js.Any.fromFunction1(value))
-      
-      inline def setSelectedItems(value: js.Function0[String] | (js.Function1[/* labels */ js.Array[String], String])): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
-      
-      inline def setSelectedItemsFunction0(value: () => String): Self = StObject.set(x, "selectedItems", js.Any.fromFunction0(value))
-      
-      inline def setSelectedItemsFunction1(value: /* labels */ js.Array[String] => String): Self = StObject.set(x, "selectedItems", js.Any.fromFunction1(value))
-      
-      inline def setTagsLabel(value: js.Function0[String] | LabelMessage): Self = StObject.set(x, "tagsLabel", value.asInstanceOf[js.Any])
-      
-      inline def setTagsLabelFunction0(value: () => String): Self = StObject.set(x, "tagsLabel", js.Any.fromFunction0(value))
-      
-      inline def setTagsLabelFunction1(value: /* ctx */ Any => String): Self = StObject.set(x, "tagsLabel", js.Any.fromFunction1(value))
+      inline def setTagsLabel(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react-widgets.react-widgets/esm/messages.LabelMessage extends std.Function ? react-widgets.react-widgets/esm/messages.LabelMessage : (): string */ js.Any
+      ): Self = StObject.set(x, "tagsLabel", value.asInstanceOf[js.Any])
     }
   }
   

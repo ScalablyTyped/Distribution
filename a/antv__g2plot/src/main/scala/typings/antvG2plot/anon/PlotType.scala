@@ -8,11 +8,11 @@ trait PlotType extends StObject {
   
   var plotType: String
   
-  var statistic: typings.antvG2plot.statisticMod.Statistic
+  var statistic: typings.antvG2plot.libTypesStatisticMod.Statistic
 }
 object PlotType {
   
-  inline def apply(plotType: String, statistic: typings.antvG2plot.statisticMod.Statistic): PlotType = {
+  inline def apply(plotType: String, statistic: typings.antvG2plot.libTypesStatisticMod.Statistic): PlotType = {
     val __obj = js.Dynamic.literal(plotType = plotType.asInstanceOf[js.Any], statistic = statistic.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotType]
   }
@@ -21,6 +21,6 @@ object PlotType {
     
     inline def setPlotType(value: String): Self = StObject.set(x, "plotType", value.asInstanceOf[js.Any])
     
-    inline def setStatistic(value: typings.antvG2plot.statisticMod.Statistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
+    inline def setStatistic(value: typings.antvG2plot.libTypesStatisticMod.Statistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
   }
 }

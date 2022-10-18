@@ -33,27 +33,6 @@ object anon {
     }
   }
   
-  trait FilenameId extends StObject {
-    
-    var filename: String
-    
-    var id: String
-  }
-  object FilenameId {
-    
-    inline def apply(filename: String, id: String): FilenameId = {
-      val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FilenameId]
-    }
-    
-    extension [Self <: FilenameId](x: Self) {
-      
-      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait FilenameString extends StObject {
     
     var filename: String
@@ -73,18 +52,39 @@ object anon {
   
   trait Id extends StObject {
     
-    var id: String
+    var filename: String
     
-    var originalFilename: String
+    var id: String
   }
   object Id {
     
-    inline def apply(id: String, originalFilename: String): Id = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], originalFilename = originalFilename.asInstanceOf[js.Any])
+    inline def apply(filename: String, id: String): Id = {
+      val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
     extension [Self <: Id](x: Self) {
+      
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait OriginalFilename extends StObject {
+    
+    var id: String
+    
+    var originalFilename: String
+  }
+  object OriginalFilename {
+    
+    inline def apply(id: String, originalFilename: String): OriginalFilename = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], originalFilename = originalFilename.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OriginalFilename]
+    }
+    
+    extension [Self <: OriginalFilename](x: Self) {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

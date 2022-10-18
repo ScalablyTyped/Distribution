@@ -1,15 +1,15 @@
 package typings.rdflib.anon
 
-import typings.rdflib.fetcherMod.ExtendedResponse
-import typings.rdflib.fetcherMod.Fetch
-import typings.rdflib.fetcherMod.HTTPMethods
-import typings.rdflib.fetcherMod.Handler
+import typings.rdflib.libFetcherMod.ExtendedResponse
+import typings.rdflib.libFetcherMod.Fetch
+import typings.rdflib.libFetcherMod.HTTPMethods
+import typings.rdflib.libFetcherMod.Handler
+import typings.rdflib.libTfTypesMod.BlankNode
+import typings.rdflib.libTfTypesMod.NamedNode
+import typings.rdflib.libTfTypesMod.QuadSubject
+import typings.rdflib.libTypesMod.ContentType
 import typings.rdflib.rdflibStrings.include
 import typings.rdflib.rdflibStrings.omit
-import typings.rdflib.tfTypesMod.BlankNode
-import typings.rdflib.tfTypesMod.NamedNode
-import typings.rdflib.tfTypesMod.QuadSubject
-import typings.rdflib.typesMod.ContentType
 import typings.std.AbortSignal
 import typings.std.HeadersInit
 import typings.std.ReferrerPolicy

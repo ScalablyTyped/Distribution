@@ -15,6 +15,6 @@ open class LoadFileError protected ()
     * @param object defines the optional web request
     */
   def this(message: String) = this()
-  def this(message: String, `object`: typings.babylonjs.webRequestMod.WebRequest) = this()
+  def this(message: String, `object`: typings.babylonjs.miscWebRequestMod.WebRequest) = this()
   def this(message: String, `object`: File) = this()
 }

@@ -1,18 +1,18 @@
 package typings.tsMockito
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.tsMockito.argCaptorMod.ArgCaptor1
-import typings.tsMockito.argCaptorMod.ArgCaptor10
-import typings.tsMockito.argCaptorMod.ArgCaptor2
-import typings.tsMockito.argCaptorMod.ArgCaptor3
-import typings.tsMockito.argCaptorMod.ArgCaptor4
-import typings.tsMockito.argCaptorMod.ArgCaptor5
-import typings.tsMockito.argCaptorMod.ArgCaptor6
-import typings.tsMockito.argCaptorMod.ArgCaptor7
-import typings.tsMockito.argCaptorMod.ArgCaptor8
-import typings.tsMockito.argCaptorMod.ArgCaptor9
-import typings.tsMockito.methodStubSetterMod.MethodStubSetter
-import typings.tsMockito.methodStubVerificatorMod.MethodStubVerificator
+import typings.tsMockito.libCaptureArgCaptorMod.ArgCaptor1
+import typings.tsMockito.libCaptureArgCaptorMod.ArgCaptor10
+import typings.tsMockito.libCaptureArgCaptorMod.ArgCaptor2
+import typings.tsMockito.libCaptureArgCaptorMod.ArgCaptor3
+import typings.tsMockito.libCaptureArgCaptorMod.ArgCaptor4
+import typings.tsMockito.libCaptureArgCaptorMod.ArgCaptor5
+import typings.tsMockito.libCaptureArgCaptorMod.ArgCaptor6
+import typings.tsMockito.libCaptureArgCaptorMod.ArgCaptor7
+import typings.tsMockito.libCaptureArgCaptorMod.ArgCaptor8
+import typings.tsMockito.libCaptureArgCaptorMod.ArgCaptor9
+import typings.tsMockito.libMethodStubSetterMod.MethodStubSetter
+import typings.tsMockito.libMethodStubVerificatorMod.MethodStubVerificator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

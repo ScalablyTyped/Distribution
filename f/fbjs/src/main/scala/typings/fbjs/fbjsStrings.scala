@@ -1,7 +1,7 @@
 package typings.fbjs
 
-import typings.fbjs.unicodeBidiDirectionMod.BidiDirection
-import typings.fbjs.unicodeBidiDirectionMod.HTMLDir
+import typings.fbjs.libUnicodeBidiDirectionMod.BidiDirection
+import typings.fbjs.libUnicodeBidiDirectionMod.HTMLDir
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,28 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object fbjsStrings {
   
   @js.native
-  sealed trait ^ extends StObject
-  inline def ^ : ^ = "^".asInstanceOf[^]
-  
-  @js.native
   sealed trait LTR
     extends StObject
        with BidiDirection
-       with typings.fbjs.unicodeBidiServiceMod.BidiDirection
+       with typings.fbjs.libUnicodeBidiServiceMod.BidiDirection
   inline def LTR: LTR = "LTR".asInstanceOf[LTR]
   
   @js.native
   sealed trait NEUTRAL
     extends StObject
        with BidiDirection
-       with typings.fbjs.unicodeBidiServiceMod.BidiDirection
+       with typings.fbjs.libUnicodeBidiServiceMod.BidiDirection
   inline def NEUTRAL: NEUTRAL = "NEUTRAL".asInstanceOf[NEUTRAL]
   
   @js.native
   sealed trait RTL
     extends StObject
        with BidiDirection
-       with typings.fbjs.unicodeBidiServiceMod.BidiDirection
+       with typings.fbjs.libUnicodeBidiServiceMod.BidiDirection
   inline def RTL: RTL = "RTL".asInstanceOf[RTL]
   
   @js.native

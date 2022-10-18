@@ -2,8 +2,8 @@ package typings.jsreportCore.mod
 
 import typings.jsreportCore.anon.AllowedModules
 import typings.jsreportCore.anon.DataDirectory
+import typings.jsreportCore.anon.Enabled
 import typings.jsreportCore.anon.Provider
-import typings.jsreportCore.anon.SecretKey
 import typings.jsreportCore.anon.Silent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,7 +34,7 @@ trait Configuration extends StObject {
     */
   var enableRequestReportTimeout: js.UndefOr[Boolean] = js.undefined
   
-  var encryption: js.UndefOr[SecretKey] = js.undefined
+  var encryption: js.UndefOr[Enabled] = js.undefined
   
   var extensions: js.UndefOr[Any] = js.undefined
   
@@ -113,7 +113,7 @@ object Configuration {
     
     inline def setEnableRequestReportTimeoutUndefined: Self = StObject.set(x, "enableRequestReportTimeout", js.undefined)
     
-    inline def setEncryption(value: SecretKey): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: Enabled): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
     
     inline def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
     

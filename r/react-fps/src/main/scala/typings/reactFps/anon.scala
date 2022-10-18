@@ -1,6 +1,6 @@
 package typings.reactFps
 
-import typings.reactFps.useStylesMod.CssProp
+import typings.reactFps.buildUseStylesMod.CssProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -32,16 +32,8 @@ object iobrokerStrings {
   inline def Timeout: Timeout = "Timeout".asInstanceOf[Timeout]
   
   @js.native
-  sealed trait _id extends StObject
-  inline def _id: _id = "_id".asInstanceOf[_id]
-  
-  @js.native
   sealed trait accessErrors extends StObject
   inline def accessErrors: accessErrors = "accessErrors".asInstanceOf[accessErrors]
-  
-  @js.native
-  sealed trait acl extends StObject
-  inline def acl: acl = "acl".asInstanceOf[acl]
   
   @js.native
   sealed trait adapter
@@ -420,6 +412,12 @@ object iobrokerStrings {
   @js.native
   sealed trait total extends StObject
   inline def total: total = "total".asInstanceOf[total]
+  
+  @js.native
+  sealed trait uk
+    extends StObject
+       with Languages
+  inline def uk: uk = "uk".asInstanceOf[uk]
   
   @js.native
   sealed trait unload extends StObject

@@ -1,7 +1,6 @@
 package typings.knockoutMapping
 
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.TopLevel
 import typings.knockoutMapping.anon.Copy
 import typings.knockoutMapping.mod.global.KnockoutMapping
 import org.scalablytyped.runtime.StObject
@@ -56,13 +55,25 @@ object mod extends Shortcut {
         * @param target View model object previosly mapped to be updated.
         */
       def fromJS[T](source: js.Array[T]): KnockoutReadonlyObservableArrayType[T] = js.native
+      def fromJS[T](source: js.Array[T], options: Unit, target: KnockoutObservableArrayType[T]): KnockoutObservableArrayType[T] = js.native
       def fromJS[T](source: js.Array[T], options: Unit, target: KnockoutReadonlyObservableArrayType[T]): KnockoutReadonlyObservableArrayType[T] = js.native
       def fromJS[T](source: js.Array[T], options: KnockoutMappingOptions[js.Array[T]]): KnockoutReadonlyObservableArrayType[T] = js.native
       def fromJS[T](
         source: js.Array[T],
         options: KnockoutMappingOptions[js.Array[T]],
+        target: KnockoutObservableArrayType[T]
+      ): KnockoutObservableArrayType[T] = js.native
+      def fromJS[T](
+        source: js.Array[T],
+        options: KnockoutMappingOptions[js.Array[T]],
         target: KnockoutReadonlyObservableArrayType[T]
       ): KnockoutReadonlyObservableArrayType[T] = js.native
+      /**
+        * Updates target's observable properties with those of the sources.
+        * @param source Array to be mapped.
+        * @param target View model object previosly mapped to be updated.
+        */
+      def fromJS[T](source: js.Array[T], target: KnockoutObservableArrayType[T]): KnockoutObservableArrayType[T] = js.native
       /**
         * Updates target's observable properties with those of the sources.
         * @param source Array to be mapped.
@@ -98,22 +109,7 @@ object mod extends Shortcut {
       @JSName("fromJS")
       def fromJS_T_KnockoutObservableArrayType[T](source: js.Array[T]): KnockoutObservableArrayType[T] = js.native
       @JSName("fromJS")
-      def fromJS_T_KnockoutObservableArrayType[T](source: js.Array[T], options: Unit, target: KnockoutObservableArrayType[T]): KnockoutObservableArrayType[T] = js.native
-      @JSName("fromJS")
       def fromJS_T_KnockoutObservableArrayType[T](source: js.Array[T], options: KnockoutMappingOptions[js.Array[T]]): KnockoutObservableArrayType[T] = js.native
-      @JSName("fromJS")
-      def fromJS_T_KnockoutObservableArrayType[T](
-        source: js.Array[T],
-        options: KnockoutMappingOptions[js.Array[T]],
-        target: KnockoutObservableArrayType[T]
-      ): KnockoutObservableArrayType[T] = js.native
-      /**
-        * Updates target's observable properties with those of the sources.
-        * @param source Array to be mapped.
-        * @param target View model object previosly mapped to be updated.
-        */
-      @JSName("fromJS")
-      def fromJS_T_KnockoutObservableArrayType[T](source: js.Array[T], target: KnockoutObservableArrayType[T]): KnockoutObservableArrayType[T] = js.native
       
       /**
         * Undocumented. Custom implementation of JavaScript's typeof.
@@ -197,13 +193,27 @@ object mod extends Shortcut {
       }
     }
     
-    type KnockoutMappingOptions[T] = KnockoutMappingSpecificOptions[T] | KnockoutMappingStandardOptions
+    /* Rewritten from type alias, can be one of: 
+      - typings.knockoutMapping.mod.global.KnockoutMappingSpecificOptions[T]
+      - typings.knockoutMapping.mod.global.KnockoutMappingStandardOptions
+    */
+    trait KnockoutMappingOptions[T] extends StObject
     
-    type KnockoutMappingSpecificOptions[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]:? knockout.mapping.knockout.mapping.<global>.KnockoutPropertyMappingCallBack}
-      */ typings.knockoutMapping.knockoutMappingStrings.KnockoutMappingSpecificOptions & TopLevel[Any]
+    /** NOTE: Mapped type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      {[ P in keyof T ]:? knockout.mapping.knockout.mapping.<global>.KnockoutPropertyMappingCallBack}
+      }}}
+      */
+    @js.native
+    trait KnockoutMappingSpecificOptions[T]
+      extends StObject
+         with KnockoutMappingOptions[T]
     
-    trait KnockoutMappingStandardOptions extends StObject {
+    trait KnockoutMappingStandardOptions
+      extends StObject
+         with KnockoutMappingOptions[Any] {
       
       var copy: js.UndefOr[js.Array[String]] = js.undefined
       
@@ -317,11 +327,25 @@ object mod extends Shortcut {
     }
     
     // Could not get this to return any when T is any. It returns a Union type of the possible values.
-    type KnockoutObservableArrayType[T] = Any
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      T extends knockout.mapping.knockout.mapping.Primitives ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<T> * / any : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<KnockoutObservableType<T>> * / any
+      }}}
+      */
+    @js.native
+    trait KnockoutObservableArrayType[T] extends StObject
     
-    type KnockoutObservableType[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: T[P] extends knockout.mapping.knockout.mapping.Primitives? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T[P]> * / any : T[P] extends std.Array<any>? knockout.mapping.knockout.mapping.<global>.KnockoutObservableArrayType<T[P][number]> : T[P] extends std.ReadonlyArray<any>? knockout.mapping.knockout.mapping.<global>.KnockoutReadonlyObservableArrayType<T[P][number]> : knockout.mapping.knockout.mapping.<global>.MappedType<T[P]>}
-      */ typings.knockoutMapping.knockoutMappingStrings.KnockoutObservableType & TopLevel[Any]
+    /** NOTE: Mapped type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      {[ P in keyof T ]: T[P] extends knockout.mapping.knockout.mapping.Primitives? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T[P]> * / any : T[P] extends std.Array<any>? knockout.mapping.knockout.mapping.<global>.KnockoutObservableArrayType<T[P][number]> : T[P] extends std.ReadonlyArray<any>? knockout.mapping.knockout.mapping.<global>.KnockoutReadonlyObservableArrayType<T[P][number]> : knockout.mapping.knockout.mapping.<global>.MappedType<T[P]>}
+      }}}
+      */
+    @js.native
+    trait KnockoutObservableType[T] extends StObject
     
     trait KnockoutPropertyMappingCallBack extends StObject {
       
@@ -354,7 +378,15 @@ object mod extends Shortcut {
       }
     }
     
-    type KnockoutReadonlyObservableArrayType[T] = Any
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      T extends knockout.mapping.knockout.mapping.Primitives ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutReadonlyObservableArray<T> * / any : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutReadonlyObservableArray<KnockoutObservableType<T>> * / any
+      }}}
+      */
+    @js.native
+    trait KnockoutReadonlyObservableArrayType[T] extends StObject
     
     trait KnockoutStatic extends StObject {
       
@@ -374,6 +406,14 @@ object mod extends Shortcut {
       }
     }
     
-    type MappedType[T] = KnockoutObservableType[T]
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      [T] extends [knockout.mapping.knockout.mapping.Primitives] ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T> * / any : [T] extends [object] ? knockout.mapping.knockout.mapping.<global>.KnockoutObservableType<T> : any
+      }}}
+      */
+    @js.native
+    trait MappedType[T] extends StObject
   }
 }

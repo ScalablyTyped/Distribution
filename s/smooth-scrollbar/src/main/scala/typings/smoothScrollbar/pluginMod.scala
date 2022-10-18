@@ -1,64 +1,98 @@
 package typings.smoothScrollbar
 
-import typings.smoothScrollbar.data2dMod.Data2d
+import org.scalablytyped.runtime.StringDictionary
+import typings.smoothScrollbar.anon.TypeofScrollbarPlugin
+import typings.smoothScrollbar.interfacesData2dMod.Data2d
 import typings.smoothScrollbar.scrollbarMod.Scrollbar
+import typings.std.Event
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginMod {
   
-  trait ScrollbarPlugin extends StObject {
+  @JSImport("smooth-scrollbar/plugin", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("smooth-scrollbar/plugin", "ScrollbarPlugin")
+  @js.native
+  open class ScrollbarPlugin protected ()
+    extends StObject
+       with typings.smoothScrollbar.interfacesPluginMod.ScrollbarPlugin {
+    def this(scrollbar: Scrollbar) = this()
+    def this(scrollbar: Scrollbar, options: Any) = this()
     
-    val name: String
+    /* CompleteClass */
+    override val name: String = js.native
     
-    def onDestroy(): Unit
+    /* CompleteClass */
+    override def onDestroy(): Unit = js.native
     
-    def onInit(): Unit
+    /* CompleteClass */
+    override def onInit(): Unit = js.native
     
-    def onRender(remainMomentum: Data2d): Unit
+    /* CompleteClass */
+    override def onRender(remainMomentum: Data2d): Unit = js.native
     
-    def onUpdate(): Unit
+    /* CompleteClass */
+    override def onUpdate(): Unit = js.native
     
-    val options: Any
+    /* CompleteClass */
+    override val options: Any = js.native
     
-    val scrollbar: Scrollbar
+    /* CompleteClass */
+    override val scrollbar: typings.smoothScrollbar.interfacesScrollbarMod.Scrollbar = js.native
     
-    def transformDelta(delta: Data2d, fromEvent: Any): Data2d
+    def transformDelta(delta: Data2d, _evt: Event): Data2d = js.native
+    /* CompleteClass */
+    override def transformDelta(delta: Data2d, fromEvent: Any): Data2d = js.native
   }
+  /* static members */
   object ScrollbarPlugin {
     
-    inline def apply(
-      name: String,
-      onDestroy: () => Unit,
-      onInit: () => Unit,
-      onRender: Data2d => Unit,
-      onUpdate: () => Unit,
-      options: Any,
-      scrollbar: Scrollbar,
-      transformDelta: (Data2d, Any) => Data2d
-    ): ScrollbarPlugin = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onDestroy = js.Any.fromFunction0(onDestroy), onInit = js.Any.fromFunction0(onInit), onRender = js.Any.fromFunction1(onRender), onUpdate = js.Any.fromFunction0(onUpdate), options = options.asInstanceOf[js.Any], scrollbar = scrollbar.asInstanceOf[js.Any], transformDelta = js.Any.fromFunction2(transformDelta))
-      __obj.asInstanceOf[ScrollbarPlugin]
+    @JSImport("smooth-scrollbar/plugin", "ScrollbarPlugin")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("smooth-scrollbar/plugin", "ScrollbarPlugin.defaultOptions")
+    @js.native
+    def defaultOptions: Any = js.native
+    inline def defaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    
+    @JSImport("smooth-scrollbar/plugin", "ScrollbarPlugin.pluginName")
+    @js.native
+    def pluginName: String = js.native
+    inline def pluginName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pluginName")(x.asInstanceOf[js.Any])
+  }
+  
+  inline def addPlugins(Plugins: TypeofScrollbarPlugin*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPlugins")(Plugins.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+  
+  @JSImport("smooth-scrollbar/plugin", "globalPlugins")
+  @js.native
+  val globalPlugins: PluginMap = js.native
+  
+  inline def initPlugins(scrollbar: Scrollbar, options: Any): js.Array[ScrollbarPlugin] = (^.asInstanceOf[js.Dynamic].applyDynamic("initPlugins")(scrollbar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[ScrollbarPlugin]]
+  
+  trait PluginMap extends StObject {
+    
+    var constructors: StringDictionary[TypeofScrollbarPlugin]
+    
+    var order: Set[String]
+  }
+  object PluginMap {
+    
+    inline def apply(constructors: StringDictionary[TypeofScrollbarPlugin], order: Set[String]): PluginMap = {
+      val __obj = js.Dynamic.literal(constructors = constructors.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PluginMap]
     }
     
-    extension [Self <: ScrollbarPlugin](x: Self) {
+    extension [Self <: PluginMap](x: Self) {
       
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setConstructors(value: StringDictionary[TypeofScrollbarPlugin]): Self = StObject.set(x, "constructors", value.asInstanceOf[js.Any])
       
-      inline def setOnDestroy(value: () => Unit): Self = StObject.set(x, "onDestroy", js.Any.fromFunction0(value))
-      
-      inline def setOnInit(value: () => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
-      
-      inline def setOnRender(value: Data2d => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction1(value))
-      
-      inline def setOnUpdate(value: () => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction0(value))
-      
-      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbar(value: Scrollbar): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
-      
-      inline def setTransformDelta(value: (Data2d, Any) => Data2d): Self = StObject.set(x, "transformDelta", js.Any.fromFunction2(value))
+      inline def setOrder(value: Set[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     }
   }
 }

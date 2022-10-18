@@ -20,56 +20,56 @@ object AnimationUtils {
   
   inline def isTypedArray(`object`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypedArray")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def makeClipAdditive(targetClip: typings.three.animationClipMod.AnimationClip): typings.three.animationClipMod.AnimationClip = ^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any]).asInstanceOf[typings.three.animationClipMod.AnimationClip]
-  inline def makeClipAdditive(targetClip: typings.three.animationClipMod.AnimationClip, referenceFrame: Double): typings.three.animationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[typings.three.animationClipMod.AnimationClip]
+  inline def makeClipAdditive(targetClip: typings.three.srcAnimationAnimationClipMod.AnimationClip): typings.three.srcAnimationAnimationClipMod.AnimationClip = ^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcAnimationAnimationClipMod.AnimationClip]
+  inline def makeClipAdditive(targetClip: typings.three.srcAnimationAnimationClipMod.AnimationClip, referenceFrame: Double): typings.three.srcAnimationAnimationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcAnimationAnimationClipMod.AnimationClip]
   inline def makeClipAdditive(
-    targetClip: typings.three.animationClipMod.AnimationClip,
+    targetClip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
     referenceFrame: Double,
     referenceClip: Unit,
     fps: Double
-  ): typings.three.animationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], referenceClip.asInstanceOf[js.Any], fps.asInstanceOf[js.Any])).asInstanceOf[typings.three.animationClipMod.AnimationClip]
+  ): typings.three.srcAnimationAnimationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], referenceClip.asInstanceOf[js.Any], fps.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcAnimationAnimationClipMod.AnimationClip]
   inline def makeClipAdditive(
-    targetClip: typings.three.animationClipMod.AnimationClip,
+    targetClip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
     referenceFrame: Double,
-    referenceClip: typings.three.animationClipMod.AnimationClip
-  ): typings.three.animationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], referenceClip.asInstanceOf[js.Any])).asInstanceOf[typings.three.animationClipMod.AnimationClip]
+    referenceClip: typings.three.srcAnimationAnimationClipMod.AnimationClip
+  ): typings.three.srcAnimationAnimationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], referenceClip.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcAnimationAnimationClipMod.AnimationClip]
   inline def makeClipAdditive(
-    targetClip: typings.three.animationClipMod.AnimationClip,
+    targetClip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
     referenceFrame: Double,
-    referenceClip: typings.three.animationClipMod.AnimationClip,
+    referenceClip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
     fps: Double
-  ): typings.three.animationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], referenceClip.asInstanceOf[js.Any], fps.asInstanceOf[js.Any])).asInstanceOf[typings.three.animationClipMod.AnimationClip]
+  ): typings.three.srcAnimationAnimationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], referenceClip.asInstanceOf[js.Any], fps.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcAnimationAnimationClipMod.AnimationClip]
   inline def makeClipAdditive(
-    targetClip: typings.three.animationClipMod.AnimationClip,
+    targetClip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
     referenceFrame: Unit,
     referenceClip: Unit,
     fps: Double
-  ): typings.three.animationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], referenceClip.asInstanceOf[js.Any], fps.asInstanceOf[js.Any])).asInstanceOf[typings.three.animationClipMod.AnimationClip]
+  ): typings.three.srcAnimationAnimationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], referenceClip.asInstanceOf[js.Any], fps.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcAnimationAnimationClipMod.AnimationClip]
   inline def makeClipAdditive(
-    targetClip: typings.three.animationClipMod.AnimationClip,
+    targetClip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
     referenceFrame: Unit,
-    referenceClip: typings.three.animationClipMod.AnimationClip
-  ): typings.three.animationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], referenceClip.asInstanceOf[js.Any])).asInstanceOf[typings.three.animationClipMod.AnimationClip]
+    referenceClip: typings.three.srcAnimationAnimationClipMod.AnimationClip
+  ): typings.three.srcAnimationAnimationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], referenceClip.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcAnimationAnimationClipMod.AnimationClip]
   inline def makeClipAdditive(
-    targetClip: typings.three.animationClipMod.AnimationClip,
+    targetClip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
     referenceFrame: Unit,
-    referenceClip: typings.three.animationClipMod.AnimationClip,
+    referenceClip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
     fps: Double
-  ): typings.three.animationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], referenceClip.asInstanceOf[js.Any], fps.asInstanceOf[js.Any])).asInstanceOf[typings.three.animationClipMod.AnimationClip]
+  ): typings.three.srcAnimationAnimationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClipAdditive")(targetClip.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], referenceClip.asInstanceOf[js.Any], fps.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcAnimationAnimationClipMod.AnimationClip]
   
   inline def sortedArray(values: js.Array[Any], stride: Double, order: js.Array[Double]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sortedArray")(values.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   inline def subclip(
-    sourceClip: typings.three.animationClipMod.AnimationClip,
+    sourceClip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
     name: String,
     startFrame: Double,
     endFrame: Double
-  ): typings.three.animationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("subclip")(sourceClip.asInstanceOf[js.Any], name.asInstanceOf[js.Any], startFrame.asInstanceOf[js.Any], endFrame.asInstanceOf[js.Any])).asInstanceOf[typings.three.animationClipMod.AnimationClip]
+  ): typings.three.srcAnimationAnimationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("subclip")(sourceClip.asInstanceOf[js.Any], name.asInstanceOf[js.Any], startFrame.asInstanceOf[js.Any], endFrame.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcAnimationAnimationClipMod.AnimationClip]
   inline def subclip(
-    sourceClip: typings.three.animationClipMod.AnimationClip,
+    sourceClip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
     name: String,
     startFrame: Double,
     endFrame: Double,
     fps: Double
-  ): typings.three.animationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("subclip")(sourceClip.asInstanceOf[js.Any], name.asInstanceOf[js.Any], startFrame.asInstanceOf[js.Any], endFrame.asInstanceOf[js.Any], fps.asInstanceOf[js.Any])).asInstanceOf[typings.three.animationClipMod.AnimationClip]
+  ): typings.three.srcAnimationAnimationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("subclip")(sourceClip.asInstanceOf[js.Any], name.asInstanceOf[js.Any], startFrame.asInstanceOf[js.Any], endFrame.asInstanceOf[js.Any], fps.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcAnimationAnimationClipMod.AnimationClip]
 }

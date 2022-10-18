@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AutoLayoutMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.AutoLayoutMode & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.AutoLayoutMode & String] = js.native
   
-  /* "auto" */ val Auto: typings.babylonjs.webgpuConstantsMod.AutoLayoutMode.Auto & String = js.native
+  /* "auto" */ val Auto: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.AutoLayoutMode.Auto & String = js.native
 }

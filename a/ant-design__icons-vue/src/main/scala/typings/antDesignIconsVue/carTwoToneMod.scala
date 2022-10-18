@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCarTwoToneMod.CarTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CarTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CarTwoTone", JSImport.Default)
   @js.native
   val default: CarTwoToneIconType = js.native
-  
-  @js.native
-  trait CarTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CarTwoToneIconType: String = js.native
-  }
   
   type _To = CarTwoToneIconType
   

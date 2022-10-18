@@ -2,9 +2,9 @@ package typings.reactMdProgress
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdProgress.circularProgressMod.CircularProgressProps
-import typings.reactMdProgress.getProgressA11yMod.ProgressA11y
-import typings.reactMdProgress.linearProgressMod.LinearProgressProps
+import typings.reactMdProgress.typesCircularProgressMod.CircularProgressProps
+import typings.reactMdProgress.typesGetProgressA11yMod.ProgressA11y
+import typings.reactMdProgress.typesLinearProgressMod.LinearProgressProps
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

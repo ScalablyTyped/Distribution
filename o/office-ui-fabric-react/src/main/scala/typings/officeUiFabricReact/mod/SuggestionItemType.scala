@@ -9,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SuggestionItemType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType & Double
+  ] = js.native
   
-  /* 2 */ val footer: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.footer & Double = js.native
+  /* 2 */ val footer: typings.officeUiFabricReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType.footer & Double = js.native
   
-  /* 0 */ val header: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.header & Double = js.native
+  /* 0 */ val header: typings.officeUiFabricReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType.header & Double = js.native
   
-  /* 1 */ val suggestion: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.suggestion & Double = js.native
+  /* 1 */ val suggestion: typings.officeUiFabricReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType.suggestion & Double = js.native
 }

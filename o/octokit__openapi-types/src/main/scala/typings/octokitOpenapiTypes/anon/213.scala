@@ -1,38 +1,27 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.active
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `213` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pull-request-simple'] */ js.Any
-  ]
+  /**
+    * @description The state that the membership should be in. Only `"active"` will be accepted.
+    * @enum {string}
+    */
+  var state: active
 }
 object `213` {
   
-  inline def apply(
-    applicationSlashjson: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pull-request-simple'] */ js.Any
-    ]
-  ): `213` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+  inline def apply(): `213` = {
+    val __obj = js.Dynamic.literal(state = "active")
     __obj.asInstanceOf[`213`]
   }
   
   extension [Self <: `213`](x: Self) {
     
-    inline def setApplicationSlashjson(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pull-request-simple'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pull-request-simple'] */ js.Any)*
-    ): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setState(value: active): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

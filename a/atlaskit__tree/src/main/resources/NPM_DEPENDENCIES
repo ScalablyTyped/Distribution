@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@atlaskit/tree" : "8.6.2"
+      "@atlaskit/tree" : "8.6.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@atlaskit/tree" : "8.6.2"
+      "@atlaskit/tree" : "8.6.3"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 package typings.wdioTypes.anon
 
-import typings.wdioTypes.capabilitiesMod.LoggingPreferences
+import typings.wdioTypes.buildCapabilitiesMod.LoggingPreferences
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

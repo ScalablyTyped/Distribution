@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AssetTaskState extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.assetsManagerMod.AssetTaskState & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.miscAssetsManagerMod.AssetTaskState & Double] = js.native
   
-  /* 2 */ val DONE: typings.babylonjs.assetsManagerMod.AssetTaskState.DONE & Double = js.native
+  /* 2 */ val DONE: typings.babylonjs.miscAssetsManagerMod.AssetTaskState.DONE & Double = js.native
   
-  /* 3 */ val ERROR: typings.babylonjs.assetsManagerMod.AssetTaskState.ERROR & Double = js.native
+  /* 3 */ val ERROR: typings.babylonjs.miscAssetsManagerMod.AssetTaskState.ERROR & Double = js.native
   
-  /* 0 */ val INIT: typings.babylonjs.assetsManagerMod.AssetTaskState.INIT & Double = js.native
+  /* 0 */ val INIT: typings.babylonjs.miscAssetsManagerMod.AssetTaskState.INIT & Double = js.native
   
-  /* 1 */ val RUNNING: typings.babylonjs.assetsManagerMod.AssetTaskState.RUNNING & Double = js.native
+  /* 1 */ val RUNNING: typings.babylonjs.miscAssetsManagerMod.AssetTaskState.RUNNING & Double = js.native
 }

@@ -6,23 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `94` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['org-membership'] */ js.Any
+  /** @description The name of the status checks */
+  var contexts: js.Array[String]
 }
 object `94` {
   
-  inline def apply(
-    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['org-membership'] */ js.Any
-  ): `94` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+  inline def apply(contexts: js.Array[String]): `94` = {
+    val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any])
     __obj.asInstanceOf[`94`]
   }
   
   extension [Self <: `94`](x: Self) {
     
-    inline def setApplicationSlashjson(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['org-membership'] */ js.Any
-    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setContexts(value: js.Array[String]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+    
+    inline def setContextsVarargs(value: String*): Self = StObject.set(x, "contexts", js.Array(value*))
   }
 }

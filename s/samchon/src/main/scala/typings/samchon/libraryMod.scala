@@ -6,10 +6,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libraryMod {
   
+  object default {
+    
+    @JSImport("samchon/library", "default.XML")
+    @js.native
+    open class XML ()
+      extends typings.samchon.libraryXmlMod.default.XML {
+      def this(str: String) = this()
+      def this(xml: typings.sxml.libModuleXmlMod.XML) = this()
+    }
+    /* static members */
+    object XML {
+      
+      @JSImport("samchon/library", "default.XML")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * @hidden
+        */
+      @JSImport("samchon/library", "default.XML._Compute_min_index")
+      @js.native
+      def _Compute_min_index: Any = js.native
+      inline def _Compute_min_index_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Compute_min_index")(x.asInstanceOf[js.Any])
+      
+      /**
+        * @hidden
+        */
+      @JSImport("samchon/library", "default.XML._Repeat")
+      @js.native
+      def _Repeat: Any = js.native
+      inline def _Repeat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
+      
+      inline def decodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+      
+      inline def decodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+      
+      inline def encodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+      
+      inline def encodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+      
+      inline def head(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")().asInstanceOf[String]
+      inline def head(encoding: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(encoding.asInstanceOf[js.Any]).asInstanceOf[String]
+    }
+    
+    @JSImport("samchon/library", "default.XMLList")
+    @js.native
+    open class XMLList ()
+      extends typings.samchon.libraryXmlMod.default.XMLList
+  }
+  
   @JSImport("samchon/library", "CartesianProduct")
   @js.native
   open class CartesianProduct protected ()
-    extends typings.samchon.cartesianProductMod.CartesianProduct {
+    extends typings.samchon.libraryCaseGeneratorsCartesianProductMod.CartesianProduct {
     /**
       * Initializer Constructor.
       *
@@ -21,7 +71,7 @@ object libraryMod {
   @JSImport("samchon/library", "Factorial")
   @js.native
   open class Factorial protected ()
-    extends typings.samchon.factorialMod.Factorial {
+    extends typings.samchon.libraryCaseGeneratorsFactorialMod.Factorial {
     /**
       * Construct from factorial size N.
       *
@@ -33,7 +83,7 @@ object libraryMod {
   @JSImport("samchon/library", "Permutation")
   @js.native
   open class Permutation protected ()
-    extends typings.samchon.permutationMod.Permutation {
+    extends typings.samchon.libraryCaseGeneratorsPermutationMod.Permutation {
     /**
       * Construct from size of N and R.
       *
@@ -46,7 +96,7 @@ object libraryMod {
   @JSImport("samchon/library", "RepeatedPermutation")
   @js.native
   open class RepeatedPermutation protected ()
-    extends typings.samchon.repeatedPermutationMod.RepeatedPermutation {
+    extends typings.samchon.libraryCaseGeneratorsRepeatedPermutationMod.RepeatedPermutation {
     /**
       * Construct from size of N and R.
       *
@@ -59,7 +109,7 @@ object libraryMod {
   @JSImport("samchon/library", "StringUtil")
   @js.native
   open class StringUtil ()
-    extends typings.samchon.stringUtilMod.StringUtil
+    extends typings.samchon.libraryUtilsStringUtilMod.StringUtil
   /* static members */
   object StringUtil {
     
@@ -264,7 +314,7 @@ object libraryMod {
     * Default Constructor.
     */
   open class URLVariables ()
-    extends typings.samchon.urlvariablesMod.URLVariables {
+    extends typings.samchon.libraryUrlvariablesMod.URLVariables {
     /**
       * Construct from a URL-encoded string.
       *
@@ -289,9 +339,9 @@ object libraryMod {
   @JSImport("samchon/library", "XML")
   @js.native
   open class XML ()
-    extends typings.samchon.xmlMod.XML {
+    extends typings.samchon.libraryXmlMod.XML {
     def this(str: String) = this()
-    def this(xml: typings.sxml.xmlMod.XML) = this()
+    def this(xml: typings.sxml.libModuleXmlMod.XML) = this()
   }
   /* static members */
   object XML {
@@ -331,5 +381,5 @@ object libraryMod {
   @JSImport("samchon/library", "XMLList")
   @js.native
   open class XMLList ()
-    extends typings.samchon.xmlMod.XMLList
+    extends typings.samchon.libraryXmlMod.XMLList
 }

@@ -2,8 +2,8 @@ package typings.ajv.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ajv.ajvBooleans.`true`
-import typings.ajv.jsonSchemaMod.Known
-import typings.ajv.jsonSchemaMod.UncheckedJSONSchemaType
+import typings.ajv.distTypesJsonSchemaMod.Known
+import typings.ajv.distTypesJsonSchemaMod.UncheckedJSONSchemaType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

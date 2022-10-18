@@ -40,7 +40,7 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.floatingPanelFloatingPanelMod.FloatingPanelRef
+import typings.antdMobile.esComponentsFloatingPanelFloatingPanelMod.FloatingPanelRef
 import typings.react.mod.Booleanish
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
@@ -300,7 +300,7 @@ trait anchorsArraynumberchildre extends StObject {
   
   var ref: js.UndefOr[Ref[FloatingPanelRef]] = js.undefined
   
-  var style: js.UndefOr[CSSPropertiesPartialRecorAnimationFillMode] = js.undefined
+  var style: js.UndefOr[CSSPropertiesPartialRecorAnimationDuration] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
 }
@@ -541,7 +541,7 @@ object anchorsArraynumberchildre {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    inline def setStyle(value: CSSPropertiesPartialRecorAnimationFillMode): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSPropertiesPartialRecorAnimationDuration): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

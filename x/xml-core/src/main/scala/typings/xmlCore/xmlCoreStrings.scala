@@ -1,6 +1,6 @@
 package typings.xmlCore
 
-import typings.xmlCore.typesMod._XmlBufferEncoding
+import typings.xmlCore.distTypesTypesMod._XmlBufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

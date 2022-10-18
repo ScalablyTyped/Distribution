@@ -1,13 +1,13 @@
 package typings.relayTestUtils
 
-import typings.reactRelay.helpersMod.KeyType
-import typings.reactRelay.helpersMod.KeyTypeData
-import typings.relayRuntime.relayNetworkTypesMod.GraphQLSingularResponse
-import typings.relayRuntime.relayStoreTypesMod.OperationDescriptor
+import typings.reactRelay.relayHooksHelpersMod.KeyType
+import typings.reactRelay.relayHooksHelpersMod.KeyTypeData
+import typings.relayRuntime.libNetworkRelayNetworkTypesMod.GraphQLSingularResponse
+import typings.relayRuntime.libStoreRelayStoreTypesMod.OperationDescriptor
 import typings.relayTestUtils.anon.MockClientData
 import typings.relayTestUtils.anon.PartialEnvironmentConfig
-import typings.relayTestUtils.relayMockPayloadGeneratorMod.MockResolvers
-import typings.relayTestUtils.relayModernMockEnvironmentMod.RelayMockEnvironment
+import typings.relayTestUtils.libRelayMockPayloadGeneratorMod.MockResolvers
+import typings.relayTestUtils.libRelayModernMockEnvironmentMod.RelayMockEnvironment
 import typings.relayTestUtils.relayTestUtilsStrings.Space$fragmentSpreads
 import typings.relayTestUtils.relayTestUtilsStrings.Space$fragmentType
 import typings.std.Omit

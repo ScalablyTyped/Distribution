@@ -3,8 +3,8 @@ package typings.semanticUiReact.mod
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.itemContentMod.ItemContentProps
-import typings.semanticUiReact.itemItemMod.ItemComponent
+import typings.semanticUiReact.distCommonjsViewsItemItemContentMod.ItemContentProps
+import typings.semanticUiReact.distCommonjsViewsItemItemMod.ItemComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

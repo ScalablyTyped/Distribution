@@ -26,7 +26,7 @@ object mod {
   inline def getPath(`object`: Record[String, Any], propertyPath: String): GetPath_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(`object`.asInstanceOf[js.Any], propertyPath.asInstanceOf[js.Any])).asInstanceOf[GetPath_]
   inline def getPath(`object`: Record[String, Any], propertyPath: js.Array[String]): GetPath_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(`object`.asInstanceOf[js.Any], propertyPath.asInstanceOf[js.Any])).asInstanceOf[GetPath_]
   
-  inline def isA(typeName: String, value: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isA")(typeName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isA[T](typeName: String, value: Any): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isA")(typeName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
   
   inline def isError(value: Any): /* is std.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Error */ Boolean]
   

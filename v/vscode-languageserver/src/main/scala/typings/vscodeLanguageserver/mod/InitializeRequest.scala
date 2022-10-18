@@ -1,9 +1,9 @@
 package typings.vscodeLanguageserver.mod
 
 import typings.vscodeLanguageserver.vscodeLanguageserverStrings.initialize
-import typings.vscodeLanguageserverProtocol.protocolMod.InitializeError
-import typings.vscodeLanguageserverProtocol.protocolMod.InitializeParams
-import typings.vscodeLanguageserverProtocol.protocolMod.InitializeResult
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.InitializeError
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.InitializeParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.InitializeResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object InitializeRequest {
   
   @JSImport("vscode-languageserver", "InitializeRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver", "InitializeRequest.method")
   @js.native
@@ -20,5 +20,5 @@ object InitializeRequest {
   
   @JSImport("vscode-languageserver", "InitializeRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[InitializeParams, InitializeResult[Any], scala.Nothing, InitializeError, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[InitializeParams, InitializeResult[Any], scala.Nothing, InitializeError, Unit] = js.native
 }

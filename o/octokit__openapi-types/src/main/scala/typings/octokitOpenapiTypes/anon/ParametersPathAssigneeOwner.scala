@@ -8,11 +8,11 @@ trait ParametersPathAssigneeOwner extends StObject {
   
   var parameters: PathAssigneeOwner
   
-  var responses: `404ContentApplicationjsonDocumentationurlMessage`
+  var responses: `404ContentApplicationjson`
 }
 object ParametersPathAssigneeOwner {
   
-  inline def apply(parameters: PathAssigneeOwner, responses: `404ContentApplicationjsonDocumentationurlMessage`): ParametersPathAssigneeOwner = {
+  inline def apply(parameters: PathAssigneeOwner, responses: `404ContentApplicationjson`): ParametersPathAssigneeOwner = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathAssigneeOwner]
   }
@@ -21,6 +21,6 @@ object ParametersPathAssigneeOwner {
     
     inline def setParameters(value: PathAssigneeOwner): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `404ContentApplicationjsonDocumentationurlMessage`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `404ContentApplicationjson`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

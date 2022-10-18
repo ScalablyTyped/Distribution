@@ -1,6 +1,6 @@
 package typings.zustand.anon
 
-import typings.zustand.zustandReactMod.ExtractState
+import typings.zustand.reactMod.ExtractState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

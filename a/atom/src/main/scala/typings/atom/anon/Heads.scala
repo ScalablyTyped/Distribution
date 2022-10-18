@@ -23,14 +23,14 @@ object Heads {
     
     inline def setHeads(value: js.Array[String]): Self = StObject.set(x, "heads", value.asInstanceOf[js.Any])
     
-    inline def setHeadsVarargs(value: String*): Self = StObject.set(x, "heads", js.Array(value :_*))
+    inline def setHeadsVarargs(value: String*): Self = StObject.set(x, "heads", js.Array(value*))
     
     inline def setRemotes(value: js.Array[String]): Self = StObject.set(x, "remotes", value.asInstanceOf[js.Any])
     
-    inline def setRemotesVarargs(value: String*): Self = StObject.set(x, "remotes", js.Array(value :_*))
+    inline def setRemotesVarargs(value: String*): Self = StObject.set(x, "remotes", js.Array(value*))
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

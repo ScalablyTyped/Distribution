@@ -1,8 +1,8 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/pages relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk", "pages.FormBase")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "pages.FormBase")
 @js.native
-abstract class FormBase protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.FormBase {
+open class FormBase protected ()
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.FormBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,

@@ -1,7 +1,7 @@
 package typings.cssSelect
 
 import typings.cssSelect.anon.Type
-import typings.cssWhat.typesMod.Selector
+import typings.cssWhat.libEsTypesMod.Selector
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

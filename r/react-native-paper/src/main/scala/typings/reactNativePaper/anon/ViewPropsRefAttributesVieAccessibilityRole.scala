@@ -26,7 +26,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & react-native-paper.react-native-paper/lib/typescript/components/DataTable/DataTablePagination.PaginationControlsProps & react-native-paper.react-native-paper/lib/typescript/components/DataTable/DataTablePagination.PaginationDropdownProps & {  label :react.react.ReactNode | undefined,   accessibilityLabel :string | undefined,   selectPageDropdownLabel :react.react.ReactNode | undefined,   selectPageDropdownAccessibilityLabel :string | undefined,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme} */
+/* Inlined react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  title :string | undefined,   children :react.react.ReactNode,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme} */
 trait ViewPropsRefAttributesVieAccessibilityRole extends StObject {
   
   /**
@@ -55,9 +55,6 @@ trait ViewPropsRefAttributesVieAccessibilityRole extends StObject {
   /**
     * Overrides the text that's read by the screen reader when the user interacts with the element. By default, the
     * label is constructed by traversing all the children and accumulating all the Text nodes separated by space.
-    */
-  /**
-    * AccessibilityLabel for `label`.
     */
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
@@ -111,7 +108,10 @@ trait ViewPropsRefAttributesVieAccessibilityRole extends StObject {
     */
   var accessible: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  /**
+    * Content of the `Drawer.Section`.
+    */
+  var children: js.UndefOr[ReactNode] & ReactNode
   
   /**
     * Views that are only used to layout their children or otherwise don't draw anything
@@ -168,11 +168,6 @@ trait ViewPropsRefAttributesVieAccessibilityRole extends StObject {
   var key: js.UndefOr[typings.react.mod.Key | Null] = js.undefined
   
   /**
-    * Label text to display which indicates current pagination.
-    */
-  var label: js.UndefOr[ReactNode] = js.undefined
-  
-  /**
     * Used to reference react managed views from native code.
     */
   var nativeID: js.UndefOr[String] = js.undefined
@@ -194,21 +189,6 @@ trait ViewPropsRefAttributesVieAccessibilityRole extends StObject {
   var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The current number of rows per page.
-    */
-  var numberOfItemsPerPage: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * Options for a number of rows per page to choose from.
-    */
-  var numberOfItemsPerPageList: js.UndefOr[js.Array[Double]] = js.undefined
-  
-  /**
-    * The total number of pages.
-    */
-  var numberOfPages: Double
-  
-  /**
     * When `accessible` is true, the system will try to invoke this function when the user performs an accessibility custom action.
     */
   var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
@@ -224,11 +204,6 @@ trait ViewPropsRefAttributesVieAccessibilityRole extends StObject {
     * @platform ios
     */
   var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
-  
-  /**
-    * The function to set the number of rows per page.
-    */
-  var onItemsPerPageChange: js.UndefOr[js.Function1[/* numberOfItemsPerPage */ Double, Unit]] = js.undefined
   
   /**
     * Invoked on mount and layout changes with
@@ -262,11 +237,6 @@ trait ViewPropsRefAttributesVieAccessibilityRole extends StObject {
     * it should have a onStartShouldSetResponderCapture handler which returns true.
     */
   var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
-  
-  /**
-    * Function to execute on page change.
-    */
-  def onPageChange(page: Double): Unit
   
   var onPointerCancel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
@@ -371,11 +341,6 @@ trait ViewPropsRefAttributesVieAccessibilityRole extends StObject {
   var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   /**
-    * The currently visible page (starting with 0).
-    */
-  var page: Double
-  
-  /**
     *
     * In the absence of auto property, none is much like CSS's none value. box-none is as if you had applied the CSS class:
     *
@@ -420,16 +385,6 @@ trait ViewPropsRefAttributesVieAccessibilityRole extends StObject {
   var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * AccessibilityLabel for `selectPageDropdownLabel`.
-    */
-  var selectPageDropdownAccessibilityLabel: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Label text for select page dropdown to display.
-    */
-  var selectPageDropdownLabel: js.UndefOr[ReactNode] = js.undefined
-  
-  /**
     * Whether this view should be rendered as a bitmap before compositing.
     *
     * On iOS, this is useful for animations and interactions that do not modify this component's dimensions nor its children;
@@ -441,11 +396,6 @@ trait ViewPropsRefAttributesVieAccessibilityRole extends StObject {
     */
   var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Whether to show fast forward and fast rewind buttons in pagination. False by default.
-    */
-  var showFastPaginationControls: js.UndefOr[Boolean] = js.undefined
-  
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
@@ -456,7 +406,12 @@ trait ViewPropsRefAttributesVieAccessibilityRole extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
+  
+  /**
+    * Title to show as the header for the section.
+    */
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
@@ -495,13 +450,8 @@ trait ViewPropsRefAttributesVieAccessibilityRole extends StObject {
 }
 object ViewPropsRefAttributesVieAccessibilityRole {
   
-  inline def apply(
-    numberOfPages: Double,
-    onPageChange: Double => Unit,
-    page: Double,
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
-  ): ViewPropsRefAttributesVieAccessibilityRole = {
-    val __obj = js.Dynamic.literal(numberOfPages = numberOfPages.asInstanceOf[js.Any], onPageChange = js.Any.fromFunction1(onPageChange), page = page.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): ViewPropsRefAttributesVieAccessibilityRole = {
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsRefAttributesVieAccessibilityRole]
   }
   
@@ -563,7 +513,7 @@ object ViewPropsRefAttributesVieAccessibilityRole {
     
     inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -597,10 +547,6 @@ object ViewPropsRefAttributesVieAccessibilityRole {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-    
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-    
     inline def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
     
     inline def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
@@ -608,18 +554,6 @@ object ViewPropsRefAttributesVieAccessibilityRole {
     inline def setNeedsOffscreenAlphaCompositing(value: Boolean): Self = StObject.set(x, "needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
     
     inline def setNeedsOffscreenAlphaCompositingUndefined: Self = StObject.set(x, "needsOffscreenAlphaCompositing", js.undefined)
-    
-    inline def setNumberOfItemsPerPage(value: Double): Self = StObject.set(x, "numberOfItemsPerPage", value.asInstanceOf[js.Any])
-    
-    inline def setNumberOfItemsPerPageList(value: js.Array[Double]): Self = StObject.set(x, "numberOfItemsPerPageList", value.asInstanceOf[js.Any])
-    
-    inline def setNumberOfItemsPerPageListUndefined: Self = StObject.set(x, "numberOfItemsPerPageList", js.undefined)
-    
-    inline def setNumberOfItemsPerPageListVarargs(value: Double*): Self = StObject.set(x, "numberOfItemsPerPageList", js.Array(value*))
-    
-    inline def setNumberOfItemsPerPageUndefined: Self = StObject.set(x, "numberOfItemsPerPage", js.undefined)
-    
-    inline def setNumberOfPages(value: Double): Self = StObject.set(x, "numberOfPages", value.asInstanceOf[js.Any])
     
     inline def setOnAccessibilityAction(value: /* event */ AccessibilityActionEvent => Unit): Self = StObject.set(x, "onAccessibilityAction", js.Any.fromFunction1(value))
     
@@ -632,10 +566,6 @@ object ViewPropsRefAttributesVieAccessibilityRole {
     inline def setOnAccessibilityTap(value: () => Unit): Self = StObject.set(x, "onAccessibilityTap", js.Any.fromFunction0(value))
     
     inline def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
-    
-    inline def setOnItemsPerPageChange(value: /* numberOfItemsPerPage */ Double => Unit): Self = StObject.set(x, "onItemsPerPageChange", js.Any.fromFunction1(value))
-    
-    inline def setOnItemsPerPageChangeUndefined: Self = StObject.set(x, "onItemsPerPageChange", js.undefined)
     
     inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
     
@@ -652,8 +582,6 @@ object ViewPropsRefAttributesVieAccessibilityRole {
     inline def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
     
     inline def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
-    
-    inline def setOnPageChange(value: Double => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
     
     inline def setOnPointerCancel(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
     
@@ -763,8 +691,6 @@ object ViewPropsRefAttributesVieAccessibilityRole {
     
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
-    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
-    
     inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
@@ -785,21 +711,9 @@ object ViewPropsRefAttributesVieAccessibilityRole {
     
     inline def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
     
-    inline def setSelectPageDropdownAccessibilityLabel(value: String): Self = StObject.set(x, "selectPageDropdownAccessibilityLabel", value.asInstanceOf[js.Any])
-    
-    inline def setSelectPageDropdownAccessibilityLabelUndefined: Self = StObject.set(x, "selectPageDropdownAccessibilityLabel", js.undefined)
-    
-    inline def setSelectPageDropdownLabel(value: ReactNode): Self = StObject.set(x, "selectPageDropdownLabel", value.asInstanceOf[js.Any])
-    
-    inline def setSelectPageDropdownLabelUndefined: Self = StObject.set(x, "selectPageDropdownLabel", js.undefined)
-    
     inline def setShouldRasterizeIOS(value: Boolean): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
     
     inline def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
-    
-    inline def setShowFastPaginationControls(value: Boolean): Self = StObject.set(x, "showFastPaginationControls", value.asInstanceOf[js.Any])
-    
-    inline def setShowFastPaginationControlsUndefined: Self = StObject.set(x, "showFastPaginationControls", js.undefined)
     
     inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
@@ -811,7 +725,11 @@ object ViewPropsRefAttributesVieAccessibilityRole {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.reactRelay.anon
 
 import typings.reactRelay.reactRelayStrings.reset
-import typings.reactRelay.useRefetchableFragmentNodeMod.Action
+import typings.reactRelay.relayHooksUseRefetchableFragmentNodeMod.Action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ trait Environment
   extends StObject
      with Action {
   
-  var environment: typings.relayRuntime.relayStoreTypesMod.Environment
+  var environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment
   
   var fragmentIdentifier: String
   
@@ -18,7 +18,10 @@ trait Environment
 }
 object Environment {
   
-  inline def apply(environment: typings.relayRuntime.relayStoreTypesMod.Environment, fragmentIdentifier: String): Environment = {
+  inline def apply(
+    environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
+    fragmentIdentifier: String
+  ): Environment = {
     val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], fragmentIdentifier = fragmentIdentifier.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("reset")
     __obj.asInstanceOf[Environment]
@@ -26,7 +29,7 @@ object Environment {
   
   extension [Self <: Environment](x: Self) {
     
-    inline def setEnvironment(value: typings.relayRuntime.relayStoreTypesMod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     inline def setFragmentIdentifier(value: String): Self = StObject.set(x, "fragmentIdentifier", value.asInstanceOf[js.Any])
     

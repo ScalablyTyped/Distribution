@@ -159,9 +159,9 @@ object MediaProperties {
   }
   
   /** Provides properties for getting H.265 profile ids. */
-  @JSGlobal("Windows.Media.MediaProperties.H264ProfileIds")
+  /* note: abstract class */ @JSGlobal("Windows.Media.MediaProperties.H264ProfileIds")
   @js.native
-  abstract class H264ProfileIds ()
+  open class H264ProfileIds ()
     extends StObject
        with typings.winrtUwp.Windows.Media.MediaProperties.H264ProfileIds
   object H264ProfileIds {
@@ -413,9 +413,9 @@ object MediaProperties {
   }
   
   /** Provides properties for getting the standard names for media subtypes. */
-  @JSGlobal("Windows.Media.MediaProperties.MediaEncodingSubtypes")
+  /* note: abstract class */ @JSGlobal("Windows.Media.MediaProperties.MediaEncodingSubtypes")
   @js.native
-  abstract class MediaEncodingSubtypes ()
+  open class MediaEncodingSubtypes ()
     extends StObject
        with typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingSubtypes
   object MediaEncodingSubtypes {
@@ -747,9 +747,9 @@ object MediaProperties {
        with typings.winrtUwp.Windows.Media.MediaProperties.MediaPropertySet
   
   /** Represents ratios used in media operations. */
-  @JSGlobal("Windows.Media.MediaProperties.MediaRatio")
+  /* note: abstract class */ @JSGlobal("Windows.Media.MediaProperties.MediaRatio")
   @js.native
-  abstract class MediaRatio ()
+  open class MediaRatio ()
     extends StObject
        with typings.winrtUwp.Windows.Media.MediaProperties.MediaRatio {
     
@@ -793,9 +793,9 @@ object MediaProperties {
   }
   
   /** Provides properties for getting MPEG-2 profile ids. */
-  @JSGlobal("Windows.Media.MediaProperties.Mpeg2ProfileIds")
+  /* note: abstract class */ @JSGlobal("Windows.Media.MediaProperties.Mpeg2ProfileIds")
   @js.native
-  abstract class Mpeg2ProfileIds ()
+  open class Mpeg2ProfileIds ()
     extends StObject
        with typings.winrtUwp.Windows.Media.MediaProperties.Mpeg2ProfileIds
   object Mpeg2ProfileIds {

@@ -21,7 +21,7 @@ trait PartialNormalizedExtensio extends StObject {
   
   var flowInitial: js.UndefOr[Record[String, js.Array[Construct]]] = js.undefined
   
-  var insideSpan: js.UndefOr[`2`] = js.undefined
+  var insideSpan: js.UndefOr[`4`] = js.undefined
   
   var string: js.UndefOr[Record[String, js.Array[Construct]]] = js.undefined
   
@@ -60,7 +60,7 @@ object PartialNormalizedExtensio {
     
     inline def setFlowUndefined: Self = StObject.set(x, "flow", js.undefined)
     
-    inline def setInsideSpan(value: `2`): Self = StObject.set(x, "insideSpan", value.asInstanceOf[js.Any])
+    inline def setInsideSpan(value: `4`): Self = StObject.set(x, "insideSpan", value.asInstanceOf[js.Any])
     
     inline def setInsideSpanUndefined: Self = StObject.set(x, "insideSpan", js.undefined)
     

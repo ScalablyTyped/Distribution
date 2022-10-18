@@ -1,6 +1,6 @@
 package typings.lodashDecorators
 
-import typings.lodashDecorators.commonMod.LodashMethodDecorator
+import typings.lodashDecorators.factoryCommonMod.LodashMethodDecorator
 import typings.std.MethodDecorator
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject

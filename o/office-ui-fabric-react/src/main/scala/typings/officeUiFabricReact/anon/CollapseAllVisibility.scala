@@ -1,13 +1,13 @@
 package typings.officeUiFabricReact.anon
 
-import typings.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.SelectAllVisibility
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CollapseAllVisibility extends StObject {
   
-  var collapseAllVisibility: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility
+  var collapseAllVisibility: typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.CollapseAllVisibility
   
   var selectAllVisibility: SelectAllVisibility
   
@@ -16,7 +16,7 @@ trait CollapseAllVisibility extends StObject {
 object CollapseAllVisibility {
   
   inline def apply(
-    collapseAllVisibility: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility,
+    collapseAllVisibility: typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.CollapseAllVisibility,
     selectAllVisibility: SelectAllVisibility,
     useFastIcons: Boolean
   ): CollapseAllVisibility = {
@@ -26,7 +26,9 @@ object CollapseAllVisibility {
   
   extension [Self <: CollapseAllVisibility](x: Self) {
     
-    inline def setCollapseAllVisibility(value: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility): Self = StObject.set(x, "collapseAllVisibility", value.asInstanceOf[js.Any])
+    inline def setCollapseAllVisibility(
+      value: typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.CollapseAllVisibility
+    ): Self = StObject.set(x, "collapseAllVisibility", value.asInstanceOf[js.Any])
     
     inline def setSelectAllVisibility(value: SelectAllVisibility): Self = StObject.set(x, "selectAllVisibility", value.asInstanceOf[js.Any])
     

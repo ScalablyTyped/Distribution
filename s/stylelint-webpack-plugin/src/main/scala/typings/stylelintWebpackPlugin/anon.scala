@@ -1,6 +1,5 @@
 package typings.stylelintWebpackPlugin
 
-import org.scalablytyped.runtime.TopLevel
 import typings.postcss.mod.Root_
 import typings.postcss.mod.Warning
 import typings.std.NonNullable
@@ -14,12 +13,12 @@ import typings.stylelint.mod.PostcssResult
 import typings.stylelint.mod.Problem
 import typings.stylelint.mod.RuleMessages
 import typings.stylelint.mod.RuleOptions
-import typings.stylelintWebpackPlugin.linterMod.InternalApi
-import typings.stylelintWebpackPlugin.linterMod.Linter
-import typings.stylelintWebpackPlugin.linterMod.Report
-import typings.stylelintWebpackPlugin.linterMod.Reporter
-import typings.stylelintWebpackPlugin.optionsMod.FormatterType
-import typings.stylelintWebpackPlugin.optionsMod.OutputReport
+import typings.stylelintWebpackPlugin.typesLinterMod.InternalApi
+import typings.stylelintWebpackPlugin.typesLinterMod.Linter
+import typings.stylelintWebpackPlugin.typesLinterMod.Report
+import typings.stylelintWebpackPlugin.typesLinterMod.Reporter
+import typings.stylelintWebpackPlugin.typesOptionsMod.FormatterType
+import typings.stylelintWebpackPlugin.typesOptionsMod.OutputReport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,9 +70,7 @@ object anon {
     
     def report(problem: Problem): Unit
     
-    def ruleMessages[T /* <: RuleMessages */, R /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]: T[K]}
-      */ typings.stylelintWebpackPlugin.stylelintWebpackPluginStrings.CheckAgainstRule & TopLevel[T] */](ruleName: String, messages: T): R
+    def ruleMessages[T /* <: RuleMessages */, R /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K]} */ js.Any */](ruleName: String, messages: T): R
     
     def validateOptions(result: PostcssResult, ruleName: String, optionDescriptions: RuleOptions*): Boolean
   }

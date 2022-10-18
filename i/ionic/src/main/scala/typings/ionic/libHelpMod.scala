@@ -6,9 +6,9 @@ import typings.ionic.definitionsMod.ICommand
 import typings.ionic.definitionsMod.INamespace
 import typings.ionicCliFramework.definitionsMod.CommandMetadataInput
 import typings.ionicCliFramework.definitionsMod.NamespaceLocateResult
-import typings.ionicCliFramework.helpMod.CommandHelpSchemaFootnote
-import typings.ionicCliFramework.helpMod.CommandHelpSchemaInput
-import typings.ionicCliFramework.helpMod.CommandHelpSchemaOption
+import typings.ionicCliFramework.libHelpMod.CommandHelpSchemaFootnote
+import typings.ionicCliFramework.libHelpMod.CommandHelpSchemaInput
+import typings.ionicCliFramework.libHelpMod.CommandHelpSchemaOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ object libHelpMod {
   @js.native
   open class CommandSchemaHelpFormatter protected ()
     extends typings.ionicCliFramework.mod.CommandSchemaHelpFormatter[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
-    def this(hasLocationCommandMetadataColors: typings.ionicCliFramework.helpMod.CommandHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]) = this()
+    def this(hasLocationCommandMetadataColors: typings.ionicCliFramework.libHelpMod.CommandHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]) = this()
   }
   
   @JSImport("ionic/lib/help", "CommandStringHelpFormatter")
@@ -33,7 +33,7 @@ object libHelpMod {
   @js.native
   open class NamespaceSchemaHelpFormatter protected ()
     extends typings.ionicCliFramework.mod.NamespaceSchemaHelpFormatter[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
-    def this(hasLocationNamespaceColors: typings.ionicCliFramework.helpMod.NamespaceHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]) = this()
+    def this(hasLocationNamespaceColors: typings.ionicCliFramework.libHelpMod.NamespaceHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]) = this()
   }
   
   @JSImport("ionic/lib/help", "NamespaceStringHelpFormatter")
@@ -49,11 +49,11 @@ object libHelpMod {
     /* protected */ val version: String = js.native
   }
   
-  type CommandHelpFormatterDeps = typings.ionicCliFramework.helpMod.CommandHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]
+  type CommandHelpFormatterDeps = typings.ionicCliFramework.libHelpMod.CommandHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]
   
   trait CommandHelpSchema
     extends StObject
-       with typings.ionicCliFramework.helpMod.CommandHelpSchema {
+       with typings.ionicCliFramework.libHelpMod.CommandHelpSchema {
     
     var `type`: String
   }
@@ -85,7 +85,7 @@ object libHelpMod {
   
   trait NamespaceHelpFormatterDeps
     extends StObject
-       with typings.ionicCliFramework.helpMod.NamespaceHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
+       with typings.ionicCliFramework.libHelpMod.NamespaceHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
     
     val inProject: Boolean
     

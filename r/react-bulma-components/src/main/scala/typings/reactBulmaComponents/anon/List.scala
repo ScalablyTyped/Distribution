@@ -1,8 +1,8 @@
 package typings.reactBulmaComponents.anon
 
-import typings.reactBulmaComponents.componentsMod.BulmaComponentWithoutRenderAs
-import typings.reactBulmaComponents.menuMod.MenuListComponentProps
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.ul
+import typings.reactBulmaComponents.srcComponentsMenuMod.MenuListComponentProps
+import typings.reactBulmaComponents.srcComponentsMod.BulmaComponentWithoutRenderAs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

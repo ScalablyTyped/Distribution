@@ -1,9 +1,11 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.baseMod.CheckSignalArg
-import typings.interactjsTypes.dropPluginMod.DropSignalArg
-import typings.interactjsTypes.interactionMod.DoAnyPhaseArg
-import typings.interactjsTypes.interactionMod.DoPhaseArg
+import typings.interactjsTypes.actionsDropPluginMod.DropSignalArg
+import typings.interactjsTypes.autoStartBaseMod.CheckSignalArg
+import typings.interactjsTypes.coreInteractionMod.DoAnyPhaseArg
+import typings.interactjsTypes.coreInteractionMod.DoPhaseArg
+import typings.interactjsTypes.coreScopeMod.DocSignalArg
+import typings.interactjsTypes.coreTypesMod.ActionName
 import typings.interactjsTypes.interactjsTypesBooleans.`false`
 import typings.interactjsTypes.interactjsTypesStrings.`auto-startColoncheck`
 import typings.interactjsTypes.interactjsTypesStrings.`autoStartColonbefore-start`
@@ -51,8 +53,6 @@ import typings.interactjsTypes.interactjsTypesStrings.interactionsColonup
 import typings.interactjsTypes.interactjsTypesStrings.pointerEventsColonfired
 import typings.interactjsTypes.interactjsTypesStrings.pointerEventsColonnew
 import typings.interactjsTypes.interactjsTypesStrings.resume
-import typings.interactjsTypes.scopeMod.DocSignalArg
-import typings.interactjsTypes.typesMod.ActionName
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -124,7 +124,7 @@ trait ScopeFire extends StObject {
   @JSName("scopeFire")
   def scopeFire_interactionsbeforeactionstart(name: `interactionsColonbefore-action-start`, arg: OmitDoAnyPhaseArgiEvent): Unit | `false`
   @JSName("scopeFire")
-  def scopeFire_interactionsblur(name: interactionsColonblur, arg: EventInteraction): Unit | `false`
+  def scopeFire_interactionsblur(name: interactionsColonblur, arg: Event): Unit | `false`
   @JSName("scopeFire")
   def scopeFire_interactionsdestroy(name: interactionsColondestroy, arg: Interaction): Unit | `false`
   @JSName("scopeFire")

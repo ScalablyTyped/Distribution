@@ -1,16 +1,16 @@
 package typings.mendixmodelsdk.mod.codeactions
 
-import typings.mendixmodelsdk.codeactionsMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenCodeactionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "codeactions.CodeAction")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "codeactions.CodeAction")
 @js.native
-abstract class CodeAction protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.codeactions.CodeAction {
+open class CodeAction protected ()
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.codeactions.CodeAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,

@@ -20,6 +20,8 @@ trait PutOptions extends StObject {
   
   var storeVectors: js.UndefOr[Boolean] = js.undefined
   
+  var tokenSplitRegex: js.UndefOr[js.RegExp] = js.undefined
+  
   var tokenizer: js.UndefOr[Tokenizer] = js.undefined
 }
 object PutOptions {
@@ -62,6 +64,10 @@ object PutOptions {
     inline def setStoreVectors(value: Boolean): Self = StObject.set(x, "storeVectors", value.asInstanceOf[js.Any])
     
     inline def setStoreVectorsUndefined: Self = StObject.set(x, "storeVectors", js.undefined)
+    
+    inline def setTokenSplitRegex(value: js.RegExp): Self = StObject.set(x, "tokenSplitRegex", value.asInstanceOf[js.Any])
+    
+    inline def setTokenSplitRegexUndefined: Self = StObject.set(x, "tokenSplitRegex", js.undefined)
     
     inline def setTokenizer(value: /* args */ TokenizerArgs => js.Promise[js.Array[String]]): Self = StObject.set(x, "tokenizer", js.Any.fromFunction1(value))
     

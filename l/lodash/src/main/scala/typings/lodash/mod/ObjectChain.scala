@@ -1,6 +1,5 @@
 package typings.lodash.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.lodash.lodashStrings.asc
 import typings.lodash.lodashStrings.desc
 import typings.std.Exclude
@@ -13,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ObjectChain[T]
   extends StObject
-     with LoDashExplicitWrapper[T]
-     with _ExpChain[T] {
+     with LoDashExplicitWrapper[T] {
   
   /**
     * @see _.assign
@@ -426,21 +424,11 @@ trait ObjectChain[T]
   /**
     * @see _.get
     */
-  def get[TKey /* <: /* keyof T */ java.lang.String */](path: TKey, defaultValue: js.Array[scala.Nothing]): ExpChain[
-    js.Array[scala.Nothing] | (Exclude[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any, 
-      Unit
-    ])
-  ] = js.native
+  def get[TKey /* <: /* keyof T */ java.lang.String */](path: TKey, defaultValue: js.Array[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] extends std.Array<any> ? lodash.lodash.ExpChain<std.Exclude<T[TKey], undefined>> : lodash.lodash.ExpChain<std.Exclude<T[TKey], undefined> | std.Array<never>> */ js.Any = js.native
   def get[TKey /* <: /* keyof T */ java.lang.String */](path: js.Array[TKey]): ExpChain[
     /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
   ] = js.native
-  def get[TKey /* <: /* keyof T */ java.lang.String */](path: js.Array[TKey], defaultValue: js.Array[scala.Nothing]): ExpChain[
-    js.Array[scala.Nothing] | (Exclude[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any, 
-      Unit
-    ])
-  ] = js.native
+  def get[TKey /* <: /* keyof T */ java.lang.String */](path: js.Array[TKey], defaultValue: js.Array[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] extends std.Array<any> ? lodash.lodash.ExpChain<std.Exclude<T[TKey], undefined>> : lodash.lodash.ExpChain<std.Exclude<T[TKey], undefined> | std.Array<never>> */ js.Any = js.native
   def get[TKey /* <: /* keyof T */ java.lang.String */, TDefault](path: js.Array[TKey], defaultValue: TDefault): ExpChain[
     (Exclude[
       /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any, 
@@ -456,12 +444,7 @@ trait ObjectChain[T]
   /**
     * @see _.get
     */
-  def get[TKey1 /* <: /* keyof T */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2], defaultValue: js.Array[scala.Nothing]): ExpChain[
-    js.Array[scala.Nothing] | (Exclude[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[TKey1][TKey2] */ js.Any, 
-      Unit
-    ])
-  ] = js.native
+  def get[TKey1 /* <: /* keyof T */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2], defaultValue: js.Array[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: T[TKey1][TKey2] extends std.Array<any> ? lodash.lodash.ExpChain<std.Exclude<T[TKey1][TKey2], undefined>> : lodash.lodash.ExpChain<std.Exclude<T[TKey1][TKey2], undefined> | std.Array<never>> */ js.Any = js.native
   /**
     * @see _.get
     */
@@ -480,12 +463,7 @@ trait ObjectChain[T]
   /**
     * @see _.get
     */
-  def get[TKey1 /* <: /* keyof T */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3], defaultValue: js.Array[scala.Nothing]): ExpChain[
-    js.Array[scala.Nothing] | (Exclude[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[TKey1][TKey2][TKey3] */ js.Any, 
-      Unit
-    ])
-  ] = js.native
+  def get[TKey1 /* <: /* keyof T */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3], defaultValue: js.Array[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: T[TKey1][TKey2][TKey3] extends std.Array<any> ? lodash.lodash.ExpChain<std.Exclude<T[TKey1][TKey2][TKey3], undefined>> : lodash.lodash.ExpChain<std.Exclude<T[TKey1][TKey2][TKey3], undefined> | std.Array<never>> */ js.Any = js.native
   /**
     * @see _.get
     */
@@ -504,12 +482,7 @@ trait ObjectChain[T]
   /**
     * @see _.get
     */
-  def get[TKey1 /* <: /* keyof T */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], defaultValue: js.Array[scala.Nothing]): ExpChain[
-    js.Array[scala.Nothing] | (Exclude[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
-      Unit
-    ])
-  ] = js.native
+  def get[TKey1 /* <: /* keyof T */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], defaultValue: js.Array[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: T[TKey1][TKey2][TKey3][TKey4] extends std.Array<any> ? lodash.lodash.ExpChain<std.Exclude<T[TKey1][TKey2][TKey3][TKey4], undefined>> : lodash.lodash.ExpChain<std.Exclude<T[TKey1][TKey2][TKey3][TKey4], undefined> | std.Array<never>> */ js.Any = js.native
   /**
     * @see _.get
     */
@@ -644,17 +617,13 @@ trait ObjectChain[T]
     * @see _.mapValues
     */
   def mapValues(iteratee: java.lang.String): ObjectChain[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: any}
-    */ typings.lodash.lodashStrings.ObjectChain & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: any} */ js.Any
   ] = js.native
   /**
     * @see _.mapValues
     */
   def mapValues(iteratee: js.Object): ObjectChain[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: boolean}
-    */ typings.lodash.lodashStrings.ObjectChain & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: boolean} */ js.Any
   ] = js.native
   /**
     * @see _.mapValues
@@ -665,9 +634,7 @@ trait ObjectChain[T]
       TResult
     ]) | (ObjectIterator[T, TResult])
   ): ObjectChain[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: TResult}
-    */ typings.lodash.lodashStrings.ObjectChain & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: TResult} */ js.Any
   ] = js.native
   /**
     * @see _.mapValues
@@ -797,22 +764,14 @@ trait ObjectChain[T]
     * @see _.pickBy
     */
   def pickBy(): ObjectChain[
-    PartialObject[T] | (NumericDictionary[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]) | (Dictionary[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ])
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Dictionary<unknown> ? lodash.lodash.Dictionary<T[keyof T]> : T extends lodash.lodash.NumericDictionary<unknown> ? lodash.lodash.NumericDictionary<T[keyof T]> : lodash.lodash.PartialObject<T> */ js.Any
   ] = js.native
   def pickBy(
     predicate: ValueKeyIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ): ObjectChain[
-    PartialObject[T] | (NumericDictionary[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]) | (Dictionary[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ])
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Dictionary<unknown> ? lodash.lodash.Dictionary<T[keyof T]> : T extends lodash.lodash.NumericDictionary<unknown> ? lodash.lodash.NumericDictionary<T[keyof T]> : lodash.lodash.PartialObject<T> */ js.Any
   ] = js.native
   /**
     * @see _.pickBy
@@ -822,7 +781,9 @@ trait ObjectChain[T]
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ]
-  ): ObjectChain[Dictionary[S] | NumericDictionary[S]] = js.native
+  ): ObjectChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: lodash.lodash.NumericDictionary<unknown> extends T ? lodash.lodash.NumericDictionary<S> : lodash.lodash.Dictionary<S> */ js.Any
+  ] = js.native
   
   /**
     * @see _.pick
@@ -941,7 +902,9 @@ trait ObjectChain[T]
   /**
     * @see _.transform
     */
-  def transform(): ExpChain[T | Dictionary[Any]] = js.native
+  def transform(): ExpChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Dictionary<unknown> ? lodash.lodash.Dictionary<any> : T */ js.Any
+  ] = js.native
   /**
     * @see _.transform
     */

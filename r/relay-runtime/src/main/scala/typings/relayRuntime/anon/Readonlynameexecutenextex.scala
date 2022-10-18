@@ -1,9 +1,9 @@
 package typings.relayRuntime.anon
 
-import typings.relayRuntime.relayNetworkTypesMod.GraphQLResponse
-import typings.relayRuntime.relayNetworkTypesMod.GraphQLSingularResponse
+import typings.relayRuntime.libNetworkRelayNetworkTypesMod.GraphQLResponse
+import typings.relayRuntime.libNetworkRelayNetworkTypesMod.GraphQLSingularResponse
+import typings.relayRuntime.libStoreRelayStoreTypesMod.LogEvent
 import typings.relayRuntime.relayRuntimeStrings.executeDotnext
-import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

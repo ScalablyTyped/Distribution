@@ -14,7 +14,7 @@ trait LabelLine extends StObject {
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.emphasis.label
     */
-  var label: js.UndefOr[FontStyle] = js.undefined
+  var label: js.UndefOr[FontSize] = js.undefined
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.emphasis.labelLine
@@ -34,7 +34,7 @@ object LabelLine {
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    inline def setLabel(value: FontStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: FontSize): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelLine(value: Length): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
     

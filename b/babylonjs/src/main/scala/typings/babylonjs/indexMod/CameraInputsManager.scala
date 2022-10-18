@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "CameraInputsManager")
 @js.native
-open class CameraInputsManager[TCamera /* <: typings.babylonjs.cameraMod.Camera */] protected ()
-  extends typings.babylonjs.babylonjsMod.CameraInputsManager[TCamera] {
+open class CameraInputsManager[TCamera /* <: typings.babylonjs.camerasCameraMod.Camera */] protected ()
+  extends typings.babylonjs.camerasIndexMod.CameraInputsManager[TCamera] {
   /**
     * Instantiate a new Camera Input Manager.
     * @param camera Defines the camera the input manager belongs to

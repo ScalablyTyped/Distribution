@@ -3,9 +3,9 @@ package typings.nivoHeatmap.anon
 import typings.d3Scale.mod.ScaleDiverging_
 import typings.d3Scale.mod.ScaleQuantize_
 import typings.d3Scale.mod.ScaleSequential_
-import typings.nivoHeatmap.typesMod.ComputedCell
-import typings.nivoHeatmap.typesMod.HeatMapDatum
-import typings.nivoScales.typesMod.ScaleBand
+import typings.nivoHeatmap.distTypesTypesMod.ComputedCell
+import typings.nivoHeatmap.distTypesTypesMod.HeatMapDatum
+import typings.nivoScales.distTypesTypesMod.ScaleBand
 import typings.react.mod.Dispatch
 import typings.react.mod.SetStateAction
 import org.scalablytyped.runtime.StObject

@@ -2,12 +2,12 @@ package typings.reactBootstrap.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.Component
-import typings.reactBootstrap.navbarMod.NavbarForm
-import typings.reactBootstrap.navbarMod.NavbarFormProps
-import typings.reactBootstrap.navbarMod.NavbarLink
-import typings.reactBootstrap.navbarMod.NavbarLinkProps
-import typings.reactBootstrap.navbarMod.NavbarText
-import typings.reactBootstrap.navbarMod.NavbarTextProps
+import typings.reactBootstrap.libNavbarMod.NavbarForm
+import typings.reactBootstrap.libNavbarMod.NavbarFormProps
+import typings.reactBootstrap.libNavbarMod.NavbarLink
+import typings.reactBootstrap.libNavbarMod.NavbarLinkProps
+import typings.reactBootstrap.libNavbarMod.NavbarText
+import typings.reactBootstrap.libNavbarMod.NavbarTextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,23 +26,23 @@ object Navbar {
   @JSImport("react-bootstrap", "Navbar.Brand")
   @js.native
   open class Brand ()
-    extends typings.reactBootstrap.navbarBrandMod.^
+    extends typings.reactBootstrap.libNavbarBrandMod.^
   /* static member */
   @JSImport("react-bootstrap", "Navbar.Brand")
   @js.native
-  def Brand: Instantiable0[typings.reactBootstrap.navbarBrandMod.^] = js.native
-  inline def Brand_=(x: Instantiable0[typings.reactBootstrap.navbarBrandMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Brand")(x.asInstanceOf[js.Any])
+  def Brand: Instantiable0[typings.reactBootstrap.libNavbarBrandMod.^] = js.native
+  inline def Brand_=(x: Instantiable0[typings.reactBootstrap.libNavbarBrandMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Brand")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Navbar.Collapse")
   @js.native
   open class Collapse ()
-    extends typings.reactBootstrap.navbarCollapseMod.^
+    extends typings.reactBootstrap.libNavbarCollapseMod.^
   /* static member */
   @JSImport("react-bootstrap", "Navbar.Collapse")
   @js.native
-  def Collapse: Instantiable0[typings.reactBootstrap.navbarCollapseMod.^] = js.native
-  inline def Collapse_=(x: Instantiable0[typings.reactBootstrap.navbarCollapseMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Collapse")(x.asInstanceOf[js.Any])
+  def Collapse: Instantiable0[typings.reactBootstrap.libNavbarCollapseMod.^] = js.native
+  inline def Collapse_=(x: Instantiable0[typings.reactBootstrap.libNavbarCollapseMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Collapse")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Navbar.Form")
@@ -59,12 +59,12 @@ object Navbar {
   @JSImport("react-bootstrap", "Navbar.Header")
   @js.native
   open class Header ()
-    extends typings.reactBootstrap.navbarHeaderMod.^
+    extends typings.reactBootstrap.libNavbarHeaderMod.^
   /* static member */
   @JSImport("react-bootstrap", "Navbar.Header")
   @js.native
-  def Header: Instantiable0[typings.reactBootstrap.navbarHeaderMod.^] = js.native
-  inline def Header_=(x: Instantiable0[typings.reactBootstrap.navbarHeaderMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
+  def Header: Instantiable0[typings.reactBootstrap.libNavbarHeaderMod.^] = js.native
+  inline def Header_=(x: Instantiable0[typings.reactBootstrap.libNavbarHeaderMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Navbar.Link")
@@ -92,10 +92,10 @@ object Navbar {
   @JSImport("react-bootstrap", "Navbar.Toggle")
   @js.native
   open class Toggle ()
-    extends typings.reactBootstrap.navbarToggleMod.^
+    extends typings.reactBootstrap.libNavbarToggleMod.^
   /* static member */
   @JSImport("react-bootstrap", "Navbar.Toggle")
   @js.native
-  def Toggle: Instantiable0[typings.reactBootstrap.navbarToggleMod.^] = js.native
-  inline def Toggle_=(x: Instantiable0[typings.reactBootstrap.navbarToggleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Toggle")(x.asInstanceOf[js.Any])
+  def Toggle: Instantiable0[typings.reactBootstrap.libNavbarToggleMod.^] = js.native
+  inline def Toggle_=(x: Instantiable0[typings.reactBootstrap.libNavbarToggleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Toggle")(x.asInstanceOf[js.Any])
 }

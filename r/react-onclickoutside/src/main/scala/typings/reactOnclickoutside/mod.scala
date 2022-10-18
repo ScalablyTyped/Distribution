@@ -13,7 +13,6 @@ import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.reactOnclickoutside.reactOnclickoutsideStrings.disableOnClickOutside
 import typings.reactOnclickoutside.reactOnclickoutsideStrings.enableOnClickOutside
 import typings.std.Exclude
-import typings.std.InstanceType
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -151,7 +150,15 @@ object mod {
   
   type OnClickOutProps[P] = WithoutInjectedClickOutProps[P] & AdditionalProps
   
-  type PropsOf[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends (props : infer P, context : any | undefined): react.react.ReactElement | null ? P : T extends new (props : infer P, context : any | undefined): react.react.Component<{}, {}, any> ? P : never
+    }}}
+    */
+  @js.native
+  trait PropsOf[T] extends StObject
   
   type WithoutInjectedClickOutProps[P] = Pick[
     P, 
@@ -170,6 +177,6 @@ object mod {
   trait WrapperInstance[P, C]
     extends Component[OnClickOutProps[LibraryManagedAttributes[C, P]], js.Object, Any] {
     
-    def getInstance(): InstanceType[C] = js.native
+    def getInstance(): /* import warning: importer.ImportType#apply Failed type conversion: C extends {  contextType :react.react.Context<any> | undefined} & new <P = {}, S = {}, SS = any>(props : std.Readonly</ * import warning: RewrittenClass.unapply cls was tparam P * / any>): react.react.Component<P, S, SS> ? std.InstanceType<C> : never */ js.Any = js.native
   }
 }

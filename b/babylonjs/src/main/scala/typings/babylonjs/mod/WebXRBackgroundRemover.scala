@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.webXRBackgroundRemoverMod.IWebXRBackgroundRemoverOptions
+import typings.babylonjs.xRFeaturesWebXRBackgroundRemoverMod.IWebXRBackgroundRemoverOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXRBackgroundRemover")
 @js.native
 open class WebXRBackgroundRemover protected ()
-  extends typings.babylonjs.legacyMod.WebXRBackgroundRemover {
+  extends typings.babylonjs.legacyLegacyMod.WebXRBackgroundRemover {
   /**
     * constructs a new background remover module
     * @param _xrSessionManager the session manager for this module
     * @param options read-only options to be used in this module
     */
-  def this(_xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager) = this()
+  def this(_xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager) = this()
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     /**
     * read-only options to be used in this module
     */

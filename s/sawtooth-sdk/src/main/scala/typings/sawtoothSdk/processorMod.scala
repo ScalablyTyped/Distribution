@@ -1,6 +1,6 @@
 package typings.sawtoothSdk
 
-import typings.sawtoothSdk.handlerMod.TransactionHandler
+import typings.sawtoothSdk.processorHandlerMod.TransactionHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -8,7 +8,7 @@ import typings.xrm.Xrm.Controls.LookupControl
 import typings.xrm.Xrm.Controls.NumberControl
 import typings.xrm.Xrm.Controls.OptionSetControl
 import typings.xrm.Xrm.Controls.StringControl
-import typings.xrm.Xrm.Events.ContextSensitiveHandler
+import typings.xrm.Xrm.Events.Attribute.ChangeEventHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +30,7 @@ object Attributes {
       * Adds a handler to be called when the attribute's value is changed.
       * @param handler The function reference.
       */
-    def addOnChange(handler: ContextSensitiveHandler): Unit = js.native
+    def addOnChange(handler: ChangeEventHandler): Unit = js.native
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
@@ -127,7 +127,7 @@ object Attributes {
       * Removes the handler from the "on change" event.
       * @param handler The handler.
       */
-    def removeOnChange(handler: ContextSensitiveHandler): Unit = js.native
+    def removeOnChange(handler: ChangeEventHandler): Unit = js.native
     
     /**
       * Sets a value for a column to determine whether it is valid or invalid with a message

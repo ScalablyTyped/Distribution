@@ -1,6 +1,6 @@
 package typings.stormReactDiagrams.mod
 
-import typings.stormReactDiagrams.linkLayerWidgetMod.LinkLayerProps
+import typings.stormReactDiagrams.distSrcWidgetsLayersLinkLayerWidgetMod.LinkLayerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "LinkLayerWidget")
 @js.native
 open class LinkLayerWidget protected ()
-  extends typings.stormReactDiagrams.linkLayerWidgetMod.LinkLayerWidget {
+  extends typings.stormReactDiagrams.distSrcWidgetsLayersLinkLayerWidgetMod.LinkLayerWidget {
   def this(props: LinkLayerProps) = this()
 }

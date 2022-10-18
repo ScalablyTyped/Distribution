@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.anon
 
-import typings.officeUiFabricReact.draggableZoneDraggableZoneMod.MouseTouchEvent
+import typings.officeUiFabricReact.libUtilitiesDraggableZoneDraggableZoneMod.MouseTouchEvent
 import typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject

@@ -1,36 +1,31 @@
 package typings.formatjsEcma402Abstract.anon
 
+import typings.formatjsEcma402Abstract.libTypesDateTimeMod.EraData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Narrow extends StObject {
   
-  var long: js.Array[String]
+  var long: EraData
   
-  var narrow: js.Array[String]
+  var narrow: EraData
   
-  var short: js.Array[String]
+  var short: EraData
 }
 object Narrow {
   
-  inline def apply(long: js.Array[String], narrow: js.Array[String], short: js.Array[String]): Narrow = {
+  inline def apply(long: EraData, narrow: EraData, short: EraData): Narrow = {
     val __obj = js.Dynamic.literal(long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
     __obj.asInstanceOf[Narrow]
   }
   
   extension [Self <: Narrow](x: Self) {
     
-    inline def setLong(value: js.Array[String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: EraData): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    inline def setLongVarargs(value: String*): Self = StObject.set(x, "long", js.Array(value*))
+    inline def setNarrow(value: EraData): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
-    inline def setNarrow(value: js.Array[String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
-    
-    inline def setNarrowVarargs(value: String*): Self = StObject.set(x, "narrow", js.Array(value*))
-    
-    inline def setShort(value: js.Array[String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
-    
-    inline def setShortVarargs(value: String*): Self = StObject.set(x, "short", js.Array(value*))
+    inline def setShort(value: EraData): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
   }
 }

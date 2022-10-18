@@ -24,9 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AllJoyn {
   
   /** Used to set descriptive information about the app and the device it is running on. */
-  @JSGlobal("Windows.Devices.AllJoyn.AllJoynAboutData")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.AllJoyn.AllJoynAboutData")
   @js.native
-  abstract class AllJoynAboutData ()
+  open class AllJoynAboutData ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynAboutData {
     
@@ -80,9 +80,9 @@ object AllJoyn {
   }
   
   /** Used to view data about another app and the device it is running on. */
-  @JSGlobal("Windows.Devices.AllJoyn.AllJoynAboutDataView")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.AllJoyn.AllJoynAboutDataView")
   @js.native
-  abstract class AllJoynAboutDataView ()
+  open class AllJoynAboutDataView ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynAboutDataView {
     
@@ -234,9 +234,9 @@ object AllJoyn {
   }
   
   /** Contains information about a successful or unsuccessful completion of an authentication operation. */
-  @JSGlobal("Windows.Devices.AllJoyn.AllJoynAuthenticationCompleteEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.AllJoyn.AllJoynAuthenticationCompleteEventArgs")
   @js.native
-  abstract class AllJoynAuthenticationCompleteEventArgs ()
+  open class AllJoynAuthenticationCompleteEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationCompleteEventArgs {
     
@@ -306,9 +306,9 @@ object AllJoyn {
   }
   
   /** Contains information about state and status changes to an AllJoyn bus connection managed by an AllJoynBusAttachment object. */
-  @JSGlobal("Windows.Devices.AllJoyn.AllJoynBusAttachmentStateChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.AllJoyn.AllJoynBusAttachmentStateChangedEventArgs")
   @js.native
-  abstract class AllJoynBusAttachmentStateChangedEventArgs ()
+  open class AllJoynBusAttachmentStateChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentStateChangedEventArgs {
     
@@ -322,9 +322,9 @@ object AllJoyn {
   }
   
   /** Defines properties used when passing credentials during authentication. */
-  @JSGlobal("Windows.Devices.AllJoyn.AllJoynCredentials")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.AllJoyn.AllJoynCredentials")
   @js.native
-  abstract class AllJoynCredentials ()
+  open class AllJoynCredentials ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynCredentials {
     
@@ -346,9 +346,9 @@ object AllJoyn {
   }
   
   /** Contains information about a request for credentials in order to authenticate to a peer. */
-  @JSGlobal("Windows.Devices.AllJoyn.AllJoynCredentialsRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.AllJoyn.AllJoynCredentialsRequestedEventArgs")
   @js.native
-  abstract class AllJoynCredentialsRequestedEventArgs ()
+  open class AllJoynCredentialsRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynCredentialsRequestedEventArgs {
     
@@ -377,9 +377,9 @@ object AllJoyn {
   }
   
   /** Used to allow the application to indicate whether the credentials provided by a peer are valid. */
-  @JSGlobal("Windows.Devices.AllJoyn.AllJoynCredentialsVerificationRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.AllJoyn.AllJoynCredentialsVerificationRequestedEventArgs")
   @js.native
-  abstract class AllJoynCredentialsVerificationRequestedEventArgs ()
+  open class AllJoynCredentialsVerificationRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynCredentialsVerificationRequestedEventArgs {
     
@@ -570,9 +570,9 @@ object AllJoyn {
   }
   
   /** Defines a collection of properties used to convey meaning for AllJoyn status codes. For possible status values, refer to the AllJoyn standard documentation. */
-  @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus")
   @js.native
-  abstract class AllJoynStatus ()
+  open class AllJoynStatus ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynStatus
   object AllJoynStatus {

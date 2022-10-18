@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.directionalHintMod.DirectionalHint
-import typings.officeUiFabricReact.ikeytiptransitionkeyMod.KeytipTransitionModifier
-import typings.officeUiFabricReact.listTypesMod.ScrollToMode
+import typings.officeUiFabricReact.libCommonDirectionalHintMod.DirectionalHint
+import typings.officeUiFabricReact.libComponentsListListDottypesMod.ScrollToMode
+import typings.officeUiFabricReact.libUtilitiesKeytipsIkeytiptransitionkeyMod.KeytipTransitionModifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

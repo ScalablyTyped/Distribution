@@ -32,8 +32,7 @@ trait ChartFill
     * Gets the uniform color fill formatting of a chart element.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   def getSolidColor(): ClientResult[String]
   

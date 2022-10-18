@@ -1,6 +1,6 @@
 package typings.jpm.anon
 
-import typings.jpm.sidebarMod.SidebarWorker
+import typings.jpm.sdkUiSidebarMod.SidebarWorker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,7 +2,7 @@ package typings.creditCardType
 
 import typings.creditCardType.creditCardTypeInts.`3`
 import typings.creditCardType.creditCardTypeInts.`4`
-import typings.creditCardType.typesMod.CreditCardTypeSecurityCodeLabel
+import typings.creditCardType.distTypesMod.CreditCardTypeSecurityCodeLabel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

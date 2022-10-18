@@ -1,29 +1,50 @@
 organization := "org.scalablytyped"
 name := "storybook__core"
-version := "6.1.2-f5aca8"
-scalaVersion := "3.0.1"
+version := "6.5.12-b7dc42"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-dc2f99",
-  "org.scalablytyped" %%% "emotion__core" % "10.1.1-65bf16",
-  "org.scalablytyped" %%% "emotion__serialize" % "0.11.16-b57f85",
-  "org.scalablytyped" %%% "emotion__styled" % "10.0.27-6c7a70",
-  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.31-b03afc",
-  "org.scalablytyped" %%% "emotion__utils" % "0.11.3-2561dd",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20201002Z-965ac3",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-3fbed9",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20201002Z-64e6f9",
-  "org.scalablytyped" %%% "reach__router" % "1.3-dt-20200925Z-09c1b0",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-4ff700",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "storybook__addons" % "6.1.2-19f3ef",
-  "org.scalablytyped" %%% "storybook__api" % "6.1.2-f889fc",
-  "org.scalablytyped" %%% "storybook__channels" % "6.1.2-481a46",
-  "org.scalablytyped" %%% "storybook__client-api" % "6.1.2-586adf",
-  "org.scalablytyped" %%% "storybook__router" % "6.1.2-c909f8",
-  "org.scalablytyped" %%% "storybook__theming" % "6.1.2-4b16c8")
+  "org.scalablytyped" %%% "ajv" % "8.11.0-6f26a9",
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-7b08cb",
+  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-27b6b7",
+  "org.scalablytyped" %%% "babel__parser" % "7.19.4-d9b25c",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-1ba1f6",
+  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-0e2ba7",
+  "org.scalablytyped" %%% "babel__types" % "7.19.4-1978dd",
+  "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
+  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-9389e9",
+  "org.scalablytyped" %%% "events" % "3.0-dt-20211202Z-2d4ac7",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-d74acb",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-06d29e",
+  "org.scalablytyped" %%% "fork-ts-checker-webpack-plugin" % "7.2.13-ed31fb",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-58e21d",
+  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-9884c6",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "node-abort-controller" % "3.0.1-8874ea",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-76627f",
+  "org.scalablytyped" %%% "re2" % "1.17.7-e9900d",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",
+  "org.scalablytyped" %%% "schema-utils" % "4.0.0-a6d40a",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-696f82",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "storybook__addons" % "6.5.12-e37d9a",
+  "org.scalablytyped" %%% "storybook__api" % "6.5.12-0820b1",
+  "org.scalablytyped" %%% "storybook__channels" % "6.5.12-711db2",
+  "org.scalablytyped" %%% "storybook__client-api" % "6.5.12-700f08",
+  "org.scalablytyped" %%% "storybook__core-client" % "6.5.12-1c635d",
+  "org.scalablytyped" %%% "storybook__core-common" % "6.5.12-a60290",
+  "org.scalablytyped" %%% "storybook__router" % "6.5.12-07db7c",
+  "org.scalablytyped" %%% "storybook__store" % "6.5.12-9169b3",
+  "org.scalablytyped" %%% "storybook__theming" % "6.5.12-de6667",
+  "org.scalablytyped" %%% "storybook__ui" % "6.5.12-8f3935",
+  "org.scalablytyped" %%% "synchronous-promise" % "2.0.16-44f8b1",
+  "org.scalablytyped" %%% "tapable" % "2.2.1-7eb940",
+  "org.scalablytyped" %%% "typescript" % "4.8.4-676e37",
+  "org.scalablytyped" %%% "uri-js" % "4.4.1-d613cd",
+  "org.scalablytyped" %%% "webpack" % "5.74.0-635f23")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

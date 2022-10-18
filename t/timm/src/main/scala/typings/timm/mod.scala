@@ -1,6 +1,5 @@
 package typings.timm
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Omit
 import typings.timm.anon.FnCall
 import typings.timm.anon.FnCallABC
@@ -192,17 +191,9 @@ object mod {
     inline def set[V](obj: js.Array[V], key: Double, `val`: V): js.Array[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[V]]
     inline def set[V](obj: Null, key: Double, `val`: V): js.Array[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[V]]
     inline def set[V](obj: Unit, key: Double, `val`: V): js.Array[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[V]]
-    inline def set[K /* <: String */, V](obj: Null, key: K, `val`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in K ]: V}
-      */ typings.timm.timmStrings.set & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in K ]: V}
-      */ typings.timm.timmStrings.set & TopLevel[Any]]
-    inline def set[K /* <: String */, V](obj: Unit, key: K, `val`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in K ]: V}
-      */ typings.timm.timmStrings.set & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in K ]: V}
-      */ typings.timm.timmStrings.set & TopLevel[Any]]
-    inline def set[T /* <: js.Object */, K /* <: String */, V](obj: T, key: K, `val`: V): (Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.set & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.set & TopLevel[Any]]
+    inline def set[K /* <: String */, V](obj: Null, key: K, `val`: V): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any]
+    inline def set[K /* <: String */, V](obj: Unit, key: K, `val`: V): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any]
+    inline def set[T /* <: js.Object */, K /* <: String */, V](obj: T, key: K, `val`: V): (Omit[T, /* keyof {[ P in K ]: any} */ String]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof {[ P in K ]: any} */ String]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any)]
     
     @JSImport("timm", "default.setIn")
     @js.native
@@ -318,17 +309,9 @@ object mod {
   inline def set[V](obj: js.Array[V], key: Double, `val`: V): js.Array[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[V]]
   inline def set[V](obj: Null, key: Double, `val`: V): js.Array[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[V]]
   inline def set[V](obj: Unit, key: Double, `val`: V): js.Array[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[V]]
-  inline def set[K /* <: String */, V](obj: Null, key: K, `val`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in K ]: V}
-    */ typings.timm.timmStrings.set & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in K ]: V}
-    */ typings.timm.timmStrings.set & TopLevel[Any]]
-  inline def set[K /* <: String */, V](obj: Unit, key: K, `val`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in K ]: V}
-    */ typings.timm.timmStrings.set & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in K ]: V}
-    */ typings.timm.timmStrings.set & TopLevel[Any]]
-  inline def set[T /* <: js.Object */, K /* <: String */, V](obj: T, key: K, `val`: V): (Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.set & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.set & TopLevel[Any]]
+  inline def set[K /* <: String */, V](obj: Null, key: K, `val`: V): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any]
+  inline def set[K /* <: String */, V](obj: Unit, key: K, `val`: V): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any]
+  inline def set[T /* <: js.Object */, K /* <: String */, V](obj: T, key: K, `val`: V): (Omit[T, /* keyof {[ P in K ]: any} */ String]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof {[ P in K ]: any} */ String]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any)]
   
   inline def setIn(obj: js.Object, path: js.Array[Key], `val`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def setIn(obj: Null, path: js.Array[Key], `val`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Any]

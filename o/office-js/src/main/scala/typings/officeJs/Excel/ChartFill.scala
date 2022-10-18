@@ -2,6 +2,7 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.officeJs.OfficeExtension.ClientObject
+import typings.officeJs.OfficeExtension.ClientResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,6 +30,14 @@ trait ChartFill
   var context_ChartFill: RequestContext
   
   /**
+    * Gets the uniform color fill formatting of a chart element.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  def getSolidColor(): ClientResult[String]
+  
+  /**
     * Sets the fill formatting of a chart element to a uniform color.
     *
     * @remarks
@@ -49,11 +58,12 @@ object ChartFill {
   inline def apply(
     clear: () => Unit,
     context: RequestContext,
+    getSolidColor: () => ClientResult[String],
     isNullObject: Boolean,
     setSolidColor: String => Unit,
     toJSON: () => StringDictionary[String]
   ): ChartFill = {
-    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), context = context.asInstanceOf[js.Any], isNullObject = isNullObject.asInstanceOf[js.Any], setSolidColor = js.Any.fromFunction1(setSolidColor), toJSON = js.Any.fromFunction0(toJSON))
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), context = context.asInstanceOf[js.Any], getSolidColor = js.Any.fromFunction0(getSolidColor), isNullObject = isNullObject.asInstanceOf[js.Any], setSolidColor = js.Any.fromFunction1(setSolidColor), toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[ChartFill]
   }
   
@@ -62,6 +72,8 @@ object ChartFill {
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     inline def setContext(value: RequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setGetSolidColor(value: () => ClientResult[String]): Self = StObject.set(x, "getSolidColor", js.Any.fromFunction0(value))
     
     inline def setSetSolidColor(value: String => Unit): Self = StObject.set(x, "setSolidColor", js.Any.fromFunction1(value))
     

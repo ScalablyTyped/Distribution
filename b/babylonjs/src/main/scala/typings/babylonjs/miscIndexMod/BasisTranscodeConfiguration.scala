@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "BasisTranscodeConfiguration")
 @js.native
 open class BasisTranscodeConfiguration ()
-  extends typings.babylonjs.basisMod.BasisTranscodeConfiguration
+  extends typings.babylonjs.miscBasisMod.BasisTranscodeConfiguration

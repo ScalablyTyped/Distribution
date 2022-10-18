@@ -2,6 +2,11 @@ package typings.nivoBullet
 
 import typings.nivoBullet.anon.From
 import typings.nivoBullet.anon.OmitBulletSvgPropsheightw
+import typings.nivoBullet.distTypesTypesMod.BulletItemProps
+import typings.nivoBullet.distTypesTypesMod.BulletMarkersItemProps
+import typings.nivoBullet.distTypesTypesMod.BulletRectsItemProps
+import typings.nivoBullet.distTypesTypesMod.BulletSvgProps
+import typings.nivoBullet.distTypesTypesMod.BulletTooltipProps
 import typings.nivoBullet.nivoBulletBooleans.`false`
 import typings.nivoBullet.nivoBulletBooleans.`true`
 import typings.nivoBullet.nivoBulletDoubles.`0.4`
@@ -17,11 +22,6 @@ import typings.nivoBullet.nivoBulletStrings.img
 import typings.nivoBullet.nivoBulletStrings.middle
 import typings.nivoBullet.nivoBulletStrings.seqColoncool
 import typings.nivoBullet.nivoBulletStrings.seqColonred_purple
-import typings.nivoBullet.typesMod.BulletItemProps
-import typings.nivoBullet.typesMod.BulletMarkersItemProps
-import typings.nivoBullet.typesMod.BulletRectsItemProps
-import typings.nivoBullet.typesMod.BulletSvgProps
-import typings.nivoBullet.typesMod.BulletTooltipProps
 import typings.nivoCore.mod.DefaultMargin_
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

@@ -1,6 +1,6 @@
 package typings.consola.mod
 
-import typings.std.WritableStream
+import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,9 +71,9 @@ open class Consola protected () extends StObject {
   def start(message: Any, args: Any*): Unit = js.native
   def start(message: ConsolaLogObject, args: Any*): Unit = js.native
   
-  val stderr: WritableStream[Any] = js.native
+  val stderr: WritableStream = js.native
   
-  val stdout: WritableStream[Any] = js.native
+  val stdout: WritableStream = js.native
   
   def success(message: Any, args: Any*): Unit = js.native
   def success(message: ConsolaLogObject, args: Any*): Unit = js.native

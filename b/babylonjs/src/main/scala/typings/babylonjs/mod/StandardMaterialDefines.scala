@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param externalProperties The external properties
   */
 open class StandardMaterialDefines ()
-  extends typings.babylonjs.legacyMod.StandardMaterialDefines {
+  extends typings.babylonjs.legacyLegacyMod.StandardMaterialDefines {
   def this(externalProperties: org.scalablytyped.runtime.StringDictionary[Default]) = this()
 }

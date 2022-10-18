@@ -1,6 +1,6 @@
 package typings.nivoVoronoi
 
-import typings.nivoVoronoi.typesMod.VoronoiLayerId
+import typings.nivoVoronoi.distTypesTypesMod.VoronoiLayerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

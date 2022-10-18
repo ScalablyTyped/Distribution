@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "TextSegmentMetricsData")
 @js.native
 open class TextSegmentMetricsData protected ()
-  extends typings.blackEngine.textMetricsMod.TextSegmentMetricsData {
+  extends typings.blackEngine.displayTextTextMetricsMod.TextSegmentMetricsData {
   def this(text: Any, style: Any, lineIndex: Any, bounds: Any) = this()
 }

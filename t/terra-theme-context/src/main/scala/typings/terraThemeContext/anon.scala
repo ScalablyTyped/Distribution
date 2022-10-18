@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0` extends StObject {
+  trait ClassName extends StObject {
     
     /**
       * The current application theme className.
@@ -15,14 +15,14 @@ object anon {
       */
     var className: js.UndefOr[String] = js.undefined
   }
-  object `0` {
+  object ClassName {
     
-    inline def apply(): `0` = {
+    inline def apply(): ClassName = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`]
+      __obj.asInstanceOf[ClassName]
     }
     
-    extension [Self <: `0`](x: Self) {
+    extension [Self <: ClassName](x: Self) {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -30,18 +30,18 @@ object anon {
     }
   }
   
-  trait ClassName extends StObject {
+  trait ClassNameRequireable extends StObject {
     
     var className: Requireable[String]
   }
-  object ClassName {
+  object ClassNameRequireable {
     
-    inline def apply(className: Requireable[String]): ClassName = {
+    inline def apply(className: Requireable[String]): ClassNameRequireable = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ClassName]
+      __obj.asInstanceOf[ClassNameRequireable]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    extension [Self <: ClassNameRequireable](x: Self) {
       
       inline def setClassName(value: Requireable[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     }

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MessageEntity extends StObject {
   
+  var custom_emoji_id: js.UndefOr[String] = js.undefined
+  
   var language: js.UndefOr[String] = js.undefined
   
   var length: Double
@@ -27,6 +29,10 @@ object MessageEntity {
   }
   
   extension [Self <: MessageEntity](x: Self) {
+    
+    inline def setCustom_emoji_id(value: String): Self = StObject.set(x, "custom_emoji_id", value.asInstanceOf[js.Any])
+    
+    inline def setCustom_emoji_idUndefined: Self = StObject.set(x, "custom_emoji_id", js.undefined)
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

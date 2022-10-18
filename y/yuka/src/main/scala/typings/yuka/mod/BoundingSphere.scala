@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [radius=0] - The radius of the bounding sphere.
   */
 open class BoundingSphere ()
-  extends typings.yuka.yukaMod.BoundingSphere {
-  def this(center: typings.yuka.vector3Mod.Vector3) = this()
+  extends typings.yuka.srcYukaMod.BoundingSphere {
+  def this(center: typings.yuka.srcMathVector3Mod.Vector3) = this()
   def this(center: Unit, radius: Double) = this()
-  def this(center: typings.yuka.vector3Mod.Vector3, radius: Double) = this()
+  def this(center: typings.yuka.srcMathVector3Mod.Vector3, radius: Double) = this()
 }

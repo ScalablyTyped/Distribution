@@ -1,15 +1,15 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.appendMod.Append
-import typings.tsToolbelt.dropMod._Drop
-import typings.tsToolbelt.groupMod.__Group
-import typings.tsToolbelt.takeMod._Take
+import typings.tsToolbelt.outListAppendMod.Append
+import typings.tsToolbelt.outListDropMod._Drop
+import typings.tsToolbelt.outListGroupMod.__Group
+import typings.tsToolbelt.outListTakeMod._Take
 import typings.tsToolbelt.tsToolbeltStrings.`-Greaterthansign`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0Group`[L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Double */, LN /* <: typings.tsToolbelt.listMod.List[Any] */] extends StObject {
+trait `0Group`[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Double */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */] extends StObject {
   
   var `0`: __Group[_Drop[L, N, `-Greaterthansign`], N, Append[LN, _Take[L, N, `-Greaterthansign`]]]
   
@@ -17,7 +17,7 @@ trait `0Group`[L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Double *
 }
 object `0Group` {
   
-  inline def apply[L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Double */, LN /* <: typings.tsToolbelt.listMod.List[Any] */](
+  inline def apply[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Double */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */](
     `0`: __Group[_Drop[L, N, `-Greaterthansign`], N, Append[LN, _Take[L, N, `-Greaterthansign`]]],
     `1`: LN
   ): `0Group`[L, N, LN] = {
@@ -27,7 +27,7 @@ object `0Group` {
     __obj.asInstanceOf[`0Group`[L, N, LN]]
   }
   
-  extension [Self <: `0Group`[?, ?, ?], L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Double */, LN /* <: typings.tsToolbelt.listMod.List[Any] */](x: Self & (`0Group`[L, N, LN])) {
+  extension [Self <: `0Group`[?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Double */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */](x: Self & (`0Group`[L, N, LN])) {
     
     inline def set0(value: __Group[_Drop[L, N, `-Greaterthansign`], N, Append[LN, _Take[L, N, `-Greaterthansign`]]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

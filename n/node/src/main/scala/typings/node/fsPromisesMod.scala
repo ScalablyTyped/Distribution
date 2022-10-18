@@ -1,11 +1,11 @@
 package typings.node
 
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.anon.BytesWritten
-import typings.node.anon.Encoding
 import typings.node.anon.EncodingBufferEncoding
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
-import typings.node.anon.ObjectEncodingOptionsAbor
+import typings.node.anon.ObjectEncodingOptionsAborEncoding
 import typings.node.anon.ObjectEncodingOptionsflagFlag
 import typings.node.anon.ObjectEncodingOptionsmode
 import typings.node.anon.ObjectEncodingOptionswith
@@ -13,7 +13,8 @@ import typings.node.anon.ObjectEncodingOptionswithEncoding
 import typings.node.anon.StatOptionsbigintfalseund
 import typings.node.anon.StatOptionsbiginttrue
 import typings.node.anon.WatchOptionsencodingbuffe
-import typings.node.anon.`3`
+import typings.node.anon.WithFileTypes
+import typings.node.anon.`2`
 import typings.node.anon.encodingBufferEncodingfla
 import typings.node.anon.encodingnullundefinedflag
 import typings.node.bufferMod.global.Buffer
@@ -36,16 +37,19 @@ import typings.node.fsMod.TimeLike
 import typings.node.fsMod.WatchEventType
 import typings.node.fsMod.WatchOptions
 import typings.node.fsMod.WriteVResult
-import typings.node.nodeFsMod.Dir
-import typings.node.nodeFsMod.Dirent
-import typings.node.nodeFsMod.ReadStream
-import typings.node.nodeFsMod.Stats
-import typings.node.nodeFsMod.WriteStream
-import typings.node.nodeStreamMod.Stream
+import typings.node.nodeColonfsMod.Dir
+import typings.node.nodeColonfsMod.Dirent
+import typings.node.nodeColonfsMod.ReadStream
+import typings.node.nodeColonfsMod.Stats
+import typings.node.nodeColonfsMod.WriteStream
+import typings.node.nodeColonreadlineMod.Interface
+import typings.node.nodeColonstreamMod.Stream
 import typings.node.nodeStrings.buffer_
 import typings.node.streamWebMod.ReadableStream
 import typings.node.workerThreadsMod._TransferListItem
 import typings.std.AsyncIterable
+import typings.std.BigInt64Array
+import typings.std.BigUint64Array
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -649,7 +653,7 @@ object fsPromisesMod {
     * If a flag is not provided, it defaults to `'r'`.
     */
   inline def readFile(path: PathLike): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
-  inline def readFile(path: PathLike, options: ObjectEncodingOptionsAbor): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+  inline def readFile(path: PathLike, options: ObjectEncodingOptionsAborEncoding): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
   /**
     * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -661,7 +665,7 @@ object fsPromisesMod {
   inline def readFile(path: PathLike, options: encodingnullundefinedflag): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   inline def readFile(path: PathLike, options: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def readFile(path: FileHandle): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
-  inline def readFile(path: FileHandle, options: ObjectEncodingOptionsAbor): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+  inline def readFile(path: FileHandle, options: ObjectEncodingOptionsAborEncoding): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
   inline def readFile(path: FileHandle, options: encodingBufferEncodingfla): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def readFile(path: FileHandle, options: encodingnullundefinedflag): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   inline def readFile(path: FileHandle, options: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
@@ -696,12 +700,6 @@ object fsPromisesMod {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   inline def readdir(path: PathLike): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
-  /**
-    * Asynchronous readdir(3) - read a directory.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  inline def readdir(path: PathLike, options: Encoding): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
   inline def readdir(path: PathLike, options: ObjectEncodingOptionswith): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   /**
     * Asynchronous readdir(3) - read a directory.
@@ -709,6 +707,12 @@ object fsPromisesMod {
     * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
     */
   inline def readdir(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Promise[js.Array[Dirent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Dirent]]]
+  /**
+    * Asynchronous readdir(3) - read a directory.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
+    */
+  inline def readdir(path: PathLike, options: WithFileTypes): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
   inline def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
   inline def readdir_buffer(path: PathLike, options: buffer_): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
@@ -959,61 +963,37 @@ object fsPromisesMod {
   inline def writeFile(file: PathLike, data: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(file: PathLike, data: String, options: ObjectEncodingOptionsmode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(file: PathLike, data: String, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: PathLike, data: js.Iterable[js.typedarray.ArrayBufferView | String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(
-    file: PathLike,
-    data: js.Iterable[String | js.typedarray.ArrayBufferView],
-    options: ObjectEncodingOptionsmode
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: PathLike, data: js.Iterable[String | js.typedarray.ArrayBufferView], options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: PathLike, data: js.typedarray.ArrayBufferView): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: PathLike, data: js.typedarray.ArrayBufferView, options: ObjectEncodingOptionsmode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: PathLike, data: js.typedarray.ArrayBufferView, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: PathLike, data: js.Iterable[ArrayBufferView | String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: PathLike, data: js.Iterable[String | ArrayBufferView], options: ObjectEncodingOptionsmode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: PathLike, data: js.Iterable[String | ArrayBufferView], options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: PathLike, data: ArrayBufferView): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: PathLike, data: ArrayBufferView, options: ObjectEncodingOptionsmode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: PathLike, data: ArrayBufferView, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(file: PathLike, data: Stream): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(file: PathLike, data: Stream, options: ObjectEncodingOptionsmode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(file: PathLike, data: Stream, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: PathLike, data: AsyncIterable[js.typedarray.ArrayBufferView | String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(
-    file: PathLike,
-    data: AsyncIterable[String | js.typedarray.ArrayBufferView],
-    options: ObjectEncodingOptionsmode
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(
-    file: PathLike,
-    data: AsyncIterable[String | js.typedarray.ArrayBufferView],
-    options: BufferEncoding
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: PathLike, data: AsyncIterable[ArrayBufferView | String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: PathLike, data: AsyncIterable[String | ArrayBufferView], options: ObjectEncodingOptionsmode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: PathLike, data: AsyncIterable[String | ArrayBufferView], options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(file: FileHandle, data: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(file: FileHandle, data: String, options: ObjectEncodingOptionsmode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(file: FileHandle, data: String, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: FileHandle, data: js.Iterable[js.typedarray.ArrayBufferView | String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(
-    file: FileHandle,
-    data: js.Iterable[String | js.typedarray.ArrayBufferView],
-    options: ObjectEncodingOptionsmode
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(
-    file: FileHandle,
-    data: js.Iterable[String | js.typedarray.ArrayBufferView],
-    options: BufferEncoding
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: FileHandle, data: js.typedarray.ArrayBufferView): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: FileHandle, data: js.typedarray.ArrayBufferView, options: ObjectEncodingOptionsmode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: FileHandle, data: js.typedarray.ArrayBufferView, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: FileHandle, data: js.Iterable[ArrayBufferView | String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: FileHandle, data: js.Iterable[String | ArrayBufferView], options: ObjectEncodingOptionsmode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: FileHandle, data: js.Iterable[String | ArrayBufferView], options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: FileHandle, data: ArrayBufferView): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: FileHandle, data: ArrayBufferView, options: ObjectEncodingOptionsmode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: FileHandle, data: ArrayBufferView, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(file: FileHandle, data: Stream): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(file: FileHandle, data: Stream, options: ObjectEncodingOptionsmode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(file: FileHandle, data: Stream, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: FileHandle, data: AsyncIterable[js.typedarray.ArrayBufferView | String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: FileHandle, data: AsyncIterable[ArrayBufferView | String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(
     file: FileHandle,
-    data: AsyncIterable[String | js.typedarray.ArrayBufferView],
+    data: AsyncIterable[String | ArrayBufferView],
     options: ObjectEncodingOptionsmode
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(
-    file: FileHandle,
-    data: AsyncIterable[String | js.typedarray.ArrayBufferView],
-    options: BufferEncoding
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: FileHandle, data: AsyncIterable[String | ArrayBufferView], options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait CreateReadStreamOptions extends StObject {
     
@@ -1274,7 +1254,118 @@ object fsPromisesMod {
       */
     val fd: Double = js.native
     
-    def read[T /* <: js.typedarray.ArrayBufferView */](): js.Promise[FileReadResult[T]] = js.native
+    def read(buffer: js.typedarray.DataView): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.DataView, offset: Double): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.DataView, offset: Double, length: Double): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.DataView, offset: Double, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.DataView, offset: Double, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.DataView, offset: Double, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.DataView, offset: Null, length: Double): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.DataView, offset: Null, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.DataView, offset: Null, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.DataView, offset: Null, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.DataView, offset: Unit, length: Double): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.DataView, offset: Unit, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.DataView, offset: Unit, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.DataView, offset: Unit, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.DataView]] = js.native
+    def read(buffer: js.typedarray.Float32Array): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float32Array, offset: Double): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float32Array, offset: Double, length: Double): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float32Array, offset: Double, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float32Array, offset: Double, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float32Array, offset: Double, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float32Array, offset: Null, length: Double): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float32Array, offset: Null, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float32Array, offset: Null, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float32Array, offset: Null, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float32Array, offset: Unit, length: Double): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float32Array, offset: Unit, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float32Array, offset: Unit, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float32Array, offset: Unit, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Float32Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array, offset: Double): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array, offset: Double, length: Double): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array, offset: Double, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array, offset: Double, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array, offset: Double, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array, offset: Null, length: Double): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array, offset: Null, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array, offset: Null, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array, offset: Null, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array, offset: Unit, length: Double): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array, offset: Unit, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array, offset: Unit, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Float64Array, offset: Unit, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Float64Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array, offset: Double): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array, offset: Double, length: Double): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array, offset: Double, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array, offset: Double, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array, offset: Double, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array, offset: Null, length: Double): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array, offset: Null, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array, offset: Null, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array, offset: Null, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array, offset: Unit, length: Double): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array, offset: Unit, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array, offset: Unit, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int16Array, offset: Unit, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Int16Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array, offset: Double): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array, offset: Double, length: Double): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array, offset: Double, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array, offset: Double, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array, offset: Double, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array, offset: Null, length: Double): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array, offset: Null, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array, offset: Null, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array, offset: Null, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array, offset: Unit, length: Double): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array, offset: Unit, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array, offset: Unit, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int32Array, offset: Unit, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Int32Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array, offset: Double): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array, offset: Double, length: Double): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array, offset: Double, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array, offset: Double, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array, offset: Double, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array, offset: Null, length: Double): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array, offset: Null, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array, offset: Null, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array, offset: Null, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array, offset: Unit, length: Double): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array, offset: Unit, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array, offset: Unit, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Int8Array, offset: Unit, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Int8Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array, offset: Double): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array, offset: Double, length: Double): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array, offset: Double, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array, offset: Double, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array, offset: Double, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array, offset: Null, length: Double): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array, offset: Null, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array, offset: Null, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array, offset: Null, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array, offset: Unit, length: Double): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array, offset: Unit, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array, offset: Unit, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint16Array, offset: Unit, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Uint16Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array, offset: Double): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array, offset: Double, length: Double): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array, offset: Double, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array, offset: Double, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array, offset: Double, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array, offset: Null, length: Double): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array, offset: Null, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array, offset: Null, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array, offset: Null, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array, offset: Unit, length: Double): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array, offset: Unit, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array, offset: Unit, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
+    def read(buffer: js.typedarray.Uint32Array, offset: Unit, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Uint32Array]] = js.native
     /**
       * Reads data from the file and stores that in the given buffer.
       *
@@ -1288,21 +1379,64 @@ object fsPromisesMod {
       * integer, the current file position will remain unchanged.
       * @return Fulfills upon success with an object with two properties:
       */
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T, offset: Double): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T, offset: Double, length: Double): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T, offset: Double, length: Double, position: Double): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T, offset: Double, length: Null, position: Double): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T, offset: Double, length: Unit, position: Double): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T, offset: Null, length: Double): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T, offset: Null, length: Double, position: Double): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T, offset: Null, length: Null, position: Double): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T, offset: Null, length: Unit, position: Double): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T, offset: Unit, length: Double): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T, offset: Unit, length: Double, position: Double): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T, offset: Unit, length: Null, position: Double): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](buffer: T, offset: Unit, length: Unit, position: Double): js.Promise[FileReadResult[T]] = js.native
-    def read[T /* <: js.typedarray.ArrayBufferView */](options: FileReadOptions[T]): js.Promise[FileReadResult[T]] = js.native
+    def read(buffer: js.typedarray.Uint8Array): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8Array, offset: Double): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8Array, offset: Double, length: Double): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8Array, offset: Double, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8Array, offset: Double, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8Array, offset: Double, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8Array, offset: Null, length: Double): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8Array, offset: Null, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8Array, offset: Null, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8Array, offset: Null, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8Array, offset: Unit, length: Double): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8Array, offset: Unit, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8Array, offset: Unit, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8Array, offset: Unit, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8Array]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray, offset: Double): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray, offset: Double, length: Double): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray, offset: Double, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray, offset: Double, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray, offset: Double, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray, offset: Null, length: Double): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray, offset: Null, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray, offset: Null, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray, offset: Null, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray, offset: Unit, length: Double): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray, offset: Unit, length: Double, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray, offset: Unit, length: Null, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: js.typedarray.Uint8ClampedArray, offset: Unit, length: Unit, position: Double): js.Promise[FileReadResult[js.typedarray.Uint8ClampedArray]] = js.native
+    def read(buffer: BigInt64Array): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigInt64Array, offset: Double): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigInt64Array, offset: Double, length: Double): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigInt64Array, offset: Double, length: Double, position: Double): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigInt64Array, offset: Double, length: Null, position: Double): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigInt64Array, offset: Double, length: Unit, position: Double): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigInt64Array, offset: Null, length: Double): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigInt64Array, offset: Null, length: Double, position: Double): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigInt64Array, offset: Null, length: Null, position: Double): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigInt64Array, offset: Null, length: Unit, position: Double): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigInt64Array, offset: Unit, length: Double): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigInt64Array, offset: Unit, length: Double, position: Double): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigInt64Array, offset: Unit, length: Null, position: Double): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigInt64Array, offset: Unit, length: Unit, position: Double): js.Promise[FileReadResult[BigInt64Array]] = js.native
+    def read(buffer: BigUint64Array): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read(buffer: BigUint64Array, offset: Double): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read(buffer: BigUint64Array, offset: Double, length: Double): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read(buffer: BigUint64Array, offset: Double, length: Double, position: Double): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read(buffer: BigUint64Array, offset: Double, length: Null, position: Double): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read(buffer: BigUint64Array, offset: Double, length: Unit, position: Double): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read(buffer: BigUint64Array, offset: Null, length: Double): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read(buffer: BigUint64Array, offset: Null, length: Double, position: Double): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read(buffer: BigUint64Array, offset: Null, length: Null, position: Double): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read(buffer: BigUint64Array, offset: Null, length: Unit, position: Double): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read(buffer: BigUint64Array, offset: Unit, length: Double): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read(buffer: BigUint64Array, offset: Unit, length: Double, position: Double): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read(buffer: BigUint64Array, offset: Unit, length: Null, position: Double): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read(buffer: BigUint64Array, offset: Unit, length: Unit, position: Double): js.Promise[FileReadResult[BigUint64Array]] = js.native
+    def read[T /* <: ArrayBufferView */](): js.Promise[FileReadResult[T]] = js.native
+    def read[T /* <: ArrayBufferView */](options: FileReadOptions[T]): js.Promise[FileReadResult[T]] = js.native
     
     /**
       * Asynchronously reads the entire contents of a file.
@@ -1333,8 +1467,27 @@ object fsPromisesMod {
       */
     def readFile(options: EncodingBufferEncoding): js.Promise[String] = js.native
     def readFile(options: ObjectEncodingOptionsflagFlag): js.Promise[String | Buffer] = js.native
-    def readFile(options: `3`): js.Promise[Buffer] = js.native
+    def readFile(options: `2`): js.Promise[Buffer] = js.native
     def readFile(options: BufferEncoding): js.Promise[String] = js.native
+    
+    /**
+      * Convenience method to create a `readline` interface and stream over the file. For example:
+      *
+      * ```js
+      * import { open } from 'node:fs/promises';
+      *
+      * const file = await open('./some/file/to/read');
+      *
+      * for await (const line of file.readLines()) {
+      *   console.log(line);
+      * }
+      * ```
+      *
+      * @since v18.11.0
+      * @param options See `filehandle.createReadStream()` for the options.
+      */
+    def readLines(): Interface = js.native
+    def readLines(options: CreateReadStreamOptions): Interface = js.native
     
     /**
       * Returns a `ReadableStream` that may be used to read the files data.
@@ -1366,8 +1519,8 @@ object fsPromisesMod {
       * @param position The offset from the beginning of the file where the data should be read from. If `position` is not a `number`, the data will be read from the current position.
       * @return Fulfills upon success an object containing two properties:
       */
-    def readv(buffers: js.Array[js.typedarray.ArrayBufferView]): js.Promise[ReadVResult] = js.native
-    def readv(buffers: js.Array[js.typedarray.ArrayBufferView], position: Double): js.Promise[ReadVResult] = js.native
+    def readv(buffers: js.Array[ArrayBufferView]): js.Promise[ReadVResult] = js.native
+    def readv(buffers: js.Array[ArrayBufferView], position: Double): js.Promise[ReadVResult] = js.native
     
     /**
       * @since v10.0.0
@@ -1502,11 +1655,11 @@ object fsPromisesMod {
       * @param position The offset from the beginning of the file where the data from `buffers` should be written. If `position` is not a `number`, the data will be written at the current
       * position.
       */
-    def writev(buffers: js.Array[js.typedarray.ArrayBufferView]): js.Promise[WriteVResult] = js.native
-    def writev(buffers: js.Array[js.typedarray.ArrayBufferView], position: Double): js.Promise[WriteVResult] = js.native
+    def writev(buffers: js.Array[ArrayBufferView]): js.Promise[WriteVResult] = js.native
+    def writev(buffers: js.Array[ArrayBufferView], position: Double): js.Promise[WriteVResult] = js.native
   }
   
-  trait FileReadOptions[T /* <: js.typedarray.ArrayBufferView */] extends StObject {
+  trait FileReadOptions[T /* <: ArrayBufferView */] extends StObject {
     
     /**
       * @default `Buffer.alloc(0xffff)`
@@ -1527,12 +1680,12 @@ object fsPromisesMod {
   }
   object FileReadOptions {
     
-    inline def apply[T /* <: js.typedarray.ArrayBufferView */](): FileReadOptions[T] = {
+    inline def apply[T /* <: ArrayBufferView */](): FileReadOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileReadOptions[T]]
     }
     
-    extension [Self <: FileReadOptions[?], T /* <: js.typedarray.ArrayBufferView */](x: Self & FileReadOptions[T]) {
+    extension [Self <: FileReadOptions[?], T /* <: ArrayBufferView */](x: Self & FileReadOptions[T]) {
       
       inline def setBuffer(value: T): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -1558,7 +1711,7 @@ object fsPromisesMod {
     }
   }
   
-  trait FileReadResult[T /* <: js.typedarray.ArrayBufferView */] extends StObject {
+  trait FileReadResult[T /* <: ArrayBufferView */] extends StObject {
     
     var buffer: T
     
@@ -1566,12 +1719,12 @@ object fsPromisesMod {
   }
   object FileReadResult {
     
-    inline def apply[T /* <: js.typedarray.ArrayBufferView */](buffer: T, bytesRead: Double): FileReadResult[T] = {
+    inline def apply[T /* <: ArrayBufferView */](buffer: T, bytesRead: Double): FileReadResult[T] = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileReadResult[T]]
     }
     
-    extension [Self <: FileReadResult[?], T /* <: js.typedarray.ArrayBufferView */](x: Self & FileReadResult[T]) {
+    extension [Self <: FileReadResult[?], T /* <: ArrayBufferView */](x: Self & FileReadResult[T]) {
       
       inline def setBuffer(value: T): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

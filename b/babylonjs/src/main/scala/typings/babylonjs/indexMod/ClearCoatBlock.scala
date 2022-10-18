@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
+import typings.babylonjs.materialsNodeNodeMaterialBuildStateMod.NodeMaterialBuildState
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,8 +36,8 @@ object ClearCoatBlock {
     */
   inline def GetCode(
     state: NodeMaterialBuildState,
-    ccBlock: Nullable[typings.babylonjs.clearCoatBlockMod.ClearCoatBlock],
-    reflectionBlock: Nullable[typings.babylonjs.reflectionBlockMod.ReflectionBlock],
+    ccBlock: Nullable[typings.babylonjs.materialsNodeBlocksPbrClearCoatBlockMod.ClearCoatBlock],
+    reflectionBlock: Nullable[typings.babylonjs.materialsNodeBlocksPbrReflectionBlockMod.ReflectionBlock],
     worldPosVarName: String,
     generateTBNSpace: Boolean,
     vTBNAvailable: Boolean,

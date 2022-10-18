@@ -26,7 +26,7 @@ object SemanticRolesResultObject {
     
     inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    inline def setKeywordsVarargs(value: SemanticRolesKeyword*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: SemanticRolesKeyword*): Self = StObject.set(x, "keywords", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

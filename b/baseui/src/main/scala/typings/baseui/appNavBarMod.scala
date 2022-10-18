@@ -7,12 +7,12 @@ import typings.baseui.appNavBarTypesMod.AppNavBarOverrides
 import typings.baseui.appNavBarTypesMod.AppNavBarProps
 import typings.baseui.appNavBarTypesMod.NavItem
 import typings.baseui.appNavBarTypesMod.UserMenuProps
+import typings.baseui.appNavBarUtilsMod.GetUniqueIdentifier
 import typings.baseui.baseuiStrings.button
 import typings.baseui.baseuiStrings.div
 import typings.baseui.baseuiStrings.li_
-import typings.baseui.utilsMod.GetUniqueIdentifier
 import typings.react.mod.global.JSX.Element
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

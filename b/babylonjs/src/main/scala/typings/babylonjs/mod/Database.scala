@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Database")
 @js.native
 open class Database protected ()
-  extends typings.babylonjs.legacyMod.Database {
+  extends typings.babylonjs.legacyLegacyMod.Database {
   /**
     * Creates a new Database
     * @param urlToScene defines the url to load the scene

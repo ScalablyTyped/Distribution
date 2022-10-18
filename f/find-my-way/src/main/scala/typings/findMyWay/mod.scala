@@ -3,10 +3,6 @@ package typings.findMyWay
 import org.scalablytyped.runtime.StringDictionary
 import typings.findMyWay.anon.CommonPrefix
 import typings.findMyWay.anon.Del
-import typings.node.http2Mod.Http2ServerRequest
-import typings.node.http2Mod.Http2ServerResponse
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -557,9 +553,25 @@ object mod {
     var unsubscribe_Original: ShortHandRoute[V] = js.native
   }
   
-  type Req[V] = Http2ServerRequest | IncomingMessage
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    V extends find-my-way.find-my-way.HTTPVersion.V1 ? node.http.IncomingMessage : node.http2.Http2ServerRequest
+    }}}
+    */
+  @js.native
+  trait Req[V] extends StObject
   
-  type Res[V] = Http2ServerResponse | ServerResponse[IncomingMessage]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    V extends find-my-way.find-my-way.HTTPVersion.V1 ? node.http.ServerResponse<node.http.IncomingMessage> : node.http2.Http2ServerResponse
+    }}}
+    */
+  @js.native
+  trait Res[V] extends StObject
   
   trait RouteOptions extends StObject {
     

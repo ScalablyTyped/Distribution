@@ -1,7 +1,7 @@
 package typings.webdriverio.anon
 
 import typings.std.NonNullable
-import typings.wdioTypes.capabilitiesMod.DesiredCapabilities
+import typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities
 import typings.webdriverio.webdriverioStrings.`object`
 import typings.webdriverio.webdriverioStrings.boolean
 import typings.webdriverio.webdriverioStrings.function

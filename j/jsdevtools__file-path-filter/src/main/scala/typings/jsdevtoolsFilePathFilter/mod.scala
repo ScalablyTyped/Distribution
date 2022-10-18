@@ -1,11 +1,11 @@
 package typings.jsdevtoolsFilePathFilter
 
-import typings.jsdevtoolsFilePathFilter.typesMod.AnyFilter
-import typings.jsdevtoolsFilePathFilter.typesMod.FilterCriteria
-import typings.jsdevtoolsFilePathFilter.typesMod.FilterCriterion
-import typings.jsdevtoolsFilePathFilter.typesMod.FilterFunction
-import typings.jsdevtoolsFilePathFilter.typesMod.Filters
-import typings.jsdevtoolsFilePathFilter.typesMod.Options
+import typings.jsdevtoolsFilePathFilter.libTypesMod.AnyFilter
+import typings.jsdevtoolsFilePathFilter.libTypesMod.FilterCriteria
+import typings.jsdevtoolsFilePathFilter.libTypesMod.FilterCriterion
+import typings.jsdevtoolsFilePathFilter.libTypesMod.FilterFunction
+import typings.jsdevtoolsFilePathFilter.libTypesMod.Filters
+import typings.jsdevtoolsFilePathFilter.libTypesMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

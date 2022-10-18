@@ -1,6 +1,6 @@
 package typings.grommet.anon
 
-import typings.grommet.listMod.BorderType
+import typings.grommet.componentsListMod.BorderType
 import typings.grommet.utilsMod.PadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

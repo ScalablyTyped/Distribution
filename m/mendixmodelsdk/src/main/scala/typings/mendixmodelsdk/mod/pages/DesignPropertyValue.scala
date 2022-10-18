@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.DesignPropertyValue")
 @js.native
 open class DesignPropertyValue protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.DesignPropertyValue {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.DesignPropertyValue {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object DesignPropertyValue {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.DesignPropertyValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.DesignPropertyValue]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.DesignPropertyValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.DesignPropertyValue]
   
   /**
     * Creates and returns a new DesignPropertyValue instance in the SDK and on the server.
@@ -50,7 +50,7 @@ object DesignPropertyValue {
     *  8.0.0 and higher
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.Appearance): typings.mendixmodelsdk.pagesMod.pages.DesignPropertyValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.DesignPropertyValue]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Appearance): typings.mendixmodelsdk.srcGenPagesMod.pages.DesignPropertyValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.DesignPropertyValue]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.DesignPropertyValue.structureTypeName")

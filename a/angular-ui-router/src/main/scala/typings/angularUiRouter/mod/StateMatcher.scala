@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class StateMatcher protected ()
   extends typings.uirouterCore.mod.StateMatcher {
-  def this(_states: StringDictionary[typings.uirouterCore.stateObjectMod.StateObject]) = this()
+  def this(_states: StringDictionary[typings.uirouterCore.libStateStateObjectMod.StateObject]) = this()
 }

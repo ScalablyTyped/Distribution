@@ -46,10 +46,6 @@ object searchIndexStrings {
   inline def PRODUCT: PRODUCT = "PRODUCT".asInstanceOf[PRODUCT]
   
   @js.native
-  sealed trait ReplaceValues extends StObject
-  inline def ReplaceValues: ReplaceValues = "ReplaceValues".asInstanceOf[ReplaceValues]
-  
-  @js.native
   sealed trait SUM
     extends StObject
        with Score

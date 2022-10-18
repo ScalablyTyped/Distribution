@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Root extends StObject {
   
-  var app: typings.vueDevtoolsApi.appMod.App
+  var app: typings.vueDevtoolsApi.libEsmApiAppMod.App
   
-  var root: typings.vueDevtoolsApi.componentMod.ComponentInstance
+  var root: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance
 }
 object Root {
   
   inline def apply(
-    app: typings.vueDevtoolsApi.appMod.App,
-    root: typings.vueDevtoolsApi.componentMod.ComponentInstance
+    app: typings.vueDevtoolsApi.libEsmApiAppMod.App,
+    root: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance
   ): Root = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[Root]
@@ -22,8 +22,8 @@ object Root {
   
   extension [Self <: Root](x: Self) {
     
-    inline def setApp(value: typings.vueDevtoolsApi.appMod.App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: typings.vueDevtoolsApi.libEsmApiAppMod.App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    inline def setRoot(value: typings.vueDevtoolsApi.componentMod.ComponentInstance): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

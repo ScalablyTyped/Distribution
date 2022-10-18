@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,23 +20,17 @@ trait LaunchFlexTemplateParameter extends StObject {
   
   /** Launch options for this flex template job. This is a common set of options across languages and templates. This should not be used to pass job parameters. */
   var launchOptions: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The parameters for FlexTemplate. Ex. {"num_workers":"5"} */
   var parameters: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Use this to pass transform_name_mappings for streaming update jobs. Ex:{"oldTransformName":"newTransformName",...}' */
   var transformNameMappings: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Set this to true if you are sending a request to update a running streaming job. When set, the job name should be the same as the running job. */
@@ -69,25 +62,19 @@ object LaunchFlexTemplateParameter {
     inline def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
     inline def setLaunchOptions(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "launchOptions", value.asInstanceOf[js.Any])
     
     inline def setLaunchOptionsUndefined: Self = StObject.set(x, "launchOptions", js.undefined)
     
     inline def setParameters(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     inline def setTransformNameMappings(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "transformNameMappings", value.asInstanceOf[js.Any])
     
     inline def setTransformNameMappingsUndefined: Self = StObject.set(x, "transformNameMappings", js.undefined)

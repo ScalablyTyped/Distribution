@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the DisconnectButtonClicked event on the DevicePicker object. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceDisconnectButtonClickedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.DeviceDisconnectButtonClickedEventArgs")
 @js.native
-abstract class DeviceDisconnectButtonClickedEventArgs ()
+open class DeviceDisconnectButtonClickedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DeviceDisconnectButtonClickedEventArgs {
   

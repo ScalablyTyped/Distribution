@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the AutoRepeatModeChangeRequested event. */
-@JSGlobal("Windows.Media.AutoRepeatModeChangeRequestedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.AutoRepeatModeChangeRequestedEventArgs")
 @js.native
-abstract class AutoRepeatModeChangeRequestedEventArgs ()
+open class AutoRepeatModeChangeRequestedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.AutoRepeatModeChangeRequestedEventArgs {
   

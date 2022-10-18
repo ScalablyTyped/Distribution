@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object notchedOutline {
   
+  @JSImport("material-components-web", "notchedOutline.default")
+  @js.native
+  open class default ()
+    extends typings.materialNotchedOutline.mod.default {
+    def this(adapter: PartialMDCNotchedOutlineA) = this()
+  }
+  
   @JSImport("material-components-web", "notchedOutline.MDCNotchedOutline")
   @js.native
   open class MDCNotchedOutline protected ()

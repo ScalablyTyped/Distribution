@@ -120,7 +120,15 @@ object mod {
   
   type OptionsWithTracingContext[Options /* <: TracingOptions */] = Options & TracingOptionsTracingContext
   
-  type Resolved[T] = T | Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends {then (onfulfilled : infer F): any} ? F extends (value : infer V): any ? @azure/core-tracing.@azure/core-tracing.Resolved<V> : never : T
+    }}}
+    */
+  @js.native
+  trait Resolved[T] extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.azureCoreTracing.mod.SpanStatusSuccess

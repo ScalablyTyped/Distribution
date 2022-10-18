@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.anon.MaxMin
+import typings.babylonjs.anon.MaxVector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -315,16 +315,16 @@ trait Node
     * @param predicate defines a callback function that can be customize to filter what meshes should be included in the list used to compute the bounding vectors
     * @returns the new bounding vectors
     */
-  def getHierarchyBoundingVectors(): MaxMin = js.native
-  def getHierarchyBoundingVectors(includeDescendants: Boolean): MaxMin = js.native
+  def getHierarchyBoundingVectors(): MaxVector3 = js.native
+  def getHierarchyBoundingVectors(includeDescendants: Boolean): MaxVector3 = js.native
   def getHierarchyBoundingVectors(
     includeDescendants: Boolean,
     predicate: Nullable[js.Function1[/* abstractMesh */ AbstractMesh, Boolean]]
-  ): MaxMin = js.native
+  ): MaxVector3 = js.native
   def getHierarchyBoundingVectors(
     includeDescendants: Unit,
     predicate: Nullable[js.Function1[/* abstractMesh */ AbstractMesh, Boolean]]
-  ): MaxMin = js.native
+  ): MaxVector3 = js.native
   
   /**
     * Gets the scene of the node

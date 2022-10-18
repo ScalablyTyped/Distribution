@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Elevation[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */] extends StObject {
+trait Elevation[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.wordpressComponents.wordpressComponentsStrings.a, typings.wordpressComponents.wordpressComponentsStrings.abbr, typings.wordpressComponents.wordpressComponentsStrings.address */ Any */] extends StObject {
   
   /**
     * Render as a different element type
@@ -56,12 +56,12 @@ trait Elevation[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was uni
 }
 object Elevation {
   
-  inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */](): Elevation[T] = {
+  inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.wordpressComponents.wordpressComponentsStrings.a, typings.wordpressComponents.wordpressComponentsStrings.abbr, typings.wordpressComponents.wordpressComponentsStrings.address */ Any */](): Elevation[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Elevation[T]]
   }
   
-  extension [Self <: Elevation[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */](x: Self & Elevation[T]) {
+  extension [Self <: Elevation[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.wordpressComponents.wordpressComponentsStrings.a, typings.wordpressComponents.wordpressComponentsStrings.abbr, typings.wordpressComponents.wordpressComponentsStrings.address */ Any */](x: Self & Elevation[T]) {
     
     inline def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

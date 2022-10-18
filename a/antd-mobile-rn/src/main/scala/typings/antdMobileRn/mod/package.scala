@@ -1,7 +1,7 @@
 package typings.antdMobileRn.mod
 
+import typings.antdMobileRn.libSwitchIndexDotnativeMod.AntmSwitchProps
 import typings.antdMobileRn.mod.^
-import typings.antdMobileRn.switchIndexNativeMod.AntmSwitchProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

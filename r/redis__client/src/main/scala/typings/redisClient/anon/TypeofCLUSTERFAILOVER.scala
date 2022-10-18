@@ -1,6 +1,6 @@
 package typings.redisClient.anon
 
-import typings.redisClient.clusterFAILOVERMod.FailoverModes
+import typings.redisClient.distLibCommandsClusterFAILOVERMod.FailoverModes
 import typings.redisClient.redisClientStrings.OK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

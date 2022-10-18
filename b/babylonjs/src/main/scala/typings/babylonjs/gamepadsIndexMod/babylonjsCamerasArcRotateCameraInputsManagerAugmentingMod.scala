@@ -16,12 +16,12 @@ object babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod {
       * Adds gamepad input support to the ArcRotateCamera InputManager.
       * @returns the camera inputs manager
       */
-    def addGamepad(): typings.babylonjs.gamepadSceneComponentMod.babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod.ArcRotateCameraInputsManager
+    def addGamepad(): typings.babylonjs.gamepadsGamepadSceneComponentMod.babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod.ArcRotateCameraInputsManager
   }
   object ArcRotateCameraInputsManager {
     
     inline def apply(
-      addGamepad: () => typings.babylonjs.gamepadSceneComponentMod.babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod.ArcRotateCameraInputsManager
+      addGamepad: () => typings.babylonjs.gamepadsGamepadSceneComponentMod.babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod.ArcRotateCameraInputsManager
     ): ArcRotateCameraInputsManager = {
       val __obj = js.Dynamic.literal(addGamepad = js.Any.fromFunction0(addGamepad))
       __obj.asInstanceOf[ArcRotateCameraInputsManager]
@@ -30,7 +30,7 @@ object babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod {
     extension [Self <: ArcRotateCameraInputsManager](x: Self) {
       
       inline def setAddGamepad(
-        value: () => typings.babylonjs.gamepadSceneComponentMod.babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod.ArcRotateCameraInputsManager
+        value: () => typings.babylonjs.gamepadsGamepadSceneComponentMod.babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod.ArcRotateCameraInputsManager
       ): Self = StObject.set(x, "addGamepad", js.Any.fromFunction0(value))
     }
   }

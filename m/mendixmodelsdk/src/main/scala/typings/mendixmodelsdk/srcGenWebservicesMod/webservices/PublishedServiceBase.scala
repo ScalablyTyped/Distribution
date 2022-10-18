@@ -1,0 +1,55 @@
+package typings.mendixmodelsdk.srcGenWebservicesMod.webservices
+
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.Document
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.FolderBase
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenWebservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalInstancesMod.IList
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* note: abstract class */ /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.IContainer because Already inherited
+- typings.mendixmodelsdk.srcSdkInternalStructuresMod.IStructure because Already inherited
+- typings.mendixmodelsdk.srcSdkInternalElementsMod.IAbstractElement because Already inherited
+- typings.mendixmodelsdk.srcSdkInternalUnitsMod.IAbstractUnit because Already inherited
+- typings.mendixmodelsdk.srcSdkInternalUnitsMod.IModelUnit because Already inherited
+- typings.mendixmodelsdk.srcSdkInternalElementsMod.IByNameReferrable because Already inherited
+- typings.mendixmodelsdk.srcGenProjectsMod.projects.IModuleDocument because Already inherited
+- typings.mendixmodelsdk.srcGenProjectsMod.projects.IDocument because Already inherited
+- typings.mendixmodelsdk.srcGenWebservicesMod.webservices.IPublishedServiceBase because var conflicts: containerAsFolderBase, documentation, excluded, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedServiceBase")
+@js.native
+open class PublishedServiceBase protected () extends Document {
+  def this(
+    model: AbstractModel,
+    structureTypeName: String,
+    id: String,
+    isPartial: Boolean,
+    container: IFolderBase
+  ) = this()
+  
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MPublishedServiceBase: FolderBase = js.native
+  
+  def versionedServices: IList[VersionedService] = js.native
+}
+object PublishedServiceBase {
+  
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedServiceBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedServiceBase.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedServiceBase.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+}

@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsStopTwoToneMod.StopTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stopTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/StopTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/StopTwoTone", JSImport.Default)
   @js.native
   val default: StopTwoToneIconType = js.native
-  
-  @js.native
-  trait StopTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_StopTwoToneIconType: String = js.native
-  }
   
   type _To = StopTwoToneIconType
   

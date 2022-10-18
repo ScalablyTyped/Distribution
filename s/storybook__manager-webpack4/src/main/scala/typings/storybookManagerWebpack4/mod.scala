@@ -1,8 +1,8 @@
 package typings.storybookManagerWebpack4
 
 import typings.std.Partial
-import typings.storybookCoreCommon.checkAddonOrderMod.Options
-import typings.storybookCoreCommon.typesMod.Builder
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.Builder
+import typings.storybookCoreCommon.distTs3Dot9UtilsCheckAddonOrderMod.Options
 import typings.storybookManagerWebpack4.anon.FnCall
 import typings.webpack.mod.Configuration
 import typings.webpack.mod.Stats
@@ -41,7 +41,7 @@ object mod {
   @JSImport("@storybook/manager-webpack4", "getConfig")
   @js.native
   val getConfig: js.Function1[
-    /* options */ typings.storybookCoreCommon.typesMod.Options, 
+    /* options */ typings.storybookCoreCommon.distTs3Dot9TypesMod.Options, 
     js.Promise[Configuration]
   ] = js.native
   
@@ -54,7 +54,7 @@ object mod {
   inline def start(options: BuilderStartOptions): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   type BuilderStartOptions = Partial[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(args : @storybook/core-common.anon.Router): std.Promise<void | @storybook/core-common.anon.Bail<webpack.webpack.Stats>>>['0'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(args : @storybook/core-common.anon.Options): std.Promise<void | @storybook/core-common.anon.Bail<webpack.webpack.Stats>>>['0'] */ js.Any
   ]
   
   type WebpackBuilder = Builder[Configuration, Stats]

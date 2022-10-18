@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsIdcardFilledMod.IdcardFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idcardFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/IdcardFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/IdcardFilled", JSImport.Default)
   @js.native
   val default: IdcardFilledIconType = js.native
-  
-  @js.native
-  trait IdcardFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_IdcardFilledIconType: String = js.native
-  }
   
   type _To = IdcardFilledIconType
   

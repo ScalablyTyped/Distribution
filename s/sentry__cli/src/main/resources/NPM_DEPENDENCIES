@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sentry/cli" : "2.5.2"
+      "@sentry/cli" : "2.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@sentry/cli" : "2.5.2"
+      "@sentry/cli" : "2.7.0"
     }
   ],
   "compile-devDependencies" : [

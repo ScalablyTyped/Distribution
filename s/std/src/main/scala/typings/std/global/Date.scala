@@ -14,7 +14,7 @@ open class Date ()
      with typings.std.Date {
   def this(value: java.lang.String) = this()
   def this(value: js.Date) = this()
-  /* standard es2015.core */
+  /* standard es5 */
   def this(value: Double) = this()
   /* standard scripthost */
   def this(vd: typings.std.VarDate) = this()

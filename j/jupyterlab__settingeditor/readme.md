@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__settingeditor
 
-Typings are for version 2.2.6
+Typings are for version 3.4.8
 
 ## Library description:
 The JupyterLab default setting editor interface
@@ -10,10 +10,10 @@ The JupyterLab default setting editor interface
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/settingeditor |
 | Keywords           | - |
-| # releases         | 129 |
-| # dependents       | 3 |
-| # downloads        | 1464518 |
-| # stars            | 0 |
+| # releases         | 142 |
+| # dependents       | 0.0 |
+| # downloads        | 193074.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

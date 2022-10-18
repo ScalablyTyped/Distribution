@@ -12,11 +12,11 @@ object CancellationToken {
   
   @JSImport("vscode-jsonrpc", "CancellationToken.Cancelled")
   @js.native
-  val Cancelled: typings.vscodeJsonrpc.cancellationMod.CancellationToken = js.native
+  val Cancelled: typings.vscodeJsonrpc.libCommonCancellationMod.CancellationToken = js.native
   
   @JSImport("vscode-jsonrpc", "CancellationToken.None")
   @js.native
-  val None: typings.vscodeJsonrpc.cancellationMod.CancellationToken = js.native
+  val None: typings.vscodeJsonrpc.libCommonCancellationMod.CancellationToken = js.native
   
   inline def is(value: Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/common/cancellation.CancellationToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/common/cancellation.CancellationToken */ Boolean]
 }

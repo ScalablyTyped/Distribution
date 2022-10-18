@@ -9,8 +9,8 @@ import typings.simplePlist.anon.FnCall
 import typings.simplePlist.anon.FnCallAFile
 import typings.simplePlist.anon.FnCallAFileAnObjectOptionsCallback
 import typings.simplePlist.anon.FnCallAFileCallback
-import typings.simplePlist.typesMod.StringOrBuffer
-import typings.simplePlist.typesMod.callbackFn
+import typings.simplePlist.distTypesMod.StringOrBuffer
+import typings.simplePlist.distTypesMod.callbackFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,22 +58,22 @@ object mod {
     
     @JSImport("simple-plist", "default.stringify")
     @js.native
-    def stringify: js.Function1[/* anObject */ typings.simplePlist.typesMod.PlistJsObj, String] = js.native
-    inline def stringify(anObject: typings.simplePlist.typesMod.PlistJsObj): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(anObject.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def stringify_=(x: js.Function1[/* anObject */ typings.simplePlist.typesMod.PlistJsObj, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stringify")(x.asInstanceOf[js.Any])
+    def stringify: js.Function1[/* anObject */ typings.simplePlist.distTypesMod.PlistJsObj, String] = js.native
+    inline def stringify(anObject: typings.simplePlist.distTypesMod.PlistJsObj): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(anObject.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def stringify_=(x: js.Function1[/* anObject */ typings.simplePlist.distTypesMod.PlistJsObj, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stringify")(x.asInstanceOf[js.Any])
     
     @JSImport("simple-plist", "default.writeBinaryFile")
     @js.native
     def writeBinaryFile: FnCallAFileAnObjectOptionsCallback = js.native
     inline def writeBinaryFile(
       aFile: PathOrFileDescriptor,
-      anObject: typings.simplePlist.typesMod.PlistJsObj,
+      anObject: typings.simplePlist.distTypesMod.PlistJsObj,
       options: WriteFileOptions,
       callback: callbackFn[Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBinaryFile")(aFile.asInstanceOf[js.Any], anObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def writeBinaryFile(
       aFile: PathOrFileDescriptor,
-      anObject: typings.simplePlist.typesMod.PlistJsObj,
+      anObject: typings.simplePlist.distTypesMod.PlistJsObj,
       options: callbackFn[Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBinaryFile")(aFile.asInstanceOf[js.Any], anObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -81,20 +81,20 @@ object mod {
     @js.native
     def writeBinaryFileSync: js.Function3[
         /* aFile */ PathOrFileDescriptor, 
-        /* anObject */ typings.simplePlist.typesMod.PlistJsObj, 
+        /* anObject */ typings.simplePlist.distTypesMod.PlistJsObj, 
         /* options */ js.UndefOr[WriteFileOptions], 
         Unit
       ] = js.native
-    inline def writeBinaryFileSync(aFile: PathOrFileDescriptor, anObject: typings.simplePlist.typesMod.PlistJsObj): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBinaryFileSync")(aFile.asInstanceOf[js.Any], anObject.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def writeBinaryFileSync(aFile: PathOrFileDescriptor, anObject: typings.simplePlist.distTypesMod.PlistJsObj): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBinaryFileSync")(aFile.asInstanceOf[js.Any], anObject.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def writeBinaryFileSync(
       aFile: PathOrFileDescriptor,
-      anObject: typings.simplePlist.typesMod.PlistJsObj,
+      anObject: typings.simplePlist.distTypesMod.PlistJsObj,
       options: WriteFileOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBinaryFileSync")(aFile.asInstanceOf[js.Any], anObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def writeBinaryFileSync_=(
       x: js.Function3[
           /* aFile */ PathOrFileDescriptor, 
-          /* anObject */ typings.simplePlist.typesMod.PlistJsObj, 
+          /* anObject */ typings.simplePlist.distTypesMod.PlistJsObj, 
           /* options */ js.UndefOr[WriteFileOptions], 
           Unit
         ]
@@ -107,13 +107,13 @@ object mod {
     def writeFile: FnCallAFileAnObjectOptionsCallback = js.native
     inline def writeFile(
       aFile: PathOrFileDescriptor,
-      anObject: typings.simplePlist.typesMod.PlistJsObj,
+      anObject: typings.simplePlist.distTypesMod.PlistJsObj,
       options: WriteFileOptions,
       callback: callbackFn[Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(aFile.asInstanceOf[js.Any], anObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def writeFile(
       aFile: PathOrFileDescriptor,
-      anObject: typings.simplePlist.typesMod.PlistJsObj,
+      anObject: typings.simplePlist.distTypesMod.PlistJsObj,
       options: callbackFn[Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(aFile.asInstanceOf[js.Any], anObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -121,20 +121,20 @@ object mod {
     @js.native
     def writeFileSync: js.Function3[
         /* aFile */ PathOrFileDescriptor, 
-        /* anObject */ typings.simplePlist.typesMod.PlistJsObj, 
+        /* anObject */ typings.simplePlist.distTypesMod.PlistJsObj, 
         /* options */ js.UndefOr[WriteFileOptions], 
         Unit
       ] = js.native
-    inline def writeFileSync(aFile: PathOrFileDescriptor, anObject: typings.simplePlist.typesMod.PlistJsObj): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(aFile.asInstanceOf[js.Any], anObject.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def writeFileSync(aFile: PathOrFileDescriptor, anObject: typings.simplePlist.distTypesMod.PlistJsObj): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(aFile.asInstanceOf[js.Any], anObject.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def writeFileSync(
       aFile: PathOrFileDescriptor,
-      anObject: typings.simplePlist.typesMod.PlistJsObj,
+      anObject: typings.simplePlist.distTypesMod.PlistJsObj,
       options: WriteFileOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(aFile.asInstanceOf[js.Any], anObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def writeFileSync_=(
       x: js.Function3[
           /* aFile */ PathOrFileDescriptor, 
-          /* anObject */ typings.simplePlist.typesMod.PlistJsObj, 
+          /* anObject */ typings.simplePlist.distTypesMod.PlistJsObj, 
           /* options */ js.UndefOr[WriteFileOptions], 
           Unit
         ]

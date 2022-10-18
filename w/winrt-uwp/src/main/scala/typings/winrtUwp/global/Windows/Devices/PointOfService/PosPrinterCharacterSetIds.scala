@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the set of identifiers for the character sets that a point-of-service printer can use. */
-@JSGlobal("Windows.Devices.PointOfService.PosPrinterCharacterSetIds")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.PosPrinterCharacterSetIds")
 @js.native
-abstract class PosPrinterCharacterSetIds ()
+open class PosPrinterCharacterSetIds ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.PosPrinterCharacterSetIds
 object PosPrinterCharacterSetIds {

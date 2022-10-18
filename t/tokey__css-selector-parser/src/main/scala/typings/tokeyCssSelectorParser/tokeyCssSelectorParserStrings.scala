@@ -1,6 +1,6 @@
 package typings.tokeyCssSelectorParser
 
-import typings.tokeyCssSelectorParser.tokenizerMod._Delimiters
+import typings.tokeyCssSelectorParser.distTokenizerMod._Delimiters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,10 +42,6 @@ object tokeyCssSelectorParserStrings {
     extends StObject
        with _Delimiters
   inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  
-  @js.native
-  sealed trait ImmutableMap extends StObject
-  inline def ImmutableMap: ImmutableMap = "ImmutableMap".asInstanceOf[ImmutableMap]
   
   @js.native
   sealed trait Leftcurlybracket

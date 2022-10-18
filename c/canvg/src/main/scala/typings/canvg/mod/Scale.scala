@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "Scale")
 @js.native
 open class Scale protected ()
-  extends typings.canvg.transformMod.Scale {
+  extends typings.canvg.distTransformMod.Scale {
   def this(
-    _underscore: typings.canvg.documentMod.Document,
+    _underscore: typings.canvg.distDocumentMod.Document,
     scale: String,
     transformOrigin: js.Tuple2[
-        typings.canvg.propertyMod.Property[String], 
-        typings.canvg.propertyMod.Property[String]
+        typings.canvg.distPropertyMod.Property[String], 
+        typings.canvg.distPropertyMod.Property[String]
       ]
   ) = this()
 }

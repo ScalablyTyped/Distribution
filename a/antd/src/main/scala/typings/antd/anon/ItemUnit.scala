@@ -13,37 +13,26 @@ trait ItemUnit extends StObject {
   
   var notFoundContent: ReactNode
   
-  var remove: String
+  var remove: js.UndefOr[String] = js.undefined
   
-  var removeAll: String
+  var removeAll: js.UndefOr[String] = js.undefined
   
-  var removeCurrent: String
+  var removeCurrent: js.UndefOr[String] = js.undefined
   
   var searchPlaceholder: String
   
-  var selectAll: String
+  var selectAll: js.UndefOr[String] = js.undefined
   
-  var selectCurrent: String
+  var selectCurrent: js.UndefOr[String] = js.undefined
   
-  var selectInvert: String
+  var selectInvert: js.UndefOr[String] = js.undefined
   
-  var titles: js.Array[ReactNode]
+  var titles: js.UndefOr[js.Array[ReactNode]] = js.undefined
 }
 object ItemUnit {
   
-  inline def apply(
-    itemUnit: String,
-    itemsUnit: String,
-    remove: String,
-    removeAll: String,
-    removeCurrent: String,
-    searchPlaceholder: String,
-    selectAll: String,
-    selectCurrent: String,
-    selectInvert: String,
-    titles: js.Array[ReactNode]
-  ): ItemUnit = {
-    val __obj = js.Dynamic.literal(itemUnit = itemUnit.asInstanceOf[js.Any], itemsUnit = itemsUnit.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], removeAll = removeAll.asInstanceOf[js.Any], removeCurrent = removeCurrent.asInstanceOf[js.Any], searchPlaceholder = searchPlaceholder.asInstanceOf[js.Any], selectAll = selectAll.asInstanceOf[js.Any], selectCurrent = selectCurrent.asInstanceOf[js.Any], selectInvert = selectInvert.asInstanceOf[js.Any], titles = titles.asInstanceOf[js.Any])
+  inline def apply(itemUnit: String, itemsUnit: String, searchPlaceholder: String): ItemUnit = {
+    val __obj = js.Dynamic.literal(itemUnit = itemUnit.asInstanceOf[js.Any], itemsUnit = itemsUnit.asInstanceOf[js.Any], searchPlaceholder = searchPlaceholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemUnit]
   }
   
@@ -61,17 +50,31 @@ object ItemUnit {
     
     inline def setRemoveAll(value: String): Self = StObject.set(x, "removeAll", value.asInstanceOf[js.Any])
     
+    inline def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
+    
     inline def setRemoveCurrent(value: String): Self = StObject.set(x, "removeCurrent", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveCurrentUndefined: Self = StObject.set(x, "removeCurrent", js.undefined)
+    
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     inline def setSearchPlaceholder(value: String): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
     
     inline def setSelectAll(value: String): Self = StObject.set(x, "selectAll", value.asInstanceOf[js.Any])
     
+    inline def setSelectAllUndefined: Self = StObject.set(x, "selectAll", js.undefined)
+    
     inline def setSelectCurrent(value: String): Self = StObject.set(x, "selectCurrent", value.asInstanceOf[js.Any])
+    
+    inline def setSelectCurrentUndefined: Self = StObject.set(x, "selectCurrent", js.undefined)
     
     inline def setSelectInvert(value: String): Self = StObject.set(x, "selectInvert", value.asInstanceOf[js.Any])
     
+    inline def setSelectInvertUndefined: Self = StObject.set(x, "selectInvert", js.undefined)
+    
     inline def setTitles(value: js.Array[ReactNode]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
+    
+    inline def setTitlesUndefined: Self = StObject.set(x, "titles", js.undefined)
     
     inline def setTitlesVarargs(value: ReactNode*): Self = StObject.set(x, "titles", js.Array(value*))
   }

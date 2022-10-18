@@ -1,8 +1,8 @@
 package typings.samchon
 
-import typings.samchon.ientityMod.IEntity
-import typings.samchon.iprotocolMod.IProtocol
-import typings.samchon.iserverMod.IServer
+import typings.samchon.protocolEntityIentityMod.IEntity
+import typings.samchon.protocolInvokeIprotocolMod.IProtocol
+import typings.samchon.protocolServerIserverMod.IServer
 import typings.std.MessagePort
 import typings.sxml.mod.XML
 import org.scalablytyped.runtime.StObject
@@ -14,7 +14,7 @@ object protocolMod {
   @JSImport("samchon/protocol", "ClientDriver")
   @js.native
   open class ClientDriver protected ()
-    extends typings.samchon.clientDriverMod.ClientDriver {
+    extends typings.samchon.protocolCommunicatorClientDriverClientDriverMod.ClientDriver {
     /**
       * Construct from a socket.
       */
@@ -27,17 +27,17 @@ object protocolMod {
     * Default Constructor.
     */
   open class DedicatedWorkerClientDriver ()
-    extends typings.samchon.dedicatedWorkerClientDriverMod.DedicatedWorkerClientDriver
+    extends typings.samchon.protocolCommunicatorClientDriverDedicatedWorkerClientDriverMod.DedicatedWorkerClientDriver
   
-  @JSImport("samchon/protocol", "DedicatedWorkerServer")
+  /* note: abstract class */ @JSImport("samchon/protocol", "DedicatedWorkerServer")
   @js.native
-  abstract class DedicatedWorkerServer ()
-    extends typings.samchon.dedicatedWorkerServerMod.DedicatedWorkerServer
+  open class DedicatedWorkerServer ()
+    extends typings.samchon.protocolServerDedicatedWorkerServerMod.DedicatedWorkerServer
   
   @JSImport("samchon/protocol", "DedicatedWorkerServerBase")
   @js.native
   open class DedicatedWorkerServerBase protected ()
-    extends typings.samchon.dedicatedWorkerServerBaseMod.DedicatedWorkerServerBase {
+    extends typings.samchon.protocolServerBaseDedicatedWorkerServerBaseMod.DedicatedWorkerServerBase {
     /**
       * Construct from a *hooker*.
       *
@@ -49,7 +49,7 @@ object protocolMod {
   @JSImport("samchon/protocol", "DedicatedWorkerServerConnector")
   @js.native
   open class DedicatedWorkerServerConnector protected ()
-    extends typings.samchon.dedicatedWorkerServerConnectorMod.DedicatedWorkerServerConnector {
+    extends typings.samchon.protocolCommunicatorServerConnectorDedicatedWorkerServerConnectorMod.DedicatedWorkerServerConnector {
     /**
       * Construct from *listener*.
       *
@@ -59,43 +59,43 @@ object protocolMod {
     def this(listener: IProtocol) = this()
   }
   
-  @JSImport("samchon/protocol", "Entity")
+  /* note: abstract class */ @JSImport("samchon/protocol", "Entity")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class Entity ()
-    extends typings.samchon.entityMod.Entity
+  open class Entity ()
+    extends typings.samchon.protocolEntityEntityMod.Entity
   
-  @JSImport("samchon/protocol", "EntityArray")
+  /* note: abstract class */ @JSImport("samchon/protocol", "EntityArray")
   @js.native
-  abstract class EntityArray[T /* <: IEntity */] ()
-    extends typings.samchon.entityArrayMod.EntityArray[T]
+  open class EntityArray[T /* <: IEntity */] ()
+    extends typings.samchon.protocolEntityEntityArrayMod.EntityArray[T]
   
-  @JSImport("samchon/protocol", "EntityArrayCollection")
+  /* note: abstract class */ @JSImport("samchon/protocol", "EntityArrayCollection")
   @js.native
-  abstract class EntityArrayCollection[T /* <: IEntity */] ()
-    extends typings.samchon.entityCollectionMod.EntityArrayCollection[T]
+  open class EntityArrayCollection[T /* <: IEntity */] ()
+    extends typings.samchon.protocolEntityEntityCollectionMod.EntityArrayCollection[T]
   
-  @JSImport("samchon/protocol", "EntityDeque")
+  /* note: abstract class */ @JSImport("samchon/protocol", "EntityDeque")
   @js.native
-  abstract class EntityDeque[T /* <: IEntity */] ()
-    extends typings.samchon.entityArrayMod.EntityDeque[T]
+  open class EntityDeque[T /* <: IEntity */] ()
+    extends typings.samchon.protocolEntityEntityArrayMod.EntityDeque[T]
   
-  @JSImport("samchon/protocol", "EntityDequeCollection")
+  /* note: abstract class */ @JSImport("samchon/protocol", "EntityDequeCollection")
   @js.native
-  abstract class EntityDequeCollection[T /* <: IEntity */] ()
-    extends typings.samchon.entityCollectionMod.EntityDequeCollection[T]
+  open class EntityDequeCollection[T /* <: IEntity */] ()
+    extends typings.samchon.protocolEntityEntityCollectionMod.EntityDequeCollection[T]
   
-  @JSImport("samchon/protocol", "EntityList")
+  /* note: abstract class */ @JSImport("samchon/protocol", "EntityList")
   @js.native
-  abstract class EntityList[T /* <: IEntity */] ()
-    extends typings.samchon.entityArrayMod.EntityList[T]
+  open class EntityList[T /* <: IEntity */] ()
+    extends typings.samchon.protocolEntityEntityArrayMod.EntityList[T]
   
-  @JSImport("samchon/protocol", "EntityListCollection")
+  /* note: abstract class */ @JSImport("samchon/protocol", "EntityListCollection")
   @js.native
-  abstract class EntityListCollection[T /* <: IEntity */] ()
-    extends typings.samchon.entityCollectionMod.EntityListCollection[T]
+  open class EntityListCollection[T /* <: IEntity */] ()
+    extends typings.samchon.protocolEntityEntityCollectionMod.EntityListCollection[T]
   
   object IEntity {
     
@@ -103,9 +103,9 @@ object protocolMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def construct(entity: typings.samchon.ientityMod.IEntity, xml: XML, prohibited_names: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")((scala.List(entity.asInstanceOf[js.Any], xml.asInstanceOf[js.Any])).`++`(prohibited_names.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+    inline def construct(entity: typings.samchon.protocolEntityIentityMod.IEntity, xml: XML, prohibited_names: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")((scala.List(entity.asInstanceOf[js.Any], xml.asInstanceOf[js.Any])).`++`(prohibited_names.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
     
-    inline def toXML(entity: typings.samchon.ientityMod.IEntity, prohibited_names: String*): XML = ^.asInstanceOf[js.Dynamic].applyDynamic("toXML")(scala.List(entity.asInstanceOf[js.Any]).`++`(prohibited_names.asInstanceOf[Seq[js.Any]])*).asInstanceOf[XML]
+    inline def toXML(entity: typings.samchon.protocolEntityIentityMod.IEntity, prohibited_names: String*): XML = ^.asInstanceOf[js.Dynamic].applyDynamic("toXML")(scala.List(entity.asInstanceOf[js.Any]).`++`(prohibited_names.asInstanceOf[Seq[js.Any]])*).asInstanceOf[XML]
   }
   
   object IEntityGroup {
@@ -118,23 +118,23 @@ object protocolMod {
       * @hidden
       */
     inline def construct[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ Any */](
-      entityGroup: typings.samchon.ientitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
+      entityGroup: typings.samchon.protocolEntityIentitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
       xml: XML,
       prohibited_names: String*
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")((scala.List(entityGroup.asInstanceOf[js.Any], xml.asInstanceOf[js.Any])).`++`(prohibited_names.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
     
     inline def count[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ Any */](
-      entityGroup: typings.samchon.ientitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
+      entityGroup: typings.samchon.protocolEntityIentitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
       key: Any
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(entityGroup.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def get[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ Any */](
-      entityGroup: typings.samchon.ientitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
+      entityGroup: typings.samchon.protocolEntityIentitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
       key: Any
     ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(entityGroup.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[T]
     
     inline def has[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ Any */](
-      entityGroup: typings.samchon.ientitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
+      entityGroup: typings.samchon.protocolEntityIentitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
       key: Any
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(entityGroup.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
@@ -142,7 +142,7 @@ object protocolMod {
       * @hidden
       */
     inline def toXML[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ Any */](
-      group: typings.samchon.ientitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
+      group: typings.samchon.protocolEntityIentitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
       prohibited_names: String*
     ): XML = ^.asInstanceOf[js.Dynamic].applyDynamic("toXML")(scala.List(group.asInstanceOf[js.Any]).`++`(prohibited_names.asInstanceOf[Seq[js.Any]])*).asInstanceOf[XML]
   }
@@ -153,13 +153,13 @@ object protocolMod {
     * Default Constructor.
     */
   open class Invoke ()
-    extends typings.samchon.invokeMod.Invoke {
+    extends typings.samchon.protocolInvokeInvokeMod.Invoke {
     /**
       * Copy Constructor.
       *
       * @param invoke
       */
-    def this(invoke: typings.samchon.invokeMod.Invoke) = this()
+    def this(invoke: typings.samchon.protocolInvokeInvokeMod.Invoke) = this()
     def this(listener: String) = this()
     /**
       * Construct from listener and parametric values.
@@ -176,7 +176,7 @@ object protocolMod {
     * Default Constructor.
     */
   open class InvokeParameter ()
-    extends typings.samchon.invokeParameterMod.InvokeParameter {
+    extends typings.samchon.protocolInvokeInvokeParameterMod.InvokeParameter {
     def this(`val`: String) = this()
     def this(`val`: js.typedarray.Uint8Array) = this()
     def this(`val`: Boolean) = this()
@@ -195,15 +195,15 @@ object protocolMod {
     def this(name: String, `val`: XML) = this()
   }
   
-  @JSImport("samchon/protocol", "Server")
+  /* note: abstract class */ @JSImport("samchon/protocol", "Server")
   @js.native
-  abstract class Server ()
-    extends typings.samchon.serverMod.Server
+  open class Server ()
+    extends typings.samchon.protocolServerServerMod.Server
   
   @JSImport("samchon/protocol", "ServerBase")
   @js.native
   open class ServerBase protected ()
-    extends typings.samchon.serverBaseMod.ServerBase {
+    extends typings.samchon.protocolServerBaseServerBaseMod.ServerBase {
     /**
       * Construct from a *hooker*.
       *
@@ -215,7 +215,7 @@ object protocolMod {
   @JSImport("samchon/protocol", "ServerConnector")
   @js.native
   open class ServerConnector protected ()
-    extends typings.samchon.serverConnectorMod.ServerConnector {
+    extends typings.samchon.protocolCommunicatorServerConnectorServerConnectorMod.ServerConnector {
     /**
       * Construct from *listener*.
       *
@@ -228,22 +228,22 @@ object protocolMod {
   @JSImport("samchon/protocol", "SharedWorkerClientDriver")
   @js.native
   open class SharedWorkerClientDriver protected ()
-    extends typings.samchon.sharedWorkerClientDriverMod.SharedWorkerClientDriver {
+    extends typings.samchon.protocolCommunicatorClientDriverSharedWorkerClientDriverMod.SharedWorkerClientDriver {
     /**
       * Construct from a MessagePort object.
       */
     def this(port: MessagePort) = this()
   }
   
-  @JSImport("samchon/protocol", "SharedWorkerServer")
+  /* note: abstract class */ @JSImport("samchon/protocol", "SharedWorkerServer")
   @js.native
-  abstract class SharedWorkerServer ()
-    extends typings.samchon.sharedWorkerServerMod.SharedWorkerServer
+  open class SharedWorkerServer ()
+    extends typings.samchon.protocolServerSharedWorkerServerMod.SharedWorkerServer
   
   @JSImport("samchon/protocol", "SharedWorkerServerBase")
   @js.native
   open class SharedWorkerServerBase protected ()
-    extends typings.samchon.sharedWorkerServerBaseMod.SharedWorkerServerBase {
+    extends typings.samchon.protocolServerBaseSharedWorkerServerBaseMod.SharedWorkerServerBase {
     /**
       * Construct from a *hooker*.
       *
@@ -255,7 +255,7 @@ object protocolMod {
   @JSImport("samchon/protocol", "SharedWorkerServerConnector")
   @js.native
   open class SharedWorkerServerConnector protected ()
-    extends typings.samchon.sharedWorkerServerConnectorMod.SharedWorkerServerConnector {
+    extends typings.samchon.protocolCommunicatorServerConnectorSharedWorkerServerConnectorMod.SharedWorkerServerConnector {
     /**
       * Construct from *listener*.
       *
@@ -268,7 +268,7 @@ object protocolMod {
   @JSImport("samchon/protocol", "WebClientDriver")
   @js.native
   open class WebClientDriver protected ()
-    extends typings.samchon.webClientDriverMod.WebClientDriver {
+    extends typings.samchon.protocolCommunicatorClientDriverWebClientDriverMod.WebClientDriver {
     /**
       * Initialization Constructor.
       *
@@ -279,18 +279,18 @@ object protocolMod {
     def this(connection: Any, path: String, session_id: String) = this()
   }
   
-  @JSImport("samchon/protocol", "WebServer")
+  /* note: abstract class */ @JSImport("samchon/protocol", "WebServer")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class WebServer ()
-    extends typings.samchon.webServerMod.WebServer
+  open class WebServer ()
+    extends typings.samchon.protocolServerWebServerMod.WebServer
   
   @JSImport("samchon/protocol", "WebServerBase")
   @js.native
   open class WebServerBase protected ()
-    extends typings.samchon.webServerBaseMod.WebServerBase {
+    extends typings.samchon.protocolServerBaseWebServerBaseMod.WebServerBase {
     /**
       * Construct from a *hooker*.
       *
@@ -302,7 +302,7 @@ object protocolMod {
   @JSImport("samchon/protocol", "WebServerConnector")
   @js.native
   open class WebServerConnector protected ()
-    extends typings.samchon.webServerConnectorMod.WebServerConnector {
+    extends typings.samchon.protocolCommunicatorServerConnectorWebServerConnectorMod.WebServerConnector {
     /**
       * Construct from *listener*.
       *

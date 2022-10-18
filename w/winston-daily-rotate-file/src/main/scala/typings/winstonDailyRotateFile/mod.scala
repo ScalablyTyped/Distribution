@@ -1,9 +1,9 @@
 package typings.winstonDailyRotateFile
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.node.NodeJS.WritableStream
 import typings.std.Exclude
 import typings.std.Pick
-import typings.std.WritableStream
 import typings.winstonDailyRotateFile.winstonDailyRotateFileStrings.filename
 import typings.winstonDailyRotateFile.winstonDailyRotateFileStrings.stream
 import typings.winstonTransport.mod.TransportStreamOptions
@@ -27,7 +27,7 @@ object mod {
     
     var filename: String = js.native
     
-    var logStream: WritableStream[Any] = js.native
+    var logStream: WritableStream = js.native
     
     var options: DailyRotateFileTransportOptions = js.native
   }
@@ -100,7 +100,7 @@ object mod {
     /**
       * Write directly to a custom stream and bypass the rotation capabilities. (default: null)
       */
-    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
     /**
       * The name of the tailable symlink. (default: 'current.log')
@@ -183,7 +183,7 @@ object mod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
@@ -209,6 +209,7 @@ object mod {
   type RequireOnlyOne[T, Keys /* <: /* keyof T */ String */] = (Pick[T, Exclude[/* keyof T */ String, Keys]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]: -? std.Pick<T, K> & std.Partial<std.Record<std.Exclude<Keys, K>, undefined>>}[Keys] */ js.Any)
   
   // merging into winston.transports
+  /* augmented module */
   object winstonLibWinstonTransportsAugmentingMod {
     
     trait Transports extends StObject {

@@ -1,6 +1,6 @@
 package typings.baseui.datepickerTypesMod
 
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

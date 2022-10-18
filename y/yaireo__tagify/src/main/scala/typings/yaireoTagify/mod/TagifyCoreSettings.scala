@@ -1,6 +1,5 @@
 package typings.yaireoTagify.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.yaireoTagify.anon.PartialInvalidTagsMessage
 import typings.yaireoTagify.yaireoTagifyStrings.edit
 import org.scalablytyped.runtime.StObject
@@ -42,9 +41,7 @@ trait TagifyCoreSettings[T /* <: BaseTagData */] extends StObject {
     * occurs.
     */
   var callbacks: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof @yaireo/tagify.@yaireo/tagify.EventDataMap<@yaireo/tagify.@yaireo/tagify.TagData> ]:? (event : std.CustomEvent<@yaireo/tagify.@yaireo/tagify.EventDataMap<T>[K]>): void}
-    */ typings.yaireoTagify.yaireoTagifyStrings.TagifyCoreSettings & TopLevel[EventDataMap[T]]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof @yaireo/tagify.@yaireo/tagify.EventDataMap<@yaireo/tagify.@yaireo/tagify.TagData> ]:? (event : std.CustomEvent<@yaireo/tagify.@yaireo/tagify.EventDataMap<T>[K]>): void} */ js.Any
   ] = js.undefined
   
   /**
@@ -247,9 +244,7 @@ object TagifyCoreSettings {
     inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value*))
     
     inline def setCallbacks(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof @yaireo/tagify.@yaireo/tagify.EventDataMap<@yaireo/tagify.@yaireo/tagify.TagData> ]:? (event : std.CustomEvent<@yaireo/tagify.@yaireo/tagify.EventDataMap<T>[K]>): void}
-      */ typings.yaireoTagify.yaireoTagifyStrings.TagifyCoreSettings & TopLevel[EventDataMap[T]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof @yaireo/tagify.@yaireo/tagify.EventDataMap<@yaireo/tagify.@yaireo/tagify.TagData> ]:? (event : std.CustomEvent<@yaireo/tagify.@yaireo/tagify.EventDataMap<T>[K]>): void} */ js.Any
     ): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     
     inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)

@@ -10,9 +10,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a service that source apps can call to access contact data. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactManager")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactManager")
 @js.native
-abstract class ContactManager ()
+open class ContactManager ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactManager
 object ContactManager {

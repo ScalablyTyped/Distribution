@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.codeactions
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.codeactionsMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCodeactionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "codeactions.VoidType")
 @js.native
 open class VoidType protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.codeactions.VoidType {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.codeactions.VoidType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object VoidType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.codeactionsMod.codeactions.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.VoidType]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -50,7 +50,7 @@ object VoidType {
     *  8.3.0 and higher
     */
   /* static member */
-  inline def createInBasicParameterTypeUnderType(container: typings.mendixmodelsdk.codeactionsMod.codeactions.BasicParameterType): typings.mendixmodelsdk.codeactionsMod.codeactions.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.VoidType]
+  inline def createInBasicParameterTypeUnderType(container: typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.BasicParameterType): typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -61,7 +61,7 @@ object VoidType {
     *  8.3.0 and higher
     */
   /* static member */
-  inline def createInCodeActionUnderActionReturnType(container: typings.mendixmodelsdk.codeactionsMod.codeactions.CodeAction): typings.mendixmodelsdk.codeactionsMod.codeactions.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.VoidType]
+  inline def createInCodeActionUnderActionReturnType(container: typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.CodeAction): typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.VoidType]
   
   /* static member */
   @JSImport("mendixmodelsdk", "codeactions.VoidType.structureTypeName")

@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param scene Defines the scene to register the component in
   */
 open class LayerSceneComponent ()
-  extends typings.babylonjs.legacyMod.LayerSceneComponent {
+  extends typings.babylonjs.legacyLegacyMod.LayerSceneComponent {
   def this(scene: typings.babylonjs.sceneMod.Scene) = this()
 }

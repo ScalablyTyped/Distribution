@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Texture")
 @js.native
 open class Texture protected ()
-  extends typings.three.threeMod.Texture {
+  extends typings.three.srcThreeMod.Texture {
   /**
     * @param [image]
     * @param [mapping=THREE.Texture.DEFAULT_MAPPING]

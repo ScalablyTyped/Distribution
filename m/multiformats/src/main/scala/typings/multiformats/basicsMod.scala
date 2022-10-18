@@ -3,13 +3,19 @@ package typings.multiformats
 import typings.multiformats.anon.Code
 import typings.multiformats.anon.Codec
 import typings.multiformats.anon.Encode
-import typings.multiformats.cidMod.CIDVersion
-import typings.multiformats.cidMod.MultihashDigest
-import typings.multiformats.hasherMod.Await
-import typings.multiformats.interfaceMod.MultibaseDecoder
+import typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseDecoder
+import typings.multiformats.distTypesSrcBlockInterfaceMod.ByteView
+import typings.multiformats.distTypesSrcHashesHasherMod.Await
+import typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashDigest
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Link
+import typings.multiformats.distTypesSrcLinkInterfaceMod.ToString
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.multiformats.mod.hasher.Hasher
+import typings.multiformats.multiformatsInts.`0`
+import typings.multiformats.multiformatsInts.`112`
 import typings.multiformats.multiformatsInts.`18`
 import typings.multiformats.multiformatsInts.`19`
+import typings.multiformats.multiformatsInts.`1`
 import typings.multiformats.multiformatsStrings.B
 import typings.multiformats.multiformatsStrings.C
 import typings.multiformats.multiformatsStrings.F
@@ -20,7 +26,6 @@ import typings.multiformats.multiformatsStrings.T
 import typings.multiformats.multiformatsStrings.U
 import typings.multiformats.multiformatsStrings.V
 import typings.multiformats.multiformatsStrings.Z
-import typings.multiformats.multiformatsStrings.`0`
 import typings.multiformats.multiformatsStrings.`7`
 import typings.multiformats.multiformatsStrings.`9`
 import typings.multiformats.multiformatsStrings.`sha2-256`
@@ -63,25 +68,26 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object basicsMod {
   
-  @JSImport("multiformats/types/src/basics", "CID")
+  @JSImport("multiformats/basics", "CID")
   @js.native
-  open class CID protected ()
-    extends typings.multiformats.mod.CID {
+  open class CID[Data /* <: Any */, Format /* <: Double */, Alg /* <: Double */, Version /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */] protected ()
+    extends typings.multiformats.distTypesSrcBasicsMod.CID[Data, Format, Alg, Version] {
     /**
-      * @param {CIDVersion} version
-      * @param {number} code - multicodec code, see https://github.com/multiformats/multicodec/blob/master/table.csv
-      * @param {MultihashDigest} multihash
+      * @param {Version} version - Version of the CID
+      * @param {Format} code - Code of the codec content is encoded in, see https://github.com/multiformats/multicodec/blob/master/table.csv
+      * @param {API.MultihashDigest<Alg>} multihash - (Multi)hash of the of the content.
       * @param {Uint8Array} bytes
       *
       */
-    def this(version: CIDVersion, code: Double, multihash: MultihashDigest, bytes: js.typedarray.Uint8Array) = this()
+    def this(version: Version, code: Format, multihash: MultihashDigest[Alg], bytes: js.typedarray.Uint8Array) = this()
   }
   /* static members */
   object CID {
     
-    @JSImport("multiformats/types/src/basics", "CID")
+    @JSImport("multiformats/basics", "CID")
     @js.native
     val ^ : js.Any = js.native
     
@@ -94,34 +100,51 @@ object basicsMod {
       *
       * This allows two different incompatible versions of CID library to
       * co-exist and interop as long as binary interface is compatible.
-      * @param {any} value
-      * @returns {CID|null}
+      *
+      * @template {unknown} Data
+      * @template {number} Format
+      * @template {number} Alg
+      * @template {API.Version} Version
+      * @template {unknown} U
+      * @param {API.Link<Data, Format, Alg, Version>|U} input
+      * @returns {CID<Data, Format, Alg, Version>|null}
       */
-    inline def asCID(value: Any): typings.multiformats.cidMod.CID | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("asCID")(value.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.cidMod.CID | Null]
+    inline def asCID[Data_2 /* <: Any */, Format_2 /* <: Double */, Alg_2 /* <: Double */, Version_2 /* <: Version */, U /* <: Any */](input: U): (typings.multiformats.distTypesSrcCidMod.CID[Data_2, Format_2, Alg_2, Version_2]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("asCID")(input.asInstanceOf[js.Any]).asInstanceOf[(typings.multiformats.distTypesSrcCidMod.CID[Data_2, Format_2, Alg_2, Version_2]) | Null]
+    inline def asCID[Data_2 /* <: Any */, Format_2 /* <: Double */, Alg_2 /* <: Double */, Version_2 /* <: Version */, U /* <: Any */](input: Link[Data_2, Format_2, Alg_2, Version_2]): (typings.multiformats.distTypesSrcCidMod.CID[Data_2, Format_2, Alg_2, Version_2]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("asCID")(input.asInstanceOf[js.Any]).asInstanceOf[(typings.multiformats.distTypesSrcCidMod.CID[Data_2, Format_2, Alg_2, Version_2]) | Null]
     
     /**
       *
-      * @param {CIDVersion} version - Version of the CID
-      * @param {number} code - Code of the codec content is encoded in.
-      * @param {MultihashDigest} digest - (Multi)hash of the of the content.
-      * @returns {CID}
+      * @template {unknown} Data
+      * @template {number} Format
+      * @template {number} Alg
+      * @template {API.Version} Version
+      * @param {Version} version - Version of the CID
+      * @param {Format} code - Code of the codec content is encoded in, see https://github.com/multiformats/multicodec/blob/master/table.csv
+      * @param {API.MultihashDigest<Alg>} digest - (Multi)hash of the of the content.
+      * @returns {CID<Data, Format, Alg, Version>}
       */
-    inline def create(version: CIDVersion, code: Double, digest: MultihashDigest): typings.multiformats.cidMod.CID = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(version.asInstanceOf[js.Any], code.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.cidMod.CID]
+    inline def create[Data_3 /* <: Any */, Format_3 /* <: Double */, Alg_3 /* <: Double */, Version_3 /* <: Version */](version: Version_3, code: Format_3, digest: MultihashDigest[Alg_3]): typings.multiformats.distTypesSrcCidMod.CID[Data_3, Format_3, Alg_3, Version_3] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(version.asInstanceOf[js.Any], code.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.distTypesSrcCidMod.CID[Data_3, Format_3, Alg_3, Version_3]]
     
     /**
       * Simplified version of `create` for CIDv0.
-      * @param {MultihashDigest} digest - Multihash.
+      *
+      * @template {unknown} [T=unknown]
+      * @param {API.MultihashDigest<typeof SHA_256_CODE>} digest - Multihash.
+      * @returns {CID<T, typeof DAG_PB_CODE, typeof SHA_256_CODE, 0>}
       */
-    inline def createV0(digest: MultihashDigest): typings.multiformats.cidMod.CID = ^.asInstanceOf[js.Dynamic].applyDynamic("createV0")(digest.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.cidMod.CID]
+    inline def createV0_18[T /* <: Any */](digest: MultihashDigest[`18`]): typings.multiformats.distTypesSrcCidMod.CID[T, `112`, `18`, `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createV0")(digest.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.distTypesSrcCidMod.CID[T, `112`, `18`, `0`]]
     
     /**
       * Simplified version of `create` for CIDv1.
+      *
+      * @template {unknown} Data
       * @template {number} Code
+      * @template {number} Alg
       * @param {Code} code - Content encoding format code.
-      * @param {MultihashDigest} digest - Miltihash of the content.
-      * @returns {CID}
+      * @param {API.MultihashDigest<Alg>} digest - Miltihash of the content.
+      * @returns {CID<Data, Code, Alg, 1>}
       */
-    inline def createV1[Code /* <: Double */](code: Code, digest: MultihashDigest): typings.multiformats.cidMod.CID = (^.asInstanceOf[js.Dynamic].applyDynamic("createV1")(code.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.cidMod.CID]
+    inline def createV1[Data_4 /* <: Any */, Code /* <: Double */, Alg_4 /* <: Double */](code: Code, digest: MultihashDigest[Alg_4]): typings.multiformats.distTypesSrcCidMod.CID[Data_4, Code, Alg_4, `1`] = (^.asInstanceOf[js.Dynamic].applyDynamic("createV1")(code.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.distTypesSrcCidMod.CID[Data_4, Code, Alg_4, `1`]]
     
     /**
       * Decoded a CID from its binary representation. The byte array must contain
@@ -130,10 +153,14 @@ object basicsMod {
       * An error will be thrown if the bytes provided do not contain a valid
       * binary representation of a CID.
       *
-      * @param {Uint8Array} bytes
-      * @returns {CID}
+      * @template {unknown} Data
+      * @template {number} Code
+      * @template {number} Alg
+      * @template {API.Version} Ver
+      * @param {API.ByteView<API.Link<Data, Code, Alg, Ver>>} bytes
+      * @returns {CID<Data, Code, Alg, Ver>}
       */
-    inline def decode(bytes: js.typedarray.Uint8Array): typings.multiformats.cidMod.CID = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.cidMod.CID]
+    inline def decode[Data_5 /* <: Any */, Code_1 /* <: Double */, Alg_5 /* <: Double */, Ver /* <: Version */](bytes: ByteView[Link[Data_5, Code_1, Alg_5, Ver]]): typings.multiformats.distTypesSrcCidMod.CID[Data_5, Code_1, Alg_5, Ver] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.distTypesSrcCidMod.CID[Data_5, Code_1, Alg_5, Ver]]
     
     /**
       * Decoded a CID from its binary representation at the beginning of a byte
@@ -144,10 +171,31 @@ object basicsMod {
       * will be a zero-length byte array if the provided bytes only contained a
       * binary CID representation.
       *
-      * @param {Uint8Array} bytes
-      * @returns {[CID, Uint8Array]}
+      * @template {unknown} T
+      * @template {number} C
+      * @template {number} A
+      * @template {API.Version} V
+      * @param {API.ByteView<API.Link<T, C, A, V>>} bytes
+      * @returns {[CID<T, C, A, V>, Uint8Array]}
       */
-    inline def decodeFirst(bytes: js.typedarray.Uint8Array): js.Tuple2[typings.multiformats.cidMod.CID, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[typings.multiformats.cidMod.CID, js.typedarray.Uint8Array]]
+    inline def decodeFirst[T_1 /* <: Any */, C /* <: Double */, A /* <: Double */, V /* <: Version */](bytes: ByteView[Link[T_1, C, A, V]]): js.Tuple2[
+        typings.multiformats.distTypesSrcCidMod.CID[T_1, C, A, V], 
+        js.typedarray.Uint8Array
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
+        typings.multiformats.distTypesSrcCidMod.CID[T_1, C, A, V], 
+        js.typedarray.Uint8Array
+      ]]
+    
+    /**
+      * @template {unknown} Data
+      * @template {number} Format
+      * @template {number} Alg
+      * @template {API.Version} Version
+      * @param {API.Link<Data, Format, Alg, Version>} self
+      * @param {unknown} other
+      * @returns {other is CID}
+      */
+    inline def equals[Data_1 /* <: Any */, Format_1 /* <: Double */, Alg_1 /* <: Double */, Version_1 /* <: Version */](self: Link[Data_1, Format_1, Alg_1, Version_1], other: Any): /* is multiformats.multiformats/dist/types/src/cid.CID<any, number, number, multiformats.multiformats/dist/types/src/link/interface.Version> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(self.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[/* is multiformats.multiformats/dist/types/src/cid.CID<any, number, number, multiformats.multiformats/dist/types/src/link/interface.Version> */ Boolean]
     
     /**
       * Inspect the initial bytes of a CID to determine its properties.
@@ -158,16 +206,14 @@ object basicsMod {
       * 10 bytes be made available in the `initialBytes` argument for a complete
       * inspection.
       *
-      * @param {Uint8Array} initialBytes
-      * @returns {{ version:CIDVersion, codec:number, multihashCode:number, digestSize:number, multihashSize:number, size:number }}
+      * @template {unknown} T
+      * @template {number} C
+      * @template {number} A
+      * @template {API.Version} V
+      * @param {API.ByteView<API.Link<T, C, A, V>>} initialBytes
+      * @returns {{ version:V, codec:C, multihashCode:A, digestSize:number, multihashSize:number, size:number }}
       */
-    inline def inspectBytes(initialBytes: js.typedarray.Uint8Array): Codec = ^.asInstanceOf[js.Dynamic].applyDynamic("inspectBytes")(initialBytes.asInstanceOf[js.Any]).asInstanceOf[Codec]
-    
-    /**
-      * @param {any} value
-      * @returns {value is CID}
-      */
-    inline def isCID(value: Any): /* is multiformats.multiformats/types/src/cid.CID */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCID")(value.asInstanceOf[js.Any]).asInstanceOf[/* is multiformats.multiformats/types/src/cid.CID */ Boolean]
+    inline def inspectBytes[T_2 /* <: Any */, C_1 /* <: Double */, A_1 /* <: Double */, V_1 /* <: Version */](initialBytes: ByteView[Link[T_2, C_1, A_1, V_1]]): Codec[V_1, C_1, A_1] = ^.asInstanceOf[js.Dynamic].applyDynamic("inspectBytes")(initialBytes.asInstanceOf[js.Any]).asInstanceOf[Codec[V_1, C_1, A_1]]
     
     /**
       * Takes cid in a string representation and creates an instance. If `base`
@@ -176,150 +222,164 @@ object basicsMod {
       * a default decoder).
       *
       * @template {string} Prefix
-      * @param {string} source
-      * @param {MultibaseDecoder<Prefix>} [base]
+      * @template {unknown} Data
+      * @template {number} Code
+      * @template {number} Alg
+      * @template {API.Version} Ver
+      * @param {API.ToString<API.Link<Data, Code, Alg, Ver>, Prefix>} source
+      * @param {API.MultibaseDecoder<Prefix>} [base]
+      * @returns {CID<Data, Code, Alg, Ver>}
       */
-    inline def parse[Prefix /* <: String */](source: String): typings.multiformats.cidMod.CID = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.cidMod.CID]
-    inline def parse[Prefix /* <: String */](source: String, base: MultibaseDecoder[Prefix]): typings.multiformats.cidMod.CID = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.cidMod.CID]
+    inline def parse[Prefix /* <: String */, Data_6 /* <: Any */, Code_2 /* <: Double */, Alg_6 /* <: Double */, Ver_1 /* <: Version */](source: ToString[Link[Data_6, Code_2, Alg_6, Ver_1], Prefix]): typings.multiformats.distTypesSrcCidMod.CID[Data_6, Code_2, Alg_6, Ver_1] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.distTypesSrcCidMod.CID[Data_6, Code_2, Alg_6, Ver_1]]
+    inline def parse[Prefix /* <: String */, Data_6 /* <: Any */, Code_2 /* <: Double */, Alg_6 /* <: Double */, Ver_1 /* <: Version */](source: ToString[Link[Data_6, Code_2, Alg_6, Ver_1], Prefix], base: MultibaseDecoder[Prefix]): typings.multiformats.distTypesSrcCidMod.CID[Data_6, Code_2, Alg_6, Ver_1] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.distTypesSrcCidMod.CID[Data_6, Code_2, Alg_6, Ver_1]]
   }
   
   object bases {
     
-    @JSImport("multiformats/types/src/basics", "bases")
+    @JSImport("multiformats/basics", "bases")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("multiformats/types/src/basics", "bases.base10")
+    @JSImport("multiformats/basics", "bases.base10")
     @js.native
-    def base10: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base10, `9`] = js.native
-    inline def base10_=(x: typings.multiformats.baseMod.Codec[base10, `9`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base10")(x.asInstanceOf[js.Any])
+    def base10: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base10, `9`] = js.native
+    inline def base10_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base10, `9`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base10")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base16")
+    @JSImport("multiformats/basics", "bases.base16")
     @js.native
-    def base16: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base16, f_] = js.native
-    inline def base16_=(x: typings.multiformats.baseMod.Codec[base16, f_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base16")(x.asInstanceOf[js.Any])
+    def base16: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base16, f_] = js.native
+    inline def base16_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base16, f_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base16")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base16upper")
+    @JSImport("multiformats/basics", "bases.base16upper")
     @js.native
-    def base16upper: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base16upper, F] = js.native
-    inline def base16upper_=(x: typings.multiformats.baseMod.Codec[base16upper, F]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base16upper")(x.asInstanceOf[js.Any])
+    def base16upper: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base16upper, F] = js.native
+    inline def base16upper_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base16upper, F]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base16upper")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base2")
+    @JSImport("multiformats/basics", "bases.base2")
     @js.native
-    def base2: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base2, `0`] = js.native
+    def base2: typings.multiformats.distTypesSrcBasesBaseMod.Codec[
+        typings.multiformats.multiformatsStrings.base2, 
+        typings.multiformats.multiformatsStrings.`0`
+      ] = js.native
     
-    @JSImport("multiformats/types/src/basics", "bases.base256emoji")
+    @JSImport("multiformats/basics", "bases.base256emoji")
     @js.native
-    def base256emoji: typings.multiformats.baseMod.Codec[
+    def base256emoji: typings.multiformats.distTypesSrcBasesBaseMod.Codec[
         typings.multiformats.multiformatsStrings.base256emoji, 
         Highsurrogatesd83dLowsurrogatesde80
       ] = js.native
-    inline def base256emoji_=(x: typings.multiformats.baseMod.Codec[base256emoji, Highsurrogatesd83dLowsurrogatesde80]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base256emoji")(x.asInstanceOf[js.Any])
+    inline def base256emoji_=(
+      x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base256emoji, Highsurrogatesd83dLowsurrogatesde80]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base256emoji")(x.asInstanceOf[js.Any])
     
-    inline def base2_=(x: typings.multiformats.baseMod.Codec[base2, `0`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base2")(x.asInstanceOf[js.Any])
+    inline def base2_=(
+      x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base2, typings.multiformats.multiformatsStrings.`0`]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base2")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base32")
+    @JSImport("multiformats/basics", "bases.base32")
     @js.native
-    def base32: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base32, b_] = js.native
-    inline def base32_=(x: typings.multiformats.baseMod.Codec[base32, b_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32")(x.asInstanceOf[js.Any])
+    def base32: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base32, b_] = js.native
+    inline def base32_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base32, b_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base32hex")
+    @JSImport("multiformats/basics", "bases.base32hex")
     @js.native
-    def base32hex: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base32hex, v_] = js.native
-    inline def base32hex_=(x: typings.multiformats.baseMod.Codec[base32hex, v_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32hex")(x.asInstanceOf[js.Any])
+    def base32hex: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base32hex, v_] = js.native
+    inline def base32hex_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base32hex, v_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32hex")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base32hexpad")
+    @JSImport("multiformats/basics", "bases.base32hexpad")
     @js.native
-    def base32hexpad: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base32hexpad, t_] = js.native
-    inline def base32hexpad_=(x: typings.multiformats.baseMod.Codec[base32hexpad, t_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32hexpad")(x.asInstanceOf[js.Any])
+    def base32hexpad: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base32hexpad, t_] = js.native
+    inline def base32hexpad_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base32hexpad, t_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32hexpad")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base32hexpadupper")
+    @JSImport("multiformats/basics", "bases.base32hexpadupper")
     @js.native
-    def base32hexpadupper: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base32hexpadupper, T] = js.native
-    inline def base32hexpadupper_=(x: typings.multiformats.baseMod.Codec[base32hexpadupper, T]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32hexpadupper")(x.asInstanceOf[js.Any])
+    def base32hexpadupper: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base32hexpadupper, T] = js.native
+    inline def base32hexpadupper_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base32hexpadupper, T]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32hexpadupper")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base32hexupper")
+    @JSImport("multiformats/basics", "bases.base32hexupper")
     @js.native
-    def base32hexupper: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base32hexupper, V] = js.native
-    inline def base32hexupper_=(x: typings.multiformats.baseMod.Codec[base32hexupper, V]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32hexupper")(x.asInstanceOf[js.Any])
+    def base32hexupper: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base32hexupper, V] = js.native
+    inline def base32hexupper_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base32hexupper, V]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32hexupper")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base32pad")
+    @JSImport("multiformats/basics", "bases.base32pad")
     @js.native
-    def base32pad: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base32pad, c_] = js.native
-    inline def base32pad_=(x: typings.multiformats.baseMod.Codec[base32pad, c_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32pad")(x.asInstanceOf[js.Any])
+    def base32pad: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base32pad, c_] = js.native
+    inline def base32pad_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base32pad, c_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32pad")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base32padupper")
+    @JSImport("multiformats/basics", "bases.base32padupper")
     @js.native
-    def base32padupper: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base32padupper, C] = js.native
-    inline def base32padupper_=(x: typings.multiformats.baseMod.Codec[base32padupper, C]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32padupper")(x.asInstanceOf[js.Any])
+    def base32padupper: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base32padupper, C] = js.native
+    inline def base32padupper_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base32padupper, C]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32padupper")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base32upper")
+    @JSImport("multiformats/basics", "bases.base32upper")
     @js.native
-    def base32upper: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base32upper, B] = js.native
-    inline def base32upper_=(x: typings.multiformats.baseMod.Codec[base32upper, B]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32upper")(x.asInstanceOf[js.Any])
+    def base32upper: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base32upper, B] = js.native
+    inline def base32upper_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base32upper, B]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32upper")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base32z")
+    @JSImport("multiformats/basics", "bases.base32z")
     @js.native
-    def base32z: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base32z, h] = js.native
-    inline def base32z_=(x: typings.multiformats.baseMod.Codec[base32z, h]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32z")(x.asInstanceOf[js.Any])
+    def base32z: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base32z, h] = js.native
+    inline def base32z_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base32z, h]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base32z")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base36")
+    @JSImport("multiformats/basics", "bases.base36")
     @js.native
-    def base36: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base36, k_] = js.native
-    inline def base36_=(x: typings.multiformats.baseMod.Codec[base36, k_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base36")(x.asInstanceOf[js.Any])
+    def base36: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base36, k_] = js.native
+    inline def base36_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base36, k_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base36")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base36upper")
+    @JSImport("multiformats/basics", "bases.base36upper")
     @js.native
-    def base36upper: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base36upper, K] = js.native
-    inline def base36upper_=(x: typings.multiformats.baseMod.Codec[base36upper, K]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base36upper")(x.asInstanceOf[js.Any])
+    def base36upper: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base36upper, K] = js.native
+    inline def base36upper_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base36upper, K]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base36upper")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base58btc")
+    @JSImport("multiformats/basics", "bases.base58btc")
     @js.native
-    def base58btc: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base58btc, z_] = js.native
-    inline def base58btc_=(x: typings.multiformats.baseMod.Codec[base58btc, z_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base58btc")(x.asInstanceOf[js.Any])
+    def base58btc: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base58btc, z_] = js.native
+    inline def base58btc_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base58btc, z_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base58btc")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base58flickr")
+    @JSImport("multiformats/basics", "bases.base58flickr")
     @js.native
-    def base58flickr: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base58flickr, Z] = js.native
-    inline def base58flickr_=(x: typings.multiformats.baseMod.Codec[base58flickr, Z]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base58flickr")(x.asInstanceOf[js.Any])
+    def base58flickr: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base58flickr, Z] = js.native
+    inline def base58flickr_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base58flickr, Z]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base58flickr")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base64")
+    @JSImport("multiformats/basics", "bases.base64")
     @js.native
-    def base64: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base64, m_] = js.native
-    inline def base64_=(x: typings.multiformats.baseMod.Codec[base64, m_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base64")(x.asInstanceOf[js.Any])
+    def base64: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base64, m_] = js.native
+    inline def base64_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base64, m_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base64")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base64pad")
+    @JSImport("multiformats/basics", "bases.base64pad")
     @js.native
-    def base64pad: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base64pad, M] = js.native
-    inline def base64pad_=(x: typings.multiformats.baseMod.Codec[base64pad, M]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base64pad")(x.asInstanceOf[js.Any])
+    def base64pad: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base64pad, M] = js.native
+    inline def base64pad_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base64pad, M]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base64pad")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base64url")
+    @JSImport("multiformats/basics", "bases.base64url")
     @js.native
-    def base64url: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base64url, u_] = js.native
-    inline def base64url_=(x: typings.multiformats.baseMod.Codec[base64url, u_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base64url")(x.asInstanceOf[js.Any])
+    def base64url: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base64url, u_] = js.native
+    inline def base64url_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base64url, u_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base64url")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base64urlpad")
+    @JSImport("multiformats/basics", "bases.base64urlpad")
     @js.native
-    def base64urlpad: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base64urlpad, U] = js.native
-    inline def base64urlpad_=(x: typings.multiformats.baseMod.Codec[base64urlpad, U]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base64urlpad")(x.asInstanceOf[js.Any])
+    def base64urlpad: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base64urlpad, U] = js.native
+    inline def base64urlpad_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base64urlpad, U]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base64urlpad")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.base8")
+    @JSImport("multiformats/basics", "bases.base8")
     @js.native
-    def base8: typings.multiformats.baseMod.Codec[typings.multiformats.multiformatsStrings.base8, `7`] = js.native
-    inline def base8_=(x: typings.multiformats.baseMod.Codec[base8, `7`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base8")(x.asInstanceOf[js.Any])
+    def base8: typings.multiformats.distTypesSrcBasesBaseMod.Codec[typings.multiformats.multiformatsStrings.base8, `7`] = js.native
+    inline def base8_=(x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[base8, `7`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base8")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "bases.identity")
+    @JSImport("multiformats/basics", "bases.identity")
     @js.native
-    def identity: typings.multiformats.baseMod.Codec[
+    def identity: typings.multiformats.distTypesSrcBasesBaseMod.Codec[
         typings.multiformats.multiformatsStrings.identity, 
         typings.multiformats.multiformatsStrings.Null
       ] = js.native
-    inline def identity_=(x: typings.multiformats.baseMod.Codec[identity, typings.multiformats.multiformatsStrings.Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
+    inline def identity_=(
+      x: typings.multiformats.distTypesSrcBasesBaseMod.Codec[identity, typings.multiformats.multiformatsStrings.Null]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
   }
   
   object bytes {
     
-    @JSImport("multiformats/types/src/basics", "bytes")
+    @JSImport("multiformats/basics", "bytes")
     @js.native
     val ^ : js.Any = js.native
     
@@ -327,7 +387,7 @@ object basicsMod {
     inline def coerce(o: js.typedarray.ArrayBufferView): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(o.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     inline def coerce(o: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(o.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    @JSImport("multiformats/types/src/basics", "bytes.empty")
+    @JSImport("multiformats/basics", "bytes.empty")
     @js.native
     val empty: js.typedarray.Uint8Array = js.native
     
@@ -346,16 +406,17 @@ object basicsMod {
   
   object digest {
     
-    @JSImport("multiformats/types/src/basics", "digest")
+    @JSImport("multiformats/basics", "digest")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("multiformats/types/src/basics", "digest.Digest")
+    @JSImport("multiformats/basics", "digest.Digest")
     @js.native
     open class Digest[Code /* <: Double */, Size /* <: Double */] protected ()
-      extends typings.multiformats.mod.digest.Digest[Code, Size] {
+      extends typings.multiformats.distTypesSrcBasicsMod.digest.Digest[Code, Size] {
       /**
         * Creates a multihash digest.
+        *
         * @param {Code} code
         * @param {Size} size
         * @param {Uint8Array} digest
@@ -364,26 +425,23 @@ object basicsMod {
       def this(code: Code, size: Size, digest: js.typedarray.Uint8Array, bytes: js.typedarray.Uint8Array) = this()
     }
     
-    inline def create[Code /* <: Double */](code: Code, digest: js.typedarray.Uint8Array): typings.multiformats.digestMod.Digest[Code, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(code.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.digestMod.Digest[Code, Double]]
+    inline def create[Code /* <: Double */](code: Code, digest: js.typedarray.Uint8Array): typings.multiformats.distTypesSrcHashesDigestMod.Digest[Code, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(code.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.distTypesSrcHashesDigestMod.Digest[Code, Double]]
     
-    inline def decode(multihash: js.typedarray.Uint8Array): typings.multiformats.digestMod.MultihashDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(multihash.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.digestMod.MultihashDigest]
+    inline def decode(multihash: js.typedarray.Uint8Array): typings.multiformats.distTypesSrcHashesDigestMod.MultihashDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(multihash.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.distTypesSrcHashesDigestMod.MultihashDigest]
     
-    inline def equals_(
-      a: typings.multiformats.digestMod.MultihashDigest,
-      b: typings.multiformats.digestMod.MultihashDigest
-    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals_(a: typings.multiformats.distTypesSrcHashesDigestMod.MultihashDigest, b: Any): /* is multiformats.multiformats/dist/types/src/hashes/interface.MultihashDigest<number> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[/* is multiformats.multiformats/dist/types/src/hashes/interface.MultihashDigest<number> */ Boolean]
   }
   
   object hasher {
     
-    @JSImport("multiformats/types/src/basics", "hasher")
+    @JSImport("multiformats/basics", "hasher")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("multiformats/types/src/basics", "hasher.Hasher")
+    @JSImport("multiformats/basics", "hasher.Hasher")
     @js.native
     open class Hasher[Name /* <: String */, Code /* <: Double */] protected ()
-      extends typings.multiformats.mod.hasher.Hasher[Name, Code] {
+      extends typings.multiformats.distTypesSrcBasicsMod.hasher.Hasher[Name, Code] {
       /**
         *
         * @param {Name} name
@@ -397,26 +455,26 @@ object basicsMod {
       ) = this()
     }
     
-    inline def from[Name /* <: String */, Code /* <: Double */](hasNameCodeEncode: Encode[Name, Code]): typings.multiformats.hasherMod.Hasher[Name, Code] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(hasNameCodeEncode.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.hasherMod.Hasher[Name, Code]]
+    inline def from[Name /* <: String */, Code /* <: Double */](hasNameCodeEncode: Encode[Name, Code]): typings.multiformats.distTypesSrcHashesHasherMod.Hasher[Name, Code] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(hasNameCodeEncode.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.distTypesSrcHashesHasherMod.Hasher[Name, Code]]
   }
   
   object hashes {
     
-    @JSImport("multiformats/types/src/basics", "hashes")
+    @JSImport("multiformats/basics", "hashes")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("multiformats/types/src/basics", "hashes.identity")
+    @JSImport("multiformats/basics", "hashes.identity")
     @js.native
     def identity: Code = js.native
     inline def identity_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "hashes.sha256")
+    @JSImport("multiformats/basics", "hashes.sha256")
     @js.native
     def sha256: Hasher[`sha2-256`, `18`] = js.native
     inline def sha256_=(x: Hasher[`sha2-256`, `18`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha256")(x.asInstanceOf[js.Any])
     
-    @JSImport("multiformats/types/src/basics", "hashes.sha512")
+    @JSImport("multiformats/basics", "hashes.sha512")
     @js.native
     def sha512: Hasher[`sha2-512`, `19`] = js.native
     inline def sha512_=(x: Hasher[`sha2-512`, `19`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha512")(x.asInstanceOf[js.Any])
@@ -424,7 +482,7 @@ object basicsMod {
   
   object varint {
     
-    @JSImport("multiformats/types/src/basics", "varint")
+    @JSImport("multiformats/basics", "varint")
     @js.native
     val ^ : js.Any = js.native
     

@@ -1,6 +1,6 @@
 package typings.dwt.anon
 
-import typings.dwt.dynamsoftFileUploaderMod.FileUploader
+import typings.dwt.dynamsoftDotFileUploaderMod.FileUploader
 import typings.dwt.dynamsoftMod.DynamsoftLib
 import typings.dwt.dynamsoftMod.ManagerEnv
 import typings.dwt.dynamsoftMod.Messages
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofDynamsoftStatic extends StObject {
   
-  var FileUploader: typings.dwt.dynamsoftFileUploaderMod.FileUploader
+  var FileUploader: typings.dwt.dynamsoftDotFileUploaderMod.FileUploader
   
   var Lib: DynamsoftLib
   

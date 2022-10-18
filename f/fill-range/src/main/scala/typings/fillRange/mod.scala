@@ -40,7 +40,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type FilledArray[ValueType, TransformValueType] = js.Array[TransformValueType | ValueType]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    ValueType extends TransformValueType ? std.Array<ValueType> : std.Array<TransformValueType>
+    }}}
+    */
+  @js.native
+  trait FilledArray[ValueType, TransformValueType] extends StObject
   
   trait Options[ValueType, TransformValueType] extends StObject {
     

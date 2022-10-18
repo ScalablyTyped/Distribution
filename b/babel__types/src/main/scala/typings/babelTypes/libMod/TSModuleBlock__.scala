@@ -10,6 +10,7 @@ trait TSModuleBlock__
      with BaseNode
      with Block
      with BlockParent
+     with FunctionParent
      with Node
      with Scopable
      with TypeScript {

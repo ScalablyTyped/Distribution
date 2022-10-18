@@ -1,16 +1,16 @@
 package typings.vsoNodeApi
 
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
-import typings.vsoNodeApi.profileInterfacesMod.Avatar
-import typings.vsoNodeApi.profileInterfacesMod.CreateProfileContext
-import typings.vsoNodeApi.profileInterfacesMod.GeoRegion
-import typings.vsoNodeApi.profileInterfacesMod.Profile
-import typings.vsoNodeApi.profileInterfacesMod.ProfileAttribute
-import typings.vsoNodeApi.profileInterfacesMod.ProfileAttributeBase
-import typings.vsoNodeApi.profileInterfacesMod.ProfileRegions
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
-import typings.vsoNodeApi.vssinterfacesMod.VssJsonCollectionWrapperV
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonVssinterfacesMod.VssJsonCollectionWrapperV
+import typings.vsoNodeApi.interfacesProfileInterfacesMod.Avatar
+import typings.vsoNodeApi.interfacesProfileInterfacesMod.CreateProfileContext
+import typings.vsoNodeApi.interfacesProfileInterfacesMod.GeoRegion
+import typings.vsoNodeApi.interfacesProfileInterfacesMod.Profile
+import typings.vsoNodeApi.interfacesProfileInterfacesMod.ProfileAttribute
+import typings.vsoNodeApi.interfacesProfileInterfacesMod.ProfileAttributeBase
+import typings.vsoNodeApi.interfacesProfileInterfacesMod.ProfileRegions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

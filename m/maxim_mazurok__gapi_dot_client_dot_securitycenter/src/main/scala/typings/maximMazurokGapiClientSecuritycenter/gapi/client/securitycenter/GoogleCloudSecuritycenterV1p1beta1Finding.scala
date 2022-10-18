@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,9 +62,7 @@ trait GoogleCloudSecuritycenterV1p1beta1Finding extends StObject {
     * must start with a letter and contain alphanumeric characters or underscores only.
     */
   var sourceProperties: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.GoogleCloudSecuritycenterV1p1beta1Finding & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** The state of the finding. */
@@ -121,9 +118,7 @@ object GoogleCloudSecuritycenterV1p1beta1Finding {
     inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
     inline def setSourceProperties(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.GoogleCloudSecuritycenterV1p1beta1Finding & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "sourceProperties", value.asInstanceOf[js.Any])
     
     inline def setSourcePropertiesUndefined: Self = StObject.set(x, "sourceProperties", js.undefined)

@@ -1,7 +1,7 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.coroutineMod.AsyncCoroutine
-import typings.babylonjs.coroutineMod.CoroutineScheduler
+import typings.babylonjs.miscCoroutineMod.AsyncCoroutine
+import typings.babylonjs.miscCoroutineMod.CoroutineScheduler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

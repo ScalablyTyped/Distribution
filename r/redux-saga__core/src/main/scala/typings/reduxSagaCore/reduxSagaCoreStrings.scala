@@ -35,20 +35,12 @@ object reduxSagaCoreStrings {
   inline def CPS: CPS = "CPS".asInstanceOf[CPS]
   
   @js.native
-  sealed trait Context extends StObject
-  inline def Context: Context = "Context".asInstanceOf[Context]
-  
-  @js.native
   sealed trait FLUSH extends StObject
   inline def FLUSH: FLUSH = "FLUSH".asInstanceOf[FLUSH]
   
   @js.native
   sealed trait FORK extends StObject
   inline def FORK: FORK = "FORK".asInstanceOf[FORK]
-  
-  @js.native
-  sealed trait Fn extends StObject
-  inline def Fn: Fn = "Fn".asInstanceOf[Fn]
   
   @js.native
   sealed trait GET_CONTEXT extends StObject
@@ -77,24 +69,4 @@ object reduxSagaCoreStrings {
   @js.native
   sealed trait TAKE extends StObject
   inline def TAKE: TAKE = "TAKE".asInstanceOf[TAKE]
-  
-  @js.native
-  sealed trait apply extends StObject
-  inline def apply: apply = "apply".asInstanceOf[apply]
-  
-  @js.native
-  sealed trait call_ extends StObject
-  inline def call_ : call_ = "call".asInstanceOf[call_]
-  
-  @js.native
-  sealed trait cps_ extends StObject
-  inline def cps_ : cps_ = "cps".asInstanceOf[cps_]
-  
-  @js.native
-  sealed trait fork_ extends StObject
-  inline def fork_ : fork_ = "fork".asInstanceOf[fork_]
-  
-  @js.native
-  sealed trait spawn extends StObject
-  inline def spawn: spawn = "spawn".asInstanceOf[spawn]
 }

@@ -934,8 +934,6 @@ object TypeaheadMulitInputWithHocProps {
     
     inline def setLabelKey(value: TypeaheadLabelKey[T]): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
     
-    inline def setLabelKeyFunction1(value: T => String): Self = StObject.set(x, "labelKey", js.Any.fromFunction1(value))
-    
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)

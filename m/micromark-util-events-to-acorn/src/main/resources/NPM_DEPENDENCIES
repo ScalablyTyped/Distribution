@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "micromark-util-events-to-acorn" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "micromark-util-events-to-acorn" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /* Rewritten from type alias, can be one of: 
-  - java.lang.String
+  - / * :-moz-any() * / java.lang.String
   - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-dir`
   - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColoncue
   - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColonslotted
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonnth-of-type`
   - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonwhere
 */
-type AdvancedPseudos = _AdvancedPseudos | String
+type AdvancedPseudos = _AdvancedPseudos | (/* :-moz-any() */ String)
 
 /* Rewritten from type alias, can be one of: 
   - typings.rtsaoCsstype.mod.Globals
@@ -2258,7 +2258,7 @@ type PlaceSelfProperty = _PlaceSelfProperty | String
 type Position[TLength] = _Position[TLength] | TLength | String
 
 /* Rewritten from type alias, can be one of: 
-  - java.lang.String
+  - / * :-moz-any() * / java.lang.String
   - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-dir`
   - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColoncue
   - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColonslotted
@@ -2363,7 +2363,7 @@ type Position[TLength] = _Position[TLength] | TLength | String
   - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonvalid
   - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonvisited
 */
-type Pseudos = _Pseudos | String
+type Pseudos = _Pseudos | (/* :-moz-any() */ String)
 
 /* Rewritten from type alias, can be one of: 
   - typings.rtsaoCsstype.mod.Globals

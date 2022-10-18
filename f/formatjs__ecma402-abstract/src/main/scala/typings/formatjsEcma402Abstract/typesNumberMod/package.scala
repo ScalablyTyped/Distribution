@@ -16,9 +16,18 @@ type NumberFormatOptionsNotation = NumberFormatNotation
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.compact
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.unit
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.literal
+  - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.approximatelySign
 */
 type NumberFormatPartTypes = _NumberFormatPartTypes | typings.std.Intl.NumberFormatPartTypes
 
 type NumberingSystem = String
 
 type RawNumberLocaleData = LocaleData[NumberFormatLocaleInternalData]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.min2
+  - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.auto
+  - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.always
+  - scala.Boolean
+*/
+type UseGroupingType = _UseGroupingType | Boolean

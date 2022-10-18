@@ -21,9 +21,9 @@ object WebXRDefaultExperience {
     * @param options options for basic configuration
     * @returns resulting WebXRDefaultExperience
     */
-  inline def CreateAsync(scene: typings.babylonjs.sceneMod.Scene): js.Promise[typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience]]
+  inline def CreateAsync(scene: typings.babylonjs.sceneMod.Scene): js.Promise[typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperience] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperience]]
   inline def CreateAsync(
     scene: typings.babylonjs.sceneMod.Scene,
-    options: typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperienceOptions
-  ): js.Promise[typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience]]
+    options: typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperienceOptions
+  ): js.Promise[typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperience] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperience]]
 }

@@ -46,9 +46,9 @@ object mod {
   @JSImport("@ant-design/icons-angular", "IconDirective")
   @js.native
   open class IconDirective protected ()
-    extends typings.antDesignIconsAngular.antDesignIconsAngularMod.IconDirective {
+    extends typings.antDesignIconsAngular.publicApiMod.IconDirective {
     def this(
-      _iconService: typings.antDesignIconsAngular.iconServiceMod.IconService,
+      _iconService: typings.antDesignIconsAngular.componentIconDotserviceMod.IconService,
       _elementRef: ElementRef[Any],
       _renderer: Renderer2
     ) = this()
@@ -63,7 +63,7 @@ object mod {
     @JSImport("@ant-design/icons-angular", "IconDirective.\u0275dir")
     @js.native
     def ɵdir: ɵɵDirectiveDeclaration[
-        typings.antDesignIconsAngular.iconDirectiveMod.IconDirective, 
+        typings.antDesignIconsAngular.componentIconDotdirectiveMod.IconDirective, 
         `[antIcon]`, 
         scala.Nothing, 
         Theme, 
@@ -74,7 +74,7 @@ object mod {
       ] = js.native
     inline def ɵdir_=(
       x: ɵɵDirectiveDeclaration[
-          typings.antDesignIconsAngular.iconDirectiveMod.IconDirective, 
+          typings.antDesignIconsAngular.componentIconDotdirectiveMod.IconDirective, 
           `[antIcon]`, 
           scala.Nothing, 
           Theme, 
@@ -87,16 +87,22 @@ object mod {
     
     @JSImport("@ant-design/icons-angular", "IconDirective.\u0275fac")
     @js.native
-    def ɵfac: ɵɵFactoryDeclaration[typings.antDesignIconsAngular.iconDirectiveMod.IconDirective, scala.Nothing] = js.native
+    def ɵfac: ɵɵFactoryDeclaration[
+        typings.antDesignIconsAngular.componentIconDotdirectiveMod.IconDirective, 
+        scala.Nothing
+      ] = js.native
     inline def ɵfac_=(
-      x: ɵɵFactoryDeclaration[typings.antDesignIconsAngular.iconDirectiveMod.IconDirective, scala.Nothing]
+      x: ɵɵFactoryDeclaration[
+          typings.antDesignIconsAngular.componentIconDotdirectiveMod.IconDirective, 
+          scala.Nothing
+        ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@ant-design/icons-angular", "IconModule")
   @js.native
   open class IconModule ()
-    extends typings.antDesignIconsAngular.antDesignIconsAngularMod.IconModule
+    extends typings.antDesignIconsAngular.publicApiMod.IconModule
   /* static members */
   object IconModule {
     
@@ -106,25 +112,27 @@ object mod {
     
     @JSImport("@ant-design/icons-angular", "IconModule.\u0275fac")
     @js.native
-    def ɵfac: ɵɵFactoryDeclaration[typings.antDesignIconsAngular.iconModuleMod.IconModule, scala.Nothing] = js.native
-    inline def ɵfac_=(x: ɵɵFactoryDeclaration[typings.antDesignIconsAngular.iconModuleMod.IconModule, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+    def ɵfac: ɵɵFactoryDeclaration[typings.antDesignIconsAngular.componentIconDotmoduleMod.IconModule, scala.Nothing] = js.native
+    inline def ɵfac_=(
+      x: ɵɵFactoryDeclaration[typings.antDesignIconsAngular.componentIconDotmoduleMod.IconModule, scala.Nothing]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/icons-angular", "IconModule.\u0275inj")
     @js.native
-    def ɵinj: ɵɵInjectorDeclaration[typings.antDesignIconsAngular.iconModuleMod.IconModule] = js.native
-    inline def ɵinj_=(x: ɵɵInjectorDeclaration[typings.antDesignIconsAngular.iconModuleMod.IconModule]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275inj")(x.asInstanceOf[js.Any])
+    def ɵinj: ɵɵInjectorDeclaration[typings.antDesignIconsAngular.componentIconDotmoduleMod.IconModule] = js.native
+    inline def ɵinj_=(x: ɵɵInjectorDeclaration[typings.antDesignIconsAngular.componentIconDotmoduleMod.IconModule]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275inj")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/icons-angular", "IconModule.\u0275mod")
     @js.native
     def ɵmod: ɵɵNgModuleDeclaration[
-        typings.antDesignIconsAngular.iconModuleMod.IconModule, 
+        typings.antDesignIconsAngular.componentIconDotmoduleMod.IconModule, 
         js.Array[TypeofIconDirective], 
         js.Array[TypeofCommonModule], 
         js.Array[TypeofIconDirective]
       ] = js.native
     inline def ɵmod_=(
       x: ɵɵNgModuleDeclaration[
-          typings.antDesignIconsAngular.iconModuleMod.IconModule, 
+          typings.antDesignIconsAngular.componentIconDotmoduleMod.IconModule, 
           js.Array[TypeofIconDirective], 
           js.Array[TypeofCommonModule], 
           js.Array[TypeofIconDirective]
@@ -137,7 +145,7 @@ object mod {
   @JSImport("@ant-design/icons-angular", "IconService")
   @js.native
   open class IconService protected ()
-    extends typings.antDesignIconsAngular.antDesignIconsAngularMod.IconService {
+    extends typings.antDesignIconsAngular.publicApiMod.IconService {
     def this(
       _rendererFactory: RendererFactory2,
       _handler: HttpBackend,
@@ -156,20 +164,20 @@ object mod {
     @JSImport("@ant-design/icons-angular", "IconService.\u0275fac")
     @js.native
     def ɵfac: ɵɵFactoryDeclaration[
-        typings.antDesignIconsAngular.iconServiceMod.IconService, 
+        typings.antDesignIconsAngular.componentIconDotserviceMod.IconService, 
         js.Tuple5[Null, Optional, Optional, Null, Optional]
       ] = js.native
     inline def ɵfac_=(
       x: ɵɵFactoryDeclaration[
-          typings.antDesignIconsAngular.iconServiceMod.IconService, 
+          typings.antDesignIconsAngular.componentIconDotserviceMod.IconService, 
           js.Tuple5[Null, Optional, Optional, Null, Optional]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/icons-angular", "IconService.\u0275prov")
     @js.native
-    def ɵprov: ɵɵInjectableDeclaration[typings.antDesignIconsAngular.iconServiceMod.IconService] = js.native
-    inline def ɵprov_=(x: ɵɵInjectableDeclaration[typings.antDesignIconsAngular.iconServiceMod.IconService]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
+    def ɵprov: ɵɵInjectableDeclaration[typings.antDesignIconsAngular.componentIconDotserviceMod.IconService] = js.native
+    inline def ɵprov_=(x: ɵɵInjectableDeclaration[typings.antDesignIconsAngular.componentIconDotserviceMod.IconService]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
   }
   
   inline def NameSpaceIsNotSpecifyError(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("NameSpaceIsNotSpecifyError")().asInstanceOf[js.Error]

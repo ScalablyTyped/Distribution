@@ -1,6 +1,6 @@
 package typings.expoDevcert
 
-import typings.expoDevcert.userInterfaceMod.UserInterface
+import typings.expoDevcert.distUserInterfaceMod.UserInterface
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,9 +23,7 @@ object mod {
   
   inline def uninstall(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")().asInstanceOf[Unit]
   
-  trait ICaBuffer
-    extends StObject
-       with IReturnCa[Any] {
+  trait ICaBuffer extends StObject {
     
     var ca: Buffer
   }
@@ -42,9 +40,7 @@ object mod {
     }
   }
   
-  trait ICaPath
-    extends StObject
-       with IReturnCaPath[Any] {
+  trait ICaPath extends StObject {
     
     var caPath: String
   }
@@ -82,16 +78,24 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.expoDevcert.expoDevcertBooleans.`false`
-    - typings.expoDevcert.mod.ICaBuffer
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    O['getCaBuffer'] extends true ? @expo/devcert.@expo/devcert.ICaBuffer : false
+    }}}
+    */
+  @js.native
   trait IReturnCa[O /* <: Options */] extends StObject
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.expoDevcert.expoDevcertBooleans.`false`
-    - typings.expoDevcert.mod.ICaPath
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    O['getCaPath'] extends true ? @expo/devcert.@expo/devcert.ICaPath : false
+    }}}
+    */
+  @js.native
   trait IReturnCaPath[O /* <: Options */] extends StObject
   
   type IReturnData[O /* <: Options */] = IDomainData & IReturnCa[O] & IReturnCaPath[O]

@@ -1,12 +1,12 @@
 package typings.nodeStreamZip
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.nodeStreamZip.nodeStreamZipStrings.entry
 import typings.nodeStreamZip.nodeStreamZipStrings.error
 import typings.nodeStreamZip.nodeStreamZipStrings.extract
 import typings.nodeStreamZip.nodeStreamZipStrings.ready
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,8 +51,8 @@ object mod {
     @JSName("on")
     def on_extract(event: extract, handler: js.Function2[/* entry */ ZipEntry, /* outPath */ String, Unit]): Unit = js.native
     
-    def stream(entry: String): js.Promise[ReadableStream[Any]] = js.native
-    def stream(entry: ZipEntry): js.Promise[ReadableStream[Any]] = js.native
+    def stream(entry: String): js.Promise[ReadableStream] = js.native
+    def stream(entry: ZipEntry): js.Promise[ReadableStream] = js.native
   }
   
   /* static member */
@@ -124,11 +124,11 @@ object mod {
     
     def stream(
       entry: String,
-      callback: js.Function2[/* err */ Any | Null, /* stream */ js.UndefOr[ReadableStream[Any]], Unit]
+      callback: js.Function2[/* err */ Any | Null, /* stream */ js.UndefOr[ReadableStream], Unit]
     ): Unit = js.native
     def stream(
       entry: ZipEntry,
-      callback: js.Function2[/* err */ Any | Null, /* stream */ js.UndefOr[ReadableStream[Any]], Unit]
+      callback: js.Function2[/* err */ Any | Null, /* stream */ js.UndefOr[ReadableStream], Unit]
     ): Unit = js.native
   }
   

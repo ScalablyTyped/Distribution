@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This object is passed as a parameter to the event handlers for the StatusUpdated event. */
-@JSGlobal("Windows.Devices.PointOfService.CashDrawerStatusUpdatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.CashDrawerStatusUpdatedEventArgs")
 @js.native
-abstract class CashDrawerStatusUpdatedEventArgs ()
+open class CashDrawerStatusUpdatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.CashDrawerStatusUpdatedEventArgs {
   

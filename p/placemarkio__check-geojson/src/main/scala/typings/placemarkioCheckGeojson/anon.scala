@@ -1,6 +1,7 @@
 package typings.placemarkioCheckGeojson
 
 import typings.geojson.mod.GeoJSON
+import typings.placemarkioCheckGeojson.distTypesMod.HintIssue
 import typings.placemarkioCheckGeojson.placemarkioCheckGeojsonStrings.FeatureCollection
 import typings.placemarkioCheckGeojson.placemarkioCheckGeojsonStrings.GeometryCollection
 import typings.placemarkioCheckGeojson.placemarkioCheckGeojsonStrings.LineString
@@ -9,7 +10,6 @@ import typings.placemarkioCheckGeojson.placemarkioCheckGeojsonStrings.MultiPoint
 import typings.placemarkioCheckGeojson.placemarkioCheckGeojsonStrings.MultiPolygon
 import typings.placemarkioCheckGeojson.placemarkioCheckGeojsonStrings.Point
 import typings.placemarkioCheckGeojson.placemarkioCheckGeojsonStrings.Polygon
-import typings.placemarkioCheckGeojson.typesMod.HintIssue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -13,6 +13,12 @@ trait MaxAge extends StObject {
     * when the client shuts down (browser is closed).
     */
   var maxAge: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Specifies the path for the preview session to work under. By default,
+    * the path is considered the "default path", i.e., any pages under "/".
+    */
+  var path: js.UndefOr[String] = js.undefined
 }
 object MaxAge {
   
@@ -26,5 +32,9 @@ object MaxAge {
     inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
     inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

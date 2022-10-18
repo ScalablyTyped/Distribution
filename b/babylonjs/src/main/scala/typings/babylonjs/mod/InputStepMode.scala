@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object InputStepMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.InputStepMode & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.InputStepMode & String] = js.native
   
-  /* "instance" */ val Instance: typings.babylonjs.webgpuConstantsMod.InputStepMode.Instance & String = js.native
+  /* "instance" */ val Instance: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.InputStepMode.Instance & String = js.native
   
-  /* "vertex" */ val Vertex: typings.babylonjs.webgpuConstantsMod.InputStepMode.Vertex & String = js.native
+  /* "vertex" */ val Vertex: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.InputStepMode.Vertex & String = js.native
 }

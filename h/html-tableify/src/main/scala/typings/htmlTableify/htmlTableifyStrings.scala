@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object htmlTableifyStrings {
   
   @js.native
-  sealed trait Datum extends StObject
-  inline def Datum: Datum = "Datum".asInstanceOf[Datum]
-  
-  @js.native
   sealed trait center
     extends StObject
        with Alignment

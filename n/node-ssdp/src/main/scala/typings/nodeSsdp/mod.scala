@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("node-ssdp", "Base")
+  /* note: abstract class */ @JSImport("node-ssdp", "Base")
   @js.native
-  abstract class Base () extends EventEmitter {
+  open class Base () extends EventEmitter {
     def this(opts: SsdpOptions) = this()
     
     def addUSN(device: String): Unit = js.native

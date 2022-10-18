@@ -1,7 +1,7 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.webXRControllerMovementMod.IWebXRControllerMovementOptions
-import typings.babylonjs.webXRControllerMovementMod.WebXRControllerMovementRegistrationConfiguration
+import typings.babylonjs.xRFeaturesWebXRControllerMovementMod.IWebXRControllerMovementOptions
+import typings.babylonjs.xRFeaturesWebXRControllerMovementMod.WebXRControllerMovementRegistrationConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXRControllerMovement")
 @js.native
 open class WebXRControllerMovement protected ()
-  extends typings.babylonjs.legacyMod.WebXRControllerMovement {
+  extends typings.babylonjs.legacyLegacyMod.WebXRControllerMovement {
   /**
     * constructs a new movement controller system
     * @param _xrSessionManager an instance of WebXRSessionManager
     * @param options configuration object for this feature
     */
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     options: IWebXRControllerMovementOptions
   ) = this()
 }

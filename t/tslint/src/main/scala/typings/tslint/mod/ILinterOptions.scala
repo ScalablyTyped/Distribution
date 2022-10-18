@@ -1,6 +1,6 @@
 package typings.tslint.mod
 
-import typings.tslint.formatterMod.FormatterConstructor
+import typings.tslint.libLanguageFormatterFormatterMod.FormatterConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

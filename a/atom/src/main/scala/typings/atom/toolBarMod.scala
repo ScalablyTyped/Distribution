@@ -52,7 +52,7 @@ object toolBarMod {
       * data: 'foo'
       * ```
       */
-    var callback: String | js.Array[String] | (js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | (StringDictionary[(js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | String])
+    var callback: String | js.Array[String] | (js.Function1[/* data */ js.UndefOr[Any], Unit]) | (StringDictionary[(js.Function1[/* data */ js.UndefOr[Any], Unit]) | String])
     
     /** Buttons can be styled with arbitrary CSS through classes.
       * An example of how the class can be used is show below.
@@ -77,7 +77,7 @@ object toolBarMod {
       * - `{ [modifier: string]: ((data: any) => void) }`,
       *
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** (optional)
       * if set to `true`, `text` will be rendered as HTML
@@ -146,7 +146,7 @@ object toolBarMod {
   object ButtonOptions {
     
     inline def apply(
-      callback: String | js.Array[String] | (js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | (StringDictionary[(js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | String])
+      callback: String | js.Array[String] | (js.Function1[/* data */ js.UndefOr[Any], Unit]) | (StringDictionary[(js.Function1[/* data */ js.UndefOr[Any], Unit]) | String])
     ): ButtonOptions = {
       val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any])
       __obj.asInstanceOf[ButtonOptions]
@@ -159,24 +159,24 @@ object toolBarMod {
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
       inline def setCallback(
-        value: String | js.Array[String] | (js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | (StringDictionary[(js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | String])
+        value: String | js.Array[String] | (js.Function1[/* data */ js.UndefOr[Any], Unit]) | (StringDictionary[(js.Function1[/* data */ js.UndefOr[Any], Unit]) | String])
       ): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      inline def setCallbackFunction1(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallbackFunction1(value: /* data */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      inline def setCallbackVarargs(value: String*): Self = StObject.set(x, "callback", js.Array(value :_*))
+      inline def setCallbackVarargs(value: String*): Self = StObject.set(x, "callback", js.Array(value*))
       
       inline def setClass(value: String | js.Array[String]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
       inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
-      inline def setClassVarargs(value: String*): Self = StObject.set(x, "class", js.Array(value :_*))
+      inline def setClassVarargs(value: String*): Self = StObject.set(x, "class", js.Array(value*))
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

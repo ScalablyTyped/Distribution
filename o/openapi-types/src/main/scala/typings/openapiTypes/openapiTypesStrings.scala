@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object openapiTypesStrings {
   
   @js.native
-  sealed trait PathItemObject extends StObject
-  inline def PathItemObject: PathItemObject = "PathItemObject".asInstanceOf[PathItemObject]
-  
-  @js.native
   sealed trait accessCode extends StObject
   inline def accessCode: accessCode = "accessCode".asInstanceOf[accessCode]
   

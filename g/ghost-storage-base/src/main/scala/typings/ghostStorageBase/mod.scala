@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("ghost-storage-base", JSImport.Namespace)
+  /* note: abstract class */ @JSImport("ghost-storage-base", JSImport.Namespace)
   @js.native
-  abstract class ^ ()
+  open class ^ ()
     extends StObject
        with StorageBase
   

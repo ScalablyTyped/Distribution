@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsPoweroffOutlinedMod.PoweroffOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object poweroffOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/PoweroffOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/PoweroffOutlined", JSImport.Default)
   @js.native
   val default: PoweroffOutlinedIconType = js.native
-  
-  @js.native
-  trait PoweroffOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_PoweroffOutlinedIconType: String = js.native
-  }
   
   type _To = PoweroffOutlinedIconType
   

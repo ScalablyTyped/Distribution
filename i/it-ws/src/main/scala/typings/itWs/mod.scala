@@ -1,13 +1,13 @@
 package typings.itWs
 
 import typings.itStreamTypes.mod.Sink
-import typings.itWs.clientMod.WebSocketOptions
-import typings.itWs.duplexMod.DuplexWebSocket
-import typings.itWs.duplexMod.DuplexWebSocketOptions
-import typings.itWs.serverMod.ServerOptions
-import typings.itWs.serverMod.WebSocketServer
-import typings.itWs.sinkMod.SinkOptions
-import typings.itWs.sourceMod.ConnectedSource
+import typings.itWs.distSrcClientMod.WebSocketOptions
+import typings.itWs.distSrcDuplexMod.DuplexWebSocket
+import typings.itWs.distSrcDuplexMod.DuplexWebSocketOptions
+import typings.itWs.distSrcServerMod.ServerOptions
+import typings.itWs.distSrcServerMod.WebSocketServer
+import typings.itWs.distSrcSinkMod.SinkOptions
+import typings.itWs.distSrcSourceMod.ConnectedSource
 import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

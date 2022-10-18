@@ -1,8 +1,8 @@
 package typings.nivoScales.anon
 
-import typings.nivoScales.computeMod.NestedSerie
-import typings.nivoScales.computeMod.SerieDatum
-import typings.nivoScales.typesMod.ScaleSpec
+import typings.nivoScales.distTypesComputeMod.NestedSerie
+import typings.nivoScales.distTypesComputeMod.SerieDatum
+import typings.nivoScales.distTypesTypesMod.ScaleSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCall extends StObject {
   
-  def apply[S, D /* <: SerieDatum */](series: js.Array[NestedSerie[S, D]], xScaleSpec: ScaleSpec, yScaleSpec: ScaleSpec): X = js.native
+  def apply[S, D /* <: SerieDatum */](series: js.Array[NestedSerie[S, D]], xScaleSpec: ScaleSpec, yScaleSpec: ScaleSpec): Y = js.native
 }

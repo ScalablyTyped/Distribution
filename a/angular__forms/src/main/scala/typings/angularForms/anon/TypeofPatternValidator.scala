@@ -16,7 +16,7 @@ trait TypeofPatternValidator
   
   var ɵdir: ɵɵDirectiveDeclaration[
     PatternValidator, 
-    String, 
+    /* [pattern][formControlName],[pattern][formControl],[pattern][ngModel] */ String, 
     scala.Nothing, 
     Pattern, 
     js.Object, 

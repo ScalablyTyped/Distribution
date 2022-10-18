@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebGLDataBuffer")
 @js.native
 open class WebGLDataBuffer protected ()
-  extends typings.babylonjs.legacyMod.WebGLDataBuffer {
+  extends typings.babylonjs.legacyLegacyMod.WebGLDataBuffer {
   def this(resource: WebGLBuffer) = this()
 }

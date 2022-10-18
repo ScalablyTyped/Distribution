@@ -14,7 +14,7 @@ open class PredicateCondition protected ()
     * @param predicate defines the predicate function used to validate the condition
     */
   def this(
-    actionManager: typings.babylonjs.actionManagerMod.ActionManager,
+    actionManager: typings.babylonjs.actionsActionManagerMod.ActionManager,
     /** defines the predicate function used to validate the condition */
   predicate: js.Function0[Boolean]
   ) = this()

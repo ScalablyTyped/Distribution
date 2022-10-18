@@ -1,6 +1,6 @@
 package typings.orbitUiReactComponents.anon
 
-import typings.orbitUiReactComponents.slotsMod.SlotElements
+import typings.orbitUiReactComponents.distSharedSrcSlotsMod.SlotElements
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

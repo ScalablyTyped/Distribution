@@ -1,7 +1,6 @@
 package typings.baseui
 
 import org.scalablytyped.runtime.Shortcut
-import typings.baseui.anon.`0`
 import typings.baseui.baseuiStrings.div
 import typings.baseui.blockTypesMod.BlockComponentType
 import typings.baseui.blockTypesMod.StyledBlockProps
@@ -28,9 +27,9 @@ object flexGridFlexGridMod extends Shortcut {
   trait FlexGridComponentType[D /* <: ElementType[Any] */] extends StObject {
     
     def apply[C /* <: ElementType[Any] */](
-      props: FlexGridProps[C] & (js.Object | `0`) & (Omit[
+      props: FlexGridProps[C] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<C> extends {  ref :infer R | undefined} ? {  ref :R | undefined} : {} */ js.Any) & (Omit[
           StyledBlockProps & ComponentProps[C], 
-          /* keyof baseui.baseui/flex-grid/types.FlexGridProps<react.react.ElementType<any>> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 71 */ Any
+          /* keyof baseui.baseui/flex-grid/types.FlexGridProps<react.react.ElementType<any>> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 71, starting with typings.baseui.baseuiStrings.flexGridColumnCount, typings.baseui.baseuiStrings.flexGridColumnGap, typings.baseui.baseuiStrings.flexGridRowGap */ Any
         ])
     ): Element = js.native
     

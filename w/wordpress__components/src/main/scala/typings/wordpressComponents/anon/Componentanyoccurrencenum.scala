@@ -184,6 +184,8 @@ trait Componentanyoccurrencenum extends StObject {
   // See: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/18365#issuecomment-351013257
   // Also, the ` | S` allows intellisense to not be dumbisense
   def setState[K /* <: /* keyof {} */ String */](): Unit = js.native
+  def setState[K /* <: /* keyof {} */ String */](state: js.Object | (Pick[js.Object, K])): Unit = js.native
+  def setState[K /* <: /* keyof {} */ String */](state: js.Object | (Pick[js.Object, K]), callback: js.Function0[Unit]): Unit = js.native
   def setState[K /* <: /* keyof {} */ String */](
     state: js.Function2[
       /* prevState */ js.Object, 
@@ -199,11 +201,7 @@ trait Componentanyoccurrencenum extends StObject {
     ],
     callback: js.Function0[Unit]
   ): Unit = js.native
-  def setState[K /* <: /* keyof {} */ String */](state: js.Object): Unit = js.native
-  def setState[K /* <: /* keyof {} */ String */](state: js.Object, callback: js.Function0[Unit]): Unit = js.native
   def setState[K /* <: /* keyof {} */ String */](state: Null, callback: js.Function0[Unit]): Unit = js.native
-  def setState[K /* <: /* keyof {} */ String */](state: Pick[js.Object, K]): Unit = js.native
-  def setState[K /* <: /* keyof {} */ String */](state: Pick[js.Object, K], callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * Called to determine whether the change in props and state should trigger a re-render.

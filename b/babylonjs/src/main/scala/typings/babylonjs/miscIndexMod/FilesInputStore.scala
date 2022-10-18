@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "FilesInputStore")
 @js.native
 open class FilesInputStore ()
-  extends typings.babylonjs.filesInputStoreMod.FilesInputStore
+  extends typings.babylonjs.miscFilesInputStoreMod.FilesInputStore
 /* static members */
 object FilesInputStore {
   

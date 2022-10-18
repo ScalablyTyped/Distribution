@@ -8,5 +8,5 @@ object UserActivitySet {
   
   @JSImport("matrix-appservice-bridge", "UserActivitySet.DEFAULT")
   @js.native
-  val DEFAULT: typings.matrixAppserviceBridge.userActivityMod.UserActivitySet = js.native
+  val DEFAULT: typings.matrixAppserviceBridge.libComponentsUserActivityMod.UserActivitySet = js.native
 }

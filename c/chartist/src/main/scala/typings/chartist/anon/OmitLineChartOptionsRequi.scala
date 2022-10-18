@@ -7,12 +7,12 @@ import typings.chartist.chartistStrings.position
 import typings.chartist.chartistStrings.scaleMinSpace
 import typings.chartist.chartistStrings.showGrid
 import typings.chartist.chartistStrings.showLabel
-import typings.chartist.coreTypesMod.AxisOptions
-import typings.chartist.coreTypesMod.Plugin
-import typings.chartist.coreTypesMod.SegmentData
-import typings.chartist.lineChartTypesMod.LineInterpolation
-import typings.chartist.svgMod.SvgPath
-import typings.chartist.utilsTypesMod.RequiredKeys
+import typings.chartist.distChartsLineChartLineChartDottypesMod.LineInterpolation
+import typings.chartist.distCoreTypesMod.AxisOptions
+import typings.chartist.distCoreTypesMod.Plugin
+import typings.chartist.distCoreTypesMod.SegmentData
+import typings.chartist.distSvgMod.SvgPath
+import typings.chartist.distUtilsTypesMod.RequiredKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

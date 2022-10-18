@@ -1,7 +1,7 @@
 package typings.reactNavigationNative.anon
 
 import typings.react.mod.ReactNode
-import typings.reactNavigationNative.useScrollToTopMod.ScrollableWrapper
+import typings.reactNavigationNative.libTypescriptSrcUseScrollToTopMod.ScrollableWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

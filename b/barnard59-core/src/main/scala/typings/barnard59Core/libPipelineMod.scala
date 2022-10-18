@@ -15,17 +15,17 @@ object libPipelineMod {
   
   @js.native
   trait Pipeline
-    extends typings.barnard59Core.streamObjectMod.default {
+    extends typings.barnard59Core.libStreamObjectMod.default {
     
     def destroy(err: js.Error): Unit = js.native
     
     def finish(): FnCall = js.native
     
-    def firstChild: typings.barnard59Core.streamObjectMod.default = js.native
+    def firstChild: typings.barnard59Core.libStreamObjectMod.default = js.native
     
     def init(): Unit = js.native
     
-    def lastChild: typings.barnard59Core.streamObjectMod.default = js.native
+    def lastChild: typings.barnard59Core.libStreamObjectMod.default = js.native
     
     def onInit(): Unit = js.native
     

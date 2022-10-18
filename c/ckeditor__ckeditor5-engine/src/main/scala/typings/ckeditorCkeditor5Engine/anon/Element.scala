@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.viewElementMod.default
+import typings.ckeditorCkeditor5Engine.srcViewElementMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,15 +15,11 @@ trait Element extends StObject {
   
   var text: String
   
-  var view: /* Couldn't translate: 'key not found: IArray(TsIdentLibraryScoped(ckeditor,ckeditor5-engine), TsIdentModule(Some(ckeditor),List(ckeditor5-engine, src, view, view)))' */ Any
+  var view: typings.ckeditorCkeditor5Engine.srcViewViewMod.View
 }
 object Element {
   
-  inline def apply(
-    element: default,
-    text: String,
-    view: /* Couldn't translate: 'key not found: IArray(TsIdentLibraryScoped(ckeditor,ckeditor5-engine), TsIdentModule(Some(ckeditor),List(ckeditor5-engine, src, view, view)))' */ Any
-  ): Element = {
+  inline def apply(element: default, text: String, view: typings.ckeditorCkeditor5Engine.srcViewViewMod.View): Element = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
@@ -42,8 +38,6 @@ object Element {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setView(
-      value: /* Couldn't translate: 'key not found: IArray(TsIdentLibraryScoped(ckeditor,ckeditor5-engine), TsIdentModule(Some(ckeditor),List(ckeditor5-engine, src, view, view)))' */ Any
-    ): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: typings.ckeditorCkeditor5Engine.srcViewViewMod.View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

@@ -1,69 +1,47 @@
 package typings.nivoCalendar.anon
 
-import typings.nivoCalendar.nivoCalendarStrings.horizontal
-import typings.nivoCalendar.nivoCalendarStrings.vertical
-import typings.nivoCalendar.typesMod.DateOrString
-import typings.nivoCore.mod.BoxAlign
+import typings.d3Scale.mod.ScaleQuantize_
+import typings.nivoCalendar.distTypesTypesMod.CalendarDatum
+import typings.nivoCalendar.distTypesTypesMod.ColorScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<std.Required<@nivo/calendar.@nivo/calendar/dist/types/types.CalendarSvgProps>, 'width' | 'height' | 'from' | 'to' | 'direction' | 'yearSpacing' | 'monthSpacing' | 'daySpacing' | 'align'> */
+/* Inlined std.Pick<std.Required<@nivo/calendar.@nivo/calendar/dist/types/types.CalendarSvgProps>, 'data' | 'emptyColor'> & {  colorScale :d3-scale.d3-scale.ScaleQuantize<string, never> | @nivo/calendar.@nivo/calendar/dist/types/types.ColorScale,   days :std.Array<std.Omit<@nivo/calendar.@nivo/calendar/dist/types/types.Datum, 'color' | 'data' | 'value'>>} */
 trait PickRequiredCalendarSvgPr extends StObject {
   
-  var align: BoxAlign
+  var colorScale: (ScaleQuantize_[String, scala.Nothing]) | ColorScale
   
-  var daySpacing: Double
+  var data: js.Array[CalendarDatum]
   
-  var direction: horizontal | vertical
+  var days: js.Array[OmitDatumcolordatavalue]
   
-  var from: DateOrString
-  
-  var height: Double
-  
-  var monthSpacing: Double
-  
-  var to: DateOrString
-  
-  var width: Double
-  
-  var yearSpacing: Double
+  var emptyColor: String
 }
 object PickRequiredCalendarSvgPr {
   
   inline def apply(
-    align: BoxAlign,
-    daySpacing: Double,
-    direction: horizontal | vertical,
-    from: DateOrString,
-    height: Double,
-    monthSpacing: Double,
-    to: DateOrString,
-    width: Double,
-    yearSpacing: Double
+    colorScale: (ScaleQuantize_[String, scala.Nothing]) | ColorScale,
+    data: js.Array[CalendarDatum],
+    days: js.Array[OmitDatumcolordatavalue],
+    emptyColor: String
   ): PickRequiredCalendarSvgPr = {
-    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], daySpacing = daySpacing.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], monthSpacing = monthSpacing.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], yearSpacing = yearSpacing.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colorScale = colorScale.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], emptyColor = emptyColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickRequiredCalendarSvgPr]
   }
   
   extension [Self <: PickRequiredCalendarSvgPr](x: Self) {
     
-    inline def setAlign(value: BoxAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setColorScale(value: (ScaleQuantize_[String, scala.Nothing]) | ColorScale): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
     
-    inline def setDaySpacing(value: Double): Self = StObject.set(x, "daySpacing", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[CalendarDatum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDataVarargs(value: CalendarDatum*): Self = StObject.set(x, "data", js.Array(value*))
     
-    inline def setFrom(value: DateOrString): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setDays(value: js.Array[OmitDatumcolordatavalue]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
-    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setDaysVarargs(value: OmitDatumcolordatavalue*): Self = StObject.set(x, "days", js.Array(value*))
     
-    inline def setMonthSpacing(value: Double): Self = StObject.set(x, "monthSpacing", value.asInstanceOf[js.Any])
-    
-    inline def setTo(value: DateOrString): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
-    
-    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setYearSpacing(value: Double): Self = StObject.set(x, "yearSpacing", value.asInstanceOf[js.Any])
+    inline def setEmptyColor(value: String): Self = StObject.set(x, "emptyColor", value.asInstanceOf[js.Any])
   }
 }

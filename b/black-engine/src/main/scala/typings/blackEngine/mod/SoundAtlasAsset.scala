@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "SoundAtlasAsset")
 @js.native
 open class SoundAtlasAsset protected ()
-  extends typings.blackEngine.soundAtlasAssetMod.SoundAtlasAsset {
+  extends typings.blackEngine.assetsSoundAtlasAssetMod.SoundAtlasAsset {
   def this(name: String, soundUrl: String, dataUrl: String) = this()
 }

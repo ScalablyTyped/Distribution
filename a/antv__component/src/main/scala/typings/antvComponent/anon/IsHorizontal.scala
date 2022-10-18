@@ -1,6 +1,6 @@
 package typings.antvComponent.anon
 
-import typings.antvComponent.scrollbarScrollbarMod.ScrollbarTheme
+import typings.antvComponent.libScrollbarScrollbarMod.ScrollbarTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__skip-nav
 
-Typings are for version 0.17.0
+Typings are for version 0.18.0
 
 ## Library description:
 Skip navigation links for screen reader and keyboard users.

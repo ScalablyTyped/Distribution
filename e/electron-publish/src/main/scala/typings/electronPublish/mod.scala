@@ -1,14 +1,14 @@
 package typings.electronPublish
 
-import typings.builderUtil.archMod.Arch
+import typings.builderUtil.outArchMod.Arch
 import typings.builderUtilRuntime.mod.CancellationToken
-import typings.builderUtilRuntime.publishOptionsMod.PublishProvider
-import typings.electronPublish.multiProgressMod.MultiProgress
-import typings.electronPublish.progressMod.ProgressBar
+import typings.builderUtilRuntime.outPublishOptionsMod.PublishProvider
+import typings.electronPublish.outMultiProgressMod.MultiProgress
+import typings.electronPublish.outProgressMod.ProgressBar
 import typings.fsExtra.mod.Stats
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.ClientRequest
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +19,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("electron-publish", "HttpPublisher")
+  /* note: abstract class */ @JSImport("electron-publish", "HttpPublisher")
   @js.native
-  abstract class HttpPublisher protected () extends Publisher {
+  open class HttpPublisher protected () extends Publisher {
     /* protected */ def this(context: PublishContext) = this()
     /* protected */ def this(context: PublishContext, useSafeArtifactName: Boolean) = this()
     
@@ -43,26 +43,26 @@ object mod {
   @JSImport("electron-publish", "ProgressCallback")
   @js.native
   open class ProgressCallback protected ()
-    extends typings.electronPublish.progressMod.ProgressCallback {
+    extends typings.electronPublish.outProgressMod.ProgressCallback {
     def this(progressBar: ProgressBar) = this()
   }
   
-  @JSImport("electron-publish", "Publisher")
+  /* note: abstract class */ @JSImport("electron-publish", "Publisher")
   @js.native
-  abstract class Publisher protected () extends StObject {
+  open class Publisher protected () extends StObject {
     /* protected */ def this(context: PublishContext) = this()
     
     /* protected */ val context: PublishContext = js.native
     
     /* protected */ def createProgressBar(fileName: String, size: Double): ProgressBar | Null = js.native
     
-    /* protected */ def createReadStreamAndProgressBar(file: String, fileStat: Stats, progressBar: Null, reject: js.Function1[/* error */ js.Error, Unit]): ReadableStream[Any] = js.native
+    /* protected */ def createReadStreamAndProgressBar(file: String, fileStat: Stats, progressBar: Null, reject: js.Function1[/* error */ js.Error, Unit]): ReadableStream = js.native
     /* protected */ def createReadStreamAndProgressBar(
       file: String,
       fileStat: Stats,
       progressBar: ProgressBar,
       reject: js.Function1[/* error */ js.Error, Unit]
-    ): ReadableStream[Any] = js.native
+    ): ReadableStream = js.native
     
     def providerName: PublishProvider = js.native
     

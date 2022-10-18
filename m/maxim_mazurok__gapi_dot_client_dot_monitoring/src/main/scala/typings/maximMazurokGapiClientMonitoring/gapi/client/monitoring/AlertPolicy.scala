@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,9 +60,7 @@ trait AlertPolicy extends StObject {
     * characters or 128 bytes, whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must begin with a letter.
     */
   var userLabels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.AlertPolicy & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Read-only description of how the alert policy is invalid. OK if the alert policy is valid. If not OK, the alert policy will not generate incidents. */
@@ -123,9 +120,7 @@ object AlertPolicy {
     inline def setNotificationChannelsVarargs(value: String*): Self = StObject.set(x, "notificationChannels", js.Array(value*))
     
     inline def setUserLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.AlertPolicy & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)

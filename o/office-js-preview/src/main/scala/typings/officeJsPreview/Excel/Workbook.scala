@@ -171,8 +171,7 @@ trait Workbook
     * Returns a `LinkedEntityCellValue` based on the provided `LinkedEntityId`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     *
     * @param linkedEntityCellValueId An identifier that specifies an individual `LinkedEntityCellValue`.
     */

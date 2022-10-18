@@ -2,7 +2,7 @@ package typings.reactNavigationStack.anon
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.reactNativeGestureHandler.anon.DelayLongPress
-import typings.reactNativeGestureHandler.gestureButtonsMod.BaseButtonProps
+import typings.reactNativeGestureHandler.libTypescriptComponentsGestureButtonsMod.BaseButtonProps
 import typings.reactNativeGestureHandler.mod.BaseButton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

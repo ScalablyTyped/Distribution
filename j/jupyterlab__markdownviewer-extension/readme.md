@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__markdownviewer-extension
 
-Typings are for version 2.2.6
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Markdown Renderer Extension
@@ -10,10 +10,10 @@ JupyterLab - Markdown Renderer Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/markdownviewer-extension |
 | Keywords           | - |
-| # releases         | 130 |
-| # dependents       | 1 |
-| # downloads        | 1456893 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 193188.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

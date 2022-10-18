@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Engines/index", "WebGPUCacheBindGroups")
 @js.native
 open class WebGPUCacheBindGroups protected ()
-  extends typings.babylonjs.webgpuCacheBindGroupsMod.WebGPUCacheBindGroups {
+  extends typings.babylonjs.enginesWebGPUWebgpuCacheBindGroupsMod.WebGPUCacheBindGroups {
   def this(
     device: GPUDevice,
-    cacheSampler: typings.babylonjs.webgpuCacheSamplerMod.WebGPUCacheSampler,
-    engine: typings.babylonjs.webgpuEngineMod.WebGPUEngine
+    cacheSampler: typings.babylonjs.enginesWebGPUWebgpuCacheSamplerMod.WebGPUCacheSampler,
+    engine: typings.babylonjs.enginesWebgpuEngineMod.WebGPUEngine
   ) = this()
 }
 /* static members */

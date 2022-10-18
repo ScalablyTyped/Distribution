@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait SslCertificateManagedSslCertificate extends StObject {
   
   /** [Output only] Detailed statuses of the domains specified for managed certificate resource. */
   var domainStatus: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.SslCertificateManagedSslCertificate & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -33,9 +30,7 @@ object SslCertificateManagedSslCertificate {
   extension [Self <: SslCertificateManagedSslCertificate](x: Self) {
     
     inline def setDomainStatus(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.SslCertificateManagedSslCertificate & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "domainStatus", value.asInstanceOf[js.Any])
     
     inline def setDomainStatusUndefined: Self = StObject.set(x, "domainStatus", js.undefined)

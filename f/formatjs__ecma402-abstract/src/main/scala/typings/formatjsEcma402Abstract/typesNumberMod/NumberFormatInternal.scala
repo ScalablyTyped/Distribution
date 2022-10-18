@@ -33,6 +33,8 @@ trait NumberFormatInternal
   
   var pl: PluralRules
   
+  var roundingMode: js.UndefOr[RoundingModeType] = js.undefined
+  
   var signDisplay: NumberFormatOptionsSignDisplay
   
   var style: NumberFormatOptionsStyle
@@ -41,7 +43,7 @@ trait NumberFormatInternal
   
   var unitDisplay: NumberFormatOptionsUnitDisplay
   
-  var useGrouping: Boolean
+  var useGrouping: js.UndefOr[UseGroupingType] = js.undefined
 }
 object NumberFormatInternal {
   
@@ -59,10 +61,9 @@ object NumberFormatInternal {
     roundingType: NumberFormatRoundingType,
     signDisplay: NumberFormatOptionsSignDisplay,
     style: NumberFormatOptionsStyle,
-    unitDisplay: NumberFormatOptionsUnitDisplay,
-    useGrouping: Boolean
+    unitDisplay: NumberFormatOptionsUnitDisplay
   ): NumberFormatInternal = {
-    val __obj = js.Dynamic.literal(compactDisplay = compactDisplay.asInstanceOf[js.Any], currencyDisplay = currencyDisplay.asInstanceOf[js.Any], currencySign = currencySign.asInstanceOf[js.Any], dataLocale = dataLocale.asInstanceOf[js.Any], dataLocaleData = dataLocaleData.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], minimumIntegerDigits = minimumIntegerDigits.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], pl = pl.asInstanceOf[js.Any], roundingType = roundingType.asInstanceOf[js.Any], signDisplay = signDisplay.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], unitDisplay = unitDisplay.asInstanceOf[js.Any], useGrouping = useGrouping.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(compactDisplay = compactDisplay.asInstanceOf[js.Any], currencyDisplay = currencyDisplay.asInstanceOf[js.Any], currencySign = currencySign.asInstanceOf[js.Any], dataLocale = dataLocale.asInstanceOf[js.Any], dataLocaleData = dataLocaleData.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], minimumIntegerDigits = minimumIntegerDigits.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], pl = pl.asInstanceOf[js.Any], roundingType = roundingType.asInstanceOf[js.Any], signDisplay = signDisplay.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], unitDisplay = unitDisplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFormatInternal]
   }
   
@@ -94,6 +95,10 @@ object NumberFormatInternal {
     
     inline def setPl(value: PluralRules): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
+    inline def setRoundingMode(value: RoundingModeType): Self = StObject.set(x, "roundingMode", value.asInstanceOf[js.Any])
+    
+    inline def setRoundingModeUndefined: Self = StObject.set(x, "roundingMode", js.undefined)
+    
     inline def setSignDisplay(value: NumberFormatOptionsSignDisplay): Self = StObject.set(x, "signDisplay", value.asInstanceOf[js.Any])
     
     inline def setStyle(value: NumberFormatOptionsStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
@@ -104,6 +109,8 @@ object NumberFormatInternal {
     
     inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    inline def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+    inline def setUseGrouping(value: UseGroupingType): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+    
+    inline def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
   }
 }

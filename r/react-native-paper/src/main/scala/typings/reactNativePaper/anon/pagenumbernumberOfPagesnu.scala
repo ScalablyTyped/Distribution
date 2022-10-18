@@ -420,7 +420,7 @@ trait pagenumbernumberOfPagesnu extends StObject {
     */
   var testID: js.UndefOr[String] = js.undefined
   
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
@@ -463,7 +463,7 @@ object pagenumbernumberOfPagesnu {
     numberOfPages: Double,
     onPageChange: Double => Unit,
     page: Double,
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   ): pagenumbernumberOfPagesnu = {
     val __obj = js.Dynamic.literal(numberOfPages = numberOfPages.asInstanceOf[js.Any], onPageChange = js.Any.fromFunction1(onPageChange), page = page.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[pagenumbernumberOfPagesnu]
@@ -775,7 +775,7 @@ object pagenumbernumberOfPagesnu {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     

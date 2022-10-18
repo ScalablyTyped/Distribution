@@ -1,7 +1,7 @@
 package typings.apollographqlGraphqlPlaygroundHtml
 
-import typings.apollographqlGraphqlPlaygroundHtml.renderPlaygroundPageMod.CursorShape
-import typings.apollographqlGraphqlPlaygroundHtml.renderPlaygroundPageMod.Theme
+import typings.apollographqlGraphqlPlaygroundHtml.distRenderPlaygroundPageMod.CursorShape
+import typings.apollographqlGraphqlPlaygroundHtml.distRenderPlaygroundPageMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

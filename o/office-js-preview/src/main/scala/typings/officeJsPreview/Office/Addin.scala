@@ -16,7 +16,7 @@ trait Addin extends StObject {
   /**
     * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
     * This API is only supported in Excel.
-    * 
+    *
     * @remarks
     * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
     * @beta

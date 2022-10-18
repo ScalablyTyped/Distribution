@@ -1,18 +1,19 @@
 package typings.grommet
 
-import typings.grommet.announceContextMod.AnnounceMode
-import typings.grommet.baseMod._DigitalTexts
-import typings.grommet.dataChartMod.GranularityType
-import typings.grommet.dataTableMod.ColumnSizeType
-import typings.grommet.dataTableMod.VerticalAlignType
-import typings.grommet.diagramMod.DiagramConnectionAnchor
-import typings.grommet.diagramMod.DiagramConnectionType
-import typings.grommet.diagramMod._DiagramAnimationType
-import typings.grommet.gridMod._GridSizeType
-import typings.grommet.layerMod.LayerPositionType
-import typings.grommet.listMod.SideType
-import typings.grommet.listMod._SizeType
-import typings.grommet.notificationMod.StatusType
+import typings.grommet.componentsDataChartMod.GranularityType
+import typings.grommet.componentsDataTableMod.ColumnSizeType
+import typings.grommet.componentsDataTableMod.VerticalAlignType
+import typings.grommet.componentsDiagramMod.DiagramConnectionAnchor
+import typings.grommet.componentsDiagramMod.DiagramConnectionType
+import typings.grommet.componentsDiagramMod._DiagramAnimationType
+import typings.grommet.componentsGridMod._GridSizeType
+import typings.grommet.componentsLayerMod.LayerPositionType
+import typings.grommet.componentsListMod.SideType
+import typings.grommet.componentsListMod._SizeType
+import typings.grommet.componentsNotificationMod.StatusType
+import typings.grommet.componentsVideoMod.controlsItems
+import typings.grommet.contextsAnnounceContextMod.AnnounceMode
+import typings.grommet.themesBaseMod._DigitalTexts
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.BoxSideType
 import typings.grommet.utilsMod.BoxStyleType
@@ -36,7 +37,6 @@ import typings.grommet.utilsMod._RoundType
 import typings.grommet.utilsMod._TShirtSizeType
 import typings.grommet.utilsMod._ThicknessType
 import typings.grommet.utilsMod._WidthType
-import typings.grommet.videoMod.controlsItems
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -163,16 +163,8 @@ object grommetStrings {
   inline def Australia: Australia = "Australia".asInstanceOf[Australia]
   
   @js.native
-  sealed trait DeepReadonly extends StObject
-  inline def DeepReadonly: DeepReadonly = "DeepReadonly".asInstanceOf[DeepReadonly]
-  
-  @js.native
   sealed trait Europe extends StObject
   inline def Europe: Europe = "Europe".asInstanceOf[Europe]
-  
-  @js.native
-  sealed trait NonUndefinedProps extends StObject
-  inline def NonUndefinedProps: NonUndefinedProps = "NonUndefinedProps".asInstanceOf[NonUndefinedProps]
   
   @js.native
   sealed trait `North America` extends StObject
@@ -181,10 +173,6 @@ object grommetStrings {
   @js.native
   sealed trait `South America` extends StObject
   inline def `South America`: `South America` = ("South America").asInstanceOf[`South America`]
-  
-  @js.native
-  sealed trait Text extends StObject
-  inline def Text: Text = "Text".asInstanceOf[Text]
   
   @js.native
   sealed trait _blank extends StObject
@@ -1924,16 +1912,16 @@ object grommetStrings {
   inline def template: template = "template".asInstanceOf[template]
   
   @js.native
+  sealed trait text
+    extends StObject
+       with _PolymorphicType
+  inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
   sealed trait textPath
     extends StObject
        with _PolymorphicType
   inline def textPath: textPath = "textPath".asInstanceOf[textPath]
-  
-  @js.native
-  sealed trait text_
-    extends StObject
-       with _PolymorphicType
-  inline def text_ : text_ = "text".asInstanceOf[text_]
   
   @js.native
   sealed trait textarea

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigquerydatatransfer
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,9 +59,7 @@ trait TransferConfig extends StObject {
     * Storage transfers are listed here: https://cloud.google.com/bigquery-transfer/docs/cloud-storage-transfer#bq
     */
   var params: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientBigquerydatatransfer.maximMazurokGapiClientBigquerydatatransferStrings.TransferConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -139,9 +136,7 @@ object TransferConfig {
     inline def setOwnerInfoUndefined: Self = StObject.set(x, "ownerInfo", js.undefined)
     
     inline def setParams(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientBigquerydatatransfer.maximMazurokGapiClientBigquerydatatransferStrings.TransferConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

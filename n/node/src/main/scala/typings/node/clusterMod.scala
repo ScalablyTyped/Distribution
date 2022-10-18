@@ -1,13 +1,14 @@
 package typings.node
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.Dict
 import typings.node.childProcessMod.MessageOptions
 import typings.node.childProcessMod.SendHandle
 import typings.node.childProcessMod.Serializable
 import typings.node.eventsMod.EventEmitterOptions
-import typings.node.nodeChildProcessMod.ChildProcess
-import typings.node.nodeNetMod.Server
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonchildProcessMod.ChildProcess
+import typings.node.nodeColonnetMod.Server
+import typings.node.nodeColonnetMod.Socket
 import typings.node.nodeStrings.disconnect
 import typings.node.nodeStrings.error
 import typings.node.nodeStrings.exit
@@ -560,9 +561,7 @@ object clusterMod extends Shortcut {
     
     val worker: js.UndefOr[Worker] = js.native
     
-    val workers: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<Worker> */ Any
-      ] = js.native
+    val workers: js.UndefOr[Dict[Worker]] = js.native
   }
   
   trait ClusterSettings extends StObject {

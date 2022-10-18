@@ -3,7 +3,7 @@ package typings.semanticUiReact.mod
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.menuHeaderMod.MenuHeaderProps
+import typings.semanticUiReact.distCommonjsCollectionsMenuMenuHeaderMod.MenuHeaderProps
 import typings.semanticUiReact.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

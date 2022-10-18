@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,7 @@ trait InAppProduct extends StObject {
   
   /** List of localized title and description data. Map key is the language of the localized data, as defined by BCP-47, e.g. "en-US". */
   var listings: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.androidpublisher.gapi.client.androidpublisher.InAppProductListing}
-    */ typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.InAppProduct & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.androidpublisher.gapi.client.androidpublisher.InAppProductListing} */ js.Any
   ] = js.undefined
   
   /** Details about taxes and legal compliance. Only applicable to managed products. */
@@ -34,9 +31,7 @@ trait InAppProduct extends StObject {
   
   /** Prices per buyer region. None of these can be zero, as in-app products are never free. Map key is region code, as defined by ISO 3166-2. */
   var prices: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.androidpublisher.gapi.client.androidpublisher.Price}
-    */ typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.InAppProduct & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.androidpublisher.gapi.client.androidpublisher.Price} */ js.Any
   ] = js.undefined
   
   /** The type of the product, e.g. a recurring subscription. */
@@ -79,9 +74,7 @@ object InAppProduct {
     inline def setGracePeriodUndefined: Self = StObject.set(x, "gracePeriod", js.undefined)
     
     inline def setListings(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.androidpublisher.gapi.client.androidpublisher.InAppProductListing}
-      */ typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.InAppProduct & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.androidpublisher.gapi.client.androidpublisher.InAppProductListing} */ js.Any
     ): Self = StObject.set(x, "listings", value.asInstanceOf[js.Any])
     
     inline def setListingsUndefined: Self = StObject.set(x, "listings", js.undefined)
@@ -95,9 +88,7 @@ object InAppProduct {
     inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
     inline def setPrices(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.androidpublisher.gapi.client.androidpublisher.Price}
-      */ typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.InAppProduct & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.androidpublisher.gapi.client.androidpublisher.Price} */ js.Any
     ): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
     inline def setPricesUndefined: Self = StObject.set(x, "prices", js.undefined)

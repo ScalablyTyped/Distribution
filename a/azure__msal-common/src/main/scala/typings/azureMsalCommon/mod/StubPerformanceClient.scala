@@ -1,6 +1,6 @@
 package typings.azureMsalCommon.mod
 
-import typings.azureMsalCommon.clientConfigurationMod.ApplicationTelemetry
+import typings.azureMsalCommon.distConfigClientConfigurationMod.ApplicationTelemetry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "StubPerformanceClient")
 @js.native
 open class StubPerformanceClient protected ()
-  extends typings.azureMsalCommon.stubPerformanceClientMod.StubPerformanceClient {
+  extends typings.azureMsalCommon.distTelemetryPerformanceStubPerformanceClientMod.StubPerformanceClient {
   /**
     * Creates an instance of PerformanceClient,
     * an abstract class containing core performance telemetry logic.
@@ -23,7 +23,7 @@ open class StubPerformanceClient protected ()
   def this(
     clientId: String,
     authority: String,
-    logger: typings.azureMsalCommon.loggerMod.Logger,
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger,
     libraryName: String,
     libraryVersion: String,
     applicationTelemetry: ApplicationTelemetry

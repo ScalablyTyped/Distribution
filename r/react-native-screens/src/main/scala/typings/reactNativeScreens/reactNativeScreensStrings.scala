@@ -1,12 +1,12 @@
 package typings.reactNativeScreens
 
-import typings.reactNativeScreens.typescriptTypesMod.BlurEffectTypes
-import typings.reactNativeScreens.typescriptTypesMod.HeaderSubviewTypes
-import typings.reactNativeScreens.typescriptTypesMod.ScreenOrientationTypes
-import typings.reactNativeScreens.typescriptTypesMod.ScreenReplaceTypes
-import typings.reactNativeScreens.typescriptTypesMod.StackAnimationTypes
-import typings.reactNativeScreens.typescriptTypesMod.StackPresentationTypes
-import typings.reactNativeScreens.typescriptTypesMod.SwipeDirectionTypes
+import typings.reactNativeScreens.libTypescriptTypesMod.BlurEffectTypes
+import typings.reactNativeScreens.libTypescriptTypesMod.HeaderSubviewTypes
+import typings.reactNativeScreens.libTypescriptTypesMod.ScreenOrientationTypes
+import typings.reactNativeScreens.libTypescriptTypesMod.ScreenReplaceTypes
+import typings.reactNativeScreens.libTypescriptTypesMod.StackAnimationTypes
+import typings.reactNativeScreens.libTypescriptTypesMod.StackPresentationTypes
+import typings.reactNativeScreens.libTypescriptTypesMod.SwipeDirectionTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

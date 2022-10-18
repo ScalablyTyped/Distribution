@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.System.ShutdownManager")
+/* note: abstract class */ @JSGlobal("Windows.System.ShutdownManager")
 @js.native
-abstract class ShutdownManager ()
+open class ShutdownManager ()
   extends StObject
      with typings.winrtUwp.Windows.System.ShutdownManager
 object ShutdownManager {

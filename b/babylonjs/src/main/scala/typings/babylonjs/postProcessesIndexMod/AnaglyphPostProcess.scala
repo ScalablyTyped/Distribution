@@ -1,8 +1,8 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "AnaglyphPostProcess")
 @js.native
 open class AnaglyphPostProcess protected ()
-  extends typings.babylonjs.anaglyphPostProcessMod.AnaglyphPostProcess {
+  extends typings.babylonjs.postProcessesAnaglyphPostProcessMod.AnaglyphPostProcess {
   /**
     * Creates a new AnaglyphPostProcess
     * @param name defines postprocess name

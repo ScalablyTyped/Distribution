@@ -1,9 +1,9 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.PrevMaxProp
-import typings.blueprintjsCore.numericInputMod.INumericInputState
-import typings.blueprintjsCore.numericInputMod.NumericInputProps
-import typings.blueprintjsCore.propsMod.HTMLInputProps
+import typings.blueprintjsCore.libEsmCommonPropsMod.HTMLInputProps
+import typings.blueprintjsCore.libEsmComponentsFormsNumericInputMod.INumericInputState
+import typings.blueprintjsCore.libEsmComponentsFormsNumericInputMod.NumericInputProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "NumericInput")
 @js.native
 open class NumericInput protected ()
-  extends typings.blueprintjsCore.componentsMod.NumericInput {
+  extends typings.blueprintjsCore.libEsmComponentsMod.NumericInput {
   def this(props: HTMLInputProps & NumericInputProps) = this()
   def this(props: HTMLInputProps & NumericInputProps, context: Any) = this()
 }

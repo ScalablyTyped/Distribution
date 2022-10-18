@@ -1,69 +1,97 @@
 package typings.pusherJs
 
+import typings.pusherJs.typesSrcCoreConnectionConnectionManagerOptionsMod.ConnectionManagerOptions
+import typings.pusherJs.typesSrcCoreOptionsMod.Options
+import typings.pusherJs.typesSrcCorePusherMod.Pusher
+import typings.pusherJs.typesSrcRuntimesInterfaceMod.Runtime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("faye-websocket", "Client")
+  @JSImport("pusher-js", JSImport.Default)
   @js.native
-  open class Client protected () extends StObject {
-    def this(url: String) = this()
+  open class default protected ()
+    extends typings.pusherJs.typesSrcCorePusherMod.default {
+    def this(app_key: String) = this()
+    def this(app_key: String, options: Options) = this()
+  }
+  /* static members */
+  object default {
     
-    def close(): Unit = js.native
-    def close(code: Double): Unit = js.native
-    def close(code: Double, reason: String): Unit = js.native
-    def close(code: Unit, reason: String): Unit = js.native
+    @JSImport("pusher-js", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    def onclose(event: CloseEvent): Unit = js.native
+    @JSImport("pusher-js", "default.DependenciesReceivers")
+    @js.native
+    def DependenciesReceivers: Any = js.native
+    inline def DependenciesReceivers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DependenciesReceivers")(x.asInstanceOf[js.Any])
     
-    def onmessage(event: MessageEvent): Unit = js.native
+    @JSImport("pusher-js", "default.Runtime")
+    @js.native
+    def Runtime: typings.pusherJs.typesSrcRuntimesInterfaceMod.Runtime = js.native
+    inline def Runtime_=(x: Runtime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Runtime")(x.asInstanceOf[js.Any])
     
-    def onopen(): Unit = js.native
+    @JSImport("pusher-js", "default.ScriptReceivers")
+    @js.native
+    def ScriptReceivers: Any = js.native
+    inline def ScriptReceivers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ScriptReceivers")(x.asInstanceOf[js.Any])
     
-    def send(data: String): Unit = js.native
+    @JSImport("pusher-js", "default.auth_callbacks")
+    @js.native
+    def auth_callbacks: Any = js.native
+    inline def auth_callbacks_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auth_callbacks")(x.asInstanceOf[js.Any])
+    
+    @JSImport("pusher-js", "default.getClientFeatures")
+    @js.native
+    def getClientFeatures: Any = js.native
+    inline def getClientFeatures_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getClientFeatures")(x.asInstanceOf[js.Any])
+    
+    @JSImport("pusher-js", "default.instances")
+    @js.native
+    def instances: js.Array[Pusher] = js.native
+    inline def instances_=(x: js.Array[Pusher]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instances")(x.asInstanceOf[js.Any])
+    
+    @JSImport("pusher-js", "default.isReady")
+    @js.native
+    def isReady: Boolean = js.native
+    inline def isReady_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isReady")(x.asInstanceOf[js.Any])
+    
+    inline def log(message: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @JSImport("pusher-js", "default.logToConsole")
+    @js.native
+    def logToConsole: Boolean = js.native
+    inline def logToConsole_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logToConsole")(x.asInstanceOf[js.Any])
+    
+    inline def ready(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")().asInstanceOf[Unit]
   }
   
-  trait CloseEvent extends StObject {
-    
-    var code: Double
-    
-    var reason: String
-    
-    var wasClean: Boolean
-  }
-  object CloseEvent {
-    
-    inline def apply(code: Double, reason: String, wasClean: Boolean): CloseEvent = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], wasClean = wasClean.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CloseEvent]
-    }
-    
-    extension [Self <: CloseEvent](x: Self) {
-      
-      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-      
-      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
-      
-      inline def setWasClean(value: Boolean): Self = StObject.set(x, "wasClean", value.asInstanceOf[js.Any])
-    }
+  @JSImport("pusher-js", "Channel")
+  @js.native
+  open class Channel protected ()
+    extends typings.pusherJs.typesSrcCoreChannelsChannelMod.default {
+    def this(name: String, pusher: typings.pusherJs.typesSrcCorePusherMod.default) = this()
   }
   
-  trait MessageEvent extends StObject {
-    
-    var data: Any
+  @JSImport("pusher-js", "ConnectionManager")
+  @js.native
+  open class ConnectionManager protected ()
+    extends typings.pusherJs.typesSrcCoreConnectionConnectionManagerMod.default {
+    def this(key: String, options: ConnectionManagerOptions) = this()
   }
-  object MessageEvent {
-    
-    inline def apply(data: Any): MessageEvent = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MessageEvent]
-    }
-    
-    extension [Self <: MessageEvent](x: Self) {
-      
-      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    }
+  
+  @JSImport("pusher-js", "Members")
+  @js.native
+  open class Members ()
+    extends typings.pusherJs.typesSrcCoreChannelsMembersMod.default
+  
+  @JSImport("pusher-js", "PresenceChannel")
+  @js.native
+  open class PresenceChannel protected ()
+    extends typings.pusherJs.typesSrcCoreChannelsPresenceChannelMod.default {
+    def this(name: String, pusher: typings.pusherJs.typesSrcCorePusherMod.default) = this()
   }
 }

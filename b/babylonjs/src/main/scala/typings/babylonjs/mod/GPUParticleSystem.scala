@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "GPUParticleSystem")
 @js.native
 open class GPUParticleSystem protected ()
-  extends typings.babylonjs.legacyMod.GPUParticleSystem {
+  extends typings.babylonjs.legacyLegacyMod.GPUParticleSystem {
+  def this(
+    name: String,
+    options: Partialcapacitynumberrand,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine
+  ) = this()
   /**
     * Instantiates a GPU particle system.
     * Particles are often small sprites used to simulate hard-to-reproduce phenomena like fire, smoke, water, or abstract visual effects like magic glitter and faery dust.
@@ -23,19 +28,28 @@ open class GPUParticleSystem protected ()
   def this(
     name: String,
     options: Partialcapacitynumberrand,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    customEffect: Nullable[typings.babylonjs.materialsEffectMod.Effect]
   ) = this()
   def this(
     name: String,
     options: Partialcapacitynumberrand,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
-    customEffect: Nullable[typings.babylonjs.effectMod.Effect]
+    customEffect: Nullable[typings.babylonjs.materialsEffectMod.Effect]
   ) = this()
   def this(
     name: String,
     options: Partialcapacitynumberrand,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    customEffect: Nullable[typings.babylonjs.effectMod.Effect]
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    customEffect: Unit,
+    isAnimationSheetEnabled: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Partialcapacitynumberrand,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    customEffect: Nullable[typings.babylonjs.materialsEffectMod.Effect],
+    isAnimationSheetEnabled: Boolean
   ) = this()
   def this(
     name: String,
@@ -48,21 +62,7 @@ open class GPUParticleSystem protected ()
     name: String,
     options: Partialcapacitynumberrand,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
-    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
-    isAnimationSheetEnabled: Boolean
-  ) = this()
-  def this(
-    name: String,
-    options: Partialcapacitynumberrand,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    customEffect: Unit,
-    isAnimationSheetEnabled: Boolean
-  ) = this()
-  def this(
-    name: String,
-    options: Partialcapacitynumberrand,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    customEffect: Nullable[typings.babylonjs.effectMod.Effect],
+    customEffect: Nullable[typings.babylonjs.materialsEffectMod.Effect],
     isAnimationSheetEnabled: Boolean
   ) = this()
 }
@@ -73,6 +73,31 @@ object GPUParticleSystem {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def Parse(
+    parsedParticleSystem: Any,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    rootUrl: String
+  ): typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem]
+  inline def Parse(
+    parsedParticleSystem: Any,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    rootUrl: String,
+    doNotStart: Boolean
+  ): typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem]
+  inline def Parse(
+    parsedParticleSystem: Any,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    rootUrl: String,
+    doNotStart: Boolean,
+    capacity: Double
+  ): typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem]
+  inline def Parse(
+    parsedParticleSystem: Any,
+    sceneOrEngine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    rootUrl: String,
+    doNotStart: Unit,
+    capacity: Double
+  ): typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem]
   /**
     * Parses a JSON object to create a GPU particle system.
     * @param parsedParticleSystem The JSON object to parse
@@ -82,52 +107,27 @@ object GPUParticleSystem {
     * @param capacity defines the system capacity (if null or undefined the sotred capacity will be used)
     * @returns the parsed GPU particle system
     */
-  inline def Parse(parsedParticleSystem: Any, sceneOrEngine: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem]
+  inline def Parse(parsedParticleSystem: Any, sceneOrEngine: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem]
   inline def Parse(
     parsedParticleSystem: Any,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
     doNotStart: Boolean
-  ): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem]
+  ): typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem]
   inline def Parse(
     parsedParticleSystem: Any,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
     doNotStart: Boolean,
     capacity: Double
-  ): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem]
+  ): typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem]
   inline def Parse(
     parsedParticleSystem: Any,
     sceneOrEngine: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
     doNotStart: Unit,
     capacity: Double
-  ): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem]
-  inline def Parse(
-    parsedParticleSystem: Any,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    rootUrl: String
-  ): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem]
-  inline def Parse(
-    parsedParticleSystem: Any,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    rootUrl: String,
-    doNotStart: Boolean
-  ): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem]
-  inline def Parse(
-    parsedParticleSystem: Any,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    rootUrl: String,
-    doNotStart: Boolean,
-    capacity: Double
-  ): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem]
-  inline def Parse(
-    parsedParticleSystem: Any,
-    sceneOrEngine: typings.babylonjs.thinEngineMod.ThinEngine,
-    rootUrl: String,
-    doNotStart: Unit,
-    capacity: Double
-  ): typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem]
+  ): typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem]
   
   /**
     * @internal

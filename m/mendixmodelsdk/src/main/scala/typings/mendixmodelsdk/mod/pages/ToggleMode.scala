@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.ToggleMode")
 @js.native
 open class ToggleMode protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.ToggleMode {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.ToggleMode {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object ToggleMode {
@@ -20,30 +20,30 @@ object ToggleMode {
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ToggleMode.None")
   @js.native
-  def None: typings.mendixmodelsdk.pagesMod.pages.ToggleMode = js.native
-  inline def None_=(x: typings.mendixmodelsdk.pagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  def None: typings.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode = js.native
+  inline def None_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ToggleMode.PushContentAside")
   @js.native
-  def PushContentAside: typings.mendixmodelsdk.pagesMod.pages.ToggleMode = js.native
-  inline def PushContentAside_=(x: typings.mendixmodelsdk.pagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PushContentAside")(x.asInstanceOf[js.Any])
+  def PushContentAside: typings.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode = js.native
+  inline def PushContentAside_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PushContentAside")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ToggleMode.ShrinkContentInitiallyClosed")
   @js.native
-  def ShrinkContentInitiallyClosed: typings.mendixmodelsdk.pagesMod.pages.ToggleMode = js.native
-  inline def ShrinkContentInitiallyClosed_=(x: typings.mendixmodelsdk.pagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShrinkContentInitiallyClosed")(x.asInstanceOf[js.Any])
+  def ShrinkContentInitiallyClosed: typings.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode = js.native
+  inline def ShrinkContentInitiallyClosed_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShrinkContentInitiallyClosed")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ToggleMode.ShrinkContentInitiallyOpen")
   @js.native
-  def ShrinkContentInitiallyOpen: typings.mendixmodelsdk.pagesMod.pages.ToggleMode = js.native
-  inline def ShrinkContentInitiallyOpen_=(x: typings.mendixmodelsdk.pagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShrinkContentInitiallyOpen")(x.asInstanceOf[js.Any])
+  def ShrinkContentInitiallyOpen: typings.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode = js.native
+  inline def ShrinkContentInitiallyOpen_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShrinkContentInitiallyOpen")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ToggleMode.SlideOverContent")
   @js.native
-  def SlideOverContent: typings.mendixmodelsdk.pagesMod.pages.ToggleMode = js.native
-  inline def SlideOverContent_=(x: typings.mendixmodelsdk.pagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SlideOverContent")(x.asInstanceOf[js.Any])
+  def SlideOverContent: typings.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode = js.native
+  inline def SlideOverContent_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SlideOverContent")(x.asInstanceOf[js.Any])
 }

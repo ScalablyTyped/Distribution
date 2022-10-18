@@ -1,19 +1,19 @@
 package typings.jupyterlabServices
 
-import typings.jupyterlabServices.builderMod.BuildManager
-import typings.jupyterlabServices.contentsMod.Contents.IDrive
-import typings.jupyterlabServices.contentsMod.ContentsManager
-import typings.jupyterlabServices.kernelspecMod.KernelSpecManager
+import typings.jupyterlabServices.libBuilderMod.BuildManager
+import typings.jupyterlabServices.libContentsMod.Contents.IDrive
+import typings.jupyterlabServices.libContentsMod.ContentsManager
+import typings.jupyterlabServices.libKernelspecMod.KernelSpecManager
 import typings.jupyterlabServices.libManagerMod.ServiceManager.IManager
 import typings.jupyterlabServices.libManagerMod.ServiceManager.IOptions
-import typings.jupyterlabServices.nbconvertMod.NbConvertManager
-import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
-import typings.jupyterlabServices.sessionMod.SessionManager
-import typings.jupyterlabServices.settingMod.SettingManager
-import typings.jupyterlabServices.terminalMod.TerminalManager
-import typings.jupyterlabServices.workspaceMod.WorkspaceManager
+import typings.jupyterlabServices.libNbconvertMod.NbConvertManager
+import typings.jupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
+import typings.jupyterlabServices.libSessionMod.SessionManager
+import typings.jupyterlabServices.libSettingMod.SettingManager
+import typings.jupyterlabServices.libTerminalMod.TerminalManager
+import typings.jupyterlabServices.libWorkspaceMod.WorkspaceManager
 import typings.luminoDisposable.mod.IDisposable
-import typings.luminoPolling.pollMod.Poll.Standby
+import typings.luminoPolling.typesPollMod.Poll.Standby
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,7 +45,7 @@ object libManagerMod {
       * The builder for the manager.
       */
     /* CompleteClass */
-    override val builder: typings.jupyterlabServices.builderMod.Builder.IManager = js.native
+    override val builder: typings.jupyterlabServices.libBuilderMod.Builder.IManager = js.native
     /**
       * The builder for the manager.
       */
@@ -67,7 +67,7 @@ object libManagerMod {
       * The contents manager for the manager.
       */
     /* CompleteClass */
-    override val contents: typings.jupyterlabServices.contentsMod.Contents.IManager = js.native
+    override val contents: typings.jupyterlabServices.libContentsMod.Contents.IManager = js.native
     /**
       * Get the contents manager instance.
       */
@@ -117,7 +117,7 @@ object libManagerMod {
       * The session manager for the manager.
       */
     /* CompleteClass */
-    override val kernelspecs: typings.jupyterlabServices.kernelspecKernelspecMod.IManager = js.native
+    override val kernelspecs: typings.jupyterlabServices.libKernelspecKernelspecMod.IManager = js.native
     /**
       * Get the session manager instance.
       */
@@ -128,7 +128,7 @@ object libManagerMod {
       * The nbconvert manager for the manager.
       */
     /* CompleteClass */
-    override val nbconvert: typings.jupyterlabServices.nbconvertMod.NbConvert.IManager = js.native
+    override val nbconvert: typings.jupyterlabServices.libNbconvertMod.NbConvert.IManager = js.native
     /**
       * Get the nbconvert manager instance.
       */
@@ -156,7 +156,7 @@ object libManagerMod {
       * The session manager for the manager.
       */
     /* CompleteClass */
-    override val sessions: typings.jupyterlabServices.sessionSessionMod.IManager = js.native
+    override val sessions: typings.jupyterlabServices.libSessionSessionMod.IManager = js.native
     /**
       * Get the session manager instance.
       */
@@ -167,7 +167,7 @@ object libManagerMod {
       * The setting manager for the manager.
       */
     /* CompleteClass */
-    override val settings: typings.jupyterlabServices.settingMod.Setting.IManager = js.native
+    override val settings: typings.jupyterlabServices.libSettingMod.Setting.IManager = js.native
     /**
       * Get the setting manager instance.
       */
@@ -178,7 +178,7 @@ object libManagerMod {
       * The terminals manager for the manager.
       */
     /* CompleteClass */
-    override val terminals: typings.jupyterlabServices.terminalTerminalMod.IManager = js.native
+    override val terminals: typings.jupyterlabServices.libTerminalTerminalMod.IManager = js.native
     /**
       * Get the terminal manager instance.
       */
@@ -189,7 +189,7 @@ object libManagerMod {
       * The workspace manager for the manager.
       */
     /* CompleteClass */
-    override val workspaces: typings.jupyterlabServices.workspaceMod.Workspace.IManager = js.native
+    override val workspaces: typings.jupyterlabServices.libWorkspaceMod.Workspace.IManager = js.native
     /**
       * Get the workspace manager instance.
       */
@@ -208,7 +208,7 @@ object libManagerMod {
       /**
         * The builder for the manager.
         */
-      val builder: typings.jupyterlabServices.builderMod.Builder.IManager
+      val builder: typings.jupyterlabServices.libBuilderMod.Builder.IManager
       
       /**
         * A signal emitted when there is a connection failure with the server.
@@ -218,7 +218,7 @@ object libManagerMod {
       /**
         * The contents manager for the manager.
         */
-      val contents: typings.jupyterlabServices.contentsMod.Contents.IManager
+      val contents: typings.jupyterlabServices.libContentsMod.Contents.IManager
       
       /**
         * Test whether the manager is ready.
@@ -228,12 +228,12 @@ object libManagerMod {
       /**
         * The session manager for the manager.
         */
-      val kernelspecs: typings.jupyterlabServices.kernelspecKernelspecMod.IManager
+      val kernelspecs: typings.jupyterlabServices.libKernelspecKernelspecMod.IManager
       
       /**
         * The nbconvert manager for the manager.
         */
-      val nbconvert: typings.jupyterlabServices.nbconvertMod.NbConvert.IManager
+      val nbconvert: typings.jupyterlabServices.libNbconvertMod.NbConvert.IManager
       
       /**
         * A promise that fulfills when the manager is initially ready.
@@ -248,40 +248,40 @@ object libManagerMod {
       /**
         * The session manager for the manager.
         */
-      val sessions: typings.jupyterlabServices.sessionSessionMod.IManager
+      val sessions: typings.jupyterlabServices.libSessionSessionMod.IManager
       
       /**
         * The setting manager for the manager.
         */
-      val settings: typings.jupyterlabServices.settingMod.Setting.IManager
+      val settings: typings.jupyterlabServices.libSettingMod.Setting.IManager
       
       /**
         * The terminals manager for the manager.
         */
-      val terminals: typings.jupyterlabServices.terminalTerminalMod.IManager
+      val terminals: typings.jupyterlabServices.libTerminalTerminalMod.IManager
       
       /**
         * The workspace manager for the manager.
         */
-      val workspaces: typings.jupyterlabServices.workspaceMod.Workspace.IManager
+      val workspaces: typings.jupyterlabServices.libWorkspaceMod.Workspace.IManager
     }
     object IManager {
       
       inline def apply(
-        builder: typings.jupyterlabServices.builderMod.Builder.IManager,
+        builder: typings.jupyterlabServices.libBuilderMod.Builder.IManager,
         connectionFailure: ISignal[IManager, js.Error],
-        contents: typings.jupyterlabServices.contentsMod.Contents.IManager,
+        contents: typings.jupyterlabServices.libContentsMod.Contents.IManager,
         dispose: () => Unit,
         isDisposed: Boolean,
         isReady: Boolean,
-        kernelspecs: typings.jupyterlabServices.kernelspecKernelspecMod.IManager,
-        nbconvert: typings.jupyterlabServices.nbconvertMod.NbConvert.IManager,
+        kernelspecs: typings.jupyterlabServices.libKernelspecKernelspecMod.IManager,
+        nbconvert: typings.jupyterlabServices.libNbconvertMod.NbConvert.IManager,
         ready: js.Promise[Unit],
         serverSettings: ISettings,
-        sessions: typings.jupyterlabServices.sessionSessionMod.IManager,
-        settings: typings.jupyterlabServices.settingMod.Setting.IManager,
-        terminals: typings.jupyterlabServices.terminalTerminalMod.IManager,
-        workspaces: typings.jupyterlabServices.workspaceMod.Workspace.IManager
+        sessions: typings.jupyterlabServices.libSessionSessionMod.IManager,
+        settings: typings.jupyterlabServices.libSettingMod.Setting.IManager,
+        terminals: typings.jupyterlabServices.libTerminalTerminalMod.IManager,
+        workspaces: typings.jupyterlabServices.libWorkspaceMod.Workspace.IManager
       ): IManager = {
         val __obj = js.Dynamic.literal(builder = builder.asInstanceOf[js.Any], connectionFailure = connectionFailure.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], isReady = isReady.asInstanceOf[js.Any], kernelspecs = kernelspecs.asInstanceOf[js.Any], nbconvert = nbconvert.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], serverSettings = serverSettings.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], terminals = terminals.asInstanceOf[js.Any], workspaces = workspaces.asInstanceOf[js.Any])
         __obj.asInstanceOf[IManager]
@@ -289,29 +289,29 @@ object libManagerMod {
       
       extension [Self <: IManager](x: Self) {
         
-        inline def setBuilder(value: typings.jupyterlabServices.builderMod.Builder.IManager): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
+        inline def setBuilder(value: typings.jupyterlabServices.libBuilderMod.Builder.IManager): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
         
         inline def setConnectionFailure(value: ISignal[IManager, js.Error]): Self = StObject.set(x, "connectionFailure", value.asInstanceOf[js.Any])
         
-        inline def setContents(value: typings.jupyterlabServices.contentsMod.Contents.IManager): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+        inline def setContents(value: typings.jupyterlabServices.libContentsMod.Contents.IManager): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
         
         inline def setIsReady(value: Boolean): Self = StObject.set(x, "isReady", value.asInstanceOf[js.Any])
         
-        inline def setKernelspecs(value: typings.jupyterlabServices.kernelspecKernelspecMod.IManager): Self = StObject.set(x, "kernelspecs", value.asInstanceOf[js.Any])
+        inline def setKernelspecs(value: typings.jupyterlabServices.libKernelspecKernelspecMod.IManager): Self = StObject.set(x, "kernelspecs", value.asInstanceOf[js.Any])
         
-        inline def setNbconvert(value: typings.jupyterlabServices.nbconvertMod.NbConvert.IManager): Self = StObject.set(x, "nbconvert", value.asInstanceOf[js.Any])
+        inline def setNbconvert(value: typings.jupyterlabServices.libNbconvertMod.NbConvert.IManager): Self = StObject.set(x, "nbconvert", value.asInstanceOf[js.Any])
         
         inline def setReady(value: js.Promise[Unit]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
         
         inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
         
-        inline def setSessions(value: typings.jupyterlabServices.sessionSessionMod.IManager): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
+        inline def setSessions(value: typings.jupyterlabServices.libSessionSessionMod.IManager): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
         
-        inline def setSettings(value: typings.jupyterlabServices.settingMod.Setting.IManager): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+        inline def setSettings(value: typings.jupyterlabServices.libSettingMod.Setting.IManager): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
         
-        inline def setTerminals(value: typings.jupyterlabServices.terminalTerminalMod.IManager): Self = StObject.set(x, "terminals", value.asInstanceOf[js.Any])
+        inline def setTerminals(value: typings.jupyterlabServices.libTerminalTerminalMod.IManager): Self = StObject.set(x, "terminals", value.asInstanceOf[js.Any])
         
-        inline def setWorkspaces(value: typings.jupyterlabServices.workspaceMod.Workspace.IManager): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
+        inline def setWorkspaces(value: typings.jupyterlabServices.libWorkspaceMod.Workspace.IManager): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
       }
     }
     

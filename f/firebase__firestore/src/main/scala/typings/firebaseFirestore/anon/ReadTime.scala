@@ -1,6 +1,6 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.utilHelpersMod.TestSnapshotVersion
+import typings.firebaseFirestore.distFirestoreTestUtilHelpersMod.TestSnapshotVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

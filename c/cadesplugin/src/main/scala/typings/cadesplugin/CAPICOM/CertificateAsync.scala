@@ -1,102 +1,90 @@
 package typings.cadesplugin.CAPICOM
 
-import org.scalablytyped.runtime.TopLevel
-import typings.cadesplugin.CADESCommon.PromisifiedFunction
-import typings.cadesplugin.CADESCommon.Unpacked
-import typings.cadesplugin.CADESCommon.ValuesOf
-import typings.cadesplugin.CADESCommon.VarDate
-import typings.cadesplugin.CADESCommon._Unpacked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAPICOM.Certificate> */
-trait CertificateAsync
-  extends StObject
-     with _Unpacked[Any] {
+trait CertificateAsync extends StObject {
   
-  val Display: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[Unit]]]) | PromisifiedFunction[js.Function0[Unit]]
+  val Display: /* import warning: importer.ImportType#apply Failed type conversion: (): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): void> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): void>> */ js.Any
   
-  val Export: (// tslint:disable-line ban-types
-  js.Promise[
-    Unpacked[js.Function1[/* EncodingType */ ValuesOf[CAPICOM_ENCODING_TYPE], String]]
-  ]) | (PromisifiedFunction[js.Function1[/* EncodingType */ ValuesOf[CAPICOM_ENCODING_TYPE], String]])
+  val Export: /* import warning: importer.ImportType#apply Failed type conversion: (EncodingType : cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAPICOM.CAPICOM_ENCODING_TYPE>): string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(EncodingType : cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAPICOM.CAPICOM_ENCODING_TYPE>): string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(EncodingType : cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAPICOM.CAPICOM_ENCODING_TYPE>): string>> */ js.Any
   
-  val ExtendedKeyUsage: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[typings.cadesplugin.CAPICOM.ExtendedKeyUsage]]]) | PromisifiedFunction[js.Function0[typings.cadesplugin.CAPICOM.ExtendedKeyUsage]]
+  val ExtendedKeyUsage: /* import warning: importer.ImportType#apply Failed type conversion: (): cadesplugin.CAPICOM.ExtendedKeyUsage extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): cadesplugin.CAPICOM.ExtendedKeyUsage> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): cadesplugin.CAPICOM.ExtendedKeyUsage>> */ js.Any
   
-  val GetInfo: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function1[/* infoType */ CAPICOM_CERT_INFO_TYPE, String]]]) | (PromisifiedFunction[js.Function1[/* infoType */ CAPICOM_CERT_INFO_TYPE, String]])
+  val GetInfo: /* import warning: importer.ImportType#apply Failed type conversion: (infoType : cadesplugin.CAPICOM.CAPICOM_CERT_INFO_TYPE): string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(infoType : cadesplugin.CAPICOM.CAPICOM_CERT_INFO_TYPE): string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(infoType : cadesplugin.CAPICOM.CAPICOM_CERT_INFO_TYPE): string>> */ js.Any
   
-  val HasPrivateKey: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[Boolean]]]) | PromisifiedFunction[js.Function0[Boolean]]
+  val HasPrivateKey: /* import warning: importer.ImportType#apply Failed type conversion: (): boolean extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): boolean> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): boolean>> */ js.Any
   
-  val IsValid: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[CertificateStatus]]]) | PromisifiedFunction[js.Function0[CertificateStatus]]
+  val IsValid: /* import warning: importer.ImportType#apply Failed type conversion: (): cadesplugin.CAPICOM.CertificateStatus extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): cadesplugin.CAPICOM.CertificateStatus> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): cadesplugin.CAPICOM.CertificateStatus>> */ js.Any
   
-  val IssuerName: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+  val IssuerName: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
   
-  val PrivateKey: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[typings.cadesplugin.CAPICOM.PrivateKey]]) | PromisifiedFunction[typings.cadesplugin.CAPICOM.PrivateKey]
+  val PrivateKey: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.PrivateKey extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.PrivateKey> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.PrivateKey>> */ js.Any
   
-  val PublicKey: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[typings.cadesplugin.CAPICOM.PublicKey]]]) | PromisifiedFunction[js.Function0[typings.cadesplugin.CAPICOM.PublicKey]]
+  val PublicKey: /* import warning: importer.ImportType#apply Failed type conversion: (): cadesplugin.CAPICOM.PublicKey extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): cadesplugin.CAPICOM.PublicKey> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): cadesplugin.CAPICOM.PublicKey>> */ js.Any
   
-  val SerialNumber: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+  val SerialNumber: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
   
-  val SubjectName: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+  val SubjectName: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
   
-  val Thumbprint: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+  val Thumbprint: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
   
-  val ValidFromDate: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[VarDate]]) | PromisifiedFunction[VarDate]
+  val ValidFromDate: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CADES_Common.VarDate extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CADES_Common.VarDate> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CADES_Common.VarDate>> */ js.Any
   
-  val ValidToDate: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[VarDate]]) | PromisifiedFunction[VarDate]
+  val ValidToDate: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CADES_Common.VarDate extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CADES_Common.VarDate> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CADES_Common.VarDate>> */ js.Any
   
-  val Version: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+  val Version: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
 }
 object CertificateAsync {
   
   inline def apply(
-    Display: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[Unit]]]) | PromisifiedFunction[js.Function0[Unit]],
-    Export: (// tslint:disable-line ban-types
-  js.Promise[
-      Unpacked[js.Function1[/* EncodingType */ ValuesOf[CAPICOM_ENCODING_TYPE], String]]
-    ]) | (PromisifiedFunction[js.Function1[/* EncodingType */ ValuesOf[CAPICOM_ENCODING_TYPE], String]]),
-    ExtendedKeyUsage: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[ExtendedKeyUsage]]]) | PromisifiedFunction[js.Function0[ExtendedKeyUsage]],
-    GetInfo: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function1[/* infoType */ CAPICOM_CERT_INFO_TYPE, String]]]) | (PromisifiedFunction[js.Function1[/* infoType */ CAPICOM_CERT_INFO_TYPE, String]]),
-    HasPrivateKey: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[Boolean]]]) | PromisifiedFunction[js.Function0[Boolean]],
-    IsValid: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[CertificateStatus]]]) | PromisifiedFunction[js.Function0[CertificateStatus]],
-    IssuerName: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
-    PrivateKey: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[PrivateKey]]) | PromisifiedFunction[PrivateKey],
-    PublicKey: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[PublicKey]]]) | PromisifiedFunction[js.Function0[PublicKey]],
-    SerialNumber: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
-    SubjectName: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
-    Thumbprint: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
-    ValidFromDate: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[VarDate]]) | PromisifiedFunction[VarDate],
-    ValidToDate: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[VarDate]]) | PromisifiedFunction[VarDate],
-    Version: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+    Display: /* import warning: importer.ImportType#apply Failed type conversion: (): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): void> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): void>> */ js.Any,
+    Export: /* import warning: importer.ImportType#apply Failed type conversion: (EncodingType : cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAPICOM.CAPICOM_ENCODING_TYPE>): string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(EncodingType : cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAPICOM.CAPICOM_ENCODING_TYPE>): string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(EncodingType : cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAPICOM.CAPICOM_ENCODING_TYPE>): string>> */ js.Any,
+    ExtendedKeyUsage: /* import warning: importer.ImportType#apply Failed type conversion: (): cadesplugin.CAPICOM.ExtendedKeyUsage extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): cadesplugin.CAPICOM.ExtendedKeyUsage> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): cadesplugin.CAPICOM.ExtendedKeyUsage>> */ js.Any,
+    GetInfo: /* import warning: importer.ImportType#apply Failed type conversion: (infoType : cadesplugin.CAPICOM.CAPICOM_CERT_INFO_TYPE): string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(infoType : cadesplugin.CAPICOM.CAPICOM_CERT_INFO_TYPE): string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(infoType : cadesplugin.CAPICOM.CAPICOM_CERT_INFO_TYPE): string>> */ js.Any,
+    HasPrivateKey: /* import warning: importer.ImportType#apply Failed type conversion: (): boolean extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): boolean> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): boolean>> */ js.Any,
+    IsValid: /* import warning: importer.ImportType#apply Failed type conversion: (): cadesplugin.CAPICOM.CertificateStatus extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): cadesplugin.CAPICOM.CertificateStatus> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): cadesplugin.CAPICOM.CertificateStatus>> */ js.Any,
+    IssuerName: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any,
+    PrivateKey: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.PrivateKey extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.PrivateKey> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.PrivateKey>> */ js.Any,
+    PublicKey: /* import warning: importer.ImportType#apply Failed type conversion: (): cadesplugin.CAPICOM.PublicKey extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): cadesplugin.CAPICOM.PublicKey> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): cadesplugin.CAPICOM.PublicKey>> */ js.Any,
+    SerialNumber: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any,
+    SubjectName: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any,
+    Thumbprint: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any,
+    ValidFromDate: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CADES_Common.VarDate extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CADES_Common.VarDate> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CADES_Common.VarDate>> */ js.Any,
+    ValidToDate: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CADES_Common.VarDate extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CADES_Common.VarDate> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CADES_Common.VarDate>> */ js.Any,
+    Version: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
   ): CertificateAsync = {
     val __obj = js.Dynamic.literal(Display = Display.asInstanceOf[js.Any], Export = Export.asInstanceOf[js.Any], ExtendedKeyUsage = ExtendedKeyUsage.asInstanceOf[js.Any], GetInfo = GetInfo.asInstanceOf[js.Any], HasPrivateKey = HasPrivateKey.asInstanceOf[js.Any], IsValid = IsValid.asInstanceOf[js.Any], IssuerName = IssuerName.asInstanceOf[js.Any], PrivateKey = PrivateKey.asInstanceOf[js.Any], PublicKey = PublicKey.asInstanceOf[js.Any], SerialNumber = SerialNumber.asInstanceOf[js.Any], SubjectName = SubjectName.asInstanceOf[js.Any], Thumbprint = Thumbprint.asInstanceOf[js.Any], ValidFromDate = ValidFromDate.asInstanceOf[js.Any], ValidToDate = ValidToDate.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateAsync]
@@ -105,180 +93,78 @@ object CertificateAsync {
   extension [Self <: CertificateAsync](x: Self) {
     
     inline def setDisplay(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[js.Function0[Unit]]]) | PromisifiedFunction[js.Function0[Unit]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): void> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(): void>> */ js.Any
     ): Self = StObject.set(x, "Display", value.asInstanceOf[js.Any])
     
-    inline def setDisplayFunction0(value: () => Unit): Self = StObject.set(x, "Display", js.Any.fromFunction0(value))
-    
-    inline def setDisplayFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Display", js.Any.fromFunction1(value))
-    
     inline def setExport(
-      value: (// tslint:disable-line ban-types
-    js.Promise[
-          Unpacked[js.Function1[/* EncodingType */ ValuesOf[CAPICOM_ENCODING_TYPE], String]]
-        ]) | (PromisifiedFunction[js.Function1[/* EncodingType */ ValuesOf[CAPICOM_ENCODING_TYPE], String]])
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (EncodingType : cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAPICOM.CAPICOM_ENCODING_TYPE>): string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(EncodingType : cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAPICOM.CAPICOM_ENCODING_TYPE>): string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(EncodingType : cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAPICOM.CAPICOM_ENCODING_TYPE>): string>> */ js.Any
     ): Self = StObject.set(x, "Export", value.asInstanceOf[js.Any])
     
-    inline def setExportFunction1(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any]) | (/* EncodingType */ ValuesOf[CAPICOM_ENCODING_TYPE]) => js.Promise[Unpacked[Any]] | String
-    ): Self = StObject.set(x, "Export", js.Any.fromFunction1(value))
-    
     inline def setExtendedKeyUsage(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[js.Function0[ExtendedKeyUsage]]]) | PromisifiedFunction[js.Function0[ExtendedKeyUsage]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): cadesplugin.CAPICOM.ExtendedKeyUsage extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): cadesplugin.CAPICOM.ExtendedKeyUsage> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(): cadesplugin.CAPICOM.ExtendedKeyUsage>> */ js.Any
     ): Self = StObject.set(x, "ExtendedKeyUsage", value.asInstanceOf[js.Any])
     
-    inline def setExtendedKeyUsageFunction0(value: () => ExtendedKeyUsage): Self = StObject.set(x, "ExtendedKeyUsage", js.Any.fromFunction0(value))
-    
-    inline def setExtendedKeyUsageFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "ExtendedKeyUsage", js.Any.fromFunction1(value))
-    
     inline def setGetInfo(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[js.Function1[/* infoType */ CAPICOM_CERT_INFO_TYPE, String]]]) | (PromisifiedFunction[js.Function1[/* infoType */ CAPICOM_CERT_INFO_TYPE, String]])
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (infoType : cadesplugin.CAPICOM.CAPICOM_CERT_INFO_TYPE): string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(infoType : cadesplugin.CAPICOM.CAPICOM_CERT_INFO_TYPE): string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(infoType : cadesplugin.CAPICOM.CAPICOM_CERT_INFO_TYPE): string>> */ js.Any
     ): Self = StObject.set(x, "GetInfo", value.asInstanceOf[js.Any])
     
-    inline def setGetInfoFunction1(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any]) | (/* infoType */ CAPICOM_CERT_INFO_TYPE) => js.Promise[Unpacked[Any]] | String
-    ): Self = StObject.set(x, "GetInfo", js.Any.fromFunction1(value))
-    
     inline def setHasPrivateKey(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[js.Function0[Boolean]]]) | PromisifiedFunction[js.Function0[Boolean]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): boolean extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): boolean> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(): boolean>> */ js.Any
     ): Self = StObject.set(x, "HasPrivateKey", value.asInstanceOf[js.Any])
     
-    inline def setHasPrivateKeyFunction0(value: () => Boolean): Self = StObject.set(x, "HasPrivateKey", js.Any.fromFunction0(value))
-    
-    inline def setHasPrivateKeyFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "HasPrivateKey", js.Any.fromFunction1(value))
-    
     inline def setIsValid(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[js.Function0[CertificateStatus]]]) | PromisifiedFunction[js.Function0[CertificateStatus]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): cadesplugin.CAPICOM.CertificateStatus extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): cadesplugin.CAPICOM.CertificateStatus> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(): cadesplugin.CAPICOM.CertificateStatus>> */ js.Any
     ): Self = StObject.set(x, "IsValid", value.asInstanceOf[js.Any])
     
-    inline def setIsValidFunction0(value: () => CertificateStatus): Self = StObject.set(x, "IsValid", js.Any.fromFunction0(value))
-    
-    inline def setIsValidFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "IsValid", js.Any.fromFunction1(value))
-    
     inline def setIssuerName(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
     ): Self = StObject.set(x, "IssuerName", value.asInstanceOf[js.Any])
     
-    inline def setIssuerNameFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "IssuerName", js.Any.fromFunction1(value))
-    
     inline def setPrivateKey(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[PrivateKey]]) | PromisifiedFunction[PrivateKey]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.PrivateKey extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.PrivateKey> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.PrivateKey>> */ js.Any
     ): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
     
-    inline def setPrivateKeyFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "PrivateKey", js.Any.fromFunction1(value))
-    
     inline def setPublicKey(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[js.Function0[PublicKey]]]) | PromisifiedFunction[js.Function0[PublicKey]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): cadesplugin.CAPICOM.PublicKey extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): cadesplugin.CAPICOM.PublicKey> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(): cadesplugin.CAPICOM.PublicKey>> */ js.Any
     ): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
     
-    inline def setPublicKeyFunction0(value: () => PublicKey): Self = StObject.set(x, "PublicKey", js.Any.fromFunction0(value))
-    
-    inline def setPublicKeyFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "PublicKey", js.Any.fromFunction1(value))
-    
     inline def setSerialNumber(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
     ): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
-    inline def setSerialNumberFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "SerialNumber", js.Any.fromFunction1(value))
-    
     inline def setSubjectName(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
     ): Self = StObject.set(x, "SubjectName", value.asInstanceOf[js.Any])
     
-    inline def setSubjectNameFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "SubjectName", js.Any.fromFunction1(value))
-    
     inline def setThumbprint(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
     ): Self = StObject.set(x, "Thumbprint", value.asInstanceOf[js.Any])
     
-    inline def setThumbprintFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Thumbprint", js.Any.fromFunction1(value))
-    
     inline def setValidFromDate(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[VarDate]]) | PromisifiedFunction[VarDate]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CADES_Common.VarDate extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CADES_Common.VarDate> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CADES_Common.VarDate>> */ js.Any
     ): Self = StObject.set(x, "ValidFromDate", value.asInstanceOf[js.Any])
     
-    inline def setValidFromDateFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "ValidFromDate", js.Any.fromFunction1(value))
-    
     inline def setValidToDate(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[VarDate]]) | PromisifiedFunction[VarDate]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CADES_Common.VarDate extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CADES_Common.VarDate> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CADES_Common.VarDate>> */ js.Any
     ): Self = StObject.set(x, "ValidToDate", value.asInstanceOf[js.Any])
     
-    inline def setValidToDateFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "ValidToDate", js.Any.fromFunction1(value))
-    
     inline def setVersion(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
     ): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
-    
-    inline def setVersionFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Version", js.Any.fromFunction1(value))
   }
 }

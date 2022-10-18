@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-body-length-browser
 
-Typings are for version 3.170.0
+Typings are for version 3.188.0
 
 ## Library description:
 Determines the length of a request body in browsers

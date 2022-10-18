@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.EncapsulatedPKIData")
 @js.native
 open class EncapsulatedPKIData ()
-  extends typings.xadesjs.typesXmlMod.EncapsulatedPKIData {
+  extends typings.xadesjs.buildTypesXmlMod.EncapsulatedPKIData {
   def this(properties: js.Object) = this()
 }

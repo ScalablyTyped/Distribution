@@ -1,28 +1,28 @@
 package typings.firebaseAuth
 
-import typings.firebaseAuth.authMod.ProviderId2
-import typings.firebaseAuth.browserMod.BrowserName
-import typings.firebaseAuth.coreAuthAuthImplMod.DefaultConfig
-import typings.firebaseAuth.coreAuthRegisterMod.ComponentName
-import typings.firebaseAuth.coreErrorsMod.AuthErrorCode
-import typings.firebaseAuth.corePersistenceMod.PersistenceType
-import typings.firebaseAuth.corePersistencePersistenceUserManagerMod.KeyName
-import typings.firebaseAuth.coreUtilVersionMod.ClientPlatform
+import typings.firebaseAuth.distAuthMod.ProviderId2
+import typings.firebaseAuth.distEsm2017SrcApiErrorsMod.ServerError
+import typings.firebaseAuth.distEsm2017SrcCoreUtilBrowserMod.BrowserName
+import typings.firebaseAuth.distEsm5SrcMfaMfaSessionMod.MultiFactorSessionType
+import typings.firebaseAuth.distEsm5SrcPlatformBrowserMessagechannelMod.EventType
+import typings.firebaseAuth.distEsm5SrcPlatformBrowserMessagechannelMod.MessageError
+import typings.firebaseAuth.distEsm5SrcPlatformBrowserMessagechannelMod.Status
+import typings.firebaseAuth.distNodeEsmSrcApiMod.Endpoint
+import typings.firebaseAuth.distNodeEsmSrcApiMod.HttpHeader
+import typings.firebaseAuth.distNodeEsmSrcApiMod.HttpMethod
+import typings.firebaseAuth.distNodeEsmSrcCoreErrorsMod.AuthErrorCode
+import typings.firebaseAuth.distNodeEsmSrcCoreUtilVersionMod.ClientPlatform
+import typings.firebaseAuth.distNodeEsmSrcModelPublicTypesMod.ActionCodeOperation
+import typings.firebaseAuth.distNodeSrcCoreAuthAuthImplMod.DefaultConfig
+import typings.firebaseAuth.distNodeSrcCoreAuthRegisterMod.ComponentName
+import typings.firebaseAuth.distNodeSrcCorePersistenceMod.PersistenceType
+import typings.firebaseAuth.distNodeSrcModelIdTokenMod.IdTokenResponseKind
+import typings.firebaseAuth.distRnSrcModelEnumsMod.OperationType
+import typings.firebaseAuth.distRnSrcModelEnumsMod.ProviderId
+import typings.firebaseAuth.distRnSrcModelEnumsMod.SignInMethod
+import typings.firebaseAuth.distSrcCorePersistencePersistenceUserManagerMod.KeyName
 import typings.firebaseAuth.distSrcModelPopupRedirectMod.AuthEventType
 import typings.firebaseAuth.distSrcModelPopupRedirectMod.GapiOutcome
-import typings.firebaseAuth.modelPublicTypesMod.ActionCodeOperation
-import typings.firebaseAuth.nodeEsmSrcApiErrorsMod.ServerError
-import typings.firebaseAuth.nodeEsmSrcModelEnumsMod.OperationType
-import typings.firebaseAuth.nodeEsmSrcModelEnumsMod.ProviderId
-import typings.firebaseAuth.nodeEsmSrcModelEnumsMod.SignInMethod
-import typings.firebaseAuth.rnSrcApiMod.Endpoint
-import typings.firebaseAuth.rnSrcApiMod.HttpHeader
-import typings.firebaseAuth.rnSrcApiMod.HttpMethod
-import typings.firebaseAuth.rnSrcMfaMfaSessionMod.MultiFactorSessionType
-import typings.firebaseAuth.rnSrcModelIdTokenMod.IdTokenResponseKind
-import typings.firebaseAuth.srcPlatformBrowserMessagechannelMod.EventType
-import typings.firebaseAuth.srcPlatformBrowserMessagechannelMod.MessageError
-import typings.firebaseAuth.srcPlatformBrowserMessagechannelMod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,23 +33,23 @@ object firebaseAuthStrings {
   sealed trait ACK
     extends StObject
        with GapiOutcome
-       with typings.firebaseAuth.modelPopupRedirectMod.GapiOutcome
-       with typings.firebaseAuth.srcModelPopupRedirectMod.GapiOutcome
-       with typings.firebaseAuth.rnSrcModelPopupRedirectMod.GapiOutcome
-       with typings.firebaseAuth.nodeEsmSrcModelPopupRedirectMod.GapiOutcome
-       with typings.firebaseAuth.nodeSrcModelPopupRedirectMod.GapiOutcome
-       with typings.firebaseAuth.popupRedirectMod.GapiOutcome
+       with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.GapiOutcome
+       with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.GapiOutcome
+       with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.GapiOutcome
+       with typings.firebaseAuth.distEsm2017SrcModelPopupRedirectMod.GapiOutcome
+       with typings.firebaseAuth.distCordovaSrcModelPopupRedirectMod.GapiOutcome
+       with typings.firebaseAuth.distRnSrcModelPopupRedirectMod.GapiOutcome
   inline def ACK: ACK = "ACK".asInstanceOf[ACK]
   
   @js.native
   sealed trait ADMIN_ONLY_OPERATION
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def ADMIN_ONLY_OPERATION: ADMIN_ONLY_OPERATION = "ADMIN_ONLY_OPERATION".asInstanceOf[ADMIN_ONLY_OPERATION]
   
@@ -57,23 +57,23 @@ object firebaseAuthStrings {
   sealed trait Android
     extends StObject
        with BrowserName
-       with typings.firebaseAuth.rnSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.nodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.utilBrowserMod.BrowserName
-       with typings.firebaseAuth.coreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.srcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distEsm5SrcCoreUtilBrowserMod.BrowserName
   inline def Android: Android = "Android".asInstanceOf[Android]
   
   @js.native
   sealed trait BLOCKING_FUNCTION_ERROR_RESPONSE
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def BLOCKING_FUNCTION_ERROR_RESPONSE: BLOCKING_FUNCTION_ERROR_RESPONSE = "BLOCKING_FUNCTION_ERROR_RESPONSE".asInstanceOf[BLOCKING_FUNCTION_ERROR_RESPONSE]
   
@@ -81,36 +81,36 @@ object firebaseAuthStrings {
   sealed trait Blackberry
     extends StObject
        with BrowserName
-       with typings.firebaseAuth.rnSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.nodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.utilBrowserMod.BrowserName
-       with typings.firebaseAuth.coreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.srcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distEsm5SrcCoreUtilBrowserMod.BrowserName
   inline def Blackberry: Blackberry = "Blackberry".asInstanceOf[Blackberry]
   
   @js.native
   sealed trait Browser
     extends StObject
        with ClientPlatform
-       with typings.firebaseAuth.rnSrcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.versionMod.ClientPlatform
+       with typings.firebaseAuth.distRnSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distCordovaSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distSrcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.srcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.authMod.ClientPlatform
-       with typings.firebaseAuth.utilVersionMod.ClientPlatform
-       with typings.firebaseAuth.nodeSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distEsm5SrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distEsm2017SrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distAuthMod.ClientPlatform
+       with typings.firebaseAuth.distNodeSrcCoreUtilVersionMod.ClientPlatform
   inline def Browser: Browser = "Browser".asInstanceOf[Browser]
   
   @js.native
   sealed trait CAPTCHA_CHECK_FAILED
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def CAPTCHA_CHECK_FAILED: CAPTCHA_CHECK_FAILED = "CAPTCHA_CHECK_FAILED".asInstanceOf[CAPTCHA_CHECK_FAILED]
   
@@ -118,11 +118,11 @@ object firebaseAuthStrings {
   sealed trait CORS_UNSUPPORTED
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def CORS_UNSUPPORTED: CORS_UNSUPPORTED = "CORS_UNSUPPORTED".asInstanceOf[CORS_UNSUPPORTED]
   
@@ -130,11 +130,11 @@ object firebaseAuthStrings {
   sealed trait CREDENTIAL_MISMATCH
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def CREDENTIAL_MISMATCH: CREDENTIAL_MISMATCH = "CREDENTIAL_MISMATCH".asInstanceOf[CREDENTIAL_MISMATCH]
   
@@ -142,11 +142,11 @@ object firebaseAuthStrings {
   sealed trait CREDENTIAL_TOO_OLD_LOGIN_AGAIN
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def CREDENTIAL_TOO_OLD_LOGIN_AGAIN: CREDENTIAL_TOO_OLD_LOGIN_AGAIN = "CREDENTIAL_TOO_OLD_LOGIN_AGAIN".asInstanceOf[CREDENTIAL_TOO_OLD_LOGIN_AGAIN]
   
@@ -154,37 +154,37 @@ object firebaseAuthStrings {
   sealed trait Chrome
     extends StObject
        with BrowserName
-       with typings.firebaseAuth.rnSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.nodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.utilBrowserMod.BrowserName
-       with typings.firebaseAuth.coreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.srcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distEsm5SrcCoreUtilBrowserMod.BrowserName
   inline def Chrome: Chrome = "Chrome".asInstanceOf[Chrome]
   
   @js.native
   sealed trait `Content-Type`
     extends StObject
        with HttpHeader
-       with typings.firebaseAuth.nodeEsmSrcApiMod.HttpHeader
        with typings.firebaseAuth.distSrcApiMod.HttpHeader
-       with typings.firebaseAuth.nodeSrcApiMod.HttpHeader
-       with typings.firebaseAuth.esm5SrcApiMod.HttpHeader
-       with typings.firebaseAuth.apiMod.HttpHeader
-       with typings.firebaseAuth.srcApiMod.HttpHeader
+       with typings.firebaseAuth.distCordovaSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distEsm5SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distRnSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distEsm2017SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distNodeSrcApiMod.HttpHeader
   inline def `Content-Type`: `Content-Type` = "Content-Type".asInstanceOf[`Content-Type`]
   
   @js.native
   sealed trait Cordova
     extends StObject
        with ClientPlatform
-       with typings.firebaseAuth.rnSrcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.versionMod.ClientPlatform
+       with typings.firebaseAuth.distRnSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distCordovaSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distSrcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.srcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.authMod.ClientPlatform
-       with typings.firebaseAuth.utilVersionMod.ClientPlatform
-       with typings.firebaseAuth.nodeSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distEsm5SrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distEsm2017SrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distAuthMod.ClientPlatform
+       with typings.firebaseAuth.distNodeSrcCoreUtilVersionMod.ClientPlatform
   inline def Cordova: Cordova = "Cordova".asInstanceOf[Cordova]
   
   @js.native
@@ -195,11 +195,11 @@ object firebaseAuthStrings {
   sealed trait DYNAMIC_LINK_NOT_ACTIVATED
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def DYNAMIC_LINK_NOT_ACTIVATED: DYNAMIC_LINK_NOT_ACTIVATED = "DYNAMIC_LINK_NOT_ACTIVATED".asInstanceOf[DYNAMIC_LINK_NOT_ACTIVATED]
   
@@ -207,11 +207,11 @@ object firebaseAuthStrings {
   sealed trait EMAIL_CHANGE_NEEDS_VERIFICATION
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def EMAIL_CHANGE_NEEDS_VERIFICATION: EMAIL_CHANGE_NEEDS_VERIFICATION = "EMAIL_CHANGE_NEEDS_VERIFICATION".asInstanceOf[EMAIL_CHANGE_NEEDS_VERIFICATION]
   
@@ -219,11 +219,11 @@ object firebaseAuthStrings {
   sealed trait EMAIL_EXISTS
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def EMAIL_EXISTS: EMAIL_EXISTS = "EMAIL_EXISTS".asInstanceOf[EMAIL_EXISTS]
   
@@ -231,11 +231,11 @@ object firebaseAuthStrings {
   sealed trait EMAIL_NOT_FOUND
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def EMAIL_NOT_FOUND: EMAIL_NOT_FOUND = "EMAIL_NOT_FOUND".asInstanceOf[EMAIL_NOT_FOUND]
   
@@ -244,34 +244,34 @@ object firebaseAuthStrings {
     extends StObject
        with ActionCodeOperation
        with typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.rnSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.publicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.srcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.nodeSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.nodeEsmSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distEsm5SrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distCordovaSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distRnSrcModelPublicTypesMod.ActionCodeOperation
   inline def EMAIL_SIGNIN: EMAIL_SIGNIN = "EMAIL_SIGNIN".asInstanceOf[EMAIL_SIGNIN]
   
   @js.native
   sealed trait ERROR
     extends StObject
        with GapiOutcome
-       with typings.firebaseAuth.modelPopupRedirectMod.GapiOutcome
-       with typings.firebaseAuth.srcModelPopupRedirectMod.GapiOutcome
-       with typings.firebaseAuth.rnSrcModelPopupRedirectMod.GapiOutcome
-       with typings.firebaseAuth.nodeEsmSrcModelPopupRedirectMod.GapiOutcome
-       with typings.firebaseAuth.nodeSrcModelPopupRedirectMod.GapiOutcome
-       with typings.firebaseAuth.popupRedirectMod.GapiOutcome
+       with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.GapiOutcome
+       with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.GapiOutcome
+       with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.GapiOutcome
+       with typings.firebaseAuth.distEsm2017SrcModelPopupRedirectMod.GapiOutcome
+       with typings.firebaseAuth.distCordovaSrcModelPopupRedirectMod.GapiOutcome
+       with typings.firebaseAuth.distRnSrcModelPopupRedirectMod.GapiOutcome
   inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
   sealed trait EXPIRED_OOB_CODE
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def EXPIRED_OOB_CODE: EXPIRED_OOB_CODE = "EXPIRED_OOB_CODE".asInstanceOf[EXPIRED_OOB_CODE]
   
@@ -279,23 +279,23 @@ object firebaseAuthStrings {
   sealed trait Edge
     extends StObject
        with BrowserName
-       with typings.firebaseAuth.rnSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.nodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.utilBrowserMod.BrowserName
-       with typings.firebaseAuth.coreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.srcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distEsm5SrcCoreUtilBrowserMod.BrowserName
   inline def Edge: Edge = "Edge".asInstanceOf[Edge]
   
   @js.native
   sealed trait FEDERATED_USER_ID_ALREADY_LINKED
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def FEDERATED_USER_ID_ALREADY_LINKED: FEDERATED_USER_ID_ALREADY_LINKED = "FEDERATED_USER_ID_ALREADY_LINKED".asInstanceOf[FEDERATED_USER_ID_ALREADY_LINKED]
   
@@ -303,59 +303,59 @@ object firebaseAuthStrings {
   sealed trait Firefox
     extends StObject
        with BrowserName
-       with typings.firebaseAuth.rnSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.nodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.utilBrowserMod.BrowserName
-       with typings.firebaseAuth.coreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.srcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distEsm5SrcCoreUtilBrowserMod.BrowserName
   inline def Firefox: Firefox = "Firefox".asInstanceOf[Firefox]
   
   @js.native
   sealed trait GET
     extends StObject
        with HttpMethod
-       with typings.firebaseAuth.nodeEsmSrcApiMod.HttpMethod
        with typings.firebaseAuth.distSrcApiMod.HttpMethod
-       with typings.firebaseAuth.nodeSrcApiMod.HttpMethod
-       with typings.firebaseAuth.esm5SrcApiMod.HttpMethod
-       with typings.firebaseAuth.apiMod.HttpMethod
-       with typings.firebaseAuth.srcApiMod.HttpMethod
+       with typings.firebaseAuth.distCordovaSrcApiMod.HttpMethod
+       with typings.firebaseAuth.distEsm5SrcApiMod.HttpMethod
+       with typings.firebaseAuth.distRnSrcApiMod.HttpMethod
+       with typings.firebaseAuth.distEsm2017SrcApiMod.HttpMethod
+       with typings.firebaseAuth.distNodeSrcApiMod.HttpMethod
   inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
   sealed trait IE
     extends StObject
        with BrowserName
-       with typings.firebaseAuth.rnSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.nodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.utilBrowserMod.BrowserName
-       with typings.firebaseAuth.coreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.srcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distEsm5SrcCoreUtilBrowserMod.BrowserName
   inline def IE: IE = "IE".asInstanceOf[IE]
   
   @js.native
   sealed trait IEMobile
     extends StObject
        with BrowserName
-       with typings.firebaseAuth.rnSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.nodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.utilBrowserMod.BrowserName
-       with typings.firebaseAuth.coreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.srcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distEsm5SrcCoreUtilBrowserMod.BrowserName
   inline def IEMobile: IEMobile = "IEMobile".asInstanceOf[IEMobile]
   
   @js.native
   sealed trait INVALID_APP_CREDENTIAL
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_APP_CREDENTIAL: INVALID_APP_CREDENTIAL = "INVALID_APP_CREDENTIAL".asInstanceOf[INVALID_APP_CREDENTIAL]
   
@@ -363,11 +363,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_APP_ID
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_APP_ID: INVALID_APP_ID = "INVALID_APP_ID".asInstanceOf[INVALID_APP_ID]
   
@@ -375,11 +375,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_CERT_HASH
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_CERT_HASH: INVALID_CERT_HASH = "INVALID_CERT_HASH".asInstanceOf[INVALID_CERT_HASH]
   
@@ -387,11 +387,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_CODE
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_CODE: INVALID_CODE = "INVALID_CODE".asInstanceOf[INVALID_CODE]
   
@@ -399,11 +399,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_CONTINUE_URI
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_CONTINUE_URI: INVALID_CONTINUE_URI = "INVALID_CONTINUE_URI".asInstanceOf[INVALID_CONTINUE_URI]
   
@@ -411,11 +411,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_CUSTOM_TOKEN
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_CUSTOM_TOKEN: INVALID_CUSTOM_TOKEN = "INVALID_CUSTOM_TOKEN".asInstanceOf[INVALID_CUSTOM_TOKEN]
   
@@ -423,11 +423,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_DYNAMIC_LINK_DOMAIN
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_DYNAMIC_LINK_DOMAIN: INVALID_DYNAMIC_LINK_DOMAIN = "INVALID_DYNAMIC_LINK_DOMAIN".asInstanceOf[INVALID_DYNAMIC_LINK_DOMAIN]
   
@@ -435,11 +435,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_EMAIL
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_EMAIL: INVALID_EMAIL = "INVALID_EMAIL".asInstanceOf[INVALID_EMAIL]
   
@@ -447,11 +447,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_IDENTIFIER
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_IDENTIFIER: INVALID_IDENTIFIER = "INVALID_IDENTIFIER".asInstanceOf[INVALID_IDENTIFIER]
   
@@ -459,11 +459,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_IDP_RESPONSE
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_IDP_RESPONSE: INVALID_IDP_RESPONSE = "INVALID_IDP_RESPONSE".asInstanceOf[INVALID_IDP_RESPONSE]
   
@@ -471,11 +471,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_ID_TOKEN
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_ID_TOKEN: INVALID_ID_TOKEN = "INVALID_ID_TOKEN".asInstanceOf[INVALID_ID_TOKEN]
   
@@ -483,11 +483,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_MESSAGE_PAYLOAD
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_MESSAGE_PAYLOAD: INVALID_MESSAGE_PAYLOAD = "INVALID_MESSAGE_PAYLOAD".asInstanceOf[INVALID_MESSAGE_PAYLOAD]
   
@@ -495,11 +495,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_MFA_PENDING_CREDENTIAL
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_MFA_PENDING_CREDENTIAL: INVALID_MFA_PENDING_CREDENTIAL = "INVALID_MFA_PENDING_CREDENTIAL".asInstanceOf[INVALID_MFA_PENDING_CREDENTIAL]
   
@@ -507,11 +507,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_OAUTH_CLIENT_ID
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_OAUTH_CLIENT_ID: INVALID_OAUTH_CLIENT_ID = "INVALID_OAUTH_CLIENT_ID".asInstanceOf[INVALID_OAUTH_CLIENT_ID]
   
@@ -519,11 +519,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_OOB_CODE
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_OOB_CODE: INVALID_OOB_CODE = "INVALID_OOB_CODE".asInstanceOf[INVALID_OOB_CODE]
   
@@ -531,11 +531,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_PASSWORD
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_PASSWORD: INVALID_PASSWORD = "INVALID_PASSWORD".asInstanceOf[INVALID_PASSWORD]
   
@@ -543,11 +543,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_PENDING_TOKEN
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_PENDING_TOKEN: INVALID_PENDING_TOKEN = "INVALID_PENDING_TOKEN".asInstanceOf[INVALID_PENDING_TOKEN]
   
@@ -555,11 +555,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_PHONE_NUMBER
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_PHONE_NUMBER: INVALID_PHONE_NUMBER = "INVALID_PHONE_NUMBER".asInstanceOf[INVALID_PHONE_NUMBER]
   
@@ -567,11 +567,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_PROVIDER_ID
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_PROVIDER_ID: INVALID_PROVIDER_ID = "INVALID_PROVIDER_ID".asInstanceOf[INVALID_PROVIDER_ID]
   
@@ -579,11 +579,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_RECIPIENT_EMAIL
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_RECIPIENT_EMAIL: INVALID_RECIPIENT_EMAIL = "INVALID_RECIPIENT_EMAIL".asInstanceOf[INVALID_RECIPIENT_EMAIL]
   
@@ -591,11 +591,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_SENDER
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_SENDER: INVALID_SENDER = "INVALID_SENDER".asInstanceOf[INVALID_SENDER]
   
@@ -603,11 +603,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_SESSION_INFO
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_SESSION_INFO: INVALID_SESSION_INFO = "INVALID_SESSION_INFO".asInstanceOf[INVALID_SESSION_INFO]
   
@@ -615,11 +615,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_TEMPORARY_PROOF
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_TEMPORARY_PROOF: INVALID_TEMPORARY_PROOF = "INVALID_TEMPORARY_PROOF".asInstanceOf[INVALID_TEMPORARY_PROOF]
   
@@ -627,11 +627,11 @@ object firebaseAuthStrings {
   sealed trait INVALID_TENANT_ID
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def INVALID_TENANT_ID: INVALID_TENANT_ID = "INVALID_TENANT_ID".asInstanceOf[INVALID_TENANT_ID]
   
@@ -643,23 +643,23 @@ object firebaseAuthStrings {
   sealed trait LOCAL
     extends StObject
        with PersistenceType
-       with typings.firebaseAuth.persistenceMod.PersistenceType
-       with typings.firebaseAuth.rnSrcCorePersistenceMod.PersistenceType
-       with typings.firebaseAuth.nodeEsmSrcCorePersistenceMod.PersistenceType
-       with typings.firebaseAuth.nodeSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distCordovaSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distRnSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distEsm2017SrcCorePersistenceMod.PersistenceType
        with typings.firebaseAuth.distSrcCorePersistenceMod.PersistenceType
-       with typings.firebaseAuth.srcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distNodeEsmSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distEsm5SrcCorePersistenceMod.PersistenceType
   inline def LOCAL: LOCAL = "LOCAL".asInstanceOf[LOCAL]
   
   @js.native
   sealed trait MFA_ENROLLMENT_NOT_FOUND
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MFA_ENROLLMENT_NOT_FOUND: MFA_ENROLLMENT_NOT_FOUND = "MFA_ENROLLMENT_NOT_FOUND".asInstanceOf[MFA_ENROLLMENT_NOT_FOUND]
   
@@ -667,11 +667,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_ANDROID_PACKAGE_NAME
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_ANDROID_PACKAGE_NAME: MISSING_ANDROID_PACKAGE_NAME = "MISSING_ANDROID_PACKAGE_NAME".asInstanceOf[MISSING_ANDROID_PACKAGE_NAME]
   
@@ -679,11 +679,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_APP_CREDENTIAL
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_APP_CREDENTIAL: MISSING_APP_CREDENTIAL = "MISSING_APP_CREDENTIAL".asInstanceOf[MISSING_APP_CREDENTIAL]
   
@@ -691,11 +691,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_CODE
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_CODE: MISSING_CODE = "MISSING_CODE".asInstanceOf[MISSING_CODE]
   
@@ -703,11 +703,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_CONTINUE_URI
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_CONTINUE_URI: MISSING_CONTINUE_URI = "MISSING_CONTINUE_URI".asInstanceOf[MISSING_CONTINUE_URI]
   
@@ -715,11 +715,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_CUSTOM_TOKEN
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_CUSTOM_TOKEN: MISSING_CUSTOM_TOKEN = "MISSING_CUSTOM_TOKEN".asInstanceOf[MISSING_CUSTOM_TOKEN]
   
@@ -727,11 +727,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_IOS_BUNDLE_ID
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_IOS_BUNDLE_ID: MISSING_IOS_BUNDLE_ID = "MISSING_IOS_BUNDLE_ID".asInstanceOf[MISSING_IOS_BUNDLE_ID]
   
@@ -739,11 +739,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_MFA_ENROLLMENT_ID
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_MFA_ENROLLMENT_ID: MISSING_MFA_ENROLLMENT_ID = "MISSING_MFA_ENROLLMENT_ID".asInstanceOf[MISSING_MFA_ENROLLMENT_ID]
   
@@ -751,11 +751,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_MFA_PENDING_CREDENTIAL
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_MFA_PENDING_CREDENTIAL: MISSING_MFA_PENDING_CREDENTIAL = "MISSING_MFA_PENDING_CREDENTIAL".asInstanceOf[MISSING_MFA_PENDING_CREDENTIAL]
   
@@ -763,11 +763,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_OOB_CODE
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_OOB_CODE: MISSING_OOB_CODE = "MISSING_OOB_CODE".asInstanceOf[MISSING_OOB_CODE]
   
@@ -775,11 +775,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_OR_INVALID_NONCE
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_OR_INVALID_NONCE: MISSING_OR_INVALID_NONCE = "MISSING_OR_INVALID_NONCE".asInstanceOf[MISSING_OR_INVALID_NONCE]
   
@@ -787,11 +787,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_PASSWORD
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_PASSWORD: MISSING_PASSWORD = "MISSING_PASSWORD".asInstanceOf[MISSING_PASSWORD]
   
@@ -799,11 +799,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_PHONE_NUMBER
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_PHONE_NUMBER: MISSING_PHONE_NUMBER = "MISSING_PHONE_NUMBER".asInstanceOf[MISSING_PHONE_NUMBER]
   
@@ -811,11 +811,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_REQ_TYPE
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_REQ_TYPE: MISSING_REQ_TYPE = "MISSING_REQ_TYPE".asInstanceOf[MISSING_REQ_TYPE]
   
@@ -823,11 +823,11 @@ object firebaseAuthStrings {
   sealed trait MISSING_SESSION_INFO
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def MISSING_SESSION_INFO: MISSING_SESSION_INFO = "MISSING_SESSION_INFO".asInstanceOf[MISSING_SESSION_INFO]
   
@@ -835,36 +835,36 @@ object firebaseAuthStrings {
   sealed trait NONE
     extends StObject
        with PersistenceType
-       with typings.firebaseAuth.persistenceMod.PersistenceType
-       with typings.firebaseAuth.rnSrcCorePersistenceMod.PersistenceType
-       with typings.firebaseAuth.nodeEsmSrcCorePersistenceMod.PersistenceType
-       with typings.firebaseAuth.nodeSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distCordovaSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distRnSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distEsm2017SrcCorePersistenceMod.PersistenceType
        with typings.firebaseAuth.distSrcCorePersistenceMod.PersistenceType
-       with typings.firebaseAuth.srcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distNodeEsmSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distEsm5SrcCorePersistenceMod.PersistenceType
   inline def NONE: NONE = "NONE".asInstanceOf[NONE]
   
   @js.native
   sealed trait Node
     extends StObject
        with ClientPlatform
-       with typings.firebaseAuth.rnSrcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.versionMod.ClientPlatform
+       with typings.firebaseAuth.distRnSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distCordovaSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distSrcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.srcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.authMod.ClientPlatform
-       with typings.firebaseAuth.utilVersionMod.ClientPlatform
-       with typings.firebaseAuth.nodeSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distEsm5SrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distEsm2017SrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distAuthMod.ClientPlatform
+       with typings.firebaseAuth.distNodeSrcCoreUtilVersionMod.ClientPlatform
   inline def Node: Node = "Node".asInstanceOf[Node]
   
   @js.native
   sealed trait OPERATION_NOT_ALLOWED
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def OPERATION_NOT_ALLOWED: OPERATION_NOT_ALLOWED = "OPERATION_NOT_ALLOWED".asInstanceOf[OPERATION_NOT_ALLOWED]
   
@@ -872,35 +872,35 @@ object firebaseAuthStrings {
   sealed trait Opera
     extends StObject
        with BrowserName
-       with typings.firebaseAuth.rnSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.nodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.utilBrowserMod.BrowserName
-       with typings.firebaseAuth.coreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.srcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distEsm5SrcCoreUtilBrowserMod.BrowserName
   inline def Opera: Opera = "Opera".asInstanceOf[Opera]
   
   @js.native
   sealed trait Other
     extends StObject
        with BrowserName
-       with typings.firebaseAuth.rnSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.nodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.utilBrowserMod.BrowserName
-       with typings.firebaseAuth.coreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.srcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distEsm5SrcCoreUtilBrowserMod.BrowserName
   inline def Other: Other = "Other".asInstanceOf[Other]
   
   @js.native
   sealed trait PASSWORD_LOGIN_DISABLED
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def PASSWORD_LOGIN_DISABLED: PASSWORD_LOGIN_DISABLED = "PASSWORD_LOGIN_DISABLED".asInstanceOf[PASSWORD_LOGIN_DISABLED]
   
@@ -909,34 +909,34 @@ object firebaseAuthStrings {
     extends StObject
        with ActionCodeOperation
        with typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.rnSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.publicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.srcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.nodeSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.nodeEsmSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distEsm5SrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distCordovaSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distRnSrcModelPublicTypesMod.ActionCodeOperation
   inline def PASSWORD_RESET: PASSWORD_RESET = "PASSWORD_RESET".asInstanceOf[PASSWORD_RESET]
   
   @js.native
   sealed trait POST
     extends StObject
        with HttpMethod
-       with typings.firebaseAuth.nodeEsmSrcApiMod.HttpMethod
        with typings.firebaseAuth.distSrcApiMod.HttpMethod
-       with typings.firebaseAuth.nodeSrcApiMod.HttpMethod
-       with typings.firebaseAuth.esm5SrcApiMod.HttpMethod
-       with typings.firebaseAuth.apiMod.HttpMethod
-       with typings.firebaseAuth.srcApiMod.HttpMethod
+       with typings.firebaseAuth.distCordovaSrcApiMod.HttpMethod
+       with typings.firebaseAuth.distEsm5SrcApiMod.HttpMethod
+       with typings.firebaseAuth.distRnSrcApiMod.HttpMethod
+       with typings.firebaseAuth.distEsm2017SrcApiMod.HttpMethod
+       with typings.firebaseAuth.distNodeSrcApiMod.HttpMethod
   inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
   sealed trait QUOTA_EXCEEDED
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def QUOTA_EXCEEDED: QUOTA_EXCEEDED = "QUOTA_EXCEEDED".asInstanceOf[QUOTA_EXCEEDED]
   
@@ -945,22 +945,22 @@ object firebaseAuthStrings {
     extends StObject
        with ActionCodeOperation
        with typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.rnSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.publicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.srcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.nodeSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.nodeEsmSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distEsm5SrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distCordovaSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distRnSrcModelPublicTypesMod.ActionCodeOperation
   inline def RECOVER_EMAIL: RECOVER_EMAIL = "RECOVER_EMAIL".asInstanceOf[RECOVER_EMAIL]
   
   @js.native
   sealed trait REJECTED_CREDENTIAL
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def REJECTED_CREDENTIAL: REJECTED_CREDENTIAL = "REJECTED_CREDENTIAL".asInstanceOf[REJECTED_CREDENTIAL]
   
@@ -968,11 +968,11 @@ object firebaseAuthStrings {
   sealed trait RESET_PASSWORD_EXCEED_LIMIT
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def RESET_PASSWORD_EXCEED_LIMIT: RESET_PASSWORD_EXCEED_LIMIT = "RESET_PASSWORD_EXCEED_LIMIT".asInstanceOf[RESET_PASSWORD_EXCEED_LIMIT]
   
@@ -981,35 +981,35 @@ object firebaseAuthStrings {
     extends StObject
        with ActionCodeOperation
        with typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.rnSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.publicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.srcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.nodeSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.nodeEsmSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distEsm5SrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distCordovaSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distRnSrcModelPublicTypesMod.ActionCodeOperation
   inline def REVERT_SECOND_FACTOR_ADDITION: REVERT_SECOND_FACTOR_ADDITION = "REVERT_SECOND_FACTOR_ADDITION".asInstanceOf[REVERT_SECOND_FACTOR_ADDITION]
   
   @js.native
   sealed trait ReactNative
     extends StObject
        with ClientPlatform
-       with typings.firebaseAuth.rnSrcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.versionMod.ClientPlatform
+       with typings.firebaseAuth.distRnSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distCordovaSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distSrcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.srcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.authMod.ClientPlatform
-       with typings.firebaseAuth.utilVersionMod.ClientPlatform
-       with typings.firebaseAuth.nodeSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distEsm5SrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distEsm2017SrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distAuthMod.ClientPlatform
+       with typings.firebaseAuth.distNodeSrcCoreUtilVersionMod.ClientPlatform
   inline def ReactNative: ReactNative = "ReactNative".asInstanceOf[ReactNative]
   
   @js.native
   sealed trait SECOND_FACTOR_EXISTS
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def SECOND_FACTOR_EXISTS: SECOND_FACTOR_EXISTS = "SECOND_FACTOR_EXISTS".asInstanceOf[SECOND_FACTOR_EXISTS]
   
@@ -1017,11 +1017,11 @@ object firebaseAuthStrings {
   sealed trait SECOND_FACTOR_LIMIT_EXCEEDED
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def SECOND_FACTOR_LIMIT_EXCEEDED: SECOND_FACTOR_LIMIT_EXCEEDED = "SECOND_FACTOR_LIMIT_EXCEEDED".asInstanceOf[SECOND_FACTOR_LIMIT_EXCEEDED]
   
@@ -1029,23 +1029,23 @@ object firebaseAuthStrings {
   sealed trait SESSION
     extends StObject
        with PersistenceType
-       with typings.firebaseAuth.persistenceMod.PersistenceType
-       with typings.firebaseAuth.rnSrcCorePersistenceMod.PersistenceType
-       with typings.firebaseAuth.nodeEsmSrcCorePersistenceMod.PersistenceType
-       with typings.firebaseAuth.nodeSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distCordovaSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distRnSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distEsm2017SrcCorePersistenceMod.PersistenceType
        with typings.firebaseAuth.distSrcCorePersistenceMod.PersistenceType
-       with typings.firebaseAuth.srcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distNodeEsmSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distEsm5SrcCorePersistenceMod.PersistenceType
   inline def SESSION: SESSION = "SESSION".asInstanceOf[SESSION]
   
   @js.native
   sealed trait SESSION_EXPIRED
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def SESSION_EXPIRED: SESSION_EXPIRED = "SESSION_EXPIRED".asInstanceOf[SESSION_EXPIRED]
   
@@ -1053,208 +1053,204 @@ object firebaseAuthStrings {
   sealed trait Safari
     extends StObject
        with BrowserName
-       with typings.firebaseAuth.rnSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.nodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.utilBrowserMod.BrowserName
-       with typings.firebaseAuth.coreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.srcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distEsm5SrcCoreUtilBrowserMod.BrowserName
   inline def Safari: Safari = "Safari".asInstanceOf[Safari]
-  
-  @js.native
-  sealed trait ServerErrorMap extends StObject
-  inline def ServerErrorMap: ServerErrorMap = "ServerErrorMap".asInstanceOf[ServerErrorMap]
   
   @js.native
   sealed trait Silk
     extends StObject
        with BrowserName
-       with typings.firebaseAuth.rnSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.nodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.utilBrowserMod.BrowserName
-       with typings.firebaseAuth.coreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.srcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distEsm5SrcCoreUtilBrowserMod.BrowserName
   inline def Silk: Silk = "Silk".asInstanceOf[Silk]
   
   @js.native
   sealed trait Slashv1SlashaccountsColoncreateAuthUri
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColoncreateAuthUri: Slashv1SlashaccountsColoncreateAuthUri = "/v1/accounts:createAuthUri".asInstanceOf[Slashv1SlashaccountsColoncreateAuthUri]
   
   @js.native
   sealed trait Slashv1SlashaccountsColondelete
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColondelete: Slashv1SlashaccountsColondelete = "/v1/accounts:delete".asInstanceOf[Slashv1SlashaccountsColondelete]
   
   @js.native
   sealed trait Slashv1SlashaccountsColonlookup
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonlookup: Slashv1SlashaccountsColonlookup = "/v1/accounts:lookup".asInstanceOf[Slashv1SlashaccountsColonlookup]
   
   @js.native
   sealed trait Slashv1SlashaccountsColonresetPassword
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonresetPassword: Slashv1SlashaccountsColonresetPassword = "/v1/accounts:resetPassword".asInstanceOf[Slashv1SlashaccountsColonresetPassword]
   
   @js.native
   sealed trait Slashv1SlashaccountsColonsendOobCode
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsendOobCode: Slashv1SlashaccountsColonsendOobCode = "/v1/accounts:sendOobCode".asInstanceOf[Slashv1SlashaccountsColonsendOobCode]
   
   @js.native
   sealed trait Slashv1SlashaccountsColonsendVerificationCode
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsendVerificationCode: Slashv1SlashaccountsColonsendVerificationCode = "/v1/accounts:sendVerificationCode".asInstanceOf[Slashv1SlashaccountsColonsendVerificationCode]
   
   @js.native
   sealed trait Slashv1SlashaccountsColonsignInWithCustomToken
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsignInWithCustomToken: Slashv1SlashaccountsColonsignInWithCustomToken = "/v1/accounts:signInWithCustomToken".asInstanceOf[Slashv1SlashaccountsColonsignInWithCustomToken]
   
   @js.native
   sealed trait Slashv1SlashaccountsColonsignInWithEmailLink
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsignInWithEmailLink: Slashv1SlashaccountsColonsignInWithEmailLink = "/v1/accounts:signInWithEmailLink".asInstanceOf[Slashv1SlashaccountsColonsignInWithEmailLink]
   
   @js.native
   sealed trait Slashv1SlashaccountsColonsignInWithIdp
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsignInWithIdp: Slashv1SlashaccountsColonsignInWithIdp = "/v1/accounts:signInWithIdp".asInstanceOf[Slashv1SlashaccountsColonsignInWithIdp]
   
   @js.native
   sealed trait Slashv1SlashaccountsColonsignInWithPassword
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsignInWithPassword: Slashv1SlashaccountsColonsignInWithPassword = "/v1/accounts:signInWithPassword".asInstanceOf[Slashv1SlashaccountsColonsignInWithPassword]
   
   @js.native
   sealed trait Slashv1SlashaccountsColonsignInWithPhoneNumber
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsignInWithPhoneNumber: Slashv1SlashaccountsColonsignInWithPhoneNumber = "/v1/accounts:signInWithPhoneNumber".asInstanceOf[Slashv1SlashaccountsColonsignInWithPhoneNumber]
   
   @js.native
   sealed trait Slashv1SlashaccountsColonsignUp
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsignUp: Slashv1SlashaccountsColonsignUp = "/v1/accounts:signUp".asInstanceOf[Slashv1SlashaccountsColonsignUp]
   
   @js.native
   sealed trait Slashv1SlashaccountsColonupdate
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonupdate: Slashv1SlashaccountsColonupdate = "/v1/accounts:update".asInstanceOf[Slashv1SlashaccountsColonupdate]
   
   @js.native
   sealed trait Slashv1Slashprojects
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1Slashprojects: Slashv1Slashprojects = "/v1/projects".asInstanceOf[Slashv1Slashprojects]
   
   @js.native
   sealed trait Slashv1SlashrecaptchaParams
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashrecaptchaParams: Slashv1SlashrecaptchaParams = "/v1/recaptchaParams".asInstanceOf[Slashv1SlashrecaptchaParams]
   
   @js.native
@@ -1265,71 +1261,71 @@ object firebaseAuthStrings {
   sealed trait Slashv2SlashaccountsSlashmfaEnrollmentColonfinalize
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv2SlashaccountsSlashmfaEnrollmentColonfinalize: Slashv2SlashaccountsSlashmfaEnrollmentColonfinalize = "/v2/accounts/mfaEnrollment:finalize".asInstanceOf[Slashv2SlashaccountsSlashmfaEnrollmentColonfinalize]
   
   @js.native
   sealed trait Slashv2SlashaccountsSlashmfaEnrollmentColonstart
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv2SlashaccountsSlashmfaEnrollmentColonstart: Slashv2SlashaccountsSlashmfaEnrollmentColonstart = "/v2/accounts/mfaEnrollment:start".asInstanceOf[Slashv2SlashaccountsSlashmfaEnrollmentColonstart]
   
   @js.native
   sealed trait Slashv2SlashaccountsSlashmfaEnrollmentColonwithdraw
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv2SlashaccountsSlashmfaEnrollmentColonwithdraw: Slashv2SlashaccountsSlashmfaEnrollmentColonwithdraw = "/v2/accounts/mfaEnrollment:withdraw".asInstanceOf[Slashv2SlashaccountsSlashmfaEnrollmentColonwithdraw]
   
   @js.native
   sealed trait Slashv2SlashaccountsSlashmfaSignInColonfinalize
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv2SlashaccountsSlashmfaSignInColonfinalize: Slashv2SlashaccountsSlashmfaSignInColonfinalize = "/v2/accounts/mfaSignIn:finalize".asInstanceOf[Slashv2SlashaccountsSlashmfaSignInColonfinalize]
   
   @js.native
   sealed trait Slashv2SlashaccountsSlashmfaSignInColonstart
     extends StObject
        with Endpoint
-       with typings.firebaseAuth.nodeEsmSrcApiMod.Endpoint
        with typings.firebaseAuth.distSrcApiMod.Endpoint
-       with typings.firebaseAuth.nodeSrcApiMod.Endpoint
-       with typings.firebaseAuth.esm5SrcApiMod.Endpoint
-       with typings.firebaseAuth.apiMod.Endpoint
-       with typings.firebaseAuth.srcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv2SlashaccountsSlashmfaSignInColonstart: Slashv2SlashaccountsSlashmfaSignInColonstart = "/v2/accounts/mfaSignIn:start".asInstanceOf[Slashv2SlashaccountsSlashmfaSignInColonstart]
   
   @js.native
   sealed trait TENANT_ID_MISMATCH
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def TENANT_ID_MISMATCH: TENANT_ID_MISMATCH = "TENANT_ID_MISMATCH".asInstanceOf[TENANT_ID_MISMATCH]
   
@@ -1337,11 +1333,11 @@ object firebaseAuthStrings {
   sealed trait TOKEN_EXPIRED
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def TOKEN_EXPIRED: TOKEN_EXPIRED = "TOKEN_EXPIRED".asInstanceOf[TOKEN_EXPIRED]
   
@@ -1349,11 +1345,11 @@ object firebaseAuthStrings {
   sealed trait TOO_MANY_ATTEMPTS_TRY_LATER
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def TOO_MANY_ATTEMPTS_TRY_LATER: TOO_MANY_ATTEMPTS_TRY_LATER = "TOO_MANY_ATTEMPTS_TRY_LATER".asInstanceOf[TOO_MANY_ATTEMPTS_TRY_LATER]
   
@@ -1361,11 +1357,11 @@ object firebaseAuthStrings {
   sealed trait UNAUTHORIZED_DOMAIN
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def UNAUTHORIZED_DOMAIN: UNAUTHORIZED_DOMAIN = "UNAUTHORIZED_DOMAIN".asInstanceOf[UNAUTHORIZED_DOMAIN]
   
@@ -1373,11 +1369,11 @@ object firebaseAuthStrings {
   sealed trait UNSUPPORTED_FIRST_FACTOR
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def UNSUPPORTED_FIRST_FACTOR: UNSUPPORTED_FIRST_FACTOR = "UNSUPPORTED_FIRST_FACTOR".asInstanceOf[UNSUPPORTED_FIRST_FACTOR]
   
@@ -1385,11 +1381,11 @@ object firebaseAuthStrings {
   sealed trait UNSUPPORTED_TENANT_OPERATION
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def UNSUPPORTED_TENANT_OPERATION: UNSUPPORTED_TENANT_OPERATION = "UNSUPPORTED_TENANT_OPERATION".asInstanceOf[UNSUPPORTED_TENANT_OPERATION]
   
@@ -1397,11 +1393,11 @@ object firebaseAuthStrings {
   sealed trait UNVERIFIED_EMAIL
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def UNVERIFIED_EMAIL: UNVERIFIED_EMAIL = "UNVERIFIED_EMAIL".asInstanceOf[UNVERIFIED_EMAIL]
   
@@ -1409,11 +1405,11 @@ object firebaseAuthStrings {
   sealed trait USER_CANCELLED
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def USER_CANCELLED: USER_CANCELLED = "USER_CANCELLED".asInstanceOf[USER_CANCELLED]
   
@@ -1421,11 +1417,11 @@ object firebaseAuthStrings {
   sealed trait USER_DISABLED
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def USER_DISABLED: USER_DISABLED = "USER_DISABLED".asInstanceOf[USER_DISABLED]
   
@@ -1433,11 +1429,11 @@ object firebaseAuthStrings {
   sealed trait USER_NOT_FOUND
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def USER_NOT_FOUND: USER_NOT_FOUND = "USER_NOT_FOUND".asInstanceOf[USER_NOT_FOUND]
   
@@ -1446,11 +1442,11 @@ object firebaseAuthStrings {
     extends StObject
        with ActionCodeOperation
        with typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.rnSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.publicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.srcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.nodeSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.nodeEsmSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distEsm5SrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distCordovaSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distRnSrcModelPublicTypesMod.ActionCodeOperation
   inline def VERIFY_AND_CHANGE_EMAIL: VERIFY_AND_CHANGE_EMAIL = "VERIFY_AND_CHANGE_EMAIL".asInstanceOf[VERIFY_AND_CHANGE_EMAIL]
   
   @js.native
@@ -1458,22 +1454,22 @@ object firebaseAuthStrings {
     extends StObject
        with ActionCodeOperation
        with typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.rnSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.publicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.srcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.nodeSrcModelPublicTypesMod.ActionCodeOperation
-       with typings.firebaseAuth.nodeEsmSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distEsm5SrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distCordovaSrcModelPublicTypesMod.ActionCodeOperation
+       with typings.firebaseAuth.distRnSrcModelPublicTypesMod.ActionCodeOperation
   inline def VERIFY_EMAIL: VERIFY_EMAIL = "VERIFY_EMAIL".asInstanceOf[VERIFY_EMAIL]
   
   @js.native
   sealed trait WEAK_PASSWORD
     extends StObject
        with ServerError
-       with typings.firebaseAuth.rnSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.apiErrorsMod.ServerError
-       with typings.firebaseAuth.nodeSrcApiErrorsMod.ServerError
-       with typings.firebaseAuth.errorsMod.ServerError
-       with typings.firebaseAuth.srcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
   inline def WEAK_PASSWORD: WEAK_PASSWORD = "WEAK_PASSWORD".asInstanceOf[WEAK_PASSWORD]
   
@@ -1481,183 +1477,183 @@ object firebaseAuthStrings {
   sealed trait Webos
     extends StObject
        with BrowserName
-       with typings.firebaseAuth.rnSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.nodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.utilBrowserMod.BrowserName
-       with typings.firebaseAuth.coreUtilBrowserMod.BrowserName
-       with typings.firebaseAuth.srcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distEsm5SrcCoreUtilBrowserMod.BrowserName
   inline def Webos: Webos = "Webos".asInstanceOf[Webos]
   
   @js.native
   sealed trait Worker
     extends StObject
        with ClientPlatform
-       with typings.firebaseAuth.rnSrcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.versionMod.ClientPlatform
+       with typings.firebaseAuth.distRnSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distCordovaSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distSrcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.srcCoreUtilVersionMod.ClientPlatform
-       with typings.firebaseAuth.authMod.ClientPlatform
-       with typings.firebaseAuth.utilVersionMod.ClientPlatform
-       with typings.firebaseAuth.nodeSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distEsm5SrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distEsm2017SrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distAuthMod.ClientPlatform
+       with typings.firebaseAuth.distNodeSrcCoreUtilVersionMod.ClientPlatform
   inline def Worker: Worker = "Worker".asInstanceOf[Worker]
   
   @js.native
   sealed trait `X-Client-Version`
     extends StObject
        with HttpHeader
-       with typings.firebaseAuth.nodeEsmSrcApiMod.HttpHeader
        with typings.firebaseAuth.distSrcApiMod.HttpHeader
-       with typings.firebaseAuth.nodeSrcApiMod.HttpHeader
-       with typings.firebaseAuth.esm5SrcApiMod.HttpHeader
-       with typings.firebaseAuth.apiMod.HttpHeader
-       with typings.firebaseAuth.srcApiMod.HttpHeader
+       with typings.firebaseAuth.distCordovaSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distEsm5SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distRnSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distEsm2017SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distNodeSrcApiMod.HttpHeader
   inline def `X-Client-Version`: `X-Client-Version` = "X-Client-Version".asInstanceOf[`X-Client-Version`]
   
   @js.native
   sealed trait `X-Firebase-Client`
     extends StObject
        with HttpHeader
-       with typings.firebaseAuth.nodeEsmSrcApiMod.HttpHeader
        with typings.firebaseAuth.distSrcApiMod.HttpHeader
-       with typings.firebaseAuth.nodeSrcApiMod.HttpHeader
-       with typings.firebaseAuth.esm5SrcApiMod.HttpHeader
-       with typings.firebaseAuth.apiMod.HttpHeader
-       with typings.firebaseAuth.srcApiMod.HttpHeader
+       with typings.firebaseAuth.distCordovaSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distEsm5SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distRnSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distEsm2017SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distNodeSrcApiMod.HttpHeader
   inline def `X-Firebase-Client`: `X-Firebase-Client` = "X-Firebase-Client".asInstanceOf[`X-Firebase-Client`]
   
   @js.native
   sealed trait `X-Firebase-Locale`
     extends StObject
        with HttpHeader
-       with typings.firebaseAuth.nodeEsmSrcApiMod.HttpHeader
        with typings.firebaseAuth.distSrcApiMod.HttpHeader
-       with typings.firebaseAuth.nodeSrcApiMod.HttpHeader
-       with typings.firebaseAuth.esm5SrcApiMod.HttpHeader
-       with typings.firebaseAuth.apiMod.HttpHeader
-       with typings.firebaseAuth.srcApiMod.HttpHeader
+       with typings.firebaseAuth.distCordovaSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distEsm5SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distRnSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distEsm2017SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distNodeSrcApiMod.HttpHeader
   inline def `X-Firebase-Locale`: `X-Firebase-Locale` = "X-Firebase-Locale".asInstanceOf[`X-Firebase-Locale`]
   
   @js.native
   sealed trait `X-Firebase-gmpid`
     extends StObject
        with HttpHeader
-       with typings.firebaseAuth.nodeEsmSrcApiMod.HttpHeader
        with typings.firebaseAuth.distSrcApiMod.HttpHeader
-       with typings.firebaseAuth.nodeSrcApiMod.HttpHeader
-       with typings.firebaseAuth.esm5SrcApiMod.HttpHeader
-       with typings.firebaseAuth.apiMod.HttpHeader
-       with typings.firebaseAuth.srcApiMod.HttpHeader
+       with typings.firebaseAuth.distCordovaSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distEsm5SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distRnSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distEsm2017SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distNodeSrcApiMod.HttpHeader
   inline def `X-Firebase-gmpid`: `X-Firebase-gmpid` = "X-Firebase-gmpid".asInstanceOf[`X-Firebase-gmpid`]
   
   @js.native
   sealed trait `account-exists-with-different-credential`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `account-exists-with-different-credential`: `account-exists-with-different-credential` = "account-exists-with-different-credential".asInstanceOf[`account-exists-with-different-credential`]
   
   @js.native
   sealed trait ack_
     extends StObject
        with Status
-       with typings.firebaseAuth.rnSrcPlatformBrowserMessagechannelMod.Status
-       with typings.firebaseAuth.platformBrowserMessagechannelMod.Status
-       with typings.firebaseAuth.messagechannelMod.Status
+       with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.Status
+       with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.Status
+       with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.Status
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.Status
-       with typings.firebaseAuth.nodeSrcPlatformBrowserMessagechannelMod.Status
-       with typings.firebaseAuth.nodeEsmSrcPlatformBrowserMessagechannelMod.Status
+       with typings.firebaseAuth.distNodeEsmSrcPlatformBrowserMessagechannelMod.Status
+       with typings.firebaseAuth.distEsm2017SrcPlatformBrowserMessagechannelMod.Status
   inline def ack_ : ack_ = "ack".asInstanceOf[ack_]
   
   @js.native
   sealed trait `admin-restricted-operation`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `admin-restricted-operation`: `admin-restricted-operation` = "admin-restricted-operation".asInstanceOf[`admin-restricted-operation`]
   
   @js.native
   sealed trait `already-initialized`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `already-initialized`: `already-initialized` = "already-initialized".asInstanceOf[`already-initialized`]
   
   @js.native
   sealed trait anonymous
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.modelEnumsMod.ProviderId
-       with typings.firebaseAuth.rnSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.srcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.enumsMod.ProviderId
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.modelEnumsMod.SignInMethod
-       with typings.firebaseAuth.rnSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.srcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.enumsMod.SignInMethod
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.SignInMethod
   inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait `app-deleted`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `app-deleted`: `app-deleted` = "app-deleted".asInstanceOf[`app-deleted`]
   
   @js.native
   sealed trait `app-not-authorized`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `app-not-authorized`: `app-not-authorized` = "app-not-authorized".asInstanceOf[`app-not-authorized`]
   
   @js.native
   sealed trait `app-not-installed`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `app-not-installed`: `app-not-installed` = "app-not-installed".asInstanceOf[`app-not-installed`]
   
   @js.native
@@ -1668,62 +1664,62 @@ object firebaseAuthStrings {
   sealed trait `argument-error`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `argument-error`: `argument-error` = "argument-error".asInstanceOf[`argument-error`]
   
   @js.native
   sealed trait auth
     extends StObject
        with ComponentName
-       with typings.firebaseAuth.registerMod.ComponentName
+       with typings.firebaseAuth.distCordovaSrcCoreAuthRegisterMod.ComponentName
+       with typings.firebaseAuth.distNodeEsmSrcCoreAuthRegisterMod.ComponentName
+       with typings.firebaseAuth.distEsm2017SrcCoreAuthRegisterMod.ComponentName
        with typings.firebaseAuth.distSrcCoreAuthRegisterMod.ComponentName
-       with typings.firebaseAuth.rnSrcCoreAuthRegisterMod.ComponentName
-       with typings.firebaseAuth.authRegisterMod.ComponentName
-       with typings.firebaseAuth.srcCoreAuthRegisterMod.ComponentName
-       with typings.firebaseAuth.nodeSrcCoreAuthRegisterMod.ComponentName
+       with typings.firebaseAuth.distRnSrcCoreAuthRegisterMod.ComponentName
+       with typings.firebaseAuth.distEsm5SrcCoreAuthRegisterMod.ComponentName
   inline def auth: auth = "auth".asInstanceOf[auth]
   
   @js.native
   sealed trait `auth-domain-config-required`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `auth-domain-config-required`: `auth-domain-config-required` = "auth-domain-config-required".asInstanceOf[`auth-domain-config-required`]
   
   @js.native
   sealed trait `auth-internal`
     extends StObject
        with ComponentName
-       with typings.firebaseAuth.registerMod.ComponentName
+       with typings.firebaseAuth.distCordovaSrcCoreAuthRegisterMod.ComponentName
+       with typings.firebaseAuth.distNodeEsmSrcCoreAuthRegisterMod.ComponentName
+       with typings.firebaseAuth.distEsm2017SrcCoreAuthRegisterMod.ComponentName
        with typings.firebaseAuth.distSrcCoreAuthRegisterMod.ComponentName
-       with typings.firebaseAuth.rnSrcCoreAuthRegisterMod.ComponentName
-       with typings.firebaseAuth.authRegisterMod.ComponentName
-       with typings.firebaseAuth.srcCoreAuthRegisterMod.ComponentName
-       with typings.firebaseAuth.nodeSrcCoreAuthRegisterMod.ComponentName
+       with typings.firebaseAuth.distRnSrcCoreAuthRegisterMod.ComponentName
+       with typings.firebaseAuth.distEsm5SrcCoreAuthRegisterMod.ComponentName
   inline def `auth-internal`: `auth-internal` = "auth-internal".asInstanceOf[`auth-internal`]
   
   @js.native
   sealed trait authEvent
     extends StObject
        with KeyName
-       with typings.firebaseAuth.distSrcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.srcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.persistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.rnSrcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.nodeSrcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.persistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distRnSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distEsm5SrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distNodeEsmSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distEsm2017SrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distCordovaSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distNodeSrcCorePersistencePersistenceUserManagerMod.KeyName
   inline def authEvent: authEvent = "authEvent".asInstanceOf[authEvent]
   
   @js.native
@@ -2110,126 +2106,126 @@ object firebaseAuthStrings {
   sealed trait authUser
     extends StObject
        with KeyName
-       with typings.firebaseAuth.distSrcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.srcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.persistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.rnSrcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.nodeSrcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.persistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distRnSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distEsm5SrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distNodeEsmSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distEsm2017SrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distCordovaSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distNodeSrcCorePersistencePersistenceUserManagerMod.KeyName
   inline def authUser: authUser = "authUser".asInstanceOf[authUser]
   
   @js.native
   sealed trait `cancelled-popup-request`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `cancelled-popup-request`: `cancelled-popup-request` = "cancelled-popup-request".asInstanceOf[`cancelled-popup-request`]
   
   @js.native
   sealed trait `captcha-check-failed`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `captcha-check-failed`: `captcha-check-failed` = "captcha-check-failed".asInstanceOf[`captcha-check-failed`]
   
   @js.native
   sealed trait `code-expired`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `code-expired`: `code-expired` = "code-expired".asInstanceOf[`code-expired`]
   
   @js.native
   sealed trait connection_closed
     extends StObject
        with MessageError
-       with typings.firebaseAuth.rnSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.platformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.messagechannelMod.MessageError
+       with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.nodeSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.nodeEsmSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distNodeEsmSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distEsm2017SrcPlatformBrowserMessagechannelMod.MessageError
   inline def connection_closed: connection_closed = "connection_closed".asInstanceOf[connection_closed]
   
   @js.native
   sealed trait connection_unavailable
     extends StObject
        with MessageError
-       with typings.firebaseAuth.rnSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.platformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.messagechannelMod.MessageError
+       with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.nodeSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.nodeEsmSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distNodeEsmSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distEsm2017SrcPlatformBrowserMessagechannelMod.MessageError
   inline def connection_unavailable: connection_unavailable = "connection_unavailable".asInstanceOf[connection_unavailable]
   
   @js.native
   sealed trait `cordova-not-ready`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `cordova-not-ready`: `cordova-not-ready` = "cordova-not-ready".asInstanceOf[`cordova-not-ready`]
   
   @js.native
   sealed trait `cors-unsupported`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `cors-unsupported`: `cors-unsupported` = "cors-unsupported".asInstanceOf[`cors-unsupported`]
   
   @js.native
   sealed trait `credential-already-in-use`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `credential-already-in-use`: `credential-already-in-use` = "credential-already-in-use".asInstanceOf[`credential-already-in-use`]
   
   @js.native
   sealed trait custom
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.modelEnumsMod.ProviderId
-       with typings.firebaseAuth.rnSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.srcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.enumsMod.ProviderId
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
   inline def custom: custom = "custom".asInstanceOf[custom]
   
@@ -2237,159 +2233,159 @@ object firebaseAuthStrings {
   sealed trait `custom-token-mismatch`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `custom-token-mismatch`: `custom-token-mismatch` = "custom-token-mismatch".asInstanceOf[`custom-token-mismatch`]
   
   @js.native
   sealed trait `dependent-sdk-initialized-before-auth`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `dependent-sdk-initialized-before-auth`: `dependent-sdk-initialized-before-auth` = "dependent-sdk-initialized-before-auth".asInstanceOf[`dependent-sdk-initialized-before-auth`]
   
   @js.native
   sealed trait done
     extends StObject
        with Status
-       with typings.firebaseAuth.rnSrcPlatformBrowserMessagechannelMod.Status
-       with typings.firebaseAuth.platformBrowserMessagechannelMod.Status
-       with typings.firebaseAuth.messagechannelMod.Status
+       with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.Status
+       with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.Status
+       with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.Status
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.Status
-       with typings.firebaseAuth.nodeSrcPlatformBrowserMessagechannelMod.Status
-       with typings.firebaseAuth.nodeEsmSrcPlatformBrowserMessagechannelMod.Status
+       with typings.firebaseAuth.distNodeEsmSrcPlatformBrowserMessagechannelMod.Status
+       with typings.firebaseAuth.distEsm2017SrcPlatformBrowserMessagechannelMod.Status
   inline def done: done = "done".asInstanceOf[done]
   
   @js.native
   sealed trait `dynamic-link-not-activated`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `dynamic-link-not-activated`: `dynamic-link-not-activated` = "dynamic-link-not-activated".asInstanceOf[`dynamic-link-not-activated`]
   
   @js.native
   sealed trait `email-already-in-use`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `email-already-in-use`: `email-already-in-use` = "email-already-in-use".asInstanceOf[`email-already-in-use`]
   
   @js.native
   sealed trait `email-change-needs-verification`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `email-change-needs-verification`: `email-change-needs-verification` = "email-change-needs-verification".asInstanceOf[`email-change-needs-verification`]
   
   @js.native
   sealed trait emailLink
     extends StObject
        with SignInMethod
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.modelEnumsMod.SignInMethod
-       with typings.firebaseAuth.rnSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.srcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.enumsMod.SignInMethod
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.SignInMethod
   inline def emailLink: emailLink = "emailLink".asInstanceOf[emailLink]
   
   @js.native
   sealed trait `emulator-config-failed`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `emulator-config-failed`: `emulator-config-failed` = "emulator-config-failed".asInstanceOf[`emulator-config-failed`]
   
   @js.native
   sealed trait enroll
     extends StObject
        with MultiFactorSessionType
-       with typings.firebaseAuth.mfaSessionMod.MultiFactorSessionType
+       with typings.firebaseAuth.distNodeSrcMfaMfaSessionMod.MultiFactorSessionType
        with typings.firebaseAuth.distSrcMfaMfaSessionMod.MultiFactorSessionType
-       with typings.firebaseAuth.mfaMfaSessionMod.MultiFactorSessionType
-       with typings.firebaseAuth.nodeEsmSrcMfaMfaSessionMod.MultiFactorSessionType
-       with typings.firebaseAuth.srcMfaMfaSessionMod.MultiFactorSessionType
-       with typings.firebaseAuth.nodeSrcMfaMfaSessionMod.MultiFactorSessionType
+       with typings.firebaseAuth.distRnSrcMfaMfaSessionMod.MultiFactorSessionType
+       with typings.firebaseAuth.distEsm2017SrcMfaMfaSessionMod.MultiFactorSessionType
+       with typings.firebaseAuth.distNodeEsmSrcMfaMfaSessionMod.MultiFactorSessionType
+       with typings.firebaseAuth.distCordovaSrcMfaMfaSessionMod.MultiFactorSessionType
   inline def enroll: enroll = "enroll".asInstanceOf[enroll]
   
   @js.native
   sealed trait `expired-action-code`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `expired-action-code`: `expired-action-code` = "expired-action-code".asInstanceOf[`expired-action-code`]
   
   @js.native
   sealed trait facebookDotcom
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.modelEnumsMod.ProviderId
-       with typings.firebaseAuth.rnSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.srcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.enumsMod.ProviderId
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.modelEnumsMod.SignInMethod
-       with typings.firebaseAuth.rnSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.srcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.enumsMod.SignInMethod
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.SignInMethod
   inline def facebookDotcom: facebookDotcom = "facebook.com".asInstanceOf[facebookDotcom]
   
   @js.native
   sealed trait firebase
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.modelEnumsMod.ProviderId
-       with typings.firebaseAuth.rnSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.srcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.enumsMod.ProviderId
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
   inline def firebase: firebase = "firebase".asInstanceOf[firebase]
   
@@ -2401,1535 +2397,1539 @@ object firebaseAuthStrings {
   sealed trait githubDotcom
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.modelEnumsMod.ProviderId
-       with typings.firebaseAuth.rnSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.srcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.enumsMod.ProviderId
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.modelEnumsMod.SignInMethod
-       with typings.firebaseAuth.rnSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.srcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.enumsMod.SignInMethod
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.SignInMethod
   inline def githubDotcom: githubDotcom = "github.com".asInstanceOf[githubDotcom]
   
   @js.native
   sealed trait googleDotcom
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.modelEnumsMod.ProviderId
-       with typings.firebaseAuth.rnSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.srcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.enumsMod.ProviderId
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.modelEnumsMod.SignInMethod
-       with typings.firebaseAuth.rnSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.srcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.enumsMod.SignInMethod
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.SignInMethod
   inline def googleDotcom: googleDotcom = "google.com".asInstanceOf[googleDotcom]
+  
+  @js.native
+  sealed trait heartbeat extends StObject
+  inline def heartbeat: heartbeat = "heartbeat".asInstanceOf[heartbeat]
   
   @js.native
   sealed trait https
     extends StObject
        with DefaultConfig
-       with typings.firebaseAuth.rnSrcCoreAuthAuthImplMod.DefaultConfig
-       with typings.firebaseAuth.authAuthImplMod.DefaultConfig
-       with typings.firebaseAuth.srcCoreAuthAuthImplMod.DefaultConfig
-       with typings.firebaseAuth.authImplMod.DefaultConfig
+       with typings.firebaseAuth.distEsm2017SrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distCordovaSrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distRnSrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distEsm5SrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distSrcCoreAuthAuthImplMod.DefaultConfig
-       with typings.firebaseAuth.nodeSrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distNodeEsmSrcCoreAuthAuthImplMod.DefaultConfig
   inline def https: https = "https".asInstanceOf[https]
   
   @js.native
   sealed trait identitytoolkitDotgoogleapisDotcom
     extends StObject
        with DefaultConfig
-       with typings.firebaseAuth.rnSrcCoreAuthAuthImplMod.DefaultConfig
-       with typings.firebaseAuth.authAuthImplMod.DefaultConfig
-       with typings.firebaseAuth.srcCoreAuthAuthImplMod.DefaultConfig
-       with typings.firebaseAuth.authImplMod.DefaultConfig
+       with typings.firebaseAuth.distEsm2017SrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distCordovaSrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distRnSrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distEsm5SrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distSrcCoreAuthAuthImplMod.DefaultConfig
-       with typings.firebaseAuth.nodeSrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distNodeEsmSrcCoreAuthAuthImplMod.DefaultConfig
   inline def identitytoolkitDotgoogleapisDotcom: identitytoolkitDotgoogleapisDotcom = "identitytoolkit.googleapis.com".asInstanceOf[identitytoolkitDotgoogleapisDotcom]
   
   @js.native
   sealed trait identitytoolkitNumbersignCreateAuthUriResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignCreateAuthUriResponse: identitytoolkitNumbersignCreateAuthUriResponse = "identitytoolkit#CreateAuthUriResponse".asInstanceOf[identitytoolkitNumbersignCreateAuthUriResponse]
   
   @js.native
   sealed trait identitytoolkitNumbersignDeleteAccountResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignDeleteAccountResponse: identitytoolkitNumbersignDeleteAccountResponse = "identitytoolkit#DeleteAccountResponse".asInstanceOf[identitytoolkitNumbersignDeleteAccountResponse]
   
   @js.native
   sealed trait identitytoolkitNumbersignDownloadAccountResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignDownloadAccountResponse: identitytoolkitNumbersignDownloadAccountResponse = "identitytoolkit#DownloadAccountResponse".asInstanceOf[identitytoolkitNumbersignDownloadAccountResponse]
   
   @js.native
   sealed trait identitytoolkitNumbersignEmailLinkSigninResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignEmailLinkSigninResponse: identitytoolkitNumbersignEmailLinkSigninResponse = "identitytoolkit#EmailLinkSigninResponse".asInstanceOf[identitytoolkitNumbersignEmailLinkSigninResponse]
   
   @js.native
   sealed trait identitytoolkitNumbersignGetAccountInfoResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignGetAccountInfoResponse: identitytoolkitNumbersignGetAccountInfoResponse = "identitytoolkit#GetAccountInfoResponse".asInstanceOf[identitytoolkitNumbersignGetAccountInfoResponse]
   
   @js.native
   sealed trait identitytoolkitNumbersignGetOobConfirmationCodeResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignGetOobConfirmationCodeResponse: identitytoolkitNumbersignGetOobConfirmationCodeResponse = "identitytoolkit#GetOobConfirmationCodeResponse".asInstanceOf[identitytoolkitNumbersignGetOobConfirmationCodeResponse]
   
   @js.native
   sealed trait identitytoolkitNumbersignGetRecaptchaParamResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignGetRecaptchaParamResponse: identitytoolkitNumbersignGetRecaptchaParamResponse = "identitytoolkit#GetRecaptchaParamResponse".asInstanceOf[identitytoolkitNumbersignGetRecaptchaParamResponse]
   
   @js.native
   sealed trait identitytoolkitNumbersignResetPasswordResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignResetPasswordResponse: identitytoolkitNumbersignResetPasswordResponse = "identitytoolkit#ResetPasswordResponse".asInstanceOf[identitytoolkitNumbersignResetPasswordResponse]
   
   @js.native
   sealed trait identitytoolkitNumbersignSetAccountInfoResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignSetAccountInfoResponse: identitytoolkitNumbersignSetAccountInfoResponse = "identitytoolkit#SetAccountInfoResponse".asInstanceOf[identitytoolkitNumbersignSetAccountInfoResponse]
   
   @js.native
   sealed trait identitytoolkitNumbersignSignupNewUserResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignSignupNewUserResponse: identitytoolkitNumbersignSignupNewUserResponse = "identitytoolkit#SignupNewUserResponse".asInstanceOf[identitytoolkitNumbersignSignupNewUserResponse]
   
   @js.native
   sealed trait identitytoolkitNumbersignUploadAccountResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignUploadAccountResponse: identitytoolkitNumbersignUploadAccountResponse = "identitytoolkit#UploadAccountResponse".asInstanceOf[identitytoolkitNumbersignUploadAccountResponse]
   
   @js.native
   sealed trait identitytoolkitNumbersignVerifyAssertionResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignVerifyAssertionResponse: identitytoolkitNumbersignVerifyAssertionResponse = "identitytoolkit#VerifyAssertionResponse".asInstanceOf[identitytoolkitNumbersignVerifyAssertionResponse]
   
   @js.native
   sealed trait identitytoolkitNumbersignVerifyCustomTokenResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignVerifyCustomTokenResponse: identitytoolkitNumbersignVerifyCustomTokenResponse = "identitytoolkit#VerifyCustomTokenResponse".asInstanceOf[identitytoolkitNumbersignVerifyCustomTokenResponse]
   
   @js.native
   sealed trait identitytoolkitNumbersignVerifyPasswordResponse
     extends StObject
        with IdTokenResponseKind
-       with typings.firebaseAuth.idTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.modelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distRnSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.authMod.IdTokenResponseKind
-       with typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeEsmSrcModelIdTokenMod.IdTokenResponseKind
-       with typings.firebaseAuth.nodeSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
+       with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignVerifyPasswordResponse: identitytoolkitNumbersignVerifyPasswordResponse = "identitytoolkit#VerifyPasswordResponse".asInstanceOf[identitytoolkitNumbersignVerifyPasswordResponse]
   
   @js.native
   sealed trait `internal-error`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `internal-error`: `internal-error` = "internal-error".asInstanceOf[`internal-error`]
   
   @js.native
   sealed trait `invalid-action-code`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-action-code`: `invalid-action-code` = "invalid-action-code".asInstanceOf[`invalid-action-code`]
   
   @js.native
   sealed trait `invalid-api-key`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-api-key`: `invalid-api-key` = "invalid-api-key".asInstanceOf[`invalid-api-key`]
   
   @js.native
   sealed trait `invalid-app-credential`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-app-credential`: `invalid-app-credential` = "invalid-app-credential".asInstanceOf[`invalid-app-credential`]
   
   @js.native
   sealed trait `invalid-app-id`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-app-id`: `invalid-app-id` = "invalid-app-id".asInstanceOf[`invalid-app-id`]
   
   @js.native
   sealed trait `invalid-auth-event`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-auth-event`: `invalid-auth-event` = "invalid-auth-event".asInstanceOf[`invalid-auth-event`]
   
   @js.native
   sealed trait `invalid-cert-hash`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-cert-hash`: `invalid-cert-hash` = "invalid-cert-hash".asInstanceOf[`invalid-cert-hash`]
   
   @js.native
   sealed trait `invalid-continue-uri`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-continue-uri`: `invalid-continue-uri` = "invalid-continue-uri".asInstanceOf[`invalid-continue-uri`]
   
   @js.native
   sealed trait `invalid-cordova-configuration`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-cordova-configuration`: `invalid-cordova-configuration` = "invalid-cordova-configuration".asInstanceOf[`invalid-cordova-configuration`]
   
   @js.native
   sealed trait `invalid-credential`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-credential`: `invalid-credential` = "invalid-credential".asInstanceOf[`invalid-credential`]
   
   @js.native
   sealed trait `invalid-custom-token`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-custom-token`: `invalid-custom-token` = "invalid-custom-token".asInstanceOf[`invalid-custom-token`]
   
   @js.native
   sealed trait `invalid-dynamic-link-domain`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-dynamic-link-domain`: `invalid-dynamic-link-domain` = "invalid-dynamic-link-domain".asInstanceOf[`invalid-dynamic-link-domain`]
   
   @js.native
   sealed trait `invalid-email`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-email`: `invalid-email` = "invalid-email".asInstanceOf[`invalid-email`]
   
   @js.native
   sealed trait `invalid-emulator-scheme`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-emulator-scheme`: `invalid-emulator-scheme` = "invalid-emulator-scheme".asInstanceOf[`invalid-emulator-scheme`]
   
   @js.native
   sealed trait `invalid-message-payload`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-message-payload`: `invalid-message-payload` = "invalid-message-payload".asInstanceOf[`invalid-message-payload`]
   
   @js.native
   sealed trait `invalid-multi-factor-session`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-multi-factor-session`: `invalid-multi-factor-session` = "invalid-multi-factor-session".asInstanceOf[`invalid-multi-factor-session`]
   
   @js.native
   sealed trait `invalid-oauth-client-id`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-oauth-client-id`: `invalid-oauth-client-id` = "invalid-oauth-client-id".asInstanceOf[`invalid-oauth-client-id`]
   
   @js.native
   sealed trait `invalid-oauth-provider`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-oauth-provider`: `invalid-oauth-provider` = "invalid-oauth-provider".asInstanceOf[`invalid-oauth-provider`]
   
   @js.native
   sealed trait `invalid-persistence-type`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-persistence-type`: `invalid-persistence-type` = "invalid-persistence-type".asInstanceOf[`invalid-persistence-type`]
   
   @js.native
   sealed trait `invalid-phone-number`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-phone-number`: `invalid-phone-number` = "invalid-phone-number".asInstanceOf[`invalid-phone-number`]
   
   @js.native
   sealed trait `invalid-provider-id`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-provider-id`: `invalid-provider-id` = "invalid-provider-id".asInstanceOf[`invalid-provider-id`]
   
   @js.native
   sealed trait `invalid-recipient-email`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-recipient-email`: `invalid-recipient-email` = "invalid-recipient-email".asInstanceOf[`invalid-recipient-email`]
   
   @js.native
   sealed trait `invalid-sender`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-sender`: `invalid-sender` = "invalid-sender".asInstanceOf[`invalid-sender`]
   
   @js.native
   sealed trait `invalid-tenant-id`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-tenant-id`: `invalid-tenant-id` = "invalid-tenant-id".asInstanceOf[`invalid-tenant-id`]
   
   @js.native
   sealed trait `invalid-user-token`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-user-token`: `invalid-user-token` = "invalid-user-token".asInstanceOf[`invalid-user-token`]
   
   @js.native
   sealed trait `invalid-verification-code`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-verification-code`: `invalid-verification-code` = "invalid-verification-code".asInstanceOf[`invalid-verification-code`]
   
   @js.native
   sealed trait `invalid-verification-id`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `invalid-verification-id`: `invalid-verification-id` = "invalid-verification-id".asInstanceOf[`invalid-verification-id`]
   
   @js.native
   sealed trait invalid_response
     extends StObject
        with MessageError
-       with typings.firebaseAuth.rnSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.platformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.messagechannelMod.MessageError
+       with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.nodeSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.nodeEsmSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distNodeEsmSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distEsm2017SrcPlatformBrowserMessagechannelMod.MessageError
   inline def invalid_response: invalid_response = "invalid_response".asInstanceOf[invalid_response]
   
   @js.native
   sealed trait keyChanged
     extends StObject
        with EventType
-       with typings.firebaseAuth.rnSrcPlatformBrowserMessagechannelMod.EventType
-       with typings.firebaseAuth.platformBrowserMessagechannelMod.EventType
-       with typings.firebaseAuth.messagechannelMod.EventType
+       with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.EventType
+       with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.EventType
+       with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.EventType
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.EventType
-       with typings.firebaseAuth.nodeSrcPlatformBrowserMessagechannelMod.EventType
-       with typings.firebaseAuth.nodeEsmSrcPlatformBrowserMessagechannelMod.EventType
+       with typings.firebaseAuth.distNodeEsmSrcPlatformBrowserMessagechannelMod.EventType
+       with typings.firebaseAuth.distEsm2017SrcPlatformBrowserMessagechannelMod.EventType
   inline def keyChanged: keyChanged = "keyChanged".asInstanceOf[keyChanged]
   
   @js.native
   sealed trait link
     extends StObject
        with OperationType
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.OperationType
        with typings.firebaseAuth.distSrcModelEnumsMod.OperationType
-       with typings.firebaseAuth.modelEnumsMod.OperationType
-       with typings.firebaseAuth.rnSrcModelEnumsMod.OperationType
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.OperationType
-       with typings.firebaseAuth.srcModelEnumsMod.OperationType
-       with typings.firebaseAuth.enumsMod.OperationType
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.OperationType
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.OperationType
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.OperationType
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.OperationType
   inline def link: link = "link".asInstanceOf[link]
   
   @js.native
   sealed trait linkViaPopup
     extends StObject
        with AuthEventType
-       with typings.firebaseAuth.modelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.srcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.rnSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeEsmSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.authMod.AuthEventType
-       with typings.firebaseAuth.popupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm2017SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distAuthMod.AuthEventType
+       with typings.firebaseAuth.distCordovaSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distRnSrcModelPopupRedirectMod.AuthEventType
   inline def linkViaPopup: linkViaPopup = "linkViaPopup".asInstanceOf[linkViaPopup]
   
   @js.native
   sealed trait linkViaRedirect
     extends StObject
        with AuthEventType
-       with typings.firebaseAuth.modelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.srcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.rnSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeEsmSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.authMod.AuthEventType
-       with typings.firebaseAuth.popupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm2017SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distAuthMod.AuthEventType
+       with typings.firebaseAuth.distCordovaSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distRnSrcModelPopupRedirectMod.AuthEventType
   inline def linkViaRedirect: linkViaRedirect = "linkViaRedirect".asInstanceOf[linkViaRedirect]
   
   @js.native
   sealed trait `login-blocked`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `login-blocked`: `login-blocked` = "login-blocked".asInstanceOf[`login-blocked`]
   
   @js.native
   sealed trait `maximum-second-factor-count-exceeded`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `maximum-second-factor-count-exceeded`: `maximum-second-factor-count-exceeded` = "maximum-second-factor-count-exceeded".asInstanceOf[`maximum-second-factor-count-exceeded`]
   
   @js.native
   sealed trait `missing-android-pkg-name`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `missing-android-pkg-name`: `missing-android-pkg-name` = "missing-android-pkg-name".asInstanceOf[`missing-android-pkg-name`]
   
   @js.native
   sealed trait `missing-app-credential`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `missing-app-credential`: `missing-app-credential` = "missing-app-credential".asInstanceOf[`missing-app-credential`]
   
   @js.native
   sealed trait `missing-continue-uri`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `missing-continue-uri`: `missing-continue-uri` = "missing-continue-uri".asInstanceOf[`missing-continue-uri`]
   
   @js.native
   sealed trait `missing-iframe-start`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `missing-iframe-start`: `missing-iframe-start` = "missing-iframe-start".asInstanceOf[`missing-iframe-start`]
   
   @js.native
   sealed trait `missing-ios-bundle-id`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `missing-ios-bundle-id`: `missing-ios-bundle-id` = "missing-ios-bundle-id".asInstanceOf[`missing-ios-bundle-id`]
   
   @js.native
   sealed trait `missing-multi-factor-info`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `missing-multi-factor-info`: `missing-multi-factor-info` = "missing-multi-factor-info".asInstanceOf[`missing-multi-factor-info`]
   
   @js.native
   sealed trait `missing-multi-factor-session`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `missing-multi-factor-session`: `missing-multi-factor-session` = "missing-multi-factor-session".asInstanceOf[`missing-multi-factor-session`]
   
   @js.native
   sealed trait `missing-or-invalid-nonce`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `missing-or-invalid-nonce`: `missing-or-invalid-nonce` = "missing-or-invalid-nonce".asInstanceOf[`missing-or-invalid-nonce`]
   
   @js.native
   sealed trait `missing-phone-number`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `missing-phone-number`: `missing-phone-number` = "missing-phone-number".asInstanceOf[`missing-phone-number`]
   
   @js.native
   sealed trait `missing-verification-code`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `missing-verification-code`: `missing-verification-code` = "missing-verification-code".asInstanceOf[`missing-verification-code`]
   
   @js.native
   sealed trait `missing-verification-id`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `missing-verification-id`: `missing-verification-id` = "missing-verification-id".asInstanceOf[`missing-verification-id`]
   
   @js.native
   sealed trait `multi-factor-auth-required`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `multi-factor-auth-required`: `multi-factor-auth-required` = "multi-factor-auth-required".asInstanceOf[`multi-factor-auth-required`]
   
   @js.native
   sealed trait `multi-factor-info-not-found`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `multi-factor-info-not-found`: `multi-factor-info-not-found` = "multi-factor-info-not-found".asInstanceOf[`multi-factor-info-not-found`]
   
   @js.native
   sealed trait `network-request-failed`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `network-request-failed`: `network-request-failed` = "network-request-failed".asInstanceOf[`network-request-failed`]
   
   @js.native
   sealed trait `no-auth-event`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `no-auth-event`: `no-auth-event` = "no-auth-event".asInstanceOf[`no-auth-event`]
   
   @js.native
   sealed trait `no-such-provider`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `no-such-provider`: `no-such-provider` = "no-such-provider".asInstanceOf[`no-such-provider`]
   
   @js.native
   sealed trait `null-user`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `null-user`: `null-user` = "null-user".asInstanceOf[`null-user`]
   
   @js.native
   sealed trait `operation-not-allowed`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `operation-not-allowed`: `operation-not-allowed` = "operation-not-allowed".asInstanceOf[`operation-not-allowed`]
   
   @js.native
   sealed trait `operation-not-supported-in-this-environment`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `operation-not-supported-in-this-environment`: `operation-not-supported-in-this-environment` = "operation-not-supported-in-this-environment".asInstanceOf[`operation-not-supported-in-this-environment`]
   
   @js.native
   sealed trait password
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.modelEnumsMod.ProviderId
-       with typings.firebaseAuth.rnSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.srcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.enumsMod.ProviderId
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.modelEnumsMod.SignInMethod
-       with typings.firebaseAuth.rnSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.srcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.enumsMod.SignInMethod
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.SignInMethod
   inline def password: password = "password".asInstanceOf[password]
   
   @js.native
   sealed trait persistence
     extends StObject
        with KeyName
-       with typings.firebaseAuth.distSrcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.srcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.persistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.rnSrcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.nodeSrcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.persistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distRnSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distEsm5SrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distNodeEsmSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distEsm2017SrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distCordovaSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distNodeSrcCorePersistencePersistenceUserManagerMod.KeyName
   inline def persistence: persistence = "persistence".asInstanceOf[persistence]
   
   @js.native
   sealed trait phone
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.modelEnumsMod.ProviderId
-       with typings.firebaseAuth.rnSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.srcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.enumsMod.ProviderId
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.modelEnumsMod.SignInMethod
-       with typings.firebaseAuth.rnSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.srcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.enumsMod.SignInMethod
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.SignInMethod
   inline def phone: phone = "phone".asInstanceOf[phone]
   
   @js.native
   sealed trait ping
     extends StObject
        with EventType
-       with typings.firebaseAuth.rnSrcPlatformBrowserMessagechannelMod.EventType
-       with typings.firebaseAuth.platformBrowserMessagechannelMod.EventType
-       with typings.firebaseAuth.messagechannelMod.EventType
+       with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.EventType
+       with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.EventType
+       with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.EventType
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.EventType
-       with typings.firebaseAuth.nodeSrcPlatformBrowserMessagechannelMod.EventType
-       with typings.firebaseAuth.nodeEsmSrcPlatformBrowserMessagechannelMod.EventType
+       with typings.firebaseAuth.distNodeEsmSrcPlatformBrowserMessagechannelMod.EventType
+       with typings.firebaseAuth.distEsm2017SrcPlatformBrowserMessagechannelMod.EventType
   inline def ping: ping = "ping".asInstanceOf[ping]
   
   @js.native
   sealed trait `popup-blocked`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `popup-blocked`: `popup-blocked` = "popup-blocked".asInstanceOf[`popup-blocked`]
   
   @js.native
   sealed trait `popup-closed-by-user`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `popup-closed-by-user`: `popup-closed-by-user` = "popup-closed-by-user".asInstanceOf[`popup-closed-by-user`]
   
   @js.native
   sealed trait `provider-already-linked`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `provider-already-linked`: `provider-already-linked` = "provider-already-linked".asInstanceOf[`provider-already-linked`]
   
   @js.native
   sealed trait `quota-exceeded`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `quota-exceeded`: `quota-exceeded` = "quota-exceeded".asInstanceOf[`quota-exceeded`]
   
   @js.native
   sealed trait reauthViaPopup
     extends StObject
        with AuthEventType
-       with typings.firebaseAuth.modelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.srcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.rnSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeEsmSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.authMod.AuthEventType
-       with typings.firebaseAuth.popupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm2017SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distAuthMod.AuthEventType
+       with typings.firebaseAuth.distCordovaSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distRnSrcModelPopupRedirectMod.AuthEventType
   inline def reauthViaPopup: reauthViaPopup = "reauthViaPopup".asInstanceOf[reauthViaPopup]
   
   @js.native
   sealed trait reauthViaRedirect
     extends StObject
        with AuthEventType
-       with typings.firebaseAuth.modelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.srcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.rnSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeEsmSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.authMod.AuthEventType
-       with typings.firebaseAuth.popupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm2017SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distAuthMod.AuthEventType
+       with typings.firebaseAuth.distCordovaSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distRnSrcModelPopupRedirectMod.AuthEventType
   inline def reauthViaRedirect: reauthViaRedirect = "reauthViaRedirect".asInstanceOf[reauthViaRedirect]
   
   @js.native
   sealed trait reauthenticate
     extends StObject
        with OperationType
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.OperationType
        with typings.firebaseAuth.distSrcModelEnumsMod.OperationType
-       with typings.firebaseAuth.modelEnumsMod.OperationType
-       with typings.firebaseAuth.rnSrcModelEnumsMod.OperationType
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.OperationType
-       with typings.firebaseAuth.srcModelEnumsMod.OperationType
-       with typings.firebaseAuth.enumsMod.OperationType
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.OperationType
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.OperationType
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.OperationType
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.OperationType
   inline def reauthenticate: reauthenticate = "reauthenticate".asInstanceOf[reauthenticate]
   
   @js.native
   sealed trait `redirect-cancelled-by-user`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `redirect-cancelled-by-user`: `redirect-cancelled-by-user` = "redirect-cancelled-by-user".asInstanceOf[`redirect-cancelled-by-user`]
   
   @js.native
   sealed trait `redirect-operation-pending`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `redirect-operation-pending`: `redirect-operation-pending` = "redirect-operation-pending".asInstanceOf[`redirect-operation-pending`]
   
   @js.native
   sealed trait redirectUser
     extends StObject
        with KeyName
-       with typings.firebaseAuth.distSrcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.srcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.persistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.rnSrcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.nodeSrcCorePersistencePersistenceUserManagerMod.KeyName
-       with typings.firebaseAuth.persistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distRnSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distEsm5SrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distNodeEsmSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distEsm2017SrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distCordovaSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distNodeSrcCorePersistencePersistenceUserManagerMod.KeyName
   inline def redirectUser: redirectUser = "redirectUser".asInstanceOf[redirectUser]
   
   @js.native
   sealed trait `rejected-credential`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `rejected-credential`: `rejected-credential` = "rejected-credential".asInstanceOf[`rejected-credential`]
   
   @js.native
   sealed trait `requires-recent-login`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `requires-recent-login`: `requires-recent-login` = "requires-recent-login".asInstanceOf[`requires-recent-login`]
   
   @js.native
   sealed trait `second-factor-already-in-use`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `second-factor-already-in-use`: `second-factor-already-in-use` = "second-factor-already-in-use".asInstanceOf[`second-factor-already-in-use`]
   
   @js.native
   sealed trait securetokenDotgoogleapisDotcom
     extends StObject
        with DefaultConfig
-       with typings.firebaseAuth.rnSrcCoreAuthAuthImplMod.DefaultConfig
-       with typings.firebaseAuth.authAuthImplMod.DefaultConfig
-       with typings.firebaseAuth.srcCoreAuthAuthImplMod.DefaultConfig
-       with typings.firebaseAuth.authImplMod.DefaultConfig
+       with typings.firebaseAuth.distEsm2017SrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distCordovaSrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distRnSrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distEsm5SrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distSrcCoreAuthAuthImplMod.DefaultConfig
-       with typings.firebaseAuth.nodeSrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distNodeEsmSrcCoreAuthAuthImplMod.DefaultConfig
   inline def securetokenDotgoogleapisDotcom: securetokenDotgoogleapisDotcom = "securetoken.googleapis.com".asInstanceOf[securetokenDotgoogleapisDotcom]
   
   @js.native
   sealed trait signIn
     extends StObject
        with OperationType
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.OperationType
        with typings.firebaseAuth.distSrcModelEnumsMod.OperationType
-       with typings.firebaseAuth.modelEnumsMod.OperationType
-       with typings.firebaseAuth.rnSrcModelEnumsMod.OperationType
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.OperationType
-       with typings.firebaseAuth.srcModelEnumsMod.OperationType
-       with typings.firebaseAuth.enumsMod.OperationType
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.OperationType
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.OperationType
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.OperationType
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.OperationType
   inline def signIn: signIn = "signIn".asInstanceOf[signIn]
   
   @js.native
   sealed trait signInViaPopup
     extends StObject
        with AuthEventType
-       with typings.firebaseAuth.modelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.srcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.rnSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeEsmSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.authMod.AuthEventType
-       with typings.firebaseAuth.popupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm2017SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distAuthMod.AuthEventType
+       with typings.firebaseAuth.distCordovaSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distRnSrcModelPopupRedirectMod.AuthEventType
   inline def signInViaPopup: signInViaPopup = "signInViaPopup".asInstanceOf[signInViaPopup]
   
   @js.native
   sealed trait signInViaRedirect
     extends StObject
        with AuthEventType
-       with typings.firebaseAuth.modelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.srcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.rnSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeEsmSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.authMod.AuthEventType
-       with typings.firebaseAuth.popupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm2017SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distAuthMod.AuthEventType
+       with typings.firebaseAuth.distCordovaSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distRnSrcModelPopupRedirectMod.AuthEventType
   inline def signInViaRedirect: signInViaRedirect = "signInViaRedirect".asInstanceOf[signInViaRedirect]
   
   @js.native
   sealed trait signin_
     extends StObject
        with MultiFactorSessionType
-       with typings.firebaseAuth.mfaSessionMod.MultiFactorSessionType
+       with typings.firebaseAuth.distNodeSrcMfaMfaSessionMod.MultiFactorSessionType
        with typings.firebaseAuth.distSrcMfaMfaSessionMod.MultiFactorSessionType
-       with typings.firebaseAuth.mfaMfaSessionMod.MultiFactorSessionType
-       with typings.firebaseAuth.nodeEsmSrcMfaMfaSessionMod.MultiFactorSessionType
-       with typings.firebaseAuth.srcMfaMfaSessionMod.MultiFactorSessionType
-       with typings.firebaseAuth.nodeSrcMfaMfaSessionMod.MultiFactorSessionType
+       with typings.firebaseAuth.distRnSrcMfaMfaSessionMod.MultiFactorSessionType
+       with typings.firebaseAuth.distEsm2017SrcMfaMfaSessionMod.MultiFactorSessionType
+       with typings.firebaseAuth.distNodeEsmSrcMfaMfaSessionMod.MultiFactorSessionType
+       with typings.firebaseAuth.distCordovaSrcMfaMfaSessionMod.MultiFactorSessionType
   inline def signin_ : signin_ = "signin".asInstanceOf[signin_]
   
   @js.native
   sealed trait `tenant-id-mismatch`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `tenant-id-mismatch`: `tenant-id-mismatch` = "tenant-id-mismatch".asInstanceOf[`tenant-id-mismatch`]
   
   @js.native
   sealed trait timeout
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
        with MessageError
-       with typings.firebaseAuth.rnSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.platformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.messagechannelMod.MessageError
+       with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.nodeSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.nodeEsmSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distNodeEsmSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distEsm2017SrcPlatformBrowserMessagechannelMod.MessageError
   inline def timeout: timeout = "timeout".asInstanceOf[timeout]
   
   @js.native
   sealed trait `too-many-requests`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `too-many-requests`: `too-many-requests` = "too-many-requests".asInstanceOf[`too-many-requests`]
   
   @js.native
   sealed trait twitterDotcom
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.modelEnumsMod.ProviderId
-       with typings.firebaseAuth.rnSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.srcModelEnumsMod.ProviderId
-       with typings.firebaseAuth.enumsMod.ProviderId
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.ProviderId
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.modelEnumsMod.SignInMethod
-       with typings.firebaseAuth.rnSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.nodeSrcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.srcModelEnumsMod.SignInMethod
-       with typings.firebaseAuth.enumsMod.SignInMethod
+       with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeEsmSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distNodeSrcModelEnumsMod.SignInMethod
+       with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.SignInMethod
   inline def twitterDotcom: twitterDotcom = "twitter.com".asInstanceOf[twitterDotcom]
   
   @js.native
   sealed trait `unauthorized-continue-uri`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `unauthorized-continue-uri`: `unauthorized-continue-uri` = "unauthorized-continue-uri".asInstanceOf[`unauthorized-continue-uri`]
   
   @js.native
   sealed trait `unauthorized-domain`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `unauthorized-domain`: `unauthorized-domain` = "unauthorized-domain".asInstanceOf[`unauthorized-domain`]
   
   @js.native
   sealed trait unknown
     extends StObject
        with AuthEventType
-       with typings.firebaseAuth.modelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.srcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.rnSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeEsmSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.authMod.AuthEventType
-       with typings.firebaseAuth.popupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm2017SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distAuthMod.AuthEventType
+       with typings.firebaseAuth.distCordovaSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distRnSrcModelPopupRedirectMod.AuthEventType
   inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
   sealed trait unknown_error
     extends StObject
        with MessageError
-       with typings.firebaseAuth.rnSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.platformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.messagechannelMod.MessageError
+       with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.nodeSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.nodeEsmSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distNodeEsmSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distEsm2017SrcPlatformBrowserMessagechannelMod.MessageError
   inline def unknown_error: unknown_error = "unknown_error".asInstanceOf[unknown_error]
   
   @js.native
   sealed trait `unsupported-first-factor`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `unsupported-first-factor`: `unsupported-first-factor` = "unsupported-first-factor".asInstanceOf[`unsupported-first-factor`]
   
   @js.native
   sealed trait `unsupported-persistence-type`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `unsupported-persistence-type`: `unsupported-persistence-type` = "unsupported-persistence-type".asInstanceOf[`unsupported-persistence-type`]
   
   @js.native
   sealed trait `unsupported-tenant-operation`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `unsupported-tenant-operation`: `unsupported-tenant-operation` = "unsupported-tenant-operation".asInstanceOf[`unsupported-tenant-operation`]
   
   @js.native
   sealed trait unsupported_event
     extends StObject
        with MessageError
-       with typings.firebaseAuth.rnSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.platformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.messagechannelMod.MessageError
+       with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.nodeSrcPlatformBrowserMessagechannelMod.MessageError
-       with typings.firebaseAuth.nodeEsmSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distNodeEsmSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distEsm2017SrcPlatformBrowserMessagechannelMod.MessageError
   inline def unsupported_event: unsupported_event = "unsupported_event".asInstanceOf[unsupported_event]
   
   @js.native
   sealed trait `unverified-email`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `unverified-email`: `unverified-email` = "unverified-email".asInstanceOf[`unverified-email`]
   
   @js.native
   sealed trait `user-cancelled`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `user-cancelled`: `user-cancelled` = "user-cancelled".asInstanceOf[`user-cancelled`]
   
   @js.native
   sealed trait `user-disabled`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `user-disabled`: `user-disabled` = "user-disabled".asInstanceOf[`user-disabled`]
   
   @js.native
   sealed trait `user-mismatch`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `user-mismatch`: `user-mismatch` = "user-mismatch".asInstanceOf[`user-mismatch`]
   
   @js.native
   sealed trait `user-not-found`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `user-not-found`: `user-not-found` = "user-not-found".asInstanceOf[`user-not-found`]
   
   @js.native
   sealed trait `user-signed-out`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `user-signed-out`: `user-signed-out` = "user-signed-out".asInstanceOf[`user-signed-out`]
   
   @js.native
   sealed trait `user-token-expired`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `user-token-expired`: `user-token-expired` = "user-token-expired".asInstanceOf[`user-token-expired`]
   
   @js.native
   sealed trait verifyApp
     extends StObject
        with AuthEventType
-       with typings.firebaseAuth.modelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.srcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.rnSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeEsmSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.nodeSrcModelPopupRedirectMod.AuthEventType
-       with typings.firebaseAuth.authMod.AuthEventType
-       with typings.firebaseAuth.popupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distEsm2017SrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distAuthMod.AuthEventType
+       with typings.firebaseAuth.distCordovaSrcModelPopupRedirectMod.AuthEventType
+       with typings.firebaseAuth.distRnSrcModelPopupRedirectMod.AuthEventType
   inline def verifyApp: verifyApp = "verifyApp".asInstanceOf[verifyApp]
   
   @js.native
   sealed trait `weak-password`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `weak-password`: `weak-password` = "weak-password".asInstanceOf[`weak-password`]
   
   @js.native
   sealed trait `web-storage-unsupported`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `web-storage-unsupported`: `web-storage-unsupported` = "web-storage-unsupported".asInstanceOf[`web-storage-unsupported`]
   
   @js.native
   sealed trait `wrong-password`
     extends StObject
        with AuthErrorCode
-       with typings.firebaseAuth.rnSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.srcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.nodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
-       with typings.firebaseAuth.authMod.AuthErrorCode
-       with typings.firebaseAuth.esm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
   inline def `wrong-password`: `wrong-password` = "wrong-password".asInstanceOf[`wrong-password`]
 }

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined yargs.yargs.Arguments<std.Partial<{  all :boolean,   automock :boolean,   bail :boolean | number,   cache :boolean,   cacheDirectory :string,   changedFilesWithAncestor :boolean,   changedSince :string,   ci :boolean,   clearCache :boolean,   clearMocks :boolean,   collectCoverage :boolean,   collectCoverageFrom :string,   color :boolean,   colors :boolean,   config :string,   coverage :boolean,   coverageDirectory :string,   coveragePathIgnorePatterns :std.Array<string>,   coverageReporters :std.Array<string>,   coverageThreshold :string,   debug :boolean,   env :string,   expand :boolean,   findRelatedTests :boolean,   forceExit :boolean,   globals :string,   globalSetup :string | null | undefined,   globalTeardown :string | null | undefined,   haste :string,   ignoreProjects :std.Array<string>,   init :boolean,   injectGlobals :boolean,   json :boolean,   lastCommit :boolean,   logHeapUsage :boolean,   maxWorkers :number | string,   moduleDirectories :std.Array<string>,   moduleFileExtensions :std.Array<string>,   moduleNameMapper :string,   modulePathIgnorePatterns :std.Array<string>,   modulePaths :std.Array<string>,   noStackTrace :boolean,   notify :boolean,   notifyMode :string,   onlyChanged :boolean,   onlyFailures :boolean,   outputFile :string,   preset :string | null | undefined,   prettierPath :string | null | undefined,   projects :std.Array<string>,   reporters :std.Array<string>,   resetMocks :boolean,   resetModules :boolean,   resolver :string | null | undefined,   restoreMocks :boolean,   rootDir :string,   roots :std.Array<string>,   runInBand :boolean,   selectProjects :std.Array<string>,   setupFiles :std.Array<string>,   setupFilesAfterEnv :std.Array<string>,   shard :string,   showConfig :boolean,   silent :boolean,   snapshotSerializers :std.Array<string>,   testEnvironment :string,   testEnvironmentOptions :string,   testFailureExitCode :string | null | undefined,   testMatch :std.Array<string>,   testNamePattern :string,   testPathIgnorePatterns :std.Array<string>,   testPathPattern :std.Array<string>,   testRegex :string | std.Array<string>,   testResultsProcessor :string,   testRunner :string,   testSequencer :string,   testTimeout :number | null | undefined,   transform :string,   transformIgnorePatterns :std.Array<string>,   unmockedModulePathPatterns :std.Array<string> | null | undefined,   updateSnapshot :boolean,   useStderr :boolean,   verbose :boolean,   version :boolean,   watch :boolean,   watchAll :boolean,   watchman :boolean,   watchPathIgnorePatterns :std.Array<string>,   workerIdleMemoryLimit :number | string}>> */
+/* Inlined yargs.yargs.Arguments<std.Partial<{  all :boolean,   automock :boolean,   bail :boolean | number,   cache :boolean,   cacheDirectory :string,   changedFilesWithAncestor :boolean,   changedSince :string,   ci :boolean,   clearCache :boolean,   clearMocks :boolean,   collectCoverage :boolean,   collectCoverageFrom :string,   color :boolean,   colors :boolean,   config :string,   coverage :boolean,   coverageDirectory :string,   coveragePathIgnorePatterns :std.Array<string>,   coverageReporters :std.Array<string>,   coverageThreshold :string,   debug :boolean,   env :string,   expand :boolean,   findRelatedTests :boolean,   forceExit :boolean,   globals :string,   globalSetup :string | null | undefined,   globalTeardown :string | null | undefined,   haste :string,   ignoreProjects :std.Array<string>,   init :boolean,   injectGlobals :boolean,   json :boolean,   lastCommit :boolean,   logHeapUsage :boolean,   maxWorkers :number | string,   moduleDirectories :std.Array<string>,   moduleFileExtensions :std.Array<string>,   moduleNameMapper :string,   modulePathIgnorePatterns :std.Array<string>,   modulePaths :std.Array<string>,   noStackTrace :boolean,   notify :boolean,   notifyMode :string,   onlyChanged :boolean,   onlyFailures :boolean,   outputFile :string,   preset :string | null | undefined,   prettierPath :string | null | undefined,   projects :std.Array<string>,   reporters :std.Array<string>,   resetMocks :boolean,   resetModules :boolean,   resolver :string | null | undefined,   restoreMocks :boolean,   rootDir :string,   roots :std.Array<string>,   runInBand :boolean,   seed :number,   showSeed :boolean,   selectProjects :std.Array<string>,   setupFiles :std.Array<string>,   setupFilesAfterEnv :std.Array<string>,   shard :string,   showConfig :boolean,   silent :boolean,   snapshotSerializers :std.Array<string>,   testEnvironment :string,   testEnvironmentOptions :string,   testFailureExitCode :string | null | undefined,   testMatch :std.Array<string>,   testNamePattern :string,   testPathIgnorePatterns :std.Array<string>,   testPathPattern :std.Array<string>,   testRegex :string | std.Array<string>,   testResultsProcessor :string,   testRunner :string,   testSequencer :string,   testTimeout :number | null | undefined,   transform :string,   transformIgnorePatterns :std.Array<string>,   unmockedModulePathPatterns :std.Array<string> | null | undefined,   updateSnapshot :boolean,   useStderr :boolean,   verbose :boolean,   version :boolean,   watch :boolean,   watchAll :boolean,   watchman :boolean,   watchPathIgnorePatterns :std.Array<string>,   workerIdleMemoryLimit :number | string}>> */
 trait Argv
   extends StObject
      with /** All remaining options */
@@ -136,6 +136,8 @@ trait Argv
   
   var runInBand: js.UndefOr[Boolean] = js.undefined
   
+  var seed: js.UndefOr[Double] = js.undefined
+  
   var selectProjects: js.UndefOr[js.Array[String]] = js.undefined
   
   var setupFiles: js.UndefOr[js.Array[String]] = js.undefined
@@ -145,6 +147,8 @@ trait Argv
   var shard: js.UndefOr[String] = js.undefined
   
   var showConfig: js.UndefOr[Boolean] = js.undefined
+  
+  var showSeed: js.UndefOr[Boolean] = js.undefined
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
@@ -472,6 +476,10 @@ object Argv {
     
     inline def setRunInBandUndefined: Self = StObject.set(x, "runInBand", js.undefined)
     
+    inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    
     inline def setSelectProjects(value: js.Array[String]): Self = StObject.set(x, "selectProjects", value.asInstanceOf[js.Any])
     
     inline def setSelectProjectsUndefined: Self = StObject.set(x, "selectProjects", js.undefined)
@@ -497,6 +505,10 @@ object Argv {
     inline def setShowConfig(value: Boolean): Self = StObject.set(x, "showConfig", value.asInstanceOf[js.Any])
     
     inline def setShowConfigUndefined: Self = StObject.set(x, "showConfig", js.undefined)
+    
+    inline def setShowSeed(value: Boolean): Self = StObject.set(x, "showSeed", value.asInstanceOf[js.Any])
+    
+    inline def setShowSeedUndefined: Self = StObject.set(x, "showSeed", js.undefined)
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

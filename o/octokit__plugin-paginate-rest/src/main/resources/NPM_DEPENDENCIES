@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/plugin-paginate-rest" : "4.3.1"
+      "@octokit/plugin-paginate-rest" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/plugin-paginate-rest" : "4.3.1"
+      "@octokit/plugin-paginate-rest" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

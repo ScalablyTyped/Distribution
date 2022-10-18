@@ -20,18 +20,18 @@ object mod extends Shortcut {
   
   trait UserAgentContext extends StObject {
     
-    var userAgent: typings.koaUseragent.useragentMod.default
+    var userAgent: typings.koaUseragent.distLibUseragentMod.default
   }
   object UserAgentContext {
     
-    inline def apply(userAgent: typings.koaUseragent.useragentMod.default): UserAgentContext = {
+    inline def apply(userAgent: typings.koaUseragent.distLibUseragentMod.default): UserAgentContext = {
       val __obj = js.Dynamic.literal(userAgent = userAgent.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserAgentContext]
     }
     
     extension [Self <: UserAgentContext](x: Self) {
       
-      inline def setUserAgent(value: typings.koaUseragent.useragentMod.default): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: typings.koaUseragent.distLibUseragentMod.default): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     }
   }
   

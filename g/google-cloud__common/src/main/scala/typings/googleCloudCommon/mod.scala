@@ -1,12 +1,12 @@
 package typings.googleCloudCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.googleCloudCommon.serviceMod.ServiceConfig
-import typings.googleCloudCommon.serviceMod.ServiceOptions
-import typings.googleCloudCommon.serviceObjectMod.ServiceObjectConfig
-import typings.googleCloudCommon.utilMod.GoogleErrorBody
-import typings.googleCloudCommon.utilMod.GoogleInnerError
-import typings.googleCloudCommon.utilMod.Util_
+import typings.googleCloudCommon.buildSrcServiceMod.ServiceConfig
+import typings.googleCloudCommon.buildSrcServiceMod.ServiceOptions
+import typings.googleCloudCommon.buildSrcServiceObjectMod.ServiceObjectConfig
+import typings.googleCloudCommon.buildSrcUtilMod.GoogleErrorBody
+import typings.googleCloudCommon.buildSrcUtilMod.GoogleInnerError
+import typings.googleCloudCommon.buildSrcUtilMod.Util_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object mod {
   @JSImport("@google-cloud/common", "ApiError")
   @js.native
   open class ApiError protected ()
-    extends typings.googleCloudCommon.utilMod.ApiError {
+    extends typings.googleCloudCommon.buildSrcUtilMod.ApiError {
     def this(errorBody: GoogleErrorBody) = this()
     def this(errorMessage: String) = this()
   }
@@ -44,7 +44,7 @@ object mod {
   @JSImport("@google-cloud/common", "Operation")
   @js.native
   open class Operation[T] protected ()
-    extends typings.googleCloudCommon.operationMod.Operation[T] {
+    extends typings.googleCloudCommon.buildSrcOperationMod.Operation[T] {
     /**
       * An Operation object allows you to interact with APIs that take longer to
       * process things.
@@ -61,7 +61,7 @@ object mod {
   @JSImport("@google-cloud/common", "Service")
   @js.native
   open class Service protected ()
-    extends typings.googleCloudCommon.serviceMod.Service {
+    extends typings.googleCloudCommon.buildSrcServiceMod.Service {
     /**
       * Service is a base class, meant to be inherited from by a "service," like
       * BigQuery or Storage.
@@ -95,7 +95,7 @@ object mod {
   @JSImport("@google-cloud/common", "ServiceObject")
   @js.native
   open class ServiceObject[T] protected ()
-    extends typings.googleCloudCommon.serviceObjectMod.ServiceObject[T] {
+    extends typings.googleCloudCommon.buildSrcServiceObjectMod.ServiceObject[T] {
     def this(config: ServiceObjectConfig) = this()
   }
   
@@ -109,7 +109,7 @@ object mod {
     @JSImport("@google-cloud/common", "util.ApiError")
     @js.native
     open class ApiErrorCls protected ()
-      extends typings.googleCloudCommon.utilMod.ApiError {
+      extends typings.googleCloudCommon.buildSrcUtilMod.ApiError {
       def this(errorMessage: String) = this()
     }
     
@@ -117,7 +117,7 @@ object mod {
     @JSImport("@google-cloud/common", "util.PartialFailureError")
     @js.native
     open class PartialFailureError protected ()
-      extends typings.googleCloudCommon.utilMod.PartialFailureError {
+      extends typings.googleCloudCommon.buildSrcUtilMod.PartialFailureError {
       def this(b: GoogleErrorBody) = this()
     }
     

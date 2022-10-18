@@ -1,6 +1,6 @@
 package typings.swiper.anon
 
-import typings.swiper.effectFlipMod.FlipEffectOptions
+import typings.swiper.typesModulesEffectFadeMod.FadeEffectOptions
 import typings.vueRuntimeCore.mod.PropConstructor
 import typings.vueRuntimeCore.mod.PropType
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ trait `8` extends StObject {
   
   var default: Unit
   
-  var `type`: PropType[FlipEffectOptions]
+  var `type`: PropType[FadeEffectOptions]
 }
 object `8` {
   
-  inline def apply(default: Unit, `type`: PropType[FlipEffectOptions]): `8` = {
+  inline def apply(default: Unit, `type`: PropType[FadeEffectOptions]): `8` = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`8`]
@@ -25,10 +25,10 @@ object `8` {
     
     inline def setDefault(value: Unit): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    inline def setType(value: PropType[FlipEffectOptions]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PropType[FadeEffectOptions]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeFunction0(value: () => FlipEffectOptions): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+    inline def setTypeFunction0(value: () => FadeEffectOptions): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
     
-    inline def setTypeVarargs(value: PropConstructor[FlipEffectOptions]*): Self = StObject.set(x, "type", js.Array(value*))
+    inline def setTypeVarargs(value: PropConstructor[FadeEffectOptions]*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

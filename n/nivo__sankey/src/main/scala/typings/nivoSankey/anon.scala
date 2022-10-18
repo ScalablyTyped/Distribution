@@ -1,24 +1,24 @@
 package typings.nivoSankey
 
 import typings.d3Sankey.mod.SankeyNodeMinimal
-import typings.nivoColors.inheritedColorMod.InheritedColorConfig
-import typings.nivoColors.inheritedColorMod.InheritedColorConfigCustomFunction
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfigCustomFunction
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoCore.mod.ValueFormat
+import typings.nivoSankey.distTypesTypesMod.DefaultLink
+import typings.nivoSankey.distTypesTypesMod.DefaultNode
+import typings.nivoSankey.distTypesTypesMod.SankeyAlignFunction
+import typings.nivoSankey.distTypesTypesMod.SankeyAlignType
+import typings.nivoSankey.distTypesTypesMod.SankeyLinkDatum
+import typings.nivoSankey.distTypesTypesMod.SankeyNodeDatum
+import typings.nivoSankey.distTypesTypesMod.SankeySortFunction
+import typings.nivoSankey.distTypesTypesMod.SankeySortType
 import typings.nivoSankey.nivoSankeyStrings.color
 import typings.nivoSankey.nivoSankeyStrings.horizontal
 import typings.nivoSankey.nivoSankeyStrings.label
 import typings.nivoSankey.nivoSankeyStrings.nivo
 import typings.nivoSankey.nivoSankeyStrings.vertical
-import typings.nivoSankey.typesMod.DefaultLink
-import typings.nivoSankey.typesMod.DefaultNode
-import typings.nivoSankey.typesMod.SankeyAlignFunction
-import typings.nivoSankey.typesMod.SankeyAlignType
-import typings.nivoSankey.typesMod.SankeyLinkDatum
-import typings.nivoSankey.typesMod.SankeyNodeDatum
-import typings.nivoSankey.typesMod.SankeySortFunction
-import typings.nivoSankey.typesMod.SankeySortType
 import typings.react.mod.Dispatch
 import typings.react.mod.SetStateAction
 import typings.std.Omit
@@ -119,10 +119,6 @@ object anon {
       inline def setSortFunction2(value: (/* a */ SankeyNodeDatum[N, L], /* b */ SankeyNodeDatum[N, L]) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
       
       inline def setValueFormat(value: ValueFormat[Double, Unit]): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
-      
-      inline def setValueFormatFunction1(value: Double => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction1(value))
-      
-      inline def setValueFormatFunction2(value: (Double, Unit) => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction2(value))
       
       inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
       

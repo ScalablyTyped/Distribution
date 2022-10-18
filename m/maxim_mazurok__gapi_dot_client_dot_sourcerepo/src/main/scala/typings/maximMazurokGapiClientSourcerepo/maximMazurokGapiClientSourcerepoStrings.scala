@@ -7,22 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientSourcerepoStrings {
   
   @js.native
-  sealed trait Operation extends StObject
-  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
-  
-  @js.native
-  sealed trait ProjectConfig extends StObject
-  inline def ProjectConfig: ProjectConfig = "ProjectConfig".asInstanceOf[ProjectConfig]
-  
-  @js.native
-  sealed trait Repo extends StObject
-  inline def Repo: Repo = "Repo".asInstanceOf[Repo]
-  
-  @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
   sealed trait sourcerepo extends StObject
   inline def sourcerepo: sourcerepo = "sourcerepo".asInstanceOf[sourcerepo]
   

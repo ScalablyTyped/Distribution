@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class UrlRouter protected ()
   extends typings.uirouterCore.libUrlMod.UrlRouter {
   /** @internal */
-  def this(/** @internal */ router: typings.uirouterCore.routerMod.UIRouter) = this()
+  def this(/** @internal */ router: typings.uirouterCore.libRouterMod.UIRouter) = this()
 }

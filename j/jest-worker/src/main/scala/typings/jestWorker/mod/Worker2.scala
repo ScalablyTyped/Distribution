@@ -1,6 +1,6 @@
 package typings.jestWorker.mod
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,17 +38,17 @@ trait Worker2 extends StObject {
   
   /* private */ var _ending: Any
   
-  /* private */ var _farm: Any
+  /* private */ val _farm: Any
   
-  /* private */ var _options: Any
+  /* private */ val _options: Any
   
-  /* private */ var _workerPool: Any
+  /* private */ val _workerPool: Any
   
   def end(): js.Promise[PoolExitResult]
   
-  def getStderr(): ReadableStream[Any]
+  def getStderr(): ReadableStream
   
-  def getStdout(): ReadableStream[Any]
+  def getStdout(): ReadableStream
 }
 object Worker2 {
   
@@ -60,8 +60,8 @@ object Worker2 {
     _options: Any,
     _workerPool: Any,
     end: () => js.Promise[PoolExitResult],
-    getStderr: () => ReadableStream[Any],
-    getStdout: () => ReadableStream[Any]
+    getStderr: () => ReadableStream,
+    getStdout: () => ReadableStream
   ): Worker2 = {
     val __obj = js.Dynamic.literal(_bindExposedWorkerMethods = _bindExposedWorkerMethods.asInstanceOf[js.Any], _callFunctionWithArgs = _callFunctionWithArgs.asInstanceOf[js.Any], _ending = _ending.asInstanceOf[js.Any], _farm = _farm.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], _workerPool = _workerPool.asInstanceOf[js.Any], end = js.Any.fromFunction0(end), getStderr = js.Any.fromFunction0(getStderr), getStdout = js.Any.fromFunction0(getStdout))
     __obj.asInstanceOf[Worker2]
@@ -71,9 +71,9 @@ object Worker2 {
     
     inline def setEnd(value: () => js.Promise[PoolExitResult]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    inline def setGetStderr(value: () => ReadableStream[Any]): Self = StObject.set(x, "getStderr", js.Any.fromFunction0(value))
+    inline def setGetStderr(value: () => ReadableStream): Self = StObject.set(x, "getStderr", js.Any.fromFunction0(value))
     
-    inline def setGetStdout(value: () => ReadableStream[Any]): Self = StObject.set(x, "getStdout", js.Any.fromFunction0(value))
+    inline def setGetStdout(value: () => ReadableStream): Self = StObject.set(x, "getStdout", js.Any.fromFunction0(value))
     
     inline def set_bindExposedWorkerMethods(value: Any): Self = StObject.set(x, "_bindExposedWorkerMethods", value.asInstanceOf[js.Any])
     

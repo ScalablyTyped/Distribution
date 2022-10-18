@@ -1,8 +1,8 @@
 package typings.nivoCalendar.anon
 
 import typings.d3Scale.mod.ScaleQuantize_
-import typings.nivoCalendar.typesMod.CalendarDatum
-import typings.nivoCalendar.typesMod.ColorScale
+import typings.nivoCalendar.distTypesTypesMod.CalendarDatum
+import typings.nivoCalendar.distTypesTypesMod.ColorScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

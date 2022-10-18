@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,19 +16,19 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       * Backing filed
       * @internal
       */
-    var __occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage = js.native
+    var __occlusionDataStorage: typings.babylonjs.enginesExtensionsEngineDotqueryMod.OcclusionDataStorage = js.native
     
     /** @internal */
-    var _disposePhysicsObserver: Nullable[typings.babylonjs.observableMod.Observer[typings.babylonjs.nodeMod.Node]] = js.native
+    var _disposePhysicsObserver: Nullable[typings.babylonjs.miscObservableMod.Observer[typings.babylonjs.nodeMod.Node]] = js.native
     
     /**
       * Access property
       * @internal
       */
-    var _occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage = js.native
+    var _occlusionDataStorage: typings.babylonjs.enginesExtensionsEngineDotqueryMod.OcclusionDataStorage = js.native
     
     /** @internal */
-    var _physicsImpostor: Nullable[typings.babylonjs.physicsImpostorMod.PhysicsImpostor] = js.native
+    var _physicsImpostor: Nullable[typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostor] = js.native
     
     /** @internal (Backing field) */
     var _renderOutline: Boolean = js.native
@@ -42,7 +43,7 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       * @internal
       * Backing Field
       */
-    var _submeshesOctree: typings.babylonjs.octreeMod.Octree[typings.babylonjs.subMeshMod.SubMesh] = js.native
+    var _submeshesOctree: typings.babylonjs.cullingOctreesOctreeMod.Octree[typings.babylonjs.meshesSubMeshMod.SubMesh] = js.native
     
     /** Apply a physic impulse to the mesh
       * @param force defines the force to apply
@@ -51,9 +52,9 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
       */
     def applyImpulse(
-      force: typings.babylonjs.mathVectorMod.Vector3,
-      contactPoint: typings.babylonjs.mathVectorMod.Vector3
-    ): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
+      force: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+      contactPoint: typings.babylonjs.mathsMathDotvectorMod.Vector3
+    ): typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
     
     /**
       * This function will create an octree to help to select the right submeshes for rendering, picking and collision computations.
@@ -64,15 +65,15 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       * @see https://www.babylonjs-playground.com/#NA4OQ#12
       * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
       */
-    def createOrUpdateSubmeshesOctree(): typings.babylonjs.octreeMod.Octree[typings.babylonjs.subMeshMod.SubMesh] = js.native
-    def createOrUpdateSubmeshesOctree(maxCapacity: Double): typings.babylonjs.octreeMod.Octree[typings.babylonjs.subMeshMod.SubMesh] = js.native
-    def createOrUpdateSubmeshesOctree(maxCapacity: Double, maxDepth: Double): typings.babylonjs.octreeMod.Octree[typings.babylonjs.subMeshMod.SubMesh] = js.native
-    def createOrUpdateSubmeshesOctree(maxCapacity: Unit, maxDepth: Double): typings.babylonjs.octreeMod.Octree[typings.babylonjs.subMeshMod.SubMesh] = js.native
+    def createOrUpdateSubmeshesOctree(): typings.babylonjs.cullingOctreesOctreeMod.Octree[typings.babylonjs.meshesSubMeshMod.SubMesh] = js.native
+    def createOrUpdateSubmeshesOctree(maxCapacity: Double): typings.babylonjs.cullingOctreesOctreeMod.Octree[typings.babylonjs.meshesSubMeshMod.SubMesh] = js.native
+    def createOrUpdateSubmeshesOctree(maxCapacity: Double, maxDepth: Double): typings.babylonjs.cullingOctreesOctreeMod.Octree[typings.babylonjs.meshesSubMeshMod.SubMesh] = js.native
+    def createOrUpdateSubmeshesOctree(maxCapacity: Unit, maxDepth: Double): typings.babylonjs.cullingOctreesOctreeMod.Octree[typings.babylonjs.meshesSubMeshMod.SubMesh] = js.native
     
     /**
       * Gets the edgesRenderer associated with the mesh
       */
-    var edgesRenderer: Nullable[typings.babylonjs.edgesRendererMod.EdgesRenderer] = js.native
+    var edgesRenderer: Nullable[typings.babylonjs.renderingEdgesRendererMod.EdgesRenderer] = js.native
     
     /**
       * Flag to force rendering the mesh even if occluded
@@ -85,7 +86,7 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       * @see https://doc.babylonjs.com/features/physics_engine
       * @returns a physics impostor or null
       */
-    def getPhysicsImpostor(): Nullable[typings.babylonjs.physicsImpostorMod.PhysicsImpostor] = js.native
+    def getPhysicsImpostor(): Nullable[typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostor] = js.native
     
     /**
       * Object used to store instanced buffers defined by user
@@ -133,7 +134,7 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       * Gets or sets impostor used for physic simulation
       * @see https://doc.babylonjs.com/features/physics_engine
       */
-    var physicsImpostor: Nullable[typings.babylonjs.physicsImpostorMod.PhysicsImpostor] = js.native
+    var physicsImpostor: Nullable[typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostor] = js.native
     
     /**
       * Gets or sets a boolean indicating if the outline must be rendered as well
@@ -157,16 +158,16 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       * @see https://www.babylonjs-playground.com/#0BS5U0#0
       */
     def setPhysicsLinkWith(
-      otherMesh: typings.babylonjs.meshMod.Mesh,
-      pivot1: typings.babylonjs.mathVectorMod.Vector3,
-      pivot2: typings.babylonjs.mathVectorMod.Vector3
-    ): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
+      otherMesh: Mesh,
+      pivot1: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+      pivot2: typings.babylonjs.mathsMathDotvectorMod.Vector3
+    ): typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
     def setPhysicsLinkWith(
-      otherMesh: typings.babylonjs.meshMod.Mesh,
-      pivot1: typings.babylonjs.mathVectorMod.Vector3,
-      pivot2: typings.babylonjs.mathVectorMod.Vector3,
+      otherMesh: Mesh,
+      pivot1: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+      pivot2: typings.babylonjs.mathsMathDotvectorMod.Vector3,
       options: Any
-    ): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
+    ): typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
     
     /**
       * Gets or sets a boolean indicating if the bounding box must be rendered as well (false by default)

@@ -1,7 +1,7 @@
 package typings.jsonquery
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
+import typings.node.NodeJS.ReadWriteStream
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[T](query: Query[T]): Any = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply[T](query: Query[T]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("jsonquery", JSImport.Namespace)
   @js.native
@@ -123,7 +123,9 @@ object mod {
     - typings.jsonquery.mod.OrQueryCondition[T]
     - typings.jsonquery.mod.AndQueryCondition[T]
   */
-  trait BinaryQueryCondition[T] extends StObject
+  trait BinaryQueryCondition[T]
+    extends StObject
+       with _Query[T]
   object BinaryQueryCondition {
     
     inline def AndQueryCondition[T]($and: js.Array[Query[T]]): typings.jsonquery.mod.AndQueryCondition[T] = {
@@ -161,9 +163,24 @@ object mod {
   
   type PathQuery = StringDictionary[Any]
   
-  type Query[T] = BinaryQueryCondition[T] | QueryValue[T] | PathQuery
+  /* Rewritten from type alias, can be one of: 
+    - typings.jsonquery.mod.BinaryQueryCondition[T]
+    - typings.jsonquery.mod.QueryValue[T]
+    - typings.jsonquery.mod.PathQuery
+  */
+  type Query[T] = _Query[T] | PathQuery
   
-  type QueryValue[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? T[P] | jsonquery.jsonquery.BaseCondition<T[P]>}
-    */ typings.jsonquery.jsonqueryStrings.QueryValue & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]:? T[P] | jsonquery.jsonquery.BaseCondition<T[P]>}
+    }}}
+    */
+  @js.native
+  trait QueryValue[T]
+    extends StObject
+       with _Query[T]
+  
+  trait _Query[T] extends StObject
 }

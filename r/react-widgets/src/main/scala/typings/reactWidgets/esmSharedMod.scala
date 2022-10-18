@@ -270,7 +270,15 @@ object esmSharedMod {
     }
   }
   
-  type InferFormat[TLocalizer] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TLocalizer extends react-widgets.react-widgets/esm/Localization.Localizer<infer TFormat, any> ? TFormat : unknown
+    }}}
+    */
+  @js.native
+  trait InferFormat[TLocalizer] extends StObject
   
   type MultipleChangeHandler[TDataItem] = js.Function2[
     /* dataItem */ js.Array[TDataItem], 

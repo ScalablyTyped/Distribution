@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages folders and their contents and provides information about them. */
-@JSGlobal("Windows.Storage.StorageFolder")
+/* note: abstract class */ @JSGlobal("Windows.Storage.StorageFolder")
 @js.native
-abstract class StorageFolder ()
+open class StorageFolder ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.StorageFolder
 object StorageFolder {

@@ -1,7 +1,7 @@
 package typings.nivoHeatmap
 
-import typings.nivoHeatmap.typesMod.CellShape
-import typings.nivoHeatmap.typesMod.LayerId
+import typings.nivoHeatmap.distTypesTypesMod.CellShape
+import typings.nivoHeatmap.distTypesTypesMod.LayerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

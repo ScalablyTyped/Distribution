@@ -1,13 +1,13 @@
 package typings.baseui
 
-import typings.baseui.anon.`4`
-import typings.baseui.anon.`5`
-import typings.baseui.anon.`6`
+import typings.baseui.anon.`1`
+import typings.baseui.anon.`2`
+import typings.baseui.anon.`3`
 import typings.baseui.datepickerTypesMod.ContainerState
 import typings.baseui.datepickerTypesMod.StateChangeType
 import typings.baseui.datepickerTypesMod.StateReducer
 import typings.baseui.datepickerTypesMod.StatefulContainerProps
-import typings.baseui.utilsTypesMod.DateIOAdapter
+import typings.baseui.datepickerUtilsTypesMod.DateIOAdapter
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -48,13 +48,13 @@ object datepickerStatefulContainerMod {
       
       @JSImport("baseui/datepicker/stateful-container", "default.defaultProps.onChange")
       @js.native
-      def onChange: js.UndefOr[js.Function1[/* a */ `6`, Any]] = js.native
-      inline def onChange_=(x: js.UndefOr[js.Function1[/* a */ `6`, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChange")(x.asInstanceOf[js.Any])
+      def onChange: js.UndefOr[js.Function1[/* a */ `3`, Any]] = js.native
+      inline def onChange_=(x: js.UndefOr[js.Function1[/* a */ `3`, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChange")(x.asInstanceOf[js.Any])
       
       @JSImport("baseui/datepicker/stateful-container", "default.defaultProps.onRangeChange")
       @js.native
-      def onRangeChange: js.UndefOr[js.Function1[/* a */ `4`, Any]] = js.native
-      inline def onRangeChange_=(x: js.UndefOr[js.Function1[/* a */ `4`, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRangeChange")(x.asInstanceOf[js.Any])
+      def onRangeChange: js.UndefOr[js.Function1[/* a */ `1`, Any]] = js.native
+      inline def onRangeChange_=(x: js.UndefOr[js.Function1[/* a */ `1`, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRangeChange")(x.asInstanceOf[js.Any])
       
       @JSImport("baseui/datepicker/stateful-container", "default.defaultProps.range")
       @js.native
@@ -93,6 +93,6 @@ object datepickerStatefulContainerMod {
     
     def internalSetState(`type`: StateChangeType, changes: ContainerState[T]): Unit = js.native
     
-    def onChange(a: `5`[T]): Any = js.native
+    def onChange(a: `2`[T]): Any = js.native
   }
 }

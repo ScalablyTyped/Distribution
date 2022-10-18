@@ -10,9 +10,7 @@ trait XRLightProbe
   extends StObject
      with EventTarget {
   
-  def onreflectionchange(callback: Any): Unit = js.native
-  @JSName("onreflectionchange")
-  var onreflectionchange_Original: XREventHandler = js.native
+  var onreflectionchange: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREventHandler */ Any = js.native
   
   val probeSpace: XRSpace = js.native
 }

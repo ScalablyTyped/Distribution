@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientServicedirectory.gapi.client.servicedirectory
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +18,7 @@ trait Endpoint extends StObject {
     * the same syntax and read/write to the same location in Service Directory.
     */
   var annotations: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Endpoint & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Immutable. The resource name for the endpoint in the format `projects/ *‍/locations/ *‍/namespaces/ *‍/services/ *‍/endpoints/ *`. */
@@ -50,9 +47,7 @@ object Endpoint {
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     inline def setAnnotations(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Endpoint & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)

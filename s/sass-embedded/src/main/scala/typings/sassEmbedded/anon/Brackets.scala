@@ -1,6 +1,6 @@
 package typings.sassEmbedded.anon
 
-import typings.sassEmbedded.listMod.ListSeparator
+import typings.sassEmbedded.distTypesValueListMod.ListSeparator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

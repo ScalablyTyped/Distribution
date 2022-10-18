@@ -10,7 +10,7 @@ sealed trait EntityType extends StObject
   * Specifies an entity's type.
   *
   * @remarks
-  * 
+  *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.EntityType")

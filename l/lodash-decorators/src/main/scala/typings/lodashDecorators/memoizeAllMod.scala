@@ -1,7 +1,7 @@
 package typings.lodashDecorators
 
 import org.scalablytyped.runtime.Shortcut
-import typings.lodashDecorators.commonMod.BiTypedMethodDecorator1
+import typings.lodashDecorators.factoryCommonMod.BiTypedMethodDecorator1
 import typings.lodashDecorators.sharedMod.MemoizeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,9 +1,8 @@
 package typings.sinclairTypebox.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.sinclairTypebox.anon.`0`
 import typings.sinclairTypebox.anon.`1`
+import typings.sinclairTypebox.anon.`2`
 import typings.sinclairTypebox.mod.^
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -19,26 +18,8 @@ inline def Modifier: js.Symbol = ^.asInstanceOf[js.Dynamic].selectDynamic("Modif
 
 inline def Type: TypeBuilder = ^.asInstanceOf[js.Dynamic].selectDynamic("Type").asInstanceOf[TypeBuilder]
 
-type IntersectEvaluate[T /* <: js.Array[TSchema] */, P /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: T[K] extends @sinclair/typebox.@sinclair/typebox.TSchema? @sinclair/typebox.@sinclair/typebox.Static<T[K], P> : never}
-  */ typings.sinclairTypebox.sinclairTypeboxStrings.IntersectEvaluate & TopLevel[Any]
-
-type IntersectProperties[T /* <: js.Array[TObject[TProperties]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: T[K] extends @sinclair/typebox.@sinclair/typebox.TObject<infer P>? any : {}}
-  */ typings.sinclairTypebox.sinclairTypeboxStrings.IntersectProperties & TopLevel[T]
-
-type IntersectReduce[I /* <: Any */, T /* <: js.Array[Any] */] = js.Object | I
-
-type ObjectProperties[T] = Any
-
-type ObjectPropertyKeys[T] = /* keyof any */ String
-
 type OptionalPropertyKeys[T /* <: TProperties */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends / * Inlined @sinclair/typebox.@sinclair/typebox.TOptional<@sinclair/typebox.@sinclair/typebox.TSchema> * /
 {[Kind] : string, [Hint] : string | undefined, [Modifier] : string | undefined,   params :std.Array<unknown>,   static :unknown,   $schema :string | undefined,   $id :string | undefined,   title :string | undefined,   description :string | undefined,   default :any | undefined,   examples :any | undefined, [prop: string] : any, [Modifier] : 'Optional'}? K : never}[keyof T] */ js.Any
-
-type PropertiesReduce[T /* <: TProperties */, P /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof any ]: any[K]}
-  */ typings.sinclairTypebox.sinclairTypeboxStrings.PropertiesReduce & TopLevel[Any]
 
 type ReadonlyOptionalPropertyKeys[T /* <: TProperties */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends / * Inlined @sinclair/typebox.@sinclair/typebox.TReadonlyOptional<@sinclair/typebox.@sinclair/typebox.TSchema> * /
 {[Kind] : string, [Hint] : string | undefined, [Modifier] : string | undefined,   params :std.Array<unknown>,   static :unknown,   $schema :string | undefined,   $id :string | undefined,   title :string | undefined,   description :string | undefined,   default :any | undefined,   examples :any | undefined, [prop: string] : any, [Modifier] : 'ReadonlyOptional'}? K : never}[keyof T] */ js.Any
@@ -51,14 +32,10 @@ type RequiredPropertyKeys[T /* <: TProperties */] = /* keyof std.Omit<T, @sincla
 type Static[T /* <: TSchema */, P /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: T & @sinclair/typebox.anon.Params<P>['static'] */ js.Any
 
 type StaticContructorParameters[T /* <: js.Array[TSchema] */, P /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof T ]: T[K] extends @sinclair/typebox.@sinclair/typebox.TSchema? @sinclair/typebox.@sinclair/typebox.Static<T[K], P> : never} */ js.Array[
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: T[K] extends @sinclair/typebox.@sinclair/typebox.TSchema? @sinclair/typebox.@sinclair/typebox.Static<T[K], P> : never}
-  */ typings.sinclairTypebox.sinclairTypeboxStrings.StaticContructorParameters & TopLevel[Any]]
+/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends @sinclair/typebox.@sinclair/typebox.TSchema? @sinclair/typebox.@sinclair/typebox.Static<T[K], P> : never} */ js.Any]
 
 type StaticFunctionParameters[T /* <: js.Array[TSchema] */, P /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof T ]: T[K] extends @sinclair/typebox.@sinclair/typebox.TSchema? @sinclair/typebox.@sinclair/typebox.Static<T[K], P> : never} */ js.Array[
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: T[K] extends @sinclair/typebox.@sinclair/typebox.TSchema? @sinclair/typebox.@sinclair/typebox.Static<T[K], P> : never}
-  */ typings.sinclairTypebox.sinclairTypeboxStrings.StaticFunctionParameters & TopLevel[Any]]
+/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends @sinclair/typebox.@sinclair/typebox.TSchema? @sinclair/typebox.@sinclair/typebox.Static<T[K], P> : never} */ js.Any]
 
 /* Rewritten from type alias, can be one of: 
   - typings.sinclairTypebox.mod.TSchema
@@ -96,44 +73,20 @@ type TKeyOf[T /* <: TObject[TProperties] */] = TUnion[UnionLiteralsFromObject[T]
 
 type TLiteralValue = String | Double | Boolean
 
-type TOptional[T /* <: TSchema */] = T & `0`
+type TOptional[T /* <: TSchema */] = T & typings.sinclairTypebox.anon.Modifier
 
 type TParameters[T /* <: TFunction[js.Array[TSchema], TSchema] */] = TTuple[
 /* import warning: importer.ImportType#apply Failed type conversion: T['parameters'] */ js.Any]
 
 type TPick[T /* <: TObject[TProperties] */, Properties /* <: js.Array[ObjectPropertyKeys[T]] */] = TObject[
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in Properties[number] ]: T['properties'][K]}
-  */ typings.sinclairTypebox.sinclairTypeboxStrings.TPick & TopLevel[T]]
+/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Properties[number] ]: T['properties'][K]} */ js.Any]
 
 type TProperties = StringDictionary[TSchema]
 
-type TReadonly[T /* <: TSchema */] = T & typings.sinclairTypebox.anon.Modifier
+type TReadonly[T /* <: TSchema */] = T & `1`
 
-type TReadonlyOptional[T /* <: TSchema */] = T & `1`
+type TReadonlyOptional[T /* <: TSchema */] = T & `2`
 
 type TRecordKey = TString[String] | TNumber | TUnion[js.Array[TLiteral[Any]]]
 
-type TRecordProperties[K /* <: TUnion[js.Array[TLiteral[TLiteralValue]]] */, T /* <: TSchema */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ X in @sinclair/typebox.@sinclair/typebox.Static<K, []> ]: T}
-  */ typings.sinclairTypebox.sinclairTypeboxStrings.TRecordProperties & TopLevel[Any]
-
 type TReturnType[T /* <: TFunction[js.Array[TSchema], TSchema] */] = /* import warning: importer.ImportType#apply Failed type conversion: T['returns'] */ js.Any
-
-type TupleToArray[T /* <: TTuple[js.Array[TSchema]] */] = Any
-
-type UnionLast[U] = Any
-
-type UnionLiteralsFromObject[T /* <: TObject[TProperties] */] = UnionToTuple[
-/* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any, 
-UnionLast[
-  /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
-]]
-
-type UnionStringLiteralToTuple[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ I in keyof any ]: any[I] extends @sinclair/typebox.@sinclair/typebox.TLiteral<infer C>? any : never}
-  */ typings.sinclairTypebox.sinclairTypeboxStrings.UnionStringLiteralToTuple & TopLevel[Any]
-
-type UnionToIntersect[U] = Any
-
-type UnionToTuple[U, L] = /* import warning: importer.ImportType#apply c repeated non-array type: any */ js.Array[Any]

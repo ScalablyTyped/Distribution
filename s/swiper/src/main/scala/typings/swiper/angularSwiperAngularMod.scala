@@ -29,10 +29,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object angularSwiperAngularMod {
   
-  @JSImport("swiper/angular/swiper_angular", "SwiperComponent")
+  @JSImport("swiper/angular/swiper-angular", "SwiperComponent")
   @js.native
   open class SwiperComponent protected ()
-    extends typings.swiper.swiperAngularMod.SwiperComponent {
+    extends typings.swiper.angularAngularSrcPublicApiMod.SwiperComponent {
     def this(
       _ngZone: NgZone,
       elementRef: ElementRef[Any],
@@ -43,14 +43,14 @@ object angularSwiperAngularMod {
   /* static members */
   object SwiperComponent {
     
-    @JSImport("swiper/angular/swiper_angular", "SwiperComponent")
+    @JSImport("swiper/angular/swiper-angular", "SwiperComponent")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("swiper/angular/swiper_angular", "SwiperComponent.\u0275cmp")
+    @JSImport("swiper/angular/swiper-angular", "SwiperComponent.\u0275cmp")
     @js.native
     def ɵcmp: ɵɵComponentDeclaration[
-        typings.swiper.swiperComponentMod.SwiperComponent, 
+        typings.swiper.angularAngularSrcSwiperDotcomponentMod.SwiperComponent, 
         `swiperComma [swiper]`, 
         scala.Nothing, 
         A11y, 
@@ -66,7 +66,7 @@ object angularSwiperAngularMod {
       ] = js.native
     inline def ɵcmp_=(
       x: ɵɵComponentDeclaration[
-          typings.swiper.swiperComponentMod.SwiperComponent, 
+          typings.swiper.angularAngularSrcSwiperDotcomponentMod.SwiperComponent, 
           `swiperComma [swiper]`, 
           scala.Nothing, 
           A11y, 
@@ -82,44 +82,54 @@ object angularSwiperAngularMod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275cmp")(x.asInstanceOf[js.Any])
     
-    @JSImport("swiper/angular/swiper_angular", "SwiperComponent.\u0275fac")
+    @JSImport("swiper/angular/swiper-angular", "SwiperComponent.\u0275fac")
     @js.native
-    def ɵfac: ɵɵFactoryDeclaration[typings.swiper.swiperComponentMod.SwiperComponent, scala.Nothing] = js.native
-    inline def ɵfac_=(x: ɵɵFactoryDeclaration[typings.swiper.swiperComponentMod.SwiperComponent, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+    def ɵfac: ɵɵFactoryDeclaration[
+        typings.swiper.angularAngularSrcSwiperDotcomponentMod.SwiperComponent, 
+        scala.Nothing
+      ] = js.native
+    inline def ɵfac_=(
+      x: ɵɵFactoryDeclaration[
+          typings.swiper.angularAngularSrcSwiperDotcomponentMod.SwiperComponent, 
+          scala.Nothing
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("swiper/angular/swiper_angular", "SwiperModule")
+  @JSImport("swiper/angular/swiper-angular", "SwiperModule")
   @js.native
   open class SwiperModule ()
-    extends typings.swiper.swiperAngularMod.SwiperModule
+    extends typings.swiper.angularAngularSrcPublicApiMod.SwiperModule
   /* static members */
   object SwiperModule {
     
-    @JSImport("swiper/angular/swiper_angular", "SwiperModule")
+    @JSImport("swiper/angular/swiper-angular", "SwiperModule")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("swiper/angular/swiper_angular", "SwiperModule.\u0275fac")
+    @JSImport("swiper/angular/swiper-angular", "SwiperModule.\u0275fac")
     @js.native
-    def ɵfac: ɵɵFactoryDeclaration[typings.swiper.swiperModuleMod.SwiperModule, scala.Nothing] = js.native
-    inline def ɵfac_=(x: ɵɵFactoryDeclaration[typings.swiper.swiperModuleMod.SwiperModule, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+    def ɵfac: ɵɵFactoryDeclaration[typings.swiper.angularAngularSrcSwiperDotmoduleMod.SwiperModule, scala.Nothing] = js.native
+    inline def ɵfac_=(
+      x: ɵɵFactoryDeclaration[typings.swiper.angularAngularSrcSwiperDotmoduleMod.SwiperModule, scala.Nothing]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
     
-    @JSImport("swiper/angular/swiper_angular", "SwiperModule.\u0275inj")
+    @JSImport("swiper/angular/swiper-angular", "SwiperModule.\u0275inj")
     @js.native
-    def ɵinj: ɵɵInjectorDeclaration[typings.swiper.swiperModuleMod.SwiperModule] = js.native
-    inline def ɵinj_=(x: ɵɵInjectorDeclaration[typings.swiper.swiperModuleMod.SwiperModule]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275inj")(x.asInstanceOf[js.Any])
+    def ɵinj: ɵɵInjectorDeclaration[typings.swiper.angularAngularSrcSwiperDotmoduleMod.SwiperModule] = js.native
+    inline def ɵinj_=(x: ɵɵInjectorDeclaration[typings.swiper.angularAngularSrcSwiperDotmoduleMod.SwiperModule]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275inj")(x.asInstanceOf[js.Any])
     
-    @JSImport("swiper/angular/swiper_angular", "SwiperModule.\u0275mod")
+    @JSImport("swiper/angular/swiper-angular", "SwiperModule.\u0275mod")
     @js.native
     def ɵmod: ɵɵNgModuleDeclaration[
-        typings.swiper.swiperModuleMod.SwiperModule, 
+        typings.swiper.angularAngularSrcSwiperDotmoduleMod.SwiperModule, 
         js.Tuple2[TypeofSwiperComponent, TypeofSwiperSlideDirectiv], 
         js.Array[TypeofCommonModule], 
         js.Tuple2[TypeofSwiperComponent, TypeofSwiperSlideDirectiv]
       ] = js.native
     inline def ɵmod_=(
       x: ɵɵNgModuleDeclaration[
-          typings.swiper.swiperModuleMod.SwiperModule, 
+          typings.swiper.angularAngularSrcSwiperDotmoduleMod.SwiperModule, 
           js.Tuple2[TypeofSwiperComponent, TypeofSwiperSlideDirectiv], 
           js.Array[TypeofCommonModule], 
           js.Tuple2[TypeofSwiperComponent, TypeofSwiperSlideDirectiv]
@@ -127,23 +137,23 @@ object angularSwiperAngularMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275mod")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("swiper/angular/swiper_angular", "SwiperSlideDirective")
+  @JSImport("swiper/angular/swiper-angular", "SwiperSlideDirective")
   @js.native
   open class SwiperSlideDirective protected ()
-    extends typings.swiper.swiperAngularMod.SwiperSlideDirective {
+    extends typings.swiper.angularAngularSrcPublicApiMod.SwiperSlideDirective {
     def this(template: TemplateRef[Any]) = this()
   }
   /* static members */
   object SwiperSlideDirective {
     
-    @JSImport("swiper/angular/swiper_angular", "SwiperSlideDirective")
+    @JSImport("swiper/angular/swiper-angular", "SwiperSlideDirective")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("swiper/angular/swiper_angular", "SwiperSlideDirective.\u0275dir")
+    @JSImport("swiper/angular/swiper-angular", "SwiperSlideDirective.\u0275dir")
     @js.native
     def ɵdir: ɵɵDirectiveDeclaration[
-        typings.swiper.swiperSlideDirectiveMod.SwiperSlideDirective, 
+        typings.swiper.angularAngularSrcSwiperSlideDotdirectiveMod.SwiperSlideDirective, 
         `ng-template[swiperSlide]`, 
         scala.Nothing, 
         AutoplayDelay, 
@@ -154,7 +164,7 @@ object angularSwiperAngularMod {
       ] = js.native
     inline def ɵdir_=(
       x: ɵɵDirectiveDeclaration[
-          typings.swiper.swiperSlideDirectiveMod.SwiperSlideDirective, 
+          typings.swiper.angularAngularSrcSwiperSlideDotdirectiveMod.SwiperSlideDirective, 
           `ng-template[swiperSlide]`, 
           scala.Nothing, 
           AutoplayDelay, 
@@ -165,11 +175,17 @@ object angularSwiperAngularMod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
     
-    @JSImport("swiper/angular/swiper_angular", "SwiperSlideDirective.\u0275fac")
+    @JSImport("swiper/angular/swiper-angular", "SwiperSlideDirective.\u0275fac")
     @js.native
-    def ɵfac: ɵɵFactoryDeclaration[typings.swiper.swiperSlideDirectiveMod.SwiperSlideDirective, scala.Nothing] = js.native
+    def ɵfac: ɵɵFactoryDeclaration[
+        typings.swiper.angularAngularSrcSwiperSlideDotdirectiveMod.SwiperSlideDirective, 
+        scala.Nothing
+      ] = js.native
     inline def ɵfac_=(
-      x: ɵɵFactoryDeclaration[typings.swiper.swiperSlideDirectiveMod.SwiperSlideDirective, scala.Nothing]
+      x: ɵɵFactoryDeclaration[
+          typings.swiper.angularAngularSrcSwiperSlideDotdirectiveMod.SwiperSlideDirective, 
+          scala.Nothing
+        ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
   }
 }

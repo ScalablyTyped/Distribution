@@ -6,25 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonDueon extends StObject {
   
-  var parameters: `144`
+  var parameters: `76`
   
   var requestBody: ContentApplicationjsonDueon
   
-  var responses: `201Content287`
+  var responses: `201ContentApplicationjsonCreator`
 }
 object RequestBodyContentApplicationjsonDueon {
   
-  inline def apply(parameters: `144`, requestBody: ContentApplicationjsonDueon, responses: `201Content287`): RequestBodyContentApplicationjsonDueon = {
+  inline def apply(
+    parameters: `76`,
+    requestBody: ContentApplicationjsonDueon,
+    responses: `201ContentApplicationjsonCreator`
+  ): RequestBodyContentApplicationjsonDueon = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonDueon]
   }
   
   extension [Self <: RequestBodyContentApplicationjsonDueon](x: Self) {
     
-    inline def setParameters(value: `144`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `76`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonDueon): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201Content287`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201ContentApplicationjsonCreator`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

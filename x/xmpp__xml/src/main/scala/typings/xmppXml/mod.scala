@@ -52,7 +52,7 @@ object mod {
     
     def onText(str: String): Unit = js.native
     
-    val parser: typings.ltx.parsersLtxMod.^ = js.native
+    val parser: typings.ltx.libParsersLtxMod.^ = js.native
     
     var root: typings.xmppXml.mod.Element | Null = js.native
   }

@@ -1,6 +1,7 @@
 package typings.gulpJasmine
 
 import typings.jasmine.jasmine.CustomReporter
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +12,8 @@ object mod {
     * Executes Jasmine tests. Emits a 'jasmineDone' event on success.
     * @param options Optional options for the execution of the Jasmine test
     */
-  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
-  inline def apply(options: JasmineOptions): Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(options: JasmineOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-jasmine", JSImport.Namespace)
   @js.native

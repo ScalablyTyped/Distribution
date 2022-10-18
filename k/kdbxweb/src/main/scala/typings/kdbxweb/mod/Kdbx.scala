@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("kdbxweb", "Kdbx")
 @js.native
 open class Kdbx ()
-  extends typings.kdbxweb.kdbxMod.Kdbx
+  extends typings.kdbxweb.distTypesFormatKdbxMod.Kdbx
 /* static members */
 object Kdbx {
   
@@ -19,22 +19,25 @@ object Kdbx {
   /**
     * Creates a new database
     */
-  inline def create(credentials: typings.kdbxweb.kdbxCredentialsMod.KdbxCredentials, name: String): typings.kdbxweb.kdbxMod.Kdbx = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(credentials.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.kdbxweb.kdbxMod.Kdbx]
+  inline def create(credentials: typings.kdbxweb.distTypesFormatKdbxCredentialsMod.KdbxCredentials, name: String): typings.kdbxweb.distTypesFormatKdbxMod.Kdbx = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(credentials.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.kdbxweb.distTypesFormatKdbxMod.Kdbx]
   
   /**
     * Load a kdbx file
     * If there was an error loading file, throws an exception
     */
-  inline def load(data: js.typedarray.ArrayBuffer, credentials: typings.kdbxweb.kdbxCredentialsMod.KdbxCredentials): js.Promise[typings.kdbxweb.kdbxMod.Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kdbxweb.kdbxMod.Kdbx]]
   inline def load(
     data: js.typedarray.ArrayBuffer,
-    credentials: typings.kdbxweb.kdbxCredentialsMod.KdbxCredentials,
+    credentials: typings.kdbxweb.distTypesFormatKdbxCredentialsMod.KdbxCredentials
+  ): js.Promise[typings.kdbxweb.distTypesFormatKdbxMod.Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kdbxweb.distTypesFormatKdbxMod.Kdbx]]
+  inline def load(
+    data: js.typedarray.ArrayBuffer,
+    credentials: typings.kdbxweb.distTypesFormatKdbxCredentialsMod.KdbxCredentials,
     options: PreserveXml
-  ): js.Promise[typings.kdbxweb.kdbxMod.Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kdbxweb.kdbxMod.Kdbx]]
+  ): js.Promise[typings.kdbxweb.distTypesFormatKdbxMod.Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kdbxweb.distTypesFormatKdbxMod.Kdbx]]
   
   /**
     * Import database from an xml file
     * If there was an error loading file, throws an exception
     */
-  inline def loadXml(data: String, credentials: typings.kdbxweb.kdbxCredentialsMod.KdbxCredentials): js.Promise[typings.kdbxweb.kdbxMod.Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadXml")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kdbxweb.kdbxMod.Kdbx]]
+  inline def loadXml(data: String, credentials: typings.kdbxweb.distTypesFormatKdbxCredentialsMod.KdbxCredentials): js.Promise[typings.kdbxweb.distTypesFormatKdbxMod.Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadXml")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kdbxweb.distTypesFormatKdbxMod.Kdbx]]
 }

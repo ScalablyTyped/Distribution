@@ -36,11 +36,11 @@ trait ChartCollection
     * @param seriesBy Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.
     */
   def add(
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82, starting with typings.officeJs.officeJsStrings.Invalid, typings.officeJs.officeJsStrings.ColumnClustered, typings.officeJs.officeJsStrings.ColumnStacked */ Any,
     sourceData: Range
   ): Chart = js.native
   def add(
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82, starting with typings.officeJs.officeJsStrings.Invalid, typings.officeJs.officeJsStrings.ColumnClustered, typings.officeJs.officeJsStrings.ColumnStacked */ Any,
     sourceData: Range,
     seriesBy: Auto | Columns | Rows
   ): Chart = js.native

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Rules extends StObject {
   
-  var rules: typings.matrixAppserviceBridge.roomLinkValidatorMod.Rules
+  var rules: typings.matrixAppserviceBridge.libComponentsRoomLinkValidatorMod.Rules
 }
 object Rules {
   
-  inline def apply(rules: typings.matrixAppserviceBridge.roomLinkValidatorMod.Rules): Rules = {
+  inline def apply(rules: typings.matrixAppserviceBridge.libComponentsRoomLinkValidatorMod.Rules): Rules = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rules]
   }
   
   extension [Self <: Rules](x: Self) {
     
-    inline def setRules(value: typings.matrixAppserviceBridge.roomLinkValidatorMod.Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: typings.matrixAppserviceBridge.libComponentsRoomLinkValidatorMod.Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
   }
 }

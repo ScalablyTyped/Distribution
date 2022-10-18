@@ -1,7 +1,7 @@
 package typings.multicodec
 
-import typings.multicodec.mapsMod.CodeNameMap
-import typings.multicodec.mapsMod.NameUint8ArrayMap
+import typings.multicodec.distSrcMapsMod.CodeNameMap
+import typings.multicodec.distSrcMapsMod.NameUint8ArrayMap
 import typings.multicodec.multicodecStrings.bencode_
 import typings.multicodec.multicodecStrings.blake3_
 import typings.multicodec.multicodecStrings.bmt_
@@ -67,1887 +67,1887 @@ object mod {
   
   @JSImport("multicodec", "ARWEAVE_NS")
   @js.native
-  val ARWEAVE_NS: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ARWEAVE_NS: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BENCODE")
   @js.native
-  val BENCODE: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BENCODE: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BITCOIN_BLOCK")
   @js.native
-  val BITCOIN_BLOCK: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BITCOIN_BLOCK: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BITCOIN_TX")
   @js.native
-  val BITCOIN_TX: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BITCOIN_TX: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BITCOIN_WITNESS_COMMITMENT")
   @js.native
-  val BITCOIN_WITNESS_COMMITMENT: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BITCOIN_WITNESS_COMMITMENT: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_104")
   @js.native
-  val BLAKE2B_104: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_104: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_112")
   @js.native
-  val BLAKE2B_112: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_112: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_120")
   @js.native
-  val BLAKE2B_120: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_120: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_128")
   @js.native
-  val BLAKE2B_128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_136")
   @js.native
-  val BLAKE2B_136: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_136: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_144")
   @js.native
-  val BLAKE2B_144: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_144: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_152")
   @js.native
-  val BLAKE2B_152: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_152: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_16")
   @js.native
-  val BLAKE2B_16: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_16: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_160")
   @js.native
-  val BLAKE2B_160: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_160: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_168")
   @js.native
-  val BLAKE2B_168: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_168: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_176")
   @js.native
-  val BLAKE2B_176: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_176: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_184")
   @js.native
-  val BLAKE2B_184: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_184: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_192")
   @js.native
-  val BLAKE2B_192: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_192: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_200")
   @js.native
-  val BLAKE2B_200: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_200: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_208")
   @js.native
-  val BLAKE2B_208: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_208: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_216")
   @js.native
-  val BLAKE2B_216: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_216: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_224")
   @js.native
-  val BLAKE2B_224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_232")
   @js.native
-  val BLAKE2B_232: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_232: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_24")
   @js.native
-  val BLAKE2B_24: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_24: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_240")
   @js.native
-  val BLAKE2B_240: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_240: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_248")
   @js.native
-  val BLAKE2B_248: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_248: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_256")
   @js.native
-  val BLAKE2B_256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_264")
   @js.native
-  val BLAKE2B_264: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_264: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_272")
   @js.native
-  val BLAKE2B_272: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_272: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_280")
   @js.native
-  val BLAKE2B_280: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_280: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_288")
   @js.native
-  val BLAKE2B_288: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_288: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_296")
   @js.native
-  val BLAKE2B_296: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_296: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_304")
   @js.native
-  val BLAKE2B_304: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_304: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_312")
   @js.native
-  val BLAKE2B_312: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_312: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_32")
   @js.native
-  val BLAKE2B_32: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_32: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_320")
   @js.native
-  val BLAKE2B_320: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_320: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_328")
   @js.native
-  val BLAKE2B_328: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_328: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_336")
   @js.native
-  val BLAKE2B_336: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_336: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_344")
   @js.native
-  val BLAKE2B_344: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_344: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_352")
   @js.native
-  val BLAKE2B_352: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_352: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_360")
   @js.native
-  val BLAKE2B_360: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_360: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_368")
   @js.native
-  val BLAKE2B_368: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_368: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_376")
   @js.native
-  val BLAKE2B_376: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_376: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_384")
   @js.native
-  val BLAKE2B_384: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_384: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_392")
   @js.native
-  val BLAKE2B_392: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_392: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_40")
   @js.native
-  val BLAKE2B_40: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_40: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_400")
   @js.native
-  val BLAKE2B_400: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_400: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_408")
   @js.native
-  val BLAKE2B_408: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_408: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_416")
   @js.native
-  val BLAKE2B_416: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_416: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_424")
   @js.native
-  val BLAKE2B_424: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_424: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_432")
   @js.native
-  val BLAKE2B_432: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_432: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_440")
   @js.native
-  val BLAKE2B_440: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_440: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_448")
   @js.native
-  val BLAKE2B_448: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_448: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_456")
   @js.native
-  val BLAKE2B_456: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_456: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_464")
   @js.native
-  val BLAKE2B_464: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_464: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_472")
   @js.native
-  val BLAKE2B_472: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_472: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_48")
   @js.native
-  val BLAKE2B_48: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_48: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_480")
   @js.native
-  val BLAKE2B_480: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_480: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_488")
   @js.native
-  val BLAKE2B_488: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_488: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_496")
   @js.native
-  val BLAKE2B_496: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_496: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_504")
   @js.native
-  val BLAKE2B_504: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_504: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_512")
   @js.native
-  val BLAKE2B_512: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_512: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_56")
   @js.native
-  val BLAKE2B_56: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_56: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_64")
   @js.native
-  val BLAKE2B_64: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_64: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_72")
   @js.native
-  val BLAKE2B_72: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_72: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_8")
   @js.native
-  val BLAKE2B_8: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_8: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_80")
   @js.native
-  val BLAKE2B_80: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_80: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_88")
   @js.native
-  val BLAKE2B_88: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_88: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2B_96")
   @js.native
-  val BLAKE2B_96: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2B_96: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_104")
   @js.native
-  val BLAKE2S_104: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_104: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_112")
   @js.native
-  val BLAKE2S_112: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_112: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_120")
   @js.native
-  val BLAKE2S_120: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_120: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_128")
   @js.native
-  val BLAKE2S_128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_136")
   @js.native
-  val BLAKE2S_136: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_136: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_144")
   @js.native
-  val BLAKE2S_144: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_144: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_152")
   @js.native
-  val BLAKE2S_152: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_152: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_16")
   @js.native
-  val BLAKE2S_16: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_16: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_160")
   @js.native
-  val BLAKE2S_160: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_160: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_168")
   @js.native
-  val BLAKE2S_168: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_168: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_176")
   @js.native
-  val BLAKE2S_176: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_176: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_184")
   @js.native
-  val BLAKE2S_184: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_184: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_192")
   @js.native
-  val BLAKE2S_192: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_192: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_200")
   @js.native
-  val BLAKE2S_200: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_200: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_208")
   @js.native
-  val BLAKE2S_208: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_208: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_216")
   @js.native
-  val BLAKE2S_216: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_216: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_224")
   @js.native
-  val BLAKE2S_224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_232")
   @js.native
-  val BLAKE2S_232: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_232: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_24")
   @js.native
-  val BLAKE2S_24: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_24: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_240")
   @js.native
-  val BLAKE2S_240: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_240: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_248")
   @js.native
-  val BLAKE2S_248: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_248: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_256")
   @js.native
-  val BLAKE2S_256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_32")
   @js.native
-  val BLAKE2S_32: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_32: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_40")
   @js.native
-  val BLAKE2S_40: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_40: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_48")
   @js.native
-  val BLAKE2S_48: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_48: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_56")
   @js.native
-  val BLAKE2S_56: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_56: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_64")
   @js.native
-  val BLAKE2S_64: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_64: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_72")
   @js.native
-  val BLAKE2S_72: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_72: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_8")
   @js.native
-  val BLAKE2S_8: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_8: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_80")
   @js.native
-  val BLAKE2S_80: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_80: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_88")
   @js.native
-  val BLAKE2S_88: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_88: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE2S_96")
   @js.native
-  val BLAKE2S_96: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE2S_96: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLAKE3")
   @js.native
-  val BLAKE3: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLAKE3: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLS12_381_G1G2_PUB")
   @js.native
-  val BLS12_381_G1G2_PUB: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLS12_381_G1G2_PUB: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLS12_381_G1_PUB")
   @js.native
-  val BLS12_381_G1_PUB: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLS12_381_G1_PUB: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BLS12_381_G2_PUB")
   @js.native
-  val BLS12_381_G2_PUB: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BLS12_381_G2_PUB: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "BMT")
   @js.native
-  val BMT: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val BMT: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "CAIP_50")
   @js.native
-  val CAIP_50: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val CAIP_50: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "CAR_INDEX_SORTED")
   @js.native
-  val CAR_INDEX_SORTED: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val CAR_INDEX_SORTED: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "CBOR")
   @js.native
-  val CBOR: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val CBOR: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "CIDV1")
   @js.native
-  val CIDV1: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val CIDV1: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "CIDV2")
   @js.native
-  val CIDV2: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val CIDV2: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "CIDV3")
   @js.native
-  val CIDV3: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val CIDV3: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DAG_CBOR")
   @js.native
-  val DAG_CBOR: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DAG_CBOR: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DAG_COSE")
   @js.native
-  val DAG_COSE: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DAG_COSE: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DAG_JOSE")
   @js.native
-  val DAG_JOSE: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DAG_JOSE: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DAG_JSON")
   @js.native
-  val DAG_JSON: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DAG_JSON: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DAG_PB")
   @js.native
-  val DAG_PB: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DAG_PB: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DASH_BLOCK")
   @js.native
-  val DASH_BLOCK: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DASH_BLOCK: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DASH_TX")
   @js.native
-  val DASH_TX: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DASH_TX: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DBL_SHA2_256")
   @js.native
-  val DBL_SHA2_256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DBL_SHA2_256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DCCP")
   @js.native
-  val DCCP: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DCCP: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DECRED_BLOCK")
   @js.native
-  val DECRED_BLOCK: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DECRED_BLOCK: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DECRED_TX")
   @js.native
-  val DECRED_TX: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DECRED_TX: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DNS")
   @js.native
-  val DNS: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DNS: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DNS4")
   @js.native
-  val DNS4: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DNS4: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DNS6")
   @js.native
-  val DNS6: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DNS6: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "DNSADDR")
   @js.native
-  val DNSADDR: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val DNSADDR: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ED25519_PRIV")
   @js.native
-  val ED25519_PRIV: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ED25519_PRIV: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ED25519_PUB")
   @js.native
-  val ED25519_PUB: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ED25519_PUB: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ED448_PUB")
   @js.native
-  val ED448_PUB: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ED448_PUB: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ETH_ACCOUNT_SNAPSHOT")
   @js.native
-  val ETH_ACCOUNT_SNAPSHOT: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ETH_ACCOUNT_SNAPSHOT: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ETH_BLOCK")
   @js.native
-  val ETH_BLOCK: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ETH_BLOCK: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ETH_BLOCK_LIST")
   @js.native
-  val ETH_BLOCK_LIST: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ETH_BLOCK_LIST: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ETH_RECEIPT_LOG_TRIE")
   @js.native
-  val ETH_RECEIPT_LOG_TRIE: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ETH_RECEIPT_LOG_TRIE: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ETH_RECIEPT_LOG")
   @js.native
-  val ETH_RECIEPT_LOG: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ETH_RECIEPT_LOG: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ETH_STATE_TRIE")
   @js.native
-  val ETH_STATE_TRIE: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ETH_STATE_TRIE: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ETH_STORAGE_TRIE")
   @js.native
-  val ETH_STORAGE_TRIE: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ETH_STORAGE_TRIE: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ETH_TX")
   @js.native
-  val ETH_TX: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ETH_TX: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ETH_TX_RECEIPT")
   @js.native
-  val ETH_TX_RECEIPT: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ETH_TX_RECEIPT: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ETH_TX_RECEIPT_TRIE")
   @js.native
-  val ETH_TX_RECEIPT_TRIE: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ETH_TX_RECEIPT_TRIE: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ETH_TX_TRIE")
   @js.native
-  val ETH_TX_TRIE: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ETH_TX_TRIE: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "FIL_COMMITMENT_SEALED")
   @js.native
-  val FIL_COMMITMENT_SEALED: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val FIL_COMMITMENT_SEALED: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "FIL_COMMITMENT_UNSEALED")
   @js.native
-  val FIL_COMMITMENT_UNSEALED: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val FIL_COMMITMENT_UNSEALED: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "GARLIC32")
   @js.native
-  val GARLIC32: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val GARLIC32: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "GARLIC64")
   @js.native
-  val GARLIC64: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val GARLIC64: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "GIT_RAW")
   @js.native
-  val GIT_RAW: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val GIT_RAW: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "HOLOCHAIN_ADR_V0")
   @js.native
-  val HOLOCHAIN_ADR_V0: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val HOLOCHAIN_ADR_V0: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "HOLOCHAIN_ADR_V1")
   @js.native
-  val HOLOCHAIN_ADR_V1: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val HOLOCHAIN_ADR_V1: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "HOLOCHAIN_KEY_V0")
   @js.native
-  val HOLOCHAIN_KEY_V0: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val HOLOCHAIN_KEY_V0: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "HOLOCHAIN_KEY_V1")
   @js.native
-  val HOLOCHAIN_KEY_V1: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val HOLOCHAIN_KEY_V1: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "HOLOCHAIN_SIG_V0")
   @js.native
-  val HOLOCHAIN_SIG_V0: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val HOLOCHAIN_SIG_V0: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "HOLOCHAIN_SIG_V1")
   @js.native
-  val HOLOCHAIN_SIG_V1: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val HOLOCHAIN_SIG_V1: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "HTTP")
   @js.native
-  val HTTP: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val HTTP: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "HTTPS")
   @js.native
-  val HTTPS: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val HTTPS: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "IDENTITY")
   @js.native
-  val IDENTITY: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val IDENTITY: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "IP4")
   @js.native
-  val IP4: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val IP4: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "IP6")
   @js.native
-  val IP6: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val IP6: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "IP6ZONE")
   @js.native
-  val IP6ZONE: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val IP6ZONE: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "IPFS")
   @js.native
-  val IPFS: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val IPFS: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "IPFS_NS")
   @js.native
-  val IPFS_NS: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val IPFS_NS: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "IPLD_NS")
   @js.native
-  val IPLD_NS: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val IPLD_NS: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "IPNS_NS")
   @js.native
-  val IPNS_NS: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val IPNS_NS: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "JSON")
   @js.native
-  val JSON: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val JSON: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "KANGAROOTWELVE")
   @js.native
-  val KANGAROOTWELVE: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val KANGAROOTWELVE: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "KECCAK_224")
   @js.native
-  val KECCAK_224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val KECCAK_224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "KECCAK_256")
   @js.native
-  val KECCAK_256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val KECCAK_256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "KECCAK_384")
   @js.native
-  val KECCAK_384: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val KECCAK_384: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "KECCAK_512")
   @js.native
-  val KECCAK_512: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val KECCAK_512: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "LEOFCOIN_BLOCK")
   @js.native
-  val LEOFCOIN_BLOCK: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val LEOFCOIN_BLOCK: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "LEOFCOIN_PR")
   @js.native
-  val LEOFCOIN_PR: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val LEOFCOIN_PR: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "LEOFCOIN_TX")
   @js.native
-  val LEOFCOIN_TX: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val LEOFCOIN_TX: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "LIBP2P_KEY")
   @js.native
-  val LIBP2P_KEY: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val LIBP2P_KEY: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "LIBP2P_PEER_RECORD")
   @js.native
-  val LIBP2P_PEER_RECORD: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val LIBP2P_PEER_RECORD: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "LIBP2P_RELAY_RSVP")
   @js.native
-  val LIBP2P_RELAY_RSVP: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val LIBP2P_RELAY_RSVP: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "MD4")
   @js.native
-  val MD4: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val MD4: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "MD5")
   @js.native
-  val MD5: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val MD5: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "MESSAGEPACK")
   @js.native
-  val MESSAGEPACK: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val MESSAGEPACK: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "MULTIADDR")
   @js.native
-  val MULTIADDR: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val MULTIADDR: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "MULTIBASE")
   @js.native
-  val MULTIBASE: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val MULTIBASE: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "MULTICODEC")
   @js.native
-  val MULTICODEC: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val MULTICODEC: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "MULTIHASH")
   @js.native
-  val MULTIHASH: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val MULTIHASH: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "MURMUR3_128")
   @js.native
-  val MURMUR3_128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val MURMUR3_128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "MURMUR3_32")
   @js.native
-  val MURMUR3_32: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val MURMUR3_32: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "NOISE")
   @js.native
-  val NOISE: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val NOISE: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ONION")
   @js.native
-  val ONION: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ONION: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ONION3")
   @js.native
-  val ONION3: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ONION3: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "P256_PUB")
   @js.native
-  val P256_PUB: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val P256_PUB: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "P2P")
   @js.native
-  val P2P: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val P2P: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "P2P_CIRCUIT")
   @js.native
-  val P2P_CIRCUIT: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val P2P_CIRCUIT: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "P2P_STARDUST")
   @js.native
-  val P2P_STARDUST: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val P2P_STARDUST: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "P2P_WEBRTC_DIRECT")
   @js.native
-  val P2P_WEBRTC_DIRECT: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val P2P_WEBRTC_DIRECT: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "P2P_WEBRTC_STAR")
   @js.native
-  val P2P_WEBRTC_STAR: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val P2P_WEBRTC_STAR: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "P2P_WEBSOCKET_STAR")
   @js.native
-  val P2P_WEBSOCKET_STAR: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val P2P_WEBSOCKET_STAR: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "P384_PUB")
   @js.native
-  val P384_PUB: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val P384_PUB: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "P521_PUB")
   @js.native
-  val P521_PUB: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val P521_PUB: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "PATH")
   @js.native
-  val PATH: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val PATH: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "POSEIDON_BLS12_381_A2_FC1")
   @js.native
-  val POSEIDON_BLS12_381_A2_FC1: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val POSEIDON_BLS12_381_A2_FC1: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "POSEIDON_BLS12_381_A2_FC1_SC")
   @js.native
-  val POSEIDON_BLS12_381_A2_FC1_SC: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val POSEIDON_BLS12_381_A2_FC1_SC: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "PROTOBUF")
   @js.native
-  val PROTOBUF: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val PROTOBUF: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "QUIC")
   @js.native
-  val QUIC: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val QUIC: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "RAW")
   @js.native
-  val RAW: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val RAW: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "RIPEMD_128")
   @js.native
-  val RIPEMD_128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val RIPEMD_128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "RIPEMD_160")
   @js.native
-  val RIPEMD_160: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val RIPEMD_160: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "RIPEMD_256")
   @js.native
-  val RIPEMD_256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val RIPEMD_256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "RIPEMD_320")
   @js.native
-  val RIPEMD_320: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val RIPEMD_320: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "RLP")
   @js.native
-  val RLP: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val RLP: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SCTP")
   @js.native
-  val SCTP: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SCTP: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SECP256K1_PRIV")
   @js.native
-  val SECP256K1_PRIV: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SECP256K1_PRIV: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SECP256K1_PUB")
   @js.native
-  val SECP256K1_PUB: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SECP256K1_PUB: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SHA1")
   @js.native
-  val SHA1: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SHA1: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SHA2_256")
   @js.native
-  val SHA2_256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SHA2_256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SHA2_256_TRUNC254_PADDED")
   @js.native
-  val SHA2_256_TRUNC254_PADDED: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SHA2_256_TRUNC254_PADDED: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SHA2_512")
   @js.native
-  val SHA2_512: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SHA2_512: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SHA3_224")
   @js.native
-  val SHA3_224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SHA3_224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SHA3_256")
   @js.native
-  val SHA3_256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SHA3_256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SHA3_384")
   @js.native
-  val SHA3_384: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SHA3_384: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SHA3_512")
   @js.native
-  val SHA3_512: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SHA3_512: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SHAKE_128")
   @js.native
-  val SHAKE_128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SHAKE_128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SHAKE_256")
   @js.native
-  val SHAKE_256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SHAKE_256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_1000")
   @js.native
-  val SKEIN1024_1000: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_1000: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_1008")
   @js.native
-  val SKEIN1024_1008: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_1008: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_1016")
   @js.native
-  val SKEIN1024_1016: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_1016: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_1024")
   @js.native
-  val SKEIN1024_1024: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_1024: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_104")
   @js.native
-  val SKEIN1024_104: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_104: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_112")
   @js.native
-  val SKEIN1024_112: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_112: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_120")
   @js.native
-  val SKEIN1024_120: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_120: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_128")
   @js.native
-  val SKEIN1024_128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_136")
   @js.native
-  val SKEIN1024_136: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_136: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_144")
   @js.native
-  val SKEIN1024_144: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_144: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_152")
   @js.native
-  val SKEIN1024_152: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_152: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_16")
   @js.native
-  val SKEIN1024_16: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_16: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_160")
   @js.native
-  val SKEIN1024_160: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_160: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_168")
   @js.native
-  val SKEIN1024_168: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_168: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_176")
   @js.native
-  val SKEIN1024_176: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_176: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_184")
   @js.native
-  val SKEIN1024_184: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_184: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_192")
   @js.native
-  val SKEIN1024_192: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_192: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_200")
   @js.native
-  val SKEIN1024_200: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_200: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_208")
   @js.native
-  val SKEIN1024_208: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_208: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_216")
   @js.native
-  val SKEIN1024_216: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_216: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_224")
   @js.native
-  val SKEIN1024_224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_232")
   @js.native
-  val SKEIN1024_232: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_232: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_24")
   @js.native
-  val SKEIN1024_24: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_24: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_240")
   @js.native
-  val SKEIN1024_240: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_240: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_248")
   @js.native
-  val SKEIN1024_248: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_248: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_256")
   @js.native
-  val SKEIN1024_256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_264")
   @js.native
-  val SKEIN1024_264: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_264: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_272")
   @js.native
-  val SKEIN1024_272: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_272: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_280")
   @js.native
-  val SKEIN1024_280: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_280: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_288")
   @js.native
-  val SKEIN1024_288: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_288: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_296")
   @js.native
-  val SKEIN1024_296: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_296: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_304")
   @js.native
-  val SKEIN1024_304: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_304: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_312")
   @js.native
-  val SKEIN1024_312: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_312: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_32")
   @js.native
-  val SKEIN1024_32: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_32: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_320")
   @js.native
-  val SKEIN1024_320: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_320: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_328")
   @js.native
-  val SKEIN1024_328: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_328: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_336")
   @js.native
-  val SKEIN1024_336: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_336: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_344")
   @js.native
-  val SKEIN1024_344: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_344: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_352")
   @js.native
-  val SKEIN1024_352: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_352: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_360")
   @js.native
-  val SKEIN1024_360: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_360: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_368")
   @js.native
-  val SKEIN1024_368: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_368: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_376")
   @js.native
-  val SKEIN1024_376: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_376: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_384")
   @js.native
-  val SKEIN1024_384: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_384: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_392")
   @js.native
-  val SKEIN1024_392: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_392: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_40")
   @js.native
-  val SKEIN1024_40: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_40: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_400")
   @js.native
-  val SKEIN1024_400: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_400: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_408")
   @js.native
-  val SKEIN1024_408: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_408: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_416")
   @js.native
-  val SKEIN1024_416: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_416: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_424")
   @js.native
-  val SKEIN1024_424: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_424: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_432")
   @js.native
-  val SKEIN1024_432: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_432: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_440")
   @js.native
-  val SKEIN1024_440: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_440: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_448")
   @js.native
-  val SKEIN1024_448: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_448: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_456")
   @js.native
-  val SKEIN1024_456: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_456: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_464")
   @js.native
-  val SKEIN1024_464: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_464: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_472")
   @js.native
-  val SKEIN1024_472: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_472: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_48")
   @js.native
-  val SKEIN1024_48: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_48: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_480")
   @js.native
-  val SKEIN1024_480: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_480: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_488")
   @js.native
-  val SKEIN1024_488: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_488: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_496")
   @js.native
-  val SKEIN1024_496: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_496: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_504")
   @js.native
-  val SKEIN1024_504: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_504: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_512")
   @js.native
-  val SKEIN1024_512: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_512: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_520")
   @js.native
-  val SKEIN1024_520: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_520: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_528")
   @js.native
-  val SKEIN1024_528: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_528: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_536")
   @js.native
-  val SKEIN1024_536: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_536: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_544")
   @js.native
-  val SKEIN1024_544: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_544: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_552")
   @js.native
-  val SKEIN1024_552: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_552: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_56")
   @js.native
-  val SKEIN1024_56: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_56: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_560")
   @js.native
-  val SKEIN1024_560: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_560: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_568")
   @js.native
-  val SKEIN1024_568: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_568: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_576")
   @js.native
-  val SKEIN1024_576: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_576: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_584")
   @js.native
-  val SKEIN1024_584: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_584: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_592")
   @js.native
-  val SKEIN1024_592: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_592: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_600")
   @js.native
-  val SKEIN1024_600: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_600: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_608")
   @js.native
-  val SKEIN1024_608: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_608: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_616")
   @js.native
-  val SKEIN1024_616: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_616: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_624")
   @js.native
-  val SKEIN1024_624: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_624: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_632")
   @js.native
-  val SKEIN1024_632: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_632: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_64")
   @js.native
-  val SKEIN1024_64: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_64: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_640")
   @js.native
-  val SKEIN1024_640: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_640: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_648")
   @js.native
-  val SKEIN1024_648: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_648: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_656")
   @js.native
-  val SKEIN1024_656: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_656: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_664")
   @js.native
-  val SKEIN1024_664: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_664: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_672")
   @js.native
-  val SKEIN1024_672: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_672: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_680")
   @js.native
-  val SKEIN1024_680: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_680: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_688")
   @js.native
-  val SKEIN1024_688: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_688: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_696")
   @js.native
-  val SKEIN1024_696: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_696: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_704")
   @js.native
-  val SKEIN1024_704: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_704: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_712")
   @js.native
-  val SKEIN1024_712: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_712: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_72")
   @js.native
-  val SKEIN1024_72: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_72: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_720")
   @js.native
-  val SKEIN1024_720: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_720: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_728")
   @js.native
-  val SKEIN1024_728: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_728: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_736")
   @js.native
-  val SKEIN1024_736: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_736: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_744")
   @js.native
-  val SKEIN1024_744: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_744: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_752")
   @js.native
-  val SKEIN1024_752: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_752: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_760")
   @js.native
-  val SKEIN1024_760: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_760: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_768")
   @js.native
-  val SKEIN1024_768: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_768: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_776")
   @js.native
-  val SKEIN1024_776: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_776: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_784")
   @js.native
-  val SKEIN1024_784: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_784: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_792")
   @js.native
-  val SKEIN1024_792: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_792: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_8")
   @js.native
-  val SKEIN1024_8: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_8: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_80")
   @js.native
-  val SKEIN1024_80: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_80: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_800")
   @js.native
-  val SKEIN1024_800: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_800: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_808")
   @js.native
-  val SKEIN1024_808: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_808: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_816")
   @js.native
-  val SKEIN1024_816: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_816: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_824")
   @js.native
-  val SKEIN1024_824: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_824: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_832")
   @js.native
-  val SKEIN1024_832: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_832: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_840")
   @js.native
-  val SKEIN1024_840: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_840: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_848")
   @js.native
-  val SKEIN1024_848: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_848: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_856")
   @js.native
-  val SKEIN1024_856: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_856: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_864")
   @js.native
-  val SKEIN1024_864: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_864: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_872")
   @js.native
-  val SKEIN1024_872: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_872: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_88")
   @js.native
-  val SKEIN1024_88: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_88: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_880")
   @js.native
-  val SKEIN1024_880: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_880: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_888")
   @js.native
-  val SKEIN1024_888: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_888: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_896")
   @js.native
-  val SKEIN1024_896: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_896: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_904")
   @js.native
-  val SKEIN1024_904: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_904: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_912")
   @js.native
-  val SKEIN1024_912: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_912: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_920")
   @js.native
-  val SKEIN1024_920: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_920: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_928")
   @js.native
-  val SKEIN1024_928: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_928: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_936")
   @js.native
-  val SKEIN1024_936: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_936: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_944")
   @js.native
-  val SKEIN1024_944: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_944: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_952")
   @js.native
-  val SKEIN1024_952: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_952: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_96")
   @js.native
-  val SKEIN1024_96: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_96: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_960")
   @js.native
-  val SKEIN1024_960: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_960: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_968")
   @js.native
-  val SKEIN1024_968: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_968: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_976")
   @js.native
-  val SKEIN1024_976: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_976: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_984")
   @js.native
-  val SKEIN1024_984: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_984: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN1024_992")
   @js.native
-  val SKEIN1024_992: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN1024_992: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_104")
   @js.native
-  val SKEIN256_104: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_104: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_112")
   @js.native
-  val SKEIN256_112: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_112: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_120")
   @js.native
-  val SKEIN256_120: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_120: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_128")
   @js.native
-  val SKEIN256_128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_136")
   @js.native
-  val SKEIN256_136: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_136: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_144")
   @js.native
-  val SKEIN256_144: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_144: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_152")
   @js.native
-  val SKEIN256_152: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_152: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_16")
   @js.native
-  val SKEIN256_16: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_16: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_160")
   @js.native
-  val SKEIN256_160: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_160: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_168")
   @js.native
-  val SKEIN256_168: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_168: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_176")
   @js.native
-  val SKEIN256_176: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_176: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_184")
   @js.native
-  val SKEIN256_184: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_184: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_192")
   @js.native
-  val SKEIN256_192: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_192: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_200")
   @js.native
-  val SKEIN256_200: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_200: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_208")
   @js.native
-  val SKEIN256_208: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_208: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_216")
   @js.native
-  val SKEIN256_216: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_216: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_224")
   @js.native
-  val SKEIN256_224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_232")
   @js.native
-  val SKEIN256_232: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_232: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_24")
   @js.native
-  val SKEIN256_24: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_24: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_240")
   @js.native
-  val SKEIN256_240: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_240: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_248")
   @js.native
-  val SKEIN256_248: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_248: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_256")
   @js.native
-  val SKEIN256_256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_32")
   @js.native
-  val SKEIN256_32: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_32: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_40")
   @js.native
-  val SKEIN256_40: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_40: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_48")
   @js.native
-  val SKEIN256_48: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_48: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_56")
   @js.native
-  val SKEIN256_56: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_56: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_64")
   @js.native
-  val SKEIN256_64: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_64: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_72")
   @js.native
-  val SKEIN256_72: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_72: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_8")
   @js.native
-  val SKEIN256_8: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_8: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_80")
   @js.native
-  val SKEIN256_80: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_80: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_88")
   @js.native
-  val SKEIN256_88: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_88: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN256_96")
   @js.native
-  val SKEIN256_96: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN256_96: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_104")
   @js.native
-  val SKEIN512_104: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_104: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_112")
   @js.native
-  val SKEIN512_112: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_112: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_120")
   @js.native
-  val SKEIN512_120: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_120: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_128")
   @js.native
-  val SKEIN512_128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_136")
   @js.native
-  val SKEIN512_136: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_136: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_144")
   @js.native
-  val SKEIN512_144: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_144: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_152")
   @js.native
-  val SKEIN512_152: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_152: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_16")
   @js.native
-  val SKEIN512_16: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_16: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_160")
   @js.native
-  val SKEIN512_160: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_160: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_168")
   @js.native
-  val SKEIN512_168: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_168: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_176")
   @js.native
-  val SKEIN512_176: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_176: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_184")
   @js.native
-  val SKEIN512_184: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_184: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_192")
   @js.native
-  val SKEIN512_192: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_192: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_200")
   @js.native
-  val SKEIN512_200: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_200: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_208")
   @js.native
-  val SKEIN512_208: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_208: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_216")
   @js.native
-  val SKEIN512_216: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_216: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_224")
   @js.native
-  val SKEIN512_224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_232")
   @js.native
-  val SKEIN512_232: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_232: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_24")
   @js.native
-  val SKEIN512_24: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_24: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_240")
   @js.native
-  val SKEIN512_240: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_240: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_248")
   @js.native
-  val SKEIN512_248: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_248: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_256")
   @js.native
-  val SKEIN512_256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_264")
   @js.native
-  val SKEIN512_264: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_264: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_272")
   @js.native
-  val SKEIN512_272: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_272: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_280")
   @js.native
-  val SKEIN512_280: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_280: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_288")
   @js.native
-  val SKEIN512_288: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_288: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_296")
   @js.native
-  val SKEIN512_296: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_296: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_304")
   @js.native
-  val SKEIN512_304: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_304: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_312")
   @js.native
-  val SKEIN512_312: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_312: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_32")
   @js.native
-  val SKEIN512_32: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_32: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_320")
   @js.native
-  val SKEIN512_320: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_320: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_328")
   @js.native
-  val SKEIN512_328: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_328: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_336")
   @js.native
-  val SKEIN512_336: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_336: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_344")
   @js.native
-  val SKEIN512_344: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_344: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_352")
   @js.native
-  val SKEIN512_352: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_352: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_360")
   @js.native
-  val SKEIN512_360: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_360: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_368")
   @js.native
-  val SKEIN512_368: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_368: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_376")
   @js.native
-  val SKEIN512_376: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_376: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_384")
   @js.native
-  val SKEIN512_384: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_384: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_392")
   @js.native
-  val SKEIN512_392: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_392: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_40")
   @js.native
-  val SKEIN512_40: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_40: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_400")
   @js.native
-  val SKEIN512_400: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_400: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_408")
   @js.native
-  val SKEIN512_408: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_408: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_416")
   @js.native
-  val SKEIN512_416: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_416: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_424")
   @js.native
-  val SKEIN512_424: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_424: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_432")
   @js.native
-  val SKEIN512_432: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_432: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_440")
   @js.native
-  val SKEIN512_440: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_440: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_448")
   @js.native
-  val SKEIN512_448: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_448: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_456")
   @js.native
-  val SKEIN512_456: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_456: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_464")
   @js.native
-  val SKEIN512_464: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_464: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_472")
   @js.native
-  val SKEIN512_472: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_472: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_48")
   @js.native
-  val SKEIN512_48: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_48: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_480")
   @js.native
-  val SKEIN512_480: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_480: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_488")
   @js.native
-  val SKEIN512_488: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_488: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_496")
   @js.native
-  val SKEIN512_496: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_496: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_504")
   @js.native
-  val SKEIN512_504: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_504: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_512")
   @js.native
-  val SKEIN512_512: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_512: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_56")
   @js.native
-  val SKEIN512_56: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_56: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_64")
   @js.native
-  val SKEIN512_64: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_64: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_72")
   @js.native
-  val SKEIN512_72: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_72: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_8")
   @js.native
-  val SKEIN512_8: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_8: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_80")
   @js.native
-  val SKEIN512_80: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_80: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_88")
   @js.native
-  val SKEIN512_88: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_88: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKEIN512_96")
   @js.native
-  val SKEIN512_96: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKEIN512_96: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SKYNET_NS")
   @js.native
-  val SKYNET_NS: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SKYNET_NS: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SM3_256")
   @js.native
-  val SM3_256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SM3_256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "STELLAR_BLOCK")
   @js.native
-  val STELLAR_BLOCK: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val STELLAR_BLOCK: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "STELLAR_TX")
   @js.native
-  val STELLAR_TX: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val STELLAR_TX: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "STREAMID")
   @js.native
-  val STREAMID: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val STREAMID: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SWARM_FEED")
   @js.native
-  val SWARM_FEED: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SWARM_FEED: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SWARM_MANIFEST")
   @js.native
-  val SWARM_MANIFEST: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SWARM_MANIFEST: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SWARM_NS")
   @js.native
-  val SWARM_NS: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SWARM_NS: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "SWHID_1_SNP")
   @js.native
-  val SWHID_1_SNP: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val SWHID_1_SNP: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "TCP")
   @js.native
-  val TCP: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val TCP: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "THREAD")
   @js.native
-  val THREAD: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val THREAD: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "TLS")
   @js.native
-  val TLS: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val TLS: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "TORRENT_FILE")
   @js.native
-  val TORRENT_FILE: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val TORRENT_FILE: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "TORRENT_INFO")
   @js.native
-  val TORRENT_INFO: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val TORRENT_INFO: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "UDP")
   @js.native
-  val UDP: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val UDP: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "UDT")
   @js.native
-  val UDT: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val UDT: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "UNIX")
   @js.native
-  val UNIX: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val UNIX: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "UTP")
   @js.native
-  val UTP: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val UTP: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "WS")
   @js.native
-  val WS: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val WS: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "WSS")
   @js.native
-  val WSS: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val WSS: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "X11")
   @js.native
-  val X11: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val X11: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "X25519_PRIV")
   @js.native
-  val X25519_PRIV: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val X25519_PRIV: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "X25519_PUB")
   @js.native
-  val X25519_PUB: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val X25519_PUB: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "X448_PUB")
   @js.native
-  val X448_PUB: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val X448_PUB: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ZCASH_BLOCK")
   @js.native
-  val ZCASH_BLOCK: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ZCASH_BLOCK: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ZCASH_TX")
   @js.native
-  val ZCASH_TX: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ZCASH_TX: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ZERONET")
   @js.native
-  val ZERONET: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ZERONET: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   @JSImport("multicodec", "ZEROXCERT_IMPRINT_256")
   @js.native
-  val ZEROXCERT_IMPRINT_256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+  val ZEROXCERT_IMPRINT_256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   
   inline def addPrefix(multicodecStrOrCode: js.typedarray.Uint8Array, data: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrefix")(multicodecStrOrCode.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def addPrefix(multicodecStrOrCode: CodecName, data: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrefix")(multicodecStrOrCode.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
@@ -1985,1887 +1985,1887 @@ object mod {
     
     @JSImport("multicodec", "nameToCode.arweave-ns")
     @js.native
-    val arweaveNs: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val arweaveNs: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.bencode")
     @js.native
-    val bencode: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val bencode: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.bitcoin-block")
     @js.native
-    val bitcoinBlock: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val bitcoinBlock: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.bitcoin-tx")
     @js.native
-    val bitcoinTx: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val bitcoinTx: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.bitcoin-witness-commitment")
     @js.native
-    val bitcoinWitnessCommitment: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val bitcoinWitnessCommitment: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-104")
     @js.native
-    val blake2b104: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b104: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-112")
     @js.native
-    val blake2b112: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b112: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-120")
     @js.native
-    val blake2b120: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b120: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-128")
     @js.native
-    val blake2b128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-136")
     @js.native
-    val blake2b136: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b136: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-144")
     @js.native
-    val blake2b144: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b144: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-152")
     @js.native
-    val blake2b152: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b152: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-16")
     @js.native
-    val blake2b16: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b16: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-160")
     @js.native
-    val blake2b160: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b160: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-168")
     @js.native
-    val blake2b168: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b168: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-176")
     @js.native
-    val blake2b176: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b176: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-184")
     @js.native
-    val blake2b184: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b184: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-192")
     @js.native
-    val blake2b192: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b192: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-200")
     @js.native
-    val blake2b200: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b200: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-208")
     @js.native
-    val blake2b208: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b208: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-216")
     @js.native
-    val blake2b216: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b216: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-224")
     @js.native
-    val blake2b224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-232")
     @js.native
-    val blake2b232: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b232: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-24")
     @js.native
-    val blake2b24: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b24: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-240")
     @js.native
-    val blake2b240: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b240: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-248")
     @js.native
-    val blake2b248: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b248: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-256")
     @js.native
-    val blake2b256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-264")
     @js.native
-    val blake2b264: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b264: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-272")
     @js.native
-    val blake2b272: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b272: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-280")
     @js.native
-    val blake2b280: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b280: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-288")
     @js.native
-    val blake2b288: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b288: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-296")
     @js.native
-    val blake2b296: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b296: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-304")
     @js.native
-    val blake2b304: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b304: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-312")
     @js.native
-    val blake2b312: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b312: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-32")
     @js.native
-    val blake2b32: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b32: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-320")
     @js.native
-    val blake2b320: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b320: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-328")
     @js.native
-    val blake2b328: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b328: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-336")
     @js.native
-    val blake2b336: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b336: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-344")
     @js.native
-    val blake2b344: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b344: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-352")
     @js.native
-    val blake2b352: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b352: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-360")
     @js.native
-    val blake2b360: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b360: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-368")
     @js.native
-    val blake2b368: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b368: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-376")
     @js.native
-    val blake2b376: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b376: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-384")
     @js.native
-    val blake2b384: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b384: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-392")
     @js.native
-    val blake2b392: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b392: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-40")
     @js.native
-    val blake2b40: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b40: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-400")
     @js.native
-    val blake2b400: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b400: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-408")
     @js.native
-    val blake2b408: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b408: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-416")
     @js.native
-    val blake2b416: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b416: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-424")
     @js.native
-    val blake2b424: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b424: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-432")
     @js.native
-    val blake2b432: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b432: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-440")
     @js.native
-    val blake2b440: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b440: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-448")
     @js.native
-    val blake2b448: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b448: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-456")
     @js.native
-    val blake2b456: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b456: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-464")
     @js.native
-    val blake2b464: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b464: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-472")
     @js.native
-    val blake2b472: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b472: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-48")
     @js.native
-    val blake2b48: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b48: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-480")
     @js.native
-    val blake2b480: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b480: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-488")
     @js.native
-    val blake2b488: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b488: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-496")
     @js.native
-    val blake2b496: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b496: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-504")
     @js.native
-    val blake2b504: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b504: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-512")
     @js.native
-    val blake2b512: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b512: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-56")
     @js.native
-    val blake2b56: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b56: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-64")
     @js.native
-    val blake2b64: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b64: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-72")
     @js.native
-    val blake2b72: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b72: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-8")
     @js.native
-    val blake2b8: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b8: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-80")
     @js.native
-    val blake2b80: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b80: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-88")
     @js.native
-    val blake2b88: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b88: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2b-96")
     @js.native
-    val blake2b96: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2b96: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-104")
     @js.native
-    val blake2s104: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s104: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-112")
     @js.native
-    val blake2s112: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s112: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-120")
     @js.native
-    val blake2s120: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s120: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-128")
     @js.native
-    val blake2s128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-136")
     @js.native
-    val blake2s136: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s136: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-144")
     @js.native
-    val blake2s144: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s144: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-152")
     @js.native
-    val blake2s152: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s152: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-16")
     @js.native
-    val blake2s16: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s16: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-160")
     @js.native
-    val blake2s160: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s160: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-168")
     @js.native
-    val blake2s168: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s168: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-176")
     @js.native
-    val blake2s176: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s176: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-184")
     @js.native
-    val blake2s184: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s184: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-192")
     @js.native
-    val blake2s192: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s192: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-200")
     @js.native
-    val blake2s200: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s200: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-208")
     @js.native
-    val blake2s208: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s208: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-216")
     @js.native
-    val blake2s216: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s216: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-224")
     @js.native
-    val blake2s224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-232")
     @js.native
-    val blake2s232: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s232: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-24")
     @js.native
-    val blake2s24: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s24: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-240")
     @js.native
-    val blake2s240: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s240: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-248")
     @js.native
-    val blake2s248: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s248: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-256")
     @js.native
-    val blake2s256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-32")
     @js.native
-    val blake2s32: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s32: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-40")
     @js.native
-    val blake2s40: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s40: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-48")
     @js.native
-    val blake2s48: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s48: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-56")
     @js.native
-    val blake2s56: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s56: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-64")
     @js.native
-    val blake2s64: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s64: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-72")
     @js.native
-    val blake2s72: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s72: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-8")
     @js.native
-    val blake2s8: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s8: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-80")
     @js.native
-    val blake2s80: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s80: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-88")
     @js.native
-    val blake2s88: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s88: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake2s-96")
     @js.native
-    val blake2s96: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake2s96: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.blake3")
     @js.native
-    val blake3: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val blake3: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.bls12_381-g1-pub")
     @js.native
-    val bls12381G1Pub: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val bls12381G1Pub: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.bls12_381-g1g2-pub")
     @js.native
-    val bls12381G1g2Pub: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val bls12381G1g2Pub: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.bls12_381-g2-pub")
     @js.native
-    val bls12381G2Pub: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val bls12381G2Pub: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.bmt")
     @js.native
-    val bmt: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val bmt: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.caip-50")
     @js.native
-    val caip50: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val caip50: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.car-index-sorted")
     @js.native
-    val carIndexSorted: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val carIndexSorted: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.cbor")
     @js.native
-    val cbor: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val cbor: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.cidv1")
     @js.native
-    val cidv1: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val cidv1: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.cidv2")
     @js.native
-    val cidv2: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val cidv2: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.cidv3")
     @js.native
-    val cidv3: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val cidv3: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.dag-cbor")
     @js.native
-    val dagCbor: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val dagCbor: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.dag-cose")
     @js.native
-    val dagCose: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val dagCose: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.dag-jose")
     @js.native
-    val dagJose: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val dagJose: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.dag-json")
     @js.native
-    val dagJson: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val dagJson: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.dag-pb")
     @js.native
-    val dagPb: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val dagPb: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.dash-block")
     @js.native
-    val dashBlock: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val dashBlock: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.dash-tx")
     @js.native
-    val dashTx: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val dashTx: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.dbl-sha2-256")
     @js.native
-    val dblSha2256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val dblSha2256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.dccp")
     @js.native
-    val dccp: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val dccp: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.decred-block")
     @js.native
-    val decredBlock: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val decredBlock: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.decred-tx")
     @js.native
-    val decredTx: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val decredTx: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.dns")
     @js.native
-    val dns: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val dns: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.dns4")
     @js.native
-    val dns4: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val dns4: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.dns6")
     @js.native
-    val dns6: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val dns6: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.dnsaddr")
     @js.native
-    val dnsaddr: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val dnsaddr: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ed25519-priv")
     @js.native
-    val ed25519Priv: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ed25519Priv: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ed25519-pub")
     @js.native
-    val ed25519Pub: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ed25519Pub: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ed448-pub")
     @js.native
-    val ed448Pub: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ed448Pub: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.eth-account-snapshot")
     @js.native
-    val ethAccountSnapshot: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ethAccountSnapshot: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.eth-block")
     @js.native
-    val ethBlock: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ethBlock: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.eth-block-list")
     @js.native
-    val ethBlockList: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ethBlockList: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.eth-receipt-log-trie")
     @js.native
-    val ethReceiptLogTrie: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ethReceiptLogTrie: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.eth-reciept-log")
     @js.native
-    val ethRecieptLog: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ethRecieptLog: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.eth-state-trie")
     @js.native
-    val ethStateTrie: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ethStateTrie: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.eth-storage-trie")
     @js.native
-    val ethStorageTrie: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ethStorageTrie: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.eth-tx")
     @js.native
-    val ethTx: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ethTx: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.eth-tx-receipt")
     @js.native
-    val ethTxReceipt: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ethTxReceipt: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.eth-tx-receipt-trie")
     @js.native
-    val ethTxReceiptTrie: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ethTxReceiptTrie: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.eth-tx-trie")
     @js.native
-    val ethTxTrie: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ethTxTrie: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.fil-commitment-sealed")
     @js.native
-    val filCommitmentSealed: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val filCommitmentSealed: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.fil-commitment-unsealed")
     @js.native
-    val filCommitmentUnsealed: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val filCommitmentUnsealed: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.garlic32")
     @js.native
-    val garlic32: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val garlic32: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.garlic64")
     @js.native
-    val garlic64: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val garlic64: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.git-raw")
     @js.native
-    val gitRaw: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val gitRaw: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.holochain-adr-v0")
     @js.native
-    val holochainAdrV0: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val holochainAdrV0: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.holochain-adr-v1")
     @js.native
-    val holochainAdrV1: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val holochainAdrV1: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.holochain-key-v0")
     @js.native
-    val holochainKeyV0: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val holochainKeyV0: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.holochain-key-v1")
     @js.native
-    val holochainKeyV1: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val holochainKeyV1: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.holochain-sig-v0")
     @js.native
-    val holochainSigV0: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val holochainSigV0: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.holochain-sig-v1")
     @js.native
-    val holochainSigV1: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val holochainSigV1: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.http")
     @js.native
-    val http: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val http: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.https")
     @js.native
-    val https: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val https: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.identity")
     @js.native
-    val identity: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val identity: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ip4")
     @js.native
-    val ip4: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ip4: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ip6")
     @js.native
-    val ip6: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ip6: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ip6zone")
     @js.native
-    val ip6zone: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ip6zone: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ipfs")
     @js.native
-    val ipfs: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ipfs: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ipfs-ns")
     @js.native
-    val ipfsNs: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ipfsNs: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ipld-ns")
     @js.native
-    val ipldNs: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ipldNs: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ipns-ns")
     @js.native
-    val ipnsNs: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ipnsNs: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.json")
     @js.native
-    val json: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val json: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.kangarootwelve")
     @js.native
-    val kangarootwelve: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val kangarootwelve: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.keccak-224")
     @js.native
-    val keccak224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val keccak224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.keccak-256")
     @js.native
-    val keccak256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val keccak256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.keccak-384")
     @js.native
-    val keccak384: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val keccak384: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.keccak-512")
     @js.native
-    val keccak512: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val keccak512: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.leofcoin-block")
     @js.native
-    val leofcoinBlock: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val leofcoinBlock: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.leofcoin-pr")
     @js.native
-    val leofcoinPr: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val leofcoinPr: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.leofcoin-tx")
     @js.native
-    val leofcoinTx: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val leofcoinTx: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.libp2p-key")
     @js.native
-    val libp2pKey: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val libp2pKey: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.libp2p-peer-record")
     @js.native
-    val libp2pPeerRecord: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val libp2pPeerRecord: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.libp2p-relay-rsvp")
     @js.native
-    val libp2pRelayRsvp: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val libp2pRelayRsvp: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.md4")
     @js.native
-    val md4: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val md4: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.md5")
     @js.native
-    val md5: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val md5: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.messagepack")
     @js.native
-    val messagepack: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val messagepack: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.multiaddr")
     @js.native
-    val multiaddr: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val multiaddr: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.multibase")
     @js.native
-    val multibase: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val multibase: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.multicodec")
     @js.native
-    val multicodec: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val multicodec: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.multihash")
     @js.native
-    val multihash: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val multihash: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.murmur3-128")
     @js.native
-    val murmur3128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val murmur3128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.murmur3-32")
     @js.native
-    val murmur332: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val murmur332: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.noise")
     @js.native
-    val noise: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val noise: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.onion")
     @js.native
-    val onion: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val onion: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.onion3")
     @js.native
-    val onion3: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val onion3: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.p256-pub")
     @js.native
-    val p256Pub: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val p256Pub: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.p2p")
     @js.native
-    val p2p: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val p2p: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.p2p-circuit")
     @js.native
-    val p2pCircuit: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val p2pCircuit: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.p2p-stardust")
     @js.native
-    val p2pStardust: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val p2pStardust: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.p2p-webrtc-direct")
     @js.native
-    val p2pWebrtcDirect: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val p2pWebrtcDirect: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.p2p-webrtc-star")
     @js.native
-    val p2pWebrtcStar: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val p2pWebrtcStar: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.p2p-websocket-star")
     @js.native
-    val p2pWebsocketStar: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val p2pWebsocketStar: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.p384-pub")
     @js.native
-    val p384Pub: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val p384Pub: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.p521-pub")
     @js.native
-    val p521Pub: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val p521Pub: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.path")
     @js.native
-    val path: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val path: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.poseidon-bls12_381-a2-fc1")
     @js.native
-    val poseidonBls12381A2Fc1: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val poseidonBls12381A2Fc1: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.poseidon-bls12_381-a2-fc1-sc")
     @js.native
-    val poseidonBls12381A2Fc1Sc: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val poseidonBls12381A2Fc1Sc: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.protobuf")
     @js.native
-    val protobuf: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val protobuf: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.quic")
     @js.native
-    val quic: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val quic: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.raw")
     @js.native
-    val raw: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val raw: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ripemd-128")
     @js.native
-    val ripemd128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ripemd128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ripemd-160")
     @js.native
-    val ripemd160: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ripemd160: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ripemd-256")
     @js.native
-    val ripemd256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ripemd256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ripemd-320")
     @js.native
-    val ripemd320: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ripemd320: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.rlp")
     @js.native
-    val rlp: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val rlp: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.sctp")
     @js.native
-    val sctp: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val sctp: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.secp256k1-priv")
     @js.native
-    val secp256k1Priv: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val secp256k1Priv: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.secp256k1-pub")
     @js.native
-    val secp256k1Pub: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val secp256k1Pub: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.sha1")
     @js.native
-    val sha1: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val sha1: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.sha2-256")
     @js.native
-    val sha2256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val sha2256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.sha2-256-trunc254-padded")
     @js.native
-    val sha2256Trunc254Padded: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val sha2256Trunc254Padded: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.sha2-512")
     @js.native
-    val sha2512: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val sha2512: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.sha3-224")
     @js.native
-    val sha3224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val sha3224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.sha3-256")
     @js.native
-    val sha3256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val sha3256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.sha3-384")
     @js.native
-    val sha3384: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val sha3384: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.sha3-512")
     @js.native
-    val sha3512: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val sha3512: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.shake-128")
     @js.native
-    val shake128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val shake128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.shake-256")
     @js.native
-    val shake256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val shake256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-1000")
     @js.native
-    val skein10241000: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein10241000: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-1008")
     @js.native
-    val skein10241008: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein10241008: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-1016")
     @js.native
-    val skein10241016: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein10241016: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-1024")
     @js.native
-    val skein10241024: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein10241024: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-104")
     @js.native
-    val skein1024104: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024104: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-112")
     @js.native
-    val skein1024112: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024112: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-120")
     @js.native
-    val skein1024120: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024120: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-128")
     @js.native
-    val skein1024128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-136")
     @js.native
-    val skein1024136: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024136: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-144")
     @js.native
-    val skein1024144: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024144: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-152")
     @js.native
-    val skein1024152: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024152: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-16")
     @js.native
-    val skein102416: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein102416: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-160")
     @js.native
-    val skein1024160: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024160: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-168")
     @js.native
-    val skein1024168: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024168: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-176")
     @js.native
-    val skein1024176: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024176: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-184")
     @js.native
-    val skein1024184: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024184: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-192")
     @js.native
-    val skein1024192: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024192: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-200")
     @js.native
-    val skein1024200: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024200: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-208")
     @js.native
-    val skein1024208: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024208: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-216")
     @js.native
-    val skein1024216: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024216: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-224")
     @js.native
-    val skein1024224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-232")
     @js.native
-    val skein1024232: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024232: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-24")
     @js.native
-    val skein102424: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein102424: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-240")
     @js.native
-    val skein1024240: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024240: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-248")
     @js.native
-    val skein1024248: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024248: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-256")
     @js.native
-    val skein1024256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-264")
     @js.native
-    val skein1024264: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024264: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-272")
     @js.native
-    val skein1024272: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024272: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-280")
     @js.native
-    val skein1024280: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024280: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-288")
     @js.native
-    val skein1024288: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024288: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-296")
     @js.native
-    val skein1024296: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024296: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-304")
     @js.native
-    val skein1024304: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024304: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-312")
     @js.native
-    val skein1024312: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024312: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-32")
     @js.native
-    val skein102432: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein102432: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-320")
     @js.native
-    val skein1024320: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024320: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-328")
     @js.native
-    val skein1024328: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024328: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-336")
     @js.native
-    val skein1024336: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024336: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-344")
     @js.native
-    val skein1024344: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024344: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-352")
     @js.native
-    val skein1024352: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024352: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-360")
     @js.native
-    val skein1024360: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024360: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-368")
     @js.native
-    val skein1024368: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024368: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-376")
     @js.native
-    val skein1024376: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024376: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-384")
     @js.native
-    val skein1024384: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024384: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-392")
     @js.native
-    val skein1024392: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024392: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-40")
     @js.native
-    val skein102440: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein102440: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-400")
     @js.native
-    val skein1024400: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024400: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-408")
     @js.native
-    val skein1024408: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024408: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-416")
     @js.native
-    val skein1024416: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024416: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-424")
     @js.native
-    val skein1024424: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024424: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-432")
     @js.native
-    val skein1024432: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024432: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-440")
     @js.native
-    val skein1024440: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024440: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-448")
     @js.native
-    val skein1024448: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024448: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-456")
     @js.native
-    val skein1024456: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024456: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-464")
     @js.native
-    val skein1024464: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024464: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-472")
     @js.native
-    val skein1024472: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024472: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-48")
     @js.native
-    val skein102448: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein102448: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-480")
     @js.native
-    val skein1024480: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024480: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-488")
     @js.native
-    val skein1024488: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024488: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-496")
     @js.native
-    val skein1024496: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024496: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-504")
     @js.native
-    val skein1024504: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024504: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-512")
     @js.native
-    val skein1024512: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024512: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-520")
     @js.native
-    val skein1024520: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024520: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-528")
     @js.native
-    val skein1024528: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024528: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-536")
     @js.native
-    val skein1024536: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024536: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-544")
     @js.native
-    val skein1024544: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024544: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-552")
     @js.native
-    val skein1024552: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024552: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-56")
     @js.native
-    val skein102456: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein102456: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-560")
     @js.native
-    val skein1024560: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024560: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-568")
     @js.native
-    val skein1024568: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024568: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-576")
     @js.native
-    val skein1024576: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024576: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-584")
     @js.native
-    val skein1024584: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024584: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-592")
     @js.native
-    val skein1024592: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024592: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-600")
     @js.native
-    val skein1024600: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024600: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-608")
     @js.native
-    val skein1024608: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024608: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-616")
     @js.native
-    val skein1024616: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024616: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-624")
     @js.native
-    val skein1024624: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024624: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-632")
     @js.native
-    val skein1024632: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024632: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-64")
     @js.native
-    val skein102464: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein102464: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-640")
     @js.native
-    val skein1024640: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024640: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-648")
     @js.native
-    val skein1024648: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024648: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-656")
     @js.native
-    val skein1024656: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024656: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-664")
     @js.native
-    val skein1024664: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024664: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-672")
     @js.native
-    val skein1024672: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024672: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-680")
     @js.native
-    val skein1024680: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024680: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-688")
     @js.native
-    val skein1024688: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024688: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-696")
     @js.native
-    val skein1024696: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024696: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-704")
     @js.native
-    val skein1024704: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024704: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-712")
     @js.native
-    val skein1024712: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024712: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-72")
     @js.native
-    val skein102472: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein102472: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-720")
     @js.native
-    val skein1024720: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024720: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-728")
     @js.native
-    val skein1024728: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024728: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-736")
     @js.native
-    val skein1024736: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024736: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-744")
     @js.native
-    val skein1024744: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024744: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-752")
     @js.native
-    val skein1024752: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024752: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-760")
     @js.native
-    val skein1024760: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024760: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-768")
     @js.native
-    val skein1024768: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024768: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-776")
     @js.native
-    val skein1024776: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024776: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-784")
     @js.native
-    val skein1024784: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024784: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-792")
     @js.native
-    val skein1024792: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024792: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-8")
     @js.native
-    val skein10248: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein10248: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-80")
     @js.native
-    val skein102480: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein102480: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-800")
     @js.native
-    val skein1024800: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024800: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-808")
     @js.native
-    val skein1024808: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024808: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-816")
     @js.native
-    val skein1024816: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024816: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-824")
     @js.native
-    val skein1024824: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024824: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-832")
     @js.native
-    val skein1024832: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024832: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-840")
     @js.native
-    val skein1024840: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024840: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-848")
     @js.native
-    val skein1024848: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024848: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-856")
     @js.native
-    val skein1024856: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024856: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-864")
     @js.native
-    val skein1024864: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024864: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-872")
     @js.native
-    val skein1024872: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024872: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-88")
     @js.native
-    val skein102488: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein102488: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-880")
     @js.native
-    val skein1024880: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024880: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-888")
     @js.native
-    val skein1024888: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024888: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-896")
     @js.native
-    val skein1024896: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024896: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-904")
     @js.native
-    val skein1024904: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024904: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-912")
     @js.native
-    val skein1024912: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024912: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-920")
     @js.native
-    val skein1024920: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024920: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-928")
     @js.native
-    val skein1024928: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024928: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-936")
     @js.native
-    val skein1024936: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024936: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-944")
     @js.native
-    val skein1024944: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024944: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-952")
     @js.native
-    val skein1024952: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024952: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-96")
     @js.native
-    val skein102496: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein102496: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-960")
     @js.native
-    val skein1024960: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024960: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-968")
     @js.native
-    val skein1024968: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024968: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-976")
     @js.native
-    val skein1024976: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024976: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-984")
     @js.native
-    val skein1024984: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024984: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein1024-992")
     @js.native
-    val skein1024992: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein1024992: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-104")
     @js.native
-    val skein256104: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256104: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-112")
     @js.native
-    val skein256112: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256112: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-120")
     @js.native
-    val skein256120: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256120: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-128")
     @js.native
-    val skein256128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-136")
     @js.native
-    val skein256136: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256136: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-144")
     @js.native
-    val skein256144: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256144: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-152")
     @js.native
-    val skein256152: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256152: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-16")
     @js.native
-    val skein25616: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein25616: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-160")
     @js.native
-    val skein256160: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256160: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-168")
     @js.native
-    val skein256168: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256168: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-176")
     @js.native
-    val skein256176: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256176: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-184")
     @js.native
-    val skein256184: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256184: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-192")
     @js.native
-    val skein256192: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256192: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-200")
     @js.native
-    val skein256200: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256200: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-208")
     @js.native
-    val skein256208: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256208: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-216")
     @js.native
-    val skein256216: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256216: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-224")
     @js.native
-    val skein256224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-232")
     @js.native
-    val skein256232: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256232: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-24")
     @js.native
-    val skein25624: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein25624: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-240")
     @js.native
-    val skein256240: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256240: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-248")
     @js.native
-    val skein256248: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256248: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-256")
     @js.native
-    val skein256256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein256256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-32")
     @js.native
-    val skein25632: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein25632: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-40")
     @js.native
-    val skein25640: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein25640: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-48")
     @js.native
-    val skein25648: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein25648: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-56")
     @js.native
-    val skein25656: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein25656: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-64")
     @js.native
-    val skein25664: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein25664: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-72")
     @js.native
-    val skein25672: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein25672: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-8")
     @js.native
-    val skein2568: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein2568: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-80")
     @js.native
-    val skein25680: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein25680: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-88")
     @js.native
-    val skein25688: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein25688: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein256-96")
     @js.native
-    val skein25696: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein25696: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-104")
     @js.native
-    val skein512104: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512104: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-112")
     @js.native
-    val skein512112: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512112: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-120")
     @js.native
-    val skein512120: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512120: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-128")
     @js.native
-    val skein512128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-136")
     @js.native
-    val skein512136: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512136: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-144")
     @js.native
-    val skein512144: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512144: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-152")
     @js.native
-    val skein512152: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512152: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-16")
     @js.native
-    val skein51216: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein51216: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-160")
     @js.native
-    val skein512160: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512160: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-168")
     @js.native
-    val skein512168: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512168: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-176")
     @js.native
-    val skein512176: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512176: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-184")
     @js.native
-    val skein512184: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512184: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-192")
     @js.native
-    val skein512192: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512192: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-200")
     @js.native
-    val skein512200: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512200: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-208")
     @js.native
-    val skein512208: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512208: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-216")
     @js.native
-    val skein512216: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512216: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-224")
     @js.native
-    val skein512224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-232")
     @js.native
-    val skein512232: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512232: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-24")
     @js.native
-    val skein51224: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein51224: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-240")
     @js.native
-    val skein512240: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512240: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-248")
     @js.native
-    val skein512248: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512248: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-256")
     @js.native
-    val skein512256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-264")
     @js.native
-    val skein512264: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512264: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-272")
     @js.native
-    val skein512272: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512272: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-280")
     @js.native
-    val skein512280: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512280: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-288")
     @js.native
-    val skein512288: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512288: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-296")
     @js.native
-    val skein512296: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512296: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-304")
     @js.native
-    val skein512304: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512304: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-312")
     @js.native
-    val skein512312: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512312: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-32")
     @js.native
-    val skein51232: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein51232: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-320")
     @js.native
-    val skein512320: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512320: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-328")
     @js.native
-    val skein512328: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512328: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-336")
     @js.native
-    val skein512336: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512336: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-344")
     @js.native
-    val skein512344: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512344: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-352")
     @js.native
-    val skein512352: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512352: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-360")
     @js.native
-    val skein512360: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512360: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-368")
     @js.native
-    val skein512368: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512368: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-376")
     @js.native
-    val skein512376: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512376: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-384")
     @js.native
-    val skein512384: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512384: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-392")
     @js.native
-    val skein512392: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512392: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-40")
     @js.native
-    val skein51240: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein51240: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-400")
     @js.native
-    val skein512400: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512400: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-408")
     @js.native
-    val skein512408: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512408: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-416")
     @js.native
-    val skein512416: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512416: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-424")
     @js.native
-    val skein512424: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512424: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-432")
     @js.native
-    val skein512432: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512432: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-440")
     @js.native
-    val skein512440: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512440: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-448")
     @js.native
-    val skein512448: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512448: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-456")
     @js.native
-    val skein512456: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512456: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-464")
     @js.native
-    val skein512464: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512464: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-472")
     @js.native
-    val skein512472: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512472: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-48")
     @js.native
-    val skein51248: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein51248: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-480")
     @js.native
-    val skein512480: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512480: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-488")
     @js.native
-    val skein512488: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512488: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-496")
     @js.native
-    val skein512496: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512496: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-504")
     @js.native
-    val skein512504: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512504: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-512")
     @js.native
-    val skein512512: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein512512: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-56")
     @js.native
-    val skein51256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein51256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-64")
     @js.native
-    val skein51264: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein51264: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-72")
     @js.native
-    val skein51272: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein51272: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-8")
     @js.native
-    val skein5128: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein5128: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-80")
     @js.native
-    val skein51280: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein51280: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-88")
     @js.native
-    val skein51288: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein51288: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skein512-96")
     @js.native
-    val skein51296: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skein51296: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.skynet-ns")
     @js.native
-    val skynetNs: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val skynetNs: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.sm3-256")
     @js.native
-    val sm3256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val sm3256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.stellar-block")
     @js.native
-    val stellarBlock: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val stellarBlock: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.stellar-tx")
     @js.native
-    val stellarTx: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val stellarTx: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.streamid")
     @js.native
-    val streamid: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val streamid: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.swarm-feed")
     @js.native
-    val swarmFeed: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val swarmFeed: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.swarm-manifest")
     @js.native
-    val swarmManifest: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val swarmManifest: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.swarm-ns")
     @js.native
-    val swarmNs: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val swarmNs: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.swhid-1-snp")
     @js.native
-    val swhid1Snp: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val swhid1Snp: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.tcp")
     @js.native
-    val tcp: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val tcp: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.thread")
     @js.native
-    val thread: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val thread: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.tls")
     @js.native
-    val tls: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val tls: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.torrent-file")
     @js.native
-    val torrentFile: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val torrentFile: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.torrent-info")
     @js.native
-    val torrentInfo: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val torrentInfo: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.udp")
     @js.native
-    val udp: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val udp: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.udt")
     @js.native
-    val udt: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val udt: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.unix")
     @js.native
-    val unix: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val unix: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.utp")
     @js.native
-    val utp: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val utp: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.ws")
     @js.native
-    val ws: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val ws: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.wss")
     @js.native
-    val wss: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val wss: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.x11")
     @js.native
-    val x11: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val x11: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.x25519-priv")
     @js.native
-    val x25519Priv: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val x25519Priv: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.x25519-pub")
     @js.native
-    val x25519Pub: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val x25519Pub: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.x448-pub")
     @js.native
-    val x448Pub: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val x448Pub: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.zcash-block")
     @js.native
-    val zcashBlock: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val zcashBlock: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.zcash-tx")
     @js.native
-    val zcashTx: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val zcashTx: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.zeronet")
     @js.native
-    val zeronet: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val zeronet: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
     
     @JSImport("multicodec", "nameToCode.zeroxcert-imprint-256")
     @js.native
-    val zeroxcertImprint256: typings.multicodec.generatedTypesMod.CodecCode = js.native
+    val zeroxcertImprint256: typings.multicodec.distSrcGeneratedTypesMod.CodecCode = js.native
   }
   
   @JSImport("multicodec", "nameToVarint")

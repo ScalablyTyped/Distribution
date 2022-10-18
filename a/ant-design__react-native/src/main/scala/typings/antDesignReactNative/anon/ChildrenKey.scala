@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.anon
 
 import typings.antDesignReactNative.antDesignReactNativeStrings.mount
-import typings.antDesignReactNative.portalHostMod.Operation
+import typings.antDesignReactNative.libPortalPortalHostMod.Operation
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -6,7 +6,7 @@ import typings.baseui.anon.IncludesArtwork
 import typings.baseui.anon.Nested
 import typings.baseui.baseuiStrings.button
 import typings.baseui.baseuiStrings.div
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

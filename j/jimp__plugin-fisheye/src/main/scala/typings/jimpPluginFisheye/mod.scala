@@ -1,6 +1,6 @@
 package typings.jimpPluginFisheye
 
-import typings.jimpCore.etcMod.ImageCallback
+import typings.jimpCore.typesEtcMod.ImageCallback
 import typings.jimpPluginFisheye.anon.R
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

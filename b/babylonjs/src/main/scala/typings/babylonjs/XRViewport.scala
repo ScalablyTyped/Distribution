@@ -4,6 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Describes a viewport, or rectangular region, of a graphics surface.
+  *
+  * ref: https://immersive-web.github.io/webxr/#xrviewport-interface
+  */
 trait XRViewport extends StObject {
   
   val height: Double

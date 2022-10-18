@@ -3,19 +3,19 @@ package typings.wixUiTestUtils
 import typings.react.mod.ReactElement
 import typings.unidriverCore.mod.UniDriver
 import typings.wixUiTestUtils.anon.DataHookString
-import typings.wixUiTestUtils.baseDriverMod.BaseUniDriver
-import typings.wixUiTestUtils.createDriverFactoryMod.BaseDriver
-import typings.wixUiTestUtils.enzymeEnzymeMod.EnzymeDriverFactory
-import typings.wixUiTestUtils.enzymeEnzymeMod.MountFunctionType
-import typings.wixUiTestUtils.enzymeEnzymeMod.Options
-import typings.wixUiTestUtils.enzymeEnzymeMod.WrapperData
+import typings.wixUiTestUtils.distSrcBaseDriverMod.BaseUniDriver
+import typings.wixUiTestUtils.distSrcDriverFactoryCreateDriverFactoryMod.BaseDriver
+import typings.wixUiTestUtils.distSrcEnzymeEnzymeMod.EnzymeDriverFactory
+import typings.wixUiTestUtils.distSrcEnzymeEnzymeMod.MountFunctionType
+import typings.wixUiTestUtils.distSrcEnzymeEnzymeMod.Options
+import typings.wixUiTestUtils.distSrcEnzymeEnzymeMod.WrapperData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enzymeMod {
   
-  @JSImport("wix-ui-test-utils/dist/src/enzyme", JSImport.Namespace)
+  @JSImport("wix-ui-test-utils/enzyme", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

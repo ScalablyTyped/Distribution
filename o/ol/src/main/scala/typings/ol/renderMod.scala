@@ -1,6 +1,6 @@
 package typings.ol
 
-import typings.ol.olFeatureMod.FeatureLike
+import typings.ol.featureMod.FeatureLike
 import typings.ol.pixelMod.Pixel
 import typings.ol.renderEventMod.default
 import typings.ol.sizeMod.Size
@@ -17,10 +17,10 @@ object renderMod {
   
   inline def getRenderPixel(event: default, pixel: Pixel): Pixel = (^.asInstanceOf[js.Dynamic].applyDynamic("getRenderPixel")(event.asInstanceOf[js.Any], pixel.asInstanceOf[js.Any])).asInstanceOf[Pixel]
   
-  inline def getVectorContext(event: default): typings.ol.immediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getVectorContext")(event.asInstanceOf[js.Any]).asInstanceOf[typings.ol.immediateMod.default]
+  inline def getVectorContext(event: default): typings.ol.renderCanvasImmediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getVectorContext")(event.asInstanceOf[js.Any]).asInstanceOf[typings.ol.renderCanvasImmediateMod.default]
   
-  inline def toContext(context: CanvasRenderingContext2D): typings.ol.immediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any]).asInstanceOf[typings.ol.immediateMod.default]
-  inline def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): typings.ol.immediateMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.immediateMod.default]
+  inline def toContext(context: CanvasRenderingContext2D): typings.ol.renderCanvasImmediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any]).asInstanceOf[typings.ol.renderCanvasImmediateMod.default]
+  inline def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): typings.ol.renderCanvasImmediateMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.renderCanvasImmediateMod.default]
   
   type OrderFunction = js.Function2[/* p0 */ FeatureLike, /* p1 */ FeatureLike, Double]
   
@@ -30,7 +30,7 @@ object renderMod {
     
     var feature: FeatureLike
     
-    var geometry: typings.ol.simpleGeometryMod.default
+    var geometry: typings.ol.geomSimpleGeometryMod.default
     
     var pixelRatio: Double
     
@@ -43,7 +43,7 @@ object renderMod {
     inline def apply(
       context: CanvasRenderingContext2D,
       feature: FeatureLike,
-      geometry: typings.ol.simpleGeometryMod.default,
+      geometry: typings.ol.geomSimpleGeometryMod.default,
       pixelRatio: Double,
       resolution: Double,
       rotation: Double
@@ -58,7 +58,7 @@ object renderMod {
       
       inline def setFeature(value: FeatureLike): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
-      inline def setGeometry(value: typings.ol.simpleGeometryMod.default): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: typings.ol.geomSimpleGeometryMod.default): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
       inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       

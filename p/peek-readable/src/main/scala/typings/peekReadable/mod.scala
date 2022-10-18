@@ -9,12 +9,12 @@ object mod {
   @JSImport("peek-readable", "EndOfStreamError")
   @js.native
   open class EndOfStreamError ()
-    extends typings.peekReadable.endOfFileStreamMod.EndOfStreamError
+    extends typings.peekReadable.libEndOfFileStreamMod.EndOfStreamError
   
   @JSImport("peek-readable", "StreamReader")
   @js.native
   open class StreamReader protected ()
-    extends typings.peekReadable.streamReaderMod.StreamReader {
+    extends typings.peekReadable.libStreamReaderMod.StreamReader {
     def this(s: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Readable */ Any) = this()
   }
 }

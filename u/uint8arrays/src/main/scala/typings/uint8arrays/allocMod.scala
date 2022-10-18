@@ -4,9 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object allocMod {
   
-  @JSImport("uint8arrays/types/src/alloc", JSImport.Namespace)
+  @JSImport("uint8arrays/alloc", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -1,8 +1,6 @@
 package typings.fastifyDeepmerge
 
-import org.scalablytyped.runtime.TopLevel
 import typings.fastifyDeepmerge.anon.Optionsalltrue
-import typings.fastifyDeepmerge.fastifyDeepmergeStrings.DeepMerge
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,39 +22,43 @@ object mod {
   
   type BuiltIns = Primitive | js.Date | js.RegExp
   
-  type DeepMergeAll[R, T] = R
-  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    @fastify/deepmerge.@fastify/deepmerge.First<T> extends never ? R : @fastify/deepmerge.@fastify/deepmerge.DeepMergeAll<@fastify/deepmerge.@fastify/deepmerge.DeepMerge<R, @fastify/deepmerge.@fastify/deepmerge.First<T>>, @fastify/deepmerge.@fastify/deepmerge.Rest<T>>
+    }}}
+    */
   @js.native
-  trait DeepMergeAllFn extends StObject {
-    
-    def apply[T /* <: js.Array[Any] */](
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param targets because its type T is not an array type */ targets: T
-    ): DeepMergeAll[js.Object, T] = js.native
-  }
+  trait DeepMergeAll[R, T] extends StObject
+  
+  type DeepMergeAllFn = js.Function1[/* targets */ js.Array[Any], DeepMergeAll[js.Object, js.Array[Any]]]
   
   type DeepMergeFn = js.Function2[/* target */ Any, /* source */ Any, DeepMerge_[Any, Any]]
   
   type DeepMergeHelper[T, U, T0, T1] = T1
   
-  type DeepMerge_[T, U] = U | (DeepMergeHelper[
-    T, 
-    U, 
-    (DifferenceKeys[
-      T, 
-      U, 
-      (Omit[T, /* keyof U */ String]) & (Omit[U, /* keyof T */ String]), 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof std.Omit<T, keyof U> & std.Omit<U, keyof T> ]: std.Omit<T, keyof U> & std.Omit<U, keyof T>[K]}
-    */ DeepMerge & TopLevel[Any]
-    ]) & DeepMerge & TopLevel[Any], 
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof @fastify/deepmerge.@fastify/deepmerge.DifferenceKeys<T, U, std.Omit<T, keyof U> & std.Omit<U, keyof T>, {[ K in keyof std.Omit<T, keyof U> & std.Omit<U, keyof T> ]: std.Omit<T, keyof U> & std.Omit<U, keyof T>[K]}> & {[ K in keyof @fastify/deepmerge.@fastify/deepmerge.IntersectionKeys<T, U> ]: @fastify/deepmerge.@fastify/deepmerge.DeepMerge<T[K], U[K]>} ]: @fastify/deepmerge.@fastify/deepmerge.DifferenceKeys<T, U, std.Omit<T, keyof U> & std.Omit<U, keyof T>, {[ K in keyof std.Omit<T, keyof U> & std.Omit<U, keyof T> ]: std.Omit<T, keyof U> & std.Omit<U, keyof T>[K]}> & {[ K in keyof @fastify/deepmerge.@fastify/deepmerge.IntersectionKeys<T, U> ]: @fastify/deepmerge.@fastify/deepmerge.DeepMerge<T[K], U[K]>}[K]}
-    */ DeepMerge & TopLevel[Any]
-  ]) | (MergeTypes[T, U])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    U extends @fastify/deepmerge.@fastify/deepmerge.BuiltIns ? U : [T, U] extends [std.Array<any>, std.Array<any>] ? @fastify/deepmerge.@fastify/deepmerge.MergeTypes<T, U> : [T, U] extends [{[key: string] : unknown}, {[key: string] : unknown}] ? @fastify/deepmerge.@fastify/deepmerge.DeepMergeHelper<T, U, @fastify/deepmerge.@fastify/deepmerge.DifferenceKeys<T, U, std.Omit<T, keyof U> & std.Omit<U, keyof T>, {[ K in keyof std.Omit<T, keyof U> & std.Omit<U, keyof T> ]: std.Omit<T, keyof U> & std.Omit<U, keyof T>[K]}> & {[ K in keyof @fastify/deepmerge.@fastify/deepmerge.IntersectionKeys<T, U> ]: @fastify/deepmerge.@fastify/deepmerge.DeepMerge<T[K], U[K]>}, {[ K in keyof @fastify/deepmerge.@fastify/deepmerge.DifferenceKeys<T, U, std.Omit<T, keyof U> & std.Omit<U, keyof T>, {[ K in keyof std.Omit<T, keyof U> & std.Omit<U, keyof T> ]: std.Omit<T, keyof U> & std.Omit<U, keyof T>[K]}> & {[ K in keyof @fastify/deepmerge.@fastify/deepmerge.IntersectionKeys<T, U> ]: @fastify/deepmerge.@fastify/deepmerge.DeepMerge<T[K], U[K]>} ]: @fastify/deepmerge.@fastify/deepmerge.DifferenceKeys<T, U, std.Omit<T, keyof U> & std.Omit<U, keyof T>, {[ K in keyof std.Omit<T, keyof U> & std.Omit<U, keyof T> ]: std.Omit<T, keyof U> & std.Omit<U, keyof T>[K]}> & {[ K in keyof @fastify/deepmerge.@fastify/deepmerge.IntersectionKeys<T, U> ]: @fastify/deepmerge.@fastify/deepmerge.DeepMerge<T[K], U[K]>}[K]}> : U
+    }}}
+    */
+  @js.native
+  trait DeepMerge_[T, U] extends StObject
   
   type DifferenceKeys[T, U, T0, T1] = T1
   
-  type First[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends [infer _I, ...infer _Rest] ? _I : never
+    }}}
+    */
+  @js.native
+  trait First[T] extends StObject
   
   type IntersectionKeys[T, U] = Omit[
     T | U, 
@@ -105,7 +107,15 @@ object mod {
     }
   }
   
-  type MergeTypes[T, U] = U | T | js.Array[Any]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<infer A1> ? U extends std.Array<infer A2> ? std.Array<A1 | A2> : T : U
+    }}}
+    */
+  @js.native
+  trait MergeTypes[T, U] extends StObject
   
   trait Options extends StObject {
     
@@ -142,5 +152,13 @@ object mod {
   
   type Primitive = js.UndefOr[Null | String | Double | Boolean | js.Symbol | js.BigInt]
   
-  type Rest[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends [infer _I, ...infer _Rest] ? _Rest : never
+    }}}
+    */
+  @js.native
+  trait Rest[T] extends StObject
 }

@@ -447,7 +447,7 @@ trait TextPropsOmitHTMLAttribut extends StObject {
     * @default "div"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
   ] = js.undefined
   
   /**
@@ -1152,7 +1152,9 @@ object TextPropsOmitHTMLAttribut {
     
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
-    inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+    ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     

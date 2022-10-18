@@ -2,9 +2,9 @@ package typings.umijsRouteUtils
 
 import typings.std.Record
 import typings.umijsRouteUtils.anon.Breadcrumb
-import typings.umijsRouteUtils.typesMod.MenuDataItem
-import typings.umijsRouteUtils.typesMod.MessageDescriptor
-import typings.umijsRouteUtils.typesMod.Route
+import typings.umijsRouteUtils.distTypesMod.MenuDataItem
+import typings.umijsRouteUtils.distTypesMod.MessageDescriptor
+import typings.umijsRouteUtils.distTypesMod.Route
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

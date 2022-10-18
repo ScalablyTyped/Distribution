@@ -19,10 +19,10 @@ object Breadcrumb {
   @JSGlobal("ReactBootstrap.Breadcrumb.Item")
   @js.native
   open class Item ()
-    extends typings.reactBootstrap.breadcrumbItemMod.^
+    extends typings.reactBootstrap.libBreadcrumbItemMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Breadcrumb.Item")
   @js.native
-  def Item: Instantiable0[typings.reactBootstrap.breadcrumbItemMod.^] = js.native
-  inline def Item_=(x: Instantiable0[typings.reactBootstrap.breadcrumbItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  def Item: Instantiable0[typings.reactBootstrap.libBreadcrumbItemMod.^] = js.native
+  inline def Item_=(x: Instantiable0[typings.reactBootstrap.libBreadcrumbItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

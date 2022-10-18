@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a conflict between appointments. */
-@JSGlobal("Windows.ApplicationModel.Appointments.AppointmentConflictResult")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentConflictResult")
 @js.native
-abstract class AppointmentConflictResult ()
+open class AppointmentConflictResult ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentConflictResult {
   

@@ -1,6 +1,7 @@
 package typings.loaderRunner
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,11 +17,7 @@ object mod {
   
   inline def runLoaders(
     options: RunLoaderOption,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* result */ RunLoaderResult, 
-      Any
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ RunLoaderResult, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runLoaders")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ExtendedLoaderContext extends StObject {
@@ -223,11 +220,7 @@ object mod {
     
     def readResource(
       filename: String,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* data */ Buffer | Null, 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer | Null, Unit]
     ): Unit
     
     var resource: String
@@ -237,11 +230,7 @@ object mod {
     inline def apply(
       context: Any,
       loaders: js.Array[Any],
-      readResource: (String, js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* data */ Buffer | Null, 
-          Unit
-        ]) => Unit,
+      readResource: (String, js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer | Null, Unit]) => Unit,
       resource: String
     ): RunLoaderOption = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], loaders = loaders.asInstanceOf[js.Any], readResource = js.Any.fromFunction2(readResource), resource = resource.asInstanceOf[js.Any])
@@ -257,11 +246,7 @@ object mod {
       inline def setLoadersVarargs(value: Any*): Self = StObject.set(x, "loaders", js.Array(value*))
       
       inline def setReadResource(
-        value: (String, js.Function2[
-              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-              /* data */ Buffer | Null, 
-              Unit
-            ]) => Unit
+        value: (String, js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer | Null, Unit]) => Unit
       ): Self = StObject.set(x, "readResource", js.Any.fromFunction2(value))
       
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])

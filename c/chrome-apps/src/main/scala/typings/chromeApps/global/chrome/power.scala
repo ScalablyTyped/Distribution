@@ -5,7 +5,6 @@ import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chromeAppsStrings.SYSTEM
 import typings.chromeApps.chromeAppsStrings.display_
 import typings.chromeApps.chromeAppsStrings.system_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,10 +60,7 @@ object power {
     level: ToStringLiteral[
       DISPLAY, 
       /* keyof chrome-apps.anon.DISPLAY */ SYSTEM | typings.chromeApps.chromeAppsStrings.DISPLAY, 
-      Exclude[
-        /* keyof chrome-apps.anon.DISPLAY */ SYSTEM | typings.chromeApps.chromeAppsStrings.DISPLAY, 
-        system_ | display_
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  SYSTEM :'system',   DISPLAY :'display'} extends keyof {  SYSTEM :'system',   DISPLAY :'display'} ? std.Exclude<keyof {  SYSTEM :'system',   DISPLAY :'display'}, 'system' | 'display'> : never */ js.Any
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestKeepAwake")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

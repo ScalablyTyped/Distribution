@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@rc-component/portal" : "1.0.0-8"
+      "@rc-component/portal" : "1.0.0-9"
     }
   ],
   "test-dependencies" : [
     {
-      "@rc-component/portal" : "1.0.0-8"
+      "@rc-component/portal" : "1.0.0-9"
     }
   ],
   "compile-devDependencies" : [

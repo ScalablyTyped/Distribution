@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "css-minimizer-webpack-plugin" : "4.2.0"
+      "css-minimizer-webpack-plugin" : "4.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "css-minimizer-webpack-plugin" : "4.2.0"
+      "css-minimizer-webpack-plugin" : "4.2.2"
     }
   ],
   "compile-devDependencies" : [

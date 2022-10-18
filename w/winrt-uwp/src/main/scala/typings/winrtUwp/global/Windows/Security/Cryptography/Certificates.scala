@@ -35,9 +35,9 @@ object Certificates {
   }
   
   /** Represents a certificate chain used for signature verification. */
-  @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateChain")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateChain")
   @js.native
-  abstract class CertificateChain ()
+  open class CertificateChain ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateChain
   
@@ -61,9 +61,9 @@ object Certificates {
   }
   
   /** Represents a certificate enrollment manager. */
-  @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager")
   @js.native
-  abstract class CertificateEnrollmentManager ()
+  open class CertificateEnrollmentManager ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager
   object CertificateEnrollmentManager {
@@ -311,9 +311,9 @@ object Certificates {
   }
   
   /** Represents a certificate store for an app. */
-  @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateStore")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateStore")
   @js.native
-  abstract class CertificateStore ()
+  open class CertificateStore ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateStore {
     
@@ -337,9 +337,9 @@ object Certificates {
   }
   
   /** Represents a collection of certificate stores. */
-  @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateStores")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateStores")
   @js.native
-  abstract class CertificateStores ()
+  open class CertificateStores ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateStores
   object CertificateStores {
@@ -601,9 +601,9 @@ object Certificates {
   }
   
   /** Represents an RFC3161 unauthenticated timestamp attribute in a signed CMS message. */
-  @JSGlobal("Windows.Security.Cryptography.Certificates.CmsTimestampInfo")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Certificates.CmsTimestampInfo")
   @js.native
-  abstract class CmsTimestampInfo ()
+  open class CmsTimestampInfo ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.CmsTimestampInfo {
     
@@ -672,9 +672,9 @@ object Certificates {
   }
   
   /** Defines several commonly used public key algorithm names. You can use this class in the KeyAlgorithmName property on the CertificateRequestProperties class. */
-  @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames")
   @js.native
-  abstract class KeyAlgorithmNames ()
+  open class KeyAlgorithmNames ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.KeyAlgorithmNames
   object KeyAlgorithmNames {
@@ -757,9 +757,9 @@ object Certificates {
   }
   
   /** Provides access to key attestation methods. */
-  @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAttestationHelper")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAttestationHelper")
   @js.native
-  abstract class KeyAttestationHelper ()
+  open class KeyAttestationHelper ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.KeyAttestationHelper
   object KeyAttestationHelper {
@@ -828,9 +828,9 @@ object Certificates {
   }
   
   /** Defines several commonly used key storage provider names. You can use this class in the KeyStorageProviderName property on the CertificateRequestProperties class. */
-  @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames")
   @js.native
-  abstract class KeyStorageProviderNames ()
+  open class KeyStorageProviderNames ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.KeyStorageProviderNames
   object KeyStorageProviderNames {
@@ -960,9 +960,9 @@ object Certificates {
   }
   
   /** Provides access to certificate creation, import, and enrollment methods. */
-  @JSGlobal("Windows.Security.Cryptography.Certificates.UserCertificateEnrollmentManager")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.Certificates.UserCertificateEnrollmentManager")
   @js.native
-  abstract class UserCertificateEnrollmentManager ()
+  open class UserCertificateEnrollmentManager ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.UserCertificateEnrollmentManager
 }

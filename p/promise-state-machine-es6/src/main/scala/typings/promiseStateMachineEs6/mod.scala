@@ -1,6 +1,5 @@
 package typings.promiseStateMachineEs6
 
-import org.scalablytyped.runtime.TopLevel
 import typings.promiseStateMachineEs6.anon.Replacer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -58,9 +57,15 @@ object mod {
     }
   }
   
-  type Events[State, Transitions /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in Transitions ]: {  from :State | std.Array<State>,   to :State}}
-    */ typings.promiseStateMachineEs6.promiseStateMachineEs6Strings.Events & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ name in Transitions ]: {  from :State | std.Array<State>,   to :State}}
+    }}}
+    */
+  @js.native
+  trait Events[State, Transitions /* <: String */] extends StObject
   
   @js.native
   trait FsmBase[State, Transitions] extends StObject {

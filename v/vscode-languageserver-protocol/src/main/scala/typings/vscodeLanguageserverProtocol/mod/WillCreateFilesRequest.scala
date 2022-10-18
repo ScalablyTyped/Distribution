@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolFileOperationsMod.CreateFilesParams
-import typings.vscodeLanguageserverProtocol.protocolFileOperationsMod.FileOperationRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotfileOperationsMod.CreateFilesParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotfileOperationsMod.FileOperationRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashwillCreateFiles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object WillCreateFilesRequest {
   
   @JSImport("vscode-languageserver-protocol", "WillCreateFilesRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "WillCreateFilesRequest.method")
   @js.native
@@ -19,7 +19,7 @@ object WillCreateFilesRequest {
   
   @JSImport("vscode-languageserver-protocol", "WillCreateFilesRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     CreateFilesParams, 
     typings.vscodeLanguageserverTypes.mod.WorkspaceEdit | Null, 
     scala.Nothing, 

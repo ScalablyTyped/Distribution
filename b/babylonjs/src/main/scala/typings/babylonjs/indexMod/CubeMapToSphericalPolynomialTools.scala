@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.panoramaToCubemapMod.CubeMapInfo
+import typings.babylonjs.miscHighDynamicRangePanoramaToCubemapMod.CubeMapInfo
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +24,7 @@ object CubeMapToSphericalPolynomialTools {
     * @param texture The texture to extract the information from.
     * @returns The Spherical Polynomial data.
     */
-  inline def ConvertCubeMapTextureToSphericalPolynomial(texture: typings.babylonjs.baseTextureMod.BaseTexture): Nullable[js.Promise[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertCubeMapTextureToSphericalPolynomial")(texture.asInstanceOf[js.Any]).asInstanceOf[Nullable[js.Promise[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial]]]
+  inline def ConvertCubeMapTextureToSphericalPolynomial(texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture): Nullable[js.Promise[typings.babylonjs.mathsSphericalPolynomialMod.SphericalPolynomial]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertCubeMapTextureToSphericalPolynomial")(texture.asInstanceOf[js.Any]).asInstanceOf[Nullable[js.Promise[typings.babylonjs.mathsSphericalPolynomialMod.SphericalPolynomial]]]
   
   /**
     * Converts a cubemap to the according Spherical Polynomial data.
@@ -33,7 +33,7 @@ object CubeMapToSphericalPolynomialTools {
     * @param cubeInfo The Cube map to extract the information from.
     * @returns The Spherical Polynomial data.
     */
-  inline def ConvertCubeMapToSphericalPolynomial(cubeInfo: CubeMapInfo): typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertCubeMapToSphericalPolynomial")(cubeInfo.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial]
+  inline def ConvertCubeMapToSphericalPolynomial(cubeInfo: CubeMapInfo): typings.babylonjs.mathsSphericalPolynomialMod.SphericalPolynomial = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertCubeMapToSphericalPolynomial")(cubeInfo.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsSphericalPolynomialMod.SphericalPolynomial]
   
   /**
     * Compute the area on the unit sphere of the rectangle defined by (x,y) and the origin

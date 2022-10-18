@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,7 @@ trait PositionedObject extends StObject {
   
   /** The suggested changes to the positioned object properties, keyed by suggestion ID. */
   var suggestedPositionedObjectPropertiesChanges: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedPositionedObjectProperties}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.PositionedObject & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedPositionedObjectProperties} */ js.Any
   ] = js.undefined
 }
 object PositionedObject {
@@ -54,9 +51,7 @@ object PositionedObject {
     inline def setSuggestedInsertionIdUndefined: Self = StObject.set(x, "suggestedInsertionId", js.undefined)
     
     inline def setSuggestedPositionedObjectPropertiesChanges(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedPositionedObjectProperties}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.PositionedObject & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedPositionedObjectProperties} */ js.Any
     ): Self = StObject.set(x, "suggestedPositionedObjectPropertiesChanges", value.asInstanceOf[js.Any])
     
     inline def setSuggestedPositionedObjectPropertiesChangesUndefined: Self = StObject.set(x, "suggestedPositionedObjectPropertiesChanges", js.undefined)

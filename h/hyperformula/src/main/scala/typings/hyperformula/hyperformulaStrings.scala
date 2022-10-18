@@ -1,8 +1,8 @@
 package typings.hyperformula
 
-import typings.hyperformula.arithmeticHelperMod.NormalizationForm
-import typings.hyperformula.configMod.ConfigParamsList
-import typings.hyperformula.licenseKeyValidatorMod.LicenseKeyValidityState
+import typings.hyperformula.typingsConfigMod.ConfigParamsList
+import typings.hyperformula.typingsHelpersLicenseKeyValidatorMod.LicenseKeyValidityState
+import typings.hyperformula.typingsInterpreterArithmeticHelperMod.NormalizationForm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +16,6 @@ object hyperformulaStrings {
   @js.native
   sealed trait Dot extends StObject
   inline def Dot: Dot = ".".asInstanceOf[Dot]
-  
-  @js.native
-  sealed trait FunctionPluginTypecheck extends StObject
-  inline def FunctionPluginTypecheck: FunctionPluginTypecheck = "FunctionPluginTypecheck".asInstanceOf[FunctionPluginTypecheck]
   
   @js.native
   sealed trait Semicolon extends StObject

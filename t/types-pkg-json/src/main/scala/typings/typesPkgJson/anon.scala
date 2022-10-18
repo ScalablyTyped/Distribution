@@ -1,6 +1,7 @@
 package typings.typesPkgJson
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.typesPkgJson.buildUtilsMod.LiteralUnion
 import typings.typesPkgJson.typesPkgJsonBooleans.`true`
 import typings.typesPkgJson.typesPkgJsonStrings.corporation
 import typings.typesPkgJson.typesPkgJsonStrings.foundation
@@ -10,7 +11,6 @@ import typings.typesPkgJson.typesPkgJsonStrings.individual
 import typings.typesPkgJson.typesPkgJsonStrings.opencollective
 import typings.typesPkgJson.typesPkgJsonStrings.patreon
 import typings.typesPkgJson.typesPkgJsonStrings.svn
-import typings.typesPkgJson.utilsMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.storybookComponents.anon
 
 import typings.std.Element
-import typings.storybookComponents.popperjsCoreLibTypesMod.VisualViewport
-import typings.storybookComponents.popperjsCoreLibTypesMod.Window
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.VisualViewport
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

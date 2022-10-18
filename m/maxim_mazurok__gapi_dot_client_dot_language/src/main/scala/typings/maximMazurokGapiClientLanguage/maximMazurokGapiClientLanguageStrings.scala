@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientLanguageStrings {
   
   @js.native
-  sealed trait Entity extends StObject
-  inline def Entity: Entity = "Entity".asInstanceOf[Entity]
-  
-  @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
   sealed trait language extends StObject
   inline def language: language = "language".asInstanceOf[language]
   

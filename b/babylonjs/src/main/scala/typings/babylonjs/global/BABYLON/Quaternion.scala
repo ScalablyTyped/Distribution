@@ -42,15 +42,21 @@ object Quaternion {
   val ^ : js.Any = js.native
   
   /**
-    * Checks if the two quaternions are close to each other
+    * Checks if the orientations of two rotation quaternions are close to each other
     * @param quat0 defines the first quaternion to check
     * @param quat1 defines the second quaternion to check
-    * @returns true if the two quaternions are close to each other
+    * @param epsilon defines closeness, 0 same orientation, 1 PI apart, default 0.1
+    * @returns true if the two quaternions are close to each other within epsilon
     */
   inline def AreClose(
     quat0: DeepImmutable[typings.babylonjs.BABYLON.Quaternion],
     quat1: DeepImmutable[typings.babylonjs.BABYLON.Quaternion]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreClose")(quat0.asInstanceOf[js.Any], quat1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def AreClose(
+    quat0: DeepImmutable[typings.babylonjs.BABYLON.Quaternion],
+    quat1: DeepImmutable[typings.babylonjs.BABYLON.Quaternion],
+    epsilon: Double
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreClose")(quat0.asInstanceOf[js.Any], quat1.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Returns the dot product (float) between the quaternions "left" and "right"
@@ -349,6 +355,7 @@ object Quaternion {
   
   /**
     * Creates the rotation quaternion needed to rotate from one Vector3 onto another Vector3
+    * Example PG https://playground.babylonjs.com/#L49EJ7#2
     * @param fromVector the starting vector
     * @param toVector the ending vector
     * @returns the rotation quaternion needed
@@ -360,6 +367,7 @@ object Quaternion {
   
   /**
     * Creates the rotation quaternion needed to rotate from one Vector3 onto another Vector3 and stores in a result Quaternion
+    * Example PG https://playground.babylonjs.com/#L49EJ7#3
     * @param fromVector the starting vector
     * @param toVector the ending vector
     * @param result the rotation quaternion needed

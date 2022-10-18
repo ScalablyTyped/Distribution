@@ -6,14 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Billingemail extends StObject {
   
-  /**
-    * @description Whether GitHub Advanced Security is enabled for new repositories and repositories transferred to this organization.
-    *
-    * This field is only visible to organization owners or members of a team with the security manager role.
-    * @example false
-    */
-  var advanced_security_enabled_for_new_repositories: js.UndefOr[Boolean] = js.undefined
-  
   /** @example https://github.com/images/error/octocat_happy.gif */
   var avatar_url: String
   
@@ -42,33 +34,6 @@ trait Billingemail extends StObject {
   var created_at: String
   
   var default_repository_permission: js.UndefOr[String | Null] = js.undefined
-  
-  /**
-    * @description Whether GitHub Advanced Security is automatically enabled for new repositories and repositories transferred to
-    * this organization.
-    *
-    * This field is only visible to organization owners or members of a team with the security manager role.
-    * @example false
-    */
-  var dependabot_alerts_enabled_for_new_repositories: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * @description Whether dependabot security updates are automatically enabled for new repositories and repositories transferred
-    * to this organization.
-    *
-    * This field is only visible to organization owners or members of a team with the security manager role.
-    * @example false
-    */
-  var dependabot_security_updates_enabled_for_new_repositories: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * @description Whether dependency graph is automatically enabled for new repositories and repositories transferred to this
-    * organization.
-    *
-    * This field is only visible to organization owners or members of a team with the security manager role.
-    * @example false
-    */
-  var dependency_graph_enabled_for_new_repositories: js.UndefOr[Boolean] = js.undefined
   
   /** @example A great organization */
   var description: String | Null
@@ -183,24 +148,6 @@ trait Billingemail extends StObject {
     */
   var repos_url: String
   
-  /**
-    * @description Whether secret scanning is automatically enabled for new repositories and repositories transferred to this
-    * organization.
-    *
-    * This field is only visible to organization owners or members of a team with the security manager role.
-    * @example false
-    */
-  var secret_scanning_enabled_for_new_repositories: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * @description Whether secret scanning push protection is automatically enabled for new repositories and repositories
-    * transferred to this organization.
-    *
-    * This field is only visible to organization owners or members of a team with the security manager role.
-    * @example false
-    */
-  var secret_scanning_push_protection_enabled_for_new_repositories: js.UndefOr[Boolean] = js.undefined
-  
   /** @example 100 */
   var total_private_repos: js.UndefOr[Double] = js.undefined
   
@@ -257,10 +204,6 @@ object Billingemail {
   
   extension [Self <: Billingemail](x: Self) {
     
-    inline def setAdvanced_security_enabled_for_new_repositories(value: Boolean): Self = StObject.set(x, "advanced_security_enabled_for_new_repositories", value.asInstanceOf[js.Any])
-    
-    inline def setAdvanced_security_enabled_for_new_repositoriesUndefined: Self = StObject.set(x, "advanced_security_enabled_for_new_repositories", js.undefined)
-    
     inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
     
     inline def setBilling_email(value: String): Self = StObject.set(x, "billing_email", value.asInstanceOf[js.Any])
@@ -290,18 +233,6 @@ object Billingemail {
     inline def setDefault_repository_permissionNull: Self = StObject.set(x, "default_repository_permission", null)
     
     inline def setDefault_repository_permissionUndefined: Self = StObject.set(x, "default_repository_permission", js.undefined)
-    
-    inline def setDependabot_alerts_enabled_for_new_repositories(value: Boolean): Self = StObject.set(x, "dependabot_alerts_enabled_for_new_repositories", value.asInstanceOf[js.Any])
-    
-    inline def setDependabot_alerts_enabled_for_new_repositoriesUndefined: Self = StObject.set(x, "dependabot_alerts_enabled_for_new_repositories", js.undefined)
-    
-    inline def setDependabot_security_updates_enabled_for_new_repositories(value: Boolean): Self = StObject.set(x, "dependabot_security_updates_enabled_for_new_repositories", value.asInstanceOf[js.Any])
-    
-    inline def setDependabot_security_updates_enabled_for_new_repositoriesUndefined: Self = StObject.set(x, "dependabot_security_updates_enabled_for_new_repositories", js.undefined)
-    
-    inline def setDependency_graph_enabled_for_new_repositories(value: Boolean): Self = StObject.set(x, "dependency_graph_enabled_for_new_repositories", value.asInstanceOf[js.Any])
-    
-    inline def setDependency_graph_enabled_for_new_repositoriesUndefined: Self = StObject.set(x, "dependency_graph_enabled_for_new_repositories", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -414,14 +345,6 @@ object Billingemail {
     inline def setPublic_repos(value: Double): Self = StObject.set(x, "public_repos", value.asInstanceOf[js.Any])
     
     inline def setRepos_url(value: String): Self = StObject.set(x, "repos_url", value.asInstanceOf[js.Any])
-    
-    inline def setSecret_scanning_enabled_for_new_repositories(value: Boolean): Self = StObject.set(x, "secret_scanning_enabled_for_new_repositories", value.asInstanceOf[js.Any])
-    
-    inline def setSecret_scanning_enabled_for_new_repositoriesUndefined: Self = StObject.set(x, "secret_scanning_enabled_for_new_repositories", js.undefined)
-    
-    inline def setSecret_scanning_push_protection_enabled_for_new_repositories(value: Boolean): Self = StObject.set(x, "secret_scanning_push_protection_enabled_for_new_repositories", value.asInstanceOf[js.Any])
-    
-    inline def setSecret_scanning_push_protection_enabled_for_new_repositoriesUndefined: Self = StObject.set(x, "secret_scanning_push_protection_enabled_for_new_repositories", js.undefined)
     
     inline def setTotal_private_repos(value: Double): Self = StObject.set(x, "total_private_repos", value.asInstanceOf[js.Any])
     

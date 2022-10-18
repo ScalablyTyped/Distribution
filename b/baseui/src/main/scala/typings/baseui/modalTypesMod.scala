@@ -1,7 +1,7 @@
 package typings.baseui
 
-import typings.baseui.anon.`18`
-import typings.baseui.overridesMod.Override
+import typings.baseui.anon.`15`
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ReactNode
 import typings.std.Element
 import typings.std.FocusOptions
@@ -89,7 +89,7 @@ object modalTypesMod {
     
     /** A callback that is invoked when the modal will close.
       * Callback is passed a constant identifying what triggered the close. */
-    var onClose: js.UndefOr[js.Function1[/* a */ `18`, Any]] = js.undefined
+    var onClose: js.UndefOr[js.Function1[/* a */ `15`, Any]] = js.undefined
     
     var overrides: js.UndefOr[ModalOverrides] = js.undefined
     
@@ -152,7 +152,7 @@ object modalTypesMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnClose(value: /* a */ `18` => Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* a */ `15` => Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
@@ -193,7 +193,7 @@ object modalTypesMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* a */ `18`, Any]] = js.undefined
+    var onClose: js.UndefOr[js.Function1[/* a */ `15`, Any]] = js.undefined
     
     var overrides: js.UndefOr[ModalOverrides] = js.undefined
     
@@ -242,7 +242,7 @@ object modalTypesMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnClose(value: /* a */ `18` => Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* a */ `15` => Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       

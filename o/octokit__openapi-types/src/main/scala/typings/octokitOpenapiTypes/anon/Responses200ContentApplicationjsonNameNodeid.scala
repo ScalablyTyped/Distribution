@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Responses200ContentApplicationjsonNameNodeid extends StObject {
   
-  var parameters: PathEnvironmentnameOwner
+  var parameters: PathEnvironmentname
   
   var requestBody: ContentApplicationjsonNameString
   
@@ -15,7 +15,7 @@ trait Responses200ContentApplicationjsonNameNodeid extends StObject {
 object Responses200ContentApplicationjsonNameNodeid {
   
   inline def apply(
-    parameters: PathEnvironmentnameOwner,
+    parameters: PathEnvironmentname,
     requestBody: ContentApplicationjsonNameString,
     responses: `200ContentApplicationjsonNameNodeid`
   ): Responses200ContentApplicationjsonNameNodeid = {
@@ -25,7 +25,7 @@ object Responses200ContentApplicationjsonNameNodeid {
   
   extension [Self <: Responses200ContentApplicationjsonNameNodeid](x: Self) {
     
-    inline def setParameters(value: PathEnvironmentnameOwner): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PathEnvironmentname): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonNameString): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

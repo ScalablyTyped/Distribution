@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xmldsigjs", "XmlSignatureObject")
+/* note: abstract class */ @JSImport("xmldsigjs", "XmlSignatureObject")
 @js.native
-abstract class XmlSignatureObject ()
-  extends typings.xmldsigjs.xmlMod.XmlSignatureObject {
+open class XmlSignatureObject ()
+  extends typings.xmldsigjs.buildTypesXmlMod.XmlSignatureObject {
   def this(properties: js.Object) = this()
 }

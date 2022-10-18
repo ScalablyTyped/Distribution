@@ -1,16 +1,16 @@
 package typings.antdMobile
 
-import typings.antdMobile.datePickerDateUtilsMod.DatePrecision
-import typings.antdMobile.datePickerUtilsMod.Precision
-import typings.antdMobile.datePickerWeekUtilsMod.WeekPrecision
-import typings.antdMobile.errorBlockMod.ErrorBlockStatus
-import typings.antdMobile.formMod.FormLayout
-import typings.antdMobile.imageUploaderImageUploaderMod.TaskStatus
-import typings.antdMobile.popoverMod.DeprecatedPlacement
-import typings.antdMobile.popoverMod.Placement
-import typings.antdMobile.pullToRefreshPullToRefreshMod.PullStatus
-import typings.antdMobile.swipeActionSwipeActionMod.ActionColor
-import typings.antdMobile.useTouchMod.Direction
+import typings.antdMobile.esComponentsDatePickerDatePickerDateUtilsMod.DatePrecision
+import typings.antdMobile.esComponentsDatePickerDatePickerUtilsMod.Precision
+import typings.antdMobile.esComponentsDatePickerDatePickerWeekUtilsMod.WeekPrecision
+import typings.antdMobile.esComponentsErrorBlockMod.ErrorBlockStatus
+import typings.antdMobile.esComponentsFormMod.FormLayout
+import typings.antdMobile.esComponentsImageUploaderImageUploaderMod.TaskStatus
+import typings.antdMobile.esComponentsPopoverMod.DeprecatedPlacement
+import typings.antdMobile.esComponentsPopoverMod.Placement
+import typings.antdMobile.esComponentsPullToRefreshPullToRefreshMod.PullStatus
+import typings.antdMobile.esComponentsSwipeActionSwipeActionMod.ActionColor
+import typings.antdMobile.esUtilsUseTouchMod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -660,7 +660,7 @@ object antdMobileStrings {
   sealed trait horizontal
     extends StObject
        with Direction
-       with typings.antdMobile.stepsStepsMod.Direction
+       with typings.antdMobile.esComponentsStepsStepsMod.Direction
        with FormLayout
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
@@ -1203,6 +1203,10 @@ object antdMobileStrings {
   inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
+  sealed trait strict extends StObject
+  inline def strict: strict = "strict".asInstanceOf[strict]
+  
+  @js.native
   sealed trait strong extends StObject
   inline def strong: strong = "strong".asInstanceOf[strong]
   
@@ -1403,7 +1407,7 @@ object antdMobileStrings {
   sealed trait vertical
     extends StObject
        with Direction
-       with typings.antdMobile.stepsStepsMod.Direction
+       with typings.antdMobile.esComponentsStepsStepsMod.Direction
        with FormLayout
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   

@@ -23,6 +23,6 @@ object snackbarListMod {
   
   object SnackbarList {
     
-    type Props = typings.wordpressComponents.listMod.NoticeList.Props
+    type Props = typings.wordpressComponents.noticeListMod.NoticeList.Props
   }
 }

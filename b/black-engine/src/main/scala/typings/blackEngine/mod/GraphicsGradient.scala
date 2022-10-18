@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "GraphicsGradient")
 @js.native
 open class GraphicsGradient ()
-  extends typings.blackEngine.graphicsGradientMod.GraphicsGradient
+  extends typings.blackEngine.displayGraphicsGradientMod.GraphicsGradient

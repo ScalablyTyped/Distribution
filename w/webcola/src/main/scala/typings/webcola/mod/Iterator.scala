@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "Iterator")
 @js.native
 open class Iterator protected ()
-  extends typings.webcola.rbtreeMod.Iterator {
+  extends typings.webcola.distSrcRbtreeMod.Iterator {
   def this(tree: Any) = this()
 }

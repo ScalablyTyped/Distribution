@@ -1,6 +1,6 @@
 package typings.awsSdk.mod
 
-import typings.awsSdk.lambdaMod.ClientConfiguration
+import typings.awsSdk.clientsLambdaMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a service object. This object has one method for each API operation.
   */
 open class Lambda ()
-  extends typings.awsSdk.allMod.Lambda {
+  extends typings.awsSdk.clientsAllMod.Lambda {
   def this(options: ClientConfiguration) = this()
 }

@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides the email properties of the sender or specified recipients of an email message or appointment.
   *
   * @remarks
-  * 
+  *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait EmailAddressDetails extends StObject {
   
   /**
-    * Gets the response that an attendee returned for an appointment. 
-    * This property applies to only an attendee of an appointment, as represented by the `optionalAttendees` or `requiredAttendees` property. 
+    * Gets the response that an attendee returned for an appointment.
+    * This property applies to only an attendee of an appointment, as represented by the `optionalAttendees` or `requiredAttendees` property.
     * This property returns undefined in other scenarios.
     */
   var appointmentResponse: ResponseType | String
@@ -39,7 +39,7 @@ trait EmailAddressDetails extends StObject {
     * 
     * @remarks
     * **Important**: A `recipientType` property value isn't returned by the 
-    * {@link https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync} 
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync}
     * and {@link https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-1.7#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods.
     * The email sender or appointment organizer is always a user whose email address is on the Exchange server.
     */

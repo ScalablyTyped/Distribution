@@ -1,11 +1,11 @@
 package typings.reactNativeGestureHandler
 
-import typings.reactNativeGestureHandler.actionTypeMod.ActionType
-import typings.reactNativeGestureHandler.directionsMod.Directions
-import typings.reactNativeGestureHandler.genericTouchableMod.TouchableState
-import typings.reactNativeGestureHandler.gestureMod.CALLBACK_TYPE
-import typings.reactNativeGestureHandler.stateMod.State
-import typings.reactNativeGestureHandler.touchEventTypeMod.TouchEventType
+import typings.reactNativeGestureHandler.libTypescriptActionTypeMod.ActionType
+import typings.reactNativeGestureHandler.libTypescriptComponentsTouchablesGenericTouchableMod.TouchableState
+import typings.reactNativeGestureHandler.libTypescriptDirectionsMod.Directions
+import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod.CALLBACK_TYPE
+import typings.reactNativeGestureHandler.libTypescriptStateMod.State
+import typings.reactNativeGestureHandler.libTypescriptTouchEventTypeMod.TouchEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

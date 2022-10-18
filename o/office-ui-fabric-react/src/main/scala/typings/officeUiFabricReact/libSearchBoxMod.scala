@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.PickISearchBoxPropsdisabl
-import typings.officeUiFabricReact.searchBoxTypesMod.ISearchBoxProps
+import typings.officeUiFabricReact.libComponentsSearchBoxSearchBoxDottypesMod.ISearchBoxProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object libSearchBoxMod {
   @JSImport("office-ui-fabric-react/lib/SearchBox", "SearchBoxBase")
   @js.native
   open class SearchBoxBase protected ()
-    extends typings.officeUiFabricReact.searchBoxMod.SearchBoxBase {
+    extends typings.officeUiFabricReact.libComponentsSearchBoxMod.SearchBoxBase {
     def this(props: ISearchBoxProps) = this()
   }
   /* static members */

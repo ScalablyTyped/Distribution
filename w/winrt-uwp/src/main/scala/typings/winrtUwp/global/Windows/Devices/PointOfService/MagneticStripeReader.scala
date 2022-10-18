@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the magnetic stripe reader device. */
-@JSGlobal("Windows.Devices.PointOfService.MagneticStripeReader")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReader")
 @js.native
-abstract class MagneticStripeReader ()
+open class MagneticStripeReader ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReader
 object MagneticStripeReader {

@@ -6,22 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `366` extends StObject {
   
-  /** The name of the secret. */
-  var secret_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['secret-name'] */ js.Any
+  @JSName("application/json")
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['packages-billing-usage'] */ js.Any
 }
 object `366` {
   
   inline def apply(
-    secret_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['secret-name'] */ js.Any
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['packages-billing-usage'] */ js.Any
   ): `366` = {
-    val __obj = js.Dynamic.literal(secret_name = secret_name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`366`]
   }
   
   extension [Self <: `366`](x: Self) {
     
-    inline def setSecret_name(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['secret-name'] */ js.Any
-    ): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['packages-billing-usage'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

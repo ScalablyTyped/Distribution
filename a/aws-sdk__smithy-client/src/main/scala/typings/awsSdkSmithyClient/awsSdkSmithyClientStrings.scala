@@ -1,7 +1,7 @@
 package typings.awsSdkSmithyClient
 
-import typings.awsSdkSmithyClient.defaultsModeMod.DefaultsMode
-import typings.awsSdkSmithyClient.defaultsModeMod.ResolvedDefaultsMode
+import typings.awsSdkSmithyClient.distTypesDefaultsModeMod.DefaultsMode
+import typings.awsSdkSmithyClient.distTypesDefaultsModeMod.ResolvedDefaultsMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

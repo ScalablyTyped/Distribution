@@ -9,14 +9,11 @@ trait RepositoryidNumber extends StObject {
   var repository_id: Double
   
   /** The name of the secret. */
-  var secret_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['secret-name'] */ js.Any
+  var secret_name: String
 }
 object RepositoryidNumber {
   
-  inline def apply(
-    repository_id: Double,
-    secret_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['secret-name'] */ js.Any
-  ): RepositoryidNumber = {
+  inline def apply(repository_id: Double, secret_name: String): RepositoryidNumber = {
     val __obj = js.Dynamic.literal(repository_id = repository_id.asInstanceOf[js.Any], secret_name = secret_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepositoryidNumber]
   }
@@ -25,8 +22,6 @@ object RepositoryidNumber {
     
     inline def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
     
-    inline def setSecret_name(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['secret-name'] */ js.Any
-    ): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
+    inline def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,8 @@
 package typings.xrm.Xrm.Controls
 
-import typings.xrm.Xrm.Events.ContextSensitiveHandler
+import typings.xrm.Xrm.Events.KbSearchControl.PostSearchEventHandler
+import typings.xrm.Xrm.Events.KbSearchControl.ResultOpenedEventHandler
+import typings.xrm.Xrm.Events.KbSearchControl.SelectionEventHandler
 import typings.xrm.XrmEnum.OpenSearchResultMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,15 +20,15 @@ trait KbSearchControl
     * Adds an event handler to the PostSearch event.
     * @see https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/controls/addonpostsave
     */
-  def addOnPostSearch(handler: ContextSensitiveHandler): Unit = js.native
+  def addOnPostSearch(handler: PostSearchEventHandler): Unit = js.native
   
   /**
     * Adds an event handler to the OnResultOpened event.
     * @see https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/controls/addonresultopened
     */
-  def addOnResultOpened(handler: ContextSensitiveHandler): Unit = js.native
+  def addOnResultOpened(handler: ResultOpenedEventHandler): Unit = js.native
   
-  def addOnSelection(handler: ContextSensitiveHandler): Unit = js.native
+  def addOnSelection(handler: SelectionEventHandler): Unit = js.native
   
   /**
     * Gets the text used as the search criteria for the knowledge base management control.
@@ -62,21 +64,21 @@ trait KbSearchControl
     * @param handler The function to remove from the PostSearch event.
     * @see https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/controls/removeonpostsearch
     */
-  def removeOnPostSearch(handler: ContextSensitiveHandler): Unit = js.native
+  def removeOnPostSearch(handler: PostSearchEventHandler): Unit = js.native
   
   /**
     * Removes an event handler from the OnResultOpened event.
     * @param handler The function to remove from the OnResultOpened event.
     * @see https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/controls/removeonresultopened
     */
-  def removeOnResultOpened(handler: ContextSensitiveHandler): Unit = js.native
+  def removeOnResultOpened(handler: ResultOpenedEventHandler): Unit = js.native
   
   /**
     * Removes an event handler from the OnResultSelection event.
     * @param handler The function to remove from the OnSelection event.
     * @see https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/controls/removeonselection
     */
-  def removeOnSelection(handler: ContextSensitiveHandler): Unit = js.native
+  def removeOnSelection(handler: SelectionEventHandler): Unit = js.native
   
   /**
     * Sets the text used as the search criteria for the knowledge base search control.

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BABYLON.EffectLayer")
+/* note: abstract class */ @JSGlobal("BABYLON.EffectLayer")
 @js.native
-abstract class EffectLayer protected ()
+open class EffectLayer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.EffectLayer {
   /**

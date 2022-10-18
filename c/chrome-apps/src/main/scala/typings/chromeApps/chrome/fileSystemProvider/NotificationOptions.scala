@@ -3,7 +3,6 @@ package typings.chromeApps.chrome.fileSystemProvider
 import typings.chromeApps.anon.DELETED
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chromeAppsStrings.CHANGED
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,10 +18,7 @@ trait NotificationOptions extends StObject {
   var changeType: ToStringLiteral[
     DELETED, 
     /* keyof chrome-apps.anon.DELETED */ CHANGED | typings.chromeApps.chromeAppsStrings.DELETED, 
-    Exclude[
-      /* keyof chrome-apps.anon.DELETED */ CHANGED | typings.chromeApps.chromeAppsStrings.DELETED, 
-      CHANGED | typings.chromeApps.chromeAppsStrings.DELETED
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'} extends keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'} ? std.Exclude<keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'}, 'CHANGED' | 'DELETED'> : never */ js.Any
   ]
   
   /** List of changes to entries within the observed directory (including the entry itself)  */
@@ -51,10 +47,7 @@ object NotificationOptions {
     changeType: ToStringLiteral[
       DELETED, 
       /* keyof chrome-apps.anon.DELETED */ CHANGED | typings.chromeApps.chromeAppsStrings.DELETED, 
-      Exclude[
-        /* keyof chrome-apps.anon.DELETED */ CHANGED | typings.chromeApps.chromeAppsStrings.DELETED, 
-        CHANGED | typings.chromeApps.chromeAppsStrings.DELETED
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'} extends keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'} ? std.Exclude<keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'}, 'CHANGED' | 'DELETED'> : never */ js.Any
     ],
     fileSystemId: String,
     observedPath: String,
@@ -70,10 +63,7 @@ object NotificationOptions {
       value: ToStringLiteral[
           DELETED, 
           /* keyof chrome-apps.anon.DELETED */ CHANGED | typings.chromeApps.chromeAppsStrings.DELETED, 
-          Exclude[
-            /* keyof chrome-apps.anon.DELETED */ CHANGED | typings.chromeApps.chromeAppsStrings.DELETED, 
-            CHANGED | typings.chromeApps.chromeAppsStrings.DELETED
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'} extends keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'} ? std.Exclude<keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'}, 'CHANGED' | 'DELETED'> : never */ js.Any
         ]
     ): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     

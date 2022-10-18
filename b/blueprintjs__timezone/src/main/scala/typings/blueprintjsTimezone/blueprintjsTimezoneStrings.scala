@@ -1,6 +1,6 @@
 package typings.blueprintjsTimezone
 
-import typings.blueprintjsTimezone.timezoneDisplayFormatMod.TimezoneDisplayFormat
+import typings.blueprintjsTimezone.libEsmComponentsTimezonePickerTimezoneDisplayFormatMod.TimezoneDisplayFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

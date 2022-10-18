@@ -1,7 +1,7 @@
 package typings.firebaseUtil.anon
 
+import typings.firebaseUtil.distUtilMod.EmulatorMockTokenOptions
 import typings.firebaseUtil.firebaseUtilStrings.anonymous
-import typings.firebaseUtil.utilMod.EmulatorMockTokenOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

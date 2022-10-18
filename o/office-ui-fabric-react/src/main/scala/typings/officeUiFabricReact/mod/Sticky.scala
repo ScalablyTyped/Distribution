@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneContext
-import typings.officeUiFabricReact.stickyTypesMod.IStickyProps
+import typings.officeUiFabricReact.libComponentsScrollablePaneScrollablePaneDottypesMod.IScrollablePaneContext
+import typings.officeUiFabricReact.libComponentsStickyStickyDottypesMod.IStickyProps
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

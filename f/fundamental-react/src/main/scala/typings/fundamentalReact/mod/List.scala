@@ -9,7 +9,7 @@ import typings.fundamentalReact.anon.FunctionComponentListSele
 import typings.fundamentalReact.anon.FunctionComponentListText
 import typings.fundamentalReact.anon.PartialListProps
 import typings.fundamentalReact.anon.WeakValidationMapListProp
-import typings.fundamentalReact.listMod.ListProps
+import typings.fundamentalReact.libListListMod.ListProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

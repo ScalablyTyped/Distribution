@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait GoogleCloudRecommenderV1Insight extends StObject {
   
   /** A struct of custom fields to explain the insight. Example: "grantedPermissionsCount": "1000" */
   var content: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Insight & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Free-form human readable summary in English. The maximum length is 500 characters. */
@@ -67,9 +64,7 @@ object GoogleCloudRecommenderV1Insight {
     inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     inline def setContent(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Insight & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)

@@ -1,6 +1,6 @@
 package typings.emberUtils
 
-import typings.emberUtils.typesMod.AllTypeNames
+import typings.emberUtils.privateTypesMod.AllTypeNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,8 +55,7 @@ object emberUtilsStrings {
        with AllTypeNames
   inline def number: number = "number".asInstanceOf[number]
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.emberUtils.typesMod._TypeOf because Already inherited */ @js.native
+  @js.native
   sealed trait `object`
     extends StObject
        with AllTypeNames

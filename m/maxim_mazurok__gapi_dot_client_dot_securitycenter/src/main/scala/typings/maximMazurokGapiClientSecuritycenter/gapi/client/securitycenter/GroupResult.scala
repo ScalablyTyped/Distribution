@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait GroupResult extends StObject {
   
   /** Properties matching the groupBy fields in the request. */
   var properties: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.GroupResult & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object GroupResult {
@@ -31,9 +28,7 @@ object GroupResult {
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     inline def setProperties(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.GroupResult & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)

@@ -1,6 +1,6 @@
 package typings.reactBootstrapTable.mod
 
-import typings.reactBootstrapTable.anon.Text
+import typings.reactBootstrapTable.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +40,7 @@ trait SizePerPageDropDownProps extends StObject {
   /**
     * Size Per Page options list
     */
-  var options: js.UndefOr[js.Array[Double | Text]] = js.undefined
+  var options: js.UndefOr[js.Array[Double | Value]] = js.undefined
   
   /**
     * Whether the button menu should 'dropup' or 'dropdown'.
@@ -80,11 +80,11 @@ object SizePerPageDropDownProps {
     
     inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    inline def setOptions(value: js.Array[Double | Text]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[Double | Value]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: (Double | Text)*): Self = StObject.set(x, "options", js.Array(value*))
+    inline def setOptionsVarargs(value: (Double | Value)*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setVariation(value: DropDirection): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
     

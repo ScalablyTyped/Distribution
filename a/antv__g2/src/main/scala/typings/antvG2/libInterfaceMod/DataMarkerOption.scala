@@ -1,6 +1,6 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvComponent.typesMod.EnhancedTextCfg
+import typings.antvComponent.libTypesMod.EnhancedTextCfg
 import typings.antvG2.anon.Length
 import typings.antvG2.anon.Style
 import typings.antvG2.antvG2Strings.downward

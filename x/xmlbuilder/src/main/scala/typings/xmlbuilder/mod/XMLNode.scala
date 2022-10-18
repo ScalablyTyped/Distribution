@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Represents the base class of XML nodes.
   */
-@JSImport("xmlbuilder", "XMLNode")
+/* note: abstract class */ @JSImport("xmlbuilder", "XMLNode")
 @js.native
-abstract class XMLNode () extends StObject {
+open class XMLNode () extends StObject {
   
   def a(name: Any): XMLElement = js.native
   def a(name: Any, value: Any): XMLElement = js.native

@@ -2,8 +2,8 @@ package typings.tslint.mod
 
 import typings.tslint.anon.FnCall
 import typings.tslint.anon.FnCallSuppliedConfigFilePathInputFilePath
-import typings.tslint.configurationMod.IConfigurationFile
-import typings.tslint.configurationMod.IConfigurationLoadResult
+import typings.tslint.libConfigurationMod.IConfigurationFile
+import typings.tslint.libConfigurationMod.IConfigurationLoadResult
 import typings.typescript.mod.Program
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("tslint", "Linter")
 @js.native
 open class Linter protected ()
-  extends typings.tslint.linterMod.Linter {
+  extends typings.tslint.libLinterMod.Linter {
   def this(options: ILinterOptions) = this()
   def this(options: ILinterOptions, program: Program) = this()
 }

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.dexie.anon.Name
-import typings.dexie.anon.`1`
+import typings.dexie.anon.Stack
 import typings.dexie.dexieStrings.blocked
 import typings.dexie.dexieStrings.close
 import typings.dexie.dexieStrings.populate
@@ -148,7 +148,7 @@ trait Dexie
   ): PromiseExtended[U] = js.native
   
   // Add more supported stacks here... : use(middleware: Middleware<HookStack>): this;
-  def unuse(hasStackCreate: Middleware[`1`]): this.type = js.native
+  def unuse(hasStackCreate: Middleware[Stack]): this.type = js.native
   def unuse(hasStackName: Name): this.type = js.native
   
   def use(middleware: Middleware[DBCore]): this.type = js.native

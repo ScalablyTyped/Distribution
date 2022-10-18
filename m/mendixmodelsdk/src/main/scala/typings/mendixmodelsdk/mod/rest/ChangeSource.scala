@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.rest
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.restMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenRestMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "rest.ChangeSource")
 @js.native
 open class ChangeSource protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.rest.ChangeSource {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.rest.ChangeSource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object ChangeSource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.restMod.rest.ChangeSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ChangeSource]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenRestMod.rest.ChangeSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.ChangeSource]
   
   /**
     * Creates and returns a new ChangeSource instance in the SDK and on the server.
@@ -50,7 +50,7 @@ object ChangeSource {
     *  9.11.0 and higher
     */
   /* static member */
-  inline def createInPublishedRestResourceUnderDeleteMode(container: typings.mendixmodelsdk.restMod.rest.PublishedRestResource): typings.mendixmodelsdk.restMod.rest.ChangeSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestResourceUnderDeleteMode")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ChangeSource]
+  inline def createInPublishedRestResourceUnderDeleteMode(container: typings.mendixmodelsdk.srcGenRestMod.rest.PublishedRestResource): typings.mendixmodelsdk.srcGenRestMod.rest.ChangeSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestResourceUnderDeleteMode")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.ChangeSource]
   
   /**
     * Creates and returns a new ChangeSource instance in the SDK and on the server.
@@ -61,7 +61,7 @@ object ChangeSource {
     *  9.11.0 and higher
     */
   /* static member */
-  inline def createInPublishedRestResourceUnderInsertMode(container: typings.mendixmodelsdk.restMod.rest.PublishedRestResource): typings.mendixmodelsdk.restMod.rest.ChangeSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestResourceUnderInsertMode")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ChangeSource]
+  inline def createInPublishedRestResourceUnderInsertMode(container: typings.mendixmodelsdk.srcGenRestMod.rest.PublishedRestResource): typings.mendixmodelsdk.srcGenRestMod.rest.ChangeSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestResourceUnderInsertMode")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.ChangeSource]
   
   /**
     * Creates and returns a new ChangeSource instance in the SDK and on the server.
@@ -72,7 +72,7 @@ object ChangeSource {
     *  9.11.0 and higher
     */
   /* static member */
-  inline def createInPublishedRestResourceUnderUpdateMode(container: typings.mendixmodelsdk.restMod.rest.PublishedRestResource): typings.mendixmodelsdk.restMod.rest.ChangeSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestResourceUnderUpdateMode")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ChangeSource]
+  inline def createInPublishedRestResourceUnderUpdateMode(container: typings.mendixmodelsdk.srcGenRestMod.rest.PublishedRestResource): typings.mendixmodelsdk.srcGenRestMod.rest.ChangeSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestResourceUnderUpdateMode")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.ChangeSource]
   
   /* static member */
   @JSImport("mendixmodelsdk", "rest.ChangeSource.structureTypeName")

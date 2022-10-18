@@ -1,8 +1,8 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "BloomMergePostProcess")
 @js.native
 open class BloomMergePostProcess protected ()
-  extends typings.babylonjs.bloomMergePostProcessMod.BloomMergePostProcess {
+  extends typings.babylonjs.postProcessesBloomMergePostProcessMod.BloomMergePostProcess {
   /**
     * Creates a new instance of @see BloomMergePostProcess
     * @param name The name of the effect.
@@ -28,8 +28,8 @@ open class BloomMergePostProcess protected ()
     */
   def this(
     name: String,
-    originalFromInput: typings.babylonjs.postProcessMod.PostProcess,
-    blurred: typings.babylonjs.postProcessMod.PostProcess,
+    originalFromInput: typings.babylonjs.postProcessesPostProcessMod.PostProcess,
+    blurred: typings.babylonjs.postProcessesPostProcessMod.PostProcess,
     /** Weight of the bloom to be added to the original input. */
   weight: Double,
     options: Double | PostProcessOptions,

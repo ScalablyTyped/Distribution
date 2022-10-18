@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object rsvpStrings {
   
   @js.native
-  sealed trait apply extends StObject
-  inline def apply: apply = "<apply>".asInstanceOf[apply]
-  
-  @js.native
   sealed trait Promise extends StObject
   inline def Promise: Promise = "Promise".asInstanceOf[Promise]
   
@@ -23,24 +19,12 @@ object rsvpStrings {
   inline def created: created = "created".asInstanceOf[created]
   
   @js.native
-  sealed trait denodeify extends StObject
-  inline def denodeify: denodeify = "denodeify".asInstanceOf[denodeify]
-  
-  @js.native
   sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait fulfilled extends StObject
   inline def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
-  
-  @js.native
-  sealed trait hash extends StObject
-  inline def hash: hash = "hash".asInstanceOf[hash]
-  
-  @js.native
-  sealed trait hashSettled extends StObject
-  inline def hashSettled: hashSettled = "hashSettled".asInstanceOf[hashSettled]
   
   @js.native
   sealed trait rejected extends StObject

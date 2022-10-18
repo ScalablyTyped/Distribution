@@ -23,18 +23,18 @@ object RGBDTextureTools {
     * @returns a promise with the internalTexture having its texture replaced by the result of the processing
     */
   inline def EncodeTextureToRGBD(
-    internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+    internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     scene: typings.babylonjs.sceneMod.Scene
-  ): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeTextureToRGBD")(internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeTextureToRGBD")(internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
   inline def EncodeTextureToRGBD(
-    internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+    internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     scene: typings.babylonjs.sceneMod.Scene,
     outputTextureType: Double
-  ): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeTextureToRGBD")(internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], outputTextureType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeTextureToRGBD")(internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], outputTextureType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
   
   /**
     * Expand the RGBD Texture from RGBD to Half Float if possible.
     * @param texture the texture to expand.
     */
-  inline def ExpandRGBDTexture(texture: typings.babylonjs.textureMod.Texture): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ExpandRGBDTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ExpandRGBDTexture(texture: typings.babylonjs.materialsTexturesTextureMod.Texture): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ExpandRGBDTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

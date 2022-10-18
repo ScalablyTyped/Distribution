@@ -1,11 +1,5 @@
 package typings.orbitUiReactComponents
 
-import typings.orbitUiReactComponents.accordionContextMod.AccordionContextType
-import typings.orbitUiReactComponents.accordionHeaderMod.InnerAccordionHeaderProps
-import typings.orbitUiReactComponents.accordionPanelMod.InnerAccordionPanelProps
-import typings.orbitUiReactComponents.adaptersMod.Alignment
-import typings.orbitUiReactComponents.adaptersMod.Orientation
-import typings.orbitUiReactComponents.alertTriggerMod.InnerAlertTriggerProps
 import typings.orbitUiReactComponents.anon.Add
 import typings.orbitUiReactComponents.anon.AlignItems
 import typings.orbitUiReactComponents.anon.ArrowProps
@@ -18,7 +12,6 @@ import typings.orbitUiReactComponents.anon.From
 import typings.orbitUiReactComponents.anon.InputProps
 import typings.orbitUiReactComponents.anon.IsDisabled
 import typings.orbitUiReactComponents.anon.IsLoading
-import typings.orbitUiReactComponents.anon.KeyProp
 import typings.orbitUiReactComponents.anon.OmitInnerHeadingPropssize
 import typings.orbitUiReactComponents.anon.OmitInnerIconPropssrc
 import typings.orbitUiReactComponents.anon.OmitInnerMultiVariantIcon
@@ -26,77 +19,203 @@ import typings.orbitUiReactComponents.anon.OnBlurOnFocus
 import typings.orbitUiReactComponents.anon.OnClick
 import typings.orbitUiReactComponents.anon.OnFocus
 import typings.orbitUiReactComponents.anon.OnKeyDown
-import typings.orbitUiReactComponents.anon.OnKeyDownKeyboardEventHandler
 import typings.orbitUiReactComponents.anon.OnKeyDownUndefined
+import typings.orbitUiReactComponents.anon.OnKeyUp
+import typings.orbitUiReactComponents.anon.OnMouseEnter
 import typings.orbitUiReactComponents.anon.Style
 import typings.orbitUiReactComponents.anon.StyleHeight
 import typings.orbitUiReactComponents.anon.`0`
 import typings.orbitUiReactComponents.anon.`1`
 import typings.orbitUiReactComponents.anon.`2`
 import typings.orbitUiReactComponents.anon.`3`
-import typings.orbitUiReactComponents.asyncImageMod.InnerAsyncImageProps
-import typings.orbitUiReactComponents.augmentElementMod.RecordWithSize
-import typings.orbitUiReactComponents.avatarGroupMod.InnerAvatarGroupProps
-import typings.orbitUiReactComponents.buttonGroupMod.InnerButtonGroupProps
-import typings.orbitUiReactComponents.checkableContextMod.CheckableContextType
-import typings.orbitUiReactComponents.checkableContextMod.UseCheckablePropsReturn
-import typings.orbitUiReactComponents.checkboxGroupMod.InnerCheckboxGroupProps
-import typings.orbitUiReactComponents.contentMod.InnerContentProps
-import typings.orbitUiReactComponents.crossButtonMod.InnerCrossButtonProps
-import typings.orbitUiReactComponents.dateRangeInputMod.InnerDateRangeInputProps
-import typings.orbitUiReactComponents.dialogTriggerContextMod.DialogTriggerContextType
-import typings.orbitUiReactComponents.dialogTriggerMod.InnerDialogTriggerProps
-import typings.orbitUiReactComponents.disclosureArrowMod.InnerDisclosureArrowProps
-import typings.orbitUiReactComponents.disclosureContextMod.DisclosureContextType
-import typings.orbitUiReactComponents.embeddedIconMod.EmbeddedIconProps
-import typings.orbitUiReactComponents.errorMessageMod.InnerErrorMessageProps
-import typings.orbitUiReactComponents.fieldContextMod.ClearFieldContextProps
-import typings.orbitUiReactComponents.fieldContextMod.FieldContextType
-import typings.orbitUiReactComponents.fieldContextMod.UseFieldInputPropsReturn
-import typings.orbitUiReactComponents.fieldContextMod.UseFieldLabelPropsReturn
-import typings.orbitUiReactComponents.fieldContextMod.UseFieldLabelProps_
-import typings.orbitUiReactComponents.fieldContextMod.UseFieldMessagePropsReturn
-import typings.orbitUiReactComponents.fieldsetMod.InnerFieldsetProps
-import typings.orbitUiReactComponents.flexMod.InnerFlexProps
-import typings.orbitUiReactComponents.focusableTreeWalkerMod.FocusableTreeWalkerOptions
-import typings.orbitUiReactComponents.footerMod.InnerFooterProps
-import typings.orbitUiReactComponents.formContextMod.FormContextType
-import typings.orbitUiReactComponents.forwardRefMod.AsRef
-import typings.orbitUiReactComponents.forwardRefMod.OrbitComponent
-import typings.orbitUiReactComponents.groupFieldMod.InnerGroupFieldProps
-import typings.orbitUiReactComponents.headerMod.InnerHeaderProps
-import typings.orbitUiReactComponents.headingMod.InnerHeadingProps
-import typings.orbitUiReactComponents.helpMessageMod.InnerHelpMessageProps
-import typings.orbitUiReactComponents.hiddenAutocompleteMod.HiddenAutocompleteProps
-import typings.orbitUiReactComponents.hiddenSelectMod.HiddenSelectProps
-import typings.orbitUiReactComponents.iconButtonMod.InnerIconButtonProps
-import typings.orbitUiReactComponents.iconLinkMod.InnerIconLinkProps
-import typings.orbitUiReactComponents.iconListMod.InnerIconListProps
-import typings.orbitUiReactComponents.iconMod.InnerIconProps
-import typings.orbitUiReactComponents.inlineMod.InnerInlineProps
-import typings.orbitUiReactComponents.inputGroupContextMod.ClearInputGroupContextProps
-import typings.orbitUiReactComponents.inputGroupContextMod.InputGroupContextType
-import typings.orbitUiReactComponents.inputGroupContextMod.UseInputGroupAddonPropsReturn
-import typings.orbitUiReactComponents.inputGroupContextMod.UseInputGroupButtonAddonPropsReturn
-import typings.orbitUiReactComponents.inputGroupContextMod.UseInputGroupMenuAddonPropsReturn
-import typings.orbitUiReactComponents.inputGroupContextMod.UseInputGroupPropsReturn
-import typings.orbitUiReactComponents.inputGroupContextMod.UseInputGroupSelectAddonPropsReturn
-import typings.orbitUiReactComponents.itemMod.InnerItemProps
-import typings.orbitUiReactComponents.labelMod.InnerLabelProps
-import typings.orbitUiReactComponents.listItemMod.InnerListItemProps
-import typings.orbitUiReactComponents.listboxContextMod.ListboxContextType
-import typings.orbitUiReactComponents.listboxOptionMod.InnerListboxOptionProps
-import typings.orbitUiReactComponents.listboxSectionMod.InnerListboxSectionProps
-import typings.orbitUiReactComponents.menuContextMod.MenuContextType
-import typings.orbitUiReactComponents.menuItemMod.InnerMenuItemProps
-import typings.orbitUiReactComponents.menuSectionMod.InnerMenuSectionProps
-import typings.orbitUiReactComponents.menuTriggerContextMod.MenuTriggerContextType
-import typings.orbitUiReactComponents.menuTriggerMod.InnerMenuTriggerProps
-import typings.orbitUiReactComponents.mergePropsMod.Props
-import typings.orbitUiReactComponents.mergePropsMod.TupleTypes
-import typings.orbitUiReactComponents.mergePropsMod.UnionToIntersection
-import typings.orbitUiReactComponents.modalTriggerMod.InnerModalTriggerProps
-import typings.orbitUiReactComponents.multiVariantIconMod.InnerMultiVariantIconProps
+import typings.orbitUiReactComponents.distAccordionSrcAccordionContextMod.AccordionContextType
+import typings.orbitUiReactComponents.distAccordionSrcAccordionHeaderMod.InnerAccordionHeaderProps
+import typings.orbitUiReactComponents.distAccordionSrcAccordionMod.InnerAccordionProps
+import typings.orbitUiReactComponents.distAccordionSrcAccordionPanelMod.InnerAccordionPanelProps
+import typings.orbitUiReactComponents.distAlertSrcAlertMod.InnerAlertProps
+import typings.orbitUiReactComponents.distAlertSrcAlertTriggerMod.InnerAlertTriggerProps
+import typings.orbitUiReactComponents.distAutocompleteSrcAutocompleteMod.InnerAutocompleteProps
+import typings.orbitUiReactComponents.distAutocompleteSrcHiddenAutocompleteMod.HiddenAutocompleteProps
+import typings.orbitUiReactComponents.distAvatarSrcAvatarGroupMod.InnerAvatarGroupProps
+import typings.orbitUiReactComponents.distAvatarSrcAvatarMod.AvatarTextProps
+import typings.orbitUiReactComponents.distAvatarSrcAvatarMod.InnerAvatarProps
+import typings.orbitUiReactComponents.distBadgeSrcBadgeMod.InnerBadgeProps
+import typings.orbitUiReactComponents.distBoxSrcBoxMod.InnerBoxProps
+import typings.orbitUiReactComponents.distButtonSrcButtonGroupMod.InnerButtonGroupProps
+import typings.orbitUiReactComponents.distButtonSrcButtonMod.InnerButtonProps
+import typings.orbitUiReactComponents.distButtonSrcCrossButtonMod.InnerCrossButtonProps
+import typings.orbitUiReactComponents.distButtonSrcIconButtonMod.InnerIconButtonProps
+import typings.orbitUiReactComponents.distButtonSrcToggleButtonMod.InnerToggleButtonProps
+import typings.orbitUiReactComponents.distButtonSrcToggleIconButtonMod.InnerToggleIconButtonProps
+import typings.orbitUiReactComponents.distCardSrcCardMod.InnerCardProps
+import typings.orbitUiReactComponents.distCheckboxSrcCheckboxGroupMod.InnerCheckboxGroupProps
+import typings.orbitUiReactComponents.distCheckboxSrcCheckboxMod.InnerCheckboxProps
+import typings.orbitUiReactComponents.distCheckboxSrcUseCheckboxMod.UseCheckboxProps
+import typings.orbitUiReactComponents.distCheckboxSrcUseCheckboxMod.UseCheckboxReturn
+import typings.orbitUiReactComponents.distCollectionSrcItemMod.InnerItemProps
+import typings.orbitUiReactComponents.distCollectionSrcSectionMod.InnerSectionProps
+import typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.CollectionItem
+import typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.CollectionNode
+import typings.orbitUiReactComponents.distCollectionSrcUseCollectionSearchMod.UseCollectionSearchOptions
+import typings.orbitUiReactComponents.distCollectionSrcUseScrollableCollectionMod.UseScrollableCollectionOptions
+import typings.orbitUiReactComponents.distCounterSrcCounterMod.InnerCounterProps
+import typings.orbitUiReactComponents.distDateInputSrcDateInputMod.InnerDateInputProps
+import typings.orbitUiReactComponents.distDateInputSrcDateRangeInputMod.InnerDateRangeInputProps
+import typings.orbitUiReactComponents.distDialogSrcDialogMod.InnerDialogProps
+import typings.orbitUiReactComponents.distDialogSrcDialogTriggerContextMod.DialogTriggerContextType
+import typings.orbitUiReactComponents.distDialogSrcDialogTriggerMod.InnerDialogTriggerProps
+import typings.orbitUiReactComponents.distDisclosureSrcDisclosureArrowMod.InnerDisclosureArrowProps
+import typings.orbitUiReactComponents.distDisclosureSrcDisclosureContextMod.DisclosureContextType
+import typings.orbitUiReactComponents.distDisclosureSrcDisclosureMod.InnerDisclosureProps
+import typings.orbitUiReactComponents.distDividerSrcDividerMod.InnerDividerProps
+import typings.orbitUiReactComponents.distDotSrcDotMod.InnerDotProps
+import typings.orbitUiReactComponents.distFieldSrcErrorMessageMod.InnerErrorMessageProps
+import typings.orbitUiReactComponents.distFieldSrcFieldContextMod.ClearFieldContextProps
+import typings.orbitUiReactComponents.distFieldSrcFieldContextMod.FieldContextType
+import typings.orbitUiReactComponents.distFieldSrcFieldContextMod.UseFieldInputPropsReturn
+import typings.orbitUiReactComponents.distFieldSrcFieldContextMod.UseFieldLabelPropsReturn
+import typings.orbitUiReactComponents.distFieldSrcFieldContextMod.UseFieldLabelProps_
+import typings.orbitUiReactComponents.distFieldSrcFieldContextMod.UseFieldMessagePropsReturn
+import typings.orbitUiReactComponents.distFieldSrcFieldMod.InnerFieldProps
+import typings.orbitUiReactComponents.distFieldSrcGroupFieldMod.InnerGroupFieldProps
+import typings.orbitUiReactComponents.distFieldSrcHelpMessageMod.InnerHelpMessageProps
+import typings.orbitUiReactComponents.distFieldSrcLabelMod.InnerLabelProps
+import typings.orbitUiReactComponents.distFieldSrcValidMessageMod.InnerValidMessageProps
+import typings.orbitUiReactComponents.distFormSrcFieldsetMod.InnerFieldsetProps
+import typings.orbitUiReactComponents.distFormSrcFormContextMod.FormContextType
+import typings.orbitUiReactComponents.distFormSrcFormMod.InnerFormProps
+import typings.orbitUiReactComponents.distFormSrcRowMod.InnerRowProps
+import typings.orbitUiReactComponents.distFormSrcUseFormButtonMod.FormButtonProps
+import typings.orbitUiReactComponents.distFormSrcUseFormFieldMod.FormFieldProps
+import typings.orbitUiReactComponents.distGroupSrcGroupMod.InnerGroupProps
+import typings.orbitUiReactComponents.distIconsSrcEmbeddedIconMod.EmbeddedIconProps
+import typings.orbitUiReactComponents.distIconsSrcIconListMod.InnerIconListProps
+import typings.orbitUiReactComponents.distIconsSrcIconMod.InnerIconProps
+import typings.orbitUiReactComponents.distIconsSrcMultiVariantIconMod.InnerMultiVariantIconProps
+import typings.orbitUiReactComponents.distIllustrationSrcIllustrationMod.InnerIllustrationProps
+import typings.orbitUiReactComponents.distImageSrcAsyncImageMod.InnerAsyncImageProps
+import typings.orbitUiReactComponents.distImageSrcImageMod.InnerImageProps
+import typings.orbitUiReactComponents.distImageSrcSvgImageMod.InnerSvgImageProps
+import typings.orbitUiReactComponents.distInputGroupSrcInputGroupContextMod.ClearInputGroupContextProps
+import typings.orbitUiReactComponents.distInputGroupSrcInputGroupContextMod.InputGroupContextType
+import typings.orbitUiReactComponents.distInputGroupSrcInputGroupContextMod.UseInputGroupAddonPropsReturn
+import typings.orbitUiReactComponents.distInputGroupSrcInputGroupContextMod.UseInputGroupButtonAddonPropsReturn
+import typings.orbitUiReactComponents.distInputGroupSrcInputGroupContextMod.UseInputGroupMenuAddonPropsReturn
+import typings.orbitUiReactComponents.distInputGroupSrcInputGroupContextMod.UseInputGroupPropsReturn
+import typings.orbitUiReactComponents.distInputGroupSrcInputGroupContextMod.UseInputGroupSelectAddonPropsReturn
+import typings.orbitUiReactComponents.distInputGroupSrcInputGroupMod.InnerInputGroupProps
+import typings.orbitUiReactComponents.distInputGroupSrcTextAddonMod.InnerTextAddonProps
+import typings.orbitUiReactComponents.distInputSrcUseGroupInputMod.UseGroupInputProps
+import typings.orbitUiReactComponents.distInputSrcUseGroupInputMod.UseGroupInputReturn
+import typings.orbitUiReactComponents.distInputSrcUseInputContentMod.UseInputIconProps
+import typings.orbitUiReactComponents.distInputSrcUseInputMod.UseInputProps
+import typings.orbitUiReactComponents.distInputSrcWrappedInputPropsAdapterMod.AdaptedWrappedInputProps
+import typings.orbitUiReactComponents.distLayoutSrcAdaptersMod.Alignment
+import typings.orbitUiReactComponents.distLayoutSrcAdaptersMod.Orientation
+import typings.orbitUiReactComponents.distLayoutSrcFlexMod.InnerFlexProps
+import typings.orbitUiReactComponents.distLayoutSrcInlineMod.InnerInlineProps
+import typings.orbitUiReactComponents.distLayoutSrcStackMod.InnerStackProps
+import typings.orbitUiReactComponents.distLinkSrcIconLinkMod.InnerIconLinkProps
+import typings.orbitUiReactComponents.distLinkSrcLinkMod.InnerLinkProps
+import typings.orbitUiReactComponents.distLinkSrcTextLinkMod.InnerTextLinkProps
+import typings.orbitUiReactComponents.distListSrcListItemMod.InnerListItemProps
+import typings.orbitUiReactComponents.distListSrcListMod.InnerListProps
+import typings.orbitUiReactComponents.distListboxSrcListboxContextMod.ListboxContextType
+import typings.orbitUiReactComponents.distListboxSrcListboxMod.InnerListboxProps
+import typings.orbitUiReactComponents.distListboxSrcListboxMod.ListboxElement
+import typings.orbitUiReactComponents.distListboxSrcListboxOptionMod.InnerListboxOptionProps
+import typings.orbitUiReactComponents.distListboxSrcListboxSectionMod.InnerListboxSectionProps
+import typings.orbitUiReactComponents.distLozengeSrcLozengeMod.InnerLozengeProps
+import typings.orbitUiReactComponents.distMenuSrcMenuContextMod.MenuContextType
+import typings.orbitUiReactComponents.distMenuSrcMenuItemMod.InnerMenuItemProps
+import typings.orbitUiReactComponents.distMenuSrcMenuMod.InnerMenuProps
+import typings.orbitUiReactComponents.distMenuSrcMenuSectionMod.InnerMenuSectionProps
+import typings.orbitUiReactComponents.distMenuSrcMenuTriggerContextMod.MenuTriggerContextType
+import typings.orbitUiReactComponents.distMenuSrcMenuTriggerMod.InnerMenuTriggerProps
+import typings.orbitUiReactComponents.distMessageSrcMessageMod.InnerMessageProps
+import typings.orbitUiReactComponents.distModalSrcModalMod.InnerModalProps
+import typings.orbitUiReactComponents.distModalSrcModalTriggerMod.InnerModalTriggerProps
+import typings.orbitUiReactComponents.distNumberInputSrcNumberInputMod.InnerNumberInputProps
+import typings.orbitUiReactComponents.distOverlaySrcOverlayArrowMod.InnerOverlayArrowProps
+import typings.orbitUiReactComponents.distOverlaySrcOverlayMod.InnerOverlayProps
+import typings.orbitUiReactComponents.distOverlaySrcUnderlayMod.InnerUnderlayProps
+import typings.orbitUiReactComponents.distOverlaySrcUseOverlayFocusRingMod.UseOverlayFocusRingProps
+import typings.orbitUiReactComponents.distOverlaySrcUseOverlayLightDismissMod.UseOverlayLightDismissOptions
+import typings.orbitUiReactComponents.distOverlaySrcUseOverlayPositionMod.UseOverlayPositionOptions
+import typings.orbitUiReactComponents.distOverlaySrcUseOverlayTriggerMod.UseOverlayTriggerOptions
+import typings.orbitUiReactComponents.distOverlaySrcUsePopupMod.UsePopupOptions
+import typings.orbitUiReactComponents.distOverlaySrcUseRestoreFocusMod.UseRestoreFocusOptions
+import typings.orbitUiReactComponents.distOverlaySrcUseTriggerWidthMod.UseTriggerWidthOptions
+import typings.orbitUiReactComponents.distPlaceholdersSrcContentMod.InnerContentProps
+import typings.orbitUiReactComponents.distPlaceholdersSrcFooterMod.InnerFooterProps
+import typings.orbitUiReactComponents.distPlaceholdersSrcHeaderMod.InnerHeaderProps
+import typings.orbitUiReactComponents.distPopoverSrcPopoverMod.InnerPopoverProps
+import typings.orbitUiReactComponents.distPopoverSrcPopoverTriggerContextMod.PopoverTriggerContextType
+import typings.orbitUiReactComponents.distPopoverSrcPopoverTriggerMod.InnerPopoverTriggerProps
+import typings.orbitUiReactComponents.distRadioSrcRadioGroupMod.InnerRadioGroupProps
+import typings.orbitUiReactComponents.distRadioSrcRadioMod.InnerRadioProps
+import typings.orbitUiReactComponents.distSelectSrcHiddenSelectMod.HiddenSelectProps
+import typings.orbitUiReactComponents.distSelectSrcSelectMod.InnerSelectProps
+import typings.orbitUiReactComponents.distSelectSrcUseSelectMod.UseSelectProps
+import typings.orbitUiReactComponents.distSharedSrcAugmentElementMod.RecordWithSize
+import typings.orbitUiReactComponents.distSharedSrcCheckableContextMod.CheckableContextType
+import typings.orbitUiReactComponents.distSharedSrcCheckableContextMod.UseCheckablePropsReturn
+import typings.orbitUiReactComponents.distSharedSrcFocusableTreeWalkerMod.FocusableTreeWalkerOptions
+import typings.orbitUiReactComponents.distSharedSrcForwardRefMod.AsRef
+import typings.orbitUiReactComponents.distSharedSrcForwardRefMod.OrbitComponent
+import typings.orbitUiReactComponents.distSharedSrcMergePropsMod.Props
+import typings.orbitUiReactComponents.distSharedSrcMergePropsMod.TupleTypes
+import typings.orbitUiReactComponents.distSharedSrcMergePropsMod.UnionToIntersection
+import typings.orbitUiReactComponents.distSharedSrcSizeMod.Size
+import typings.orbitUiReactComponents.distSharedSrcSizeMod.SizeAdapter
+import typings.orbitUiReactComponents.distSharedSrcSlotsMod.GetSlotsReturn
+import typings.orbitUiReactComponents.distSharedSrcSlotsMod.SlotOptions
+import typings.orbitUiReactComponents.distSharedSrcSlotsMod.UseSlotsReturn
+import typings.orbitUiReactComponents.distSharedSrcStyleContextMod.StyleContextType
+import typings.orbitUiReactComponents.distSharedSrcUseAutoFocusMod.AutoFocusChildOptions
+import typings.orbitUiReactComponents.distSharedSrcUseAutoFocusMod.AutoFocusOptions
+import typings.orbitUiReactComponents.distSharedSrcUseChainedEventCallbackMod.ChainableFunction
+import typings.orbitUiReactComponents.distSharedSrcUseControllableStateMod.ControllableStateOptions
+import typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManagerOptions
+import typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.ChangeEventHandler
+import typings.orbitUiReactComponents.distSharedSrcUseFocusWithinMod.UseFocusWithinOptions
+import typings.orbitUiReactComponents.distSharedSrcUseKeyboardNavigationMod.KeyboardNavigationBindings
+import typings.orbitUiReactComponents.distSharedSrcUseKeyboardNavigationMod.KeyboardNavigationOptions
+import typings.orbitUiReactComponents.distSharedSrcUseMergedRefsMod.AssignableRef
+import typings.orbitUiReactComponents.distSharedSrcUseMergedRefsMod.MergedRef
+import typings.orbitUiReactComponents.distSharedSrcUseMergedRefsMod.UnwrapStateType
+import typings.orbitUiReactComponents.distSharedSrcUseResizeObserverMod.UseResizeObserverOptions
+import typings.orbitUiReactComponents.distSwitchSrcSwitchMod.InnerSwitchProps
+import typings.orbitUiReactComponents.distTabsSrcTabListMod.InnerTabListProps
+import typings.orbitUiReactComponents.distTabsSrcTabMod.InnerTabProps
+import typings.orbitUiReactComponents.distTabsSrcTabPanelMod.InnerTabPanelProps
+import typings.orbitUiReactComponents.distTabsSrcTabPanelsMod.TabPanelsProps
+import typings.orbitUiReactComponents.distTabsSrcTabsContextMod.TabsContextType
+import typings.orbitUiReactComponents.distTabsSrcTabsMod.InnerTabsProps
+import typings.orbitUiReactComponents.distTagSrcTagListMod.InnerTagListProps
+import typings.orbitUiReactComponents.distTagSrcTagMod.InnerTagProps
+import typings.orbitUiReactComponents.distTextAreaSrcTextAreaMod.InnerTextAreaProps
+import typings.orbitUiReactComponents.distTextInputSrcPasswordInputMod.InnerPasswordInputProps
+import typings.orbitUiReactComponents.distTextInputSrcSearchInputMod.InnerSearchInputProps
+import typings.orbitUiReactComponents.distTextInputSrcTextInputMod.InnerTextInputProps
+import typings.orbitUiReactComponents.distThemeProviderSrcThemeContextMod.ThemeContextType
+import typings.orbitUiReactComponents.distThemeProviderSrcThemeProviderMod.ColorScheme
+import typings.orbitUiReactComponents.distThemeProviderSrcThemeProviderMod.ColorSchemeOrSystem
+import typings.orbitUiReactComponents.distThemeProviderSrcThemeProviderMod.ThemeProviderProps
+import typings.orbitUiReactComponents.distTileSrcTileGroupMod.InnerTileGroupProps
+import typings.orbitUiReactComponents.distTileSrcTileLinkMod.InnerTileLinkProps
+import typings.orbitUiReactComponents.distTileSrcTileMod.InnerTileProps
+import typings.orbitUiReactComponents.distToolbarSrcToolbarContextMod.ClearToolbarProps
+import typings.orbitUiReactComponents.distToolbarSrcToolbarContextMod.ToolbarContextType
+import typings.orbitUiReactComponents.distToolbarSrcToolbarContextMod.UseToolbarPropsReturn
+import typings.orbitUiReactComponents.distToolbarSrcToolbarMod.InnerToolbarProps
+import typings.orbitUiReactComponents.distTooltipSrcTooltipMod.InnerTooltipProps
+import typings.orbitUiReactComponents.distTooltipSrcTooltipTriggerMod.InnerTooltipTriggerProps
+import typings.orbitUiReactComponents.distTransitionSrcTransitionMod.InnerTransitionProps
+import typings.orbitUiReactComponents.distTypographySrcHeadingMod.InnerHeadingProps
+import typings.orbitUiReactComponents.distTypographySrcParagraphMod.InnerParagraphProps
+import typings.orbitUiReactComponents.distTypographySrcTextMod.InnerTextProps
+import typings.orbitUiReactComponents.distVisuallyHiddenSrcVisuallyHiddenMod.InnerVisuallyHiddenProps
 import typings.orbitUiReactComponents.orbitUiReactComponentsBooleans.`false`
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.`2xs`
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.button
@@ -111,125 +230,6 @@ import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.menu
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.sm
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.svg
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.xs
-import typings.orbitUiReactComponents.overlayArrowMod.InnerOverlayArrowProps
-import typings.orbitUiReactComponents.paragraphMod.InnerParagraphProps
-import typings.orbitUiReactComponents.passwordInputMod.InnerPasswordInputProps
-import typings.orbitUiReactComponents.popoverTriggerContextMod.PopoverTriggerContextType
-import typings.orbitUiReactComponents.popoverTriggerMod.InnerPopoverTriggerProps
-import typings.orbitUiReactComponents.radioGroupMod.InnerRadioGroupProps
-import typings.orbitUiReactComponents.rowMod.InnerRowProps
-import typings.orbitUiReactComponents.searchInputMod.InnerSearchInputProps
-import typings.orbitUiReactComponents.sectionMod.InnerSectionProps
-import typings.orbitUiReactComponents.sizeMod.Size
-import typings.orbitUiReactComponents.sizeMod.SizeAdapter
-import typings.orbitUiReactComponents.slotsMod.GetSlotsReturn
-import typings.orbitUiReactComponents.slotsMod.SlotOptions
-import typings.orbitUiReactComponents.slotsMod.UseSlotsReturn
-import typings.orbitUiReactComponents.srcAccordionMod.InnerAccordionProps
-import typings.orbitUiReactComponents.srcAlertMod.InnerAlertProps
-import typings.orbitUiReactComponents.srcAutocompleteMod.InnerAutocompleteProps
-import typings.orbitUiReactComponents.srcAvatarMod.AvatarTextProps
-import typings.orbitUiReactComponents.srcAvatarMod.InnerAvatarProps
-import typings.orbitUiReactComponents.srcBadgeMod.InnerBadgeProps
-import typings.orbitUiReactComponents.srcBoxMod.InnerBoxProps
-import typings.orbitUiReactComponents.srcButtonMod.InnerButtonProps
-import typings.orbitUiReactComponents.srcCardMod.InnerCardProps
-import typings.orbitUiReactComponents.srcCheckboxMod.InnerCheckboxProps
-import typings.orbitUiReactComponents.srcCounterMod.InnerCounterProps
-import typings.orbitUiReactComponents.srcDateInputMod.InnerDateInputProps
-import typings.orbitUiReactComponents.srcDialogMod.InnerDialogProps
-import typings.orbitUiReactComponents.srcDisclosureMod.InnerDisclosureProps
-import typings.orbitUiReactComponents.srcDividerMod.InnerDividerProps
-import typings.orbitUiReactComponents.srcDotMod.InnerDotProps
-import typings.orbitUiReactComponents.srcFieldMod.InnerFieldProps
-import typings.orbitUiReactComponents.srcFormMod.InnerFormProps
-import typings.orbitUiReactComponents.srcGroupMod.InnerGroupProps
-import typings.orbitUiReactComponents.srcIllustrationMod.InnerIllustrationProps
-import typings.orbitUiReactComponents.srcImageMod.InnerImageProps
-import typings.orbitUiReactComponents.srcInputGroupMod.InnerInputGroupProps
-import typings.orbitUiReactComponents.srcLinkMod.InnerLinkProps
-import typings.orbitUiReactComponents.srcListMod.InnerListProps
-import typings.orbitUiReactComponents.srcListboxMod.InnerListboxProps
-import typings.orbitUiReactComponents.srcListboxMod.ListboxElement
-import typings.orbitUiReactComponents.srcLozengeMod.InnerLozengeProps
-import typings.orbitUiReactComponents.srcMenuMod.InnerMenuProps
-import typings.orbitUiReactComponents.srcMessageMod.InnerMessageProps
-import typings.orbitUiReactComponents.srcModalMod.InnerModalProps
-import typings.orbitUiReactComponents.srcNumberInputMod.InnerNumberInputProps
-import typings.orbitUiReactComponents.srcOverlayMod.InnerOverlayProps
-import typings.orbitUiReactComponents.srcPopoverMod.InnerPopoverProps
-import typings.orbitUiReactComponents.srcRadioMod.InnerRadioProps
-import typings.orbitUiReactComponents.srcSelectMod.InnerSelectProps
-import typings.orbitUiReactComponents.srcSwitchMod.InnerSwitchProps
-import typings.orbitUiReactComponents.srcTabsMod.InnerTabsProps
-import typings.orbitUiReactComponents.srcTagMod.InnerTagProps
-import typings.orbitUiReactComponents.srcTextAreaMod.InnerTextAreaProps
-import typings.orbitUiReactComponents.srcTextInputMod.InnerTextInputProps
-import typings.orbitUiReactComponents.srcThemeProviderMod.ColorScheme
-import typings.orbitUiReactComponents.srcThemeProviderMod.ColorSchemeOrSystem
-import typings.orbitUiReactComponents.srcThemeProviderMod.ThemeProviderProps
-import typings.orbitUiReactComponents.srcTileMod.InnerTileProps
-import typings.orbitUiReactComponents.srcToolbarMod.InnerToolbarProps
-import typings.orbitUiReactComponents.srcTooltipMod.InnerTooltipProps
-import typings.orbitUiReactComponents.srcTransitionMod.InnerTransitionProps
-import typings.orbitUiReactComponents.srcVisuallyHiddenMod.InnerVisuallyHiddenProps
-import typings.orbitUiReactComponents.stackMod.InnerStackProps
-import typings.orbitUiReactComponents.styleContextMod.StyleContextType
-import typings.orbitUiReactComponents.svgImageMod.InnerSvgImageProps
-import typings.orbitUiReactComponents.tabListMod.InnerTabListProps
-import typings.orbitUiReactComponents.tabMod.InnerTabProps
-import typings.orbitUiReactComponents.tabPanelMod.InnerTabPanelProps
-import typings.orbitUiReactComponents.tabPanelsMod.TabPanelsProps
-import typings.orbitUiReactComponents.tabsContextMod.TabsContextType
-import typings.orbitUiReactComponents.tagListMod.InnerTagListProps
-import typings.orbitUiReactComponents.textAddonMod.InnerTextAddonProps
-import typings.orbitUiReactComponents.textLinkMod.InnerTextLinkProps
-import typings.orbitUiReactComponents.textMod.InnerTextProps
-import typings.orbitUiReactComponents.themeContextMod.ThemeContextType
-import typings.orbitUiReactComponents.tileGroupMod.InnerTileGroupProps
-import typings.orbitUiReactComponents.tileLinkMod.InnerTileLinkProps
-import typings.orbitUiReactComponents.toggleButtonMod.InnerToggleButtonProps
-import typings.orbitUiReactComponents.toggleIconButtonMod.InnerToggleIconButtonProps
-import typings.orbitUiReactComponents.toolbarContextMod.ClearToolbarProps
-import typings.orbitUiReactComponents.toolbarContextMod.ToolbarContextType
-import typings.orbitUiReactComponents.toolbarContextMod.UseToolbarPropsReturn
-import typings.orbitUiReactComponents.tooltipTriggerMod.InnerTooltipTriggerProps
-import typings.orbitUiReactComponents.underlayMod.InnerUnderlayProps
-import typings.orbitUiReactComponents.useAutoFocusMod.AutoFocusChildOptions
-import typings.orbitUiReactComponents.useAutoFocusMod.AutoFocusOptions
-import typings.orbitUiReactComponents.useChainedEventCallbackMod.ChainableFunction
-import typings.orbitUiReactComponents.useCheckboxMod.UseCheckboxProps
-import typings.orbitUiReactComponents.useCheckboxMod.UseCheckboxReturn
-import typings.orbitUiReactComponents.useCollectionMod.CollectionItem
-import typings.orbitUiReactComponents.useCollectionMod.CollectionNode
-import typings.orbitUiReactComponents.useCollectionSearchMod.UseCollectionSearchOptions
-import typings.orbitUiReactComponents.useControllableStateMod.ControllableStateOptions
-import typings.orbitUiReactComponents.useFocusManagerMod.FocusManagerOptions
-import typings.orbitUiReactComponents.useFocusScopeMod.ChangeEventHandler
-import typings.orbitUiReactComponents.useFocusWithinMod.UseFocusWithinOptions
-import typings.orbitUiReactComponents.useFormButtonMod.FormButtonProps
-import typings.orbitUiReactComponents.useFormFieldMod.FormFieldProps
-import typings.orbitUiReactComponents.useGroupInputMod.UseGroupInputProps
-import typings.orbitUiReactComponents.useGroupInputMod.UseGroupInputReturn
-import typings.orbitUiReactComponents.useInputContentMod.UseInputIconProps
-import typings.orbitUiReactComponents.useInputMod.UseInputProps
-import typings.orbitUiReactComponents.useKeyboardNavigationMod.KeyboardNavigationBindings
-import typings.orbitUiReactComponents.useKeyboardNavigationMod.KeyboardNavigationOptions
-import typings.orbitUiReactComponents.useMergedRefsMod.AssignableRef
-import typings.orbitUiReactComponents.useMergedRefsMod.MergedRef
-import typings.orbitUiReactComponents.useMergedRefsMod.UnwrapStateType
-import typings.orbitUiReactComponents.useOverlayFocusRingMod.UseOverlayFocusRingProps
-import typings.orbitUiReactComponents.useOverlayLightDismissMod.UseOverlayLightDismissOptions
-import typings.orbitUiReactComponents.useOverlayPositionMod.UseOverlayPositionOptions
-import typings.orbitUiReactComponents.useOverlayTriggerMod.UseOverlayTriggerOptions
-import typings.orbitUiReactComponents.usePopupMod.UsePopupOptions
-import typings.orbitUiReactComponents.useResizeObserverMod.UseResizeObserverOptions
-import typings.orbitUiReactComponents.useRestoreFocusMod.UseRestoreFocusOptions
-import typings.orbitUiReactComponents.useScrollableCollectionMod.UseScrollableCollectionOptions
-import typings.orbitUiReactComponents.useSelectMod.UseSelectProps
-import typings.orbitUiReactComponents.useTriggerWidthMod.UseTriggerWidthOptions
-import typings.orbitUiReactComponents.validMessageMod.InnerValidMessageProps
-import typings.orbitUiReactComponents.wrappedInputPropsAdapterMod.AdaptedWrappedInputProps
 import typings.react.mod.Context
 import typings.react.mod.ElementType
 import typings.react.mod.ForwardRefRenderFunction
@@ -441,12 +441,12 @@ object mod {
   @JSImport("@orbit-ui/react-components", "CollectionBuilder")
   @js.native
   open class CollectionBuilder ()
-    extends typings.orbitUiReactComponents.collectionMod.CollectionBuilder
+    extends typings.orbitUiReactComponents.distCollectionMod.CollectionBuilder
   
   @JSImport("@orbit-ui/react-components", "CompositeKeyWeakMap")
   @js.native
   open class CompositeKeyWeakMap[T] ()
-    extends typings.orbitUiReactComponents.sharedMod.CompositeKeyWeakMap[T]
+    extends typings.orbitUiReactComponents.distSharedMod.CompositeKeyWeakMap[T]
   
   @JSImport("@orbit-ui/react-components", "Content")
   @js.native
@@ -535,7 +535,7 @@ object mod {
   @JSImport("@orbit-ui/react-components", "DomScope")
   @js.native
   open class DomScope protected ()
-    extends typings.orbitUiReactComponents.sharedMod.DomScope {
+    extends typings.orbitUiReactComponents.distSharedMod.DomScope {
     def this(scopeRef: RefObject[js.Array[HTMLElement]], handlersRef: RefObject[js.Array[ChangeEventHandler]]) = this()
   }
   
@@ -570,7 +570,7 @@ object mod {
   @JSImport("@orbit-ui/react-components", "ElementIterator")
   @js.native
   open class ElementIterator[T] protected ()
-    extends typings.orbitUiReactComponents.sharedMod.ElementIterator[T] {
+    extends typings.orbitUiReactComponents.distSharedMod.ElementIterator[T] {
     def this(elements: js.Array[T]) = this()
     def this(elements: js.Array[T], hasFrom: From) = this()
   }
@@ -684,10 +684,10 @@ object mod {
   @JSImport("@orbit-ui/react-components", "FocusManager")
   @js.native
   open class FocusManager protected ()
-    extends typings.orbitUiReactComponents.sharedMod.FocusManager {
-    def this(scope: typings.orbitUiReactComponents.useFocusScopeMod.DomScope) = this()
+    extends typings.orbitUiReactComponents.distSharedMod.FocusManager {
+    def this(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope) = this()
     def this(
-      scope: typings.orbitUiReactComponents.useFocusScopeMod.DomScope,
+      scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope,
       hasIsVirtualKeyPropOnFocus: FocusManagerOptions
     ) = this()
   }
@@ -697,11 +697,11 @@ object mod {
   object FocusTarget extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.orbitUiReactComponents.focusTargetMod.FocusTarget & String] = js.native
+    def apply(value: String): js.UndefOr[typings.orbitUiReactComponents.distSharedSrcFocusTargetMod.FocusTarget & String] = js.native
     
-    /* "first" */ val first: typings.orbitUiReactComponents.focusTargetMod.FocusTarget.first & String = js.native
+    /* "first" */ val first: typings.orbitUiReactComponents.distSharedSrcFocusTargetMod.FocusTarget.first & String = js.native
     
-    /* "last" */ val last: typings.orbitUiReactComponents.focusTargetMod.FocusTarget.last & String = js.native
+    /* "last" */ val last: typings.orbitUiReactComponents.distSharedSrcFocusTargetMod.FocusTarget.last & String = js.native
   }
   
   @JSImport("@orbit-ui/react-components", "FocusableElementSelector")
@@ -1177,31 +1177,31 @@ object mod {
   object Keys extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.orbitUiReactComponents.keysMod.Keys & String] = js.native
+    def apply(value: String): js.UndefOr[typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys & String] = js.native
     
-    /* "ArrowDown" */ val arrowDown: typings.orbitUiReactComponents.keysMod.Keys.arrowDown & String = js.native
+    /* "ArrowDown" */ val arrowDown: typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys.arrowDown & String = js.native
     
-    /* "ArrowLeft" */ val arrowLeft: typings.orbitUiReactComponents.keysMod.Keys.arrowLeft & String = js.native
+    /* "ArrowLeft" */ val arrowLeft: typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys.arrowLeft & String = js.native
     
-    /* "ArrowRight" */ val arrowRight: typings.orbitUiReactComponents.keysMod.Keys.arrowRight & String = js.native
+    /* "ArrowRight" */ val arrowRight: typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys.arrowRight & String = js.native
     
-    /* "ArrowUp" */ val arrowUp: typings.orbitUiReactComponents.keysMod.Keys.arrowUp & String = js.native
+    /* "ArrowUp" */ val arrowUp: typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys.arrowUp & String = js.native
     
-    /* "Backspace" */ val backspace: typings.orbitUiReactComponents.keysMod.Keys.backspace & String = js.native
+    /* "Backspace" */ val backspace: typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys.backspace & String = js.native
     
-    /* "Delete" */ val delete: typings.orbitUiReactComponents.keysMod.Keys.delete & String = js.native
+    /* "Delete" */ val delete: typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys.delete & String = js.native
     
-    /* "End" */ val end: typings.orbitUiReactComponents.keysMod.Keys.end & String = js.native
+    /* "End" */ val end: typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys.end & String = js.native
     
-    /* "Enter" */ val enter: typings.orbitUiReactComponents.keysMod.Keys.enter & String = js.native
+    /* "Enter" */ val enter: typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys.enter & String = js.native
     
-    /* "Escape" */ val esc: typings.orbitUiReactComponents.keysMod.Keys.esc & String = js.native
+    /* "Escape" */ val esc: typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys.esc & String = js.native
     
-    /* "Home" */ val home: typings.orbitUiReactComponents.keysMod.Keys.home & String = js.native
+    /* "Home" */ val home: typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys.home & String = js.native
     
-    /* " " */ val space: typings.orbitUiReactComponents.keysMod.Keys.space & String = js.native
+    /* " " */ val space: typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys.space & String = js.native
     
-    /* "Tab" */ val tab: typings.orbitUiReactComponents.keysMod.Keys.tab & String = js.native
+    /* "Tab" */ val tab: typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys.tab & String = js.native
   }
   
   @JSImport("@orbit-ui/react-components", "Label")
@@ -1317,13 +1317,15 @@ object mod {
   object NodeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.orbitUiReactComponents.useCollectionMod.NodeType & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.NodeType & String
+      ] = js.native
     
-    /* "divider" */ val divider: typings.orbitUiReactComponents.useCollectionMod.NodeType.divider & String = js.native
+    /* "divider" */ val divider: typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.NodeType.divider & String = js.native
     
-    /* "item" */ val item: typings.orbitUiReactComponents.useCollectionMod.NodeType.item & String = js.native
+    /* "item" */ val item: typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.NodeType.item & String = js.native
     
-    /* "section" */ val section: typings.orbitUiReactComponents.useCollectionMod.NodeType.section & String = js.native
+    /* "section" */ val section: typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.NodeType.section & String = js.native
   }
   
   @JSImport("@orbit-ui/react-components", "NotificationIcon")
@@ -1583,7 +1585,7 @@ object mod {
   @JSImport("@orbit-ui/react-components", "ThemeComputedStyle")
   @js.native
   open class ThemeComputedStyle protected ()
-    extends typings.orbitUiReactComponents.themeProviderMod.ThemeComputedStyle {
+    extends typings.orbitUiReactComponents.distThemeProviderMod.ThemeComputedStyle {
     def this(componentRef: RefObject[typings.std.Element]) = this()
   }
   
@@ -1852,9 +1854,9 @@ object mod {
   inline def useAutoFocus(targetRef: RefObject[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocus")(targetRef.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def useAutoFocus(targetRef: RefObject[HTMLElement], hasIsDisabledDelayOnFocus: AutoFocusOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocus")(targetRef.asInstanceOf[js.Any], hasIsDisabledDelayOnFocus.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def useAutoFocusChild(focusManager: typings.orbitUiReactComponents.useFocusManagerMod.FocusManager): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocusChild")(focusManager.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useAutoFocusChild(focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocusChild")(focusManager.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def useAutoFocusChild(
-    focusManager: typings.orbitUiReactComponents.useFocusManagerMod.FocusManager,
+    focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager,
     hasTargetIsDisabledDelayCanFocusOnFocusOnNotFound: AutoFocusChildOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocusChild")(focusManager.asInstanceOf[js.Any], hasTargetIsDisabledDelayCanFocusOnFocusOnNotFound.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -1862,7 +1864,7 @@ object mod {
   
   inline def useCheckableContext(): js.Tuple2[CheckableContextType, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableContext")().asInstanceOf[js.Tuple2[CheckableContextType, Boolean]]
   
-  inline def useCheckableProps(hasValue: `3`): js.Tuple2[UseCheckablePropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableProps")(hasValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseCheckablePropsReturn, Boolean]]
+  inline def useCheckableProps(hasValue: `0`): js.Tuple2[UseCheckablePropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableProps")(hasValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseCheckablePropsReturn, Boolean]]
   
   inline def useCheckbox(
     hasModuleIsInFieldIdCheckedDefaultCheckedIndeterminateDefaultIndeterminateAutoFocusRequiredValidationStateOnChangeSizeReverseNameTabIndexActiveFocusHoverDisabledAriaLabelAriaLabelledByForwardedRef: UseCheckboxProps
@@ -2086,22 +2088,22 @@ object mod {
   
   inline def useFlexDirection(orientation: Orientation): Direction = ^.asInstanceOf[js.Dynamic].applyDynamic("useFlexDirection")(orientation.asInstanceOf[js.Any]).asInstanceOf[Direction]
   
-  inline def useFocusManager(scope: typings.orbitUiReactComponents.useFocusScopeMod.DomScope): typings.orbitUiReactComponents.useFocusManagerMod.FocusManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")(scope.asInstanceOf[js.Any]).asInstanceOf[typings.orbitUiReactComponents.useFocusManagerMod.FocusManager]
+  inline def useFocusManager(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope): typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")(scope.asInstanceOf[js.Any]).asInstanceOf[typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager]
   inline def useFocusManager(
-    scope: typings.orbitUiReactComponents.useFocusScopeMod.DomScope,
+    scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope,
     hasIsVirtualKeyPropOnFocus: FocusManagerOptions
-  ): typings.orbitUiReactComponents.useFocusManagerMod.FocusManager = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")(scope.asInstanceOf[js.Any], hasIsVirtualKeyPropOnFocus.asInstanceOf[js.Any])).asInstanceOf[typings.orbitUiReactComponents.useFocusManagerMod.FocusManager]
+  ): typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")(scope.asInstanceOf[js.Any], hasIsVirtualKeyPropOnFocus.asInstanceOf[js.Any])).asInstanceOf[typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager]
   
   inline def useFocusScope(): js.Tuple2[
-    typings.orbitUiReactComponents.useFocusScopeMod.DomScope, 
+    typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, 
     js.Function1[/* rootElement */ HTMLElement, Unit]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusScope")().asInstanceOf[js.Tuple2[
-    typings.orbitUiReactComponents.useFocusScopeMod.DomScope, 
+    typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, 
     js.Function1[/* rootElement */ HTMLElement, Unit]
   ]]
   
-  inline def useFocusWithin(): OnBlurOnFocus | `2` = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")().asInstanceOf[OnBlurOnFocus | `2`]
-  inline def useFocusWithin(hasOnFocusOnBlurIsDisabled: UseFocusWithinOptions): OnBlurOnFocus | `2` = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")(hasOnFocusOnBlurIsDisabled.asInstanceOf[js.Any]).asInstanceOf[OnBlurOnFocus | `2`]
+  inline def useFocusWithin(): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")().asInstanceOf[OnFocus | OnBlurOnFocus]
+  inline def useFocusWithin(hasOnFocusOnBlurIsDisabled: UseFocusWithinOptions): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")(hasOnFocusOnBlurIsDisabled.asInstanceOf[js.Any]).asInstanceOf[OnFocus | OnBlurOnFocus]
   
   inline def useForceRender(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForceRender")().asInstanceOf[js.Function0[Unit]]
   
@@ -2153,20 +2155,20 @@ object mod {
   inline def useIsInitialRender(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useIsInitialRender")().asInstanceOf[Boolean]
   
   inline def useKeyboardNavigation(
-    focusManager: typings.orbitUiReactComponents.useFocusManagerMod.FocusManager,
+    focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager,
     hasPreviousNextFirstLast: KeyboardNavigationBindings
-  ): OnKeyDownKeyboardEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], hasPreviousNextFirstLast.asInstanceOf[js.Any])).asInstanceOf[OnKeyDownKeyboardEventHandler]
+  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], hasPreviousNextFirstLast.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
   inline def useKeyboardNavigation(
-    focusManager: typings.orbitUiReactComponents.useFocusManagerMod.FocusManager,
+    focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager,
     hasPreviousNextFirstLast: KeyboardNavigationBindings,
     hasOnSelect: KeyboardNavigationOptions
-  ): OnKeyDownKeyboardEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], hasPreviousNextFirstLast.asInstanceOf[js.Any], hasOnSelect.asInstanceOf[js.Any])).asInstanceOf[OnKeyDownKeyboardEventHandler]
+  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], hasPreviousNextFirstLast.asInstanceOf[js.Any], hasOnSelect.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
   
-  inline def useKeyedRovingFocus(scope: typings.orbitUiReactComponents.useFocusScopeMod.DomScope, currentKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyedRovingFocus")(scope.asInstanceOf[js.Any], currentKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useKeyedRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, currentKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyedRovingFocus")(scope.asInstanceOf[js.Any], currentKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useKeyedRovingFocus(
-    scope: typings.orbitUiReactComponents.useFocusScopeMod.DomScope,
+    scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope,
     currentKey: String,
-    hasKeyPropIsDisabled: KeyProp
+    hasKeyPropIsDisabled: IsDisabled
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyedRovingFocus")(scope.asInstanceOf[js.Any], currentKey.asInstanceOf[js.Any], hasKeyPropIsDisabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useListboxContext(): ListboxContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useListboxContext")().asInstanceOf[ListboxContextType]
@@ -2195,8 +2197,8 @@ object mod {
   inline def useOverlayPosition(): ArrowRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayPosition")().asInstanceOf[ArrowRef]
   inline def useOverlayPosition(hasPositionOffsetAllowFlipAllowPreventOverflowBoundaryElementHasArrow: UseOverlayPositionOptions): ArrowRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayPosition")(hasPositionOffsetAllowFlipAllowPreventOverflowBoundaryElementHasArrow.asInstanceOf[js.Any]).asInstanceOf[ArrowRef]
   
-  inline def useOverlayTrigger(isOpen: Boolean): OnClick | OnFocus | OnKeyDown = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any]).asInstanceOf[OnClick | OnFocus | OnKeyDown]
-  inline def useOverlayTrigger(isOpen: Boolean, hasHideOnLeaveTriggerOnShowOnHideIsDisabled: UseOverlayTriggerOptions): OnClick | OnFocus | OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any], hasHideOnLeaveTriggerOnShowOnHideIsDisabled.asInstanceOf[js.Any])).asInstanceOf[OnClick | OnFocus | OnKeyDown]
+  inline def useOverlayTrigger(isOpen: Boolean): OnClick | OnKeyUp | OnMouseEnter = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any]).asInstanceOf[OnClick | OnKeyUp | OnMouseEnter]
+  inline def useOverlayTrigger(isOpen: Boolean, hasHideOnLeaveTriggerOnShowOnHideIsDisabled: UseOverlayTriggerOptions): OnClick | OnKeyUp | OnMouseEnter = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any], hasHideOnLeaveTriggerOnShowOnHideIsDisabled.asInstanceOf[js.Any])).asInstanceOf[OnClick | OnKeyUp | OnMouseEnter]
   
   inline def usePopoverTriggerContext(): PopoverTriggerContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("usePopoverTriggerContext")().asInstanceOf[PopoverTriggerContextType]
   
@@ -2229,11 +2231,14 @@ object mod {
     hasIsDisabledBox: UseResizeObserverOptions
   ): RefCallback[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any], hasIsDisabledBox.asInstanceOf[js.Any])).asInstanceOf[RefCallback[HTMLElement]]
   
-  inline def useRestoreFocus(scope: typings.orbitUiReactComponents.sharedMod.DomScope): OnKeyDownUndefined | `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("useRestoreFocus")(scope.asInstanceOf[js.Any]).asInstanceOf[OnKeyDownUndefined | `1`]
-  inline def useRestoreFocus(scope: typings.orbitUiReactComponents.sharedMod.DomScope, hasIsDisabled: UseRestoreFocusOptions): OnKeyDownUndefined | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("useRestoreFocus")(scope.asInstanceOf[js.Any], hasIsDisabled.asInstanceOf[js.Any])).asInstanceOf[OnKeyDownUndefined | `1`]
+  inline def useRestoreFocus(scope: typings.orbitUiReactComponents.distSharedMod.DomScope): OnKeyDownUndefined | `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("useRestoreFocus")(scope.asInstanceOf[js.Any]).asInstanceOf[OnKeyDownUndefined | `1`]
+  inline def useRestoreFocus(
+    scope: typings.orbitUiReactComponents.distSharedMod.DomScope,
+    hasIsDisabled: UseRestoreFocusOptions
+  ): OnKeyDownUndefined | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("useRestoreFocus")(scope.asInstanceOf[js.Any], hasIsDisabled.asInstanceOf[js.Any])).asInstanceOf[OnKeyDownUndefined | `1`]
   
-  inline def useRovingFocus(scope: typings.orbitUiReactComponents.useFocusScopeMod.DomScope): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def useRovingFocus(scope: typings.orbitUiReactComponents.useFocusScopeMod.DomScope, hasIsDisabled: IsDisabled): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any], hasIsDisabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, hasIsDisabled: `2`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any], hasIsDisabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useScrollableCollection(containerRef: RefObject[typings.std.Element]): Style | StyleHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any]).asInstanceOf[Style | StyleHeight]
   inline def useScrollableCollection(
@@ -2254,7 +2259,7 @@ object mod {
   
   inline def useTabsContext(): TabsContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabsContext")().asInstanceOf[TabsContextType]
   
-  inline def useThemeComputedStyle(componentRef: RefObject[typings.std.Element]): typings.orbitUiReactComponents.useThemeComputedStyleMod.ThemeComputedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("useThemeComputedStyle")(componentRef.asInstanceOf[js.Any]).asInstanceOf[typings.orbitUiReactComponents.useThemeComputedStyleMod.ThemeComputedStyle]
+  inline def useThemeComputedStyle(componentRef: RefObject[typings.std.Element]): typings.orbitUiReactComponents.distThemeProviderSrcUseThemeComputedStyleMod.ThemeComputedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("useThemeComputedStyle")(componentRef.asInstanceOf[js.Any]).asInstanceOf[typings.orbitUiReactComponents.distThemeProviderSrcUseThemeComputedStyleMod.ThemeComputedStyle]
   
   inline def useThemeContext(): ThemeContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useThemeContext")().asInstanceOf[ThemeContextType]
   
@@ -2264,7 +2269,7 @@ object mod {
   
   inline def useTooltipTriggerContext(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipTriggerContext")().asInstanceOf[js.Object]
   
-  inline def useTrapFocus(focusManager: typings.orbitUiReactComponents.sharedMod.FocusManager): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useTrapFocus")(focusManager.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useTrapFocus(focusManager: typings.orbitUiReactComponents.distSharedMod.FocusManager): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useTrapFocus")(focusManager.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def useTriggerWidth(): js.Tuple2[RefCallback[HTMLElement], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTriggerWidth")().asInstanceOf[js.Tuple2[RefCallback[HTMLElement], String]]
   inline def useTriggerWidth(hasIsDisabled: UseTriggerWidthOptions): js.Tuple2[RefCallback[HTMLElement], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTriggerWidth")(hasIsDisabled.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[RefCallback[HTMLElement], String]]
@@ -2297,5 +2302,5 @@ object mod {
     onElement: js.Function2[/* element */ typings.std.Element, /* index */ js.UndefOr[Double], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkFocusableElements")(root.asInstanceOf[js.Any], onElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def wrappedInputPropsAdapter[P /* <: `0` */](hasClassNameRest: P): (Omit[P, className]) & AdaptedWrappedInputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappedInputPropsAdapter")(hasClassNameRest.asInstanceOf[js.Any]).asInstanceOf[(Omit[P, className]) & AdaptedWrappedInputProps]
+  inline def wrappedInputPropsAdapter[P /* <: `3` */](hasClassNameRest: P): (Omit[P, className]) & AdaptedWrappedInputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappedInputPropsAdapter")(hasClassNameRest.asInstanceOf[js.Any]).asInstanceOf[(Omit[P, className]) & AdaptedWrappedInputProps]
 }

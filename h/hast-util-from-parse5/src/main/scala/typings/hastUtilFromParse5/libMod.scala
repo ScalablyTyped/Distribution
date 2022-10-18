@@ -122,13 +122,13 @@ object libMod {
   
   type P5Document = Document
   
-  type P5Element = Element
+  type P5Element = typings.std.Element
   
   type P5ElementLocation = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_parse5.ElementLocation */ Any
   
   type P5Location = Location
   
-  type P5Node = Node
+  type P5Node = typings.std.Node
   
   type P5Text = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_parse5.TextNode */ Any
   

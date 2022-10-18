@@ -59,7 +59,9 @@ object mod {
       * Use an array for more than one thumb.
       * The length of the array must match the number of thumbs in the `value` array.
       */
-    var ariaLabel: js.UndefOr[js.Array[String] | String] = js.undefined
+    var ariaLabel: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? string : std.ReadonlyArray<string> | undefined */ js.Any
+      ] = js.undefined
     
     /**
       * aria-labelledby for screen-readers to apply to the thumbs.
@@ -67,7 +69,9 @@ object mod {
       * Use an array for more than one thumb.
       * The length of the array must match the number of thumbs in the value array.
       */
-    var ariaLabelledby: js.UndefOr[js.Array[String] | String] = js.undefined
+    var ariaLabelledby: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? string : std.ReadonlyArray<string> | undefined */ js.Any
+      ] = js.undefined
     
     /**
       * `aria-valuetext` for screen-readers.
@@ -106,7 +110,9 @@ object mod {
       *
       * @default 0
       */
-    var defaultValue: js.UndefOr[T] = js.undefined
+    var defaultValue: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: this['value'] extends T ? never : T */ js.Any
+      ] = js.undefined
     
     /**
       * If `true` the thumbs can't be moved.
@@ -333,17 +339,17 @@ object mod {
     
     extension [Self <: ReactSliderProps[?], T /* <: Double | js.Array[Double] */](x: Self & ReactSliderProps[T]) {
       
-      inline def setAriaLabel(value: js.Array[String] | String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? string : std.ReadonlyArray<string> | undefined */ js.Any
+      ): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
       inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      inline def setAriaLabelVarargs(value: String*): Self = StObject.set(x, "ariaLabel", js.Array(value*))
-      
-      inline def setAriaLabelledby(value: js.Array[String] | String): Self = StObject.set(x, "ariaLabelledby", value.asInstanceOf[js.Any])
+      inline def setAriaLabelledby(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? string : std.ReadonlyArray<string> | undefined */ js.Any
+      ): Self = StObject.set(x, "ariaLabelledby", value.asInstanceOf[js.Any])
       
       inline def setAriaLabelledbyUndefined: Self = StObject.set(x, "ariaLabelledby", js.undefined)
-      
-      inline def setAriaLabelledbyVarargs(value: String*): Self = StObject.set(x, "ariaLabelledby", js.Array(value*))
       
       inline def setAriaValuetext(value: String | (js.Function1[/* value */ Index[T], String])): Self = StObject.set(x, "ariaValuetext", value.asInstanceOf[js.Any])
       
@@ -355,7 +361,9 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: this['value'] extends T ? never : T */ js.Any
+      ): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       

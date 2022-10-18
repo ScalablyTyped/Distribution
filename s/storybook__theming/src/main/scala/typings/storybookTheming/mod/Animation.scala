@@ -1,7 +1,7 @@
 package typings.storybookTheming.mod
 
-import typings.storybookTheming.emotionCacheNodeModulesemotionUtilsTypesIndexMod.SerializedStyles
-import typings.storybookTheming.emotionReactNodeModulesemotionSerializeTypesIndexMod.Keyframes
+import typings.storybookTheming.`distTs3Dot9Modules@emotionCacheNodeModules@emotionUtilsTypesIndexMod`.SerializedStyles
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.Keyframes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

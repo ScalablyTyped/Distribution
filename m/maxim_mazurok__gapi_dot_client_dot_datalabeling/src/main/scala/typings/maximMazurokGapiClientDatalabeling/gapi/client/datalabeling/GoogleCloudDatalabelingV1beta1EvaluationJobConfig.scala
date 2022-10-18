@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +15,7 @@ trait GoogleCloudDatalabelingV1beta1EvaluationJobConfig extends StObject {
     * Learn [how to configure prediction keys](/ml-engine/docs/continuous-evaluation/create-job#prediction-keys).
     */
   var bigqueryImportKeys: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1EvaluationJobConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -88,9 +85,7 @@ object GoogleCloudDatalabelingV1beta1EvaluationJobConfig {
   extension [Self <: GoogleCloudDatalabelingV1beta1EvaluationJobConfig](x: Self) {
     
     inline def setBigqueryImportKeys(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1EvaluationJobConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "bigqueryImportKeys", value.asInstanceOf[js.Any])
     
     inline def setBigqueryImportKeysUndefined: Self = StObject.set(x, "bigqueryImportKeys", js.undefined)

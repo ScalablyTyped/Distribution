@@ -4,11 +4,6 @@ import typings.remarkMessageControl.mod.Options
 import typings.remarkMessageControl.remarkMessageControlBooleans.`false`
 import typings.remarkMessageControl.remarkMessageControlBooleans.`true`
 import typings.unifiedMessageControl.mod.Test
-import typings.unistUtilIs.mod.Node
-import typings.unistUtilIs.mod.Parent
-import typings.unistUtilIs.mod.Props
-import typings.unistUtilIs.mod.TestFunctionAnything
-import typings.unistUtilIs.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,15 +60,7 @@ object anon {
       
       inline def setTest(value: Test): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      inline def setTestFunction3(
-        value: (/* node */ Node, /* index */ js.UndefOr[Double | Null], /* parent */ js.UndefOr[Parent | Null]) => Boolean | Unit
-      ): Self = StObject.set(x, "test", js.Any.fromFunction3(value))
-      
-      inline def setTestNull: Self = StObject.set(x, "test", null)
-      
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
-      
-      inline def setTestVarargs(value: (Type | Props | TestFunctionAnything)*): Self = StObject.set(x, "test", js.Array(value*))
     }
   }
   
@@ -129,15 +116,7 @@ object anon {
       
       inline def setTest(value: Test): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      inline def setTestFunction3(
-        value: (/* node */ Node, /* index */ js.UndefOr[Double | Null], /* parent */ js.UndefOr[Parent | Null]) => Boolean | Unit
-      ): Self = StObject.set(x, "test", js.Any.fromFunction3(value))
-      
-      inline def setTestNull: Self = StObject.set(x, "test", null)
-      
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
-      
-      inline def setTestVarargs(value: (Type | Props | TestFunctionAnything)*): Self = StObject.set(x, "test", js.Array(value*))
     }
   }
 }

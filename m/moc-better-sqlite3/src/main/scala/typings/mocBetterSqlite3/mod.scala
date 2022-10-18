@@ -74,7 +74,15 @@ object mod extends Shortcut {
     }
   }
   
-  type ArgumentTypes[F /* <: VariableArgFunction */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    F extends (args : infer A): any ? A : never
+    }}}
+    */
+  @js.native
+  trait ArgumentTypes[F /* <: VariableArgFunction */] extends StObject
   
   trait BackupMetadata extends StObject {
     
@@ -203,7 +211,7 @@ object mod extends Shortcut {
       def pragma(source: String): Any = js.native
       def pragma(source: String, options: PragmaOptions): Any = js.native
       
-      def prepare[BindParameters /* <: js.Array[Any] | js.Object */](source: String): typings.mocBetterSqlite3.mod.MocBetterSqlite3.Statement[js.Array[BindParameters] | BindParameters] = js.native
+      def prepare[BindParameters /* <: js.Array[Any] | js.Object */](source: String): /* import warning: importer.ImportType#apply Failed type conversion: BindParameters extends std.Array<any> ? moc-better-sqlite3.moc-better-sqlite3.MocBetterSqlite3.Statement<BindParameters> : moc-better-sqlite3.moc-better-sqlite3.MocBetterSqlite3.Statement<[BindParameters]> */ js.Any = js.native
       
       var readonly: Boolean = js.native
       
@@ -433,7 +441,15 @@ object mod extends Shortcut {
     }
   }
   
-  type Statement[BindParameters /* <: js.Array[Any] | js.Object */] = typings.mocBetterSqlite3.mod.MocBetterSqlite3.Statement[js.Array[BindParameters] | BindParameters]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    BindParameters extends std.Array<any> ? moc-better-sqlite3.moc-better-sqlite3.MocBetterSqlite3.Statement<BindParameters> : moc-better-sqlite3.moc-better-sqlite3.MocBetterSqlite3.Statement<[BindParameters]>
+    }}}
+    */
+  @js.native
+  trait Statement[BindParameters /* <: js.Array[Any] | js.Object */] extends StObject
   
   type Transaction = typings.mocBetterSqlite3.mod.MocBetterSqlite3.Transaction[VariableArgFunction]
   

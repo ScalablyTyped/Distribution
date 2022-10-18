@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/core", "PathMustBeAbsoluteException")
 @js.native
 open class PathMustBeAbsoluteException protected ()
-  extends typings.angularDevkitCore.virtualFsMod.PathMustBeAbsoluteException {
+  extends typings.angularDevkitCore.srcVirtualFsMod.PathMustBeAbsoluteException {
   def this(path: String) = this()
 }

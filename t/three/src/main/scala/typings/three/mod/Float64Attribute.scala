@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Float64Attribute")
 @js.native
 open class Float64Attribute protected ()
-  extends typings.three.threeMod.Float64Attribute {
+  extends typings.three.srcThreeMod.Float64Attribute {
   def this(array: Any, itemSize: Double) = this()
 }

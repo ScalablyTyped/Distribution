@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "TonemapPostProcess")
 @js.native
 open class TonemapPostProcess protected ()
-  extends typings.babylonjs.legacyMod.TonemapPostProcess {
+  extends typings.babylonjs.legacyLegacyMod.TonemapPostProcess {
   /**
     * Creates a new TonemapPostProcess
     * @param name defines the name of the postprocess
@@ -21,83 +22,83 @@ open class TonemapPostProcess protected ()
     */
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine
+    engine: typings.babylonjs.enginesEngineMod.Engine
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine
+    engine: typings.babylonjs.enginesEngineMod.Engine
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
     engine: Unit,
     textureFormat: Double
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     textureFormat: Double
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
     engine: Unit,
     textureFormat: Double
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     textureFormat: Double
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
     engine: Unit,
     textureFormat: Double,
@@ -105,10 +106,10 @@ open class TonemapPostProcess protected ()
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
     engine: Unit,
     textureFormat: Unit,
@@ -116,32 +117,32 @@ open class TonemapPostProcess protected ()
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     textureFormat: Double,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     textureFormat: Unit,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
     engine: Unit,
     textureFormat: Double,
@@ -149,10 +150,10 @@ open class TonemapPostProcess protected ()
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
     engine: Unit,
     textureFormat: Unit,
@@ -160,23 +161,23 @@ open class TonemapPostProcess protected ()
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     textureFormat: Double,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
-    _operator: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator,
+    _operator: typings.babylonjs.postProcessesTonemapPostProcessMod.TonemappingOperator,
     /** Defines the required exposure adjustment */
   exposureAdjustment: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     textureFormat: Unit,
     reusable: Boolean
   ) = this()

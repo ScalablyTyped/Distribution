@@ -1,8 +1,8 @@
 package typings.rbx
 
 import typings.rbx.anon.PreferHelpersPropsOverrid
-import typings.rbx.deleteMod.DeleteProps
-import typings.rbx.exoticMod.ForwardRefAsExoticComponent
+import typings.rbx.baseExoticMod.ForwardRefAsExoticComponent
+import typings.rbx.elementsOtherDeleteMod.DeleteProps
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

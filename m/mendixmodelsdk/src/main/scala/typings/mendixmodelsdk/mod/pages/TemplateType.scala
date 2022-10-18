@@ -1,11 +1,11 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.13.0: introduced
   */
-@JSImport("mendixmodelsdk", "pages.TemplateType")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "pages.TemplateType")
 @js.native
-abstract class TemplateType protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.TemplateType {
+open class TemplateType protected ()
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.TemplateType {
   def this(
     model: AbstractModel,
     structureTypeName: String,

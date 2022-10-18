@@ -1,8 +1,8 @@
 package typings.egjsComponent
 
-import typings.egjsComponent.typesMod.ComponentEventConstructor
-import typings.egjsComponent.typesMod.DefaultProps
-import typings.egjsComponent.typesMod.EventMap
+import typings.egjsComponent.declarationTypesMod.ComponentEventConstructor
+import typings.egjsComponent.declarationTypesMod.DefaultProps
+import typings.egjsComponent.declarationTypesMod.EventMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object mod {
   @JSImport("@egjs/component", JSImport.Default)
   @js.native
   open class default[T /* <: EventMap */] ()
-    extends typings.egjsComponent.componentMod.default[T]
+    extends typings.egjsComponent.declarationComponentMod.default[T]
   object default {
     
     @JSImport("@egjs/component", JSImport.Default)

@@ -8,9 +8,9 @@ object formatISODurationMod {
   
   object default {
     
-    inline def apply(duration: typings.dateFns.mod.Duration | Duration): String = ^.asInstanceOf[js.Dynamic].apply(duration.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(duration: typings.dateFns.mod.Duration): String = ^.asInstanceOf[js.Dynamic].apply(duration.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("date-fns/esm/formatISODuration", JSImport.Default)
+    @JSImport("date-fns/formatISODuration", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
   }

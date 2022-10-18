@@ -17,8 +17,7 @@ object mod {
   @js.native
   trait TransportStream extends Writable {
     
-    @JSName("close")
-    var close_FTransportStream: js.UndefOr[js.Function0[Unit]] = js.native
+    var close: js.UndefOr[js.Function0[Unit]] = js.native
     
     var format: js.UndefOr[Format_] = js.native
     

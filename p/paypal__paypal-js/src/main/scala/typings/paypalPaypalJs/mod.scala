@@ -1,15 +1,15 @@
 package typings.paypalPaypalJs
 
 import typings.paypalPaypalJs.anon.Attributes
-import typings.paypalPaypalJs.buttonsMod.PayPalButtonsComponent
-import typings.paypalPaypalJs.buttonsMod.PayPalButtonsComponentOptions
-import typings.paypalPaypalJs.fundingEligibilityMod.FUNDING_SOURCE
-import typings.paypalPaypalJs.hostedFieldsMod.PayPalHostedFieldsComponent
-import typings.paypalPaypalJs.marksMod.PayPalMarksComponent
-import typings.paypalPaypalJs.marksMod.PayPalMarksComponentOptions
-import typings.paypalPaypalJs.messagesMod.PayPalMessagesComponent
-import typings.paypalPaypalJs.messagesMod.PayPalMessagesComponentOptions
-import typings.paypalPaypalJs.scriptOptionsMod.PayPalScriptOptions
+import typings.paypalPaypalJs.typesComponentsButtonsMod.PayPalButtonsComponent
+import typings.paypalPaypalJs.typesComponentsButtonsMod.PayPalButtonsComponentOptions
+import typings.paypalPaypalJs.typesComponentsFundingEligibilityMod.FUNDING_SOURCE
+import typings.paypalPaypalJs.typesComponentsHostedFieldsMod.PayPalHostedFieldsComponent
+import typings.paypalPaypalJs.typesComponentsMarksMod.PayPalMarksComponent
+import typings.paypalPaypalJs.typesComponentsMarksMod.PayPalMarksComponentOptions
+import typings.paypalPaypalJs.typesComponentsMessagesMod.PayPalMessagesComponent
+import typings.paypalPaypalJs.typesComponentsMessagesMod.PayPalMessagesComponentOptions
+import typings.paypalPaypalJs.typesScriptOptionsMod.PayPalScriptOptions
 import typings.std.PromiseConstructor
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -49,11 +49,11 @@ object mod {
         js.Function1[/* options */ js.UndefOr[PayPalMessagesComponentOptions], PayPalMessagesComponent]
       ] = js.undefined
     
-    var getFundingSources: js.UndefOr[typings.paypalPaypalJs.fundingEligibilityMod.getFundingSources] = js.undefined
+    var getFundingSources: js.UndefOr[typings.paypalPaypalJs.typesComponentsFundingEligibilityMod.getFundingSources] = js.undefined
     
-    var isFundingEligible: js.UndefOr[typings.paypalPaypalJs.fundingEligibilityMod.isFundingEligible] = js.undefined
+    var isFundingEligible: js.UndefOr[typings.paypalPaypalJs.typesComponentsFundingEligibilityMod.isFundingEligible] = js.undefined
     
-    var rememberFunding: js.UndefOr[typings.paypalPaypalJs.fundingEligibilityMod.rememberFunding] = js.undefined
+    var rememberFunding: js.UndefOr[typings.paypalPaypalJs.typesComponentsFundingEligibilityMod.rememberFunding] = js.undefined
     
     var version: String
   }

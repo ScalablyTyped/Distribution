@@ -1,6 +1,6 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
-import typings.awsSdkClientCognitoIdentity.tagResourceCommandMod.TagResourceCommandInput
+import typings.awsSdkClientCognitoIdentity.distTypesCommandsTagResourceCommandMod.TagResourceCommandInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "TagResourceCommand")
 @js.native
 open class TagResourceCommand protected ()
-  extends typings.awsSdkClientCognitoIdentity.commandsMod.TagResourceCommand {
+  extends typings.awsSdkClientCognitoIdentity.distTypesCommandsMod.TagResourceCommand {
   def this(input: TagResourceCommandInput) = this()
 }

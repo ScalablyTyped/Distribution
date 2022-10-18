@@ -1,7 +1,7 @@
 package typings.plottable.mod
 
 import typings.d3Time.mod.CountableTimeInterval
-import typings.plottable.tickGeneratorsMod.ITickGenerator
+import typings.plottable.buildSrcScalesTickGeneratorsMod.ITickGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ object Scales {
     * @constructor
     */
   open class Category ()
-    extends typings.plottable.scalesMod.Category
+    extends typings.plottable.buildSrcScalesMod.Category
   /* static members */
   object Category {
     
@@ -50,7 +50,7 @@ object Scales {
     *   If not supplied, reads the colors defined using CSS -- see plottable.css.
     */
   open class Color ()
-    extends typings.plottable.scalesMod.Color {
+    extends typings.plottable.buildSrcScalesMod.Color {
     def this(scaleType: String) = this()
   }
   /* static members */
@@ -91,7 +91,7 @@ object Scales {
     * @param {string} [scaleType="linear"] One of "linear"/"log"/"sqrt"/"pow".
     */
   open class InterpolatedColor ()
-    extends typings.plottable.scalesMod.InterpolatedColor {
+    extends typings.plottable.buildSrcScalesMod.InterpolatedColor {
     def this(scaleType: String) = this()
   }
   /* static members */
@@ -123,7 +123,7 @@ object Scales {
     * @constructor
     */
   open class Linear ()
-    extends typings.plottable.scalesMod.Linear
+    extends typings.plottable.buildSrcScalesMod.Linear
   
   @JSImport("plottable", "Scales.Log")
   @js.native
@@ -131,7 +131,7 @@ object Scales {
     * @constructor
     */
   open class Log ()
-    extends typings.plottable.scalesMod.Log {
+    extends typings.plottable.buildSrcScalesMod.Log {
     def this(base: Double) = this()
   }
   
@@ -166,7 +166,7 @@ object Scales {
     *
     */
   open class ModifiedLog ()
-    extends typings.plottable.scalesMod.ModifiedLog {
+    extends typings.plottable.buildSrcScalesMod.ModifiedLog {
     def this(base: Double) = this()
   }
   
@@ -189,7 +189,7 @@ object Scales {
     * @constructor
     */
   open class Time ()
-    extends typings.plottable.scalesMod.Time
+    extends typings.plottable.buildSrcScalesMod.Time
   /* static members */
   object Time {
     

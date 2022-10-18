@@ -1,10 +1,5 @@
 package typings.hyperformula.anon
 
-import typings.hyperformula.chooseAddressMappingPolicyMod.ChooseAddressMapping
-import typings.hyperformula.dateTimeHelperMod.DateTime
-import typings.hyperformula.dateTimeHelperMod.SimpleDate
-import typings.hyperformula.dateTimeHelperMod.SimpleDateTime
-import typings.hyperformula.dateTimeHelperMod.SimpleTime
 import typings.hyperformula.hyperformulaStrings.Comma
 import typings.hyperformula.hyperformulaStrings.Dot
 import typings.hyperformula.hyperformulaStrings.Semicolon
@@ -16,7 +11,12 @@ import typings.hyperformula.hyperformulaStrings.any
 import typings.hyperformula.hyperformulaStrings.lower
 import typings.hyperformula.hyperformulaStrings.standard
 import typings.hyperformula.hyperformulaStrings.upper
-import typings.hyperformula.maybeMod.Maybe
+import typings.hyperformula.typingsDateTimeHelperMod.DateTime
+import typings.hyperformula.typingsDateTimeHelperMod.SimpleDate
+import typings.hyperformula.typingsDateTimeHelperMod.SimpleDateTime
+import typings.hyperformula.typingsDateTimeHelperMod.SimpleTime
+import typings.hyperformula.typingsDependencyGraphAddressMappingChooseAddressMappingPolicyMod.ChooseAddressMapping
+import typings.hyperformula.typingsMaybeMod.Maybe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

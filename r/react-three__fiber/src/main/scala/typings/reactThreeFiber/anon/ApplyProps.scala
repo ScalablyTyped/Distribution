@@ -1,11 +1,11 @@
 package typings.reactThreeFiber.anon
 
 import typings.reactReconciler.mod.Reconciler
-import typings.reactThreeFiber.rendererMod.Instance
-import typings.reactThreeFiber.rendererMod.InstanceProps
-import typings.reactThreeFiber.storeMod.RootState
-import typings.reactThreeFiber.utilsMod.DiffSet
-import typings.zustand.zustandReactMod.UseBoundStore
+import typings.reactThreeFiber.distDeclarationsSrcCoreRendererMod.Instance
+import typings.reactThreeFiber.distDeclarationsSrcCoreRendererMod.InstanceProps
+import typings.reactThreeFiber.distDeclarationsSrcCoreStoreMod.RootState
+import typings.reactThreeFiber.distDeclarationsSrcCoreUtilsMod.DiffSet
+import typings.zustand.reactMod.UseBoundStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

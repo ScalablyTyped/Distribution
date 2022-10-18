@@ -10,12 +10,12 @@ object ShimmerElementsDefaultHeights extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights & Double
+    typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementsDefaultHeights & Double
   ] = js.native
   
-  /* 24 */ val circle: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights.circle & Double = js.native
+  /* 24 */ val circle: typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementsDefaultHeights.circle & Double = js.native
   
-  /* 16 */ val gap: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights.gap & Double = js.native
+  /* 16 */ val gap: typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementsDefaultHeights.gap & Double = js.native
   
-  /* 16 */ val line: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights.line & Double = js.native
+  /* 16 */ val line: typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementsDefaultHeights.line & Double = js.native
 }

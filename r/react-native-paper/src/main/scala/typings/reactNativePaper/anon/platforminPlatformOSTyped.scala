@@ -1,6 +1,6 @@
 package typings.reactNativePaper.anon
 
-import typings.reactNativePaper.typescriptTypesMod.Fonts
+import typings.reactNativePaper.libTypescriptTypesMod.Fonts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

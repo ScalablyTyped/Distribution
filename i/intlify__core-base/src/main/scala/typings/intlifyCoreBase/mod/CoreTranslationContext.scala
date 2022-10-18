@@ -1,6 +1,5 @@
 package typings.intlifyCoreBase.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.intlifyMessageCompiler.mod.CompileOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,9 +15,7 @@ trait CoreTranslationContext[Messages, Message] extends StObject {
   @JSName("messageResolver")
   var messageResolver_Original: MessageResolver
   
-  var messages: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Messages ]: Messages[K]}
-    */ typings.intlifyCoreBase.intlifyCoreBaseStrings.CoreTranslationContext & TopLevel[Messages]
+  var messages: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Messages ]: Messages[K]} */ js.Any
   
   var modifiers: LinkedModifiers[Message]
   
@@ -35,9 +32,7 @@ object CoreTranslationContext {
   inline def apply[Messages, Message](
     escapeParameter: Boolean,
     messageResolver: MessageResolver,
-    messages: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Messages ]: Messages[K]}
-    */ typings.intlifyCoreBase.intlifyCoreBaseStrings.CoreTranslationContext & TopLevel[Messages],
+    messages: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Messages ]: Messages[K]} */ js.Any,
     modifiers: LinkedModifiers[Message],
     warnHtmlMessage: Boolean
   ): CoreTranslationContext[Messages, Message] = {
@@ -56,9 +51,7 @@ object CoreTranslationContext {
     inline def setMessageResolver(value: MessageResolver): Self = StObject.set(x, "messageResolver", value.asInstanceOf[js.Any])
     
     inline def setMessages(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Messages ]: Messages[K]}
-      */ typings.intlifyCoreBase.intlifyCoreBaseStrings.CoreTranslationContext & TopLevel[Messages]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Messages ]: Messages[K]} */ js.Any
     ): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     inline def setModifiers(value: LinkedModifiers[Message]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])

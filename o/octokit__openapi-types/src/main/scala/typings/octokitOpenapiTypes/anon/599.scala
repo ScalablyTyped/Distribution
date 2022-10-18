@@ -6,18 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `599` extends StObject {
   
-  /** The handle for the GitHub user account. */
-  var username: String
+  /** Response */
+  var `201`: Content362
 }
 object `599` {
   
-  inline def apply(username: String): `599` = {
-    val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
+  inline def apply(`201`: Content362): `599` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`599`]
   }
   
   extension [Self <: `599`](x: Self) {
     
-    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def set201(value: Content362): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
   }
 }

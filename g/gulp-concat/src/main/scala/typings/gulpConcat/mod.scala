@@ -1,8 +1,9 @@
 package typings.gulpConcat
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,9 @@ object mod extends Shortcut {
   @js.native
   trait IConcat extends StObject {
     
-    def apply(filename: String): Any = js.native
-    def apply(filename: String, options: IOptions): Any = js.native
-    def apply(options: IVinylOptions): Any = js.native
+    def apply(filename: String): ReadWriteStream = js.native
+    def apply(filename: String, options: IOptions): ReadWriteStream = js.native
+    def apply(options: IVinylOptions): ReadWriteStream = js.native
   }
   
   trait IFsStats extends StObject {
@@ -133,7 +134,7 @@ object mod extends Shortcut {
     
     var base: js.UndefOr[String] = js.undefined
     
-    var contents: js.UndefOr[ReadableStream[Any] | Buffer] = js.undefined
+    var contents: js.UndefOr[ReadableStream | Buffer] = js.undefined
     
     var cwd: js.UndefOr[String] = js.undefined
     
@@ -154,7 +155,7 @@ object mod extends Shortcut {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setContents(value: ReadableStream[Any] | Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: ReadableStream | Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
       

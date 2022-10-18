@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "EllipseUpdater")
 @js.native
 open class EllipseUpdater ()
-  extends typings.antvGLite.servicesMod.EllipseUpdater
+  extends typings.antvGLite.distServicesMod.EllipseUpdater

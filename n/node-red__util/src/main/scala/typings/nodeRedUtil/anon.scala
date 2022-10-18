@@ -33,14 +33,11 @@ object anon {
     var id: String
     
     var node: typings.nodeRedRegistry.mod.Node[js.Object]
-    
-    /** index of port being sent on */
-    var port: Double
   }
   object Id {
     
-    inline def apply(id: String, node: typings.nodeRedRegistry.mod.Node[js.Object], port: Double): Id = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
+    inline def apply(id: String, node: typings.nodeRedRegistry.mod.Node[js.Object]): Id = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
@@ -49,20 +46,19 @@ object anon {
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setNode(value: typings.nodeRedRegistry.mod.Node[js.Object]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
-      
-      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
   trait IdNode extends StObject {
     
+    /** node id */
     var id: String
     
-    var node: typings.nodeRedRegistry.mod.Node[js.Object]
+    var node: Unit
   }
   object IdNode {
     
-    inline def apply(id: String, node: typings.nodeRedRegistry.mod.Node[js.Object]): IdNode = {
+    inline def apply(id: String, node: Unit): IdNode = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdNode]
     }
@@ -71,7 +67,7 @@ object anon {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setNode(value: typings.nodeRedRegistry.mod.Node[js.Object]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Unit): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,12 +135,15 @@ object anon {
     /** node id */
     var id: String
     
-    var node: Unit
+    var node: typings.nodeRedRegistry.mod.Node[js.Object]
+    
+    /** index of port being sent on */
+    var port: Double
   }
   object Node {
     
-    inline def apply(id: String, node: Unit): Node = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    inline def apply(id: String, node: typings.nodeRedRegistry.mod.Node[js.Object], port: Double): Node = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node]
     }
     
@@ -152,7 +151,9 @@ object anon {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setNode(value: Unit): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: typings.nodeRedRegistry.mod.Node[js.Object]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
 }

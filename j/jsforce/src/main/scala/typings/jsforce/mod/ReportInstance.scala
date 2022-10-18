@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("jsforce", "ReportInstance")
 @js.native
 open class ReportInstance protected ()
-  extends typings.jsforce.analyticsMod.ReportInstance {
-  def this(report: typings.jsforce.analyticsMod.Report, id: String) = this()
+  extends typings.jsforce.apiAnalyticsMod.ReportInstance {
+  def this(report: typings.jsforce.apiAnalyticsMod.Report, id: String) = this()
 }

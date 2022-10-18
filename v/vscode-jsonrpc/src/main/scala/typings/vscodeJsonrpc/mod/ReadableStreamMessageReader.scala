@@ -1,8 +1,8 @@
 package typings.vscodeJsonrpc.mod
 
-import typings.vscodeJsonrpc.messageReaderMod.MessageReaderOptions
-import typings.vscodeJsonrpc.ralMod.RAL.MessageBufferEncoding
-import typings.vscodeJsonrpc.ralMod.RAL.ReadableStream
+import typings.vscodeJsonrpc.libCommonMessageReaderMod.MessageReaderOptions
+import typings.vscodeJsonrpc.libCommonRalMod.RAL.MessageBufferEncoding
+import typings.vscodeJsonrpc.libCommonRalMod.RAL.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-jsonrpc", "ReadableStreamMessageReader")
 @js.native
 open class ReadableStreamMessageReader protected ()
-  extends typings.vscodeJsonrpc.messageReaderMod.ReadableStreamMessageReader {
+  extends typings.vscodeJsonrpc.libCommonMessageReaderMod.ReadableStreamMessageReader {
   def this(readable: ReadableStream) = this()
   def this(readable: ReadableStream, options: MessageReaderOptions) = this()
   def this(readable: ReadableStream, options: MessageBufferEncoding) = this()

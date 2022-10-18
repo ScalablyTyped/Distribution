@@ -1,7 +1,7 @@
 package typings.backlogJs
 
-import typings.backlogJs.errorMod.BacklogErrorMessage
-import typings.backlogJs.requestMod.Params
+import typings.backlogJs.distTypesErrorMod.BacklogErrorMessage
+import typings.backlogJs.distTypesRequestMod.Params
 import typings.std.FormData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

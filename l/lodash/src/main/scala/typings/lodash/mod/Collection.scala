@@ -195,7 +195,7 @@ trait Collection[T]
   /**
     * @see _.flatMap
     */
-  def flatMap(): Collection[Any | T] = js.native
+  def flatMap(): /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Many<infer U> ? lodash.lodash.Collection<U> : lodash.lodash.Collection<T> */ js.Any = js.native
   def flatMap(iteratee: js.Object): Collection[Boolean] = js.native
   /**
     * @see _.flatMap
@@ -245,12 +245,12 @@ trait Collection[T]
   /**
     * @see _.flatten
     */
-  def flatten(): Collection[Any | T] = js.native
+  def flatten(): /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Many<infer U> ? lodash.lodash.Collection<U> : lodash.lodash.Collection<T> */ js.Any = js.native
   
   /**
     * @see _.flattenDeep
     */
-  def flattenDeep(): Collection[Flat[Any] | T] = js.native
+  def flattenDeep(): /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.ListOfRecursiveArraysOrValues<infer U> ? lodash.lodash.Collection<lodash.lodash.Flat<U>> : lodash.lodash.Collection<T> */ js.Any = js.native
   
   /**
     * @see _.flattenDepth
@@ -273,7 +273,11 @@ trait Collection[T]
   /**
     * @see _.fromPairs
     */
-  def fromPairs(): Object[Dictionary[Any]] = js.native
+  def fromPairs(): Object[
+    Dictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T extends [lodash.lodash.PropertyName, infer U] ? U : any */ js.Any
+    ]
+  ] = js.native
   
   /**
     * @see _.get
@@ -771,16 +775,21 @@ trait Collection[T]
   /**
     * @see _.unzip
     */
-  def unzip(): Any | Collection[js.Array[Any]] = js.native
+  def unzip(): /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.List<infer U> ? lodash.lodash.Collection<std.Array<U>> : unknown */ js.Any = js.native
   
   /**
     * @see _.unzipWith
     */
-  def unzipWith(): Any | Collection[js.Array[Any]] = js.native
+  def unzipWith(): /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.List<infer U> ? lodash.lodash.Collection<std.Array<U>> : unknown */ js.Any = js.native
   /**
     * @see _.unzipWith
     */
-  def unzipWith[TResult](iteratee: js.Function1[/* repeated */ Any, TResult]): Collection[TResult] = js.native
+  def unzipWith[TResult](
+    iteratee: js.Function1[
+      /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.List<infer U> ? U : unknown */ /* repeated */ js.Any, 
+      TResult
+    ]
+  ): Collection[TResult] = js.native
   
   /**
     * @see _.without

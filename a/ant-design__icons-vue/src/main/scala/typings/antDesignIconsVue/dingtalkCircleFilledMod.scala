@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsDingtalkCircleFilledMod.DingtalkCircleFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dingtalkCircleFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/DingtalkCircleFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/DingtalkCircleFilled", JSImport.Default)
   @js.native
   val default: DingtalkCircleFilledIconType = js.native
-  
-  @js.native
-  trait DingtalkCircleFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_DingtalkCircleFilledIconType: String = js.native
-  }
   
   type _To = DingtalkCircleFilledIconType
   

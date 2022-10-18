@@ -2,6 +2,7 @@ package typings.promiseFtp
 
 import typings.ftp.mod.ListingElement
 import typings.ftp.mod.Options
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.promiseFtp.anon.Code
 import typings.promiseFtp.promiseFtpStrings.`Bad sequence of commands`
@@ -17,7 +18,6 @@ import typings.promiseFtp.promiseFtpStrings.`Service not availableComma closing 
 import typings.promiseFtp.promiseFtpStrings.`Syntax error Slash Command unrecognized`
 import typings.promiseFtp.promiseFtpStrings.`Syntax error in parameters or arguments`
 import typings.promiseFtpCommon.mod.STATUSES
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,15 +34,15 @@ object mod {
     
     var `421`: `Service not availableComma closing control connection`
     
-    var `425`: String
+    var `425`: /* Can't open data connection */ String
     
     var `426`: `Connection closedComma transfer aborted`
     
-    var `450`: String
+    var `450`: /* Requested file action not taken / File unavailable (e.g., file busy) */ String
     
     var `451`: `Requested action abortedColon local error in processing`
     
-    var `452`: String
+    var `452`: /* Requested action not taken / Insufficient storage space in system */ String
     
     var `500`: `Syntax error Slash Command unrecognized`
     
@@ -58,11 +58,11 @@ object mod {
     
     var `532`: `Need account for storing files`
     
-    var `550`: String
+    var `550`: /* Requested action not taken / File unavailable (e.g., file not found, no access) */ String
     
     var `551`: `Requested action abortedColon page type unknown`
     
-    var `552`: String
+    var `552`: /* Requested file action aborted / Exceeded storage allocation (for current directory or dataset) */ String
     
     var `553`: `Requested action not taken Slash File name not allowed`
   }
@@ -76,15 +76,15 @@ object mod {
       
       inline def set421(value: `Service not availableComma closing control connection`): Self = StObject.set(x, "421", value.asInstanceOf[js.Any])
       
-      inline def set425(value: String): Self = StObject.set(x, "425", value.asInstanceOf[js.Any])
+      inline def set425(value: /* Can't open data connection */ String): Self = StObject.set(x, "425", value.asInstanceOf[js.Any])
       
       inline def set426(value: `Connection closedComma transfer aborted`): Self = StObject.set(x, "426", value.asInstanceOf[js.Any])
       
-      inline def set450(value: String): Self = StObject.set(x, "450", value.asInstanceOf[js.Any])
+      inline def set450(value: /* Requested file action not taken / File unavailable (e.g., file busy) */ String): Self = StObject.set(x, "450", value.asInstanceOf[js.Any])
       
       inline def set451(value: `Requested action abortedColon local error in processing`): Self = StObject.set(x, "451", value.asInstanceOf[js.Any])
       
-      inline def set452(value: String): Self = StObject.set(x, "452", value.asInstanceOf[js.Any])
+      inline def set452(value: /* Requested action not taken / Insufficient storage space in system */ String): Self = StObject.set(x, "452", value.asInstanceOf[js.Any])
       
       inline def set500(value: `Syntax error Slash Command unrecognized`): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
       
@@ -100,11 +100,15 @@ object mod {
       
       inline def set532(value: `Need account for storing files`): Self = StObject.set(x, "532", value.asInstanceOf[js.Any])
       
-      inline def set550(value: String): Self = StObject.set(x, "550", value.asInstanceOf[js.Any])
+      inline def set550(
+        value: /* Requested action not taken / File unavailable (e.g., file not found, no access) */ String
+      ): Self = StObject.set(x, "550", value.asInstanceOf[js.Any])
       
       inline def set551(value: `Requested action abortedColon page type unknown`): Self = StObject.set(x, "551", value.asInstanceOf[js.Any])
       
-      inline def set552(value: String): Self = StObject.set(x, "552", value.asInstanceOf[js.Any])
+      inline def set552(
+        value: /* Requested file action aborted / Exceeded storage allocation (for current directory or dataset) */ String
+      ): Self = StObject.set(x, "552", value.asInstanceOf[js.Any])
       
       inline def set553(value: `Requested action not taken Slash File name not allowed`): Self = StObject.set(x, "553", value.asInstanceOf[js.Any])
     }
@@ -170,16 +174,16 @@ object mod {
     
     def append(input: String, destPath: String): typings.bluebird.mod.^[Unit] = js.native
     def append(input: String, destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
-    def append(input: Buffer, destPath: String): typings.bluebird.mod.^[Unit] = js.native
-    def append(input: Buffer, destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
     /**
       * Create a new file on the server or append to one that already exists.
       * @param input - can be a ReadableStream, a Buffer, or a pathto a local file.
       * @param destPath - the path of the file to create or append to.
       * @param useCompression - defaults to false.
       */
-    def append(input: ReadableStream[Any], destPath: String): typings.bluebird.mod.^[Unit] = js.native
-    def append(input: ReadableStream[Any], destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
+    def append(input: ReadableStream, destPath: String): typings.bluebird.mod.^[Unit] = js.native
+    def append(input: ReadableStream, destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
+    def append(input: Buffer, destPath: String): typings.bluebird.mod.^[Unit] = js.native
+    def append(input: Buffer, destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
     
     /**
       * Set the transfer data type to ASCII.
@@ -236,8 +240,8 @@ object mod {
       * @param useCompression - defaults to false.
       * @returns a stream which empties to the contents of the specified file.
       */
-    def get(path: String): typings.bluebird.mod.^[ReadableStream[Any]] = js.native
-    def get(path: String, useCompression: Boolean): typings.bluebird.mod.^[ReadableStream[Any]] = js.native
+    def get(path: String): typings.bluebird.mod.^[ReadableStream] = js.native
+    def get(path: String, useCompression: Boolean): typings.bluebird.mod.^[ReadableStream] = js.native
     
     def getConnectionStatus(): STATUSES = js.native
     
@@ -296,16 +300,16 @@ object mod {
     
     def put(input: String, destPath: String): typings.bluebird.mod.^[Unit] = js.native
     def put(input: String, destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
-    def put(input: Buffer, destPath: String): typings.bluebird.mod.^[Unit] = js.native
-    def put(input: Buffer, destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
     /**
       * Send data to the server to be stored as a file.
       * @param input - can be a ReadableStream, a Buffer, or a path to a local file.
       * @param destPath - the path of the file to write to.
       * @param useCompression - defaults to false.
       */
-    def put(input: ReadableStream[Any], destPath: String): typings.bluebird.mod.^[Unit] = js.native
-    def put(input: ReadableStream[Any], destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
+    def put(input: ReadableStream, destPath: String): typings.bluebird.mod.^[Unit] = js.native
+    def put(input: ReadableStream, destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
+    def put(input: Buffer, destPath: String): typings.bluebird.mod.^[Unit] = js.native
+    def put(input: Buffer, destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
     
     /**
       * Optional "standard" commands (RFC 959)

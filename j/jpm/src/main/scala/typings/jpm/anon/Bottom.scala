@@ -1,6 +1,6 @@
 package typings.jpm.anon
 
-import typings.jpm.panelMod.PanelPosition
+import typings.jpm.sdkPanelMod.PanelPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -10,9 +10,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a file. Provides information about the file and its content, and ways to manipulate them. */
-@JSGlobal("Windows.Storage.StorageFile")
+/* note: abstract class */ @JSGlobal("Windows.Storage.StorageFile")
 @js.native
-abstract class StorageFile ()
+open class StorageFile ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.StorageFile
 object StorageFile {

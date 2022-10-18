@@ -1,19 +1,19 @@
 package typings.mendixmodelsdk.mod.codeactions
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.codeactionsMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenCodeactionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "codeactions.CodeActionParameter")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "codeactions.CodeActionParameter")
 @js.native
-abstract class CodeActionParameter protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.codeactions.CodeActionParameter {
+open class CodeActionParameter protected ()
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.codeactions.CodeActionParameter {
   def this(
     model: AbstractModel,
     structureTypeName: String,

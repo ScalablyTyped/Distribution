@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new queue
   */
 open class SimplificationQueue ()
-  extends typings.babylonjs.babylonjsIndexMod.SimplificationQueue
+  extends typings.babylonjs.meshesIndexMod.SimplificationQueue

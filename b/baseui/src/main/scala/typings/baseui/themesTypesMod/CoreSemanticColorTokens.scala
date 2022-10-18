@@ -20,13 +20,13 @@ trait CoreSemanticColorTokens extends StObject {
   
   var borderInverseSelected: String
   
-  var borderInverseTransparent: js.UndefOr[String | Null] = js.undefined
+  var borderInverseTransparent: js.UndefOr[String] = js.undefined
   
   var borderOpaque: String
   
   var borderSelected: String
   
-  var borderTransparent: js.UndefOr[String | Null] = js.undefined
+  var borderTransparent: js.UndefOr[String] = js.undefined
   
   var contentInversePrimary: String
   
@@ -81,8 +81,6 @@ object CoreSemanticColorTokens {
     
     inline def setBorderInverseTransparent(value: String): Self = StObject.set(x, "borderInverseTransparent", value.asInstanceOf[js.Any])
     
-    inline def setBorderInverseTransparentNull: Self = StObject.set(x, "borderInverseTransparent", null)
-    
     inline def setBorderInverseTransparentUndefined: Self = StObject.set(x, "borderInverseTransparent", js.undefined)
     
     inline def setBorderOpaque(value: String): Self = StObject.set(x, "borderOpaque", value.asInstanceOf[js.Any])
@@ -90,8 +88,6 @@ object CoreSemanticColorTokens {
     inline def setBorderSelected(value: String): Self = StObject.set(x, "borderSelected", value.asInstanceOf[js.Any])
     
     inline def setBorderTransparent(value: String): Self = StObject.set(x, "borderTransparent", value.asInstanceOf[js.Any])
-    
-    inline def setBorderTransparentNull: Self = StObject.set(x, "borderTransparent", null)
     
     inline def setBorderTransparentUndefined: Self = StObject.set(x, "borderTransparent", js.undefined)
     

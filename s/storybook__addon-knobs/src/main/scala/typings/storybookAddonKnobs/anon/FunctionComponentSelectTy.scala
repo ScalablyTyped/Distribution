@@ -2,8 +2,8 @@ package typings.storybookAddonKnobs.anon
 
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
-import typings.storybookAddonKnobs.selectMod.SelectTypeKnobValue
-import typings.storybookAddonKnobs.selectMod.SelectTypeProps
+import typings.storybookAddonKnobs.distComponentsTypesSelectMod.SelectTypeKnobValue
+import typings.storybookAddonKnobs.distComponentsTypesSelectMod.SelectTypeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

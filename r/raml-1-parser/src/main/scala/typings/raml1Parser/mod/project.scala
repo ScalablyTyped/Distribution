@@ -1,8 +1,8 @@
 package typings.raml1Parser.mod
 
-import typings.raml1Parser.lowLevelASTMod.IProject
-import typings.raml1Parser.resolversApiMod.FSResolver
-import typings.raml1Parser.resolversApiMod.HTTPResolver
+import typings.raml1Parser.distParserJsyamlResolversApiMod.FSResolver
+import typings.raml1Parser.distParserJsyamlResolversApiMod.HTTPResolver
+import typings.raml1Parser.distParserLowLevelASTMod.IProject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

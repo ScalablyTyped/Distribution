@@ -1,12 +1,12 @@
 package typings.firebaseAppCompat
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseAppCompat.appCompatMod.FirebaseApp
-import typings.firebaseAppCompat.appCompatMod.FirebaseAppContructor
+import typings.firebaseAppCompat.distAppCompatMod.FirebaseApp
+import typings.firebaseAppCompat.distAppCompatMod.FirebaseAppContructor
 import typings.firebaseAppCompat.mod.FirebaseService
 import typings.firebaseAppCompat.mod.FirebaseServiceNamespace
+import typings.firebaseComponent.distSrcTypesMod.Name
 import typings.firebaseComponent.mod.Component
-import typings.firebaseComponent.srcTypesMod.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,8 +84,8 @@ object anon {
       *
       * @param name The optional name of the app to return ('[DEFAULT]' if omitted)
       */
-    def apply(): typings.firebaseAppCompat.publicTypesMod.FirebaseApp = js.native
-    def apply(name: String): typings.firebaseAppCompat.publicTypesMod.FirebaseApp = js.native
+    def apply(): typings.firebaseAppCompat.distEsmSrcPublicTypesMod.FirebaseApp = js.native
+    def apply(name: String): typings.firebaseAppCompat.distEsmSrcPublicTypesMod.FirebaseApp = js.native
     
     /**
       * For testing FirebaseApp instances:
@@ -93,7 +93,7 @@ object anon {
       *
       * DO NOT call this constuctor directly (use firebase.app() instead).
       */
-    var App: typings.firebaseAppCompat.publicTypesMod.FirebaseAppContructor = js.native
+    var App: typings.firebaseAppCompat.distEsmSrcPublicTypesMod.FirebaseAppContructor = js.native
   }
   
   @js.native
@@ -106,8 +106,8 @@ object anon {
       *
       * @param name The optional name of the app to return ('[DEFAULT]' if omitted)
       */
-    def apply(): typings.firebaseAppCompat.srcPublicTypesMod.FirebaseApp = js.native
-    def apply(name: String): typings.firebaseAppCompat.srcPublicTypesMod.FirebaseApp = js.native
+    def apply(): typings.firebaseAppCompat.distSrcPublicTypesMod.FirebaseApp = js.native
+    def apply(name: String): typings.firebaseAppCompat.distSrcPublicTypesMod.FirebaseApp = js.native
     
     /**
       * For testing FirebaseApp instances:
@@ -115,7 +115,7 @@ object anon {
       *
       * DO NOT call this constuctor directly (use firebase.app() instead).
       */
-    var App: typings.firebaseAppCompat.srcPublicTypesMod.FirebaseAppContructor = js.native
+    var App: typings.firebaseAppCompat.distSrcPublicTypesMod.FirebaseAppContructor = js.native
   }
   
   trait Dictindex
@@ -184,7 +184,7 @@ object anon {
       * @param allowMultipleInstances Whether the registered service supports
       *   multiple instances per app. If not specified, the default is false.
       */
-    def registerComponent[T /* <: Name */](component: Component[T]): typings.firebaseAppCompat.appCompatMod.FirebaseServiceNamespace[typings.firebaseAppCompat.appCompatMod.FirebaseService] | Null
+    def registerComponent[T /* <: Name */](component: Component[T]): typings.firebaseAppCompat.distAppCompatMod.FirebaseServiceNamespace[typings.firebaseAppCompat.distAppCompatMod.FirebaseService] | Null
     
     /**
       * Internal API to remove an app from the list of registered apps.
@@ -196,7 +196,7 @@ object anon {
   object RegisterComponent {
     
     inline def apply(
-      registerComponent: Component[Any] => typings.firebaseAppCompat.appCompatMod.FirebaseServiceNamespace[typings.firebaseAppCompat.appCompatMod.FirebaseService] | Null,
+      registerComponent: Component[Any] => typings.firebaseAppCompat.distAppCompatMod.FirebaseServiceNamespace[typings.firebaseAppCompat.distAppCompatMod.FirebaseService] | Null,
       removeApp: String => Unit,
       useAsService: (FirebaseApp, String) => String | Null
     ): RegisterComponent = {
@@ -207,7 +207,7 @@ object anon {
     extension [Self <: RegisterComponent](x: Self) {
       
       inline def setRegisterComponent(
-        value: Component[Any] => typings.firebaseAppCompat.appCompatMod.FirebaseServiceNamespace[typings.firebaseAppCompat.appCompatMod.FirebaseService] | Null
+        value: Component[Any] => typings.firebaseAppCompat.distAppCompatMod.FirebaseServiceNamespace[typings.firebaseAppCompat.distAppCompatMod.FirebaseService] | Null
       ): Self = StObject.set(x, "registerComponent", js.Any.fromFunction1(value))
       
       inline def setRemoveApp(value: String => Unit): Self = StObject.set(x, "removeApp", js.Any.fromFunction1(value))
@@ -234,23 +234,21 @@ object anon {
       * @param allowMultipleInstances Whether the registered service supports
       *   multiple instances per app. If not specified, the default is false.
       */
-    def registerComponent[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Name */ Any */](
-      component: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<T> */ Any
-    ): typings.firebaseAppCompat.typesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.typesMod.FirebaseService] | Null
+    def registerComponent[T /* <: Name */](component: Component[T]): typings.firebaseAppCompat.distEsmSrcTypesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.distEsmSrcTypesMod.FirebaseService] | Null
     
     /**
       * Internal API to remove an app from the list of registered apps.
       */
     def removeApp(name: String): Unit
     
-    def useAsService(app: typings.firebaseAppCompat.publicTypesMod.FirebaseApp, serviceName: String): String | Null
+    def useAsService(app: typings.firebaseAppCompat.distEsmSrcPublicTypesMod.FirebaseApp, serviceName: String): String | Null
   }
   object RemoveApp {
     
     inline def apply(
-      registerComponent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<T> */ Any => typings.firebaseAppCompat.typesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.typesMod.FirebaseService] | Null,
+      registerComponent: Component[Any] => typings.firebaseAppCompat.distEsmSrcTypesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.distEsmSrcTypesMod.FirebaseService] | Null,
       removeApp: String => Unit,
-      useAsService: (typings.firebaseAppCompat.publicTypesMod.FirebaseApp, String) => String | Null
+      useAsService: (typings.firebaseAppCompat.distEsmSrcPublicTypesMod.FirebaseApp, String) => String | Null
     ): RemoveApp = {
       val __obj = js.Dynamic.literal(registerComponent = js.Any.fromFunction1(registerComponent), removeApp = js.Any.fromFunction1(removeApp), useAsService = js.Any.fromFunction2(useAsService))
       __obj.asInstanceOf[RemoveApp]
@@ -259,12 +257,12 @@ object anon {
     extension [Self <: RemoveApp](x: Self) {
       
       inline def setRegisterComponent(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<T> */ Any => typings.firebaseAppCompat.typesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.typesMod.FirebaseService] | Null
+        value: Component[Any] => typings.firebaseAppCompat.distEsmSrcTypesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.distEsmSrcTypesMod.FirebaseService] | Null
       ): Self = StObject.set(x, "registerComponent", js.Any.fromFunction1(value))
       
       inline def setRemoveApp(value: String => Unit): Self = StObject.set(x, "removeApp", js.Any.fromFunction1(value))
       
-      inline def setUseAsService(value: (typings.firebaseAppCompat.publicTypesMod.FirebaseApp, String) => String | Null): Self = StObject.set(x, "useAsService", js.Any.fromFunction2(value))
+      inline def setUseAsService(value: (typings.firebaseAppCompat.distEsmSrcPublicTypesMod.FirebaseApp, String) => String | Null): Self = StObject.set(x, "useAsService", js.Any.fromFunction2(value))
     }
   }
   
@@ -286,23 +284,21 @@ object anon {
       * @param allowMultipleInstances Whether the registered service supports
       *   multiple instances per app. If not specified, the default is false.
       */
-    def registerComponent[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Name */ Any */](
-      component: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<T> */ Any
-    ): typings.firebaseAppCompat.srcTypesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.srcTypesMod.FirebaseService] | Null
+    def registerComponent[T /* <: Name */](component: Component[T]): typings.firebaseAppCompat.distSrcTypesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.distSrcTypesMod.FirebaseService] | Null
     
     /**
       * Internal API to remove an app from the list of registered apps.
       */
     def removeApp(name: String): Unit
     
-    def useAsService(app: typings.firebaseAppCompat.srcPublicTypesMod.FirebaseApp, serviceName: String): String | Null
+    def useAsService(app: typings.firebaseAppCompat.distSrcPublicTypesMod.FirebaseApp, serviceName: String): String | Null
   }
   object UseAsService {
     
     inline def apply(
-      registerComponent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<T> */ Any => typings.firebaseAppCompat.srcTypesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.srcTypesMod.FirebaseService] | Null,
+      registerComponent: Component[Any] => typings.firebaseAppCompat.distSrcTypesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.distSrcTypesMod.FirebaseService] | Null,
       removeApp: String => Unit,
-      useAsService: (typings.firebaseAppCompat.srcPublicTypesMod.FirebaseApp, String) => String | Null
+      useAsService: (typings.firebaseAppCompat.distSrcPublicTypesMod.FirebaseApp, String) => String | Null
     ): UseAsService = {
       val __obj = js.Dynamic.literal(registerComponent = js.Any.fromFunction1(registerComponent), removeApp = js.Any.fromFunction1(removeApp), useAsService = js.Any.fromFunction2(useAsService))
       __obj.asInstanceOf[UseAsService]
@@ -311,12 +307,12 @@ object anon {
     extension [Self <: UseAsService](x: Self) {
       
       inline def setRegisterComponent(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<T> */ Any => typings.firebaseAppCompat.srcTypesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.srcTypesMod.FirebaseService] | Null
+        value: Component[Any] => typings.firebaseAppCompat.distSrcTypesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.distSrcTypesMod.FirebaseService] | Null
       ): Self = StObject.set(x, "registerComponent", js.Any.fromFunction1(value))
       
       inline def setRemoveApp(value: String => Unit): Self = StObject.set(x, "removeApp", js.Any.fromFunction1(value))
       
-      inline def setUseAsService(value: (typings.firebaseAppCompat.srcPublicTypesMod.FirebaseApp, String) => String | Null): Self = StObject.set(x, "useAsService", js.Any.fromFunction2(value))
+      inline def setUseAsService(value: (typings.firebaseAppCompat.distSrcPublicTypesMod.FirebaseApp, String) => String | Null): Self = StObject.set(x, "useAsService", js.Any.fromFunction2(value))
     }
   }
 }

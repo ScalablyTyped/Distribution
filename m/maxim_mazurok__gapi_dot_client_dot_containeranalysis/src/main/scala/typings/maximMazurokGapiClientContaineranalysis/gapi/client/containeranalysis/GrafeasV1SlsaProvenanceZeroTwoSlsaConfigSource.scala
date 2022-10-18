@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource extends StObject {
   
   var digest: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   var entryPoint: js.UndefOr[String] = js.undefined
@@ -27,9 +24,7 @@ object GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource {
   extension [Self <: GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource](x: Self) {
     
     inline def setDigest(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
     inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)

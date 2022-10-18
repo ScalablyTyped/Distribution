@@ -3,8 +3,8 @@ package typings.wordpressComponents
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ComponentType
 import typings.wordpressComponents.anon.`1`
+import typings.wordpressComponents.uiContextWordpressComponentMod.WordPressComponentProps
 import typings.wordpressComponents.visuallyHiddenMod.VisuallyHidden.Props
-import typings.wordpressComponents.wordpressComponentMod.WordPressComponentProps
 import typings.wordpressComponents.wordpressComponentsBooleans.`true`
 import typings.wordpressComponents.wordpressComponentsStrings.div
 import org.scalablytyped.runtime.StObject

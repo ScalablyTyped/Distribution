@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("testcafe-hammerhead", "Session")
+/* note: abstract class */ @JSImport("testcafe-hammerhead", "Session")
 @js.native
-abstract class Session protected () extends StObject {
+open class Session protected () extends StObject {
   /** Creates a session instance **/
   /* protected */ def this(uploadRoots: js.Array[String], options: PartialSessionOptions) = this()
   

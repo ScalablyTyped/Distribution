@@ -14,6 +14,7 @@ import typings.angularRouter.angularRouterInts.`3`
 import typings.angularRouter.angularRouterInts.`4`
 import typings.angularRouter.angularRouterInts.`5`
 import typings.angularRouter.mod.^
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -121,29 +122,29 @@ inline def ɵwithPreloading(preloadingStrategy: Type[PreloadingStrategy]): Prelo
 type CanActivateChildFn = js.Function2[
 /* childRoute */ ActivatedRouteSnapshot, 
 /* state */ RouterStateSnapshot, 
-(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean | UrlTree> */ Any) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
+(Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
 
 type CanActivateFn = js.Function2[
 /* route */ ActivatedRouteSnapshot, 
 /* state */ RouterStateSnapshot, 
-(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean | UrlTree> */ Any) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
+(Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
 
 type CanDeactivateFn[T] = js.Function4[
 /* component */ T, 
 /* currentRoute */ ActivatedRouteSnapshot, 
 /* currentState */ RouterStateSnapshot, 
 /* nextState */ js.UndefOr[RouterStateSnapshot], 
-(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean | UrlTree> */ Any) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
+(Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
 
 type CanLoadFn = js.Function2[
 /* route */ Route, 
 /* segments */ js.Array[UrlSegment], 
-(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean | UrlTree> */ Any) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
+(Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
 
 type CanMatchFn = js.Function2[
 /* route */ Route, 
 /* segments */ js.Array[UrlSegment], 
-(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean | UrlTree> */ Any) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
+(Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
 
 type Data = StringDictionary[Any]
 
@@ -173,7 +174,7 @@ type InitialNavigationFeature = EnabledBlockingInitialNavigationFeature | Disabl
 type LoadChildren = LoadChildrenCallback
 
 type LoadChildrenCallback = js.Function0[
-Type[Any] | NgModuleFactory[Any] | Routes | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Type<any> | Routes> */ Any) | (js.Promise[NgModuleFactory[Any] | Type[Any] | Routes])]
+Type[Any] | NgModuleFactory[Any] | Routes | (Observable_[Type[Any] | Routes]) | (js.Promise[NgModuleFactory[Any] | Type[Any] | Routes])]
 
 type Params = StringDictionary[Any]
 
@@ -184,7 +185,7 @@ type ResolveData = StringDictionary[Any | ResolveFn[Any]]
 type ResolveFn[T] = js.Function2[
 /* route */ ActivatedRouteSnapshot, 
 /* state */ RouterStateSnapshot, 
-(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any) | js.Promise[T] | T]
+Observable_[T] | js.Promise[T] | T]
 
 type RouterConfigurationFeature = RouterFeature[`5`]
 

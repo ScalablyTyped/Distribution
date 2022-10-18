@@ -1,7 +1,7 @@
 package typings.awsSdk.global.AWS
 
-import typings.awsSdk.budgetsMod.Budget
-import typings.awsSdk.budgetsMod.ClientConfiguration
+import typings.awsSdk.clientsBudgetsMod.Budget
+import typings.awsSdk.clientsBudgetsMod.ClientConfiguration
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

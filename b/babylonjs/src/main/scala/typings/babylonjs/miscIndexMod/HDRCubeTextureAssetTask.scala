@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "HDRCubeTextureAssetTask")
 @js.native
 open class HDRCubeTextureAssetTask protected ()
-  extends typings.babylonjs.assetsManagerMod.HDRCubeTextureAssetTask {
+  extends typings.babylonjs.miscAssetsManagerMod.HDRCubeTextureAssetTask {
   /**
     * Creates a new HDRCubeTextureAssetTask object
     * @param name defines the name of the task

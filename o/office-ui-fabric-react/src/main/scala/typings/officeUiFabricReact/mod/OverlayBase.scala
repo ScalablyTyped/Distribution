@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.overlayTypesMod.IOverlayProps
+import typings.officeUiFabricReact.libComponentsOverlayOverlayDottypesMod.IOverlayProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

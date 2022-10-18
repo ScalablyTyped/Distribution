@@ -1,69 +1,69 @@
 package typings.antd
 
-import typings.antd.baseMod.BaseType
-import typings.antd.buttonButtonMod.ButtonHTMLType
-import typings.antd.buttonButtonMod.ButtonShape
-import typings.antd.buttonButtonMod.ButtonType
-import typings.antd.buttonButtonMod.LegacyButtonType
-import typings.antd.cardCardMod.CardSize
-import typings.antd.carouselMod.CarouselEffect
-import typings.antd.carouselMod.DotPosition
-import typings.antd.collapseCollapseMod.ExpandIconPositionLegacy
-import typings.antd.collapseCollapseMod._ExpandIconPosition
-import typings.antd.collapsePanelMod.CollapsibleType
-import typings.antd.configProviderContextMod._DirectionType
-import typings.antd.configProviderSizeContextMod._SizeType
-import typings.antd.directoryTreeMod.ExpandAction
-import typings.antd.drawerMod.sizeType
-import typings.antd.dropdownButtonMod.DropdownButtonType
-import typings.antd.dropdownDropdownMod.Placement
-import typings.antd.formFormMod.FormLayout
-import typings.antd.formInterfaceMod.FormLabelAlign
-import typings.antd.formItemMod.ValidateStatus
-import typings.antd.generateCalendarMod.CalendarMode
-import typings.antd.generatePickerMod.DataPickerPlacement
-import typings.antd.gridColMod._FlexType
-import typings.antd.listMod.ColumnType
-import typings.antd.listMod.ListItemLayout
-import typings.antd.listMod.ListSize
-import typings.antd.localeReceiverMod.LocaleComponentName
-import typings.antd.mentionsMod.MentionPlacement
-import typings.antd.menuContextMod.MenuTheme
-import typings.antd.menuMod.MenuMode
-import typings.antd.messageMod.NoticeType
-import typings.antd.motionMod.SelectCommonPlacement
-import typings.antd.notificationMod.IconType
-import typings.antd.notificationMod.NotificationPlacement
-import typings.antd.paginationPaginationMod.PaginationPosition
-import typings.antd.progressProgressMod.ProgressSize
-import typings.antd.progressProgressMod.ProgressType
-import typings.antd.radioInterfaceMod.RadioGroupButtonStyle
-import typings.antd.radioInterfaceMod.RadioGroupOptionType
-import typings.antd.responsiveObserveMod.Breakpoint
-import typings.antd.resultMod.ExceptionStatusType
-import typings.antd.resultMod.ResultStatusType
-import typings.antd.ribbonMod.RibbonPlacement
-import typings.antd.siderMod.CollapseType
-import typings.antd.siderMod.SiderTheme
-import typings.antd.sizeContextMod._AvatarSize
-import typings.antd.spinMod.SpinSize
-import typings.antd.statisticUtilsMod._Formatter
-import typings.antd.statusUtilsMod.InputStatus
-import typings.antd.switchMod.SwitchSize
-import typings.antd.tableInterfaceMod.RowSelectMethod
-import typings.antd.tableInterfaceMod.RowSelectionType
-import typings.antd.tableInterfaceMod.TableAction
-import typings.antd.tableInterfaceMod.TablePaginationPosition
-import typings.antd.tableInterfaceMod._ExpandType
-import typings.antd.tableInterfaceMod._SortOrder
-import typings.antd.tabsMod.TabsPosition
-import typings.antd.tabsMod.TabsType
-import typings.antd.tooltipMod.TooltipPlacement
-import typings.antd.transferMod.TransferDirection
-import typings.antd.uploadInterfaceMod.UploadFileStatus
-import typings.antd.uploadInterfaceMod.UploadListType
-import typings.antd.uploadInterfaceMod.UploadType
-import typings.antd.useSelectionMod.INTERNAL_SELECTION_ITEM
+import typings.antd.libAvatarSizeContextMod._AvatarSize
+import typings.antd.libBadgeRibbonMod.RibbonPlacement
+import typings.antd.libButtonButtonMod.ButtonHTMLType
+import typings.antd.libButtonButtonMod.ButtonShape
+import typings.antd.libButtonButtonMod.ButtonType
+import typings.antd.libButtonButtonMod.LegacyButtonType
+import typings.antd.libCalendarGenerateCalendarMod.CalendarMode
+import typings.antd.libCardCardMod.CardSize
+import typings.antd.libCarouselMod.CarouselEffect
+import typings.antd.libCarouselMod.DotPosition
+import typings.antd.libCollapseCollapseMod.ExpandIconPositionLegacy
+import typings.antd.libCollapseCollapseMod._ExpandIconPosition
+import typings.antd.libCollapseCollapsePanelMod.CollapsibleType
+import typings.antd.libConfigProviderContextMod._DirectionType
+import typings.antd.libConfigProviderSizeContextMod._SizeType
+import typings.antd.libDatePickerGeneratePickerMod.DataPickerPlacement
+import typings.antd.libDrawerMod.sizeType
+import typings.antd.libDropdownDropdownButtonMod.DropdownButtonType
+import typings.antd.libDropdownDropdownMod.Placement
+import typings.antd.libFormFormItemMod.ValidateStatus
+import typings.antd.libFormFormMod.FormLayout
+import typings.antd.libFormInterfaceMod.FormLabelAlign
+import typings.antd.libGridColMod._FlexType
+import typings.antd.libLayoutSiderMod.CollapseType
+import typings.antd.libLayoutSiderMod.SiderTheme
+import typings.antd.libListMod.ColumnType
+import typings.antd.libListMod.ListItemLayout
+import typings.antd.libListMod.ListSize
+import typings.antd.libLocaleProviderLocaleReceiverMod.LocaleComponentName
+import typings.antd.libMentionsMod.MentionPlacement
+import typings.antd.libMenuMenuContextMod.MenuTheme
+import typings.antd.libMenuMod.MenuMode
+import typings.antd.libMessageMod.NoticeType
+import typings.antd.libNotificationMod.IconType
+import typings.antd.libNotificationMod.NotificationPlacement
+import typings.antd.libPaginationPaginationMod.PaginationPosition
+import typings.antd.libProgressProgressMod.ProgressSize
+import typings.antd.libProgressProgressMod.ProgressType
+import typings.antd.libRadioInterfaceMod.RadioGroupButtonStyle
+import typings.antd.libRadioInterfaceMod.RadioGroupOptionType
+import typings.antd.libResultMod.ExceptionStatusType
+import typings.antd.libResultMod.ResultStatusType
+import typings.antd.libSpinMod.SpinSize
+import typings.antd.libStatisticUtilsMod._Formatter
+import typings.antd.libSwitchMod.SwitchSize
+import typings.antd.libTableHooksUseSelectionMod.INTERNAL_SELECTION_ITEM
+import typings.antd.libTableInterfaceMod.RowSelectMethod
+import typings.antd.libTableInterfaceMod.RowSelectionType
+import typings.antd.libTableInterfaceMod.TableAction
+import typings.antd.libTableInterfaceMod.TablePaginationPosition
+import typings.antd.libTableInterfaceMod._ExpandType
+import typings.antd.libTableInterfaceMod._SortOrder
+import typings.antd.libTabsMod.TabsPosition
+import typings.antd.libTabsMod.TabsType
+import typings.antd.libTooltipMod.TooltipPlacement
+import typings.antd.libTransferMod.TransferDirection
+import typings.antd.libTreeDirectoryTreeMod.ExpandAction
+import typings.antd.libTypographyBaseMod.BaseType
+import typings.antd.libUploadInterfaceMod.UploadFileStatus
+import typings.antd.libUploadInterfaceMod.UploadListType
+import typings.antd.libUploadInterfaceMod.UploadType
+import typings.antd.libUtilMotionMod.SelectCommonPlacement
+import typings.antd.libUtilResponsiveObserveMod.Breakpoint
+import typings.antd.libUtilStatusUtilsMod.InputStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,8 +99,8 @@ object antdStrings {
   inline def `404`: `404` = "404".asInstanceOf[`404`]
   
   @js.native
-  sealed trait `4Dot23Dot3` extends StObject
-  inline def `4Dot23Dot3`: `4Dot23Dot3` = "4.23.3".asInstanceOf[`4Dot23Dot3`]
+  sealed trait `4Dot23Dot6` extends StObject
+  inline def `4Dot23Dot6`: `4Dot23Dot6` = "4.23.6".asInstanceOf[`4Dot23Dot6`]
   
   @js.native
   sealed trait `500`

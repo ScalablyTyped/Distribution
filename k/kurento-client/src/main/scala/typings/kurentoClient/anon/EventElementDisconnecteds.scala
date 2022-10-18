@@ -1,6 +1,7 @@
 package typings.kurentoClient.anon
 
 import typings.kurentoClient.kurentoClientStrings.ElementDisconnected
+import typings.kurentoClient.mod.MediaElement
 import typings.kurentoClient.mod.MediaType
 import typings.kurentoClient.mod.Tag
 import org.scalablytyped.runtime.StObject
@@ -12,7 +13,7 @@ trait EventElementDisconnecteds extends StObject {
   
   var mediaType: MediaType
   
-  var sink: this.type
+  var sink: MediaElement
   
   var sinkMediaDescription: String
   
@@ -32,7 +33,7 @@ object EventElementDisconnecteds {
   
   inline def apply(
     mediaType: MediaType,
-    sink: EventElementDisconnecteds,
+    sink: MediaElement,
     sinkMediaDescription: String,
     source: String,
     sourceMediaDescription: String,
@@ -49,7 +50,7 @@ object EventElementDisconnecteds {
     
     inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    inline def setSink(value: EventElementDisconnecteds): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
+    inline def setSink(value: MediaElement): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
     
     inline def setSinkMediaDescription(value: String): Self = StObject.set(x, "sinkMediaDescription", value.asInstanceOf[js.Any])
     

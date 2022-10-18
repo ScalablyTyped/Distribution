@@ -425,7 +425,7 @@ trait ViewPropsRefAttributesVie extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
@@ -464,7 +464,7 @@ trait ViewPropsRefAttributesVie extends StObject {
 }
 object ViewPropsRefAttributesVie {
   
-  inline def apply(theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): ViewPropsRefAttributesVie = {
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): ViewPropsRefAttributesVie = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsRefAttributesVie]
   }
@@ -755,7 +755,7 @@ object ViewPropsRefAttributesVie {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     

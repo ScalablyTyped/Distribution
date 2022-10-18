@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-codecommit-node", "DeleteRepositoryCommand")
 @js.native
 open class DeleteRepositoryCommand protected ()
-  extends typings.awsSdkClientCodecommitNode.deleteRepositoryCommandMod.DeleteRepositoryCommand {
+  extends typings.awsSdkClientCodecommitNode.commandsDeleteRepositoryCommandMod.DeleteRepositoryCommand {
   def this(input: DeleteRepositoryInput) = this()
 }

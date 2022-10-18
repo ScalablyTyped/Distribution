@@ -1,6 +1,6 @@
 package typings.relayRuntime.anon
 
-import typings.relayRuntime.relayStoreTypesMod.OperationDescriptor
+import typings.relayRuntime.libStoreRelayStoreTypesMod.OperationDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

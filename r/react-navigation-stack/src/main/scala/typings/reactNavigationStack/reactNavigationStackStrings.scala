@@ -1,9 +1,9 @@
 package typings.reactNavigationStack
 
-import typings.reactNavigationStack.vendorTypesMod.GestureDirection
-import typings.reactNavigationStack.vendorTypesMod.NavigationStackEventName
-import typings.reactNavigationStack.vendorTypesMod.StackCardMode
-import typings.reactNavigationStack.vendorTypesMod.StackHeaderMode
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.GestureDirection
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.NavigationStackEventName
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackCardMode
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackHeaderMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

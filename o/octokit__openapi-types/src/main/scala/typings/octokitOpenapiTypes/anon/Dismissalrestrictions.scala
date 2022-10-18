@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Dismissalrestrictions extends StObject {
   
   /** @description Allow specific users, teams, or apps to bypass pull request requirements. */
-  var bypass_pull_request_allowances: js.UndefOr[AppsTeams] = js.undefined
+  var bypass_pull_request_allowances: js.UndefOr[Users] = js.undefined
   
   /** @example true */
   var dismiss_stale_reviews: Boolean
@@ -35,7 +35,7 @@ object Dismissalrestrictions {
   
   extension [Self <: Dismissalrestrictions](x: Self) {
     
-    inline def setBypass_pull_request_allowances(value: AppsTeams): Self = StObject.set(x, "bypass_pull_request_allowances", value.asInstanceOf[js.Any])
+    inline def setBypass_pull_request_allowances(value: Users): Self = StObject.set(x, "bypass_pull_request_allowances", value.asInstanceOf[js.Any])
     
     inline def setBypass_pull_request_allowancesUndefined: Self = StObject.set(x, "bypass_pull_request_allowances", js.undefined)
     

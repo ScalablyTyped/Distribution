@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.microflows
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "microflows.MicroflowParameterValue")
 @js.native
 open class MicroflowParameterValue protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.microflows.MicroflowParameterValue {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.microflows.MicroflowParameterValue {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object MicroflowParameterValue {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterValue]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterValue]
   
   /**
     * Creates and returns a new MicroflowParameterValue instance in the SDK and on the server.
@@ -50,7 +50,7 @@ object MicroflowParameterValue {
     *  7.21.0 and higher
     */
   /* static member */
-  inline def createInJavaActionParameterMappingUnderParameterValue(container: typings.mendixmodelsdk.microflowsMod.microflows.JavaActionParameterMapping): typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterValue]
+  inline def createInJavaActionParameterMappingUnderParameterValue(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.JavaActionParameterMapping): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterValue]
   
   /**
     * Creates and returns a new MicroflowParameterValue instance in the SDK and on the server.
@@ -61,7 +61,7 @@ object MicroflowParameterValue {
     *  7.21.0 and higher
     */
   /* static member */
-  inline def createInJavaScriptActionParameterMappingUnderParameterValue(container: typings.mendixmodelsdk.microflowsMod.microflows.JavaScriptActionParameterMapping): typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaScriptActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterValue]
+  inline def createInJavaScriptActionParameterMappingUnderParameterValue(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.JavaScriptActionParameterMapping): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaScriptActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterValue]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.MicroflowParameterValue.structureTypeName")

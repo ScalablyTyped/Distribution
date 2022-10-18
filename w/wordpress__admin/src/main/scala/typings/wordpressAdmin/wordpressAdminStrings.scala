@@ -1,6 +1,6 @@
 package typings.wordpressAdmin
 
-import typings.wordpressAdmin.mediaViewsMod.FrameType
+import typings.wordpressAdmin.componentsMediaViewsMod.FrameType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,5 +1,9 @@
 package typings.maplibreGl.anon
 
+import typings.maplibreGl.distStyleSpecMod.ColorSpecification
+import typings.maplibreGl.distStyleSpecMod.DataDrivenPropertyValueSpecification
+import typings.maplibreGl.distStyleSpecMod.PropertyValueSpecification
+import typings.maplibreGl.distStyleSpecMod.ResolvedImageSpecification
 import typings.maplibreGl.maplibreGlStrings.ExpressionSpecification
 import typings.maplibreGl.maplibreGlStrings.`geometry-type`
 import typings.maplibreGl.maplibreGlStrings.`heatmap-density`
@@ -9,13 +13,9 @@ import typings.maplibreGl.maplibreGlStrings.id
 import typings.maplibreGl.maplibreGlStrings.ln2
 import typings.maplibreGl.maplibreGlStrings.map
 import typings.maplibreGl.maplibreGlStrings.pi
-import typings.maplibreGl.maplibreGlStrings.properties_
+import typings.maplibreGl.maplibreGlStrings.properties
 import typings.maplibreGl.maplibreGlStrings.viewport
 import typings.maplibreGl.maplibreGlStrings.zoom
-import typings.maplibreGl.styleSpecMod.ColorSpecification
-import typings.maplibreGl.styleSpecMod.DataDrivenPropertyValueSpecification
-import typings.maplibreGl.styleSpecMod.PropertyValueSpecification
-import typings.maplibreGl.styleSpecMod.ResolvedImageSpecification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +52,7 @@ object Fillextrusioncolor {
     inline def `setFill-extrusion-baseUndefined`: Self = StObject.set(x, "fill-extrusion-base", js.undefined)
     
     inline def `setFill-extrusion-baseVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "fill-extrusion-base", js.Array(value*))
     
     inline def `setFill-extrusion-color`(value: DataDrivenPropertyValueSpecification[ColorSpecification]): Self = StObject.set(x, "fill-extrusion-color", value.asInstanceOf[js.Any])
@@ -60,7 +60,7 @@ object Fillextrusioncolor {
     inline def `setFill-extrusion-colorUndefined`: Self = StObject.set(x, "fill-extrusion-color", js.undefined)
     
     inline def `setFill-extrusion-colorVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "fill-extrusion-color", js.Array(value*))
     
     inline def `setFill-extrusion-height`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "fill-extrusion-height", value.asInstanceOf[js.Any])
@@ -68,7 +68,7 @@ object Fillextrusioncolor {
     inline def `setFill-extrusion-heightUndefined`: Self = StObject.set(x, "fill-extrusion-height", js.undefined)
     
     inline def `setFill-extrusion-heightVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "fill-extrusion-height", js.Array(value*))
     
     inline def `setFill-extrusion-opacity`(value: PropertyValueSpecification[Double]): Self = StObject.set(x, "fill-extrusion-opacity", value.asInstanceOf[js.Any])
@@ -80,7 +80,7 @@ object Fillextrusioncolor {
     inline def `setFill-extrusion-patternUndefined`: Self = StObject.set(x, "fill-extrusion-pattern", js.undefined)
     
     inline def `setFill-extrusion-patternVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "fill-extrusion-pattern", js.Array(value*))
     
     inline def `setFill-extrusion-translate`(value: PropertyValueSpecification[js.Tuple2[Double, Double]]): Self = StObject.set(x, "fill-extrusion-translate", value.asInstanceOf[js.Any])

@@ -3,17 +3,17 @@ package typings.fpTs.mod
 import typings.fpTs.anon.Fn28
 import typings.fpTs.anon.Fn29
 import typings.fpTs.anon.FnCallASet
-import typings.fpTs.eitherMod.Either_
-import typings.fpTs.eqMod.Eq
-import typings.fpTs.magmaMod.Magma
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.optionMod.Option_
-import typings.fpTs.ordMod.Ord_
-import typings.fpTs.predicateMod.Predicate
-import typings.fpTs.refinementMod.Refinement
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.separatedMod.Separated_
-import typings.fpTs.showMod.Show
+import typings.fpTs.libEitherMod.Either_
+import typings.fpTs.libEqMod.Eq
+import typings.fpTs.libMagmaMod.Magma
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libOptionMod.Option_
+import typings.fpTs.libOrdMod.Ord_
+import typings.fpTs.libPredicateMod.Predicate
+import typings.fpTs.libRefinementMod.Refinement
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libSeparatedMod.Separated_
+import typings.fpTs.libShowMod.Show
 import typings.std.ReadonlySet
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -150,6 +150,7 @@ object readonlySet {
   
   inline def union[A](E: Eq[A]): Fn28[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(E.asInstanceOf[js.Any]).asInstanceOf[Fn28[A]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native

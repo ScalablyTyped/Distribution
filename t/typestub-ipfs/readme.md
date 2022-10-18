@@ -10,15 +10,12 @@ The type definition for IPFS package
 | ------------------ | :-------------: |
 | Full name          | typestub-ipfs |
 | Keywords           | ipfs, types, typestub |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 296 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 35.666666666666664 |
+| # stars            | 13.0 |
 
 ## Links
-- [Homepage](https://github.com/beenotung/typestub-ipfs#readme)
-- [Bugs](https://github.com/beenotung/typestub-ipfs/issues)
-- [Repository](https://github.com/beenotung/typestub-ipfs)
 - [Npm](https://www.npmjs.com/package/typestub-ipfs)
     
 

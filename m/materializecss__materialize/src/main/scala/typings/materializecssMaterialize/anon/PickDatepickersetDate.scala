@@ -7,19 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@materializecss/materialize.M.Datepicker, 'setDate'> */
 trait PickDatepickersetDate extends StObject {
   
-  var setDate: js.UndefOr[Any] = js.undefined
+  def setDate(): Unit
+  def setDate(date: String): Unit
+  def setDate(date: String, preventOnSelect: Boolean): Unit
+  def setDate(date: js.Date): Unit
+  def setDate(date: js.Date, preventOnSelect: Boolean): Unit
+  def setDate(date: Unit, preventOnSelect: Boolean): Unit
+  @JSName("setDate")
+  var setDate_Original: js.Function2[
+    /* date */ js.UndefOr[js.Date | String], 
+    /* preventOnSelect */ js.UndefOr[Boolean], 
+    Unit
+  ]
 }
 object PickDatepickersetDate {
   
-  inline def apply(): PickDatepickersetDate = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    setDate: (/* date */ js.UndefOr[js.Date | String], /* preventOnSelect */ js.UndefOr[Boolean]) => Unit
+  ): PickDatepickersetDate = {
+    val __obj = js.Dynamic.literal(setDate = js.Any.fromFunction2(setDate))
     __obj.asInstanceOf[PickDatepickersetDate]
   }
   
   extension [Self <: PickDatepickersetDate](x: Self) {
     
-    inline def setSetDate(value: Any): Self = StObject.set(x, "setDate", value.asInstanceOf[js.Any])
-    
-    inline def setSetDateUndefined: Self = StObject.set(x, "setDate", js.undefined)
+    inline def setSetDate(
+      value: (/* date */ js.UndefOr[js.Date | String], /* preventOnSelect */ js.UndefOr[Boolean]) => Unit
+    ): Self = StObject.set(x, "setDate", js.Any.fromFunction2(value))
   }
 }

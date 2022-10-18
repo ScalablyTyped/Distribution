@@ -20,35 +20,35 @@ open class GizmoManager protected ()
   def this(
     _scene: typings.babylonjs.sceneMod.Scene,
     thickness: Double,
-    utilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+    utilityLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
     _scene: typings.babylonjs.sceneMod.Scene,
     thickness: Unit,
-    utilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+    utilityLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
     _scene: typings.babylonjs.sceneMod.Scene,
     thickness: Double,
     utilityLayer: Unit,
-    keepDepthUtilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+    keepDepthUtilityLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
     _scene: typings.babylonjs.sceneMod.Scene,
     thickness: Double,
-    utilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    keepDepthUtilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+    utilityLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    keepDepthUtilityLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
     _scene: typings.babylonjs.sceneMod.Scene,
     thickness: Unit,
     utilityLayer: Unit,
-    keepDepthUtilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+    keepDepthUtilityLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
     _scene: typings.babylonjs.sceneMod.Scene,
     thickness: Unit,
-    utilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    keepDepthUtilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+    utilityLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    keepDepthUtilityLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
 }

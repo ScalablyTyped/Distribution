@@ -1,6 +1,6 @@
 package typings.overlayscrollbars.mod
 
-import typings.overlayscrollbars.anon.`1`
+import typings.overlayscrollbars.anon.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,11 +46,11 @@ trait OverlayScrollbars extends StObject {
     easing: Unit,
     complete: js.Function1[/* repeated */ Any, Any]
   ): Unit = js.native
-  def scroll(coordinates: Coordinates, duration: Double, easing: `1`): Unit = js.native
+  def scroll(coordinates: Coordinates, duration: Double, easing: `2`): Unit = js.native
   def scroll(
     coordinates: Coordinates,
     duration: Double,
-    easing: `1`,
+    easing: `2`,
     complete: js.Function1[/* repeated */ Any, Any]
   ): Unit = js.native
   def scroll(coordinates: Coordinates, duration: Double, easing: Easing): Unit = js.native
@@ -73,11 +73,11 @@ trait OverlayScrollbars extends StObject {
     easing: Unit,
     complete: js.Function1[/* repeated */ Any, Any]
   ): Unit = js.native
-  def scroll(coordinates: Coordinates, duration: Unit, easing: `1`): Unit = js.native
+  def scroll(coordinates: Coordinates, duration: Unit, easing: `2`): Unit = js.native
   def scroll(
     coordinates: Coordinates,
     duration: Unit,
-    easing: `1`,
+    easing: `2`,
     complete: js.Function1[/* repeated */ Any, Any]
   ): Unit = js.native
   def scroll(coordinates: Coordinates, duration: Unit, easing: Easing): Unit = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "DerivativeBlock")
 @js.native
 open class DerivativeBlock protected ()
-  extends typings.babylonjs.legacyMod.DerivativeBlock {
+  extends typings.babylonjs.legacyLegacyMod.DerivativeBlock {
   /**
     * Create a new DerivativeBlock
     * @param name defines the block name

@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsDollarCircleFilledMod.DollarCircleFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dollarCircleFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/DollarCircleFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/DollarCircleFilled", JSImport.Default)
   @js.native
   val default: DollarCircleFilledIconType = js.native
-  
-  @js.native
-  trait DollarCircleFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_DollarCircleFilledIconType: String = js.native
-  }
   
   type _To = DollarCircleFilledIconType
   

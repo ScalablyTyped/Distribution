@@ -11,19 +11,19 @@ object ResourceOperationKind {
     */
   @JSImport("vscode-languageserver-protocol", "ResourceOperationKind.Create")
   @js.native
-  val Create: typings.vscodeLanguageserverProtocol.protocolMod.ResourceOperationKind = js.native
+  val Create: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.ResourceOperationKind = js.native
   
   /**
     * Supports deleting existing files and folders.
     */
   @JSImport("vscode-languageserver-protocol", "ResourceOperationKind.Delete")
   @js.native
-  val Delete: typings.vscodeLanguageserverProtocol.protocolMod.ResourceOperationKind = js.native
+  val Delete: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.ResourceOperationKind = js.native
   
   /**
     * Supports renaming existing files and folders.
     */
   @JSImport("vscode-languageserver-protocol", "ResourceOperationKind.Rename")
   @js.native
-  val Rename: typings.vscodeLanguageserverProtocol.protocolMod.ResourceOperationKind = js.native
+  val Rename: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.ResourceOperationKind = js.native
 }

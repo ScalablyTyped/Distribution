@@ -1,7 +1,7 @@
 package typings.semanticUiReact.mod
 
-import typings.fluentuiReactComponentRef.refMod.RefProps
-import typings.fluentuiReactComponentRef.refMod.RefState
+import typings.fluentuiReactComponentRef.distEsRefMod.RefProps
+import typings.fluentuiReactComponentRef.distEsRefMod.RefState
 import typings.semanticUiReact.anon.ReadonlyRefProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

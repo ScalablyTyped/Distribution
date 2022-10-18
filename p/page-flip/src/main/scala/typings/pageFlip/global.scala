@@ -1,13 +1,13 @@
 package typings.pageFlip
 
 import typings.pageFlip.anon.PartialFlipSetting
-import typings.pageFlip.basicTypesMod.Point
-import typings.pageFlip.basicTypesMod.Rect
-import typings.pageFlip.basicTypesMod.Segment
-import typings.pageFlip.flipMod.FlipCorner
-import typings.pageFlip.flipMod.FlipDirection
-import typings.pageFlip.pageMod.PageDensity
-import typings.pageFlip.settingsMod.FlipSetting
+import typings.pageFlip.distBasicTypesMod.Point
+import typings.pageFlip.distBasicTypesMod.Rect
+import typings.pageFlip.distBasicTypesMod.Segment
+import typings.pageFlip.distFlipFlipMod.FlipCorner
+import typings.pageFlip.distFlipFlipMod.FlipDirection
+import typings.pageFlip.distPagePageMod.PageDensity
+import typings.pageFlip.distSettingsMod.FlipSetting
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import typings.std.NodeListOf
@@ -23,26 +23,29 @@ object global {
     @js.native
     open class CanvasRender protected ()
       extends typings.pageFlip.mod.CanvasRender {
-      def this(app: typings.pageFlip.pageFlipMod.PageFlip, setting: FlipSetting, inCanvas: HTMLCanvasElement) = this()
+      def this(app: typings.pageFlip.distPageFlipMod.PageFlip, setting: FlipSetting, inCanvas: HTMLCanvasElement) = this()
     }
     
     @JSGlobal("St.CanvasUI")
     @js.native
     open class CanvasUI protected ()
       extends typings.pageFlip.mod.CanvasUI {
-      def this(inBlock: HTMLElement, app: typings.pageFlip.pageFlipMod.PageFlip, setting: FlipSetting) = this()
+      def this(inBlock: HTMLElement, app: typings.pageFlip.distPageFlipMod.PageFlip, setting: FlipSetting) = this()
     }
     
-    @JSGlobal("St.EventObject")
+    /* note: abstract class */ @JSGlobal("St.EventObject")
     @js.native
-    abstract class EventObject ()
+    open class EventObject ()
       extends typings.pageFlip.mod.EventObject
     
     @JSGlobal("St.Flip")
     @js.native
     open class Flip protected ()
       extends typings.pageFlip.mod.Flip {
-      def this(render: typings.pageFlip.renderMod.Render, app: typings.pageFlip.pageFlipMod.PageFlip) = this()
+      def this(
+        render: typings.pageFlip.distRenderRenderMod.Render,
+        app: typings.pageFlip.distPageFlipMod.PageFlip
+      ) = this()
     }
     
     @JSGlobal("St.FlipCalculation")
@@ -57,11 +60,11 @@ object global {
     object FlipCorner extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.pageFlip.flipMod.FlipCorner & String] = js.native
+      def apply(value: String): js.UndefOr[typings.pageFlip.distFlipFlipMod.FlipCorner & String] = js.native
       
-      /* "bottom" */ val BOTTOM: typings.pageFlip.flipMod.FlipCorner.BOTTOM & String = js.native
+      /* "bottom" */ val BOTTOM: typings.pageFlip.distFlipFlipMod.FlipCorner.BOTTOM & String = js.native
       
-      /* "top" */ val TOP: typings.pageFlip.flipMod.FlipCorner.TOP & String = js.native
+      /* "top" */ val TOP: typings.pageFlip.distFlipFlipMod.FlipCorner.TOP & String = js.native
     }
     
     @JSGlobal("St.FlipDirection")
@@ -69,11 +72,11 @@ object global {
     object FlipDirection extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.pageFlip.flipMod.FlipDirection & Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.pageFlip.distFlipFlipMod.FlipDirection & Double] = js.native
       
-      /* 1 */ val BACK: typings.pageFlip.flipMod.FlipDirection.BACK & Double = js.native
+      /* 1 */ val BACK: typings.pageFlip.distFlipFlipMod.FlipDirection.BACK & Double = js.native
       
-      /* 0 */ val FORWARD: typings.pageFlip.flipMod.FlipDirection.FORWARD & Double = js.native
+      /* 0 */ val FORWARD: typings.pageFlip.distFlipFlipMod.FlipDirection.FORWARD & Double = js.native
     }
     
     @JSGlobal("St.FlippingState")
@@ -81,22 +84,22 @@ object global {
     object FlippingState extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.pageFlip.flipMod.FlippingState & String] = js.native
+      def apply(value: String): js.UndefOr[typings.pageFlip.distFlipFlipMod.FlippingState & String] = js.native
       
-      /* "flipping" */ val FLIPPING: typings.pageFlip.flipMod.FlippingState.FLIPPING & String = js.native
+      /* "flipping" */ val FLIPPING: typings.pageFlip.distFlipFlipMod.FlippingState.FLIPPING & String = js.native
       
-      /* "fold_corner" */ val FOLD_CORNER: typings.pageFlip.flipMod.FlippingState.FOLD_CORNER & String = js.native
+      /* "fold_corner" */ val FOLD_CORNER: typings.pageFlip.distFlipFlipMod.FlippingState.FOLD_CORNER & String = js.native
       
-      /* "read" */ val READ: typings.pageFlip.flipMod.FlippingState.READ & String = js.native
+      /* "read" */ val READ: typings.pageFlip.distFlipFlipMod.FlippingState.READ & String = js.native
       
-      /* "user_fold" */ val USER_FOLD: typings.pageFlip.flipMod.FlippingState.USER_FOLD & String = js.native
+      /* "user_fold" */ val USER_FOLD: typings.pageFlip.distFlipFlipMod.FlippingState.USER_FOLD & String = js.native
     }
     
     @JSGlobal("St.HTMLPage")
     @js.native
     open class HTMLPage protected ()
       extends typings.pageFlip.mod.HTMLPage {
-      def this(render: typings.pageFlip.renderMod.Render, element: HTMLElement, density: PageDensity) = this()
+      def this(render: typings.pageFlip.distRenderRenderMod.Render, element: HTMLElement, density: PageDensity) = this()
     }
     
     @JSGlobal("St.HTMLPageCollection")
@@ -104,14 +107,14 @@ object global {
     open class HTMLPageCollection protected ()
       extends typings.pageFlip.mod.HTMLPageCollection {
       def this(
-        app: typings.pageFlip.pageFlipMod.PageFlip,
-        render: typings.pageFlip.renderMod.Render,
+        app: typings.pageFlip.distPageFlipMod.PageFlip,
+        render: typings.pageFlip.distRenderRenderMod.Render,
         element: HTMLElement,
         items: js.Array[HTMLElement]
       ) = this()
       def this(
-        app: typings.pageFlip.pageFlipMod.PageFlip,
-        render: typings.pageFlip.renderMod.Render,
+        app: typings.pageFlip.distPageFlipMod.PageFlip,
+        render: typings.pageFlip.distRenderRenderMod.Render,
         element: HTMLElement,
         items: NodeListOf[HTMLElement]
       ) = this()
@@ -121,7 +124,7 @@ object global {
     @js.native
     open class HTMLRender protected ()
       extends typings.pageFlip.mod.HTMLRender {
-      def this(app: typings.pageFlip.pageFlipMod.PageFlip, setting: FlipSetting, element: HTMLElement) = this()
+      def this(app: typings.pageFlip.distPageFlipMod.PageFlip, setting: FlipSetting, element: HTMLElement) = this()
     }
     
     @JSGlobal("St.HTMLUI")
@@ -130,13 +133,13 @@ object global {
       extends typings.pageFlip.mod.HTMLUI {
       def this(
         inBlock: HTMLElement,
-        app: typings.pageFlip.pageFlipMod.PageFlip,
+        app: typings.pageFlip.distPageFlipMod.PageFlip,
         setting: FlipSetting,
         items: js.Array[HTMLElement]
       ) = this()
       def this(
         inBlock: HTMLElement,
-        app: typings.pageFlip.pageFlipMod.PageFlip,
+        app: typings.pageFlip.distPageFlipMod.PageFlip,
         setting: FlipSetting,
         items: NodeListOf[HTMLElement]
       ) = this()
@@ -200,7 +203,7 @@ object global {
     @js.native
     open class ImagePage protected ()
       extends typings.pageFlip.mod.ImagePage {
-      def this(render: typings.pageFlip.renderMod.Render, href: String, density: PageDensity) = this()
+      def this(render: typings.pageFlip.distRenderRenderMod.Render, href: String, density: PageDensity) = this()
     }
     
     @JSGlobal("St.ImagePageCollection")
@@ -208,8 +211,8 @@ object global {
     open class ImagePageCollection protected ()
       extends typings.pageFlip.mod.ImagePageCollection {
       def this(
-        app: typings.pageFlip.pageFlipMod.PageFlip,
-        render: typings.pageFlip.renderMod.Render,
+        app: typings.pageFlip.distPageFlipMod.PageFlip,
+        render: typings.pageFlip.distRenderRenderMod.Render,
         imagesHref: js.Array[String]
       ) = this()
     }
@@ -219,25 +222,28 @@ object global {
     object Orientation extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.pageFlip.renderMod.Orientation & String] = js.native
+      def apply(value: String): js.UndefOr[typings.pageFlip.distRenderRenderMod.Orientation & String] = js.native
       
-      /* "landscape" */ val LANDSCAPE: typings.pageFlip.renderMod.Orientation.LANDSCAPE & String = js.native
+      /* "landscape" */ val LANDSCAPE: typings.pageFlip.distRenderRenderMod.Orientation.LANDSCAPE & String = js.native
       
-      /* "portrait" */ val PORTRAIT: typings.pageFlip.renderMod.Orientation.PORTRAIT & String = js.native
+      /* "portrait" */ val PORTRAIT: typings.pageFlip.distRenderRenderMod.Orientation.PORTRAIT & String = js.native
     }
     
-    @JSGlobal("St.Page")
+    /* note: abstract class */ @JSGlobal("St.Page")
     @js.native
-    abstract class Page protected ()
+    open class Page protected ()
       extends typings.pageFlip.mod.Page {
-      /* protected */ def this(render: typings.pageFlip.renderMod.Render, density: PageDensity) = this()
+      /* protected */ def this(render: typings.pageFlip.distRenderRenderMod.Render, density: PageDensity) = this()
     }
     
-    @JSGlobal("St.PageCollection")
+    /* note: abstract class */ @JSGlobal("St.PageCollection")
     @js.native
-    abstract class PageCollection protected ()
+    open class PageCollection protected ()
       extends typings.pageFlip.mod.PageCollection {
-      /* protected */ def this(app: typings.pageFlip.pageFlipMod.PageFlip, render: typings.pageFlip.renderMod.Render) = this()
+      /* protected */ def this(
+        app: typings.pageFlip.distPageFlipMod.PageFlip,
+        render: typings.pageFlip.distRenderRenderMod.Render
+      ) = this()
     }
     
     @JSGlobal("St.PageDensity")
@@ -245,11 +251,11 @@ object global {
     object PageDensity extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.pageFlip.pageMod.PageDensity & String] = js.native
+      def apply(value: String): js.UndefOr[typings.pageFlip.distPagePageMod.PageDensity & String] = js.native
       
-      /* "hard" */ val HARD: typings.pageFlip.pageMod.PageDensity.HARD & String = js.native
+      /* "hard" */ val HARD: typings.pageFlip.distPagePageMod.PageDensity.HARD & String = js.native
       
-      /* "soft" */ val SOFT: typings.pageFlip.pageMod.PageDensity.SOFT & String = js.native
+      /* "soft" */ val SOFT: typings.pageFlip.distPagePageMod.PageDensity.SOFT & String = js.native
     }
     
     @JSGlobal("St.PageFlip")
@@ -267,18 +273,18 @@ object global {
     object PageOrientation extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.pageFlip.pageMod.PageOrientation & Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.pageFlip.distPagePageMod.PageOrientation & Double] = js.native
       
-      /* 0 */ val LEFT: typings.pageFlip.pageMod.PageOrientation.LEFT & Double = js.native
+      /* 0 */ val LEFT: typings.pageFlip.distPagePageMod.PageOrientation.LEFT & Double = js.native
       
-      /* 1 */ val RIGHT: typings.pageFlip.pageMod.PageOrientation.RIGHT & Double = js.native
+      /* 1 */ val RIGHT: typings.pageFlip.distPagePageMod.PageOrientation.RIGHT & Double = js.native
     }
     
-    @JSGlobal("St.Render")
+    /* note: abstract class */ @JSGlobal("St.Render")
     @js.native
-    abstract class Render protected ()
+    open class Render protected ()
       extends typings.pageFlip.mod.Render {
-      /* protected */ def this(app: typings.pageFlip.pageFlipMod.PageFlip, setting: FlipSetting) = this()
+      /* protected */ def this(app: typings.pageFlip.distPageFlipMod.PageFlip, setting: FlipSetting) = this()
     }
     
     @JSGlobal("St.Settings")
@@ -291,18 +297,18 @@ object global {
     object SizeType extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.pageFlip.settingsMod.SizeType & String] = js.native
+      def apply(value: String): js.UndefOr[typings.pageFlip.distSettingsMod.SizeType & String] = js.native
       
-      /* "fixed" */ val FIXED: typings.pageFlip.settingsMod.SizeType.FIXED & String = js.native
+      /* "fixed" */ val FIXED: typings.pageFlip.distSettingsMod.SizeType.FIXED & String = js.native
       
-      /* "stretch" */ val STRETCH: typings.pageFlip.settingsMod.SizeType.STRETCH & String = js.native
+      /* "stretch" */ val STRETCH: typings.pageFlip.distSettingsMod.SizeType.STRETCH & String = js.native
     }
     
-    @JSGlobal("St.UI")
+    /* note: abstract class */ @JSGlobal("St.UI")
     @js.native
-    abstract class UI protected ()
+    open class UI protected ()
       extends typings.pageFlip.mod.UI {
-      /* protected */ def this(inBlock: HTMLElement, app: typings.pageFlip.pageFlipMod.PageFlip, setting: FlipSetting) = this()
+      /* protected */ def this(inBlock: HTMLElement, app: typings.pageFlip.distPageFlipMod.PageFlip, setting: FlipSetting) = this()
     }
   }
 }

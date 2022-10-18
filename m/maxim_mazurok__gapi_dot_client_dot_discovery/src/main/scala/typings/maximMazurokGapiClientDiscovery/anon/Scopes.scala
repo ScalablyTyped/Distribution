@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDiscovery.anon
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait Scopes extends StObject {
   
   /** Available OAuth 2.0 scopes. */
   var scopes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: {  description :string | undefined}}
-    */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.Scopes & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: {  description :string | undefined}} */ js.Any
   ] = js.undefined
 }
 object Scopes {
@@ -24,9 +21,7 @@ object Scopes {
   extension [Self <: Scopes](x: Self) {
     
     inline def setScopes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: {  description :string | undefined}}
-      */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.Scopes & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: {  description :string | undefined}} */ js.Any
     ): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)

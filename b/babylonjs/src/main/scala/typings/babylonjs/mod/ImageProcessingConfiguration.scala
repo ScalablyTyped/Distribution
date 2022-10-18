@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.imageProcessingConfigurationMod.IImageProcessingConfigurationDefines
+import typings.babylonjs.materialsImageProcessingConfigurationMod.IImageProcessingConfigurationDefines
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ImageProcessingConfiguration")
 @js.native
 open class ImageProcessingConfiguration ()
-  extends typings.babylonjs.legacyMod.ImageProcessingConfiguration
+  extends typings.babylonjs.legacyLegacyMod.ImageProcessingConfiguration
 /* static members */
 object ImageProcessingConfiguration {
   
@@ -21,7 +21,7 @@ object ImageProcessingConfiguration {
     * @param source the JSON source to parse
     * @returns The parsed image processing
     */
-  inline def Parse(source: Any): typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration]
+  inline def Parse(source: Any): typings.babylonjs.materialsImageProcessingConfigurationMod.ImageProcessingConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.materialsImageProcessingConfigurationMod.ImageProcessingConfiguration]
   
   /**
     * Prepare the list of samplers associated with the Image Processing effects.

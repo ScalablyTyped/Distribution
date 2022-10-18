@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "RectUpdater")
 @js.native
 open class RectUpdater ()
-  extends typings.antvGLite.servicesMod.RectUpdater
+  extends typings.antvGLite.distServicesMod.RectUpdater

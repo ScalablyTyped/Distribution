@@ -1,6 +1,5 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.gridMod.GridOptions
 import typings.interactjsTypes.interactjsTypesStrings.bottom
 import typings.interactjsTypes.interactjsTypesStrings.height
 import typings.interactjsTypes.interactjsTypesStrings.left
@@ -9,6 +8,7 @@ import typings.interactjsTypes.interactjsTypesStrings.top
 import typings.interactjsTypes.interactjsTypesStrings.width
 import typings.interactjsTypes.interactjsTypesStrings.x
 import typings.interactjsTypes.interactjsTypesStrings.y
+import typings.interactjsTypes.snappersGridMod.GridOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

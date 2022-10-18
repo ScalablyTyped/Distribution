@@ -1,6 +1,6 @@
 package typings.awsSdk.mod
 
-import typings.awsSdk.credentialsMod.CredentialsOptions
+import typings.awsSdk.libCredentialsMod.CredentialsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-sdk", "Credentials")
 @js.native
 open class Credentials protected ()
-  extends typings.awsSdk.coreMod.Credentials {
+  extends typings.awsSdk.libCoreMod.Credentials {
   /**
     * Creates a Credentials object with a given set of credential information as an options hash.
     *

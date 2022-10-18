@@ -2,11 +2,9 @@ package typings.reactNative.mod.Animated
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.ComponentType
 import typings.react.mod.FC
-import typings.react.mod.Ref
 import typings.reactNative.anon.TypeofImage
 import typings.reactNative.anon.Typeof_View
 import typings.reactNative.anon.X
@@ -67,17 +65,11 @@ inline def timing(value: AnimatedValue, config: TimingAnimationConfig): Composit
 
 type AnimatedComponent[T /* <: ComponentType[Any] */] = FC[AnimatedProps[ComponentPropsWithRef[T]]]
 
-type AnimatedProps[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ key in keyof T ]: key extends react-native.react-native.Animated.NonAnimatedProps? key extends 'ref'? react-native.react-native.Animated.TAugmentRef<T[key]> : T[key] : react-native.react-native.Animated.WithAnimatedValue<T[key]>}
-  */ typings.reactNative.reactNativeStrings.AnimatedProps & TopLevel[Any]
-
 type AnimatedValue = Value
 
 type AnimatedValueXY = ValueXY
 
 type Builtin = js.Function | js.Date | js.Error | js.RegExp
-
-type ComponentProps[T] = Any
 
 type EndCallback = js.Function1[/* result */ EndResult, Unit]
 
@@ -87,16 +79,8 @@ type Nullable = js.UndefOr[Null]
 
 type Primitive = String | Double | Boolean | js.Symbol
 
-type TAugmentRef[T] = Ref[Any | LegacyRef[Any]]
-
 type ValueListenerCallback = js.Function1[/* state */ typings.reactNative.anon.Value, Unit]
 
 type ValueXYListenerCallback = js.Function1[/* value */ X, Unit]
 
 type WithAnimatedArray[P] = js.Array[WithAnimatedValue[P]]
-
-type WithAnimatedObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: react-native.react-native.Animated.WithAnimatedValue<T[K]>}
-  */ typings.reactNative.reactNativeStrings.WithAnimatedObject & TopLevel[T]
-
-type WithAnimatedValue[T] = T | WithAnimatedObject[T] | Value | (AnimatedInterpolation[Double | String])

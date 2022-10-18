@@ -1,9 +1,9 @@
 package typings.sharedb.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sharedb.libSharedbMod.Logger
+import typings.sharedb.libSharedbMod.Types
 import typings.sharedb.sharedbBooleans.`true`
-import typings.sharedb.sharedbMod.Logger
-import typings.sharedb.sharedbMod.Types
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +17,11 @@ inline def logger_=(x: Logger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic(
 inline def types: Types = ^.asInstanceOf[js.Dynamic].selectDynamic("types").asInstanceOf[Types]
 inline def types_=(x: Types): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
 
-type AddNumOp = typings.sharedb.sharedbMod.AddNumOp
+type AddNumOp = typings.sharedb.libSharedbMod.AddNumOp
 
 type BasicCallback = js.Function1[/* err */ js.UndefOr[js.Error], Unit]
 
-type CreateOp = typings.sharedb.sharedbMod.CreateOp
+type CreateOp = typings.sharedb.libSharedbMod.CreateOp
 
 type DBQueryCallback = js.Function3[
 /* err */ Error | Null, 
@@ -37,44 +37,44 @@ type DBQueryMethod = js.Function5[
 /* callback */ DBQueryCallback, 
 Unit]
 
-type DeleteOp = typings.sharedb.sharedbMod.DeleteOp
+type DeleteOp = typings.sharedb.libSharedbMod.DeleteOp
 
-type Doc = typings.sharedb.sharedbMod.Doc[Any]
+type Doc = typings.sharedb.libSharedbMod.Doc[Any]
 
-type EditOp = typings.sharedb.sharedbMod.EditOp
+type EditOp = typings.sharedb.libSharedbMod.EditOp
 
-type Error = typings.sharedb.sharedbMod.Error
+type Error = typings.sharedb.libSharedbMod.Error
 
 type ErrorHandler = js.Function2[/* error */ js.Error, /* context */ ErrorHandlerContext, Unit]
 
-type ListDeleteOp = typings.sharedb.sharedbMod.ListDeleteOp
+type ListDeleteOp = typings.sharedb.libSharedbMod.ListDeleteOp
 
-type ListInsertOp = typings.sharedb.sharedbMod.ListInsertOp
+type ListInsertOp = typings.sharedb.libSharedbMod.ListInsertOp
 
-type ListMoveOp = typings.sharedb.sharedbMod.ListMoveOp
+type ListMoveOp = typings.sharedb.libSharedbMod.ListMoveOp
 
-type ListReplaceOp = typings.sharedb.sharedbMod.ListReplaceOp
+type ListReplaceOp = typings.sharedb.libSharedbMod.ListReplaceOp
 
-type ObjectDeleteOp = typings.sharedb.sharedbMod.ObjectDeleteOp
+type ObjectDeleteOp = typings.sharedb.libSharedbMod.ObjectDeleteOp
 
-type ObjectInsertOp = typings.sharedb.sharedbMod.ObjectInsertOp
+type ObjectInsertOp = typings.sharedb.libSharedbMod.ObjectInsertOp
 
-type ObjectReplaceOp = typings.sharedb.sharedbMod.ObjectReplaceOp
+type ObjectReplaceOp = typings.sharedb.libSharedbMod.ObjectReplaceOp
 
-type Op = typings.sharedb.sharedbMod.Op
+type Op = typings.sharedb.libSharedbMod.Op
 
-type Path = typings.sharedb.sharedbMod.Path
+type Path = typings.sharedb.libSharedbMod.Path
 
 type ProjectionFields = StringDictionary[`true`]
 
-type Query = typings.sharedb.sharedbMod.Query[Any]
+type Query = typings.sharedb.libSharedbMod.Query[Any]
 
-type ShareDBSourceOptions = typings.sharedb.sharedbMod.ShareDBSourceOptions
+type ShareDBSourceOptions = typings.sharedb.libSharedbMod.ShareDBSourceOptions
 
-type Snapshot = typings.sharedb.sharedbMod.Snapshot[Any]
+type Snapshot = typings.sharedb.libSharedbMod.Snapshot[Any]
 
-type StringDeleteOp = typings.sharedb.sharedbMod.StringDeleteOp
+type StringDeleteOp = typings.sharedb.libSharedbMod.StringDeleteOp
 
-type StringInsertOp = typings.sharedb.sharedbMod.StringInsertOp
+type StringInsertOp = typings.sharedb.libSharedbMod.StringInsertOp
 
-type SubtypeOp = typings.sharedb.sharedbMod.SubtypeOp
+type SubtypeOp = typings.sharedb.libSharedbMod.SubtypeOp

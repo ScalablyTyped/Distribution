@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.utilsMod.IconType
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.mod.HTMLProps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "IconUtils")
 @js.native
 open class IconUtils ()
-  extends typings.primereact.utilsMod.IconUtils
+  extends typings.primereact.utilsUtilsMod.IconUtils
 /* static members */
 object IconUtils {
   

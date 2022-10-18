@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.soundTrackMod.ISoundTrackOptions
+import typings.babylonjs.audioSoundTrackMod.ISoundTrackOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

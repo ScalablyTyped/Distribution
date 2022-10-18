@@ -1,7 +1,7 @@
 package typings.dataApiClient
 
-import typings.awsSdk.rdsdataserviceMod.BeginTransactionResponse
-import typings.awsSdk.rdsdataserviceMod.ClientConfiguration
+import typings.awsSdk.clientsRdsdataserviceMod.BeginTransactionResponse
+import typings.awsSdk.clientsRdsdataserviceMod.ClientConfiguration
 import typings.dataApiClient.anon.Database
 import typings.dataApiClient.anon.DeserializeDate
 import typings.dataApiClient.anon.HydrateColumnNames

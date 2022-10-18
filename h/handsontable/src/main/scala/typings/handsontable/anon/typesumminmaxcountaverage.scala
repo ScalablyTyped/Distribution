@@ -1,11 +1,11 @@
 package typings.handsontable.anon
 
-import typings.handsontable.columnSummaryColumnSummaryMod.DetailedSettings
 import typings.handsontable.handsontableStrings.average
 import typings.handsontable.handsontableStrings.count
 import typings.handsontable.handsontableStrings.max
 import typings.handsontable.handsontableStrings.min
 import typings.handsontable.handsontableStrings.sum
+import typings.handsontable.pluginsColumnSummaryColumnSummaryMod.DetailedSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

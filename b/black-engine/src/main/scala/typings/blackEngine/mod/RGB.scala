@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "RGB")
 @js.native
 open class RGB ()
-  extends typings.blackEngine.colorHelperMod.RGB {
+  extends typings.blackEngine.utilsColorHelperMod.RGB {
   def this(r: Double) = this()
   def this(r: Double, g: Double) = this()
   def this(r: Unit, g: Double) = this()

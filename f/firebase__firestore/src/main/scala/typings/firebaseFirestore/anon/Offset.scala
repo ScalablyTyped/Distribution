@@ -1,7 +1,7 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.srcModelFieldIndexMod.IndexKind
-import typings.firebaseFirestore.srcModelFieldIndexMod.IndexOffset
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelFieldIndexMod.IndexKind
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelFieldIndexMod.IndexOffset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

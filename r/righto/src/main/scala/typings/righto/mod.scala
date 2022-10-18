@@ -1,6 +1,5 @@
 package typings.righto
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,9 +12,7 @@ object mod {
     fn: CPSFunction[AT, RT, ET],
     after: RightoAfter,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [...ArgsAsFlexible<AT, ET>, RightoAfter] is not an array type */ args: /* import warning: importer.ImportType#apply c repeated non-array type: {[ T in keyof AT ]: righto.righto.Flexible<AT[T], ET>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ T in keyof AT ]: righto.righto.Flexible<AT[T], ET>}
-    */ typings.righto.rightoStrings.^ & TopLevel[AT]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ T in keyof AT ]: righto.righto.Flexible<AT[T], ET>} */ js.Any
     ]
   ): Righto[RT, ET] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], after.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Righto[RT, ET]]
   // Righto constructor to allow for a single righto.after to appear before the function arguments
@@ -28,9 +25,7 @@ object mod {
   inline def apply[AT /* <: js.Array[Any] */, RT /* <: js.Array[Any] */, ET](
     fn: CPSFunction[AT, RT, ET],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [...ArgsAsFlexible<AT, ET>, RightoAfter] is not an array type */ args: /* import warning: importer.ImportType#apply c repeated non-array type: {[ T in keyof AT ]: righto.righto.Flexible<AT[T], ET>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ T in keyof AT ]: righto.righto.Flexible<AT[T], ET>}
-    */ typings.righto.rightoStrings.^ & TopLevel[AT]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ T in keyof AT ]: righto.righto.Flexible<AT[T], ET>} */ js.Any
     ]
   ): Righto[RT, ET] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Righto[RT, ET]]
   /**
@@ -378,7 +373,7 @@ object mod {
     *     bar; // -> {foo: {bar: 'foo'}}
     * });
     */
-  inline def resolve[T, B /* <: Boolean */](obj: T, recursive: B): ResolvedObject[T] | ResolvedObjectRecursive[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(obj.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[ResolvedObject[T] | ResolvedObjectRecursive[T]]
+  inline def resolve[T, B /* <: Boolean */](obj: T, recursive: B): /* import warning: importer.ImportType#apply Failed type conversion: B extends true ? righto.righto.ResolvedObjectRecursive<T> : righto.righto.ResolvedObject<T> */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(obj.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: B extends true ? righto.righto.ResolvedObjectRecursive<T> : righto.righto.ResolvedObject<T> */ js.Any]
   
   /**
     * You can resolve a task to an array containing either the error or results from a righto with righto.surely, which resolves to an array in the form of [error?, results...?].
@@ -423,9 +418,7 @@ object mod {
     fn: js.Function1[/* args */ AT, RT],
     after: RightoAfter,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [...ArgsAsFlexible<AT, ET>, RightoAfter] is not an array type */ args: /* import warning: importer.ImportType#apply c repeated non-array type: {[ T in keyof AT ]: righto.righto.Flexible<AT[T], ET>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ T in keyof AT ]: righto.righto.Flexible<AT[T], ET>}
-    */ typings.righto.rightoStrings.sync & TopLevel[AT]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ T in keyof AT ]: righto.righto.Flexible<AT[T], ET>} */ js.Any
     ]
   ): Righto[js.Array[RT], ET] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(fn.asInstanceOf[js.Any], after.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Righto[js.Array[RT], ET]]
   inline def sync[AT /* <: js.Array[Any] */, RT, ET](
@@ -471,14 +464,10 @@ object mod {
     righto: Righto[js.Array[Any], ET],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type IDXS is not an array type */ args: IDXS
   ): Righto[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof IDXS ]: any}
-    */ typings.righto.rightoStrings.take & TopLevel[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof IDXS ]: any} */ js.Any, 
     ET
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(righto.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Righto[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof IDXS ]: any}
-    */ typings.righto.rightoStrings.take & TopLevel[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof IDXS ]: any} */ js.Any, 
     ET
   ]]
   
@@ -507,9 +496,15 @@ object mod {
   inline def value[T, ET](resolvable: Righto[js.Array[T], ET]): Righto[js.Array[Righto[js.Array[T], ET]], ET] = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(resolvable.asInstanceOf[js.Any]).asInstanceOf[Righto[js.Array[Righto[js.Array[T], ET]], ET]]
   
   /** Accepts an array of types and returns a array of each type OR'd with eventual representations (Righto and promise) */
-  type ArgsAsFlexible[AT /* <: js.Array[Any] */, ET] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ T in keyof AT ]: righto.righto.Flexible<AT[T], ET>}
-    */ typings.righto.rightoStrings.ArgsAsFlexible & TopLevel[AT]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ T in keyof AT ]: righto.righto.Flexible<AT[T], ET>}
+    }}}
+    */
+  @js.native
+  trait ArgsAsFlexible[AT /* <: js.Array[Any] */, ET] extends StObject
   
   /**  Usually an async function that accepts any number of parameters, then returns a result or error through an ErrBack method */
   type CPSFunction[AT /* <: js.Array[Any] */, RT /* <: js.Array[Any] */, ET] = js.Function1[
@@ -520,9 +515,7 @@ object mod {
   /** A callback function that accepts a single error argument, with any number of return arguments */
   type ErrBack[RT /* <: js.Array[Any] */, ET] = js.Function2[
     /* err */ js.UndefOr[ET], 
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof RT ]:? RT[P]}
-    */ /* results */ typings.righto.rightoStrings.ErrBack & TopLevel[RT], 
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof RT ]:? RT[P]} */ /* results */ js.Any, 
     Unit
   ]
   
@@ -530,14 +523,26 @@ object mod {
   type Flexible[T, ET] = T | js.Promise[T] | (Righto[Array[js.UndefOr[T | Any]], ET])
   
   /** Transforms an object type to unwrap its Righto typed properties */
-  type ResolvedObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: T[P] extends righto.righto.Righto<infer X, any>? any[0] : T[P]}
-    */ typings.righto.rightoStrings.ResolvedObject & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: T[P] extends righto.righto.Righto<infer X, any>? X[0] : T[P]}
+    }}}
+    */
+  @js.native
+  trait ResolvedObject[T] extends StObject
   
   /** Recursively transforms an object type to unwrap its Righto typed properties into "unknown" */
-  type ResolvedObjectRecursive[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: T[P] extends righto.righto.Righto<infer X, any>? any[0] : T[P] extends object? righto.righto.ResolvedObjectRecursive<T[P]> : T[P]}
-    */ typings.righto.rightoStrings.ResolvedObjectRecursive & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: T[P] extends righto.righto.Righto<infer X, any>? X[0] : T[P] extends object? righto.righto.ResolvedObjectRecursive<T[P]> : T[P]}
+    }}}
+    */
+  @js.native
+  trait ResolvedObjectRecursive[T] extends StObject
   
   /** Represents a constructed righto object */
   @js.native
@@ -569,7 +574,13 @@ object mod {
   type RightoAfter = Righto[js.Array[Any], Any]
   
   /** Maps an array of types into their righto representations */
-  type RightoArrayFrom[T /* <: js.Array[Any] */, ET] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: righto.righto.Righto<[T[P]], ET>}
-    */ typings.righto.rightoStrings.RightoArrayFrom & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: righto.righto.Righto<[T[P]], ET>}
+    }}}
+    */
+  @js.native
+  trait RightoArrayFrom[T /* <: js.Array[Any] */, ET] extends StObject
 }

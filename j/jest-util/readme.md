@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-util
 
-Typings are for version 29.1.2
+Typings are for version 29.2.0
 
 
 

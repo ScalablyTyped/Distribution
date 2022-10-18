@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("watson-developer-cloud/natural-language-understanding/v1-generated", JSImport.Namespace)
 @js.native
-class ^ protected () extends NaturalLanguageUnderstandingV1 {
+open class ^ protected () extends NaturalLanguageUnderstandingV1 {
   /**
     * Construct a NaturalLanguageUnderstandingV1 object.
     *

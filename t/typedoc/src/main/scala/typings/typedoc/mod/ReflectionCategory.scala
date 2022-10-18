@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "ReflectionCategory")
 @js.native
 open class ReflectionCategory protected ()
-  extends typings.typedoc.modelsMod.ReflectionCategory {
+  extends typings.typedoc.distLibModelsMod.ReflectionCategory {
   /**
     * Create a new ReflectionCategory instance.
     *

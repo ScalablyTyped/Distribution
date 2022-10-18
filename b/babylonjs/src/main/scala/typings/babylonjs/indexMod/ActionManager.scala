@@ -174,7 +174,7 @@ object ActionManager {
     */
   inline def Parse(
     parsedActions: Any,
-    `object`: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh],
+    `object`: Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
     scene: typings.babylonjs.sceneMod.Scene
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedActions.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

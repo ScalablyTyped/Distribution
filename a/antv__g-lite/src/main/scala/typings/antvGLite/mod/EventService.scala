@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "EventService")
 @js.native
 open class EventService protected ()
-  extends typings.antvGLite.servicesMod.EventService {
+  extends typings.antvGLite.distServicesMod.EventService {
   def this(
-    renderingContext: typings.antvGLite.renderingContextMod.RenderingContext,
-    contextService: typings.antvGLite.contextServiceMod.ContextService[Any],
+    renderingContext: typings.antvGLite.distServicesRenderingContextMod.RenderingContext,
+    contextService: typings.antvGLite.distServicesContextServiceMod.ContextService[Any],
     canvasConfig: typings.antvGLite.distTypesMod.CanvasConfig,
-    displayObjectPool: typings.antvGLite.displayObjectsMod.DisplayObjectPool
+    displayObjectPool: typings.antvGLite.distDisplayObjectsMod.DisplayObjectPool
   ) = this()
 }

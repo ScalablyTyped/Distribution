@@ -13,12 +13,12 @@ trait Aheadby extends StObject {
   /** @example 4 */
   var ahead_by: Double
   
-  var base_commit: AuthorCommentsurl
+  var base_commit: Stats
   
   /** @example 5 */
   var behind_by: Double
   
-  var commits: js.Array[AuthorCommentsurl]
+  var commits: js.Array[Stats]
   
   /**
     * Format: uri
@@ -34,7 +34,7 @@ trait Aheadby extends StObject {
     */
   var html_url: String
   
-  var merge_base_commit: AuthorCommentsurl
+  var merge_base_commit: Stats
   
   /**
     * Format: uri
@@ -67,12 +67,12 @@ object Aheadby {
   
   inline def apply(
     ahead_by: Double,
-    base_commit: AuthorCommentsurl,
+    base_commit: Stats,
     behind_by: Double,
-    commits: js.Array[AuthorCommentsurl],
+    commits: js.Array[Stats],
     diff_url: String,
     html_url: String,
-    merge_base_commit: AuthorCommentsurl,
+    merge_base_commit: Stats,
     patch_url: String,
     permalink_url: String,
     status: diverged | ahead | behind | identical,
@@ -87,13 +87,13 @@ object Aheadby {
     
     inline def setAhead_by(value: Double): Self = StObject.set(x, "ahead_by", value.asInstanceOf[js.Any])
     
-    inline def setBase_commit(value: AuthorCommentsurl): Self = StObject.set(x, "base_commit", value.asInstanceOf[js.Any])
+    inline def setBase_commit(value: Stats): Self = StObject.set(x, "base_commit", value.asInstanceOf[js.Any])
     
     inline def setBehind_by(value: Double): Self = StObject.set(x, "behind_by", value.asInstanceOf[js.Any])
     
-    inline def setCommits(value: js.Array[AuthorCommentsurl]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+    inline def setCommits(value: js.Array[Stats]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    inline def setCommitsVarargs(value: AuthorCommentsurl*): Self = StObject.set(x, "commits", js.Array(value*))
+    inline def setCommitsVarargs(value: Stats*): Self = StObject.set(x, "commits", js.Array(value*))
     
     inline def setDiff_url(value: String): Self = StObject.set(x, "diff_url", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object Aheadby {
     
     inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    inline def setMerge_base_commit(value: AuthorCommentsurl): Self = StObject.set(x, "merge_base_commit", value.asInstanceOf[js.Any])
+    inline def setMerge_base_commit(value: Stats): Self = StObject.set(x, "merge_base_commit", value.asInstanceOf[js.Any])
     
     inline def setPatch_url(value: String): Self = StObject.set(x, "patch_url", value.asInstanceOf[js.Any])
     

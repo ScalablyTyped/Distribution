@@ -2,13 +2,13 @@ package typings.redisClient.anon
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.redisClient.libCommandsMod.RedisExtensions
-import typings.redisClient.libCommandsMod.RedisFunctions
-import typings.redisClient.libCommandsMod.RedisModules
-import typings.redisClient.libCommandsMod.RedisScripts
-import typings.redisClient.multiCommandMod.InstantiableRedisMultiCommand
-import typings.redisClient.multiCommandMod.RedisClientMultiCommand
-import typings.redisClient.multiCommandMod.RedisClientMultiExecutor
+import typings.redisClient.distLibClientMultiCommandMod.InstantiableRedisMultiCommand
+import typings.redisClient.distLibClientMultiCommandMod.RedisClientMultiCommand
+import typings.redisClient.distLibClientMultiCommandMod.RedisClientMultiExecutor
+import typings.redisClient.distLibCommandsMod.RedisExtensions
+import typings.redisClient.distLibCommandsMod.RedisFunctions
+import typings.redisClient.distLibCommandsMod.RedisModules
+import typings.redisClient.distLibCommandsMod.RedisScripts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

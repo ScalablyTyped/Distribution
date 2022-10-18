@@ -14,7 +14,7 @@ object PositionEncodingKind {
     */
   @JSImport("vscode-languageserver-protocol", "PositionEncodingKind.UTF16")
   @js.native
-  val UTF16: typings.vscodeLanguageserverProtocol.protocolMod.PositionEncodingKind = js.native
+  val UTF16: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.PositionEncodingKind = js.native
   
   /**
     * Character offsets count UTF-32 code units.
@@ -25,12 +25,12 @@ object PositionEncodingKind {
     */
   @JSImport("vscode-languageserver-protocol", "PositionEncodingKind.UTF32")
   @js.native
-  val UTF32: typings.vscodeLanguageserverProtocol.protocolMod.PositionEncodingKind = js.native
+  val UTF32: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.PositionEncodingKind = js.native
   
   /**
     * Character offsets count UTF-8 code units.
     */
   @JSImport("vscode-languageserver-protocol", "PositionEncodingKind.UTF8")
   @js.native
-  val UTF8: typings.vscodeLanguageserverProtocol.protocolMod.PositionEncodingKind = js.native
+  val UTF8: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.PositionEncodingKind = js.native
 }

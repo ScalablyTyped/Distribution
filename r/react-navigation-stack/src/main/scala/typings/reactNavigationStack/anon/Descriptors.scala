@@ -2,7 +2,7 @@ package typings.reactNavigationStack.anon
 
 import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRoute
-import typings.reactNavigationStack.vendorTypesMod.StackDescriptorMap
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackDescriptorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

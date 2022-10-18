@@ -1,6 +1,6 @@
 package typings.reactIntl
 
-import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
+import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
 import typings.formatjsIntl.srcErrorMod.InvalidConfigError
 import typings.formatjsIntl.srcErrorMod.MessageFormatError
 import typings.formatjsIntl.srcErrorMod.MissingDataError
@@ -50,7 +50,7 @@ object srcTypesMod {
     var onWarn: js.UndefOr[OnWarnFn] = js.undefined
     
     var textComponent: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
       ] = js.undefined
     
     var timeZone: js.UndefOr[String] = js.undefined
@@ -107,7 +107,9 @@ object srcTypesMod {
       
       inline def setOnWarnUndefined: Self = StObject.set(x, "onWarn", js.undefined)
       
-      inline def setTextComponent(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
+      inline def setTextComponent(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
+      ): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
       
       inline def setTextComponentUndefined: Self = StObject.set(x, "textComponent", js.undefined)
       
@@ -125,7 +127,7 @@ object srcTypesMod {
   trait IntlShape
     extends StObject
        with ResolvedIntlConfig
-       with IntlFormatters[ReactNode, ReactNode] {
+       with IntlFormatters[ReactNode] {
     
     var formatters: Formatters = js.native
   }
@@ -135,7 +137,7 @@ object srcTypesMod {
        with typings.formatjsIntl.srcTypesMod.ResolvedIntlConfig[ReactNode] {
     
     var textComponent: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
       ] = js.undefined
     
     var wrapRichTextChunksInFragment: js.UndefOr[Boolean] = js.undefined
@@ -156,7 +158,9 @@ object srcTypesMod {
     
     extension [Self <: ResolvedIntlConfig](x: Self) {
       
-      inline def setTextComponent(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
+      inline def setTextComponent(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
+      ): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
       
       inline def setTextComponentUndefined: Self = StObject.set(x, "textComponent", js.undefined)
       

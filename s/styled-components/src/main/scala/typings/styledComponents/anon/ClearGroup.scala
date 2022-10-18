@@ -1,6 +1,6 @@
 package typings.styledComponents.anon
 
-import typings.styledComponents.typesMod.Tag
+import typings.styledComponents.nativeDistDistSheetTypesMod.Tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

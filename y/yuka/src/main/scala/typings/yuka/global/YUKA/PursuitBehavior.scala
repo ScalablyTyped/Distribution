@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class PursuitBehavior ()
   extends typings.yuka.mod.PursuitBehavior {
-  def this(evader: typings.yuka.movingEntityMod.MovingEntity) = this()
+  def this(evader: typings.yuka.srcCoreMovingEntityMod.MovingEntity) = this()
   def this(evader: Null, predictionFactor: Double) = this()
   def this(evader: Unit, predictionFactor: Double) = this()
-  def this(evader: typings.yuka.movingEntityMod.MovingEntity, predictionFactor: Double) = this()
+  def this(evader: typings.yuka.srcCoreMovingEntityMod.MovingEntity, predictionFactor: Double) = this()
 }

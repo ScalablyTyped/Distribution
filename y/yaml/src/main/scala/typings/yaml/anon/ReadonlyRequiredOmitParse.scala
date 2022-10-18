@@ -1,6 +1,6 @@
 package typings.yaml.anon
 
-import typings.yaml.nodeMod.ParsedNode
+import typings.yaml.distNodesNodeMod.ParsedNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

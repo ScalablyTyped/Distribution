@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,7 @@ trait Alert extends StObject {
   
   /** Optional. The data associated with this alert, for example google.apps.alertcenter.type.DeviceCompromised. */
   var data: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.Alert & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Output only. `True` if this alert is marked for deletion. */
@@ -86,9 +83,7 @@ object Alert {
     inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
     inline def setData(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.Alert & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<plotly.js.plotly.js.Gauge> */
 trait PartialGaugeAxis extends StObject {
   
-  var axis: js.UndefOr[PartialAxisCalendar] = js.undefined
+  var axis: js.UndefOr[PartialAxis] = js.undefined
   
   var bar: js.UndefOr[PartialGaugeBarColor] = js.undefined
   
@@ -34,7 +34,7 @@ object PartialGaugeAxis {
   
   extension [Self <: PartialGaugeAxis](x: Self) {
     
-    inline def setAxis(value: PartialAxisCalendar): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: PartialAxis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     

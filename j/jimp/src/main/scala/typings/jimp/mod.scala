@@ -25,14 +25,10 @@ import typings.jimp.jimpInts.`32`
 import typings.jimp.jimpInts.`3`
 import typings.jimp.jimpInts.`4`
 import typings.jimp.jimpInts.`8`
-import typings.jimp.jimpStrings.`before-change`
 import typings.jimp.jimpStrings.`imageSlashx-ms-bmp`
 import typings.jimp.jimpStrings.bezierInterpolation
 import typings.jimp.jimpStrings.bicubicInterpolation
 import typings.jimp.jimpStrings.bilinearInterpolation
-import typings.jimp.jimpStrings.changed
-import typings.jimp.jimpStrings.clone
-import typings.jimp.jimpStrings.constructor
 import typings.jimp.jimpStrings.hermiteInterpolation
 import typings.jimp.jimpStrings.imageSlashbmp
 import typings.jimp.jimpStrings.imageSlashgif
@@ -1087,23 +1083,15 @@ object mod extends Shortcut {
     inline def scan: typings.jimp.jimpStrings.scan = "scan".asInstanceOf[typings.jimp.jimpStrings.scan]
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.jimp.anon.EventName[T]
-    - typings.jimp.anon.Dictkey[T]
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends 'any' ? any : T extends jimp.jimp.ChangeName ? {  eventName :'before-change' | 'changed',   methodName :T, [key: string] : any} : {  eventName :T,   methodName :T extends 'initialized' ? 'constructor' : T extends 'before-change' | 'changed' ? jimp.jimp.ChangeName : T extends 'before-clone' | 'cloned' ? 'clone' : any}
+    }}}
+    */
+  @js.native
   trait ListenerData[T /* <: ListenableName */] extends StObject
-  object ListenerData {
-    
-    inline def Dictkey[T /* <: ListenableName */](eventName: `before-change` | changed, methodName: T): typings.jimp.anon.Dictkey[T] = {
-      val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.jimp.anon.Dictkey[T]]
-    }
-    
-    inline def EventName[T /* <: ListenableName */](eventName: T, methodName: clone | ChangeName | constructor): typings.jimp.anon.EventName[T] = {
-      val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.jimp.anon.EventName[T]]
-    }
-  }
   
   type PrintableText = Any | AlignmentX
   

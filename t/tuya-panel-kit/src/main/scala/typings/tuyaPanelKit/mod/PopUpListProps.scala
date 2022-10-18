@@ -7,7 +7,7 @@ import typings.reactNative.anon.AutoscrollToTopThreshold
 import typings.reactNative.anon.AverageItemLength
 import typings.reactNative.anon.Changed
 import typings.reactNative.anon.DistanceFromEnd
-import typings.reactNative.anon.Index
+import typings.reactNative.anon.Length
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -30,7 +30,7 @@ import typings.reactNative.mod.ViewabilityConfigCallbackPair
 import typings.reactNative.mod.ViewabilityConfigCallbackPairs
 import typings.tuyaPanelKit.anon.BackIconColor
 import typings.tuyaPanelKit.anon.Content
-import typings.tuyaPanelKit.anon.`21`
+import typings.tuyaPanelKit.anon.`11`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.Fade
 import typings.tuyaPanelKit.tuyaPanelKitStrings.PullUp
 import typings.tuyaPanelKit.tuyaPanelKitStrings.ScaleFadeIn
@@ -346,7 +346,7 @@ trait PopUpListProps extends StObject {
   var getItemCount: js.UndefOr[js.Function1[/* data */ Any, Double]] = js.undefined
   
   var getItemLayout: js.UndefOr[
-    js.Function2[/* data */ js.UndefOr[js.Array[js.Object] | Null], /* index */ Double, Index]
+    js.Function2[/* data */ js.UndefOr[js.Array[js.Object] | Null], /* index */ Double, Length]
   ] = js.undefined
   
   var hardwareAccelerated: js.UndefOr[Boolean] = js.undefined
@@ -509,7 +509,7 @@ trait PopUpListProps extends StObject {
     * @description Callback of back
     * @defaultValue () => {}
     */
-  var onBack: js.UndefOr[js.Function1[/* args */ `21`, Unit]] = js.undefined
+  var onBack: js.UndefOr[js.Function1[/* args */ `11`, Unit]] = js.undefined
   
   /**
     * @language zh-CN
@@ -533,7 +533,7 @@ trait PopUpListProps extends StObject {
     * @description Callback of clicking the confirm button
     * @defaultValue () => {}
     */
-  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `21`, Unit]] = js.undefined
+  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `11`, Unit]] = js.undefined
   
   var onContentSizeChange: js.UndefOr[js.Function2[/* w */ Double, /* h */ Double, Unit]] = js.undefined
   
@@ -557,7 +557,7 @@ trait PopUpListProps extends StObject {
     * @description Mask layer Click
     * @defaultValue () => {}
     */
-  var onMaskPress: js.UndefOr[js.Function1[/* args */ `21`, Unit]] = js.undefined
+  var onMaskPress: js.UndefOr[js.Function1[/* args */ `11`, Unit]] = js.undefined
   
   var onMomentumScrollBegin: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
   
@@ -635,7 +635,7 @@ trait PopUpListProps extends StObject {
     * @description Callback of selecting the event
     * @defaultValue () => {}
     */
-  var onSelect: js.UndefOr[js.Function2[/* value */ String | Double, /* params */ js.UndefOr[`21`], Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function2[/* value */ String | Double, /* params */ js.UndefOr[`11`], Unit]] = js.undefined
   
   var onShow: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]] = js.undefined
   
@@ -1188,7 +1188,7 @@ object PopUpListProps {
     
     inline def setGetItemCountUndefined: Self = StObject.set(x, "getItemCount", js.undefined)
     
-    inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[js.Object] | Null], /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
+    inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[js.Object] | Null], /* index */ Double) => Length): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
     
     inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
     
@@ -1394,7 +1394,7 @@ object PopUpListProps {
     
     inline def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
     
-    inline def setOnBack(value: /* args */ `21` => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
+    inline def setOnBack(value: /* args */ `11` => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
     
     inline def setOnBackUndefined: Self = StObject.set(x, "onBack", js.undefined)
     
@@ -1402,7 +1402,7 @@ object PopUpListProps {
     
     inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
     
-    inline def setOnConfirm(value: (/* data */ Any, /* args */ `21`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
+    inline def setOnConfirm(value: (/* data */ Any, /* args */ `11`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
     
     inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     
@@ -1434,7 +1434,7 @@ object PopUpListProps {
     
     inline def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
     
-    inline def setOnMaskPress(value: /* args */ `21` => Unit): Self = StObject.set(x, "onMaskPress", js.Any.fromFunction1(value))
+    inline def setOnMaskPress(value: /* args */ `11` => Unit): Self = StObject.set(x, "onMaskPress", js.Any.fromFunction1(value))
     
     inline def setOnMaskPressUndefined: Self = StObject.set(x, "onMaskPress", js.undefined)
     
@@ -1572,7 +1572,7 @@ object PopUpListProps {
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    inline def setOnSelect(value: (/* value */ String | Double, /* params */ js.UndefOr[`21`]) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+    inline def setOnSelect(value: (/* value */ String | Double, /* params */ js.UndefOr[`11`]) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
     
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     

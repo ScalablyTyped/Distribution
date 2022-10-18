@@ -1,32 +1,32 @@
 package typings.baseui.anon
 
-import typings.baseui.baseuiStrings.Plussign252
-import typings.baseui.baseuiStrings.SO
+import typings.baseui.baseuiStrings.Plussign211
+import typings.baseui.baseuiStrings.SS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `212` extends StObject {
   
-  val dialCode: Plussign252
+  val dialCode: Plussign211
   
-  val id: SO
+  val id: SS
   
-  val label: String
+  val label: /* South Sudan (‫جنوب السودان‬‎) */ String
 }
 object `212` {
   
   inline def apply(): `212` = {
-    val __obj = js.Dynamic.literal(dialCode = "+252", id = "SO", label = "Somalia (Soomaaliya)")
+    val __obj = js.Dynamic.literal(dialCode = "+211", id = "SS", label = "South Sudan (\u202B\u062C\u0646\u0648\u0628 \u0627\u0644\u0633\u0648\u062F\u0627\u0646\u202C\u200E)")
     __obj.asInstanceOf[`212`]
   }
   
   extension [Self <: `212`](x: Self) {
     
-    inline def setDialCode(value: Plussign252): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
+    inline def setDialCode(value: Plussign211): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
     
-    inline def setId(value: SO): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: SS): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: /* South Sudan (‫جنوب السودان‬‎) */ String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

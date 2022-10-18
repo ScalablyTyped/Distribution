@@ -1,11 +1,13 @@
 package typings.materializecssMaterialize.M
 
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentBase<ToastOptions> * / any */ trait Toast extends StObject {
+trait Toast
+  extends StObject
+     with ComponentBase[ToastOptions] {
   
   /**
     * remove a specific toast
@@ -24,8 +26,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Toast {
   
-  inline def apply(dismiss: () => Unit, panning: Boolean, timeRemaining: Double): Toast = {
-    val __obj = js.Dynamic.literal(dismiss = js.Any.fromFunction0(dismiss), panning = panning.asInstanceOf[js.Any], timeRemaining = timeRemaining.asInstanceOf[js.Any])
+  inline def apply(dismiss: () => Unit, el: Element, options: ToastOptions, panning: Boolean, timeRemaining: Double): Toast = {
+    val __obj = js.Dynamic.literal(dismiss = js.Any.fromFunction0(dismiss), el = el.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], panning = panning.asInstanceOf[js.Any], timeRemaining = timeRemaining.asInstanceOf[js.Any])
     __obj.asInstanceOf[Toast]
   }
   

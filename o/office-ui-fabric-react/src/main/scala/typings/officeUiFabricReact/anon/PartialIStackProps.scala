@@ -1,7 +1,10 @@
 package typings.officeUiFabricReact.anon
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fluentuiTheme.ithemeMod.ITheme
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsStackStackDottypesMod.Alignment
+import typings.officeUiFabricReact.libComponentsStackStackDottypesMod.IStackProps
+import typings.officeUiFabricReact.libComponentsStackStackDottypesMod.IStackStyles
+import typings.officeUiFabricReact.libComponentsStackStackDottypesMod.IStackTokens
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions removals`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions text`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`inline`
@@ -54,11 +57,6 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.unset
 import typings.officeUiFabricReact.officeUiFabricReactStrings.url
 import typings.officeUiFabricReact.officeUiFabricReactStrings.vertical
 import typings.officeUiFabricReact.officeUiFabricReactStrings.yes
-import typings.officeUiFabricReact.stackTypesMod.Alignment
-import typings.officeUiFabricReact.stackTypesMod.IStackProps
-import typings.officeUiFabricReact.stackTypesMod.IStackSlots
-import typings.officeUiFabricReact.stackTypesMod.IStackStyles
-import typings.officeUiFabricReact.stackTypesMod.IStackTokens
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -99,9 +97,9 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
-import typings.uifabricFoundation.ihtmlslotsMod.IHTMLSlot
 import typings.uifabricFoundation.libIcomponentMod.IStylesFunctionOrObject
 import typings.uifabricFoundation.libIcomponentMod.ITokenFunctionOrObject
+import typings.uifabricFoundation.libIhtmlslotsMod.IHTMLSlot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -462,9 +460,7 @@ trait PartialIStackProps extends StObject {
   var slot: js.UndefOr[String] = js.undefined
   
   var slots: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>}
-    */ typings.officeUiFabricReact.officeUiFabricReactStrings.PartialIStackProps & TopLevel[IStackSlots]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>} */ js.Any
   ] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
@@ -1213,9 +1209,7 @@ object PartialIStackProps {
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
     inline def setSlots(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>}
-      */ typings.officeUiFabricReact.officeUiFabricReactStrings.PartialIStackProps & TopLevel[IStackSlots]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>} */ js.Any
     ): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)

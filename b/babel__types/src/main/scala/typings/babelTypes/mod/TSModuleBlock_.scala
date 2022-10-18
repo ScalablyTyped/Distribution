@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with BaseNode
      with Block
      with BlockParent
+     with FunctionParent
      with Scopable
      with TypeScript {
   

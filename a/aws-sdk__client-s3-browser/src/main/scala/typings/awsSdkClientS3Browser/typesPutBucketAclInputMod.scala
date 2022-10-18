@@ -4,9 +4,9 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.`authenticated
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.`private`
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.`public-read-write`
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.`public-read`
-import typings.awsSdkClientS3Browser.inputTypesUnionMod._InputTypesUnion
 import typings.awsSdkClientS3Browser.typesAccessControlPolicyMod.AccessControlPolicy
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientS3Browser.typesInputTypesUnionMod._InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

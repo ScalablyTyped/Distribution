@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "opentelemetry__semantic-conventions"
-version := "1.7.0-e4df2b"
+version := "1.7.0-3c3ca2"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

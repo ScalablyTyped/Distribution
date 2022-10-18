@@ -1,9 +1,9 @@
 package typings.antDesignProUtils
 
-import typings.antDesignProUtils.conversionMomentValueMod._DateFormatter
-import typings.antDesignProUtils.filterDropdownMod.Placement
-import typings.antDesignProUtils.typingMod._ProSchemaComponentTypes
-import typings.antDesignProUtils.useEditableArrayMod.RowEditableType
+import typings.antDesignProUtils.esComponentsFilterDropdownMod.Placement
+import typings.antDesignProUtils.esConversionMomentValueMod._DateFormatter
+import typings.antDesignProUtils.esTypingMod._ProSchemaComponentTypes
+import typings.antDesignProUtils.esUseEditableArrayMod.RowEditableType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

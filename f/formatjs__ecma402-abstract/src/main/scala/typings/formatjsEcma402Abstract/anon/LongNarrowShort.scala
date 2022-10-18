@@ -1,6 +1,6 @@
 package typings.formatjsEcma402Abstract.anon
 
-import typings.formatjsEcma402Abstract.displaynamesMod.ScriptCode
+import typings.formatjsEcma402Abstract.libTypesDisplaynamesMod.ScriptCode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

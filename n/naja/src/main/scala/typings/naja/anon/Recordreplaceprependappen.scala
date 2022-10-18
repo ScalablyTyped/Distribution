@@ -1,6 +1,6 @@
 package typings.naja.anon
 
-import typings.naja.snippetHandlerMod.SnippetUpdateOperation
+import typings.naja.distCoreSnippetHandlerMod.SnippetUpdateOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

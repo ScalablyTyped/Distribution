@@ -1,8 +1,8 @@
 package typings.relayRuntime.anon
 
+import typings.relayRuntime.libStoreRelayStoreTypesMod.FieldLocation
+import typings.relayRuntime.libStoreRelayStoreTypesMod.MissingRequiredFields
 import typings.relayRuntime.relayRuntimeStrings.LOG
-import typings.relayRuntime.relayStoreTypesMod.FieldLocation
-import typings.relayRuntime.relayStoreTypesMod.MissingRequiredFields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

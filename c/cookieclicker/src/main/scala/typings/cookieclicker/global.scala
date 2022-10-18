@@ -2426,11 +2426,12 @@ object global {
     
     inline def refillLump(n: Double, func: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("refillLump")(n.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def registerHook(
-      hook: (Exclude[GameHooks, cps | cookiesPerClick | reset | ticker]) | cookiesPerClick | cps,
-      func: js.Array[js.Function0[Unit] | (js.Function1[/* num */ Double, Double])]
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook(hook: cps | cookiesPerClick, func: js.Array[js.Function1[/* num */ Double, Double]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def registerHook(hook: cps | cookiesPerClick, func: js.Function1[/* num */ Double, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook(
+      hook: Exclude[GameHooks, cps | cookiesPerClick | reset | ticker],
+      func: js.Array[js.Function0[Unit]]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def registerHook(hook: Exclude[GameHooks, cps | cookiesPerClick | reset | ticker], func: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def registerHook_reset(hook: reset, func: js.Array[js.Function1[/* hard */ Boolean, Unit]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]

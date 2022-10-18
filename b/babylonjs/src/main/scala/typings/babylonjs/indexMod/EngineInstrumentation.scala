@@ -17,5 +17,5 @@ open class EngineInstrumentation protected ()
   def this(/**
     * Define the instrumented engine.
     */
-  engine: typings.babylonjs.engineMod.Engine) = this()
+  engine: typings.babylonjs.enginesEngineMod.Engine) = this()
 }

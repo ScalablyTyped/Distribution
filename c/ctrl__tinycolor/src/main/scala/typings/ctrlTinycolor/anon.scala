@@ -1,8 +1,8 @@
 package typings.ctrlTinycolor
 
 import typings.ctrlTinycolor.distMod.TinyColor_
-import typings.ctrlTinycolor.randomMod.RandomCountOptions
-import typings.ctrlTinycolor.randomMod.RandomOptions
+import typings.ctrlTinycolor.distRandomMod.RandomCountOptions
+import typings.ctrlTinycolor.distRandomMod.RandomOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

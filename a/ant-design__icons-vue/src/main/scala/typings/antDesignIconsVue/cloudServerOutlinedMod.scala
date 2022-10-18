@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCloudServerOutlinedMod.CloudServerOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudServerOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CloudServerOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CloudServerOutlined", JSImport.Default)
   @js.native
   val default: CloudServerOutlinedIconType = js.native
-  
-  @js.native
-  trait CloudServerOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CloudServerOutlinedIconType: String = js.native
-  }
   
   type _To = CloudServerOutlinedIconType
   

@@ -1,8 +1,8 @@
 package typings.esfxDisposable
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.esfxDisposable.asyncDisposableStackMod.AsyncDisposableStack
-import typings.esfxDisposable.disposableStackMod.DisposableStack
+import typings.esfxDisposable.distTypesAsyncDisposableStackMod.AsyncDisposableStack
+import typings.esfxDisposable.distTypesDisposableStackMod.DisposableStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -882,9 +882,9 @@ object global {
     /**
       * An abstract base object that defines the methods and attributes for map overlays.
       */
-    @JSGlobal("mapkit.Overlay")
+    /* note: abstract class */ @JSGlobal("mapkit.Overlay")
     @js.native
-    abstract class Overlay ()
+    open class Overlay ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.Overlay
     

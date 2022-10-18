@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.iphysicsengineMod.IPhysicsEnginePlugin
+import typings.babylonjs.physicsIphysicsengineMod.IPhysicsEnginePlugin
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,14 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PhysicsEngine")
 @js.native
 open class PhysicsEngine protected ()
-  extends typings.babylonjs.legacyMod.PhysicsEngine {
+  extends typings.babylonjs.legacyLegacyMod.PhysicsEngine {
   /**
     * Creates a new Physics Engine
     * @param gravity defines the gravity vector used by the simulation
     * @param _physicsPlugin defines the plugin to use (CannonJS by default)
     */
-  def this(gravity: Nullable[typings.babylonjs.mathVectorMod.Vector3]) = this()
-  def this(gravity: Nullable[typings.babylonjs.mathVectorMod.Vector3], _physicsPlugin: IPhysicsEnginePlugin) = this()
+  def this(gravity: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector3]) = this()
+  def this(
+    gravity: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    _physicsPlugin: IPhysicsEnginePlugin
+  ) = this()
 }
 /* static members */
 object PhysicsEngine {

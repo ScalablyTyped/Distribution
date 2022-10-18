@@ -1,13 +1,13 @@
 package typings.storybookComponents.anon
 
-import typings.storybookComponents.popperjsCoreLibTypesMod.Rect
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Placement extends StObject {
   
-  var placement: typings.storybookComponents.popperjsCoreLibEnumsMod.Placement
+  var placement: typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement
   
   var popper: Rect
   
@@ -16,7 +16,7 @@ trait Placement extends StObject {
 object Placement {
   
   inline def apply(
-    placement: typings.storybookComponents.popperjsCoreLibEnumsMod.Placement,
+    placement: typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement,
     popper: Rect,
     reference: Rect
   ): Placement = {
@@ -26,7 +26,7 @@ object Placement {
   
   extension [Self <: Placement](x: Self) {
     
-    inline def setPlacement(value: typings.storybookComponents.popperjsCoreLibEnumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     inline def setPopper(value: Rect): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvComponent.typesMod.EnhancedTextCfg
+import typings.antvComponent.libTypesMod.EnhancedTextCfg
 import typings.antvG2.anon.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

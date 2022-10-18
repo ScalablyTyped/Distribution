@@ -1,7 +1,7 @@
 package typings.baseui
 
 import typings.baseui.anon.Dismiss
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.FocusEvent
 import typings.react.mod.Key
 import typings.react.mod.MouseEvent

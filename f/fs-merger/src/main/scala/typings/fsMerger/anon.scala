@@ -2,6 +2,8 @@ package typings.fsMerger
 
 import typings.fsMerger.fsMergerBooleans.`false`
 import typings.fsMerger.fsMergerStrings.buffer
+import typings.node.NodeJS.ErrnoException
+import typings.node.anon.EncodingWithFileTypes
 import typings.node.anon.ObjectEncodingOptionswith
 import typings.node.anon.ObjectEncodingOptionswithEncoding
 import typings.node.bufferMod.global.Buffer
@@ -67,83 +69,47 @@ object anon {
     
     def apply(
       path: PathLike,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* files */ js.Array[String], 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: Null,
-      callback: js.Function2[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* files */ js.Array[Buffer | String], 
-          Unit
-        ]
+      callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: Unit,
-      callback: js.Function2[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* files */ js.Array[Buffer | String], 
-          Unit
-        ]
+      callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: buffer,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* files */ js.Array[Buffer], 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
-      options: typings.node.anon.Encoding,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* files */ js.Array[Buffer], 
-          Unit
-        ]
+      options: EncodingWithFileTypes,
+      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: ObjectEncodingOptionswithEncoding,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* files */ js.Array[Dirent], 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Dirent], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: ObjectEncodingOptionswith,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* files */ js.Array[Buffer | String], 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: typings.node.anon.WithFileTypes,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* files */ js.Array[String], 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: BufferEncoding,
-      callback: js.Function2[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* files */ js.Array[Buffer | String], 
-          Unit
-        ]
+      callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
     ): Unit = js.native
   }
   

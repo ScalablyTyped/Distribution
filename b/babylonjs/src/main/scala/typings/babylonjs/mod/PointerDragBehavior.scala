@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options.dragPlaneNormal
   */
 open class PointerDragBehavior ()
-  extends typings.babylonjs.legacyMod.PointerDragBehavior {
+  extends typings.babylonjs.legacyLegacyMod.PointerDragBehavior {
   def this(options: DragAxis) = this()
 }
 /* static members */

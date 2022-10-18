@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "SubtractBlock")
 @js.native
 open class SubtractBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.SubtractBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.SubtractBlock {
   /**
     * Creates a new SubtractBlock
     * @param name defines the block name

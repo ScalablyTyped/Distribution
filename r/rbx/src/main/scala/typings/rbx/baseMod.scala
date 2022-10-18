@@ -2,8 +2,8 @@ package typings.rbx
 
 import typings.rbx.anon.PreferHelpersPropsOverrid
 import typings.rbx.anon.`0`
-import typings.rbx.exoticMod.ForwardRefAsExoticComponent
-import typings.rbx.exoticMod.FromReactType
+import typings.rbx.baseExoticMod.ForwardRefAsExoticComponent
+import typings.rbx.baseExoticMod.FromReactType
 import typings.rbx.typesMod.Prefer
 import typings.react.mod.ComponentPropsWithoutRef
 import typings.react.mod.ElementType

@@ -3,9 +3,6 @@ package typings.chromeApps.chrome
 import typings.chromeApps.anon.TEXTHTML
 import typings.chromeApps.chromeAppsStrings.TEXT_HTML
 import typings.chromeApps.chromeAppsStrings.TEXT_PLAIN
-import typings.chromeApps.chromeAppsStrings.textHtml
-import typings.chromeApps.chromeAppsStrings.textPlain
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +41,7 @@ object clipboard {
     var `type`: ToStringLiteral[
         TEXTHTML, 
         /* keyof chrome-apps.anon.TEXTHTML */ TEXT_PLAIN | TEXT_HTML, 
-        Exclude[/* keyof chrome-apps.anon.TEXTHTML */ TEXT_PLAIN | TEXT_HTML, textPlain | textHtml]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  TEXT_PLAIN :'textPlain',   TEXT_HTML :'textHtml'} extends keyof {  TEXT_PLAIN :'textPlain',   TEXT_HTML :'textHtml'} ? std.Exclude<keyof {  TEXT_PLAIN :'textPlain',   TEXT_HTML :'textHtml'}, 'textPlain' | 'textHtml'> : never */ js.Any
       ]
   }
   object AdditionalItems {
@@ -54,7 +51,7 @@ object clipboard {
       `type`: ToStringLiteral[
           TEXTHTML, 
           /* keyof chrome-apps.anon.TEXTHTML */ TEXT_PLAIN | TEXT_HTML, 
-          Exclude[/* keyof chrome-apps.anon.TEXTHTML */ TEXT_PLAIN | TEXT_HTML, textPlain | textHtml]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  TEXT_PLAIN :'textPlain',   TEXT_HTML :'textHtml'} extends keyof {  TEXT_PLAIN :'textPlain',   TEXT_HTML :'textHtml'} ? std.Exclude<keyof {  TEXT_PLAIN :'textPlain',   TEXT_HTML :'textHtml'}, 'textPlain' | 'textHtml'> : never */ js.Any
         ]
     ): AdditionalItems = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
@@ -70,7 +67,7 @@ object clipboard {
         value: ToStringLiteral[
               TEXTHTML, 
               /* keyof chrome-apps.anon.TEXTHTML */ TEXT_PLAIN | TEXT_HTML, 
-              Exclude[/* keyof chrome-apps.anon.TEXTHTML */ TEXT_PLAIN | TEXT_HTML, textPlain | textHtml]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  TEXT_PLAIN :'textPlain',   TEXT_HTML :'textHtml'} extends keyof {  TEXT_PLAIN :'textPlain',   TEXT_HTML :'textHtml'} ? std.Exclude<keyof {  TEXT_PLAIN :'textPlain',   TEXT_HTML :'textHtml'}, 'textPlain' | 'textHtml'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

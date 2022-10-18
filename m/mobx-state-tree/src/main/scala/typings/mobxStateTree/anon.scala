@@ -1,39 +1,39 @@
 package typings.mobxStateTree
 
-import typings.mobxStateTree.arrayMod.IArrayType
-import typings.mobxStateTree.customMod.CustomTypeOptions
-import typings.mobxStateTree.enumerationMod.UnionStringArray
-import typings.mobxStateTree.mapMod.IMapType
-import typings.mobxStateTree.maybeMod.IMaybe
-import typings.mobxStateTree.maybeMod.IMaybeNull
+import typings.mobxStateTree.distCoreTypeTypeMod.IAnyComplexType
+import typings.mobxStateTree.distCoreTypeTypeMod.IAnyType
+import typings.mobxStateTree.distCoreTypeTypeMod.ISimpleType
+import typings.mobxStateTree.distCoreTypeTypeMod.IType
+import typings.mobxStateTree.distTypesComplexTypesArrayMod.IArrayType
+import typings.mobxStateTree.distTypesComplexTypesMapMod.IMapType
+import typings.mobxStateTree.distTypesComplexTypesModelMod.CustomJoin
+import typings.mobxStateTree.distTypesComplexTypesModelMod.IModelType
+import typings.mobxStateTree.distTypesComplexTypesModelMod.ModelActions
+import typings.mobxStateTree.distTypesComplexTypesModelMod.ModelCreationType2
+import typings.mobxStateTree.distTypesComplexTypesModelMod.ModelInstanceType
+import typings.mobxStateTree.distTypesComplexTypesModelMod.ModelProperties
+import typings.mobxStateTree.distTypesComplexTypesModelMod.ModelPropertiesDeclaration
+import typings.mobxStateTree.distTypesComplexTypesModelMod.ModelPropertiesDeclarationToProperties
+import typings.mobxStateTree.distTypesComplexTypesModelMod.ModelSnapshotType2
+import typings.mobxStateTree.distTypesUtilityTypesCustomMod.CustomTypeOptions
+import typings.mobxStateTree.distTypesUtilityTypesEnumerationMod.UnionStringArray
+import typings.mobxStateTree.distTypesUtilityTypesMaybeMod.IMaybe
+import typings.mobxStateTree.distTypesUtilityTypesMaybeMod.IMaybeNull
+import typings.mobxStateTree.distTypesUtilityTypesOptionalMod.IOptionalIType
+import typings.mobxStateTree.distTypesUtilityTypesOptionalMod.OptionalDefaultValueOrFunction
+import typings.mobxStateTree.distTypesUtilityTypesOptionalMod.ValidOptionalValues
+import typings.mobxStateTree.distTypesUtilityTypesReferenceMod.IReferenceType
+import typings.mobxStateTree.distTypesUtilityTypesReferenceMod.OnReferenceInvalidated
+import typings.mobxStateTree.distTypesUtilityTypesReferenceMod.OnReferenceInvalidatedEvent
+import typings.mobxStateTree.distTypesUtilityTypesReferenceMod.ReferenceOptions
+import typings.mobxStateTree.distTypesUtilityTypesReferenceMod.ReferenceOptionsGetSet
+import typings.mobxStateTree.distTypesUtilityTypesReferenceMod.ReferenceT
+import typings.mobxStateTree.distTypesUtilityTypesSnapshotProcessorMod.ISnapshotProcessor
+import typings.mobxStateTree.distTypesUtilityTypesSnapshotProcessorMod.ISnapshotProcessors
+import typings.mobxStateTree.distTypesUtilityTypesSnapshotProcessorMod.NotCustomized
+import typings.mobxStateTree.distTypesUtilityTypesUnionMod.ITypeUnion
+import typings.mobxStateTree.distTypesUtilityTypesUnionMod.UnionOptions
 import typings.mobxStateTree.mobxStateTreeBooleans.`false`
-import typings.mobxStateTree.modelMod.CustomJoin
-import typings.mobxStateTree.modelMod.IModelType
-import typings.mobxStateTree.modelMod.ModelActions
-import typings.mobxStateTree.modelMod.ModelCreationType2
-import typings.mobxStateTree.modelMod.ModelInstanceType
-import typings.mobxStateTree.modelMod.ModelProperties
-import typings.mobxStateTree.modelMod.ModelPropertiesDeclaration
-import typings.mobxStateTree.modelMod.ModelPropertiesDeclarationToProperties
-import typings.mobxStateTree.modelMod.ModelSnapshotType2
-import typings.mobxStateTree.optionalMod.IOptionalIType
-import typings.mobxStateTree.optionalMod.OptionalDefaultValueOrFunction
-import typings.mobxStateTree.optionalMod.ValidOptionalValues
-import typings.mobxStateTree.referenceMod.IReferenceType
-import typings.mobxStateTree.referenceMod.OnReferenceInvalidated
-import typings.mobxStateTree.referenceMod.OnReferenceInvalidatedEvent
-import typings.mobxStateTree.referenceMod.ReferenceOptions
-import typings.mobxStateTree.referenceMod.ReferenceOptionsGetSet
-import typings.mobxStateTree.referenceMod.ReferenceT
-import typings.mobxStateTree.snapshotProcessorMod.ISnapshotProcessor
-import typings.mobxStateTree.snapshotProcessorMod.ISnapshotProcessors
-import typings.mobxStateTree.snapshotProcessorMod.NotCustomized
-import typings.mobxStateTree.typeMod.IAnyComplexType
-import typings.mobxStateTree.typeMod.IAnyType
-import typings.mobxStateTree.typeMod.ISimpleType
-import typings.mobxStateTree.typeMod.IType
-import typings.mobxStateTree.unionMod.ITypeUnion
-import typings.mobxStateTree.unionMod.UnionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -103,13 +103,7 @@ object anon {
     
     var SnapshotType: Any = js.native
     
-    var TypeWithoutSTN: Any = js.native
-  }
-  
-  @js.native
-  trait CreationTypeType extends StObject {
-    
-    var CreationType: Any = js.native
+    var Type: Any = js.native
   }
   
   @js.native
@@ -513,18 +507,8 @@ object anon {
       ] = js.native
     def apply[CA, SA, TA, CB, SB, TB, CC, SC, TC](A: IType[CA, SA, TA], B: IType[CB, SB, TB], C: IType[CC, SC, TC]): ITypeUnion[CA | CB | CC, SA | SB | SC, TA | TB | TC] = js.native
     def apply[CA, SA, TA, CB, SB, TB, CC, SC, TC](options: UnionOptions, A: IType[CA, SA, TA], B: IType[CB, SB, TB], C: IType[CC, SC, TC]): ITypeUnion[CA | CB | CC, SA | SB | SC, TA | TB | TC] = js.native
-    def apply[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC](A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB], C: IModelType[PC, OC, FCC, FSC]): ITypeUnion[
-        ModelCreationType2[PA | PB | PC, FCA | FCB | FCC], 
-        ModelSnapshotType2[PA | PB | PC, FSA | FSB | FSC], 
-        ModelInstanceType[PA | PB | PC, OA | OB | OC]
-      ] = js.native
     def apply[CA, SA, TA, CB, SB, TB, CC, SC, TC, CD, SD, TD](A: IType[CA, SA, TA], B: IType[CB, SB, TB], C: IType[CC, SC, TC], D: IType[CD, SD, TD]): ITypeUnion[CA | CB | CC | CD, SA | SB | SC | SD, TA | TB | TC | TD] = js.native
-    def apply[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC](
-      options: UnionOptions,
-      A: IModelType[PA, OA, FCA, FSA],
-      B: IModelType[PB, OB, FCB, FSB],
-      C: IModelType[PC, OC, FCC, FSC]
-    ): ITypeUnion[
+    def apply[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC](A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB], C: IModelType[PC, OC, FCC, FSC]): ITypeUnion[
         ModelCreationType2[PA | PB | PC, FCA | FCB | FCC], 
         ModelSnapshotType2[PA | PB | PC, FSA | FSB | FSC], 
         ModelInstanceType[PA | PB | PC, OA | OB | OC]
@@ -536,6 +520,16 @@ object anon {
       C: IType[CC, SC, TC],
       D: IType[CD, SD, TD]
     ): ITypeUnion[CA | CB | CC | CD, SA | SB | SC | SD, TA | TB | TC | TD] = js.native
+    def apply[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC](
+      options: UnionOptions,
+      A: IModelType[PA, OA, FCA, FSA],
+      B: IModelType[PB, OB, FCB, FSB],
+      C: IModelType[PC, OC, FCC, FSC]
+    ): ITypeUnion[
+        ModelCreationType2[PA | PB | PC, FCA | FCB | FCC], 
+        ModelSnapshotType2[PA | PB | PC, FSA | FSB | FSC], 
+        ModelInstanceType[PA | PB | PC, OA | OB | OC]
+      ] = js.native
     def apply[CA, SA, TA, CB, SB, TB, CC, SC, TC, CD, SD, TD, CE, SE, TE](
       A: IType[CA, SA, TA],
       B: IType[CB, SB, TB],
@@ -647,18 +641,6 @@ object anon {
         SA | SB | SC | SD | SE | SF | SG, 
         TA | TB | TC | TD | TE | TF | TG
       ] = js.native
-    def apply[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF](
-      A: IModelType[PA, OA, FCA, FSA],
-      B: IModelType[PB, OB, FCB, FSB],
-      C: IModelType[PC, OC, FCC, FSC],
-      D: IModelType[PD, OD, FCD, FSD],
-      E: IModelType[PE, OE, FCE, FSE],
-      F: IModelType[PF, OF, FCF, FSF]
-    ): ITypeUnion[
-        ModelCreationType2[PA | PB | PC | PD | PE | PF, FCA | FCB | FCC | FCD | FCE | FCF], 
-        ModelSnapshotType2[PA | PB | PC | PD | PE | PF, FSA | FSB | FSC | FSD | FSE | FSF], 
-        ModelInstanceType[PA | PB | PC | PD | PE | PF, OA | OB | OC | OD | OE | OF]
-      ] = js.native
     def apply[CA, SA, TA, CB, SB, TB, CC, SC, TC, CD, SD, TD, CE, SE, TE, CF, SF, TF, CG, SG, TG, CH, SH, TH](
       A: IType[CA, SA, TA],
       B: IType[CB, SB, TB],
@@ -674,7 +656,6 @@ object anon {
         TA | TB | TC | TD | TE | TF | TG | TH
       ] = js.native
     def apply[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF](
-      options: UnionOptions,
       A: IModelType[PA, OA, FCA, FSA],
       B: IModelType[PB, OB, FCB, FSB],
       C: IModelType[PC, OC, FCC, FSC],
@@ -700,6 +681,19 @@ object anon {
         CA | CB | CC | CD | CE | CF | CG | CH, 
         SA | SB | SC | SD | SE | SF | SG | SH, 
         TA | TB | TC | TD | TE | TF | TG | TH
+      ] = js.native
+    def apply[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF](
+      options: UnionOptions,
+      A: IModelType[PA, OA, FCA, FSA],
+      B: IModelType[PB, OB, FCB, FSB],
+      C: IModelType[PC, OC, FCC, FSC],
+      D: IModelType[PD, OD, FCD, FSD],
+      E: IModelType[PE, OE, FCE, FSE],
+      F: IModelType[PF, OF, FCF, FSF]
+    ): ITypeUnion[
+        ModelCreationType2[PA | PB | PC | PD | PE | PF, FCA | FCB | FCC | FCD | FCE | FCF], 
+        ModelSnapshotType2[PA | PB | PC | PD | PE | PF, FSA | FSB | FSC | FSD | FSE | FSF], 
+        ModelInstanceType[PA | PB | PC | PD | PE | PF, OA | OB | OC | OD | OE | OF]
       ] = js.native
     def apply[CA, SA, TA, CB, SB, TB, CC, SC, TC, CD, SD, TD, CE, SE, TE, CF, SF, TF, CG, SG, TG, CH, SH, TH, CI, SI, TI](
       A: IType[CA, SA, TA],
@@ -946,18 +940,6 @@ object anon {
     
     var SnapshotType: Any = js.native
     
-    var Type: Any = js.native
-  }
-  
-  @js.native
-  trait SnapshotTypeType extends StObject {
-    
-    var SnapshotType: Any = js.native
-  }
-  
-  @js.native
-  trait Type extends StObject {
-    
-    var Type: Any = js.native
+    var TypeWithoutSTN: Any = js.native
   }
 }

@@ -19,7 +19,7 @@ open class Action protected ()
   def this(
     /** the trigger, with or without parameters, for the action */
   triggerOptions: Any,
-    condition: typings.babylonjs.conditionMod.Condition
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
 }
 /* static members */

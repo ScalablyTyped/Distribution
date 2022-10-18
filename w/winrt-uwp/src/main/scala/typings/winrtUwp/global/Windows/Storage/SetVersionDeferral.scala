@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages a delayed set version operation. */
-@JSGlobal("Windows.Storage.SetVersionDeferral")
+/* note: abstract class */ @JSGlobal("Windows.Storage.SetVersionDeferral")
 @js.native
-abstract class SetVersionDeferral ()
+open class SetVersionDeferral ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.SetVersionDeferral {
   

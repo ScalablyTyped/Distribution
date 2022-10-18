@@ -1,7 +1,7 @@
 
 # Scala.js typings for decimal_dot_js
 
-Typings are for version 10.4.1
+Typings are for version 10.4.2
 
 ## Library description:
 An arbitrary-precision Decimal type for JavaScript.

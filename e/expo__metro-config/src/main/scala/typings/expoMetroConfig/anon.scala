@@ -1,6 +1,6 @@
 package typings.expoMetroConfig
 
-import typings.expoMetroConfig.createMultiRuleTransformerMod.Rule
+import typings.expoMetroConfig.buildTransformerCreateMultiRuleTransformerMod.Rule
 import typings.metroConfig.configTypesMod.ConfigT
 import typings.metroConfig.configTypesMod.InputConfigT
 import typings.metroConfig.configTypesMod.YargArguments
@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0` extends StObject {
+  trait Folders extends StObject {
     
     var folders: js.UndefOr[js.Array[String]] = js.undefined
   }
-  object `0` {
+  object Folders {
     
-    inline def apply(): `0` = {
+    inline def apply(): Folders = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`]
+      __obj.asInstanceOf[Folders]
     }
     
-    extension [Self <: `0`](x: Self) {
+    extension [Self <: Folders](x: Self) {
       
       inline def setFolders(value: js.Array[String]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       
@@ -31,20 +31,20 @@ object anon {
     }
   }
   
-  trait Folders extends StObject {
+  trait FoldersModuleIds extends StObject {
     
     var folders: js.UndefOr[js.Array[String]] = js.undefined
     
     var moduleIds: js.Array[String]
   }
-  object Folders {
+  object FoldersModuleIds {
     
-    inline def apply(moduleIds: js.Array[String]): Folders = {
+    inline def apply(moduleIds: js.Array[String]): FoldersModuleIds = {
       val __obj = js.Dynamic.literal(moduleIds = moduleIds.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Folders]
+      __obj.asInstanceOf[FoldersModuleIds]
     }
     
-    extension [Self <: Folders](x: Self) {
+    extension [Self <: FoldersModuleIds](x: Self) {
       
       inline def setFolders(value: js.Array[String]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       

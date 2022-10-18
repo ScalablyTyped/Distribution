@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "RemoteUser")
 @js.native
 open class RemoteUser protected ()
-  extends typings.matrixAppserviceBridge.usersRemoteMod.RemoteUser {
+  extends typings.matrixAppserviceBridge.libModelsUsersRemoteMod.RemoteUser {
   /**
     * @param identifier The unique ID for this user.
     * @param data The serialized key-value data object to assign to this user.

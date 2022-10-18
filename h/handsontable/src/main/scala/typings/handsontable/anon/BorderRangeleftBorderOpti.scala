@@ -1,7 +1,7 @@
 package typings.handsontable.anon
 
-import typings.handsontable.customBordersCustomBordersMod.BorderOptions
-import typings.handsontable.customBordersCustomBordersMod.DetailedSettings
+import typings.handsontable.pluginsCustomBordersCustomBordersMod.BorderOptions
+import typings.handsontable.pluginsCustomBordersCustomBordersMod.DetailedSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

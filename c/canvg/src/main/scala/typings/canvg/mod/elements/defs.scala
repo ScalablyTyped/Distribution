@@ -1,7 +1,7 @@
 package typings.canvg.mod.elements
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.canvg.defsElementMod.DefsElement
+import typings.canvg.distDocumentDefsElementMod.DefsElement
 import typings.canvg.mod.elements.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

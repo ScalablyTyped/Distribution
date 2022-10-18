@@ -1,27 +1,15 @@
 package typings.fluentuiUtilities
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fluentuiDomUtilities.ivirtualelementMod.IVirtualElement
-import typings.fluentuiMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.fluentuiMergeStyles.istylesetMod.IProcessedStyleSet
-import typings.fluentuiMergeStyles.istylesetMod.IStyleSet
+import typings.fluentuiDomUtilities.libIvirtualelementMod.IVirtualElement
+import typings.fluentuiMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.fluentuiMergeStyles.libIstylesetMod.IProcessedStyleSet
+import typings.fluentuiMergeStyles.libIstylesetMod.IStyleSet
 import typings.fluentuiUtilities.anon.AsyncPlaceholder
 import typings.fluentuiUtilities.anon.Configurable
 import typings.fluentuiUtilities.anon.Delay
 import typings.fluentuiUtilities.anon.Focus
 import typings.fluentuiUtilities.anon.RootRef
 import typings.fluentuiUtilities.anon.Rtl
-import typings.fluentuiUtilities.asAsyncMod.IAsAsyncOptions
-import typings.fluentuiUtilities.baseComponentTypesMod.IBaseProps
-import typings.fluentuiUtilities.classNamesFunctionMod.IClassNamesFunctionOptions
-import typings.fluentuiUtilities.cssMod.ICssInput
-import typings.fluentuiUtilities.customizationsMod.ICustomizations
-import typings.fluentuiUtilities.customizationsMod.ISettings
-import typings.fluentuiUtilities.customizationsMod.ISettingsFunction
-import typings.fluentuiUtilities.customizerContextMod.ICustomizerContext
-import typings.fluentuiUtilities.customizerTypesMod.ICustomizerProps
-import typings.fluentuiUtilities.delayedRenderMod.IDelayedRenderProps
-import typings.fluentuiUtilities.fabricPerformanceMod.IPerfSummary
 import typings.fluentuiUtilities.fluentuiUtilitiesBooleans.`false`
 import typings.fluentuiUtilities.fluentuiUtilitiesInts.`100`
 import typings.fluentuiUtilities.fluentuiUtilitiesInts.`101`
@@ -128,21 +116,30 @@ import typings.fluentuiUtilities.fluentuiUtilitiesStrings.`data-no-vertical-wrap
 import typings.fluentuiUtilities.fluentuiUtilitiesStrings.localStorage
 import typings.fluentuiUtilities.fluentuiUtilitiesStrings.none
 import typings.fluentuiUtilities.fluentuiUtilitiesStrings.sessionStorage
-import typings.fluentuiUtilities.focusRectsProviderMod.FocusRectsProviderProps
-import typings.fluentuiUtilities.globalSettingsMod.IChangeEventCallback
-import typings.fluentuiUtilities.icomponentasMod.IComponentAs
-import typings.fluentuiUtilities.irectangleMod.IRectangle
-import typings.fluentuiUtilities.irenderfunctionMod.IRenderFunction
-import typings.fluentuiUtilities.isizeMod.ISize
-import typings.fluentuiUtilities.mathMod.IFitContentToBoundsOptions
-import typings.fluentuiUtilities.pointMod.Point
-import typings.fluentuiUtilities.selectionSelectionMod.ISelectionOptions
-import typings.fluentuiUtilities.selectionSelectionMod.ISelectionOptionsWithRequiredGetKey
-import typings.fluentuiUtilities.styledMod.ICustomizableProps
-import typings.fluentuiUtilities.styledMod.IPropsWithStyles
-import typings.fluentuiUtilities.useFocusRectsMod.IFocusRectsContext
-import typings.fluentuiUtilities.warnControlledUsageMod.IWarnControlledUsageParams
-import typings.fluentuiUtilities.warnWarnMod.ISettingsMap
+import typings.fluentuiUtilities.libAsAsyncMod.IAsAsyncOptions
+import typings.fluentuiUtilities.libBaseComponentDottypesMod.IBaseProps
+import typings.fluentuiUtilities.libClassNamesFunctionMod.IClassNamesFunctionOptions
+import typings.fluentuiUtilities.libCssMod.ICssInput
+import typings.fluentuiUtilities.libCustomizationsCustomizationsMod.ICustomizations
+import typings.fluentuiUtilities.libCustomizationsCustomizationsMod.ISettings
+import typings.fluentuiUtilities.libCustomizationsCustomizationsMod.ISettingsFunction
+import typings.fluentuiUtilities.libCustomizationsCustomizerContextMod.ICustomizerContext
+import typings.fluentuiUtilities.libCustomizationsCustomizerDottypesMod.ICustomizerProps
+import typings.fluentuiUtilities.libDelayedRenderMod.IDelayedRenderProps
+import typings.fluentuiUtilities.libFabricPerformanceMod.IPerfSummary
+import typings.fluentuiUtilities.libFocusRectsProviderMod.FocusRectsProviderProps
+import typings.fluentuiUtilities.libGlobalSettingsMod.IChangeEventCallback
+import typings.fluentuiUtilities.libIcomponentasMod.IComponentAs
+import typings.fluentuiUtilities.libIrectangleMod.IRectangle
+import typings.fluentuiUtilities.libIrenderfunctionMod.IRenderFunction
+import typings.fluentuiUtilities.libIsizeMod.ISize
+import typings.fluentuiUtilities.libMathMod.IFitContentToBoundsOptions
+import typings.fluentuiUtilities.libPointMod.Point
+import typings.fluentuiUtilities.libStyledMod.ICustomizableProps
+import typings.fluentuiUtilities.libStyledMod.IPropsWithStyles
+import typings.fluentuiUtilities.libUseFocusRectsMod.IFocusRectsContext
+import typings.fluentuiUtilities.libWarnWarnControlledUsageMod.IWarnControlledUsageParams
+import typings.fluentuiUtilities.libWarnWarnMod.ISettingsMap
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
@@ -180,7 +177,7 @@ object mod {
   @JSImport("@fluentui/utilities", "Async")
   @js.native
   open class Async ()
-    extends typings.fluentuiUtilities.asyncMod.Async {
+    extends typings.fluentuiUtilities.libAsyncMod.Async {
     def this(parent: js.Object) = this()
     def this(parent: js.Object, onError: js.Function1[/* e */ Any, Unit]) = this()
     def this(parent: Unit, onError: js.Function1[/* e */ Any, Unit]) = this()
@@ -189,14 +186,14 @@ object mod {
   @JSImport("@fluentui/utilities", "AutoScroll")
   @js.native
   open class AutoScroll protected ()
-    extends typings.fluentuiUtilities.autoScrollMod.AutoScroll {
+    extends typings.fluentuiUtilities.libAutoScrollMod.AutoScroll {
     def this(element: HTMLElement) = this()
   }
   
   @JSImport("@fluentui/utilities", "BaseComponent")
   @js.native
   open class BaseComponent[TProps /* <: IBaseProps[Any] */, TState] protected ()
-    extends typings.fluentuiUtilities.baseComponentMod.BaseComponent[TProps, TState] {
+    extends typings.fluentuiUtilities.libBaseComponentMod.BaseComponent[TProps, TState] {
     /**
       * BaseComponent constructor
       * @param props - The props for the component.
@@ -224,7 +221,7 @@ object mod {
   @JSImport("@fluentui/utilities", "Customizations")
   @js.native
   open class Customizations ()
-    extends typings.fluentuiUtilities.customizationsMod.Customizations
+    extends typings.fluentuiUtilities.libCustomizationsCustomizationsMod.Customizations
   /* static members */
   object Customizations {
     
@@ -275,7 +272,7 @@ object mod {
   @JSImport("@fluentui/utilities", "Customizer")
   @js.native
   open class Customizer protected ()
-    extends typings.fluentuiUtilities.customizerMod.Customizer {
+    extends typings.fluentuiUtilities.libCustomizationsCustomizerMod.Customizer {
     def this(props: ICustomizerProps) = this()
     /**
       * @deprecated
@@ -299,7 +296,7 @@ object mod {
   @JSImport("@fluentui/utilities", "DelayedRender")
   @js.native
   open class DelayedRender protected ()
-    extends typings.fluentuiUtilities.delayedRenderMod.DelayedRender {
+    extends typings.fluentuiUtilities.libDelayedRenderMod.DelayedRender {
     def this(props: IDelayedRenderProps) = this()
   }
   /* static members */
@@ -318,7 +315,7 @@ object mod {
   @JSImport("@fluentui/utilities", "EventGroup")
   @js.native
   open class EventGroup protected ()
-    extends typings.fluentuiUtilities.eventGroupMod.EventGroup {
+    extends typings.fluentuiUtilities.libEventGroupMod.EventGroup {
     /** parent: the context in which events attached to non-HTMLElements are called */
     def this(parent: Any) = this()
   }
@@ -361,7 +358,7 @@ object mod {
   @JSImport("@fluentui/utilities", "FabricPerformance")
   @js.native
   open class FabricPerformance ()
-    extends typings.fluentuiUtilities.fabricPerformanceMod.FabricPerformance
+    extends typings.fluentuiUtilities.libFabricPerformanceMod.FabricPerformance
   /* static members */
   object FabricPerformance {
     
@@ -407,7 +404,7 @@ object mod {
   @JSImport("@fluentui/utilities", "GlobalSettings")
   @js.native
   open class GlobalSettings ()
-    extends typings.fluentuiUtilities.globalSettingsMod.GlobalSettings
+    extends typings.fluentuiUtilities.libGlobalSettingsMod.GlobalSettings
   /* static members */
   object GlobalSettings {
     
@@ -964,7 +961,7 @@ object mod {
   @JSImport("@fluentui/utilities", "Rectangle")
   @js.native
   open class Rectangle ()
-    extends typings.fluentuiUtilities.rectangleMod.Rectangle {
+    extends typings.fluentuiUtilities.libRectangleMod.Rectangle {
     def this(left: Double) = this()
     def this(left: Double, right: Double) = this()
     def this(left: Unit, right: Double) = this()
@@ -993,13 +990,13 @@ object mod {
   @JSImport("@fluentui/utilities", "Selection")
   @js.native
   open class Selection[TItem] protected ()
-    extends typings.fluentuiUtilities.selectionMod.Selection[TItem] {
+    extends typings.fluentuiUtilities.libSelectionMod.Selection[TItem] {
     /**
       * Create a new Selection. If `TItem` does not have a `key` property, you must provide an options
       * object with a `getKey` implementation. Providing options is optional otherwise.
       * (At most one `options` object is accepted.)
       */
-    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: js.Array[Any | ISelectionOptions[TItem] | ISelectionOptionsWithRequiredGetKey[TItem]]) = this()
+    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: /* import warning: importer.ImportType#apply Failed type conversion: TItem extends @fluentui/utilities.@fluentui/utilities/lib/selection/Selection.types.IObjectWithKey ? [] | [@fluentui/utilities.@fluentui/utilities/lib/selection/Selection.ISelectionOptions<TItem>] : [@fluentui/utilities.@fluentui/utilities/lib/selection/Selection.ISelectionOptionsWithRequiredGetKey<TItem>] */ js.Any) = this()
   }
   
   @JSImport("@fluentui/utilities", "SelectionDirection")
@@ -1007,11 +1004,13 @@ object mod {
   object SelectionDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.fluentuiUtilities.selectionTypesMod.SelectionDirection & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.fluentuiUtilities.libSelectionSelectionDottypesMod.SelectionDirection & Double
+      ] = js.native
     
-    /* 0 */ val horizontal: typings.fluentuiUtilities.selectionTypesMod.SelectionDirection.horizontal & Double = js.native
+    /* 0 */ val horizontal: typings.fluentuiUtilities.libSelectionSelectionDottypesMod.SelectionDirection.horizontal & Double = js.native
     
-    /* 1 */ val vertical: typings.fluentuiUtilities.selectionTypesMod.SelectionDirection.vertical & Double = js.native
+    /* 1 */ val vertical: typings.fluentuiUtilities.libSelectionSelectionDottypesMod.SelectionDirection.vertical & Double = js.native
   }
   
   @JSImport("@fluentui/utilities", "SelectionMode")
@@ -1019,24 +1018,26 @@ object mod {
   object SelectionMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.fluentuiUtilities.selectionTypesMod.SelectionMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.fluentuiUtilities.libSelectionSelectionDottypesMod.SelectionMode & Double
+      ] = js.native
     
-    /* 2 */ val multiple: typings.fluentuiUtilities.selectionTypesMod.SelectionMode.multiple & Double = js.native
+    /* 2 */ val multiple: typings.fluentuiUtilities.libSelectionSelectionDottypesMod.SelectionMode.multiple & Double = js.native
     
-    /* 0 */ val none: typings.fluentuiUtilities.selectionTypesMod.SelectionMode.none & Double = js.native
+    /* 0 */ val none: typings.fluentuiUtilities.libSelectionSelectionDottypesMod.SelectionMode.none & Double = js.native
     
-    /* 1 */ val single: typings.fluentuiUtilities.selectionTypesMod.SelectionMode.single & Double = js.native
+    /* 1 */ val single: typings.fluentuiUtilities.libSelectionSelectionDottypesMod.SelectionMode.single & Double = js.native
   }
   
   inline def addDirectionalKeyCode(which: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDirectionalKeyCode")(which.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def addElementAtIndex[T](array: js.Array[T], index: Double, itemToAdd: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("addElementAtIndex")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], itemToAdd.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def allowOverscrollOnElement(element: Null, events: typings.fluentuiUtilities.eventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def allowOverscrollOnElement(element: HTMLElement, events: typings.fluentuiUtilities.eventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def allowOverscrollOnElement(element: Null, events: typings.fluentuiUtilities.libEventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def allowOverscrollOnElement(element: HTMLElement, events: typings.fluentuiUtilities.libEventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def allowScrollOnElement(element: Null, events: typings.fluentuiUtilities.eventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def allowScrollOnElement(element: HTMLElement, events: typings.fluentuiUtilities.eventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def allowScrollOnElement(element: Null, events: typings.fluentuiUtilities.libEventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def allowScrollOnElement(element: HTMLElement, events: typings.fluentuiUtilities.libEventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@fluentui/utilities", "anchorProperties")
   @js.native
@@ -1155,9 +1156,7 @@ object mod {
   
   inline def extendComponent[T /* <: Component[js.Object, js.Object, Any] */](
     parent: T,
-    methods: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]:? T[key]}
-    */ typings.fluentuiUtilities.fluentuiUtilitiesStrings.extendComponent & TopLevel[T]
+    methods: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]:? T[key]} */ js.Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendComponent")(parent.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def filteredAssign(isAllowed: js.Function1[/* propName */ String, Boolean], target: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filteredAssign")((scala.List(isAllowed.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]

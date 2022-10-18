@@ -23,7 +23,7 @@ object anon {
       
       inline def setMath(value: js.Array[String]): Self = StObject.set(x, "math", value.asInstanceOf[js.Any])
       
-      inline def setMathVarargs(value: String*): Self = StObject.set(x, "math", js.Array(value :_*))
+      inline def setMathVarargs(value: String*): Self = StObject.set(x, "math", js.Array(value*))
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }

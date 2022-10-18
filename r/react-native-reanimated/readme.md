@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-reanimated
 
-Typings are for version 2.10.0
+Typings are for version 2.11.0
 
 ## Library description:
 More powerful alternative to Animated library for React Native.

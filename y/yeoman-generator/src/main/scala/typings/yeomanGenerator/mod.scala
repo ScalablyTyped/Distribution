@@ -6,13 +6,22 @@ import typings.debug.mod.Debugger
 import typings.ejs.mod.Data
 import typings.ejs.mod.Options
 import typings.inquirer.mod.DistinctQuestion
+import typings.jsonSchema.mod.JSONSchema7Type
 import typings.memFsEditor.mod.CopyOptions
 import typings.memFsEditor.mod.Editor
+import typings.memFsEditor.mod.FilePaths
+import typings.memFsEditor.mod.ReadRawContents
+import typings.memFsEditor.mod.ReadRawOptions
+import typings.memFsEditor.mod.ReadStringOptions
+import typings.memFsEditor.mod.WithGlobOptions
 import typings.memFsEditor.mod.WriteContents
+import typings.memFsEditor.mod.WriteJsonReplacer
+import typings.memFsEditor.mod.WriteJsonSpace
 import typings.node.childProcessMod.SpawnOptions
 import typings.node.childProcessMod.SpawnSyncOptions
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Transform
+import typings.rxjs.mod.Observable_
 import typings.std.ArrayConstructor
 import typings.std.BooleanConstructor
 import typings.std.NumberConstructor
@@ -362,7 +371,7 @@ object mod {
     /**
       * The `.yo-rc` config file manager.
       */
-    var config: typings.yeomanGenerator.storageMod.^ = js.native
+    var config: typings.yeomanGenerator.libUtilStorageMod.^ = js.native
     
     /**
       * The path from where the user is running `yo`.
@@ -378,7 +387,88 @@ object mod {
       * this.fs.copy(this.destinationPath(from), this.destinationPath(to))
       * ```
       */
-    var copyDestination: FnCall = js.native
+    def copyDestination(from: FilePaths, to: String): Unit = js.native
+    // actions/fs mixin
+    /**
+      * Copy file from destination folder to another destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.destinationPath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyDestination(from: FilePaths, to: String, options: Unit, context: Unit, templateOptions: Options): Unit = js.native
+    // actions/fs mixin
+    /**
+      * Copy file from destination folder to another destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.destinationPath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyDestination(from: FilePaths, to: String, options: Unit, context: Data): Unit = js.native
+    // actions/fs mixin
+    /**
+      * Copy file from destination folder to another destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.destinationPath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyDestination(from: FilePaths, to: String, options: Unit, context: Data, templateOptions: Options): Unit = js.native
+    // actions/fs mixin
+    /**
+      * Copy file from destination folder to another destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.destinationPath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyDestination(from: FilePaths, to: String, options: CopyOptions): Unit = js.native
+    // actions/fs mixin
+    /**
+      * Copy file from destination folder to another destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.destinationPath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyDestination(from: FilePaths, to: String, options: CopyOptions, context: Unit, templateOptions: Options): Unit = js.native
+    // actions/fs mixin
+    /**
+      * Copy file from destination folder to another destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.destinationPath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyDestination(from: FilePaths, to: String, options: CopyOptions, context: Data): Unit = js.native
+    // actions/fs mixin
+    /**
+      * Copy file from destination folder to another destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.destinationPath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyDestination(from: FilePaths, to: String, options: CopyOptions, context: Data, templateOptions: Options): Unit = js.native
+    // actions/fs mixin
+    /**
+      * Copy file from destination folder to another destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.destinationPath(from), this.destinationPath(to))
+      * ```
+      */
+    @JSName("copyDestination")
+    var copyDestination_Original: FnCall = js.native
     
     /**
       * Copy file from templates folder to destination folder.
@@ -388,7 +478,80 @@ object mod {
       * this.fs.copy(this.templatePath(from), this.destinationPath(to))
       * ```
       */
-    var copyTemplate: FnCall = js.native
+    def copyTemplate(from: FilePaths, to: String): Unit = js.native
+    /**
+      * Copy file from templates folder to destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.templatePath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyTemplate(from: FilePaths, to: String, options: Unit, context: Unit, templateOptions: Options): Unit = js.native
+    /**
+      * Copy file from templates folder to destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.templatePath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyTemplate(from: FilePaths, to: String, options: Unit, context: Data): Unit = js.native
+    /**
+      * Copy file from templates folder to destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.templatePath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyTemplate(from: FilePaths, to: String, options: Unit, context: Data, templateOptions: Options): Unit = js.native
+    /**
+      * Copy file from templates folder to destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.templatePath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyTemplate(from: FilePaths, to: String, options: CopyOptions): Unit = js.native
+    /**
+      * Copy file from templates folder to destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.templatePath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyTemplate(from: FilePaths, to: String, options: CopyOptions, context: Unit, templateOptions: Options): Unit = js.native
+    /**
+      * Copy file from templates folder to destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.templatePath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyTemplate(from: FilePaths, to: String, options: CopyOptions, context: Data): Unit = js.native
+    /**
+      * Copy file from templates folder to destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.templatePath(from), this.destinationPath(to))
+      * ```
+      */
+    def copyTemplate(from: FilePaths, to: String, options: CopyOptions, context: Data, templateOptions: Options): Unit = js.native
+    /**
+      * Copy file from templates folder to destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.copy(this.templatePath(from), this.destinationPath(to))
+      * ```
+      */
+    @JSName("copyTemplate")
+    var copyTemplate_Original: FnCall = js.native
     
     /**
       * Creates a new storage.
@@ -397,10 +560,10 @@ object mod {
       * @param key The key in which the options are stored inside the `json`.
       * @param lodashPath A value indicating whether the {@link key `key`} argument should be treated as a lodash path.
       */
-    def createStorage(storagePath: String): typings.yeomanGenerator.storageMod.^ = js.native
-    def createStorage(storagePath: String, key: String): typings.yeomanGenerator.storageMod.^ = js.native
-    def createStorage(storagePath: String, key: String, lodashPath: Boolean): typings.yeomanGenerator.storageMod.^ = js.native
-    def createStorage(storagePath: String, key: Unit, lodashPath: Boolean): typings.yeomanGenerator.storageMod.^ = js.native
+    def createStorage(storagePath: String): typings.yeomanGenerator.libUtilStorageMod.^ = js.native
+    def createStorage(storagePath: String, key: String): typings.yeomanGenerator.libUtilStorageMod.^ = js.native
+    def createStorage(storagePath: String, key: String, lodashPath: Boolean): typings.yeomanGenerator.libUtilStorageMod.^ = js.native
+    def createStorage(storagePath: String, key: Unit, lodashPath: Boolean): typings.yeomanGenerator.libUtilStorageMod.^ = js.native
     
     /**
       * Convenience debug method.
@@ -417,7 +580,26 @@ object mod {
       * this.fs.delete(this.destinationPath(filepath))
       * ```
       */
-    var deleteDestination: FnCallFilepathOptions = js.native
+    def deleteDestination(filepath: FilePaths): Unit = js.native
+    /**
+      * Deletes file from destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.delete(this.destinationPath(filepath))
+      * ```
+      */
+    def deleteDestination(filepath: FilePaths, options: WithGlobOptions): Unit = js.native
+    /**
+      * Deletes file from destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.delete(this.destinationPath(filepath))
+      * ```
+      */
+    @JSName("deleteDestination")
+    var deleteDestination_Original: FnCallFilepathOptions = js.native
     
     /**
       * Sets a custom {@link description `description`} for the help output.
@@ -475,7 +657,17 @@ object mod {
       * this.fs.exists(this.destinationPath(filepath))
       * ```
       */
-    var existsDestination: js.Function1[/* filepath */ String, Boolean] = js.native
+    def existsDestination(filepath: String): Boolean = js.native
+    /**
+      * Checks whether a file exists in the destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.exists(this.destinationPath(filepath))
+      * ```
+      */
+    @JSName("existsDestination")
+    var existsDestination_Original: js.Function1[/* filepath */ String, Boolean] = js.native
     
     /**
       * An instance of [`mem-fs-editor`](https://github.com/SBoudrias/mem-fs-editor).
@@ -521,7 +713,26 @@ object mod {
       * this.fs.move(this.destinationPath(from), this.destinationPath(to))
       * ```
       */
-    var moveDestination: FnCallFromToOptions = js.native
+    def moveDestination(from: FilePaths, to: String): Unit = js.native
+    /**
+      * Move file from destination folder to another destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.move(this.destinationPath(from), this.destinationPath(to))
+      * ```
+      */
+    def moveDestination(from: FilePaths, to: String, options: WithGlobOptions): Unit = js.native
+    /**
+      * Move file from destination folder to another destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.move(this.destinationPath(from), this.destinationPath(to))
+      * ```
+      */
+    @JSName("moveDestination")
+    var moveDestination_Original: FnCallFromToOptions = js.native
     
     /**
       * @deprecated
@@ -570,7 +781,7 @@ object mod {
     /**
       * The storage containing the destination-`package.json`.
       */
-    var packageJson: typings.yeomanGenerator.storageMod.^ = js.native
+    var packageJson: typings.yeomanGenerator.libUtilStorageMod.^ = js.native
     
     /**
       * Prompt user to answer questions.
@@ -678,7 +889,25 @@ object mod {
       * this.fs.read(this.destinationPath(filepath))
       * ```
       */
-    var readDestination: Fn0 = js.native
+    def readDestination(filepath: String): String = js.native
+    /**
+      * Read file from destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.read(this.destinationPath(filepath))
+      * ```
+      */
+    def readDestination(filepath: String, options: ReadRawOptions): ReadRawContents = js.native
+    /**
+      * Read file from destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.read(this.destinationPath(filepath))
+      * ```
+      */
+    def readDestination(filepath: String, options: ReadStringOptions): String = js.native
     
     /**
       * Read JSON file from destination folder.
@@ -688,7 +917,37 @@ object mod {
       * this.fs.readJSON(this.destinationPath(filepath))
       * ```
       */
-    var readDestinationJSON: FnCallFilepathDefaults = js.native
+    def readDestinationJSON(filepath: String): js.UndefOr[JSONSchema7Type] = js.native
+    /**
+      * Read JSON file from destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.readJSON(this.destinationPath(filepath))
+      * ```
+      */
+    def readDestinationJSON(filepath: String, defaults: JSONSchema7Type): JSONSchema7Type = js.native
+    /**
+      * Read JSON file from destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.readJSON(this.destinationPath(filepath))
+      * ```
+      */
+    @JSName("readDestinationJSON")
+    var readDestinationJSON_Original: FnCallFilepathDefaults = js.native
+    
+    /**
+      * Read file from destination folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.read(this.destinationPath(filepath))
+      * ```
+      */
+    @JSName("readDestination")
+    var readDestination_Original: Fn0 = js.native
     
     /**
       * Read file from templates folder.
@@ -698,7 +957,35 @@ object mod {
       * this.fs.read(this.templatePath(filepath))
       * ```
       */
-    var readTemplate: Fn0 = js.native
+    def readTemplate(filepath: String): String = js.native
+    /**
+      * Read file from templates folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.read(this.templatePath(filepath))
+      * ```
+      */
+    def readTemplate(filepath: String, options: ReadRawOptions): ReadRawContents = js.native
+    /**
+      * Read file from templates folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.read(this.templatePath(filepath))
+      * ```
+      */
+    def readTemplate(filepath: String, options: ReadStringOptions): String = js.native
+    /**
+      * Read file from templates folder.
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.read(this.templatePath(filepath))
+      * ```
+      */
+    @JSName("readTemplate")
+    var readTemplate_Original: Fn0 = js.native
     
     def registerConfigPrompts[TAnswers /* <: typings.inquirer.mod.Answers */](questions: js.Array[QuestionRegistrationOptions[TAnswers]]): Unit = js.native
     /**
@@ -866,7 +1153,7 @@ object mod {
       * this.fs.write(this.destinationPath(filepath))
       * ```
       */
-    var writeDestination: js.Function2[/* filepath */ String, /* contents */ WriteContents, String] = js.native
+    def writeDestination(filepath: String, contents: WriteContents): String = js.native
     
     /**
       * Write json file to destination folder
@@ -876,7 +1163,55 @@ object mod {
       * this.fs.writeJSON(this.destinationPath(filepath))
       * ```
       */
-    var writeDestinationJSON: FnCallFilepathContentsReplacerSpace = js.native
+    def writeDestinationJSON(filepath: String, contents: Any): String = js.native
+    /**
+      * Write json file to destination folder
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.writeJSON(this.destinationPath(filepath))
+      * ```
+      */
+    def writeDestinationJSON(filepath: String, contents: Any, replacer: Unit, space: WriteJsonSpace): String = js.native
+    /**
+      * Write json file to destination folder
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.writeJSON(this.destinationPath(filepath))
+      * ```
+      */
+    def writeDestinationJSON(filepath: String, contents: Any, replacer: WriteJsonReplacer): String = js.native
+    /**
+      * Write json file to destination folder
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.writeJSON(this.destinationPath(filepath))
+      * ```
+      */
+    def writeDestinationJSON(filepath: String, contents: Any, replacer: WriteJsonReplacer, space: WriteJsonSpace): String = js.native
+    /**
+      * Write json file to destination folder
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.writeJSON(this.destinationPath(filepath))
+      * ```
+      */
+    @JSName("writeDestinationJSON")
+    var writeDestinationJSON_Original: FnCallFilepathContentsReplacerSpace = js.native
+    
+    /**
+      * Write file to destination folder
+      * `mem-fs-editor` method's shortcut, for more information see [mem-fs-editor](https://github.com/SBoudrias/mem-fs-editor).
+      * Shortcut for:
+      * ```js
+      * this.fs.write(this.destinationPath(filepath))
+      * ```
+      */
+    @JSName("writeDestination")
+    var writeDestination_Original: js.Function2[/* filepath */ String, /* contents */ WriteContents, String] = js.native
     
     /**
       * @deprecated
@@ -1136,7 +1471,7 @@ object mod {
     /**
       * The storage to persist the option
       */
-    var storage: js.UndefOr[typings.yeomanGenerator.storageMod.^] = js.undefined
+    var storage: js.UndefOr[typings.yeomanGenerator.libUtilStorageMod.^] = js.undefined
     
     /**
       * The type of the option.
@@ -1171,7 +1506,7 @@ object mod {
       
       inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      inline def setStorage(value: typings.yeomanGenerator.storageMod.^): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: typings.yeomanGenerator.libUtilStorageMod.^): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
       inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
       
@@ -1235,7 +1570,7 @@ object mod {
   /**
     * Provides a set of questions.
     */
-  type Questions[A /* <: Answers */] = Question[A] | js.Array[Question[A]] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Question<A>> */ Any)
+  type Questions[A /* <: Answers */] = Question[A] | js.Array[Question[A]] | Observable_[Question[A]]
   
   /**
     * Provides options for queues.

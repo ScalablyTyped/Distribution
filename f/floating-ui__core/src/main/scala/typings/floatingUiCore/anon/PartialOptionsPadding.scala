@@ -1,6 +1,6 @@
 package typings.floatingUiCore.anon
 
-import typings.floatingUiCore.typesMod.Padding
+import typings.floatingUiCore.srcTypesMod.Padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

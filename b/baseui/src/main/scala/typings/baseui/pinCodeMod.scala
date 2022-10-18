@@ -159,7 +159,7 @@ object pinCodeMod {
   @JSImport("baseui/pin-code", "StatefulPinCodeContainer")
   @js.native
   open class StatefulPinCodeContainer ()
-    extends typings.baseui.statefulPinCodeContainerMod.default
+    extends typings.baseui.pinCodeStatefulPinCodeContainerMod.default
   /* static members */
   object StatefulPinCodeContainer {
     

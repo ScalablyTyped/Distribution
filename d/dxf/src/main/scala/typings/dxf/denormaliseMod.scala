@@ -1,6 +1,6 @@
 package typings.dxf
 
-import typings.dxf.entitiesMod.Entity
+import typings.dxf.handlersEntitiesMod.Entity
 import typings.dxf.informationMod.FileInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

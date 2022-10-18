@@ -1,7 +1,7 @@
 package typings.contentstack
 
 import typings.contentstack.anon.Paths
-import typings.contentstackUtils.optionsMod.Option
+import typings.contentstackUtils.distTypesOptionsMod.Option
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,10 +1,9 @@
 package typings.fpTs.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.boundedMod.Bounded
-import typings.fpTs.endomorphismMod.Endomorphism
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.readonlyRecordMod.ReadonlyRecord_
+import typings.fpTs.libBoundedMod.Bounded
+import typings.fpTs.libEndomorphismMod.Endomorphism
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libReadonlyRecordMod.ReadonlyRecord_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,21 +29,15 @@ object monoid {
   inline def getMeetMonoid[A](B: Bounded[A]): Monoid[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeetMonoid")(B.asInstanceOf[js.Any]).asInstanceOf[Monoid[A]]
   
   inline def getStructMonoid[O /* <: ReadonlyRecord_[String, Any] */](
-    monoids: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof O ]: fp-ts.fp-ts/lib/Monoid.Monoid<O[K]>}
-    */ typings.fpTs.fpTsStrings.getStructMonoid & TopLevel[O]
+    monoids: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: fp-ts.fp-ts/lib/Monoid.Monoid<O[K]>} */ js.Any
   ): Monoid[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStructMonoid")(monoids.asInstanceOf[js.Any]).asInstanceOf[Monoid[O]]
   
   inline def getTupleMonoid[T /* <: js.Array[Monoid[Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param monoids because its type T is not an array type */ monoids: T
   ): Monoid[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Semigroup.Semigroup<infer A>? any : never}
-    */ typings.fpTs.fpTsStrings.getTupleMonoid & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Semigroup.Semigroup<infer A>? A : never} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTupleMonoid")(monoids.asInstanceOf[js.Any]).asInstanceOf[Monoid[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Semigroup.Semigroup<infer A>? any : never}
-    */ typings.fpTs.fpTsStrings.getTupleMonoid & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Semigroup.Semigroup<infer A>? A : never} */ js.Any
   ]]
   
   inline def max[A](B: Bounded[A]): Monoid[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(B.asInstanceOf[js.Any]).asInstanceOf[Monoid[A]]
@@ -78,22 +71,14 @@ object monoid {
   inline def reverse[A](M: Monoid[A]): Monoid[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(M.asInstanceOf[js.Any]).asInstanceOf[Monoid[A]]
   
   inline def struct[A](
-    monoids: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: fp-ts.fp-ts/lib/Monoid.Monoid<A[K]>}
-    */ typings.fpTs.fpTsStrings.struct & TopLevel[A]
+    monoids: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: fp-ts.fp-ts/lib/Monoid.Monoid<A[K]>} */ js.Any
   ): Monoid[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K_1 in keyof A ]: A[K_1]}
-    */ typings.fpTs.fpTsStrings.struct & TopLevel[A]
+    /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K_1 in keyof A ]: A[K_1]} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("struct")(monoids.asInstanceOf[js.Any]).asInstanceOf[Monoid[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K_1 in keyof A ]: A[K_1]}
-    */ typings.fpTs.fpTsStrings.struct & TopLevel[A]
+    /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K_1 in keyof A ]: A[K_1]} */ js.Any
   ]]
   
   inline def tuple[A /* <: js.Array[Any] */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param monoids because its type {[ K in keyof A ]: Monoid<A[K]>} is not an array type */ monoids: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: fp-ts.fp-ts/lib/Monoid.Monoid<A[K]>}
-    */ typings.fpTs.fpTsStrings.tuple & TopLevel[A]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param monoids because its type {[ K in keyof A ]: Monoid<A[K]>} is not an array type */ monoids: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: fp-ts.fp-ts/lib/Monoid.Monoid<A[K]>} */ js.Any
   ): Monoid[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(monoids.asInstanceOf[js.Any]).asInstanceOf[Monoid[A]]
 }

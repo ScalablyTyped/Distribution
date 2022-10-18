@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DeviceLostReason extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.DeviceLostReason & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.DeviceLostReason & String] = js.native
   
-  /* "destroyed" */ val Destroyed: typings.babylonjs.webgpuConstantsMod.DeviceLostReason.Destroyed & String = js.native
+  /* "destroyed" */ val Destroyed: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.DeviceLostReason.Destroyed & String = js.native
 }

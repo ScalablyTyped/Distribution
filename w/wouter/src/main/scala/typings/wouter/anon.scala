@@ -40,11 +40,6 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLAnchorElement
-import typings.wouter.matcherMod.DefaultParams
-import typings.wouter.matcherMod.Match
-import typings.wouter.matcherMod.MatcherFn
-import typings.wouter.useLocationMod.BaseLocationHook
-import typings.wouter.useLocationMod.Path
 import typings.wouter.wouterStrings.`additions removals`
 import typings.wouter.wouterStrings.`additions text`
 import typings.wouter.wouterStrings.`inline`
@@ -101,25 +96,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Base extends StObject {
-    
-    var base: js.UndefOr[Path] = js.undefined
-  }
-  object Base {
-    
-    inline def apply(): Base = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Base]
-    }
-    
-    extension [Self <: Base](x: Self) {
-      
-      inline def setBase(value: Path): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
-      
-      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
-    }
-  }
-  
   trait Children extends StObject {
     
     var children: js.UndefOr[scala.Nothing] = js.undefined
@@ -129,35 +105,22 @@ object anon {
     
     var href: js.UndefOr[scala.Nothing] = js.undefined
     
-    var to: Path
+    var to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
   }
   object Href {
     
-    inline def apply(to: Path): Href = {
+    inline def apply(
+      to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+    ): Href = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[Href]
     }
     
     extension [Self <: Href](x: Self) {
       
-      inline def setTo(value: Path): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Name extends StObject {
-    
-    var name: String | Double
-  }
-  object Name {
-    
-    inline def apply(name: String | Double): Name = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Name]
-    }
-    
-    extension [Self <: Name](x: Self) {
-      
-      inline def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setTo(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1270,13 +1233,19 @@ object anon {
   /* Inlined std.Partial<wouter.wouter.RouterProps> & {  children :react.react.ReactNode} */
   trait PartialRouterPropschildre extends StObject {
     
-    var base: js.UndefOr[Path] = js.undefined
+    var base: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = js.undefined
     
     var children: ReactNode
     
-    var hook: js.UndefOr[BaseLocationHook] = js.undefined
+    var hook: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any
+      ] = js.undefined
     
-    var matcher: js.UndefOr[MatcherFn] = js.undefined
+    var matcher: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatcherFn */ Any
+      ] = js.undefined
   }
   object PartialRouterPropschildre {
     
@@ -1287,7 +1256,9 @@ object anon {
     
     extension [Self <: PartialRouterPropschildre](x: Self) {
       
-      inline def setBase(value: Path): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
@@ -1295,51 +1266,40 @@ object anon {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setHook(value: BaseLocationHook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+      inline def setHook(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any
+      ): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
       
       inline def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)
       
-      inline def setMatcher(value: (/* pattern */ Path, /* path */ Path) => Match[DefaultParams]): Self = StObject.set(x, "matcher", js.Any.fromFunction2(value))
+      inline def setMatcher(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatcherFn */ Any
+      ): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
       
       inline def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
     }
   }
   
-  trait Replace extends StObject {
-    
-    var replace: js.UndefOr[Boolean] = js.undefined
-  }
-  object Replace {
-    
-    inline def apply(): Replace = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Replace]
-    }
-    
-    extension [Self <: Replace](x: Self) {
-      
-      inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
-      
-      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
-    }
-  }
-  
   trait To extends StObject {
     
-    var href: Path
+    var href: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
     
     var to: js.UndefOr[scala.Nothing] = js.undefined
   }
   object To {
     
-    inline def apply(href: Path): To = {
+    inline def apply(
+      href: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+    ): To = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
       __obj.asInstanceOf[To]
     }
     
     extension [Self <: To](x: Self) {
       
-      inline def setHref(value: Path): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     }
   }
 }

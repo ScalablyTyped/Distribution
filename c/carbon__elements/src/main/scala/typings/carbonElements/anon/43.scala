@@ -1,33 +1,23 @@
 package typings.carbonElements.anon
 
-import typings.carbonElements.carbonElementsDoubles.`1.11`
-import typings.carbonElements.carbonElementsStrings.`-0Dot64px`
-import typings.carbonElements.carbonElementsStrings.`5Dot75rem`
+import typings.carbonElements.carbonElementsStrings.`16px`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `43` extends StObject {
   
-  var fontSize: `5Dot75rem`
-  
-  var letterSpacing: `-0Dot64px`
-  
-  var lineHeight: `1.11`
+  var fontSize: `16px`
 }
 object `43` {
   
   inline def apply(): `43` = {
-    val __obj = js.Dynamic.literal(fontSize = "5.75rem", letterSpacing = "-0.64px", lineHeight = 1.11d)
+    val __obj = js.Dynamic.literal(fontSize = "16px")
     __obj.asInstanceOf[`43`]
   }
   
   extension [Self <: `43`](x: Self) {
     
-    inline def setFontSize(value: `5Dot75rem`): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
-    
-    inline def setLetterSpacing(value: `-0Dot64px`): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
-    
-    inline def setLineHeight(value: `1.11`): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: `16px`): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
   }
 }

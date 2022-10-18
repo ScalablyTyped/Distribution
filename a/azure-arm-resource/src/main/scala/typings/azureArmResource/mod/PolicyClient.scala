@@ -12,7 +12,7 @@ object PolicyClient {
   @JSImport("azure-arm-resource", "PolicyClient.default")
   @js.native
   open class default protected ()
-    extends typings.azureArmResource.policyClientMod.default {
+    extends typings.azureArmResource.libPolicyPolicyClientMod.default {
     /**
       * Initializes a new instance of the PolicyClient class.
       * @constructor
@@ -59,7 +59,7 @@ object PolicyClient {
   @JSImport("azure-arm-resource", "PolicyClient.PolicyClient")
   @js.native
   open class PolicyClient protected ()
-    extends typings.azureArmResource.policyClientMod.PolicyClient {
+    extends typings.azureArmResource.libPolicyPolicyClientMod.PolicyClient {
     /**
       * Initializes a new instance of the PolicyClient class.
       * @constructor
@@ -108,12 +108,12 @@ object PolicyClient {
     @JSImport("azure-arm-resource", "PolicyClient.PolicyModels.BaseResource")
     @js.native
     open class BaseResource ()
-      extends typings.azureArmResource.policyClientMod.PolicyModels.BaseResource
+      extends typings.azureArmResource.libPolicyPolicyClientMod.PolicyModels.BaseResource
     
     @JSImport("azure-arm-resource", "PolicyClient.PolicyModels.CloudError")
     @js.native
     open class CloudError protected ()
-      extends typings.azureArmResource.policyClientMod.PolicyModels.CloudError {
+      extends typings.azureArmResource.libPolicyPolicyClientMod.PolicyModels.CloudError {
       def this(parameters: CloudErrorParameters) = this()
     }
   }

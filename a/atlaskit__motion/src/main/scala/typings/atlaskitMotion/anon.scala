@@ -1,7 +1,7 @@
 package typings.atlaskitMotion
 
-import typings.atlaskitMotion.useElementRefMod.CallbackRef
-import typings.atlaskitMotion.useElementRefMod.Element
+import typings.atlaskitMotion.distTypesUtilsUseElementRefMod.CallbackRef
+import typings.atlaskitMotion.distTypesUtilsUseElementRefMod.Element
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,9 +1,9 @@
 package typings.awsGreengrassCoreSdk.mod.StreamManager
 
-import typings.awsGreengrassCoreSdk.dataMod.StatusMap
-import typings.awsGreengrassCoreSdk.dataMod.StatusOptions
-import typings.awsGreengrassCoreSdk.dataMod.StatusOptionsFlipped
-import typings.awsGreengrassCoreSdk.dataMod.StatusValue
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusOptions
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusOptionsFlipped
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,30 +23,30 @@ object Status {
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.Status.Canceled")
   @js.native
-  def Canceled: typings.awsGreengrassCoreSdk.dataMod.Status = js.native
-  inline def Canceled_=(x: typings.awsGreengrassCoreSdk.dataMod.Status): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Canceled")(x.asInstanceOf[js.Any])
+  def Canceled: typings.awsGreengrassCoreSdk.streamManagerDataMod.Status = js.native
+  inline def Canceled_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.Status): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Canceled")(x.asInstanceOf[js.Any])
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.Status.Failure")
   @js.native
-  def Failure: typings.awsGreengrassCoreSdk.dataMod.Status = js.native
-  inline def Failure_=(x: typings.awsGreengrassCoreSdk.dataMod.Status): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Failure")(x.asInstanceOf[js.Any])
+  def Failure: typings.awsGreengrassCoreSdk.streamManagerDataMod.Status = js.native
+  inline def Failure_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.Status): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Failure")(x.asInstanceOf[js.Any])
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.Status.InProgress")
   @js.native
-  def InProgress: typings.awsGreengrassCoreSdk.dataMod.Status = js.native
-  inline def InProgress_=(x: typings.awsGreengrassCoreSdk.dataMod.Status): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InProgress")(x.asInstanceOf[js.Any])
+  def InProgress: typings.awsGreengrassCoreSdk.streamManagerDataMod.Status = js.native
+  inline def InProgress_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.Status): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InProgress")(x.asInstanceOf[js.Any])
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.Status.Success")
   @js.native
-  def Success: typings.awsGreengrassCoreSdk.dataMod.Status = js.native
-  inline def Success_=(x: typings.awsGreengrassCoreSdk.dataMod.Status): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Success")(x.asInstanceOf[js.Any])
+  def Success: typings.awsGreengrassCoreSdk.streamManagerDataMod.Status = js.native
+  inline def Success_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.Status): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Success")(x.asInstanceOf[js.Any])
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.Status.Warning")
   @js.native
-  def Warning: typings.awsGreengrassCoreSdk.dataMod.Status = js.native
-  inline def Warning_=(x: typings.awsGreengrassCoreSdk.dataMod.Status): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Warning")(x.asInstanceOf[js.Any])
+  def Warning: typings.awsGreengrassCoreSdk.streamManagerDataMod.Status = js.native
+  inline def Warning_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.Status): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Warning")(x.asInstanceOf[js.Any])
   
-  inline def fromMap(d: StatusMap): typings.awsGreengrassCoreSdk.dataMod.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.Status]
+  inline def fromMap(d: StatusMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.Status]
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.Status.options")
   @js.native

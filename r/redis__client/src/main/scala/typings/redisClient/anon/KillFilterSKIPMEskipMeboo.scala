@@ -1,7 +1,7 @@
 package typings.redisClient.anon
 
-import typings.redisClient.clientKILLMod.ClientKillFilters.SKIP_ME
-import typings.redisClient.clientKILLMod.KillSkipMe
+import typings.redisClient.distLibCommandsClientKILLMod.ClientKillFilters.SKIP_ME
+import typings.redisClient.distLibCommandsClientKILLMod.KillSkipMe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

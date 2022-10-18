@@ -1,8 +1,8 @@
 package typings.angularDevkitSchematics
 
 import typings.angularDevkitCore.mod.logging.Logger
-import typings.angularDevkitCore.pathMod.Path_
-import typings.angularDevkitSchematics.workflowInterfaceMod.WorkflowExecutionContext
+import typings.angularDevkitCore.srcVirtualFsPathMod.Path_
+import typings.angularDevkitSchematics.srcWorkflowInterfaceMod.WorkflowExecutionContext
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ object anon {
   
   trait Collection[CollectionMetadataT /* <: js.Object */] extends StObject {
     
-    val collection: typings.angularDevkitSchematics.interfaceMod.CollectionDescription[CollectionMetadataT]
+    val collection: typings.angularDevkitSchematics.srcEngineInterfaceMod.CollectionDescription[CollectionMetadataT]
     
     val hidden: js.UndefOr[Boolean] = js.undefined
     
@@ -23,7 +23,7 @@ object anon {
   object Collection {
     
     inline def apply[CollectionMetadataT /* <: js.Object */](
-      collection: typings.angularDevkitSchematics.interfaceMod.CollectionDescription[CollectionMetadataT],
+      collection: typings.angularDevkitSchematics.srcEngineInterfaceMod.CollectionDescription[CollectionMetadataT],
       name: String
     ): Collection[CollectionMetadataT] = {
       val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
@@ -32,7 +32,9 @@ object anon {
     
     extension [Self <: Collection[?], CollectionMetadataT /* <: js.Object */](x: Self & Collection[CollectionMetadataT]) {
       
-      inline def setCollection(value: typings.angularDevkitSchematics.interfaceMod.CollectionDescription[CollectionMetadataT]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(
+        value: typings.angularDevkitSchematics.srcEngineInterfaceMod.CollectionDescription[CollectionMetadataT]
+      ): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

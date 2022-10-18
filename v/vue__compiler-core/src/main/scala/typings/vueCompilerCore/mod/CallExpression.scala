@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CallExpression
   extends StObject
      with Node2
-     with InferCodegenNodeType[Any]
      with JSChildNode
      with PropsExpression {
   

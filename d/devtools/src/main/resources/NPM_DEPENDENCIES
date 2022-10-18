@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "devtools" : "7.25.0"
+      "devtools" : "7.25.1"
     }
   ],
   "test-dependencies" : [
     {
-      "devtools" : "7.25.0"
+      "devtools" : "7.25.1"
     }
   ],
   "compile-devDependencies" : [

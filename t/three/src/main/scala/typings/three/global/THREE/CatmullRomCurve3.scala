@@ -14,32 +14,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class CatmullRomCurve3 ()
   extends typings.three.mod.CatmullRomCurve3 {
-  def this(points: js.Array[typings.three.vector3Mod.Vector3]) = this()
-  def this(points: js.Array[typings.three.vector3Mod.Vector3], closed: Boolean) = this()
+  def this(points: js.Array[typings.three.srcMathVector3Mod.Vector3]) = this()
+  def this(points: js.Array[typings.three.srcMathVector3Mod.Vector3], closed: Boolean) = this()
   def this(points: Unit, closed: Boolean) = this()
-  def this(points: js.Array[typings.three.vector3Mod.Vector3], closed: Boolean, curveType: String) = this()
-  def this(points: js.Array[typings.three.vector3Mod.Vector3], closed: Unit, curveType: String) = this()
+  def this(points: js.Array[typings.three.srcMathVector3Mod.Vector3], closed: Boolean, curveType: String) = this()
+  def this(points: js.Array[typings.three.srcMathVector3Mod.Vector3], closed: Unit, curveType: String) = this()
   def this(points: Unit, closed: Boolean, curveType: String) = this()
   def this(points: Unit, closed: Unit, curveType: String) = this()
   def this(
-    points: js.Array[typings.three.vector3Mod.Vector3],
+    points: js.Array[typings.three.srcMathVector3Mod.Vector3],
     closed: Boolean,
     curveType: String,
     tension: Double
   ) = this()
   def this(
-    points: js.Array[typings.three.vector3Mod.Vector3],
+    points: js.Array[typings.three.srcMathVector3Mod.Vector3],
     closed: Boolean,
     curveType: Unit,
     tension: Double
   ) = this()
   def this(
-    points: js.Array[typings.three.vector3Mod.Vector3],
+    points: js.Array[typings.three.srcMathVector3Mod.Vector3],
     closed: Unit,
     curveType: String,
     tension: Double
   ) = this()
-  def this(points: js.Array[typings.three.vector3Mod.Vector3], closed: Unit, curveType: Unit, tension: Double) = this()
+  def this(
+    points: js.Array[typings.three.srcMathVector3Mod.Vector3],
+    closed: Unit,
+    curveType: Unit,
+    tension: Double
+  ) = this()
   def this(points: Unit, closed: Boolean, curveType: String, tension: Double) = this()
   def this(points: Unit, closed: Boolean, curveType: Unit, tension: Double) = this()
   def this(points: Unit, closed: Unit, curveType: String, tension: Double) = this()

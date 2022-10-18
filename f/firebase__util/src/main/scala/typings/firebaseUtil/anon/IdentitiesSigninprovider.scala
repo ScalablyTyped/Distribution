@@ -1,7 +1,6 @@
 package typings.firebaseUtil.anon
 
-import org.scalablytyped.runtime.TopLevel
-import typings.firebaseUtil.srcEmulatorMod.FirebaseSignInProvider
+import typings.firebaseUtil.distSrcEmulatorMod.FirebaseSignInProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IdentitiesSigninprovider extends StObject {
   
   var identities: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ provider in @firebase/util.@firebase/util/dist/src/emulator.FirebaseSignInProvider ]:? std.Array<string>}
-    */ typings.firebaseUtil.firebaseUtilStrings.IdentitiesSigninprovider & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ provider in @firebase/util.@firebase/util/dist/src/emulator.FirebaseSignInProvider ]:? std.Array<string>} */ js.Any
   ] = js.undefined
   
   var sign_in_provider: FirebaseSignInProvider
@@ -26,9 +23,7 @@ object IdentitiesSigninprovider {
   extension [Self <: IdentitiesSigninprovider](x: Self) {
     
     inline def setIdentities(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ provider in @firebase/util.@firebase/util/dist/src/emulator.FirebaseSignInProvider ]:? std.Array<string>}
-      */ typings.firebaseUtil.firebaseUtilStrings.IdentitiesSigninprovider & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ provider in @firebase/util.@firebase/util/dist/src/emulator.FirebaseSignInProvider ]:? std.Array<string>} */ js.Any
     ): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     
     inline def setIdentitiesUndefined: Self = StObject.set(x, "identities", js.undefined)

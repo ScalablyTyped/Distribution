@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CloseAction extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.vscodeLanguageclient.clientMod.CloseAction & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.vscodeLanguageclient.libCommonClientMod.CloseAction & Double] = js.native
   
-  /* 1 */ val DoNotRestart: typings.vscodeLanguageclient.clientMod.CloseAction.DoNotRestart & Double = js.native
+  /* 1 */ val DoNotRestart: typings.vscodeLanguageclient.libCommonClientMod.CloseAction.DoNotRestart & Double = js.native
   
-  /* 2 */ val Restart: typings.vscodeLanguageclient.clientMod.CloseAction.Restart & Double = js.native
+  /* 2 */ val Restart: typings.vscodeLanguageclient.libCommonClientMod.CloseAction.Restart & Double = js.native
 }

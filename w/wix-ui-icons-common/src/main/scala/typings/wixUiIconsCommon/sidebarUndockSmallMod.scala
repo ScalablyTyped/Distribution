@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsSidebarUndockSmallMod.SidebarUndockSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sidebarUndockSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/SidebarUndockSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/SidebarUndockSmall", JSImport.Default)
   @js.native
   val default: FC[SidebarUndockSmallProps] = js.native
-  
-  trait SidebarUndockSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object SidebarUndockSmallProps {
-    
-    inline def apply(): SidebarUndockSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SidebarUndockSmallProps]
-    }
-    
-    extension [Self <: SidebarUndockSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[SidebarUndockSmallProps]
   

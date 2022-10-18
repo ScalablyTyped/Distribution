@@ -2,7 +2,7 @@ package typings.estreeUtilToJs
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.estreeUtilToJs.anon.PartialGenerator
-import typings.estreeUtilToJs.typesMod.Handler
+import typings.estreeUtilToJs.libTypesMod.Handler
 import typings.sourceMap.mod.SourceMapConsumer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

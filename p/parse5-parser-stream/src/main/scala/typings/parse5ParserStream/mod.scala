@@ -1,9 +1,9 @@
 package typings.parse5ParserStream
 
-import typings.node.nodeStreamMod.Writable
+import typings.node.nodeColonstreamMod.Writable
 import typings.parse5.distParserMod.ParserOptions
+import typings.parse5.distTreeAdaptersInterfaceMod.TreeAdapterTypeMap
 import typings.parse5.mod.Parser
-import typings.parse5.treeAdaptersInterfaceMod.TreeAdapterTypeMap
 import typings.parse5ParserStream.parse5ParserStreamStrings.script
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

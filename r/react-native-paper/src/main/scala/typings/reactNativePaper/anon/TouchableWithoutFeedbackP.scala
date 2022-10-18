@@ -265,7 +265,7 @@ trait TouchableWithoutFeedbackP extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * If true, doesn't play a system sound on touch.
@@ -281,7 +281,7 @@ trait TouchableWithoutFeedbackP extends StObject {
 }
 object TouchableWithoutFeedbackP {
   
-  inline def apply(theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): TouchableWithoutFeedbackP = {
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): TouchableWithoutFeedbackP = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchableWithoutFeedbackP]
   }
@@ -460,7 +460,7 @@ object TouchableWithoutFeedbackP {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
     

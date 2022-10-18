@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.dispatchr.mod.Dispatcher
 import typings.dispatchr.mod.DispatcherInterface
 import typings.dispatchr.mod.StoreClass
+import typings.fluxible.addonsBaseStoreMod.^
 import typings.fluxible.anon.Create
 import typings.fluxible.anon.Instantiable
-import typings.fluxible.baseStoreMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

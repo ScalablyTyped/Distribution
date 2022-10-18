@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import typings.bson.mod.ObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ open class ServerDescription () extends StObject {
   
   var arbiters: js.Array[String] = js.native
   
-  var electionId: typings.bson.mod.ObjectId | Null = js.native
+  var electionId: ObjectId | Null = js.native
   
   /**
     * Determines if another `ServerDescription` is equal to this one per the rules defined

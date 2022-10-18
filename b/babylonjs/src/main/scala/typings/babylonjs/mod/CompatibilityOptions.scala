@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "CompatibilityOptions")
 @js.native
 open class CompatibilityOptions ()
-  extends typings.babylonjs.legacyMod.CompatibilityOptions
+  extends typings.babylonjs.legacyLegacyMod.CompatibilityOptions
 /* static members */
 object CompatibilityOptions {
   

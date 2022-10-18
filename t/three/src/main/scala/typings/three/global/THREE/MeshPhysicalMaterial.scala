@@ -1,6 +1,6 @@
 package typings.three.global.THREE
 
-import typings.three.meshPhysicalMaterialMod.MeshPhysicalMaterialParameters
+import typings.three.srcMaterialsMeshPhysicalMaterialMod.MeshPhysicalMaterialParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

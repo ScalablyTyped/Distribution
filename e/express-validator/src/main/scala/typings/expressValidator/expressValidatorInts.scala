@@ -1,7 +1,7 @@
 package typings.expressValidator
 
-import typings.expressValidator.optionsMod.IPVersion
-import typings.expressValidator.optionsMod.UUIDVersion
+import typings.expressValidator.srcOptionsMod.IPVersion
+import typings.expressValidator.srcOptionsMod.UUIDVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

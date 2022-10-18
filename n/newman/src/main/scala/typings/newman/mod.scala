@@ -32,6 +32,115 @@ object mod {
     callback: js.Function2[/* err */ js.Error | Null, /* summary */ NewmanRunSummary, Unit]
   ): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
+  trait ConsoleEvent extends StObject {
+    
+    var cursor: Cursor
+    
+    var level: String
+    
+    var messages: js.Array[Any]
+  }
+  object ConsoleEvent {
+    
+    inline def apply(cursor: Cursor, level: String, messages: js.Array[Any]): ConsoleEvent = {
+      val __obj = js.Dynamic.literal(cursor = cursor.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConsoleEvent]
+    }
+    
+    extension [Self <: ConsoleEvent](x: Self) {
+      
+      inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      
+      inline def setMessages(value: js.Array[Any]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      
+      inline def setMessagesVarargs(value: Any*): Self = StObject.set(x, "messages", js.Array(value*))
+    }
+  }
+  
+  trait Cursor extends StObject {
+    
+    /** Indicates if this cursor position is at the beginning of the run. */
+    var bof: Boolean
+    
+    /** Indicates if this cursor position is going to change to the next cycle. */
+    var cr: Boolean
+    
+    /** Total number of iterations that will be repeated on the length. */
+    var cycles: Double
+    
+    /** The run is empty and there is nothing to execute. */
+    var empty: Boolean
+    
+    /** Indicates if this cursor position is at the end of the run. */
+    var eof: Boolean
+    
+    /** A unique identifier added during the Item execution. */
+    var httpRequestId: js.UndefOr[String] = js.undefined
+    
+    /** The current cycle in the total iteration count. */
+    var iteration: Double
+    
+    /** Total number of items in the collection run. */
+    var length: Double
+    
+    /** Current index of the item being processed from within the total number of items. */
+    var position: Double
+    
+    /** A common item identifier in an execution cycle. */
+    var ref: String
+    
+    /** A unique identifier added during the Script execution. */
+    var scriptId: js.UndefOr[String] = js.undefined
+  }
+  object Cursor {
+    
+    inline def apply(
+      bof: Boolean,
+      cr: Boolean,
+      cycles: Double,
+      empty: Boolean,
+      eof: Boolean,
+      iteration: Double,
+      length: Double,
+      position: Double,
+      ref: String
+    ): Cursor = {
+      val __obj = js.Dynamic.literal(bof = bof.asInstanceOf[js.Any], cr = cr.asInstanceOf[js.Any], cycles = cycles.asInstanceOf[js.Any], empty = empty.asInstanceOf[js.Any], eof = eof.asInstanceOf[js.Any], iteration = iteration.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Cursor]
+    }
+    
+    extension [Self <: Cursor](x: Self) {
+      
+      inline def setBof(value: Boolean): Self = StObject.set(x, "bof", value.asInstanceOf[js.Any])
+      
+      inline def setCr(value: Boolean): Self = StObject.set(x, "cr", value.asInstanceOf[js.Any])
+      
+      inline def setCycles(value: Double): Self = StObject.set(x, "cycles", value.asInstanceOf[js.Any])
+      
+      inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      
+      inline def setEof(value: Boolean): Self = StObject.set(x, "eof", value.asInstanceOf[js.Any])
+      
+      inline def setHttpRequestId(value: String): Self = StObject.set(x, "httpRequestId", value.asInstanceOf[js.Any])
+      
+      inline def setHttpRequestIdUndefined: Self = StObject.set(x, "httpRequestId", js.undefined)
+      
+      inline def setIteration(value: Double): Self = StObject.set(x, "iteration", value.asInstanceOf[js.Any])
+      
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setScriptId(value: String): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
+      
+      inline def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
+    }
+  }
+  
   trait NewmanRun extends StObject {
     
     var executions: js.Array[NewmanRunExecution]

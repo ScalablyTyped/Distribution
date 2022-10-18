@@ -1,11 +1,11 @@
 package typings.chevrotain
 
 import typings.chevrotainTypes.anon.Definition
-import typings.chevrotainTypes.anon.DefinitionIdx
 import typings.chevrotainTypes.anon.Idx
 import typings.chevrotainTypes.anon.IgnoreAmbiguities
 import typings.chevrotainTypes.anon.Label
 import typings.chevrotainTypes.anon.Name
+import typings.chevrotainTypes.anon.OrgText
 import typings.chevrotainTypes.anon.Separator
 import typings.chevrotainTypes.mod.GenerateDtsOptions
 import typings.chevrotainTypes.mod.ICreateSyntaxDiagramsConfig
@@ -35,7 +35,7 @@ object global {
     @js.native
     open class Alternation protected ()
       extends typings.chevrotain.mod.Alternation {
-      def this(options: DefinitionIdx) = this()
+      def this(options: Definition) = this()
     }
     
     @JSGlobal("chevrotain.Alternative")
@@ -69,9 +69,9 @@ object global {
     open class EmbeddedActionsParser ()
       extends typings.chevrotain.mod.EmbeddedActionsParser
     
-    @JSGlobal("chevrotain.GAstVisitor")
+    /* note: abstract class */ @JSGlobal("chevrotain.GAstVisitor")
     @js.native
-    abstract class GAstVisitor ()
+    open class GAstVisitor ()
       extends typings.chevrotain.mod.GAstVisitor
     
     @JSGlobal("chevrotain.Lexer")
@@ -253,7 +253,7 @@ object global {
     @js.native
     open class Rule protected ()
       extends typings.chevrotain.mod.Rule {
-      def this(options: Definition) = this()
+      def this(options: OrgText) = this()
     }
     
     @JSGlobal("chevrotain.Terminal")

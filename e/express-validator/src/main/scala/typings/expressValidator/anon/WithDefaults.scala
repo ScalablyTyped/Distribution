@@ -1,7 +1,7 @@
 package typings.expressValidator.anon
 
-import typings.expressValidator.validationResultMod.ResultFactory
-import typings.expressValidator.validationResultMod.ResultFactoryBuilderOptions
+import typings.expressValidator.srcValidationResultMod.ResultFactory
+import typings.expressValidator.srcValidationResultMod.ResultFactoryBuilderOptions
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

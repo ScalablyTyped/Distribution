@@ -15,14 +15,14 @@ object Grammar {
     * it is an invalid URI.
     * @param uri -
     */
-  inline def URIParse(uri: String): js.UndefOr[typings.sipJs.uriMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("URIParse")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.sipJs.uriMod.URI]]
+  inline def URIParse(uri: String): js.UndefOr[typings.sipJs.libGrammarUriMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("URIParse")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.sipJs.libGrammarUriMod.URI]]
   
   /**
     * Parse the given string and returns a SIP.NameAddrHeader instance or undefined if
     * it is an invalid NameAddrHeader.
     * @param name_addr_header -
     */
-  inline def nameAddrHeaderParse(nameAddrHeader: String): js.UndefOr[typings.sipJs.nameAddrHeaderMod.NameAddrHeader] = ^.asInstanceOf[js.Dynamic].applyDynamic("nameAddrHeaderParse")(nameAddrHeader.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.sipJs.nameAddrHeaderMod.NameAddrHeader]]
+  inline def nameAddrHeaderParse(nameAddrHeader: String): js.UndefOr[typings.sipJs.libGrammarNameAddrHeaderMod.NameAddrHeader] = ^.asInstanceOf[js.Dynamic].applyDynamic("nameAddrHeaderParse")(nameAddrHeader.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.sipJs.libGrammarNameAddrHeaderMod.NameAddrHeader]]
   
   /**
     * Parse.

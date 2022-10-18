@@ -346,9 +346,9 @@ object resources {
     *
     * @link https://github.com/coinbase/coinbase-commerce-node#documentation
     */
-  @JSImport("coinbase-commerce-node", "resources.Resource")
+  /* note: abstract class */ @JSImport("coinbase-commerce-node", "resources.Resource")
   @js.native
-  abstract class Resource[Request] protected () extends StObject {
+  open class Resource[Request] protected () extends StObject {
     /**
       * Charge constructor.
       */

@@ -64,7 +64,7 @@ trait MasterCategories extends StObject {
     * - `PermissionDenied`: The user does not have permission to perform this action.
     *
     * @param categories - The categories to be added to the master list on the mailbox.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
@@ -100,7 +100,7 @@ trait MasterCategories extends StObject {
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. If adding categories fails, the `asyncResult.error` property will contain an error code.
@@ -145,7 +145,7 @@ trait MasterCategories extends StObject {
     * - `PermissionDenied`: The user does not have permission to perform this action.
     *
     * @param categories - The categories to be removed from the master list on the mailbox.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. If removing categories fails, the `asyncResult.error` property will contain an error code.

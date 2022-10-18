@@ -11,5 +11,5 @@ trait TypeofOctahedronGeometry
   extends StObject
      with Instantiable0[OctahedronGeometry] {
   
-  def fromJSON(data: Any): typings.three.octahedronGeometryMod.OctahedronGeometry = js.native
+  def fromJSON(data: Any): typings.three.srcGeometriesOctahedronGeometryMod.OctahedronGeometry = js.native
 }

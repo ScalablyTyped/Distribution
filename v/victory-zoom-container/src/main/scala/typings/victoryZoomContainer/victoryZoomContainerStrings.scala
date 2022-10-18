@@ -1,6 +1,6 @@
 package typings.victoryZoomContainer
 
-import typings.victoryZoomContainer.mod.ZoomDimensionType
+import typings.victoryZoomContainer.libMod.ZoomDimensionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

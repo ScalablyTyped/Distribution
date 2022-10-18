@@ -1,7 +1,7 @@
 package typings.firebaseStorage
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseStorage.publicTypesMod.StorageReference
+import typings.firebaseStorage.distNodeEsmSrcPublicTypesMod.StorageReference
 import typings.firebaseUtil.mod.EmulatorMockTokenOptions
 import typings.nodeFetch.mod.RequestInfo
 import typings.nodeFetch.mod.RequestInit
@@ -202,7 +202,7 @@ object anon {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var ref: js.UndefOr[typings.firebaseStorage.srcPublicTypesMod.StorageReference] = js.undefined
+    var ref: js.UndefOr[typings.firebaseStorage.distSrcPublicTypesMod.StorageReference] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
     
@@ -273,7 +273,7 @@ object anon {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setRef(value: typings.firebaseStorage.srcPublicTypesMod.StorageReference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: typings.firebaseStorage.distSrcPublicTypesMod.StorageReference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       

@@ -2,7 +2,6 @@ package typings.devextreme.mod.DevExpress
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
 import typings.devextreme.anon.Container
 import typings.devextreme.anon.Then
 import typings.devextreme.devextremeStrings.orientationChanged
@@ -42,9 +41,15 @@ object core {
     */
   type Condition = JQueryEventObject
   
-  type DeepPartial[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? T[P] extends std.Function? T[P] : devextreme.devextreme.DevExpress.core.DeepPartial<T[P]>}
-    */ typings.devextreme.devextremeStrings.DeepPartial & TopLevel[Any])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends object ? {[ P in keyof T ]:? T[P] extends std.Function? T[P] : devextreme.devextreme.DevExpress.core.DeepPartial<T[P]>} : T
+    }}}
+    */
+  @js.native
+  trait DeepPartial[T] extends StObject
   
   trait DefaultOptionsRule[T] extends StObject {
     
@@ -73,7 +78,15 @@ object core {
     }
   }
   
-  type DxElement_[T /* <: Element */] = ElementWrapper[T] | T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {} extends devextreme.devextreme.DevExpress.core.Condition ? T : devextreme.devextreme.DevExpress.core.ElementWrapper<T>
+    }}}
+    */
+  @js.native
+  trait DxElement_[T /* <: Element */] extends StObject
   
   /**
     * @deprecated Attention! This type is for internal purposes only. If you used it previously, please submit a ticket to our {@link https://supportcenter.devexpress.com/ticket/create Support Center}. We will check if there is an alternative solution.
@@ -152,9 +165,25 @@ object core {
   
   trait Template_ extends StObject
   
-  type UserDefinedElement[T /* <: Element */] = ElementWrapper[T] | T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {} extends devextreme.devextreme.DevExpress.core.Condition ? T : devextreme.devextreme.DevExpress.core.ElementWrapper<T> | T
+    }}}
+    */
+  @js.native
+  trait UserDefinedElement[T /* <: Element */] extends StObject
   
-  type UserDefinedElementsArray = ElementsArrayWrapper[Element] | js.Array[Element]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {} extends devextreme.devextreme.DevExpress.core.Condition ? std.Array<std.Element> : devextreme.devextreme.DevExpress.core.ElementsArrayWrapper<std.Element>
+    }}}
+    */
+  @js.native
+  trait UserDefinedElementsArray extends StObject
   
   type dxElement = DxElement_[HTMLElement]
   
@@ -190,6 +219,14 @@ object core {
     
     type DxExtendedPromise[T] = DxPromise[T] & Then[T]
     
-    type DxPromise[T] = PromiseType[T] | js.Promise[T]
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      {} extends devextreme.devextreme.DevExpress.core.PromiseType<T> ? std.Promise<T> : devextreme.devextreme.DevExpress.core.PromiseType<T>
+      }}}
+      */
+    @js.native
+    trait DxPromise[T] extends StObject
   }
 }

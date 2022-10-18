@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/index", "Light")
+/* note: abstract class */ @JSImport("babylonjs/index", "Light")
 @js.native
-abstract class Light protected ()
+open class Light protected ()
   extends typings.babylonjs.lightsIndexMod.Light {
   /**
     * Creates a Light object in the scene.
@@ -164,5 +164,5 @@ object Light {
     * @param scene The scene to create the parsed light in
     * @returns the created light after parsing
     */
-  inline def Parse(parsedLight: Any, scene: typings.babylonjs.sceneMod.Scene): Nullable[typings.babylonjs.lightMod.Light] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.lightMod.Light]]
+  inline def Parse(parsedLight: Any, scene: typings.babylonjs.sceneMod.Scene): Nullable[typings.babylonjs.lightsLightMod.Light] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.lightsLightMod.Light]]
 }

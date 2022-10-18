@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a video frame that includes a list of faces detected by the FaceDetectionEffect . */
-@JSGlobal("Windows.Media.Core.FaceDetectionEffectFrame")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.FaceDetectionEffectFrame")
 @js.native
-abstract class FaceDetectionEffectFrame ()
+open class FaceDetectionEffectFrame ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.FaceDetectionEffectFrame {
   

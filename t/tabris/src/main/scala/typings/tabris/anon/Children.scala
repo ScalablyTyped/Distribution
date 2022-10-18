@@ -1,13 +1,15 @@
 package typings.tabris.anon
 
-import typings.tabris.mod.JSXDefaultChildren
+import typings.tabris.mod.JSXChildren
+import typings.tabris.mod.Widget
+import typings.tabris.mod.WidgetCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Children extends StObject {
   
-  var children: js.UndefOr[JSXDefaultChildren] = js.undefined
+  var children: JSXChildren[Widget[Any]]
 }
 object Children {
   
@@ -18,10 +20,10 @@ object Children {
   
   extension [Self <: Children](x: Self) {
     
-    inline def setChildren(value: JSXDefaultChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: JSXChildren[Widget[Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: (String | (Cid & js.Object))*): Self = StObject.set(x, "children", js.Array(value*))
+    inline def setChildrenVarargs(value: (Widget[Any] | WidgetCollection[Widget[Any]])*): Self = StObject.set(x, "children", js.Array(value*))
   }
 }

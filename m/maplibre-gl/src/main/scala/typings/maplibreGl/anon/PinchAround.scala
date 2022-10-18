@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PinchAround extends StObject {
   
-  var pinchAround: ^
+  var bearingDelta: Double
   
-  var zoomDelta: Double
+  var pinchAround: ^
 }
 object PinchAround {
   
-  inline def apply(pinchAround: ^, zoomDelta: Double): PinchAround = {
-    val __obj = js.Dynamic.literal(pinchAround = pinchAround.asInstanceOf[js.Any], zoomDelta = zoomDelta.asInstanceOf[js.Any])
+  inline def apply(bearingDelta: Double, pinchAround: ^): PinchAround = {
+    val __obj = js.Dynamic.literal(bearingDelta = bearingDelta.asInstanceOf[js.Any], pinchAround = pinchAround.asInstanceOf[js.Any])
     __obj.asInstanceOf[PinchAround]
   }
   
   extension [Self <: PinchAround](x: Self) {
     
-    inline def setPinchAround(value: ^): Self = StObject.set(x, "pinchAround", value.asInstanceOf[js.Any])
+    inline def setBearingDelta(value: Double): Self = StObject.set(x, "bearingDelta", value.asInstanceOf[js.Any])
     
-    inline def setZoomDelta(value: Double): Self = StObject.set(x, "zoomDelta", value.asInstanceOf[js.Any])
+    inline def setPinchAround(value: ^): Self = StObject.set(x, "pinchAround", value.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "TilingInfo")
 @js.native
 open class TilingInfo protected ()
-  extends typings.blackEngine.tilingInfoMod.TilingInfo {
+  extends typings.blackEngine.displayTilingInfoMod.TilingInfo {
   def this(
     width: js.UndefOr[Double],
     height: js.UndefOr[Double],

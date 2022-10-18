@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A cash drawer device in a retail scenario. */
-@JSGlobal("Windows.Devices.PointOfService.CashDrawer")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.CashDrawer")
 @js.native
-abstract class CashDrawer ()
+open class CashDrawer ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.CashDrawer
 object CashDrawer {

@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.mathSizeMod.ISize
+import typings.babylonjs.mathsMathDotsizeMod.ISize
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,7 +55,7 @@ object CopyTools {
   @JSImport("babylonjs/index", "CopyTools.GenerateBase64StringFromTexture")
   @js.native
   def GenerateBase64StringFromTexture: js.Function3[
-    /* texture */ typings.babylonjs.baseTextureMod.BaseTexture, 
+    /* texture */ typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, 
     /* faceIndex */ js.UndefOr[Double], 
     /* level */ js.UndefOr[Double], 
     Nullable[String]
@@ -67,10 +67,18 @@ object CopyTools {
     * @param level defines the LOD level of the texture to read (in case of Mip Maps)
     * @returns The base64 encoded string or null
     */
-  inline def GenerateBase64StringFromTexture(texture: typings.babylonjs.baseTextureMod.BaseTexture): Nullable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[Nullable[String]]
-  inline def GenerateBase64StringFromTexture(texture: typings.babylonjs.baseTextureMod.BaseTexture, faceIndex: Double): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
-  inline def GenerateBase64StringFromTexture(texture: typings.babylonjs.baseTextureMod.BaseTexture, faceIndex: Double, level: Double): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
-  inline def GenerateBase64StringFromTexture(texture: typings.babylonjs.baseTextureMod.BaseTexture, faceIndex: Unit, level: Double): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
+  inline def GenerateBase64StringFromTexture(texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture): Nullable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[Nullable[String]]
+  inline def GenerateBase64StringFromTexture(texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, faceIndex: Double): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
+  inline def GenerateBase64StringFromTexture(
+    texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
+    faceIndex: Double,
+    level: Double
+  ): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
+  inline def GenerateBase64StringFromTexture(
+    texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
+    faceIndex: Unit,
+    level: Double
+  ): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
   
   /**
     * Reads the pixels stored in the webgl texture and returns them as a base64 string
@@ -82,7 +90,7 @@ object CopyTools {
   @JSImport("babylonjs/index", "CopyTools.GenerateBase64StringFromTextureAsync")
   @js.native
   def GenerateBase64StringFromTextureAsync: js.Function3[
-    /* texture */ typings.babylonjs.baseTextureMod.BaseTexture, 
+    /* texture */ typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, 
     /* faceIndex */ js.UndefOr[Double], 
     /* level */ js.UndefOr[Double], 
     js.Promise[Nullable[String]]
@@ -94,13 +102,21 @@ object CopyTools {
     * @param level defines the LOD level of the texture to read (in case of Mip Maps)
     * @returns The base64 encoded string or null wrapped in a promise
     */
-  inline def GenerateBase64StringFromTextureAsync(texture: typings.babylonjs.baseTextureMod.BaseTexture): js.Promise[Nullable[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Nullable[String]]]
-  inline def GenerateBase64StringFromTextureAsync(texture: typings.babylonjs.baseTextureMod.BaseTexture, faceIndex: Double): js.Promise[Nullable[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nullable[String]]]
-  inline def GenerateBase64StringFromTextureAsync(texture: typings.babylonjs.baseTextureMod.BaseTexture, faceIndex: Double, level: Double): js.Promise[Nullable[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nullable[String]]]
-  inline def GenerateBase64StringFromTextureAsync(texture: typings.babylonjs.baseTextureMod.BaseTexture, faceIndex: Unit, level: Double): js.Promise[Nullable[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nullable[String]]]
+  inline def GenerateBase64StringFromTextureAsync(texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture): js.Promise[Nullable[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Nullable[String]]]
+  inline def GenerateBase64StringFromTextureAsync(texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, faceIndex: Double): js.Promise[Nullable[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nullable[String]]]
+  inline def GenerateBase64StringFromTextureAsync(
+    texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
+    faceIndex: Double,
+    level: Double
+  ): js.Promise[Nullable[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nullable[String]]]
+  inline def GenerateBase64StringFromTextureAsync(
+    texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
+    faceIndex: Unit,
+    level: Double
+  ): js.Promise[Nullable[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nullable[String]]]
   inline def GenerateBase64StringFromTextureAsync_=(
     x: js.Function3[
-      /* texture */ typings.babylonjs.baseTextureMod.BaseTexture, 
+      /* texture */ typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, 
       /* faceIndex */ js.UndefOr[Double], 
       /* level */ js.UndefOr[Double], 
       js.Promise[Nullable[String]]
@@ -109,7 +125,7 @@ object CopyTools {
   
   inline def GenerateBase64StringFromTexture_=(
     x: js.Function3[
-      /* texture */ typings.babylonjs.baseTextureMod.BaseTexture, 
+      /* texture */ typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, 
       /* faceIndex */ js.UndefOr[Double], 
       /* level */ js.UndefOr[Double], 
       Nullable[String]

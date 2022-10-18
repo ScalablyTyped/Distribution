@@ -2,7 +2,7 @@ package typings.fundamentalReact.mod
 
 import typings.fundamentalReact.anon.PartialFormGroupProps
 import typings.fundamentalReact.anon.WeakValidationMapFormGrou
-import typings.fundamentalReact.formGroupMod.FormGroupProps
+import typings.fundamentalReact.libFormsFormGroupMod.FormGroupProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

@@ -1,7 +1,7 @@
 package typings.materializeCss.M
 
+import typings.materializeCss.anon.PartialInternationalizati
 import typings.std.Element
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,9 +59,7 @@ trait DatepickerOptions extends StObject {
   /**
     * Internationalization options
     */
-  var i18n: Partial[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
-  ]
+  var i18n: PartialInternationalizati
   
   /**
     * Changes Datepicker to RTL.
@@ -149,9 +147,7 @@ object DatepickerOptions {
     events: js.Array[String],
     firstDay: Double,
     format: String,
-    i18n: Partial[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
-    ],
+    i18n: PartialInternationalizati,
     isRTL: Boolean,
     setDefaultDate: Boolean,
     showClearBtn: Boolean,
@@ -189,11 +185,7 @@ object DatepickerOptions {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setI18n(
-      value: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
-        ]
-    ): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+    inline def setI18n(value: PartialInternationalizati): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     

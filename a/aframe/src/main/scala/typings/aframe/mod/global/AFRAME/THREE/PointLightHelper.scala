@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class PointLightHelper protected ()
   extends typings.three.mod.PointLightHelper {
-  def this(light: typings.three.pointLightMod.PointLight) = this()
+  def this(light: typings.three.srcLightsPointLightMod.PointLight) = this()
 }

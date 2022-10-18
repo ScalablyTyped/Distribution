@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "CannonJSPlugin")
 @js.native
 open class CannonJSPlugin ()
-  extends typings.babylonjs.legacyMod.CannonJSPlugin {
+  extends typings.babylonjs.legacyLegacyMod.CannonJSPlugin {
   def this(_useDeltaForWorldStep: Boolean) = this()
   def this(_useDeltaForWorldStep: Boolean, iterations: Double) = this()
   def this(_useDeltaForWorldStep: Unit, iterations: Double) = this()

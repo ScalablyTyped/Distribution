@@ -144,7 +144,7 @@ object mod extends Shortcut {
     /**
       * Menu icon.
       */
-    var image: js.UndefOr[Src] = js.undefined
+    var image: js.UndefOr[Height] = js.undefined
     
     /**
       * The function to be executed when the menu item is clicked.
@@ -198,7 +198,7 @@ object mod extends Shortcut {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setImage(value: Src): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: Height): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
       inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
@@ -253,7 +253,7 @@ object mod extends Shortcut {
       * Indicates that the menu item has a submenu.
       * Default: { src: 'assets/submenu-indicator-default.svg', width: 12, height: 12 }
       */
-    var submenuIndicator: js.UndefOr[Height] = js.undefined
+    var submenuIndicator: js.UndefOr[Src] = js.undefined
   }
   object MenuOptions {
     
@@ -286,7 +286,7 @@ object mod extends Shortcut {
       
       inline def setMenuItemsVarargs(value: MenuItem*): Self = StObject.set(x, "menuItems", js.Array(value*))
       
-      inline def setSubmenuIndicator(value: Height): Self = StObject.set(x, "submenuIndicator", value.asInstanceOf[js.Any])
+      inline def setSubmenuIndicator(value: Src): Self = StObject.set(x, "submenuIndicator", value.asInstanceOf[js.Any])
       
       inline def setSubmenuIndicatorUndefined: Self = StObject.set(x, "submenuIndicator", js.undefined)
     }

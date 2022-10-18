@@ -13,6 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  /* augmented module */
   object sinonAugmentingMod {
     
     @js.native

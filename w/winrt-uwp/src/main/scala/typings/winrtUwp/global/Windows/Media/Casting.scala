@@ -15,16 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Casting {
   
   /** Represents the actual connection with a casting device. */
-  @JSGlobal("Windows.Media.Casting.CastingConnection")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Casting.CastingConnection")
   @js.native
-  abstract class CastingConnection ()
+  open class CastingConnection ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Casting.CastingConnection
   
   /** Represents arguments for the ErrorOccurred event from the CastingConnection */
-  @JSGlobal("Windows.Media.Casting.CastingConnectionErrorOccurredEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Casting.CastingConnectionErrorOccurredEventArgs")
   @js.native
-  abstract class CastingConnectionErrorOccurredEventArgs ()
+  open class CastingConnectionErrorOccurredEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Casting.CastingConnectionErrorOccurredEventArgs {
     
@@ -80,9 +80,9 @@ object Casting {
   }
   
   /** Represents a physical device that is capable of supporting casting connections and rendering media content sent to it. */
-  @JSGlobal("Windows.Media.Casting.CastingDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Casting.CastingDevice")
   @js.native
-  abstract class CastingDevice ()
+  open class CastingDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Casting.CastingDevice {
     
@@ -160,9 +160,9 @@ object Casting {
        with typings.winrtUwp.Windows.Media.Casting.CastingDevicePicker
   
   /** Represents the filter used to determine which devices to show in a casting device picker UI. The filter parameters are OR-ed together to build the resulting filter. In other words, if SupportsAudio and SupportsVideo are both true, the picker will display Audio-only devices, video-only devices, and audio/video devices. */
-  @JSGlobal("Windows.Media.Casting.CastingDevicePickerFilter")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Casting.CastingDevicePickerFilter")
   @js.native
-  abstract class CastingDevicePickerFilter ()
+  open class CastingDevicePickerFilter ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Casting.CastingDevicePickerFilter {
     
@@ -184,9 +184,9 @@ object Casting {
   }
   
   /** Represents the event arguments for the CastingDeviceSelected event on the CastingDevicePicker object. */
-  @JSGlobal("Windows.Media.Casting.CastingDeviceSelectedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Casting.CastingDeviceSelectedEventArgs")
   @js.native
-  abstract class CastingDeviceSelectedEventArgs ()
+  open class CastingDeviceSelectedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Casting.CastingDeviceSelectedEventArgs {
     
@@ -213,9 +213,9 @@ object Casting {
   }
   
   /** Represents the media content that can be sent to another device. */
-  @JSGlobal("Windows.Media.Casting.CastingSource")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Casting.CastingSource")
   @js.native
-  abstract class CastingSource ()
+  open class CastingSource ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Casting.CastingSource {
     

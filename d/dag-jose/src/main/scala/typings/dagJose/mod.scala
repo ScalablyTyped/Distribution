@@ -1,7 +1,7 @@
 package typings.dagJose
 
-import typings.dagJose.encryptionMod.DagJWE
-import typings.dagJose.signingMod.DagJWS
+import typings.dagJose.libEncryptionMod.DagJWE
+import typings.dagJose.libSigningMod.DagJWS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

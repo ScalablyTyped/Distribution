@@ -1,6 +1,6 @@
 package typings.reactWidgets.anon
 
-import typings.reactWidgets.listMod.ListHandle
+import typings.reactWidgets.cjsListMod.ListHandle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

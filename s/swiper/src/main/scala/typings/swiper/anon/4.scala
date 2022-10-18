@@ -1,6 +1,6 @@
 package typings.swiper.anon
 
-import typings.swiper.controllerMod.ControllerOptions
+import typings.swiper.typesModulesAutoplayMod.AutoplayOptions
 import typings.vueRuntimeCore.mod.PropConstructor
 import typings.vueRuntimeCore.mod.PropType
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ trait `4` extends StObject {
   
   var default: Unit
   
-  var `type`: PropType[ControllerOptions]
+  var `type`: PropType[AutoplayOptions | Boolean]
 }
 object `4` {
   
-  inline def apply(default: Unit, `type`: PropType[ControllerOptions]): `4` = {
+  inline def apply(default: Unit, `type`: PropType[AutoplayOptions | Boolean]): `4` = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`4`]
@@ -25,10 +25,10 @@ object `4` {
     
     inline def setDefault(value: Unit): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    inline def setType(value: PropType[ControllerOptions]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PropType[AutoplayOptions | Boolean]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeFunction0(value: () => ControllerOptions): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+    inline def setTypeFunction0(value: () => AutoplayOptions | Boolean): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
     
-    inline def setTypeVarargs(value: PropConstructor[ControllerOptions]*): Self = StObject.set(x, "type", js.Array(value*))
+    inline def setTypeVarargs(value: (PropConstructor[AutoplayOptions | Boolean])*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

@@ -1,17 +1,18 @@
 package typings.ioredis.anon
 
-import typings.ioredis.clusterOptionsMod.NatMap
-import typings.ioredis.connectorConstructorMod.ConnectorConstructor
+import typings.ioredis.builtClusterClusterOptionsMod.NatMap
+import typings.ioredis.builtConnectorsConnectorConstructorMod.ConnectorConstructor
+import typings.ioredis.builtConnectorsSentinelConnectorMod.AddressFromResponse
+import typings.ioredis.builtConnectorsSentinelConnectorMod.PreferredSlaves
+import typings.ioredis.builtRedisRedisOptionsMod.ReconnectOnError
 import typings.ioredis.ioredisStrings.master_
 import typings.ioredis.ioredisStrings.slave
-import typings.ioredis.redisOptionsMod.ReconnectOnError
-import typings.ioredis.sentinelConnectorMod.AddressFromResponse
-import typings.ioredis.sentinelConnectorMod.PreferredSlaves
+import typings.node.AbortSignal
+import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.LookupFunction
 import typings.node.netMod.OnReadOpts
 import typings.node.tlsMod.ConnectionOptions
-import typings.std.AbortSignal
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -236,12 +237,7 @@ object OmitRedisOptionsporthostp {
     inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
     
     inline def setLookup(
-      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* address */ String, 
-          /* family */ Double, 
-          Unit
-        ]) => Unit
+      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
     ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
     
     inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)

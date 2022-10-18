@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-codecommit-node", "UpdateDefaultBranchCommand")
 @js.native
 open class UpdateDefaultBranchCommand protected ()
-  extends typings.awsSdkClientCodecommitNode.updateDefaultBranchCommandMod.UpdateDefaultBranchCommand {
+  extends typings.awsSdkClientCodecommitNode.commandsUpdateDefaultBranchCommandMod.UpdateDefaultBranchCommand {
   def this(input: UpdateDefaultBranchInput) = this()
 }

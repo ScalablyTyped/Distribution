@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mattersMod {
   
-  @JSImport("micromark-extension-frontmatter/dev/matters", JSImport.Namespace)
+  @JSImport("micromark-extension-frontmatter/matters", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

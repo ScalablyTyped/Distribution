@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("OutputStream")
+/* note: abstract class */ @JSGlobal("OutputStream")
 @js.native
-abstract class OutputStream ()
+open class OutputStream ()
   extends StObject
      with typings.fridaGum.OutputStream

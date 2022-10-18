@@ -3,8 +3,8 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import typings.vscode.anon.Create
 import typings.vscode.anon.Excludes
-import typings.vscode.anon.Overwrite
-import typings.vscode.anon.Recursive
+import typings.vscode.anon.OverwriteBoolean
+import typings.vscode.anon.RecursiveBoolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +28,7 @@ trait FileSystemProvider extends StObject {
     js.Function3[
       /* source */ Uri, 
       /* destination */ Uri, 
-      /* options */ Overwrite, 
+      /* options */ OverwriteBoolean, 
       Unit | Thenable[Unit]
     ]
   ] = js.native
@@ -51,7 +51,7 @@ trait FileSystemProvider extends StObject {
     * @throws {@linkcode FileSystemError.FileNotFound FileNotFound} when `uri` doesn't exist.
     * @throws {@linkcode FileSystemError.NoPermissions NoPermissions} when permissions aren't sufficient.
     */
-  def delete(uri: Uri, options: Recursive): Unit | Thenable[Unit] = js.native
+  def delete(uri: Uri, options: RecursiveBoolean): Unit | Thenable[Unit] = js.native
   
   /**
     * An event to signal that a resource has been created, changed, or deleted. This
@@ -105,7 +105,7 @@ trait FileSystemProvider extends StObject {
     * @throws {@linkcode FileSystemError.FileExists FileExists} when `newUri` exists and when the `overwrite` option is not `true`.
     * @throws {@linkcode FileSystemError.NoPermissions NoPermissions} when permissions aren't sufficient.
     */
-  def rename(oldUri: Uri, newUri: Uri, options: Overwrite): Unit | Thenable[Unit] = js.native
+  def rename(oldUri: Uri, newUri: Uri, options: OverwriteBoolean): Unit | Thenable[Unit] = js.native
   
   /**
     * Retrieve metadata about a file.

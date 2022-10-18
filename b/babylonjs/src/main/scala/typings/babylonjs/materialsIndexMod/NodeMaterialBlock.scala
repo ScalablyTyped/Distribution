@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "NodeMaterialBlock")
 @js.native
 open class NodeMaterialBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.NodeMaterialBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.NodeMaterialBlock {
   /**
     * Creates a new NodeMaterialBlock
     * @param name defines the block name
@@ -16,24 +16,27 @@ open class NodeMaterialBlock protected ()
     * @param isInput defines a boolean indicating that this block is an input (e.g. it sends data to the shader). Default is false
     */
   def this(name: String) = this()
-  def this(name: String, target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets) = this()
+  def this(
+    name: String,
+    target: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockTargetsMod.NodeMaterialBlockTargets
+  ) = this()
   def this(name: String, target: Unit, isFinalMerger: Boolean) = this()
   def this(
     name: String,
-    target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
+    target: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
     isFinalMerger: Boolean
   ) = this()
   def this(name: String, target: Unit, isFinalMerger: Boolean, isInput: Boolean) = this()
   def this(name: String, target: Unit, isFinalMerger: Unit, isInput: Boolean) = this()
   def this(
     name: String,
-    target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
+    target: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
     isFinalMerger: Boolean,
     isInput: Boolean
   ) = this()
   def this(
     name: String,
-    target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
+    target: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
     isFinalMerger: Unit,
     isInput: Boolean
   ) = this()

@@ -1,6 +1,6 @@
 package typings.chartJs.mod
 
-import typings.chartJs.basicMod.AnyObject
+import typings.chartJs.typesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("chart.js", "Animation")
 @js.native
 open class Animation protected ()
-  extends typings.chartJs.animationMod.Animation {
+  extends typings.chartJs.typesAnimationMod.Animation {
   def this(cfg: AnyObject, target: AnyObject, prop: String) = this()
   def this(cfg: AnyObject, target: AnyObject, prop: String, to: Any) = this()
 }

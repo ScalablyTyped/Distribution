@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.webservices
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
-import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenWebservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "webservices.DataEntity")
 @js.native
 open class DataEntity protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.webservices.DataEntity {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.webservices.DataEntity {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object DataEntity {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.DataEntity]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenWebservicesMod.webservices.DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWebservicesMod.webservices.DataEntity]
   
   /**
     * Creates and returns a new DataEntity instance in the SDK and on the server.
@@ -44,7 +44,7 @@ object DataEntity {
     * of the parent DataEntityBase element passed as argument.
     */
   /* static member */
-  inline def createInDataEntityBaseUnderChildMembers(container: typings.mendixmodelsdk.webservicesMod.webservices.DataEntityBase): typings.mendixmodelsdk.webservicesMod.webservices.DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataEntityBaseUnderChildMembers")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.DataEntity]
+  inline def createInDataEntityBaseUnderChildMembers(container: typings.mendixmodelsdk.srcGenWebservicesMod.webservices.DataEntityBase): typings.mendixmodelsdk.srcGenWebservicesMod.webservices.DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataEntityBaseUnderChildMembers")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWebservicesMod.webservices.DataEntity]
   
   /**
     * Creates and returns a new DataEntity instance in the SDK and on the server.
@@ -52,7 +52,7 @@ object DataEntity {
     * of the parent PublishedParameter element passed as argument.
     */
   /* static member */
-  inline def createInPublishedParameterUnderDataEntity(container: typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter): typings.mendixmodelsdk.webservicesMod.webservices.DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderDataEntity")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.DataEntity]
+  inline def createInPublishedParameterUnderDataEntity(container: typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedParameter): typings.mendixmodelsdk.srcGenWebservicesMod.webservices.DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderDataEntity")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWebservicesMod.webservices.DataEntity]
   
   /**
     * Creates and returns a new DataEntity instance in the SDK and on the server.
@@ -60,7 +60,7 @@ object DataEntity {
     * of the parent PublishedResource element passed as argument.
     */
   /* static member */
-  inline def createInPublishedResourceUnderDataEntity(container: typings.mendixmodelsdk.webservicesMod.webservices.PublishedResource): typings.mendixmodelsdk.webservicesMod.webservices.DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedResourceUnderDataEntity")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.DataEntity]
+  inline def createInPublishedResourceUnderDataEntity(container: typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedResource): typings.mendixmodelsdk.srcGenWebservicesMod.webservices.DataEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedResourceUnderDataEntity")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWebservicesMod.webservices.DataEntity]
   
   /* static member */
   @JSImport("mendixmodelsdk", "webservices.DataEntity.structureTypeName")

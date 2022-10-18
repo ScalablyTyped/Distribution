@@ -1,8 +1,8 @@
 package typings.ol
 
-import typings.ol.conditionMod.Condition
+import typings.ol.eventsConditionMod.Condition
 import typings.ol.eventsMod.EventsKey
-import typings.ol.olFeatureMod.FeatureLike
+import typings.ol.featureMod.FeatureLike
 import typings.ol.olStrings.extentchanged
 import typings.ol.styleStyleMod.Style
 import typings.ol.styleStyleMod.StyleLike
@@ -21,7 +21,7 @@ object interactionExtentMod {
   @JSImport("ol/interaction/Extent", "ExtentEvent")
   @js.native
   open class ExtentEvent protected ()
-    extends typings.ol.eventMod.default {
+    extends typings.ol.eventsEventMod.default {
     def this(extent: typings.ol.extentMod.Extent) = this()
     
     /**
@@ -32,7 +32,7 @@ object interactionExtentMod {
   
   @js.native
   trait Extent
-    extends typings.ol.pointerMod.default {
+    extends typings.ol.interactionPointerMod.default {
     
     /**
       * Returns the current drawn extent in the view projection (or user projection if set)

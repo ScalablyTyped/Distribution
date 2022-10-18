@@ -1,6 +1,6 @@
 package typings.cssElementQueries
 
-import typings.cssElementQueries.resizeSensorMod.ResizeSensorCallback
+import typings.cssElementQueries.srcResizeSensorMod.ResizeSensorCallback
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object mod {
   @JSImport("css-element-queries", "ElementQueries")
   @js.native
   open class ElementQueries ()
-    extends typings.cssElementQueries.elementQueriesMod.ElementQueries
+    extends typings.cssElementQueries.srcElementQueriesMod.ElementQueries
   /* static members */
   object ElementQueries {
     
@@ -34,7 +34,7 @@ object mod {
   @JSImport("css-element-queries", "ResizeSensor")
   @js.native
   open class ResizeSensor protected ()
-    extends typings.cssElementQueries.resizeSensorMod.ResizeSensor {
+    extends typings.cssElementQueries.srcResizeSensorMod.ResizeSensor {
     def this(element: js.Array[Element], callback: ResizeSensorCallback) = this()
     /**
       * Creates a new resize sensor on given elements. The provided callback is called max 1 times per requestAnimationFrame and

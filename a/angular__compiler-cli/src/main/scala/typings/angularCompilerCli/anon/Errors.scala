@@ -1,7 +1,7 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.diMod.ConstructorDepError
-import typings.angularCompilerCli.diMod.ConstructorDeps
+import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcDiMod.ConstructorDepError
+import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcDiMod.ConstructorDeps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

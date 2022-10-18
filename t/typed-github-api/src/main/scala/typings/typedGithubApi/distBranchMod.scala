@@ -1,10 +1,10 @@
 package typings.typedGithubApi
 
-import typings.typedGithubApi.branchRefMod.BranchRefClass
-import typings.typedGithubApi.interfacesBranchMod.Branch
-import typings.typedGithubApi.interfacesCommitMod.CommitSummary
-import typings.typedGithubApi.interfacesRepositoryMod.RepositoryRef
-import typings.typedGithubApi.repositoryRefMod.RepositoryRefClass
+import typings.typedGithubApi.distBranchRefMod.BranchRefClass
+import typings.typedGithubApi.distInterfacesBranchMod.Branch
+import typings.typedGithubApi.distInterfacesCommitMod.CommitSummary
+import typings.typedGithubApi.distInterfacesRepositoryMod.RepositoryRef
+import typings.typedGithubApi.distRepositoryRefMod.RepositoryRefClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object distBranchMod {
   open class BranchClass protected ()
     extends BranchRefClass
        with Branch {
-    def this(repository: RepositoryRefClass, data: typings.typedGithubApi.branchMod.Branch) = this()
+    def this(repository: RepositoryRefClass, data: typings.typedGithubApi.distApiInterfacesBranchMod.Branch) = this()
     
     /* CompleteClass */
     var commit: CommitSummary = js.native

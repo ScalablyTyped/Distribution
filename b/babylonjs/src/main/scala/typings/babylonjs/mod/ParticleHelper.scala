@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.iparticlesystemMod.IParticleSystem
+import typings.babylonjs.particlesIparticlesystemMod.IParticleSystem
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ParticleHelper")
 @js.native
 open class ParticleHelper ()
-  extends typings.babylonjs.legacyMod.ParticleHelper
+  extends typings.babylonjs.legacyLegacyMod.ParticleHelper
 /* static members */
 object ParticleHelper {
   
@@ -33,10 +33,10 @@ object ParticleHelper {
     * @param capacity defines the system capacity (if null or undefined the sotred capacity will be used)
     * @returns the ParticleSystemSet created
     */
-  inline def CreateAsync(`type`: String, scene: Nullable[typings.babylonjs.sceneMod.Scene]): js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]]
-  inline def CreateAsync(`type`: String, scene: Nullable[typings.babylonjs.sceneMod.Scene], gpu: Boolean): js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]]
-  inline def CreateAsync(`type`: String, scene: Nullable[typings.babylonjs.sceneMod.Scene], gpu: Boolean, capacity: Double): js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]]
-  inline def CreateAsync(`type`: String, scene: Nullable[typings.babylonjs.sceneMod.Scene], gpu: Unit, capacity: Double): js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]]
+  inline def CreateAsync(`type`: String, scene: Nullable[typings.babylonjs.sceneMod.Scene]): js.Promise[typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet]]
+  inline def CreateAsync(`type`: String, scene: Nullable[typings.babylonjs.sceneMod.Scene], gpu: Boolean): js.Promise[typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet]]
+  inline def CreateAsync(`type`: String, scene: Nullable[typings.babylonjs.sceneMod.Scene], gpu: Boolean, capacity: Double): js.Promise[typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet]]
+  inline def CreateAsync(`type`: String, scene: Nullable[typings.babylonjs.sceneMod.Scene], gpu: Unit, capacity: Double): js.Promise[typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(`type`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet]]
   
   /**
     * Create a default particle system that you can tweak
@@ -48,18 +48,18 @@ object ParticleHelper {
     */
   inline def CreateDefault(
     emitter: Nullable[
-      typings.babylonjs.abstractMeshMod.AbstractMesh | typings.babylonjs.mathVectorMod.Vector3
+      typings.babylonjs.meshesAbstractMeshMod.AbstractMesh | typings.babylonjs.mathsMathDotvectorMod.Vector3
     ]
   ): IParticleSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any]).asInstanceOf[IParticleSystem]
   inline def CreateDefault(
     emitter: Nullable[
-      typings.babylonjs.abstractMeshMod.AbstractMesh | typings.babylonjs.mathVectorMod.Vector3
+      typings.babylonjs.meshesAbstractMeshMod.AbstractMesh | typings.babylonjs.mathsMathDotvectorMod.Vector3
     ],
     capacity: Double
   ): IParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[IParticleSystem]
   inline def CreateDefault(
     emitter: Nullable[
-      typings.babylonjs.abstractMeshMod.AbstractMesh | typings.babylonjs.mathVectorMod.Vector3
+      typings.babylonjs.meshesAbstractMeshMod.AbstractMesh | typings.babylonjs.mathsMathDotvectorMod.Vector3
     ],
     capacity: Double,
     scene: Unit,
@@ -67,14 +67,14 @@ object ParticleHelper {
   ): IParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], useGPU.asInstanceOf[js.Any])).asInstanceOf[IParticleSystem]
   inline def CreateDefault(
     emitter: Nullable[
-      typings.babylonjs.abstractMeshMod.AbstractMesh | typings.babylonjs.mathVectorMod.Vector3
+      typings.babylonjs.meshesAbstractMeshMod.AbstractMesh | typings.babylonjs.mathsMathDotvectorMod.Vector3
     ],
     capacity: Double,
     scene: typings.babylonjs.sceneMod.Scene
   ): IParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[IParticleSystem]
   inline def CreateDefault(
     emitter: Nullable[
-      typings.babylonjs.abstractMeshMod.AbstractMesh | typings.babylonjs.mathVectorMod.Vector3
+      typings.babylonjs.meshesAbstractMeshMod.AbstractMesh | typings.babylonjs.mathsMathDotvectorMod.Vector3
     ],
     capacity: Double,
     scene: typings.babylonjs.sceneMod.Scene,
@@ -82,7 +82,7 @@ object ParticleHelper {
   ): IParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], useGPU.asInstanceOf[js.Any])).asInstanceOf[IParticleSystem]
   inline def CreateDefault(
     emitter: Nullable[
-      typings.babylonjs.abstractMeshMod.AbstractMesh | typings.babylonjs.mathVectorMod.Vector3
+      typings.babylonjs.meshesAbstractMeshMod.AbstractMesh | typings.babylonjs.mathsMathDotvectorMod.Vector3
     ],
     capacity: Unit,
     scene: Unit,
@@ -90,14 +90,14 @@ object ParticleHelper {
   ): IParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], useGPU.asInstanceOf[js.Any])).asInstanceOf[IParticleSystem]
   inline def CreateDefault(
     emitter: Nullable[
-      typings.babylonjs.abstractMeshMod.AbstractMesh | typings.babylonjs.mathVectorMod.Vector3
+      typings.babylonjs.meshesAbstractMeshMod.AbstractMesh | typings.babylonjs.mathsMathDotvectorMod.Vector3
     ],
     capacity: Unit,
     scene: typings.babylonjs.sceneMod.Scene
   ): IParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(emitter.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[IParticleSystem]
   inline def CreateDefault(
     emitter: Nullable[
-      typings.babylonjs.abstractMeshMod.AbstractMesh | typings.babylonjs.mathVectorMod.Vector3
+      typings.babylonjs.meshesAbstractMeshMod.AbstractMesh | typings.babylonjs.mathsMathDotvectorMod.Vector3
     ],
     capacity: Unit,
     scene: typings.babylonjs.sceneMod.Scene,
@@ -127,7 +127,7 @@ object ParticleHelper {
     * @param systems defines the particle systems to export
     * @returns the created particle system set
     */
-  inline def ExportSet(systems: js.Array[IParticleSystem]): typings.babylonjs.particleSystemSetMod.ParticleSystemSet = ^.asInstanceOf[js.Dynamic].applyDynamic("ExportSet")(systems.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]
+  inline def ExportSet(systems: js.Array[IParticleSystem]): typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet = ^.asInstanceOf[js.Dynamic].applyDynamic("ExportSet")(systems.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet]
   
   /**
     * Creates a particle system from a snippet saved in a remote file

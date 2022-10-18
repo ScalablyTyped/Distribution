@@ -42,126 +42,126 @@ object mod {
   @JSImport("@aws-sdk/client-cognito-identity-browser", "CreateIdentityPoolCommand")
   @js.native
   open class CreateIdentityPoolCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.createIdentityPoolCommandMod.CreateIdentityPoolCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsCreateIdentityPoolCommandMod.CreateIdentityPoolCommand {
     def this(input: CreateIdentityPoolInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "DeleteIdentitiesCommand")
   @js.native
   open class DeleteIdentitiesCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.deleteIdentitiesCommandMod.DeleteIdentitiesCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsDeleteIdentitiesCommandMod.DeleteIdentitiesCommand {
     def this(input: DeleteIdentitiesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "DeleteIdentityPoolCommand")
   @js.native
   open class DeleteIdentityPoolCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.deleteIdentityPoolCommandMod.DeleteIdentityPoolCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsDeleteIdentityPoolCommandMod.DeleteIdentityPoolCommand {
     def this(input: DeleteIdentityPoolInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "DescribeIdentityCommand")
   @js.native
   open class DescribeIdentityCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.describeIdentityCommandMod.DescribeIdentityCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsDescribeIdentityCommandMod.DescribeIdentityCommand {
     def this(input: DescribeIdentityInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "DescribeIdentityPoolCommand")
   @js.native
   open class DescribeIdentityPoolCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.describeIdentityPoolCommandMod.DescribeIdentityPoolCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsDescribeIdentityPoolCommandMod.DescribeIdentityPoolCommand {
     def this(input: DescribeIdentityPoolInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "GetCredentialsForIdentityCommand")
   @js.native
   open class GetCredentialsForIdentityCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.getCredentialsForIdentityCommandMod.GetCredentialsForIdentityCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsGetCredentialsForIdentityCommandMod.GetCredentialsForIdentityCommand {
     def this(input: GetCredentialsForIdentityInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "GetIdCommand")
   @js.native
   open class GetIdCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.getIdCommandMod.GetIdCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsGetIdCommandMod.GetIdCommand {
     def this(input: GetIdInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "GetIdentityPoolRolesCommand")
   @js.native
   open class GetIdentityPoolRolesCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.getIdentityPoolRolesCommandMod.GetIdentityPoolRolesCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsGetIdentityPoolRolesCommandMod.GetIdentityPoolRolesCommand {
     def this(input: GetIdentityPoolRolesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "GetOpenIdTokenCommand")
   @js.native
   open class GetOpenIdTokenCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.getOpenIdTokenCommandMod.GetOpenIdTokenCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsGetOpenIdTokenCommandMod.GetOpenIdTokenCommand {
     def this(input: GetOpenIdTokenInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "GetOpenIdTokenForDeveloperIdentityCommand")
   @js.native
   open class GetOpenIdTokenForDeveloperIdentityCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.getOpenIdTokenForDeveloperIdentityCommandMod.GetOpenIdTokenForDeveloperIdentityCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsGetOpenIdTokenForDeveloperIdentityCommandMod.GetOpenIdTokenForDeveloperIdentityCommand {
     def this(input: GetOpenIdTokenForDeveloperIdentityInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "ListIdentitiesCommand")
   @js.native
   open class ListIdentitiesCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.listIdentitiesCommandMod.ListIdentitiesCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsListIdentitiesCommandMod.ListIdentitiesCommand {
     def this(input: ListIdentitiesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "ListIdentityPoolsCommand")
   @js.native
   open class ListIdentityPoolsCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.listIdentityPoolsCommandMod.ListIdentityPoolsCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsListIdentityPoolsCommandMod.ListIdentityPoolsCommand {
     def this(input: ListIdentityPoolsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "LookupDeveloperIdentityCommand")
   @js.native
   open class LookupDeveloperIdentityCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.lookupDeveloperIdentityCommandMod.LookupDeveloperIdentityCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsLookupDeveloperIdentityCommandMod.LookupDeveloperIdentityCommand {
     def this(input: LookupDeveloperIdentityInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "MergeDeveloperIdentitiesCommand")
   @js.native
   open class MergeDeveloperIdentitiesCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.mergeDeveloperIdentitiesCommandMod.MergeDeveloperIdentitiesCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsMergeDeveloperIdentitiesCommandMod.MergeDeveloperIdentitiesCommand {
     def this(input: MergeDeveloperIdentitiesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "SetIdentityPoolRolesCommand")
   @js.native
   open class SetIdentityPoolRolesCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.setIdentityPoolRolesCommandMod.SetIdentityPoolRolesCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsSetIdentityPoolRolesCommandMod.SetIdentityPoolRolesCommand {
     def this(input: SetIdentityPoolRolesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "UnlinkDeveloperIdentityCommand")
   @js.native
   open class UnlinkDeveloperIdentityCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.unlinkDeveloperIdentityCommandMod.UnlinkDeveloperIdentityCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsUnlinkDeveloperIdentityCommandMod.UnlinkDeveloperIdentityCommand {
     def this(input: UnlinkDeveloperIdentityInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "UnlinkIdentityCommand")
   @js.native
   open class UnlinkIdentityCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.unlinkIdentityCommandMod.UnlinkIdentityCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsUnlinkIdentityCommandMod.UnlinkIdentityCommand {
     def this(input: UnlinkIdentityInput) = this()
   }
   
   @JSImport("@aws-sdk/client-cognito-identity-browser", "UpdateIdentityPoolCommand")
   @js.native
   open class UpdateIdentityPoolCommand protected ()
-    extends typings.awsSdkClientCognitoIdentityBrowser.updateIdentityPoolCommandMod.UpdateIdentityPoolCommand {
+    extends typings.awsSdkClientCognitoIdentityBrowser.commandsUpdateIdentityPoolCommandMod.UpdateIdentityPoolCommand {
     def this(input: UpdateIdentityPoolInput) = this()
   }
   

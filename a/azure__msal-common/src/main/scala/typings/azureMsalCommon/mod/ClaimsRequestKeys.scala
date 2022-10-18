@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ClaimsRequestKeys extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.azureMsalCommon.constantsMod.ClaimsRequestKeys & String] = js.native
+  def apply(value: String): js.UndefOr[typings.azureMsalCommon.distUtilsConstantsMod.ClaimsRequestKeys & String] = js.native
   
-  /* "access_token" */ val ACCESS_TOKEN: typings.azureMsalCommon.constantsMod.ClaimsRequestKeys.ACCESS_TOKEN & String = js.native
+  /* "access_token" */ val ACCESS_TOKEN: typings.azureMsalCommon.distUtilsConstantsMod.ClaimsRequestKeys.ACCESS_TOKEN & String = js.native
   
-  /* "xms_cc" */ val XMS_CC: typings.azureMsalCommon.constantsMod.ClaimsRequestKeys.XMS_CC & String = js.native
+  /* "xms_cc" */ val XMS_CC: typings.azureMsalCommon.distUtilsConstantsMod.ClaimsRequestKeys.XMS_CC & String = js.native
 }

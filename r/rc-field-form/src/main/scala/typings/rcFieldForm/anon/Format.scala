@@ -1,6 +1,6 @@
 package typings.rcFieldForm.anon
 
-import typings.rcFieldForm.interfaceMod.ValidateMessage
+import typings.rcFieldForm.esInterfaceMod.ValidateMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

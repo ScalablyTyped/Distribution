@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsCore.mod
 
-import typings.tensorflowTfjsCore.serializationMod.ConfigDict
-import typings.tensorflowTfjsCore.serializationMod.Serializable
-import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
+import typings.tensorflowTfjsCore.distSerializationMod.ConfigDict
+import typings.tensorflowTfjsCore.distSerializationMod.Serializable
+import typings.tensorflowTfjsCore.distSerializationMod.SerializableConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@tensorflow/tfjs-core", "MomentumOptimizer")
 @js.native
 open class MomentumOptimizer protected ()
-  extends typings.tensorflowTfjsCore.baseMod.MomentumOptimizer {
+  extends typings.tensorflowTfjsCore.distBaseMod.MomentumOptimizer {
   def this(learningRate: Double, momentum: Double) = this()
   def this(learningRate: Double, momentum: Double, useNesterov: Boolean) = this()
 }

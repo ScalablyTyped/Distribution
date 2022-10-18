@@ -409,6 +409,13 @@ object Main {
     inline def fromDevToolsTargetId(targetId: String): typings.electron.Electron.WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDevToolsTargetId")(targetId.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.WebContents_]
     
     /**
+      * | undefined - A WebContents instance with the given WebFrameMain, or `undefined`
+      * if there is no WebContents associated with the given WebFrameMain.
+      */
+    /* static member */
+    inline def fromFrame(frame: typings.electron.Electron.WebFrameMain_): typings.electron.Electron.WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.WebContents_]
+    
+    /**
       * | undefined - A WebContents instance with the given ID, or `undefined` if there
       * is no WebContents associated with the given ID.
       */

@@ -57,17 +57,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * });
   * ```
   */
-@JSImport("pkijs", "EnvelopedData")
 @js.native
-/**
-  * Initializes a new instance of the {@link EnvelopedData} class
-  * @param parameters Initialization parameters
-  */
-open class EnvelopedData ()
-  extends PkiObject
+trait EnvelopedData
+  extends StObject
+     with PkiObject
      with IEnvelopedData
      with _SafeContent {
-  def this(parameters: EnvelopedDataParameters) = this()
   
   /**
     * Add a "RecipientInfo" using a KeyAgreeRecipientInfo of type RecipientKeyIdentifier.
@@ -164,97 +159,4 @@ open class EnvelopedData ()
     contentToEncrypt: js.typedarray.ArrayBuffer,
     crypto: ICryptoEngine
   ): js.Promise[js.Array[Unit | EcdhPrivateKey]] = js.native
-  
-  /**
-    * Encrypted content information
-    */
-  /* CompleteClass */
-  var encryptedContentInfo: EncryptedContentInfo = js.native
-  
-  /**
-    * Collection of per-recipient information. There MUST be at least one element in the collection.
-    */
-  /* CompleteClass */
-  var recipientInfos: js.Array[RecipientInfo] = js.native
-  
-  /**
-    * Version number.
-    *
-    * The appropriate value depends on `originatorInfo`, `RecipientInfo`, and `unprotectedAttrs`.
-    *
-    * The version MUST be assigned as follows:
-    * ```
-    * IF (originatorInfo is present) AND
-    *    ((any certificates with a type of other are present) OR
-    *    (any crls with a type of other are present))
-    * THEN version is 4
-    * ELSE
-    *    IF ((originatorInfo is present) AND
-    *       (any version 2 attribute certificates are present)) OR
-    *       (any RecipientInfo structures include pwri) OR
-    *       (any RecipientInfo structures include ori)
-    *    THEN version is 3
-    *    ELSE
-    *       IF (originatorInfo is absent) AND
-    *          (unprotectedAttrs is absent) AND
-    *          (all RecipientInfo structures are version 0)
-    *       THEN version is 0
-    *       ELSE version is 2
-    * ```
-    */
-  /* CompleteClass */
-  var version: Double = js.native
-}
-object EnvelopedData {
-  
-  @JSImport("pkijs", "EnvelopedData")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
-  @JSImport("pkijs", "EnvelopedData.CLASS_NAME")
-  @js.native
-  def CLASS_NAME: String = js.native
-  inline def CLASS_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_NAME")(x.asInstanceOf[js.Any])
-  
-  /**
-    * Compare values with default values for all class members
-    * @param memberName String name for a class member
-    * @param memberValue Value to compare with default value
-    */
-  /* static member */
-  inline def compareWithDefault(memberName: String, memberValue: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  /* static member */
-  inline def defaultValues(memberName: /* "encryptedContentInfo" */ String): EncryptedContentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[EncryptedContentInfo]
-  
-  /* static member */
-  inline def defaultValues_Array(memberName: /* "recipientInfos" */ /* "unprotectedAttrs" */ String): js.Array[RecipientInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Array[RecipientInfo]]
-  
-  /**
-    * Returns default values for all class members
-    * @param memberName String name for a class member
-    * @returns Default value
-    */
-  /* static member */
-  inline def defaultValues_Double(memberName: /* "version" */ String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[Double]
-  
-  /* static member */
-  inline def defaultValues_OriginatorInfo(memberName: /* "originatorInfo" */ String): OriginatorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[OriginatorInfo]
-  
-  /**
-    * @inheritdoc
-    * @asn ASN.1 schema
-    * ```asn
-    * EnvelopedData ::= SEQUENCE {
-    *    version CMSVersion,
-    *    originatorInfo [0] IMPLICIT OriginatorInfo OPTIONAL,
-    *    recipientInfos RecipientInfos,
-    *    encryptedContentInfo EncryptedContentInfo,
-    *    unprotectedAttrs [1] IMPLICIT UnprotectedAttributes OPTIONAL }
-    *```
-    */
-  /* static member */
-  inline def schema(): SchemaType = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[SchemaType]
-  inline def schema(parameters: SchemaParameters[typings.pkijs.anon.OriginatorInfo]): SchemaType = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[SchemaType]
 }

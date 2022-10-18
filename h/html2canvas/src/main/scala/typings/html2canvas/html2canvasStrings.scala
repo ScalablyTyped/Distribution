@@ -1,8 +1,8 @@
 package typings.html2canvas
 
-import typings.html2canvas.fontStyleMod.FONT_STYLE
-import typings.html2canvas.overflowWrapMod.OVERFLOW_WRAP
-import typings.html2canvas.typesMod.CSSTypes
+import typings.html2canvas.distTypesCssPropertyDescriptorsFontStyleMod.FONT_STYLE
+import typings.html2canvas.distTypesCssPropertyDescriptorsOverflowWrapMod.OVERFLOW_WRAP
+import typings.html2canvas.distTypesCssTypesMod.CSSTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.inversify
 
-import typings.inversify.interfacesMod.interfaces.BindingScope
-import typings.inversify.interfacesMod.interfaces.BindingType
-import typings.inversify.interfacesMod.interfaces.TargetType
+import typings.inversify.libInterfacesInterfacesMod.interfaces.BindingScope
+import typings.inversify.libInterfacesInterfacesMod.interfaces.BindingType
+import typings.inversify.libInterfacesInterfacesMod.interfaces.TargetType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bookshelf", "ModelBase")
+/* note: abstract class */ @JSImport("bookshelf", "ModelBase")
 @js.native
-abstract class ModelBase[T /* <: Model[Any] */] ()
+open class ModelBase[T /* <: Model[Any] */] ()
   extends Events[T | Collection[T]]
      with IModelBase {
   def this(attributes: Any) = this()

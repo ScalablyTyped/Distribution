@@ -1,7 +1,7 @@
 package typings.firebasePerformance
 
-import typings.firebasePerformance.apiServiceMod.EntryType
-import typings.firebasePerformance.errorsMod.ErrorCode
+import typings.firebasePerformance.distSrcServicesApiServiceMod.EntryType
+import typings.firebasePerformance.distSrcUtilsErrorsMod.ErrorCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
-import typings.babylonjs.hdrFilteringMod.IHDRFilteringOptions
-import typings.babylonjs.thinEngineMod.ThinEngine
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
+import typings.babylonjs.materialsTexturesFilteringHdrFilteringMod.IHDRFilteringOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "HDRFiltering")
 @js.native
 open class HDRFiltering protected ()
-  extends typings.babylonjs.texturesIndexMod.HDRFiltering {
+  extends typings.babylonjs.materialsTexturesIndexMod.HDRFiltering {
   /**
     * Instantiates HDR filter for reflection maps
     *

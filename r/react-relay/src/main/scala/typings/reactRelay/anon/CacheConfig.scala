@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CacheConfig extends StObject {
   
-  var cacheConfig: js.UndefOr[typings.relayRuntime.relayRuntimeTypesMod.CacheConfig | Null] = js.undefined
+  var cacheConfig: js.UndefOr[typings.relayRuntime.libUtilRelayRuntimeTypesMod.CacheConfig | Null] = js.undefined
   
-  var fetchPolicy: js.UndefOr[typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy] = js.undefined
+  var fetchPolicy: js.UndefOr[typings.relayRuntime.libUtilRelayRuntimeTypesMod.FetchPolicy] = js.undefined
 }
 object CacheConfig {
   
@@ -19,13 +19,13 @@ object CacheConfig {
   
   extension [Self <: CacheConfig](x: Self) {
     
-    inline def setCacheConfig(value: typings.relayRuntime.relayRuntimeTypesMod.CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
+    inline def setCacheConfig(value: typings.relayRuntime.libUtilRelayRuntimeTypesMod.CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
     
     inline def setCacheConfigNull: Self = StObject.set(x, "cacheConfig", null)
     
     inline def setCacheConfigUndefined: Self = StObject.set(x, "cacheConfig", js.undefined)
     
-    inline def setFetchPolicy(value: typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+    inline def setFetchPolicy(value: typings.relayRuntime.libUtilRelayRuntimeTypesMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
     
     inline def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
   }

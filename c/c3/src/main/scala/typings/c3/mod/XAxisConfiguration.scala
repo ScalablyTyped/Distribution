@@ -1,6 +1,6 @@
 package typings.c3.mod
 
-import typings.c3.anon.Position
+import typings.c3.anon.PositionText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ trait XAxisConfiguration
   /**
     * Set label on X axis.
     */
-  var label: js.UndefOr[String | Position] = js.undefined
+  var label: js.UndefOr[String | PositionText] = js.undefined
   
   /**
     * Set how to treat the timezone of x values.
@@ -74,7 +74,7 @@ object XAxisConfiguration {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setLabel(value: String | Position): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String | PositionText): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

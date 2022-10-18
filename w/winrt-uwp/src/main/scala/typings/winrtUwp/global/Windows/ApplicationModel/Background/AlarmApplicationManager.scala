@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Requests permission from the user to set alarms, and retrieves the status of user permission for the app to set alarms. */
-@JSGlobal("Windows.ApplicationModel.Background.AlarmApplicationManager")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Background.AlarmApplicationManager")
 @js.native
-abstract class AlarmApplicationManager ()
+open class AlarmApplicationManager ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.AlarmApplicationManager
 object AlarmApplicationManager {

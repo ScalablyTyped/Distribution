@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "CopyButton")
 @js.native
 open class CopyButton protected ()
-  extends typings.carbonComponents.componentsMod.CopyButton {
+  extends typings.carbonComponents.globalsJsComponentsMod.CopyButton {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialCopyButtonOptions) = this()
 }

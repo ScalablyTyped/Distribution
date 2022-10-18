@@ -1,6 +1,6 @@
 package typings.jsdevtoolsFilePathFilter
 
-import typings.jsdevtoolsFilePathFilter.typesMod.Filter
+import typings.jsdevtoolsFilePathFilter.libTypesMod.Filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

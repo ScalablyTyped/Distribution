@@ -1,29 +1,22 @@
 package typings.tuyaPanelKit.anon
 
-import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `11`[EventName /* <: Extract[/* keyof {} */ String, String] */] extends StObject {
+trait `11` extends StObject {
   
-  var data: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
-  ] = js.undefined
+  def close(): Unit
 }
 object `11` {
   
-  inline def apply[EventName /* <: Extract[/* keyof {} */ String, String] */](): `11`[EventName] = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`11`[EventName]]
+  inline def apply(close: () => Unit): `11` = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
+    __obj.asInstanceOf[`11`]
   }
   
-  extension [Self <: `11`[?], EventName /* <: Extract[/* keyof {} */ String, String] */](x: Self & `11`[EventName]) {
+  extension [Self <: `11`](x: Self) {
     
-    inline def setData(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
-    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

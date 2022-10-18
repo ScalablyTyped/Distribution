@@ -1,35 +1,35 @@
 package typings.awsSdkClientSts
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.awsSdkClientSts.defaultStsRoleAssumersMod.DefaultCredentialProvider
+import typings.awsSdkClientSts.distTypesDefaultStsRoleAssumersMod.DefaultCredentialProvider
 import typings.awsSdkFetchHttpHandler.mod.FetchHttpHandler
 import typings.awsSdkNodeHttpHandler.mod.NodeHttpHandler
-import typings.awsSdkProtocolHttp.httpHandlerMod.HttpHandler
-import typings.awsSdkSignatureV4.signatureV4Mod.SignatureV4CryptoInit
-import typings.awsSdkSignatureV4.signatureV4Mod.SignatureV4Init
-import typings.awsSdkSmithyClient.defaultsModeMod.DefaultsMode
-import typings.awsSdkSmithyClient.defaultsModeMod.ResolvedDefaultsMode
-import typings.awsSdkTypes.authMod.AuthScheme
-import typings.awsSdkTypes.credentialsMod.Credentials
-import typings.awsSdkTypes.cryptoMod.HashConstructor
-import typings.awsSdkTypes.httpMod.Endpoint
-import typings.awsSdkTypes.httpMod.HttpHandlerOptions
-import typings.awsSdkTypes.loggerMod.Logger
-import typings.awsSdkTypes.responseMod.ResponseMetadata
-import typings.awsSdkTypes.serdeMod.StreamCollector
-import typings.awsSdkTypes.signatureMod.RequestSigner
-import typings.awsSdkTypes.transferMod.RequestHandler
-import typings.awsSdkTypes.utilMod.BodyLengthCalculator
-import typings.awsSdkTypes.utilMod.Decoder
-import typings.awsSdkTypes.utilMod.Encoder
-import typings.awsSdkTypes.utilMod.Provider
-import typings.awsSdkTypes.utilMod.RegionInfo
-import typings.awsSdkTypes.utilMod.RegionInfoProvider
-import typings.awsSdkTypes.utilMod.RegionInfoProviderOptions
-import typings.awsSdkTypes.utilMod.RetryStrategy
-import typings.awsSdkTypes.utilMod.UrlParser
-import typings.awsSdkTypes.utilMod.UserAgent
-import typings.awsSdkTypes.utilMod.UserAgentPair
+import typings.awsSdkProtocolHttp.distTypesHttpHandlerMod.HttpHandler
+import typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4CryptoInit
+import typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4Init
+import typings.awsSdkSmithyClient.distTypesDefaultsModeMod.DefaultsMode
+import typings.awsSdkSmithyClient.distTypesDefaultsModeMod.ResolvedDefaultsMode
+import typings.awsSdkTypes.distTypesAuthMod.AuthScheme
+import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
+import typings.awsSdkTypes.distTypesHttpMod.Endpoint
+import typings.awsSdkTypes.distTypesHttpMod.HttpHandlerOptions
+import typings.awsSdkTypes.distTypesLoggerMod.Logger
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import typings.awsSdkTypes.distTypesSerdeMod.StreamCollector
+import typings.awsSdkTypes.distTypesSignatureMod.RequestSigner
+import typings.awsSdkTypes.distTypesTransferMod.RequestHandler
+import typings.awsSdkTypes.distTypesUtilMod.BodyLengthCalculator
+import typings.awsSdkTypes.distTypesUtilMod.Decoder
+import typings.awsSdkTypes.distTypesUtilMod.Encoder
+import typings.awsSdkTypes.distTypesUtilMod.Provider
+import typings.awsSdkTypes.distTypesUtilMod.RegionInfo
+import typings.awsSdkTypes.distTypesUtilMod.RegionInfoProvider
+import typings.awsSdkTypes.distTypesUtilMod.RegionInfoProviderOptions
+import typings.awsSdkTypes.distTypesUtilMod.RetryStrategy
+import typings.awsSdkTypes.distTypesUtilMod.UrlParser
+import typings.awsSdkTypes.distTypesUtilMod.UserAgent
+import typings.awsSdkTypes.distTypesUtilMod.UserAgentPair
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -871,7 +871,7 @@ object anon {
     }
   }
   
-  /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.ExceptionOptionType<@aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/models/models_0.InvalidAuthorizationMessageException, @aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/models/STSServiceException.STSServiceException> */
+  /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.ExceptionOptionType<@aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/models/models_0.InvalidIdentityTokenException, @aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/models/STSServiceException.STSServiceException> */
   trait ExceptionOptionTypeInvali extends StObject {
     
     @JSName("$metadata")

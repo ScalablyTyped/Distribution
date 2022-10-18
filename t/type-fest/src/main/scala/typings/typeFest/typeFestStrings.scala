@@ -1,21 +1,22 @@
 package typings.typeFest
 
-import typings.typeFest.fixedLengthArrayMod.ArrayLengthMutationKeys
-import typings.typeFest.internalMod.StringDigit
-import typings.typeFest.internalMod.UpperCaseCharacters
-import typings.typeFest.internalMod.WordSeparators
-import typings.typeFest.tsconfigJsonMod.TsConfigJson.CompilerOptions.FallbackPolling
-import typings.typeFest.tsconfigJsonMod.TsConfigJson.CompilerOptions.ImportsNotUsedAsValues
-import typings.typeFest.tsconfigJsonMod.TsConfigJson.CompilerOptions.JSX
-import typings.typeFest.tsconfigJsonMod.TsConfigJson.CompilerOptions.Lib
-import typings.typeFest.tsconfigJsonMod.TsConfigJson.CompilerOptions.Module
-import typings.typeFest.tsconfigJsonMod.TsConfigJson.CompilerOptions.NewLine
-import typings.typeFest.tsconfigJsonMod.TsConfigJson.CompilerOptions.Target
-import typings.typeFest.tsconfigJsonMod.TsConfigJson.CompilerOptions.WatchDirectory
-import typings.typeFest.tsconfigJsonMod.TsConfigJson.CompilerOptions.WatchFile
-import typings.typeFest.tsconfigJsonMod.TsConfigJson.WatchOptions.PollingWatchKind
-import typings.typeFest.tsconfigJsonMod.TsConfigJson.WatchOptions.WatchDirectoryKind
-import typings.typeFest.tsconfigJsonMod.TsConfigJson.WatchOptions.WatchFileKind
+import typings.typeFest.sourceFixedLengthArrayMod.ArrayLengthMutationKeys
+import typings.typeFest.sourceInternalMod.StringDigit
+import typings.typeFest.sourceInternalMod.UpperCaseCharacters
+import typings.typeFest.sourceInternalMod.WordSeparators
+import typings.typeFest.sourceMergeDeepMod.ArrayMergeMode
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.FallbackPolling
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.ImportsNotUsedAsValues
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.JSX
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.Lib
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.Module
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.NewLine
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.Target
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.WatchDirectory
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.WatchFile
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.WatchOptions.PollingWatchKind
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.WatchOptions.WatchDirectoryKind
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.WatchOptions.WatchFileKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -123,30 +124,10 @@ object typeFestStrings {
   inline def CRLF: CRLF = "CRLF".asInstanceOf[CRLF]
   
   @js.native
-  sealed trait CamelCasedProperties extends StObject
-  inline def CamelCasedProperties: CamelCasedProperties = "CamelCasedProperties".asInstanceOf[CamelCasedProperties]
-  
-  @js.native
-  sealed trait CamelCasedPropertiesDeep extends StObject
-  inline def CamelCasedPropertiesDeep: CamelCasedPropertiesDeep = "CamelCasedPropertiesDeep".asInstanceOf[CamelCasedPropertiesDeep]
-  
-  @js.native
   sealed trait CommonJS
     extends StObject
        with Module
   inline def CommonJS: CommonJS = "CommonJS".asInstanceOf[CommonJS]
-  
-  @js.native
-  sealed trait ConditionalPickDeep extends StObject
-  inline def ConditionalPickDeep: ConditionalPickDeep = "ConditionalPickDeep".asInstanceOf[ConditionalPickDeep]
-  
-  @js.native
-  sealed trait ConditionalSimplify extends StObject
-  inline def ConditionalSimplify: ConditionalSimplify = "ConditionalSimplify".asInstanceOf[ConditionalSimplify]
-  
-  @js.native
-  sealed trait ConditionalSimplifyDeep extends StObject
-  inline def ConditionalSimplifyDeep: ConditionalSimplifyDeep = "ConditionalSimplifyDeep".asInstanceOf[ConditionalSimplifyDeep]
   
   @js.native
   sealed trait D
@@ -165,14 +146,6 @@ object typeFestStrings {
     extends StObject
        with Lib
   inline def DOMDotIterable: DOMDotIterable = "DOM.Iterable".asInstanceOf[DOMDotIterable]
-  
-  @js.native
-  sealed trait DelimiterCasedProperties extends StObject
-  inline def DelimiterCasedProperties: DelimiterCasedProperties = "DelimiterCasedProperties".asInstanceOf[DelimiterCasedProperties]
-  
-  @js.native
-  sealed trait DelimiterCasedPropertiesDeep extends StObject
-  inline def DelimiterCasedPropertiesDeep: DelimiterCasedPropertiesDeep = "DelimiterCasedPropertiesDeep".asInstanceOf[DelimiterCasedPropertiesDeep]
   
   @js.native
   sealed trait Dot extends StObject
@@ -536,18 +509,6 @@ object typeFestStrings {
   inline def ESNextDotWeakRef: ESNextDotWeakRef = "ESNext.WeakRef".asInstanceOf[ESNextDotWeakRef]
   
   @js.native
-  sealed trait EnforceOptional extends StObject
-  inline def EnforceOptional: EnforceOptional = "EnforceOptional".asInstanceOf[EnforceOptional]
-  
-  @js.native
-  sealed trait ExactObject extends StObject
-  inline def ExactObject: ExactObject = "ExactObject".asInstanceOf[ExactObject]
-  
-  @js.native
-  sealed trait Except extends StObject
-  inline def Except: Except = "Except".asInstanceOf[Except]
-  
-  @js.native
   sealed trait Exclamationmarkaix extends StObject
   inline def Exclamationmarkaix: Exclamationmarkaix = "!aix".asInstanceOf[Exclamationmarkaix]
   
@@ -620,10 +581,6 @@ object typeFestStrings {
   inline def Exclamationmarkx64: Exclamationmarkx64 = "!x64".asInstanceOf[Exclamationmarkx64]
   
   @js.native
-  sealed trait ExportConditions extends StObject
-  inline def ExportConditions: ExportConditions = "ExportConditions".asInstanceOf[ExportConditions]
-  
-  @js.native
   sealed trait F
     extends StObject
        with UpperCaseCharacters
@@ -674,18 +631,10 @@ object typeFestStrings {
   inline def I: I = "I".asInstanceOf[I]
   
   @js.native
-  sealed trait Imports extends StObject
-  inline def Imports: Imports = "Imports".asInstanceOf[Imports]
-  
-  @js.native
   sealed trait J
     extends StObject
        with UpperCaseCharacters
   inline def J: J = "J".asInstanceOf[J]
-  
-  @js.native
-  sealed trait Jsonify extends StObject
-  inline def Jsonify: Jsonify = "Jsonify".asInstanceOf[Jsonify]
   
   @js.native
   sealed trait K
@@ -742,42 +691,10 @@ object typeFestStrings {
   inline def O: O = "O".asInstanceOf[O]
   
   @js.native
-  sealed trait OmitIndexSignature extends StObject
-  inline def OmitIndexSignature: OmitIndexSignature = "OmitIndexSignature".asInstanceOf[OmitIndexSignature]
-  
-  @js.native
   sealed trait P
     extends StObject
        with UpperCaseCharacters
   inline def P: P = "P".asInstanceOf[P]
-  
-  @js.native
-  sealed trait PackageJsonStandard extends StObject
-  inline def PackageJsonStandard: PackageJsonStandard = "PackageJsonStandard".asInstanceOf[PackageJsonStandard]
-  
-  @js.native
-  sealed trait PartialObjectDeep extends StObject
-  inline def PartialObjectDeep: PartialObjectDeep = "PartialObjectDeep".asInstanceOf[PartialObjectDeep]
-  
-  @js.native
-  sealed trait PartialOnUndefinedDeep extends StObject
-  inline def PartialOnUndefinedDeep: PartialOnUndefinedDeep = "PartialOnUndefinedDeep".asInstanceOf[PartialOnUndefinedDeep]
-  
-  @js.native
-  sealed trait PartialOnUndefinedDeepValue extends StObject
-  inline def PartialOnUndefinedDeepValue: PartialOnUndefinedDeepValue = "PartialOnUndefinedDeepValue".asInstanceOf[PartialOnUndefinedDeepValue]
-  
-  @js.native
-  sealed trait PascalCasedProperties extends StObject
-  inline def PascalCasedProperties: PascalCasedProperties = "PascalCasedProperties".asInstanceOf[PascalCasedProperties]
-  
-  @js.native
-  sealed trait PascalCasedPropertiesDeep extends StObject
-  inline def PascalCasedPropertiesDeep: PascalCasedPropertiesDeep = "PascalCasedPropertiesDeep".asInstanceOf[PascalCasedPropertiesDeep]
-  
-  @js.native
-  sealed trait PickIndexSignature extends StObject
-  inline def PickIndexSignature: PickIndexSignature = "PickIndexSignature".asInstanceOf[PickIndexSignature]
   
   @js.native
   sealed trait PriorityInterval
@@ -804,18 +721,10 @@ object typeFestStrings {
   inline def R: R = "R".asInstanceOf[R]
   
   @js.native
-  sealed trait ReadonlyObjectDeep extends StObject
-  inline def ReadonlyObjectDeep: ReadonlyObjectDeep = "ReadonlyObjectDeep".asInstanceOf[ReadonlyObjectDeep]
-  
-  @js.native
   sealed trait S
     extends StObject
        with UpperCaseCharacters
   inline def S: S = "S".asInstanceOf[S]
-  
-  @js.native
-  sealed trait SchemaObject extends StObject
-  inline def SchemaObject: SchemaObject = "SchemaObject".asInstanceOf[SchemaObject]
   
   @js.native
   sealed trait ScriptHost
@@ -824,30 +733,10 @@ object typeFestStrings {
   inline def ScriptHost: ScriptHost = "ScriptHost".asInstanceOf[ScriptHost]
   
   @js.native
-  sealed trait SetNonNullable extends StObject
-  inline def SetNonNullable: SetNonNullable = "SetNonNullable".asInstanceOf[SetNonNullable]
-  
-  @js.native
-  sealed trait SimpleMerge extends StObject
-  inline def SimpleMerge: SimpleMerge = "SimpleMerge".asInstanceOf[SimpleMerge]
-  
-  @js.native
-  sealed trait Simplify extends StObject
-  inline def Simplify: Simplify = "Simplify".asInstanceOf[Simplify]
-  
-  @js.native
   sealed trait Space
     extends StObject
        with WordSeparators
   inline def Space: Space = (" ").asInstanceOf[Space]
-  
-  @js.native
-  sealed trait SpreadObject extends StObject
-  inline def SpreadObject: SpreadObject = "SpreadObject".asInstanceOf[SpreadObject]
-  
-  @js.native
-  sealed trait Stringified extends StObject
-  inline def Stringified: Stringified = "Stringified".asInstanceOf[Stringified]
   
   @js.native
   sealed trait System
@@ -917,18 +806,6 @@ object typeFestStrings {
   inline def WebWorkerDotIterable: WebWorkerDotIterable = "WebWorker.Iterable".asInstanceOf[WebWorkerDotIterable]
   
   @js.native
-  sealed trait WithStringKeys extends StObject
-  inline def WithStringKeys: WithStringKeys = "WithStringKeys".asInstanceOf[WithStringKeys]
-  
-  @js.native
-  sealed trait Without extends StObject
-  inline def Without: Without = "Without".asInstanceOf[Without]
-  
-  @js.native
-  sealed trait Writable extends StObject
-  inline def Writable: Writable = "Writable".asInstanceOf[Writable]
-  
-  @js.native
   sealed trait X
     extends StObject
        with UpperCaseCharacters
@@ -945,10 +822,6 @@ object typeFestStrings {
     extends StObject
        with UpperCaseCharacters
   inline def Z: Z = "Z".asInstanceOf[Z]
-  
-  @js.native
-  sealed trait _empty extends StObject
-  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait _underscore
@@ -1578,6 +1451,12 @@ object typeFestStrings {
   inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
+  sealed trait replace
+    extends StObject
+       with ArrayMergeMode
+  inline def replace: replace = "replace".asInstanceOf[replace]
+  
+  @js.native
   sealed trait require extends StObject
   inline def require: require = "require".asInstanceOf[require]
   
@@ -1610,6 +1489,12 @@ object typeFestStrings {
     extends StObject
        with ArrayLengthMutationKeys
   inline def splice: splice = "splice".asInstanceOf[splice]
+  
+  @js.native
+  sealed trait spread
+    extends StObject
+       with ArrayMergeMode
+  inline def spread: spread = "spread".asInstanceOf[spread]
   
   @js.native
   sealed trait sunos extends StObject

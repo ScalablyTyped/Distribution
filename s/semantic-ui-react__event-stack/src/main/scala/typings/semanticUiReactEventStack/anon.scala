@@ -2,8 +2,8 @@ package typings.semanticUiReactEventStack
 
 import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
-import typings.semanticUiReactEventStack.typesMod.InputEventListener
-import typings.semanticUiReactEventStack.typesMod.InputTargetElement
+import typings.semanticUiReactEventStack.libTypesTypesMod.InputEventListener
+import typings.semanticUiReactEventStack.libTypesTypesMod.InputTargetElement
 import typings.std.Event
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject

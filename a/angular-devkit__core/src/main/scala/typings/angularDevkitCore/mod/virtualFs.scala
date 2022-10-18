@@ -1,11 +1,11 @@
 package typings.angularDevkitCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularDevkitCore.createMod.SyncHostHandler
-import typings.angularDevkitCore.hostInterfaceMod.Host
-import typings.angularDevkitCore.hostInterfaceMod.ReadonlyHost
-import typings.angularDevkitCore.literalsMod.TemplateTag
-import typings.angularDevkitCore.pathMod.Path_
+import typings.angularDevkitCore.srcUtilsLiteralsMod.TemplateTag
+import typings.angularDevkitCore.srcVirtualFsHostCreateMod.SyncHostHandler
+import typings.angularDevkitCore.srcVirtualFsHostInterfaceMod.Host
+import typings.angularDevkitCore.srcVirtualFsHostInterfaceMod.ReadonlyHost
+import typings.angularDevkitCore.srcVirtualFsPathMod.Path_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,47 +19,47 @@ object virtualFs {
   @JSImport("@angular-devkit/core", "virtualFs.AliasHost")
   @js.native
   open class AliasHost[StatsT /* <: js.Object */] protected ()
-    extends typings.angularDevkitCore.virtualFsMod.virtualFs.AliasHost[StatsT] {
+    extends typings.angularDevkitCore.srcVirtualFsMod.virtualFs.AliasHost[StatsT] {
     def this(_delegate: Host[StatsT]) = this()
   }
   
   @JSImport("@angular-devkit/core", "virtualFs.CordHost")
   @js.native
   open class CordHost protected ()
-    extends typings.angularDevkitCore.virtualFsMod.virtualFs.CordHost {
+    extends typings.angularDevkitCore.srcVirtualFsMod.virtualFs.CordHost {
     def this(_back: ReadonlyHost[js.Object]) = this()
   }
   
   @JSImport("@angular-devkit/core", "virtualFs.Empty")
   @js.native
   open class Empty ()
-    extends typings.angularDevkitCore.virtualFsMod.virtualFs.Empty
+    extends typings.angularDevkitCore.srcVirtualFsMod.virtualFs.Empty
   
   @JSImport("@angular-devkit/core", "virtualFs.PatternMatchingHost")
   @js.native
   open class PatternMatchingHost[StatsT /* <: js.Object */] protected ()
-    extends typings.angularDevkitCore.virtualFsMod.virtualFs.PatternMatchingHost[StatsT] {
+    extends typings.angularDevkitCore.srcVirtualFsMod.virtualFs.PatternMatchingHost[StatsT] {
     def this(_delegate: Host[StatsT]) = this()
   }
   
-  @JSImport("@angular-devkit/core", "virtualFs.ResolverHost")
+  /* note: abstract class */ @JSImport("@angular-devkit/core", "virtualFs.ResolverHost")
   @js.native
-  abstract class ResolverHost[T /* <: js.Object */] protected ()
-    extends typings.angularDevkitCore.virtualFsMod.virtualFs.ResolverHost[T] {
+  open class ResolverHost[T /* <: js.Object */] protected ()
+    extends typings.angularDevkitCore.srcVirtualFsMod.virtualFs.ResolverHost[T] {
     def this(_delegate: Host[T]) = this()
   }
   
   @JSImport("@angular-devkit/core", "virtualFs.SafeReadonlyHost")
   @js.native
   open class SafeReadonlyHost[StatsT /* <: js.Object */] protected ()
-    extends typings.angularDevkitCore.virtualFsMod.virtualFs.SafeReadonlyHost[StatsT] {
+    extends typings.angularDevkitCore.srcVirtualFsMod.virtualFs.SafeReadonlyHost[StatsT] {
     def this(_delegate: ReadonlyHost[StatsT]) = this()
   }
   
   @JSImport("@angular-devkit/core", "virtualFs.ScopedHost")
   @js.native
   open class ScopedHost[T /* <: js.Object */] protected ()
-    extends typings.angularDevkitCore.virtualFsMod.virtualFs.ScopedHost[T] {
+    extends typings.angularDevkitCore.srcVirtualFsMod.virtualFs.ScopedHost[T] {
     def this(delegate: Host[T]) = this()
     def this(delegate: Host[T], _root: Path_) = this()
   }
@@ -67,19 +67,19 @@ object virtualFs {
   @JSImport("@angular-devkit/core", "virtualFs.SimpleMemoryHost")
   @js.native
   open class SimpleMemoryHost ()
-    extends typings.angularDevkitCore.virtualFsMod.virtualFs.SimpleMemoryHost
+    extends typings.angularDevkitCore.srcVirtualFsMod.virtualFs.SimpleMemoryHost
   
   @JSImport("@angular-devkit/core", "virtualFs.SyncDelegateHost")
   @js.native
   open class SyncDelegateHost[T /* <: js.Object */] protected ()
-    extends typings.angularDevkitCore.virtualFsMod.virtualFs.SyncDelegateHost[T] {
+    extends typings.angularDevkitCore.srcVirtualFsMod.virtualFs.SyncDelegateHost[T] {
     def this(_delegate: Host[T]) = this()
   }
   
   @JSImport("@angular-devkit/core", "virtualFs.SynchronousDelegateExpectedException")
   @js.native
   open class SynchronousDelegateExpectedException ()
-    extends typings.angularDevkitCore.virtualFsMod.virtualFs.SynchronousDelegateExpectedException
+    extends typings.angularDevkitCore.srcVirtualFsMod.virtualFs.SynchronousDelegateExpectedException
   
   inline def createSyncHost[StatsT /* <: js.Object */](handler: SyncHostHandler[StatsT]): Host[StatsT] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSyncHost")(handler.asInstanceOf[js.Any]).asInstanceOf[Host[StatsT]]
   
@@ -96,7 +96,7 @@ object virtualFs {
     @JSImport("@angular-devkit/core", "virtualFs.test.TestHost")
     @js.native
     open class TestHost ()
-      extends typings.angularDevkitCore.virtualFsMod.virtualFs.test.TestHost {
+      extends typings.angularDevkitCore.srcVirtualFsMod.virtualFs.test.TestHost {
       def this(map: StringDictionary[String]) = this()
     }
   }

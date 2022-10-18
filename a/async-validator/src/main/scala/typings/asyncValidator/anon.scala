@@ -1,12 +1,12 @@
 package typings.asyncValidator
 
-import typings.asyncValidator.interfaceMod.EnumString
-import typings.asyncValidator.interfaceMod.FullField
-import typings.asyncValidator.interfaceMod.Pattern
-import typings.asyncValidator.interfaceMod.Range
-import typings.asyncValidator.interfaceMod.Type
-import typings.asyncValidator.interfaceMod.ValidateMessage
-import typings.asyncValidator.interfaceMod.Value
+import typings.asyncValidator.distTypesInterfaceMod.EnumString
+import typings.asyncValidator.distTypesInterfaceMod.FullField
+import typings.asyncValidator.distTypesInterfaceMod.Pattern
+import typings.asyncValidator.distTypesInterfaceMod.Range
+import typings.asyncValidator.distTypesInterfaceMod.Type
+import typings.asyncValidator.distTypesInterfaceMod.ValidateMessage
+import typings.asyncValidator.distTypesInterfaceMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

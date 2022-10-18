@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param b defines the blue component (between 0 and 1, default is 0)
   */
 open class Color3 ()
-  extends typings.babylonjs.mathMod.Color3 {
+  extends typings.babylonjs.mathsMathMod.Color3 {
   def this(/**
     * Defines the red component (between 0 and 1, default is 0)
     */
@@ -108,13 +108,13 @@ object Color3 {
     * Returns a Color3 value containing a black color
     * @returns a new Color3 object
     */
-  inline def Black(): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Black")().asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def Black(): typings.babylonjs.mathsMathDotcolorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Black")().asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Returns a Color3 value containing a blue color
     * @returns a new Color3 object
     */
-  inline def Blue(): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Blue")().asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def Blue(): typings.babylonjs.mathsMathDotcolorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Blue")().asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Creates a new Color3 from the starting index of the given array
@@ -122,8 +122,8 @@ object Color3 {
     * @param offset defines an offset in the source array
     * @returns a new Color3 object
     */
-  inline def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathColorMod.Color3]
-  inline def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.mathColorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathsMathDotcolorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
+  inline def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.mathsMathDotcolorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Creates a new Color3 from the starting index element of the given array
@@ -134,12 +134,12 @@ object Color3 {
   inline def FromArrayToRef(
     array: DeepImmutable[ArrayLike[Double]],
     offset: Double,
-    result: typings.babylonjs.mathColorMod.Color3
+    result: typings.babylonjs.mathsMathDotcolorMod.Color3
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def FromArrayToRef(
     array: DeepImmutable[ArrayLike[Double]],
     offset: Unit,
-    result: typings.babylonjs.mathColorMod.Color3
+    result: typings.babylonjs.mathsMathDotcolorMod.Color3
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -149,14 +149,14 @@ object Color3 {
     * @param value defines the value (value between 0 and 1)
     * @returns a new Color3 object
     */
-  inline def FromHSV(hue: Double, saturation: Double, value: Double): typings.babylonjs.mathColorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromHSV")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def FromHSV(hue: Double, saturation: Double, value: Double): typings.babylonjs.mathsMathDotcolorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromHSV")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Creates a new Color3 from the string containing valid hexadecimal values
     * @param hex defines a string containing valid hexadecimal values
     * @returns a new Color3 object
     */
-  inline def FromHexString(hex: String): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromHexString")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def FromHexString(hex: String): typings.babylonjs.mathsMathDotcolorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromHexString")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Creates a new Color3 from integer values (< 256)
@@ -165,19 +165,19 @@ object Color3 {
     * @param b defines the blue component to read from (value between 0 and 255)
     * @returns a new Color3 object
     */
-  inline def FromInts(r: Double, g: Double, b: Double): typings.babylonjs.mathColorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromInts")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def FromInts(r: Double, g: Double, b: Double): typings.babylonjs.mathsMathDotcolorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromInts")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Returns a Color3 value containing a gray color
     * @returns a new Color3 object
     */
-  inline def Gray(): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Gray")().asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def Gray(): typings.babylonjs.mathsMathDotcolorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Gray")().asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Returns a Color3 value containing a green color
     * @returns a new Color3 object
     */
-  inline def Green(): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Green")().asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def Green(): typings.babylonjs.mathsMathDotcolorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Green")().asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Converts Hue, saturation and value to a Color3 (RGB)
@@ -186,7 +186,12 @@ object Color3 {
     * @param value defines the value
     * @param result defines the Color3 where to store the RGB values
     */
-  inline def HSVtoRGBToRef(hue: Double, saturation: Double, value: Double, result: typings.babylonjs.mathColorMod.Color3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HSVtoRGBToRef")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], value.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def HSVtoRGBToRef(
+    hue: Double,
+    saturation: Double,
+    value: Double,
+    result: typings.babylonjs.mathsMathDotcolorMod.Color3
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HSVtoRGBToRef")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], value.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a new Color3 located for "amount" (float) on the Hermite interpolation spline defined by the vectors "value1", "tangent1", "value2", "tangent2"
@@ -198,12 +203,12 @@ object Color3 {
     * @returns the new Color3
     */
   inline def Hermite(
-    value1: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
-    tangent1: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
-    value2: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
-    tangent2: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    value1: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
+    tangent1: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
+    value2: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
+    tangent2: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
     amount: Double
-  ): typings.babylonjs.mathColorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  ): typings.babylonjs.mathsMathDotcolorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Returns a new Color3 which is the 1st derivative of the Hermite spline defined by the colors "value1", "value2", "tangent1", "tangent2".
@@ -215,12 +220,12 @@ object Color3 {
     * @returns 1st derivative
     */
   inline def Hermite1stDerivative(
-    value1: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
-    tangent1: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
-    value2: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
-    tangent2: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    value1: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
+    tangent1: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
+    value2: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
+    tangent2: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
     time: Double
-  ): typings.babylonjs.mathColorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  ): typings.babylonjs.mathsMathDotcolorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Returns a new Color3 which is the 1st derivative of the Hermite spline defined by the colors "value1", "value2", "tangent1", "tangent2".
@@ -232,12 +237,12 @@ object Color3 {
     * @param result define where to store the derivative
     */
   inline def Hermite1stDerivativeToRef(
-    value1: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
-    tangent1: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
-    value2: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
-    tangent2: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    value1: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
+    tangent1: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
+    value2: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
+    tangent2: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
     time: Double,
-    result: typings.babylonjs.mathColorMod.Color3
+    result: typings.babylonjs.mathsMathDotcolorMod.Color3
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivativeToRef")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -248,10 +253,10 @@ object Color3 {
     * @returns a new Color3 object
     */
   inline def Lerp(
-    start: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
-    end: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    start: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
+    end: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
     amount: Double
-  ): typings.babylonjs.mathColorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  ): typings.babylonjs.mathsMathDotcolorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Creates a new Color3 with values linearly interpolated of "amount" between the start Color3 and the end Color3
@@ -261,53 +266,53 @@ object Color3 {
     * @param result defines the Color3 object where to store the result
     */
   inline def LerpToRef(
-    left: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
-    right: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    left: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
+    right: DeepImmutable[typings.babylonjs.mathsMathDotcolorMod.Color3],
     amount: Double,
-    result: typings.babylonjs.mathColorMod.Color3
+    result: typings.babylonjs.mathsMathDotcolorMod.Color3
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LerpToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a Color3 value containing a magenta color
     * @returns a new Color3 object
     */
-  inline def Magenta(): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Magenta")().asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def Magenta(): typings.babylonjs.mathsMathDotcolorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Magenta")().asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Returns a Color3 value containing a purple color
     * @returns a new Color3 object
     */
-  inline def Purple(): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Purple")().asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def Purple(): typings.babylonjs.mathsMathDotcolorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Purple")().asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Returns a Color3 value containing a random color
     * @returns a new Color3 object
     */
-  inline def Random(): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")().asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def Random(): typings.babylonjs.mathsMathDotcolorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")().asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Returns a Color3 value containing a red color
     * @returns a new Color3 object
     */
-  inline def Red(): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Red")().asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def Red(): typings.babylonjs.mathsMathDotcolorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Red")().asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Returns a Color3 value containing a teal color
     * @returns a new Color3 object
     */
-  inline def Teal(): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Teal")().asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def Teal(): typings.babylonjs.mathsMathDotcolorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Teal")().asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Returns a Color3 value containing a white color
     * @returns a new Color3 object
     */
-  inline def White(): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("White")().asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def White(): typings.babylonjs.mathsMathDotcolorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("White")().asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   /**
     * Returns a Color3 value containing a yellow color
     * @returns a new Color3 object
     */
-  inline def Yellow(): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Yellow")().asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  inline def Yellow(): typings.babylonjs.mathsMathDotcolorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Yellow")().asInstanceOf[typings.babylonjs.mathsMathDotcolorMod.Color3]
   
   @JSImport("babylonjs/Maths/index", "Color3._BlackReadOnly")
   @js.native

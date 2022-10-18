@@ -1,13 +1,13 @@
 package typings.bootstrap.mod
 
 import typings.bootstrap.anon.PartialOptionsAllowList
-import typings.bootstrap.baseComponentMod.GetInstanceFactory
-import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
 import typings.bootstrap.bootstrapStrings.popover
+import typings.bootstrap.jsDistBaseComponentMod.GetInstanceFactory
+import typings.bootstrap.jsDistBaseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.jsDistPopoverMod.Popover.Options
+import typings.bootstrap.jsDistPopoverMod.Popover.jQueryInterface
+import typings.bootstrap.jsDistPopoverMod.default
 import typings.bootstrap.mod.global.Element
-import typings.bootstrap.popoverMod.Popover.Options
-import typings.bootstrap.popoverMod.Popover.jQueryInterface
-import typings.bootstrap.popoverMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,10 +79,10 @@ object Popover {
     def delay: String = js.native
     inline def delay_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delay")(x.asInstanceOf[js.Any])
     
-    @JSImport("bootstrap", "Popover.DefaultType.fallbackPlacement")
+    @JSImport("bootstrap", "Popover.DefaultType.fallbackPlacements")
     @js.native
-    def fallbackPlacement: String = js.native
-    inline def fallbackPlacement_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallbackPlacement")(x.asInstanceOf[js.Any])
+    def fallbackPlacements: String = js.native
+    inline def fallbackPlacements_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallbackPlacements")(x.asInstanceOf[js.Any])
     
     @JSImport("bootstrap", "Popover.DefaultType.html")
     @js.native
@@ -203,17 +203,17 @@ object Popover {
   object Events extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.bootstrap.popoverMod.Popover.Events & String] = js.native
+    def apply(value: String): js.UndefOr[typings.bootstrap.jsDistPopoverMod.Popover.Events & String] = js.native
     
-    /* "hidden.bs.popover" */ val hidden: typings.bootstrap.popoverMod.Popover.Events.hidden & String = js.native
+    /* "hidden.bs.popover" */ val hidden: typings.bootstrap.jsDistPopoverMod.Popover.Events.hidden & String = js.native
     
-    /* "hide.bs.popover" */ val hide: typings.bootstrap.popoverMod.Popover.Events.hide & String = js.native
+    /* "hide.bs.popover" */ val hide: typings.bootstrap.jsDistPopoverMod.Popover.Events.hide & String = js.native
     
-    /* "inserted.bs.popover" */ val inserted: typings.bootstrap.popoverMod.Popover.Events.inserted & String = js.native
+    /* "inserted.bs.popover" */ val inserted: typings.bootstrap.jsDistPopoverMod.Popover.Events.inserted & String = js.native
     
-    /* "show.bs.popover" */ val show: typings.bootstrap.popoverMod.Popover.Events.show & String = js.native
+    /* "show.bs.popover" */ val show: typings.bootstrap.jsDistPopoverMod.Popover.Events.show & String = js.native
     
-    /* "shown.bs.popover" */ val shown: typings.bootstrap.popoverMod.Popover.Events.shown & String = js.native
+    /* "shown.bs.popover" */ val shown: typings.bootstrap.jsDistPopoverMod.Popover.Events.shown & String = js.native
   }
   
   /* static member */
@@ -225,8 +225,8 @@ object Popover {
   /* static member */
   @JSImport("bootstrap", "Popover.getInstance")
   @js.native
-  def getInstance: GetInstanceFactory[typings.bootstrap.popoverMod.Popover] = js.native
-  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.popoverMod.Popover]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+  def getInstance: GetInstanceFactory[typings.bootstrap.jsDistPopoverMod.Popover] = js.native
+  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistPopoverMod.Popover]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
   
   /**
     * Static method which allows you to get the popover instance associated with
@@ -235,12 +235,12 @@ object Popover {
   /* static member */
   @JSImport("bootstrap", "Popover.getOrCreateInstance")
   @js.native
-  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.popoverMod.Popover, PartialOptionsAllowList] = js.native
-  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.popoverMod.Popover, PartialOptionsAllowList]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistPopoverMod.Popover, PartialOptionsAllowList] = js.native
+  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistPopoverMod.Popover, PartialOptionsAllowList]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("bootstrap", "Popover.jQueryInterface")
   @js.native
-  def jQueryInterface: typings.bootstrap.popoverMod.Popover.jQueryInterface = js.native
+  def jQueryInterface: typings.bootstrap.jsDistPopoverMod.Popover.jQueryInterface = js.native
   inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
 }

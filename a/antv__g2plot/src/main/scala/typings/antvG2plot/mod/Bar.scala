@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialBarOptions
-import typings.antvG2plot.barTypesMod.BarOptions
+import typings.antvG2plot.libPlotsBarTypesMod.BarOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Bar")
 @js.native
 open class Bar protected ()
-  extends typings.antvG2plot.barMod.Bar {
+  extends typings.antvG2plot.libPlotsBarMod.Bar {
   def this(container: String, options: BarOptions) = this()
   def this(container: HTMLElement, options: BarOptions) = this()
 }

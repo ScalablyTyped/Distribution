@@ -9,5 +9,5 @@ object translationsMod {
   @JSImport("handsontable/translations", "IndexMapper")
   @js.native
   open class IndexMapper ()
-    extends typings.handsontable.indexMapperMod.IndexMapper
+    extends typings.handsontable.translationsIndexMapperMod.IndexMapper
 }

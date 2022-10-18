@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "TwirlBlock")
 @js.native
 open class TwirlBlock protected ()
-  extends typings.babylonjs.legacyMod.TwirlBlock {
+  extends typings.babylonjs.legacyLegacyMod.TwirlBlock {
   /**
     * Creates a new TwirlBlock
     * @param name defines the block name

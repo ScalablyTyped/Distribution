@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.ratingMod.RatingProps
+import typings.primereact.ratingRatingMod.RatingProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Rating")
 @js.native
 open class Rating protected ()
-  extends typings.primereact.ratingMod.Rating {
+  extends typings.primereact.ratingRatingMod.Rating {
   def this(props: RatingProps) = this()
   /**
     * @deprecated

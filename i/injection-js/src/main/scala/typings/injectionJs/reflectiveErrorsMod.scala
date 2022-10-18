@@ -1,8 +1,8 @@
 package typings.injectionJs
 
+import typings.injectionJs.facadeTypeMod.Type
 import typings.injectionJs.reflectiveInjectorMod.ReflectiveInjector
 import typings.injectionJs.reflectiveKeyMod.ReflectiveKey
-import typings.injectionJs.typeMod.Type
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

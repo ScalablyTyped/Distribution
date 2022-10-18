@@ -6,29 +6,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Primary extends StObject {
   
-  /** @description Whether this email address is the primary address. */
+  /**
+    * Format: email
+    * @example octocat@github.com
+    */
+  var email: String
+  
+  /** @example true */
   var primary: Boolean
   
-  /** @description The type of email address. */
-  var `type`: String
+  /** @example true */
+  var verified: Boolean
   
-  /** @description The email address. */
-  var value: String
+  /** @example public */
+  var visibility: String | Null
 }
 object Primary {
   
-  inline def apply(primary: Boolean, `type`: String, value: String): Primary = {
-    val __obj = js.Dynamic.literal(primary = primary.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  inline def apply(email: String, primary: Boolean, verified: Boolean): Primary = {
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any], visibility = null)
     __obj.asInstanceOf[Primary]
   }
   
   extension [Self <: Primary](x: Self) {
     
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
     inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityNull: Self = StObject.set(x, "visibility", null)
   }
 }

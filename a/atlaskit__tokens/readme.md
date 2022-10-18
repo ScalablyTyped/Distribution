@@ -1,7 +1,7 @@
 
 # Scala.js typings for atlaskit__tokens
 
-Typings are for version 0.10.20
+Typings are for version 0.10.24
 
 ## Library description:
 Design tokens are the single source of truth to name and store design decisions.

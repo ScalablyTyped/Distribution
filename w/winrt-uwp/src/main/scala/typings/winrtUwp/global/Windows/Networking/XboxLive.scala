@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object XboxLive {
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  @JSGlobal("Windows.Networking.XboxLive.XboxLiveDeviceAddress")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.XboxLive.XboxLiveDeviceAddress")
   @js.native
-  abstract class XboxLiveDeviceAddress ()
+  open class XboxLiveDeviceAddress ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress
   object XboxLiveDeviceAddress {
@@ -67,9 +67,9 @@ object XboxLive {
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPair")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPair")
   @js.native
-  abstract class XboxLiveEndpointPair ()
+  open class XboxLiveEndpointPair ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPair
   object XboxLiveEndpointPair {
@@ -120,9 +120,9 @@ object XboxLive {
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult")
   @js.native
-  abstract class XboxLiveEndpointPairCreationResult ()
+  open class XboxLiveEndpointPairCreationResult ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult {
     
@@ -196,9 +196,9 @@ object XboxLive {
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs")
   @js.native
-  abstract class XboxLiveEndpointPairStateChangedEventArgs ()
+  open class XboxLiveEndpointPairStateChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs {
     
@@ -212,9 +212,9 @@ object XboxLive {
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate")
   @js.native
-  abstract class XboxLiveEndpointPairTemplate ()
+  open class XboxLiveEndpointPairTemplate ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate
   object XboxLiveEndpointPairTemplate {
@@ -240,9 +240,9 @@ object XboxLive {
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  @JSGlobal("Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs")
   @js.native
-  abstract class XboxLiveInboundEndpointPairCreatedEventArgs ()
+  open class XboxLiveInboundEndpointPairCreatedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs {
     
@@ -475,9 +475,9 @@ object XboxLive {
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult")
   @js.native
-  abstract class XboxLiveQualityOfServiceMetricResult ()
+  open class XboxLiveQualityOfServiceMetricResult ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult {
     
@@ -499,9 +499,9 @@ object XboxLive {
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult")
   @js.native
-  abstract class XboxLiveQualityOfServicePrivatePayloadResult ()
+  open class XboxLiveQualityOfServicePrivatePayloadResult ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult {
     

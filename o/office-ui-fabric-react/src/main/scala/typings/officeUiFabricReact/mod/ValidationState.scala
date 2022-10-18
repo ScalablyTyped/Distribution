@@ -9,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ValidationState extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.basePickerTypesMod.ValidationState & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.ValidationState & Double
+  ] = js.native
   
-  /* 2 */ val invalid: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.invalid & Double = js.native
+  /* 2 */ val invalid: typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.ValidationState.invalid & Double = js.native
   
-  /* 0 */ val valid: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.valid & Double = js.native
+  /* 0 */ val valid: typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.ValidationState.valid & Double = js.native
   
-  /* 1 */ val warning: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.warning & Double = js.native
+  /* 1 */ val warning: typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.ValidationState.warning & Double = js.native
 }

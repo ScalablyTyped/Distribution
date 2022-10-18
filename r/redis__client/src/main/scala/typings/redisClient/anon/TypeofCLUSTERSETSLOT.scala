@@ -1,6 +1,6 @@
 package typings.redisClient.anon
 
-import typings.redisClient.clusterSETSLOTMod.ClusterSlotStates
+import typings.redisClient.distLibCommandsClusterSETSLOTMod.ClusterSlotStates
 import typings.redisClient.redisClientStrings.OK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

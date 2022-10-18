@@ -1,13 +1,13 @@
 package typings.baseui
 
 import org.scalablytyped.runtime.Shortcut
-import typings.baseui.baseInputMod.default
 import typings.baseui.baseuiStrings.change_
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.div
 import typings.baseui.baseuiStrings.input
 import typings.baseui.baseuiStrings.large_
 import typings.baseui.baseuiStrings.none
+import typings.baseui.inputBaseInputMod.default
 import typings.baseui.inputTypesMod.MaskedInputProps
 import typings.baseui.inputTypesMod.SharedProps
 import typings.baseui.inputTypesMod.StateReducer
@@ -15,7 +15,7 @@ import typings.baseui.inputTypesMod.StatefulInputProps
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

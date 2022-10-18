@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isWellFormedCurrencyCodeMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/IsWellFormedCurrencyCode", JSImport.Namespace)
+  @JSImport("@formatjs/ecma402-abstract/IsWellFormedCurrencyCode", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

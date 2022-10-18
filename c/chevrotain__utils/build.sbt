@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chevrotain__utils"
-version := "10.3.0-dcd8b0"
+version := "10.3.0-afec78"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

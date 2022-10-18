@@ -129,9 +129,9 @@ object Midi {
   }
   
   /** Represents a port used to receive MIDI messages from a MIDI device. */
-  @JSGlobal("Windows.Devices.Midi.MidiInPort")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Midi.MidiInPort")
   @js.native
-  abstract class MidiInPort ()
+  open class MidiInPort ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiInPort
   object MidiInPort {
@@ -157,9 +157,9 @@ object Midi {
   }
   
   /** Provides data for the MessageReceived event. */
-  @JSGlobal("Windows.Devices.Midi.MidiMessageReceivedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Midi.MidiMessageReceivedEventArgs")
   @js.native
-  abstract class MidiMessageReceivedEventArgs ()
+  open class MidiMessageReceivedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiMessageReceivedEventArgs {
     
@@ -294,9 +294,9 @@ object Midi {
   }
   
   /** Represents a port used to send MIDI messages to a MIDI device. */
-  @JSGlobal("Windows.Devices.Midi.MidiOutPort")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Midi.MidiOutPort")
   @js.native
-  abstract class MidiOutPort ()
+  open class MidiOutPort ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiOutPort {
     
@@ -552,9 +552,9 @@ object Midi {
   }
   
   /** Represents the Microsoft GS wavetable software synthesizer, included in Windows. This synthesizer provides a Roland GS sound set, which includes and extends the General MIDI sound set. */
-  @JSGlobal("Windows.Devices.Midi.MidiSynthesizer")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Midi.MidiSynthesizer")
   @js.native
-  abstract class MidiSynthesizer ()
+  open class MidiSynthesizer ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Midi.MidiSynthesizer {
     

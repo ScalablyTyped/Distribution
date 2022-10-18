@@ -9,6 +9,7 @@ trait Vector2 extends StObject {
   
   /**
     * Add another vector with the current one
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#11
     * @param otherVector defines the other vector
     * @returns a new Vector2 set with the addition of the current Vector2 and the given one coordinates
     */
@@ -16,6 +17,7 @@ trait Vector2 extends StObject {
   
   /**
     * Set the Vector2 coordinates by adding the given Vector2 coordinates
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#13
     * @param otherVector defines the other vector
     * @returns the current updated Vector2
     */
@@ -23,6 +25,7 @@ trait Vector2 extends StObject {
   
   /**
     * Sets the "result" coordinates with the addition of the current Vector2 and the given one coordinates
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#12
     * @param otherVector defines the other vector
     * @param result defines the target vector
     * @returns the unmodified current Vector2
@@ -31,6 +34,7 @@ trait Vector2 extends StObject {
   
   /**
     * Gets a new Vector2 by adding the current Vector2 coordinates to the given Vector3 x, y coordinates
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#14
     * @param otherVector defines the other vector
     * @returns a new Vector2
     */
@@ -38,12 +42,14 @@ trait Vector2 extends StObject {
   
   /**
     * Copy the current vector to an array
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#40
     * @returns a new array with 2 elements: the Vector2 coordinates.
     */
   def asArray(): js.Array[Double] = js.native
   
   /**
     * Sets the Vector2 coordinates with the given Vector2 coordinates
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#24
     * @param source defines the source Vector2
     * @returns the current updated Vector2
     */
@@ -51,6 +57,7 @@ trait Vector2 extends StObject {
   
   /**
     * Sets the Vector2 coordinates with the given floats
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#25
     * @param x defines the first coordinate
     * @param y defines the second coordinate
     * @returns the current updated Vector2
@@ -59,6 +66,7 @@ trait Vector2 extends StObject {
   
   /**
     * Returns a new Vector2 set with the Vector2 coordinates divided by the given one coordinates
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#27
     * @param otherVector defines the other vector
     * @returns a new Vector2
     */
@@ -66,6 +74,7 @@ trait Vector2 extends StObject {
   
   /**
     * Divides the current Vector2 coordinates by the given ones
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#28
     * @param otherVector defines the other vector
     * @returns the current updated Vector2
     */
@@ -73,6 +82,7 @@ trait Vector2 extends StObject {
   
   /**
     * Sets the "result" coordinates with the Vector2 divided by the given one coordinates
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#30
     * @param otherVector defines the other vector
     * @param result defines the target vector
     * @returns the unmodified current Vector2
@@ -81,6 +91,7 @@ trait Vector2 extends StObject {
   
   /**
     * Gets a boolean if two vectors are equals
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#31
     * @param otherVector defines the other vector
     * @returns true if the given vector coordinates strictly equal the current Vector2 ones
     */
@@ -88,6 +99,7 @@ trait Vector2 extends StObject {
   
   /**
     * Gets a boolean if two vectors are equals (using an epsilon value)
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#32
     * @param otherVector defines the other vector
     * @param epsilon defines the minimal distance to consider equality
     * @returns true if the given vector coordinates are close to the current ones by a distance of epsilon.
@@ -97,6 +109,7 @@ trait Vector2 extends StObject {
   
   /**
     * Gets a new Vector2 from current Vector2 floored values
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#35
     * eg (1.2, 2.31) returns (1, 2)
     * @returns a new Vector2
     */
@@ -104,6 +117,7 @@ trait Vector2 extends StObject {
   
   /**
     * Gets a new Vector2 from current Vector2 fractional values
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#34
     * eg (1.2, 2.31) returns (0.2, 0.31)
     * @returns a new Vector2
     */
@@ -111,6 +125,7 @@ trait Vector2 extends StObject {
   
   /**
     * Update the current vector from an array
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#39
     * @param array defines the destination array
     * @param index defines the offset in the destination array
     * @returns the current Vector3
@@ -144,6 +159,7 @@ trait Vector2 extends StObject {
   
   /**
     * Returns a new Vector2 set with the multiplication of the current Vector2 and the given one coordinates
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#42
     * @param otherVector defines the other vector
     * @returns a new Vector2
     */
@@ -151,6 +167,7 @@ trait Vector2 extends StObject {
   
   /**
     * Gets a new Vector2 set with the Vector2 coordinates multiplied by the given floats
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#89
     * @param x defines the first coordinate
     * @param y defines the second coordinate
     * @returns a new Vector2
@@ -159,6 +176,7 @@ trait Vector2 extends StObject {
   
   /**
     * Multiplies in place the current Vector2 coordinates by the given ones
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#43
     * @param otherVector defines the other vector
     * @returns the current updated Vector2
     */
@@ -166,6 +184,7 @@ trait Vector2 extends StObject {
   
   /**
     * Sets "result" coordinates with the multiplication of the current Vector2 and the given one coordinates
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#44
     * @param otherVector defines the other vector
     * @param result defines the target vector
     * @returns the unmodified current Vector2
@@ -174,18 +193,21 @@ trait Vector2 extends StObject {
   
   /**
     * Gets a new Vector2 with current Vector2 negated coordinates
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#22
     * @returns a new Vector2
     */
   def negate(): Vector2 = js.native
   
   /**
     * Negate this vector in place
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#23
     * @returns this
     */
   def negateInPlace(): Vector2 = js.native
   
   /**
     * Negate the current Vector2 and stores the result in the given vector "result" coordinates
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#41
     * @param result defines the Vector3 object where to store the result
     * @returns the result
     */
@@ -193,12 +215,14 @@ trait Vector2 extends StObject {
   
   /**
     * Normalize the vector
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#48
     * @returns the current updated Vector2
     */
   def normalize(): Vector2 = js.native
   
   /**
     * Rotate the current vector into a given result vector
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#49
     * @param angle defines the rotation angle
     * @param result defines the result vector where to store the rotated vector
     * @returns the current vector
@@ -207,6 +231,7 @@ trait Vector2 extends StObject {
   
   /**
     * Returns a new Vector2 scaled by "scale" from the current Vector2
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#52
     * @param scale defines the scaling factor
     * @returns a new Vector2
     */
@@ -214,6 +239,7 @@ trait Vector2 extends StObject {
   
   /**
     * Scale the current Vector2 values by a factor and add the result to a given Vector2
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#58
     * @param scale defines the scale factor
     * @param result defines the Vector2 object where to store the result
     * @returns the unmodified current Vector2
@@ -221,7 +247,8 @@ trait Vector2 extends StObject {
   def scaleAndAddToRef(scale: Double, result: Vector2): Vector2 = js.native
   
   /**
-    * Multiply the Vector2 coordinates by scale
+    * Multiply the Vector2 coordinates by
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#59
     * @param scale defines the scaling factor
     * @returns the current updated Vector2
     */
@@ -229,6 +256,7 @@ trait Vector2 extends StObject {
   
   /**
     * Scale the current Vector2 values by a factor to a given Vector2
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#57
     * @param scale defines the scale factor
     * @param result defines the Vector2 object where to store the result
     * @returns the unmodified current Vector2
@@ -237,6 +265,7 @@ trait Vector2 extends StObject {
   
   /**
     * Sets the Vector2 coordinates with the given floats
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#62
     * @param x defines the first coordinate
     * @param y defines the second coordinate
     * @returns the current updated Vector2
@@ -245,6 +274,7 @@ trait Vector2 extends StObject {
   
   /**
     * Gets a new Vector2 set with the subtracted coordinates of the given one from the current Vector2
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#61
     * @param otherVector defines the other vector
     * @returns a new Vector2
     */
@@ -252,6 +282,7 @@ trait Vector2 extends StObject {
   
   /**
     * Sets the current Vector2 coordinates by subtracting from it the given one coordinates
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#88
     * @param otherVector defines the other vector
     * @returns the current updated Vector2
     */
@@ -259,6 +290,7 @@ trait Vector2 extends StObject {
   
   /**
     * Sets the "result" coordinates with the subtraction of the given one from the current Vector2 coordinates.
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#63
     * @param otherVector defines the other vector
     * @param result defines the target vector
     * @returns the unmodified current Vector2
@@ -267,6 +299,7 @@ trait Vector2 extends StObject {
   
   /**
     * Sets the Vector2 coordinates in the given array or Float32Array from the given index.
+    * Example Playground https://playground.babylonjs.com/#QYBWV4#15
     * @param array defines the source array
     * @param index defines the offset in source array
     * @returns the current Vector2

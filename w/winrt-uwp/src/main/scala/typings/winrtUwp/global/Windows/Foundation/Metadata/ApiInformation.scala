@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables you to detect whether a specified member, type, or API contract is present so that you can safely make API calls across a variety of devices. */
-@JSGlobal("Windows.Foundation.Metadata.ApiInformation")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.Metadata.ApiInformation")
 @js.native
-abstract class ApiInformation ()
+open class ApiInformation ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Metadata.ApiInformation
 object ApiInformation {

@@ -75,7 +75,15 @@ object mod {
   }
   
   // TODO: Use the `Awaited` utility instead when targeting TS 4.5.
-  type PromiseResolve[ValueType] = js.Promise[Any]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    ValueType extends std.PromiseLike<infer ValueType> ? std.Promise<ValueType> : std.Promise<ValueType>
+    }}}
+    */
+  @js.native
+  trait PromiseResolve[ValueType] extends StObject
   
-  type ThrottledFunction[Argument /* <: js.Array[Any] */, ReturnValue] = (js.Function1[/* arguments */ Argument, js.Promise[Any]]) & Abort
+  type ThrottledFunction[Argument /* <: js.Array[Any] */, ReturnValue] = (js.Function1[/* arguments */ Argument, PromiseResolve[ReturnValue]]) & Abort
 }

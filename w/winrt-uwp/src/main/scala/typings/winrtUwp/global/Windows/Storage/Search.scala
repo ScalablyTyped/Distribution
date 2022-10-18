@@ -77,9 +77,9 @@ object Search {
   }
   
   /** Enables Windows Store apps to place content properties in the system index. */
-  @JSGlobal("Windows.Storage.Search.ContentIndexer")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Search.ContentIndexer")
   @js.native
-  abstract class ContentIndexer ()
+  open class ContentIndexer ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Search.ContentIndexer
   object ContentIndexer {
@@ -104,9 +104,9 @@ object Search {
   }
   
   /** Represents a query for content properties in the ContentIndexer . */
-  @JSGlobal("Windows.Storage.Search.ContentIndexerQuery")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Search.ContentIndexerQuery")
   @js.native
-  abstract class ContentIndexerQuery ()
+  open class ContentIndexerQuery ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Search.ContentIndexerQuery
   
@@ -287,37 +287,37 @@ object Search {
   }
   
   /** Provides access to the sorting criteria of the query results as a collection of SortEntry objects. */
-  @JSGlobal("Windows.Storage.Search.SortEntryVector")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Search.SortEntryVector")
   @js.native
-  abstract class SortEntryVector ()
+  open class SortEntryVector ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Search.SortEntryVector
   
   /** Provides access to the results of a query of the files in the location that is represented by a storageFolder object. You can use storageFileQueryResult to enumerate the files in that storageFolder location. */
-  @JSGlobal("Windows.Storage.Search.StorageFileQueryResult")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Search.StorageFileQueryResult")
   @js.native
-  abstract class StorageFileQueryResult ()
+  open class StorageFileQueryResult ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Search.StorageFileQueryResult
   
   /** Provides access to the results of a query that lists the folder (or file groups) in the folder being queried (which is represented by a storageFolder ). You can use a storageFolderQueryResult to enumerate folders or file groups in that folder. */
-  @JSGlobal("Windows.Storage.Search.StorageFolderQueryResult")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Search.StorageFolderQueryResult")
   @js.native
-  abstract class StorageFolderQueryResult ()
+  open class StorageFolderQueryResult ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Search.StorageFolderQueryResult
   
   /** Provides access to the results of a query that lists all items including files and folders (or file groups) in the folder being queried (which is represented by a storageFolder ). You can use storageItemQueryResult to enumerate the files and folders in that storageFolder . */
-  @JSGlobal("Windows.Storage.Search.StorageItemQueryResult")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Search.StorageItemQueryResult")
   @js.native
-  abstract class StorageItemQueryResult ()
+  open class StorageItemQueryResult ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Search.StorageItemQueryResult
   
   /** Details about a change to storage library content. */
-  @JSGlobal("Windows.Storage.Search.StorageLibraryContentChangedTriggerDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Search.StorageLibraryContentChangedTriggerDetails")
   @js.native
-  abstract class StorageLibraryContentChangedTriggerDetails ()
+  open class StorageLibraryContentChangedTriggerDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Search.StorageLibraryContentChangedTriggerDetails {
     

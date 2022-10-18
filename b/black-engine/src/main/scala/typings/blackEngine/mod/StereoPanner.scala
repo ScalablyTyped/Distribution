@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "StereoPanner")
 @js.native
 open class StereoPanner ()
-  extends typings.blackEngine.stereoPannerMod.StereoPanner
+  extends typings.blackEngine.audioEffectsStereoPannerMod.StereoPanner

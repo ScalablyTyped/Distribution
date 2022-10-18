@@ -1,6 +1,6 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.eventsMod.ButtonRequestData
+import typings.trezorConnect.libTypescriptEventsMod.ButtonRequestData
 import typings.trezorConnect.trezorConnectStrings.ButtonRequest_FirmwareUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,13 +15,13 @@ trait OmitButtonRequestcodecode extends StObject {
   
   var data: js.UndefOr[ButtonRequestData] = js.undefined
   
-  var device: typings.trezorConnect.deviceMod.Device
+  var device: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device
   
   var pages: js.UndefOr[Double] = js.undefined
 }
 object OmitButtonRequestcodecode {
   
-  inline def apply(device: typings.trezorConnect.deviceMod.Device): OmitButtonRequestcodecode = {
+  inline def apply(device: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device): OmitButtonRequestcodecode = {
     val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitButtonRequestcodecode]
   }
@@ -38,7 +38,7 @@ object OmitButtonRequestcodecode {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDevice(value: typings.trezorConnect.deviceMod.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     inline def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     

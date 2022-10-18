@@ -1,6 +1,6 @@
 package typings.nivoRadar
 
-import typings.nivoRadar.typesMod.RadarLayerId
+import typings.nivoRadar.distTypesTypesMod.RadarLayerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

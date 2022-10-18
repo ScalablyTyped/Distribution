@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("tslint", "RuleFailurePosition")
 @js.native
 open class RuleFailurePosition protected ()
-  extends typings.tslint.ruleMod.RuleFailurePosition {
+  extends typings.tslint.libLanguageRuleRuleMod.RuleFailurePosition {
   def this(position: Double, lineAndCharacter: LineAndCharacter) = this()
 }

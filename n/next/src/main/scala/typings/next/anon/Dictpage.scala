@@ -24,6 +24,6 @@ object Dictpage {
     
     inline def setSlash_app(value: js.Array[String]): Self = StObject.set(x, "/_app", value.asInstanceOf[js.Any])
     
-    inline def setSlash_appVarargs(value: String*): Self = StObject.set(x, "/_app", js.Array(value :_*))
+    inline def setSlash_appVarargs(value: String*): Self = StObject.set(x, "/_app", js.Array(value*))
   }
 }

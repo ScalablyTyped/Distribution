@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "ReflectionFlags")
 @js.native
 open class ReflectionFlags ()
-  extends typings.typedoc.modelsMod.ReflectionFlags
+  extends typings.typedoc.distLibModelsMod.ReflectionFlags
 /* static members */
 object ReflectionFlags {
   

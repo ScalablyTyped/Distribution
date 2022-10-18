@@ -22,19 +22,19 @@ import typings.vega.vegaStrings.warn_
 import typings.vegaExpression.anon.Code
 import typings.vegaExpression.mod.CodegenOptions
 import typings.vegaTypings.anon.Ast
-import typings.vegaTypings.configMod.Config
-import typings.vegaTypings.dataMod.Format
-import typings.vegaTypings.dataflowMod.Changeset_
-import typings.vegaTypings.rendererMod.RenderModule_
-import typings.vegaTypings.runtimeMod.LoaderOptions
-import typings.vegaTypings.runtimeMod.Loader_
-import typings.vegaTypings.runtimeMod.TypeInference
-import typings.vegaTypings.runtimeMod.ViewOptions
-import typings.vegaTypings.runtimeRuntimeMod.Runtime
-import typings.vegaTypings.sceneMod.Scene
-import typings.vegaTypings.sceneMod.SceneGroup
-import typings.vegaTypings.sceneMod.SceneItem
-import typings.vegaTypings.specMod.Spec
+import typings.vegaTypings.typesRuntimeDataflowMod.Changeset_
+import typings.vegaTypings.typesRuntimeMod.LoaderOptions
+import typings.vegaTypings.typesRuntimeMod.Loader_
+import typings.vegaTypings.typesRuntimeMod.TypeInference
+import typings.vegaTypings.typesRuntimeMod.ViewOptions
+import typings.vegaTypings.typesRuntimeRendererMod.RenderModule_
+import typings.vegaTypings.typesRuntimeRuntimeMod.Runtime
+import typings.vegaTypings.typesRuntimeSceneMod.Scene
+import typings.vegaTypings.typesRuntimeSceneMod.SceneGroup
+import typings.vegaTypings.typesRuntimeSceneMod.SceneItem
+import typings.vegaTypings.typesSpecConfigMod.Config
+import typings.vegaTypings.typesSpecDataMod.Format
+import typings.vegaTypings.typesSpecMod.Spec
 import typings.vegaUtil.mod.AccessorFn
 import typings.vegaUtil.mod.FastMap_
 import typings.vegaUtil.mod.Fn
@@ -340,7 +340,7 @@ object mod {
   
   inline def peek(array: js.Array[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")(array.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def projection(`type`: String, projection: Any): typings.vegaTypings.runtimeMod.View = (^.asInstanceOf[js.Dynamic].applyDynamic("projection")(`type`.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[typings.vegaTypings.runtimeMod.View]
+  inline def projection(`type`: String, projection: Any): typings.vegaTypings.typesRuntimeMod.View = (^.asInstanceOf[js.Dynamic].applyDynamic("projection")(`type`.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[typings.vegaTypings.typesRuntimeMod.View]
   
   inline def quarter(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quarter")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def quarter(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quarter")(date.asInstanceOf[js.Any]).asInstanceOf[Double]

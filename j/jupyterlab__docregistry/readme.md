@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__docregistry
 
-Typings are for version 2.2.4
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Document Registry
@@ -10,10 +10,10 @@ JupyterLab - Document Registry
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/docregistry |
 | Keywords           | - |
-| # releases         | 126 |
-| # dependents       | 186 |
-| # downloads        | 1877867 |
-| # stars            | 0 |
+| # releases         | 142 |
+| # dependents       | 0.0 |
+| # downloads        | 255813.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

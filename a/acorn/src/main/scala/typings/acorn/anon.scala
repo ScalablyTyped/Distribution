@@ -477,11 +477,12 @@ object anon {
   }
   
   @js.native
-  trait Call extends StObject {
+  trait GetToken extends StObject {
     
-    def apply(): js.Iterator[Token] = js.native
+    def getToken(): Token = js.native
     
-    def getToken(): /* import warning: importer.ImportType#apply Failed type conversion: acorn.acorn.Token[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.iterator * / any] */ js.Any = js.native
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[js.Iterator[Token]] = js.native
   }
   
   trait TypeofParser extends StObject {
@@ -502,7 +503,7 @@ object anon {
     def parseExpressionAt(input: String, pos: Double, options: Options): Node
     
     /* static member */
-    def tokenizer(input: String, options: Options): Call
+    def tokenizer(input: String, options: Options): GetToken
   }
   object TypeofParser {
     
@@ -513,7 +514,7 @@ object anon {
         ] => /* import warning: importer.ImportType#apply Failed type conversion: typeof Parser */ js.Any,
       parse: (String, Options) => Node,
       parseExpressionAt: (String, Double, Options) => Node,
-      tokenizer: (String, Options) => Call
+      tokenizer: (String, Options) => GetToken
     ): TypeofParser = {
       val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), parse = js.Any.fromFunction2(parse), parseExpressionAt = js.Any.fromFunction3(parseExpressionAt), tokenizer = js.Any.fromFunction2(tokenizer))
       __obj.asInstanceOf[TypeofParser]
@@ -532,7 +533,7 @@ object anon {
       
       inline def setParseExpressionAt(value: (String, Double, Options) => Node): Self = StObject.set(x, "parseExpressionAt", js.Any.fromFunction3(value))
       
-      inline def setTokenizer(value: (String, Options) => Call): Self = StObject.set(x, "tokenizer", js.Any.fromFunction2(value))
+      inline def setTokenizer(value: (String, Options) => GetToken): Self = StObject.set(x, "tokenizer", js.Any.fromFunction2(value))
     }
   }
 }

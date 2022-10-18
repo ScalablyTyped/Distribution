@@ -1,7 +1,7 @@
 package typings.storybookComponents.anon
 
-import typings.storybookComponents.popperjsCoreLibModifiersComputeStylesMod.RoundOffsets
-import typings.storybookComponents.popperjsCoreLibTypesMod.Offsets
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibModifiersComputeStylesMod`.RoundOffsets
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.Offsets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

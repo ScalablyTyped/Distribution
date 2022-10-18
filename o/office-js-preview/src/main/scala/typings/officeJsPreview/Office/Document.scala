@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @remarks
   *
-  * **Hosts**: Excel, PowerPoint, Project, Word
+  * **Applications**: Excel, PowerPoint, Project, Word
   */
 @js.native
 trait Document extends StObject {
@@ -97,19 +97,19 @@ trait Document extends StObject {
     *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
     *
-    * For add-ins running in Office host applications other than Office on iPad, the `getFileAsync` method supports getting files in slices of up
+    * For add-ins running in Office applications other than Office on iPad, the `getFileAsync` method supports getting files in slices of up
     * to 4194304 bytes (4 MB). For add-ins running in Office apps on iPad, the `getFileAsync` method supports getting files in slices of up to
     * 65536 (64 KB).
     *
     * The `fileType` parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with
-    * the host:
+    * the application.
     *
     * *Supported FileTypes, by platform*
     *  <table>
-    *   <tr><th>                             </th><th> Office on Windows           </th><th> Office on the web           </th><th> Office on iPad      </th><th> Office on Mac               </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf`         </td><td>                     </td><td> `Compressed`, `Pdf`, `Text` </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> `Compressed`, `Pdf`         </td><td> `Compressed`, `Pdf`         </td><td> `Compressed`, `Pdf` </td><td> `Compressed`, `Pdf`         </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf` </td><td> `Compressed`, `Pdf`, `Text` </td></tr>
+    *   <tr><th>                             </th><th> Office on Windows                                          </th><th> Office on the web                                          </th><th> Office on iPad                          </th><th> Office on Mac                                              </th></tr>
+    *   <tr><td><strong> Excel      </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td>                                         </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
+    *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>                   </td></tr>
+    *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
     *  </table>
     *
     * @param fileType The format in which the file will be returned
@@ -277,64 +277,64 @@ trait Document extends StObject {
     * <table>
     *   <tr>
     *     <th>Property</th>
-    *     <th>Use to...</th>
+    *     <th>Use</th>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.value</td>
-    *     <td>Always returns undefined because there is no object or data to retrieve.</td>
+    *     <td><code>AsyncResult.value</code></td>
+    *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.status</td>
-    *     <td>Determine the success or failure of the operation.</td>
+    *     <td><code>AsyncResult.status</code></td>
+    *     <td>Determine the success or failure of the operation</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.error</td>
-    *     <td>Access an Error object that provides error information if the operation failed.</td>
+    *     <td><code>AsyncResult.error</code></td>
+    *     <td>Access an Error object that provides error information if the operation failed</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.asyncContext</td>
-    *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+    *     <td><code>AsyncResult.asyncContext</code></td>
+    *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
     *   </tr>
     * </table>
     *
-    * The possible values for the {@link Office.CoercionType} parameter vary by the host.
+    * The possible values for the {@link Office.CoercionType} parameter vary by the Office application.
     *
     * <table>
     *   <tr>
-    *     <th>Host</th>
-    *     <th>Supported coercionType</th>
+    *     <th><code>CoercionType</code></th>
+    *     <th>Supported applications</th>
     *   </tr>
     *   <tr>
-    *     <td>Excel, PowerPoint, Project, and Word</td>
-    *     <td>`Office.CoercionType.Text` (string)</td>
+    *     <td><code>Office.CoercionType.Html</code></td>
+    *     <td>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>Excel and Word</td>
-    *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
+    *     <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td>
+    *     <td>- Excel<br>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>Excel and Word</td>
-    *     <td>`Office.CoercionType.Table` (TableData object)</td>
+    *     <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td>
+    *     <td>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>Word</td>
-    *     <td>`Office.CoercionType.Html`</td>
+    *     <td><code>Office.CoercionType.SlideRange</code></td>
+    *     <td>- PowerPoint on the web and on Windows</td>
     *   </tr>
     *   <tr>
-    *     <td>Word</td>
-    *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
+    *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
+    *     <td>- Excel<br>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>PowerPoint on the web and Windows</td>
-    *     <td>`Office.CoercionType.SlideRange`</td>
+    *     <td><code>Office.CoercionType.Text</code> (string)</td>
+    *     <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
-    *     <td>`Office.CoercionType.XmlSvg`</td>
+    *     <td><code>Office.CoercionType.XmlSvg</code></td>
+    *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td>
     *   </tr>
     * </table>
     *
-    * @param coercionType The type of data structure to return. See the remarks section for each host's supported coercion types.
+    * @param coercionType The type of data structure to return. See the Remarks section for each application's supported coercion types.
     *
     * @param options Provides options for customizing what data is returned and how it is formatted.
     *
@@ -489,7 +489,7 @@ trait Document extends StObject {
     *
     * PowerPoint doesn't support the goToByIdAsync method in Master Views.
     *
-    * The behavior caused by the selectionMode option varies by host:
+    * The behavior caused by the selectionMode option varies by Office application:
     *
     * In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item. Office.SelectionMode.None for text bindings,
     * selects the cell; for matrix bindings, table bindings, and named items, selects the first data cell (not first cell in header row for tables).
@@ -694,33 +694,33 @@ trait Document extends StObject {
     * <table>
     *   <tr>
     *     <td>Word</td>
-    *     <td>If there is no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td>
-    *     <td>If `data` is a string, the specified text is inserted.</td>
+    *     <td>If there is no selection and the insertion point is at a valid location, the specified <code>data</code> is inserted at the insertion point</td>
+    *     <td>If <code>data</code> is a string, the specified text is inserted.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If `data` is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td>
+    *     <td>If <code>data</code> is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If `data` is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td>
+    *     <td>If </code>data</code> is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If `data` is Office Open XML, the specified XML is inserted.</td>
+    *     <td>If <code>data</code> is Office Open XML, the specified XML is inserted.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If `data` is a base64 encoded image stream, the specified image is inserted.</td>
+    *     <td>If <code>data</code> is a base64 encoded image stream, the specified image is inserted.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td>If there is a selection</td>
-    *     <td>It will be replaced with the specified `data` following the same rules as above.</td>
+    *     <td>It will be replaced with the specified <code>data</code> following the same rules as above.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
@@ -731,32 +731,32 @@ trait Document extends StObject {
     *   <tr>
     *     <td>Excel</td>
     *     <td>If a single cell is selected</td>
-    *     <td>If `data` is a string, the specified text is inserted as the value of the current cell.</td>
+    *     <td>If <code>data</code> is a string, the specified text is inserted as the value of the current cell.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If `data` is an array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be overwritten.</td>
+    *     <td>If <code>data</code> is an array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be overwritten.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If `data` is a TableData object, a new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td>
+    *     <td>If <code>data</code> is a TableData object, a new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td>If multiple cells are selected</td>
-    *     <td>If the shape does not match the shape of `data`, an error is returned.</td>
+    *     <td>If the shape does not match the shape of <code>data</code>, an error is returned.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If the shape of the selection exactly matches the shape of `data`, the values of the selected cells are updated based on the values in `data`.</td>
+    *     <td>If the shape of the selection exactly matches the shape of <code>data</code>, the values of the selected cells are updated based on the values in <code>data</code>.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td>Insert images</td>
-    *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are relative to currently selected cell(s). Negative imageLeft and imageTop values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
+    *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are relative to currently selected cells. Negative imageLeft and imageTop values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
@@ -767,12 +767,12 @@ trait Document extends StObject {
     *   <tr>
     *     <td>Excel on the web</td>
     *     <td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel on the web</td>
-    *     <td>The total number of cells you can write to a worksheet with the `data` parameter can't exceed 20,000 in a single call to this method.</td>
+    *     <td>The total number of cells you can write to a worksheet with the <code>data</code> parameter can't exceed 20,000 in a single call to this method.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>The number of formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.</td>
+    *     <td>The number of formatting groups passed to the <code>cellFormat</code> parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.</td>
     *   </tr>
     *
     *   <tr>
@@ -782,45 +782,44 @@ trait Document extends StObject {
     *   </tr>
     * </table>
     *
-    * **Hosts**
+    * **Applications**
     *
-    * The possible values for the {@link Office.CoercionType} parameter vary by the host.
+    * The possible values for the {@link Office.CoercionType} parameter vary by the Office application.
     *
     * <table>
     *   <tr>
-    *     <th>Host</th>
-    *     <th>Supported coercionType</th>
+    *     <th><code>CoercionType</code></th>
+    *     <th>Supported applications</th>
     *   </tr>
     *   <tr>
-    *     <td>Excel, PowerPoint, Project, and Word</td>
-    *     <td>`Office.CoercionType.Text` (string)</td>
+    *     <td><code>Office.CoercionType.Html</code></td>
+    *     <td>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>Excel and Word</td>
-    *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
+    *     <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td>
+    *     <td>- Excel<br>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>Excel and Word</td>
-    *     <td>`Office.CoercionType.Table` (TableData object)</td>
+    *     <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td>
+    *     <td>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>Word</td>
-    *     <td>`Office.CoercionType.Html`</td>
+    *     <td><code>Office.CoercionType.SlideRange</code></td>
+    *     <td>- PowerPoint on the web and Windows</td>
     *   </tr>
     *   <tr>
-    *     <td>Word</td>
-    *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
+    *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
+    *     <td>- Excel<br>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>PowerPoint on the web and Windows</td>
-    *     <td>`Office.CoercionType.SlideRange`</td>
+    *     <td><code>Office.CoercionType.Text</code> (string)</td>
+    *     <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
-    *     <td>`Office.CoercionType.XmlSvg`</td>
+    *     <td><code>Office.CoercionType.XmlSvg</code></td>
+    *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td>
     *   </tr>
     * </table>
-    *
     *
     * @param data The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
     *
@@ -851,7 +850,7 @@ trait Document extends StObject {
     *
     * @param options Provides options for how to insert data to the selection.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
-    *                  The AsyncResult.value property always returns undefined because there is no object or data to retrieve.
+    *                  The AsyncResult.value property always returns `undefined` because there is no object or data to retrieve.
     */
   def setSelectedDataAsync(data: String): Unit = js.native
   def setSelectedDataAsync(data: String, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
@@ -992,7 +991,7 @@ trait Document extends StObject {
   var settings: Settings = js.native
   
   /**
-    * Gets the URL of the document that the host application currently has open. Returns null if the URL is unavailable.
+    * Gets the URL of the document that the Office application currently has open. Returns null if the URL is unavailable.
     */
   var url: String = js.native
 }

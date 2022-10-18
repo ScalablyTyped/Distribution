@@ -1,16 +1,16 @@
 package typings.reactBulmaComponents.anon
 
 import typings.react.mod.ReactElement
-import typings.reactBulmaComponents.componentsMod.BulmaComponent
-import typings.reactBulmaComponents.componentsMod.ElementProps
-import typings.reactBulmaComponents.navbarMod.NavbarBurgerProps
-import typings.reactBulmaComponents.navbarMod.NavbarContainerProps
-import typings.reactBulmaComponents.navbarMod.NavbarDropdownProps
-import typings.reactBulmaComponents.navbarMod.NavbarItemProps
-import typings.reactBulmaComponents.navbarMod.NavbarLinkProps
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.a
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.div
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.span
+import typings.reactBulmaComponents.srcComponentsMod.BulmaComponent
+import typings.reactBulmaComponents.srcComponentsMod.ElementProps
+import typings.reactBulmaComponents.srcComponentsNavbarMod.NavbarBurgerProps
+import typings.reactBulmaComponents.srcComponentsNavbarMod.NavbarContainerProps
+import typings.reactBulmaComponents.srcComponentsNavbarMod.NavbarDropdownProps
+import typings.reactBulmaComponents.srcComponentsNavbarMod.NavbarItemProps
+import typings.reactBulmaComponents.srcComponentsNavbarMod.NavbarLinkProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

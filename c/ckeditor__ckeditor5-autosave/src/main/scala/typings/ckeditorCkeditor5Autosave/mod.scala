@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Autosave
 
-import typings.ckeditorCkeditor5Autosave.autosaveMod.default
+import typings.ckeditorCkeditor5Autosave.srcAutosaveMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

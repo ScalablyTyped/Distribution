@@ -1,6 +1,6 @@
 package typings.reactIntl
 
-import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
+import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
 import typings.formatjsIntl.srcTypesMod.CustomFormats
 import typings.formatjsIntl.srcTypesMod.MessageIds
 import typings.formatjsIntl.srcTypesMod.OnErrorFn
@@ -57,11 +57,11 @@ object srcUtilsMod {
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.textComponent")
     @js.native
     def textComponent: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
       ] = js.native
     inline def textComponent_=(
       x: js.UndefOr[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textComponent")(x.asInstanceOf[js.Any])
     

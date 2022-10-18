@@ -1,6 +1,6 @@
 package typings.expoPermissions
 
-import typings.expoPermissions.permissionsTypesMod.PermissionType
+import typings.expoPermissions.buildPermissionsDottypesMod.PermissionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

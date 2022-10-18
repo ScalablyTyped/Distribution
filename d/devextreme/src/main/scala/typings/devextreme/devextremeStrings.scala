@@ -297,10 +297,6 @@ object devextremeStrings {
   inline def Decimal: Decimal = "Decimal".asInstanceOf[Decimal]
   
   @js.native
-  sealed trait DeepPartial extends StObject
-  inline def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
-  
-  @js.native
   sealed trait Equalssign
     extends StObject
        with FilterBuilderOperation

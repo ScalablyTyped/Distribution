@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object loaderUtilsStrings {
   
   @js.native
-  sealed trait Readonly extends StObject
-  inline def Readonly: Readonly = "Readonly".asInstanceOf[Readonly]
-  
-  @js.native
   sealed trait base26
     extends StObject
        with DigestType

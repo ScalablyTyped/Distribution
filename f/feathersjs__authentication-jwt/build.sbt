@@ -1,23 +1,18 @@
 organization := "org.scalablytyped"
 name := "feathersjs__authentication-jwt"
-version := "1.0-dt-20200925Z-7acec2"
-scalaVersion := "2.13.3"
+version := "1.0-dt-20211202Z-9880f5"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-210a9e",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20201002Z-9b0b3f",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20201111Z-2a8190",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200921Z-49f0c4",
-  "org.scalablytyped" %%% "feathersjs__feathers" % "3.1-dt-20201002Z-0e2a70",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20200722Z-901708",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-50d3d9",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20201002Z-f71cda",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20201002Z-cf0dc0",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20201117Z-7640b4",
-  "org.scalablytyped" %%% "std" % "4.1-40053c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-d74acb",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-06d29e",
+  "org.scalablytyped" %%% "feathersjs__feathers" % "3.1-dt-20211202Z-ecdffb",
+  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-9884c6",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-76627f",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-696f82",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

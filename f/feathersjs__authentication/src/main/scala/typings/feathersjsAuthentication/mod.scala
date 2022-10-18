@@ -3,8 +3,6 @@ package typings.feathersjsAuthentication
 import org.scalablytyped.runtime.Shortcut
 import typings.express.mod.Application_
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.feathersjsAuthentication.anon.AccessToken
 import typings.feathersjsAuthentication.anon.Algorithm
 import typings.feathersjsAuthentication.anon.Enabled
@@ -13,61 +11,185 @@ import typings.feathersjsAuthentication.mod.AuthHooks.Hooks
 import typings.feathersjsFeathers.mod.Hook
 import typings.feathersjsFeathers.mod.Params
 import typings.std.Partial
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("@feathersjs/authentication", JSImport.Default)
   @js.native
-  val default: (js.Function1[/* config */ js.UndefOr[FeathersAuthenticationOptions], js.Function0[Unit]]) with Typeofself = js.native
+  val default: (js.Function1[/* config */ js.UndefOr[FeathersAuthenticationOptions], js.Function0[Unit]]) & Typeofself = js.native
   
   object express {
     
-    @JSImport("@feathersjs/authentication", "express.authenticate")
+    @JSImport("@feathersjs/authentication", "express")
     @js.native
-    def authenticate(strategy: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    @JSImport("@feathersjs/authentication", "express.authenticate")
-    @js.native
-    def authenticate(strategy: String, options: FeathersAuthenticationOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    @JSImport("@feathersjs/authentication", "express.authenticate")
-    @js.native
-    def authenticate(strategy: js.Array[String]): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    @JSImport("@feathersjs/authentication", "express.authenticate")
-    @js.native
-    def authenticate(strategy: js.Array[String], options: FeathersAuthenticationOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@feathersjs/authentication", "express.emitEvents")
-    @js.native
-    def emitEvents(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    inline def authenticate(strategy: String): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(strategy.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]]
+    inline def authenticate(strategy: String, options: FeathersAuthenticationOptions): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(strategy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]]
+    inline def authenticate(strategy: js.Array[String]): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(strategy.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]]
+    inline def authenticate(strategy: js.Array[String], options: FeathersAuthenticationOptions): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(strategy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]]
     
-    @JSImport("@feathersjs/authentication", "express.exposeCookies")
-    @js.native
-    def exposeCookies(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    inline def emitEvents(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("emitEvents")().asInstanceOf[RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]]
     
-    @JSImport("@feathersjs/authentication", "express.exposeHeaders")
-    @js.native
-    def exposeHeaders(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    inline def exposeCookies(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("exposeCookies")().asInstanceOf[RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]]
     
-    @JSImport("@feathersjs/authentication", "express.failureRedirect")
-    @js.native
-    def failureRedirect(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    @JSImport("@feathersjs/authentication", "express.failureRedirect")
-    @js.native
-    def failureRedirect(options: FeathersAuthenticationOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    inline def exposeHeaders(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("exposeHeaders")().asInstanceOf[RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]]
     
-    @JSImport("@feathersjs/authentication", "express.setCookie")
-    @js.native
-    def setCookie(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    @JSImport("@feathersjs/authentication", "express.setCookie")
-    @js.native
-    def setCookie(options: FeathersAuthenticationOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    inline def failureRedirect(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("failureRedirect")().asInstanceOf[RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]]
+    inline def failureRedirect(options: FeathersAuthenticationOptions): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("failureRedirect")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]]
     
-    @JSImport("@feathersjs/authentication", "express.successRedirect")
-    @js.native
-    def successRedirect(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    inline def setCookie(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")().asInstanceOf[RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]]
+    inline def setCookie(options: FeathersAuthenticationOptions): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]]
+    
+    inline def successRedirect(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("successRedirect")().asInstanceOf[RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]]
   }
   
   @JSImport("@feathersjs/authentication", "hooks")
@@ -76,13 +198,15 @@ object mod extends Shortcut {
   
   object service {
     
+    inline def apply(options: FeathersAuthenticationOptions): js.Function1[/* app */ js.UndefOr[Application_], Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* app */ js.UndefOr[Application_], Unit]]
+    
     @JSImport("@feathersjs/authentication", "service")
     @js.native
-    def apply(options: FeathersAuthenticationOptions): js.Function1[/* app */ js.UndefOr[Application_], Unit] = js.native
+    val ^ : js.Any = js.native
     
     @JSImport("@feathersjs/authentication", "service.Service")
     @js.native
-    class Service[T] protected () extends StObject {
+    open class Service[T] protected () extends StObject {
       def this(app: Application_) = this()
       
       def create(data: Partial[T], params: Params): js.Promise[AccessToken] = js.native
@@ -94,24 +218,20 @@ object mod extends Shortcut {
   
   object AuthHooks {
     
-    @js.native
     trait HashPassOptions extends StObject {
       
-      var passwordField: String = js.native
+      var passwordField: String
     }
     object HashPassOptions {
       
-      @scala.inline
-      def apply(passwordField: String): HashPassOptions = {
+      inline def apply(passwordField: String): HashPassOptions = {
         val __obj = js.Dynamic.literal(passwordField = passwordField.asInstanceOf[js.Any])
         __obj.asInstanceOf[HashPassOptions]
       }
       
-      @scala.inline
-      implicit class HashPassOptionsMutableBuilder[Self <: HashPassOptions] (val x: Self) extends AnyVal {
+      extension [Self <: HashPassOptions](x: Self) {
         
-        @scala.inline
-        def setPasswordField(value: String): Self = StObject.set(x, "passwordField", value.asInstanceOf[js.Any])
+        inline def setPasswordField(value: String): Self = StObject.set(x, "passwordField", value.asInstanceOf[js.Any])
       }
     }
     
@@ -136,7 +256,7 @@ object mod extends Shortcut {
         *
         */
       def populateUser(): Hook = js.native
-      def populateUser(options: js.Any): Hook = js.native
+      def populateUser(options: Any): Hook = js.native
       
       /**
         * The `restrictToAuthenticated` hook throws an error if there isn't a logged-in user by checking for the `hook.params.user` object.
@@ -164,118 +284,94 @@ object mod extends Shortcut {
         *
         */
       def verifyToken(): Hook = js.native
-      def verifyToken(options: js.Any): Hook = js.native
+      def verifyToken(options: Any): Hook = js.native
     }
     
-    @js.native
     trait RestrictOptions extends StObject {
       
-      var idField: String = js.native
+      var idField: String
       
-      var ownerField: String = js.native
+      var ownerField: String
     }
     object RestrictOptions {
       
-      @scala.inline
-      def apply(idField: String, ownerField: String): RestrictOptions = {
+      inline def apply(idField: String, ownerField: String): RestrictOptions = {
         val __obj = js.Dynamic.literal(idField = idField.asInstanceOf[js.Any], ownerField = ownerField.asInstanceOf[js.Any])
         __obj.asInstanceOf[RestrictOptions]
       }
       
-      @scala.inline
-      implicit class RestrictOptionsMutableBuilder[Self <: RestrictOptions] (val x: Self) extends AnyVal {
+      extension [Self <: RestrictOptions](x: Self) {
         
-        @scala.inline
-        def setIdField(value: String): Self = StObject.set(x, "idField", value.asInstanceOf[js.Any])
+        inline def setIdField(value: String): Self = StObject.set(x, "idField", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOwnerField(value: String): Self = StObject.set(x, "ownerField", value.asInstanceOf[js.Any])
+        inline def setOwnerField(value: String): Self = StObject.set(x, "ownerField", value.asInstanceOf[js.Any])
       }
     }
   }
   
-  @js.native
   trait FeathersAuthenticationOptions extends StObject {
     
-    var cookie: js.UndefOr[Enabled] = js.native
+    var cookie: js.UndefOr[Enabled] = js.undefined
     
-    var entity: js.UndefOr[String] = js.native
+    var entity: js.UndefOr[String] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var jwt: js.UndefOr[Algorithm] = js.native
+    var jwt: js.UndefOr[Algorithm] = js.undefined
     
-    var passReqToCallback: js.UndefOr[Boolean] = js.native
+    var passReqToCallback: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var service: js.UndefOr[String] = js.native
+    var service: js.UndefOr[String] = js.undefined
     
-    var session: js.UndefOr[Boolean] = js.native
+    var session: js.UndefOr[Boolean] = js.undefined
   }
   object FeathersAuthenticationOptions {
     
-    @scala.inline
-    def apply(): FeathersAuthenticationOptions = {
+    inline def apply(): FeathersAuthenticationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeathersAuthenticationOptions]
     }
     
-    @scala.inline
-    implicit class FeathersAuthenticationOptionsMutableBuilder[Self <: FeathersAuthenticationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FeathersAuthenticationOptions](x: Self) {
       
-      @scala.inline
-      def setCookie(value: Enabled): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: Enabled): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+      inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setJwt(value: Algorithm): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
+      inline def setJwt(value: Algorithm): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJwtUndefined: Self = StObject.set(x, "jwt", js.undefined)
+      inline def setJwtUndefined: Self = StObject.set(x, "jwt", js.undefined)
       
-      @scala.inline
-      def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
+      inline def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+      inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
       
-      @scala.inline
-      def setSession(value: Boolean): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Boolean): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     }
   }
   
-  type _To = (js.Function1[/* config */ js.UndefOr[FeathersAuthenticationOptions], js.Function0[Unit]]) with Typeofself
+  type _To = (js.Function1[/* config */ js.UndefOr[FeathersAuthenticationOptions], js.Function0[Unit]]) & Typeofself
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: (js.Function1[/* config */ js.UndefOr[FeathersAuthenticationOptions], js.Function0[Unit]]) with Typeofself = default
+  override def _to: (js.Function1[/* config */ js.UndefOr[FeathersAuthenticationOptions], js.Function0[Unit]]) & Typeofself = default
 }

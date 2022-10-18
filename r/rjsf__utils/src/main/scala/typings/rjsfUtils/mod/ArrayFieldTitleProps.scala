@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The properties that are passed to a `ArrayFieldTitleTemplate` implementation */
-/* Inlined std.Pick<@rjsf/utils.@rjsf/utils.TitleFieldProps<T, F>, 'title' | 'uiSchema' | 'required' | 'registry'> & {  idSchema :@rjsf/utils.@rjsf/utils.IdSchema<T>} */
+/* Inlined std.Omit<@rjsf/utils.@rjsf/utils.TitleFieldProps<T, F>, 'id' | 'title'> & {  title :string | undefined,   idSchema :@rjsf/utils.@rjsf/utils.IdSchema<T>} */
 trait ArrayFieldTitleProps[T, F] extends StObject {
   
   /** The idSchema of the field in the hierarchy */
@@ -15,14 +15,17 @@ trait ArrayFieldTitleProps[T, F] extends StObject {
   
   var required: js.UndefOr[Boolean] = js.undefined
   
-  var title: String
+  var schema: RJSFSchema
+  
+  /** The title for the field being rendered */
+  var title: js.UndefOr[String] = js.undefined
   
   var uiSchema: js.UndefOr[UiSchema[T, F]] = js.undefined
 }
 object ArrayFieldTitleProps {
   
-  inline def apply[T, F](idSchema: IdSchema[T], registry: Registry[T, F], title: String): ArrayFieldTitleProps[T, F] = {
-    val __obj = js.Dynamic.literal(idSchema = idSchema.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+  inline def apply[T, F](idSchema: IdSchema[T], registry: Registry[T, F], schema: RJSFSchema): ArrayFieldTitleProps[T, F] = {
+    val __obj = js.Dynamic.literal(idSchema = idSchema.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayFieldTitleProps[T, F]]
   }
   
@@ -36,7 +39,11 @@ object ArrayFieldTitleProps {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
+    inline def setSchema(value: RJSFSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setUiSchema(value: UiSchema[T, F]): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
     

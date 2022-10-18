@@ -1,31 +1,32 @@
 package typings.nivoGenerators.anon
 
-import typings.nivoGenerators.swarmplotMod.SwarmPlotDatum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Data extends StObject {
   
-  var data: js.Array[SwarmPlotDatum]
+  var color: String
   
-  var groups: js.Array[String]
+  var data: js.Array[X]
+  
+  var id: String
 }
 object Data {
   
-  inline def apply(data: js.Array[SwarmPlotDatum], groups: js.Array[String]): Data = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any])
+  inline def apply(color: String, data: js.Array[X], id: String): Data = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
   
   extension [Self <: Data](x: Self) {
     
-    inline def setData(value: js.Array[SwarmPlotDatum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: SwarmPlotDatum*): Self = StObject.set(x, "data", js.Array(value*))
+    inline def setData(value: js.Array[X]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setDataVarargs(value: X*): Self = StObject.set(x, "data", js.Array(value*))
     
-    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

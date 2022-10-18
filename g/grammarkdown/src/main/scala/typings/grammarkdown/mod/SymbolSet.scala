@@ -1,28 +1,28 @@
 package typings.grammarkdown.mod
 
-import typings.grammarkdown.tokensMod.SyntaxKind.CloseBraceToken
-import typings.grammarkdown.tokensMod.SyntaxKind.OpenBraceToken
+import typings.grammarkdown.distTokensMod.SyntaxKind.CloseBraceToken
+import typings.grammarkdown.distTokensMod.SyntaxKind.OpenBraceToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "SymbolSet")
 @js.native
-class SymbolSet protected ()
-  extends typings.grammarkdown.nodesMod.SymbolSet {
-  def this(openBraceToken: typings.grammarkdown.nodesMod.Token[OpenBraceToken]) = this()
+open class SymbolSet protected ()
+  extends typings.grammarkdown.distNodesMod.SymbolSet {
+  def this(openBraceToken: typings.grammarkdown.distNodesMod.Token[OpenBraceToken]) = this()
   def this(
-    openBraceToken: typings.grammarkdown.nodesMod.Token[OpenBraceToken],
-    elements: js.Array[typings.grammarkdown.nodesMod.SymbolSpan]
+    openBraceToken: typings.grammarkdown.distNodesMod.Token[OpenBraceToken],
+    elements: js.Array[typings.grammarkdown.distNodesMod.SymbolSpan]
   ) = this()
   def this(
-    openBraceToken: typings.grammarkdown.nodesMod.Token[OpenBraceToken],
-    elements: js.Array[typings.grammarkdown.nodesMod.SymbolSpan],
-    closeBraceToken: typings.grammarkdown.nodesMod.Token[CloseBraceToken]
+    openBraceToken: typings.grammarkdown.distNodesMod.Token[OpenBraceToken],
+    elements: js.Array[typings.grammarkdown.distNodesMod.SymbolSpan],
+    closeBraceToken: typings.grammarkdown.distNodesMod.Token[CloseBraceToken]
   ) = this()
   def this(
-    openBraceToken: typings.grammarkdown.nodesMod.Token[OpenBraceToken],
+    openBraceToken: typings.grammarkdown.distNodesMod.Token[OpenBraceToken],
     elements: Unit,
-    closeBraceToken: typings.grammarkdown.nodesMod.Token[CloseBraceToken]
+    closeBraceToken: typings.grammarkdown.distNodesMod.Token[CloseBraceToken]
   ) = this()
 }

@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object vueStrings {
   
   @js.native
-  sealed trait apply extends StObject
-  inline def apply: apply = "<apply>".asInstanceOf[apply]
-  
-  @js.native
   sealed trait at extends StObject
   inline def at: at = "at".asInstanceOf[at]
   
@@ -21,18 +17,6 @@ object vueStrings {
   @js.native
   sealed trait copyWithin extends StObject
   inline def copyWithin: copyWithin = "copyWithin".asInstanceOf[copyWithin]
-  
-  @js.native
-  sealed trait defineComponent extends StObject
-  inline def defineComponent: defineComponent = "defineComponent".asInstanceOf[defineComponent]
-  
-  @js.native
-  sealed trait defineCustomElement extends StObject
-  inline def defineCustomElement: defineCustomElement = "defineCustomElement".asInstanceOf[defineCustomElement]
-  
-  @js.native
-  sealed trait defineProps extends StObject
-  inline def defineProps: defineProps = "defineProps".asInstanceOf[defineProps]
   
   @js.native
   sealed trait entries extends StObject

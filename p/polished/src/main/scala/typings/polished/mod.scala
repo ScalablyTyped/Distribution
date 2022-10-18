@@ -1,21 +1,21 @@
 package typings.polished
 
 import typings.polished.anon.FnCall
-import typings.polished.colorMod.ContrastScores
-import typings.polished.colorMod.HslColor
-import typings.polished.colorMod.HslaColor
-import typings.polished.colorMod.RgbColor
-import typings.polished.colorMod.RgbaColor
-import typings.polished.fluidRangeConfigurationMod.FluidRangeConfiguration
-import typings.polished.fontFaceConfigurationMod.FontFaceConfiguration
-import typings.polished.interactionStateMod.InteractionState
-import typings.polished.linearGradientConfigurationMod.LinearGradientConfiguration
-import typings.polished.modularScaleRatioMod.ModularScaleRatio
-import typings.polished.radialGradientConfigurationMod.RadialGradientConfiguration
-import typings.polished.sideKeywordMod.SideKeyword
-import typings.polished.styleMod.Styles
-import typings.polished.timingFunctionMod.TimingFunction
-import typings.polished.triangleConfigurationMod.TriangleConfiguration
+import typings.polished.libTypesColorMod.ContrastScores
+import typings.polished.libTypesColorMod.HslColor
+import typings.polished.libTypesColorMod.HslaColor
+import typings.polished.libTypesColorMod.RgbColor
+import typings.polished.libTypesColorMod.RgbaColor
+import typings.polished.libTypesFluidRangeConfigurationMod.FluidRangeConfiguration
+import typings.polished.libTypesFontFaceConfigurationMod.FontFaceConfiguration
+import typings.polished.libTypesInteractionStateMod.InteractionState
+import typings.polished.libTypesLinearGradientConfigurationMod.LinearGradientConfiguration
+import typings.polished.libTypesModularScaleRatioMod.ModularScaleRatio
+import typings.polished.libTypesRadialGradientConfigurationMod.RadialGradientConfiguration
+import typings.polished.libTypesSideKeywordMod.SideKeyword
+import typings.polished.libTypesStyleMod.Styles
+import typings.polished.libTypesTimingFunctionMod.TimingFunction
+import typings.polished.libTypesTriangleConfigurationMod.TriangleConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

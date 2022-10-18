@@ -14,7 +14,7 @@ object mod {
   inline def default[S, A](React: ReactInterface, inititalState: S, actions: js.Object, options: InitializerFunction[S, A]): UseGlobal[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(React.asInstanceOf[js.Any], inititalState.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UseGlobal[S, A]]
   inline def default[S, A](React: ReactInterface, inititalState: S, actions: js.Object, options: Options[S, A]): UseGlobal[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(React.asInstanceOf[js.Any], inititalState.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UseGlobal[S, A]]
   
-  type IProduce = typings.immer.typesExternalMod.IProduce
+  type IProduce = typings.immer.distTypesTypesExternalMod.IProduce
   
   type InitializerFunction[S, A] = js.Function1[/* store */ Store[S, A], Unit]
   

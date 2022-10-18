@@ -22,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Store {
   
   /** Defines methods and properties you can use to get license and listing info about the current app and perform in-app product purchases. */
-  @JSGlobal("Windows.ApplicationModel.Store.CurrentApp")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.CurrentApp")
   @js.native
-  abstract class CurrentApp ()
+  open class CurrentApp ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Store.CurrentApp
   object CurrentApp {
@@ -175,9 +175,9 @@ object Store {
   }
   
   /** Defines methods and properties used to instantiate an object that you can use to get simulated license info during testing. */
-  @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator")
   @js.native
-  abstract class CurrentAppSimulator ()
+  open class CurrentAppSimulator ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Store.CurrentAppSimulator
   object CurrentAppSimulator {
@@ -334,16 +334,16 @@ object Store {
   }
   
   /** Provides access to the current app's license metadata. */
-  @JSGlobal("Windows.ApplicationModel.Store.LicenseInformation")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.LicenseInformation")
   @js.native
-  abstract class LicenseInformation ()
+  open class LicenseInformation ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Store.LicenseInformation
   
   /** Provides the listing info that describes the app in the Windows Store. */
-  @JSGlobal("Windows.ApplicationModel.Store.ListingInformation")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.ListingInformation")
   @js.native
-  abstract class ListingInformation ()
+  open class ListingInformation ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation {
     
@@ -394,9 +394,9 @@ object Store {
     object InstallControl {
       
       /** Represents an app that is in the installation queue. */
-      @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallItem")
+      /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallItem")
       @js.native
-      abstract class AppInstallItem ()
+      open class AppInstallItem ()
         extends StObject
            with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallItem
       
@@ -409,9 +409,9 @@ object Store {
            with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManager
       
       /** Provides data for the ItemCompleted and ItemStatusChanged events. */
-      @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManagerItemEventArgs")
+      /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManagerItemEventArgs")
       @js.native
-      abstract class AppInstallManagerItemEventArgs ()
+      open class AppInstallManagerItemEventArgs ()
         extends StObject
            with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManagerItemEventArgs {
         
@@ -460,9 +460,9 @@ object Store {
       }
       
       /** Describes the status of an app that is in the installation queue. */
-      @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallStatus")
+      /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallStatus")
       @js.native
-      abstract class AppInstallStatus ()
+      open class AppInstallStatus ()
         extends StObject
            with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallStatus {
         
@@ -525,9 +525,9 @@ object Store {
     }
     
     /** Defines static methods and properties for accessing information about the device hardware and configuring information about the system, the mobile operator, and the active user account. These members are used in various Windows Store scenarios. */
-    @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreConfiguration")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreConfiguration")
     @js.native
-    abstract class StoreConfiguration ()
+    open class StoreConfiguration ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreConfiguration
     object StoreConfiguration {
@@ -603,9 +603,9 @@ object Store {
     }
     
     /** Provides information about the manufacturer for the current device. */
-    @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreHardwareManufacturerInfo")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreHardwareManufacturerInfo")
     @js.native
-    abstract class StoreHardwareManufacturerInfo ()
+    open class StoreHardwareManufacturerInfo ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreHardwareManufacturerInfo {
       
@@ -627,9 +627,9 @@ object Store {
     }
     
     /** Defines static methods for retrieving the in-app product SKUs available for the current app and requesting the purchase of an in-app product SKU for the app. */
-    @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreview")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreview")
     @js.native
-    abstract class StorePreview ()
+    open class StorePreview ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreview
     object StorePreview {
@@ -660,9 +660,9 @@ object Store {
     }
     
     /** Provides information about an in-app product, including details about available SKUs. */
-    @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreviewProductInfo")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreviewProductInfo")
     @js.native
-    abstract class StorePreviewProductInfo ()
+    open class StorePreviewProductInfo ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductInfo {
       
@@ -707,9 +707,9 @@ object Store {
     }
     
     /** Contains information about the results of a purchase transaction for an in-app product SKU that was purchased by using the RequestProductPurchaseByProductIdAndSkuIdAsync method. */
-    @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreviewPurchaseResults")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreviewPurchaseResults")
     @js.native
-    abstract class StorePreviewPurchaseResults ()
+    open class StorePreviewPurchaseResults ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewPurchaseResults {
       
@@ -719,9 +719,9 @@ object Store {
     }
     
     /** Provides information about the available SKUs for an in-app product. */
-    @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreviewSkuInfo")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreviewSkuInfo")
     @js.native
-    abstract class StorePreviewSkuInfo ()
+    open class StorePreviewSkuInfo ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewSkuInfo {
       
@@ -823,9 +823,9 @@ object Store {
   }
   
   /** Provides info about a license that is associated with an in-app product. */
-  @JSGlobal("Windows.ApplicationModel.Store.ProductLicense")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.ProductLicense")
   @js.native
-  abstract class ProductLicense ()
+  open class ProductLicense ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Store.ProductLicense {
     
@@ -847,9 +847,9 @@ object Store {
   }
   
   /** Provides localized information that details an in-app product. */
-  @JSGlobal("Windows.ApplicationModel.Store.ProductListing")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.ProductListing")
   @js.native
-  abstract class ProductListing ()
+  open class ProductListing ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Store.ProductListing {
     
@@ -961,9 +961,9 @@ object Store {
   }
   
   /** Contains information detailing the results of an in-app product purchase transaction. */
-  @JSGlobal("Windows.ApplicationModel.Store.PurchaseResults")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.PurchaseResults")
   @js.native
-  abstract class PurchaseResults ()
+  open class PurchaseResults ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults {
     
@@ -985,9 +985,9 @@ object Store {
   }
   
   /** Contains purchase and product information for an unfulfilled consumable in-app product. */
-  @JSGlobal("Windows.ApplicationModel.Store.UnfulfilledConsumable")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Store.UnfulfilledConsumable")
   @js.native
-  abstract class UnfulfilledConsumable ()
+  open class UnfulfilledConsumable ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Store.UnfulfilledConsumable {
     

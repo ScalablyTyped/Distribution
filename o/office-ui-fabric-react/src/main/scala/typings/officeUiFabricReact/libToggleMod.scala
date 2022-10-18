@@ -3,7 +3,7 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.anon.PartialIToggleState
 import typings.officeUiFabricReact.anon.ReadonlyIToggleProps
 import typings.officeUiFabricReact.anon.ReadonlyIToggleState
-import typings.officeUiFabricReact.toggleTypesMod.IToggleProps
+import typings.officeUiFabricReact.libComponentsToggleToggleDottypesMod.IToggleProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +18,7 @@ object libToggleMod {
   @JSImport("office-ui-fabric-react/lib/Toggle", "ToggleBase")
   @js.native
   open class ToggleBase protected ()
-    extends typings.officeUiFabricReact.toggleMod.ToggleBase {
+    extends typings.officeUiFabricReact.libComponentsToggleMod.ToggleBase {
     def this(props: IToggleProps) = this()
   }
   /* static members */

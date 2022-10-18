@@ -2,29 +2,29 @@ package typings.handsontable.anon
 
 import org.scalablytyped.runtime.Instantiable14
 import typings.hyperformula.anon.PartialConfigParams
-import typings.hyperformula.cellContentParserMod.CellContentParser
-import typings.hyperformula.configMod.Config
-import typings.hyperformula.configMod.ConfigParams
-import typings.hyperformula.crudOperationsMod.CrudOperations
-import typings.hyperformula.dependencyGraphMod.DependencyGraph
-import typings.hyperformula.evaluatorMod.Evaluator
-import typings.hyperformula.exporterMod.Exporter
-import typings.hyperformula.functionPluginMod.FunctionPluginDefinition
-import typings.hyperformula.functionRegistryMod.FunctionRegistry
-import typings.hyperformula.functionRegistryMod.FunctionTranslationsPackage
-import typings.hyperformula.i18nMod.TranslationPackage
-import typings.hyperformula.lazilyTransformingAstServiceMod.LazilyTransformingAstService
 import typings.hyperformula.mod.HyperFormula
-import typings.hyperformula.namedExpressionsMod.NamedExpressions
-import typings.hyperformula.searchStrategyMod.ColumnSearchStrategy
-import typings.hyperformula.serializationMod.Serialization
-import typings.hyperformula.serializationMod.SerializedNamedExpression
-import typings.hyperformula.sheetMod.Sheet
-import typings.hyperformula.sheetMod.Sheets
-import typings.hyperformula.statisticsMod.Statistics
-import typings.hyperformula.translationPackageMod.RawTranslationPackage
+import typings.hyperformula.typingsCellContentParserMod.CellContentParser
+import typings.hyperformula.typingsConfigMod.Config
+import typings.hyperformula.typingsConfigMod.ConfigParams
+import typings.hyperformula.typingsCrudOperationsMod.CrudOperations
+import typings.hyperformula.typingsDependencyGraphMod.DependencyGraph
+import typings.hyperformula.typingsEvaluatorMod.Evaluator
+import typings.hyperformula.typingsExporterMod.Exporter
+import typings.hyperformula.typingsI18nMod.TranslationPackage
+import typings.hyperformula.typingsI18nTranslationPackageMod.RawTranslationPackage
+import typings.hyperformula.typingsInterpreterFunctionRegistryMod.FunctionRegistry
+import typings.hyperformula.typingsInterpreterFunctionRegistryMod.FunctionTranslationsPackage
+import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionPluginDefinition
+import typings.hyperformula.typingsLazilyTransformingAstServiceMod.LazilyTransformingAstService
+import typings.hyperformula.typingsLookupSearchStrategyMod.ColumnSearchStrategy
+import typings.hyperformula.typingsNamedExpressionsMod.NamedExpressions
 import typings.hyperformula.typingsParserMod.ParserWithCaching
 import typings.hyperformula.typingsParserMod.Unparser
+import typings.hyperformula.typingsSerializationMod.Serialization
+import typings.hyperformula.typingsSerializationMod.SerializedNamedExpression
+import typings.hyperformula.typingsSheetMod.Sheet
+import typings.hyperformula.typingsSheetMod.Sheets
+import typings.hyperformula.typingsStatisticsMod.Statistics
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -74,10 +74,10 @@ trait TypeofHyperFormula
     *
     * @category Factories
     */
-  def buildEmpty(): typings.hyperformula.hyperFormulaMod.HyperFormula = js.native
-  def buildEmpty(configInput: Unit, namedExpressions: js.Array[SerializedNamedExpression]): typings.hyperformula.hyperFormulaMod.HyperFormula = js.native
-  def buildEmpty(configInput: PartialConfigParams): typings.hyperformula.hyperFormulaMod.HyperFormula = js.native
-  def buildEmpty(configInput: PartialConfigParams, namedExpressions: js.Array[SerializedNamedExpression]): typings.hyperformula.hyperFormulaMod.HyperFormula = js.native
+  def buildEmpty(): typings.hyperformula.typingsHyperFormulaMod.HyperFormula = js.native
+  def buildEmpty(configInput: Unit, namedExpressions: js.Array[SerializedNamedExpression]): typings.hyperformula.typingsHyperFormulaMod.HyperFormula = js.native
+  def buildEmpty(configInput: PartialConfigParams): typings.hyperformula.typingsHyperFormulaMod.HyperFormula = js.native
+  def buildEmpty(configInput: PartialConfigParams, namedExpressions: js.Array[SerializedNamedExpression]): typings.hyperformula.typingsHyperFormulaMod.HyperFormula = js.native
   
   /**
     * Builds the engine for a sheet from a two-dimensional array representation.
@@ -108,14 +108,14 @@ trait TypeofHyperFormula
     *
     * @category Factories
     */
-  def buildFromArray(sheet: Sheet): typings.hyperformula.hyperFormulaMod.HyperFormula = js.native
-  def buildFromArray(sheet: Sheet, configInput: Unit, namedExpressions: js.Array[SerializedNamedExpression]): typings.hyperformula.hyperFormulaMod.HyperFormula = js.native
-  def buildFromArray(sheet: Sheet, configInput: PartialConfigParams): typings.hyperformula.hyperFormulaMod.HyperFormula = js.native
+  def buildFromArray(sheet: Sheet): typings.hyperformula.typingsHyperFormulaMod.HyperFormula = js.native
+  def buildFromArray(sheet: Sheet, configInput: Unit, namedExpressions: js.Array[SerializedNamedExpression]): typings.hyperformula.typingsHyperFormulaMod.HyperFormula = js.native
+  def buildFromArray(sheet: Sheet, configInput: PartialConfigParams): typings.hyperformula.typingsHyperFormulaMod.HyperFormula = js.native
   def buildFromArray(
     sheet: Sheet,
     configInput: PartialConfigParams,
     namedExpressions: js.Array[SerializedNamedExpression]
-  ): typings.hyperformula.hyperFormulaMod.HyperFormula = js.native
+  ): typings.hyperformula.typingsHyperFormulaMod.HyperFormula = js.native
   
   /* private */ var buildFromEngineState: Any = js.native
   
@@ -155,14 +155,14 @@ trait TypeofHyperFormula
     *
     * @category Factories
     */
-  def buildFromSheets(sheets: Sheets): typings.hyperformula.hyperFormulaMod.HyperFormula = js.native
-  def buildFromSheets(sheets: Sheets, configInput: Unit, namedExpressions: js.Array[SerializedNamedExpression]): typings.hyperformula.hyperFormulaMod.HyperFormula = js.native
-  def buildFromSheets(sheets: Sheets, configInput: PartialConfigParams): typings.hyperformula.hyperFormulaMod.HyperFormula = js.native
+  def buildFromSheets(sheets: Sheets): typings.hyperformula.typingsHyperFormulaMod.HyperFormula = js.native
+  def buildFromSheets(sheets: Sheets, configInput: Unit, namedExpressions: js.Array[SerializedNamedExpression]): typings.hyperformula.typingsHyperFormulaMod.HyperFormula = js.native
+  def buildFromSheets(sheets: Sheets, configInput: PartialConfigParams): typings.hyperformula.typingsHyperFormulaMod.HyperFormula = js.native
   def buildFromSheets(
     sheets: Sheets,
     configInput: PartialConfigParams,
     namedExpressions: js.Array[SerializedNamedExpression]
-  ): typings.hyperformula.hyperFormulaMod.HyperFormula = js.native
+  ): typings.hyperformula.typingsHyperFormulaMod.HyperFormula = js.native
   
   /**
     * Returns all of HyperFormula's default [configuration options](../../guide/configuration-options.md).

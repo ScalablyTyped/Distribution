@@ -1,8 +1,8 @@
 package typings.kyUniversal
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ky.optionsMod.NormalizedOptions
-import typings.ky.typesKyMod.KyInstance
+import typings.ky.distributionTypesKyMod.KyInstance
+import typings.ky.distributionTypesOptionsMod.NormalizedOptions
 import typings.std.Request
 import typings.std.Response
 import org.scalablytyped.runtime.StObject

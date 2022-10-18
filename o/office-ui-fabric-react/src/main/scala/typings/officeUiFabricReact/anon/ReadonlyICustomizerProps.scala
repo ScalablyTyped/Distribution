@@ -1,10 +1,10 @@
 package typings.officeUiFabricReact.anon
 
 import typings.uifabricUtilities.anon.ReadonlyICustomizerContex
-import typings.uifabricUtilities.createRefMod.IRefObject
-import typings.uifabricUtilities.customizationsMod.ISettings
-import typings.uifabricUtilities.customizationsMod.ISettingsFunction
-import typings.uifabricUtilities.customizerContextMod.ICustomizerContext
+import typings.uifabricUtilities.libCreateRefMod.IRefObject
+import typings.uifabricUtilities.libCustomizationsCustomizationsMod.ISettings
+import typings.uifabricUtilities.libCustomizationsCustomizationsMod.ISettingsFunction
+import typings.uifabricUtilities.libCustomizationsCustomizerContextMod.ICustomizerContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

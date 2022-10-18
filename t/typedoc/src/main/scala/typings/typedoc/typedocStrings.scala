@@ -1,13 +1,13 @@
 package typings.typedoc
 
-import typings.typedoc.declarationReferenceMod.MeaningKeyword
-import typings.typedoc.entryPointMod.EntryPointStrategy
-import typings.typedoc.modelsTypesMod.TypeContext
-import typings.typedoc.modelsTypesMod.TypeKind
-import typings.typedoc.optionsDeclarationMod.CommentStyle
-import typings.typedoc.optionsDeclarationMod.EmitStrategy
-import typings.typedoc.sortMod.SortStrategy
-import typings.typedoc.typeParameterMod.VarianceModifier
+import typings.typedoc.distLibConverterCommentsDeclarationReferenceMod.MeaningKeyword
+import typings.typedoc.distLibModelsReflectionsTypeParameterMod.VarianceModifier
+import typings.typedoc.distLibModelsTypesMod.TypeContext
+import typings.typedoc.distLibModelsTypesMod.TypeKind
+import typings.typedoc.distLibUtilsEntryPointMod.EntryPointStrategy
+import typings.typedoc.distLibUtilsOptionsDeclarationMod.CommentStyle
+import typings.typedoc.distLibUtilsOptionsDeclarationMod.EmitStrategy
+import typings.typedoc.distLibUtilsSortMod.SortStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -183,10 +183,6 @@ object typedocStrings {
   inline def All: All = "All".asInstanceOf[All]
   
   @js.native
-  sealed trait BindOption extends StObject
-  inline def BindOption: BindOption = "BindOption".asInstanceOf[BindOption]
-  
-  @js.native
   sealed trait ClassMember extends StObject
   inline def ClassMember: ClassMember = "ClassMember".asInstanceOf[ClassMember]
   
@@ -219,10 +215,6 @@ object typedocStrings {
   inline def I: I = "I".asInstanceOf[I]
   
   @js.native
-  sealed trait Infer extends StObject
-  inline def Infer: Infer = "Infer".asInstanceOf[Infer]
-  
-  @js.native
   sealed trait Inheritable extends StObject
   inline def Inheritable: Inheritable = "Inheritable".asInstanceOf[Inheritable]
   
@@ -237,10 +229,6 @@ object typedocStrings {
   @js.native
   sealed trait Plussign extends StObject
   inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
-  
-  @js.native
-  sealed trait S extends StObject
-  inline def S: S = "S".asInstanceOf[S]
   
   @js.native
   sealed trait SignatureContainer extends StObject
@@ -1127,6 +1115,10 @@ object typedocStrings {
   inline def navigationDotend: navigationDotend = "navigation.end".asInstanceOf[navigationDotend]
   
   @js.native
+  sealed trait navigationLinks extends StObject
+  inline def navigationLinks: navigationLinks = "navigationLinks".asInstanceOf[navigationLinks]
+  
+  @js.native
   sealed trait `new`
     extends StObject
        with MeaningKeyword
@@ -1432,6 +1424,10 @@ object typedocStrings {
   inline def showConfig: showConfig = "showConfig".asInstanceOf[showConfig]
   
   @js.native
+  sealed trait sidebarLinks extends StObject
+  inline def sidebarLinks: sidebarLinks = "sidebarLinks".asInstanceOf[sidebarLinks]
+  
+  @js.native
   sealed trait skipErrorChecking extends StObject
   inline def skipErrorChecking: skipErrorChecking = "skipErrorChecking".asInstanceOf[skipErrorChecking]
   
@@ -1448,6 +1444,10 @@ object typedocStrings {
     extends StObject
        with SortStrategy
   inline def `source-order`: `source-order` = "source-order".asInstanceOf[`source-order`]
+  
+  @js.native
+  sealed trait sourceLinkTemplate extends StObject
+  inline def sourceLinkTemplate: sourceLinkTemplate = "sourceLinkTemplate".asInstanceOf[sourceLinkTemplate]
   
   @js.native
   sealed trait square extends StObject
@@ -1548,6 +1548,10 @@ object typedocStrings {
   inline def time: time = "time".asInstanceOf[time]
   
   @js.native
+  sealed trait titleLink extends StObject
+  inline def titleLink: titleLink = "titleLink".asInstanceOf[titleLink]
+  
+  @js.native
   sealed trait top extends StObject
   inline def top: top = "top".asInstanceOf[top]
   
@@ -1632,10 +1636,6 @@ object typedocStrings {
   inline def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
   
   @js.native
-  sealed trait validate extends StObject
-  inline def validate: validate = "validate".asInstanceOf[validate]
-  
-  @js.native
   sealed trait validation extends StObject
   inline def validation: validation = "validation".asInstanceOf[validation]
   
@@ -1702,8 +1702,4 @@ object typedocStrings {
   @js.native
   sealed trait `x-ua-compatible` extends StObject
   inline def `x-ua-compatible`: `x-ua-compatible` = "x-ua-compatible".asInstanceOf[`x-ua-compatible`]
-  
-  @js.native
-  sealed trait zip extends StObject
-  inline def zip: zip = "zip".asInstanceOf[zip]
 }

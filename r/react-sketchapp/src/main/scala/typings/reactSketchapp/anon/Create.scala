@@ -1,14 +1,14 @@
 package typings.reactSketchapp.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.reactSketchapp.libSharedStylesTextStylesMod.Options
+import typings.reactSketchapp.libSharedStylesTextStylesMod.RegisteredStyle
+import typings.reactSketchapp.libSharedStylesTextStylesMod.StyleHash
 import typings.reactSketchapp.libTypesMod.PlatformBridge
 import typings.reactSketchapp.libTypesMod.SketchDocument
 import typings.reactSketchapp.libTypesMod.SketchDocumentData
 import typings.reactSketchapp.libTypesMod.TextStyle
 import typings.reactSketchapp.libTypesMod.WrappedSketchDocument
-import typings.reactSketchapp.sharedStylesTextStylesMod.Options
-import typings.reactSketchapp.sharedStylesTextStylesMod.RegisteredStyle
-import typings.reactSketchapp.sharedStylesTextStylesMod.StyleHash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

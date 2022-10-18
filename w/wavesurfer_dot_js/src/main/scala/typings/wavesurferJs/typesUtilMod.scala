@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import typings.wavesurferJs.anon.Typeofdebounce
-import typings.wavesurferJs.utilMod.Observer
-import typings.wavesurferJs.xhrMod.XHROptions
+import typings.wavesurferJs.srcUtilMod.Observer
+import typings.wavesurferJs.typesXhrMod.XHROptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,7 +67,7 @@ object typesUtilMod {
   
   trait WaveSurferUtil extends StObject {
     
-    var Observer: Instantiable0[typings.wavesurferJs.utilMod.Observer]
+    var Observer: Instantiable0[typings.wavesurferJs.srcUtilMod.Observer]
     
     def absMax(values: js.Array[Double]): Double
     

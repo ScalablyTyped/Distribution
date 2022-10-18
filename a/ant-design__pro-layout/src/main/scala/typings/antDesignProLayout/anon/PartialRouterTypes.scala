@@ -1,8 +1,8 @@
 package typings.antDesignProLayout.anon
 
-import typings.antDesignProLayout.typingsMod.Route
-import typings.antDesignProLayout.typingsMod.StaticContext
-import typings.antDesignProLayout.typingsMod.`match`
+import typings.antDesignProLayout.esTypingsMod.Route
+import typings.antDesignProLayout.esTypingsMod.StaticContext
+import typings.antDesignProLayout.esTypingsMod.`match`
 import typings.history.mod.History
 import typings.history.mod.Location
 import typings.std.Record
@@ -19,7 +19,7 @@ trait PartialRouterTypes extends StObject {
   
   var location: js.UndefOr[Location | Pathname] = js.undefined
   
-  var `match`: js.UndefOr[typings.antDesignProLayout.typingsMod.`match`[Record[String, Any]]] = js.undefined
+  var `match`: js.UndefOr[typings.antDesignProLayout.esTypingsMod.`match`[Record[String, Any]]] = js.undefined
   
   var route: js.UndefOr[Route] = js.undefined
   

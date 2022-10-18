@@ -1,6 +1,6 @@
 package typings.quillDelta
 
-import typings.quillDelta.opMod.Op
+import typings.quillDelta.distOpMod.Op
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

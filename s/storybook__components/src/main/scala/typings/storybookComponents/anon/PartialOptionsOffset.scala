@@ -1,6 +1,6 @@
 package typings.storybookComponents.anon
 
-import typings.storybookComponents.popperjsCoreLibModifiersOffsetMod.Offset
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibModifiersOffsetMod`.Offset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

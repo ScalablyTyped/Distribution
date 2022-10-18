@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,10 +37,10 @@ trait IServerConfig
       ServerResponse[IncomingMessage]
     ]
   ]) | (typings.node.httpsMod.Server[
-    Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+    Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
     Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-      typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
     ]
   ]) | (js.Array[
     (Server[
@@ -50,10 +50,10 @@ trait IServerConfig
         ServerResponse[IncomingMessage]
       ]
     ]) | (typings.node.httpsMod.Server[
-      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
       Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ]
     ])
   ])
@@ -115,10 +115,10 @@ object IServerConfig {
         ServerResponse[IncomingMessage]
       ]
     ]) | (typings.node.httpsMod.Server[
-      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
       Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ]
     ]) | (js.Array[
       (Server[
@@ -128,10 +128,10 @@ object IServerConfig {
           ServerResponse[IncomingMessage]
         ]
       ]) | (typings.node.httpsMod.Server[
-        Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+        Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
         Instantiable1[
           /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-          typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
         ]
       ])
     ])
@@ -158,10 +158,10 @@ object IServerConfig {
             ServerResponse[IncomingMessage]
           ]
         ]) | (typings.node.httpsMod.Server[
-          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
           Instantiable1[
             /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+            typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
           ]
         ]) | (js.Array[
           (Server[
@@ -171,10 +171,10 @@ object IServerConfig {
               ServerResponse[IncomingMessage]
             ]
           ]) | (typings.node.httpsMod.Server[
-            Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+            Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
             Instantiable1[
               /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-              typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+              typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
             ]
           ])
         ])
@@ -188,10 +188,10 @@ object IServerConfig {
             ServerResponse[IncomingMessage]
           ]
         ]) | (typings.node.httpsMod.Server[
-          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
           Instantiable1[
             /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+            typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
           ]
         ]))*
     ): Self = StObject.set(x, "httpServer", js.Array(value*))

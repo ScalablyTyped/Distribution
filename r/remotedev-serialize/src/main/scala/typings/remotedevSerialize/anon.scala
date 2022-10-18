@@ -1,7 +1,6 @@
 package typings.remotedevSerialize
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.immutable.mod.Collection
 import typings.immutable.mod.Collection.Keyed
 import typings.immutable.mod.Collection.Set
@@ -1400,9 +1399,7 @@ object anon {
     def apply[K, V](): Map[K, V] = js.native
     def apply[K, V](collection: js.Iterable[js.Tuple2[K, V]]): Map[K, V] = js.native
     def apply[K /* <: String | js.Symbol */, V](
-      obj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in K ]:? V}
-      */ typings.remotedevSerialize.remotedevSerializeStrings.TypeofMap & TopLevel[Any]
+      obj: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]:? V} */ js.Any
     ): Map[K, V] = js.native
     
     /**

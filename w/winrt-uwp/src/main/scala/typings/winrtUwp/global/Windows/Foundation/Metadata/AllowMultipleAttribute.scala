@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates that multiple instances of a custom attribute can be applied to a target. */
-@JSGlobal("Windows.Foundation.Metadata.AllowMultipleAttribute")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.Metadata.AllowMultipleAttribute")
 @js.native
-abstract class AllowMultipleAttribute ()
+open class AllowMultipleAttribute ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Metadata.AllowMultipleAttribute

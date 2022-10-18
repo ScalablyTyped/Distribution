@@ -1,6 +1,6 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.iconMod.IconSize
+import typings.fundamentalReact.libIconIconMod.IconSize
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

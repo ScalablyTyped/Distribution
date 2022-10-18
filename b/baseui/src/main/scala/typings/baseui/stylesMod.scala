@@ -1,15 +1,15 @@
 package typings.baseui
 
-import typings.baseui.styledMod.StyleFn
-import typings.baseui.styledMod.UseStyletronFn
-import typings.baseui.styledMod.WithStyleFn
+import typings.baseui.stylesStyledMod.StyleFn
+import typings.baseui.stylesStyledMod.UseStyletronFn
+import typings.baseui.stylesStyledMod.WithStyleFn
+import typings.baseui.stylesThemeProviderMod.ThemeProviderProps
 import typings.baseui.stylesTypesMod.Theme
-import typings.baseui.themeProviderMod.ThemeProviderProps
 import typings.baseui.themesTypesMod.Border
 import typings.react.mod.Consumer
 import typings.react.mod.FC
 import typings.react.mod.ReactElement
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import typings.styletronStandard.mod.StyleObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,6 +56,12 @@ object stylesMod {
   
   inline def withWrapper[C /* <: StyletronComponent[Any, Any] */, Props](
     StyledElement: C,
-    wrapperFn: js.Function1[/* component */ C, js.Function1[/* props */ Props & Any, ReactElement]]
-  ): StyletronComponent[Any, Any & Props] = (^.asInstanceOf[js.Dynamic].applyDynamic("withWrapper")(StyledElement.asInstanceOf[js.Any], wrapperFn.asInstanceOf[js.Any])).asInstanceOf[StyletronComponent[Any, Any & Props]]
+    wrapperFn: js.Function1[
+      /* component */ C, 
+      js.Function1[
+        /* props */ Props & (/* import warning: importer.ImportType#apply Failed type conversion: C extends styletron-react.styletron-react/lib/types.StyletronComponent<any, infer CP> ? CP : never */ js.Any), 
+        ReactElement
+      ]
+    ]
+  ): /* import warning: importer.ImportType#apply Failed type conversion: C extends styletron-react.styletron-react/lib/types.StyletronComponent<infer D, infer P> ? styletron-react.styletron-react/lib/types.StyletronComponent<D, P & Props> : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("withWrapper")(StyledElement.asInstanceOf[js.Any], wrapperFn.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: C extends styletron-react.styletron-react/lib/types.StyletronComponent<infer D, infer P> ? styletron-react.styletron-react/lib/types.StyletronComponent<D, P & Props> : never */ js.Any]
 }

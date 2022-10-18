@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__inspector-extension
 
-Typings are for version 2.2.7
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Code Inspector Extension
@@ -10,10 +10,10 @@ JupyterLab - Code Inspector Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/inspector-extension |
 | Keywords           | - |
-| # releases         | 131 |
-| # dependents       | 1 |
-| # downloads        | 1465240 |
-| # stars            | 0 |
+| # releases         | 144 |
+| # dependents       | 0.0 |
+| # downloads        | 193079.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

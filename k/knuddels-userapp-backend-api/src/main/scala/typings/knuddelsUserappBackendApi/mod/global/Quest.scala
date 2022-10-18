@@ -22,5 +22,4 @@ open class Quest () extends StObject {
     * @since AppServer 82290, ChatServer 82290
     */
   def setSolved(): Unit = js.native
-  def setSolved(count: Double): Unit = js.native
 }

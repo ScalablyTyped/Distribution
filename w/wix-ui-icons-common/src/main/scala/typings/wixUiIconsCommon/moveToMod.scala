@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsMoveToMod.MoveToProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object moveToMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/MoveTo", JSImport.Default)
+  @JSImport("wix-ui-icons-common/MoveTo", JSImport.Default)
   @js.native
   val default: FC[MoveToProps] = js.native
-  
-  trait MoveToProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object MoveToProps {
-    
-    inline def apply(): MoveToProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[MoveToProps]
-    }
-    
-    extension [Self <: MoveToProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[MoveToProps]
   

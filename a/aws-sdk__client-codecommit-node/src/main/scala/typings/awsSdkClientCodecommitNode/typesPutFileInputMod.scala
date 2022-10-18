@@ -3,8 +3,8 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EXECUTABLE
 import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.NORMAL
 import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.SYMLINK
-import typings.awsSdkClientCodecommitNode.inputTypesUnionMod.InputTypesUnion
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientCodecommitNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

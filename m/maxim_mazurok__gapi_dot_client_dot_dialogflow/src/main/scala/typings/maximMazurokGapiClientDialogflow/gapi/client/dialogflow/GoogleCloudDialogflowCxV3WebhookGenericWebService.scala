@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +19,7 @@ trait GoogleCloudDialogflowCxV3WebhookGenericWebService extends StObject {
   
   /** The HTTP request headers to send together with webhook requests. */
   var requestHeaders: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3WebhookGenericWebService & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Required. The webhook URI for receiving POST requests. It must use https protocol. */
@@ -51,9 +48,7 @@ object GoogleCloudDialogflowCxV3WebhookGenericWebService {
     inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     inline def setRequestHeaders(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3WebhookGenericWebService & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
     inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)

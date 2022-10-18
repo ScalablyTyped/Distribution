@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `383` extends StObject {
   
-  /** The unique identifier of the migration. */
-  var migration_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['migration-id'] */ js.Any
+  /** Response */
+  var `200`: Content341
 }
 object `383` {
   
-  inline def apply(
-    migration_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['migration-id'] */ js.Any
-  ): `383` = {
-    val __obj = js.Dynamic.literal(migration_id = migration_id.asInstanceOf[js.Any])
+  inline def apply(`200`: Content341): `383` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`383`]
   }
   
   extension [Self <: `383`](x: Self) {
     
-    inline def setMigration_id(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['migration-id'] */ js.Any
-    ): Self = StObject.set(x, "migration_id", value.asInstanceOf[js.Any])
+    inline def set200(value: Content341): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
   }
 }

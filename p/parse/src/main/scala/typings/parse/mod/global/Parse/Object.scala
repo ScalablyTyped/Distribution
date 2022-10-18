@@ -1,7 +1,6 @@
 package typings.parse.mod.global.Parse
 
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.TopLevel
 import typings.parse.mod.global.Parse.Object.DestroyOptions
 import typings.parse.mod.global.Parse.Object.FetchOptions
 import typings.parse.mod.global.Parse.Object.SaveOptions
@@ -10,7 +9,6 @@ import typings.parse.mod.global.Parse.Object.ToJSON
 import typings.parse.parseBooleans.`false`
 import typings.std.Extract
 import typings.std.Pick
-import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -121,7 +119,9 @@ trait Object[T /* <: Attributes */] extends StObject {
   
   def pinWithName(name: String): js.Promise[Unit] = js.native
   
-  def relation[R /* <: Object[Attributes] */, K /* <: Extract[/* keyof T */ String, String] */](attr: K): Relation[this.type, R] = js.native
+  def relation[R /* <: Object[Attributes] */, K /* <: Extract[/* keyof T */ String, String] */](
+    attr: /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends parse.parse.<global>.Parse.Relation<parse.parse.<global>.Parse.Object<parse.parse.<global>.Parse.Attributes>, parse.parse.<global>.Parse.Object<parse.parse.<global>.Parse.Attributes>> ? K : never */ js.Any
+  ): Relation[this.type, R] = js.native
   
   var remove: /* import warning: importer.ImportType#apply Failed type conversion: this['add'] */ js.Any = js.native
   
@@ -132,27 +132,29 @@ trait Object[T /* <: Attributes */] extends StObject {
   // "Pick<T, K> | T" is a trick to keep IntelliSense working, see:
   // https://github.com/DefinitelyTyped/DefinitelyTyped/blob/3bdadbf9583c2335197c7e999b9a30880e055f62/types/react/index.d.ts#L482
   def save[K /* <: Extract[/* keyof T */ String, String] */](): js.Promise[this.type] = js.native
-  def save[K /* <: Extract[/* keyof T */ String, String] */](attrs: T): js.Promise[this.type] = js.native
-  def save[K /* <: Extract[/* keyof T */ String, String] */](attrs: T, options: SaveOptions): js.Promise[this.type] = js.native
+  def save[K /* <: Extract[/* keyof T */ String, String] */](attrs: (Pick[T, K]) | T): js.Promise[this.type] = js.native
+  def save[K /* <: Extract[/* keyof T */ String, String] */](attrs: (Pick[T, K]) | T, options: SaveOptions): js.Promise[this.type] = js.native
   def save[K /* <: Extract[/* keyof T */ String, String] */](attrs: Null, options: SaveOptions): js.Promise[this.type] = js.native
   def save[K /* <: Extract[/* keyof T */ String, String] */](attrs: Unit, options: SaveOptions): js.Promise[this.type] = js.native
-  def save[K /* <: Extract[/* keyof T */ String, String] */](attrs: Pick[T, K]): js.Promise[this.type] = js.native
-  def save[K /* <: Extract[/* keyof T */ String, String] */](attrs: Pick[T, K], options: SaveOptions): js.Promise[this.type] = js.native
-  def save[K /* <: Extract[/* keyof T */ String, String] */](key: K, value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any): js.Promise[this.type] = js.native
   def save[K /* <: Extract[/* keyof T */ String, String] */](
     key: K,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends undefined ? never : T[K] */ js.Any
+  ): js.Promise[this.type] = js.native
+  def save[K /* <: Extract[/* keyof T */ String, String] */](
+    key: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends undefined ? never : T[K] */ js.Any,
     options: SaveOptions
   ): js.Promise[this.type] = js.native
   
-  def set[K /* <: Extract[/* keyof T */ String, String] */](attrs: T): this.type | `false` = js.native
-  def set[K /* <: Extract[/* keyof T */ String, String] */](attrs: T, options: SetOptions): this.type | `false` = js.native
-  def set[K /* <: Extract[/* keyof T */ String, String] */](attrs: Pick[T, K]): this.type | `false` = js.native
-  def set[K /* <: Extract[/* keyof T */ String, String] */](attrs: Pick[T, K], options: SetOptions): this.type | `false` = js.native
-  def set[K /* <: Extract[/* keyof T */ String, String] */](key: K, value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any): this.type | `false` = js.native
+  def set[K /* <: Extract[/* keyof T */ String, String] */](attrs: (Pick[T, K]) | T): this.type | `false` = js.native
+  def set[K /* <: Extract[/* keyof T */ String, String] */](attrs: (Pick[T, K]) | T, options: SetOptions): this.type | `false` = js.native
   def set[K /* <: Extract[/* keyof T */ String, String] */](
     key: K,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends undefined ? never : T[K] */ js.Any
+  ): this.type | `false` = js.native
+  def set[K /* <: Extract[/* keyof T */ String, String] */](
+    key: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends undefined ? never : T[K] */ js.Any,
     options: SetOptions
   ): this.type | `false` = js.native
   
@@ -217,21 +219,16 @@ object Object extends Shortcut {
   }
   
   // From https://github.com/parse-community/Parse-SDK-JS/blob/master/src/encode.js
-  /* Rewritten from type alias, can be one of: 
-    - T
-    - typings.parse.mod.global.Parse.Object.ToJSON[T]
-    - // This recursion is unsupported in <=3.6
-  js.Array[scala.Any]
-    - java.lang.String
-    - typings.parse.anon.Iso
-    - typings.std.ReturnType[
-  / * import warning: importer.ImportType#apply Failed type conversion: T['toJSON'] * / js.Any]
-    - typings.parse.mod.global.Parse.Pointer
-  */
-  type Encode[T] = _Encode[T] | (// This recursion is unsupported in <=3.6
-  js.Array[Any]) | (ReturnType[
-    /* import warning: importer.ImportType#apply Failed type conversion: T['toJSON'] */ js.Any
-  ]) | T | ToJSON[T] | String
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends parse.parse.<global>.Parse.Object<parse.parse.<global>.Parse.Attributes> ? std.ReturnType<T['toJSON']> | parse.parse.<global>.Parse.Pointer : T extends parse.parse.<global>.Parse.ACL | parse.parse.<global>.Parse.GeoPoint | parse.parse.<global>.Parse.Polygon | parse.parse.<global>.Parse.Relation<parse.parse.<global>.Parse.Object<parse.parse.<global>.Parse.Attributes>, parse.parse.<global>.Parse.Object<parse.parse.<global>.Parse.Attributes>> | parse.parse.<global>.Parse.File ? std.ReturnType<T['toJSON']> : T extends std.Date ? {  __type :'Date',   iso :string} : T extends std.RegExp ? string : T extends std.Array<infer R> ? // This recursion is unsupported in <=3.6
+  std.Array<parse.parse.<global>.Parse.Object.Encode<R>> : T extends object ? parse.parse.<global>.Parse.Object.ToJSON<T> : T
+    }}}
+    */
+  @js.native
+  trait Encode[T] extends StObject
   
   trait FetchAllOptions
     extends StObject
@@ -307,23 +304,15 @@ object Object extends Shortcut {
     }
   }
   
-  type ToJSON[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: parse.parse.<global>.Parse.Object.Encode<T[K]>}
-    */ typings.parse.parseStrings.ToJSON & TopLevel[T]
-  
-  trait _Encode[T] extends StObject
-  object _Encode {
-    
-    inline def Iso(iso: String): typings.parse.anon.Iso = {
-      val __obj = js.Dynamic.literal(__type = "Date", iso = iso.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.parse.anon.Iso]
-    }
-    
-    inline def Pointer(__type: String, className: String, objectId: String): typings.parse.mod.global.Parse.Pointer = {
-      val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.parse.mod.global.Parse.Pointer]
-    }
-  }
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]: parse.parse.<global>.Parse.Object.Encode<T[K]>}
+    }}}
+    */
+  @js.native
+  trait ToJSON[T] extends StObject
   
   type _To = js.Object & ObjectConstructor
   

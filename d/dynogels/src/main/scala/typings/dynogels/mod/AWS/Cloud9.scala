@@ -1,6 +1,6 @@
 package typings.dynogels.mod.AWS
 
-import typings.awsSdk.cloud9Mod.ClientConfiguration
+import typings.awsSdk.clientsCloud9Mod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

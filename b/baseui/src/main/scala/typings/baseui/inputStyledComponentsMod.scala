@@ -13,7 +13,7 @@ import typings.baseui.baseuiStrings.div
 import typings.baseui.baseuiStrings.input
 import typings.baseui.inputTypesMod.SharedProps
 import typings.react.mod.ForwardRefExoticComponent
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import typings.styletronStandard.mod.StyleObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

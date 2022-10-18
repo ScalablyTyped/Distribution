@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class PointLightShadow protected ()
   extends typings.three.mod.PointLightShadow {
-  def this(camera: typings.three.cameraMod.Camera) = this()
+  def this(camera: typings.three.srcCamerasCameraMod.Camera) = this()
 }

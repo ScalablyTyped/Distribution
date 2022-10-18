@@ -1,7 +1,7 @@
 package typings.fluentLangneg
 
 import typings.fluentLangneg.anon.ReadonlyArraystring
-import typings.fluentLangneg.negotiateLanguagesMod.NegotiateLanguagesOptions
+import typings.fluentLangneg.esmNegotiateLanguagesMod.NegotiateLanguagesOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

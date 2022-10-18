@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-uri-escape
 
-Typings are for version 3.170.0
+Typings are for version 3.188.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/util-uri-escape/latest.svg)](https://www.npmjs.com/package/@aws-sdk/util-uri-escape) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/util-uri-escape.svg)](https://www.npmjs.com/package/@aws-sd

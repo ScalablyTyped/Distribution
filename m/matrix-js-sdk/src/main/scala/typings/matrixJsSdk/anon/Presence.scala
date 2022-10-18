@@ -1,25 +1,27 @@
 package typings.matrixJsSdk.anon
 
-import typings.matrixJsSdk.mod.EventContentTypeMessage
-import typings.matrixJsSdk.mod.EventType
-import typings.matrixJsSdk.mod.MatrixEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Presence extends StObject {
   
-  var presence: MatrixEvent[EventContentTypeMessage, EventType]
+  var presence: String
+  
+  // One of "online", "offline" or "unavailable"
+  var status_msg: String
 }
 object Presence {
   
-  inline def apply(presence: MatrixEvent[EventContentTypeMessage, EventType]): Presence = {
-    val __obj = js.Dynamic.literal(presence = presence.asInstanceOf[js.Any])
+  inline def apply(presence: String, status_msg: String): Presence = {
+    val __obj = js.Dynamic.literal(presence = presence.asInstanceOf[js.Any], status_msg = status_msg.asInstanceOf[js.Any])
     __obj.asInstanceOf[Presence]
   }
   
   extension [Self <: Presence](x: Self) {
     
-    inline def setPresence(value: MatrixEvent[EventContentTypeMessage, EventType]): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
+    inline def setPresence(value: String): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
+    
+    inline def setStatus_msg(value: String): Self = StObject.set(x, "status_msg", value.asInstanceOf[js.Any])
   }
 }

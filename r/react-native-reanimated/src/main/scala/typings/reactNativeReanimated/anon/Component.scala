@@ -1,6 +1,6 @@
 package typings.reactNativeReanimated.anon
 
-import typings.reactNativeReanimated.jsReanimatedMod.JSReanimatedComponent
+import typings.reactNativeReanimated.libTypesReanimated2JsReanimatedMod.JSReanimatedComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

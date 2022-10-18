@@ -171,7 +171,7 @@ object RadioControlValueAccessor {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     RadioControlValueAccessor, 
-    String, 
+    /* input[type=radio][formControlName],input[type=radio][formControl],input[type=radio][ngModel] */ String, 
     scala.Nothing, 
     typings.angularForms.anon.FormControlName, 
     js.Object, 
@@ -182,7 +182,7 @@ object RadioControlValueAccessor {
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       RadioControlValueAccessor, 
-      String, 
+      /* input[type=radio][formControlName],input[type=radio][formControl],input[type=radio][ngModel] */ String, 
       scala.Nothing, 
       typings.angularForms.anon.FormControlName, 
       js.Object, 

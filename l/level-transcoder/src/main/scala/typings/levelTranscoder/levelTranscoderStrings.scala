@@ -1,6 +1,6 @@
 package typings.levelTranscoder
 
-import typings.levelTranscoder.encodingMod.KnownEncodingName
+import typings.levelTranscoder.libEncodingMod.KnownEncodingName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

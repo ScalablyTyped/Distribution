@@ -6,6 +6,8 @@ import typings.http2Wrapper.anon.AgentOptionsproxyOptionsPMaxCachedTlsSessions
 import typings.http2Wrapper.anon.CreateResolveProtocol
 import typings.http2Wrapper.anon.Http
 import typings.http2Wrapper.http2WrapperBooleans.`false`
+import typings.node.AbortSignal
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.eventsMod.EventEmitter
@@ -24,8 +26,8 @@ import typings.node.http2Mod.Settings
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.netMod.LookupFunction
-import typings.node.nodeNetMod.Socket
-import typings.node.nodeUrlMod.URL
+import typings.node.nodeColonnetMod.Socket
+import typings.node.nodeColonurlMod.URL
 import typings.node.streamMod.ReadableOptions
 import typings.node.tlsMod.ConnectionOptions
 import typings.node.tlsMod.KeyObject
@@ -33,7 +35,6 @@ import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureVersion
 import typings.node.tlsMod.TLSSocket
 import typings.node.urlMod.URL_
-import typings.std.AbortSignal
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -233,7 +234,7 @@ object mod {
     authority: String,
     listener: js.Function2[
       /* session */ ClientHttp2Session, 
-      /* socket */ Socket | typings.node.nodeTlsMod.TLSSocket, 
+      /* socket */ Socket | typings.node.nodeColontlsMod.TLSSocket, 
       Unit
     ]
   ): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
@@ -242,7 +243,7 @@ object mod {
     options: Unit,
     listener: js.Function2[
       /* session */ ClientHttp2Session, 
-      /* socket */ Socket | typings.node.nodeTlsMod.TLSSocket, 
+      /* socket */ Socket | typings.node.nodeColontlsMod.TLSSocket, 
       Unit
     ]
   ): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
@@ -252,7 +253,7 @@ object mod {
     options: ClientSessionOptions,
     listener: js.Function2[
       /* session */ ClientHttp2Session, 
-      /* socket */ Socket | typings.node.nodeTlsMod.TLSSocket, 
+      /* socket */ Socket | typings.node.nodeColontlsMod.TLSSocket, 
       Unit
     ]
   ): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
@@ -262,7 +263,7 @@ object mod {
     options: SecureClientSessionOptions,
     listener: js.Function2[
       /* session */ ClientHttp2Session, 
-      /* socket */ Socket | typings.node.nodeTlsMod.TLSSocket, 
+      /* socket */ Socket | typings.node.nodeColontlsMod.TLSSocket, 
       Unit
     ]
   ): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
@@ -271,7 +272,7 @@ object mod {
     authority: URL,
     listener: js.Function2[
       /* session */ ClientHttp2Session, 
-      /* socket */ Socket | typings.node.nodeTlsMod.TLSSocket, 
+      /* socket */ Socket | typings.node.nodeColontlsMod.TLSSocket, 
       Unit
     ]
   ): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
@@ -280,7 +281,7 @@ object mod {
     options: Unit,
     listener: js.Function2[
       /* session */ ClientHttp2Session, 
-      /* socket */ Socket | typings.node.nodeTlsMod.TLSSocket, 
+      /* socket */ Socket | typings.node.nodeColontlsMod.TLSSocket, 
       Unit
     ]
   ): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
@@ -290,7 +291,7 @@ object mod {
     options: ClientSessionOptions,
     listener: js.Function2[
       /* session */ ClientHttp2Session, 
-      /* socket */ Socket | typings.node.nodeTlsMod.TLSSocket, 
+      /* socket */ Socket | typings.node.nodeColontlsMod.TLSSocket, 
       Unit
     ]
   ): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
@@ -300,7 +301,7 @@ object mod {
     options: SecureClientSessionOptions,
     listener: js.Function2[
       /* session */ ClientHttp2Session, 
-      /* socket */ Socket | typings.node.nodeTlsMod.TLSSocket, 
+      /* socket */ Socket | typings.node.nodeColontlsMod.TLSSocket, 
       Unit
     ]
   ): ClientHttp2Session = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(authority.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[ClientHttp2Session]
@@ -1475,12 +1476,7 @@ object mod {
       inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
       inline def setLookup(
-        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-              /* address */ String, 
-              /* family */ Double, 
-              Unit
-            ]) => Unit
+        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
       ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
       
       inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
@@ -1888,12 +1884,7 @@ object mod {
       inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
       inline def setLookup(
-        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-              /* address */ String, 
-              /* family */ Double, 
-              Unit
-            ]) => Unit
+        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
       ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
       
       inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)

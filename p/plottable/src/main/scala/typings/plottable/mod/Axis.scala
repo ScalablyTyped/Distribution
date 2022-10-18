@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("plottable", "Axis")
 @js.native
 open class Axis[D] protected ()
-  extends typings.plottable.axisMod.Axis[D] {
+  extends typings.plottable.buildSrcAxesAxisMod.Axis[D] {
   /**
     * Constructs an Axis.
     * An Axis is a visual representation of a Scale.
@@ -17,8 +17,8 @@ open class Axis[D] protected ()
     * @param {AxisOrientation} orientation Orientation of this Axis.
     */
   def this(
-    scale: typings.plottable.scaleMod.Scale[D, Double],
-    orientation: typings.plottable.axisMod.AxisOrientation
+    scale: typings.plottable.buildSrcScalesScaleMod.Scale[D, Double],
+    orientation: typings.plottable.buildSrcAxesAxisMod.AxisOrientation
   ) = this()
 }
 /* static members */

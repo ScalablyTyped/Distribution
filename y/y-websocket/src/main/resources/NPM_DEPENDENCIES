@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "y-websocket" : "1.4.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "y-websocket" : "1.4.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

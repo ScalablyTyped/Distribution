@@ -1,7 +1,7 @@
 package typings.redisTimeSeries.anon
 
-import typings.redisTimeSeries.commandsMod.SampleRawReply
-import typings.redisTimeSeries.commandsMod.SampleReply
+import typings.redisTimeSeries.distCommandsMod.SampleRawReply
+import typings.redisTimeSeries.distCommandsMod.SampleReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.dwt.anon
 
-import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPixelFlavor
-import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapSupportedSizes
-import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTUnitType
+import typings.dwt.dynamsoftDotEnumMod.DynamsoftEnums.EnumDWTCapPixelFlavor
+import typings.dwt.dynamsoftDotEnumMod.DynamsoftEnums.EnumDWTCapSupportedSizes
+import typings.dwt.dynamsoftDotEnumMod.DynamsoftEnums.EnumDWTUnitType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

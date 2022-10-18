@@ -1,7 +1,6 @@
 package typings.baseui.popoverTypesMod
 
-import typings.baseui.anon.`256`
-import typings.baseui.layerTypesMod.TetherPlacement
+import typings.baseui.anon.`253`
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,10 +19,10 @@ trait StatefulPopoverProps
   var content: ReactNode | StatefulContentRenderProp
   
   /** Whether to hide the popover when the user clicks anywhere outside the trigger/popover. */
-  var dismissOnClickOutside: Boolean
+  var dismissOnClickOutside: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to hide the popover when the user presses the escape key. */
-  var dismissOnEsc: Boolean
+  var dismissOnEsc: js.UndefOr[Boolean] = js.undefined
   
   /** Initial state populated into the component */
   var initialState: js.UndefOr[State] = js.undefined
@@ -39,13 +38,8 @@ trait StatefulPopoverProps
 }
 object StatefulPopoverProps {
   
-  inline def apply(
-    dismissOnClickOutside: Boolean,
-    dismissOnEsc: Boolean,
-    placement: TetherPlacement,
-    triggerType: TriggerType
-  ): StatefulPopoverProps = {
-    val __obj = js.Dynamic.literal(dismissOnClickOutside = dismissOnClickOutside.asInstanceOf[js.Any], dismissOnEsc = dismissOnEsc.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
+  inline def apply(): StatefulPopoverProps = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatefulPopoverProps]
   }
   
@@ -57,13 +51,17 @@ object StatefulPopoverProps {
     
     inline def setContent(value: ReactNode | StatefulContentRenderProp): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setContentFunction1(value: /* a */ `256` => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+    inline def setContentFunction1(value: /* a */ `253` => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setDismissOnClickOutside(value: Boolean): Self = StObject.set(x, "dismissOnClickOutside", value.asInstanceOf[js.Any])
     
+    inline def setDismissOnClickOutsideUndefined: Self = StObject.set(x, "dismissOnClickOutside", js.undefined)
+    
     inline def setDismissOnEsc(value: Boolean): Self = StObject.set(x, "dismissOnEsc", value.asInstanceOf[js.Any])
+    
+    inline def setDismissOnEscUndefined: Self = StObject.set(x, "dismissOnEsc", js.undefined)
     
     inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     

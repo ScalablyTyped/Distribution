@@ -1,34 +1,33 @@
 package typings.monocleTs
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.applicativeMod.Applicative
-import typings.fpTs.applicativeMod.Applicative1
-import typings.fpTs.applicativeMod.Applicative2
-import typings.fpTs.applicativeMod.Applicative2C
-import typings.fpTs.applicativeMod.Applicative3
-import typings.fpTs.categoryMod.Category2
-import typings.fpTs.eitherMod.Either_
-import typings.fpTs.eqMod.Eq
-import typings.fpTs.foldableMod.Foldable
-import typings.fpTs.foldableMod.Foldable1
-import typings.fpTs.foldableMod.Foldable2
-import typings.fpTs.foldableMod.Foldable3
-import typings.fpTs.functionMod.Predicate
-import typings.fpTs.functionMod.Refinement
-import typings.fpTs.functorMod.Functor
-import typings.fpTs.functorMod.Functor1
-import typings.fpTs.functorMod.Functor2
-import typings.fpTs.functorMod.Functor3
-import typings.fpTs.invariantMod.Invariant2
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.optionMod.Option_
-import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
-import typings.fpTs.readonlyRecordMod.ReadonlyRecord_
-import typings.fpTs.semigroupoidMod.Semigroupoid2
-import typings.fpTs.traversableMod.Traversable
-import typings.fpTs.traversableMod.Traversable1
-import typings.fpTs.traversableMod.Traversable2
-import typings.fpTs.traversableMod.Traversable3
+import typings.fpTs.libApplicativeMod.Applicative
+import typings.fpTs.libApplicativeMod.Applicative1
+import typings.fpTs.libApplicativeMod.Applicative2
+import typings.fpTs.libApplicativeMod.Applicative2C
+import typings.fpTs.libApplicativeMod.Applicative3
+import typings.fpTs.libCategoryMod.Category2
+import typings.fpTs.libEitherMod.Either_
+import typings.fpTs.libEqMod.Eq
+import typings.fpTs.libFoldableMod.Foldable
+import typings.fpTs.libFoldableMod.Foldable1
+import typings.fpTs.libFoldableMod.Foldable2
+import typings.fpTs.libFoldableMod.Foldable3
+import typings.fpTs.libFunctionMod.Predicate
+import typings.fpTs.libFunctionMod.Refinement
+import typings.fpTs.libFunctorMod.Functor
+import typings.fpTs.libFunctorMod.Functor1
+import typings.fpTs.libFunctorMod.Functor2
+import typings.fpTs.libFunctorMod.Functor3
+import typings.fpTs.libInvariantMod.Invariant2
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libOptionMod.Option_
+import typings.fpTs.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
+import typings.fpTs.libReadonlyRecordMod.ReadonlyRecord_
+import typings.fpTs.libSemigroupoidMod.Semigroupoid2
+import typings.fpTs.libTraversableMod.Traversable
+import typings.fpTs.libTraversableMod.Traversable1
+import typings.fpTs.libTraversableMod.Traversable2
+import typings.fpTs.libTraversableMod.Traversable3
 import typings.monocleTs.monocleTsStrings.At
 import typings.monocleTs.monocleTsStrings.Index
 import typings.monocleTs.monocleTsStrings.Iso
@@ -697,17 +696,13 @@ object mod {
         /* props */ js.Array[/* keyof S */ String], 
         Lens_[
           S, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof S ]: S[K]}
-      */ typings.monocleTs.monocleTsStrings.fromProps & TopLevel[S]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof S ]: S[K]} */ js.Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromProps")().asInstanceOf[js.Function1[
         /* props */ js.Array[/* keyof S */ String], 
         Lens_[
           S, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof S ]: S[K]}
-      */ typings.monocleTs.monocleTsStrings.fromProps & TopLevel[S]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof S ]: S[K]} */ js.Any
         ]
       ]]
   }
@@ -1329,26 +1324,26 @@ object mod {
     @JSImport("monocle-ts", "at")
     @js.native
     val ^ : js.Any = js.native
-    inline def at[S, I, A](at: js.Function1[/* i */ I, typings.monocleTs.lensMod.Lens_[S, A]]): typings.monocleTs.atMod.At_[S, I, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("at")(at.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.atMod.At_[S, I, A]]
+    inline def at[S, I, A](at: js.Function1[/* i */ I, typings.monocleTs.libLensMod.Lens_[S, A]]): typings.monocleTs.libAtMod.At_[S, I, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("at")(at.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libAtMod.At_[S, I, A]]
     
     inline def atReadonlyMap[K](E: Eq[K]): js.Function0[
-        typings.monocleTs.atMod.At_[ReadonlyMap[K, scala.Nothing], K, Option_[scala.Nothing]]
+        typings.monocleTs.libAtMod.At_[ReadonlyMap[K, scala.Nothing], K, Option_[scala.Nothing]]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("atReadonlyMap")(E.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
-        typings.monocleTs.atMod.At_[ReadonlyMap[K, scala.Nothing], K, Option_[scala.Nothing]]
+        typings.monocleTs.libAtMod.At_[ReadonlyMap[K, scala.Nothing], K, Option_[scala.Nothing]]
       ]]
     
-    inline def atReadonlyRecord[A](): typings.monocleTs.atMod.At_[ReadonlyRecord_[String, A], String, Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("atReadonlyRecord")().asInstanceOf[typings.monocleTs.atMod.At_[ReadonlyRecord_[String, A], String, Option_[A]]]
+    inline def atReadonlyRecord[A](): typings.monocleTs.libAtMod.At_[ReadonlyRecord_[String, A], String, Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("atReadonlyRecord")().asInstanceOf[typings.monocleTs.libAtMod.At_[ReadonlyRecord_[String, A], String, Option_[A]]]
     
-    inline def atReadonlySet[A](E: Eq[A]): typings.monocleTs.atMod.At_[ReadonlySet[A], A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("atReadonlySet")(E.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.atMod.At_[ReadonlySet[A], A, Boolean]]
+    inline def atReadonlySet[A](E: Eq[A]): typings.monocleTs.libAtMod.At_[ReadonlySet[A], A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("atReadonlySet")(E.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libAtMod.At_[ReadonlySet[A], A, Boolean]]
     
-    inline def atRecord[A](): typings.monocleTs.atMod.At_[ReadonlyRecord_[String, A], String, Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("atRecord")().asInstanceOf[typings.monocleTs.atMod.At_[ReadonlyRecord_[String, A], String, Option_[A]]]
+    inline def atRecord[A](): typings.monocleTs.libAtMod.At_[ReadonlyRecord_[String, A], String, Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("atRecord")().asInstanceOf[typings.monocleTs.libAtMod.At_[ReadonlyRecord_[String, A], String, Option_[A]]]
     
-    inline def fromIso[T, S](iso: typings.monocleTs.isoMod.Iso_[T, S]): js.Function1[
-        /* sia */ typings.monocleTs.atMod.At_[S, Any, Any], 
-        typings.monocleTs.atMod.At_[T, Any, Any]
+    inline def fromIso[T, S](iso: typings.monocleTs.libIsoMod.Iso_[T, S]): js.Function1[
+        /* sia */ typings.monocleTs.libAtMod.At_[S, Any, Any], 
+        typings.monocleTs.libAtMod.At_[T, Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIso")(iso.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sia */ typings.monocleTs.atMod.At_[S, Any, Any], 
-        typings.monocleTs.atMod.At_[T, Any, Any]
+        /* sia */ typings.monocleTs.libAtMod.At_[S, Any, Any], 
+        typings.monocleTs.libAtMod.At_[T, Any, Any]
       ]]
   }
   
@@ -1448,29 +1443,33 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromAt[T, J, B](at: typings.monocleTs.atMod.At_[T, J, Option_[B]]): typings.monocleTs.ixMod.Index_[T, J, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAt")(at.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.ixMod.Index_[T, J, B]]
+    inline def fromAt[T, J, B](at: typings.monocleTs.libAtMod.At_[T, J, Option_[B]]): typings.monocleTs.libIxMod.Index_[T, J, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAt")(at.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libIxMod.Index_[T, J, B]]
     
-    inline def fromIso[T, S](iso: typings.monocleTs.isoMod.Iso_[T, S]): js.Function1[
-        /* sia */ typings.monocleTs.ixMod.Index_[S, Any, Any], 
-        typings.monocleTs.ixMod.Index_[T, Any, Any]
+    inline def fromIso[T, S](iso: typings.monocleTs.libIsoMod.Iso_[T, S]): js.Function1[
+        /* sia */ typings.monocleTs.libIxMod.Index_[S, Any, Any], 
+        typings.monocleTs.libIxMod.Index_[T, Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIso")(iso.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sia */ typings.monocleTs.ixMod.Index_[S, Any, Any], 
-        typings.monocleTs.ixMod.Index_[T, Any, Any]
+        /* sia */ typings.monocleTs.libIxMod.Index_[S, Any, Any], 
+        typings.monocleTs.libIxMod.Index_[T, Any, Any]
       ]]
     
-    inline def index[S, I, A](index: js.Function1[/* i */ I, typings.monocleTs.optionalMod.Optional_[S, A]]): typings.monocleTs.ixMod.Index_[S, I, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("index")(index.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.ixMod.Index_[S, I, A]]
+    inline def index[S, I, A](index: js.Function1[/* i */ I, typings.monocleTs.libOptionalMod.Optional_[S, A]]): typings.monocleTs.libIxMod.Index_[S, I, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("index")(index.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libIxMod.Index_[S, I, A]]
     
-    inline def indexArray[A](): typings.monocleTs.ixMod.Index_[js.Array[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexArray")().asInstanceOf[typings.monocleTs.ixMod.Index_[js.Array[A], Double, A]]
+    inline def indexArray[A](): typings.monocleTs.libIxMod.Index_[js.Array[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexArray")().asInstanceOf[typings.monocleTs.libIxMod.Index_[js.Array[A], Double, A]]
     
-    inline def indexReadonlyArray[A](): typings.monocleTs.ixMod.Index_[js.Array[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyArray")().asInstanceOf[typings.monocleTs.ixMod.Index_[js.Array[A], Double, A]]
+    inline def indexReadonlyArray[A](): typings.monocleTs.libIxMod.Index_[js.Array[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyArray")().asInstanceOf[typings.monocleTs.libIxMod.Index_[js.Array[A], Double, A]]
     
-    inline def indexReadonlyMap[K](E: Eq[K]): js.Function0[typings.monocleTs.ixMod.Index_[ReadonlyMap[K, scala.Nothing], K, scala.Nothing]] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyMap")(E.asInstanceOf[js.Any]).asInstanceOf[js.Function0[typings.monocleTs.ixMod.Index_[ReadonlyMap[K, scala.Nothing], K, scala.Nothing]]]
+    inline def indexReadonlyMap[K](E: Eq[K]): js.Function0[
+        typings.monocleTs.libIxMod.Index_[ReadonlyMap[K, scala.Nothing], K, scala.Nothing]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyMap")(E.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
+        typings.monocleTs.libIxMod.Index_[ReadonlyMap[K, scala.Nothing], K, scala.Nothing]
+      ]]
     
-    inline def indexReadonlyNonEmptyArray[A](): typings.monocleTs.ixMod.Index_[ReadonlyNonEmptyArray_[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyNonEmptyArray")().asInstanceOf[typings.monocleTs.ixMod.Index_[ReadonlyNonEmptyArray_[A], Double, A]]
+    inline def indexReadonlyNonEmptyArray[A](): typings.monocleTs.libIxMod.Index_[ReadonlyNonEmptyArray_[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyNonEmptyArray")().asInstanceOf[typings.monocleTs.libIxMod.Index_[ReadonlyNonEmptyArray_[A], Double, A]]
     
-    inline def indexReadonlyRecord[A](): typings.monocleTs.ixMod.Index_[ReadonlyRecord_[String, A], String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyRecord")().asInstanceOf[typings.monocleTs.ixMod.Index_[ReadonlyRecord_[String, A], String, A]]
+    inline def indexReadonlyRecord[A](): typings.monocleTs.libIxMod.Index_[ReadonlyRecord_[String, A], String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyRecord")().asInstanceOf[typings.monocleTs.libIxMod.Index_[ReadonlyRecord_[String, A], String, A]]
     
-    inline def indexRecord[A](): typings.monocleTs.ixMod.Index_[ReadonlyRecord_[String, A], String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexRecord")().asInstanceOf[typings.monocleTs.ixMod.Index_[ReadonlyRecord_[String, A], String, A]]
+    inline def indexRecord[A](): typings.monocleTs.libIxMod.Index_[ReadonlyRecord_[String, A], String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexRecord")().asInstanceOf[typings.monocleTs.libIxMod.Index_[ReadonlyRecord_[String, A], String, A]]
   }
   
   object iso {
@@ -1481,187 +1480,187 @@ object mod {
     
     @JSImport("monocle-ts", "iso.Category")
     @js.native
-    val Category: Category2[typings.monocleTs.isoMod.URI] = js.native
+    val Category: Category2[typings.monocleTs.libIsoMod.URI] = js.native
     
     @JSImport("monocle-ts", "iso.Invariant")
     @js.native
-    val Invariant: Invariant2[typings.monocleTs.isoMod.URI] = js.native
+    val Invariant: Invariant2[typings.monocleTs.libIsoMod.URI] = js.native
     
     @JSImport("monocle-ts", "iso.Semigroupoid")
     @js.native
-    val Semigroupoid: Semigroupoid2[typings.monocleTs.isoMod.URI] = js.native
+    val Semigroupoid: Semigroupoid2[typings.monocleTs.libIsoMod.URI] = js.native
     
     @JSImport("monocle-ts", "iso.URI")
     @js.native
     val URI: /* "monocle-ts/Iso" */ String = js.native
     
-    inline def asLens[S, A](sa: typings.monocleTs.isoMod.Iso_[S, A]): typings.monocleTs.lensMod.Lens_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asLens")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.lensMod.Lens_[S, A]]
+    inline def asLens[S, A](sa: typings.monocleTs.libIsoMod.Iso_[S, A]): typings.monocleTs.libLensMod.Lens_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asLens")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libLensMod.Lens_[S, A]]
     
-    inline def asOptional[S, A](sa: typings.monocleTs.isoMod.Iso_[S, A]): typings.monocleTs.optionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asOptional")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.optionalMod.Optional_[S, A]]
+    inline def asOptional[S, A](sa: typings.monocleTs.libIsoMod.Iso_[S, A]): typings.monocleTs.libOptionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asOptional")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libOptionalMod.Optional_[S, A]]
     
-    inline def asPrism[S, A](sa: typings.monocleTs.isoMod.Iso_[S, A]): typings.monocleTs.prismMod.Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asPrism")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.prismMod.Prism_[S, A]]
+    inline def asPrism[S, A](sa: typings.monocleTs.libIsoMod.Iso_[S, A]): typings.monocleTs.libPrismMod.Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asPrism")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libPrismMod.Prism_[S, A]]
     
-    inline def asTraversal[S, A](sa: typings.monocleTs.isoMod.Iso_[S, A]): typings.monocleTs.traversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asTraversal")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.traversalMod.Traversal_[S, A]]
+    inline def asTraversal[S, A](sa: typings.monocleTs.libIsoMod.Iso_[S, A]): typings.monocleTs.libTraversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asTraversal")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libTraversalMod.Traversal_[S, A]]
     
     inline def atKey(key: String): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, Record[String, Any]], 
-        typings.monocleTs.lensMod.Lens_[Any, Option_[Any]]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, Record[String, Any]], 
+        typings.monocleTs.libLensMod.Lens_[Any, Option_[Any]]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("atKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, Record[String, Any]], 
-        typings.monocleTs.lensMod.Lens_[Any, Option_[Any]]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, Record[String, Any]], 
+        typings.monocleTs.libLensMod.Lens_[Any, Option_[Any]]
       ]]
     
     inline def component[A /* <: js.Array[Any] */, P /* <: /* keyof A */ String */](prop: P): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("component")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ]]
     
-    inline def compose[A, B](ab: typings.monocleTs.isoMod.Iso_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.isoMod.Iso_[Any, B]
+    inline def compose[A, B](ab: typings.monocleTs.libIsoMod.Iso_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libIsoMod.Iso_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.isoMod.Iso_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libIsoMod.Iso_[Any, B]
       ]]
     
-    inline def composeIso[A, B](ab: typings.monocleTs.isoMod.Iso_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.isoMod.Iso_[Any, B]
+    inline def composeIso[A, B](ab: typings.monocleTs.libIsoMod.Iso_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libIsoMod.Iso_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeIso")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.isoMod.Iso_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libIsoMod.Iso_[Any, B]
       ]]
     
-    inline def composeLens[A, B](ab: typings.monocleTs.lensMod.Lens_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[Any, B]
+    inline def composeLens[A, B](ab: typings.monocleTs.libLensMod.Lens_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeLens")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[Any, B]
       ]]
     
-    inline def composeOptional[A, B](ab: typings.monocleTs.optionalMod.Optional_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+    inline def composeOptional[A, B](ab: typings.monocleTs.libOptionalMod.Optional_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeOptional")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def composePrism[A, B](ab: typings.monocleTs.prismMod.Prism_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+    inline def composePrism[A, B](ab: typings.monocleTs.libPrismMod.Prism_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composePrism")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ]]
     
-    inline def composeTraversal[A, B](ab: typings.monocleTs.traversalMod.Traversal_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+    inline def composeTraversal[A, B](ab: typings.monocleTs.libTraversalMod.Traversal_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeTraversal")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ]]
     
     inline def filter[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, A]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, A]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, A]
       ]]
     
     inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ]]
     
     inline def findFirst[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ]]
     
     inline def findFirstNonEmpty[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ]]
     
     inline def findFirstNonEmpty_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
     inline def findFirst_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def fromNullable[S, A](sa: typings.monocleTs.isoMod.Iso_[S, A]): typings.monocleTs.prismMod.Prism_[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.prismMod.Prism_[S, NonNullable[A]]]
+    inline def fromNullable[S, A](sa: typings.monocleTs.libIsoMod.Iso_[S, A]): typings.monocleTs.libPrismMod.Prism_[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libPrismMod.Prism_[S, NonNullable[A]]]
     
-    inline def id[S](): typings.monocleTs.isoMod.Iso_[S, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[typings.monocleTs.isoMod.Iso_[S, S]]
+    inline def id[S](): typings.monocleTs.libIsoMod.Iso_[S, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[typings.monocleTs.libIsoMod.Iso_[S, S]]
     
     inline def imap[A, B](f: js.Function1[/* a */ A, B], g: js.Function1[/* b */ B, A]): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.isoMod.Iso_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libIsoMod.Iso_[Any, B]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("imap")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.isoMod.Iso_[Any, B]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libIsoMod.Iso_[Any, B]
       ]]
     
     inline def index(i: Double): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, js.Array[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, js.Array[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("index")(i.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, js.Array[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, js.Array[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ]]
     
     inline def indexNonEmpty(i: Double): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, ReadonlyNonEmptyArray_[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, ReadonlyNonEmptyArray_[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexNonEmpty")(i.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, ReadonlyNonEmptyArray_[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, ReadonlyNonEmptyArray_[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ]]
     
-    inline def iso[S, A](get: js.Function1[/* s */ S, A], reverseGet: js.Function1[/* a */ A, S]): typings.monocleTs.isoMod.Iso_[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("iso")(get.asInstanceOf[js.Any], reverseGet.asInstanceOf[js.Any])).asInstanceOf[typings.monocleTs.isoMod.Iso_[S, A]]
+    inline def iso[S, A](get: js.Function1[/* s */ S, A], reverseGet: js.Function1[/* a */ A, S]): typings.monocleTs.libIsoMod.Iso_[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("iso")(get.asInstanceOf[js.Any], reverseGet.asInstanceOf[js.Any])).asInstanceOf[typings.monocleTs.libIsoMod.Iso_[S, A]]
     
     inline def key(key: String): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, Record[String, Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, Record[String, Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, Record[String, Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, Record[String, Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ]]
     
-    inline def left[S, E, A](sea: typings.monocleTs.isoMod.Iso_[S, Either_[E, A]]): typings.monocleTs.prismMod.Prism_[S, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.prismMod.Prism_[S, E]]
+    inline def left[S, E, A](sea: typings.monocleTs.libIsoMod.Iso_[S, Either_[E, A]]): typings.monocleTs.libPrismMod.Prism_[S, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libPrismMod.Prism_[S, E]]
     
-    inline def modify[A, B /* <: A */](f: js.Function1[/* a */ A, B]): js.Function1[/* sa */ typings.monocleTs.isoMod.Iso_[Any, A], js.Function1[/* s */ Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("modify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ typings.monocleTs.isoMod.Iso_[Any, A], js.Function1[/* s */ Any, Any]]]
+    inline def modify[A, B /* <: A */](f: js.Function1[/* a */ A, B]): js.Function1[/* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], js.Function1[/* s */ Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("modify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], js.Function1[/* s */ Any, Any]]]
     
     inline def modifyF[F](F: Functor[F]): js.Function1[
         /* f */ js.Function1[
@@ -1669,7 +1668,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.isoMod.Iso_[Any, Any], 
+          /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, S> */ Any
@@ -1681,7 +1680,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.isoMod.Iso_[Any, Any], 
+          /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, S> */ Any
@@ -1694,7 +1693,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.isoMod.Iso_[Any, Any], 
+          /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, S> */ Any
@@ -1706,7 +1705,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.isoMod.Iso_[Any, Any], 
+          /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, S> */ Any
@@ -1719,7 +1718,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.isoMod.Iso_[Any, Any], 
+          /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, S> */ Any
@@ -1731,7 +1730,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.isoMod.Iso_[Any, Any], 
+          /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, S> */ Any
@@ -1744,7 +1743,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.isoMod.Iso_[Any, Any], 
+          /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, S> */ Any
@@ -1756,7 +1755,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.isoMod.Iso_[Any, Any], 
+          /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, S> */ Any
@@ -1765,55 +1764,51 @@ object mod {
       ]]
     
     inline def prop[A, P /* <: /* keyof A */ String */](prop: P): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ]]
     
     inline def props[A, P /* <: /* keyof A */ String */](props_0: P, props_1: P, props_2: P*): js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[
           Any, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in P ]: A[K]}
-      */ typings.monocleTs.monocleTsStrings.props & TopLevel[A]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in P ]: A[K]} */ js.Any
         ]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("props")((scala.List(props_0.asInstanceOf[js.Any], props_1.asInstanceOf[js.Any])).`++`(props_2.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.isoMod.Iso_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[
+        /* sa */ typings.monocleTs.libIsoMod.Iso_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[
           Any, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in P ]: A[K]}
-      */ typings.monocleTs.monocleTsStrings.props & TopLevel[A]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in P ]: A[K]} */ js.Any
         ]
       ]]
     
-    inline def reverse[S, A](sa: typings.monocleTs.isoMod.Iso_[S, A]): typings.monocleTs.isoMod.Iso_[A, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.isoMod.Iso_[A, S]]
+    inline def reverse[S, A](sa: typings.monocleTs.libIsoMod.Iso_[S, A]): typings.monocleTs.libIsoMod.Iso_[A, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libIsoMod.Iso_[A, S]]
     
-    inline def right[S, E, A](sea: typings.monocleTs.isoMod.Iso_[S, Either_[E, A]]): typings.monocleTs.prismMod.Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.prismMod.Prism_[S, A]]
+    inline def right[S, E, A](sea: typings.monocleTs.libIsoMod.Iso_[S, Either_[E, A]]): typings.monocleTs.libPrismMod.Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libPrismMod.Prism_[S, A]]
     
-    inline def some[S, A](soa: typings.monocleTs.isoMod.Iso_[S, Option_[A]]): typings.monocleTs.prismMod.Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(soa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.prismMod.Prism_[S, A]]
+    inline def some[S, A](soa: typings.monocleTs.libIsoMod.Iso_[S, Option_[A]]): typings.monocleTs.libPrismMod.Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(soa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libPrismMod.Prism_[S, A]]
     
     inline def traverse[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](T: Traversable1[T]): js.Function1[
-        /* sta */ typings.monocleTs.isoMod.Iso_[
+        /* sta */ typings.monocleTs.libIsoMod.Iso_[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ Any
         ], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(T.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sta */ typings.monocleTs.isoMod.Iso_[
+        /* sta */ typings.monocleTs.libIsoMod.Iso_[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ Any
         ], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ]]
     
     /* augmented module */
@@ -1832,183 +1827,189 @@ object mod {
     
     @JSImport("monocle-ts", "lens.Category")
     @js.native
-    val Category: Category2[typings.monocleTs.lensMod.URI] = js.native
+    val Category: Category2[typings.monocleTs.libLensMod.URI] = js.native
     
     @JSImport("monocle-ts", "lens.Invariant")
     @js.native
-    val Invariant: Invariant2[typings.monocleTs.lensMod.URI] = js.native
+    val Invariant: Invariant2[typings.monocleTs.libLensMod.URI] = js.native
     
     @JSImport("monocle-ts", "lens.Semigroupoid")
     @js.native
-    val Semigroupoid: Semigroupoid2[typings.monocleTs.lensMod.URI] = js.native
+    val Semigroupoid: Semigroupoid2[typings.monocleTs.libLensMod.URI] = js.native
     
     @JSImport("monocle-ts", "lens.URI")
     @js.native
     val URI: /* "monocle-ts/Lens" */ String = js.native
     
-    inline def asOptional[S, A](sa: typings.monocleTs.lensMod.Lens_[S, A]): typings.monocleTs.optionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asOptional")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.optionalMod.Optional_[S, A]]
+    inline def asOptional[S, A](sa: typings.monocleTs.libLensMod.Lens_[S, A]): typings.monocleTs.libOptionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asOptional")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libOptionalMod.Optional_[S, A]]
     
-    inline def asTraversal[S, A](sa: typings.monocleTs.lensMod.Lens_[S, A]): typings.monocleTs.traversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asTraversal")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.traversalMod.Traversal_[S, A]]
+    inline def asTraversal[S, A](sa: typings.monocleTs.libLensMod.Lens_[S, A]): typings.monocleTs.libTraversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asTraversal")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libTraversalMod.Traversal_[S, A]]
     
     inline def atKey(key: String): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, ReadonlyRecord_[String, Any]], 
-        typings.monocleTs.lensMod.Lens_[Any, Option_[Any]]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, ReadonlyRecord_[String, Any]], 
+        typings.monocleTs.libLensMod.Lens_[Any, Option_[Any]]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("atKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, ReadonlyRecord_[String, Any]], 
-        typings.monocleTs.lensMod.Lens_[Any, Option_[Any]]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, ReadonlyRecord_[String, Any]], 
+        typings.monocleTs.libLensMod.Lens_[Any, Option_[Any]]
       ]]
     
     inline def component[A /* <: js.Array[Any] */, P /* <: /* keyof A */ String */](prop: P): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("component")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ]]
     
-    inline def compose[A, B](ab: typings.monocleTs.lensMod.Lens_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[Any, B]
+    inline def compose[A, B](ab: typings.monocleTs.libLensMod.Lens_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[Any, B]
       ]]
     
-    inline def composeIso[A, B](ab: typings.monocleTs.isoMod.Iso_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[Any, B]
+    inline def composeIso[A, B](ab: typings.monocleTs.libIsoMod.Iso_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeIso")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[Any, B]
       ]]
     
-    inline def composeLens[A, B](ab: typings.monocleTs.lensMod.Lens_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[Any, B]
+    inline def composeLens[A, B](ab: typings.monocleTs.libLensMod.Lens_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeLens")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[Any, B]
       ]]
     
-    inline def composeOptional[A, B](ab: typings.monocleTs.optionalMod.Optional_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+    inline def composeOptional[A, B](ab: typings.monocleTs.libOptionalMod.Optional_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeOptional")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def composePrism[A, B](ab: typings.monocleTs.prismMod.Prism_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+    inline def composePrism[A, B](ab: typings.monocleTs.libPrismMod.Prism_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composePrism")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def composeTraversal[A, B](ab: typings.monocleTs.traversalMod.Traversal_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+    inline def composeTraversal[A, B](ab: typings.monocleTs.libTraversalMod.Traversal_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeTraversal")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ]]
     
     inline def filter[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ]]
     
     inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
     inline def findFirst[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ]]
     
     inline def findFirstNonEmpty[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ]]
     
     inline def findFirstNonEmpty_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
     inline def findFirst_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def fromNullable[S, A](sa: typings.monocleTs.lensMod.Lens_[S, A]): typings.monocleTs.optionalMod.Optional_[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.optionalMod.Optional_[S, NonNullable[A]]]
+    inline def fromNullable[S, A](sa: typings.monocleTs.libLensMod.Lens_[S, A]): typings.monocleTs.libOptionalMod.Optional_[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libOptionalMod.Optional_[S, NonNullable[A]]]
     
-    inline def id[S](): typings.monocleTs.lensMod.Lens_[S, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[typings.monocleTs.lensMod.Lens_[S, S]]
+    inline def id[S](): typings.monocleTs.libLensMod.Lens_[S, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[typings.monocleTs.libLensMod.Lens_[S, S]]
     
     inline def imap[A, B](f: js.Function1[/* a */ A, B], g: js.Function1[/* b */ B, A]): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[Any, B]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("imap")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[Any, B]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[Any, B]
       ]]
     
     inline def index(i: Double): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, js.Array[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, js.Array[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("index")(i.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, js.Array[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, js.Array[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ]]
     
     inline def indexNonEmpty(i: Double): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, ReadonlyNonEmptyArray_[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, ReadonlyNonEmptyArray_[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexNonEmpty")(i.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, ReadonlyNonEmptyArray_[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, ReadonlyNonEmptyArray_[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ]]
     
     inline def key(key: String): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, Record[String, Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, Record[String, Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, Record[String, Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, Record[String, Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ]]
     
-    inline def left[S, E, A](sea: typings.monocleTs.lensMod.Lens_[S, Either_[E, A]]): typings.monocleTs.optionalMod.Optional_[S, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.optionalMod.Optional_[S, E]]
+    inline def left[S, E, A](sea: typings.monocleTs.libLensMod.Lens_[S, Either_[E, A]]): typings.monocleTs.libOptionalMod.Optional_[S, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libOptionalMod.Optional_[S, E]]
     
-    inline def lens[S, A](get: js.Function1[/* s */ S, A], set: js.Function1[/* a */ A, js.Function1[/* s */ S, S]]): typings.monocleTs.lensMod.Lens_[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("lens")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[typings.monocleTs.lensMod.Lens_[S, A]]
+    inline def lens[S, A](get: js.Function1[/* s */ S, A], set: js.Function1[/* a */ A, js.Function1[/* s */ S, S]]): typings.monocleTs.libLensMod.Lens_[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("lens")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[typings.monocleTs.libLensMod.Lens_[S, A]]
     
-    inline def modify[A, B /* <: A */](f: js.Function1[/* a */ A, B]): js.Function1[/* sa */ typings.monocleTs.lensMod.Lens_[Any, A], js.Function1[/* s */ Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("modify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ typings.monocleTs.lensMod.Lens_[Any, A], js.Function1[/* s */ Any, Any]]]
+    inline def modify[A, B /* <: A */](f: js.Function1[/* a */ A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        js.Function1[/* s */ Any, Any]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("modify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        js.Function1[/* s */ Any, Any]
+      ]]
     
     inline def modifyF[F](F: Functor[F]): js.Function1[
         /* f */ js.Function1[
@@ -2016,7 +2017,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.lensMod.Lens_[Any, Any], 
+          /* sa */ typings.monocleTs.libLensMod.Lens_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, S> */ Any
@@ -2028,7 +2029,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.lensMod.Lens_[Any, Any], 
+          /* sa */ typings.monocleTs.libLensMod.Lens_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, S> */ Any
@@ -2041,7 +2042,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.lensMod.Lens_[Any, Any], 
+          /* sa */ typings.monocleTs.libLensMod.Lens_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, S> */ Any
@@ -2053,7 +2054,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.lensMod.Lens_[Any, Any], 
+          /* sa */ typings.monocleTs.libLensMod.Lens_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, S> */ Any
@@ -2066,7 +2067,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.lensMod.Lens_[Any, Any], 
+          /* sa */ typings.monocleTs.libLensMod.Lens_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, S> */ Any
@@ -2078,7 +2079,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.lensMod.Lens_[Any, Any], 
+          /* sa */ typings.monocleTs.libLensMod.Lens_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, S> */ Any
@@ -2091,7 +2092,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.lensMod.Lens_[Any, Any], 
+          /* sa */ typings.monocleTs.libLensMod.Lens_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, S> */ Any
@@ -2103,7 +2104,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.lensMod.Lens_[Any, Any], 
+          /* sa */ typings.monocleTs.libLensMod.Lens_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, S> */ Any
@@ -2112,14 +2113,14 @@ object mod {
       ]]
     
     inline def prop[A, P /* <: /* keyof A */ String */](prop: P): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
@@ -2128,39 +2129,35 @@ object mod {
     inline def props[A, P /* <: /* keyof A */ String */](
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param props because its type [P, P, ...ReadonlyArray<P>] is not an array type */ props: Array[P]
     ): js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[
           Any, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in P ]: A[K]}
-      */ typings.monocleTs.monocleTsStrings.props & TopLevel[A]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in P ]: A[K]} */ js.Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(props.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.lensMod.Lens_[Any, A], 
-        typings.monocleTs.lensMod.Lens_[
+        /* sa */ typings.monocleTs.libLensMod.Lens_[Any, A], 
+        typings.monocleTs.libLensMod.Lens_[
           Any, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in P ]: A[K]}
-      */ typings.monocleTs.monocleTsStrings.props & TopLevel[A]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in P ]: A[K]} */ js.Any
         ]
       ]]
     
-    inline def right[S, E, A](sea: typings.monocleTs.lensMod.Lens_[S, Either_[E, A]]): typings.monocleTs.optionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.optionalMod.Optional_[S, A]]
+    inline def right[S, E, A](sea: typings.monocleTs.libLensMod.Lens_[S, Either_[E, A]]): typings.monocleTs.libOptionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libOptionalMod.Optional_[S, A]]
     
-    inline def some[S, A](soa: typings.monocleTs.lensMod.Lens_[S, Option_[A]]): typings.monocleTs.optionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(soa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.optionalMod.Optional_[S, A]]
+    inline def some[S, A](soa: typings.monocleTs.libLensMod.Lens_[S, Option_[A]]): typings.monocleTs.libOptionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(soa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libOptionalMod.Optional_[S, A]]
     
     inline def traverse[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](T: Traversable1[T]): js.Function1[
-        /* sta */ typings.monocleTs.lensMod.Lens_[
+        /* sta */ typings.monocleTs.libLensMod.Lens_[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ Any
         ], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(T.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sta */ typings.monocleTs.lensMod.Lens_[
+        /* sta */ typings.monocleTs.libLensMod.Lens_[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ Any
         ], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ]]
     
     /* augmented module */
@@ -2179,183 +2176,183 @@ object mod {
     
     @JSImport("monocle-ts", "optional.Category")
     @js.native
-    val Category: Category2[typings.monocleTs.optionalMod.URI] = js.native
+    val Category: Category2[typings.monocleTs.libOptionalMod.URI] = js.native
     
     @JSImport("monocle-ts", "optional.Invariant")
     @js.native
-    val Invariant: Invariant2[typings.monocleTs.optionalMod.URI] = js.native
+    val Invariant: Invariant2[typings.monocleTs.libOptionalMod.URI] = js.native
     
     @JSImport("monocle-ts", "optional.Semigroupoid")
     @js.native
-    val Semigroupoid: Semigroupoid2[typings.monocleTs.optionalMod.URI] = js.native
+    val Semigroupoid: Semigroupoid2[typings.monocleTs.libOptionalMod.URI] = js.native
     
     @JSImport("monocle-ts", "optional.URI")
     @js.native
     val URI: /* "monocle-ts/Optional" */ String = js.native
     
-    inline def asTraversal[S, A](sa: typings.monocleTs.optionalMod.Optional_[S, A]): typings.monocleTs.traversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asTraversal")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.traversalMod.Traversal_[S, A]]
+    inline def asTraversal[S, A](sa: typings.monocleTs.libOptionalMod.Optional_[S, A]): typings.monocleTs.libTraversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asTraversal")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libTraversalMod.Traversal_[S, A]]
     
     inline def atKey(key: String): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, Record[String, Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Option_[Any]]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, Record[String, Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Option_[Any]]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("atKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, Record[String, Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Option_[Any]]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, Record[String, Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Option_[Any]]
       ]]
     
     inline def component[A /* <: js.Array[Any] */, P /* <: /* keyof A */ String */](prop: P): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("component")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ]]
     
-    inline def compose[A, B](ab: typings.monocleTs.optionalMod.Optional_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+    inline def compose[A, B](ab: typings.monocleTs.libOptionalMod.Optional_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def composeIso[A, B](ab: typings.monocleTs.isoMod.Iso_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+    inline def composeIso[A, B](ab: typings.monocleTs.libIsoMod.Iso_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeIso")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def composeLens[A, B](ab: typings.monocleTs.lensMod.Lens_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+    inline def composeLens[A, B](ab: typings.monocleTs.libLensMod.Lens_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeLens")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def composeOptional[A, B](ab: typings.monocleTs.optionalMod.Optional_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+    inline def composeOptional[A, B](ab: typings.monocleTs.libOptionalMod.Optional_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeOptional")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def composePrism[A, B](ab: typings.monocleTs.prismMod.Prism_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+    inline def composePrism[A, B](ab: typings.monocleTs.libPrismMod.Prism_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composePrism")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def composeTraversal[A, B](ab: typings.monocleTs.traversalMod.Traversal_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+    inline def composeTraversal[A, B](ab: typings.monocleTs.libTraversalMod.Traversal_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeTraversal")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ]]
     
     inline def filter[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ]]
     
     inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
     inline def findFirst[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ]]
     
     inline def findFirstNonEmpty[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ]]
     
     inline def findFirstNonEmpty_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
     inline def findFirst_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def fromNullable[S, A](sa: typings.monocleTs.optionalMod.Optional_[S, A]): typings.monocleTs.optionalMod.Optional_[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.optionalMod.Optional_[S, NonNullable[A]]]
+    inline def fromNullable[S, A](sa: typings.monocleTs.libOptionalMod.Optional_[S, A]): typings.monocleTs.libOptionalMod.Optional_[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libOptionalMod.Optional_[S, NonNullable[A]]]
     
-    inline def id[S](): typings.monocleTs.optionalMod.Optional_[S, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[typings.monocleTs.optionalMod.Optional_[S, S]]
+    inline def id[S](): typings.monocleTs.libOptionalMod.Optional_[S, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[typings.monocleTs.libOptionalMod.Optional_[S, S]]
     
     inline def imap[A, B](f: js.Function1[/* a */ A, B], g: js.Function1[/* b */ B, A]): js.Function1[
-        /* fa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* fa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("imap")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* fa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* fa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
     inline def index(i: Double): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, js.Array[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, js.Array[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("index")(i.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, js.Array[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, js.Array[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ]]
     
     inline def indexNonEmpty(i: Double): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, ReadonlyNonEmptyArray_[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, ReadonlyNonEmptyArray_[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexNonEmpty")(i.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, ReadonlyNonEmptyArray_[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, ReadonlyNonEmptyArray_[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ]]
     
     inline def key(key: String): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, ReadonlyRecord_[String, Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, ReadonlyRecord_[String, Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, ReadonlyRecord_[String, Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, ReadonlyRecord_[String, Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ]]
     
-    inline def left[S, E, A](sea: typings.monocleTs.optionalMod.Optional_[S, Either_[E, A]]): typings.monocleTs.optionalMod.Optional_[S, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.optionalMod.Optional_[S, E]]
+    inline def left[S, E, A](sea: typings.monocleTs.libOptionalMod.Optional_[S, Either_[E, A]]): typings.monocleTs.libOptionalMod.Optional_[S, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libOptionalMod.Optional_[S, E]]
     
     inline def modify[A, B /* <: A */](f: js.Function1[/* a */ A, B]): js.Function1[
-        /* optional */ typings.monocleTs.optionalMod.Optional_[Any, A], 
+        /* optional */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
         js.Function1[/* s */ Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("modify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* optional */ typings.monocleTs.optionalMod.Optional_[Any, A], 
+        /* optional */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
         js.Function1[/* s */ Any, Any]
       ]]
     
@@ -2365,7 +2362,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.optionalMod.Optional_[Any, Any], 
+          /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, S> */ Any
@@ -2377,7 +2374,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.optionalMod.Optional_[Any, Any], 
+          /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, S> */ Any
@@ -2390,7 +2387,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.optionalMod.Optional_[Any, Any], 
+          /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, S> */ Any
@@ -2402,7 +2399,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.optionalMod.Optional_[Any, Any], 
+          /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, S> */ Any
@@ -2415,7 +2412,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.optionalMod.Optional_[Any, Any], 
+          /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, S> */ Any
@@ -2427,7 +2424,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.optionalMod.Optional_[Any, Any], 
+          /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, S> */ Any
@@ -2440,7 +2437,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.optionalMod.Optional_[Any, Any], 
+          /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, S> */ Any
@@ -2452,7 +2449,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.optionalMod.Optional_[Any, Any], 
+          /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, S> */ Any
@@ -2461,74 +2458,70 @@ object mod {
       ]]
     
     inline def modifyOption[A, B /* <: A */](f: js.Function1[/* a */ A, B]): js.Function1[
-        /* optional */ typings.monocleTs.optionalMod.Optional_[Any, A], 
+        /* optional */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
         js.Function1[/* s */ Any, Option_[Any]]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("modifyOption")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* optional */ typings.monocleTs.optionalMod.Optional_[Any, A], 
+        /* optional */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
         js.Function1[/* s */ Any, Option_[Any]]
       ]]
     
     inline def optional[S, A](
       getOption: js.Function1[/* s */ S, Option_[A]],
       set: js.Function1[/* a */ A, js.Function1[/* s */ S, S]]
-    ): typings.monocleTs.optionalMod.Optional_[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("optional")(getOption.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[typings.monocleTs.optionalMod.Optional_[S, A]]
+    ): typings.monocleTs.libOptionalMod.Optional_[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("optional")(getOption.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[typings.monocleTs.libOptionalMod.Optional_[S, A]]
     
     inline def prop[A, P /* <: /* keyof A */ String */](prop: P): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ]]
     
     inline def props[A, P /* <: /* keyof A */ String */](props_0: P, props_1: P, props_2: P*): js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[
           Any, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in P ]: A[K]}
-      */ typings.monocleTs.monocleTsStrings.props & TopLevel[A]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in P ]: A[K]} */ js.Any
         ]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("props")((scala.List(props_0.asInstanceOf[js.Any], props_1.asInstanceOf[js.Any])).`++`(props_2.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.optionalMod.Optional_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[
+        /* sa */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[
           Any, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in P ]: A[K]}
-      */ typings.monocleTs.monocleTsStrings.props & TopLevel[A]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in P ]: A[K]} */ js.Any
         ]
       ]]
     
-    inline def right[S, E, A](sea: typings.monocleTs.optionalMod.Optional_[S, Either_[E, A]]): typings.monocleTs.optionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.optionalMod.Optional_[S, A]]
+    inline def right[S, E, A](sea: typings.monocleTs.libOptionalMod.Optional_[S, Either_[E, A]]): typings.monocleTs.libOptionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libOptionalMod.Optional_[S, A]]
     
     inline def setOption[A](a: A): js.Function1[
-        /* optional */ typings.monocleTs.optionalMod.Optional_[Any, A], 
+        /* optional */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
         js.Function1[/* s */ Any, Option_[Any]]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* optional */ typings.monocleTs.optionalMod.Optional_[Any, A], 
+        /* optional */ typings.monocleTs.libOptionalMod.Optional_[Any, A], 
         js.Function1[/* s */ Any, Option_[Any]]
       ]]
     
-    inline def some[S, A](soa: typings.monocleTs.optionalMod.Optional_[S, Option_[A]]): typings.monocleTs.optionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(soa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.optionalMod.Optional_[S, A]]
+    inline def some[S, A](soa: typings.monocleTs.libOptionalMod.Optional_[S, Option_[A]]): typings.monocleTs.libOptionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(soa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libOptionalMod.Optional_[S, A]]
     
     inline def traverse[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](T: Traversable1[T]): js.Function1[
-        /* sta */ typings.monocleTs.optionalMod.Optional_[
+        /* sta */ typings.monocleTs.libOptionalMod.Optional_[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ Any
         ], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(T.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sta */ typings.monocleTs.optionalMod.Optional_[
+        /* sta */ typings.monocleTs.libOptionalMod.Optional_[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ Any
         ], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ]]
     
     /* augmented module */
@@ -2547,185 +2540,191 @@ object mod {
     
     @JSImport("monocle-ts", "prism.Category")
     @js.native
-    val Category: Category2[typings.monocleTs.prismMod.URI] = js.native
+    val Category: Category2[typings.monocleTs.libPrismMod.URI] = js.native
     
     @JSImport("monocle-ts", "prism.Invariant")
     @js.native
-    val Invariant: Invariant2[typings.monocleTs.prismMod.URI] = js.native
+    val Invariant: Invariant2[typings.monocleTs.libPrismMod.URI] = js.native
     
     @JSImport("monocle-ts", "prism.Semigroupoid")
     @js.native
-    val Semigroupoid: Semigroupoid2[typings.monocleTs.prismMod.URI] = js.native
+    val Semigroupoid: Semigroupoid2[typings.monocleTs.libPrismMod.URI] = js.native
     
     @JSImport("monocle-ts", "prism.URI")
     @js.native
     val URI: /* "monocle-ts/Prism" */ String = js.native
     
-    inline def asOptional[S, A](sa: typings.monocleTs.prismMod.Prism_[S, A]): typings.monocleTs.optionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asOptional")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.optionalMod.Optional_[S, A]]
+    inline def asOptional[S, A](sa: typings.monocleTs.libPrismMod.Prism_[S, A]): typings.monocleTs.libOptionalMod.Optional_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asOptional")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libOptionalMod.Optional_[S, A]]
     
-    inline def asTraversal[S, A](sa: typings.monocleTs.prismMod.Prism_[S, A]): typings.monocleTs.traversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asTraversal")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.traversalMod.Traversal_[S, A]]
+    inline def asTraversal[S, A](sa: typings.monocleTs.libPrismMod.Prism_[S, A]): typings.monocleTs.libTraversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asTraversal")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libTraversalMod.Traversal_[S, A]]
     
     inline def atKey(key: String): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, Record[String, Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Option_[Any]]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, Record[String, Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Option_[Any]]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("atKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, Record[String, Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Option_[Any]]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, Record[String, Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Option_[Any]]
       ]]
     
     inline def component[A /* <: js.Array[Any] */, P /* <: /* keyof A */ String */](prop: P): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("component")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ]]
     
-    inline def compose[A, B](ab: typings.monocleTs.prismMod.Prism_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+    inline def compose[A, B](ab: typings.monocleTs.libPrismMod.Prism_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ]]
     
-    inline def composeIso[A, B](ab: typings.monocleTs.isoMod.Iso_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+    inline def composeIso[A, B](ab: typings.monocleTs.libIsoMod.Iso_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeIso")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ]]
     
-    inline def composeLens[A, B](ab: typings.monocleTs.lensMod.Lens_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+    inline def composeLens[A, B](ab: typings.monocleTs.libLensMod.Lens_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeLens")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def composeOptional[A, B](ab: typings.monocleTs.optionalMod.Optional_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+    inline def composeOptional[A, B](ab: typings.monocleTs.libOptionalMod.Optional_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeOptional")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def composePrism[A, B](ab: typings.monocleTs.prismMod.Prism_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+    inline def composePrism[A, B](ab: typings.monocleTs.libPrismMod.Prism_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composePrism")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ]]
     
-    inline def composeTraversal[A, B](ab: typings.monocleTs.traversalMod.Traversal_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+    inline def composeTraversal[A, B](ab: typings.monocleTs.libTraversalMod.Traversal_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeTraversal")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ]]
     
     inline def filter[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, A]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, A]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, A]
       ]]
     
     inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ]]
     
     inline def findFirst[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ]]
     
     inline def findFirstNonEmpty[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, A]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, A]
       ]]
     
     inline def findFirstNonEmpty_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
     inline def findFirst_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, js.Array[A]], 
-        typings.monocleTs.optionalMod.Optional_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, js.Array[A]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, B]
       ]]
     
-    inline def fromNullable[S, A](sa: typings.monocleTs.prismMod.Prism_[S, A]): typings.monocleTs.prismMod.Prism_[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.prismMod.Prism_[S, NonNullable[A]]]
+    inline def fromNullable[S, A](sa: typings.monocleTs.libPrismMod.Prism_[S, A]): typings.monocleTs.libPrismMod.Prism_[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libPrismMod.Prism_[S, NonNullable[A]]]
     
-    inline def fromPredicate[A](predicate: Predicate[A]): typings.monocleTs.prismMod.Prism_[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.prismMod.Prism_[A, A]]
+    inline def fromPredicate[A](predicate: Predicate[A]): typings.monocleTs.libPrismMod.Prism_[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libPrismMod.Prism_[A, A]]
     
-    inline def fromPredicate_SA[S, A /* <: S */](refinement: Refinement[S, A]): typings.monocleTs.prismMod.Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.prismMod.Prism_[S, A]]
+    inline def fromPredicate_SA[S, A /* <: S */](refinement: Refinement[S, A]): typings.monocleTs.libPrismMod.Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libPrismMod.Prism_[S, A]]
     
-    inline def id[S](): typings.monocleTs.prismMod.Prism_[S, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[typings.monocleTs.prismMod.Prism_[S, S]]
+    inline def id[S](): typings.monocleTs.libPrismMod.Prism_[S, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[typings.monocleTs.libPrismMod.Prism_[S, S]]
     
     inline def imap[A, B](f: js.Function1[/* a */ A, B], g: js.Function1[/* b */ B, A]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("imap")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.prismMod.Prism_[Any, B]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libPrismMod.Prism_[Any, B]
       ]]
     
     inline def index(i: Double): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, js.Array[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, js.Array[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("index")(i.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, js.Array[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, js.Array[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ]]
     
     inline def indexNonEmpty(i: Double): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, ReadonlyNonEmptyArray_[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, ReadonlyNonEmptyArray_[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexNonEmpty")(i.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, ReadonlyNonEmptyArray_[Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, ReadonlyNonEmptyArray_[Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ]]
     
     inline def key(key: String): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, Record[String, Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, Record[String, Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, Record[String, Any]], 
-        typings.monocleTs.optionalMod.Optional_[Any, Any]
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, Record[String, Any]], 
+        typings.monocleTs.libOptionalMod.Optional_[Any, Any]
       ]]
     
-    inline def left[S, E, A](sea: typings.monocleTs.prismMod.Prism_[S, Either_[E, A]]): typings.monocleTs.prismMod.Prism_[S, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.prismMod.Prism_[S, E]]
+    inline def left[S, E, A](sea: typings.monocleTs.libPrismMod.Prism_[S, Either_[E, A]]): typings.monocleTs.libPrismMod.Prism_[S, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libPrismMod.Prism_[S, E]]
     
-    inline def modify[A, B /* <: A */](f: js.Function1[/* a */ A, B]): js.Function1[/* sa */ typings.monocleTs.prismMod.Prism_[Any, A], js.Function1[/* s */ Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("modify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ typings.monocleTs.prismMod.Prism_[Any, A], js.Function1[/* s */ Any, Any]]]
+    inline def modify[A, B /* <: A */](f: js.Function1[/* a */ A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        js.Function1[/* s */ Any, Any]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("modify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        js.Function1[/* s */ Any, Any]
+      ]]
     
     inline def modifyF[F](F: Applicative[F]): js.Function1[
         /* f */ js.Function1[
@@ -2733,7 +2732,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.prismMod.Prism_[Any, Any], 
+          /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, S> */ Any
@@ -2745,7 +2744,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.prismMod.Prism_[Any, Any], 
+          /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, S> */ Any
@@ -2758,7 +2757,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.prismMod.Prism_[Any, Any], 
+          /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, S> */ Any
@@ -2770,7 +2769,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.prismMod.Prism_[Any, Any], 
+          /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, S> */ Any
@@ -2783,7 +2782,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.prismMod.Prism_[Any, Any], 
+          /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, S> */ Any
@@ -2795,7 +2794,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.prismMod.Prism_[Any, Any], 
+          /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, S> */ Any
@@ -2808,7 +2807,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.prismMod.Prism_[Any, Any], 
+          /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, S> */ Any
@@ -2820,7 +2819,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
         ], 
         js.Function1[
-          /* sa */ typings.monocleTs.prismMod.Prism_[Any, Any], 
+          /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, Any], 
           js.Function1[
             /* s */ Any, 
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, S> */ Any
@@ -2829,65 +2828,67 @@ object mod {
       ]]
     
     inline def modifyOption[A, B /* <: A */](f: js.Function1[/* a */ A, B]): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
         js.Function1[/* s */ Any, Option_[Any]]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("modifyOption")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
         js.Function1[/* s */ Any, Option_[Any]]
       ]]
     
-    inline def prism[S, A](getOption: js.Function1[/* s */ S, Option_[A]], reverseGet: js.Function1[/* a */ A, S]): typings.monocleTs.prismMod.Prism_[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("prism")(getOption.asInstanceOf[js.Any], reverseGet.asInstanceOf[js.Any])).asInstanceOf[typings.monocleTs.prismMod.Prism_[S, A]]
+    inline def prism[S, A](getOption: js.Function1[/* s */ S, Option_[A]], reverseGet: js.Function1[/* a */ A, S]): typings.monocleTs.libPrismMod.Prism_[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("prism")(getOption.asInstanceOf[js.Any], reverseGet.asInstanceOf[js.Any])).asInstanceOf[typings.monocleTs.libPrismMod.Prism_[S, A]]
     
     inline def prop[A, P /* <: /* keyof A */ String */](prop: P): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ]]
     
     inline def props[A, P /* <: /* keyof A */ String */](props_0: P, props_1: P, props_2: P*): js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[
           Any, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in P ]: A[K]}
-      */ typings.monocleTs.monocleTsStrings.props & TopLevel[A]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in P ]: A[K]} */ js.Any
         ]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("props")((scala.List(props_0.asInstanceOf[js.Any], props_1.asInstanceOf[js.Any])).`++`(props_2.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.prismMod.Prism_[Any, A], 
-        typings.monocleTs.optionalMod.Optional_[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        typings.monocleTs.libOptionalMod.Optional_[
           Any, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in P ]: A[K]}
-      */ typings.monocleTs.monocleTsStrings.props & TopLevel[A]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in P ]: A[K]} */ js.Any
         ]
       ]]
     
-    inline def right[S, E, A](sea: typings.monocleTs.prismMod.Prism_[S, Either_[E, A]]): typings.monocleTs.prismMod.Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.prismMod.Prism_[S, A]]
+    inline def right[S, E, A](sea: typings.monocleTs.libPrismMod.Prism_[S, Either_[E, A]]): typings.monocleTs.libPrismMod.Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libPrismMod.Prism_[S, A]]
     
-    inline def set[A](a: A): js.Function1[/* sa */ typings.monocleTs.prismMod.Prism_[Any, A], js.Function1[/* s */ Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ typings.monocleTs.prismMod.Prism_[Any, A], js.Function1[/* s */ Any, Any]]]
+    inline def set[A](a: A): js.Function1[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        js.Function1[/* s */ Any, Any]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+        /* sa */ typings.monocleTs.libPrismMod.Prism_[Any, A], 
+        js.Function1[/* s */ Any, Any]
+      ]]
     
-    inline def some[S, A](soa: typings.monocleTs.prismMod.Prism_[S, Option_[A]]): typings.monocleTs.prismMod.Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(soa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.prismMod.Prism_[S, A]]
+    inline def some[S, A](soa: typings.monocleTs.libPrismMod.Prism_[S, Option_[A]]): typings.monocleTs.libPrismMod.Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(soa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libPrismMod.Prism_[S, A]]
     
     inline def traverse[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](T: Traversable1[T]): js.Function1[
-        /* sta */ typings.monocleTs.prismMod.Prism_[
+        /* sta */ typings.monocleTs.libPrismMod.Prism_[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ Any
         ], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(T.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sta */ typings.monocleTs.prismMod.Prism_[
+        /* sta */ typings.monocleTs.libPrismMod.Prism_[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ Any
         ], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ]]
     
     /* augmented module */
@@ -2906,299 +2907,295 @@ object mod {
     
     @JSImport("monocle-ts", "traversal.Category")
     @js.native
-    val Category: Category2[typings.monocleTs.traversalMod.URI] = js.native
+    val Category: Category2[typings.monocleTs.libTraversalMod.URI] = js.native
     
     @JSImport("monocle-ts", "traversal.Semigroupoid")
     @js.native
-    val Semigroupoid: Semigroupoid2[typings.monocleTs.traversalMod.URI] = js.native
+    val Semigroupoid: Semigroupoid2[typings.monocleTs.libTraversalMod.URI] = js.native
     
     @JSImport("monocle-ts", "traversal.URI")
     @js.native
     val URI: /* "monocle-ts/Traversal" */ String = js.native
     
     inline def atKey(key: String): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, Record[String, Any]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Option_[Any]]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, Record[String, Any]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Option_[Any]]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("atKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, Record[String, Any]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Option_[Any]]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, Record[String, Any]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Option_[Any]]
       ]]
     
     inline def component[A /* <: js.Array[Any] */, P /* <: /* keyof A */ String */](prop: P): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("component")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ]]
     
-    inline def compose[A, B](ab: typings.monocleTs.traversalMod.Traversal_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+    inline def compose[A, B](ab: typings.monocleTs.libTraversalMod.Traversal_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ]]
     
-    inline def composeIso[A, B](ab: typings.monocleTs.isoMod.Iso_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+    inline def composeIso[A, B](ab: typings.monocleTs.libIsoMod.Iso_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeIso")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ]]
     
-    inline def composeLens[A, B](ab: typings.monocleTs.lensMod.Lens_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+    inline def composeLens[A, B](ab: typings.monocleTs.libLensMod.Lens_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeLens")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ]]
     
-    inline def composeOptional[A, B](ab: typings.monocleTs.optionalMod.Optional_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+    inline def composeOptional[A, B](ab: typings.monocleTs.libOptionalMod.Optional_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeOptional")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ]]
     
-    inline def composePrism[A, B](ab: typings.monocleTs.prismMod.Prism_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+    inline def composePrism[A, B](ab: typings.monocleTs.libPrismMod.Prism_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composePrism")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ]]
     
-    inline def composeTraversal[A, B](ab: typings.monocleTs.traversalMod.Traversal_[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+    inline def composeTraversal[A, B](ab: typings.monocleTs.libTraversalMod.Traversal_[A, B]): js.Function1[
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeTraversal")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ]]
     
     inline def filter[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, A]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, A]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, A]
       ]]
     
     inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ]]
     
     inline def findFirst[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, js.Array[A]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, A]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, js.Array[A]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, js.Array[A]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, A]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, js.Array[A]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, A]
       ]]
     
     inline def findFirstNonEmpty[A](predicate: Predicate[A]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, A]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, A]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, A]
       ]]
     
     inline def findFirstNonEmpty_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, ReadonlyNonEmptyArray_[A]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, ReadonlyNonEmptyArray_[A]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ]]
     
     inline def findFirst_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, js.Array[A]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, js.Array[A]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, js.Array[A]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, B]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, js.Array[A]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, B]
       ]]
     
     inline def fold[A](M: Monoid[A]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
         js.Function1[/* s */ Any, A]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fold")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
         js.Function1[/* s */ Any, A]
       ]]
     
     inline def foldMap[M](M: Monoid[M]): js.Function1[
         /* f */ js.Function1[/* a */ Any, M], 
         js.Function1[
-          /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, Any], 
+          /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, Any], 
           js.Function1[/* s */ Any, M]
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("foldMap")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
         /* f */ js.Function1[/* a */ Any, M], 
         js.Function1[
-          /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, Any], 
+          /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, Any], 
           js.Function1[/* s */ Any, M]
         ]
       ]]
     
-    inline def fromNullable[S, A](sa: typings.monocleTs.traversalMod.Traversal_[S, A]): typings.monocleTs.traversalMod.Traversal_[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.traversalMod.Traversal_[S, NonNullable[A]]]
+    inline def fromNullable[S, A](sa: typings.monocleTs.libTraversalMod.Traversal_[S, A]): typings.monocleTs.libTraversalMod.Traversal_[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libTraversalMod.Traversal_[S, NonNullable[A]]]
     
     inline def fromTraversable[T](T: Traversable[T]): js.Function0[
-        typings.monocleTs.traversalMod.Traversal_[
+        typings.monocleTs.libTraversalMod.Traversal_[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<T, A> */ Any, 
           Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTraversable")(T.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
-        typings.monocleTs.traversalMod.Traversal_[
+        typings.monocleTs.libTraversalMod.Traversal_[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<T, A> */ Any, 
           Any
         ]
       ]]
     inline def fromTraversable[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](T: Traversable1[T]): js.Function0[
-        typings.monocleTs.traversalMod.Traversal_[
+        typings.monocleTs.libTraversalMod.Traversal_[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ Any, 
           Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTraversable")(T.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
-        typings.monocleTs.traversalMod.Traversal_[
+        typings.monocleTs.libTraversalMod.Traversal_[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ Any, 
           Any
         ]
       ]]
     inline def fromTraversable[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](T: Traversable2[T]): js.Function0[
-        typings.monocleTs.traversalMod.Traversal_[
+        typings.monocleTs.libTraversalMod.Traversal_[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<T, E, A> */ Any, 
           Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTraversable")(T.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
-        typings.monocleTs.traversalMod.Traversal_[
+        typings.monocleTs.libTraversalMod.Traversal_[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<T, E, A> */ Any, 
           Any
         ]
       ]]
     inline def fromTraversable[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](T: Traversable3[T]): js.Function0[
-        typings.monocleTs.traversalMod.Traversal_[
+        typings.monocleTs.libTraversalMod.Traversal_[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<T, R, E, A> */ Any, 
           Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTraversable")(T.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
-        typings.monocleTs.traversalMod.Traversal_[
+        typings.monocleTs.libTraversalMod.Traversal_[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<T, R, E, A> */ Any, 
           Any
         ]
       ]]
     
-    inline def getAll[S](s: S): js.Function1[/* sa */ typings.monocleTs.traversalMod.Traversal_[S, Any], js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(s.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ typings.monocleTs.traversalMod.Traversal_[S, Any], js.Array[Any]]]
+    inline def getAll[S](s: S): js.Function1[/* sa */ typings.monocleTs.libTraversalMod.Traversal_[S, Any], js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(s.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ typings.monocleTs.libTraversalMod.Traversal_[S, Any], js.Array[Any]]]
     
-    inline def id[S](): typings.monocleTs.traversalMod.Traversal_[S, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[typings.monocleTs.traversalMod.Traversal_[S, S]]
+    inline def id[S](): typings.monocleTs.libTraversalMod.Traversal_[S, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[typings.monocleTs.libTraversalMod.Traversal_[S, S]]
     
     inline def index(i: Double): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, js.Array[Any]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, js.Array[Any]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("index")(i.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, js.Array[Any]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, js.Array[Any]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ]]
     
     inline def indexNonEmpty(i: Double): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, ReadonlyNonEmptyArray_[Any]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, ReadonlyNonEmptyArray_[Any]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexNonEmpty")(i.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, ReadonlyNonEmptyArray_[Any]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, ReadonlyNonEmptyArray_[Any]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ]]
     
     inline def key(key: String): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, Record[String, Any]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, Record[String, Any]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, Record[String, Any]], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, Record[String, Any]], 
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ]]
     
-    inline def left[S, E, A](sea: typings.monocleTs.traversalMod.Traversal_[S, Either_[E, A]]): typings.monocleTs.traversalMod.Traversal_[S, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.traversalMod.Traversal_[S, E]]
+    inline def left[S, E, A](sea: typings.monocleTs.libTraversalMod.Traversal_[S, Either_[E, A]]): typings.monocleTs.libTraversalMod.Traversal_[S, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libTraversalMod.Traversal_[S, E]]
     
     inline def modify[A, B /* <: A */](f: js.Function1[/* a */ A, B]): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
         js.Function1[/* s */ Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("modify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
         js.Function1[/* s */ Any, Any]
       ]]
     
     inline def prop[A, P /* <: /* keyof A */ String */](prop: P): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[
           Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: A[P] */ js.Any
         ]
       ]]
     
     inline def props[A, P /* <: /* keyof A */ String */](props_0: P, props_1: P, props_2: P*): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[
           Any, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in P ]: A[K]}
-      */ typings.monocleTs.monocleTsStrings.props & TopLevel[A]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in P ]: A[K]} */ js.Any
         ]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("props")((scala.List(props_0.asInstanceOf[js.Any], props_1.asInstanceOf[js.Any])).`++`(props_2.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
-        typings.monocleTs.traversalMod.Traversal_[
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
+        typings.monocleTs.libTraversalMod.Traversal_[
           Any, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in P ]: A[K]}
-      */ typings.monocleTs.monocleTsStrings.props & TopLevel[A]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in P ]: A[K]} */ js.Any
         ]
       ]]
     
-    inline def right[S, E, A](sea: typings.monocleTs.traversalMod.Traversal_[S, Either_[E, A]]): typings.monocleTs.traversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.traversalMod.Traversal_[S, A]]
+    inline def right[S, E, A](sea: typings.monocleTs.libTraversalMod.Traversal_[S, Either_[E, A]]): typings.monocleTs.libTraversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(sea.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libTraversalMod.Traversal_[S, A]]
     
     inline def set[A](a: A): js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
         js.Function1[/* s */ Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sa */ typings.monocleTs.traversalMod.Traversal_[Any, A], 
+        /* sa */ typings.monocleTs.libTraversalMod.Traversal_[Any, A], 
         js.Function1[/* s */ Any, Any]
       ]]
     
-    inline def some[S, A](soa: typings.monocleTs.traversalMod.Traversal_[S, Option_[A]]): typings.monocleTs.traversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(soa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.traversalMod.Traversal_[S, A]]
+    inline def some[S, A](soa: typings.monocleTs.libTraversalMod.Traversal_[S, Option_[A]]): typings.monocleTs.libTraversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(soa.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libTraversalMod.Traversal_[S, A]]
     
-    inline def traversal[S, A](modifyF: typings.monocleTs.traversalMod.ModifyF[S, A]): typings.monocleTs.traversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")(modifyF.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.traversalMod.Traversal_[S, A]]
+    inline def traversal[S, A](modifyF: typings.monocleTs.libTraversalMod.ModifyF[S, A]): typings.monocleTs.libTraversalMod.Traversal_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("traversal")(modifyF.asInstanceOf[js.Any]).asInstanceOf[typings.monocleTs.libTraversalMod.Traversal_[S, A]]
     
     inline def traverse[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](T: Traversable1[T]): js.Function1[
-        /* sta */ typings.monocleTs.traversalMod.Traversal_[
+        /* sta */ typings.monocleTs.libTraversalMod.Traversal_[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ Any
         ], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(T.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* sta */ typings.monocleTs.traversalMod.Traversal_[
+        /* sta */ typings.monocleTs.libTraversalMod.Traversal_[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ Any
         ], 
-        typings.monocleTs.traversalMod.Traversal_[Any, Any]
+        typings.monocleTs.libTraversalMod.Traversal_[Any, Any]
       ]]
     
     /* augmented module */
@@ -3234,11 +3231,19 @@ object mod {
       ] = js.native
   }
   
-  type ModifyF[S, A] = typings.monocleTs.traversalMod.ModifyF[S, A]
+  type ModifyF[S, A] = typings.monocleTs.libTraversalMod.ModifyF[S, A]
   
   type OptionPropertyNames[S] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof S ]: -? S[K] extends fp-ts.fp-ts/lib/Option.Option<any>? K : never}[keyof S] */ js.Any
   
-  type OptionPropertyType[S, K /* <: OptionPropertyNames[S] */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S[K] extends fp-ts.fp-ts/lib/Option.Option<infer A> ? A : never
+    }}}
+    */
+  @js.native
+  trait OptionPropertyType[S, K /* <: OptionPropertyNames[S] */] extends StObject
   
   @js.native
   trait OptionalFromPath[S] extends StObject {

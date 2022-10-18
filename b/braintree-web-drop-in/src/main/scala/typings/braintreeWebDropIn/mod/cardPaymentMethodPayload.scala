@@ -1,6 +1,6 @@
 package typings.braintreeWebDropIn.mod
 
-import typings.braintreeWeb.threeDSecureMod.ThreeDSecureInfo
+import typings.braintreeWeb.modulesThreeDSecureMod.ThreeDSecureInfo
 import typings.braintreeWebDropIn.anon.Bin
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.CreditCard
 import org.scalablytyped.runtime.StObject

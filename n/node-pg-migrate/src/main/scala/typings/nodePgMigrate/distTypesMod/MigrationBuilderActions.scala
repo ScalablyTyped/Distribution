@@ -1,7 +1,7 @@
 package typings.nodePgMigrate.distTypesMod
 
+import typings.nodePgMigrate.distOperationsTablesTypesMod.ColumnDefinitions
 import typings.nodePgMigrate.nodePgMigrateBooleans.`false`
-import typings.nodePgMigrate.tablesTypesMod.ColumnDefinitions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

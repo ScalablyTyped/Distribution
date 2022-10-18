@@ -1,8 +1,8 @@
 package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.Styles
-import typings.antdMobileRn.checkboxIndexNativeMod.default
-import typings.antdMobileRn.checkboxPropsTypeMod.CheckboxPropsType
+import typings.antdMobileRn.libCheckboxIndexDotnativeMod.default
+import typings.antdMobileRn.libCheckboxPropsTypeMod.CheckboxPropsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

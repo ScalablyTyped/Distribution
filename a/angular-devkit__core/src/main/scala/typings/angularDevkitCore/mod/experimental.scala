@@ -2,16 +2,16 @@ package typings.angularDevkitCore.mod
 
 import typings.angularDevkitCore.anon.PartialJobDescription
 import typings.angularDevkitCore.anon.PartialReadwriteJobDescri
-import typings.angularDevkitCore.createJobHandlerMod.SimpleJobHandlerFn
-import typings.angularDevkitCore.dispatcherMod.JobDispatcher
-import typings.angularDevkitCore.interfaceMod.SchemaRegistry
-import typings.angularDevkitCore.interfaceMod.SchemaValidatorError
-import typings.angularDevkitCore.jobsApiMod.JobHandler
-import typings.angularDevkitCore.jobsApiMod.JobName
-import typings.angularDevkitCore.jobsApiMod.Registry
-import typings.angularDevkitCore.loggerLoggerMod.LoggerApi
-import typings.angularDevkitCore.strategyMod.strategy.JobStrategy
-import typings.angularDevkitCore.utilsMod.JsonValue
+import typings.angularDevkitCore.srcExperimentalJobsApiMod.JobHandler
+import typings.angularDevkitCore.srcExperimentalJobsApiMod.JobName
+import typings.angularDevkitCore.srcExperimentalJobsApiMod.Registry
+import typings.angularDevkitCore.srcExperimentalJobsCreateJobHandlerMod.SimpleJobHandlerFn
+import typings.angularDevkitCore.srcExperimentalJobsDispatcherMod.JobDispatcher
+import typings.angularDevkitCore.srcExperimentalJobsStrategyMod.strategy.JobStrategy
+import typings.angularDevkitCore.srcJsonSchemaInterfaceMod.SchemaRegistry
+import typings.angularDevkitCore.srcJsonSchemaInterfaceMod.SchemaValidatorError
+import typings.angularDevkitCore.srcJsonUtilsMod.JsonValue
+import typings.angularDevkitCore.srcLoggerLoggerMod.LoggerApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,28 +27,28 @@ object experimental {
     @JSImport("@angular-devkit/core", "experimental.jobs.ChannelAlreadyExistException")
     @js.native
     open class ChannelAlreadyExistException protected ()
-      extends typings.angularDevkitCore.experimentalMod.jobs.ChannelAlreadyExistException {
+      extends typings.angularDevkitCore.srcExperimentalMod.jobs.ChannelAlreadyExistException {
       def this(name: String) = this()
     }
     
     @JSImport("@angular-devkit/core", "experimental.jobs.FallbackRegistry")
     @js.native
     open class FallbackRegistry[MinimumArgumentValueT /* <: JsonValue */, MinimumInputValueT /* <: JsonValue */, MinimumOutputValueT /* <: JsonValue */] ()
-      extends typings.angularDevkitCore.experimentalMod.jobs.FallbackRegistry[MinimumArgumentValueT, MinimumInputValueT, MinimumOutputValueT] {
+      extends typings.angularDevkitCore.srcExperimentalMod.jobs.FallbackRegistry[MinimumArgumentValueT, MinimumInputValueT, MinimumOutputValueT] {
       def this(_fallbacks: js.Array[Registry[MinimumArgumentValueT, MinimumInputValueT, MinimumOutputValueT]]) = this()
     }
     
     @JSImport("@angular-devkit/core", "experimental.jobs.JobArgumentSchemaValidationError")
     @js.native
     open class JobArgumentSchemaValidationError ()
-      extends typings.angularDevkitCore.experimentalMod.jobs.JobArgumentSchemaValidationError {
+      extends typings.angularDevkitCore.srcExperimentalMod.jobs.JobArgumentSchemaValidationError {
       def this(errors: js.Array[SchemaValidatorError]) = this()
     }
     
     @JSImport("@angular-devkit/core", "experimental.jobs.JobDoesNotExistException")
     @js.native
     open class JobDoesNotExistException protected ()
-      extends typings.angularDevkitCore.experimentalMod.jobs.JobDoesNotExistException {
+      extends typings.angularDevkitCore.srcExperimentalMod.jobs.JobDoesNotExistException {
       def this(name: JobName) = this()
     }
     
@@ -57,26 +57,28 @@ object experimental {
     object JobInboundMessageKind extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.angularDevkitCore.jobsApiMod.JobInboundMessageKind & String] = js.native
+      def apply(value: String): js.UndefOr[
+            typings.angularDevkitCore.srcExperimentalJobsApiMod.JobInboundMessageKind & String
+          ] = js.native
       
-      /* "in" */ val Input: typings.angularDevkitCore.jobsApiMod.JobInboundMessageKind.Input & String = js.native
+      /* "in" */ val Input: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobInboundMessageKind.Input & String = js.native
       
-      /* "ip" */ val Ping: typings.angularDevkitCore.jobsApiMod.JobInboundMessageKind.Ping & String = js.native
+      /* "ip" */ val Ping: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobInboundMessageKind.Ping & String = js.native
       
-      /* "is" */ val Stop: typings.angularDevkitCore.jobsApiMod.JobInboundMessageKind.Stop & String = js.native
+      /* "is" */ val Stop: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobInboundMessageKind.Stop & String = js.native
     }
     
     @JSImport("@angular-devkit/core", "experimental.jobs.JobInboundMessageSchemaValidationError")
     @js.native
     open class JobInboundMessageSchemaValidationError ()
-      extends typings.angularDevkitCore.experimentalMod.jobs.JobInboundMessageSchemaValidationError {
+      extends typings.angularDevkitCore.srcExperimentalMod.jobs.JobInboundMessageSchemaValidationError {
       def this(errors: js.Array[SchemaValidatorError]) = this()
     }
     
     @JSImport("@angular-devkit/core", "experimental.jobs.JobNameAlreadyRegisteredException")
     @js.native
     open class JobNameAlreadyRegisteredException protected ()
-      extends typings.angularDevkitCore.experimentalMod.jobs.JobNameAlreadyRegisteredException {
+      extends typings.angularDevkitCore.srcExperimentalMod.jobs.JobNameAlreadyRegisteredException {
       def this(name: JobName) = this()
     }
     
@@ -85,31 +87,33 @@ object experimental {
     object JobOutboundMessageKind extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.angularDevkitCore.jobsApiMod.JobOutboundMessageKind & String] = js.native
+      def apply(value: String): js.UndefOr[
+            typings.angularDevkitCore.srcExperimentalJobsApiMod.JobOutboundMessageKind & String
+          ] = js.native
       
-      /* "cc" */ val ChannelComplete: typings.angularDevkitCore.jobsApiMod.JobOutboundMessageKind.ChannelComplete & String = js.native
+      /* "cc" */ val ChannelComplete: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobOutboundMessageKind.ChannelComplete & String = js.native
       
-      /* "cn" */ val ChannelCreate: typings.angularDevkitCore.jobsApiMod.JobOutboundMessageKind.ChannelCreate & String = js.native
+      /* "cn" */ val ChannelCreate: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobOutboundMessageKind.ChannelCreate & String = js.native
       
-      /* "ce" */ val ChannelError: typings.angularDevkitCore.jobsApiMod.JobOutboundMessageKind.ChannelError & String = js.native
+      /* "ce" */ val ChannelError: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobOutboundMessageKind.ChannelError & String = js.native
       
-      /* "cm" */ val ChannelMessage: typings.angularDevkitCore.jobsApiMod.JobOutboundMessageKind.ChannelMessage & String = js.native
+      /* "cm" */ val ChannelMessage: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobOutboundMessageKind.ChannelMessage & String = js.native
       
-      /* "e" */ val End: typings.angularDevkitCore.jobsApiMod.JobOutboundMessageKind.End & String = js.native
+      /* "e" */ val End: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobOutboundMessageKind.End & String = js.native
       
-      /* "c" */ val OnReady: typings.angularDevkitCore.jobsApiMod.JobOutboundMessageKind.OnReady & String = js.native
+      /* "c" */ val OnReady: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobOutboundMessageKind.OnReady & String = js.native
       
-      /* "o" */ val Output: typings.angularDevkitCore.jobsApiMod.JobOutboundMessageKind.Output & String = js.native
+      /* "o" */ val Output: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobOutboundMessageKind.Output & String = js.native
       
-      /* "p" */ val Pong: typings.angularDevkitCore.jobsApiMod.JobOutboundMessageKind.Pong & String = js.native
+      /* "p" */ val Pong: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobOutboundMessageKind.Pong & String = js.native
       
-      /* "s" */ val Start: typings.angularDevkitCore.jobsApiMod.JobOutboundMessageKind.Start & String = js.native
+      /* "s" */ val Start: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobOutboundMessageKind.Start & String = js.native
     }
     
     @JSImport("@angular-devkit/core", "experimental.jobs.JobOutputSchemaValidationError")
     @js.native
     open class JobOutputSchemaValidationError ()
-      extends typings.angularDevkitCore.experimentalMod.jobs.JobOutputSchemaValidationError {
+      extends typings.angularDevkitCore.srcExperimentalMod.jobs.JobOutputSchemaValidationError {
       def this(errors: js.Array[SchemaValidatorError]) = this()
     }
     
@@ -118,28 +122,28 @@ object experimental {
     object JobState extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.angularDevkitCore.jobsApiMod.JobState & String] = js.native
+      def apply(value: String): js.UndefOr[typings.angularDevkitCore.srcExperimentalJobsApiMod.JobState & String] = js.native
       
-      /* "ended" */ val Ended: typings.angularDevkitCore.jobsApiMod.JobState.Ended & String = js.native
+      /* "ended" */ val Ended: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobState.Ended & String = js.native
       
-      /* "errored" */ val Errored: typings.angularDevkitCore.jobsApiMod.JobState.Errored & String = js.native
+      /* "errored" */ val Errored: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobState.Errored & String = js.native
       
-      /* "queued" */ val Queued: typings.angularDevkitCore.jobsApiMod.JobState.Queued & String = js.native
+      /* "queued" */ val Queued: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobState.Queued & String = js.native
       
-      /* "ready" */ val Ready: typings.angularDevkitCore.jobsApiMod.JobState.Ready & String = js.native
+      /* "ready" */ val Ready: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobState.Ready & String = js.native
       
-      /* "started" */ val Started: typings.angularDevkitCore.jobsApiMod.JobState.Started & String = js.native
+      /* "started" */ val Started: typings.angularDevkitCore.srcExperimentalJobsApiMod.JobState.Started & String = js.native
     }
     
     @JSImport("@angular-devkit/core", "experimental.jobs.SimpleJobRegistry")
     @js.native
     open class SimpleJobRegistry[MinimumArgumentValueT /* <: JsonValue */, MinimumInputValueT /* <: JsonValue */, MinimumOutputValueT /* <: JsonValue */] ()
-      extends typings.angularDevkitCore.experimentalMod.jobs.SimpleJobRegistry[MinimumArgumentValueT, MinimumInputValueT, MinimumOutputValueT]
+      extends typings.angularDevkitCore.srcExperimentalMod.jobs.SimpleJobRegistry[MinimumArgumentValueT, MinimumInputValueT, MinimumOutputValueT]
     
     @JSImport("@angular-devkit/core", "experimental.jobs.SimpleScheduler")
     @js.native
     open class SimpleScheduler[MinimumArgumentT /* <: JsonValue */, MinimumInputT /* <: JsonValue */, MinimumOutputT /* <: JsonValue */] protected ()
-      extends typings.angularDevkitCore.experimentalMod.jobs.SimpleScheduler[MinimumArgumentT, MinimumInputT, MinimumOutputT] {
+      extends typings.angularDevkitCore.srcExperimentalMod.jobs.SimpleScheduler[MinimumArgumentT, MinimumInputT, MinimumOutputT] {
       def this(_jobRegistry: Registry[MinimumArgumentT, MinimumInputT, MinimumOutputT]) = this()
       def this(
         _jobRegistry: Registry[MinimumArgumentT, MinimumInputT, MinimumOutputT],

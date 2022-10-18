@@ -3,7 +3,7 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.requestParametersMod.RequestParameters
+import typings.octokitTypes.distTypesRequestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

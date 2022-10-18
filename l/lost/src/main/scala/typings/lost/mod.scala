@@ -3,10 +3,10 @@ package typings.lost
 import org.scalablytyped.runtime.Shortcut
 import typings.lost.lostStrings.ltr
 import typings.lost.lostStrings.rtl
+import typings.postcss.libNodeMod.ChildNode
 import typings.postcss.mod.Container
 import typings.postcss.mod.PluginCreator
 import typings.postcss.mod.Result
-import typings.postcss.nodeMod.ChildNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

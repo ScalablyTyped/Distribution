@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object fingerprintjsFingerprintjsStrings {
   
   @js.native
-  sealed trait SourcesToComponents extends StObject
-  inline def SourcesToComponents: SourcesToComponents = "SourcesToComponents".asInstanceOf[SourcesToComponents]
-  
-  @js.native
   sealed trait p3
     extends StObject
        with ColorGamut

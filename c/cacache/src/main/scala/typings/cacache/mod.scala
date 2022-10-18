@@ -3,10 +3,10 @@ package typings.cacache
 import typings.cacache.anon.Algorithm
 import typings.cacache.anon.CacheObjectsizenumber
 import typings.cacache.cacacheBooleans.`false`
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.bufferMod.global.Buffer
-import typings.std.ReadableStream
 import typings.std.Record
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,15 +77,15 @@ object mod {
         * entirely. This version does not emit the `metadata` and `integrity`
         * events at all.
         */
-      inline def apply(cachePath: String, key: String): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
-      inline def apply(cachePath: String, key: String, opts: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+      inline def apply(cachePath: String, key: String): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+      inline def apply(cachePath: String, key: String, opts: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
       
       @JSImport("cacache", "get.stream")
       @js.native
       val ^ : js.Any = js.native
       
-      inline def byDigest(cachePath: String, hash: String): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("byDigest")(cachePath.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
-      inline def byDigest(cachePath: String, hash: String, opts: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("byDigest")(cachePath.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+      inline def byDigest(cachePath: String, hash: String): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("byDigest")(cachePath.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+      inline def byDigest(cachePath: String, hash: String, opts: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("byDigest")(cachePath.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
     }
     
     inline def sync(cachePath: String, key: String): CacheObject = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[CacheObject]
@@ -192,7 +192,7 @@ object mod {
       * This works just like `ls`, except `get.info` entries are returned as
       * `'data'` events on the returned stream.
       */
-    inline def stream(cachePath: String): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(cachePath.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
+    inline def stream(cachePath: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(cachePath.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
     
     type Cache = Record[String, CacheObjectsizenumber]
   }
@@ -211,8 +211,8 @@ object mod {
       * Emits an `integrity` event with the digest of written contents when it
       * succeeds.
       */
-    inline def stream(cachePath: String, key: String): WritableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[WritableStream[Any]]
-    inline def stream(cachePath: String, key: String, opts: Options): WritableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WritableStream[Any]]
+    inline def stream(cachePath: String, key: String): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
+    inline def stream(cachePath: String, key: String, opts: Options): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
     
     trait Options extends StObject {
       

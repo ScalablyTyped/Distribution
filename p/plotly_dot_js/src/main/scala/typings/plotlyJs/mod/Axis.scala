@@ -1,6 +1,6 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.anon.PartialDataTitleFont
+import typings.plotlyJs.anon.PartialDataTitle
 import typings.plotlyJs.anon.PartialFont
 import typings.plotlyJs.anon.PartialTickFormatStop
 import typings.plotlyJs.plotlyJsBooleans.`false`
@@ -282,7 +282,7 @@ trait Axis extends StObject {
   
   var tickwidth: Double
   
-  var title: String | PartialDataTitleFont
+  var title: String | PartialDataTitle
   
   /**
     * Former `titlefont` is now the sub-attribute `font` of `title`.
@@ -366,7 +366,7 @@ object Axis {
     ticktext: js.Array[String],
     tickvals: js.Array[Any],
     tickwidth: Double,
-    title: String | PartialDataTitleFont,
+    title: String | PartialDataTitle,
     titlefont: PartialFont,
     `type`: AxisType,
     visible: Boolean,
@@ -501,7 +501,7 @@ object Axis {
     
     inline def setTickwidth(value: Double): Self = StObject.set(x, "tickwidth", value.asInstanceOf[js.Any])
     
-    inline def setTitle(value: String | PartialDataTitleFont): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | PartialDataTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitlefont(value: PartialFont): Self = StObject.set(x, "titlefont", value.asInstanceOf[js.Any])
     

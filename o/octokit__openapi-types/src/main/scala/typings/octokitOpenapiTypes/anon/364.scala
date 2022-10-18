@@ -6,36 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `364` extends StObject {
   
-  var secrets: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-secret'] */ js.Any
-  ]
+  /** The organization name. The name is not case sensitive. */
+  @JSName("org")
+  var org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
   
-  var total_count: Double
+  /** The slug of the team name. */
+  var team_slug: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-slug'] */ js.Any
 }
 object `364` {
   
   inline def apply(
-    secrets: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-secret'] */ js.Any
-    ],
-    total_count: Double
+    org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any,
+    team_slug: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-slug'] */ js.Any
   ): `364` = {
-    val __obj = js.Dynamic.literal(secrets = secrets.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(team_slug = team_slug.asInstanceOf[js.Any])
+    __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[`364`]
   }
   
   extension [Self <: `364`](x: Self) {
     
-    inline def setSecrets(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-secret'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+    inline def setOrg_(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
+    ): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    inline def setSecretsVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-secret'] */ js.Any)*
-    ): Self = StObject.set(x, "secrets", js.Array(value*))
-    
-    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setTeam_slug(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-slug'] */ js.Any
+    ): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
   }
 }

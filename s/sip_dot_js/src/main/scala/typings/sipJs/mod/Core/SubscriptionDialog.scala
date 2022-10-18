@@ -1,7 +1,7 @@
 package typings.sipJs.mod.Core
 
-import typings.sipJs.dialogStateMod.DialogState
-import typings.sipJs.subscriptionSubscriptionDelegateMod.SubscriptionDelegate
+import typings.sipJs.libCoreDialogsDialogStateMod.DialogState
+import typings.sipJs.libCoreSubscriptionSubscriptionDelegateMod.SubscriptionDelegate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Core.SubscriptionDialog")
 @js.native
 open class SubscriptionDialog protected ()
-  extends typings.sipJs.coreMod.SubscriptionDialog {
+  extends typings.sipJs.libCoreMod.SubscriptionDialog {
   def this(
     subscriptionEvent: String,
     subscriptionExpires: Double,
-    subscriptionState: typings.sipJs.subscriptionSubscriptionMod.SubscriptionState,
-    core: typings.sipJs.userAgentCoreUserAgentCoreMod.UserAgentCore,
+    subscriptionState: typings.sipJs.libCoreSubscriptionSubscriptionMod.SubscriptionState,
+    core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
     state: DialogState
   ) = this()
   def this(
     subscriptionEvent: String,
     subscriptionExpires: Double,
-    subscriptionState: typings.sipJs.subscriptionSubscriptionMod.SubscriptionState,
-    core: typings.sipJs.userAgentCoreUserAgentCoreMod.UserAgentCore,
+    subscriptionState: typings.sipJs.libCoreSubscriptionSubscriptionMod.SubscriptionState,
+    core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
     state: DialogState,
     delegate: SubscriptionDelegate
   ) = this()
@@ -42,7 +42,7 @@ object SubscriptionDialog {
     * @param incomingResponseMessage - Incoming response message creating dialog.
     */
   inline def initialDialogStateForSubscription(
-    outgoingSubscribeRequestMessage: typings.sipJs.messagesMod.OutgoingRequestMessage,
-    incomingNotifyRequestMessage: typings.sipJs.messagesMod.IncomingRequestMessage
+    outgoingSubscribeRequestMessage: typings.sipJs.libCoreMessagesMod.OutgoingRequestMessage,
+    incomingNotifyRequestMessage: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
   ): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForSubscription")(outgoingSubscribeRequestMessage.asInstanceOf[js.Any], incomingNotifyRequestMessage.asInstanceOf[js.Any])).asInstanceOf[DialogState]
 }

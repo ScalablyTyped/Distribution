@@ -1,8 +1,8 @@
 package typings.jupyterlabLogconsole
 
-import typings.jupyterlabLogconsole.loggerMod.FullLogLevel
-import typings.jupyterlabLogconsole.loggerMod.ILogOutput
-import typings.jupyterlabLogconsole.loggerMod.ILogOutputModel
+import typings.jupyterlabLogconsole.libLoggerMod.FullLogLevel
+import typings.jupyterlabLogconsole.libLoggerMod.ILogOutput
+import typings.jupyterlabLogconsole.libLoggerMod.ILogOutputModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

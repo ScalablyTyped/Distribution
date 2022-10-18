@@ -142,7 +142,7 @@ object mod {
     var noRefs: js.UndefOr[Boolean] = js.undefined
     
     /** strings will be quoted using this quoting style. If you specify single quotes, double quotes will still be used for non-printable characters. (default: `'`) */
-    var quotingType: js.UndefOr[String | Quotationmark] = js.undefined
+    var quotingType: js.UndefOr[(/* ' */ String) | Quotationmark] = js.undefined
     
     /** callback `function (key, value)` called recursively on each key/value in source object (see `replacer` docs for `JSON.stringify`). */
     var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any]] = js.undefined
@@ -200,7 +200,7 @@ object mod {
       
       inline def setNoRefsUndefined: Self = StObject.set(x, "noRefs", js.undefined)
       
-      inline def setQuotingType(value: String | Quotationmark): Self = StObject.set(x, "quotingType", value.asInstanceOf[js.Any])
+      inline def setQuotingType(value: (/* ' */ String) | Quotationmark): Self = StObject.set(x, "quotingType", value.asInstanceOf[js.Any])
       
       inline def setQuotingTypeUndefined: Self = StObject.set(x, "quotingType", js.undefined)
       

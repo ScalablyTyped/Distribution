@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.DefaultValue
-import typings.antDesignReactNative.sliderMod.default
+import typings.antDesignReactNative.libSliderMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -143,12 +143,15 @@ object anon {
       * The query corresponding to the results  The query corresponding to the
       * results, if a SearchAutocompleteResult was not used to perform the search.
       */
-    var query: js.UndefOr[String] = js.undefined
+    var query: /* import warning: importer.ImportType#apply Failed type conversion: Q extends apple-mapkit-js-browser.mapkit.SearchAutocompleteResult ? undefined : string */ js.Any
   }
   object DisplayRegion {
     
-    inline def apply[Q](places: js.Array[Place]): DisplayRegion[Q] = {
-      val __obj = js.Dynamic.literal(places = places.asInstanceOf[js.Any])
+    inline def apply[Q](
+      places: js.Array[Place],
+      query: /* import warning: importer.ImportType#apply Failed type conversion: Q extends apple-mapkit-js-browser.mapkit.SearchAutocompleteResult ? undefined : string */ js.Any
+    ): DisplayRegion[Q] = {
+      val __obj = js.Dynamic.literal(places = places.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayRegion[Q]]
     }
     
@@ -162,9 +165,9 @@ object anon {
       
       inline def setPlacesVarargs(value: Place*): Self = StObject.set(x, "places", js.Array(value*))
       
-      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-      
-      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQuery(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: Q extends apple-mapkit-js-browser.mapkit.SearchAutocompleteResult ? undefined : string */ js.Any
+      ): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
   

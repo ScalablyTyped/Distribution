@@ -5,7 +5,7 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.`use-credentials`
 import typings.antDesignProLayout.antDesignProLayoutStrings.anonymous
 import typings.antDesignProLayout.antDesignProLayoutStrings.circle
 import typings.antDesignProLayout.antDesignProLayoutStrings.square
-import typings.antd.sizeContextMod.AvatarSize
+import typings.antd.libAvatarSizeContextMod.AvatarSize
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent

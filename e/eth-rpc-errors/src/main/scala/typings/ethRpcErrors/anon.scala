@@ -1,11 +1,11 @@
 package typings.ethRpcErrors
 
-import typings.ethRpcErrors.classesMod.EthereumProviderError
-import typings.ethRpcErrors.classesMod.EthereumRpcError
-import typings.ethRpcErrors.classesMod.SerializedEthereumRpcError
-import typings.ethRpcErrors.errorsMod.CustomErrorArg
-import typings.ethRpcErrors.errorsMod.EthereumErrorOptions
-import typings.ethRpcErrors.errorsMod.ServerErrorOptions
+import typings.ethRpcErrors.distClassesMod.EthereumProviderError
+import typings.ethRpcErrors.distClassesMod.EthereumRpcError
+import typings.ethRpcErrors.distClassesMod.SerializedEthereumRpcError
+import typings.ethRpcErrors.distErrorsMod.CustomErrorArg
+import typings.ethRpcErrors.distErrorsMod.EthereumErrorOptions
+import typings.ethRpcErrors.distErrorsMod.ServerErrorOptions
 import typings.ethRpcErrors.ethRpcErrorsInts.`-32000`
 import typings.ethRpcErrors.ethRpcErrorsInts.`-32001`
 import typings.ethRpcErrors.ethRpcErrorsInts.`-32002`

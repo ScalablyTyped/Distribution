@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +26,7 @@ trait LocalDiskInitializeParams extends StObject {
   
   /** Optional. Labels to apply to this disk. These can be later modified by the disks.setLabels method. This field is only applicable for persistent disks. */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.LocalDiskInitializeParams & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object LocalDiskInitializeParams {
@@ -58,9 +55,7 @@ object LocalDiskInitializeParams {
     inline def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.LocalDiskInitializeParams & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

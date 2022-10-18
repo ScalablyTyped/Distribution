@@ -1,7 +1,7 @@
 package typings.antdMobileRn.mod
 
-import typings.antdMobileRn.carouselIndexNativeMod.CarouselProps
-import typings.antdMobileRn.carouselIndexNativeMod.default
+import typings.antdMobileRn.libCarouselIndexDotnativeMod.CarouselProps
+import typings.antdMobileRn.libCarouselIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

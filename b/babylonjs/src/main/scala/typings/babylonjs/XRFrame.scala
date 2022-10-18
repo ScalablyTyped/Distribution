@@ -1,14 +1,26 @@
 package typings.babylonjs
 
+import typings.std.DOMHighResTimeStamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Represents a snapshot of the state of all of the tracked objects for an XRSession. Applications
+  * can acquire an XRFrame by calling requestAnimationFrame() on an XRSession with an
+  * XRFrameRequestCallback. When the callback is called it will be passed an XRFrame.
+  * Events which need to communicate tracking state, such as the select event, will also provide an
+  * XRFrame.
+  *
+  * ref: https://immersive-web.github.io/webxr/#xrframe-interface
+  */
 trait XRFrame extends StObject {
   
-  var createAnchor: js.UndefOr[
+  var createAnchor: (js.UndefOr[
+    js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.UndefOr[js.Promise[XRAnchor]]]
+  ]) & (js.UndefOr[
     js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.Promise[XRAnchor]]
-  ] = js.undefined
+  ])
   
   var detectedPlanes: js.UndefOr[XRPlaneSet] = js.undefined
   
@@ -31,7 +43,6 @@ trait XRFrame extends StObject {
     ]
   ] = js.undefined
   
-  // AR
   def getHitTestResults(hitTestSource: XRHitTestSource): js.Array[XRHitTestResult]
   
   def getHitTestResultsForTransientInput(hitTestSource: XRTransientInputHitTestSource): js.Array[XRTransientInputHitTestResult]
@@ -40,13 +51,31 @@ trait XRFrame extends StObject {
   var getImageTrackingResults: js.UndefOr[js.Function0[js.Array[XRImageTrackingResult]]] = js.undefined
   
   // Hand tracking
-  var getJointPose: js.UndefOr[js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, XRJointPose]] = js.undefined
+  var getJointPose: (js.UndefOr[
+    js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, js.UndefOr[XRJointPose]]
+  ]) & (js.UndefOr[js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, XRJointPose]])
   
   def getLightEstimate(xrLightProbe: XRLightProbe): XRLightEstimate
   
+  /**
+    * Provides the pose of space relative to baseSpace as an XRPose, at the time represented by
+    * the XRFrame.
+    *
+    * @param space
+    * @param baseSpace
+    */
   def getPose(space: XRSpace, baseSpace: XRSpace): js.UndefOr[XRPose]
   
+  /**
+    * Provides the pose of the viewer relative to referenceSpace as an XRViewerPose, at the
+    * XRFrame's time.
+    *
+    * @param referenceSpace
+    */
   def getViewerPose(referenceSpace: XRReferenceSpace): js.UndefOr[XRViewerPose]
+  
+  // BABYLON CHANGE - switched to optional
+  val predictedDisplayTime: js.UndefOr[DOMHighResTimeStamp] = js.undefined
   
   val session: XRSession
   
@@ -59,22 +88,34 @@ trait XRFrame extends StObject {
 object XRFrame {
   
   inline def apply(
+    createAnchor: (js.UndefOr[
+      js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.UndefOr[js.Promise[XRAnchor]]]
+    ]) & (js.UndefOr[
+      js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.Promise[XRAnchor]]
+    ]),
     getHitTestResults: XRHitTestSource => js.Array[XRHitTestResult],
     getHitTestResultsForTransientInput: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult],
+    getJointPose: (js.UndefOr[
+      js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, js.UndefOr[XRJointPose]]
+    ]) & (js.UndefOr[js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, XRJointPose]]),
     getLightEstimate: XRLightProbe => XRLightEstimate,
     getPose: (XRSpace, XRSpace) => js.UndefOr[XRPose],
     getViewerPose: XRReferenceSpace => js.UndefOr[XRViewerPose],
     session: XRSession
   ): XRFrame = {
-    val __obj = js.Dynamic.literal(getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getLightEstimate = js.Any.fromFunction1(getLightEstimate), getPose = js.Any.fromFunction2(getPose), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(createAnchor = createAnchor.asInstanceOf[js.Any], getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getJointPose = getJointPose.asInstanceOf[js.Any], getLightEstimate = js.Any.fromFunction1(getLightEstimate), getPose = js.Any.fromFunction2(getPose), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[XRFrame]
   }
   
   extension [Self <: XRFrame](x: Self) {
     
-    inline def setCreateAnchor(value: (/* pose */ XRRigidTransform, /* space */ XRSpace) => js.Promise[XRAnchor]): Self = StObject.set(x, "createAnchor", js.Any.fromFunction2(value))
-    
-    inline def setCreateAnchorUndefined: Self = StObject.set(x, "createAnchor", js.undefined)
+    inline def setCreateAnchor(
+      value: (js.UndefOr[
+          js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.UndefOr[js.Promise[XRAnchor]]]
+        ]) & (js.UndefOr[
+          js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.Promise[XRAnchor]]
+        ])
+    ): Self = StObject.set(x, "createAnchor", value.asInstanceOf[js.Any])
     
     inline def setDetectedPlanes(value: XRPlaneSet): Self = StObject.set(x, "detectedPlanes", value.asInstanceOf[js.Any])
     
@@ -106,15 +147,21 @@ object XRFrame {
     
     inline def setGetImageTrackingResultsUndefined: Self = StObject.set(x, "getImageTrackingResults", js.undefined)
     
-    inline def setGetJointPose(value: (/* joint */ XRJointSpace, /* baseSpace */ XRSpace) => XRJointPose): Self = StObject.set(x, "getJointPose", js.Any.fromFunction2(value))
-    
-    inline def setGetJointPoseUndefined: Self = StObject.set(x, "getJointPose", js.undefined)
+    inline def setGetJointPose(
+      value: (js.UndefOr[
+          js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, js.UndefOr[XRJointPose]]
+        ]) & (js.UndefOr[js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, XRJointPose]])
+    ): Self = StObject.set(x, "getJointPose", value.asInstanceOf[js.Any])
     
     inline def setGetLightEstimate(value: XRLightProbe => XRLightEstimate): Self = StObject.set(x, "getLightEstimate", js.Any.fromFunction1(value))
     
     inline def setGetPose(value: (XRSpace, XRSpace) => js.UndefOr[XRPose]): Self = StObject.set(x, "getPose", js.Any.fromFunction2(value))
     
     inline def setGetViewerPose(value: XRReferenceSpace => js.UndefOr[XRViewerPose]): Self = StObject.set(x, "getViewerPose", js.Any.fromFunction1(value))
+    
+    inline def setPredictedDisplayTime(value: DOMHighResTimeStamp): Self = StObject.set(x, "predictedDisplayTime", value.asInstanceOf[js.Any])
+    
+    inline def setPredictedDisplayTimeUndefined: Self = StObject.set(x, "predictedDisplayTime", js.undefined)
     
     inline def setSession(value: XRSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     

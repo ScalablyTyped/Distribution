@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientArea120tablesStrings {
   
   @js.native
-  sealed trait Row extends StObject
-  inline def Row: Row = "Row".asInstanceOf[Row]
-  
-  @js.native
   sealed trait area120tables extends StObject
   inline def area120tables: area120tables = "area120tables".asInstanceOf[area120tables]
   

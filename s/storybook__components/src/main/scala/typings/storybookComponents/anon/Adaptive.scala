@@ -1,12 +1,12 @@
 package typings.storybookComponents.anon
 
 import typings.std.HTMLElement
-import typings.storybookComponents.popperjsCoreLibEnumsMod.BasePlacement
-import typings.storybookComponents.popperjsCoreLibEnumsMod.Variation
-import typings.storybookComponents.popperjsCoreLibModifiersComputeStylesMod.RoundOffsets
-import typings.storybookComponents.popperjsCoreLibTypesMod.Offsets
-import typings.storybookComponents.popperjsCoreLibTypesMod.PositioningStrategy
-import typings.storybookComponents.popperjsCoreLibTypesMod.Rect
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.BasePlacement
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Variation
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibModifiersComputeStylesMod`.RoundOffsets
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.Offsets
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.PositioningStrategy
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

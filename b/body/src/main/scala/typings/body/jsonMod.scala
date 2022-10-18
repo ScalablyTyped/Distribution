@@ -1,7 +1,7 @@
 package typings.body
 
 import typings.body.anon.JSON
-import typings.body.callbackMod.Callback
+import typings.body.commonCallbackMod.Callback
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject

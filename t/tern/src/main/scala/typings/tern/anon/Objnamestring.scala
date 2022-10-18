@@ -1,9 +1,9 @@
 package typings.tern.anon
 
-import typings.tern.inferMod.ANull
-import typings.tern.inferMod.AVal
-import typings.tern.inferMod.Obj
-import typings.tern.inferMod.Type
+import typings.tern.libInferMod.ANull
+import typings.tern.libInferMod.AVal
+import typings.tern.libInferMod.Obj
+import typings.tern.libInferMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

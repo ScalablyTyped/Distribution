@@ -1,7 +1,6 @@
 package typings.factoryGirl
 
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -14,9 +13,15 @@ object mod extends Shortcut {
   @js.native
   val ^ : Static = js.native
   
-  type Attributes[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: factory-girl.factory-girl.Definition<T[P]>}
-    */ typings.factoryGirl.factoryGirlStrings.Attributes & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: factory-girl.factory-girl.Definition<T[P]>}
+    }}}
+    */
+  @js.native
+  trait Attributes[T] extends StObject
   
   type BuildOptions = Record[String, Any]
   

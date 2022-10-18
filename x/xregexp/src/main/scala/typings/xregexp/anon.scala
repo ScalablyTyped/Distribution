@@ -1,7 +1,6 @@
 package typings.xregexp
 
 import typings.xregexp.mod.FeatureOptions
-import typings.xregexp.mod.MatchRecursiveValueNames
 import typings.xregexp.mod.UnicodeCharacterRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -252,24 +251,6 @@ object anon {
       inline def setIsBmpLastUndefined: Self = StObject.set(x, "isBmpLast", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined std.Required<std.Pick<xregexp.xregexp.MatchRecursiveOptions, 'valueNames'>> */
-  trait RequiredPickMatchRecursiv extends StObject {
-    
-    var valueNames: MatchRecursiveValueNames
-  }
-  object RequiredPickMatchRecursiv {
-    
-    inline def apply(valueNames: MatchRecursiveValueNames): RequiredPickMatchRecursiv = {
-      val __obj = js.Dynamic.literal(valueNames = valueNames.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RequiredPickMatchRecursiv]
-    }
-    
-    extension [Self <: RequiredPickMatchRecursiv](x: Self) {
-      
-      inline def setValueNames(value: MatchRecursiveValueNames): Self = StObject.set(x, "valueNames", value.asInstanceOf[js.Any])
     }
   }
 }

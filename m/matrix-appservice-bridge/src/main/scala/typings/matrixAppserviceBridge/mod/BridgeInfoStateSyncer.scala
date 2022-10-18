@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.bridgeInfoStateMod.Opts
+import typings.matrixAppserviceBridge.libComponentsBridgeInfoStateMod.Opts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "BridgeInfoStateSyncer")
 @js.native
 open class BridgeInfoStateSyncer[BridgeMappingInfo] protected ()
-  extends typings.matrixAppserviceBridge.bridgeInfoStateMod.BridgeInfoStateSyncer[BridgeMappingInfo] {
-  def this(bridge: typings.matrixAppserviceBridge.bridgeMod.Bridge, opts: Opts[BridgeMappingInfo]) = this()
+  extends typings.matrixAppserviceBridge.libComponentsBridgeInfoStateMod.BridgeInfoStateSyncer[BridgeMappingInfo] {
+  def this(bridge: typings.matrixAppserviceBridge.libBridgeMod.Bridge, opts: Opts[BridgeMappingInfo]) = this()
 }
 /* static members */
 object BridgeInfoStateSyncer {

@@ -1,10 +1,10 @@
 package typings.puppeteer.mod
 
-import typings.puppeteer.anon.ButtonClickCount
+import typings.puppeteer.anon.Button
 import typings.puppeteer.anon.Delay
 import typings.puppeteer.anon.OmitFrameAddStyleTagOptio
-import typings.puppeteer.anon.RefererTimeoutWaitUntil
-import typings.puppeteer.anon.`1`
+import typings.puppeteer.anon.Referer
+import typings.puppeteer.anon.WaitUntil
 import typings.std.Awaited
 import typings.std.HTMLLinkElement
 import typings.std.HTMLScriptElement
@@ -69,7 +69,11 @@ open class Frame () extends StObject {
   /**
     * @deprecated Use {@link Frame.$$} with the `xpath` prefix.
     *
+    * Example: `await frame.$$('xpath/' + xpathExpression)`
+    *
     * This method evaluates the given XPath expression and returns the results.
+    * If `xpath` starts with `//` instead of `.//`, the dot will be appended
+    * automatically.
     * @param expression - the XPath expression to evaluate.
     */
   @JSName("$x")
@@ -165,7 +169,7 @@ open class Frame () extends StObject {
     * @param selector - The selector to query for.
     */
   def click(selector: String): js.Promise[Unit] = js.native
-  def click(selector: String, options: ButtonClickCount): js.Promise[Unit] = js.native
+  def click(selector: String, options: Button): js.Promise[Unit] = js.native
   
   /**
     * @returns The full HTML contents of the frame, including the DOCTYPE.
@@ -250,7 +254,7 @@ open class Frame () extends StObject {
     * calling {@link HTTPResponse.status}.
     */
   def goto(url: String): js.Promise[HTTPResponse | Null] = js.native
-  def goto(url: String, options: RefererTimeoutWaitUntil): js.Promise[HTTPResponse | Null] = js.native
+  def goto(url: String, options: Referer): js.Promise[HTTPResponse | Null] = js.native
   
   /**
     * Hovers the pointer over the center of the first element that matches the
@@ -334,7 +338,7 @@ open class Frame () extends StObject {
     * what point to consider the content setting successful.
     */
   def setContent(html: String): js.Promise[Unit] = js.native
-  def setContent(html: String, options: `1`): js.Promise[Unit] = js.native
+  def setContent(html: String, options: WaitUntil): js.Promise[Unit] = js.native
   
   /**
     * Taps the first element that matches the `selector`.
@@ -456,7 +460,7 @@ open class Frame () extends StObject {
     * @returns a promise that resolves when the frame navigates to a new URL.
     */
   def waitForNavigation(): js.Promise[HTTPResponse | Null] = js.native
-  def waitForNavigation(options: `1`): js.Promise[HTTPResponse | Null] = js.native
+  def waitForNavigation(options: WaitUntil): js.Promise[HTTPResponse | Null] = js.native
   
   /**
     * Waits for an element matching the given selector to appear in the frame.
@@ -497,7 +501,7 @@ open class Frame () extends StObject {
   def waitForSelector[Selector /* <: String */](selector: Selector, options: WaitForSelectorOptions): js.Promise[ElementHandle[NodeFor[Selector]] | Null] = js.native
   
   /**
-    * @deprecated Use `new Promise(r => setTimeout(r, milliseconds));`.
+    * @deprecated Replace with `new Promise(r => setTimeout(r, milliseconds));`.
     *
     * Causes your script to wait for the given number of milliseconds.
     *
@@ -520,6 +524,12 @@ open class Frame () extends StObject {
   
   /**
     * @deprecated Use {@link Frame.waitForSelector} with the `xpath` prefix.
+    *
+    * Example: `await frame.waitForSelector('xpath/' + xpathExpression)`
+    *
+    * The method evaluates the XPath expression relative to the Frame.
+    * If `xpath` starts with `//` instead of `.//`, the dot will be appended
+    * automatically.
     *
     * Wait for the `xpath` to appear in page. If at the moment of calling the
     * method the `xpath` already exists, the method will return immediately. If

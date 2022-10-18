@@ -1,7 +1,7 @@
 package typings.antvG2plot.anon
 
-import typings.antvG2plot.typesCommonMod.Datum
-import typings.antvG2plot.typesCommonMod.TextStyle
+import typings.antvG2plot.libTypesCommonMod.Datum
+import typings.antvG2plot.libTypesCommonMod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ trait OffsetX extends StObject {
   val formatter: js.UndefOr[
     String | (js.Function2[
       /* datum */ js.UndefOr[Datum], 
-      /* data */ js.UndefOr[typings.antvG2plot.typesCommonMod.Data], 
+      /* data */ js.UndefOr[typings.antvG2plot.libTypesCommonMod.Data], 
       String
     ])
   ] = js.undefined
@@ -34,13 +34,13 @@ object OffsetX {
     inline def setFormatter(
       value: String | (js.Function2[
           /* datum */ js.UndefOr[Datum], 
-          /* data */ js.UndefOr[typings.antvG2plot.typesCommonMod.Data], 
+          /* data */ js.UndefOr[typings.antvG2plot.libTypesCommonMod.Data], 
           String
         ])
     ): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     inline def setFormatterFunction2(
-      value: (/* datum */ js.UndefOr[Datum], /* data */ js.UndefOr[typings.antvG2plot.typesCommonMod.Data]) => String
+      value: (/* datum */ js.UndefOr[Datum], /* data */ js.UndefOr[typings.antvG2plot.libTypesCommonMod.Data]) => String
     ): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)

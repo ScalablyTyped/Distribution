@@ -1,8 +1,8 @@
 package typings.fastify.anon
 
-import typings.fastify.contentTypeParserMod.ConstructorAction
-import typings.fastify.contentTypeParserMod.ProtoAction
 import typings.fastify.fastifyBooleans.`false`
+import typings.fastify.typesContentTypeParserMod.ConstructorAction
+import typings.fastify.typesContentTypeParserMod.ProtoAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,19 +1,19 @@
 package typings.fpTs.mod
 
-import typings.fpTs.pointedMod.Pointed
-import typings.fpTs.pointedMod.Pointed1
-import typings.fpTs.pointedMod.Pointed2
-import typings.fpTs.pointedMod.Pointed2C
-import typings.fpTs.pointedMod.Pointed3
-import typings.fpTs.pointedMod.Pointed3C
-import typings.fpTs.pointedMod.Pointed4
-import typings.fpTs.zeroMod.Zero
-import typings.fpTs.zeroMod.Zero1
-import typings.fpTs.zeroMod.Zero2
-import typings.fpTs.zeroMod.Zero2C
-import typings.fpTs.zeroMod.Zero3
-import typings.fpTs.zeroMod.Zero3C
-import typings.fpTs.zeroMod.Zero4
+import typings.fpTs.libPointedMod.Pointed
+import typings.fpTs.libPointedMod.Pointed1
+import typings.fpTs.libPointedMod.Pointed2
+import typings.fpTs.libPointedMod.Pointed2C
+import typings.fpTs.libPointedMod.Pointed3
+import typings.fpTs.libPointedMod.Pointed3C
+import typings.fpTs.libPointedMod.Pointed4
+import typings.fpTs.libZeroMod.Zero
+import typings.fpTs.libZeroMod.Zero1
+import typings.fpTs.libZeroMod.Zero2
+import typings.fpTs.libZeroMod.Zero2C
+import typings.fpTs.libZeroMod.Zero3
+import typings.fpTs.libZeroMod.Zero3C
+import typings.fpTs.libZeroMod.Zero4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

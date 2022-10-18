@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "AlphaOverLife")
 @js.native
 open class AlphaOverLife protected ()
-  extends typings.blackEngine.alphaOverLifeMod.AlphaOverLife {
-  def this(values: (Double | typings.blackEngine.floatScatterBaseMod.FloatScatterBase)*) = this()
+  extends typings.blackEngine.particlesModsAlphaOverLifeMod.AlphaOverLife {
+  def this(values: (Double | typings.blackEngine.scattersFloatScatterBaseMod.FloatScatterBase)*) = this()
 }

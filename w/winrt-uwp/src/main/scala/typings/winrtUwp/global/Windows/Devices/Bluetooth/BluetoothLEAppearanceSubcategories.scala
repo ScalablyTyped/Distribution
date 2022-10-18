@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates the appearance subcategory code of the Bluetooth LE device. */
-@JSGlobal("Windows.Devices.Bluetooth.BluetoothLEAppearanceSubcategories")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.BluetoothLEAppearanceSubcategories")
 @js.native
-abstract class BluetoothLEAppearanceSubcategories ()
+open class BluetoothLEAppearanceSubcategories ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearanceSubcategories
 object BluetoothLEAppearanceSubcategories {

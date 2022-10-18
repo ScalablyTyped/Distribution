@@ -1,23 +1,22 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.firebaseFirestoreStrings.NaN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `2` extends StObject {
+trait `2`[R] extends StObject {
   
-  var doubleValue: NaN | Double
+  def forEach(cb: js.Function1[/* r */ R, Unit]): Unit
 }
 object `2` {
   
-  inline def apply(doubleValue: NaN | Double): `2` = {
-    val __obj = js.Dynamic.literal(doubleValue = doubleValue.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`2`]
+  inline def apply[R](forEach: js.Function1[/* r */ R, Unit] => Unit): `2`[R] = {
+    val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction1(forEach))
+    __obj.asInstanceOf[`2`[R]]
   }
   
-  extension [Self <: `2`](x: Self) {
+  extension [Self <: `2`[?], R](x: Self & `2`[R]) {
     
-    inline def setDoubleValue(value: NaN | Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
+    inline def setForEach(value: js.Function1[/* r */ R, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
   }
 }

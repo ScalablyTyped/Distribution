@@ -1,6 +1,6 @@
 package typings.sentryBrowser
 
-import typings.sentryBrowser.globalhandlersMod.GlobalHandlersIntegrationsOptionKeys
+import typings.sentryBrowser.typesIntegrationsGlobalhandlersMod.GlobalHandlersIntegrationsOptionKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

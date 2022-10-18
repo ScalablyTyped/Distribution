@@ -1,6 +1,5 @@
 package typings.ajv.distTypesMod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,15 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DataValidationCxt[T /* <: String | Double */] extends StObject {
   
-  var dynamicAnchors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ Ref in string ]:? ajv.ajv/dist/types.ValidateFunction<unknown>}
-    */ typings.ajv.ajvStrings.DataValidationCxt & TopLevel[Any]
+  var dynamicAnchors: /* import warning: importer.ImportType#apply Failed type conversion: {[ Ref in string ]:? ajv.ajv/dist/types.ValidateFunction<unknown>} */ js.Any
   
   var instancePath: String
   
-  var parentData: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in T ]: any}
-    */ typings.ajv.ajvStrings.DataValidationCxt & TopLevel[Any]
+  var parentData: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in T ]: any} */ js.Any
   
   var parentDataProperty: T
   
@@ -25,13 +20,9 @@ trait DataValidationCxt[T /* <: String | Double */] extends StObject {
 object DataValidationCxt {
   
   inline def apply[T /* <: String | Double */](
-    dynamicAnchors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ Ref in string ]:? ajv.ajv/dist/types.ValidateFunction<unknown>}
-    */ typings.ajv.ajvStrings.DataValidationCxt & TopLevel[Any],
+    dynamicAnchors: /* import warning: importer.ImportType#apply Failed type conversion: {[ Ref in string ]:? ajv.ajv/dist/types.ValidateFunction<unknown>} */ js.Any,
     instancePath: String,
-    parentData: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in T ]: any}
-    */ typings.ajv.ajvStrings.DataValidationCxt & TopLevel[Any],
+    parentData: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in T ]: any} */ js.Any,
     parentDataProperty: T,
     rootData: (Record[String, Any]) | js.Array[Any]
   ): DataValidationCxt[T] = {
@@ -42,17 +33,13 @@ object DataValidationCxt {
   extension [Self <: DataValidationCxt[?], T /* <: String | Double */](x: Self & DataValidationCxt[T]) {
     
     inline def setDynamicAnchors(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Ref in string ]:? ajv.ajv/dist/types.ValidateFunction<unknown>}
-      */ typings.ajv.ajvStrings.DataValidationCxt & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ Ref in string ]:? ajv.ajv/dist/types.ValidateFunction<unknown>} */ js.Any
     ): Self = StObject.set(x, "dynamicAnchors", value.asInstanceOf[js.Any])
     
     inline def setInstancePath(value: String): Self = StObject.set(x, "instancePath", value.asInstanceOf[js.Any])
     
     inline def setParentData(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in T ]: any}
-      */ typings.ajv.ajvStrings.DataValidationCxt & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in T ]: any} */ js.Any
     ): Self = StObject.set(x, "parentData", value.asInstanceOf[js.Any])
     
     inline def setParentDataProperty(value: T): Self = StObject.set(x, "parentDataProperty", value.asInstanceOf[js.Any])

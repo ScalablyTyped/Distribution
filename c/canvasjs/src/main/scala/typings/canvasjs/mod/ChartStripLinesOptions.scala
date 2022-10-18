@@ -1,6 +1,6 @@
 package typings.canvasjs.mod
 
-import typings.canvasjs.anon.Axis
+import typings.canvasjs.anon.Stripline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,7 +80,7 @@ trait ChartStripLinesOptions extends StObject {
   /**
     * A custom formatter function that returns stripLine’s label.
     */
-  var labelFormatter: js.UndefOr[js.Function1[/* e */ js.UndefOr[Axis], String]] = js.undefined
+  var labelFormatter: js.UndefOr[js.Function1[/* e */ js.UndefOr[Stripline], String]] = js.undefined
   
   /**
     * labelMaxWidth defines the maximum width of labels after which they get wrapped or clipped depending on labelWrap’s value.
@@ -192,7 +192,7 @@ object ChartStripLinesOptions {
     
     inline def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
     
-    inline def setLabelFormatter(value: /* e */ js.UndefOr[Axis] => String): Self = StObject.set(x, "labelFormatter", js.Any.fromFunction1(value))
+    inline def setLabelFormatter(value: /* e */ js.UndefOr[Stripline] => String): Self = StObject.set(x, "labelFormatter", js.Any.fromFunction1(value))
     
     inline def setLabelFormatterUndefined: Self = StObject.set(x, "labelFormatter", js.undefined)
     

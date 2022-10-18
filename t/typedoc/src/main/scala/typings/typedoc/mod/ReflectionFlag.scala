@@ -9,33 +9,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ReflectionFlag extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.typedoc.abstractMod.ReflectionFlag & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag & Double] = js.native
   
-  /* 512 */ val Abstract: typings.typedoc.abstractMod.ReflectionFlag.Abstract & Double = js.native
+  /* 512 */ val Abstract: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Abstract & Double = js.native
   
-  /* 1024 */ val Const: typings.typedoc.abstractMod.ReflectionFlag.Const & Double = js.native
+  /* 1024 */ val Const: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Const & Double = js.native
   
-  /* 128 */ val DefaultValue: typings.typedoc.abstractMod.ReflectionFlag.DefaultValue & Double = js.native
+  /* 128 */ val DefaultValue: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.DefaultValue & Double = js.native
   
-  /* 16 */ val ExportAssignment: typings.typedoc.abstractMod.ReflectionFlag.ExportAssignment & Double = js.native
+  /* 16 */ val ExportAssignment: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.ExportAssignment & Double = js.native
   
-  /* 32 */ val External: typings.typedoc.abstractMod.ReflectionFlag.External & Double = js.native
+  /* 32 */ val External: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.External & Double = js.native
   
-  /* 2048 */ val Let: typings.typedoc.abstractMod.ReflectionFlag.Let & Double = js.native
+  /* 2048 */ val Let: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Let & Double = js.native
   
-  /* 0 */ val None: typings.typedoc.abstractMod.ReflectionFlag.None & Double = js.native
+  /* 0 */ val None: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.None & Double = js.native
   
-  /* 64 */ val Optional: typings.typedoc.abstractMod.ReflectionFlag.Optional & Double = js.native
+  /* 64 */ val Optional: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Optional & Double = js.native
   
-  /* 1 */ val Private: typings.typedoc.abstractMod.ReflectionFlag.Private & Double = js.native
+  /* 1 */ val Private: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Private & Double = js.native
   
-  /* 2 */ val Protected: typings.typedoc.abstractMod.ReflectionFlag.Protected & Double = js.native
+  /* 2 */ val Protected: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Protected & Double = js.native
   
-  /* 4 */ val Public: typings.typedoc.abstractMod.ReflectionFlag.Public & Double = js.native
+  /* 4 */ val Public: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Public & Double = js.native
   
-  /* 4096 */ val Readonly: typings.typedoc.abstractMod.ReflectionFlag.Readonly & Double = js.native
+  /* 4096 */ val Readonly: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Readonly & Double = js.native
   
-  /* 256 */ val Rest: typings.typedoc.abstractMod.ReflectionFlag.Rest & Double = js.native
+  /* 256 */ val Rest: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Rest & Double = js.native
   
-  /* 8 */ val Static: typings.typedoc.abstractMod.ReflectionFlag.Static & Double = js.native
+  /* 8 */ val Static: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Static & Double = js.native
 }

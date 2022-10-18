@@ -1,7 +1,5 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
-import org.scalablytyped.runtime.TopLevel
-import typings.maximMazurokGapiClientMl.maximMazurokGapiClientMlStrings.GoogleRpc__Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +12,7 @@ trait GoogleRpcStatus extends StObject {
   /** A list of messages that carry the error details. There is a common set of message types for APIs to use. */
   var details: js.UndefOr[
     js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ GoogleRpc__Status & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ]
   ] = js.undefined
   
@@ -41,18 +37,14 @@ object GoogleRpcStatus {
     
     inline def setDetails(
       value: js.Array[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ GoogleRpc__Status & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
         ]
     ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     inline def setDetailsVarargs(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ GoogleRpc__Status & TopLevel[Any])*
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any)*
     ): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])

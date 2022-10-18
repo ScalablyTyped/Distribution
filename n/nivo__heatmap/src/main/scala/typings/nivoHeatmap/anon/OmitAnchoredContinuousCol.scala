@@ -6,8 +6,8 @@ import typings.nivoHeatmap.nivoHeatmapStrings.before
 import typings.nivoHeatmap.nivoHeatmapStrings.end
 import typings.nivoHeatmap.nivoHeatmapStrings.middle
 import typings.nivoHeatmap.nivoHeatmapStrings.start
-import typings.nivoLegends.typesTypesMod.LegendAnchor
-import typings.nivoLegends.typesTypesMod.LegendDirection
+import typings.nivoLegends.distTypesTypesMod.LegendAnchor
+import typings.nivoLegends.distTypesTypesMod.LegendDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,10 +81,6 @@ object OmitAnchoredContinuousCol {
     inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
     inline def setTickFormat(value: ValueFormat[Double, Unit]): Self = StObject.set(x, "tickFormat", value.asInstanceOf[js.Any])
-    
-    inline def setTickFormatFunction1(value: Double => String): Self = StObject.set(x, "tickFormat", js.Any.fromFunction1(value))
-    
-    inline def setTickFormatFunction2(value: (Double, Unit) => String): Self = StObject.set(x, "tickFormat", js.Any.fromFunction2(value))
     
     inline def setTickFormatUndefined: Self = StObject.set(x, "tickFormat", js.undefined)
     

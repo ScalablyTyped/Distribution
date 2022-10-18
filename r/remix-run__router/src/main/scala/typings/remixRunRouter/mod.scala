@@ -1,30 +1,29 @@
 package typings.remixRunRouter
 
-import org.scalablytyped.runtime.TopLevel
 import typings.remixRunRouter.anon.PartialLocation
 import typings.remixRunRouter.anon.PartialPath
-import typings.remixRunRouter.historyMod.BrowserHistory
-import typings.remixRunRouter.historyMod.BrowserHistoryOptions
-import typings.remixRunRouter.historyMod.HashHistory
-import typings.remixRunRouter.historyMod.HashHistoryOptions
-import typings.remixRunRouter.historyMod.MemoryHistory
-import typings.remixRunRouter.historyMod.MemoryHistoryOptions
-import typings.remixRunRouter.historyMod.Path
-import typings.remixRunRouter.historyMod.To
+import typings.remixRunRouter.distHistoryMod.BrowserHistory
+import typings.remixRunRouter.distHistoryMod.BrowserHistoryOptions
+import typings.remixRunRouter.distHistoryMod.HashHistory
+import typings.remixRunRouter.distHistoryMod.HashHistoryOptions
+import typings.remixRunRouter.distHistoryMod.MemoryHistory
+import typings.remixRunRouter.distHistoryMod.MemoryHistoryOptions
+import typings.remixRunRouter.distHistoryMod.Path
+import typings.remixRunRouter.distHistoryMod.To
+import typings.remixRunRouter.distRouterMod.Router
+import typings.remixRunRouter.distRouterMod.RouterInit
+import typings.remixRunRouter.distRouterMod.StaticHandler
+import typings.remixRunRouter.distRouterMod.StaticHandlerContext
+import typings.remixRunRouter.distUtilsMod.AgnosticDataRouteObject
+import typings.remixRunRouter.distUtilsMod.AgnosticRouteMatch
+import typings.remixRunRouter.distUtilsMod.AgnosticRouteObject
+import typings.remixRunRouter.distUtilsMod.DeferredData
+import typings.remixRunRouter.distUtilsMod.JsonFunction
+import typings.remixRunRouter.distUtilsMod.ParamParseKey
+import typings.remixRunRouter.distUtilsMod.PathMatch
+import typings.remixRunRouter.distUtilsMod.PathPattern
+import typings.remixRunRouter.distUtilsMod.RedirectFunction
 import typings.remixRunRouter.remixRunRouterStrings.idle
-import typings.remixRunRouter.routerMod.Router
-import typings.remixRunRouter.routerMod.RouterInit
-import typings.remixRunRouter.routerMod.StaticHandler
-import typings.remixRunRouter.routerMod.StaticHandlerContext
-import typings.remixRunRouter.utilsMod.AgnosticDataRouteObject
-import typings.remixRunRouter.utilsMod.AgnosticRouteMatch
-import typings.remixRunRouter.utilsMod.AgnosticRouteObject
-import typings.remixRunRouter.utilsMod.DeferredData
-import typings.remixRunRouter.utilsMod.JsonFunction
-import typings.remixRunRouter.utilsMod.ParamParseKey
-import typings.remixRunRouter.utilsMod.PathMatch
-import typings.remixRunRouter.utilsMod.PathPattern
-import typings.remixRunRouter.utilsMod.RedirectFunction
 import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -40,26 +39,26 @@ object mod {
   @JSImport("@remix-run/router", "AbortedDeferredError")
   @js.native
   open class AbortedDeferredError ()
-    extends typings.remixRunRouter.utilsMod.AbortedDeferredError
+    extends typings.remixRunRouter.distUtilsMod.AbortedDeferredError
   
   @JSImport("@remix-run/router", "Action")
   @js.native
   object Action extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.remixRunRouter.historyMod.Action & String] = js.native
+    def apply(value: String): js.UndefOr[typings.remixRunRouter.distHistoryMod.Action & String] = js.native
     
-    /* "POP" */ val Pop: typings.remixRunRouter.historyMod.Action.Pop & String = js.native
+    /* "POP" */ val Pop: typings.remixRunRouter.distHistoryMod.Action.Pop & String = js.native
     
-    /* "PUSH" */ val Push: typings.remixRunRouter.historyMod.Action.Push & String = js.native
+    /* "PUSH" */ val Push: typings.remixRunRouter.distHistoryMod.Action.Push & String = js.native
     
-    /* "REPLACE" */ val Replace: typings.remixRunRouter.historyMod.Action.Replace & String = js.native
+    /* "REPLACE" */ val Replace: typings.remixRunRouter.distHistoryMod.Action.Replace & String = js.native
   }
   
   @JSImport("@remix-run/router", "ErrorResponse")
   @js.native
   open class ErrorResponse protected ()
-    extends typings.remixRunRouter.utilsMod.ErrorResponse {
+    extends typings.remixRunRouter.distUtilsMod.ErrorResponse {
     def this(status: Double, statusText: String, data: Any) = this()
     def this(status: Double, statusText: Unit, data: Any) = this()
   }
@@ -77,23 +76,23 @@ object mod {
     
     @JSImport("@remix-run/router", "IDLE_FETCHER.formAction")
     @js.native
-    def formAction: Unit = js.native
-    inline def formAction_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formAction")(x.asInstanceOf[js.Any])
+    def formAction: /* undefined */ Any = js.native
+    inline def formAction_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formAction")(x.asInstanceOf[js.Any])
     
     @JSImport("@remix-run/router", "IDLE_FETCHER.formData")
     @js.native
-    def formData: Unit = js.native
-    inline def formData_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formData")(x.asInstanceOf[js.Any])
+    def formData: /* undefined */ Any = js.native
+    inline def formData_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formData")(x.asInstanceOf[js.Any])
     
     @JSImport("@remix-run/router", "IDLE_FETCHER.formEncType")
     @js.native
-    def formEncType: Unit = js.native
-    inline def formEncType_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formEncType")(x.asInstanceOf[js.Any])
+    def formEncType: /* undefined */ Any = js.native
+    inline def formEncType_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formEncType")(x.asInstanceOf[js.Any])
     
     @JSImport("@remix-run/router", "IDLE_FETCHER.formMethod")
     @js.native
-    def formMethod: Unit = js.native
-    inline def formMethod_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formMethod")(x.asInstanceOf[js.Any])
+    def formMethod: /* undefined */ Any = js.native
+    inline def formMethod_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formMethod")(x.asInstanceOf[js.Any])
     
     @JSImport("@remix-run/router", "IDLE_FETCHER.state")
     @js.native
@@ -109,28 +108,28 @@ object mod {
     
     @JSImport("@remix-run/router", "IDLE_NAVIGATION.formAction")
     @js.native
-    def formAction: Unit = js.native
-    inline def formAction_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formAction")(x.asInstanceOf[js.Any])
+    def formAction: /* undefined */ Any = js.native
+    inline def formAction_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formAction")(x.asInstanceOf[js.Any])
     
     @JSImport("@remix-run/router", "IDLE_NAVIGATION.formData")
     @js.native
-    def formData: Unit = js.native
-    inline def formData_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formData")(x.asInstanceOf[js.Any])
+    def formData: /* undefined */ Any = js.native
+    inline def formData_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formData")(x.asInstanceOf[js.Any])
     
     @JSImport("@remix-run/router", "IDLE_NAVIGATION.formEncType")
     @js.native
-    def formEncType: Unit = js.native
-    inline def formEncType_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formEncType")(x.asInstanceOf[js.Any])
+    def formEncType: /* undefined */ Any = js.native
+    inline def formEncType_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formEncType")(x.asInstanceOf[js.Any])
     
     @JSImport("@remix-run/router", "IDLE_NAVIGATION.formMethod")
     @js.native
-    def formMethod: Unit = js.native
-    inline def formMethod_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formMethod")(x.asInstanceOf[js.Any])
+    def formMethod: /* undefined */ Any = js.native
+    inline def formMethod_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formMethod")(x.asInstanceOf[js.Any])
     
     @JSImport("@remix-run/router", "IDLE_NAVIGATION.location")
     @js.native
-    def location: Unit = js.native
-    inline def location_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("location")(x.asInstanceOf[js.Any])
+    def location: /* undefined */ Any = js.native
+    inline def location_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("location")(x.asInstanceOf[js.Any])
     
     @JSImport("@remix-run/router", "IDLE_NAVIGATION.state")
     @js.native
@@ -161,9 +160,7 @@ object mod {
   inline def generatePath[Path /* <: String */](path: Path): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def generatePath[Path /* <: String */](
     path: Path,
-    params: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in @remix-run/router.@remix-run/router/dist/utils.PathParam<Path> ]: string}
-    */ typings.remixRunRouter.remixRunRouterStrings.generatePath & TopLevel[Any]
+    params: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @remix-run/router.@remix-run/router/dist/utils.PathParam<Path> ]: string} */ js.Any
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getStaticContextFromError(routes: js.Array[AgnosticDataRouteObject], context: StaticHandlerContext, error: Any): StaticHandlerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getStaticContextFromError")(routes.asInstanceOf[js.Any], context.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[StaticHandlerContext]

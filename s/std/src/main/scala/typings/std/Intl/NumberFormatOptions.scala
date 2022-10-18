@@ -26,8 +26,11 @@ trait NumberFormatOptions extends StObject {
   /* standard es2020.intl */
   var currencyDisplay: js.UndefOr[String] = js.undefined
   
-  /* standard es2020.intl */
   /* standard es5 */
+  /* standard es2020.intl */
+  /* standard es2020.intl */
+  /* standard es2020.intl */
+  /* standard es2020.intl */
   var currencySign: js.UndefOr[String] = js.undefined
   
   /* standard es5 */

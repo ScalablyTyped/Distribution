@@ -2,7 +2,7 @@ package typings.ckeditorCkeditor5Indent
 
 import typings.ckeditorCkeditor5Indent.anon.TypeofIndentEditing
 import typings.ckeditorCkeditor5Indent.anon.TypeofIndentUI
-import typings.ckeditorCkeditor5Indent.indentMod.default
+import typings.ckeditorCkeditor5Indent.srcIndentMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-indent", "IndentBlock")
   @js.native
   open class IndentBlock ()
-    extends typings.ckeditorCkeditor5Indent.indentblockMod.default
+    extends typings.ckeditorCkeditor5Indent.srcIndentblockMod.default
   /* static members */
   object IndentBlock {
     
@@ -39,7 +39,7 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-indent", "IndentEditing")
   @js.native
   open class IndentEditing ()
-    extends typings.ckeditorCkeditor5Indent.indenteditingMod.default
+    extends typings.ckeditorCkeditor5Indent.srcIndenteditingMod.default
   /* static members */
   object IndentEditing {
     
@@ -51,7 +51,7 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-indent", "IndentUI")
   @js.native
   open class IndentUI ()
-    extends typings.ckeditorCkeditor5Indent.indentuiMod.default
+    extends typings.ckeditorCkeditor5Indent.srcIndentuiMod.default
   /* static members */
   object IndentUI {
     

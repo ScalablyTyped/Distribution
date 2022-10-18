@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "find-my-way" : "7.2.0"
+      "find-my-way" : "7.3.1"
     }
   ],
   "test-dependencies" : [
     {
-      "find-my-way" : "7.2.0"
+      "find-my-way" : "7.3.1"
     }
   ],
   "compile-devDependencies" : [

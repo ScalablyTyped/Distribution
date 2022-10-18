@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PickingInfo")
 @js.native
 open class PickingInfo ()
-  extends typings.babylonjs.legacyMod.PickingInfo
+  extends typings.babylonjs.legacyLegacyMod.PickingInfo

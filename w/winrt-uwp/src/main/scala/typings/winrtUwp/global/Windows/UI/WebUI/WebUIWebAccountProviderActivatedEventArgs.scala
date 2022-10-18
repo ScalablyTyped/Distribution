@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the arguments involved in activated a web account provider. */
-@JSGlobal("Windows.UI.WebUI.WebUIWebAccountProviderActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUIWebAccountProviderActivatedEventArgs")
 @js.native
-abstract class WebUIWebAccountProviderActivatedEventArgs ()
+open class WebUIWebAccountProviderActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUIWebAccountProviderActivatedEventArgs {
   

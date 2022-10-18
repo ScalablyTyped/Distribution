@@ -1,50 +1,51 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.asc
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.created_
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.desc
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `616` extends StObject {
   
-  /** The direction to sort the results by. */
-  var direction: js.UndefOr[asc | desc] = js.undefined
+  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any
   
-  /** Page number of the results to fetch. */
-  var page: js.UndefOr[Double] = js.undefined
+  var `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any
   
-  /** The number of results per page (max 100). */
-  var per_page: js.UndefOr[Double] = js.undefined
+  var `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any
   
-  /** The property to sort the results by. `created` means when the repository was starred. `updated` means when the repository was last pushed to. */
-  var sort: js.UndefOr[created_ | updated] = js.undefined
+  var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
 }
 object `616` {
   
-  inline def apply(): `616` = {
+  inline def apply(
+    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any,
+    `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any,
+    `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any,
+    `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+  ): `616` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("304")(`304`.asInstanceOf[js.Any])
+    __obj.updateDynamic("401")(`401`.asInstanceOf[js.Any])
+    __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
+    __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`616`]
   }
   
   extension [Self <: `616`](x: Self) {
     
-    inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def set304(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any
+    ): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
     
-    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def set401(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any
+    ): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
     
-    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def set403(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any
+    ): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
-    
-    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
-    
-    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
-    
-    inline def setSort(value: created_ | updated): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
-    
-    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def set404(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+    ): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

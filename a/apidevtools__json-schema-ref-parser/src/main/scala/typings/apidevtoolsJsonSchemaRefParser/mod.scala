@@ -10,6 +10,7 @@ import typings.jsonSchema.mod.JSONSchema6
 import typings.jsonSchema.mod.JSONSchema6Type
 import typings.jsonSchema.mod.JSONSchema7
 import typings.jsonSchema.mod.JSONSchema7Type
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
@@ -175,10 +176,7 @@ object mod {
   @js.native
   open class ResolverError protected () extends JSONParserError {
     def this(ex: js.Error, source: String) = this()
-    def this(
-      ex: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any,
-      source: String
-    ) = this()
+    def this(ex: ErrnoException, source: String) = this()
     
     @JSName("code")
     val code_ResolverError: /* "ERESOLVER" */ String = js.native

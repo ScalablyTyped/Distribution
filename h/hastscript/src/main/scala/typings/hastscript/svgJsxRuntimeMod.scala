@@ -3,7 +3,7 @@ package typings.hastscript
 import typings.hast.mod.Element
 import typings.hast.mod.Root
 import typings.hastscript.anon.Children
-import typings.hastscript.runtimeMod.JSXProps
+import typings.hastscript.libRuntimeMod.JSXProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

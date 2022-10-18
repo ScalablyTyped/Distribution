@@ -7,43 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A 4-dimensional vector.
   */
-@JSImport("playcanvas", "Vec4")
-@js.native
-/**
-  * Creates a new Vec4 object.
-  *
-  * @param {number|number[]} [x] - The x value. Defaults to 0. If x is an array of length 4, the
-  * array will be used to populate all components.
-  * @param {number} [y] - The y value. Defaults to 0.
-  * @param {number} [z] - The z value. Defaults to 0.
-  * @param {number} [w] - The w value. Defaults to 0.
-  * @example
-  * var v = new pc.Vec4(1, 2, 3, 4);
-  */
-open class Vec4 () extends StObject {
-  def this(x: js.Array[Double]) = this()
-  def this(x: Double) = this()
-  def this(x: js.Array[Double], y: Double) = this()
-  def this(x: Double, y: Double) = this()
-  def this(x: Unit, y: Double) = this()
-  def this(x: js.Array[Double], y: Double, z: Double) = this()
-  def this(x: js.Array[Double], y: Unit, z: Double) = this()
-  def this(x: Double, y: Double, z: Double) = this()
-  def this(x: Double, y: Unit, z: Double) = this()
-  def this(x: Unit, y: Double, z: Double) = this()
-  def this(x: Unit, y: Unit, z: Double) = this()
-  def this(x: js.Array[Double], y: Double, z: Double, w: Double) = this()
-  def this(x: js.Array[Double], y: Double, z: Unit, w: Double) = this()
-  def this(x: js.Array[Double], y: Unit, z: Double, w: Double) = this()
-  def this(x: js.Array[Double], y: Unit, z: Unit, w: Double) = this()
-  def this(x: Double, y: Double, z: Double, w: Double) = this()
-  def this(x: Double, y: Double, z: Unit, w: Double) = this()
-  def this(x: Double, y: Unit, z: Double, w: Double) = this()
-  def this(x: Double, y: Unit, z: Unit, w: Double) = this()
-  def this(x: Unit, y: Double, z: Double, w: Double) = this()
-  def this(x: Unit, y: Double, z: Unit, w: Double) = this()
-  def this(x: Unit, y: Unit, z: Double, w: Double) = this()
-  def this(x: Unit, y: Unit, z: Unit, w: Double) = this()
+trait Vec4 extends StObject {
   
   /**
     * Adds a 4-dimensional vector to another in place.
@@ -59,7 +23,7 @@ open class Vec4 () extends StObject {
     * // Outputs [30, 30, 30]
     * console.log("The result of the addition is: " + a.toString());
     */
-  def add(rhs: Vec4): Vec4 = js.native
+  def add(rhs: Vec4): Vec4
   
   /**
     * Adds two 4-dimensional vectors together and returns the result.
@@ -77,7 +41,7 @@ open class Vec4 () extends StObject {
     *
     * console.log("The result of the addition is: " + r.toString());
     */
-  def add2(lhs: Vec4, rhs: Vec4): Vec4 = js.native
+  def add2(lhs: Vec4, rhs: Vec4): Vec4
   
   /**
     * Adds a number to each element of a vector.
@@ -92,14 +56,14 @@ open class Vec4 () extends StObject {
     * // Outputs [5, 6, 7, 8]
     * console.log("The result of the addition is: " + vec.toString());
     */
-  def addScalar(scalar: Double): Vec4 = js.native
+  def addScalar(scalar: Double): Vec4
   
   /**
     * Each element is rounded up to the next largest integer.
     *
     * @returns {Vec4} Self for chaining.
     */
-  def ceil(): Vec4 = js.native
+  def ceil(): Vec4
   
   /**
     * Copies the contents of a source 4-dimensional vector to a destination 4-dimensional vector.
@@ -114,7 +78,7 @@ open class Vec4 () extends StObject {
     *
     * console.log("The two vectors are " + (dst.equals(src) ? "equal" : "different"));
     */
-  def copy(rhs: Vec4): Vec4 = js.native
+  def copy(rhs: Vec4): Vec4
   
   /**
     * Divides a 4-dimensional vector by another in place.
@@ -130,7 +94,7 @@ open class Vec4 () extends StObject {
     * // Outputs [2, 3, 4, 5]
     * console.log("The result of the division is: " + a.toString());
     */
-  def div(rhs: Vec4): Vec4 = js.native
+  def div(rhs: Vec4): Vec4
   
   /**
     * Divides one 4-dimensional vector by another and writes the result to the specified vector.
@@ -148,7 +112,7 @@ open class Vec4 () extends StObject {
     *
     * console.log("The result of the division is: " + r.toString());
     */
-  def div2(lhs: Vec4, rhs: Vec4): Vec4 = js.native
+  def div2(lhs: Vec4, rhs: Vec4): Vec4
   
   /**
     * Divides each element of a vector by a number.
@@ -163,7 +127,7 @@ open class Vec4 () extends StObject {
     * // Outputs [1, 2, 3, 4]
     * console.log("The result of the division is: " + vec.toString());
     */
-  def divScalar(scalar: Double): Vec4 = js.native
+  def divScalar(scalar: Double): Vec4
   
   /**
     * Returns the result of a dot product operation performed on the two specified 4-dimensional
@@ -177,7 +141,7 @@ open class Vec4 () extends StObject {
     * var v1dotv2 = v1.dot(v2);
     * console.log("The result of the dot product is: " + v1dotv2);
     */
-  def dot(rhs: Vec4): Double = js.native
+  def dot(rhs: Vec4): Double
   
   /**
     * Reports whether two vectors are equal.
@@ -189,14 +153,14 @@ open class Vec4 () extends StObject {
     * var b = new pc.Vec4(5, 6, 7, 8);
     * console.log("The two vectors are " + (a.equals(b) ? "equal" : "different"));
     */
-  def equals(rhs: Vec4): Boolean = js.native
+  def equals(rhs: Vec4): Boolean
   
   /**
     * Each element is set to the largest integer less than or equal to its value.
     *
     * @returns {Vec4} Self for chaining.
     */
-  def floor(): Vec4 = js.native
+  def floor(): Vec4
   
   /**
     * Returns the magnitude of the specified 4-dimensional vector.
@@ -208,7 +172,7 @@ open class Vec4 () extends StObject {
     * // Outputs 5
     * console.log("The length of the vector is: " + len);
     */
-  def length(): Double = js.native
+  def length(): Double
   
   /**
     * Returns the magnitude squared of the specified 4-dimensional vector.
@@ -220,7 +184,7 @@ open class Vec4 () extends StObject {
     * // Outputs 25
     * console.log("The length squared of the vector is: " + len);
     */
-  def lengthSq(): Double = js.native
+  def lengthSq(): Double
   
   /**
     * Returns the result of a linear interpolation between two specified 4-dimensional vectors.
@@ -240,7 +204,7 @@ open class Vec4 () extends StObject {
     * r.lerp(a, b, 0.5); // r is 5, 5, 5, 5
     * r.lerp(a, b, 1);   // r is equal to b
     */
-  def lerp(lhs: Vec4, rhs: Vec4, alpha: Double): Vec4 = js.native
+  def lerp(lhs: Vec4, rhs: Vec4, alpha: Double): Vec4
   
   /**
     * Each element is assigned a value from rhs parameter if it is larger.
@@ -248,7 +212,7 @@ open class Vec4 () extends StObject {
     * @param {Vec4} rhs - The 4-dimensional vector used as the source of elements to compare to.
     * @returns {Vec4} Self for chaining.
     */
-  def max(rhs: Vec4): Vec4 = js.native
+  def max(rhs: Vec4): Vec4
   
   /**
     * Each element is assigned a value from rhs parameter if it is smaller.
@@ -256,7 +220,7 @@ open class Vec4 () extends StObject {
     * @param {Vec4} rhs - The 4-dimensional vector used as the source of elements to compare to.
     * @returns {Vec4} Self for chaining.
     */
-  def min(rhs: Vec4): Vec4 = js.native
+  def min(rhs: Vec4): Vec4
   
   /**
     * Multiplies a 4-dimensional vector to another in place.
@@ -272,7 +236,7 @@ open class Vec4 () extends StObject {
     * // Outputs 8, 15, 24, 35
     * console.log("The result of the multiplication is: " + a.toString());
     */
-  def mul(rhs: Vec4): Vec4 = js.native
+  def mul(rhs: Vec4): Vec4
   
   /**
     * Returns the result of multiplying the specified 4-dimensional vectors together.
@@ -290,7 +254,7 @@ open class Vec4 () extends StObject {
     * // Outputs 8, 15, 24, 35
     * console.log("The result of the multiplication is: " + r.toString());
     */
-  def mul2(lhs: Vec4, rhs: Vec4): Vec4 = js.native
+  def mul2(lhs: Vec4, rhs: Vec4): Vec4
   
   /**
     * Multiplies each element of a vector by a number.
@@ -305,7 +269,7 @@ open class Vec4 () extends StObject {
     * // Outputs [9, 18, 27, 36]
     * console.log("The result of the multiplication is: " + vec.toString());
     */
-  def mulScalar(scalar: Double): Vec4 = js.native
+  def mulScalar(scalar: Double): Vec4
   
   /**
     * Returns this 4-dimensional vector converted to a unit vector in place. If the vector has a
@@ -320,14 +284,14 @@ open class Vec4 () extends StObject {
     * // Outputs 1, 0, 0, 0
     * console.log("The result of the vector normalization is: " + v.toString());
     */
-  def normalize(): Vec4 = js.native
+  def normalize(): Vec4
   
   /**
     * Each element is rounded up or down to the nearest integer.
     *
     * @returns {Vec4} Self for chaining.
     */
-  def round(): Vec4 = js.native
+  def round(): Vec4
   
   /**
     * Sets the specified 4-dimensional vector to the supplied numerical values.
@@ -344,7 +308,7 @@ open class Vec4 () extends StObject {
     * // Outputs 5, 10, 20, 40
     * console.log("The result of the vector set is: " + v.toString());
     */
-  def set(x: Double, y: Double, z: Double, w: Double): Vec4 = js.native
+  def set(x: Double, y: Double, z: Double, w: Double): Vec4
   
   /**
     * Subtracts a 4-dimensional vector from another in place.
@@ -360,7 +324,7 @@ open class Vec4 () extends StObject {
     * // Outputs [-10, -10, -10, -10]
     * console.log("The result of the subtraction is: " + a.toString());
     */
-  def sub(rhs: Vec4): Vec4 = js.native
+  def sub(rhs: Vec4): Vec4
   
   /**
     * Subtracts two 4-dimensional vectors from one another and returns the result.
@@ -378,7 +342,7 @@ open class Vec4 () extends StObject {
     * // Outputs [-10, -10, -10, -10]
     * console.log("The result of the subtraction is: " + r.toString());
     */
-  def sub2(lhs: Vec4, rhs: Vec4): Vec4 = js.native
+  def sub2(lhs: Vec4, rhs: Vec4): Vec4
   
   /**
     * Subtracts a number from each element of a vector.
@@ -393,57 +357,132 @@ open class Vec4 () extends StObject {
     * // Outputs [1, 2, 3, 4]
     * console.log("The result of the subtraction is: " + vec.toString());
     */
-  def subScalar(scalar: Double): Vec4 = js.native
+  def subScalar(scalar: Double): Vec4
   
   /**
     * The fourth component of the vector.
     *
     * @type {number}
     */
-  var w: Double = js.native
+  var w: Double
   
   /**
     * The first component of the vector.
     *
     * @type {number}
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The second component of the vector.
     *
     * @type {number}
     */
-  var y: Double = js.native
+  var y: Double
   
   /**
     * The third component of the vector.
     *
     * @type {number}
     */
-  var z: Double = js.native
+  var z: Double
 }
 object Vec4 {
   
-  /**
-    * A constant vector set to [1, 1, 1, 1].
-    *
-    * @type {Vec4}
-    * @readonly
-    */
-  /* static member */
-  @JSImport("playcanvas", "Vec4.ONE")
-  @js.native
-  val ONE: Vec4 = js.native
+  inline def apply(
+    add: Vec4 => Vec4,
+    add2: (Vec4, Vec4) => Vec4,
+    addScalar: Double => Vec4,
+    ceil: () => Vec4,
+    copy: Vec4 => Vec4,
+    div: Vec4 => Vec4,
+    div2: (Vec4, Vec4) => Vec4,
+    divScalar: Double => Vec4,
+    dot: Vec4 => Double,
+    equals_ : Vec4 => Boolean,
+    floor: () => Vec4,
+    length: () => Double,
+    lengthSq: () => Double,
+    lerp: (Vec4, Vec4, Double) => Vec4,
+    max: Vec4 => Vec4,
+    min: Vec4 => Vec4,
+    mul: Vec4 => Vec4,
+    mul2: (Vec4, Vec4) => Vec4,
+    mulScalar: Double => Vec4,
+    normalize: () => Vec4,
+    round: () => Vec4,
+    set: (Double, Double, Double, Double) => Vec4,
+    sub: Vec4 => Vec4,
+    sub2: (Vec4, Vec4) => Vec4,
+    subScalar: Double => Vec4,
+    w: Double,
+    x: Double,
+    y: Double,
+    z: Double
+  ): Vec4 = {
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), add2 = js.Any.fromFunction2(add2), addScalar = js.Any.fromFunction1(addScalar), ceil = js.Any.fromFunction0(ceil), copy = js.Any.fromFunction1(copy), div = js.Any.fromFunction1(div), div2 = js.Any.fromFunction2(div2), divScalar = js.Any.fromFunction1(divScalar), dot = js.Any.fromFunction1(dot), floor = js.Any.fromFunction0(floor), length = js.Any.fromFunction0(length), lengthSq = js.Any.fromFunction0(lengthSq), lerp = js.Any.fromFunction3(lerp), max = js.Any.fromFunction1(max), min = js.Any.fromFunction1(min), mul = js.Any.fromFunction1(mul), mul2 = js.Any.fromFunction2(mul2), mulScalar = js.Any.fromFunction1(mulScalar), normalize = js.Any.fromFunction0(normalize), round = js.Any.fromFunction0(round), set = js.Any.fromFunction4(set), sub = js.Any.fromFunction1(sub), sub2 = js.Any.fromFunction2(sub2), subScalar = js.Any.fromFunction1(subScalar), w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
+    __obj.asInstanceOf[Vec4]
+  }
   
-  /**
-    * A constant vector set to [0, 0, 0, 0].
-    *
-    * @type {Vec4}
-    * @readonly
-    */
-  /* static member */
-  @JSImport("playcanvas", "Vec4.ZERO")
-  @js.native
-  val ZERO: Vec4 = js.native
+  extension [Self <: Vec4](x: Self) {
+    
+    inline def setAdd(value: Vec4 => Vec4): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    
+    inline def setAdd2(value: (Vec4, Vec4) => Vec4): Self = StObject.set(x, "add2", js.Any.fromFunction2(value))
+    
+    inline def setAddScalar(value: Double => Vec4): Self = StObject.set(x, "addScalar", js.Any.fromFunction1(value))
+    
+    inline def setCeil(value: () => Vec4): Self = StObject.set(x, "ceil", js.Any.fromFunction0(value))
+    
+    inline def setCopy(value: Vec4 => Vec4): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
+    
+    inline def setDiv(value: Vec4 => Vec4): Self = StObject.set(x, "div", js.Any.fromFunction1(value))
+    
+    inline def setDiv2(value: (Vec4, Vec4) => Vec4): Self = StObject.set(x, "div2", js.Any.fromFunction2(value))
+    
+    inline def setDivScalar(value: Double => Vec4): Self = StObject.set(x, "divScalar", js.Any.fromFunction1(value))
+    
+    inline def setDot(value: Vec4 => Double): Self = StObject.set(x, "dot", js.Any.fromFunction1(value))
+    
+    inline def setEquals_(value: Vec4 => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    
+    inline def setFloor(value: () => Vec4): Self = StObject.set(x, "floor", js.Any.fromFunction0(value))
+    
+    inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+    
+    inline def setLengthSq(value: () => Double): Self = StObject.set(x, "lengthSq", js.Any.fromFunction0(value))
+    
+    inline def setLerp(value: (Vec4, Vec4, Double) => Vec4): Self = StObject.set(x, "lerp", js.Any.fromFunction3(value))
+    
+    inline def setMax(value: Vec4 => Vec4): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
+    
+    inline def setMin(value: Vec4 => Vec4): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
+    
+    inline def setMul(value: Vec4 => Vec4): Self = StObject.set(x, "mul", js.Any.fromFunction1(value))
+    
+    inline def setMul2(value: (Vec4, Vec4) => Vec4): Self = StObject.set(x, "mul2", js.Any.fromFunction2(value))
+    
+    inline def setMulScalar(value: Double => Vec4): Self = StObject.set(x, "mulScalar", js.Any.fromFunction1(value))
+    
+    inline def setNormalize(value: () => Vec4): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
+    
+    inline def setRound(value: () => Vec4): Self = StObject.set(x, "round", js.Any.fromFunction0(value))
+    
+    inline def setSet(value: (Double, Double, Double, Double) => Vec4): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
+    
+    inline def setSub(value: Vec4 => Vec4): Self = StObject.set(x, "sub", js.Any.fromFunction1(value))
+    
+    inline def setSub2(value: (Vec4, Vec4) => Vec4): Self = StObject.set(x, "sub2", js.Any.fromFunction2(value))
+    
+    inline def setSubScalar(value: Double => Vec4): Self = StObject.set(x, "subScalar", js.Any.fromFunction1(value))
+    
+    inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+  }
 }

@@ -15,7 +15,7 @@ trait Children extends StObject {
   var IconButtonProps: js.UndefOr[
     Partial[
       typings.materialUiCore.iconButtonIconButtonMod.IconButtonProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.@material-ui/core/IconButton/IconButton.IconButtonTypeMap<{}, 'button'>['defaultComponent'] */ js.Any, 
         js.Object
       ]
     ]
@@ -51,7 +51,7 @@ object Children {
     inline def setIconButtonProps(
       value: Partial[
           IconButtonProps[
-            /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
+            /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.@material-ui/core/IconButton/IconButton.IconButtonTypeMap<{}, 'button'>['defaultComponent'] */ js.Any, 
             js.Object
           ]
         ]

@@ -1,79 +1,64 @@
 package typings.screeps.anon
 
+import typings.screeps.screepsStrings.KH2O
+import typings.screeps.screepsStrings.LH2O
+import typings.screeps.screepsStrings.UH2O
+import typings.screeps.screepsStrings.UHO2
+import typings.screeps.screepsStrings.ZH2O
+import typings.screeps.screepsStrings.ZHO2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GH extends StObject {
   
-  var GH: UpgradeController
+  var GH: typings.screeps.screepsStrings.GH2O
   
-  var GH2O: `4`
+  var GO: typings.screeps.screepsStrings.GHO2
   
-  var LH: Build
+  var KH: KH2O
   
-  var LH2O: Repair
+  var KO: typings.screeps.screepsStrings.KHO2
   
-  var UHO2: `0`
+  var LH: LH2O
   
-  var UO: Harvest
+  var LO: typings.screeps.screepsStrings.LHO2
   
-  var XGH2O: `5`
+  var UH: UH2O
   
-  var XLH2O: BuildRepair
+  var UO: UHO2
   
-  var XUHO2: `1`
+  var ZH: ZH2O
   
-  var XZH2O: `3`
-  
-  var ZH: Dismantle
-  
-  var ZH2O: `2`
+  var ZO: ZHO2
 }
 object GH {
   
-  inline def apply(
-    GH: UpgradeController,
-    GH2O: `4`,
-    LH: Build,
-    LH2O: Repair,
-    UHO2: `0`,
-    UO: Harvest,
-    XGH2O: `5`,
-    XLH2O: BuildRepair,
-    XUHO2: `1`,
-    XZH2O: `3`,
-    ZH: Dismantle,
-    ZH2O: `2`
-  ): GH = {
-    val __obj = js.Dynamic.literal(GH = GH.asInstanceOf[js.Any], GH2O = GH2O.asInstanceOf[js.Any], LH = LH.asInstanceOf[js.Any], LH2O = LH2O.asInstanceOf[js.Any], UHO2 = UHO2.asInstanceOf[js.Any], UO = UO.asInstanceOf[js.Any], XGH2O = XGH2O.asInstanceOf[js.Any], XLH2O = XLH2O.asInstanceOf[js.Any], XUHO2 = XUHO2.asInstanceOf[js.Any], XZH2O = XZH2O.asInstanceOf[js.Any], ZH = ZH.asInstanceOf[js.Any], ZH2O = ZH2O.asInstanceOf[js.Any])
+  inline def apply(): GH = {
+    val __obj = js.Dynamic.literal(GH = "GH2O", GO = "GHO2", KH = "KH2O", KO = "KHO2", LH = "LH2O", LO = "LHO2", UH = "UH2O", UO = "UHO2", ZH = "ZH2O", ZO = "ZHO2")
     __obj.asInstanceOf[GH]
   }
   
   extension [Self <: GH](x: Self) {
     
-    inline def setGH(value: UpgradeController): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
+    inline def setGH(value: typings.screeps.screepsStrings.GH2O): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
     
-    inline def setGH2O(value: `4`): Self = StObject.set(x, "GH2O", value.asInstanceOf[js.Any])
+    inline def setGO(value: typings.screeps.screepsStrings.GHO2): Self = StObject.set(x, "GO", value.asInstanceOf[js.Any])
     
-    inline def setLH(value: Build): Self = StObject.set(x, "LH", value.asInstanceOf[js.Any])
+    inline def setKH(value: KH2O): Self = StObject.set(x, "KH", value.asInstanceOf[js.Any])
     
-    inline def setLH2O(value: Repair): Self = StObject.set(x, "LH2O", value.asInstanceOf[js.Any])
+    inline def setKO(value: typings.screeps.screepsStrings.KHO2): Self = StObject.set(x, "KO", value.asInstanceOf[js.Any])
     
-    inline def setUHO2(value: `0`): Self = StObject.set(x, "UHO2", value.asInstanceOf[js.Any])
+    inline def setLH(value: LH2O): Self = StObject.set(x, "LH", value.asInstanceOf[js.Any])
     
-    inline def setUO(value: Harvest): Self = StObject.set(x, "UO", value.asInstanceOf[js.Any])
+    inline def setLO(value: typings.screeps.screepsStrings.LHO2): Self = StObject.set(x, "LO", value.asInstanceOf[js.Any])
     
-    inline def setXGH2O(value: `5`): Self = StObject.set(x, "XGH2O", value.asInstanceOf[js.Any])
+    inline def setUH(value: UH2O): Self = StObject.set(x, "UH", value.asInstanceOf[js.Any])
     
-    inline def setXLH2O(value: BuildRepair): Self = StObject.set(x, "XLH2O", value.asInstanceOf[js.Any])
+    inline def setUO(value: UHO2): Self = StObject.set(x, "UO", value.asInstanceOf[js.Any])
     
-    inline def setXUHO2(value: `1`): Self = StObject.set(x, "XUHO2", value.asInstanceOf[js.Any])
+    inline def setZH(value: ZH2O): Self = StObject.set(x, "ZH", value.asInstanceOf[js.Any])
     
-    inline def setXZH2O(value: `3`): Self = StObject.set(x, "XZH2O", value.asInstanceOf[js.Any])
-    
-    inline def setZH(value: Dismantle): Self = StObject.set(x, "ZH", value.asInstanceOf[js.Any])
-    
-    inline def setZH2O(value: `2`): Self = StObject.set(x, "ZH2O", value.asInstanceOf[js.Any])
+    inline def setZO(value: ZHO2): Self = StObject.set(x, "ZO", value.asInstanceOf[js.Any])
   }
 }

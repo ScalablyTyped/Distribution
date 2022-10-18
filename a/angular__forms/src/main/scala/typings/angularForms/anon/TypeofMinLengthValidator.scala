@@ -16,7 +16,7 @@ trait TypeofMinLengthValidator
   
   var ɵdir: ɵɵDirectiveDeclaration[
     MinLengthValidator, 
-    String, 
+    /* [minlength][formControlName],[minlength][formControl],[minlength][ngModel] */ String, 
     scala.Nothing, 
     Minlength, 
     js.Object, 

@@ -27,6 +27,6 @@ object Values {
     
     inline def setValuesFunction1(value: /* row */ TRow => EditCheckboxOptionValue | EditSelectOptionValue): Self = StObject.set(x, "values", js.Any.fromFunction1(value))
     
-    inline def setValuesVarargs(value: (Double | String | Value)*): Self = StObject.set(x, "values", js.Array(value*))
+    inline def setValuesVarargs(value: (Double | String | Text)*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

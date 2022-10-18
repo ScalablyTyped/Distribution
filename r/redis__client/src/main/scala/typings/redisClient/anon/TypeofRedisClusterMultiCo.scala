@@ -2,14 +2,14 @@ package typings.redisClient.anon
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.redisClient.clusterMultiCommandMod.InstantiableRedisClusterMultiCommandType
-import typings.redisClient.clusterMultiCommandMod.RedisClusterMultiCommand
-import typings.redisClient.clusterMultiCommandMod.RedisClusterMultiExecutor
-import typings.redisClient.libCommandsMod.RedisCommandArgument
-import typings.redisClient.libCommandsMod.RedisExtensions
-import typings.redisClient.libCommandsMod.RedisFunctions
-import typings.redisClient.libCommandsMod.RedisModules
-import typings.redisClient.libCommandsMod.RedisScripts
+import typings.redisClient.distLibClusterMultiCommandMod.InstantiableRedisClusterMultiCommandType
+import typings.redisClient.distLibClusterMultiCommandMod.RedisClusterMultiCommand
+import typings.redisClient.distLibClusterMultiCommandMod.RedisClusterMultiExecutor
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
+import typings.redisClient.distLibCommandsMod.RedisExtensions
+import typings.redisClient.distLibCommandsMod.RedisFunctions
+import typings.redisClient.distLibCommandsMod.RedisModules
+import typings.redisClient.distLibCommandsMod.RedisScripts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

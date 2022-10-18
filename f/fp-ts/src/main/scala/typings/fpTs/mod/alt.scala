@@ -1,12 +1,12 @@
 package typings.fpTs.mod
 
-import typings.fpTs.altMod.Alt
-import typings.fpTs.altMod.Alt1
-import typings.fpTs.altMod.Alt2
-import typings.fpTs.altMod.Alt2C
-import typings.fpTs.altMod.Alt3
-import typings.fpTs.altMod.Alt3C
-import typings.fpTs.altMod.Alt4
+import typings.fpTs.libAltMod.Alt
+import typings.fpTs.libAltMod.Alt1
+import typings.fpTs.libAltMod.Alt2
+import typings.fpTs.libAltMod.Alt2C
+import typings.fpTs.libAltMod.Alt3
+import typings.fpTs.libAltMod.Alt3C
+import typings.fpTs.libAltMod.Alt4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

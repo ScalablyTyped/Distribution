@@ -1,10 +1,10 @@
 package typings.reactDndPreview
 
 import typings.react.mod.ReactNode
-import typings.reactDndPreview.esmContextMod.PreviewState
-import typings.reactDndPreview.esmPreviewMod.PreviewGenerator
-import typings.reactDndPreview.esmPreviewMod.PreviewProps
-import typings.reactDndPreview.esmUsePreviewMod.usePreviewState
+import typings.reactDndPreview.distEsmContextMod.PreviewState
+import typings.reactDndPreview.distEsmPreviewMod.PreviewGenerator
+import typings.reactDndPreview.distEsmPreviewMod.PreviewProps
+import typings.reactDndPreview.distEsmUsePreviewMod.usePreviewState
 import typings.reactDndPreview.reactDndPreviewBooleans.`false`
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -38,9 +38,9 @@ object anon {
   
   trait Children[T, El /* <: Element */]
     extends StObject
-       with typings.reactDndPreview.previewMod.PreviewProps[T, El] {
+       with typings.reactDndPreview.distCjsPreviewMod.PreviewProps[T, El] {
     
-    var children: (typings.reactDndPreview.previewMod.PreviewGenerator[T, El]) | ReactNode
+    var children: (typings.reactDndPreview.distCjsPreviewMod.PreviewGenerator[T, El]) | ReactNode
   }
   object Children {
     
@@ -51,10 +51,10 @@ object anon {
     
     extension [Self <: Children[?, ?], T, El /* <: Element */](x: Self & (Children[T, El])) {
       
-      inline def setChildren(value: (typings.reactDndPreview.previewMod.PreviewGenerator[T, El]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: (typings.reactDndPreview.distCjsPreviewMod.PreviewGenerator[T, El]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenFunction1(
-        value: /* state */ typings.reactDndPreview.contextMod.PreviewState[T, El] => typings.react.mod.global.JSX.Element
+        value: /* state */ typings.reactDndPreview.distCjsContextMod.PreviewState[T, El] => typings.react.mod.global.JSX.Element
       ): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
@@ -64,7 +64,7 @@ object anon {
   trait Display
     extends StObject
        with usePreviewState[Any, Any]
-       with typings.reactDndPreview.usePreviewMod.usePreviewState[Any, Any] {
+       with typings.reactDndPreview.distCjsUsePreviewMod.usePreviewState[Any, Any] {
     
     var display: `false`
   }
@@ -83,14 +83,14 @@ object anon {
   
   trait Generator[T, El /* <: Element */]
     extends StObject
-       with typings.reactDndPreview.previewMod.PreviewProps[T, El] {
+       with typings.reactDndPreview.distCjsPreviewMod.PreviewProps[T, El] {
     
-    var generator: typings.reactDndPreview.previewMod.PreviewGenerator[T, El]
+    var generator: typings.reactDndPreview.distCjsPreviewMod.PreviewGenerator[T, El]
   }
   object Generator {
     
     inline def apply[T, El /* <: Element */](
-      generator: /* state */ typings.reactDndPreview.contextMod.PreviewState[T, El] => typings.react.mod.global.JSX.Element
+      generator: /* state */ typings.reactDndPreview.distCjsContextMod.PreviewState[T, El] => typings.react.mod.global.JSX.Element
     ): Generator[T, El] = {
       val __obj = js.Dynamic.literal(generator = js.Any.fromFunction1(generator))
       __obj.asInstanceOf[Generator[T, El]]
@@ -99,7 +99,7 @@ object anon {
     extension [Self <: Generator[?, ?], T, El /* <: Element */](x: Self & (Generator[T, El])) {
       
       inline def setGenerator(
-        value: /* state */ typings.reactDndPreview.contextMod.PreviewState[T, El] => typings.react.mod.global.JSX.Element
+        value: /* state */ typings.reactDndPreview.distCjsContextMod.PreviewState[T, El] => typings.react.mod.global.JSX.Element
       ): Self = StObject.set(x, "generator", js.Any.fromFunction1(value))
     }
   }

@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import typings.bson.mod.ObjectId
 import typings.mongodb.anon.Aborted
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
@@ -14,6 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class GridFSBucketWriteStream () extends Writable {
   def this(opts: WritableOptions) = this()
   
+  /**
+    * Places this write stream into an aborted state (all future writes fail)
+    * and deletes all chunks that have already been written.
+    *
+    * @param callback - called when chunks are successfully removed or error occurred
+    */
+  def abort(): js.Promise[Unit] = js.native
   /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
   def abort(callback: Callback[Unit]): Unit = js.native
   
@@ -38,7 +46,7 @@ open class GridFSBucketWriteStream () extends Writable {
   
   var files: Collection[GridFSFile] = js.native
   
-  var id: typings.bson.mod.ObjectId = js.native
+  var id: ObjectId = js.native
   
   var length: scala.Double = js.native
   
@@ -50,10 +58,8 @@ open class GridFSBucketWriteStream () extends Writable {
   
   var state: Aborted = js.native
   
-  def write(chunk: String): Boolean = js.native
   def write(chunk: String, callback: Callback[Unit]): Boolean = js.native
   def write(chunk: String, encoding: Unit, callback: Callback[Unit]): Boolean = js.native
-  def write(chunk: String, encoding: BufferEncoding): Boolean = js.native
   def write(chunk: String, encoding: BufferEncoding, callback: Callback[Unit]): Boolean = js.native
   /* Excluded from this release type: __constructor */
   /**

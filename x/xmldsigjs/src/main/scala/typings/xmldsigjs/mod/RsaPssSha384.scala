@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xmldsigjs", "RsaPssSha384")
 @js.native
 open class RsaPssSha384 ()
-  extends typings.xmldsigjs.algorithmsMod.RsaPssSha384 {
+  extends typings.xmldsigjs.buildTypesAlgorithmsMod.RsaPssSha384 {
   def this(saltLength: Double) = this()
 }

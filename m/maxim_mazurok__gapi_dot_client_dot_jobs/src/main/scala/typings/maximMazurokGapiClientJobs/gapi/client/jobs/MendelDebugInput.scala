@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +12,7 @@ trait MendelDebugInput extends StObject {
     * 2. NamespacedMendelDebugInput with the server's namespace. When both NamespacedMendelDebugInput protos are present, they are merged. See go/mendel-debug-forcing for more details.
     */
   var namespacedDebugInput: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.NamespacedDebugInput}
-    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.MendelDebugInput & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.NamespacedDebugInput} */ js.Any
   ] = js.undefined
 }
 object MendelDebugInput {
@@ -28,9 +25,7 @@ object MendelDebugInput {
   extension [Self <: MendelDebugInput](x: Self) {
     
     inline def setNamespacedDebugInput(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.NamespacedDebugInput}
-      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.MendelDebugInput & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.NamespacedDebugInput} */ js.Any
     ): Self = StObject.set(x, "namespacedDebugInput", value.asInstanceOf[js.Any])
     
     inline def setNamespacedDebugInputUndefined: Self = StObject.set(x, "namespacedDebugInput", js.undefined)

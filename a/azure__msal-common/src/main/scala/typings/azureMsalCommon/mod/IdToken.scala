@@ -1,7 +1,7 @@
 package typings.azureMsalCommon.mod
 
-import typings.azureMsalCommon.icryptoMod.ICrypto
-import typings.azureMsalCommon.tokenClaimsMod.TokenClaims
+import typings.azureMsalCommon.distAccountTokenClaimsMod.TokenClaims
+import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "IdToken")
 @js.native
 open class IdToken protected ()
-  extends typings.azureMsalCommon.authTokenMod.AuthToken {
+  extends typings.azureMsalCommon.distAccountAuthTokenMod.AuthToken {
   def this(rawToken: String, crypto: ICrypto) = this()
 }
 /* static members */

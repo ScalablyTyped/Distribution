@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "VectorKeyframeTrack")
 @js.native
 open class VectorKeyframeTrack protected ()
-  extends typings.three.threeMod.VectorKeyframeTrack {
+  extends typings.three.srcThreeMod.VectorKeyframeTrack {
   def this(name: String, times: js.Array[Any], values: js.Array[Any]) = this()
   def this(
     name: String,

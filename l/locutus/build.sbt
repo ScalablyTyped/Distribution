@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "locutus"
-version := "0.0-unknown-dt-20220818Z-4010c2"
+version := "0.0-unknown-dt-20220818Z-bb9d78"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

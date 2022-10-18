@@ -1,6 +1,6 @@
 package typings.nivoAnnotations.anon
 
-import typings.nivoAnnotations.typesMod.ComputedAnnotation
+import typings.nivoAnnotations.distTypesTypesMod.ComputedAnnotation
 import typings.nivoCore.mod.CompleteTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

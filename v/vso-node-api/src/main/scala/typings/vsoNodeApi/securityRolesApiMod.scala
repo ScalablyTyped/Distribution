@@ -1,11 +1,11 @@
 package typings.vsoNodeApi
 
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
-import typings.vsoNodeApi.securityRolesInterfacesMod.RoleAssignment
-import typings.vsoNodeApi.securityRolesInterfacesMod.SecurityRole
-import typings.vsoNodeApi.securityRolesInterfacesMod.UserRoleAssignmentRef
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesSecurityRolesInterfacesMod.RoleAssignment
+import typings.vsoNodeApi.interfacesSecurityRolesInterfacesMod.SecurityRole
+import typings.vsoNodeApi.interfacesSecurityRolesInterfacesMod.UserRoleAssignmentRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

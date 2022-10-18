@@ -172,10 +172,6 @@ trait Instantiable
   
   var MandatesResource: Instantiable0[typings.stripe.mod.Stripe.MandatesResource] = js.native
   
-  val OAuthAuthorizeUrlParams: Any = js.native
-  
-  var OAuthResource: Instantiable0[typings.stripe.mod.Stripe.OAuthResource] = js.native
-  
   val Order: TypeofOrder = js.native
   
   val OrderCreateParams: TypeofOrderCreateParams = js.native
@@ -316,8 +312,6 @@ trait Instantiable
   
   val Sigma: TypeofSigma = js.native
   
-  var Signature: Instantiable0[typings.stripe.mod.Stripe.Signature] = js.native
-  
   val Sku: Any = js.native
   
   val SkuCreateParams: TypeofSkuCreateParams = js.native
@@ -409,21 +403,4 @@ trait Instantiable
   val WebhookEndpointUpdateParams: Any = js.native
   
   var WebhookEndpointsResource: Instantiable0[typings.stripe.mod.Stripe.WebhookEndpointsResource] = js.native
-  
-  var Webhooks: Instantiable0[typings.stripe.mod.Stripe.Webhooks] = js.native
-  
-  def createNodeCryptoProvider(): typings.stripe.mod.Stripe.CryptoProvider = js.native
-  
-  def createSubtleCryptoProvider(): typings.stripe.mod.Stripe.CryptoProvider = js.native
-  def createSubtleCryptoProvider(
-    /**
-    * The SubtleCrypto type cannot be specified without pulling in DOM types.
-    * This corresponds to WindowOrWorkerGlobalScope['crypto']['subtle'] for
-    * applications which pull in DOM types.
-    */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  subtleCrypto: Any
-  ): typings.stripe.mod.Stripe.CryptoProvider = js.native
-  
-  val errors: Typeoferrors = js.native
 }

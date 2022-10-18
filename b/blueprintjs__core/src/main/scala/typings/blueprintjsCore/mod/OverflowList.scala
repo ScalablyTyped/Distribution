@@ -2,7 +2,7 @@ package typings.blueprintjsCore.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.blueprintjsCore.anon.PartialOverflowListPropsa
-import typings.blueprintjsCore.overflowListMod.OverflowListProps
+import typings.blueprintjsCore.libEsmComponentsOverflowListOverflowListMod.OverflowListProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "OverflowList")
 @js.native
 open class OverflowList[T] protected ()
-  extends typings.blueprintjsCore.componentsMod.OverflowList[T] {
+  extends typings.blueprintjsCore.libEsmComponentsMod.OverflowList[T] {
   def this(props: OverflowListProps[T]) = this()
   /**
     * @deprecated
@@ -37,9 +37,9 @@ object OverflowList {
   
   inline def ofType[U](): Instantiable1[
     /* props */ OverflowListProps[U], 
-    typings.blueprintjsCore.overflowListMod.OverflowList[U]
+    typings.blueprintjsCore.libEsmComponentsOverflowListOverflowListMod.OverflowList[U]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
     /* props */ OverflowListProps[U], 
-    typings.blueprintjsCore.overflowListMod.OverflowList[U]
+    typings.blueprintjsCore.libEsmComponentsOverflowListOverflowListMod.OverflowList[U]
   ]]
 }

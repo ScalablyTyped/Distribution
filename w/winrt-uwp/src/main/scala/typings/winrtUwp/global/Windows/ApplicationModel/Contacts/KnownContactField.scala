@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A static class that contains the names of contact fields for storing commonly requested information like email address and phone numbers. */
-@JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField")
 @js.native
-abstract class KnownContactField ()
+open class KnownContactField ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.KnownContactField
 object KnownContactField {

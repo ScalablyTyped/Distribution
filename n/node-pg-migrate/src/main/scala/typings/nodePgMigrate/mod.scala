@@ -1,17 +1,17 @@
 package typings.nodePgMigrate
 
-import typings.nodePgMigrate.dbMod.DBConnection
+import typings.nodePgMigrate.distDbMod.DBConnection
+import typings.nodePgMigrate.distMigrationMod.CreateOptions
+import typings.nodePgMigrate.distMigrationMod.FilenameFormat
+import typings.nodePgMigrate.distMigrationMod.RunMigration
+import typings.nodePgMigrate.distOperationsPgLiteralMod.default
+import typings.nodePgMigrate.distOperationsTablesTypesMod.ColumnDefinitions
 import typings.nodePgMigrate.distTypesMod.Logger
 import typings.nodePgMigrate.distTypesMod.MigrationBuilderActions
 import typings.nodePgMigrate.distTypesMod.RunnerOption
-import typings.nodePgMigrate.migrationMod.CreateOptions
-import typings.nodePgMigrate.migrationMod.FilenameFormat
-import typings.nodePgMigrate.migrationMod.RunMigration
 import typings.nodePgMigrate.nodePgMigrateStrings.js_
 import typings.nodePgMigrate.nodePgMigrateStrings.sql
 import typings.nodePgMigrate.nodePgMigrateStrings.ts
-import typings.nodePgMigrate.pgLiteralMod.default
-import typings.nodePgMigrate.tablesTypesMod.ColumnDefinitions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object mod {
   @JSImport("node-pg-migrate", "Migration")
   @js.native
   open class Migration protected ()
-    extends typings.nodePgMigrate.migrationMod.Migration {
+    extends typings.nodePgMigrate.distMigrationMod.Migration {
     def this(db: DBConnection, migrationPath: String, hasUpDown: MigrationBuilderActions, options: RunnerOption) = this()
     def this(
       db: DBConnection,
@@ -122,7 +122,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(str: String): typings.nodePgMigrate.pgLiteralMod.PgLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(str.asInstanceOf[js.Any]).asInstanceOf[typings.nodePgMigrate.pgLiteralMod.PgLiteral]
+    inline def create(str: String): typings.nodePgMigrate.distOperationsPgLiteralMod.PgLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(str.asInstanceOf[js.Any]).asInstanceOf[typings.nodePgMigrate.distOperationsPgLiteralMod.PgLiteral]
   }
   
   @JSImport("node-pg-migrate", "PgType")

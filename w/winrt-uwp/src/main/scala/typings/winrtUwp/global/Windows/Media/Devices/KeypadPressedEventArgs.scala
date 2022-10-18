@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information for the KeypadPressed event. */
-@JSGlobal("Windows.Media.Devices.KeypadPressedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.KeypadPressedEventArgs")
 @js.native
-abstract class KeypadPressedEventArgs ()
+open class KeypadPressedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.KeypadPressedEventArgs {
   

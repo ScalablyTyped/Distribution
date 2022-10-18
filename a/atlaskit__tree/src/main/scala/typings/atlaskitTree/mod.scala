@@ -2,13 +2,13 @@ package typings.atlaskitTree
 
 import typings.atlaskitTree.anon.DraggedItemId
 import typings.atlaskitTree.anon.IsDragEnabled
-import typings.atlaskitTree.treeTypesMod.Props
-import typings.atlaskitTree.treeTypesMod.State
-import typings.atlaskitTree.typesMod.ItemId
-import typings.atlaskitTree.typesMod.TreeData
-import typings.atlaskitTree.typesMod.TreeDestinationPosition
-import typings.atlaskitTree.typesMod.TreeSourcePosition
-import typings.atlaskitTree.utilsTreeMod.TreeItemMutation
+import typings.atlaskitTree.distTypesComponentsTreeTreeTypesMod.Props
+import typings.atlaskitTree.distTypesComponentsTreeTreeTypesMod.State
+import typings.atlaskitTree.distTypesTypesMod.ItemId
+import typings.atlaskitTree.distTypesTypesMod.TreeData
+import typings.atlaskitTree.distTypesTypesMod.TreeDestinationPosition
+import typings.atlaskitTree.distTypesTypesMod.TreeSourcePosition
+import typings.atlaskitTree.distTypesUtilsTreeMod.TreeItemMutation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ object mod {
   @JSImport("@atlaskit/tree", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.atlaskitTree.treeMod.default
+    extends typings.atlaskitTree.distTypesComponentsTreeMod.default
   /* static members */
   object default {
     

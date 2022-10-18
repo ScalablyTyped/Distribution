@@ -1,15 +1,14 @@
 package typings.grammarkdown.mod
 
-import typings.grammarkdown.lineOffsetMapMod.LineOffsetMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "NullDiagnosticMessages")
 @js.native
-class NullDiagnosticMessages ()
-  extends typings.grammarkdown.diagnosticsMod.NullDiagnosticMessages {
-  def this(lineOffsetMap: LineOffsetMap) = this()
+open class NullDiagnosticMessages ()
+  extends typings.grammarkdown.distDiagnosticsMod.NullDiagnosticMessages {
+  def this(lineOffsetMap: typings.grammarkdown.distLineOffsetMapMod.LineOffsetMap) = this()
 }
 /* static members */
 object NullDiagnosticMessages {
@@ -20,6 +19,6 @@ object NullDiagnosticMessages {
   
   @JSImport("grammarkdown", "NullDiagnosticMessages._instance")
   @js.native
-  def _instance: js.Any = js.native
-  inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+  def _instance: Any = js.native
+  inline def _instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
 }

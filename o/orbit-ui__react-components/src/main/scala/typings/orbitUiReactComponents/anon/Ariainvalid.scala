@@ -1,5 +1,6 @@
 package typings.orbitUiReactComponents.anon
 
+import typings.orbitUiReactComponents.distSharedSrcUseMergedRefsMod.MergedRef
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.email
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.number
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.password
@@ -7,7 +8,6 @@ import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.search
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.tel
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.text
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.url
-import typings.orbitUiReactComponents.useMergedRefsMod.MergedRef
 import typings.react.mod.ChangeEvent
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement

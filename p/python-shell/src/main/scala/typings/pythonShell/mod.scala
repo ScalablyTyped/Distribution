@@ -1,5 +1,6 @@
 package typings.pythonShell
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.childProcessMod.ChildProcess
@@ -66,13 +67,7 @@ object mod {
     @JSName("addListener")
     def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_error(
-      event: error,
-      listener: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* error */ Any, 
-          Unit
-        ]
-    ): this.type = js.native
+    def addListener_error(event: error, listener: js.Function1[/* error */ ErrnoException, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_message(event: message, listener: js.Function1[/* parsedChunk */ Any, Unit]): this.type = js.native
     @JSName("addListener")
@@ -87,10 +82,7 @@ object mod {
     @JSName("emit")
     def emit_close(event: close): Boolean = js.native
     @JSName("emit")
-    def emit_error(
-      event: error,
-      error: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-    ): Boolean = js.native
+    def emit_error(event: error, error: ErrnoException): Boolean = js.native
     @JSName("emit")
     def emit_message(event: message, parsedChunk: Any): Boolean = js.native
     @JSName("emit")
@@ -126,13 +118,7 @@ object mod {
     @JSName("on")
     def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_error(
-      event: error,
-      listener: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* error */ Any, 
-          Unit
-        ]
-    ): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* error */ ErrnoException, Unit]): this.type = js.native
     @JSName("on")
     def on_message(event: message, listener: js.Function1[/* parsedChunk */ Any, Unit]): this.type = js.native
     @JSName("on")
@@ -143,13 +129,7 @@ object mod {
     @JSName("once")
     def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_error(
-      event: error,
-      listener: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* error */ Any, 
-          Unit
-        ]
-    ): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* error */ ErrnoException, Unit]): this.type = js.native
     @JSName("once")
     def once_message(event: message, listener: js.Function1[/* parsedChunk */ Any, Unit]): this.type = js.native
     @JSName("once")
@@ -169,13 +149,7 @@ object mod {
     @JSName("prependListener")
     def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_error(
-      event: error,
-      listener: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* error */ Any, 
-          Unit
-        ]
-    ): this.type = js.native
+    def prependListener_error(event: error, listener: js.Function1[/* error */ ErrnoException, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_message(event: message, listener: js.Function1[/* parsedChunk */ Any, Unit]): this.type = js.native
     @JSName("prependListener")
@@ -186,13 +160,7 @@ object mod {
     @JSName("prependOnceListener")
     def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_error(
-      event: error,
-      listener: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* error */ Any, 
-          Unit
-        ]
-    ): this.type = js.native
+    def prependOnceListener_error(event: error, listener: js.Function1[/* error */ ErrnoException, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_message(event: message, listener: js.Function1[/* parsedChunk */ Any, Unit]): this.type = js.native
     @JSName("prependOnceListener")

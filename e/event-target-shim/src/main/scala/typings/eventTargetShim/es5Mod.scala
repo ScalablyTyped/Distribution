@@ -1,10 +1,7 @@
 package typings.eventTargetShim
 
 import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.TopLevel
 import typings.eventTargetShim.anon.Abort
-import typings.eventTargetShim.anon.PartialOmitEventstringtyp
-import typings.eventTargetShim.anon.Type
 import typings.eventTargetShim.anon.TypeofEvent
 import typings.eventTargetShim.es5Mod.Event.EventInit
 import typings.eventTargetShim.es5Mod.EventTarget.AddOptions
@@ -15,32 +12,8 @@ import typings.eventTargetShim.es5Mod.EventTarget.FallbackEvent
 import typings.eventTargetShim.es5Mod.EventTarget.FallbackEventListener
 import typings.eventTargetShim.es5Mod.EventTarget.Options
 import typings.eventTargetShim.es5Mod.defineEventAttribute.EventAttributes
-import typings.eventTargetShim.eventTargetShimStrings.AT_TARGET
-import typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE
-import typings.eventTargetShim.eventTargetShimStrings.CAPTURING_PHASE
-import typings.eventTargetShim.eventTargetShimStrings.NONE
-import typings.eventTargetShim.eventTargetShimStrings.`type`
-import typings.eventTargetShim.eventTargetShimStrings.bubbles
-import typings.eventTargetShim.eventTargetShimStrings.cancelBubble
-import typings.eventTargetShim.eventTargetShimStrings.cancelable
-import typings.eventTargetShim.eventTargetShimStrings.composed
-import typings.eventTargetShim.eventTargetShimStrings.composedPath
-import typings.eventTargetShim.eventTargetShimStrings.constructor
-import typings.eventTargetShim.eventTargetShimStrings.currentTarget
-import typings.eventTargetShim.eventTargetShimStrings.defaultPrevented
-import typings.eventTargetShim.eventTargetShimStrings.eventPhase
-import typings.eventTargetShim.eventTargetShimStrings.initEvent
-import typings.eventTargetShim.eventTargetShimStrings.isTrusted
-import typings.eventTargetShim.eventTargetShimStrings.preventDefault
-import typings.eventTargetShim.eventTargetShimStrings.returnValue
-import typings.eventTargetShim.eventTargetShimStrings.srcElement
 import typings.eventTargetShim.eventTargetShimStrings.standard
-import typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation
-import typings.eventTargetShim.eventTargetShimStrings.stopPropagation
 import typings.eventTargetShim.eventTargetShimStrings.strict
-import typings.eventTargetShim.eventTargetShimStrings.target
-import typings.eventTargetShim.eventTargetShimStrings.timeStamp
-import typings.std.Omit
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -473,10 +446,16 @@ object es5Mod {
     /**
     	 * The event data to dispatch in strict mode.
     	 */
-    type EventData[TEventMap /* <: Record[String, Event[String]] */, TMode /* <: standard | strict */, TEventType /* <: String */] = ExplicitType[TEventType] & (Omit[
-        /* import warning: importer.ImportType#apply Failed type conversion: TEventMap[TEventType] */ js.Any, 
-        /* keyof event-target-shim.event-target-shim/es5.Event<string> */ NONE | CAPTURING_PHASE | AT_TARGET | BUBBLING_PHASE | constructor | `type` | target | srcElement | currentTarget | composedPath | eventPhase | stopPropagation | cancelBubble | stopImmediatePropagation | bubbles | cancelable | returnValue | preventDefault | defaultPrevented | composed | isTrusted | timeStamp | initEvent
-      ]) & PartialOmitEventstringtyp
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      TMode extends 'strict' ? event-target-shim.event-target-shim/es5.EventTarget.IsValidEventMap<TEventMap> extends true ? event-target-shim.event-target-shim/es5.EventTarget.ExplicitType<TEventType> & std.Omit<TEventMap[TEventType], keyof event-target-shim.event-target-shim/es5.Event<string>> & / * Inlined std.Partial<std.Omit<event-target-shim.event-target-shim/es5.Event<string>, 'type'>> * /
+    {  target :(): event-target-shim.event-target-shim/es5.EventTarget<std.Record<string, event-target-shim.event-target-shim/es5.Event<string>>, 'standard'> | null | undefined,   eventPhase :(): number | undefined,   composed :(): boolean | undefined,   CAPTURING_PHASE :(): number | undefined,   stopImmediatePropagation :(): void | undefined,   timeStamp :(): number | undefined,   stopPropagation :(): void | undefined,   defaultPrevented :(): boolean | undefined,   AT_TARGET :(): number | undefined,   NONE :(): number | undefined,   cancelable :(): boolean | undefined,   returnValue :(): boolean | undefined,   isTrusted :(): boolean | undefined,   constructor :(type : string, eventInitDict : event-target-shim.event-target-shim/es5.Event.EventInit | undefined) | undefined,   bubbles :(): boolean | undefined,   initEvent :(type : string, bubbles : boolean | undefined, cancelable : boolean | undefined): void | undefined,   srcElement :(): event-target-shim.event-target-shim/es5.EventTarget<std.Record<string, event-target-shim.event-target-shim/es5.Event<string>>, 'standard'> | null | undefined,   preventDefault :(): void | undefined,   cancelBubble :(): boolean | undefined,   composedPath :(): std.Array<event-target-shim.event-target-shim/es5.EventTarget<std.Record<string, event-target-shim.event-target-shim/es5.Event<string>>, 'standard'>> | undefined,   currentTarget :(): event-target-shim.event-target-shim/es5.EventTarget<std.Record<string, event-target-shim.event-target-shim/es5.Event<string>>, 'standard'> | null | undefined,   BUBBLING_PHASE :(): number | undefined} : never : never
+      }}}
+      */
+    @js.native
+    trait EventData[TEventMap /* <: Record[String, Event[String]] */, TMode /* <: standard | strict */, TEventType /* <: String */] extends StObject
     
     /**
     	 * The event listener.
@@ -487,28 +466,56 @@ object es5Mod {
     	 * Define explicit `type` property if `T` is a string literal.
     	 * Otherwise, never.
     	 */
-    type ExplicitType[T /* <: String */] = Type[T]
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      string extends T ? never : { readonly type :T}
+      }}}
+      */
+    @js.native
+    trait ExplicitType[T /* <: String */] extends StObject
     
     /**
     	 * The event type in standard mode.
     	 * Otherwise, never.
     	 */
-    type FallbackEvent[TMode /* <: standard | strict */] = Event[String]
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      TMode extends 'standard' ? event-target-shim.event-target-shim/es5.Event<string> : never
+      }}}
+      */
+    @js.native
+    trait FallbackEvent[TMode /* <: standard | strict */] extends StObject
     
     /**
     	 * The event listener type in standard mode.
     	 * Otherwise, never.
     	 */
-    type FallbackEventListener[TEventTarget /* <: EventTarget[Any, Any] */, TMode /* <: standard | strict */] = js.UndefOr[(EventListener[TEventTarget, Event[String]]) | Null]
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      TMode extends 'standard' ? event-target-shim.event-target-shim/es5.EventTarget.EventListener<TEventTarget, event-target-shim.event-target-shim/es5.Event<string>> | null | undefined : never
+      }}}
+      */
+    @js.native
+    trait FallbackEventListener[TEventTarget /* <: EventTarget[Any, Any] */, TMode /* <: standard | strict */] extends StObject
     
     /**
     	 * Check if given event map is valid.
     	 * It's valid if the keys of the event map are narrower than `string`.
     	 */
-    /* Rewritten from type alias, can be one of: 
-      - typings.eventTargetShim.eventTargetShimBooleans.`true`
-      - typings.eventTargetShim.eventTargetShimBooleans.`false`
-    */
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      string extends keyof T ? false : true
+      }}}
+      */
+    @js.native
     trait IsValidEventMap[T] extends StObject
     
     /**
@@ -572,9 +579,15 @@ object es5Mod {
     /**
     	 * Definition of event attributes.
     	 */
-    type EventAttributes[TEventTarget /* <: EventTarget[Any, Any] */, TEventMap /* <: Record[String, Event[String]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string & keyof TEventMap as / * template literal string: on${P} * / string ]: event-target-shim.event-target-shim/es5.EventTarget.CallbackFunction<TEventTarget, TEventMap[P]> | null}
-      */ typings.eventTargetShim.eventTargetShimStrings.EventAttributes & TopLevel[TEventMap]
+    /** NOTE: Mapped type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      {[ P in string & keyof TEventMap as / * template literal string: on${P} * / string ]: event-target-shim.event-target-shim/es5.EventTarget.CallbackFunction<TEventTarget, TEventMap[P]> | null}
+      }}}
+      */
+    @js.native
+    trait EventAttributes[TEventTarget /* <: EventTarget[Any, Any] */, TEventMap /* <: Record[String, Event[String]] */] extends StObject
   }
   
   inline def getEventAttributeValue[TEventTarget /* <: EventTarget[Any, Any] */, TEvent /* <: Event[String] */](target: TEventTarget, `type`: String): (CallbackFunction[TEventTarget, TEvent]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventAttributeValue")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[(CallbackFunction[TEventTarget, TEvent]) | Null]

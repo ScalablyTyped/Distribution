@@ -7,22 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientCloudresourcemanagerStrings {
   
   @js.native
-  sealed trait Operation extends StObject
-  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
-  
-  @js.native
-  sealed trait Project extends StObject
-  inline def Project: Project = "Project".asInstanceOf[Project]
-  
-  @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
-  sealed trait TagKey extends StObject
-  inline def TagKey: TagKey = "TagKey".asInstanceOf[TagKey]
-  
-  @js.native
   sealed trait cloudresourcemanager extends StObject
   inline def cloudresourcemanager: cloudresourcemanager = "cloudresourcemanager".asInstanceOf[cloudresourcemanager]
   

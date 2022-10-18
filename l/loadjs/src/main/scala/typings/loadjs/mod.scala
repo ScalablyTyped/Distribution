@@ -1,7 +1,7 @@
 package typings.loadjs
 
+import typings.loadjs.anon.FnCall
 import typings.loadjs.anon.LoadOptionsreturnPromiset
-import typings.loadjs.anon.Typeofloadjs
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,10 +32,10 @@ object mod {
   
   inline def isDefined(bundleId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(bundleId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def ready(bundleIds: String, optionsOrCallback: LoadedFn): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
-  inline def ready(bundleIds: String, optionsOrCallback: ReadyOptions): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
-  inline def ready(bundleIds: js.Array[String], optionsOrCallback: LoadedFn): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
-  inline def ready(bundleIds: js.Array[String], optionsOrCallback: ReadyOptions): Typeofloadjs = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Typeofloadjs]
+  inline def ready(bundleIds: String, optionsOrCallback: LoadedFn): FnCall = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+  inline def ready(bundleIds: String, optionsOrCallback: ReadyOptions): FnCall = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+  inline def ready(bundleIds: js.Array[String], optionsOrCallback: LoadedFn): FnCall = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+  inline def ready(bundleIds: js.Array[String], optionsOrCallback: ReadyOptions): FnCall = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(bundleIds.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[FnCall]
   
   inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   

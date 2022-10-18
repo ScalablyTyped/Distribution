@@ -1,5 +1,6 @@
 package typings.maplibreGl
 
+import typings.maplibreGl.distStyleSpecMod.EvaluationKind
 import typings.maplibreGl.mod.ControlPosition
 import typings.maplibreGl.mod.ExpressionType
 import typings.maplibreGl.mod.MapEvent
@@ -12,7 +13,6 @@ import typings.maplibreGl.mod.TextAnchor
 import typings.maplibreGl.mod.TileState
 import typings.maplibreGl.mod.Unit
 import typings.maplibreGl.mod.ViewType
-import typings.maplibreGl.styleSpecMod.EvaluationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,10 +22,6 @@ object maplibreGlStrings {
   @js.native
   sealed trait ^ extends StObject
   inline def ^ : ^ = "^".asInstanceOf[^]
-  
-  @js.native
-  sealed trait $ObjMap extends StObject
-  inline def $ObjMap: $ObjMap = "$ObjMap".asInstanceOf[$ObjMap]
   
   @js.native
   sealed trait `-_` extends StObject
@@ -58,14 +54,6 @@ object maplibreGlStrings {
   @js.native
   sealed trait BACKGROUND_ERROR extends StObject
   inline def BACKGROUND_ERROR: BACKGROUND_ERROR = "BACKGROUND_ERROR".asInstanceOf[BACKGROUND_ERROR]
-  
-  @js.native
-  sealed trait Complete extends StObject
-  inline def Complete: Complete = "Complete".asInstanceOf[Complete]
-  
-  @js.native
-  sealed trait CrossTileSymbolLayerIndex extends StObject
-  inline def CrossTileSymbolLayerIndex: CrossTileSymbolLayerIndex = "CrossTileSymbolLayerIndex".asInstanceOf[CrossTileSymbolLayerIndex]
   
   @js.native
   sealed trait EqualssignEqualssign extends StObject
@@ -144,14 +132,6 @@ object maplibreGlStrings {
   inline def Int8: Int8 = "Int8".asInstanceOf[Int8]
   
   @js.native
-  sealed trait LayerPlacement extends StObject
-  inline def LayerPlacement: LayerPlacement = "LayerPlacement".asInstanceOf[LayerPlacement]
-  
-  @js.native
-  sealed trait Layout extends StObject
-  inline def Layout: Layout = "Layout".asInstanceOf[Layout]
-  
-  @js.native
   sealed trait Lessthansign extends StObject
   inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
@@ -192,10 +172,6 @@ object maplibreGlStrings {
   inline def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
   
   @js.native
-  sealed trait Placement extends StObject
-  inline def Placement: Placement = "Placement".asInstanceOf[Placement]
-  
-  @js.native
   sealed trait Plussign extends StObject
   inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
@@ -208,14 +184,6 @@ object maplibreGlStrings {
   inline def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
   
   @js.native
-  sealed trait Properties extends StObject
-  inline def Properties: Properties = "Properties".asInstanceOf[Properties]
-  
-  @js.native
-  sealed trait SingleTapRecognizer extends StObject
-  inline def SingleTapRecognizer: SingleTapRecognizer = "SingleTapRecognizer".asInstanceOf[SingleTapRecognizer]
-  
-  @js.native
   sealed trait Slash extends StObject
   inline def Slash: Slash = "/".asInstanceOf[Slash]
   
@@ -224,14 +192,6 @@ object maplibreGlStrings {
     extends StObject
        with ResourceTypeEnum
   inline def Source: Source = "Source".asInstanceOf[Source]
-  
-  @js.native
-  sealed trait SourceCache extends StObject
-  inline def SourceCache: SourceCache = "SourceCache".asInstanceOf[SourceCache]
-  
-  @js.native
-  sealed trait SourceFeatureState extends StObject
-  inline def SourceFeatureState: SourceFeatureState = "SourceFeatureState".asInstanceOf[SourceFeatureState]
   
   @js.native
   sealed trait SpriteImage
@@ -256,18 +216,6 @@ object maplibreGlStrings {
     extends StObject
        with ResourceTypeEnum
   inline def Tile: Tile = "Tile".asInstanceOf[Tile]
-  
-  @js.native
-  sealed trait TouchPanHandler extends StObject
-  inline def TouchPanHandler: TouchPanHandler = "TouchPanHandler".asInstanceOf[TouchPanHandler]
-  
-  @js.native
-  sealed trait Transitionable extends StObject
-  inline def Transitionable: Transitionable = "Transitionable".asInstanceOf[Transitionable]
-  
-  @js.native
-  sealed trait Transitioning extends StObject
-  inline def Transitioning: Transitioning = "Transitioning".asInstanceOf[Transitioning]
   
   @js.native
   sealed trait Uint16
@@ -296,10 +244,6 @@ object maplibreGlStrings {
   @js.native
   sealed trait WAITING_ACTIVE extends StObject
   inline def WAITING_ACTIVE: WAITING_ACTIVE = "WAITING_ACTIVE".asInstanceOf[WAITING_ACTIVE]
-  
-  @js.native
-  sealed trait WorkerPool extends StObject
-  inline def WorkerPool: WorkerPool = "WorkerPool".asInstanceOf[WorkerPool]
   
   @js.native
   sealed trait abs extends StObject
@@ -491,7 +435,7 @@ object maplibreGlStrings {
   sealed trait `color-ramp`
     extends StObject
        with ExpressionType
-       with typings.maplibreGl.styleSpecMod.ExpressionType
+       with typings.maplibreGl.distStyleSpecMod.ExpressionType
   inline def `color-ramp`: `color-ramp` = "color-ramp".asInstanceOf[`color-ramp`]
   
   @js.native
@@ -509,7 +453,7 @@ object maplibreGlStrings {
     extends StObject
        with EvaluationKind
        with ExpressionType
-       with typings.maplibreGl.styleSpecMod.ExpressionType
+       with typings.maplibreGl.distStyleSpecMod.ExpressionType
   inline def constant: constant = "constant".asInstanceOf[constant]
   
   @js.native
@@ -538,14 +482,14 @@ object maplibreGlStrings {
   sealed trait `cross-faded`
     extends StObject
        with ExpressionType
-       with typings.maplibreGl.styleSpecMod.ExpressionType
+       with typings.maplibreGl.distStyleSpecMod.ExpressionType
   inline def `cross-faded`: `cross-faded` = "cross-faded".asInstanceOf[`cross-faded`]
   
   @js.native
   sealed trait `cross-faded-data-driven`
     extends StObject
        with ExpressionType
-       with typings.maplibreGl.styleSpecMod.ExpressionType
+       with typings.maplibreGl.distStyleSpecMod.ExpressionType
   inline def `cross-faded-data-driven`: `cross-faded-data-driven` = "cross-faded-data-driven".asInstanceOf[`cross-faded-data-driven`]
   
   @js.native
@@ -566,14 +510,14 @@ object maplibreGlStrings {
   sealed trait `data-constant`
     extends StObject
        with ExpressionType
-       with typings.maplibreGl.styleSpecMod.ExpressionType
+       with typings.maplibreGl.distStyleSpecMod.ExpressionType
   inline def `data-constant`: `data-constant` = "data-constant".asInstanceOf[`data-constant`]
   
   @js.native
   sealed trait `data-driven`
     extends StObject
        with ExpressionType
-       with typings.maplibreGl.styleSpecMod.ExpressionType
+       with typings.maplibreGl.distStyleSpecMod.ExpressionType
   inline def `data-driven`: `data-driven` = "data-driven".asInstanceOf[`data-driven`]
   
   @js.native
@@ -783,8 +727,8 @@ object maplibreGlStrings {
   inline def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait layout_ extends StObject
-  inline def layout_ : layout_ = "layout".asInstanceOf[layout_]
+  sealed trait layout extends StObject
+  inline def layout: layout = "layout".asInstanceOf[layout]
   
   @js.native
   sealed trait left
@@ -1058,8 +1002,8 @@ object maplibreGlStrings {
   inline def position: position = "position".asInstanceOf[position]
   
   @js.native
-  sealed trait properties_ extends StObject
-  inline def properties_ : properties_ = "properties".asInstanceOf[properties_]
+  sealed trait properties extends StObject
+  inline def properties: properties = "properties".asInstanceOf[properties]
   
   @js.native
   sealed trait raster extends StObject

@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.utilsMod.ColorRepresentation
+import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "ArrowHelper")
 @js.native
 open class ArrowHelper protected ()
-  extends typings.three.threeMod.ArrowHelper {
+  extends typings.three.srcThreeMod.ArrowHelper {
   /**
     * @param [dir] Direction from origin. Must be a unit vector.
     * @param [origin] Point at which the arrow starts.
@@ -18,8 +18,8 @@ open class ArrowHelper protected ()
     * @param [headWidth] The width of the head of the arrow.
     */
   def this(
-    dir: js.UndefOr[typings.three.vector3Mod.Vector3],
-    origin: js.UndefOr[typings.three.vector3Mod.Vector3],
+    dir: js.UndefOr[typings.three.srcMathVector3Mod.Vector3],
+    origin: js.UndefOr[typings.three.srcMathVector3Mod.Vector3],
     length: js.UndefOr[Double],
     color: js.UndefOr[ColorRepresentation],
     headLength: js.UndefOr[Double],

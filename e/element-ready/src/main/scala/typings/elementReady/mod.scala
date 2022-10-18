@@ -17,8 +17,6 @@ object mod {
   
   inline def default[ElementName /* <: Element */](selector: String): StoppablePromise[js.UndefOr[ElementName]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[ElementName]]]
   inline def default[ElementName /* <: Element */](selector: String, options: Options): StoppablePromise[js.UndefOr[ElementName]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[ElementName]]]
-  inline def default[Selector /* <: String */, ElementName /* <: Element */](selector: Selector): StoppablePromise[js.UndefOr[ElementName]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[ElementName]]]
-  inline def default[Selector /* <: String */, ElementName /* <: Element */](selector: Selector, options: Options): StoppablePromise[js.UndefOr[ElementName]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[ElementName]]]
   
   inline def observeReadyElements[ElementName /* <: Element */](selector: String): AsyncIterable[ElementName] = ^.asInstanceOf[js.Dynamic].applyDynamic("observeReadyElements")(selector.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[ElementName]]
   inline def observeReadyElements[ElementName /* <: Element */](selector: String, options: Options): AsyncIterable[ElementName] = (^.asInstanceOf[js.Dynamic].applyDynamic("observeReadyElements")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[ElementName]]

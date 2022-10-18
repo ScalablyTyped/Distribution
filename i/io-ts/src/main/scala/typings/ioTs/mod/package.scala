@@ -1,11 +1,9 @@
 package typings.ioTs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.eitherMod.Either_
-import typings.fpTs.functionMod.Predicate
-import typings.fpTs.functionMod.Refinement
-import typings.ioTs.ioTsStrings.Exact
+import typings.fpTs.libEitherMod.Either_
+import typings.fpTs.libFunctionMod.Predicate
+import typings.fpTs.libFunctionMod.Refinement
 import typings.ioTs.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -43,9 +41,7 @@ inline def bigint: BigIntC = ^.asInstanceOf[js.Dynamic].selectDynamic("bigint").
 
 inline def boolean: BooleanC = ^.asInstanceOf[js.Dynamic].selectDynamic("boolean").asInstanceOf[BooleanC]
 
-inline def brand[C /* <: Any_ */, N /* <: String */, B /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{readonly [ K in N ]: symbol}
-  */ typings.ioTs.ioTsStrings.brand & TopLevel[Any] */](codec: C, predicate: Refinement[TypeOf[C], Branded[TypeOf[C], B]], name: N): BrandC[C, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("brand")(codec.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BrandC[C, B]]
+inline def brand[C /* <: Any_ */, N /* <: String */, B /* <: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: symbol} */ js.Any */](codec: C, predicate: Refinement[TypeOf[C], Branded[TypeOf[C], B]], name: N): BrandC[C, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("brand")(codec.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BrandC[C, B]]
 
 inline def clean[A, O, I](codec: Type_[A, O, I]): Type_[A, O, I] = ^.asInstanceOf[js.Dynamic].applyDynamic("clean")(codec.asInstanceOf[js.Any]).asInstanceOf[Type_[A, O, I]]
 
@@ -170,9 +166,14 @@ type BrandC[C /* <: Any_ */, B] = RefinementType[C, Branded[TypeOf[C], B], Outpu
 
 type Branded[A, B] = A & Brand_[B]
 
-type Compact[A] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof A ]: A[K]}
-  */ typings.ioTs.ioTsStrings.Compact & TopLevel[A]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ K in keyof A ]: A[K]}
+  }}}
+  */
+type Compact[A] = A
 
 type Context = js.Array[ContextEntry]
 
@@ -184,7 +185,7 @@ type Errors = js.Array[ValidationError]
 
 type ExactC[C /* <: HasProps */] = ExactType[C, TypeOf[C], OutputOf[C], InputOf[C]]
 
-type Exact_[T, X /* <: T */] = T & Exact & TopLevel[Any]
+type Exact_[T, X /* <: T */] = T & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in {[ K in keyof X ]: K} & {[ K in keyof T ]: never} & {[key: string] : never}[keyof X] ]:? never} */ js.Any)
 
 type FunctionC = FunctionType
 
@@ -202,12 +203,8 @@ type InputOf[C /* <: Any_ */] = /* import warning: importer.ImportType#apply Fai
 
 type IntersectionC[CS /* <: Array[Mixed_] */] = IntersectionType[
 CS, 
-Any | (TypeOf[
-  /* import warning: importer.ImportType#apply Failed type conversion: CS[0] */ js.Any
-]), 
-Any | (OutputOf[
-  /* import warning: importer.ImportType#apply Failed type conversion: CS[0] */ js.Any
-]), 
+/* import warning: importer.ImportType#apply Failed type conversion: CS extends {  length :2} ? io-ts.io-ts.TypeOf<CS[0]> & io-ts.io-ts.TypeOf<CS[1]> : CS extends {  length :3} ? io-ts.io-ts.TypeOf<CS[0]> & io-ts.io-ts.TypeOf<CS[1]> & io-ts.io-ts.TypeOf<CS[2]> : CS extends {  length :4} ? io-ts.io-ts.TypeOf<CS[0]> & io-ts.io-ts.TypeOf<CS[1]> & io-ts.io-ts.TypeOf<CS[2]> & io-ts.io-ts.TypeOf<CS[3]> : CS extends {  length :5} ? io-ts.io-ts.TypeOf<CS[0]> & io-ts.io-ts.TypeOf<CS[1]> & io-ts.io-ts.TypeOf<CS[2]> & io-ts.io-ts.TypeOf<CS[3]> & io-ts.io-ts.TypeOf<CS[4]> : unknown */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: CS extends {  length :2} ? io-ts.io-ts.OutputOf<CS[0]> & io-ts.io-ts.OutputOf<CS[1]> : CS extends {  length :3} ? io-ts.io-ts.OutputOf<CS[0]> & io-ts.io-ts.OutputOf<CS[1]> & io-ts.io-ts.OutputOf<CS[2]> : CS extends {  length :4} ? io-ts.io-ts.OutputOf<CS[0]> & io-ts.io-ts.OutputOf<CS[1]> & io-ts.io-ts.OutputOf<CS[2]> & io-ts.io-ts.OutputOf<CS[3]> : CS extends {  length :5} ? io-ts.io-ts.OutputOf<CS[0]> & io-ts.io-ts.OutputOf<CS[1]> & io-ts.io-ts.OutputOf<CS[2]> & io-ts.io-ts.OutputOf<CS[3]> & io-ts.io-ts.OutputOf<CS[4]> : unknown */ js.Any, 
 Any]
 
 type Is[A] = js.Function1[/* u */ Any, /* is A */ Boolean]
@@ -230,26 +227,10 @@ type ObjectC = ObjectType
 
 type OutputOf[C /* <: Any_ */] = /* import warning: importer.ImportType#apply Failed type conversion: C['_O'] */ js.Any
 
-type OutputOfDictionary[D /* <: Any_ */, C /* <: Any_ */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in io-ts.io-ts.OutputOf<D> ]: io-ts.io-ts.OutputOf<C>}
-  */ typings.ioTs.ioTsStrings.OutputOfDictionary & TopLevel[Any]
-
-type OutputOfPartialProps[P /* <: AnyProps */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof P ]:? io-ts.io-ts.OutputOf<P[K]>}
-  */ typings.ioTs.ioTsStrings.OutputOfPartialProps & TopLevel[P]
-
-type OutputOfProps[P /* <: AnyProps */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof P ]: io-ts.io-ts.OutputOf<P[K]>}
-  */ typings.ioTs.ioTsStrings.OutputOfProps & TopLevel[P]
-
 type PartialC[P /* <: Props */] = PartialType[
 P, 
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof P ]:? io-ts.io-ts.TypeOf<P[K]>}
-  */ typings.ioTs.ioTsStrings.PartialC & TopLevel[P], 
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof P ]:? io-ts.io-ts.OutputOf<P[K]>}
-  */ typings.ioTs.ioTsStrings.PartialC & TopLevel[P], 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof P ]:? io-ts.io-ts.TypeOf<P[K]>} */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof P ]:? io-ts.io-ts.OutputOf<P[K]>} */ js.Any, 
 Any]
 
 type Props = StringDictionary[Mixed_]
@@ -263,24 +244,16 @@ type ReadonlyC[C /* <: Mixed_ */] = ReadonlyType[C, TypeOf[C], OutputOf[C], Any]
 type RecordC[D /* <: Mixed_ */, C /* <: Mixed_ */] = DictionaryType[
 D, 
 C, 
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in io-ts.io-ts.TypeOf<D> ]: io-ts.io-ts.TypeOf<C>}
-  */ typings.ioTs.ioTsStrings.RecordC & TopLevel[Any], 
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in io-ts.io-ts.OutputOf<D> ]: io-ts.io-ts.OutputOf<C>}
-  */ typings.ioTs.ioTsStrings.RecordC & TopLevel[Any], 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ K in io-ts.io-ts.TypeOf<D> ]: io-ts.io-ts.TypeOf<C>} */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ K in io-ts.io-ts.OutputOf<D> ]: io-ts.io-ts.OutputOf<C>} */ js.Any, 
 Any]
 
 type RefinementC[C /* <: Any_ */] = RefinementType[C, TypeOf[C], OutputOf[C], InputOf[C]]
 
 type StrictC[P /* <: Props */] = StrictType[
 P, 
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof P ]: io-ts.io-ts.TypeOf<P[K]>}
-  */ typings.ioTs.ioTsStrings.StrictC & TopLevel[P], 
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof P ]: io-ts.io-ts.OutputOf<P[K]>}
-  */ typings.ioTs.ioTsStrings.StrictC & TopLevel[P], 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof P ]: io-ts.io-ts.TypeOf<P[K]>} */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof P ]: io-ts.io-ts.OutputOf<P[K]>} */ js.Any, 
 Any]
 
 type StringC = StringType
@@ -300,10 +273,6 @@ type TaggedIntersection[Tag /* <: String */, A, O] = IntersectionType[TaggedInte
 
 type TaggedIntersectionArgument[Tag /* <: String */] = js.Array[Any] | (js.Tuple2[Any | Mixed_, Any | Mixed_]) | (js.Tuple3[Any | Mixed_, Any | Mixed_, Any | Mixed_]) | (js.Tuple4[Any | Mixed_, Any | Mixed_, Any | Mixed_, Any | Mixed_]) | (js.Tuple5[Any | Mixed_, Any | Mixed_, Any | Mixed_, Any | Mixed_, Any | Mixed_])
 
-type TaggedProps[Tag /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in Tag ]: io-ts.io-ts.LiteralType<any>}
-  */ typings.ioTs.ioTsStrings.TaggedProps & TopLevel[Any]
-
 type TaggedUnionC[Tag /* <: String */, CS /* <: Array[Mixed_] */] = TaggedUnionType[
 Tag, 
 CS, 
@@ -317,133 +286,17 @@ Any]
 
 type TupleC[CS /* <: Array[Mixed_] */] = TupleType[
 CS, 
-Any | (js.Tuple5[
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[0] */ js.Any
-  ], 
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[1] */ js.Any
-  ], 
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[2] */ js.Any
-  ], 
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[3] */ js.Any
-  ], 
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[4] */ js.Any
-  ]
-]) | (js.Tuple4[
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[0] */ js.Any
-  ], 
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[1] */ js.Any
-  ], 
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[2] */ js.Any
-  ], 
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[3] */ js.Any
-  ]
-]) | (js.Tuple3[
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[0] */ js.Any
-  ], 
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[1] */ js.Any
-  ], 
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[2] */ js.Any
-  ]
-]) | (js.Tuple2[
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[0] */ js.Any
-  ], 
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[1] */ js.Any
-  ]
-]) | (js.Array[
-  TypeOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[0] */ js.Any
-  ]
-]), 
-Any | (js.Tuple5[
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[0] */ js.Any
-  ], 
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[1] */ js.Any
-  ], 
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[2] */ js.Any
-  ], 
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[3] */ js.Any
-  ], 
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[4] */ js.Any
-  ]
-]) | (js.Tuple4[
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[0] */ js.Any
-  ], 
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[1] */ js.Any
-  ], 
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[2] */ js.Any
-  ], 
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[3] */ js.Any
-  ]
-]) | (js.Tuple3[
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[0] */ js.Any
-  ], 
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[1] */ js.Any
-  ], 
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[2] */ js.Any
-  ]
-]) | (js.Tuple2[
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[0] */ js.Any
-  ], 
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[1] */ js.Any
-  ]
-]) | (js.Array[
-  OutputOf[
-    /* import warning: importer.ImportType#apply Failed type conversion: CS[0] */ js.Any
-  ]
-]), 
+/* import warning: importer.ImportType#apply Failed type conversion: CS extends {  length :1} ? [io-ts.io-ts.TypeOf<CS[0]>] : CS extends {  length :2} ? [io-ts.io-ts.TypeOf<CS[0]>, io-ts.io-ts.TypeOf<CS[1]>] : CS extends {  length :3} ? [io-ts.io-ts.TypeOf<CS[0]>, io-ts.io-ts.TypeOf<CS[1]>, io-ts.io-ts.TypeOf<CS[2]>] : CS extends {  length :4} ? [io-ts.io-ts.TypeOf<CS[0]>, io-ts.io-ts.TypeOf<CS[1]>, io-ts.io-ts.TypeOf<CS[2]>, io-ts.io-ts.TypeOf<CS[3]>] : CS extends {  length :5} ? [io-ts.io-ts.TypeOf<CS[0]>, io-ts.io-ts.TypeOf<CS[1]>, io-ts.io-ts.TypeOf<CS[2]>, io-ts.io-ts.TypeOf<CS[3]>, io-ts.io-ts.TypeOf<CS[4]>] : unknown */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: CS extends {  length :1} ? [io-ts.io-ts.OutputOf<CS[0]>] : CS extends {  length :2} ? [io-ts.io-ts.OutputOf<CS[0]>, io-ts.io-ts.OutputOf<CS[1]>] : CS extends {  length :3} ? [io-ts.io-ts.OutputOf<CS[0]>, io-ts.io-ts.OutputOf<CS[1]>, io-ts.io-ts.OutputOf<CS[2]>] : CS extends {  length :4} ? [io-ts.io-ts.OutputOf<CS[0]>, io-ts.io-ts.OutputOf<CS[1]>, io-ts.io-ts.OutputOf<CS[2]>, io-ts.io-ts.OutputOf<CS[3]>] : CS extends {  length :5} ? [io-ts.io-ts.OutputOf<CS[0]>, io-ts.io-ts.OutputOf<CS[1]>, io-ts.io-ts.OutputOf<CS[2]>, io-ts.io-ts.OutputOf<CS[3]>, io-ts.io-ts.OutputOf<CS[4]>] : unknown */ js.Any, 
 Any]
 
 type TypeC[P /* <: Props */] = InterfaceType[
 P, 
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof P ]: io-ts.io-ts.TypeOf<P[K]>}
-  */ typings.ioTs.ioTsStrings.TypeC & TopLevel[P], 
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof P ]: io-ts.io-ts.OutputOf<P[K]>}
-  */ typings.ioTs.ioTsStrings.TypeC & TopLevel[P], 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof P ]: io-ts.io-ts.TypeOf<P[K]>} */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof P ]: io-ts.io-ts.OutputOf<P[K]>} */ js.Any, 
 Any]
 
 type TypeOf[C /* <: Any_ */] = /* import warning: importer.ImportType#apply Failed type conversion: C['_A'] */ js.Any
-
-type TypeOfDictionary[D /* <: Any_ */, C /* <: Any_ */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in io-ts.io-ts.TypeOf<D> ]: io-ts.io-ts.TypeOf<C>}
-  */ typings.ioTs.ioTsStrings.TypeOfDictionary & TopLevel[Any]
-
-type TypeOfPartialProps[P /* <: AnyProps */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof P ]:? io-ts.io-ts.TypeOf<P[K]>}
-  */ typings.ioTs.ioTsStrings.TypeOfPartialProps & TopLevel[P]
-
-type TypeOfProps[P /* <: AnyProps */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof P ]: io-ts.io-ts.TypeOf<P[K]>}
-  */ typings.ioTs.ioTsStrings.TypeOfProps & TopLevel[P]
 
 type UndefinedC = UndefinedType
 

@@ -6,7 +6,6 @@ import typings.echarts.anon.AnimationAnimationDelay
 import typings.echarts.anon.AnimationDelay
 import typings.echarts.anon.AnimationDelayAnimationDelayUpdate
 import typings.echarts.anon.AnimationDelayUpdate
-import typings.echarts.anon.AnimationDelayUpdateAnimationDuration
 import typings.echarts.anon.AnimationDuration
 import typings.echarts.anon.AnimationDurationUpdate
 import typings.echarts.anon.AnimationEasing
@@ -24,13 +23,14 @@ import typings.echarts.anon.BorderColorBorderType
 import typings.echarts.anon.BorderColorSaturation
 import typings.echarts.anon.BorderRadius
 import typings.echarts.anon.BorderType
-import typings.echarts.anon.BorderWidth
+import typings.echarts.anon.BorderTypeBorderWidth
 import typings.echarts.anon.Bottom
 import typings.echarts.anon.BrushType
 import typings.echarts.anon.Children
 import typings.echarts.anon.ChildrenVisibleMin
 import typings.echarts.anon.Clockwise
 import typings.echarts.anon.ColorCurveness
+import typings.echarts.anon.ColorOffset
 import typings.echarts.anon.ColorOpacity
 import typings.echarts.anon.ConstantSpeed
 import typings.echarts.anon.Cpx1
@@ -45,12 +45,12 @@ import typings.echarts.anon.Downplay
 import typings.echarts.anon.EdgeLabel
 import typings.echarts.anon.EdgeLength
 import typings.echarts.anon.Ellipsis
+import typings.echarts.anon.Emphasis
 import typings.echarts.anon.EmphasisItemStyle
 import typings.echarts.anon.Fill
 import typings.echarts.anon.Font
 import typings.echarts.anon.FontFamily
-import typings.echarts.anon.FontSize
-import typings.echarts.anon.FontWeight
+import typings.echarts.anon.FontStyle
 import typings.echarts.anon.Height
 import typings.echarts.anon.Icon
 import typings.echarts.anon.ItemStyle
@@ -63,6 +63,7 @@ import typings.echarts.anon.Length
 import typings.echarts.anon.Length2
 import typings.echarts.anon.LengthLineStyle
 import typings.echarts.anon.LengthShow
+import typings.echarts.anon.LineHeight
 import typings.echarts.anon.LineStyleShow
 import typings.echarts.anon.Max
 import typings.echarts.anon.Min
@@ -85,9 +86,8 @@ import typings.echarts.anon.ShadowOffsetY
 import typings.echarts.anon.Silent
 import typings.echarts.anon.Smooth
 import typings.echarts.anon.SplitNumber
-import typings.echarts.anon.TextBorderColor
+import typings.echarts.anon.SymbolSize
 import typings.echarts.anon.TextBorderWidth
-import typings.echarts.anon.TextShadowColor
 import typings.echarts.anon.Title
 import typings.echarts.anon.UpperLabel
 import typings.echarts.anon.`10`
@@ -104,6 +104,7 @@ import typings.echarts.anon.`22`
 import typings.echarts.anon.`23`
 import typings.echarts.anon.`24`
 import typings.echarts.anon.`25`
+import typings.echarts.anon.`28`
 import typings.echarts.anon.`2`
 import typings.echarts.anon.`3`
 import typings.echarts.anon.`5`
@@ -2451,7 +2452,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#calendar.itemStyle
       */
-    var itemStyle: js.UndefOr[BorderColor] = js.undefined
+    var itemStyle: js.UndefOr[BorderTypeBorderWidth] = js.undefined
     
     /**
       * Distance between calendar component and the left side of the container.
@@ -2504,7 +2505,7 @@ object EChartOption {
     /**
       * Calendar coordinates splitLine style.
       */
-    var splitLine: js.UndefOr[typings.echarts.anon.LineStyle] = js.undefined
+    var splitLine: js.UndefOr[`28`] = js.undefined
     
     /**
       * Distance between calendar component and the top side of the container.
@@ -2585,7 +2586,7 @@ object EChartOption {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setItemStyle(value: BorderColor): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+      inline def setItemStyle(value: BorderTypeBorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
@@ -2615,7 +2616,7 @@ object EChartOption {
       
       inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
-      inline def setSplitLine(value: typings.echarts.anon.LineStyle): Self = StObject.set(x, "splitLine", value.asInstanceOf[js.Any])
+      inline def setSplitLine(value: `28`): Self = StObject.set(x, "splitLine", value.asInstanceOf[js.Any])
       
       inline def setSplitLineUndefined: Self = StObject.set(x, "splitLine", js.undefined)
       
@@ -2898,7 +2899,7 @@ object EChartOption {
   */
   type Color = _Color | String
   
-  type ColorStops = js.Array[Offset]
+  type ColorStops = js.Array[ColorOffset]
   
   /**
     * Data zoom component of inside type.
@@ -5164,7 +5165,7 @@ object EChartOption {
       
       inline def setColorStops(value: ColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
       
-      inline def setColorStopsVarargs(value: Offset*): Self = StObject.set(x, "colorStops", js.Array(value*))
+      inline def setColorStopsVarargs(value: ColorOffset*): Self = StObject.set(x, "colorStops", js.Array(value*))
       
       inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
@@ -5213,7 +5214,7 @@ object EChartOption {
       
       inline def setColorStops(value: ColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
       
-      inline def setColorStopsVarargs(value: Offset*): Self = StObject.set(x, "colorStops", js.Array(value*))
+      inline def setColorStopsVarargs(value: ColorOffset*): Self = StObject.set(x, "colorStops", js.Array(value*))
       
       inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
@@ -6158,7 +6159,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-bar.data.label
         */
-      var label: js.UndefOr[FontFamily] = js.undefined
+      var label: js.UndefOr[Emphasis] = js.undefined
       
       /**
         * The name of data item.
@@ -6197,7 +6198,7 @@ object EChartOption {
         
         inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
         
-        inline def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: Emphasis): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
         inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
@@ -14897,7 +14898,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-effectScatter.label
       */
-    var label: js.UndefOr[BorderRadius] = js.undefined
+    var label: js.UndefOr[BorderColor] = js.undefined
     
     /**
       * Whether to enable highlighting chart when
@@ -15450,7 +15451,7 @@ object EChartOption {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: BorderColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
@@ -15787,7 +15788,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-funnel.label
       */
-    var label: js.UndefOr[FontSize] = js.undefined
+    var label: js.UndefOr[FontFamily] = js.undefined
     
     /**
       * The visual guide line style of label. When
@@ -16065,7 +16066,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-funnel.data.label
         */
-      var label: js.UndefOr[FontWeight] = js.undefined
+      var label: js.UndefOr[FontStyle] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-funnel.data.labelLine
@@ -16113,7 +16114,7 @@ object EChartOption {
         
         inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
         
-        inline def setLabel(value: FontWeight): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: FontStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
         inline def setLabelLine(value: Length): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
         
@@ -16211,7 +16212,7 @@ object EChartOption {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setLabel(value: FontSize): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelLine(value: Length): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
       
@@ -16426,7 +16427,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel
       */
-    var axisLabel: js.UndefOr[Padding] = js.undefined
+    var axisLabel: js.UndefOr[LineHeight] = js.undefined
     
     /**
       * The related configuration about the axis line of gauge chart.
@@ -16482,7 +16483,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-gauge.detail
       */
-    var detail: js.UndefOr[Rich] = js.undefined
+    var detail: js.UndefOr[Padding] = js.undefined
     
     /**
       * @see https://echarts.apache.org/en/option.html#series-gauge.emphasis
@@ -16730,7 +16731,7 @@ object EChartOption {
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      inline def setAxisLabel(value: Padding): Self = StObject.set(x, "axisLabel", value.asInstanceOf[js.Any])
+      inline def setAxisLabel(value: LineHeight): Self = StObject.set(x, "axisLabel", value.asInstanceOf[js.Any])
       
       inline def setAxisLabelUndefined: Self = StObject.set(x, "axisLabel", js.undefined)
       
@@ -16762,7 +16763,7 @@ object EChartOption {
             ]) | typings.echarts.echarts.EChartOption.SeriesGauge.DataObject | Double | String | Unit)*
       ): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setDetail(value: Rich): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Padding): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
       inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
@@ -17105,7 +17106,7 @@ object EChartOption {
     /**
       * @see https://echarts.apache.org/en/option.html#series-graph.edgeLabel
       */
-    var edgeLabel: js.UndefOr[FontSize] = js.undefined
+    var edgeLabel: js.UndefOr[FontFamily] = js.undefined
     
     /**
       * Symbol of two ends of edge line.
@@ -17241,7 +17242,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-graph.label
       */
-    var label: js.UndefOr[BorderRadius] = js.undefined
+    var label: js.UndefOr[BorderColor] = js.undefined
     
     /**
       * Graph layout.
@@ -17663,7 +17664,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-graph.categories.label
         */
-      var label: js.UndefOr[BorderRadius] = js.undefined
+      var label: js.UndefOr[BorderColor] = js.undefined
       
       /**
         * Name of category, which is used to correspond with
@@ -17790,7 +17791,7 @@ object EChartOption {
         
         inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
         
-        inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: BorderColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
         inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
@@ -18086,7 +18087,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-graph.links.label
         */
-      var label: js.UndefOr[FontSize] = js.undefined
+      var label: js.UndefOr[FontFamily] = js.undefined
       
       /**
         * Line style of edges.
@@ -18155,7 +18156,7 @@ object EChartOption {
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
-        inline def setLabel(value: FontSize): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
         inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
@@ -18265,7 +18266,7 @@ object EChartOption {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setEdgeLabel(value: FontSize): Self = StObject.set(x, "edgeLabel", value.asInstanceOf[js.Any])
+      inline def setEdgeLabel(value: FontFamily): Self = StObject.set(x, "edgeLabel", value.asInstanceOf[js.Any])
       
       inline def setEdgeLabelUndefined: Self = StObject.set(x, "edgeLabel", js.undefined)
       
@@ -18319,7 +18320,7 @@ object EChartOption {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: BorderColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
@@ -19523,7 +19524,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-line.label
       */
-    var label: js.UndefOr[BorderRadius] = js.undefined
+    var label: js.UndefOr[BorderColor] = js.undefined
     
     /**
       * Whether to enable highlighting chart when
@@ -20260,7 +20261,7 @@ object EChartOption {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: BorderColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
@@ -20593,7 +20594,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-lines.label
       */
-    var label: js.UndefOr[FontSize] = js.undefined
+    var label: js.UndefOr[FontFamily] = js.undefined
     
     /**
       * Whether to enable the optimization of large-scale lines graph.
@@ -20841,7 +20842,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-lines.data.label
         */
-      var label: js.UndefOr[FontSize] = js.undefined
+      var label: js.UndefOr[FontFamily] = js.undefined
       
       /**
         * The line style of this data item.
@@ -20878,7 +20879,7 @@ object EChartOption {
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
-        inline def setLabel(value: FontSize): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
         inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
@@ -20952,7 +20953,7 @@ object EChartOption {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setLabel(value: FontSize): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
@@ -21225,7 +21226,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-map.label
       */
-    var label: js.UndefOr[BorderWidth] = js.undefined
+    var label: js.UndefOr[BorderRadius] = js.undefined
     
     /**
       * `layoutCenter` and `layoutSize` provides layout strategy other
@@ -21344,7 +21345,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-map.markArea
       */
-    var markArea: js.UndefOr[AnimationDelayAnimationDelayUpdate] = js.undefined
+    var markArea: js.UndefOr[AnimationAnimationDelay] = js.undefined
     
     /**
       * Use a line in the chart to illustrate.
@@ -21360,7 +21361,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-map.markPoint
       */
-    var markPoint: js.UndefOr[AnimationAnimationDelay] = js.undefined
+    var markPoint: js.UndefOr[SymbolSize] = js.undefined
     
     /**
       * Series name used for displaying in
@@ -21589,7 +21590,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-map.data.label
         */
-      var label: js.UndefOr[Rotate] = js.undefined
+      var label: js.UndefOr[Offset] = js.undefined
       
       /**
         * The name of the map area where the data belongs to, such
@@ -21641,7 +21642,7 @@ object EChartOption {
         
         inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
         
-        inline def setLabel(value: Rotate): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: Offset): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
         inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
@@ -21707,7 +21708,7 @@ object EChartOption {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setLabel(value: BorderWidth): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
@@ -21733,7 +21734,7 @@ object EChartOption {
       
       inline def setMapValueCalculationUndefined: Self = StObject.set(x, "mapValueCalculation", js.undefined)
       
-      inline def setMarkArea(value: AnimationDelayAnimationDelayUpdate): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
+      inline def setMarkArea(value: AnimationAnimationDelay): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
       
       inline def setMarkAreaUndefined: Self = StObject.set(x, "markArea", js.undefined)
       
@@ -21741,7 +21742,7 @@ object EChartOption {
       
       inline def setMarkLineUndefined: Self = StObject.set(x, "markLine", js.undefined)
       
-      inline def setMarkPoint(value: AnimationAnimationDelay): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
+      inline def setMarkPoint(value: SymbolSize): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
       
       inline def setMarkPointUndefined: Self = StObject.set(x, "markPoint", js.undefined)
       
@@ -23091,7 +23092,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation
       */
-    var hoverAnimation: js.UndefOr[AnimationDelayUpdateAnimationDuration] = js.undefined
+    var hoverAnimation: js.UndefOr[AnimationDelayAnimationDelayUpdate] = js.undefined
     
     /**
       * Component ID, not specified by default.
@@ -23123,7 +23124,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-pictorialBar.label
       */
-    var label: js.UndefOr[BorderRadius] = js.undefined
+    var label: js.UndefOr[BorderColor] = js.undefined
     
     /**
       * Whether to enable highlighting chart when
@@ -24737,7 +24738,7 @@ object EChartOption {
       
       inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
-      inline def setHoverAnimation(value: AnimationDelayUpdateAnimationDuration): Self = StObject.set(x, "hoverAnimation", value.asInstanceOf[js.Any])
+      inline def setHoverAnimation(value: AnimationDelayAnimationDelayUpdate): Self = StObject.set(x, "hoverAnimation", value.asInstanceOf[js.Any])
       
       inline def setHoverAnimationUndefined: Self = StObject.set(x, "hoverAnimation", js.undefined)
       
@@ -24749,7 +24750,7 @@ object EChartOption {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: BorderColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
@@ -25162,7 +25163,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-pie.label
       */
-    var label: js.UndefOr[TextBorderColor] = js.undefined
+    var label: js.UndefOr[Rich] = js.undefined
     
     /**
       * The style of visual guide line. Will show when
@@ -25432,7 +25433,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-pie.data.label
         */
-      var label: js.UndefOr[FontWeight] = js.undefined
+      var label: js.UndefOr[FontStyle] = js.undefined
       
       /**
         * The style of visual guide line.
@@ -25491,7 +25492,7 @@ object EChartOption {
         
         inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
         
-        inline def setLabel(value: FontWeight): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: FontStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
         inline def setLabelLine(value: Smooth): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
         
@@ -25607,7 +25608,7 @@ object EChartOption {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setLabel(value: TextBorderColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Rich): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelLine(value: Length2): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
       
@@ -25877,7 +25878,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-radar.label
       */
-    var label: js.UndefOr[BorderRadius] = js.undefined
+    var label: js.UndefOr[BorderColor] = js.undefined
     
     /**
       * Line style.
@@ -26373,7 +26374,7 @@ object EChartOption {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: BorderColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
@@ -26716,7 +26717,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-sankey.label
       */
-    var label: js.UndefOr[BorderRadius] = js.undefined
+    var label: js.UndefOr[BorderColor] = js.undefined
     
     /**
       * The iterations of layout, which is used to continuously optimize
@@ -27182,7 +27183,7 @@ object EChartOption {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: BorderColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
@@ -27745,7 +27746,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-scatter.label
       */
-    var label: js.UndefOr[BorderRadius] = js.undefined
+    var label: js.UndefOr[BorderColor] = js.undefined
     
     /**
       * Whether to enable the optimization of large-scale data.
@@ -28377,7 +28378,7 @@ object EChartOption {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: BorderColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
@@ -29487,7 +29488,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-themeRiver.label
       */
-    var label: js.UndefOr[TextBorderWidth] = js.undefined
+    var label: js.UndefOr[Rotate] = js.undefined
     
     /**
       * Distance between thmemRiver component and the left side of the
@@ -29746,7 +29747,7 @@ object EChartOption {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setLabel(value: TextBorderWidth): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Rotate): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
@@ -29929,7 +29930,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-tree.label
       */
-    var label: js.UndefOr[BorderRadius] = js.undefined
+    var label: js.UndefOr[BorderColor] = js.undefined
     
     /**
       * The layout of the tree, which can be `orthogonal` and `radial`
@@ -30499,7 +30500,7 @@ object EChartOption {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: BorderColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
@@ -31269,7 +31270,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-treemap.upperLabel
       */
-    var upperLabel: js.UndefOr[TextShadowColor] = js.undefined
+    var upperLabel: js.UndefOr[TextBorderWidth] = js.undefined
     
     /**
       * A node will not be shown when its area size is smaller than this
@@ -31750,7 +31751,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel
         */
-      var upperLabel: js.UndefOr[TextShadowColor] = js.undefined
+      var upperLabel: js.UndefOr[TextBorderWidth] = js.undefined
       
       /**
         * The value of this node, indicating the area size.
@@ -31925,7 +31926,7 @@ object EChartOption {
         
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        inline def setUpperLabel(value: TextShadowColor): Self = StObject.set(x, "upperLabel", value.asInstanceOf[js.Any])
+        inline def setUpperLabel(value: TextBorderWidth): Self = StObject.set(x, "upperLabel", value.asInstanceOf[js.Any])
         
         inline def setUpperLabelUndefined: Self = StObject.set(x, "upperLabel", js.undefined)
         
@@ -32073,7 +32074,7 @@ object EChartOption {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setUpperLabel(value: TextShadowColor): Self = StObject.set(x, "upperLabel", value.asInstanceOf[js.Any])
+      inline def setUpperLabel(value: TextBorderWidth): Self = StObject.set(x, "upperLabel", value.asInstanceOf[js.Any])
       
       inline def setUpperLabelUndefined: Self = StObject.set(x, "upperLabel", js.undefined)
       

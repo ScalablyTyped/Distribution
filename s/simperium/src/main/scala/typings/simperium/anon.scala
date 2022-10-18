@@ -47,11 +47,17 @@ object anon {
     
     var o: L
     
-    var v: NumberDictionary[DiffOp[Any]]
+    var v: NumberDictionary[
+        /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? simperium.simperium.DiffOp<U> : never */ js.Any
+      ]
   }
   object `1` {
     
-    inline def apply[T](v: NumberDictionary[DiffOp[Any]]): `1`[T] = {
+    inline def apply[T](
+      v: NumberDictionary[
+          /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? simperium.simperium.DiffOp<U> : never */ js.Any
+        ]
+    ): `1`[T] = {
       val __obj = js.Dynamic.literal(o = "L", v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[`1`[T]]
     }
@@ -60,7 +66,11 @@ object anon {
       
       inline def setO(value: L): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
       
-      inline def setV(value: NumberDictionary[DiffOp[Any]]): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(
+        value: NumberDictionary[
+              /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? simperium.simperium.DiffOp<U> : never */ js.Any
+            ]
+      ): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
   

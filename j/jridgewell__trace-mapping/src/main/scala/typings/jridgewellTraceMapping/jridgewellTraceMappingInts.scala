@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object jridgewellTraceMappingInts {
   
   @js.native
-  sealed trait `-1` extends StObject
-  inline def `-1`: `-1` = -1.asInstanceOf[`-1`]
-  
-  @js.native
-  sealed trait `1` extends StObject
-  inline def `1`: `1` = 1.asInstanceOf[`1`]
-  
-  @js.native
   sealed trait `3` extends StObject
   inline def `3`: `3` = 3.asInstanceOf[`3`]
 }

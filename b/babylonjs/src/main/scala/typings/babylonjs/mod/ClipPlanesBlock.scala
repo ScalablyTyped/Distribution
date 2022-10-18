@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ClipPlanesBlock")
 @js.native
 open class ClipPlanesBlock protected ()
-  extends typings.babylonjs.legacyMod.ClipPlanesBlock {
+  extends typings.babylonjs.legacyLegacyMod.ClipPlanesBlock {
   /**
     * Create a new ClipPlanesBlock
     * @param name defines the block name

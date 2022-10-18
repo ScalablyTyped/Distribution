@@ -1,11 +1,11 @@
 package typings.storybookComponents.anon
 
-import typings.storybookComponents.popperjsCoreLibEnumsMod.ModifierPhases_
-import typings.storybookComponents.popperjsCoreLibModifiersEventListenersMod.Options
-import typings.storybookComponents.popperjsCoreLibTypesMod.ModifierArguments
-import typings.storybookComponents.popperjsCoreLibTypesMod.Obj
-import typings.storybookComponents.popperjsCoreLibTypesMod.State
-import typings.storybookComponents.popperjsCoreLibTypesMod.StrictModifiers
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.ModifierPhases_
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibModifiersEventListenersMod`.Options
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.ModifierArguments
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.Obj
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.State
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.StrictModifiers
 import typings.storybookComponents.storybookComponentsStrings.eventListeners
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

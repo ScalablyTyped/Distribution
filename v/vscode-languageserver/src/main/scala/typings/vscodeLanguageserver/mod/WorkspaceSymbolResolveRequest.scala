@@ -9,7 +9,7 @@ object WorkspaceSymbolResolveRequest {
   
   @JSImport("vscode-languageserver", "WorkspaceSymbolResolveRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver", "WorkspaceSymbolResolveRequest.method")
   @js.native
@@ -17,7 +17,7 @@ object WorkspaceSymbolResolveRequest {
   
   @JSImport("vscode-languageserver", "WorkspaceSymbolResolveRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     typings.vscodeLanguageserverTypes.mod.WorkspaceSymbol, 
     typings.vscodeLanguageserverTypes.mod.WorkspaceSymbol, 
     scala.Nothing, 

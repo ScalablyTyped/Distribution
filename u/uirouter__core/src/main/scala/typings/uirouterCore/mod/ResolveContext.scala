@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ResolveContext protected ()
   extends typings.uirouterCore.libResolveMod.ResolveContext {
-  def this(_path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]) = this()
+  def this(_path: js.Array[typings.uirouterCore.libPathPathNodeMod.PathNode]) = this()
 }

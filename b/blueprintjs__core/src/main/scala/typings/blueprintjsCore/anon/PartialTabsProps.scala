@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.anon
 
-import typings.blueprintjsCore.tabMod.TabId
+import typings.blueprintjsCore.libEsmComponentsTabsTabMod.TabId
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode

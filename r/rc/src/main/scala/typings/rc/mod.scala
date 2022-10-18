@@ -490,7 +490,7 @@ object mod {
     */
   parse: js.Function1[/* content */ String, js.Object]
   ): U & RcResultType = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[U & RcResultType]
-  inline def apply[T /* <: js.Object */, U /* <: js.Object */](
+  inline def apply[T /* <: js.UndefOr[js.Object | String | Null] */, U /* <: js.UndefOr[js.Object | Null] */](
     /**
     * The name of the app to configure, rc will search for this files :
     * `/etc/${name}/config`,
@@ -515,8 +515,8 @@ object mod {
     * If `argv` is `null` or `undefined`, then `rc`'s default parser will parse `process.argv`.
     */
   argv: U
-  ): T & U & RcResultType = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[T & U & RcResultType]
-  inline def apply[T /* <: js.Object */, U /* <: js.Object */](
+  ): /* import warning: importer.ImportType#apply Failed type conversion: T extends string | null | undefined ? U extends null | undefined ? minimist.minimist.ParsedArgs : U & rc.rc.RcResultType : T & U extends null | undefined ? minimist.minimist.ParsedArgs : U & rc.rc.RcResultType */ js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends string | null | undefined ? U extends null | undefined ? minimist.minimist.ParsedArgs : U & rc.rc.RcResultType : T & U extends null | undefined ? minimist.minimist.ParsedArgs : U & rc.rc.RcResultType */ js.Any]
+  inline def apply[T /* <: js.UndefOr[js.Object | String | Null] */, U /* <: js.UndefOr[js.Object | Null] */](
     /**
     * The name of the app to configure, rc will search for this files :
     * `/etc/${name}/config`,
@@ -547,7 +547,7 @@ object mod {
     * discovered configuration file, should return a parsed object dictionary.
     */
   parse: js.Function1[/* content */ String, js.Object]
-  ): T & U & RcResultType = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[T & U & RcResultType]
+  ): /* import warning: importer.ImportType#apply Failed type conversion: T extends string | null | undefined ? U extends null | undefined ? minimist.minimist.ParsedArgs : U & rc.rc.RcResultType : T & U extends null | undefined ? minimist.minimist.ParsedArgs : U & rc.rc.RcResultType */ js.Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends string | null | undefined ? U extends null | undefined ? minimist.minimist.ParsedArgs : U & rc.rc.RcResultType : T & U extends null | undefined ? minimist.minimist.ParsedArgs : U & rc.rc.RcResultType */ js.Any]
   
   @JSImport("rc", JSImport.Namespace)
   @js.native

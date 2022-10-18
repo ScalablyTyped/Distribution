@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DualShockInput
-  extends StObject
-     with _DeviceInput[Any]
+sealed trait DualShockInput extends StObject
 @JSGlobal("BABYLON.DualShockInput")
 @js.native
 object DualShockInput extends StObject {

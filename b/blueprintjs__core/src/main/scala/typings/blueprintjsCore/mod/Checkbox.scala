@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.controlsMod.CheckboxProps
-import typings.blueprintjsCore.controlsMod.ICheckboxState
+import typings.blueprintjsCore.libEsmComponentsFormsControlsMod.CheckboxProps
+import typings.blueprintjsCore.libEsmComponentsFormsControlsMod.ICheckboxState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Checkbox")
 @js.native
 open class Checkbox protected ()
-  extends typings.blueprintjsCore.componentsMod.Checkbox {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Checkbox {
   def this(props: CheckboxProps) = this()
   def this(props: CheckboxProps, context: Any) = this()
 }

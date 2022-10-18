@@ -14,7 +14,7 @@ import typings.react.mod.SetStateAction
 import typings.std.Partial
 import typings.std.Required
 import typings.std.ReturnType
-import typings.uifabricFoundation.controlledMod.IControlledStateOptions
+import typings.uifabricFoundation.libHooksControlledMod.IControlledStateOptions
 import typings.uifabricFoundation.libIcomponentMod.IComponentOptions
 import typings.uifabricFoundation.libIcomponentMod.IFactoryOptions
 import typings.uifabricFoundation.libIcomponentMod.IViewComponent
@@ -25,11 +25,11 @@ import typings.uifabricFoundation.libIslotsMod.ISlots
 import typings.uifabricFoundation.libIslotsMod.ISlottableProps
 import typings.uifabricFoundation.libIslotsMod.ValidProps
 import typings.uifabricFoundation.libIslotsMod.ValidShorthand
-import typings.uifabricFoundation.themeProviderMod.IThemeProviderProps
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricMergeStyles.istylesetMod.IStyleSet
-import typings.uifabricUtilities.styledMod.ICustomizableProps
-import typings.uifabricUtilities.styledMod.IPropsWithStyles
+import typings.uifabricFoundation.libThemeProviderMod.IThemeProviderProps
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricMergeStyles.libIstylesetMod.IStyleSet
+import typings.uifabricUtilities.libStyledMod.ICustomizableProps
+import typings.uifabricUtilities.libStyledMod.IPropsWithStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

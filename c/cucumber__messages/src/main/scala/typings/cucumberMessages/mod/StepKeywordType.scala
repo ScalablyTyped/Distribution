@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object StepKeywordType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.cucumberMessages.messagesMod.StepKeywordType & String] = js.native
+  def apply(value: String): js.UndefOr[typings.cucumberMessages.distCjsSrcMessagesMod.StepKeywordType & String] = js.native
   
-  /* "Action" */ val ACTION: typings.cucumberMessages.messagesMod.StepKeywordType.ACTION & String = js.native
+  /* "Action" */ val ACTION: typings.cucumberMessages.distCjsSrcMessagesMod.StepKeywordType.ACTION & String = js.native
   
-  /* "Conjunction" */ val CONJUNCTION: typings.cucumberMessages.messagesMod.StepKeywordType.CONJUNCTION & String = js.native
+  /* "Conjunction" */ val CONJUNCTION: typings.cucumberMessages.distCjsSrcMessagesMod.StepKeywordType.CONJUNCTION & String = js.native
   
-  /* "Context" */ val CONTEXT: typings.cucumberMessages.messagesMod.StepKeywordType.CONTEXT & String = js.native
+  /* "Context" */ val CONTEXT: typings.cucumberMessages.distCjsSrcMessagesMod.StepKeywordType.CONTEXT & String = js.native
   
-  /* "Outcome" */ val OUTCOME: typings.cucumberMessages.messagesMod.StepKeywordType.OUTCOME & String = js.native
+  /* "Outcome" */ val OUTCOME: typings.cucumberMessages.distCjsSrcMessagesMod.StepKeywordType.OUTCOME & String = js.native
   
-  /* "Unknown" */ val UNKNOWN: typings.cucumberMessages.messagesMod.StepKeywordType.UNKNOWN & String = js.native
+  /* "Unknown" */ val UNKNOWN: typings.cucumberMessages.distCjsSrcMessagesMod.StepKeywordType.UNKNOWN & String = js.native
 }

@@ -9,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ColumnDragEndLocation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.detailsListTypesMod.ColumnDragEndLocation & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnDragEndLocation & Double
+  ] = js.native
   
-  /* 2 */ val header: typings.officeUiFabricReact.detailsListTypesMod.ColumnDragEndLocation.header & Double = js.native
+  /* 2 */ val header: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnDragEndLocation.header & Double = js.native
   
-  /* 0 */ val outside: typings.officeUiFabricReact.detailsListTypesMod.ColumnDragEndLocation.outside & Double = js.native
+  /* 0 */ val outside: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnDragEndLocation.outside & Double = js.native
   
-  /* 1 */ val surface: typings.officeUiFabricReact.detailsListTypesMod.ColumnDragEndLocation.surface & Double = js.native
+  /* 1 */ val surface: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnDragEndLocation.surface & Double = js.native
 }

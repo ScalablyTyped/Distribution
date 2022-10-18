@@ -6,7 +6,7 @@ import typings.chartJs.chartJsStrings.before
 import typings.chartJs.chartJsStrings.default
 import typings.chartJs.chartJsStrings.middle
 import typings.chartJs.chartJsStrings.monotone
-import typings.chartJs.colorMod.Color
+import typings.chartJs.typesColorMod.Color
 import typings.std.CanvasLineCap
 import typings.std.CanvasLineJoin
 import org.scalablytyped.runtime.StObject

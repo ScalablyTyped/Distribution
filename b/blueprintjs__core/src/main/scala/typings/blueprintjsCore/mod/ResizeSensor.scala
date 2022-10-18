@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.resizeSensorMod.ResizeSensorProps
+import typings.blueprintjsCore.libEsmComponentsResizeSensorResizeSensorMod.ResizeSensorProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "ResizeSensor")
 @js.native
 open class ResizeSensor protected ()
-  extends typings.blueprintjsCore.componentsMod.ResizeSensor {
+  extends typings.blueprintjsCore.libEsmComponentsMod.ResizeSensor {
   def this(props: ResizeSensorProps) = this()
   def this(props: ResizeSensorProps, context: Any) = this()
 }

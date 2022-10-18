@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.socketclusterServer.serverMod.AGServerOptions
 import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject

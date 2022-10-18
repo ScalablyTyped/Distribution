@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "QuadraticBezierCurve")
 @js.native
 open class QuadraticBezierCurve protected ()
-  extends typings.three.threeMod.QuadraticBezierCurve {
+  extends typings.three.srcThreeMod.QuadraticBezierCurve {
   def this(
-    v0: typings.three.vector2Mod.Vector2,
-    v1: typings.three.vector2Mod.Vector2,
-    v2: typings.three.vector2Mod.Vector2
+    v0: typings.three.srcMathVector2Mod.Vector2,
+    v1: typings.three.srcMathVector2Mod.Vector2,
+    v2: typings.three.srcMathVector2Mod.Vector2
   ) = this()
 }

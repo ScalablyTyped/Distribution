@@ -1,194 +1,27 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.adapterMod.NgCompilerAdapter
-import typings.angularCompilerCli.compilerMod.CompilationTicket
-import typings.angularCompilerCli.compilerMod.IncrementalResourceCompilationTicket
-import typings.angularCompilerCli.interfacesMod.ExtendedTsCompilerHost
-import typings.angularCompilerCli.optionsMod.NgCompilerOptions
-import typings.angularCompilerCli.perfMod.ActivePerfRecorder
-import typings.angularCompilerCli.programDriverSrcApiMod.ProgramDriver
-import typings.angularCompilerCli.shimsApiMod.FactoryTracker
-import typings.angularCompilerCli.shimsMod.ShimAdapter
-import typings.angularCompilerCli.shimsMod.ShimReferenceTagger
-import typings.angularCompilerCli.srcTypesMod.AbsoluteFsPath
-import typings.angularCompilerCli.stateMod.IncrementalState
-import typings.angularCompilerCli.strategyMod.IncrementalBuildStrategy
-import typings.std.Set
-import typings.typescript.mod.CompilerHost
-import typings.typescript.mod.Diagnostic
-import typings.typescript.mod.Program
+import typings.babelTypes.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* augmented module */
 object coreMod {
   
-  @JSImport("@angular/compiler-cli/src/ngtsc/core", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("@angular/compiler-cli/src/ngtsc/core", "CompilationTicketKind")
-  @js.native
-  object CompilationTicketKind extends StObject {
+  trait BabelFile extends StObject {
     
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularCompilerCli.compilerMod.CompilationTicketKind & Double] = js.native
-    
-    /* 0 */ val Fresh: typings.angularCompilerCli.compilerMod.CompilationTicketKind.Fresh & Double = js.native
-    
-    /* 2 */ val IncrementalResource: typings.angularCompilerCli.compilerMod.CompilationTicketKind.IncrementalResource & Double = js.native
-    
-    /* 1 */ val IncrementalTypeScript: typings.angularCompilerCli.compilerMod.CompilationTicketKind.IncrementalTypeScript & Double = js.native
+    def buildCodeFrameError(node: Node, message: String): js.Error
   }
-  
-  @JSImport("@angular/compiler-cli/src/ngtsc/core", "NgCompiler")
-  @js.native
-  /* private */ open class NgCompiler ()
-    extends typings.angularCompilerCli.compilerMod.NgCompiler
-  /* static members */
-  object NgCompiler {
+  object BabelFile {
     
-    @JSImport("@angular/compiler-cli/src/ngtsc/core", "NgCompiler")
-    @js.native
-    val ^ : js.Any = js.native
+    inline def apply(buildCodeFrameError: (Node, String) => js.Error): BabelFile = {
+      val __obj = js.Dynamic.literal(buildCodeFrameError = js.Any.fromFunction2(buildCodeFrameError))
+      __obj.asInstanceOf[BabelFile]
+    }
     
-    /**
-      * Convert a `CompilationTicket` into an `NgCompiler` instance for the requested compilation.
-      *
-      * Depending on the nature of the compilation request, the `NgCompiler` instance may be reused
-      * from a previous compilation and updated with any changes, it may be a new instance which
-      * incrementally reuses state from a previous compilation, or it may represent a fresh
-      * compilation entirely.
-      */
-    inline def fromTicket(ticket: CompilationTicket, adapter: NgCompilerAdapter): typings.angularCompilerCli.compilerMod.NgCompiler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTicket")(ticket.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[typings.angularCompilerCli.compilerMod.NgCompiler]
+    extension [Self <: BabelFile](x: Self) {
+      
+      inline def setBuildCodeFrameError(value: (Node, String) => js.Error): Self = StObject.set(x, "buildCodeFrameError", js.Any.fromFunction2(value))
+    }
   }
-  
-  @JSImport("@angular/compiler-cli/src/ngtsc/core", "NgCompilerHost")
-  @js.native
-  open class NgCompilerHost protected ()
-    extends typings.angularCompilerCli.hostMod.NgCompilerHost {
-    def this(
-      delegate: ExtendedTsCompilerHost,
-      inputFiles: js.Array[String],
-      rootDirs: js.Array[AbsoluteFsPath],
-      shimAdapter: ShimAdapter,
-      shimTagger: ShimReferenceTagger,
-      entryPoint: Null,
-      factoryTracker: Null,
-      diagnostics: js.Array[Diagnostic]
-    ) = this()
-    def this(
-      delegate: ExtendedTsCompilerHost,
-      inputFiles: js.Array[String],
-      rootDirs: js.Array[AbsoluteFsPath],
-      shimAdapter: ShimAdapter,
-      shimTagger: ShimReferenceTagger,
-      entryPoint: Null,
-      factoryTracker: FactoryTracker,
-      diagnostics: js.Array[Diagnostic]
-    ) = this()
-    def this(
-      delegate: ExtendedTsCompilerHost,
-      inputFiles: js.Array[String],
-      rootDirs: js.Array[AbsoluteFsPath],
-      shimAdapter: ShimAdapter,
-      shimTagger: ShimReferenceTagger,
-      entryPoint: AbsoluteFsPath,
-      factoryTracker: Null,
-      diagnostics: js.Array[Diagnostic]
-    ) = this()
-    def this(
-      delegate: ExtendedTsCompilerHost,
-      inputFiles: js.Array[String],
-      rootDirs: js.Array[AbsoluteFsPath],
-      shimAdapter: ShimAdapter,
-      shimTagger: ShimReferenceTagger,
-      entryPoint: AbsoluteFsPath,
-      factoryTracker: FactoryTracker,
-      diagnostics: js.Array[Diagnostic]
-    ) = this()
-  }
-  /* static members */
-  object NgCompilerHost {
-    
-    @JSImport("@angular/compiler-cli/src/ngtsc/core", "NgCompilerHost")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Create an `NgCompilerHost` from a delegate host, an array of input filenames, and the full set
-      * of TypeScript and Angular compiler options.
-      */
-    inline def wrap(delegate: CompilerHost, inputFiles: js.Array[String], options: NgCompilerOptions): typings.angularCompilerCli.anon.NgCompilerHost = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(delegate.asInstanceOf[js.Any], inputFiles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularCompilerCli.anon.NgCompilerHost]
-    inline def wrap(
-      delegate: CompilerHost,
-      inputFiles: js.Array[String],
-      options: NgCompilerOptions,
-      oldProgram: Program
-    ): typings.angularCompilerCli.anon.NgCompilerHost = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(delegate.asInstanceOf[js.Any], inputFiles.asInstanceOf[js.Any], options.asInstanceOf[js.Any], oldProgram.asInstanceOf[js.Any])).asInstanceOf[typings.angularCompilerCli.anon.NgCompilerHost]
-  }
-  
-  inline def freshCompilationTicket(
-    tsProgram: Program,
-    options: NgCompilerOptions,
-    incrementalBuildStrategy: IncrementalBuildStrategy,
-    programDriver: ProgramDriver,
-    perfRecorder: Null,
-    enableTemplateTypeChecker: Boolean,
-    usePoisonedData: Boolean
-  ): CompilationTicket = (^.asInstanceOf[js.Dynamic].applyDynamic("freshCompilationTicket")(tsProgram.asInstanceOf[js.Any], options.asInstanceOf[js.Any], incrementalBuildStrategy.asInstanceOf[js.Any], programDriver.asInstanceOf[js.Any], perfRecorder.asInstanceOf[js.Any], enableTemplateTypeChecker.asInstanceOf[js.Any], usePoisonedData.asInstanceOf[js.Any])).asInstanceOf[CompilationTicket]
-  inline def freshCompilationTicket(
-    tsProgram: Program,
-    options: NgCompilerOptions,
-    incrementalBuildStrategy: IncrementalBuildStrategy,
-    programDriver: ProgramDriver,
-    perfRecorder: ActivePerfRecorder,
-    enableTemplateTypeChecker: Boolean,
-    usePoisonedData: Boolean
-  ): CompilationTicket = (^.asInstanceOf[js.Dynamic].applyDynamic("freshCompilationTicket")(tsProgram.asInstanceOf[js.Any], options.asInstanceOf[js.Any], incrementalBuildStrategy.asInstanceOf[js.Any], programDriver.asInstanceOf[js.Any], perfRecorder.asInstanceOf[js.Any], enableTemplateTypeChecker.asInstanceOf[js.Any], usePoisonedData.asInstanceOf[js.Any])).asInstanceOf[CompilationTicket]
-  
-  inline def incrementalFromCompilerTicket(
-    oldCompiler: typings.angularCompilerCli.compilerMod.NgCompiler,
-    newProgram: Program,
-    incrementalBuildStrategy: IncrementalBuildStrategy,
-    programDriver: ProgramDriver,
-    modifiedResourceFiles: Set[AbsoluteFsPath]
-  ): CompilationTicket = (^.asInstanceOf[js.Dynamic].applyDynamic("incrementalFromCompilerTicket")(oldCompiler.asInstanceOf[js.Any], newProgram.asInstanceOf[js.Any], incrementalBuildStrategy.asInstanceOf[js.Any], programDriver.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any])).asInstanceOf[CompilationTicket]
-  inline def incrementalFromCompilerTicket(
-    oldCompiler: typings.angularCompilerCli.compilerMod.NgCompiler,
-    newProgram: Program,
-    incrementalBuildStrategy: IncrementalBuildStrategy,
-    programDriver: ProgramDriver,
-    modifiedResourceFiles: Set[AbsoluteFsPath],
-    perfRecorder: ActivePerfRecorder
-  ): CompilationTicket = (^.asInstanceOf[js.Dynamic].applyDynamic("incrementalFromCompilerTicket")(oldCompiler.asInstanceOf[js.Any], newProgram.asInstanceOf[js.Any], incrementalBuildStrategy.asInstanceOf[js.Any], programDriver.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], perfRecorder.asInstanceOf[js.Any])).asInstanceOf[CompilationTicket]
-  
-  inline def incrementalFromStateTicket(
-    oldProgram: Program,
-    oldState: IncrementalState,
-    newProgram: Program,
-    options: NgCompilerOptions,
-    incrementalBuildStrategy: IncrementalBuildStrategy,
-    programDriver: ProgramDriver,
-    modifiedResourceFiles: Set[AbsoluteFsPath],
-    perfRecorder: Null,
-    enableTemplateTypeChecker: Boolean,
-    usePoisonedData: Boolean
-  ): CompilationTicket = (^.asInstanceOf[js.Dynamic].applyDynamic("incrementalFromStateTicket")(oldProgram.asInstanceOf[js.Any], oldState.asInstanceOf[js.Any], newProgram.asInstanceOf[js.Any], options.asInstanceOf[js.Any], incrementalBuildStrategy.asInstanceOf[js.Any], programDriver.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], perfRecorder.asInstanceOf[js.Any], enableTemplateTypeChecker.asInstanceOf[js.Any], usePoisonedData.asInstanceOf[js.Any])).asInstanceOf[CompilationTicket]
-  inline def incrementalFromStateTicket(
-    oldProgram: Program,
-    oldState: IncrementalState,
-    newProgram: Program,
-    options: NgCompilerOptions,
-    incrementalBuildStrategy: IncrementalBuildStrategy,
-    programDriver: ProgramDriver,
-    modifiedResourceFiles: Set[AbsoluteFsPath],
-    perfRecorder: ActivePerfRecorder,
-    enableTemplateTypeChecker: Boolean,
-    usePoisonedData: Boolean
-  ): CompilationTicket = (^.asInstanceOf[js.Dynamic].applyDynamic("incrementalFromStateTicket")(oldProgram.asInstanceOf[js.Any], oldState.asInstanceOf[js.Any], newProgram.asInstanceOf[js.Any], options.asInstanceOf[js.Any], incrementalBuildStrategy.asInstanceOf[js.Any], programDriver.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], perfRecorder.asInstanceOf[js.Any], enableTemplateTypeChecker.asInstanceOf[js.Any], usePoisonedData.asInstanceOf[js.Any])).asInstanceOf[CompilationTicket]
-  
-  inline def isAngularCorePackage(program: Program): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAngularCorePackage")(program.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def resourceChangeTicket(compiler: typings.angularCompilerCli.compilerMod.NgCompiler, modifiedResourceFiles: Set[String]): IncrementalResourceCompilationTicket = (^.asInstanceOf[js.Dynamic].applyDynamic("resourceChangeTicket")(compiler.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any])).asInstanceOf[IncrementalResourceCompilationTicket]
 }

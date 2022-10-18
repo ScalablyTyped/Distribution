@@ -85,7 +85,7 @@ object BetterSqlite3 {
     def pragma(source: String): Any = js.native
     def pragma(source: String, options: PragmaOptions): Any = js.native
     
-    def prepare[BindParameters /* <: js.Array[Any] | js.Object */](source: String): typings.betterSqlite3.mod.BetterSqlite3.Statement[js.Array[BindParameters] | BindParameters] = js.native
+    def prepare[BindParameters /* <: js.Array[Any] | js.Object */](source: String): /* import warning: importer.ImportType#apply Failed type conversion: BindParameters extends std.Array<any> ? better-sqlite3.better-sqlite3.BetterSqlite3.Statement<BindParameters> : better-sqlite3.better-sqlite3.BetterSqlite3.Statement<[BindParameters]> */ js.Any = js.native
     
     var readonly: Boolean = js.native
     

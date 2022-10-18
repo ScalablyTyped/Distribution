@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait XRDOMOverlayInit extends StObject {
   
-  /**
-    * The root attribute specifies the overlay element that will be displayed to the user as the content of the DOM overlay. This is a required attribute, there is no default.
-    */
   var root: Element
 }
 object XRDOMOverlayInit {

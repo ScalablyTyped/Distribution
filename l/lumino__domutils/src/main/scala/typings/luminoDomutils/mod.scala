@@ -1,7 +1,7 @@
 package typings.luminoDomutils
 
-import typings.luminoDomutils.elementMod.ElementExt.IBoxSizing
-import typings.luminoDomutils.elementMod.ElementExt.ISizeLimits
+import typings.luminoDomutils.typesElementMod.ElementExt.IBoxSizing
+import typings.luminoDomutils.typesElementMod.ElementExt.ISizeLimits
 import typings.std.Element
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent

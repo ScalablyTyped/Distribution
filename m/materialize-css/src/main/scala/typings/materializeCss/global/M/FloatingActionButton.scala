@@ -1,5 +1,7 @@
 package typings.materializeCss.global.M
 
+import typings.materializeCss.M.FloatingActionButtonOptions
+import typings.materializeCss.MElements
 import typings.materializeCss.anon.PartialFloatingActionButt
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -12,23 +14,32 @@ open class FloatingActionButton ()
   extends StObject
      with typings.materializeCss.M.FloatingActionButton {
   
-  /**
-    * Close FAB
-    */
   /* CompleteClass */
   override def close(): Unit = js.native
   
   /**
-    * Describes open/close state of FAB.
+    * Destroy plugin instance and teardown
     */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
+  
   /* CompleteClass */
   var isOpen: Boolean = js.native
   
-  /**
-    * Open FAB
-    */
   /* CompleteClass */
   override def open(): Unit = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: FloatingActionButtonOptions = js.native
 }
 object FloatingActionButton {
   
@@ -46,13 +57,8 @@ object FloatingActionButton {
     * Init FloatingActionButtons
     */
   /* static member */
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any
-  ): js.Array[typings.materializeCss.M.FloatingActionButton] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.FloatingActionButton]]
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any,
-    options: PartialFloatingActionButt
-  ): js.Array[typings.materializeCss.M.FloatingActionButton] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.FloatingActionButton]]
+  inline def init(els: MElements): js.Array[typings.materializeCss.M.FloatingActionButton] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.FloatingActionButton]]
+  inline def init(els: MElements, options: PartialFloatingActionButt): js.Array[typings.materializeCss.M.FloatingActionButton] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.FloatingActionButton]]
   /**
     * Init FloatingActionButton
     */

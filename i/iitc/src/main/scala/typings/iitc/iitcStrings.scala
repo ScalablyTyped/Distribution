@@ -1,10 +1,10 @@
 package typings.iitc
 
-import typings.iitc.chatMod.global.ChatChannels
-import typings.iitc.iitctypesMod.IITC.ModRarity
-import typings.iitc.iitctypesMod.IITC.ModType
-import typings.iitc.iitctypesMod.IITC._ModStats
-import typings.iitc.mapDataDebugMod.DebugTileState
+import typings.iitc.coreChatMod.global.ChatChannels
+import typings.iitc.coreIitctypesMod.IITC.ModRarity
+import typings.iitc.coreIitctypesMod.IITC.ModType
+import typings.iitc.coreIitctypesMod.IITC._ModStats
+import typings.iitc.coreMapDataDebugMod.DebugTileState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

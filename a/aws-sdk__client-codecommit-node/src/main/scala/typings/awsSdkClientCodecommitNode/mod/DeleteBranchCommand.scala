@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-codecommit-node", "DeleteBranchCommand")
 @js.native
 open class DeleteBranchCommand protected ()
-  extends typings.awsSdkClientCodecommitNode.deleteBranchCommandMod.DeleteBranchCommand {
+  extends typings.awsSdkClientCodecommitNode.commandsDeleteBranchCommandMod.DeleteBranchCommand {
   def this(input: DeleteBranchInput) = this()
 }

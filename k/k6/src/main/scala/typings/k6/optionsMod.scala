@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object optionsMod {
   
-  @JSImport("k6/options", "BaseScenario")
+  /* note: abstract class */ @JSImport("k6/options", "BaseScenario")
   @js.native
-  abstract class BaseScenario () extends StObject {
+  open class BaseScenario () extends StObject {
     
     /** Environment variables specific to this scenario.  */
     var env: js.UndefOr[StringDictionary[String]] = js.native

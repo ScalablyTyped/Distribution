@@ -23,6 +23,7 @@ import typings.videoJs.mod.videojs.Tech
 import typings.videoJs.mod.videojs.TextTrackMenuItem
 import typings.videoJs.mod.videojs.TextTrackMenuItemOptions
 import typings.videoJs.mod.videojs.TimeToolTip
+import typings.videoJs.mod.videojs.XhrOptions
 import typings.videoJs.videoJsStrings.Button
 import typings.videoJs.videoJsStrings.ClickableComponent
 import typings.videoJs.videoJsStrings.Menu
@@ -190,6 +191,23 @@ object anon {
       *          basic plugins, a wrapper function that initializes the plugin.
       */
     def registerPlugin[T, K](name: String, plugin: js.ThisFunction1[/* this */ Player, /* repeated */ K, T]): js.Function1[/* repeated */ K, T] = js.native
+  }
+  
+  trait BeforeRequest extends StObject {
+    
+    def beforeRequest(options: XhrOptions): Unit
+  }
+  object BeforeRequest {
+    
+    inline def apply(beforeRequest: XhrOptions => Unit): BeforeRequest = {
+      val __obj = js.Dynamic.literal(beforeRequest = js.Any.fromFunction1(beforeRequest))
+      __obj.asInstanceOf[BeforeRequest]
+    }
+    
+    extension [Self <: BeforeRequest](x: Self) {
+      
+      inline def setBeforeRequest(value: XhrOptions => Unit): Self = StObject.set(x, "beforeRequest", js.Any.fromFunction1(value))
+    }
   }
   
   @js.native
@@ -729,24 +747,4 @@ object anon {
       inline def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
     }
   }
-  
-  @js.native
-  trait TypeofComponent
-    extends StObject
-       with GetComponent
-  
-  @js.native
-  trait TypeofPlayer
-    extends StObject
-       with GetTagSettings
-  
-  @js.native
-  trait TypeofPlugin
-    extends StObject
-       with BASEPLUGINNAME
-  
-  @js.native
-  trait TypeofTech
-    extends StObject
-       with CanPlaySource
 }

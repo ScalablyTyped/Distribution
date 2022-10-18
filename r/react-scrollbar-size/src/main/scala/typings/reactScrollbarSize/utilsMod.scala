@@ -1,6 +1,6 @@
 package typings.reactScrollbarSize
 
-import typings.reactScrollbarSize.debounceMod.DebouncedFn
+import typings.reactScrollbarSize.utilsDebounceMod.DebouncedFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

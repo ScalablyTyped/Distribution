@@ -2,10 +2,10 @@ package typings.typedGithubApi
 
 import typings.moment.mod.Moment
 import typings.typedGithubApi.anon.Admin
-import typings.typedGithubApi.githubRefMod.OptionsOrRef
-import typings.typedGithubApi.interfacesUserMod.UserSummary
-import typings.typedGithubApi.repositoryMod.Repository
-import typings.typedGithubApi.repositoryRefMod.RepositoryRefClass
+import typings.typedGithubApi.distApiInterfacesRepositoryMod.Repository
+import typings.typedGithubApi.distGithubRefMod.OptionsOrRef
+import typings.typedGithubApi.distInterfacesUserMod.UserSummary
+import typings.typedGithubApi.distRepositoryRefMod.RepositoryRefClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object distRepositoryMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.typedGithubApi.interfacesRepositoryMod.RepositoryRef because Already inherited
-  - typings.typedGithubApi.interfacesRepositoryMod.Repository because var conflicts: owner. Inlined id, fullName, description, isPrivate, isFork, htmlUri, homePage, language, forksCount, starGazersCount, watchersCount, size, defaultBranch, openIssuesCount, topics, hasIssues, hasWiki, hasPages, hasDownloads, pushed, created, updated, permissions, allowRebasemerge, allowSquashMerge, allowMergeCommit, subscribersCount, networkCount */ @JSImport("typed-github-api/dist/repository", "RepositoryClass")
+  - typings.typedGithubApi.distInterfacesRepositoryMod.RepositoryRef because Already inherited
+  - typings.typedGithubApi.distInterfacesRepositoryMod.Repository because var conflicts: owner. Inlined id, fullName, description, isPrivate, isFork, htmlUri, homePage, language, forksCount, starGazersCount, watchersCount, size, defaultBranch, openIssuesCount, topics, hasIssues, hasWiki, hasPages, hasDownloads, pushed, created, updated, permissions, allowRebasemerge, allowSquashMerge, allowMergeCommit, subscribersCount, networkCount */ @JSImport("typed-github-api/dist/repository", "RepositoryClass")
   @js.native
   open class RepositoryClass protected () extends RepositoryRefClass {
     def this(repository: Repository, options: OptionsOrRef) = this()

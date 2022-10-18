@@ -12,7 +12,7 @@ open class RegExp protected ()
   extends StObject
      with typings.std.RegExp {
   def this(pattern: java.lang.String) = this()
-  /* standard es2015.core */
+  /* standard es5 */
   def this(pattern: js.RegExp) = this()
   def this(pattern: java.lang.String, flags: java.lang.String) = this()
   def this(pattern: js.RegExp, flags: java.lang.String) = this()

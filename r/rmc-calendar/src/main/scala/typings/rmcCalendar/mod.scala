@@ -2,9 +2,9 @@ package typings.rmcCalendar
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.rmcCalendar.anon.TypeofHeader
-import typings.rmcCalendar.calendarMod.default
-import typings.rmcCalendar.calendarPropsMod.PropsType
-import typings.rmcCalendar.dataTypesMod.Models.Locale
+import typings.rmcCalendar.libCalendarMod.default
+import typings.rmcCalendar.libCalendarPropsMod.PropsType
+import typings.rmcCalendar.libDateDataTypesMod.Models.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,8 +30,8 @@ object mod {
     
     @JSImport("rmc-calendar", "Calendar.DefaultShortcut")
     @js.native
-    def DefaultShortcut: Instantiable0[typings.rmcCalendar.shortcutPanelMod.default] = js.native
-    inline def DefaultShortcut_=(x: Instantiable0[typings.rmcCalendar.shortcutPanelMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultShortcut")(x.asInstanceOf[js.Any])
+    def DefaultShortcut: Instantiable0[typings.rmcCalendar.libCalendarShortcutPanelMod.default] = js.native
+    inline def DefaultShortcut_=(x: Instantiable0[typings.rmcCalendar.libCalendarShortcutPanelMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultShortcut")(x.asInstanceOf[js.Any])
     
     @JSImport("rmc-calendar", "Calendar.defaultProps")
     @js.native
@@ -42,7 +42,7 @@ object mod {
   @JSImport("rmc-calendar", "DatePicker")
   @js.native
   open class DatePicker ()
-    extends typings.rmcCalendar.datePickerMod.default
+    extends typings.rmcCalendar.libDatePickerMod.default
   
   object Locale {
     
@@ -52,13 +52,13 @@ object mod {
     
     @JSImport("rmc-calendar", "Locale.enUS")
     @js.native
-    def enUS: typings.rmcCalendar.dataTypesMod.Models.Locale = js.native
-    inline def enUS_=(x: typings.rmcCalendar.dataTypesMod.Models.Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enUS")(x.asInstanceOf[js.Any])
+    def enUS: typings.rmcCalendar.libDateDataTypesMod.Models.Locale = js.native
+    inline def enUS_=(x: typings.rmcCalendar.libDateDataTypesMod.Models.Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enUS")(x.asInstanceOf[js.Any])
     
     @JSImport("rmc-calendar", "Locale.zhCN")
     @js.native
-    def zhCN: typings.rmcCalendar.dataTypesMod.Models.Locale = js.native
-    inline def zhCN_=(x: typings.rmcCalendar.dataTypesMod.Models.Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zhCN")(x.asInstanceOf[js.Any])
+    def zhCN: typings.rmcCalendar.libDateDataTypesMod.Models.Locale = js.native
+    inline def zhCN_=(x: typings.rmcCalendar.libDateDataTypesMod.Models.Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zhCN")(x.asInstanceOf[js.Any])
   }
   
   type LocaleType = Locale

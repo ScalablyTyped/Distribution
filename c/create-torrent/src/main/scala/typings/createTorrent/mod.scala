@@ -1,9 +1,9 @@
 package typings.createTorrent
 
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.std.File
 import typings.std.FileList
-import typings.std.ReadableStream
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,13 +18,19 @@ object mod {
     cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
-    input: js.Array[Buffer | File | ReadableStream[Any] | String],
+    input: js.Array[Buffer | File | ReadableStream | String],
     cb: js.Function2[js.Error | Null, /* torrent */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
-    input: js.Array[Buffer | File | ReadableStream[Any] | String],
+    input: js.Array[Buffer | File | ReadableStream | String],
     opts: CreateTorrentOptions,
     cb: js.Function2[js.Error | Null, /* torrent */ Buffer, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(input: ReadableStream, cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
+    input: ReadableStream,
+    opts: CreateTorrentOptions,
+    cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(input: Buffer, cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
@@ -41,12 +47,6 @@ object mod {
   inline def apply(input: File, cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     input: File,
-    opts: CreateTorrentOptions,
-    cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(input: ReadableStream[Any], cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(
-    input: ReadableStream[Any],
     opts: CreateTorrentOptions,
     cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]

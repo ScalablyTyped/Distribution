@@ -12,5 +12,5 @@ open class DepthReducer protected ()
     * Creates a depth reducer
     * @param camera The camera used to render the depth texture
     */
-  def this(camera: typings.babylonjs.cameraMod.Camera) = this()
+  def this(camera: typings.babylonjs.camerasCameraMod.Camera) = this()
 }

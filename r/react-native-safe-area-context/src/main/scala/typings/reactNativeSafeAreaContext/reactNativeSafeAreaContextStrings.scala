@@ -1,6 +1,6 @@
 package typings.reactNativeSafeAreaContext
 
-import typings.reactNativeSafeAreaContext.safeAreaTypesMod.Edge
+import typings.reactNativeSafeAreaContext.libTypescriptSafeAreaDottypesMod.Edge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

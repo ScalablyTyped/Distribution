@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeviceType extends StObject {
   
-  var device: typings.trezorConnect.deviceMod.Device
+  var device: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device
   
   var `type`: scala.Unit
 }
 object DeviceType {
   
-  inline def apply(device: typings.trezorConnect.deviceMod.Device, `type`: scala.Unit): DeviceType = {
+  inline def apply(device: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device, `type`: scala.Unit): DeviceType = {
     val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceType]
@@ -20,7 +20,7 @@ object DeviceType {
   
   extension [Self <: DeviceType](x: Self) {
     
-    inline def setDevice(value: typings.trezorConnect.deviceMod.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     inline def setType(value: scala.Unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -1,9 +1,9 @@
 package typings.firebaseMessaging
 
 import typings.firebaseApp.mod.FirebaseApp
-import typings.firebaseMessaging.interfacesPublicTypesMod.GetTokenOptions
-import typings.firebaseMessaging.interfacesPublicTypesMod.MessagePayload
-import typings.firebaseMessaging.interfacesPublicTypesMod.Messaging
+import typings.firebaseMessaging.distSrcInterfacesPublicTypesMod.GetTokenOptions
+import typings.firebaseMessaging.distSrcInterfacesPublicTypesMod.MessagePayload
+import typings.firebaseMessaging.distSrcInterfacesPublicTypesMod.Messaging
 import typings.firebaseUtil.mod.NextFn
 import typings.firebaseUtil.mod.Observer
 import typings.firebaseUtil.mod.Unsubscribe
@@ -30,22 +30,23 @@ object distSrcMod {
   inline def onMessage(messaging: Messaging, nextOrObserver: NextFn[MessagePayload]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onMessage")(messaging.asInstanceOf[js.Any], nextOrObserver.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
   inline def onMessage(messaging: Messaging, nextOrObserver: Observer[MessagePayload]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onMessage")(messaging.asInstanceOf[js.Any], nextOrObserver.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {
       
-      var messaging: typings.firebaseMessaging.publicTypesMod.Messaging
+      var messaging: Messaging
     }
     object NameServiceMapping {
       
-      inline def apply(messaging: typings.firebaseMessaging.publicTypesMod.Messaging): NameServiceMapping = {
+      inline def apply(messaging: Messaging): NameServiceMapping = {
         val __obj = js.Dynamic.literal(messaging = messaging.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
       extension [Self <: NameServiceMapping](x: Self) {
         
-        inline def setMessaging(value: typings.firebaseMessaging.publicTypesMod.Messaging): Self = StObject.set(x, "messaging", value.asInstanceOf[js.Any])
+        inline def setMessaging(value: Messaging): Self = StObject.set(x, "messaging", value.asInstanceOf[js.Any])
       }
     }
   }

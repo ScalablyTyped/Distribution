@@ -1,7 +1,7 @@
 package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
-import typings.ol.geometryMod.default
+import typings.ol.geomGeometryMod.default
 import typings.ol.projMod.ProjectionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

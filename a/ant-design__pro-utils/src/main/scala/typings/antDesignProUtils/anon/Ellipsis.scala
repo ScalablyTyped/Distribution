@@ -1,6 +1,6 @@
 package typings.antDesignProUtils.anon
 
-import typings.antd.formItemLabelMod.LabelTooltipType
+import typings.antd.libFormFormItemLabelMod.LabelTooltipType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

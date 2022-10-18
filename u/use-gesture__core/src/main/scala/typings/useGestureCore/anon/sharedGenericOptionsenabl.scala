@@ -2,12 +2,12 @@ package typings.useGestureCore.anon
 
 import typings.std.AddEventListenerOptions
 import typings.std.EventTarget
-import typings.useGestureCore.configMod.GenericOptions
-import typings.useGestureCore.configMod.ModifierKey
-import typings.useGestureCore.configMod.PinchBounds
+import typings.useGestureCore.distDeclarationsSrcTypesConfigMod.GenericOptions
+import typings.useGestureCore.distDeclarationsSrcTypesConfigMod.ModifierKey
+import typings.useGestureCore.distDeclarationsSrcTypesConfigMod.PinchBounds
+import typings.useGestureCore.distDeclarationsSrcTypesUtilsMod.Target
+import typings.useGestureCore.distDeclarationsSrcTypesUtilsMod.Vector2
 import typings.useGestureCore.useGestureCoreStrings.lock
-import typings.useGestureCore.utilsMod.Target
-import typings.useGestureCore.utilsMod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

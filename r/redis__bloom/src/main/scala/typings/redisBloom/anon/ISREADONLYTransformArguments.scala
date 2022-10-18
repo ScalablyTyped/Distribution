@@ -1,7 +1,7 @@
 package typings.redisBloom.anon
 
-import typings.redisBloom.cuckooScandumpMod.ScanDumpRawReply
-import typings.redisBloom.cuckooScandumpMod.ScanDumpReply
+import typings.redisBloom.distCommandsCuckooScandumpMod.ScanDumpRawReply
+import typings.redisBloom.distCommandsCuckooScandumpMod.ScanDumpReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,5 +17,5 @@ trait ISREADONLYTransformArguments extends StObject {
   
   def transformReply(hasIteratorChunk: ScanDumpRawReply): ScanDumpReply = js.native
   @JSName("transformReply")
-  def transformReply_ScanDumpReply(hasIteratorChunk: typings.redisBloom.scandumpMod.ScanDumpRawReply): typings.redisBloom.scandumpMod.ScanDumpReply = js.native
+  def transformReply_ScanDumpReply(hasIteratorChunk: typings.redisBloom.distCommandsBloomScandumpMod.ScanDumpRawReply): typings.redisBloom.distCommandsBloomScandumpMod.ScanDumpReply = js.native
 }

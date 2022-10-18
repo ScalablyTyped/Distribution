@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "SoundListener")
 @js.native
 open class SoundListener ()
-  extends typings.blackEngine.soundListenerMod.SoundListener
+  extends typings.blackEngine.audioSoundListenerMod.SoundListener

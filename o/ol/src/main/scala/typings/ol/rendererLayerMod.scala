@@ -3,9 +3,9 @@ package typings.ol
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.coordinateMod.Coordinate
-import typings.ol.mapMod.HitMatch
 import typings.ol.pixelMod.Pixel
 import typings.ol.pluggableMapMod.FrameState
+import typings.ol.rendererMapMod.HitMatch
 import typings.ol.rendererVectorMod.FeatureCallback
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -29,8 +29,8 @@ object rendererLayerMod {
       */
     /* protected */ def createLoadedTileFinder(
       source: typings.ol.sourceTileMod.default,
-      projection: typings.ol.projectionMod.default,
-      tiles: NumberDictionary[StringDictionary[typings.ol.olTileMod.default]]
+      projection: typings.ol.projProjectionMod.default,
+      tiles: NumberDictionary[StringDictionary[typings.ol.tileMod.default]]
     ): js.Function2[/* p0 */ Double, /* p1 */ typings.ol.tileRangeMod.default, Boolean] = js.native
     
     def forEachFeatureAtCoordinate[T](
@@ -46,7 +46,7 @@ object rendererLayerMod {
     /**
       * Asynchronous layer level hit detection.
       */
-    def getFeatures(pixel: Pixel): js.Promise[js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]] = js.native
+    def getFeatures(pixel: Pixel): js.Promise[js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]]] = js.native
     
     def getLayer(): LayerType = js.native
     
@@ -64,9 +64,9 @@ object rendererLayerMod {
     /* protected */ def loadImage(image: typings.ol.imageBaseMod.default): Boolean = js.native
     
     def loadedTileCallback(
-      tiles: NumberDictionary[StringDictionary[typings.ol.olTileMod.default]],
+      tiles: NumberDictionary[StringDictionary[typings.ol.tileMod.default]],
       zoom: Double,
-      tile: typings.ol.olTileMod.default
+      tile: typings.ol.tileMod.default
     ): Boolean = js.native
     
     /**

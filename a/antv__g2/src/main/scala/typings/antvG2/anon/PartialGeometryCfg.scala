@@ -1,10 +1,10 @@
 package typings.antvG2.anon
 
-import typings.antvG2.dependentsMod.Coordinate
+import typings.antvG2.libDependentsMod.Coordinate
 import typings.antvG2.libInterfaceMod.Datum
 import typings.antvG2.libInterfaceMod.LooseObject
 import typings.antvG2.libInterfaceMod.ScaleOption
-import typings.antvGBase.interfacesMod.IGroup
+import typings.antvGBase.libInterfacesMod.IGroup
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

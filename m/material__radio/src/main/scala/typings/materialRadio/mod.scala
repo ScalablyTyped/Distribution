@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@material/radio", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialRadio.foundationMod.default {
+    def this(adapter: PartialMDCRadioAdapter) = this()
+  }
+  
   @JSImport("@material/radio", "MDCRadio")
   @js.native
   open class MDCRadio protected ()

@@ -1,8 +1,8 @@
 package typings.storybookAddonKnobs.anon
 
 import typings.react.mod.Validator
-import typings.storybookAddonKnobs.checkboxesMod.CheckboxesTypeKnob
-import typings.storybookAddonKnobs.checkboxesMod.CheckboxesTypeKnobValue
+import typings.storybookAddonKnobs.distComponentsTypesCheckboxesMod.CheckboxesTypeKnob
+import typings.storybookAddonKnobs.distComponentsTypesCheckboxesMod.CheckboxesTypeKnobValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

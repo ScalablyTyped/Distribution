@@ -2,7 +2,6 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,9 +30,7 @@ trait IQService
     * @param promises A hash of promises.
     */
   def all[T](
-    promises: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: angular.angular.IPromise<T[K]> | T[K]}
-    */ typings.angular.angularStrings.IQService & TopLevel[Any]
+    promises: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: angular.angular.IPromise<T[K]> | T[K]} */ js.Any
   ): IPromise[T] = js.native
   def all[TAll](promises: js.Array[TAll | IPromise[TAll]]): IPromise[js.Array[TAll]] = js.native
   def all[T1, T2](values: js.Tuple2[T1 | IPromise[T1], T2 | IPromise[T2]]): IPromise[js.Tuple2[T1, T2]] = js.native

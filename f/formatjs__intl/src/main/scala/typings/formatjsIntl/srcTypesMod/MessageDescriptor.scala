@@ -1,6 +1,6 @@
 package typings.formatjsIntl.srcTypesMod
 
-import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
+import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

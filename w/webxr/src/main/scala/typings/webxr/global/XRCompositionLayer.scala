@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("XRCompositionLayer")
+/* note: abstract class */ @JSGlobal("XRCompositionLayer")
 @js.native
-abstract class XRCompositionLayer ()
+open class XRCompositionLayer ()
   extends StObject
      with typings.webxr.XRCompositionLayer

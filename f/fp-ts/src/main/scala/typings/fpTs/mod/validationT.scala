@@ -1,12 +1,12 @@
 package typings.fpTs.mod
 
-import typings.fpTs.monadMod.Monad
-import typings.fpTs.monadMod.Monad1
-import typings.fpTs.monadMod.Monad2
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.validationTMod.ValidationM
-import typings.fpTs.validationTMod.ValidationM1
-import typings.fpTs.validationTMod.ValidationM2
+import typings.fpTs.libMonadMod.Monad
+import typings.fpTs.libMonadMod.Monad1
+import typings.fpTs.libMonadMod.Monad2
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libValidationTMod.ValidationM
+import typings.fpTs.libValidationTMod.ValidationM1
+import typings.fpTs.libValidationTMod.ValidationM2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

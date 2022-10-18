@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "alex" : "10.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "alex" : "10.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

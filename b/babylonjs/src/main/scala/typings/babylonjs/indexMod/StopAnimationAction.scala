@@ -15,5 +15,5 @@ open class StopAnimationAction protected ()
     * @param condition defines the trigger related conditions
     */
   def this(triggerOptions: Any, target: Any) = this()
-  def this(triggerOptions: Any, target: Any, condition: typings.babylonjs.conditionMod.Condition) = this()
+  def this(triggerOptions: Any, target: Any, condition: typings.babylonjs.actionsConditionMod.Condition) = this()
 }

@@ -7,22 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `304404` extends StObject {
   
   /** Response */
-  var `200`: Content51
+  var `200`: Content29
   
-  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any
+  var `304`: Any
   
-  var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+  var `404`: Content6
   
-  var `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
+  var `422`: Content8
 }
 object `304404` {
   
-  inline def apply(
-    `200`: Content51,
-    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any,
-    `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any,
-    `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
-  ): `304404` = {
+  inline def apply(`200`: Content29, `304`: Any, `404`: Content6, `422`: Content8): `304404` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("304")(`304`.asInstanceOf[js.Any])
@@ -33,18 +28,12 @@ object `304404` {
   
   extension [Self <: `304404`](x: Self) {
     
-    inline def set200(value: Content51): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: Content29): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set304(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any
-    ): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
+    inline def set304(value: Any): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
     
-    inline def set404(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
-    ): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content6): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set422(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
-    ): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content8): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

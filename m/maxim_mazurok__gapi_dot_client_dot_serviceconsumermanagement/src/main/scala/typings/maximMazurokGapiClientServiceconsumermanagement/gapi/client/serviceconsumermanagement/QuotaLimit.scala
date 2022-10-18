@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serviceconsumermanagement
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,9 +65,7 @@ trait QuotaLimit extends StObject {
     * is supported.
     */
   var values: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.QuotaLimit & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object QuotaLimit {
@@ -117,9 +114,7 @@ object QuotaLimit {
     inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     inline def setValues(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.QuotaLimit & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

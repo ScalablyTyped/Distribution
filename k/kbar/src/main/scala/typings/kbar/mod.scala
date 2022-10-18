@@ -1,18 +1,18 @@
 package typings.kbar
 
-import typings.kbar.actionImplMod.ActionImplOptions
-import typings.kbar.actionInterfaceMod.ActionInterfaceOptions
 import typings.kbar.anon.InputHTMLAttributesHTMLIn
 import typings.kbar.anon.OmitActionid
 import typings.kbar.anon.Results
-import typings.kbar.kbaranimatorMod.KBarAnimatorProps
-import typings.kbar.kbarportalMod.Props
-import typings.kbar.kbarresultsMod.KBarResultsProps
-import typings.kbar.typesMod.Action
-import typings.kbar.typesMod.IKBarContext
-import typings.kbar.typesMod.KBarProviderProps
-import typings.kbar.typesMod.KBarState
-import typings.kbar.useKBarMod.useKBarReturnType
+import typings.kbar.libActionActionImplMod.ActionImplOptions
+import typings.kbar.libActionActionInterfaceMod.ActionInterfaceOptions
+import typings.kbar.libKbaranimatorMod.KBarAnimatorProps
+import typings.kbar.libKbarportalMod.Props
+import typings.kbar.libKbarresultsMod.KBarResultsProps
+import typings.kbar.libTypesMod.Action
+import typings.kbar.libTypesMod.IKBarContext
+import typings.kbar.libTypesMod.KBarProviderProps
+import typings.kbar.libTypesMod.KBarState
+import typings.kbar.libUseKBarMod.useKBarReturnType
 import typings.react.mod.Context
 import typings.react.mod.DependencyList
 import typings.react.mod.FC
@@ -31,7 +31,7 @@ object mod {
   @JSImport("kbar", "ActionImpl")
   @js.native
   open class ActionImpl protected ()
-    extends typings.kbar.actionMod.ActionImpl {
+    extends typings.kbar.libActionMod.ActionImpl {
     def this(action: Action, options: ActionImplOptions) = this()
   }
   /* static members */
@@ -41,13 +41,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(action: Action, options: ActionImplOptions): typings.kbar.actionImplMod.ActionImpl = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kbar.actionImplMod.ActionImpl]
+    inline def create(action: Action, options: ActionImplOptions): typings.kbar.libActionActionImplMod.ActionImpl = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kbar.libActionActionImplMod.ActionImpl]
   }
   
   @JSImport("kbar", "ActionInterface")
   @js.native
   open class ActionInterface ()
-    extends typings.kbar.actionMod.ActionInterface {
+    extends typings.kbar.libActionMod.ActionInterface {
     def this(actions: js.Array[Action]) = this()
     def this(actions: js.Array[Action], options: ActionInterfaceOptions) = this()
     def this(actions: Unit, options: ActionInterfaceOptions) = this()
@@ -69,7 +69,7 @@ object mod {
   
   @JSImport("kbar", "KBarPositioner")
   @js.native
-  val KBarPositioner: FC[PropsWithChildren[typings.kbar.kbarpositionerMod.Props]] = js.native
+  val KBarPositioner: FC[PropsWithChildren[typings.kbar.libKbarpositionerMod.Props]] = js.native
   
   @JSImport("kbar", "KBarProvider")
   @js.native
@@ -125,15 +125,15 @@ object mod {
   object VisualState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.kbar.typesMod.VisualState & String] = js.native
+    def apply(value: String): js.UndefOr[typings.kbar.libTypesMod.VisualState & String] = js.native
     
-    /* "animating-in" */ val animatingIn: typings.kbar.typesMod.VisualState.animatingIn & String = js.native
+    /* "animating-in" */ val animatingIn: typings.kbar.libTypesMod.VisualState.animatingIn & String = js.native
     
-    /* "animating-out" */ val animatingOut: typings.kbar.typesMod.VisualState.animatingOut & String = js.native
+    /* "animating-out" */ val animatingOut: typings.kbar.libTypesMod.VisualState.animatingOut & String = js.native
     
-    /* "hidden" */ val hidden: typings.kbar.typesMod.VisualState.hidden & String = js.native
+    /* "hidden" */ val hidden: typings.kbar.libTypesMod.VisualState.hidden & String = js.native
     
-    /* "showing" */ val showing: typings.kbar.typesMod.VisualState.showing & String = js.native
+    /* "showing" */ val showing: typings.kbar.libTypesMod.VisualState.showing & String = js.native
   }
   
   inline def createAction(params: OmitActionid): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(params.asInstanceOf[js.Any]).asInstanceOf[Action]

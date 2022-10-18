@@ -80,19 +80,19 @@ trait ThinTexture extends StObject {
     * Define if the texture is a 2d array texture (webgl 2) or if false a 2d texture.
     */
   def is2DArray: Boolean = js.native
-  def is2DArray_=(value: Boolean): Unit = js.native
+  /* protected */ def is2DArray_=(value: Boolean): Unit = js.native
   
   /**
     * Define if the texture is a 3d texture (webgl 2) or if false a 2d texture.
     */
   def is3D: Boolean = js.native
-  def is3D_=(value: Boolean): Unit = js.native
+  /* protected */ def is3D_=(value: Boolean): Unit = js.native
   
   /**
     * Define if the texture is a cube texture or if false a 2d texture.
     */
   def isCube: Boolean = js.native
-  def isCube_=(value: Boolean): Unit = js.native
+  /* protected */ def isCube_=(value: Boolean): Unit = js.native
   
   /**
     * Get if the texture is ready to be used (downloaded, converted, mip mapped...).

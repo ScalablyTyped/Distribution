@@ -28,16 +28,16 @@ object AccessCache {
   }
   
   /** A list of the entries that are in your app's most recently used list (MRU) (obtained from the static StorageApplicationPermissions.MostRecentlyUsedList property) and in your app's future-access list (obtained from the static StorageApplicationPermissions.FutureAccessList property). */
-  @JSGlobal("Windows.Storage.AccessCache.AccessListEntryView")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.AccessCache.AccessListEntryView")
   @js.native
-  abstract class AccessListEntryView ()
+  open class AccessListEntryView ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.AccessCache.AccessListEntryView
   
   /** Provides data about an ItemRemoved event. */
-  @JSGlobal("Windows.Storage.AccessCache.ItemRemovedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.AccessCache.ItemRemovedEventArgs")
   @js.native
-  abstract class ItemRemovedEventArgs ()
+  open class ItemRemovedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.AccessCache.ItemRemovedEventArgs {
     
@@ -62,9 +62,9 @@ object AccessCache {
   }
   
   /** Provides static properties for you to get your app's most recently used list (MRU) (use StorageApplicationPermissions.MostRecentlyUsedList ) and future-access list (use StorageApplicationPermissions.FutureAccessList . */
-  @JSGlobal("Windows.Storage.AccessCache.StorageApplicationPermissions")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.AccessCache.StorageApplicationPermissions")
   @js.native
-  abstract class StorageApplicationPermissions ()
+  open class StorageApplicationPermissions ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.AccessCache.StorageApplicationPermissions
   object StorageApplicationPermissions {
@@ -89,16 +89,16 @@ object AccessCache {
   }
   
   /** Represents your app's future-access list (obtained from the static StorageApplicationPermissions.FutureAccessList property). By picking files and folders, your user grants your app permission to access items that might not be accessible otherwise. If you add these items to your future-access list then you'll retain that permission when your app wants to access those items again later. Items are stored in the future-access list as StorageFile and StorageFolder objects. */
-  @JSGlobal("Windows.Storage.AccessCache.StorageItemAccessList")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.AccessCache.StorageItemAccessList")
   @js.native
-  abstract class StorageItemAccessList ()
+  open class StorageItemAccessList ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.AccessCache.StorageItemAccessList
   
   /** Represents your app's most recently used list (MRU) (obtained from the static StorageApplicationPermissions.MostRecentlyUsedList property). You use your MRU to track items (files and/or folders) that the user has accessed most recently. Items are stored in the MRU as StorageFile and StorageFolder objects. */
-  @JSGlobal("Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList")
   @js.native
-  abstract class StorageItemMostRecentlyUsedList ()
+  open class StorageItemMostRecentlyUsedList ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList
 }

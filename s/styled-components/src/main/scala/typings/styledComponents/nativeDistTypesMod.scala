@@ -2,22 +2,17 @@ package typings.styledComponents
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.react.mod.ComponentProps
 import typings.react.mod.ComponentType
 import typings.react.mod.ExoticComponent
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributes
 import typings.std.Array
-import typings.std.InstanceType
 import typings.std.Omit
 import typings.std.Partial
-import typings.std.ReturnType
 import typings.std.TemplateStringsArray
 import typings.styledComponents.anon.AsAs
-import typings.styledComponents.anon.`175`
-import typings.styledComponents.modelsComponentStyleMod.default
-import typings.styledComponents.modelsThemeProviderMod.DefaultTheme
+import typings.styledComponents.anon.`176`
+import typings.styledComponents.nativeDistModelsThemeProviderMod.DefaultTheme
 import typings.styledComponents.styledComponentsStrings.$as
 import typings.styledComponents.styledComponentsStrings.as
 import typings.styledComponents.styledComponentsStrings.web
@@ -198,7 +193,11 @@ object nativeDistTypesMod {
        with IStyledStatics[R, Props] {
     
     @JSName("defaultProps")
-    var defaultProps_IStyledComponent: js.UndefOr[Partial[ExtensibleObject & (js.Object | ComponentProps[Target]) & Props]] = js.native
+    var defaultProps_IStyledComponent: js.UndefOr[
+        Partial[
+          ExtensibleObject & (/* import warning: importer.ImportType#apply Failed type conversion: Target extends styled-components.styled-components/native/dist/types.KnownTarget ? react.react.ComponentProps<Target> : {} */ js.Any) & Props
+        ]
+      ] = js.native
   }
   
   @js.native
@@ -211,22 +210,16 @@ object nativeDistTypesMod {
     extends StObject
        with CommonStatics[R, OuterProps] {
     
-    var componentStyle: default
+    var componentStyle: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? styled-components.styled-components/native/dist/models/ComponentStyle.default : never */ js.Any
     
-    var foldedComponentIds: js.Array[String]
+    var foldedComponentIds: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? std.Array<string> : never */ js.Any
     
-    var inlineStyle: InstanceType[IInlineStyleConstructor[OuterProps]]
+    var inlineStyle: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'native' ? std.InstanceType<styled-components.styled-components/native/dist/types.IInlineStyleConstructor<OuterProps>> : never */ js.Any
     
-    var styledComponentId: String
+    var styledComponentId: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? string : never */ js.Any
     
     var warnTooManyClasses: js.UndefOr[
-        ReturnType[
-          js.Function2[
-            /* displayName */ String, 
-            /* componentId */ String, 
-            js.Function1[/* className */ String, Unit]
-          ]
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? std.ReturnType<(displayName : string, componentId : string): (className : string): void> : never */ js.Any
       ] = js.undefined
     
     @JSName("withComponent")
@@ -236,10 +229,10 @@ object nativeDistTypesMod {
     
     inline def apply[R /* <: Runtime */, OuterProps /* <: js.Object */](
       attrs: js.Array[Attrs[OuterProps]],
-      componentStyle: default,
-      foldedComponentIds: js.Array[String],
-      inlineStyle: InstanceType[IInlineStyleConstructor[OuterProps]],
-      styledComponentId: String,
+      componentStyle: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? styled-components.styled-components/native/dist/models/ComponentStyle.default : never */ js.Any,
+      foldedComponentIds: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? std.Array<string> : never */ js.Any,
+      inlineStyle: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'native' ? std.InstanceType<styled-components.styled-components/native/dist/types.IInlineStyleConstructor<OuterProps>> : never */ js.Any,
+      styledComponentId: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? string : never */ js.Any,
       target: StyledTarget[R],
       withComponent: Any => IStyledComponent[R, Any, OuterProps & Any]
     ): IStyledStatics[R, OuterProps] = {
@@ -249,24 +242,24 @@ object nativeDistTypesMod {
     
     extension [Self <: IStyledStatics[?, ?], R /* <: Runtime */, OuterProps /* <: js.Object */](x: Self & (IStyledStatics[R, OuterProps])) {
       
-      inline def setComponentStyle(value: default): Self = StObject.set(x, "componentStyle", value.asInstanceOf[js.Any])
+      inline def setComponentStyle(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? styled-components.styled-components/native/dist/models/ComponentStyle.default : never */ js.Any
+      ): Self = StObject.set(x, "componentStyle", value.asInstanceOf[js.Any])
       
-      inline def setFoldedComponentIds(value: js.Array[String]): Self = StObject.set(x, "foldedComponentIds", value.asInstanceOf[js.Any])
+      inline def setFoldedComponentIds(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? std.Array<string> : never */ js.Any
+      ): Self = StObject.set(x, "foldedComponentIds", value.asInstanceOf[js.Any])
       
-      inline def setFoldedComponentIdsVarargs(value: String*): Self = StObject.set(x, "foldedComponentIds", js.Array(value*))
+      inline def setInlineStyle(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'native' ? std.InstanceType<styled-components.styled-components/native/dist/types.IInlineStyleConstructor<OuterProps>> : never */ js.Any
+      ): Self = StObject.set(x, "inlineStyle", value.asInstanceOf[js.Any])
       
-      inline def setInlineStyle(value: InstanceType[IInlineStyleConstructor[OuterProps]]): Self = StObject.set(x, "inlineStyle", value.asInstanceOf[js.Any])
-      
-      inline def setStyledComponentId(value: String): Self = StObject.set(x, "styledComponentId", value.asInstanceOf[js.Any])
+      inline def setStyledComponentId(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? string : never */ js.Any
+      ): Self = StObject.set(x, "styledComponentId", value.asInstanceOf[js.Any])
       
       inline def setWarnTooManyClasses(
-        value: ReturnType[
-              js.Function2[
-                /* displayName */ String, 
-                /* componentId */ String, 
-                js.Function1[/* className */ String, Unit]
-              ]
-            ]
+        value: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? std.ReturnType<(displayName : string, componentId : string): (className : string): void> : never */ js.Any
       ): Self = StObject.set(x, "warnTooManyClasses", value.asInstanceOf[js.Any])
       
       inline def setWarnTooManyClassesUndefined: Self = StObject.set(x, "warnTooManyClasses", js.undefined)
@@ -504,9 +497,15 @@ object nativeDistTypesMod {
   
   type NativeTarget = AnyComponent[Any]
   
-  type OmitNever[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T as T[K] extends never? never : K ]: T[K]}
-    */ typings.styledComponents.styledComponentsStrings.OmitNever & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T as T[K] extends never? never : K ]: T[K]}
+    }}}
+    */
+  @js.native
+  trait OmitNever[T] extends StObject
   
   @js.native
   trait PolymorphicComponent[R /* <: Runtime */, FallbackComponent /* <: StyledTarget[R] */, ExpectedProps /* <: js.Object */, PropsToBeInjectedIntoActualComponent /* <: js.Object */]
@@ -516,7 +515,7 @@ object nativeDistTypesMod {
   type PolymorphicComponentProps[R /* <: Runtime */, ActualComponent /* <: StyledTarget[R] */, PropsToBeInjectedIntoActualComponent /* <: js.Object */, ActualComponentProps] = ((AsAs[ActualComponent, R]) & HTMLAttributes[ActualComponent] & (Omit[
     PropsToBeInjectedIntoActualComponent, 
     (/* keyof ActualComponentProps */ String) | as | $as
-  ]) & ActualComponentProps) | ((`175`[ActualComponent, R]) & HTMLAttributes[ActualComponent] & (Omit[
+  ]) & ActualComponentProps) | ((`176`[ActualComponent, R]) & HTMLAttributes[ActualComponent] & (Omit[
     PropsToBeInjectedIntoActualComponent, 
     (/* keyof ActualComponentProps */ String) | as | $as
   ]) & ActualComponentProps)
@@ -587,11 +586,15 @@ object nativeDistTypesMod {
     
     var attrs: js.UndefOr[js.Array[Attrs[Props]]] = js.undefined
     
-    var componentId: js.UndefOr[String] = js.undefined
+    var componentId: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? string : never */ js.Any
+      ] = js.undefined
     
     var displayName: js.UndefOr[String] = js.undefined
     
-    var parentComponentId: js.UndefOr[String] = js.undefined
+    var parentComponentId: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? string : never */ js.Any
+      ] = js.undefined
     
     var shouldForwardProp: js.UndefOr[ShouldForwardProp[R]] = js.undefined
   }
@@ -610,7 +613,9 @@ object nativeDistTypesMod {
       
       inline def setAttrsVarargs(value: Attrs[Props]*): Self = StObject.set(x, "attrs", js.Array(value*))
       
-      inline def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
+      inline def setComponentId(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? string : never */ js.Any
+      ): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
       
       inline def setComponentIdUndefined: Self = StObject.set(x, "componentId", js.undefined)
       
@@ -618,7 +623,9 @@ object nativeDistTypesMod {
       
       inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      inline def setParentComponentId(value: String): Self = StObject.set(x, "parentComponentId", value.asInstanceOf[js.Any])
+      inline def setParentComponentId(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? string : never */ js.Any
+      ): Self = StObject.set(x, "parentComponentId", value.asInstanceOf[js.Any])
       
       inline def setParentComponentIdUndefined: Self = StObject.set(x, "parentComponentId", js.undefined)
       
@@ -628,7 +635,15 @@ object nativeDistTypesMod {
     }
   }
   
-  type StyledTarget[R /* <: Runtime */] = NativeTarget | WebTarget
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    R extends 'web' ? styled-components.styled-components/native/dist/types.WebTarget : styled-components.styled-components/native/dist/types.NativeTarget
+    }}}
+    */
+  @js.native
+  trait StyledTarget[R /* <: Runtime */] extends StObject
   
   type Styles[Props] = TemplateStringsArray | StyledObject[Props] | StyleFunction[Props]
   

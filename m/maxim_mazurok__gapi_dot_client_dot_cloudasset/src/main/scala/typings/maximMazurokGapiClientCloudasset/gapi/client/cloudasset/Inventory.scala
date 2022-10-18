@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait Inventory extends StObject {
     * change, when there is a new package version.
     */
   var items: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Item}
-    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Inventory & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Item} */ js.Any
   ] = js.undefined
   
   /** Output only. The `Inventory` API resource name. Format: `projects/{project_number}/locations/{location}/instances/{instance_id}/inventory` */
@@ -36,9 +33,7 @@ object Inventory {
   extension [Self <: Inventory](x: Self) {
     
     inline def setItems(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Item}
-      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Inventory & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Item} */ js.Any
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

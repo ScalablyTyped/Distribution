@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class MemoryRecord ()
   extends typings.yuka.mod.MemoryRecord {
-  def this(entity: typings.yuka.gameEntityMod.GameEntity) = this()
+  def this(entity: typings.yuka.srcCoreGameEntityMod.GameEntity) = this()
 }

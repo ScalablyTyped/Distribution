@@ -1,7 +1,7 @@
 package typings.blueprintjsTable.mod
 
 import typings.blueprintjsTable.anon.Truncated
-import typings.blueprintjsTable.cellMod.ICellProps
+import typings.blueprintjsTable.libEsmCellCellMod.ICellProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "Cell")
 @js.native
 open class Cell protected ()
-  extends typings.blueprintjsTable.cellMod.Cell {
+  extends typings.blueprintjsTable.libEsmCellCellMod.Cell {
   def this(props: ICellProps) = this()
   /**
     * @deprecated

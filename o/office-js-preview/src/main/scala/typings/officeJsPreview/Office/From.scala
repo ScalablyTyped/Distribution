@@ -31,7 +31,7 @@ trait From extends StObject {
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     * 
-    * **Important**: A `recipientType` property value isn't returned by the getAsync methods.
+    * **Important**: A `recipientType` property value isn't returned by the getAsync method.
     * The email sender is always a user whose email address is on the Exchange server.
     *
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
@@ -56,8 +56,8 @@ trait From extends StObject {
     *
     * **Important**: A `recipientType` property value isn't returned by the getAsync method.
     * The email sender is always a user whose email address is on the Exchange server.
-    *  
-    * @param options - An object literal that contains one or more of the following properties.
+    *
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                             `asyncResult`, which is an `Office.AsyncResult` object.

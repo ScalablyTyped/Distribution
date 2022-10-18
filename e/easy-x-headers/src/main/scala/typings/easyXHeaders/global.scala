@@ -249,7 +249,7 @@ object global {
          with typings.std.Date {
       def this(value: java.lang.String) = this()
       def this(value: js.Date) = this()
-      /* standard es2015.core */
+      /* standard es5 */
       def this(value: Double) = this()
       /* standard scripthost */
       def this(vd: VarDate) = this()
@@ -331,7 +331,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Error")
     @js.native
-    /* standard es2022.error */
+    /* standard es5 */
     open class Error ()
       extends StObject
          with typings.std.Error {
@@ -351,7 +351,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.EvalError")
     @js.native
-    /* standard es2022.error */
+    /* standard es5 */
     open class EvalError ()
       extends StObject
          with typings.std.Error {
@@ -531,7 +531,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.RangeError")
     @js.native
-    /* standard es2022.error */
+    /* standard es5 */
     open class RangeError ()
       extends StObject
          with typings.std.Error {
@@ -551,7 +551,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.ReferenceError")
     @js.native
-    /* standard es2022.error */
+    /* standard es5 */
     open class ReferenceError ()
       extends StObject
          with typings.std.Error {
@@ -575,7 +575,7 @@ object global {
       extends StObject
          with typings.std.RegExp {
       def this(pattern: java.lang.String) = this()
-      /* standard es2015.core */
+      /* standard es5 */
       def this(pattern: js.RegExp) = this()
       def this(pattern: java.lang.String, flags: java.lang.String) = this()
       def this(pattern: js.RegExp, flags: java.lang.String) = this()
@@ -604,7 +604,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.SyntaxError")
     @js.native
-    /* standard es2022.error */
+    /* standard es5 */
     open class SyntaxError ()
       extends StObject
          with typings.std.Error {
@@ -624,7 +624,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.TypeError")
     @js.native
-    /* standard es2022.error */
+    /* standard es5 */
     open class TypeError ()
       extends StObject
          with typings.std.Error {
@@ -644,7 +644,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.URIError")
     @js.native
-    /* standard es2022.error */
+    /* standard es5 */
     open class URIError ()
       extends StObject
          with typings.std.Error {

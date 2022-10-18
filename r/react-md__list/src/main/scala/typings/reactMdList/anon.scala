@@ -40,9 +40,6 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactMdList.getListItemHeightMod.ListItemHeight
-import typings.reactMdList.listItemAddonMod.ListItemAddonPosition
-import typings.reactMdList.listItemAddonMod.ListItemAddonType
 import typings.reactMdList.reactMdListStrings.`additions removals`
 import typings.reactMdList.reactMdListStrings.`additions text`
 import typings.reactMdList.reactMdListStrings.`inline`
@@ -93,9 +90,12 @@ import typings.reactMdList.reactMdListStrings.tree
 import typings.reactMdList.reactMdListStrings.url
 import typings.reactMdList.reactMdListStrings.vertical
 import typings.reactMdList.reactMdListStrings.yes
-import typings.reactMdStates.typesMod.MergableRippleHandlers
-import typings.reactMdTransition.typesMod.CSSTransitionClassNames
-import typings.reactMdTransition.typesMod.TransitionTimeout
+import typings.reactMdList.typesGetListItemHeightMod.ListItemHeight
+import typings.reactMdList.typesListItemAddonMod.ListItemAddonPosition
+import typings.reactMdList.typesListItemAddonMod.ListItemAddonType
+import typings.reactMdStates.typesRipplesTypesMod.MergableRippleHandlers
+import typings.reactMdTransition.typesTypesMod.CSSTransitionClassNames
+import typings.reactMdTransition.typesTypesMod.TransitionTimeout
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLAnchorElement

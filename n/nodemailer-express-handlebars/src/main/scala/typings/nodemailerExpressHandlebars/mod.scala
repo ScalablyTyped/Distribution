@@ -1,6 +1,6 @@
 package typings.nodemailerExpressHandlebars
 
-import typings.nodemailer.mailerMod.PluginFunction
+import typings.nodemailer.libMailerMod.PluginFunction
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,7 @@ object mod {
   
   @js.native
   trait HbsTransporter
-    extends typings.nodemailer.mailerMod.^[Any]
+    extends typings.nodemailer.libMailerMod.^[Any]
   
   trait NodemailerExpressHandlebarsOptions extends StObject {
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Discussionurl extends StObject {
   
-  var author: Avatarurl | Null
+  var author: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
   
   /**
     * @description The main text of the comment.
@@ -53,7 +53,9 @@ trait Discussionurl extends StObject {
     */
   var number: Double
   
-  var reactions: js.UndefOr[Confused] = js.undefined
+  var reactions: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['reaction-rollup'] */ js.Any
+  ] = js.undefined
   
   /**
     * Format: date-time
@@ -70,6 +72,7 @@ trait Discussionurl extends StObject {
 object Discussionurl {
   
   inline def apply(
+    author: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
     body: String,
     body_html: String,
     body_version: String,
@@ -81,15 +84,15 @@ object Discussionurl {
     updated_at: String,
     url: String
   ): Discussionurl = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], body_html = body_html.asInstanceOf[js.Any], body_version = body_version.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], discussion_url = discussion_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], author = null, last_edited_at = null)
+    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], body_html = body_html.asInstanceOf[js.Any], body_version = body_version.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], discussion_url = discussion_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], last_edited_at = null)
     __obj.asInstanceOf[Discussionurl]
   }
   
   extension [Self <: Discussionurl](x: Self) {
     
-    inline def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
-    
-    inline def setAuthorNull: Self = StObject.set(x, "author", null)
+    inline def setAuthor(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+    ): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
@@ -111,7 +114,9 @@ object Discussionurl {
     
     inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    inline def setReactions(value: Confused): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+    inline def setReactions(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['reaction-rollup'] */ js.Any
+    ): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
     inline def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
     

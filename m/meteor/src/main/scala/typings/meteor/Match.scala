@@ -2,7 +2,6 @@ package typings.meteor
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.BooleanConstructor
 import typings.std.FunctionConstructor
 import typings.std.NumberConstructor
@@ -35,7 +34,13 @@ object Match {
     StringConstructor | NumberConstructor | BooleanConstructor | ObjectConstructor | FunctionConstructor | (Instantiable1[/* args (repeated) */ Any, Any]) | Null | String | Double | Boolean | js.Array[Any] | StringDictionary[Any] | Matcher[Any]
   ]
   
-  type PatternMatch[T /* <: Pattern */] = Any | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: any}
-    */ typings.meteor.meteorStrings.PatternMatch & TopLevel[Any]) | js.Array[Any] | T | js.Function | Boolean | Double | String
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends meteor.Match.Matcher<infer U> ? U : T extends std.StringConstructor ? string : T extends std.NumberConstructor ? number : T extends std.BooleanConstructor ? boolean : T extends std.ObjectConstructor ? object : T extends std.FunctionConstructor ? std.Function : T extends undefined | null | string | number | boolean ? T : T extends new (args : ...any): infer U ? U : T extends [meteor.Match.Pattern] ? std.Array<meteor.Match.PatternMatch<T[0]>> : T extends {[key: string] : meteor.Match.Pattern} ? {[ K in keyof T ]: meteor.Match.PatternMatch<T[K]>} : unknown
+    }}}
+    */
+  @js.native
+  trait PatternMatch[T /* <: Pattern */] extends StObject
 }

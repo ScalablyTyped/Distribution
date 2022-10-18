@@ -3,43 +3,43 @@ package typings.reactQuery
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
 import typings.reactQuery.anon.OmitMutationFiltersmutati
-import typings.reactQuery.focusManagerMod.FocusManager_
-import typings.reactQuery.hydrateMod.HydrateProps
-import typings.reactQuery.hydrationMod.DehydrateOptions
-import typings.reactQuery.hydrationMod.DehydratedState
-import typings.reactQuery.hydrationMod.HydrateOptions
-import typings.reactQuery.loggerMod.Logger
-import typings.reactQuery.mutationCacheMod.MutationCacheConfig
-import typings.reactQuery.mutationMod.MutationConfig
-import typings.reactQuery.notifyManagerMod.NotifyManager_
-import typings.reactQuery.onlineManagerMod.OnlineManager_
-import typings.reactQuery.queryCacheMod.QueryCacheConfig
-import typings.reactQuery.queryClientProviderMod.QueryClientProviderProps
-import typings.reactQuery.queryErrorResetBoundaryMod.QueryErrorResetBoundaryProps
-import typings.reactQuery.queryErrorResetBoundaryMod.QueryErrorResetBoundaryValue
-import typings.reactQuery.queryMod.QueryConfig
 import typings.reactQuery.reactQueryStrings.mutationFn
 import typings.reactQuery.reactQueryStrings.mutationKey
 import typings.reactQuery.reactQueryStrings.queryFn
 import typings.reactQuery.reactQueryStrings.queryKey
-import typings.reactQuery.reactTypesMod.UseInfiniteQueryOptions
-import typings.reactQuery.reactTypesMod.UseInfiniteQueryResult
-import typings.reactQuery.reactTypesMod.UseMutationOptions
-import typings.reactQuery.reactTypesMod.UseMutationResult
-import typings.reactQuery.reactTypesMod.UseQueryOptions
-import typings.reactQuery.reactTypesMod.UseQueryResult
-import typings.reactQuery.typesMod.CancelOptions
-import typings.reactQuery.typesMod.InfiniteQueryObserverOptions
-import typings.reactQuery.typesMod.MutationFunction
-import typings.reactQuery.typesMod.MutationKey
-import typings.reactQuery.typesMod.MutationObserverOptions
-import typings.reactQuery.typesMod.QueryClientConfig
-import typings.reactQuery.typesMod.QueryFunction
-import typings.reactQuery.typesMod.QueryKey
-import typings.reactQuery.typesMod.QueryObserverOptions
-import typings.reactQuery.useQueriesMod.QueriesResults
-import typings.reactQuery.utilsMod.MutationFilters
-import typings.reactQuery.utilsMod.QueryFilters
+import typings.reactQuery.typesCoreFocusManagerMod.FocusManager_
+import typings.reactQuery.typesCoreHydrationMod.DehydrateOptions
+import typings.reactQuery.typesCoreHydrationMod.DehydratedState
+import typings.reactQuery.typesCoreHydrationMod.HydrateOptions
+import typings.reactQuery.typesCoreLoggerMod.Logger
+import typings.reactQuery.typesCoreMutationCacheMod.MutationCacheConfig
+import typings.reactQuery.typesCoreMutationMod.MutationConfig
+import typings.reactQuery.typesCoreNotifyManagerMod.NotifyManager_
+import typings.reactQuery.typesCoreOnlineManagerMod.OnlineManager_
+import typings.reactQuery.typesCoreQueryCacheMod.QueryCacheConfig
+import typings.reactQuery.typesCoreQueryMod.QueryConfig
+import typings.reactQuery.typesCoreTypesMod.CancelOptions
+import typings.reactQuery.typesCoreTypesMod.InfiniteQueryObserverOptions
+import typings.reactQuery.typesCoreTypesMod.MutationFunction
+import typings.reactQuery.typesCoreTypesMod.MutationKey
+import typings.reactQuery.typesCoreTypesMod.MutationObserverOptions
+import typings.reactQuery.typesCoreTypesMod.QueryClientConfig
+import typings.reactQuery.typesCoreTypesMod.QueryFunction
+import typings.reactQuery.typesCoreTypesMod.QueryKey
+import typings.reactQuery.typesCoreTypesMod.QueryObserverOptions
+import typings.reactQuery.typesCoreUtilsMod.MutationFilters
+import typings.reactQuery.typesCoreUtilsMod.QueryFilters
+import typings.reactQuery.typesReactHydrateMod.HydrateProps
+import typings.reactQuery.typesReactQueryClientProviderMod.QueryClientProviderProps
+import typings.reactQuery.typesReactQueryErrorResetBoundaryMod.QueryErrorResetBoundaryProps
+import typings.reactQuery.typesReactQueryErrorResetBoundaryMod.QueryErrorResetBoundaryValue
+import typings.reactQuery.typesReactTypesMod.UseInfiniteQueryOptions
+import typings.reactQuery.typesReactTypesMod.UseInfiniteQueryResult
+import typings.reactQuery.typesReactTypesMod.UseMutationOptions
+import typings.reactQuery.typesReactTypesMod.UseMutationResult
+import typings.reactQuery.typesReactTypesMod.UseQueryOptions
+import typings.reactQuery.typesReactTypesMod.UseQueryResult
+import typings.reactQuery.typesReactUseQueriesMod.QueriesResults
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -54,7 +54,7 @@ object mod {
   @JSImport("react-query", "CancelledError")
   @js.native
   open class CancelledError ()
-    extends typings.reactQuery.coreMod.CancelledError {
+    extends typings.reactQuery.typesCoreMod.CancelledError {
     def this(options: CancelOptions) = this()
   }
   
@@ -63,9 +63,9 @@ object mod {
   @JSImport("react-query", "InfiniteQueryObserver")
   @js.native
   open class InfiniteQueryObserver[TQueryFnData, TError, TData, TQueryData] protected ()
-    extends typings.reactQuery.coreMod.InfiniteQueryObserver[TQueryFnData, TError, TData, TQueryData] {
+    extends typings.reactQuery.typesCoreMod.InfiniteQueryObserver[TQueryFnData, TError, TData, TQueryData] {
     def this(
-      client: typings.reactQuery.queryClientMod.QueryClient,
+      client: typings.reactQuery.typesCoreQueryClientMod.QueryClient,
       options: InfiniteQueryObserverOptions[TQueryFnData, TError, TData, TQueryData, QueryKey]
     ) = this()
   }
@@ -73,23 +73,23 @@ object mod {
   @JSImport("react-query", "Mutation")
   @js.native
   open class Mutation[TData, TError, TVariables, TContext] protected ()
-    extends typings.reactQuery.coreMod.Mutation[TData, TError, TVariables, TContext] {
+    extends typings.reactQuery.typesCoreMod.Mutation[TData, TError, TVariables, TContext] {
     def this(config: MutationConfig[TData, TError, TVariables, TContext]) = this()
   }
   
   @JSImport("react-query", "MutationCache")
   @js.native
   open class MutationCache ()
-    extends typings.reactQuery.coreMod.MutationCache {
+    extends typings.reactQuery.typesCoreMod.MutationCache {
     def this(config: MutationCacheConfig) = this()
   }
   
   @JSImport("react-query", "MutationObserver")
   @js.native
   open class MutationObserver[TData, TError, TVariables, TContext] protected ()
-    extends typings.reactQuery.coreMod.MutationObserver[TData, TError, TVariables, TContext] {
+    extends typings.reactQuery.typesCoreMod.MutationObserver[TData, TError, TVariables, TContext] {
     def this(
-      client: typings.reactQuery.queryClientMod.QueryClient,
+      client: typings.reactQuery.typesCoreQueryClientMod.QueryClient,
       options: MutationObserverOptions[TData, TError, TVariables, TContext]
     ) = this()
   }
@@ -97,10 +97,10 @@ object mod {
   @JSImport("react-query", "QueriesObserver")
   @js.native
   open class QueriesObserver protected ()
-    extends typings.reactQuery.coreMod.QueriesObserver {
-    def this(client: typings.reactQuery.queryClientMod.QueryClient) = this()
+    extends typings.reactQuery.typesCoreMod.QueriesObserver {
+    def this(client: typings.reactQuery.typesCoreQueryClientMod.QueryClient) = this()
     def this(
-      client: typings.reactQuery.queryClientMod.QueryClient,
+      client: typings.reactQuery.typesCoreQueryClientMod.QueryClient,
       queries: js.Array[QueryObserverOptions[Any, Any, Any, Any, QueryKey]]
     ) = this()
   }
@@ -108,21 +108,21 @@ object mod {
   @JSImport("react-query", "Query")
   @js.native
   open class Query[TQueryFnData, TError, TData, TQueryKey /* <: QueryKey */] protected ()
-    extends typings.reactQuery.coreMod.Query[TQueryFnData, TError, TData, TQueryKey] {
+    extends typings.reactQuery.typesCoreMod.Query[TQueryFnData, TError, TData, TQueryKey] {
     def this(config: QueryConfig[TQueryFnData, TError, TData, TQueryKey]) = this()
   }
   
   @JSImport("react-query", "QueryCache")
   @js.native
   open class QueryCache ()
-    extends typings.reactQuery.coreMod.QueryCache {
+    extends typings.reactQuery.typesCoreMod.QueryCache {
     def this(config: QueryCacheConfig) = this()
   }
   
   @JSImport("react-query", "QueryClient")
   @js.native
   open class QueryClient ()
-    extends typings.reactQuery.coreMod.QueryClient {
+    extends typings.reactQuery.typesCoreMod.QueryClient {
     def this(config: QueryClientConfig) = this()
   }
   
@@ -133,15 +133,15 @@ object mod {
   @JSImport("react-query", "QueryObserver")
   @js.native
   open class QueryObserver[TQueryFnData, TError, TData, TQueryData, TQueryKey /* <: QueryKey */] protected ()
-    extends typings.reactQuery.coreMod.QueryObserver[TQueryFnData, TError, TData, TQueryData, TQueryKey] {
+    extends typings.reactQuery.typesCoreMod.QueryObserver[TQueryFnData, TError, TData, TQueryData, TQueryKey] {
     def this(
-      client: typings.reactQuery.queryClientMod.QueryClient,
+      client: typings.reactQuery.typesCoreQueryClientMod.QueryClient,
       options: QueryObserverOptions[TQueryFnData, TError, TData, TQueryData, TQueryKey]
     ) = this()
   }
   
-  inline def dehydrate(client: typings.reactQuery.queryClientMod.QueryClient): DehydratedState = ^.asInstanceOf[js.Dynamic].applyDynamic("dehydrate")(client.asInstanceOf[js.Any]).asInstanceOf[DehydratedState]
-  inline def dehydrate(client: typings.reactQuery.queryClientMod.QueryClient, options: DehydrateOptions): DehydratedState = (^.asInstanceOf[js.Dynamic].applyDynamic("dehydrate")(client.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DehydratedState]
+  inline def dehydrate(client: typings.reactQuery.typesCoreQueryClientMod.QueryClient): DehydratedState = ^.asInstanceOf[js.Dynamic].applyDynamic("dehydrate")(client.asInstanceOf[js.Any]).asInstanceOf[DehydratedState]
+  inline def dehydrate(client: typings.reactQuery.typesCoreQueryClientMod.QueryClient, options: DehydrateOptions): DehydratedState = (^.asInstanceOf[js.Dynamic].applyDynamic("dehydrate")(client.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DehydratedState]
   
   @JSImport("react-query", "focusManager")
   @js.native
@@ -149,9 +149,9 @@ object mod {
   
   inline def hashQueryKey(queryKey: QueryKey): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashQueryKey")(queryKey.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def hydrate(client: typings.reactQuery.queryClientMod.QueryClient, dehydratedState: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hydrate")(client.asInstanceOf[js.Any], dehydratedState.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hydrate(client: typings.reactQuery.typesCoreQueryClientMod.QueryClient, dehydratedState: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hydrate")(client.asInstanceOf[js.Any], dehydratedState.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def hydrate(
-    client: typings.reactQuery.queryClientMod.QueryClient,
+    client: typings.reactQuery.typesCoreQueryClientMod.QueryClient,
     dehydratedState: Any,
     options: HydrateOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hydrate")(client.asInstanceOf[js.Any], dehydratedState.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -248,8 +248,8 @@ object mod {
   ): UseMutationResult[TData, TError, TVariables, TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("useMutation")(mutationKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UseMutationResult[TData, TError, TVariables, TContext]]
   
   inline def useQueries[T /* <: js.Array[Any] */](
-    queries: /* import warning: importer.ImportType#apply c repeated non-array type: []['length'] extends react-query.react-query/types/react/useQueries.MAXIMUM_DEPTH ? std.Array<react-query.react-query/types/react/types.UseQueryOptions<unknown, unknown, unknown, react-query.react-query/types/core/types.QueryKey>> : T extends [] ? [] : T extends [infer Head] ? [...[], react-query.react-query/types/react/useQueries.GetOptions<any>] : T extends [infer Head, ...infer Tail] ? any : std.Array<unknown> extends T ? T : T extends std.Array<react-query.react-query/types/react/types.UseQueryOptions<infer TQueryFnData, infer TError, infer TData, infer TQueryKey>> ? std.Array<react-query.react-query/types/react/types.UseQueryOptions<any, any, any, any>> : std.Array<react-query.react-query/types/react/types.UseQueryOptions<unknown, unknown, unknown, react-query.react-query/types/core/types.QueryKey>> */ js.Array[
-      (js.Array[Any | js.Array[Any] | (UseQueryOptions[Any, Any, Any, Any | QueryKey])]) | T
+    queries: /* import warning: importer.ImportType#apply c repeated non-array type: []['length'] extends react-query.react-query/types/react/useQueries.MAXIMUM_DEPTH ? std.Array<react-query.react-query/types/react/types.UseQueryOptions<unknown, unknown, unknown, react-query.react-query/types/core/types.QueryKey>> : T extends [] ? [] : T extends [infer Head] ? [...[], react-query.react-query/types/react/useQueries.GetOptions<Head>] : T extends [infer Head, ...infer Tail] ? react-query.react-query/types/react/useQueries.QueriesOptions<[...Tail], [...[], react-query.react-query/types/react/useQueries.GetOptions<Head>], [...[], 1]> : std.Array<unknown> extends T ? T : T extends std.Array<react-query.react-query/types/react/types.UseQueryOptions<infer TQueryFnData, infer TError, infer TData, infer TQueryKey>> ? std.Array<react-query.react-query/types/react/types.UseQueryOptions<TQueryFnData, TError, TData, TQueryKey>> : std.Array<react-query.react-query/types/react/types.UseQueryOptions<unknown, unknown, unknown, react-query.react-query/types/core/types.QueryKey>> */ js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: []['length'] extends react-query.react-query/types/react/useQueries.MAXIMUM_DEPTH ? std.Array<react-query.react-query/types/react/types.UseQueryOptions<unknown, unknown, unknown, react-query.react-query/types/core/types.QueryKey>> : T extends [] ? [] : T extends [infer Head] ? [...[], react-query.react-query/types/react/useQueries.GetOptions<Head>] : T extends [infer Head, ...infer Tail] ? react-query.react-query/types/react/useQueries.QueriesOptions<[...Tail], [...[], react-query.react-query/types/react/useQueries.GetOptions<Head>], [...[], 1]> : std.Array<unknown> extends T ? T : T extends std.Array<react-query.react-query/types/react/types.UseQueryOptions<infer TQueryFnData, infer TError, infer TData, infer TQueryKey>> ? std.Array<react-query.react-query/types/react/types.UseQueryOptions<TQueryFnData, TError, TData, TQueryKey>> : std.Array<react-query.react-query/types/react/types.UseQueryOptions<unknown, unknown, unknown, react-query.react-query/types/core/types.QueryKey>> */ js.Any
     ]
   ): QueriesResults[T, js.Array[Any], js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueries")(queries.asInstanceOf[js.Any]).asInstanceOf[QueriesResults[T, js.Array[Any], js.Array[Any]]]
   
@@ -269,7 +269,7 @@ object mod {
   ): UseQueryResult[TData, TError] = (^.asInstanceOf[js.Dynamic].applyDynamic("useQuery")(queryKey.asInstanceOf[js.Any], queryFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UseQueryResult[TData, TError]]
   inline def useQuery[TQueryFnData, TError, TData, TQueryKey /* <: QueryKey */](options: UseQueryOptions[TQueryFnData, TError, TData, TQueryKey]): UseQueryResult[TData, TError] = ^.asInstanceOf[js.Dynamic].applyDynamic("useQuery")(options.asInstanceOf[js.Any]).asInstanceOf[UseQueryResult[TData, TError]]
   
-  inline def useQueryClient(): typings.reactQuery.coreMod.QueryClient = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueryClient")().asInstanceOf[typings.reactQuery.coreMod.QueryClient]
+  inline def useQueryClient(): typings.reactQuery.typesCoreMod.QueryClient = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueryClient")().asInstanceOf[typings.reactQuery.typesCoreMod.QueryClient]
   
   inline def useQueryErrorResetBoundary(): QueryErrorResetBoundaryValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueryErrorResetBoundary")().asInstanceOf[QueryErrorResetBoundaryValue]
   

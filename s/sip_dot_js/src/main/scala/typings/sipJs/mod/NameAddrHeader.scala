@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "NameAddrHeader")
 @js.native
 open class NameAddrHeader protected ()
-  extends typings.sipJs.grammarMod.NameAddrHeader {
+  extends typings.sipJs.libGrammarMod.NameAddrHeader {
   /**
     * Constructor
     * @param uri -
     * @param displayName -
     * @param parameters -
     */
-  def this(uri: typings.sipJs.uriMod.URI, displayName: String, parameters: StringDictionary[String]) = this()
+  def this(uri: typings.sipJs.libGrammarUriMod.URI, displayName: String, parameters: StringDictionary[String]) = this()
 }

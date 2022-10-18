@@ -1,6 +1,6 @@
 package typings.tsEssentials
 
-import typings.tsEssentials.typesMod.Exact
+import typings.tsEssentials.distTypesMod.Exact
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object mod {
   @JSImport("ts-essentials", "UnreachableCaseError")
   @js.native
   open class UnreachableCaseError protected ()
-    extends typings.tsEssentials.functionsMod.UnreachableCaseError {
+    extends typings.tsEssentials.distFunctionsMod.UnreachableCaseError {
     def this(value: scala.Nothing) = this()
   }
   

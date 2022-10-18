@@ -13,14 +13,14 @@ trait DecryptResultdataUint8Arr extends StObject {
   
   var filename: String
   
-  var signatures: js.Array[Valid]
+  var signatures: js.Array[Keyid]
 }
 object DecryptResultdataUint8Arr {
   
   inline def apply(
     data: (String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array) & (js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] | NodeStream),
     filename: String,
-    signatures: js.Array[Valid]
+    signatures: js.Array[Keyid]
   ): DecryptResultdataUint8Arr = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptResultdataUint8Arr]
@@ -34,8 +34,8 @@ object DecryptResultdataUint8Arr {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    inline def setSignatures(value: js.Array[Valid]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+    inline def setSignatures(value: js.Array[Keyid]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
-    inline def setSignaturesVarargs(value: Valid*): Self = StObject.set(x, "signatures", js.Array(value*))
+    inline def setSignaturesVarargs(value: Keyid*): Self = StObject.set(x, "signatures", js.Array(value*))
   }
 }

@@ -8,9 +8,9 @@ import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.Application
 import typings.node.httpsMod.Server
-import typings.node.nodeHttpMod.IncomingMessage
-import typings.node.nodeHttpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonhttpMod.IncomingMessage
+import typings.node.nodeColonhttpMod.ServerResponse
+import typings.node.nodeColonnetMod.Socket
 import typings.nodeRedRuntime.mod.LocalSettings
 import typings.nodeRedRuntime.mod.RuntimeModule
 import typings.nodeRedRuntime.mod.StorageModule

@@ -32,5 +32,5 @@ object RingGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.ringGeometryMod.RingGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.ringGeometryMod.RingGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesRingGeometryMod.RingGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesRingGeometryMod.RingGeometry]
 }

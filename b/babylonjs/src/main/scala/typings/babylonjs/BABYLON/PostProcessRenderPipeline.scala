@@ -40,9 +40,9 @@ trait PostProcessRenderPipeline extends StObject {
   /** @internal */
   def _rebuild(): Unit = js.native
   
-  /* private */ var _renderEffects: Any = js.native
+  /* protected */ var _renderEffects: org.scalablytyped.runtime.StringDictionary[PostProcessRenderEffect] = js.native
   
-  /* private */ var _renderEffectsForIsolatedPass: Any = js.native
+  /* protected */ var _renderEffectsForIsolatedPass: js.Array[PostProcessRenderEffect] = js.native
   
   /** @internal */
   def _reset(): Unit = js.native

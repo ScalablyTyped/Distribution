@@ -7,19 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `200404500` extends StObject {
   
   /** Response */
-  var `200`: Content218
+  var `200`: ContentApplicationjsonBasecommit
   
-  var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+  var `404`: Content6
   
-  var `500`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['internal_error'] */ js.Any
+  var `500`: Content6
 }
 object `200404500` {
   
-  inline def apply(
-    `200`: Content218,
-    `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any,
-    `500`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['internal_error'] */ js.Any
-  ): `200404500` = {
+  inline def apply(`200`: ContentApplicationjsonBasecommit, `404`: Content6, `500`: Content6): `200404500` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
@@ -29,14 +25,10 @@ object `200404500` {
   
   extension [Self <: `200404500`](x: Self) {
     
-    inline def set200(value: Content218): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: ContentApplicationjsonBasecommit): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set404(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
-    ): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content6): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set500(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['internal_error'] */ js.Any
-    ): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
+    inline def set500(value: Content6): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,5 @@
 package typings.ariClient.mod
 
-import typings.ariClient.anon.DeviceStateString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,11 +51,11 @@ trait DeviceState
     *
     * @param params.deviceState - Device state value.
     */
-  def update(params: DeviceStateString): js.Promise[Unit] = js.native
+  def update(params: typings.ariClient.anon.DeviceState): js.Promise[Unit] = js.native
   /**
     * Change the state of a device controlled by ARI. (Note - implicitly creates the device state).
     *
     * @param params.deviceState - Device state value.
     */
-  def update(params: DeviceStateString, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def update(params: typings.ariClient.anon.DeviceState, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }

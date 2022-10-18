@@ -1,7 +1,7 @@
 
 # Scala.js typings for datastore-core
 
-Typings are for version 1.1
+Typings are for version 8.0.2
 
 ## Library description:
 Wrapper implementation for interface-datastore
@@ -9,11 +9,11 @@ Wrapper implementation for interface-datastore
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | datastore-core |
-| Keywords           | interface, key-value, ipfs, datastore |
-| # releases         | 6 |
-| # dependents       | 20 |
-| # downloads        | 401687 |
-| # stars            | 0 |
+| Keywords           | datastore, interface, ipfs, key-value |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 81671.66666666667 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-datastore-core#readme)
@@ -24,7 +24,7 @@ Wrapper implementation for interface-datastore
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

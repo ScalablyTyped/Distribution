@@ -1,6 +1,6 @@
 package typings.oidcProvider.mod
 
-import typings.oidcProvider.anon.Cookie
+import typings.oidcProvider.anon.Acr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +35,7 @@ trait Interaction
   
   var returnTo: String = js.native
   
-  var session: js.UndefOr[Cookie] = js.native
+  var session: js.UndefOr[Acr] = js.native
   
   var trusted: js.UndefOr[js.Array[String]] = js.native
   

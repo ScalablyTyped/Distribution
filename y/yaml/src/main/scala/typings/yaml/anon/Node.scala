@@ -8,7 +8,7 @@ trait Node extends StObject {
   
   var anchor: String | Null
   
-  var node: typings.yaml.nodeMod.Node[Any] | Null
+  var node: typings.yaml.distNodesNodeMod.Node[Any] | Null
 }
 object Node {
   
@@ -23,7 +23,7 @@ object Node {
     
     inline def setAnchorNull: Self = StObject.set(x, "anchor", null)
     
-    inline def setNode(value: typings.yaml.nodeMod.Node[Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: typings.yaml.distNodesNodeMod.Node[Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     inline def setNodeNull: Self = StObject.set(x, "node", null)
   }

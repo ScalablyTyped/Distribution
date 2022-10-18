@@ -6,7 +6,7 @@ import typings.ioTs.mod.ExactC
 import typings.ioTs.mod.ReadonlyC
 import typings.ioTs.mod.StringC
 import typings.ioTs.mod.TypeC
-import typings.testcafeReporterDashboard.commonMod.MaxLengthString
+import typings.testcafeReporterDashboard.libTypesCommonMod.MaxLengthString
 import typings.testcafeReporterDashboard.testcafeReporterDashboardInts.`300`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

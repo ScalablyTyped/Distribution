@@ -13,7 +13,6 @@ import typings.bluebird.mod.Resolvable
 import typings.bluebird.mod.SpreadOption
 import typings.std.Map
 import typings.std.PromiseLike
-import typings.std.ReturnType
 import typings.waterline.anon.Limit
 import typings.waterline.waterlineStrings.Object
 import org.scalablytyped.runtime.StObject
@@ -78,9 +77,7 @@ trait QueryBuilder[T] extends StObject {
     * </code>
     */
   def call[U /* <: /* keyof Q */ String */, Q](propertyName: U, args: Any*): Bluebird[
-    ReturnType[
-      /* import warning: importer.ImportType#apply Failed type conversion: Q[U] */ js.Any
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: Q[U] extends (args : ...any): any ? std.ReturnType<Q[U]> : never */ js.Any
   ] = js.native
   
   /**

@@ -5375,49 +5375,96 @@ object dxDataGrid {
   trait Scrollable extends StObject {
     
     @JSName("$element")
-    var $element: js.Function0[UserDefinedElement[Element]]
+    def $element(): UserDefinedElement[Element]
+    @JSName("$element")
+    var $element_Original: js.Function0[UserDefinedElement[Element]]
     
-    var beginUpdate: js.Function0[Unit]
+    def beginUpdate(): Unit
+    @JSName("beginUpdate")
+    var beginUpdate_Original: js.Function0[Unit]
     
-    var clientHeight: js.Function0[Double]
+    def clientHeight(): Double
+    @JSName("clientHeight")
+    var clientHeight_Original: js.Function0[Double]
     
-    var clientWidth: js.Function0[Double]
+    def clientWidth(): Double
+    @JSName("clientWidth")
+    var clientWidth_Original: js.Function0[Double]
     
-    var content: js.Function0[DxElement_[HTMLElement]]
+    def content(): DxElement_[HTMLElement]
+    @JSName("content")
+    var content_Original: js.Function0[DxElement_[HTMLElement]]
     
-    var dispose: js.Function0[Unit]
+    def dispose(): Unit
+    @JSName("dispose")
+    var dispose_Original: js.Function0[Unit]
     
-    var element: js.Function0[DxElement_[HTMLElement]]
+    def element(): DxElement_[HTMLElement]
+    @JSName("element")
+    var element_Original: js.Function0[DxElement_[HTMLElement]]
     
-    var endUpdate: js.Function0[Unit]
+    def endUpdate(): Unit
+    @JSName("endUpdate")
+    var endUpdate_Original: js.Function0[Unit]
     
-    var instance: js.Function0[this.type]
+    def instance(): this.type
+    @JSName("instance")
+    var instance_Original: js.Function0[this.type]
     
-    var off: js.Function1[/* eventName */ String, this.type]
+    def off(eventName: String): this.type
+    @JSName("off")
+    var off_Original: js.Function1[/* eventName */ String, this.type]
     
-    var on: js.Function2[/* eventName */ String, /* eventHandler */ js.Function, this.type]
+    def on(eventName: String, eventHandler: js.Function): this.type
+    @JSName("on")
+    var on_Original: js.Function2[/* eventName */ String, /* eventHandler */ js.Function, this.type]
     
-    var option: js.Function0[typings.devextreme.mod.DevExpress.ui.dxScrollable.Properties]
+    def option(): typings.devextreme.mod.DevExpress.ui.dxScrollable.Properties
+    @JSName("option")
+    var option_Original: js.Function0[typings.devextreme.mod.DevExpress.ui.dxScrollable.Properties]
     
-    var resetOption: js.Function1[/* optionName */ String, Unit]
+    def resetOption(optionName: String): Unit
+    @JSName("resetOption")
+    var resetOption_Original: js.Function1[/* optionName */ String, Unit]
     
-    var scrollBy: js.Function1[/* distance */ Double | Any, Unit]
+    def scrollBy(distance: Any): Unit
+    def scrollBy(distance: Double): Unit
+    @JSName("scrollBy")
+    var scrollBy_Original: js.Function1[/* distance */ Double | Any, Unit]
     
-    var scrollHeight: js.Function0[Double]
+    def scrollHeight(): Double
+    @JSName("scrollHeight")
+    var scrollHeight_Original: js.Function0[Double]
     
-    var scrollLeft: js.Function0[Double]
+    def scrollLeft(): Double
+    @JSName("scrollLeft")
+    var scrollLeft_Original: js.Function0[Double]
     
-    var scrollOffset: js.Function0[Any]
+    def scrollOffset(): Any
+    @JSName("scrollOffset")
+    var scrollOffset_Original: js.Function0[Any]
     
-    var scrollTo: js.Function1[/* targetLocation */ Double | Any, Unit]
+    def scrollTo(targetLocation: Any): Unit
+    def scrollTo(targetLocation: Double): Unit
     
-    var scrollToElement: js.Function1[/* element */ UserDefinedElement[Element], Unit]
+    def scrollToElement(element: UserDefinedElement[Element]): Unit
+    @JSName("scrollToElement")
+    var scrollToElement_Original: js.Function1[/* element */ UserDefinedElement[Element], Unit]
     
-    var scrollTop: js.Function0[Double]
+    @JSName("scrollTo")
+    var scrollTo_Original: js.Function1[/* targetLocation */ Double | Any, Unit]
     
-    var scrollWidth: js.Function0[Double]
+    def scrollTop(): Double
+    @JSName("scrollTop")
+    var scrollTop_Original: js.Function0[Double]
     
-    var update: js.Function0[DxPromise[Unit]]
+    def scrollWidth(): Double
+    @JSName("scrollWidth")
+    var scrollWidth_Original: js.Function0[Double]
+    
+    def update(): DxPromise[Unit]
+    @JSName("update")
+    var update_Original: js.Function0[DxPromise[Unit]]
   }
   object Scrollable {
     

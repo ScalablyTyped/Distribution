@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object simpleOauth2Strings {
   
   @js.native
-  sealed trait AuthorizationCode extends StObject
-  inline def AuthorizationCode: AuthorizationCode = "AuthorizationCode".asInstanceOf[AuthorizationCode]
-  
-  @js.native
   sealed trait access_token
     extends StObject
        with TokenType

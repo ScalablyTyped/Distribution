@@ -1,17 +1,16 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.anon.Style
+import typings.materialUiCore.anon.Ref
+import typings.materialUiCore.internalSwitchBaseMod.SwitchBaseProps
 import typings.materialUiCore.materialUiCoreStrings.default
 import typings.materialUiCore.materialUiCoreStrings.medium
 import typings.materialUiCore.materialUiCoreStrings.primary
 import typings.materialUiCore.materialUiCoreStrings.secondary
 import typings.materialUiCore.materialUiCoreStrings.small
-import typings.materialUiCore.switchBaseMod.SwitchBaseProps
 import typings.materialUiStyles.withStylesWithStylesMod.StyledComponentProps
 import typings.react.mod.ChangeEvent
 import typings.react.mod.InputHTMLAttributes
 import typings.react.mod.ReactNode
-import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -57,7 +56,7 @@ object checkboxCheckboxMod {
   - Dropped @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseProps extends any ? std.Pick<@material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseProps, std.Exclude<keyof @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseProps, 'classes' | 'checkedIcon' | 'color' | 'icon' | 'type'>> : never */ trait CheckboxProps
     extends StObject
        with StyledComponentProps[CheckboxClassKey]
-       with Style[SwitchBaseProps] {
+       with Ref[SwitchBaseProps] {
     
     /**
       * If `true`, the component is checked.
@@ -115,7 +114,7 @@ object checkboxCheckboxMod {
     /**
       * Pass a ref to the `input` element.
       */
-    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
+    var inputRef: js.UndefOr[typings.react.mod.Ref[HTMLInputElement]] = js.undefined
     
     /**
       * Callback fired when the state is changed.
@@ -193,7 +192,7 @@ object checkboxCheckboxMod {
       
       inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
-      inline def setInputRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      inline def setInputRef(value: typings.react.mod.Ref[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
       
       inline def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       

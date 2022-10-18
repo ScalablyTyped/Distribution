@@ -1,6 +1,6 @@
 package typings.angularUiRouter.mod
 
-import typings.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
+import typings.uirouterCore.libParamsInterfaceMod.ParamTypeDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

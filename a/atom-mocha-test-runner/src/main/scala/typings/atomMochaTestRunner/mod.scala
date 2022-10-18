@@ -1,7 +1,7 @@
 package typings.atomMochaTestRunner
 
 import org.scalablytyped.runtime.Shortcut
-import typings.atom.mod.TestRunner
+import typings.atom.srcOtherTypesMod.TestRunner
 import typings.mocha.Mocha
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -59,7 +59,7 @@ object mod extends Shortcut {
       
       inline def setTestSuffixesUndefined: Self = StObject.set(x, "testSuffixes", js.undefined)
       
-      inline def setTestSuffixesVarargs(value: String*): Self = StObject.set(x, "testSuffixes", js.Array(value :_*))
+      inline def setTestSuffixesVarargs(value: String*): Self = StObject.set(x, "testSuffixes", js.Array(value*))
     }
   }
   

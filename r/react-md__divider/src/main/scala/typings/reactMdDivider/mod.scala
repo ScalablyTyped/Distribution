@@ -2,11 +2,11 @@ package typings.reactMdDivider
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdDivider.dividerMod.DividerElement
-import typings.reactMdDivider.dividerMod.DividerProps
-import typings.reactMdDivider.useVerticalDividerHeightMod.VerticalDividerHeight
-import typings.reactMdDivider.useVerticalDividerHeightMod.VerticalDividerHookOptions
-import typings.reactMdDivider.verticalDividerMod.VerticalDividerProps
+import typings.reactMdDivider.typesDividerMod.DividerElement
+import typings.reactMdDivider.typesDividerMod.DividerProps
+import typings.reactMdDivider.typesUseVerticalDividerHeightMod.VerticalDividerHeight
+import typings.reactMdDivider.typesUseVerticalDividerHeightMod.VerticalDividerHookOptions
+import typings.reactMdDivider.typesVerticalDividerMod.VerticalDividerProps
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject

@@ -6,23 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `78` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['organization-dependabot-secret'] */ js.Any
+  var content: ApplicationjsonActionscaches
 }
 object `78` {
   
-  inline def apply(
-    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['organization-dependabot-secret'] */ js.Any
-  ): `78` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+  inline def apply(content: ApplicationjsonActionscaches): `78` = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[`78`]
   }
   
   extension [Self <: `78`](x: Self) {
     
-    inline def setApplicationSlashjson(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['organization-dependabot-secret'] */ js.Any
-    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setContent(value: ApplicationjsonActionscaches): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

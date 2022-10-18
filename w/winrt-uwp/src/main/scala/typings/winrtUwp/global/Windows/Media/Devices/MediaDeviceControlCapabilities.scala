@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Gets the capabilities of a camera setting. */
-@JSGlobal("Windows.Media.Devices.MediaDeviceControlCapabilities")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.MediaDeviceControlCapabilities")
 @js.native
-abstract class MediaDeviceControlCapabilities ()
+open class MediaDeviceControlCapabilities ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.MediaDeviceControlCapabilities {
   

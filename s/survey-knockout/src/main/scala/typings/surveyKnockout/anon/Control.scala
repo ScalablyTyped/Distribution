@@ -18,6 +18,8 @@ trait Control extends StObject {
   
   var controlEmpty: String
   
+  var controlInputFieldComponent: String
+  
   var controlLabel: String
   
   var controlValue: String
@@ -59,6 +61,7 @@ object Control {
     control: String,
     controlDisabled: String,
     controlEmpty: String,
+    controlInputFieldComponent: String,
     controlLabel: String,
     controlValue: String,
     filterStringInput: String,
@@ -76,7 +79,7 @@ object Control {
     selectWrapper: String,
     small: String
   ): Control = {
-    val __obj = js.Dynamic.literal(cleanButton = cleanButton.asInstanceOf[js.Any], cleanButtonIconId = cleanButtonIconId.asInstanceOf[js.Any], cleanButtonSvg = cleanButtonSvg.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], controlDisabled = controlDisabled.asInstanceOf[js.Any], controlEmpty = controlEmpty.asInstanceOf[js.Any], controlLabel = controlLabel.asInstanceOf[js.Any], controlValue = controlValue.asInstanceOf[js.Any], filterStringInput = filterStringInput.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemHover = itemHover.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], onError = onError.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], selectWrapper = selectWrapper.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cleanButton = cleanButton.asInstanceOf[js.Any], cleanButtonIconId = cleanButtonIconId.asInstanceOf[js.Any], cleanButtonSvg = cleanButtonSvg.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], controlDisabled = controlDisabled.asInstanceOf[js.Any], controlEmpty = controlEmpty.asInstanceOf[js.Any], controlInputFieldComponent = controlInputFieldComponent.asInstanceOf[js.Any], controlLabel = controlLabel.asInstanceOf[js.Any], controlValue = controlValue.asInstanceOf[js.Any], filterStringInput = filterStringInput.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemHover = itemHover.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], onError = onError.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], selectWrapper = selectWrapper.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any])
     __obj.asInstanceOf[Control]
   }
   
@@ -93,6 +96,8 @@ object Control {
     inline def setControlDisabled(value: String): Self = StObject.set(x, "controlDisabled", value.asInstanceOf[js.Any])
     
     inline def setControlEmpty(value: String): Self = StObject.set(x, "controlEmpty", value.asInstanceOf[js.Any])
+    
+    inline def setControlInputFieldComponent(value: String): Self = StObject.set(x, "controlInputFieldComponent", value.asInstanceOf[js.Any])
     
     inline def setControlLabel(value: String): Self = StObject.set(x, "controlLabel", value.asInstanceOf[js.Any])
     

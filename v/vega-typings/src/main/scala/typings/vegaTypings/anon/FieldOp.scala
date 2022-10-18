@@ -1,8 +1,8 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.scaleMod.ScaleField
-import typings.vegaTypings.scaleMod.SortOrder
-import typings.vegaTypings.scaleMod._UnionSortField
+import typings.vegaTypings.typesSpecScaleMod.ScaleField
+import typings.vegaTypings.typesSpecScaleMod.SortOrder
+import typings.vegaTypings.typesSpecScaleMod._UnionSortField
 import typings.vegaTypings.vegaTypingsStrings.count
 import typings.vegaTypings.vegaTypingsStrings.max
 import typings.vegaTypings.vegaTypingsStrings.min

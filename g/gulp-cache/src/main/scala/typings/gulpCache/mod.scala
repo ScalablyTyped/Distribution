@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.gulpCache.mod.gc.IGulpCacheStatic
 import typings.gulpUtil.mod.PluginError
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.streamMod.Transform
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
@@ -128,18 +129,13 @@ object mod extends Shortcut {
         * Caches the result of a task.
         * @param task The task whose result is to be cached.
         */
-      def apply(
-        task: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-      ): Transform = js.native
+      def apply(task: ReadWriteStream): Transform = js.native
       /**
         * Caches the result of a task.
         * @param task Task whose result is to be cached.
         * @param options Override values for available settings.
         */
-      def apply(
-        task: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any,
-        options: IGulpCacheOptions
-      ): Transform = js.native
+      def apply(task: ReadWriteStream, options: IGulpCacheOptions): Transform = js.native
       
       /**
         * Represents a cache store.

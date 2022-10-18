@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("egg", "Agent")
 @js.native
-class Agent () extends EggApplication {
+open class Agent () extends EggApplication {
   def this(options: EggCoreOptions) = this()
 }

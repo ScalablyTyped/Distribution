@@ -1,7 +1,7 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.gridMod.GridOptions
-import typings.interactjsTypes.typesMod.Point
+import typings.interactjsTypes.coreTypesMod.Point
+import typings.interactjsTypes.snappersGridMod.GridOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait PartialRectrangenumberund
   
   var left: js.UndefOr[Double] = js.undefined
   
-  var limits: js.UndefOr[typings.interactjsTypes.typesMod.Rect] = js.undefined
+  var limits: js.UndefOr[typings.interactjsTypes.coreTypesMod.Rect] = js.undefined
   
   var offset: js.UndefOr[Point] = js.undefined
   
@@ -50,7 +50,7 @@ object PartialRectrangenumberund {
     
     inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    inline def setLimits(value: typings.interactjsTypes.typesMod.Rect): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: typings.interactjsTypes.coreTypesMod.Rect): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
     inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "LinearInterpolant")
 @js.native
 open class LinearInterpolant protected ()
-  extends typings.three.threeMod.LinearInterpolant {
+  extends typings.three.srcThreeMod.LinearInterpolant {
   def this(parameterPositions: Any, samplesValues: Any, sampleSize: Double) = this()
   def this(parameterPositions: Any, samplesValues: Any, sampleSize: Double, resultBuffer: Any) = this()
 }

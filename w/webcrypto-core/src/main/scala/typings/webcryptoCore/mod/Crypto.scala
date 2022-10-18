@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webcrypto-core", "Crypto")
+/* note: abstract class */ @JSImport("webcrypto-core", "Crypto")
 @js.native
-abstract class Crypto ()
+open class Crypto ()
   extends StObject
      with Crypto1 {
   

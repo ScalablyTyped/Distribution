@@ -3,7 +3,7 @@ package typings.snazzyInfoWindow
 import typings.googleMaps.google.maps.LatLng
 import typings.googleMaps.google.maps.LatLngLiteral
 import typings.googleMaps.google.maps.Map
-import typings.googleMaps.google.maps.Marker
+import typings.googleMaps.google.maps.Marker_
 import typings.googleMaps.google.maps.OverlayView
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -249,7 +249,7 @@ object mod {
     /**
       * The Google Maps marker associated to this info window.
       */
-    var marker: js.UndefOr[Marker] = js.undefined
+    var marker: js.UndefOr[Marker_] = js.undefined
     
     /**
       * The max height in pixels of the info window.
@@ -402,7 +402,7 @@ object mod {
       
       inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      inline def setMarker(value: Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: Marker_): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
       inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
       

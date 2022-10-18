@@ -1,5 +1,6 @@
 package typings.pkginfo
 
+import typings.node.NodeModule
 import typings.pkginfo.mod.PkgInfo.FindResults
 import typings.pkginfo.mod.PkgInfo.Options
 import typings.pkginfo.mod.PkgInfo.PkgInfo
@@ -11,38 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined pkginfo.pkginfo.PkgInfo.PkgInfo & {  version :string} */
 object mod {
   
-  inline def apply(
-    pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-    options: String,
-    properties: String*
-  ): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((scala.List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
-  inline def apply(
-    pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-    options: js.Array[String],
-    properties: String*
-  ): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((scala.List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
-  inline def apply(
-    pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-    options: Unit,
-    properties: String*
-  ): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((scala.List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
-  inline def apply(
-    pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-    options: Options,
-    properties: String*
-  ): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((scala.List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
+  inline def apply(pmodule: NodeModule, options: String, properties: String*): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((scala.List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
+  inline def apply(pmodule: NodeModule, options: js.Array[String], properties: String*): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((scala.List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
+  inline def apply(pmodule: NodeModule, options: Unit, properties: String*): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((scala.List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
+  inline def apply(pmodule: NodeModule, options: Options, properties: String*): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((scala.List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
   
   @JSImport("pkginfo", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def find(
-    pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any
-  ): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(pmodule.asInstanceOf[js.Any]).asInstanceOf[Record[String, Any]]
-  inline def find(
-    pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-    dir: String
-  ): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(pmodule.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
+  inline def find(pmodule: NodeModule): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(pmodule.asInstanceOf[js.Any]).asInstanceOf[Record[String, Any]]
+  inline def find(pmodule: NodeModule, dir: String): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(pmodule.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
   
   //
   // ### function find (dir)
@@ -51,13 +31,8 @@ object mod {
   // Searches up the directory tree from `dir` until it finds a directory
   // which contains a `package.json` file.
   //
-  inline def read(
-    pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any
-  ): FindResults = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(pmodule.asInstanceOf[js.Any]).asInstanceOf[FindResults]
-  inline def read(
-    pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-    dir: String
-  ): FindResults = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(pmodule.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[FindResults]
+  inline def read(pmodule: NodeModule): FindResults = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(pmodule.asInstanceOf[js.Any]).asInstanceOf[FindResults]
+  inline def read(pmodule: NodeModule, dir: String): FindResults = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(pmodule.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[FindResults]
   
   @JSImport("pkginfo", "version")
   @js.native
@@ -119,34 +94,13 @@ object mod {
     @js.native
     trait PkgInfo extends StObject {
       
-      def apply(
-        pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-        options: String,
-        properties: String*
-      ): typings.pkginfo.mod.PkgInfo.PkgInfo = js.native
-      def apply(
-        pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-        options: js.Array[String],
-        properties: String*
-      ): typings.pkginfo.mod.PkgInfo.PkgInfo = js.native
-      def apply(
-        pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-        options: Unit,
-        properties: String*
-      ): typings.pkginfo.mod.PkgInfo.PkgInfo = js.native
-      def apply(
-        pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-        options: Options,
-        properties: String*
-      ): typings.pkginfo.mod.PkgInfo.PkgInfo = js.native
+      def apply(pmodule: NodeModule, options: String, properties: String*): typings.pkginfo.mod.PkgInfo.PkgInfo = js.native
+      def apply(pmodule: NodeModule, options: js.Array[String], properties: String*): typings.pkginfo.mod.PkgInfo.PkgInfo = js.native
+      def apply(pmodule: NodeModule, options: Unit, properties: String*): typings.pkginfo.mod.PkgInfo.PkgInfo = js.native
+      def apply(pmodule: NodeModule, options: Options, properties: String*): typings.pkginfo.mod.PkgInfo.PkgInfo = js.native
       
-      def find(
-        pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any
-      ): Record[String, Any] = js.native
-      def find(
-        pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-        dir: String
-      ): Record[String, Any] = js.native
+      def find(pmodule: NodeModule): Record[String, Any] = js.native
+      def find(pmodule: NodeModule, dir: String): Record[String, Any] = js.native
       
       //
       // ### function find (dir)
@@ -155,13 +109,8 @@ object mod {
       // Searches up the directory tree from `dir` until it finds a directory
       // which contains a `package.json` file.
       //
-      def read(
-        pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any
-      ): FindResults = js.native
-      def read(
-        pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-        dir: String
-      ): FindResults = js.native
+      def read(pmodule: NodeModule): FindResults = js.native
+      def read(pmodule: NodeModule, dir: String): FindResults = js.native
     }
   }
 }

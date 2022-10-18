@@ -9,9 +9,9 @@ import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.GenerateData
 import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.ReEncryptFrom
 import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.ReEncryptTo
 import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.RetireGrant
-import typings.awsSdkClientKmsBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientKmsBrowser.typesGrantConstraintsMod.GrantConstraints
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientKmsBrowser.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

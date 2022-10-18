@@ -11,6 +11,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait Buttonid extends StObject {
+    
+    var button_id: String | Null
+  }
+  object Buttonid {
+    
+    inline def apply(): Buttonid = {
+      val __obj = js.Dynamic.literal(button_id = null)
+      __obj.asInstanceOf[Buttonid]
+    }
+    
+    extension [Self <: Buttonid](x: Self) {
+      
+      inline def setButton_id(value: String): Self = StObject.set(x, "button_id", value.asInstanceOf[js.Any])
+      
+      inline def setButton_idNull: Self = StObject.set(x, "button_id", null)
+    }
+  }
+  
   trait IsStateStable extends StObject {
     
     var isStateStable: Boolean

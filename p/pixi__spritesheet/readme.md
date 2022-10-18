@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__spritesheet
 
-Typings are for version 6.5.4
+Typings are for version 6.5.6
 
 ## Library description:
 Spritesheets maintain a collection of Textures on a single image

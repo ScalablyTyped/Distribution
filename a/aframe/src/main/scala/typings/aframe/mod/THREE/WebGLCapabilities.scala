@@ -1,7 +1,7 @@
 package typings.aframe.mod.THREE
 
 import typings.std.WebGLRenderingContext
-import typings.three.webGLCapabilitiesMod.WebGLCapabilitiesParameters
+import typings.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilitiesParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

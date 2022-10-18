@@ -1,9 +1,9 @@
 package typings.awsGreengrassCoreSdk.mod.StreamManager
 
-import typings.awsGreengrassCoreSdk.dataMod.StatusLevelMap
-import typings.awsGreengrassCoreSdk.dataMod.StatusLevelOptions
-import typings.awsGreengrassCoreSdk.dataMod.StatusLevelOptionsFlipped
-import typings.awsGreengrassCoreSdk.dataMod.StatusLevelValue
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevelMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevelOptions
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevelOptionsFlipped
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevelValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,30 +23,30 @@ object StatusLevel {
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.StatusLevel.DEBUG")
   @js.native
-  def DEBUG: typings.awsGreengrassCoreSdk.dataMod.StatusLevel = js.native
-  inline def DEBUG_=(x: typings.awsGreengrassCoreSdk.dataMod.StatusLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+  def DEBUG: typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel = js.native
+  inline def DEBUG_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.StatusLevel.ERROR")
   @js.native
-  def ERROR: typings.awsGreengrassCoreSdk.dataMod.StatusLevel = js.native
-  inline def ERROR_=(x: typings.awsGreengrassCoreSdk.dataMod.StatusLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
+  def ERROR: typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel = js.native
+  inline def ERROR_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.StatusLevel.INFO")
   @js.native
-  def INFO: typings.awsGreengrassCoreSdk.dataMod.StatusLevel = js.native
-  inline def INFO_=(x: typings.awsGreengrassCoreSdk.dataMod.StatusLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO")(x.asInstanceOf[js.Any])
+  def INFO: typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel = js.native
+  inline def INFO_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO")(x.asInstanceOf[js.Any])
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.StatusLevel.TRACE")
   @js.native
-  def TRACE: typings.awsGreengrassCoreSdk.dataMod.StatusLevel = js.native
-  inline def TRACE_=(x: typings.awsGreengrassCoreSdk.dataMod.StatusLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRACE")(x.asInstanceOf[js.Any])
+  def TRACE: typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel = js.native
+  inline def TRACE_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRACE")(x.asInstanceOf[js.Any])
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.StatusLevel.WARN")
   @js.native
-  def WARN: typings.awsGreengrassCoreSdk.dataMod.StatusLevel = js.native
-  inline def WARN_=(x: typings.awsGreengrassCoreSdk.dataMod.StatusLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARN")(x.asInstanceOf[js.Any])
+  def WARN: typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel = js.native
+  inline def WARN_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARN")(x.asInstanceOf[js.Any])
   
-  inline def fromMap(d: StatusLevelMap): typings.awsGreengrassCoreSdk.dataMod.StatusLevel = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.StatusLevel]
+  inline def fromMap(d: StatusLevelMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel]
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.StatusLevel.options")
   @js.native

@@ -2,7 +2,7 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.textStyle1SmallMod.TextStyle1SmallProps
+import typings.wixUiIconsCommon.distSrcOnStageGeneralDistComponentsTextStyle1SmallMod.TextStyle1SmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

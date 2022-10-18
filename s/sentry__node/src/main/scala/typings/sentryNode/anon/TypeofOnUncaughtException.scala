@@ -2,7 +2,7 @@ package typings.sentryNode.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.sentryNode.integrationsMod.OnUncaughtException
+import typings.sentryNode.typesIntegrationsMod.OnUncaughtException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

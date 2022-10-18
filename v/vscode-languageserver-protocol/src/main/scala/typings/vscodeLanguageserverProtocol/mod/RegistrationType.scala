@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-languageserver-protocol", "RegistrationType")
 @js.native
 open class RegistrationType[RO] protected ()
-  extends typings.vscodeLanguageserverProtocol.messagesMod.RegistrationType[RO] {
+  extends typings.vscodeLanguageserverProtocol.libCommonMessagesMod.RegistrationType[RO] {
   def this(method: String) = this()
 }

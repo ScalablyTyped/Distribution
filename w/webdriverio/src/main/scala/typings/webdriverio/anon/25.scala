@@ -1,6 +1,6 @@
 package typings.webdriverio.anon
 
-import typings.wdioTypes.optionsMod.AutoCompileConfig
+import typings.wdioTypes.buildOptionsMod.AutoCompileConfig
 import typings.webdriverio.webdriverioStrings.`object`
 import typings.webdriverio.webdriverioStrings.boolean
 import typings.webdriverio.webdriverioStrings.function

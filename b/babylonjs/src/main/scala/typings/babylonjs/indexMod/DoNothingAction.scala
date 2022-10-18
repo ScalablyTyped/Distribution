@@ -14,6 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class DoNothingAction ()
   extends typings.babylonjs.actionsIndexMod.DoNothingAction {
   def this(triggerOptions: Any) = this()
-  def this(triggerOptions: Any, condition: typings.babylonjs.conditionMod.Condition) = this()
-  def this(triggerOptions: Unit, condition: typings.babylonjs.conditionMod.Condition) = this()
+  def this(triggerOptions: Any, condition: typings.babylonjs.actionsConditionMod.Condition) = this()
+  def this(triggerOptions: Unit, condition: typings.babylonjs.actionsConditionMod.Condition) = this()
 }

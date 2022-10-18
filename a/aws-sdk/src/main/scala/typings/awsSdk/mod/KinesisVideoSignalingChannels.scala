@@ -1,6 +1,6 @@
 package typings.awsSdk.mod
 
-import typings.awsSdk.kinesisvideosignalingchannelsMod.ClientConfiguration
+import typings.awsSdk.clientsKinesisvideosignalingchannelsMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a service object. This object has one method for each API operation.
   */
 open class KinesisVideoSignalingChannels ()
-  extends typings.awsSdk.allMod.KinesisVideoSignalingChannels {
+  extends typings.awsSdk.clientsAllMod.KinesisVideoSignalingChannels {
   def this(options: ClientConfiguration) = this()
 }

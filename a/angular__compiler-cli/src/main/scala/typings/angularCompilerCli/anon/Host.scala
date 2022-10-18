@@ -1,7 +1,7 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.transformersApiMod.CompilerHost
-import typings.angularCompilerCli.transformersApiMod.CompilerOptions
+import typings.angularCompilerCli.srcTransformersApiMod.CompilerHost
+import typings.angularCompilerCli.srcTransformersApiMod.CompilerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ trait Host extends StObject {
   
   var host: CompilerHost
   
-  var oldProgram: js.UndefOr[typings.angularCompilerCli.transformersApiMod.Program] = js.undefined
+  var oldProgram: js.UndefOr[typings.angularCompilerCli.srcTransformersApiMod.Program] = js.undefined
   
   var options: CompilerOptions
   
@@ -27,7 +27,7 @@ object Host {
     
     inline def setHost(value: CompilerHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    inline def setOldProgram(value: typings.angularCompilerCli.transformersApiMod.Program): Self = StObject.set(x, "oldProgram", value.asInstanceOf[js.Any])
+    inline def setOldProgram(value: typings.angularCompilerCli.srcTransformersApiMod.Program): Self = StObject.set(x, "oldProgram", value.asInstanceOf[js.Any])
     
     inline def setOldProgramUndefined: Self = StObject.set(x, "oldProgram", js.undefined)
     

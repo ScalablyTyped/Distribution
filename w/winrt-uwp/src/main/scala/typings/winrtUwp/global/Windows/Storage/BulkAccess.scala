@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object BulkAccess {
   
   /** Provides synchronous access to the properties exposed off StorageFile and lets an app perform asynchronous file operations such as copy, delete, move, and rename. */
-  @JSGlobal("Windows.Storage.BulkAccess.FileInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.BulkAccess.FileInformation")
   @js.native
-  abstract class FileInformation ()
+  open class FileInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.BulkAccess.FileInformation
   
@@ -67,9 +67,9 @@ object BulkAccess {
   }
   
   /** Provides synchronous access to the properties exposed off StorageFolder and lets an app perform asynchronous management operations such as copy, delete, move, and rename. */
-  @JSGlobal("Windows.Storage.BulkAccess.FolderInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.BulkAccess.FolderInformation")
   @js.native
-  abstract class FolderInformation ()
+  open class FolderInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.BulkAccess.FolderInformation
 }

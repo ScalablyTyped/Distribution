@@ -1,14 +1,14 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.Compact
-import typings.officeUiFabricReact.groupFooterTypesMod.IGroupFooterProps
-import typings.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps
-import typings.officeUiFabricReact.groupShowAllTypesMod.IGroupShowAllProps
-import typings.officeUiFabricReact.groupSpacerTypesMod.IGroupSpacerProps
-import typings.officeUiFabricReact.groupedListBaseMod.IGroupedListState
-import typings.officeUiFabricReact.groupedListSectionMod.IGroupedListSectionProps
-import typings.officeUiFabricReact.groupedListTypesMod.IGroup
-import typings.officeUiFabricReact.groupedListTypesMod.IGroupedListProps
+import typings.officeUiFabricReact.libComponentsGroupedListGroupFooterDottypesMod.IGroupFooterProps
+import typings.officeUiFabricReact.libComponentsGroupedListGroupHeaderDottypesMod.IGroupHeaderProps
+import typings.officeUiFabricReact.libComponentsGroupedListGroupShowAllDottypesMod.IGroupShowAllProps
+import typings.officeUiFabricReact.libComponentsGroupedListGroupSpacerDottypesMod.IGroupSpacerProps
+import typings.officeUiFabricReact.libComponentsGroupedListGroupedListDotbaseMod.IGroupedListState
+import typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroup
+import typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroupedListProps
+import typings.officeUiFabricReact.libComponentsGroupedListGroupedListSectionMod.IGroupedListSectionProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,11 +25,13 @@ object libGroupedListMod {
   object CollapseAllVisibility extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.CollapseAllVisibility & Double
+      ] = js.native
     
-    /* 0 */ val hidden: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility.hidden & Double = js.native
+    /* 0 */ val hidden: typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.CollapseAllVisibility.hidden & Double = js.native
     
-    /* 1 */ val visible: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility.visible & Double = js.native
+    /* 1 */ val visible: typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.CollapseAllVisibility.visible & Double = js.native
   }
   
   inline def GetGroupCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetGroupCount")().asInstanceOf[Double]
@@ -58,7 +60,7 @@ object libGroupedListMod {
   @JSImport("office-ui-fabric-react/lib/GroupedList", "GroupedListBase")
   @js.native
   open class GroupedListBase protected ()
-    extends typings.officeUiFabricReact.groupedListMod.GroupedListBase {
+    extends typings.officeUiFabricReact.libComponentsGroupedListMod.GroupedListBase {
     def this(props: IGroupedListProps) = this()
   }
   /* static members */
@@ -79,7 +81,7 @@ object libGroupedListMod {
   @JSImport("office-ui-fabric-react/lib/GroupedList", "GroupedListSection")
   @js.native
   open class GroupedListSection protected ()
-    extends typings.officeUiFabricReact.groupedListMod.GroupedListSection {
+    extends typings.officeUiFabricReact.libComponentsGroupedListMod.GroupedListSection {
     def this(props: IGroupedListSectionProps) = this()
   }
 }

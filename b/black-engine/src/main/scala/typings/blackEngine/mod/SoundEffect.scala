@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "SoundEffect")
 @js.native
 open class SoundEffect ()
-  extends typings.blackEngine.soundEffectMod.SoundEffect
+  extends typings.blackEngine.audioSoundEffectMod.SoundEffect

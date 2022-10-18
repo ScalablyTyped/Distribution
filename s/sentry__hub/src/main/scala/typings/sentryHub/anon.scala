@@ -1,20 +1,20 @@
 package typings.sentryHub
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sentryHub.hubMod.Hub
-import typings.sentryHub.scopeMod.Scope
-import typings.sentryTypes.breadcrumbMod.Breadcrumb
-import typings.sentryTypes.breadcrumbMod.BreadcrumbHint
-import typings.sentryTypes.eventMod.Event
-import typings.sentryTypes.eventMod.EventHint
-import typings.sentryTypes.integrationMod.Integration
-import typings.sentryTypes.sessionMod.SerializedSession
-import typings.sentryTypes.severityMod.Severity
-import typings.sentryTypes.severityMod.SeverityLevel
-import typings.sentryTypes.transactionMod.CustomSamplingContext
-import typings.sentryTypes.transactionMod.Transaction
-import typings.sentryTypes.transactionMod.TransactionContext
-import typings.sentryTypes.userMod.User
+import typings.sentryHub.typesHubMod.Hub
+import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
+import typings.sentryTypes.typesBreadcrumbMod.BreadcrumbHint
+import typings.sentryTypes.typesEventMod.Event
+import typings.sentryTypes.typesEventMod.EventHint
+import typings.sentryTypes.typesIntegrationMod.Integration
+import typings.sentryTypes.typesScopeMod.Scope
+import typings.sentryTypes.typesSessionMod.SerializedSession
+import typings.sentryTypes.typesSeverityMod.Severity
+import typings.sentryTypes.typesSeverityMod.SeverityLevel
+import typings.sentryTypes.typesTransactionMod.CustomSamplingContext
+import typings.sentryTypes.typesTransactionMod.Transaction
+import typings.sentryTypes.typesTransactionMod.TransactionContext
+import typings.sentryTypes.typesUserMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,13 +83,6 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(exception: Any): String = js.native
-    def apply(exception: Any, hint: EventHint): String = js.native
-  }
-  
-  @js.native
-  trait FnCallBreadcrumbHint extends StObject {
-    
     def apply(breadcrumb: Breadcrumb): Unit = js.native
     def apply(breadcrumb: Breadcrumb, hint: BreadcrumbHint): Unit = js.native
   }
@@ -98,7 +91,7 @@ object anon {
   trait FnCallCallback extends StObject {
     
     def apply(
-      callback: js.Function1[(/* scope */ Scope) | (/* scope */ typings.sentryTypes.scopeMod.Scope), Unit]
+      callback: js.Function1[(/* scope */ Scope) | (/* scope */ typings.sentryHub.typesScopeMod.Scope), Unit]
     ): Unit = js.native
   }
   
@@ -114,6 +107,13 @@ object anon {
     
     def apply(event: Event): String = js.native
     def apply(event: Event, hint: EventHint): String = js.native
+  }
+  
+  @js.native
+  trait FnCallExceptionHint extends StObject {
+    
+    def apply(exception: Any): String = js.native
+    def apply(exception: Any, hint: EventHint): String = js.native
   }
   
   @js.native

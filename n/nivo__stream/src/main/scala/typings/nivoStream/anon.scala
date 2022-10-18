@@ -1,20 +1,20 @@
 package typings.nivoStream
 
-import typings.nivoColors.inheritedColorMod.InheritedColorConfig
-import typings.nivoColors.inheritedColorMod.InheritedColorConfigCustomFunction
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfigCustomFunction
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.mod.AreaCurve
 import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoCore.mod.StackOffset
 import typings.nivoCore.mod.StackOrder
 import typings.nivoCore.mod.ValueFormat
-import typings.nivoScales.typesMod.ScaleLinear
-import typings.nivoScales.typesMod.ScalePoint
-import typings.nivoStream.typesMod.StreamCustomLayerProps
-import typings.nivoStream.typesMod.StreamDatum
-import typings.nivoStream.typesMod.StreamLayerData
-import typings.nivoStream.typesMod.StreamLayerDatum
-import typings.nivoStream.typesMod.StreamSliceData
+import typings.nivoScales.distTypesTypesMod.ScaleLinear
+import typings.nivoScales.distTypesTypesMod.ScalePoint
+import typings.nivoStream.distTypesTypesMod.StreamCustomLayerProps
+import typings.nivoStream.distTypesTypesMod.StreamDatum
+import typings.nivoStream.distTypesTypesMod.StreamLayerData
+import typings.nivoStream.distTypesTypesMod.StreamLayerDatum
+import typings.nivoStream.distTypesTypesMod.StreamSliceData
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -156,10 +156,6 @@ object anon {
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
       inline def setValueFormat(value: ValueFormat[Double, Unit]): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
-      
-      inline def setValueFormatFunction1(value: Double => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction1(value))
-      
-      inline def setValueFormatFunction2(value: (Double, Unit) => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction2(value))
       
       inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
       

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [standardDeviation=0] - Standard deviation of the normal distribution.
   */
 open class NormalDistFuzzySet ()
-  extends typings.yuka.yukaMod.NormalDistFuzzySet {
+  extends typings.yuka.srcYukaMod.NormalDistFuzzySet {
   def this(left: Double) = this()
   def this(left: Double, midpoint: Double) = this()
   def this(left: Unit, midpoint: Double) = this()

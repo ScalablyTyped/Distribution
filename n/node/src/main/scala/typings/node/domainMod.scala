@@ -36,7 +36,7 @@ object domainMod {
       * from that one, and bound to this one instead.
       * @param emitter emitter or timer to be added to the domain
       */
-    def add(emitter: typings.node.nodeEventsMod.^): Unit = js.native
+    def add(emitter: typings.node.nodeColoneventsMod.^): Unit = js.native
     def add(emitter: Timer): Unit = js.native
     
     /**
@@ -130,14 +130,14 @@ object domainMod {
       * An array of timers and event emitters that have been explicitly added
       * to the domain.
       */
-    var members: js.Array[typings.node.nodeEventsMod.^ | Timer] = js.native
+    var members: js.Array[typings.node.nodeColoneventsMod.^ | Timer] = js.native
     
     /**
       * The opposite of {@link add}. Removes domain handling from the
       * specified emitter.
       * @param emitter emitter or timer to be removed from the domain
       */
-    def remove(emitter: typings.node.nodeEventsMod.^): Unit = js.native
+    def remove(emitter: typings.node.nodeColoneventsMod.^): Unit = js.native
     def remove(emitter: Timer): Unit = js.native
     
     /**

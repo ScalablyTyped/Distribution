@@ -1,12 +1,13 @@
 package typings.formatjsIcuMessageformatParser
 
-import typings.formatjsIcuMessageformatParser.parserMod.ParserOptions
-import typings.formatjsIcuMessageformatParser.typesMod.DateTimeSkeleton
-import typings.formatjsIcuMessageformatParser.typesMod.LiteralElement
-import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
-import typings.formatjsIcuMessageformatParser.typesMod.NumberElement
-import typings.formatjsIcuMessageformatParser.typesMod.NumberSkeleton
-import typings.formatjsIcuMessageformatParser.typesMod.Skeleton
+import org.scalablytyped.runtime.Instantiable2
+import typings.formatjsIcuMessageformatParser.libParserMod.ParserOptions
+import typings.formatjsIcuMessageformatParser.libTypesMod.DateTimeSkeleton
+import typings.formatjsIcuMessageformatParser.libTypesMod.LiteralElement
+import typings.formatjsIcuMessageformatParser.libTypesMod.MessageFormatElement
+import typings.formatjsIcuMessageformatParser.libTypesMod.NumberElement
+import typings.formatjsIcuMessageformatParser.libTypesMod.NumberSkeleton
+import typings.formatjsIcuMessageformatParser.libTypesMod.Skeleton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,16 +18,33 @@ object libMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("@formatjs/icu-messageformat-parser/lib", "_Parser")
+  @js.native
+  open class Parser protected ()
+    extends typings.formatjsIcuMessageformatParser.libParserMod.Parser {
+    def this(message: String) = this()
+    def this(message: String, options: ParserOptions) = this()
+  }
+  
+  @JSImport("@formatjs/icu-messageformat-parser/lib", "_Parser")
+  @js.native
+  val Parser: Instantiable2[
+    /* message */ String, 
+    /* options */ js.UndefOr[ParserOptions], 
+    typings.formatjsIcuMessageformatParser.libParserMod.Parser
+  ] = js.native
+  
   @JSImport("@formatjs/icu-messageformat-parser/lib", "SKELETON_TYPE")
   @js.native
   object SKELETON_TYPE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.formatjsIcuMessageformatParser.typesMod.SKELETON_TYPE & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.formatjsIcuMessageformatParser.libTypesMod.SKELETON_TYPE & Double] = js.native
     
-    /* 1 */ val dateTime: typings.formatjsIcuMessageformatParser.typesMod.SKELETON_TYPE.dateTime & Double = js.native
+    /* 1 */ val dateTime: typings.formatjsIcuMessageformatParser.libTypesMod.SKELETON_TYPE.dateTime & Double = js.native
     
-    /* 0 */ val number: typings.formatjsIcuMessageformatParser.typesMod.SKELETON_TYPE.number & Double = js.native
+    /* 0 */ val number: typings.formatjsIcuMessageformatParser.libTypesMod.SKELETON_TYPE.number & Double = js.native
   }
   
   @JSImport("@formatjs/icu-messageformat-parser/lib", "TYPE")
@@ -34,25 +52,25 @@ object libMod {
   object TYPE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.formatjsIcuMessageformatParser.typesMod.TYPE & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.formatjsIcuMessageformatParser.libTypesMod.TYPE & Double] = js.native
     
-    /* 1 */ val argument: typings.formatjsIcuMessageformatParser.typesMod.TYPE.argument & Double = js.native
+    /* 1 */ val argument: typings.formatjsIcuMessageformatParser.libTypesMod.TYPE.argument & Double = js.native
     
-    /* 3 */ val date: typings.formatjsIcuMessageformatParser.typesMod.TYPE.date & Double = js.native
+    /* 3 */ val date: typings.formatjsIcuMessageformatParser.libTypesMod.TYPE.date & Double = js.native
     
-    /* 0 */ val literal: typings.formatjsIcuMessageformatParser.typesMod.TYPE.literal & Double = js.native
+    /* 0 */ val literal: typings.formatjsIcuMessageformatParser.libTypesMod.TYPE.literal & Double = js.native
     
-    /* 2 */ val number: typings.formatjsIcuMessageformatParser.typesMod.TYPE.number & Double = js.native
+    /* 2 */ val number: typings.formatjsIcuMessageformatParser.libTypesMod.TYPE.number & Double = js.native
     
-    /* 6 */ val plural: typings.formatjsIcuMessageformatParser.typesMod.TYPE.plural & Double = js.native
+    /* 6 */ val plural: typings.formatjsIcuMessageformatParser.libTypesMod.TYPE.plural & Double = js.native
     
-    /* 7 */ val pound: typings.formatjsIcuMessageformatParser.typesMod.TYPE.pound & Double = js.native
+    /* 7 */ val pound: typings.formatjsIcuMessageformatParser.libTypesMod.TYPE.pound & Double = js.native
     
-    /* 5 */ val select: typings.formatjsIcuMessageformatParser.typesMod.TYPE.select & Double = js.native
+    /* 5 */ val select: typings.formatjsIcuMessageformatParser.libTypesMod.TYPE.select & Double = js.native
     
-    /* 8 */ val tag: typings.formatjsIcuMessageformatParser.typesMod.TYPE.tag & Double = js.native
+    /* 8 */ val tag: typings.formatjsIcuMessageformatParser.libTypesMod.TYPE.tag & Double = js.native
     
-    /* 4 */ val time: typings.formatjsIcuMessageformatParser.typesMod.TYPE.time & Double = js.native
+    /* 4 */ val time: typings.formatjsIcuMessageformatParser.libTypesMod.TYPE.time & Double = js.native
   }
   
   inline def createLiteralElement(value: String): LiteralElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteralElement")(value.asInstanceOf[js.Any]).asInstanceOf[LiteralElement]

@@ -23,39 +23,49 @@ open class DefaultRenderingPipeline ()
   def this(name: String, hdr: Unit, scene: typings.babylonjs.sceneMod.Scene) = this()
   def this(name: Unit, hdr: Boolean, scene: typings.babylonjs.sceneMod.Scene) = this()
   def this(name: Unit, hdr: Unit, scene: typings.babylonjs.sceneMod.Scene) = this()
-  def this(name: String, hdr: Boolean, scene: Unit, cameras: js.Array[typings.babylonjs.cameraMod.Camera]) = this()
+  def this(
+    name: String,
+    hdr: Boolean,
+    scene: Unit,
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]
+  ) = this()
   def this(
     name: String,
     hdr: Boolean,
     scene: typings.babylonjs.sceneMod.Scene,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera]
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
-  def this(name: String, hdr: Unit, scene: Unit, cameras: js.Array[typings.babylonjs.cameraMod.Camera]) = this()
+  def this(name: String, hdr: Unit, scene: Unit, cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]) = this()
   def this(
     name: String,
     hdr: Unit,
     scene: typings.babylonjs.sceneMod.Scene,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera]
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
-  def this(name: Unit, hdr: Boolean, scene: Unit, cameras: js.Array[typings.babylonjs.cameraMod.Camera]) = this()
+  def this(
+    name: Unit,
+    hdr: Boolean,
+    scene: Unit,
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]
+  ) = this()
   def this(
     name: Unit,
     hdr: Boolean,
     scene: typings.babylonjs.sceneMod.Scene,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera]
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
-  def this(name: Unit, hdr: Unit, scene: Unit, cameras: js.Array[typings.babylonjs.cameraMod.Camera]) = this()
+  def this(name: Unit, hdr: Unit, scene: Unit, cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]) = this()
   def this(
     name: Unit,
     hdr: Unit,
     scene: typings.babylonjs.sceneMod.Scene,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera]
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
   def this(
     name: String,
     hdr: Boolean,
     scene: Unit,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     automaticBuild: Boolean
   ) = this()
   def this(name: String, hdr: Boolean, scene: Unit, cameras: Unit, automaticBuild: Boolean) = this()
@@ -63,7 +73,7 @@ open class DefaultRenderingPipeline ()
     name: String,
     hdr: Boolean,
     scene: typings.babylonjs.sceneMod.Scene,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     automaticBuild: Boolean
   ) = this()
   def this(
@@ -77,7 +87,7 @@ open class DefaultRenderingPipeline ()
     name: String,
     hdr: Unit,
     scene: Unit,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     automaticBuild: Boolean
   ) = this()
   def this(name: String, hdr: Unit, scene: Unit, cameras: Unit, automaticBuild: Boolean) = this()
@@ -85,7 +95,7 @@ open class DefaultRenderingPipeline ()
     name: String,
     hdr: Unit,
     scene: typings.babylonjs.sceneMod.Scene,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     automaticBuild: Boolean
   ) = this()
   def this(
@@ -99,7 +109,7 @@ open class DefaultRenderingPipeline ()
     name: Unit,
     hdr: Boolean,
     scene: Unit,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     automaticBuild: Boolean
   ) = this()
   def this(name: Unit, hdr: Boolean, scene: Unit, cameras: Unit, automaticBuild: Boolean) = this()
@@ -107,7 +117,7 @@ open class DefaultRenderingPipeline ()
     name: Unit,
     hdr: Boolean,
     scene: typings.babylonjs.sceneMod.Scene,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     automaticBuild: Boolean
   ) = this()
   def this(
@@ -121,7 +131,7 @@ open class DefaultRenderingPipeline ()
     name: Unit,
     hdr: Unit,
     scene: Unit,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     automaticBuild: Boolean
   ) = this()
   def this(name: Unit, hdr: Unit, scene: Unit, cameras: Unit, automaticBuild: Boolean) = this()
@@ -129,7 +139,7 @@ open class DefaultRenderingPipeline ()
     name: Unit,
     hdr: Unit,
     scene: typings.babylonjs.sceneMod.Scene,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     automaticBuild: Boolean
   ) = this()
   def this(
@@ -154,5 +164,5 @@ object DefaultRenderingPipeline {
     * @param rootUrl The URL of the serialized pipeline.
     * @returns An instantiated pipeline from the serialized object.
     */
-  inline def Parse(source: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.defaultRenderingPipelineMod.DefaultRenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.defaultRenderingPipelineMod.DefaultRenderingPipeline]
+  inline def Parse(source: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.postProcessesRenderPipelinePipelinesDefaultRenderingPipelineMod.DefaultRenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.postProcessesRenderPipelinePipelinesDefaultRenderingPipelineMod.DefaultRenderingPipeline]
 }

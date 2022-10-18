@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@cucumber/messages", "Source")
 @js.native
 open class Source ()
-  extends typings.cucumberMessages.messagesMod.Source
+  extends typings.cucumberMessages.distCjsSrcMessagesMod.Source

@@ -6,18 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `602` extends StObject {
   
-  /** The name of the secret. */
-  var secret_name: String
+  var path: `601`
 }
 object `602` {
   
-  inline def apply(secret_name: String): `602` = {
-    val __obj = js.Dynamic.literal(secret_name = secret_name.asInstanceOf[js.Any])
+  inline def apply(path: `601`): `602` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`602`]
   }
   
   extension [Self <: `602`](x: Self) {
     
-    inline def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
+    inline def setPath(value: `601`): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

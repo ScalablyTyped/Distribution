@@ -1,5 +1,6 @@
 package typings.playcanvas.global.pc
 
+import typings.playcanvas.mod.Morph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,5 +18,5 @@ open class MorphInstance protected ()
     *
     * @param {Morph} morph - The {@link Morph} to instance.
     */
-  def this(morph: typings.playcanvas.mod.Morph) = this()
+  def this(morph: Morph) = this()
 }

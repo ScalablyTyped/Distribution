@@ -1,6 +1,6 @@
 package typings.vegaTypings
 
-import typings.vegaTypings.encodeMod.FontWeight
+import typings.vegaTypings.typesSpecEncodeMod.FontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

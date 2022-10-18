@@ -1,6 +1,6 @@
 package typings.luminoWidgets.mod
 
-import typings.luminoWidgets.panelMod.Panel.IOptions
+import typings.luminoWidgets.typesPanelMod.Panel.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options - The options for initializing the panel.
   */
 open class Panel ()
-  extends typings.luminoWidgets.panelMod.Panel {
+  extends typings.luminoWidgets.typesPanelMod.Panel {
   def this(options: IOptions) = this()
 }

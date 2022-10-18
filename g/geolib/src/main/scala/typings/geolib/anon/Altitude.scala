@@ -1,8 +1,8 @@
 package typings.geolib.anon
 
-import typings.geolib.typesMod.AltitudeKeys
-import typings.geolib.typesMod.LatitudeKeys
-import typings.geolib.typesMod.LongitudeKeys
+import typings.geolib.esTypesMod.AltitudeKeys
+import typings.geolib.esTypesMod.LatitudeKeys
+import typings.geolib.esTypesMod.LongitudeKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

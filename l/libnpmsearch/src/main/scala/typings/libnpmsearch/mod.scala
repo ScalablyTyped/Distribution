@@ -6,6 +6,7 @@ import typings.libnpmsearch.libnpmsearchStrings.maintenance
 import typings.libnpmsearch.libnpmsearchStrings.optimal
 import typings.libnpmsearch.libnpmsearchStrings.popularity
 import typings.libnpmsearch.libnpmsearchStrings.quality
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +24,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def stream(query: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def stream(query: String, opts: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def stream(query: js.Array[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def stream(query: js.Array[String], opts: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def stream(query: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def stream(query: String, opts: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def stream(query: js.Array[String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def stream(query: js.Array[String], opts: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   trait DetailedResult extends StObject {
     

@@ -1,6 +1,6 @@
 package typings.orbitUiReactComponents.anon
 
-import typings.orbitUiReactComponents.useCollectionMod.NodeType
+import typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.NodeType
 import typings.react.mod.ComponentClass
 import typings.react.mod.ElementType
 import typings.react.mod.FunctionComponent

@@ -63,7 +63,7 @@ object mod {
   @JSImport("fluxible-router", "RouteStore")
   @js.native
   open class RouteStore protected ()
-    extends typings.fluxible.baseStoreMod.^[js.Object] {
+    extends typings.fluxible.addonsBaseStoreMod.^[js.Object] {
     def this(dispatcher: DispatcherInterface) = this()
     
     @JSName("dehydrate")

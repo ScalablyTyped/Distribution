@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "WebGLIndexedBufferRenderer")
 @js.native
 open class WebGLIndexedBufferRenderer protected ()
-  extends typings.three.threeMod.WebGLIndexedBufferRenderer {
+  extends typings.three.srcThreeMod.WebGLIndexedBufferRenderer {
   def this(gl: WebGLRenderingContext, extensions: Any, info: Any, capabilities: Any) = this()
 }

@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tab {
   
+  @JSImport("material-components-web", "tab.default")
+  @js.native
+  open class default ()
+    extends typings.materialTab.mod.default {
+    def this(adapter: PartialMDCTabAdapter) = this()
+  }
+  
   @JSImport("material-components-web", "tab.MDCTab")
   @js.native
   open class MDCTab protected ()

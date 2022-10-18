@@ -2,7 +2,7 @@ package typings.jupyterlabNbformat.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jupyterlabNbformat.mod.^
-import typings.luminoCoreutils.jsonMod.PartialJSONObject
+import typings.luminoCoreutils.typesJsonMod.PartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

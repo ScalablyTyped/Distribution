@@ -1,6 +1,6 @@
 package typings.useGestureCore.anon
 
-import typings.useGestureCore.timeoutStoreMod.TimeoutStore
+import typings.useGestureCore.distDeclarationsSrcTimeoutStoreMod.TimeoutStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

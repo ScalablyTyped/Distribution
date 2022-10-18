@@ -1,6 +1,6 @@
 package typings.luminoWidgets.mod
 
-import typings.luminoWidgets.contextmenuMod.ContextMenu.IOptions
+import typings.luminoWidgets.typesContextmenuMod.ContextMenu.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@lumino/widgets", "ContextMenu")
 @js.native
 open class ContextMenu protected ()
-  extends typings.luminoWidgets.contextmenuMod.ContextMenu {
+  extends typings.luminoWidgets.typesContextmenuMod.ContextMenu {
   /**
     * Construct a new context menu.
     *

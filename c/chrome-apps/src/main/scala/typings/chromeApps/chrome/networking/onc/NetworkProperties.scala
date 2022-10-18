@@ -1,6 +1,5 @@
 package typings.chromeApps.chrome.networking.onc
 
-import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.networking.onc.internal.NetworkConfigBase
 import typings.chromeApps.chromeAppsStrings.DevicePolicy
 import typings.chromeApps.chromeAppsStrings.Device_
@@ -31,10 +30,10 @@ trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */]
     js.Array[
       IPConfigProperties[
         unmanaged, 
-        Boolean | ManagedBoolean, 
-        String | ManagedDOMString, 
-        js.Array[String] | ManagedDOMStringList, 
-        integer | ManagedLong
+        /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedBoolean : boolean */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMString : string */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMStringList : std.Array<string> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedLong : chrome-apps.chrome.integer */ js.Any
       ]
     ]
   ] = js.undefined
@@ -44,7 +43,11 @@ trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */]
   
   /** The network's proxy settings. */
   var ProxySettings: js.UndefOr[
-    typings.chromeApps.chrome.networking.onc.ProxySettings[unmanaged, String | ManagedDOMString, js.Array[String] | ManagedDOMStringList]
+    typings.chromeApps.chrome.networking.onc.ProxySettings[
+      unmanaged, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMString : string */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMStringList : std.Array<string> */ js.Any
+    ]
   ] = js.undefined
   
   /**
@@ -57,10 +60,10 @@ trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */]
   var SavedIPConfig: js.UndefOr[
     IPConfigProperties[
       unmanaged, 
-      Boolean | ManagedBoolean, 
-      String | ManagedDOMString, 
-      js.Array[String] | ManagedDOMStringList, 
-      integer | ManagedLong
+      /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedBoolean : boolean */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMString : string */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMStringList : std.Array<string> */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedLong : chrome-apps.chrome.integer */ js.Any
     ]
   ] = js.undefined
   
@@ -75,10 +78,10 @@ trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */]
   var StaticIPConfig: js.UndefOr[
     IPConfigProperties[
       M, 
-      Boolean | ManagedBoolean, 
-      String | ManagedDOMString, 
-      js.Array[String] | ManagedDOMStringList, 
-      integer | ManagedLong
+      /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedBoolean : boolean */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMString : string */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMStringList : std.Array<string> */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedLong : chrome-apps.chrome.integer */ js.Any
     ]
   ] = js.undefined
 }
@@ -107,10 +110,10 @@ object NetworkProperties {
       value: js.Array[
           IPConfigProperties[
             unmanaged, 
-            Boolean | ManagedBoolean, 
-            String | ManagedDOMString, 
-            js.Array[String] | ManagedDOMStringList, 
-            integer | ManagedLong
+            /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedBoolean : boolean */ js.Any, 
+            /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMString : string */ js.Any, 
+            /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMStringList : std.Array<string> */ js.Any, 
+            /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedLong : chrome-apps.chrome.integer */ js.Any
           ]
         ]
     ): Self = StObject.set(x, "IPConfigs", value.asInstanceOf[js.Any])
@@ -120,10 +123,10 @@ object NetworkProperties {
     inline def setIPConfigsVarargs(
       value: (IPConfigProperties[
           unmanaged, 
-          Boolean | ManagedBoolean, 
-          String | ManagedDOMString, 
-          js.Array[String] | ManagedDOMStringList, 
-          integer | ManagedLong
+          /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedBoolean : boolean */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMString : string */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMStringList : std.Array<string> */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedLong : chrome-apps.chrome.integer */ js.Any
         ])*
     ): Self = StObject.set(x, "IPConfigs", js.Array(value*))
     
@@ -132,7 +135,11 @@ object NetworkProperties {
     inline def setMacAddressUndefined: Self = StObject.set(x, "MacAddress", js.undefined)
     
     inline def setProxySettings(
-      value: ProxySettings[unmanaged, String | ManagedDOMString, js.Array[String] | ManagedDOMStringList]
+      value: ProxySettings[
+          unmanaged, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMString : string */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMStringList : std.Array<string> */ js.Any
+        ]
     ): Self = StObject.set(x, "ProxySettings", value.asInstanceOf[js.Any])
     
     inline def setProxySettingsUndefined: Self = StObject.set(x, "ProxySettings", js.undefined)
@@ -144,10 +151,10 @@ object NetworkProperties {
     inline def setSavedIPConfig(
       value: IPConfigProperties[
           unmanaged, 
-          Boolean | ManagedBoolean, 
-          String | ManagedDOMString, 
-          js.Array[String] | ManagedDOMStringList, 
-          integer | ManagedLong
+          /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedBoolean : boolean */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMString : string */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMStringList : std.Array<string> */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'unmanaged' extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedLong : chrome-apps.chrome.integer */ js.Any
         ]
     ): Self = StObject.set(x, "SavedIPConfig", value.asInstanceOf[js.Any])
     
@@ -160,10 +167,10 @@ object NetworkProperties {
     inline def setStaticIPConfig(
       value: IPConfigProperties[
           M, 
-          Boolean | ManagedBoolean, 
-          String | ManagedDOMString, 
-          js.Array[String] | ManagedDOMStringList, 
-          integer | ManagedLong
+          /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedBoolean : boolean */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMString : string */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMStringList : std.Array<string> */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedLong : chrome-apps.chrome.integer */ js.Any
         ]
     ): Self = StObject.set(x, "StaticIPConfig", value.asInstanceOf[js.Any])
     

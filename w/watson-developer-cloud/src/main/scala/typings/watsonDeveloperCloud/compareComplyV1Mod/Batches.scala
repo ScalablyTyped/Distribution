@@ -23,6 +23,6 @@ object Batches {
     
     inline def setBatchesUndefined: Self = StObject.set(x, "batches", js.undefined)
     
-    inline def setBatchesVarargs(value: BatchStatus*): Self = StObject.set(x, "batches", js.Array(value :_*))
+    inline def setBatchesVarargs(value: BatchStatus*): Self = StObject.set(x, "batches", js.Array(value*))
   }
 }

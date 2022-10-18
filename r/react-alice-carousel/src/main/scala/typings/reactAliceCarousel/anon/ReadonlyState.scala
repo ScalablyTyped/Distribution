@@ -1,6 +1,6 @@
 package typings.reactAliceCarousel.anon
 
-import typings.reactAliceCarousel.typesMod.ItemCoords
+import typings.reactAliceCarousel.libTypesMod.ItemCoords
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DialProtocol {
   
   /** Represents a DIAL application running on a remote device. */
-  @JSGlobal("Windows.Media.DialProtocol.DialApp")
+  /* note: abstract class */ @JSGlobal("Windows.Media.DialProtocol.DialApp")
   @js.native
-  abstract class DialApp ()
+  open class DialApp ()
     extends StObject
        with typings.winrtUwp.Windows.Media.DialProtocol.DialApp {
     
@@ -83,9 +83,9 @@ object DialProtocol {
   }
   
   /** Represents the state of the DIAL app. */
-  @JSGlobal("Windows.Media.DialProtocol.DialAppStateDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Media.DialProtocol.DialAppStateDetails")
   @js.native
-  abstract class DialAppStateDetails ()
+  open class DialAppStateDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Media.DialProtocol.DialAppStateDetails {
     
@@ -116,9 +116,9 @@ object DialProtocol {
   }
   
   /** Represents the remote device capable of running DIAL apps. */
-  @JSGlobal("Windows.Media.DialProtocol.DialDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Media.DialProtocol.DialDevice")
   @js.native
-  abstract class DialDevice ()
+  open class DialDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Media.DialProtocol.DialDevice {
     
@@ -203,9 +203,9 @@ object DialProtocol {
        with typings.winrtUwp.Windows.Media.DialProtocol.DialDevicePicker
   
   /** Represents the filter used to determine which devices to show in a DialDevicePicker . The filter parameters are OR-ed together to build the resulting filter. */
-  @JSGlobal("Windows.Media.DialProtocol.DialDevicePickerFilter")
+  /* note: abstract class */ @JSGlobal("Windows.Media.DialProtocol.DialDevicePickerFilter")
   @js.native
-  abstract class DialDevicePickerFilter ()
+  open class DialDevicePickerFilter ()
     extends StObject
        with typings.winrtUwp.Windows.Media.DialProtocol.DialDevicePickerFilter {
     
@@ -215,9 +215,9 @@ object DialProtocol {
   }
   
   /** Represents the event arguments for the DialDeviceSelected event on the DialDevicePicker object. */
-  @JSGlobal("Windows.Media.DialProtocol.DialDeviceSelectedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.DialProtocol.DialDeviceSelectedEventArgs")
   @js.native
-  abstract class DialDeviceSelectedEventArgs ()
+  open class DialDeviceSelectedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.DialProtocol.DialDeviceSelectedEventArgs {
     
@@ -227,9 +227,9 @@ object DialProtocol {
   }
   
   /** Represents the event arguments for the DisconnectButtonClicked event on the DialDevicePicker object. */
-  @JSGlobal("Windows.Media.DialProtocol.DialDisconnectButtonClickedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.DialProtocol.DialDisconnectButtonClickedEventArgs")
   @js.native
-  abstract class DialDisconnectButtonClickedEventArgs ()
+  open class DialDisconnectButtonClickedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.DialProtocol.DialDisconnectButtonClickedEventArgs {
     

@@ -1,21 +1,13 @@
 package typings.yaireoTagify
 
+import typings.yaireoTagify.distReactDottagifyMod.InputMode
 import typings.yaireoTagify.mod.DropDownPosition
 import typings.yaireoTagify.mod.TagifyMode
-import typings.yaireoTagify.reactTagifyMod.InputMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yaireoTagifyStrings {
-  
-  @js.native
-  sealed trait TagifyCoreSettings extends StObject
-  inline def TagifyCoreSettings: TagifyCoreSettings = "TagifyCoreSettings".asInstanceOf[TagifyCoreSettings]
-  
-  @js.native
-  sealed trait TagifySettings extends StObject
-  inline def TagifySettings: TagifySettings = "TagifySettings".asInstanceOf[TagifySettings]
   
   @js.native
   sealed trait add extends StObject

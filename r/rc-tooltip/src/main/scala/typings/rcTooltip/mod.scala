@@ -1,7 +1,7 @@
 package typings.rcTooltip
 
-import typings.rcTooltip.popupMod.ContentProps
-import typings.rcTooltip.tooltipMod.TooltipProps
+import typings.rcTooltip.esPopupMod.ContentProps
+import typings.rcTooltip.esTooltipMod.TooltipProps
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.react.mod.global.JSX.Element

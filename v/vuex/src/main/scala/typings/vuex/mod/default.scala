@@ -1,23 +1,22 @@
 package typings.vuex.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
 import typings.vuex.anon.FnCall
-import typings.vuex.helpersMod.ActionMethod
-import typings.vuex.helpersMod.Computed
-import typings.vuex.helpersMod.CustomVue
-import typings.vuex.helpersMod.Mapper
-import typings.vuex.helpersMod.MapperForAction
-import typings.vuex.helpersMod.MapperForActionWithNamespace
-import typings.vuex.helpersMod.MapperForMutation
-import typings.vuex.helpersMod.MapperForMutationWithNamespace
-import typings.vuex.helpersMod.MapperForState
-import typings.vuex.helpersMod.MapperForStateWithNamespace
-import typings.vuex.helpersMod.MapperWithNamespace
-import typings.vuex.helpersMod.MutationMethod
-import typings.vuex.helpersMod.NamespacedMappers
-import typings.vuex.loggerMod.LoggerOption
+import typings.vuex.typesHelpersMod.ActionMethod
+import typings.vuex.typesHelpersMod.Computed
+import typings.vuex.typesHelpersMod.CustomVue
+import typings.vuex.typesHelpersMod.Mapper
+import typings.vuex.typesHelpersMod.MapperForAction
+import typings.vuex.typesHelpersMod.MapperForActionWithNamespace
+import typings.vuex.typesHelpersMod.MapperForMutation
+import typings.vuex.typesHelpersMod.MapperForMutationWithNamespace
+import typings.vuex.typesHelpersMod.MapperForState
+import typings.vuex.typesHelpersMod.MapperForStateWithNamespace
+import typings.vuex.typesHelpersMod.MapperWithNamespace
+import typings.vuex.typesHelpersMod.MutationMethod
+import typings.vuex.typesHelpersMod.NamespacedMappers
+import typings.vuex.typesLoggerMod.LoggerOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,26 +65,10 @@ object default {
   @JSImport("vuex", "default.mapActions")
   @js.native
   def mapActions: Mapper[ActionMethod] & MapperWithNamespace[ActionMethod] & MapperForAction & MapperForActionWithNamespace = js.native
-  inline def mapActions[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any]]
-  inline def mapActions[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any]]
-  inline def mapActions[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any]]
-  inline def mapActions[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any]]
+  inline def mapActions[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod} */ js.Any]
+  inline def mapActions[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod} */ js.Any]
+  inline def mapActions[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod} */ js.Any]
+  inline def mapActions[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod} */ js.Any]
   inline def mapActions_=(
     x: Mapper[ActionMethod] & MapperWithNamespace[ActionMethod] & MapperForAction & MapperForActionWithNamespace
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapActions")(x.asInstanceOf[js.Any])
@@ -93,51 +76,19 @@ object default {
   @JSImport("vuex", "default.mapGetters")
   @js.native
   def mapGetters: Mapper[Computed] & MapperWithNamespace[Computed] = js.native
-  inline def mapGetters[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapGetters & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapGetters")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapGetters & TopLevel[Any]]
-  inline def mapGetters[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapGetters & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapGetters")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapGetters & TopLevel[Any]]
-  inline def mapGetters[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapGetters & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapGetters")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapGetters & TopLevel[Any]]
-  inline def mapGetters[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapGetters & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapGetters")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapGetters & TopLevel[Any]]
+  inline def mapGetters[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapGetters")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed} */ js.Any]
+  inline def mapGetters[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.Computed} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapGetters")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.Computed} */ js.Any]
+  inline def mapGetters[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapGetters")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed} */ js.Any]
+  inline def mapGetters[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.Computed} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapGetters")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.Computed} */ js.Any]
   inline def mapGetters_=(x: Mapper[Computed] & MapperWithNamespace[Computed]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapGetters")(x.asInstanceOf[js.Any])
   
   @JSImport("vuex", "default.mapMutations")
   @js.native
   def mapMutations: Mapper[MutationMethod] & MapperWithNamespace[MutationMethod] & MapperForMutation & MapperForMutationWithNamespace = js.native
-  inline def mapMutations[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod}
-    */ typings.vuex.vuexStrings.mapMutations & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapMutations")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod}
-    */ typings.vuex.vuexStrings.mapMutations & TopLevel[Any]]
-  inline def mapMutations[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod}
-    */ typings.vuex.vuexStrings.mapMutations & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapMutations")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod}
-    */ typings.vuex.vuexStrings.mapMutations & TopLevel[Any]]
-  inline def mapMutations[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod}
-    */ typings.vuex.vuexStrings.mapMutations & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapMutations")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod}
-    */ typings.vuex.vuexStrings.mapMutations & TopLevel[Any]]
-  inline def mapMutations[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod}
-    */ typings.vuex.vuexStrings.mapMutations & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapMutations")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod}
-    */ typings.vuex.vuexStrings.mapMutations & TopLevel[Any]]
+  inline def mapMutations[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapMutations")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod} */ js.Any]
+  inline def mapMutations[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapMutations")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod} */ js.Any]
+  inline def mapMutations[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapMutations")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod} */ js.Any]
+  inline def mapMutations[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapMutations")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod} */ js.Any]
   inline def mapMutations_=(
     x: Mapper[MutationMethod] & MapperWithNamespace[MutationMethod] & MapperForMutation & MapperForMutationWithNamespace
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapMutations")(x.asInstanceOf[js.Any])
@@ -145,42 +96,18 @@ object default {
   @JSImport("vuex", "default.mapState")
   @js.native
   def mapState: Mapper[Computed] & MapperWithNamespace[Computed] & MapperForState & MapperForStateWithNamespace = js.native
-  inline def mapState[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapState & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapState & TopLevel[Any]]
-  inline def mapState[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapState & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapState & TopLevel[Any]]
-  inline def mapState[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapState & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapState & TopLevel[Any]]
-  inline def mapState[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapState & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.mapState & TopLevel[Any]]
+  inline def mapState[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed} */ js.Any]
+  inline def mapState[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.Computed} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.Computed} */ js.Any]
+  inline def mapState[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed} */ js.Any]
+  inline def mapState[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.Computed} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: vuex.vuex/types/helpers.Computed} */ js.Any]
   inline def mapState_=(x: Mapper[Computed] & MapperWithNamespace[Computed] & MapperForState & MapperForStateWithNamespace): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapState")(x.asInstanceOf[js.Any])
   
   inline def mapState_SMap[S, Map /* <: Record[
     String, 
     js.ThisFunction2[/* this */ CustomVue, /* state */ S, /* getters */ Any, Any]
-  ] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineComputed<Map[K]>}
-    */ typings.vuex.vuexStrings.mapState & TopLevel[Map] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineComputed<Map[K]>}
-    */ typings.vuex.vuexStrings.mapState & TopLevel[Map]]
+  ] */](map: Map): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineComputed<Map[K]>} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineComputed<Map[K]>} */ js.Any]
   inline def mapState_SMap[S, Map /* <: Record[
     String, 
     js.ThisFunction2[/* this */ CustomVue, /* state */ S, /* getters */ Any, Any]
-  ] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineComputed<Map[K]>}
-    */ typings.vuex.vuexStrings.mapState & TopLevel[Map] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineComputed<Map[K]>}
-    */ typings.vuex.vuexStrings.mapState & TopLevel[Map]]
+  ] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineComputed<Map[K]>} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineComputed<Map[K]>} */ js.Any]
 }

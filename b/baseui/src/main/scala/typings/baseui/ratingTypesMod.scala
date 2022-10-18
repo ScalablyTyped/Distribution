@@ -1,7 +1,7 @@
 package typings.baseui
 
 import typings.baseui.anon.ValueNumber
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.baseui.stylesTypesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

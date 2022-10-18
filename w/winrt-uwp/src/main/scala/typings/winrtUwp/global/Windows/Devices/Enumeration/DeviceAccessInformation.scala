@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the information about access to a device. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceAccessInformation")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.DeviceAccessInformation")
 @js.native
-abstract class DeviceAccessInformation ()
+open class DeviceAccessInformation ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessInformation
 object DeviceAccessInformation {

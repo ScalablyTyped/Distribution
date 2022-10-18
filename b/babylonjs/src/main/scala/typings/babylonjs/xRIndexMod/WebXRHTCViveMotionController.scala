@@ -1,8 +1,8 @@
 package typings.babylonjs.xRIndexMod
 
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControllerObject
-import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandedness
+import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.IMinimalMotionControllerObject
+import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.MotionControllerHandedness
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXRHTCViveMotionController")
 @js.native
 open class WebXRHTCViveMotionController protected ()
-  extends typings.babylonjs.motionControllerIndexMod.WebXRHTCViveMotionController {
+  extends typings.babylonjs.xRMotionControllerIndexMod.WebXRHTCViveMotionController {
   /**
     * Create a new Vive motion controller object
     * @param scene the scene to use to create this controller

@@ -1,15 +1,12 @@
 package typings.reactNativePaper
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.callstackReactThemeProvider.hoistNonReactStaticsMod.NonReactStatics
+import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonReactStatics
 import typings.react.mod.ComponentType
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.global.JSX.Element
-import typings.reactNative.mod.Animated.AnimatedInterpolation
 import typings.reactNative.mod.Animated.Value
-import typings.reactNativePaper.activityIndicatorMod.Props
 import typings.reactNativePaper.anon.AccessibilityLabel
-import typings.reactNativePaper.anon.AccessibilityLabelColor
 import typings.reactNativePaper.anon.AccessibilityState
 import typings.reactNativePaper.anon.Action
 import typings.reactNativePaper.anon.Android
@@ -44,11 +41,13 @@ import typings.reactNativePaper.anon.PickPartialViewPropsRefAt
 import typings.reactNativePaper.anon.PickPickAnimatedPropsText
 import typings.reactNativePaper.anon.PickPickPropsiconkeytheme
 import typings.reactNativePaper.anon.PickPropschildrenthemeDee
+import typings.reactNativePaper.anon.PickPropscoloronPresstest
 import typings.reactNativePaper.anon.PickPropscoloronPresstestColor
 import typings.reactNativePaper.anon.PickPropsiconkeythemekeyo
 import typings.reactNativePaper.anon.PickPropsstyleanchorchild
 import typings.reactNativePaper.anon.PickPropsstylechildrentes
 import typings.reactNativePaper.anon.PickPropsstylechildrenvis
+import typings.reactNativePaper.anon.PickPropsstylecolorsizeon
 import typings.reactNativePaper.anon.PickPropsstylenavigationS
 import typings.reactNativePaper.anon.PickPropsstyletitlechildr
 import typings.reactNativePaper.anon.PickRemoveChildrenCompone
@@ -63,7 +62,7 @@ import typings.reactNativePaper.anon.PickTextInputPropsRefAttr
 import typings.reactNativePaper.anon.PickTextPropsstyleStylePr
 import typings.reactNativePaper.anon.PickTouchableWithoutFeedb
 import typings.reactNativePaper.anon.PickTouchableWithoutFeedbAccessibilityActions
-import typings.reactNativePaper.anon.PickTouchableWithoutFeedbAccessibilityHint
+import typings.reactNativePaper.anon.PickTouchableWithoutFeedbAccessibilityElementsHidden
 import typings.reactNativePaper.anon.PickViewPropsRefAttribute
 import typings.reactNativePaper.anon.PickViewPropsRefAttributeAccessibilityActions
 import typings.reactNativePaper.anon.PickViewPropsRefAttributeAccessibilityElementsHidden
@@ -74,9 +73,8 @@ import typings.reactNativePaper.anon.PickViewPropsRefAttributeAccessibilityRole
 import typings.reactNativePaper.anon.PickViewPropsRefAttributeAccessibilityState
 import typings.reactNativePaper.anon.PickViewPropsRefAttributeAccessibilityValue
 import typings.reactNativePaper.anon.PickViewPropsRefAttributeAccessibilityViewIsModal
-import typings.reactNativePaper.anon.PickiconIconSourcesizenum
 import typings.reactNativePaper.anon.PickpagenumbernumberOfPag
-import typings.reactNativePaper.anon.Pickstatuscheckedunchecke
+import typings.reactNativePaper.anon.PickthemeDeepPartialThemeAccessibilityLabelledBy
 import typings.reactNativePaper.anon.PickthemeDeepPartialThemeAccessibilityLanguage
 import typings.reactNativePaper.anon.PickthemeDeepPartialThemeAccessibilityLiveRegion
 import typings.reactNativePaper.anon.PickthemeDeepPartialThemeAccessibilityRole
@@ -87,7 +85,6 @@ import typings.reactNativePaper.anon.PickthemeDeepPartialThemeAccessible
 import typings.reactNativePaper.anon.PickthemeDeepPartialThemeAction
 import typings.reactNativePaper.anon.PickthemeDeepPartialThemeAdjustsFontSizeToFit
 import typings.reactNativePaper.anon.PickthemeDeepPartialThemeAllowFontScaling
-import typings.reactNativePaper.anon.PickthemeDeepPartialThemeAvatar
 import typings.reactNativePaper.anon.PickthemeDeepPartialThemeChildren
 import typings.reactNativePaper.anon.PointerEvents
 import typings.reactNativePaper.anon.Row
@@ -96,8 +93,6 @@ import typings.reactNativePaper.anon.ScrollArea
 import typings.reactNativePaper.anon.ShadowColor
 import typings.reactNativePaper.anon.ShadowOffset
 import typings.reactNativePaper.anon.ShadowOpacity
-import typings.reactNativePaper.anon.Status
-import typings.reactNativePaper.anon.Supported
 import typings.reactNativePaper.anon.SwitchPropsRefAttributesS
 import typings.reactNativePaper.anon.TextInputPropsRefAttribut
 import typings.reactNativePaper.anon.TextPropsstyleStylePropTe
@@ -112,27 +107,27 @@ import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityActio
 import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityElementsHidden
 import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityHint
 import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors
+import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityLabelledBy
 import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityLiveRegion
+import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityRole
 import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityState
 import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityValue
-import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityViewIsModal
-import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessible
-import typings.reactNativePaper.anon.`2`
+import typings.reactNativePaper.anon.`4`
 import typings.reactNativePaper.anon.pagenumbernumberOfPagesnu
 import typings.reactNativePaper.anon.platforminPlatformOSTyped
-import typings.reactNativePaper.anon.themeDeepPartialThemeundeAccessibilityElementsHidden
-import typings.reactNativePaper.cardMod.ElevatedCardProps
-import typings.reactNativePaper.cardMod.OutlinedCardProps
+import typings.reactNativePaper.anon.themeDeepPartialThemeunde
+import typings.reactNativePaper.libTypescriptComponentsCardCardMod.ElevatedCardProps
+import typings.reactNativePaper.libTypescriptComponentsCardCardMod.OutlinedCardProps
+import typings.reactNativePaper.libTypescriptComponentsFabAnimatedFABUtilsMod.CombinedStyles
+import typings.reactNativePaper.libTypescriptComponentsFabAnimatedFABUtilsMod.GetCombinedStylesProps
+import typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props
+import typings.reactNativePaper.libTypescriptComponentsTextInputTextInputMod.CompoundedComponent
+import typings.reactNativePaper.libTypescriptTypesMod.Fonts
+import typings.reactNativePaper.libTypescriptTypesMod.Omit
+import typings.reactNativePaper.libTypescriptTypesMod.RemoveChildren
+import typings.reactNativePaper.libTypescriptTypesMod.Theme
 import typings.reactNativePaper.reactNativePaperStrings.`type`
 import typings.reactNativePaper.reactNativePaperStrings.padding
-import typings.reactNativePaper.snackbarMod.SnackbarProps
-import typings.reactNativePaper.textInputMod.CompoundedComponent
-import typings.reactNativePaper.typescriptTypesMod.Fonts
-import typings.reactNativePaper.typescriptTypesMod.Omit
-import typings.reactNativePaper.typescriptTypesMod.RemoveChildren
-import typings.reactNativePaper.typescriptTypesMod.Theme
-import typings.reactNativePaper.utilsMod.CombinedStyles
-import typings.reactNativePaper.utilsMod.GetCombinedStylesProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -143,11 +138,28 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("react-native-paper", JSImport.Default)
+  @js.native
+  val default: ComponentType[PickRemoveChildrenComponeAccessibilityState] & (NonReactStatics[
+    (ComponentType[
+      (RemoveChildren[
+        ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
+          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* hasStyleThemeRest */ Props, Element]), 
+          js.Object
+        ])
+      ]) & AccessibilityState
+    ]) & (js.Function1[
+      /* hasIconLabelAccessibilityLabelAccessibilityStateCustomColorDisabledOnPressOnLongPressThemeStyleVisibleUppercaseTestIDAnimateFromExtendedIconModeRest */ typings.reactNativePaper.libTypescriptComponentsFabAnimatedFABAnimatedFABMod.Props, 
+      Element
+    ]), 
+    js.Object
+  ]) = js.native
+  
   @JSImport("react-native-paper", "ActivityIndicator")
   @js.native
   val ActivityIndicator: ComponentType[PickViewPropsRefAttribute] & (NonReactStatics[
     ComponentType[ViewPropsRefAttributesVie] & (js.Function1[
-      /* hasAnimatingIndicatorColorHidesWhenStoppedIndicatorSizeStyleThemeRest */ Props, 
+      /* hasAnimatingIndicatorColorHidesWhenStoppedIndicatorSizeStyleThemeRest */ typings.reactNativePaper.libTypescriptComponentsActivityIndicatorMod.Props, 
       Element
     ]), 
     js.Object
@@ -159,15 +171,12 @@ object mod {
     (ComponentType[
       (RemoveChildren[
         ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
-            /* hasStyleThemeRest */ ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors, 
-            Element
-          ]), 
+          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* hasStyleThemeRest */ Props, Element]), 
           js.Object
         ])
       ]) & AccessibilityState
     ]) & (js.Function1[
-      /* hasIconLabelAccessibilityLabelAccessibilityStateCustomColorDisabledOnPressOnLongPressThemeStyleVisibleUppercaseTestIDAnimateFromExtendedIconModeRest */ typings.reactNativePaper.animatedFABAnimatedFABMod.Props, 
+      /* hasIconLabelAccessibilityLabelAccessibilityStateCustomColorDisabledOnPressOnLongPressThemeStyleVisibleUppercaseTestIDAnimateFromExtendedIconModeRest */ typings.reactNativePaper.libTypescriptComponentsFabAnimatedFABAnimatedFABMod.Props, 
       Element
     ]), 
     js.Object
@@ -176,7 +185,10 @@ object mod {
   @JSImport("react-native-paper", "Appbar")
   @js.native
   val Appbar: ComponentType[PickPartialViewPropsRefAt] & (NonReactStatics[
-    ComponentType[PartialViewPropsRefAttrib] & (js.Function1[/* hasChildrenDarkStyleThemeRest */ PartialViewPropsRefAttrib, Element]), 
+    ComponentType[PartialViewPropsRefAttrib] & (js.Function1[
+      /* hasChildrenDarkStyleThemeRest */ typings.reactNativePaper.libTypescriptComponentsAppbarAppbarMod.Props, 
+      Element
+    ]), 
     js.Object
   ]) & Action = js.native
   
@@ -208,7 +220,7 @@ object mod {
   @js.native
   val Badge: ComponentType[PickAnimatedPropsTextProp] & (NonReactStatics[
     ComponentType[AnimatedPropsTextPropsRef] & (js.Function1[
-      /* hasChildrenSizeStyleThemeVisibleRest */ typings.reactNativePaper.badgeMod.Props, 
+      /* hasChildrenSizeStyleThemeVisibleRest */ typings.reactNativePaper.libTypescriptComponentsBadgeMod.Props, 
       Element
     ]), 
     js.Object
@@ -220,15 +232,12 @@ object mod {
     (ComponentType[
       (RemoveChildren[
         ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
-            /* hasStyleThemeRest */ ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors, 
-            Element
-          ]), 
+          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* hasStyleThemeRest */ Props, Element]), 
           js.Object
         ])
       ]) & ContentStyle
     ]) & (js.Function1[
-      /* hasVisibleIconChildrenActionsContentStyleStyleThemeOnShowAnimationFinishedOnHideAnimationFinishedRest */ typings.reactNativePaper.bannerMod.Props, 
+      /* hasVisibleIconChildrenActionsContentStyleStyleThemeOnShowAnimationFinishedOnHideAnimationFinishedRest */ typings.reactNativePaper.libTypescriptComponentsBannerMod.Props, 
       Element
     ]), 
     js.Object
@@ -237,17 +246,19 @@ object mod {
   @JSImport("react-native-paper", "BottomNavigation")
   @js.native
   val BottomNavigation: ComponentType[PickPropsstylenavigationS] & (NonReactStatics[
-    ComponentType[typings.reactNativePaper.bottomNavigationMod.Props] & SceneMap, 
+    (ComponentType[
+      typings.reactNativePaper.libTypescriptComponentsBottomNavigationBottomNavigationMod.Props
+    ]) & SceneMap, 
     js.Object
   ]) = js.native
   
   @JSImport("react-native-paper", "Button")
   @js.native
   val Button: (ComponentType[
-    PickthemeDeepPartialThemeAccessibilityLanguage | PickthemeDeepPartialThemeAccessibilityLiveRegion
+    PickthemeDeepPartialThemeAccessibilityLabelledBy | PickthemeDeepPartialThemeAccessibilityLanguage
   ]) & (NonReactStatics[
-    ComponentType[typings.reactNativePaper.buttonMod.Props] & (js.Function1[
-      /* hasDisabledCompactModeDarkLoadingIconButtonColorChildrenUppercaseAccessibilityLabelAccessibilityHintOnPressOnLongPressStyleThemeContentStyleLabelStyleTestIDAccessibleRest */ typings.reactNativePaper.buttonMod.Props, 
+    ComponentType[typings.reactNativePaper.libTypescriptComponentsButtonMod.Props] & (js.Function1[
+      /* hasDisabledCompactModeDarkLoadingIconButtonColorChildrenUppercaseAccessibilityLabelAccessibilityHintOnPressOnLongPressStyleThemeContentStyleLabelStyleTestIDAccessibleRest */ typings.reactNativePaper.libTypescriptComponentsButtonMod.Props, 
       Element
     ]), 
     js.Object
@@ -272,28 +283,36 @@ object mod {
     * export default MyComponent;
     * ```
     */
-  inline def Caption(props: typings.reactNativePaper.captionMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Caption")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Caption(props: typings.reactNativePaper.libTypescriptComponentsTypographyCaptionMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Caption")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-native-paper", "Card")
   @js.native
   val Card: (ComponentType[
-    PickthemeDeepPartialThemeAccessibilityRole | PickthemeDeepPartialThemeAccessibilityState | PickthemeDeepPartialThemeAccessibilityValue | PickthemeDeepPartialThemeAccessibilityViewIsModal
+    PickthemeDeepPartialThemeAccessibilityLiveRegion | PickthemeDeepPartialThemeAccessibilityRole | PickthemeDeepPartialThemeAccessibilityState | PickthemeDeepPartialThemeAccessibilityValue
   ]) & (NonReactStatics[
     (ComponentType[
-      (OutlinedCardProps & typings.reactNativePaper.cardMod.Props) | (ElevatedCardProps & typings.reactNativePaper.cardMod.Props)
+      (OutlinedCardProps & typings.reactNativePaper.libTypescriptComponentsCardCardMod.Props) | (ElevatedCardProps & typings.reactNativePaper.libTypescriptComponentsCardCardMod.Props)
     ]) & Content, 
     js.Object
   ]) = js.native
   
   @JSImport("react-native-paper", "Checkbox")
   @js.native
-  val Checkbox: ComponentType[Pickstatuscheckedunchecke] & (NonReactStatics[ComponentType[Status] & (js.Function1[/* props */ Status, Element]), js.Object]) & Android = js.native
+  val Checkbox: ComponentType[PickPropscoloronPresstest] & (NonReactStatics[
+    ComponentType[typings.reactNativePaper.libTypescriptComponentsCheckboxCheckboxMod.Props] & (js.Function1[
+      /* props */ typings.reactNativePaper.libTypescriptComponentsCheckboxCheckboxMod.Props, 
+      Element
+    ]), 
+    js.Object
+  ]) & Android = js.native
   
   @JSImport("react-native-paper", "Chip")
   @js.native
-  val Chip: (ComponentType[PickthemeDeepPartialThemeAccessible | PickthemeDeepPartialThemeAvatar]) & (NonReactStatics[
-    ComponentType[typings.reactNativePaper.chipMod.Props] & (js.Function1[
-      /* hasModeChildrenIconAvatarSelectedDisabledAccessibilityLabelCloseIconAccessibilityLabelOnPressOnLongPressOnCloseCloseIconTextStyleStyleThemeTestIDSelectedColorEllipsizeModeRest */ typings.reactNativePaper.chipMod.Props, 
+  val Chip: (ComponentType[
+    PickthemeDeepPartialThemeAccessibilityViewIsModal | PickthemeDeepPartialThemeAccessible
+  ]) & (NonReactStatics[
+    ComponentType[typings.reactNativePaper.libTypescriptComponentsChipMod.Props] & (js.Function1[
+      /* hasModeChildrenIconAvatarSelectedDisabledAccessibilityLabelCloseIconAccessibilityLabelOnPressOnLongPressOnCloseCloseIconTextStyleStyleThemeTestIDSelectedColorEllipsizeModeRest */ typings.reactNativePaper.libTypescriptComponentsChipMod.Props, 
       Element
     ]), 
     js.Object
@@ -1399,7 +1418,7 @@ object mod {
     */
   object DataTable {
     
-    inline def apply(hasChildrenStyleRest: typings.reactNativePaper.dataTableMod.Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(hasChildrenStyleRest: typings.reactNativePaper.libTypescriptComponentsDataTableDataTableMod.Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper", "DataTable")
     @js.native
@@ -1413,12 +1432,12 @@ object mod {
     @JSImport("react-native-paper", "DataTable.Header")
     @js.native
     def Header: ComponentType[PickViewPropsRefAttributeAccessibilityLanguage] & (NonReactStatics[
-        ComponentType[ViewPropsRefAttributesVieAccessibilityLiveRegion] & CallHasChildrenStyleThemeRest, 
+        ComponentType[ViewPropsRefAttributesVieAccessibilityLabelledBy] & CallHasChildrenStyleThemeRest, 
         js.Object
       ]) = js.native
     inline def Header_=(
       x: ComponentType[PickViewPropsRefAttributeAccessibilityLanguage] & (NonReactStatics[
-          ComponentType[ViewPropsRefAttributesVieAccessibilityLiveRegion] & CallHasChildrenStyleThemeRest, 
+          ComponentType[ViewPropsRefAttributesVieAccessibilityLabelledBy] & CallHasChildrenStyleThemeRest, 
           js.Object
         ])
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
@@ -1459,12 +1478,12 @@ object mod {
     
     @JSImport("react-native-paper", "DataTable.Title")
     @js.native
-    def Title: ComponentType[PickTouchableWithoutFeedbAccessibilityHint] & (NonReactStatics[
+    def Title: ComponentType[PickTouchableWithoutFeedbAccessibilityElementsHidden] & (NonReactStatics[
         ComponentType[TouchableWithoutFeedbackPAccessibilityActions] & CallHasNumericChildrenOnPressSortDirectionThemeTextStyleStyleNumberOfLinesRest, 
         js.Object
       ]) = js.native
     inline def Title_=(
-      x: ComponentType[PickTouchableWithoutFeedbAccessibilityHint] & (NonReactStatics[
+      x: ComponentType[PickTouchableWithoutFeedbAccessibilityElementsHidden] & (NonReactStatics[
           ComponentType[TouchableWithoutFeedbackPAccessibilityActions] & CallHasNumericChildrenOnPressSortDirectionThemeTextStyleStyleNumberOfLinesRest, 
           js.Object
         ])
@@ -1477,12 +1496,18 @@ object mod {
   
   @JSImport("react-native-paper", "Dialog")
   @js.native
-  val Dialog: ComponentType[PickPropsstylechildrenvis] & (NonReactStatics[ComponentType[typings.reactNativePaper.dialogMod.Props] & ScrollArea, js.Object]) = js.native
+  val Dialog: ComponentType[PickPropsstylechildrenvis] & (NonReactStatics[
+    ComponentType[typings.reactNativePaper.libTypescriptComponentsDialogDialogMod.Props] & ScrollArea, 
+    js.Object
+  ]) = js.native
   
   @JSImport("react-native-paper", "Divider")
   @js.native
   val Divider: ComponentType[PickRemoveChildrenforceToAccessibilityElementsHidden] & (NonReactStatics[
-    (ComponentType[RemoveChildren[TypeofView] & Inset]) & (js.Function1[/* hasInsetStyleThemeRest */ typings.reactNativePaper.dividerMod.Props, Element]), 
+    (ComponentType[RemoveChildren[TypeofView] & Inset]) & (js.Function1[
+      /* hasInsetStyleThemeRest */ typings.reactNativePaper.libTypescriptComponentsDividerMod.Props, 
+      Element
+    ]), 
     js.Object
   ]) = js.native
   
@@ -1491,14 +1516,14 @@ object mod {
     @JSImport("react-native-paper", "Drawer.Item")
     @js.native
     val Item: ComponentType[PickViewPropsRefAttributeAccessibilityRole] & (NonReactStatics[
-        ComponentType[ViewPropsRefAttributesVieAccessibilityState] & CallHasIconLabelActiveThemeStyleOnPressAccessibilityLabelRightRest, 
+        ComponentType[ViewPropsRefAttributesVieAccessibilityLiveRegion] & CallHasIconLabelActiveThemeStyleOnPressAccessibilityLabelRightRest, 
         js.Object
       ]) = js.native
     
     @JSImport("react-native-paper", "Drawer.Section")
     @js.native
     val Section: ComponentType[PickViewPropsRefAttributeAccessibilityState] & (NonReactStatics[
-        ComponentType[ViewPropsRefAttributesVieAccessibilityValue] & CallHasChildrenTitleThemeStyleRest, 
+        ComponentType[ViewPropsRefAttributesVieAccessibilityRole] & CallHasChildrenTitleThemeStyleRest, 
         js.Object
       ]) = js.native
   }
@@ -1509,23 +1534,12 @@ object mod {
     (ComponentType[
       (RemoveChildren[
         ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
-            /* hasStyleThemeRest */ ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors, 
-            Element
-          ]), 
+          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* hasStyleThemeRest */ Props, Element]), 
           js.Object
         ])
       ]) & Animated
     ]) & (js.Function1[
-      /* hasSmallIconLabelAccessibilityLabelAccessibilityStateAnimatedCustomColorDisabledOnPressOnLongPressThemeStyleVisibleUppercaseLoadingTestIDRest */ (RemoveChildren[
-        ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
-            /* hasStyleThemeRest */ ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors, 
-            Element
-          ]), 
-          js.Object
-        ])
-      ]) & Animated, 
+      /* hasSmallIconLabelAccessibilityLabelAccessibilityStateAnimatedCustomColorDisabledOnPressOnLongPressThemeStyleVisibleUppercaseLoadingTestIDRest */ typings.reactNativePaper.libTypescriptComponentsFabFabMod.Props, 
       Element
     ]), 
     js.Object
@@ -1550,21 +1564,15 @@ object mod {
     * export default MyComponent;
     * ```
     */
-  inline def Headline(props: typings.reactNativePaper.headlineMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Headline")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Headline(props: typings.reactNativePaper.libTypescriptComponentsTypographyHeadlineMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Headline")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-native-paper", "HelperText")
   @js.native
   val HelperText: ComponentType[PickOmitOmitPickPickAnima] & (NonReactStatics[
     (ComponentType[
-      (Omit[
-        Omit[
-          PickPickAnimatedPropsText | themeDeepPartialThemeundeAccessibilityElementsHidden, 
-          padding
-        ], 
-        `type`
-      ]) & Type
+      (Omit[Omit[PickPickAnimatedPropsText | themeDeepPartialThemeunde, padding], `type`]) & Type
     ]) & (js.Function1[
-      /* hasStyleTypeVisibleThemeOnLayoutPaddingRest */ typings.reactNativePaper.helperTextMod.Props, 
+      /* hasStyleTypeVisibleThemeOnLayoutPaddingRest */ typings.reactNativePaper.libTypescriptComponentsHelperTextMod.Props, 
       Element
     ]), 
     js.Object
@@ -1578,7 +1586,7 @@ object mod {
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & AccessibilityLabel
     ]) & (js.Function1[
-      /* hasIconCustomColorSizeAccessibilityLabelDisabledOnPressAnimatedThemeStyleRest */ typings.reactNativePaper.iconButtonMod.Props, 
+      /* hasIconCustomColorSizeAccessibilityLabelDisabledOnPressAnimatedThemeStyleRest */ typings.reactNativePaper.libTypescriptComponentsIconButtonMod.Props, 
       Element
     ]), 
     js.Object
@@ -1589,7 +1597,7 @@ object mod {
     @JSImport("react-native-paper", "List.Accordion")
     @js.native
     val Accordion: ComponentType[PickPropsstyletitlechildr] & (NonReactStatics[
-        ComponentType[typings.reactNativePaper.listAccordionMod.Props] & CallHasLeftRightTitleDescriptionChildrenThemeTitleStyleDescriptionStyleTitleNumberOfLinesDescriptionNumberOfLinesStyleIdTestIDOnPressOnLongPressExpandedPropAccessibilityLabel, 
+        ComponentType[typings.reactNativePaper.libTypescriptComponentsListListAccordionMod.Props] & CallHasLeftRightTitleDescriptionChildrenThemeTitleStyleDescriptionStyleTitleNumberOfLinesDescriptionNumberOfLinesStyleIdTestIDOnPressOnLongPressExpandedPropAccessibilityLabel, 
         js.Object
       ]) = js.native
     
@@ -1632,7 +1640,9 @@ object mod {
       */
     object AccordionGroup {
       
-      inline def apply(hasExpandedIdPropOnAccordionPressChildren: typings.reactNativePaper.listAccordionGroupMod.Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasExpandedIdPropOnAccordionPressChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+      inline def apply(
+        hasExpandedIdPropOnAccordionPressChildren: typings.reactNativePaper.libTypescriptComponentsListListAccordionGroupMod.Props
+      ): Element = ^.asInstanceOf[js.Dynamic].apply(hasExpandedIdPropOnAccordionPressChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
       
       @JSImport("react-native-paper", "List.AccordionGroup")
       @js.native
@@ -1671,7 +1681,7 @@ object mod {
       */
     object Icon {
       
-      inline def apply(hasIconIconColorStyle: typings.reactNativePaper.listIconMod.Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasIconIconColorStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+      inline def apply(hasIconIconColorStyle: typings.reactNativePaper.libTypescriptComponentsListListIconMod.Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasIconIconColorStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
       
       @JSImport("react-native-paper", "List.Icon")
       @js.native
@@ -1697,7 +1707,7 @@ object mod {
     @JSImport("react-native-paper", "List.Section")
     @js.native
     val Section: ComponentType[PickViewPropsRefAttributeAccessibilityValue] & (NonReactStatics[
-        ComponentType[ViewPropsRefAttributesVieAccessibilityViewIsModal] & CallHasChildrenTitleTitleStyleStyleRest, 
+        ComponentType[ViewPropsRefAttributesVieAccessibilityState] & CallHasChildrenTitleTitleStyleStyleRest, 
         js.Object
       ]) = js.native
     
@@ -1706,7 +1716,7 @@ object mod {
     val Subheader: (ComponentType[
         PickthemeDeepPartialThemeAdjustsFontSizeToFit | PickthemeDeepPartialThemeAllowFontScaling
       ]) & (NonReactStatics[
-        ComponentType[typings.reactNativePaper.listSubheaderMod.Props] & CallHasStyleThemeRest, 
+        ComponentType[typings.reactNativePaper.libTypescriptComponentsListListSubheaderMod.Props] & CallHasStyleThemeRest, 
         js.Object
       ]) = js.native
   }
@@ -1714,15 +1724,15 @@ object mod {
   @JSImport("react-native-paper", "Menu")
   @js.native
   val Menu: ComponentType[PickPropsstyleanchorchild] & (NonReactStatics[
-    ComponentType[typings.reactNativePaper.menuMod.Props] & TypeofMenu & Instantiable0[typings.reactNativePaper.menuMod.Menu], 
+    ComponentType[typings.reactNativePaper.libTypescriptComponentsMenuMenuMod.Props] & TypeofMenu & Instantiable0[typings.reactNativePaper.libTypescriptComponentsMenuMenuMod.Menu], 
     js.Object
   ]) = js.native
   
   @JSImport("react-native-paper", "Modal")
   @js.native
   val Modal: ComponentType[PickPropsstylechildrentes] & (NonReactStatics[
-    ComponentType[typings.reactNativePaper.modalMod.Props] & (js.Function1[
-      /* hasDismissableVisibleOverlayAccessibilityLabelOnDismissChildrenContentContainerStyleStyleThemeTestID */ typings.reactNativePaper.modalMod.Props, 
+    ComponentType[typings.reactNativePaper.libTypescriptComponentsModalMod.Props] & (js.Function1[
+      /* hasDismissableVisibleOverlayAccessibilityLabelOnDismissChildrenContentContainerStyleStyleThemeTestID */ typings.reactNativePaper.libTypescriptComponentsModalMod.Props, 
       Element | Null
     ]), 
     js.Object
@@ -1747,31 +1757,34 @@ object mod {
     * export default MyComponent;
     * ```
     */
-  inline def Paragraph(props: typings.reactNativePaper.paragraphMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Paragraph")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Paragraph(props: typings.reactNativePaper.libTypescriptComponentsTypographyParagraphMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Paragraph")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-native-paper", "Portal")
   @js.native
   val Portal: ComponentType[PickPropschildrenthemeDee] & (NonReactStatics[
-    ComponentType[typings.reactNativePaper.portalMod.Props] & TypeofPortal & Instantiable0[typings.reactNativePaper.portalMod.Portal], 
+    ComponentType[typings.reactNativePaper.libTypescriptComponentsPortalPortalMod.Props] & TypeofPortal & Instantiable0[typings.reactNativePaper.libTypescriptComponentsPortalPortalMod.Portal], 
     js.Object
   ]) = js.native
   
   @JSImport("react-native-paper", "ProgressBar")
   @js.native
   val ProgressBar: ComponentType[PickViewPropsRefAttributeAccessibilityViewIsModal] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessible] & (js.Function1[
-      /* hasColorIndeterminateStyleProgressVisibleThemeRest */ typings.reactNativePaper.progressBarMod.Props, 
+    ComponentType[ViewPropsRefAttributesVieAccessibilityValue] & (js.Function1[
+      /* hasColorIndeterminateStyleProgressVisibleThemeRest */ typings.reactNativePaper.libTypescriptComponentsProgressBarMod.Props, 
       Element
     ]), 
     js.Object
   ]) = js.native
   
-  inline def Provider(hasProps: typings.reactNativePaper.providerMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Provider")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Provider(hasProps: typings.reactNativePaper.libTypescriptCoreProviderMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Provider")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-native-paper", "RadioButton")
   @js.native
   val RadioButton: ComponentType[PickPropscoloronPresstestColor] & (NonReactStatics[
-    ComponentType[typings.reactNativePaper.radioButtonRadioButtonMod.Props] & (js.Function1[/* props */ typings.reactNativePaper.radioButtonRadioButtonMod.Props, Element]), 
+    ComponentType[typings.reactNativePaper.libTypescriptComponentsRadioButtonRadioButtonMod.Props] & (js.Function1[
+      /* props */ typings.reactNativePaper.libTypescriptComponentsRadioButtonRadioButtonMod.Props, 
+      Element
+    ]), 
     js.Object
   ]) & IOS = js.native
   
@@ -1784,7 +1797,10 @@ object mod {
   
   @JSImport("react-native-paper", "Snackbar")
   @js.native
-  val Snackbar: (ComponentType[PickthemeDeepPartialThemeAction | PickthemeDeepPartialThemeChildren]) & (NonReactStatics[ComponentType[SnackbarProps] & DURATIONLONG, js.Object]) = js.native
+  val Snackbar: (ComponentType[PickthemeDeepPartialThemeAction | PickthemeDeepPartialThemeChildren]) & (NonReactStatics[
+    ComponentType[typings.reactNativePaper.libTypescriptComponentsSnackbarMod.Props] & DURATIONLONG, 
+    js.Object
+  ]) = js.native
   
   /**
     * Typography component for showing a subheading.
@@ -1805,12 +1821,12 @@ object mod {
     * export default MyComponent;
     * ```
     */
-  inline def Subheading(props: typings.reactNativePaper.subheadingMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Subheading")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Subheading(props: typings.reactNativePaper.libTypescriptComponentsTypographySubheadingMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Subheading")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-native-paper", "Surface")
   @js.native
   val Surface: ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* hasStyleThemeRest */ typings.reactNativePaper.surfaceMod.Props, Element]), 
+    ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* hasStyleThemeRest */ Props, Element]), 
     js.Object
   ]) = js.native
   
@@ -1818,7 +1834,7 @@ object mod {
   @js.native
   val Switch: ComponentType[PickSwitchPropsRefAttribu] & (NonReactStatics[
     ComponentType[SwitchPropsRefAttributesS] & (js.Function1[
-      /* hasValueDisabledOnValueChangeColorThemeRest */ typings.reactNativePaper.switchMod.Props, 
+      /* hasValueDisabledOnValueChangeColorThemeRest */ typings.reactNativePaper.libTypescriptComponentsSwitchMod.Props, 
       Element
     ]), 
     js.Object
@@ -1837,7 +1853,7 @@ object mod {
   
   /* import warning: parser.TsParser#tsDeclVar Dropped IArray(withTheme, useTheme) */ @JSImport("react-native-paper", "ThemeProvider")
   @js.native
-  val ThemeProvider: ComponentType[`2`] = js.native
+  val ThemeProvider: ComponentType[`4`] = js.native
   
   /**
     * Typography component for showing a title.
@@ -1858,13 +1874,15 @@ object mod {
     * export default MyComponent;
     * ```
     */
-  inline def Title(props: typings.reactNativePaper.titleMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Title")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Title(props: typings.reactNativePaper.libTypescriptComponentsTypographyTitleMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Title")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-native-paper", "ToggleButton")
   @js.native
-  val ToggleButton: ComponentType[PickiconIconSourcesizenum] & (NonReactStatics[
-    ComponentType[AccessibilityLabelColor] & (js.Function1[
-      /* hasIconSizeThemeAccessibilityLabelDisabledStyleValueStatusOnPressRest */ AccessibilityLabelColor, 
+  val ToggleButton: ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[
+    (ComponentType[
+      typings.reactNativePaper.libTypescriptComponentsToggleButtonToggleButtonMod.Props
+    ]) & (js.Function1[
+      /* hasIconSizeThemeAccessibilityLabelDisabledStyleValueStatusOnPressRest */ typings.reactNativePaper.libTypescriptComponentsToggleButtonToggleButtonMod.Props, 
       Element
     ]), 
     js.Object
@@ -1872,17 +1890,17 @@ object mod {
   
   @JSImport("react-native-paper", "TouchableRipple")
   @js.native
-  val TouchableRipple: ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Supported, js.Object]) = js.native
+  val TouchableRipple: ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object]) = js.native
   
   inline def configureFonts(): Fonts = ^.asInstanceOf[js.Dynamic].applyDynamic("configureFonts")().asInstanceOf[Fonts]
   inline def configureFonts(config: platforminPlatformOSTyped): Fonts = ^.asInstanceOf[js.Dynamic].applyDynamic("configureFonts")(config.asInstanceOf[js.Any]).asInstanceOf[Fonts]
   
   inline def getCombinedStyles(hasIsAnimatedFromRightIsIconStaticDistanceAnimFAB: GetCombinedStylesProps): CombinedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getCombinedStyles")(hasIsAnimatedFromRightIsIconStaticDistanceAnimFAB.asInstanceOf[js.Any]).asInstanceOf[CombinedStyles]
   
-  inline def overlay(elevation: Double): (AnimatedInterpolation[Double | String]) | String = ^.asInstanceOf[js.Dynamic].applyDynamic("overlay")(elevation.asInstanceOf[js.Any]).asInstanceOf[(AnimatedInterpolation[Double | String]) | String]
-  inline def overlay(elevation: Double, surfaceColor: String): (AnimatedInterpolation[Double | String]) | String = (^.asInstanceOf[js.Dynamic].applyDynamic("overlay")(elevation.asInstanceOf[js.Any], surfaceColor.asInstanceOf[js.Any])).asInstanceOf[(AnimatedInterpolation[Double | String]) | String]
-  inline def overlay(elevation: Value): (AnimatedInterpolation[Double | String]) | String = ^.asInstanceOf[js.Dynamic].applyDynamic("overlay")(elevation.asInstanceOf[js.Any]).asInstanceOf[(AnimatedInterpolation[Double | String]) | String]
-  inline def overlay(elevation: Value, surfaceColor: String): (AnimatedInterpolation[Double | String]) | String = (^.asInstanceOf[js.Dynamic].applyDynamic("overlay")(elevation.asInstanceOf[js.Any], surfaceColor.asInstanceOf[js.Any])).asInstanceOf[(AnimatedInterpolation[Double | String]) | String]
+  inline def overlay(elevation: Double): /* import warning: importer.ImportType#apply Failed type conversion: number extends number ? string : react-native.react-native.Animated.AnimatedInterpolation<number | string> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overlay")(elevation.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: number extends number ? string : react-native.react-native.Animated.AnimatedInterpolation<number | string> */ js.Any]
+  inline def overlay(elevation: Double, surfaceColor: String): /* import warning: importer.ImportType#apply Failed type conversion: number extends number ? string : react-native.react-native.Animated.AnimatedInterpolation<number | string> */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overlay")(elevation.asInstanceOf[js.Any], surfaceColor.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: number extends number ? string : react-native.react-native.Animated.AnimatedInterpolation<number | string> */ js.Any]
+  inline def overlay(elevation: Value): /* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.Animated.Value extends number ? string : react-native.react-native.Animated.AnimatedInterpolation<number | string> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overlay")(elevation.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.Animated.Value extends number ? string : react-native.react-native.Animated.AnimatedInterpolation<number | string> */ js.Any]
+  inline def overlay(elevation: Value, surfaceColor: String): /* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.Animated.Value extends number ? string : react-native.react-native.Animated.AnimatedInterpolation<number | string> */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overlay")(elevation.asInstanceOf[js.Any], surfaceColor.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.Animated.Value extends number ? string : react-native.react-native.Animated.AnimatedInterpolation<number | string> */ js.Any]
   
   inline def shadow(): ShadowColor | ShadowOffset | ShadowOpacity = ^.asInstanceOf[js.Dynamic].applyDynamic("shadow")().asInstanceOf[ShadowColor | ShadowOffset | ShadowOpacity]
   inline def shadow(elevation: Double): ShadowColor | ShadowOffset | ShadowOpacity = ^.asInstanceOf[js.Dynamic].applyDynamic("shadow")(elevation.asInstanceOf[js.Any]).asInstanceOf[ShadowColor | ShadowOffset | ShadowOpacity]

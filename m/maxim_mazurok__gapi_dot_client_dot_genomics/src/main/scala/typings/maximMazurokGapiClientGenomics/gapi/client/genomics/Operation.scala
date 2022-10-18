@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientGenomics.gapi.client.genomics
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait Operation extends StObject {
   
   /** An OperationMetadata or Metadata object. This will always be returned with the Operation. */
   var metadata: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Operation & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** The server-assigned name, which is only unique within the same service that originally returns it. For example: `operations/CJHU7Oi_ChDrveSpBRjfuL-qzoWAgEw` */
@@ -25,9 +22,7 @@ trait Operation extends StObject {
   
   /** An Empty object. */
   var response: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Operation & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object Operation {
@@ -48,9 +43,7 @@ object Operation {
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setMetadata(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Operation & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -60,9 +53,7 @@ object Operation {
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setResponse(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Operation & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)

@@ -1,50 +1,44 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.approved
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rejected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Comment extends StObject {
   
-  /**
-    * @description A comment to accompany the deployment review
-    * @example Ship it!
-    */
-  var comment: String
+  var action: js.UndefOr[String] = js.undefined
   
-  /**
-    * @description The list of environment ids to approve or reject
-    * @example [
-    *   161171787,
-    *   161171795
-    * ]
-    */
-  var environment_ids: js.Array[Double]
+  var comment: js.UndefOr[Bodyhtml] = js.undefined
   
-  /**
-    * @description Whether to approve or reject deployment to the specified environments.
-    * @example approved
-    * @enum {string}
-    */
-  var state: approved | rejected
+  var issue: js.UndefOr[Assignee] = js.undefined
+  
+  var pages: js.UndefOr[js.Array[Pagename]] = js.undefined
 }
 object Comment {
   
-  inline def apply(comment: String, environment_ids: js.Array[Double], state: approved | rejected): Comment = {
-    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], environment_ids = environment_ids.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+  inline def apply(): Comment = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Comment]
   }
   
   extension [Self <: Comment](x: Self) {
     
-    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setEnvironment_ids(value: js.Array[Double]): Self = StObject.set(x, "environment_ids", value.asInstanceOf[js.Any])
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setEnvironment_idsVarargs(value: Double*): Self = StObject.set(x, "environment_ids", js.Array(value*))
+    inline def setComment(value: Bodyhtml): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    inline def setState(value: approved | rejected): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    
+    inline def setIssue(value: Assignee): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+    
+    inline def setIssueUndefined: Self = StObject.set(x, "issue", js.undefined)
+    
+    inline def setPages(value: js.Array[Pagename]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    
+    inline def setPagesVarargs(value: Pagename*): Self = StObject.set(x, "pages", js.Array(value*))
   }
 }

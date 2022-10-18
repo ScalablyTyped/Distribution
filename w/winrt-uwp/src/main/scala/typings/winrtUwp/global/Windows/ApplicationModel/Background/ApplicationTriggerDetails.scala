@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** (Applies to Windows Phone only) The details of an ApplicationTrigger . */
-@JSGlobal("Windows.ApplicationModel.Background.ApplicationTriggerDetails")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Background.ApplicationTriggerDetails")
 @js.native
-abstract class ApplicationTriggerDetails ()
+open class ApplicationTriggerDetails ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.ApplicationTriggerDetails {
   

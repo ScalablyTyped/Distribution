@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param [owner=null] - The owner of this state machine.
   */
-open class StateMachine[T /* <: typings.yuka.gameEntityMod.GameEntity */] ()
+open class StateMachine[T /* <: typings.yuka.srcCoreGameEntityMod.GameEntity */] ()
   extends typings.yuka.mod.StateMachine[T] {
   def this(owner: T) = this()
 }

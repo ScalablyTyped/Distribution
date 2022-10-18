@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait Signature extends StObject {
   
   /** Optional. Metadata associated with the user's signature. For example, the user's name or the user's title. */
   var metadata: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Signature & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Optional. Timestamp of the signature. */
@@ -37,9 +34,7 @@ object Signature {
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     inline def setMetadata(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Signature & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

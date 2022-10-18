@@ -1,9 +1,9 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.channelMod.PolarPositionChannel
-import typings.vegaLite.channelMod.PositionChannel
-import typings.vegaLite.scaleComponentMod.ScaleComponent
-import typings.vegaLite.unitMod.UnitModel
+import typings.vegaLite.buildSrcChannelMod.PolarPositionChannel
+import typings.vegaLite.buildSrcChannelMod.PositionChannel
+import typings.vegaLite.buildSrcCompileScaleComponentMod.ScaleComponent
+import typings.vegaLite.buildSrcCompileUnitMod.UnitModel
 import typings.vegaLite.vegaLiteStrings.mid
 import typings.vegaLite.vegaLiteStrings.zeroOrMax
 import typings.vegaLite.vegaLiteStrings.zeroOrMin

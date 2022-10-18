@@ -1,6 +1,6 @@
 package typings.jimpJpeg
 
-import typings.jimpCore.etcMod.ImageCallback
+import typings.jimpCore.typesEtcMod.ImageCallback
 import typings.jimpJpeg.anon.Imagejpeg
 import typings.jimpJpeg.anon.ImagejpegDecoderFn
 import typings.jimpJpeg.anon.ImagejpegEncoderFn

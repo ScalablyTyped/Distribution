@@ -1,9 +1,9 @@
 package typings.keepNetworkTbtcJs
 
-import typings.keepNetworkTbtcJs.bitcoinHelpersMod.BitcoinNetworkType
-import typings.keepNetworkTbtcJs.bitcoinHelpersMod.FoundTransaction
-import typings.keepNetworkTbtcJs.bitcoinHelpersMod.SPVProof
-import typings.keepNetworkTbtcJs.electrumClientMod.default
+import typings.keepNetworkTbtcJs.srcBitcoinHelpersMod.BitcoinNetworkType
+import typings.keepNetworkTbtcJs.srcBitcoinHelpersMod.FoundTransaction
+import typings.keepNetworkTbtcJs.srcBitcoinHelpersMod.SPVProof
+import typings.keepNetworkTbtcJs.srcLibElectrumClientMod.default
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

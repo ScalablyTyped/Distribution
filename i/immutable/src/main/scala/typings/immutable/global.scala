@@ -1,7 +1,6 @@
 package typings.immutable
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.immutable.mod.Collection
 import typings.immutable.mod.Collection.Indexed
 import typings.immutable.mod.Collection.Keyed
@@ -399,9 +398,7 @@ object global {
       inline def apply[K, V](): typings.immutable.mod.Map[K, V] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.immutable.mod.Map[K, V]]
       inline def apply[K, V](collection: js.Iterable[js.Tuple2[K, V]]): typings.immutable.mod.Map[K, V] = ^.asInstanceOf[js.Dynamic].apply(collection.asInstanceOf[js.Any]).asInstanceOf[typings.immutable.mod.Map[K, V]]
       inline def apply[K /* <: String | js.Symbol */, V](
-        obj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ P in K ]:? V}
-        */ typings.immutable.immutableStrings.^ & TopLevel[Any]
+        obj: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]:? V} */ js.Any
       ): typings.immutable.mod.Map[K, V] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[typings.immutable.mod.Map[K, V]]
       
       @JSGlobal("Immutable.Map")

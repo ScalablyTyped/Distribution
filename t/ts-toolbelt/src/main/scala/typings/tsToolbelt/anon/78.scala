@@ -1,6 +1,6 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.keyMod.Key
+import typings.tsToolbelt.outAnyKeyMod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

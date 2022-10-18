@@ -10,11 +10,15 @@ trait Focused extends StObject {
   
   var focused: Boolean
   
-  var route: typings.reactNativePaper.bottomNavigationMod.Route
+  var route: typings.reactNativePaper.libTypescriptComponentsBottomNavigationBottomNavigationMod.Route
 }
 object Focused {
   
-  inline def apply(color: String, focused: Boolean, route: typings.reactNativePaper.bottomNavigationMod.Route): Focused = {
+  inline def apply(
+    color: String,
+    focused: Boolean,
+    route: typings.reactNativePaper.libTypescriptComponentsBottomNavigationBottomNavigationMod.Route
+  ): Focused = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[Focused]
   }
@@ -25,6 +29,6 @@ object Focused {
     
     inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
-    inline def setRoute(value: typings.reactNativePaper.bottomNavigationMod.Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: typings.reactNativePaper.libTypescriptComponentsBottomNavigationBottomNavigationMod.Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

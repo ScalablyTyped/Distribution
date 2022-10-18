@@ -1,8 +1,8 @@
 package typings.redisClient.anon
 
-import typings.redisClient.commandsClusterSLOTSMod.ClusterSlotsRawReply
-import typings.redisClient.commandsClusterSLOTSMod.ClusterSlotsReply
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsClusterSLOTSMod.ClusterSlotsRawReply
+import typings.redisClient.distLibCommandsClusterSLOTSMod.ClusterSlotsReply
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

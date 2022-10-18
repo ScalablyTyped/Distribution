@@ -3,7 +3,6 @@ package typings.binaryParser
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.TopLevel
 import typings.binaryParser.mod.Parser.ArrayOptions
 import typings.binaryParser.mod.Parser.BufferOptions
 import typings.binaryParser.mod.Parser.ChoiceOptions
@@ -24,7 +23,11 @@ object mod {
   @js.native
   trait Parser[O /* <: js.UndefOr[js.Object] */] extends StObject {
     
-    def array[N /* <: String */, Q /* <: ArrayOptions */](name: N, options: Q): Next[O, N, js.Array[Any | Double | js.Object]] = js.native
+    def array[N /* <: String */, Q /* <: ArrayOptions */](name: N, options: Q): Next[
+        O, 
+        N, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Q extends {  type :infer T} ? T extends binary-parser.binary-parser.Parser<infer O> ? O extends undefined ? std.Array<{}> : std.Array<O> : T extends string ? std.Array<number> : never : never */ js.Any
+      ] = js.native
     
     def bit1[N /* <: String */](name: N): Next[O, N, Double] = js.native
     def bit1[N /* <: String */](name: N, options: Options): Next[O, N, Double] = js.native
@@ -124,7 +127,11 @@ object mod {
     
     def buffer[N /* <: String */](name: N, options: BufferOptions): Next[O, N, Buffer] = js.native
     
-    def choice[N /* <: String */, Q /* <: ChoiceOptions */](name: N, options: Q): Next[O, N, Any | js.Object] = js.native
+    def choice[N /* <: String */, Q /* <: ChoiceOptions */](name: N, options: Q): Next[
+        O, 
+        N, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Q extends {  choices :infer C} ? C extends {[ key in keyof C ]: infer T} ? T extends binary-parser.binary-parser.Parser<infer O> ? O extends undefined ? {} : O : T extends string ? any : never : never : never */ js.Any
+      ] = js.native
     
     def compile(): Unit = js.native
     
@@ -185,7 +192,11 @@ object mod {
     /* [sic] */
     def namely(alias: String): Parser[O] = js.native
     
-    def nest[N /* <: String */, Q /* <: NestOptions */](name: N, options: Q): Next[O, N, js.Object] = js.native
+    def nest[N /* <: String */, Q /* <: NestOptions */](name: N, options: Q): Next[
+        O, 
+        N, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Q extends {  type :infer T} ? T extends binary-parser.binary-parser.Parser<infer O> ? O extends undefined ? {} : O : never : never */ js.Any
+      ] = js.native
     
     def parse(buffer: Buffer): Parsed[O] = js.native
     def parse(
@@ -388,9 +399,7 @@ object mod {
     type Next[O /* <: js.UndefOr[js.Object] */, N /* <: String */, T /* <: Any */] = Parser[
         Valid[
           O, 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ name in N ]: T}
-      */ typings.binaryParser.binaryParserStrings.Next & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ name in N ]: T} */ js.Any
         ]
       ]
     
@@ -421,7 +430,15 @@ object mod {
       }
     }
     
-    type Parsed[O /* <: js.UndefOr[js.Object] */] = O | js.Object
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      O extends undefined ? {} : O
+      }}}
+      */
+    @js.native
+    trait Parsed[O /* <: js.UndefOr[js.Object] */] extends StObject
     
     trait StringOptions
       extends StObject
@@ -468,7 +485,15 @@ object mod {
       }
     }
     
-    type Valid[O /* <: js.UndefOr[js.Object] */, P /* <: js.Object */] = (O & P) | P
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      O extends undefined ? P : O & P
+      }}}
+      */
+    @js.native
+    trait Valid[O /* <: js.UndefOr[js.Object] */, P /* <: js.Object */] extends StObject
     
     type _To = ParserConstructor
     

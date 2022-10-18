@@ -45,12 +45,4 @@ object monocleTsStrings {
   @js.native
   sealed trait Traversal extends StObject
   inline def Traversal: Traversal = "Traversal".asInstanceOf[Traversal]
-  
-  @js.native
-  sealed trait fromProps extends StObject
-  inline def fromProps: fromProps = "fromProps".asInstanceOf[fromProps]
-  
-  @js.native
-  sealed trait props extends StObject
-  inline def props: props = "props".asInstanceOf[props]
 }

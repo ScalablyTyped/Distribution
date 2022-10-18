@@ -2,8 +2,8 @@ package typings.callsiteRecord
 
 import typings.callsiteRecord.anon.PickCreateCallsiteRecordO
 import typings.callsiteRecord.anon.PickCreateCallsiteRecordOByFunctionName
-import typings.callsiteRecord.renderersMod.Renderer
-import typings.callsiteRecord.renderersMod.Renderers
+import typings.callsiteRecord.libRenderersMod.Renderer
+import typings.callsiteRecord.libRenderersMod.Renderers
 import typings.stackframe.mod.StackFrameOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

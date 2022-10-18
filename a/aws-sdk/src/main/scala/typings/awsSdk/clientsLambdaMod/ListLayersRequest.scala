@@ -1,0 +1,54 @@
+package typings.awsSdk.clientsLambdaMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ListLayersRequest extends StObject {
+  
+  /**
+    * The compatible instruction set architecture.
+    */
+  var CompatibleArchitecture: js.UndefOr[Architecture] = js.undefined
+  
+  /**
+    * A runtime identifier. For example, go1.x.
+    */
+  var CompatibleRuntime: js.UndefOr[Runtime] = js.undefined
+  
+  /**
+    * A pagination token returned by a previous call.
+    */
+  var Marker: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The maximum number of layers to return.
+    */
+  var MaxItems: js.UndefOr[MaxLayerListItems] = js.undefined
+}
+object ListLayersRequest {
+  
+  inline def apply(): ListLayersRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ListLayersRequest]
+  }
+  
+  extension [Self <: ListLayersRequest](x: Self) {
+    
+    inline def setCompatibleArchitecture(value: Architecture): Self = StObject.set(x, "CompatibleArchitecture", value.asInstanceOf[js.Any])
+    
+    inline def setCompatibleArchitectureUndefined: Self = StObject.set(x, "CompatibleArchitecture", js.undefined)
+    
+    inline def setCompatibleRuntime(value: Runtime): Self = StObject.set(x, "CompatibleRuntime", value.asInstanceOf[js.Any])
+    
+    inline def setCompatibleRuntimeUndefined: Self = StObject.set(x, "CompatibleRuntime", js.undefined)
+    
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    
+    inline def setMaxItems(value: MaxLayerListItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+  }
+}

@@ -1,6 +1,6 @@
 package typings.oracledb.mod
 
-import typings.oracledb.anon.TypeClass
+import typings.oracledb.anon.Type
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +20,7 @@ trait BaseDBObject[T] extends StObject {
   /**
     * When dbObject.isCollection is false, this will be an object containing attributes corresponding to the Oracle Database object attributes.
     */
-  var attributes: Record[String, TypeClass[T]]
+  var attributes: Record[String, Type[T]]
   
   /**
     * Deletes the value from collection at the given index.
@@ -51,7 +51,7 @@ trait BaseDBObject[T] extends StObject {
   /**
     * Returns a JavaScript array containing the ‘index’ keys.
     */
-  def getKeys(): js.Array[Double | (/* keyof T */ String)]
+  def getKeys(): /* import warning: importer.ImportType#apply Failed type conversion: T extends string | number ? std.Array<number> : std.Array<keyof T> */ js.Any
   
   /**
     * To obtain the last index for later use to obtain a value.
@@ -104,7 +104,7 @@ object BaseDBObject {
   
   inline def apply[T](
     append: T => Unit,
-    attributes: Record[String, TypeClass[T]],
+    attributes: Record[String, Type[T]],
     deleteElement: Double => Unit,
     elementType: Double,
     elementTypeClass: DBObjectClass[T],
@@ -112,7 +112,7 @@ object BaseDBObject {
     fqn: String,
     getElement: Double => Any,
     getFirstIndex: () => Double,
-    getKeys: () => js.Array[Double | (/* keyof T */ String)],
+    getKeys: () => /* import warning: importer.ImportType#apply Failed type conversion: T extends string | number ? std.Array<number> : std.Array<keyof T> */ js.Any,
     getLastIndex: () => Double,
     getNextIndex: () => Double,
     getPrevIndex: () => Double,
@@ -132,7 +132,7 @@ object BaseDBObject {
     
     inline def setAppend(value: T => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    inline def setAttributes(value: Record[String, TypeClass[T]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Record[String, Type[T]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setDeleteElement(value: Double => Unit): Self = StObject.set(x, "deleteElement", js.Any.fromFunction1(value))
     
@@ -148,7 +148,9 @@ object BaseDBObject {
     
     inline def setGetFirstIndex(value: () => Double): Self = StObject.set(x, "getFirstIndex", js.Any.fromFunction0(value))
     
-    inline def setGetKeys(value: () => js.Array[Double | (/* keyof T */ String)]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
+    inline def setGetKeys(
+      value: () => /* import warning: importer.ImportType#apply Failed type conversion: T extends string | number ? std.Array<number> : std.Array<keyof T> */ js.Any
+    ): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
     
     inline def setGetLastIndex(value: () => Double): Self = StObject.set(x, "getLastIndex", js.Any.fromFunction0(value))
     

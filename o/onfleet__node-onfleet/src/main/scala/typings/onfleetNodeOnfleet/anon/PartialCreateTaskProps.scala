@@ -1,12 +1,12 @@
 package typings.onfleetNodeOnfleet.anon
 
-import typings.onfleetNodeOnfleet.destinationsMod.CreateDestinationProps
 import typings.onfleetNodeOnfleet.metadataMod.OnfleetMetadata
-import typings.onfleetNodeOnfleet.recipientsMod.CreateRecipientProps
-import typings.onfleetNodeOnfleet.tasksMod.Barcode
-import typings.onfleetNodeOnfleet.tasksMod.TaskAutoAssign
-import typings.onfleetNodeOnfleet.tasksMod.TaskCompletionRequirements
-import typings.onfleetNodeOnfleet.tasksMod.TaskContainer
+import typings.onfleetNodeOnfleet.resourcesDestinationsMod.CreateDestinationProps
+import typings.onfleetNodeOnfleet.resourcesRecipientsMod.CreateRecipientProps
+import typings.onfleetNodeOnfleet.resourcesTasksMod.Barcode
+import typings.onfleetNodeOnfleet.resourcesTasksMod.TaskAutoAssign
+import typings.onfleetNodeOnfleet.resourcesTasksMod.TaskCompletionRequirements
+import typings.onfleetNodeOnfleet.resourcesTasksMod.TaskContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

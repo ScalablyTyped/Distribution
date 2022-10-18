@@ -1284,6 +1284,14 @@ object global {
     
     // We can't recurse forever because `type` can't be self-referential;
     // let's assume it's reasonable to do a single React.lazy() around a single React.memo() / vice-versa
-    type LibraryManagedAttributes[C, P] = ReactManagedAttributes[Any | C, P]
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      C extends react.react.MemoExoticComponent<infer T> | react.react.LazyExoticComponent<infer T> ? T extends react.react.MemoExoticComponent<infer U> | react.react.LazyExoticComponent<infer U> ? babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactManagedAttributes<U, P> : babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactManagedAttributes<T, P> : babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactManagedAttributes<C, P>
+      }}}
+      */
+    @js.native
+    trait LibraryManagedAttributes[C, P] extends StObject
   }
 }

@@ -240,6 +240,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object expressServeStaticCoreAugmentingMod {
     
     trait Request extends StObject {

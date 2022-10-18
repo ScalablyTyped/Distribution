@@ -2,12 +2,12 @@ package typings.tokeyCore
 
 import typings.tokeyCore.anon.End
 import typings.tokeyCore.anon.Start
-import typings.tokeyCore.coreMod.TokyOptions
+import typings.tokeyCore.distCoreMod.TokyOptions
+import typings.tokeyCore.distTypesMod.Token
 import typings.tokeyCore.tokeyCoreStrings._empty
 import typings.tokeyCore.tokeyCoreStrings.`line-comment`
 import typings.tokeyCore.tokeyCoreStrings.`multi-comment`
 import typings.tokeyCore.tokeyCoreStrings.`unclosed-comment`
-import typings.tokeyCore.typesMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ object mod {
   @JSImport("@tokey/core", "Seeker")
   @js.native
   open class Seeker[T /* <: Token[Any] */] protected ()
-    extends typings.tokeyCore.seekerMod.Seeker[T] {
+    extends typings.tokeyCore.distSeekerMod.Seeker[T] {
     def this(tokens: js.Array[T]) = this()
   }
   

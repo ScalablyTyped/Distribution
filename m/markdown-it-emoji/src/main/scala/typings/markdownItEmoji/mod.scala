@@ -1,6 +1,5 @@
 package typings.markdownItEmoji
 
-import org.scalablytyped.runtime.TopLevel
 import typings.markdownIt.libMod.PluginSimple
 import typings.markdownIt.libMod.PluginWithOptions
 import typings.markdownItEmoji.anon._empty
@@ -76,9 +75,15 @@ object mod
     }
   }
   
-  type PartialRecord[K /* <: /* keyof any */ String */, T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in K ]:? T | std.Array<T>}
-    */ typings.markdownItEmoji.markdownItEmojiStrings.PartialRecord & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in K ]:? T | std.Array<T>}
+    }}}
+    */
+  @js.native
+  trait PartialRecord[K /* <: /* keyof any */ String */, T] extends StObject
   
   type Shortcut = LiteralUnion[
     angry | blush | broken_heart | confused | cry | frowning | heart | imp | innocent | joy | kissing | laughing | neutral_face | open_mouth | rage | smile | smiley | smiling_imp | sob | stuck_out_tongue | sunglasses | sweat_smile | sweat | unamused | wink, 

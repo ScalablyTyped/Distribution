@@ -16,7 +16,7 @@ trait TypeofCheckboxControlValu
   
   var ɵdir: ɵɵDirectiveDeclaration[
     CheckboxControlValueAccessor, 
-    String, 
+    /* input[type=checkbox][formControlName],input[type=checkbox][formControl],input[type=checkbox][ngModel] */ String, 
     scala.Nothing, 
     js.Object, 
     js.Object, 

@@ -1,15 +1,12 @@
 package typings.mirrorx.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.history.mod.History
 import typings.history.mod.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RouteComponentProps[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof Params ]:? string}
-  */ typings.mirrorx.mirrorxStrings.RouteComponentProps & TopLevel[Any] */] extends StObject {
+trait RouteComponentProps[Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */] extends StObject {
   
   var history: History
   
@@ -21,9 +18,7 @@ trait RouteComponentProps[Params /* <: /* import warning: importer.ImportType#ap
 }
 object RouteComponentProps {
   
-  inline def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.mirrorx.mirrorxStrings.RouteComponentProps & TopLevel[Any] */](
+  inline def apply[Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](
     history: History,
     location: Location,
     `match`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify match<Params> */ Any
@@ -33,9 +28,7 @@ object RouteComponentProps {
     __obj.asInstanceOf[RouteComponentProps[Params]]
   }
   
-  extension [Self <: RouteComponentProps[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.mirrorx.mirrorxStrings.RouteComponentProps & TopLevel[Any] */](x: Self & RouteComponentProps[Params]) {
+  extension [Self <: RouteComponentProps[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](x: Self & RouteComponentProps[Params]) {
     
     inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

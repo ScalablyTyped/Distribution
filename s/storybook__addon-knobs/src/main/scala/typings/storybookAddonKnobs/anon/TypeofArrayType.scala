@@ -2,8 +2,8 @@ package typings.storybookAddonKnobs.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.Record
-import typings.storybookAddonKnobs.arrayMod.ArrayTypeKnobValue
-import typings.storybookAddonKnobs.arrayMod.default
+import typings.storybookAddonKnobs.distComponentsTypesArrayMod.ArrayTypeKnobValue
+import typings.storybookAddonKnobs.distComponentsTypesArrayMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

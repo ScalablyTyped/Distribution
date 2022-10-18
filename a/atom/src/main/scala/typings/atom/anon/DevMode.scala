@@ -33,7 +33,7 @@ object DevMode {
     
     inline def setPathsToOpen(value: js.Array[String]): Self = StObject.set(x, "pathsToOpen", value.asInstanceOf[js.Any])
     
-    inline def setPathsToOpenVarargs(value: String*): Self = StObject.set(x, "pathsToOpen", js.Array(value :_*))
+    inline def setPathsToOpenVarargs(value: String*): Self = StObject.set(x, "pathsToOpen", js.Array(value*))
     
     inline def setSafeMode(value: Boolean): Self = StObject.set(x, "safeMode", value.asInstanceOf[js.Any])
     

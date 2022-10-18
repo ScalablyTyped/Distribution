@@ -1,7 +1,7 @@
 package typings.redisClient
 
-import typings.redisClient.luaScriptMod.RedisScriptConfig
-import typings.redisClient.luaScriptMod.SHA1
+import typings.redisClient.distLibLuaScriptMod.RedisScriptConfig
+import typings.redisClient.distLibLuaScriptMod.SHA1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,27 +15,27 @@ object mod {
   @JSImport("@redis/client", "AbortError")
   @js.native
   open class AbortError ()
-    extends typings.redisClient.errorsMod.AbortError
+    extends typings.redisClient.distLibErrorsMod.AbortError
   
   @JSImport("@redis/client", "ClientClosedError")
   @js.native
   open class ClientClosedError ()
-    extends typings.redisClient.errorsMod.ClientClosedError
+    extends typings.redisClient.distLibErrorsMod.ClientClosedError
   
   @JSImport("@redis/client", "ConnectionTimeoutError")
   @js.native
   open class ConnectionTimeoutError ()
-    extends typings.redisClient.errorsMod.ConnectionTimeoutError
+    extends typings.redisClient.distLibErrorsMod.ConnectionTimeoutError
   
   @JSImport("@redis/client", "DisconnectsClientError")
   @js.native
   open class DisconnectsClientError ()
-    extends typings.redisClient.errorsMod.DisconnectsClientError
+    extends typings.redisClient.distLibErrorsMod.DisconnectsClientError
   
   @JSImport("@redis/client", "ErrorReply")
   @js.native
   open class ErrorReply protected ()
-    extends typings.redisClient.errorsMod.ErrorReply {
+    extends typings.redisClient.distLibErrorsMod.ErrorReply {
     def this(message: String) = this()
   }
   
@@ -44,36 +44,36 @@ object mod {
   object GeoReplyWith extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.redisClient.genericTransformersMod.GeoReplyWith & String] = js.native
+    def apply(value: String): js.UndefOr[typings.redisClient.distLibCommandsGenericTransformersMod.GeoReplyWith & String] = js.native
     
-    /* "WITHCOORD" */ val COORDINATES: typings.redisClient.genericTransformersMod.GeoReplyWith.COORDINATES & String = js.native
+    /* "WITHCOORD" */ val COORDINATES: typings.redisClient.distLibCommandsGenericTransformersMod.GeoReplyWith.COORDINATES & String = js.native
     
-    /* "WITHDIST" */ val DISTANCE: typings.redisClient.genericTransformersMod.GeoReplyWith.DISTANCE & String = js.native
+    /* "WITHDIST" */ val DISTANCE: typings.redisClient.distLibCommandsGenericTransformersMod.GeoReplyWith.DISTANCE & String = js.native
     
-    /* "WITHHASH" */ val HASH: typings.redisClient.genericTransformersMod.GeoReplyWith.HASH & String = js.native
+    /* "WITHHASH" */ val HASH: typings.redisClient.distLibCommandsGenericTransformersMod.GeoReplyWith.HASH & String = js.native
   }
   
   @JSImport("@redis/client", "ReconnectStrategyError")
   @js.native
   open class ReconnectStrategyError protected ()
-    extends typings.redisClient.errorsMod.ReconnectStrategyError {
+    extends typings.redisClient.distLibErrorsMod.ReconnectStrategyError {
     def this(originalError: js.Error, socketError: Any) = this()
   }
   
   @JSImport("@redis/client", "RootNodesUnavailableError")
   @js.native
   open class RootNodesUnavailableError ()
-    extends typings.redisClient.errorsMod.RootNodesUnavailableError
+    extends typings.redisClient.distLibErrorsMod.RootNodesUnavailableError
   
   @JSImport("@redis/client", "SocketClosedUnexpectedlyError")
   @js.native
   open class SocketClosedUnexpectedlyError ()
-    extends typings.redisClient.errorsMod.SocketClosedUnexpectedlyError
+    extends typings.redisClient.distLibErrorsMod.SocketClosedUnexpectedlyError
   
   @JSImport("@redis/client", "WatchError")
   @js.native
   open class WatchError ()
-    extends typings.redisClient.errorsMod.WatchError
+    extends typings.redisClient.distLibErrorsMod.WatchError
   
   @JSImport("@redis/client", "commandOptions")
   @js.native

@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod.rest
 
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "rest.RestOperationParameterType")
 @js.native
 open class RestOperationParameterType protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.rest.RestOperationParameterType {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.rest.RestOperationParameterType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object RestOperationParameterType {
@@ -20,30 +20,30 @@ object RestOperationParameterType {
   /* static member */
   @JSImport("mendixmodelsdk", "rest.RestOperationParameterType.Body")
   @js.native
-  def Body: typings.mendixmodelsdk.restMod.rest.RestOperationParameterType = js.native
-  inline def Body_=(x: typings.mendixmodelsdk.restMod.rest.RestOperationParameterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
+  def Body: typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameterType = js.native
+  inline def Body_=(x: typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "rest.RestOperationParameterType.Form")
   @js.native
-  def Form: typings.mendixmodelsdk.restMod.rest.RestOperationParameterType = js.native
-  inline def Form_=(x: typings.mendixmodelsdk.restMod.rest.RestOperationParameterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Form")(x.asInstanceOf[js.Any])
+  def Form: typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameterType = js.native
+  inline def Form_=(x: typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Form")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "rest.RestOperationParameterType.Header")
   @js.native
-  def Header: typings.mendixmodelsdk.restMod.rest.RestOperationParameterType = js.native
-  inline def Header_=(x: typings.mendixmodelsdk.restMod.rest.RestOperationParameterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
+  def Header: typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameterType = js.native
+  inline def Header_=(x: typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "rest.RestOperationParameterType.Path")
   @js.native
-  def Path: typings.mendixmodelsdk.restMod.rest.RestOperationParameterType = js.native
-  inline def Path_=(x: typings.mendixmodelsdk.restMod.rest.RestOperationParameterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Path")(x.asInstanceOf[js.Any])
+  def Path: typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameterType = js.native
+  inline def Path_=(x: typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Path")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "rest.RestOperationParameterType.Query")
   @js.native
-  def Query: typings.mendixmodelsdk.restMod.rest.RestOperationParameterType = js.native
-  inline def Query_=(x: typings.mendixmodelsdk.restMod.rest.RestOperationParameterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Query")(x.asInstanceOf[js.Any])
+  def Query: typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameterType = js.native
+  inline def Query_=(x: typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Query")(x.asInstanceOf[js.Any])
 }

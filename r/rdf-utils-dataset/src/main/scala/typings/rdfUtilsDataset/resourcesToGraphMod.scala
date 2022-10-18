@@ -18,7 +18,15 @@ object resourcesToGraphMod {
   @js.native
   val ^ : js.Any = js.native
   
-  type DatasetOf[F] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    F extends @rdfjs/types.@rdfjs/types/dataset.DatasetCoreFactory<any, any, infer D> ? D : never
+    }}}
+    */
+  @js.native
+  trait DatasetOf[F] extends StObject
   
   @js.native
   trait Factory[OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */, D /* <: DatasetCore[OutQuad, InQuad] */]

@@ -1,10 +1,10 @@
 package typings.babylonjs
 
 import typings.babylonjs.anon.PartialIComputeShaderOpti
-import typings.babylonjs.computeEffectMod.IComputeEffectCreationOptions
-import typings.babylonjs.engineMod.Engine
+import typings.babylonjs.computeComputeEffectMod.IComputeEffectCreationOptions
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.thinEngineMod.ThinEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object computeIndexMod {
   @JSImport("babylonjs/Compute/index", "ComputeEffect")
   @js.native
   open class ComputeEffect protected ()
-    extends typings.babylonjs.computeEffectMod.ComputeEffect {
+    extends typings.babylonjs.computeComputeEffectMod.ComputeEffect {
     /**
       * Creates a compute effect that can be used to execute a compute shader
       * @param baseName Name of the effect
@@ -56,7 +56,7 @@ object computeIndexMod {
   @JSImport("babylonjs/Compute/index", "ComputeShader")
   @js.native
   open class ComputeShader protected ()
-    extends typings.babylonjs.computeShaderMod.ComputeShader {
+    extends typings.babylonjs.computeComputeShaderMod.ComputeShader {
     /**
       * Instantiates a new compute shader.
       * @param name Defines the name of the compute shader in the scene
@@ -85,6 +85,6 @@ object computeIndexMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a new compute shader
       */
-    inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.computeShaderMod.ComputeShader = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.computeShaderMod.ComputeShader]
+    inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.computeComputeShaderMod.ComputeShader = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.computeComputeShaderMod.ComputeShader]
   }
 }

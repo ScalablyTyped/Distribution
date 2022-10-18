@@ -1,6 +1,6 @@
 package typings.grommet.anon
 
-import typings.grommet.gridMod._GridGapType
+import typings.grommet.componentsGridMod._GridGapType
 import typings.grommet.utilsMod.GapType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

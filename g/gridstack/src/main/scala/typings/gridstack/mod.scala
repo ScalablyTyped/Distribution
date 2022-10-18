@@ -23,6 +23,7 @@ import typings.std.CSSStyleSheet
 import typings.std.DragEvent
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
+import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.Node
@@ -39,7 +40,7 @@ object mod {
   @JSImport("gridstack", "DDGridStack")
   @js.native
   open class DDGridStack ()
-    extends typings.gridstack.ddGridstackMod.DDGridStack
+    extends typings.gridstack.distDdGridstackMod.DDGridStack
   /* static members */
   object DDGridStack {
     
@@ -48,12 +49,8 @@ object mod {
     val ^ : js.Any = js.native
     
     /** get the global (but static to this code) DD implementation */
-    inline def get(): typings.gridstack.ddGridstackMod.DDGridStack = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[typings.gridstack.ddGridstackMod.DDGridStack]
+    inline def get(): typings.gridstack.distDdGridstackMod.DDGridStack = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[typings.gridstack.distDdGridstackMod.DDGridStack]
   }
-  
-  @JSImport("gridstack", "GridDefaults")
-  @js.native
-  val GridDefaults: GridStackOptions = js.native
   
   @JSImport("gridstack", "GridStack")
   @js.native
@@ -254,6 +251,23 @@ object mod {
     def load(layout: js.Array[GridStackWidget], addAndRemove: Boolean): GridStack = js.native
     
     /**
+      * Convert an existing gridItem element into a sub-grid with the given (optional) options, else inherit them
+      * from the parent subGrid options.
+      * @param el gridItem element to convert
+      * @param ops (optional) sub-grid options, else default to node, then parent settings, else defaults
+      * @param nodeToAdd (optional) node to add to the newly created sub grid (used when dragging over existing regular item)
+      * @returns newly created grid
+      */
+    def makeSubGrid(el: GridItemHTMLElement): GridStack = js.native
+    def makeSubGrid(el: GridItemHTMLElement, ops: Unit, nodeToAdd: Unit, saveContent: Boolean): GridStack = js.native
+    def makeSubGrid(el: GridItemHTMLElement, ops: Unit, nodeToAdd: GridStackNode): GridStack = js.native
+    def makeSubGrid(el: GridItemHTMLElement, ops: Unit, nodeToAdd: GridStackNode, saveContent: Boolean): GridStack = js.native
+    def makeSubGrid(el: GridItemHTMLElement, ops: GridStackOptions): GridStack = js.native
+    def makeSubGrid(el: GridItemHTMLElement, ops: GridStackOptions, nodeToAdd: Unit, saveContent: Boolean): GridStack = js.native
+    def makeSubGrid(el: GridItemHTMLElement, ops: GridStackOptions, nodeToAdd: GridStackNode): GridStack = js.native
+    def makeSubGrid(el: GridItemHTMLElement, ops: GridStackOptions, nodeToAdd: GridStackNode, saveContent: Boolean): GridStack = js.native
+    
+    /**
       * If you add elements to your grid by hand, you have to tell gridstack afterwards to make them widgets.
       * If you want gridstack to add the elements for you, use `addWidget()` instead.
       * Makes the given element a widget and returns it.
@@ -313,12 +327,22 @@ object mod {
     /** grid options - public for classes to access, but use methods to modify! */
     var opts: GridStackOptions = js.native
     
+    /** point to a parent grid item if we're nested (inside a grid-item in between 2 Grids) */
+    var parentGridItem: js.UndefOr[GridStackNode] = js.native
+    
     /**
       * Removes all widgets from the grid.
       * @param removeDOM if `false` DOM elements won't be removed from the tree (Default? `true`).
       */
     def removeAll(): GridStack = js.native
     def removeAll(removeDOM: Boolean): GridStack = js.native
+    
+    /**
+      * called when an item was converted into a nested grid to accommodate a dragged over item, but then item leaves - return back
+      * to the original grid-item. Also called to remove empty sub-grids when last item is dragged out (since re-creating is simple)
+      */
+    def removeAsSubGrid(): Unit = js.native
+    def removeAsSubGrid(nodeThatRemoved: GridStackNode): Unit = js.native
     
     /**
       * Removes widget from the grid.
@@ -487,8 +511,8 @@ object mod {
     
     /**
       * call to setup dragging in from the outside (say toolbar), by specifying the class selection and options.
-      * Called during GridStack.init() as options, but can also be called directly (last param are cached) in case the toolbar
-      * is dynamically create and needs to change later.
+      * Called during GridStack.init() as options, but can also be called directly (last param are used) in case the toolbar
+      * is dynamically create and needs to be set later.
       * @param dragIn string selector (ex: '.sidebar .grid-stack-item')
       * @param dragInOptions options - see DDDragInOpt. (default: {handle: '.grid-stack-item-content', appendTo: 'body'}
       **/
@@ -525,6 +549,12 @@ object mod {
     inline def appendTo(el: HTMLElement, parent: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTo")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def appendTo(el: HTMLElement, parent: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTo")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** returns the area */
+    inline def area(a: GridStackPosition): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    /** returns the area a and b overlap */
+    inline def areaIntercept(a: GridStackPosition, b: GridStackPosition): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("areaIntercept")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
     /** single level clone, returning a new object with same top fields. This will share sub objects and arrays */
     inline def clone[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
     
@@ -538,7 +568,7 @@ object mod {
     inline def cloneNode(el: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneNode")(el.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
     
     /** return the closest parent (or itself) matching the given class */
-    inline def closestByClass(el: HTMLElement, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("closestByClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def closestUpByClass(el: HTMLElement, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("closestUpByClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /** copies over b size & position (GridStackPosition), and possibly min/max as well */
     inline def copyPos(a: GridStackWidget, b: GridStackWidget): GridStackWidget = (^.asInstanceOf[js.Dynamic].applyDynamic("copyPos")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[GridStackWidget]
@@ -576,6 +606,10 @@ object mod {
     /** removes field from the first object if same as the second objects (like diffing) and internal '_' for saving */
     inline def removeInternalAndSame(a: Any, b: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeInternalAndSame")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** removes internal fields '_' and default values for saving */
+    inline def removeInternalForSave(n: GridStackNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeInternalForSave")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeInternalForSave(n: GridStackNode, removeEl: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeInternalForSave")(n.asInstanceOf[js.Any], removeEl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     inline def removePositioningStyles(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removePositioningStyles")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** removed the given stylesheet id */
@@ -586,6 +620,10 @@ object mod {
     
     /** true if a and b has same size & position */
     inline def samePos(a: GridStackPosition, b: GridStackPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("samePos")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    /** copies the MouseEvent properties and sends it as another event to the given target */
+    inline def simulateMouseEvent(e: MouseEvent, simulatedType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simulateMouseEvent")(e.asInstanceOf[js.Any], simulatedType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def simulateMouseEvent(e: MouseEvent, simulatedType: String, target: EventTarget): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simulateMouseEvent")(e.asInstanceOf[js.Any], simulatedType.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sorts array of nodes
@@ -606,6 +644,14 @@ object mod {
     inline def toNumber(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")().asInstanceOf[Double]
     inline def toNumber(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
+  
+  @JSImport("gridstack", "dragInDefaultOptions")
+  @js.native
+  val dragInDefaultOptions: DDDragInOpt = js.native
+  
+  @JSImport("gridstack", "gridDefaults")
+  @js.native
+  val gridDefaults: GridStackOptions = js.native
   
   inline def obsolete(self: Any, f: Any, oldName: String, newName: String, rev: String): js.Function1[/* repeated */ Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("obsolete")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, Any]]
   

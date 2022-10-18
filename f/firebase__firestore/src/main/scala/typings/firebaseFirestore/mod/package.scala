@@ -1,14 +1,14 @@
 package typings.firebaseFirestore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.firebaseApp.mod.FirebaseApp
 import typings.firebaseFirestore.anon.CompleteError
 import typings.firebaseFirestore.anon.CompleteErrorNext
 import typings.firebaseFirestore.anon.ErrorNext
 import typings.firebaseFirestore.anon.MockUserToken
+import typings.firebaseFirestore.anon.`5`
 import typings.firebaseFirestore.mod.^
-import typings.firebaseLogger.srcLoggerMod.LogLevelString
+import typings.firebaseLogger.distSrcLoggerMod.LogLevelString
 import typings.std.Partial
 import typings.std.ReadableStream
 import typings.std.Record
@@ -20,6 +20,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 inline def CACHE_SIZE_UNLIMITED: /* -1 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("CACHE_SIZE_UNLIMITED").asInstanceOf[/* -1 */ Double]
 
 inline def addDoc[T](reference: CollectionReference[T], data: WithFieldValue[T]): js.Promise[DocumentReference[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("addDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DocumentReference[T]]]
+
+inline def aggregateQuerySnapshotEqual[T /* <: AggregateSpec */](left: AggregateQuerySnapshot[T], right: AggregateQuerySnapshot[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aggregateQuerySnapshotEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def arrayRemove(elements: Any*): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FieldValue]
 
@@ -61,6 +63,8 @@ inline def endAt(snapshot: DocumentSnapshot[Any]): QueryConstraint = ^.asInstanc
 
 inline def endBefore(fieldValues: Any*): QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[QueryConstraint]
 inline def endBefore(snapshot: DocumentSnapshot[Any]): QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(snapshot.asInstanceOf[js.Any]).asInstanceOf[QueryConstraint]
+
+inline def getCountFromServer(query: Query_[Any]): js.Promise[AggregateQuerySnapshot[`5`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountFromServer")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AggregateQuerySnapshot[`5`]]]
 
 inline def getDoc[T](reference: DocumentReference[T]): js.Promise[DocumentSnapshot[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDoc")(reference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DocumentSnapshot[T]]]
 
@@ -212,6 +216,9 @@ inline def serverTimestamp(): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynam
 inline def setDoc[T](reference: DocumentReference[T], data: PartialWithFieldValue[T], options: SetOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def setDoc[T](reference: DocumentReference[T], data: WithFieldValue[T]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
+inline def setIndexConfiguration(firestore: Firestore, configuration: IndexConfiguration): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setIndexConfiguration")(firestore.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def setIndexConfiguration(firestore: Firestore, json: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setIndexConfiguration")(firestore.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+
 inline def setLogLevel(logLevel: LogLevelString): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(logLevel.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def snapshotEqual[T](left: DocumentSnapshot[T], right: DocumentSnapshot[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("snapshotEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -238,11 +245,9 @@ inline def where(fieldPath: FieldPath, opStr: WhereFilterOp, value: Any): QueryC
 
 inline def writeBatch(firestore: Firestore): WriteBatch_ = ^.asInstanceOf[js.Dynamic].applyDynamic("writeBatch")(firestore.asInstanceOf[js.Any]).asInstanceOf[WriteBatch_]
 
-type AddPrefixToKeys[Prefix /* <: String */, T /* <: Record[String, Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T & string as / * template literal string: ${Prefix}.${K} * / string ]:? T[K]}
-  */ typings.firebaseFirestore.firebaseFirestoreStrings.AddPrefixToKeys & TopLevel[T]
+type AggregateFieldType = AggregateField[Double]
 
-type ChildUpdateFields[K /* <: String */, V] = AddPrefixToKeys[K, UpdateData[V]]
+type AggregateSpec = StringDictionary[AggregateFieldType]
 
 type DocumentData = /** A mapping between a field and its value. */
 StringDictionary[Any]
@@ -250,18 +255,10 @@ StringDictionary[Any]
 type NestedUpdateFields[T /* <: Record[String, Any] */] = UnionToIntersection[
 /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T & string ]: @firebase/firestore.@firebase/firestore.ChildUpdateFields<K, T[K]>}[keyof T & string] */ js.Any]
 
-type PartialWithFieldValue[T] = Partial[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? @firebase/firestore.@firebase/firestore.PartialWithFieldValue<T[K]> | @firebase/firestore.@firebase/firestore.FieldValue}
-  */ typings.firebaseFirestore.firebaseFirestoreStrings.PartialWithFieldValue & TopLevel[T]) | T
+type PartialWithFieldValue[T] = Partial[T] | (/* import warning: importer.ImportType#apply Failed type conversion: T extends @firebase/firestore.@firebase/firestore.Primitive ? T : T extends {} ? {[ K in keyof T ]:? @firebase/firestore.@firebase/firestore.PartialWithFieldValue<T[K]> | @firebase/firestore.@firebase/firestore.FieldValue} : never */ js.Any)
 
 type Primitive = js.UndefOr[String | Double | Boolean | Null]
 
-type UnionToIntersection[U] = Any
-
 type Unsubscribe = js.Function0[Unit]
 
-type UpdateData[T] = Partial[T] | (typings.firebaseFirestore.firebaseFirestoreStrings.UpdateData & TopLevel[T] & NestedUpdateFields[T]) | T
-
-type WithFieldValue[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: @firebase/firestore.@firebase/firestore.WithFieldValue<T[K]> | @firebase/firestore.@firebase/firestore.FieldValue}
-  */ typings.firebaseFirestore.firebaseFirestoreStrings.WithFieldValue & TopLevel[T])
+type WithFieldValue[T] = T | (/* import warning: importer.ImportType#apply Failed type conversion: T extends @firebase/firestore.@firebase/firestore.Primitive ? T : T extends {} ? {[ K in keyof T ]: @firebase/firestore.@firebase/firestore.WithFieldValue<T[K]> | @firebase/firestore.@firebase/firestore.FieldValue} : never */ js.Any)

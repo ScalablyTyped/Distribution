@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ParticleSystemSet")
 @js.native
 open class ParticleSystemSet ()
-  extends typings.babylonjs.legacyMod.ParticleSystemSet
+  extends typings.babylonjs.legacyLegacyMod.ParticleSystemSet
 /* static members */
 object ParticleSystemSet {
   
@@ -31,8 +31,8 @@ object ParticleSystemSet {
     * @param capacity defines the system capacity (if null or undefined the sotred capacity will be used)
     * @returns a new ParticleSystemSet
     */
-  inline def Parse(data: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.particleSystemSetMod.ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]
-  inline def Parse(data: Any, scene: typings.babylonjs.sceneMod.Scene, gpu: Boolean): typings.babylonjs.particleSystemSetMod.ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]
-  inline def Parse(data: Any, scene: typings.babylonjs.sceneMod.Scene, gpu: Boolean, capacity: Double): typings.babylonjs.particleSystemSetMod.ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]
-  inline def Parse(data: Any, scene: typings.babylonjs.sceneMod.Scene, gpu: Unit, capacity: Double): typings.babylonjs.particleSystemSetMod.ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particleSystemSetMod.ParticleSystemSet]
+  inline def Parse(data: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet]
+  inline def Parse(data: Any, scene: typings.babylonjs.sceneMod.Scene, gpu: Boolean): typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet]
+  inline def Parse(data: Any, scene: typings.babylonjs.sceneMod.Scene, gpu: Boolean, capacity: Double): typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet]
+  inline def Parse(data: Any, scene: typings.babylonjs.sceneMod.Scene, gpu: Unit, capacity: Double): typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.particlesParticleSystemSetMod.ParticleSystemSet]
 }

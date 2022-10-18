@@ -176,7 +176,15 @@ object functions {
     * An HttpsCallable is a reference to a "callable" http trigger in
     * Google Cloud Functions.
     */
-  type HttpsCallable[Params, Result] = (js.Function1[/* data */ Params, js.Promise[HttpsCallableResult[Result]]]) | js.Function0[js.Promise[HttpsCallableResult[Result]]]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Params extends void ? (): std.Promise<react-native-firebase.react-native-firebase.RNFirebase.functions.HttpsCallableResult<Result>> : (data : Params): std.Promise<react-native-firebase.react-native-firebase.RNFirebase.functions.HttpsCallableResult<Result>>
+    }}}
+    */
+  @js.native
+  trait HttpsCallable[Params, Result] extends StObject
   
   /**
     * An HttpsCallableResult wraps a single result from a function call.

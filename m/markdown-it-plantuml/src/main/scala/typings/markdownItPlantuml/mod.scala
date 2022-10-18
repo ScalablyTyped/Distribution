@@ -2,8 +2,8 @@ package typings.markdownItPlantuml
 
 import org.scalablytyped.runtime.Shortcut
 import typings.markdownIt.libMod.PluginWithOptions
-import typings.markdownIt.rendererMod.RenderRule
-import typings.markdownIt.rendererMod.Renderer
+import typings.markdownIt.libRendererMod.RenderRule
+import typings.markdownIt.libRendererMod.Renderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,7 +60,7 @@ object mod extends Shortcut {
       inline def setOpenMarkerUndefined: Self = StObject.set(x, "openMarker", js.undefined)
       
       inline def setRender(
-        value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* idx */ Double, /* options */ typings.markdownIt.libMod.Options, /* env */ Any, /* self */ Renderer) => String
+        value: (/* tokens */ js.Array[typings.markdownIt.libTokenMod.^], /* idx */ Double, /* options */ typings.markdownIt.libMod.Options, /* env */ Any, /* self */ Renderer) => String
       ): Self = StObject.set(x, "render", js.Any.fromFunction5(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)

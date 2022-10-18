@@ -1,10 +1,10 @@
 package typings.reactFileUtils
 
-import typings.reactFileUtils.iconMapMod.IconType
-import typings.reactFileUtils.iconMapMod.IconVersion
-import typings.reactFileUtils.mimeTypesMod.GeneralType
-import typings.reactFileUtils.typesMod.UploadState
-import typings.reactFileUtils.v2Mod.IconTypeV2
+import typings.reactFileUtils.distComponentsFileIconFileIconSetV2Mod.IconTypeV2
+import typings.reactFileUtils.distComponentsFileIconIconMapMod.IconType
+import typings.reactFileUtils.distComponentsFileIconIconMapMod.IconVersion
+import typings.reactFileUtils.distComponentsFileIconMimeTypesMod.GeneralType
+import typings.reactFileUtils.distTypesMod.UploadState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

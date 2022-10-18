@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientScript.gapi.client.script
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +26,7 @@ trait Value extends StObject {
   
   /** Represents a structured proto value. */
   var protoValue: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Value & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Represents a string value. */
@@ -72,9 +69,7 @@ object Value {
     inline def setNumberValueUndefined: Self = StObject.set(x, "numberValue", js.undefined)
     
     inline def setProtoValue(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Value & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "protoValue", value.asInstanceOf[js.Any])
     
     inline def setProtoValueUndefined: Self = StObject.set(x, "protoValue", js.undefined)

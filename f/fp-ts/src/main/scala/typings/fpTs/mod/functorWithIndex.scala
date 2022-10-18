@@ -1,17 +1,17 @@
 package typings.fpTs.mod
 
-import typings.fpTs.functorWithIndexMod.FunctorWithIndex
-import typings.fpTs.functorWithIndexMod.FunctorWithIndex1
-import typings.fpTs.functorWithIndexMod.FunctorWithIndex2
-import typings.fpTs.functorWithIndexMod.FunctorWithIndex2C
-import typings.fpTs.functorWithIndexMod.FunctorWithIndexComposition
-import typings.fpTs.functorWithIndexMod.FunctorWithIndexComposition11
-import typings.fpTs.functorWithIndexMod.FunctorWithIndexComposition12
-import typings.fpTs.functorWithIndexMod.FunctorWithIndexComposition12C
-import typings.fpTs.functorWithIndexMod.FunctorWithIndexComposition21
-import typings.fpTs.functorWithIndexMod.FunctorWithIndexComposition22
-import typings.fpTs.functorWithIndexMod.FunctorWithIndexComposition22C
-import typings.fpTs.functorWithIndexMod.FunctorWithIndexComposition2C1
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndex
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndex1
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndex2
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndex2C
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndexComposition
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndexComposition11
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndexComposition12
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndexComposition12C
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndexComposition21
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndexComposition22
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndexComposition22C
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndexComposition2C1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

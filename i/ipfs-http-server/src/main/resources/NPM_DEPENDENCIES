@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipfs-http-server" : "0.1.2"
+      "ipfs-http-server" : "0.13.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ipfs-http-server" : "0.1.2"
+      "ipfs-http-server" : "0.13.2"
     }
   ],
   "compile-devDependencies" : [

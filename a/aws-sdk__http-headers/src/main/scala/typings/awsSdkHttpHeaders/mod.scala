@@ -1,7 +1,7 @@
 package typings.awsSdkHttpHeaders
 
 import typings.awsSdkHttpHeaders.awsSdkHttpHeadersStrings.Map
-import typings.awsSdkTypes.httpMod.Headers
+import typings.awsSdkTypes.distTypesHttpMod.Headers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

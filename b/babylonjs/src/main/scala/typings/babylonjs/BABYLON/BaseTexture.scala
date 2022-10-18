@@ -111,7 +111,8 @@ trait BaseTexture
   
   /* private */ var _hasAlpha: Any = js.native
   
-  /* private */ var _isCube: Any = js.native
+  /** @internal */
+  var _isCube: Boolean = js.native
   
   /* protected */ var _loadingError: Boolean = js.native
   

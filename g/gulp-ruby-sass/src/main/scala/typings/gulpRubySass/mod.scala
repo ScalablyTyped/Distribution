@@ -1,6 +1,6 @@
 package typings.gulpRubySass
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +12,8 @@ object mod {
     * @param {string} source - Filename or directory
     * @param {Options} options - Additional processing rules/options
     */
-  inline def apply(source: String): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
-  inline def apply(source: String, options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def apply(source: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def apply(source: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
   @JSImport("gulp-ruby-sass", JSImport.Namespace)
   @js.native

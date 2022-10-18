@@ -1,6 +1,7 @@
 package typings.concurrently.anon
 
-import typings.concurrently.completionListenerMod.SuccessCondition
+import typings.concurrently.distSrcCompletionListenerMod.SuccessCondition
+import typings.rxjs.distTypesInternalTypesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,7 @@ trait Scheduler extends StObject {
   /**
     * For testing only.
     */
-  var scheduler: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Rx.SchedulerLike */ Any
-  ] = js.undefined
+  var scheduler: js.UndefOr[SchedulerLike] = js.undefined
   
   /**
     * How this instance will define that a list of commands ran successfully.
@@ -31,9 +30,7 @@ object Scheduler {
   
   extension [Self <: Scheduler](x: Self) {
     
-    inline def setScheduler(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Rx.SchedulerLike */ Any
-    ): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
+    inline def setScheduler(value: SchedulerLike): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
     
     inline def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
     

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IndexNode
   extends StObject
-     with MathNodeCommon
-     with _MathNode {
+     with MathNode {
   
   var dimensions: js.Array[MathNode] = js.native
   

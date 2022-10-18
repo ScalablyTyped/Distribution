@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsRenameMod.RenameProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsRenameMod.RenameProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renameMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Rename", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Rename", JSImport.Default)
   @js.native
   val default: FC[RenameProps] = js.native
   

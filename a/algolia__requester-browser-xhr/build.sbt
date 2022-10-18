@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "algolia__requester-browser-xhr"
-version := "4.14.2-0892e4"
+version := "4.14.2-50c8c4"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "algolia__requester-common" % "4.14.2-1eaa5b",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
+  "org.scalablytyped" %%% "algolia__requester-common" % "4.14.2-cdbcfa",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

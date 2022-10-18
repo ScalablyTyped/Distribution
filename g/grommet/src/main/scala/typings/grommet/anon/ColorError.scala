@@ -15,7 +15,7 @@ trait ColorError
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var error: js.UndefOr[`4`] = js.undefined
+  var error: js.UndefOr[`7`] = js.undefined
   
   var position: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ object ColorError {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setError(value: `4`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: `7`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

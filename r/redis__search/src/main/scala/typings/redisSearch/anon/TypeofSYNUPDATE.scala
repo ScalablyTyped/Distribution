@@ -1,8 +1,8 @@
 package typings.redisSearch.anon
 
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisSearch.distCommandsSynupdateMod.SynUpdateOptions
 import typings.redisSearch.redisSearchStrings.OK
-import typings.redisSearch.synupdateMod.SynUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

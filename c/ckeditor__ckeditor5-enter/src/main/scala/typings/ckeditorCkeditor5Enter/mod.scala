@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Enter
 
-import typings.ckeditorCkeditor5Enter.enterMod.default
+import typings.ckeditorCkeditor5Enter.srcEnterMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-enter", "ShiftEnter")
   @js.native
   open class ShiftEnter ()
-    extends typings.ckeditorCkeditor5Enter.shiftenterMod.default
+    extends typings.ckeditorCkeditor5Enter.srcShiftenterMod.default
   /* static members */
   object ShiftEnter {
     

@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.WillSaveTextDocumentParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.WillSaveTextDocumentParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashwillSave
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object WillSaveTextDocumentNotification {
   
   @JSImport("vscode-languageserver-protocol", "WillSaveTextDocumentNotification.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "WillSaveTextDocumentNotification.method")
   @js.native
@@ -18,8 +18,8 @@ object WillSaveTextDocumentNotification {
   
   @JSImport("vscode-languageserver-protocol", "WillSaveTextDocumentNotification.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[
     WillSaveTextDocumentParams, 
-    typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
+    typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentRegistrationOptions
   ] = js.native
 }

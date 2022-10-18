@@ -1,7 +1,11 @@
 package typings.formsyReact
 
-import typings.formsyReact.formsyMod.FormElementType
-import typings.formsyReact.formsyMod.OnSubmitCallback
+import typings.formsyReact.distFormsyMod.FormElementType
+import typings.formsyReact.distFormsyMod.OnSubmitCallback
+import typings.formsyReact.distInterfacesMod.IModel
+import typings.formsyReact.distInterfacesMod.IResetModel
+import typings.formsyReact.distInterfacesMod.IUpdateInputsWithError
+import typings.formsyReact.distInterfacesMod.ValidationError
 import typings.formsyReact.formsyReactStrings.`additions removals`
 import typings.formsyReact.formsyReactStrings.`additions text`
 import typings.formsyReact.formsyReactStrings.`inline`
@@ -52,10 +56,6 @@ import typings.formsyReact.formsyReactStrings.tree
 import typings.formsyReact.formsyReactStrings.url
 import typings.formsyReact.formsyReactStrings.vertical
 import typings.formsyReact.formsyReactStrings.yes
-import typings.formsyReact.interfacesMod.IModel
-import typings.formsyReact.interfacesMod.IResetModel
-import typings.formsyReact.interfacesMod.IUpdateInputsWithError
-import typings.formsyReact.interfacesMod.ValidationError
 import typings.propTypes.mod.Requireable
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent

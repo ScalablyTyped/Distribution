@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Range")
 @js.native
 open class Range ()
-  extends typings.blackEngine.projectionMod.Range
+  extends typings.blackEngine.physicsArcadeHelpersProjectionMod.Range

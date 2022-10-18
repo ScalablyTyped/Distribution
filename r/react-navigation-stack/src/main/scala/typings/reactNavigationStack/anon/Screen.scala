@@ -1,6 +1,6 @@
 package typings.reactNavigationStack.anon
 
-import typings.reactNavigationStack.vendorTypesMod.Layout
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -18,21 +18,21 @@ object mod {
   @JSImport("aurelia-knockout", "KnockoutBindable")
   @js.native
   open class KnockoutBindable protected ()
-    extends typings.aureliaKnockout.knockoutBindableMod.KnockoutBindable {
+    extends typings.aureliaKnockout.distCommonjsKnockoutBindableMod.KnockoutBindable {
     def this(observerLocator: ObserverLocator) = this()
   }
   
   @JSImport("aurelia-knockout", "KnockoutComposition")
   @js.native
   open class KnockoutComposition protected ()
-    extends typings.aureliaKnockout.knockoutCompositionMod.KnockoutComposition {
+    extends typings.aureliaKnockout.distCommonjsKnockoutCompositionMod.KnockoutComposition {
     def this(compositionEngine: CompositionEngine, container: Container, loader: Loader) = this()
   }
   
   @JSImport("aurelia-knockout", "KnockoutCustomAttribute")
   @js.native
   open class KnockoutCustomAttribute protected ()
-    extends typings.aureliaKnockout.knockoutCustomAttributeMod.KnockoutCustomAttribute {
+    extends typings.aureliaKnockout.distCommonjsKnockoutCustomAttributeMod.KnockoutCustomAttribute {
     def this(element: Element) = this()
   }
   /* static members */
@@ -48,7 +48,7 @@ object mod {
   @JSImport("aurelia-knockout", "RequirePolyfill")
   @js.native
   open class RequirePolyfill protected ()
-    extends typings.aureliaKnockout.requirePolyfillMod.RequirePolyfill {
+    extends typings.aureliaKnockout.distCommonjsRequirePolyfillMod.RequirePolyfill {
     def this(loader: Loader) = this()
   }
   

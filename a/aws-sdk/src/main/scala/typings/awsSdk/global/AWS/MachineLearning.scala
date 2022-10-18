@@ -1,6 +1,6 @@
 package typings.awsSdk.global.AWS
 
-import typings.awsSdk.machinelearningMod.ClientConfiguration
+import typings.awsSdk.clientsMachinelearningMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

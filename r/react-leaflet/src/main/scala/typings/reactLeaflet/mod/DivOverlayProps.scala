@@ -1,19 +1,23 @@
 package typings.reactLeaflet.mod
 
+import typings.leaflet.mod.Layer
 import typings.leaflet.mod.PointExpression
 import typings.react.mod.ReactNode
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.leaflet.mod.DivOverlayOptions because var conflicts: pane. Inlined className, offset, interactive */ trait DivOverlayProps
+- typings.leaflet.mod.DivOverlayOptions because var conflicts: pane. Inlined interactive, content, className, offset */ trait DivOverlayProps
   extends StObject
      with MapComponentProps {
   
   var children: Children
   
   var className: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String | HTMLElement | (js.Function1[/* layer */ Layer, HTMLElement | String])] = js.undefined
   
   var interactive: js.UndefOr[Boolean] = js.undefined
   
@@ -41,6 +45,12 @@ object DivOverlayProps {
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setContent(value: String | HTMLElement | (js.Function1[/* layer */ Layer, HTMLElement | String])): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentFunction1(value: /* layer */ Layer => HTMLElement | String): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     

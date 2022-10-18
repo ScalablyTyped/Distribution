@@ -1,10 +1,10 @@
 package typings.awsSdkClientKmsNode
 
-import typings.awsSdkClientKmsNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientKmsNode.kmsconfigurationMod.KMSConfiguration
 import typings.awsSdkClientKmsNode.kmsconfigurationMod.KMSResolvedConfiguration
-import typings.awsSdkClientKmsNode.outputTypesUnionMod.OutputTypesUnion
-import typings.awsSdkTypes.commandMod.Command
+import typings.awsSdkClientKmsNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientKmsNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesCommandMod.Command
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

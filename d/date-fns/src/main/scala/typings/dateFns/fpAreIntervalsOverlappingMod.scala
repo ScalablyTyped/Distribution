@@ -9,7 +9,7 @@ object fpAreIntervalsOverlappingMod {
   
   object default extends Shortcut {
     
-    @JSImport("date-fns/esm/fp/areIntervalsOverlapping", JSImport.Default)
+    @JSImport("date-fns/fp/areIntervalsOverlapping", JSImport.Default)
     @js.native
     val ^ : CurriedFn2[Interval, Interval, Boolean] = js.native
     

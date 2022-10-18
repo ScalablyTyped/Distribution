@@ -1,11 +1,11 @@
 package typings.chartJs.anon
 
-import typings.chartJs.basicMod.AnyObject
-import typings.chartJs.geometricMod.ChartArea
 import typings.chartJs.mod.BorderRadius
 import typings.chartJs.mod.Scriptable
 import typings.chartJs.mod.ScriptableAndScriptableOptions
 import typings.chartJs.mod.ScriptableScalePointLabelContext
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesGeometricMod.ChartArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait BackdropColor extends StObject {
     * Background color of the point label.
     * @default undefined
     */
-  var backdropColor: Scriptable[typings.chartJs.colorMod.Color, ScriptableScalePointLabelContext]
+  var backdropColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScalePointLabelContext]
   
   /**
     * Padding of label backdrop.
@@ -46,7 +46,7 @@ trait BackdropColor extends StObject {
     * Color of label
     * @see Defaults.color
     */
-  var color: Scriptable[typings.chartJs.colorMod.Color, ScriptableScalePointLabelContext]
+  var color: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScalePointLabelContext]
   
   /**
     * if true, point labels are shown.
@@ -67,12 +67,12 @@ trait BackdropColor extends StObject {
 object BackdropColor {
   
   inline def apply(
-    backdropColor: Scriptable[typings.chartJs.colorMod.Color, ScriptableScalePointLabelContext],
+    backdropColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScalePointLabelContext],
     backdropPadding: Scriptable[Double | ChartArea, ScriptableScalePointLabelContext],
     borderRadius: Scriptable[Double | BorderRadius, ScriptableScalePointLabelContext],
     callback: (String, Double) => String | (js.Array[Double | String]) | Double,
     centerPointLabels: Boolean,
-    color: Scriptable[typings.chartJs.colorMod.Color, ScriptableScalePointLabelContext],
+    color: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScalePointLabelContext],
     display: Boolean,
     font: ScriptableAndScriptableOptions[PartialFontSpec, ScriptableScalePointLabelContext],
     padding: Scriptable[Double, ScriptableScalePointLabelContext]
@@ -83,10 +83,10 @@ object BackdropColor {
   
   extension [Self <: BackdropColor](x: Self) {
     
-    inline def setBackdropColor(value: Scriptable[typings.chartJs.colorMod.Color, ScriptableScalePointLabelContext]): Self = StObject.set(x, "backdropColor", value.asInstanceOf[js.Any])
+    inline def setBackdropColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScalePointLabelContext]): Self = StObject.set(x, "backdropColor", value.asInstanceOf[js.Any])
     
     inline def setBackdropColorFunction2(
-      value: (ScriptableScalePointLabelContext, /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableScalePointLabelContext, /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "backdropColor", js.Any.fromFunction2(value))
     
     inline def setBackdropPadding(value: Scriptable[Double | ChartArea, ScriptableScalePointLabelContext]): Self = StObject.set(x, "backdropPadding", value.asInstanceOf[js.Any])
@@ -105,10 +105,10 @@ object BackdropColor {
     
     inline def setCenterPointLabels(value: Boolean): Self = StObject.set(x, "centerPointLabels", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: Scriptable[typings.chartJs.colorMod.Color, ScriptableScalePointLabelContext]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScalePointLabelContext]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorFunction2(
-      value: (ScriptableScalePointLabelContext, /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableScalePointLabelContext, /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "color", js.Any.fromFunction2(value))
     
     inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])

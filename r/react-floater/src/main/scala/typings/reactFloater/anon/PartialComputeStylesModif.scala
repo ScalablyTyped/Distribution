@@ -1,10 +1,10 @@
 package typings.reactFloater.anon
 
-import typings.popperjsCore.computeStylesMod.Options
-import typings.popperjsCore.enumsMod.ModifierPhases_
-import typings.popperjsCore.typesMod.ModifierArguments
-import typings.popperjsCore.typesMod.Obj
-import typings.popperjsCore.typesMod.State
+import typings.popperjsCore.libEnumsMod.ModifierPhases_
+import typings.popperjsCore.libModifiersComputeStylesMod.Options
+import typings.popperjsCore.libTypesMod.ModifierArguments
+import typings.popperjsCore.libTypesMod.Obj
+import typings.popperjsCore.libTypesMod.State
 import typings.reactFloater.reactFloaterStrings.computeStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

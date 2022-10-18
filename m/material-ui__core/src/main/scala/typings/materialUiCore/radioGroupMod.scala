@@ -1,7 +1,7 @@
 package typings.materialUiCore
 
 import typings.materialUiCore.radioGroupRadioGroupMod.RadioGroupProps
-import typings.materialUiCore.useRadioGroupMod.RadioGroupState
+import typings.materialUiCore.radioGroupUseRadioGroupMod.RadioGroupState
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

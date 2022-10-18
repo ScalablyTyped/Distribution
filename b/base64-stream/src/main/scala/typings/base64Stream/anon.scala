@@ -1,10 +1,10 @@
 package typings.base64Stream
 
+import typings.node.AbortSignal
 import typings.node.anon.Chunk
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformCallback
-import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

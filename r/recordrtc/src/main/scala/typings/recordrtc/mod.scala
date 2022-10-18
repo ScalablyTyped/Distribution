@@ -254,7 +254,86 @@ object mod {
   open class StereoAudioRecorder protected ()
     extends StObject
        with Recorder {
-    def this(mediaStream: MediaStream, config: Any) = this()
+    def this(mediaStream: MediaStream) = this()
+    def this(mediaStream: MediaStream, config: Options) = this()
+    
+    /**
+      * The recorded blob object.
+      */
+    var blob: Blob = js.native
+    
+    /**
+      * The recorded buffer object.
+      */
+    var buffer: js.typedarray.ArrayBuffer = js.native
+    
+    /**
+      * Buffer-size for how frequently the audioprocess event is dispatched.
+      * @example
+      * recorder = new StereoAudioRecorder(mediaStream, {
+      *     bufferSize: 4096
+      * });
+      */
+    var bufferSize: Double = js.native
+    
+    /**
+      * This method resets currently recorded data.
+      */
+    def clearRecordedData(): Unit = js.native
+    
+    /**
+      * Desired Bits per sample * 1000
+      * @example
+      * var recorder = StereoAudioRecorder(mediaStream, {
+      *        desiredSampRate: 16 * 1000 // bits-per-sample * 1000
+      *       });
+      */
+    var desiredSampRate: Double = js.native
+    
+    /**
+      * This method is called on "onaudioprocess" event's first invocation.
+      */
+    def onAudioProcessStarted(): Unit = js.native
+    
+    /**
+      * This method pauses the recording process.
+      */
+    def pause(): Unit = js.native
+    
+    /**
+      * This method records MediaStream.
+      */
+    def record(): Unit = js.native
+    
+    /**
+      * This method resumes the recording process.
+      */
+    def resume(): Unit = js.native
+    
+    /**
+      * The sample rate (in sample-frames per second) at which the AudioContext handles audio
+      *
+      * @example
+      * recorder = new StereoAudioRecorder(mediaStream, {
+      *     sampleRate: 44100
+      * });
+      */
+    var sampleRate: Double = js.native
+    
+    /**
+      * This method stops recording MediaStream.
+      * @param callback - Callback function, that is used to pass recorded blob back to the callee.
+      * @example
+      * recorder.stop(function(blob) {
+      *     video.src = URL.createObjectURL(blob);
+      * });
+      */
+    def stop(callback: js.Function1[/* blob */ Blob, Unit]): Unit = js.native
+    
+    /**
+      * The recorded data-view object.
+      */
+    var view: Any = js.native
   }
   
   @JSImport("recordrtc", "WebAssemblyRecorder")

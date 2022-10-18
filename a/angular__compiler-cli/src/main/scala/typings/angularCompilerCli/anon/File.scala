@@ -1,8 +1,8 @@
 package typings.angularCompilerCli.anon
 
 import typings.angularCompiler.mod.ParseSourceFile
-import typings.angularCompilerCli.indexerSrcApiMod.TopLevelIdentifier
-import typings.angularCompilerCli.srcHostMod.DeclarationNode
+import typings.angularCompilerCli.srcNgtscIndexerSrcApiMod.TopLevelIdentifier
+import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

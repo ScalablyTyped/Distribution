@@ -5,20 +5,20 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import typings.sass.anon.Alpha
-import typings.sass.booleanMod.SassBoolean
-import typings.sass.compileMod.CompileResult
-import typings.sass.legacyExceptionMod.LegacyException
-import typings.sass.loggerMod.Logger
 import typings.sass.mod.types.Color
 import typings.sass.mod.types.Error
 import typings.sass.mod.types.Map
 import typings.sass.mod.types.Null
 import typings.sass.mod.types.Number
-import typings.sass.optionsMod.LegacyOptions
-import typings.sass.renderMod.LegacyResult
+import typings.sass.typesCompileMod.CompileResult
+import typings.sass.typesLegacyExceptionMod.LegacyException
+import typings.sass.typesLegacyOptionsMod.LegacyOptions
+import typings.sass.typesLegacyRenderMod.LegacyResult
+import typings.sass.typesLoggerMod.Logger
 import typings.sass.typesOptionsMod.Options
 import typings.sass.typesOptionsMod.StringOptions
-import typings.sass.valueMod.Value
+import typings.sass.typesValueBooleanMod.SassBoolean
+import typings.sass.typesValueMod.Value
 import typings.sassTrue.sassTrueBooleans.`false`
 import typings.sassTrue.sassTrueBooleans.`true`
 import typings.sassTrue.sassTrueStrings.async
@@ -84,10 +84,10 @@ object anon {
        with Instantiable0[typings.sass.mod.types.Boolean[Boolean]] {
     
     /** Sass's `false` value. */
-    val FALSE: typings.sass.functionMod.types.Boolean[`false`] = js.native
+    val FALSE: typings.sass.typesLegacyFunctionMod.types.Boolean[`false`] = js.native
     
     /** Sass's `true` value. */
-    val TRUE: typings.sass.functionMod.types.Boolean[`true`] = js.native
+    val TRUE: typings.sass.typesLegacyFunctionMod.types.Boolean[`true`] = js.native
   }
   
   trait TypeofLogger extends StObject {
@@ -113,7 +113,7 @@ object anon {
        with Instantiable0[Null] {
     
     /** Sass's singleton `null` value. */
-    val NULL: typings.sass.functionMod.types.Null = js.native
+    val NULL: typings.sass.typesLegacyFunctionMod.types.Null = js.native
   }
   
   @js.native
@@ -121,11 +121,11 @@ object anon {
     
     var Exception: Instantiable0[typings.sass.mod.Exception] = js.native
     
-    val FALSE: typings.sass.functionMod.types.Boolean[`false`] = js.native
+    val FALSE: typings.sass.typesLegacyFunctionMod.types.Boolean[`false`] = js.native
     
     val Logger: TypeofLogger = js.native
     
-    val NULL: typings.sass.functionMod.types.Null = js.native
+    val NULL: typings.sass.typesLegacyFunctionMod.types.Null = js.native
     
     var SassArgumentList: Instantiable2[
         /* contents */ js.Array[Value], 
@@ -151,7 +151,7 @@ object anon {
     
     var SassString: Instantiable1[/* text */ String, typings.sass.mod.SassString] = js.native
     
-    val TRUE: typings.sass.functionMod.types.Boolean[`true`] = js.native
+    val TRUE: typings.sass.typesLegacyFunctionMod.types.Boolean[`true`] = js.native
     
     var Value: Instantiable0[typings.sass.mod.Value] = js.native
     

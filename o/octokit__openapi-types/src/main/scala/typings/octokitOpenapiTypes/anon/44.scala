@@ -7,17 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `44` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-commit'] */ js.Any
-  ]
+  var applicationSlashjson: js.Array[Active]
 }
 object `44` {
   
-  inline def apply(
-    applicationSlashjson: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-commit'] */ js.Any
-    ]
-  ): `44` = {
+  inline def apply(applicationSlashjson: js.Array[Active]): `44` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`44`]
@@ -25,14 +19,8 @@ object `44` {
   
   extension [Self <: `44`](x: Self) {
     
-    inline def setApplicationSlashjson(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-commit'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(value: js.Array[Active]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-commit'] */ js.Any)*
-    ): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setApplicationSlashjsonVarargs(value: Active*): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

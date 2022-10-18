@@ -1,7 +1,7 @@
 package typings.xadesjs.mod
 
 import typings.std.BufferSource
-import typings.xmlCore.typesMod.XmlBufferEncoding
+import typings.xmlCore.distTypesTypesMod.XmlBufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

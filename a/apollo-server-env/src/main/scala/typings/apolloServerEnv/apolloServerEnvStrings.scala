@@ -1,10 +1,10 @@
 package typings.apolloServerEnv
 
-import typings.apolloServerEnv.fetchMod.ReferrerPolicy
-import typings.apolloServerEnv.fetchMod.RequestCache
-import typings.apolloServerEnv.fetchMod.RequestCredentials
-import typings.apolloServerEnv.fetchMod.RequestMode
-import typings.apolloServerEnv.fetchMod.RequestRedirect
+import typings.apolloServerEnv.distFetchMod.ReferrerPolicy
+import typings.apolloServerEnv.distFetchMod.RequestCache
+import typings.apolloServerEnv.distFetchMod.RequestCredentials
+import typings.apolloServerEnv.distFetchMod.RequestMode
+import typings.apolloServerEnv.distFetchMod.RequestRedirect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,6 @@
 package typings.hoistNonReactStatics
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.hoistNonReactStatics.hoistNonReactStaticsBooleans.`true`
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
@@ -129,9 +128,14 @@ object mod {
     }
   }
   
-  type NonReactStatics[S /* <: ComponentType[Any] */, C /* <: StringDictionary[`true`] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in std.Exclude<keyof S, S extends react.react.MemoExoticComponent<any>? '$$typeof' | 'compare' | 'defaultProps' | 'displayName' | 'propTypes' | 'type' | keyof C : S extends react.react.ForwardRefExoticComponent<any>? '$$typeof' | 'render' | 'defaultProps' | 'displayName' | 'propTypes' | keyof C : 'childContextTypes' | 'contextType' | 'contextTypes' | 'defaultProps' | 'displayName' | 'getDefaultProps' | 'getDerivedStateFromError' | 'getDerivedStateFromProps' | 'mixins' | 'propTypes' | 'type' | 'name' | 'length' | 'prototype' | 'caller' | 'callee' | 'arguments' | 'arity' | keyof C> ]: S[key]}
-    */ typings.hoistNonReactStatics.hoistNonReactStaticsStrings.NonReactStatics & TopLevel[S]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * This translation is imprecise and ignores the effect of the type mapping. 
+    * TS definition: {{{
+    {[ key in std.Exclude<keyof S, S extends react.react.MemoExoticComponent<any>? '$$typeof' | 'compare' | 'defaultProps' | 'displayName' | 'propTypes' | 'type' | keyof C : S extends react.react.ForwardRefExoticComponent<any>? '$$typeof' | 'render' | 'defaultProps' | 'displayName' | 'propTypes' | keyof C : 'childContextTypes' | 'contextType' | 'contextTypes' | 'defaultProps' | 'displayName' | 'getDefaultProps' | 'getDerivedStateFromError' | 'getDerivedStateFromProps' | 'mixins' | 'propTypes' | 'type' | 'name' | 'length' | 'prototype' | 'caller' | 'callee' | 'arguments' | 'arity' | keyof C> ]: S[key]}
+    }}}
+    */
+  type NonReactStatics[S /* <: ComponentType[Any] */, C /* <: StringDictionary[`true`] */] = S
   
   trait REACT_STATICS extends StObject {
     

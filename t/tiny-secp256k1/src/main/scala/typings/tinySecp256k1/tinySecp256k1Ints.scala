@@ -16,7 +16,7 @@ object tinySecp256k1Ints {
   sealed trait `0`
     extends StObject
        with RecoveryIdType
-       with typings.tinySecp256k1.wasmLoaderMod.RecoveryIdType
+       with typings.tinySecp256k1.libWasmLoaderMod.RecoveryIdType
        with TweakParity
   inline def `0`: `0` = 0.asInstanceOf[`0`]
   
@@ -24,7 +24,7 @@ object tinySecp256k1Ints {
   sealed trait `1`
     extends StObject
        with RecoveryIdType
-       with typings.tinySecp256k1.wasmLoaderMod.RecoveryIdType
+       with typings.tinySecp256k1.libWasmLoaderMod.RecoveryIdType
        with TweakParity
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
@@ -32,13 +32,13 @@ object tinySecp256k1Ints {
   sealed trait `2`
     extends StObject
        with RecoveryIdType
-       with typings.tinySecp256k1.wasmLoaderMod.RecoveryIdType
+       with typings.tinySecp256k1.libWasmLoaderMod.RecoveryIdType
   inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
   sealed trait `3`
     extends StObject
        with RecoveryIdType
-       with typings.tinySecp256k1.wasmLoaderMod.RecoveryIdType
+       with typings.tinySecp256k1.libWasmLoaderMod.RecoveryIdType
   inline def `3`: `3` = 3.asInstanceOf[`3`]
 }

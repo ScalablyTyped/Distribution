@@ -1,21 +1,21 @@
 package typings.parse5SaxParser
 
-import typings.node.nodeStreamMod.Transform
-import typings.parse5.commonTokenMod.Attribute
-import typings.parse5.commonTokenMod.CharacterToken
-import typings.parse5.commonTokenMod.CommentToken
-import typings.parse5.commonTokenMod.DoctypeToken
-import typings.parse5.commonTokenMod.EOFToken
-import typings.parse5.commonTokenMod.Location
-import typings.parse5.commonTokenMod.TagToken
+import typings.node.nodeColonstreamMod.Transform
+import typings.parse5.distCommonTokenMod.Attribute
+import typings.parse5.distCommonTokenMod.CharacterToken
+import typings.parse5.distCommonTokenMod.CommentToken
+import typings.parse5.distCommonTokenMod.DoctypeToken
+import typings.parse5.distCommonTokenMod.EOFToken
+import typings.parse5.distCommonTokenMod.Location
+import typings.parse5.distCommonTokenMod.TagToken
 import typings.parse5.distTokenizerMod.TokenHandler
 import typings.parse5.mod.Tokenizer
+import typings.parse5SaxParser.distParserFeedbackSimulatorMod.ParserFeedbackSimulator
 import typings.parse5SaxParser.parse5SaxParserStrings.comment
 import typings.parse5SaxParser.parse5SaxParserStrings.doctype
 import typings.parse5SaxParser.parse5SaxParserStrings.endTag
 import typings.parse5SaxParser.parse5SaxParserStrings.startTag
 import typings.parse5SaxParser.parse5SaxParserStrings.text
-import typings.parse5SaxParser.parserFeedbackSimulatorMod.ParserFeedbackSimulator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

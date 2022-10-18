@@ -5,8 +5,8 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.pathMod.PlatformPath
 import typings.upath2.anon.PickPathWrapkeyofIPathNod
 import typings.upath2.anon.TypeofPathWrap
-import typings.upath2.typeMod.IPath
-import typings.upath2.typeMod.IPathPlatform
+import typings.upath2.libTypeMod.IPath
+import typings.upath2.libTypeMod.IPathPlatform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,14 +77,14 @@ object coreMod {
     
     @JSImport("upath2/core", "PathWrap.fn")
     @js.native
-    def fn: typings.upath2.typeMod.IPath = js.native
-    inline def fn_=(x: typings.upath2.typeMod.IPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+    def fn: typings.upath2.libTypeMod.IPath = js.native
+    inline def fn_=(x: typings.upath2.libTypeMod.IPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
     
-    type IParse = typings.upath2.typeMod.IParse
+    type IParse = typings.upath2.libTypeMod.IParse
     
-    type IPath = typings.upath2.typeMod.IPath
+    type IPath = typings.upath2.libTypeMod.IPath
     
-    type IPathNode = typings.upath2.typeMod.IPathNode
+    type IPathNode = typings.upath2.libTypeMod.IPathNode
   }
   
   @JSImport("upath2/core", "fn")

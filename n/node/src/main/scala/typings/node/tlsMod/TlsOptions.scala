@@ -1,5 +1,6 @@
 package typings.node.tlsMod
 
+import typings.node.NodeJS.TypedArray
 import typings.node.netMod.ServerOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -42,7 +43,7 @@ trait TlsOptions
     js.Function2[
       /* socket */ TLSSocket, 
       /* identity */ String, 
-      js.typedarray.DataView | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | Null
+      js.typedarray.DataView | TypedArray | Null
     ]
   ] = js.undefined
   
@@ -68,7 +69,7 @@ object TlsOptions {
     inline def setHandshakeTimeoutUndefined: Self = StObject.set(x, "handshakeTimeout", js.undefined)
     
     inline def setPskCallback(
-      value: (/* socket */ TLSSocket, /* identity */ String) => js.typedarray.DataView | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | Null
+      value: (/* socket */ TLSSocket, /* identity */ String) => js.typedarray.DataView | TypedArray | Null
     ): Self = StObject.set(x, "pskCallback", js.Any.fromFunction2(value))
     
     inline def setPskCallbackUndefined: Self = StObject.set(x, "pskCallback", js.undefined)

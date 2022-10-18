@@ -27,9 +27,9 @@ object algo {
     * This key derivation function is meant to conform with EVP_BytesToKey.
     * www.openssl.org/docs/crypto/EVP_BytesToKey.html
     */
-  @JSImport("react-native-crypto-js", "algo.EvpKDF")
+  /* note: abstract class */ @JSImport("react-native-crypto-js", "algo.EvpKDF")
   @js.native
-  abstract class EvpKDF ()
+  open class EvpKDF ()
     extends typings.reactNativeCryptoJs.mod.global.RNCryptoJS.algo.EvpKDF
   object EvpKDF {
     
@@ -56,9 +56,9 @@ object algo {
   /**
     * HMAC algorithm.
     */
-  @JSImport("react-native-crypto-js", "algo.HMAC")
+  /* note: abstract class */ @JSImport("react-native-crypto-js", "algo.HMAC")
   @js.native
-  abstract class HMAC ()
+  open class HMAC ()
     extends typings.reactNativeCryptoJs.mod.global.RNCryptoJS.algo.HMAC
   object HMAC {
     
@@ -91,9 +91,9 @@ object algo {
   /**
     * Password-Based Key Derivation Function 2 algorithm.
     */
-  @JSImport("react-native-crypto-js", "algo.PBKDF2")
+  /* note: abstract class */ @JSImport("react-native-crypto-js", "algo.PBKDF2")
   @js.native
-  abstract class PBKDF2 ()
+  open class PBKDF2 ()
     extends typings.reactNativeCryptoJs.mod.global.RNCryptoJS.algo.PBKDF2
   object PBKDF2 {
     

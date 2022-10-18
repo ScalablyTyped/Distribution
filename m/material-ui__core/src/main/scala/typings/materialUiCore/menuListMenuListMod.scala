@@ -1,6 +1,6 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.anon.Style
+import typings.materialUiCore.anon.Ref
 import typings.materialUiCore.listListMod.ListClassKey
 import typings.materialUiCore.listListMod.ListProps
 import typings.materialUiCore.materialUiCoreStrings.menu
@@ -27,7 +27,7 @@ object menuListMenuListMod {
   - Dropped @material-ui/core.@material-ui/core/List/List.ListProps<'ul', {}> extends any ? std.Pick<@material-ui/core.@material-ui/core/List/List.ListProps<'ul', {}>, std.Exclude<keyof @material-ui/core.@material-ui/core/List/List.ListProps<'ul', {}>, 'classes' | never>> : never */ trait MenuListProps
     extends StObject
        with StyledComponentProps[MenuListClassKey]
-       with Style[ListProps[ul, js.Object]] {
+       with Ref[ListProps[ul, js.Object]] {
     
     /**
       * If `true`, will focus the `[role="menu"]` container and move into tab order.

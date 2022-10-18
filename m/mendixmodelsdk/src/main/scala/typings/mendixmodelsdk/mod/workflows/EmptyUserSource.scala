@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.workflows
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
-import typings.mendixmodelsdk.workflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenWorkflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "workflows.EmptyUserSource")
 @js.native
 open class EmptyUserSource protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.workflows.EmptyUserSource {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.workflows.EmptyUserSource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object EmptyUserSource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.EmptyUserSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.EmptyUserSource]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.EmptyUserSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.EmptyUserSource]
   
   /**
     * Creates and returns a new EmptyUserSource instance in the SDK and on the server.
@@ -50,7 +50,7 @@ object EmptyUserSource {
     *  9.10.0 and higher
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.UserTask): typings.mendixmodelsdk.workflowsMod.workflows.EmptyUserSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.EmptyUserSource]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.UserTask): typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.EmptyUserSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.EmptyUserSource]
   
   /* static member */
   @JSImport("mendixmodelsdk", "workflows.EmptyUserSource.structureTypeName")

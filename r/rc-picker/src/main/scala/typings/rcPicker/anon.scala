@@ -1,11 +1,11 @@
 package typings.rcPicker
 
-import typings.rcPicker.interfaceMod.CustomFormat
-import typings.rcPicker.interfaceMod.Locale
-import typings.rcPicker.interfaceMod.NullableDateType
-import typings.rcPicker.interfaceMod.PanelMode
-import typings.rcPicker.interfaceMod.PickerMode
-import typings.rcPicker.interfaceMod.RangeValue
+import typings.rcPicker.esInterfaceMod.CustomFormat
+import typings.rcPicker.esInterfaceMod.Locale
+import typings.rcPicker.esInterfaceMod.NullableDateType
+import typings.rcPicker.esInterfaceMod.PanelMode
+import typings.rcPicker.esInterfaceMod.PickerMode
+import typings.rcPicker.esInterfaceMod.RangeValue
 import typings.rcPicker.rcPickerStrings.time
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.KeyboardEvent
@@ -51,7 +51,7 @@ object anon {
     
     var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
-    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType]
+    var generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]
     
     var mode: Omit[PanelMode, time]
   }
@@ -59,7 +59,7 @@ object anon {
     
     inline def apply[DateType](
       cellDate: DateType,
-      generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
+      generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType],
       mode: Omit[PanelMode, time]
     ): CellDate[DateType] = {
       val __obj = js.Dynamic.literal(cellDate = cellDate.asInstanceOf[js.Any], generateConfig = generateConfig.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
@@ -74,7 +74,7 @@ object anon {
       
       inline def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
       
-      inline def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
       inline def setMode(value: Omit[PanelMode, time]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
@@ -84,7 +84,7 @@ object anon {
     
     var cellPrefixCls: String
     
-    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType]
+    var generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]
     
     var hoverRangedValue: js.UndefOr[RangeValue[DateType]] = js.undefined
     
@@ -104,7 +104,7 @@ object anon {
     
     inline def apply[DateType](
       cellPrefixCls: String,
-      generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
+      generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType],
       isInView: DateType => Boolean,
       isSameCell: (NullableDateType[DateType], NullableDateType[DateType]) => Boolean,
       offsetCell: (DateType, Double) => DateType
@@ -117,7 +117,7 @@ object anon {
       
       inline def setCellPrefixCls(value: String): Self = StObject.set(x, "cellPrefixCls", value.asInstanceOf[js.Any])
       
-      inline def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
       inline def setHoverRangedValue(value: RangeValue[DateType]): Self = StObject.set(x, "hoverRangedValue", value.asInstanceOf[js.Any])
       
@@ -155,7 +155,7 @@ object anon {
     
     var defaultDates: js.UndefOr[RangeValue[DateType]] = js.undefined
     
-    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType]
+    var generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]
     
     var picker: PickerMode
     
@@ -163,7 +163,7 @@ object anon {
   }
   object DefaultDates {
     
-    inline def apply[DateType](generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType], picker: PickerMode): DefaultDates[DateType] = {
+    inline def apply[DateType](generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType], picker: PickerMode): DefaultDates[DateType] = {
       val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any], values = null)
       __obj.asInstanceOf[DefaultDates[DateType]]
     }
@@ -176,7 +176,7 @@ object anon {
       
       inline def setDefaultDatesUndefined: Self = StObject.set(x, "defaultDates", js.undefined)
       
-      inline def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
       inline def setPicker(value: PickerMode): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
@@ -192,7 +192,7 @@ object anon {
     
     var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
-    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType]
+    var generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]
     
     var locale: Locale
     
@@ -204,7 +204,7 @@ object anon {
     
     inline def apply[DateType](
       disabled: js.Tuple2[Boolean, Boolean],
-      generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
+      generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType],
       locale: Locale,
       picker: PickerMode
     ): Disabled[DateType] = {
@@ -220,7 +220,7 @@ object anon {
       
       inline def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
       
-      inline def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
       inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -311,7 +311,7 @@ object anon {
     
     var formatList: js.Array[String | CustomFormat[DateType]]
     
-    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType]
+    var generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]
     
     var locale: Locale
   }
@@ -319,7 +319,7 @@ object anon {
     
     inline def apply[DateType](
       formatList: js.Array[String | CustomFormat[DateType]],
-      generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
+      generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType],
       locale: Locale
     ): FormatList[DateType] = {
       val __obj = js.Dynamic.literal(formatList = formatList.asInstanceOf[js.Any], generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
@@ -332,7 +332,7 @@ object anon {
       
       inline def setFormatListVarargs(value: (String | CustomFormat[DateType])*): Self = StObject.set(x, "formatList", js.Array(value*))
       
-      inline def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
       inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }
@@ -342,7 +342,7 @@ object anon {
     
     var format: String | CustomFormat[DateType]
     
-    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType]
+    var generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]
     
     var locale: Locale
   }
@@ -350,7 +350,7 @@ object anon {
     
     inline def apply[DateType](
       format: String | CustomFormat[DateType],
-      generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
+      generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType],
       locale: Locale
     ): GenerateConfig[DateType] = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
@@ -363,7 +363,7 @@ object anon {
       
       inline def setFormatFunction1(value: DateType => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      inline def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
       inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }

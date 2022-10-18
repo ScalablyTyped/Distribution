@@ -1,7 +1,7 @@
 package typings.micromarkExtensionGfmTable
 
-import typings.micromarkExtensionGfmTable.htmlMod.HtmlExtension
-import typings.micromarkExtensionGfmTable.syntaxMod.Extension
+import typings.micromarkExtensionGfmTable.devLibHtmlMod.HtmlExtension
+import typings.micromarkExtensionGfmTable.devLibSyntaxMod.Extension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

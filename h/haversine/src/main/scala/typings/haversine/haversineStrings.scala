@@ -11,10 +11,6 @@ object haversineStrings {
   inline def LeftcurlybracketlatCommalngRightcurlybracket: LeftcurlybracketlatCommalngRightcurlybracket = "{lat,lng}".asInstanceOf[LeftcurlybracketlatCommalngRightcurlybracket]
   
   @js.native
-  sealed trait LeftcurlybracketlatCommalonRightcurlybracket extends StObject
-  inline def LeftcurlybracketlatCommalonRightcurlybracket: LeftcurlybracketlatCommalonRightcurlybracket = "{lat,lon}".asInstanceOf[LeftcurlybracketlatCommalonRightcurlybracket]
-  
-  @js.native
   sealed trait LeftcurlybracketlonCommalatRightcurlybracket extends StObject
   inline def LeftcurlybracketlonCommalatRightcurlybracket: LeftcurlybracketlonCommalatRightcurlybracket = "{lon,lat}".asInstanceOf[LeftcurlybracketlonCommalatRightcurlybracket]
   

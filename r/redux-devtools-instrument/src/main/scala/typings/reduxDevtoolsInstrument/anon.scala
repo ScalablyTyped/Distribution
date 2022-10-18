@@ -1,6 +1,5 @@
 package typings.reduxDevtoolsInstrument
 
-import typings.redux.mod.Observable
 import typings.redux.mod.Store
 import typings.reduxDevtoolsInstrument.mod.LiftedAction
 import typings.reduxDevtoolsInstrument.mod.LiftedState
@@ -68,9 +67,7 @@ object anon {
   
   trait LiftedStore[S, A /* <: typings.redux.mod.Action[Any] */, MonitorState, NextStateExt] extends StObject {
     
-    def liftedStore(): Observable[(LiftedState[S, A, MonitorState]) & NextStateExt]
-    @JSName("liftedStore")
-    var liftedStore_Original: Store[(LiftedState[S, A, MonitorState]) & NextStateExt, LiftedAction[S, A, MonitorState]]
+    var liftedStore: Store[(LiftedState[S, A, MonitorState]) & NextStateExt, LiftedAction[S, A, MonitorState]]
   }
   object LiftedStore {
     

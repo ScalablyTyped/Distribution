@@ -1,7 +1,7 @@
 package typings.spdy
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.spdy.anon.Connection
 import typings.spdy.anon.Plain
 import typings.spdy.mod.agent.Agent
@@ -118,10 +118,10 @@ object mod {
     inline def create(
       base: Any,
       options: typings.node.httpsMod.ServerOptions[
-          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
           Instantiable1[
             /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-            typings.node.nodeHttpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+            typings.node.nodeColonhttpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
           ]
         ],
       handler: js.Function2[
@@ -139,10 +139,10 @@ object mod {
     ): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(handler.asInstanceOf[js.Any]).asInstanceOf[Server]
     inline def create(
       options: typings.node.httpsMod.ServerOptions[
-          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
           Instantiable1[
             /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-            typings.node.nodeHttpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+            typings.node.nodeColonhttpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
           ]
         ],
       handler: js.Function2[
@@ -224,20 +224,20 @@ object mod {
     }
     
     type Server = typings.node.httpsMod.Server[
-        Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+        Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
         Instantiable1[
           /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-          typings.node.nodeHttpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+          typings.node.nodeColonhttpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
         ]
       ]
     
     trait ServerOptions
       extends StObject
          with typings.node.httpsMod.ServerOptions[
-              Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+              Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
               Instantiable1[
                 /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-                typings.node.nodeHttpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+                typings.node.nodeColonhttpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
               ]
             ] {
       

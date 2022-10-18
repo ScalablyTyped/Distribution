@@ -1,8 +1,8 @@
 package typings.awsGreengrassCoreSdk.streamManagerMod
 
-import typings.awsGreengrassCoreSdk.dataMod.MessageMap
-import typings.awsGreengrassCoreSdk.dataMod.MessageTypesMap
-import typings.awsGreengrassCoreSdk.dataMod.MessageValidationsMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.MessageMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.MessageTypesMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.MessageValidationsMap
 import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "Message")
 @js.native
 open class Message protected ()
-  extends typings.awsGreengrassCoreSdk.clientMod.Message {
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.Message {
   /**
     * @param streamName The name of the stream which this message is in.
     * @param sequenceNumber The sequence number of this message within the stream.
@@ -38,7 +38,7 @@ object Message {
   def formatsMap: Record[String, scala.Nothing] = js.native
   inline def formatsMap_=(x: Record[String, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatsMap")(x.asInstanceOf[js.Any])
   
-  inline def fromMap(d: MessageMap): typings.awsGreengrassCoreSdk.dataMod.Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.Message]
+  inline def fromMap(d: MessageMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.Message]
   
   @JSImport("aws-greengrass-core-sdk/stream-manager", "Message.typesMap")
   @js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/metapackage" : "2.2.7"
+      "@jupyterlab/metapackage" : "3.4.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/metapackage" : "2.2.7"
+      "@jupyterlab/metapackage" : "3.4.8"
     }
   ],
   "compile-devDependencies" : [

@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsShoppingFilledMod.ShoppingFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shoppingFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/ShoppingFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/ShoppingFilled", JSImport.Default)
   @js.native
   val default: ShoppingFilledIconType = js.native
-  
-  @js.native
-  trait ShoppingFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_ShoppingFilledIconType: String = js.native
-  }
   
   type _To = ShoppingFilledIconType
   

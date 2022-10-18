@@ -1,39 +1,36 @@
 package typings.c3.anon
 
-import typings.c3.c3Strings.`inner-center`
-import typings.c3.c3Strings.`inner-left`
-import typings.c3.c3Strings.`inner-right`
-import typings.c3.c3Strings.`outer-center`
-import typings.c3.c3Strings.`outer-left`
-import typings.c3.c3Strings.`outer-right`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Position extends StObject {
   
-  /** The position of the label. */
-  var position: `inner-right` | `inner-center` | `inner-left` | `outer-right` | `outer-center` | `outer-left`
+  var position: js.UndefOr[Top] = js.undefined
   
-  /** The label text to show. */
-  var text: String
+  var show: js.UndefOr[Boolean] = js.undefined
+  
+  var x: js.UndefOr[Double] = js.undefined
 }
 object Position {
   
-  inline def apply(
-    position: `inner-right` | `inner-center` | `inner-left` | `outer-right` | `outer-center` | `outer-left`,
-    text: String
-  ): Position = {
-    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  inline def apply(): Position = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Position]
   }
   
   extension [Self <: Position](x: Self) {
     
-    inline def setPosition(
-      value: `inner-right` | `inner-center` | `inner-left` | `outer-right` | `outer-center` | `outer-left`
-    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Top): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

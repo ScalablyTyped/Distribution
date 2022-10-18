@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A radio button which can be used in a form element.
   */
-@JSImport("blessed", "Widgets.RadioButtonElement")
+/* note: abstract class */ @JSImport("blessed", "Widgets.RadioButtonElement")
 @js.native
-abstract class RadioButtonElement protected () extends CheckboxElement {
+open class RadioButtonElement protected () extends CheckboxElement {
   def this(opts: RadioButtonOptions) = this()
 }

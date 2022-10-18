@@ -1,6 +1,6 @@
 package typings.grommet.anon
 
-import typings.grommet.dataTableMod.VerticalAlignType
+import typings.grommet.componentsDataTableMod.VerticalAlignType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

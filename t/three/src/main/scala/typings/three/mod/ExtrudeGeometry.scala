@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.extrudeGeometryMod.ExtrudeGeometryOptions
+import typings.three.srcGeometriesExtrudeGeometryMod.ExtrudeGeometryOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "ExtrudeGeometry")
 @js.native
 open class ExtrudeGeometry ()
-  extends typings.three.threeMod.ExtrudeGeometry {
-  def this(shapes: js.Array[typings.three.shapeMod.Shape]) = this()
-  def this(shapes: typings.three.shapeMod.Shape) = this()
-  def this(shapes: js.Array[typings.three.shapeMod.Shape], options: ExtrudeGeometryOptions) = this()
+  extends typings.three.srcThreeMod.ExtrudeGeometry {
+  def this(shapes: js.Array[typings.three.srcExtrasCoreShapeMod.Shape]) = this()
+  def this(shapes: typings.three.srcExtrasCoreShapeMod.Shape) = this()
+  def this(shapes: js.Array[typings.three.srcExtrasCoreShapeMod.Shape], options: ExtrudeGeometryOptions) = this()
   def this(shapes: Unit, options: ExtrudeGeometryOptions) = this()
-  def this(shapes: typings.three.shapeMod.Shape, options: ExtrudeGeometryOptions) = this()
+  def this(shapes: typings.three.srcExtrasCoreShapeMod.Shape, options: ExtrudeGeometryOptions) = this()
 }
 /* static members */
 object ExtrudeGeometry {
@@ -22,5 +22,5 @@ object ExtrudeGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.extrudeGeometryMod.ExtrudeGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.extrudeGeometryMod.ExtrudeGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesExtrudeGeometryMod.ExtrudeGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesExtrudeGeometryMod.ExtrudeGeometry]
 }

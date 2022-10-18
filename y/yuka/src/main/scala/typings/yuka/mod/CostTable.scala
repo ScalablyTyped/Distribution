@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new cost table.
   */
 open class CostTable ()
-  extends typings.yuka.yukaMod.CostTable
+  extends typings.yuka.srcYukaMod.CostTable

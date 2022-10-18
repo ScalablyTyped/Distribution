@@ -1,11 +1,11 @@
 package typings.bootstrap.mod
 
-import typings.bootstrap.alertMod.Alert.jQueryInterface
-import typings.bootstrap.alertMod.default
-import typings.bootstrap.baseComponentMod.ComponentOptions
-import typings.bootstrap.baseComponentMod.GetInstanceFactory
-import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
 import typings.bootstrap.bootstrapStrings.alert
+import typings.bootstrap.jsDistAlertMod.Alert.jQueryInterface
+import typings.bootstrap.jsDistAlertMod.default
+import typings.bootstrap.jsDistBaseComponentMod.ComponentOptions
+import typings.bootstrap.jsDistBaseComponentMod.GetInstanceFactory
+import typings.bootstrap.jsDistBaseComponentMod.GetOrCreateInstanceFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,11 +24,11 @@ object Alert {
   object Events extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.bootstrap.alertMod.Alert.Events & String] = js.native
+    def apply(value: String): js.UndefOr[typings.bootstrap.jsDistAlertMod.Alert.Events & String] = js.native
     
-    /* "close.bs.alert" */ val close: typings.bootstrap.alertMod.Alert.Events.close & String = js.native
+    /* "close.bs.alert" */ val close: typings.bootstrap.jsDistAlertMod.Alert.Events.close & String = js.native
     
-    /* "closed.bs.alert" */ val closed: typings.bootstrap.alertMod.Alert.Events.closed & String = js.native
+    /* "closed.bs.alert" */ val closed: typings.bootstrap.jsDistAlertMod.Alert.Events.closed & String = js.native
   }
   
   /* static member */
@@ -44,8 +44,8 @@ object Alert {
   /* static member */
   @JSImport("bootstrap", "Alert.getInstance")
   @js.native
-  def getInstance: GetInstanceFactory[typings.bootstrap.alertMod.Alert] = js.native
-  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.alertMod.Alert]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+  def getInstance: GetInstanceFactory[typings.bootstrap.jsDistAlertMod.Alert] = js.native
+  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistAlertMod.Alert]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
   
   /**
     * Static method which returns an alert instance associated to a DOM element
@@ -55,12 +55,12 @@ object Alert {
   /* static member */
   @JSImport("bootstrap", "Alert.getOrCreateInstance")
   @js.native
-  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.alertMod.Alert, ComponentOptions] = js.native
-  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.alertMod.Alert, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistAlertMod.Alert, ComponentOptions] = js.native
+  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistAlertMod.Alert, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("bootstrap", "Alert.jQueryInterface")
   @js.native
-  def jQueryInterface: typings.bootstrap.alertMod.Alert.jQueryInterface = js.native
+  def jQueryInterface: typings.bootstrap.jsDistAlertMod.Alert.jQueryInterface = js.native
   inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
 }

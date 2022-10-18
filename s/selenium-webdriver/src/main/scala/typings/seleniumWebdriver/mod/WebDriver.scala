@@ -3,9 +3,9 @@ package typings.seleniumWebdriver.mod
 import typings.seleniumWebdriver.anon.Async
 import typings.seleniumWebdriver.anon.AsyncBoolean
 import typings.seleniumWebdriver.anon.Bridge
-import typings.seleniumWebdriver.commandMod.Command
+import typings.seleniumWebdriver.devtoolsNetworkinterceptorMod.HttpResponse
 import typings.seleniumWebdriver.httpMod.Executor
-import typings.seleniumWebdriver.networkinterceptorMod.HttpResponse
+import typings.seleniumWebdriver.libCommandMod.Command
 import typings.std.PromiseLike
 import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
@@ -38,10 +38,10 @@ open class WebDriver protected () extends StObject {
     *
     * @return {!actions.ActionSequence} A new action sequence for this instance.
     */
-  def actions(): typings.seleniumWebdriver.inputMod.Actions = js.native
-  def actions(options: Async): typings.seleniumWebdriver.inputMod.Actions = js.native
-  def actions(options: AsyncBoolean): typings.seleniumWebdriver.inputMod.Actions = js.native
-  def actions(options: Bridge): typings.seleniumWebdriver.inputMod.Actions = js.native
+  def actions(): typings.seleniumWebdriver.libInputMod.Actions = js.native
+  def actions(options: Async): typings.seleniumWebdriver.libInputMod.Actions = js.native
+  def actions(options: AsyncBoolean): typings.seleniumWebdriver.libInputMod.Actions = js.native
+  def actions(options: Bridge): typings.seleniumWebdriver.libInputMod.Actions = js.native
   
   /**
     * Schedules a command to close the current window.
@@ -277,7 +277,7 @@ open class WebDriver protected () extends StObject {
     * @return {!Promise.<!Capabilities>} A promise
     *     that will resolve with the this instance's capabilities.
     */
-  def getCapabilities(): js.Promise[typings.seleniumWebdriver.capabilitiesMod.Capabilities] = js.native
+  def getCapabilities(): js.Promise[typings.seleniumWebdriver.libCapabilitiesMod.Capabilities] = js.native
   
   /**
     * Schedules a command to retrieve the URL of the current page.
@@ -286,7 +286,7 @@ open class WebDriver protected () extends StObject {
     */
   def getCurrentUrl(): js.Promise[String] = js.native
   
-  def getExecutor(): typings.seleniumWebdriver.commandMod.Executor = js.native
+  def getExecutor(): typings.seleniumWebdriver.libCommandMod.Executor = js.native
   
   /**
     * Schedules a command to retrieve the current page's source. The page source
@@ -328,7 +328,7 @@ open class WebDriver protected () extends StObject {
   def getWsUrl(
     debuggerAddress: String,
     target: String,
-    caps: typings.seleniumWebdriver.capabilitiesMod.Capabilities
+    caps: typings.seleniumWebdriver.libCapabilitiesMod.Capabilities
   ): js.Promise[String] = js.native
   
   /**

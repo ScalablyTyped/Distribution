@@ -1,15 +1,13 @@
 package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.bson.mod.Document
+import typings.mongodb.anon.Id
 import typings.mongodb.anon.IdInferIdType
 import typings.mongodb.anon.Meta
 import typings.mongodb.anon.Open
-import typings.mongodb.anon.`2`
 import typings.mongodb.mod.^
 import typings.mongodb.mongodbStrings.ALPNProtocols
-import typings.mongodb.mongodbStrings._empty
 import typings.mongodb.mongodbStrings._id
 import typings.mongodb.mongodbStrings.`1`
 import typings.mongodb.mongodbStrings.awaitData
@@ -136,17 +134,11 @@ inline def MONGO_CLIENT_EVENTS: js.Array[Any] = ^.asInstanceOf[js.Dynamic].selec
 
 inline def Map_=(x: MapConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Map")(x.asInstanceOf[js.Any])
 
+inline def ObjectID_ : /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectId */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("ObjectID").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectId */ Any]
+
 type ServerApiVersion = `1`
 
-type AcceptedFields[TSchema, FieldType, AssignableType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{readonly [ key in mongodb.mongodb.KeysOfAType<TSchema, FieldType> ]:? AssignableType}
-  */ typings.mongodb.mongodbStrings.AcceptedFields & TopLevel[Any]
-
-type AlternativeType[T] = (RegExpOrString[Any | T]) | T
-
 type AnyError = MongoError | js.Error
-
-type ArrayElement[Type] = Any
 
 type BitwiseFilter = scala.Double | typings.bson.mod.Binary | js.Array[scala.Double]
 
@@ -160,23 +152,15 @@ type DropDatabaseOptions = CommandOperationOptions
 
 type DropIndexesOptions = CommandOperationOptions
 
-type EnhancedOmit[TRecordOrUnion, KeyUnion] = (Pick[TRecordOrUnion, Exclude[/* keyof TRecordOrUnion */ String, KeyUnion]]) | TRecordOrUnion
-
 type EventEmitterWithState = js.Object
 
 type EventsDescription = Record[String, GenericListener]
 
 type ExplainVerbosityLike = ExplainVerbosity | Boolean
 
-type Filter[TSchema] = Partial[TSchema] | (typings.mongodb.mongodbStrings.Filter & TopLevel[Any] & RootFilterOperators[WithId[TSchema]])
-
-type FilterOperations[T] = FilterOperators[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ key in keyof T ]:? mongodb.mongodb.FilterOperators<T[key]>}
-  */ typings.mongodb.mongodbStrings.FilterOperations & TopLevel[T])
+type Filter[TSchema] = Partial[TSchema] | ((/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<mongodb.mongodb.WithId<TSchema>>, '.'> ]:? mongodb.mongodb.Condition<mongodb.mongodb.PropertyType<mongodb.mongodb.WithId<TSchema>, Property>>} */ js.Any) & RootFilterOperators[WithId[TSchema]])
 
 type FinalizeFunction[TKey, TValue] = js.Function2[/* key */ TKey, /* reducedValue */ TValue, TValue]
-
-type Flatten[Type] = Type
 
 type Hint = String | Document
 
@@ -194,13 +178,7 @@ type IndexDirection = _IndexDirection | scala.Double
 type IndexSpecification = OneOrMore[
 String | (js.Tuple2[String, IndexDirection]) | StringDictionary[IndexDirection] | (typings.std.Map[String, IndexDirection])]
 
-type InferIdType[TSchema] = typings.bson.mod.ObjectId | Any
-
 type IntegerType = scala.Double | typings.bson.mod.Int32 | typings.bson.mod.Long
-
-type IsAny[Type, ResultIfAny, ResultIfNotAny] = ResultIfNotAny | ResultIfAny
-
-type Join[T /* <: js.Array[Any] */, D /* <: String */] = String | _empty
 
 type KeysOfAType[TSchema, Type] = /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof TSchema ]: std.NonNullable<TSchema[key]> extends Type? key : never}[keyof TSchema] */ js.Any
 
@@ -208,26 +186,18 @@ type KeysOfOtherType[TSchema, Type] = /* import warning: importer.ImportType#app
 
 type MapFunction[TSchema] = js.ThisFunction0[/* this */ TSchema, Unit]
 
-type MatchKeysAndValues[TSchema] = typings.mongodb.mongodbStrings.MatchKeysAndValues & TopLevel[Any]
+type MatchKeysAndValues[TSchema] = /* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<TSchema>, '.'> ]:? mongodb.mongodb.PropertyType<TSchema, Property>} */ js.Any
 
 type MongoClientEvents = (Pick[
 TopologyEvents, 
 connectionPoolCreated | connectionPoolReady | connectionPoolCleared | connectionPoolClosed | connectionCreated | connectionReady | connectionClosed | connectionCheckOutStarted | connectionCheckOutFailed | connectionCheckedOut | connectionCheckedIn | commandStarted | commandSucceeded | commandFailed | serverOpening | serverClosed | serverDescriptionChanged | topologyOpening | topologyClosed | topologyDescriptionChanged | error | timeout | close | serverHeartbeatStarted | serverHeartbeatSucceeded | serverHeartbeatFailed]) & Open
 
-type NestedPaths[Type] = (js.Array[Any | String]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in std.Extract<keyof Type, string> ]: Type[Key] extends Type? [Key] : Type extends Type[Key]? [Key] : Type[Key] extends std.ReadonlyArray<infer ArrayType>? Type extends any? [Key] : any extends Type? [Key] : [Key, ...any] : [Key, ...any] | [Key]}[std.Extract<keyof Type, string>] */ js.Any)
-
 type NestedPathsOfType[TSchema, Type] = KeysOfAType[
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<TSchema>, '.'> ]: mongodb.mongodb.PropertyType<TSchema, Property>}
-  */ typings.mongodb.mongodbStrings.NestedPathsOfType & TopLevel[Any], 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<TSchema>, '.'> ]: mongodb.mongodb.PropertyType<TSchema, Property>} */ js.Any, 
 Type]
 
 /* Inlined {[ key in keyof bson.bson.ObjectIdLike ]:? never} & bson.bson.Document */
 type NonObjectIdLikeDocument = StringDictionary[Any]
-
-type NotAcceptedFields[TSchema, FieldType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{readonly [ key in mongodb.mongodb.KeysOfOtherType<TSchema, FieldType> ]:? never}
-  */ typings.mongodb.mongodbStrings.NotAcceptedFields & TopLevel[Any]
 
 type NumericType = IntegerType | typings.bson.mod.Decimal128 | typings.bson.mod.Double
 
@@ -240,9 +210,7 @@ Record[String, FieldType],
 
 type OperationTime = typings.bson.mod.Timestamp
 
-type OptionalId[TSchema] = (EnhancedOmit[TSchema, _id]) & `2`[TSchema]
-
-type OptionalUnlessRequiredId[TSchema] = OptionalId[TSchema] | TSchema
+type OptionalId[TSchema] = (EnhancedOmit[TSchema, _id]) & Id[TSchema]
 
 type ProfilingLevelOptions = CommandOperationOptions
 
@@ -250,17 +218,13 @@ type Projection[TSchema /* <: Document */] = Document
 
 type ProjectionOperators = Document
 
-type PropertyType[Type, Property /* <: String */] = Any | (/* import warning: importer.ImportType#apply Failed type conversion: Type[Property] */ js.Any)
+type PullAllOperator[TSchema] = (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ key in mongodb.mongodb.KeysOfAType<TSchema, std.ReadonlyArray<any>> ]:? TSchema[key]} */ js.Any) & (NotAcceptedFields[TSchema, js.Array[Any]]) & StringDictionary[js.Array[Any]]
 
-type PullAllOperator[TSchema] = typings.mongodb.mongodbStrings.PullAllOperator & TopLevel[TSchema] & (NotAcceptedFields[TSchema, js.Array[Any]]) & StringDictionary[js.Array[Any]]
+type PullOperator[TSchema] = (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ key in mongodb.mongodb.KeysOfAType<TSchema, std.ReadonlyArray<any>> ]:? std.Partial<mongodb.mongodb.Flatten<TSchema[key]>> | mongodb.mongodb.FilterOperations<mongodb.mongodb.Flatten<TSchema[key]>>} */ js.Any) & (NotAcceptedFields[TSchema, js.Array[Any]]) & (StringDictionary[FilterOperators[Any] | Any])
 
-type PullOperator[TSchema] = typings.mongodb.mongodbStrings.PullOperator & TopLevel[Any] & (NotAcceptedFields[TSchema, js.Array[Any]]) & (StringDictionary[FilterOperators[Any] | Any])
-
-type PushOperator[TSchema] = typings.mongodb.mongodbStrings.PushOperator & TopLevel[Any] & (NotAcceptedFields[TSchema, js.Array[Any]]) & (StringDictionary[ArrayOperator[Any] | Any])
+type PushOperator[TSchema] = (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ key in mongodb.mongodb.KeysOfAType<TSchema, std.ReadonlyArray<any>> ]:? mongodb.mongodb.Flatten<TSchema[key]> | mongodb.mongodb.ArrayOperator<std.Array<mongodb.mongodb.Flatten<TSchema[key]>>>} */ js.Any) & (NotAcceptedFields[TSchema, js.Array[Any]]) & (StringDictionary[ArrayOperator[Any] | Any])
 
 type ReduceFunction[TKey, TValue] = js.Function2[/* key */ TKey, /* values */ js.Array[TValue], TValue]
-
-type RegExpOrString[T] = T | typings.bson.mod.BSONRegExp | js.RegExp
 
 type RemoveUserOptions = CommandOperationOptions
 
@@ -268,9 +232,7 @@ type ResumeToken = Any
 
 type RunCommandOptions = CommandOperationOptions
 
-type SchemaMember[T, V] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]:? V}
-  */ typings.mongodb.mongodbStrings.SchemaMember & TopLevel[Any]) | StringDictionary[V]
+type SchemaMember[T, V] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? V} */ js.Any) | StringDictionary[V]
 
 type ServerOptions = (Omit[ConnectionPoolOptions, id | generation | hostAddress]) & MonitorOptions
 
@@ -279,7 +241,7 @@ type ServerSelector = js.Function2[
 /* servers */ js.Array[ServerDescription], 
 js.Array[ServerDescription]]
 
-type SetFields[TSchema] = typings.mongodb.mongodbStrings.SetFields & TopLevel[Any] & (NotAcceptedFields[TSchema, js.UndefOr[js.Array[Any]]]) & (StringDictionary[AddToSetOperators[Any] | Any])
+type SetFields[TSchema] = (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ key in mongodb.mongodb.KeysOfAType<TSchema, std.ReadonlyArray<any> | undefined> ]:? mongodb.mongodb.OptionalId<mongodb.mongodb.Flatten<TSchema[key]>> | mongodb.mongodb.AddToSetOperators<std.Array<mongodb.mongodb.OptionalId<mongodb.mongodb.Flatten<TSchema[key]>>>>} */ js.Any) & (NotAcceptedFields[TSchema, js.UndefOr[js.Array[Any]]]) & (StringDictionary[AddToSetOperators[Any] | Any])
 
 type SetProfilingLevelOptions = CommandOperationOptions
 

@@ -1,9 +1,9 @@
 package typings.nextServer.anon
 
-import typings.nextServer.libUtilsMod.AppType
-import typings.nextServer.libUtilsMod.Enhancer
-import typings.nextServer.libUtilsMod.NextComponentType
-import typings.nextServer.libUtilsMod.NextPageContext
+import typings.nextServer.distLibUtilsMod.AppType
+import typings.nextServer.distLibUtilsMod.Enhancer
+import typings.nextServer.distLibUtilsMod.NextComponentType
+import typings.nextServer.distLibUtilsMod.NextPageContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

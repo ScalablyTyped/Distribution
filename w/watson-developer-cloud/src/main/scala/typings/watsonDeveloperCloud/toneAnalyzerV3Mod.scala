@@ -8,9 +8,9 @@ object toneAnalyzerV3Mod {
   
   @JSImport("watson-developer-cloud/tone-analyzer/v3", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.^ {
-    def this(options: js.Any) = this()
+    def this(options: Any) = this()
   }
   
   type ToneAnalyzerV3 = typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.^

@@ -1,11 +1,11 @@
 package typings.bootstrap.mod
 
 import typings.bootstrap.anon.PartialOptions
-import typings.bootstrap.baseComponentMod.GetInstanceFactory
-import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
-import typings.bootstrap.carouselMod.Carousel.Options
-import typings.bootstrap.carouselMod.Carousel.jQueryInterface
-import typings.bootstrap.carouselMod.default
+import typings.bootstrap.jsDistBaseComponentMod.GetInstanceFactory
+import typings.bootstrap.jsDistBaseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.jsDistCarouselMod.Carousel.Options
+import typings.bootstrap.jsDistCarouselMod.Carousel.jQueryInterface
+import typings.bootstrap.jsDistCarouselMod.default
 import typings.bootstrap.mod.global.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,19 +41,19 @@ object Carousel {
   object Events extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.bootstrap.carouselMod.Carousel.Events & String] = js.native
+    def apply(value: String): js.UndefOr[typings.bootstrap.jsDistCarouselMod.Carousel.Events & String] = js.native
     
-    /* "slid.bs.carousel" */ val slid: typings.bootstrap.carouselMod.Carousel.Events.slid & String = js.native
+    /* "slid.bs.carousel" */ val slid: typings.bootstrap.jsDistCarouselMod.Carousel.Events.slid & String = js.native
     
-    /* "slide.bs.carousel" */ val slide: typings.bootstrap.carouselMod.Carousel.Events.slide & String = js.native
+    /* "slide.bs.carousel" */ val slide: typings.bootstrap.jsDistCarouselMod.Carousel.Events.slide & String = js.native
   }
   
   /* static member */
   /* was `typeof Carousel.getOrCreateInstance` */
   @JSImport("bootstrap", "Carousel.carouselInstance")
   @js.native
-  def carouselInstance: GetOrCreateInstanceFactory[typings.bootstrap.carouselMod.Carousel, PartialOptions] = js.native
-  inline def carouselInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.carouselMod.Carousel, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("carouselInstance")(x.asInstanceOf[js.Any])
+  def carouselInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistCarouselMod.Carousel, PartialOptions] = js.native
+  inline def carouselInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistCarouselMod.Carousel, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("carouselInstance")(x.asInstanceOf[js.Any])
   
   /**
     * Static method which allows you to get the carousel instance associated
@@ -62,18 +62,18 @@ object Carousel {
   /* static member */
   @JSImport("bootstrap", "Carousel.getInstance")
   @js.native
-  def getInstance: GetInstanceFactory[typings.bootstrap.carouselMod.Carousel] = js.native
-  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.carouselMod.Carousel]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+  def getInstance: GetInstanceFactory[typings.bootstrap.jsDistCarouselMod.Carousel] = js.native
+  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistCarouselMod.Carousel]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("bootstrap", "Carousel.getOrCreateInstance")
   @js.native
-  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.carouselMod.Carousel, PartialOptions] = js.native
-  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.carouselMod.Carousel, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistCarouselMod.Carousel, PartialOptions] = js.native
+  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistCarouselMod.Carousel, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("bootstrap", "Carousel.jQueryInterface")
   @js.native
-  def jQueryInterface: typings.bootstrap.carouselMod.Carousel.jQueryInterface = js.native
+  def jQueryInterface: typings.bootstrap.jsDistCarouselMod.Carousel.jQueryInterface = js.native
   inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
 }

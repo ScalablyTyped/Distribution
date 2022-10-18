@@ -8,7 +8,7 @@ import typings.amapJsApi.amapJsApiStrings.mouseover
 import typings.amapJsApi.amapJsApiStrings.mouseup
 import typings.amapJsApi.amapJsApiStrings.touchend
 import typings.amapJsApi.amapJsApiStrings.touchstart
-import typings.amapJsApi.anon.Id
+import typings.amapJsApi.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,20 +40,20 @@ object LabelsLayer {
   
   trait EventData extends StObject {
     
-    var data: Id
+    var data: Name
     
     var opts: typings.amapJsApi.anon.Icon
   }
   object EventData {
     
-    inline def apply(data: Id, opts: typings.amapJsApi.anon.Icon): EventData = {
+    inline def apply(data: Name, opts: typings.amapJsApi.anon.Icon): EventData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventData]
     }
     
     extension [Self <: EventData](x: Self) {
       
-      inline def setData(value: Id): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Name): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setOpts(value: typings.amapJsApi.anon.Icon): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     }

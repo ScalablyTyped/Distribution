@@ -3,6 +3,8 @@ package typings.libp2pInterfacePeerId
 import typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.Ed25519
 import typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.RSA
 import typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.secp256k1
+import typings.multiformats.cidMod.CID
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +36,7 @@ object mod {
     
     def toBytes(): js.typedarray.Uint8Array = js.native
     
-    def toCID(): Any = js.native
+    def toCID(): CID[Any, Double, Double, Version] = js.native
     
     val `type`: RSA | Ed25519 | secp256k1 = js.native
   }

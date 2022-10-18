@@ -9,10 +9,10 @@ object mod {
   @JSImport("@opentelemetry/context-async-hooks", "AsyncHooksContextManager")
   @js.native
   open class AsyncHooksContextManager ()
-    extends typings.opentelemetryContextAsyncHooks.asyncHooksContextManagerMod.AsyncHooksContextManager
+    extends typings.opentelemetryContextAsyncHooks.buildSrcAsyncHooksContextManagerMod.AsyncHooksContextManager
   
   @JSImport("@opentelemetry/context-async-hooks", "AsyncLocalStorageContextManager")
   @js.native
   open class AsyncLocalStorageContextManager ()
-    extends typings.opentelemetryContextAsyncHooks.asyncLocalStorageContextManagerMod.AsyncLocalStorageContextManager
+    extends typings.opentelemetryContextAsyncHooks.buildSrcAsyncLocalStorageContextManagerMod.AsyncLocalStorageContextManager
 }

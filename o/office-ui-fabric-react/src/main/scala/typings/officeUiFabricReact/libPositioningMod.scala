@@ -1,17 +1,17 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.directionalHintMod.DirectionalHint
-import typings.officeUiFabricReact.positioningTypesMod.ICalloutPositionedInfo
-import typings.officeUiFabricReact.positioningTypesMod.IPositionProps
-import typings.officeUiFabricReact.positioningTypesMod.IPositionedData
-import typings.officeUiFabricReact.positioningTypesMod.IWindowWithSegments
-import typings.officeUiFabricReact.positioningTypesMod.RectangleEdge
-import typings.officeUiFabricReact.utilitiesMod.Rectangle
+import typings.officeUiFabricReact.libCommonDirectionalHintMod.DirectionalHint
+import typings.officeUiFabricReact.libUtilitiesMod.Rectangle
+import typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.ICalloutPositionedInfo
+import typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.IPositionProps
+import typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.IPositionedData
+import typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.IWindowWithSegments
+import typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.RectangleEdge
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.MouseEvent
-import typings.uifabricUtilities.irectangleMod.IRectangle
-import typings.uifabricUtilities.pointMod.Point
+import typings.uifabricUtilities.libIrectangleMod.IRectangle
+import typings.uifabricUtilities.libPointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,15 +27,17 @@ object libPositioningMod {
   object Position extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.positioningTypesMod.Position & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.Position & Double
+      ] = js.native
     
-    /* 1 */ val bottom: typings.officeUiFabricReact.positioningTypesMod.Position.bottom & Double = js.native
+    /* 1 */ val bottom: typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.Position.bottom & Double = js.native
     
-    /* 3 */ val end: typings.officeUiFabricReact.positioningTypesMod.Position.end & Double = js.native
+    /* 3 */ val end: typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.Position.end & Double = js.native
     
-    /* 2 */ val start: typings.officeUiFabricReact.positioningTypesMod.Position.start & Double = js.native
+    /* 2 */ val start: typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.Position.start & Double = js.native
     
-    /* 0 */ val top: typings.officeUiFabricReact.positioningTypesMod.Position.top & Double = js.native
+    /* 0 */ val top: typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.Position.top & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Positioning", "RectangleEdge")
@@ -43,15 +45,17 @@ object libPositioningMod {
   object RectangleEdge extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.positioningTypesMod.RectangleEdge & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.RectangleEdge & Double
+      ] = js.native
     
-    /* -1 */ val bottom: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.bottom & Double = js.native
+    /* -1 */ val bottom: typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.RectangleEdge.bottom & Double = js.native
     
-    /* 2 */ val left: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.left & Double = js.native
+    /* 2 */ val left: typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.RectangleEdge.left & Double = js.native
     
-    /* -2 */ val right: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.right & Double = js.native
+    /* -2 */ val right: typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.RectangleEdge.right & Double = js.native
     
-    /* 1 */ val top: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.top & Double = js.native
+    /* 1 */ val top: typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.RectangleEdge.top & Double = js.native
   }
   
   inline def getBoundsFromTargetWindow(target: Null, targetWindow: IWindowWithSegments): IRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[IRectangle]

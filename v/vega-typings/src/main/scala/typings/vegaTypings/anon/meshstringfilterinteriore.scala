@@ -1,6 +1,6 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.dataMod.FormatTopoJSON
+import typings.vegaTypings.typesSpecDataMod.FormatTopoJSON
 import typings.vegaTypings.vegaTypingsStrings.exterior
 import typings.vegaTypings.vegaTypingsStrings.interior
 import typings.vegaTypings.vegaTypingsStrings.topojson

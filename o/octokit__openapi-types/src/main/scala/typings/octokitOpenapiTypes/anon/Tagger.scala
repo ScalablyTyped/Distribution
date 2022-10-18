@@ -26,7 +26,7 @@ trait Tagger extends StObject {
     */
   var tag: String
   
-  var tagger: DateString
+  var tagger: DateEmailName
   
   /**
     * Format: uri
@@ -35,7 +35,7 @@ trait Tagger extends StObject {
     */
   var url: String
   
-  var verification: js.UndefOr[Signature] = js.undefined
+  var verification: js.UndefOr[Reason] = js.undefined
 }
 object Tagger {
   
@@ -45,7 +45,7 @@ object Tagger {
     `object`: TypeUrl,
     sha: String,
     tag: String,
-    tagger: DateString,
+    tagger: DateEmailName,
     url: String
   ): Tagger = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagger = tagger.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
@@ -65,11 +65,11 @@ object Tagger {
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    inline def setTagger(value: DateString): Self = StObject.set(x, "tagger", value.asInstanceOf[js.Any])
+    inline def setTagger(value: DateEmailName): Self = StObject.set(x, "tagger", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setVerification(value: Signature): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+    inline def setVerification(value: Reason): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
     
     inline def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
   }

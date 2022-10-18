@@ -27,7 +27,7 @@ object mod {
       * Animation name.
       * @see https://daneden.github.io/animate.css/
       */
-    var animation: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ Any
+    var animation: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76, starting with typings.reactWow.reactWowStrings.bounce, typings.reactWow.reactWowStrings.flash, typings.reactWow.reactWowStrings.pulse */ Any
     
     /**
       * The callback is fired every time an animation is stoped.
@@ -87,7 +87,7 @@ object mod {
   object ReactWOWProps {
     
     inline def apply(
-      animation: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ Any,
+      animation: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76, starting with typings.reactWow.reactWowStrings.bounce, typings.reactWow.reactWowStrings.flash, typings.reactWow.reactWowStrings.pulse */ Any,
       children: Element
     ): ReactWOWProps = {
       val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any])
@@ -100,7 +100,9 @@ object mod {
       
       inline def setAnimateClassUndefined: Self = StObject.set(x, "animateClass", js.undefined)
       
-      inline def setAnimation(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76, starting with typings.reactWow.reactWowStrings.bounce, typings.reactWow.reactWowStrings.flash, typings.reactWow.reactWowStrings.pulse */ Any
+      ): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       

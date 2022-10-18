@@ -1,7 +1,7 @@
 package typings.reactMdMenu.anon
 
-import typings.reactMdTransition.typesMod.TransitionEnterHandler
-import typings.reactMdTransition.typesMod.TransitionExitHandler
+import typings.reactMdTransition.typesTypesMod.TransitionEnterHandler
+import typings.reactMdTransition.typesTypesMod.TransitionExitHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

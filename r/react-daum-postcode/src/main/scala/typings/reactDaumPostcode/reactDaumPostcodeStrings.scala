@@ -1,6 +1,6 @@
 package typings.reactDaumPostcode
 
-import typings.reactDaumPostcode.loadPostcodeMod.State
+import typings.reactDaumPostcode.libLoadPostcodeMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

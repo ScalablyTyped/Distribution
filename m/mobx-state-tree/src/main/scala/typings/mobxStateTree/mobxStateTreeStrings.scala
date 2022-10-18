@@ -1,7 +1,7 @@
 package typings.mobxStateTree
 
-import typings.mobxStateTree.actionMod.IMiddlewareEventType
-import typings.mobxStateTree.livelinessCheckingMod.LivelinessMode
+import typings.mobxStateTree.distCoreActionMod.IMiddlewareEventType
+import typings.mobxStateTree.distCoreNodeLivelinessCheckingMod.LivelinessMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,28 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mobxStateTreeStrings {
   
   @js.native
-  sealed trait ExtractCFromProps extends StObject
-  inline def ExtractCFromProps: ExtractCFromProps = "ExtractCFromProps".asInstanceOf[ExtractCFromProps]
-  
-  @js.native
   sealed trait Map extends StObject
   inline def Map: Map = "Map".asInstanceOf[Map]
-  
-  @js.native
-  sealed trait ModelCreationType extends StObject
-  inline def ModelCreationType: ModelCreationType = "ModelCreationType".asInstanceOf[ModelCreationType]
-  
-  @js.native
-  sealed trait ModelInstanceTypeProps extends StObject
-  inline def ModelInstanceTypeProps: ModelInstanceTypeProps = "ModelInstanceTypeProps".asInstanceOf[ModelInstanceTypeProps]
-  
-  @js.native
-  sealed trait ModelPropertiesDeclarationToProperties extends StObject
-  inline def ModelPropertiesDeclarationToProperties: ModelPropertiesDeclarationToProperties = "ModelPropertiesDeclarationToProperties".asInstanceOf[ModelPropertiesDeclarationToProperties]
-  
-  @js.native
-  sealed trait ModelSnapshotType extends StObject
-  inline def ModelSnapshotType: ModelSnapshotType = "ModelSnapshotType".asInstanceOf[ModelSnapshotType]
   
   @js.native
   sealed trait action

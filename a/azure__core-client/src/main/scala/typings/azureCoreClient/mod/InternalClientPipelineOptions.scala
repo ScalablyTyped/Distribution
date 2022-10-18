@@ -1,7 +1,7 @@
 package typings.azureCoreClient.mod
 
 import typings.azureCoreClient.anon.Credential
-import typings.azureCoreRestPipeline.coreRestPipelineMod.InternalPipelineOptions
+import typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.InternalPipelineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

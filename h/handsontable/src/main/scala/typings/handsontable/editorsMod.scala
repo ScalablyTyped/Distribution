@@ -30,7 +30,7 @@ object editorsMod {
   @JSImport("handsontable/editors", "AutocompleteEditor")
   @js.native
   open class AutocompleteEditor protected ()
-    extends typings.handsontable.autocompleteEditorMod.AutocompleteEditor {
+    extends typings.handsontable.editorsAutocompleteEditorMod.AutocompleteEditor {
     def this(instance: default) = this()
   }
   object AutocompleteEditor {
@@ -46,10 +46,10 @@ object editorsMod {
   @js.native
   val BASE_EDITOR: base = js.native
   
-  @JSImport("handsontable/editors", "BaseEditor")
+  /* note: abstract class */ @JSImport("handsontable/editors", "BaseEditor")
   @js.native
-  abstract class BaseEditor protected ()
-    extends typings.handsontable.baseEditorMod.BaseEditor {
+  open class BaseEditor protected ()
+    extends typings.handsontable.editorsBaseEditorMod.BaseEditor {
     def this(instance: default) = this()
   }
   
@@ -60,7 +60,7 @@ object editorsMod {
   @JSImport("handsontable/editors", "CheckboxEditor")
   @js.native
   open class CheckboxEditor protected ()
-    extends typings.handsontable.checkboxEditorMod.CheckboxEditor {
+    extends typings.handsontable.editorsCheckboxEditorMod.CheckboxEditor {
     def this(instance: default) = this()
   }
   
@@ -75,14 +75,14 @@ object editorsMod {
   @JSImport("handsontable/editors", "DateEditor")
   @js.native
   open class DateEditor protected ()
-    extends typings.handsontable.dateEditorMod.DateEditor {
+    extends typings.handsontable.editorsDateEditorMod.DateEditor {
     def this(instance: default) = this()
   }
   
   @JSImport("handsontable/editors", "DropdownEditor")
   @js.native
   open class DropdownEditor protected ()
-    extends typings.handsontable.dropdownEditorMod.DropdownEditor {
+    extends typings.handsontable.editorsDropdownEditorMod.DropdownEditor {
     def this(instance: default) = this()
   }
   
@@ -93,7 +93,7 @@ object editorsMod {
   @JSImport("handsontable/editors", "HandsontableEditor")
   @js.native
   open class HandsontableEditor protected ()
-    extends typings.handsontable.handsontableEditorMod.HandsontableEditor {
+    extends typings.handsontable.editorsHandsontableEditorMod.HandsontableEditor {
     def this(instance: default) = this()
   }
   
@@ -104,7 +104,7 @@ object editorsMod {
   @JSImport("handsontable/editors", "NumericEditor")
   @js.native
   open class NumericEditor protected ()
-    extends typings.handsontable.numericEditorMod.NumericEditor {
+    extends typings.handsontable.editorsNumericEditorMod.NumericEditor {
     def this(instance: default) = this()
   }
   
@@ -115,7 +115,7 @@ object editorsMod {
   @JSImport("handsontable/editors", "PasswordEditor")
   @js.native
   open class PasswordEditor protected ()
-    extends typings.handsontable.passwordEditorMod.PasswordEditor {
+    extends typings.handsontable.editorsPasswordEditorMod.PasswordEditor {
     def this(instance: default) = this()
   }
   
@@ -123,13 +123,13 @@ object editorsMod {
   @js.native
   open class RegisteredEditor protected ()
     extends typings.handsontable.editorsRegistryMod.RegisteredEditor {
-    def this(editorClass: typings.handsontable.baseEditorMod.BaseEditor) = this()
+    def this(editorClass: typings.handsontable.editorsBaseEditorMod.BaseEditor) = this()
   }
   object RegisteredEditor {
     
     @JSImport("handsontable/editors", "RegisteredEditor")
     @js.native
-    def apply(editorClass: typings.handsontable.baseEditorMod.BaseEditor): Unit = js.native
+    def apply(editorClass: typings.handsontable.editorsBaseEditorMod.BaseEditor): Unit = js.native
   }
   
   @JSImport("handsontable/editors", "SELECT_EDITOR")
@@ -139,7 +139,7 @@ object editorsMod {
   @JSImport("handsontable/editors", "SelectEditor")
   @js.native
   open class SelectEditor protected ()
-    extends typings.handsontable.selectEditorMod.SelectEditor {
+    extends typings.handsontable.editorsSelectEditorMod.SelectEditor {
     def this(instance: default) = this()
   }
   
@@ -154,18 +154,18 @@ object editorsMod {
   @JSImport("handsontable/editors", "TextEditor")
   @js.native
   open class TextEditor protected ()
-    extends typings.handsontable.textEditorMod.TextEditor {
+    extends typings.handsontable.editorsTextEditorMod.TextEditor {
     def this(instance: default) = this()
   }
   
   @JSImport("handsontable/editors", "TimeEditor")
   @js.native
   open class TimeEditor protected ()
-    extends typings.handsontable.timeEditorMod.TimeEditor {
+    extends typings.handsontable.editorsTimeEditorMod.TimeEditor {
     def this(instance: default) = this()
   }
   
-  inline def getEditorInstance(name: String, hotInstance: default): Instantiable1[/* instance */ default, typings.handsontable.baseEditorMod.BaseEditor] = (^.asInstanceOf[js.Dynamic].applyDynamic("_getEditorInstance")(name.asInstanceOf[js.Any], hotInstance.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* instance */ default, typings.handsontable.baseEditorMod.BaseEditor]]
+  inline def getEditorInstance(name: String, hotInstance: default): Instantiable1[/* instance */ default, typings.handsontable.editorsBaseEditorMod.BaseEditor] = (^.asInstanceOf[js.Dynamic].applyDynamic("_getEditorInstance")(name.asInstanceOf[js.Any], hotInstance.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* instance */ default, typings.handsontable.editorsBaseEditorMod.BaseEditor]]
   
   inline def registerAllEditors(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAllEditors")().asInstanceOf[Unit]
   
@@ -188,52 +188,70 @@ object editorsMod {
     
     var autocomplete: (Instantiable1[
         /* instance */ default, 
-        typings.handsontable.autocompleteEditorMod.AutocompleteEditor
+        typings.handsontable.editorsAutocompleteEditorMod.AutocompleteEditor
       ]) & TypeofAutocompleteEditor
     
-    var base: Instantiable1[/* instance */ default, typings.handsontable.baseEditorMod.BaseEditor]
+    var base: Instantiable1[/* instance */ default, typings.handsontable.editorsBaseEditorMod.BaseEditor]
     
-    var checkbox: Instantiable1[/* instance */ default, typings.handsontable.checkboxEditorMod.CheckboxEditor]
+    var checkbox: Instantiable1[
+        /* instance */ default, 
+        typings.handsontable.editorsCheckboxEditorMod.CheckboxEditor
+      ]
     
-    var date: Instantiable1[/* instance */ default, typings.handsontable.dateEditorMod.DateEditor]
+    var date: Instantiable1[/* instance */ default, typings.handsontable.editorsDateEditorMod.DateEditor]
     
-    var dropdown: Instantiable1[/* instance */ default, typings.handsontable.dropdownEditorMod.DropdownEditor]
+    var dropdown: Instantiable1[
+        /* instance */ default, 
+        typings.handsontable.editorsDropdownEditorMod.DropdownEditor
+      ]
     
     var handsontable: Instantiable1[
         /* instance */ default, 
-        typings.handsontable.handsontableEditorMod.HandsontableEditor
+        typings.handsontable.editorsHandsontableEditorMod.HandsontableEditor
       ]
     
-    var numeric: Instantiable1[/* instance */ default, typings.handsontable.numericEditorMod.NumericEditor]
+    var numeric: Instantiable1[/* instance */ default, typings.handsontable.editorsNumericEditorMod.NumericEditor]
     
-    var password: Instantiable1[/* instance */ default, typings.handsontable.passwordEditorMod.PasswordEditor]
+    var password: Instantiable1[
+        /* instance */ default, 
+        typings.handsontable.editorsPasswordEditorMod.PasswordEditor
+      ]
     
-    var select: Instantiable1[/* instance */ default, typings.handsontable.selectEditorMod.SelectEditor]
+    var select: Instantiable1[/* instance */ default, typings.handsontable.editorsSelectEditorMod.SelectEditor]
     
-    var text: Instantiable1[/* instance */ default, typings.handsontable.textEditorMod.TextEditor]
+    var text: Instantiable1[/* instance */ default, typings.handsontable.editorsTextEditorMod.TextEditor]
     
-    var time: Instantiable1[/* instance */ default, typings.handsontable.timeEditorMod.TimeEditor]
+    var time: Instantiable1[/* instance */ default, typings.handsontable.editorsTimeEditorMod.TimeEditor]
   }
   object Editors {
     
     inline def apply(
       autocomplete: (Instantiable1[
           /* instance */ default, 
-          typings.handsontable.autocompleteEditorMod.AutocompleteEditor
+          typings.handsontable.editorsAutocompleteEditorMod.AutocompleteEditor
         ]) & TypeofAutocompleteEditor,
-      base: Instantiable1[/* instance */ default, typings.handsontable.baseEditorMod.BaseEditor],
-      checkbox: Instantiable1[/* instance */ default, typings.handsontable.checkboxEditorMod.CheckboxEditor],
-      date: Instantiable1[/* instance */ default, typings.handsontable.dateEditorMod.DateEditor],
-      dropdown: Instantiable1[/* instance */ default, typings.handsontable.dropdownEditorMod.DropdownEditor],
+      base: Instantiable1[/* instance */ default, typings.handsontable.editorsBaseEditorMod.BaseEditor],
+      checkbox: Instantiable1[
+          /* instance */ default, 
+          typings.handsontable.editorsCheckboxEditorMod.CheckboxEditor
+        ],
+      date: Instantiable1[/* instance */ default, typings.handsontable.editorsDateEditorMod.DateEditor],
+      dropdown: Instantiable1[
+          /* instance */ default, 
+          typings.handsontable.editorsDropdownEditorMod.DropdownEditor
+        ],
       handsontable: Instantiable1[
           /* instance */ default, 
-          typings.handsontable.handsontableEditorMod.HandsontableEditor
+          typings.handsontable.editorsHandsontableEditorMod.HandsontableEditor
         ],
-      numeric: Instantiable1[/* instance */ default, typings.handsontable.numericEditorMod.NumericEditor],
-      password: Instantiable1[/* instance */ default, typings.handsontable.passwordEditorMod.PasswordEditor],
-      select: Instantiable1[/* instance */ default, typings.handsontable.selectEditorMod.SelectEditor],
-      text: Instantiable1[/* instance */ default, typings.handsontable.textEditorMod.TextEditor],
-      time: Instantiable1[/* instance */ default, typings.handsontable.timeEditorMod.TimeEditor]
+      numeric: Instantiable1[/* instance */ default, typings.handsontable.editorsNumericEditorMod.NumericEditor],
+      password: Instantiable1[
+          /* instance */ default, 
+          typings.handsontable.editorsPasswordEditorMod.PasswordEditor
+        ],
+      select: Instantiable1[/* instance */ default, typings.handsontable.editorsSelectEditorMod.SelectEditor],
+      text: Instantiable1[/* instance */ default, typings.handsontable.editorsTextEditorMod.TextEditor],
+      time: Instantiable1[/* instance */ default, typings.handsontable.editorsTimeEditorMod.TimeEditor]
     ): Editors = {
       val __obj = js.Dynamic.literal(autocomplete = autocomplete.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], checkbox = checkbox.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], dropdown = dropdown.asInstanceOf[js.Any], handsontable = handsontable.asInstanceOf[js.Any], numeric = numeric.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[Editors]
@@ -244,40 +262,53 @@ object editorsMod {
       inline def setAutocomplete(
         value: (Instantiable1[
               /* instance */ default, 
-              typings.handsontable.autocompleteEditorMod.AutocompleteEditor
+              typings.handsontable.editorsAutocompleteEditorMod.AutocompleteEditor
             ]) & TypeofAutocompleteEditor
       ): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       
-      inline def setBase(value: Instantiable1[/* instance */ default, typings.handsontable.baseEditorMod.BaseEditor]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Instantiable1[/* instance */ default, typings.handsontable.editorsBaseEditorMod.BaseEditor]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
       inline def setCheckbox(
-        value: Instantiable1[/* instance */ default, typings.handsontable.checkboxEditorMod.CheckboxEditor]
+        value: Instantiable1[
+              /* instance */ default, 
+              typings.handsontable.editorsCheckboxEditorMod.CheckboxEditor
+            ]
       ): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
       
-      inline def setDate(value: Instantiable1[/* instance */ default, typings.handsontable.dateEditorMod.DateEditor]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Instantiable1[/* instance */ default, typings.handsontable.editorsDateEditorMod.DateEditor]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDropdown(
-        value: Instantiable1[/* instance */ default, typings.handsontable.dropdownEditorMod.DropdownEditor]
+        value: Instantiable1[
+              /* instance */ default, 
+              typings.handsontable.editorsDropdownEditorMod.DropdownEditor
+            ]
       ): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
       
       inline def setHandsontable(
         value: Instantiable1[
               /* instance */ default, 
-              typings.handsontable.handsontableEditorMod.HandsontableEditor
+              typings.handsontable.editorsHandsontableEditorMod.HandsontableEditor
             ]
       ): Self = StObject.set(x, "handsontable", value.asInstanceOf[js.Any])
       
-      inline def setNumeric(value: Instantiable1[/* instance */ default, typings.handsontable.numericEditorMod.NumericEditor]): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+      inline def setNumeric(
+        value: Instantiable1[/* instance */ default, typings.handsontable.editorsNumericEditorMod.NumericEditor]
+      ): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
       
       inline def setPassword(
-        value: Instantiable1[/* instance */ default, typings.handsontable.passwordEditorMod.PasswordEditor]
+        value: Instantiable1[
+              /* instance */ default, 
+              typings.handsontable.editorsPasswordEditorMod.PasswordEditor
+            ]
       ): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      inline def setSelect(value: Instantiable1[/* instance */ default, typings.handsontable.selectEditorMod.SelectEditor]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(
+        value: Instantiable1[/* instance */ default, typings.handsontable.editorsSelectEditorMod.SelectEditor]
+      ): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      inline def setText(value: Instantiable1[/* instance */ default, typings.handsontable.textEditorMod.TextEditor]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Instantiable1[/* instance */ default, typings.handsontable.editorsTextEditorMod.TextEditor]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setTime(value: Instantiable1[/* instance */ default, typings.handsontable.timeEditorMod.TimeEditor]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Instantiable1[/* instance */ default, typings.handsontable.editorsTimeEditorMod.TimeEditor]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

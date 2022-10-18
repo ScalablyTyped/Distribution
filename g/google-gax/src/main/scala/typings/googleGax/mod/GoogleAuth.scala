@@ -1,8 +1,8 @@
 package typings.googleGax.mod
 
 import typings.googleAuthLibrary.anon.TypeofDefaultTransporter
-import typings.googleAuthLibrary.authclientMod.AuthClient
-import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.buildSrcAuthAuthclientMod.AuthClient
+import typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.GoogleAuthOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

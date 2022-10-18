@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object hapiPodiumStrings {
   
   @js.native
-  sealed trait WithRequiredProperty extends StObject
-  inline def WithRequiredProperty: WithRequiredProperty = "WithRequiredProperty".asInstanceOf[WithRequiredProperty]
-  
-  @js.native
   sealed trait count extends StObject
   inline def count: count = "count".asInstanceOf[count]
 }

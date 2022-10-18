@@ -5,19 +5,19 @@ import typings.d3Path.mod.Path_
 import typings.d3Scale.mod.ScaleLinear_
 import typings.d3Shape.mod.CurveFactory
 import typings.d3Shape.mod.CurveGenerator
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.mod.ClosedCurveFactoryId
 import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoCore.mod.SvgFillMatcher
 import typings.nivoCore.mod.ValueFormat
-import typings.nivoLegends.typesTypesMod.LegendProps
+import typings.nivoLegends.distTypesTypesMod.LegendProps
+import typings.nivoRadar.distTypesTypesMod.BoundLegendProps
+import typings.nivoRadar.distTypesTypesMod.RadarColorMapping
+import typings.nivoRadar.distTypesTypesMod.RadarCustomLayerProps
+import typings.nivoRadar.distTypesTypesMod.RadarSvgFillMatcherDatum
 import typings.nivoRadar.nivoRadarStrings.Asterisk
 import typings.nivoRadar.nivoRadarStrings.auto
 import typings.nivoRadar.nivoRadarStrings.nivo
-import typings.nivoRadar.typesMod.BoundLegendProps
-import typings.nivoRadar.typesMod.RadarColorMapping
-import typings.nivoRadar.typesMod.RadarCustomLayerProps
-import typings.nivoRadar.typesMod.RadarSvgFillMatcherDatum
 import typings.std.CanvasRenderingContext2D
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -238,10 +238,6 @@ object anon {
       inline def setRotationDegrees(value: Double): Self = StObject.set(x, "rotationDegrees", value.asInstanceOf[js.Any])
       
       inline def setValueFormat(value: ValueFormat[Double, String]): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
-      
-      inline def setValueFormatFunction1(value: Double => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction1(value))
-      
-      inline def setValueFormatFunction2(value: (Double, String) => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction2(value))
       
       inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
       

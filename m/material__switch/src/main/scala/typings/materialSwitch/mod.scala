@@ -32,7 +32,7 @@ object mod {
     def this(root: HTMLButtonElement) = this()
     def this(
       root: HTMLButtonElement,
-      foundation: typings.materialSwitch.materialSwitchMod.MDCSwitchRenderFoundation
+      foundation: typings.materialSwitch.foundationMod.MDCSwitchRenderFoundation
     ) = this()
   }
   /* static members */
@@ -53,14 +53,14 @@ object mod {
   @JSImport("@material/switch", "MDCSwitchFoundation")
   @js.native
   open class MDCSwitchFoundation protected ()
-    extends typings.materialSwitch.materialSwitchMod.MDCSwitchFoundation {
+    extends typings.materialSwitch.foundationMod.MDCSwitchFoundation {
     def this(adapter: MDCSwitchAdapter) = this()
   }
   
   @JSImport("@material/switch", "MDCSwitchRenderFoundation")
   @js.native
   open class MDCSwitchRenderFoundation protected ()
-    extends typings.materialSwitch.materialSwitchMod.MDCSwitchRenderFoundation {
+    extends typings.materialSwitch.foundationMod.MDCSwitchRenderFoundation {
     def this(adapter: MDCSwitchAdapter) = this()
   }
   
@@ -76,12 +76,23 @@ object mod {
   
   object deprecated {
     
+    @JSImport("@material/switch", "deprecated.default")
+    @js.native
+    open class default ()
+      extends typings.materialSwitch.deprecatedMod.default {
+      def this(adapter: PartialMDCSwitchAdapter) = this()
+    }
+    
     @JSImport("@material/switch", "deprecated.MDCSwitch")
     @js.native
     open class MDCSwitch protected ()
       extends typings.materialSwitch.deprecatedMod.MDCSwitch {
       def this(root: Element, foundation: Unit, args: Any*) = this()
-      def this(root: Element, foundation: typings.materialSwitch.foundationMod.MDCSwitchFoundation, args: Any*) = this()
+      def this(
+        root: Element,
+        foundation: typings.materialSwitch.deprecatedFoundationMod.MDCSwitchFoundation,
+        args: Any*
+      ) = this()
     }
     /* static members */
     object MDCSwitch {

@@ -11,7 +11,7 @@ object mod {
   @JSImport("react-popper-tooltip", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.reactPopperTooltip.tooltipTriggerMod.default
+    extends typings.reactPopperTooltip.distTooltipTriggerMod.default
   object default {
     
     /* static member */

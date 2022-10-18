@@ -1,6 +1,6 @@
 package typings.storybookComponents.anon
 
-import typings.storybookComponents.typesPrettierIndexMod.Options
+import typings.storybookComponents.`distTs3Dot9Modules@typesPrettierIndexMod`.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

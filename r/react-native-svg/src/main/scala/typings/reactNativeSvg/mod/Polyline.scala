@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native-svg", "Polyline")
 @js.native
 open class Polyline ()
-  extends typings.reactNativeSvg.reactNativeSVGMod.Polyline
+  extends typings.reactNativeSvg.libTypescriptReactNativeSVGMod.Polyline
 /* static members */
 object Polyline {
   

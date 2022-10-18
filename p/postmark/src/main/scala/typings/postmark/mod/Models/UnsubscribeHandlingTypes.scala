@@ -9,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object UnsubscribeHandlingTypes extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.postmark.messageStreamMod.UnsubscribeHandlingTypes & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.postmark.distClientModelsStreamsMessageStreamMod.UnsubscribeHandlingTypes & String
+  ] = js.native
   
-  /* "Custom" */ val Custom: typings.postmark.messageStreamMod.UnsubscribeHandlingTypes.Custom & String = js.native
+  /* "Custom" */ val Custom: typings.postmark.distClientModelsStreamsMessageStreamMod.UnsubscribeHandlingTypes.Custom & String = js.native
   
-  /* "None" */ val None: typings.postmark.messageStreamMod.UnsubscribeHandlingTypes.None & String = js.native
+  /* "None" */ val None: typings.postmark.distClientModelsStreamsMessageStreamMod.UnsubscribeHandlingTypes.None & String = js.native
   
-  /* "Postmark" */ val Postmark: typings.postmark.messageStreamMod.UnsubscribeHandlingTypes.Postmark & String = js.native
+  /* "Postmark" */ val Postmark: typings.postmark.distClientModelsStreamsMessageStreamMod.UnsubscribeHandlingTypes.Postmark & String = js.native
 }

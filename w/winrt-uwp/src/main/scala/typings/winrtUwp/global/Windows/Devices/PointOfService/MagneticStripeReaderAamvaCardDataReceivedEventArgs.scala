@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the American Association of Motor Vehicle Administrators (AAMVA) card data from the AamvaCardDataReceived event. */
-@JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderAamvaCardDataReceivedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderAamvaCardDataReceivedEventArgs")
 @js.native
-abstract class MagneticStripeReaderAamvaCardDataReceivedEventArgs ()
+open class MagneticStripeReaderAamvaCardDataReceivedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReaderAamvaCardDataReceivedEventArgs {
   

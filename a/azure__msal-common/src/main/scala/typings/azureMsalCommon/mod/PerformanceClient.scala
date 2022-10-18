@@ -1,14 +1,14 @@
 package typings.azureMsalCommon.mod
 
-import typings.azureMsalCommon.clientConfigurationMod.ApplicationTelemetry
+import typings.azureMsalCommon.distConfigClientConfigurationMod.ApplicationTelemetry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@azure/msal-common", "PerformanceClient")
+/* note: abstract class */ @JSImport("@azure/msal-common", "PerformanceClient")
 @js.native
-abstract class PerformanceClient protected ()
-  extends typings.azureMsalCommon.performanceClientMod.PerformanceClient {
+open class PerformanceClient protected ()
+  extends typings.azureMsalCommon.distTelemetryPerformancePerformanceClientMod.PerformanceClient {
   /**
     * Creates an instance of PerformanceClient,
     * an abstract class containing core performance telemetry logic.
@@ -23,7 +23,7 @@ abstract class PerformanceClient protected ()
   def this(
     clientId: String,
     authority: String,
-    logger: typings.azureMsalCommon.loggerMod.Logger,
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger,
     libraryName: String,
     libraryVersion: String,
     applicationTelemetry: ApplicationTelemetry

@@ -8,18 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object nodeSql2Strings {
   
   @js.native
-  sealed trait Columns extends StObject
-  inline def Columns: Columns = "Columns".asInstanceOf[Columns]
-  
-  @js.native
-  sealed trait Queryable extends StObject
-  inline def Queryable: Queryable = "Queryable".asInstanceOf[Queryable]
-  
-  @js.native
-  sealed trait TableDefinition extends StObject
-  inline def TableDefinition: TableDefinition = "TableDefinition".asInstanceOf[TableDefinition]
-  
-  @js.native
   sealed trait cascade extends StObject
   inline def cascade: cascade = "cascade".asInstanceOf[cascade]
   

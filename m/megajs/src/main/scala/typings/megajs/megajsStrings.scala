@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object megajsStrings {
   
   @js.native
-  sealed trait Storage extends StObject
-  inline def Storage: Storage = "Storage".asInstanceOf[Storage]
-  
-  @js.native
   sealed trait add extends StObject
   inline def add: add = "add".asInstanceOf[add]
   

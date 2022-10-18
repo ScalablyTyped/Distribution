@@ -376,11 +376,9 @@ object mod {
     extends StObject
        with Iterable[T] {
     
-    def apply(): js.Iterator[T] = js.native
-    
     var asArray: js.Array[T] = js.native
     
-    def filter(callback: js.Function1[/* entry */ T, Any]): /* import warning: importer.ImportType#apply Failed type conversion: lmdb.lmdb.RangeIterable<T>[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.iterator * / any] */ js.Any = js.native
+    def filter(callback: js.Function1[/* entry */ T, Any]): RangeIterable[T] = js.native
     
     def flatMap[U](callback: js.Function1[/* entry */ T, js.Array[U]]): RangeIterable[U] = js.native
     
@@ -409,7 +407,10 @@ object mod {
   @js.native
   open class Transaction () extends StObject {
     
-    def use[T](callback: js.Function0[T]): T = js.native
+    /**
+    		 * When there is no more need for the transaction and it can be closed.
+    		 */
+    def done(): Unit = js.native
   }
   
   @js.native

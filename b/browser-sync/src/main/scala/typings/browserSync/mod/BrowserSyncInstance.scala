@@ -3,6 +3,8 @@ package typings.browserSync.mod
 import typings.browserSync.anon.Plugin
 import typings.browserSync.anon.Stream
 import typings.chokidar.mod.WatchOptions
+import typings.node.NodeJS.ErrnoException
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
@@ -21,13 +23,7 @@ trait BrowserSyncInstance extends StObject {
     * Instance Cleanup.
     */
   def cleanup(): Unit = js.native
-  def cleanup(
-    fn: js.Function2[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* error */ Any, 
-      /* bs */ this.type, 
-      Unit
-    ]
-  ): Unit = js.native
+  def cleanup(fn: js.Function2[/* error */ ErrnoException, /* bs */ this.type, Unit]): Unit = js.native
   
   /**
     * The internal Event Emitter used by the running Browsersync instance (if there is one). You can use
@@ -98,7 +94,7 @@ trait BrowserSyncInstance extends StObject {
     * The reload method will inform all browsers about changed files and will either cause the browser
     * to refresh, or inject the files where possible.
     */
-  def reload(options: Stream): Any = js.native
+  def reload(options: Stream): ReadWriteStream = js.native
   
   /**
     * Method to resume paused watchers
@@ -109,8 +105,8 @@ trait BrowserSyncInstance extends StObject {
     * The stream method returns a transform stream and can act once or on many files.
     * @param opts Configuration for the stream method
     */
-  def stream(): Any = js.native
-  def stream(opts: StreamOptions): Any = js.native
+  def stream(): ReadWriteStream = js.native
+  def stream(opts: StreamOptions): ReadWriteStream = js.native
   
   /**
     * Register a plugin.

@@ -1,10 +1,10 @@
 package typings.typedRestClient
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadableStream
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.RequestOptions
 import typings.node.urlMod.Url
-import typings.std.ReadableStream
 import typings.typedRestClient.anon.ArrayFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -94,10 +94,10 @@ object interfacesMod {
     def put(requestUrl: String, data: String, additionalHeaders: IHeaders): js.Promise[IHttpClientResponse] = js.native
     
     def request(verb: String, requestUrl: String, data: String, headers: IHeaders): js.Promise[IHttpClientResponse] = js.native
-    def request(verb: String, requestUrl: String, data: ReadableStream[Any], headers: IHeaders): js.Promise[IHttpClientResponse] = js.native
+    def request(verb: String, requestUrl: String, data: ReadableStream, headers: IHeaders): js.Promise[IHttpClientResponse] = js.native
     
     def requestRaw(info: IRequestInfo, data: String): js.Promise[IHttpClientResponse] = js.native
-    def requestRaw(info: IRequestInfo, data: ReadableStream[Any]): js.Promise[IHttpClientResponse] = js.native
+    def requestRaw(info: IRequestInfo, data: ReadableStream): js.Promise[IHttpClientResponse] = js.native
     
     def requestRawWithCallback(
       info: IRequestInfo,
@@ -106,12 +106,12 @@ object interfacesMod {
     ): Unit = js.native
     def requestRawWithCallback(
       info: IRequestInfo,
-      data: ReadableStream[Any],
+      data: ReadableStream,
       onResult: js.Function2[/* err */ Any, /* res */ IHttpClientResponse, Unit]
     ): Unit = js.native
     
-    def sendStream(verb: String, requestUrl: String, stream: ReadableStream[Any]): js.Promise[IHttpClientResponse] = js.native
-    def sendStream(verb: String, requestUrl: String, stream: ReadableStream[Any], additionalHeaders: IHeaders): js.Promise[IHttpClientResponse] = js.native
+    def sendStream(verb: String, requestUrl: String, stream: ReadableStream): js.Promise[IHttpClientResponse] = js.native
+    def sendStream(verb: String, requestUrl: String, stream: ReadableStream, additionalHeaders: IHeaders): js.Promise[IHttpClientResponse] = js.native
   }
   
   trait IHttpClientResponse extends StObject {

@@ -23,4 +23,9 @@ trait Typeofscripting extends StObject {
   def insertCSS(injection: CSSInjection, callback: js.Function0[Unit]): Unit = js.native
   @JSName("insertCSS")
   def insertCSS_Promise(injection: CSSInjection): js.Promise[Unit] = js.native
+  
+  def removeCSS(injection: CSSInjection): Unit = js.native
+  def removeCSS(injection: CSSInjection, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("removeCSS")
+  def removeCSS_Promise(injection: CSSInjection): js.Promise[Unit] = js.native
 }

@@ -1,10 +1,10 @@
 package typings.vscodeJsonrpc
 
-import typings.vscodeJsonrpc.disposableMod.Disposable
-import typings.vscodeJsonrpc.encodingMod.ContentTypeDecoder
-import typings.vscodeJsonrpc.encodingMod.ContentTypeEncoder
-import typings.vscodeJsonrpc.ralMod.RAL.MessageBuffer
-import typings.vscodeJsonrpc.ralMod.RAL.MessageBufferEncoding
+import typings.vscodeJsonrpc.libCommonDisposableMod.Disposable
+import typings.vscodeJsonrpc.libCommonEncodingMod.ContentTypeDecoder
+import typings.vscodeJsonrpc.libCommonEncodingMod.ContentTypeEncoder
+import typings.vscodeJsonrpc.libCommonRalMod.RAL.MessageBuffer
+import typings.vscodeJsonrpc.libCommonRalMod.RAL.MessageBufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

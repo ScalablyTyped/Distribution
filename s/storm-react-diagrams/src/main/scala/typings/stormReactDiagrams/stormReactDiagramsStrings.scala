@@ -1,6 +1,6 @@
 package typings.stormReactDiagrams
 
-import typings.stormReactDiagrams.baseEntityMod.BaseEntityType
+import typings.stormReactDiagrams.distSrcBaseEntityMod.BaseEntityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

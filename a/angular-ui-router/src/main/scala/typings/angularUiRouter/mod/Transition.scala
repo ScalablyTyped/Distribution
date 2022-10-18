@@ -23,9 +23,9 @@ open class Transition protected ()
     * @internal
     */
   def this(
-    fromPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
-    targetState: typings.uirouterCore.targetStateMod.TargetState,
-    router: typings.uirouterCore.routerMod.UIRouter
+    fromPath: js.Array[typings.uirouterCore.libPathPathNodeMod.PathNode],
+    targetState: typings.uirouterCore.libStateTargetStateMod.TargetState,
+    router: typings.uirouterCore.libRouterMod.UIRouter
   ) = this()
 }
 /* static members */

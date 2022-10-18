@@ -1,54 +1,54 @@
 package typings.firebaseAdmin
 
-import typings.firebaseAdmin.coreMod.App
+import typings.firebaseAdmin.libAppCoreMod.App
 import typings.googleCloudFirestore.FirebaseFirestore.Settings
-import typings.googleCloudFirestore.anon.Instantiable
-import typings.googleCloudFirestore.anon.TypeofFirestoreAdminClien
-import typings.googleGax.clientInterfaceMod.ClientOptions
+import typings.googleCloudFirestore.anon.TypeofFirestoreClient
+import typings.googleGax.buildSrcClientInterfaceMod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object firestoreMod {
   
-  @JSImport("firebase-admin/lib/firestore", JSImport.Namespace)
+  @JSImport("firebase-admin/firestore", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("firebase-admin/lib/firestore", "BulkWriter")
+  @JSImport("firebase-admin/firestore", "BulkWriter")
   @js.native
   /* private */ open class BulkWriter ()
-    extends typings.googleCloudFirestore.mod.BulkWriter
+    extends typings.firebaseAdmin.libFirestoreMod.BulkWriter
   
-  @JSImport("firebase-admin/lib/firestore", "BundleBuilder")
+  @JSImport("firebase-admin/firestore", "BundleBuilder")
   @js.native
   open class BundleBuilder ()
-    extends typings.googleCloudFirestore.mod.BundleBuilder
+    extends typings.firebaseAdmin.libFirestoreMod.BundleBuilder
   
-  @JSImport("firebase-admin/lib/firestore", "CollectionGroup")
+  @JSImport("firebase-admin/firestore", "CollectionGroup")
   @js.native
   /* private */ open class CollectionGroup[T] ()
-    extends typings.googleCloudFirestore.mod.CollectionGroup[T]
+    extends typings.firebaseAdmin.libFirestoreMod.CollectionGroup[T]
   
-  @JSImport("firebase-admin/lib/firestore", "CollectionReference")
+  @JSImport("firebase-admin/firestore", "CollectionReference")
   @js.native
   /* private */ open class CollectionReference[T] ()
-    extends typings.googleCloudFirestore.mod.CollectionReference[T]
+    extends typings.firebaseAdmin.libFirestoreMod.CollectionReference[T]
   
-  @JSImport("firebase-admin/lib/firestore", "DocumentReference")
+  @JSImport("firebase-admin/firestore", "DocumentReference")
   @js.native
   /* private */ open class DocumentReference[T] ()
-    extends typings.googleCloudFirestore.mod.DocumentReference[T]
+    extends typings.firebaseAdmin.libFirestoreMod.DocumentReference[T]
   
-  @JSImport("firebase-admin/lib/firestore", "DocumentSnapshot")
+  @JSImport("firebase-admin/firestore", "DocumentSnapshot")
   @js.native
   /* protected */ open class DocumentSnapshot[T] ()
-    extends typings.googleCloudFirestore.mod.DocumentSnapshot[T]
+    extends typings.firebaseAdmin.libFirestoreMod.DocumentSnapshot[T]
   
-  @JSImport("firebase-admin/lib/firestore", "FieldPath")
+  @JSImport("firebase-admin/firestore", "FieldPath")
   @js.native
   open class FieldPath protected ()
-    extends typings.googleCloudFirestore.mod.FieldPath {
+    extends typings.firebaseAdmin.libFirestoreMod.FieldPath {
     /**
       * Creates a FieldPath from the provided field names. If more than one field
       * name is provided, the path will point to a nested field in a document.
@@ -60,7 +60,7 @@ object firestoreMod {
   /* static members */
   object FieldPath {
     
-    @JSImport("firebase-admin/lib/firestore", "FieldPath")
+    @JSImport("firebase-admin/firestore", "FieldPath")
     @js.native
     val ^ : js.Any = js.native
     
@@ -71,14 +71,14 @@ object firestoreMod {
     inline def documentId(): typings.googleCloudFirestore.FirebaseFirestore.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldPath]
   }
   
-  @JSImport("firebase-admin/lib/firestore", "FieldValue")
+  @JSImport("firebase-admin/firestore", "FieldValue")
   @js.native
   /* private */ open class FieldValue ()
-    extends typings.googleCloudFirestore.mod.FieldValue
+    extends typings.firebaseAdmin.libFirestoreMod.FieldValue
   /* static members */
   object FieldValue {
     
-    @JSImport("firebase-admin/lib/firestore", "FieldValue")
+    @JSImport("firebase-admin/firestore", "FieldValue")
     @js.native
     val ^ : js.Any = js.native
     
@@ -146,21 +146,21 @@ object firestoreMod {
     inline def serverTimestamp(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
   }
   
-  @JSImport("firebase-admin/lib/firestore", "Firestore")
+  @JSImport("firebase-admin/firestore", "Firestore")
   @js.native
   /**
     * @param settings Configuration object. See [Firestore Documentation]
     * {@link https://firebase.google.com/docs/firestore/}
     */
   open class Firestore ()
-    extends typings.googleCloudFirestore.mod.Firestore {
+    extends typings.firebaseAdmin.libFirestoreMod.Firestore {
     def this(settings: Settings) = this()
   }
   
-  @JSImport("firebase-admin/lib/firestore", "GeoPoint")
+  @JSImport("firebase-admin/firestore", "GeoPoint")
   @js.native
   open class GeoPoint protected ()
-    extends typings.googleCloudFirestore.mod.GeoPoint {
+    extends typings.firebaseAdmin.libFirestoreMod.GeoPoint {
     /**
       * Creates a new immutable GeoPoint object with the provided latitude and
       * longitude values.
@@ -170,7 +170,7 @@ object firestoreMod {
     def this(latitude: Double, longitude: Double) = this()
   }
   
-  @JSImport("firebase-admin/lib/firestore", "GrpcStatus")
+  @JSImport("firebase-admin/firestore", "GrpcStatus")
   @js.native
   object GrpcStatus extends StObject {
     
@@ -212,30 +212,30 @@ object firestoreMod {
     /* 2 */ val UNKNOWN: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.UNKNOWN & Double = js.native
   }
   
-  @JSImport("firebase-admin/lib/firestore", "Query")
+  @JSImport("firebase-admin/firestore", "Query")
   @js.native
   /* protected */ open class Query[T] ()
-    extends typings.googleCloudFirestore.mod.Query[T]
+    extends typings.firebaseAdmin.libFirestoreMod.Query[T]
   
-  @JSImport("firebase-admin/lib/firestore", "QueryDocumentSnapshot")
+  @JSImport("firebase-admin/firestore", "QueryDocumentSnapshot")
   @js.native
   /* private */ open class QueryDocumentSnapshot[T] ()
-    extends typings.googleCloudFirestore.mod.QueryDocumentSnapshot[T]
+    extends typings.firebaseAdmin.libFirestoreMod.QueryDocumentSnapshot[T]
   
-  @JSImport("firebase-admin/lib/firestore", "QueryPartition")
+  @JSImport("firebase-admin/firestore", "QueryPartition")
   @js.native
   /* private */ open class QueryPartition[T] ()
-    extends typings.googleCloudFirestore.mod.QueryPartition[T]
+    extends typings.firebaseAdmin.libFirestoreMod.QueryPartition[T]
   
-  @JSImport("firebase-admin/lib/firestore", "QuerySnapshot")
+  @JSImport("firebase-admin/firestore", "QuerySnapshot")
   @js.native
   /* private */ open class QuerySnapshot[T] ()
-    extends typings.googleCloudFirestore.mod.QuerySnapshot[T]
+    extends typings.firebaseAdmin.libFirestoreMod.QuerySnapshot[T]
   
-  @JSImport("firebase-admin/lib/firestore", "Timestamp")
+  @JSImport("firebase-admin/firestore", "Timestamp")
   @js.native
   open class Timestamp protected ()
-    extends typings.googleCloudFirestore.mod.Timestamp {
+    extends typings.firebaseAdmin.libFirestoreMod.Timestamp {
     /**
       * Creates a new timestamp.
       *
@@ -252,7 +252,7 @@ object firestoreMod {
   /* static members */
   object Timestamp {
     
-    @JSImport("firebase-admin/lib/firestore", "Timestamp")
+    @JSImport("firebase-admin/firestore", "Timestamp")
     @js.native
     val ^ : js.Any = js.native
     
@@ -283,20 +283,20 @@ object firestoreMod {
     inline def now(): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
   }
   
-  @JSImport("firebase-admin/lib/firestore", "Transaction")
+  @JSImport("firebase-admin/firestore", "Transaction")
   @js.native
   /* private */ open class Transaction ()
-    extends typings.googleCloudFirestore.mod.Transaction
+    extends typings.firebaseAdmin.libFirestoreMod.Transaction
   
-  @JSImport("firebase-admin/lib/firestore", "WriteBatch")
+  @JSImport("firebase-admin/firestore", "WriteBatch")
   @js.native
   /* private */ open class WriteBatch ()
-    extends typings.googleCloudFirestore.mod.WriteBatch
+    extends typings.firebaseAdmin.libFirestoreMod.WriteBatch
   
-  @JSImport("firebase-admin/lib/firestore", "WriteResult")
+  @JSImport("firebase-admin/firestore", "WriteResult")
   @js.native
   /* private */ open class WriteResult ()
-    extends typings.googleCloudFirestore.mod.WriteResult
+    extends typings.firebaseAdmin.libFirestoreMod.WriteResult
   
   inline def getFirestore(): typings.googleCloudFirestore.mod.Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirestore")().asInstanceOf[typings.googleCloudFirestore.mod.Firestore]
   inline def getFirestore(app: App): typings.googleCloudFirestore.mod.Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirestore")(app.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.mod.Firestore]
@@ -312,92 +312,19 @@ object firestoreMod {
   
   object v1 {
     
-    @JSImport("firebase-admin/lib/firestore", "v1")
+    @JSImport("firebase-admin/firestore", "v1")
     @js.native
     val ^ : js.Any = js.native
     
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("firebase-admin/lib/firestore", "v1.FirestoreAdminClient")
+    @JSImport("firebase-admin/firestore", "v1.FirestoreAdminClient")
     @js.native
-    /**
-      * Construct an instance of FirestoreAdminClient.
-      *
-      * @param {object} [options] - The configuration object.
-      * The options accepted by the constructor are described in detail
-      * in [this document](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#creating-the-client-instance).
-      * The common options are:
-      * @param {object} [options.credentials] - Credentials object.
-      * @param {string} [options.credentials.client_email]
-      * @param {string} [options.credentials.private_key]
-      * @param {string} [options.email] - Account email address. Required when
-      *     using a .pem or .p12 keyFilename.
-      * @param {string} [options.keyFilename] - Full path to the a .json, .pem, or
-      *     .p12 key downloaded from the Google Developers Console. If you provide
-      *     a path to a JSON file, the projectId option below is not necessary.
-      *     NOTE: .pem and .p12 require you to specify options.email as well.
-      * @param {number} [options.port] - The port on which to connect to
-      *     the remote host.
-      * @param {string} [options.projectId] - The project ID from the Google
-      *     Developer's Console, e.g. 'grape-spaceship-123'. We will also check
-      *     the environment variable GCLOUD_PROJECT for your project ID. If your
-      *     app is running in an environment which supports
-      *     {@link https://developers.google.com/identity/protocols/application-default-credentials Application Default Credentials},
-      *     your project ID will be detected automatically.
-      * @param {string} [options.apiEndpoint] - The domain name of the
-      *     API remote host.
-      * @param {gax.ClientConfig} [options.clientConfig] - Client configuration override.
-      *     Follows the structure of {@link gapicConfig}.
-      * @param {boolean} [options.fallback] - Use HTTP fallback mode.
-      *     In fallback mode, a special browser-compatible transport implementation is used
-      *     instead of gRPC transport. In browser context (if the `window` object is defined)
-      *     the fallback mode is enabled automatically; set `options.fallback` to `false`
-      *     if you need to override this behavior.
-      */
-    open class FirestoreAdminClient ()
-      extends typings.googleCloudFirestore.firestoreAdminClientMod.FirestoreAdminClient {
-      /**
-        * Construct an instance of FirestoreAdminClient.
-        *
-        * @param {object} [options] - The configuration object.
-        * The options accepted by the constructor are described in detail
-        * in [this document](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#creating-the-client-instance).
-        * The common options are:
-        * @param {object} [options.credentials] - Credentials object.
-        * @param {string} [options.credentials.client_email]
-        * @param {string} [options.credentials.private_key]
-        * @param {string} [options.email] - Account email address. Required when
-        *     using a .pem or .p12 keyFilename.
-        * @param {string} [options.keyFilename] - Full path to the a .json, .pem, or
-        *     .p12 key downloaded from the Google Developers Console. If you provide
-        *     a path to a JSON file, the projectId option below is not necessary.
-        *     NOTE: .pem and .p12 require you to specify options.email as well.
-        * @param {number} [options.port] - The port on which to connect to
-        *     the remote host.
-        * @param {string} [options.projectId] - The project ID from the Google
-        *     Developer's Console, e.g. 'grape-spaceship-123'. We will also check
-        *     the environment variable GCLOUD_PROJECT for your project ID. If your
-        *     app is running in an environment which supports
-        *     {@link https://developers.google.com/identity/protocols/application-default-credentials Application Default Credentials},
-        *     your project ID will be detected automatically.
-        * @param {string} [options.apiEndpoint] - The domain name of the
-        *     API remote host.
-        * @param {gax.ClientConfig} [options.clientConfig] - Client configuration override.
-        *     Follows the structure of {@link gapicConfig}.
-        * @param {boolean} [options.fallback] - Use HTTP fallback mode.
-        *     In fallback mode, a special browser-compatible transport implementation is used
-        *     instead of gRPC transport. In browser context (if the `window` object is defined)
-        *     the fallback mode is enabled automatically; set `options.fallback` to `false`
-        *     if you need to override this behavior.
-        */
-      def this(opts: ClientOptions) = this()
-    }
-    @JSImport("firebase-admin/lib/firestore", "v1.FirestoreAdminClient")
-    @js.native
-    def FirestoreAdminClient: TypeofFirestoreAdminClien = js.native
-    inline def FirestoreAdminClient_=(x: TypeofFirestoreAdminClien): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreAdminClient")(x.asInstanceOf[js.Any])
+    def FirestoreAdminClient: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imported_firestore_admin_client.FirestoreAdminClient */ Any = js.native
+    inline def FirestoreAdminClient_=(
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imported_firestore_admin_client.FirestoreAdminClient */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreAdminClient")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("firebase-admin/lib/firestore", "v1.FirestoreClient")
+    @JSImport("firebase-admin/firestore", "v1.FirestoreClient")
     @js.native
     /**
       * Construct an instance of FirestoreClient.
@@ -434,7 +361,7 @@ object firestoreMod {
       *     if you need to override this behavior.
       */
     open class FirestoreClient ()
-      extends typings.googleCloudFirestore.v1FirestoreClientMod.FirestoreClient {
+      extends typings.googleCloudFirestore.typesV1beta1FirestoreClientMod.FirestoreClient {
       /**
         * Construct an instance of FirestoreClient.
         *
@@ -471,9 +398,9 @@ object firestoreMod {
         */
       def this(opts: ClientOptions) = this()
     }
-    @JSImport("firebase-admin/lib/firestore", "v1.FirestoreClient")
+    @JSImport("firebase-admin/firestore", "v1.FirestoreClient")
     @js.native
-    def FirestoreClient: Instantiable = js.native
-    inline def FirestoreClient_=(x: Instantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreClient")(x.asInstanceOf[js.Any])
+    def FirestoreClient: TypeofFirestoreClient = js.native
+    inline def FirestoreClient_=(x: TypeofFirestoreClient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreClient")(x.asInstanceOf[js.Any])
   }
 }

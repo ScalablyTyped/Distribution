@@ -13,10 +13,10 @@ object TextDocumentContentChangeEvent {
   /**
     * Checks whether the information describes a full replacement event.
     */
-  inline def isFull(event: typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentContentChangeEvent): /* is vscode-languageserver-protocol.anon.Text */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFull")(event.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.anon.Text */ Boolean]
+  inline def isFull(event: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentContentChangeEvent): /* is vscode-languageserver-protocol.anon.Text */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFull")(event.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.anon.Text */ Boolean]
   
   /**
     * Checks whether the information describes a delta event.
     */
-  inline def isIncremental(event: typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentContentChangeEvent): /* is vscode-languageserver-protocol.anon.Range */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIncremental")(event.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.anon.Range */ Boolean]
+  inline def isIncremental(event: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentContentChangeEvent): /* is vscode-languageserver-protocol.anon.Range */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIncremental")(event.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.anon.Range */ Boolean]
 }

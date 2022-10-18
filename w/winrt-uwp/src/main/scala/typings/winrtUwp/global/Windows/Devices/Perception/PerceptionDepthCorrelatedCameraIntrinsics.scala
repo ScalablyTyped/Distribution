@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides convenience methods to facilitate geometric math for a camera device, combining the intrinsic properties of that camera with correlated depth frames to provide screen-space pixel to camera-space coordinate projections. */
-@JSGlobal("Windows.Devices.Perception.PerceptionDepthCorrelatedCameraIntrinsics")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.PerceptionDepthCorrelatedCameraIntrinsics")
 @js.native
-abstract class PerceptionDepthCorrelatedCameraIntrinsics ()
+open class PerceptionDepthCorrelatedCameraIntrinsics ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.PerceptionDepthCorrelatedCameraIntrinsics {
   

@@ -1,15 +1,15 @@
 package typings.officeUiFabricReact.anon
 
-import typings.officeUiFabricReact.detailsListTypesMod.ConstrainMode
-import typings.officeUiFabricReact.detailsListTypesMod.DetailsListLayoutMode
-import typings.uifabricUtilities.selectionTypesMod.SelectionMode
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ConstrainMode
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.DetailsListLayoutMode
+import typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CheckboxVisibility extends StObject {
   
-  var checkboxVisibility: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility
+  var checkboxVisibility: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.CheckboxVisibility
   
   var compact: Boolean
   
@@ -26,7 +26,7 @@ trait CheckboxVisibility extends StObject {
 object CheckboxVisibility {
   
   inline def apply(
-    checkboxVisibility: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility,
+    checkboxVisibility: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.CheckboxVisibility,
     compact: Boolean,
     constrainMode: ConstrainMode,
     isHeaderVisible: Boolean,
@@ -40,7 +40,9 @@ object CheckboxVisibility {
   
   extension [Self <: CheckboxVisibility](x: Self) {
     
-    inline def setCheckboxVisibility(value: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility): Self = StObject.set(x, "checkboxVisibility", value.asInstanceOf[js.Any])
+    inline def setCheckboxVisibility(
+      value: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.CheckboxVisibility
+    ): Self = StObject.set(x, "checkboxVisibility", value.asInstanceOf[js.Any])
     
     inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     

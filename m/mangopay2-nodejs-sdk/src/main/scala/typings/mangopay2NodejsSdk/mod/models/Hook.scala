@@ -1,9 +1,9 @@
 package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.PartialHookData
-import typings.mangopay2NodejsSdk.hookMod.hook.HookData
-import typings.mangopay2NodejsSdk.hookMod.hook.HookStatus
-import typings.mangopay2NodejsSdk.hookMod.hook.HookValidity
+import typings.mangopay2NodejsSdk.typingsModelsHookMod.hook.HookData
+import typings.mangopay2NodejsSdk.typingsModelsHookMod.hook.HookStatus
+import typings.mangopay2NodejsSdk.typingsModelsHookMod.hook.HookValidity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ open class Hook ()
     * The event type
     */
   /* CompleteClass */
-  var EventType: typings.mangopay2NodejsSdk.eventMod.event.EventType = js.native
+  var EventType: typings.mangopay2NodejsSdk.typingsModelsEventMod.event.EventType = js.native
   
   /* CompleteClass */
   var Id: String = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object canonicalizeLocaleListMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/CanonicalizeLocaleList", JSImport.Namespace)
+  @JSImport("@formatjs/ecma402-abstract/CanonicalizeLocaleList", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

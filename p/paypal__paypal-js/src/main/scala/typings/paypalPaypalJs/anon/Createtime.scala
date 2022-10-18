@@ -1,11 +1,11 @@
 package typings.paypalPaypalJs.anon
 
-import typings.paypalPaypalJs.commonsMod.AmountWithCurrencyCode
 import typings.paypalPaypalJs.paypalPaypalJsStrings.ACTIVE
 import typings.paypalPaypalJs.paypalPaypalJsStrings.INACTIVE
 import typings.paypalPaypalJs.paypalPaypalJsStrings.IN_PROGRESS
 import typings.paypalPaypalJs.paypalPaypalJsStrings.TIERED
 import typings.paypalPaypalJs.paypalPaypalJsStrings.VOLUME
+import typings.paypalPaypalJs.typesApisCommonsMod.AmountWithCurrencyCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

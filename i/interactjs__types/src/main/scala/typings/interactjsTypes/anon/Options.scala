@@ -1,6 +1,6 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.optionsMod.OptionsArg
+import typings.interactjsTypes.coreOptionsMod.OptionsArg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,7 +2,7 @@ package typings.allKeys
 
 import typings.std.Record
 import typings.std.Set
-import typings.typeFest.literalUnionMod.LiteralUnion
+import typings.typeFest.sourceLiteralUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

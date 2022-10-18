@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object StorageTextureAccess extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.StorageTextureAccess & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.StorageTextureAccess & String] = js.native
   
-  /* "write-only" */ val WriteOnly: typings.babylonjs.webgpuConstantsMod.StorageTextureAccess.WriteOnly & String = js.native
+  /* "write-only" */ val WriteOnly: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.StorageTextureAccess.WriteOnly & String = js.native
 }

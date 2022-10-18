@@ -162,7 +162,7 @@ object mod {
     
     var `object`: js.UndefOr[Boolean] = js.undefined
     
-    var tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any) & String
+    var tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.wordpressRichText.wordpressRichTextStrings.a, typings.wordpressRichText.wordpressRichTextStrings.abbr, typings.wordpressRichText.wordpressRichTextStrings.address */ Any) & String
     
     var title: String
   }
@@ -170,7 +170,7 @@ object mod {
     
     inline def apply(
       edit: ComponentType[FormatProps],
-      tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any) & String,
+      tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.wordpressRichText.wordpressRichTextStrings.a, typings.wordpressRichText.wordpressRichTextStrings.abbr, typings.wordpressRichText.wordpressRichTextStrings.address */ Any) & String,
       title: String
     ): FormatConfiguration = {
       val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], className = null)
@@ -200,7 +200,7 @@ object mod {
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
       inline def setTagName(
-        value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any) & String
+        value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.wordpressRichText.wordpressRichTextStrings.a, typings.wordpressRichText.wordpressRichTextStrings.abbr, typings.wordpressRichText.wordpressRichTextStrings.address */ Any) & String
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
@@ -247,7 +247,7 @@ object mod {
     inline def apply(
       edit: ComponentType[FormatProps],
       name: String,
-      tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any) & String,
+      tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.wordpressRichText.wordpressRichTextStrings.a, typings.wordpressRichText.wordpressRichTextStrings.abbr, typings.wordpressRichText.wordpressRichTextStrings.address */ Any) & String,
       title: String
     ): NamedFormatConfiguration = {
       val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], className = null)

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AddinCommands {
   
   /**
-    * The `Event` object is passed as a parameter to add-in functions invoked by function command buttons. The object allows the add-in to identify 
-    * which button was clicked and to signal the host that it has completed its processing.
-    * 
+    * The `Event` object is passed as a parameter to add-in functions invoked by function command buttons. The object allows the add-in to identify
+    * which button was clicked and to signal the Office application that it has completed its processing.
+    *
     * @remarks
-    * 
+    *
     * See {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets | Add-in commands requirement sets} for more support information.
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: `Restricted`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @js.native
@@ -51,9 +51,9 @@ object AddinCommands {
     
     /**
       * Information about the control that triggered calling this function.
-      * 
+      *
       * @remarks
-      * 
+      *
       * This property is supported in Outlook only in {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | requirement set} Mailbox 1.3 and later.
       */
     var source: Source = js.native
@@ -86,7 +86,7 @@ object AddinCommands {
       * is used to signal completion of an event handler and if the `allowEvent` option is set to `false`, this value sets the error message
       * that will be displayed to the user. For an example, see the  
       * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
-      * 
+      *
       * @remarks
       * 
       * [Api set: Mailbox 1.12]

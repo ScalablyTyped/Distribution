@@ -1,8 +1,8 @@
 package typings.octokitPluginPaginateRest.anon
 
-import typings.octokitTypes.endpointsMod.ExtractOctokitResponse
-import typings.octokitTypes.endpointsMod.RequiredPreview
-import typings.octokitTypes.endpointsMod.ToOctokitParameters
+import typings.octokitTypes.distTypesGeneratedEndpointsMod.ExtractOctokitResponse
+import typings.octokitTypes.distTypesGeneratedEndpointsMod.RequiredPreview
+import typings.octokitTypes.distTypesGeneratedEndpointsMod.ToOctokitParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

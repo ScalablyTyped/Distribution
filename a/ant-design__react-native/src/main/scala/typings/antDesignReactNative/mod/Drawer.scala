@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.DrawerWidth
-import typings.antDesignReactNative.drawerMod.default
+import typings.antDesignReactNative.libDrawerMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

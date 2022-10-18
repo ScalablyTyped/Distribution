@@ -1,12 +1,12 @@
 package typings.hastscript
 
-import typings.hastscript.coreMod.Element
-import typings.hastscript.coreMod.HPrimitiveChild
-import typings.hastscript.coreMod.HProperties
-import typings.hastscript.coreMod.Node
-import typings.hastscript.coreMod.Root
-import typings.hastscript.runtimeMod.HChild
-import typings.hastscript.runtimeMod.JSXProps
+import typings.hastscript.libCoreMod.Element
+import typings.hastscript.libCoreMod.HPrimitiveChild
+import typings.hastscript.libCoreMod.HProperties
+import typings.hastscript.libCoreMod.Node
+import typings.hastscript.libCoreMod.Root
+import typings.hastscript.libRuntimeMod.HChild
+import typings.hastscript.libRuntimeMod.JSXProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +41,7 @@ object anon {
   
   trait Children extends StObject {
     
-    var children: js.UndefOr[typings.hastscript.coreMod.HChild] = js.undefined
+    var children: js.UndefOr[typings.hastscript.libCoreMod.HChild] = js.undefined
   }
   object Children {
     
@@ -52,7 +52,7 @@ object anon {
     
     extension [Self <: Children](x: Self) {
       
-      inline def setChildren(value: typings.hastscript.coreMod.HChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: typings.hastscript.libCoreMod.HChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
@@ -66,11 +66,11 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(): Root = js.native
-    def apply(selector: String, children: typings.hastscript.coreMod.HChild*): Element = js.native
-    def apply(selector: String, properties: Unit, children: typings.hastscript.coreMod.HChild*): Element = js.native
-    def apply(selector: String, properties: HProperties, children: typings.hastscript.coreMod.HChild*): Element = js.native
-    def apply(selector: Null, children: typings.hastscript.coreMod.HChild*): Root = js.native
-    def apply(selector: Unit, children: typings.hastscript.coreMod.HChild*): Root = js.native
+    def apply(selector: String, children: typings.hastscript.libCoreMod.HChild*): Element = js.native
+    def apply(selector: String, properties: Unit, children: typings.hastscript.libCoreMod.HChild*): Element = js.native
+    def apply(selector: String, properties: HProperties, children: typings.hastscript.libCoreMod.HChild*): Element = js.native
+    def apply(selector: Null, children: typings.hastscript.libCoreMod.HChild*): Root = js.native
+    def apply(selector: Unit, children: typings.hastscript.libCoreMod.HChild*): Root = js.native
   }
   
   @js.native
@@ -78,18 +78,18 @@ object anon {
     
     var Fragment: Null = js.native
     
-    def jsx(`type`: String, props: JSXProps): typings.hastscript.runtimeMod.Element = js.native
-    def jsx(`type`: String, props: JSXProps, key: String): typings.hastscript.runtimeMod.Element = js.native
-    def jsx(`type`: Null, props: `1`): typings.hastscript.runtimeMod.Root = js.native
-    def jsx(`type`: Null, props: `1`, key: String): typings.hastscript.runtimeMod.Root = js.native
-    def jsx(`type`: Unit, props: `1`): typings.hastscript.runtimeMod.Root = js.native
-    def jsx(`type`: Unit, props: `1`, key: String): typings.hastscript.runtimeMod.Root = js.native
+    def jsx(`type`: String, props: JSXProps): typings.hastscript.libRuntimeMod.Element = js.native
+    def jsx(`type`: String, props: JSXProps, key: String): typings.hastscript.libRuntimeMod.Element = js.native
+    def jsx(`type`: Null, props: `1`): typings.hastscript.libRuntimeMod.Root = js.native
+    def jsx(`type`: Null, props: `1`, key: String): typings.hastscript.libRuntimeMod.Root = js.native
+    def jsx(`type`: Unit, props: `1`): typings.hastscript.libRuntimeMod.Root = js.native
+    def jsx(`type`: Unit, props: `1`, key: String): typings.hastscript.libRuntimeMod.Root = js.native
     
-    def jsxs(`type`: String, props: JSXProps): typings.hastscript.runtimeMod.Element = js.native
-    def jsxs(`type`: String, props: JSXProps, key: String): typings.hastscript.runtimeMod.Element = js.native
-    def jsxs(`type`: Null, props: `1`): typings.hastscript.runtimeMod.Root = js.native
-    def jsxs(`type`: Null, props: `1`, key: String): typings.hastscript.runtimeMod.Root = js.native
-    def jsxs(`type`: Unit, props: `1`): typings.hastscript.runtimeMod.Root = js.native
-    def jsxs(`type`: Unit, props: `1`, key: String): typings.hastscript.runtimeMod.Root = js.native
+    def jsxs(`type`: String, props: JSXProps): typings.hastscript.libRuntimeMod.Element = js.native
+    def jsxs(`type`: String, props: JSXProps, key: String): typings.hastscript.libRuntimeMod.Element = js.native
+    def jsxs(`type`: Null, props: `1`): typings.hastscript.libRuntimeMod.Root = js.native
+    def jsxs(`type`: Null, props: `1`, key: String): typings.hastscript.libRuntimeMod.Root = js.native
+    def jsxs(`type`: Unit, props: `1`): typings.hastscript.libRuntimeMod.Root = js.native
+    def jsxs(`type`: Unit, props: `1`, key: String): typings.hastscript.libRuntimeMod.Root = js.native
   }
 }

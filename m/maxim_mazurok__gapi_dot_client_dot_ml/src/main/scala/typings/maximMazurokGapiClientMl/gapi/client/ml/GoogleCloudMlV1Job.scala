@@ -1,7 +1,5 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
-import org.scalablytyped.runtime.TopLevel
-import typings.maximMazurokGapiClientMl.maximMazurokGapiClientMlStrings.GoogleCloudMlV1__Job
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,9 +33,7 @@ trait GoogleCloudMlV1Job extends StObject {
     * more information, see the documentation on using labels.
     */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ GoogleCloudMlV1__Job & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Input parameters to create a prediction job. */
@@ -92,9 +88,7 @@ object GoogleCloudMlV1Job {
     inline def setJobPositionUndefined: Self = StObject.set(x, "jobPosition", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ GoogleCloudMlV1__Job & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

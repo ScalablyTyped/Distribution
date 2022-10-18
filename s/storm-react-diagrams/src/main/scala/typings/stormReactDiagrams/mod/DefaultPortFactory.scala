@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "DefaultPortFactory")
 @js.native
 open class DefaultPortFactory ()
-  extends typings.stormReactDiagrams.defaultPortFactoryMod.DefaultPortFactory
+  extends typings.stormReactDiagrams.distSrcDefaultsFactoriesDefaultPortFactoryMod.DefaultPortFactory

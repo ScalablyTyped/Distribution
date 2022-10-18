@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesWordlistsMod {
   
-  @JSImport("bip39/types/_wordlists", JSImport.Namespace)
+  @JSImport("bip39/types/wordlists", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("bip39/types/_wordlists", "_default")
+  @JSImport("bip39/types/wordlists", "_default")
   @js.native
   def default: js.UndefOr[js.Array[String]] = js.native
   

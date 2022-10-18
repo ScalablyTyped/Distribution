@@ -11,28 +11,28 @@ trait Messenger extends EventEmitter {
   /**
     * broadcast to all agent/app processes including itself
     */
-  def broadcast(action: String, data: js.Any): Unit = js.native
+  def broadcast(action: String, data: Any): Unit = js.native
   
   /**
     * send to agent from the app,
     * send to an random app from the agent
     */
-  def sendRandom(action: String, data: js.Any): Unit = js.native
+  def sendRandom(action: String, data: Any): Unit = js.native
   
   /**
     * send to specified process
     */
-  def sendTo(pid: Double, action: String, data: js.Any): Unit = js.native
+  def sendTo(pid: Double, action: String, data: Any): Unit = js.native
   
   /**
     * send to agent from the app,
     * send to itself from the agent
     */
-  def sendToAgent(action: String, data: js.Any): Unit = js.native
+  def sendToAgent(action: String, data: Any): Unit = js.native
   
   /**
     * send to all app including itself from the app,
     * send to all app from the agent
     */
-  def sendToApp(action: String, data: js.Any): Unit = js.native
+  def sendToApp(action: String, data: Any): Unit = js.native
 }

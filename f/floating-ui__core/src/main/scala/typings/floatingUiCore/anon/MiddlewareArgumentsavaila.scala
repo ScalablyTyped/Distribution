@@ -1,10 +1,10 @@
 package typings.floatingUiCore.anon
 
-import typings.floatingUiCore.typesMod.ElementRects
-import typings.floatingUiCore.typesMod.Elements
-import typings.floatingUiCore.typesMod.MiddlewareData
-import typings.floatingUiCore.typesMod.Platform
-import typings.floatingUiCore.typesMod.Strategy
+import typings.floatingUiCore.srcTypesMod.ElementRects
+import typings.floatingUiCore.srcTypesMod.Elements
+import typings.floatingUiCore.srcTypesMod.MiddlewareData
+import typings.floatingUiCore.srcTypesMod.Platform
+import typings.floatingUiCore.srcTypesMod.Strategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,11 +18,11 @@ trait MiddlewareArgumentsavaila extends StObject {
   
   var elements: Elements
   
-  var initialPlacement: typings.floatingUiCore.typesMod.Placement
+  var initialPlacement: typings.floatingUiCore.srcTypesMod.Placement
   
   var middlewareData: MiddlewareData
   
-  var placement: typings.floatingUiCore.typesMod.Placement
+  var placement: typings.floatingUiCore.srcTypesMod.Placement
   
   var platform: Platform
   
@@ -40,9 +40,9 @@ object MiddlewareArgumentsavaila {
     availableHeight: Double,
     availableWidth: Double,
     elements: Elements,
-    initialPlacement: typings.floatingUiCore.typesMod.Placement,
+    initialPlacement: typings.floatingUiCore.srcTypesMod.Placement,
     middlewareData: MiddlewareData,
-    placement: typings.floatingUiCore.typesMod.Placement,
+    placement: typings.floatingUiCore.srcTypesMod.Placement,
     platform: Platform,
     rects: ElementRects,
     strategy: Strategy,
@@ -61,11 +61,11 @@ object MiddlewareArgumentsavaila {
     
     inline def setElements(value: Elements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    inline def setInitialPlacement(value: typings.floatingUiCore.typesMod.Placement): Self = StObject.set(x, "initialPlacement", value.asInstanceOf[js.Any])
+    inline def setInitialPlacement(value: typings.floatingUiCore.srcTypesMod.Placement): Self = StObject.set(x, "initialPlacement", value.asInstanceOf[js.Any])
     
     inline def setMiddlewareData(value: MiddlewareData): Self = StObject.set(x, "middlewareData", value.asInstanceOf[js.Any])
     
-    inline def setPlacement(value: typings.floatingUiCore.typesMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: typings.floatingUiCore.srcTypesMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     inline def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     

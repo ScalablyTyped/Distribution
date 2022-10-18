@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ImageAssetTask")
 @js.native
 open class ImageAssetTask protected ()
-  extends typings.babylonjs.legacyMod.ImageAssetTask {
+  extends typings.babylonjs.legacyLegacyMod.ImageAssetTask {
   /**
     * Creates a new ImageAssetTask
     * @param name defines the name of the task

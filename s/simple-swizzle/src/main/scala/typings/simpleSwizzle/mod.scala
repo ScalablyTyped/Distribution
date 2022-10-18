@@ -45,5 +45,11 @@ object mod {
     * swizzledFn(1, 2, 3, 4);   // [1, 2, 3, 4]
     * swizzledFn([1, 2, 3, 4]); // [1, 2, 3, 4]
     */
-  inline def wrap[TFn /* <: js.Function1[/* arguments */ js.Array[Any], Any] */](fn: TFn): js.Function1[/* args */ js.Array[Any | js.Array[Any]], ReturnType[TFn]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ js.Array[Any | js.Array[Any]], ReturnType[TFn]]]
+  inline def wrap[TFn /* <: js.Function1[/* arguments */ js.Array[Any], Any] */](fn: TFn): js.Function1[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<TFn>[0] extends std.Array<infer TElement> ? std.Array<TElement | std.Array<TElement>> : never */ /* args */ js.Any, 
+    ReturnType[TFn]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<TFn>[0] extends std.Array<infer TElement> ? std.Array<TElement | std.Array<TElement>> : never */ /* args */ js.Any, 
+    ReturnType[TFn]
+  ]]
 }

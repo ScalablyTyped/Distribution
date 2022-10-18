@@ -3,6 +3,7 @@ package typings.rollup.mod
 import typings.rollup.rollupStrings.`no-treeshake`
 import typings.rollup.rollupStrings.absolute
 import typings.rollup.rollupStrings.relative
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PartialResolvedId
   extends StObject
      with _ResolveIdResult {
+  
+  var assertions: js.UndefOr[(Record[String, String]) | Null] = js.undefined
   
   var external: js.UndefOr[Boolean | absolute | relative] = js.undefined
   
@@ -30,6 +33,12 @@ object PartialResolvedId {
   }
   
   extension [Self <: PartialResolvedId](x: Self) {
+    
+    inline def setAssertions(value: Record[String, String]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
+    
+    inline def setAssertionsNull: Self = StObject.set(x, "assertions", null)
+    
+    inline def setAssertionsUndefined: Self = StObject.set(x, "assertions", js.undefined)
     
     inline def setExternal(value: Boolean | absolute | relative): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     

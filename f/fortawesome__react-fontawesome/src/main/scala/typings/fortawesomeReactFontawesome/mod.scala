@@ -970,6 +970,11 @@ object mod {
   }
   object FontAwesomeIconProps {
     
+    inline def apply(icon: IconProp): FontAwesomeIconProps = {
+      val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FontAwesomeIconProps]
+    }
+    
     extension [Self <: FontAwesomeIconProps](x: Self) {
       
       inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])

@@ -9,10 +9,10 @@ object mod {
   @JSImport("react-portal-tooltip", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.reactPortalTooltip.toolTipMod.default
+    extends typings.reactPortalTooltip.libToolTipMod.default
   
   @JSImport("react-portal-tooltip", "StatefulToolTip")
   @js.native
   open class StatefulToolTip ()
-    extends typings.reactPortalTooltip.statefulToolTipMod.default
+    extends typings.reactPortalTooltip.libStatefulToolTipMod.default
 }

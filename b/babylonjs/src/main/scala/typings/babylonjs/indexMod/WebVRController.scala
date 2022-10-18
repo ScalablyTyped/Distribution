@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/index", "WebVRController")
+/* note: abstract class */ @JSImport("babylonjs/index", "WebVRController")
 @js.native
-abstract class WebVRController protected ()
+open class WebVRController protected ()
   extends typings.babylonjs.gamepadsIndexMod.WebVRController {
   /**
     * Creates a new WebVRController from a gamepad

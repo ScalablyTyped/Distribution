@@ -18,7 +18,7 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.avatarImageMod.AvatarImageSource
+import typings.reactNativePaper.libTypescriptComponentsAvatarAvatarImageMod.AvatarImageSource
 import typings.reactNativePaper.reactNativePaperStrings.`box-none`
 import typings.reactNativePaper.reactNativePaperStrings.`box-only`
 import typings.reactNativePaper.reactNativePaperStrings.`no-hide-descendants`

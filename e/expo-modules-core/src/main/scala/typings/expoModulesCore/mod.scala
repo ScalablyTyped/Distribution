@@ -1,18 +1,18 @@
 package typings.expoModulesCore
 
 import typings.expoModulesCore.anon.CurrentVersion
-import typings.expoModulesCore.eventEmitterMod.NativeModule
+import typings.expoModulesCore.buildEventEmitterMod.NativeModule
+import typings.expoModulesCore.buildPermissionsHookMod.GetPermissionMethod
+import typings.expoModulesCore.buildPermissionsHookMod.PermissionHookMethods
+import typings.expoModulesCore.buildPermissionsHookMod.PermissionHookOptions
+import typings.expoModulesCore.buildPermissionsHookMod.RequestPermissionMethod
+import typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionResponse
+import typings.expoModulesCore.buildPlatformMod.PlatformSelect
 import typings.expoModulesCore.expoModulesCoreStrings.android
 import typings.expoModulesCore.expoModulesCoreStrings.ios
 import typings.expoModulesCore.expoModulesCoreStrings.macos
 import typings.expoModulesCore.expoModulesCoreStrings.web
 import typings.expoModulesCore.expoModulesCoreStrings.windows
-import typings.expoModulesCore.permissionsHookMod.GetPermissionMethod
-import typings.expoModulesCore.permissionsHookMod.PermissionHookMethods
-import typings.expoModulesCore.permissionsHookMod.PermissionHookOptions
-import typings.expoModulesCore.permissionsHookMod.RequestPermissionMethod
-import typings.expoModulesCore.permissionsInterfaceMod.PermissionResponse
-import typings.expoModulesCore.platformMod.PlatformSelect
 import typings.react.mod.ComponentType
 import typings.reactNative.mod.DeviceEventEmitterStatic
 import org.scalablytyped.runtime.StObject
@@ -28,7 +28,7 @@ object mod {
   @JSImport("expo-modules-core", "CodedError")
   @js.native
   open class CodedError protected ()
-    extends typings.expoModulesCore.codedErrorMod.CodedError {
+    extends typings.expoModulesCore.buildErrorsCodedErrorMod.CodedError {
     def this(code: String, message: String) = this()
   }
   
@@ -45,7 +45,7 @@ object mod {
   @JSImport("expo-modules-core", "EventEmitter")
   @js.native
   open class EventEmitter protected ()
-    extends typings.expoModulesCore.eventEmitterMod.EventEmitter {
+    extends typings.expoModulesCore.buildEventEmitterMod.EventEmitter {
     def this(nativeModule: NativeModule) = this()
   }
   
@@ -54,13 +54,13 @@ object mod {
   object PermissionStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus & String] = js.native
+    def apply(value: String): js.UndefOr[typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus & String] = js.native
     
-    /* "denied" */ val DENIED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.DENIED & String = js.native
+    /* "denied" */ val DENIED: typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus.DENIED & String = js.native
     
-    /* "granted" */ val GRANTED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.GRANTED & String = js.native
+    /* "granted" */ val GRANTED: typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus.GRANTED & String = js.native
     
-    /* "undetermined" */ val UNDETERMINED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.UNDETERMINED & String = js.native
+    /* "undetermined" */ val UNDETERMINED: typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus.UNDETERMINED & String = js.native
   }
   
   object Platform {
@@ -143,7 +143,7 @@ object mod {
   @JSImport("expo-modules-core", "UnavailabilityError")
   @js.native
   open class UnavailabilityError protected ()
-    extends typings.expoModulesCore.unavailabilityErrorMod.UnavailabilityError {
+    extends typings.expoModulesCore.buildErrorsUnavailabilityErrorMod.UnavailabilityError {
     def this(moduleName: String, propertyName: String) = this()
   }
   

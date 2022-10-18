@@ -12,42 +12,43 @@ trait AnimationDelayAnimationDelayUpdate extends StObject {
     *
     * @default
     * "true"
-    * @see https://echarts.apache.org/en/option.html#series-map.markArea.animation
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Delay before updating the first animation, which supports
-    * callback function for different data to have different animation
-    * effect.
+    * Specify the delay time before animation start.
+    * Callback function can be used, where different delay time
+    * can be used on different element.
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markArea)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.hoverAnimation)
     *
-    * See
-    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
-    * for more information.
+    * For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.hoverAnimation)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.markArea.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   
   /**
-    * Delay before updating animation, which supports callback
-    * function for different data to have different animation effect.
+    * Specify the delay time before update animation.
+    * Callback function can be used, where different delay time
+    * can be used on different element.
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markArea)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.hoverAnimation)
     *
-    * See
-    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
-    * for more information.
+    * For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.hoverAnimation)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.markArea.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   
@@ -55,12 +56,12 @@ trait AnimationDelayAnimationDelayUpdate extends StObject {
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markArea)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.hoverAnimation)
     *
     *
     * @default
     * 1000
-    * @see https://echarts.apache.org/en/option.html#series-map.markArea.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   
@@ -68,12 +69,12 @@ trait AnimationDelayAnimationDelayUpdate extends StObject {
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markArea)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.hoverAnimation)
     *
     *
     * @default
     * 300
-    * @see https://echarts.apache.org/en/option.html#series-map.markArea.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   
@@ -86,7 +87,7 @@ trait AnimationDelayAnimationDelayUpdate extends StObject {
     *
     * @default
     * "cubicOut"
-    * @see https://echarts.apache.org/en/option.html#series-map.markArea.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   
@@ -96,7 +97,7 @@ trait AnimationDelayAnimationDelayUpdate extends StObject {
     *
     * @default
     * "cubicOut"
-    * @see https://echarts.apache.org/en/option.html#series-map.markArea.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   
@@ -108,68 +109,9 @@ trait AnimationDelayAnimationDelayUpdate extends StObject {
     *
     * @default
     * 2000
-    * @see https://echarts.apache.org/en/option.html#series-map.markArea.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * The scope of the area is defined by `data`, which is an array
-    * with two item, representing the left-top point and the right-bottom
-    * point of rectangle area.
-    * Each item can be defined as follows:
-    *
-    * 1.
-    * Specify the coordinate in screen coordinate system using
-    * [x](https://echarts.apache.org/en/option.html#series-map.markArea.data.0.x)
-    * ,
-    * [y](https://echarts.apache.org/en/option.html#series-map.markArea.data.0.y)
-    * , where the unit is pixel (e.g.,
-    * the value is `5`), or percent (e.g.,
-    * the value is `'35%'`).
-    *
-    * 2.
-    * Specify the coordinate in data coordinate system (i.e.,
-    * cartesian) using
-    * [coord](https://echarts.apache.org/en/option.html#series-map.markArea.data.0.coord)
-    * , which can be also set as `'min'`, `'max'`, `'average'`
-    * (e.g,
-    * `coord: [23, 'min']`, or `coord: ['average', 'max']`)。
-    *
-    * The priority follows as above if more than one above definition
-    * used.
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markArea)
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-map.markArea.data
-    */
-  var data: js.UndefOr[`14`] = js.undefined
-  
-  /**
-    * Style of the mark area.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-map.markArea.itemStyle
-    */
-  var itemStyle: js.UndefOr[Emphasis] = js.undefined
-  
-  /**
-    * Label in mark area.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-map.markArea.label
-    */
-  var label: js.UndefOr[FontFamily] = js.undefined
-  
-  /**
-    * Whether to ignore mouse events.
-    * Default value is false, for triggering and responding to
-    * mouse events.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-map.markArea.silent
-    */
-  var silent: js.UndefOr[Boolean] = js.undefined
 }
 object AnimationDelayAnimationDelayUpdate {
   
@@ -211,21 +153,5 @@ object AnimationDelayAnimationDelayUpdate {
     inline def setAnimationThresholdUndefined: Self = StObject.set(x, "animationThreshold", js.undefined)
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
-    
-    inline def setData(value: `14`): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
-    
-    inline def setItemStyle(value: Emphasis): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
-    
-    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
-    
-    inline def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-    
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-    
-    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
-    
-    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

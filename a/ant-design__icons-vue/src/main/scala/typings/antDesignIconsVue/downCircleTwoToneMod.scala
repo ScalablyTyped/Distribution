@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsDownCircleTwoToneMod.DownCircleTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object downCircleTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/DownCircleTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/DownCircleTwoTone", JSImport.Default)
   @js.native
   val default: DownCircleTwoToneIconType = js.native
-  
-  @js.native
-  trait DownCircleTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_DownCircleTwoToneIconType: String = js.native
-  }
   
   type _To = DownCircleTwoToneIconType
   

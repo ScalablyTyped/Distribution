@@ -1,8 +1,8 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.keyMod.Key
-import typings.tsToolbelt.objectEitherMod.EitherLoose
-import typings.tsToolbelt.objectEitherMod.EitherStrict
+import typings.tsToolbelt.outAnyKeyMod.Key
+import typings.tsToolbelt.outObjectEitherMod.EitherLoose
+import typings.tsToolbelt.outObjectEitherMod.EitherStrict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AuthenticationScheme extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.azureMsalCommon.constantsMod.AuthenticationScheme & String] = js.native
+  def apply(value: String): js.UndefOr[typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme & String] = js.native
   
-  /* "Bearer" */ val BEARER: typings.azureMsalCommon.constantsMod.AuthenticationScheme.BEARER & String = js.native
+  /* "Bearer" */ val BEARER: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme.BEARER & String = js.native
   
-  /* "pop" */ val POP: typings.azureMsalCommon.constantsMod.AuthenticationScheme.POP & String = js.native
+  /* "pop" */ val POP: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme.POP & String = js.native
   
-  /* "ssh-cert" */ val SSH: typings.azureMsalCommon.constantsMod.AuthenticationScheme.SSH & String = js.native
+  /* "ssh-cert" */ val SSH: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme.SSH & String = js.native
 }

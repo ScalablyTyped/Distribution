@@ -10,5 +10,8 @@ object KeyEncryptorKdf {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def encrypt(key: js.typedarray.ArrayBuffer, kdfParams: typings.kdbxweb.varDictionaryMod.VarDictionary): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(key.asInstanceOf[js.Any], kdfParams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
+  inline def encrypt(
+    key: js.typedarray.ArrayBuffer,
+    kdfParams: typings.kdbxweb.distTypesUtilsVarDictionaryMod.VarDictionary
+  ): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(key.asInstanceOf[js.Any], kdfParams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
 }

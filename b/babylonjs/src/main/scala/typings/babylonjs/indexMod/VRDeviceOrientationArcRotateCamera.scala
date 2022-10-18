@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "VRDeviceOrientationArcRotateCamera")
 @js.native
 open class VRDeviceOrientationArcRotateCamera protected ()
-  extends typings.babylonjs.babylonjsMod.VRDeviceOrientationArcRotateCamera {
+  extends typings.babylonjs.camerasIndexMod.VRDeviceOrientationArcRotateCamera {
   /**
     * Creates a new VRDeviceOrientationArcRotateCamera
     * @param name defines camera name
@@ -24,14 +24,14 @@ open class VRDeviceOrientationArcRotateCamera protected ()
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3
   ) = this()
   def this(
     name: String,
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
   def this(
@@ -39,7 +39,7 @@ open class VRDeviceOrientationArcRotateCamera protected ()
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: Unit,
     compensateDistortion: Boolean
   ) = this()
@@ -48,7 +48,7 @@ open class VRDeviceOrientationArcRotateCamera protected ()
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene,
     compensateDistortion: Boolean
   ) = this()
@@ -57,39 +57,39 @@ open class VRDeviceOrientationArcRotateCamera protected ()
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: Unit,
     compensateDistortion: Boolean,
-    vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+    vrCameraMetrics: typings.babylonjs.camerasVRVrCameraMetricsMod.VRCameraMetrics
   ) = this()
   def this(
     name: String,
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: Unit,
     compensateDistortion: Unit,
-    vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+    vrCameraMetrics: typings.babylonjs.camerasVRVrCameraMetricsMod.VRCameraMetrics
   ) = this()
   def this(
     name: String,
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene,
     compensateDistortion: Boolean,
-    vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+    vrCameraMetrics: typings.babylonjs.camerasVRVrCameraMetricsMod.VRCameraMetrics
   ) = this()
   def this(
     name: String,
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene,
     compensateDistortion: Unit,
-    vrCameraMetrics: typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+    vrCameraMetrics: typings.babylonjs.camerasVRVrCameraMetricsMod.VRCameraMetrics
   ) = this()
 }

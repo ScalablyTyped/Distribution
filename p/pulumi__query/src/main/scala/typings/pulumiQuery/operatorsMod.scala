@@ -28,7 +28,7 @@ object operatorsMod {
   inline def any[TSource](): Evaluator[TSource, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")().asInstanceOf[Evaluator[TSource, Boolean]]
   inline def any[TSource](predicate: js.Function1[/* t */ TSource, Boolean | js.Promise[Boolean]]): Evaluator[TSource, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(predicate.asInstanceOf[js.Any]).asInstanceOf[Evaluator[TSource, Boolean]]
   
-  inline def average[TSource](): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("average")().asInstanceOf[js.Promise[Double]]
+  inline def average[TSource](): /* import warning: importer.ImportType#apply Failed type conversion: TSource extends number ? std.Promise<number> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("average")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TSource extends number ? std.Promise<number> : never */ js.Any]
   inline def average[TSource](selector: js.Function1[/* t */ TSource, Double | js.Promise[Double]]): Evaluator[TSource, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("average")(selector.asInstanceOf[js.Any]).asInstanceOf[Evaluator[TSource, Double]]
   
   inline def average_TSource_Evaluator[TSource](): Evaluator[TSource, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("average")().asInstanceOf[Evaluator[TSource, Double]]
@@ -116,12 +116,12 @@ object operatorsMod {
   
   inline def map[TSource, TResult](f: js.Function2[/* t */ TSource, /* i */ Double, TResult | js.Promise[TResult]]): Operator[TSource, TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[TSource, TResult]]
   
-  inline def max[TSource](): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[js.Promise[Double]]
+  inline def max[TSource](): /* import warning: importer.ImportType#apply Failed type conversion: TSource extends number ? std.Promise<number> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TSource extends number ? std.Promise<number> : never */ js.Any]
   inline def max[TSource](selector: js.Function1[/* t */ TSource, Double | js.Promise[Double]]): Evaluator[TSource, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(selector.asInstanceOf[js.Any]).asInstanceOf[Evaluator[TSource, Double]]
   
   inline def max_TSource_Evaluator[TSource](): Evaluator[TSource, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[Evaluator[TSource, Double]]
   
-  inline def min[TSource](): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("min")().asInstanceOf[js.Promise[Double]]
+  inline def min[TSource](): /* import warning: importer.ImportType#apply Failed type conversion: TSource extends number ? std.Promise<number> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("min")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TSource extends number ? std.Promise<number> : never */ js.Any]
   inline def min[TSource](selector: js.Function1[/* t */ TSource, Double | js.Promise[Double]]): Evaluator[TSource, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(selector.asInstanceOf[js.Any]).asInstanceOf[Evaluator[TSource, Double]]
   
   inline def min_TSource_Evaluator[TSource](): Evaluator[TSource, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("min")().asInstanceOf[Evaluator[TSource, Double]]
@@ -144,7 +144,7 @@ object operatorsMod {
   
   inline def skipWhile[TSource](predicate: js.Function2[/* t */ TSource, /* i */ Double, Boolean | js.Promise[Boolean]]): Operator[TSource, TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("skipWhile")(predicate.asInstanceOf[js.Any]).asInstanceOf[Operator[TSource, TSource]]
   
-  inline def sum[TSource](): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")().asInstanceOf[js.Promise[Double]]
+  inline def sum[TSource](): /* import warning: importer.ImportType#apply Failed type conversion: TSource extends number ? std.Promise<number> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TSource extends number ? std.Promise<number> : never */ js.Any]
   inline def sum[TSource](selector: js.Function1[/* t */ TSource, Double | js.Promise[Double]]): Evaluator[TSource, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(selector.asInstanceOf[js.Any]).asInstanceOf[Evaluator[TSource, Double]]
   
   inline def sum_TSource_Evaluator[TSource](): Evaluator[TSource, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")().asInstanceOf[Evaluator[TSource, Double]]

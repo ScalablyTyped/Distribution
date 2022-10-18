@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ExternalTexture")
 @js.native
 open class ExternalTexture protected ()
-  extends typings.babylonjs.legacyMod.ExternalTexture {
+  extends typings.babylonjs.legacyLegacyMod.ExternalTexture {
   /**
     * Constructs the texture
     * @param video The video the texture should be wrapped around
@@ -27,6 +27,6 @@ object ExternalTexture {
     * @param texture the external or internal texture
     * @returns true if the texture is an external texture, else false
     */
-  inline def IsExternalTexture(texture: typings.babylonjs.externalTextureMod.ExternalTexture): /* is babylonjs.babylonjs/Materials/Textures/externalTexture.ExternalTexture */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsExternalTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[/* is babylonjs.babylonjs/Materials/Textures/externalTexture.ExternalTexture */ Boolean]
-  inline def IsExternalTexture(texture: typings.babylonjs.internalTextureMod.InternalTexture): /* is babylonjs.babylonjs/Materials/Textures/externalTexture.ExternalTexture */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsExternalTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[/* is babylonjs.babylonjs/Materials/Textures/externalTexture.ExternalTexture */ Boolean]
+  inline def IsExternalTexture(texture: typings.babylonjs.materialsTexturesExternalTextureMod.ExternalTexture): /* is babylonjs.babylonjs/Materials/Textures/externalTexture.ExternalTexture */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsExternalTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[/* is babylonjs.babylonjs/Materials/Textures/externalTexture.ExternalTexture */ Boolean]
+  inline def IsExternalTexture(texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture): /* is babylonjs.babylonjs/Materials/Textures/externalTexture.ExternalTexture */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsExternalTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[/* is babylonjs.babylonjs/Materials/Textures/externalTexture.ExternalTexture */ Boolean]
 }

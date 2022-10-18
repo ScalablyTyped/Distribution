@@ -1,8 +1,8 @@
 package typings.connectMongo
 
-import typings.connectMongo.mongoStoreMod.ConnectMongoOptions
-import typings.connectMongo.mongoStoreMod.MongoStore
-import typings.connectMongo.mongoStoreMod.default
+import typings.connectMongo.buildMainLibMongoStoreMod.ConnectMongoOptions
+import typings.connectMongo.buildMainLibMongoStoreMod.MongoStore
+import typings.connectMongo.buildMainLibMongoStoreMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

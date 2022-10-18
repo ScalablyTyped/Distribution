@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param scene defines the current scene
   */
 open class BakedVertexAnimationManager ()
-  extends typings.babylonjs.legacyMod.BakedVertexAnimationManager {
+  extends typings.babylonjs.legacyLegacyMod.BakedVertexAnimationManager {
   def this(scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
 }

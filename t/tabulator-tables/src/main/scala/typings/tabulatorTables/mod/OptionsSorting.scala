@@ -1,10 +1,14 @@
 package typings.tabulatorTables.mod
 
+import typings.tabulatorTables.tabulatorTablesStrings.header
+import typings.tabulatorTables.tabulatorTablesStrings.icon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OptionsSorting extends StObject {
+  
+  var headerSortClickElement: js.UndefOr[header | icon] = js.undefined
   
   /** Array of sorters to be applied on load. */
   var initialSort: js.UndefOr[js.Array[Sorter]] = js.undefined
@@ -20,6 +24,10 @@ object OptionsSorting {
   }
   
   extension [Self <: OptionsSorting](x: Self) {
+    
+    inline def setHeaderSortClickElement(value: header | icon): Self = StObject.set(x, "headerSortClickElement", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderSortClickElementUndefined: Self = StObject.set(x, "headerSortClickElement", js.undefined)
     
     inline def setInitialSort(value: js.Array[Sorter]): Self = StObject.set(x, "initialSort", value.asInstanceOf[js.Any])
     

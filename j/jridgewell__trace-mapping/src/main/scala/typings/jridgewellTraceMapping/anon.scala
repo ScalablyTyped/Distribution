@@ -1,8 +1,8 @@
 package typings.jridgewellTraceMapping
 
+import typings.jridgewellTraceMapping.distTypesSourcemapSegmentMod.SourceMapSegment
+import typings.jridgewellTraceMapping.distTypesTypesMod.EachMapping
 import typings.jridgewellTraceMapping.jridgewellTraceMappingInts.`3`
-import typings.jridgewellTraceMapping.sourcemapSegmentMod.SourceMapSegment
-import typings.jridgewellTraceMapping.typesMod.EachMapping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

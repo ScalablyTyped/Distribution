@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object defaultNumberOptionMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/DefaultNumberOption", JSImport.Namespace)
+  @JSImport("@formatjs/ecma402-abstract/DefaultNumberOption", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

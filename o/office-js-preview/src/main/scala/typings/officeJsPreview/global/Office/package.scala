@@ -39,13 +39,13 @@ inline def auth: Auth = ^.asInstanceOf[js.Dynamic].selectDynamic("auth").asInsta
   *
   * **Support details**
   *
-  * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application.
-  * An empty cell indicates that the Office host application doesn't support this enumeration.
+  * A capital Y in the following matrix indicates that this object is supported in the corresponding Office application.
+  * An empty cell indicates that the Office application doesn't support this object.
   *
-  * For more information about Office host application and server requirements, see
+  * For more information about Office application and server requirements, see
   * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
   *
-  * *Supported hosts, by platform*
+  * *Supported applications, by platform*
   *  <table>
   *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
   *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
@@ -65,7 +65,7 @@ inline def context_=(x: Context): Unit = ^.asInstanceOf[js.Dynamic].updateDynami
   * initialization occurred. A task pane or content add-in can be initialized in two ways:
   *
   *  - The user just inserted it from Recently Used Add-ins section of the Add-in drop-down list on the Insert tab of the ribbon in the Office
-  * host application, or from Insert add-in dialog box.
+  * application, or from Insert add-in dialog box.
   *
   *  - The user opened a document that already contains the add-in.
   *
@@ -76,13 +76,13 @@ inline def context_=(x: Context): Unit = ^.asInstanceOf[js.Dynamic].updateDynami
   *
   * **Support details**
   *
-  * A capital Y in the following matrix indicates that this function is supported in the corresponding Office host application.
-  * An empty cell indicates that the Office host application doesn't support this function.
+  * A capital Y in the following matrix indicates that this function is supported in the corresponding Office application.
+  * An empty cell indicates that the Office application doesn't support this function.
   *
-  * For more information about Office host application and server requirements, see
+  * For more information about Office application and server requirements, see
   * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
   *
-  * *Supported hosts, by platform*
+  * *Supported applications, by platform*
   *  <table>
   *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
   *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
@@ -97,7 +97,7 @@ inline def context_=(x: Context): Unit = ^.asInstanceOf[js.Dynamic].updateDynami
 inline def initialize(reason: typings.officeJsPreview.Office.InitializationReason): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(reason.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 /**
-  * Checks if the specified requirement set is supported by the host Office application.
+  * Checks if the specified requirement set is supported by the Office application.
   * @param name - Set name; e.g., "MatrixBindings".
   * @param minVersion - The minimum required version; e.g., "1.4".
   */
@@ -106,13 +106,13 @@ inline def isSetSupported(name: String, minVersion: String): Boolean = (^.asInst
 
 /**
   * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise
-  * will wait until the Office host is ready to accept API calls. Note that though this API is intended to be used inside an Office add-in, it can
-  * also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office host application, it will call
-  * the callback and resolve the promise with "null" for both the host and platform.
+  * will wait until the Office application is ready to accept API calls. Note that though this API is intended to be used inside an Office add-in, it can
+  * also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office application, it will call
+  * the callback and resolve the promise with "null" for both the application and platform.
   *
-  * @param callback - An optional callback function, that will receive the host and platform info.
+  * @param callback - An optional callback function, that will receive the application and platform info.
   *                   Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
-  * @returns A Promise that contains the host and platform info, once initialization is completed.
+  * @returns A Promise that contains the application and platform info, once initialization is completed.
   */
 inline def onReady(): js.Promise[Host] = ^.asInstanceOf[js.Dynamic].applyDynamic("onReady")().asInstanceOf[js.Promise[Host]]
 inline def onReady(callback: js.Function1[/* info */ Host, Any]): js.Promise[Host] = ^.asInstanceOf[js.Dynamic].applyDynamic("onReady")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Host]]
@@ -132,13 +132,13 @@ inline def ribbon: Ribbon = ^.asInstanceOf[js.Dynamic].selectDynamic("ribbon").a
   *
   * **Support details**
   *
-  * A capital Y in the following matrix indicates that this function is supported in the corresponding Office host application.
-  * An empty cell indicates that the Office host application doesn't support this function.
+  * A capital Y in the following matrix indicates that this function is supported in the corresponding Office application.
+  * An empty cell indicates that the Office application doesn't support this function.
   *
-  * For more information about Office host application and server requirements, see
+  * For more information about Office application and server requirements, see
   * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
   *
-  * *Supported hosts, by platform*
+  * *Supported applications, by platform*
   *  <table>
   *   <tr><th>                         </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th></tr>
   *   <tr><td><strong> Excel  </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td></tr>
@@ -155,13 +155,13 @@ inline def select(expression: String, callback: js.Function1[/* result */ AsyncR
   *
   * **Support details**
   *
-  * A capital Y in the following matrix indicates that this function is supported in the corresponding Office host application.
-  * An empty cell indicates that the Office host application doesn't support this function.
+  * A capital Y in the following matrix indicates that this function is supported in the corresponding Office application.
+  * An empty cell indicates that the Office application doesn't support this function.
   *
-  * For more information about Office host application and server requirements, see
+  * For more information about Office application and server requirements, see
   * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
   *
-  * *Supported hosts, by platform*
+  * *Supported applications, by platform*
   *  <table>
   *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
   *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>

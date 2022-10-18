@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an operation status change. */
-@JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderStatusUpdatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderStatusUpdatedEventArgs")
 @js.native
-abstract class MagneticStripeReaderStatusUpdatedEventArgs ()
+open class MagneticStripeReaderStatusUpdatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReaderStatusUpdatedEventArgs {
   

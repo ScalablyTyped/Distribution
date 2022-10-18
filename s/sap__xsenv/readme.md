@@ -1,7 +1,7 @@
 
 # Scala.js typings for sap__xsenv
 
-Typings are for version 2.0
+Typings are for version 3.3
 
 ## Library description:
 Utility for easy setup and access of SAP HANA XS Advanced environment variables

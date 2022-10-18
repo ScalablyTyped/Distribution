@@ -1,7 +1,7 @@
 package typings.nukaCarousel
 
-import typings.nukaCarousel.typesMod.RenderControlFunctionNames
-import typings.nukaCarousel.typesMod._KeyCodeFunction
+import typings.nukaCarousel.libTypesMod.RenderControlFunctionNames
+import typings.nukaCarousel.libTypesMod._KeyCodeFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

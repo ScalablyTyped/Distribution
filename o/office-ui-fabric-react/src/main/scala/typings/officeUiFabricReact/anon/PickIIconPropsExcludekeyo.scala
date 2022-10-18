@@ -1,10 +1,10 @@
 package typings.officeUiFabricReact.anon
 
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.iconTypesMod.IIconStyleProps
-import typings.officeUiFabricReact.iconTypesMod.IIconStyles
-import typings.officeUiFabricReact.iconTypesMod.IconType
-import typings.officeUiFabricReact.imageTypesMod.IImageProps
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsIconIconDottypesMod.IIconStyleProps
+import typings.officeUiFabricReact.libComponentsIconIconDottypesMod.IIconStyles
+import typings.officeUiFabricReact.libComponentsIconIconDottypesMod.IconType
+import typings.officeUiFabricReact.libComponentsImageImageDottypesMod.IImageProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions removals`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions text`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`inline`
@@ -94,9 +94,9 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
-import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricUtilities.createRefMod.IRefObject
+import typings.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricUtilities.libCreateRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

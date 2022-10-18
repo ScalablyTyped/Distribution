@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nrwlDevkit.anon.AppsDir
 import typings.nrwlDevkit.anon.ClassName
 import typings.nrwlDevkit.anon.ProjectRoot
-import typings.nrwlDevkit.stringChangeMod.StringChange
+import typings.nrwlDevkit.srcUtilsStringChangeMod.StringChange
 import typings.std.Generator
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -22,11 +22,11 @@ object mod {
   object ChangeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.nrwlDevkit.stringChangeMod.ChangeType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.nrwlDevkit.srcUtilsStringChangeMod.ChangeType & String] = js.native
     
-    /* "Delete" */ val Delete: typings.nrwlDevkit.stringChangeMod.ChangeType.Delete & String = js.native
+    /* "Delete" */ val Delete: typings.nrwlDevkit.srcUtilsStringChangeMod.ChangeType.Delete & String = js.native
     
-    /* "Insert" */ val Insert: typings.nrwlDevkit.stringChangeMod.ChangeType.Insert & String = js.native
+    /* "Insert" */ val Insert: typings.nrwlDevkit.srcUtilsStringChangeMod.ChangeType.Insert & String = js.native
   }
   
   inline def addDependenciesToPackageJson(

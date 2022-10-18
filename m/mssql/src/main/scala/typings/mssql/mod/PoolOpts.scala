@@ -1,7 +1,7 @@
 package typings.mssql.mod
 
-import typings.tarn.poolMod.Callback
-import typings.tarn.poolMod.CallbackOrPromise
+import typings.tarn.distPoolMod.Callback
+import typings.tarn.distPoolMod.CallbackOrPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsDownSquareFilledMod.DownSquareFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object downSquareFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/DownSquareFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/DownSquareFilled", JSImport.Default)
   @js.native
   val default: DownSquareFilledIconType = js.native
-  
-  @js.native
-  trait DownSquareFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_DownSquareFilledIconType: String = js.native
-  }
   
   type _To = DownSquareFilledIconType
   

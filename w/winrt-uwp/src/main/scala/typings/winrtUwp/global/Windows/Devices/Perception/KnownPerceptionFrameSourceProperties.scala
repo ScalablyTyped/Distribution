@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides static properties that are applicable to all types of frame sources. */
-@JSGlobal("Windows.Devices.Perception.KnownPerceptionFrameSourceProperties")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.KnownPerceptionFrameSourceProperties")
 @js.native
-abstract class KnownPerceptionFrameSourceProperties ()
+open class KnownPerceptionFrameSourceProperties ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.KnownPerceptionFrameSourceProperties
 object KnownPerceptionFrameSourceProperties {

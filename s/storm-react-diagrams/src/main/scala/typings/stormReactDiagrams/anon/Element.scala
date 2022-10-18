@@ -1,9 +1,9 @@
 package typings.stormReactDiagrams.anon
 
-import typings.stormReactDiagrams.baseEntityMod.BaseEntity
-import typings.stormReactDiagrams.baseEntityMod.BaseListener
-import typings.stormReactDiagrams.baseModelMod.BaseModel
-import typings.stormReactDiagrams.baseModelMod.BaseModelListener
+import typings.stormReactDiagrams.distSrcBaseEntityMod.BaseEntity
+import typings.stormReactDiagrams.distSrcBaseEntityMod.BaseListener
+import typings.stormReactDiagrams.distSrcModelsBaseModelMod.BaseModel
+import typings.stormReactDiagrams.distSrcModelsBaseModelMod.BaseModelListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

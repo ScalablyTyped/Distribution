@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "DiagramModel")
 @js.native
 open class DiagramModel ()
-  extends typings.stormReactDiagrams.diagramModelMod.DiagramModel
+  extends typings.stormReactDiagrams.distSrcModelsDiagramModelMod.DiagramModel

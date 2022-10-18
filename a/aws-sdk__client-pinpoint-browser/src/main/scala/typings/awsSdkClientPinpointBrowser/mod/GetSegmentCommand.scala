@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-pinpoint-browser", "GetSegmentCommand")
 @js.native
 open class GetSegmentCommand protected ()
-  extends typings.awsSdkClientPinpointBrowser.getSegmentCommandMod.GetSegmentCommand {
+  extends typings.awsSdkClientPinpointBrowser.commandsGetSegmentCommandMod.GetSegmentCommand {
   def this(input: GetSegmentInput) = this()
 }

@@ -76,6 +76,9 @@ open class InternalAbstractMeshDataInfo ()
   var _onlyForInstancesIntermediate: Boolean = js.native
   
   /* CompleteClass */
+  var _pointerOverDisableMeshTesting: Boolean = js.native
+  
+  /* CompleteClass */
   var _positions: Nullable[js.Array[typings.babylonjs.BABYLON.Vector3]] = js.native
   
   /* CompleteClass */

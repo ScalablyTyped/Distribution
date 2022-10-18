@@ -1,6 +1,6 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.protobufMod.EosPermissionLevel
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.EosPermissionLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

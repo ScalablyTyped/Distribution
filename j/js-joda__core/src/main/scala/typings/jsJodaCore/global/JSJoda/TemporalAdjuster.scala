@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("JSJoda.TemporalAdjuster")
+/* note: abstract class */ @JSGlobal("JSJoda.TemporalAdjuster")
 @js.native
-abstract class TemporalAdjuster ()
+open class TemporalAdjuster ()
   extends typings.jsJodaCore.mod.TemporalAdjuster

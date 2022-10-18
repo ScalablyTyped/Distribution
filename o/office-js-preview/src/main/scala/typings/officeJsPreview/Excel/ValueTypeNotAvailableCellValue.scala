@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For example, an #UNKNOWN! error which represents a type of rich value not known to this version of Excel.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait ValueTypeNotAvailableCellValue extends StObject {
   
@@ -25,8 +24,7 @@ trait ValueTypeNotAvailableCellValue extends StObject {
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: RangeValueType | Boolean | Double | Error | Empty | String
   
@@ -34,8 +32,7 @@ trait ValueTypeNotAvailableCellValue extends StObject {
     * Represents the value that would be returned by `Range.values` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: scala.Boolean | scala.Double | java.lang.String
   
@@ -43,8 +40,7 @@ trait ValueTypeNotAvailableCellValue extends StObject {
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: notAvailable | NotAvailable
 }

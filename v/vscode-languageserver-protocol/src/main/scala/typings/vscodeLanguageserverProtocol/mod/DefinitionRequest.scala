@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.DefinitionParams
-import typings.vscodeLanguageserverProtocol.protocolMod.DefinitionRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.DefinitionParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.DefinitionRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashdefinition
 import typings.vscodeLanguageserverTypes.mod.Definition
 import org.scalablytyped.runtime.StObject
@@ -12,7 +12,7 @@ object DefinitionRequest {
   
   @JSImport("vscode-languageserver-protocol", "DefinitionRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "DefinitionRequest.method")
   @js.native
@@ -20,7 +20,7 @@ object DefinitionRequest {
   
   @JSImport("vscode-languageserver-protocol", "DefinitionRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     DefinitionParams, 
     Definition | js.Array[typings.vscodeLanguageserverTypes.mod.LocationLink] | Null, 
     js.Array[

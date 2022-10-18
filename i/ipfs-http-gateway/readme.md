@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-http-gateway
 
-Typings are for version 0.1.2
+Typings are for version 0.11.1
 
 ## Library description:
 JavaScript implementation of the IPFS specification
@@ -10,10 +10,10 @@ JavaScript implementation of the IPFS specification
 | ------------------ | :-------------: |
 | Full name          | ipfs-http-gateway |
 | Keywords           | IPFS |
-| # releases         | 58 |
-| # dependents       | 2 |
-| # downloads        | 23208 |
-| # stars            | 0 |
+| # releases         | 250 |
+| # dependents       | 0.0 |
+| # downloads        | 21416.333333333332 |
+| # stars            | 7055.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-gateway#readme)

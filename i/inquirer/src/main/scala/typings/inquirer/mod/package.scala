@@ -1,10 +1,10 @@
 package typings.inquirer.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.inquirer.anon.IsFinal
 import typings.inquirer.inquirerStrings.`type`
 import typings.inquirer.mod.^
 import typings.inquirer.mod.inquirer.prompts.PromptConstructor
+import typings.rxjs.mod.Observable_
 import typings.std.Extract
 import typings.std.Partial
 import typings.std.Record
@@ -64,9 +64,7 @@ type PromptModuleCreator = js.Function1[/* opt */ js.UndefOr[StreamOptions], Pro
 
 type QuestionAnswer[T /* <: Answers */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: {  name :K,   answer :T[K]}}[keyof T] */ js.Any
 
-type QuestionCollection[T /* <: Answers */] = DistinctQuestion[T] | js.Array[DistinctQuestion[T]] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<DistinctQuestion<T>> */ Any) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in inquirer.inquirer.KeyUnion<T> ]:? inquirer.inquirer.DistinctQuestion<T> & {  name :never | undefined}}
-  */ typings.inquirer.inquirerStrings.QuestionCollection & TopLevel[Any])
+type QuestionCollection[T /* <: Answers */] = DistinctQuestion[T] | js.Array[DistinctQuestion[T]] | Observable_[DistinctQuestion[T]] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in inquirer.inquirer.KeyUnion<T> ]:? inquirer.inquirer.DistinctQuestion<T> & {  name :never | undefined}} */ js.Any)
 
 type QuestionTypeName = /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.DistinctQuestion<inquirer.inquirer.Answers>['type'] */ js.Any
 
@@ -84,8 +82,6 @@ type RestoreFunction = js.Function0[Unit]
 
 type Transformer[T /* <: Answers */] = js.UndefOr[
 js.Function3[/* input */ Any, /* answers */ T, /* flags */ IsFinal, String | js.Promise[String]]]
-
-type UnionToIntersection[U] = Any
 
 type Validator[T /* <: Answers */] = js.UndefOr[
 js.Function2[

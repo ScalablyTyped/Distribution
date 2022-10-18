@@ -41,7 +41,7 @@ object anon {
   
   trait Assets extends StObject {
     
-    var assets: Favicon
+    var assets: Css
     
     var outputName: String
     
@@ -49,14 +49,14 @@ object anon {
   }
   object Assets {
     
-    inline def apply(assets: Favicon, outputName: String, plugin: HtmlWebpackPlugin): Assets = {
+    inline def apply(assets: Css, outputName: String, plugin: HtmlWebpackPlugin): Assets = {
       val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[Assets]
     }
     
     extension [Self <: Assets](x: Self) {
       
-      inline def setAssets(value: Favicon): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+      inline def setAssets(value: Css): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
       inline def setOutputName(value: String): Self = StObject.set(x, "outputName", value.asInstanceOf[js.Any])
       
@@ -69,15 +69,58 @@ object anon {
     var bodyTags: js.Array[HtmlTagObject]
     
     var headTags: js.Array[HtmlTagObject]
+    
+    var outputName: String
+    
+    var plugin: HtmlWebpackPlugin
+    
+    var publicPath: String
   }
   object BodyTags {
     
-    inline def apply(bodyTags: js.Array[HtmlTagObject], headTags: js.Array[HtmlTagObject]): BodyTags = {
-      val __obj = js.Dynamic.literal(bodyTags = bodyTags.asInstanceOf[js.Any], headTags = headTags.asInstanceOf[js.Any])
+    inline def apply(
+      bodyTags: js.Array[HtmlTagObject],
+      headTags: js.Array[HtmlTagObject],
+      outputName: String,
+      plugin: HtmlWebpackPlugin,
+      publicPath: String
+    ): BodyTags = {
+      val __obj = js.Dynamic.literal(bodyTags = bodyTags.asInstanceOf[js.Any], headTags = headTags.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], publicPath = publicPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[BodyTags]
     }
     
     extension [Self <: BodyTags](x: Self) {
+      
+      inline def setBodyTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "bodyTags", value.asInstanceOf[js.Any])
+      
+      inline def setBodyTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "bodyTags", js.Array(value*))
+      
+      inline def setHeadTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "headTags", value.asInstanceOf[js.Any])
+      
+      inline def setHeadTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "headTags", js.Array(value*))
+      
+      inline def setOutputName(value: String): Self = StObject.set(x, "outputName", value.asInstanceOf[js.Any])
+      
+      inline def setPlugin(value: HtmlWebpackPlugin): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait BodyTagsHeadTags extends StObject {
+    
+    var bodyTags: js.Array[HtmlTagObject]
+    
+    var headTags: js.Array[HtmlTagObject]
+  }
+  object BodyTagsHeadTags {
+    
+    inline def apply(bodyTags: js.Array[HtmlTagObject], headTags: js.Array[HtmlTagObject]): BodyTagsHeadTags = {
+      val __obj = js.Dynamic.literal(bodyTags = bodyTags.asInstanceOf[js.Any], headTags = headTags.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BodyTagsHeadTags]
+    }
+    
+    extension [Self <: BodyTagsHeadTags](x: Self) {
       
       inline def setBodyTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "bodyTags", value.asInstanceOf[js.Any])
       
@@ -202,26 +245,26 @@ object anon {
   
   trait Files extends StObject {
     
-    var files: Css
+    var files: Favicon
     
     var options: Options
     
-    var tags: BodyTags
+    var tags: BodyTagsHeadTags
   }
   object Files {
     
-    inline def apply(files: Css, options: Options, tags: BodyTags): Files = {
+    inline def apply(files: Favicon, options: Options, tags: BodyTagsHeadTags): Files = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[Files]
     }
     
     extension [Self <: Files](x: Self) {
       
-      inline def setFiles(value: Css): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Favicon): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setTags(value: BodyTags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: BodyTagsHeadTags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -231,22 +274,22 @@ object anon {
     
     var headTags: js.Array[HtmlTagObject]
     
+    var html: String
+    
     var outputName: String
     
     var plugin: HtmlWebpackPlugin
-    
-    var publicPath: String
   }
   object HeadTags {
     
     inline def apply(
       bodyTags: js.Array[HtmlTagObject],
       headTags: js.Array[HtmlTagObject],
+      html: String,
       outputName: String,
-      plugin: HtmlWebpackPlugin,
-      publicPath: String
+      plugin: HtmlWebpackPlugin
     ): HeadTags = {
-      val __obj = js.Dynamic.literal(bodyTags = bodyTags.asInstanceOf[js.Any], headTags = headTags.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], publicPath = publicPath.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bodyTags = bodyTags.asInstanceOf[js.Any], headTags = headTags.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeadTags]
     }
     
@@ -260,19 +303,15 @@ object anon {
       
       inline def setHeadTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "headTags", js.Array(value*))
       
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      
       inline def setOutputName(value: String): Self = StObject.set(x, "outputName", value.asInstanceOf[js.Any])
       
       inline def setPlugin(value: HtmlWebpackPlugin): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
-      
-      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
     }
   }
   
   trait Html extends StObject {
-    
-    var bodyTags: js.Array[HtmlTagObject]
-    
-    var headTags: js.Array[HtmlTagObject]
     
     var html: String
     
@@ -282,26 +321,12 @@ object anon {
   }
   object Html {
     
-    inline def apply(
-      bodyTags: js.Array[HtmlTagObject],
-      headTags: js.Array[HtmlTagObject],
-      html: String,
-      outputName: String,
-      plugin: HtmlWebpackPlugin
-    ): Html = {
-      val __obj = js.Dynamic.literal(bodyTags = bodyTags.asInstanceOf[js.Any], headTags = headTags.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
+    inline def apply(html: String, outputName: String, plugin: HtmlWebpackPlugin): Html = {
+      val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[Html]
     }
     
     extension [Self <: Html](x: Self) {
-      
-      inline def setBodyTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "bodyTags", value.asInstanceOf[js.Any])
-      
-      inline def setBodyTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "bodyTags", js.Array(value*))
-      
-      inline def setHeadTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "headTags", value.asInstanceOf[js.Any])
-      
-      inline def setHeadTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "headTags", js.Array(value*))
       
       inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -344,43 +369,18 @@ object anon {
   
   trait OutputName extends StObject {
     
-    var html: String
-    
     var outputName: String
     
     var plugin: HtmlWebpackPlugin
   }
   object OutputName {
     
-    inline def apply(html: String, outputName: String, plugin: HtmlWebpackPlugin): OutputName = {
-      val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
+    inline def apply(outputName: String, plugin: HtmlWebpackPlugin): OutputName = {
+      val __obj = js.Dynamic.literal(outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutputName]
     }
     
     extension [Self <: OutputName](x: Self) {
-      
-      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
-      
-      inline def setOutputName(value: String): Self = StObject.set(x, "outputName", value.asInstanceOf[js.Any])
-      
-      inline def setPlugin(value: HtmlWebpackPlugin): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Plugin extends StObject {
-    
-    var outputName: String
-    
-    var plugin: HtmlWebpackPlugin
-  }
-  object Plugin {
-    
-    inline def apply(outputName: String, plugin: HtmlWebpackPlugin): Plugin = {
-      val __obj = js.Dynamic.literal(outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Plugin]
-    }
-    
-    extension [Self <: Plugin](x: Self) {
       
       inline def setOutputName(value: String): Self = StObject.set(x, "outputName", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.panoramaToCubemapMod.CubeMapInfo
+import typings.babylonjs.miscHighDynamicRangePanoramaToCubemapMod.CubeMapInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PanoramaToCubeMapTools")
 @js.native
 open class PanoramaToCubeMapTools ()
-  extends typings.babylonjs.legacyMod.PanoramaToCubeMapTools
+  extends typings.babylonjs.legacyLegacyMod.PanoramaToCubeMapTools
 /* static members */
 object PanoramaToCubeMapTools {
   

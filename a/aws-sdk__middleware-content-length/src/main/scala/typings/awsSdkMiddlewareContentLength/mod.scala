@@ -1,10 +1,10 @@
 package typings.awsSdkMiddlewareContentLength
 
 import typings.awsSdkMiddlewareContentLength.anon.BodyLengthChecker
-import typings.awsSdkTypes.middlewareMod.BuildHandlerOptions
-import typings.awsSdkTypes.middlewareMod.BuildMiddleware
-import typings.awsSdkTypes.middlewareMod.Pluggable
-import typings.awsSdkTypes.utilMod.BodyLengthCalculator
+import typings.awsSdkTypes.distTypesMiddlewareMod.BuildHandlerOptions
+import typings.awsSdkTypes.distTypesMiddlewareMod.BuildMiddleware
+import typings.awsSdkTypes.distTypesMiddlewareMod.Pluggable
+import typings.awsSdkTypes.distTypesUtilMod.BodyLengthCalculator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

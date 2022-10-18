@@ -1,22 +1,23 @@
 package typings.firebaseFirestore.anon
 
+import typings.firebaseFirestore.distPackagesFirestoreSrcModelDocumentKeyMod.DocumentKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `45` extends StObject {
   
-  var mapValue: typings.firebaseFirestore.distPrivateMod.MapValue
+  var key: DocumentKey
 }
 object `45` {
   
-  inline def apply(mapValue: typings.firebaseFirestore.distPrivateMod.MapValue): `45` = {
-    val __obj = js.Dynamic.literal(mapValue = mapValue.asInstanceOf[js.Any])
+  inline def apply(key: DocumentKey): `45` = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[`45`]
   }
   
   extension [Self <: `45`](x: Self) {
     
-    inline def setMapValue(value: typings.firebaseFirestore.distPrivateMod.MapValue): Self = StObject.set(x, "mapValue", value.asInstanceOf[js.Any])
+    inline def setKey(value: DocumentKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

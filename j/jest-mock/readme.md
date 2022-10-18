@@ -1,19 +1,19 @@
 
 # Scala.js typings for jest-mock
 
-Typings are for version 24.9.0
+Typings are for version 29.2.0
 
 ## Library description:
-## API
+**Note:** More details on user side API can be found in [Jest documentation](https://jestjs.io/docs/mock-function-api).
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jest-mock |
 | Keywords           | - |
-| # releases         | 38 |
-| # dependents       | 98 |
-| # downloads        | 497058420 |
-| # stars            | 1 |
+| # releases         | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 8.330344533333333E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

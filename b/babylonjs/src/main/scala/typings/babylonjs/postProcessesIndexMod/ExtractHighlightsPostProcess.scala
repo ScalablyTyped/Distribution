@@ -1,8 +1,8 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "ExtractHighlightsPostProcess")
 @js.native
 open class ExtractHighlightsPostProcess protected ()
-  extends typings.babylonjs.extractHighlightsPostProcessMod.ExtractHighlightsPostProcess {
+  extends typings.babylonjs.postProcessesExtractHighlightsPostProcessMod.ExtractHighlightsPostProcess {
   def this(
     name: String,
     options: Double | PostProcessOptions,

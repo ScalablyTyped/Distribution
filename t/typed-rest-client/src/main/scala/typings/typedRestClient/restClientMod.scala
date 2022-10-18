@@ -1,6 +1,6 @@
 package typings.typedRestClient
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.typedRestClient.httpClientMod.HttpClient
 import typings.typedRestClient.httpClientMod.HttpClientResponse
 import typings.typedRestClient.interfacesMod.IHeaders
@@ -171,8 +171,8 @@ object restClientMod {
     def update[T](resource: String, resources: Any): js.Promise[IRestResponse[T]] = js.native
     def update[T](resource: String, resources: Any, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
     
-    def uploadStream[T](verb: String, requestUrl: String, stream: ReadableStream[Any]): js.Promise[IRestResponse[T]] = js.native
-    def uploadStream[T](verb: String, requestUrl: String, stream: ReadableStream[Any], options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+    def uploadStream[T](verb: String, requestUrl: String, stream: ReadableStream): js.Promise[IRestResponse[T]] = js.native
+    def uploadStream[T](verb: String, requestUrl: String, stream: ReadableStream, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
     
     var versionParam: String = js.native
   }

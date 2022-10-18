@@ -3,7 +3,7 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.anon.PartialIPanelState
 import typings.officeUiFabricReact.anon.ReadonlyIPanelProps
 import typings.officeUiFabricReact.anon.ReadonlyIPanelState
-import typings.officeUiFabricReact.panelTypesMod.IPanelProps
+import typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.IPanelProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +18,7 @@ object libPanelMod {
   @JSImport("office-ui-fabric-react/lib/Panel", "PanelBase")
   @js.native
   open class PanelBase protected ()
-    extends typings.officeUiFabricReact.panelMod.PanelBase {
+    extends typings.officeUiFabricReact.libComponentsPanelMod.PanelBase {
     def this(props: IPanelProps) = this()
   }
   /* static members */
@@ -41,25 +41,27 @@ object libPanelMod {
   object PanelType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.panelTypesMod.PanelType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.PanelType & Double
+      ] = js.native
     
-    /* 7 */ val custom: typings.officeUiFabricReact.panelTypesMod.PanelType.custom & Double = js.native
+    /* 7 */ val custom: typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.PanelType.custom & Double = js.native
     
-    /* 8 */ val customNear: typings.officeUiFabricReact.panelTypesMod.PanelType.customNear & Double = js.native
+    /* 8 */ val customNear: typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.PanelType.customNear & Double = js.native
     
-    /* 6 */ val extraLarge: typings.officeUiFabricReact.panelTypesMod.PanelType.extraLarge & Double = js.native
+    /* 6 */ val extraLarge: typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.PanelType.extraLarge & Double = js.native
     
-    /* 4 */ val large: typings.officeUiFabricReact.panelTypesMod.PanelType.large & Double = js.native
+    /* 4 */ val large: typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.PanelType.large & Double = js.native
     
-    /* 5 */ val largeFixed: typings.officeUiFabricReact.panelTypesMod.PanelType.largeFixed & Double = js.native
+    /* 5 */ val largeFixed: typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.PanelType.largeFixed & Double = js.native
     
-    /* 3 */ val medium: typings.officeUiFabricReact.panelTypesMod.PanelType.medium & Double = js.native
+    /* 3 */ val medium: typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.PanelType.medium & Double = js.native
     
-    /* 1 */ val smallFixedFar: typings.officeUiFabricReact.panelTypesMod.PanelType.smallFixedFar & Double = js.native
+    /* 1 */ val smallFixedFar: typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.PanelType.smallFixedFar & Double = js.native
     
-    /* 2 */ val smallFixedNear: typings.officeUiFabricReact.panelTypesMod.PanelType.smallFixedNear & Double = js.native
+    /* 2 */ val smallFixedNear: typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.PanelType.smallFixedNear & Double = js.native
     
-    /* 0 */ val smallFluid: typings.officeUiFabricReact.panelTypesMod.PanelType.smallFluid & Double = js.native
+    /* 0 */ val smallFluid: typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.PanelType.smallFluid & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Panel", "PanelVisibilityState")
@@ -67,14 +69,16 @@ object libPanelMod {
   object PanelVisibilityState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsPanelPanelDotbaseMod.PanelVisibilityState & Double
+      ] = js.native
     
-    /* 3 */ val animatingClosed: typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState.animatingClosed & Double = js.native
+    /* 3 */ val animatingClosed: typings.officeUiFabricReact.libComponentsPanelPanelDotbaseMod.PanelVisibilityState.animatingClosed & Double = js.native
     
-    /* 1 */ val animatingOpen: typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState.animatingOpen & Double = js.native
+    /* 1 */ val animatingOpen: typings.officeUiFabricReact.libComponentsPanelPanelDotbaseMod.PanelVisibilityState.animatingOpen & Double = js.native
     
-    /* 0 */ val closed: typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState.closed & Double = js.native
+    /* 0 */ val closed: typings.officeUiFabricReact.libComponentsPanelPanelDotbaseMod.PanelVisibilityState.closed & Double = js.native
     
-    /* 2 */ val open: typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState.open & Double = js.native
+    /* 2 */ val open: typings.officeUiFabricReact.libComponentsPanelPanelDotbaseMod.PanelVisibilityState.open & Double = js.native
   }
 }

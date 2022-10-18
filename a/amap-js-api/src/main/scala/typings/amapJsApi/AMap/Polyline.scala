@@ -1,8 +1,5 @@
 package typings.amapJsApi.AMap
 
-import typings.amapJsApi.AMap.Polyline.Options
-import typings.amapJsApi.anon.LngLatcontrolPointsArrayL
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,19 +17,27 @@ trait Polyline[ExtraData]
   /**
     * 获取折线路径的节点数组
     */
-  def getPath(): js.Array[LngLat | LngLatcontrolPointsArrayL] = js.native
+  def getPath(): /* import warning: importer.ImportType#apply Failed type conversion: this extends / * Inlined amap-js-api.AMap.Omit<amap-js-api.AMap.BezierCurve<any>, keyof amap-js-api.AMap.Polyline<any>> * /
+  {readonly getInterpolateLngLats (): std.Array<amap-js-api.AMap.LngLat>,   getInterpolateLngLats :(): std.Array<amap-js-api.AMap.LngLat>, readonly getSerializedPath (): std.Array<std.Array<number>>,   getSerializedPath :(): std.Array<std.Array<number>>} ? std.Array</ * Inlined amap-js-api.AMap.LngLat & {  controlPoints :std.Array<amap-js-api.AMap.LngLat>} * /
+  {offset (east : number, north : number): amap-js-api.AMap.LngLat, distance (lnglat : amap-js-api.AMap.LngLat): number, distance (lnglat : std.Array<amap-js-api.AMap.LngLat>): number, getLng (): number, getLat (): number, equals (lnglat : amap-js-api.AMap.LngLat): boolean, toString (): string, add (lnglat : amap-js-api.AMap.LngLat): amap-js-api.AMap.LngLat, add (lnglat : amap-js-api.AMap.LngLat, noAutofix : boolean): amap-js-api.AMap.LngLat, subtract (lnglat : amap-js-api.AMap.LngLat): amap-js-api.AMap.LngLat, subtract (lnglat : amap-js-api.AMap.LngLat, noAutofix : boolean): amap-js-api.AMap.LngLat, divideBy (num : number): amap-js-api.AMap.LngLat, divideBy (num : number, noAutofix : boolean): amap-js-api.AMap.LngLat, multiplyBy (num : number): amap-js-api.AMap.LngLat, multiplyBy (num : number, noAutofix : boolean): amap-js-api.AMap.LngLat,   controlPoints :std.Array<amap-js-api.AMap.LngLat>}> : std.Array<amap-js-api.AMap.LngLat> */ js.Any = js.native
   
   /**
     * 设置线的属性
     * @param options 属性
     */
-  def setOptions(options: Options[ExtraData] | Partial[typings.amapJsApi.AMap.BezierCurve.Options[ExtraData]]): Unit = js.native
+  def setOptions(
+    options: /* import warning: importer.ImportType#apply Failed type conversion: this extends / * Inlined amap-js-api.AMap.Omit<amap-js-api.AMap.BezierCurve<any>, keyof amap-js-api.AMap.Polyline<any>> * /
+  {readonly getInterpolateLngLats (): std.Array<amap-js-api.AMap.LngLat>,   getInterpolateLngLats :(): std.Array<amap-js-api.AMap.LngLat>, readonly getSerializedPath (): std.Array<std.Array<number>>,   getSerializedPath :(): std.Array<std.Array<number>>} ? std.Partial<amap-js-api.AMap.BezierCurve.Options<ExtraData>> : amap-js-api.AMap.Polyline.Options<ExtraData> */ js.Any
+  ): Unit = js.native
   
   /**
     * 设置组成该折线的节点数组
     * @param path 节点数组
     */
-  def setPath(path: js.Array[(js.Array[Double | String | (js.Array[String | Double])]) | LocationValue]): Unit = js.native
+  def setPath(
+    path: /* import warning: importer.ImportType#apply Failed type conversion: this extends / * Inlined amap-js-api.AMap.Omit<amap-js-api.AMap.BezierCurve<any>, keyof amap-js-api.AMap.Polyline<any>> * /
+  {readonly getInterpolateLngLats (): std.Array<amap-js-api.AMap.LngLat>,   getInterpolateLngLats :(): std.Array<amap-js-api.AMap.LngLat>, readonly getSerializedPath (): std.Array<std.Array<number>>,   getSerializedPath :(): std.Array<std.Array<number>>} ? std.Array<std.Array<number | string | std.Array<string | number>>> : std.Array<amap-js-api.AMap.LocationValue> */ js.Any
+  ): Unit = js.native
 }
 object Polyline {
   

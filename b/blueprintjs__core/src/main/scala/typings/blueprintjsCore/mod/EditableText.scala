@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.editableTextMod.EditableTextProps
+import typings.blueprintjsCore.libEsmComponentsEditableTextEditableTextMod.EditableTextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "EditableText")
 @js.native
 open class EditableText protected ()
-  extends typings.blueprintjsCore.componentsMod.EditableText {
+  extends typings.blueprintjsCore.libEsmComponentsMod.EditableText {
   def this(props: EditableTextProps) = this()
   def this(props: EditableTextProps, context: Any) = this()
 }

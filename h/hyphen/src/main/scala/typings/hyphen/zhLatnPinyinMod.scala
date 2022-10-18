@@ -1,19 +1,31 @@
 package typings.hyphen
 
-import org.scalablytyped.runtime.Shortcut
+import typings.hyphen.mod.HyphenationFunctionAsync
+import typings.hyphen.mod.HyphenationFunctionSync
 import typings.hyphen.mod.PatternsDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object zhLatnPinyinMod extends Shortcut {
+object zhLatnPinyinMod {
   
-  @JSImport("hyphen/patterns/zh-latn-pinyin", JSImport.Namespace)
+  @JSImport("hyphen/zh-latn-pinyin", "hyphenate")
   @js.native
-  val ^ : PatternsDefinition = js.native
+  val hyphenate: HyphenationFunctionAsync = js.native
   
-  type _To = PatternsDefinition
+  @JSImport("hyphen/zh-latn-pinyin", "hyphenateHTML")
+  @js.native
+  val hyphenateHTML: HyphenationFunctionAsync = js.native
   
-  /* This means you don't have to write `^`, but can instead just say `zhLatnPinyinMod.foo` */
-  override def _to: PatternsDefinition = ^
+  @JSImport("hyphen/zh-latn-pinyin", "hyphenateHTMLSync")
+  @js.native
+  val hyphenateHTMLSync: HyphenationFunctionSync = js.native
+  
+  @JSImport("hyphen/zh-latn-pinyin", "hyphenateSync")
+  @js.native
+  val hyphenateSync: HyphenationFunctionSync = js.native
+  
+  @JSImport("hyphen/zh-latn-pinyin", "patterns")
+  @js.native
+  val patterns: PatternsDefinition = js.native
 }

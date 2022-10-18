@@ -1,31 +1,24 @@
 package typings.tuyaPanelKit.anon
 
-import typings.std.Extract
-import typings.tuyaPanelKit.typesMod.EventMapBase
+import typings.tuyaPanelKit.tuyaPanelKitStrings.drawer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `6`[EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */] extends StObject {
+trait `6` extends StObject {
   
-  var target: js.UndefOr[String] = js.undefined
-  
-  var `type`: EventName
+  var `type`: drawer
 }
 object `6` {
   
-  inline def apply[EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */](`type`: EventName): `6`[EventName, EventMap] = {
+  inline def apply(): `6` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`6`[EventName, EventMap]]
+    __obj.updateDynamic("type")("drawer")
+    __obj.asInstanceOf[`6`]
   }
   
-  extension [Self <: `6`[?, ?], EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */](x: Self & (`6`[EventName, EventMap])) {
+  extension [Self <: `6`](x: Self) {
     
-    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-    
-    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
-    
-    inline def setType(value: EventName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: drawer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

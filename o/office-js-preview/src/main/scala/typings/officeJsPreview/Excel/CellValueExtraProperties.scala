@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * These extra properties may appear on a `CellValue` and provide information about that `CellValue`, but the extra properties are not part of the value in the cell.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait CellValueExtraProperties extends StObject {
   
@@ -19,8 +18,7 @@ trait CellValueExtraProperties extends StObject {
     * The default value is true.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var writable: js.UndefOr[Boolean] = js.undefined
   
@@ -29,8 +27,7 @@ trait CellValueExtraProperties extends StObject {
     * Note: This string is only available if `writable` is specified as false.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var writableNote: js.UndefOr[String] = js.undefined
 }

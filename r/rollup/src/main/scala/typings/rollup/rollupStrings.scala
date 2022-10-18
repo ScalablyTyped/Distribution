@@ -7,6 +7,7 @@ import typings.rollup.mod.FirstPluginHooks
 import typings.rollup.mod.GeneratedCodePreset
 import typings.rollup.mod.InputPluginHooks
 import typings.rollup.mod.InternalModuleFormat
+import typings.rollup.mod.InteropType
 import typings.rollup.mod.ModuleFormat
 import typings.rollup.mod.OutputPluginHooks
 import typings.rollup.mod.ParallelPluginHooks
@@ -15,7 +16,6 @@ import typings.rollup.mod.RollupWatchHooks
 import typings.rollup.mod.SequentialPluginHooks
 import typings.rollup.mod.SyncPluginHooks
 import typings.rollup.mod.TreeshakingPreset
-import typings.rollup.mod._InteropType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +25,7 @@ object rollupStrings {
   @js.native
   sealed trait default
     extends StObject
-       with _InteropType
+       with InteropType
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
@@ -43,10 +43,6 @@ object rollupStrings {
   @js.native
   sealed trait ERROR extends StObject
   inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
-  
-  @js.native
-  sealed trait PartialNull extends StObject
-  inline def PartialNull: PartialNull = "PartialNull".asInstanceOf[PartialNull]
   
   @js.native
   sealed trait START extends StObject
@@ -92,7 +88,7 @@ object rollupStrings {
   @js.native
   sealed trait auto
     extends StObject
-       with _InteropType
+       with InteropType
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
@@ -152,6 +148,12 @@ object rollupStrings {
   inline def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
   
   @js.native
+  sealed trait compat
+    extends StObject
+       with InteropType
+  inline def compat: compat = "compat".asInstanceOf[compat]
+  
+  @js.native
   sealed trait create
     extends StObject
        with ChangeEvent
@@ -160,7 +162,7 @@ object rollupStrings {
   @js.native
   sealed trait defaultOnly
     extends StObject
-       with _InteropType
+       with InteropType
   inline def defaultOnly: defaultOnly = "defaultOnly".asInstanceOf[defaultOnly]
   
   @js.native
@@ -191,7 +193,7 @@ object rollupStrings {
   @js.native
   sealed trait esModule
     extends StObject
-       with _InteropType
+       with InteropType
   inline def esModule: esModule = "esModule".asInstanceOf[esModule]
   
   @js.native
@@ -224,6 +226,10 @@ object rollupStrings {
   @js.native
   sealed trait hidden extends StObject
   inline def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @js.native
+  sealed trait `if-default-prop` extends StObject
+  inline def `if-default-prop`: `if-default-prop` = "if-default-prop".asInstanceOf[`if-default-prop`]
   
   @js.native
   sealed trait ifRelativeSource extends StObject
@@ -387,14 +393,6 @@ object rollupStrings {
        with OutputPluginHooks
        with ParallelPluginHooks
   inline def renderStart: renderStart = "renderStart".asInstanceOf[renderStart]
-  
-  @js.native
-  sealed trait resolveAssetUrl
-    extends StObject
-       with FirstPluginHooks
-       with OutputPluginHooks
-       with SyncPluginHooks
-  inline def resolveAssetUrl: resolveAssetUrl = "resolveAssetUrl".asInstanceOf[resolveAssetUrl]
   
   @js.native
   sealed trait resolveDynamicImport

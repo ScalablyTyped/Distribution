@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsSlackOutlinedMod.SlackOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slackOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/SlackOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/SlackOutlined", JSImport.Default)
   @js.native
   val default: SlackOutlinedIconType = js.native
-  
-  @js.native
-  trait SlackOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_SlackOutlinedIconType: String = js.native
-  }
   
   type _To = SlackOutlinedIconType
   

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "FollowCameraPointersInput")
 @js.native
 open class FollowCameraPointersInput ()
-  extends typings.babylonjs.legacyMod.FollowCameraPointersInput
+  extends typings.babylonjs.legacyLegacyMod.FollowCameraPointersInput

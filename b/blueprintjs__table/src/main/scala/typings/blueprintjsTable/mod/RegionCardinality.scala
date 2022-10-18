@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object RegionCardinality extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.blueprintjsTable.esmRegionsMod.RegionCardinality & String] = js.native
+  def apply(value: String): js.UndefOr[typings.blueprintjsTable.libEsmRegionsMod.RegionCardinality & String] = js.native
   
-  /* "cells" */ val CELLS: typings.blueprintjsTable.esmRegionsMod.RegionCardinality.CELLS & String = js.native
+  /* "cells" */ val CELLS: typings.blueprintjsTable.libEsmRegionsMod.RegionCardinality.CELLS & String = js.native
   
-  /* "full-columns" */ val FULL_COLUMNS: typings.blueprintjsTable.esmRegionsMod.RegionCardinality.FULL_COLUMNS & String = js.native
+  /* "full-columns" */ val FULL_COLUMNS: typings.blueprintjsTable.libEsmRegionsMod.RegionCardinality.FULL_COLUMNS & String = js.native
   
-  /* "full-rows" */ val FULL_ROWS: typings.blueprintjsTable.esmRegionsMod.RegionCardinality.FULL_ROWS & String = js.native
+  /* "full-rows" */ val FULL_ROWS: typings.blueprintjsTable.libEsmRegionsMod.RegionCardinality.FULL_ROWS & String = js.native
   
-  /* "full-table" */ val FULL_TABLE: typings.blueprintjsTable.esmRegionsMod.RegionCardinality.FULL_TABLE & String = js.native
+  /* "full-table" */ val FULL_TABLE: typings.blueprintjsTable.libEsmRegionsMod.RegionCardinality.FULL_TABLE & String = js.native
 }

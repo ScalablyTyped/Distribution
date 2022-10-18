@@ -1,5 +1,6 @@
 package typings.chromeLauncher.anon
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.anon.ObjectEncodingOptionsflag
 import typings.node.anon.encodingBufferEncodingflaEncoding
 import typings.node.anon.encodingnullundefinedflagEncoding
@@ -15,64 +16,36 @@ trait TypeofreadFile extends StObject {
   
   def apply(
     path: PathOrFileDescriptor,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* data */ Buffer, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]
   ): Unit = js.native
   def apply(
     path: PathOrFileDescriptor,
     options: Null,
-    callback: js.Function2[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      (/* data */ Buffer) | String, 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
   ): Unit = js.native
   def apply(
     path: PathOrFileDescriptor,
     options: Unit,
-    callback: js.Function2[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      (/* data */ Buffer) | String, 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
   ): Unit = js.native
   def apply(
     path: PathOrFileDescriptor,
     options: ObjectEncodingOptionsflag,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* data */ String | Buffer, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String | Buffer, Unit]
   ): Unit = js.native
   def apply(
     path: PathOrFileDescriptor,
     options: encodingBufferEncodingflaEncoding,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* data */ String, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String, Unit]
   ): Unit = js.native
   def apply(
     path: PathOrFileDescriptor,
     options: encodingnullundefinedflagEncoding,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* data */ Buffer, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]
   ): Unit = js.native
   def apply(
     path: PathOrFileDescriptor,
     options: BufferEncoding,
-    callback: js.Function2[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      Buffer | (/* data */ String), 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* data */ String), Unit]
   ): Unit = js.native
 }

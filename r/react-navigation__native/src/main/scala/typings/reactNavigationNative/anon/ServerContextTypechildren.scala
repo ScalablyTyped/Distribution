@@ -3,7 +3,7 @@ package typings.reactNavigationNative.anon
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.reactNavigationNative.typesMod.ServerContainerRef
+import typings.reactNavigationNative.libTypescriptSrcTypesMod.ServerContainerRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

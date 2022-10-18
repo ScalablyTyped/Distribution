@@ -55,7 +55,7 @@ object util {
   @js.native
   /** Constructs a new event emitter instance. */
   open class EventEmitter ()
-    extends typings.googleGax.fallbackMod.protobufMinimal.util.EventEmitter
+    extends typings.googleGax.buildSrcFallbackMod.protobufMinimal.util.EventEmitter
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("google-gax", "fallback.protobufMinimal.util.Long")
@@ -86,7 +86,7 @@ object util {
   @JSImport("google-gax", "fallback.protobufMinimal.util.LongBits")
   @js.native
   open class LongBits protected ()
-    extends typings.googleGax.fallbackMod.protobufMinimal.util.LongBits {
+    extends typings.googleGax.buildSrcFallbackMod.protobufMinimal.util.LongBits {
     /**
       * Constructs new long bits.
       * @param lo Low 32 bits, unsigned
@@ -148,7 +148,7 @@ object util {
   @JSImport("google-gax", "fallback.protobufMinimal.util.ProtocolError")
   @js.native
   open class ProtocolError[T /* <: typings.protobufjs.mod.Message[T] */] protected ()
-    extends typings.googleGax.fallbackMod.protobufMinimal.util.ProtocolError[T] {
+    extends typings.googleGax.buildSrcFallbackMod.protobufMinimal.util.ProtocolError[T] {
     /**
       * Constructs a new protocol error.
       * @param message Error message

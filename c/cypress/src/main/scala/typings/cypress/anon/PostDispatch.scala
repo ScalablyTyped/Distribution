@@ -2,20 +2,25 @@ package typings.cypress.anon
 
 import typings.cypress.JQuery.Event
 import typings.cypress.JQuery._SpecialEventHook
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PostDispatch[TTarget]
-  extends _SpecialEventHook[TTarget, js.Any] {
+  extends StObject
+     with _SpecialEventHook[TTarget, Any] {
+  
   def postDispatch(event: Event): Unit
 }
-
 object PostDispatch {
-  @scala.inline
-  def apply[TTarget](postDispatch: Event => Unit): PostDispatch[TTarget] = {
+  
+  inline def apply[TTarget](postDispatch: Event => Unit): PostDispatch[TTarget] = {
     val __obj = js.Dynamic.literal(postDispatch = js.Any.fromFunction1(postDispatch))
     __obj.asInstanceOf[PostDispatch[TTarget]]
   }
+  
+  extension [Self <: PostDispatch[?], TTarget](x: Self & PostDispatch[TTarget]) {
+    
+    inline def setPostDispatch(value: Event => Unit): Self = StObject.set(x, "postDispatch", js.Any.fromFunction1(value))
+  }
 }
-

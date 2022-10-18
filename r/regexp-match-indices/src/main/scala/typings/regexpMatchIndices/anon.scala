@@ -1,6 +1,5 @@
 package typings.regexpMatchIndices
 
-import typings.regexpMatchIndices.astMod.AstNode
 import typings.regexpMatchIndices.regexpMatchIndicesBooleans.`false`
 import typings.regexpMatchIndices.regexpMatchIndicesBooleans.`true`
 import typings.regexpMatchIndices.regexpMatchIndicesStrings.Alternative
@@ -8,6 +7,7 @@ import typings.regexpMatchIndices.regexpMatchIndicesStrings.CharacterClass
 import typings.regexpMatchIndices.regexpMatchIndicesStrings.Disjunction
 import typings.regexpMatchIndices.regexpMatchIndicesStrings.RegExp
 import typings.regexpMatchIndices.regexpMatchIndicesStrings.Repetition
+import typings.regexpMatchIndices.regexpTreeAstMod.AstNode
 import typings.regexpTree.anon.End
 import typings.regexpTree.astMod.Char
 import typings.regexpTree.astMod.ClassRange
@@ -46,7 +46,7 @@ object anon {
     def Ast(node: T, parent: Null, prop: String, index: Double): Unit | Boolean = js.native
     def Ast(node: T, parent: Null, prop: Unit, index: Double): Unit | Boolean = js.native
     
-    def AstPath(path: typings.regexpMatchIndices.astMod.AstPath[T]): Unit | Boolean = js.native
+    def AstPath(path: typings.regexpMatchIndices.regexpTreeAstMod.AstPath[T]): Unit | Boolean = js.native
     
     @JSName("Ast")
     def Ast_parent(

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,7 @@ trait Deployment extends StObject {
   
   /** Manifest of the files stored in Google Cloud Storage that are included as part of this version. All files must be readable using the credentials supplied with this call. */
   var files: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.appengine.gapi.client.appengine.FileInfo}
-    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Deployment & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.appengine.gapi.client.appengine.FileInfo} */ js.Any
   ] = js.undefined
   
   /** The zip file for this deployment, if this is a zip deployment. */
@@ -44,9 +41,7 @@ object Deployment {
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     inline def setFiles(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.appengine.gapi.client.appengine.FileInfo}
-      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Deployment & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.appengine.gapi.client.appengine.FileInfo} */ js.Any
     ): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)

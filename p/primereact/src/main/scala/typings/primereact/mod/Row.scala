@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.rowMod.RowProps
+import typings.primereact.rowRowMod.RowProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Row")
 @js.native
 open class Row protected ()
-  extends typings.primereact.rowMod.Row {
+  extends typings.primereact.rowRowMod.Row {
   def this(props: RowProps) = this()
   /**
     * @deprecated

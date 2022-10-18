@@ -1,9 +1,9 @@
 package typings.conf
 
-import typings.conf.typesMod.OnDidAnyChangeCallback
-import typings.conf.typesMod.OnDidChangeCallback
-import typings.conf.typesMod.Options
-import typings.conf.typesMod.Unsubscribe
+import typings.conf.distSourceTypesMod.OnDidAnyChangeCallback
+import typings.conf.distSourceTypesMod.OnDidChangeCallback
+import typings.conf.distSourceTypesMod.Options
+import typings.conf.distSourceTypesMod.Unsubscribe
 import typings.node.eventsMod.EventEmitter
 import typings.std.Exclude
 import typings.std.Iterable
@@ -139,16 +139,17 @@ object mod {
     
     def set(key: String, value: Any): Unit = js.native
     def set(`object`: Partial[T]): Unit = js.native
+    def set[Key /* <: /* keyof T */ String */](
+      key: Key,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: T[Key] */ js.Any
+    ): Unit = js.native
     /**
       Set an item or multiple items at once.
       @param {key|object} - You can use [dot-notation](https://github.com/sindresorhus/dot-prop) in a key to access nested properties. Or a hashmap of items to set at once.
       @param value - Must be JSON serializable. Trying to set the type `undefined`, `function`, or `symbol` will result in a `TypeError`.
       */
-    def set[Key /* <: /* keyof T */ String */](key: Key): Unit = js.native
-    def set[Key /* <: /* keyof T */ String */](
-      key: Key,
-      value: /* import warning: importer.ImportType#apply Failed type conversion: T[Key] */ js.Any
-    ): Unit = js.native
+    @JSName("set")
+    def set_Key[Key /* <: /* keyof T */ String */](key: Key): Unit = js.native
     
     def size: Double = js.native
     

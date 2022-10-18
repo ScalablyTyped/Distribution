@@ -126,11 +126,11 @@ object OldConstants {
   
   inline def A_FORM: `2` = 2.asInstanceOf[`2`]
   
-  inline def A_FORMATRTF: String = String.asInstanceOf[String]
+  inline def A_FORMATRTF: /* Rich Text Format (*.rtf) */ String = ("Rich Text Format (*.rtf)").asInstanceOf[/* Rich Text Format (*.rtf) */ String]
   
-  inline def A_FORMATTXT: String = String.asInstanceOf[String]
+  inline def A_FORMATTXT: /* MS-DOS Text (*.txt) */ String = ("MS-DOS Text (*.txt)").asInstanceOf[/* MS-DOS Text (*.txt) */ String]
   
-  inline def A_FORMATXLS: String = String.asInstanceOf[String]
+  inline def A_FORMATXLS: /* Microsoft Excel (*.xls) */ String = ("Microsoft Excel (*.xls)").asInstanceOf[/* Microsoft Excel (*.xls) */ String]
   
   inline def A_FORMBAR: `0` = 0.asInstanceOf[`0`]
   

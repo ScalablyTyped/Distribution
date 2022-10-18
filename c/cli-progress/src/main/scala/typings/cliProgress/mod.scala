@@ -3,8 +3,8 @@ package typings.cliProgress
 import typings.cliProgress.cliProgressStrings.center
 import typings.cliProgress.cliProgressStrings.left
 import typings.cliProgress.cliProgressStrings.right
+import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.^
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -266,7 +266,7 @@ object mod {
     var stopOnComplete: js.UndefOr[Boolean] = js.undefined
     
     /** output stream to use (default: process.stderr) */
-    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
     /** trigger redraw during update() in case threshold time x2 is exceeded (default: true) - limited to single bar usage */
     var synchronousUpdate: js.UndefOr[Boolean] = js.undefined
@@ -390,7 +390,7 @@ object mod {
       
       inline def setStopOnCompleteUndefined: Self = StObject.set(x, "stopOnComplete", js.undefined)
       
-      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       

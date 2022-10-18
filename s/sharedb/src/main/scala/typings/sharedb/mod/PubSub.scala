@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sharedb", "PubSub")
+/* note: abstract class */ @JSImport("sharedb", "PubSub")
 @js.native
-/* protected */ abstract class PubSub () extends StObject {
+/* protected */ open class PubSub () extends StObject {
   /* protected */ def this(options: PubSubOptions) = this()
   
   /* private */ def _createStream(channel: Any): Unit = js.native

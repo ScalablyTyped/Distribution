@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "VideoTexture")
 @js.native
 open class VideoTexture protected ()
-  extends typings.babylonjs.legacyMod.VideoTexture {
+  extends typings.babylonjs.legacyLegacyMod.VideoTexture {
   /**
     * Creates a video texture.
     * If you want to display a video in your scene, this is the special texture for that.
@@ -58,8 +58,8 @@ object VideoTexture {
     * @param invertY Defines if the video should be stored with invert Y set to true (true by default)
     * @returns The created video texture as a promise
     */
-  inline def CreateFromStreamAsync(scene: typings.babylonjs.sceneMod.Scene, stream: MediaStream, constraints: Any): js.Promise[typings.babylonjs.videoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromStreamAsync")(scene.asInstanceOf[js.Any], stream.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.videoTextureMod.VideoTexture]]
-  inline def CreateFromStreamAsync(scene: typings.babylonjs.sceneMod.Scene, stream: MediaStream, constraints: Any, invertY: Boolean): js.Promise[typings.babylonjs.videoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromStreamAsync")(scene.asInstanceOf[js.Any], stream.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.videoTextureMod.VideoTexture]]
+  inline def CreateFromStreamAsync(scene: typings.babylonjs.sceneMod.Scene, stream: MediaStream, constraints: Any): js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromStreamAsync")(scene.asInstanceOf[js.Any], stream.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture]]
+  inline def CreateFromStreamAsync(scene: typings.babylonjs.sceneMod.Scene, stream: MediaStream, constraints: Any, invertY: Boolean): js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromStreamAsync")(scene.asInstanceOf[js.Any], stream.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture]]
   
   /**
     * Creates a video texture straight from your WebCam video feed.
@@ -116,33 +116,33 @@ object VideoTexture {
     * @param invertY Defines if the video should be stored with invert Y set to true (true by default)
     * @returns The created video texture as a promise
     */
-  inline def CreateFromWebCamAsync(scene: typings.babylonjs.sceneMod.Scene, constraints: minWidthnumbermaxWidthnum): js.Promise[typings.babylonjs.videoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromWebCamAsync")(scene.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.videoTextureMod.VideoTexture]]
+  inline def CreateFromWebCamAsync(scene: typings.babylonjs.sceneMod.Scene, constraints: minWidthnumbermaxWidthnum): js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromWebCamAsync")(scene.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture]]
   inline def CreateFromWebCamAsync(
     scene: typings.babylonjs.sceneMod.Scene,
     constraints: minWidthnumbermaxWidthnum,
     audioConstaints: Boolean
-  ): js.Promise[typings.babylonjs.videoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromWebCamAsync")(scene.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], audioConstaints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.videoTextureMod.VideoTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromWebCamAsync")(scene.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], audioConstaints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture]]
   inline def CreateFromWebCamAsync(
     scene: typings.babylonjs.sceneMod.Scene,
     constraints: minWidthnumbermaxWidthnum,
     audioConstaints: Boolean,
     invertY: Boolean
-  ): js.Promise[typings.babylonjs.videoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromWebCamAsync")(scene.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], audioConstaints.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.videoTextureMod.VideoTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromWebCamAsync")(scene.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], audioConstaints.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture]]
   inline def CreateFromWebCamAsync(
     scene: typings.babylonjs.sceneMod.Scene,
     constraints: minWidthnumbermaxWidthnum,
     audioConstaints: Unit,
     invertY: Boolean
-  ): js.Promise[typings.babylonjs.videoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromWebCamAsync")(scene.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], audioConstaints.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.videoTextureMod.VideoTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromWebCamAsync")(scene.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], audioConstaints.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture]]
   inline def CreateFromWebCamAsync(
     scene: typings.babylonjs.sceneMod.Scene,
     constraints: minWidthnumbermaxWidthnum,
     audioConstaints: MediaTrackConstraints
-  ): js.Promise[typings.babylonjs.videoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromWebCamAsync")(scene.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], audioConstaints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.videoTextureMod.VideoTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromWebCamAsync")(scene.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], audioConstaints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture]]
   inline def CreateFromWebCamAsync(
     scene: typings.babylonjs.sceneMod.Scene,
     constraints: minWidthnumbermaxWidthnum,
     audioConstaints: MediaTrackConstraints,
     invertY: Boolean
-  ): js.Promise[typings.babylonjs.videoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromWebCamAsync")(scene.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], audioConstaints.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.videoTextureMod.VideoTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromWebCamAsync")(scene.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], audioConstaints.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesVideoTextureMod.VideoTexture]]
 }

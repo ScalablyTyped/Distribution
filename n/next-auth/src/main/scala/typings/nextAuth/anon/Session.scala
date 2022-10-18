@@ -1,46 +1,28 @@
 package typings.nextAuth.anon
 
-import typings.nextAuth.adaptersMod.TypeORMAccountModel
-import typings.nextAuth.adaptersMod.TypeORMSessionModel
-import typings.nextAuth.adaptersMod.TypeORMUserModel
-import typings.nextAuth.adaptersMod.TypeORMVerificationRequestModel
+import typings.nextAuth.adaptersMod.AdapterSession
+import typings.nextAuth.adaptersMod.AdapterUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Session[A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */] extends StObject {
+trait Session extends StObject {
   
-  var Account: js.UndefOr[Schema[A]] = js.undefined
+  var session: AdapterSession
   
-  var Session: js.UndefOr[ModelS_[S]] = js.undefined
-  
-  var User: js.UndefOr[ModelSchema[U]] = js.undefined
-  
-  var VerificationRequest: js.UndefOr[ModelVR[VR]] = js.undefined
+  var user: AdapterUser
 }
 object Session {
   
-  inline def apply[A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */](): Session[A, U, S, VR] = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[Session[A, U, S, VR]]
+  inline def apply(session: AdapterSession, user: AdapterUser): Session = {
+    val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Session]
   }
   
-  extension [Self <: Session[?, ?, ?, ?], A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */](x: Self & (Session[A, U, S, VR])) {
+  extension [Self <: Session](x: Self) {
     
-    inline def setAccount(value: Schema[A]): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setSession(value: AdapterSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    inline def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
-    
-    inline def setSession(value: ModelS_[S]): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
-    
-    inline def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
-    
-    inline def setUser(value: ModelSchema[U]): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
-    
-    inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
-    
-    inline def setVerificationRequest(value: ModelVR[VR]): Self = StObject.set(x, "VerificationRequest", value.asInstanceOf[js.Any])
-    
-    inline def setVerificationRequestUndefined: Self = StObject.set(x, "VerificationRequest", js.undefined)
+    inline def setUser(value: AdapterUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

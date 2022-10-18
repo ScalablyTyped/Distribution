@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "RenderTargetTexture")
 @js.native
 open class RenderTargetTexture protected ()
-  extends typings.babylonjs.legacyMod.RenderTargetTexture {
+  extends typings.babylonjs.legacyLegacyMod.RenderTargetTexture {
   /**
     * Instantiate a render target texture. This is mainly used to render of screen the scene to for instance apply post process
     * or used a shadow, depth texture...

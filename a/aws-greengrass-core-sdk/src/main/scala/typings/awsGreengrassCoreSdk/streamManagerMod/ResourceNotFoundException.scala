@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "ResourceNotFoundException")
 @js.native
 open class ResourceNotFoundException ()
-  extends typings.awsGreengrassCoreSdk.clientMod.ResourceNotFoundException
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.ResourceNotFoundException

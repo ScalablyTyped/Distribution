@@ -21,11 +21,13 @@ trait BaseNode extends StObject {
   
   var trailingComments: js.Array[Comment] | Null
   
-  var `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any
+  var `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248, starting with typings.babelTypes.babelTypesStrings.ClassAccessorProperty, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any
 }
 object BaseNode {
   
-  inline def apply(`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any): BaseNode = {
+  inline def apply(
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248, starting with typings.babelTypes.babelTypesStrings.ClassAccessorProperty, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any
+  ): BaseNode = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseNode]
@@ -67,6 +69,8 @@ object BaseNode {
     
     inline def setTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "trailingComments", js.Array(value*))
     
-    inline def setType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248, starting with typings.babelTypes.babelTypesStrings.ClassAccessorProperty, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

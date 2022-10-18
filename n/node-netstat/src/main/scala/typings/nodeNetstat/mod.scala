@@ -1,8 +1,7 @@
 package typings.nodeNetstat
 
-import org.scalablytyped.runtime.TopLevel
+import typings.node.NodeJS.ReadableStream
 import typings.nodeNetstat.anon.RecursivePartialAddress
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,7 +65,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def emitLines(stream: ReadableStream[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emitLines")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def emitLines(stream: ReadableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emitLines")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
     
@@ -391,9 +390,15 @@ object mod {
     }
   }
   
-  type RecursivePartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? node-netstat.node-netstat.RecursivePartial<T[P]>}
-    */ typings.nodeNetstat.nodeNetstatStrings.RecursivePartial & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]:? node-netstat.node-netstat.RecursivePartial<T[P]>}
+    }}}
+    */
+  @js.native
+  trait RecursivePartial[T] extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeNetstat.nodeNetstatStrings.SYN_SEND

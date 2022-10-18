@@ -1,7 +1,6 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.NumberDictionary
-import typings.std.Iterable
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,8 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait XRHand
   extends StObject
-     with Iterable[XRJointSpace]
-     with /* index */ NumberDictionary[XRJointSpace] {
+     with Map[
+      (/* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ Any) | Double, 
+      (/* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any) | XRJointSpace
+    ] {
   
   val INDEX_METACARPAL: Double = js.native
   
@@ -61,8 +62,4 @@ trait XRHand
   val THUMB_PHALANX_TIP: Double = js.native
   
   val WRIST: Double = js.native
-  
-  def get(joint: XRHandJoint): XRJointSpace = js.native
-  
-  val size: Double = js.native
 }

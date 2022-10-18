@@ -1,6 +1,6 @@
 package typings.babylonjs
 
-import typings.babylonjs.thinEngineMod.ThinEngine
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.DataArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object buffersIndexMod {
   @JSImport("babylonjs/Buffers/index", "Buffer")
   @js.native
   open class Buffer protected ()
-    extends typings.babylonjs.bufferMod.Buffer {
+    extends typings.babylonjs.buffersBufferMod.Buffer {
     /**
       * Constructor
       * @param engine the engine
@@ -25,7 +25,7 @@ object buffersIndexMod {
       */
     def this(
       engine: Any,
-      data: DataArray | typings.babylonjs.dataBufferMod.DataBuffer,
+      data: DataArray | typings.babylonjs.buffersDataBufferMod.DataBuffer,
       updatable: Boolean,
       stride: js.UndefOr[Double],
       postponeInternalCreation: js.UndefOr[Boolean],
@@ -41,7 +41,7 @@ object buffersIndexMod {
     * Constructs the buffer
     */
   open class DataBuffer ()
-    extends typings.babylonjs.dataBufferMod.DataBuffer
+    extends typings.babylonjs.buffersDataBufferMod.DataBuffer
   /* static members */
   object DataBuffer {
     
@@ -58,7 +58,7 @@ object buffersIndexMod {
   @JSImport("babylonjs/Buffers/index", "StorageBuffer")
   @js.native
   open class StorageBuffer protected ()
-    extends typings.babylonjs.storageBufferMod.StorageBuffer {
+    extends typings.babylonjs.buffersStorageBufferMod.StorageBuffer {
     /**
       * Creates a new storage buffer instance
       * @param engine The engine the buffer will be created inside
@@ -72,7 +72,7 @@ object buffersIndexMod {
   @JSImport("babylonjs/Buffers/index", "VertexBuffer")
   @js.native
   open class VertexBuffer protected ()
-    extends typings.babylonjs.bufferMod.VertexBuffer {
+    extends typings.babylonjs.buffersBufferMod.VertexBuffer {
     /**
       * Constructor
       * @param engine the engine
@@ -92,7 +92,7 @@ object buffersIndexMod {
       */
     def this(
       engine: Any,
-      data: DataArray | typings.babylonjs.bufferMod.Buffer | typings.babylonjs.dataBufferMod.DataBuffer,
+      data: DataArray | typings.babylonjs.buffersBufferMod.Buffer | typings.babylonjs.buffersDataBufferMod.DataBuffer,
       kind: String,
       updatable: Boolean,
       postponeInternalCreation: js.UndefOr[Boolean],

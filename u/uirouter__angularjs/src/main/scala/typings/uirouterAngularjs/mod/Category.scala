@@ -22,15 +22,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Category extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.uirouterCore.traceMod.Category & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.uirouterCore.libCommonTraceMod.Category & Double] = js.native
   
-  /* 2 */ val HOOK: typings.uirouterCore.traceMod.Category.HOOK & Double = js.native
+  /* 2 */ val HOOK: typings.uirouterCore.libCommonTraceMod.Category.HOOK & Double = js.native
   
-  /* 0 */ val RESOLVE: typings.uirouterCore.traceMod.Category.RESOLVE & Double = js.native
+  /* 0 */ val RESOLVE: typings.uirouterCore.libCommonTraceMod.Category.RESOLVE & Double = js.native
   
-  /* 1 */ val TRANSITION: typings.uirouterCore.traceMod.Category.TRANSITION & Double = js.native
+  /* 1 */ val TRANSITION: typings.uirouterCore.libCommonTraceMod.Category.TRANSITION & Double = js.native
   
-  /* 3 */ val UIVIEW: typings.uirouterCore.traceMod.Category.UIVIEW & Double = js.native
+  /* 3 */ val UIVIEW: typings.uirouterCore.libCommonTraceMod.Category.UIVIEW & Double = js.native
   
-  /* 4 */ val VIEWCONFIG: typings.uirouterCore.traceMod.Category.VIEWCONFIG & Double = js.native
+  /* 4 */ val VIEWCONFIG: typings.uirouterCore.libCommonTraceMod.Category.VIEWCONFIG & Double = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for magic-string
 
-Typings are for version 0.26.4
+Typings are for version 0.26.7
 
 ## Library description:
 Modify strings, generate sourcemaps

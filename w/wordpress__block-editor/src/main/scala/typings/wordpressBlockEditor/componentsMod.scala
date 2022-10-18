@@ -6,18 +6,17 @@ import typings.react.mod.ComponentType
 import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
 import typings.react.mod.global.JSX.Element
-import typings.std.Omit
 import typings.std.Record
-import typings.wordpressBlockEditor.alignmentToolbarMod.AlignmentToolbar.Props
 import typings.wordpressBlockEditor.anon.Children
 import typings.wordpressBlockEditor.anon.OmitPropsname
 import typings.wordpressBlockEditor.anon.PartialEditorFontSizePick
 import typings.wordpressBlockEditor.anon.PartialProps
 import typings.wordpressBlockEditor.anon.PickEditorColorcolor
+import typings.wordpressBlockEditor.componentsAlignmentToolbarMod.AlignmentToolbar.Props
+import typings.wordpressBlockEditor.componentsRichTextMod.RichText.ContentProps
+import typings.wordpressBlockEditor.componentsUseBlockPropsMod.UseBlockProps_
 import typings.wordpressBlockEditor.mod.EditorColor
 import typings.wordpressBlockEditor.mod.EditorFontSize
-import typings.wordpressBlockEditor.richTextMod.RichText.ContentProps
-import typings.wordpressBlockEditor.useBlockPropsMod.UseBlockProps_
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`object`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`var`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.a
@@ -41,7 +40,6 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.cite
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.code
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.col
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.colgroup
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.colors
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.data
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.datalist
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dd
@@ -49,7 +47,6 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.del
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.details
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dfn
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dialog
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.disableCustomColors
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.div
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dl
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dt
@@ -66,7 +63,6 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.h3
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.h4
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.h5
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.h6
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.hasColorsToChoose
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.head
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.header
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.hgroup
@@ -152,12 +148,12 @@ object componentsMod {
   @JSImport("@wordpress/block-editor/components", "BlockAlignmentToolbar")
   @js.native
   val BlockAlignmentToolbar: ComponentType[
-    typings.wordpressBlockEditor.blockAlignmentToolbarMod.BlockAlignmentToolbar.Props
+    typings.wordpressBlockEditor.componentsBlockAlignmentToolbarMod.BlockAlignmentToolbar.Props
   ] = js.native
   
   object BlockControls {
     
-    inline def apply(props: typings.wordpressBlockEditor.blockControlsMod.BlockControls.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: typings.wordpressBlockEditor.componentsBlockControlsMod.BlockControls.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/block-editor/components", "BlockControls")
     @js.native
@@ -171,21 +167,21 @@ object componentsMod {
   
   @JSImport("@wordpress/block-editor/components", "BlockEdit")
   @js.native
-  val BlockEdit: ComponentType[typings.wordpressBlockEditor.blockEditMod.BlockEdit.Props] = js.native
+  val BlockEdit: ComponentType[typings.wordpressBlockEditor.componentsBlockEditMod.BlockEdit.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "BlockEditorKeyboardShortcuts")
   @js.native
   val BlockEditorKeyboardShortcuts: ComponentType[
-    typings.wordpressBlockEditor.blockEditorKeyboardShortcutsMod.BlockEditorKeyboardShortcuts.Props
+    typings.wordpressBlockEditor.componentsBlockEditorKeyboardShortcutsMod.BlockEditorKeyboardShortcuts.Props
   ] = js.native
   
   @JSImport("@wordpress/block-editor/components", "BlockEditorProvider")
   @js.native
-  val BlockEditorProvider: ComponentType[typings.wordpressBlockEditor.providerMod.BlockEditorProvider.Props] = js.native
+  val BlockEditorProvider: ComponentType[typings.wordpressBlockEditor.componentsProviderMod.BlockEditorProvider.Props] = js.native
   
   object BlockFormatControls {
     
-    inline def apply(props: typings.wordpressBlockEditor.blockFormatControlsMod.BlockFormatControls.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: typings.wordpressBlockEditor.componentsBlockFormatControlsMod.BlockFormatControls.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/block-editor/components", "BlockFormatControls")
     @js.native
@@ -199,51 +195,57 @@ object componentsMod {
   
   @JSImport("@wordpress/block-editor/components", "BlockIcon")
   @js.native
-  val BlockIcon: ComponentType[typings.wordpressBlockEditor.blockIconMod.BlockIcon.Props] = js.native
+  val BlockIcon: ComponentType[typings.wordpressBlockEditor.componentsBlockIconMod.BlockIcon.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "BlockInspector")
   @js.native
-  val BlockInspector: ComponentType[typings.wordpressBlockEditor.blockInspectorMod.BlockInspector.Props] = js.native
+  val BlockInspector: ComponentType[typings.wordpressBlockEditor.componentsBlockInspectorMod.BlockInspector.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "BlockList")
   @js.native
-  val BlockList: ComponentType[typings.wordpressBlockEditor.blockListMod.BlockList.Props] = js.native
+  val BlockList: ComponentType[typings.wordpressBlockEditor.componentsBlockListMod.BlockList.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "BlockMover")
   @js.native
-  val BlockMover: ComponentType[typings.wordpressBlockEditor.blockMoverMod.BlockMover.Props] = js.native
+  val BlockMover: ComponentType[typings.wordpressBlockEditor.componentsBlockMoverMod.BlockMover.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "BlockNavigationDropdown")
   @js.native
-  val BlockNavigationDropdown: ComponentType[typings.wordpressBlockEditor.dropdownMod.BlockNavigationDropdown.Props] = js.native
+  val BlockNavigationDropdown: ComponentType[
+    typings.wordpressBlockEditor.componentsBlockNavigationDropdownMod.BlockNavigationDropdown.Props
+  ] = js.native
   
   @JSImport("@wordpress/block-editor/components", "BlockSelectionClearer")
   @js.native
   val BlockSelectionClearer: ComponentType[
-    typings.wordpressBlockEditor.blockSelectionClearerMod.BlockSelectionClearer.Props
+    typings.wordpressBlockEditor.componentsBlockSelectionClearerMod.BlockSelectionClearer.Props
   ] = js.native
   
   @JSImport("@wordpress/block-editor/components", "BlockSettingsMenu")
   @js.native
-  val BlockSettingsMenu: ComponentType[typings.wordpressBlockEditor.blockSettingsMenuMod.BlockSettingsMenu.Props] = js.native
+  val BlockSettingsMenu: ComponentType[
+    typings.wordpressBlockEditor.componentsBlockSettingsMenuMod.BlockSettingsMenu.Props
+  ] = js.native
   
   @JSImport("@wordpress/block-editor/components", "BlockTitle")
   @js.native
-  val BlockTitle: ComponentType[typings.wordpressBlockEditor.blockTitleMod.BlockTitle.Props] = js.native
+  val BlockTitle: ComponentType[typings.wordpressBlockEditor.componentsBlockTitleMod.BlockTitle.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "BlockToolbar")
   @js.native
-  val BlockToolbar: ComponentType[typings.wordpressBlockEditor.blockToolbarMod.BlockToolbar.Props] = js.native
+  val BlockToolbar: ComponentType[typings.wordpressBlockEditor.componentsBlockToolbarMod.BlockToolbar.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "BlockVerticalAlignmentToolbar")
   @js.native
   val BlockVerticalAlignmentToolbar: ComponentType[
-    typings.wordpressBlockEditor.blockVerticalAlignmentToolbarMod.BlockVerticalAlignmentToolbar.Props
+    typings.wordpressBlockEditor.componentsBlockVerticalAlignmentToolbarMod.BlockVerticalAlignmentToolbar.Props
   ] = js.native
   
   @JSImport("@wordpress/block-editor/components", "ButtonBlockAppender")
   @js.native
-  val ButtonBlockAppender: ComponentType[typings.wordpressBlockEditor.buttonBlockAppenderMod.ButtonBlockAppender.Props] = js.native
+  val ButtonBlockAppender: ComponentType[
+    typings.wordpressBlockEditor.componentsButtonBlockAppenderMod.ButtonBlockAppender.Props
+  ] = js.native
   
   @JSImport("@wordpress/block-editor/components", "ColorPalette")
   @js.native
@@ -251,23 +253,25 @@ object componentsMod {
   
   @JSImport("@wordpress/block-editor/components", "ContrastChecker")
   @js.native
-  val ContrastChecker: ComponentType[typings.wordpressBlockEditor.contrastCheckerMod.ContrastChecker.Props] = js.native
+  val ContrastChecker: ComponentType[typings.wordpressBlockEditor.componentsContrastCheckerMod.ContrastChecker.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "CopyHandler")
   @js.native
-  val CopyHandler: ComponentType[typings.wordpressBlockEditor.copyHandlerMod.CopyHandler.Props] = js.native
+  val CopyHandler: ComponentType[typings.wordpressBlockEditor.componentsCopyHandlerMod.CopyHandler.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "DefaultBlockAppender")
   @js.native
-  val DefaultBlockAppender: ComponentType[typings.wordpressBlockEditor.defaultBlockAppenderMod.DefaultBlockAppender.Props] = js.native
+  val DefaultBlockAppender: ComponentType[
+    typings.wordpressBlockEditor.componentsDefaultBlockAppenderMod.DefaultBlockAppender.Props
+  ] = js.native
   
   @JSImport("@wordpress/block-editor/components", "FontSizePicker")
   @js.native
-  val FontSizePicker: ComponentType[typings.wordpressBlockEditor.fontSizesMod.FontSizePicker.Props] = js.native
+  val FontSizePicker: ComponentType[typings.wordpressBlockEditor.componentsFontSizesMod.FontSizePicker.Props] = js.native
   
   object InnerBlocks {
     
-    inline def apply(props: typings.wordpressBlockEditor.innerBlocksMod.InnerBlocks.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: typings.wordpressBlockEditor.componentsInnerBlocksMod.InnerBlocks.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/block-editor/components", "InnerBlocks")
     @js.native
@@ -299,11 +303,13 @@ object componentsMod {
   
   @JSImport("@wordpress/block-editor/components", "Inserter")
   @js.native
-  val Inserter: ComponentType[typings.wordpressBlockEditor.inserterMod.Inserter.Props] = js.native
+  val Inserter: ComponentType[typings.wordpressBlockEditor.componentsInserterMod.Inserter.Props] = js.native
   
   object InspectorAdvancedControls {
     
-    inline def apply(props: typings.wordpressBlockEditor.inspectorAdvancedControlsMod.InspectorAdvancedControls.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(
+      props: typings.wordpressBlockEditor.componentsInspectorAdvancedControlsMod.InspectorAdvancedControls.Props
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/block-editor/components", "InspectorAdvancedControls")
     @js.native
@@ -317,7 +323,7 @@ object componentsMod {
   
   object InspectorControls {
     
-    inline def apply(props: typings.wordpressBlockEditor.inspectorControlsMod.InspectorControls.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: typings.wordpressBlockEditor.componentsInspectorControlsMod.InspectorControls.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/block-editor/components", "InspectorControls")
     @js.native
@@ -329,50 +335,58 @@ object componentsMod {
     inline def Slot_=(x: FC[OmitPropsname]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Slot")(x.asInstanceOf[js.Any])
   }
   
-  inline def MediaPlaceholder[T /* <: Boolean */](props: typings.wordpressBlockEditor.mediaPlaceholderMod.MediaPlaceholder.Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MediaPlaceholder")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MediaPlaceholder[T /* <: Boolean */](props: typings.wordpressBlockEditor.componentsMediaPlaceholderMod.MediaPlaceholder.Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MediaPlaceholder")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def MediaUpload[T /* <: Boolean */](props: typings.wordpressBlockEditor.mediaUploadMod.MediaUpload.Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MediaUpload")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MediaUpload[T /* <: Boolean */](props: typings.wordpressBlockEditor.componentsMediaUploadMod.MediaUpload.Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MediaUpload")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@wordpress/block-editor/components", "MediaUploadCheck")
   @js.native
-  val MediaUploadCheck: ComponentType[typings.wordpressBlockEditor.checkMod.MediaUploadCheck.Props] = js.native
+  val MediaUploadCheck: ComponentType[
+    typings.wordpressBlockEditor.componentsMediaUploadCheckMod.MediaUploadCheck.Props
+  ] = js.native
   
   @JSImport("@wordpress/block-editor/components", "MultiBlocksSwitcher")
   @js.native
-  val MultiBlocksSwitcher: ComponentType[typings.wordpressBlockEditor.multiBlocksSwitcherMod.MultiBlocksSwitcher.Props] = js.native
+  val MultiBlocksSwitcher: ComponentType[
+    typings.wordpressBlockEditor.componentsBlockSwitcherMultiBlocksSwitcherMod.MultiBlocksSwitcher.Props
+  ] = js.native
   
   @JSImport("@wordpress/block-editor/components", "MultiSelectScrollIntoView")
   @js.native
   val MultiSelectScrollIntoView: ComponentType[
-    typings.wordpressBlockEditor.multiSelectScrollIntoViewMod.MultiSelectScrollIntoView.Props
+    typings.wordpressBlockEditor.componentsMultiSelectScrollIntoViewMod.MultiSelectScrollIntoView.Props
   ] = js.native
   
   @JSImport("@wordpress/block-editor/components", "NavigableToolbar")
   @js.native
-  val NavigableToolbar: ComponentType[typings.wordpressBlockEditor.navigableToolbarMod.NavigableToolbar.Props] = js.native
+  val NavigableToolbar: ComponentType[
+    typings.wordpressBlockEditor.componentsNavigableToolbarMod.NavigableToolbar.Props
+  ] = js.native
   
   @JSImport("@wordpress/block-editor/components", "ObserveTyping")
   @js.native
-  val ObserveTyping: ComponentType[typings.wordpressBlockEditor.observeTypingMod.ObserveTyping.Props] = js.native
+  val ObserveTyping: ComponentType[typings.wordpressBlockEditor.componentsObserveTypingMod.ObserveTyping.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "PanelColorSettings")
   @js.native
-  val PanelColorSettings: ComponentType[typings.wordpressBlockEditor.panelColorSettingsMod.PanelColorSettings.Props] = js.native
+  val PanelColorSettings: ComponentType[
+    typings.wordpressBlockEditor.componentsPanelColorSettingsMod.PanelColorSettings.Props
+  ] = js.native
   
   @JSImport("@wordpress/block-editor/components", "PlainText")
   @js.native
-  val PlainText: ComponentType[typings.wordpressBlockEditor.plainTextMod.PlainText.Props] = js.native
+  val PlainText: ComponentType[typings.wordpressBlockEditor.componentsPlainTextMod.PlainText.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "PreserveScrollInReorder")
   @js.native
   val PreserveScrollInReorder: ComponentType[
-    typings.wordpressBlockEditor.preserveScrollInReorderMod.PreserveScrollInReorder.Props
+    typings.wordpressBlockEditor.componentsPreserveScrollInReorderMod.PreserveScrollInReorder.Props
   ] = js.native
   
   object RichText {
     
     inline def apply(
-      props: typings.wordpressBlockEditor.richTextMod.RichText.Props[
+      props: typings.wordpressBlockEditor.componentsRichTextMod.RichText.Props[
           a | abbr | address | area | article | aside | audio | b | base | bdi | bdo | blockquote | body | br | button | canvas | caption | cite | code | col | colgroup | data | datalist | dd | del | details | dfn | dialog | div | dl | dt | em | embed | fieldset | figcaption | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | img | input | ins | kbd | label | legend | li | link | main | map | mark | menu | meta | meter | nav | noscript | `object` | ol | optgroup | option | output | p | picture | pre | progress | q | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | strong | style | sub | summary | sup | table | tbody | td | template | textarea | tfoot | th | thead | time | title | tr | track | u | ul | `var` | video | wbr
         ]
     ): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -612,35 +626,37 @@ object componentsMod {
   
   @JSImport("@wordpress/block-editor/components", "RichTextShortcut")
   @js.native
-  val RichTextShortcut: ComponentType[typings.wordpressBlockEditor.richTextMod.RichTextShortcut.Props] = js.native
+  val RichTextShortcut: ComponentType[typings.wordpressBlockEditor.componentsRichTextMod.RichTextShortcut.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "RichTextToolbarButton")
   @js.native
-  val RichTextToolbarButton: ComponentType[typings.wordpressBlockEditor.richTextMod.RichTextToolbarButton.Props] = js.native
+  val RichTextToolbarButton: ComponentType[typings.wordpressBlockEditor.componentsRichTextMod.RichTextToolbarButton.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "SkipToSelectedBlock")
   @js.native
-  val SkipToSelectedBlock: ComponentType[typings.wordpressBlockEditor.skipToSelectedBlockMod.SkipToSelectedBlock.Props] = js.native
+  val SkipToSelectedBlock: ComponentType[
+    typings.wordpressBlockEditor.componentsSkipToSelectedBlockMod.SkipToSelectedBlock.Props
+  ] = js.native
   
   @JSImport("@wordpress/block-editor/components", "URLInput")
   @js.native
-  val URLInput: ComponentType[typings.wordpressBlockEditor.urlInputMod.URLInput.Props] = js.native
+  val URLInput: ComponentType[typings.wordpressBlockEditor.componentsUrlInputMod.URLInput.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "URLInputButton")
   @js.native
-  val URLInputButton: ComponentType[typings.wordpressBlockEditor.buttonMod.URLInputButton.Props] = js.native
+  val URLInputButton: ComponentType[typings.wordpressBlockEditor.componentsUrlInputButtonMod.URLInputButton.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "URLPopover")
   @js.native
-  val URLPopover: ComponentType[typings.wordpressBlockEditor.urlPopoverMod.URLPopover.Props] = js.native
+  val URLPopover: ComponentType[typings.wordpressBlockEditor.componentsUrlPopoverMod.URLPopover.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "Warning")
   @js.native
-  val Warning: ComponentType[typings.wordpressBlockEditor.warningMod.Warning.Props] = js.native
+  val Warning: ComponentType[typings.wordpressBlockEditor.componentsWarningMod.Warning.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "WritingFlow")
   @js.native
-  val WritingFlow: ComponentType[typings.wordpressBlockEditor.writingFlowMod.WritingFlow.Props] = js.native
+  val WritingFlow: ComponentType[typings.wordpressBlockEditor.componentsWritingFlowMod.WritingFlow.Props] = js.native
   
   inline def createCustomColorsHOC[T /* <: js.Array[String] */](colorsArray: js.Array[EditorColor]): js.Function1[
     /* colorNames */ T, 
@@ -673,16 +689,8 @@ object componentsMod {
   val useBlockProps: UseBlockProps_ = js.native
   
   // prettier-ignore
-  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: Any */](component: ComponentClass[ProvidedProps & OwnProps, ComponentState]): ComponentType[
-    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
-    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
-  ]]
-  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: Any */](component: FunctionComponent[ProvidedProps & OwnProps]): ComponentType[
-    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
-    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
-  ]]
+  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: Any */](component: ComponentClass[ProvidedProps & OwnProps, ComponentState]): /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentClass<ProvidedProps & OwnProps, react.react.ComponentState> extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'colors' | 'disableCustomColors' | 'hasColorsToChoose'> & std.Omit<ProvidedProps, 'hasColorsToChoose'>> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentClass<ProvidedProps & OwnProps, react.react.ComponentState> extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'colors' | 'disableCustomColors' | 'hasColorsToChoose'> & std.Omit<ProvidedProps, 'hasColorsToChoose'>> : never */ js.Any]
+  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: Any */](component: FunctionComponent[ProvidedProps & OwnProps]): /* import warning: importer.ImportType#apply Failed type conversion: react.react.FunctionComponent<ProvidedProps & OwnProps> extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'colors' | 'disableCustomColors' | 'hasColorsToChoose'> & std.Omit<ProvidedProps, 'hasColorsToChoose'>> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: react.react.FunctionComponent<ProvidedProps & OwnProps> extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'colors' | 'disableCustomColors' | 'hasColorsToChoose'> & std.Omit<ProvidedProps, 'hasColorsToChoose'>> : never */ js.Any]
   
   inline def withColors(colorTypes: (String | (Record[String, String]))*): js.Function1[/* component */ ComponentType[Any], ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColors")(colorTypes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]]
   

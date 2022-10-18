@@ -1,13 +1,13 @@
 package typings.appBuilderLib
 
-import typings.appBuilderLib.coreMod.CompressionLevel
-import typings.appBuilderLib.electronFrameworkMod.ElectronPlatformName
-import typings.appBuilderLib.macCodeSignMod.CertType
-import typings.appBuilderLib.macOptionsMod.MacOsTargetName
-import typings.appBuilderLib.pkgOptionsMod.BackgroundAlignment
-import typings.appBuilderLib.pkgOptionsMod.BackgroundScaling
-import typings.appBuilderLib.platformPackagerMod.IconFormat
-import typings.appBuilderLib.winOptionsMod.RequestedExecutionLevel
+import typings.appBuilderLib.outCodeSignMacCodeSignMod.CertType
+import typings.appBuilderLib.outCoreMod.CompressionLevel
+import typings.appBuilderLib.outElectronElectronFrameworkMod.ElectronPlatformName
+import typings.appBuilderLib.outOptionsMacOptionsMod.MacOsTargetName
+import typings.appBuilderLib.outOptionsPkgOptionsMod.BackgroundAlignment
+import typings.appBuilderLib.outOptionsPkgOptionsMod.BackgroundScaling
+import typings.appBuilderLib.outOptionsWinOptionsMod.RequestedExecutionLevel
+import typings.appBuilderLib.outPlatformPackagerMod.IconFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

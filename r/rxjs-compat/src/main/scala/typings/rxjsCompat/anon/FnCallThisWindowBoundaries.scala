@@ -1,5 +1,6 @@
 package typings.rxjsCompat.anon
 
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisWindowBoundaries extends StObject {
   
-  def apply[T](
-    windowBoundaries: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
-  ): Any = js.native
+  def apply[T](windowBoundaries: Observable_[Any]): Observable_[Observable_[T]] = js.native
 }

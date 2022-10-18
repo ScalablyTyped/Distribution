@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object meowStrings {
   
   @js.native
-  sealed trait TypedFlags extends StObject
-  inline def TypedFlags: TypedFlags = "TypedFlags".asInstanceOf[TypedFlags]
-  
-  @js.native
   sealed trait boolean
     extends StObject
        with FlagType

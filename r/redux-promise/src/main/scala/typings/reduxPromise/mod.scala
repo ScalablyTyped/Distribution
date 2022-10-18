@@ -28,16 +28,13 @@ object mod extends Shortcut {
   /* augmented module */
   object reduxAugmentingMod {
     
-    @js.native
-    trait Dispatch[S] extends StObject {
-      
-      def apply[R](asyncAction: PromiseAction[S]): R = js.native
-    }
+    type Dispatch[S] = js.Function1[/* asyncAction */ PromiseAction[S], Any]
     
-    type PromiseAction[S] = js.Function2[
-        /* dispatch */ typings.reduxPromise.mod.reduxAugmentingMod.Dispatch[S], 
-        /* getState */ js.UndefOr[js.Function0[S]], 
-        Any
-      ]
+    @js.native
+    trait PromiseAction[S] extends StObject {
+      
+      def apply(dispatch: typings.reduxPromise.mod.reduxAugmentingMod.Dispatch[S]): Any = js.native
+      def apply(dispatch: typings.reduxPromise.mod.reduxAugmentingMod.Dispatch[S], getState: js.Function0[S]): Any = js.native
+    }
   }
 }

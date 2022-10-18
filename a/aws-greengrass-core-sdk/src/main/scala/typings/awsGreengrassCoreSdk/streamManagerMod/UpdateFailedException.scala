@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "UpdateFailedException")
 @js.native
 open class UpdateFailedException ()
-  extends typings.awsGreengrassCoreSdk.clientMod.UpdateFailedException
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.UpdateFailedException

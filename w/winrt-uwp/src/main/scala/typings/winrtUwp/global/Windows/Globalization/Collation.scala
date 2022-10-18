@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Collation {
   
   /** A container for character group information. Characters are grouped in an index that enables an application to determine where the grouping boundaries are. */
-  @JSGlobal("Windows.Globalization.Collation.CharacterGrouping")
+  /* note: abstract class */ @JSGlobal("Windows.Globalization.Collation.CharacterGrouping")
   @js.native
-  abstract class CharacterGrouping ()
+  open class CharacterGrouping ()
     extends StObject
        with typings.winrtUwp.Windows.Globalization.Collation.CharacterGrouping {
     

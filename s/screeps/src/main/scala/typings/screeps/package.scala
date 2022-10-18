@@ -2,8 +2,6 @@ package typings.screeps
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.screeps.anon.Boost
 import typings.screeps.anon.Cooldown
 import typings.screeps.anon.Type
 import typings.screeps.anon.X
@@ -217,11 +215,6 @@ type BOTTOM_RIGHT = `4`
 
 // Body Part Constants
 type BodyPartConstant = MOVE | WORK | CARRY | ATTACK | RANGED_ATTACK | TOUGH | HEAL | CLAIM
-
-/**
-  * Describes one part of a creep’s body.
-  */
-type BodyPartDefinition[T /* <: BodyPartConstant */] = Boost[T]
 
 // Structure Constants
 type BuildableStructureConstant = STRUCTURE_EXTENSION | STRUCTURE_RAMPART | STRUCTURE_ROAD | STRUCTURE_SPAWN | STRUCTURE_LINK | STRUCTURE_WALL | STRUCTURE_STORAGE | STRUCTURE_TOWER | STRUCTURE_OBSERVER | STRUCTURE_POWER_SPAWN | STRUCTURE_EXTRACTOR | STRUCTURE_LAB | STRUCTURE_TERMINAL | STRUCTURE_CONTAINER | STRUCTURE_NUKER | STRUCTURE_FACTORY
@@ -764,7 +757,7 @@ type SUBSCRIPTION_TOKEN = token
 // Return Codes
 type ScreepsReturnCode = OK | ERR_NOT_OWNER | ERR_NO_PATH | ERR_BUSY | ERR_NAME_EXISTS | ERR_NOT_FOUND | ERR_NOT_ENOUGH_RESOURCES | ERR_NOT_ENOUGH_ENERGY | ERR_INVALID_TARGET | ERR_FULL | ERR_NOT_IN_RANGE | ERR_INVALID_ARGS | ERR_TIRED | ERR_NO_BODYPART | ERR_NOT_ENOUGH_EXTENSIONS | ERR_RCL_NOT_ENOUGH | ERR_GCL_NOT_ENOUGH
 
-type Store[POSSIBLE_RESOURCES /* <: ResourceConstant */, UNLIMITED_STORE /* <: Boolean */] = (StoreBase[POSSIBLE_RESOURCES, UNLIMITED_STORE]) & typings.screeps.screepsStrings.Store & TopLevel[Any]
+type Store[POSSIBLE_RESOURCES /* <: ResourceConstant */, UNLIMITED_STORE /* <: Boolean */] = (StoreBase[POSSIBLE_RESOURCES, UNLIMITED_STORE]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in POSSIBLE_RESOURCES ]: number} */ js.Any)
 
 type StructureConstant = BuildableStructureConstant | STRUCTURE_KEEPER_LAIR | STRUCTURE_CONTROLLER | STRUCTURE_POWER_BANK | STRUCTURE_PORTAL | STRUCTURE_INVADER_CORE
 
@@ -786,5 +779,3 @@ type TOP_RIGHT = `2`
 type TOUGH = tough
 
 type WORK = work
-
-type fromId[T] = Any

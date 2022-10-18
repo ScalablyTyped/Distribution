@@ -1,7 +1,7 @@
 package typings.ajvErrors
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.coreMod.Plugin
+import typings.ajv.distCoreMod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -24,7 +24,7 @@ object mod {
     inline def init(): WorkerUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[WorkerUrl]
     inline def init(options: WorkerUrl): WorkerUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[WorkerUrl]
     
-    inline def open(file: File): js.Promise[typings.libarchiveJs.libarchiveMod.Archive] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.libarchiveJs.libarchiveMod.Archive]]
-    inline def open(file: File, options: WorkerUrl): js.Promise[typings.libarchiveJs.libarchiveMod.Archive] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.libarchiveJs.libarchiveMod.Archive]]
+    inline def open(file: File): js.Promise[typings.libarchiveJs.srcLibarchiveMod.Archive] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.libarchiveJs.srcLibarchiveMod.Archive]]
+    inline def open(file: File, options: WorkerUrl): js.Promise[typings.libarchiveJs.srcLibarchiveMod.Archive] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.libarchiveJs.srcLibarchiveMod.Archive]]
   }
 }

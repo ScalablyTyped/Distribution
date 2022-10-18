@@ -2,7 +2,7 @@ package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.AntLocale
 import typings.antdMobileRn.anon.Locale
-import typings.antdMobileRn.localeProviderIndexNativeMod.default
+import typings.antdMobileRn.libLocaleProviderIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

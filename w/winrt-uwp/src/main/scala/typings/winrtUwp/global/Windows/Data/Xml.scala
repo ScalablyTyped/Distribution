@@ -17,9 +17,9 @@ object Xml {
   object Dom {
     
     /** Represents a parsed or unparsed entity in the XML document. */
-    @JSGlobal("Windows.Data.Xml.Dom.DtdEntity")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.DtdEntity")
     @js.native
-    abstract class DtdEntity ()
+    open class DtdEntity ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.DtdEntity {
       
@@ -191,9 +191,9 @@ object Xml {
     }
     
     /** Contains a notation declared in the DTD or schema. */
-    @JSGlobal("Windows.Data.Xml.Dom.DtdNotation")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.DtdNotation")
     @js.native
-    abstract class DtdNotation ()
+    open class DtdNotation ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.DtdNotation {
       
@@ -396,9 +396,9 @@ object Xml {
     }
     
     /** Represents an attribute of an XmlElement. Valid and default values for the attribute are defined in a document type definition (DTD) or schema. */
-    @JSGlobal("Windows.Data.Xml.Dom.XmlAttribute")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.XmlAttribute")
     @js.native
-    abstract class XmlAttribute ()
+    open class XmlAttribute ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlAttribute {
       
@@ -570,9 +570,9 @@ object Xml {
     }
     
     /** Represents a CDATA section of an XML document. */
-    @JSGlobal("Windows.Data.Xml.Dom.XmlCDataSection")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.XmlCDataSection")
     @js.native
-    abstract class XmlCDataSection ()
+    open class XmlCDataSection ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlCDataSection {
       
@@ -789,9 +789,9 @@ object Xml {
     }
     
     /** Represents an XML comment. */
-    @JSGlobal("Windows.Data.Xml.Dom.XmlComment")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.XmlComment")
     @js.native
-    abstract class XmlComment ()
+    open class XmlComment ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlComment {
       
@@ -1046,9 +1046,9 @@ object Xml {
     }
     
     /** Represents a lightweight object that is useful for tree insertion operations. */
-    @JSGlobal("Windows.Data.Xml.Dom.XmlDocumentFragment")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.XmlDocumentFragment")
     @js.native
-    abstract class XmlDocumentFragment ()
+    open class XmlDocumentFragment ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocumentFragment {
       
@@ -1208,9 +1208,9 @@ object Xml {
     }
     
     /** Contains information associated with the document type. */
-    @JSGlobal("Windows.Data.Xml.Dom.XmlDocumentType")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.XmlDocumentType")
     @js.native
-    abstract class XmlDocumentType ()
+    open class XmlDocumentType ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocumentType {
       
@@ -1382,9 +1382,9 @@ object Xml {
     }
     
     /** Provides methods that are independent of any particular instance of the document object model. */
-    @JSGlobal("Windows.Data.Xml.Dom.XmlDomImplementation")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.XmlDomImplementation")
     @js.native
-    abstract class XmlDomImplementation ()
+    open class XmlDomImplementation ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlDomImplementation {
       
@@ -1399,9 +1399,9 @@ object Xml {
     }
     
     /** Encapsulates information specific to XML Element nodes. */
-    @JSGlobal("Windows.Data.Xml.Dom.XmlElement")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.XmlElement")
     @js.native
-    abstract class XmlElement ()
+    open class XmlElement ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlElement {
       
@@ -1663,9 +1663,9 @@ object Xml {
     }
     
     /** Represents an entity reference node. */
-    @JSGlobal("Windows.Data.Xml.Dom.XmlEntityReference")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.XmlEntityReference")
     @js.native
-    abstract class XmlEntityReference ()
+    open class XmlEntityReference ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlEntityReference {
       
@@ -1854,23 +1854,23 @@ object Xml {
     }
     
     /** Encapsulates iteration through the collection of attribute nodes. */
-    @JSGlobal("Windows.Data.Xml.Dom.XmlNamedNodeMap")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.XmlNamedNodeMap")
     @js.native
-    abstract class XmlNamedNodeMap ()
+    open class XmlNamedNodeMap ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlNamedNodeMap
     
     /** Describes a collection of nodes. */
-    @JSGlobal("Windows.Data.Xml.Dom.XmlNodeList")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.XmlNodeList")
     @js.native
-    abstract class XmlNodeList ()
+    open class XmlNodeList ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList
     
     /** Represents a processing instruction, which XML defines to keep processor-specific information in the text of the document. */
-    @JSGlobal("Windows.Data.Xml.Dom.XmlProcessingInstruction")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.XmlProcessingInstruction")
     @js.native
-    abstract class XmlProcessingInstruction ()
+    open class XmlProcessingInstruction ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlProcessingInstruction {
       
@@ -2038,9 +2038,9 @@ object Xml {
     }
     
     /** Represents the text content of an element. */
-    @JSGlobal("Windows.Data.Xml.Dom.XmlText")
+    /* note: abstract class */ @JSGlobal("Windows.Data.Xml.Dom.XmlText")
     @js.native
-    abstract class XmlText ()
+    open class XmlText ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlText {
       

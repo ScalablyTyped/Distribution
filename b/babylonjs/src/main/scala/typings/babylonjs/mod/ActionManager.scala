@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param scene defines the hosting scene
   */
 open class ActionManager ()
-  extends typings.babylonjs.legacyMod.ActionManager {
+  extends typings.babylonjs.legacyLegacyMod.ActionManager {
   def this(scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
 }
 /* static members */
@@ -174,7 +174,7 @@ object ActionManager {
     */
   inline def Parse(
     parsedActions: Any,
-    `object`: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh],
+    `object`: Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
     scene: typings.babylonjs.sceneMod.Scene
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedActions.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

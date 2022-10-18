@@ -35,13 +35,13 @@ object Parties {
     
     inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    inline def setAddressesVarargs(value: Address*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: Address*): Self = StObject.set(x, "addresses", js.Array(value*))
     
     inline def setContacts(value: js.Array[Contact]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
     inline def setContactsUndefined: Self = StObject.set(x, "contacts", js.undefined)
     
-    inline def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value :_*))
+    inline def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value*))
     
     inline def setImportance(value: String): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     

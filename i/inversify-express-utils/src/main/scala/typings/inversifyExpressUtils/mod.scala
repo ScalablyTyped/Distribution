@@ -3,19 +3,19 @@ package typings.inversifyExpressUtils
 import org.scalablytyped.runtime.Instantiable0
 import typings.express.mod.Application_
 import typings.express.mod.Router
-import typings.inversify.decoratorUtilsMod.DecoratorTarget
-import typings.inversify.interfacesMod.interfaces.Container
-import typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE
-import typings.inversifyExpressUtils.interfacesMod.AuthProvider
-import typings.inversifyExpressUtils.interfacesMod.Controller
-import typings.inversifyExpressUtils.interfacesMod.ControllerMetadata
-import typings.inversifyExpressUtils.interfacesMod.ControllerMethodMetadata
-import typings.inversifyExpressUtils.interfacesMod.ControllerParameterMetadata
-import typings.inversifyExpressUtils.interfacesMod.HandlerDecorator
-import typings.inversifyExpressUtils.interfacesMod.Middleware
-import typings.inversifyExpressUtils.interfacesMod.RawMetadata
-import typings.inversifyExpressUtils.interfacesMod.RouteInfo
-import typings.inversifyExpressUtils.interfacesMod.RoutingConfig
+import typings.inversify.libAnnotationDecoratorUtilsMod.DecoratorTarget
+import typings.inversify.libInterfacesInterfacesMod.interfaces.Container
+import typings.inversifyExpressUtils.libConstantsMod.PARAMETER_TYPE
+import typings.inversifyExpressUtils.libInterfacesMod.AuthProvider
+import typings.inversifyExpressUtils.libInterfacesMod.Controller
+import typings.inversifyExpressUtils.libInterfacesMod.ControllerMetadata
+import typings.inversifyExpressUtils.libInterfacesMod.ControllerMethodMetadata
+import typings.inversifyExpressUtils.libInterfacesMod.ControllerParameterMetadata
+import typings.inversifyExpressUtils.libInterfacesMod.HandlerDecorator
+import typings.inversifyExpressUtils.libInterfacesMod.Middleware
+import typings.inversifyExpressUtils.libInterfacesMod.RawMetadata
+import typings.inversifyExpressUtils.libInterfacesMod.RouteInfo
+import typings.inversifyExpressUtils.libInterfacesMod.RoutingConfig
 import typings.node.urlMod.URL_
 import typings.std.ParameterDecorator
 import typings.std.TypedPropertyDescriptor
@@ -32,12 +32,12 @@ object mod {
   @JSImport("inversify-express-utils", "BaseHttpController")
   @js.native
   open class BaseHttpController ()
-    extends typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController
+    extends typings.inversifyExpressUtils.libBaseHttpControllerMod.BaseHttpController
   
-  @JSImport("inversify-express-utils", "BaseMiddleware")
+  /* note: abstract class */ @JSImport("inversify-express-utils", "BaseMiddleware")
   @js.native
-  abstract class BaseMiddleware ()
-    extends typings.inversifyExpressUtils.baseMiddlewareMod.BaseMiddleware
+  open class BaseMiddleware ()
+    extends typings.inversifyExpressUtils.libBaseMiddlewareMod.BaseMiddleware
   
   @JSImport("inversify-express-utils", "DEFAULT_ROUTING_ROOT_PATH")
   @js.native
@@ -50,47 +50,47 @@ object mod {
   object HTTP_VERBS_ENUM extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM & String] = js.native
+    def apply(value: String): js.UndefOr[typings.inversifyExpressUtils.libConstantsMod.HTTP_VERBS_ENUM & String] = js.native
     
-    /* "ALL" */ val all: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.all & String = js.native
+    /* "ALL" */ val all: typings.inversifyExpressUtils.libConstantsMod.HTTP_VERBS_ENUM.all & String = js.native
     
-    /* "CONNECT" */ val connect: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.connect & String = js.native
+    /* "CONNECT" */ val connect: typings.inversifyExpressUtils.libConstantsMod.HTTP_VERBS_ENUM.connect & String = js.native
     
-    /* "DELETE" */ val delete: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.delete & String = js.native
+    /* "DELETE" */ val delete: typings.inversifyExpressUtils.libConstantsMod.HTTP_VERBS_ENUM.delete & String = js.native
     
-    /* "GET" */ val get: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.get & String = js.native
+    /* "GET" */ val get: typings.inversifyExpressUtils.libConstantsMod.HTTP_VERBS_ENUM.get & String = js.native
     
-    /* "HEAD" */ val head: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.head & String = js.native
+    /* "HEAD" */ val head: typings.inversifyExpressUtils.libConstantsMod.HTTP_VERBS_ENUM.head & String = js.native
     
-    /* "OPTIONS" */ val options: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.options & String = js.native
+    /* "OPTIONS" */ val options: typings.inversifyExpressUtils.libConstantsMod.HTTP_VERBS_ENUM.options & String = js.native
     
-    /* "PATCH" */ val patch: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.patch & String = js.native
+    /* "PATCH" */ val patch: typings.inversifyExpressUtils.libConstantsMod.HTTP_VERBS_ENUM.patch & String = js.native
     
-    /* "POST" */ val post: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.post & String = js.native
+    /* "POST" */ val post: typings.inversifyExpressUtils.libConstantsMod.HTTP_VERBS_ENUM.post & String = js.native
     
-    /* "PROPFIND" */ val propfind: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.propfind & String = js.native
+    /* "PROPFIND" */ val propfind: typings.inversifyExpressUtils.libConstantsMod.HTTP_VERBS_ENUM.propfind & String = js.native
     
-    /* "PUT" */ val put: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.put & String = js.native
+    /* "PUT" */ val put: typings.inversifyExpressUtils.libConstantsMod.HTTP_VERBS_ENUM.put & String = js.native
     
-    /* "TRACE" */ val trace: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.trace & String = js.native
+    /* "TRACE" */ val trace: typings.inversifyExpressUtils.libConstantsMod.HTTP_VERBS_ENUM.trace & String = js.native
   }
   
-  @JSImport("inversify-express-utils", "HttpContent")
+  /* note: abstract class */ @JSImport("inversify-express-utils", "HttpContent")
   @js.native
-  abstract class HttpContent ()
-    extends typings.inversifyExpressUtils.httpContentMod.HttpContent
+  open class HttpContent ()
+    extends typings.inversifyExpressUtils.libContentHttpContentMod.HttpContent
   
   @JSImport("inversify-express-utils", "HttpResponseMessage")
   @js.native
   open class HttpResponseMessage ()
-    extends typings.inversifyExpressUtils.httpResponseMessageMod.HttpResponseMessage {
+    extends typings.inversifyExpressUtils.libHttpResponseMessageMod.HttpResponseMessage {
     def this(statusCode: Double) = this()
   }
   
   @JSImport("inversify-express-utils", "InversifyExpressServer")
   @js.native
   open class InversifyExpressServer protected ()
-    extends typings.inversifyExpressUtils.serverMod.InversifyExpressServer {
+    extends typings.inversifyExpressUtils.libServerMod.InversifyExpressServer {
     def this(
       container: Container,
       customRouter: js.UndefOr[Router | Null],
@@ -104,7 +104,7 @@ object mod {
   @JSImport("inversify-express-utils", "JsonContent")
   @js.native
   open class JsonContent protected ()
-    extends typings.inversifyExpressUtils.jsonContentMod.JsonContent {
+    extends typings.inversifyExpressUtils.libContentJsonContentMod.JsonContent {
     def this(content: Any) = this()
   }
   
@@ -145,31 +145,31 @@ object mod {
   object PARAMETER_TYPE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.inversifyExpressUtils.libConstantsMod.PARAMETER_TYPE & Double] = js.native
     
-    /* 4 */ val BODY: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.BODY & Double = js.native
+    /* 4 */ val BODY: typings.inversifyExpressUtils.libConstantsMod.PARAMETER_TYPE.BODY & Double = js.native
     
-    /* 6 */ val COOKIES: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.COOKIES & Double = js.native
+    /* 6 */ val COOKIES: typings.inversifyExpressUtils.libConstantsMod.PARAMETER_TYPE.COOKIES & Double = js.native
     
-    /* 5 */ val HEADERS: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.HEADERS & Double = js.native
+    /* 5 */ val HEADERS: typings.inversifyExpressUtils.libConstantsMod.PARAMETER_TYPE.HEADERS & Double = js.native
     
-    /* 7 */ val NEXT: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.NEXT & Double = js.native
+    /* 7 */ val NEXT: typings.inversifyExpressUtils.libConstantsMod.PARAMETER_TYPE.NEXT & Double = js.native
     
-    /* 2 */ val PARAMS: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.PARAMS & Double = js.native
+    /* 2 */ val PARAMS: typings.inversifyExpressUtils.libConstantsMod.PARAMETER_TYPE.PARAMS & Double = js.native
     
-    /* 8 */ val PRINCIPAL: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.PRINCIPAL & Double = js.native
+    /* 8 */ val PRINCIPAL: typings.inversifyExpressUtils.libConstantsMod.PARAMETER_TYPE.PRINCIPAL & Double = js.native
     
-    /* 3 */ val QUERY: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.QUERY & Double = js.native
+    /* 3 */ val QUERY: typings.inversifyExpressUtils.libConstantsMod.PARAMETER_TYPE.QUERY & Double = js.native
     
-    /* 0 */ val REQUEST: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.REQUEST & Double = js.native
+    /* 0 */ val REQUEST: typings.inversifyExpressUtils.libConstantsMod.PARAMETER_TYPE.REQUEST & Double = js.native
     
-    /* 1 */ val RESPONSE: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.RESPONSE & Double = js.native
+    /* 1 */ val RESPONSE: typings.inversifyExpressUtils.libConstantsMod.PARAMETER_TYPE.RESPONSE & Double = js.native
   }
   
   @JSImport("inversify-express-utils", "StringContent")
   @js.native
   open class StringContent protected ()
-    extends typings.inversifyExpressUtils.stringContentMod.StringContent {
+    extends typings.inversifyExpressUtils.libContentStringContentMod.StringContent {
     def this(content: String) = this()
   }
   
@@ -287,24 +287,24 @@ object mod {
     @JSImport("inversify-express-utils", "results.BadRequestErrorMessageResult")
     @js.native
     open class BadRequestErrorMessageResult protected ()
-      extends typings.inversifyExpressUtils.resultsMod.BadRequestErrorMessageResult {
+      extends typings.inversifyExpressUtils.libResultsMod.BadRequestErrorMessageResult {
       def this(message: String) = this()
     }
     
     @JSImport("inversify-express-utils", "results.BadRequestResult")
     @js.native
     open class BadRequestResult ()
-      extends typings.inversifyExpressUtils.resultsMod.BadRequestResult
+      extends typings.inversifyExpressUtils.libResultsMod.BadRequestResult
     
     @JSImport("inversify-express-utils", "results.ConflictResult")
     @js.native
     open class ConflictResult ()
-      extends typings.inversifyExpressUtils.resultsMod.ConflictResult
+      extends typings.inversifyExpressUtils.libResultsMod.ConflictResult
     
     @JSImport("inversify-express-utils", "results.CreatedNegotiatedContentResult")
     @js.native
     open class CreatedNegotiatedContentResult[T] protected ()
-      extends typings.inversifyExpressUtils.resultsMod.CreatedNegotiatedContentResult[T] {
+      extends typings.inversifyExpressUtils.libResultsMod.CreatedNegotiatedContentResult[T] {
       def this(location: String, content: T) = this()
       def this(location: URL_, content: T) = this()
     }
@@ -312,43 +312,43 @@ object mod {
     @JSImport("inversify-express-utils", "results.ExceptionResult")
     @js.native
     open class ExceptionResult protected ()
-      extends typings.inversifyExpressUtils.resultsMod.ExceptionResult {
+      extends typings.inversifyExpressUtils.libResultsMod.ExceptionResult {
       def this(error: js.Error) = this()
     }
     
     @JSImport("inversify-express-utils", "results.InternalServerErrorResult")
     @js.native
     open class InternalServerErrorResult ()
-      extends typings.inversifyExpressUtils.resultsMod.InternalServerErrorResult
+      extends typings.inversifyExpressUtils.libResultsMod.InternalServerErrorResult
     
     @JSImport("inversify-express-utils", "results.JsonResult")
     @js.native
     open class JsonResult protected ()
-      extends typings.inversifyExpressUtils.resultsMod.JsonResult {
+      extends typings.inversifyExpressUtils.libResultsMod.JsonResult {
       def this(json: Any, statusCode: Double) = this()
     }
     
     @JSImport("inversify-express-utils", "results.NotFoundResult")
     @js.native
     open class NotFoundResult ()
-      extends typings.inversifyExpressUtils.resultsMod.NotFoundResult
+      extends typings.inversifyExpressUtils.libResultsMod.NotFoundResult
     
     @JSImport("inversify-express-utils", "results.OkNegotiatedContentResult")
     @js.native
     open class OkNegotiatedContentResult[T] protected ()
-      extends typings.inversifyExpressUtils.resultsMod.OkNegotiatedContentResult[T] {
+      extends typings.inversifyExpressUtils.libResultsMod.OkNegotiatedContentResult[T] {
       def this(content: T) = this()
     }
     
     @JSImport("inversify-express-utils", "results.OkResult")
     @js.native
     open class OkResult ()
-      extends typings.inversifyExpressUtils.resultsMod.OkResult
+      extends typings.inversifyExpressUtils.libResultsMod.OkResult
     
     @JSImport("inversify-express-utils", "results.RedirectResult")
     @js.native
     open class RedirectResult protected ()
-      extends typings.inversifyExpressUtils.resultsMod.RedirectResult {
+      extends typings.inversifyExpressUtils.libResultsMod.RedirectResult {
       def this(location: String) = this()
       def this(location: URL_) = this()
     }
@@ -356,14 +356,14 @@ object mod {
     @JSImport("inversify-express-utils", "results.ResponseMessageResult")
     @js.native
     open class ResponseMessageResult protected ()
-      extends typings.inversifyExpressUtils.resultsMod.ResponseMessageResult {
-      def this(message: typings.inversifyExpressUtils.httpResponseMessageMod.HttpResponseMessage) = this()
+      extends typings.inversifyExpressUtils.libResultsMod.ResponseMessageResult {
+      def this(message: typings.inversifyExpressUtils.libHttpResponseMessageMod.HttpResponseMessage) = this()
     }
     
     @JSImport("inversify-express-utils", "results.StatusCodeResult")
     @js.native
     open class StatusCodeResult protected ()
-      extends typings.inversifyExpressUtils.resultsMod.StatusCodeResult {
+      extends typings.inversifyExpressUtils.libResultsMod.StatusCodeResult {
       def this(statusCode: Double) = this()
     }
   }

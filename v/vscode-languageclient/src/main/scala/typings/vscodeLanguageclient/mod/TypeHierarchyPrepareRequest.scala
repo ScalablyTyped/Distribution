@@ -1,8 +1,8 @@
 package typings.vscodeLanguageclient.mod
 
 import typings.vscodeLanguageclient.vscodeLanguageclientStrings.textDocumentSlashprepareTypeHierarchy
-import typings.vscodeLanguageserverProtocol.protocolTypeHierarchyMod.TypeHierarchyPrepareParams
-import typings.vscodeLanguageserverProtocol.protocolTypeHierarchyMod.TypeHierarchyRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDottypeHierarchyMod.TypeHierarchyPrepareParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDottypeHierarchyMod.TypeHierarchyRegistrationOptions
 import typings.vscodeLanguageserverTypes.mod.TypeHierarchyItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ object TypeHierarchyPrepareRequest {
   
   @JSImport("vscode-languageclient", "TypeHierarchyPrepareRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageclient", "TypeHierarchyPrepareRequest.method")
   @js.native
@@ -20,7 +20,7 @@ object TypeHierarchyPrepareRequest {
   
   @JSImport("vscode-languageclient", "TypeHierarchyPrepareRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     TypeHierarchyPrepareParams, 
     js.Array[TypeHierarchyItem] | Null, 
     scala.Nothing, 

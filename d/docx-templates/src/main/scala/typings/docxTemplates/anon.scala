@@ -3,12 +3,12 @@ package typings.docxTemplates
 import org.scalablytyped.runtime.StringDictionary
 import typings.docxTemplates.docxTemplatesStrings.errors
 import typings.docxTemplates.docxTemplatesStrings.success
-import typings.docxTemplates.processTemplateMod.ReportOutput
-import typings.docxTemplates.typesMod.BufferStatus
-import typings.docxTemplates.typesMod.Images
-import typings.docxTemplates.typesMod.Links
-import typings.docxTemplates.typesMod.Node
-import typings.docxTemplates.typesMod.NonTextNode
+import typings.docxTemplates.libProcessTemplateMod.ReportOutput
+import typings.docxTemplates.libTypesMod.BufferStatus
+import typings.docxTemplates.libTypesMod.Images
+import typings.docxTemplates.libTypesMod.Links
+import typings.docxTemplates.libTypesMod.Node
+import typings.docxTemplates.libTypesMod.NonTextNode
 import typings.jszip.mod.JSZip
 import typings.sax.mod.QualifiedAttribute
 import org.scalablytyped.runtime.StObject
@@ -242,7 +242,7 @@ object anon {
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[typings.docxTemplates.bundledMod.QualifiedAttribute | String] {
+       with /* key */ StringDictionary[typings.docxTemplates.libBundledMod.QualifiedAttribute | String] {
     
     var ContentType: js.UndefOr[String] = js.undefined
     
@@ -302,7 +302,7 @@ object anon {
     extends StObject
        with ReportOutput {
     
-    var htmls: typings.docxTemplates.typesMod.Htmls
+    var htmls: typings.docxTemplates.libTypesMod.Htmls
     
     var images: Images
     
@@ -314,14 +314,14 @@ object anon {
   }
   object Htmls {
     
-    inline def apply(htmls: typings.docxTemplates.typesMod.Htmls, images: Images, links: Links, report: Node): Htmls = {
+    inline def apply(htmls: typings.docxTemplates.libTypesMod.Htmls, images: Images, links: Links, report: Node): Htmls = {
       val __obj = js.Dynamic.literal(htmls = htmls.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], report = report.asInstanceOf[js.Any], status = "success")
       __obj.asInstanceOf[Htmls]
     }
     
     extension [Self <: Htmls](x: Self) {
       
-      inline def setHtmls(value: typings.docxTemplates.typesMod.Htmls): Self = StObject.set(x, "htmls", value.asInstanceOf[js.Any])
+      inline def setHtmls(value: typings.docxTemplates.libTypesMod.Htmls): Self = StObject.set(x, "htmls", value.asInstanceOf[js.Any])
       
       inline def setImages(value: Images): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       

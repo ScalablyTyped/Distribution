@@ -2,7 +2,7 @@ package typings.mnemonist
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mnemonist.anon.Evicted
-import typings.mnemonist.typesMod.IArrayLikeConstructor
+import typings.mnemonist.utilsTypesMod.IArrayLikeConstructor
 import typings.std.Iterable
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject

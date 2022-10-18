@@ -276,6 +276,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object expressServeStaticCoreAugmentingMod {
     
     trait Response extends StObject {

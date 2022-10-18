@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeviceProgress extends StObject {
   
-  var device: typings.trezorConnect.deviceMod.Device
+  var device: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device
   
   var progress: Double
 }
 object DeviceProgress {
   
-  inline def apply(device: typings.trezorConnect.deviceMod.Device, progress: Double): DeviceProgress = {
+  inline def apply(device: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device, progress: Double): DeviceProgress = {
     val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceProgress]
   }
   
   extension [Self <: DeviceProgress](x: Self) {
     
-    inline def setDevice(value: typings.trezorConnect.deviceMod.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
   }

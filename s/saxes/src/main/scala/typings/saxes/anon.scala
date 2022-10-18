@@ -17,32 +17,11 @@ import typings.saxes.mod.TagForOptions
 import typings.saxes.mod.TextHandler
 import typings.saxes.mod.XMLDecl
 import typings.saxes.mod.XMLDeclHandler
-import typings.saxes.saxesBooleans.`false`
-import typings.saxes.saxesBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait `0` extends StObject {
-    
-    var xmlns: js.UndefOr[`false`] = js.undefined
-  }
-  object `0` {
-    
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setXmlns(value: `false`): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
-      
-      inline def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
-    }
-  }
   
   trait Attribute[O] extends StObject {
     
@@ -167,23 +146,6 @@ object anon {
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Xmlns extends StObject {
-    
-    var xmlns: `true`
-  }
-  object Xmlns {
-    
-    inline def apply(): Xmlns = {
-      val __obj = js.Dynamic.literal(xmlns = true)
-      __obj.asInstanceOf[Xmlns]
-    }
-    
-    extension [Self <: Xmlns](x: Self) {
-      
-      inline def setXmlns(value: `true`): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
     }
   }
 }

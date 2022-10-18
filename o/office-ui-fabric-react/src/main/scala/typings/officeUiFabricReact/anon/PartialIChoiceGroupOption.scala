@@ -1,10 +1,10 @@
 package typings.officeUiFabricReact.anon
 
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionStyleProps
-import typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionStyles
-import typings.officeUiFabricReact.choiceGroupTypesMod.IChoiceGroupOption
-import typings.officeUiFabricReact.iconTypesMod.IIconProps
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsChoiceGroupChoiceGroupDottypesMod.IChoiceGroupOption
+import typings.officeUiFabricReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDottypesMod.IChoiceGroupOptionStyleProps
+import typings.officeUiFabricReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDottypesMod.IChoiceGroupOptionStyles
+import typings.officeUiFabricReact.libComponentsIconIconDottypesMod.IIconProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions removals`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions text`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`inline`
@@ -102,10 +102,10 @@ import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
-import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricUtilities.createRefMod.IRefObject
-import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
+import typings.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricUtilities.libCreateRefMod.IRefObject
+import typings.uifabricUtilities.libIrenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

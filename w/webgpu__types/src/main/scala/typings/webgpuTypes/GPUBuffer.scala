@@ -25,7 +25,7 @@ trait GPUBuffer
   def destroy(): Unit = js.native
   
   /**
-    * Returns a mapped range ArrayBuffer with the contents of the {@link GPUBuffer} in the given mapped range.
+    * Returns an {@link ArrayBuffer} with the contents of the {@link GPUBuffer} in the given mapped range.
     * @param offset - Offset in bytes into the buffer to return buffer contents from.
     * @param size - Size in bytes of the {@link ArrayBuffer} to return.
     */
@@ -37,6 +37,15 @@ trait GPUBuffer
   /**
     * Maps the given range of the {@link GPUBuffer} and resolves the returned {@link Promise} when the
     * {@link GPUBuffer}'s content is ready to be accessed with {@link GPUBuffer#getMappedRange}.
+    * The resolution of the returned {@link Promise} **only** indicates that the buffer has been mapped.
+    * It does not guarantee the completion of any other operations visible to the content timeline,
+    * and in particular does not imply that any other {@link Promise} returned from
+    * {@link GPUQueue#onSubmittedWorkDone()} or {@link GPUBuffer#mapAsync} on other {@link GPUBuffer}s
+    * have resolved.
+    * The resolution of the {@link Promise} returned from {@link GPUQueue#onSubmittedWorkDone}
+    * **does** imply the completion of
+    * {@link GPUBuffer#mapAsync} calls made prior to that call,
+    * on {@link GPUBuffer}s last used exclusively on that queue.
     * @param mode - Whether the buffer should be mapped for reading or writing.
     * @param offset - Offset in bytes into the buffer to the start of the range to map.
     * @param size - Size in bytes of the range to map.
@@ -46,9 +55,8 @@ trait GPUBuffer
   def mapAsync(mode: GPUMapModeFlags, offset: GPUSize64): js.Promise[Unit] = js.native
   def mapAsync(mode: GPUMapModeFlags, offset: GPUSize64, size: GPUSize64): js.Promise[Unit] = js.native
   
-  /**
-    * The length of the {@link GPUBuffer} allocation in bytes.
-    */
+  val mapState: GPUBufferMapState = js.native
+  
   val size: GPUSize64 = js.native
   
   /**
@@ -57,8 +65,5 @@ trait GPUBuffer
     */
   def unmap(): Unit = js.native
   
-  /**
-    * The allowed usages for this {@link GPUBuffer}.
-    */
   val usage: GPUBufferUsageFlags = js.native
 }

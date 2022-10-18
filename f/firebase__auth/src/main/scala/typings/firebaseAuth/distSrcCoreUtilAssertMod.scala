@@ -21,16 +21,12 @@ object distSrcCoreUtilAssertMod {
     assertion: Any,
     auth: Auth,
     code: K,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends LessAppName<K> ? [LessAppName<K> | undefined] : [LessAppName<K>] is not an array type */ data: js.Array[js.UndefOr[LessAppName[K]]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends LessAppName<K> ? [LessAppName<K> | undefined] : [LessAppName<K>] is not an array type */ data: /* import warning: importer.ImportType#apply Failed type conversion: {} extends @firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K> ? [@firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K> | undefined] : [@firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K>] */ js.Any
   ): /* asserts assertion */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_assert")(assertion.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[/* asserts assertion */ Boolean]
   inline def assert[K /* <: AuthErrorCode */](
     assertion: Any,
     code: K,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends AuthErrorParams[K] ? [AuthErrorParams[K] | undefined] : [AuthErrorParams[K]] is not an array type */ data: js.Array[
-      js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K] */ js.Any
-      ]
-    ]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends AuthErrorParams[K] ? [AuthErrorParams[K] | undefined] : [AuthErrorParams[K]] is not an array type */ data: /* import warning: importer.ImportType#apply Failed type conversion: {} extends @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K] ? [@firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K] | undefined] : [@firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K]] */ js.Any
   ): /* asserts assertion */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_assert")(assertion.asInstanceOf[js.Any], code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[/* asserts assertion */ Boolean]
   
   inline def assertInstanceOf(auth: Auth, `object`: js.Object, instance: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_assertInstanceOf")(auth.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -40,15 +36,11 @@ object distSrcCoreUtilAssertMod {
   inline def createError[K /* <: AuthErrorCode */](
     auth: Auth,
     code: K,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends LessAppName<K> ? [LessAppName<K> | undefined] : [LessAppName<K>] is not an array type */ data: js.Array[js.UndefOr[LessAppName[K]]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends LessAppName<K> ? [LessAppName<K> | undefined] : [LessAppName<K>] is not an array type */ data: /* import warning: importer.ImportType#apply Failed type conversion: {} extends @firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K> ? [@firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K> | undefined] : [@firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K>] */ js.Any
   ): FirebaseError = (^.asInstanceOf[js.Dynamic].applyDynamic("_createError")(auth.asInstanceOf[js.Any], code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[FirebaseError]
   inline def createError[K /* <: AuthErrorCode */](
     code: K,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends AuthErrorParams[K] ? [AuthErrorParams[K] | undefined] : [AuthErrorParams[K]] is not an array type */ data: js.Array[
-      js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K] */ js.Any
-      ]
-    ]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends AuthErrorParams[K] ? [AuthErrorParams[K] | undefined] : [AuthErrorParams[K]] is not an array type */ data: /* import warning: importer.ImportType#apply Failed type conversion: {} extends @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K] ? [@firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K] | undefined] : [@firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K]] */ js.Any
   ): FirebaseError = (^.asInstanceOf[js.Dynamic].applyDynamic("_createError")(code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[FirebaseError]
   
   inline def debugAssert(assertion: Any, message: String): /* asserts assertion */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("debugAssert")(assertion.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts assertion */ Boolean]
@@ -60,15 +52,11 @@ object distSrcCoreUtilAssertMod {
   inline def fail[K /* <: AuthErrorCode */](
     auth: Auth,
     code: K,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends LessAppName<K> ? [LessAppName<K> | undefined] : [LessAppName<K>] is not an array type */ data: js.Array[js.UndefOr[LessAppName[K]]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends LessAppName<K> ? [LessAppName<K> | undefined] : [LessAppName<K>] is not an array type */ data: /* import warning: importer.ImportType#apply Failed type conversion: {} extends @firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K> ? [@firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K> | undefined] : [@firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K>] */ js.Any
   ): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("_fail")(auth.asInstanceOf[js.Any], code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
   inline def fail[K /* <: AuthErrorCode */](
     code: K,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends AuthErrorParams[K] ? [AuthErrorParams[K] | undefined] : [AuthErrorParams[K]] is not an array type */ data: js.Array[
-      js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K] */ js.Any
-      ]
-    ]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends AuthErrorParams[K] ? [AuthErrorParams[K] | undefined] : [AuthErrorParams[K]] is not an array type */ data: /* import warning: importer.ImportType#apply Failed type conversion: {} extends @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K] ? [@firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K] | undefined] : [@firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K]] */ js.Any
   ): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("_fail")(code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
   
   inline def opt(`type`: TypeExpectation): Optional = ^.asInstanceOf[js.Dynamic].applyDynamic("opt")(`type`.asInstanceOf[js.Any]).asInstanceOf[Optional]

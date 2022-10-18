@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A frame source that provides color frames. */
-@JSGlobal("Windows.Devices.Perception.PerceptionColorFrameSource")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.PerceptionColorFrameSource")
 @js.native
-abstract class PerceptionColorFrameSource ()
+open class PerceptionColorFrameSource ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.PerceptionColorFrameSource
 object PerceptionColorFrameSource {

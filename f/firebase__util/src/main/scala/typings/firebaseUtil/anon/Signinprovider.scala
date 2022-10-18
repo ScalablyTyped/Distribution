@@ -1,6 +1,6 @@
 package typings.firebaseUtil.anon
 
-import typings.firebaseUtil.emulatorMod.FirebaseSignInProvider
+import typings.firebaseUtil.distNodeEsmSrcEmulatorMod.FirebaseSignInProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "_CreationDataStorage")
 @js.native
 open class CreationDataStorage ()
-  extends typings.babylonjs.legacyMod.CreationDataStorage
+  extends typings.babylonjs.legacyLegacyMod.CreationDataStorage

@@ -7,7 +7,7 @@ import typings.propTypes.mod.Requireable
 import typings.react.mod.ReactElement
 import typings.react.mod.Validator
 import typings.react.mod.global.JSX.Element
-import typings.victoryStack.victoryStackMod.VictoryStackProps
+import typings.victoryStack.libVictoryStackMod.VictoryStackProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -24,12 +24,12 @@ object TextureTools {
   @js.native
   def ApplyPostProcess: js.Function6[
     /* postProcessName */ String, 
-    /* internalTexture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+    /* internalTexture */ typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture, 
     /* scene */ typings.babylonjs.sceneMod.Scene, 
     /* type */ js.UndefOr[Double], 
     /* samplingMode */ js.UndefOr[Double], 
     /* format */ js.UndefOr[Double], 
-    js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]
+    js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]
   ] = js.native
   /**
     * Apply a post process to a texture
@@ -43,70 +43,70 @@ object TextureTools {
     */
   inline def ApplyPostProcess(
     postProcessName: String,
-    internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+    internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     scene: typings.babylonjs.sceneMod.Scene
-  ): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
   inline def ApplyPostProcess(
     postProcessName: String,
-    internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+    internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Double
-  ): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
   inline def ApplyPostProcess(
     postProcessName: String,
-    internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+    internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Double,
     samplingMode: Double
-  ): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
   inline def ApplyPostProcess(
     postProcessName: String,
-    internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+    internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Double,
     samplingMode: Double,
     format: Double
-  ): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
   inline def ApplyPostProcess(
     postProcessName: String,
-    internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+    internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Double,
     samplingMode: Unit,
     format: Double
-  ): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
   inline def ApplyPostProcess(
     postProcessName: String,
-    internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+    internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Unit,
     samplingMode: Double
-  ): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
   inline def ApplyPostProcess(
     postProcessName: String,
-    internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+    internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Unit,
     samplingMode: Double,
     format: Double
-  ): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
   inline def ApplyPostProcess(
     postProcessName: String,
-    internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+    internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     scene: typings.babylonjs.sceneMod.Scene,
     `type`: Unit,
     samplingMode: Unit,
     format: Double
-  ): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+  ): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
   inline def ApplyPostProcess_=(
     x: js.Function6[
       /* postProcessName */ String, 
-      /* internalTexture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+      /* internalTexture */ typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture, 
       /* scene */ typings.babylonjs.sceneMod.Scene, 
       /* type */ js.UndefOr[Double], 
       /* samplingMode */ js.UndefOr[Double], 
       /* format */ js.UndefOr[Double], 
-      js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]
+      js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplyPostProcess")(x.asInstanceOf[js.Any])
   
@@ -121,11 +121,11 @@ object TextureTools {
   @JSImport("babylonjs/index", "TextureTools.CreateResizedCopy")
   @js.native
   def CreateResizedCopy: js.Function4[
-    /* texture */ typings.babylonjs.textureMod.Texture, 
+    /* texture */ typings.babylonjs.materialsTexturesTextureMod.Texture, 
     /* width */ Double, 
     /* height */ Double, 
     /* useBilinearMode */ js.UndefOr[Boolean], 
-    typings.babylonjs.textureMod.Texture
+    typings.babylonjs.materialsTexturesTextureMod.Texture
   ] = js.native
   /**
     * Uses the GPU to create a copy texture rescaled at a given size
@@ -135,20 +135,20 @@ object TextureTools {
     * @param useBilinearMode defines if bilinear mode has to be used
     * @returns the generated texture
     */
-  inline def CreateResizedCopy(texture: typings.babylonjs.textureMod.Texture, width: Double, height: Double): typings.babylonjs.textureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateResizedCopy")(texture.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.textureMod.Texture]
+  inline def CreateResizedCopy(texture: typings.babylonjs.materialsTexturesTextureMod.Texture, width: Double, height: Double): typings.babylonjs.materialsTexturesTextureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateResizedCopy")(texture.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesTextureMod.Texture]
   inline def CreateResizedCopy(
-    texture: typings.babylonjs.textureMod.Texture,
+    texture: typings.babylonjs.materialsTexturesTextureMod.Texture,
     width: Double,
     height: Double,
     useBilinearMode: Boolean
-  ): typings.babylonjs.textureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateResizedCopy")(texture.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], useBilinearMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.textureMod.Texture]
+  ): typings.babylonjs.materialsTexturesTextureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateResizedCopy")(texture.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], useBilinearMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesTextureMod.Texture]
   inline def CreateResizedCopy_=(
     x: js.Function4[
-      /* texture */ typings.babylonjs.textureMod.Texture, 
+      /* texture */ typings.babylonjs.materialsTexturesTextureMod.Texture, 
       /* width */ Double, 
       /* height */ Double, 
       /* useBilinearMode */ js.UndefOr[Boolean], 
-      typings.babylonjs.textureMod.Texture
+      typings.babylonjs.materialsTexturesTextureMod.Texture
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateResizedCopy")(x.asInstanceOf[js.Any])
   

@@ -1,6 +1,6 @@
 package typings.reactDndAsap
 
-import typings.reactDndAsap.typesMod.TaskFn
+import typings.reactDndAsap.distTypesMod.TaskFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +14,12 @@ object mod {
   @JSImport("@react-dnd/asap", "AsapQueue")
   @js.native
   open class AsapQueue ()
-    extends typings.reactDndAsap.asapQueueMod.AsapQueue
+    extends typings.reactDndAsap.distAsapQueueMod.AsapQueue
   
   @JSImport("@react-dnd/asap", "TaskFactory")
   @js.native
   open class TaskFactory protected ()
-    extends typings.reactDndAsap.taskFactoryMod.TaskFactory {
+    extends typings.reactDndAsap.distTaskFactoryMod.TaskFactory {
     def this(onError: js.Function1[/* err */ Any, Unit]) = this()
   }
   

@@ -1,6 +1,6 @@
 package typings.cucumberMessages.mod
 
-import typings.cucumberMessages.binaryToMessageStreamMod.default
+import typings.cucumberMessages.distSrcBinaryToMessageStreamMod.default
 import typings.protobufjs.mod.Reader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

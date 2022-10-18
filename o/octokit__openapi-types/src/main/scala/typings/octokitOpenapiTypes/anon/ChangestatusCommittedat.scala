@@ -20,15 +20,21 @@ trait ChangestatusCommittedat extends StObject {
     */
   var url: String
   
-  var user: Avatarurl | Null
+  var user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
   
   /** @example 57a7f021a713b1c5a6a199b54cc514735d2d462f */
   var version: String
 }
 object ChangestatusCommittedat {
   
-  inline def apply(change_status: Additions, committed_at: String, url: String, version: String): ChangestatusCommittedat = {
-    val __obj = js.Dynamic.literal(change_status = change_status.asInstanceOf[js.Any], committed_at = committed_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], user = null)
+  inline def apply(
+    change_status: Additions,
+    committed_at: String,
+    url: String,
+    user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
+    version: String
+  ): ChangestatusCommittedat = {
+    val __obj = js.Dynamic.literal(change_status = change_status.asInstanceOf[js.Any], committed_at = committed_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangestatusCommittedat]
   }
   
@@ -40,9 +46,9 @@ object ChangestatusCommittedat {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
-    
-    inline def setUserNull: Self = StObject.set(x, "user", null)
+    inline def setUser(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+    ): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

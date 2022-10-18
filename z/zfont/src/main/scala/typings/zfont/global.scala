@@ -21,7 +21,7 @@ object global {
     inline def init(x: Typeofzdog): Typeofzdog = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(x.asInstanceOf[js.Any]).asInstanceOf[Typeofzdog]
     
     /* augmented module */
-    object mod {
+    object zdogMod {
       
       @JSImport("zdog", JSImport.Namespace)
       @js.native

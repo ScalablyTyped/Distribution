@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "InstancesBlock")
 @js.native
 open class InstancesBlock protected ()
-  extends typings.babylonjs.legacyMod.InstancesBlock {
+  extends typings.babylonjs.legacyLegacyMod.InstancesBlock {
   /**
     * Creates a new InstancesBlock
     * @param name defines the block name

@@ -1,9 +1,9 @@
 package typings.jestFakeTimers
 
-import typings.jestFakeTimers.jestFakeTimersMod.TimerConfig
+import typings.jestFakeTimers.mod.TimerConfig
 import typings.jestMessageUtil.mod.StackTraceConfig
 import typings.jestMock.mod.ModuleMocker
-import typings.node.NodeJS.Global
+import typings.jestTypes.mod.ProjectConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object anon {
     
     var config: StackTraceConfig
     
-    var global: Global
+    var global: /* globalThis */ Any
     
     var maxLoops: js.UndefOr[Double] = js.undefined
     
@@ -26,7 +26,7 @@ object anon {
     
     inline def apply[TimerRef](
       config: StackTraceConfig,
-      global: Global,
+      global: /* globalThis */ Any,
       moduleMocker: ModuleMocker,
       timerConfig: TimerConfig[TimerRef]
     ): Config[TimerRef] = {
@@ -38,7 +38,7 @@ object anon {
       
       inline def setConfig(value: StackTraceConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      inline def setGlobal(value: Global): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: /* globalThis */ Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
       inline def setMaxLoops(value: Double): Self = StObject.set(x, "maxLoops", value.asInstanceOf[js.Any])
       
@@ -47,6 +47,27 @@ object anon {
       inline def setModuleMocker(value: ModuleMocker): Self = StObject.set(x, "moduleMocker", value.asInstanceOf[js.Any])
       
       inline def setTimerConfig(value: TimerConfig[TimerRef]): Self = StObject.set(x, "timerConfig", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Global extends StObject {
+    
+    var config: ProjectConfig
+    
+    var global: /* globalThis */ Any
+  }
+  object Global {
+    
+    inline def apply(config: ProjectConfig, global: /* globalThis */ Any): Global = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Global]
+    }
+    
+    extension [Self <: Global](x: Self) {
+      
+      inline def setConfig(value: ProjectConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      
+      inline def setGlobal(value: /* globalThis */ Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     }
   }
 }

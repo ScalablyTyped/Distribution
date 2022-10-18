@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsFundViewOutlinedMod.FundViewOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fundViewOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/FundViewOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/FundViewOutlined", JSImport.Default)
   @js.native
   val default: FundViewOutlinedIconType = js.native
-  
-  @js.native
-  trait FundViewOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_FundViewOutlinedIconType: String = js.native
-  }
   
   type _To = FundViewOutlinedIconType
   

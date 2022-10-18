@@ -43,38 +43,4 @@ object anon {
     def apply(input: URL): js.Promise[Response] = js.native
     def apply(input: URL, init: RequestInit): js.Promise[Response] = js.native
   }
-  
-  trait MetaMeta[Meta] extends StObject {
-    
-    var meta: Meta
-  }
-  object MetaMeta {
-    
-    inline def apply[Meta](meta: Meta): MetaMeta[Meta] = {
-      val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MetaMeta[Meta]]
-    }
-    
-    extension [Self <: MetaMeta[?], Meta](x: Self & MetaMeta[Meta]) {
-      
-      inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait PayloadPayload[Payload] extends StObject {
-    
-    var payload: Payload
-  }
-  object PayloadPayload {
-    
-    inline def apply[Payload](payload: Payload): PayloadPayload[Payload] = {
-      val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PayloadPayload[Payload]]
-    }
-    
-    extension [Self <: PayloadPayload[?], Payload](x: Self & PayloadPayload[Payload]) {
-      
-      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
-    }
-  }
 }

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,7 @@ trait StreamingComputationConfig extends StObject {
   
   /** Map from user name of stateful transforms in this stage to their state family. */
   var transformUserNameToStateFamily: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingComputationConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object StreamingComputationConfig {
@@ -54,9 +51,7 @@ object StreamingComputationConfig {
     inline def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
     
     inline def setTransformUserNameToStateFamily(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingComputationConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "transformUserNameToStateFamily", value.asInstanceOf[js.Any])
     
     inline def setTransformUserNameToStateFamilyUndefined: Self = StObject.set(x, "transformUserNameToStateFamily", js.undefined)

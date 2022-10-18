@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EggContextHttpClientConstructor
   extends StObject
-     with Instantiable1[/* ctx */ Context, EggContextHttpClient]
+     with Instantiable1[/* ctx */ Context[Any], EggContextHttpClient]

@@ -12,9 +12,9 @@ import typings.jestTestResult.mod.TestContext
 import typings.jestTestResult.mod.TestResult
 import typings.jestTypes.mod.GlobalConfig
 import typings.jestTypes.mod.ProjectConfig
+import typings.node.NodeJS.WritableStream
 import typings.node.processMod.global.NodeJS.WriteStream
 import typings.std.Set
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,17 +83,17 @@ object mod {
     
     /* private */ var _checkThreshold: Any = js.native
     
-    /* private */ var _context: Any = js.native
+    /* private */ val _context: Any = js.native
     
-    /* private */ var _coverageMap: Any = js.native
+    /* private */ val _coverageMap: Any = js.native
     
     /* private */ var _getCoverageResult: Any = js.native
     
-    /* private */ var _globalConfig: Any = js.native
+    /* private */ val _globalConfig: Any = js.native
     
-    /* private */ var _sourceMapStore: Any = js.native
+    /* private */ val _sourceMapStore: Any = js.native
     
-    /* private */ var _v8CoverageResults: Any = js.native
+    /* private */ val _v8CoverageResults: Any = js.native
     
     @JSName("onTestResult")
     def onTestResult_MCoverageReporter(_test: Test, testResult: TestResult): Unit = js.native
@@ -115,20 +115,20 @@ object mod {
     
     /* protected */ def __printStatus(): Unit = js.native
     
+    /* protected */ def __wrapStdio(stream: WritableStream): Unit = js.native
     /* protected */ def __wrapStdio(stream: WriteStream): Unit = js.native
-    /* protected */ def __wrapStdio(stream: WritableStream[Any]): Unit = js.native
     
-    /* private */ var _bufferedOutput: Any = js.native
+    /* private */ val _bufferedOutput: Any = js.native
     
     /* private */ var _clear: Any = js.native
     
-    /* private */ var _err: Any = js.native
+    /* private */ val _err: Any = js.native
     
     /* protected */ var _globalConfig: GlobalConfig = js.native
     
-    /* private */ var _out: Any = js.native
+    /* private */ val _out: Any = js.native
     
-    /* private */ var _status: Any = js.native
+    /* private */ val _status: Any = js.native
     
     def forceFlushBufferedOutput(): Unit = js.native
     
@@ -179,9 +179,9 @@ object mod {
     
     /* private */ var _context: Any = js.native
     
-    /* private */ var _globalConfig: Any = js.native
+    /* private */ val _globalConfig: Any = js.native
     
-    /* private */ var _notifier: Any = js.native
+    /* private */ val _notifier: Any = js.native
   }
   /* static members */
   object NotifyReporter {
@@ -200,7 +200,7 @@ object mod {
     
     /* private */ var _getTestSummary: Any = js.native
     
-    /* private */ var _globalConfig: Any = js.native
+    /* private */ val _globalConfig: Any = js.native
     
     /* private */ var _printSnapshotSummary: Any = js.native
     
@@ -263,6 +263,8 @@ object mod {
     @JSImport("@jest/reporters", "utils.formatTestPath")
     @js.native
     def formatTestPath: js.Function2[/* config */ GlobalConfig | ProjectConfig, /* testPath */ String, String] = js.native
+    inline def formatTestPath(config: GlobalConfig, testPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTestPath")(config.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def formatTestPath(config: ProjectConfig, testPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTestPath")(config.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def formatTestPath_=(x: js.Function2[/* config */ GlobalConfig | ProjectConfig, /* testPath */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatTestPath")(x.asInstanceOf[js.Any])
     
     @JSImport("@jest/reporters", "utils.getResultHeader")
@@ -273,6 +275,8 @@ object mod {
         /* projectConfig */ js.UndefOr[ProjectConfig], 
         String
       ] = js.native
+    inline def getResultHeader(result: TestResult, globalConfig: GlobalConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getResultHeader")(result.asInstanceOf[js.Any], globalConfig.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getResultHeader(result: TestResult, globalConfig: GlobalConfig, projectConfig: ProjectConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getResultHeader")(result.asInstanceOf[js.Any], globalConfig.asInstanceOf[js.Any], projectConfig.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def getResultHeader_=(
       x: js.Function3[
           /* result */ TestResult, 
@@ -285,6 +289,7 @@ object mod {
     @JSImport("@jest/reporters", "utils.getSnapshotStatus")
     @js.native
     def getSnapshotStatus: js.Function2[/* snapshot */ Added, /* afterUpdate */ Boolean, js.Array[String]] = js.native
+    inline def getSnapshotStatus(snapshot: Added, afterUpdate: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotStatus")(snapshot.asInstanceOf[js.Any], afterUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     inline def getSnapshotStatus_=(x: js.Function2[/* snapshot */ Added, /* afterUpdate */ Boolean, js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getSnapshotStatus")(x.asInstanceOf[js.Any])
     
     @JSImport("@jest/reporters", "utils.getSnapshotSummary")
@@ -295,6 +300,7 @@ object mod {
         /* updateCommand */ String, 
         js.Array[String]
       ] = js.native
+    inline def getSnapshotSummary(snapshots: SnapshotSummary, globalConfig: GlobalConfig, updateCommand: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotSummary")(snapshots.asInstanceOf[js.Any], globalConfig.asInstanceOf[js.Any], updateCommand.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     inline def getSnapshotSummary_=(
       x: js.Function3[
           /* snapshots */ SnapshotSummary, 
@@ -311,6 +317,8 @@ object mod {
         /* options */ js.UndefOr[SummaryOptions], 
         String
       ] = js.native
+    inline def getSummary(aggregatedResults: AggregatedResult): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSummary")(aggregatedResults.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getSummary(aggregatedResults: AggregatedResult, options: SummaryOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSummary")(aggregatedResults.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def getSummary_=(
       x: js.Function2[
           /* aggregatedResults */ AggregatedResult, 
@@ -322,11 +330,14 @@ object mod {
     @JSImport("@jest/reporters", "utils.printDisplayName")
     @js.native
     def printDisplayName: js.Function1[/* config */ ProjectConfig, String] = js.native
+    inline def printDisplayName(config: ProjectConfig): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printDisplayName")(config.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def printDisplayName_=(x: js.Function1[/* config */ ProjectConfig, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("printDisplayName")(x.asInstanceOf[js.Any])
     
     @JSImport("@jest/reporters", "utils.relativePath")
     @js.native
     def relativePath: js.Function2[/* config */ GlobalConfig | ProjectConfig, /* testPath */ String, Basename] = js.native
+    inline def relativePath(config: GlobalConfig, testPath: String): Basename = (^.asInstanceOf[js.Dynamic].applyDynamic("relativePath")(config.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[Basename]
+    inline def relativePath(config: ProjectConfig, testPath: String): Basename = (^.asInstanceOf[js.Dynamic].applyDynamic("relativePath")(config.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[Basename]
     inline def relativePath_=(x: js.Function2[/* config */ GlobalConfig | ProjectConfig, /* testPath */ String, Basename]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relativePath")(x.asInstanceOf[js.Any])
     
     @JSImport("@jest/reporters", "utils.trimAndFormatPath")
@@ -338,6 +349,8 @@ object mod {
         /* columns */ Double, 
         String
       ] = js.native
+    inline def trimAndFormatPath(pad: Double, config: GlobalConfig, testPath: String, columns: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trimAndFormatPath")(pad.asInstanceOf[js.Any], config.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def trimAndFormatPath(pad: Double, config: ProjectConfig, testPath: String, columns: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trimAndFormatPath")(pad.asInstanceOf[js.Any], config.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def trimAndFormatPath_=(
       x: js.Function4[
           /* pad */ Double, 
@@ -496,6 +509,10 @@ object mod {
     
     var roundTime: js.UndefOr[Boolean] = js.undefined
     
+    var seed: js.UndefOr[Double] = js.undefined
+    
+    var showSeed: js.UndefOr[Boolean] = js.undefined
+    
     var width: js.UndefOr[Double] = js.undefined
   }
   object SummaryOptions {
@@ -520,6 +537,14 @@ object mod {
       inline def setRoundTime(value: Boolean): Self = StObject.set(x, "roundTime", value.asInstanceOf[js.Any])
       
       inline def setRoundTimeUndefined: Self = StObject.set(x, "roundTime", js.undefined)
+      
+      inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      
+      inline def setShowSeed(value: Boolean): Self = StObject.set(x, "showSeed", value.asInstanceOf[js.Any])
+      
+      inline def setShowSeedUndefined: Self = StObject.set(x, "showSeed", js.undefined)
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,6 @@
 package typings.reachCombobox
 
-import typings.reachCombobox.srcMod.State
+import typings.reachCombobox.mod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,4 +30,24 @@ object reachComboboxStrings {
     extends StObject
        with State
   inline def SUGGESTING: SUGGESTING = "SUGGESTING".asInstanceOf[SUGGESTING]
+  
+  @js.native
+  sealed trait button extends StObject
+  inline def button: button = "button".asInstanceOf[button]
+  
+  @js.native
+  sealed trait div extends StObject
+  inline def div: div = "div".asInstanceOf[div]
+  
+  @js.native
+  sealed trait input extends StObject
+  inline def input: input = "input".asInstanceOf[input]
+  
+  @js.native
+  sealed trait li extends StObject
+  inline def li: li = "li".asInstanceOf[li]
+  
+  @js.native
+  sealed trait ul extends StObject
+  inline def ul: ul = "ul".asInstanceOf[ul]
 }

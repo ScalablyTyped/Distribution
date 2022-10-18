@@ -1,7 +1,7 @@
 package typings.antd.anon
 
-import typings.rcSelect.optGroupMod.OptionGroupFC
-import typings.rcSelect.optionMod.OptionFC
+import typings.rcSelect.libOptGroupMod.OptionGroupFC
+import typings.rcSelect.libOptionMod.OptionFC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

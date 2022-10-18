@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsBackendWasm.anon
 
-import typings.tensorflowTfjsBackendWasm.backendWasmMod.BackendWasm
-import typings.tensorflowTfjsCore.kernelNamesMod.StridedSliceAttrs
-import typings.tensorflowTfjsCore.kernelNamesMod.StridedSliceInputs
+import typings.tensorflowTfjsBackendWasm.distBackendWasmMod.BackendWasm
+import typings.tensorflowTfjsCore.distKernelNamesMod.StridedSliceAttrs
+import typings.tensorflowTfjsCore.distKernelNamesMod.StridedSliceInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod.domainmodels
 
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "domainmodels.DeletingBehavior")
 @js.native
 open class DeletingBehavior protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.DeletingBehavior {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.domainmodels.DeletingBehavior {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object DeletingBehavior {
@@ -20,18 +20,18 @@ object DeletingBehavior {
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.DeletingBehavior.DeleteMeAndReferences")
   @js.native
-  def DeleteMeAndReferences: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior = js.native
-  inline def DeleteMeAndReferences_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeAndReferences")(x.asInstanceOf[js.Any])
+  def DeleteMeAndReferences: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.DeletingBehavior = js.native
+  inline def DeleteMeAndReferences_=(x: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeAndReferences")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.DeletingBehavior.DeleteMeButKeepReferences")
   @js.native
-  def DeleteMeButKeepReferences: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior = js.native
-  inline def DeleteMeButKeepReferences_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeButKeepReferences")(x.asInstanceOf[js.Any])
+  def DeleteMeButKeepReferences: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.DeletingBehavior = js.native
+  inline def DeleteMeButKeepReferences_=(x: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeButKeepReferences")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.DeletingBehavior.DeleteMeIfNoReferences")
   @js.native
-  def DeleteMeIfNoReferences: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior = js.native
-  inline def DeleteMeIfNoReferences_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeIfNoReferences")(x.asInstanceOf[js.Any])
+  def DeleteMeIfNoReferences: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.DeletingBehavior = js.native
+  inline def DeleteMeIfNoReferences_=(x: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeIfNoReferences")(x.asInstanceOf[js.Any])
 }

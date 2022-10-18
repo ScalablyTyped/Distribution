@@ -1,6 +1,6 @@
 package typings.crocks.mod
 
-import typings.crocks.typesMod.VariadicFunction
+import typings.crocks.internalTypesMod.VariadicFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

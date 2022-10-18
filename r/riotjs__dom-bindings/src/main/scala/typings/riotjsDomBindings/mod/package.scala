@@ -1,6 +1,5 @@
 package typings.riotjsDomBindings.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.riotjsDomBindings.mod.^
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -26,7 +25,7 @@ Scope,
 java.lang.String, 
 java.lang.String, 
 scala.Any, 
-Scope & typings.riotjsDomBindings.riotjsDomBindingsStrings.BindingData & org.scalablytyped.runtime.TopLevel[scala.Any]]
+Scope & (/ * import warning: importer.ImportType#apply Failed type conversion: {[ Property in string ]: any} * / js.Any)]
   - typings.riotjsDomBindings.mod.IfBindingData[Scope]
   - typings.riotjsDomBindings.mod.SimpleBindingData[Scope]
   - typings.riotjsDomBindings.mod.SlotBindingData[Scope]
@@ -37,7 +36,7 @@ Scope,
 String, 
 String, 
 Any, 
-Scope & typings.riotjsDomBindings.riotjsDomBindingsStrings.BindingData & TopLevel[Any]])
+Scope & (/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in string ]: any} */ js.Any)])
 
 /* Rewritten from type alias, can be one of: 
   - typings.riotjsDomBindings.mod.AttributeExpressionData[Scope]

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler", "Type")
+/* note: abstract class */ @JSImport("@angular/compiler", "Type")
 @js.native
-abstract class Type () extends StObject {
+open class Type () extends StObject {
   def this(modifiers: TypeModifier) = this()
   
   def hasModifier(modifier: TypeModifier): Boolean = js.native

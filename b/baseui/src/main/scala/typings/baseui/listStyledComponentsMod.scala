@@ -8,7 +8,7 @@ import typings.baseui.listTypesMod.StyledArtworkContainerProps
 import typings.baseui.listTypesMod.StyledContentProps
 import typings.baseui.listTypesMod.StyledHeadingHeadingProps
 import typings.baseui.listTypesMod.StyledRootProps
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

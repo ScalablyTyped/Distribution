@@ -1,5 +1,6 @@
 package typings.cssTree.mod
 
+import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,12 +21,6 @@ open class List[TData] () extends StObject {
   
   def createItem(data: TData): ListItem[TData] = js.native
   
-  def each(fn: IteratorFn[TData, Unit, typings.cssTree.mod.List[TData]]): Unit = js.native
-  def each[TContext](fn: IteratorFn[TData, Unit, TContext], context: TContext): Unit = js.native
-  
-  def eachRight(fn: IteratorFn[TData, Unit, typings.cssTree.mod.List[TData]]): Unit = js.native
-  def eachRight[TContext](fn: IteratorFn[TData, Unit, TContext], context: TContext): Unit = js.native
-  
   def filter(fn: IteratorFn[TData, Boolean, typings.cssTree.mod.List[TData]]): typings.cssTree.mod.List[TData] = js.native
   def filter[TContext](fn: IteratorFn[TData, Boolean, TContext], context: TContext): typings.cssTree.mod.List[TData] = js.native
   @JSName("filter")
@@ -33,7 +28,7 @@ open class List[TData] () extends StObject {
   @JSName("filter")
   def filter_TResult[TResult /* <: TData */](fn: FilterFn[TData, TResult, typings.cssTree.mod.List[TData]]): typings.cssTree.mod.List[TResult] = js.native
   
-  def first(): TData | Null = js.native
+  def first: TData | Null = js.native
   
   def forEach(fn: IteratorFn[TData, Unit, typings.cssTree.mod.List[TData]]): Unit = js.native
   def forEach[TContext](fn: IteratorFn[TData, Unit, TContext], context: TContext): Unit = js.native
@@ -43,17 +38,18 @@ open class List[TData] () extends StObject {
   
   def fromArray(array: js.Array[TData]): typings.cssTree.mod.List[TData] = js.native
   
-  def getSize(): Double = js.native
-  
   def insert(item: ListItem[TData], before: ListItem[TData]): typings.cssTree.mod.List[TData] = js.native
   
   def insertData(data: TData, before: ListItem[TData]): typings.cssTree.mod.List[TData] = js.native
   
   def insertList(list: typings.cssTree.mod.List[TData], before: ListItem[TData]): typings.cssTree.mod.List[TData] = js.native
   
-  def isEmpty(): Boolean = js.native
+  def isEmpty: Boolean = js.native
   
-  def last(): TData | Null = js.native
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[TData]] = js.native
+  
+  def last: TData | Null = js.native
   
   def map[TResult](fn: IteratorFn[TData, TResult, typings.cssTree.mod.List[TData]]): typings.cssTree.mod.List[TResult] = js.native
   def map[TContext, TResult](fn: IteratorFn[TData, TResult, TContext], context: TContext): typings.cssTree.mod.List[TResult] = js.native
@@ -74,12 +70,20 @@ open class List[TData] () extends StObject {
   
   def push(item: TData): Unit = js.native
   
+  def reduce[TValue](fn: ReduceFn[TData, TValue, typings.cssTree.mod.List[TData]], initialValue: TValue): TValue = js.native
+  def reduce[TValue, TContext](fn: ReduceFn[TData, TValue, TContext], initialValue: TValue, context: TContext): TValue = js.native
+  
+  def reduceRight[TValue](fn: ReduceFn[TData, TValue, typings.cssTree.mod.List[TData]], initialValue: TValue): TValue = js.native
+  def reduceRight[TValue, TContext](fn: ReduceFn[TData, TValue, TContext], initialValue: TValue, context: TContext): TValue = js.native
+  
   def remove(item: ListItem[TData]): ListItem[TData] = js.native
   
   def replace(oldItem: ListItem[TData], newItemOrList: typings.cssTree.mod.List[TData]): typings.cssTree.mod.List[TData] = js.native
   def replace(oldItem: ListItem[TData], newItemOrList: ListItem[TData]): typings.cssTree.mod.List[TData] = js.native
   
   def shift(): js.UndefOr[ListItem[TData]] = js.native
+  
+  def size: Double = js.native
   
   def some(fn: IteratorFn[TData, Boolean, typings.cssTree.mod.List[TData]]): Boolean = js.native
   def some[TContext](fn: IteratorFn[TData, Boolean, TContext], context: TContext): Boolean = js.native

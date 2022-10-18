@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientStorage.gapi.client.storage
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait Notification extends StObject {
   
   /** An optional list of additional attributes to attach to each Cloud PubSub message published for this notification subscription. */
   var custom_attributes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Notification & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** HTTP 1.1 Entity tag for this subscription notification. */
@@ -48,9 +45,7 @@ object Notification {
   extension [Self <: Notification](x: Self) {
     
     inline def setCustom_attributes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Notification & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
     
     inline def setCustom_attributesUndefined: Self = StObject.set(x, "custom_attributes", js.undefined)

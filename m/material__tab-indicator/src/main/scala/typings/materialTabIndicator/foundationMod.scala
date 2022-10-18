@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object foundationMod {
   
-  @JSImport("@material/tab-indicator/foundation", JSImport.Default)
+  /* note: abstract class */ @JSImport("@material/tab-indicator/foundation", JSImport.Default)
   @js.native
-  abstract class default () extends MDCTabIndicatorFoundation {
+  open class default () extends MDCTabIndicatorFoundation {
     def this(adapter: PartialMDCTabIndicatorAda) = this()
   }
   
-  @JSImport("@material/tab-indicator/foundation", "MDCTabIndicatorFoundation")
+  /* note: abstract class */ @JSImport("@material/tab-indicator/foundation", "MDCTabIndicatorFoundation")
   @js.native
-  abstract class MDCTabIndicatorFoundation () extends MDCFoundation[MDCTabIndicatorAdapter] {
+  open class MDCTabIndicatorFoundation () extends MDCFoundation[MDCTabIndicatorAdapter] {
     def this(adapter: PartialMDCTabIndicatorAda) = this()
     
     def activate(): Unit = js.native

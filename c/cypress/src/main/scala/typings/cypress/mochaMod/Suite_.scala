@@ -1,11 +1,10 @@
 package typings.cypress.mochaMod
 
-import typings.cypress.Mocha.IContext
-import typings.cypress.Mocha.ISuite
 import typings.cypress.Mocha.Suite
+import typings.cypress.Mocha.SuiteConstants
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Suite "post-require" event
 // #region Suite untyped events
@@ -28,7 +27,6 @@ import scala.scalajs.js.annotation._
 // #endregion Suite "beforeAll" event
 // #region Suite "afterAll" event
 // #region Suite "beforeAll" event
-// #endregion Runner untyped events
 /**
   * Initialize a new `Suite` with the given `title` and `ctx`.
   *
@@ -36,18 +34,23 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("mocha", "Suite")
 @js.native
-class Suite_ protected () extends Suite {
+open class Suite_ protected ()
+  extends StObject
+     with Suite {
   def this(title: String) = this()
   def this(title: String, parentContext: typings.cypress.Mocha.Context) = this()
-  def this(title: String, parentContext: IContext) = this()
 }
-
-/* static members */
-@JSImport("mocha", "Suite")
-@js.native
-object Suite_ extends js.Object {
-  /** @deprecated Use the overload that accepts `Mocha.Suite` instead. */
-  def create(parent: ISuite, title: String): Suite = js.native
+object Suite_ {
+  
+  @JSImport("mocha", "Suite")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mocha", "Suite.constants")
+  @js.native
+  val constants: SuiteConstants = js.native
+  
   /**
     * Create a new `Suite` with the given `title` and parent `Suite`. When a suite
     * with the same title is already present, that suite is returned to provide
@@ -55,6 +58,6 @@ object Suite_ extends js.Object {
     *
     * @see https://mochajs.org/api/mocha#.exports.create
     */
-  def create(parent: Suite, title: String): Suite = js.native
+  /* static member */
+  inline def create(parent: Suite, title: String): Suite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Suite]
 }
-

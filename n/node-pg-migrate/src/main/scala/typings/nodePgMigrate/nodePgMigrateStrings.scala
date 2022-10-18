@@ -1,9 +1,9 @@
 package typings.nodePgMigrate
 
+import typings.nodePgMigrate.distOperationsExtensionsTypesMod.Extension
+import typings.nodePgMigrate.distOperationsTablesTypesMod.Action
+import typings.nodePgMigrate.distOperationsTablesTypesMod.Like
 import typings.nodePgMigrate.distTypesMod.MigrationDirection
-import typings.nodePgMigrate.extensionsTypesMod.Extension
-import typings.nodePgMigrate.tablesTypesMod.Action
-import typings.nodePgMigrate.tablesTypesMod.Like
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -135,16 +135,8 @@ object nodePgMigrateStrings {
   inline def `NO FORCE`: `NO FORCE` = ("NO FORCE").asInstanceOf[`NO FORCE`]
   
   @js.native
-  sealed trait Nullable extends StObject
-  inline def Nullable: Nullable = "Nullable".asInstanceOf[Nullable]
-  
-  @js.native
   sealed trait OUT extends StObject
   inline def OUT: OUT = "OUT".asInstanceOf[OUT]
-  
-  @js.native
-  sealed trait PublicPart extends StObject
-  inline def PublicPart: PublicPart = "PublicPart".asInstanceOf[PublicPart]
   
   @js.native
   sealed trait RESTRICT

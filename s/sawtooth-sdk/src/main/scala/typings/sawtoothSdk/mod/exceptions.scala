@@ -16,14 +16,14 @@ object exceptions {
     * string
     */
   open class AuthorizationException ()
-    extends typings.sawtoothSdk.exceptionsMod.AuthorizationException {
+    extends typings.sawtoothSdk.processorExceptionsMod.AuthorizationException {
     def this(message: String) = this()
   }
   
   @JSImport("sawtooth-sdk", "exceptions.InternalError")
   @js.native
   /* protected */ open class InternalError ()
-    extends typings.sawtoothSdk.exceptionsMod.InternalError {
+    extends typings.sawtoothSdk.processorExceptionsMod.InternalError {
     /* protected */ def this(message: String) = this()
     /* protected */ def this(message: String, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: String, extendedData: Buffer) = this()
@@ -34,7 +34,7 @@ object exceptions {
   @JSImport("sawtooth-sdk", "exceptions.InvalidTransaction")
   @js.native
   /* protected */ open class InvalidTransaction ()
-    extends typings.sawtoothSdk.exceptionsMod.InvalidTransaction {
+    extends typings.sawtoothSdk.processorExceptionsMod.InvalidTransaction {
     /* protected */ def this(message: String) = this()
     /* protected */ def this(message: String, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: String, extendedData: Buffer) = this()
@@ -45,7 +45,7 @@ object exceptions {
   @JSImport("sawtooth-sdk", "exceptions._TransactionProcessorError")
   @js.native
   /* protected */ open class TransactionProcessorError ()
-    extends typings.sawtoothSdk.exceptionsMod.TransactionProcessorError {
+    extends typings.sawtoothSdk.processorExceptionsMod.TransactionProcessorError {
     /* protected */ def this(message: String) = this()
     /* protected */ def this(message: String, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: String, extendedData: Buffer) = this()
@@ -62,7 +62,7 @@ object exceptions {
     * string
     */
   open class ValidatorConnectionError ()
-    extends typings.sawtoothSdk.exceptionsMod.ValidatorConnectionError {
+    extends typings.sawtoothSdk.processorExceptionsMod.ValidatorConnectionError {
     def this(message: String) = this()
   }
 }

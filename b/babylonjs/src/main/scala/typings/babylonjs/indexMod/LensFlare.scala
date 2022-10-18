@@ -28,9 +28,9 @@ open class LensFlare protected ()
     * Define the position of the lens flare in the system. (a floating value between -1 and 1). A value of 0 is located on the emitter. A value greater than 0 is beyond the emitter and a value lesser than 0 is behind.
     */
   position: Double,
-    color: typings.babylonjs.mathColorMod.Color3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
     imgUrl: String,
-    system: typings.babylonjs.lensFlareSystemMod.LensFlareSystem
+    system: typings.babylonjs.lensFlaresLensFlareSystemMod.LensFlareSystem
   ) = this()
 }
 /* static members */
@@ -55,8 +55,8 @@ object LensFlare {
   inline def AddFlare(
     size: Double,
     position: Double,
-    color: typings.babylonjs.mathColorMod.Color3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
     imgUrl: String,
-    system: typings.babylonjs.lensFlareSystemMod.LensFlareSystem
-  ): typings.babylonjs.lensFlareMod.LensFlare = (^.asInstanceOf[js.Dynamic].applyDynamic("AddFlare")(size.asInstanceOf[js.Any], position.asInstanceOf[js.Any], color.asInstanceOf[js.Any], imgUrl.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lensFlareMod.LensFlare]
+    system: typings.babylonjs.lensFlaresLensFlareSystemMod.LensFlareSystem
+  ): typings.babylonjs.lensFlaresLensFlareMod.LensFlare = (^.asInstanceOf[js.Dynamic].applyDynamic("AddFlare")(size.asInstanceOf[js.Any], position.asInstanceOf[js.Any], color.asInstanceOf[js.Any], imgUrl.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lensFlaresLensFlareMod.LensFlare]
 }

@@ -9,7 +9,7 @@ object fnIsIterableMod {
   /* was `typeof core.isIterable` */
   inline def apply(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("core-js/library/fn/is-iterable", JSImport.Namespace)
+  @JSImport("core-js/fn/is-iterable", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
 }

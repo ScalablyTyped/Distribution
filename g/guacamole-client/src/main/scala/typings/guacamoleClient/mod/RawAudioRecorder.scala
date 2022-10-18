@@ -1,6 +1,6 @@
 package typings.guacamoleClient.mod
 
-import typings.guacamoleClient.guacCommonMod.Mimetype
+import typings.guacamoleClient.libGuacCommonMod.Mimetype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "RawAudioRecorder")
 @js.native
 open class RawAudioRecorder protected ()
-  extends typings.guacamoleClient.rawAudioRecorderMod.RawAudioRecorder {
+  extends typings.guacamoleClient.libRawAudioRecorderMod.RawAudioRecorder {
   /**
     * @param stream The Guacamole.OutputStream to write audio data to.
     *
@@ -16,7 +16,7 @@ open class RawAudioRecorder protected ()
     * must be a "audio/L8" or "audio/L16" mimetype with necessary parameters,
     * such as: "audio/L16;rate=44100,channels=2".
     */
-  def this(stream: typings.guacamoleClient.outputStreamMod.OutputStream, mimetype: Mimetype) = this()
+  def this(stream: typings.guacamoleClient.libOutputStreamMod.OutputStream, mimetype: Mimetype) = this()
 }
 /* static members */
 object RawAudioRecorder {

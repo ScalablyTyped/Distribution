@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
-import typings.reactDraggableList.moveContainerMod.HeightData
-import typings.reactDraggableList.srcMod.Drag
+import typings.reactDraggableList.distSrcMod.Drag
+import typings.reactDraggableList.distSrcMoveContainerMod.HeightData
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

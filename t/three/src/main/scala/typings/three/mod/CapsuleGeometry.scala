@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [radialSegments=8] — Number of segmented faces around the circumference of the capsule.
   */
 open class CapsuleGeometry ()
-  extends typings.three.threeMod.CapsuleGeometry {
+  extends typings.three.srcThreeMod.CapsuleGeometry {
   def this(radius: Double) = this()
   def this(radius: Double, length: Double) = this()
   def this(radius: Unit, length: Double) = this()
@@ -37,5 +37,5 @@ object CapsuleGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.capsuleGeometryMod.CapsuleGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.capsuleGeometryMod.CapsuleGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesCapsuleGeometryMod.CapsuleGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesCapsuleGeometryMod.CapsuleGeometry]
 }

@@ -2,8 +2,8 @@ package typings.antvG2.anon
 
 import typings.antvG2.libInterfaceMod.Marker
 import typings.antvG2.libInterfaceMod.MarkerCallback
-import typings.antvGBase.typesMod.PathCommand
-import typings.antvGBase.typesMod.ShapeAttrs
+import typings.antvGBase.libTypesMod.PathCommand
+import typings.antvGBase.libTypesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

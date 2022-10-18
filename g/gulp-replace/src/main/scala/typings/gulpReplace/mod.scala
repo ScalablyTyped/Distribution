@@ -1,5 +1,6 @@
 package typings.gulpReplace
 
+import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,14 +26,14 @@ object mod {
     *                     Skip binary files. This option is `true` by default. If
     *                     you want to replace content in binary files, you must explicitly set it to `false`.
     */
-  inline def apply(search: String, replacement: String): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def apply(search: String, replacement: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def apply(search: String, replacement: Replacer): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def apply(search: String, replacement: Replacer, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def apply(search: js.RegExp, replacement: String): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def apply(search: js.RegExp, replacement: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def apply(search: js.RegExp, replacement: Replacer): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def apply(search: js.RegExp, replacement: Replacer, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(search: String, replacement: String): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(search: String, replacement: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(search: String, replacement: Replacer): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(search: String, replacement: Replacer, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(search: js.RegExp, replacement: String): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(search: js.RegExp, replacement: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(search: js.RegExp, replacement: Replacer): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(search: js.RegExp, replacement: Replacer, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-replace", JSImport.Namespace)
   @js.native

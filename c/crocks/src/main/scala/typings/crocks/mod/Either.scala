@@ -9,7 +9,7 @@ object Either {
   @JSImport("crocks", "Either.default")
   @js.native
   open class default ()
-    extends typings.crocks.crocksEitherMod.default
+    extends typings.crocks.eitherMod.default
   object default {
     
     inline def apply(`val`: scala.Any): typings.crocks.eitherEitherMod.Either = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.crocks.eitherEitherMod.Either]

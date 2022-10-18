@@ -1,6 +1,10 @@
 package typings.reactKonva
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.konva.libNodeMod.Filter
+import typings.konva.libNodeMod.Node
+import typings.konva.libNodeMod.globalCompositeOperationType
+import typings.konva.libTypesMod.Vector2d
 import typings.konva.mod.Konva.Arc
 import typings.konva.mod.Konva.ArcConfig
 import typings.konva.mod.Konva.Arrow
@@ -46,10 +50,6 @@ import typings.konva.mod.Konva.Transformer
 import typings.konva.mod.Konva.TransformerConfig
 import typings.konva.mod.Konva.Wedge
 import typings.konva.mod.Konva.WedgeConfig
-import typings.konva.nodeMod.Filter
-import typings.konva.nodeMod.Node
-import typings.konva.nodeMod.globalCompositeOperationType
-import typings.konva.typesMod.Vector2d
 import typings.react.mod.AriaRole
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClassAttributes
@@ -58,7 +58,6 @@ import typings.reactReconciler.mod.Reconciler
 import typings.std.DragEvent
 import typings.std.Event
 import typings.std.MouseEvent
-import typings.std.Number
 import typings.std.PointerEvent
 import typings.std.TouchEvent
 import typings.std.WheelEvent
@@ -68,132 +67,132 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object reactKonvaCoreMod {
   
-  @JSImport("react-konva/lib/ReactKonvaCore", JSImport.Namespace)
+  @JSImport("react-konva/ReactKonvaCore", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Arc")
+  @JSImport("react-konva/ReactKonvaCore", "Arc")
   @js.native
   def Arc: KonvaNodeComponent[typings.konva.mod.Konva.Arc, ArcConfig] = js.native
   inline def Arc_=(x: KonvaNodeComponent[Arc, ArcConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arc")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Arrow")
+  @JSImport("react-konva/ReactKonvaCore", "Arrow")
   @js.native
   def Arrow: KonvaNodeComponent[typings.konva.mod.Konva.Arrow, ArrowConfig] = js.native
   inline def Arrow_=(x: KonvaNodeComponent[Arrow, ArrowConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arrow")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Circle")
+  @JSImport("react-konva/ReactKonvaCore", "Circle")
   @js.native
   def Circle: KonvaNodeComponent[typings.konva.mod.Konva.Circle, CircleConfig] = js.native
   inline def Circle_=(x: KonvaNodeComponent[Circle, CircleConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Circle")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Ellipse")
+  @JSImport("react-konva/ReactKonvaCore", "Ellipse")
   @js.native
   def Ellipse: KonvaNodeComponent[typings.konva.mod.Konva.Ellipse, EllipseConfig] = js.native
   inline def Ellipse_=(x: KonvaNodeComponent[Ellipse, EllipseConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ellipse")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "FastLayer")
+  @JSImport("react-konva/ReactKonvaCore", "FastLayer")
   @js.native
   def FastLayer: KonvaNodeComponent[typings.konva.mod.Konva.FastLayer, LayerConfig] = js.native
   inline def FastLayer_=(x: KonvaNodeComponent[FastLayer, LayerConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FastLayer")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Group")
+  @JSImport("react-konva/ReactKonvaCore", "Group")
   @js.native
   def Group: KonvaNodeComponent[typings.konva.mod.Konva.Group, GroupConfig] = js.native
   inline def Group_=(x: KonvaNodeComponent[Group, GroupConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Image")
+  @JSImport("react-konva/ReactKonvaCore", "Image")
   @js.native
   def Image: KonvaNodeComponent[typings.konva.mod.Konva.Image, ImageConfig] = js.native
   inline def Image_=(x: KonvaNodeComponent[Image, ImageConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Image")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "KonvaRenderer")
+  @JSImport("react-konva/ReactKonvaCore", "KonvaRenderer")
   @js.native
   def KonvaRenderer: Reconciler[Any, Any, Any, Any, Any] = js.native
   inline def KonvaRenderer_=(x: Reconciler[Any, Any, Any, Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KonvaRenderer")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Label")
+  @JSImport("react-konva/ReactKonvaCore", "Label")
   @js.native
   def Label: KonvaNodeComponent[typings.konva.mod.Konva.Label, LabelConfig] = js.native
   inline def Label_=(x: KonvaNodeComponent[Label, LabelConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Layer")
+  @JSImport("react-konva/ReactKonvaCore", "Layer")
   @js.native
   def Layer: KonvaNodeComponent[typings.konva.mod.Konva.Layer, LayerConfig] = js.native
   inline def Layer_=(x: KonvaNodeComponent[Layer, LayerConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Layer")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Line")
+  @JSImport("react-konva/ReactKonvaCore", "Line")
   @js.native
   def Line: KonvaNodeComponent[typings.konva.mod.Konva.Line, LineConfig] = js.native
   inline def Line_=(x: KonvaNodeComponent[Line, LineConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Line")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Path")
+  @JSImport("react-konva/ReactKonvaCore", "Path")
   @js.native
   def Path: KonvaNodeComponent[typings.konva.mod.Konva.Path, PathConfig] = js.native
   inline def Path_=(x: KonvaNodeComponent[Path, PathConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Path")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Rect")
+  @JSImport("react-konva/ReactKonvaCore", "Rect")
   @js.native
   def Rect: KonvaNodeComponent[typings.konva.mod.Konva.Rect, RectConfig] = js.native
   inline def Rect_=(x: KonvaNodeComponent[Rect, RectConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rect")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "RegularPolygon")
+  @JSImport("react-konva/ReactKonvaCore", "RegularPolygon")
   @js.native
   def RegularPolygon: KonvaNodeComponent[typings.konva.mod.Konva.RegularPolygon, RegularPolygonConfig] = js.native
   inline def RegularPolygon_=(x: KonvaNodeComponent[RegularPolygon, RegularPolygonConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RegularPolygon")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Ring")
+  @JSImport("react-konva/ReactKonvaCore", "Ring")
   @js.native
   def Ring: KonvaNodeComponent[typings.konva.mod.Konva.Ring, RingConfig] = js.native
   inline def Ring_=(x: KonvaNodeComponent[Ring, RingConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ring")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Shape")
+  @JSImport("react-konva/ReactKonvaCore", "Shape")
   @js.native
   def Shape: KonvaNodeComponent[typings.konva.mod.Konva.Shape, ShapeConfig] = js.native
   inline def Shape_=(x: KonvaNodeComponent[Shape, ShapeConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Shape")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Sprite")
+  @JSImport("react-konva/ReactKonvaCore", "Sprite")
   @js.native
   def Sprite: KonvaNodeComponent[typings.konva.mod.Konva.Sprite, SpriteConfig] = js.native
   inline def Sprite_=(x: KonvaNodeComponent[Sprite, SpriteConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sprite")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Stage")
+  @JSImport("react-konva/ReactKonvaCore", "Stage")
   @js.native
   def Stage: KonvaNodeComponent[typings.konva.mod.Konva.Stage, StageProps] = js.native
   inline def Stage_=(x: KonvaNodeComponent[Stage, StageProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stage")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Star")
+  @JSImport("react-konva/ReactKonvaCore", "Star")
   @js.native
   def Star: KonvaNodeComponent[typings.konva.mod.Konva.Star, StarConfig] = js.native
   inline def Star_=(x: KonvaNodeComponent[Star, StarConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Star")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Tag")
+  @JSImport("react-konva/ReactKonvaCore", "Tag")
   @js.native
   def Tag: KonvaNodeComponent[typings.konva.mod.Konva.Tag, TagConfig] = js.native
   inline def Tag_=(x: KonvaNodeComponent[Tag, TagConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tag")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Text")
+  @JSImport("react-konva/ReactKonvaCore", "Text")
   @js.native
   def Text: KonvaNodeComponent[typings.konva.mod.Konva.Text, TextConfig] = js.native
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "TextPath")
+  @JSImport("react-konva/ReactKonvaCore", "TextPath")
   @js.native
   def TextPath: KonvaNodeComponent[typings.konva.mod.Konva.TextPath, TextPathConfig] = js.native
   inline def TextPath_=(x: KonvaNodeComponent[TextPath, TextPathConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextPath")(x.asInstanceOf[js.Any])
   
   inline def Text_=(x: KonvaNodeComponent[Text, TextConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Transformer")
+  @JSImport("react-konva/ReactKonvaCore", "Transformer")
   @js.native
   def Transformer: KonvaNodeComponent[typings.konva.mod.Konva.Transformer, TransformerConfig] = js.native
   inline def Transformer_=(x: KonvaNodeComponent[Transformer, TransformerConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transformer")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "Wedge")
+  @JSImport("react-konva/ReactKonvaCore", "Wedge")
   @js.native
   def Wedge: KonvaNodeComponent[typings.konva.mod.Konva.Wedge, WedgeConfig] = js.native
   inline def Wedge_=(x: KonvaNodeComponent[Wedge, WedgeConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Wedge")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-konva/lib/ReactKonvaCore", "useStrictMode")
+  @JSImport("react-konva/ReactKonvaCore", "useStrictMode")
   @js.native
   def useStrictMode: js.Function1[/* useStrictMode */ Boolean, Unit] = js.native
   inline def useStrictMode_=(x: js.Function1[/* useStrictMode */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useStrictMode")(x.asInstanceOf[js.Any])
@@ -354,7 +353,7 @@ object reactKonvaCoreMod {
   }
   
   /* Inlined parent konva.konva.default.NodeConfig */
-  /* Inlined parent react-konva.react-konva/lib/ReactKonvaCore.KonvaNodeEvents */
+  /* Inlined parent react-konva.react-konva/ReactKonvaCore.KonvaNodeEvents */
   /* Inlined parent std.Pick<react.react.HTMLAttributes<std.HTMLDivElement>, 'className' | 'role' | 'style' | 'tabIndex' | 'title'> */
   trait StageProps
     extends StObject
@@ -430,7 +429,7 @@ object reactKonvaCoreMod {
     
     var onWheel: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[WheelEvent], Unit]] = js.undefined
     
-    var opacity: js.UndefOr[Number] = js.undefined
+    var opacity: js.UndefOr[Double] = js.undefined
     
     var preventDefault: js.UndefOr[Boolean] = js.undefined
     
@@ -611,7 +610,7 @@ object reactKonvaCoreMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOpacity(value: Number): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       

@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.anon
 
-import typings.vscodeLanguageserverProtocol.protocolFileOperationsMod.FileOperationOptions
-import typings.vscodeLanguageserverProtocol.protocolWorkspaceFolderMod.WorkspaceFoldersServerCapabilities
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotfileOperationsMod.FileOperationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotworkspaceFolderMod.WorkspaceFoldersServerCapabilities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

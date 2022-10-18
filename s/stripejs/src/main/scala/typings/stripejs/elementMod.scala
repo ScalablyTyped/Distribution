@@ -4,7 +4,7 @@ import typings.std.HTMLElement
 import typings.stripejs.anon.Base
 import typings.stripejs.anon.Complete
 import typings.stripejs.anon.Empty
-import typings.stripejs.anon.Invalid
+import typings.stripejs.anon.Focus
 import typings.stripejs.anon.PreventDefault
 import typings.stripejs.mod.StripeError
 import typings.stripejs.stripejsStrings.`light-outline`
@@ -54,7 +54,7 @@ object elementMod {
       * Set custom class names on the container DOM element when the Stripe Element is in a
       * particular state.
       */
-    var classes: js.UndefOr[Empty] = js.undefined
+    var classes: js.UndefOr[Base] = js.undefined
     
     /**
       * Whether or not the input is disabled
@@ -71,7 +71,7 @@ object elementMod {
     /**
       * Customize appearance using CSS properties
       */
-    var style: js.UndefOr[Invalid] = js.undefined
+    var style: js.UndefOr[Complete] = js.undefined
   }
   object BaseOptions {
     
@@ -82,7 +82,7 @@ object elementMod {
     
     extension [Self <: BaseOptions](x: Self) {
       
-      inline def setClasses(value: Empty): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: Base): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
@@ -94,7 +94,7 @@ object elementMod {
       
       inline def setHideIconUndefined: Self = StObject.set(x, "hideIcon", js.undefined)
       
-      inline def setStyle(value: Invalid): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Complete): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -529,11 +529,11 @@ object elementMod {
       * Set custom class names on the container DOM element when the Stripe Element is in a
       * particular state.
       */
-    var classes: js.UndefOr[Base] = js.undefined
+    var classes: js.UndefOr[Focus] = js.undefined
     
     var paymentRequest: Any
     
-    var style: js.UndefOr[Complete] = js.undefined
+    var style: js.UndefOr[Empty] = js.undefined
   }
   object PaymentButtonOptions {
     
@@ -544,13 +544,13 @@ object elementMod {
     
     extension [Self <: PaymentButtonOptions](x: Self) {
       
-      inline def setClasses(value: Base): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: Focus): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
       inline def setPaymentRequest(value: Any): Self = StObject.set(x, "paymentRequest", value.asInstanceOf[js.Any])
       
-      inline def setStyle(value: Complete): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Empty): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

@@ -1,6 +1,6 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
+import typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "DepthOfFieldEffect")
 @js.native
 open class DepthOfFieldEffect protected ()
-  extends typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffect {
+  extends typings.babylonjs.postProcessesDepthOfFieldEffectMod.DepthOfFieldEffect {
   /**
     * Creates a new instance DepthOfFieldEffect
     * @param scene The scene the effect belongs to.
@@ -23,7 +23,7 @@ open class DepthOfFieldEffect protected ()
   def this(
     scene: Scene,
     depthTexture: Nullable[RenderTargetTexture],
-    blurLevel: typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffectBlurLevel
+    blurLevel: typings.babylonjs.postProcessesDepthOfFieldEffectMod.DepthOfFieldEffectBlurLevel
   ) = this()
   def this(
     scene: Scene,
@@ -34,7 +34,7 @@ open class DepthOfFieldEffect protected ()
   def this(
     scene: Scene,
     depthTexture: Nullable[RenderTargetTexture],
-    blurLevel: typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffectBlurLevel,
+    blurLevel: typings.babylonjs.postProcessesDepthOfFieldEffectMod.DepthOfFieldEffectBlurLevel,
     pipelineTextureType: Double
   ) = this()
   def this(
@@ -54,14 +54,14 @@ open class DepthOfFieldEffect protected ()
   def this(
     scene: Scene,
     depthTexture: Nullable[RenderTargetTexture],
-    blurLevel: typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffectBlurLevel,
+    blurLevel: typings.babylonjs.postProcessesDepthOfFieldEffectMod.DepthOfFieldEffectBlurLevel,
     pipelineTextureType: Double,
     blockCompilation: Boolean
   ) = this()
   def this(
     scene: Scene,
     depthTexture: Nullable[RenderTargetTexture],
-    blurLevel: typings.babylonjs.depthOfFieldEffectMod.DepthOfFieldEffectBlurLevel,
+    blurLevel: typings.babylonjs.postProcessesDepthOfFieldEffectMod.DepthOfFieldEffectBlurLevel,
     pipelineTextureType: Unit,
     blockCompilation: Boolean
   ) = this()

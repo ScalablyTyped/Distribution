@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SixDofDragBehavior")
 @js.native
 open class SixDofDragBehavior ()
-  extends typings.babylonjs.legacyMod.SixDofDragBehavior
+  extends typings.babylonjs.legacyLegacyMod.SixDofDragBehavior

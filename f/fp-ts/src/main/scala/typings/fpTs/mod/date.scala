@@ -1,7 +1,7 @@
 package typings.fpTs.mod
 
-import typings.fpTs.iOMod.IO_
-import typings.fpTs.ordMod.Ord_
+import typings.fpTs.libIOMod.IO_
+import typings.fpTs.libOrdMod.Ord_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object date {
   
   @JSImport("fp-ts", "date.Eq")
   @js.native
-  val Eq: typings.fpTs.eqMod.Eq[js.Date] = js.native
+  val Eq: typings.fpTs.libEqMod.Eq[js.Date] = js.native
   
   @JSImport("fp-ts", "date.Ord")
   @js.native
@@ -22,15 +22,15 @@ object date {
   
   @JSImport("fp-ts", "date.eqDate")
   @js.native
-  val eqDate: typings.fpTs.eqMod.Eq[js.Date] = js.native
+  val eqDate: typings.fpTs.libEqMod.Eq[js.Date] = js.native
   
   @JSImport("fp-ts", "date.eqMonth")
   @js.native
-  val eqMonth: typings.fpTs.eqMod.Eq[js.Date] = js.native
+  val eqMonth: typings.fpTs.libEqMod.Eq[js.Date] = js.native
   
   @JSImport("fp-ts", "date.eqYear")
   @js.native
-  val eqYear: typings.fpTs.eqMod.Eq[js.Date] = js.native
+  val eqYear: typings.fpTs.libEqMod.Eq[js.Date] = js.native
   
   @JSImport("fp-ts", "date.now")
   @js.native

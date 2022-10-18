@@ -1,9 +1,9 @@
 package typings.rcDialog
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcDialog.idialogproptypesMod.IDialogPropTypes
-import typings.rcDialog.panelMod.ContentRef
-import typings.rcDialog.panelMod.PanelProps
+import typings.rcDialog.esDialogContentPanelMod.ContentRef
+import typings.rcDialog.esDialogContentPanelMod.PanelProps
+import typings.rcDialog.esIdialogproptypesMod.IDialogPropTypes
 import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes

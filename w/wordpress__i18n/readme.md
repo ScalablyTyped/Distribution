@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__i18n
 
-Typings are for version 4.18.0
+Typings are for version 4.19.0
 
 ## Library description:
 WordPress internationalization (i18n) library.

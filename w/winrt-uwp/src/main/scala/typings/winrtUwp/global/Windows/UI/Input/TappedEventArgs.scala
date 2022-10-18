@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the Tapped event. */
-@JSGlobal("Windows.UI.Input.TappedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.Input.TappedEventArgs")
 @js.native
-abstract class TappedEventArgs ()
+open class TappedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.TappedEventArgs {
   

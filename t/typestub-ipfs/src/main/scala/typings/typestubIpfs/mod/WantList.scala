@@ -19,6 +19,6 @@ object WantList {
     
     inline def setKeys(value: js.Array[WantListItem]): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
-    inline def setKeysVarargs(value: WantListItem*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: WantListItem*): Self = StObject.set(x, "Keys", js.Array(value*))
   }
 }

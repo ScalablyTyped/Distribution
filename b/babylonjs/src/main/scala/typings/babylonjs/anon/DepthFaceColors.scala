@@ -1,6 +1,7 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.BABYLON.Color4
+import typings.babylonjs.BABYLON.Vector3
 import typings.babylonjs.BABYLON.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,18 +19,20 @@ trait DepthFaceColors extends StObject {
   
   var frontUVs: js.UndefOr[Vector4] = js.undefined
   
-  var height: js.UndefOr[Double] = js.undefined
+  var holes: js.UndefOr[js.Array[js.Array[Vector3]]] = js.undefined
+  
+  var shape: js.Array[Vector3]
   
   var sideOrientation: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.undefined
+  var updatable: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.undefined
+  var wrap: js.UndefOr[Boolean] = js.undefined
 }
 object DepthFaceColors {
   
-  inline def apply(): DepthFaceColors = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(shape: js.Array[Vector3]): DepthFaceColors = {
+    val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[DepthFaceColors]
   }
   
@@ -59,20 +62,26 @@ object DepthFaceColors {
     
     inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
     
-    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHoles(value: js.Array[js.Array[Vector3]]): Self = StObject.set(x, "holes", value.asInstanceOf[js.Any])
     
-    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHolesUndefined: Self = StObject.set(x, "holes", js.undefined)
+    
+    inline def setHolesVarargs(value: js.Array[Vector3]*): Self = StObject.set(x, "holes", js.Array(value*))
+    
+    inline def setShape(value: js.Array[Vector3]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def setShapeVarargs(value: Vector3*): Self = StObject.set(x, "shape", js.Array(value*))
     
     inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
     inline def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
     
-    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
     
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     
-    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
-    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
   }
 }

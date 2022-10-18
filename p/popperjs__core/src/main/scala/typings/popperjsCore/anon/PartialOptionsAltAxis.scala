@@ -1,9 +1,9 @@
 package typings.popperjsCore.anon
 
-import typings.popperjsCore.enumsMod.Boundary
-import typings.popperjsCore.enumsMod.RootBoundary
-import typings.popperjsCore.preventOverflowMod.TetherOffset
-import typings.popperjsCore.typesMod.Padding
+import typings.popperjsCore.libEnumsMod.Boundary
+import typings.popperjsCore.libEnumsMod.RootBoundary
+import typings.popperjsCore.libModifiersPreventOverflowMod.TetherOffset
+import typings.popperjsCore.libTypesMod.Padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

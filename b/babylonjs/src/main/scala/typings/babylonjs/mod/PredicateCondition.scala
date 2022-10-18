@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PredicateCondition")
 @js.native
 open class PredicateCondition protected ()
-  extends typings.babylonjs.legacyMod.PredicateCondition {
+  extends typings.babylonjs.legacyLegacyMod.PredicateCondition {
   /**
     * Creates a new PredicateCondition
     * @param actionManager manager for the action the condition applies to
     * @param predicate defines the predicate function used to validate the condition
     */
   def this(
-    actionManager: typings.babylonjs.actionManagerMod.ActionManager,
+    actionManager: typings.babylonjs.actionsActionManagerMod.ActionManager,
     /** defines the predicate function used to validate the condition */
   predicate: js.Function0[Boolean]
   ) = this()

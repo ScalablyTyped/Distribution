@@ -2,7 +2,7 @@ package typings.jupyterlabRunning
 
 import typings.jupyterlabApputils.mod.ReactWidget
 import typings.jupyterlabRunning.mod.IRunningSessions.IManager
-import typings.jupyterlabTranslation.tokensMod.ITranslator
+import typings.jupyterlabTranslation.libTokensMod.ITranslator
 import typings.jupyterlabUiComponents.mod.LabIcon
 import typings.luminoCoreutils.mod.Token
 import typings.luminoDisposable.mod.IDisposable

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apolloProtobufjs.mod.IConversionOptions
 import typings.apolloProtobufjs.mod.Reader
 import typings.apolloProtobufjs.mod.Writer
-import typings.apolloReportingProtobuf.protobufMod.IReportHeader
+import typings.apolloReportingProtobuf.generatedProtobufMod.IReportHeader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [properties] Properties to set
   */
 open class ReportHeader ()
-  extends typings.apolloReportingProtobuf.protobufMod.ReportHeader {
+  extends typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader {
   def this(properties: IReportHeader) = this()
 }
 /* static members */
@@ -31,11 +31,11 @@ object ReportHeader {
     * @param [properties] Properties to set
     * @returns ReportHeader instance
     */
-  inline def create(): typings.apolloReportingProtobuf.protobufMod.ReportHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloReportingProtobuf.protobufMod.ReportHeader]
-  inline def create(properties: IReportHeader): typings.apolloReportingProtobuf.protobufMod.ReportHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.ReportHeader]
+  inline def create(): typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader]
+  inline def create(properties: IReportHeader): typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader]
   
-  inline def decode(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.protobufMod.ReportHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.ReportHeader]
-  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.apolloReportingProtobuf.protobufMod.ReportHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.ReportHeader]
+  inline def decode(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader]
   /**
     * Decodes a ReportHeader message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,10 +44,10 @@ object ReportHeader {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  inline def decode(reader: Reader): typings.apolloReportingProtobuf.protobufMod.ReportHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.ReportHeader]
-  inline def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.protobufMod.ReportHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.ReportHeader]
+  inline def decode(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader]
+  inline def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader]
   
-  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.protobufMod.ReportHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.ReportHeader]
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader]
   /**
     * Decodes a ReportHeader message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -55,7 +55,7 @@ object ReportHeader {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  inline def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.protobufMod.ReportHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.ReportHeader]
+  inline def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader]
   
   /**
     * Encodes the specified ReportHeader message. Does not implicitly {@link ReportHeader.verify|verify} messages.
@@ -81,8 +81,11 @@ object ReportHeader {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: typings.apolloReportingProtobuf.protobufMod.ReportHeader): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
-  inline def toObject(message: typings.apolloReportingProtobuf.protobufMod.ReportHeader, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(
+    message: typings.apolloReportingProtobuf.generatedProtobufMod.ReportHeader,
+    options: IConversionOptions
+  ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ReportHeader message.

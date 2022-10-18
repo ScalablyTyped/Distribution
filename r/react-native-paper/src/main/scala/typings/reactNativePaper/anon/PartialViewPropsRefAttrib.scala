@@ -159,7 +159,7 @@ trait PartialViewPropsRefAttrib extends StObject {
   
   var testID: js.UndefOr[String] = js.undefined
   
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   var tvParallaxMagnification: js.UndefOr[Double] = js.undefined
   
@@ -173,7 +173,7 @@ trait PartialViewPropsRefAttrib extends StObject {
 }
 object PartialViewPropsRefAttrib {
   
-  inline def apply(theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): PartialViewPropsRefAttrib = {
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): PartialViewPropsRefAttrib = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialViewPropsRefAttrib]
   }
@@ -452,7 +452,7 @@ object PartialViewPropsRefAttrib {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     

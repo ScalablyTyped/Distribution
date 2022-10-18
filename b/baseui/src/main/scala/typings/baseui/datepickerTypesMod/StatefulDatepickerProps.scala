@@ -1,8 +1,8 @@
 package typings.baseui.datepickerTypesMod
 
-import typings.baseui.anon.`13`
-import typings.baseui.anon.`5`
-import typings.baseui.utilsTypesMod.DateIOAdapter
+import typings.baseui.anon.`2`
+import typings.baseui.anon.`9`
+import typings.baseui.datepickerUtilsTypesMod.DateIOAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +14,9 @@ trait StatefulDatepickerProps[Props, T] extends StObject {
   
   var initialState: js.UndefOr[ContainerState[T]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* a */ `13`[T], Any]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* a */ `9`[T], Any]] = js.undefined
   
-  var onRangeChange: js.UndefOr[js.Function1[/* a */ `5`[T], Any]] = js.undefined
+  var onRangeChange: js.UndefOr[js.Function1[/* a */ `2`[T], Any]] = js.undefined
   
   var range: js.UndefOr[Boolean] = js.undefined
   
@@ -39,11 +39,11 @@ object StatefulDatepickerProps {
     
     inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    inline def setOnChange(value: /* a */ `13`[T] => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* a */ `9`[T] => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnRangeChange(value: /* a */ `5`[T] => Any): Self = StObject.set(x, "onRangeChange", js.Any.fromFunction1(value))
+    inline def setOnRangeChange(value: /* a */ `2`[T] => Any): Self = StObject.set(x, "onRangeChange", js.Any.fromFunction1(value))
     
     inline def setOnRangeChangeUndefined: Self = StObject.set(x, "onRangeChange", js.undefined)
     

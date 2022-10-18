@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @remarks
   *
-  * **Hosts**: Word
+  * **Applications**: Word
   */
 @js.native
 trait CustomXmlNode extends StObject {

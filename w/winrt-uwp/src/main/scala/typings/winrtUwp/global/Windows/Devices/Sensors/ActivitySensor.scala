@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an activity sensor that provides the activity and status of a sensor. */
-@JSGlobal("Windows.Devices.Sensors.ActivitySensor")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.ActivitySensor")
 @js.native
-abstract class ActivitySensor ()
+open class ActivitySensor ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.ActivitySensor
 object ActivitySensor {

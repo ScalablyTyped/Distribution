@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Lab")
 @js.native
 open class Lab ()
-  extends typings.antvG2plot.labMod.Lab
+  extends typings.antvG2plot.libLabMod.Lab

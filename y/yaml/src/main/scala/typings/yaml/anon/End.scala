@@ -1,6 +1,6 @@
 package typings.yaml.anon
 
-import typings.yaml.cstMod.SourceToken
+import typings.yaml.distParseCstMod.SourceToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait End extends StObject {
   
   var offset: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[typings.yaml.scalarMod.Scalar.Type] = js.undefined
+  var `type`: js.UndefOr[typings.yaml.distNodesScalarMod.Scalar.Type] = js.undefined
 }
 object End {
   
@@ -48,7 +48,7 @@ object End {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setType(value: typings.yaml.scalarMod.Scalar.Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.yaml.distNodesScalarMod.Scalar.Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

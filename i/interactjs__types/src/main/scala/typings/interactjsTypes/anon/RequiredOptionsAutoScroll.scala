@@ -1,20 +1,20 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.dropPluginMod.DropzoneOptions
-import typings.interactjsTypes.gesturePluginMod.GesturableOptions
-import typings.interactjsTypes.interactjsAutoScrollPluginMod.AutoScrollOptions
-import typings.interactjsTypes.interactjsDevToolsPluginMod.DevToolsOptions
-import typings.interactjsTypes.interactjsModifiersTypesMod.Modifier
+import typings.interactjsTypes.actionsDragPluginMod.DraggableOptions
+import typings.interactjsTypes.actionsDropPluginMod.DropzoneOptions
+import typings.interactjsTypes.actionsGesturePluginMod.GesturableOptions
+import typings.interactjsTypes.actionsResizePluginMod.ResizableOptions
+import typings.interactjsTypes.autoScrollPluginMod.AutoScrollOptions
+import typings.interactjsTypes.coreTypesMod.ListenerMap
+import typings.interactjsTypes.coreTypesMod.Point
+import typings.interactjsTypes.devToolsPluginMod.DevToolsOptions
 import typings.interactjsTypes.interactjsTypesInts.`16`
 import typings.interactjsTypes.interactjsTypesInts.`8`
 import typings.interactjsTypes.interactjsTypesStrings.auto
 import typings.interactjsTypes.interactjsTypesStrings.client
 import typings.interactjsTypes.interactjsTypesStrings.never
 import typings.interactjsTypes.interactjsTypesStrings.page
-import typings.interactjsTypes.pluginMod.DraggableOptions
-import typings.interactjsTypes.resizePluginMod.ResizableOptions
-import typings.interactjsTypes.typesMod.ListenerMap
-import typings.interactjsTypes.typesMod.Point
+import typings.interactjsTypes.modifiersTypesMod.Modifier
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +25,7 @@ trait RequiredOptionsAutoScroll extends StObject {
   
   var actionChecker: Any
   
-  var allowFrom: String | typings.interactjsTypes.typesMod.Element
+  var allowFrom: String | typings.interactjsTypes.coreTypesMod.Element
   
   var autoScroll: AutoScrollOptions
   
@@ -49,11 +49,11 @@ trait RequiredOptionsAutoScroll extends StObject {
   
   var hold: Double
   
-  var ignoreFrom: String | typings.interactjsTypes.typesMod.Element
+  var ignoreFrom: String | typings.interactjsTypes.coreTypesMod.Element
   
   var inertia: AllowResume
   
-  var listeners: typings.interactjsTypes.typesMod.Listeners
+  var listeners: typings.interactjsTypes.coreTypesMod.Listeners
   
   var manualStart: Boolean
   
@@ -65,9 +65,9 @@ trait RequiredOptionsAutoScroll extends StObject {
   
   var mouseButtons: typings.interactjsTypes.interactjsTypesInts.`0` | typings.interactjsTypes.interactjsTypesInts.`1` | typings.interactjsTypes.interactjsTypesInts.`2` | typings.interactjsTypes.interactjsTypesInts.`4` | `8` | `16`
   
-  var origin: Point | String | typings.interactjsTypes.typesMod.Element
+  var origin: Point | String | typings.interactjsTypes.coreTypesMod.Element
   
-  var pointerEvents: Partial[typings.interactjsTypes.optionsMod.Options]
+  var pointerEvents: Partial[typings.interactjsTypes.coreOptionsMod.Options]
   
   var preventDefault: auto | never | String
   
@@ -79,7 +79,7 @@ object RequiredOptionsAutoScroll {
   
   inline def apply(
     actionChecker: Any,
-    allowFrom: String | typings.interactjsTypes.typesMod.Element,
+    allowFrom: String | typings.interactjsTypes.coreTypesMod.Element,
     autoScroll: AutoScrollOptions,
     context: typings.std.Node,
     cursorChecker: Any,
@@ -91,16 +91,16 @@ object RequiredOptionsAutoScroll {
     enabled: Boolean,
     gesture: Partial[GesturableOptions],
     hold: Double,
-    ignoreFrom: String | typings.interactjsTypes.typesMod.Element,
+    ignoreFrom: String | typings.interactjsTypes.coreTypesMod.Element,
     inertia: AllowResume,
-    listeners: typings.interactjsTypes.typesMod.Listeners,
+    listeners: typings.interactjsTypes.coreTypesMod.Listeners,
     manualStart: Boolean,
     max: Double,
     maxPerElement: Double,
     modifiers: js.Array[Modifier[Any, Any, Any, Any]],
     mouseButtons: typings.interactjsTypes.interactjsTypesInts.`0` | typings.interactjsTypes.interactjsTypesInts.`1` | typings.interactjsTypes.interactjsTypesInts.`2` | typings.interactjsTypes.interactjsTypesInts.`4` | `8` | `16`,
-    origin: Point | String | typings.interactjsTypes.typesMod.Element,
-    pointerEvents: Partial[typings.interactjsTypes.optionsMod.Options],
+    origin: Point | String | typings.interactjsTypes.coreTypesMod.Element,
+    pointerEvents: Partial[typings.interactjsTypes.coreOptionsMod.Options],
     preventDefault: auto | never | String,
     resize: Partial[ResizableOptions],
     styleCursor: Any
@@ -113,7 +113,7 @@ object RequiredOptionsAutoScroll {
     
     inline def setActionChecker(value: Any): Self = StObject.set(x, "actionChecker", value.asInstanceOf[js.Any])
     
-    inline def setAllowFrom(value: String | typings.interactjsTypes.typesMod.Element): Self = StObject.set(x, "allowFrom", value.asInstanceOf[js.Any])
+    inline def setAllowFrom(value: String | typings.interactjsTypes.coreTypesMod.Element): Self = StObject.set(x, "allowFrom", value.asInstanceOf[js.Any])
     
     inline def setAutoScroll(value: AutoScrollOptions): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
     
@@ -137,11 +137,11 @@ object RequiredOptionsAutoScroll {
     
     inline def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
     
-    inline def setIgnoreFrom(value: String | typings.interactjsTypes.typesMod.Element): Self = StObject.set(x, "ignoreFrom", value.asInstanceOf[js.Any])
+    inline def setIgnoreFrom(value: String | typings.interactjsTypes.coreTypesMod.Element): Self = StObject.set(x, "ignoreFrom", value.asInstanceOf[js.Any])
     
     inline def setInertia(value: AllowResume): Self = StObject.set(x, "inertia", value.asInstanceOf[js.Any])
     
-    inline def setListeners(value: typings.interactjsTypes.typesMod.Listeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: typings.interactjsTypes.coreTypesMod.Listeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
     inline def setListenersVarargs(value: ListenerMap*): Self = StObject.set(x, "listeners", js.Array(value*))
     
@@ -159,9 +159,9 @@ object RequiredOptionsAutoScroll {
       value: typings.interactjsTypes.interactjsTypesInts.`0` | typings.interactjsTypes.interactjsTypesInts.`1` | typings.interactjsTypes.interactjsTypesInts.`2` | typings.interactjsTypes.interactjsTypesInts.`4` | `8` | `16`
     ): Self = StObject.set(x, "mouseButtons", value.asInstanceOf[js.Any])
     
-    inline def setOrigin(value: Point | String | typings.interactjsTypes.typesMod.Element): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Point | String | typings.interactjsTypes.coreTypesMod.Element): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    inline def setPointerEvents(value: Partial[typings.interactjsTypes.optionsMod.Options]): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    inline def setPointerEvents(value: Partial[typings.interactjsTypes.coreOptionsMod.Options]): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     inline def setPreventDefault(value: auto | never | String): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     

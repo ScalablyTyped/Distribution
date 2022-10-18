@@ -1,19 +1,19 @@
 package typings.mendixmodelsdk.mod.webservices
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
-import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenWebservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "webservices.PublishedResource")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "webservices.PublishedResource")
 @js.native
-abstract class PublishedResource protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.webservices.PublishedResource {
+open class PublishedResource protected ()
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.webservices.PublishedResource {
   def this(
     model: AbstractModel,
     structureTypeName: String,

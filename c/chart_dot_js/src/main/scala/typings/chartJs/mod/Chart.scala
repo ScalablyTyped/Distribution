@@ -1,12 +1,12 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsStrings.dataset
-import typings.chartJs.elementMod.Element
-import typings.chartJs.geometricMod.ChartArea
-import typings.chartJs.geometricMod.Point
-import typings.chartJs.layoutMod.LayoutItem
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesElementMod.Element
+import typings.chartJs.typesGeometricMod.ChartArea
+import typings.chartJs.typesGeometricMod.Point
+import typings.chartJs.typesLayoutMod.LayoutItem
 import typings.std.CanvasRenderingContext2D
 import typings.std.Event
 import typings.std.HTMLCanvasElement

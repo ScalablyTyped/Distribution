@@ -3,14 +3,15 @@ package typings.gulpFileInclude
 import org.scalablytyped.runtime.StringDictionary
 import typings.gulpFileInclude.gulpFileIncludeStrings.`@file`
 import typings.gulpFileInclude.gulpFileIncludeStrings.`@root`
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(opts: Options): Any = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def apply(prefix: String): Any = ^.asInstanceOf[js.Dynamic].apply(prefix.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(opts: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(prefix: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(prefix.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-file-include", JSImport.Namespace)
   @js.native

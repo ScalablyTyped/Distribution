@@ -1,9 +1,9 @@
 package typings.ramlTypesystem.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ramlTypesystem.nominalTypesMod.IAnnotationType
-import typings.ramlTypesystem.nominalTypesMod.IUniverse
-import typings.ramlTypesystem.nominalTypesMod.Injector
+import typings.ramlTypesystem.distSrcNominalTypesMod.IAnnotationType
+import typings.ramlTypesystem.distSrcNominalTypesMod.IUniverse
+import typings.ramlTypesystem.distSrcNominalTypesMod.Injector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object nominalTypes {
   @JSImport("raml-typesystem", "nominalTypes.AbstractType")
   @js.native
   open class AbstractType protected ()
-    extends typings.ramlTypesystem.nominalTypesMod.AbstractType {
+    extends typings.ramlTypesystem.distSrcNominalTypesMod.AbstractType {
     def this(_name: String) = this()
     def this(_name: String, _universe: IUniverse) = this()
     def this(_name: String, _universe: Unit, _path: String) = this()
@@ -27,7 +27,7 @@ object nominalTypes {
   @JSImport("raml-typesystem", "nominalTypes.Adaptable")
   @js.native
   open class Adaptable ()
-    extends typings.ramlTypesystem.nominalTypesMod.Adaptable
+    extends typings.ramlTypesystem.distSrcNominalTypesMod.Adaptable
   /* static members */
   object Adaptable {
     
@@ -46,14 +46,14 @@ object nominalTypes {
   @JSImport("raml-typesystem", "nominalTypes.Annotation")
   @js.native
   open class Annotation protected ()
-    extends typings.ramlTypesystem.nominalTypesMod.Annotation {
+    extends typings.ramlTypesystem.distSrcNominalTypesMod.Annotation {
     def this(`type`: IAnnotationType, parameters: StringDictionary[Any]) = this()
   }
   
   @JSImport("raml-typesystem", "nominalTypes.Array")
   @js.native
   open class Array protected ()
-    extends typings.ramlTypesystem.nominalTypesMod.Array {
+    extends typings.ramlTypesystem.distSrcNominalTypesMod.Array {
     def this(_name: String) = this()
     def this(_name: String, _universe: IUniverse) = this()
     def this(_name: String, _universe: Unit, _path: String) = this()
@@ -63,7 +63,7 @@ object nominalTypes {
   @JSImport("raml-typesystem", "nominalTypes.Described")
   @js.native
   open class Described protected ()
-    extends typings.ramlTypesystem.nominalTypesMod.Described {
+    extends typings.ramlTypesystem.distSrcNominalTypesMod.Described {
     def this(_name: String) = this()
     def this(_name: String, _description: String) = this()
   }
@@ -85,12 +85,12 @@ object nominalTypes {
   @JSImport("raml-typesystem", "nominalTypes.Empty")
   @js.native
   open class Empty ()
-    extends typings.ramlTypesystem.nominalTypesMod.Empty
+    extends typings.ramlTypesystem.distSrcNominalTypesMod.Empty
   
   @JSImport("raml-typesystem", "nominalTypes.ExternalType")
   @js.native
   open class ExternalType protected ()
-    extends typings.ramlTypesystem.nominalTypesMod.ExternalType {
+    extends typings.ramlTypesystem.distSrcNominalTypesMod.ExternalType {
     def this(_name: String) = this()
     def this(_name: String, _universe: IUniverse) = this()
     def this(_name: String, _universe: Unit, _path: String) = this()
@@ -100,7 +100,7 @@ object nominalTypes {
   @JSImport("raml-typesystem", "nominalTypes.Property")
   @js.native
   open class Property protected ()
-    extends typings.ramlTypesystem.nominalTypesMod.Property {
+    extends typings.ramlTypesystem.distSrcNominalTypesMod.Property {
     def this(_name: String) = this()
     def this(_name: String, _description: String) = this()
   }
@@ -122,7 +122,7 @@ object nominalTypes {
   @JSImport("raml-typesystem", "nominalTypes.StructuredType")
   @js.native
   open class StructuredType protected ()
-    extends typings.ramlTypesystem.nominalTypesMod.StructuredType {
+    extends typings.ramlTypesystem.distSrcNominalTypesMod.StructuredType {
     def this(_name: String) = this()
     def this(_name: String, _universe: IUniverse) = this()
     def this(_name: String, _universe: Unit, _path: String) = this()
@@ -132,7 +132,7 @@ object nominalTypes {
   @JSImport("raml-typesystem", "nominalTypes.Union")
   @js.native
   open class Union protected ()
-    extends typings.ramlTypesystem.nominalTypesMod.Union {
+    extends typings.ramlTypesystem.distSrcNominalTypesMod.Union {
     def this(_name: String) = this()
     def this(_name: String, _universe: IUniverse) = this()
     def this(_name: String, _universe: Unit, _path: String) = this()
@@ -142,7 +142,7 @@ object nominalTypes {
   @JSImport("raml-typesystem", "nominalTypes.ValueType")
   @js.native
   open class ValueType protected ()
-    extends typings.ramlTypesystem.nominalTypesMod.ValueType {
+    extends typings.ramlTypesystem.distSrcNominalTypesMod.ValueType {
     def this(name: String) = this()
     def this(name: String, _universe: IUniverse) = this()
     def this(name: String, _universe: Unit, path: String) = this()

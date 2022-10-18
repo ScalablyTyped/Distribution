@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "Serializer")
 @js.native
 open class Serializer ()
-  extends typings.typedoc.serializationMod.Serializer
+  extends typings.typedoc.distLibSerializationMod.Serializer
 /* static members */
 object Serializer {
   

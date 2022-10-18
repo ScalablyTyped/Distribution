@@ -1,7 +1,6 @@
 package typings.hapiPodium
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.hapiPodium.hapiPodiumStrings.count
 import typings.hapiPodium.mod.Podium.Criteria
 import typings.hapiPodium.mod.Podium.EmitCriteria
@@ -11,7 +10,6 @@ import typings.hapiPodium.mod.Podium.FewCriteria
 import typings.hapiPodium.mod.Podium.Listener
 import typings.hapiPodium.mod.Podium.OnceCriteria
 import typings.std.Omit
-import typings.std.Parameters
 import typings.std.PromiseSettledResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,20 +17,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@hapi/podium", "Podium")
-  @js.native
-  /**
-    * Creates a new podium emitter.
-    *
-    * @param events - If present, the value is passed to podium.registerEvent().
-    * @param options - optional configuration options passed to podium.registerEvent().
+  type EmitData[Events] = IfUndefinedElse[Events, Any, EventListenerParameters[Events]]
+  
+  type EventListener[Events, TArgs /* <: js.Array[Any] */, TContext /* <: js.Object */] = Listener[TContext, IfUndefinedElse[Events, TArgs, EventListenerParameters[Events]]]
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Events[keyof Events] extends (args : any): any ? std.Parameters<Events[keyof Events]> : never
+    }}}
     */
-  open class Podium[Events] () extends StObject {
-    def this(events: js.Array[Event[EventNames[Events]]]) = this()
-    def this(events: Event[EventNames[Events]]) = this()
-    def this(events: js.Array[Event[EventNames[Events]]], options: EventSettings) = this()
-    def this(events: Unit, options: EventSettings) = this()
-    def this(events: Event[EventNames[Events]], options: EventSettings) = this()
+  @js.native
+  trait EventListenerParameters[Events] extends StObject
+  
+  type EventNames[Events] = IfUndefinedElse[Events, String, /* keyof Events */ String]
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends undefined ? If : Else
+    }}}
+    */
+  @js.native
+  trait IfUndefinedElse[T, If, Else] extends StObject
+  
+  @js.native
+  trait Podium[Events] extends StObject {
     
     /**
       * Subscribe a handler to an event. Same as podium.on().
@@ -576,17 +588,5 @@ object mod {
     type OnceCriteria[TName /* <: EventName */] = (Omit[CriteriaInterface[TName], count]) | TName
   }
   
-  type EmitData[Events] = IfUndefinedElse[Events, Any, EventListenerParameters[Events]]
-  
-  type EventListener[Events, TArgs /* <: js.Array[Any] */, TContext /* <: js.Object */] = Listener[TContext, IfUndefinedElse[Events, TArgs, EventListenerParameters[Events]]]
-  
-  type EventListenerParameters[Events] = Parameters[
-    /* import warning: importer.ImportType#apply Failed type conversion: Events[keyof Events] */ js.Any
-  ]
-  
-  type EventNames[Events] = IfUndefinedElse[Events, String, /* keyof Events */ String]
-  
-  type IfUndefinedElse[T, If, Else] = Else | If
-  
-  type WithRequiredProperty[Type, Key /* <: /* keyof Type */ String */] = Type & typings.hapiPodium.hapiPodiumStrings.WithRequiredProperty & TopLevel[Type]
+  type WithRequiredProperty[Type, Key /* <: /* keyof Type */ String */] = Type & (/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in Key ]: -? Type[Property]} */ js.Any)
 }

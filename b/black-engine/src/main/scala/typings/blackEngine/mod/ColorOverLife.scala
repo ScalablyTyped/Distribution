@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "ColorOverLife")
 @js.native
 open class ColorOverLife protected ()
-  extends typings.blackEngine.colorOverLifeMod.ColorOverLife {
-  def this(values: (Double | typings.blackEngine.colorScatterBaseMod.ColorScatterBase)*) = this()
+  extends typings.blackEngine.particlesModsColorOverLifeMod.ColorOverLife {
+  def this(values: (Double | typings.blackEngine.scattersColorScatterBaseMod.ColorScatterBase)*) = this()
 }

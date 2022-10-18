@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsHourglassFilledMod.HourglassFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hourglassFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/HourglassFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/HourglassFilled", JSImport.Default)
   @js.native
   val default: HourglassFilledIconType = js.native
-  
-  @js.native
-  trait HourglassFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_HourglassFilledIconType: String = js.native
-  }
   
   type _To = HourglassFilledIconType
   

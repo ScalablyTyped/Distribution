@@ -1,6 +1,6 @@
 package typings.phenomnomnominalTsquery
 
-import typings.phenomnomnominalTsquery.tsqueryTypesMod.TSQueryAttributeOperatorType
+import typings.phenomnomnominalTsquery.distSrcTsqueryTypesMod.TSQueryAttributeOperatorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

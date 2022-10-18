@@ -1,5 +1,6 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.libTracesScatterMod.ScatterSelectedMarker
 import typings.plotlyJs.mod.ColorScale
 import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.DataTransform
@@ -126,7 +127,6 @@ import typings.plotlyJs.plotlyJsStrings.zPlussignxPlussignyPlussigntext
 import typings.plotlyJs.plotlyJsStrings.zPlussignyPlussignx
 import typings.plotlyJs.plotlyJsStrings.zPlussignyPlussignxPlussignname
 import typings.plotlyJs.plotlyJsStrings.zPlussignyPlussignxPlussigntext
-import typings.plotlyJs.scatterMod.ScatterSelectedMarker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -150,7 +150,7 @@ trait PartialBoxPlotData
   
   var cliponaxis: js.UndefOr[Boolean] = js.undefined
   
-  var colorbar: js.UndefOr[PartialColorBarBgcolor] = js.undefined
+  var colorbar: js.UndefOr[PartialColorBar] = js.undefined
   
   var colorscale: js.UndefOr[ColorScale] = js.undefined
   
@@ -174,7 +174,7 @@ trait PartialBoxPlotData
   
   var fillpattern: js.UndefOr[PartialPattern] = js.undefined
   
-  var gauge: js.UndefOr[PartialGaugeAxis] = js.undefined
+  var gauge: js.UndefOr[PartialGauge] = js.undefined
   
   var groupnorm: js.UndefOr[_empty | fraction | percent] = js.undefined
   
@@ -238,7 +238,7 @@ trait PartialBoxPlotData
   
   var lon: js.UndefOr[js.Array[Datum]] = js.undefined
   
-  var marker: js.UndefOr[PartialBoxPlotMarkerColor] = js.undefined
+  var marker: js.UndefOr[PartialBoxPlotMarker] = js.undefined
   
   @JSName("marker.color")
   var markerDotcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
@@ -303,7 +303,7 @@ trait PartialBoxPlotData
   
   var name: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[PartialPlotNumberFont] = js.undefined
+  var number: js.UndefOr[PartialPlotNumber] = js.undefined
   
   var offset: js.UndefOr[Double] = js.undefined
   
@@ -349,9 +349,11 @@ trait PartialBoxPlotData
     (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside | auto | none
   ] = js.undefined
   
+  var texttemplate: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var theta: js.UndefOr[js.Array[Datum]] = js.undefined
   
-  var title: js.UndefOr[PartialDataTitleFont] = js.undefined
+  var title: js.UndefOr[PartialDataTitle] = js.undefined
   
   var transforms: js.UndefOr[js.Array[DataTransform]] = js.undefined
   
@@ -379,6 +381,8 @@ trait PartialBoxPlotData
   
   var xgap: js.UndefOr[Double] = js.undefined
   
+  var xhoverformat: js.UndefOr[String] = js.undefined
+  
   var xy: js.UndefOr[js.typedarray.Float32Array] = js.undefined
   
   var y: js.UndefOr[(js.Array[js.Array[Datum] | Datum]) | TypedArray] = js.undefined
@@ -388,6 +392,8 @@ trait PartialBoxPlotData
   var yaxis: js.UndefOr[String] = js.undefined
   
   var ygap: js.UndefOr[Double] = js.undefined
+  
+  var yhoverformat: js.UndefOr[String] = js.undefined
   
   var z: js.UndefOr[(js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray] = js.undefined
   
@@ -434,7 +440,7 @@ object PartialBoxPlotData {
     
     inline def setCliponaxisUndefined: Self = StObject.set(x, "cliponaxis", js.undefined)
     
-    inline def setColorbar(value: PartialColorBarBgcolor): Self = StObject.set(x, "colorbar", value.asInstanceOf[js.Any])
+    inline def setColorbar(value: PartialColorBar): Self = StObject.set(x, "colorbar", value.asInstanceOf[js.Any])
     
     inline def setColorbarUndefined: Self = StObject.set(x, "colorbar", js.undefined)
     
@@ -486,7 +492,7 @@ object PartialBoxPlotData {
     
     inline def setFillpatternUndefined: Self = StObject.set(x, "fillpattern", js.undefined)
     
-    inline def setGauge(value: PartialGaugeAxis): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
+    inline def setGauge(value: PartialGauge): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
     
     inline def setGaugeUndefined: Self = StObject.set(x, "gauge", js.undefined)
     
@@ -616,7 +622,7 @@ object PartialBoxPlotData {
     
     inline def setLonVarargs(value: Datum*): Self = StObject.set(x, "lon", js.Array(value*))
     
-    inline def setMarker(value: PartialBoxPlotMarkerColor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PartialBoxPlotMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerDotcolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "marker.color", value.asInstanceOf[js.Any])
     
@@ -720,7 +726,7 @@ object PartialBoxPlotData {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNumber(value: PartialPlotNumberFont): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: PartialPlotNumber): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
@@ -816,13 +822,19 @@ object PartialBoxPlotData {
     
     inline def setTextpositionUndefined: Self = StObject.set(x, "textposition", js.undefined)
     
+    inline def setTexttemplate(value: String | js.Array[String]): Self = StObject.set(x, "texttemplate", value.asInstanceOf[js.Any])
+    
+    inline def setTexttemplateUndefined: Self = StObject.set(x, "texttemplate", js.undefined)
+    
+    inline def setTexttemplateVarargs(value: String*): Self = StObject.set(x, "texttemplate", js.Array(value*))
+    
     inline def setTheta(value: js.Array[Datum]): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
     
     inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
     
     inline def setThetaVarargs(value: Datum*): Self = StObject.set(x, "theta", js.Array(value*))
     
-    inline def setTitle(value: PartialDataTitleFont): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: PartialDataTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
@@ -884,6 +896,10 @@ object PartialBoxPlotData {
     
     inline def setXgapUndefined: Self = StObject.set(x, "xgap", js.undefined)
     
+    inline def setXhoverformat(value: String): Self = StObject.set(x, "xhoverformat", value.asInstanceOf[js.Any])
+    
+    inline def setXhoverformatUndefined: Self = StObject.set(x, "xhoverformat", js.undefined)
+    
     inline def setXy(value: js.typedarray.Float32Array): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
     
     inline def setXyUndefined: Self = StObject.set(x, "xy", js.undefined)
@@ -905,6 +921,10 @@ object PartialBoxPlotData {
     inline def setYgap(value: Double): Self = StObject.set(x, "ygap", value.asInstanceOf[js.Any])
     
     inline def setYgapUndefined: Self = StObject.set(x, "ygap", js.undefined)
+    
+    inline def setYhoverformat(value: String): Self = StObject.set(x, "yhoverformat", value.asInstanceOf[js.Any])
+    
+    inline def setYhoverformatUndefined: Self = StObject.set(x, "yhoverformat", js.undefined)
     
     inline def setZ(value: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     

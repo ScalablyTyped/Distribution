@@ -1,7 +1,6 @@
 package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.nightwatch.anon.Name
 import typings.nightwatch.mod.^
 import typings.nightwatch.nightwatchStrings.`then`
@@ -47,7 +46,7 @@ type ExclusiveSuiteFunction = js.Function2[
 /* fn */ js.UndefOr[js.ThisFunction0[/* this */ DescribeInstance, Unit]], 
 this.type]
 
-type ExtendDescribeThis[T] = DescribeInstance & typings.nightwatch.nightwatchStrings.ExtendDescribeThis & TopLevel[T]
+type ExtendDescribeThis[T] = DescribeInstance & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? T[P]} */ js.Any)
 
 type GlobalNightwatchTestHook = js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[Any], Unit], Unit]
 

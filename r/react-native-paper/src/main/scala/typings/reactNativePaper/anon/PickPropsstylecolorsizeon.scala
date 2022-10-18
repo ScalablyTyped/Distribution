@@ -5,7 +5,7 @@ import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.iconMod.IconSource
+import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSource
 import typings.reactNativePaper.reactNativePaperStrings.checked
 import typings.reactNativePaper.reactNativePaperStrings.unchecked
 import org.scalablytyped.runtime.StObject

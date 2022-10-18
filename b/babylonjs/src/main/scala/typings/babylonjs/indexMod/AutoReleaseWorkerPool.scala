@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.workerPoolMod.AutoReleaseWorkerPoolOptions
+import typings.babylonjs.miscWorkerPoolMod.AutoReleaseWorkerPoolOptions
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,7 +1,7 @@
 package typings.canvg.mod.elements
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.canvg.animateColorElementMod.AnimateColorElement
+import typings.canvg.distDocumentAnimateColorElementMod.AnimateColorElement
 import typings.canvg.mod.elements.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

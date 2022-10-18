@@ -1,9 +1,9 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.protobufMod.ChangeOutputScriptType
-import typings.trezorConnect.protobufMod.MultisigRedeemScriptType
-import typings.trezorConnect.protobufMod.TxOutputType
-import typings.trezorConnect.protobufMod.UintType
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.ChangeOutputScriptType
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.MultisigRedeemScriptType
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.TxOutputType
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.UintType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

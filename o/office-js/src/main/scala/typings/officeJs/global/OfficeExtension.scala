@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object OfficeExtension {
   
   /**
-    * An abstract proxy object that represents an object in an Office document. 
-    * You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the 
+    * An abstract proxy object that represents an object in an Office document.
+    * You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the
     * proxy object state with the document by calling `context.sync()`.
     */
   @JSGlobal("OfficeExtension.ClientObject")
@@ -34,7 +34,7 @@ object OfficeExtension {
     var context: typings.officeJs.OfficeExtension.ClientRequestContext = js.native
     
     /**
-      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
       * isNullObject property.
       */
     /* CompleteClass */
@@ -42,7 +42,7 @@ object OfficeExtension {
   }
   
   /**
-    * An abstract RequestContext object that facilitates requests to the host Office application. 
+    * An abstract RequestContext object that facilitates requests to the Office application.
     * The `Excel.run` and `Word.run` methods provide a request context.
     */
   @JSGlobal("OfficeExtension.ClientRequestContext")
@@ -96,7 +96,7 @@ object OfficeExtension {
     /* CompleteClass */
     var innerError: typings.officeJs.OfficeExtension.Error = js.native
     
-    /** The error message passed through from the host Office application. */
+    /** The error message passed through from the Office application. */
     /* CompleteClass */
     var message: String = js.native
     
@@ -109,8 +109,8 @@ object OfficeExtension {
     var stack: String = js.native
     
     /**
-      * Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`. 
-      * If there was an error, this contains all trace messages that were executed before the error occurred. 
+      * Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`.
+      * If there was an error, this contains all trace messages that were executed before the error occurred.
       * These messages can help you monitor the program execution sequence and detect the case of the error.
       */
     /* CompleteClass */
@@ -240,12 +240,12 @@ object OfficeExtension {
     override def add(handler: js.Function1[T, js.Promise[Any]]): typings.officeJs.OfficeExtension.EventHandlerResult[T] = js.native
     
     /**
-      * Removes the specified function from the event handler list so that it will not be called on subsequent events. 
-      * 
-      * **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler. 
-      * More information can be found in {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler | Remove an event handler}. 
-      * 
-      * @param handler A reference to a function previously provided to the `add` method as an event handler. 
+      * Removes the specified function from the event handler list so that it will not be called on subsequent events.
+      *
+      * **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler.
+      * More information can be found in {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler | Remove an event handler}.
+      *
+      * @param handler A reference to a function previously provided to the `add` method as an event handler.
       */
     /* CompleteClass */
     override def remove(handler: js.Function1[T, js.Promise[Any]]): Unit = js.native
@@ -270,10 +270,10 @@ object OfficeExtension {
           ]) = this()
   }
   /**
-    * A Promise object that represents a deferred interaction with the host Office application. 
-    * The publicly-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2. 
-    * Promises can be chained via ".then", and errors can be caught via ".catch". 
-    * Remember to always use a ".catch" on the outer promise, and to return intermediary promises so as not to break the promise chain. 
+    * A Promise object that represents a deferred interaction with the Office application.
+    * The publicly-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2.
+    * Promises can be chained via ".then", and errors can be caught via ".catch".
+    * Remember to always use a ".catch" on the outer promise, and to return intermediary promises so as not to break the promise chain.
     * When a browser-provided native Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead.
     */
   @JSGlobal("OfficeExtension.Promise")
@@ -301,12 +301,12 @@ object OfficeExtension {
     /**
       * Determines whether to log additional error information upon failure.
       *
-      * When this property is set to true, the error object will include a "debugInfo.fullStatements" property that lists all statements in the 
+      * When this property is set to true, the error object will include a `debugInfo.fullStatements` property that lists all statements in the
       * batch request, including all statements that precede and follow the point of failure.
       *
-      * Setting this property to true will negatively impact performance and will log all statements in the batch request, including any statements 
+      * Setting this property to true will negatively impact performance and will log all statements in the batch request, including any statements
       * that may contain potentially-sensitive data.
-      * It is recommended that you only set this property to true during debugging and that you never log the value of 
+      * It is recommended that you only set this property to true during debugging and that you never log the value of
       * error.debugInfo.fullStatements to an external database or analytics service.
       */
     @JSGlobal("OfficeExtension.config.extendedErrorLogging")

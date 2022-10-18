@@ -1,6 +1,6 @@
 package typings.uirouterCore.anon
 
-import typings.uirouterCore.stateInterfaceMod.StateOrName
+import typings.uirouterCore.libStateInterfaceMod.StateOrName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

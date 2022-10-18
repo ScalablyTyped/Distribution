@@ -9,13 +9,13 @@ import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.avatarMod.AvatarIcon
+import typings.reactNativeElements.distAvatarAvatarMod.AvatarIcon
+import typings.reactNativeElements.distConfigThemeMod.RecursivePartial
 import typings.reactNativeElements.reactNativeElementsStrings.Component
 import typings.reactNativeElements.reactNativeElementsStrings.large
 import typings.reactNativeElements.reactNativeElementsStrings.medium
 import typings.reactNativeElements.reactNativeElementsStrings.small
 import typings.reactNativeElements.reactNativeElementsStrings.xlarge
-import typings.reactNativeElements.themeMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

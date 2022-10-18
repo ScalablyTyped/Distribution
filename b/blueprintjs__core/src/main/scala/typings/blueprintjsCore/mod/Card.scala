@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.cardMod.CardProps
+import typings.blueprintjsCore.libEsmComponentsCardCardMod.CardProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Card")
 @js.native
 open class Card protected ()
-  extends typings.blueprintjsCore.componentsMod.Card {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Card {
   def this(props: CardProps) = this()
   def this(props: CardProps, context: Any) = this()
 }

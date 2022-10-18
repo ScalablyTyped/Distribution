@@ -4,7 +4,7 @@ import typings.uapiJson.anon.AddSegments
 import typings.uapiJson.anon.Book
 import typings.uapiJson.anon.CloseSession
 import typings.uapiJson.anon.CurrencyConvert
-import typings.uapiJson.settingsMod.Settings
+import typings.uapiJson.libSettingsMod.Settings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

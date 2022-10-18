@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object fragmentedStoreStrings {
   
   @js.native
-  sealed trait StoreUtils extends StObject
-  inline def StoreUtils: StoreUtils = "StoreUtils".asInstanceOf[StoreUtils]
-  
-  @js.native
   sealed trait useStore extends StObject
   inline def useStore: useStore = "useStore".asInstanceOf[useStore]
 }

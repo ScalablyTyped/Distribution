@@ -22,21 +22,21 @@ object mod {
   @JSImport("@libp2p/webrtc-peer", "WebRTCInitiator")
   @js.native
   open class WebRTCInitiator ()
-    extends typings.libp2pWebrtcPeer.initiatorMod.WebRTCInitiator {
+    extends typings.libp2pWebrtcPeer.distSrcInitiatorMod.WebRTCInitiator {
     def this(opts: WebRTCInitiatorInit) = this()
   }
   
   @JSImport("@libp2p/webrtc-peer", "WebRTCPeer")
   @js.native
   open class WebRTCPeer protected ()
-    extends typings.libp2pWebrtcPeer.peerMod.WebRTCPeer {
+    extends typings.libp2pWebrtcPeer.distSrcPeerMod.WebRTCPeer {
     def this(opts: WebRTCPeerInitlogPrefixst) = this()
   }
   
   @JSImport("@libp2p/webrtc-peer", "WebRTCReceiver")
   @js.native
   open class WebRTCReceiver ()
-    extends typings.libp2pWebrtcPeer.receiverMod.WebRTCReceiver {
+    extends typings.libp2pWebrtcPeer.distSrcReceiverMod.WebRTCReceiver {
     def this(opts: WebRTCReceiverInit) = this()
   }
   

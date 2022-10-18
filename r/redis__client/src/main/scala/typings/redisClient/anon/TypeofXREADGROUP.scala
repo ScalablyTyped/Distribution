@@ -1,10 +1,10 @@
 package typings.redisClient.anon
 
-import typings.redisClient.genericTransformersMod.StreamsMessagesReply
-import typings.redisClient.libCommandsMod.RedisCommandArgument
-import typings.redisClient.libCommandsMod.RedisCommandArguments
-import typings.redisClient.xreadgroupMod.XReadGroupOptions
-import typings.redisClient.xreadgroupMod.XReadGroupStream
+import typings.redisClient.distLibCommandsGenericTransformersMod.StreamsMessagesReply
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsXreadgroupMod.XReadGroupOptions
+import typings.redisClient.distLibCommandsXreadgroupMod.XReadGroupStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

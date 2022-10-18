@@ -7,6 +7,7 @@ import typings.cesium.mod.ClassificationType
 import typings.cesium.mod.ClippingPlaneCollection
 import typings.cesium.mod.ColorBlendMode
 import typings.cesium.mod.CustomShader
+import typings.cesium.mod.DistanceDisplayCondition
 import typings.cesium.mod.HeightReference
 import typings.cesium.mod.ImageBasedLighting
 import typings.cesium.mod.Matrix4
@@ -51,7 +52,7 @@ trait Asynchronous extends StObject {
   
   var debugWireframe: js.UndefOr[Boolean] = js.undefined
   
-  var distanceDisplayCondition: js.UndefOr[typings.cesium.mod.DistanceDisplayCondition] = js.undefined
+  var distanceDisplayCondition: js.UndefOr[DistanceDisplayCondition] = js.undefined
   
   var enableDebugWireframe: js.UndefOr[Boolean] = js.undefined
   
@@ -184,7 +185,7 @@ object Asynchronous {
     
     inline def setDebugWireframeUndefined: Self = StObject.set(x, "debugWireframe", js.undefined)
     
-    inline def setDistanceDisplayCondition(value: typings.cesium.mod.DistanceDisplayCondition): Self = StObject.set(x, "distanceDisplayCondition", value.asInstanceOf[js.Any])
+    inline def setDistanceDisplayCondition(value: DistanceDisplayCondition): Self = StObject.set(x, "distanceDisplayCondition", value.asInstanceOf[js.Any])
     
     inline def setDistanceDisplayConditionUndefined: Self = StObject.set(x, "distanceDisplayCondition", js.undefined)
     

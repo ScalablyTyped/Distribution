@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-apps-script
 
-Typings are for version 2021-04-15
+Typings are for version 1.0
 
 ## Library description:
 gas, the complete CLI for Google Apps Script

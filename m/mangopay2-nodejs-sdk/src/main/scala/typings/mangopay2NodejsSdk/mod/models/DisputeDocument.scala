@@ -1,9 +1,9 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DisputeDocumentData
-import typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DisputeDocumentType
-import typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentStatus
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
+import typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.DisputeDocumentData
+import typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.DisputeDocumentType
+import typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.DocumentStatus
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +43,7 @@ open class DisputeDocument protected ()
     * The type of reason for refusal
     */
   /* CompleteClass */
-  var RefusedReasonType: typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.RefusedReasonType = js.native
+  var RefusedReasonType: typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.RefusedReasonType = js.native
   
   /**
     * The status of this KYC/Dispute document

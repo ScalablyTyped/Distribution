@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler", "AST")
+/* note: abstract class */ @JSImport("@angular/compiler", "AST")
 @js.native
-abstract class AST protected () extends StObject {
+open class AST protected () extends StObject {
   def this(
     span: ParseSpan,
     /**

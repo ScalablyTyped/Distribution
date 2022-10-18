@@ -6,8 +6,8 @@ import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternal
 import typings.firebaseDatabase.mod.DatabaseReference
 import typings.firebaseDatabase.mod.Query_
-import typings.firebaseDatabaseCompat.referenceMod.Query
-import typings.firebaseDatabaseCompat.referenceMod.Reference
+import typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiReferenceMod.Query
+import typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiReferenceMod.Reference
 import typings.firebaseDatabaseTypes.mod.FirebaseDatabase
 import typings.firebaseUtil.mod.EmulatorMockTokenOptions
 import typings.std.PromiseLike
@@ -79,9 +79,7 @@ object anon {
   trait Call extends StObject {
     
     def apply(): FirebaseDatabase = js.native
-    def apply(
-      app: typings.firebaseDatabaseCompat.firebaseDatabaseCompatMod.firebaseAppCompatAugmentingMod.FirebaseApp
-    ): FirebaseDatabase = js.native
+    def apply(app: typings.firebaseDatabaseCompat.mod.firebaseAppCompatAugmentingMod.FirebaseApp): FirebaseDatabase = js.native
     
     var Database: Instantiable0[FirebaseDatabase] = js.native
     
@@ -100,9 +98,9 @@ object anon {
   trait DataSnapshot extends StObject {
     
     var DataSnapshot: Instantiable2[
-        /* _database */ typings.firebaseDatabaseCompat.databaseMod.Database, 
+        /* _database */ typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiDatabaseMod.Database, 
         /* _delegate */ typings.firebaseDatabase.mod.DataSnapshot, 
-        typings.firebaseDatabaseCompat.referenceMod.DataSnapshot
+        typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiReferenceMod.DataSnapshot
       ]
     
     var Database: TypeofDatabase
@@ -112,9 +110,9 @@ object anon {
     var Query: TypeofQuery
     
     var Reference: Instantiable2[
-        /* database */ typings.firebaseDatabaseCompat.databaseMod.Database, 
+        /* database */ typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiDatabaseMod.Database, 
         /* _delegate */ DatabaseReference, 
-        typings.firebaseDatabaseCompat.referenceMod.Reference
+        typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiReferenceMod.Reference
       ]
     
     var ServerValue: Increment
@@ -123,26 +121,26 @@ object anon {
     def enableLogging(enabled: Boolean, persistent: Boolean): Any
     def enableLogging(logger: js.Function1[/* message */ String, Any]): Any
     @JSName("enableLogging")
-    var enableLogging_Original: FnCallEnabledPersistent
+    var enableLogging_Original: FnCall
   }
   object DataSnapshot {
     
     inline def apply(
       DataSnapshot: Instantiable2[
-          /* _database */ typings.firebaseDatabaseCompat.databaseMod.Database, 
+          /* _database */ typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiDatabaseMod.Database, 
           /* _delegate */ typings.firebaseDatabase.mod.DataSnapshot, 
-          typings.firebaseDatabaseCompat.referenceMod.DataSnapshot
+          typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiReferenceMod.DataSnapshot
         ],
       Database: TypeofDatabase,
       INTERNAL: TypeofINTERNAL,
       Query: TypeofQuery,
       Reference: Instantiable2[
-          /* database */ typings.firebaseDatabaseCompat.databaseMod.Database, 
+          /* database */ typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiDatabaseMod.Database, 
           /* _delegate */ DatabaseReference, 
           Reference
         ],
       ServerValue: Increment,
-      enableLogging: FnCallEnabledPersistent
+      enableLogging: FnCall
     ): DataSnapshot = {
       val __obj = js.Dynamic.literal(DataSnapshot = DataSnapshot.asInstanceOf[js.Any], Database = Database.asInstanceOf[js.Any], INTERNAL = INTERNAL.asInstanceOf[js.Any], Query = Query.asInstanceOf[js.Any], Reference = Reference.asInstanceOf[js.Any], ServerValue = ServerValue.asInstanceOf[js.Any], enableLogging = enableLogging.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataSnapshot]
@@ -152,15 +150,15 @@ object anon {
       
       inline def setDataSnapshot(
         value: Instantiable2[
-              /* _database */ typings.firebaseDatabaseCompat.databaseMod.Database, 
+              /* _database */ typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiDatabaseMod.Database, 
               /* _delegate */ typings.firebaseDatabase.mod.DataSnapshot, 
-              typings.firebaseDatabaseCompat.referenceMod.DataSnapshot
+              typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiReferenceMod.DataSnapshot
             ]
       ): Self = StObject.set(x, "DataSnapshot", value.asInstanceOf[js.Any])
       
       inline def setDatabase(value: TypeofDatabase): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
       
-      inline def setEnableLogging(value: FnCallEnabledPersistent): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
+      inline def setEnableLogging(value: FnCall): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
       
       inline def setINTERNAL(value: TypeofINTERNAL): Self = StObject.set(x, "INTERNAL", value.asInstanceOf[js.Any])
       
@@ -168,7 +166,7 @@ object anon {
       
       inline def setReference(
         value: Instantiable2[
-              /* database */ typings.firebaseDatabaseCompat.databaseMod.Database, 
+              /* database */ typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiDatabaseMod.Database, 
               /* _delegate */ DatabaseReference, 
               Reference
             ]
@@ -182,7 +180,7 @@ object anon {
   trait Database extends StObject {
     
     def apply(): FirebaseDatabase = js.native
-    def apply(app: typings.firebaseDatabaseCompat.mod.FirebaseApp): FirebaseDatabase = js.native
+    def apply(app: typings.firebaseDatabaseCompat.appCompatMod.FirebaseApp): FirebaseDatabase = js.native
     
     var Database: Instantiable0[FirebaseDatabase] = js.native
     
@@ -230,19 +228,6 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def apply[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Reference, TResult1 | PromiseLike[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
-    def apply[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ Reference, TResult1 | PromiseLike[TResult1]],
-      onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
-    def apply[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-    def apply[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-  }
-  
-  @js.native
-  trait FnCallEnabledPersistent extends StObject {
-    
     def apply(enabled: Boolean): Any = js.native
     def apply(enabled: Boolean, persistent: Boolean): Any = js.native
     def apply(logger: js.Function1[/* message */ String, Any]): Any = js.native
@@ -257,6 +242,19 @@ object anon {
     def apply(logger: Boolean): Any = js.native
     def apply(logger: Boolean, persistent: Boolean): Any = js.native
     def apply(logger: Unit, persistent: Boolean): Any = js.native
+  }
+  
+  @js.native
+  trait FnCallOnfulfilledOnrejected extends StObject {
+    
+    def apply[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def apply[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Reference, TResult1 | PromiseLike[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
+    def apply[TResult1, TResult2](
+      onfulfilled: js.Function1[/* value */ Reference, TResult1 | PromiseLike[TResult1]],
+      onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
+    ): js.Promise[TResult1 | TResult2] = js.native
+    def apply[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def apply[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
   }
   
   @js.native
@@ -354,7 +352,7 @@ object anon {
        with Instantiable2[
           /* _delegate */ typings.firebaseDatabase.mod.Database, 
           /* app */ FirebaseApp, 
-          typings.firebaseDatabaseCompat.databaseMod.Database
+          typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiDatabaseMod.Database
         ] {
     
     val ServerValue: Increment = js.native
@@ -381,7 +379,7 @@ object anon {
   trait TypeofQuery
     extends StObject
        with Instantiable2[
-          /* database */ typings.firebaseDatabaseCompat.databaseMod.Database, 
+          /* database */ typings.firebaseDatabaseCompat.distDatabaseCompatSrcApiDatabaseMod.Database, 
           /* _delegate */ Query_, 
           Query
         ] {

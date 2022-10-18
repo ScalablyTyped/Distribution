@@ -3,7 +3,6 @@ package typings.lambdaTester
 import typings.awsLambda.handlerMod.ClientContext
 import typings.awsLambda.handlerMod.Context
 import typings.awsLambda.handlerMod.Handler
-import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,15 +44,45 @@ object mod {
     def xray(): this.type = js.native
   }
   
-  type HandlerError[T /* <: Handler[Any, Any] */] = NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<aws-lambda.aws-lambda/handler.Callback<any>>['0'] */ js.Any
-  ]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends aws-lambda.aws-lambda/handler.Handler<any, infer TResult> ? std.NonNullable<std.Parameters<aws-lambda.aws-lambda/handler.Callback<TResult>>['0']> : never
+    }}}
+    */
+  @js.native
+  trait HandlerError[T /* <: Handler[Any, Any] */] extends StObject
   
-  type HandlerEvent[T /* <: Handler[Any, Any] */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends aws-lambda.aws-lambda/handler.Handler<infer TEvent, any> ? TEvent : never
+    }}}
+    */
+  @js.native
+  trait HandlerEvent[T /* <: Handler[Any, Any] */] extends StObject
   
-  type HandlerResult[T /* <: Handler[Any, Any] */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends aws-lambda.aws-lambda/handler.Handler<any, infer TResult> ? TResult : never
+    }}}
+    */
+  @js.native
+  trait HandlerResult[T /* <: Handler[Any, Any] */] extends StObject
   
-  type Verifier[S] = VerifierFn[js.Error | S | String]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S extends lambda-tester.lambda-tester.HandlerError<aws-lambda.aws-lambda/handler.Handler<any, any>> ? S extends string ? lambda-tester.lambda-tester.VerifierFn<string> : S extends std.Error ? lambda-tester.lambda-tester.VerifierFn<std.Error> : never : lambda-tester.lambda-tester.VerifierFn<S>
+    }}}
+    */
+  @js.native
+  trait Verifier[S] extends StObject
   
   @js.native
   trait VerifierFn[S] extends StObject {

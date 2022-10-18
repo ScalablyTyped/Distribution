@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("tslint", "WalkContext")
 @js.native
 open class WalkContext[T] protected ()
-  extends typings.tslint.walkerMod.WalkContext[T] {
+  extends typings.tslint.libLanguageWalkerMod.WalkContext[T] {
   def this(sourceFile: SourceFile, ruleName: String, options: T) = this()
 }

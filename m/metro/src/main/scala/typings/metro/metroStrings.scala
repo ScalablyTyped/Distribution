@@ -1,9 +1,9 @@
 package typings.metro
 
-import typings.metro.collectDependenciesMod.DynamicRequiresBehavior
 import typings.metro.deltaBundlerTypesMod.AsyncDependencyType
-import typings.metro.reportingMod.GlobalCacheDisabledReason
-import typings.metro.typesMod.BundleType
+import typings.metro.libReportingMod.GlobalCacheDisabledReason
+import typings.metro.moduleGraphWorkerCollectDependenciesMod.DynamicRequiresBehavior
+import typings.metro.sharedTypesMod.BundleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

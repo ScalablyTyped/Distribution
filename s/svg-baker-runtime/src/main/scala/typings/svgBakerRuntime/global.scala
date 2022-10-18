@@ -1,8 +1,8 @@
 package typings.svgBakerRuntime
 
-import typings.svgBakerRuntime.browserSpriteConfigMod.BrowserSpriteConfig
 import typings.svgBakerRuntime.mod.default
-import typings.svgBakerRuntime.spriteConfigMod.SpriteConfig
+import typings.svgBakerRuntime.srcBrowserSpriteDotconfigMod.BrowserSpriteConfig
+import typings.svgBakerRuntime.srcSpriteDotconfigMod.SpriteConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

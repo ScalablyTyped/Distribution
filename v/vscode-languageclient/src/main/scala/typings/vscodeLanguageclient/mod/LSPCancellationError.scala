@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-languageclient", "LSPCancellationError")
 @js.native
 open class LSPCancellationError protected ()
-  extends typings.vscodeLanguageclient.featuresMod.LSPCancellationError {
+  extends typings.vscodeLanguageclient.libCommonFeaturesMod.LSPCancellationError {
   def this(data: js.Object) = this()
 }

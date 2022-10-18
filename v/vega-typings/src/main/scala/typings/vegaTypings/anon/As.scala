@@ -1,9 +1,9 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.runtimeRuntimeMod.AccessorParameters
-import typings.vegaTypings.runtimeRuntimeMod.AggregateOps
-import typings.vegaTypings.runtimeRuntimeMod.OperatorParam
-import typings.vegaTypings.runtimeRuntimeMod.OrArray
+import typings.vegaTypings.typesRuntimeRuntimeMod.AccessorParameters
+import typings.vegaTypings.typesRuntimeRuntimeMod.AggregateOps
+import typings.vegaTypings.typesRuntimeRuntimeMod.OperatorParam
+import typings.vegaTypings.typesRuntimeRuntimeMod.OrArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.emberTemplate
 
-import typings.emberTemplate.handlebarsMod.SafeString
+import typings.emberTemplate.privateHandlebarsMod.SafeString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

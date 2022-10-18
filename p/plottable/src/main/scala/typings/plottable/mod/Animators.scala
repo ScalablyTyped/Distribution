@@ -261,7 +261,7 @@ object Animators {
     * @constructor
     */
   open class Easing ()
-    extends typings.plottable.animatorsMod.Easing
+    extends typings.plottable.buildSrcAnimatorsMod.Easing
   /* static members */
   object Easing {
     
@@ -313,5 +313,5 @@ object Animators {
   @JSImport("plottable", "Animators.Null")
   @js.native
   open class Null ()
-    extends typings.plottable.animatorsMod.Null
+    extends typings.plottable.buildSrcAnimatorsMod.Null
 }

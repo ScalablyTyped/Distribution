@@ -12,9 +12,9 @@ import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigation.mod.NavigationScreenConfig
 import typings.reactNavigation.mod.NavigationScreenConfigProps
 import typings.reactNavigation.mod.NavigationScreenProp
-import typings.reactNavigationMaterialBottomTabs.materialBottomTabViewMod.Options
-import typings.reactNavigationMaterialBottomTabs.typesMod.NavigationMaterialBottomTabOptions
-import typings.reactNavigationMaterialBottomTabs.typesMod.NavigationTabProp
+import typings.reactNavigationMaterialBottomTabs.libTypescriptSrcTypesMod.NavigationMaterialBottomTabOptions
+import typings.reactNavigationMaterialBottomTabs.libTypescriptSrcTypesMod.NavigationTabProp
+import typings.reactNavigationMaterialBottomTabs.libTypescriptSrcViewsMaterialBottomTabViewMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,6 @@
 package typings.elasticlunrjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SerialisedDocumentStore[T] extends StObject {
   
   var docInfo: StringDictionary[
-    typings.elasticlunrjs.elasticlunrjsStrings.SerialisedDocumentStore & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ field in keyof T ]: number} */ js.Any
   ]
   
   var docs: StringDictionary[T]
@@ -18,7 +17,7 @@ object SerialisedDocumentStore {
   
   inline def apply[T](
     docInfo: StringDictionary[
-      typings.elasticlunrjs.elasticlunrjsStrings.SerialisedDocumentStore & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ field in keyof T ]: number} */ js.Any
     ],
     docs: StringDictionary[T]
   ): SerialisedDocumentStore[T] = {
@@ -30,7 +29,7 @@ object SerialisedDocumentStore {
     
     inline def setDocInfo(
       value: StringDictionary[
-          typings.elasticlunrjs.elasticlunrjsStrings.SerialisedDocumentStore & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ field in keyof T ]: number} */ js.Any
         ]
     ): Self = StObject.set(x, "docInfo", value.asInstanceOf[js.Any])
     

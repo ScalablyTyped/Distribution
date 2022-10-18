@@ -1,11 +1,10 @@
 package typings.grpcGrpcJs.anon
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
-import typings.grpcGrpcJs.clientMod.ClientOptions
-import typings.grpcGrpcJs.generatedChannelzMod.SubtypeConstructor
+import typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials
+import typings.grpcGrpcJs.buildSrcClientMod.ClientOptions
+import typings.grpcGrpcJs.buildSrcGeneratedChannelzMod.SubtypeConstructor
 import typings.grpcGrpcJs.mod.Client
-import typings.grpcGrpcJs.v1ChannelzMod.ChannelzClient
 import typings.grpcProtoLoader.mod.MessageTypeDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,7 +37,7 @@ trait Address extends StObject {
       /* options */ js.UndefOr[ClientOptions], 
       Client
     ], 
-    ChannelzClient
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _grpc_channelz_v1_ChannelzClient */ scala.Any
   ]) & Service
   
   var GetChannelRequest: MessageTypeDefinition
@@ -112,7 +111,7 @@ object Address {
         /* options */ js.UndefOr[ClientOptions], 
         Client
       ], 
-      ChannelzClient
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _grpc_channelz_v1_ChannelzClient */ scala.Any
     ]) & Service,
     GetChannelRequest: MessageTypeDefinition,
     GetChannelResponse: MessageTypeDefinition,
@@ -170,7 +169,7 @@ object Address {
             /* options */ js.UndefOr[ClientOptions], 
             Client
           ], 
-          ChannelzClient
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _grpc_channelz_v1_ChannelzClient */ scala.Any
         ]) & Service
     ): Self = StObject.set(x, "Channelz", value.asInstanceOf[js.Any])
     

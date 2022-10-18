@@ -1,6 +1,6 @@
 package typings.antd.anon
 
-import typings.rcFieldForm.interfaceMod.ValidateMessages
+import typings.rcFieldForm.esInterfaceMod.ValidateMessages
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ trait RequiredMark extends StObject {
   
   var colon: js.UndefOr[Boolean] = js.undefined
   
-  var requiredMark: js.UndefOr[typings.antd.formFormMod.RequiredMark] = js.undefined
+  var requiredMark: js.UndefOr[typings.antd.libFormFormMod.RequiredMark] = js.undefined
   
   var validateMessages: js.UndefOr[ValidateMessages] = js.undefined
 }
@@ -26,7 +26,7 @@ object RequiredMark {
     
     inline def setColonUndefined: Self = StObject.set(x, "colon", js.undefined)
     
-    inline def setRequiredMark(value: typings.antd.formFormMod.RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
+    inline def setRequiredMark(value: typings.antd.libFormFormMod.RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
     
     inline def setRequiredMarkUndefined: Self = StObject.set(x, "requiredMark", js.undefined)
     

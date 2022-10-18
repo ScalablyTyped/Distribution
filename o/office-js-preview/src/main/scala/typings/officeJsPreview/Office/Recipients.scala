@@ -89,7 +89,7 @@ trait Recipients extends StObject {
     * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
     *
     * @param recipients - The recipients to add to the recipients list.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.
@@ -117,7 +117,7 @@ trait Recipients extends StObject {
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-    * 
+    *
     * **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact
     * or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated
     * `EmailAddressDetails` object instead of the contact's saved name. For more details, refer to the
@@ -175,7 +175,7 @@ trait Recipients extends StObject {
     * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from 
     * the auto-complete list.
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`. The `value` property of the result is an array of `EmailAddressDetails` objects.
@@ -261,7 +261,7 @@ trait Recipients extends StObject {
     * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
     *
     * @param recipients - The recipients to add to the recipients list.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. If setting the recipients fails the `asyncResult.error` property will contain a code that

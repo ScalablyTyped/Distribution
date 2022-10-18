@@ -14,6 +14,11 @@ trait MapCapabilities extends StObject {
   /**
     * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     */
+  var isAdvancedMarkersAvailable: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
+    */
   var isDataDrivenStylingAvailable: js.UndefOr[Boolean] = js.undefined
 }
 object MapCapabilities {
@@ -24,6 +29,10 @@ object MapCapabilities {
   }
   
   extension [Self <: MapCapabilities](x: Self) {
+    
+    inline def setIsAdvancedMarkersAvailable(value: Boolean): Self = StObject.set(x, "isAdvancedMarkersAvailable", value.asInstanceOf[js.Any])
+    
+    inline def setIsAdvancedMarkersAvailableUndefined: Self = StObject.set(x, "isAdvancedMarkersAvailable", js.undefined)
     
     inline def setIsDataDrivenStylingAvailable(value: Boolean): Self = StObject.set(x, "isDataDrivenStylingAvailable", value.asInstanceOf[js.Any])
     

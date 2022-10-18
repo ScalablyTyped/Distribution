@@ -154,7 +154,7 @@ object mod {
       * Enables users to show a prompt to add a new tag at the bottom of the suggestions list if allowNew is enabled.
       * Defaults to null.
       */
-    var newTagPrefix: js.UndefOr[String] = js.undefined
+    var newTagText: js.UndefOr[String] = js.undefined
     
     /**
       * Message shown if there are no matching suggestions. Default: null.
@@ -300,9 +300,9 @@ object mod {
       
       inline def setMinQueryLengthUndefined: Self = StObject.set(x, "minQueryLength", js.undefined)
       
-      inline def setNewTagPrefix(value: String): Self = StObject.set(x, "newTagPrefix", value.asInstanceOf[js.Any])
+      inline def setNewTagText(value: String): Self = StObject.set(x, "newTagText", value.asInstanceOf[js.Any])
       
-      inline def setNewTagPrefixUndefined: Self = StObject.set(x, "newTagPrefix", js.undefined)
+      inline def setNewTagTextUndefined: Self = StObject.set(x, "newTagText", js.undefined)
       
       inline def setNoSuggestionsText(value: String): Self = StObject.set(x, "noSuggestionsText", value.asInstanceOf[js.Any])
       

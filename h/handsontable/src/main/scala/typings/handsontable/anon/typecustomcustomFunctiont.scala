@@ -1,8 +1,8 @@
 package typings.handsontable.anon
 
-import typings.handsontable.columnSummaryColumnSummaryMod.DetailedSettings
-import typings.handsontable.columnSummaryColumnSummaryMod.Endpoint
 import typings.handsontable.handsontableStrings.custom
+import typings.handsontable.pluginsColumnSummaryColumnSummaryMod.DetailedSettings
+import typings.handsontable.pluginsColumnSummaryColumnSummaryMod.Endpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

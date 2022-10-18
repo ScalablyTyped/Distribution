@@ -1,10 +1,10 @@
 package typings.typedGithubApi
 
 import typings.moment.mod.Moment
-import typings.typedGithubApi.githubRefMod.GitHubRef
-import typings.typedGithubApi.githubRefMod.OptionsOrRef
-import typings.typedGithubApi.interfacesMilestoneMod.Milestone
-import typings.typedGithubApi.interfacesUserMod.UserSummary
+import typings.typedGithubApi.distGithubRefMod.GitHubRef
+import typings.typedGithubApi.distGithubRefMod.OptionsOrRef
+import typings.typedGithubApi.distInterfacesMilestoneMod.Milestone
+import typings.typedGithubApi.distInterfacesUserMod.UserSummary
 import typings.typedGithubApi.typedGithubApiStrings.closed
 import typings.typedGithubApi.typedGithubApiStrings.open
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ object distMilestoneMod {
   open class MilestoneClass protected ()
     extends GitHubRef
        with Milestone {
-    def this(data: typings.typedGithubApi.milestoneMod.Milestone, options: OptionsOrRef) = this()
+    def this(data: typings.typedGithubApi.distApiInterfacesMilestoneMod.Milestone, options: OptionsOrRef) = this()
     
     /* CompleteClass */
     var closedIssueCount: Double = js.native

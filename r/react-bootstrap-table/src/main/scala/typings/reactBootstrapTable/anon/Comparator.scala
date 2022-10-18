@@ -13,14 +13,14 @@ trait Comparator extends StObject {
   var comparator: FilterComparator
   
   /**
-    * Number value.
+    * Date value. String values will be automatically converted to dates.
     */
-  var number: Double
+  var date: js.Date | String
 }
 object Comparator {
   
-  inline def apply(comparator: FilterComparator, number: Double): Comparator = {
-    val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
+  inline def apply(comparator: FilterComparator, date: js.Date | String): Comparator = {
+    val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comparator]
   }
   
@@ -28,6 +28,6 @@ object Comparator {
     
     inline def setComparator(value: FilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

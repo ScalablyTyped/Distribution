@@ -3,8 +3,8 @@ package typings.reactSmoothScrollbar
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
+import typings.smoothScrollbar.interfacesScrollbarMod.ScrollStatus
 import typings.smoothScrollbar.mod.default
-import typings.smoothScrollbar.scrollbarMod.ScrollStatus
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

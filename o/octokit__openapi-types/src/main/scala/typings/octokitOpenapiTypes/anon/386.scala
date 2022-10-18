@@ -6,17 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `386` extends StObject {
   
-  var query: Packagetype
+  /** The unique identifier of the column. */
+  var column_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['column-id'] */ js.Any
 }
 object `386` {
   
-  inline def apply(query: Packagetype): `386` = {
-    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+  inline def apply(
+    column_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['column-id'] */ js.Any
+  ): `386` = {
+    val __obj = js.Dynamic.literal(column_id = column_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[`386`]
   }
   
   extension [Self <: `386`](x: Self) {
     
-    inline def setQuery(value: Packagetype): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setColumn_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['column-id'] */ js.Any
+    ): Self = StObject.set(x, "column_id", value.asInstanceOf[js.Any])
   }
 }

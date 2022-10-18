@@ -6,8 +6,8 @@ import typings.formatjsEcma402Abstract.anon.IntervalFormatFallback
 import typings.formatjsEcma402Abstract.anon.Long
 import typings.formatjsEcma402Abstract.anon.LongEraData
 import typings.formatjsEcma402Abstract.anon.Medium
-import typings.formatjsEcma402Abstract.anon.Narrow
 import typings.formatjsEcma402Abstract.anon.RecordTABLE2defaultRangePAmpm
+import typings.formatjsEcma402Abstract.anon.Short
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`0`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`1`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`2`
@@ -112,7 +112,7 @@ object typesDateTimeMod {
       */
     var hourFormat: String
     
-    var month: Narrow
+    var month: Long
     
     var nu: js.Array[String]
     
@@ -122,7 +122,7 @@ object typesDateTimeMod {
     
     var timeZoneName: TimeZoneNameData
     
-    var weekday: Narrow
+    var weekday: Long
   }
   object DateTimeFormatLocaleInternalData {
     
@@ -137,12 +137,12 @@ object typesDateTimeMod {
       hc: js.Array[String],
       hourCycle: String,
       hourFormat: String,
-      month: Narrow,
+      month: Long,
       nu: js.Array[String],
       pm: String,
       timeFormat: FullLong,
       timeZoneName: TimeZoneNameData,
-      weekday: Narrow
+      weekday: Long
     ): DateTimeFormatLocaleInternalData = {
       val __obj = js.Dynamic.literal(am = am.asInstanceOf[js.Any], ca = ca.asInstanceOf[js.Any], dateFormat = dateFormat.asInstanceOf[js.Any], dateTimeFormat = dateTimeFormat.asInstanceOf[js.Any], era = era.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], gmtFormat = gmtFormat.asInstanceOf[js.Any], hc = hc.asInstanceOf[js.Any], hourCycle = hourCycle.asInstanceOf[js.Any], hourFormat = hourFormat.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], nu = nu.asInstanceOf[js.Any], pm = pm.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any], timeZoneName = timeZoneName.asInstanceOf[js.Any], weekday = weekday.asInstanceOf[js.Any])
       __obj.asInstanceOf[DateTimeFormatLocaleInternalData]
@@ -174,7 +174,7 @@ object typesDateTimeMod {
       
       inline def setHourFormat(value: String): Self = StObject.set(x, "hourFormat", value.asInstanceOf[js.Any])
       
-      inline def setMonth(value: Narrow): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: Long): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
       inline def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
       
@@ -186,7 +186,7 @@ object typesDateTimeMod {
       
       inline def setTimeZoneName(value: TimeZoneNameData): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
-      inline def setWeekday(value: Narrow): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: Long): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,10 +211,12 @@ object typesDateTimeMod {
     }
   }
   
-  /* Inlined std.Pick<std.Intl.DateTimeFormatOptions, 'weekday' | 'era' | 'year' | 'month' | 'day' | 'hour' | 'minute' | 'second' | 'timeZoneName'> & {  fractionalSecondDigits :0 | 1 | 2 | undefined,   hour12 :boolean | undefined,   pattern :string,   pattern12 :string,   skeleton :string,   rawPattern :string,   rangePatterns :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.RangePatterns>,   rangePatterns12 :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.RangePatterns>} */
+  /* Inlined std.Pick<std.Intl.DateTimeFormatOptions, 'weekday' | 'era' | 'year' | 'month' | 'day' | 'dayPeriod' | 'hour' | 'minute' | 'second' | 'timeZoneName'> & {  fractionalSecondDigits :0 | 1 | 2 | undefined,   hour12 :boolean | undefined,   pattern :string,   pattern12 :string,   skeleton :string,   rawPattern :string,   rangePatterns :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.RangePatterns>,   rangePatterns12 :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.RangePatterns>} */
   trait Formats extends StObject {
     
     var day: js.UndefOr[numeric | `2-digit`] = js.undefined
+    
+    var dayPeriod: js.UndefOr[narrow | short | long] = js.undefined
     
     var era: js.UndefOr[long | short | narrow] = js.undefined
     
@@ -265,6 +267,10 @@ object typesDateTimeMod {
     extension [Self <: Formats](x: Self) {
       
       inline def setDay(value: numeric | `2-digit`): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      
+      inline def setDayPeriod(value: narrow | short | long): Self = StObject.set(x, "dayPeriod", value.asInstanceOf[js.Any])
+      
+      inline def setDayPeriodUndefined: Self = StObject.set(x, "dayPeriod", js.undefined)
       
       inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
       
@@ -366,7 +372,7 @@ object typesDateTimeMod {
     
     var timeZone: String
     
-    var timeZoneName: short | long
+    var timeZoneName: short | long | shortOffset | longOffset | shortGeneric | longGeneric
     
     var weekday: narrow | short | long
     
@@ -390,7 +396,7 @@ object typesDateTimeMod {
       rangePatterns: RecordTABLE2defaultRangePAmpm,
       second: `2-digit` | numeric,
       timeZone: String,
-      timeZoneName: short | long,
+      timeZoneName: short | long | shortOffset | longOffset | shortGeneric | longGeneric,
       weekday: narrow | short | long,
       year: `2-digit` | numeric
     ): IntlDateTimeFormatInternal = {
@@ -450,7 +456,7 @@ object typesDateTimeMod {
       
       inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
       
-      inline def setTimeZoneName(value: short | long): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+      inline def setTimeZoneName(value: short | long | shortOffset | longOffset | shortGeneric | longGeneric): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
       inline def setWeekday(value: narrow | short | long): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
       
@@ -699,6 +705,7 @@ object typesDateTimeMod {
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.dayPeriod
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second
@@ -709,6 +716,8 @@ object typesDateTimeMod {
   object TABLE_6 {
     
     inline def day: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day = "day".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day]
+    
+    inline def dayPeriod: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.dayPeriod = "dayPeriod".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.dayPeriod]
     
     inline def era: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era = "era".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era]
     
@@ -729,7 +738,7 @@ object typesDateTimeMod {
     inline def year: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year = "year".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year]
   }
   
-  type TimeZoneNameData = Record[String, Long]
+  type TimeZoneNameData = Record[String, Short]
   
   type UnpackedZoneData = js.Tuple4[Double, String, Double, Boolean]
 }

@@ -7,10 +7,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack", "ProgressPlugin")
 @js.native
-open class ProgressPlugin () extends StObject {
-  def this(options: ProgressPluginArgument) = this()
+trait ProgressPlugin extends StObject {
   
   @JSName("apply")
   def apply(compiler: Compiler): Unit = js.native
@@ -36,58 +34,4 @@ open class ProgressPlugin () extends StObject {
   var showEntries: js.UndefOr[Boolean] = js.native
   
   var showModules: js.UndefOr[Boolean] = js.native
-}
-object ProgressPlugin {
-  
-  @JSImport("webpack", "ProgressPlugin")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
-  object defaultOptions {
-    
-    @JSImport("webpack", "ProgressPlugin.defaultOptions")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("webpack", "ProgressPlugin.defaultOptions.activeModules")
-    @js.native
-    def activeModules: Boolean = js.native
-    inline def activeModules_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activeModules")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webpack", "ProgressPlugin.defaultOptions.dependencies")
-    @js.native
-    def dependencies: Boolean = js.native
-    
-    @JSImport("webpack", "ProgressPlugin.defaultOptions.dependenciesCount")
-    @js.native
-    def dependenciesCount: Double = js.native
-    inline def dependenciesCount_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependenciesCount")(x.asInstanceOf[js.Any])
-    
-    inline def dependencies_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webpack", "ProgressPlugin.defaultOptions.entries")
-    @js.native
-    def entries: Boolean = js.native
-    inline def entries_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entries")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webpack", "ProgressPlugin.defaultOptions.modules")
-    @js.native
-    def modules: Boolean = js.native
-    
-    @JSImport("webpack", "ProgressPlugin.defaultOptions.modulesCount")
-    @js.native
-    def modulesCount: Double = js.native
-    inline def modulesCount_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modulesCount")(x.asInstanceOf[js.Any])
-    
-    inline def modules_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modules")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webpack", "ProgressPlugin.defaultOptions.profile")
-    @js.native
-    def profile: Boolean = js.native
-    inline def profile_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("profile")(x.asInstanceOf[js.Any])
-  }
-  
-  /* static member */
-  inline def getReporter(compiler: Compiler): js.Function2[/* p */ Double, /* repeated */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReporter")(compiler.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* p */ Double, /* repeated */ String, Unit]]
 }

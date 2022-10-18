@@ -36,7 +36,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactMdList.listMod.ListElement
+import typings.reactMdList.typesListMod.ListElement
 import typings.reactMdMenu.reactMdMenuStrings.`additions removals`
 import typings.reactMdMenu.reactMdMenuStrings.`additions text`
 import typings.reactMdMenu.reactMdMenuStrings.`inline`

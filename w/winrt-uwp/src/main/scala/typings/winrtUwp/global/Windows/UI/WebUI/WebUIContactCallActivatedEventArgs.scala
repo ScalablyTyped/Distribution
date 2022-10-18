@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data when an app is activated to call a contact. */
-@JSGlobal("Windows.UI.WebUI.WebUIContactCallActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUIContactCallActivatedEventArgs")
 @js.native
-abstract class WebUIContactCallActivatedEventArgs ()
+open class WebUIContactCallActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUIContactCallActivatedEventArgs {
   

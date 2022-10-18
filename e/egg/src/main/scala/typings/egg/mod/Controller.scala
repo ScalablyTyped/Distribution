@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("egg", "Controller")
 @js.native
-class Controller protected () extends BaseContextClass {
-  def this(ctx: Context) = this()
+open class Controller protected () extends BaseContextClass {
+  def this(ctx: Context[Any]) = this()
 }

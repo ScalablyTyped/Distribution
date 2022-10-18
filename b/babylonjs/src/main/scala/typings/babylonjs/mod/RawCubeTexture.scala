@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "RawCubeTexture")
 @js.native
 open class RawCubeTexture protected ()
-  extends typings.babylonjs.legacyMod.RawCubeTexture {
+  extends typings.babylonjs.legacyLegacyMod.RawCubeTexture {
   /**
     * Creates a cube texture where the raw buffers are passed in.
     * @param scene defines the scene the texture is attached to

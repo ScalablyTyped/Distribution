@@ -7,7 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SilentRenderer extends ListrRenderer {
+trait SilentRenderer
+  extends StObject
+     with ListrRenderer {
   
   var options: /* import warning: importer.ImportType#apply Failed type conversion: listr2.anon.TypeofSilentRenderer & new (tasks : std.Array<listr2.listr2.Task<any, typeof SilentRenderer>>, options : typeof SilentRenderer['rendererOptions']): listr2.listr2.SilentRenderer['rendererOptions'] */ js.Any = js.native
   

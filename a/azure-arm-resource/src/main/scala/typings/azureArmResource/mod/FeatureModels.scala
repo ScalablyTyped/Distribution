@@ -10,12 +10,12 @@ object FeatureModels {
   @JSImport("azure-arm-resource", "FeatureModels.BaseResource")
   @js.native
   open class BaseResource ()
-    extends typings.azureArmResource.modelsMod.BaseResource
+    extends typings.azureArmResource.libFeatureModelsMod.BaseResource
   
   @JSImport("azure-arm-resource", "FeatureModels.CloudError")
   @js.native
   open class CloudError protected ()
-    extends typings.azureArmResource.modelsMod.CloudError {
+    extends typings.azureArmResource.libFeatureModelsMod.CloudError {
     def this(parameters: CloudErrorParameters) = this()
   }
 }

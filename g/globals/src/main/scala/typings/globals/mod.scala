@@ -1,7 +1,7 @@
 package typings.globals
 
 import org.scalablytyped.runtime.Shortcut
-import typings.typeFest.readonlyDeepMod.ReadonlyDeep
+import typings.typeFest.sourceReadonlyDeepMod.ReadonlyDeep
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

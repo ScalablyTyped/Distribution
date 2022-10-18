@@ -1,6 +1,5 @@
 package typings.reactLifecyclesCompat
 
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,5 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def polyfill[T /* <: ComponentType[Any] */](Comp: T): T & typings.reactLifecyclesCompat.reactLifecyclesCompatStrings.polyfill & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("polyfill")(Comp.asInstanceOf[js.Any]).asInstanceOf[T & typings.reactLifecyclesCompat.reactLifecyclesCompatStrings.polyfill & TopLevel[T]]
+  inline def polyfill[T /* <: ComponentType[Any] */](Comp: T): T & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K]} */ js.Any) = ^.asInstanceOf[js.Dynamic].applyDynamic("polyfill")(Comp.asInstanceOf[js.Any]).asInstanceOf[T & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K]} */ js.Any)]
 }

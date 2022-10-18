@@ -1,6 +1,6 @@
 package typings.awsSdk.global.AWS
 
-import typings.awsSdk.supportMod.ClientConfiguration
+import typings.awsSdk.clientsSupportMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

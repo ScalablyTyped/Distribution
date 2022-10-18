@@ -1,7 +1,7 @@
 package typings.twit.mod.Twitter
 
 import typings.geojson.mod.Point
-import typings.twit.anon.Id
+import typings.twit.anon.Idstr
 import typings.twit.anon.Media
 import typings.twit.twitStrings.low
 import typings.twit.twitStrings.medium
@@ -20,7 +20,7 @@ trait Status extends StObject {
   
   var created_at: String
   
-  var current_user_retweet: js.UndefOr[Id] = js.undefined
+  var current_user_retweet: js.UndefOr[Idstr] = js.undefined
   
   var display_text_range: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
@@ -124,7 +124,7 @@ object Status {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setCurrent_user_retweet(value: Id): Self = StObject.set(x, "current_user_retweet", value.asInstanceOf[js.Any])
+    inline def setCurrent_user_retweet(value: Idstr): Self = StObject.set(x, "current_user_retweet", value.asInstanceOf[js.Any])
     
     inline def setCurrent_user_retweetUndefined: Self = StObject.set(x, "current_user_retweet", js.undefined)
     

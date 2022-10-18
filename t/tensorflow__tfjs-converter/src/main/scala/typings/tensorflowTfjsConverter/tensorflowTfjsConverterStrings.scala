@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsConverter
 
-import typings.tensorflowTfjsConverter.operationsTypesMod.Category
-import typings.tensorflowTfjsConverter.operationsTypesMod.ParamType
+import typings.tensorflowTfjsConverter.distOperationsTypesMod.Category
+import typings.tensorflowTfjsConverter.distOperationsTypesMod.ParamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

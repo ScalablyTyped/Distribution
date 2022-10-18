@@ -3,14 +3,14 @@ package typings.grpcProtoLoader
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import typings.grpcProtoLoader.buildSrcUtilMod.Options
 import typings.grpcProtoLoader.grpcProtoLoaderStrings.`Protocol Buffer 3 DescriptorProto`
 import typings.grpcProtoLoader.grpcProtoLoaderStrings.`Protocol Buffer 3 EnumDescriptorProto`
-import typings.grpcProtoLoader.utilMod.Options
 import typings.long.anon.High
 import typings.node.bufferMod.global.Buffer
-import typings.protobufjs.descriptorMod.IDescriptorProto
-import typings.protobufjs.descriptorMod.IEnumDescriptorProto
-import typings.protobufjs.descriptorMod.IFileDescriptorSet
+import typings.protobufjs.extDescriptorMod.IDescriptorProto
+import typings.protobufjs.extDescriptorMod.IEnumDescriptorProto
+import typings.protobufjs.extDescriptorMod.IFileDescriptorSet
 import typings.protobufjs.mod.INamespace
 import typings.protobufjs.mod.Message
 import typings.protobufjs.mod.Reader

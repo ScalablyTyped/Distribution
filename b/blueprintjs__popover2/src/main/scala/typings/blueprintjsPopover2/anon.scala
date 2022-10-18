@@ -1,11 +1,10 @@
 package typings.blueprintjsPopover2
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.blueprintjsCore.boundaryMod.Boundary
-import typings.blueprintjsCore.breadcrumbMod.BreadcrumbProps
-import typings.blueprintjsCore.intentMod.Intent
-import typings.blueprintjsCore.popoverSharedPropsMod.PopoverPosition
+import typings.blueprintjsCore.libEsmCommonBoundaryMod.Boundary
+import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
+import typings.blueprintjsCore.libEsmComponentsBreadcrumbsBreadcrumbMod.BreadcrumbProps
+import typings.blueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.FORCE_DISABLED_STATE
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.RESET_DISABLED_STATE
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.`additions removals`
@@ -60,24 +59,24 @@ import typings.blueprintjsPopover2.blueprintjsPopover2Strings.tree
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.url
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.vertical
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.yes
-import typings.blueprintjsPopover2.popover2Mod.Popover2InteractionKind
-import typings.blueprintjsPopover2.popover2SharedPropsMod.Popover2TargetProps
-import typings.blueprintjsPopover2.popupKindMod.PopupKind
-import typings.blueprintjsPopover2.tooltip2ContextMod.Tooltip2Action
+import typings.blueprintjsPopover2.libEsmPopover2Mod.Popover2InteractionKind
+import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.Popover2TargetProps
+import typings.blueprintjsPopover2.libEsmPopupKindMod.PopupKind
+import typings.blueprintjsPopover2.libEsmTooltip2ContextMod.Tooltip2Action
 import typings.popperjsCore.anon.Arrow
 import typings.popperjsCore.anon.Dictkey
 import typings.popperjsCore.anon.PartialCSSStyleDeclaratio
 import typings.popperjsCore.anon.Popper
-import typings.popperjsCore.enumsMod.ModifierPhases_
-import typings.popperjsCore.enumsMod.Placement
-import typings.popperjsCore.enumsMod.RootBoundary
-import typings.popperjsCore.typesMod.Modifier
-import typings.popperjsCore.typesMod.ModifierArguments
-import typings.popperjsCore.typesMod.Obj
-import typings.popperjsCore.typesMod.OptionsGeneric
-import typings.popperjsCore.typesMod.PositioningStrategy
-import typings.popperjsCore.typesMod.State
-import typings.popperjsCore.typesMod.StateRects
+import typings.popperjsCore.libEnumsMod.ModifierPhases_
+import typings.popperjsCore.libEnumsMod.Placement
+import typings.popperjsCore.libEnumsMod.RootBoundary
+import typings.popperjsCore.libTypesMod.Modifier
+import typings.popperjsCore.libTypesMod.ModifierArguments
+import typings.popperjsCore.libTypesMod.Obj
+import typings.popperjsCore.libTypesMod.OptionsGeneric
+import typings.popperjsCore.libTypesMod.PositioningStrategy
+import typings.popperjsCore.libTypesMod.State
+import typings.popperjsCore.libTypesMod.StateRects
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -1480,7 +1479,7 @@ object anon {
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     var tagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ] = js.undefined
   }
   object PartialOmitOverflowListPr {
@@ -1520,7 +1519,9 @@ object anon {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+      ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     }
@@ -1533,7 +1534,7 @@ object anon {
     
     var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
     
-    var boundary: js.UndefOr[typings.popperjsCore.enumsMod.Boundary] = js.undefined
+    var boundary: js.UndefOr[typings.popperjsCore.libEnumsMod.Boundary] = js.undefined
     
     var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
     
@@ -1565,9 +1566,7 @@ object anon {
     
     var modifiers: js.UndefOr[
         Partial[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>}
-      */ typings.blueprintjsPopover2.blueprintjsPopover2Strings.PartialOmitPopover2PropsH & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
         ]
       ] = js.undefined
     
@@ -1634,7 +1633,7 @@ object anon {
       
       inline def setBackdropPropsUndefined: Self = StObject.set(x, "backdropProps", js.undefined)
       
-      inline def setBoundary(value: typings.popperjsCore.enumsMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+      inline def setBoundary(value: typings.popperjsCore.libEnumsMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
       inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
       
@@ -1698,9 +1697,7 @@ object anon {
       
       inline def setModifiers(
         value: Partial[
-              /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>}
-        */ typings.blueprintjsPopover2.blueprintjsPopover2Strings.PartialOmitPopover2PropsH & TopLevel[Any]
+              /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
             ]
       ): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
@@ -1803,7 +1800,7 @@ object anon {
     
     var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
     
-    var boundary: js.UndefOr[typings.popperjsCore.enumsMod.Boundary] = js.undefined
+    var boundary: js.UndefOr[typings.popperjsCore.libEnumsMod.Boundary] = js.undefined
     
     var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
     
@@ -1839,9 +1836,7 @@ object anon {
     
     var modifiers: js.UndefOr[
         Partial[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>}
-      */ typings.blueprintjsPopover2.blueprintjsPopover2Strings.PartialOmitPopover2PropsHAutoFocus & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
         ]
       ] = js.undefined
     
@@ -1890,7 +1885,7 @@ object anon {
     var shouldReturnFocusOnClose: js.UndefOr[Boolean] = js.undefined
     
     var targetTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ] = js.undefined
     
     var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -1914,7 +1909,7 @@ object anon {
       
       inline def setBackdropPropsUndefined: Self = StObject.set(x, "backdropProps", js.undefined)
       
-      inline def setBoundary(value: typings.popperjsCore.enumsMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+      inline def setBoundary(value: typings.popperjsCore.libEnumsMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
       inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
       
@@ -1986,9 +1981,7 @@ object anon {
       
       inline def setModifiers(
         value: Partial[
-              /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>}
-        */ typings.blueprintjsPopover2.blueprintjsPopover2Strings.PartialOmitPopover2PropsHAutoFocus & TopLevel[Any]
+              /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
             ]
       ): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
@@ -2078,7 +2071,9 @@ object anon {
       
       inline def setShouldReturnFocusOnCloseUndefined: Self = StObject.set(x, "shouldReturnFocusOnClose", js.undefined)
       
-      inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
+      inline def setTargetTagName(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+      ): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
       
       inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
       
@@ -2179,7 +2174,7 @@ object anon {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var boundary: js.UndefOr[typings.popperjsCore.enumsMod.Boundary] = js.undefined
+    var boundary: js.UndefOr[typings.popperjsCore.libEnumsMod.Boundary] = js.undefined
     
     var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
     
@@ -2219,9 +2214,7 @@ object anon {
     
     var modifiers: js.UndefOr[
         Partial[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>}
-      */ typings.blueprintjsPopover2.blueprintjsPopover2Strings.PartialTooltip2PropsHTMLP & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
         ]
       ] = js.undefined
     
@@ -2264,7 +2257,7 @@ object anon {
     var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
     
     var targetTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ] = js.undefined
     
     var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -2284,7 +2277,7 @@ object anon {
       
       inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      inline def setBoundary(value: typings.popperjsCore.enumsMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+      inline def setBoundary(value: typings.popperjsCore.libEnumsMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
       inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
       
@@ -2364,9 +2357,7 @@ object anon {
       
       inline def setModifiers(
         value: Partial[
-              /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>}
-        */ typings.blueprintjsPopover2.blueprintjsPopover2Strings.PartialTooltip2PropsHTMLP & TopLevel[Any]
+              /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
             ]
       ): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
@@ -2444,7 +2435,9 @@ object anon {
       
       inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
       
-      inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
+      inline def setTargetTagName(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+      ): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
       
       inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
       
@@ -2477,7 +2470,7 @@ object anon {
       *
       * @see https://popper.js.org/docs/v2/utils/detect-overflow/#boundary
       */
-    var boundary: js.UndefOr[typings.popperjsCore.enumsMod.Boundary] = js.undefined
+    var boundary: js.UndefOr[typings.popperjsCore.libEnumsMod.Boundary] = js.undefined
     
     /**
       * Whether pressing the `esc` key should invoke `onClose`.
@@ -2632,9 +2625,7 @@ object anon {
       */
     var modifiers: js.UndefOr[
         Partial[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>}
-      */ typings.blueprintjsPopover2.blueprintjsPopover2Strings.Popover2PropsHTMLPropsHTM & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
         ]
       ] = js.undefined
     
@@ -2815,7 +2806,7 @@ object anon {
       * @default "span" ("div" if fill={true})
       */
     var targetTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ] = js.undefined
     
     /**
@@ -2862,7 +2853,7 @@ object anon {
       
       inline def setBackdropPropsUndefined: Self = StObject.set(x, "backdropProps", js.undefined)
       
-      inline def setBoundary(value: typings.popperjsCore.enumsMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+      inline def setBoundary(value: typings.popperjsCore.libEnumsMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
       inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
       
@@ -2942,9 +2933,7 @@ object anon {
       
       inline def setModifiers(
         value: Partial[
-              /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>}
-        */ typings.blueprintjsPopover2.blueprintjsPopover2Strings.Popover2PropsHTMLPropsHTM & TopLevel[Any]
+              /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
             ]
       ): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
@@ -3034,7 +3023,9 @@ object anon {
       
       inline def setShouldReturnFocusOnCloseUndefined: Self = StObject.set(x, "shouldReturnFocusOnClose", js.undefined)
       
-      inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
+      inline def setTargetTagName(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+      ): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
       
       inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
       

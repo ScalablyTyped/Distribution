@@ -1,12 +1,18 @@
 package typings.grommet.anon
 
+import typings.grommet.componentsBoxMod.BoxExtendedProps
+import typings.grommet.componentsTextMod.TextExtendedProps
+import typings.grommet.utilsMod.PropsOf
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `32` extends StObject {
   
-  var gap: js.UndefOr[ColumnRow] = js.undefined
+  var container: js.UndefOr[PropsOf[FC[BoxExtendedProps]]] = js.undefined
+  
+  var text: js.UndefOr[PropsOf[FC[TextExtendedProps]]] = js.undefined
 }
 object `32` {
   
@@ -17,8 +23,12 @@ object `32` {
   
   extension [Self <: `32`](x: Self) {
     
-    inline def setGap(value: ColumnRow): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setContainer(value: PropsOf[FC[BoxExtendedProps]]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setText(value: PropsOf[FC[TextExtendedProps]]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

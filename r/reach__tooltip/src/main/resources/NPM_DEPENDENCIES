@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@reach/tooltip" : "0.17.0"
+      "@reach/tooltip" : "0.18.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@reach/tooltip" : "0.17.0"
+      "@reach/tooltip" : "0.18.0"
     }
   ],
   "compile-devDependencies" : [

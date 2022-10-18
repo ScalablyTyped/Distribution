@@ -1,7 +1,7 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.channeldefMod.Conditional
-import typings.vegaLite.channeldefMod.ValueDef
+import typings.vegaLite.buildSrcChanneldefMod.Conditional
+import typings.vegaLite.buildSrcChanneldefMod.ValueDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

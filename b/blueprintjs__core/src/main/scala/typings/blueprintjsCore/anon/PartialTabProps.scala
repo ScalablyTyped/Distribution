@@ -50,7 +50,7 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.tree
 import typings.blueprintjsCore.blueprintjsCoreStrings.url
 import typings.blueprintjsCore.blueprintjsCoreStrings.vertical
 import typings.blueprintjsCore.blueprintjsCoreStrings.yes
-import typings.blueprintjsCore.tabMod.TabId
+import typings.blueprintjsCore.libEsmComponentsTabsTabMod.TabId
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.AriaRole

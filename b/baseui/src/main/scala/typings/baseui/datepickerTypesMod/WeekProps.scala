@@ -1,8 +1,8 @@
 package typings.baseui.datepickerTypesMod
 
 import typings.baseui.anon.DateTEventEvent
-import typings.baseui.anon.`5`
-import typings.baseui.utilsTypesMod.DateIOAdapter
+import typings.baseui.anon.`2`
+import typings.baseui.datepickerUtilsTypesMod.DateIOAdapter
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,7 +38,7 @@ trait WeekProps[T] extends StObject {
   
   var month: js.UndefOr[Double | Null] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* a */ `5`[T], Any]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* a */ `2`[T], Any]] = js.undefined
   
   def onDayBlur(a: DateTEventEvent[T]): Any
   
@@ -149,7 +149,7 @@ object WeekProps {
     
     inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
-    inline def setOnChange(value: /* a */ `5`[T] => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* a */ `2`[T] => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     

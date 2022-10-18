@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "_HDRTextureLoader")
 @js.native
 open class HDRTextureLoader ()
-  extends typings.babylonjs.legacyMod.HDRTextureLoader
+  extends typings.babylonjs.legacyLegacyMod.HDRTextureLoader

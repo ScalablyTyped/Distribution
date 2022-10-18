@@ -3534,6 +3534,8 @@ object mod {
   inline def cryptoPwhashStr(password: String, opsLimit: Double, memLimit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str")(password.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoPwhashStr(password: js.typedarray.Uint8Array, opsLimit: Double, memLimit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str")(password.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  inline def cryptoPwhashStrNeedsRehash(hashedPassword: String, opsLimit: Double, memLimit: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_needs_rehash")(hashedPassword.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   inline def cryptoPwhashStrVerify(hashed_password: String, password: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_verify")(hashed_password.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def cryptoPwhashStrVerify(hashed_password: String, password: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_verify")(hashed_password.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

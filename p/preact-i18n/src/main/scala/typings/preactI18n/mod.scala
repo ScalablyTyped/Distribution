@@ -2,13 +2,13 @@ package typings.preactI18n
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
-import typings.preact.jsxMod.JSXInternal.Element
 import typings.preact.mod.Component
 import typings.preact.mod.ComponentChild
 import typings.preact.mod.Context
 import typings.preact.mod.VNode
+import typings.preact.srcJsxMod.JSXInternal.Element
 import typings.preactI18n.anon.Definition
-import typings.preactI18n.anon.Mark
+import typings.preactI18n.anon.Scope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +47,7 @@ object mod {
   
   trait IntlContext extends StObject {
     
-    var intl: Mark
+    var intl: Definition
   }
   object IntlContext {
     
@@ -57,7 +57,7 @@ object mod {
     
     extension [Self <: IntlContext](x: Self) {
       
-      inline def setIntl(value: Mark): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
+      inline def setIntl(value: Definition): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,7 +132,7 @@ object mod {
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any, 
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ Any
     ],
-    options: Definition
+    options: Scope
   ): VNode[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("intl")(Child.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VNode[js.Object]]
   
   inline def translate(id: String, scope: String, dictionary: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(id.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], dictionary.asInstanceOf[js.Any])).asInstanceOf[String]

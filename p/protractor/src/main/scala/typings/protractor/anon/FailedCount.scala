@@ -1,6 +1,6 @@
 package typings.protractor.anon
 
-import typings.protractor.pluginsMod.SpecResult
+import typings.protractor.builtPluginsMod.SpecResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

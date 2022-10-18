@@ -2,9 +2,9 @@ package typings.angularCli.anon
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.angularCli.angularCliBooleans.`false`
-import typings.angularCli.commandModuleMod.CommandContext
-import typings.angularCli.commandModuleMod.CommandScope
-import typings.angularCli.commandModuleMod.OtherOptions
+import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandContext
+import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandScope
+import typings.angularCli.srcCommandBuilderCommandModuleMod.OtherOptions
 import typings.yargs.mod.Argv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

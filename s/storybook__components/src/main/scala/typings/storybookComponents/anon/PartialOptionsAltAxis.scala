@@ -1,10 +1,10 @@
 package typings.storybookComponents.anon
 
 import typings.std.Element
-import typings.storybookComponents.popperjsCoreLibEnumsMod.Boundary
-import typings.storybookComponents.popperjsCoreLibEnumsMod.RootBoundary
-import typings.storybookComponents.popperjsCoreLibModifiersPreventOverflowMod.TetherOffset
-import typings.storybookComponents.popperjsCoreLibTypesMod.Padding
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Boundary
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.RootBoundary
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibModifiersPreventOverflowMod`.TetherOffset
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.Padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

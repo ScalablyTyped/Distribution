@@ -13,6 +13,8 @@ trait AuthResponse extends StObject {
   
   var accessToken: String
   
+  var data_access_expiration_time: Double
+  
   var expiresIn: Double
   
   var grantedScopes: js.UndefOr[String] = js.undefined
@@ -25,14 +27,22 @@ trait AuthResponse extends StObject {
 }
 object AuthResponse {
   
-  inline def apply(accessToken: String, expiresIn: Double, signedRequest: String, userID: String): AuthResponse = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], signedRequest = signedRequest.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any])
+  inline def apply(
+    accessToken: String,
+    data_access_expiration_time: Double,
+    expiresIn: Double,
+    signedRequest: String,
+    userID: String
+  ): AuthResponse = {
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], data_access_expiration_time = data_access_expiration_time.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], signedRequest = signedRequest.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthResponse]
   }
   
   extension [Self <: AuthResponse](x: Self) {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    
+    inline def setData_access_expiration_time(value: Double): Self = StObject.set(x, "data_access_expiration_time", value.asInstanceOf[js.Any])
     
     inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     

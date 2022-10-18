@@ -2,8 +2,8 @@ package typings.sentryNode.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.sentryNode.contextMod.ContextOptions
-import typings.sentryNode.integrationsMod.Context
+import typings.sentryNode.typesIntegrationsContextMod.ContextOptions
+import typings.sentryNode.typesIntegrationsMod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

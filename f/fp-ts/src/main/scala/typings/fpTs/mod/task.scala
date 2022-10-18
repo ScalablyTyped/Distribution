@@ -1,22 +1,20 @@
 package typings.fpTs.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.applicativeMod.Applicative1
-import typings.fpTs.applyMod.Apply1
-import typings.fpTs.chainMod.Chain1
-import typings.fpTs.fromIOMod.FromIO1
-import typings.fpTs.fromTaskMod.FromTask1
-import typings.fpTs.functorMod.Functor1
-import typings.fpTs.iOMod.IO_
-import typings.fpTs.monadIOMod.MonadIO1
-import typings.fpTs.monadMod.Monad1
-import typings.fpTs.monadTaskMod.MonadTask1
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.naturalTransformationMod.NaturalTransformation11
-import typings.fpTs.pointedMod.Pointed1
-import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.taskMod.Task_
+import typings.fpTs.libApplicativeMod.Applicative1
+import typings.fpTs.libApplyMod.Apply1
+import typings.fpTs.libChainMod.Chain1
+import typings.fpTs.libFromIOMod.FromIO1
+import typings.fpTs.libFromTaskMod.FromTask1
+import typings.fpTs.libFunctorMod.Functor1
+import typings.fpTs.libIOMod.IO_
+import typings.fpTs.libMonadIOMod.MonadIO1
+import typings.fpTs.libMonadMod.Monad1
+import typings.fpTs.libMonadTaskMod.MonadTask1
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libPointedMod.Pointed1
+import typings.fpTs.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libTaskMod.Task_
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,23 +32,23 @@ object task {
   
   @JSImport("fp-ts", "task.ApplicativePar")
   @js.native
-  val ApplicativePar: Applicative1[typings.fpTs.taskMod.URI] = js.native
+  val ApplicativePar: Applicative1[typings.fpTs.libTaskMod.URI] = js.native
   
   @JSImport("fp-ts", "task.ApplicativeSeq")
   @js.native
-  val ApplicativeSeq: Applicative1[typings.fpTs.taskMod.URI] = js.native
+  val ApplicativeSeq: Applicative1[typings.fpTs.libTaskMod.URI] = js.native
   
   @JSImport("fp-ts", "task.ApplyPar")
   @js.native
-  val ApplyPar: Apply1[typings.fpTs.taskMod.URI] = js.native
+  val ApplyPar: Apply1[typings.fpTs.libTaskMod.URI] = js.native
   
   @JSImport("fp-ts", "task.ApplySeq")
   @js.native
-  val ApplySeq: Apply1[typings.fpTs.taskMod.URI] = js.native
+  val ApplySeq: Apply1[typings.fpTs.libTaskMod.URI] = js.native
   
   @JSImport("fp-ts", "task.Chain")
   @js.native
-  val Chain_ : Chain1[typings.fpTs.taskMod.URI] = js.native
+  val Chain_ : Chain1[typings.fpTs.libTaskMod.URI] = js.native
   
   @JSImport("fp-ts", "task.Do")
   @js.native
@@ -58,31 +56,31 @@ object task {
   
   @JSImport("fp-ts", "task.FromIO")
   @js.native
-  val FromIO_ : FromIO1[typings.fpTs.taskMod.URI] = js.native
+  val FromIO_ : FromIO1[typings.fpTs.libTaskMod.URI] = js.native
   
   @JSImport("fp-ts", "task.FromTask")
   @js.native
-  val FromTask_ : FromTask1[typings.fpTs.taskMod.URI] = js.native
+  val FromTask_ : FromTask1[typings.fpTs.libTaskMod.URI] = js.native
   
   @JSImport("fp-ts", "task.Functor")
   @js.native
-  val Functor: Functor1[typings.fpTs.taskMod.URI] = js.native
+  val Functor: Functor1[typings.fpTs.libTaskMod.URI] = js.native
   
   @JSImport("fp-ts", "task.Monad")
   @js.native
-  val Monad: Monad1[typings.fpTs.taskMod.URI] = js.native
+  val Monad: Monad1[typings.fpTs.libTaskMod.URI] = js.native
   
   @JSImport("fp-ts", "task.MonadIO")
   @js.native
-  val MonadIO: MonadIO1[typings.fpTs.taskMod.URI] = js.native
+  val MonadIO: MonadIO1[typings.fpTs.libTaskMod.URI] = js.native
   
   @JSImport("fp-ts", "task.MonadTask")
   @js.native
-  val MonadTask: MonadTask1[typings.fpTs.taskMod.URI] = js.native
+  val MonadTask: MonadTask1[typings.fpTs.libTaskMod.URI] = js.native
   
   @JSImport("fp-ts", "task.Pointed")
   @js.native
-  val Pointed: Pointed1[typings.fpTs.taskMod.URI] = js.native
+  val Pointed: Pointed1[typings.fpTs.libTaskMod.URI] = js.native
   
   @JSImport("fp-ts", "task.URI")
   @js.native
@@ -95,16 +93,12 @@ object task {
   inline def apS[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], fb: Task_[B]): js.Function1[
     /* fa */ Task_[A], 
     Task_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apS")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ Task_[A], 
     Task_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -113,32 +107,24 @@ object task {
   inline def bind[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, Task_[B]]): js.Function1[
     /* ma */ Task_[A], 
     Task_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* ma */ Task_[A], 
     Task_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
   inline def bindTo[N /* <: String */](name: N): js.Function1[
     /* fa */ Task_[Any], 
     Task_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindTo")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* fa */ Task_[Any], 
     Task_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ]]
   
@@ -156,15 +142,11 @@ object task {
   
   inline def flatten[A](mma: Task_[Task_[A]]): Task_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[Task_[A]]
   
-  @JSImport("fp-ts", "task.fromIO")
-  @js.native
-  val fromIO: NaturalTransformation11[typings.fpTs.iOMod.URI, typings.fpTs.taskMod.URI] = js.native
+  inline def fromIO[A](fa: IO_[A]): Task_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIO")(fa.asInstanceOf[js.Any]).asInstanceOf[Task_[A]]
   
   inline def fromIOK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* a */ A, Task_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, Task_[B]]]
   
-  @JSImport("fp-ts", "task.fromTask")
-  @js.native
-  val fromTask: NaturalTransformation11[typings.fpTs.taskMod.URI, typings.fpTs.taskMod.URI] = js.native
+  inline def fromTask[A](fa: Task_[A]): Task_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTask")(fa.asInstanceOf[js.Any]).asInstanceOf[Task_[A]]
   
   inline def getMonoid[A](M: Monoid[A]): Monoid[Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[Monoid[Task_[A]]]
   
@@ -172,18 +154,25 @@ object task {
   
   inline def getSemigroup[A](S: Semigroup[A]): Semigroup[Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[Semigroup[Task_[A]]]
   
+  inline def let[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, B]): js.Function1[
+    /* fa */ Task_[A], 
+    Task_[
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("let")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* fa */ Task_[A], 
+    Task_[
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ]]
+  
   inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Task_[A], Task_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Task_[A], Task_[B]]]
   
   @JSImport("fp-ts", "task.never")
   @js.native
   val never: Task_[scala.Nothing] = js.native
   
-  @JSImport("fp-ts", "task.of")
-  @js.native
-  val of: js.Function1[
-    /* a */ Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
-  ] = js.native
+  inline def of[A](a: A): Task_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any]).asInstanceOf[Task_[A]]
   
   inline def sequenceArray[A](arr: js.Array[Task_[A]]): Task_[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Task_[js.Array[A]]]
   
@@ -191,11 +180,11 @@ object task {
   
   @JSImport("fp-ts", "task.task")
   @js.native
-  val task: Monad1[typings.fpTs.taskMod.URI] & MonadTask1[typings.fpTs.taskMod.URI] = js.native
+  val task: Monad1[typings.fpTs.libTaskMod.URI] & MonadTask1[typings.fpTs.libTaskMod.URI] = js.native
   
   @JSImport("fp-ts", "task.taskSeq")
   @js.native
-  val taskSeq: Monad1[typings.fpTs.taskMod.URI] & MonadTask1[typings.fpTs.taskMod.URI] = js.native
+  val taskSeq: Monad1[typings.fpTs.libTaskMod.URI] & MonadTask1[typings.fpTs.libTaskMod.URI] = js.native
   
   inline def traverseArray[A, B](f: js.Function1[/* a */ A, Task_[B]]): js.Function1[/* as */ js.Array[A], Task_[js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseArray")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Task_[js.Array[B]]]]
   
@@ -213,6 +202,7 @@ object task {
   
   inline def traverseSeqArrayWithIndex[A, B](f: js.Function2[/* index */ Double, /* a */ A, Task_[B]]): js.Function1[/* as */ js.Array[A], Task_[js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseSeqArrayWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Task_[js.Array[B]]]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native

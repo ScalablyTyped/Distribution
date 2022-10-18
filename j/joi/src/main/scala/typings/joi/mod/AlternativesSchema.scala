@@ -7,12 +7,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AlternativesSchema
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.joi.mod.Schema because Already inherited */ @js.native
+trait AlternativesSchema[TSchema]
   extends StObject
-     with AnySchema[Any]
-     with _ObjectPropertiesSchema[Any]
-     with _Schema[Any] {
+     with AnySchema[TSchema] {
   
   def conditional(ref: String, options: js.Array[WhenOptions]): this.type = js.native
   /**

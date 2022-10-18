@@ -1,11 +1,11 @@
 package typings.vsoNodeApi
 
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
-import typings.vsoNodeApi.fileContainerInterfacesMod.FileContainer
-import typings.vsoNodeApi.fileContainerInterfacesMod.FileContainerItem
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
-import typings.vsoNodeApi.vssinterfacesMod.VssJsonCollectionWrapperV
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonVssinterfacesMod.VssJsonCollectionWrapperV
+import typings.vsoNodeApi.interfacesFileContainerInterfacesMod.FileContainer
+import typings.vsoNodeApi.interfacesFileContainerInterfacesMod.FileContainerItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

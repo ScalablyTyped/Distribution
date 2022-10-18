@@ -1,6 +1,6 @@
 package typings.angularDevkitSchematics.mod
 
-import typings.angularDevkitCore.hostInterfaceMod.Host
+import typings.angularDevkitCore.srcVirtualFsHostInterfaceMod.Host
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "HostSink")
 @js.native
 open class HostSink protected ()
-  extends typings.angularDevkitSchematics.hostMod.HostSink {
+  extends typings.angularDevkitSchematics.srcSinkHostMod.HostSink {
   def this(_host: Host[js.Object]) = this()
   def this(_host: Host[js.Object], _force: Boolean) = this()
 }

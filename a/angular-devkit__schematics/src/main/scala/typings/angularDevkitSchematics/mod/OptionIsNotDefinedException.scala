@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "OptionIsNotDefinedException")
 @js.native
 open class OptionIsNotDefinedException protected ()
-  extends typings.angularDevkitSchematics.templateMod.OptionIsNotDefinedException {
+  extends typings.angularDevkitSchematics.srcRulesTemplateMod.OptionIsNotDefinedException {
   def this(name: String) = this()
 }

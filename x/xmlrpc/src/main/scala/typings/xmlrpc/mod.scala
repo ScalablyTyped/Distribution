@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.node.tlsMod.TlsOptions
 import typings.xmlrpc.anon.Expires
 import typings.xmlrpc.anon.Pass
@@ -262,10 +262,10 @@ object mod {
           ServerResponse[IncomingMessage]
         ]
       ]) | (typings.node.httpsMod.Server[
-        Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+        Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
         Instantiable1[
           /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-          typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
         ]
       ]) = js.native
     

@@ -1,11 +1,11 @@
 package typings.manaSyringe
 
 import typings.inversify.anon.Constructor
-import typings.inversify.decoratorUtilsMod.DecoratorTarget
-import typings.manaSyringe.coreMod.Decorator
-import typings.manaSyringe.coreMod.Syringe.DecoratorOption
-import typings.manaSyringe.coreMod.Syringe.Named
-import typings.manaSyringe.coreMod.Syringe.Token
+import typings.inversify.libAnnotationDecoratorUtilsMod.DecoratorTarget
+import typings.manaSyringe.libCoreMod.Decorator
+import typings.manaSyringe.libCoreMod.Syringe.DecoratorOption
+import typings.manaSyringe.libCoreMod.Syringe.Named
+import typings.manaSyringe.libCoreMod.Syringe.Token
 import typings.std.MethodDecorator
 import typings.std.ParameterDecorator
 import typings.std.TypedPropertyDescriptor

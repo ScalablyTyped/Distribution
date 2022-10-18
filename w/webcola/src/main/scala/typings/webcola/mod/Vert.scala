@@ -7,9 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "Vert")
 @js.native
 open class Vert protected ()
-  extends typings.webcola.gridrouterMod.Vert {
+  extends typings.webcola.distSrcGridrouterMod.Vert {
   def this(id: Double, x: Double, y: Double) = this()
-  def this(id: Double, x: Double, y: Double, node: typings.webcola.gridrouterMod.NodeWrapper) = this()
+  def this(id: Double, x: Double, y: Double, node: typings.webcola.distSrcGridrouterMod.NodeWrapper) = this()
   def this(id: Double, x: Double, y: Double, node: Unit, line: Any) = this()
-  def this(id: Double, x: Double, y: Double, node: typings.webcola.gridrouterMod.NodeWrapper, line: Any) = this()
+  def this(
+    id: Double,
+    x: Double,
+    y: Double,
+    node: typings.webcola.distSrcGridrouterMod.NodeWrapper,
+    line: Any
+  ) = this()
 }

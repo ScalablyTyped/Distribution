@@ -1,7 +1,7 @@
 
 # Scala.js typings for meow
 
-Typings are for version 10.1.4
+Typings are for version 11.0.0
 
 ## Library description:
 CLI app helper

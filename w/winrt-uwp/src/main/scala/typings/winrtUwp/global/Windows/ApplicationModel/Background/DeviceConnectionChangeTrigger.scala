@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that launches a background task when the connection status of a device changes. */
-@JSGlobal("Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger")
 @js.native
-abstract class DeviceConnectionChangeTrigger ()
+open class DeviceConnectionChangeTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger {
   

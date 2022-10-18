@@ -1,6 +1,6 @@
 package typings.storybookPreviewWeb.anon
 
-import typings.storybookPreviewWeb.previewWebMod.MaybePromise
+import typings.storybookPreviewWeb.distTs3Dot9PreviewWebMod.MaybePromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

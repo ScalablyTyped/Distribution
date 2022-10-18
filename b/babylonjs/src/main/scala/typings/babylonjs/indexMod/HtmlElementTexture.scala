@@ -2,7 +2,7 @@ package typings.babylonjs.indexMod
 
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.HTMLVideoElement
-import typings.babylonjs.htmlElementTextureMod.IHtmlElementTextureOptions
+import typings.babylonjs.materialsTexturesHtmlElementTextureMod.IHtmlElementTextureOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

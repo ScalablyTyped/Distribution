@@ -11,7 +11,7 @@ object isFutureMod {
     inline def apply(date: js.Date): Boolean = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     inline def apply(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("date-fns/esm/isFuture", JSImport.Default)
+    @JSImport("date-fns/isFuture", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
   }

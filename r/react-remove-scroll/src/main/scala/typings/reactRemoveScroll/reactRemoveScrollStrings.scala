@@ -1,6 +1,6 @@
 package typings.reactRemoveScroll
 
-import typings.reactRemoveScroll.typesMod.Axis
+import typings.reactRemoveScroll.distEs5TypesMod.Axis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

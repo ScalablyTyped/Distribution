@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsGoogleSquareFilledMod.GoogleSquareFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleSquareFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/GoogleSquareFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/GoogleSquareFilled", JSImport.Default)
   @js.native
   val default: GoogleSquareFilledIconType = js.native
-  
-  @js.native
-  trait GoogleSquareFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_GoogleSquareFilledIconType: String = js.native
-  }
   
   type _To = GoogleSquareFilledIconType
   

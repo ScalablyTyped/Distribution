@@ -173,7 +173,7 @@ import typings.std.SVGTextElement
 import typings.std.SVGTextPathElement
 import typings.std.SVGUseElement
 import typings.std.SVGViewElement
-import typings.storybookTheming.anon.`1`
+import typings.storybookTheming.anon.`0`
 import typings.storybookTheming.storybookThemingStrings.`object`
 import typings.storybookTheming.storybookThemingStrings.`var`
 import typings.storybookTheming.storybookThemingStrings.a_
@@ -357,7 +357,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait StyledComponent[InnerProps, StyleProps, Theme /* <: js.Object */]
   extends StObject
-     with FunctionComponent[InnerProps & (DistributiveOmit[StyleProps, theme]) & `1`[Theme]]
+     with FunctionComponent[InnerProps & (DistributiveOmit[StyleProps, theme]) & `0`[Theme]]
      with ComponentSelector {
   
   def withComponent[Tag /* <: ComponentType[Any] */](tag: Tag): StyledComponent[PropsOf[Tag], StyleProps, Theme] = js.native

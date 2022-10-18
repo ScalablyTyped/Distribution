@@ -2,9 +2,9 @@ package typings.luaparse
 
 import typings.luaparse.anon.PartialOptions
 import typings.luaparse.anon.PartialOptionswaittrue
-import typings.luaparse.astMod.Chunk
-import typings.luaparse.astMod.Identifier
-import typings.luaparse.astMod.Node
+import typings.luaparse.libAstMod.Chunk
+import typings.luaparse.libAstMod.Identifier
+import typings.luaparse.libAstMod.Node
 import typings.luaparse.luaparseBooleans.`false`
 import typings.luaparse.luaparseStrings.LuaJIT
 import typings.luaparse.luaparseStrings.`5Dot1`

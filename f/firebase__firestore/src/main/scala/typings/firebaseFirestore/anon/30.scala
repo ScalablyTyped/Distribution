@@ -1,38 +1,23 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.firestoreSrcApiSnapshotMod.QuerySnapshot
-import typings.firebaseFirestore.firestoreSrcUtilErrorMod.FirestoreError
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelDocumentKeyMod.DocumentKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `30`[T] extends StObject {
+trait `30` extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
-  
-  var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.undefined
-  
-  var next: js.UndefOr[js.Function1[/* snapshot */ QuerySnapshot[T], Unit]] = js.undefined
+  var key: DocumentKey
 }
 object `30` {
   
-  inline def apply[T](): `30`[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`30`[T]]
+  inline def apply(key: DocumentKey): `30` = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`30`]
   }
   
-  extension [Self <: `30`[?], T](x: Self & `30`[T]) {
+  extension [Self <: `30`](x: Self) {
     
-    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
-    
-    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
-    
-    inline def setError(value: /* error */ FirestoreError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
-    
-    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
-    
-    inline def setNext(value: /* snapshot */ QuerySnapshot[T] => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
-    
-    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setKey(value: DocumentKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

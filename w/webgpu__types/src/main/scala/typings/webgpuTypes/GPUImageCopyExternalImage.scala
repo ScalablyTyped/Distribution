@@ -1,5 +1,6 @@
 package typings.webgpuTypes
 
+import typings.std.HTMLVideoElement
 import typings.std.ImageBitmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,17 +21,17 @@ trait GPUImageCopyExternalImage extends StObject {
     * Defines the origin of the copy - the minimum (top-left) corner of the source sub-region to copy from.
     * Together with `copySize`, defines the full copy sub-region.
     */
-  var origin: js.UndefOr[GPUOrigin2D] = js.undefined
+  var origin: js.UndefOr[GPUOrigin2DStrict] = js.undefined
   
   /**
     * The source of the image copy. The copy source data is captured at the moment that
     * {@link GPUQueue#copyExternalImageToTexture} is issued.
     */
-  var source: ImageBitmap | HTMLCanvasElement | OffscreenCanvas
+  var source: ImageBitmap | HTMLVideoElement | HTMLCanvasElement | OffscreenCanvas
 }
 object GPUImageCopyExternalImage {
   
-  inline def apply(source: ImageBitmap | HTMLCanvasElement | OffscreenCanvas): GPUImageCopyExternalImage = {
+  inline def apply(source: ImageBitmap | HTMLVideoElement | HTMLCanvasElement | OffscreenCanvas): GPUImageCopyExternalImage = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPUImageCopyExternalImage]
   }
@@ -41,10 +42,10 @@ object GPUImageCopyExternalImage {
     
     inline def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
     
-    inline def setOrigin(value: GPUOrigin2D): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: GPUOrigin2DStrict): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    inline def setSource(value: ImageBitmap | HTMLCanvasElement | OffscreenCanvas): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: ImageBitmap | HTMLVideoElement | HTMLCanvasElement | OffscreenCanvas): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

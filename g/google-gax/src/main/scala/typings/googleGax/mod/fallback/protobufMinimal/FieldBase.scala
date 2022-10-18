@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.protobufMinimal.FieldBase")
 @js.native
 open class FieldBase protected ()
-  extends typings.googleGax.fallbackMod.protobufMinimal.FieldBase {
+  extends typings.googleGax.buildSrcFallbackMod.protobufMinimal.FieldBase {
   /**
     * Not an actual constructor. Use {@link Field} instead.
     * @param name Unique name within its namespace

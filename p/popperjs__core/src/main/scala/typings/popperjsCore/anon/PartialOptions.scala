@@ -1,10 +1,10 @@
 package typings.popperjsCore.anon
 
-import typings.popperjsCore.enumsMod.Boundary
-import typings.popperjsCore.enumsMod.Context
-import typings.popperjsCore.enumsMod.RootBoundary
-import typings.popperjsCore.typesMod.Padding
-import typings.popperjsCore.typesMod.PositioningStrategy
+import typings.popperjsCore.libEnumsMod.Boundary
+import typings.popperjsCore.libEnumsMod.Context
+import typings.popperjsCore.libEnumsMod.RootBoundary
+import typings.popperjsCore.libTypesMod.Padding
+import typings.popperjsCore.libTypesMod.PositioningStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ trait PartialOptions extends StObject {
   
   var padding: js.UndefOr[Padding] = js.undefined
   
-  var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.undefined
+  var placement: js.UndefOr[typings.popperjsCore.libEnumsMod.Placement] = js.undefined
   
   var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
   
@@ -53,7 +53,7 @@ object PartialOptions {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: typings.popperjsCore.libEnumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     

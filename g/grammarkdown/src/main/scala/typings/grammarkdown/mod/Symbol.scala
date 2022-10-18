@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grammarkdown", "Symbol")
 @js.native
-class Symbol protected ()
-  extends typings.grammarkdown.symbolsMod.Symbol {
-  def this(kind: typings.grammarkdown.symbolsMod.SymbolKind, name: String) = this()
+open class Symbol protected ()
+  extends typings.grammarkdown.distSymbolsMod.Symbol {
+  def this(kind: typings.grammarkdown.distSymbolsMod.SymbolKind, name: String) = this()
 }

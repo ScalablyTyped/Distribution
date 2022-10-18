@@ -8,18 +8,11 @@ trait Workflows extends StObject {
   
   var total_count: Double
   
-  var workflows: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['workflow'] */ js.Any
-  ]
+  var workflows: js.Array[Badgeurl]
 }
 object Workflows {
   
-  inline def apply(
-    total_count: Double,
-    workflows: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['workflow'] */ js.Any
-    ]
-  ): Workflows = {
+  inline def apply(total_count: Double, workflows: js.Array[Badgeurl]): Workflows = {
     val __obj = js.Dynamic.literal(total_count = total_count.asInstanceOf[js.Any], workflows = workflows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Workflows]
   }
@@ -28,14 +21,8 @@ object Workflows {
     
     inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     
-    inline def setWorkflows(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['workflow'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "workflows", value.asInstanceOf[js.Any])
+    inline def setWorkflows(value: js.Array[Badgeurl]): Self = StObject.set(x, "workflows", value.asInstanceOf[js.Any])
     
-    inline def setWorkflowsVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['workflow'] */ js.Any)*
-    ): Self = StObject.set(x, "workflows", js.Array(value*))
+    inline def setWorkflowsVarargs(value: Badgeurl*): Self = StObject.set(x, "workflows", js.Array(value*))
   }
 }

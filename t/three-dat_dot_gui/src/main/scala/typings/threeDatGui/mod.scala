@@ -1,7 +1,5 @@
 package typings.threeDatGui
 
-import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.eventDispatcherMod.Event
 import typings.three.mod.Camera
 import typings.three.mod.Euler
 import typings.three.mod.Fog
@@ -11,7 +9,9 @@ import typings.three.mod.Material
 import typings.three.mod.Mesh
 import typings.three.mod.Object3D
 import typings.three.mod.Scene
-import typings.three.vector2Mod.Vector
+import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreEventDispatcherMod.Event
+import typings.three.srcMathVector2Mod.Vector
 import typings.threeDatGui.anon.GUI
 import typings.threeDatGui.anon.Inner
 import typings.threeDatGui.anon.Recursive
@@ -29,6 +29,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  /* augmented module */
   object datGuiAugmentingMod {
     
     @js.native
@@ -47,14 +48,14 @@ object mod {
         name: String,
         mesh: Mesh[
               BufferGeometry, 
-              typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material]
+              typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
             ]
       ): typings.threeDatGui.mod.datGuiAugmentingMod.GUI = js.native
       def addMesh(
         name: String,
         mesh: Mesh[
               BufferGeometry, 
-              typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material]
+              typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
             ],
         options: Recursive
       ): typings.threeDatGui.mod.datGuiAugmentingMod.GUI = js.native

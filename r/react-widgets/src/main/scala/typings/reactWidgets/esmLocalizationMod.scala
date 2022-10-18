@@ -2,7 +2,7 @@ package typings.reactWidgets
 
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.reactWidgets.anon.PartialMessagesCreateOption
+import typings.reactWidgets.anon.PartialMessages
 import typings.reactWidgets.esmMessagesMod.ProcessedMessages
 import typings.reactWidgets.esmMessagesMod.UserProvidedMessages
 import org.scalablytyped.runtime.StObject
@@ -25,14 +25,14 @@ object esmLocalizationMod {
     
     inline def useLocalizer(): Localizer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")().asInstanceOf[Localizer[Any, Any]]
     inline def useLocalizer(messages: Unit, formats: FormatterOverrides[Any, Any]): Localizer[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[Localizer[Any, Any]]
-    inline def useLocalizer(messages: PartialMessagesCreateOption): Localizer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any]).asInstanceOf[Localizer[Any, Any]]
-    inline def useLocalizer(messages: PartialMessagesCreateOption, formats: FormatterOverrides[Any, Any]): Localizer[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[Localizer[Any, Any]]
+    inline def useLocalizer(messages: PartialMessages): Localizer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any]).asInstanceOf[Localizer[Any, Any]]
+    inline def useLocalizer(messages: PartialMessages, formats: FormatterOverrides[Any, Any]): Localizer[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[Localizer[Any, Any]]
   }
   
   inline def useLocalizer(): Localizer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")().asInstanceOf[Localizer[Any, Any]]
   inline def useLocalizer(messages: Unit, formats: FormatterOverrides[Any, Any]): Localizer[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[Localizer[Any, Any]]
-  inline def useLocalizer(messages: PartialMessagesCreateOption): Localizer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any]).asInstanceOf[Localizer[Any, Any]]
-  inline def useLocalizer(messages: PartialMessagesCreateOption, formats: FormatterOverrides[Any, Any]): Localizer[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[Localizer[Any, Any]]
+  inline def useLocalizer(messages: PartialMessages): Localizer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any]).asInstanceOf[Localizer[Any, Any]]
+  inline def useLocalizer(messages: PartialMessages, formats: FormatterOverrides[Any, Any]): Localizer[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[Localizer[Any, Any]]
   
   /* Inlined {[ Key in react-widgets.react-widgets/esm/Localization.RequiredDateMethods ]:? TFormat} */
   trait DateFormats[TFormat] extends StObject {

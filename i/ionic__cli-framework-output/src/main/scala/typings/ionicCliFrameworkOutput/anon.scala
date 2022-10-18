@@ -1,11 +1,11 @@
 package typings.ionicCliFrameworkOutput
 
-import typings.ionicCliFrameworkOutput.loggerMod.LogRecord
-import typings.ionicCliFrameworkOutput.loggerMod.LoggerFormatter
-import typings.ionicCliFrameworkOutput.loggerMod.LoggerHandler
-import typings.ionicCliFrameworkOutput.loggerMod.LoggerLevelWeight
+import typings.ionicCliFrameworkOutput.distLoggerMod.LogRecord
+import typings.ionicCliFrameworkOutput.distLoggerMod.LoggerFormatter
+import typings.ionicCliFrameworkOutput.distLoggerMod.LoggerHandler
+import typings.ionicCliFrameworkOutput.distLoggerMod.LoggerLevelWeight
+import typings.node.NodeJS.WritableStream
 import typings.std.Set
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +45,7 @@ object anon {
     
     var formatter: js.UndefOr[LoggerFormatter] = js.undefined
     
-    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
+    var stream: js.UndefOr[WritableStream] = js.undefined
   }
   object PartialStreamHandlerOptio {
     
@@ -64,7 +64,7 @@ object anon {
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     }

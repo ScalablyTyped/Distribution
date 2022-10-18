@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.ListViewSearch")
 @js.native
 open class ListViewSearch protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.ListViewSearch {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.ListViewSearch {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object ListViewSearch {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ListViewSearch]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ListViewSearch]
   
   /**
     * Creates and returns a new ListViewSearch instance in the SDK and on the server.
@@ -44,7 +44,7 @@ object ListViewSearch {
     * of the parent ListViewDatabaseSource element passed as argument.
     */
   /* static member */
-  inline def createInListViewDatabaseSourceUnderSearch(container: typings.mendixmodelsdk.pagesMod.pages.ListViewDatabaseSource): typings.mendixmodelsdk.pagesMod.pages.ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewDatabaseSourceUnderSearch")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ListViewSearch]
+  inline def createInListViewDatabaseSourceUnderSearch(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ListViewDatabaseSource): typings.mendixmodelsdk.srcGenPagesMod.pages.ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewDatabaseSourceUnderSearch")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ListViewSearch]
   
   /**
     * Creates and returns a new ListViewSearch instance in the SDK and on the server.
@@ -52,7 +52,7 @@ object ListViewSearch {
     * of the parent ListViewXPathSource element passed as argument.
     */
   /* static member */
-  inline def createInListViewXPathSourceUnderSearch(container: typings.mendixmodelsdk.pagesMod.pages.ListViewXPathSource): typings.mendixmodelsdk.pagesMod.pages.ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewXPathSourceUnderSearch")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ListViewSearch]
+  inline def createInListViewXPathSourceUnderSearch(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ListViewXPathSource): typings.mendixmodelsdk.srcGenPagesMod.pages.ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewXPathSourceUnderSearch")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ListViewSearch]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ListViewSearch.structureTypeName")

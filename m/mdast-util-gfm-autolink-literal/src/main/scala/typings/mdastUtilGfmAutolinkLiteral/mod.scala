@@ -3,7 +3,7 @@ package typings.mdastUtilGfmAutolinkLiteral
 import typings.mdastUtilFromMarkdown.mod.Extension
 import typings.mdastUtilFromMarkdown.mod.Handle
 import typings.mdastUtilFromMarkdown.mod.Transform
-import typings.mdastUtilToMarkdown.typesMod.Options
+import typings.mdastUtilToMarkdown.libTypesMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

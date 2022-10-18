@@ -1,6 +1,6 @@
 package typings.antdMobile.anon
 
-import typings.antdMobile.treeSelectTreeSelectMod.TreeSelectOption
+import typings.antdMobile.esComponentsTreeSelectTreeSelectMod.TreeSelectOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

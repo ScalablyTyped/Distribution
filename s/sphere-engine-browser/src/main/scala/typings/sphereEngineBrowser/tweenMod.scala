@@ -61,76 +61,62 @@ object tweenMod {
   @js.native
   object Easing extends StObject {
     
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Easing & Double] = js.native
-    
     /** Overshoots the target values, then reverses into place. */
     @js.native
     sealed trait Back
       extends StObject
          with Easing
-    /* 0 */ val Back: typings.sphereEngineBrowser.tweenMod.Easing.Back & Double = js.native
     
     @js.native
     sealed trait Bounce
       extends StObject
          with Easing
-    /* 1 */ val Bounce: typings.sphereEngineBrowser.tweenMod.Easing.Bounce & Double = js.native
     
     @js.native
     sealed trait Circular
       extends StObject
          with Easing
-    /* 2 */ val Circular: typings.sphereEngineBrowser.tweenMod.Easing.Circular & Double = js.native
     
     @js.native
     sealed trait Cubic
       extends StObject
          with Easing
-    /* 3 */ val Cubic: typings.sphereEngineBrowser.tweenMod.Easing.Cubic & Double = js.native
     
     @js.native
     sealed trait Elastic
       extends StObject
          with Easing
-    /* 4 */ val Elastic: typings.sphereEngineBrowser.tweenMod.Easing.Elastic & Double = js.native
     
     @js.native
     sealed trait Exponential
       extends StObject
          with Easing
-    /* 5 */ val Exponential: typings.sphereEngineBrowser.tweenMod.Easing.Exponential & Double = js.native
     
     /** Linear interpolation: Animate smoothly from one value to the next, with no acceleration. */
     @js.native
     sealed trait Linear
       extends StObject
          with Easing
-    /* 6 */ val Linear: typings.sphereEngineBrowser.tweenMod.Easing.Linear & Double = js.native
     
     @js.native
     sealed trait Quadratic
       extends StObject
          with Easing
-    /* 7 */ val Quadratic: typings.sphereEngineBrowser.tweenMod.Easing.Quadratic & Double = js.native
     
     @js.native
     sealed trait Quartic
       extends StObject
          with Easing
-    /* 8 */ val Quartic: typings.sphereEngineBrowser.tweenMod.Easing.Quartic & Double = js.native
     
     @js.native
     sealed trait Quintic
       extends StObject
          with Easing
-    /* 9 */ val Quintic: typings.sphereEngineBrowser.tweenMod.Easing.Quintic & Double = js.native
     
     @js.native
     sealed trait Sine
       extends StObject
          with Easing
-    /* 10 */ val Sine: typings.sphereEngineBrowser.tweenMod.Easing.Sine & Double = js.native
   }
   
   /**

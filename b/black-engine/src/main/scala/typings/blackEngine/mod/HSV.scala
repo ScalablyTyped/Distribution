@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "HSV")
 @js.native
 open class HSV ()
-  extends typings.blackEngine.colorHelperMod.HSV {
+  extends typings.blackEngine.utilsColorHelperMod.HSV {
   def this(h: Double) = this()
   def this(h: Double, s: Double) = this()
   def this(h: Unit, s: Double) = this()

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The compact layout properties for an entity.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait EntityCompactLayout extends StObject {
   
@@ -17,8 +16,7 @@ trait EntityCompactLayout extends StObject {
     * Specifies the name of the icon which is used to open the card.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var icon: js.UndefOr[String | EntityCompactLayoutIcons] = js.undefined
 }

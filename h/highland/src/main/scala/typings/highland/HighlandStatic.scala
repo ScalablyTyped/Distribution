@@ -4,9 +4,9 @@ import typings.highland.Highland.MappingHint
 import typings.highland.Highland.Nil
 import typings.highland.Highland.OnFinished
 import typings.highland.Highland.Stream
+import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.PromiseLike
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -129,10 +129,10 @@ trait HighlandStatic extends StObject {
   def apply[R](source: js.Iterable[R]): Stream[R] = js.native
   def apply[R](source: js.Iterator[R]): Stream[R] = js.native
   def apply[R](source: Stream[R]): Stream[R] = js.native
+  def apply[R](source: ReadableStream): Stream[R] = js.native
+  def apply[R](source: ReadableStream, onFinished: OnFinished): Stream[R] = js.native
   // moar (promise for everything?)
   def apply[R](source: PromiseLike[R | Stream[R]]): Stream[R] = js.native
-  def apply[R](source: ReadableStream[Any]): Stream[R] = js.native
-  def apply[R](source: ReadableStream[Any], onFinished: OnFinished): Stream[R] = js.native
   
   def add(a: Double): js.Function1[/* b */ Double, Double] = js.native
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

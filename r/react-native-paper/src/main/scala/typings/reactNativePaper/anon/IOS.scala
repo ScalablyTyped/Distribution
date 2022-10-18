@@ -1,9 +1,9 @@
 package typings.reactNativePaper.anon
 
-import typings.callstackReactThemeProvider.hoistNonReactStaticsMod.NonReactStatics
+import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonReactStatics
 import typings.react.mod.ComponentType
-import typings.reactNativePaper.radioButtonItemMod.Props
-import typings.reactNativePaper.typescriptTypesMod.RemoveChildren
+import typings.reactNativePaper.libTypescriptComponentsRadioButtonRadioButtonItemMod.Props
+import typings.reactNativePaper.libTypescriptTypesMod.RemoveChildren
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait IOS extends StObject {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & UncheckedColor
-    ]) & CallHasDisabledOnPressThemeValueStatusTestIDRestDisplayNameString, 
+    ]) & CallHasDisabledOnPressThemeValueStatusTestIDRest, 
     js.Object
   ])
   
@@ -26,11 +26,11 @@ trait IOS extends StObject {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & Value
-    ]) & CallHasDisabledOnPressThemeStatusValueTestIDRestDisplayNameString, 
+    ]) & CallHasDisabledOnPressThemeStatusValueTestIDRest, 
     js.Object
   ])
   
-  var Item: ComponentType[PickPropslabelstylecoloroColor] & (NonReactStatics[
+  var Item: ComponentType[PickPropslabelstylecoloroDisabled] & (NonReactStatics[
     ComponentType[Props] & CallHasValueLabelStyleLabelStyleOnPressDisabledColorUncheckedColorStatusHasColorsAccessibilityLabelTestIDModePosition, 
     js.Object
   ])
@@ -43,7 +43,7 @@ object IOS {
         (RemoveChildren[
           ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
         ]) & UncheckedColor
-      ]) & CallHasDisabledOnPressThemeValueStatusTestIDRestDisplayNameString, 
+      ]) & CallHasDisabledOnPressThemeValueStatusTestIDRest, 
       js.Object
     ]),
     Group: CallHasValueOnValueChangeChildren,
@@ -52,10 +52,10 @@ object IOS {
         (RemoveChildren[
           ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
         ]) & Value
-      ]) & CallHasDisabledOnPressThemeStatusValueTestIDRestDisplayNameString, 
+      ]) & CallHasDisabledOnPressThemeStatusValueTestIDRest, 
       js.Object
     ]),
-    Item: ComponentType[PickPropslabelstylecoloroColor] & (NonReactStatics[
+    Item: ComponentType[PickPropslabelstylecoloroDisabled] & (NonReactStatics[
       ComponentType[Props] & CallHasValueLabelStyleLabelStyleOnPressDisabledColorUncheckedColorStatusHasColorsAccessibilityLabelTestIDModePosition, 
       js.Object
     ])
@@ -72,7 +72,7 @@ object IOS {
             (RemoveChildren[
               ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
             ]) & UncheckedColor
-          ]) & CallHasDisabledOnPressThemeValueStatusTestIDRestDisplayNameString, 
+          ]) & CallHasDisabledOnPressThemeValueStatusTestIDRest, 
           js.Object
         ])
     ): Self = StObject.set(x, "Android", value.asInstanceOf[js.Any])
@@ -85,13 +85,13 @@ object IOS {
             (RemoveChildren[
               ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
             ]) & Value
-          ]) & CallHasDisabledOnPressThemeStatusValueTestIDRestDisplayNameString, 
+          ]) & CallHasDisabledOnPressThemeStatusValueTestIDRest, 
           js.Object
         ])
     ): Self = StObject.set(x, "IOS", value.asInstanceOf[js.Any])
     
     inline def setItem(
-      value: ComponentType[PickPropslabelstylecoloroColor] & (NonReactStatics[
+      value: ComponentType[PickPropslabelstylecoloroDisabled] & (NonReactStatics[
           ComponentType[Props] & CallHasValueLabelStyleLabelStyleOnPressDisabledColorUncheckedColorStatusHasColorsAccessibilityLabelTestIDModePosition, 
           js.Object
         ])

@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* Inlined parent std.Partial<log4js.log4js.CallStack> */
 trait LoggingEvent extends StObject {
   
   var callStack: js.UndefOr[String] = js.undefined
@@ -19,6 +20,11 @@ trait LoggingEvent extends StObject {
   
   // level of message
   var data: js.Array[Any]
+  
+  /**
+    * The first Error object in the data if there is one
+    */
+  var error: js.UndefOr[js.Error] = js.undefined
   
   var fileName: js.UndefOr[String] = js.undefined
   
@@ -72,6 +78,10 @@ object LoggingEvent {
     inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

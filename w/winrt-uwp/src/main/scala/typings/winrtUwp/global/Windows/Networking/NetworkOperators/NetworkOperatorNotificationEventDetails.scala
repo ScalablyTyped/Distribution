@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details for a network operator notification. */
-@JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails")
 @js.native
-abstract class NetworkOperatorNotificationEventDetails ()
+open class NetworkOperatorNotificationEventDetails ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails {
   

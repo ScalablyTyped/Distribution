@@ -6,27 +6,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BackgroundColor extends StObject {
   
+  /**
+    * Paints the background of the label that belongs to the vertical crosshair line.
+    */
   var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var fileName: js.UndefOr[String] = js.undefined
+  /**
+    * Customizes the text displayed by the label that belongs to the vertical crosshair line.
+    */
+  var customizeText: js.UndefOr[js.Function1[/* info */ Point, String]] = js.undefined
   
-  var format: js.UndefOr[String] = js.undefined
+  /**
+    * Specifies font properties for the label of the vertical crosshair line.
+    */
+  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var height: js.UndefOr[Double] = js.undefined
+  /**
+    * Formats the point argument before it is displayed in the crosshair label.
+    */
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.Format] = js.undefined
   
-  var margin: js.UndefOr[Double] = js.undefined
-  
-  var onExported: js.UndefOr[js.Function] = js.undefined
-  
-  var onExporting: js.UndefOr[js.Function] = js.undefined
-  
-  var onFileSaving: js.UndefOr[js.Function] = js.undefined
-  
-  var proxyUrl: js.UndefOr[String] = js.undefined
-  
-  var svgToCanvas: js.UndefOr[js.Function] = js.undefined
-  
-  var width: js.UndefOr[Double] = js.undefined
+  /**
+    * Makes the label of the vertical crosshair line visible. Applies only if the crosshair feature is enabled and the vertical line is visible.
+    */
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object BackgroundColor {
   
@@ -41,44 +44,22 @@ object BackgroundColor {
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setCustomizeText(value: /* info */ Point => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     
-    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
     
-    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setFormat(value: typings.devextreme.mod.DevExpress.ui.Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatFunction1(value: js.Date | Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-    
-    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
-    
-    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
-    
-    inline def setOnExported(value: js.Function): Self = StObject.set(x, "onExported", value.asInstanceOf[js.Any])
-    
-    inline def setOnExportedUndefined: Self = StObject.set(x, "onExported", js.undefined)
-    
-    inline def setOnExporting(value: js.Function): Self = StObject.set(x, "onExporting", value.asInstanceOf[js.Any])
-    
-    inline def setOnExportingUndefined: Self = StObject.set(x, "onExporting", js.undefined)
-    
-    inline def setOnFileSaving(value: js.Function): Self = StObject.set(x, "onFileSaving", value.asInstanceOf[js.Any])
-    
-    inline def setOnFileSavingUndefined: Self = StObject.set(x, "onFileSaving", js.undefined)
-    
-    inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
-    
-    inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
-    
-    inline def setSvgToCanvas(value: js.Function): Self = StObject.set(x, "svgToCanvas", value.asInstanceOf[js.Any])
-    
-    inline def setSvgToCanvasUndefined: Self = StObject.set(x, "svgToCanvas", js.undefined)
-    
-    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

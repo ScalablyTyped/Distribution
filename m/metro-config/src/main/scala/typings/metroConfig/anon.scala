@@ -36,47 +36,43 @@ object anon {
   
   trait Code extends StObject {
     
-    var code: Buffer | String
+    var code: String
     
-    var map: MixedSourceMap
-    
-    var outFileName: String
+    var map: String
   }
   object Code {
     
-    inline def apply(code: Buffer | String, map: MixedSourceMap, outFileName: String): Code = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], outFileName = outFileName.asInstanceOf[js.Any])
+    inline def apply(code: String, map: String): Code = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
     extension [Self <: Code](x: Self) {
       
-      inline def setCode(value: Buffer | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setMap(value: MixedSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
-      
-      inline def setOutFileName(value: String): Self = StObject.set(x, "outFileName", value.asInstanceOf[js.Any])
+      inline def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     }
   }
   
   trait CodeMap extends StObject {
     
-    var code: String
+    var code: Buffer | String
     
-    var map: String
+    var map: MixedSourceMap | String
   }
   object CodeMap {
     
-    inline def apply(code: String, map: String): CodeMap = {
+    inline def apply(code: Buffer | String, map: MixedSourceMap | String): CodeMap = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodeMap]
     }
     
     extension [Self <: CodeMap](x: Self) {
       
-      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Buffer | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: MixedSourceMap | String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,12 +171,14 @@ object anon {
     
     var code: Buffer | String
     
-    var map: MixedSourceMap | String
+    var map: MixedSourceMap
+    
+    var outFileName: String
   }
   object Map {
     
-    inline def apply(code: Buffer | String, map: MixedSourceMap | String): Map = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
+    inline def apply(code: Buffer | String, map: MixedSourceMap, outFileName: String): Map = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], outFileName = outFileName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Map]
     }
     
@@ -188,7 +186,9 @@ object anon {
       
       inline def setCode(value: Buffer | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setMap(value: MixedSourceMap | String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: MixedSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      
+      inline def setOutFileName(value: String): Self = StObject.set(x, "outFileName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -327,7 +327,7 @@ object anon {
           ], 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Graph */ /* graph */ Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SerializerOptions */ /* options */ Any, 
-          js.Promise[String | CodeMap]
+          js.Promise[String | Code]
         ]
       ] = js.native
     
@@ -345,7 +345,7 @@ object anon {
     
     val polyfillModuleNames: js.Array[String] = js.native
     
-    def postProcessBundleSourcemap(args: Code): Map = js.native
+    def postProcessBundleSourcemap(args: Map): CodeMap = js.native
     
     def processModuleFilter(
       modules: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Module */ Any

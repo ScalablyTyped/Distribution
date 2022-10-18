@@ -1,15 +1,15 @@
 package typings.firebaseAuth.internalMod
 
-import typings.firebaseAuth.publicTypesMod.UserCredential
+import typings.firebaseAuth.distSrcModelPublicTypesMod.UserCredential
 import typings.firebaseUtil.mod.FirebaseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/auth/dist/cordova/internal", "SAMLAuthProvider")
+@JSImport("@firebase/auth/internal", "SAMLAuthProvider")
 @js.native
 open class SAMLAuthProvider protected ()
-  extends typings.firebaseAuth.cordovaMod.SAMLAuthProvider {
+  extends typings.firebaseAuth.distInternalMod.SAMLAuthProvider {
   /**
     * Constructor. The providerId must start with "saml."
     * @param providerId - SAML provider ID.
@@ -19,7 +19,7 @@ open class SAMLAuthProvider protected ()
 /* static members */
 object SAMLAuthProvider {
   
-  @JSImport("@firebase/auth/dist/cordova/internal", "SAMLAuthProvider")
+  @JSImport("@firebase/auth/internal", "SAMLAuthProvider")
   @js.native
   val ^ : js.Any = js.native
   
@@ -29,14 +29,14 @@ object SAMLAuthProvider {
     *
     * @param userCredential - The user credential.
     */
-  inline def credentialFromError(error: FirebaseError): typings.firebaseAuth.credentialsMod.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromError")(error.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.credentialsMod.AuthCredential | Null]
+  inline def credentialFromError(error: FirebaseError): typings.firebaseAuth.distSrcCoreCredentialsMod.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromError")(error.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.distSrcCoreCredentialsMod.AuthCredential | Null]
   
   /**
     * Creates an {@link AuthCredential} from a JSON string or a plain object.
     * @param json - A plain object or a JSON string
     */
-  inline def credentialFromJSON(json: String): typings.firebaseAuth.credentialsMod.AuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.credentialsMod.AuthCredential]
-  inline def credentialFromJSON(json: js.Object): typings.firebaseAuth.credentialsMod.AuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.credentialsMod.AuthCredential]
+  inline def credentialFromJSON(json: String): typings.firebaseAuth.distSrcCoreCredentialsMod.AuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.distSrcCoreCredentialsMod.AuthCredential]
+  inline def credentialFromJSON(json: js.Object): typings.firebaseAuth.distSrcCoreCredentialsMod.AuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.distSrcCoreCredentialsMod.AuthCredential]
   
   /**
     * Generates an {@link AuthCredential} from a {@link UserCredential} after a
@@ -54,9 +54,9 @@ object SAMLAuthProvider {
     *
     * @param userCredential - The user credential.
     */
-  inline def credentialFromResult(userCredential: UserCredential): typings.firebaseAuth.credentialsMod.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromResult")(userCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.credentialsMod.AuthCredential | Null]
+  inline def credentialFromResult(userCredential: UserCredential): typings.firebaseAuth.distSrcCoreCredentialsMod.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromResult")(userCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.distSrcCoreCredentialsMod.AuthCredential | Null]
   
-  @JSImport("@firebase/auth/dist/cordova/internal", "SAMLAuthProvider.samlCredentialFromTaggedObject")
+  @JSImport("@firebase/auth/internal", "SAMLAuthProvider.samlCredentialFromTaggedObject")
   @js.native
   def samlCredentialFromTaggedObject: Any = js.native
   inline def samlCredentialFromTaggedObject_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("samlCredentialFromTaggedObject")(x.asInstanceOf[js.Any])

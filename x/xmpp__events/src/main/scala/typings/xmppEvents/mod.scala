@@ -30,7 +30,7 @@ object mod {
   
   @JSImport("@xmpp/events", "EventEmitter")
   @js.native
-  val EventEmitter: Instantiable0[typings.node.eventsMod.EventEmitter] & TypeofEventEmitter = js.native
+  val EventEmitter: TypeofEventEmitter & Instantiable0[typings.node.eventsMod.EventEmitter] = js.native
   type EventEmitter = typings.node.eventsMod.EventEmitter
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -88,5 +88,5 @@ object mod {
   inline def promise(emitter: typings.xmppEvents.mod.EventEmitter, event: js.Symbol, rejectEvent: Null, timeout: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], rejectEvent.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def promise(emitter: typings.xmppEvents.mod.EventEmitter, event: js.Symbol, rejectEvent: Unit, timeout: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], rejectEvent.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
-  inline def timeout[TPromise /* <: PromiseLike[Any] */](promise: TPromise, ms: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(promise.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def timeout[TPromise /* <: PromiseLike[Any] */](promise: TPromise, ms: Double): /* import warning: importer.ImportType#apply Failed type conversion: TPromise extends std.PromiseLike<infer TValue> ? std.Promise<TValue> : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(promise.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TPromise extends std.PromiseLike<infer TValue> ? std.Promise<TValue> : never */ js.Any]
 }

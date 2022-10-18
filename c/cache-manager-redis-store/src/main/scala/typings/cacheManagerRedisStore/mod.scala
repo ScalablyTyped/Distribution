@@ -1,10 +1,9 @@
 package typings.cacheManagerRedisStore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.cacheManager.mod.Cache
-import typings.cacheManager.mod.CacheOptions
-import typings.cacheManager.mod.Store
-import typings.cacheManager.mod.StoreConfig
+import typings.cacheManager.distCachingMod.Cache
+import typings.cacheManager.distCachingMod.Store
+import typings.cacheManager.distCachingMod.StoreConfig
 import typings.cacheManagerRedisStore.cacheManagerRedisStoreStrings.redis
 import typings.cacheManagerRedisStore.mod.CacheManagerRedisStore.RedisCache
 import typings.cacheManagerRedisStore.mod.CacheManagerRedisStore.RedisStoreConstructor
@@ -25,7 +24,9 @@ object mod extends Shortcut {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def caching(IConfig: StoreConfig & CacheOptions): RedisCache = ^.asInstanceOf[js.Dynamic].applyDynamic("caching")(IConfig.asInstanceOf[js.Any]).asInstanceOf[RedisCache]
+    inline def caching(
+      IConfig: StoreConfig & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheOptions */ Any)
+    ): RedisCache = ^.asInstanceOf[js.Dynamic].applyDynamic("caching")(IConfig.asInstanceOf[js.Any]).asInstanceOf[RedisCache]
   }
   
   object CacheManagerRedisStore {
@@ -33,42 +34,22 @@ object mod extends Shortcut {
     @js.native
     trait RedisCache
       extends StObject
-         with Cache {
+         with Cache[Store] {
       
       @JSName("store")
       var store_RedisCache: RedisStore = js.native
     }
     
+    @js.native
     trait RedisStore
       extends StObject
          with Store {
       
-      def getClient(): Any
+      def getClient(): Any = js.native
       
-      def isCacheableValue(value: Any): Boolean
+      def isCacheableValue(value: Any): Boolean = js.native
       
-      var name: redis
-    }
-    object RedisStore {
-      
-      inline def apply(
-        get: /* repeated */ Any => js.Promise[Any],
-        getClient: () => Any,
-        isCacheableValue: Any => Boolean,
-        set: /* repeated */ Any => js.Promise[Any]
-      ): RedisStore = {
-        val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getClient = js.Any.fromFunction0(getClient), isCacheableValue = js.Any.fromFunction1(isCacheableValue), name = "redis", set = js.Any.fromFunction1(set))
-        __obj.asInstanceOf[RedisStore]
-      }
-      
-      extension [Self <: RedisStore](x: Self) {
-        
-        inline def setGetClient(value: () => Any): Self = StObject.set(x, "getClient", js.Any.fromFunction0(value))
-        
-        inline def setIsCacheableValue(value: Any => Boolean): Self = StObject.set(x, "isCacheableValue", js.Any.fromFunction1(value))
-        
-        inline def setName(value: redis): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      }
+      var name: redis = js.native
     }
     
     @js.native

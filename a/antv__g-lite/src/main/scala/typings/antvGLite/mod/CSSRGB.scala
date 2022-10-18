@@ -1,7 +1,7 @@
 package typings.antvGLite.mod
 
-import typings.antvGLite.csscolorvalueMod.CSSColorPercent
-import typings.antvGLite.csscolorvalueMod.CSSColorRGBComp
+import typings.antvGLite.distCssCssomCsscolorvalueMod.CSSColorPercent
+import typings.antvGLite.distCssCssomCsscolorvalueMod.CSSColorRGBComp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "CSSRGB")
 @js.native
 open class CSSRGB protected ()
-  extends typings.antvGLite.cssMod.CSSRGB {
+  extends typings.antvGLite.distCssMod.CSSRGB {
   def this(r: CSSColorRGBComp, g: CSSColorRGBComp, b: CSSColorRGBComp) = this()
   def this(r: CSSColorRGBComp, g: CSSColorRGBComp, b: CSSColorRGBComp, alpha: CSSColorPercent) = this()
   def this(

@@ -1,6 +1,6 @@
 package typings.reactMdBadge
 
-import typings.reactMdBadge.badgeMod.BadgeTheme
+import typings.reactMdBadge.typesBadgeMod.BadgeTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

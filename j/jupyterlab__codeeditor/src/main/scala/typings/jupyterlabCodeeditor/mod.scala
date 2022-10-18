@@ -1,8 +1,8 @@
 package typings.jupyterlabCodeeditor
 
-import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IConfig
-import typings.jupyterlabCodeeditor.editorMod.CodeEditor.ISelectionStyle
-import typings.jupyterlabCodeeditor.editorMod.CodeEditor.Model.IOptions
+import typings.jupyterlabCodeeditor.libEditorMod.CodeEditor.IConfig
+import typings.jupyterlabCodeeditor.libEditorMod.CodeEditor.ISelectionStyle
+import typings.jupyterlabCodeeditor.libEditorMod.CodeEditor.Model.IOptions
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,8 +20,8 @@ object mod {
     /**
       * Construct a new Model.
       */
-    class Model ()
-      extends typings.jupyterlabCodeeditor.editorMod.CodeEditor.Model {
+    open class Model ()
+      extends typings.jupyterlabCodeeditor.libEditorMod.CodeEditor.Model {
       def this(options: IOptions) = this()
     }
     
@@ -42,12 +42,12 @@ object mod {
   
   @JSImport("@jupyterlab/codeeditor", "CodeEditorWrapper")
   @js.native
-  class CodeEditorWrapper protected ()
-    extends typings.jupyterlabCodeeditor.widgetMod.CodeEditorWrapper {
+  open class CodeEditorWrapper protected ()
+    extends typings.jupyterlabCodeeditor.libWidgetMod.CodeEditorWrapper {
     /**
       * Construct a new code editor widget.
       */
-    def this(options: typings.jupyterlabCodeeditor.widgetMod.CodeEditorWrapper.IOptions) = this()
+    def this(options: typings.jupyterlabCodeeditor.libWidgetMod.CodeEditorWrapper.IOptions) = this()
   }
   
   object IEditorMimeTypeService {
@@ -62,15 +62,15 @@ object mod {
   
   @JSImport("@jupyterlab/codeeditor", "IEditorServices")
   @js.native
-  val IEditorServices: Token[typings.jupyterlabCodeeditor.tokensMod.IEditorServices] = js.native
+  val IEditorServices: Token[typings.jupyterlabCodeeditor.libTokensMod.IEditorServices] = js.native
   
   @JSImport("@jupyterlab/codeeditor", "JSONEditor")
   @js.native
-  class JSONEditor protected ()
-    extends typings.jupyterlabCodeeditor.jsoneditorMod.JSONEditor {
+  open class JSONEditor protected ()
+    extends typings.jupyterlabCodeeditor.libJsoneditorMod.JSONEditor {
     /**
       * Construct a new JSON editor.
       */
-    def this(options: typings.jupyterlabCodeeditor.jsoneditorMod.JSONEditor.IOptions) = this()
+    def this(options: typings.jupyterlabCodeeditor.libJsoneditorMod.JSONEditor.IOptions) = this()
   }
 }

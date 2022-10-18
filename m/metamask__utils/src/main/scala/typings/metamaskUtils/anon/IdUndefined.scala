@@ -6,29 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IdUndefined extends StObject {
   
+  var error: CodeMessage
+  
   var id: Unit
   
   var jsonrpc: String
-  
-  var method: Null
-  
-  var params: Unit
 }
 object IdUndefined {
   
-  inline def apply(id: Unit, jsonrpc: String, method: Null, params: Unit): IdUndefined = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+  inline def apply(error: CodeMessage, id: Unit, jsonrpc: String): IdUndefined = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdUndefined]
   }
   
   extension [Self <: IdUndefined](x: Self) {
     
+    inline def setError(value: CodeMessage): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
     inline def setId(value: Unit): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setJsonrpc(value: String): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
-    
-    inline def setMethod(value: Null): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
-    
-    inline def setParams(value: Unit): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

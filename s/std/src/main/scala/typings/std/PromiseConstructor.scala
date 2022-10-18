@@ -1,7 +1,6 @@
 package typings.std
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +35,7 @@ Instantiable1[
     */
   /* standard es2015.promise */
   def all[T /* <: js.Array[Any] */](values: T): js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {-readonly [ P in keyof T ]: std.Awaited<T[P]>}
-    */ typings.std.stdStrings.PromiseConstructor & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ P in keyof T ]: std.Awaited<T[P]>} */ js.Any
   ] = js.native
   /**
     * Creates a Promise that is resolved with an array of results when all of the provided Promises
@@ -57,9 +54,7 @@ Instantiable1[
     */
   /* standard es2020.promise */
   def allSettled[T /* <: js.Array[Any] */](values: T): js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {-readonly [ P in keyof T ]: std.PromiseSettledResult<std.Awaited<T[P]>>}
-    */ typings.std.stdStrings.PromiseConstructor & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ P in keyof T ]: std.PromiseSettledResult<std.Awaited<T[P]>>} */ js.Any
   ] = js.native
   /**
     * Creates a Promise that is resolved with an array of results when all

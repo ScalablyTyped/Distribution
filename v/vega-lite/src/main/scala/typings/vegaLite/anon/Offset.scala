@@ -1,7 +1,7 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.vegaSchemaMod.VgValueRef
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaLite.buildSrcVegaDotschemaMod.VgValueRef
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

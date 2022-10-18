@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientArea120tables.gapi.client.area120tables
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,7 @@ trait Row extends StObject {
   
   /** The values of the row. This is a map of column key to value. Key is user entered name(default) or the internal column id based on the view in the request. */
   var values: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientArea120tables.maximMazurokGapiClientArea120tablesStrings.Row & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object Row {
@@ -45,9 +42,7 @@ object Row {
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     inline def setValues(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientArea120tables.maximMazurokGapiClientArea120tablesStrings.Row & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

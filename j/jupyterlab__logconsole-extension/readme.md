@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__logconsole-extension
 
-Typings are for version 2.2.7
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Log Console Extension
@@ -10,10 +10,10 @@ JupyterLab - Log Console Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/logconsole-extension |
 | Keywords           | - |
-| # releases         | 105 |
-| # dependents       | 1 |
-| # downloads        | 1344682 |
-| # stars            | 0 |
+| # releases         | 144 |
+| # dependents       | 0.0 |
+| # downloads        | 191096.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

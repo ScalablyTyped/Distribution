@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FilterMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.FilterMode & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.FilterMode & String] = js.native
   
-  /* "linear" */ val Linear: typings.babylonjs.webgpuConstantsMod.FilterMode.Linear & String = js.native
+  /* "linear" */ val Linear: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.FilterMode.Linear & String = js.native
   
-  /* "nearest" */ val Nearest: typings.babylonjs.webgpuConstantsMod.FilterMode.Nearest & String = js.native
+  /* "nearest" */ val Nearest: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.FilterMode.Nearest & String = js.native
 }

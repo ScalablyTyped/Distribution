@@ -1,9 +1,9 @@
 package typings.awsSdkTypes
 
-import typings.awsSdkTypes.loggerMod.LogLevel
-import typings.awsSdkTypes.middlewareMod.Priority
-import typings.awsSdkTypes.middlewareMod.Relation
-import typings.awsSdkTypes.middlewareMod.Step
+import typings.awsSdkTypes.distTypesLoggerMod.LogLevel
+import typings.awsSdkTypes.distTypesMiddlewareMod.Priority
+import typings.awsSdkTypes.distTypesMiddlewareMod.Relation
+import typings.awsSdkTypes.distTypesMiddlewareMod.Step
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -139,6 +139,14 @@ object awsSdkTypesStrings {
   @js.native
   sealed trait short extends StObject
   inline def short: short = "short".asInstanceOf[short]
+  
+  @js.native
+  sealed trait sigv4 extends StObject
+  inline def sigv4: sigv4 = "sigv4".asInstanceOf[sigv4]
+  
+  @js.native
+  sealed trait sigv4a extends StObject
+  inline def sigv4a: sigv4a = "sigv4a".asInstanceOf[sigv4a]
   
   @js.native
   sealed trait string extends StObject

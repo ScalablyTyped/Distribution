@@ -1,7 +1,7 @@
 package typings.slateHtmlSerializer
 
 import typings.react.mod.ReactNode
-import typings.slate.nodeMod.Node
+import typings.slate.distInterfacesNodeMod.Node
 import typings.slateHtmlSerializer.anon.Render
 import typings.slateHtmlSerializer.anon.ToJSON
 import typings.slateHtmlSerializer.anon.`0`

@@ -1,5 +1,6 @@
 package typings.babylonjs.indexMod
 
+import typings.babylonjs.meshesMeshMod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,15 +16,11 @@ open class BoneAxesViewer protected ()
     * @param mesh defines the target mesh
     * @param scaleLines defines a scaling factor for line length (1 by default)
     */
+  def this(scene: typings.babylonjs.sceneMod.Scene, bone: typings.babylonjs.bonesBoneMod.Bone, mesh: Mesh) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    bone: typings.babylonjs.boneMod.Bone,
-    mesh: typings.babylonjs.meshMod.Mesh
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    bone: typings.babylonjs.boneMod.Bone,
-    mesh: typings.babylonjs.meshMod.Mesh,
+    bone: typings.babylonjs.bonesBoneMod.Bone,
+    mesh: Mesh,
     scaleLines: Double
   ) = this()
 }

@@ -1,6 +1,6 @@
 package typings.primereact
 
-import typings.primereact.columnMod.ColumnProps
+import typings.primereact.columnColumnMod.ColumnProps
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
 import typings.std.Event

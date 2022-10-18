@@ -1,21 +1,21 @@
 package typings.grammarkdown.mod
 
-import typings.grammarkdown.tokensMod.AssertionKind
-import typings.grammarkdown.tokensMod.SyntaxKind.CloseBracketToken
-import typings.grammarkdown.tokensMod.SyntaxKind.OpenBracketGreaterThanToken
-import typings.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
+import typings.grammarkdown.distTokensMod.AssertionKind
+import typings.grammarkdown.distTokensMod.SyntaxKind.CloseBracketToken
+import typings.grammarkdown.distTokensMod.SyntaxKind.OpenBracketGreaterThanToken
+import typings.grammarkdown.distTokensMod.SyntaxKind.OpenBracketToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grammarkdown", "AssertionBase")
+/* note: abstract class */ @JSImport("grammarkdown", "AssertionBase")
 @js.native
-abstract class AssertionBase[TKind /* <: AssertionKind */, TBracket /* <: OpenBracketToken | OpenBracketGreaterThanToken */] protected ()
-  extends typings.grammarkdown.nodesMod.AssertionBase[TKind, TBracket] {
-  def this(kind: TKind, openBracketToken: typings.grammarkdown.nodesMod.Token[TBracket]) = this()
+open class AssertionBase[TKind /* <: AssertionKind */, TBracket /* <: OpenBracketToken | OpenBracketGreaterThanToken */] protected ()
+  extends typings.grammarkdown.distNodesMod.AssertionBase[TKind, TBracket] {
+  def this(kind: TKind, openBracketToken: typings.grammarkdown.distNodesMod.Token[TBracket]) = this()
   def this(
     kind: TKind,
-    openBracketToken: typings.grammarkdown.nodesMod.Token[TBracket],
-    closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
+    openBracketToken: typings.grammarkdown.distNodesMod.Token[TBracket],
+    closeBracketToken: typings.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
 }

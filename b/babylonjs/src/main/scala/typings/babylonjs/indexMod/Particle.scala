@@ -15,7 +15,7 @@ open class Particle protected ()
   def this(/**
     * The particle system the particle belongs to.
     */
-  particleSystem: typings.babylonjs.particleSystemMod.ParticleSystem) = this()
+  particleSystem: typings.babylonjs.particlesParticleSystemMod.ParticleSystem) = this()
 }
 /* static members */
 object Particle {

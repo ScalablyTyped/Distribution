@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "GraphicsCommand")
 @js.native
 open class GraphicsCommand protected ()
-  extends typings.blackEngine.graphicsCommandMod.GraphicsCommand {
-  def this(`type`: typings.blackEngine.graphicsCommandTypeMod.GraphicsCommandType, data: js.Array[Any]) = this()
+  extends typings.blackEngine.displayGraphicsCommandMod.GraphicsCommand {
+  def this(`type`: typings.blackEngine.displayGraphicsCommandTypeMod.GraphicsCommandType, data: js.Array[Any]) = this()
 }

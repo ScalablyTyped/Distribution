@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait Router
-  extends typings.koaRouter.mod.^[js.Any, Context] {
+  extends typings.koaRouter.mod.^[Any, Context[Any]] {
   
   /**
     * restful router api
     */
-  def resources(name: String, prefix: String, middleware: js.Any*): Router = js.native
+  def resources(name: String, prefix: String, middleware: Any*): Router = js.native
 }

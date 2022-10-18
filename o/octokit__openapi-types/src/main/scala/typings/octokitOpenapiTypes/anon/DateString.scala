@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DateString extends StObject {
   
+  /** Format: date-time */
   var date: String
   
   var email: String

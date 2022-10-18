@@ -1,6 +1,6 @@
 package typings.webdriverio.anon
 
-import typings.webdriverio.getSizeMod.Size
+import typings.webdriverio.buildCommandsElementGetSizeMod.Size
 import typings.webdriverio.webdriverioStrings.height
 import typings.webdriverio.webdriverioStrings.width
 import typings.webdriverio.webdriverioStrings.x

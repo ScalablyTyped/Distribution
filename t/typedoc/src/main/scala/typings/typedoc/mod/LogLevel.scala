@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object LogLevel extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.typedoc.loggersMod.LogLevel & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.typedoc.distLibUtilsLoggersMod.LogLevel & Double] = js.native
   
-  /* 3 */ val Error: typings.typedoc.loggersMod.LogLevel.Error & Double = js.native
+  /* 3 */ val Error: typings.typedoc.distLibUtilsLoggersMod.LogLevel.Error & Double = js.native
   
-  /* 1 */ val Info: typings.typedoc.loggersMod.LogLevel.Info & Double = js.native
+  /* 1 */ val Info: typings.typedoc.distLibUtilsLoggersMod.LogLevel.Info & Double = js.native
   
-  /* 0 */ val Verbose: typings.typedoc.loggersMod.LogLevel.Verbose & Double = js.native
+  /* 0 */ val Verbose: typings.typedoc.distLibUtilsLoggersMod.LogLevel.Verbose & Double = js.native
   
-  /* 2 */ val Warn: typings.typedoc.loggersMod.LogLevel.Warn & Double = js.native
+  /* 2 */ val Warn: typings.typedoc.distLibUtilsLoggersMod.LogLevel.Warn & Double = js.native
 }

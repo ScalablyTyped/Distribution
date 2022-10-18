@@ -2,7 +2,7 @@ package typings.antDesignProLayout.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
-import typings.antDesignProLayout.typingsMod.MenuDataItem
+import typings.antDesignProLayout.esTypingsMod.MenuDataItem
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

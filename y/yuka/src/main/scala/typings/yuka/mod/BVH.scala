@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [depth=10] - The maximum hierarchical depth.
   */
 open class BVH ()
-  extends typings.yuka.yukaMod.BVH {
+  extends typings.yuka.srcYukaMod.BVH {
   def this(branchingFactor: Double) = this()
   def this(branchingFactor: Double, primitivesPerNode: Double) = this()
   def this(branchingFactor: Unit, primitivesPerNode: Double) = this()

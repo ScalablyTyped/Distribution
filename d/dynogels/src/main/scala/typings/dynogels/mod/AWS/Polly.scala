@@ -1,7 +1,7 @@
 package typings.dynogels.mod.AWS
 
-import typings.awsSdk.pollyMod.ClientConfiguration
-import typings.awsSdk.presignerMod.Presigner.PresignerOptions
+import typings.awsSdk.clientsPollyMod.ClientConfiguration
+import typings.awsSdk.libPollyPresignerMod.Presigner.PresignerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

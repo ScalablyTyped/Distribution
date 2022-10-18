@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.PathTemplate")
 @js.native
 open class PathTemplate protected ()
-  extends typings.googleGax.fallbackMod.PathTemplate {
+  extends typings.googleGax.buildSrcFallbackMod.PathTemplate {
   /**
     * @param {String} data the of the template
     *

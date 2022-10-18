@@ -1,5 +1,6 @@
 package typings.reactBootstrapTableNext.anon
 
+import typings.reactBootstrapTableNext.mod.SortOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +9,12 @@ trait DataField extends StObject {
   
   var dataField: Any
   
-  var newValue: Any
-  
-  var rowId: String
+  var order: SortOrder
 }
 object DataField {
   
-  inline def apply(dataField: Any, newValue: Any, rowId: String): DataField = {
-    val __obj = js.Dynamic.literal(dataField = dataField.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], rowId = rowId.asInstanceOf[js.Any])
+  inline def apply(dataField: Any, order: SortOrder): DataField = {
+    val __obj = js.Dynamic.literal(dataField = dataField.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataField]
   }
   
@@ -23,8 +22,6 @@ object DataField {
     
     inline def setDataField(value: Any): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     
-    inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
-    
-    inline def setRowId(value: String): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+    inline def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
   }
 }

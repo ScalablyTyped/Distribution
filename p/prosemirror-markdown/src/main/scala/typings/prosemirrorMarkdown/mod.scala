@@ -314,7 +314,7 @@ object mod {
       * token](https://markdown-it.github.io/markdown-it/#Token) and
       * returns an attribute object.
       */
-    var getAttrs: js.UndefOr[js.Function1[/* token */ typings.markdownIt.tokenMod.^, Record[String, Any]]] = js.undefined
+    var getAttrs: js.UndefOr[js.Function1[/* token */ typings.markdownIt.libTokenMod.^, Record[String, Any]]] = js.undefined
     
     /**
       * When true, ignore content for the matched token.
@@ -359,7 +359,7 @@ object mod {
       
       inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       
-      inline def setGetAttrs(value: /* token */ typings.markdownIt.tokenMod.^ => Record[String, Any]): Self = StObject.set(x, "getAttrs", js.Any.fromFunction1(value))
+      inline def setGetAttrs(value: /* token */ typings.markdownIt.libTokenMod.^ => Record[String, Any]): Self = StObject.set(x, "getAttrs", js.Any.fromFunction1(value))
       
       inline def setGetAttrsUndefined: Self = StObject.set(x, "getAttrs", js.undefined)
       

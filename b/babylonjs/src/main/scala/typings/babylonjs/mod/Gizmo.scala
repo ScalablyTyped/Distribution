@@ -1,6 +1,7 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.gizmoMod.GizmoAxisCache
+import typings.babylonjs.gizmosGizmoMod.GizmoAxisCache
+import typings.babylonjs.meshesMeshMod.Mesh
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param gizmoLayer The utility layer the gizmo will be added to
   */
 open class Gizmo ()
-  extends typings.babylonjs.legacyMod.Gizmo {
+  extends typings.babylonjs.legacyLegacyMod.Gizmo {
   def this(/** The utility layer the gizmo will be added to */
-  gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer) = this()
+  gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer) = this()
 }
 /* static members */
 object Gizmo {
@@ -31,9 +32,9 @@ object Gizmo {
     * @returns {Observer<PointerInfo>} pointerObserver
     */
   inline def GizmoAxisPointerObserver(
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    gizmoAxisCache: Map[typings.babylonjs.meshMod.Mesh, GizmoAxisCache]
-  ): typings.babylonjs.observableMod.Observer[typings.babylonjs.pointerEventsMod.PointerInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("GizmoAxisPointerObserver")(gizmoLayer.asInstanceOf[js.Any], gizmoAxisCache.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.observableMod.Observer[typings.babylonjs.pointerEventsMod.PointerInfo]]
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    gizmoAxisCache: Map[Mesh, GizmoAxisCache]
+  ): typings.babylonjs.miscObservableMod.Observer[typings.babylonjs.eventsPointerEventsMod.PointerInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("GizmoAxisPointerObserver")(gizmoLayer.asInstanceOf[js.Any], gizmoAxisCache.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.miscObservableMod.Observer[typings.babylonjs.eventsPointerEventsMod.PointerInfo]]
   
   /**
     * When enabled, any gizmo operation will perserve scaling sign. Default is off.

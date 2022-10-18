@@ -1,9 +1,9 @@
 package typings.googleGax.mod
 
-import typings.googleGax.gaxMod.BackoffSettings
-import typings.googleGax.gaxMod.CallOptions
-import typings.googleGax.longRunningDescriptorMod.LongRunningDescriptor
-import typings.googleGax.longrunningMod.LROOperation
+import typings.googleGax.buildSrcGaxMod.BackoffSettings
+import typings.googleGax.buildSrcGaxMod.CallOptions
+import typings.googleGax.buildSrcLongRunningCallsLongRunningDescriptorMod.LongRunningDescriptor
+import typings.googleGax.buildSrcLongRunningCallsLongrunningMod.LROOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "Operation")
 @js.native
 open class Operation_ protected ()
-  extends typings.googleGax.longrunningMod.Operation_ {
+  extends typings.googleGax.buildSrcLongRunningCallsLongrunningMod.Operation_ {
   /**
     * Wrapper for a google.longrunnung.Operation.
     *

@@ -2,13 +2,13 @@ package typings.typedGithubApi
 
 import typings.moment.mod.Duration_
 import typings.moment.mod.Moment
-import typings.typedGithubApi.githubRefMod.GitHubRef
-import typings.typedGithubApi.githubRefMod.OptionsOrRef
-import typings.typedGithubApi.interfacesIssueMod.Issue
-import typings.typedGithubApi.interfacesIssueMod.IssueComment
-import typings.typedGithubApi.interfacesLabelMod.Label
-import typings.typedGithubApi.interfacesRepositoryMod.Repository
-import typings.typedGithubApi.interfacesUserMod.UserSummary
+import typings.typedGithubApi.distGithubRefMod.GitHubRef
+import typings.typedGithubApi.distGithubRefMod.OptionsOrRef
+import typings.typedGithubApi.distInterfacesIssueMod.Issue
+import typings.typedGithubApi.distInterfacesIssueMod.IssueComment
+import typings.typedGithubApi.distInterfacesLabelMod.Label
+import typings.typedGithubApi.distInterfacesRepositoryMod.Repository
+import typings.typedGithubApi.distInterfacesUserMod.UserSummary
 import typings.typedGithubApi.typedGithubApiStrings.closed
 import typings.typedGithubApi.typedGithubApiStrings.open
 import org.scalablytyped.runtime.StObject
@@ -22,7 +22,7 @@ object distIssueMod {
   open class IssueClass protected ()
     extends GitHubRef
        with Issue {
-    def this(data: typings.typedGithubApi.issueMod.Issue, options: OptionsOrRef) = this()
+    def this(data: typings.typedGithubApi.distApiInterfacesIssueMod.Issue, options: OptionsOrRef) = this()
     
     /* CompleteClass */
     override val age: Duration_ = js.native
@@ -91,7 +91,7 @@ object distIssueMod {
   open class IssueCommentClass protected ()
     extends GitHubRef
        with IssueComment {
-    def this(data: typings.typedGithubApi.issueMod.IssueComment, options: OptionsOrRef) = this()
+    def this(data: typings.typedGithubApi.distApiInterfacesIssueMod.IssueComment, options: OptionsOrRef) = this()
     
     /* CompleteClass */
     var body: String = js.native

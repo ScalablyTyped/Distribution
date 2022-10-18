@@ -117,14 +117,6 @@ object wechatMiniprogramStrings {
   inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
-  sealed trait Optional extends StObject
-  inline def Optional: Optional = "Optional".asInstanceOf[Optional]
-  
-  @js.native
-  sealed trait OptionalInterface extends StObject
-  inline def OptionalInterface: OptionalInterface = "OptionalInterface".asInstanceOf[OptionalInterface]
-  
-  @js.native
   sealed trait PCM extends StObject
   inline def PCM: PCM = "PCM".asInstanceOf[PCM]
   
@@ -147,10 +139,6 @@ object wechatMiniprogramStrings {
   @js.native
   sealed trait Polygon extends StObject
   inline def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
-  
-  @js.native
-  sealed trait PropertyOptionToData extends StObject
-  inline def PropertyOptionToData: PropertyOptionToData = "PropertyOptionToData".asInstanceOf[PropertyOptionToData]
   
   @js.native
   sealed trait QR_CODE extends StObject

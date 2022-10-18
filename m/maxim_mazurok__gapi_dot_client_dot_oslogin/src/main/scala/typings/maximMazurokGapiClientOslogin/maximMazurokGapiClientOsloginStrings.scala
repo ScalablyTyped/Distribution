@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientOsloginStrings {
   
   @js.native
-  sealed trait LoginProfile extends StObject
-  inline def LoginProfile: LoginProfile = "LoginProfile".asInstanceOf[LoginProfile]
-  
-  @js.native
   sealed trait oslogin extends StObject
   inline def oslogin: oslogin = "oslogin".asInstanceOf[oslogin]
   

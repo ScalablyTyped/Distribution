@@ -1,21 +1,17 @@
 package typings.dateFns
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object minIndexMod {
   
-  object default extends Shortcut {
+  object default {
     
-    @JSImport("date-fns/esm/fp/min/index", JSImport.Default)
+    inline def apply(datesArray: js.Array[js.Date | Double]): js.Date = ^.asInstanceOf[js.Dynamic].apply(datesArray.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    
+    @JSImport("date-fns/min/index", JSImport.Default)
     @js.native
-    val ^ : CurriedFn1[js.Array[js.Date | Double], js.Date] = js.native
-    
-    type _To = CurriedFn1[js.Array[js.Date | Double], js.Date]
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn1[js.Array[js.Date | Double], js.Date] = ^
+    val ^ : js.Any = js.native
   }
 }

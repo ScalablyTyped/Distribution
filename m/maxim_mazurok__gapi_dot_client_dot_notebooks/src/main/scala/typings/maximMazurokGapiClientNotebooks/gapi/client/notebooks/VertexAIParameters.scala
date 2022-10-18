@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait VertexAIParameters extends StObject {
   
   /** Environment variables. At most 100 environment variables can be specified and unique. Example: GCP_BUCKET=gs://my-bucket/samples/ */
   var env: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.VertexAIParameters & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -31,9 +28,7 @@ object VertexAIParameters {
   extension [Self <: VertexAIParameters](x: Self) {
     
     inline def setEnv(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.VertexAIParameters & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)

@@ -1,6 +1,5 @@
 package typings.reactJsonschemaForm.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.FunctionComponent
@@ -18,8 +17,8 @@ type FieldError = String
 
 type ISubmitEvent[T] = IChangeEvent[T]
 
-type IdSchema[T] = typings.reactJsonschemaForm.reactJsonschemaFormStrings.IdSchema & TopLevel[T] & FieldId
+type IdSchema[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]: react-jsonschema-form.react-jsonschema-form.IdSchema<T[key]>} */ js.Any) & FieldId
 
-type PathSchema[T] = typings.reactJsonschemaForm.reactJsonschemaFormStrings.PathSchema & TopLevel[T] & FieldPath
+type PathSchema[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]: react-jsonschema-form.react-jsonschema-form.PathSchema<T[key]>} */ js.Any) & FieldPath
 
 type Widget = FunctionComponent[WidgetProps] | (ComponentClass[WidgetProps, ComponentState])

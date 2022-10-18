@@ -1,6 +1,6 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.createBreakpointsMod.Breakpoint
+import typings.materialUiCore.stylesCreateBreakpointsMod.Breakpoint
 import typings.materialUiTypes.mod.PropInjector
 import typings.react.mod.Ref
 import org.scalablytyped.runtime.StObject

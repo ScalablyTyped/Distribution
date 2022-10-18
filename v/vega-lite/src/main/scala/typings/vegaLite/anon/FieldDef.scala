@@ -1,9 +1,9 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.binMod.BinParams
-import typings.vegaLite.channeldefMod.TypedFieldDef
+import typings.vegaLite.buildSrcBinMod.BinParams
+import typings.vegaLite.buildSrcChanneldefMod.TypedFieldDef
 import typings.vegaLite.vegaLiteStrings.binned
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

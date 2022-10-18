@@ -12,9 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("cloud-config-client", "Config")
+  /* note: abstract class */ @JSImport("cloud-config-client", "Config")
   @js.native
-  abstract class Config protected () extends StObject {
+  open class Config protected () extends StObject {
     def this(data: ConfigData, context: StringDictionary[Any]) = this()
     
     def forEach(callback: js.Function2[/* property */ String, /* value */ String, Unit]): Unit = js.native

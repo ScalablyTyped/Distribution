@@ -113,17 +113,17 @@ object global {
     inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: RaxNode*): RaxElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RaxElement[P, String | JSXElementConstructor[Any]]]
     inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: RaxNode*): RaxElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RaxElement[P, String | JSXElementConstructor[Any]]]
     inline def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.rax.raxStrings.animate, typings.rax.raxStrings.circle, typings.rax.raxStrings.clipPath */ Any,
       props: ClassAttributes[T] & P,
       children: RaxNode*
     ): RaxSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RaxSVGElement]
     inline def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.rax.raxStrings.animate, typings.rax.raxStrings.circle, typings.rax.raxStrings.clipPath */ Any,
       props: Null,
       children: RaxNode*
     ): RaxSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RaxSVGElement]
     inline def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.rax.raxStrings.animate, typings.rax.raxStrings.circle, typings.rax.raxStrings.clipPath */ Any,
       props: Unit,
       children: RaxNode*
     ): RaxSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RaxSVGElement]
@@ -137,17 +137,17 @@ object global {
     inline def createElement_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: RaxNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
     
     inline def createElement_PT_DetailedRaxHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114, starting with typings.rax.raxStrings.a_, typings.rax.raxStrings.abbr, typings.rax.raxStrings.address */ Any,
       props: ClassAttributes[T] & P,
       children: RaxNode*
     ): DetailedRaxHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedRaxHTMLElement[P, T]]
     inline def createElement_PT_DetailedRaxHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114, starting with typings.rax.raxStrings.a_, typings.rax.raxStrings.abbr, typings.rax.raxStrings.address */ Any,
       props: Null,
       children: RaxNode*
     ): DetailedRaxHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedRaxHTMLElement[P, T]]
     inline def createElement_PT_DetailedRaxHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114, starting with typings.rax.raxStrings.a_, typings.rax.raxStrings.abbr, typings.rax.raxStrings.address */ Any,
       props: Unit,
       children: RaxNode*
     ): DetailedRaxHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedRaxHTMLElement[P, T]]

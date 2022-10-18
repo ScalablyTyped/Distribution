@@ -8,7 +8,7 @@ import typings.nivoChord.anon.Center
 import typings.nivoChord.anon.Chord
 import typings.nivoChord.anon.Colors
 import typings.nivoChord.anon.CurrentArc
-import typings.nivoChord.anon.EndAngle
+import typings.nivoChord.anon.GetColor
 import typings.nivoChord.anon.Height
 import typings.nivoChord.anon.OmitArcDatumlabelcolor
 import typings.nivoChord.anon.OmitChordCanvasPropswidth
@@ -17,18 +17,18 @@ import typings.nivoChord.anon.PadAngle
 import typings.nivoChord.anon.PartialAnimationConfig
 import typings.nivoChord.anon.Radius
 import typings.nivoChord.anon.RibbonGenerator
-import typings.nivoChord.typesMod.ArcDatum
-import typings.nivoChord.typesMod.ArcTooltipComponent
-import typings.nivoChord.typesMod.ChordCanvasProps
-import typings.nivoChord.typesMod.ChordSvgProps
-import typings.nivoChord.typesMod.CustomLayerProps
-import typings.nivoChord.typesMod.LayerId
-import typings.nivoChord.typesMod.RibbonTooltipComponentProps
-import typings.nivoColors.inheritedColorMod.InheritedColorConfig
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoChord.distTypesTypesMod.ArcDatum
+import typings.nivoChord.distTypesTypesMod.ArcTooltipComponent
+import typings.nivoChord.distTypesTypesMod.ChordCanvasProps
+import typings.nivoChord.distTypesTypesMod.ChordSvgProps
+import typings.nivoChord.distTypesTypesMod.CustomLayerProps
+import typings.nivoChord.distTypesTypesMod.LayerId
+import typings.nivoChord.distTypesTypesMod.RibbonTooltipComponentProps
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.mod.CssMixBlendMode
 import typings.nivoCore.mod.PropertyAccessor
-import typings.nivoLegends.typesTypesMod.LegendProps
+import typings.nivoLegends.distTypesTypesMod.LegendProps
 import typings.react.mod.MemoExoticComponent
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -343,11 +343,11 @@ object mod {
     inline def role_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("role")(x.asInstanceOf[js.Any])
   }
   
-  inline def computeArcPath(hasStartAngleEndAngleArcGenerator: EndAngle): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeArcPath")(hasStartAngleEndAngleArcGenerator.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def computeArcPath(hasStartAngleEndAngleArcGenerator: ArcGenerator): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeArcPath")(hasStartAngleEndAngleArcGenerator.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def computeChordArcsAndRibbons(hasChordDataKeysGetLabelFormatValueGetColor: Chord): Arcs = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordArcsAndRibbons")(hasChordDataKeysGetLabelFormatValueGetColor.asInstanceOf[js.Any]).asInstanceOf[Arcs]
   
-  inline def computeChordGenerators(hasWidthHeightInnerRadiusRatioInnerRadiusOffset: Height): ArcGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordGenerators")(hasWidthHeightInnerRadiusRatioInnerRadiusOffset.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator]
+  inline def computeChordGenerators(hasWidthHeightInnerRadiusRatioInnerRadiusOffset: Height): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordGenerators")(hasWidthHeightInnerRadiusRatioInnerRadiusOffset.asInstanceOf[js.Any]).asInstanceOf[Center]
   
   inline def computeChordLayout(hasPadAngle: PadAngle): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordLayout")(hasPadAngle.asInstanceOf[js.Any]).asInstanceOf[ChordLayout]
   
@@ -501,11 +501,11 @@ object mod {
     inline def role_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("role")(x.asInstanceOf[js.Any])
   }
   
-  inline def useChord(hasDataKeysLabelValueFormatWidthHeightInnerRadiusRatioInnerRadiusOffsetPadAngleColors: Colors): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("useChord")(hasDataKeysLabelValueFormatWidthHeightInnerRadiusRatioInnerRadiusOffsetPadAngleColors.asInstanceOf[js.Any]).asInstanceOf[Center]
+  inline def useChord(hasDataKeysLabelValueFormatWidthHeightInnerRadiusRatioInnerRadiusOffsetPadAngleColors: Colors): GetColor = ^.asInstanceOf[js.Dynamic].applyDynamic("useChord")(hasDataKeysLabelValueFormatWidthHeightInnerRadiusRatioInnerRadiusOffsetPadAngleColors.asInstanceOf[js.Any]).asInstanceOf[GetColor]
   
   inline def useChordArcsAndRibbons(hasChordGetColorKeysDataGetLabelFormatValue: Chord): Arcs = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordArcsAndRibbons")(hasChordGetColorKeysDataGetLabelFormatValue.asInstanceOf[js.Any]).asInstanceOf[Arcs]
   
-  inline def useChordGenerators(hasWidthHeightInnerRadiusRatioInnerRadiusOffset: Height): ArcGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordGenerators")(hasWidthHeightInnerRadiusRatioInnerRadiusOffset.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator]
+  inline def useChordGenerators(hasWidthHeightInnerRadiusRatioInnerRadiusOffset: Height): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordGenerators")(hasWidthHeightInnerRadiusRatioInnerRadiusOffset.asInstanceOf[js.Any]).asInstanceOf[Center]
   
   inline def useChordLayout(hasPadAngle: PadAngle): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordLayout")(hasPadAngle.asInstanceOf[js.Any]).asInstanceOf[ChordLayout]
   

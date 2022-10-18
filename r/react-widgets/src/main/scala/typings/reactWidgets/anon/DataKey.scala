@@ -1,6 +1,6 @@
 package typings.reactWidgets.anon
 
-import typings.reactWidgets.typesMod.Value
+import typings.reactWidgets.cjsTypesMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

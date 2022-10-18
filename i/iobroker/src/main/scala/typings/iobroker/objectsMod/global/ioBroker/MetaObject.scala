@@ -6,12 +6,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.iobroker.objectsMod.global.ioBroker._ObjectIdToObjectType because Already inherited */ trait MetaObject
+trait MetaObject
   extends StObject
      with BaseObject
-     with AnyObject
-     with _InferGetObjectViewItemType[Any, Any] {
+     with AnyObject {
   
   @JSName("common")
   var common_MetaObject: MetaCommon

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Pair")
 @js.native
 open class Pair ()
-  extends typings.blackEngine.pairMod.Pair
+  extends typings.blackEngine.physicsArcadePairsPairMod.Pair
 /* static members */
 object Pair {
   
@@ -15,5 +15,8 @@ object Pair {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def __id(a: typings.blackEngine.colliderMod.Collider, b: typings.blackEngine.colliderMod.Collider): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__id")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def __id(
+    a: typings.blackEngine.collidersColliderMod.Collider,
+    b: typings.blackEngine.collidersColliderMod.Collider
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__id")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
 }

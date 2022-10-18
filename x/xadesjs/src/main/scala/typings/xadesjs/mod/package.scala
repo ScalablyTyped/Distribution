@@ -2,7 +2,7 @@ package typings.xadesjs.mod
 
 import typings.std.Document
 import typings.xadesjs.mod.^
-import typings.xmlCore.utilsMod.SelectNodes
+import typings.xmlCore.distTypesUtilsMod.SelectNodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

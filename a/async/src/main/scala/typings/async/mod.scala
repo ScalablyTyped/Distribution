@@ -1,7 +1,6 @@
 package typings.async
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.async.anon.Arity
 import typings.async.anon.Error
 import typings.std.IterableIterator
@@ -834,9 +833,15 @@ object mod {
   
   type AsyncAutoTaskFunctionWithoutDependencies[R1, E] = js.Function1[/* cb */ (AsyncResultCallback[R1, E]) | ErrorCallback[E], Unit]
   
-  type AsyncAutoTasks[R /* <: Dictionary[Any] */, E] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof R ]: async.async.AsyncAutoTask<R[K], R, E>}
-    */ typings.async.asyncStrings.AsyncAutoTasks & TopLevel[R]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof R ]: async.async.AsyncAutoTask<R[K], R, E>}
+    }}}
+    */
+  @js.native
+  trait AsyncAutoTasks[R /* <: Dictionary[Any] */, E] extends StObject
   
   type AsyncBooleanIterator[T, E] = js.Function2[/* item */ T, /* callback */ AsyncBooleanResultCallback[E], Unit]
   

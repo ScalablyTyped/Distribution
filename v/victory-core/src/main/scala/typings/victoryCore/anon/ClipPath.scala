@@ -3,9 +3,9 @@ package typings.victoryCore.anon
 import typings.propTypes.mod.ReactElementLike
 import typings.propTypes.mod.Requireable
 import typings.react.mod.Validator
-import typings.victoryCore.callbacksMod.NumberOrCallback
-import typings.victoryCore.callbacksMod.StringOrCallback
-import typings.victoryCore.victoryLabelMod.OriginType
+import typings.victoryCore.libTypesCallbacksMod.NumberOrCallback
+import typings.victoryCore.libTypesCallbacksMod.StringOrCallback
+import typings.victoryCore.libVictoryLabelVictoryLabelMod.OriginType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,23 +22,23 @@ trait ClipPath extends StObject {
   
   var data: js.UndefOr[Validator[Any]] = js.undefined
   
+  var datum: Requireable[Any]
+  
   var desc: js.UndefOr[Validator[js.UndefOr[String | js.Function | Null]]] = js.undefined
   
   var disableInlineStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
   var events: js.UndefOr[Validator[js.UndefOr[js.Object | Null]]] = js.undefined
   
-  var height: Requireable[Double]
-  
   var id: js.UndefOr[Validator[js.UndefOr[String | Double | js.Function | Null]]] = js.undefined
   
   var index: js.UndefOr[Validator[js.UndefOr[String | Double | Null]]] = js.undefined
   
+  var lineComponent: Requireable[ReactElementLike]
+  
   var origin: js.UndefOr[Validator[js.UndefOr[OriginType | Null]]] = js.undefined
   
   var polar: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  
-  var rectComponent: Requireable[ReactElementLike]
   
   var role: js.UndefOr[Validator[js.UndefOr[String | Null]]] = js.undefined
   
@@ -52,22 +52,25 @@ trait ClipPath extends StObject {
   
   var transform: js.UndefOr[Validator[js.UndefOr[String | Null]]] = js.undefined
   
-  var width: Requireable[Double]
+  var x1: Requireable[Double]
   
-  var x: Requireable[Double]
+  var x2: Requireable[Double]
   
-  var y: Requireable[Double]
+  var y1: Requireable[Double]
+  
+  var y2: Requireable[Double]
 }
 object ClipPath {
   
   inline def apply(
-    height: Requireable[Double],
-    rectComponent: Requireable[ReactElementLike],
-    width: Requireable[Double],
-    x: Requireable[Double],
-    y: Requireable[Double]
+    datum: Requireable[Any],
+    lineComponent: Requireable[ReactElementLike],
+    x1: Requireable[Double],
+    x2: Requireable[Double],
+    y1: Requireable[Double],
+    y2: Requireable[Double]
   ): ClipPath = {
-    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], rectComponent = rectComponent.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(datum = datum.asInstanceOf[js.Any], lineComponent = lineComponent.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClipPath]
   }
   
@@ -93,6 +96,8 @@ object ClipPath {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
+    inline def setDatum(value: Requireable[Any]): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+    
     inline def setDesc(value: Validator[js.UndefOr[String | js.Function | Null]]): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
@@ -105,8 +110,6 @@ object ClipPath {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setHeight(value: Requireable[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-    
     inline def setId(value: Validator[js.UndefOr[String | Double | js.Function | Null]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -115,6 +118,8 @@ object ClipPath {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
+    inline def setLineComponent(value: Requireable[ReactElementLike]): Self = StObject.set(x, "lineComponent", value.asInstanceOf[js.Any])
+    
     inline def setOrigin(value: Validator[js.UndefOr[OriginType | Null]]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
@@ -122,8 +127,6 @@ object ClipPath {
     inline def setPolar(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
     
     inline def setPolarUndefined: Self = StObject.set(x, "polar", js.undefined)
-    
-    inline def setRectComponent(value: Requireable[ReactElementLike]): Self = StObject.set(x, "rectComponent", value.asInstanceOf[js.Any])
     
     inline def setRole(value: Validator[js.UndefOr[String | Null]]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -149,10 +152,12 @@ object ClipPath {
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setWidth(value: Requireable[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setX1(value: Requireable[Double]): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
-    inline def setX(value: Requireable[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX2(value: Requireable[Double]): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
-    inline def setY(value: Requireable[Double]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY1(value: Requireable[Double]): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    
+    inline def setY2(value: Requireable[Double]): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
   }
 }

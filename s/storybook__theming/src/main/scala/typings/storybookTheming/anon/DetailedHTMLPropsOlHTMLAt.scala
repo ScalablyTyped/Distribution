@@ -40,9 +40,10 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLOListElement
-import typings.storybookTheming.emotionReactNodeModulesemotionSerializeTypesIndexMod.Interpolation
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.Interpolation
 import typings.storybookTheming.storybookThemingStrings.A
 import typings.storybookTheming.storybookThemingStrings.I
+import typings.storybookTheming.storybookThemingStrings.`1`
 import typings.storybookTheming.storybookThemingStrings.`additions removals`
 import typings.storybookTheming.storybookThemingStrings.`additions text`
 import typings.storybookTheming.storybookThemingStrings.`inline`
@@ -359,7 +360,9 @@ trait DetailedHTMLPropsOlHTMLAt extends StObject {
   
   var contextMenu: js.UndefOr[String] = js.undefined
   
-  var css: js.UndefOr[Interpolation[typings.storybookTheming.emotionReactTypesIndexMod.Theme]] = js.undefined
+  var css: js.UndefOr[
+    Interpolation[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme]
+  ] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
@@ -623,7 +626,7 @@ trait DetailedHTMLPropsOlHTMLAt extends StObject {
   
   var translate: js.UndefOr[yes | no] = js.undefined
   
-  var `type`: js.UndefOr[typings.storybookTheming.storybookThemingStrings.`1` | a_ | A | i_ | I] = js.undefined
+  var `type`: js.UndefOr[`1` | a_ | A | i_ | I] = js.undefined
   
   var typeof: js.UndefOr[String] = js.undefined
   
@@ -874,7 +877,9 @@ object DetailedHTMLPropsOlHTMLAt {
     
     inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
-    inline def setCss(value: Interpolation[typings.storybookTheming.emotionReactTypesIndexMod.Theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(
+      value: Interpolation[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme]
+    ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssNull: Self = StObject.set(x, "css", null)
     
@@ -1352,7 +1357,7 @@ object DetailedHTMLPropsOlHTMLAt {
     
     inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
-    inline def setType(value: typings.storybookTheming.storybookThemingStrings.`1` | a_ | A | i_ | I): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `1` | a_ | A | i_ | I): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

@@ -1,8 +1,8 @@
 package typings.blueprintjsCore.anon
 
-import typings.blueprintjsCore.boundaryMod.Boundary
-import typings.blueprintjsCore.breadcrumbMod.BreadcrumbProps
-import typings.blueprintjsCore.popoverMod.IPopoverProps
+import typings.blueprintjsCore.libEsmCommonBoundaryMod.Boundary
+import typings.blueprintjsCore.libEsmComponentsBreadcrumbsBreadcrumbMod.BreadcrumbProps
+import typings.blueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

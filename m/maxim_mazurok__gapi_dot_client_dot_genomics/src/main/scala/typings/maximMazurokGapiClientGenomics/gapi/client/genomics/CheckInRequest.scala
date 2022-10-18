@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientGenomics.gapi.client.genomics
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait CheckInRequest extends StObject {
   
   /** A workflow specific event occurred. */
   var event: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.CheckInRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** A list of timestamped events. */
@@ -43,9 +40,7 @@ object CheckInRequest {
     inline def setDeadlineExpiredUndefined: Self = StObject.set(x, "deadlineExpired", js.undefined)
     
     inline def setEvent(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.CheckInRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)

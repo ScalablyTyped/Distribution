@@ -8,8 +8,6 @@ trait Input extends StObject {
   
   var attr: T
   
-  var device: Unit
-  
   var input: Unit
   
   var name: String
@@ -18,16 +16,14 @@ trait Input extends StObject {
 }
 object Input {
   
-  inline def apply(attr: T, device: Unit, input: Unit, name: String, op: String): Input = {
-    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any])
+  inline def apply(attr: T, input: Unit, name: String, op: String): Input = {
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any])
     __obj.asInstanceOf[Input]
   }
   
   extension [Self <: Input](x: Self) {
     
     inline def setAttr(value: T): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
-    
-    inline def setDevice(value: Unit): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     inline def setInput(value: Unit): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

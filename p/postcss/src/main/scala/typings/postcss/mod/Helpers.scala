@@ -24,11 +24,11 @@ trait Helpers
     * @param plugins PostCSS plugins.
     * @return Processor to process multiple CSS.
     */
-  def postcss(): typings.postcss.processorMod.default = js.native
-  def postcss(plugins: AcceptedPlugin*): typings.postcss.processorMod.default = js.native
-  def postcss(plugins: js.Array[AcceptedPlugin]): typings.postcss.processorMod.default = js.native
+  def postcss(): typings.postcss.libProcessorMod.default = js.native
+  def postcss(plugins: AcceptedPlugin*): typings.postcss.libProcessorMod.default = js.native
+  def postcss(plugins: js.Array[AcceptedPlugin]): typings.postcss.libProcessorMod.default = js.native
   @JSName("postcss")
   var postcss_Original: Postcss = js.native
   
-  var result: typings.postcss.resultMod.default = js.native
+  var result: typings.postcss.libResultMod.default = js.native
 }

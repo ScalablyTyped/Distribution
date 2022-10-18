@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsClockCircleTwoToneMod.ClockCircleTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clockCircleTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/ClockCircleTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/ClockCircleTwoTone", JSImport.Default)
   @js.native
   val default: ClockCircleTwoToneIconType = js.native
-  
-  @js.native
-  trait ClockCircleTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_ClockCircleTwoToneIconType: String = js.native
-  }
   
   type _To = ClockCircleTwoToneIconType
   

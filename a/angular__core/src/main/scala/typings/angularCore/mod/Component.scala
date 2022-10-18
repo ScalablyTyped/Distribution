@@ -56,12 +56,12 @@ trait Component
   /**
     * The imports property specifies the standalone component's template dependencies — those
     * directives, components, and pipes that can be used within its template. Standalone components
-    * can import other standalone components, directives and pipes as well as existing NgModules.
+    * can import other standalone components, directives, and pipes as well as existing NgModules.
     *
     * This property is only available for standalone components - specifying it for components
     * declared in an NgModule generates a compilation error.
     *
-    * More information about standalone components, directives and pipes can be found in [this
+    * More information about standalone components, directives, and pipes can be found in [this
     * guide](guide/standalone-components).
     *
     * @developerPreview
@@ -97,7 +97,7 @@ trait Component
     * This property is only available for standalone components - specifying it for components
     * declared in an NgModule generates a compilation error.
     *
-    * More information about standalone components, directives and pipes can be found in [this
+    * More information about standalone components, directives, and pipes can be found in [this
     * guide](guide/standalone-components).
     */
   var schemas: js.UndefOr[js.Array[SchemaMetadata]] = js.undefined

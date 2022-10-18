@@ -2,10 +2,10 @@ package typings.tensorflowTfjsNode.mod
 
 import typings.std.HTMLSourceElement
 import typings.std.HTMLVideoElement
+import typings.tensorflowTfjsCore.distTestUtilMod.DoneFn
 import typings.tensorflowTfjsCore.distTypesMod.RecursiveArray
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
-import typings.tensorflowTfjsCore.testUtilMod.DoneFn
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeDoubles.`0.001`
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeDoubles.`0.1`
 import org.scalablytyped.runtime.StObject

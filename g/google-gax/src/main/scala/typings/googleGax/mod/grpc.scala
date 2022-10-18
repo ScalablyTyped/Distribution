@@ -1,44 +1,42 @@
 package typings.googleGax.mod
 
 import typings.googleGax.googleGaxBooleans.`true`
-import typings.grpcGrpcJs.adminMod.GetHandlers
-import typings.grpcGrpcJs.adminMod.GetServiceDefinition
 import typings.grpcGrpcJs.anon.PartialChannelControlHelp
 import typings.grpcGrpcJs.anon.PartialConsole
 import typings.grpcGrpcJs.anon.PartialFailurePercentageE
 import typings.grpcGrpcJs.anon.PartialSuccessRateEjectio
-import typings.grpcGrpcJs.backoffTimeoutMod.BackoffOptions
-import typings.grpcGrpcJs.callCredentialsMod.CallMetadataGenerator
-import typings.grpcGrpcJs.callCredentialsMod.OAuth2Client
-import typings.grpcGrpcJs.callStreamMod.StatusObject
-import typings.grpcGrpcJs.channelCredentialsMod.VerifyOptions
-import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
-import typings.grpcGrpcJs.clientInterceptorsMod.InterceptingCallInterface
-import typings.grpcGrpcJs.clientInterceptorsMod.Requester
-import typings.grpcGrpcJs.clientMod.ClientOptions
-import typings.grpcGrpcJs.compressionAlgorithmsMod.CompressionAlgorithms
-import typings.grpcGrpcJs.connectivityStateMod.ConnectivityState
-import typings.grpcGrpcJs.constantsMod.LogVerbosity
-import typings.grpcGrpcJs.constantsMod.Propagate
-import typings.grpcGrpcJs.durationMod.Duration
-import typings.grpcGrpcJs.filterMod.Filter
-import typings.grpcGrpcJs.filterMod.FilterFactory
-import typings.grpcGrpcJs.loadBalancerMod.ChannelControlHelper
-import typings.grpcGrpcJs.loadBalancerMod.LoadBalancer
-import typings.grpcGrpcJs.loadBalancerMod.LoadBalancerConstructor
-import typings.grpcGrpcJs.loadBalancerMod.LoadBalancingConfig
-import typings.grpcGrpcJs.loadBalancerMod.LoadBalancingConfigConstructor
-import typings.grpcGrpcJs.makeClientMod.GrpcObject
-import typings.grpcGrpcJs.makeClientMod.PackageDefinition
-import typings.grpcGrpcJs.makeClientMod.ServiceClientConstructor
-import typings.grpcGrpcJs.metadataMod.MetadataOptions
-import typings.grpcGrpcJs.resolverMod.ResolverConstructor
-import typings.grpcGrpcJs.serverCredentialsMod.KeyCertPair
-import typings.grpcGrpcJs.subchannelAddressMod.SubchannelAddress
-import typings.grpcGrpcJs.subchannelInterfaceMod.SubchannelInterface
-import typings.grpcGrpcJs.uriParserMod.GrpcUri
-import typings.grpcGrpcJs.v1ChannelzMod.ChannelzDefinition
-import typings.grpcGrpcJs.v1ChannelzMod.ChannelzHandlers
+import typings.grpcGrpcJs.buildSrcAdminMod.GetHandlers
+import typings.grpcGrpcJs.buildSrcAdminMod.GetServiceDefinition
+import typings.grpcGrpcJs.buildSrcBackoffTimeoutMod.BackoffOptions
+import typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallMetadataGenerator
+import typings.grpcGrpcJs.buildSrcCallCredentialsMod.OAuth2Client
+import typings.grpcGrpcJs.buildSrcCallStreamMod.StatusObject
+import typings.grpcGrpcJs.buildSrcChannelCredentialsMod.VerifyOptions
+import typings.grpcGrpcJs.buildSrcChannelOptionsMod.ChannelOptions
+import typings.grpcGrpcJs.buildSrcClientInterceptorsMod.InterceptingCallInterface
+import typings.grpcGrpcJs.buildSrcClientInterceptorsMod.Requester
+import typings.grpcGrpcJs.buildSrcClientMod.ClientOptions
+import typings.grpcGrpcJs.buildSrcCompressionAlgorithmsMod.CompressionAlgorithms
+import typings.grpcGrpcJs.buildSrcConnectivityStateMod.ConnectivityState
+import typings.grpcGrpcJs.buildSrcConstantsMod.LogVerbosity
+import typings.grpcGrpcJs.buildSrcConstantsMod.Propagate
+import typings.grpcGrpcJs.buildSrcDurationMod.Duration
+import typings.grpcGrpcJs.buildSrcFilterMod.Filter
+import typings.grpcGrpcJs.buildSrcFilterMod.FilterFactory
+import typings.grpcGrpcJs.buildSrcLoadBalancerMod.ChannelControlHelper
+import typings.grpcGrpcJs.buildSrcLoadBalancerMod.LoadBalancer
+import typings.grpcGrpcJs.buildSrcLoadBalancerMod.LoadBalancerConstructor
+import typings.grpcGrpcJs.buildSrcLoadBalancerMod.LoadBalancingConfig
+import typings.grpcGrpcJs.buildSrcLoadBalancerMod.LoadBalancingConfigConstructor
+import typings.grpcGrpcJs.buildSrcMakeClientMod.GrpcObject
+import typings.grpcGrpcJs.buildSrcMakeClientMod.PackageDefinition
+import typings.grpcGrpcJs.buildSrcMakeClientMod.ServiceClientConstructor
+import typings.grpcGrpcJs.buildSrcMetadataMod.MetadataOptions
+import typings.grpcGrpcJs.buildSrcResolverMod.ResolverConstructor
+import typings.grpcGrpcJs.buildSrcServerCredentialsMod.KeyCertPair
+import typings.grpcGrpcJs.buildSrcSubchannelAddressMod.SubchannelAddress
+import typings.grpcGrpcJs.buildSrcSubchannelInterfaceMod.SubchannelInterface
+import typings.grpcGrpcJs.buildSrcUriParserMod.GrpcUri
 import typings.node.bufferMod.global.Buffer
 import typings.node.http2Mod.IncomingHttpHeaders
 import typings.node.tlsMod.SecureContext
@@ -52,9 +50,9 @@ object grpc {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("google-gax", "grpc.CallCredentials")
+  /* note: abstract class */ @JSImport("google-gax", "grpc.CallCredentials")
   @js.native
-  abstract class CallCredentials ()
+  open class CallCredentials ()
     extends typings.grpcGrpcJs.mod.CallCredentials
   /* static members */
   object CallCredentials {
@@ -63,14 +61,14 @@ object grpc {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createEmpty(): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmpty")().asInstanceOf[typings.grpcGrpcJs.callCredentialsMod.CallCredentials]
+    inline def createEmpty(): typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmpty")().asInstanceOf[typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials]
     
     /**
       * Create a gRPC credential from a Google credential object.
       * @param googleCredentials The authentication client to use.
       * @return The resulting CallCredentials object.
       */
-    inline def createFromGoogleCredential(googleCredentials: OAuth2Client): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromGoogleCredential")(googleCredentials.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.callCredentialsMod.CallCredentials]
+    inline def createFromGoogleCredential(googleCredentials: OAuth2Client): typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromGoogleCredential")(googleCredentials.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials]
     
     /**
       * Creates a new CallCredentials object from a given function that generates
@@ -79,7 +77,7 @@ object grpc {
       * generates a Metadata object based on these options, which is passed back
       * to the caller via a supplied (err, metadata) callback.
       */
-    inline def createFromMetadataGenerator(metadataGenerator: CallMetadataGenerator): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromMetadataGenerator")(metadataGenerator.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.callCredentialsMod.CallCredentials]
+    inline def createFromMetadataGenerator(metadataGenerator: CallMetadataGenerator): typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromMetadataGenerator")(metadataGenerator.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials]
   }
   
   @JSImport("google-gax", "grpc.Channel")
@@ -88,16 +86,16 @@ object grpc {
     extends typings.grpcGrpcJs.mod.Channel {
     def this(
       target: String,
-      credentials: typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials,
+      credentials: typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials,
       options: ChannelOptions
     ) = this()
   }
   
-  @JSImport("google-gax", "grpc.ChannelCredentials")
+  /* note: abstract class */ @JSImport("google-gax", "grpc.ChannelCredentials")
   @js.native
-  /* protected */ abstract class ChannelCredentials ()
+  /* protected */ open class ChannelCredentials ()
     extends typings.grpcGrpcJs.mod.ChannelCredentials {
-    /* protected */ def this(callCredentials: typings.grpcGrpcJs.callCredentialsMod.CallCredentials) = this()
+    /* protected */ def this(callCredentials: typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials) = this()
   }
   /* static members */
   object ChannelCredentials {
@@ -116,13 +114,13 @@ object grpc {
       * @param secureContext The return value of tls.createSecureContext()
       * @param verifyOptions Additional options to modify certificate verification
       */
-    inline def createFromSecureContext(secureContext: SecureContext): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSecureContext")(secureContext.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
-    inline def createFromSecureContext(secureContext: SecureContext, verifyOptions: VerifyOptions): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromSecureContext")(secureContext.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
+    inline def createFromSecureContext(secureContext: SecureContext): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSecureContext")(secureContext.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials]
+    inline def createFromSecureContext(secureContext: SecureContext, verifyOptions: VerifyOptions): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromSecureContext")(secureContext.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials]
     
     /**
       * Return a new ChannelCredentials instance with no credentials.
       */
-    inline def createInsecure(): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
+    inline def createInsecure(): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials]
     
     /**
       * Return a new ChannelCredentials instance with a given set of credentials.
@@ -138,17 +136,17 @@ object grpc {
       privateKey: js.UndefOr[Buffer | Null],
       certChain: js.UndefOr[Buffer | Null],
       verifyOptions: js.UndefOr[VerifyOptions]
-    ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
+    ): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials]
   }
   
   @JSImport("google-gax", "grpc.Client")
   @js.native
   open class Client protected ()
     extends typings.grpcGrpcJs.mod.Client {
-    def this(address: String, credentials: typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials) = this()
+    def this(address: String, credentials: typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials) = this()
     def this(
       address: String,
-      credentials: typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials,
+      credentials: typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials,
       options: ClientOptions
     ) = this()
   }
@@ -191,7 +189,7 @@ object grpc {
       * object.
       * @param headers An IncomingHttpHeaders object.
       */
-    inline def fromHttp2Headers(headers: IncomingHttpHeaders): typings.grpcGrpcJs.metadataMod.Metadata = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHttp2Headers")(headers.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.metadataMod.Metadata]
+    inline def fromHttp2Headers(headers: IncomingHttpHeaders): typings.grpcGrpcJs.buildSrcMetadataMod.Metadata = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHttp2Headers")(headers.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.buildSrcMetadataMod.Metadata]
   }
   
   @JSImport("google-gax", "grpc.RequesterBuilder")
@@ -206,9 +204,9 @@ object grpc {
     def this(options: ChannelOptions) = this()
   }
   
-  @JSImport("google-gax", "grpc.ServerCredentials")
+  /* note: abstract class */ @JSImport("google-gax", "grpc.ServerCredentials")
   @js.native
-  abstract class ServerCredentials ()
+  open class ServerCredentials ()
     extends typings.grpcGrpcJs.mod.ServerCredentials
   /* static members */
   object ServerCredentials {
@@ -217,12 +215,12 @@ object grpc {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createInsecure(): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
+    inline def createInsecure(): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials]
     
-    inline def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
-    inline def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any], checkClientCertificate.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
-    inline def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
-    inline def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any], checkClientCertificate.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
+    inline def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials]
+    inline def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any], checkClientCertificate.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials]
+    inline def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials]
+    inline def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any], checkClientCertificate.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials]
   }
   
   @JSImport("google-gax", "grpc.StatusBuilder")
@@ -230,9 +228,9 @@ object grpc {
   open class StatusBuilder ()
     extends typings.grpcGrpcJs.mod.StatusBuilder
   
-  inline def addAdminServicesToServer(server: typings.grpcGrpcJs.srcServerMod.Server): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAdminServicesToServer")(server.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addAdminServicesToServer(server: typings.grpcGrpcJs.buildSrcServerMod.Server): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAdminServicesToServer")(server.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def closeClient(client: typings.grpcGrpcJs.clientMod.Client): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeClient")(client.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def closeClient(client: typings.grpcGrpcJs.buildSrcClientMod.Client): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeClient")(client.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("google-gax", "grpc.compressionAlgorithms")
   @js.native
@@ -241,11 +239,11 @@ object grpc {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[CompressionAlgorithms & Double] = js.native
     
-    /* 1 */ val deflate: typings.grpcGrpcJs.compressionAlgorithmsMod.CompressionAlgorithms.deflate & Double = js.native
+    /* 1 */ val deflate: typings.grpcGrpcJs.buildSrcCompressionAlgorithmsMod.CompressionAlgorithms.deflate & Double = js.native
     
-    /* 2 */ val gzip: typings.grpcGrpcJs.compressionAlgorithmsMod.CompressionAlgorithms.gzip & Double = js.native
+    /* 2 */ val gzip: typings.grpcGrpcJs.buildSrcCompressionAlgorithmsMod.CompressionAlgorithms.gzip & Double = js.native
     
-    /* 0 */ val identity: typings.grpcGrpcJs.compressionAlgorithmsMod.CompressionAlgorithms.identity & Double = js.native
+    /* 0 */ val identity: typings.grpcGrpcJs.buildSrcCompressionAlgorithmsMod.CompressionAlgorithms.identity & Double = js.native
   }
   
   @JSImport("google-gax", "grpc.connectivityState")
@@ -255,15 +253,15 @@ object grpc {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ConnectivityState & Double] = js.native
     
-    /* 1 */ val CONNECTING: typings.grpcGrpcJs.connectivityStateMod.ConnectivityState.CONNECTING & Double = js.native
+    /* 1 */ val CONNECTING: typings.grpcGrpcJs.buildSrcConnectivityStateMod.ConnectivityState.CONNECTING & Double = js.native
     
-    /* 0 */ val IDLE: typings.grpcGrpcJs.connectivityStateMod.ConnectivityState.IDLE & Double = js.native
+    /* 0 */ val IDLE: typings.grpcGrpcJs.buildSrcConnectivityStateMod.ConnectivityState.IDLE & Double = js.native
     
-    /* 2 */ val READY: typings.grpcGrpcJs.connectivityStateMod.ConnectivityState.READY & Double = js.native
+    /* 2 */ val READY: typings.grpcGrpcJs.buildSrcConnectivityStateMod.ConnectivityState.READY & Double = js.native
     
-    /* 4 */ val SHUTDOWN: typings.grpcGrpcJs.connectivityStateMod.ConnectivityState.SHUTDOWN & Double = js.native
+    /* 4 */ val SHUTDOWN: typings.grpcGrpcJs.buildSrcConnectivityStateMod.ConnectivityState.SHUTDOWN & Double = js.native
     
-    /* 3 */ val TRANSIENT_FAILURE: typings.grpcGrpcJs.connectivityStateMod.ConnectivityState.TRANSIENT_FAILURE & Double = js.native
+    /* 3 */ val TRANSIENT_FAILURE: typings.grpcGrpcJs.buildSrcConnectivityStateMod.ConnectivityState.TRANSIENT_FAILURE & Double = js.native
   }
   
   object credentials {
@@ -280,9 +278,9 @@ object grpc {
       * @return The resulting CallCredentials object.
       */
     inline def combineCallCredentials(
-      first: typings.grpcGrpcJs.callCredentialsMod.CallCredentials,
-      additional: typings.grpcGrpcJs.callCredentialsMod.CallCredentials*
-    ): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineCallCredentials")(scala.List(first.asInstanceOf[js.Any]).`++`(additional.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.grpcGrpcJs.callCredentialsMod.CallCredentials]
+      first: typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials,
+      additional: typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials*
+    ): typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineCallCredentials")(scala.List(first.asInstanceOf[js.Any]).`++`(additional.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials]
     
     /**
       * Combine a ChannelCredentials with any number of CallCredentials into a
@@ -292,9 +290,9 @@ object grpc {
       * @return The resulting ChannelCredentials object.
       */
     inline def combineChannelCredentials(
-      channelCredentials: typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials,
-      callCredentials: typings.grpcGrpcJs.callCredentialsMod.CallCredentials*
-    ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineChannelCredentials")(scala.List(channelCredentials.asInstanceOf[js.Any]).`++`(callCredentials.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
+      channelCredentials: typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials,
+      callCredentials: typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials*
+    ): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineChannelCredentials")(scala.List(channelCredentials.asInstanceOf[js.Any]).`++`(callCredentials.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials]
     
     @JSImport("google-gax", "grpc.credentials.createEmpty")
     @js.native
@@ -353,14 +351,14 @@ object grpc {
       def this(callback: js.Function0[Unit], options: BackoffOptions) = this()
     }
     
-    @JSImport("google-gax", "grpc.experimental.BaseFilter")
+    /* note: abstract class */ @JSImport("google-gax", "grpc.experimental.BaseFilter")
     @js.native
-    abstract class BaseFilter ()
+    open class BaseFilter ()
       extends typings.grpcGrpcJs.mod.experimental.BaseFilter
     
-    @JSImport("google-gax", "grpc.experimental.BaseSubchannelWrapper")
+    /* note: abstract class */ @JSImport("google-gax", "grpc.experimental.BaseSubchannelWrapper")
     @js.native
-    abstract class BaseSubchannelWrapper protected ()
+    open class BaseSubchannelWrapper protected ()
       extends typings.grpcGrpcJs.mod.experimental.BaseSubchannelWrapper {
       def this(child: SubchannelInterface) = this()
     }
@@ -400,7 +398,7 @@ object grpc {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def createFromJson(obj: Any): typings.grpcGrpcJs.loadBalancerOutlierDetectionMod.OutlierDetectionLoadBalancingConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromJson")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.loadBalancerOutlierDetectionMod.OutlierDetectionLoadBalancingConfig]
+      inline def createFromJson(obj: Any): typings.grpcGrpcJs.buildSrcLoadBalancerOutlierDetectionMod.OutlierDetectionLoadBalancingConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromJson")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.buildSrcLoadBalancerOutlierDetectionMod.OutlierDetectionLoadBalancingConfig]
     }
     
     @JSImport("google-gax", "grpc.experimental.PickResultType")
@@ -408,15 +406,15 @@ object grpc {
     object PickResultType extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.grpcGrpcJs.pickerMod.PickResultType & Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.grpcGrpcJs.buildSrcPickerMod.PickResultType & Double] = js.native
       
-      /* 0 */ val COMPLETE: typings.grpcGrpcJs.pickerMod.PickResultType.COMPLETE & Double = js.native
+      /* 0 */ val COMPLETE: typings.grpcGrpcJs.buildSrcPickerMod.PickResultType.COMPLETE & Double = js.native
       
-      /* 3 */ val DROP: typings.grpcGrpcJs.pickerMod.PickResultType.DROP & Double = js.native
+      /* 3 */ val DROP: typings.grpcGrpcJs.buildSrcPickerMod.PickResultType.DROP & Double = js.native
       
-      /* 1 */ val QUEUE: typings.grpcGrpcJs.pickerMod.PickResultType.QUEUE & Double = js.native
+      /* 1 */ val QUEUE: typings.grpcGrpcJs.buildSrcPickerMod.PickResultType.QUEUE & Double = js.native
       
-      /* 2 */ val TRANSIENT_FAILURE: typings.grpcGrpcJs.pickerMod.PickResultType.TRANSIENT_FAILURE & Double = js.native
+      /* 2 */ val TRANSIENT_FAILURE: typings.grpcGrpcJs.buildSrcPickerMod.PickResultType.TRANSIENT_FAILURE & Double = js.native
     }
     
     @JSImport("google-gax", "grpc.experimental.QueuePicker")
@@ -462,11 +460,11 @@ object grpc {
     inline def validateLoadBalancingConfig(obj: Any): LoadBalancingConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("validateLoadBalancingConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[LoadBalancingConfig]
   }
   
-  inline def getChannelzHandlers(): ChannelzHandlers = ^.asInstanceOf[js.Dynamic].applyDynamic("getChannelzHandlers")().asInstanceOf[ChannelzHandlers]
+  inline def getChannelzHandlers(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getChannelzHandlers")().asInstanceOf[Any]
   
-  inline def getChannelzServiceDefinition(): ChannelzDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("getChannelzServiceDefinition")().asInstanceOf[ChannelzDefinition]
+  inline def getChannelzServiceDefinition(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getChannelzServiceDefinition")().asInstanceOf[Any]
   
-  inline def getClientChannel(client: typings.grpcGrpcJs.clientMod.Client): typings.grpcGrpcJs.channelMod.Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientChannel")(client.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.channelMod.Channel]
+  inline def getClientChannel(client: typings.grpcGrpcJs.buildSrcClientMod.Client): typings.grpcGrpcJs.buildSrcChannelMod.Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientChannel")(client.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.buildSrcChannelMod.Channel]
   
   inline def load(filename: Any, format: Any, options: Any): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
   
@@ -481,13 +479,13 @@ object grpc {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LogVerbosity & Double] = js.native
     
-    /* 0 */ val DEBUG: typings.grpcGrpcJs.constantsMod.LogVerbosity.DEBUG & Double = js.native
+    /* 0 */ val DEBUG: typings.grpcGrpcJs.buildSrcConstantsMod.LogVerbosity.DEBUG & Double = js.native
     
-    /* 2 */ val ERROR: typings.grpcGrpcJs.constantsMod.LogVerbosity.ERROR & Double = js.native
+    /* 2 */ val ERROR: typings.grpcGrpcJs.buildSrcConstantsMod.LogVerbosity.ERROR & Double = js.native
     
-    /* 1 */ val INFO: typings.grpcGrpcJs.constantsMod.LogVerbosity.INFO & Double = js.native
+    /* 1 */ val INFO: typings.grpcGrpcJs.buildSrcConstantsMod.LogVerbosity.INFO & Double = js.native
     
-    /* 3 */ val NONE: typings.grpcGrpcJs.constantsMod.LogVerbosity.NONE & Double = js.native
+    /* 3 */ val NONE: typings.grpcGrpcJs.buildSrcConstantsMod.LogVerbosity.NONE & Double = js.native
   }
   
   inline def makeClientConstructor(methods: js.Object, serviceName: String): ServiceClientConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[ServiceClientConstructor]
@@ -503,15 +501,15 @@ object grpc {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Propagate & Double] = js.native
     
-    /* 8 */ val CANCELLATION: typings.grpcGrpcJs.constantsMod.Propagate.CANCELLATION & Double = js.native
+    /* 8 */ val CANCELLATION: typings.grpcGrpcJs.buildSrcConstantsMod.Propagate.CANCELLATION & Double = js.native
     
-    /* 2 */ val CENSUS_STATS_CONTEXT: typings.grpcGrpcJs.constantsMod.Propagate.CENSUS_STATS_CONTEXT & Double = js.native
+    /* 2 */ val CENSUS_STATS_CONTEXT: typings.grpcGrpcJs.buildSrcConstantsMod.Propagate.CENSUS_STATS_CONTEXT & Double = js.native
     
-    /* 4 */ val CENSUS_TRACING_CONTEXT: typings.grpcGrpcJs.constantsMod.Propagate.CENSUS_TRACING_CONTEXT & Double = js.native
+    /* 4 */ val CENSUS_TRACING_CONTEXT: typings.grpcGrpcJs.buildSrcConstantsMod.Propagate.CENSUS_TRACING_CONTEXT & Double = js.native
     
-    /* 1 */ val DEADLINE: typings.grpcGrpcJs.constantsMod.Propagate.DEADLINE & Double = js.native
+    /* 1 */ val DEADLINE: typings.grpcGrpcJs.buildSrcConstantsMod.Propagate.DEADLINE & Double = js.native
     
-    /* 65535 */ val DEFAULTS: typings.grpcGrpcJs.constantsMod.Propagate.DEFAULTS & Double = js.native
+    /* 65535 */ val DEFAULTS: typings.grpcGrpcJs.buildSrcConstantsMod.Propagate.DEFAULTS & Double = js.native
   }
   
   inline def setLogVerbosity(verbosity: LogVerbosity): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogVerbosity")(verbosity.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -523,50 +521,50 @@ object grpc {
   object status extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.grpcGrpcJs.constantsMod.Status & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.grpcGrpcJs.buildSrcConstantsMod.Status & Double] = js.native
     
-    /* 10 */ val ABORTED: typings.grpcGrpcJs.constantsMod.Status.ABORTED & Double = js.native
+    /* 10 */ val ABORTED: typings.grpcGrpcJs.buildSrcConstantsMod.Status.ABORTED & Double = js.native
     
-    /* 6 */ val ALREADY_EXISTS: typings.grpcGrpcJs.constantsMod.Status.ALREADY_EXISTS & Double = js.native
+    /* 6 */ val ALREADY_EXISTS: typings.grpcGrpcJs.buildSrcConstantsMod.Status.ALREADY_EXISTS & Double = js.native
     
-    /* 1 */ val CANCELLED: typings.grpcGrpcJs.constantsMod.Status.CANCELLED & Double = js.native
+    /* 1 */ val CANCELLED: typings.grpcGrpcJs.buildSrcConstantsMod.Status.CANCELLED & Double = js.native
     
-    /* 15 */ val DATA_LOSS: typings.grpcGrpcJs.constantsMod.Status.DATA_LOSS & Double = js.native
+    /* 15 */ val DATA_LOSS: typings.grpcGrpcJs.buildSrcConstantsMod.Status.DATA_LOSS & Double = js.native
     
-    /* 4 */ val DEADLINE_EXCEEDED: typings.grpcGrpcJs.constantsMod.Status.DEADLINE_EXCEEDED & Double = js.native
+    /* 4 */ val DEADLINE_EXCEEDED: typings.grpcGrpcJs.buildSrcConstantsMod.Status.DEADLINE_EXCEEDED & Double = js.native
     
-    /* 9 */ val FAILED_PRECONDITION: typings.grpcGrpcJs.constantsMod.Status.FAILED_PRECONDITION & Double = js.native
+    /* 9 */ val FAILED_PRECONDITION: typings.grpcGrpcJs.buildSrcConstantsMod.Status.FAILED_PRECONDITION & Double = js.native
     
-    /* 13 */ val INTERNAL: typings.grpcGrpcJs.constantsMod.Status.INTERNAL & Double = js.native
+    /* 13 */ val INTERNAL: typings.grpcGrpcJs.buildSrcConstantsMod.Status.INTERNAL & Double = js.native
     
-    /* 3 */ val INVALID_ARGUMENT: typings.grpcGrpcJs.constantsMod.Status.INVALID_ARGUMENT & Double = js.native
+    /* 3 */ val INVALID_ARGUMENT: typings.grpcGrpcJs.buildSrcConstantsMod.Status.INVALID_ARGUMENT & Double = js.native
     
-    /* 5 */ val NOT_FOUND: typings.grpcGrpcJs.constantsMod.Status.NOT_FOUND & Double = js.native
+    /* 5 */ val NOT_FOUND: typings.grpcGrpcJs.buildSrcConstantsMod.Status.NOT_FOUND & Double = js.native
     
-    /* 0 */ val OK: typings.grpcGrpcJs.constantsMod.Status.OK & Double = js.native
+    /* 0 */ val OK: typings.grpcGrpcJs.buildSrcConstantsMod.Status.OK & Double = js.native
     
-    /* 11 */ val OUT_OF_RANGE: typings.grpcGrpcJs.constantsMod.Status.OUT_OF_RANGE & Double = js.native
+    /* 11 */ val OUT_OF_RANGE: typings.grpcGrpcJs.buildSrcConstantsMod.Status.OUT_OF_RANGE & Double = js.native
     
-    /* 7 */ val PERMISSION_DENIED: typings.grpcGrpcJs.constantsMod.Status.PERMISSION_DENIED & Double = js.native
+    /* 7 */ val PERMISSION_DENIED: typings.grpcGrpcJs.buildSrcConstantsMod.Status.PERMISSION_DENIED & Double = js.native
     
-    /* 8 */ val RESOURCE_EXHAUSTED: typings.grpcGrpcJs.constantsMod.Status.RESOURCE_EXHAUSTED & Double = js.native
+    /* 8 */ val RESOURCE_EXHAUSTED: typings.grpcGrpcJs.buildSrcConstantsMod.Status.RESOURCE_EXHAUSTED & Double = js.native
     
-    /* 16 */ val UNAUTHENTICATED: typings.grpcGrpcJs.constantsMod.Status.UNAUTHENTICATED & Double = js.native
+    /* 16 */ val UNAUTHENTICATED: typings.grpcGrpcJs.buildSrcConstantsMod.Status.UNAUTHENTICATED & Double = js.native
     
-    /* 14 */ val UNAVAILABLE: typings.grpcGrpcJs.constantsMod.Status.UNAVAILABLE & Double = js.native
+    /* 14 */ val UNAVAILABLE: typings.grpcGrpcJs.buildSrcConstantsMod.Status.UNAVAILABLE & Double = js.native
     
-    /* 12 */ val UNIMPLEMENTED: typings.grpcGrpcJs.constantsMod.Status.UNIMPLEMENTED & Double = js.native
+    /* 12 */ val UNIMPLEMENTED: typings.grpcGrpcJs.buildSrcConstantsMod.Status.UNIMPLEMENTED & Double = js.native
     
-    /* 2 */ val UNKNOWN: typings.grpcGrpcJs.constantsMod.Status.UNKNOWN & Double = js.native
+    /* 2 */ val UNKNOWN: typings.grpcGrpcJs.buildSrcConstantsMod.Status.UNKNOWN & Double = js.native
   }
   
   inline def waitForClientReady(
-    client: typings.grpcGrpcJs.clientMod.Client,
+    client: typings.grpcGrpcJs.buildSrcClientMod.Client,
     deadline: js.Date,
     callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForClientReady")(client.asInstanceOf[js.Any], deadline.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def waitForClientReady(
-    client: typings.grpcGrpcJs.clientMod.Client,
+    client: typings.grpcGrpcJs.buildSrcClientMod.Client,
     deadline: Double,
     callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForClientReady")(client.asInstanceOf[js.Any], deadline.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

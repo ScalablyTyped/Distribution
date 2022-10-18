@@ -1,8 +1,8 @@
 package typings.asyncMutex
 
-import typings.asyncMutex.mutexInterfaceMod.MutexInterface
-import typings.asyncMutex.mutexMod.default
-import typings.asyncMutex.semaphoreInterfaceMod.SemaphoreInterface
+import typings.asyncMutex.libMutexInterfaceMod.MutexInterface
+import typings.asyncMutex.libMutexMod.default
+import typings.asyncMutex.libSemaphoreInterfaceMod.SemaphoreInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +34,7 @@ object mod {
   @JSImport("async-mutex", "Semaphore")
   @js.native
   open class Semaphore protected ()
-    extends typings.asyncMutex.semaphoreMod.default {
+    extends typings.asyncMutex.libSemaphoreMod.default {
     def this(_value: Double) = this()
     def this(_value: Double, _cancelError: js.Error) = this()
   }

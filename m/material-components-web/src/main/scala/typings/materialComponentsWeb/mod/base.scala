@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object base {
   
+  @JSImport("material-components-web", "base.default")
+  @js.native
+  open class default[AdapterType /* <: js.Object */] ()
+    extends typings.materialBase.mod.default[AdapterType] {
+    def this(adapter: AdapterType) = this()
+  }
+  
   @JSImport("material-components-web", "base.MDCComponent")
   @js.native
   open class MDCComponent[FoundationType /* <: typings.materialBase.foundationMod.MDCFoundation[js.Object] */] protected ()

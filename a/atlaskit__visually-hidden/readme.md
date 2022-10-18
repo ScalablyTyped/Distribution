@@ -1,7 +1,7 @@
 
 # Scala.js typings for atlaskit__visually-hidden
 
-Typings are for version 1.1.0
+Typings are for version 1.1.1
 
 ## Library description:
 A composable element that hides elements from the screen while keeping them accessible.

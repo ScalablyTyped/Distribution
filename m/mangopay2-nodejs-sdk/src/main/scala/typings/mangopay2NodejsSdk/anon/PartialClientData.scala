@@ -1,7 +1,7 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.addressMod.address.AddressType
-import typings.mangopay2NodejsSdk.clientMod.client.PlatformCategorization
+import typings.mangopay2NodejsSdk.typingsModelsAddressMod.address.AddressType
+import typings.mangopay2NodejsSdk.typingsModelsClientMod.client.PlatformCategorization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +31,7 @@ trait PartialClientData extends StObject {
   
   var Name: js.UndefOr[String] = js.undefined
   
-  var PlatformCategorization: js.UndefOr[typings.mangopay2NodejsSdk.clientMod.client.PlatformCategorization] = js.undefined
+  var PlatformCategorization: js.UndefOr[typings.mangopay2NodejsSdk.typingsModelsClientMod.client.PlatformCategorization] = js.undefined
   
   var PlatformDescription: js.UndefOr[String] = js.undefined
   

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-codecommit-node", "BatchGetRepositoriesCommand")
 @js.native
 open class BatchGetRepositoriesCommand protected ()
-  extends typings.awsSdkClientCodecommitNode.batchGetRepositoriesCommandMod.BatchGetRepositoriesCommand {
+  extends typings.awsSdkClientCodecommitNode.commandsBatchGetRepositoriesCommandMod.BatchGetRepositoriesCommand {
   def this(input: BatchGetRepositoriesInput) = this()
 }

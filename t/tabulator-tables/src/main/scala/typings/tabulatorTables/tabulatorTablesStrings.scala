@@ -6,6 +6,7 @@ import typings.tabulatorTables.mod.DownloadType
 import typings.tabulatorTables.mod.FilterType
 import typings.tabulatorTables.mod.HistoryAction
 import typings.tabulatorTables.mod.HttpMethod
+import typings.tabulatorTables.mod.PopupPosition
 import typings.tabulatorTables.mod.RenderMode
 import typings.tabulatorTables.mod.RowRangeLookup
 import typings.tabulatorTables.mod.ScrollToColumnPosition
@@ -143,6 +144,7 @@ object tabulatorTablesStrings {
   @js.native
   sealed trait bottom
     extends StObject
+       with PopupPosition
        with ScrollToRowPosition
        with VerticalAlign
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
@@ -198,6 +200,10 @@ object tabulatorTablesStrings {
   inline def cellEditing: cellEditing = "cellEditing".asInstanceOf[cellEditing]
   
   @js.native
+  sealed trait cellMouseDown extends StObject
+  inline def cellMouseDown: cellMouseDown = "cellMouseDown".asInstanceOf[cellMouseDown]
+  
+  @js.native
   sealed trait cellMouseEnter extends StObject
   inline def cellMouseEnter: cellMouseEnter = "cellMouseEnter".asInstanceOf[cellMouseEnter]
   
@@ -218,6 +224,10 @@ object tabulatorTablesStrings {
   inline def cellMouseOver: cellMouseOver = "cellMouseOver".asInstanceOf[cellMouseOver]
   
   @js.native
+  sealed trait cellMouseUp extends StObject
+  inline def cellMouseUp: cellMouseUp = "cellMouseUp".asInstanceOf[cellMouseUp]
+  
+  @js.native
   sealed trait cellTap extends StObject
   inline def cellTap: cellTap = "cellTap".asInstanceOf[cellTap]
   
@@ -230,6 +240,7 @@ object tabulatorTablesStrings {
     extends StObject
        with Align
        with ColumnDefinitionAlign
+       with PopupPosition
        with ScrollToColumnPosition
        with ScrollToRowPosition
   inline def center: center = "center".asInstanceOf[center]
@@ -492,6 +503,14 @@ object tabulatorTablesStrings {
   inline def groupDblTap: groupDblTap = "groupDblTap".asInstanceOf[groupDblTap]
   
   @js.native
+  sealed trait groupMouseDown extends StObject
+  inline def groupMouseDown: groupMouseDown = "groupMouseDown".asInstanceOf[groupMouseDown]
+  
+  @js.native
+  sealed trait groupMouseUp extends StObject
+  inline def groupMouseUp: groupMouseUp = "groupMouseUp".asInstanceOf[groupMouseUp]
+  
+  @js.native
   sealed trait groupTap extends StObject
   inline def groupTap: groupTap = "groupTap".asInstanceOf[groupTap]
   
@@ -528,6 +547,14 @@ object tabulatorTablesStrings {
   @js.native
   sealed trait headerDblTap extends StObject
   inline def headerDblTap: headerDblTap = "headerDblTap".asInstanceOf[headerDblTap]
+  
+  @js.native
+  sealed trait headerMouseDown extends StObject
+  inline def headerMouseDown: headerMouseDown = "headerMouseDown".asInstanceOf[headerMouseDown]
+  
+  @js.native
+  sealed trait headerMouseUp extends StObject
+  inline def headerMouseUp: headerMouseUp = "headerMouseUp".asInstanceOf[headerMouseUp]
   
   @js.native
   sealed trait headerTap extends StObject
@@ -575,6 +602,10 @@ object tabulatorTablesStrings {
   @js.native
   sealed trait hybrid extends StObject
   inline def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
+  
+  @js.native
+  sealed trait icon extends StObject
+  inline def icon: icon = "icon".asInstanceOf[icon]
   
   @js.native
   sealed trait image
@@ -629,6 +660,7 @@ object tabulatorTablesStrings {
     extends StObject
        with Align
        with ColumnDefinitionAlign
+       with PopupPosition
        with ScrollToColumnPosition
   inline def left: left = "left".asInstanceOf[left]
   
@@ -868,6 +900,7 @@ object tabulatorTablesStrings {
     extends StObject
        with Align
        with ColumnDefinitionAlign
+       with PopupPosition
        with ScrollToColumnPosition
   inline def right: right = "right".asInstanceOf[right]
   
@@ -912,6 +945,10 @@ object tabulatorTablesStrings {
   inline def rowDeselected: rowDeselected = "rowDeselected".asInstanceOf[rowDeselected]
   
   @js.native
+  sealed trait rowMouseDown extends StObject
+  inline def rowMouseDown: rowMouseDown = "rowMouseDown".asInstanceOf[rowMouseDown]
+  
+  @js.native
   sealed trait rowMouseEnter extends StObject
   inline def rowMouseEnter: rowMouseEnter = "rowMouseEnter".asInstanceOf[rowMouseEnter]
   
@@ -930,6 +967,10 @@ object tabulatorTablesStrings {
   @js.native
   sealed trait rowMouseOver extends StObject
   inline def rowMouseOver: rowMouseOver = "rowMouseOver".asInstanceOf[rowMouseOver]
+  
+  @js.native
+  sealed trait rowMouseUp extends StObject
+  inline def rowMouseUp: rowMouseUp = "rowMouseUp".asInstanceOf[rowMouseUp]
   
   @js.native
   sealed trait rowMoved
@@ -1073,6 +1114,7 @@ object tabulatorTablesStrings {
   @js.native
   sealed trait top
     extends StObject
+       with PopupPosition
        with ScrollToRowPosition
        with VerticalAlign
   inline def top: top = "top".asInstanceOf[top]

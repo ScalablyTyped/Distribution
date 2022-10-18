@@ -1,11 +1,8 @@
 package typings.puppeteer.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.devtoolsProtocol.mod.Protocol.Target.TargetInfo
 import typings.puppeteer.mod.^
 import typings.std.Capitalize
-import typings.std.Element
 import typings.std.Lowercase
 import typings.std.PromiseLike
 import typings.std.Uppercase
@@ -29,8 +26,6 @@ inline def customQueryHandlerNames(): js.Array[String] = ^.asInstanceOf[js.Dynam
 inline def defaultArgs(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultArgs")().asInstanceOf[js.Array[String]]
 inline def defaultArgs(options: BrowserLaunchArgumentOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultArgs")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 
-inline def devices: DevicesMap = ^.asInstanceOf[js.Dynamic].selectDynamic("devices").asInstanceOf[DevicesMap]
-
 inline def executablePath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("executablePath")().asInstanceOf[String]
 inline def executablePath(channel: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("executablePath")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
 
@@ -43,13 +38,9 @@ inline def unregisterCustomQueryHandler(name: String): Unit = ^.asInstanceOf[js.
 
 type Awaitable[T] = T | PromiseLike[T]
 
-type DevicesMap = StringDictionary[Device]
-
 type EvaluateFunc[T /* <: js.Array[Any] */] = js.Function1[/* params */ InnerParams[T], Awaitable[Any]]
 
 type EventType = String | js.Symbol
-
-type FlattenHandle[T] = Any
 
 /* Rewritten from type alias, can be one of: 
   - typings.puppeteer.mod.HandleFor[T]
@@ -59,10 +50,6 @@ type FlattenHandle[T] = Any
 type HandleOr[T] = _HandleOr[T] | T
 
 type Handler[T] = js.Function1[/* event */ js.UndefOr[T], Unit]
-
-type InnerParams[T /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: puppeteer.puppeteer.FlattenHandle<T[K]>}
-  */ typings.puppeteer.puppeteerStrings.InnerParams & TopLevel[T]
 
 type InterceptResolutionStrategy = InterceptResolutionAction
 
@@ -261,7 +248,7 @@ type InterceptResolutionStrategy = InterceptResolutionAction
   - typings.puppeteer.puppeteerStrings.Dot
   - typings.puppeteer.puppeteerStrings.Graveaccent
   - typings.puppeteer.puppeteerStrings.`[`
-  - java.lang.String
+  - / * \ * / java.lang.String
   - typings.puppeteer.puppeteerStrings.`]`
   - typings.puppeteer.puppeteerStrings.Attn
   - typings.puppeteer.puppeteerStrings.CrSel
@@ -320,9 +307,7 @@ type InterceptResolutionStrategy = InterceptResolutionAction
   - typings.puppeteer.puppeteerStrings.VolumeDown
   - typings.puppeteer.puppeteerStrings.VolumeUp
 */
-type KeyInput = _KeyInput | String
-
-type NodeFor[Selector /* <: String */] = Element | (/* import warning: importer.ImportType#apply Failed type conversion: std.SVGElementTagNameMap[Selector] */ js.Any)
+type KeyInput = _KeyInput | (/* \ */ String)
 
 type PaperFormat = Uppercase[LowerCasePaperFormat] | Capitalize[LowerCasePaperFormat] | LowerCasePaperFormat
 

@@ -1,6 +1,6 @@
 package typings.searchParams
 
-import typings.searchParams.encodeMod.IOptions
+import typings.searchParams.distEncodeMod.IOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

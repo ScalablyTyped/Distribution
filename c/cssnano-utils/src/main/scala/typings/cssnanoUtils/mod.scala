@@ -1,7 +1,7 @@
 package typings.cssnanoUtils
 
 import typings.cssnanoUtils.cssnanoUtilsBooleans.`true`
-import typings.cssnanoUtils.sameParentMod.Child
+import typings.cssnanoUtils.typesSameParentMod.Child
 import typings.postcss.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

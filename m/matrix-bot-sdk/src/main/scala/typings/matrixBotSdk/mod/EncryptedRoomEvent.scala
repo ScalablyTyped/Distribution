@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "EncryptedRoomEvent")
 @js.native
 open class EncryptedRoomEvent protected ()
-  extends typings.matrixBotSdk.encryptedRoomEventMod.EncryptedRoomEvent {
+  extends typings.matrixBotSdk.libModelsEventsEncryptedRoomEventMod.EncryptedRoomEvent {
   def this(event: Any) = this()
 }

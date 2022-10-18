@@ -1,12 +1,11 @@
 package typings.fastifyPlugin
 
-import typings.fastify.pluginMod.FastifyPluginAsync
-import typings.fastify.pluginMod.FastifyPluginCallback
-import typings.fastify.pluginMod.FastifyPluginOptions
-import typings.fastify.typeProviderMod.FastifyTypeProvider
-import typings.fastify.typeProviderMod.FastifyTypeProviderDefault
-import typings.fastify.utilsMod.RawServerBase
-import typings.fastify.utilsMod.RawServerDefault
+import typings.fastify.typesPluginMod.FastifyPluginCallback
+import typings.fastify.typesPluginMod.FastifyPluginOptions
+import typings.fastify.typesTypeProviderMod.FastifyTypeProvider
+import typings.fastify.typesTypeProviderMod.FastifyTypeProviderDefault
+import typings.fastify.typesUtilsMod.RawServerBase
+import typings.fastify.typesUtilsMod.RawServerDefault
 import typings.fastifyPlugin.anon.Fastify
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,14 +17,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[Options /* <: FastifyPluginOptions */, RawServer /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](fn: FastifyPluginAsync[Options, RawServer, TypeProvider]): FastifyPluginAsync[Options, RawServer, TypeProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[FastifyPluginAsync[Options, RawServer, TypeProvider]]
-  inline def default[Options /* <: FastifyPluginOptions */, RawServer /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](fn: FastifyPluginAsync[Options, RawServer, TypeProvider], options: String): FastifyPluginAsync[Options, RawServer, TypeProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FastifyPluginAsync[Options, RawServer, TypeProvider]]
-  inline def default[Options /* <: FastifyPluginOptions */, RawServer /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](fn: FastifyPluginAsync[Options, RawServer, TypeProvider], options: PluginMetadata): FastifyPluginAsync[Options, RawServer, TypeProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FastifyPluginAsync[Options, RawServer, TypeProvider]]
-  inline def default[Options /* <: FastifyPluginOptions */, RawServer /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](
-    fn: FastifyPluginCallback[Options, RawServer | RawServerDefault, FastifyTypeProviderDefault | TypeProvider]
-  ): FastifyPluginCallback[Options, RawServer, TypeProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[FastifyPluginCallback[Options, RawServer, TypeProvider]]
+  inline def default[Options /* <: FastifyPluginOptions */, RawServer /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](fn: FastifyPluginCallback[Options, RawServerDefault, FastifyTypeProviderDefault]): FastifyPluginCallback[Options, RawServerDefault, FastifyTypeProviderDefault] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[FastifyPluginCallback[Options, RawServerDefault, FastifyTypeProviderDefault]]
   inline def default[Options /* <: FastifyPluginOptions */, RawServer /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](fn: FastifyPluginCallback[Options, RawServerDefault, FastifyTypeProviderDefault], options: String): FastifyPluginCallback[Options, RawServerDefault, FastifyTypeProviderDefault] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FastifyPluginCallback[Options, RawServerDefault, FastifyTypeProviderDefault]]
-  inline def default[Options /* <: FastifyPluginOptions */, RawServer /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](fn: FastifyPluginCallback[Options, RawServer, TypeProvider], options: PluginMetadata): FastifyPluginCallback[Options, RawServer, TypeProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FastifyPluginCallback[Options, RawServer, TypeProvider]]
   
   trait PluginMetadata extends StObject {
     

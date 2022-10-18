@@ -1,6 +1,6 @@
 package typings.baseui
 
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,15 +43,15 @@ object skeletonTypesMod {
     var overrides: js.UndefOr[SkeletonOverrides] = js.undefined
     
     /** Defines the number of row element in a skeleton */
-    var rows: Double
+    var rows: js.UndefOr[Double] = js.undefined
     
     /** Defines the width of the skeleton container*/
     var width: js.UndefOr[String] = js.undefined
   }
   object SkeletonProps {
     
-    inline def apply(animation: Boolean, rows: Double): SkeletonProps = {
-      val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
+    inline def apply(animation: Boolean): SkeletonProps = {
+      val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkeletonProps]
     }
     
@@ -68,6 +68,8 @@ object skeletonTypesMod {
       inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
       inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
       inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

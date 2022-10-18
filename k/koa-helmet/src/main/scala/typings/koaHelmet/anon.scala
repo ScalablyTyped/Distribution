@@ -11,7 +11,7 @@ import typings.helmet.anon.ReadonlyStrictTransportSe
 import typings.helmet.anon.ReadonlyXDnsPrefetchContr
 import typings.helmet.anon.ReadonlyXFrameOptionsOpti
 import typings.helmet.anon.ReadonlyXPermittedCrossDo
-import typings.helmet.contentSecurityPolicyMod.ContentSecurityPolicy
+import typings.helmet.distTypesMiddlewaresContentSecurityPolicyMod.ContentSecurityPolicy
 import typings.helmet.mod.Helmet
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse

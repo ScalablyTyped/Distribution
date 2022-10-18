@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "OcclusionMaterial")
 @js.native
 open class OcclusionMaterial protected ()
-  extends typings.babylonjs.occlusionIndexMod.OcclusionMaterial {
+  extends typings.babylonjs.materialsOcclusionIndexMod.OcclusionMaterial {
   def this(name: String, scene: Scene) = this()
 }

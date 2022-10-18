@@ -1,10 +1,10 @@
 package typings.tsToolbelt
 
-import typings.tsToolbelt.functionInternalMod.Input
-import typings.tsToolbelt.functionInternalMod.Mode
-import typings.tsToolbelt.internalMod.Match
-import typings.tsToolbelt.iterationInternalMod.Way
-import typings.tsToolbelt.objectInternalMod.Depth
+import typings.tsToolbelt.outAnyInternalMod.Match
+import typings.tsToolbelt.outFunctionInternalMod.Input
+import typings.tsToolbelt.outFunctionInternalMod.Mode
+import typings.tsToolbelt.outIterationInternalMod.Way
+import typings.tsToolbelt.outObjectInternalMod.Depth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -832,40 +832,8 @@ object tsToolbeltStrings {
   inline def `99`: `99` = "99".asInstanceOf[`99`]
   
   @js.native
-  sealed trait Anyfy extends StObject
-  inline def Anyfy: Anyfy = "Anyfy".asInstanceOf[Anyfy]
-  
-  @js.native
-  sealed trait CompulsoryDeep extends StObject
-  inline def CompulsoryDeep: CompulsoryDeep = "CompulsoryDeep".asInstanceOf[CompulsoryDeep]
-  
-  @js.native
-  sealed trait CompulsoryFlat extends StObject
-  inline def CompulsoryFlat: CompulsoryFlat = "CompulsoryFlat".asInstanceOf[CompulsoryFlat]
-  
-  @js.native
-  sealed trait ComputeDeep extends StObject
-  inline def ComputeDeep: ComputeDeep = "ComputeDeep".asInstanceOf[ComputeDeep]
-  
-  @js.native
-  sealed trait ComputeFlat extends StObject
-  inline def ComputeFlat: ComputeFlat = "ComputeFlat".asInstanceOf[ComputeFlat]
-  
-  @js.native
-  sealed trait ComputeRaw extends StObject
-  inline def ComputeRaw: ComputeRaw = "ComputeRaw".asInstanceOf[ComputeRaw]
-  
-  @js.native
-  sealed trait Exact extends StObject
-  inline def Exact: Exact = "Exact".asInstanceOf[Exact]
-  
-  @js.native
   sealed trait Exclamationmark extends StObject
   inline def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
-  
-  @js.native
-  sealed trait Gaps extends StObject
-  inline def Gaps: Gaps = "Gaps".asInstanceOf[Gaps]
   
   @js.native
   sealed trait `Lessthansign-`
@@ -886,90 +854,6 @@ object tsToolbeltStrings {
   inline def `Lessthansign-extends`: `Lessthansign-extends` = "<-extends".asInstanceOf[`Lessthansign-extends`]
   
   @js.native
-  sealed trait MergeAt extends StObject
-  inline def MergeAt: MergeAt = "MergeAt".asInstanceOf[MergeAt]
-  
-  @js.native
-  sealed trait MergeDeepList extends StObject
-  inline def MergeDeepList: MergeDeepList = "MergeDeepList".asInstanceOf[MergeDeepList]
-  
-  @js.native
-  sealed trait MergeDeepObject extends StObject
-  inline def MergeDeepObject: MergeDeepObject = "MergeDeepObject".asInstanceOf[MergeDeepObject]
-  
-  @js.native
-  sealed trait MergeFlatList extends StObject
-  inline def MergeFlatList: MergeFlatList = "MergeFlatList".asInstanceOf[MergeFlatList]
-  
-  @js.native
-  sealed trait MergeFlatObject extends StObject
-  inline def MergeFlatObject: MergeFlatObject = "MergeFlatObject".asInstanceOf[MergeFlatObject]
-  
-  @js.native
-  sealed trait MetaPath extends StObject
-  inline def MetaPath: MetaPath = "MetaPath".asInstanceOf[MetaPath]
-  
-  @js.native
-  sealed trait Modify extends StObject
-  inline def Modify: Modify = "Modify".asInstanceOf[Modify]
-  
-  @js.native
-  sealed trait NarrowRaw extends StObject
-  inline def NarrowRaw: NarrowRaw = "NarrowRaw".asInstanceOf[NarrowRaw]
-  
-  @js.native
-  sealed trait NonNullableDeep extends StObject
-  inline def NonNullableDeep: NonNullableDeep = "NonNullableDeep".asInstanceOf[NonNullableDeep]
-  
-  @js.native
-  sealed trait NonNullableFlat extends StObject
-  inline def NonNullableFlat: NonNullableFlat = "NonNullableFlat".asInstanceOf[NonNullableFlat]
-  
-  @js.native
-  sealed trait NullableDeep extends StObject
-  inline def NullableDeep: NullableDeep = "NullableDeep".asInstanceOf[NullableDeep]
-  
-  @js.native
-  sealed trait NullableFlat extends StObject
-  inline def NullableFlat: NullableFlat = "NullableFlat".asInstanceOf[NullableFlat]
-  
-  @js.native
-  sealed trait OmitAt extends StObject
-  inline def OmitAt: OmitAt = "OmitAt".asInstanceOf[OmitAt]
-  
-  @js.native
-  sealed trait OptionalDeep extends StObject
-  inline def OptionalDeep: OptionalDeep = "OptionalDeep".asInstanceOf[OptionalDeep]
-  
-  @js.native
-  sealed trait OptionalFlat extends StObject
-  inline def OptionalFlat: OptionalFlat = "OptionalFlat".asInstanceOf[OptionalFlat]
-  
-  @js.native
-  sealed trait Overwrite extends StObject
-  inline def Overwrite: Overwrite = "Overwrite".asInstanceOf[Overwrite]
-  
-  @js.native
-  sealed trait PatchDeepList extends StObject
-  inline def PatchDeepList: PatchDeepList = "PatchDeepList".asInstanceOf[PatchDeepList]
-  
-  @js.native
-  sealed trait PatchDeepObject extends StObject
-  inline def PatchDeepObject: PatchDeepObject = "PatchDeepObject".asInstanceOf[PatchDeepObject]
-  
-  @js.native
-  sealed trait PatchFlatList extends StObject
-  inline def PatchFlatList: PatchFlatList = "PatchFlatList".asInstanceOf[PatchFlatList]
-  
-  @js.native
-  sealed trait PatchFlatObject extends StObject
-  inline def PatchFlatObject: PatchFlatObject = "PatchFlatObject".asInstanceOf[PatchFlatObject]
-  
-  @js.native
-  sealed trait PickAt extends StObject
-  inline def PickAt: PickAt = "PickAt".asInstanceOf[PickAt]
-  
-  @js.native
   sealed trait Plussign extends StObject
   inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
@@ -982,96 +866,12 @@ object tsToolbeltStrings {
   inline def R: R = "R".asInstanceOf[R]
   
   @js.native
-  sealed trait ReadonlyAt extends StObject
-  inline def ReadonlyAt: ReadonlyAt = "ReadonlyAt".asInstanceOf[ReadonlyAt]
-  
-  @js.native
-  sealed trait ReadonlyDeep extends StObject
-  inline def ReadonlyDeep: ReadonlyDeep = "ReadonlyDeep".asInstanceOf[ReadonlyDeep]
-  
-  @js.native
-  sealed trait ReadonlyFlat extends StObject
-  inline def ReadonlyFlat: ReadonlyFlat = "ReadonlyFlat".asInstanceOf[ReadonlyFlat]
-  
-  @js.native
-  sealed trait Record_OR extends StObject
-  inline def Record_OR: Record_OR = "Record_OR".asInstanceOf[Record_OR]
-  
-  @js.native
-  sealed trait Record_OW extends StObject
-  inline def Record_OW: Record_OW = "Record_OW".asInstanceOf[Record_OW]
-  
-  @js.native
-  sealed trait Record_RR extends StObject
-  inline def Record_RR: Record_RR = "Record_RR".asInstanceOf[Record_RR]
-  
-  @js.native
-  sealed trait Record_RW extends StObject
-  inline def Record_RW: Record_RW = "Record_RW".asInstanceOf[Record_RW]
-  
-  @js.native
-  sealed trait RequiredDeep extends StObject
-  inline def RequiredDeep: RequiredDeep = "RequiredDeep".asInstanceOf[RequiredDeep]
-  
-  @js.native
-  sealed trait RequiredFlat extends StObject
-  inline def RequiredFlat: RequiredFlat = "RequiredFlat".asInstanceOf[RequiredFlat]
-  
-  @js.native
-  sealed trait UndefinableDeep extends StObject
-  inline def UndefinableDeep: UndefinableDeep = "UndefinableDeep".asInstanceOf[UndefinableDeep]
-  
-  @js.native
-  sealed trait UndefinableFlat extends StObject
-  inline def UndefinableFlat: UndefinableFlat = "UndefinableFlat".asInstanceOf[UndefinableFlat]
-  
-  @js.native
-  sealed trait Unionize extends StObject
-  inline def Unionize: Unionize = "Unionize".asInstanceOf[Unionize]
-  
-  @js.native
-  sealed trait Update extends StObject
-  inline def Update: Update = "Update".asInstanceOf[Update]
-  
-  @js.native
-  sealed trait UpdateAt extends StObject
-  inline def UpdateAt: UpdateAt = "UpdateAt".asInstanceOf[UpdateAt]
-  
-  @js.native
   sealed trait W extends StObject
   inline def W: W = "W".asInstanceOf[W]
   
   @js.native
-  sealed trait WritableDeep extends StObject
-  inline def WritableDeep: WritableDeep = "WritableDeep".asInstanceOf[WritableDeep]
-  
-  @js.native
-  sealed trait WritableFlat extends StObject
-  inline def WritableFlat: WritableFlat = "WritableFlat".asInstanceOf[WritableFlat]
-  
-  @js.native
-  sealed trait _Merge extends StObject
-  inline def _Merge: _Merge = "_Merge".asInstanceOf[_Merge]
-  
-  @js.native
-  sealed trait _NonNullableDeep extends StObject
-  inline def _NonNullableDeep: _NonNullableDeep = "_NonNullableDeep".asInstanceOf[_NonNullableDeep]
-  
-  @js.native
-  sealed trait _Paths extends StObject
-  inline def _Paths: _Paths = "_Paths".asInstanceOf[_Paths]
-  
-  @js.native
-  sealed trait _Replace extends StObject
-  inline def _Replace: _Replace = "_Replace".asInstanceOf[_Replace]
-  
-  @js.native
   sealed trait __ extends StObject
   inline def __ : __ = "__".asInstanceOf[__]
-  
-  @js.native
-  sealed trait __Pick extends StObject
-  inline def __Pick: __Pick = "__Pick".asInstanceOf[__Pick]
   
   @js.native
   sealed trait _empty extends StObject
@@ -1130,12 +930,4 @@ object tsToolbeltStrings {
     extends StObject
        with Mode
   inline def sync: sync = "sync".asInstanceOf[sync]
-  
-  @js.native
-  sealed trait x extends StObject
-  inline def x: x = "x".asInstanceOf[x]
-  
-  @js.native
-  sealed trait y extends StObject
-  inline def y: y = "y".asInstanceOf[y]
 }

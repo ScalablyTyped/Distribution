@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,14 +26,14 @@ open class BloomMergePostProcess protected ()
     */
   def this(
     name: String,
-    originalFromInput: typings.babylonjs.postProcessMod.PostProcess,
-    blurred: typings.babylonjs.postProcessMod.PostProcess,
+    originalFromInput: typings.babylonjs.postProcessesPostProcessMod.PostProcess,
+    blurred: typings.babylonjs.postProcessesPostProcessMod.PostProcess,
     /** Weight of the bloom to be added to the original input. */
   weight: Double,
     options: Double | PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: js.UndefOr[Double],
-    engine: js.UndefOr[typings.babylonjs.engineMod.Engine],
+    engine: js.UndefOr[typings.babylonjs.enginesEngineMod.Engine],
     reusable: js.UndefOr[Boolean],
     textureType: js.UndefOr[Double],
     blockCompilation: js.UndefOr[Boolean]

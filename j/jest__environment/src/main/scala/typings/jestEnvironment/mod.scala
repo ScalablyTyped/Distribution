@@ -1,65 +1,36 @@
 package typings.jestEnvironment
 
-import org.scalablytyped.runtime.Instantiable2
-import typings.istanbulLibCoverage.mod.CoverageMapData
 import typings.jestEnvironment.anon.FnCall
-import typings.jestEnvironment.anon.FnCallFnTimeout
+import typings.jestEnvironment.anon.FnCallFn
+import typings.jestEnvironment.anon.FnCallObjectMethodKeyAccessType
+import typings.jestEnvironment.anon.FnCallSourceOptions
+import typings.jestEnvironment.anon.LogErrorsBeforeRetry
 import typings.jestEnvironment.anon.Virtual
-import typings.jestEnvironment.jestEnvironmentStrings.legacy
-import typings.jestEnvironment.jestEnvironmentStrings.modern
+import typings.jestEnvironment.jestEnvironmentStrings.get
+import typings.jestEnvironment.jestEnvironmentStrings.set
+import typings.jestFakeTimers.mod.LegacyFakeTimers
+import typings.jestFakeTimers.mod.ModernFakeTimers
+import typings.jestMock.anon.Shallow
+import typings.jestMock.anon.`0`
+import typings.jestMock.mod.ConstructorLikeKeys
+import typings.jestMock.mod.FunctionLike
+import typings.jestMock.mod.Mock
+import typings.jestMock.mod.MockedShallow
+import typings.jestMock.mod.Mocked_
 import typings.jestMock.mod.ModuleMocker
-import typings.jestTypes.anon.ItBaseconcurrentItConcurr
-import typings.jestTypes.circusMod.Event
-import typings.jestTypes.circusMod.State
-import typings.jestTypes.configMod.Path
-import typings.jestTypes.configMod.ProjectConfig
-import typings.jestTypes.globalMod.BlockFn
-import typings.jestTypes.globalMod.BlockName
-import typings.jestTypes.globalMod.Describe
-import typings.jestTypes.globalMod.DescribeBase
-import typings.jestTypes.globalMod.Global
-import typings.jestTypes.globalMod.HookBase
-import typings.jestTypes.globalMod.ItBase
-import typings.jestTypes.globalMod.ItConcurrent
-import typings.jestTypes.globalMod.Jasmine
-import typings.node.Buffer
-import typings.node.BufferEncoding
-import typings.node.NodeJS.Immediate
+import typings.jestMock.mod.PropertyLikeKeys
+import typings.jestMock.mod.SpyInstance
+import typings.jestTypes.mod.EventHandler
+import typings.jestTypes.mod.FakeTimersConfig
+import typings.jestTypes.mod.GlobalConfig
+import typings.jestTypes.mod.LegacyFakeTimersConfig
+import typings.jestTypes.mod.ProjectConfig
 import typings.node.NodeJS.Require
-import typings.node.NodeJS.Timeout
 import typings.node.NodeModule
-import typings.node.anon.TypeofBuffer
 import typings.node.vmMod.Context
-import typings.node.vmMod.Script
-import typings.std.ArrayBufferConstructor
 import typings.std.Console
-import typings.std.DataViewConstructor
-import typings.std.Date
-import typings.std.Error
-import typings.std.EvalError
-import typings.std.Float32ArrayConstructor
-import typings.std.Float64ArrayConstructor
-import typings.std.Int16ArrayConstructor
-import typings.std.Int32ArrayConstructor
-import typings.std.Int8ArrayConstructor
-import typings.std.JSON
-import typings.std.MapConstructor
-import typings.std.Math
-import typings.std.PromiseConstructor
-import typings.std.RangeError
+import typings.std.ImportMeta
 import typings.std.Record
-import typings.std.ReferenceError
-import typings.std.RegExp
-import typings.std.SetConstructor
-import typings.std.SyntaxError
-import typings.std.TypeError
-import typings.std.URIError
-import typings.std.Uint16ArrayConstructor
-import typings.std.Uint32ArrayConstructor
-import typings.std.Uint8ArrayConstructor
-import typings.std.Uint8ClampedArrayConstructor
-import typings.std.WeakMapConstructor
-import typings.std.WeakSetConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,45 +39,40 @@ object mod {
   
   @JSImport("@jest/environment", "JestEnvironment")
   @js.native
-  class JestEnvironment protected () extends StObject {
-    def this(config: ProjectConfig) = this()
-    def this(config: ProjectConfig, context: EnvironmentContext) = this()
+  open class JestEnvironment[Timer] protected () extends StObject {
+    def this(config: JestEnvironmentConfig, context: EnvironmentContext) = this()
     
-    var fakeTimers: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LegacyFakeTimers<unknown> */ js.Any) | Null = js.native
+    var exportConditions: js.UndefOr[js.Function0[js.Array[String]]] = js.native
     
-    var fakeTimersModern: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ModernFakeTimers */ js.Any) | Null = js.native
+    var fakeTimers: LegacyFakeTimers[Timer] | Null = js.native
     
-    var getVmContext: js.UndefOr[js.Function0[Context | Null]] = js.native
+    var fakeTimersModern: ModernFakeTimers | Null = js.native
     
-    var global: Global = js.native
+    def getVmContext(): Context | Null = js.native
     
-    var handleTestEvent: js.UndefOr[js.Function2[/* event */ Event, /* state */ State, Unit | js.Promise[Unit]]] = js.native
+    var global: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Global.Global */ Any = js.native
+    
+    var handleTestEvent: js.UndefOr[EventHandler] = js.native
     
     var moduleMocker: ModuleMocker | Null = js.native
-    
-    /**
-      * @deprecated implement getVmContext instead
-      */
-    def runScript[T](script: Script): T | Null = js.native
     
     def setup(): js.Promise[Unit] = js.native
     
     def teardown(): js.Promise[Unit] = js.native
   }
   
-  /* Inlined std.Partial<{  console :std.Console,   docblockPragmas :std.Record<string, string | std.Array<string>>,   testPath :@jest/types.@jest/types.Config.Path}> */
   trait EnvironmentContext extends StObject {
     
-    var console: js.UndefOr[Console] = js.undefined
+    var console: Console
     
-    var docblockPragmas: js.UndefOr[Record[String, String | js.Array[String]]] = js.undefined
+    var docblockPragmas: Record[String, String | js.Array[String]]
     
-    var testPath: js.UndefOr[Path] = js.undefined
+    var testPath: String
   }
   object EnvironmentContext {
     
-    inline def apply(): EnvironmentContext = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(console: Console, docblockPragmas: Record[String, String | js.Array[String]], testPath: String): EnvironmentContext = {
+      val __obj = js.Dynamic.literal(console = console.asInstanceOf[js.Any], docblockPragmas = docblockPragmas.asInstanceOf[js.Any], testPath = testPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnvironmentContext]
     }
     
@@ -114,15 +80,9 @@ object mod {
       
       inline def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
-      inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
-      
       inline def setDocblockPragmas(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "docblockPragmas", value.asInstanceOf[js.Any])
       
-      inline def setDocblockPragmasUndefined: Self = StObject.set(x, "docblockPragmas", js.undefined)
-      
-      inline def setTestPath(value: Path): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
-      
-      inline def setTestPathUndefined: Self = StObject.set(x, "testPath", js.undefined)
+      inline def setTestPath(value: String): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,22 +90,16 @@ object mod {
   trait Jest extends StObject {
     
     /**
-      * Provides a way to add Jasmine-compatible matchers into your Jest context.
-      *
-      * @deprecated Use `expect.extend` instead
-      */
-    def addMatchers(matchers: Record[String, js.Any]): Unit = js.native
-    
-    /**
-      * Advances all timers by msToRun milliseconds. All pending "macro-tasks"
-      * that have been queued via setTimeout() or setInterval(), and would be
-      * executed within this timeframe will be executed.
+      * Advances all timers by `msToRun` milliseconds. All pending "macro-tasks"
+      * that have been queued via `setTimeout()` or `setInterval()`, and would be
+      * executed within this time frame will be executed.
       */
     def advanceTimersByTime(msToRun: Double): Unit = js.native
     
     /**
-      * Advances all timers by the needed milliseconds so that only the next timeouts/intervals will run.
-      * Optionally, you can provide steps, so it will run steps amount of next timeouts/intervals.
+      * Advances all timers by the needed milliseconds so that only the next
+      * timeouts/intervals will run. Optionally, you can provide steps, so it will
+      * run steps amount of next timeouts/intervals.
       */
     def advanceTimersToNextTimer(): Unit = js.native
     def advanceTimersToNextTimer(steps: Double): Unit = js.native
@@ -161,8 +115,8 @@ object mod {
     def autoMockOn(): Jest = js.native
     
     /**
-      * Clears the mock.calls and mock.instances properties of all mocks.
-      * Equivalent to calling .mockClear() on every mocked function.
+      * Clears the `mock.calls`, `mock.instances`, `mock.contexts` and `mock.results` properties of
+      * all mocks. Equivalent to calling `.mockClear()` on every mocked function.
       */
     def clearAllMocks(): Jest = js.native
     
@@ -180,12 +134,11 @@ object mod {
       * This is useful when you want to create a manual mock that extends the
       * automatic mock's behavior.
       */
-    def createMockFromModule(moduleName: String): js.Any = js.native
+    def createMockFromModule[T](moduleName: String): Mocked_[T] = js.native
     
     /**
-      * Indicates that the module system should never return a mocked version
-      * of the specified module, including all of the specified module's
-      * dependencies.
+      * Indicates that the module system should never return a mocked version of
+      * the specified module and its dependencies.
       */
     def deepUnmock(moduleName: String): Jest = js.native
     
@@ -198,17 +151,19 @@ object mod {
     def disableAutomock(): Jest = js.native
     
     /**
-      * When using `babel-jest`, calls to mock will automatically be hoisted to
-      * the top of the code block. Use this method if you want to explicitly avoid
-      * this behavior.
+      * When using `babel-jest`, calls to `jest.mock()` will automatically be hoisted
+      * to the top of the code block. Use this method if you want to explicitly
+      * avoid this behavior.
       */
-    def doMock(moduleName: String): Jest = js.native
-    def doMock(moduleName: String, moduleFactory: js.Function0[js.Any]): Jest = js.native
+    def doMock[T](moduleName: String): Jest = js.native
+    def doMock[T](moduleName: String, moduleFactory: js.Function0[T]): Jest = js.native
+    def doMock[T](moduleName: String, moduleFactory: js.Function0[T], options: Virtual): Jest = js.native
+    def doMock[T](moduleName: String, moduleFactory: Unit, options: Virtual): Jest = js.native
     
     /**
-      * Indicates that the module system should never return a mocked version
-      * of the specified module from require() (e.g. that it should always return
-      * the real module).
+      * When using `babel-jest`, calls to `jest.unmock()` will automatically be hoisted
+      * to the top of the code block. Use this method if you want to explicitly
+      * avoid this behavior.
       */
     def dontMock(moduleName: String): Jest = js.native
     
@@ -220,7 +175,16 @@ object mod {
     /**
       * Creates a mock function. Optionally takes a mock implementation.
       */
-    var fn: JestMockFn = js.native
+    def fn[T /* <: FunctionLike */](): Mock[T] = js.native
+    /**
+      * Creates a mock function. Optionally takes a mock implementation.
+      */
+    def fn[T /* <: FunctionLike */](implementation: T): Mock[T] = js.native
+    /**
+      * Creates a mock function. Optionally takes a mock implementation.
+      */
+    @JSName("fn")
+    var fn_Original: FnCall = js.native
     
     /**
       * Given the name of a module, use the automatic mocking system to generate a
@@ -231,14 +195,22 @@ object mod {
       *
       * @deprecated Use `jest.createMockFromModule()` instead
       */
-    def genMockFromModule(moduleName: String): js.Any = js.native
+    def genMockFromModule[T](moduleName: String): Mocked_[T] = js.native
     
     /**
-      * When mocking time, `Date.now()` will also be mocked. If you for some reason need access to the real current time, you can invoke this function.
+      * When mocking time, `Date.now()` will also be mocked. If you for some reason
+      * need access to the real current time, you can invoke this function.
       *
-      * > Note: This function is only available when using Lolex as fake timers implementation
+      * @remarks
+      * Not available when using legacy fake timers implementation.
       */
     def getRealSystemTime(): Double = js.native
+    
+    /**
+      * Retrieves the seed value. It will be randomly generated for each test run
+      * or can be manually set via the `--seed` CLI argument.
+      */
+    def getSeed(): Double = js.native
     
     /**
       * Returns the number of fake timers still left to run.
@@ -248,66 +220,103 @@ object mod {
     /**
       * Determines if the given function is a mocked function.
       */
-    def isMockFunction(fn: js.Function1[/* repeated */ js.Any, js.Any]): /* is std.ReturnType<@jest/environment.@jest/environment.JestMockFn> */ Boolean = js.native
+    def isMockFunction(fn: Any): /* is jest-mock.jest-mock.Mock<jest-mock.jest-mock.UnknownFunction> */ Boolean = js.native
+    /**
+      * Determines if the given function is a mocked function.
+      */
+    def isMockFunction[T /* <: FunctionLike */](fn: SpyInstance[T]): /* is jest-mock.jest-mock.SpyInstance<T> */ Boolean = js.native
+    /**
+      * Determines if the given function is a mocked function.
+      */
+    def isMockFunction[P /* <: js.Array[Any] */, R /* <: Any */](fn: js.Function1[/* args */ P, R]): /* is jest-mock.jest-mock.Mock<(args : P): R> */ Boolean = js.native
+    /**
+      * Determines if the given function is a mocked function.
+      */
+    @JSName("isMockFunction")
+    var isMockFunction_Original: FnCallFn = js.native
     
     /**
-      * `jest.isolateModules(fn)` goes a step further than `jest.resetModules()`
-      * and creates a sandbox registry for the modules that are loaded inside
-      * the callback function. This is useful to isolate specific modules for
-      * every test so that local module state doesn't conflict between tests.
+      * `jest.isolateModules()` goes a step further than `jest.resetModules()` and
+      * creates a sandbox registry for the modules that are loaded inside the callback
+      * function. This is useful to isolate specific modules for every test so that
+      * local module state doesn't conflict between tests.
       */
     def isolateModules(fn: js.Function0[Unit]): Jest = js.native
     
     /**
       * Mocks a module with an auto-mocked version when it is being required.
       */
-    def mock(moduleName: String): Jest = js.native
-    def mock(moduleName: String, moduleFactory: js.Function0[js.Any]): Jest = js.native
-    def mock(moduleName: String, moduleFactory: js.Function0[js.Any], options: Virtual): Jest = js.native
-    def mock(moduleName: String, moduleFactory: Unit, options: Virtual): Jest = js.native
+    def mock[T](moduleName: String): Jest = js.native
+    def mock[T](moduleName: String, moduleFactory: js.Function0[T]): Jest = js.native
+    def mock[T](moduleName: String, moduleFactory: js.Function0[T], options: Virtual): Jest = js.native
+    def mock[T](moduleName: String, moduleFactory: Unit, options: Virtual): Jest = js.native
+    
+    /**
+      * Wraps types of the `source` object and its deep members with type definitions
+      * of Jest mock function. Pass `{shallow: true}` option to disable the deeply
+      * mocked behavior.
+      */
+    def mocked[T /* <: js.Object */](source: T): Mocked_[T] = js.native
+    /**
+      * Wraps types of the `source` object and its deep members with type definitions
+      * of Jest mock function. Pass `{shallow: true}` option to disable the deeply
+      * mocked behavior.
+      */
+    def mocked[T /* <: js.Object */](source: T, options: Shallow): Mocked_[T] = js.native
+    /**
+      * Wraps types of the `source` object and its deep members with type definitions
+      * of Jest mock function. Pass `{shallow: true}` option to disable the deeply
+      * mocked behavior.
+      */
+    def mocked[T /* <: js.Object */](source: T, options: `0`): MockedShallow[T] = js.native
+    /**
+      * Wraps types of the `source` object and its deep members with type definitions
+      * of Jest mock function. Pass `{shallow: true}` option to disable the deeply
+      * mocked behavior.
+      */
+    @JSName("mocked")
+    var mocked_Original: FnCallSourceOptions = js.native
+    
+    /**
+      * Returns the current time in ms of the fake timer clock.
+      */
+    def now(): Double = js.native
     
     /**
       * Returns the actual module instead of a mock, bypassing all checks on
       * whether the module should receive a mock implementation or not.
       *
       * @example
-      ```
-      jest.mock('../myModule', () => {
-      // Require the original module to not be mocked...
-      const originalModule = jest.requireActual(moduleName);
-      return {
-      __esModule: true, // Use it when dealing with esModules
-      ...originalModule,
-      getRandom: jest.fn().mockReturnValue(10),
-      };
-      });
-      
-      const getRandom = require('../myModule').getRandom;
-      
-      getRandom(); // Always returns 10
-      ```
+      * ```js
+      * jest.mock('../myModule', () => {
+      *   // Require the original module to not be mocked...
+      *   const originalModule = jest.requireActual('../myModule');
+      *
+      *   return {
+      *     __esModule: true, // Use it when dealing with esModules
+      *     ...originalModule,
+      *     getRandom: jest.fn().mockReturnValue(10),
+      *   };
+      * });
+      *
+      * const getRandom = require('../myModule').getRandom;
+      *
+      * getRandom(); // Always returns 10
+      * ```
       */
-    def requireActual(moduleName: String): js.Any = js.native
+    def requireActual[T](moduleName: String): T = js.native
     
     /**
       * Returns a mock module instead of the actual module, bypassing all checks
       * on whether the module should be required normally or not.
       */
-    def requireMock(moduleName: String): js.Any = js.native
+    def requireMock[T](moduleName: String): T = js.native
     
     /**
-      * Resets the state of all mocks.
-      * Equivalent to calling .mockReset() on every mocked function.
+      * Resets the state of all mocks. Equivalent to calling `.mockReset()` on
+      * every mocked function.
       */
     def resetAllMocks(): Jest = js.native
-    
-    /**
-      * Resets the module registry - the cache of all required modules. This is
-      * useful to isolate modules where local state might conflict between tests.
-      *
-      * @deprecated Use `jest.resetModules()`
-      */
-    def resetModuleRegistry(): Jest = js.native
     
     /**
       * Resets the module registry - the cache of all required modules. This is
@@ -317,116 +326,211 @@ object mod {
     
     /**
       * Restores all mocks back to their original value. Equivalent to calling
-      * `.mockRestore` on every mocked function.
+      * `.mockRestore()` on every mocked function.
       *
-      * Beware that jest.restoreAllMocks() only works when the mock was created with
-      * jest.spyOn; other mocks will require you to manually restore them.
+      * Beware that `jest.restoreAllMocks()` only works when the mock was created
+      * with `jest.spyOn()`; other mocks will require you to manually restore them.
       */
     def restoreAllMocks(): Jest = js.native
     
     /**
       * Runs failed tests n-times until they pass or until the max number of
-      * retries is exhausted. This only works with `jest-circus`!
+      * retries is exhausted.
+      *
+      * If `logErrorsBeforeRetry` is enabled, Jest will log the error(s) that caused
+      * the test to fail to the console, providing visibility on why a retry occurred.
+      * retries is exhausted.
+      *
+      * @remarks
+      * Only available with `jest-circus` runner.
       */
     def retryTimes(numRetries: Double): Jest = js.native
+    def retryTimes(numRetries: Double, options: LogErrorsBeforeRetry): Jest = js.native
     
     /**
-      * Exhausts tasks queued by setImmediate().
+      * Exhausts tasks queued by `setImmediate()`.
       *
-      * > Note: This function is not available when using Lolex as fake timers implementation
+      * @remarks
+      * Only available when using legacy fake timers implementation.
       */
     def runAllImmediates(): Unit = js.native
     
     /**
       * Exhausts the micro-task queue (usually interfaced in node via
-      * process.nextTick).
+      * `process.nextTick()`).
       */
     def runAllTicks(): Unit = js.native
     
     /**
-      * Exhausts the macro-task queue (i.e., all tasks queued by setTimeout()
-      * and setInterval()).
+      * Exhausts the macro-task queue (i.e., all tasks queued by `setTimeout()`
+      * and `setInterval()`).
       */
     def runAllTimers(): Unit = js.native
     
     /**
       * Executes only the macro-tasks that are currently pending (i.e., only the
-      * tasks that have been queued by setTimeout() or setInterval() up to this
+      * tasks that have been queued by `setTimeout()` or `setInterval()` up to this
       * point). If any of the currently pending macro-tasks schedule new
       * macro-tasks, those new tasks will not be executed by this call.
       */
     def runOnlyPendingTimers(): Unit = js.native
     
     /**
-      * Executes only the macro task queue (i.e. all tasks queued by setTimeout()
-      * or setInterval() and setImmediate()).
-      *
-      * @deprecated Use `jest.advanceTimersByTime()`
-      */
-    def runTimersToTime(msToRun: Double): Unit = js.native
-    
-    /**
       * Explicitly supplies the mock object that the module system should return
       * for the specified module.
       *
-      * Note It is recommended to use `jest.mock()` instead. The `jest.mock`
-      * API's second argument is a module factory instead of the expected
-      * exported module object.
+      * @remarks
+      * It is recommended to use `jest.mock()` instead. The `jest.mock()` API's second
+      * argument is a module factory instead of the expected exported module object.
       */
-    def setMock(moduleName: String, moduleExports: js.Any): Jest = js.native
+    def setMock(moduleName: String, moduleExports: Any): Jest = js.native
     
     /**
-      *  Set the current system time used by fake timers. Simulates a user changing the system clock while your program is running. It affects the current time but it does not in itself cause e.g. timers to fire; they will fire exactly as they would have done without the call to `jest.setSystemTime()`.
+      * Set the current system time used by fake timers. Simulates a user changing
+      * the system clock while your program is running. It affects the current time,
+      * but it does not in itself cause e.g. timers to fire; they will fire exactly
+      * as they would have done without the call to `jest.setSystemTime()`.
       *
-      *  > Note: This function is only available when using Lolex as fake timers implementation
+      * @remarks
+      * Not available when using legacy fake timers implementation.
       */
     def setSystemTime(): Unit = js.native
+    def setSystemTime(now: js.Date): Unit = js.native
     def setSystemTime(now: Double): Unit = js.native
-    def setSystemTime(now: Date): Unit = js.native
     
     /**
       * Set the default timeout interval for tests and before/after hooks in
       * milliseconds.
       *
-      * Note: The default timeout interval is 5 seconds if this method is not
-      * called.
+      * @remarks
+      * The default timeout interval is 5 seconds if this method is not called.
       */
     def setTimeout(timeout: Double): Jest = js.native
     
     /**
-      * Creates a mock function similar to `jest.fn` but also tracks calls to
+      * Creates a mock function similar to `jest.fn()` but also tracks calls to
       * `object[methodName]`.
       *
-      * Note: By default, jest.spyOn also calls the spied method. This is
-      * different behavior from most other test libraries.
+      * Optional third argument of `accessType` can be either 'get' or 'set', which
+      * proves to be useful when you want to spy on a getter or a setter, respectively.
+      *
+      * @remarks
+      * By default, `jest.spyOn()` also calls the spied method. This is different
+      * behavior from most other test libraries.
       */
-    var spyOn: JestMockSpyOn = js.native
+    def spyOn[T /* <: js.Object */, K /* <: ConstructorLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K] */ js.Any */](`object`: T, methodKey: K): /* import warning: importer.ImportType#apply Failed type conversion: V extends jest-mock.jest-mock.ClassLike ? jest-mock.jest-mock.SpyInstance<(args : std.ConstructorParameters<V>): std.InstanceType<V>> : never */ js.Any = js.native
+    /**
+      * Creates a mock function similar to `jest.fn()` but also tracks calls to
+      * `object[methodName]`.
+      *
+      * Optional third argument of `accessType` can be either 'get' or 'set', which
+      * proves to be useful when you want to spy on a getter or a setter, respectively.
+      *
+      * @remarks
+      * By default, `jest.spyOn()` also calls the spied method. This is different
+      * behavior from most other test libraries.
+      */
+    @JSName("spyOn")
+    var spyOn_Original: FnCallObjectMethodKeyAccessType = js.native
+    /**
+      * Creates a mock function similar to `jest.fn()` but also tracks calls to
+      * `object[methodName]`.
+      *
+      * Optional third argument of `accessType` can be either 'get' or 'set', which
+      * proves to be useful when you want to spy on a getter or a setter, respectively.
+      *
+      * @remarks
+      * By default, `jest.spyOn()` also calls the spied method. This is different
+      * behavior from most other test libraries.
+      */
+    @JSName("spyOn")
+    def spyOn_get[T /* <: js.Object */, K /* <: PropertyLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K] */ js.Any */](`object`: T, methodKey: K, accessType: get): SpyInstance[js.Function0[V]] = js.native
+    /**
+      * Creates a mock function similar to `jest.fn()` but also tracks calls to
+      * `object[methodName]`.
+      *
+      * Optional third argument of `accessType` can be either 'get' or 'set', which
+      * proves to be useful when you want to spy on a getter or a setter, respectively.
+      *
+      * @remarks
+      * By default, `jest.spyOn()` also calls the spied method. This is different
+      * behavior from most other test libraries.
+      */
+    @JSName("spyOn")
+    def spyOn_set[T /* <: js.Object */, K /* <: PropertyLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K] */ js.Any */](`object`: T, methodKey: K, accessType: set): SpyInstance[js.Function1[/* arg */ V, Unit]] = js.native
     
     /**
       * Indicates that the module system should never return a mocked version of
-      * the specified module from require() (e.g. that it should always return the
+      * the specified module from `require()` (e.g. that it should always return the
       * real module).
       */
     def unmock(moduleName: String): Jest = js.native
     
     /**
-      * Instructs Jest to use fake versions of the standard timer functions.
+      * Mocks a module with the provided module factory when it is being imported.
       */
-    def useFakeTimers(): Jest = js.native
-    @JSName("useFakeTimers")
-    def useFakeTimers_legacy(implementation: legacy): Jest = js.native
-    @JSName("useFakeTimers")
-    def useFakeTimers_modern(implementation: modern): Jest = js.native
+    def unstable_mockModule[T](moduleName: String, moduleFactory: js.Function0[T | js.Promise[T]]): Jest = js.native
+    def unstable_mockModule[T](moduleName: String, moduleFactory: js.Function0[T | js.Promise[T]], options: Virtual): Jest = js.native
     
     /**
-      * Instructs Jest to use the real versions of the standard timer functions.
+      * Instructs Jest to use fake versions of the global date, performance,
+      * time and timer APIs. Fake timers implementation is backed by
+      * [`@sinonjs/fake-timers`](https://github.com/sinonjs/fake-timers).
+      *
+      * @remarks
+      * Calling `jest.useFakeTimers()` once again in the same test file would reinstall
+      * fake timers using the provided options.
+      */
+    def useFakeTimers(): Jest = js.native
+    def useFakeTimers(fakeTimersConfig: FakeTimersConfig): Jest = js.native
+    def useFakeTimers(fakeTimersConfig: LegacyFakeTimersConfig): Jest = js.native
+    
+    /**
+      * Instructs Jest to restore the original implementations of the global date,
+      * performance, time and timer APIs.
       */
     def useRealTimers(): Jest = js.native
   }
   
-  type JestMockFn = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jestMock.fn */ js.Any
+  trait JestEnvironmentConfig extends StObject {
+    
+    var globalConfig: GlobalConfig
+    
+    var projectConfig: ProjectConfig
+  }
+  object JestEnvironmentConfig {
+    
+    inline def apply(globalConfig: GlobalConfig, projectConfig: ProjectConfig): JestEnvironmentConfig = {
+      val __obj = js.Dynamic.literal(globalConfig = globalConfig.asInstanceOf[js.Any], projectConfig = projectConfig.asInstanceOf[js.Any])
+      __obj.asInstanceOf[JestEnvironmentConfig]
+    }
+    
+    extension [Self <: JestEnvironmentConfig](x: Self) {
+      
+      inline def setGlobalConfig(value: GlobalConfig): Self = StObject.set(x, "globalConfig", value.asInstanceOf[js.Any])
+      
+      inline def setProjectConfig(value: ProjectConfig): Self = StObject.set(x, "projectConfig", value.asInstanceOf[js.Any])
+    }
+  }
   
-  type JestMockSpyOn = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jestMock.spyOn */ js.Any
+  trait JestImportMeta
+    extends StObject
+       with ImportMeta {
+    
+    var jest: Jest
+  }
+  object JestImportMeta {
+    
+    inline def apply(jest: Jest, url: String): JestImportMeta = {
+      val __obj = js.Dynamic.literal(jest = jest.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[JestImportMeta]
+    }
+    
+    extension [Self <: JestImportMeta](x: Self) {
+      
+      inline def setJest(value: Jest): Self = StObject.set(x, "jest", value.asInstanceOf[js.Any])
+    }
+  }
   
   type Module = NodeModule
   
@@ -436,54 +540,20 @@ object mod {
     def apply(
       module: Module,
       exports: /* import warning: importer.ImportType#apply Failed type conversion: @jest/environment.@jest/environment.Module['exports'] */ js.Any,
-      require: Require & (js.Function1[/* id */ String, js.Any]),
+      require: Require & (js.Function1[/* id */ String, Any]),
       __dirname: String,
       __filename: String,
-      global: Global,
       jest: Unit,
-      extraGlobals: (js.UndefOr[
-          (js.Function0[
-            js.Any | js.Array[js.Any] | Boolean | Double | Error | EvalError | RangeError | ReferenceError | String | SyntaxError | TypeError | URIError | Unit
-          ]) | (ItBase & FnCall) | (js.Function2[
-            (/* callback */ js.Function1[/* repeated */ js.Any, Unit]) | (/* s */ String), 
-            (/* repeated */ js.Any) | (/* radix */ Double), 
-            Double | Immediate
-          ]) | WeakSetConstructor | (js.Function1[
-            (/* uriComponent */ Boolean) | (/* number */ Double) | (/* callback */ js.Function0[Unit]) | (/* immediateId */ Immediate) | (/* pattern */ RegExp) | (/* encodedURI */ String) | (/* timeoutId */ Timeout), 
-            js.Any | Boolean | Double | js.Function | RegExp | String | Unit
-          ]) | (TypeofBuffer & (Instantiable2[/* str */ String, /* encoding */ js.UndefOr[BufferEncoding], Buffer])) | Uint16ArrayConstructor | typings.node.NodeJS.Global | ArrayBufferConstructor | Double | Uint32ArrayConstructor | SetConstructor | (Describe & (js.Function2[/* blockName */ BlockName, /* blockFn */ BlockFn, Unit])) | Float32ArrayConstructor | Int8ArrayConstructor | JSON | (ItBaseconcurrentItConcurr & FnCall) | js.Function | (ItConcurrent & FnCall) | Int32ArrayConstructor | DataViewConstructor | CoverageMapData | Uint8ClampedArrayConstructor | Math | PromiseConstructor | Int16ArrayConstructor | (js.Function3[
-            /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
-            /* ms */ Double, 
-            /* repeated */ js.Any, 
-            Timeout
-          ]) | Jasmine | js.Any | (DescribeBase & (js.Function2[/* blockName */ BlockName, /* blockFn */ BlockFn, Unit])) | Float64ArrayConstructor | Uint8ArrayConstructor | WeakMapConstructor | (HookBase & FnCallFnTimeout) | MapConstructor
-        ])*
-    ): js.Any = js.native
+      sandboxInjectedGlobals: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Global.Global * / any[keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Global.Global * / any] */ js.Any)*
+    ): Any = js.native
     def apply(
       module: Module,
       exports: /* import warning: importer.ImportType#apply Failed type conversion: @jest/environment.@jest/environment.Module['exports'] */ js.Any,
-      require: Require & (js.Function1[/* id */ String, js.Any]),
+      require: Require & (js.Function1[/* id */ String, Any]),
       __dirname: String,
       __filename: String,
-      global: Global,
       jest: Jest,
-      extraGlobals: (js.UndefOr[
-          (js.Function0[
-            js.Any | js.Array[js.Any] | Boolean | Double | Error | EvalError | RangeError | ReferenceError | String | SyntaxError | TypeError | URIError | Unit
-          ]) | (ItBase & FnCall) | (js.Function2[
-            (/* callback */ js.Function1[/* repeated */ js.Any, Unit]) | (/* s */ String), 
-            (/* repeated */ js.Any) | (/* radix */ Double), 
-            Double | Immediate
-          ]) | WeakSetConstructor | (js.Function1[
-            (/* uriComponent */ Boolean) | (/* number */ Double) | (/* callback */ js.Function0[Unit]) | (/* immediateId */ Immediate) | (/* pattern */ RegExp) | (/* encodedURI */ String) | (/* timeoutId */ Timeout), 
-            js.Any | Boolean | Double | js.Function | RegExp | String | Unit
-          ]) | (TypeofBuffer & (Instantiable2[/* str */ String, /* encoding */ js.UndefOr[BufferEncoding], Buffer])) | Uint16ArrayConstructor | typings.node.NodeJS.Global | ArrayBufferConstructor | Double | Uint32ArrayConstructor | SetConstructor | (Describe & (js.Function2[/* blockName */ BlockName, /* blockFn */ BlockFn, Unit])) | Float32ArrayConstructor | Int8ArrayConstructor | JSON | (ItBaseconcurrentItConcurr & FnCall) | js.Function | (ItConcurrent & FnCall) | Int32ArrayConstructor | DataViewConstructor | CoverageMapData | Uint8ClampedArrayConstructor | Math | PromiseConstructor | Int16ArrayConstructor | (js.Function3[
-            /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
-            /* ms */ Double, 
-            /* repeated */ js.Any, 
-            Timeout
-          ]) | Jasmine | js.Any | (DescribeBase & (js.Function2[/* blockName */ BlockName, /* blockFn */ BlockFn, Unit])) | Float64ArrayConstructor | Uint8ArrayConstructor | WeakMapConstructor | (HookBase & FnCallFnTimeout) | MapConstructor
-        ])*
-    ): js.Any = js.native
+      sandboxInjectedGlobals: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Global.Global * / any[keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Global.Global * / any] */ js.Any)*
+    ): Any = js.native
   }
 }

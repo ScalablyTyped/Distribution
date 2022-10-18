@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs", "ShadowLight")
+/* note: abstract class */ @JSImport("babylonjs", "ShadowLight")
 @js.native
-abstract class ShadowLight protected ()
-  extends typings.babylonjs.legacyMod.ShadowLight {
+open class ShadowLight protected ()
+  extends typings.babylonjs.legacyLegacyMod.ShadowLight {
   /**
     * Creates a Light object in the scene.
     * Documentation : https://doc.babylonjs.com/babylon101/lights

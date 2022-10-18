@@ -1,7 +1,7 @@
 package typings.antd.anon
 
 import typings.antd.antdStrings.warn
-import typings.antd.confirmMod.ModalStaticFunctions
+import typings.antd.libModalConfirmMod.ModalStaticFunctions
 import typings.react.mod.ReactElement
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject

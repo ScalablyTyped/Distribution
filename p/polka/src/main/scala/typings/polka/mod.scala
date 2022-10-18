@@ -6,7 +6,7 @@ import typings.express.mod.RequestHandler
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.node.urlMod.Url
 import typings.std.Record
 import typings.trouter.mod.FindResult

@@ -1,7 +1,9 @@
 package typings.jssha.anon
 
-import typings.jssha.jsshaStrings.ARRAYBUFFER
-import typings.jssha.sha256Mod.GenericInputType
+import typings.jssha.jsshaStrings.B64
+import typings.jssha.jsshaStrings.BYTES
+import typings.jssha.jsshaStrings.HEX
+import typings.jssha.mod.GenericInputType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,26 +11,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Value
   extends StObject
      with GenericInputType
-     with typings.jssha.mod.GenericInputType
-     with typings.jssha.sha512Mod.GenericInputType
-     with typings.jssha.sha3Mod.GenericInputType
-     with typings.jssha.sha1Mod.GenericInputType {
+     with typings.jssha.distSha1Mod.GenericInputType
+     with typings.jssha.distSha3Mod.GenericInputType
+     with typings.jssha.distSha256Mod.GenericInputType
+     with typings.jssha.distSha512Mod.GenericInputType {
   
-  var format: ARRAYBUFFER
+  var format: B64 | HEX | BYTES
   
-  var value: js.typedarray.ArrayBuffer
+  var value: String
 }
 object Value {
   
-  inline def apply(value: js.typedarray.ArrayBuffer): Value = {
-    val __obj = js.Dynamic.literal(format = "ARRAYBUFFER", value = value.asInstanceOf[js.Any])
+  inline def apply(format: B64 | HEX | BYTES, value: String): Value = {
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
   
   extension [Self <: Value](x: Self) {
     
-    inline def setFormat(value: ARRAYBUFFER): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: B64 | HEX | BYTES): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

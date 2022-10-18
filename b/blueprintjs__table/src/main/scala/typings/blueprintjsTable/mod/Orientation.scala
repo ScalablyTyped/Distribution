@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Orientation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.blueprintjsTable.resizeHandleMod.Orientation & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.blueprintjsTable.libEsmInteractionsResizeHandleMod.Orientation & Double] = js.native
   
-  /* 1 */ val HORIZONTAL: typings.blueprintjsTable.resizeHandleMod.Orientation.HORIZONTAL & Double = js.native
+  /* 1 */ val HORIZONTAL: typings.blueprintjsTable.libEsmInteractionsResizeHandleMod.Orientation.HORIZONTAL & Double = js.native
   
-  /* 0 */ val VERTICAL: typings.blueprintjsTable.resizeHandleMod.Orientation.VERTICAL & Double = js.native
+  /* 0 */ val VERTICAL: typings.blueprintjsTable.libEsmInteractionsResizeHandleMod.Orientation.VERTICAL & Double = js.native
 }

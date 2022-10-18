@@ -1,7 +1,6 @@
 package typings.blueprintjsCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.blueprintjsCore.anon.DisplayName
 import typings.blueprintjsCore.anon.HTMLPropsHTMLElementIElem
 import typings.blueprintjsCore.anon.HTMLPropsHTMLHeadingEleme
@@ -14,21 +13,21 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.bottom
 import typings.blueprintjsCore.blueprintjsCoreStrings.left
 import typings.blueprintjsCore.blueprintjsCoreStrings.right
 import typings.blueprintjsCore.blueprintjsCoreStrings.top
-import typings.blueprintjsCore.breadcrumbMod.BreadcrumbProps
-import typings.blueprintjsCore.constructorMod.IConstructor
-import typings.blueprintjsCore.contextMenuTargetMod.IContextMenuTargetComponent
-import typings.blueprintjsCore.hotkeyConfigMod.HotkeyConfig
-import typings.blueprintjsCore.hotkeyParserMod.IKeyCombo
-import typings.blueprintjsCore.hotkeysDialog2Mod.HotkeysDialog2Props
-import typings.blueprintjsCore.hotkeysProviderMod.HotkeysContextInstance
-import typings.blueprintjsCore.hotkeysProviderMod.HotkeysProviderProps
-import typings.blueprintjsCore.hotkeysTarget2Mod.HotkeysTarget2Props
-import typings.blueprintjsCore.hotkeysTargetMod.IHotkeysTargetComponent
+import typings.blueprintjsCore.libEsmCommonConstructorMod.IConstructor
+import typings.blueprintjsCore.libEsmComponentsBreadcrumbsBreadcrumbMod.BreadcrumbProps
+import typings.blueprintjsCore.libEsmComponentsContextMenuContextMenuTargetMod.IContextMenuTargetComponent
+import typings.blueprintjsCore.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo
+import typings.blueprintjsCore.libEsmComponentsHotkeysHotkeysDialog2Mod.HotkeysDialog2Props
+import typings.blueprintjsCore.libEsmComponentsHotkeysHotkeysTarget2Mod.HotkeysTarget2Props
+import typings.blueprintjsCore.libEsmComponentsHotkeysHotkeysTargetMod.IHotkeysTargetComponent
+import typings.blueprintjsCore.libEsmComponentsPanelStack2PanelStack2Mod.PanelStack2Component
+import typings.blueprintjsCore.libEsmContextHotkeysHotkeysProviderMod.HotkeysContextInstance
+import typings.blueprintjsCore.libEsmContextHotkeysHotkeysProviderMod.HotkeysProviderProps
+import typings.blueprintjsCore.libEsmContextPortalPortalProviderMod.PortalContextOptions
+import typings.blueprintjsCore.libEsmHooksHotkeysHotkeyConfigMod.HotkeyConfig
+import typings.blueprintjsCore.libEsmHooksHotkeysUseHotkeysMod.UseHotkeysOptions
+import typings.blueprintjsCore.libEsmHooksHotkeysUseHotkeysMod.UseHotkeysReturnValue
 import typings.blueprintjsCore.mod.^
-import typings.blueprintjsCore.panelStack2Mod.PanelStack2Component
-import typings.blueprintjsCore.portalProviderMod.PortalContextOptions
-import typings.blueprintjsCore.useHotkeysMod.UseHotkeysOptions
-import typings.blueprintjsCore.useHotkeysMod.UseHotkeysReturnValue
 import typings.react.mod.Context
 import typings.react.mod.FC
 import typings.react.mod.PropsWithChildren
@@ -99,7 +98,7 @@ inline def getKeyCombo(e: KeyboardEvent): IKeyCombo = ^.asInstanceOf[js.Dynamic]
 
 inline def getKeyComboString(e: KeyboardEvent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyComboString")(e.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def getPositionIgnoreAngles(position: typings.blueprintjsCore.positionMod.Position): left | top | bottom | right = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionIgnoreAngles")(position.asInstanceOf[js.Any]).asInstanceOf[left | top | bottom | right]
+inline def getPositionIgnoreAngles(position: typings.blueprintjsCore.libEsmCommonPositionMod.Position): left | right | bottom | top = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionIgnoreAngles")(position.asInstanceOf[js.Any]).asInstanceOf[left | right | bottom | top]
 
 inline def getRef[T](): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[T | Null]
 inline def getRef[T](ref: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
@@ -107,9 +106,9 @@ inline def getRef[T](ref: RefObject[T]): T | Null = ^.asInstanceOf[js.Dynamic].a
 
 inline def hideHotkeysDialog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideHotkeysDialog")().asInstanceOf[Unit]
 
-inline def isPositionHorizontal(position: typings.blueprintjsCore.positionMod.Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionHorizontal")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def isPositionHorizontal(position: typings.blueprintjsCore.libEsmCommonPositionMod.Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionHorizontal")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def isPositionVertical(position: typings.blueprintjsCore.positionMod.Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionVertical")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def isPositionVertical(position: typings.blueprintjsCore.libEsmCommonPositionMod.Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionVertical")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
 inline def isRefCallback[T](): /* is react.react.RefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")().asInstanceOf[/* is react.react.RefCallback<T> */ Boolean]
 inline def isRefCallback[T](value: Ref[T]): /* is react.react.RefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.RefCallback<T> */ Boolean]
@@ -122,15 +121,11 @@ inline def mergeRefs[T](refs: Ref[T]*): RefCallback[T] = ^.asInstanceOf[js.Dynam
 inline def parseKeyCombo(combo: String): IKeyCombo = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeyCombo")(combo.asInstanceOf[js.Any]).asInstanceOf[IKeyCombo]
 
 inline def refHandler[T /* <: HTMLElement */, K /* <: String */](
-  refTargetParent: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ k in K ]: T | null}
-  */ typings.blueprintjsCore.blueprintjsCoreStrings.refHandler & TopLevel[Any],
+  refTargetParent: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in K ]: T | null} */ js.Any,
   refTargetKey: K
 ): RefCallback[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("refHandler")(refTargetParent.asInstanceOf[js.Any], refTargetKey.asInstanceOf[js.Any])).asInstanceOf[RefCallback[T]]
 inline def refHandler[T /* <: HTMLElement */, K /* <: String */](
-  refTargetParent: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ k in K ]: T | null}
-  */ typings.blueprintjsCore.blueprintjsCoreStrings.refHandler & TopLevel[Any],
+  refTargetParent: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in K ]: T | null} */ js.Any,
   refTargetKey: K,
   refProp: Ref[T]
 ): RefCallback[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("refHandler")(refTargetParent.asInstanceOf[js.Any], refTargetKey.asInstanceOf[js.Any], refProp.asInstanceOf[js.Any])).asInstanceOf[RefCallback[T]]

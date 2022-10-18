@@ -1,6 +1,6 @@
 package typings.bizcharts.anon
 
-import typings.antvUtil.parseRadiusMod.RadiusType
+import typings.antvUtil.libLodashParseRadiusMod.RadiusType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

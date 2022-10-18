@@ -1,10 +1,10 @@
 package typings.styledComponents.anon
 
-import typings.styledComponents.distTypesMod.IStyledComponent
-import typings.styledComponents.distTypesMod.Interpolation
-import typings.styledComponents.distTypesMod.StyledOptions
-import typings.styledComponents.distTypesMod.Styles
-import typings.styledComponents.distTypesMod.WebTarget
+import typings.styledComponents.nativeDistDistTypesMod.WebTarget
+import typings.styledComponents.nativeDistTypesMod.IStyledComponent
+import typings.styledComponents.nativeDistTypesMod.Interpolation
+import typings.styledComponents.nativeDistTypesMod.StyledOptions
+import typings.styledComponents.nativeDistTypesMod.Styles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait `170`[Target /* <: WebTarget */] extends StObject {
   
-  def apply[Props, Statics](initialStyles: Styles[Props], interpolations: Interpolation[Props]*): (IStyledComponent[Target, Props]) & Statics = js.native
+  def apply[Props, Statics](initialStyles: Styles[Props], interpolations: Interpolation[Props]*): (IStyledComponent[Target, Props, js.Object]) & Statics = js.native
   
-  def attrs(attrs: typings.styledComponents.distTypesMod.Attrs[Any]): Any = js.native
+  def attrs(attrs: typings.styledComponents.nativeDistTypesMod.Attrs[Any]): Any = js.native
   
-  def withConfig(config: StyledOptions[Any]): Any = js.native
+  def withConfig(
+    config: StyledOptions[
+      Any, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Props */ Any
+    ]
+  ): Any = js.native
 }

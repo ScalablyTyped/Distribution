@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the ability to enable and disable High Dynamic Range (HDR) analysis for the SceneAnalysisEffect . */
-@JSGlobal("Windows.Media.Core.HighDynamicRangeControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.HighDynamicRangeControl")
 @js.native
-abstract class HighDynamicRangeControl ()
+open class HighDynamicRangeControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.HighDynamicRangeControl {
   

@@ -2,19 +2,19 @@ package typings.babylonjs.enginesIndexMod
 
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.WebGLProgram
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.dataBufferMod.DataBuffer
-import typings.babylonjs.engineMod.IDisplayChangedEventArgs
-import typings.babylonjs.engineQueryMod.OcclusionQuery
-import typings.babylonjs.engineWebVRMod.IVRPresentationAttributes
-import typings.babylonjs.mathSizeMod.Size
-import typings.babylonjs.observableMod.Observable
-import typings.babylonjs.observableMod.Observer
-import typings.babylonjs.perfCounterMod.PerfCounter
-import typings.babylonjs.timeTokenMod.TimeToken
+import typings.babylonjs.buffersDataBufferMod.DataBuffer
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.camerasVRWebVRCameraMod.WebVROptions
+import typings.babylonjs.enginesEngineMod.IDisplayChangedEventArgs
+import typings.babylonjs.enginesExtensionsEngineDotqueryMod.OcclusionQuery
+import typings.babylonjs.enginesExtensionsEngineDotwebVRMod.IVRPresentationAttributes
+import typings.babylonjs.instrumentationTimeTokenMod.TimeToken
+import typings.babylonjs.mathsMathDotsizeMod.Size
+import typings.babylonjs.miscObservableMod.Observable
+import typings.babylonjs.miscObservableMod.Observer
+import typings.babylonjs.miscPerfCounterMod.PerfCounter
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.typesMod.int
-import typings.babylonjs.webVRCameraMod.WebVROptions
 import typings.std.HTMLElement
 import typings.std.WebGLQuery
 import typings.std.WebGLTransformFeedback
@@ -72,12 +72,16 @@ object babylonjsEnginesEngineAugmentingMod {
     
     /** @internal */
     var _onBeginFrameObserver: Nullable[
-        Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
+        Observer[
+          typings.babylonjs.enginesExtensionsEngineDotqueryMod.babylonjsEnginesEngineAugmentingMod.Engine
+        ]
       ] = js.native
     
     /** @internal */
     var _onEndFrameObserver: Nullable[
-        Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
+        Observer[
+          typings.babylonjs.enginesExtensionsEngineDotqueryMod.babylonjsEnginesEngineAugmentingMod.Engine
+        ]
       ] = js.native
     
     /**
@@ -123,7 +127,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * Gets the current engine view
       * @see https://doc.babylonjs.com/how_to/multi_canvases
       */
-    var activeView: Nullable[typings.babylonjs.engineViewsMod.EngineView] = js.native
+    var activeView: Nullable[typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView] = js.native
     
     /**
       * Initiates an occlusion query
@@ -144,7 +148,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * Binds a multiview render target wrapper to be drawn to
       * @param multiviewTexture render target wrapper to bind
       */
-    def bindMultiviewFramebuffer(multiviewTexture: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper): Unit = js.native
+    def bindMultiviewFramebuffer(multiviewTexture: typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper): Unit = js.native
     
     /**
       * Bind a webGL transform feedback object to the webgl context
@@ -170,7 +174,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param height defines the height of the texture
       * @returns the created multiview render target wrapper
       */
-    def createMultiviewRenderTargetTexture(width: Double, height: Double): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
+    def createMultiviewRenderTargetTexture(width: Double, height: Double): typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper = js.native
     
     /**
       * Create a new webGL query (you must be sure that queries are supported by checking getCaps() function)
@@ -190,7 +194,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param query defines the query to delete
       * @returns the current engine
       */
-    def deleteQuery(query: OcclusionQuery): typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
+    def deleteQuery(query: OcclusionQuery): typings.babylonjs.enginesExtensionsEngineDotqueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
     
     /**
       * Delete a webGL transform feedback object
@@ -212,7 +216,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param algorithmType defines the algorithm to use
       * @returns the current engine
       */
-    def endOcclusionQuery(algorithmType: Double): typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
+    def endOcclusionQuery(algorithmType: Double): typings.babylonjs.enginesExtensionsEngineDotqueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
     
     /**
       * Ends a time query
@@ -279,12 +283,12 @@ object babylonjsEnginesEngineAugmentingMod {
     /**
       * Will be triggered after the view rendered
       */
-    val onAfterViewRenderObservable: Observable[typings.babylonjs.engineViewsMod.EngineView] = js.native
+    val onAfterViewRenderObservable: Observable[typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView] = js.native
     
     /**
       * Will be triggered before the view renders
       */
-    val onBeforeViewRenderObservable: Observable[typings.babylonjs.engineViewsMod.EngineView] = js.native
+    val onBeforeViewRenderObservable: Observable[typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView] = js.native
     
     /**
       * Observable signaled when VR display mode changes
@@ -299,7 +303,9 @@ object babylonjsEnginesEngineAugmentingMod {
     /**
       * Observable signaled when VR request present starts
       */
-    var onVRRequestPresentStart: Observable[typings.babylonjs.engineWebVRMod.babylonjsEnginesEngineAugmentingMod.Engine] = js.native
+    var onVRRequestPresentStart: Observable[
+        typings.babylonjs.enginesExtensionsEngineDotwebVRMod.babylonjsEnginesEngineAugmentingMod.Engine
+      ] = js.native
     
     /**
       * Register a new child canvas
@@ -308,10 +314,10 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param clearBeforeCopy Indicates if the destination view canvas should be cleared before copying the parent canvas. Can help if the scene clear color has alpha < 1
       * @returns the associated view
       */
-    def registerView(canvas: HTMLCanvasElement): typings.babylonjs.engineViewsMod.EngineView = js.native
-    def registerView(canvas: HTMLCanvasElement, camera: Unit, clearBeforeCopy: Boolean): typings.babylonjs.engineViewsMod.EngineView = js.native
-    def registerView(canvas: HTMLCanvasElement, camera: Camera): typings.babylonjs.engineViewsMod.EngineView = js.native
-    def registerView(canvas: HTMLCanvasElement, camera: Camera, clearBeforeCopy: Boolean): typings.babylonjs.engineViewsMod.EngineView = js.native
+    def registerView(canvas: HTMLCanvasElement): typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView = js.native
+    def registerView(canvas: HTMLCanvasElement, camera: Unit, clearBeforeCopy: Boolean): typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView = js.native
+    def registerView(canvas: HTMLCanvasElement, camera: Camera): typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView = js.native
+    def registerView(canvas: HTMLCanvasElement, camera: Camera, clearBeforeCopy: Boolean): typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView = js.native
     
     /**
       * Set the compressed texture extensions or file names to skip.
@@ -372,10 +378,10 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param canvas defines the canvas to remove
       * @returns the current engine
       */
-    def unRegisterView(canvas: HTMLCanvasElement): typings.babylonjs.engineViewsMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
+    def unRegisterView(canvas: HTMLCanvasElement): typings.babylonjs.enginesExtensionsEngineDotviewsMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
     
     /** Gets or sets the list of views */
-    var views: js.Array[typings.babylonjs.engineViewsMod.EngineView] = js.native
+    var views: js.Array[typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView] = js.native
     
     /**
       * Gets or sets the presentation attributes used to configure VR rendering

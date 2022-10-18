@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonline
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait LighthouseResultV5 extends StObject {
   
   /** Map of audits in the LHR. */
   var audits: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.LighthouseAuditResultV5}
-    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.LighthouseAuditResultV5} */ js.Any
   ] = js.undefined
   
   /** Map of categories in the LHR. */
@@ -19,9 +16,7 @@ trait LighthouseResultV5 extends StObject {
   
   /** Map of category groups in the LHR. */
   var categoryGroups: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.CategoryGroupV5}
-    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.CategoryGroupV5} */ js.Any
   ] = js.undefined
   
   /** The configuration settings for this LHR. */
@@ -70,9 +65,7 @@ object LighthouseResultV5 {
   extension [Self <: LighthouseResultV5](x: Self) {
     
     inline def setAudits(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.LighthouseAuditResultV5}
-      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.LighthouseAuditResultV5} */ js.Any
     ): Self = StObject.set(x, "audits", value.asInstanceOf[js.Any])
     
     inline def setAuditsUndefined: Self = StObject.set(x, "audits", js.undefined)
@@ -82,9 +75,7 @@ object LighthouseResultV5 {
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     inline def setCategoryGroups(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.CategoryGroupV5}
-      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.CategoryGroupV5} */ js.Any
     ): Self = StObject.set(x, "categoryGroups", value.asInstanceOf[js.Any])
     
     inline def setCategoryGroupsUndefined: Self = StObject.set(x, "categoryGroups", js.undefined)

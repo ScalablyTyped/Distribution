@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@zip.js/zip.js" : "2.6.29"
+      "@zip.js/zip.js" : "2.6.43"
     }
   ],
   "test-dependencies" : [
     {
-      "@zip.js/zip.js" : "2.6.29"
+      "@zip.js/zip.js" : "2.6.43"
     }
   ],
   "compile-devDependencies" : [

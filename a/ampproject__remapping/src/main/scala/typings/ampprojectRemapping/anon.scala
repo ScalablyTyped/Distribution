@@ -1,6 +1,6 @@
 package typings.ampprojectRemapping
 
-import typings.ampprojectRemapping.sourceMapTreeMod.SourceMapSegmentObject
+import typings.ampprojectRemapping.distTypesSourceMapTreeMod.SourceMapSegmentObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

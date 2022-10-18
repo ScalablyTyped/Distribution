@@ -342,7 +342,9 @@ object default {
     *
     * @param inputId - Can be a 24 character hex string, 12 byte binary Buffer, or a number.
     */
-  open class ObjectIDCls_ () extends ObjectId {
+  open class ObjectIDCls_ ()
+    extends StObject
+       with ObjectId {
     def this(inputId: String) = this()
     def this(inputId: js.typedarray.Uint8Array) = this()
     def this(inputId: scala.Double) = this()
@@ -388,7 +390,9 @@ object default {
     *
     * @param inputId - Can be a 24 character hex string, 12 byte binary Buffer, or a number.
     */
-  open class ObjectIdCls () extends ObjectId {
+  open class ObjectIdCls ()
+    extends StObject
+       with ObjectId {
     def this(inputId: String) = this()
     def this(inputId: js.typedarray.Uint8Array) = this()
     def this(inputId: scala.Double) = this()

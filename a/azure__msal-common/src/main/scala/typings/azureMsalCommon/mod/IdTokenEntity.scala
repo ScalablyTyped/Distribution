@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "IdTokenEntity")
 @js.native
 open class IdTokenEntity ()
-  extends typings.azureMsalCommon.idTokenEntityMod.IdTokenEntity
+  extends typings.azureMsalCommon.distCacheEntitiesIdTokenEntityMod.IdTokenEntity
 /* static members */
 object IdTokenEntity {
   
@@ -22,7 +22,7 @@ object IdTokenEntity {
     * @param clientId
     * @param authority
     */
-  inline def createIdTokenEntity(homeAccountId: String, environment: String, idToken: String, clientId: String, tenantId: String): typings.azureMsalCommon.idTokenEntityMod.IdTokenEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createIdTokenEntity")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], tenantId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.idTokenEntityMod.IdTokenEntity]
+  inline def createIdTokenEntity(homeAccountId: String, environment: String, idToken: String, clientId: String, tenantId: String): typings.azureMsalCommon.distCacheEntitiesIdTokenEntityMod.IdTokenEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createIdTokenEntity")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], tenantId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesIdTokenEntityMod.IdTokenEntity]
   
   /**
     * Validates an entity: checks for all expected params

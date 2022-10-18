@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object splitJsStrings {
   
   @js.native
-  sealed trait Partial extends StObject
-  inline def Partial: Partial = "Partial".asInstanceOf[Partial]
-  
-  @js.native
   sealed trait height extends StObject
   inline def height: height = "height".asInstanceOf[height]
   

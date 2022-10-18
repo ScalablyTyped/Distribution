@@ -1,16 +1,15 @@
 package typings.typestyle
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
 import typings.typestyle.anon.AutoGenerateTag
 import typings.typestyle.anon.TextContent
-import typings.typestyle.typesMod.FontFace
-import typings.typestyle.typesMod.KeyFrames
-import typings.typestyle.typesMod.MediaQuery
-import typings.typestyle.typesMod.NestedCSSProperties
+import typings.typestyle.libInternalTypestyleMod.StylesTarget
+import typings.typestyle.libTypesMod.FontFace
+import typings.typestyle.libTypesMod.KeyFrames
+import typings.typestyle.libTypesMod.MediaQuery
+import typings.typestyle.libTypesMod.NestedCSSProperties
 import typings.typestyle.typestyleBooleans.`false`
-import typings.typestyle.typestyleMod.StylesTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,14 +23,14 @@ object mod {
   @JSImport("typestyle", "TypeStyle")
   @js.native
   open class TypeStyle protected ()
-    extends typings.typestyle.typestyleMod.TypeStyle {
+    extends typings.typestyle.libInternalTypestyleMod.TypeStyle {
     def this(hasAutoGenerateTag: AutoGenerateTag) = this()
   }
   
   inline def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[Any]])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classes")(classes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
-  inline def createTypeStyle(): typings.typestyle.typestyleMod.TypeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeStyle")().asInstanceOf[typings.typestyle.typestyleMod.TypeStyle]
-  inline def createTypeStyle(target: TextContent): typings.typestyle.typestyleMod.TypeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeStyle")(target.asInstanceOf[js.Any]).asInstanceOf[typings.typestyle.typestyleMod.TypeStyle]
+  inline def createTypeStyle(): typings.typestyle.libInternalTypestyleMod.TypeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeStyle")().asInstanceOf[typings.typestyle.libInternalTypestyleMod.TypeStyle]
+  inline def createTypeStyle(target: TextContent): typings.typestyle.libInternalTypestyleMod.TypeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeStyle")(target.asInstanceOf[js.Any]).asInstanceOf[typings.typestyle.libInternalTypestyleMod.TypeStyle]
   
   inline def cssRaw(mustBeValidCSS: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cssRaw")(mustBeValidCSS.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -55,9 +54,5 @@ object mod {
   
   inline def style(objects: (js.UndefOr[NestedCSSProperties | Null | `false`])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
-  inline def stylesheet[Classes /* <: String */](classes: Record[Classes, NestedCSSProperties]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ ClassName in Classes ]: string}
-    */ typings.typestyle.typestyleStrings.stylesheet & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stylesheet")(classes.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ ClassName in Classes ]: string}
-    */ typings.typestyle.typestyleStrings.stylesheet & TopLevel[Any]]
+  inline def stylesheet[Classes /* <: String */](classes: Record[Classes, NestedCSSProperties]): /* import warning: importer.ImportType#apply Failed type conversion: {[ ClassName in Classes ]: string} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stylesheet")(classes.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ ClassName in Classes ]: string} */ js.Any]
 }

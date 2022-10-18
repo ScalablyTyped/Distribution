@@ -1,7 +1,7 @@
 package typings.reactNativePaper.anon
 
 import typings.callstackReactThemeProvider.mod.DeepPartial
-import typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.ThemeFont
+import typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.ThemeFont
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

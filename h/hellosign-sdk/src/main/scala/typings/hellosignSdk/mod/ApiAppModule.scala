@@ -1,6 +1,6 @@
 package typings.hellosignSdk.mod
 
-import typings.hellosignSdk.anon.Pagesize
+import typings.hellosignSdk.anon.Page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait ApiAppModule extends StObject {
   def get(clientId: String): js.Promise[ApiAppResponse] = js.native
   
   def list(): js.Promise[ApiAppListResponse] = js.native
-  def list(params: Pagesize): js.Promise[ApiAppListResponse] = js.native
+  def list(params: Page): js.Promise[ApiAppListResponse] = js.native
   
   def update(clientId: String, options: ApiAppRequestOptions): js.Promise[ApiAppResponse] = js.native
 }

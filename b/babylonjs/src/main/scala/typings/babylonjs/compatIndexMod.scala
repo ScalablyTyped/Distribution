@@ -9,7 +9,7 @@ object compatIndexMod {
   @JSImport("babylonjs/Compat/index", "CompatibilityOptions")
   @js.native
   open class CompatibilityOptions ()
-    extends typings.babylonjs.compatibilityOptionsMod.CompatibilityOptions
+    extends typings.babylonjs.compatCompatibilityOptionsMod.CompatibilityOptions
   /* static members */
   object CompatibilityOptions {
     

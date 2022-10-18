@@ -5,6 +5,7 @@ import typings.asar.anon.Algorithm
 import typings.asar.anon.Stat
 import typings.asar.asarBooleans.`true`
 import typings.glob.mod.IOptions
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -84,12 +85,7 @@ object mod {
     
     var pattern: js.UndefOr[String] = js.undefined
     
-    var transform: js.UndefOr[
-        js.Function1[
-          /* filePath */ String, 
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any) | Unit
-        ]
-      ] = js.undefined
+    var transform: js.UndefOr[js.Function1[/* filePath */ String, ReadWriteStream | Unit]] = js.undefined
     
     var unpack: js.UndefOr[String] = js.undefined
     
@@ -120,9 +116,7 @@ object mod {
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      inline def setTransform(
-        value: /* filePath */ String => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any) | Unit
-      ): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* filePath */ String => ReadWriteStream | Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       

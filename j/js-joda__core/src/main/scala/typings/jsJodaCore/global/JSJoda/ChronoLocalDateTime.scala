@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("JSJoda.ChronoLocalDateTime")
+/* note: abstract class */ @JSGlobal("JSJoda.ChronoLocalDateTime")
 @js.native
-abstract class ChronoLocalDateTime ()
+open class ChronoLocalDateTime ()
   extends typings.jsJodaCore.mod.ChronoLocalDateTime

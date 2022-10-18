@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "OculusTouchController")
 @js.native
 open class OculusTouchController protected ()
-  extends typings.babylonjs.legacyMod.OculusTouchController {
+  extends typings.babylonjs.legacyLegacyMod.OculusTouchController {
   /**
     * Creates a new OculusTouchController from a gamepad
     * @param vrGamepad the gamepad that the controller should be created from

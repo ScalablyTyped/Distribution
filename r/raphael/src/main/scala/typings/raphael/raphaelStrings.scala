@@ -121,14 +121,6 @@ object raphaelStrings {
   inline def R: R = "R".asInstanceOf[R]
   
   @js.native
-  sealed trait RaphaelBaseElement extends StObject
-  inline def RaphaelBaseElement: RaphaelBaseElement = "RaphaelBaseElement".asInstanceOf[RaphaelBaseElement]
-  
-  @js.native
-  sealed trait RaphaelPaperPluginRegistry extends StObject
-  inline def RaphaelPaperPluginRegistry: RaphaelPaperPluginRegistry = "RaphaelPaperPluginRegistry".asInstanceOf[RaphaelPaperPluginRegistry]
-  
-  @js.native
   sealed trait S extends StObject
   inline def S: S = "S".asInstanceOf[S]
   

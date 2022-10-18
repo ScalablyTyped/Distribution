@@ -1,8 +1,8 @@
 package typings.roadsServer
 
 import typings.roads.mod.Road
-import typings.roadsServer.http2ServerMod.default
-import typings.roadsServer.httpServerMod.RoadsServerOptions
+import typings.roadsServer.typesHttp2ServerMod.default
+import typings.roadsServer.typesHttpServerMod.RoadsServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ object mod {
   @JSImport("roads-server", "Server")
   @js.native
   open class Server protected ()
-    extends typings.roadsServer.httpServerMod.default {
+    extends typings.roadsServer.typesHttpServerMod.default {
     /**
       * Constructs a new Server object that helps create Roads servers.
       *

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "TrailMesh")
 @js.native
 open class TrailMesh protected ()
-  extends typings.babylonjs.legacyMod.TrailMesh {
+  extends typings.babylonjs.legacyLegacyMod.TrailMesh {
   /**
     * @constructor
     * @param name The value used by scene.getMeshByName() to do a lookup.
@@ -17,55 +17,55 @@ open class TrailMesh protected ()
     * @param length Length of trailing mesh. Default is 60.
     * @param autoStart Automatically start trailing mesh. Default true.
     */
-  def this(name: String, generator: typings.babylonjs.transformNodeMod.TransformNode) = this()
+  def this(name: String, generator: typings.babylonjs.meshesTransformNodeMod.TransformNode) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: Unit,
     diameter: Double
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: typings.babylonjs.sceneMod.Scene,
     diameter: Double
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: Unit,
     diameter: Double,
     length: Double
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: Unit,
     diameter: Unit,
     length: Double
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: typings.babylonjs.sceneMod.Scene,
     diameter: Double,
     length: Double
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: typings.babylonjs.sceneMod.Scene,
     diameter: Unit,
     length: Double
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: Unit,
     diameter: Double,
     length: Double,
@@ -73,7 +73,7 @@ open class TrailMesh protected ()
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: Unit,
     diameter: Double,
     length: Unit,
@@ -81,7 +81,7 @@ open class TrailMesh protected ()
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: Unit,
     diameter: Unit,
     length: Double,
@@ -89,7 +89,7 @@ open class TrailMesh protected ()
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: Unit,
     diameter: Unit,
     length: Unit,
@@ -97,7 +97,7 @@ open class TrailMesh protected ()
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: typings.babylonjs.sceneMod.Scene,
     diameter: Double,
     length: Double,
@@ -105,7 +105,7 @@ open class TrailMesh protected ()
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: typings.babylonjs.sceneMod.Scene,
     diameter: Double,
     length: Unit,
@@ -113,7 +113,7 @@ open class TrailMesh protected ()
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: typings.babylonjs.sceneMod.Scene,
     diameter: Unit,
     length: Double,
@@ -121,7 +121,7 @@ open class TrailMesh protected ()
   ) = this()
   def this(
     name: String,
-    generator: typings.babylonjs.transformNodeMod.TransformNode,
+    generator: typings.babylonjs.meshesTransformNodeMod.TransformNode,
     scene: typings.babylonjs.sceneMod.Scene,
     diameter: Unit,
     length: Unit,
@@ -141,5 +141,5 @@ object TrailMesh {
     * @param scene the scene to create the trail mesh in
     * @returns the created trail mesh
     */
-  inline def Parse(parsedMesh: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.trailMeshMod.TrailMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.trailMeshMod.TrailMesh]
+  inline def Parse(parsedMesh: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshesTrailMeshMod.TrailMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesTrailMeshMod.TrailMesh]
 }

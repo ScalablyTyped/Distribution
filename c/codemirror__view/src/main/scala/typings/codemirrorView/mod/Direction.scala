@@ -13,9 +13,6 @@ Used to indicate [text direction](https://codemirror.net/6/docs/ref/#view.Editor
 @js.native
 object Direction extends StObject {
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Direction & Double] = js.native
-  
   /**
     Left-to-right.
     */
@@ -23,7 +20,6 @@ object Direction extends StObject {
   sealed trait LTR
     extends StObject
        with Direction
-  /* 0 */ val LTR: typings.codemirrorView.mod.Direction.LTR & Double = js.native
   
   /**
     Right-to-left.
@@ -32,5 +28,4 @@ object Direction extends StObject {
   sealed trait RTL
     extends StObject
        with Direction
-  /* 1 */ val RTL: typings.codemirrorView.mod.Direction.RTL & Double = js.native
 }

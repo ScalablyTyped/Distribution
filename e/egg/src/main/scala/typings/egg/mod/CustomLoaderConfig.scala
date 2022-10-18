@@ -20,7 +20,7 @@ trait CustomLoaderConfig extends StObject {
   
   var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, js.Any]] = js.undefined
+  var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, Any]] = js.undefined
   
   /**
     * an object you wanner load to, value can only be 'ctx' or 'app'. default to app
@@ -57,7 +57,7 @@ object CustomLoaderConfig {
     
     inline def setDirectory(value: String | js.Array[String]): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     
-    inline def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value :_*))
+    inline def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value*))
     
     inline def setFilter(value: /* obj */ js.Object => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
@@ -67,9 +67,9 @@ object CustomLoaderConfig {
     
     inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
-    inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+    inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
     
-    inline def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
+    inline def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
     
     inline def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
     
@@ -85,7 +85,7 @@ object CustomLoaderConfig {
     
     inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
-    inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
+    inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value*))
     
     inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     

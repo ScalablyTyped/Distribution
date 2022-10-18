@@ -3,8 +3,8 @@ package typings.rcCascader
 import org.scalablytyped.runtime.Shortcut
 import typings.rcCascader.anon.DisplayName
 import typings.rcCascader.anon.Ref
-import typings.rcCascader.cascaderMod.CascaderProps
-import typings.rcCascader.cascaderMod.DefaultOptionType
+import typings.rcCascader.esCascaderMod.CascaderProps
+import typings.rcCascader.esCascaderMod.DefaultOptionType
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject

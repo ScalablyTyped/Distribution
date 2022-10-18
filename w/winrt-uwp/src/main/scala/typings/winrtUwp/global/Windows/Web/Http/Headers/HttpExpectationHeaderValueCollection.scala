@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Expect HTTP header on an HTTP request. */
-@JSGlobal("Windows.Web.Http.Headers.HttpExpectationHeaderValueCollection")
+/* note: abstract class */ @JSGlobal("Windows.Web.Http.Headers.HttpExpectationHeaderValueCollection")
 @js.native
-abstract class HttpExpectationHeaderValueCollection ()
+open class HttpExpectationHeaderValueCollection ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpExpectationHeaderValueCollection

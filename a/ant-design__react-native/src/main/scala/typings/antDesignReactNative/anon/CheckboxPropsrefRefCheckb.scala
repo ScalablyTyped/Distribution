@@ -7,8 +7,8 @@ import typings.antDesignReactNative.antDesignReactNativeStrings.no
 import typings.antDesignReactNative.antDesignReactNativeStrings.none
 import typings.antDesignReactNative.antDesignReactNativeStrings.polite
 import typings.antDesignReactNative.antDesignReactNativeStrings.yes
-import typings.antDesignReactNative.checkboxPropsTypeMod.CheckboxForwardedRef
-import typings.antDesignReactNative.checkboxPropsTypeMod.OnChangeParams
+import typings.antDesignReactNative.libCheckboxPropsTypeMod.CheckboxForwardedRef
+import typings.antDesignReactNative.libCheckboxPropsTypeMod.OnChangeParams
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.reactNative.mod.AccessibilityActionEvent

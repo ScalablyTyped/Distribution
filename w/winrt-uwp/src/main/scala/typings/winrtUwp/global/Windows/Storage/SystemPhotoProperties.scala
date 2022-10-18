@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A helper object that provides indexing names for Windows photo file properties. */
-@JSGlobal("Windows.Storage.SystemPhotoProperties")
+/* note: abstract class */ @JSGlobal("Windows.Storage.SystemPhotoProperties")
 @js.native
-abstract class SystemPhotoProperties ()
+open class SystemPhotoProperties ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.SystemPhotoProperties {
   

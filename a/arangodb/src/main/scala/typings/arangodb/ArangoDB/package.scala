@@ -1,11 +1,9 @@
 package typings.arangodb.ArangoDB
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arangodb.anon.From
 import typings.arangodb.anon.To
 import typings.arangodb.arangodbInts.`2`
 import typings.arangodb.arangodbInts.`3`
-import typings.arangodb.arangodbStrings.Patch_
 import typings.arangodb.arangodbStrings.arangosearch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type CollectionType = DocumentCollectionType | EdgeCollectionType
 
-type Document[T /* <: js.Object */] = From & typings.arangodb.arangodbStrings.Document & TopLevel[T] & DocumentMetadata
+type Document[T /* <: js.Object */] = From & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K]} */ js.Any) & DocumentMetadata
 
 // Collection
 type DocumentCollectionType = `2`
@@ -174,7 +172,7 @@ type EdgeCollectionType = `3`
   - typings.arangodb.arangodbStrings.ERROR_CLUSTER_READING_PLAN_AGENCY
   - typings.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_TRUNCATE_COLLECTION
   - typings.arangodb.arangodbStrings.ERROR_CLUSTER_AQL_COMMUNICATION
-  - java.lang.String
+  - / * ERROR_ARANGO_DOCUMENT_NOT_FOUND_OR_SHARDING_ATTRIBUTES_CHANGED * / java.lang.String
   - typings.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_DETERMINE_ID
   - typings.arangodb.arangodbStrings.ERROR_CLUSTER_ONLY_ON_DBSERVER
   - typings.arangodb.arangodbStrings.ERROR_CLUSTER_BACKEND_UNAVAILABLE
@@ -327,7 +325,7 @@ type EdgeCollectionType = `3`
   - typings.arangodb.arangodbStrings.ERROR_QUEUE_UNKNOWN
   - typings.arangodb.arangodbStrings.ERROR_QUEUE_FULL
 */
-type ErrorName = _ErrorName | String
+type ErrorName = _ErrorName | (/* ERROR_ARANGO_DOCUMENT_NOT_FOUND_OR_SHARDING_ATTRIBUTES_CHANGED */ String)
 
 /* Rewritten from type alias, can be one of: 
   - typings.arangodb.arangodbStrings.continue
@@ -349,7 +347,7 @@ type ErrorName = _ErrorName | String
   - typings.arangodb.arangodbStrings.`see other`
   - typings.arangodb.arangodbStrings.`not modified`
   - typings.arangodb.arangodbStrings.`use proxy`
-  - java.lang.String
+  - / * (unused) * / java.lang.String
   - typings.arangodb.arangodbStrings.`temporary redirect`
   - typings.arangodb.arangodbStrings.`permanent redirect`
   - typings.arangodb.arangodbStrings.`bad request`
@@ -393,10 +391,6 @@ type ErrorName = _ErrorName | String
   - typings.arangodb.arangodbStrings.`not extended`
   - typings.arangodb.arangodbStrings.`network authentication required`
 */
-type HttpStatus = _HttpStatus | String
-
-type Patch[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? T[K] | arangodb.ArangoDB.Patch<T[K]>}
-  */ Patch_ & TopLevel[Any]
+type HttpStatus = _HttpStatus | (/* (unused) */ String)
 
 type ViewType = arangosearch

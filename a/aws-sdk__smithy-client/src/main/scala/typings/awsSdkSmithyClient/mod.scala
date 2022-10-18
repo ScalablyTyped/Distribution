@@ -1,13 +1,13 @@
 package typings.awsSdkSmithyClient
 
-import typings.awsSdkSmithyClient.clientMod.SmithyResolvedConfiguration
-import typings.awsSdkSmithyClient.defaultsModeMod.DefaultsModeConfigs
-import typings.awsSdkSmithyClient.defaultsModeMod.ResolvedDefaultsMode
-import typings.awsSdkSmithyClient.exceptionsMod.ServiceExceptionOptions
-import typings.awsSdkSmithyClient.objectMappingMod.ObjectMappingInstruction
-import typings.awsSdkSmithyClient.objectMappingMod.Value
-import typings.awsSdkSmithyClient.objectMappingMod.ValueSupplier
-import typings.awsSdkTypes.responseMod.MetadataBearer
+import typings.awsSdkSmithyClient.distTypesClientMod.SmithyResolvedConfiguration
+import typings.awsSdkSmithyClient.distTypesDefaultsModeMod.DefaultsModeConfigs
+import typings.awsSdkSmithyClient.distTypesDefaultsModeMod.ResolvedDefaultsMode
+import typings.awsSdkSmithyClient.distTypesExceptionsMod.ServiceExceptionOptions
+import typings.awsSdkSmithyClient.distTypesObjectMappingMod.ObjectMappingInstruction
+import typings.awsSdkSmithyClient.distTypesObjectMappingMod.Value
+import typings.awsSdkSmithyClient.distTypesObjectMappingMod.ValueSupplier
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,19 +22,19 @@ object mod {
   @JSImport("@aws-sdk/smithy-client", "Client")
   @js.native
   open class Client[HandlerOptions, ClientInput /* <: js.Object */, ClientOutput /* <: MetadataBearer */, ResolvedClientConfiguration /* <: SmithyResolvedConfiguration[HandlerOptions] */] protected ()
-    extends typings.awsSdkSmithyClient.clientMod.Client[HandlerOptions, ClientInput, ClientOutput, ResolvedClientConfiguration] {
+    extends typings.awsSdkSmithyClient.distTypesClientMod.Client[HandlerOptions, ClientInput, ClientOutput, ResolvedClientConfiguration] {
     def this(config: ResolvedClientConfiguration) = this()
   }
   
-  @JSImport("@aws-sdk/smithy-client", "Command")
+  /* note: abstract class */ @JSImport("@aws-sdk/smithy-client", "Command")
   @js.native
-  abstract class Command[Input /* <: ClientInput */, Output /* <: ClientOutput */, ResolvedClientConfiguration, ClientInput /* <: js.Object */, ClientOutput /* <: MetadataBearer */] ()
-    extends typings.awsSdkSmithyClient.commandMod.Command[Input, Output, ResolvedClientConfiguration, ClientInput, ClientOutput]
+  open class Command[Input /* <: ClientInput */, Output /* <: ClientOutput */, ResolvedClientConfiguration, ClientInput /* <: js.Object */, ClientOutput /* <: MetadataBearer */] ()
+    extends typings.awsSdkSmithyClient.distTypesCommandMod.Command[Input, Output, ResolvedClientConfiguration, ClientInput, ClientOutput]
   
   @JSImport("@aws-sdk/smithy-client", "LazyJsonString")
   @js.native
   open class LazyJsonString ()
-    extends typings.awsSdkSmithyClient.lazyJsonMod.LazyJsonString
+    extends typings.awsSdkSmithyClient.distTypesLazyJsonMod.LazyJsonString
   /* static members */
   object LazyJsonString {
     
@@ -42,7 +42,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromObject(`object`: Any): typings.awsSdkSmithyClient.lazyJsonMod.LazyJsonString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.awsSdkSmithyClient.lazyJsonMod.LazyJsonString]
+    inline def fromObject(`object`: Any): typings.awsSdkSmithyClient.distTypesLazyJsonMod.LazyJsonString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.awsSdkSmithyClient.distTypesLazyJsonMod.LazyJsonString]
   }
   
   @JSImport("@aws-sdk/smithy-client", "SENSITIVE_STRING")
@@ -52,13 +52,13 @@ object mod {
   @JSImport("@aws-sdk/smithy-client", "ServiceException")
   @js.native
   open class ServiceException protected ()
-    extends typings.awsSdkSmithyClient.exceptionsMod.ServiceException {
+    extends typings.awsSdkSmithyClient.distTypesExceptionsMod.ServiceException {
     def this(options: ServiceExceptionOptions) = this()
   }
   
   @JSImport("@aws-sdk/smithy-client", "StringWrapper")
   @js.native
-  val StringWrapper: typings.awsSdkSmithyClient.lazyJsonMod.StringWrapper = js.native
+  val StringWrapper: typings.awsSdkSmithyClient.distTypesLazyJsonMod.StringWrapper = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@aws-sdk/smithy-client", "StringWrapper")
@@ -73,8 +73,8 @@ object mod {
   
   inline def dateToUtcString(date: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateToUtcString")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def decorateServiceException[E /* <: typings.awsSdkSmithyClient.exceptionsMod.ServiceException */](exception: E): E = ^.asInstanceOf[js.Dynamic].applyDynamic("decorateServiceException")(exception.asInstanceOf[js.Any]).asInstanceOf[E]
-  inline def decorateServiceException[E /* <: typings.awsSdkSmithyClient.exceptionsMod.ServiceException */](exception: E, additions: Record[String, Any]): E = (^.asInstanceOf[js.Dynamic].applyDynamic("decorateServiceException")(exception.asInstanceOf[js.Any], additions.asInstanceOf[js.Any])).asInstanceOf[E]
+  inline def decorateServiceException[E /* <: typings.awsSdkSmithyClient.distTypesExceptionsMod.ServiceException */](exception: E): E = ^.asInstanceOf[js.Dynamic].applyDynamic("decorateServiceException")(exception.asInstanceOf[js.Any]).asInstanceOf[E]
+  inline def decorateServiceException[E /* <: typings.awsSdkSmithyClient.distTypesExceptionsMod.ServiceException */](exception: E, additions: Record[String, Any]): E = (^.asInstanceOf[js.Dynamic].applyDynamic("decorateServiceException")(exception.asInstanceOf[js.Any], additions.asInstanceOf[js.Any])).asInstanceOf[E]
   
   inline def emitWarningIfUnsupportedVersion(version: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emitWarningIfUnsupportedVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

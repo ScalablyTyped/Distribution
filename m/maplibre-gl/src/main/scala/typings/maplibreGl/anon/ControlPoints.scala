@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ControlPoints
   extends StObject
      with typings.maplibreGl.mod.InterpolationType
-     with typings.maplibreGl.styleSpecMod.InterpolationType {
+     with typings.maplibreGl.distStyleSpecMod.InterpolationType {
   
   var controlPoints: js.Tuple4[Double, Double, Double, Double]
   

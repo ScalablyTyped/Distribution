@@ -14,7 +14,7 @@ trait Mozosxfontsmoothing extends StObject {
   
   var `-webkit-font-smoothing`: antialiased
   
-  var fontFamily: String
+  var fontFamily: /* 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif */ String
   
   var fontWeight: `400`
   
@@ -35,7 +35,7 @@ object Mozosxfontsmoothing {
     
     inline def `set-webkit-font-smoothing`(value: antialiased): Self = StObject.set(x, "-webkit-font-smoothing", value.asInstanceOf[js.Any])
     
-    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: /* 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif */ String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     inline def setFontWeight(value: `400`): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     

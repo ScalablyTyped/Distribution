@@ -8,7 +8,9 @@ trait FunctionComponentElement[P]
   extends StObject
      with RaxElement[P, FunctionComponent[P]] {
   
-  var ref: js.UndefOr[Any] = js.undefined
+  var ref: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: 'ref' extends keyof P ? P extends {  ref :infer R | undefined} ? R : never : never | undefined */ js.Any
+  ] = js.undefined
 }
 object FunctionComponentElement {
   
@@ -20,7 +22,9 @@ object FunctionComponentElement {
   
   extension [Self <: FunctionComponentElement[?], P](x: Self & FunctionComponentElement[P]) {
     
-    inline def setRef(value: scala.Nothing | Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: 'ref' extends keyof P ? P extends {  ref :infer R | undefined} ? R : never : never | undefined */ js.Any
+    ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }

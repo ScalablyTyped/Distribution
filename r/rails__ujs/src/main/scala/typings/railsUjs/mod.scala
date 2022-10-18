@@ -1,7 +1,5 @@
 package typings.railsUjs
 
-import typings.railsUjs.ajaxMod.AjaxOptions
-import typings.railsUjs.domMod.SelectorObject
 import typings.railsUjs.railsUjsStrings.abort
 import typings.railsUjs.railsUjsStrings.animationcancel
 import typings.railsUjs.railsUjsStrings.animationend
@@ -102,6 +100,8 @@ import typings.railsUjs.railsUjsStrings.webkitanimationiteration
 import typings.railsUjs.railsUjsStrings.webkitanimationstart
 import typings.railsUjs.railsUjsStrings.webkittransitionend
 import typings.railsUjs.railsUjsStrings.wheel
+import typings.railsUjs.utilsAjaxMod.AjaxOptions
+import typings.railsUjs.utilsDomMod.SelectorObject
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.CompositionEvent

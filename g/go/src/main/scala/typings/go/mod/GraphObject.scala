@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This is the abstract base class for all graphical objects.
   */
-@JSImport("go", "GraphObject")
+/* note: abstract class */ @JSImport("go", "GraphObject")
 @js.native
 /**
   * This is an abstract class, so you should not use this constructor.
   */
-abstract class GraphObject () extends StObject {
+open class GraphObject () extends StObject {
   
   /**Gets or sets the function to execute when the ActionTool is cancelled and this GraphObject's .isActionable is set to true.*/
   def actionCancel(e: InputEvent, obj: GraphObject): Unit = js.native

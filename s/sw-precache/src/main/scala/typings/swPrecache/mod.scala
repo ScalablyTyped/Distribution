@@ -1,6 +1,7 @@
 package typings.swPrecache
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,13 +19,7 @@ object mod {
   
   type Generate_ = js.Function2[
     /* options */ js.UndefOr[Options], 
-    /* callback */ js.UndefOr[
-      js.Function2[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* error */ Any, 
-        /* serviceWorkerString */ String, 
-        Unit
-      ]
-    ], 
+    /* callback */ js.UndefOr[js.Function2[/* error */ ErrnoException, /* serviceWorkerString */ String, Unit]], 
     js.Promise[String]
   ]
   
@@ -205,12 +200,7 @@ object mod {
   type Write_ = js.Function3[
     /* filePath */ String, 
     /* options */ js.UndefOr[Options], 
-    /* callback */ js.UndefOr[
-      js.Function1[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* error */ Any, 
-        Unit
-      ]
-    ], 
+    /* callback */ js.UndefOr[js.Function1[/* error */ ErrnoException, Unit]], 
     js.Promise[String]
   ]
   

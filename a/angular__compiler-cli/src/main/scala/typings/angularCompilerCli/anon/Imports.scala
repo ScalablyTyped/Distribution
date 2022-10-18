@@ -1,8 +1,8 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.ngtscImportsMod.Reference
-import typings.angularCompilerCli.srcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcHostMod.DeclarationNode
+import typings.angularCompilerCli.srcNgtscImportsMod.Reference
+import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
+import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.typescript.mod.Diagnostic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

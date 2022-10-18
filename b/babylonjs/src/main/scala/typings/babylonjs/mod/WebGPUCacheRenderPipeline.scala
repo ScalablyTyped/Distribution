@@ -5,13 +5,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs", "WebGPUCacheRenderPipeline")
+/* note: abstract class */ @JSImport("babylonjs", "WebGPUCacheRenderPipeline")
 @js.native
-abstract class WebGPUCacheRenderPipeline protected ()
-  extends typings.babylonjs.legacyMod.WebGPUCacheRenderPipeline {
+open class WebGPUCacheRenderPipeline protected ()
+  extends typings.babylonjs.legacyLegacyMod.WebGPUCacheRenderPipeline {
   def this(
     device: GPUDevice,
-    emptyVertexBuffer: typings.babylonjs.bufferMod.VertexBuffer,
+    emptyVertexBuffer: typings.babylonjs.buffersBufferMod.VertexBuffer,
     useTextureStage: Boolean
   ) = this()
 }

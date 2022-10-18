@@ -1,7 +1,7 @@
 package typings.webpackStatsPlugin
 
-import typings.webpackStatsPlugin.statsWriterPluginMod.Options
-import typings.webpackStatsPlugin.statsWriterPluginMod.^
+import typings.webpackStatsPlugin.libStatsWriterPluginMod.Options
+import typings.webpackStatsPlugin.libStatsWriterPluginMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.hamtSharding
 
-import typings.hamtSharding.bucketMod.BucketOptions
+import typings.hamtSharding.distSrcBucketMod.BucketOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,14 +14,18 @@ object mod {
   @JSImport("hamt-sharding", "Bucket")
   @js.native
   open class Bucket[T] protected ()
-    extends typings.hamtSharding.bucketMod.Bucket[T] {
+    extends typings.hamtSharding.distSrcBucketMod.Bucket[T] {
     def this(options: BucketOptions) = this()
-    def this(options: BucketOptions, parent: typings.hamtSharding.bucketMod.Bucket[T]) = this()
+    def this(options: BucketOptions, parent: typings.hamtSharding.distSrcBucketMod.Bucket[T]) = this()
     def this(options: BucketOptions, parent: Unit, posAtParent: Double) = this()
-    def this(options: BucketOptions, parent: typings.hamtSharding.bucketMod.Bucket[T], posAtParent: Double) = this()
+    def this(
+      options: BucketOptions,
+      parent: typings.hamtSharding.distSrcBucketMod.Bucket[T],
+      posAtParent: Double
+    ) = this()
   }
   
-  inline def createHAMT[T](options: UserBucketOptions): typings.hamtSharding.bucketMod.Bucket[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHAMT")(options.asInstanceOf[js.Any]).asInstanceOf[typings.hamtSharding.bucketMod.Bucket[T]]
+  inline def createHAMT[T](options: UserBucketOptions): typings.hamtSharding.distSrcBucketMod.Bucket[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHAMT")(options.asInstanceOf[js.Any]).asInstanceOf[typings.hamtSharding.distSrcBucketMod.Bucket[T]]
   
   trait UserBucketOptions extends StObject {
     

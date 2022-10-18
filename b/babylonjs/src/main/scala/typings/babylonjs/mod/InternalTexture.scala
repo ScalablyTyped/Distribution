@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "InternalTexture")
 @js.native
 open class InternalTexture protected ()
-  extends typings.babylonjs.legacyMod.InternalTexture {
+  extends typings.babylonjs.legacyLegacyMod.InternalTexture {
   /**
     * Creates a new InternalTexture
     * @param engine defines the engine to use
@@ -15,12 +15,12 @@ open class InternalTexture protected ()
     * @param delayAllocation if the texture allocation should be delayed (default: false)
     */
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
-    source: typings.babylonjs.internalTextureMod.InternalTextureSource
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    source: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTextureSource
   ) = this()
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
-    source: typings.babylonjs.internalTextureMod.InternalTextureSource,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    source: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTextureSource,
     delayAllocation: Boolean
   ) = this()
 }

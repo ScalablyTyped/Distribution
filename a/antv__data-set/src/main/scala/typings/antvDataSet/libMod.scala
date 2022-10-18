@@ -3,9 +3,9 @@ package typings.antvDataSet
 import typings.antvDataSet.anon.GEO
 import typings.antvDataSet.anon.TypeofDataSet
 import typings.antvDataSet.anon.TypeofView
-import typings.antvDataSet.dataSetMod.DataSet
-import typings.antvDataSet.dataSetMod.DataSetOptions
-import typings.antvDataSet.viewMod.View
+import typings.antvDataSet.libDataSetMod.DataSet
+import typings.antvDataSet.libDataSetMod.DataSetOptions
+import typings.antvDataSet.libViewMod.View
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

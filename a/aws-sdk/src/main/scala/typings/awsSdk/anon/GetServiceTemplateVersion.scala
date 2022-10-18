@@ -1,8 +1,8 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.protonMod.ResourceName
-import typings.awsSdk.protonMod.TemplateVersionPart
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsProtonMod.ResourceName
+import typings.awsSdk.clientsProtonMod.TemplateVersionPart
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@lumino/widgets", "LayoutItem")
 @js.native
 open class LayoutItem protected ()
-  extends typings.luminoWidgets.layoutMod.LayoutItem {
+  extends typings.luminoWidgets.typesLayoutMod.LayoutItem {
   /**
     * Construct a new layout item.
     *
@@ -16,5 +16,5 @@ open class LayoutItem protected ()
     * #### Notes
     * The widget will be set to absolute positioning.
     */
-  def this(widget: typings.luminoWidgets.widgetMod.Widget) = this()
+  def this(widget: typings.luminoWidgets.typesWidgetMod.Widget) = this()
 }

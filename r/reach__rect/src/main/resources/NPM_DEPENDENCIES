@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@reach/rect" : "0.17.0"
+      "@reach/rect" : "0.18.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@reach/rect" : "0.17.0"
+      "@reach/rect" : "0.18.0"
     }
   ],
   "compile-devDependencies" : [

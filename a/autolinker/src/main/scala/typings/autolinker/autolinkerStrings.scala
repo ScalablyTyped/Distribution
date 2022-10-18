@@ -1,11 +1,11 @@
 package typings.autolinker
 
-import typings.autolinker.autolinkerMod.HashtagConfig
-import typings.autolinker.autolinkerMod.MentionConfig
-import typings.autolinker.hashtagUtilsMod.HashtagService
-import typings.autolinker.matchMatchMod.MatchType
-import typings.autolinker.mentionUtilsMod.MentionService
-import typings.autolinker.urlMatchMod.UrlMatchType
+import typings.autolinker.distCommonjsAutolinkerMod.HashtagConfig
+import typings.autolinker.distCommonjsAutolinkerMod.MentionConfig
+import typings.autolinker.distCommonjsMatchMatchMod.MatchType
+import typings.autolinker.distCommonjsMatchUrlMatchMod.UrlMatchType
+import typings.autolinker.distCommonjsParserHashtagUtilsMod.HashtagService
+import typings.autolinker.distCommonjsParserMentionUtilsMod.MentionService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

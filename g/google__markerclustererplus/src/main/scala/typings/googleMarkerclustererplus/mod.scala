@@ -1,9 +1,9 @@
 package typings.googleMarkerclustererplus
 
-import typings.googleMarkerclustererplus.clusterIconMod.ClusterIconInfo
-import typings.googleMarkerclustererplus.clusterIconMod.ClusterIconStyle
-import typings.googleMarkerclustererplus.markerclustererMod.MarkerClusterer
-import typings.googleMarkerclustererplus.markerclustererMod.MarkerClustererOptions
+import typings.googleMarkerclustererplus.distClusterIconMod.ClusterIconInfo
+import typings.googleMarkerclustererplus.distClusterIconMod.ClusterIconStyle
+import typings.googleMarkerclustererplus.distMarkerclustererMod.MarkerClusterer
+import typings.googleMarkerclustererplus.distMarkerclustererMod.MarkerClustererOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

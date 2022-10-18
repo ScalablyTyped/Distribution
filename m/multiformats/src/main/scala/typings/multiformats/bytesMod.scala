@@ -4,9 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object bytesMod {
   
-  @JSImport("multiformats/types/src/bytes", JSImport.Namespace)
+  @JSImport("multiformats/bytes", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -14,7 +15,7 @@ object bytesMod {
   inline def coerce(o: js.typedarray.ArrayBufferView): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(o.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   inline def coerce(o: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(o.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  @JSImport("multiformats/types/src/bytes", "empty")
+  @JSImport("multiformats/bytes", "empty")
   @js.native
   val empty: js.typedarray.Uint8Array = js.native
   

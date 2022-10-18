@@ -1,6 +1,5 @@
 package typings.jsforce
 
-import org.scalablytyped.runtime.TopLevel
 import typings.jsforce.anon.CallCallback
 import typings.jsforce.anon.CallCallbackClear
 import typings.jsforce.anon.CallClear
@@ -396,19 +395,15 @@ object salesforceObjectMod {
     // TODO:use a typed pluck to turn `fields` into a subset of T's fields so that the output is slimmed down appropriately
     def select(): Query[js.Array[T]] = js.native
     def select(callback: Callback[js.Array[T]]): Query[js.Array[T]] = js.native
-    def select(
-      fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: boolean}
-      */ typings.jsforce.jsforceStrings.SObject & TopLevel[Any]
-    ): Query[js.Array[Partial[T]]] = js.native
-    def select(
-      fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: boolean}
-      */ typings.jsforce.jsforceStrings.SObject & TopLevel[Any],
-      callback: Callback[js.Array[Partial[T]]]
-    ): Query[js.Array[Partial[T]]] = js.native
     def select(fields: /* keyof T */ String): Query[js.Array[Partial[T]]] = js.native
     def select(fields: /* keyof T */ String, callback: Callback[js.Array[Partial[T]]]): Query[js.Array[Partial[T]]] = js.native
+    def select(
+      fields: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: boolean} */ js.Any
+    ): Query[js.Array[Partial[T]]] = js.native
+    def select(
+      fields: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: boolean} */ js.Any,
+      callback: Callback[js.Array[Partial[T]]]
+    ): Query[js.Array[Partial[T]]] = js.native
     def select(fields: js.Array[/* keyof T */ String]): Query[js.Array[Partial[T]]] = js.native
     def select(fields: js.Array[/* keyof T */ String], callback: Callback[js.Array[Partial[T]]]): Query[js.Array[Partial[T]]] = js.native
     def select(fields: Unit, callback: Callback[js.Array[Partial[T]]]): Query[js.Array[Partial[T]]] = js.native

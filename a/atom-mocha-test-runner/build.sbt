@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "atom-mocha-test-runner"
-version := "1.0-dt-20200515Z-7259f6"
-scalaVersion := "3.0.1"
+version := "1.0-dt-20211202Z-54e82c"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "atom" % "1.40-dt-20201119Z-db4e4b",
-  "org.scalablytyped" %%% "mocha" % "8.0-dt-20201111Z-7d5a16",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "atom" % "1.40-dt-20211202Z-93598b",
+  "org.scalablytyped" %%% "mocha" % "10.0-dt-20220928Z-3f9d22",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,6 +1,5 @@
 package typings.reactNative.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.reactNative.reactNativeInts.`0`
 import typings.reactNative.reactNativeStrings.absolute
 import org.scalablytyped.runtime.StObject
@@ -29,8 +28,8 @@ object StyleSheet {
   inline def create[T /* <: NamedStyles[Any | T] */](styles: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(styles.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def create[T /* <: NamedStyles[Any | T] */](styles: NamedStyles[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(styles.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def flatten[T](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[T]
-  inline def flatten[T](style: StyleProp[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(style.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def flatten[T](): /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any]
+  inline def flatten[T](style: StyleProp[T]): /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(style.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any]
   
   @JSImport("react-native", "StyleSheet.hairlineWidth")
   @js.native
@@ -71,7 +70,13 @@ object StyleSheet {
     }
   }
   
-  type NamedStyles[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: react-native.react-native.ViewStyle | react-native.react-native.TextStyle | react-native.react-native.ImageStyle}
-    */ typings.reactNative.reactNativeStrings.NamedStyles & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: react-native.react-native.ViewStyle | react-native.react-native.TextStyle | react-native.react-native.ImageStyle}
+    }}}
+    */
+  @js.native
+  trait NamedStyles[T] extends StObject
 }

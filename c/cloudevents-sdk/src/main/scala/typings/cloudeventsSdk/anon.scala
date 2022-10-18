@@ -1,9 +1,8 @@
 package typings.cloudeventsSdk
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.cloudeventsSdk.httpEmitterMod.HTTPEmitter
+import typings.cloudeventsSdk.libBindingsHttpHttpEmitterMod.HTTPEmitter
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,55 +33,6 @@ object anon {
     }
   }
   
-  trait Dictx
-    extends StObject
-       with /* x */ NumberDictionary[NumberDictionary[Any]] {
-    
-    var `null`: NumberDictionary[Any]
-    
-    var undefined: NumberDictionary[Any]
-  }
-  object Dictx {
-    
-    inline def apply(`null`: NumberDictionary[Any], undefined: NumberDictionary[Any]): Dictx = {
-      val __obj = js.Dynamic.literal(undefined = undefined.asInstanceOf[js.Any])
-      __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Dictx]
-    }
-    
-    extension [Self <: Dictx](x: Self) {
-      
-      inline def setNull(value: NumberDictionary[Any]): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
-      
-      inline def setUndefined(value: NumberDictionary[Any]): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Id extends StObject {
-    
-    var id: Any
-    
-    var specversion: String
-    
-    var time: String
-  }
-  object Id {
-    
-    inline def apply(id: Any, specversion: String, time: String): Id = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], specversion = specversion.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Id]
-    }
-    
-    extension [Self <: Id](x: Self) {
-      
-      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setSpecversion(value: String): Self = StObject.set(x, "specversion", value.asInstanceOf[js.Any])
-      
-      inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Mode extends StObject {
     
     var mode: js.UndefOr[String] = js.undefined
@@ -105,27 +55,6 @@ object anon {
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
-    }
-  }
-  
-  trait Name extends StObject {
-    
-    var name: String
-    
-    def parser(v: Any): Any
-  }
-  object Name {
-    
-    inline def apply(name: String, parser: Any => Any): Name = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parser = js.Any.fromFunction1(parser))
-      __obj.asInstanceOf[Name]
-    }
-    
-    extension [Self <: Name](x: Self) {
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setParser(value: Any => Any): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
     }
   }
   

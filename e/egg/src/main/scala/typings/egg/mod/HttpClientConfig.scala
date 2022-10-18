@@ -1,7 +1,6 @@
 package typings.egg.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.urllib.mod.RequestOptions2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,10 +28,15 @@ trait HttpClientConfig
   var httpsAgent: js.UndefOr[HttpClientBaseConfig] = js.undefined
   
   /** proxy agent uri or options, default is null. */
-  var proxy: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
+  var proxy: js.UndefOr[String | StringDictionary[Any]] = js.undefined
   
   /** Default request args for httpclient */
-  var request: js.UndefOr[RequestOptions2] = js.undefined
+  var request: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestOptions */ Any
+  ] = js.undefined
+  
+  /** use urllib@3 HttpClient */
+  var useHttpClientNext: js.UndefOr[Boolean] = js.undefined
 }
 object HttpClientConfig {
   
@@ -67,12 +71,18 @@ object HttpClientConfig {
     
     inline def setHttpsAgentUndefined: Self = StObject.set(x, "httpsAgent", js.undefined)
     
-    inline def setProxy(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: String | StringDictionary[Any]): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    inline def setRequest(value: RequestOptions2): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestOptions */ Any
+    ): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    
+    inline def setUseHttpClientNext(value: Boolean): Self = StObject.set(x, "useHttpClientNext", value.asInstanceOf[js.Any])
+    
+    inline def setUseHttpClientNextUndefined: Self = StObject.set(x, "useHttpClientNext", js.undefined)
   }
 }

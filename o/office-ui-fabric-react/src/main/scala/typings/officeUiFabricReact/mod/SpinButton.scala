@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.spinButtonSpinButtonMod.DefaultProps
-import typings.officeUiFabricReact.spinButtonTypesMod.ISpinButtonProps
+import typings.officeUiFabricReact.libComponentsSpinButtonSpinButtonDottypesMod.ISpinButtonProps
+import typings.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.DefaultProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

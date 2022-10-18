@@ -1,9 +1,9 @@
 package typings.dxf
 
+import typings.dxf.commonMod.ColorNumbers
 import typings.dxf.configMod.Config
-import typings.dxf.dxfMod.ColorNumbers
-import typings.dxf.entitiesMod.Entity
-import typings.dxf.entitiesMod.LayerGroupedEntities
+import typings.dxf.handlersEntitiesMod.Entity
+import typings.dxf.handlersEntitiesMod.LayerGroupedEntities
 import typings.dxf.informationMod.FileInfo
 import typings.dxf.informationMod.Polyline
 import typings.dxf.informationMod.SVG

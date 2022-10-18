@@ -16,10 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object k6Strings {
   
   @js.native
-  sealed trait BatchResponses extends StObject
-  inline def BatchResponses: BatchResponses = "BatchResponses".asInstanceOf[BatchResponses]
-  
-  @js.native
   sealed trait HTTPSlash1Dot0
     extends StObject
        with Protocol

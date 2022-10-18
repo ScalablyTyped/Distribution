@@ -1,6 +1,6 @@
 package typings.three.global.THREE
 
-import typings.three.eventDispatcherMod.BaseEvent
+import typings.three.srcCoreEventDispatcherMod.BaseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +23,6 @@ object Object3D {
   
   @JSGlobal("THREE.Object3D.DefaultUp")
   @js.native
-  def DefaultUp: typings.three.vector3Mod.Vector3 = js.native
-  inline def DefaultUp_=(x: typings.three.vector3Mod.Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultUp")(x.asInstanceOf[js.Any])
+  def DefaultUp: typings.three.srcMathVector3Mod.Vector3 = js.native
+  inline def DefaultUp_=(x: typings.three.srcMathVector3Mod.Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultUp")(x.asInstanceOf[js.Any])
 }

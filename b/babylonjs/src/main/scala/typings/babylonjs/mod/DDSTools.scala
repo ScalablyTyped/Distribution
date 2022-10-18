@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.ddsMod.DDSInfo
+import typings.babylonjs.miscDdsMod.DDSInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "DDSTools")
 @js.native
 open class DDSTools ()
-  extends typings.babylonjs.legacyMod.DDSTools
+  extends typings.babylonjs.legacyLegacyMod.DDSTools
 /* static members */
 object DDSTools {
   
@@ -36,16 +36,16 @@ object DDSTools {
     * @internal
     */
   inline def UploadDDSLevels(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
-    texture: typings.babylonjs.internalTextureMod.InternalTexture,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     data: js.typedarray.ArrayBufferView,
     info: DDSInfo,
     loadMipmaps: Boolean,
     faces: Double
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadDDSLevels")(engine.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], info.asInstanceOf[js.Any], loadMipmaps.asInstanceOf[js.Any], faces.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def UploadDDSLevels(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
-    texture: typings.babylonjs.internalTextureMod.InternalTexture,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     data: js.typedarray.ArrayBufferView,
     info: DDSInfo,
     loadMipmaps: Boolean,
@@ -53,8 +53,8 @@ object DDSTools {
     lodIndex: Double
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadDDSLevels")(engine.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], info.asInstanceOf[js.Any], loadMipmaps.asInstanceOf[js.Any], faces.asInstanceOf[js.Any], lodIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def UploadDDSLevels(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
-    texture: typings.babylonjs.internalTextureMod.InternalTexture,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     data: js.typedarray.ArrayBufferView,
     info: DDSInfo,
     loadMipmaps: Boolean,
@@ -63,8 +63,8 @@ object DDSTools {
     currentFace: Double
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadDDSLevels")(engine.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], info.asInstanceOf[js.Any], loadMipmaps.asInstanceOf[js.Any], faces.asInstanceOf[js.Any], lodIndex.asInstanceOf[js.Any], currentFace.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def UploadDDSLevels(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
-    texture: typings.babylonjs.internalTextureMod.InternalTexture,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     data: js.typedarray.ArrayBufferView,
     info: DDSInfo,
     loadMipmaps: Boolean,
@@ -74,8 +74,8 @@ object DDSTools {
     destTypeMustBeFilterable: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadDDSLevels")(engine.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], info.asInstanceOf[js.Any], loadMipmaps.asInstanceOf[js.Any], faces.asInstanceOf[js.Any], lodIndex.asInstanceOf[js.Any], currentFace.asInstanceOf[js.Any], destTypeMustBeFilterable.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def UploadDDSLevels(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
-    texture: typings.babylonjs.internalTextureMod.InternalTexture,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     data: js.typedarray.ArrayBufferView,
     info: DDSInfo,
     loadMipmaps: Boolean,
@@ -85,8 +85,8 @@ object DDSTools {
     destTypeMustBeFilterable: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadDDSLevels")(engine.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], info.asInstanceOf[js.Any], loadMipmaps.asInstanceOf[js.Any], faces.asInstanceOf[js.Any], lodIndex.asInstanceOf[js.Any], currentFace.asInstanceOf[js.Any], destTypeMustBeFilterable.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def UploadDDSLevels(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
-    texture: typings.babylonjs.internalTextureMod.InternalTexture,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     data: js.typedarray.ArrayBufferView,
     info: DDSInfo,
     loadMipmaps: Boolean,
@@ -95,8 +95,8 @@ object DDSTools {
     currentFace: Double
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadDDSLevels")(engine.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], info.asInstanceOf[js.Any], loadMipmaps.asInstanceOf[js.Any], faces.asInstanceOf[js.Any], lodIndex.asInstanceOf[js.Any], currentFace.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def UploadDDSLevels(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
-    texture: typings.babylonjs.internalTextureMod.InternalTexture,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     data: js.typedarray.ArrayBufferView,
     info: DDSInfo,
     loadMipmaps: Boolean,
@@ -106,8 +106,8 @@ object DDSTools {
     destTypeMustBeFilterable: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadDDSLevels")(engine.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], info.asInstanceOf[js.Any], loadMipmaps.asInstanceOf[js.Any], faces.asInstanceOf[js.Any], lodIndex.asInstanceOf[js.Any], currentFace.asInstanceOf[js.Any], destTypeMustBeFilterable.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def UploadDDSLevels(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
-    texture: typings.babylonjs.internalTextureMod.InternalTexture,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     data: js.typedarray.ArrayBufferView,
     info: DDSInfo,
     loadMipmaps: Boolean,

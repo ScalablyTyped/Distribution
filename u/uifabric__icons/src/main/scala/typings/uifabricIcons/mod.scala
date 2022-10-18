@@ -1,7 +1,7 @@
 package typings.uifabricIcons
 
 import typings.uifabricIcons.anon.FontBaseUrl
-import typings.uifabricStyling.iconsMod.IIconOptions
+import typings.uifabricStyling.libUtilitiesIconsMod.IIconOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

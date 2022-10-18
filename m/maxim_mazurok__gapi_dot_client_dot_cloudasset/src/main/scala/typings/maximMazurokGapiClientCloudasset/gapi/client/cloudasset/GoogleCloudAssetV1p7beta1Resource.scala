@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait GoogleCloudAssetV1p7beta1Resource extends StObject {
   
   /** The content of the resource, in which some sensitive fields are removed and may not be present. */
   var data: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.GoogleCloudAssetV1p7beta1Resource & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -55,9 +52,7 @@ object GoogleCloudAssetV1p7beta1Resource {
   extension [Self <: GoogleCloudAssetV1p7beta1Resource](x: Self) {
     
     inline def setData(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.GoogleCloudAssetV1p7beta1Resource & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

@@ -1,15 +1,15 @@
 package typings.xummSdk
 
-import typings.xummSdk.applicationDetailsMod.ApplicationDetails
-import typings.xummSdk.curatedAssetsResponseMod.CuratedAssetsResponse
-import typings.xummSdk.metaMod.Meta
-import typings.xummSdk.payloadMod.Payload
-import typings.xummSdk.ratesResponseMod.RatesResponse
-import typings.xummSdk.storageMod.Storage
-import typings.xummSdk.userTokensMod.UserTokenValidity
-import typings.xummSdk.xAppJwtOttMod.xAppJwtOtt
-import typings.xummSdk.xAppOttDataMod.xAppOttData
-import typings.xummSdk.xrplTransactionMod.XrplTransaction
+import typings.xummSdk.distSrcMetaMod.Meta
+import typings.xummSdk.distSrcPayloadMod.Payload
+import typings.xummSdk.distSrcStorageMod.Storage
+import typings.xummSdk.distSrcTypesMetaApplicationDetailsMod.ApplicationDetails
+import typings.xummSdk.distSrcTypesMetaCuratedAssetsResponseMod.CuratedAssetsResponse
+import typings.xummSdk.distSrcTypesMetaRatesResponseMod.RatesResponse
+import typings.xummSdk.distSrcTypesMetaUserTokensMod.UserTokenValidity
+import typings.xummSdk.distSrcTypesMetaXrplTransactionMod.XrplTransaction
+import typings.xummSdk.distSrcTypesXAppXAppJwtOttMod.xAppJwtOtt
+import typings.xummSdk.distSrcTypesXAppXAppOttDataMod.xAppOttData
 import typings.xummSdk.xummSdkStrings.IN_PROGRESS
 import typings.xummSdk.xummSdkStrings.NONE
 import typings.xummSdk.xummSdkStrings.REJECTED
@@ -56,7 +56,7 @@ object mod {
     
     def verifyUserTokens(userTokens: js.Array[String]): js.Promise[js.Array[UserTokenValidity]] = js.native
     
-    var xApp: typings.xummSdk.xAppMod.xApp = js.native
+    var xApp: typings.xummSdk.distSrcXAppMod.xApp = js.native
   }
   
   @JSImport("xumm-sdk", "XummSdkJwt")

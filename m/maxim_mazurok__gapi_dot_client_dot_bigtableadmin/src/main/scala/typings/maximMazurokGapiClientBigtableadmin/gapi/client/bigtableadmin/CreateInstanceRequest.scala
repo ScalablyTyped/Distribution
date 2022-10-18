@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait CreateInstanceRequest extends StObject {
     * `projects/myproject/instances/myinstance/clusters/mycluster`. Fields marked `OutputOnly` must be left blank.
     */
   var clusters: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.Cluster}
-    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateInstanceRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.Cluster} */ js.Any
   ] = js.undefined
   
   /** Required. The instance to create. Fields marked `OutputOnly` must be left blank. */
@@ -36,9 +33,7 @@ object CreateInstanceRequest {
   extension [Self <: CreateInstanceRequest](x: Self) {
     
     inline def setClusters(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.Cluster}
-      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateInstanceRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.Cluster} */ js.Any
     ): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
     inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)

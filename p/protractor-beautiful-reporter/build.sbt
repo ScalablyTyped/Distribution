@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "protractor-beautiful-reporter"
-version := "1.3-dt-20220831Z-12bfe8"
+version := "1.3-dt-20220831Z-290a7a"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jasmine" % "4.3-dt-20220823Z-bb6b2d",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
-  "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20220909Z-afa19c",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
-  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-142b86")
+  "org.scalablytyped" %%% "jasmine" % "4.3-dt-20220823Z-0a2b4b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20220909Z-a87c96",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-54fbe6")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

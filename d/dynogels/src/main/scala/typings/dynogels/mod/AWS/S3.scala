@@ -1,7 +1,7 @@
 package typings.dynogels.mod.AWS
 
-import typings.awsSdk.managedUploadMod.ManagedUpload.ManagedUploadOptions
-import typings.awsSdk.s3Mod.ClientConfiguration
+import typings.awsSdk.clientsS3Mod.ClientConfiguration
+import typings.awsSdk.libS3ManagedUploadMod.ManagedUpload.ManagedUploadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

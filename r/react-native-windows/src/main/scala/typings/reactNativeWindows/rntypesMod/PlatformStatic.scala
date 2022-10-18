@@ -1,6 +1,5 @@
 package typings.reactNativeWindows.rntypesMod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.reactNativeWindows.anon.Default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,15 +17,13 @@ trait PlatformStatic extends StObject {
   var isTesting: Boolean = js.native
   
   def select[T](
-    specifics: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ platform in react-native-windows.react-native-windows/rntypes.PlatformOSType ]:? T}
-    */ typings.reactNativeWindows.reactNativeWindowsStrings.PlatformStatic & TopLevel[Any]
+    specifics: /* import warning: importer.ImportType#apply Failed type conversion: {[ platform in react-native-windows.react-native-windows/rntypes.PlatformOSType ]:? T} */ js.Any
   ): js.UndefOr[T] = js.native
   /**
     * @see https://reactnative.dev/docs/platform-specific-code#content
     */
   @JSName("select")
   def select_T_T[T](
-    specifics: typings.reactNativeWindows.reactNativeWindowsStrings.PlatformStatic & TopLevel[Any] & Default[T]
+    specifics: ((/* import warning: importer.ImportType#apply Failed type conversion: {[ platform in react-native-windows.react-native-windows/rntypes.PlatformOSType ]:? T} */ js.Any) & Default[T]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ platform in react-native-windows.react-native-windows/rntypes.PlatformOSType ]: T} */ js.Any)
   ): T = js.native
 }

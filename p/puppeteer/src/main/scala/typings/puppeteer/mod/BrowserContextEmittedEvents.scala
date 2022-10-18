@@ -1,6 +1,6 @@
 package typings.puppeteer.mod
 
-import typings.puppeteer.puppeteerStrings.targetchanged_
+import typings.puppeteer.puppeteerStrings.targetchanged
 import typings.puppeteer.puppeteerStrings.targetcreated
 import typings.puppeteer.puppeteerStrings.targetdestroyed
 import org.scalablytyped.runtime.StObject
@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.puppeteer.puppeteerStrings.targetchanged_
+  - typings.puppeteer.puppeteerStrings.targetchanged
   - typings.puppeteer.puppeteerStrings.targetcreated
   - typings.puppeteer.puppeteerStrings.targetdestroyed
 */
@@ -19,7 +19,7 @@ object BrowserContextEmittedEvents {
     * Emitted when the url of a target inside the browser context changes.
     * Contains a {@link Target} instance.
     */
-  inline def TargetChanged: targetchanged_ = "targetchanged".asInstanceOf[targetchanged_]
+  inline def TargetChanged: targetchanged = "targetchanged".asInstanceOf[targetchanged]
   
   /**
     * Emitted when a target is created within the browser context, for example

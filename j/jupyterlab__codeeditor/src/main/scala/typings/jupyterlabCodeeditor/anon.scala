@@ -17,6 +17,8 @@ object anon {
     
     var codeFolding: js.UndefOr[Boolean] = js.undefined
     
+    var cursorBlinkRate: js.UndefOr[Double] = js.undefined
+    
     var fontFamily: js.UndefOr[String | Null] = js.undefined
     
     var fontSize: js.UndefOr[Double | Null] = js.undefined
@@ -36,6 +38,8 @@ object anon {
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
     var rulers: js.UndefOr[js.Array[Double]] = js.undefined
+    
+    var showTrailingSpace: js.UndefOr[Boolean] = js.undefined
     
     var tabSize: js.UndefOr[Double] = js.undefined
     
@@ -57,6 +61,10 @@ object anon {
       inline def setCodeFolding(value: Boolean): Self = StObject.set(x, "codeFolding", value.asInstanceOf[js.Any])
       
       inline def setCodeFoldingUndefined: Self = StObject.set(x, "codeFolding", js.undefined)
+      
+      inline def setCursorBlinkRate(value: Double): Self = StObject.set(x, "cursorBlinkRate", value.asInstanceOf[js.Any])
+      
+      inline def setCursorBlinkRateUndefined: Self = StObject.set(x, "cursorBlinkRate", js.undefined)
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -104,7 +112,11 @@ object anon {
       
       inline def setRulersUndefined: Self = StObject.set(x, "rulers", js.undefined)
       
-      inline def setRulersVarargs(value: Double*): Self = StObject.set(x, "rulers", js.Array(value :_*))
+      inline def setRulersVarargs(value: Double*): Self = StObject.set(x, "rulers", js.Array(value*))
+      
+      inline def setShowTrailingSpace(value: Boolean): Self = StObject.set(x, "showTrailingSpace", value.asInstanceOf[js.Any])
+      
+      inline def setShowTrailingSpaceUndefined: Self = StObject.set(x, "showTrailingSpace", js.undefined)
       
       inline def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
       

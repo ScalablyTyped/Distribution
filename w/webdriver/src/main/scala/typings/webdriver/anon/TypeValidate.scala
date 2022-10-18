@@ -1,6 +1,6 @@
 package typings.webdriver.anon
 
-import typings.wdioTypes.optionsMod.RequestLibOptions
+import typings.wdioTypes.buildOptionsMod.RequestLibOptions
 import typings.webdriver.webdriverStrings.`object`
 import typings.webdriver.webdriverStrings.boolean
 import typings.webdriver.webdriverStrings.function

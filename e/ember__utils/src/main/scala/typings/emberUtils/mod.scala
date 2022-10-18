@@ -1,7 +1,7 @@
 package typings.emberUtils
 
 import typings.emberUtils.emberUtilsStrings.undefined
-import typings.emberUtils.typesMod.TypeOf
+import typings.emberUtils.privateTypesMod.TypeOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

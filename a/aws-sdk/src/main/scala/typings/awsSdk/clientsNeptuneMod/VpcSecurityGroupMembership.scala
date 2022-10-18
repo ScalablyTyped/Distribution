@@ -1,0 +1,36 @@
+package typings.awsSdk.clientsNeptuneMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait VpcSecurityGroupMembership extends StObject {
+  
+  /**
+    * The status of the VPC security group.
+    */
+  var Status: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The name of the VPC security group.
+    */
+  var VpcSecurityGroupId: js.UndefOr[String] = js.undefined
+}
+object VpcSecurityGroupMembership {
+  
+  inline def apply(): VpcSecurityGroupMembership = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[VpcSecurityGroupMembership]
+  }
+  
+  extension [Self <: VpcSecurityGroupMembership](x: Self) {
+    
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setVpcSecurityGroupId(value: String): Self = StObject.set(x, "VpcSecurityGroupId", value.asInstanceOf[js.Any])
+    
+    inline def setVpcSecurityGroupIdUndefined: Self = StObject.set(x, "VpcSecurityGroupId", js.undefined)
+  }
+}

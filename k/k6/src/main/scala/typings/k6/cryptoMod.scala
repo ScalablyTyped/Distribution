@@ -1,7 +1,6 @@
 package typings.k6
 
 import typings.k6.k6Strings.binary
-import typings.k6.mod.bytes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -191,9 +190,9 @@ object cryptoMod {
     inline def sha512256[OE /* <: OutputEncoding */](input: js.typedarray.ArrayBuffer, outputEncoding: OE): Output[OE] = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512_256")(input.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Output[OE]]
   }
   
-  @JSImport("k6/crypto", "Hasher")
+  /* note: abstract class */ @JSImport("k6/crypto", "Hasher")
   @js.native
-  abstract class Hasher () extends StObject {
+  open class Hasher () extends StObject {
     
     /**
       * Return a digest from the data added so far.
@@ -301,7 +300,15 @@ object cryptoMod {
   
   type BinaryEncoding = binary
   
-  type Output[OE /* <: OutputEncoding */] = bytes | String
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    OE extends k6.k6/crypto.StringEncoding ? string : OE extends k6.k6/crypto.BinaryEncoding ? k6.k6.bytes : never
+    }}}
+    */
+  @js.native
+  trait Output[OE /* <: OutputEncoding */] extends StObject
   
   type OutputEncoding = StringEncoding | BinaryEncoding
   

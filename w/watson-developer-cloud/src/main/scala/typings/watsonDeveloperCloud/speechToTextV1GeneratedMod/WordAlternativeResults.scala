@@ -27,7 +27,7 @@ object WordAlternativeResults {
     
     inline def setAlternatives(value: js.Array[WordAlternativeResult]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
-    inline def setAlternativesVarargs(value: WordAlternativeResult*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+    inline def setAlternativesVarargs(value: WordAlternativeResult*): Self = StObject.set(x, "alternatives", js.Array(value*))
     
     inline def setEnd_time(value: Double): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     

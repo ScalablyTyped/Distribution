@@ -6,11 +6,11 @@ import typings.combinedStream.combinedStreamStrings.end
 import typings.combinedStream.combinedStreamStrings.error
 import typings.combinedStream.combinedStreamStrings.pause
 import typings.combinedStream.combinedStreamStrings.resume
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.streamMod.Stream
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +31,7 @@ object mod {
   /* static member */
   inline def isStreamLike(stream: Any): /* is node.stream.Stream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStreamLike")(stream.asInstanceOf[js.Any]).asInstanceOf[/* is node.stream.Stream */ Boolean]
   
-  type Appendable = ReadableStream[Any] | WritableStream[Any] | Buffer | String | NextFunction
+  type Appendable = ReadableStream | WritableStream | Buffer | String | NextFunction
   
   @js.native
   trait CombinedStream

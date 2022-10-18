@@ -1,13 +1,13 @@
 package typings.angularDevkitCore.mod
 
 import typings.angularDevkitCore.anon.Workspace
-import typings.angularDevkitCore.coreMod.WorkspaceFormat
-import typings.angularDevkitCore.definitionsMod.DefinitionCollectionListener
-import typings.angularDevkitCore.definitionsMod.ProjectDefinition
-import typings.angularDevkitCore.definitionsMod.TargetDefinition
-import typings.angularDevkitCore.definitionsMod.WorkspaceDefinition
-import typings.angularDevkitCore.hostInterfaceMod.Host
-import typings.angularDevkitCore.workspaceHostMod.WorkspaceHost
+import typings.angularDevkitCore.srcVirtualFsHostInterfaceMod.Host
+import typings.angularDevkitCore.srcWorkspaceCoreMod.WorkspaceFormat
+import typings.angularDevkitCore.srcWorkspaceDefinitionsMod.DefinitionCollectionListener
+import typings.angularDevkitCore.srcWorkspaceDefinitionsMod.ProjectDefinition
+import typings.angularDevkitCore.srcWorkspaceDefinitionsMod.TargetDefinition
+import typings.angularDevkitCore.srcWorkspaceDefinitionsMod.WorkspaceDefinition
+import typings.angularDevkitCore.srcWorkspaceHostMod.WorkspaceHost
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,7 @@ object workspaces {
   @JSImport("@angular-devkit/core", "workspaces.ProjectDefinitionCollection")
   @js.native
   open class ProjectDefinitionCollection ()
-    extends typings.angularDevkitCore.workspaceMod.ProjectDefinitionCollection {
+    extends typings.angularDevkitCore.srcWorkspaceMod.ProjectDefinitionCollection {
     def this(initial: Record[String, ProjectDefinition]) = this()
     def this(initial: Unit, listener: DefinitionCollectionListener[ProjectDefinition]) = this()
     def this(
@@ -34,7 +34,7 @@ object workspaces {
   @JSImport("@angular-devkit/core", "workspaces.TargetDefinitionCollection")
   @js.native
   open class TargetDefinitionCollection ()
-    extends typings.angularDevkitCore.workspaceMod.TargetDefinitionCollection {
+    extends typings.angularDevkitCore.srcWorkspaceMod.TargetDefinitionCollection {
     def this(initial: Record[String, TargetDefinition]) = this()
     def this(initial: Unit, listener: DefinitionCollectionListener[TargetDefinition]) = this()
     def this(
@@ -48,9 +48,9 @@ object workspaces {
   object WorkspaceFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularDevkitCore.coreMod.WorkspaceFormat & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularDevkitCore.srcWorkspaceCoreMod.WorkspaceFormat & Double] = js.native
     
-    /* 0 */ val JSON: typings.angularDevkitCore.coreMod.WorkspaceFormat.JSON & Double = js.native
+    /* 0 */ val JSON: typings.angularDevkitCore.srcWorkspaceCoreMod.WorkspaceFormat.JSON & Double = js.native
   }
   
   inline def createWorkspaceHost(host: Host[js.Object]): WorkspaceHost = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorkspaceHost")(host.asInstanceOf[js.Any]).asInstanceOf[WorkspaceHost]

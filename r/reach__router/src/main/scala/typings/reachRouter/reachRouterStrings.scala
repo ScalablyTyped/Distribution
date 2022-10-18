@@ -212,10 +212,6 @@ object reachRouterStrings {
   inline def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait useParams extends StObject
-  inline def useParams: useParams = "useParams".asInstanceOf[useParams]
-  
-  @js.native
   sealed trait vertical extends StObject
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   

@@ -1,8 +1,8 @@
 package typings.jssha.anon
 
+import typings.jssha.distSha512Mod.EncodingType
+import typings.jssha.distSha512Mod.GenericInputType
 import typings.jssha.jsshaStrings.TEXT
-import typings.jssha.sha512Mod.EncodingType
-import typings.jssha.sha512Mod.GenericInputType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

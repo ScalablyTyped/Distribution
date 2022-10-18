@@ -783,6 +783,13 @@ object anon {
     def fromDevToolsTargetId(targetId: String): WebContents_
     
     /**
+      * | undefined - A WebContents instance with the given WebFrameMain, or `undefined`
+      * if there is no WebContents associated with the given WebFrameMain.
+      */
+    /* static member */
+    def fromFrame(frame: WebFrameMain_): WebContents_
+    
+    /**
       * | undefined - A WebContents instance with the given ID, or `undefined` if there
       * is no WebContents associated with the given ID.
       */
@@ -807,17 +814,20 @@ object anon {
     
     inline def apply(
       fromDevToolsTargetId: String => WebContents_,
+      fromFrame: WebFrameMain_ => WebContents_,
       fromId: Double => WebContents_,
       getAllWebContents: () => js.Array[WebContents_],
       getFocusedWebContents: () => WebContents_
     ): TypeofWebContents = {
-      val __obj = js.Dynamic.literal(fromDevToolsTargetId = js.Any.fromFunction1(fromDevToolsTargetId), fromId = js.Any.fromFunction1(fromId), getAllWebContents = js.Any.fromFunction0(getAllWebContents), getFocusedWebContents = js.Any.fromFunction0(getFocusedWebContents))
+      val __obj = js.Dynamic.literal(fromDevToolsTargetId = js.Any.fromFunction1(fromDevToolsTargetId), fromFrame = js.Any.fromFunction1(fromFrame), fromId = js.Any.fromFunction1(fromId), getAllWebContents = js.Any.fromFunction0(getAllWebContents), getFocusedWebContents = js.Any.fromFunction0(getFocusedWebContents))
       __obj.asInstanceOf[TypeofWebContents]
     }
     
     extension [Self <: TypeofWebContents](x: Self) {
       
       inline def setFromDevToolsTargetId(value: String => WebContents_): Self = StObject.set(x, "fromDevToolsTargetId", js.Any.fromFunction1(value))
+      
+      inline def setFromFrame(value: WebFrameMain_ => WebContents_): Self = StObject.set(x, "fromFrame", js.Any.fromFunction1(value))
       
       inline def setFromId(value: Double => WebContents_): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
       

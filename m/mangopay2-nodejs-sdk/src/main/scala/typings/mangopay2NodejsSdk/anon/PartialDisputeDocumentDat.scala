@@ -1,9 +1,9 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DisputeDocumentType
-import typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentStatus
-import typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.RefusedReasonType
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
+import typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.DisputeDocumentType
+import typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.DocumentStatus
+import typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.RefusedReasonType
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,9 @@ trait PartialDisputeDocumentDat extends StObject {
   
   var RefusedReasonMessage: js.UndefOr[String] = js.undefined
   
-  var RefusedReasonType: js.UndefOr[typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.RefusedReasonType] = js.undefined
+  var RefusedReasonType: js.UndefOr[
+    typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.RefusedReasonType
+  ] = js.undefined
   
   var Status: js.UndefOr[DocumentStatus] = js.undefined
   

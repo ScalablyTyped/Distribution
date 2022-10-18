@@ -1,7 +1,7 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.anon.DownDegrees
-import typings.babylonjs.mathLikeMod.IPlaneLike
+import typings.babylonjs.mathsMathDotlikeMod.IPlaneLike
 import typings.babylonjs.typesMod.DeepImmutable
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates an empty matrix (filled with zeros)
   */
 open class Matrix ()
-  extends typings.babylonjs.legacyMod.Matrix
+  extends typings.babylonjs.legacyLegacyMod.Matrix
 /* static members */
 object Matrix {
   
@@ -30,10 +30,10 @@ object Matrix {
     * @returns a new matrix
     */
   inline def Compose(
-    scale: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    rotation: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
-    translation: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("Compose")(scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], translation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+    scale: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    rotation: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Quaternion],
+    translation: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("Compose")(scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], translation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Sets a matrix to a value composed by merging scale (vector3), rotation (quaternion) and translation (vector3)
@@ -43,10 +43,10 @@ object Matrix {
     * @param result defines the target matrix
     */
   inline def ComposeToRef(
-    scale: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    rotation: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
-    translation: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    result: typings.babylonjs.mathVectorMod.Matrix
+    scale: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    rotation: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Quaternion],
+    translation: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ComposeToRef")(scale.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], translation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -60,10 +60,10 @@ object Matrix {
     * @returns the new matrix
     */
   inline def DecomposeLerp(
-    startValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    endValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
+    startValue: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    endValue: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     gradient: Double
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("DecomposeLerp")(startValue.asInstanceOf[js.Any], endValue.asInstanceOf[js.Any], gradient.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("DecomposeLerp")(startValue.asInstanceOf[js.Any], endValue.asInstanceOf[js.Any], gradient.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Update a matrix to values which are computed by:
@@ -76,10 +76,10 @@ object Matrix {
     * @param result defines the target matrix
     */
   inline def DecomposeLerpToRef(
-    startValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    endValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
+    startValue: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    endValue: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     gradient: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DecomposeLerpToRef")(startValue.asInstanceOf[js.Any], endValue.asInstanceOf[js.Any], gradient.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -88,8 +88,8 @@ object Matrix {
     * @param offset defines an offset in the source array
     * @returns a new Matrix set from the starting index of the given array
     */
-  inline def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathVectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
-  inline def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathsMathDotvectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
+  inline def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Copy the content of an array into a given matrix
@@ -100,7 +100,7 @@ object Matrix {
   inline def FromArrayToRef(
     array: DeepImmutable[ArrayLike[Double]],
     offset: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -114,7 +114,7 @@ object Matrix {
     array: DeepImmutable[js.typedarray.Float32Array | js.Array[Double]],
     offset: Double,
     scale: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromFloat32ArrayToRefScaled")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -123,8 +123,8 @@ object Matrix {
     * @param result defines the target matrix
     */
   inline def FromQuaternionToRef(
-    quat: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
-    result: typings.babylonjs.mathVectorMod.Matrix
+    quat: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Quaternion],
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromQuaternionToRef")(quat.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -164,7 +164,7 @@ object Matrix {
     initialM42: Double,
     initialM43: Double,
     initialM44: Double
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("FromValues")(initialM11.asInstanceOf[js.Any], initialM12.asInstanceOf[js.Any], initialM13.asInstanceOf[js.Any], initialM14.asInstanceOf[js.Any], initialM21.asInstanceOf[js.Any], initialM22.asInstanceOf[js.Any], initialM23.asInstanceOf[js.Any], initialM24.asInstanceOf[js.Any], initialM31.asInstanceOf[js.Any], initialM32.asInstanceOf[js.Any], initialM33.asInstanceOf[js.Any], initialM34.asInstanceOf[js.Any], initialM41.asInstanceOf[js.Any], initialM42.asInstanceOf[js.Any], initialM43.asInstanceOf[js.Any], initialM44.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("FromValues")(initialM11.asInstanceOf[js.Any], initialM12.asInstanceOf[js.Any], initialM13.asInstanceOf[js.Any], initialM14.asInstanceOf[js.Any], initialM21.asInstanceOf[js.Any], initialM22.asInstanceOf[js.Any], initialM23.asInstanceOf[js.Any], initialM24.asInstanceOf[js.Any], initialM31.asInstanceOf[js.Any], initialM32.asInstanceOf[js.Any], initialM33.asInstanceOf[js.Any], initialM34.asInstanceOf[js.Any], initialM41.asInstanceOf[js.Any], initialM42.asInstanceOf[js.Any], initialM43.asInstanceOf[js.Any], initialM44.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Stores a list of values (16) inside a given matrix
@@ -203,7 +203,7 @@ object Matrix {
     initialM42: Double,
     initialM43: Double,
     initialM44: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromValuesToRef")(initialM11.asInstanceOf[js.Any], initialM12.asInstanceOf[js.Any], initialM13.asInstanceOf[js.Any], initialM14.asInstanceOf[js.Any], initialM21.asInstanceOf[js.Any], initialM22.asInstanceOf[js.Any], initialM23.asInstanceOf[js.Any], initialM24.asInstanceOf[js.Any], initialM31.asInstanceOf[js.Any], initialM32.asInstanceOf[js.Any], initialM33.asInstanceOf[js.Any], initialM34.asInstanceOf[js.Any], initialM41.asInstanceOf[js.Any], initialM42.asInstanceOf[js.Any], initialM43.asInstanceOf[js.Any], initialM44.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -214,10 +214,10 @@ object Matrix {
     * @param result defines the target matrix
     */
   inline def FromXYZAxesToRef(
-    xaxis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    yaxis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    zaxis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    result: typings.babylonjs.mathVectorMod.Matrix
+    xaxis: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    yaxis: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    zaxis: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromXYZAxesToRef")(xaxis.asInstanceOf[js.Any], yaxis.asInstanceOf[js.Any], zaxis.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -225,14 +225,14 @@ object Matrix {
     * @param matrix defines the matrix to use
     * @returns a new Float32Array array with 4 elements : the 2x2 matrix extracted from the given matrix
     */
-  inline def GetAsMatrix2x2(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): js.typedarray.Float32Array | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAsMatrix2x2")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float32Array | js.Array[Double]]
+  inline def GetAsMatrix2x2(matrix: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix]): js.typedarray.Float32Array | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAsMatrix2x2")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float32Array | js.Array[Double]]
   
   /**
     * Extracts a 3x3 matrix from a given matrix and store the result in a Float32Array
     * @param matrix defines the matrix to use
     * @returns a new Float32Array array with 9 elements : the 3x3 matrix extracted from the given matrix
     */
-  inline def GetAsMatrix3x3(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): js.typedarray.Float32Array | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAsMatrix3x3")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float32Array | js.Array[Double]]
+  inline def GetAsMatrix3x3(matrix: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix]): js.typedarray.Float32Array | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAsMatrix3x3")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float32Array | js.Array[Double]]
   
   /**
     * Computes a complete transformation matrix
@@ -245,32 +245,32 @@ object Matrix {
     * @returns the transformation matrix
     */
   inline def GetFinalMatrix(
-    viewport: DeepImmutable[typings.babylonjs.mathViewportMod.Viewport],
-    world: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    view: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    projection: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
+    viewport: DeepImmutable[typings.babylonjs.mathsMathDotviewportMod.Viewport],
+    world: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    view: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    projection: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     zmin: Double,
     zmax: Double
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFinalMatrix")(viewport.asInstanceOf[js.Any], world.asInstanceOf[js.Any], view.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], zmin.asInstanceOf[js.Any], zmax.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFinalMatrix")(viewport.asInstanceOf[js.Any], world.asInstanceOf[js.Any], view.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], zmin.asInstanceOf[js.Any], zmax.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Creates a new identity matrix
     * @returns a new identity matrix
     */
-  inline def Identity(): typings.babylonjs.mathVectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Identity")().asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def Identity(): typings.babylonjs.mathsMathDotvectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Identity")().asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Creates a new identity matrix and stores the result in a given matrix
     * @param result defines the target matrix
     */
-  inline def IdentityToRef(result: typings.babylonjs.mathVectorMod.Matrix): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("IdentityToRef")(result.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def IdentityToRef(result: typings.babylonjs.mathsMathDotvectorMod.Matrix): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("IdentityToRef")(result.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Creates a new matrix as the invert of a given matrix
     * @param source defines the source matrix
     * @returns the new matrix
     */
-  inline def Invert(source: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): typings.babylonjs.mathVectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Invert")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def Invert(source: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix]): typings.babylonjs.mathsMathDotvectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Invert")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Returns a new Matrix whose values are the interpolated values for "gradient" (float) between the ones of the matrices "startValue" and "endValue".
@@ -280,10 +280,10 @@ object Matrix {
     * @returns the new matrix
     */
   inline def Lerp(
-    startValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    endValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
+    startValue: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    endValue: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     gradient: Double
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(startValue.asInstanceOf[js.Any], endValue.asInstanceOf[js.Any], gradient.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(startValue.asInstanceOf[js.Any], endValue.asInstanceOf[js.Any], gradient.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Set the given matrix "result" as the interpolated values for "gradient" (float) between the ones of the matrices "startValue" and "endValue".
@@ -293,10 +293,10 @@ object Matrix {
     * @param result defines the Matrix object where to store data
     */
   inline def LerpToRef(
-    startValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    endValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
+    startValue: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    endValue: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     gradient: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LerpToRef")(startValue.asInstanceOf[js.Any], endValue.asInstanceOf[js.Any], gradient.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -308,10 +308,10 @@ object Matrix {
     * @returns the new matrix
     */
   inline def LookAtLH(
-    eye: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    target: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookAtLH")(eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+    eye: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    target: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookAtLH")(eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks at the target vector3, from the eye vector3 position, the up vector3 being oriented like "up".
@@ -322,10 +322,10 @@ object Matrix {
     * @param result defines the target matrix
     */
   inline def LookAtLHToRef(
-    eye: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    target: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    result: typings.babylonjs.mathVectorMod.Matrix
+    eye: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    target: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LookAtLHToRef")(eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -337,10 +337,10 @@ object Matrix {
     * @returns the new matrix
     */
   inline def LookAtRH(
-    eye: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    target: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookAtRH")(eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+    eye: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    target: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookAtRH")(eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks at the target vector3, from the eye vector3 position, the up vector3 being oriented like "up".
@@ -351,10 +351,10 @@ object Matrix {
     * @param result defines the target matrix
     */
   inline def LookAtRHToRef(
-    eye: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    target: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    result: typings.babylonjs.mathVectorMod.Matrix
+    eye: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    target: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LookAtRHToRef")(eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -365,9 +365,9 @@ object Matrix {
     * @returns the new matrix
     */
   inline def LookDirectionLH(
-    forward: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionLH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+    forward: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionLH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks in the direction of forward, the up direction being oriented like "up".
@@ -377,9 +377,9 @@ object Matrix {
     * @param result defines the target matrix
     */
   inline def LookDirectionLHToRef(
-    forward: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    result: typings.babylonjs.mathVectorMod.Matrix
+    forward: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionLHToRef")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -390,9 +390,9 @@ object Matrix {
     * @returns the new matrix
     */
   inline def LookDirectionRH(
-    forward: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionRH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+    forward: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionRH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks in the direction of forward, the up vector3 being oriented like "up".
@@ -402,9 +402,9 @@ object Matrix {
     * @param result defines the target matrix
     */
   inline def LookDirectionRHToRef(
-    forward: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    up: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    result: typings.babylonjs.mathVectorMod.Matrix
+    forward: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    up: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionRHToRef")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -416,8 +416,8 @@ object Matrix {
     * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
     * @returns a new matrix as a left-handed orthographic projection matrix
     */
-  inline def OrthoLH(width: Double, height: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
-  inline def OrthoLH(width: Double, height: Double, znear: Double, zfar: Double, halfZRange: Boolean): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def OrthoLH(width: Double, height: Double, znear: Double, zfar: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
+  inline def OrthoLH(width: Double, height: Double, znear: Double, zfar: Double, halfZRange: Boolean): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Store a left-handed orthographic projection to a given matrix
@@ -433,14 +433,14 @@ object Matrix {
     height: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLHToRef")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def OrthoLHToRef(
     width: Double,
     height: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     halfZRange: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLHToRef")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -455,7 +455,7 @@ object Matrix {
     * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
     * @returns a new matrix as a left-handed orthographic projection matrix
     */
-  inline def OrthoOffCenterLH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def OrthoOffCenterLH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def OrthoOffCenterLH(
     left: Double,
     right: Double,
@@ -464,7 +464,7 @@ object Matrix {
     znear: Double,
     zfar: Double,
     halfZRange: Boolean
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Stores a left-handed orthographic projection into a given matrix
@@ -484,7 +484,7 @@ object Matrix {
     top: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLHToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def OrthoOffCenterLHToRef(
     left: Double,
@@ -493,7 +493,7 @@ object Matrix {
     top: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     halfZRange: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLHToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -508,7 +508,7 @@ object Matrix {
     * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
     * @returns a new matrix as a right-handed orthographic projection matrix
     */
-  inline def OrthoOffCenterRH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def OrthoOffCenterRH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def OrthoOffCenterRH(
     left: Double,
     right: Double,
@@ -517,7 +517,7 @@ object Matrix {
     znear: Double,
     zfar: Double,
     halfZRange: Boolean
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Stores a right-handed orthographic projection into a given matrix
@@ -537,7 +537,7 @@ object Matrix {
     top: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRHToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def OrthoOffCenterRHToRef(
     left: Double,
@@ -546,7 +546,7 @@ object Matrix {
     top: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     halfZRange: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRHToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -561,8 +561,8 @@ object Matrix {
     * @param reverseDepthBufferMode true to indicate that we are in a reverse depth buffer mode (meaning znear and zfar have been inverted when calling the function)
     * @returns a new matrix as a left-handed perspective projection matrix
     */
-  inline def PerspectiveFovLH(fov: Double, aspect: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
-  inline def PerspectiveFovLH(fov: Double, aspect: Double, znear: Double, zfar: Double, halfZRange: Boolean): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovLH(fov: Double, aspect: Double, znear: Double, zfar: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
+  inline def PerspectiveFovLH(fov: Double, aspect: Double, znear: Double, zfar: Double, halfZRange: Boolean): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveFovLH(
     fov: Double,
     aspect: Double,
@@ -570,7 +570,7 @@ object Matrix {
     zfar: Double,
     halfZRange: Boolean,
     projectionPlaneTilt: Double
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveFovLH(
     fov: Double,
     aspect: Double,
@@ -579,7 +579,7 @@ object Matrix {
     halfZRange: Boolean,
     projectionPlaneTilt: Double,
     reverseDepthBufferMode: Boolean
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveFovLH(
     fov: Double,
     aspect: Double,
@@ -588,7 +588,7 @@ object Matrix {
     halfZRange: Boolean,
     projectionPlaneTilt: Unit,
     reverseDepthBufferMode: Boolean
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveFovLH(
     fov: Double,
     aspect: Double,
@@ -596,7 +596,7 @@ object Matrix {
     zfar: Double,
     halfZRange: Unit,
     projectionPlaneTilt: Double
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveFovLH(
     fov: Double,
     aspect: Double,
@@ -605,7 +605,7 @@ object Matrix {
     halfZRange: Unit,
     projectionPlaneTilt: Double,
     reverseDepthBufferMode: Boolean
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveFovLH(
     fov: Double,
     aspect: Double,
@@ -614,7 +614,7 @@ object Matrix {
     halfZRange: Unit,
     projectionPlaneTilt: Unit,
     reverseDepthBufferMode: Boolean
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Stores a left-handed perspective projection into a given matrix
@@ -633,14 +633,14 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PerspectiveFovLHToRef(
     fov: Double,
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PerspectiveFovLHToRef(
@@ -648,7 +648,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -657,7 +657,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Boolean,
     projectionPlaneTilt: Double
@@ -667,7 +667,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Boolean,
     projectionPlaneTilt: Double,
@@ -678,7 +678,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Boolean,
     projectionPlaneTilt: Unit,
@@ -689,7 +689,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Unit,
     projectionPlaneTilt: Double
@@ -699,7 +699,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Unit,
     projectionPlaneTilt: Double,
@@ -710,7 +710,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Unit,
     projectionPlaneTilt: Unit,
@@ -721,7 +721,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -730,7 +730,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Boolean,
     projectionPlaneTilt: Double
@@ -740,7 +740,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Boolean,
     projectionPlaneTilt: Double,
@@ -751,7 +751,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Boolean,
     projectionPlaneTilt: Unit,
@@ -762,7 +762,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Unit,
     projectionPlaneTilt: Double
@@ -772,7 +772,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Unit,
     projectionPlaneTilt: Double,
@@ -783,7 +783,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Unit,
     projectionPlaneTilt: Unit,
@@ -801,8 +801,8 @@ object Matrix {
     * @param reverseDepthBufferMode true to indicate that we are in a reverse depth buffer mode (meaning znear and zfar have been inverted when calling the function)
     * @returns a new matrix as a right-handed perspective projection matrix
     */
-  inline def PerspectiveFovRH(fov: Double, aspect: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
-  inline def PerspectiveFovRH(fov: Double, aspect: Double, znear: Double, zfar: Double, halfZRange: Boolean): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveFovRH(fov: Double, aspect: Double, znear: Double, zfar: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
+  inline def PerspectiveFovRH(fov: Double, aspect: Double, znear: Double, zfar: Double, halfZRange: Boolean): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveFovRH(
     fov: Double,
     aspect: Double,
@@ -810,7 +810,7 @@ object Matrix {
     zfar: Double,
     halfZRange: Boolean,
     projectionPlaneTilt: Double
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveFovRH(
     fov: Double,
     aspect: Double,
@@ -819,7 +819,7 @@ object Matrix {
     halfZRange: Boolean,
     projectionPlaneTilt: Double,
     reverseDepthBufferMode: Boolean
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveFovRH(
     fov: Double,
     aspect: Double,
@@ -828,7 +828,7 @@ object Matrix {
     halfZRange: Boolean,
     projectionPlaneTilt: Unit,
     reverseDepthBufferMode: Boolean
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveFovRH(
     fov: Double,
     aspect: Double,
@@ -836,7 +836,7 @@ object Matrix {
     zfar: Double,
     halfZRange: Unit,
     projectionPlaneTilt: Double
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveFovRH(
     fov: Double,
     aspect: Double,
@@ -845,7 +845,7 @@ object Matrix {
     halfZRange: Unit,
     projectionPlaneTilt: Double,
     reverseDepthBufferMode: Boolean
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveFovRH(
     fov: Double,
     aspect: Double,
@@ -854,7 +854,7 @@ object Matrix {
     halfZRange: Unit,
     projectionPlaneTilt: Unit,
     reverseDepthBufferMode: Boolean
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Stores a right-handed perspective projection into a given matrix
@@ -873,14 +873,14 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PerspectiveFovRHToRef(
     fov: Double,
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PerspectiveFovRHToRef(
@@ -888,7 +888,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -897,7 +897,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Boolean,
     projectionPlaneTilt: Double
@@ -907,7 +907,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Boolean,
     projectionPlaneTilt: Double,
@@ -918,7 +918,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Boolean,
     projectionPlaneTilt: Unit,
@@ -929,7 +929,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Unit,
     projectionPlaneTilt: Double
@@ -939,7 +939,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Unit,
     projectionPlaneTilt: Double,
@@ -950,7 +950,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Unit,
     projectionPlaneTilt: Unit,
@@ -961,7 +961,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -970,7 +970,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Boolean,
     projectionPlaneTilt: Double
@@ -980,7 +980,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Boolean,
     projectionPlaneTilt: Double,
@@ -991,7 +991,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Boolean,
     projectionPlaneTilt: Unit,
@@ -1002,7 +1002,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Unit,
     projectionPlaneTilt: Double
@@ -1012,7 +1012,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Unit,
     projectionPlaneTilt: Double,
@@ -1023,7 +1023,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Unit,
     projectionPlaneTilt: Unit,
@@ -1046,14 +1046,14 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PerspectiveFovReverseLHToRef(
     fov: Double,
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PerspectiveFovReverseLHToRef(
@@ -1061,7 +1061,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1070,7 +1070,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Boolean,
     projectionPlaneTilt: Double
@@ -1080,7 +1080,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Unit,
     projectionPlaneTilt: Double
@@ -1090,7 +1090,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1099,7 +1099,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Boolean,
     projectionPlaneTilt: Double
@@ -1109,7 +1109,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Unit,
     projectionPlaneTilt: Double
@@ -1131,14 +1131,14 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PerspectiveFovReverseRHToRef(
     fov: Double,
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PerspectiveFovReverseRHToRef(
@@ -1146,7 +1146,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1155,7 +1155,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Boolean,
     projectionPlaneTilt: Double
@@ -1165,7 +1165,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Boolean,
     halfZRange: Unit,
     projectionPlaneTilt: Double
@@ -1175,7 +1175,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1184,7 +1184,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Boolean,
     projectionPlaneTilt: Double
@@ -1194,7 +1194,7 @@ object Matrix {
     aspect: Double,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     isVerticalFovFixed: Unit,
     halfZRange: Unit,
     projectionPlaneTilt: Double
@@ -1214,19 +1214,24 @@ object Matrix {
     * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
     * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
     */
-  inline def PerspectiveFovWebVRToRef(fov: DownDegrees, znear: Double, zfar: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PerspectiveFovWebVRToRef(
     fov: DownDegrees,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PerspectiveFovWebVRToRef(
+    fov: DownDegrees,
+    znear: Double,
+    zfar: Double,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     rightHanded: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PerspectiveFovWebVRToRef(
     fov: DownDegrees,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     rightHanded: Boolean,
     halfZRange: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1234,7 +1239,7 @@ object Matrix {
     fov: DownDegrees,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     rightHanded: Boolean,
     halfZRange: Boolean,
     projectionPlaneTilt: Double
@@ -1243,7 +1248,7 @@ object Matrix {
     fov: DownDegrees,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     rightHanded: Boolean,
     halfZRange: Unit,
     projectionPlaneTilt: Double
@@ -1252,7 +1257,7 @@ object Matrix {
     fov: DownDegrees,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     rightHanded: Unit,
     halfZRange: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1260,7 +1265,7 @@ object Matrix {
     fov: DownDegrees,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     rightHanded: Unit,
     halfZRange: Boolean,
     projectionPlaneTilt: Double
@@ -1269,7 +1274,7 @@ object Matrix {
     fov: DownDegrees,
     znear: Double,
     zfar: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix,
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix,
     rightHanded: Unit,
     halfZRange: Unit,
     projectionPlaneTilt: Double
@@ -1285,8 +1290,8 @@ object Matrix {
     * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
     * @returns a new matrix as a left-handed perspective projection matrix
     */
-  inline def PerspectiveLH(width: Double, height: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
-  inline def PerspectiveLH(width: Double, height: Double, znear: Double, zfar: Double, halfZRange: Boolean): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def PerspectiveLH(width: Double, height: Double, znear: Double, zfar: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
+  inline def PerspectiveLH(width: Double, height: Double, znear: Double, zfar: Double, halfZRange: Boolean): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveLH(
     width: Double,
     height: Double,
@@ -1294,7 +1299,7 @@ object Matrix {
     zfar: Double,
     halfZRange: Boolean,
     projectionPlaneTilt: Double
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   inline def PerspectiveLH(
     width: Double,
     height: Double,
@@ -1302,21 +1307,21 @@ object Matrix {
     zfar: Double,
     halfZRange: Unit,
     projectionPlaneTilt: Double
-  ): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Computes a reflection matrix from a plane
     * @param plane defines the reflection plane
     * @returns a new matrix
     */
-  inline def Reflection(plane: DeepImmutable[IPlaneLike]): typings.babylonjs.mathVectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Reflection")(plane.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def Reflection(plane: DeepImmutable[IPlaneLike]): typings.babylonjs.mathsMathDotvectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Reflection")(plane.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Computes a reflection matrix from a plane
     * @param plane defines the reflection plane
     * @param result defines the target matrix
     */
-  inline def ReflectionToRef(plane: DeepImmutable[IPlaneLike], result: typings.babylonjs.mathVectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ReflectionToRef")(plane.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ReflectionToRef(plane: DeepImmutable[IPlaneLike], result: typings.babylonjs.mathsMathDotvectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ReflectionToRef")(plane.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Takes normalised vectors and returns a rotation matrix to align "from" with "to".
@@ -1326,9 +1331,9 @@ object Matrix {
     * @param result defines the target matrix
     */
   inline def RotationAlignToRef(
-    from: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    to: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    result: typings.babylonjs.mathVectorMod.Matrix
+    from: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    to: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationAlignToRef")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -1337,7 +1342,7 @@ object Matrix {
     * @param angle defines the angle (in radians) to use
     * @returns the new matrix
     */
-  inline def RotationAxis(axis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3], angle: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationAxis")(axis.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def RotationAxis(axis: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3], angle: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationAxis")(axis.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Creates a new rotation matrix for "angle" radians around the given axis and stores it in a given matrix
@@ -1346,9 +1351,9 @@ object Matrix {
     * @param result defines the target matrix
     */
   inline def RotationAxisToRef(
-    axis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    axis: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
     angle: Double,
-    result: typings.babylonjs.mathVectorMod.Matrix
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationAxisToRef")(axis.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -1356,28 +1361,28 @@ object Matrix {
     * @param angle defines the angle (in radians) to use
     * @returns the new matrix
     */
-  inline def RotationX(angle: Double): typings.babylonjs.mathVectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationX")(angle.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def RotationX(angle: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationX")(angle.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Creates a new rotation matrix for "angle" radians around the X axis and stores it in a given matrix
     * @param angle defines the angle (in radians) to use
     * @param result defines the target matrix
     */
-  inline def RotationXToRef(angle: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationXToRef")(angle.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def RotationXToRef(angle: Double, result: typings.babylonjs.mathsMathDotvectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationXToRef")(angle.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a new rotation matrix for "angle" radians around the Y axis
     * @param angle defines the angle (in radians) to use
     * @returns the new matrix
     */
-  inline def RotationY(angle: Double): typings.babylonjs.mathVectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationY")(angle.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def RotationY(angle: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationY")(angle.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Creates a new rotation matrix for "angle" radians around the Y axis and stores it in a given matrix
     * @param angle defines the angle (in radians) to use
     * @param result defines the target matrix
     */
-  inline def RotationYToRef(angle: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationYToRef")(angle.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def RotationYToRef(angle: Double, result: typings.babylonjs.mathsMathDotvectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationYToRef")(angle.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a rotation matrix
@@ -1386,7 +1391,7 @@ object Matrix {
     * @param roll defines the roll angle in radians (Z axis)
     * @returns the new rotation matrix
     */
-  inline def RotationYawPitchRoll(yaw: Double, pitch: Double, roll: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationYawPitchRoll")(yaw.asInstanceOf[js.Any], pitch.asInstanceOf[js.Any], roll.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def RotationYawPitchRoll(yaw: Double, pitch: Double, roll: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationYawPitchRoll")(yaw.asInstanceOf[js.Any], pitch.asInstanceOf[js.Any], roll.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Creates a rotation matrix and stores it in a given matrix
@@ -1395,21 +1400,21 @@ object Matrix {
     * @param roll defines the roll angle in radians (Z axis)
     * @param result defines the target matrix
     */
-  inline def RotationYawPitchRollToRef(yaw: Double, pitch: Double, roll: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationYawPitchRollToRef")(yaw.asInstanceOf[js.Any], pitch.asInstanceOf[js.Any], roll.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def RotationYawPitchRollToRef(yaw: Double, pitch: Double, roll: Double, result: typings.babylonjs.mathsMathDotvectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationYawPitchRollToRef")(yaw.asInstanceOf[js.Any], pitch.asInstanceOf[js.Any], roll.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a new rotation matrix for "angle" radians around the Z axis
     * @param angle defines the angle (in radians) to use
     * @returns the new matrix
     */
-  inline def RotationZ(angle: Double): typings.babylonjs.mathVectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationZ")(angle.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def RotationZ(angle: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationZ")(angle.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Creates a new rotation matrix for "angle" radians around the Z axis and stores it in a given matrix
     * @param angle defines the angle (in radians) to use
     * @param result defines the target matrix
     */
-  inline def RotationZToRef(angle: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationZToRef")(angle.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def RotationZToRef(angle: Double, result: typings.babylonjs.mathsMathDotvectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationZToRef")(angle.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a scaling matrix
@@ -1418,7 +1423,7 @@ object Matrix {
     * @param z defines the scale factor on Z axis
     * @returns the new matrix
     */
-  inline def Scaling(x: Double, y: Double, z: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("Scaling")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def Scaling(x: Double, y: Double, z: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("Scaling")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Creates a scaling matrix and stores it in a given matrix
@@ -1427,7 +1432,7 @@ object Matrix {
     * @param z defines the scale factor on Z axis
     * @param result defines the target matrix
     */
-  inline def ScalingToRef(x: Double, y: Double, z: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ScalingToRef")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ScalingToRef(x: Double, y: Double, z: Double, result: typings.babylonjs.mathsMathDotvectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ScalingToRef")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a translation matrix
@@ -1436,7 +1441,7 @@ object Matrix {
     * @param z defines the translationon Z axis
     * @returns the new matrix
     */
-  inline def Translation(x: Double, y: Double, z: Double): typings.babylonjs.mathVectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("Translation")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def Translation(x: Double, y: Double, z: Double): typings.babylonjs.mathsMathDotvectorMod.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("Translation")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Creates a translation matrix and stores it in a given matrix
@@ -1445,14 +1450,14 @@ object Matrix {
     * @param z defines the translationon Z axis
     * @param result defines the target matrix
     */
-  inline def TranslationToRef(x: Double, y: Double, z: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TranslationToRef")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def TranslationToRef(x: Double, y: Double, z: Double, result: typings.babylonjs.mathsMathDotvectorMod.Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TranslationToRef")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Compute the transpose of a given matrix
     * @param matrix defines the matrix to transpose
     * @returns the new matrix
     */
-  inline def Transpose(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): typings.babylonjs.mathVectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Transpose")(matrix.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def Transpose(matrix: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix]): typings.babylonjs.mathsMathDotvectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Transpose")(matrix.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   /**
     * Compute the transpose of a matrix and store it in a target matrix
@@ -1460,15 +1465,15 @@ object Matrix {
     * @param result defines the target matrix
     */
   inline def TransposeToRef(
-    matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    result: typings.babylonjs.mathVectorMod.Matrix
+    matrix: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    result: typings.babylonjs.mathsMathDotvectorMod.Matrix
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransposeToRef")(matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a new zero matrix
     * @returns a new zero matrix
     */
-  inline def Zero(): typings.babylonjs.mathVectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.mathVectorMod.Matrix]
+  inline def Zero(): typings.babylonjs.mathsMathDotvectorMod.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   
   @JSImport("babylonjs", "Matrix._IdentityReadOnly")
   @js.native

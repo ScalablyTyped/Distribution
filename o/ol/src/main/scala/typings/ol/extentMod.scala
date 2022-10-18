@@ -1,10 +1,10 @@
 package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
-import typings.ol.cornerMod.Corner
+import typings.ol.extentCornerMod.Corner
+import typings.ol.extentRelationshipMod.Relationship
 import typings.ol.projMod.TransformFunction
-import typings.ol.projectionMod.default
-import typings.ol.relationshipMod.Relationship
+import typings.ol.projProjectionMod.default
 import typings.ol.sizeMod.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

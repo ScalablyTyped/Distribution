@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [nextWaypointDistance] - The distance the agent seeks for the next waypoint.
   */
 open class FollowPathBehavior ()
-  extends typings.yuka.yukaMod.FollowPathBehavior {
-  def this(path: typings.yuka.pathMod.Path) = this()
+  extends typings.yuka.srcYukaMod.FollowPathBehavior {
+  def this(path: typings.yuka.srcSteeringPathMod.Path) = this()
   def this(path: Unit, nextWaypointDistance: Double) = this()
-  def this(path: typings.yuka.pathMod.Path, nextWaypointDistance: Double) = this()
+  def this(path: typings.yuka.srcSteeringPathMod.Path, nextWaypointDistance: Double) = this()
 }

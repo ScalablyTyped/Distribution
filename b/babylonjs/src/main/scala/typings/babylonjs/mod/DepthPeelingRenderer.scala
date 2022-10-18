@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "DepthPeelingRenderer")
 @js.native
 open class DepthPeelingRenderer protected ()
-  extends typings.babylonjs.legacyMod.DepthPeelingRenderer {
+  extends typings.babylonjs.legacyLegacyMod.DepthPeelingRenderer {
   /**
     * Instanciates the depth peeling renderer
     * @param scene Scene to attach to

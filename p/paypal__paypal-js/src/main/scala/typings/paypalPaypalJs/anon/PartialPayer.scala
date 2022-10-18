@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@paypal/paypal-js.@paypal/paypal-js/types/apis/orders.Payer> */
 trait PartialPayer extends StObject {
   
-  var address: js.UndefOr[typings.paypalPaypalJs.commonsMod.Address] = js.undefined
+  var address: js.UndefOr[typings.paypalPaypalJs.typesApisCommonsMod.Address] = js.undefined
   
   var birth_date: js.UndefOr[String] = js.undefined
   
@@ -32,7 +32,7 @@ object PartialPayer {
   
   extension [Self <: PartialPayer](x: Self) {
     
-    inline def setAddress(value: typings.paypalPaypalJs.commonsMod.Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: typings.paypalPaypalJs.typesApisCommonsMod.Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     

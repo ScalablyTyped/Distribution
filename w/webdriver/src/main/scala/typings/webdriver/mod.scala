@@ -1,7 +1,7 @@
 package typings.webdriver
 
 import typings.std.Record
-import typings.wdioProtocols.typesMod.CommandEndpoint
+import typings.wdioProtocols.buildTypesMod.CommandEndpoint
 import typings.webdriver.anon.Default
 import typings.webdriver.anon.DefaultMatch
 import typings.webdriver.anon.DefaultMatchRequired
@@ -13,10 +13,10 @@ import typings.webdriver.anon.RequiredType
 import typings.webdriver.anon.Type
 import typings.webdriver.anon.TypeValidate
 import typings.webdriver.anon.Validate
-import typings.webdriver.requestMod.WebDriverResponse
-import typings.webdriver.typesMod.AttachOptions
-import typings.webdriver.typesMod.BaseClient
-import typings.webdriver.typesMod.Client
+import typings.webdriver.buildRequestMod.WebDriverResponse
+import typings.webdriver.buildTypesMod.AttachOptions
+import typings.webdriver.buildTypesMod.BaseClient
+import typings.webdriver.buildTypesMod.Client
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,34 +99,37 @@ object mod {
       commandWrapper: js.Function1[/* repeated */ Any, Any]
     ): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[Client]
     
-    inline def newSession(options: typings.wdioTypes.optionsMod.WebDriver): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
-    inline def newSession(options: typings.wdioTypes.optionsMod.WebDriver, modifier: js.Function1[/* repeated */ Any, Any]): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def newSession(options: typings.wdioTypes.buildOptionsMod.WebDriver): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
     inline def newSession(
-      options: typings.wdioTypes.optionsMod.WebDriver,
+      options: typings.wdioTypes.buildOptionsMod.WebDriver,
+      modifier: js.Function1[/* repeated */ Any, Any]
+    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def newSession(
+      options: typings.wdioTypes.buildOptionsMod.WebDriver,
       modifier: js.Function1[/* repeated */ Any, Any],
       userPrototype: js.Object
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
     inline def newSession(
-      options: typings.wdioTypes.optionsMod.WebDriver,
+      options: typings.wdioTypes.buildOptionsMod.WebDriver,
       modifier: js.Function1[/* repeated */ Any, Any],
       userPrototype: js.Object,
       customCommandWrapper: js.Function1[/* repeated */ Any, Any]
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any], customCommandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
     inline def newSession(
-      options: typings.wdioTypes.optionsMod.WebDriver,
+      options: typings.wdioTypes.buildOptionsMod.WebDriver,
       modifier: js.Function1[/* repeated */ Any, Any],
       userPrototype: Unit,
       customCommandWrapper: js.Function1[/* repeated */ Any, Any]
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any], customCommandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(options: typings.wdioTypes.optionsMod.WebDriver, modifier: Unit, userPrototype: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def newSession(options: typings.wdioTypes.buildOptionsMod.WebDriver, modifier: Unit, userPrototype: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
     inline def newSession(
-      options: typings.wdioTypes.optionsMod.WebDriver,
+      options: typings.wdioTypes.buildOptionsMod.WebDriver,
       modifier: Unit,
       userPrototype: js.Object,
       customCommandWrapper: js.Function1[/* repeated */ Any, Any]
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any], customCommandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
     inline def newSession(
-      options: typings.wdioTypes.optionsMod.WebDriver,
+      options: typings.wdioTypes.buildOptionsMod.WebDriver,
       modifier: Unit,
       userPrototype: Unit,
       customCommandWrapper: js.Function1[/* repeated */ Any, Any]

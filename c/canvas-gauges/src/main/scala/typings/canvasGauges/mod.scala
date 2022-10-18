@@ -57,9 +57,9 @@ object mod {
     inline def rules_=(x: rules): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rules")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("canvas-gauges", "BaseGauge")
+  /* note: abstract class */ @JSImport("canvas-gauges", "BaseGauge")
   @js.native
-  abstract class BaseGauge protected ()
+  open class BaseGauge protected ()
     extends StObject
        with typings.canvasGauges.CanvasGauges.BaseGauge {
     def this(options: typings.canvasGauges.CanvasGauges.GenericOptions) = this()

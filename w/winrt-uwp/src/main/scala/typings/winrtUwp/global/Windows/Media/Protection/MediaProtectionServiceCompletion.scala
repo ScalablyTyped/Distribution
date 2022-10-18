@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains a method that indicates whether a protection service has completed successfully. */
-@JSGlobal("Windows.Media.Protection.MediaProtectionServiceCompletion")
+/* note: abstract class */ @JSGlobal("Windows.Media.Protection.MediaProtectionServiceCompletion")
 @js.native
-abstract class MediaProtectionServiceCompletion ()
+open class MediaProtectionServiceCompletion ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.MediaProtectionServiceCompletion {
   

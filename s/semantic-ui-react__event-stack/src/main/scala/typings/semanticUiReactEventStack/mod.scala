@@ -11,7 +11,7 @@ object mod {
   @JSImport("@semantic-ui-react/event-stack", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.semanticUiReactEventStack.typesEventStackMod.default
+    extends typings.semanticUiReactEventStack.libTypesEventStackMod.default
   /* static members */
   object default {
     
@@ -32,5 +32,5 @@ object mod {
   
   @JSImport("@semantic-ui-react/event-stack", "instance")
   @js.native
-  val instance: typings.semanticUiReactEventStack.eventStackMod.default = js.native
+  val instance: typings.semanticUiReactEventStack.libTypesLibEventStackMod.default = js.native
 }

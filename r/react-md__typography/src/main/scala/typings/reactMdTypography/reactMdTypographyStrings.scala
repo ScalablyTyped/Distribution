@@ -1,13 +1,13 @@
 package typings.reactMdTypography
 
-import typings.reactMdTypography.textContainerMod.TextContainerSize
-import typings.reactMdTypography.typographyMod.FontStyle
-import typings.reactMdTypography.typographyMod.TextAlign
-import typings.reactMdTypography.typographyMod.TextColor
-import typings.reactMdTypography.typographyMod.TextDecoration
-import typings.reactMdTypography.typographyMod.TextTransform
-import typings.reactMdTypography.typographyMod.TextWeight
-import typings.reactMdTypography.typographyMod.TypographyType
+import typings.reactMdTypography.typesTextContainerMod.TextContainerSize
+import typings.reactMdTypography.typesTypographyMod.FontStyle
+import typings.reactMdTypography.typesTypographyMod.TextAlign
+import typings.reactMdTypography.typesTypographyMod.TextColor
+import typings.reactMdTypography.typesTypographyMod.TextDecoration
+import typings.reactMdTypography.typesTypographyMod.TextTransform
+import typings.reactMdTypography.typesTypographyMod.TextWeight
+import typings.reactMdTypography.typesTypographyMod.TypographyType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

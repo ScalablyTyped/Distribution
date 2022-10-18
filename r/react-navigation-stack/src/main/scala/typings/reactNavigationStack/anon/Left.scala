@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Left extends StObject {
   
-  var bottom: Double
+  var bottom: js.UndefOr[Double] = js.undefined
   
-  var left: Double
+  var left: js.UndefOr[Double] = js.undefined
   
-  var right: Double
+  var right: js.UndefOr[Double] = js.undefined
   
-  var top: Double
+  var top: js.UndefOr[Double] = js.undefined
 }
 object Left {
   
-  inline def apply(bottom: Double, left: Double, right: Double, top: Double): Left = {
-    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+  inline def apply(): Left = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Left]
   }
   
@@ -25,10 +25,18 @@ object Left {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    
     inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

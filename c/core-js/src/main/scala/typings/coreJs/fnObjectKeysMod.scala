@@ -9,7 +9,7 @@ object fnObjectKeysMod {
   /* was `typeof core.Object.keys` */
   inline def apply(o: Any): Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[Array[java.lang.String]]
   
-  @JSImport("core-js/library/fn/object/keys", JSImport.Namespace)
+  @JSImport("core-js/fn/object/keys", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
 }

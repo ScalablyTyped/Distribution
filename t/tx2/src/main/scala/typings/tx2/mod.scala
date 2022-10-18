@@ -134,7 +134,7 @@ object mod extends Shortcut {
   
   @js.native
   trait TX2
-    extends typings.node.nodeEventsMod.^ {
+    extends typings.node.nodeColoneventsMod.^ {
     
     def action(action_name: String, callback: js.Function1[/* cb */ js.Function1[/* data */ Any, Unit], Unit]): Unit = js.native
     def action[T /* <: js.Object */](

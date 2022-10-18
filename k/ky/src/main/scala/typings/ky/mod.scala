@@ -1,8 +1,8 @@
 package typings.ky
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ky.optionsMod.NormalizedOptions
-import typings.ky.typesKyMod.KyInstance
+import typings.ky.distributionTypesKyMod.KyInstance
+import typings.ky.distributionTypesOptionsMod.NormalizedOptions
 import typings.std.Request
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
@@ -18,14 +18,14 @@ object mod extends Shortcut {
   @JSImport("ky", "HTTPError")
   @js.native
   open class HTTPError protected ()
-    extends typings.ky.httperrorMod.HTTPError {
+    extends typings.ky.distributionErrorsHttperrorMod.HTTPError {
     def this(response: Response, request: Request, options: NormalizedOptions) = this()
   }
   
   @JSImport("ky", "TimeoutError")
   @js.native
   open class TimeoutError protected ()
-    extends typings.ky.timeoutErrorMod.TimeoutError {
+    extends typings.ky.distributionErrorsTimeoutErrorMod.TimeoutError {
     def this(request: Request) = this()
   }
   

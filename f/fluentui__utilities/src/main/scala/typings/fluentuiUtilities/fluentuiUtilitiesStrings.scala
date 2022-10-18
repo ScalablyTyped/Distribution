@@ -1,19 +1,11 @@
 package typings.fluentuiUtilities
 
-import typings.fluentuiUtilities.mathMod.FitMode
+import typings.fluentuiUtilities.libMathMod.FitMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fluentuiUtilitiesStrings {
-  
-  @js.native
-  sealed trait IClassNames extends StObject
-  inline def IClassNames: IClassNames = "IClassNames".asInstanceOf[IClassNames]
-  
-  @js.native
-  sealed trait ISettingsMap extends StObject
-  inline def ISettingsMap: ISettingsMap = "ISettingsMap".asInstanceOf[ISettingsMap]
   
   @js.native
   sealed trait contain
@@ -34,10 +26,6 @@ object fluentuiUtilitiesStrings {
   @js.native
   sealed trait `data-no-vertical-wrap` extends StObject
   inline def `data-no-vertical-wrap`: `data-no-vertical-wrap` = "data-no-vertical-wrap".asInstanceOf[`data-no-vertical-wrap`]
-  
-  @js.native
-  sealed trait extendComponent extends StObject
-  inline def extendComponent: extendComponent = "extendComponent".asInstanceOf[extendComponent]
   
   @js.native
   sealed trait localStorage extends StObject

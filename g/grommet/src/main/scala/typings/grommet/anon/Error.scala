@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Error extends StObject {
   
-  var error: js.UndefOr[`4`] = js.undefined
+  var error: js.UndefOr[`7`] = js.undefined
 }
 object Error {
   
@@ -17,7 +17,7 @@ object Error {
   
   extension [Self <: Error](x: Self) {
     
-    inline def setError(value: `4`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: `7`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
   }

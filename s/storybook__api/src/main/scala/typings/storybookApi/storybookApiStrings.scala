@@ -1,10 +1,10 @@
 package typings.storybookApi
 
-import typings.storybookApi.layoutMod.ActiveTabsType
-import typings.storybookApi.layoutMod.PanelPositions
-import typings.storybookApi.modulesStoriesMod._ViewMode
-import typings.storybookApi.shortcutsMod.Action
-import typings.storybookApi.storiesMod.Item
+import typings.storybookApi.distTs3Dot9LibStoriesMod.Item
+import typings.storybookApi.distTs3Dot9ModulesAddonsMod._ViewMode
+import typings.storybookApi.distTs3Dot9ModulesLayoutMod.ActiveTabsType
+import typings.storybookApi.distTs3Dot9ModulesLayoutMod.PanelPositions
+import typings.storybookApi.distTs3Dot9ModulesShortcutsMod.Action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -155,7 +155,7 @@ object storybookApiStrings {
   sealed trait info
     extends StObject
        with _ViewMode
-       with typings.storybookApi.addonsMod._ViewMode
+       with typings.storybookApi.distTs3Dot9ModulesStoriesMod._ViewMode
   inline def info: info = "info".asInstanceOf[info]
   
   @js.native
@@ -225,7 +225,7 @@ object storybookApiStrings {
   @js.native
   sealed trait page
     extends StObject
-       with typings.storybookApi.addonsMod._ViewMode
+       with _ViewMode
   inline def page: page = "page".asInstanceOf[page]
   
   @js.native
@@ -308,7 +308,7 @@ object storybookApiStrings {
   sealed trait settings
     extends StObject
        with _ViewMode
-       with typings.storybookApi.addonsMod._ViewMode
+       with typings.storybookApi.distTs3Dot9ModulesStoriesMod._ViewMode
   inline def settings: settings = "settings".asInstanceOf[settings]
   
   @js.native
@@ -333,7 +333,7 @@ object storybookApiStrings {
   sealed trait story
     extends StObject
        with _ViewMode
-       with typings.storybookApi.addonsMod._ViewMode
+       with typings.storybookApi.distTs3Dot9ModulesStoriesMod._ViewMode
   inline def story: story = "story".asInstanceOf[story]
   
   @js.native

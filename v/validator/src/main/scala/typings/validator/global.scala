@@ -2,10 +2,10 @@ package typings.validator
 
 import typings.validator.anon.StrongPasswordOptionsretu
 import typings.validator.anon.StrongPasswordOptionsretuMinLength
-import typings.validator.isBooleanMod.Options
-import typings.validator.isEmailMod.IsEmailOptions
-import typings.validator.isFQDNMod.IsFQDNOptions
-import typings.validator.isURLMod.IsURLOptions
+import typings.validator.libIsBooleanMod.Options
+import typings.validator.libIsEmailMod.IsEmailOptions
+import typings.validator.libIsFQDNMod.IsFQDNOptions
+import typings.validator.libIsURLMod.IsURLOptions
 import typings.validator.mod.validator.AlphaLocale
 import typings.validator.mod.validator.AlphanumericLocale
 import typings.validator.mod.validator.FloatLocale
@@ -83,7 +83,7 @@ object global {
     @JSGlobal("validator.ibanLocales")
     @js.native
     val ibanLocales: js.Array[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 78 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 78, starting with typings.validator.validatorStrings.AD, typings.validator.validatorStrings.AE, typings.validator.validatorStrings.AL */ Any
       ] = js.native
     
     /**
@@ -318,9 +318,7 @@ object global {
       */
     inline def isISIN(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISIN")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    /**
-      * Check if the string is a valid [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) officially assigned country code.
-      */
+    /* was `typeof _isISO31661Alpha2.default` */
     inline def isISO31661Alpha2(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISO31661Alpha2")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**

@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientToolresultsStrings {
   
   @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
   sealed trait toolresults extends StObject
   inline def toolresults: toolresults = "toolresults".asInstanceOf[toolresults]
   

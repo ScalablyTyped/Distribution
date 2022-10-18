@@ -1,7 +1,7 @@
 package typings.testingLibraryUserEvent.anon
 
-import typings.testingLibraryUserEvent.cssPointerEventsMod.global.Element
-import typings.testingLibraryUserEvent.interceptorMod.ImplReturn
+import typings.testingLibraryUserEvent.distTypesDocumentInterceptorMod.ImplReturn
+import typings.testingLibraryUserEvent.distTypesUtilsPointerCssPointerEventsMod.global.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.plottable.mod
 
-import typings.plottable.formattersMod.Formatter
+import typings.plottable.buildSrcCoreFormattersMod.Formatter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -16,9 +16,9 @@ trait Transposeb extends StObject {
   
   var shape: Unit
   
-  var transpose_a: Unit
+  var transpose_a: B
   
-  var transpose_b: Unit
+  var transpose_b: B
   
   var value: Unit
 }
@@ -30,8 +30,8 @@ object Transposeb {
     Tidx: Unit,
     dtype: Unit,
     shape: Unit,
-    transpose_a: Unit,
-    transpose_b: Unit,
+    transpose_a: B,
+    transpose_b: B,
     value: Unit
   ): Transposeb = {
     val __obj = js.Dynamic.literal(N = N.asInstanceOf[js.Any], T = T.asInstanceOf[js.Any], Tidx = Tidx.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], transpose_a = transpose_a.asInstanceOf[js.Any], transpose_b = transpose_b.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
@@ -50,9 +50,9 @@ object Transposeb {
     
     inline def setTidx(value: Unit): Self = StObject.set(x, "Tidx", value.asInstanceOf[js.Any])
     
-    inline def setTranspose_a(value: Unit): Self = StObject.set(x, "transpose_a", value.asInstanceOf[js.Any])
+    inline def setTranspose_a(value: B): Self = StObject.set(x, "transpose_a", value.asInstanceOf[js.Any])
     
-    inline def setTranspose_b(value: Unit): Self = StObject.set(x, "transpose_b", value.asInstanceOf[js.Any])
+    inline def setTranspose_b(value: B): Self = StObject.set(x, "transpose_b", value.asInstanceOf[js.Any])
     
     inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

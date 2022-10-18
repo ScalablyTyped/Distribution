@@ -1,6 +1,6 @@
 package typings.dateFns
 
-import org.scalablytyped.runtime.Shortcut
+import typings.dateFns.anon.Era
 import typings.dateFns.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,15 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object intlFormatMod {
   
-  object default extends Shortcut {
+  object default {
     
-    @JSImport("date-fns/esm/fp/intlFormat", JSImport.Default)
+    inline def apply(argument: js.Date): String = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(argument: js.Date, formatOptions: Unit, localeOptions: `0`): String = (^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any], formatOptions.asInstanceOf[js.Any], localeOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(argument: js.Date, formatOptions: Era): String = (^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any], formatOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(argument: js.Date, formatOptions: Era, localeOptions: `0`): String = (^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any], formatOptions.asInstanceOf[js.Any], localeOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(argument: Double): String = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(argument: Double, formatOptions: Unit, localeOptions: `0`): String = (^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any], formatOptions.asInstanceOf[js.Any], localeOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(argument: Double, formatOptions: Era): String = (^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any], formatOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(argument: Double, formatOptions: Era, localeOptions: `0`): String = (^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any], formatOptions.asInstanceOf[js.Any], localeOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @JSImport("date-fns/intlFormat", JSImport.Default)
     @js.native
-    val ^ : CurriedFn3[`0`, typings.dateFns.anon.Day, js.Date | Double, String] = js.native
-    
-    type _To = CurriedFn3[`0`, typings.dateFns.anon.Day, js.Date | Double, String]
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn3[`0`, typings.dateFns.anon.Day, js.Date | Double, String] = ^
+    val ^ : js.Any = js.native
   }
 }

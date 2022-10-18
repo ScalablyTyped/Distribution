@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-pinpoint-browser", "DeleteApnsVoipChannelCommand")
 @js.native
 open class DeleteApnsVoipChannelCommand protected ()
-  extends typings.awsSdkClientPinpointBrowser.deleteApnsVoipChannelCommandMod.DeleteApnsVoipChannelCommand {
+  extends typings.awsSdkClientPinpointBrowser.commandsDeleteApnsVoipChannelCommandMod.DeleteApnsVoipChannelCommand {
   def this(input: DeleteApnsVoipChannelInput) = this()
 }

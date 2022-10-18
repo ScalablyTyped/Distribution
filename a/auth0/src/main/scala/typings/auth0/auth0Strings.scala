@@ -823,6 +823,12 @@ object auth0Strings {
   inline def office365: office365 = "office365".asInstanceOf[office365]
   
   @js.native
+  sealed trait oidc
+    extends StObject
+       with Strategy
+  inline def oidc: oidc = "oidc".asInstanceOf[oidc]
+  
+  @js.native
   sealed trait password
     extends StObject
        with Grant

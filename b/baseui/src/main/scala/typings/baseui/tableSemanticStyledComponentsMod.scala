@@ -13,7 +13,7 @@ import typings.baseui.baseuiStrings.tr_
 import typings.baseui.tableSemanticTypesMod.Divider
 import typings.baseui.tableSemanticTypesMod.Size
 import typings.react.mod.ForwardRefExoticComponent
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

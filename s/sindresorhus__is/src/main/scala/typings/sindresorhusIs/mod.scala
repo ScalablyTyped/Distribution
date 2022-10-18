@@ -1,8 +1,11 @@
 package typings.sindresorhusIs
 
 import org.scalablytyped.runtime.NumberDictionary
+import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.sindresorhusIs.anon.End
+import typings.sindresorhusIs.distTypesMod.Class
+import typings.sindresorhusIs.distTypesMod.Falsy
 import typings.sindresorhusIs.sindresorhusIsStrings.AsyncIterable
 import typings.sindresorhusIs.sindresorhusIsStrings.HTMLElement
 import typings.sindresorhusIs.sindresorhusIsStrings.Iterable
@@ -35,9 +38,6 @@ import typings.sindresorhusIs.sindresorhusIsStrings.`predicate returns truthy fo
 import typings.sindresorhusIs.sindresorhusIsStrings.`string with a URL`
 import typings.sindresorhusIs.sindresorhusIsStrings.`string with a number`
 import typings.sindresorhusIs.sindresorhusIsStrings.integer
-import typings.sindresorhusIs.typesMod.Class
-import typings.sindresorhusIs.typesMod.Falsy
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -864,8 +864,8 @@ object mod {
     extends StObject
        with EventEmitter {
     
-    def pipe[T /* <: WritableStream[Any] */](destination: T): T = js.native
-    def pipe[T /* <: WritableStream[Any] */](destination: T, options: End): T = js.native
+    def pipe[T /* <: WritableStream */](destination: T): T = js.native
+    def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

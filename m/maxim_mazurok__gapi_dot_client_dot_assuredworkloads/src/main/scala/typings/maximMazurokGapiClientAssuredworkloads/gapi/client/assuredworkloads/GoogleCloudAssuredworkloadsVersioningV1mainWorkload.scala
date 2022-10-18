@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAssuredworkloads.gapi.client.assuredworkloads
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,9 +57,7 @@ trait GoogleCloudAssuredworkloadsVersioningV1mainWorkload extends StObject {
   
   /** Optional. Labels applied to the workload. */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAssuredworkloads.maximMazurokGapiClientAssuredworkloadsStrings.GoogleCloudAssuredworkloadsVersioningV1mainWorkload & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Optional. The resource name of the workload. Format: organizations/{organization}/locations/{location}/workloads/{workload} Read-only. */
@@ -152,9 +149,7 @@ object GoogleCloudAssuredworkloadsVersioningV1mainWorkload {
     inline def setKmsSettingsUndefined: Self = StObject.set(x, "kmsSettings", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAssuredworkloads.maximMazurokGapiClientAssuredworkloadsStrings.GoogleCloudAssuredworkloadsVersioningV1mainWorkload & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

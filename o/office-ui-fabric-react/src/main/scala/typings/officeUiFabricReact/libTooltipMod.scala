@@ -2,6 +2,8 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.Delay
 import typings.officeUiFabricReact.anon.PartialITooltipProps
+import typings.officeUiFabricReact.libComponentsTooltipTooltipDottypesMod.ITooltipProps
+import typings.officeUiFabricReact.libComponentsTooltipTooltipHostDottypesMod.ITooltipHostProps
 import typings.officeUiFabricReact.officeUiFabricReactInts.`0`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`10`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`11`
@@ -16,8 +18,6 @@ import typings.officeUiFabricReact.officeUiFabricReactInts.`6`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`7`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`8`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`9`
-import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
-import typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -153,7 +153,7 @@ object libTooltipMod {
   @JSImport("office-ui-fabric-react/lib/Tooltip", "TooltipBase")
   @js.native
   open class TooltipBase protected ()
-    extends typings.officeUiFabricReact.tooltipMod.TooltipBase {
+    extends typings.officeUiFabricReact.libComponentsTooltipMod.TooltipBase {
     def this(props: ITooltipProps) = this()
     /**
       * @deprecated
@@ -179,13 +179,15 @@ object libTooltipMod {
   object TooltipDelay extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsTooltipTooltipDottypesMod.TooltipDelay & Double
+      ] = js.native
     
-    /* 2 */ val long: typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay.long & Double = js.native
+    /* 2 */ val long: typings.officeUiFabricReact.libComponentsTooltipTooltipDottypesMod.TooltipDelay.long & Double = js.native
     
-    /* 1 */ val medium: typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay.medium & Double = js.native
+    /* 1 */ val medium: typings.officeUiFabricReact.libComponentsTooltipTooltipDottypesMod.TooltipDelay.medium & Double = js.native
     
-    /* 0 */ val zero: typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay.zero & Double = js.native
+    /* 0 */ val zero: typings.officeUiFabricReact.libComponentsTooltipTooltipDottypesMod.TooltipDelay.zero & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Tooltip", "TooltipHost")
@@ -195,7 +197,7 @@ object libTooltipMod {
   @JSImport("office-ui-fabric-react/lib/Tooltip", "TooltipHostBase")
   @js.native
   open class TooltipHostBase protected ()
-    extends typings.officeUiFabricReact.tooltipMod.TooltipHostBase {
+    extends typings.officeUiFabricReact.libComponentsTooltipMod.TooltipHostBase {
     def this(props: ITooltipHostProps) = this()
   }
   /* static members */
@@ -221,10 +223,12 @@ object libTooltipMod {
   object TooltipOverflowMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsTooltipTooltipHostDottypesMod.TooltipOverflowMode & Double
+      ] = js.native
     
-    /* 0 */ val Parent: typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode.Parent & Double = js.native
+    /* 0 */ val Parent: typings.officeUiFabricReact.libComponentsTooltipTooltipHostDottypesMod.TooltipOverflowMode.Parent & Double = js.native
     
-    /* 1 */ val Self: typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode.Self & Double = js.native
+    /* 1 */ val Self: typings.officeUiFabricReact.libComponentsTooltipTooltipHostDottypesMod.TooltipOverflowMode.Self & Double = js.native
   }
 }

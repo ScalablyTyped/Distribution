@@ -12,21 +12,21 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def toMarkdown(tree: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toMarkdown")(tree.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def toMarkdown(tree: Node, options: typings.mdastUtilToMarkdown.typesMod.Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toMarkdown")(tree.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toMarkdown(tree: Node, options: typings.mdastUtilToMarkdown.libTypesMod.Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toMarkdown")(tree.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  type Context = typings.mdastUtilToMarkdown.typesMod.Context
+  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
   
-  type Handle = typings.mdastUtilToMarkdown.typesMod.Handle
+  type Handle = typings.mdastUtilToMarkdown.libTypesMod.Handle
   
-  type Handlers = typings.mdastUtilToMarkdown.typesMod.Handlers
+  type Handlers = typings.mdastUtilToMarkdown.libTypesMod.Handlers
   
-  type Join = typings.mdastUtilToMarkdown.typesMod.Join
+  type Join = typings.mdastUtilToMarkdown.libTypesMod.Join
   
-  type Map = typings.mdastUtilToMarkdown.indentLinesMod.Map
+  type Map = typings.mdastUtilToMarkdown.libUtilIndentLinesMod.Map
   
-  type Options = typings.mdastUtilToMarkdown.typesMod.Options
+  type Options = typings.mdastUtilToMarkdown.libTypesMod.Options
   
-  type SafeOptions = typings.mdastUtilToMarkdown.typesMod.SafeOptions
+  type SafeOptions = typings.mdastUtilToMarkdown.libTypesMod.SafeOptions
   
-  type Unsafe = typings.mdastUtilToMarkdown.typesMod.Unsafe
+  type Unsafe = typings.mdastUtilToMarkdown.libTypesMod.Unsafe
 }

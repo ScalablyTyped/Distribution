@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for handling message events. */
-@JSGlobal("Windows.ApplicationModel.Chat.RcsEndUserMessageManager")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.RcsEndUserMessageManager")
 @js.native
-abstract class RcsEndUserMessageManager ()
+open class RcsEndUserMessageManager ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.RcsEndUserMessageManager

@@ -17,12 +17,33 @@ import typings.videoJs.mod.videojs.LanguageTranslations
 import typings.videoJs.mod.videojs.Log
 import typings.videoJs.mod.videojs.Middleware
 import typings.videoJs.mod.videojs.PlayerOptions
+import typings.videoJs.mod.videojs.Plugin
 import typings.videoJs.mod.videojs.ReadyCallback
 import typings.videoJs.mod.videojs.TimeRange
 import typings.videoJs.mod.videojs.XhrObject
 import typings.videoJs.mod.videojs.url.URLObject
+import typings.videoJs.videoJsStrings.Button
+import typings.videoJs.videoJsStrings.ClickableComponent
+import typings.videoJs.videoJsStrings.Menu
+import typings.videoJs.videoJsStrings.MenuButton
+import typings.videoJs.videoJsStrings.MenuItem
+import typings.videoJs.videoJsStrings.ModalDialog
+import typings.videoJs.videoJsStrings.MouseTimeDisplay
+import typings.videoJs.videoJsStrings.Spacer
+import typings.videoJs.videoJsStrings.TimeTooltip
 import typings.videoJs.videoJsStrings.beforesetup
+import typings.videoJs.videoJsStrings.button_
+import typings.videoJs.videoJsStrings.clickablecomponent_
+import typings.videoJs.videoJsStrings.component_
+import typings.videoJs.videoJsStrings.menu_
+import typings.videoJs.videoJsStrings.menubutton_
+import typings.videoJs.videoJsStrings.menuitem_
+import typings.videoJs.videoJsStrings.modaldialog_
+import typings.videoJs.videoJsStrings.mouseTimeDisplay_
+import typings.videoJs.videoJsStrings.player_
 import typings.videoJs.videoJsStrings.setup
+import typings.videoJs.videoJsStrings.spacer_
+import typings.videoJs.videoJsStrings.timeTooltip_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -150,7 +171,16 @@ inline def getAllPlayers(): js.Array[typings.videoJs.mod.videojs.Player] = ^.asI
   * @borrows Component.getComponent as getComponent
   */
 /* was `typeof Component.getComponent` */
-inline def getComponent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Component.getComponent */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("getComponent").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Component.getComponent */ Any]
+inline def getComponent(
+  name: Button | ClickableComponent | typings.videoJs.videoJsStrings.Component | Menu | MenuButton | MenuItem | ModalDialog | MouseTimeDisplay | typings.videoJs.videoJsStrings.Player | Spacer | TimeTooltip | button_ | clickablecomponent_ | component_ | menu_ | menubutton_ | menuitem_ | modaldialog_ | mouseTimeDisplay_ | player_ | spacer_ | timeTooltip_
+): /* import warning: importer.ImportType#apply Failed type conversion: typeof Button */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: typeof Button */ js.Any]
+/**
+  * Get a component class object by name
+  *
+  * @borrows Component.getComponent as getComponent
+  */
+/* was `typeof Component.getComponent` */
+inline def getComponent(name: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof Component */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: typeof Component */ js.Any]
 
 /**
   * Get a single player based on an ID or DOM element.
@@ -184,7 +214,11 @@ inline def getPlayers(): StringDictionary[typings.videoJs.mod.videojs.Player] = 
   * @return    The plugin (or `undefined`).
   */
 /* was `typeof Plugin.getPlugin` */
-inline def getPlugin: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugin */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("getPlugin").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugin */ Any]
+inline def getPlugin: js.Function1[
+/* name */ String, 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof Plugin */ js.Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("getPlugin").asInstanceOf[js.Function1[
+/* name */ String, 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof Plugin */ js.Any]]
 
 /**
   * Gets a plugin's version, if available
@@ -195,7 +229,7 @@ inline def getPlugin: /* import warning: ResolveTypeQueries.resolve Couldn't res
   * @return    The plugin's version or an empty string.
   */
 /* was `typeof Plugin.getPluginVersion` */
-inline def getPluginVersion: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPluginVersion */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("getPluginVersion").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPluginVersion */ Any]
+inline def getPluginVersion: js.Function1[/* name */ String, String] = ^.asInstanceOf[js.Dynamic].selectDynamic("getPluginVersion").asInstanceOf[js.Function1[/* name */ String, String]]
 
 /**
   * Gets an object containing multiple Video.js plugins.
@@ -208,7 +242,7 @@ inline def getPluginVersion: /* import warning: ResolveTypeQueries.resolve Could
   *         `undefined` if no matching plugins exist).
   */
 /* was `typeof Plugin.getPlugins` */
-inline def getPlugins: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugins */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("getPlugins").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugins */ Any]
+inline def getPlugins: js.Function1[/* names */ js.UndefOr[js.Array[String]], StringDictionary[Plugin]] = ^.asInstanceOf[js.Dynamic].selectDynamic("getPlugins").asInstanceOf[js.Function1[/* names */ js.UndefOr[js.Array[String]], StringDictionary[Plugin]]]
 
 /**
   * Get a Tech class object by name
@@ -216,7 +250,7 @@ inline def getPlugins: /* import warning: ResolveTypeQueries.resolve Couldn't re
   * @borrows Tech.getTech as getTech
   */
 /* was `typeof Tech.getTech` */
-inline def getTech: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Tech.getTech */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("getTech").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Tech.getTech */ Any]
+inline def getTech: js.Function1[/* name */ String, js.UndefOr[typings.videoJs.mod.videojs.Tech]] = ^.asInstanceOf[js.Dynamic].selectDynamic("getTech").asInstanceOf[js.Function1[/* name */ String, js.UndefOr[typings.videoJs.mod.videojs.Tech]]]
 
 /**
   * Add a function hook that will only run once to a specific videojs lifecycle.
@@ -402,7 +436,28 @@ inline def parseUrl(url: String): URLObject = ^.asInstanceOf[js.Dynamic].applyDy
   *         basic plugins, a wrapper function that initializes the plugin.
   */
 /* was `typeof Plugin.registerPlugin` */
-inline def plugin: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.registerPlugin */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("plugin").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.registerPlugin */ Any]
+inline def plugin[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Plugin */ js.Any */](name: String, plugin: T): js.Function0[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Function0[T]]
+/**
+  * Register a Video.js plugin.
+  *
+  * @borrows plugin:registerPlugin as registerPlugin
+  *
+  * @param name
+  *         The name of the plugin to be registered. Must be a string and
+  *         must not match an existing plugin or a method on the `Player`
+  *         prototype.
+  *
+  * @param plugin
+  *         A sub-class of `Plugin` or a function for basic plugins.
+  *
+  * @return    For advanced plugins, a factory function for that plugin. For
+  *         basic plugins, a wrapper function that initializes the plugin.
+  */
+/* was `typeof Plugin.registerPlugin` */
+inline def plugin[T, K](
+  name: String,
+  plugin: js.ThisFunction1[/* this */ typings.videoJs.mod.videojs.Player, /* repeated */ K, T]
+): js.Function1[/* repeated */ K, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ K, T]]
 
 /**
   * Register a component so it can referred to by name. Used when adding to other
@@ -421,7 +476,7 @@ inline def plugin: /* import warning: ResolveTypeQueries.resolve Couldn't resolv
   * @return    The newly registered component
   */
 /* was `typeof Component.registerComponent` */
-inline def registerComponent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Component.registerComponent */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("registerComponent").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Component.registerComponent */ Any]
+inline def registerComponent: js.Function2[/* name */ String, /* ComponentToRegister */ Any, Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("registerComponent").asInstanceOf[js.Function2[/* name */ String, /* ComponentToRegister */ Any, Any]]
 
 /**
   * Register a Video.js plugin.
@@ -440,7 +495,28 @@ inline def registerComponent: /* import warning: ResolveTypeQueries.resolve Coul
   *         basic plugins, a wrapper function that initializes the plugin.
   */
 /* was `typeof Plugin.registerPlugin` */
-inline def registerPlugin: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.registerPlugin */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("registerPlugin").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.registerPlugin */ Any]
+inline def registerPlugin[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Plugin */ js.Any */](name: String, plugin: T): js.Function0[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Function0[T]]
+/**
+  * Register a Video.js plugin.
+  *
+  * @borrows plugin:registerPlugin as registerPlugin
+  *
+  * @param name
+  *         The name of the plugin to be registered. Must be a string and
+  *         must not match an existing plugin or a method on the `Player`
+  *         prototype.
+  *
+  * @param plugin
+  *         A sub-class of `Plugin` or a function for basic plugins.
+  *
+  * @return    For advanced plugins, a factory function for that plugin. For
+  *         basic plugins, a wrapper function that initializes the plugin.
+  */
+/* was `typeof Plugin.registerPlugin` */
+inline def registerPlugin[T, K](
+  name: String,
+  plugin: js.ThisFunction1[/* this */ typings.videoJs.mod.videojs.Player, /* repeated */ K, T]
+): js.Function1[/* repeated */ K, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ K, T]]
 
 /**
   * Register a Tech so it can referred to by name.
@@ -449,7 +525,7 @@ inline def registerPlugin: /* import warning: ResolveTypeQueries.resolve Couldn'
   * @borrows Tech.registerTech as registerTech
   */
 /* was `typeof Tech.registerTech` */
-inline def registerTech: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Tech.registerTech */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("registerTech").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Tech.registerTech */ Any]
+inline def registerTech: js.Function2[/* name */ String, /* tech */ Any, Unit] = ^.asInstanceOf[js.Dynamic].selectDynamic("registerTech").asInstanceOf[js.Function2[/* name */ String, /* tech */ Any, Unit]]
 
 /**
   * Remove a hook from a specific videojs lifecycle.

@@ -1,8 +1,8 @@
 package typings.expressValidator
 
-import typings.expressValidator.contextMod.Optional
-import typings.expressValidator.schemaMod.SanitizerSchemaOptions
-import typings.expressValidator.schemaMod.ValidatorSchemaOptions
+import typings.expressValidator.srcContextMod.Optional
+import typings.expressValidator.srcMiddlewaresSchemaMod.SanitizerSchemaOptions
+import typings.expressValidator.srcMiddlewaresSchemaMod.ValidatorSchemaOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

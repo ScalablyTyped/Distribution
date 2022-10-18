@@ -1,7 +1,7 @@
 package typings.logkitty
 
-import typings.logkitty.iosConstantsMod.PriorityNames
-import typings.logkitty.typesMod.Platform
+import typings.logkitty.buildIosConstantsMod.PriorityNames
+import typings.logkitty.buildTypesMod.Platform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object logkittyStrings {
   sealed trait DEBUG
     extends StObject
        with PriorityNames
-       with typings.logkitty.constantsMod.PriorityNames
+       with typings.logkitty.buildAndroidConstantsMod.PriorityNames
   inline def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   
   @js.native
@@ -25,44 +25,44 @@ object logkittyStrings {
   sealed trait ERROR
     extends StObject
        with PriorityNames
-       with typings.logkitty.constantsMod.PriorityNames
+       with typings.logkitty.buildAndroidConstantsMod.PriorityNames
   inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
   sealed trait FATAL
     extends StObject
-       with typings.logkitty.constantsMod.PriorityNames
+       with typings.logkitty.buildAndroidConstantsMod.PriorityNames
   inline def FATAL: FATAL = "FATAL".asInstanceOf[FATAL]
   
   @js.native
   sealed trait INFO
     extends StObject
        with PriorityNames
-       with typings.logkitty.constantsMod.PriorityNames
+       with typings.logkitty.buildAndroidConstantsMod.PriorityNames
   inline def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
   sealed trait SILENT
     extends StObject
-       with typings.logkitty.constantsMod.PriorityNames
+       with typings.logkitty.buildAndroidConstantsMod.PriorityNames
   inline def SILENT: SILENT = "SILENT".asInstanceOf[SILENT]
   
   @js.native
   sealed trait UNKNOWN
     extends StObject
-       with typings.logkitty.constantsMod.PriorityNames
+       with typings.logkitty.buildAndroidConstantsMod.PriorityNames
   inline def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
   @js.native
   sealed trait VERBOSE
     extends StObject
-       with typings.logkitty.constantsMod.PriorityNames
+       with typings.logkitty.buildAndroidConstantsMod.PriorityNames
   inline def VERBOSE: VERBOSE = "VERBOSE".asInstanceOf[VERBOSE]
   
   @js.native
   sealed trait WARN
     extends StObject
-       with typings.logkitty.constantsMod.PriorityNames
+       with typings.logkitty.buildAndroidConstantsMod.PriorityNames
   inline def WARN: WARN = "WARN".asInstanceOf[WARN]
   
   @js.native

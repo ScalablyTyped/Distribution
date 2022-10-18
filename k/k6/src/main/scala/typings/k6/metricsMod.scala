@@ -29,9 +29,9 @@ object metricsMod {
     def this(name: String, isTime: Boolean) = this()
   }
   
-  @JSImport("k6/metrics", "Metric")
+  /* note: abstract class */ @JSImport("k6/metrics", "Metric")
   @js.native
-  abstract class Metric protected () extends StObject {
+  open class Metric protected () extends StObject {
     /**
       * @param name - Metric name.
       * @param isTime - Whether values are time values.

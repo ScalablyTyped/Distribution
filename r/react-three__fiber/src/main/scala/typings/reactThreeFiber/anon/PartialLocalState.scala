@@ -1,10 +1,10 @@
 package typings.reactThreeFiber.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactThreeFiber.rendererMod.AttachType
-import typings.reactThreeFiber.rendererMod.Instance
-import typings.reactThreeFiber.storeMod.RootState
-import typings.zustand.zustandReactMod.UseBoundStore
+import typings.reactThreeFiber.distDeclarationsSrcCoreRendererMod.AttachType
+import typings.reactThreeFiber.distDeclarationsSrcCoreRendererMod.Instance
+import typings.reactThreeFiber.distDeclarationsSrcCoreStoreMod.RootState
+import typings.zustand.reactMod.UseBoundStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

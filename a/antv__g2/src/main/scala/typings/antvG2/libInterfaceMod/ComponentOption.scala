@@ -1,12 +1,12 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvComponent.typesMod.GroupComponentCfg
-import typings.antvComponent.typesMod.HtmlComponentCfg
-import typings.antvG2.constantMod.COMPONENT_TYPE
-import typings.antvG2.constantMod.DIRECTION
-import typings.antvG2.constantMod.LAYER
-import typings.antvG2.dependentsMod.GroupComponent
-import typings.antvG2.dependentsMod.HtmlComponent
+import typings.antvComponent.libTypesMod.GroupComponentCfg
+import typings.antvComponent.libTypesMod.HtmlComponentCfg
+import typings.antvG2.libConstantMod.COMPONENT_TYPE
+import typings.antvG2.libConstantMod.DIRECTION
+import typings.antvG2.libConstantMod.LAYER
+import typings.antvG2.libDependentsMod.GroupComponent
+import typings.antvG2.libDependentsMod.HtmlComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

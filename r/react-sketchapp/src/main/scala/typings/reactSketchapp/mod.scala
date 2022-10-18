@@ -14,6 +14,7 @@ import typings.reactSketchapp.anon.Instantiable
 import typings.reactSketchapp.anon.Name
 import typings.reactSketchapp.anon.PreserveAspectRatioString
 import typings.reactSketchapp.anon.ResizingConstraint
+import typings.reactSketchapp.anon.Scale
 import typings.reactSketchapp.anon.Shadows
 import typings.reactSketchapp.anon.Sketch
 import typings.reactSketchapp.anon.Style
@@ -38,9 +39,8 @@ import typings.reactSketchapp.anon.TypeofText
 import typings.reactSketchapp.anon.TypeofTextPath
 import typings.reactSketchapp.anon.TypeofUse
 import typings.reactSketchapp.anon.UseColumns
-import typings.reactSketchapp.anon.Width
 import typings.reactSketchapp.anon.`0`
-import typings.reactSketchapp.artboardMod.Props
+import typings.reactSketchapp.libComponentsArtboardMod.Props
 import typings.reactSketchapp.libStylesheetTypesMod.RawStyle
 import typings.reactSketchapp.libStylesheetTypesMod.RawStyles
 import typings.reactSketchapp.libStylesheetTypesMod.StyleSheetInstance
@@ -67,7 +67,7 @@ object mod {
   @JSImport("react-sketchapp", "Artboard")
   @js.native
   open class Artboard protected ()
-    extends typings.reactSketchapp.componentsMod.Artboard {
+    extends typings.reactSketchapp.libComponentsMod.Artboard {
     def this(props: Props) = this()
     /**
       * @deprecated
@@ -96,13 +96,13 @@ object mod {
   @JSImport("react-sketchapp", "Document")
   @js.native
   open class Document protected ()
-    extends typings.reactSketchapp.componentsMod.Document {
-    def this(props: typings.reactSketchapp.documentMod.Props) = this()
+    extends typings.reactSketchapp.libComponentsMod.Document {
+    def this(props: typings.reactSketchapp.libComponentsDocumentMod.Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: typings.reactSketchapp.documentMod.Props, context: Any) = this()
+    def this(props: typings.reactSketchapp.libComponentsDocumentMod.Props, context: Any) = this()
   }
   /* static members */
   object Document {
@@ -120,13 +120,13 @@ object mod {
   @JSImport("react-sketchapp", "Image")
   @js.native
   open class Image protected ()
-    extends typings.reactSketchapp.componentsMod.Image {
-    def this(props: typings.reactSketchapp.imageMod.Props) = this()
+    extends typings.reactSketchapp.libComponentsMod.Image {
+    def this(props: typings.reactSketchapp.libComponentsImageMod.Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: typings.reactSketchapp.imageMod.Props, context: Any) = this()
+    def this(props: typings.reactSketchapp.libComponentsImageMod.Props, context: Any) = this()
   }
   /* static members */
   object Image {
@@ -149,13 +149,13 @@ object mod {
   @JSImport("react-sketchapp", "Page")
   @js.native
   open class Page protected ()
-    extends typings.reactSketchapp.componentsMod.Page {
-    def this(props: typings.reactSketchapp.pageMod.Props) = this()
+    extends typings.reactSketchapp.libComponentsMod.Page {
+    def this(props: typings.reactSketchapp.libComponentsPageMod.Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: typings.reactSketchapp.pageMod.Props, context: Any) = this()
+    def this(props: typings.reactSketchapp.libComponentsPageMod.Props, context: Any) = this()
   }
   /* static members */
   object Page {
@@ -192,13 +192,13 @@ object mod {
   @JSImport("react-sketchapp", "RedBox")
   @js.native
   open class RedBox protected ()
-    extends typings.reactSketchapp.componentsMod.RedBox {
-    def this(props: typings.reactSketchapp.redBoxMod.Props) = this()
+    extends typings.reactSketchapp.libComponentsMod.RedBox {
+    def this(props: typings.reactSketchapp.libComponentsRedBoxMod.Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: typings.reactSketchapp.redBoxMod.Props, context: Any) = this()
+    def this(props: typings.reactSketchapp.libComponentsRedBoxMod.Props, context: Any) = this()
   }
   /* static members */
   object RedBox {
@@ -247,13 +247,13 @@ object mod {
   @JSImport("react-sketchapp", "Svg")
   @js.native
   open class Svg protected ()
-    extends typings.reactSketchapp.componentsMod.Svg {
-    def this(props: typings.reactSketchapp.svgSvgMod.Props) = this()
+    extends typings.reactSketchapp.libComponentsMod.Svg {
+    def this(props: typings.reactSketchapp.libComponentsSvgSvgMod.Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: typings.reactSketchapp.svgSvgMod.Props, context: Any) = this()
+    def this(props: typings.reactSketchapp.libComponentsSvgSvgMod.Props, context: Any) = this()
   }
   /* static members */
   object Svg {
@@ -381,13 +381,13 @@ object mod {
   @JSImport("react-sketchapp", "Text")
   @js.native
   open class Text protected ()
-    extends typings.reactSketchapp.componentsMod.Text {
-    def this(props: typings.reactSketchapp.componentsTextMod.Props) = this()
+    extends typings.reactSketchapp.libComponentsMod.Text {
+    def this(props: typings.reactSketchapp.libComponentsTextMod.Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: typings.reactSketchapp.componentsTextMod.Props, context: Any) = this()
+    def this(props: typings.reactSketchapp.libComponentsTextMod.Props, context: Any) = this()
   }
   /* static members */
   object Text {
@@ -438,13 +438,13 @@ object mod {
   @JSImport("react-sketchapp", "View")
   @js.native
   open class View protected ()
-    extends typings.reactSketchapp.componentsMod.View {
-    def this(props: typings.reactSketchapp.viewMod.Props) = this()
+    extends typings.reactSketchapp.libComponentsMod.View {
+    def this(props: typings.reactSketchapp.libComponentsViewMod.Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: typings.reactSketchapp.viewMod.Props, context: Any) = this()
+    def this(props: typings.reactSketchapp.libComponentsViewMod.Props, context: Any) = this()
   }
   /* static members */
   object View {
@@ -557,5 +557,5 @@ object mod {
   inline def renderToJSON(element: ReactElement): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToJSON")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def renderToJSON(element: ReactElement, platformBridge: PlatformBridge): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToJSON")(element.asInstanceOf[js.Any], platformBridge.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def useWindowDimensions(): Width = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowDimensions")().asInstanceOf[Width]
+  inline def useWindowDimensions(): Scale = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowDimensions")().asInstanceOf[Scale]
 }

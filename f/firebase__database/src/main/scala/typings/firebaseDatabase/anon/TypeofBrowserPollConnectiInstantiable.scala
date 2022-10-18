@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.Instantiable7
-import typings.firebaseDatabase.realtimeBrowserPollConnectionMod.BrowserPollConnection
+import typings.firebaseDatabase.distSrcRealtimeBrowserPollConnectionMod.BrowserPollConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,25 +16,25 @@ trait TypeofBrowserPollConnectiInstantiable
   extends StObject
      with Instantiable2[
       /* connId */ String, 
-      /* repoInfo */ typings.firebaseDatabase.coreRepoInfoMod.RepoInfo, 
+      /* repoInfo */ typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo, 
       BrowserPollConnection
     ]
      with Instantiable3[
       /* connId */ String, 
-      /* repoInfo */ typings.firebaseDatabase.coreRepoInfoMod.RepoInfo, 
+      /* repoInfo */ typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo, 
       /* applicationId */ String, 
       BrowserPollConnection
     ]
      with Instantiable4[
       /* connId */ String, 
-      /* repoInfo */ typings.firebaseDatabase.coreRepoInfoMod.RepoInfo, 
+      /* repoInfo */ typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo, 
       (/* applicationId */ String) | (/* applicationId */ Unit), 
       /* appCheckToken */ String, 
       BrowserPollConnection
     ]
      with Instantiable5[
       /* connId */ String, 
-      /* repoInfo */ typings.firebaseDatabase.coreRepoInfoMod.RepoInfo, 
+      /* repoInfo */ typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo, 
       (/* applicationId */ String) | (/* applicationId */ Unit), 
       (/* appCheckToken */ String) | (/* appCheckToken */ Unit), 
       /* authToken */ String, 
@@ -42,7 +42,7 @@ trait TypeofBrowserPollConnectiInstantiable
     ]
      with Instantiable6[
       /* connId */ String, 
-      /* repoInfo */ typings.firebaseDatabase.coreRepoInfoMod.RepoInfo, 
+      /* repoInfo */ typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo, 
       (/* applicationId */ String) | (/* applicationId */ Unit), 
       (/* appCheckToken */ String) | (/* appCheckToken */ Unit), 
       (/* authToken */ String) | (/* authToken */ Unit), 
@@ -51,7 +51,7 @@ trait TypeofBrowserPollConnectiInstantiable
     ]
      with Instantiable7[
       /* connId */ String, 
-      /* repoInfo */ typings.firebaseDatabase.coreRepoInfoMod.RepoInfo, 
+      /* repoInfo */ typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo, 
       (/* applicationId */ String) | (/* applicationId */ Unit), 
       (/* appCheckToken */ String) | (/* appCheckToken */ Unit), 
       (/* authToken */ String) | (/* authToken */ Unit), 

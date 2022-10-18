@@ -11,7 +11,7 @@ trait A extends StObject {
   
   var a: Tensor[Rank] | TensorLike
   
-  var activation: js.UndefOr[typings.tensorflowTfjsCore.fusedTypesMod.Activation] = js.undefined
+  var activation: js.UndefOr[typings.tensorflowTfjsCore.distOpsFusedTypesMod.Activation] = js.undefined
   
   var b: Tensor[Rank] | TensorLike
   
@@ -38,7 +38,7 @@ object A {
     
     inline def setAVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "a", js.Array(value*))
     
-    inline def setActivation(value: typings.tensorflowTfjsCore.fusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+    inline def setActivation(value: typings.tensorflowTfjsCore.distOpsFusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     
     inline def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
     

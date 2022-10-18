@@ -1,29 +1,25 @@
 package typings.atom.anon
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.atom.atomStrings.backward
+import typings.atom.atomStrings.closest
+import typings.atom.atomStrings.forward
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `0` extends StObject {
   
-  var newValue: StringDictionary[js.Array[String]]
-  
-  var oldValue: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
+  var clipDirection: backward | forward | closest
 }
 object `0` {
   
-  inline def apply(newValue: StringDictionary[js.Array[String]]): `0` = {
-    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
+  inline def apply(clipDirection: backward | forward | closest): `0` = {
+    val __obj = js.Dynamic.literal(clipDirection = clipDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`]
   }
   
   extension [Self <: `0`](x: Self) {
     
-    inline def setNewValue(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
-    
-    inline def setOldValue(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
-    
-    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
   }
 }

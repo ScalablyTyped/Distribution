@@ -1,13 +1,13 @@
 package typings.atom.anon
 
-import typings.atom.mod.Project
+import typings.atom.srcProjectMod.Project
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Config extends StObject {
   
-  var config: js.UndefOr[typings.atom.mod.Config] = js.undefined
+  var config: js.UndefOr[typings.atom.srcConfigMod.Config] = js.undefined
   
   var project: js.UndefOr[Project] = js.undefined
   
@@ -22,7 +22,7 @@ object Config {
   
   extension [Self <: Config](x: Self) {
     
-    inline def setConfig(value: typings.atom.mod.Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: typings.atom.srcConfigMod.Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "PathParser")
 @js.native
 open class PathParser protected ()
-  extends typings.canvg.pathParserMod.PathParser {
+  extends typings.canvg.distPathParserMod.PathParser {
   def this(path: String) = this()
 }

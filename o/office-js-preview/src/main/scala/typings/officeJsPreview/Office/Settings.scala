@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @remarks
   *
-  * **Hosts**: Excel, PowerPoint, Word
+  * **Applications**: Excel, PowerPoint, Word
   *
   * The settings created by using the methods of the Settings object are saved per add-in and per document.
   * That is, they are available only to the add-in that created them, and only from the document in which they are saved.
@@ -45,23 +45,23 @@ trait Settings extends StObject {
     * <table>
     *   <tr>
     *     <th>Property</th>
-    *     <th>Use to...</th>
+    *     <th>Use</th>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.value</td>
-    *     <td>Always returns undefined because there is no data or object to retrieve when adding an event handler.</td>
+    *     <td><code>AsyncResult.value</code></td>
+    *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when adding an event handler</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.status</td>
-    *     <td>Determine the success or failure of the operation.</td>
+    *     <td><code>AsyncResult.status</code></td>
+    *     <td>Determine the success or failure of the operation</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.error</td>
-    *     <td>Access an Error object that provides error information if the operation failed.</td>
+    *     <td><code>AsyncResult.error</code></td>
+    *     <td>Access an Error object that provides error information if the operation failed</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.asyncContext</td>
-    *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+    *     <td><code>AsyncResult.asyncContext</code></td>
+    *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
     *   </tr>
     * </table>
     */
@@ -112,23 +112,23 @@ trait Settings extends StObject {
     * <table>
     *   <tr>
     *     <th>Property</th>
-    *     <th>Use to...</th>
+    *     <th>Use</th>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.value</td>
-    *     <td>Access a Settings object with the refreshed values.</td>
+    *     <td><code>AsyncResult.value</code></td>
+    *     <td>Access a Settings object with the refreshed values</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.status</td>
-    *     <td>Determine the success or failure of the operation.</td>
+    *     <td><code>AsyncResult.status</code></td>
+    *     <td>Determine the success or failure of the operation</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.error</td>
-    *     <td>Access an Error object that provides error information if the operation failed.</td>
+    *     <td><code>AsyncResult.error</code></td>
+    *     <td>Access an Error object that provides error information if the operation failed</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.asyncContext</td>
-    *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+    *     <td><code>AsyncResult.asyncContext</code></td>
+    *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
     *   </tr>
     * </table>
     *
@@ -171,6 +171,29 @@ trait Settings extends StObject {
     * In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult object to return the
     * following information.
     *
+    * <table>
+    *   <tr>
+    *     <th>Property</th>
+    *     <th>Use</th>
+    *   </tr>
+    *   <tr>
+    *     <td><code>AsyncResult.value</code></td>
+    *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when setting formats</td>
+    *   </tr>
+    *   <tr>
+    *     <td><code>AsyncResult.status</code></td>
+    *     <td>Determine the success or failure of the operation</td>
+    *   </tr>
+    *   <tr>
+    *     <td><code>AsyncResult.error</code></td>
+    *     <td>Access an Error object that provides error information if the operation failed</td>
+    *   </tr>
+    *   <tr>
+    *     <td><code>AsyncResult.asyncContext</code></td>
+    *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+    *   </tr>
+    * </table>
+    *
     * @param eventType Specifies the type of event to remove. Required.
     * @param options Provides options to determine which event handler or handlers are removed.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -204,23 +227,23 @@ trait Settings extends StObject {
     * <table>
     *   <tr>
     *     <th>Property</th>
-    *     <th>Use to...</th>
+    *     <th>Use</th>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.value</td>
-    *     <td>Always returns undefined because there is no object or data to retrieve.</td>
+    *     <td><code>AsyncResult.value</code></td>
+    *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.status</td>
-    *     <td>Determine the success or failure of the operation.</td>
+    *     <td><code>AsyncResult.status</code></td>
+    *     <td>Determine the success or failure of the operation</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.error</td>
-    *     <td>Access an Error object that provides error information if the operation failed.</td>
+    *     <td><code>AsyncResult.error</code></td>
+    *     <td>Access an Error object that provides error information if the operation failed</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.asyncContext</td>
-    *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+    *     <td><code>AsyncResult.asyncContext</code></td>
+    *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
     *   </tr>
     * </table>
     *

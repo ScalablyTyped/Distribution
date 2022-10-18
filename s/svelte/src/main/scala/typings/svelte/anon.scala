@@ -176,7 +176,6 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
-import typings.svelte.animationsMod.PositionRect
 import typings.svelte.svelteStrings.`object`
 import typings.svelte.svelteStrings.`var`
 import typings.svelte.svelteStrings.a
@@ -445,11 +444,12 @@ import typings.svelte.svelteStrings.webkitanimationiteration
 import typings.svelte.svelteStrings.webkitanimationstart
 import typings.svelte.svelteStrings.webkittransitionend
 import typings.svelte.svelteStrings.wheel
-import typings.svelte.transitionMod.CrossfadeParams
-import typings.svelte.transitionMod.EasingFunction
-import typings.svelte.transitionMod.TransitionConfig
-import typings.svelte.transitionsMod.INTRO
-import typings.svelte.transitionsMod.OUTRO
+import typings.svelte.typesRuntimeInternalAnimationsMod.PositionRect
+import typings.svelte.typesRuntimeInternalTransitionsMod.INTRO
+import typings.svelte.typesRuntimeInternalTransitionsMod.OUTRO
+import typings.svelte.typesRuntimeTransitionMod.CrossfadeParams
+import typings.svelte.typesRuntimeTransitionMod.EasingFunction
+import typings.svelte.typesRuntimeTransitionMod.TransitionConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -655,29 +655,13 @@ object anon {
     }
   }
   
+  @js.native
   trait End extends StObject {
     
-    def end(): Unit
+    def end(): Unit = js.native
     
-    def invalidate(): Unit
-    
-    def start(): Unit
-  }
-  object End {
-    
-    inline def apply(end: () => Unit, invalidate: () => Unit, start: () => Unit): End = {
-      val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), invalidate = js.Any.fromFunction0(invalidate), start = js.Any.fromFunction0(start))
-      __obj.asInstanceOf[End]
-    }
-    
-    extension [Self <: End](x: Self) {
-      
-      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
-      
-      inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
-      
-      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
-    }
+    def run(b: INTRO): Unit = js.native
+    def run(b: OUTRO): Unit = js.native
   }
   
   trait From extends StObject {
@@ -698,6 +682,31 @@ object anon {
       inline def setFrom(value: DOMRect): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       inline def setTo(value: DOMRect): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Invalidate extends StObject {
+    
+    def end(): Unit
+    
+    def invalidate(): Unit
+    
+    def start(): Unit
+  }
+  object Invalidate {
+    
+    inline def apply(end: () => Unit, invalidate: () => Unit, start: () => Unit): Invalidate = {
+      val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), invalidate = js.Any.fromFunction0(invalidate), start = js.Any.fromFunction0(start))
+      __obj.asInstanceOf[Invalidate]
+    }
+    
+    extension [Self <: Invalidate](x: Self) {
+      
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      
+      inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
+      
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     }
   }
   
@@ -738,15 +747,6 @@ object anon {
     def render(props: js.Object): Css = js.native
     def render(props: js.Object, hasDollarDollarslotsContext: Context): Css = js.native
     def render(props: Unit, hasDollarDollarslotsContext: Context): Css = js.native
-  }
-  
-  @js.native
-  trait Run extends StObject {
-    
-    def end(): Unit = js.native
-    
-    def run(b: INTRO): Unit = js.native
-    def run(b: OUTRO): Unit = js.native
   }
   
   /* Inlined std.SVGElement & {getTotalLength (): number} */

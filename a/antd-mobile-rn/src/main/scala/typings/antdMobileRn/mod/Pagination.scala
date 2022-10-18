@@ -2,8 +2,8 @@ package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.AntLocale
 import typings.antdMobileRn.anon.Current
-import typings.antdMobileRn.paginationIndexNativeMod.PaginationNativeProps
-import typings.antdMobileRn.paginationIndexNativeMod.default
+import typings.antdMobileRn.libPaginationIndexDotnativeMod.PaginationNativeProps
+import typings.antdMobileRn.libPaginationIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

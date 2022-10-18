@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps
+import typings.officeUiFabricReact.libComponentsKeytipLayerKeytipLayerDottypesMod.IKeytipLayerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.react.mod.ComponentLifecycle because Already inherited
 - js.Object because Already inherited
 - typings.react.mod.Component because Already inherited
-- typings.officeUiFabricReact.keytipLayerBaseMod.KeytipLayerBase because Already inherited
-- typings.officeUiFabricReact.keytipLayerMod.KeytipLayerBase because Already inherited
+- typings.officeUiFabricReact.libComponentsKeytipLayerKeytipLayerDotbaseMod.KeytipLayerBase because Already inherited
+- typings.officeUiFabricReact.libComponentsKeytipLayerMod.KeytipLayerBase because Already inherited
 - typings.officeUiFabricReact.libKeytipLayerMod.KeytipLayerBase because Inheritance from two classes. Inlined  */ @JSImport("office-ui-fabric-react", "KeytipLayerBase")
 @js.native
 open class KeytipLayerBase protected ()

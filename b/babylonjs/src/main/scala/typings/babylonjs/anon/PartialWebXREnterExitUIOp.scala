@@ -3,8 +3,8 @@ package typings.babylonjs.anon
 import typings.babylonjs.XRReferenceSpaceType
 import typings.babylonjs.XRSessionMode
 import typings.babylonjs.typesMod.Nullable
-import typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUIButton
-import typings.babylonjs.webXRTypesMod.WebXRRenderTarget
+import typings.babylonjs.xRWebXREnterExitUIMod.WebXREnterExitUIButton
+import typings.babylonjs.xRWebXRTypesMod.WebXRRenderTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-browser", "GetBucketVersioningCommand")
 @js.native
 open class GetBucketVersioningCommand protected ()
-  extends typings.awsSdkClientS3Browser.getBucketVersioningCommandMod.GetBucketVersioningCommand {
+  extends typings.awsSdkClientS3Browser.commandsGetBucketVersioningCommandMod.GetBucketVersioningCommand {
   def this(input: GetBucketVersioningInput) = this()
 }

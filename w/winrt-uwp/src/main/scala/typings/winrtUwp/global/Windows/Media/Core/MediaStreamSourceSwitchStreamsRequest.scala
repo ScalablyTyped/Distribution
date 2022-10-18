@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an object to be used by the MediaStreamSource.SwitchStreamsRequest event to provide information to the application. */
-@JSGlobal("Windows.Media.Core.MediaStreamSourceSwitchStreamsRequest")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.MediaStreamSourceSwitchStreamsRequest")
 @js.native
-abstract class MediaStreamSourceSwitchStreamsRequest ()
+open class MediaStreamSourceSwitchStreamsRequest ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.MediaStreamSourceSwitchStreamsRequest {
   

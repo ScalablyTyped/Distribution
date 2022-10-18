@@ -2,6 +2,7 @@ package typings.dayjs
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.dayjs.anon.D
+import typings.dayjs.anon.FnCallDateFormatLocaleStrict
 import typings.dayjs.anon.PartialILocale
 import typings.dayjs.dayjsStrings.`[]`
 import typings.dayjs.dayjsStrings.d_
@@ -273,10 +274,10 @@ object mod {
     def isBefore(date: ConfigType, unit: ISOUnitType): Boolean = js.native
     
     def isBetween(a: ConfigType, b: ConfigType): Boolean = js.native
-    def isBetween(a: ConfigType, b: ConfigType, c: Null, d: String | `[]`): Boolean = js.native
-    def isBetween(a: ConfigType, b: ConfigType, c: Unit, d: String | `[]`): Boolean = js.native
+    def isBetween(a: ConfigType, b: ConfigType, c: Null, d: (/* () */ String) | `[]`): Boolean = js.native
+    def isBetween(a: ConfigType, b: ConfigType, c: Unit, d: (/* () */ String) | `[]`): Boolean = js.native
     def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType): Boolean = js.native
-    def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: String | `[]`): Boolean = js.native
+    def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: (/* () */ String) | `[]`): Boolean = js.native
     
     def isLeapYear(): Boolean = js.native
     
@@ -1014,7 +1015,7 @@ object mod {
   type PluginFunc[T] = js.Function3[
     /* option */ T, 
     /* c */ Instantiable1[/* config */ js.UndefOr[ConfigType], Dayjs], 
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof dayjs */ /* d */ Any, 
+    /* d */ FnCallDateFormatLocaleStrict, 
     Unit
   ]
   

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/common/http", "HttpXsrfTokenExtractor")
+/* note: abstract class */ @JSImport("@angular/common/http", "HttpXsrfTokenExtractor")
 @js.native
-abstract class HttpXsrfTokenExtractor () extends StObject {
+open class HttpXsrfTokenExtractor () extends StObject {
   
   /**
     * Get the XSRF token to use with an outgoing request.

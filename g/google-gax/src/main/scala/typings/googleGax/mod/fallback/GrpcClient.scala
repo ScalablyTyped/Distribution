@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor
   */
 open class GrpcClient ()
-  extends typings.googleGax.fallbackMod.GrpcClient {
+  extends typings.googleGax.buildSrcFallbackMod.GrpcClient {
   def this(options: GrpcClientOptionsfallback | authOAuth2Clientfallbackb) = this()
 }
 /* static members */

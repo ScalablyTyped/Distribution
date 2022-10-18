@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "RoomLinkValidator")
 @js.native
 open class RoomLinkValidator protected ()
-  extends typings.matrixAppserviceBridge.roomLinkValidatorMod.RoomLinkValidator {
+  extends typings.matrixAppserviceBridge.libComponentsRoomLinkValidatorMod.RoomLinkValidator {
   /**
     * @param config Config for the validator.
     * @param config.ruleFile Filename for the rule file.
@@ -16,5 +16,5 @@ open class RoomLinkValidator protected ()
     *                               overwritten if both is set.
     * @param asBot The AS bot.
     */
-  def this(config: Rules, asBot: typings.matrixAppserviceBridge.appServiceBotMod.AppServiceBot) = this()
+  def this(config: Rules, asBot: typings.matrixAppserviceBridge.libComponentsAppServiceBotMod.AppServiceBot) = this()
 }

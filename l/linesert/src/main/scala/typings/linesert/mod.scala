@@ -1,5 +1,6 @@
 package typings.linesert
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.PathLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,19 +22,11 @@ object mod {
   inline def insert(content: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def insert(
     content: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* result */ String, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def insert(content: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def insert(
     content: js.Array[String],
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* result */ String, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

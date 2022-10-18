@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Source
   extends StObject
-     with typings.tuyaPanelKit.commonActionsMod.Action {
+     with typings.tuyaPanelKit.`@reactNavigationRoutersCommonActionsMod`.Action {
   
   // tslint:disable-next-line no-redundant-undefined
   var source: js.UndefOr[String] = js.undefined

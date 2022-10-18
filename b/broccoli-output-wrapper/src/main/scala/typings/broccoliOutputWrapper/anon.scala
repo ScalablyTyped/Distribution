@@ -1,8 +1,9 @@
 package typings.broccoliOutputWrapper
 
 import typings.broccoliOutputWrapper.broccoliOutputWrapperStrings.buffer
-import typings.node.anon.Encoding
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.anon.EncodingFlag
+import typings.node.anon.EncodingWithFileTypes
 import typings.node.anon.Flag
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
@@ -50,8 +51,8 @@ object anon {
     
     def apply(file: PathOrFileDescriptor, data: String): Unit = js.native
     def apply(file: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit = js.native
-    def apply(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView): Unit = js.native
-    def apply(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView, options: WriteFileOptions): Unit = js.native
+    def apply(file: PathOrFileDescriptor, data: ArrayBufferView): Unit = js.native
+    def apply(file: PathOrFileDescriptor, data: ArrayBufferView, options: WriteFileOptions): Unit = js.native
   }
   
   @js.native
@@ -68,10 +69,10 @@ object anon {
     
     def apply(path: PathLike): js.Array[Buffer | String] = js.native
     def apply(path: PathLike, options: buffer): js.Array[Buffer] = js.native
-    def apply(path: PathLike, options: Encoding): js.Array[Buffer] = js.native
+    def apply(path: PathLike, options: EncodingWithFileTypes): js.Array[String] = js.native
     def apply(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = js.native
     def apply(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[Dirent] = js.native
-    def apply(path: PathLike, options: WithFileTypes): js.Array[String] = js.native
+    def apply(path: PathLike, options: WithFileTypes): js.Array[Buffer] = js.native
     def apply(path: PathLike, options: BufferEncoding): js.Array[Buffer | String] = js.native
   }
   

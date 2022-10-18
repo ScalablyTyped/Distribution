@@ -2,7 +2,7 @@ package typings.itPushable
 
 import typings.itPushable.anon.ByteLength
 import typings.itPushable.anon.Done
-import typings.itPushable.fifoMod.Next
+import typings.itPushable.distSrcFifoMod.Next
 import typings.itPushable.itPushableBooleans.`false`
 import typings.itPushable.itPushableBooleans.`true`
 import typings.std.AsyncIterable

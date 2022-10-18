@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.InitializedParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.InitializedParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.initialized
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object InitializedNotification {
   
   @JSImport("vscode-languageserver-protocol", "InitializedNotification.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "InitializedNotification.method")
   @js.native
@@ -18,5 +18,5 @@ object InitializedNotification {
   
   @JSImport("vscode-languageserver-protocol", "InitializedNotification.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[InitializedParams, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[InitializedParams, Unit] = js.native
 }

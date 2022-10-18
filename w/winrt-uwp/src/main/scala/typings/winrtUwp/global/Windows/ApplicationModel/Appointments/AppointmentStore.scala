@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a store that contains appointments. */
-@JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStore")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStore")
 @js.native
-abstract class AppointmentStore ()
+open class AppointmentStore ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentStore

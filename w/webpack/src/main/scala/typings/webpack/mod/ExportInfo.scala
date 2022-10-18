@@ -38,7 +38,7 @@ trait ExportInfo extends StObject {
   
   def getNestedExportsInfo(): js.UndefOr[ExportsInfo] = js.native
   
-  def getProvidedInfo(): (`no provided info`) | String | provided | (`not provided`) = js.native
+  def getProvidedInfo(): (`no provided info`) | (/* maybe provided (runtime-defined) */ String) | provided | (`not provided`) = js.native
   
   def getRenameInfo(): String = js.native
   

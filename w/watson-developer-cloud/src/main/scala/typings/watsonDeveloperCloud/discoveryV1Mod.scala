@@ -8,10 +8,10 @@ object discoveryV1Mod {
   
   @JSImport("watson-developer-cloud/discovery/v1", JSImport.Namespace)
   @js.native
-  class ^ protected ()
-    extends typings.watsonDeveloperCloud.v1GeneratedMod.^ {
-    def this(options: js.Any) = this()
+  open class ^ protected ()
+    extends typings.watsonDeveloperCloud.discoveryV1GeneratedMod.^ {
+    def this(options: Any) = this()
   }
   
-  type DiscoveryV1 = typings.watsonDeveloperCloud.v1GeneratedMod.^
+  type DiscoveryV1 = typings.watsonDeveloperCloud.discoveryV1GeneratedMod.^
 }

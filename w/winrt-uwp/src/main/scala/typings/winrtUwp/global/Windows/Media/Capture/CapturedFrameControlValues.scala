@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the capture device settings that were used for a frame in a variable photo sequence. */
-@JSGlobal("Windows.Media.Capture.CapturedFrameControlValues")
+/* note: abstract class */ @JSGlobal("Windows.Media.Capture.CapturedFrameControlValues")
 @js.native
-abstract class CapturedFrameControlValues ()
+open class CapturedFrameControlValues ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.CapturedFrameControlValues {
   

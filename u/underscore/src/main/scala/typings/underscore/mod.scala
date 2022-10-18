@@ -3,14 +3,13 @@ package typings.underscore
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Exclude
 import typings.std.Extract
 import typings.std.Partial
 import typings.underscore.anon.Fn0
 import typings.underscore.anon.Fn1
-import typings.underscore.anon.Fn2
 import typings.underscore.anon.FnCall
+import typings.underscore.anon.FnCallCollectionIterateeContext
 import typings.underscore.anon.FnCallCollectionIterateeMemoContext
 import typings.underscore.anon.FnCallIsSortedIterateeContext
 import typings.underscore.anon.FnCallIsSortedIterateeCotext
@@ -22,7 +21,6 @@ import typings.underscore.anon.FnCallN
 import typings.underscore.underscoreBooleans.`false`
 import typings.underscore.underscoreBooleans.`true`
 import typings.underscore.underscoreInts.`1`
-import typings.underscore.underscoreStrings._Chain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -179,17 +177,13 @@ object mod extends Shortcut {
     /**
       * @see map
       **/
-    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ _Chain & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
-    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ _Chain & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: Any): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
+    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](iteratee: I): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
+    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](iteratee: I, context: Any): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
     /**
       * @see map
       **/
     @JSName("collect")
-    var collect_Original: Fn0[T, V] = js.native
+    var collect_Original: FnCallIterateeContext[T, V] = js.native
     
     /**
       * Returns a copy of the wrapped list with all falsy values removed. In
@@ -501,7 +495,7 @@ object mod extends Shortcut {
       * @see reduce
       **/
     @JSName("foldl")
-    var foldl_Original: Fn1[V] = js.native
+    var foldl_Original: Fn0[V] = js.native
     
     /**
       * @see reduceRight
@@ -526,7 +520,7 @@ object mod extends Shortcut {
       * @see reduceRight
       **/
     @JSName("foldr")
-    var foldr_Original: Fn1[V] = js.native
+    var foldr_Original: Fn0[V] = js.native
     
     /**
       * @see each
@@ -595,7 +589,7 @@ object mod extends Shortcut {
       * @see first
       **/
     @JSName("head")
-    var head_Original: Fn2[T] = js.native
+    var head_Original: Fn1[T] = js.native
     
     /***********
       * Utility *
@@ -697,7 +691,7 @@ object mod extends Shortcut {
       * @see reduce
       **/
     @JSName("inject")
-    var inject_Original: Fn1[V] = js.native
+    var inject_Original: Fn0[V] = js.native
     
     /**
       * Computes the list of values that are the intersection of the wrapped
@@ -965,18 +959,12 @@ object mod extends Shortcut {
     def map(iteratee: Double, context: Any): Chain[IterateeResult[Double, T], js.Array[IterateeResult[Double, T]]] = js.native
     def map(iteratee: Null, context: Any): Chain[IterateeResult[Null, T], js.Array[IterateeResult[Null, T]]] = js.native
     def map(iteratee: Unit, context: Any): Chain[IterateeResult[Unit, T], js.Array[IterateeResult[Unit, T]]] = js.native
-    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ _Chain & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
-    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ _Chain & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: Any): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
+    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](iteratee: I): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
+    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](iteratee: I, context: Any): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
     
     def mapObject(): Chain[
         IterateeResult[Null, TypeOfCollection[V, Any]], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>}
-      */ _Chain & TopLevel[V]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>} */ js.Any
       ] = js.native
     /**
       * Like map, but for objects. Transform the value of each property in
@@ -988,67 +976,43 @@ object mod extends Shortcut {
       */
     def mapObject(iteratee: String): Chain[
         IterateeResult[String, TypeOfCollection[V, Any]], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>}
-      */ _Chain & TopLevel[V]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>} */ js.Any
       ] = js.native
     def mapObject(iteratee: String, context: Any): Chain[
         IterateeResult[String, TypeOfCollection[V, Any]], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>}
-      */ _Chain & TopLevel[V]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>} */ js.Any
       ] = js.native
     def mapObject(iteratee: js.Array[String | Double]): Chain[
         IterateeResult[js.Array[String | Double], TypeOfCollection[V, Any]], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>}
-      */ _Chain & TopLevel[V]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>} */ js.Any
       ] = js.native
     def mapObject(iteratee: js.Array[String | Double], context: Any): Chain[
         IterateeResult[js.Array[String | Double], TypeOfCollection[V, Any]], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>}
-      */ _Chain & TopLevel[V]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>} */ js.Any
       ] = js.native
     def mapObject(iteratee: Double): Chain[
         IterateeResult[Double, TypeOfCollection[V, Any]], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>}
-      */ _Chain & TopLevel[V]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>} */ js.Any
       ] = js.native
     def mapObject(iteratee: Double, context: Any): Chain[
         IterateeResult[Double, TypeOfCollection[V, Any]], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>}
-      */ _Chain & TopLevel[V]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>} */ js.Any
       ] = js.native
     def mapObject(iteratee: Null, context: Any): Chain[
         IterateeResult[Null, TypeOfCollection[V, Any]], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>}
-      */ _Chain & TopLevel[V]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>} */ js.Any
       ] = js.native
     def mapObject(iteratee: Unit, context: Any): Chain[
         IterateeResult[Unit, TypeOfCollection[V, Any]], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<undefined, V[K]>}
-      */ _Chain & TopLevel[V]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<undefined, V[K]>} */ js.Any
       ] = js.native
-    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, Any], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]}
-      */ _Chain & (TopLevel[TypeOfCollection[V, Any]])) */](iteratee: I): Chain[
+    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, Any], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]} */ js.Any) */](iteratee: I): Chain[
         IterateeResult[I, TypeOfCollection[V, Any]], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>}
-      */ _Chain & TopLevel[V]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>} */ js.Any
       ] = js.native
-    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, Any], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]}
-      */ _Chain & (TopLevel[TypeOfCollection[V, Any]])) */](iteratee: I, context: Any): Chain[
+    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, Any], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]} */ js.Any) */](iteratee: I, context: Any): Chain[
         IterateeResult[I, TypeOfCollection[V, Any]], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>}
-      */ _Chain & TopLevel[V]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>} */ js.Any
       ] = js.native
     
     /**
@@ -1541,7 +1505,7 @@ object mod extends Shortcut {
       * @see first
       **/
     @JSName("take")
-    var take_Original: Fn2[T] = js.native
+    var take_Original: Fn1[T] = js.native
     
     /**
       * Wrapped type `object`.
@@ -1722,7 +1686,15 @@ object mod extends Shortcut {
   
   type CollectionIterator[T /* <: TypeOfList[V] | (TypeOfDictionary[V, Any]) */, TResult, V] = js.Function3[/* element */ T, /* key */ CollectionKey[V], /* collection */ V, TResult]
   
-  type CollectionKey[V] = Unit | String | Double
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    V extends never ? any : V extends underscore.underscore.List<any> ? number : V extends underscore.underscore.Dictionary<any> ? string : V extends undefined ? undefined : never
+    }}}
+    */
+  @js.native
+  trait CollectionKey[V] extends StObject
   
   @js.native
   trait CompiledTemplate extends StObject {
@@ -1736,7 +1708,15 @@ object mod extends Shortcut {
   // unfortunately it's not possible to recursively collapse all possible list dimensions to T[] at this time,
   // so give up after one dimension since that's likely the most common case
   // '& object' prevents strings from being matched by list checks so types like string[] don't end up resulting in any
-  type DeepestListItemOrSelf[T] = T | Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends underscore.underscore.List<infer TItem> & object ? TItem extends underscore.underscore.List<any> & object ? any : TItem : T
+    }}}
+    */
+  @js.native
+  trait DeepestListItemOrSelf[T] extends StObject
   
   type Dictionary[T] = StringDictionary[T]
   
@@ -1744,7 +1724,15 @@ object mod extends Shortcut {
     (CollectionIterator[T, R, V]) | String | Double | (js.Array[String | Double]) | Partial[T] | Null
   ]
   
-  type IterateeResult[I, T] = T | Boolean | (/* import warning: importer.ImportType#apply Failed type conversion: T[I] */ js.Any)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    I extends (args : ...any): infer R ? R : I extends keyof T ? T[I] : I extends string | number | std.Array<string | number> ? any : I extends object ? boolean : I extends null | undefined ? T : never
+    }}}
+    */
+  @js.native
+  trait IterateeResult[I, T] extends StObject
   
   // Common interface between Arrays and jQuery objects
   trait List[T]
@@ -1766,7 +1754,15 @@ object mod extends Shortcut {
     }
   }
   
-  type ListItemOrSelf[T] = T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends underscore.underscore.List<infer TItem> ? TItem : T
+    }}}
+    */
+  @js.native
+  trait ListItemOrSelf[T] extends StObject
   
   type ListIterator[T /* <: TypeOfList[V] */, TResult, V] = CollectionIterator[T, TResult, V]
   
@@ -1785,18 +1781,50 @@ object mod extends Shortcut {
   type ObjectIterator[T /* <: TypeOfDictionary[V, Any] */, TResult, V] = CollectionIterator[T, TResult, V]
   
   // switch to Omit when the minimum TS version moves past 3.5
-  type Omit[V, K /* <: String */] = (typings.std.Pick[V, Exclude[/* keyof V */ String, K]]) | Partial[V]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    V extends never ? any : std.Extract<K, keyof V> extends never ? std.Partial<V> : std.Pick<V, std.Exclude<keyof V, K>>
+    }}}
+    */
+  @js.native
+  trait Omit[V, K /* <: String */] extends StObject
   
   // if T is an inferrable pair, the value type for the pair
   // if T is a list, assume that it contains pairs of some type, so any
   // if T isn't a list, there's no way that it can provide pairs, so never
-  type PairValue[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Readonly<[string | number, infer TValue]> ? TValue : T extends underscore.underscore.List<infer TValue> ? TValue : never
+    }}}
+    */
+  @js.native
+  trait PairValue[T] extends StObject
   
-  type Pick[V, K /* <: String */] = (typings.std.Pick[V, Extract[K, /* keyof V */ String]]) | Partial[V]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    std.Extract<K, keyof V> extends never ? std.Partial<V> : std.Pick<V, std.Extract<K, keyof V>>
+    }}}
+    */
+  @js.native
+  trait Pick[V, K /* <: String */] extends StObject
   
   type Predicate[T] = js.Function1[/* value */ T, Boolean]
   
-  type PropertyTypeOrAny[T, K] = /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    K extends keyof T ? T[K] : any
+    }}}
+    */
+  @js.native
+  trait PropertyTypeOrAny[T, K] extends StObject
   
   /**
     * underscore.js template settings, set templateSettings or pass as an argument
@@ -1888,11 +1916,35 @@ object mod extends Shortcut {
   
   type Truthy[T] = Exclude[T, AnyFalsy]
   
-  type TypeOfCollection[V, TObjectDefault] = (TypeOfDictionary[V, TObjectDefault]) | TypeOfList[V]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    V extends underscore.underscore.List<any> ? underscore.underscore.TypeOfList<V> : underscore.underscore.TypeOfDictionary<V, TObjectDefault>
+    }}}
+    */
+  @js.native
+  trait TypeOfCollection[V, TObjectDefault] extends StObject
   
-  type TypeOfDictionary[V, TDefault] = TDefault
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    V extends never ? any : V extends underscore.underscore.Dictionary<infer T> ? T : TDefault
+    }}}
+    */
+  @js.native
+  trait TypeOfDictionary[V, TDefault] extends StObject
   
-  type TypeOfList[V] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    V extends never ? any : V extends underscore.underscore.List<infer T> ? T : never
+    }}}
+    */
+  @js.native
+  trait TypeOfList[V] extends StObject
   
   type TypedArray = js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Uint8ClampedArray | js.typedarray.Float32Array | js.typedarray.Float64Array
   
@@ -2010,17 +2062,13 @@ object mod extends Shortcut {
     /**
       * @see map
       **/
-    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.Underscore & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): js.Array[IterateeResult[I, T]] = js.native
-    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.Underscore & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: Any): js.Array[IterateeResult[I, T]] = js.native
+    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](iteratee: I): js.Array[IterateeResult[I, T]] = js.native
+    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](iteratee: I, context: Any): js.Array[IterateeResult[I, T]] = js.native
     /**
       * @see map
       **/
     @JSName("collect")
-    var collect_Original: FnCallIterateeContext[T, V] = js.native
+    var collect_Original: FnCall[T, V] = js.native
     
     /**
       * Returns a copy of the wrapped list with all falsy values removed. In
@@ -2740,16 +2788,10 @@ object mod extends Shortcut {
     def map(iteratee: Double, context: Any): js.Array[IterateeResult[Double, T]] = js.native
     def map(iteratee: Null, context: Any): js.Array[IterateeResult[Null, T]] = js.native
     def map(iteratee: Unit, context: Any): js.Array[IterateeResult[Unit, T]] = js.native
-    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.Underscore & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): js.Array[IterateeResult[I, T]] = js.native
-    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.Underscore & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: Any): js.Array[IterateeResult[I, T]] = js.native
+    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](iteratee: I): js.Array[IterateeResult[I, T]] = js.native
+    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](iteratee: I, context: Any): js.Array[IterateeResult[I, T]] = js.native
     
-    def mapObject(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
+    def mapObject(): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>} */ js.Any = js.native
     /**
       * Like map, but for objects. Transform the value of each property in
       * turn.
@@ -2758,40 +2800,16 @@ object mod extends Shortcut {
       * @returns A new object with all of the wrapped object's property
       * values transformed through `iteratee`.
       */
-    def mapObject(iteratee: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
-    def mapObject(iteratee: String, context: Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
-    def mapObject(iteratee: js.Array[String | Double]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
-    def mapObject(iteratee: js.Array[String | Double], context: Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
-    def mapObject(iteratee: Double): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
-    def mapObject(iteratee: Double, context: Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
-    def mapObject(iteratee: Null, context: Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
-    def mapObject(iteratee: Unit, context: Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<undefined, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
-    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, Any], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]}
-      */ typings.underscore.underscoreStrings.Underscore & (TopLevel[TypeOfCollection[V, Any]])) */](iteratee: I): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
-    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, Any], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]}
-      */ typings.underscore.underscoreStrings.Underscore & (TopLevel[TypeOfCollection[V, Any]])) */](iteratee: I, context: Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
+    def mapObject(iteratee: String): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>} */ js.Any = js.native
+    def mapObject(iteratee: String, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>} */ js.Any = js.native
+    def mapObject(iteratee: js.Array[String | Double]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>} */ js.Any = js.native
+    def mapObject(iteratee: js.Array[String | Double], context: Any): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>} */ js.Any = js.native
+    def mapObject(iteratee: Double): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>} */ js.Any = js.native
+    def mapObject(iteratee: Double, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>} */ js.Any = js.native
+    def mapObject(iteratee: Null, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>} */ js.Any = js.native
+    def mapObject(iteratee: Unit, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<undefined, V[K]>} */ js.Any = js.native
+    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, Any], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]} */ js.Any) */](iteratee: I): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>} */ js.Any = js.native
+    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, Any], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]} */ js.Any) */](iteratee: I, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>} */ js.Any = js.native
     
     /**
       * Wrapped type `any[]`.
@@ -3548,17 +3566,13 @@ object mod extends Shortcut {
     /**
       * @see map
       **/
-    def collect[V /* <: Collection[Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def collect[V /* <: Collection[Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I, context: Any): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def collect[V /* <: Collection[Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](collection: V, iteratee: I): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def collect[V /* <: Collection[Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](collection: V, iteratee: I, context: Any): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
     /**
       * @see map
       **/
     @JSName("collect")
-    var collect_Original: FnCall = js.native
+    var collect_Original: FnCallCollectionIterateeContext = js.native
     
     /**
       * Returns a copy of `list` with all falsy values removed. In
@@ -4448,16 +4462,10 @@ object mod extends Shortcut {
     def map[V /* <: Collection[Any] */](collection: V, iteratee: Double, context: Any): js.Array[IterateeResult[Double, TypeOfCollection[V, scala.Nothing]]] = js.native
     def map[V /* <: Collection[Any] */](collection: V, iteratee: Null, context: Any): js.Array[IterateeResult[Null, TypeOfCollection[V, scala.Nothing]]] = js.native
     def map[V /* <: Collection[Any] */](collection: V, iteratee: Unit, context: Any): js.Array[IterateeResult[Unit, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def map[V /* <: Collection[Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def map[V /* <: Collection[Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I, context: Any): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def map[V /* <: Collection[Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](collection: V, iteratee: I): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def map[V /* <: Collection[Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]} */ js.Any) */](collection: V, iteratee: I, context: Any): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
     
-    def mapObject[V /* <: js.Object */](`object`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
+    def mapObject[V /* <: js.Object */](`object`: V): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>} */ js.Any = js.native
     /**
       * Like map, but for objects. Transform the value of each property in
       * turn.
@@ -4467,40 +4475,16 @@ object mod extends Shortcut {
       * @returns A new object with all of `object`'s property values
       * transformed through `iteratee`.
       */
-    def mapObject[V /* <: js.Object */](`object`: V, iteratee: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
-    def mapObject[V /* <: js.Object */](`object`: V, iteratee: String, context: Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
-    def mapObject[V /* <: js.Object */](`object`: V, iteratee: js.Array[String | Double]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
-    def mapObject[V /* <: js.Object */](`object`: V, iteratee: js.Array[String | Double], context: Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
-    def mapObject[V /* <: js.Object */](`object`: V, iteratee: Double): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
-    def mapObject[V /* <: js.Object */](`object`: V, iteratee: Double, context: Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
-    def mapObject[V /* <: js.Object */](`object`: V, iteratee: Null, context: Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
-    def mapObject[V /* <: js.Object */](`object`: V, iteratee: Unit, context: Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<undefined, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
-    def mapObject[V /* <: js.Object */, I /* <: (CollectionIterator[TypeOfCollection[V, Any], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & (TopLevel[TypeOfCollection[V, Any]])) */](`object`: V, iteratee: I): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
-    def mapObject[V /* <: js.Object */, I /* <: (CollectionIterator[TypeOfCollection[V, Any], Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & (TopLevel[TypeOfCollection[V, Any]])) */](`object`: V, iteratee: I, context: Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
+    def mapObject[V /* <: js.Object */](`object`: V, iteratee: String): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>} */ js.Any = js.native
+    def mapObject[V /* <: js.Object */](`object`: V, iteratee: String, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>} */ js.Any = js.native
+    def mapObject[V /* <: js.Object */](`object`: V, iteratee: js.Array[String | Double]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>} */ js.Any = js.native
+    def mapObject[V /* <: js.Object */](`object`: V, iteratee: js.Array[String | Double], context: Any): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>} */ js.Any = js.native
+    def mapObject[V /* <: js.Object */](`object`: V, iteratee: Double): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>} */ js.Any = js.native
+    def mapObject[V /* <: js.Object */](`object`: V, iteratee: Double, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>} */ js.Any = js.native
+    def mapObject[V /* <: js.Object */](`object`: V, iteratee: Null, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>} */ js.Any = js.native
+    def mapObject[V /* <: js.Object */](`object`: V, iteratee: Unit, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<undefined, V[K]>} */ js.Any = js.native
+    def mapObject[V /* <: js.Object */, I /* <: (CollectionIterator[TypeOfCollection[V, Any], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]} */ js.Any) */](`object`: V, iteratee: I): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>} */ js.Any = js.native
+    def mapObject[V /* <: js.Object */, I /* <: (CollectionIterator[TypeOfCollection[V, Any], Any, V]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]} */ js.Any) */](`object`: V, iteratee: I, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>} */ js.Any = js.native
     
     /**
       * Returns a predicate function that will tell you if a passed in object contains all of the key/value properties present in attrs.

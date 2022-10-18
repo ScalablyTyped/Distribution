@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "AnchorOverLife")
 @js.native
 open class AnchorOverLife protected ()
-  extends typings.blackEngine.anchorOverLifeMod.AnchorOverLife {
-  def this(values: (Double | typings.blackEngine.vectorScatterBaseMod.VectorScatterBase)*) = this()
+  extends typings.blackEngine.particlesModsAnchorOverLifeMod.AnchorOverLife {
+  def this(values: (Double | typings.blackEngine.scattersVectorScatterBaseMod.VectorScatterBase)*) = this()
 }

@@ -1,6 +1,6 @@
 package typings.baseui
 
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ChangeEvent
 import typings.react.mod.DragEvent
 import typings.react.mod.FocusEvent

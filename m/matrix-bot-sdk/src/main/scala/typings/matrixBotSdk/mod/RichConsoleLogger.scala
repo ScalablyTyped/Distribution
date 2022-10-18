@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "RichConsoleLogger")
 @js.native
 open class RichConsoleLogger ()
-  extends typings.matrixBotSdk.richConsoleLoggerMod.RichConsoleLogger
+  extends typings.matrixBotSdk.libLoggingRichConsoleLoggerMod.RichConsoleLogger

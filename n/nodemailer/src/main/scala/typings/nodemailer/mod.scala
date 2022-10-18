@@ -1,9 +1,9 @@
 package typings.nodemailer
 
 import typings.nodemailer.anon.Host
+import typings.nodemailer.libSmtpTransportMod.Options
 import typings.nodemailer.nodemailerBooleans.`false`
 import typings.nodemailer.nodemailerBooleans.`true`
-import typings.nodemailer.smtpTransportMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,70 +22,73 @@ object mod {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTestAccount")(apiUrl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def createTestAccount(callback: js.Function2[/* err */ js.Error | Null, /* testAccount */ TestAccount, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createTestAccount")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def createTransport(): Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")().asInstanceOf[Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: String): Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: String, defaults: Options): Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: Unit, defaults: Options): Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: typings.nodemailer.jsonTransportMod.Options): Transporter[typings.nodemailer.jsonTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.jsonTransportMod.SentMessageInfo]]
+  inline def createTransport(): Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")().asInstanceOf[Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: String): Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: String, defaults: Options): Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: Unit, defaults: Options): Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: typings.nodemailer.libJsonTransportMod.Options): Transporter[typings.nodemailer.libJsonTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.libJsonTransportMod.SentMessageInfo]]
   inline def createTransport(
-    transport: typings.nodemailer.jsonTransportMod.Options,
-    defaults: typings.nodemailer.jsonTransportMod.Options
-  ): Transporter[typings.nodemailer.jsonTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.jsonTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: typings.nodemailer.jsonTransportMod.^): Transporter[typings.nodemailer.jsonTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.jsonTransportMod.SentMessageInfo]]
+    transport: typings.nodemailer.libJsonTransportMod.Options,
+    defaults: typings.nodemailer.libJsonTransportMod.Options
+  ): Transporter[typings.nodemailer.libJsonTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libJsonTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: typings.nodemailer.libJsonTransportMod.^): Transporter[typings.nodemailer.libJsonTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.libJsonTransportMod.SentMessageInfo]]
   inline def createTransport(
-    transport: typings.nodemailer.jsonTransportMod.^,
-    defaults: typings.nodemailer.jsonTransportMod.Options
-  ): Transporter[typings.nodemailer.jsonTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.jsonTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: typings.nodemailer.sendmailTransportMod.Options): Transporter[typings.nodemailer.sendmailTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.sendmailTransportMod.SentMessageInfo]]
+    transport: typings.nodemailer.libJsonTransportMod.^,
+    defaults: typings.nodemailer.libJsonTransportMod.Options
+  ): Transporter[typings.nodemailer.libJsonTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libJsonTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: typings.nodemailer.libSendmailTransportMod.Options): Transporter[typings.nodemailer.libSendmailTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.libSendmailTransportMod.SentMessageInfo]]
   inline def createTransport(
-    transport: typings.nodemailer.sendmailTransportMod.Options,
-    defaults: typings.nodemailer.sendmailTransportMod.Options
-  ): Transporter[typings.nodemailer.sendmailTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.sendmailTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: typings.nodemailer.sendmailTransportMod.^): Transporter[typings.nodemailer.sendmailTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.sendmailTransportMod.SentMessageInfo]]
+    transport: typings.nodemailer.libSendmailTransportMod.Options,
+    defaults: typings.nodemailer.libSendmailTransportMod.Options
+  ): Transporter[typings.nodemailer.libSendmailTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libSendmailTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: typings.nodemailer.libSendmailTransportMod.^): Transporter[typings.nodemailer.libSendmailTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.libSendmailTransportMod.SentMessageInfo]]
   inline def createTransport(
-    transport: typings.nodemailer.sendmailTransportMod.^,
-    defaults: typings.nodemailer.sendmailTransportMod.Options
-  ): Transporter[typings.nodemailer.sendmailTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.sendmailTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: typings.nodemailer.sesTransportMod.Options): Transporter[typings.nodemailer.sesTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.sesTransportMod.SentMessageInfo]]
+    transport: typings.nodemailer.libSendmailTransportMod.^,
+    defaults: typings.nodemailer.libSendmailTransportMod.Options
+  ): Transporter[typings.nodemailer.libSendmailTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libSendmailTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: typings.nodemailer.libSesTransportMod.Options): Transporter[typings.nodemailer.libSesTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.libSesTransportMod.SentMessageInfo]]
   inline def createTransport(
-    transport: typings.nodemailer.sesTransportMod.Options,
-    defaults: typings.nodemailer.sesTransportMod.Options
-  ): Transporter[typings.nodemailer.sesTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.sesTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: typings.nodemailer.sesTransportMod.^): Transporter[typings.nodemailer.sesTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.sesTransportMod.SentMessageInfo]]
+    transport: typings.nodemailer.libSesTransportMod.Options,
+    defaults: typings.nodemailer.libSesTransportMod.Options
+  ): Transporter[typings.nodemailer.libSesTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libSesTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: typings.nodemailer.libSesTransportMod.^): Transporter[typings.nodemailer.libSesTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.libSesTransportMod.SentMessageInfo]]
   inline def createTransport(
-    transport: typings.nodemailer.sesTransportMod.^,
-    defaults: typings.nodemailer.sesTransportMod.Options
-  ): Transporter[typings.nodemailer.sesTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.sesTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: typings.nodemailer.smtpPoolMod.Options): Transporter[typings.nodemailer.smtpPoolMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.smtpPoolMod.SentMessageInfo]]
+    transport: typings.nodemailer.libSesTransportMod.^,
+    defaults: typings.nodemailer.libSesTransportMod.Options
+  ): Transporter[typings.nodemailer.libSesTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libSesTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: typings.nodemailer.libSmtpPoolMod.Options): Transporter[typings.nodemailer.libSmtpPoolMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.libSmtpPoolMod.SentMessageInfo]]
   inline def createTransport(
-    transport: typings.nodemailer.smtpPoolMod.Options,
-    defaults: typings.nodemailer.smtpPoolMod.Options
-  ): Transporter[typings.nodemailer.smtpPoolMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.smtpPoolMod.SentMessageInfo]]
-  inline def createTransport(transport: typings.nodemailer.smtpPoolMod.^): Transporter[typings.nodemailer.smtpPoolMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.smtpPoolMod.SentMessageInfo]]
-  inline def createTransport(transport: typings.nodemailer.smtpPoolMod.^, defaults: typings.nodemailer.smtpPoolMod.Options): Transporter[typings.nodemailer.smtpPoolMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.smtpPoolMod.SentMessageInfo]]
-  inline def createTransport(transport: Options): Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: Options, defaults: Options): Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: typings.nodemailer.smtpTransportMod.^): Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: typings.nodemailer.smtpTransportMod.^, defaults: Options): Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.smtpTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: typings.nodemailer.streamTransportMod.Options): Transporter[typings.nodemailer.streamTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.streamTransportMod.SentMessageInfo]]
+    transport: typings.nodemailer.libSmtpPoolMod.Options,
+    defaults: typings.nodemailer.libSmtpPoolMod.Options
+  ): Transporter[typings.nodemailer.libSmtpPoolMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libSmtpPoolMod.SentMessageInfo]]
+  inline def createTransport(transport: typings.nodemailer.libSmtpPoolMod.^): Transporter[typings.nodemailer.libSmtpPoolMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.libSmtpPoolMod.SentMessageInfo]]
   inline def createTransport(
-    transport: typings.nodemailer.streamTransportMod.Options,
-    defaults: typings.nodemailer.streamTransportMod.Options
-  ): Transporter[typings.nodemailer.streamTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.streamTransportMod.SentMessageInfo]]
-  inline def createTransport(transport: typings.nodemailer.streamTransportMod.^): Transporter[typings.nodemailer.streamTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.streamTransportMod.SentMessageInfo]]
+    transport: typings.nodemailer.libSmtpPoolMod.^,
+    defaults: typings.nodemailer.libSmtpPoolMod.Options
+  ): Transporter[typings.nodemailer.libSmtpPoolMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libSmtpPoolMod.SentMessageInfo]]
+  inline def createTransport(transport: Options): Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: Options, defaults: Options): Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: typings.nodemailer.libSmtpTransportMod.^): Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: typings.nodemailer.libSmtpTransportMod.^, defaults: Options): Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libSmtpTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: typings.nodemailer.libStreamTransportMod.Options): Transporter[typings.nodemailer.libStreamTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.libStreamTransportMod.SentMessageInfo]]
   inline def createTransport(
-    transport: typings.nodemailer.streamTransportMod.^,
-    defaults: typings.nodemailer.streamTransportMod.Options
-  ): Transporter[typings.nodemailer.streamTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.streamTransportMod.SentMessageInfo]]
+    transport: typings.nodemailer.libStreamTransportMod.Options,
+    defaults: typings.nodemailer.libStreamTransportMod.Options
+  ): Transporter[typings.nodemailer.libStreamTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libStreamTransportMod.SentMessageInfo]]
+  inline def createTransport(transport: typings.nodemailer.libStreamTransportMod.^): Transporter[typings.nodemailer.libStreamTransportMod.SentMessageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[typings.nodemailer.libStreamTransportMod.SentMessageInfo]]
+  inline def createTransport(
+    transport: typings.nodemailer.libStreamTransportMod.^,
+    defaults: typings.nodemailer.libStreamTransportMod.Options
+  ): Transporter[typings.nodemailer.libStreamTransportMod.SentMessageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[typings.nodemailer.libStreamTransportMod.SentMessageInfo]]
   inline def createTransport[T](transport: Transport[T]): Transporter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[T]]
   inline def createTransport[T](transport: TransportOptions): Transporter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any]).asInstanceOf[Transporter[T]]
   inline def createTransport[T](transport: TransportOptions, defaults: TransportOptions): Transporter[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[T]]
   inline def createTransport[T](transport: Transport[T], defaults: TransportOptions): Transporter[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(transport.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Transporter[T]]
   
-  inline def getTestMessageUrl(info: typings.nodemailer.sesTransportMod.SentMessageInfo): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("getTestMessageUrl")(info.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
-  inline def getTestMessageUrl(info: typings.nodemailer.smtpTransportMod.SentMessageInfo): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("getTestMessageUrl")(info.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  inline def getTestMessageUrl(info: typings.nodemailer.libSesTransportMod.SentMessageInfo): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("getTestMessageUrl")(info.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  inline def getTestMessageUrl(info: typings.nodemailer.libSmtpTransportMod.SentMessageInfo): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("getTestMessageUrl")(info.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
   
-  type SendMailOptions = typings.nodemailer.mailerMod.Options
+  type SendMailOptions = typings.nodemailer.libMailerMod.Options
   
   type SentMessageInfo = Any
   
@@ -135,7 +138,7 @@ object mod {
     var name: String
     
     def send(
-      mail: typings.nodemailer.mailMessageMod.^[T],
+      mail: typings.nodemailer.libMailerMailMessageMod.^[T],
       callback: js.Function2[/* err */ js.Error | Null, /* info */ T, Unit]
     ): Unit
     
@@ -149,7 +152,7 @@ object mod {
     
     inline def apply[T](
       name: String,
-      send: (typings.nodemailer.mailMessageMod.^[T], js.Function2[/* err */ js.Error | Null, /* info */ T, Unit]) => Unit,
+      send: (typings.nodemailer.libMailerMailMessageMod.^[T], js.Function2[/* err */ js.Error | Null, /* info */ T, Unit]) => Unit,
       verify: (js.UndefOr[
           js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
         ]) & js.UndefOr[js.Function0[js.Promise[`true`]]],
@@ -172,7 +175,7 @@ object mod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setSend(
-        value: (typings.nodemailer.mailMessageMod.^[T], js.Function2[/* err */ js.Error | Null, /* info */ T, Unit]) => Unit
+        value: (typings.nodemailer.libMailerMailMessageMod.^[T], js.Function2[/* err */ js.Error | Null, /* info */ T, Unit]) => Unit
       ): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
       
       inline def setVerify(
@@ -204,5 +207,5 @@ object mod {
     }
   }
   
-  type Transporter[T] = typings.nodemailer.mailerMod.^[T]
+  type Transporter[T] = typings.nodemailer.libMailerMod.^[T]
 }

@@ -1,7 +1,7 @@
 package typings.webdriver.anon
 
-import typings.wdioTypes.optionsMod.RequestLibOptions
-import typings.wdioTypes.optionsMod.RequestLibResponse
+import typings.wdioTypes.buildOptionsMod.RequestLibOptions
+import typings.wdioTypes.buildOptionsMod.RequestLibResponse
 import typings.webdriver.webdriverStrings.`object`
 import typings.webdriver.webdriverStrings.boolean
 import typings.webdriver.webdriverStrings.function

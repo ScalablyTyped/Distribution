@@ -1,8 +1,8 @@
 package typings.firebaseComponent
 
-import typings.firebaseComponent.srcTypesMod.ComponentType
-import typings.firebaseComponent.srcTypesMod.InstanceFactory
-import typings.firebaseComponent.srcTypesMod.Name
+import typings.firebaseComponent.distSrcTypesMod.ComponentType
+import typings.firebaseComponent.distSrcTypesMod.InstanceFactory
+import typings.firebaseComponent.distSrcTypesMod.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object mod {
   @JSImport("@firebase/component", "Component")
   @js.native
   open class Component[T /* <: Name */] protected ()
-    extends typings.firebaseComponent.srcComponentMod.Component[T] {
+    extends typings.firebaseComponent.distSrcComponentMod.Component[T] {
     /**
       *
       * @param name The public service name, e.g. app, auth, firestore, database
@@ -25,14 +25,14 @@ object mod {
   @JSImport("@firebase/component", "ComponentContainer")
   @js.native
   open class ComponentContainer protected ()
-    extends typings.firebaseComponent.srcComponentContainerMod.ComponentContainer {
+    extends typings.firebaseComponent.distSrcComponentContainerMod.ComponentContainer {
     def this(name: String) = this()
   }
   
   @JSImport("@firebase/component", "Provider")
   @js.native
   open class Provider[T /* <: Name */] protected ()
-    extends typings.firebaseComponent.srcProviderMod.Provider[T] {
-    def this(name: T, container: typings.firebaseComponent.srcComponentContainerMod.ComponentContainer) = this()
+    extends typings.firebaseComponent.distSrcProviderMod.Provider[T] {
+    def this(name: T, container: typings.firebaseComponent.distSrcComponentContainerMod.ComponentContainer) = this()
   }
 }

@@ -3,83 +3,42 @@ package typings.multiformats
 import typings.multiformats.anon.Bytes
 import typings.multiformats.anon.BytesCid
 import typings.multiformats.anon.Cid
-import typings.multiformats.anon.CidValue
-import typings.multiformats.anon.Remaining
-import typings.multiformats.anon.RemainingValue
+import typings.multiformats.anon.CodecHasher
+import typings.multiformats.anon.Hasher
 import typings.multiformats.anon.Value
-import typings.multiformats.hashesInterfaceMod.MultihashHasher
-import typings.multiformats.mod.CID
+import typings.multiformats.distTypesSrcBlockInterfaceMod.BlockView
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
+import typings.multiformats.multiformatsInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object blockMod {
   
-  @JSImport("multiformats/types/src/block", JSImport.Namespace)
+  @JSImport("multiformats/block", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("multiformats/types/src/block", "Block")
+  @JSImport("multiformats/block", "Block")
   @js.native
-  open class Block[T] protected () extends StObject {
+  open class Block[T /* <: Any */, C /* <: Double */, A /* <: Double */, V /* <: Version */] protected ()
+    extends typings.multiformats.distTypesSrcBlockMod.Block[T, C, A, V] {
     /**
-      * @param {Object} options
-      * @param {CID} options.cid
-      * @param {ByteView<T>} options.bytes
+      * @param {object} options
+      * @param {CID<T, C, A, V>} options.cid
+      * @param {API.ByteView<T>} options.bytes
       * @param {T} options.value
       */
-    def this(hasCidBytesValue: CidValue[T]) = this()
-    
-    var asBlock: Block[T] = js.native
-    
-    var bytes: ByteView[T] = js.native
-    
-    var cid: CID = js.native
-    
-    /**
-      * @param {string} [path]
-      */
-    def get(): Remaining | RemainingValue = js.native
-    def get(path: String): Remaining | RemainingValue = js.native
-    
-    def links(): js.Iterable[js.Tuple2[String, CID]] = js.native
-    
-    def tree(): js.Iterable[String] = js.native
-    
-    var value: T = js.native
+    def this(hasCidBytesValue: Bytes[T, C, A, V]) = this()
   }
   
-  inline def create[T, Code /* <: Double */, Algorithm_1 /* <: Double */](hasBytesCidHasherCodec: Cid[T, Code]): js.Promise[Block[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(hasBytesCidHasherCodec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Block[T]]]
+  inline def create[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */](hasBytesCidHasherCodec: Cid[T, Code, Alg, V]): js.Promise[BlockView[T, Code, Alg, V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(hasBytesCidHasherCodec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BlockView[T, Code, Alg, V]]]
   
-  inline def createUnsafe[T, Code /* <: Double */](hasBytesCidValueCodec: BytesCid[T, Code]): Block[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnsafe")(hasBytesCidValueCodec.asInstanceOf[js.Any]).asInstanceOf[Block[T]]
-  inline def createUnsafe[T, Code /* <: Double */](hasBytesCidValueCodec: Value[T, Code]): Block[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnsafe")(hasBytesCidValueCodec.asInstanceOf[js.Any]).asInstanceOf[Block[T]]
+  inline def createUnsafe[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */](hasBytesCidMaybeValueCodec: BytesCid[T, Code, Alg, V]): BlockView[T, Code, Alg, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnsafe")(hasBytesCidMaybeValueCodec.asInstanceOf[js.Any]).asInstanceOf[BlockView[T, Code, Alg, V]]
+  inline def createUnsafe[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */](hasBytesCidMaybeValueCodec: Value[T, Code, Alg, V]): BlockView[T, Code, Alg, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnsafe")(hasBytesCidMaybeValueCodec.asInstanceOf[js.Any]).asInstanceOf[BlockView[T, Code, Alg, V]]
   
-  inline def decode[T, Code /* <: Double */, Algorithm_1 /* <: Double */](hasBytesCodecHasher: Bytes[T, Code]): js.Promise[Block[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(hasBytesCodecHasher.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Block[T]]]
+  inline def decode[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */](hasBytesCodecHasher: Hasher[T, Code, Alg]): js.Promise[BlockView[T, Code, Alg, `1`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(hasBytesCodecHasher.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BlockView[T, Code, Alg, `1`]]]
   
-  inline def encode[T, Code /* <: Double */, Algorithm_1 /* <: Double */](hasValueCodecHasher: typings.multiformats.anon.Hasher[T, Code]): js.Promise[Block[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(hasValueCodecHasher.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Block[T]]]
-  
-  type BlockDecoder[Code /* <: Double */, T] = typings.multiformats.codecsInterfaceMod.BlockDecoder[Code, T]
-  
-  type BlockEncoder[Code /* <: Double */, T] = typings.multiformats.codecsInterfaceMod.BlockEncoder[Code, T]
-  
-  type ByteView[T] = typings.multiformats.codecsInterfaceMod.ByteView[T]
-  
-  type Hasher[Algorithm_1] = MultihashHasher[Double]
-  
-  trait RequiredCreateOptions extends StObject {
-    
-    var cid: CID
-  }
-  object RequiredCreateOptions {
-    
-    inline def apply(cid: CID): RequiredCreateOptions = {
-      val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RequiredCreateOptions]
-    }
-    
-    extension [Self <: RequiredCreateOptions](x: Self) {
-      
-      inline def setCid(value: CID): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
-    }
-  }
+  inline def encode[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */](hasValueCodecHasher: CodecHasher[T, Code, Alg]): js.Promise[BlockView[T, Code, Alg, `1`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(hasValueCodecHasher.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BlockView[T, Code, Alg, `1`]]]
 }

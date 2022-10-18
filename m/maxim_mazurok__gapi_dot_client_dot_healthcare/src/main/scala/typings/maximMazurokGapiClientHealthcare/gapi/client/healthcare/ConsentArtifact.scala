@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,7 @@ trait ConsentArtifact extends StObject {
   
   /** Optional. Metadata associated with the Consent artifact. For example, the consent locale or user agent version. */
   var metadata: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.ConsentArtifact & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -62,9 +59,7 @@ object ConsentArtifact {
     inline def setGuardianSignatureUndefined: Self = StObject.set(x, "guardianSignature", js.undefined)
     
     inline def setMetadata(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.ConsentArtifact & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "AuthenticationHeaderParser")
 @js.native
 open class AuthenticationHeaderParser protected ()
-  extends typings.azureMsalCommon.authenticationHeaderParserMod.AuthenticationHeaderParser {
+  extends typings.azureMsalCommon.distRequestAuthenticationHeaderParserMod.AuthenticationHeaderParser {
   def this(headers: Record[String, String]) = this()
 }

@@ -2,21 +2,21 @@ package typings.opentelemetryCore
 
 import typings.node.perfHooksMod.Performance_
 import typings.node.timersMod.global.NodeJS.Timer
-import typings.opentelemetryApi.contextTypesMod.Context
-import typings.opentelemetryApi.exceptionMod.Exception
-import typings.opentelemetryApi.spanContextMod.SpanContext
-import typings.opentelemetryApi.timeMod.HrTime
-import typings.opentelemetryApi.timeMod.TimeInput
-import typings.opentelemetryApi.traceAttributesMod.SpanAttributes
-import typings.opentelemetryApi.typesMod.Baggage
-import typings.opentelemetryCore.anchoredClockMod.Clock
-import typings.opentelemetryCore.compositeMod.CompositePropagatorConfig
-import typings.opentelemetryCore.parentBasedSamplerMod.ParentBasedSamplerConfig
-import typings.opentelemetryCore.rpcMetadataMod.RPCMetadata
-import typings.opentelemetryCore.typesMod.ErrorHandler
-import typings.opentelemetryCore.utilsEnvironmentMod.ENVIRONMENT
-import typings.opentelemetryCore.utilsEnvironmentMod.RAW_ENVIRONMENT
-import typings.opentelemetryCore.utilsMod.ParsedBaggageKeyValue
+import typings.opentelemetryApi.buildSrcBaggageTypesMod.Baggage
+import typings.opentelemetryApi.buildSrcCommonExceptionMod.Exception
+import typings.opentelemetryApi.buildSrcCommonTimeMod.HrTime
+import typings.opentelemetryApi.buildSrcCommonTimeMod.TimeInput
+import typings.opentelemetryApi.buildSrcContextTypesMod.Context
+import typings.opentelemetryApi.buildSrcTraceAttributesMod.SpanAttributes
+import typings.opentelemetryApi.buildSrcTraceSpanContextMod.SpanContext
+import typings.opentelemetryCore.buildSrcBaggageUtilsMod.ParsedBaggageKeyValue
+import typings.opentelemetryCore.buildSrcCommonAnchoredClockMod.Clock
+import typings.opentelemetryCore.buildSrcCommonTypesMod.ErrorHandler
+import typings.opentelemetryCore.buildSrcPropagationCompositeMod.CompositePropagatorConfig
+import typings.opentelemetryCore.buildSrcTraceRpcMetadataMod.RPCMetadata
+import typings.opentelemetryCore.buildSrcTraceSamplerParentBasedSamplerMod.ParentBasedSamplerConfig
+import typings.opentelemetryCore.buildSrcUtilsEnvironmentMod.ENVIRONMENT
+import typings.opentelemetryCore.buildSrcUtilsEnvironmentMod.RAW_ENVIRONMENT
 import typings.std.Record
 import typings.std.Required
 import org.scalablytyped.runtime.StObject
@@ -32,17 +32,17 @@ object mod {
   @JSImport("@opentelemetry/core", "AlwaysOffSampler")
   @js.native
   open class AlwaysOffSampler ()
-    extends typings.opentelemetryCore.alwaysOffSamplerMod.AlwaysOffSampler
+    extends typings.opentelemetryCore.buildSrcTraceSamplerAlwaysOffSamplerMod.AlwaysOffSampler
   
   @JSImport("@opentelemetry/core", "AlwaysOnSampler")
   @js.native
   open class AlwaysOnSampler ()
-    extends typings.opentelemetryCore.alwaysOnSamplerMod.AlwaysOnSampler
+    extends typings.opentelemetryCore.buildSrcTraceSamplerAlwaysOnSamplerMod.AlwaysOnSampler
   
   @JSImport("@opentelemetry/core", "AnchoredClock")
   @js.native
   open class AnchoredClock protected ()
-    extends typings.opentelemetryCore.anchoredClockMod.AnchoredClock {
+    extends typings.opentelemetryCore.buildSrcCommonAnchoredClockMod.AnchoredClock {
     /**
       * Create a new AnchoredClock anchored to the current time returned by systemClock.
       *
@@ -55,7 +55,7 @@ object mod {
   @JSImport("@opentelemetry/core", "BindOnceFuture")
   @js.native
   open class BindOnceFuture[R, This, T /* <: js.ThisFunction1[/* this */ This, /* repeated */ Any, R] */] protected ()
-    extends typings.opentelemetryCore.callbackMod.BindOnceFuture[R, This, T] {
+    extends typings.opentelemetryCore.buildSrcUtilsCallbackMod.BindOnceFuture[R, This, T] {
     def this(_callback: T, _that: This) = this()
   }
   
@@ -67,7 +67,7 @@ object mod {
     * @param [config] Configuration object for composite propagator
     */
   open class CompositePropagator ()
-    extends typings.opentelemetryCore.compositeMod.CompositePropagator {
+    extends typings.opentelemetryCore.buildSrcPropagationCompositeMod.CompositePropagator {
     def this(config: CompositePropagatorConfig) = this()
   }
   
@@ -88,17 +88,17 @@ object mod {
   object ExportResultCode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.opentelemetryCore.exportResultMod.ExportResultCode & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.opentelemetryCore.buildSrcExportResultMod.ExportResultCode & Double] = js.native
     
-    /* 1 */ val FAILED: typings.opentelemetryCore.exportResultMod.ExportResultCode.FAILED & Double = js.native
+    /* 1 */ val FAILED: typings.opentelemetryCore.buildSrcExportResultMod.ExportResultCode.FAILED & Double = js.native
     
-    /* 0 */ val SUCCESS: typings.opentelemetryCore.exportResultMod.ExportResultCode.SUCCESS & Double = js.native
+    /* 0 */ val SUCCESS: typings.opentelemetryCore.buildSrcExportResultMod.ExportResultCode.SUCCESS & Double = js.native
   }
   
   @JSImport("@opentelemetry/core", "ParentBasedSampler")
   @js.native
   open class ParentBasedSampler protected ()
-    extends typings.opentelemetryCore.parentBasedSamplerMod.ParentBasedSampler {
+    extends typings.opentelemetryCore.buildSrcTraceSamplerParentBasedSamplerMod.ParentBasedSampler {
     def this(config: ParentBasedSamplerConfig) = this()
   }
   
@@ -107,15 +107,15 @@ object mod {
   object RPCType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.opentelemetryCore.rpcMetadataMod.RPCType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.opentelemetryCore.buildSrcTraceRpcMetadataMod.RPCType & String] = js.native
     
-    /* "http" */ val HTTP: typings.opentelemetryCore.rpcMetadataMod.RPCType.HTTP & String = js.native
+    /* "http" */ val HTTP: typings.opentelemetryCore.buildSrcTraceRpcMetadataMod.RPCType.HTTP & String = js.native
   }
   
   @JSImport("@opentelemetry/core", "RandomIdGenerator")
   @js.native
   open class RandomIdGenerator ()
-    extends typings.opentelemetryCore.platformMod.RandomIdGenerator
+    extends typings.opentelemetryCore.buildSrcPlatformMod.RandomIdGenerator
   
   @JSImport("@opentelemetry/core", "TRACE_PARENT_HEADER")
   @js.native
@@ -128,14 +128,14 @@ object mod {
   @JSImport("@opentelemetry/core", "TraceIdRatioBasedSampler")
   @js.native
   open class TraceIdRatioBasedSampler ()
-    extends typings.opentelemetryCore.traceIdRatioBasedSamplerMod.TraceIdRatioBasedSampler {
+    extends typings.opentelemetryCore.buildSrcTraceSamplerTraceIdRatioBasedSamplerMod.TraceIdRatioBasedSampler {
     def this(_ratio: Double) = this()
   }
   
   @JSImport("@opentelemetry/core", "TraceState")
   @js.native
   open class TraceState ()
-    extends typings.opentelemetryCore.traceStateMod.TraceState {
+    extends typings.opentelemetryCore.buildSrcTraceTraceStateMod.TraceState {
     def this(rawTraceState: String) = this()
   }
   
@@ -144,19 +144,19 @@ object mod {
   object TracesSamplerValues extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.opentelemetryCore.samplingMod.TracesSamplerValues & String] = js.native
+    def apply(value: String): js.UndefOr[typings.opentelemetryCore.buildSrcUtilsSamplingMod.TracesSamplerValues & String] = js.native
     
-    /* "always_off" */ val AlwaysOff: typings.opentelemetryCore.samplingMod.TracesSamplerValues.AlwaysOff & String = js.native
+    /* "always_off" */ val AlwaysOff: typings.opentelemetryCore.buildSrcUtilsSamplingMod.TracesSamplerValues.AlwaysOff & String = js.native
     
-    /* "always_on" */ val AlwaysOn: typings.opentelemetryCore.samplingMod.TracesSamplerValues.AlwaysOn & String = js.native
+    /* "always_on" */ val AlwaysOn: typings.opentelemetryCore.buildSrcUtilsSamplingMod.TracesSamplerValues.AlwaysOn & String = js.native
     
-    /* "parentbased_always_off" */ val ParentBasedAlwaysOff: typings.opentelemetryCore.samplingMod.TracesSamplerValues.ParentBasedAlwaysOff & String = js.native
+    /* "parentbased_always_off" */ val ParentBasedAlwaysOff: typings.opentelemetryCore.buildSrcUtilsSamplingMod.TracesSamplerValues.ParentBasedAlwaysOff & String = js.native
     
-    /* "parentbased_always_on" */ val ParentBasedAlwaysOn: typings.opentelemetryCore.samplingMod.TracesSamplerValues.ParentBasedAlwaysOn & String = js.native
+    /* "parentbased_always_on" */ val ParentBasedAlwaysOn: typings.opentelemetryCore.buildSrcUtilsSamplingMod.TracesSamplerValues.ParentBasedAlwaysOn & String = js.native
     
-    /* "parentbased_traceidratio" */ val ParentBasedTraceIdRatio: typings.opentelemetryCore.samplingMod.TracesSamplerValues.ParentBasedTraceIdRatio & String = js.native
+    /* "parentbased_traceidratio" */ val ParentBasedTraceIdRatio: typings.opentelemetryCore.buildSrcUtilsSamplingMod.TracesSamplerValues.ParentBasedTraceIdRatio & String = js.native
     
-    /* "traceidratio" */ val TraceIdRatio: typings.opentelemetryCore.samplingMod.TracesSamplerValues.TraceIdRatio & String = js.native
+    /* "traceidratio" */ val TraceIdRatio: typings.opentelemetryCore.buildSrcUtilsSamplingMod.TracesSamplerValues.TraceIdRatio & String = js.native
   }
   
   @JSImport("@opentelemetry/core", "VERSION")
@@ -166,12 +166,12 @@ object mod {
   @JSImport("@opentelemetry/core", "W3CBaggagePropagator")
   @js.native
   open class W3CBaggagePropagator ()
-    extends typings.opentelemetryCore.w3CBaggagePropagatorMod.W3CBaggagePropagator
+    extends typings.opentelemetryCore.buildSrcBaggagePropagationW3CBaggagePropagatorMod.W3CBaggagePropagator
   
   @JSImport("@opentelemetry/core", "W3CTraceContextPropagator")
   @js.native
   open class W3CTraceContextPropagator ()
-    extends typings.opentelemetryCore.w3CTraceContextPropagatorMod.W3CTraceContextPropagator
+    extends typings.opentelemetryCore.buildSrcTraceW3CTraceContextPropagatorMod.W3CTraceContextPropagator
   
   object baggageUtils {
     

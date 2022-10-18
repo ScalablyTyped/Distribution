@@ -29,6 +29,8 @@ object DomEvent {
   inline def getMousePosition(ev: MouseEvent): typings.leaflet.mod.Point_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getMousePosition")(ev.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Point_]
   inline def getMousePosition(ev: MouseEvent, container: HTMLElement): typings.leaflet.mod.Point_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getMousePosition")(ev.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Point_]
   
+  inline def getPropagationPath(ev: Event): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropagationPath")(ev.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+  
   inline def getWheelDelta(ev: Event): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWheelDelta")(ev.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   // tslint:disable:unified-signatures

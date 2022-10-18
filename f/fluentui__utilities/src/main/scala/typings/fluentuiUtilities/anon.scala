@@ -1,7 +1,7 @@
 package typings.fluentuiUtilities
 
-import typings.fluentuiMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.fluentuiUtilities.customizationsMod.ICustomizations
+import typings.fluentuiMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.fluentuiUtilities.libCustomizationsCustomizationsMod.ICustomizations
 import typings.react.mod.ComponentType
 import typings.react.mod.ElementType
 import typings.react.mod.ReactElement

@@ -1,5 +1,7 @@
 package typings.rxjsCompat
 
+import typings.rxjs.distTypesInternalTypesMod.SubscribableOrPromise
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +13,7 @@ object operatorBufferToggleMod {
   val ^ : js.Any = js.native
   
   inline def bufferToggle[T, O](
-    openings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<O> */ Any,
-    closingSelector: js.Function1[
-      /* value */ O, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ Any
-    ]
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferToggle")(openings.asInstanceOf[js.Any], closingSelector.asInstanceOf[js.Any])).asInstanceOf[Any]
+    openings: SubscribableOrPromise[O],
+    closingSelector: js.Function1[/* value */ O, SubscribableOrPromise[Any]]
+  ): Observable_[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferToggle")(openings.asInstanceOf[js.Any], closingSelector.asInstanceOf[js.Any])).asInstanceOf[Observable_[js.Array[T]]]
 }

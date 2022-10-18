@@ -281,6 +281,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object momentTimezoneAugmentingMod {
     
     trait Moment extends StObject {

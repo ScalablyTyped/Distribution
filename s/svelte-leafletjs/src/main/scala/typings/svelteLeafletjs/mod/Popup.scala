@@ -1,14 +1,19 @@
 package typings.svelteLeafletjs.mod
 
 import typings.leaflet.mod.Popup_
+import typings.svelte.mod.SvelteComponentTyped
+import typings.svelte.typesRuntimeInternalDevMod.ComponentConstructorOptions
+import typings.svelteLeafletjs.anon.GetPopup
+import typings.svelteLeafletjs.anon.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SvelteComponentTyped<{  options :L.PopupOptions | undefined,   events :PathEventKeys | undefined,   getPopup :(): L.Popup | undefined}, PathEvents, never> * / any */ @JSImport("svelte-leafletjs", "Popup")
+@JSImport("svelte-leafletjs", "Popup")
 @js.native
-open class Popup () extends StObject {
+open class Popup protected ()
+  extends SvelteComponentTyped[GetPopup, PathEvents, scala.Nothing] {
+  def this(options: ComponentConstructorOptions[Options]) = this()
   
   def getPopup(): Popup_ = js.native
 }

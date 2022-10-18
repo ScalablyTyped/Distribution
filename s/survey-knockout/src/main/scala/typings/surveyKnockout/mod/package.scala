@@ -143,6 +143,8 @@ inline def createDropdownActionModelAdvanced(actionOptions: IAction, listOptions
 
 inline def createPopupModalViewModel(options: IDialogOptions): PopupBaseViewModel = ^.asInstanceOf[js.Dynamic].applyDynamic("createPopupModalViewModel")(options.asInstanceOf[js.Any]).asInstanceOf[PopupBaseViewModel]
 
+inline def createPopupViewModel(model: Any, targetElement: Any): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("createPopupViewModel")(model.asInstanceOf[js.Any], targetElement.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
+
 inline def defaultHeight: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultHeight").asInstanceOf[Double]
 inline def defaultHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultHeight")(x.asInstanceOf[js.Any])
 

@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsNode.mod
 
-import typings.tensorflowTfjsCore.backendMod.DataMover
+import typings.tensorflowTfjsCore.distBackendsBackendMod.DataMover
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class DataStorage[T] protected ()
   extends typings.tensorflowTfjs.mod.DataStorage[T] {
-  def this(backend: typings.tensorflowTfjsCore.backendMod.KernelBackend, dataMover: DataMover) = this()
+  def this(backend: typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend, dataMover: DataMover) = this()
 }

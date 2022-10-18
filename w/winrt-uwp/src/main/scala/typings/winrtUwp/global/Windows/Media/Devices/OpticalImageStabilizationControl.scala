@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** When supported, allows an app to enable optical image stabilization on the capture device. */
-@JSGlobal("Windows.Media.Devices.OpticalImageStabilizationControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.OpticalImageStabilizationControl")
 @js.native
-abstract class OpticalImageStabilizationControl ()
+open class OpticalImageStabilizationControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.OpticalImageStabilizationControl {
   

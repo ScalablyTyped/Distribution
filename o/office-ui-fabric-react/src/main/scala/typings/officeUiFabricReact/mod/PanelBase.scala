@@ -3,7 +3,7 @@ package typings.officeUiFabricReact.mod
 import typings.officeUiFabricReact.anon.PartialIPanelState
 import typings.officeUiFabricReact.anon.ReadonlyIPanelProps
 import typings.officeUiFabricReact.anon.ReadonlyIPanelState
-import typings.officeUiFabricReact.panelTypesMod.IPanelProps
+import typings.officeUiFabricReact.libComponentsPanelPanelDottypesMod.IPanelProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

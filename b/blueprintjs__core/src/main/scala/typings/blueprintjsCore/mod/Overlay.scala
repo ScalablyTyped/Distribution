@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.HasEverOpened
-import typings.blueprintjsCore.overlayMod.OverlayProps
+import typings.blueprintjsCore.libEsmComponentsOverlayOverlayMod.OverlayProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Overlay")
 @js.native
 open class Overlay protected ()
-  extends typings.blueprintjsCore.componentsMod.Overlay {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Overlay {
   def this(props: OverlayProps) = this()
   def this(props: OverlayProps, context: Any) = this()
 }

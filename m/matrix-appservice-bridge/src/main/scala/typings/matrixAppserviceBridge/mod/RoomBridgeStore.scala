@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "RoomBridgeStore")
 @js.native
 open class RoomBridgeStore protected ()
-  extends typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomBridgeStore {
+  extends typings.matrixAppserviceBridge.libComponentsRoomBridgeStoreMod.RoomBridgeStore {
   /**
     * Construct a store suitable for room bridging information. Data is stored
     * as {@link RoomBridgeStoreEntry}s which have the following

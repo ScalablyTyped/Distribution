@@ -1,7 +1,7 @@
 package typings.eggMultipart
 
-import typings.eggMultipart.mod.Context
-import typings.eggMultipart.mod.MatchItem
+import typings.eggMultipart.eggMod.Context
+import typings.eggMultipart.eggMod.MatchItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

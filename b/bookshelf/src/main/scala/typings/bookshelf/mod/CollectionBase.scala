@@ -10,10 +10,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bookshelf", "CollectionBase")
+/* note: abstract class */ @JSImport("bookshelf", "CollectionBase")
 @js.native
 // See https://github.com/tgriesser/bookshelf/blob/0.9.4/src/base/collection.js#L21
-abstract class CollectionBase[T /* <: Model[Any] */] () extends Events[T] {
+open class CollectionBase[T /* <: Model[Any] */] () extends Events[T] {
   def this(models: js.Array[T]) = this()
   def this(models: js.Array[T], options: CollectionOptions[T]) = this()
   def this(models: Unit, options: CollectionOptions[T]) = this()

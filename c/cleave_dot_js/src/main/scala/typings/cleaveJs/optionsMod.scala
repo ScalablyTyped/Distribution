@@ -1,6 +1,6 @@
 package typings.cleaveJs
 
-import typings.cleaveJs.creditCardMod.CreditCardTypeChangeHandler
+import typings.cleaveJs.optionsCreditCardMod.CreditCardTypeChangeHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

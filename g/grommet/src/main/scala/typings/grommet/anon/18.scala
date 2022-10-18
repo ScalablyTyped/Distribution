@@ -1,18 +1,13 @@
 package typings.grommet.anon
 
-import typings.grommet.boxMod.BoxExtendedProps
-import typings.grommet.textMod.TextExtendedProps
-import typings.grommet.utilsMod.PropsOf
-import typings.react.mod.FC
+import typings.grommet.utilsMod.BackgroundType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `18` extends StObject {
   
-  var container: js.UndefOr[PropsOf[FC[BoxExtendedProps]]] = js.undefined
-  
-  var text: js.UndefOr[PropsOf[FC[TextExtendedProps]]] = js.undefined
+  var background: js.UndefOr[BackgroundType] = js.undefined
 }
 object `18` {
   
@@ -23,12 +18,8 @@ object `18` {
   
   extension [Self <: `18`](x: Self) {
     
-    inline def setContainer(value: PropsOf[FC[BoxExtendedProps]]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
-    
-    inline def setText(value: PropsOf[FC[TextExtendedProps]]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
-    
-    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
   }
 }

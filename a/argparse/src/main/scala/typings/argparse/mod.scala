@@ -2,7 +2,7 @@ package typings.argparse
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.argparse.anon.Instantiable
-import typings.argparse.anon.InstantiableAction
+import typings.argparse.anon.InstantiableAny
 import typings.argparse.anon.Required
 import typings.argparse.anon.`0`
 import typings.std.Error
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("argparse", "Action")
+  /* note: abstract class */ @JSImport("argparse", "Action")
   @js.native
-  abstract class Action protected () extends StObject {
+  open class Action protected () extends StObject {
     def this(options: ActionConstructorOptions) = this()
     
     def call(parser: ArgumentParser, namespace: Namespace, values: String): Unit = js.native
@@ -231,7 +231,7 @@ object mod {
     
     var default: js.UndefOr[Any] = js.undefined
     
-    var action: js.UndefOr[String | InstantiableAction] = js.undefined
+    var action: js.UndefOr[String | Instantiable] = js.undefined
     
     // tslint:disable-line:ban-types
     var choices: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -264,7 +264,7 @@ object mod {
     
     extension [Self <: ArgumentOptions](x: Self) {
       
-      inline def setAction(value: String | InstantiableAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String | Instantiable): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
@@ -436,7 +436,7 @@ object mod {
     
     var metavar: js.UndefOr[String] = js.undefined
     
-    var parser_class: js.UndefOr[Instantiable] = js.undefined
+    var parser_class: js.UndefOr[InstantiableAny] = js.undefined
     
     var prog: js.UndefOr[String] = js.undefined
     
@@ -473,7 +473,7 @@ object mod {
       
       inline def setMetavarUndefined: Self = StObject.set(x, "metavar", js.undefined)
       
-      inline def setParser_class(value: Instantiable): Self = StObject.set(x, "parser_class", value.asInstanceOf[js.Any])
+      inline def setParser_class(value: InstantiableAny): Self = StObject.set(x, "parser_class", value.asInstanceOf[js.Any])
       
       inline def setParser_classUndefined: Self = StObject.set(x, "parser_class", js.undefined)
       

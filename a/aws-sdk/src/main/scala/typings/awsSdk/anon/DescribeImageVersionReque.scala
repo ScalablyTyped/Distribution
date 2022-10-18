@@ -1,8 +1,8 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.sagemakerMod.ImageName
-import typings.awsSdk.sagemakerMod.ImageVersionNumber
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsSagemakerMod.ImageName
+import typings.awsSdk.clientsSagemakerMod.ImageVersionNumber
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait DescribeImageVersionReque extends StObject {
   /**
     * The name of the image.
     */
-  var ImageName: typings.awsSdk.sagemakerMod.ImageName
+  var ImageName: typings.awsSdk.clientsSagemakerMod.ImageName
   
   /**
     * The version of the image. If not specified, the latest version is described.

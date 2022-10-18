@@ -3,10 +3,10 @@ package typings.simpleStatistics
 import typings.simpleStatistics.anon.B
 import typings.simpleStatistics.anon.Centroids
 import typings.simpleStatistics.anon.M
-import typings.simpleStatistics.bayesianClassifierMod.default
-import typings.simpleStatistics.chiSquaredDistributionTableMod.DistributionTable
-import typings.simpleStatistics.kernelDensityEstimationMod.BandwidthMethods
-import typings.simpleStatistics.kernelDensityEstimationMod.Kernels
+import typings.simpleStatistics.srcBayesianClassifierMod.default
+import typings.simpleStatistics.srcChiSquaredDistributionTableMod.DistributionTable
+import typings.simpleStatistics.srcKernelDensityEstimationMod.BandwidthMethods
+import typings.simpleStatistics.srcKernelDensityEstimationMod.Kernels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object mod {
   @JSImport("simple-statistics", "PerceptronModel")
   @js.native
   open class PerceptronModel ()
-    extends typings.simpleStatistics.perceptronMod.default
+    extends typings.simpleStatistics.srcPerceptronMod.default
   
   inline def addToMean(mean: Double, n: Double, newValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addToMean")(mean.asInstanceOf[js.Any], n.asInstanceOf[js.Any], newValue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -316,7 +316,7 @@ object mod {
   @JSImport("simple-statistics", "perceptron")
   @js.native
   open class perceptron ()
-    extends typings.simpleStatistics.perceptronMod.default
+    extends typings.simpleStatistics.srcPerceptronMod.default
   
   inline def permutationTest(sampleX: js.Array[Double], sampleY: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("permutationTest")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def permutationTest(sampleX: js.Array[Double], sampleY: js.Array[Double], string: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("permutationTest")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Double]

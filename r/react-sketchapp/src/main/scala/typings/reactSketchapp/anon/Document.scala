@@ -1,8 +1,8 @@
 package typings.reactSketchapp.anon
 
-import typings.reactSketchapp.moduleTypesMod.SketchDocument
-import typings.reactSketchapp.moduleTypesMod.SketchDocumentData
-import typings.reactSketchapp.moduleTypesMod.WrappedSketchDocument
+import typings.reactSketchapp.libModuleTypesMod.SketchDocument
+import typings.reactSketchapp.libModuleTypesMod.SketchDocumentData
+import typings.reactSketchapp.libModuleTypesMod.WrappedSketchDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import typings.babylonjs.meshesMeshMod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "MeshExploder")
 @js.native
 open class MeshExploder protected ()
-  extends typings.babylonjs.legacyMod.MeshExploder {
+  extends typings.babylonjs.legacyLegacyMod.MeshExploder {
   /**
     * Explodes meshes from a center mesh.
     * @param meshes The meshes to explode.
     * @param centerMesh The mesh to be center of explosion.
     */
-  def this(meshes: js.Array[typings.babylonjs.meshMod.Mesh]) = this()
-  def this(meshes: js.Array[typings.babylonjs.meshMod.Mesh], centerMesh: typings.babylonjs.meshMod.Mesh) = this()
+  def this(meshes: js.Array[Mesh]) = this()
+  def this(meshes: js.Array[Mesh], centerMesh: Mesh) = this()
 }

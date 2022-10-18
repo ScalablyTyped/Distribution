@@ -37,7 +37,6 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactMdForm.inputToggleMod.Props
 import typings.reactMdForm.reactMdFormStrings.`additions removals`
 import typings.reactMdForm.reactMdFormStrings.`additions text`
 import typings.reactMdForm.reactMdFormStrings.`inline`
@@ -97,8 +96,9 @@ import typings.reactMdForm.reactMdFormStrings.url
 import typings.reactMdForm.reactMdFormStrings.user
 import typings.reactMdForm.reactMdFormStrings.vertical
 import typings.reactMdForm.reactMdFormStrings.yes
-import typings.reactMdTransition.typesMod.CSSTransitionClassNames
-import typings.reactMdTransition.typesMod.TransitionTimeout
+import typings.reactMdForm.typesToggleInputToggleMod.Props
+import typings.reactMdTransition.typesTypesMod.CSSTransitionClassNames
+import typings.reactMdTransition.typesTypesMod.TransitionTimeout
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLInputElement

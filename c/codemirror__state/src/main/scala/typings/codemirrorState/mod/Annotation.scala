@@ -13,31 +13,34 @@ stamp](https://codemirror.net/6/docs/ref/#state.Transaction^time) or information
 _alongside_ the other changes made by the transaction, [state
 effects](https://codemirror.net/6/docs/ref/#state.StateEffect) are more appropriate.
 */
-@JSImport("@codemirror/state", "Annotation")
-@js.native
-open class Annotation[T] () extends StObject {
+trait Annotation[T] extends StObject {
   
-  /* private */ var _isAnnotation: Any = js.native
+  /* private */ var _isAnnotation: Any
   
   /**
     The annotation type.
     */
-  val `type`: AnnotationType[T] = js.native
+  val `type`: AnnotationType[T]
   
   /**
     The value of this annotation.
     */
-  val value: T = js.native
+  val value: T
 }
 object Annotation {
   
-  @JSImport("@codemirror/state", "Annotation")
-  @js.native
-  val ^ : js.Any = js.native
+  inline def apply[T](_isAnnotation: Any, `type`: AnnotationType[T], value: T): Annotation[T] = {
+    val __obj = js.Dynamic.literal(_isAnnotation = _isAnnotation.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Annotation[T]]
+  }
   
-  /**
-    Define a new type of annotation.
-    */
-  /* static member */
-  inline def define[T](): AnnotationType[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")().asInstanceOf[AnnotationType[T]]
+  extension [Self <: Annotation[?], T](x: Self & Annotation[T]) {
+    
+    inline def setType(value: AnnotationType[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def set_isAnnotation(value: Any): Self = StObject.set(x, "_isAnnotation", value.asInstanceOf[js.Any])
+  }
 }

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type DecimalLocale = FloatLocale
 
-type IsEmailOptions = typings.validator.isEmailMod.IsEmailOptions
+type IsEmailOptions = typings.validator.libIsEmailMod.IsEmailOptions
 
-type IsFQDNOptions = typings.validator.isFQDNMod.IsFQDNOptions
+type IsFQDNOptions = typings.validator.libIsFQDNMod.IsFQDNOptions
 
-type IsURLOptions = typings.validator.isURLMod.IsURLOptions
+type IsURLOptions = typings.validator.libIsURLMod.IsURLOptions

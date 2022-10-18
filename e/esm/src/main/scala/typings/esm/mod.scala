@@ -5,17 +5,16 @@ import typings.esm.anon.PartialOptions
 import typings.esm.esmStrings.all
 import typings.esm.esmStrings.auto
 import typings.esm.esmStrings.strict
+import typings.node.NodeModule
+import typings.node.NodeRequire
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(mod: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof module */ Any): Any = ^.asInstanceOf[js.Dynamic].apply(mod.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def apply(
-    mod: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof module */ Any,
-    options: PartialOptions
-  ): Any = (^.asInstanceOf[js.Dynamic].apply(mod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(mod: NodeModule): NodeRequire = ^.asInstanceOf[js.Dynamic].apply(mod.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
+  inline def apply(mod: NodeModule, options: PartialOptions): NodeRequire = (^.asInstanceOf[js.Dynamic].apply(mod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NodeRequire]
   
   @JSImport("esm", JSImport.Namespace)
   @js.native

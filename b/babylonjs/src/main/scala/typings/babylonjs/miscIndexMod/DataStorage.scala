@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "DataStorage")
 @js.native
 open class DataStorage ()
-  extends typings.babylonjs.dataStorageMod.DataStorage
+  extends typings.babylonjs.miscDataStorageMod.DataStorage
 /* static members */
 object DataStorage {
   

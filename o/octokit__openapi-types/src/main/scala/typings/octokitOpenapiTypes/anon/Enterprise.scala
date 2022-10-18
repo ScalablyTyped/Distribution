@@ -7,21 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Enterprise extends StObject {
   
   /** The slug version of the enterprise name. You can also substitute this value with the enterprise id. */
-  var enterprise: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['enterprise'] */ js.Any
+  var enterprise: String
 }
 object Enterprise {
   
-  inline def apply(
-    enterprise: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['enterprise'] */ js.Any
-  ): Enterprise = {
+  inline def apply(enterprise: String): Enterprise = {
     val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enterprise]
   }
   
   extension [Self <: Enterprise](x: Self) {
     
-    inline def setEnterprise(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['enterprise'] */ js.Any
-    ): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
   }
 }

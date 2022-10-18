@@ -2,22 +2,22 @@ package typings.googleAuthLibrary
 
 import org.scalablytyped.runtime.Shortcut
 import typings.googleAuthLibrary.anon.TypeofDefaultTransporter
-import typings.googleAuthLibrary.awsclientMod.AwsClientOptions
-import typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClientOptions
-import typings.googleAuthLibrary.computeclientMod.ComputeOptions
-import typings.googleAuthLibrary.downscopedclientMod.CredentialAccessBoundary
-import typings.googleAuthLibrary.externalclientMod.ExternalAccountClientOptions
-import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
-import typings.googleAuthLibrary.googleauthMod.JSONClient
-import typings.googleAuthLibrary.identitypoolclientMod.IdentityPoolClientOptions
-import typings.googleAuthLibrary.idtokenclientMod.IdTokenOptions
-import typings.googleAuthLibrary.impersonatedMod.ImpersonatedOptions
-import typings.googleAuthLibrary.jwtclientMod.JWTOptions
-import typings.googleAuthLibrary.loginticketMod.TokenPayload
-import typings.googleAuthLibrary.oauth2clientMod.OAuth2ClientOptions
-import typings.googleAuthLibrary.oauth2clientMod.RefreshOptions
-import typings.googleAuthLibrary.pluggableAuthClientMod.PluggableAuthClientOptions
-import typings.googleAuthLibrary.refreshclientMod.UserRefreshClientOptions
+import typings.googleAuthLibrary.buildSrcAuthAwsclientMod.AwsClientOptions
+import typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClientOptions
+import typings.googleAuthLibrary.buildSrcAuthComputeclientMod.ComputeOptions
+import typings.googleAuthLibrary.buildSrcAuthDownscopedclientMod.CredentialAccessBoundary
+import typings.googleAuthLibrary.buildSrcAuthExternalclientMod.ExternalAccountClientOptions
+import typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.JSONClient
+import typings.googleAuthLibrary.buildSrcAuthIdentitypoolclientMod.IdentityPoolClientOptions
+import typings.googleAuthLibrary.buildSrcAuthIdtokenclientMod.IdTokenOptions
+import typings.googleAuthLibrary.buildSrcAuthImpersonatedMod.ImpersonatedOptions
+import typings.googleAuthLibrary.buildSrcAuthJwtclientMod.JWTOptions
+import typings.googleAuthLibrary.buildSrcAuthLoginticketMod.TokenPayload
+import typings.googleAuthLibrary.buildSrcAuthOauth2clientMod.OAuth2ClientOptions
+import typings.googleAuthLibrary.buildSrcAuthOauth2clientMod.RefreshOptions
+import typings.googleAuthLibrary.buildSrcAuthPluggableAuthClientMod.PluggableAuthClientOptions
+import typings.googleAuthLibrary.buildSrcAuthRefreshclientMod.UserRefreshClientOptions
 import typings.node.eventsMod.EventEmitterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,17 +25,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("google-auth-library", "AuthClient")
+  /* note: abstract class */ @JSImport("google-auth-library", "AuthClient")
   @js.native
-  abstract class AuthClient ()
-    extends typings.googleAuthLibrary.authclientMod.AuthClient {
+  open class AuthClient ()
+    extends typings.googleAuthLibrary.buildSrcAuthAuthclientMod.AuthClient {
     def this(options: EventEmitterOptions) = this()
   }
   
   @JSImport("google-auth-library", "AwsClient")
   @js.native
   open class AwsClient protected ()
-    extends typings.googleAuthLibrary.awsclientMod.AwsClient {
+    extends typings.googleAuthLibrary.buildSrcAuthAwsclientMod.AwsClient {
     /**
       * Instantiates an AwsClient instance using the provided JSON
       * object loaded from an external account credentials file.
@@ -50,10 +50,10 @@ object mod {
     def this(options: AwsClientOptions, additionalOptions: RefreshOptions) = this()
   }
   
-  @JSImport("google-auth-library", "BaseExternalAccountClient")
+  /* note: abstract class */ @JSImport("google-auth-library", "BaseExternalAccountClient")
   @js.native
-  abstract class BaseExternalAccountClient protected ()
-    extends typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient {
+  open class BaseExternalAccountClient protected ()
+    extends typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClient {
     /**
       * Instantiate a BaseExternalAccountClient instance using the provided JSON
       * object loaded from an external account credentials file.
@@ -72,11 +72,13 @@ object mod {
   object CodeChallengeMethod extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.googleAuthLibrary.oauth2clientMod.CodeChallengeMethod & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.googleAuthLibrary.buildSrcAuthOauth2clientMod.CodeChallengeMethod & String
+      ] = js.native
     
-    /* "plain" */ val Plain: typings.googleAuthLibrary.oauth2clientMod.CodeChallengeMethod.Plain & String = js.native
+    /* "plain" */ val Plain: typings.googleAuthLibrary.buildSrcAuthOauth2clientMod.CodeChallengeMethod.Plain & String = js.native
     
-    /* "S256" */ val S256: typings.googleAuthLibrary.oauth2clientMod.CodeChallengeMethod.S256 & String = js.native
+    /* "S256" */ val S256: typings.googleAuthLibrary.buildSrcAuthOauth2clientMod.CodeChallengeMethod.S256 & String = js.native
   }
   
   @JSImport("google-auth-library", "Compute")
@@ -88,14 +90,14 @@ object mod {
     * See: https://developers.google.com/compute/docs/authentication
     */
   open class Compute ()
-    extends typings.googleAuthLibrary.computeclientMod.Compute {
+    extends typings.googleAuthLibrary.buildSrcAuthComputeclientMod.Compute {
     def this(options: ComputeOptions) = this()
   }
   
   @JSImport("google-auth-library", "DefaultTransporter")
   @js.native
   open class DefaultTransporter ()
-    extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
+    extends typings.googleAuthLibrary.buildSrcTransportersMod.DefaultTransporter
   /* static members */
   object DefaultTransporter {
     
@@ -110,7 +112,7 @@ object mod {
   @JSImport("google-auth-library", "DownscopedClient")
   @js.native
   open class DownscopedClient protected ()
-    extends typings.googleAuthLibrary.downscopedclientMod.DownscopedClient {
+    extends typings.googleAuthLibrary.buildSrcAuthDownscopedclientMod.DownscopedClient {
     /**
       * Instantiates a downscoped client object using the provided source
       * AuthClient and credential access boundary rules.
@@ -133,22 +135,22 @@ object mod {
       *   x-goog-user-project header.
       */
     def this(
-      authClient: typings.googleAuthLibrary.authclientMod.AuthClient,
+      authClient: typings.googleAuthLibrary.buildSrcAuthAuthclientMod.AuthClient,
       credentialAccessBoundary: CredentialAccessBoundary
     ) = this()
     def this(
-      authClient: typings.googleAuthLibrary.authclientMod.AuthClient,
+      authClient: typings.googleAuthLibrary.buildSrcAuthAuthclientMod.AuthClient,
       credentialAccessBoundary: CredentialAccessBoundary,
       additionalOptions: RefreshOptions
     ) = this()
     def this(
-      authClient: typings.googleAuthLibrary.authclientMod.AuthClient,
+      authClient: typings.googleAuthLibrary.buildSrcAuthAuthclientMod.AuthClient,
       credentialAccessBoundary: CredentialAccessBoundary,
       additionalOptions: Unit,
       quotaProjectId: String
     ) = this()
     def this(
-      authClient: typings.googleAuthLibrary.authclientMod.AuthClient,
+      authClient: typings.googleAuthLibrary.buildSrcAuthAuthclientMod.AuthClient,
       credentialAccessBoundary: CredentialAccessBoundary,
       additionalOptions: RefreshOptions,
       quotaProjectId: String
@@ -158,7 +160,7 @@ object mod {
   @JSImport("google-auth-library", "ExternalAccountClient")
   @js.native
   open class ExternalAccountClient ()
-    extends typings.googleAuthLibrary.externalclientMod.ExternalAccountClient
+    extends typings.googleAuthLibrary.buildSrcAuthExternalclientMod.ExternalAccountClient
   /* static members */
   object ExternalAccountClient {
     
@@ -178,8 +180,8 @@ object mod {
       * @return A BaseExternalAccountClient instance or null if the options
       *   provided do not correspond to an external account credential.
       */
-    inline def fromJSON(options: ExternalAccountClientOptions): typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient | Null]
-    inline def fromJSON(options: ExternalAccountClientOptions, additionalOptions: RefreshOptions): typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(options.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any])).asInstanceOf[typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient | Null]
+    inline def fromJSON(options: ExternalAccountClientOptions): typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClient | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClient | Null]
+    inline def fromJSON(options: ExternalAccountClientOptions, additionalOptions: RefreshOptions): typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClient | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(options.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any])).asInstanceOf[typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClient | Null]
   }
   
   @JSImport("google-auth-library", "GCPEnv")
@@ -187,25 +189,25 @@ object mod {
   object GCPEnv extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.googleAuthLibrary.envDetectMod.GCPEnv & String] = js.native
+    def apply(value: String): js.UndefOr[typings.googleAuthLibrary.buildSrcAuthEnvDetectMod.GCPEnv & String] = js.native
     
-    /* "APP_ENGINE" */ val APP_ENGINE: typings.googleAuthLibrary.envDetectMod.GCPEnv.APP_ENGINE & String = js.native
+    /* "APP_ENGINE" */ val APP_ENGINE: typings.googleAuthLibrary.buildSrcAuthEnvDetectMod.GCPEnv.APP_ENGINE & String = js.native
     
-    /* "CLOUD_FUNCTIONS" */ val CLOUD_FUNCTIONS: typings.googleAuthLibrary.envDetectMod.GCPEnv.CLOUD_FUNCTIONS & String = js.native
+    /* "CLOUD_FUNCTIONS" */ val CLOUD_FUNCTIONS: typings.googleAuthLibrary.buildSrcAuthEnvDetectMod.GCPEnv.CLOUD_FUNCTIONS & String = js.native
     
-    /* "CLOUD_RUN" */ val CLOUD_RUN: typings.googleAuthLibrary.envDetectMod.GCPEnv.CLOUD_RUN & String = js.native
+    /* "CLOUD_RUN" */ val CLOUD_RUN: typings.googleAuthLibrary.buildSrcAuthEnvDetectMod.GCPEnv.CLOUD_RUN & String = js.native
     
-    /* "COMPUTE_ENGINE" */ val COMPUTE_ENGINE: typings.googleAuthLibrary.envDetectMod.GCPEnv.COMPUTE_ENGINE & String = js.native
+    /* "COMPUTE_ENGINE" */ val COMPUTE_ENGINE: typings.googleAuthLibrary.buildSrcAuthEnvDetectMod.GCPEnv.COMPUTE_ENGINE & String = js.native
     
-    /* "KUBERNETES_ENGINE" */ val KUBERNETES_ENGINE: typings.googleAuthLibrary.envDetectMod.GCPEnv.KUBERNETES_ENGINE & String = js.native
+    /* "KUBERNETES_ENGINE" */ val KUBERNETES_ENGINE: typings.googleAuthLibrary.buildSrcAuthEnvDetectMod.GCPEnv.KUBERNETES_ENGINE & String = js.native
     
-    /* "NONE" */ val NONE: typings.googleAuthLibrary.envDetectMod.GCPEnv.NONE & String = js.native
+    /* "NONE" */ val NONE: typings.googleAuthLibrary.buildSrcAuthEnvDetectMod.GCPEnv.NONE & String = js.native
   }
   
   @JSImport("google-auth-library", "GoogleAuth")
   @js.native
-  open class GoogleAuth[T /* <: typings.googleAuthLibrary.authclientMod.AuthClient */] ()
-    extends typings.googleAuthLibrary.googleauthMod.GoogleAuth[T] {
+  open class GoogleAuth[T /* <: typings.googleAuthLibrary.buildSrcAuthAuthclientMod.AuthClient */] ()
+    extends typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.GoogleAuth[T] {
     def this(opts: GoogleAuthOptions[T]) = this()
   }
   /* static members */
@@ -227,7 +229,7 @@ object mod {
   @JSImport("google-auth-library", "IAMAuth")
   @js.native
   open class IAMAuth protected ()
-    extends typings.googleAuthLibrary.iamMod.IAMAuth {
+    extends typings.googleAuthLibrary.buildSrcAuthIamMod.IAMAuth {
     /**
       * IAM credentials.
       *
@@ -241,7 +243,7 @@ object mod {
   @JSImport("google-auth-library", "IdTokenClient")
   @js.native
   open class IdTokenClient protected ()
-    extends typings.googleAuthLibrary.idtokenclientMod.IdTokenClient {
+    extends typings.googleAuthLibrary.buildSrcAuthIdtokenclientMod.IdTokenClient {
     /**
       * Google ID Token client
       *
@@ -254,7 +256,7 @@ object mod {
   @JSImport("google-auth-library", "IdentityPoolClient")
   @js.native
   open class IdentityPoolClient protected ()
-    extends typings.googleAuthLibrary.identitypoolclientMod.IdentityPoolClient {
+    extends typings.googleAuthLibrary.buildSrcAuthIdentitypoolclientMod.IdentityPoolClient {
     /**
       * Instantiate an IdentityPoolClient instance using the provided JSON
       * object loaded from an external account credentials file.
@@ -306,14 +308,14 @@ object mod {
     * @param {string} [options.endpoint] api endpoint override.
     */
   open class Impersonated ()
-    extends typings.googleAuthLibrary.impersonatedMod.Impersonated {
+    extends typings.googleAuthLibrary.buildSrcAuthImpersonatedMod.Impersonated {
     def this(options: ImpersonatedOptions) = this()
   }
   
   @JSImport("google-auth-library", "JWT")
   @js.native
   open class JWT protected ()
-    extends typings.googleAuthLibrary.jwtclientMod.JWT {
+    extends typings.googleAuthLibrary.buildSrcAuthJwtclientMod.JWT {
     /**
       * JWT service account credentials.
       *
@@ -340,7 +342,7 @@ object mod {
   @JSImport("google-auth-library", "JWTAccess")
   @js.native
   open class JWTAccess protected ()
-    extends typings.googleAuthLibrary.jwtaccessMod.JWTAccess {
+    extends typings.googleAuthLibrary.buildSrcAuthJwtaccessMod.JWTAccess {
     /**
       * JWTAccess service account credentials.
       *
@@ -387,7 +389,7 @@ object mod {
     * @constructor
     */
   open class LoginTicket ()
-    extends typings.googleAuthLibrary.loginticketMod.LoginTicket {
+    extends typings.googleAuthLibrary.buildSrcAuthLoginticketMod.LoginTicket {
     def this(env: String) = this()
     def this(env: String, pay: TokenPayload) = this()
     def this(env: Unit, pay: TokenPayload) = this()
@@ -406,7 +408,7 @@ object mod {
     * @constructor
     */
   open class OAuth2Client ()
-    extends typings.googleAuthLibrary.oauth2clientMod.OAuth2Client {
+    extends typings.googleAuthLibrary.buildSrcAuthOauth2clientMod.OAuth2Client {
     def this(clientId: String) = this()
     def this(options: OAuth2ClientOptions) = this()
     def this(clientId: String, clientSecret: String) = this()
@@ -500,7 +502,7 @@ object mod {
   @JSImport("google-auth-library", "PluggableAuthClient")
   @js.native
   open class PluggableAuthClient protected ()
-    extends typings.googleAuthLibrary.pluggableAuthClientMod.PluggableAuthClient {
+    extends typings.googleAuthLibrary.buildSrcAuthPluggableAuthClientMod.PluggableAuthClient {
     /**
       * Instantiates a PluggableAuthClient instance using the provided JSON
       * object loaded from an external account credentials file.
@@ -525,7 +527,7 @@ object mod {
     * @param refreshToken The authentication refresh token.
     */
   open class UserRefreshClient ()
-    extends typings.googleAuthLibrary.refreshclientMod.UserRefreshClient {
+    extends typings.googleAuthLibrary.buildSrcAuthRefreshclientMod.UserRefreshClient {
     def this(clientId: String) = this()
     def this(options: UserRefreshClientOptions) = this()
     def this(clientId: String, clientSecret: String) = this()
@@ -540,7 +542,7 @@ object mod {
     
     @JSImport("google-auth-library", "auth")
     @js.native
-    val ^ : typings.googleAuthLibrary.googleauthMod.GoogleAuth[JSONClient] = js.native
+    val ^ : typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.GoogleAuth[JSONClient] = js.native
     
     /**
       * Export DefaultTransporter as a static property of the class.
@@ -549,7 +551,7 @@ object mod {
     @JSImport("google-auth-library", "auth.DefaultTransporter")
     @js.native
     open class DefaultTransporterCls ()
-      extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
+      extends typings.googleAuthLibrary.buildSrcTransportersMod.DefaultTransporter
     /* static members */
     object DefaultTransporterCls {
       
@@ -560,9 +562,9 @@ object mod {
       inline def constructor(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[Any]
     }
     
-    type _To = typings.googleAuthLibrary.googleauthMod.GoogleAuth[JSONClient]
+    type _To = typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.GoogleAuth[JSONClient]
     
     /* This means you don't have to write `^`, but can instead just say `auth.foo` */
-    override def _to: typings.googleAuthLibrary.googleauthMod.GoogleAuth[JSONClient] = ^
+    override def _to: typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.GoogleAuth[JSONClient] = ^
   }
 }

@@ -27,9 +27,9 @@ object WiFiDirect {
   object Services {
     
     /** Represents a Wi-Fi Direct service. This class is used by code on a device that seeks to use a Wi-Fi Direct Service, to establish a Wi-Fi Direct Service session with the service provider. */
-    @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectService")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectService")
     @js.native
-    abstract class WiFiDirectService ()
+    open class WiFiDirectService ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectService
     object WiFiDirectService {
@@ -96,9 +96,9 @@ object WiFiDirect {
     }
     
     /** Returned when a WiFiDirectServiceAdvertiser.AutoAcceptSessionConnected event is raised. */
-    @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceAutoAcceptSessionConnectedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceAutoAcceptSessionConnectedEventArgs")
     @js.native
-    abstract class WiFiDirectServiceAutoAcceptSessionConnectedEventArgs ()
+    open class WiFiDirectServiceAutoAcceptSessionConnectedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceAutoAcceptSessionConnectedEventArgs {
       
@@ -165,9 +165,9 @@ object WiFiDirect {
     }
     
     /** Contains provisioning information about a Wi-Fi Direct Service. */
-    @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceProvisioningInfo")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceProvisioningInfo")
     @js.native
-    abstract class WiFiDirectServiceProvisioningInfo ()
+    open class WiFiDirectServiceProvisioningInfo ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceProvisioningInfo {
       
@@ -181,9 +181,9 @@ object WiFiDirect {
     }
     
     /** Returned when a WiFiDirectServiceSession.RemotePortAdded event is raised. Your event handler should use this information to establish new socket connections to the new port. */
-    @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceRemotePortAddedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceRemotePortAddedEventArgs")
     @js.native
-    abstract class WiFiDirectServiceRemotePortAddedEventArgs ()
+    open class WiFiDirectServiceRemotePortAddedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceRemotePortAddedEventArgs {
       
@@ -197,16 +197,16 @@ object WiFiDirect {
     }
     
     /** Represents a Wi-Fi Direct Services (WFDS) session. */
-    @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSession")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSession")
     @js.native
-    abstract class WiFiDirectServiceSession ()
+    open class WiFiDirectServiceSession ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSession
     
     /** Returned when a WiFiDirectService.SessionDeferred event is raised. */
-    @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionDeferredEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionDeferredEventArgs")
     @js.native
-    abstract class WiFiDirectServiceSessionDeferredEventArgs ()
+    open class WiFiDirectServiceSessionDeferredEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionDeferredEventArgs {
       
@@ -239,9 +239,9 @@ object WiFiDirect {
     }
     
     /** Describes a Wi-Fi Direct Service session request. */
-    @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionRequest")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionRequest")
     @js.native
-    abstract class WiFiDirectServiceSessionRequest ()
+    open class WiFiDirectServiceSessionRequest ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionRequest {
       
@@ -263,9 +263,9 @@ object WiFiDirect {
     }
     
     /** Returned when a WiFiDirectServiceAdvertiser.SessionRequested event is raised. */
-    @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionRequestedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionRequestedEventArgs")
     @js.native
-    abstract class WiFiDirectServiceSessionRequestedEventArgs ()
+    open class WiFiDirectServiceSessionRequestedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionRequestedEventArgs {
       
@@ -315,9 +315,9 @@ object WiFiDirect {
   }
   
   /** Represent a Wi-Fi Direct advertisement and allows the app to control the listen state and custom information elements in the advertisement. */
-  @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectAdvertisement")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectAdvertisement")
   @js.native
-  abstract class WiFiDirectAdvertisement ()
+  open class WiFiDirectAdvertisement ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisement {
     
@@ -387,9 +387,9 @@ object WiFiDirect {
   }
   
   /** Provides data for a StatusChanged event on a WiFiDirectAdvertisementPublisher . */
-  @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatusChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatusChangedEventArgs")
   @js.native
-  abstract class WiFiDirectAdvertisementPublisherStatusChangedEventArgs ()
+  open class WiFiDirectAdvertisementPublisherStatusChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatusChangedEventArgs {
     
@@ -463,9 +463,9 @@ object WiFiDirect {
   }
   
   /** A Wi-FI Direct connection request received by a WiFiDirectConnectionListener . */
-  @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectConnectionRequest")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectConnectionRequest")
   @js.native
-  abstract class WiFiDirectConnectionRequest ()
+  open class WiFiDirectConnectionRequest ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectConnectionRequest {
     
@@ -479,9 +479,9 @@ object WiFiDirect {
   }
   
   /** Provides data for a ConnectionRequested event on a WiFiDirectConnectionListener . */
-  @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectConnectionRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectConnectionRequestedEventArgs")
   @js.native
-  abstract class WiFiDirectConnectionRequestedEventArgs ()
+  open class WiFiDirectConnectionRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectConnectionRequestedEventArgs {
     
@@ -507,9 +507,9 @@ object WiFiDirect {
   }
   
   /** Manages connections to associated Wi-Fi Direct devices. */
-  @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectDevice")
   @js.native
-  abstract class WiFiDirectDevice ()
+  open class WiFiDirectDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectDevice
   object WiFiDirectDevice {
@@ -626,9 +626,9 @@ object WiFiDirect {
   }
   
   /** Settings governing "legacy" mode (non-Wi-Fi Direct connections to the access point being advertised.) */
-  @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectLegacySettings")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectLegacySettings")
   @js.native
-  abstract class WiFiDirectLegacySettings ()
+  open class WiFiDirectLegacySettings ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectLegacySettings {
     

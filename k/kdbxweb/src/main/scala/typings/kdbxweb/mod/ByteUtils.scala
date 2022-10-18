@@ -1,6 +1,6 @@
 package typings.kdbxweb.mod
 
-import typings.kdbxweb.byteUtilsMod.ArrayBufferOrArray
+import typings.kdbxweb.distTypesUtilsByteUtilsMod.ArrayBufferOrArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

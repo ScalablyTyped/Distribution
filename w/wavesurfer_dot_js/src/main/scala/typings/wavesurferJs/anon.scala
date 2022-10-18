@@ -6,11 +6,11 @@ import typings.debounce.anon.Clear
 import typings.std.FlatArray
 import typings.std.IterableIterator
 import typings.std.anon.CopyWithin
-import typings.wavesurferJs.pluginMod.PluginParams
-import typings.wavesurferJs.pluginMod.WaveSurferPlugin
-import typings.wavesurferJs.spectrogramMod.RGBA
+import typings.wavesurferJs.srcPluginSpectrogramMod.RGBA
+import typings.wavesurferJs.srcWavesurferMod.default
+import typings.wavesurferJs.typesPluginMod.PluginParams
+import typings.wavesurferJs.typesPluginMod.WaveSurferPlugin
 import typings.wavesurferJs.wavesurferJsInts.`256`
-import typings.wavesurferJs.wavesurferMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

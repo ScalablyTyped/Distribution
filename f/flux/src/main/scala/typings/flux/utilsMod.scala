@@ -1,8 +1,8 @@
 package typings.flux
 
-import typings.flux.fluxContainerMod.Component
-import typings.flux.fluxContainerMod.RealOptions
-import typings.flux.fluxMixinLegacyMod.Options
+import typings.flux.libFluxContainerMod.Component
+import typings.flux.libFluxContainerMod.RealOptions
+import typings.flux.libFluxMixinLegacyMod.Options
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,7 +30,7 @@ object utilsMod {
       getStores: js.Function2[
           /* maybeProps */ js.UndefOr[TProps], 
           /* maybeContext */ js.UndefOr[Any], 
-          js.Array[typings.flux.fluxStoreMod.^[Any]]
+          js.Array[typings.flux.libFluxStoreMod.^[Any]]
         ],
       calculateState: js.Function3[
           /* prevState */ js.UndefOr[TState], 
@@ -44,7 +44,7 @@ object utilsMod {
       getStores: js.Function2[
           /* maybeProps */ js.UndefOr[TProps], 
           /* maybeContext */ js.UndefOr[Any], 
-          js.Array[typings.flux.fluxStoreMod.^[Any]]
+          js.Array[typings.flux.libFluxStoreMod.^[Any]]
         ],
       calculateState: js.Function3[
           /* prevState */ js.UndefOr[TState], 
@@ -77,30 +77,30 @@ object utilsMod {
     * updated to contain the previous foo AND the bar that was just returned. Only
     * returning bar will not delete foo.
     */
-  inline def Mixin(stores: js.Array[typings.flux.fluxStoreMod.^[Any]]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Mixin")(stores.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def Mixin(stores: js.Array[typings.flux.fluxStoreMod.^[Any]], options: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Mixin")(stores.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def Mixin(stores: js.Array[typings.flux.libFluxStoreMod.^[Any]]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Mixin")(stores.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def Mixin(stores: js.Array[typings.flux.libFluxStoreMod.^[Any]], options: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Mixin")(stores.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * This is the basic building block of a Flux application. All of your stores
     * should extend this class.
     */
-  @JSImport("flux/utils", "ReduceStore")
+  /* note: abstract class */ @JSImport("flux/utils", "ReduceStore")
   @js.native
-  abstract class ReduceStore[TState, TPayload] ()
-    extends typings.flux.fluxReduceStoreMod.^[TState, TPayload]
+  open class ReduceStore[TState, TPayload] ()
+    extends typings.flux.libFluxReduceStoreMod.^[TState, TPayload]
   
   /**
     * This class represents the most basic functionality for a FluxStore. Do not
     * extend this store directly; instead extend FluxReduceStore when creating a
     * new store.
     */
-  @JSImport("flux/utils", "Store")
+  /* note: abstract class */ @JSImport("flux/utils", "Store")
   @js.native
-  abstract class Store[TPayload] protected ()
-    extends typings.flux.fluxStoreMod.^[TPayload] {
+  open class Store[TPayload] protected ()
+    extends typings.flux.libFluxStoreMod.^[TPayload] {
     /**
       * Constructs and registers an instance of this store with the given dispatcher.
       */
-    def this(dispatcher: typings.flux.dispatcherMod.^[TPayload]) = this()
+    def this(dispatcher: typings.flux.libDispatcherMod.^[TPayload]) = this()
   }
 }

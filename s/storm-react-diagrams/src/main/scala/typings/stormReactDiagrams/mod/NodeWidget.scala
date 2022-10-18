@@ -1,6 +1,6 @@
 package typings.stormReactDiagrams.mod
 
-import typings.stormReactDiagrams.nodeWidgetMod.NodeProps
+import typings.stormReactDiagrams.distSrcWidgetsNodeWidgetMod.NodeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "NodeWidget")
 @js.native
 open class NodeWidget protected ()
-  extends typings.stormReactDiagrams.nodeWidgetMod.NodeWidget {
+  extends typings.stormReactDiagrams.distSrcWidgetsNodeWidgetMod.NodeWidget {
   def this(props: NodeProps) = this()
 }

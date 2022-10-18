@@ -3,7 +3,6 @@ package typings.reactBigCalendar.mod
 import typings.react.mod.ComponentType
 import typings.reactBigCalendar.anon.Date
 import typings.reactBigCalendar.anon.DateHeader
-import typings.reactBigCalendar.anon.Header
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait Components_[TEvent /* <: js.Object */, TResource /* <: js.Object */] exten
   
   var dateCellWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
-  var day: js.UndefOr[Header[TEvent]] = js.undefined
+  var day: js.UndefOr[typings.reactBigCalendar.anon.Event[TEvent]] = js.undefined
   
   var dayColumnWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
@@ -41,9 +40,9 @@ trait Components_[TEvent /* <: js.Object */, TResource /* <: js.Object */] exten
   
   var toolbar: js.UndefOr[ComponentType[ToolbarProps[TEvent, TResource]]] = js.undefined
   
-  var week: js.UndefOr[Header[TEvent]] = js.undefined
+  var week: js.UndefOr[typings.reactBigCalendar.anon.Event[TEvent]] = js.undefined
   
-  var work_week: js.UndefOr[Header[TEvent]] = js.undefined
+  var work_week: js.UndefOr[typings.reactBigCalendar.anon.Event[TEvent]] = js.undefined
 }
 object Components_ {
   
@@ -62,7 +61,7 @@ object Components_ {
     
     inline def setDateCellWrapperUndefined: Self = StObject.set(x, "dateCellWrapper", js.undefined)
     
-    inline def setDay(value: Header[TEvent]): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: typings.reactBigCalendar.anon.Event[TEvent]): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     inline def setDayColumnWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "dayColumnWrapper", value.asInstanceOf[js.Any])
     
@@ -110,11 +109,11 @@ object Components_ {
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    inline def setWeek(value: Header[TEvent]): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+    inline def setWeek(value: typings.reactBigCalendar.anon.Event[TEvent]): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
     inline def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
     
-    inline def setWork_week(value: Header[TEvent]): Self = StObject.set(x, "work_week", value.asInstanceOf[js.Any])
+    inline def setWork_week(value: typings.reactBigCalendar.anon.Event[TEvent]): Self = StObject.set(x, "work_week", value.asInstanceOf[js.Any])
     
     inline def setWork_weekUndefined: Self = StObject.set(x, "work_week", js.undefined)
   }

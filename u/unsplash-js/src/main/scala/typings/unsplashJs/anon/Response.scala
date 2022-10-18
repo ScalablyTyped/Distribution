@@ -1,7 +1,7 @@
 package typings.unsplashJs.anon
 
-import typings.unsplashJs.errorsMod.ErrorSource
-import typings.unsplashJs.responseMod.ApiResponse
+import typings.unsplashJs.distHelpersErrorsMod.ErrorSource
+import typings.unsplashJs.distHelpersResponseMod.ApiResponse
 import typings.unsplashJs.unsplashJsStrings.error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ trait Response
   extends StObject
      with ApiResponse[Any] {
   
-  var errors: typings.unsplashJs.errorsMod.Errors
+  var errors: typings.unsplashJs.distHelpersErrorsMod.Errors
   
   var originalResponse: typings.std.Response
   
@@ -26,7 +26,7 @@ trait Response
 object Response {
   
   inline def apply(
-    errors: typings.unsplashJs.errorsMod.Errors,
+    errors: typings.unsplashJs.distHelpersErrorsMod.Errors,
     originalResponse: typings.std.Response,
     source: ErrorSource,
     status: Double
@@ -38,7 +38,7 @@ object Response {
   
   extension [Self <: Response](x: Self) {
     
-    inline def setErrors(value: typings.unsplashJs.errorsMod.Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: typings.unsplashJs.distHelpersErrorsMod.Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setOriginalResponse(value: typings.std.Response): Self = StObject.set(x, "originalResponse", value.asInstanceOf[js.Any])
     

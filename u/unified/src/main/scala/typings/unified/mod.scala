@@ -1,7 +1,6 @@
 package typings.unified
 
 import typings.std.Record
-import typings.unified.anon.ResultResult
 import typings.unist.mod.Data
 import typings.unist.mod.Node
 import typings.vfile.libMod.Compatible
@@ -298,8 +297,8 @@ object mod {
       *   This depends on which plugins you use: typically text, but could for
       *   example be a React node.
       */
-    def stringify(node: Specific[Node[Data], CompileTree]): Any | CompileResult = js.native
-    def stringify(node: Specific[Node[Data], CompileTree], file: Compatible): Any | CompileResult = js.native
+    def stringify(node: Specific[Node[Data], CompileTree]): /* import warning: importer.ImportType#apply Failed type conversion: CompileTree extends unist.unist.Node<unist.unist.Data> ? CompileResult : unknown */ js.Any = js.native
+    def stringify(node: Specific[Node[Data], CompileTree], file: Compatible): /* import warning: importer.ImportType#apply Failed type conversion: CompileTree extends unist.unist.Node<unist.unist.Data> ? CompileResult : unknown */ js.Any = js.native
   }
   
   type Parser[Tree /* <: Node[Data] */] = ParserClass[Tree] | ParserFunction[Tree]
@@ -311,10 +310,14 @@ object mod {
   type PluggableList = js.Array[Pluggable[js.Array[Any]]]
   
   type Plugin[PluginParameters /* <: js.Array[Any] */, Input, Output] = js.ThisFunction1[
-    // No clue.
-  /* this */ Processor[Output | Unit, Input | Output | Unit, Input | Unit, Output | Unit], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Input extends unist.unist.Node<unist.unist.Data> ? Output extends unist.unist.Node<unist.unist.Data> ? // This is a transform, so define `Input` as the current tree.
+  unified.unified.Processor<void, Input, void, void> : // Compiler.
+  unified.unified.Processor<void, Input, Input, Output> : Output extends unist.unist.Node<unist.unist.Data> ? // Parser.
+  unified.unified.Processor<Output, Output, void, void> : // No clue.
+  unified.unified.Processor<void, void, void, void> */ /* this */ js.Any, 
     /* settings */ PluginParameters, 
-    Unit | (Transformer[Input, Output])
+    /* import warning: importer.ImportType#apply Failed type conversion: // If both `Input` and `Output` are `Node`, expect an optional `Transformer`.
+  Input extends unist.unist.Node<unist.unist.Data> ? Output extends unist.unist.Node<unist.unist.Data> ? unified.unified.Transformer<Input, Output> | void : void : void */ js.Any
   ]
   
   type PluginTuple[PluginParameters /* <: js.Array[Any] */, Input, Output] = /* import warning: importer.ImportType#apply c repeated non-array type: PluginParameters */ js.Array[PluginParameters]
@@ -453,7 +456,15 @@ object mod {
   ]
   
   // Get the right most non-void thing.
-  type Specific[Left, Right] = Right | Left
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Right extends void ? Left : Right
+    }}}
+    */
+  @js.native
+  trait Specific[Left, Right] extends StObject
   
   type TransformCallback[Tree /* <: Node[Data] */] = js.Function3[
     /* error */ js.UndefOr[js.Error | Null], 
@@ -470,16 +481,35 @@ object mod {
   ]
   
   // Create a processor based on the input/output of a plugin.
-  type UsePlugin[ParseTree /* <: Node[Data] | Unit */, CurrentTree /* <: Node[Data] | Unit */, CompileTree /* <: Node[Data] | Unit */, CompileResult, Input, Output] = // Else, `Input` is not a `Node` and `Output` is not a `Node`.
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Output extends unist.unist.Node<unist.unist.Data> ? Input extends string ? // If `Input` is `string` and `Output` is `Node`, then this plugin
+  // defines a parser, so set `ParseTree`.
+  unified.unified.Processor<Output, unified.unified.Specific<Output, CurrentTree>, unified.unified.Specific<Output, CompileTree>, CompileResult> : Input extends unist.unist.Node<unist.unist.Data> ? // If `Input` is `Node` and `Output` is `Node`, then this plugin defines a
+  // transformer, its output defines the input of the next, so set
+  // `CurrentTree`.
+  unified.unified.Processor<unified.unified.Specific<Input, ParseTree>, Output, unified.unified.Specific<CompileTree, Output>, CompileResult> : // Else, `Input` is something else and `Output` is `Node`:
+  never : Input extends unist.unist.Node<unist.unist.Data> ? // If `Input` is `Node` and `Output` is not a `Node`, then this plugin
+  // defines a compiler, so set `CompileTree` and `CompileResult`
+  unified.unified.Processor<unified.unified.Specific<Input, ParseTree>, unified.unified.Specific<Input, CurrentTree>, Input, Output> : // Else, `Input` is not a `Node` and `Output` is not a `Node`.
   // Maybe it’s untyped, or the plugin throws an error (`never`), so lets
   // just keep it as it was.
-  Processor[
-    Output | ParseTree | (Specific[Input, ParseTree]), 
-    CurrentTree | Output | (Specific[Input | Output, CurrentTree]), 
-    CompileTree | Input | (Specific[CompileTree | Output, CompileTree | Output]), 
-    CompileResult | Output
-  ]
+  unified.unified.Processor<ParseTree, CurrentTree, CompileTree, CompileResult>
+    }}}
+    */
+  @js.native
+  trait UsePlugin[ParseTree /* <: Node[Data] | Unit */, CurrentTree /* <: Node[Data] | Unit */, CompileTree /* <: Node[Data] | Unit */, CompileResult, Input, Output] extends StObject
   
   /* eslint-disable @typescript-eslint/naming-convention */
-  type VFileWithOutput[Result] = VFile | (VFile & ResultResult[Result])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Result extends std.Uint8Array ? vfile.vfile.VFile : Result extends object ? vfile.vfile.VFile & {  result :Result} : vfile.vfile.VFile
+    }}}
+    */
+  @js.native
+  trait VFileWithOutput[Result] extends StObject
 }

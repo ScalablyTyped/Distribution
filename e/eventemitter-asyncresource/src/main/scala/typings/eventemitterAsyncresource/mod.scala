@@ -16,7 +16,15 @@ object mod {
     def this(options: Options) = this()
   }
   
-  type AsyncResourceOptions = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {readonly bind <Func extends (this : ThisArg, args : ...any): any, ThisArg>(fn : Func): Func & node.anon.AsyncResource, readonly bind <Func extends (this : ThisArg, args : ...any): any, ThisArg>(fn : Func, type : string): Func & node.anon.AsyncResource, readonly bind <Func extends (this : ThisArg, args : ...any): any, ThisArg>(fn : Func, type : string, thisArg : ThisArg): Func & node.anon.AsyncResource, readonly bind <Func extends (this : ThisArg, args : ...any): any, ThisArg>(fn : Func, type : undefined, thisArg : ThisArg): Func & node.anon.AsyncResource} & new (type : string): node.async_hooks.AsyncResource extends {new (name : string): node.async_hooks.AsyncResource, new (name : string, options : infer T): node.async_hooks.AsyncResource} ? T : never
+    }}}
+    */
+  @js.native
+  trait AsyncResourceOptions extends StObject
   
   @js.native
   trait EventEmitterAsyncResource extends EventEmitter {
@@ -30,7 +38,15 @@ object mod {
     def triggerAsyncId(): Double = js.native
   }
   
-  type EventEmitterOptions = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {  captureRejections :boolean, readonly on (emitter : node.events.<global>.NodeJS.EventEmitter, eventName : string): std.AsyncIterableIterator<any>, readonly on (emitter : node.events.<global>.NodeJS.EventEmitter, eventName : string, options : node.events.StaticEventEmitterOptions): std.AsyncIterableIterator<any>, readonly setMaxListeners (n : number, eventTargets : ...node.events._DOMEventTarget | node.events.<global>.NodeJS.EventEmitter): void, readonly setMaxListeners (n : undefined, eventTargets : ...node.events._DOMEventTarget | node.events.<global>.NodeJS.EventEmitter): void,  readonly errorMonitor :symbol,  readonly captureRejectionSymbol :symbol,   defaultMaxListeners :number, readonly once (emitter : node.events._NodeEventTarget, eventName : string): std.Promise<std.Array<any>>, readonly once (emitter : node.events._NodeEventTarget, eventName : symbol): std.Promise<std.Array<any>>, readonly once (emitter : node.events._NodeEventTarget, eventName : string, options : node.events.StaticEventEmitterOptions): std.Promise<std.Array<any>>, readonly once (emitter : node.events._NodeEventTarget, eventName : symbol, options : node.events.StaticEventEmitterOptions): std.Promise<std.Array<any>>, readonly once (emitter : node.events._DOMEventTarget, eventName : string): std.Promise<std.Array<any>>, readonly once (emitter : node.events._DOMEventTarget, eventName : string, options : node.events.StaticEventEmitterOptions): std.Promise<std.Array<any>>, readonly listenerCount (emitter : node.events.<global>.NodeJS.EventEmitter, eventName : string): number, readonly listenerCount (emitter : node.events.<global>.NodeJS.EventEmitter, eventName : symbol): number, readonly getEventListeners (emitter : node.events._DOMEventTarget, name : string): std.Array<std.Function>, readonly getEventListeners (emitter : node.events.<global>.NodeJS.EventEmitter, name : string): std.Array<std.Function>, readonly getEventListeners (emitter : node.events._DOMEventTarget, name : symbol): std.Array<std.Function>, readonly getEventListeners (emitter : node.events.<global>.NodeJS.EventEmitter, name : symbol): std.Array<std.Function>} & new (): node.events.EventEmitter extends {new (): node.events.EventEmitter, new (options : infer T): node.events.EventEmitter} ? T : never
+    }}}
+    */
+  @js.native
+  trait EventEmitterOptions extends StObject
   
   @js.native
   trait EventEmitterReferencingAsyncResource extends AsyncResource {

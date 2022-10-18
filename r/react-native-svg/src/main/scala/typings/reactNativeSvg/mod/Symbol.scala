@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native-svg", "Symbol")
 @js.native
 open class Symbol ()
-  extends typings.reactNativeSvg.reactNativeSVGMod.Symbol
+  extends typings.reactNativeSvg.libTypescriptReactNativeSVGMod.Symbol
 /* static members */
 object Symbol {
   

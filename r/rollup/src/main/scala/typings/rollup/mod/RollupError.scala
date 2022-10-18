@@ -6,11 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RollupError
   extends StObject
-     with RollupLogProps {
+     with RollupLog {
   
-  var parserError: js.UndefOr[js.Error] = js.undefined
-  
-  var stack: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   
   var watchFiles: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -23,13 +21,9 @@ object RollupError {
   
   extension [Self <: RollupError](x: Self) {
     
-    inline def setParserError(value: js.Error): Self = StObject.set(x, "parserError", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setParserErrorUndefined: Self = StObject.set(x, "parserError", js.undefined)
-    
-    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
-    
-    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setWatchFiles(value: js.Array[String]): Self = StObject.set(x, "watchFiles", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.orbitUiReactComponents.anon
 
-import typings.orbitUiReactComponents.useAccordionItemsMod.AccordionBuilderHeader
-import typings.orbitUiReactComponents.useAccordionItemsMod.AccordionBuilderPanel
+import typings.orbitUiReactComponents.distAccordionSrcUseAccordionItemsMod.AccordionBuilderHeader
+import typings.orbitUiReactComponents.distAccordionSrcUseAccordionItemsMod.AccordionBuilderPanel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

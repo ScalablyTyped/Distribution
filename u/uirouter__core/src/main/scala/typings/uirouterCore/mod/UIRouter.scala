@@ -1,7 +1,7 @@
 package typings.uirouterCore.mod
 
-import typings.uirouterCore.coreservicesMod.LocationConfig
-import typings.uirouterCore.coreservicesMod.LocationServices
+import typings.uirouterCore.libCommonCoreservicesMod.LocationConfig
+import typings.uirouterCore.libCommonCoreservicesMod.LocationServices
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @internal
   */
 open class UIRouter ()
-  extends typings.uirouterCore.routerMod.UIRouter {
+  extends typings.uirouterCore.libRouterMod.UIRouter {
   def this(locationService: LocationServices) = this()
   def this(locationService: Unit, locationConfig: LocationConfig) = this()
   def this(locationService: LocationServices, locationConfig: LocationConfig) = this()

@@ -1,18 +1,5 @@
 package typings.vueRuntimeDom.mod
 
-import typings.std.AnimationEvent
-import typings.std.ClipboardEvent
-import typings.std.CompositionEvent
-import typings.std.DragEvent
-import typings.std.Event
-import typings.std.FocusEvent
-import typings.std.KeyboardEvent
-import typings.std.MouseEvent
-import typings.std.PointerEvent
-import typings.std.TouchEvent
-import typings.std.TransitionEvent
-import typings.std.UIEvent
-import typings.std.WheelEvent
 import typings.vueRuntimeDom.vueRuntimeDomStrings.`additions text`
 import typings.vueRuntimeDom.vueRuntimeDomStrings.`inline`
 import typings.vueRuntimeDom.vueRuntimeDomStrings.additions
@@ -358,169 +345,333 @@ trait HTMLAttributes extends StObject {
   
   var lang: js.UndefOr[String] = js.undefined
   
-  var onAbort: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onAnimationend: js.UndefOr[(js.Function1[/* payload */ AnimationEvent, Unit]) | AnimationEvent] = js.undefined
-  
-  var onAnimationiteration: js.UndefOr[(js.Function1[/* payload */ AnimationEvent, Unit]) | AnimationEvent] = js.undefined
-  
-  var onAnimationstart: js.UndefOr[(js.Function1[/* payload */ AnimationEvent, Unit]) | AnimationEvent] = js.undefined
-  
-  var onAuxclick: js.UndefOr[(js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent] = js.undefined
-  
-  var onBeforeinput: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onBlur: js.UndefOr[(js.Function1[/* payload */ FocusEvent, Unit]) | FocusEvent] = js.undefined
-  
-  var onCanplay: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onCanplaythrough: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onChange: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onClick: js.UndefOr[(js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent] = js.undefined
-  
-  var onCompositionend: js.UndefOr[(js.Function1[/* payload */ CompositionEvent, Unit]) | CompositionEvent] = js.undefined
-  
-  var onCompositionstart: js.UndefOr[(js.Function1[/* payload */ CompositionEvent, Unit]) | CompositionEvent] = js.undefined
-  
-  var onCompositionupdate: js.UndefOr[(js.Function1[/* payload */ CompositionEvent, Unit]) | CompositionEvent] = js.undefined
-  
-  var onContextmenu: js.UndefOr[(js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent] = js.undefined
-  
-  var onCopy: js.UndefOr[(js.Function1[/* payload */ ClipboardEvent, Unit]) | ClipboardEvent] = js.undefined
-  
-  var onCut: js.UndefOr[(js.Function1[/* payload */ ClipboardEvent, Unit]) | ClipboardEvent] = js.undefined
-  
-  var onDblclick: js.UndefOr[(js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent] = js.undefined
-  
-  var onDrag: js.UndefOr[(js.Function1[/* payload */ DragEvent, Unit]) | DragEvent] = js.undefined
-  
-  var onDragend: js.UndefOr[(js.Function1[/* payload */ DragEvent, Unit]) | DragEvent] = js.undefined
-  
-  var onDragenter: js.UndefOr[(js.Function1[/* payload */ DragEvent, Unit]) | DragEvent] = js.undefined
-  
-  var onDragexit: js.UndefOr[(js.Function1[/* payload */ DragEvent, Unit]) | DragEvent] = js.undefined
-  
-  var onDragleave: js.UndefOr[(js.Function1[/* payload */ DragEvent, Unit]) | DragEvent] = js.undefined
-  
-  var onDragover: js.UndefOr[(js.Function1[/* payload */ DragEvent, Unit]) | DragEvent] = js.undefined
-  
-  var onDragstart: js.UndefOr[(js.Function1[/* payload */ DragEvent, Unit]) | DragEvent] = js.undefined
-  
-  var onDrop: js.UndefOr[(js.Function1[/* payload */ DragEvent, Unit]) | DragEvent] = js.undefined
-  
-  var onDurationchange: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onEmptied: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onEncrypted: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onEnded: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onError: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onFocus: js.UndefOr[(js.Function1[/* payload */ FocusEvent, Unit]) | FocusEvent] = js.undefined
-  
-  var onFocusin: js.UndefOr[(js.Function1[/* payload */ FocusEvent, Unit]) | FocusEvent] = js.undefined
-  
-  var onFocusout: js.UndefOr[(js.Function1[/* payload */ FocusEvent, Unit]) | FocusEvent] = js.undefined
-  
-  var onInput: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onInvalid: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onKeydown: js.UndefOr[(js.Function1[/* payload */ KeyboardEvent, Unit]) | KeyboardEvent] = js.undefined
-  
-  var onKeypress: js.UndefOr[(js.Function1[/* payload */ KeyboardEvent, Unit]) | KeyboardEvent] = js.undefined
-  
-  var onKeyup: js.UndefOr[(js.Function1[/* payload */ KeyboardEvent, Unit]) | KeyboardEvent] = js.undefined
-  
-  var onLoad: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onLoadeddata: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onLoadedmetadata: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onLoadstart: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onMousedown: js.UndefOr[(js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent] = js.undefined
-  
-  var onMouseenter: js.UndefOr[(js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent] = js.undefined
-  
-  var onMouseleave: js.UndefOr[(js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent] = js.undefined
-  
-  var onMousemove: js.UndefOr[(js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent] = js.undefined
-  
-  var onMouseout: js.UndefOr[(js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent] = js.undefined
-  
-  var onMouseover: js.UndefOr[(js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent] = js.undefined
-  
-  var onMouseup: js.UndefOr[(js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent] = js.undefined
-  
-  var onPaste: js.UndefOr[(js.Function1[/* payload */ ClipboardEvent, Unit]) | ClipboardEvent] = js.undefined
-  
-  var onPause: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onPlay: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onPlaying: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onPointercancel: js.UndefOr[(js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent] = js.undefined
-  
-  var onPointerdown: js.UndefOr[(js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent] = js.undefined
-  
-  var onPointerenter: js.UndefOr[(js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent] = js.undefined
-  
-  var onPointerleave: js.UndefOr[(js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent] = js.undefined
-  
-  var onPointermove: js.UndefOr[(js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent] = js.undefined
-  
-  var onPointerout: js.UndefOr[(js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent] = js.undefined
-  
-  var onPointerover: js.UndefOr[(js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent] = js.undefined
-  
-  var onPointerup: js.UndefOr[(js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent] = js.undefined
-  
-  var onProgress: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onRatechange: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onReset: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onScroll: js.UndefOr[(js.Function1[/* payload */ UIEvent, Unit]) | UIEvent] = js.undefined
-  
-  var onSeeked: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onSeeking: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onSelect: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onStalled: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onSubmit: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onSuspend: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onTimeupdate: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onTouchcancel: js.UndefOr[(js.Function1[/* payload */ TouchEvent, Unit]) | TouchEvent] = js.undefined
-  
-  var onTouchend: js.UndefOr[(js.Function1[/* payload */ TouchEvent, Unit]) | TouchEvent] = js.undefined
-  
-  var onTouchmove: js.UndefOr[(js.Function1[/* payload */ TouchEvent, Unit]) | TouchEvent] = js.undefined
-  
-  var onTouchstart: js.UndefOr[(js.Function1[/* payload */ TouchEvent, Unit]) | TouchEvent] = js.undefined
-  
-  var onTransitionend: js.UndefOr[(js.Function1[/* payload */ TransitionEvent, Unit]) | TransitionEvent] = js.undefined
-  
-  var onTransitionstart: js.UndefOr[(js.Function1[/* payload */ TransitionEvent, Unit]) | TransitionEvent] = js.undefined
-  
-  var onVolumechange: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onWaiting: js.UndefOr[(js.Function1[/* payload */ Event, Unit]) | Event] = js.undefined
-  
-  var onWheel: js.UndefOr[(js.Function1[/* payload */ WheelEvent, Unit]) | WheelEvent] = js.undefined
+  var onAbort: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onAnimationend: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.AnimationEvent extends std.Function ? std.AnimationEvent : (payload : std.AnimationEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onAnimationiteration: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.AnimationEvent extends std.Function ? std.AnimationEvent : (payload : std.AnimationEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onAnimationstart: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.AnimationEvent extends std.Function ? std.AnimationEvent : (payload : std.AnimationEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onAuxclick: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onBeforeinput: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onBlur: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.FocusEvent extends std.Function ? std.FocusEvent : (payload : std.FocusEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onCanplay: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onCanplaythrough: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onChange: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onClick: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onCompositionend: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.CompositionEvent extends std.Function ? std.CompositionEvent : (payload : std.CompositionEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onCompositionstart: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.CompositionEvent extends std.Function ? std.CompositionEvent : (payload : std.CompositionEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onCompositionupdate: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.CompositionEvent extends std.Function ? std.CompositionEvent : (payload : std.CompositionEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onContextmenu: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onCopy: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ClipboardEvent extends std.Function ? std.ClipboardEvent : (payload : std.ClipboardEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onCut: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ClipboardEvent extends std.Function ? std.ClipboardEvent : (payload : std.ClipboardEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onDblclick: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onDrag: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onDragend: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onDragenter: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onDragexit: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onDragleave: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onDragover: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onDragstart: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onDrop: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onDurationchange: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onEmptied: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onEncrypted: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onEnded: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onError: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onFocus: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.FocusEvent extends std.Function ? std.FocusEvent : (payload : std.FocusEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onFocusin: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.FocusEvent extends std.Function ? std.FocusEvent : (payload : std.FocusEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onFocusout: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.FocusEvent extends std.Function ? std.FocusEvent : (payload : std.FocusEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onInput: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onInvalid: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onKeydown: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.KeyboardEvent extends std.Function ? std.KeyboardEvent : (payload : std.KeyboardEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onKeypress: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.KeyboardEvent extends std.Function ? std.KeyboardEvent : (payload : std.KeyboardEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onKeyup: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.KeyboardEvent extends std.Function ? std.KeyboardEvent : (payload : std.KeyboardEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onLoad: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onLoadeddata: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onLoadedmetadata: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onLoadstart: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onMousedown: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onMouseenter: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onMouseleave: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onMousemove: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onMouseout: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onMouseover: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onMouseup: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onPaste: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ClipboardEvent extends std.Function ? std.ClipboardEvent : (payload : std.ClipboardEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onPause: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onPlay: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onPlaying: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onPointercancel: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onPointerdown: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onPointerenter: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onPointerleave: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onPointermove: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onPointerout: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onPointerover: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onPointerup: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onProgress: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onRatechange: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onReset: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onScroll: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.UIEvent extends std.Function ? std.UIEvent : (payload : std.UIEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onSeeked: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onSeeking: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onSelect: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onStalled: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onSubmit: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onSuspend: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onTimeupdate: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onTouchcancel: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.TouchEvent extends std.Function ? std.TouchEvent : (payload : std.TouchEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onTouchend: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.TouchEvent extends std.Function ? std.TouchEvent : (payload : std.TouchEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onTouchmove: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.TouchEvent extends std.Function ? std.TouchEvent : (payload : std.TouchEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onTouchstart: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.TouchEvent extends std.Function ? std.TouchEvent : (payload : std.TouchEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onTransitionend: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.TransitionEvent extends std.Function ? std.TransitionEvent : (payload : std.TransitionEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onTransitionstart: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.TransitionEvent extends std.Function ? std.TransitionEvent : (payload : std.TransitionEvent): void */ js.Any
+  ] = js.undefined
+  
+  var onVolumechange: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onWaiting: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+  ] = js.undefined
+  
+  var onWheel: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.WheelEvent extends std.Function ? std.WheelEvent : (payload : std.WheelEvent): void */ js.Any
+  ] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -854,495 +1005,495 @@ object HTMLAttributes {
     
     inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    inline def setOnAbort(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onAbort", value.asInstanceOf[js.Any])
-    
-    inline def setOnAbortFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+    inline def setOnAbort(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onAbort", value.asInstanceOf[js.Any])
     
     inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
     
-    inline def setOnAnimationend(value: (js.Function1[/* payload */ AnimationEvent, Unit]) | AnimationEvent): Self = StObject.set(x, "onAnimationend", value.asInstanceOf[js.Any])
-    
-    inline def setOnAnimationendFunction1(value: /* payload */ AnimationEvent => Unit): Self = StObject.set(x, "onAnimationend", js.Any.fromFunction1(value))
+    inline def setOnAnimationend(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.AnimationEvent extends std.Function ? std.AnimationEvent : (payload : std.AnimationEvent): void */ js.Any
+    ): Self = StObject.set(x, "onAnimationend", value.asInstanceOf[js.Any])
     
     inline def setOnAnimationendUndefined: Self = StObject.set(x, "onAnimationend", js.undefined)
     
-    inline def setOnAnimationiteration(value: (js.Function1[/* payload */ AnimationEvent, Unit]) | AnimationEvent): Self = StObject.set(x, "onAnimationiteration", value.asInstanceOf[js.Any])
-    
-    inline def setOnAnimationiterationFunction1(value: /* payload */ AnimationEvent => Unit): Self = StObject.set(x, "onAnimationiteration", js.Any.fromFunction1(value))
+    inline def setOnAnimationiteration(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.AnimationEvent extends std.Function ? std.AnimationEvent : (payload : std.AnimationEvent): void */ js.Any
+    ): Self = StObject.set(x, "onAnimationiteration", value.asInstanceOf[js.Any])
     
     inline def setOnAnimationiterationUndefined: Self = StObject.set(x, "onAnimationiteration", js.undefined)
     
-    inline def setOnAnimationstart(value: (js.Function1[/* payload */ AnimationEvent, Unit]) | AnimationEvent): Self = StObject.set(x, "onAnimationstart", value.asInstanceOf[js.Any])
-    
-    inline def setOnAnimationstartFunction1(value: /* payload */ AnimationEvent => Unit): Self = StObject.set(x, "onAnimationstart", js.Any.fromFunction1(value))
+    inline def setOnAnimationstart(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.AnimationEvent extends std.Function ? std.AnimationEvent : (payload : std.AnimationEvent): void */ js.Any
+    ): Self = StObject.set(x, "onAnimationstart", value.asInstanceOf[js.Any])
     
     inline def setOnAnimationstartUndefined: Self = StObject.set(x, "onAnimationstart", js.undefined)
     
-    inline def setOnAuxclick(value: (js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent): Self = StObject.set(x, "onAuxclick", value.asInstanceOf[js.Any])
-    
-    inline def setOnAuxclickFunction1(value: /* payload */ MouseEvent => Unit): Self = StObject.set(x, "onAuxclick", js.Any.fromFunction1(value))
+    inline def setOnAuxclick(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+    ): Self = StObject.set(x, "onAuxclick", value.asInstanceOf[js.Any])
     
     inline def setOnAuxclickUndefined: Self = StObject.set(x, "onAuxclick", js.undefined)
     
-    inline def setOnBeforeinput(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onBeforeinput", value.asInstanceOf[js.Any])
-    
-    inline def setOnBeforeinputFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onBeforeinput", js.Any.fromFunction1(value))
+    inline def setOnBeforeinput(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onBeforeinput", value.asInstanceOf[js.Any])
     
     inline def setOnBeforeinputUndefined: Self = StObject.set(x, "onBeforeinput", js.undefined)
     
-    inline def setOnBlur(value: (js.Function1[/* payload */ FocusEvent, Unit]) | FocusEvent): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
-    
-    inline def setOnBlurFunction1(value: /* payload */ FocusEvent => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.FocusEvent extends std.Function ? std.FocusEvent : (payload : std.FocusEvent): void */ js.Any
+    ): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    inline def setOnCanplay(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onCanplay", value.asInstanceOf[js.Any])
-    
-    inline def setOnCanplayFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onCanplay", js.Any.fromFunction1(value))
+    inline def setOnCanplay(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onCanplay", value.asInstanceOf[js.Any])
     
     inline def setOnCanplayUndefined: Self = StObject.set(x, "onCanplay", js.undefined)
     
-    inline def setOnCanplaythrough(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onCanplaythrough", value.asInstanceOf[js.Any])
-    
-    inline def setOnCanplaythroughFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onCanplaythrough", js.Any.fromFunction1(value))
+    inline def setOnCanplaythrough(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onCanplaythrough", value.asInstanceOf[js.Any])
     
     inline def setOnCanplaythroughUndefined: Self = StObject.set(x, "onCanplaythrough", js.undefined)
     
-    inline def setOnChange(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
-    
-    inline def setOnChangeFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnClick(value: (js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
-    
-    inline def setOnClickFunction1(value: /* payload */ MouseEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+    ): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnCompositionend(value: (js.Function1[/* payload */ CompositionEvent, Unit]) | CompositionEvent): Self = StObject.set(x, "onCompositionend", value.asInstanceOf[js.Any])
-    
-    inline def setOnCompositionendFunction1(value: /* payload */ CompositionEvent => Unit): Self = StObject.set(x, "onCompositionend", js.Any.fromFunction1(value))
+    inline def setOnCompositionend(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.CompositionEvent extends std.Function ? std.CompositionEvent : (payload : std.CompositionEvent): void */ js.Any
+    ): Self = StObject.set(x, "onCompositionend", value.asInstanceOf[js.Any])
     
     inline def setOnCompositionendUndefined: Self = StObject.set(x, "onCompositionend", js.undefined)
     
-    inline def setOnCompositionstart(value: (js.Function1[/* payload */ CompositionEvent, Unit]) | CompositionEvent): Self = StObject.set(x, "onCompositionstart", value.asInstanceOf[js.Any])
-    
-    inline def setOnCompositionstartFunction1(value: /* payload */ CompositionEvent => Unit): Self = StObject.set(x, "onCompositionstart", js.Any.fromFunction1(value))
+    inline def setOnCompositionstart(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.CompositionEvent extends std.Function ? std.CompositionEvent : (payload : std.CompositionEvent): void */ js.Any
+    ): Self = StObject.set(x, "onCompositionstart", value.asInstanceOf[js.Any])
     
     inline def setOnCompositionstartUndefined: Self = StObject.set(x, "onCompositionstart", js.undefined)
     
-    inline def setOnCompositionupdate(value: (js.Function1[/* payload */ CompositionEvent, Unit]) | CompositionEvent): Self = StObject.set(x, "onCompositionupdate", value.asInstanceOf[js.Any])
-    
-    inline def setOnCompositionupdateFunction1(value: /* payload */ CompositionEvent => Unit): Self = StObject.set(x, "onCompositionupdate", js.Any.fromFunction1(value))
+    inline def setOnCompositionupdate(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.CompositionEvent extends std.Function ? std.CompositionEvent : (payload : std.CompositionEvent): void */ js.Any
+    ): Self = StObject.set(x, "onCompositionupdate", value.asInstanceOf[js.Any])
     
     inline def setOnCompositionupdateUndefined: Self = StObject.set(x, "onCompositionupdate", js.undefined)
     
-    inline def setOnContextmenu(value: (js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent): Self = StObject.set(x, "onContextmenu", value.asInstanceOf[js.Any])
-    
-    inline def setOnContextmenuFunction1(value: /* payload */ MouseEvent => Unit): Self = StObject.set(x, "onContextmenu", js.Any.fromFunction1(value))
+    inline def setOnContextmenu(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+    ): Self = StObject.set(x, "onContextmenu", value.asInstanceOf[js.Any])
     
     inline def setOnContextmenuUndefined: Self = StObject.set(x, "onContextmenu", js.undefined)
     
-    inline def setOnCopy(value: (js.Function1[/* payload */ ClipboardEvent, Unit]) | ClipboardEvent): Self = StObject.set(x, "onCopy", value.asInstanceOf[js.Any])
-    
-    inline def setOnCopyFunction1(value: /* payload */ ClipboardEvent => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+    inline def setOnCopy(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.ClipboardEvent extends std.Function ? std.ClipboardEvent : (payload : std.ClipboardEvent): void */ js.Any
+    ): Self = StObject.set(x, "onCopy", value.asInstanceOf[js.Any])
     
     inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
     
-    inline def setOnCut(value: (js.Function1[/* payload */ ClipboardEvent, Unit]) | ClipboardEvent): Self = StObject.set(x, "onCut", value.asInstanceOf[js.Any])
-    
-    inline def setOnCutFunction1(value: /* payload */ ClipboardEvent => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
+    inline def setOnCut(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.ClipboardEvent extends std.Function ? std.ClipboardEvent : (payload : std.ClipboardEvent): void */ js.Any
+    ): Self = StObject.set(x, "onCut", value.asInstanceOf[js.Any])
     
     inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
     
-    inline def setOnDblclick(value: (js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent): Self = StObject.set(x, "onDblclick", value.asInstanceOf[js.Any])
-    
-    inline def setOnDblclickFunction1(value: /* payload */ MouseEvent => Unit): Self = StObject.set(x, "onDblclick", js.Any.fromFunction1(value))
+    inline def setOnDblclick(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+    ): Self = StObject.set(x, "onDblclick", value.asInstanceOf[js.Any])
     
     inline def setOnDblclickUndefined: Self = StObject.set(x, "onDblclick", js.undefined)
     
-    inline def setOnDrag(value: (js.Function1[/* payload */ DragEvent, Unit]) | DragEvent): Self = StObject.set(x, "onDrag", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragFunction1(value: /* payload */ DragEvent => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+    inline def setOnDrag(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+    ): Self = StObject.set(x, "onDrag", value.asInstanceOf[js.Any])
     
     inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
-    inline def setOnDragend(value: (js.Function1[/* payload */ DragEvent, Unit]) | DragEvent): Self = StObject.set(x, "onDragend", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragendFunction1(value: /* payload */ DragEvent => Unit): Self = StObject.set(x, "onDragend", js.Any.fromFunction1(value))
+    inline def setOnDragend(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+    ): Self = StObject.set(x, "onDragend", value.asInstanceOf[js.Any])
     
     inline def setOnDragendUndefined: Self = StObject.set(x, "onDragend", js.undefined)
     
-    inline def setOnDragenter(value: (js.Function1[/* payload */ DragEvent, Unit]) | DragEvent): Self = StObject.set(x, "onDragenter", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragenterFunction1(value: /* payload */ DragEvent => Unit): Self = StObject.set(x, "onDragenter", js.Any.fromFunction1(value))
+    inline def setOnDragenter(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+    ): Self = StObject.set(x, "onDragenter", value.asInstanceOf[js.Any])
     
     inline def setOnDragenterUndefined: Self = StObject.set(x, "onDragenter", js.undefined)
     
-    inline def setOnDragexit(value: (js.Function1[/* payload */ DragEvent, Unit]) | DragEvent): Self = StObject.set(x, "onDragexit", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragexitFunction1(value: /* payload */ DragEvent => Unit): Self = StObject.set(x, "onDragexit", js.Any.fromFunction1(value))
+    inline def setOnDragexit(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+    ): Self = StObject.set(x, "onDragexit", value.asInstanceOf[js.Any])
     
     inline def setOnDragexitUndefined: Self = StObject.set(x, "onDragexit", js.undefined)
     
-    inline def setOnDragleave(value: (js.Function1[/* payload */ DragEvent, Unit]) | DragEvent): Self = StObject.set(x, "onDragleave", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragleaveFunction1(value: /* payload */ DragEvent => Unit): Self = StObject.set(x, "onDragleave", js.Any.fromFunction1(value))
+    inline def setOnDragleave(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+    ): Self = StObject.set(x, "onDragleave", value.asInstanceOf[js.Any])
     
     inline def setOnDragleaveUndefined: Self = StObject.set(x, "onDragleave", js.undefined)
     
-    inline def setOnDragover(value: (js.Function1[/* payload */ DragEvent, Unit]) | DragEvent): Self = StObject.set(x, "onDragover", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragoverFunction1(value: /* payload */ DragEvent => Unit): Self = StObject.set(x, "onDragover", js.Any.fromFunction1(value))
+    inline def setOnDragover(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+    ): Self = StObject.set(x, "onDragover", value.asInstanceOf[js.Any])
     
     inline def setOnDragoverUndefined: Self = StObject.set(x, "onDragover", js.undefined)
     
-    inline def setOnDragstart(value: (js.Function1[/* payload */ DragEvent, Unit]) | DragEvent): Self = StObject.set(x, "onDragstart", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragstartFunction1(value: /* payload */ DragEvent => Unit): Self = StObject.set(x, "onDragstart", js.Any.fromFunction1(value))
+    inline def setOnDragstart(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+    ): Self = StObject.set(x, "onDragstart", value.asInstanceOf[js.Any])
     
     inline def setOnDragstartUndefined: Self = StObject.set(x, "onDragstart", js.undefined)
     
-    inline def setOnDrop(value: (js.Function1[/* payload */ DragEvent, Unit]) | DragEvent): Self = StObject.set(x, "onDrop", value.asInstanceOf[js.Any])
-    
-    inline def setOnDropFunction1(value: /* payload */ DragEvent => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
+    inline def setOnDrop(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.DragEvent extends std.Function ? std.DragEvent : (payload : std.DragEvent): void */ js.Any
+    ): Self = StObject.set(x, "onDrop", value.asInstanceOf[js.Any])
     
     inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
     
-    inline def setOnDurationchange(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onDurationchange", value.asInstanceOf[js.Any])
-    
-    inline def setOnDurationchangeFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onDurationchange", js.Any.fromFunction1(value))
+    inline def setOnDurationchange(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onDurationchange", value.asInstanceOf[js.Any])
     
     inline def setOnDurationchangeUndefined: Self = StObject.set(x, "onDurationchange", js.undefined)
     
-    inline def setOnEmptied(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onEmptied", value.asInstanceOf[js.Any])
-    
-    inline def setOnEmptiedFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
+    inline def setOnEmptied(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onEmptied", value.asInstanceOf[js.Any])
     
     inline def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
     
-    inline def setOnEncrypted(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onEncrypted", value.asInstanceOf[js.Any])
-    
-    inline def setOnEncryptedFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
+    inline def setOnEncrypted(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onEncrypted", value.asInstanceOf[js.Any])
     
     inline def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
     
-    inline def setOnEnded(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onEnded", value.asInstanceOf[js.Any])
-    
-    inline def setOnEndedFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+    inline def setOnEnded(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onEnded", value.asInstanceOf[js.Any])
     
     inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
     
-    inline def setOnError(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
-    
-    inline def setOnErrorFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnFocus(value: (js.Function1[/* payload */ FocusEvent, Unit]) | FocusEvent): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
-    
-    inline def setOnFocusFunction1(value: /* payload */ FocusEvent => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.FocusEvent extends std.Function ? std.FocusEvent : (payload : std.FocusEvent): void */ js.Any
+    ): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    inline def setOnFocusin(value: (js.Function1[/* payload */ FocusEvent, Unit]) | FocusEvent): Self = StObject.set(x, "onFocusin", value.asInstanceOf[js.Any])
-    
-    inline def setOnFocusinFunction1(value: /* payload */ FocusEvent => Unit): Self = StObject.set(x, "onFocusin", js.Any.fromFunction1(value))
+    inline def setOnFocusin(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.FocusEvent extends std.Function ? std.FocusEvent : (payload : std.FocusEvent): void */ js.Any
+    ): Self = StObject.set(x, "onFocusin", value.asInstanceOf[js.Any])
     
     inline def setOnFocusinUndefined: Self = StObject.set(x, "onFocusin", js.undefined)
     
-    inline def setOnFocusout(value: (js.Function1[/* payload */ FocusEvent, Unit]) | FocusEvent): Self = StObject.set(x, "onFocusout", value.asInstanceOf[js.Any])
-    
-    inline def setOnFocusoutFunction1(value: /* payload */ FocusEvent => Unit): Self = StObject.set(x, "onFocusout", js.Any.fromFunction1(value))
+    inline def setOnFocusout(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.FocusEvent extends std.Function ? std.FocusEvent : (payload : std.FocusEvent): void */ js.Any
+    ): Self = StObject.set(x, "onFocusout", value.asInstanceOf[js.Any])
     
     inline def setOnFocusoutUndefined: Self = StObject.set(x, "onFocusout", js.undefined)
     
-    inline def setOnInput(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
-    
-    inline def setOnInputFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+    inline def setOnInput(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
     
     inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
     
-    inline def setOnInvalid(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onInvalid", value.asInstanceOf[js.Any])
-    
-    inline def setOnInvalidFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+    inline def setOnInvalid(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onInvalid", value.asInstanceOf[js.Any])
     
     inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
     
-    inline def setOnKeydown(value: (js.Function1[/* payload */ KeyboardEvent, Unit]) | KeyboardEvent): Self = StObject.set(x, "onKeydown", value.asInstanceOf[js.Any])
-    
-    inline def setOnKeydownFunction1(value: /* payload */ KeyboardEvent => Unit): Self = StObject.set(x, "onKeydown", js.Any.fromFunction1(value))
+    inline def setOnKeydown(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.KeyboardEvent extends std.Function ? std.KeyboardEvent : (payload : std.KeyboardEvent): void */ js.Any
+    ): Self = StObject.set(x, "onKeydown", value.asInstanceOf[js.Any])
     
     inline def setOnKeydownUndefined: Self = StObject.set(x, "onKeydown", js.undefined)
     
-    inline def setOnKeypress(value: (js.Function1[/* payload */ KeyboardEvent, Unit]) | KeyboardEvent): Self = StObject.set(x, "onKeypress", value.asInstanceOf[js.Any])
-    
-    inline def setOnKeypressFunction1(value: /* payload */ KeyboardEvent => Unit): Self = StObject.set(x, "onKeypress", js.Any.fromFunction1(value))
+    inline def setOnKeypress(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.KeyboardEvent extends std.Function ? std.KeyboardEvent : (payload : std.KeyboardEvent): void */ js.Any
+    ): Self = StObject.set(x, "onKeypress", value.asInstanceOf[js.Any])
     
     inline def setOnKeypressUndefined: Self = StObject.set(x, "onKeypress", js.undefined)
     
-    inline def setOnKeyup(value: (js.Function1[/* payload */ KeyboardEvent, Unit]) | KeyboardEvent): Self = StObject.set(x, "onKeyup", value.asInstanceOf[js.Any])
-    
-    inline def setOnKeyupFunction1(value: /* payload */ KeyboardEvent => Unit): Self = StObject.set(x, "onKeyup", js.Any.fromFunction1(value))
+    inline def setOnKeyup(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.KeyboardEvent extends std.Function ? std.KeyboardEvent : (payload : std.KeyboardEvent): void */ js.Any
+    ): Self = StObject.set(x, "onKeyup", value.asInstanceOf[js.Any])
     
     inline def setOnKeyupUndefined: Self = StObject.set(x, "onKeyup", js.undefined)
     
-    inline def setOnLoad(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
-    
-    inline def setOnLoadFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+    inline def setOnLoad(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     
     inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
-    inline def setOnLoadeddata(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onLoadeddata", value.asInstanceOf[js.Any])
-    
-    inline def setOnLoadeddataFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onLoadeddata", js.Any.fromFunction1(value))
+    inline def setOnLoadeddata(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onLoadeddata", value.asInstanceOf[js.Any])
     
     inline def setOnLoadeddataUndefined: Self = StObject.set(x, "onLoadeddata", js.undefined)
     
-    inline def setOnLoadedmetadata(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onLoadedmetadata", value.asInstanceOf[js.Any])
-    
-    inline def setOnLoadedmetadataFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onLoadedmetadata", js.Any.fromFunction1(value))
+    inline def setOnLoadedmetadata(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onLoadedmetadata", value.asInstanceOf[js.Any])
     
     inline def setOnLoadedmetadataUndefined: Self = StObject.set(x, "onLoadedmetadata", js.undefined)
     
-    inline def setOnLoadstart(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onLoadstart", value.asInstanceOf[js.Any])
-    
-    inline def setOnLoadstartFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onLoadstart", js.Any.fromFunction1(value))
+    inline def setOnLoadstart(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onLoadstart", value.asInstanceOf[js.Any])
     
     inline def setOnLoadstartUndefined: Self = StObject.set(x, "onLoadstart", js.undefined)
     
-    inline def setOnMousedown(value: (js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent): Self = StObject.set(x, "onMousedown", value.asInstanceOf[js.Any])
-    
-    inline def setOnMousedownFunction1(value: /* payload */ MouseEvent => Unit): Self = StObject.set(x, "onMousedown", js.Any.fromFunction1(value))
+    inline def setOnMousedown(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+    ): Self = StObject.set(x, "onMousedown", value.asInstanceOf[js.Any])
     
     inline def setOnMousedownUndefined: Self = StObject.set(x, "onMousedown", js.undefined)
     
-    inline def setOnMouseenter(value: (js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent): Self = StObject.set(x, "onMouseenter", value.asInstanceOf[js.Any])
-    
-    inline def setOnMouseenterFunction1(value: /* payload */ MouseEvent => Unit): Self = StObject.set(x, "onMouseenter", js.Any.fromFunction1(value))
+    inline def setOnMouseenter(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+    ): Self = StObject.set(x, "onMouseenter", value.asInstanceOf[js.Any])
     
     inline def setOnMouseenterUndefined: Self = StObject.set(x, "onMouseenter", js.undefined)
     
-    inline def setOnMouseleave(value: (js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent): Self = StObject.set(x, "onMouseleave", value.asInstanceOf[js.Any])
-    
-    inline def setOnMouseleaveFunction1(value: /* payload */ MouseEvent => Unit): Self = StObject.set(x, "onMouseleave", js.Any.fromFunction1(value))
+    inline def setOnMouseleave(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+    ): Self = StObject.set(x, "onMouseleave", value.asInstanceOf[js.Any])
     
     inline def setOnMouseleaveUndefined: Self = StObject.set(x, "onMouseleave", js.undefined)
     
-    inline def setOnMousemove(value: (js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent): Self = StObject.set(x, "onMousemove", value.asInstanceOf[js.Any])
-    
-    inline def setOnMousemoveFunction1(value: /* payload */ MouseEvent => Unit): Self = StObject.set(x, "onMousemove", js.Any.fromFunction1(value))
+    inline def setOnMousemove(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+    ): Self = StObject.set(x, "onMousemove", value.asInstanceOf[js.Any])
     
     inline def setOnMousemoveUndefined: Self = StObject.set(x, "onMousemove", js.undefined)
     
-    inline def setOnMouseout(value: (js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent): Self = StObject.set(x, "onMouseout", value.asInstanceOf[js.Any])
-    
-    inline def setOnMouseoutFunction1(value: /* payload */ MouseEvent => Unit): Self = StObject.set(x, "onMouseout", js.Any.fromFunction1(value))
+    inline def setOnMouseout(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+    ): Self = StObject.set(x, "onMouseout", value.asInstanceOf[js.Any])
     
     inline def setOnMouseoutUndefined: Self = StObject.set(x, "onMouseout", js.undefined)
     
-    inline def setOnMouseover(value: (js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent): Self = StObject.set(x, "onMouseover", value.asInstanceOf[js.Any])
-    
-    inline def setOnMouseoverFunction1(value: /* payload */ MouseEvent => Unit): Self = StObject.set(x, "onMouseover", js.Any.fromFunction1(value))
+    inline def setOnMouseover(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+    ): Self = StObject.set(x, "onMouseover", value.asInstanceOf[js.Any])
     
     inline def setOnMouseoverUndefined: Self = StObject.set(x, "onMouseover", js.undefined)
     
-    inline def setOnMouseup(value: (js.Function1[/* payload */ MouseEvent, Unit]) | MouseEvent): Self = StObject.set(x, "onMouseup", value.asInstanceOf[js.Any])
-    
-    inline def setOnMouseupFunction1(value: /* payload */ MouseEvent => Unit): Self = StObject.set(x, "onMouseup", js.Any.fromFunction1(value))
+    inline def setOnMouseup(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.MouseEvent extends std.Function ? std.MouseEvent : (payload : std.MouseEvent): void */ js.Any
+    ): Self = StObject.set(x, "onMouseup", value.asInstanceOf[js.Any])
     
     inline def setOnMouseupUndefined: Self = StObject.set(x, "onMouseup", js.undefined)
     
-    inline def setOnPaste(value: (js.Function1[/* payload */ ClipboardEvent, Unit]) | ClipboardEvent): Self = StObject.set(x, "onPaste", value.asInstanceOf[js.Any])
-    
-    inline def setOnPasteFunction1(value: /* payload */ ClipboardEvent => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+    inline def setOnPaste(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.ClipboardEvent extends std.Function ? std.ClipboardEvent : (payload : std.ClipboardEvent): void */ js.Any
+    ): Self = StObject.set(x, "onPaste", value.asInstanceOf[js.Any])
     
     inline def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
     
-    inline def setOnPause(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onPause", value.asInstanceOf[js.Any])
-    
-    inline def setOnPauseFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+    inline def setOnPause(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onPause", value.asInstanceOf[js.Any])
     
     inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
     
-    inline def setOnPlay(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onPlay", value.asInstanceOf[js.Any])
-    
-    inline def setOnPlayFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+    inline def setOnPlay(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onPlay", value.asInstanceOf[js.Any])
     
     inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
     
-    inline def setOnPlaying(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onPlaying", value.asInstanceOf[js.Any])
-    
-    inline def setOnPlayingFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
+    inline def setOnPlaying(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onPlaying", value.asInstanceOf[js.Any])
     
     inline def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
     
-    inline def setOnPointercancel(value: (js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent): Self = StObject.set(x, "onPointercancel", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointercancelFunction1(value: /* payload */ PointerEvent => Unit): Self = StObject.set(x, "onPointercancel", js.Any.fromFunction1(value))
+    inline def setOnPointercancel(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+    ): Self = StObject.set(x, "onPointercancel", value.asInstanceOf[js.Any])
     
     inline def setOnPointercancelUndefined: Self = StObject.set(x, "onPointercancel", js.undefined)
     
-    inline def setOnPointerdown(value: (js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent): Self = StObject.set(x, "onPointerdown", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerdownFunction1(value: /* payload */ PointerEvent => Unit): Self = StObject.set(x, "onPointerdown", js.Any.fromFunction1(value))
+    inline def setOnPointerdown(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+    ): Self = StObject.set(x, "onPointerdown", value.asInstanceOf[js.Any])
     
     inline def setOnPointerdownUndefined: Self = StObject.set(x, "onPointerdown", js.undefined)
     
-    inline def setOnPointerenter(value: (js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent): Self = StObject.set(x, "onPointerenter", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerenterFunction1(value: /* payload */ PointerEvent => Unit): Self = StObject.set(x, "onPointerenter", js.Any.fromFunction1(value))
+    inline def setOnPointerenter(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+    ): Self = StObject.set(x, "onPointerenter", value.asInstanceOf[js.Any])
     
     inline def setOnPointerenterUndefined: Self = StObject.set(x, "onPointerenter", js.undefined)
     
-    inline def setOnPointerleave(value: (js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent): Self = StObject.set(x, "onPointerleave", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerleaveFunction1(value: /* payload */ PointerEvent => Unit): Self = StObject.set(x, "onPointerleave", js.Any.fromFunction1(value))
+    inline def setOnPointerleave(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+    ): Self = StObject.set(x, "onPointerleave", value.asInstanceOf[js.Any])
     
     inline def setOnPointerleaveUndefined: Self = StObject.set(x, "onPointerleave", js.undefined)
     
-    inline def setOnPointermove(value: (js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent): Self = StObject.set(x, "onPointermove", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointermoveFunction1(value: /* payload */ PointerEvent => Unit): Self = StObject.set(x, "onPointermove", js.Any.fromFunction1(value))
+    inline def setOnPointermove(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+    ): Self = StObject.set(x, "onPointermove", value.asInstanceOf[js.Any])
     
     inline def setOnPointermoveUndefined: Self = StObject.set(x, "onPointermove", js.undefined)
     
-    inline def setOnPointerout(value: (js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent): Self = StObject.set(x, "onPointerout", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointeroutFunction1(value: /* payload */ PointerEvent => Unit): Self = StObject.set(x, "onPointerout", js.Any.fromFunction1(value))
+    inline def setOnPointerout(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+    ): Self = StObject.set(x, "onPointerout", value.asInstanceOf[js.Any])
     
     inline def setOnPointeroutUndefined: Self = StObject.set(x, "onPointerout", js.undefined)
     
-    inline def setOnPointerover(value: (js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent): Self = StObject.set(x, "onPointerover", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointeroverFunction1(value: /* payload */ PointerEvent => Unit): Self = StObject.set(x, "onPointerover", js.Any.fromFunction1(value))
+    inline def setOnPointerover(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+    ): Self = StObject.set(x, "onPointerover", value.asInstanceOf[js.Any])
     
     inline def setOnPointeroverUndefined: Self = StObject.set(x, "onPointerover", js.undefined)
     
-    inline def setOnPointerup(value: (js.Function1[/* payload */ PointerEvent, Unit]) | PointerEvent): Self = StObject.set(x, "onPointerup", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerupFunction1(value: /* payload */ PointerEvent => Unit): Self = StObject.set(x, "onPointerup", js.Any.fromFunction1(value))
+    inline def setOnPointerup(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.PointerEvent extends std.Function ? std.PointerEvent : (payload : std.PointerEvent): void */ js.Any
+    ): Self = StObject.set(x, "onPointerup", value.asInstanceOf[js.Any])
     
     inline def setOnPointerupUndefined: Self = StObject.set(x, "onPointerup", js.undefined)
     
-    inline def setOnProgress(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onProgress", value.asInstanceOf[js.Any])
-    
-    inline def setOnProgressFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+    inline def setOnProgress(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onProgress", value.asInstanceOf[js.Any])
     
     inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
     
-    inline def setOnRatechange(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onRatechange", value.asInstanceOf[js.Any])
-    
-    inline def setOnRatechangeFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onRatechange", js.Any.fromFunction1(value))
+    inline def setOnRatechange(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onRatechange", value.asInstanceOf[js.Any])
     
     inline def setOnRatechangeUndefined: Self = StObject.set(x, "onRatechange", js.undefined)
     
-    inline def setOnReset(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
-    
-    inline def setOnResetFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+    inline def setOnReset(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     
-    inline def setOnScroll(value: (js.Function1[/* payload */ UIEvent, Unit]) | UIEvent): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
-    
-    inline def setOnScrollFunction1(value: /* payload */ UIEvent => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    inline def setOnScroll(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.UIEvent extends std.Function ? std.UIEvent : (payload : std.UIEvent): void */ js.Any
+    ): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    inline def setOnSeeked(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onSeeked", value.asInstanceOf[js.Any])
-    
-    inline def setOnSeekedFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
+    inline def setOnSeeked(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onSeeked", value.asInstanceOf[js.Any])
     
     inline def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
     
-    inline def setOnSeeking(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onSeeking", value.asInstanceOf[js.Any])
-    
-    inline def setOnSeekingFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
+    inline def setOnSeeking(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onSeeking", value.asInstanceOf[js.Any])
     
     inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
     
-    inline def setOnSelect(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
-    
-    inline def setOnSelectFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    inline def setOnSelect(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
     
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
-    inline def setOnStalled(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onStalled", value.asInstanceOf[js.Any])
-    
-    inline def setOnStalledFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
+    inline def setOnStalled(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onStalled", value.asInstanceOf[js.Any])
     
     inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
     
-    inline def setOnSubmit(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
-    
-    inline def setOnSubmitFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+    inline def setOnSubmit(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
     
     inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
     
-    inline def setOnSuspend(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onSuspend", value.asInstanceOf[js.Any])
-    
-    inline def setOnSuspendFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
+    inline def setOnSuspend(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onSuspend", value.asInstanceOf[js.Any])
     
     inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
     
-    inline def setOnTimeupdate(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onTimeupdate", value.asInstanceOf[js.Any])
-    
-    inline def setOnTimeupdateFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onTimeupdate", js.Any.fromFunction1(value))
+    inline def setOnTimeupdate(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onTimeupdate", value.asInstanceOf[js.Any])
     
     inline def setOnTimeupdateUndefined: Self = StObject.set(x, "onTimeupdate", js.undefined)
     
-    inline def setOnTouchcancel(value: (js.Function1[/* payload */ TouchEvent, Unit]) | TouchEvent): Self = StObject.set(x, "onTouchcancel", value.asInstanceOf[js.Any])
-    
-    inline def setOnTouchcancelFunction1(value: /* payload */ TouchEvent => Unit): Self = StObject.set(x, "onTouchcancel", js.Any.fromFunction1(value))
+    inline def setOnTouchcancel(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.TouchEvent extends std.Function ? std.TouchEvent : (payload : std.TouchEvent): void */ js.Any
+    ): Self = StObject.set(x, "onTouchcancel", value.asInstanceOf[js.Any])
     
     inline def setOnTouchcancelUndefined: Self = StObject.set(x, "onTouchcancel", js.undefined)
     
-    inline def setOnTouchend(value: (js.Function1[/* payload */ TouchEvent, Unit]) | TouchEvent): Self = StObject.set(x, "onTouchend", value.asInstanceOf[js.Any])
-    
-    inline def setOnTouchendFunction1(value: /* payload */ TouchEvent => Unit): Self = StObject.set(x, "onTouchend", js.Any.fromFunction1(value))
+    inline def setOnTouchend(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.TouchEvent extends std.Function ? std.TouchEvent : (payload : std.TouchEvent): void */ js.Any
+    ): Self = StObject.set(x, "onTouchend", value.asInstanceOf[js.Any])
     
     inline def setOnTouchendUndefined: Self = StObject.set(x, "onTouchend", js.undefined)
     
-    inline def setOnTouchmove(value: (js.Function1[/* payload */ TouchEvent, Unit]) | TouchEvent): Self = StObject.set(x, "onTouchmove", value.asInstanceOf[js.Any])
-    
-    inline def setOnTouchmoveFunction1(value: /* payload */ TouchEvent => Unit): Self = StObject.set(x, "onTouchmove", js.Any.fromFunction1(value))
+    inline def setOnTouchmove(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.TouchEvent extends std.Function ? std.TouchEvent : (payload : std.TouchEvent): void */ js.Any
+    ): Self = StObject.set(x, "onTouchmove", value.asInstanceOf[js.Any])
     
     inline def setOnTouchmoveUndefined: Self = StObject.set(x, "onTouchmove", js.undefined)
     
-    inline def setOnTouchstart(value: (js.Function1[/* payload */ TouchEvent, Unit]) | TouchEvent): Self = StObject.set(x, "onTouchstart", value.asInstanceOf[js.Any])
-    
-    inline def setOnTouchstartFunction1(value: /* payload */ TouchEvent => Unit): Self = StObject.set(x, "onTouchstart", js.Any.fromFunction1(value))
+    inline def setOnTouchstart(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.TouchEvent extends std.Function ? std.TouchEvent : (payload : std.TouchEvent): void */ js.Any
+    ): Self = StObject.set(x, "onTouchstart", value.asInstanceOf[js.Any])
     
     inline def setOnTouchstartUndefined: Self = StObject.set(x, "onTouchstart", js.undefined)
     
-    inline def setOnTransitionend(value: (js.Function1[/* payload */ TransitionEvent, Unit]) | TransitionEvent): Self = StObject.set(x, "onTransitionend", value.asInstanceOf[js.Any])
-    
-    inline def setOnTransitionendFunction1(value: /* payload */ TransitionEvent => Unit): Self = StObject.set(x, "onTransitionend", js.Any.fromFunction1(value))
+    inline def setOnTransitionend(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.TransitionEvent extends std.Function ? std.TransitionEvent : (payload : std.TransitionEvent): void */ js.Any
+    ): Self = StObject.set(x, "onTransitionend", value.asInstanceOf[js.Any])
     
     inline def setOnTransitionendUndefined: Self = StObject.set(x, "onTransitionend", js.undefined)
     
-    inline def setOnTransitionstart(value: (js.Function1[/* payload */ TransitionEvent, Unit]) | TransitionEvent): Self = StObject.set(x, "onTransitionstart", value.asInstanceOf[js.Any])
-    
-    inline def setOnTransitionstartFunction1(value: /* payload */ TransitionEvent => Unit): Self = StObject.set(x, "onTransitionstart", js.Any.fromFunction1(value))
+    inline def setOnTransitionstart(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.TransitionEvent extends std.Function ? std.TransitionEvent : (payload : std.TransitionEvent): void */ js.Any
+    ): Self = StObject.set(x, "onTransitionstart", value.asInstanceOf[js.Any])
     
     inline def setOnTransitionstartUndefined: Self = StObject.set(x, "onTransitionstart", js.undefined)
     
-    inline def setOnVolumechange(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onVolumechange", value.asInstanceOf[js.Any])
-    
-    inline def setOnVolumechangeFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onVolumechange", js.Any.fromFunction1(value))
+    inline def setOnVolumechange(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onVolumechange", value.asInstanceOf[js.Any])
     
     inline def setOnVolumechangeUndefined: Self = StObject.set(x, "onVolumechange", js.undefined)
     
-    inline def setOnWaiting(value: (js.Function1[/* payload */ Event, Unit]) | Event): Self = StObject.set(x, "onWaiting", value.asInstanceOf[js.Any])
-    
-    inline def setOnWaitingFunction1(value: /* payload */ Event => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
+    inline def setOnWaiting(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Event extends std.Function ? std.Event : (payload : std.Event): void */ js.Any
+    ): Self = StObject.set(x, "onWaiting", value.asInstanceOf[js.Any])
     
     inline def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
     
-    inline def setOnWheel(value: (js.Function1[/* payload */ WheelEvent, Unit]) | WheelEvent): Self = StObject.set(x, "onWheel", value.asInstanceOf[js.Any])
-    
-    inline def setOnWheelFunction1(value: /* payload */ WheelEvent => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+    inline def setOnWheel(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.WheelEvent extends std.Function ? std.WheelEvent : (payload : std.WheelEvent): void */ js.Any
+    ): Self = StObject.set(x, "onWheel", value.asInstanceOf[js.Any])
     
     inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     

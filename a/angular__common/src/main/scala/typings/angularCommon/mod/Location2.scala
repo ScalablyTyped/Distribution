@@ -1,6 +1,7 @@
 package typings.angularCommon.mod
 
 import typings.angularCore.mod.OnDestroy
+import typings.rxjs.distTypesInternalTypesMod.SubscriptionLike
 import typings.std.VoidFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -162,24 +163,24 @@ trait Location2
     *
     * @returns Subscribed events.
     */
-  def subscribe(onNext: js.Function1[/* value */ PopStateEvent2, Unit]): Any = js.native
+  def subscribe(onNext: js.Function1[/* value */ PopStateEvent2, Unit]): SubscriptionLike = js.native
   def subscribe(
     onNext: js.Function1[/* value */ PopStateEvent2, Unit],
     onThrow: js.Function1[/* exception */ Any, Unit]
-  ): Any = js.native
+  ): SubscriptionLike = js.native
   def subscribe(
     onNext: js.Function1[/* value */ PopStateEvent2, Unit],
     onThrow: js.Function1[/* exception */ Any, Unit],
     onReturn: js.Function0[Unit]
-  ): Any = js.native
+  ): SubscriptionLike = js.native
   def subscribe(
     onNext: js.Function1[/* value */ PopStateEvent2, Unit],
     onThrow: Null,
     onReturn: js.Function0[Unit]
-  ): Any = js.native
+  ): SubscriptionLike = js.native
   def subscribe(
     onNext: js.Function1[/* value */ PopStateEvent2, Unit],
     onThrow: Unit,
     onReturn: js.Function0[Unit]
-  ): Any = js.native
+  ): SubscriptionLike = js.native
 }

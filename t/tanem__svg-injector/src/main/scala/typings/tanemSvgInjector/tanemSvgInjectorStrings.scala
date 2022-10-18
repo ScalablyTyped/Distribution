@@ -1,6 +1,6 @@
 package typings.tanemSvgInjector
 
-import typings.tanemSvgInjector.typesMod.EvalScripts
+import typings.tanemSvgInjector.distTypesMod.EvalScripts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

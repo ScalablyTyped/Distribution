@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a infrared frame arrived event. */
-@JSGlobal("Windows.Devices.Perception.PerceptionInfraredFrameArrivedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.PerceptionInfraredFrameArrivedEventArgs")
 @js.native
-abstract class PerceptionInfraredFrameArrivedEventArgs ()
+open class PerceptionInfraredFrameArrivedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.PerceptionInfraredFrameArrivedEventArgs {
   

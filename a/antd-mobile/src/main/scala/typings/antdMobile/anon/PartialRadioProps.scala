@@ -40,7 +40,7 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.radioRadioMod.RadioValue
+import typings.antdMobile.esComponentsRadioRadioMod.RadioValue
 import typings.react.mod.Booleanish
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -166,7 +166,7 @@ trait PartialRadioProps extends StObject {
   
   var onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
   
-  var style: js.UndefOr[CSSPropertiesPartialRecorAnimation] = js.undefined
+  var style: js.UndefOr[CSSPropertiesPartialRecorAnimationComposition] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
@@ -411,7 +411,7 @@ object PartialRadioProps {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setStyle(value: CSSPropertiesPartialRecorAnimation): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSPropertiesPartialRecorAnimationComposition): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

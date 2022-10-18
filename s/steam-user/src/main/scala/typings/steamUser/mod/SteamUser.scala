@@ -211,7 +211,7 @@ trait SteamUser
   /**
     * Use this object to chat with friends and chat rooms.
     */
-  var chat: typings.steamUser.chatroomMod.^ = js.native
+  var chat: typings.steamUser.componentsChatroomMod.^ = js.native
   
   /**
     * An object containing information about all legacy chat rooms we're in. Keys are 64-bit SteamIDs.

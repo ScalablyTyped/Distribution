@@ -41,7 +41,7 @@ trait ShapeDependencyOptions extends StObject {
   
   var specifierType: js.UndefOr[SpecifierType] = js.undefined
   
-  var symbols: js.UndefOr[ReadonlyMap[Symbol, Local]] = js.undefined
+  var symbols: js.UndefOr[ReadonlyMap[Symbol, IsWeak]] = js.undefined
 }
 object ShapeDependencyOptions {
   
@@ -100,7 +100,7 @@ object ShapeDependencyOptions {
     
     inline def setSpecifierUndefined: Self = StObject.set(x, "specifier", js.undefined)
     
-    inline def setSymbols(value: ReadonlyMap[Symbol, Local]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+    inline def setSymbols(value: ReadonlyMap[Symbol, IsWeak]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     
     inline def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
   }

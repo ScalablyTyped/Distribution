@@ -5,9 +5,8 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
 import typings.react.mod.Ref
-import typings.semanticUiReact.genericMod.SemanticShorthandItem
-import typings.semanticUiReact.genericMod.ShorthandRenderFunction
-import typings.semanticUiReact.tabPaneMod.TabPaneProps
+import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
+import typings.semanticUiReact.distCommonjsModulesTabTabPaneMod.TabPaneProps
 import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -16,46 +15,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0`[TProps /* <: Record[String, Any] */] extends StObject {
+  trait Children[TProps /* <: Record[String, Any] */] extends StObject {
     
     // Not all TProps can have `children`, without this condition it will match to "any"
     var children: js.UndefOr[
-        (ShorthandRenderFunction[ElementType[TProps], TProps]) | (/* import warning: importer.ImportType#apply Failed type conversion: TProps['children'] */ js.Any)
+        /* import warning: importer.ImportType#apply Failed type conversion: TProps extends {  children :any} ? TProps['children'] | semantic-ui-react.semantic-ui-react/dist/commonjs/generic.ShorthandRenderFunction<react.react.ElementType<TProps>, TProps> : semantic-ui-react.semantic-ui-react/dist/commonjs/generic.ShorthandRenderFunction<react.react.ElementType<TProps>, TProps> */ js.Any
       ] = js.undefined
-  }
-  object `0` {
-    
-    inline def apply[TProps /* <: Record[String, Any] */](): `0`[TProps] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`[TProps]]
-    }
-    
-    extension [Self <: `0`[?], TProps /* <: Record[String, Any] */](x: Self & `0`[TProps]) {
-      
-      inline def setChildren(
-        value: (ShorthandRenderFunction[ElementType[TProps], TProps]) | (/* import warning: importer.ImportType#apply Failed type conversion: TProps['children'] */ js.Any)
-      ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenFunction2(value: (ElementType[TProps], TProps) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-    }
-  }
-  
-  trait Children extends StObject {
-    
-    var children: Any
   }
   object Children {
     
-    inline def apply(children: Any): Children = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Children]
+    inline def apply[TProps /* <: Record[String, Any] */](): Children[TProps] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Children[TProps]]
     }
     
-    extension [Self <: Children](x: Self) {
+    extension [Self <: Children[?], TProps /* <: Record[String, Any] */](x: Self & Children[TProps]) {
       
-      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: TProps extends {  children :any} ? TProps['children'] | semantic-ui-react.semantic-ui-react/dist/commonjs/generic.ShorthandRenderFunction<react.react.ElementType<TProps>, TProps> : semantic-ui-react.semantic-ui-react/dist/commonjs/generic.ShorthandRenderFunction<react.react.ElementType<TProps>, TProps> */ js.Any
+      ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   

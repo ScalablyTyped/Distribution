@@ -1,56 +1,34 @@
 package typings.reselect
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reselect.defaultMemoizeMod.DefaultMemoizeOptions
-import typings.reselect.typesMod.EqualityFn
-import typings.reselect.typesMod.Obj
+import typings.reselect.esDefaultMemoizeMod.DefaultMemoizeOptions
+import typings.reselect.esTypesMod.EqualityFn
+import typings.reselect.esTypesMod.Obj
+import typings.reselect.reselectStrings.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait `0`[L1 /* <: typings.reselect.typesMod.List[Any] */, L /* <: typings.reselect.typesMod.List[Any] */] extends StObject {
+  trait `0` extends StObject {
     
-    var `0`: L1
-    
-    var `1`: L
-  }
-  object `0` {
-    
-    inline def apply[L1 /* <: typings.reselect.typesMod.List[Any] */, L /* <: typings.reselect.typesMod.List[Any] */](`0`: L1, `1`: L): `0`[L1, L] = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
-      __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`0`[L1, L]]
-    }
-    
-    extension [Self <: `0`[?, ?], L1 /* <: typings.reselect.typesMod.List[Any] */, L /* <: typings.reselect.typesMod.List[Any] */](x: Self & (`0`[L1, L])) {
-      
-      inline def set0(value: L1): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
-      
-      inline def set1(value: L): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait `1` extends StObject {
-    
-    var `0`: typings.reselect.reselectStrings.`1`
+    var `0`: `1`
     
     var `1`: typings.reselect.reselectStrings.`0`
   }
-  object `1` {
+  object `0` {
     
-    inline def apply(): `1` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("0")("1")
       __obj.updateDynamic("1")("0")
-      __obj.asInstanceOf[`1`]
+      __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    extension [Self <: `0`](x: Self) {
       
-      inline def set0(value: typings.reselect.reselectStrings.`1`): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+      inline def set0(value: `1`): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
       inline def set1(value: typings.reselect.reselectStrings.`0`): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     }
@@ -94,7 +72,7 @@ object anon {
     
     extension [Self <: `11Obj0`](x: Self) {
       
-      inline def set1(value: typings.reselect.reselectStrings.`1`): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+      inline def set1(value: `1`): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     }
   }
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "InvalidParameterException")
 @js.native
 open class InvalidParameterException protected ()
-  extends typings.awsSdkClientCognitoIdentity.modelsMod.InvalidParameterException {
+  extends typings.awsSdkClientCognitoIdentity.distTypesModelsMod.InvalidParameterException {
   /**
     * @internal
     */

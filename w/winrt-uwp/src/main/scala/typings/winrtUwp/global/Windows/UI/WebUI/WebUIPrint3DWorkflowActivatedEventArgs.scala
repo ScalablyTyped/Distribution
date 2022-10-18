@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the arguments related to activating a 3D print workflow. */
-@JSGlobal("Windows.UI.WebUI.WebUIPrint3DWorkflowActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUIPrint3DWorkflowActivatedEventArgs")
 @js.native
-abstract class WebUIPrint3DWorkflowActivatedEventArgs ()
+open class WebUIPrint3DWorkflowActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUIPrint3DWorkflowActivatedEventArgs {
   

@@ -2,10 +2,10 @@ package typings.xmldsigjs.mod
 
 import typings.std.Algorithm
 import typings.std.AlgorithmIdentifier
-import typings.xmldsigjs.algorithmMod.HashAlgorithm
-import typings.xmldsigjs.algorithmMod.IHashAlgorithm
-import typings.xmldsigjs.algorithmMod.ISignatureAlgorithm
-import typings.xmldsigjs.algorithmMod.SignatureAlgorithm
+import typings.xmldsigjs.buildTypesAlgorithmMod.HashAlgorithm
+import typings.xmldsigjs.buildTypesAlgorithmMod.IHashAlgorithm
+import typings.xmldsigjs.buildTypesAlgorithmMod.ISignatureAlgorithm
+import typings.xmldsigjs.buildTypesAlgorithmMod.SignatureAlgorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xmldsigjs", "CryptoConfig")
 @js.native
 open class CryptoConfig ()
-  extends typings.xmldsigjs.cryptoConfigMod.CryptoConfig
+  extends typings.xmldsigjs.buildTypesCryptoConfigMod.CryptoConfig
 /* static members */
 object CryptoConfig {
   
@@ -31,12 +31,12 @@ object CryptoConfig {
     *
     * @memberOf CryptoConfig
     */
-  inline def CreateFromName(): typings.xmldsigjs.xmlMod.Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromName")().asInstanceOf[typings.xmldsigjs.xmlMod.Transform]
-  inline def CreateFromName(name: String): typings.xmldsigjs.xmlMod.Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromName")(name.asInstanceOf[js.Any]).asInstanceOf[typings.xmldsigjs.xmlMod.Transform]
+  inline def CreateFromName(): typings.xmldsigjs.buildTypesXmlMod.Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromName")().asInstanceOf[typings.xmldsigjs.buildTypesXmlMod.Transform]
+  inline def CreateFromName(name: String): typings.xmldsigjs.buildTypesXmlMod.Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromName")(name.asInstanceOf[js.Any]).asInstanceOf[typings.xmldsigjs.buildTypesXmlMod.Transform]
   
   inline def CreateHashAlgorithm(namespace: String): HashAlgorithm = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateHashAlgorithm")(namespace.asInstanceOf[js.Any]).asInstanceOf[HashAlgorithm]
   
-  inline def CreateSignatureAlgorithm(method: typings.xmldsigjs.signatureMethodMod.SignatureMethod): SignatureAlgorithm = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSignatureAlgorithm")(method.asInstanceOf[js.Any]).asInstanceOf[SignatureAlgorithm]
+  inline def CreateSignatureAlgorithm(method: typings.xmldsigjs.buildTypesXmlSignatureMethodMod.SignatureMethod): SignatureAlgorithm = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSignatureAlgorithm")(method.asInstanceOf[js.Any]).asInstanceOf[SignatureAlgorithm]
   
   inline def GetHashAlgorithm(algorithm: AlgorithmIdentifier): IHashAlgorithm = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHashAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[IHashAlgorithm]
   

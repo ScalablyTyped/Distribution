@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.progressbarMod.ProgressBarProps
+import typings.primereact.progressbarProgressbarMod.ProgressBarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "ProgressBar")
 @js.native
 open class ProgressBar protected ()
-  extends typings.primereact.progressbarMod.ProgressBar {
+  extends typings.primereact.progressbarProgressbarMod.ProgressBar {
   def this(props: ProgressBarProps) = this()
   /**
     * @deprecated

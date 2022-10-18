@@ -1,6 +1,5 @@
 package typings.pixiCore.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.pixiConstants.mod.MSAA_QUALITY
 import typings.pixiMath.mod.ISize
 import org.scalablytyped.runtime.StObject
@@ -94,9 +93,7 @@ open class RenderTexturePool () extends StObject {
   
   var textureOptions: IBaseTextureOptions[Any] = js.native
   
-  var texturePool: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ x in string | number ]: std.Array<@pixi/core.@pixi/core.RenderTexture>}
-    */ typings.pixiCore.pixiCoreStrings.RenderTexturePool & TopLevel[Any] = js.native
+  var texturePool: /* import warning: importer.ImportType#apply Failed type conversion: {[ x in string | number ]: std.Array<@pixi/core.@pixi/core.RenderTexture>} */ js.Any = js.native
 }
 /* static members */
 object RenderTexturePool {

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "TypeDocReader")
 @js.native
 open class TypeDocReader ()
-  extends typings.typedoc.libUtilsMod.TypeDocReader
+  extends typings.typedoc.distLibUtilsMod.TypeDocReader

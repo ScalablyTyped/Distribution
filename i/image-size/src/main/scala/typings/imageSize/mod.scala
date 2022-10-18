@@ -1,7 +1,7 @@
 package typings.imageSize
 
-import typings.imageSize.interfaceMod.ISizeCalculationResult
-import typings.imageSize.typesMod.imageType
+import typings.imageSize.distTypesInterfaceMod.ISizeCalculationResult
+import typings.imageSize.distTypesMod.imageType
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

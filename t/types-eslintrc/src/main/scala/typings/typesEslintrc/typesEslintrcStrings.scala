@@ -1,7 +1,7 @@
 package typings.typesEslintrc
 
-import typings.typesEslintrc.mod.ESLintSeverity
-import typings.typesEslintrc.mod._ESLintGlobalPermission
+import typings.typesEslintrc.buildMod.ESLintSeverity
+import typings.typesEslintrc.buildMod._ESLintGlobalPermission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

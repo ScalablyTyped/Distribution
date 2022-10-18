@@ -1,12 +1,12 @@
 package typings.ajv
 
-import typings.ajv.codeMod.Code
-import typings.ajv.codeMod.CodeArg
-import typings.ajv.codeMod._Code
-import typings.ajv.codegenMod.CodeGenOptions
-import typings.ajv.compileMod.SchemaObjCxt
+import typings.ajv.distCompileCodegenCodeMod.Code
+import typings.ajv.distCompileCodegenCodeMod.CodeArg
+import typings.ajv.distCompileCodegenCodeMod._Code
+import typings.ajv.distCompileCodegenMod.CodeGenOptions
+import typings.ajv.distCompileCodegenScopeMod.ValueScope
+import typings.ajv.distCompileMod.SchemaObjCxt
 import typings.ajv.distTypesMod.AddedKeywordDefinition
-import typings.ajv.scopeMod.ValueScope
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +25,7 @@ object mod {
   @JSImport("ajv", "CodeGen")
   @js.native
   open class CodeGen protected ()
-    extends typings.ajv.codegenMod.CodeGen {
+    extends typings.ajv.distCompileCodegenMod.CodeGen {
     def this(extScope: ValueScope) = this()
     def this(extScope: ValueScope, opts: CodeGenOptions) = this()
   }
@@ -33,14 +33,14 @@ object mod {
   @JSImport("ajv", "KeywordCxt")
   @js.native
   open class KeywordCxt protected ()
-    extends typings.ajv.validateMod.KeywordCxt {
+    extends typings.ajv.distCompileValidateMod.KeywordCxt {
     def this(it: SchemaObjCxt, `def`: AddedKeywordDefinition, keyword: String) = this()
   }
   
   @JSImport("ajv", "Name")
   @js.native
   open class Name protected ()
-    extends typings.ajv.codeMod.Name {
+    extends typings.ajv.distCompileCodegenCodeMod.Name {
     def this(s: String) = this()
   }
   
@@ -56,5 +56,5 @@ object mod {
   
   @js.native
   trait Ajv
-    extends typings.ajv.coreMod.default
+    extends typings.ajv.distCoreMod.default
 }

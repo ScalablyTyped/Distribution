@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@cucumber/messages", "Duration")
 @js.native
 open class Duration ()
-  extends typings.cucumberMessages.messagesMod.Duration
+  extends typings.cucumberMessages.distCjsSrcMessagesMod.Duration

@@ -13,7 +13,7 @@ object mod {
   @JSImport("external-editor", "CreateFileError")
   @js.native
   open class CreateFileError protected ()
-    extends typings.externalEditor.createFileErrorMod.CreateFileError {
+    extends typings.externalEditor.mainErrorsCreateFileErrorMod.CreateFileError {
     def this(originalError: js.Error) = this()
   }
   
@@ -72,21 +72,21 @@ object mod {
   @JSImport("external-editor", "LaunchEditorError")
   @js.native
   open class LaunchEditorError protected ()
-    extends typings.externalEditor.launchEditorErrorMod.LaunchEditorError {
+    extends typings.externalEditor.mainErrorsLaunchEditorErrorMod.LaunchEditorError {
     def this(originalError: js.Error) = this()
   }
   
   @JSImport("external-editor", "ReadFileError")
   @js.native
   open class ReadFileError protected ()
-    extends typings.externalEditor.readFileErrorMod.ReadFileError {
+    extends typings.externalEditor.mainErrorsReadFileErrorMod.ReadFileError {
     def this(originalError: js.Error) = this()
   }
   
   @JSImport("external-editor", "RemoveFileError")
   @js.native
   open class RemoveFileError protected ()
-    extends typings.externalEditor.removeFileErrorMod.RemoveFileError {
+    extends typings.externalEditor.mainErrorsRemoveFileErrorMod.RemoveFileError {
     def this(originalError: js.Error) = this()
   }
   

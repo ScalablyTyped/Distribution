@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__codemirror-extension
 
-Typings are for version 2.2.6
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - CodeMirror Provider Extension
@@ -10,10 +10,10 @@ JupyterLab - CodeMirror Provider Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/codemirror-extension |
 | Keywords           | - |
-| # releases         | 130 |
-| # dependents       | 1 |
-| # downloads        | 1464916 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 193717.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

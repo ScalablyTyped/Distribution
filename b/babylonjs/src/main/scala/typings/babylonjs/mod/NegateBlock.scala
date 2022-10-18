@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "NegateBlock")
 @js.native
 open class NegateBlock protected ()
-  extends typings.babylonjs.legacyMod.NegateBlock {
+  extends typings.babylonjs.legacyLegacyMod.NegateBlock {
   /**
     * Creates a new NegateBlock
     * @param name defines the block name

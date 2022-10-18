@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
-import typings.antvG2plot.adaptorMod.Adaptor
-import typings.antvG2plot.plotMod.PickOptions
+import typings.antvG2plot.libCoreAdaptorMod.Adaptor
+import typings.antvG2plot.libCorePlotMod.PickOptions
 import typings.std.HTMLElement
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "P")
 @js.native
 open class P[O /* <: PickOptions */] protected ()
-  extends typings.antvG2plot.pluginMod.P[O] {
+  extends typings.antvG2plot.libPluginMod.P[O] {
   /**
     * 相比普通图表增加 adaptor 参数。
     * @param container

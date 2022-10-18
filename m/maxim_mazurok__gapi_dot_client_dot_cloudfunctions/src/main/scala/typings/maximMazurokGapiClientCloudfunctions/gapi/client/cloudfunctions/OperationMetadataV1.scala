@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait OperationMetadataV1 extends StObject {
   
   /** The original request that started the operation. */
   var request: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.OperationMetadataV1 & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** An identifier for Firebase function sources. Disclaimer: This field is only supported for Firebase function deployments. */
@@ -53,9 +50,7 @@ object OperationMetadataV1 {
     inline def setBuildNameUndefined: Self = StObject.set(x, "buildName", js.undefined)
     
     inline def setRequest(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.OperationMetadataV1 & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)

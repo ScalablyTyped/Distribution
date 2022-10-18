@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param scene defines the scene to work on
   */
 open class AssetsManager ()
-  extends typings.babylonjs.assetsManagerMod.AssetsManager {
+  extends typings.babylonjs.miscAssetsManagerMod.AssetsManager {
   def this(scene: Scene) = this()
 }

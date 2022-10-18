@@ -36,8 +36,8 @@ object mod {
     
     @JSImport("pretty-format", "DEFAULT_OPTIONS.compareKeys")
     @js.native
-    def compareKeys: Unit = js.native
-    inline def compareKeys_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareKeys")(x.asInstanceOf[js.Any])
+    def compareKeys: /* undefined */ Any = js.native
+    inline def compareKeys_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareKeys")(x.asInstanceOf[js.Any])
     
     @JSImport("pretty-format", "DEFAULT_OPTIONS.escapeRegex")
     @js.native
@@ -272,7 +272,9 @@ object mod {
     
     def serialize(`val`: Any, config: Config, indentation: String, depth: Double, refs: Refs, printer: Printer): String
     
-    var test: Test
+    def test(arg0: Any): Boolean
+    @JSName("test")
+    var test_Original: Test
   }
   object NewPlugin {
     
@@ -295,7 +297,9 @@ object mod {
     
     def print(`val`: Any, print: Print, indent: Indent, options: PluginOptions, colors: Colors): String
     
-    var test: Test
+    def test(arg0: Any): Boolean
+    @JSName("test")
+    var test_Original: Test
   }
   object OldPlugin {
     

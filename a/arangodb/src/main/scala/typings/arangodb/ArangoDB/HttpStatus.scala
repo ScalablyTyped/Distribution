@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object HttpStatus {
   
-  inline def LeftparenthesisunusedRightparenthesis: String = String.asInstanceOf[String]
+  inline def LeftparenthesisunusedRightparenthesis: /* (unused) */ String = "(unused)".asInstanceOf[/* (unused) */ String]
   
   inline def accepted: typings.arangodb.arangodbStrings.accepted = "accepted".asInstanceOf[typings.arangodb.arangodbStrings.accepted]
   
@@ -38,7 +38,7 @@ object HttpStatus {
   
   inline def `http version not supported`: typings.arangodb.arangodbStrings.`http version not supported` = ("http version not supported").asInstanceOf[typings.arangodb.arangodbStrings.`http version not supported`]
   
-  inline def `iApostrophem a teapot`: String = String.asInstanceOf[String]
+  inline def `iApostrophem a teapot`: /* i'm a teapot */ String = ("i'm a teapot").asInstanceOf[/* i'm a teapot */ String]
   
   inline def `im used`: typings.arangodb.arangodbStrings.`im used` = ("im used").asInstanceOf[typings.arangodb.arangodbStrings.`im used`]
   

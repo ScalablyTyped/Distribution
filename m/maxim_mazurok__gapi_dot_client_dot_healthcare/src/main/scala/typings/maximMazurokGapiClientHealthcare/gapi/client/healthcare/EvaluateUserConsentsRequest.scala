@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,16 +21,12 @@ trait EvaluateUserConsentsRequest extends StObject {
   
   /** Required. The values of request attributes associated with this access request. */
   var requestAttributes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.EvaluateUserConsentsRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Optional. The values of resource attributes associated with the resources being requested. If no values are specified, then all resources are queried. */
   var resourceAttributes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.EvaluateUserConsentsRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Optional. The view for EvaluateUserConsentsResponse. If unspecified, defaults to `BASIC` and returns `consented` as `TRUE` or `FALSE`. */
@@ -62,17 +57,13 @@ object EvaluateUserConsentsRequest {
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     inline def setRequestAttributes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.EvaluateUserConsentsRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
     
     inline def setRequestAttributesUndefined: Self = StObject.set(x, "requestAttributes", js.undefined)
     
     inline def setResourceAttributes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.EvaluateUserConsentsRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "resourceAttributes", value.asInstanceOf[js.Any])
     
     inline def setResourceAttributesUndefined: Self = StObject.set(x, "resourceAttributes", js.undefined)

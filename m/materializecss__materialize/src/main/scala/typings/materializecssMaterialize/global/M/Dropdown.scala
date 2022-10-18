@@ -1,5 +1,7 @@
 package typings.materializecssMaterialize.global.M
 
+import typings.materializecssMaterialize.M.DropdownOptions
+import typings.materializecssMaterialize.MElements
 import typings.materializecssMaterialize.anon.PartialDropdownOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -19,10 +21,22 @@ open class Dropdown ()
   override def close(): Unit = js.native
   
   /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
     * The DOM element of the dropdown
     */
   /* CompleteClass */
   var dropdownEl: Element = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
   
   /**
     * The index of the item focused
@@ -55,6 +69,12 @@ open class Dropdown ()
   override def open(): Unit = js.native
   
   /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: DropdownOptions = js.native
+  
+  /**
     * While dropdown is open, you can recalculate its dimensions if its contents have changed
     */
   /* CompleteClass */
@@ -76,13 +96,8 @@ object Dropdown {
     * Init Dropdowns
     */
   /* static member */
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any
-  ): js.Array[typings.materializecssMaterialize.M.Dropdown] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Dropdown]]
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any,
-    options: PartialDropdownOptions
-  ): js.Array[typings.materializecssMaterialize.M.Dropdown] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Dropdown]]
+  inline def init(els: MElements): js.Array[typings.materializecssMaterialize.M.Dropdown] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Dropdown]]
+  inline def init(els: MElements, options: PartialDropdownOptions): js.Array[typings.materializecssMaterialize.M.Dropdown] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Dropdown]]
   /**
     * Init Dropdown
     */

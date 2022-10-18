@@ -32,7 +32,7 @@ trait UserProfile extends StObject {
     * <table>
     *   <tr>
     *     <th>Value</th>
-    *     <th>Description?</th>
+    *     <th>Description</th>
     *   </tr>
     *   <tr>
     *     <td>enterprise</td>

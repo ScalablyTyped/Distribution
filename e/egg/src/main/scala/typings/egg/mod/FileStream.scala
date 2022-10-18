@@ -13,7 +13,7 @@ trait FileStream extends Readable {
   var fieldname: String = js.native
   
   // tslint:disable-line
-  var fields: js.Any = js.native
+  var fields: Any = js.native
   
   var filename: String = js.native
   

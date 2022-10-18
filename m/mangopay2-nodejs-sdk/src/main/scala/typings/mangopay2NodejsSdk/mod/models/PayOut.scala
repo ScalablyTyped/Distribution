@@ -1,7 +1,7 @@
 package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.PartialCreatePayOut
-import typings.mangopay2NodejsSdk.payOutMod.payOut.PayOutData
+import typings.mangopay2NodejsSdk.typingsModelsPayOutMod.payOut.PayOutData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

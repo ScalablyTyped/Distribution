@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.listViewMod.default
+import typings.antDesignReactNative.libListViewMod.default
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

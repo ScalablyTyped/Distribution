@@ -1,8 +1,8 @@
 package typings.three.anon
 
-import typings.three.webGLStateMod.WebGLColorBuffer
-import typings.three.webGLStateMod.WebGLDepthBuffer
-import typings.three.webGLStateMod.WebGLStencilBuffer
+import typings.three.srcRenderersWebglWebGLStateMod.WebGLColorBuffer
+import typings.three.srcRenderersWebglWebGLStateMod.WebGLDepthBuffer
+import typings.three.srcRenderersWebglWebGLStateMod.WebGLStencilBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

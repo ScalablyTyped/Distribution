@@ -1,9 +1,9 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.indexerSrcApiMod.ElementIdentifier
-import typings.angularCompilerCli.indexerSrcApiMod.TemplateIdentifier
-import typings.angularCompilerCli.srcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcHostMod.DeclarationNode
+import typings.angularCompilerCli.srcNgtscIndexerSrcApiMod.ElementIdentifier
+import typings.angularCompilerCli.srcNgtscIndexerSrcApiMod.TemplateIdentifier
+import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
+import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

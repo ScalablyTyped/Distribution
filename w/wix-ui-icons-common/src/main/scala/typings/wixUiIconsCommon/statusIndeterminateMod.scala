@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsStatusIndeterminateMod.StatusIndeterminateProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statusIndeterminateMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/StatusIndeterminate", JSImport.Default)
+  @JSImport("wix-ui-icons-common/StatusIndeterminate", JSImport.Default)
   @js.native
   val default: FC[StatusIndeterminateProps] = js.native
-  
-  trait StatusIndeterminateProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object StatusIndeterminateProps {
-    
-    inline def apply(): StatusIndeterminateProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StatusIndeterminateProps]
-    }
-    
-    extension [Self <: StatusIndeterminateProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[StatusIndeterminateProps]
   

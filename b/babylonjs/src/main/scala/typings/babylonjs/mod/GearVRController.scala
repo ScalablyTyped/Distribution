@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "GearVRController")
 @js.native
 open class GearVRController protected ()
-  extends typings.babylonjs.legacyMod.GearVRController {
+  extends typings.babylonjs.legacyLegacyMod.GearVRController {
   /**
     * Creates a new GearVRController from a gamepad
     * @param vrGamepad the gamepad that the controller should be created from

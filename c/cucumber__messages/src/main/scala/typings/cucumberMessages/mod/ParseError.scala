@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@cucumber/messages", "ParseError")
 @js.native
 open class ParseError ()
-  extends typings.cucumberMessages.messagesMod.ParseError
+  extends typings.cucumberMessages.distCjsSrcMessagesMod.ParseError

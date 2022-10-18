@@ -1,6 +1,6 @@
 package typings.nivoStream
 
-import typings.nivoStream.typesMod.StreamLayerId
+import typings.nivoStream.distTypesTypesMod.StreamLayerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

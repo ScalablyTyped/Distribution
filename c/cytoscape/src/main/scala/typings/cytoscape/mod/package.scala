@@ -1,7 +1,7 @@
 package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cytoscape.anon.Typeofcytoscape
+import typings.cytoscape.anon.FnCall
 import typings.cytoscape.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -117,7 +117,7 @@ type EventNames = String
   *  export = ext;
   * }
   */
-type Ext = js.Function1[/* cy */ Typeofcytoscape, Unit]
+type Ext = js.Function1[/* cy */ FnCall, Unit]
 
 type LayoutHandler = js.Function1[/* e */ LayoutEventObject, Unit]
 

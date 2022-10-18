@@ -1,9 +1,9 @@
 package typings.awsSdkRegionProvider
 
-import typings.awsSdkRegionProvider.defaultProviderMod.RegionProviderConfiguration
-import typings.awsSdkRegionProvider.fromEnvMod.EnvConfiguration
-import typings.awsSdkRegionProvider.fromSharedConfigFilesMod.SharedConfigInit
-import typings.awsSdkTypes.utilMod.Provider
+import typings.awsSdkRegionProvider.buildDefaultProviderMod.RegionProviderConfiguration
+import typings.awsSdkRegionProvider.buildFromEnvMod.EnvConfiguration
+import typings.awsSdkRegionProvider.buildFromSharedConfigFilesMod.SharedConfigInit
+import typings.awsSdkTypes.distTypesUtilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

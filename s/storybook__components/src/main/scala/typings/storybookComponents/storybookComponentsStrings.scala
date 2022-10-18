@@ -1,5 +1,18 @@
 package typings.storybookComponents
 
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.AutoPlacement
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.BasePlacement
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.ComputedPlacement
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Context
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.ModifierPhases_
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.RootBoundary
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Variation
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.VariationPlacement
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.PositioningStrategy
+import typings.storybookComponents.`distTs3Dot9Modules@typesPrettierIndexMod`.BuiltInParserName
+import typings.storybookComponents.`distTs3Dot9Modules@typesPrettierIndexMod`.CoreCategoryType
+import typings.storybookComponents.`distTs3Dot9Modules@typesPrettierIndexMod`.SupportOptionType
 import typings.storybookComponents.mod.Alignments
 import typings.storybookComponents.mod.ControlType
 import typings.storybookComponents.mod.IconKey
@@ -8,19 +21,6 @@ import typings.storybookComponents.mod.Sizes
 import typings.storybookComponents.mod.SortType
 import typings.storybookComponents.mod.ValidationStates
 import typings.storybookComponents.mod._SyntaxHighlighterFormatTypes
-import typings.storybookComponents.popperjsCoreLibEnumsMod.AutoPlacement
-import typings.storybookComponents.popperjsCoreLibEnumsMod.BasePlacement
-import typings.storybookComponents.popperjsCoreLibEnumsMod.ComputedPlacement
-import typings.storybookComponents.popperjsCoreLibEnumsMod.Context
-import typings.storybookComponents.popperjsCoreLibEnumsMod.ModifierPhases_
-import typings.storybookComponents.popperjsCoreLibEnumsMod.Placement
-import typings.storybookComponents.popperjsCoreLibEnumsMod.RootBoundary
-import typings.storybookComponents.popperjsCoreLibEnumsMod.Variation
-import typings.storybookComponents.popperjsCoreLibEnumsMod.VariationPlacement
-import typings.storybookComponents.popperjsCoreLibTypesMod.PositioningStrategy
-import typings.storybookComponents.typesPrettierIndexMod.BuiltInParserName
-import typings.storybookComponents.typesPrettierIndexMod.CoreCategoryType
-import typings.storybookComponents.typesPrettierIndexMod.SupportOptionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

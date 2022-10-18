@@ -1,7 +1,7 @@
 package typings.reactThreeFiber.anon
 
-import typings.reactThreeFiber.storeMod.Size
-import typings.reactThreeFiber.utilsMod.Camera
+import typings.reactThreeFiber.distDeclarationsSrcCoreStoreMod.Size
+import typings.reactThreeFiber.distDeclarationsSrcCoreUtilsMod.Camera
 import typings.std.Parameters
 import typings.three.mod.Vector3
 import org.scalablytyped.runtime.StObject

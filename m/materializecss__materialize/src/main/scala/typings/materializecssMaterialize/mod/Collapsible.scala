@@ -1,5 +1,7 @@
 package typings.materializecssMaterialize.mod
 
+import typings.materializecssMaterialize.M.CollapsibleOptions
+import typings.materializecssMaterialize.MElements
 import typings.materializecssMaterialize.anon.PartialCollapsibleOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -20,11 +22,29 @@ open class Collapsible ()
   override def close(n: Double): Unit = js.native
   
   /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
+  
+  /**
     * Open collapsible section
     * @param n Nth section to open
     */
   /* CompleteClass */
   override def open(n: Double): Unit = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: CollapsibleOptions = js.native
 }
 object Collapsible {
   
@@ -42,13 +62,8 @@ object Collapsible {
     * Init Collapsibles
     */
   /* static member */
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any
-  ): js.Array[typings.materializecssMaterialize.M.Collapsible] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Collapsible]]
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any,
-    options: PartialCollapsibleOptions
-  ): js.Array[typings.materializecssMaterialize.M.Collapsible] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Collapsible]]
+  inline def init(els: MElements): js.Array[typings.materializecssMaterialize.M.Collapsible] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Collapsible]]
+  inline def init(els: MElements, options: PartialCollapsibleOptions): js.Array[typings.materializecssMaterialize.M.Collapsible] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Collapsible]]
   /**
     * Init Collapsible
     */

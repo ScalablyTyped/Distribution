@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object pkgjsParseargsStrings {
   
   @js.native
-  sealed trait ParsedValues extends StObject
-  inline def ParsedValues: ParsedValues = "ParsedValues".asInstanceOf[ParsedValues]
-  
-  @js.native
   sealed trait boolean extends StObject
   inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   

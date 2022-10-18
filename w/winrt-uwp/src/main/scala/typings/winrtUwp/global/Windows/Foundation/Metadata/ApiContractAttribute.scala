@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Foundation.Metadata.ApiContractAttribute")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.Metadata.ApiContractAttribute")
 @js.native
-abstract class ApiContractAttribute ()
+open class ApiContractAttribute ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Metadata.ApiContractAttribute

@@ -1,17 +1,17 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.ikeytiptransitionkeyMod.IKeytipTransitionKey
-import typings.officeUiFabricReact.keytipConfigMod.IKeytipConfig
-import typings.officeUiFabricReact.keytipConfigMod.IKeytipConfigItem
-import typings.officeUiFabricReact.keytipConfigMod.IKeytipConfigMap
-import typings.officeUiFabricReact.keytipDataTypesMod.IKeytipDataProps
-import typings.officeUiFabricReact.keytipDataTypesMod.KeytipDataOptions
-import typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps
-import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
+import typings.officeUiFabricReact.libComponentsKeytipDataKeytipDataDottypesMod.IKeytipDataProps
+import typings.officeUiFabricReact.libComponentsKeytipDataKeytipDataDottypesMod.KeytipDataOptions
+import typings.officeUiFabricReact.libComponentsKeytipKeytipDottypesMod.IKeytipProps
+import typings.officeUiFabricReact.libComponentsKeytipLayerKeytipLayerDottypesMod.IKeytipLayerProps
+import typings.officeUiFabricReact.libUtilitiesKeytipsIkeytiptransitionkeyMod.IKeytipTransitionKey
+import typings.officeUiFabricReact.libUtilitiesKeytipsKeytipConfigMod.IKeytipConfig
+import typings.officeUiFabricReact.libUtilitiesKeytipsKeytipConfigMod.IKeytipConfigItem
+import typings.officeUiFabricReact.libUtilitiesKeytipsKeytipConfigMod.IKeytipConfigMap
 import typings.react.mod.FunctionComponent
 import typings.react.mod.Ref
 import typings.std.HTMLElement
-import typings.uifabricUtilities.irendercomponentMod.IRenderComponent
+import typings.uifabricUtilities.libIrendercomponentMod.IRenderComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,7 +57,7 @@ object libKeytipsMod {
   @JSImport("office-ui-fabric-react/lib/Keytips", "Keytip")
   @js.native
   open class Keytip protected ()
-    extends typings.officeUiFabricReact.keytipMod.Keytip {
+    extends typings.officeUiFabricReact.libComponentsKeytipMod.Keytip {
     def this(props: IKeytipProps) = this()
     /**
       * @deprecated
@@ -112,7 +112,7 @@ object libKeytipsMod {
   @JSImport("office-ui-fabric-react/lib/Keytips", "KeytipLayerBase")
   @js.native
   open class KeytipLayerBase protected ()
-    extends typings.officeUiFabricReact.keytipLayerMod.KeytipLayerBase {
+    extends typings.officeUiFabricReact.libComponentsKeytipLayerMod.KeytipLayerBase {
     def this(props: IKeytipLayerProps, context: Any) = this()
   }
   /* static members */
@@ -131,7 +131,7 @@ object libKeytipsMod {
   @JSImport("office-ui-fabric-react/lib/Keytips", "KeytipManager")
   @js.native
   open class KeytipManager ()
-    extends typings.officeUiFabricReact.keytipsMod.KeytipManager
+    extends typings.officeUiFabricReact.libUtilitiesKeytipsMod.KeytipManager
   /* static members */
   object KeytipManager {
     
@@ -149,7 +149,7 @@ object libKeytipsMod {
       *
       * @returns Singleton KeytipManager instance
       */
-    inline def getInstance(): typings.officeUiFabricReact.keytipManagerMod.KeytipManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.officeUiFabricReact.keytipManagerMod.KeytipManager]
+    inline def getInstance(): typings.officeUiFabricReact.libUtilitiesKeytipsKeytipManagerMod.KeytipManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.officeUiFabricReact.libUtilitiesKeytipsKeytipManagerMod.KeytipManager]
   }
   
   inline def buildKeytipConfigMap(config: IKeytipConfig): IKeytipConfigMap = ^.asInstanceOf[js.Dynamic].applyDynamic("buildKeytipConfigMap")(config.asInstanceOf[js.Any]).asInstanceOf[IKeytipConfigMap]

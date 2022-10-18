@@ -1242,7 +1242,9 @@ open class Viewer protected () extends ControlDock {
   
   var referenceStrip: ReferenceStrip = js.native
   
-  def removeAllHandlers(eventName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any): Unit = js.native
+  def removeAllHandlers(
+    eventName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.openseadragon.openseadragonStrings.`add-item-failed`, typings.openseadragon.openseadragonStrings.`add-overlay`, typings.openseadragon.openseadragonStrings.animation */ Any
+  ): Unit = js.native
   
   @JSName("removeHandler")
   def removeHandler_additemfailed(eventName: `add-item-failed`, handler: EventHandler[AddItemFailedEvent]): Unit = js.native

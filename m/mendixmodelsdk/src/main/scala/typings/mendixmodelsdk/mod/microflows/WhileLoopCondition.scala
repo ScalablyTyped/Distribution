@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.microflows
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "microflows.WhileLoopCondition")
 @js.native
 open class WhileLoopCondition protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.microflows.WhileLoopCondition {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.microflows.WhileLoopCondition {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object WhileLoopCondition {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.WhileLoopCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.WhileLoopCondition]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.WhileLoopCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.WhileLoopCondition]
   
   /**
     * Creates and returns a new WhileLoopCondition instance in the SDK and on the server.
@@ -50,7 +50,7 @@ object WhileLoopCondition {
     *  9.0.4 and higher
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.LoopedActivity): typings.mendixmodelsdk.microflowsMod.microflows.WhileLoopCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.WhileLoopCondition]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.LoopedActivity): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.WhileLoopCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.WhileLoopCondition]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.WhileLoopCondition.structureTypeName")

@@ -76,18 +76,18 @@ object anon {
   /* Inlined std.Readonly<jest-watcher.jest-watcher.JestHookEmitter> */
   trait ReadonlyJestHookEmitter extends StObject {
     
-    val onFileChange: js.Function1[/* fs */ JestHookExposedFS, Unit]
+    def onFileChange(fs: JestHookExposedFS): Unit
     
-    val onTestRunComplete: js.Function1[/* results */ AggregatedResult, Unit]
+    def onTestRunComplete(results: AggregatedResult): Unit
     
-    val shouldRunTestSuite: js.Function1[/* testSuiteInfo */ TestSuiteInfo, js.Promise[Boolean] | Boolean]
+    def shouldRunTestSuite(testSuiteInfo: TestSuiteInfo): js.Promise[Boolean] | Boolean
   }
   object ReadonlyJestHookEmitter {
     
     inline def apply(
-      onFileChange: /* fs */ JestHookExposedFS => Unit,
-      onTestRunComplete: /* results */ AggregatedResult => Unit,
-      shouldRunTestSuite: /* testSuiteInfo */ TestSuiteInfo => js.Promise[Boolean] | Boolean
+      onFileChange: JestHookExposedFS => Unit,
+      onTestRunComplete: AggregatedResult => Unit,
+      shouldRunTestSuite: TestSuiteInfo => js.Promise[Boolean] | Boolean
     ): ReadonlyJestHookEmitter = {
       val __obj = js.Dynamic.literal(onFileChange = js.Any.fromFunction1(onFileChange), onTestRunComplete = js.Any.fromFunction1(onTestRunComplete), shouldRunTestSuite = js.Any.fromFunction1(shouldRunTestSuite))
       __obj.asInstanceOf[ReadonlyJestHookEmitter]
@@ -95,29 +95,29 @@ object anon {
     
     extension [Self <: ReadonlyJestHookEmitter](x: Self) {
       
-      inline def setOnFileChange(value: /* fs */ JestHookExposedFS => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
+      inline def setOnFileChange(value: JestHookExposedFS => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
       
-      inline def setOnTestRunComplete(value: /* results */ AggregatedResult => Unit): Self = StObject.set(x, "onTestRunComplete", js.Any.fromFunction1(value))
+      inline def setOnTestRunComplete(value: AggregatedResult => Unit): Self = StObject.set(x, "onTestRunComplete", js.Any.fromFunction1(value))
       
-      inline def setShouldRunTestSuite(value: /* testSuiteInfo */ TestSuiteInfo => js.Promise[Boolean] | Boolean): Self = StObject.set(x, "shouldRunTestSuite", js.Any.fromFunction1(value))
+      inline def setShouldRunTestSuite(value: TestSuiteInfo => js.Promise[Boolean] | Boolean): Self = StObject.set(x, "shouldRunTestSuite", js.Any.fromFunction1(value))
     }
   }
   
   /* Inlined std.Readonly<jest-watcher.jest-watcher.JestHookSubscriber> */
   trait ReadonlyJestHookSubscribe extends StObject {
     
-    val onFileChange: js.Function1[/* fn */ FileChange, Unit]
+    def onFileChange(fn: FileChange): Unit
     
-    val onTestRunComplete: js.Function1[/* fn */ TestRunComplete, Unit]
+    def onTestRunComplete(fn: TestRunComplete): Unit
     
-    val shouldRunTestSuite: js.Function1[/* fn */ ShouldRunTestSuite, Unit]
+    def shouldRunTestSuite(fn: ShouldRunTestSuite): Unit
   }
   object ReadonlyJestHookSubscribe {
     
     inline def apply(
-      onFileChange: /* fn */ FileChange => Unit,
-      onTestRunComplete: /* fn */ TestRunComplete => Unit,
-      shouldRunTestSuite: /* fn */ ShouldRunTestSuite => Unit
+      onFileChange: FileChange => Unit,
+      onTestRunComplete: TestRunComplete => Unit,
+      shouldRunTestSuite: ShouldRunTestSuite => Unit
     ): ReadonlyJestHookSubscribe = {
       val __obj = js.Dynamic.literal(onFileChange = js.Any.fromFunction1(onFileChange), onTestRunComplete = js.Any.fromFunction1(onTestRunComplete), shouldRunTestSuite = js.Any.fromFunction1(shouldRunTestSuite))
       __obj.asInstanceOf[ReadonlyJestHookSubscribe]
@@ -125,11 +125,11 @@ object anon {
     
     extension [Self <: ReadonlyJestHookSubscribe](x: Self) {
       
-      inline def setOnFileChange(value: /* fn */ FileChange => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
+      inline def setOnFileChange(value: FileChange => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
       
-      inline def setOnTestRunComplete(value: /* fn */ TestRunComplete => Unit): Self = StObject.set(x, "onTestRunComplete", js.Any.fromFunction1(value))
+      inline def setOnTestRunComplete(value: TestRunComplete => Unit): Self = StObject.set(x, "onTestRunComplete", js.Any.fromFunction1(value))
       
-      inline def setShouldRunTestSuite(value: /* fn */ ShouldRunTestSuite => Unit): Self = StObject.set(x, "shouldRunTestSuite", js.Any.fromFunction1(value))
+      inline def setShouldRunTestSuite(value: ShouldRunTestSuite => Unit): Self = StObject.set(x, "shouldRunTestSuite", js.Any.fromFunction1(value))
     }
   }
   

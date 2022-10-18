@@ -1,6 +1,6 @@
 package typings.awsGreengrassCoreSdk.mod.StreamManager
 
-import typings.awsGreengrassCoreSdk.dataMod.IoTSiteWiseConfigMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.IoTSiteWiseConfigMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,5 +42,5 @@ object IoTSiteWiseConfig {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromMap(d: IoTSiteWiseConfigMap): typings.awsGreengrassCoreSdk.dataMod.IoTSiteWiseConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.IoTSiteWiseConfig]
+  inline def fromMap(d: IoTSiteWiseConfigMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.IoTSiteWiseConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.IoTSiteWiseConfig]
 }

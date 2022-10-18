@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AppointmentsProvider {
   
   /** Represents the operation object associated with adding a new appointment. Appointments provider apps use this info to perform the operation. */
-  @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.AddAppointmentOperation")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.AddAppointmentOperation")
   @js.native
-  abstract class AddAppointmentOperation ()
+  open class AddAppointmentOperation ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentsProvider.AddAppointmentOperation {
     
@@ -46,9 +46,9 @@ object AppointmentsProvider {
   }
   
   /** Represents the object associated with retrieving the operation of the appointments provider. */
-  @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.AppointmentsProviderLaunchActionVerbs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.AppointmentsProviderLaunchActionVerbs")
   @js.native
-  abstract class AppointmentsProviderLaunchActionVerbs ()
+  open class AppointmentsProviderLaunchActionVerbs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentsProvider.AppointmentsProviderLaunchActionVerbs
   object AppointmentsProviderLaunchActionVerbs {
@@ -94,9 +94,9 @@ object AppointmentsProvider {
   }
   
   /** Represents the operation object associated with removing an appointment. Appointments provider apps use this info to perform the operation. */
-  @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.RemoveAppointmentOperation")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.RemoveAppointmentOperation")
   @js.native
-  abstract class RemoveAppointmentOperation ()
+  open class RemoveAppointmentOperation ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentsProvider.RemoveAppointmentOperation {
     
@@ -133,9 +133,9 @@ object AppointmentsProvider {
   }
   
   /** Represents the operation object associated with replacing an appointment. Appointments provider apps use this info to perform the operation. */
-  @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.ReplaceAppointmentOperation")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.ReplaceAppointmentOperation")
   @js.native
-  abstract class ReplaceAppointmentOperation ()
+  open class ReplaceAppointmentOperation ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentsProvider.ReplaceAppointmentOperation {
     

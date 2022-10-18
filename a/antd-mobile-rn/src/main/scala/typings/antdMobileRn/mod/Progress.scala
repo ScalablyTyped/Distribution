@@ -1,8 +1,8 @@
 package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.AppearTransition
-import typings.antdMobileRn.progressIndexNativeMod.ProgressProps
-import typings.antdMobileRn.progressIndexNativeMod.default
+import typings.antdMobileRn.libProgressIndexDotnativeMod.ProgressProps
+import typings.antdMobileRn.libProgressIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -20,6 +20,8 @@ trait Documentname extends StObject {
   
   var `document-natural-language`: js.UndefOr[String] = js.undefined
   
+  var `document-uri`: String
+  
   var `ipp-attribute-fidelity`: js.UndefOr[Boolean] = js.undefined
   
   var `job-impressions`: js.UndefOr[Double] = js.undefined
@@ -36,8 +38,9 @@ trait Documentname extends StObject {
 }
 object Documentname {
   
-  inline def apply(`requesting-user-name`: String): Documentname = {
+  inline def apply(`document-uri`: String, `requesting-user-name`: String): Documentname = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("document-uri")(`document-uri`.asInstanceOf[js.Any])
     __obj.updateDynamic("requesting-user-name")(`requesting-user-name`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Documentname]
   }
@@ -67,6 +70,8 @@ object Documentname {
     inline def `setDocument-natural-language`(value: String): Self = StObject.set(x, "document-natural-language", value.asInstanceOf[js.Any])
     
     inline def `setDocument-natural-languageUndefined`: Self = StObject.set(x, "document-natural-language", js.undefined)
+    
+    inline def `setDocument-uri`(value: String): Self = StObject.set(x, "document-uri", value.asInstanceOf[js.Any])
     
     inline def `setIpp-attribute-fidelity`(value: Boolean): Self = StObject.set(x, "ipp-attribute-fidelity", value.asInstanceOf[js.Any])
     

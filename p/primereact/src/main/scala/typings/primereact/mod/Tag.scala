@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.tagMod.TagProps
+import typings.primereact.tagTagMod.TagProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Tag")
 @js.native
 open class Tag protected ()
-  extends typings.primereact.tagMod.Tag {
+  extends typings.primereact.tagTagMod.Tag {
   def this(props: TagProps) = this()
   /**
     * @deprecated

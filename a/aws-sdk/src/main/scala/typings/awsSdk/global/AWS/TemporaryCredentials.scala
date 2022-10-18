@@ -1,6 +1,6 @@
 package typings.awsSdk.global.AWS
 
-import typings.awsSdk.temporaryCredentialsMod.TemporaryCredentials.TemporaryCredentialsOptions
+import typings.awsSdk.libCredentialsTemporaryCredentialsMod.TemporaryCredentials.TemporaryCredentialsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,5 +19,8 @@ open class TemporaryCredentials ()
     * @param {Object} masterCredentials - The master (non-temporary) credentials used to get and refresh credentials from AWS STS.
     */
   def this(options: TemporaryCredentialsOptions) = this()
-  def this(options: TemporaryCredentialsOptions, masterCredentials: typings.awsSdk.credentialsMod.Credentials) = this()
+  def this(
+    options: TemporaryCredentialsOptions,
+    masterCredentials: typings.awsSdk.libCredentialsMod.Credentials
+  ) = this()
 }

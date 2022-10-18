@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "AssetsProgressEvent")
 @js.native
 open class AssetsProgressEvent protected ()
-  extends typings.babylonjs.legacyMod.AssetsProgressEvent {
+  extends typings.babylonjs.legacyLegacyMod.AssetsProgressEvent {
   /**
     * Creates a AssetsProgressEvent
     * @param remainingCount defines the number of remaining tasks to process
@@ -17,6 +17,6 @@ open class AssetsProgressEvent protected ()
   def this(
     remainingCount: Double,
     totalCount: Double,
-    task: typings.babylonjs.assetsManagerMod.AbstractAssetTask
+    task: typings.babylonjs.miscAssetsManagerMod.AbstractAssetTask
   ) = this()
 }

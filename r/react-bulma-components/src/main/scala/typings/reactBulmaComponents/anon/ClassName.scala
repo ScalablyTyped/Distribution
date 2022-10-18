@@ -2,8 +2,8 @@ package typings.reactBulmaComponents.anon
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.RefObject
-import typings.reactBulmaComponents.componentsMod.DisplayModifier
-import typings.reactBulmaComponents.componentsMod.RenderAsComponent
+import typings.reactBulmaComponents.srcComponentsMod.DisplayModifier
+import typings.reactBulmaComponents.srcComponentsMod.RenderAsComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

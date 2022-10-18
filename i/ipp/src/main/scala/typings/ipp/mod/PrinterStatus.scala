@@ -16,13 +16,13 @@ trait PrinterStatus extends StObject {
   
   var `document-format-varying-attributes`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
     ]
   ] = js.undefined
   
   var `job-settable-attributes-supported`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
     ]
   ] = js.undefined
   
@@ -84,7 +84,7 @@ trait PrinterStatus extends StObject {
   
   var `printer-settable-attributes-supported`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
     ]
   ] = js.undefined
   
@@ -147,23 +147,27 @@ object PrinterStatus {
     
     inline def `setDocument-format-varying-attributes`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
         ]
     ): Self = StObject.set(x, "document-format-varying-attributes", value.asInstanceOf[js.Any])
     
     inline def `setDocument-format-varying-attributesUndefined`: Self = StObject.set(x, "document-format-varying-attributes", js.undefined)
     
-    inline def `setDocument-format-varying-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ Any)*): Self = StObject.set(x, "document-format-varying-attributes", js.Array(value*))
+    inline def `setDocument-format-varying-attributesVarargs`(
+      value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any)*
+    ): Self = StObject.set(x, "document-format-varying-attributes", js.Array(value*))
     
     inline def `setJob-settable-attributes-supported`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
         ]
     ): Self = StObject.set(x, "job-settable-attributes-supported", value.asInstanceOf[js.Any])
     
     inline def `setJob-settable-attributes-supportedUndefined`: Self = StObject.set(x, "job-settable-attributes-supported", js.undefined)
     
-    inline def `setJob-settable-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any)*): Self = StObject.set(x, "job-settable-attributes-supported", js.Array(value*))
+    inline def `setJob-settable-attributes-supportedVarargs`(
+      value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any)*
+    ): Self = StObject.set(x, "job-settable-attributes-supported", js.Array(value*))
     
     inline def `setPages-per-minute`(value: Double): Self = StObject.set(x, "pages-per-minute", value.asInstanceOf[js.Any])
     
@@ -299,13 +303,15 @@ object PrinterStatus {
     
     inline def `setPrinter-settable-attributes-supported`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
         ]
     ): Self = StObject.set(x, "printer-settable-attributes-supported", value.asInstanceOf[js.Any])
     
     inline def `setPrinter-settable-attributes-supportedUndefined`: Self = StObject.set(x, "printer-settable-attributes-supported", js.undefined)
     
-    inline def `setPrinter-settable-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87 */ Any)*): Self = StObject.set(x, "printer-settable-attributes-supported", js.Array(value*))
+    inline def `setPrinter-settable-attributes-supportedVarargs`(
+      value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any)*
+    ): Self = StObject.set(x, "printer-settable-attributes-supported", js.Array(value*))
     
     inline def `setPrinter-state`(value: PrinterState): Self = StObject.set(x, "printer-state", value.asInstanceOf[js.Any])
     

@@ -1,11 +1,11 @@
 package typings.ethereumjsTx
 
-import typings.ethereumjsTx.fakeMod.default
-import typings.ethereumjsTx.typesMod.BufferLike
-import typings.ethereumjsTx.typesMod.FakeTxData
-import typings.ethereumjsTx.typesMod.PrefixedHexString
-import typings.ethereumjsTx.typesMod.TransactionOptions
-import typings.ethereumjsTx.typesMod.TxData
+import typings.ethereumjsTx.distFakeMod.default
+import typings.ethereumjsTx.distTypesMod.BufferLike
+import typings.ethereumjsTx.distTypesMod.FakeTxData
+import typings.ethereumjsTx.distTypesMod.PrefixedHexString
+import typings.ethereumjsTx.distTypesMod.TransactionOptions
+import typings.ethereumjsTx.distTypesMod.TxData
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -59,7 +59,7 @@ object mod {
     * ```
     */
   open class Transaction ()
-    extends typings.ethereumjsTx.transactionMod.default {
+    extends typings.ethereumjsTx.distTransactionMod.default {
     def this(data: js.Array[BufferLike]) = this()
     def this(data: PrefixedHexString) = this()
     def this(data: TxData) = this()

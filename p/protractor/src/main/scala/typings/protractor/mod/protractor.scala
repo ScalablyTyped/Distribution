@@ -10,7 +10,7 @@ object protractor extends Shortcut {
   
   @JSImport("protractor", "protractor")
   @js.native
-  val ^ : typings.protractor.ptorMod.Ptor = js.native
+  val ^ : typings.protractor.builtPtorMod.Ptor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("protractor", "protractor.Builder")
@@ -62,7 +62,7 @@ object protractor extends Shortcut {
       *     capabilities.
       * @constructor
       */
-    def this(id: String, capabilities: typings.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
+    def this(id: String, capabilities: typings.seleniumWebdriver.libCapabilitiesMod.Capabilities) = this()
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -110,8 +110,8 @@ object protractor extends Shortcut {
     ) = this()
   }
   
-  type _To = typings.protractor.ptorMod.Ptor
+  type _To = typings.protractor.builtPtorMod.Ptor
   
   /* This means you don't have to write `^`, but can instead just say `protractor.foo` */
-  override def _to: typings.protractor.ptorMod.Ptor = ^
+  override def _to: typings.protractor.builtPtorMod.Ptor = ^
 }

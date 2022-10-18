@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsChevronRightSmallMod.ChevronRightSmallProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsChevronRightSmallMod.ChevronRightSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chevronRightSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/ChevronRightSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/ChevronRightSmall", JSImport.Default)
   @js.native
   val default: FC[ChevronRightSmallProps] = js.native
   

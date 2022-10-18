@@ -10,8 +10,7 @@ sealed trait ExternalErrorCellValueSubType extends StObject
   * Represents types of #EXTERNAL! errors.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 @JSGlobal("Excel.ExternalErrorCellValueSubType")
 @js.native
@@ -21,8 +20,7 @@ object ExternalErrorCellValueSubType extends StObject {
     * An unknown type of error. Displays as error type #EXTERNAL! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait unknown

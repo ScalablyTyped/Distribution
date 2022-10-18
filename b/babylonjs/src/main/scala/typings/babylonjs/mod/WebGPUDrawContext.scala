@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.webgpuBufferManagerMod.WebGPUBufferManager
+import typings.babylonjs.enginesWebGPUWebgpuBufferManagerMod.WebGPUBufferManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebGPUDrawContext")
 @js.native
 open class WebGPUDrawContext protected ()
-  extends typings.babylonjs.legacyMod.WebGPUDrawContext {
+  extends typings.babylonjs.legacyLegacyMod.WebGPUDrawContext {
   def this(bufferManager: WebGPUBufferManager) = this()
 }
 /* static members */

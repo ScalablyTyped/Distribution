@@ -1,6 +1,6 @@
 package typings.photoshop
 
-import typings.photoshop.coreModulesMod.ColorConversionModel
+import typings.photoshop.domCoreModulesMod.ColorConversionModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

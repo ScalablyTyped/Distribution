@@ -13,7 +13,7 @@ object utilsMod {
   @JSImport("lodash-decorators/utils", "CompositeKeyWeakMap")
   @js.native
   open class CompositeKeyWeakMap[T] ()
-    extends typings.lodashDecorators.compositeKeyWeakMapMod.CompositeKeyWeakMap[T]
+    extends typings.lodashDecorators.utilsCompositeKeyWeakMapMod.CompositeKeyWeakMap[T]
   
   inline def assignAll[T, U](to: T, from: U): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assignAll")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def assignAll[T, U](to: T, from: U, excludes: js.Array[String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assignAll")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[T]

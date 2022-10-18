@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.ReadonlyICustomizerProps
-import typings.uifabricUtilities.customizerTypesMod.ICustomizerProps
+import typings.uifabricUtilities.libCustomizationsCustomizerDottypesMod.ICustomizerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("office-ui-fabric-react", "Customizer")
 @js.native
 open class Customizer protected ()
-  extends typings.officeUiFabricReact.utilitiesMod.Customizer {
+  extends typings.officeUiFabricReact.libUtilitiesMod.Customizer {
   def this(props: ReadonlyICustomizerProps) = this()
   def this(props: ICustomizerProps) = this()
   /**

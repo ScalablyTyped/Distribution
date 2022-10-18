@@ -1,7 +1,7 @@
 package typings.storybookTheming.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.storybookTheming.anon.Border
+import typings.storybookTheming.anon.Background
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,7 @@ trait Theme
   
   var easing: Easing
   
-  var input: Border
+  var input: Background
   
   var layoutMargin: Double
   
@@ -52,7 +52,7 @@ object Theme {
     code: StringDictionary[String | js.Object],
     color: Color_,
     easing: Easing,
-    input: Border,
+    input: Background,
     layoutMargin: Double,
     typography: Typography_
   ): Theme = {
@@ -84,7 +84,7 @@ object Theme {
     
     inline def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    inline def setInput(value: Border): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Background): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setLayoutMargin(value: Double): Self = StObject.set(x, "layoutMargin", value.asInstanceOf[js.Any])
     

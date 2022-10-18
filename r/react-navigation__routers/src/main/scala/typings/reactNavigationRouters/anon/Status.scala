@@ -1,6 +1,6 @@
 package typings.reactNavigationRouters.anon
 
-import typings.reactNavigationRouters.drawerRouterMod.DrawerStatus
+import typings.reactNavigationRouters.libTypescriptSrcDrawerRouterMod.DrawerStatus
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.drawer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

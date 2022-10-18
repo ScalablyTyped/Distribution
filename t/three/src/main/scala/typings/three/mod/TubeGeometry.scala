@@ -14,19 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [closed=false]
   */
 open class TubeGeometry ()
-  extends typings.three.threeMod.TubeGeometry {
-  def this(path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3]) = this()
+  extends typings.three.srcThreeMod.TubeGeometry {
+  def this(path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3]) = this()
   def this(path: Unit, tubularSegments: Double) = this()
-  def this(path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3], tubularSegments: Double) = this()
+  def this(
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
+    tubularSegments: Double
+  ) = this()
   def this(path: Unit, tubularSegments: Double, radius: Double) = this()
   def this(path: Unit, tubularSegments: Unit, radius: Double) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Double,
     radius: Double
   ) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Unit,
     radius: Double
   ) = this()
@@ -35,25 +38,25 @@ open class TubeGeometry ()
   def this(path: Unit, tubularSegments: Unit, radius: Double, radiusSegments: Double) = this()
   def this(path: Unit, tubularSegments: Unit, radius: Unit, radiusSegments: Double) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Double,
     radius: Double,
     radiusSegments: Double
   ) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Double,
     radius: Unit,
     radiusSegments: Double
   ) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Unit,
     radius: Double,
     radiusSegments: Double
   ) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Unit,
     radius: Unit,
     radiusSegments: Double
@@ -67,56 +70,56 @@ open class TubeGeometry ()
   def this(path: Unit, tubularSegments: Unit, radius: Unit, radiusSegments: Double, closed: Boolean) = this()
   def this(path: Unit, tubularSegments: Unit, radius: Unit, radiusSegments: Unit, closed: Boolean) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Double,
     radius: Double,
     radiusSegments: Double,
     closed: Boolean
   ) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Double,
     radius: Double,
     radiusSegments: Unit,
     closed: Boolean
   ) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Double,
     radius: Unit,
     radiusSegments: Double,
     closed: Boolean
   ) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Double,
     radius: Unit,
     radiusSegments: Unit,
     closed: Boolean
   ) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Unit,
     radius: Double,
     radiusSegments: Double,
     closed: Boolean
   ) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Unit,
     radius: Double,
     radiusSegments: Unit,
     closed: Boolean
   ) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Unit,
     radius: Unit,
     radiusSegments: Double,
     closed: Boolean
   ) = this()
   def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    path: typings.three.srcExtrasCoreCurveMod.Curve[typings.three.srcMathVector3Mod.Vector3],
     tubularSegments: Unit,
     radius: Unit,
     radiusSegments: Unit,
@@ -130,5 +133,5 @@ object TubeGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.tubeGeometryMod.TubeGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.tubeGeometryMod.TubeGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesTubeGeometryMod.TubeGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesTubeGeometryMod.TubeGeometry]
 }

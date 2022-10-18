@@ -4,21 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0`[TData] extends StObject {
+trait `0` extends StObject {
   
-  var data: js.UndefOr[TData] = js.undefined
+  var children: String | Double | Boolean | (js.Array[Null | String | Double | Boolean])
 }
 object `0` {
   
-  inline def apply[TData](): `0`[TData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`0`[TData]]
+  inline def apply(children: String | Double | Boolean | (js.Array[Null | String | Double | Boolean])): `0` = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`0`]
   }
   
-  extension [Self <: `0`[?], TData](x: Self & `0`[TData]) {
+  extension [Self <: `0`](x: Self) {
     
-    inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setChildren(value: String | Double | Boolean | (js.Array[Null | String | Double | Boolean])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setChildrenVarargs(value: (Null | String | Double | Boolean)*): Self = StObject.set(x, "children", js.Array(value*))
   }
 }

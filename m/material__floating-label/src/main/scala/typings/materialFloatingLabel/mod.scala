@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@material/floating-label", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialFloatingLabel.foundationMod.default {
+    def this(adapter: PartialMDCFloatingLabelAd) = this()
+  }
+  
   @JSImport("@material/floating-label", "MDCFloatingLabel")
   @js.native
   open class MDCFloatingLabel protected ()

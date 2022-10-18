@@ -1,41 +1,39 @@
 package typings.fpTs.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.altMod.Alt1
-import typings.fpTs.alternativeMod.Alternative1
 import typings.fpTs.anon.Fn14
-import typings.fpTs.applicativeMod.Applicative1
-import typings.fpTs.applyMod.Apply1
-import typings.fpTs.chainMod.Chain1
-import typings.fpTs.compactableMod.Compactable1
-import typings.fpTs.eitherMod.Either_
-import typings.fpTs.eqMod.Eq
-import typings.fpTs.extendMod.Extend1
-import typings.fpTs.filterableMod.Filterable1
-import typings.fpTs.foldableMod.Foldable1
-import typings.fpTs.fromEitherMod.FromEither1
-import typings.fpTs.functionMod.Lazy
-import typings.fpTs.functorMod.Functor1
-import typings.fpTs.monadMod.Monad1
-import typings.fpTs.monadThrowMod.MonadThrow1
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.naturalTransformationMod.NaturalTransformation21
-import typings.fpTs.optionMod.Option_
-import typings.fpTs.ordMod.Ord_
-import typings.fpTs.pointedMod.Pointed1
-import typings.fpTs.predicateMod.Predicate
-import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
-import typings.fpTs.refinementMod.Refinement
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.separatedMod.Separated_
-import typings.fpTs.showMod.Show
-import typings.fpTs.traversableMod.PipeableTraverse1
-import typings.fpTs.traversableMod.Sequence1
-import typings.fpTs.traversableMod.Traversable1
-import typings.fpTs.witherableMod.PipeableWilt1
-import typings.fpTs.witherableMod.PipeableWither1
-import typings.fpTs.witherableMod.Witherable1
-import typings.fpTs.zeroMod.Zero1
+import typings.fpTs.libAltMod.Alt1
+import typings.fpTs.libAlternativeMod.Alternative1
+import typings.fpTs.libApplicativeMod.Applicative1
+import typings.fpTs.libApplyMod.Apply1
+import typings.fpTs.libChainMod.Chain1
+import typings.fpTs.libCompactableMod.Compactable1
+import typings.fpTs.libEitherMod.Either_
+import typings.fpTs.libEqMod.Eq
+import typings.fpTs.libExtendMod.Extend1
+import typings.fpTs.libFilterableMod.Filterable1
+import typings.fpTs.libFoldableMod.Foldable1
+import typings.fpTs.libFromEitherMod.FromEither1
+import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctorMod.Functor1
+import typings.fpTs.libMonadMod.Monad1
+import typings.fpTs.libMonadThrowMod.MonadThrow1
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libOptionMod.Option_
+import typings.fpTs.libOrdMod.Ord_
+import typings.fpTs.libPointedMod.Pointed1
+import typings.fpTs.libPredicateMod.Predicate
+import typings.fpTs.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
+import typings.fpTs.libRefinementMod.Refinement
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libSeparatedMod.Separated_
+import typings.fpTs.libShowMod.Show
+import typings.fpTs.libTraversableMod.PipeableTraverse1
+import typings.fpTs.libTraversableMod.Sequence1
+import typings.fpTs.libTraversableMod.Traversable1
+import typings.fpTs.libWitherableMod.PipeableWilt1
+import typings.fpTs.libWitherableMod.PipeableWither1
+import typings.fpTs.libWitherableMod.Witherable1
+import typings.fpTs.libZeroMod.Zero1
 import typings.std.Exclude
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -50,11 +48,11 @@ object option {
   
   @JSImport("fp-ts", "option.Alt")
   @js.native
-  val Alt_ : Alt1[typings.fpTs.optionMod.URI] = js.native
+  val Alt_ : Alt1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.Alternative")
   @js.native
-  val Alternative: Alternative1[typings.fpTs.optionMod.URI] = js.native
+  val Alternative: Alternative1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.ApT")
   @js.native
@@ -62,19 +60,19 @@ object option {
   
   @JSImport("fp-ts", "option.Applicative")
   @js.native
-  val Applicative: Applicative1[typings.fpTs.optionMod.URI] = js.native
+  val Applicative: Applicative1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.Apply")
   @js.native
-  val Apply: Apply1[typings.fpTs.optionMod.URI] = js.native
+  val Apply: Apply1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.Chain")
   @js.native
-  val Chain_ : Chain1[typings.fpTs.optionMod.URI] = js.native
+  val Chain_ : Chain1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.Compactable")
   @js.native
-  val Compactable: Compactable1[typings.fpTs.optionMod.URI] = js.native
+  val Compactable: Compactable1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.Do")
   @js.native
@@ -82,39 +80,39 @@ object option {
   
   @JSImport("fp-ts", "option.Extend")
   @js.native
-  val Extend_ : Extend1[typings.fpTs.optionMod.URI] = js.native
+  val Extend_ : Extend1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.Filterable")
   @js.native
-  val Filterable: Filterable1[typings.fpTs.optionMod.URI] = js.native
+  val Filterable: Filterable1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.Foldable")
   @js.native
-  val Foldable: Foldable1[typings.fpTs.optionMod.URI] = js.native
+  val Foldable: Foldable1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.FromEither")
   @js.native
-  val FromEither_ : FromEither1[typings.fpTs.optionMod.URI] = js.native
+  val FromEither_ : FromEither1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.Functor")
   @js.native
-  val Functor: Functor1[typings.fpTs.optionMod.URI] = js.native
+  val Functor: Functor1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.Monad")
   @js.native
-  val Monad: Monad1[typings.fpTs.optionMod.URI] = js.native
+  val Monad: Monad1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.MonadThrow")
   @js.native
-  val MonadThrow: MonadThrow1[typings.fpTs.optionMod.URI] = js.native
+  val MonadThrow: MonadThrow1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.Pointed")
   @js.native
-  val Pointed: Pointed1[typings.fpTs.optionMod.URI] = js.native
+  val Pointed: Pointed1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.Traversable")
   @js.native
-  val Traversable: Traversable1[typings.fpTs.optionMod.URI] = js.native
+  val Traversable: Traversable1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.URI")
   @js.native
@@ -122,11 +120,11 @@ object option {
   
   @JSImport("fp-ts", "option.Witherable")
   @js.native
-  val Witherable: Witherable1[typings.fpTs.optionMod.URI] = js.native
+  val Witherable: Witherable1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.Zero")
   @js.native
-  val Zero_ : Zero1[typings.fpTs.optionMod.URI] = js.native
+  val Zero_ : Zero1[typings.fpTs.libOptionMod.URI] = js.native
   
   inline def alt[A](that: Lazy[Option_[A]]): js.Function1[/* fa */ Option_[A], Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[A]]]
   
@@ -139,16 +137,12 @@ object option {
   inline def apS[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], fb: Option_[B]): js.Function1[
     /* fa */ Option_[A], 
     Option_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apS")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ Option_[A], 
     Option_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -157,32 +151,24 @@ object option {
   inline def bind[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, Option_[B]]): js.Function1[
     /* ma */ Option_[A], 
     Option_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* ma */ Option_[A], 
     Option_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
   inline def bindTo[N /* <: String */](name: N): js.Function1[
     /* fa */ Option_[Any], 
     Option_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindTo")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* fa */ Option_[Any], 
     Option_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ]]
   
@@ -222,9 +208,7 @@ object option {
   
   inline def foldW[B, A, C](onNone: Lazy[B], onSome: js.Function1[/* a */ A, C]): js.Function1[/* ma */ Option_[A], B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldW")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Option_[A], B | C]]
   
-  @JSImport("fp-ts", "option.fromEither")
-  @js.native
-  val fromEither: NaturalTransformation21[typings.fpTs.eitherMod.URI, typings.fpTs.optionMod.URI] = js.native
+  inline def fromEither[A](fa: Either_[Any, A]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEither")(fa.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
   
   inline def fromEitherK[E, A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[/* a */ A, Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, Option_[B]]]
   
@@ -268,6 +252,18 @@ object option {
   
   inline def isSome[A](fa: Option_[A]): /* is fp-ts.fp-ts/lib/Option.Some<A> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSome")(fa.asInstanceOf[js.Any]).asInstanceOf[/* is fp-ts.fp-ts/lib/Option.Some<A> */ Boolean]
   
+  inline def let[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, B]): js.Function1[
+    /* fa */ Option_[A], 
+    Option_[
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("let")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* fa */ Option_[A], 
+    Option_[
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ]]
+  
   inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[B]]]
   
   inline def mapNullable[A, B](f: js.Function1[/* a */ A, js.UndefOr[B | Null]]): js.Function1[/* ma */ Option_[A], Option_[NonNullable[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapNullable")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], Option_[NonNullable[B]]]]
@@ -280,16 +276,11 @@ object option {
   @js.native
   val none: Option_[scala.Nothing] = js.native
   
-  @JSImport("fp-ts", "option.of")
-  @js.native
-  val of: js.Function1[
-    /* a */ Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
-  ] = js.native
+  inline def of[A](a: A): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
   
   @JSImport("fp-ts", "option.option")
   @js.native
-  val option: Monad1[typings.fpTs.optionMod.URI] & Foldable1[typings.fpTs.optionMod.URI] & Alternative1[typings.fpTs.optionMod.URI] & Extend1[typings.fpTs.optionMod.URI] & Witherable1[typings.fpTs.optionMod.URI] & MonadThrow1[typings.fpTs.optionMod.URI] = js.native
+  val option: Monad1[typings.fpTs.libOptionMod.URI] & Foldable1[typings.fpTs.libOptionMod.URI] & Alternative1[typings.fpTs.libOptionMod.URI] & Extend1[typings.fpTs.libOptionMod.URI] & Witherable1[typings.fpTs.libOptionMod.URI] & MonadThrow1[typings.fpTs.libOptionMod.URI] = js.native
   
   inline def partition[A](predicate: Predicate[A]): js.Function1[/* fb */ Option_[A], Separated_[Option_[A], Option_[A]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ Option_[A], Separated_[Option_[A], Option_[A]]]]
   
@@ -305,7 +296,7 @@ object option {
   
   @JSImport("fp-ts", "option.sequence")
   @js.native
-  val sequence: Sequence1[typings.fpTs.optionMod.URI] = js.native
+  val sequence: Sequence1[typings.fpTs.libOptionMod.URI] = js.native
   
   inline def sequenceArray[A](arr: js.Array[Option_[A]]): Option_[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Option_[js.Array[A]]]
   
@@ -324,7 +315,7 @@ object option {
   
   @JSImport("fp-ts", "option.traverse")
   @js.native
-  val traverse: PipeableTraverse1[typings.fpTs.optionMod.URI] = js.native
+  val traverse: PipeableTraverse1[typings.fpTs.libOptionMod.URI] = js.native
   
   inline def traverseArray[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* as */ js.Array[A], Option_[js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseArray")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Option_[js.Array[B]]]]
   
@@ -340,18 +331,15 @@ object option {
   
   @JSImport("fp-ts", "option.wilt")
   @js.native
-  val wilt: PipeableWilt1[typings.fpTs.optionMod.URI] = js.native
+  val wilt: PipeableWilt1[typings.fpTs.libOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "option.wither")
   @js.native
-  val wither: PipeableWither1[typings.fpTs.optionMod.URI] = js.native
+  val wither: PipeableWither1[typings.fpTs.libOptionMod.URI] = js.native
   
-  @JSImport("fp-ts", "option.zero")
-  @js.native
-  val zero: js.Function0[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
-  ] = js.native
+  inline def zero[A](): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[Option_[A]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native

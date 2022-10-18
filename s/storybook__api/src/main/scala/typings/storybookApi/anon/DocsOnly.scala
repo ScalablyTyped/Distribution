@@ -8,7 +8,7 @@ trait DocsOnly extends StObject {
   
   var docsOnly: js.UndefOr[Boolean] = js.undefined
   
-  var viewMode: js.UndefOr[typings.storybookApi.addonsMod.ViewMode] = js.undefined
+  var viewMode: js.UndefOr[typings.storybookApi.distTs3Dot9ModulesAddonsMod.ViewMode] = js.undefined
 }
 object DocsOnly {
   
@@ -23,7 +23,7 @@ object DocsOnly {
     
     inline def setDocsOnlyUndefined: Self = StObject.set(x, "docsOnly", js.undefined)
     
-    inline def setViewMode(value: typings.storybookApi.addonsMod.ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: typings.storybookApi.distTs3Dot9ModulesAddonsMod.ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     
     inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
   }

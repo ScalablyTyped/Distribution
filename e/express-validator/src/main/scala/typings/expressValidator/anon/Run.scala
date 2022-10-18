@@ -1,7 +1,7 @@
 package typings.expressValidator.anon
 
-import typings.expressValidator.baseMod.Request
-import typings.expressValidator.validationResultMod.Result
+import typings.expressValidator.srcBaseMod.Request
+import typings.expressValidator.srcValidationResultMod.Result
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

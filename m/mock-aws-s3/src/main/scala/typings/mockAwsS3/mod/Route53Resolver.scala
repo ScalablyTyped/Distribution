@@ -1,6 +1,6 @@
 package typings.mockAwsS3.mod
 
-import typings.awsSdk.route53resolverMod.ClientConfiguration
+import typings.awsSdk.clientsRoute53resolverMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

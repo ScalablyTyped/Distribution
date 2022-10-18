@@ -6,6 +6,8 @@ import typings.jsonfile.anon.FnCall
 import typings.jsonfile.anon.FnCallFileDataOptions
 import typings.jsonfile.anon.TypeoffsReadFile
 import typings.jsonfile.anon.TypeoffsWriteFile
+import typings.node.NodeJS.ArrayBufferView
+import typings.node.NodeJS.ErrnoException
 import typings.node.anon.EncodingFlag
 import typings.node.anon.Flag
 import typings.node.anon.ObjectEncodingOptionsflagEncoding
@@ -61,8 +63,8 @@ object mod {
     
     def writeFileSync(file: PathOrFileDescriptor, data: String): Unit
     def writeFileSync(file: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit
-    def writeFileSync(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView): Unit
-    def writeFileSync(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView, options: WriteFileOptions): Unit
+    def writeFileSync(file: PathOrFileDescriptor, data: ArrayBufferView): Unit
+    def writeFileSync(file: PathOrFileDescriptor, data: ArrayBufferView, options: WriteFileOptions): Unit
     @JSName("writeFileSync")
     var writeFileSync_Original: FnCallFileDataOptions
   }
@@ -96,14 +98,7 @@ object mod {
   
   type Path = PathLike | Url
   
-  type ReadCallback = js.Function2[
-    /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-    /* data */ Any, 
-    Unit
-  ]
+  type ReadCallback = js.Function2[/* err */ ErrnoException | Null, /* data */ Any, Unit]
   
-  type WriteCallback = js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-    Unit
-  ]
+  type WriteCallback = js.Function1[/* err */ ErrnoException, Unit]
 }

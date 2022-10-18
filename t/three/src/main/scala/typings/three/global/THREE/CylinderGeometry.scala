@@ -36,5 +36,5 @@ object CylinderGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.cylinderGeometryMod.CylinderGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.cylinderGeometryMod.CylinderGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesCylinderGeometryMod.CylinderGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesCylinderGeometryMod.CylinderGeometry]
 }

@@ -1,6 +1,6 @@
 package typings.ngtoolsWebpack
 
-import typings.ngtoolsWebpack.systemMod.InputFileSystem
+import typings.ngtoolsWebpack.srcIvySystemMod.InputFileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

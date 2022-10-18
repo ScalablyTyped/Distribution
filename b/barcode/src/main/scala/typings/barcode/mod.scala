@@ -1,6 +1,7 @@
 package typings.barcode
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ErrnoException
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,47 +41,18 @@ object mod {
   
   trait BarcodeResult extends StObject {
     
-    def getBase64(
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* base64String */ String, 
-          Unit
-        ]
-    ): Unit
+    def getBase64(callback: js.Function2[/* err */ ErrnoException, /* base64String */ String, Unit]): Unit
     
-    def getStream(
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* stream */ ReadableStream[Any], 
-          Unit
-        ]
-    ): Unit
+    def getStream(callback: js.Function2[/* err */ ErrnoException, /* stream */ ReadableStream, Unit]): Unit
     
-    def saveImage(
-      outputfilePath: String,
-      callback: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          Unit
-        ]
-    ): Unit
+    def saveImage(outputfilePath: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit
   }
   object BarcodeResult {
     
     inline def apply(
-      getBase64: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* base64String */ String, 
-          Unit
-        ] => Unit,
-      getStream: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* stream */ ReadableStream[Any], 
-          Unit
-        ] => Unit,
-      saveImage: (String, js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          Unit
-        ]) => Unit
+      getBase64: js.Function2[/* err */ ErrnoException, /* base64String */ String, Unit] => Unit,
+      getStream: js.Function2[/* err */ ErrnoException, /* stream */ ReadableStream, Unit] => Unit,
+      saveImage: (String, js.Function1[/* err */ ErrnoException, Unit]) => Unit
     ): BarcodeResult = {
       val __obj = js.Dynamic.literal(getBase64 = js.Any.fromFunction1(getBase64), getStream = js.Any.fromFunction1(getStream), saveImage = js.Any.fromFunction2(saveImage))
       __obj.asInstanceOf[BarcodeResult]
@@ -88,28 +60,11 @@ object mod {
     
     extension [Self <: BarcodeResult](x: Self) {
       
-      inline def setGetBase64(
-        value: js.Function2[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-              /* base64String */ String, 
-              Unit
-            ] => Unit
-      ): Self = StObject.set(x, "getBase64", js.Any.fromFunction1(value))
+      inline def setGetBase64(value: js.Function2[/* err */ ErrnoException, /* base64String */ String, Unit] => Unit): Self = StObject.set(x, "getBase64", js.Any.fromFunction1(value))
       
-      inline def setGetStream(
-        value: js.Function2[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-              /* stream */ ReadableStream[Any], 
-              Unit
-            ] => Unit
-      ): Self = StObject.set(x, "getStream", js.Any.fromFunction1(value))
+      inline def setGetStream(value: js.Function2[/* err */ ErrnoException, /* stream */ ReadableStream, Unit] => Unit): Self = StObject.set(x, "getStream", js.Any.fromFunction1(value))
       
-      inline def setSaveImage(
-        value: (String, js.Function1[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-              Unit
-            ]) => Unit
-      ): Self = StObject.set(x, "saveImage", js.Any.fromFunction2(value))
+      inline def setSaveImage(value: (String, js.Function1[/* err */ ErrnoException, Unit]) => Unit): Self = StObject.set(x, "saveImage", js.Any.fromFunction2(value))
     }
   }
 }

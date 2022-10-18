@@ -1,6 +1,6 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvComponent.typesMod.LegendTitleCfg
+import typings.antvComponent.libTypesMod.LegendTitleCfg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

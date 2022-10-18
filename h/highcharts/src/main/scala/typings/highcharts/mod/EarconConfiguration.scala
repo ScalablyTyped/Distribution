@@ -21,7 +21,7 @@ trait EarconConfiguration extends StObject {
   /**
     * An Earcon instance.
     */
-  var earcon: typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon
+  var earcon: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon
   
   /**
     * The ID of the point to play the Earcon on.
@@ -30,7 +30,7 @@ trait EarconConfiguration extends StObject {
 }
 object EarconConfiguration {
   
-  inline def apply(earcon: typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon): EarconConfiguration = {
+  inline def apply(earcon: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon): EarconConfiguration = {
     val __obj = js.Dynamic.literal(earcon = earcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[EarconConfiguration]
   }
@@ -41,7 +41,7 @@ object EarconConfiguration {
     
     inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    inline def setEarcon(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon): Self = StObject.set(x, "earcon", value.asInstanceOf[js.Any])
+    inline def setEarcon(value: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon): Self = StObject.set(x, "earcon", value.asInstanceOf[js.Any])
     
     inline def setOnPoint(value: String): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
     

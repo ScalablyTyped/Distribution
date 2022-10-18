@@ -60,7 +60,7 @@ object MathUtils {
   inline def seededRandom(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("seededRandom")().asInstanceOf[Double]
   inline def seededRandom(seed: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("seededRandom")(seed.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def setQuaternionFromProperEuler(q: typings.three.quaternionMod.Quaternion, a: Double, b: Double, c: Double, order: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setQuaternionFromProperEuler")(q.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setQuaternionFromProperEuler(q: typings.three.srcMathQuaternionMod.Quaternion, a: Double, b: Double, c: Double, order: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setQuaternionFromProperEuler")(q.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def smootherstep(x: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("smootherstep")(x.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   

@@ -27,7 +27,7 @@ object DetectedFaces {
     
     inline def setImages(value: js.Array[ImageWithFaces]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    inline def setImagesVarargs(value: ImageWithFaces*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: ImageWithFaces*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setImages_processed(value: Double): Self = StObject.set(x, "images_processed", value.asInstanceOf[js.Any])
     
@@ -35,6 +35,6 @@ object DetectedFaces {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: WarningInfo*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: WarningInfo*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

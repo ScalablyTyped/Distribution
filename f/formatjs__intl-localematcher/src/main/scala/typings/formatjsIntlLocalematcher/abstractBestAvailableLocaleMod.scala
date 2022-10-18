@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object abstractBestAvailableLocaleMod {
   
-  @JSImport("@formatjs/intl-localematcher/lib/abstract/BestAvailableLocale", JSImport.Namespace)
+  @JSImport("@formatjs/intl-localematcher/abstract/BestAvailableLocale", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

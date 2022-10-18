@@ -1,7 +1,7 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathVectorMod.Vector3
-import typings.babylonjs.physicsImpostorMod.PhysicsImpostor
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
+import typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostor
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

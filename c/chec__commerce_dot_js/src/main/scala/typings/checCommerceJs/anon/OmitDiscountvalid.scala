@@ -1,7 +1,7 @@
 package typings.checCommerceJs.anon
 
-import typings.checCommerceJs.discountMod.DiscountType
-import typings.checCommerceJs.priceMod.Price
+import typings.checCommerceJs.typesDiscountMod.DiscountType
+import typings.checCommerceJs.typesPriceMod.Price
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

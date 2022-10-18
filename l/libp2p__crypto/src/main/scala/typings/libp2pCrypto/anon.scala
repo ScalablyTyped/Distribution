@@ -2,12 +2,12 @@ package typings.libp2pCrypto
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.libp2pCrypto.ed25519ClassMod.Ed25519PrivateKey
-import typings.libp2pCrypto.ed25519ClassMod.Ed25519PublicKey
-import typings.libp2pCrypto.rsaClassMod.RsaPrivateKey
-import typings.libp2pCrypto.rsaClassMod.RsaPublicKey
-import typings.libp2pCrypto.secp256k1ClassMod.Secp256k1PrivateKey
-import typings.libp2pCrypto.secp256k1ClassMod.Secp256k1PublicKey
+import typings.libp2pCrypto.distSrcKeysEd25519ClassMod.Ed25519PrivateKey
+import typings.libp2pCrypto.distSrcKeysEd25519ClassMod.Ed25519PublicKey
+import typings.libp2pCrypto.distSrcKeysRsaClassMod.RsaPrivateKey
+import typings.libp2pCrypto.distSrcKeysRsaClassMod.RsaPublicKey
+import typings.libp2pCrypto.distSrcKeysSecp256k1ClassMod.Secp256k1PrivateKey
+import typings.libp2pCrypto.distSrcKeysSecp256k1ClassMod.Secp256k1PublicKey
 import typings.node.bufferMod.global.Buffer
 import typings.std.JsonWebKey
 import org.scalablytyped.runtime.StObject
@@ -81,20 +81,20 @@ object anon {
   
   trait Digest extends StObject {
     
-    def digest(data: js.typedarray.Uint8Array): js.Promise[js.typedarray.Uint8Array]
+    def digest(data: js.typedarray.Uint8Array): js.Promise[Buffer]
     
     var length: Double
   }
   object Digest {
     
-    inline def apply(digest: js.typedarray.Uint8Array => js.Promise[js.typedarray.Uint8Array], length: Double): Digest = {
+    inline def apply(digest: js.typedarray.Uint8Array => js.Promise[Buffer], length: Double): Digest = {
       val __obj = js.Dynamic.literal(digest = js.Any.fromFunction1(digest), length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[Digest]
     }
     
     extension [Self <: Digest](x: Self) {
       
-      inline def setDigest(value: js.typedarray.Uint8Array => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
+      inline def setDigest(value: js.typedarray.Uint8Array => js.Promise[Buffer]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -123,20 +123,20 @@ object anon {
   
   trait Length extends StObject {
     
-    def digest(data: js.typedarray.Uint8Array): js.Promise[Buffer]
+    def digest(data: js.typedarray.Uint8Array): js.Promise[js.typedarray.Uint8Array]
     
     var length: Double
   }
   object Length {
     
-    inline def apply(digest: js.typedarray.Uint8Array => js.Promise[Buffer], length: Double): Length = {
+    inline def apply(digest: js.typedarray.Uint8Array => js.Promise[js.typedarray.Uint8Array], length: Double): Length = {
       val __obj = js.Dynamic.literal(digest = js.Any.fromFunction1(digest), length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[Length]
     }
     
     extension [Self <: Length](x: Self) {
       
-      inline def setDigest(value: js.typedarray.Uint8Array => js.Promise[Buffer]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
+      inline def setDigest(value: js.typedarray.Uint8Array => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -189,12 +189,12 @@ object anon {
     var Ed25519PrivateKey: Instantiable2[
         /* key */ js.typedarray.Uint8Array, 
         /* publicKey */ js.typedarray.Uint8Array, 
-        typings.libp2pCrypto.ed25519ClassMod.Ed25519PrivateKey
+        typings.libp2pCrypto.distSrcKeysEd25519ClassMod.Ed25519PrivateKey
       ]
     
     var Ed25519PublicKey: Instantiable1[
         /* key */ js.typedarray.Uint8Array, 
-        typings.libp2pCrypto.ed25519ClassMod.Ed25519PublicKey
+        typings.libp2pCrypto.distSrcKeysEd25519ClassMod.Ed25519PublicKey
       ]
     
     def generateKeyPair(): js.Promise[Ed25519PrivateKey]
@@ -250,10 +250,10 @@ object anon {
     var RsaPrivateKey: Instantiable2[
         /* key */ JsonWebKey, 
         /* publicKey */ JsonWebKey, 
-        typings.libp2pCrypto.rsaClassMod.RsaPrivateKey
+        typings.libp2pCrypto.distSrcKeysRsaClassMod.RsaPrivateKey
       ]
     
-    var RsaPublicKey: Instantiable1[/* key */ JsonWebKey, typings.libp2pCrypto.rsaClassMod.RsaPublicKey]
+    var RsaPublicKey: Instantiable1[/* key */ JsonWebKey, typings.libp2pCrypto.distSrcKeysRsaClassMod.RsaPublicKey]
     
     def fromJwk(jwk: JsonWebKey): js.Promise[RsaPrivateKey]
     
@@ -298,12 +298,12 @@ object anon {
     var Secp256k1PrivateKey: Instantiable2[
         /* key */ js.typedarray.Uint8Array, 
         /* publicKey */ js.UndefOr[js.typedarray.Uint8Array], 
-        typings.libp2pCrypto.secp256k1ClassMod.Secp256k1PrivateKey
+        typings.libp2pCrypto.distSrcKeysSecp256k1ClassMod.Secp256k1PrivateKey
       ]
     
     var Secp256k1PublicKey: Instantiable1[
         /* key */ js.typedarray.Uint8Array, 
-        typings.libp2pCrypto.secp256k1ClassMod.Secp256k1PublicKey
+        typings.libp2pCrypto.distSrcKeysSecp256k1ClassMod.Secp256k1PublicKey
       ]
     
     def generateKeyPair(): js.Promise[Secp256k1PrivateKey]

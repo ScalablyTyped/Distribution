@@ -1,10 +1,10 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.exprMod.Expr
-import typings.vegaTypings.marktypeMod.MarkType
-import typings.vegaTypings.streamMod.EventStream
-import typings.vegaTypings.streamMod.EventType
-import typings.vegaTypings.streamMod.Stream
+import typings.vegaTypings.typesSpecExprMod.Expr
+import typings.vegaTypings.typesSpecMarktypeMod.MarkType
+import typings.vegaTypings.typesSpecStreamMod.EventStream
+import typings.vegaTypings.typesSpecStreamMod.EventType
+import typings.vegaTypings.typesSpecStreamMod.Stream
 import typings.vegaTypings.vegaTypingsStrings.scope
 import typings.vegaTypings.vegaTypingsStrings.view
 import org.scalablytyped.runtime.StObject

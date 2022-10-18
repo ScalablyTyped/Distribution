@@ -1,10 +1,10 @@
 package typings.redisSearch.anon
 
-import typings.redisClient.libCommandsMod.RedisCommandArguments
-import typings.redisSearch.commandsMod.ProfileOptions
-import typings.redisSearch.commandsMod.ProfileReply
-import typings.redisSearch.profileSEARCHMod.ProfileSearchRawReply
-import typings.redisSearch.searchMod.SearchOptions
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisSearch.distCommandsMod.ProfileOptions
+import typings.redisSearch.distCommandsMod.ProfileReply
+import typings.redisSearch.distCommandsProfileSEARCHMod.ProfileSearchRawReply
+import typings.redisSearch.distCommandsSearchMod.SearchOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

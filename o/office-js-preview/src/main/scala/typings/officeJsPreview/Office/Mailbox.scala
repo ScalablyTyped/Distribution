@@ -176,23 +176,23 @@ trait Mailbox extends StObject {
   /**
     * Provides diagnostic information to an Outlook add-in.
     *
-    * Contains the following members:
+    * Contains the following members.
     *
-    *  - `hostName` (string): A string that represents the name of the host application.
+    *  - `hostName` (string): A string that represents the name of the Office application.
     * It should be one of the following values: `Outlook`, `OutlookWebApp`, `OutlookIOS`, or `OutlookAndroid`.
     * **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
     *
-    *  - `hostVersion` (string): A string that represents the version of either the host application or the Exchange Server (e.g., "15.0.468.0").
+    *  - `hostVersion` (string): A string that represents the version of either the Office application or the Exchange Server (e.g., "15.0.468.0").
     * If the mail add-in is running in Outlook on desktop or mobile clients, the `hostVersion` property returns the version of the
-    * host application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server.
+    * application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server.
     *
     *  - `OWAView` (`MailboxEnums.OWAView` or string): An enum (or string literal) that represents the current view of Outlook on the web.
-    * If the host application is not Outlook on the web, then accessing this property results in undefined.
+    * If the application is not Outlook on the web, then accessing this property results in undefined.
     * Outlook on the web has three views (`OneColumn` - displayed when the screen is narrow, `TwoColumns` - displayed when the screen is wider,
     * and `ThreeColumns` - displayed when the screen is wide) that correspond to the width of the screen and the window, and the number of columns
     * that can be displayed.
     *
-    *  More information is under {@link Office.Diagnostics}.
+    * More information is under {@link Office.Diagnostics}.
     *
     * @remarks
     *
@@ -201,7 +201,7 @@ trait Mailbox extends StObject {
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     * 
     * Starting with Mailbox requirement set 1.5, you can also use the 
-    * {@link https://learn.microsoft.com/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-diagnostics-member | Office.context.diagnostics} 
+    * {@link https://learn.microsoft.com/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-diagnostics-member | Office.context.diagnostics}
     * property to get similar information.
     */
   var diagnostics: Diagnostics = js.native
@@ -288,7 +288,7 @@ trait Mailbox extends StObject {
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param itemId - The Exchange Web Services (EWS) identifier for an existing calendar appointment.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -378,7 +378,7 @@ trait Mailbox extends StObject {
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param itemId - The Exchange Web Services (EWS) identifier for an existing message.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -475,7 +475,7 @@ trait Mailbox extends StObject {
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
     *
     * @param parameters - An `AppointmentForm` describing the new appointment. All properties are optional.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -530,7 +530,7 @@ trait Mailbox extends StObject {
     *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the
     *        message body, and should not be displayed in the attachment list.
     *
-    *        `attachments.itemId`: Only used if type is set to item. The EWS item id of the existing e-mail you want to attach to the new message.
+    *        `attachments.itemId`: Only used if type is set to item. The EWS item ID of the existing e-mail you want to attach to the new message.
     *        This is a string up to 100 characters.
     */
   def displayNewMessageForm(parameters: Any): Unit = js.native
@@ -578,7 +578,7 @@ trait Mailbox extends StObject {
     *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the
     *        message body, and should not be displayed in the attachment list.
     *
-    *        `attachments.itemId`: Only used if type is set to item. The EWS item id of the existing e-mail you want to attach to the new message.
+    *        `attachments.itemId`: Only used if type is set to item. The EWS item ID of the existing e-mail you want to attach to the new message.
     *        This is a string up to 100 characters.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -628,9 +628,9 @@ trait Mailbox extends StObject {
     *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the
     *        message body, and should not be displayed in the attachment list.
     *
-    *        `attachments.itemId`: Only used if type is set to item. The EWS item id of the existing e-mail you want to attach to the new message.
+    *        `attachments.itemId`: Only used if type is set to item. The EWS item ID of the existing e-mail you want to attach to the new message.
     *        This is a string up to 100 characters.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -734,7 +734,7 @@ trait Mailbox extends StObject {
     *
     * The add-in should use the `restUrl` property to determine the correct URL to use when making REST API calls.
     *
-    * This API works for the following scopes:
+    * This API works for the following scopes.
     *
     * - `Mail.ReadWrite`
     *
@@ -775,7 +775,7 @@ trait Mailbox extends StObject {
     *
     * - `NetworkError`: The user is no longer connected to the network. Please check your network connection and try again.
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `isRest`: Determines if the token provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is `false`.
     *        `asyncContext`: Any state data that is passed to the asynchronous method.
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of
@@ -785,6 +785,58 @@ trait Mailbox extends StObject {
   def getCallbackTokenAsync(
     options: AsyncContextOptionsisRest,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
+  ): Unit = js.native
+  
+  /**
+    * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time.
+    * To learn more about item multi-select, see
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages (preview)}.
+    *
+    * @remarks
+    * [Api set: Mailbox preview]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
+    * 
+    * **Important**: This method only applies to messages.
+    *
+    * @param options - An object literal that contains one or more of the following properties:-
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the
+    *        `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode
+    *        (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.
+    * 
+    * @beta
+    */
+  def getSelectedItemsAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[js.Object]], Unit]): Unit = js.native
+  /**
+    * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time.
+    * To learn more about item multi-select, see
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages (preview)}.
+    *
+    * @remarks
+    * [Api set: Mailbox preview]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
+    * 
+    * **Important**: This method only applies to messages.
+    *
+    * @param options - An object literal that contains one or more of the following properties:-
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the
+    *        `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode
+    *        (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.
+    * 
+    * @beta
+    */
+  def getSelectedItemsAsync(
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[js.Object]], Unit]
   ): Unit = js.native
   
   /**
@@ -850,7 +902,7 @@ trait Mailbox extends StObject {
     * The XML result of the EWS call is provided as a string in the `asyncResult.value` property.
     * If the result exceeds 1 MB in size, an error message is returned instead.
     *
-    * **Note**: This method is not supported in the following scenarios:
+    * **Note**: This method is not supported in the following scenarios.
     *
     * - In Outlook on iOS or Android.
     *

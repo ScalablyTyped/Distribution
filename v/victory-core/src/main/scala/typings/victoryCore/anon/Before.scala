@@ -1,6 +1,7 @@
 package typings.victoryCore.anon
 
-import typings.victoryCore.victoryAnimationMod.AnimationStyle
+import typings.victoryCore.libTypesPropTypesMod.Datum
+import typings.victoryCore.libVictoryAnimationVictoryAnimationMod.AnimationStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Before extends StObject {
   
   var before: js.UndefOr[
-    js.Function3[
-      /* datum */ typings.victoryCore.propTypesMod.Datum, 
-      /* index */ Double, 
-      /* data */ js.Array[typings.victoryCore.propTypesMod.Datum], 
-      AnimationStyle
-    ]
+    js.Function3[/* datum */ Datum, /* index */ Double, /* data */ js.Array[Datum], AnimationStyle]
   ] = js.undefined
   
   var duration: js.UndefOr[Double] = js.undefined
@@ -27,9 +23,7 @@ object Before {
   
   extension [Self <: Before](x: Self) {
     
-    inline def setBefore(
-      value: (/* datum */ typings.victoryCore.propTypesMod.Datum, /* index */ Double, /* data */ js.Array[typings.victoryCore.propTypesMod.Datum]) => AnimationStyle
-    ): Self = StObject.set(x, "before", js.Any.fromFunction3(value))
+    inline def setBefore(value: (/* datum */ Datum, /* index */ Double, /* data */ js.Array[Datum]) => AnimationStyle): Self = StObject.set(x, "before", js.Any.fromFunction3(value))
     
     inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     

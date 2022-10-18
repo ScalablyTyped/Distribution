@@ -6,29 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MaxMd extends StObject {
   
-  var lg: `26`
+  var lg: FontSizeFontWeightLetterSpacing
   
-  var max: `27`
+  var max: `13`
   
-  var md: `25`
+  var md: FontWeightLetterSpacing
   
-  var xlg: `7`
+  var xlg: FontWeightLetterSpacingLineHeight
 }
 object MaxMd {
   
-  inline def apply(lg: `26`, max: `27`, md: `25`, xlg: `7`): MaxMd = {
+  inline def apply(
+    lg: FontSizeFontWeightLetterSpacing,
+    max: `13`,
+    md: FontWeightLetterSpacing,
+    xlg: FontWeightLetterSpacingLineHeight
+  ): MaxMd = {
     val __obj = js.Dynamic.literal(lg = lg.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], xlg = xlg.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxMd]
   }
   
   extension [Self <: MaxMd](x: Self) {
     
-    inline def setLg(value: `26`): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+    inline def setLg(value: FontSizeFontWeightLetterSpacing): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
     
-    inline def setMax(value: `27`): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: `13`): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    inline def setMd(value: `25`): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+    inline def setMd(value: FontWeightLetterSpacing): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
     
-    inline def setXlg(value: `7`): Self = StObject.set(x, "xlg", value.asInstanceOf[js.Any])
+    inline def setXlg(value: FontWeightLetterSpacingLineHeight): Self = StObject.set(x, "xlg", value.asInstanceOf[js.Any])
   }
 }

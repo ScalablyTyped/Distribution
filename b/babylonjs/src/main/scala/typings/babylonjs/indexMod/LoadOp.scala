@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object LoadOp extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.LoadOp & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.LoadOp & String] = js.native
   
-  /* "clear" */ val Clear: typings.babylonjs.webgpuConstantsMod.LoadOp.Clear & String = js.native
+  /* "clear" */ val Clear: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.LoadOp.Clear & String = js.native
   
-  /* "load" */ val Load: typings.babylonjs.webgpuConstantsMod.LoadOp.Load & String = js.native
+  /* "load" */ val Load: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.LoadOp.Load & String = js.native
 }

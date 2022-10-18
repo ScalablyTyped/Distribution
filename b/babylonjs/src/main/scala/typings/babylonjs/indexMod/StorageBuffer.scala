@@ -14,6 +14,6 @@ open class StorageBuffer protected ()
     * @param size The size of the buffer in bytes
     * @param creationFlags flags to use when creating the buffer (see Constants.BUFFER_CREATIONFLAG_XXX). The BUFFER_CREATIONFLAG_STORAGE flag will be automatically added.
     */
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, size: Double) = this()
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, size: Double, creationFlags: Double) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine, size: Double) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine, size: Double, creationFlags: Double) = this()
 }

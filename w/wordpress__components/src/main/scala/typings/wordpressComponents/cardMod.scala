@@ -218,6 +218,6 @@ object cardMod {
       inline def small: typings.wordpressComponents.wordpressComponentsStrings.small = "small".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.small]
     }
     
-    type Props[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */] = Elevation[T] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)
+    type Props[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.wordpressComponents.wordpressComponentsStrings.a, typings.wordpressComponents.wordpressComponentsStrings.abbr, typings.wordpressComponents.wordpressComponentsStrings.address */ Any */] = Elevation[T] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)
   }
 }

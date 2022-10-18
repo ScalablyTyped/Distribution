@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +12,7 @@ trait HistogramQueryResult extends StObject {
     * anonymous numeric bucket) range formatted as `-`, for example, `0-1000`, `MIN-0`, and `0-MAX`.
     */
   var histogram: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.HistogramQueryResult & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Requested histogram expression. */
@@ -31,9 +28,7 @@ object HistogramQueryResult {
   extension [Self <: HistogramQueryResult](x: Self) {
     
     inline def setHistogram(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.HistogramQueryResult & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
     
     inline def setHistogramQuery(value: String): Self = StObject.set(x, "histogramQuery", value.asInstanceOf[js.Any])

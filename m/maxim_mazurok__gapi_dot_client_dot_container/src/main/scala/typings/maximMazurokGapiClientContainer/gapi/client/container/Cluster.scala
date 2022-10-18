@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -215,9 +214,7 @@ trait Cluster extends StObject {
   
   /** The resource labels for the cluster to use to annotate any related Google Compute Engine resources. */
   var resourceLabels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.Cluster & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Configuration for exporting resource usages. Resource usage export is disabled when this config is unspecified. */
@@ -473,9 +470,7 @@ object Cluster {
     inline def setReleaseChannelUndefined: Self = StObject.set(x, "releaseChannel", js.undefined)
     
     inline def setResourceLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.Cluster & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "resourceLabels", value.asInstanceOf[js.Any])
     
     inline def setResourceLabelsUndefined: Self = StObject.set(x, "resourceLabels", js.undefined)

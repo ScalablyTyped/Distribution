@@ -15,7 +15,7 @@ trait DictparameterName
   
   var options: StringDictionary[Any]
   
-  var viewMode: js.UndefOr[typings.storybookApi.addonsMod.ViewMode] = js.undefined
+  var viewMode: js.UndefOr[typings.storybookApi.distTs3Dot9ModulesAddonsMod.ViewMode] = js.undefined
 }
 object DictparameterName {
   
@@ -34,7 +34,7 @@ object DictparameterName {
     
     inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setViewMode(value: typings.storybookApi.addonsMod.ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: typings.storybookApi.distTs3Dot9ModulesAddonsMod.ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     
     inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
   }

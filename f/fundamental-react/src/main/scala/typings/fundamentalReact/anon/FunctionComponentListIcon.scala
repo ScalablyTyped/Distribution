@@ -1,7 +1,7 @@
 package typings.fundamentalReact.anon
 
 import typings.fundamentalReact.fundamentalReactStrings.ListDotIcon
-import typings.fundamentalReact.listMod.ListIconProps
+import typings.fundamentalReact.libListListMod.ListIconProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

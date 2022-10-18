@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object uiBoxStrings {
   
   @js.native
-  sealed trait BoxCssProps extends StObject
-  inline def BoxCssProps: BoxCssProps = "BoxCssProps".asInstanceOf[BoxCssProps]
-  
-  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   

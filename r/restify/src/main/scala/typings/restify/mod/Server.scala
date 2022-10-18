@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.spdy.mod.Server_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -217,10 +217,10 @@ trait Server
       ServerResponse[IncomingMessage]
     ]
   ]) | (typings.node.httpsMod.Server[
-    Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+    Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
     Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-      typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
     ]
   ]) | Server_ = js.native
   

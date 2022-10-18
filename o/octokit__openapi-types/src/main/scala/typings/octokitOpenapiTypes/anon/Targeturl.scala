@@ -1,62 +1,79 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.error
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.failure
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pending
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Targeturl extends StObject {
   
-  /**
-    * @description A string label to differentiate this status from the status of other systems. This field is case-insensitive.
-    * @default default
-    */
-  var context: js.UndefOr[String] = js.undefined
+  var avatar_url: String | Null
   
-  /** @description A short description of the status. */
-  var description: js.UndefOr[String | Null] = js.undefined
+  var context: String
   
-  /**
-    * @description The state of the status.
-    * @enum {string}
-    */
-  var state: error | failure | pending | success
+  var created_at: String
   
-  /**
-    * @description The target URL to associate with this status. This URL will be linked from the GitHub UI to allow users to easily see the source of the status.
-    * For example, if your continuous integration system is posting build status, you would want to provide the deep link for the build output for this specific SHA:
-    * `http://ci.example.com/user/repo/build/sha`
-    */
-  var target_url: js.UndefOr[String | Null] = js.undefined
+  var creator: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  
+  var description: String | Null
+  
+  var id: Double
+  
+  var node_id: String
+  
+  var state: String
+  
+  var target_url: String | Null
+  
+  var updated_at: String
+  
+  var url: String
 }
 object Targeturl {
   
-  inline def apply(state: error | failure | pending | success): Targeturl = {
-    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
+  inline def apply(
+    context: String,
+    created_at: String,
+    creator: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
+    id: Double,
+    node_id: String,
+    state: String,
+    updated_at: String,
+    url: String
+  ): Targeturl = {
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], avatar_url = null, description = null, target_url = null)
     __obj.asInstanceOf[Targeturl]
   }
   
   extension [Self <: Targeturl](x: Self) {
     
+    inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
+    
+    inline def setAvatar_urlNull: Self = StObject.set(x, "avatar_url", null)
+    
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+    ): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setState(value: error | failure | pending | success): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setTarget_url(value: String): Self = StObject.set(x, "target_url", value.asInstanceOf[js.Any])
     
     inline def setTarget_urlNull: Self = StObject.set(x, "target_url", null)
     
-    inline def setTarget_urlUndefined: Self = StObject.set(x, "target_url", js.undefined)
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

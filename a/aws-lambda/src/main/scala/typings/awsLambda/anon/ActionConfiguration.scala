@@ -1,6 +1,6 @@
 package typings.awsLambda.anon
 
-import typings.awsLambda.codepipelineMod.Credentials
+import typings.awsLambda.triggerCodepipelineMod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,17 +15,17 @@ trait ActionConfiguration extends StObject {
   
   var encryptionKey: js.UndefOr[EncryptionKeytypeKMS] = js.undefined
   
-  var inputArtifacts: js.Array[typings.awsLambda.codepipelineMod.Artifact]
+  var inputArtifacts: js.Array[typings.awsLambda.triggerCodepipelineMod.Artifact]
   
-  var outputArtifacts: js.Array[typings.awsLambda.codepipelineMod.Artifact]
+  var outputArtifacts: js.Array[typings.awsLambda.triggerCodepipelineMod.Artifact]
 }
 object ActionConfiguration {
   
   inline def apply(
     actionConfiguration: Configuration,
     artifactCredentials: Credentials,
-    inputArtifacts: js.Array[typings.awsLambda.codepipelineMod.Artifact],
-    outputArtifacts: js.Array[typings.awsLambda.codepipelineMod.Artifact]
+    inputArtifacts: js.Array[typings.awsLambda.triggerCodepipelineMod.Artifact],
+    outputArtifacts: js.Array[typings.awsLambda.triggerCodepipelineMod.Artifact]
   ): ActionConfiguration = {
     val __obj = js.Dynamic.literal(actionConfiguration = actionConfiguration.asInstanceOf[js.Any], artifactCredentials = artifactCredentials.asInstanceOf[js.Any], inputArtifacts = inputArtifacts.asInstanceOf[js.Any], outputArtifacts = outputArtifacts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionConfiguration]
@@ -45,12 +45,12 @@ object ActionConfiguration {
     
     inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
     
-    inline def setInputArtifacts(value: js.Array[typings.awsLambda.codepipelineMod.Artifact]): Self = StObject.set(x, "inputArtifacts", value.asInstanceOf[js.Any])
+    inline def setInputArtifacts(value: js.Array[typings.awsLambda.triggerCodepipelineMod.Artifact]): Self = StObject.set(x, "inputArtifacts", value.asInstanceOf[js.Any])
     
-    inline def setInputArtifactsVarargs(value: typings.awsLambda.codepipelineMod.Artifact*): Self = StObject.set(x, "inputArtifacts", js.Array(value*))
+    inline def setInputArtifactsVarargs(value: typings.awsLambda.triggerCodepipelineMod.Artifact*): Self = StObject.set(x, "inputArtifacts", js.Array(value*))
     
-    inline def setOutputArtifacts(value: js.Array[typings.awsLambda.codepipelineMod.Artifact]): Self = StObject.set(x, "outputArtifacts", value.asInstanceOf[js.Any])
+    inline def setOutputArtifacts(value: js.Array[typings.awsLambda.triggerCodepipelineMod.Artifact]): Self = StObject.set(x, "outputArtifacts", value.asInstanceOf[js.Any])
     
-    inline def setOutputArtifactsVarargs(value: typings.awsLambda.codepipelineMod.Artifact*): Self = StObject.set(x, "outputArtifacts", js.Array(value*))
+    inline def setOutputArtifactsVarargs(value: typings.awsLambda.triggerCodepipelineMod.Artifact*): Self = StObject.set(x, "outputArtifacts", js.Array(value*))
   }
 }

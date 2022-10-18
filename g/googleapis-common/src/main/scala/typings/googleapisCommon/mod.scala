@@ -1,27 +1,27 @@
 package typings.googleapisCommon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.gaxios.commonMod.GaxiosOptions
-import typings.gaxios.commonMod.GaxiosPromise
-import typings.gaxios.commonMod.GaxiosResponse
+import typings.gaxios.buildSrcCommonMod.GaxiosOptions
+import typings.gaxios.buildSrcCommonMod.GaxiosPromise
+import typings.gaxios.buildSrcCommonMod.GaxiosResponse
 import typings.googleAuthLibrary.anon.TypeofDefaultTransporter
-import typings.googleAuthLibrary.authclientMod.AuthClient
-import typings.googleAuthLibrary.awsclientMod.AwsClientOptions
-import typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClientOptions
-import typings.googleAuthLibrary.computeclientMod.ComputeOptions
-import typings.googleAuthLibrary.externalclientMod.ExternalAccountClientOptions
-import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
-import typings.googleAuthLibrary.googleauthMod.JSONClient
-import typings.googleAuthLibrary.identitypoolclientMod.IdentityPoolClientOptions
-import typings.googleAuthLibrary.jwtclientMod.JWTOptions
-import typings.googleAuthLibrary.oauth2clientMod.OAuth2ClientOptions
-import typings.googleAuthLibrary.oauth2clientMod.RefreshOptions
-import typings.googleAuthLibrary.refreshclientMod.UserRefreshClientOptions
-import typings.googleapisCommon.apiMod.APIRequestParams
-import typings.googleapisCommon.apiMod.BodyResponseCallback
-import typings.googleapisCommon.apiMod.GoogleConfigurable
-import typings.googleapisCommon.apiMod.ServiceOptions
-import typings.googleapisCommon.discoveryMod.DiscoveryOptions
+import typings.googleAuthLibrary.buildSrcAuthAuthclientMod.AuthClient
+import typings.googleAuthLibrary.buildSrcAuthAwsclientMod.AwsClientOptions
+import typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClientOptions
+import typings.googleAuthLibrary.buildSrcAuthComputeclientMod.ComputeOptions
+import typings.googleAuthLibrary.buildSrcAuthExternalclientMod.ExternalAccountClientOptions
+import typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.JSONClient
+import typings.googleAuthLibrary.buildSrcAuthIdentitypoolclientMod.IdentityPoolClientOptions
+import typings.googleAuthLibrary.buildSrcAuthJwtclientMod.JWTOptions
+import typings.googleAuthLibrary.buildSrcAuthOauth2clientMod.OAuth2ClientOptions
+import typings.googleAuthLibrary.buildSrcAuthOauth2clientMod.RefreshOptions
+import typings.googleAuthLibrary.buildSrcAuthRefreshclientMod.UserRefreshClientOptions
+import typings.googleapisCommon.buildSrcApiMod.APIRequestParams
+import typings.googleapisCommon.buildSrcApiMod.BodyResponseCallback
+import typings.googleapisCommon.buildSrcApiMod.GoogleConfigurable
+import typings.googleapisCommon.buildSrcApiMod.ServiceOptions
+import typings.googleapisCommon.buildSrcDiscoveryMod.DiscoveryOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +35,7 @@ object mod {
   @JSImport("googleapis-common", "AuthPlus")
   @js.native
   open class AuthPlus ()
-    extends typings.googleapisCommon.authplusMod.AuthPlus {
+    extends typings.googleapisCommon.buildSrcAuthplusMod.AuthPlus {
     def this(opts: GoogleAuthOptions[JSONClient]) = this()
   }
   
@@ -57,9 +57,9 @@ object mod {
     def this(options: AwsClientOptions, additionalOptions: RefreshOptions) = this()
   }
   
-  @JSImport("googleapis-common", "BaseExternalAccountClient")
+  /* note: abstract class */ @JSImport("googleapis-common", "BaseExternalAccountClient")
   @js.native
-  abstract class BaseExternalAccountClient protected ()
+  open class BaseExternalAccountClient protected ()
     extends typings.googleAuthLibrary.mod.BaseExternalAccountClient {
     /**
       * Instantiate a BaseExternalAccountClient instance using the provided JSON
@@ -105,7 +105,7 @@ object mod {
   @JSImport("googleapis-common", "Discovery")
   @js.native
   open class Discovery protected ()
-    extends typings.googleapisCommon.discoveryMod.Discovery {
+    extends typings.googleapisCommon.buildSrcDiscoveryMod.Discovery {
     /**
       * Discovery for discovering API endpoints
       *
@@ -117,7 +117,7 @@ object mod {
   @JSImport("googleapis-common", "Endpoint")
   @js.native
   open class Endpoint protected ()
-    extends typings.googleapisCommon.endpointMod.Endpoint {
+    extends typings.googleapisCommon.buildSrcEndpointMod.Endpoint {
     def this(options: js.Object) = this()
   }
   
@@ -144,8 +144,8 @@ object mod {
       * @return A BaseExternalAccountClient instance or null if the options
       *   provided do not correspond to an external account credential.
       */
-    inline def fromJSON(options: ExternalAccountClientOptions): typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient | Null]
-    inline def fromJSON(options: ExternalAccountClientOptions, additionalOptions: RefreshOptions): typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(options.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any])).asInstanceOf[typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient | Null]
+    inline def fromJSON(options: ExternalAccountClientOptions): typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClient | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClient | Null]
+    inline def fromJSON(options: ExternalAccountClientOptions, additionalOptions: RefreshOptions): typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClient | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(options.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any])).asInstanceOf[typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClient | Null]
   }
   
   @JSImport("googleapis-common", "Gaxios")

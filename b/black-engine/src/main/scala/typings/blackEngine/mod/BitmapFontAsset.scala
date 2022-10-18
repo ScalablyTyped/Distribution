@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "BitmapFontAsset")
 @js.native
 open class BitmapFontAsset protected ()
-  extends typings.blackEngine.bitmapFontAssetMod.BitmapFontAsset {
+  extends typings.blackEngine.assetsBitmapFontAssetMod.BitmapFontAsset {
   def this(name: String, imageUrl: String, xmlUrl: String) = this()
 }
 /* static members */
@@ -18,5 +18,5 @@ object BitmapFontAsset {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parse(xml: Document, texture: typings.blackEngine.textureMod.Texture): typings.blackEngine.bitmapFontAssetMod.BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any], texture.asInstanceOf[js.Any])).asInstanceOf[typings.blackEngine.bitmapFontAssetMod.BitmapFontData]
+  inline def parse(xml: Document, texture: typings.blackEngine.texturesTextureMod.Texture): typings.blackEngine.assetsBitmapFontAssetMod.BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any], texture.asInstanceOf[js.Any])).asInstanceOf[typings.blackEngine.assetsBitmapFontAssetMod.BitmapFontData]
 }

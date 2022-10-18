@@ -2,7 +2,6 @@ package typings.styledTools
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Exclude
-import typings.std.ReturnType
 import typings.styledTools.anon.Palette
 import typings.styledTools.anon.PaletteTheme
 import typings.styledTools.anon.ThemeTheme
@@ -18,31 +17,175 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ifNotProp[Props, Pass, Fail](test: js.Array[Needle[Props]]): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifNotProp[Props, Pass, Fail](test: js.Array[Needle[Props]], pass: Pass): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifNotProp[Props, Pass, Fail](test: js.Array[Needle[Props]], pass: Pass, fail: Fail): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifNotProp[Props, Pass, Fail](test: js.Array[Needle[Props]], pass: Unit, fail: Fail): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifNotProp[Props, Pass, Fail](test: StringDictionary[Any]): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifNotProp[Props, Pass, Fail](test: StringDictionary[Any], pass: Pass): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifNotProp[Props, Pass, Fail](test: StringDictionary[Any], pass: Pass, fail: Fail): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifNotProp[Props, Pass, Fail](test: StringDictionary[Any], pass: Unit, fail: Fail): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifNotProp[Props, Pass, Fail](test: Needle[Props]): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifNotProp[Props, Pass, Fail](test: Needle[Props], pass: Pass): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifNotProp[Props, Pass, Fail](test: Needle[Props], pass: Pass, fail: Fail): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifNotProp[Props, Pass, Fail](test: Needle[Props], pass: Unit, fail: Fail): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
+  inline def ifNotProp[Props, Pass, Fail](test: js.Array[Needle[Props]]): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifNotProp[Props, Pass, Fail](test: js.Array[Needle[Props]], pass: Pass): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifNotProp[Props, Pass, Fail](test: js.Array[Needle[Props]], pass: Pass, fail: Fail): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifNotProp[Props, Pass, Fail](test: js.Array[Needle[Props]], pass: Unit, fail: Fail): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifNotProp[Props, Pass, Fail](test: StringDictionary[Any]): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifNotProp[Props, Pass, Fail](test: StringDictionary[Any], pass: Pass): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifNotProp[Props, Pass, Fail](test: StringDictionary[Any], pass: Pass, fail: Fail): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifNotProp[Props, Pass, Fail](test: StringDictionary[Any], pass: Unit, fail: Fail): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifNotProp[Props, Pass, Fail](test: Needle[Props]): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifNotProp[Props, Pass, Fail](test: Needle[Props], pass: Pass): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifNotProp[Props, Pass, Fail](test: Needle[Props], pass: Pass, fail: Fail): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifNotProp[Props, Pass, Fail](test: Needle[Props], pass: Unit, fail: Fail): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifNotProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
   
-  inline def ifProp[Props, Pass, Fail](test: js.Array[Needle[Props]]): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifProp[Props, Pass, Fail](test: js.Array[Needle[Props]], pass: Pass): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifProp[Props, Pass, Fail](test: js.Array[Needle[Props]], pass: Pass, fail: Fail): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifProp[Props, Pass, Fail](test: js.Array[Needle[Props]], pass: Unit, fail: Fail): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifProp[Props, Pass, Fail](test: StringDictionary[Any]): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifProp[Props, Pass, Fail](test: StringDictionary[Any], pass: Pass): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifProp[Props, Pass, Fail](test: StringDictionary[Any], pass: Pass, fail: Fail): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifProp[Props, Pass, Fail](test: StringDictionary[Any], pass: Unit, fail: Fail): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifProp[Props, Pass, Fail](test: Needle[Props]): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifProp[Props, Pass, Fail](test: Needle[Props], pass: Pass): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifProp[Props, Pass, Fail](test: Needle[Props], pass: Pass, fail: Fail): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
-  inline def ifProp[Props, Pass, Fail](test: Needle[Props], pass: Unit, fail: Fail): js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], Pass | (ReturnType[Fail | Pass]) | Fail]]
+  inline def ifProp[Props, Pass, Fail](test: js.Array[Needle[Props]]): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifProp[Props, Pass, Fail](test: js.Array[Needle[Props]], pass: Pass): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifProp[Props, Pass, Fail](test: js.Array[Needle[Props]], pass: Pass, fail: Fail): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifProp[Props, Pass, Fail](test: js.Array[Needle[Props]], pass: Unit, fail: Fail): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifProp[Props, Pass, Fail](test: StringDictionary[Any]): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifProp[Props, Pass, Fail](test: StringDictionary[Any], pass: Pass): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifProp[Props, Pass, Fail](test: StringDictionary[Any], pass: Pass, fail: Fail): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifProp[Props, Pass, Fail](test: StringDictionary[Any], pass: Unit, fail: Fail): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifProp[Props, Pass, Fail](test: Needle[Props]): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifProp[Props, Pass, Fail](test: Needle[Props], pass: Pass): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifProp[Props, Pass, Fail](test: Needle[Props], pass: Pass, fail: Fail): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
+  inline def ifProp[Props, Pass, Fail](test: Needle[Props], pass: Unit, fail: Fail): js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifProp")(test.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], fail.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* props */ js.UndefOr[Props], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Pass extends (args : any): any ? std.ReturnType<Pass> : Pass */ js.Any
+  ]]
   
   @JSImport("styled-tools", "palette")
   @js.native
@@ -73,17 +216,17 @@ object mod {
   inline def switchProp[Props, T, DefaultCase](needle: Needle[Props], cases: StringDictionary[T], defaultCase: DefaultCase): js.Function1[/* props */ js.UndefOr[Props], T | DefaultCase] = (^.asInstanceOf[js.Dynamic].applyDynamic("switchProp")(needle.asInstanceOf[js.Any], cases.asInstanceOf[js.Any], defaultCase.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], T | DefaultCase]]
   
   inline def theme[T](path: String): js.Function1[
-    /* props */ Any & ThemeTheme[StringDictionary[Any]], 
+    /* props */ Any & `0`[StringDictionary[Any]], 
     (/* import warning: importer.ImportType#apply Failed type conversion: {[key: string] : any}[keyof {[key: string] : any}] */ js.Any) | T
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("theme")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* props */ Any & ThemeTheme[StringDictionary[Any]], 
+    /* props */ Any & `0`[StringDictionary[Any]], 
     (/* import warning: importer.ImportType#apply Failed type conversion: {[key: string] : any}[keyof {[key: string] : any}] */ js.Any) | T
   ]]
   inline def theme[T](path: String, defaultValue: T): js.Function1[
-    /* props */ Any & ThemeTheme[StringDictionary[Any]], 
+    /* props */ Any & `0`[StringDictionary[Any]], 
     (/* import warning: importer.ImportType#apply Failed type conversion: {[key: string] : any}[keyof {[key: string] : any}] */ js.Any) | T
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("theme")(path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* props */ Any & ThemeTheme[StringDictionary[Any]], 
+    /* props */ Any & `0`[StringDictionary[Any]], 
     (/* import warning: importer.ImportType#apply Failed type conversion: {[key: string] : any}[keyof {[key: string] : any}] */ js.Any) | T
   ]]
   
@@ -99,7 +242,7 @@ object mod {
     def apply(key: String): js.Function1[/* props */ Any & Tone[ThemeWithPalette], Any] = js.native
     def apply(key: String, defaultValue: Exclude[Any, Double]): js.Function1[/* props */ Any & Tone[ThemeWithPalette], Any] = js.native
     def apply(key: String, tone: Double): js.Function1[/* props */ Any & Tone[ThemeWithPalette], Any] = js.native
-    def apply(key: String, tone: Double, defaultValue: Exclude[Any, Double]): js.Function1[/* props */ Any & `0`[ThemeWithPalette], Any] = js.native
+    def apply(key: String, tone: Double, defaultValue: Exclude[Any, Double]): js.Function1[/* props */ Any & ThemeTheme[ThemeWithPalette], Any] = js.native
     def apply(tone: Double): js.Function1[/* props */ Any & Palette[ThemeWithPalette], Any] = js.native
     def apply(tone: Double, defaultValue: Any): js.Function1[/* props */ Any & PaletteTheme[ThemeWithPalette], Any] = js.native
   }

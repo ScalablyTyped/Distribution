@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reserved for future use. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactStoreNotificationTriggerDetails")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactStoreNotificationTriggerDetails")
 @js.native
-abstract class ContactStoreNotificationTriggerDetails ()
+open class ContactStoreNotificationTriggerDetails ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactStoreNotificationTriggerDetails

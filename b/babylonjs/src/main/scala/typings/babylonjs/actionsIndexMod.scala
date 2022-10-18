@@ -1,13 +1,13 @@
 package typings.babylonjs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.anon.Name
-import typings.babylonjs.mathVectorMod.Vector2
+import typings.babylonjs.audioSoundMod.Sound
+import typings.babylonjs.mathsMathDotvectorMod.Vector2
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.soundMod.Sound
-import typings.babylonjs.spriteMod.Sprite
+import typings.babylonjs.spritesSpriteMod.Sprite
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
@@ -16,10 +16,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object actionsIndexMod {
   
-  @JSImport("babylonjs/Actions/index", "AbstractActionManager")
+  /* note: abstract class */ @JSImport("babylonjs/Actions/index", "AbstractActionManager")
   @js.native
-  abstract class AbstractActionManager ()
-    extends typings.babylonjs.abstractActionManagerMod.AbstractActionManager
+  open class AbstractActionManager ()
+    extends typings.babylonjs.actionsAbstractActionManagerMod.AbstractActionManager
   /* static members */
   object AbstractActionManager {
     
@@ -44,7 +44,7 @@ object actionsIndexMod {
   @JSImport("babylonjs/Actions/index", "Action")
   @js.native
   open class Action protected ()
-    extends typings.babylonjs.actionMod.Action {
+    extends typings.babylonjs.actionsActionMod.Action {
     /**
       * Creates a new Action
       * @param triggerOptions the trigger, with or without parameters, for the action
@@ -55,7 +55,7 @@ object actionsIndexMod {
     def this(
       /** the trigger, with or without parameters, for the action */
     triggerOptions: Any,
-      condition: typings.babylonjs.conditionMod.Condition
+      condition: typings.babylonjs.actionsConditionMod.Condition
     ) = this()
   }
   /* static members */
@@ -82,7 +82,7 @@ object actionsIndexMod {
   @JSImport("babylonjs/Actions/index", "ActionEvent")
   @js.native
   open class ActionEvent protected ()
-    extends typings.babylonjs.actionEventMod.ActionEvent {
+    extends typings.babylonjs.actionsActionEventMod.ActionEvent {
     /**
       * Creates a new ActionEvent
       * @param source The mesh or sprite that triggered the action
@@ -157,10 +157,10 @@ object actionsIndexMod {
       * @param additionalData additional data for the event
       * @returns the new ActionEvent
       */
-    inline def CreateNew(source: AbstractMesh): typings.babylonjs.actionEventMod.ActionEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.actionEventMod.ActionEvent]
-    inline def CreateNew(source: AbstractMesh, evt: Any): typings.babylonjs.actionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionEventMod.ActionEvent]
-    inline def CreateNew(source: AbstractMesh, evt: Any, additionalData: Any): typings.babylonjs.actionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionEventMod.ActionEvent]
-    inline def CreateNew(source: AbstractMesh, evt: Unit, additionalData: Any): typings.babylonjs.actionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionEventMod.ActionEvent]
+    inline def CreateNew(source: AbstractMesh): typings.babylonjs.actionsActionEventMod.ActionEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.actionsActionEventMod.ActionEvent]
+    inline def CreateNew(source: AbstractMesh, evt: Any): typings.babylonjs.actionsActionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionsActionEventMod.ActionEvent]
+    inline def CreateNew(source: AbstractMesh, evt: Any, additionalData: Any): typings.babylonjs.actionsActionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionsActionEventMod.ActionEvent]
+    inline def CreateNew(source: AbstractMesh, evt: Unit, additionalData: Any): typings.babylonjs.actionsActionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionsActionEventMod.ActionEvent]
     
     /**
       * Helper function to auto-create an ActionEvent from a primitive
@@ -170,10 +170,10 @@ object actionsIndexMod {
       * @param additionalData additional data for the event
       * @returns the new ActionEvent
       */
-    inline def CreateNewFromPrimitive(prim: Any, pointerPos: Vector2): typings.babylonjs.actionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionEventMod.ActionEvent]
-    inline def CreateNewFromPrimitive(prim: Any, pointerPos: Vector2, evt: Unit, additionalData: Any): typings.babylonjs.actionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionEventMod.ActionEvent]
-    inline def CreateNewFromPrimitive(prim: Any, pointerPos: Vector2, evt: Event): typings.babylonjs.actionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionEventMod.ActionEvent]
-    inline def CreateNewFromPrimitive(prim: Any, pointerPos: Vector2, evt: Event, additionalData: Any): typings.babylonjs.actionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionEventMod.ActionEvent]
+    inline def CreateNewFromPrimitive(prim: Any, pointerPos: Vector2): typings.babylonjs.actionsActionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionsActionEventMod.ActionEvent]
+    inline def CreateNewFromPrimitive(prim: Any, pointerPos: Vector2, evt: Unit, additionalData: Any): typings.babylonjs.actionsActionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionsActionEventMod.ActionEvent]
+    inline def CreateNewFromPrimitive(prim: Any, pointerPos: Vector2, evt: Event): typings.babylonjs.actionsActionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionsActionEventMod.ActionEvent]
+    inline def CreateNewFromPrimitive(prim: Any, pointerPos: Vector2, evt: Event, additionalData: Any): typings.babylonjs.actionsActionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionsActionEventMod.ActionEvent]
     
     /**
       * Helper function to auto-create an ActionEvent from a scene. If triggered by a mesh use ActionEvent.CreateNew
@@ -181,7 +181,7 @@ object actionsIndexMod {
       * @param evt The original (browser) event
       * @returns the new ActionEvent
       */
-    inline def CreateNewFromScene(scene: Scene, evt: Any): typings.babylonjs.actionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromScene")(scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionEventMod.ActionEvent]
+    inline def CreateNewFromScene(scene: Scene, evt: Any): typings.babylonjs.actionsActionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromScene")(scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionsActionEventMod.ActionEvent]
     
     /**
       * Helper function to auto-create an ActionEvent from a source sprite
@@ -191,10 +191,10 @@ object actionsIndexMod {
       * @param additionalData additional data for the event
       * @returns the new ActionEvent
       */
-    inline def CreateNewFromSprite(source: Sprite, scene: Scene): typings.babylonjs.actionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionEventMod.ActionEvent]
-    inline def CreateNewFromSprite(source: Sprite, scene: Scene, evt: Any): typings.babylonjs.actionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionEventMod.ActionEvent]
-    inline def CreateNewFromSprite(source: Sprite, scene: Scene, evt: Any, additionalData: Any): typings.babylonjs.actionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionEventMod.ActionEvent]
-    inline def CreateNewFromSprite(source: Sprite, scene: Scene, evt: Unit, additionalData: Any): typings.babylonjs.actionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionEventMod.ActionEvent]
+    inline def CreateNewFromSprite(source: Sprite, scene: Scene): typings.babylonjs.actionsActionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionsActionEventMod.ActionEvent]
+    inline def CreateNewFromSprite(source: Sprite, scene: Scene, evt: Any): typings.babylonjs.actionsActionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionsActionEventMod.ActionEvent]
+    inline def CreateNewFromSprite(source: Sprite, scene: Scene, evt: Any, additionalData: Any): typings.babylonjs.actionsActionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionsActionEventMod.ActionEvent]
+    inline def CreateNewFromSprite(source: Sprite, scene: Scene, evt: Unit, additionalData: Any): typings.babylonjs.actionsActionEventMod.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.actionsActionEventMod.ActionEvent]
   }
   
   @JSImport("babylonjs/Actions/index", "ActionManager")
@@ -204,7 +204,7 @@ object actionsIndexMod {
     * @param scene defines the hosting scene
     */
   open class ActionManager ()
-    extends typings.babylonjs.actionManagerMod.ActionManager {
+    extends typings.babylonjs.actionsActionManagerMod.ActionManager {
     def this(scene: Nullable[Scene]) = this()
   }
   /* static members */
@@ -370,7 +370,7 @@ object actionsIndexMod {
   @JSImport("babylonjs/Actions/index", "CombineAction")
   @js.native
   open class CombineAction protected ()
-    extends typings.babylonjs.directActionsMod.CombineAction {
+    extends typings.babylonjs.actionsDirectActionsMod.CombineAction {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -378,22 +378,22 @@ object actionsIndexMod {
       * @param condition defines the trigger related conditions
       * @param enableChildrenConditions defines if the children actions conditions should be check before execution
       */
-    def this(triggerOptions: Any, children: js.Array[typings.babylonjs.actionMod.Action]) = this()
+    def this(triggerOptions: Any, children: js.Array[typings.babylonjs.actionsActionMod.Action]) = this()
     def this(
       triggerOptions: Any,
-      children: js.Array[typings.babylonjs.actionMod.Action],
-      condition: typings.babylonjs.conditionMod.Condition
+      children: js.Array[typings.babylonjs.actionsActionMod.Action],
+      condition: typings.babylonjs.actionsConditionMod.Condition
     ) = this()
     def this(
       triggerOptions: Any,
-      children: js.Array[typings.babylonjs.actionMod.Action],
+      children: js.Array[typings.babylonjs.actionsActionMod.Action],
       condition: Unit,
       enableChildrenConditions: Boolean
     ) = this()
     def this(
       triggerOptions: Any,
-      children: js.Array[typings.babylonjs.actionMod.Action],
-      condition: typings.babylonjs.conditionMod.Condition,
+      children: js.Array[typings.babylonjs.actionsActionMod.Action],
+      condition: typings.babylonjs.actionsConditionMod.Condition,
       enableChildrenConditions: Boolean
     ) = this()
   }
@@ -401,12 +401,12 @@ object actionsIndexMod {
   @JSImport("babylonjs/Actions/index", "Condition")
   @js.native
   open class Condition protected ()
-    extends typings.babylonjs.conditionMod.Condition {
+    extends typings.babylonjs.actionsConditionMod.Condition {
     /**
       * Creates a new Condition
       * @param actionManager the manager of the action the condition is applied to
       */
-    def this(actionManager: typings.babylonjs.actionManagerMod.ActionManager) = this()
+    def this(actionManager: typings.babylonjs.actionsActionManagerMod.ActionManager) = this()
   }
   
   @JSImport("babylonjs/Actions/index", "DoNothingAction")
@@ -417,16 +417,16 @@ object actionsIndexMod {
     * @param condition defines the trigger related conditions
     */
   open class DoNothingAction ()
-    extends typings.babylonjs.directActionsMod.DoNothingAction {
+    extends typings.babylonjs.actionsDirectActionsMod.DoNothingAction {
     def this(triggerOptions: Any) = this()
-    def this(triggerOptions: Any, condition: typings.babylonjs.conditionMod.Condition) = this()
-    def this(triggerOptions: Unit, condition: typings.babylonjs.conditionMod.Condition) = this()
+    def this(triggerOptions: Any, condition: typings.babylonjs.actionsConditionMod.Condition) = this()
+    def this(triggerOptions: Unit, condition: typings.babylonjs.actionsConditionMod.Condition) = this()
   }
   
   @JSImport("babylonjs/Actions/index", "ExecuteCodeAction")
   @js.native
   open class ExecuteCodeAction protected ()
-    extends typings.babylonjs.directActionsMod.ExecuteCodeAction {
+    extends typings.babylonjs.actionsDirectActionsMod.ExecuteCodeAction {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -435,19 +435,19 @@ object actionsIndexMod {
       */
     def this(
       triggerOptions: Any,
-      func: js.Function1[/* evt */ typings.babylonjs.actionEventMod.ActionEvent, Unit]
+      func: js.Function1[/* evt */ typings.babylonjs.actionsActionEventMod.ActionEvent, Unit]
     ) = this()
     def this(
       triggerOptions: Any,
-      func: js.Function1[/* evt */ typings.babylonjs.actionEventMod.ActionEvent, Unit],
-      condition: typings.babylonjs.conditionMod.Condition
+      func: js.Function1[/* evt */ typings.babylonjs.actionsActionEventMod.ActionEvent, Unit],
+      condition: typings.babylonjs.actionsConditionMod.Condition
     ) = this()
   }
   
   @JSImport("babylonjs/Actions/index", "IncrementValueAction")
   @js.native
   open class IncrementValueAction protected ()
-    extends typings.babylonjs.directActionsMod.IncrementValueAction {
+    extends typings.babylonjs.actionsDirectActionsMod.IncrementValueAction {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -462,14 +462,14 @@ object actionsIndexMod {
       target: Any,
       propertyPath: String,
       value: Any,
-      condition: typings.babylonjs.conditionMod.Condition
+      condition: typings.babylonjs.actionsConditionMod.Condition
     ) = this()
   }
   
   @JSImport("babylonjs/Actions/index", "InterpolateValueAction")
   @js.native
   open class InterpolateValueAction protected ()
-    extends typings.babylonjs.interpolateValueActionMod.InterpolateValueAction {
+    extends typings.babylonjs.actionsInterpolateValueActionMod.InterpolateValueAction {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -489,7 +489,7 @@ object actionsIndexMod {
       propertyPath: String,
       value: Any,
       duration: Double,
-      condition: typings.babylonjs.conditionMod.Condition
+      condition: typings.babylonjs.actionsConditionMod.Condition
     ) = this()
     def this(
       triggerOptions: Any,
@@ -497,7 +497,7 @@ object actionsIndexMod {
       propertyPath: String,
       value: Any,
       duration: Unit,
-      condition: typings.babylonjs.conditionMod.Condition
+      condition: typings.babylonjs.actionsConditionMod.Condition
     ) = this()
     def this(
       triggerOptions: Any,
@@ -514,7 +514,7 @@ object actionsIndexMod {
       propertyPath: String,
       value: Any,
       duration: Double,
-      condition: typings.babylonjs.conditionMod.Condition,
+      condition: typings.babylonjs.actionsConditionMod.Condition,
       stopOtherAnimations: Boolean
     ) = this()
     def this(
@@ -532,7 +532,7 @@ object actionsIndexMod {
       propertyPath: String,
       value: Any,
       duration: Unit,
-      condition: typings.babylonjs.conditionMod.Condition,
+      condition: typings.babylonjs.actionsConditionMod.Condition,
       stopOtherAnimations: Boolean
     ) = this()
     def this(
@@ -561,7 +561,7 @@ object actionsIndexMod {
       propertyPath: String,
       value: Any,
       duration: Double,
-      condition: typings.babylonjs.conditionMod.Condition,
+      condition: typings.babylonjs.actionsConditionMod.Condition,
       stopOtherAnimations: Boolean,
       onInterpolationDone: js.Function0[Unit]
     ) = this()
@@ -571,7 +571,7 @@ object actionsIndexMod {
       propertyPath: String,
       value: Any,
       duration: Double,
-      condition: typings.babylonjs.conditionMod.Condition,
+      condition: typings.babylonjs.actionsConditionMod.Condition,
       stopOtherAnimations: Unit,
       onInterpolationDone: js.Function0[Unit]
     ) = this()
@@ -601,7 +601,7 @@ object actionsIndexMod {
       propertyPath: String,
       value: Any,
       duration: Unit,
-      condition: typings.babylonjs.conditionMod.Condition,
+      condition: typings.babylonjs.actionsConditionMod.Condition,
       stopOtherAnimations: Boolean,
       onInterpolationDone: js.Function0[Unit]
     ) = this()
@@ -611,7 +611,7 @@ object actionsIndexMod {
       propertyPath: String,
       value: Any,
       duration: Unit,
-      condition: typings.babylonjs.conditionMod.Condition,
+      condition: typings.babylonjs.actionsConditionMod.Condition,
       stopOtherAnimations: Unit,
       onInterpolationDone: js.Function0[Unit]
     ) = this()
@@ -620,7 +620,7 @@ object actionsIndexMod {
   @JSImport("babylonjs/Actions/index", "PlayAnimationAction")
   @js.native
   open class PlayAnimationAction protected ()
-    extends typings.babylonjs.directActionsMod.PlayAnimationAction {
+    extends typings.babylonjs.actionsDirectActionsMod.PlayAnimationAction {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -638,7 +638,7 @@ object actionsIndexMod {
       from: Double,
       to: Double,
       loop: Boolean,
-      condition: typings.babylonjs.conditionMod.Condition
+      condition: typings.babylonjs.actionsConditionMod.Condition
     ) = this()
     def this(
       triggerOptions: Any,
@@ -646,14 +646,14 @@ object actionsIndexMod {
       from: Double,
       to: Double,
       loop: Unit,
-      condition: typings.babylonjs.conditionMod.Condition
+      condition: typings.babylonjs.actionsConditionMod.Condition
     ) = this()
   }
   
   @JSImport("babylonjs/Actions/index", "PlaySoundAction")
   @js.native
   open class PlaySoundAction protected ()
-    extends typings.babylonjs.directAudioActionsMod.PlaySoundAction {
+    extends typings.babylonjs.actionsDirectAudioActionsMod.PlaySoundAction {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -661,20 +661,20 @@ object actionsIndexMod {
       * @param condition defines the trigger related conditions
       */
     def this(triggerOptions: Any, sound: Sound) = this()
-    def this(triggerOptions: Any, sound: Sound, condition: typings.babylonjs.conditionMod.Condition) = this()
+    def this(triggerOptions: Any, sound: Sound, condition: typings.babylonjs.actionsConditionMod.Condition) = this()
   }
   
   @JSImport("babylonjs/Actions/index", "PredicateCondition")
   @js.native
   open class PredicateCondition protected ()
-    extends typings.babylonjs.conditionMod.PredicateCondition {
+    extends typings.babylonjs.actionsConditionMod.PredicateCondition {
     /**
       * Creates a new PredicateCondition
       * @param actionManager manager for the action the condition applies to
       * @param predicate defines the predicate function used to validate the condition
       */
     def this(
-      actionManager: typings.babylonjs.actionManagerMod.ActionManager,
+      actionManager: typings.babylonjs.actionsActionManagerMod.ActionManager,
       /** defines the predicate function used to validate the condition */
     predicate: js.Function0[Boolean]
     ) = this()
@@ -683,7 +683,7 @@ object actionsIndexMod {
   @JSImport("babylonjs/Actions/index", "SetParentAction")
   @js.native
   open class SetParentAction protected ()
-    extends typings.babylonjs.directActionsMod.SetParentAction {
+    extends typings.babylonjs.actionsDirectActionsMod.SetParentAction {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -692,13 +692,18 @@ object actionsIndexMod {
       * @param condition defines the trigger related conditions
       */
     def this(triggerOptions: Any, target: Any, parent: Any) = this()
-    def this(triggerOptions: Any, target: Any, parent: Any, condition: typings.babylonjs.conditionMod.Condition) = this()
+    def this(
+      triggerOptions: Any,
+      target: Any,
+      parent: Any,
+      condition: typings.babylonjs.actionsConditionMod.Condition
+    ) = this()
   }
   
   @JSImport("babylonjs/Actions/index", "SetStateAction")
   @js.native
   open class SetStateAction protected ()
-    extends typings.babylonjs.directActionsMod.SetStateAction {
+    extends typings.babylonjs.actionsDirectActionsMod.SetStateAction {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -711,14 +716,14 @@ object actionsIndexMod {
       triggerOptions: Any,
       target: Any,
       value: String,
-      condition: typings.babylonjs.conditionMod.Condition
+      condition: typings.babylonjs.actionsConditionMod.Condition
     ) = this()
   }
   
   @JSImport("babylonjs/Actions/index", "SetValueAction")
   @js.native
   open class SetValueAction protected ()
-    extends typings.babylonjs.directActionsMod.SetValueAction {
+    extends typings.babylonjs.actionsDirectActionsMod.SetValueAction {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -733,14 +738,14 @@ object actionsIndexMod {
       target: Any,
       propertyPath: String,
       value: Any,
-      condition: typings.babylonjs.conditionMod.Condition
+      condition: typings.babylonjs.actionsConditionMod.Condition
     ) = this()
   }
   
   @JSImport("babylonjs/Actions/index", "StateCondition")
   @js.native
   open class StateCondition protected ()
-    extends typings.babylonjs.conditionMod.StateCondition {
+    extends typings.babylonjs.actionsConditionMod.StateCondition {
     /**
       * Creates a new StateCondition
       * @param actionManager manager for the action the condition applies to
@@ -748,7 +753,7 @@ object actionsIndexMod {
       * @param value to compare with target state
       */
     def this(
-      actionManager: typings.babylonjs.actionManagerMod.ActionManager,
+      actionManager: typings.babylonjs.actionsActionManagerMod.ActionManager,
       target: Any,
       /** Value to compare with target state  */
     value: String
@@ -758,7 +763,7 @@ object actionsIndexMod {
   @JSImport("babylonjs/Actions/index", "StopAnimationAction")
   @js.native
   open class StopAnimationAction protected ()
-    extends typings.babylonjs.directActionsMod.StopAnimationAction {
+    extends typings.babylonjs.actionsDirectActionsMod.StopAnimationAction {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -766,13 +771,13 @@ object actionsIndexMod {
       * @param condition defines the trigger related conditions
       */
     def this(triggerOptions: Any, target: Any) = this()
-    def this(triggerOptions: Any, target: Any, condition: typings.babylonjs.conditionMod.Condition) = this()
+    def this(triggerOptions: Any, target: Any, condition: typings.babylonjs.actionsConditionMod.Condition) = this()
   }
   
   @JSImport("babylonjs/Actions/index", "StopSoundAction")
   @js.native
   open class StopSoundAction protected ()
-    extends typings.babylonjs.directAudioActionsMod.StopSoundAction {
+    extends typings.babylonjs.actionsDirectAudioActionsMod.StopSoundAction {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -780,13 +785,13 @@ object actionsIndexMod {
       * @param condition defines the trigger related conditions
       */
     def this(triggerOptions: Any, sound: Sound) = this()
-    def this(triggerOptions: Any, sound: Sound, condition: typings.babylonjs.conditionMod.Condition) = this()
+    def this(triggerOptions: Any, sound: Sound, condition: typings.babylonjs.actionsConditionMod.Condition) = this()
   }
   
   @JSImport("babylonjs/Actions/index", "SwitchBooleanAction")
   @js.native
   open class SwitchBooleanAction protected ()
-    extends typings.babylonjs.directActionsMod.SwitchBooleanAction {
+    extends typings.babylonjs.actionsDirectActionsMod.SwitchBooleanAction {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -799,14 +804,14 @@ object actionsIndexMod {
       triggerOptions: Any,
       target: Any,
       propertyPath: String,
-      condition: typings.babylonjs.conditionMod.Condition
+      condition: typings.babylonjs.actionsConditionMod.Condition
     ) = this()
   }
   
   @JSImport("babylonjs/Actions/index", "ValueCondition")
   @js.native
   open class ValueCondition protected ()
-    extends typings.babylonjs.conditionMod.ValueCondition {
+    extends typings.babylonjs.actionsConditionMod.ValueCondition {
     /**
       * Creates a new ValueCondition
       * @param actionManager manager for the action the condition applies to
@@ -816,7 +821,7 @@ object actionsIndexMod {
       * @param operator the conditional operator, default ValueCondition.IsEqual
       */
     def this(
-      actionManager: typings.babylonjs.actionManagerMod.ActionManager,
+      actionManager: typings.babylonjs.actionsActionManagerMod.ActionManager,
       target: Any,
       /** path to specify the property of the target the conditional operator uses  */
     propertyPath: String,
@@ -824,7 +829,7 @@ object actionsIndexMod {
     value: Any
     ) = this()
     def this(
-      actionManager: typings.babylonjs.actionManagerMod.ActionManager,
+      actionManager: typings.babylonjs.actionsActionManagerMod.ActionManager,
       target: Any,
       /** path to specify the property of the target the conditional operator uses  */
     propertyPath: String,

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.uifabricUtilities.globalSettingsMod.IChangeEventCallback
+import typings.uifabricUtilities.libGlobalSettingsMod.IChangeEventCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("office-ui-fabric-react", "GlobalSettings")
 @js.native
 open class GlobalSettings ()
-  extends typings.officeUiFabricReact.utilitiesMod.GlobalSettings
+  extends typings.officeUiFabricReact.libUtilitiesMod.GlobalSettings
 /* static members */
 object GlobalSettings {
   

@@ -11,32 +11,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ColorCorrectionPostProcess protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ColorCorrectionPostProcess {
-  def this(name: String, colorTableUrl: String, options: Double, camera: typings.babylonjs.BABYLON.Camera) = this()
+  def this(
+    name: String,
+    colorTableUrl: String,
+    options: Double,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera]
+  ) = this()
   def this(
     name: String,
     colorTableUrl: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera
+    camera: Nullable[typings.babylonjs.BABYLON.Camera]
   ) = this()
   def this(
     name: String,
     colorTableUrl: String,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double
   ) = this()
   def this(
     name: String,
     colorTableUrl: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double
   ) = this()
   def this(
     name: String,
     colorTableUrl: String,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
@@ -44,7 +49,7 @@ open class ColorCorrectionPostProcess protected ()
     name: String,
     colorTableUrl: String,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
@@ -52,7 +57,7 @@ open class ColorCorrectionPostProcess protected ()
     name: String,
     colorTableUrl: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
@@ -60,7 +65,7 @@ open class ColorCorrectionPostProcess protected ()
     name: String,
     colorTableUrl: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
@@ -68,7 +73,7 @@ open class ColorCorrectionPostProcess protected ()
     name: String,
     colorTableUrl: String,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: Unit,
     reusable: Boolean
@@ -77,7 +82,7 @@ open class ColorCorrectionPostProcess protected ()
     name: String,
     colorTableUrl: String,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
@@ -86,7 +91,7 @@ open class ColorCorrectionPostProcess protected ()
     name: String,
     colorTableUrl: String,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: Unit,
     reusable: Boolean
@@ -95,7 +100,7 @@ open class ColorCorrectionPostProcess protected ()
     name: String,
     colorTableUrl: String,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
@@ -104,7 +109,7 @@ open class ColorCorrectionPostProcess protected ()
     name: String,
     colorTableUrl: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: Unit,
     reusable: Boolean
@@ -113,7 +118,7 @@ open class ColorCorrectionPostProcess protected ()
     name: String,
     colorTableUrl: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
@@ -122,7 +127,7 @@ open class ColorCorrectionPostProcess protected ()
     name: String,
     colorTableUrl: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: Unit,
     reusable: Boolean
@@ -131,7 +136,7 @@ open class ColorCorrectionPostProcess protected ()
     name: String,
     colorTableUrl: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean

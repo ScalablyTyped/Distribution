@@ -1,19 +1,19 @@
 package typings.mobservable
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.mobservable.interfacesMod.IArrayChange
-import typings.mobservable.interfacesMod.IArraySplice
-import typings.mobservable.interfacesMod.IDependencyTree
-import typings.mobservable.interfacesMod.IObjectChange
-import typings.mobservable.interfacesMod.IObservableArray
-import typings.mobservable.interfacesMod.IObservableValue
-import typings.mobservable.interfacesMod.IObserverTree
-import typings.mobservable.interfacesMod.ITransitionEvent
-import typings.mobservable.interfacesMod.Lambda
-import typings.mobservable.observablemapMod.Entries
-import typings.mobservable.observablemapMod.KeyValueMap
-import typings.mobservable.simpleeventemitterMod.default
-import typings.mobservable.transformMod.ITransformer
+import typings.mobservable.libInterfacesMod.IArrayChange
+import typings.mobservable.libInterfacesMod.IArraySplice
+import typings.mobservable.libInterfacesMod.IDependencyTree
+import typings.mobservable.libInterfacesMod.IObjectChange
+import typings.mobservable.libInterfacesMod.IObservableArray
+import typings.mobservable.libInterfacesMod.IObservableValue
+import typings.mobservable.libInterfacesMod.IObserverTree
+import typings.mobservable.libInterfacesMod.ITransitionEvent
+import typings.mobservable.libInterfacesMod.Lambda
+import typings.mobservable.libObservablemapMod.Entries
+import typings.mobservable.libObservablemapMod.KeyValueMap
+import typings.mobservable.libSimpleeventemitterMod.default
+import typings.mobservable.libTransformMod.ITransformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object mod {
   @JSImport("mobservable", "ObservableMap")
   @js.native
   open class ObservableMap[V] ()
-    extends typings.mobservable.observablemapMod.ObservableMap[V] {
+    extends typings.mobservable.libObservablemapMod.ObservableMap[V] {
     def this(initialData: Entries[V]) = this()
     def this(initialData: KeyValueMap[V]) = this()
     def this(initialData: Unit, valueModeFunc: js.Function) = this()
@@ -140,10 +140,10 @@ object mod {
   inline def makeReactive[T, S /* <: js.Object */](value: js.Function0[T]): IObservableValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeReactive")(value.asInstanceOf[js.Any]).asInstanceOf[IObservableValue[T]]
   inline def makeReactive[T, S /* <: js.Object */](value: js.Function0[T], thisArg: S): IObservableValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeReactive")(value.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[IObservableValue[T]]
   
-  inline def map[V](): typings.mobservable.observablemapMod.ObservableMap[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[typings.mobservable.observablemapMod.ObservableMap[V]]
-  inline def map[V](initialValues: Unit, valueModifier: js.Function): typings.mobservable.observablemapMod.ObservableMap[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any], valueModifier.asInstanceOf[js.Any])).asInstanceOf[typings.mobservable.observablemapMod.ObservableMap[V]]
-  inline def map[V](initialValues: KeyValueMap[V]): typings.mobservable.observablemapMod.ObservableMap[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any]).asInstanceOf[typings.mobservable.observablemapMod.ObservableMap[V]]
-  inline def map[V](initialValues: KeyValueMap[V], valueModifier: js.Function): typings.mobservable.observablemapMod.ObservableMap[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any], valueModifier.asInstanceOf[js.Any])).asInstanceOf[typings.mobservable.observablemapMod.ObservableMap[V]]
+  inline def map[V](): typings.mobservable.libObservablemapMod.ObservableMap[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[typings.mobservable.libObservablemapMod.ObservableMap[V]]
+  inline def map[V](initialValues: Unit, valueModifier: js.Function): typings.mobservable.libObservablemapMod.ObservableMap[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any], valueModifier.asInstanceOf[js.Any])).asInstanceOf[typings.mobservable.libObservablemapMod.ObservableMap[V]]
+  inline def map[V](initialValues: KeyValueMap[V]): typings.mobservable.libObservablemapMod.ObservableMap[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any]).asInstanceOf[typings.mobservable.libObservablemapMod.ObservableMap[V]]
+  inline def map[V](initialValues: KeyValueMap[V], valueModifier: js.Function): typings.mobservable.libObservablemapMod.ObservableMap[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any], valueModifier.asInstanceOf[js.Any])).asInstanceOf[typings.mobservable.libObservablemapMod.ObservableMap[V]]
   
   inline def observable(target: js.Object, key: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("observable")(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def observable(target: js.Object, key: String, baseDescriptor: js.PropertyDescriptor): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("observable")(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], baseDescriptor.asInstanceOf[js.Any])).asInstanceOf[Any]
@@ -166,9 +166,9 @@ object mod {
     listener: js.Function1[/* change */ IArrayChange[T] | IArraySplice[T], Unit]
   ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableArray.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def observe[T](
-    observableMap: typings.mobservable.observablemapMod.ObservableMap[T],
+    observableMap: typings.mobservable.libObservablemapMod.ObservableMap[T],
     listener: js.Function1[
-      /* change */ IObjectChange[T, typings.mobservable.observablemapMod.ObservableMap[T]], 
+      /* change */ IObjectChange[T, typings.mobservable.libObservablemapMod.ObservableMap[T]], 
       Unit
     ]
   ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableMap.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]

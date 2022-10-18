@@ -1,10 +1,12 @@
 package typings.rcTable
 
-import typings.rcTable.columnGroupMod.ColumnGroupProps
-import typings.rcTable.columnMod.ColumnProps
-import typings.rcTable.interfaceMod.DefaultRecordType
-import typings.rcTable.summaryMod.SummaryProps
-import typings.rcTable.tableMod.TableProps
+import typings.rcTable.libFooterCellMod.SummaryCellProps
+import typings.rcTable.libFooterRowMod.FooterRowProps
+import typings.rcTable.libFooterSummaryMod.SummaryProps
+import typings.rcTable.libInterfaceMod.DefaultRecordType
+import typings.rcTable.libSugarColumnGroupMod.ColumnGroupProps
+import typings.rcTable.libSugarColumnMod.ColumnProps
+import typings.rcTable.libTableMod.TableProps
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -51,19 +53,11 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @JSImport("rc-table", "default.Summary.Cell")
-      @js.native
-      def Cell: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof imported_Cell.default */ Any = js.native
-      inline def Cell_=(
-        x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof imported_Cell.default */ Any
-      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
+      /* was `typeof imported_Cell.default` */
+      inline def Cell(hasClassNameIndexChildrenColSpanRowSpanAlign: SummaryCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Cell")(hasClassNameIndexChildrenColSpanRowSpanAlign.asInstanceOf[js.Any]).asInstanceOf[Element]
       
-      @JSImport("rc-table", "default.Summary.Row")
-      @js.native
-      def Row: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof imported_Row.default */ Any = js.native
-      inline def Row_=(
-        x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof imported_Row.default */ Any
-      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
+      /* was `typeof imported_Row.default` */
+      inline def Row(hasChildrenProps: FooterRowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
     }
     
     object defaultProps {

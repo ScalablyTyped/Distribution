@@ -45,7 +45,7 @@ open class Layer protected ()
     imgUrl: Nullable[String],
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
     isBackground: Boolean,
-    color: typings.babylonjs.mathColorMod.Color4
+    color: typings.babylonjs.mathsMathDotcolorMod.Color4
   ) = this()
   def this(
     /**
@@ -55,6 +55,6 @@ open class Layer protected ()
     imgUrl: Nullable[String],
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
     isBackground: Unit,
-    color: typings.babylonjs.mathColorMod.Color4
+    color: typings.babylonjs.mathsMathDotcolorMod.Color4
   ) = this()
 }

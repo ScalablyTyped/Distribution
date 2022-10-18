@@ -11,14 +11,6 @@ object reactNavigationCoreStrings {
   inline def NAVIGATE: NAVIGATE = "NAVIGATE".asInstanceOf[NAVIGATE]
   
   @js.native
-  sealed trait PathConfigMap extends StObject
-  inline def PathConfigMap: PathConfigMap = "PathConfigMap".asInstanceOf[PathConfigMap]
-  
-  @js.native
-  sealed trait ScreenListeners extends StObject
-  inline def ScreenListeners: ScreenListeners = "ScreenListeners".asInstanceOf[ScreenListeners]
-  
-  @js.native
   sealed trait _empty extends StObject
   inline def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -99,8 +91,8 @@ object reactNavigationCoreStrings {
   inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait screenListeners_ extends StObject
-  inline def screenListeners_ : screenListeners_ = "screenListeners".asInstanceOf[screenListeners_]
+  sealed trait screenListeners extends StObject
+  inline def screenListeners: screenListeners = "screenListeners".asInstanceOf[screenListeners]
   
   @js.native
   sealed trait screenOptions extends StObject

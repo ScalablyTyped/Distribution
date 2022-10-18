@@ -3,6 +3,7 @@ package typings.gulpHash
 import org.scalablytyped.runtime.Shortcut
 import typings.gulpHash.mod.GulpHash.ManifestOptions
 import typings.gulpHash.mod.GulpHash.Options
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,14 +17,14 @@ object mod extends Shortcut {
   @js.native
   trait GulpHash extends StObject {
     
-    def apply(): Any = js.native
-    def apply(options: Options): Any = js.native
+    def apply(): ReadWriteStream = js.native
+    def apply(options: Options): ReadWriteStream = js.native
     
-    def manifest(manifestPath: String): Any = js.native
-    def manifest(manifestPath: String, append: Boolean): Any = js.native
-    def manifest(manifestPath: String, append: Boolean, space: String): Any = js.native
-    def manifest(manifestPath: String, append: Unit, space: String): Any = js.native
-    def manifest(manifestPath: String, options: ManifestOptions): Any = js.native
+    def manifest(manifestPath: String): ReadWriteStream = js.native
+    def manifest(manifestPath: String, append: Boolean): ReadWriteStream = js.native
+    def manifest(manifestPath: String, append: Boolean, space: String): ReadWriteStream = js.native
+    def manifest(manifestPath: String, append: Unit, space: String): ReadWriteStream = js.native
+    def manifest(manifestPath: String, options: ManifestOptions): ReadWriteStream = js.native
   }
   object GulpHash {
     

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Represents a single CustomXMLPart in an {@link Office.CustomXmlParts} collection.
-  * 
+  *
   * @remarks
-  * 
-  * **Hosts**: Word
+  *
+  * **Applications**: Word
   */
 @js.native
 trait CustomXmlPart extends StObject {
@@ -18,14 +18,14 @@ trait CustomXmlPart extends StObject {
     * Adds an event handler to the object using the specified event type.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
     *
-    * @param eventType Specifies the type of event to add. For a CustomXmlPart object, the eventType parameter can be specified as 
+    * @param eventType Specifies the type of event to add. For a CustomXmlPart object, the eventType parameter can be specified as
     *                  `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
-    * @param handler The event handler function to add, whose only parameter is of type {@link Office.NodeDeletedEventArgs}, 
+    * @param handler The event handler function to add, whose only parameter is of type {@link Office.NodeDeletedEventArgs},
     *                {@link Office.NodeInsertedEventArgs}, or {@link Office.NodeReplacedEventArgs}
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -57,9 +57,9 @@ trait CustomXmlPart extends StObject {
   
   /**
     * Deletes the Custom XML Part.
-    * 
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -73,9 +73,9 @@ trait CustomXmlPart extends StObject {
   
   /**
     * Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
-    * 
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xPath An XPath expression that specifies the nodes you want returned. Required.
@@ -99,9 +99,9 @@ trait CustomXmlPart extends StObject {
   
   /**
     * Asynchronously gets the XML inside this custom XML part.
-    * 
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -126,12 +126,12 @@ trait CustomXmlPart extends StObject {
   
   /**
     * Removes an event handler for the specified event type.
-    * 
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
-    * @param eventType Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified as 
+    * @param eventType Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified as
     *                  `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
     * @param handler The name of the handler to remove.
     * @param options Provides options to determine which event handler or handlers are removed.

@@ -16,10 +16,6 @@ object eggStrings {
   inline def DENY: DENY = "DENY".asInstanceOf[DENY]
   
   @js.native
-  sealed trait PowerPartial extends StObject
-  inline def PowerPartial: PowerPartial = "PowerPartial".asInstanceOf[PowerPartial]
-  
-  @js.native
   sealed trait SAMEORIGIN extends StObject
   inline def SAMEORIGIN: SAMEORIGIN = "SAMEORIGIN".asInstanceOf[SAMEORIGIN]
   

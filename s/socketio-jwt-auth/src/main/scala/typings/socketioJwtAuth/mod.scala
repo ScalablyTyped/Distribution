@@ -1,7 +1,7 @@
 package typings.socketioJwtAuth
 
+import typings.socketIo.distTypedEventsMod.DefaultEventsMap
 import typings.socketIo.mod.Socket
-import typings.socketIo.typedEventsMod.DefaultEventsMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

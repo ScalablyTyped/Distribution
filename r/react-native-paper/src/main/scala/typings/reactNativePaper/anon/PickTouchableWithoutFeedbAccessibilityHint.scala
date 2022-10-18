@@ -110,7 +110,7 @@ trait PickTouchableWithoutFeedbAccessibilityHint extends StObject {
   
   var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var theme: js.UndefOr[DeepPartialThemeDark] = js.undefined
+  var theme: js.UndefOr[DeepPartialTheme] = js.undefined
   
   var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
 }
@@ -297,7 +297,7 @@ object PickTouchableWithoutFeedbAccessibilityHint {
     
     inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
-    inline def setTheme(value: DeepPartialThemeDark): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: DeepPartialTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     

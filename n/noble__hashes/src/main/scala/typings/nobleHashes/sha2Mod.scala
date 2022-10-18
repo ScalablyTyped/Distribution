@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sha2Mod {
   
-  @JSImport("@noble/hashes/_sha2", "SHA2")
+  /* note: abstract class */ @JSImport("@noble/hashes/_sha2", "SHA2")
   @js.native
-  abstract class SHA2[T /* <: SHA2[T] */] protected () extends Hash[T] {
+  open class SHA2[T /* <: SHA2[T] */] protected () extends Hash[T] {
     def this(blockLen: Double, outputLen: Double, padOffset: Double, isLE: Boolean) = this()
     
     /* protected */ var buffer: js.typedarray.Uint8Array = js.native

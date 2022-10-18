@@ -1,7 +1,6 @@
 package typings.maplibreGl.mod
 
 import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.glMatrix.mod.mat4
 import typings.maplibreGl.anon.PlacedGlyphBoxes
 import org.scalablytyped.runtime.StObject
@@ -108,9 +107,7 @@ open class Placement protected () extends StObject {
     getElevation: js.Function2[/* x */ Double, /* y */ Double, Double]
   ): PlacedGlyphBoxes = js.native
   
-  var collisionCircleArrays: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in any ]: maplibre-gl.maplibre-gl.CollisionCircleArray}
-    */ typings.maplibreGl.maplibreGlStrings.Placement & TopLevel[Any] = js.native
+  var collisionCircleArrays: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in any ]: maplibre-gl.maplibre-gl.CollisionCircleArray} */ js.Any = js.native
   
   var collisionGroups: CollisionGroups = js.native
   
@@ -137,25 +134,17 @@ open class Placement protected () extends StObject {
   
   def markUsedOrientation(bucket: SymbolBucket, orientation: Double, symbolInstance: SymbolInstance): scala.Unit = js.native
   
-  var opacities: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ _ in maplibre-gl.maplibre-gl.CrossTileID ]: maplibre-gl.maplibre-gl.JointOpacityState}
-    */ typings.maplibreGl.maplibreGlStrings.Placement & TopLevel[Any] = js.native
+  var opacities: /* import warning: importer.ImportType#apply Failed type conversion: {[ _ in maplibre-gl.maplibre-gl.CrossTileID ]: maplibre-gl.maplibre-gl.JointOpacityState} */ js.Any = js.native
   
   def placeLayerBucketPart(
     bucketPart: BucketPart,
-    seenCrossTileIDs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in string | number ]: boolean}
-    */ typings.maplibreGl.maplibreGlStrings.Placement & TopLevel[Any],
+    seenCrossTileIDs: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in string | number ]: boolean} */ js.Any,
     showCollisionBoxes: Boolean
   ): scala.Unit = js.native
   
-  var placedOrientations: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ _ in maplibre-gl.maplibre-gl.CrossTileID ]: number}
-    */ typings.maplibreGl.maplibreGlStrings.Placement & TopLevel[Any] = js.native
+  var placedOrientations: /* import warning: importer.ImportType#apply Failed type conversion: {[ _ in maplibre-gl.maplibre-gl.CrossTileID ]: number} */ js.Any = js.native
   
-  var placements: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ _ in maplibre-gl.maplibre-gl.CrossTileID ]: maplibre-gl.maplibre-gl.JointPlacement}
-    */ typings.maplibreGl.maplibreGlStrings.Placement & TopLevel[Any] = js.native
+  var placements: /* import warning: importer.ImportType#apply Failed type conversion: {[ _ in maplibre-gl.maplibre-gl.CrossTileID ]: maplibre-gl.maplibre-gl.JointPlacement} */ js.Any = js.native
   
   var prevPlacement: Placement = js.native
   
@@ -177,23 +166,17 @@ open class Placement protected () extends StObject {
   
   def updateBucketOpacities(
     bucket: SymbolBucket,
-    seenCrossTileIDs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in string | number ]: boolean}
-    */ typings.maplibreGl.maplibreGlStrings.Placement & TopLevel[Any]
+    seenCrossTileIDs: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in string | number ]: boolean} */ js.Any
   ): scala.Unit = js.native
   def updateBucketOpacities(
     bucket: SymbolBucket,
-    seenCrossTileIDs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in string | number ]: boolean}
-    */ typings.maplibreGl.maplibreGlStrings.Placement & TopLevel[Any],
+    seenCrossTileIDs: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in string | number ]: boolean} */ js.Any,
     collisionBoxArray: CollisionBoxArray
   ): scala.Unit = js.native
   
   def updateLayerOpacities(styleLayer: StyleLayer, tiles: js.Array[Tile]): scala.Unit = js.native
   
-  var variableOffsets: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ _ in maplibre-gl.maplibre-gl.CrossTileID ]: maplibre-gl.maplibre-gl.VariableOffset}
-    */ typings.maplibreGl.maplibreGlStrings.Placement & TopLevel[Any] = js.native
+  var variableOffsets: /* import warning: importer.ImportType#apply Failed type conversion: {[ _ in maplibre-gl.maplibre-gl.CrossTileID ]: maplibre-gl.maplibre-gl.VariableOffset} */ js.Any = js.native
   
   def zoomAdjustment(zoom: Double): Double = js.native
   

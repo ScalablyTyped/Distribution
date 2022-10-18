@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables you to detect whether your app is in design mode in a visual designer. */
-@JSGlobal("Windows.ApplicationModel.DesignMode")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DesignMode")
 @js.native
-abstract class DesignMode ()
+open class DesignMode ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.DesignMode
 object DesignMode {

@@ -1,8 +1,8 @@
 package typings.vscodeJsonrpc
 
-import typings.vscodeJsonrpc.connectionMod.TraceValues
-import typings.vscodeJsonrpc.messagesMod.LSPMessageType
-import typings.vscodeJsonrpc.ralMod.MessageBufferEncoding
+import typings.vscodeJsonrpc.libCommonConnectionMod.TraceValues
+import typings.vscodeJsonrpc.libCommonMessagesMod.LSPMessageType
+import typings.vscodeJsonrpc.libCommonRalMod.MessageBufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

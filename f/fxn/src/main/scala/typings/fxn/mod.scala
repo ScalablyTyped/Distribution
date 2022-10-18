@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("fxn", "Application")
+  /* note: abstract class */ @JSImport("fxn", "Application")
   @js.native
-  abstract class Application protected () extends StObject {
+  open class Application protected () extends StObject {
     def this(string: String) = this()
     
     var send: js.Function = js.native
   }
   
-  @JSImport("fxn", "Controller")
+  /* note: abstract class */ @JSImport("fxn", "Controller")
   @js.native
-  abstract class Controller protected () extends StObject {
+  open class Controller protected () extends StObject {
     def this(path: String, method: String, requestHeaders: js.Object, params: js.Object, responder: js.Function) = this()
     
     /* protected */ var _headers: js.Object = js.native
@@ -92,19 +92,19 @@ object mod {
     def update(): Unit = js.native
   }
   
-  @JSImport("fxn", "Daemon")
+  /* note: abstract class */ @JSImport("fxn", "Daemon")
   @js.native
-  abstract class Daemon protected () extends StObject {
+  open class Daemon protected () extends StObject {
     def this(string: String) = this()
   }
   
-  @JSImport("fxn", "Router")
+  /* note: abstract class */ @JSImport("fxn", "Router")
   @js.native
-  abstract class Router () extends StObject
+  open class Router () extends StObject
   
-  @JSImport("fxn", "Scheduler")
+  /* note: abstract class */ @JSImport("fxn", "Scheduler")
   @js.native
-  abstract class Scheduler () extends StObject
+  open class Scheduler () extends StObject
   
   type HttpHeaders = StringDictionary[String]
   

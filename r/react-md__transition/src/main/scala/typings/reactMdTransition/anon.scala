@@ -1,8 +1,8 @@
 package typings.reactMdTransition
 
-import typings.reactMdTransition.typesMod.TransitionEnterHandler
-import typings.reactMdTransition.typesMod.TransitionExitHandler
-import typings.reactMdTransition.typesMod.TransitionTimeout
+import typings.reactMdTransition.typesTypesMod.TransitionEnterHandler
+import typings.reactMdTransition.typesTypesMod.TransitionExitHandler
+import typings.reactMdTransition.typesTypesMod.TransitionTimeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

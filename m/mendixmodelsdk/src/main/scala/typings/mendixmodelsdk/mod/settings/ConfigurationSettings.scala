@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.settings
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.settingsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenSettingsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "settings.ConfigurationSettings")
 @js.native
 open class ConfigurationSettings protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.settings.ConfigurationSettings {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.settings.ConfigurationSettings {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object ConfigurationSettings {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.settingsMod.settings.ConfigurationSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.settingsMod.settings.ConfigurationSettings]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenSettingsMod.settings.ConfigurationSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenSettingsMod.settings.ConfigurationSettings]
   
   /**
     * Creates and returns a new ConfigurationSettings instance in the SDK and on the server.
@@ -44,7 +44,7 @@ object ConfigurationSettings {
     * of the parent ProjectSettings element passed as argument.
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.settingsMod.settings.ProjectSettings): typings.mendixmodelsdk.settingsMod.settings.ConfigurationSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.settingsMod.settings.ConfigurationSettings]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenSettingsMod.settings.ProjectSettings): typings.mendixmodelsdk.srcGenSettingsMod.settings.ConfigurationSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenSettingsMod.settings.ConfigurationSettings]
   
   /* static member */
   @JSImport("mendixmodelsdk", "settings.ConfigurationSettings.structureTypeName")

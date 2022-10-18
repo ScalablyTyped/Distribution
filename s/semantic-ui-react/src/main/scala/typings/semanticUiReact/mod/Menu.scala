@@ -3,10 +3,10 @@ package typings.semanticUiReact.mod
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.menuHeaderMod.MenuHeaderProps
-import typings.semanticUiReact.menuItemMod.MenuItemProps
-import typings.semanticUiReact.menuMenuMod.MenuComponent
-import typings.semanticUiReact.menuMenuMod.MenuProps
+import typings.semanticUiReact.distCommonjsCollectionsMenuMenuHeaderMod.MenuHeaderProps
+import typings.semanticUiReact.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps
+import typings.semanticUiReact.distCommonjsCollectionsMenuMenuMod.MenuComponent
+import typings.semanticUiReact.distCommonjsCollectionsMenuMenuMod.MenuProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

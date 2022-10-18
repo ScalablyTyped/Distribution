@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the results of a High Dynamic Range (HDR) analysis operation from the SceneAnalysisEffect . */
-@JSGlobal("Windows.Media.Core.HighDynamicRangeOutput")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.HighDynamicRangeOutput")
 @js.native
-abstract class HighDynamicRangeOutput ()
+open class HighDynamicRangeOutput ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.HighDynamicRangeOutput {
   

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class HookBuilder protected ()
   extends typings.uirouterCore.mod.HookBuilder {
-  def this(transition: typings.uirouterCore.transitionTransitionMod.Transition) = this()
+  def this(transition: typings.uirouterCore.libTransitionTransitionMod.Transition) = this()
 }

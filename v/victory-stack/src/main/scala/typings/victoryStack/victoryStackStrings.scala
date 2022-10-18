@@ -1,6 +1,6 @@
 package typings.victoryStack
 
-import typings.victoryStack.victoryStackMod.VictoryStackTTargetType
+import typings.victoryStack.libVictoryStackMod.VictoryStackTTargetType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.screepsArena.gamePrototypesMod
 
-import typings.screepsArena.pathFinderMod.FindPathOpts
-import typings.screepsArena.pathFinderMod.PathStep
+import typings.screepsArena.gamePathFinderMod.FindPathOpts
+import typings.screepsArena.gamePathFinderMod.PathStep
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

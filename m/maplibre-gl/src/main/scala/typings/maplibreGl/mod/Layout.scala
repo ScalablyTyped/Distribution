@@ -1,6 +1,5 @@
 package typings.maplibreGl.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.maplibreGl.maplibreGlStrings.anchor
 import typings.maplibreGl.maplibreGlStrings.color
 import typings.maplibreGl.maplibreGlStrings.intensity
@@ -16,9 +15,7 @@ open class Layout[Props] protected () extends StObject {
   
   var _properties: Properties[Props] = js.native
   
-  var _values: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Props ]: maplibre-gl.maplibre-gl.PropertyValue<any, maplibre-gl.maplibre-gl.PossiblyEvaluatedPropertyValue<any>>}
-    */ typings.maplibreGl.maplibreGlStrings.Layout & TopLevel[Any] = js.native
+  var _values: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Props ]: maplibre-gl.maplibre-gl.PropertyValue<any, maplibre-gl.maplibre-gl.PossiblyEvaluatedPropertyValue<any>>} */ js.Any = js.native
   
   @JSName("getValue")
   def getValue_anchor(name: anchor): Any = js.native

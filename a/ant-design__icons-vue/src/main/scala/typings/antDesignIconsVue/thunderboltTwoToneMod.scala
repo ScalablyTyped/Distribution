@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsThunderboltTwoToneMod.ThunderboltTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object thunderboltTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/ThunderboltTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/ThunderboltTwoTone", JSImport.Default)
   @js.native
   val default: ThunderboltTwoToneIconType = js.native
-  
-  @js.native
-  trait ThunderboltTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_ThunderboltTwoToneIconType: String = js.native
-  }
   
   type _To = ThunderboltTwoToneIconType
   

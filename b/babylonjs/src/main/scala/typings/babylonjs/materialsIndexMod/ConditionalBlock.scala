@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "ConditionalBlock")
 @js.native
 open class ConditionalBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.ConditionalBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.ConditionalBlock {
   /**
     * Creates a new ConditionalBlock
     * @param name defines the block name

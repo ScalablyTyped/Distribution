@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.macie2Mod.string
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsMacie2Mod.string
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

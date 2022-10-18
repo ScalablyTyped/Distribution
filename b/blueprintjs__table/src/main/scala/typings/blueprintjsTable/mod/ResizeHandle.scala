@@ -1,6 +1,6 @@
 package typings.blueprintjsTable.mod
 
-import typings.blueprintjsTable.resizeHandleMod.IResizeHandleProps
+import typings.blueprintjsTable.libEsmInteractionsResizeHandleMod.IResizeHandleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "ResizeHandle")
 @js.native
 open class ResizeHandle protected ()
-  extends typings.blueprintjsTable.resizeHandleMod.ResizeHandle {
+  extends typings.blueprintjsTable.libEsmInteractionsResizeHandleMod.ResizeHandle {
   def this(props: IResizeHandleProps) = this()
   /**
     * @deprecated

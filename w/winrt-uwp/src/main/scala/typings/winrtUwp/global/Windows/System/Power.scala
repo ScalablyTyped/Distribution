@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Power {
   
   /** Provides information about your app's background energy usage. */
-  @JSGlobal("Windows.System.Power.BackgroundEnergyManager")
+  /* note: abstract class */ @JSGlobal("Windows.System.Power.BackgroundEnergyManager")
   @js.native
-  abstract class BackgroundEnergyManager ()
+  open class BackgroundEnergyManager ()
     extends StObject
        with typings.winrtUwp.Windows.System.Power.BackgroundEnergyManager
   object BackgroundEnergyManager {
@@ -141,9 +141,9 @@ object Power {
   object Diagnostics {
     
     /** Provides debugging APIs for calculating your app's background energy usage in real time. We recommend using these APIs only for debugging. */
-    @JSGlobal("Windows.System.Power.Diagnostics.BackgroundEnergyDiagnostics")
+    /* note: abstract class */ @JSGlobal("Windows.System.Power.Diagnostics.BackgroundEnergyDiagnostics")
     @js.native
-    abstract class BackgroundEnergyDiagnostics ()
+    open class BackgroundEnergyDiagnostics ()
       extends StObject
          with typings.winrtUwp.Windows.System.Power.Diagnostics.BackgroundEnergyDiagnostics
     object BackgroundEnergyDiagnostics {
@@ -172,9 +172,9 @@ object Power {
     }
     
     /** Provides debugging APIs for calculating your app's foreground energy usage in real time. We recommend using these APIs only for debugging. */
-    @JSGlobal("Windows.System.Power.Diagnostics.ForegroundEnergyDiagnostics")
+    /* note: abstract class */ @JSGlobal("Windows.System.Power.Diagnostics.ForegroundEnergyDiagnostics")
     @js.native
-    abstract class ForegroundEnergyDiagnostics ()
+    open class ForegroundEnergyDiagnostics ()
       extends StObject
          with typings.winrtUwp.Windows.System.Power.Diagnostics.ForegroundEnergyDiagnostics
     object ForegroundEnergyDiagnostics {
@@ -219,9 +219,9 @@ object Power {
   }
   
   /** Provides information about your app's foreground energy usage. */
-  @JSGlobal("Windows.System.Power.ForegroundEnergyManager")
+  /* note: abstract class */ @JSGlobal("Windows.System.Power.ForegroundEnergyManager")
   @js.native
-  abstract class ForegroundEnergyManager ()
+  open class ForegroundEnergyManager ()
     extends StObject
        with typings.winrtUwp.Windows.System.Power.ForegroundEnergyManager
   object ForegroundEnergyManager {
@@ -307,9 +307,9 @@ object Power {
   }
   
   /** Provides access to information about a device's battery and power supply status. */
-  @JSGlobal("Windows.System.Power.PowerManager")
+  /* note: abstract class */ @JSGlobal("Windows.System.Power.PowerManager")
   @js.native
-  abstract class PowerManager ()
+  open class PowerManager ()
     extends StObject
        with typings.winrtUwp.Windows.System.Power.PowerManager
   object PowerManager {

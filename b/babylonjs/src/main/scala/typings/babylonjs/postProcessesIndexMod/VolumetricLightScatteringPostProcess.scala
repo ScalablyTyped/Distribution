@@ -1,9 +1,10 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.meshMod.Mesh
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "VolumetricLightScatteringPostProcess")
 @js.native
 open class VolumetricLightScatteringPostProcess protected ()
-  extends typings.babylonjs.volumetricLightScatteringPostProcessMod.VolumetricLightScatteringPostProcess {
+  extends typings.babylonjs.postProcessesVolumetricLightScatteringPostProcessMod.VolumetricLightScatteringPostProcess {
   /**
     * @constructor
     * @param name The post-process name
@@ -27,7 +28,7 @@ open class VolumetricLightScatteringPostProcess protected ()
   def this(
     name: String,
     ratio: Any,
-    camera: Camera,
+    camera: Nullable[Camera],
     mesh: js.UndefOr[Mesh],
     samples: js.UndefOr[Double],
     samplingMode: js.UndefOr[Double],

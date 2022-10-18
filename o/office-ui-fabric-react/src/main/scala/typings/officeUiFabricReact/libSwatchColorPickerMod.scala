@@ -2,9 +2,9 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.PartialIColorPickerGridCe
 import typings.officeUiFabricReact.anon.SelectedIndex
-import typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellProps
-import typings.officeUiFabricReact.swatchColorPickerBaseMod.ISwatchColorPickerState
-import typings.officeUiFabricReact.swatchColorPickerTypesMod.ISwatchColorPickerProps
+import typings.officeUiFabricReact.libComponentsSwatchColorPickerColorPickerGridCellDottypesMod.IColorPickerGridCellProps
+import typings.officeUiFabricReact.libComponentsSwatchColorPickerSwatchColorPickerDotbaseMod.ISwatchColorPickerState
+import typings.officeUiFabricReact.libComponentsSwatchColorPickerSwatchColorPickerDottypesMod.ISwatchColorPickerProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object libSwatchColorPickerMod {
   @JSImport("office-ui-fabric-react/lib/SwatchColorPicker", "ColorPickerGridCellBase")
   @js.native
   open class ColorPickerGridCellBase protected ()
-    extends typings.officeUiFabricReact.swatchColorPickerMod.ColorPickerGridCellBase {
+    extends typings.officeUiFabricReact.libComponentsSwatchColorPickerMod.ColorPickerGridCellBase {
     def this(props: IColorPickerGridCellProps) = this()
     /**
       * @deprecated
@@ -47,7 +47,7 @@ object libSwatchColorPickerMod {
   @JSImport("office-ui-fabric-react/lib/SwatchColorPicker", "SwatchColorPickerBase")
   @js.native
   open class SwatchColorPickerBase protected ()
-    extends typings.officeUiFabricReact.swatchColorPickerMod.SwatchColorPickerBase {
+    extends typings.officeUiFabricReact.libComponentsSwatchColorPickerMod.SwatchColorPickerBase {
     def this(props: ISwatchColorPickerProps) = this()
   }
   /* static members */

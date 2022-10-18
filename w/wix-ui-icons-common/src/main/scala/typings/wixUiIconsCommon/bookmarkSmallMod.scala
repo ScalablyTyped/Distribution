@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsBookmarkSmallMod.BookmarkSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bookmarkSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/BookmarkSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/BookmarkSmall", JSImport.Default)
   @js.native
   val default: FC[BookmarkSmallProps] = js.native
-  
-  trait BookmarkSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object BookmarkSmallProps {
-    
-    inline def apply(): BookmarkSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[BookmarkSmallProps]
-    }
-    
-    extension [Self <: BookmarkSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[BookmarkSmallProps]
   

@@ -1,6 +1,6 @@
 package typings.storybookTheming.anon
 
-import typings.storybookTheming.emotionReactNodeModulesemotionSerializeTypesIndexMod.Interpolation
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.Interpolation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

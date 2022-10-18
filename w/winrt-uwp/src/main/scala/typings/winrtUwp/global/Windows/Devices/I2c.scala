@@ -52,9 +52,9 @@ object I2c {
   }
   
   /** Represents the I²C controller for the system. */
-  @JSGlobal("Windows.Devices.I2c.I2cController")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.I2c.I2cController")
   @js.native
-  abstract class I2cController ()
+  open class I2cController ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.I2c.I2cController {
     
@@ -89,9 +89,9 @@ object I2c {
   }
   
   /** Represents a communications channel to a device on an inter-integrated circuit (I²C) bus. */
-  @JSGlobal("Windows.Devices.I2c.I2cDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.I2c.I2cDevice")
   @js.native
-  abstract class I2cDevice ()
+  open class I2cDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.I2c.I2cDevice {
     
@@ -233,9 +233,9 @@ object I2c {
       inline def standardMode_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("standardMode")(x.asInstanceOf[js.Any])
     }
     
-    @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings")
     @js.native
-    abstract class ProviderI2cConnectionSettings ()
+    open class ProviderI2cConnectionSettings ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings {
       

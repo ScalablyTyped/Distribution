@@ -6,23 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `204` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repo-codespaces-secret'] */ js.Any
+  /** Returns a weekly aggregate of the number of additions and deletions pushed to a repository. */
+  var `200`: Content184
+  
+  var `202`: Content4
+  
+  var `204`: Any
 }
 object `204` {
   
-  inline def apply(
-    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repo-codespaces-secret'] */ js.Any
-  ): `204` = {
+  inline def apply(`200`: Content184, `202`: Content4, `204`: Any): `204` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+    __obj.updateDynamic("202")(`202`.asInstanceOf[js.Any])
+    __obj.updateDynamic("204")(`204`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`204`]
   }
   
   extension [Self <: `204`](x: Self) {
     
-    inline def setApplicationSlashjson(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repo-codespaces-secret'] */ js.Any
-    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def set200(value: Content184): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    
+    inline def set202(value: Content4): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
+    
+    inline def set204(value: Any): Self = StObject.set(x, "204", value.asInstanceOf[js.Any])
   }
 }

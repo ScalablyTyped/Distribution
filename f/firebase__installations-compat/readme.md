@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__installations-compat
 
-Typings are for version 0.1.12
+Typings are for version 0.1.15
 
 ## Library description:
 This is a compatability layer  for the Firebase Installations SDK

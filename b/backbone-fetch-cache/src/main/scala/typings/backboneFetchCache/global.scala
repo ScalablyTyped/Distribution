@@ -15,7 +15,7 @@ object global {
   object BackboneFetchCache {
     
     /* augmented module */
-    object mod {
+    object backboneMod {
       
       @JSImport("backbone", JSImport.Namespace)
       @js.native

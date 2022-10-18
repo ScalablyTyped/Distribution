@@ -34,7 +34,6 @@ import typings.chromeApps.chromeAppsStrings.right_
 import typings.chromeApps.chromeAppsStrings.success_
 import typings.chromeApps.chromeAppsStrings.top_
 import typings.chromeApps.chromeAppsStrings.unknown__
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -452,10 +451,7 @@ object system {
           /* result */ ToStringLiteral[
             FAILURE, 
             /* keyof chrome-apps.anon.FAILURE */ SUCCESS | IN_USE | NO_SUCH_DEVICE | typings.chromeApps.chromeAppsStrings.FAILURE, 
-            Exclude[
-              /* keyof chrome-apps.anon.FAILURE */ SUCCESS | IN_USE | NO_SUCH_DEVICE | typings.chromeApps.chromeAppsStrings.FAILURE, 
-              success_ | in_use_ | no_such_device_ | failure_
-            ]
+            /* import warning: importer.ImportType#apply Failed type conversion: keyof {  SUCCESS :'success',   IN_USE :'in_use',   NO_SUCH_DEVICE :'no_such_device',   FAILURE :'failure'} extends keyof {  SUCCESS :'success',   IN_USE :'in_use',   NO_SUCH_DEVICE :'no_such_device',   FAILURE :'failure'} ? std.Exclude<keyof {  SUCCESS :'success',   IN_USE :'in_use',   NO_SUCH_DEVICE :'no_such_device',   FAILURE :'failure'}, 'success' | 'in_use' | 'no_such_device' | 'failure'> : never */ js.Any
           ], 
           Unit
         ]

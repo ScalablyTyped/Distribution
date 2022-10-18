@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "PowerLevelsEvent")
 @js.native
 open class PowerLevelsEvent protected ()
-  extends typings.matrixBotSdk.powerLevelsEventMod.PowerLevelsEvent {
+  extends typings.matrixBotSdk.libModelsEventsPowerLevelsEventMod.PowerLevelsEvent {
   def this(event: Any) = this()
 }

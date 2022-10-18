@@ -1,10 +1,11 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.mathColorMod.Color3
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.mathsMathDotcolorMod.Color3
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "RefractionPostProcess")
 @js.native
 open class RefractionPostProcess protected ()
-  extends typings.babylonjs.refractionPostProcessMod.RefractionPostProcess {
+  extends typings.babylonjs.postProcessesRefractionPostProcessMod.RefractionPostProcess {
   /**
     * Initializes the RefractionPostProcess
     * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses#refraction
@@ -34,7 +35,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: Camera
+    camera: Nullable[Camera]
   ) = this()
   def this(
     name: String,
@@ -43,7 +44,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: Camera
+    camera: Nullable[Camera]
   ) = this()
   def this(
     name: String,
@@ -52,7 +53,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Double
   ) = this()
   def this(
@@ -62,7 +63,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Double
   ) = this()
   def this(
@@ -72,7 +73,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Double,
     engine: Engine
   ) = this()
@@ -83,7 +84,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Unit,
     engine: Engine
   ) = this()
@@ -94,7 +95,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Double,
     engine: Engine
   ) = this()
@@ -105,7 +106,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Unit,
     engine: Engine
   ) = this()
@@ -116,7 +117,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Double,
     engine: Unit,
     reusable: Boolean
@@ -128,7 +129,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Double,
     engine: Engine,
     reusable: Boolean
@@ -140,7 +141,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Unit,
     engine: Unit,
     reusable: Boolean
@@ -152,7 +153,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Unit,
     engine: Engine,
     reusable: Boolean
@@ -164,7 +165,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Double,
     engine: Unit,
     reusable: Boolean
@@ -176,7 +177,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Double,
     engine: Engine,
     reusable: Boolean
@@ -188,7 +189,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Unit,
     engine: Unit,
     reusable: Boolean
@@ -200,7 +201,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: Camera,
+    camera: Nullable[Camera],
     samplingMode: Unit,
     engine: Engine,
     reusable: Boolean
@@ -216,5 +217,5 @@ object RefractionPostProcess {
   /**
     * @internal
     */
-  inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): typings.babylonjs.refractionPostProcessMod.RefractionPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.refractionPostProcessMod.RefractionPostProcess]
+  inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): typings.babylonjs.postProcessesRefractionPostProcessMod.RefractionPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.postProcessesRefractionPostProcessMod.RefractionPostProcess]
 }

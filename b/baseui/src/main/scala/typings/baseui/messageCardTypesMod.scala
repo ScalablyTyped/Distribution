@@ -5,7 +5,7 @@ import typings.baseui.baseuiStrings.dark
 import typings.baseui.baseuiStrings.light
 import typings.baseui.baseuiStrings.secondary
 import typings.baseui.baseuiStrings.tertiary
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.std.Event

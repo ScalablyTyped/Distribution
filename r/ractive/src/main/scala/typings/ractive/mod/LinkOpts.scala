@@ -9,7 +9,7 @@ trait LinkOpts extends StObject {
   /**
   	 * The ractive instance in which to find the source keypath.
   	 */
-  var instance: js.UndefOr[Ractive[Ractive[Any]]] = js.undefined
+  var instance: js.UndefOr[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.undefined
   
   /**
   	 * The keypath to use for the link when handling a shuffle. For instance foo.1.bar will not shuffle with foo, but .bar will.
@@ -19,7 +19,7 @@ trait LinkOpts extends StObject {
   /**
   	 * The ractive instance in which to find the source keypath.
   	 */
-  var ractive: js.UndefOr[Ractive[Ractive[Any]]] = js.undefined
+  var ractive: js.UndefOr[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.undefined
 }
 object LinkOpts {
   
@@ -30,7 +30,7 @@ object LinkOpts {
   
   extension [Self <: LinkOpts](x: Self) {
     
-    inline def setInstance(value: Ractive[Ractive[Any]]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Ractive[/* ractive.ractive.Ractive<any> */ Any]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
@@ -38,7 +38,7 @@ object LinkOpts {
     
     inline def setKeypathUndefined: Self = StObject.set(x, "keypath", js.undefined)
     
-    inline def setRactive(value: Ractive[Ractive[Any]]): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
+    inline def setRactive(value: Ractive[/* ractive.ractive.Ractive<any> */ Any]): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
     
     inline def setRactiveUndefined: Self = StObject.set(x, "ractive", js.undefined)
   }

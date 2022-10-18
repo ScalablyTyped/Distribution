@@ -1,7 +1,7 @@
 package typings.reactReduxEpic
 
 import typings.react.mod.ReactElement
-import typings.reduxObservable.epicMod.Epic
+import typings.reduxObservable.distTypesEpicMod.Epic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

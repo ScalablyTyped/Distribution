@@ -6,23 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `335` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['status'] */ js.Any
+  /** Response */
+  var `200`: Content235
 }
 object `335` {
   
-  inline def apply(
-    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['status'] */ js.Any
-  ): `335` = {
+  inline def apply(`200`: Content235): `335` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`335`]
   }
   
   extension [Self <: `335`](x: Self) {
     
-    inline def setApplicationSlashjson(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['status'] */ js.Any
-    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def set200(value: Content235): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
   }
 }

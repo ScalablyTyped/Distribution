@@ -1,7 +1,7 @@
 package typings.cucumberMessages.mod.messages
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.ITestRunStarted
+import typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.ITestRunStarted
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [properties] Properties to set
   */
 open class TestRunStarted ()
-  extends typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted {
+  extends typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted {
   def this(properties: ITestRunStarted) = this()
 }
 object TestRunStarted {
@@ -32,11 +32,11 @@ object TestRunStarted {
     * @returns TestRunStarted instance
     */
   /* static member */
-  inline def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted]
-  inline def create(properties: ITestRunStarted): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted]
+  inline def create(): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted]
+  inline def create(properties: ITestRunStarted): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted]
   
-  inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted]
-  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted]
+  inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted]
   /**
     * Decodes a TestRunStarted message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -46,10 +46,10 @@ object TestRunStarted {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  inline def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted]
-  inline def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted]
+  inline def decode(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted]
+  inline def decode(reader: Reader, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted]
   
-  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted]
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted]
   /**
     * Decodes a TestRunStarted message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -58,7 +58,7 @@ object TestRunStarted {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  inline def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted]
+  inline def decodeDelimited(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted]
   
   /**
     * Encodes the specified TestRunStarted message. Does not implicitly {@link io.cucumber.messages.TestRunStarted.verify|verify} messages.
@@ -86,7 +86,7 @@ object TestRunStarted {
     * @returns TestRunStarted
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted]
+  inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted]
   
   /**
     * Creates a plain object from a TestRunStarted message. Also converts values to other types if specified.
@@ -95,9 +95,9 @@ object TestRunStarted {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   inline def toObject(
-    message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRunStarted,
+    message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.TestRunStarted,
     options: IConversionOptions
   ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   

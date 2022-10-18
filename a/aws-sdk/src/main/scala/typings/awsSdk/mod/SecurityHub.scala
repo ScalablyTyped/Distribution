@@ -1,6 +1,6 @@
 package typings.awsSdk.mod
 
-import typings.awsSdk.securityhubMod.ClientConfiguration
+import typings.awsSdk.clientsSecurityhubMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a service object. This object has one method for each API operation.
   */
 open class SecurityHub ()
-  extends typings.awsSdk.allMod.SecurityHub {
+  extends typings.awsSdk.clientsAllMod.SecurityHub {
   def this(options: ClientConfiguration) = this()
 }

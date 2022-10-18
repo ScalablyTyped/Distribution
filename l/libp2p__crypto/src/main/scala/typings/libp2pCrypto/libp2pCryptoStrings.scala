@@ -1,6 +1,6 @@
 package typings.libp2pCrypto
 
-import typings.libp2pCrypto.keysMod.KeyTypes
+import typings.libp2pCrypto.distSrcKeysMod.KeyTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

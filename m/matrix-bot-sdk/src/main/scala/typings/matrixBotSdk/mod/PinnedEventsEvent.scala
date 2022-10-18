@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "PinnedEventsEvent")
 @js.native
 open class PinnedEventsEvent protected ()
-  extends typings.matrixBotSdk.pinnedEventsEventMod.PinnedEventsEvent {
+  extends typings.matrixBotSdk.libModelsEventsPinnedEventsEventMod.PinnedEventsEvent {
   def this(event: Any) = this()
 }

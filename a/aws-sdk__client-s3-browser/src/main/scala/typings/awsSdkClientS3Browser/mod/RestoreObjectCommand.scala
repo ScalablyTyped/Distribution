@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-browser", "RestoreObjectCommand")
 @js.native
 open class RestoreObjectCommand protected ()
-  extends typings.awsSdkClientS3Browser.restoreObjectCommandMod.RestoreObjectCommand {
+  extends typings.awsSdkClientS3Browser.commandsRestoreObjectCommandMod.RestoreObjectCommand {
   def this(input: RestoreObjectInput) = this()
 }

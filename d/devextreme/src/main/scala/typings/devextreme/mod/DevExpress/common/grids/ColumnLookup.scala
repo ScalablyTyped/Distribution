@@ -62,8 +62,6 @@ object ColumnLookup {
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
-    
     inline def setDisplayExpr(value: String | (js.Function1[/* data */ Any, String])): Self = StObject.set(x, "displayExpr", value.asInstanceOf[js.Any])
     
     inline def setDisplayExprFunction1(value: /* data */ Any => String): Self = StObject.set(x, "displayExpr", js.Any.fromFunction1(value))

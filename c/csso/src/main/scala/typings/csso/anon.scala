@@ -60,4 +60,55 @@ object anon {
       inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
+  
+  trait Typeofident extends StObject {
+    
+    def decode(input: String): String
+    
+    def encode(input: String): String
+  }
+  object Typeofident {
+    
+    inline def apply(decode: String => String, encode: String => String): Typeofident = {
+      val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
+      __obj.asInstanceOf[Typeofident]
+    }
+    
+    extension [Self <: Typeofident](x: Self) {
+      
+      inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      
+      inline def setEncode(value: String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    }
+  }
+  
+  @js.native
+  trait Typeofstring extends StObject {
+    
+    def decode(input: String): String = js.native
+    
+    def encode(input: String): String = js.native
+    def encode(input: String, apostrophe: Boolean): String = js.native
+  }
+  
+  trait Typeofurl extends StObject {
+    
+    def decode(input: String): String
+    
+    def encode(input: String): String
+  }
+  object Typeofurl {
+    
+    inline def apply(decode: String => String, encode: String => String): Typeofurl = {
+      val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
+      __obj.asInstanceOf[Typeofurl]
+    }
+    
+    extension [Self <: Typeofurl](x: Self) {
+      
+      inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      
+      inline def setEncode(value: String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    }
+  }
 }

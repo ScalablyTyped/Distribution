@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@lumino/widgets", "FocusTracker")
 @js.native
-open class FocusTracker[T /* <: typings.luminoWidgets.widgetMod.Widget */] ()
-  extends typings.luminoWidgets.focustrackerMod.FocusTracker[T]
+open class FocusTracker[T /* <: typings.luminoWidgets.typesWidgetMod.Widget */] ()
+  extends typings.luminoWidgets.typesFocustrackerMod.FocusTracker[T]

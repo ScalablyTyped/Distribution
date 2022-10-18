@@ -1,8 +1,8 @@
 package typings.node.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.node.nodeHttpMod.IncomingMessage
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonhttpMod.IncomingMessage
+import typings.node.nodeColonnetMod.Socket
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

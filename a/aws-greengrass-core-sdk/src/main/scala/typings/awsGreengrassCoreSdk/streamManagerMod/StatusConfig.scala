@@ -1,8 +1,8 @@
 package typings.awsGreengrassCoreSdk.streamManagerMod
 
-import typings.awsGreengrassCoreSdk.dataMod.StatusConfigMap
-import typings.awsGreengrassCoreSdk.dataMod.TypesMap
-import typings.awsGreengrassCoreSdk.dataMod.ValidationsMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusConfigMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.TypesMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ValidationsMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,11 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The status-stream should be created before associating it with another stream.
   */
 open class StatusConfig ()
-  extends typings.awsGreengrassCoreSdk.clientMod.StatusConfig {
-  def this(statusLevel: typings.awsGreengrassCoreSdk.dataMod.StatusLevel) = this()
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.StatusConfig {
+  def this(statusLevel: typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel) = this()
   def this(statusLevel: Null, statusStreamName: String) = this()
   def this(statusLevel: Unit, statusStreamName: String) = this()
-  def this(statusLevel: typings.awsGreengrassCoreSdk.dataMod.StatusLevel, statusStreamName: String) = this()
+  def this(
+    statusLevel: typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel,
+    statusStreamName: String
+  ) = this()
 }
 /* static members */
 object StatusConfig {
@@ -34,7 +37,7 @@ object StatusConfig {
   def formatsMap: Record[String, scala.Nothing] = js.native
   inline def formatsMap_=(x: Record[String, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatsMap")(x.asInstanceOf[js.Any])
   
-  inline def fromMap(d: StatusConfigMap): typings.awsGreengrassCoreSdk.dataMod.StatusConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.StatusConfig]
+  inline def fromMap(d: StatusConfigMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusConfig]
   
   @JSImport("aws-greengrass-core-sdk/stream-manager", "StatusConfig.typesMap")
   @js.native

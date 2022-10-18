@@ -10,12 +10,12 @@ object SubscriptionModels {
   @JSImport("azure-arm-resource", "SubscriptionModels.BaseResource")
   @js.native
   open class BaseResource ()
-    extends typings.azureArmResource.subscriptionModelsMod.BaseResource
+    extends typings.azureArmResource.libSubscriptionModelsMod.BaseResource
   
   @JSImport("azure-arm-resource", "SubscriptionModels.CloudError")
   @js.native
   open class CloudError protected ()
-    extends typings.azureArmResource.subscriptionModelsMod.CloudError {
+    extends typings.azureArmResource.libSubscriptionModelsMod.CloudError {
     def this(parameters: CloudErrorParameters) = this()
   }
 }

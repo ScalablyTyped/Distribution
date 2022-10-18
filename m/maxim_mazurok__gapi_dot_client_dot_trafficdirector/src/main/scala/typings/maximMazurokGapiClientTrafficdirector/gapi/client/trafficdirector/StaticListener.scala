@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait StaticListener extends StObject {
   
   /** The listener config. */
   var listener: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticListener & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object StaticListener {
@@ -31,9 +28,7 @@ object StaticListener {
     inline def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
     
     inline def setListener(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticListener & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
     inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)

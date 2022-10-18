@@ -4,25 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "BaseBlock")
 @js.native
-open class BaseBlock[T /* <: ValueBlock */, J /* <: ValueBlockJson */] ()
+trait BaseBlock[T /* <: ValueBlock */, J /* <: ValueBlockJson */]
   extends StObject
      with LocalBaseBlock
      with IBaseBlock
      with IBerConvertible {
-  def this(hasNameOptionalPrimitiveSchemaParameters: BaseBlockParams) = this()
-  def this(hasNameOptionalPrimitiveSchemaParameters: Unit, valueBlockType: ValueBlockConstructor[T]) = this()
-  def this(
-    hasNameOptionalPrimitiveSchemaParameters: BaseBlockParams,
-    valueBlockType: ValueBlockConstructor[T]
-  ) = this()
-  
-  /* CompleteClass */
-  var blockLength: Double = js.native
-  
-  /* CompleteClass */
-  var error: String = js.native
   
   var idBlock: LocalIdentificationBlock = js.native
   
@@ -34,13 +21,7 @@ open class BaseBlock[T /* <: ValueBlock */, J /* <: ValueBlockJson */] ()
   
   var lenBlock: LocalLengthBlock = js.native
   
-  /* CompleteClass */
-  var name: String = js.native
-  
   /* protected */ def onAsciiEncoding(): String = js.native
-  
-  /* CompleteClass */
-  var optional: scala.Boolean = js.native
   
   def toBER(sizeOnly: scala.Boolean, writer: ViewWriter): js.typedarray.ArrayBuffer = js.native
   def toBER(sizeOnly: Unit, writer: ViewWriter): js.typedarray.ArrayBuffer = js.native
@@ -48,19 +29,4 @@ open class BaseBlock[T /* <: ValueBlock */, J /* <: ValueBlockJson */] ()
   def toString(encoding: StringEncoding): String = js.native
   
   var valueBlock: T = js.native
-  
-  /* CompleteClass */
-  var warnings: js.Array[String] = js.native
-}
-object BaseBlock {
-  
-  @JSImport("asn1js", "BaseBlock")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
-  @JSImport("asn1js", "BaseBlock.NAME")
-  @js.native
-  def NAME: String = js.native
-  inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
 }

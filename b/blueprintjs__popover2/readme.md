@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueprintjs__popover2
 
-Typings are for version 1.6.7
+Typings are for version 1.7.3
 
 ## Library description:
 Popover2 and dependent components

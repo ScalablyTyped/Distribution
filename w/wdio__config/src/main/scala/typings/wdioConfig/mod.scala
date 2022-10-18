@@ -1,12 +1,12 @@
 package typings.wdioConfig
 
 import typings.wdioConfig.anon.OmitTestrunnercapabilitie
-import typings.wdioConfig.configParserMod.Spec
-import typings.wdioConfig.configParserMod.default
-import typings.wdioConfig.typesMod.ModuleRequireService
-import typings.wdioConfig.typesMod.PathService
-import typings.wdioTypes.capabilitiesMod.Capabilities
-import typings.wdioTypes.optionsMod.Definition
+import typings.wdioConfig.buildLibConfigParserMod.Spec
+import typings.wdioConfig.buildLibConfigParserMod.default
+import typings.wdioConfig.buildTypesMod.ModuleRequireService
+import typings.wdioConfig.buildTypesMod.PathService
+import typings.wdioTypes.buildCapabilitiesMod.Capabilities
+import typings.wdioTypes.buildOptionsMod.Definition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

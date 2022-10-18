@@ -1,5 +1,6 @@
 package typings.zipJsZipJs.mod
 
+import typings.std.AsyncGenerator
 import typings.std.ReadableStream
 import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
@@ -9,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@zip.js/zip.js", "ZipWriter")
 @js.native
 open class ZipWriter[Type] protected () extends StObject {
+  def this(writer: AsyncGenerator[Writer[Any] | WritableWriter | WritableStream[Any], Boolean, Any]) = this()
   def this(writer: WritableStream[Any]) = this()
+  def this(writer: SplitZipWriter) = this()
   def this(writer: WritableWriter) = this()
   /**
     * Creates the `ZipWriter` instance
@@ -18,7 +21,12 @@ open class ZipWriter[Type] protected () extends StObject {
     * @param options The options.
     */
   def this(writer: Writer[Type]) = this()
+  def this(
+    writer: AsyncGenerator[Writer[Any] | WritableWriter | WritableStream[Any], Boolean, Any],
+    options: ZipWriterConstructorOptions
+  ) = this()
   def this(writer: WritableStream[Any], options: ZipWriterConstructorOptions) = this()
+  def this(writer: SplitZipWriter, options: ZipWriterConstructorOptions) = this()
   def this(writer: WritableWriter, options: ZipWriterConstructorOptions) = this()
   def this(writer: Writer[Type], options: ZipWriterConstructorOptions) = this()
   
@@ -31,7 +39,6 @@ open class ZipWriter[Type] protected () extends StObject {
     * @returns A promise resolving to an `Entry` instance.
     */
   def add[ReaderType](filename: String): js.Promise[Entry] = js.native
-  def add[ReaderType](filename: String, reader: Null, options: ZipWriterAddDataOptions): js.Promise[Entry] = js.native
   def add[ReaderType](filename: String, reader: Unit, options: ZipWriterAddDataOptions): js.Promise[Entry] = js.native
   def add[ReaderType](filename: String, reader: ReadableStream[Any]): js.Promise[Entry] = js.native
   def add[ReaderType](filename: String, reader: ReadableStream[Any], options: ZipWriterAddDataOptions): js.Promise[Entry] = js.native
@@ -50,7 +57,6 @@ open class ZipWriter[Type] protected () extends StObject {
   def close(): js.Promise[Type] = js.native
   def close(comment: js.typedarray.Uint8Array): js.Promise[Type] = js.native
   def close(comment: js.typedarray.Uint8Array, options: ZipWriterCloseOptions): js.Promise[Type] = js.native
-  def close(comment: Null, options: ZipWriterCloseOptions): js.Promise[Type] = js.native
   def close(comment: Unit, options: ZipWriterCloseOptions): js.Promise[Type] = js.native
   
   /**

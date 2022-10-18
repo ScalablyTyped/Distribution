@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Gamepads/index", "PoseEnabledController")
 @js.native
 open class PoseEnabledController protected ()
-  extends typings.babylonjs.controllersIndexMod.PoseEnabledController {
+  extends typings.babylonjs.gamepadsControllersIndexMod.PoseEnabledController {
   /**
     * Creates a new PoseEnabledController from a gamepad
     * @param browserGamepad the gamepad that the PoseEnabledController should be created from

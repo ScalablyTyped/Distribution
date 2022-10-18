@@ -1,6 +1,6 @@
 package typings.reactNativeSvg.mod
 
-import typings.reactNativeSvg.xmlMod.UriProps
+import typings.reactNativeSvg.libTypescriptXmlMod.UriProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native-svg", "SvgWithCssUri")
 @js.native
 open class SvgWithCssUri protected ()
-  extends typings.reactNativeSvg.reactNativeSVGMod.SvgWithCssUri {
+  extends typings.reactNativeSvg.libTypescriptReactNativeSVGMod.SvgWithCssUri {
   def this(props: UriProps) = this()
   /**
     * @deprecated

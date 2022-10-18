@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialBulletOptions
-import typings.antvG2plot.bulletTypesMod.BulletOptions
+import typings.antvG2plot.libPlotsBulletTypesMod.BulletOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Bullet")
 @js.native
 open class Bullet protected ()
-  extends typings.antvG2plot.bulletMod.Bullet {
+  extends typings.antvG2plot.libPlotsBulletMod.Bullet {
   def this(container: String, options: BulletOptions) = this()
   def this(container: HTMLElement, options: BulletOptions) = this()
 }

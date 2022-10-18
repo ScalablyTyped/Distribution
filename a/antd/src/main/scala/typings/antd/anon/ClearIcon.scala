@@ -1,6 +1,6 @@
 package typings.antd.anon
 
-import typings.antd.iconUtilMod.RenderNode
+import typings.antd.libSelectUtilsIconUtilMod.RenderNode
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

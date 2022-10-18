@@ -1,9 +1,6 @@
 package typings.expressNtlm
 
 import typings.express.mod.Handler
-import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
 import typings.node.tlsMod.ConnectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -47,7 +44,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setBadrequest(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "badrequest", js.Any.fromFunction3(value))
+      inline def setBadrequest(value: Handler): Self = StObject.set(x, "badrequest", value.asInstanceOf[js.Any])
       
       inline def setBadrequestUndefined: Self = StObject.set(x, "badrequest", js.undefined)
       
@@ -65,11 +62,11 @@ object mod {
       
       inline def setDomaincontrollerVarargs(value: String*): Self = StObject.set(x, "domaincontroller", js.Array(value*))
       
-      inline def setForbidden(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "forbidden", js.Any.fromFunction3(value))
+      inline def setForbidden(value: Handler): Self = StObject.set(x, "forbidden", value.asInstanceOf[js.Any])
       
       inline def setForbiddenUndefined: Self = StObject.set(x, "forbidden", js.undefined)
       
-      inline def setInternalservererror(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "internalservererror", js.Any.fromFunction3(value))
+      inline def setInternalservererror(value: Handler): Self = StObject.set(x, "internalservererror", value.asInstanceOf[js.Any])
       
       inline def setInternalservererrorUndefined: Self = StObject.set(x, "internalservererror", js.undefined)
       
@@ -81,7 +78,7 @@ object mod {
       
       inline def setTlsOptionsUndefined: Self = StObject.set(x, "tlsOptions", js.undefined)
       
-      inline def setUnauthorized(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "unauthorized", js.Any.fromFunction3(value))
+      inline def setUnauthorized(value: Handler): Self = StObject.set(x, "unauthorized", value.asInstanceOf[js.Any])
       
       inline def setUnauthorizedUndefined: Self = StObject.set(x, "unauthorized", js.undefined)
     }
@@ -128,12 +125,12 @@ object mod {
       }
       object Request {
         
-        inline def apply(): typings.expressNtlm.mod.global.Express.Request = {
+        inline def apply(): Request = {
           val __obj = js.Dynamic.literal()
-          __obj.asInstanceOf[typings.expressNtlm.mod.global.Express.Request]
+          __obj.asInstanceOf[Request]
         }
         
-        extension [Self <: typings.expressNtlm.mod.global.Express.Request](x: Self) {
+        extension [Self <: Request](x: Self) {
           
           inline def setNtlm(value: RequestNtlm): Self = StObject.set(x, "ntlm", value.asInstanceOf[js.Any])
           

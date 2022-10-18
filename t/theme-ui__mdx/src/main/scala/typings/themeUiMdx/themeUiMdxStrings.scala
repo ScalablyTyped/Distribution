@@ -1,23 +1,11 @@
 package typings.themeUiMdx
 
-import typings.themeUiMdx.mod.MdxAliasesKeys
+import typings.themeUiMdx.distDeclarationsSrcMod.MdxAliasesKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeUiMdxStrings {
-  
-  @js.native
-  sealed trait MDXProviderComponentsKnownKeys extends StObject
-  inline def MDXProviderComponentsKnownKeys: MDXProviderComponentsKnownKeys = "MDXProviderComponentsKnownKeys".asInstanceOf[MDXProviderComponentsKnownKeys]
-  
-  @js.native
-  sealed trait MdxAliases extends StObject
-  inline def MdxAliases: MdxAliases = "MdxAliases".asInstanceOf[MdxAliases]
-  
-  @js.native
-  sealed trait ThemedComponentsDict extends StObject
-  inline def ThemedComponentsDict: ThemedComponentsDict = "ThemedComponentsDict".asInstanceOf[ThemedComponentsDict]
   
   @js.native
   sealed trait code extends StObject

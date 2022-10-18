@@ -1,50 +1,49 @@
 package typings.mobx
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mobx.actionMod.IActionFactory
-import typings.mobx.annotationMod.Annotation
-import typings.mobx.annotationMod.AnnotationsMap
 import typings.mobx.anon.ComputedRequiresReaction
 import typings.mobx.anon.Promisevoidcancelvoid
-import typings.mobx.atomMod.IAtom
-import typings.mobx.autorunMod.IAutorunOptions
-import typings.mobx.autorunMod.IReactionOptions
-import typings.mobx.computedMod.IComputedFactory
-import typings.mobx.computedvalueMod.IComputedValue
-import typings.mobx.coreActionMod.IActionRunInfo
-import typings.mobx.coreObservableMod.IDepTreeNode
-import typings.mobx.coreObservableMod.IObservable
-import typings.mobx.derivationMod.IDerivation
-import typings.mobx.extrasMod.IDependencyTree
-import typings.mobx.extrasMod.IObserverTree
-import typings.mobx.flowMod.CancellablePromise
-import typings.mobx.flowMod.Flow_
-import typings.mobx.interceptReadMod.ReadInterceptor
-import typings.mobx.interceptUtilsMod.IInterceptor
-import typings.mobx.makeObservableMod.NoInfer
-import typings.mobx.modifiersMod.IEnhancer
-import typings.mobx.observableMod.CreateObservableOptions
-import typings.mobx.observableMod.IObservableFactory
-import typings.mobx.observablearrayMod.IArrayDidChange
-import typings.mobx.observablearrayMod.IArrayWillChange
-import typings.mobx.observablearrayMod.IArrayWillSplice
-import typings.mobx.observablearrayMod.IObservableArray
-import typings.mobx.observablemapMod.IMapDidChange
-import typings.mobx.observablemapMod.IMapWillChange
-import typings.mobx.observablemapMod.IObservableMapInitialValues
-import typings.mobx.observableobjectMod.IObjectDidChange
-import typings.mobx.observableobjectMod.IObjectWillChange
-import typings.mobx.observablesetMod.IObservableSetInitialValues
-import typings.mobx.observablesetMod.ISetDidChange
-import typings.mobx.observablesetMod.ISetWillChange
-import typings.mobx.observablevalueMod.IObservableValue
-import typings.mobx.observablevalueMod.IValueDidChange
-import typings.mobx.observablevalueMod.IValueWillChange
-import typings.mobx.reactionMod.IReactionDisposer
-import typings.mobx.reactionMod.IReactionPublic
-import typings.mobx.spyMod.SpyEvent
-import typings.mobx.utilsMod.Lambda
-import typings.mobx.whenMod.IWhenOptions
+import typings.mobx.distApiActionMod.IActionFactory
+import typings.mobx.distApiAnnotationMod.Annotation
+import typings.mobx.distApiAnnotationMod.AnnotationsMap
+import typings.mobx.distApiAutorunMod.IAutorunOptions
+import typings.mobx.distApiAutorunMod.IReactionOptions
+import typings.mobx.distApiComputedMod.IComputedFactory
+import typings.mobx.distApiExtrasMod.IDependencyTree
+import typings.mobx.distApiExtrasMod.IObserverTree
+import typings.mobx.distApiFlowMod.Flow_
+import typings.mobx.distApiInterceptReadMod.ReadInterceptor
+import typings.mobx.distApiMakeObservableMod.NoInfer
+import typings.mobx.distApiObservableMod.CreateObservableOptions
+import typings.mobx.distApiObservableMod.IObservableFactory
+import typings.mobx.distApiWhenMod.IWhenOptions
+import typings.mobx.distCoreActionMod.IActionRunInfo
+import typings.mobx.distCoreAtomMod.IAtom
+import typings.mobx.distCoreComputedvalueMod.IComputedValue
+import typings.mobx.distCoreDerivationMod.IDerivation
+import typings.mobx.distCoreObservableMod.IDepTreeNode
+import typings.mobx.distCoreObservableMod.IObservable
+import typings.mobx.distCoreReactionMod.IReactionDisposer
+import typings.mobx.distCoreReactionMod.IReactionPublic
+import typings.mobx.distCoreSpyMod.SpyEvent
+import typings.mobx.distTypesInterceptUtilsMod.IInterceptor
+import typings.mobx.distTypesModifiersMod.IEnhancer
+import typings.mobx.distTypesObservablearrayMod.IArrayDidChange
+import typings.mobx.distTypesObservablearrayMod.IArrayWillChange
+import typings.mobx.distTypesObservablearrayMod.IArrayWillSplice
+import typings.mobx.distTypesObservablearrayMod.IObservableArray
+import typings.mobx.distTypesObservablemapMod.IMapDidChange
+import typings.mobx.distTypesObservablemapMod.IMapWillChange
+import typings.mobx.distTypesObservablemapMod.IObservableMapInitialValues
+import typings.mobx.distTypesObservableobjectMod.IObjectDidChange
+import typings.mobx.distTypesObservableobjectMod.IObjectWillChange
+import typings.mobx.distTypesObservablesetMod.IObservableSetInitialValues
+import typings.mobx.distTypesObservablesetMod.ISetDidChange
+import typings.mobx.distTypesObservablesetMod.ISetWillChange
+import typings.mobx.distTypesObservablevalueMod.IObservableValue
+import typings.mobx.distTypesObservablevalueMod.IValueDidChange
+import typings.mobx.distTypesObservablevalueMod.IValueWillChange
+import typings.mobx.distUtilsUtilsMod.Lambda
 import typings.std.IArguments
 import typings.std.Map
 import typings.std.PropertyDecorator
@@ -77,7 +76,7 @@ object mod {
   @JSImport("mobx", "ObservableMap")
   @js.native
   open class ObservableMap[K, V] ()
-    extends typings.mobx.internalMod.ObservableMap[K, V] {
+    extends typings.mobx.distInternalMod.ObservableMap[K, V] {
     def this(initialData: IObservableMapInitialValues[K, V]) = this()
     def this(initialData: Unit, enhancer_ : IEnhancer[V]) = this()
     def this(initialData: IObservableMapInitialValues[K, V], enhancer_ : IEnhancer[V]) = this()
@@ -90,7 +89,7 @@ object mod {
   @JSImport("mobx", "ObservableSet")
   @js.native
   open class ObservableSet[T] ()
-    extends typings.mobx.internalMod.ObservableSet[T] {
+    extends typings.mobx.distInternalMod.ObservableSet[T] {
     def this(initialData: IObservableSetInitialValues[T]) = this()
     def this(initialData: Unit, enhancer: IEnhancer[T]) = this()
     def this(initialData: IObservableSetInitialValues[T], enhancer: IEnhancer[T]) = this()
@@ -103,7 +102,7 @@ object mod {
   @JSImport("mobx", "Reaction")
   @js.native
   open class Reaction_ protected ()
-    extends typings.mobx.internalMod.Reaction_ {
+    extends typings.mobx.distInternalMod.Reaction_ {
     def this(name_ : String, onInvalidate_ : js.Function0[Unit]) = this()
     def this(
       name_ : String,
@@ -197,16 +196,16 @@ object mod {
   inline def entries[T](obj: T): js.Array[
     js.Tuple2[
       String, 
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: T extends object ? T[keyof T] : any */ js.Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[
     js.Tuple2[
       String, 
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: T extends object ? T[keyof T] : any */ js.Any
     ]
   ]]
-  inline def entries[T](set: typings.mobx.internalMod.ObservableSet[T]): js.Array[js.Tuple2[T, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(set.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[T, T]]]
-  inline def entries[K, T](map: typings.mobx.internalMod.ObservableMap[K, T]): js.Array[js.Tuple2[K, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[K, T]]]
+  inline def entries[T](set: typings.mobx.distInternalMod.ObservableSet[T]): js.Array[js.Tuple2[T, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(set.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[T, T]]]
+  inline def entries[K, T](map: typings.mobx.distInternalMod.ObservableMap[K, T]): js.Array[js.Tuple2[K, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[K, T]]]
   
   inline def extendObservable[A /* <: js.Object */, B /* <: js.Object */](target: A, properties: B): A & B = (^.asInstanceOf[js.Dynamic].applyDynamic("extendObservable")(target.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[A & B]
   inline def extendObservable[A /* <: js.Object */, B /* <: js.Object */](target: A, properties: B, annotations: Unit, options: CreateObservableOptions): A & B = (^.asInstanceOf[js.Dynamic].applyDynamic("extendObservable")(target.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], annotations.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[A & B]
@@ -222,11 +221,11 @@ object mod {
   @js.native
   val flow: Flow_ = js.native
   
-  inline def flowResult[T](result: T): T | CancellablePromise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flowResult")(result.asInstanceOf[js.Any]).asInstanceOf[T | CancellablePromise[Any]]
+  inline def flowResult[T](result: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Generator<any, infer R, any> ? mobx.mobx/dist/api/flow.CancellablePromise<R> : T extends mobx.mobx/dist/api/flow.CancellablePromise<any> ? T : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flowResult")(result.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends std.Generator<any, infer R, any> ? mobx.mobx/dist/api/flow.CancellablePromise<R> : T extends mobx.mobx/dist/api/flow.CancellablePromise<any> ? T : never */ js.Any]
   
   inline def get[T /* <: js.Object */](obj: T, key: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def get[T](obj: IObservableArray[T], index: Double): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-  inline def get[K, V](obj: typings.mobx.internalMod.ObservableMap[K, V], key: K): js.UndefOr[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[V]]
+  inline def get[K, V](obj: typings.mobx.distInternalMod.ObservableMap[K, V], key: K): js.UndefOr[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[V]]
   
   inline def getAdministration(thing: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_getAdministration")(thing.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def getAdministration(thing: Any, property: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_getAdministration")(thing.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Any]
@@ -246,8 +245,8 @@ object mod {
   inline def getObserverTree(thing: Any, property: String): IObserverTree = (^.asInstanceOf[js.Dynamic].applyDynamic("getObserverTree")(thing.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[IObserverTree]
   
   inline def has[T /* <: js.Object */](obj: T, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def has[K](obj: typings.mobx.internalMod.ObservableMap[K, Any], key: K): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def has[T](obj: typings.mobx.internalMod.ObservableSet[T], key: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def has[K](obj: typings.mobx.distInternalMod.ObservableMap[K, Any], key: K): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def has[T](obj: typings.mobx.distInternalMod.ObservableSet[T], key: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def has[T](obj: IObservableArray[T], index: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def intercept(`object`: js.Object, handler: IInterceptor[IObjectWillChange[Any]]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(`object`.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
@@ -256,7 +255,10 @@ object mod {
     observableArray: IObservableArray[T],
     handler: IInterceptor[IArrayWillChange[T] | IArrayWillSplice[T]]
   ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(observableArray.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
-  inline def intercept[V](observableSet: typings.mobx.internalMod.ObservableSet[V], handler: IInterceptor[ISetWillChange[V]]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(observableSet.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  inline def intercept[V](
+    observableSet: typings.mobx.distInternalMod.ObservableSet[V],
+    handler: IInterceptor[ISetWillChange[V]]
+  ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(observableSet.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def intercept[V](observableSet: Set[V], handler: IInterceptor[ISetWillChange[V]]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(observableSet.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def intercept[T](value: IObservableValue[T], handler: IInterceptor[IValueWillChange[T]]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(value.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def intercept[T /* <: js.Object */, K /* <: /* keyof T */ String */](
@@ -269,11 +271,11 @@ object mod {
     ]
   ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def intercept[K, V](
-    observableMap: typings.mobx.internalMod.ObservableMap[K, V],
+    observableMap: typings.mobx.distInternalMod.ObservableMap[K, V],
     handler: IInterceptor[IMapWillChange[K, V]]
   ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(observableMap.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def intercept[K, V](
-    observableMap: typings.mobx.internalMod.ObservableMap[K, V],
+    observableMap: typings.mobx.distInternalMod.ObservableMap[K, V],
     property: K,
     handler: IInterceptor[IValueWillChange[V]]
   ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(observableMap.asInstanceOf[js.Any], property.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
@@ -282,9 +284,9 @@ object mod {
   
   inline def interceptReads(`object`: js.Object, property: String, handler: ReadInterceptor[Any]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("_interceptReads")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def interceptReads[T](observableArray: IObservableArray[T], handler: ReadInterceptor[T]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("_interceptReads")(observableArray.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
-  inline def interceptReads[V](observableSet: typings.mobx.internalMod.ObservableSet[V], handler: ReadInterceptor[V]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("_interceptReads")(observableSet.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  inline def interceptReads[V](observableSet: typings.mobx.distInternalMod.ObservableSet[V], handler: ReadInterceptor[V]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("_interceptReads")(observableSet.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def interceptReads[T](value: IObservableValue[T], handler: ReadInterceptor[T]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("_interceptReads")(value.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
-  inline def interceptReads[K, V](observableMap: typings.mobx.internalMod.ObservableMap[K, V], handler: ReadInterceptor[V]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("_interceptReads")(observableMap.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  inline def interceptReads[K, V](observableMap: typings.mobx.distInternalMod.ObservableMap[K, V], handler: ReadInterceptor[V]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("_interceptReads")(observableMap.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   
   inline def isAction(thing: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAction")(thing.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -335,9 +337,9 @@ object mod {
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isObservableSet")(x.asInstanceOf[js.Any])
   
   inline def keys[T](ar: IObservableArray[T]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(ar.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  inline def keys[K](map: typings.mobx.internalMod.ObservableMap[K, Any]): js.Array[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[K]]
+  inline def keys[K](map: typings.mobx.distInternalMod.ObservableMap[K, Any]): js.Array[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[K]]
   inline def keys[T /* <: js.Object */](obj: T): js.Array[PropertyKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[PropertyKey]]
-  inline def keys[T](set: typings.mobx.internalMod.ObservableSet[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(set.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def keys[T](set: typings.mobx.distInternalMod.ObservableSet[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(set.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   inline def makeAutoObservable[T /* <: js.Object */, AdditionalKeys /* <: PropertyKey */](target: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAutoObservable")(target.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def makeAutoObservable[T /* <: js.Object */, AdditionalKeys /* <: PropertyKey */](target: T, overrides: Unit, options: CreateObservableOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAutoObservable")(target.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -384,11 +386,11 @@ object mod {
     fireImmediately: Boolean
   ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableArray.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], fireImmediately.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def observe[V](
-    observableSet: typings.mobx.internalMod.ObservableSet[V],
+    observableSet: typings.mobx.distInternalMod.ObservableSet[V],
     listener: js.Function1[/* change */ ISetDidChange[V], Unit]
   ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableSet.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def observe[V](
-    observableSet: typings.mobx.internalMod.ObservableSet[V],
+    observableSet: typings.mobx.distInternalMod.ObservableSet[V],
     listener: js.Function1[/* change */ ISetDidChange[V], Unit],
     fireImmediately: Boolean
   ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableSet.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], fireImmediately.asInstanceOf[js.Any])).asInstanceOf[Lambda]
@@ -432,21 +434,21 @@ object mod {
     fireImmediately: Boolean
   ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], fireImmediately.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def observe[K, V](
-    observableMap: typings.mobx.internalMod.ObservableMap[K, V],
+    observableMap: typings.mobx.distInternalMod.ObservableMap[K, V],
     listener: js.Function1[/* change */ IMapDidChange[K, V], Unit]
   ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableMap.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def observe[K, V](
-    observableMap: typings.mobx.internalMod.ObservableMap[K, V],
+    observableMap: typings.mobx.distInternalMod.ObservableMap[K, V],
     listener: js.Function1[/* change */ IMapDidChange[K, V], Unit],
     fireImmediately: Boolean
   ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableMap.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], fireImmediately.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def observe[K, V](
-    observableMap: typings.mobx.internalMod.ObservableMap[K, V],
+    observableMap: typings.mobx.distInternalMod.ObservableMap[K, V],
     property: K,
     listener: js.Function1[/* change */ IValueDidChange[V], Unit]
   ): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(observableMap.asInstanceOf[js.Any], property.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def observe[K, V](
-    observableMap: typings.mobx.internalMod.ObservableMap[K, V],
+    observableMap: typings.mobx.distInternalMod.ObservableMap[K, V],
     property: K,
     listener: js.Function1[/* change */ IValueDidChange[V], Unit],
     fireImmediately: Boolean
@@ -471,21 +473,21 @@ object mod {
   
   inline def onBecomeObserved(value: IComputedValue[Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeObserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def onBecomeObserved(value: IObservable, listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeObserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
-  inline def onBecomeObserved(value: typings.mobx.internalMod.ObservableMap[Any, Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeObserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
-  inline def onBecomeObserved(value: typings.mobx.internalMod.ObservableSet[Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeObserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  inline def onBecomeObserved(value: typings.mobx.distInternalMod.ObservableMap[Any, Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeObserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  inline def onBecomeObserved(value: typings.mobx.distInternalMod.ObservableSet[Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeObserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def onBecomeObserved(value: IObservableArray[Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeObserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def onBecomeObserved(value: IObservableValue[Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeObserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def onBecomeObserved[K, V](value: js.Object, property: K, listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeObserved")(value.asInstanceOf[js.Any], property.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
-  inline def onBecomeObserved[K, V](value: typings.mobx.internalMod.ObservableMap[K, V], property: K, listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeObserved")(value.asInstanceOf[js.Any], property.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  inline def onBecomeObserved[K, V](value: typings.mobx.distInternalMod.ObservableMap[K, V], property: K, listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeObserved")(value.asInstanceOf[js.Any], property.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   
   inline def onBecomeUnobserved(value: IComputedValue[Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeUnobserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def onBecomeUnobserved(value: IObservable, listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeUnobserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
-  inline def onBecomeUnobserved(value: typings.mobx.internalMod.ObservableMap[Any, Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeUnobserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
-  inline def onBecomeUnobserved(value: typings.mobx.internalMod.ObservableSet[Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeUnobserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  inline def onBecomeUnobserved(value: typings.mobx.distInternalMod.ObservableMap[Any, Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeUnobserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  inline def onBecomeUnobserved(value: typings.mobx.distInternalMod.ObservableSet[Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeUnobserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def onBecomeUnobserved(value: IObservableArray[Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeUnobserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def onBecomeUnobserved(value: IObservableValue[Any], listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeUnobserved")(value.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   inline def onBecomeUnobserved[K, V](value: js.Object, property: K, listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeUnobserved")(value.asInstanceOf[js.Any], property.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
-  inline def onBecomeUnobserved[K, V](value: typings.mobx.internalMod.ObservableMap[K, V], property: K, listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeUnobserved")(value.asInstanceOf[js.Any], property.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  inline def onBecomeUnobserved[K, V](value: typings.mobx.distInternalMod.ObservableMap[K, V], property: K, listener: Lambda): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("onBecomeUnobserved")(value.asInstanceOf[js.Any], property.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   
   inline def onReactionError(handler: js.Function2[/* error */ Any, /* derivation */ IDerivation, Unit]): Lambda = ^.asInstanceOf[js.Dynamic].applyDynamic("onReactionError")(handler.asInstanceOf[js.Any]).asInstanceOf[Lambda]
   
@@ -497,18 +499,28 @@ object mod {
   
   inline def reaction_true[T, FireImmediately /* <: Boolean */](
     expression: js.Function1[/* r */ IReactionPublic, T],
-    effect: js.Function3[/* arg */ T, /* prev */ js.UndefOr[T], /* r */ IReactionPublic, Unit]
+    effect: js.Function3[
+      /* arg */ T, 
+      /* import warning: importer.ImportType#apply Failed type conversion: FireImmediately extends true ? T | undefined : T */ /* prev */ js.Any, 
+      /* r */ IReactionPublic, 
+      Unit
+    ]
   ): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("reaction")(expression.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
   inline def reaction_true[T, FireImmediately /* <: Boolean */](
     expression: js.Function1[/* r */ IReactionPublic, T],
-    effect: js.Function3[/* arg */ T, /* prev */ js.UndefOr[T], /* r */ IReactionPublic, Unit],
+    effect: js.Function3[
+      /* arg */ T, 
+      /* import warning: importer.ImportType#apply Failed type conversion: FireImmediately extends true ? T | undefined : T */ /* prev */ js.Any, 
+      /* r */ IReactionPublic, 
+      Unit
+    ],
     opts: IReactionOptions[T, FireImmediately]
   ): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("reaction")(expression.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
   
   inline def remove[T /* <: js.Object */](obj: T, key: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def remove[T](obj: typings.mobx.internalMod.ObservableSet[T], key: T): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def remove[T](obj: typings.mobx.distInternalMod.ObservableSet[T], key: T): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def remove[T](obj: IObservableArray[T], index: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(obj.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def remove[K, V](obj: typings.mobx.internalMod.ObservableMap[K, V], key: K): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def remove[K, V](obj: typings.mobx.distInternalMod.ObservableMap[K, V], key: K): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def resetGlobalState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_resetGlobalState")().asInstanceOf[Unit]
   
@@ -516,10 +528,10 @@ object mod {
   
   inline def set[T /* <: js.Object */](obj: T, key: PropertyKey, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def set[T /* <: js.Object */](obj: T, values: StringDictionary[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def set[V](obj: typings.mobx.internalMod.ObservableMap[PropertyKey, V], values: StringDictionary[V]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def set[T](obj: typings.mobx.internalMod.ObservableSet[T], value: T): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def set[V](obj: typings.mobx.distInternalMod.ObservableMap[PropertyKey, V], values: StringDictionary[V]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def set[T](obj: typings.mobx.distInternalMod.ObservableSet[T], value: T): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def set[T](obj: IObservableArray[T], index: Double, value: T): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def set[K, V](obj: typings.mobx.internalMod.ObservableMap[K, V], key: K, value: V): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def set[K, V](obj: typings.mobx.distInternalMod.ObservableMap[K, V], key: K, value: V): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def spy(listener: js.Function1[/* change */ SpyEvent, Unit]): Lambda = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(listener.asInstanceOf[js.Any]).asInstanceOf[Lambda]
   
@@ -554,12 +566,12 @@ object mod {
   
   inline def values[T](ar: IObservableArray[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(ar.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   inline def values[T](obj: T): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends object ? T[keyof T] : any */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends object ? T[keyof T] : any */ js.Any
   ]]
-  inline def values[T](set: typings.mobx.internalMod.ObservableSet[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(set.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  inline def values[K, T](map: typings.mobx.internalMod.ObservableMap[K, T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def values[T](set: typings.mobx.distInternalMod.ObservableSet[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(set.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def values[K, T](map: typings.mobx.distInternalMod.ObservableMap[K, T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   inline def when(predicate: js.Function0[Boolean]): Promisevoidcancelvoid = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(predicate.asInstanceOf[js.Any]).asInstanceOf[Promisevoidcancelvoid]
   inline def when(predicate: js.Function0[Boolean], effect: Lambda): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(predicate.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]

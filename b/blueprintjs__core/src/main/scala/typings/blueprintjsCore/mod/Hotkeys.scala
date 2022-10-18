@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.TabIndex
-import typings.blueprintjsCore.hotkeysTypesMod.IHotkeysProps
+import typings.blueprintjsCore.libEsmComponentsHotkeysHotkeysTypesMod.IHotkeysProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Hotkeys")
 @js.native
 open class Hotkeys protected ()
-  extends typings.blueprintjsCore.componentsMod.Hotkeys {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Hotkeys {
   def this(props: IHotkeysProps) = this()
   def this(props: IHotkeysProps, context: Any) = this()
 }

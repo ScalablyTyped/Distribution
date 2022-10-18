@@ -1,10 +1,10 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.asyncMod.ComposeListAsync
-import typings.tsToolbelt.awaitMod.Await
-import typings.tsToolbelt.curryMod.Curry
-import typings.tsToolbelt.functionMod.Function
-import typings.tsToolbelt.multiAsyncMod.ComposeMultiAsync
+import typings.tsToolbelt.outAnyAwaitMod.Await
+import typings.tsToolbelt.outFunctionComposeListAsyncMod.ComposeListAsync
+import typings.tsToolbelt.outFunctionComposeMultiAsyncMod.ComposeMultiAsync
+import typings.tsToolbelt.outFunctionCurryMod.Curry
+import typings.tsToolbelt.outFunctionFunctionMod.Function
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

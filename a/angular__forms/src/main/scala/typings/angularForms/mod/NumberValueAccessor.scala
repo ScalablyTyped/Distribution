@@ -102,7 +102,7 @@ object NumberValueAccessor {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     NumberValueAccessor, 
-    String, 
+    /* input[type=number][formControlName],input[type=number][formControl],input[type=number][ngModel] */ String, 
     scala.Nothing, 
     js.Object, 
     js.Object, 
@@ -113,7 +113,7 @@ object NumberValueAccessor {
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       NumberValueAccessor, 
-      String, 
+      /* input[type=number][formControlName],input[type=number][formControl],input[type=number][ngModel] */ String, 
       scala.Nothing, 
       js.Object, 
       js.Object, 

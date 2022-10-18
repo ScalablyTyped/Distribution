@@ -1,9 +1,9 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ButtonKindType
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
+import typings.grommet.themesBaseMod.ButtonKindType
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
 import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.ColorType
 import typings.react.mod.ReactNode
@@ -19,13 +19,13 @@ trait ButtonKindTypedefaultButt extends StObject {
   
   var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var border: js.UndefOr[ColorRadius | Boolean] = js.undefined
+  var border: js.UndefOr[Radius | Boolean] = js.undefined
   
   var color: js.UndefOr[ColorType] = js.undefined
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var font: js.UndefOr[`24`] = js.undefined
+  var font: js.UndefOr[Weight] = js.undefined
   
   var icon: js.UndefOr[ReactNode | typings.grommetIcons.iconsMod.Icon] = js.undefined
   
@@ -50,7 +50,7 @@ object ButtonKindTypedefaultButt {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBorder(value: ColorRadius | Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Radius | Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
@@ -68,7 +68,7 @@ object ButtonKindTypedefaultButt {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setFont(value: `24`): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Weight): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     

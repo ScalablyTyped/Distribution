@@ -1,5 +1,6 @@
 package typings.mailgunJs.mod
 
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +10,7 @@ trait Attachment extends StObject {
   
   var contentType: js.UndefOr[String] = js.undefined
   
-  var data: String | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any)
+  var data: String | Buffer | ReadWriteStream
   
   var filename: js.UndefOr[String] = js.undefined
   
@@ -19,10 +20,7 @@ trait Attachment extends StObject {
 }
 object Attachment {
   
-  inline def apply(
-    data: String | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any),
-    getType: () => String
-  ): Attachment = {
+  inline def apply(data: String | Buffer | ReadWriteStream, getType: () => String): Attachment = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], getType = js.Any.fromFunction0(getType))
     __obj.asInstanceOf[Attachment]
   }
@@ -33,9 +31,7 @@ object Attachment {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setData(
-      value: String | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any)
-    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | Buffer | ReadWriteStream): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

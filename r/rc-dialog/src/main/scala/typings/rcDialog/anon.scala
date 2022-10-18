@@ -1,9 +1,8 @@
 package typings.rcDialog
 
-import typings.rcDialog.panelMod.ContentRef
+import typings.rcDialog.esDialogContentPanelMod.ContentRef
 import typings.rcDialog.rcDialogBooleans.`false`
-import typings.rcUtil.portalWrapperMod.GetContainer
-import typings.rcUtil.scrollLockerMod.default
+import typings.rcUtil.libPortalWrapperMod.GetContainer
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
 import typings.react.mod.MouseEvent
@@ -135,8 +134,6 @@ object anon {
     var ref: js.UndefOr[Ref[ContentRef]] = js.undefined
     
     var rootClassName: js.UndefOr[String] = js.undefined
-    
-    var scrollLocker: js.UndefOr[default] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -311,10 +308,6 @@ object anon {
       inline def setRootClassName(value: String): Self = StObject.set(x, "rootClassName", value.asInstanceOf[js.Any])
       
       inline def setRootClassNameUndefined: Self = StObject.set(x, "rootClassName", js.undefined)
-      
-      inline def setScrollLocker(value: default): Self = StObject.set(x, "scrollLocker", value.asInstanceOf[js.Any])
-      
-      inline def setScrollLockerUndefined: Self = StObject.set(x, "scrollLocker", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 package typings.storybookTelemetry
 
-import typings.storybookTelemetry.getMonorepoTypeMod._MonorepoType
-import typings.storybookTelemetry.typesMod.EventType
+import typings.storybookTelemetry.distTs3Dot9GetMonorepoTypeMod._MonorepoType
+import typings.storybookTelemetry.distTs3Dot9TypesMod.EventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

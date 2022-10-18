@@ -1,15 +1,15 @@
 package typings.typedoc.anon
 
-import typings.typedoc.abstractMod.Reflection
-import typings.typedoc.abstractMod.ReflectionFlag
-import typings.typedoc.abstractMod.ReflectionFlags
-import typings.typedoc.abstractMod.TraverseCallback
-import typings.typedoc.commentMod.Comment
-import typings.typedoc.fileMod.SourceReference
-import typings.typedoc.kindMod.ReflectionKind
-import typings.typedoc.modelsMod.TypeParameterReflection
-import typings.typedoc.projectMod.ProjectReflection
-import typings.typedoc.serializationMod.Serializer
+import typings.typedoc.distLibModelsCommentsCommentMod.Comment
+import typings.typedoc.distLibModelsMod.TypeParameterReflection
+import typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection
+import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag
+import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlags
+import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseCallback
+import typings.typedoc.distLibModelsReflectionsKindMod.ReflectionKind
+import typings.typedoc.distLibModelsReflectionsProjectMod.ProjectReflection
+import typings.typedoc.distLibModelsSourcesFileMod.SourceReference
+import typings.typedoc.distLibSerializationMod.Serializer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -173,7 +173,7 @@ trait ReflectiontypeParametersA extends StObject {
     */
   var sources: js.UndefOr[js.Array[SourceReference]] = js.native
   
-  def toObject(serializer: Serializer): typings.typedoc.schemaMod.Reflection = js.native
+  def toObject(serializer: Serializer): typings.typedoc.distLibSerializationSchemaMod.Reflection = js.native
   
   /**
     * Return a string representation of this reflection and all of its children.

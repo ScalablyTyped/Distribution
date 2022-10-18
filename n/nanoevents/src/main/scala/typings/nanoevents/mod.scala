@@ -1,7 +1,6 @@
 package typings.nanoevents
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Parameters
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -44,9 +43,7 @@ object mod {
       * ```
       */
     var events: Partial[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ E in keyof Events ]: std.Array<Events[E]>}
-      */ typings.nanoevents.nanoeventsStrings.Emitter & TopLevel[Events]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ E in keyof Events ]: std.Array<Events[E]>} */ js.Any
       ] = js.native
     
     /**

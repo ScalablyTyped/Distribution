@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parse-json-object"
-version := "2.0.1-31e320"
+version := "2.0.1-1e04ca"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

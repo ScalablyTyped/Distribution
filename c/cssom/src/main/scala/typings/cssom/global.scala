@@ -47,9 +47,9 @@ object global {
     open class CSSMediaRule ()
       extends typings.cssom.mod.CSSMediaRule
     
-    @JSGlobal("CSSOM.CSSRule")
+    /* note: abstract class */ @JSGlobal("CSSOM.CSSRule")
     @js.native
-    abstract class CSSRule ()
+    open class CSSRule ()
       extends typings.cssom.mod.CSSRule
     object CSSRule {
       
@@ -175,9 +175,9 @@ object global {
     open class MediaList ()
       extends typings.cssom.mod.MediaList
     
-    @JSGlobal("CSSOM.StyleSheet")
+    /* note: abstract class */ @JSGlobal("CSSOM.StyleSheet")
     @js.native
-    abstract class StyleSheet ()
+    open class StyleSheet ()
       extends typings.cssom.mod.StyleSheet
     
     inline def clone_(stylesheet: typings.cssom.mod.CSSStyleSheet): typings.cssom.mod.CSSStyleSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(stylesheet.asInstanceOf[js.Any]).asInstanceOf[typings.cssom.mod.CSSStyleSheet]

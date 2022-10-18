@@ -72,8 +72,7 @@ trait TableRowCollection
     to point at the index for which it was created.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     *
     * @param index Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
     * @param values Optional. A 2D array of cell values of the table row.

@@ -3,10 +3,14 @@ package typings.screepsArena
 import typings.screepsArena.anon.Error
 import typings.screepsArena.anon.Object
 import typings.screepsArena.anon.Pos
-import typings.screepsArena.constantsMod.BuildableStructure
-import typings.screepsArena.constantsMod.DirectionConstant
-import typings.screepsArena.constantsMod.TERRAIN_SWAMP
-import typings.screepsArena.constantsMod.TERRAIN_WALL
+import typings.screepsArena.gameConstantsMod.BuildableStructure
+import typings.screepsArena.gameConstantsMod.DirectionConstant
+import typings.screepsArena.gameConstantsMod.TERRAIN_SWAMP
+import typings.screepsArena.gameConstantsMod.TERRAIN_WALL
+import typings.screepsArena.gamePathFinderMod.CostMatrixConstructor
+import typings.screepsArena.gamePathFinderMod.FindPathOpts
+import typings.screepsArena.gamePathFinderMod.FindPathResult
+import typings.screepsArena.gamePathFinderMod.PathStep
 import typings.screepsArena.gamePrototypesMod.ConstructionSiteConstructor
 import typings.screepsArena.gamePrototypesMod.Constructor
 import typings.screepsArena.gamePrototypesMod.CreepConstructor
@@ -28,13 +32,9 @@ import typings.screepsArena.gamePrototypesMod.StructureRoadConstructor
 import typings.screepsArena.gamePrototypesMod.StructureSpawnConstructor
 import typings.screepsArena.gamePrototypesMod.StructureTowerConstructor
 import typings.screepsArena.gamePrototypesMod.StructureWallConstructor
-import typings.screepsArena.pathFinderMod.CostMatrixConstructor
-import typings.screepsArena.pathFinderMod.FindPathOpts
-import typings.screepsArena.pathFinderMod.FindPathResult
-import typings.screepsArena.pathFinderMod.PathStep
+import typings.screepsArena.gameUtilsMod.HeapStatistics
 import typings.screepsArena.screepsArenaInts.`0`
 import typings.screepsArena.screepsArenaStrings.energy
-import typings.screepsArena.utilsMod.HeapStatistics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,7 +77,7 @@ object gameMod {
     
     @JSImport("game", "constants.ATTACK")
     @js.native
-    val ATTACK: typings.screepsArena.constantsMod.ATTACK = js.native
+    val ATTACK: typings.screepsArena.gameConstantsMod.ATTACK = js.native
     
     @JSImport("game", "constants.ATTACK_POWER")
     @js.native
@@ -138,15 +138,15 @@ object gameMod {
     
     @JSImport("game", "constants.BOTTOM")
     @js.native
-    val BOTTOM: typings.screepsArena.constantsMod.BOTTOM = js.native
+    val BOTTOM: typings.screepsArena.gameConstantsMod.BOTTOM = js.native
     
     @JSImport("game", "constants.BOTTOM_LEFT")
     @js.native
-    val BOTTOM_LEFT: typings.screepsArena.constantsMod.BOTTOM_LEFT = js.native
+    val BOTTOM_LEFT: typings.screepsArena.gameConstantsMod.BOTTOM_LEFT = js.native
     
     @JSImport("game", "constants.BOTTOM_RIGHT")
     @js.native
-    val BOTTOM_RIGHT: typings.screepsArena.constantsMod.BOTTOM_RIGHT = js.native
+    val BOTTOM_RIGHT: typings.screepsArena.gameConstantsMod.BOTTOM_RIGHT = js.native
     
     @JSImport("game", "constants.BUILD_POWER")
     @js.native
@@ -154,7 +154,7 @@ object gameMod {
     
     @JSImport("game", "constants.CARRY")
     @js.native
-    val CARRY: typings.screepsArena.constantsMod.CARRY = js.native
+    val CARRY: typings.screepsArena.gameConstantsMod.CARRY = js.native
     
     @JSImport("game", "constants.CARRY_CAPACITY")
     @js.native
@@ -162,7 +162,7 @@ object gameMod {
     
     @JSImport("game", "constants.CLAIM")
     @js.native
-    val CLAIM: typings.screepsArena.constantsMod.CLAIM = js.native
+    val CLAIM: typings.screepsArena.gameConstantsMod.CLAIM = js.native
     
     object CONSTRUCTION_COST {
       
@@ -236,59 +236,59 @@ object gameMod {
     
     @JSImport("game", "constants.ERR_BUSY")
     @js.native
-    val ERR_BUSY: typings.screepsArena.constantsMod.ERR_BUSY = js.native
+    val ERR_BUSY: typings.screepsArena.gameConstantsMod.ERR_BUSY = js.native
     
     @JSImport("game", "constants.ERR_FULL")
     @js.native
-    val ERR_FULL: typings.screepsArena.constantsMod.ERR_FULL = js.native
+    val ERR_FULL: typings.screepsArena.gameConstantsMod.ERR_FULL = js.native
     
     @JSImport("game", "constants.ERR_INVALID_ARGS")
     @js.native
-    val ERR_INVALID_ARGS: typings.screepsArena.constantsMod.ERR_INVALID_ARGS = js.native
+    val ERR_INVALID_ARGS: typings.screepsArena.gameConstantsMod.ERR_INVALID_ARGS = js.native
     
     @JSImport("game", "constants.ERR_INVALID_TARGET")
     @js.native
-    val ERR_INVALID_TARGET: typings.screepsArena.constantsMod.ERR_INVALID_TARGET = js.native
+    val ERR_INVALID_TARGET: typings.screepsArena.gameConstantsMod.ERR_INVALID_TARGET = js.native
     
     @JSImport("game", "constants.ERR_NAME_EXISTS")
     @js.native
-    val ERR_NAME_EXISTS: typings.screepsArena.constantsMod.ERR_NAME_EXISTS = js.native
+    val ERR_NAME_EXISTS: typings.screepsArena.gameConstantsMod.ERR_NAME_EXISTS = js.native
     
     @JSImport("game", "constants.ERR_NOT_ENOUGH_ENERGY")
     @js.native
-    val ERR_NOT_ENOUGH_ENERGY: typings.screepsArena.constantsMod.ERR_NOT_ENOUGH_ENERGY = js.native
+    val ERR_NOT_ENOUGH_ENERGY: typings.screepsArena.gameConstantsMod.ERR_NOT_ENOUGH_ENERGY = js.native
     
     @JSImport("game", "constants.ERR_NOT_ENOUGH_EXTENSIONS")
     @js.native
-    val ERR_NOT_ENOUGH_EXTENSIONS: typings.screepsArena.constantsMod.ERR_NOT_ENOUGH_EXTENSIONS = js.native
+    val ERR_NOT_ENOUGH_EXTENSIONS: typings.screepsArena.gameConstantsMod.ERR_NOT_ENOUGH_EXTENSIONS = js.native
     
     @JSImport("game", "constants.ERR_NOT_ENOUGH_RESOURCES")
     @js.native
-    val ERR_NOT_ENOUGH_RESOURCES: typings.screepsArena.constantsMod.ERR_NOT_ENOUGH_RESOURCES = js.native
+    val ERR_NOT_ENOUGH_RESOURCES: typings.screepsArena.gameConstantsMod.ERR_NOT_ENOUGH_RESOURCES = js.native
     
     @JSImport("game", "constants.ERR_NOT_FOUND")
     @js.native
-    val ERR_NOT_FOUND: typings.screepsArena.constantsMod.ERR_NOT_FOUND = js.native
+    val ERR_NOT_FOUND: typings.screepsArena.gameConstantsMod.ERR_NOT_FOUND = js.native
     
     @JSImport("game", "constants.ERR_NOT_IN_RANGE")
     @js.native
-    val ERR_NOT_IN_RANGE: typings.screepsArena.constantsMod.ERR_NOT_IN_RANGE = js.native
+    val ERR_NOT_IN_RANGE: typings.screepsArena.gameConstantsMod.ERR_NOT_IN_RANGE = js.native
     
     @JSImport("game", "constants.ERR_NOT_OWNER")
     @js.native
-    val ERR_NOT_OWNER: typings.screepsArena.constantsMod.ERR_NOT_OWNER = js.native
+    val ERR_NOT_OWNER: typings.screepsArena.gameConstantsMod.ERR_NOT_OWNER = js.native
     
     @JSImport("game", "constants.ERR_NO_BODYPART")
     @js.native
-    val ERR_NO_BODYPART: typings.screepsArena.constantsMod.ERR_NO_BODYPART = js.native
+    val ERR_NO_BODYPART: typings.screepsArena.gameConstantsMod.ERR_NO_BODYPART = js.native
     
     @JSImport("game", "constants.ERR_NO_PATH")
     @js.native
-    val ERR_NO_PATH: typings.screepsArena.constantsMod.ERR_NO_PATH = js.native
+    val ERR_NO_PATH: typings.screepsArena.gameConstantsMod.ERR_NO_PATH = js.native
     
     @JSImport("game", "constants.ERR_TIRED")
     @js.native
-    val ERR_TIRED: typings.screepsArena.constantsMod.ERR_TIRED = js.native
+    val ERR_TIRED: typings.screepsArena.gameConstantsMod.ERR_TIRED = js.native
     
     @JSImport("game", "constants.EXTENSION_ENERGY_CAPACITY")
     @js.native
@@ -304,7 +304,7 @@ object gameMod {
     
     @JSImport("game", "constants.HEAL")
     @js.native
-    val HEAL: typings.screepsArena.constantsMod.HEAL = js.native
+    val HEAL: typings.screepsArena.gameConstantsMod.HEAL = js.native
     
     @JSImport("game", "constants.HEAL_POWER")
     @js.native
@@ -312,7 +312,7 @@ object gameMod {
     
     @JSImport("game", "constants.LEFT")
     @js.native
-    val LEFT: typings.screepsArena.constantsMod.LEFT = js.native
+    val LEFT: typings.screepsArena.gameConstantsMod.LEFT = js.native
     
     @JSImport("game", "constants.MAX_CONSTRUCTION_SITES")
     @js.native
@@ -324,15 +324,15 @@ object gameMod {
     
     @JSImport("game", "constants.MOVE")
     @js.native
-    val MOVE: typings.screepsArena.constantsMod.MOVE = js.native
+    val MOVE: typings.screepsArena.gameConstantsMod.MOVE = js.native
     
     @JSImport("game", "constants.OBSTACLE_OBJECT_TYPES")
     @js.native
-    val OBSTACLE_OBJECT_TYPES: typings.screepsArena.constantsMod.OBSTACLE_OBJECT_TYPES = js.native
+    val OBSTACLE_OBJECT_TYPES: typings.screepsArena.gameConstantsMod.OBSTACLE_OBJECT_TYPES = js.native
     
     @JSImport("game", "constants.OK")
     @js.native
-    val OK: typings.screepsArena.constantsMod.OK = js.native
+    val OK: typings.screepsArena.gameConstantsMod.OK = js.native
     
     @JSImport("game", "constants.RAMPART_HITS")
     @js.native
@@ -344,7 +344,7 @@ object gameMod {
     
     @JSImport("game", "constants.RANGED_ATTACK")
     @js.native
-    val RANGED_ATTACK: typings.screepsArena.constantsMod.RANGED_ATTACK = js.native
+    val RANGED_ATTACK: typings.screepsArena.gameConstantsMod.RANGED_ATTACK = js.native
     
     @JSImport("game", "constants.RANGED_ATTACK_DISTANCE_RATE")
     @js.native
@@ -376,7 +376,7 @@ object gameMod {
     
     @JSImport("game", "constants.RIGHT")
     @js.native
-    val RIGHT: typings.screepsArena.constantsMod.RIGHT = js.native
+    val RIGHT: typings.screepsArena.gameConstantsMod.RIGHT = js.native
     
     @JSImport("game", "constants.ROAD_HITS")
     @js.native
@@ -442,27 +442,27 @@ object gameMod {
     
     @JSImport("game", "constants.TERRAIN_SWAMP")
     @js.native
-    val TERRAIN_SWAMP: typings.screepsArena.constantsMod.TERRAIN_SWAMP = js.native
+    val TERRAIN_SWAMP: typings.screepsArena.gameConstantsMod.TERRAIN_SWAMP = js.native
     
     @JSImport("game", "constants.TERRAIN_WALL")
     @js.native
-    val TERRAIN_WALL: typings.screepsArena.constantsMod.TERRAIN_WALL = js.native
+    val TERRAIN_WALL: typings.screepsArena.gameConstantsMod.TERRAIN_WALL = js.native
     
     @JSImport("game", "constants.TOP")
     @js.native
-    val TOP: typings.screepsArena.constantsMod.TOP = js.native
+    val TOP: typings.screepsArena.gameConstantsMod.TOP = js.native
     
     @JSImport("game", "constants.TOP_LEFT")
     @js.native
-    val TOP_LEFT: typings.screepsArena.constantsMod.TOP_LEFT = js.native
+    val TOP_LEFT: typings.screepsArena.gameConstantsMod.TOP_LEFT = js.native
     
     @JSImport("game", "constants.TOP_RIGHT")
     @js.native
-    val TOP_RIGHT: typings.screepsArena.constantsMod.TOP_RIGHT = js.native
+    val TOP_RIGHT: typings.screepsArena.gameConstantsMod.TOP_RIGHT = js.native
     
     @JSImport("game", "constants.TOUGH")
     @js.native
-    val TOUGH: typings.screepsArena.constantsMod.TOUGH = js.native
+    val TOUGH: typings.screepsArena.gameConstantsMod.TOUGH = js.native
     
     @JSImport("game", "constants.TOWER_CAPACITY")
     @js.native
@@ -518,10 +518,10 @@ object gameMod {
     
     @JSImport("game", "constants.WORK")
     @js.native
-    val WORK: typings.screepsArena.constantsMod.WORK = js.native
+    val WORK: typings.screepsArena.gameConstantsMod.WORK = js.native
   }
   
-  inline def createConstructionSite(x: Double, y: Double, structurePrototype: String): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructionSite")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], structurePrototype.asInstanceOf[js.Any])).asInstanceOf[Object]
+  inline def createConstructionSite(x: Double, y: Double, structurePrototype: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructionSite")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], structurePrototype.asInstanceOf[js.Any])).asInstanceOf[Error]
   
   object pathFinder {
     
@@ -538,7 +538,7 @@ object gameMod {
     @js.native
     open class CostMatrixCls ()
       extends StObject
-         with typings.screepsArena.pathFinderMod.CostMatrix {
+         with typings.screepsArena.gamePathFinderMod.CostMatrix {
       
       // /**
       //  * Creates a new CostMatrix containing 0's for all positions.
@@ -552,7 +552,7 @@ object gameMod {
         * @param val Whatever serialize returned
         */
       /* CompleteClass */
-      override def deserialize(`val`: js.Array[Double]): typings.screepsArena.pathFinderMod.CostMatrix = js.native
+      override def deserialize(`val`: js.Array[Double]): typings.screepsArena.gamePathFinderMod.CostMatrix = js.native
       
       /**
         * Get the cost of a position in this CostMatrix.
@@ -928,7 +928,7 @@ object gameMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createConstructionSite(x: Double, y: Double, structureType: Constructor[BuildableStructure]): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructionSite")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], structureType.asInstanceOf[js.Any])).asInstanceOf[Error]
+    inline def createConstructionSite(x: Double, y: Double, structureType: Constructor[BuildableStructure]): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructionSite")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], structureType.asInstanceOf[js.Any])).asInstanceOf[Object]
     
     inline def findClosestByPath[T /* <: RoomPosition */](fromPos: RoomPosition, positions: js.Array[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestByPath")(fromPos.asInstanceOf[js.Any], positions.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def findClosestByPath[T /* <: RoomPosition */](fromPos: RoomPosition, positions: js.Array[T], opts: FindPathOpts): T = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestByPath")(fromPos.asInstanceOf[js.Any], positions.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]

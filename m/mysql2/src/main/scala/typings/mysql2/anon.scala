@@ -1,11 +1,11 @@
 package typings.mysql2
 
-import typings.mysql2.mod.Connection
 import typings.mysql2.mysql2Strings.Field
 import typings.mysql2.mysql2Strings.FieldPacket
 import typings.mysql2.mysql2Strings.OkPacket
 import typings.mysql2.mysql2Strings.ResultSetHeader
 import typings.mysql2.mysql2Strings.RowDataPacket
+import typings.mysql2.typingsMysqlMod.Connection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -22,36 +22,32 @@ object sourceVectorMod {
   
   @JSImport("ol/source/Vector", JSImport.Default)
   @js.native
-  open class default[GeomType /* <: typings.ol.geometryMod.default */] () extends VectorSource[GeomType] {
+  open class default[GeomType /* <: typings.ol.geomGeometryMod.default */] () extends VectorSource[GeomType] {
     def this(opt_options: Options) = this()
   }
   
   @JSImport("ol/source/Vector", "VectorSourceEvent")
   @js.native
-  open class VectorSourceEvent[GeomType /* <: typings.ol.geometryMod.default */] protected ()
-    extends typings.ol.eventMod.default {
+  open class VectorSourceEvent[GeomType /* <: typings.ol.geomGeometryMod.default */] protected ()
+    extends typings.ol.eventsEventMod.default {
     def this(`type`: String) = this()
-    def this(`type`: String, opt_feature: typings.ol.olFeatureMod.default[GeomType]) = this()
+    def this(`type`: String, opt_feature: typings.ol.featureMod.default[GeomType]) = this()
+    def this(`type`: String, opt_feature: Unit, opt_features: js.Array[typings.ol.featureMod.default[GeomType]]) = this()
     def this(
       `type`: String,
-      opt_feature: Unit,
-      opt_features: js.Array[typings.ol.olFeatureMod.default[GeomType]]
-    ) = this()
-    def this(
-      `type`: String,
-      opt_feature: typings.ol.olFeatureMod.default[GeomType],
-      opt_features: js.Array[typings.ol.olFeatureMod.default[GeomType]]
+      opt_feature: typings.ol.featureMod.default[GeomType],
+      opt_features: js.Array[typings.ol.featureMod.default[GeomType]]
     ) = this()
     
     /**
       * The added or removed feature for the ADDFEATURE and REMOVEFEATURE events, undefined otherwise.
       */
-    var feature: typings.ol.olFeatureMod.default[GeomType] = js.native
+    var feature: typings.ol.featureMod.default[GeomType] = js.native
     
     /**
       * The loaded features for the FEATURESLOADED event, undefined otherwise.
       */
-    var features: js.Array[typings.ol.olFeatureMod.default[GeomType]] = js.native
+    var features: js.Array[typings.ol.featureMod.default[GeomType]] = js.native
   }
   
   type LoadingStrategy = js.Function2[/* p0 */ Extent, /* p1 */ Double, js.Array[Extent]]
@@ -61,10 +57,10 @@ object sourceVectorMod {
     var attributions: js.UndefOr[AttributionLike] = js.undefined
     
     var features: js.UndefOr[
-        js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] | typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
+        js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]] | typings.ol.collectionMod.default[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]]
       ] = js.undefined
     
-    var format: js.UndefOr[typings.ol.featureMod.default] = js.undefined
+    var format: js.UndefOr[typings.ol.formatFeatureMod.default] = js.undefined
     
     var loader: js.UndefOr[FeatureLoader] = js.undefined
     
@@ -96,14 +92,14 @@ object sourceVectorMod {
       inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setFeatures(
-        value: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] | typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
+        value: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]] | typings.ol.collectionMod.default[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]]
       ): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
       inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
       
-      inline def setFeaturesVarargs(value: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]*): Self = StObject.set(x, "features", js.Array(value*))
+      inline def setFeaturesVarargs(value: typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]*): Self = StObject.set(x, "features", js.Array(value*))
       
-      inline def setFormat(value: typings.ol.featureMod.default): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: typings.ol.formatFeatureMod.default): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
@@ -121,7 +117,7 @@ object sourceVectorMod {
       
       inline def setUrl(value: String | FeatureUrlFunction): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      inline def setUrlFunction3(value: (/* p0 */ Extent, /* p1 */ Double, /* p2 */ typings.ol.projectionMod.default) => String): Self = StObject.set(x, "url", js.Any.fromFunction3(value))
+      inline def setUrlFunction3(value: (/* p0 */ Extent, /* p1 */ Double, /* p2 */ typings.ol.projProjectionMod.default) => String): Self = StObject.set(x, "url", js.Any.fromFunction3(value))
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
@@ -136,7 +132,7 @@ object sourceVectorMod {
   }
   
   @js.native
-  trait VectorSource[GeomType /* <: typings.ol.geometryMod.default */]
+  trait VectorSource[GeomType /* <: typings.ol.geomGeometryMod.default */]
     extends typings.ol.sourceSourceMod.default {
     
     /**
@@ -149,22 +145,22 @@ object sourceVectorMod {
       * meaning that if a feature with a duplicate id is added in the collection, it will
       * be removed from it right away.
       */
-    def addFeature(feature: typings.ol.olFeatureMod.default[GeomType]): Unit = js.native
+    def addFeature(feature: typings.ol.featureMod.default[GeomType]): Unit = js.native
     
     /**
       * Add a feature without firing a change event.
       */
-    /* protected */ def addFeatureInternal(feature: typings.ol.olFeatureMod.default[GeomType]): Unit = js.native
+    /* protected */ def addFeatureInternal(feature: typings.ol.featureMod.default[GeomType]): Unit = js.native
     
     /**
       * Add a batch of features to the source.
       */
-    def addFeatures(features: js.Array[typings.ol.olFeatureMod.default[GeomType]]): Unit = js.native
+    def addFeatures(features: js.Array[typings.ol.featureMod.default[GeomType]]): Unit = js.native
     
     /**
       * Add features without firing a change event.
       */
-    /* protected */ def addFeaturesInternal(features: js.Array[typings.ol.olFeatureMod.default[GeomType]]): Unit = js.native
+    /* protected */ def addFeaturesInternal(features: js.Array[typings.ol.featureMod.default[GeomType]]): Unit = js.native
     
     /**
       * Remove all features from the source.
@@ -178,7 +174,7 @@ object sourceVectorMod {
       * stop and the function will return the same value.
       * Note: this function only iterate through the feature that have a defined geometry.
       */
-    def forEachFeature[T](callback: js.Function1[/* p0 */ typings.ol.olFeatureMod.default[GeomType], T]): js.UndefOr[T] = js.native
+    def forEachFeature[T](callback: js.Function1[/* p0 */ typings.ol.featureMod.default[GeomType], T]): js.UndefOr[T] = js.native
     
     /**
       * Iterate through all features whose geometries contain the provided
@@ -188,7 +184,7 @@ object sourceVectorMod {
       */
     def forEachFeatureAtCoordinateDirect[T](
       coordinate: Coordinate,
-      callback: js.Function1[/* p0 */ typings.ol.olFeatureMod.default[GeomType], T]
+      callback: js.Function1[/* p0 */ typings.ol.featureMod.default[GeomType], T]
     ): js.UndefOr[T] = js.native
     
     /**
@@ -201,7 +197,7 @@ object sourceVectorMod {
       * When useSpatialIndex is set to false, this method will loop through all
       * features, equivalent to {@link module:ol/source/Vector~VectorSource#forEachFeature #forEachFeature()}.
       */
-    def forEachFeatureInExtent[T](extent: Extent, callback: js.Function1[/* p0 */ typings.ol.olFeatureMod.default[GeomType], T]): js.UndefOr[T] = js.native
+    def forEachFeatureInExtent[T](extent: Extent, callback: js.Function1[/* p0 */ typings.ol.featureMod.default[GeomType], T]): js.UndefOr[T] = js.native
     
     /**
       * Iterate through all features whose geometry intersects the provided extent,
@@ -210,15 +206,15 @@ object sourceVectorMod {
       * If you only want to test for bounding box intersection, call the
       * {@link module:ol/source/Vector~VectorSource#forEachFeatureInExtent #forEachFeatureInExtent()} method instead.
       */
-    def forEachFeatureIntersectingExtent[T](extent: Extent, callback: js.Function1[/* p0 */ typings.ol.olFeatureMod.default[GeomType], T]): js.UndefOr[T] = js.native
+    def forEachFeatureIntersectingExtent[T](extent: Extent, callback: js.Function1[/* p0 */ typings.ol.featureMod.default[GeomType], T]): js.UndefOr[T] = js.native
     
     /**
       * Get the closest feature to the provided coordinate.
       * This method is not available when the source is configured with
       * useSpatialIndex set to false.
       */
-    def getClosestFeatureToCoordinate(coordinate: Coordinate): typings.ol.olFeatureMod.default[GeomType] = js.native
-    def getClosestFeatureToCoordinate(coordinate: Coordinate, opt_filter: js.Function0[Unit]): typings.ol.olFeatureMod.default[GeomType] = js.native
+    def getClosestFeatureToCoordinate(coordinate: Coordinate): typings.ol.featureMod.default[GeomType] = js.native
+    def getClosestFeatureToCoordinate(coordinate: Coordinate, opt_filter: js.Function0[Unit]): typings.ol.featureMod.default[GeomType] = js.native
     
     /**
       * Get the extent of the features currently in the source.
@@ -233,30 +229,30 @@ object sourceVectorMod {
       * Note that the index treats string and numeric identifiers as the same.  So
       * source.getFeatureById(2) will return a feature with id '2' or 2.
       */
-    def getFeatureById(id: String): typings.ol.olFeatureMod.default[GeomType] = js.native
-    def getFeatureById(id: Double): typings.ol.olFeatureMod.default[GeomType] = js.native
+    def getFeatureById(id: String): typings.ol.featureMod.default[GeomType] = js.native
+    def getFeatureById(id: Double): typings.ol.featureMod.default[GeomType] = js.native
     
     /**
       * Get a feature by its internal unique identifier (using getUid).
       */
-    def getFeatureByUid(uid: String): typings.ol.olFeatureMod.default[GeomType] = js.native
+    def getFeatureByUid(uid: String): typings.ol.featureMod.default[GeomType] = js.native
     
     /**
       * Get all features on the source in random order.
       */
-    def getFeatures(): js.Array[typings.ol.olFeatureMod.default[GeomType]] = js.native
+    def getFeatures(): js.Array[typings.ol.featureMod.default[GeomType]] = js.native
     
     /**
       * Get all features whose geometry intersects the provided coordinate.
       */
-    def getFeaturesAtCoordinate(coordinate: Coordinate): js.Array[typings.ol.olFeatureMod.default[GeomType]] = js.native
+    def getFeaturesAtCoordinate(coordinate: Coordinate): js.Array[typings.ol.featureMod.default[GeomType]] = js.native
     
     /**
       * Get the features collection associated with this source. Will be null
       * unless the source was configured with useSpatialIndex set to false, or
       * with an {@link module:ol/Collection} as features.
       */
-    def getFeaturesCollection(): typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[GeomType]] = js.native
+    def getFeaturesCollection(): typings.ol.collectionMod.default[typings.ol.featureMod.default[GeomType]] = js.native
     
     /**
       * Get all features whose bounding box intersects the provided extent.  Note that this returns an array of
@@ -265,12 +261,12 @@ object sourceVectorMod {
       * When useSpatialIndex is set to false, this method will return all
       * features.
       */
-    def getFeaturesInExtent(extent: Extent): js.Array[typings.ol.olFeatureMod.default[GeomType]] = js.native
+    def getFeaturesInExtent(extent: Extent): js.Array[typings.ol.featureMod.default[GeomType]] = js.native
     
     /**
       * Get the format associated with this source.
       */
-    def getFormat(): js.UndefOr[typings.ol.featureMod.default] = js.native
+    def getFormat(): js.UndefOr[typings.ol.formatFeatureMod.default] = js.native
     
     def getOverlaps(): Boolean = js.native
     
@@ -282,82 +278,82 @@ object sourceVectorMod {
     /**
       * Returns true if the feature is contained within the source.
       */
-    def hasFeature(feature: typings.ol.olFeatureMod.default[GeomType]): Boolean = js.native
+    def hasFeature(feature: typings.ol.featureMod.default[GeomType]): Boolean = js.native
     
     def isEmpty(): Boolean = js.native
     
-    def loadFeatures(extent: Extent, resolution: Double, projection: typings.ol.projectionMod.default): Unit = js.native
+    def loadFeatures(extent: Extent, resolution: Double, projection: typings.ol.projProjectionMod.default): Unit = js.native
     
     @JSName("on")
     def on_addfeature(
       `type`: addfeature,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     @JSName("on")
     def on_changefeature(
       `type`: changefeature,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     @JSName("on")
     def on_clear(
       `type`: clear,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     @JSName("on")
     def on_featuresloadend(
       `type`: featuresloadend,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     @JSName("on")
     def on_featuresloaderror(
       `type`: featuresloaderror,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     @JSName("on")
     def on_featuresloadstart(
       `type`: featuresloadstart,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     @JSName("on")
     def on_removefeature(
       `type`: removefeature,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     
     @JSName("once")
     def once_addfeature(
       `type`: addfeature,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     @JSName("once")
     def once_changefeature(
       `type`: changefeature,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     @JSName("once")
     def once_clear(
       `type`: clear,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     @JSName("once")
     def once_featuresloadend(
       `type`: featuresloadend,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     @JSName("once")
     def once_featuresloaderror(
       `type`: featuresloaderror,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     @JSName("once")
     def once_featuresloadstart(
       `type`: featuresloadstart,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     @JSName("once")
     def once_removefeature(
       `type`: removefeature,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): EventsKey = js.native
     
     /**
@@ -365,12 +361,12 @@ object sourceVectorMod {
       * at once, use the {@link module:ol/source/Vector~VectorSource#clear #clear()} method
       * instead.
       */
-    def removeFeature(feature: typings.ol.olFeatureMod.default[GeomType]): Unit = js.native
+    def removeFeature(feature: typings.ol.featureMod.default[GeomType]): Unit = js.native
     
     /**
       * Remove feature without firing a change event.
       */
-    /* protected */ def removeFeatureInternal(feature: typings.ol.olFeatureMod.default[GeomType]): Unit = js.native
+    /* protected */ def removeFeatureInternal(feature: typings.ol.featureMod.default[GeomType]): Unit = js.native
     
     /**
       * Remove an extent from the list of loaded extents.
@@ -392,37 +388,37 @@ object sourceVectorMod {
     @JSName("un")
     def un_addfeature(
       `type`: addfeature,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): Unit = js.native
     @JSName("un")
     def un_changefeature(
       `type`: changefeature,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): Unit = js.native
     @JSName("un")
     def un_clear(
       `type`: clear,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): Unit = js.native
     @JSName("un")
     def un_featuresloadend(
       `type`: featuresloadend,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): Unit = js.native
     @JSName("un")
     def un_featuresloaderror(
       `type`: featuresloaderror,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): Unit = js.native
     @JSName("un")
     def un_featuresloadstart(
       `type`: featuresloadstart,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): Unit = js.native
     @JSName("un")
     def un_removefeature(
       `type`: removefeature,
-      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geometryMod.default], Unit]
+      listener: js.Function1[/* evt */ VectorSourceEvent[typings.ol.geomGeometryMod.default], Unit]
     ): Unit = js.native
   }
 }

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@cucumber/messages", "PickleStepArgument")
 @js.native
 open class PickleStepArgument ()
-  extends typings.cucumberMessages.messagesMod.PickleStepArgument
+  extends typings.cucumberMessages.distCjsSrcMessagesMod.PickleStepArgument

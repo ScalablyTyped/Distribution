@@ -1,8 +1,8 @@
 package typings.reactMdTable
 
-import typings.reactMdTable.configMod.TableCellHorizontalAlignment
-import typings.reactMdTable.configMod.TableCellVerticalAlignment
 import typings.reactMdTable.reactMdTableStrings.padded
+import typings.reactMdTable.typesConfigMod.TableCellHorizontalAlignment
+import typings.reactMdTable.typesConfigMod.TableCellVerticalAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

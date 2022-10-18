@@ -1,10 +1,10 @@
 package typings.vinylNamed
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.Stats
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import typings.vinyl.anon.Contents
 import typings.vinyl.anon.End
 import org.scalablytyped.runtime.StObject
@@ -67,7 +67,7 @@ object anon {
       *
       * Throws when set to any value other than a `Stream`, a `Buffer` or `null`.
       */
-    var contents: Buffer | ReadableStream[Any] | Null = js.native
+    var contents: Buffer | ReadableStream | Null = js.native
     
     /**
       * Gets and sets current working directory. Will always be normalized and have trailing
@@ -203,8 +203,8 @@ object anon {
       * If file.contents is a Stream, it will pipe it to the stream.
       * If file.contents is null, it will do nothing.
       */
-    def pipe[T /* <: WritableStream[Any] */](stream: T): T = js.native
-    def pipe[T /* <: WritableStream[Any] */](stream: T, opts: End): T = js.native
+    def pipe[T /* <: WritableStream */](stream: T): T = js.native
+    def pipe[T /* <: WritableStream */](stream: T, opts: End): T = js.native
     
     /**
       * Gets the result of `path.relative(file.base, file.path)`.

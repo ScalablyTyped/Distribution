@@ -1,14 +1,14 @@
 package typings.cucumberGherkin
 
-import typings.cucumberGherkin.astBuilderMod.default
-import typings.cucumberGherkin.iastbuilderMod.IAstBuilder
-import typings.cucumberGherkin.igherkinoptionsMod.IGherkinOptions
-import typings.cucumberGherkin.itokenMod.IToken
-import typings.cucumberGherkin.itokenmatcherMod.ITokenMatcher
-import typings.cucumberGherkin.parserMod.RuleType
-import typings.cucumberGherkin.parserMod.TokenType
-import typings.cucumberMessages.idGeneratorMod.NewId
-import typings.cucumberMessages.messagesMod.SourceMediaType
+import typings.cucumberGherkin.distSrcAstBuilderMod.default
+import typings.cucumberGherkin.distSrcIastbuilderMod.IAstBuilder
+import typings.cucumberGherkin.distSrcIgherkinoptionsMod.IGherkinOptions
+import typings.cucumberGherkin.distSrcItokenMod.IToken
+import typings.cucumberGherkin.distSrcItokenmatcherMod.ITokenMatcher
+import typings.cucumberGherkin.distSrcParserMod.RuleType
+import typings.cucumberGherkin.distSrcParserMod.TokenType
+import typings.cucumberMessages.distCjsSrcIdGeneratorMod.NewId
+import typings.cucumberMessages.distCjsSrcMessagesMod.SourceMediaType
 import typings.cucumberMessages.mod.Envelope
 import typings.cucumberMessages.mod.Location
 import typings.cucumberMessages.mod.Pickle
@@ -33,7 +33,7 @@ object mod {
     @JSImport("@cucumber/gherkin", "Errors.AstBuilderException")
     @js.native
     open class AstBuilderException protected ()
-      extends typings.cucumberGherkin.errorsMod.AstBuilderException {
+      extends typings.cucumberGherkin.distSrcErrorsMod.AstBuilderException {
       def this(message: String) = this()
     }
     /* static members */
@@ -43,13 +43,13 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def create(message: String, location: Location): typings.cucumberGherkin.errorsMod.GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(message.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberGherkin.errorsMod.GherkinException]
+      inline def create(message: String, location: Location): typings.cucumberGherkin.distSrcErrorsMod.GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(message.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberGherkin.distSrcErrorsMod.GherkinException]
     }
     
     @JSImport("@cucumber/gherkin", "Errors.CompositeParserException")
     @js.native
     open class CompositeParserException protected ()
-      extends typings.cucumberGherkin.errorsMod.CompositeParserException {
+      extends typings.cucumberGherkin.distSrcErrorsMod.CompositeParserException {
       def this(message: String) = this()
     }
     /* static members */
@@ -59,13 +59,13 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def create(errors: js.Array[js.Error]): typings.cucumberGherkin.errorsMod.CompositeParserException = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(errors.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberGherkin.errorsMod.CompositeParserException]
+      inline def create(errors: js.Array[js.Error]): typings.cucumberGherkin.distSrcErrorsMod.CompositeParserException = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(errors.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberGherkin.distSrcErrorsMod.CompositeParserException]
     }
     
     @JSImport("@cucumber/gherkin", "Errors.GherkinException")
     @js.native
     open class GherkinException protected ()
-      extends typings.cucumberGherkin.errorsMod.GherkinException {
+      extends typings.cucumberGherkin.distSrcErrorsMod.GherkinException {
       def this(message: String) = this()
     }
     /* static members */
@@ -75,14 +75,14 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def _create(message: String): typings.cucumberGherkin.errorsMod.GherkinException = ^.asInstanceOf[js.Dynamic].applyDynamic("_create")(message.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberGherkin.errorsMod.GherkinException]
-      inline def _create(message: String, location: Location): typings.cucumberGherkin.errorsMod.GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(message.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberGherkin.errorsMod.GherkinException]
+      inline def _create(message: String): typings.cucumberGherkin.distSrcErrorsMod.GherkinException = ^.asInstanceOf[js.Dynamic].applyDynamic("_create")(message.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberGherkin.distSrcErrorsMod.GherkinException]
+      inline def _create(message: String, location: Location): typings.cucumberGherkin.distSrcErrorsMod.GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(message.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberGherkin.distSrcErrorsMod.GherkinException]
     }
     
     @JSImport("@cucumber/gherkin", "Errors.NoSuchLanguageException")
     @js.native
     open class NoSuchLanguageException protected ()
-      extends typings.cucumberGherkin.errorsMod.NoSuchLanguageException {
+      extends typings.cucumberGherkin.distSrcErrorsMod.NoSuchLanguageException {
       def this(message: String) = this()
     }
     /* static members */
@@ -92,14 +92,14 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def create(language: String): typings.cucumberGherkin.errorsMod.GherkinException = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(language.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberGherkin.errorsMod.GherkinException]
-      inline def create(language: String, location: Location): typings.cucumberGherkin.errorsMod.GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(language.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberGherkin.errorsMod.GherkinException]
+      inline def create(language: String): typings.cucumberGherkin.distSrcErrorsMod.GherkinException = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(language.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberGherkin.distSrcErrorsMod.GherkinException]
+      inline def create(language: String, location: Location): typings.cucumberGherkin.distSrcErrorsMod.GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(language.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberGherkin.distSrcErrorsMod.GherkinException]
     }
     
     @JSImport("@cucumber/gherkin", "Errors.ParserException")
     @js.native
     open class ParserException protected ()
-      extends typings.cucumberGherkin.errorsMod.ParserException {
+      extends typings.cucumberGherkin.distSrcErrorsMod.ParserException {
       def this(message: String) = this()
     }
     /* static members */
@@ -109,35 +109,35 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def create(message: String, line: Double, column: Double): typings.cucumberGherkin.errorsMod.ParserException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(message.asInstanceOf[js.Any], line.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberGherkin.errorsMod.ParserException]
+      inline def create(message: String, line: Double, column: Double): typings.cucumberGherkin.distSrcErrorsMod.ParserException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(message.asInstanceOf[js.Any], line.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberGherkin.distSrcErrorsMod.ParserException]
     }
   }
   
   @JSImport("@cucumber/gherkin", "GherkinClassicTokenMatcher")
   @js.native
   open class GherkinClassicTokenMatcher ()
-    extends typings.cucumberGherkin.gherkinClassicTokenMatcherMod.default {
+    extends typings.cucumberGherkin.distSrcGherkinClassicTokenMatcherMod.default {
     def this(defaultDialectName: String) = this()
   }
   
   @JSImport("@cucumber/gherkin", "GherkinInMarkdownTokenMatcher")
   @js.native
   open class GherkinInMarkdownTokenMatcher ()
-    extends typings.cucumberGherkin.gherkinInMarkdownTokenMatcherMod.default {
+    extends typings.cucumberGherkin.distSrcGherkinInMarkdownTokenMatcherMod.default {
     def this(defaultDialectName: String) = this()
   }
   
   @JSImport("@cucumber/gherkin", "Parser")
   @js.native
   open class Parser[AstNode] protected ()
-    extends typings.cucumberGherkin.parserMod.default[AstNode] {
+    extends typings.cucumberGherkin.distSrcParserMod.default[AstNode] {
     def this(builder: IAstBuilder[AstNode, TokenType, RuleType], tokenMatcher: ITokenMatcher[TokenType]) = this()
   }
   
   @JSImport("@cucumber/gherkin", "TokenScanner")
   @js.native
   open class TokenScanner[TokenType] protected ()
-    extends typings.cucumberGherkin.tokenScannerMod.default[TokenType] {
+    extends typings.cucumberGherkin.distSrcTokenScannerMod.default[TokenType] {
     def this(
       source: String,
       makeToken: js.Function2[/* line */ String, /* location */ Location, IToken[TokenType]]

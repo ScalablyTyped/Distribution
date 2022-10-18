@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protobufjs/minimal", "NamespaceBase")
+/* note: abstract class */ @JSImport("protobufjs/minimal", "NamespaceBase")
 @js.native
-abstract class NamespaceBase ()
+open class NamespaceBase ()
   extends typings.protobufjs.mod.NamespaceBase

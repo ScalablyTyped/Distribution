@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "Layout3D")
 @js.native
 open class Layout3D protected ()
-  extends typings.webcola.layout3dMod.Layout3D {
+  extends typings.webcola.distSrcLayout3dMod.Layout3D {
   def this(
-    nodes: js.Array[typings.webcola.layout3dMod.Node3D],
-    links: js.Array[typings.webcola.layout3dMod.Link3D]
+    nodes: js.Array[typings.webcola.distSrcLayout3dMod.Node3D],
+    links: js.Array[typings.webcola.distSrcLayout3dMod.Link3D]
   ) = this()
   def this(
-    nodes: js.Array[typings.webcola.layout3dMod.Node3D],
-    links: js.Array[typings.webcola.layout3dMod.Link3D],
+    nodes: js.Array[typings.webcola.distSrcLayout3dMod.Node3D],
+    links: js.Array[typings.webcola.distSrcLayout3dMod.Link3D],
     idealLinkLength: Double
   ) = this()
 }

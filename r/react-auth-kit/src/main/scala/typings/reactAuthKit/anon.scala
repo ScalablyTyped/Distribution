@@ -1,6 +1,6 @@
 package typings.reactAuthKit
 
-import typings.reactAuthKit.typesMod.AuthStateUserObject
+import typings.reactAuthKit.distTypesMod.AuthStateUserObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

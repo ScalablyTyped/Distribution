@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.gmapMod.GMapProps
+import typings.primereact.gmapGmapMod.GMapProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "GMap")
 @js.native
 open class GMap protected ()
-  extends typings.primereact.gmapMod.GMap {
+  extends typings.primereact.gmapGmapMod.GMap {
   def this(props: GMapProps) = this()
   /**
     * @deprecated

@@ -1,24 +1,27 @@
 package typings.baseui.anon
 
+import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `259` extends StObject {
   
-  var value: js.Array[Double]
+  var current: js.UndefOr[SVGSVGElement | Null] = js.undefined
 }
 object `259` {
   
-  inline def apply(value: js.Array[Double]): `259` = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  inline def apply(): `259` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`259`]
   }
   
   extension [Self <: `259`](x: Self) {
     
-    inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: SVGSVGElement): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
+    inline def setCurrentNull: Self = StObject.set(x, "current", null)
+    
+    inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
   }
 }

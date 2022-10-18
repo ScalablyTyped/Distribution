@@ -1,6 +1,5 @@
 package typings.cesium.anon
 
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait ClearOnDrop extends StObject {
   
   var clearOnDrop: js.UndefOr[Boolean] = js.undefined
   
-  var dropTarget: js.UndefOr[Element | String] = js.undefined
+  var dropTarget: js.UndefOr[typings.std.Element | String] = js.undefined
   
   var flyToOnDrop: js.UndefOr[Boolean] = js.undefined
   
@@ -34,7 +33,7 @@ object ClearOnDrop {
     
     inline def setClearOnDropUndefined: Self = StObject.set(x, "clearOnDrop", js.undefined)
     
-    inline def setDropTarget(value: Element | String): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+    inline def setDropTarget(value: typings.std.Element | String): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
     
     inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
     

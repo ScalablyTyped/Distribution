@@ -1,10 +1,10 @@
 package typings.awsSdkClientXrayNode
 
-import typings.awsSdkClientXrayNode.inputTypesUnionMod.InputTypesUnion
-import typings.awsSdkClientXrayNode.outputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkClientXrayNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientXrayNode.typesOutputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientXrayNode.xrayconfigurationMod.XRayConfiguration
 import typings.awsSdkClientXrayNode.xrayconfigurationMod.XRayResolvedConfiguration
-import typings.awsSdkTypes.commandMod.Command
+import typings.awsSdkTypes.distTypesCommandMod.Command
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

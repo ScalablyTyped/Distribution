@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a compass reading. */
-@JSGlobal("Windows.Devices.Sensors.CompassReading")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.CompassReading")
 @js.native
-abstract class CompassReading ()
+open class CompassReading ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.CompassReading {
   

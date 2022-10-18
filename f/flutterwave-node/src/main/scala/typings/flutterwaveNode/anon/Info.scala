@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Info extends StObject {
   
-  var info: js.Array[Account]
+  var info: js.Array[Cardlocale]
   
   var page_info: Pagesize
 }
 object Info {
   
-  inline def apply(info: js.Array[Account], page_info: Pagesize): Info = {
+  inline def apply(info: js.Array[Cardlocale], page_info: Pagesize): Info = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], page_info = page_info.asInstanceOf[js.Any])
     __obj.asInstanceOf[Info]
   }
   
   extension [Self <: Info](x: Self) {
     
-    inline def setInfo(value: js.Array[Account]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: js.Array[Cardlocale]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    inline def setInfoVarargs(value: Account*): Self = StObject.set(x, "info", js.Array(value*))
+    inline def setInfoVarargs(value: Cardlocale*): Self = StObject.set(x, "info", js.Array(value*))
     
     inline def setPage_info(value: Pagesize): Self = StObject.set(x, "page_info", value.asInstanceOf[js.Any])
   }

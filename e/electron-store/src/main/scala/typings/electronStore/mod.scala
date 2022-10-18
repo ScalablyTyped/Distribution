@@ -1,11 +1,12 @@
 package typings.electronStore
 
+import typings.conf.distSourceTypesMod.BeforeEachMigrationCallback
+import typings.conf.distSourceTypesMod.BeforeEachMigrationContext
+import typings.conf.distSourceTypesMod.Deserialize
+import typings.conf.distSourceTypesMod.Migrations
+import typings.conf.distSourceTypesMod.Serialize
 import typings.conf.mod.default
-import typings.conf.typesMod.BeforeEachMigrationCallback
-import typings.conf.typesMod.BeforeEachMigrationContext
-import typings.conf.typesMod.Deserialize
-import typings.conf.typesMod.Migrations
-import typings.conf.typesMod.Serialize
+import typings.node.NodeJS.TypedArray
 import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -87,9 +88,7 @@ object mod {
     
     var deserialize: js.UndefOr[Deserialize[T]] = js.undefined
     
-    var encryptionKey: js.UndefOr[
-        String | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView
-      ] = js.undefined
+    var encryptionKey: js.UndefOr[String | Buffer | TypedArray | js.typedarray.DataView] = js.undefined
     
     var fileExtension: js.UndefOr[String] = js.undefined
     
@@ -108,7 +107,7 @@ object mod {
     
     var projectVersion: js.UndefOr[String] = js.undefined
     
-    var schema: js.UndefOr[typings.conf.typesMod.Schema[T]] = js.undefined
+    var schema: js.UndefOr[typings.conf.distSourceTypesMod.Schema[T]] = js.undefined
     
     var serialize: js.UndefOr[Serialize[T]] = js.undefined
     
@@ -155,9 +154,7 @@ object mod {
       
       inline def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
       
-      inline def setEncryptionKey(
-        value: String | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView
-      ): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+      inline def setEncryptionKey(value: String | Buffer | TypedArray | js.typedarray.DataView): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
       
       inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
       
@@ -185,7 +182,7 @@ object mod {
       
       inline def setProjectVersionUndefined: Self = StObject.set(x, "projectVersion", js.undefined)
       
-      inline def setSchema(value: typings.conf.typesMod.Schema[T]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: typings.conf.distSourceTypesMod.Schema[T]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
       inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
@@ -199,5 +196,5 @@ object mod {
     }
   }
   
-  type Schema[T] = typings.conf.typesMod.Schema[T]
+  type Schema[T] = typings.conf.distSourceTypesMod.Schema[T]
 }

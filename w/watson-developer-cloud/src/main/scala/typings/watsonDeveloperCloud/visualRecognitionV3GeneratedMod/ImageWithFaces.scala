@@ -37,7 +37,7 @@ object ImageWithFaces {
     
     inline def setFaces(value: js.Array[Face]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
     
-    inline def setFacesVarargs(value: Face*): Self = StObject.set(x, "faces", js.Array(value :_*))
+    inline def setFacesVarargs(value: Face*): Self = StObject.set(x, "faces", js.Array(value*))
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

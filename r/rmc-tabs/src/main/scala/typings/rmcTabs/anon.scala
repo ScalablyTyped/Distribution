@@ -6,10 +6,11 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.ScrollView
 import typings.reactNative.mod.ViewStyle
-import typings.rmcTabs.defaultTabBarMod.DefaultTabBar
-import typings.rmcTabs.modelsMod.Models.TabData
-import typings.rmcTabs.propsTypeMod.PropsType
-import typings.rmcTabs.propsTypeMod.TabBarPropsType
+import typings.rmcTabs.libDefaultTabBarMod.DefaultTabBar
+import typings.rmcTabs.libModelsMod.Models.TabData
+import typings.rmcTabs.libPropsTypeMod.PropsType
+import typings.rmcTabs.libPropsTypeMod.TabBarPropsType
+import typings.rmcTabs.libTabsDotbaseMod.StateType
 import typings.rmcTabs.rmcTabsBooleans.`false`
 import typings.rmcTabs.rmcTabsStrings.bottom
 import typings.rmcTabs.rmcTabsStrings.horizontal
@@ -17,7 +18,6 @@ import typings.rmcTabs.rmcTabsStrings.left
 import typings.rmcTabs.rmcTabsStrings.right
 import typings.rmcTabs.rmcTabsStrings.top
 import typings.rmcTabs.rmcTabsStrings.vertical
-import typings.rmcTabs.tabsBaseMod.StateType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -557,8 +557,8 @@ object anon {
   @js.native
   trait TypeofDefaultTabBar
     extends StObject
-       with Instantiable1[/* props */ typings.rmcTabs.defaultTabBarMod.PropsType, DefaultTabBar] {
+       with Instantiable1[/* props */ typings.rmcTabs.libDefaultTabBarMod.PropsType, DefaultTabBar] {
     
-    var defaultProps: typings.rmcTabs.defaultTabBarMod.PropsType = js.native
+    var defaultProps: typings.rmcTabs.libDefaultTabBarMod.PropsType = js.native
   }
 }

@@ -1,8 +1,8 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.compositemarkCommonMod.PartsMixins
-import typings.vegaLite.exprMod.ExprRef
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaLite.buildSrcCompositemarkCommonMod.PartsMixins
+import typings.vegaLite.buildSrcExprMod.ExprRef
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +11,9 @@ trait EndPositionPrefix[P /* <: PartsMixins[Any] */] extends StObject {
   
   var endPositionPrefix: js.UndefOr[String] = js.undefined
   
-  var extraEncoding: js.UndefOr[typings.vegaLite.encodingMod.Encoding[String]] = js.undefined
+  var extraEncoding: js.UndefOr[typings.vegaLite.buildSrcEncodingMod.Encoding[String]] = js.undefined
   
-  var mark: typings.vegaLite.srcMarkMod.Mark | (typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, ExprRef | SignalRef])
+  var mark: typings.vegaLite.buildSrcMarkMod.Mark | (typings.vegaLite.buildSrcMarkMod.MarkDef[typings.vegaLite.buildSrcMarkMod.Mark, ExprRef | SignalRef])
   
   var partName: /* keyof P */ String
   
@@ -22,7 +22,7 @@ trait EndPositionPrefix[P /* <: PartsMixins[Any] */] extends StObject {
 object EndPositionPrefix {
   
   inline def apply[P /* <: PartsMixins[Any] */](
-    mark: typings.vegaLite.srcMarkMod.Mark | (typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, ExprRef | SignalRef]),
+    mark: typings.vegaLite.buildSrcMarkMod.Mark | (typings.vegaLite.buildSrcMarkMod.MarkDef[typings.vegaLite.buildSrcMarkMod.Mark, ExprRef | SignalRef]),
     partName: /* keyof P */ String,
     positionPrefix: String
   ): EndPositionPrefix[P] = {
@@ -36,12 +36,12 @@ object EndPositionPrefix {
     
     inline def setEndPositionPrefixUndefined: Self = StObject.set(x, "endPositionPrefix", js.undefined)
     
-    inline def setExtraEncoding(value: typings.vegaLite.encodingMod.Encoding[String]): Self = StObject.set(x, "extraEncoding", value.asInstanceOf[js.Any])
+    inline def setExtraEncoding(value: typings.vegaLite.buildSrcEncodingMod.Encoding[String]): Self = StObject.set(x, "extraEncoding", value.asInstanceOf[js.Any])
     
     inline def setExtraEncodingUndefined: Self = StObject.set(x, "extraEncoding", js.undefined)
     
     inline def setMark(
-      value: typings.vegaLite.srcMarkMod.Mark | (typings.vegaLite.srcMarkMod.MarkDef[typings.vegaLite.srcMarkMod.Mark, ExprRef | SignalRef])
+      value: typings.vegaLite.buildSrcMarkMod.Mark | (typings.vegaLite.buildSrcMarkMod.MarkDef[typings.vegaLite.buildSrcMarkMod.Mark, ExprRef | SignalRef])
     ): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
     inline def setPartName(value: /* keyof P */ String): Self = StObject.set(x, "partName", value.asInstanceOf[js.Any])

@@ -7,6 +7,8 @@ import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.PipeTransform
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
+import typings.rxjs.distTypesInternalTypesMod.Subscribable
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,9 +50,8 @@ open class AsyncPipe protected ()
   override def transform(value: Any, args: Any*): Any = js.native
   def transform[T](): T | Null = js.native
   def transform[T](obj: js.Promise[T]): T | Null = js.native
-  def transform[T](
-    obj: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
-  ): T | Null = js.native
+  def transform[T](obj: Subscribable[T]): T | Null = js.native
+  def transform[T](obj: Observable_[T]): T | Null = js.native
   @JSName("transform")
   def transform_T_Null[T](): Null = js.native
 }

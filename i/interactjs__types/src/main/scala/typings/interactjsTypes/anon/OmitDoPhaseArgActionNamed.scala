@@ -1,10 +1,10 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.interactEventMod.EventPhase
-import typings.interactjsTypes.interactEventMod.InteractEvent
+import typings.interactjsTypes.coreInteractEventMod.EventPhase
+import typings.interactjsTypes.coreInteractEventMod.InteractEvent
+import typings.interactjsTypes.coreTypesMod.ActionName
+import typings.interactjsTypes.coreTypesMod.PointerEventType
 import typings.interactjsTypes.interactjsTypesStrings._doPhase
-import typings.interactjsTypes.typesMod.ActionName
-import typings.interactjsTypes.typesMod.PointerEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait OmitDoPhaseArgActionNamed extends StObject {
   
   var iEvent: js.UndefOr[InteractEvent[ActionName, _doPhase]] = js.undefined
   
-  var interaction: typings.interactjsTypes.interactionMod.Interaction[ActionName]
+  var interaction: typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]
   
   var phase: EventPhase
   
@@ -28,7 +28,7 @@ object OmitDoPhaseArgActionNamed {
   
   inline def apply(
     event: PointerEventType,
-    interaction: typings.interactjsTypes.interactionMod.Interaction[ActionName],
+    interaction: typings.interactjsTypes.coreInteractionMod.Interaction[ActionName],
     phase: EventPhase
   ): OmitDoPhaseArgActionNamed = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], interaction = interaction.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any])
@@ -43,7 +43,7 @@ object OmitDoPhaseArgActionNamed {
     
     inline def setIEventUndefined: Self = StObject.set(x, "iEvent", js.undefined)
     
-    inline def setInteraction(value: typings.interactjsTypes.interactionMod.Interaction[ActionName]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+    inline def setInteraction(value: typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
     inline def setPhase(value: EventPhase): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +12,7 @@ trait Explanation extends StObject {
     * also be found in the returned `policy` bindings. Note that the map is populated only for requests with permission queries.
     */
   var matchedPermissions: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Permissions}
-    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Explanation & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Permissions} */ js.Any
   ] = js.undefined
 }
 object Explanation {
@@ -28,9 +25,7 @@ object Explanation {
   extension [Self <: Explanation](x: Self) {
     
     inline def setMatchedPermissions(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Permissions}
-      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Explanation & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Permissions} */ js.Any
     ): Self = StObject.set(x, "matchedPermissions", value.asInstanceOf[js.Any])
     
     inline def setMatchedPermissionsUndefined: Self = StObject.set(x, "matchedPermissions", js.undefined)

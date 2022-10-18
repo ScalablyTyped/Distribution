@@ -1,7 +1,7 @@
 package typings.reactBulmaComponents
 
-import typings.reactBulmaComponents.columnsMod.ColumnSize
-import typings.reactBulmaComponents.componentsMod._SpacingSize
+import typings.reactBulmaComponents.srcComponentsColumnsMod.ColumnSize
+import typings.reactBulmaComponents.srcComponentsMod._SpacingSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

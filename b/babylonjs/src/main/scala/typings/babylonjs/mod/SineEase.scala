@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SineEase")
 @js.native
 open class SineEase ()
-  extends typings.babylonjs.legacyMod.SineEase
+  extends typings.babylonjs.legacyLegacyMod.SineEase

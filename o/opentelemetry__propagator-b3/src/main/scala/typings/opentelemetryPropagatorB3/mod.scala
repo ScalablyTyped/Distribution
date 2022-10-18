@@ -1,6 +1,6 @@
 package typings.opentelemetryPropagatorB3
 
-import typings.opentelemetryPropagatorB3.typesMod.B3PropagatorConfig
+import typings.opentelemetryPropagatorB3.buildSrcTypesMod.B3PropagatorConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,17 +12,17 @@ object mod {
   object B3InjectEncoding extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.opentelemetryPropagatorB3.typesMod.B3InjectEncoding & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.opentelemetryPropagatorB3.buildSrcTypesMod.B3InjectEncoding & Double] = js.native
     
-    /* 1 */ val MULTI_HEADER: typings.opentelemetryPropagatorB3.typesMod.B3InjectEncoding.MULTI_HEADER & Double = js.native
+    /* 1 */ val MULTI_HEADER: typings.opentelemetryPropagatorB3.buildSrcTypesMod.B3InjectEncoding.MULTI_HEADER & Double = js.native
     
-    /* 0 */ val SINGLE_HEADER: typings.opentelemetryPropagatorB3.typesMod.B3InjectEncoding.SINGLE_HEADER & Double = js.native
+    /* 0 */ val SINGLE_HEADER: typings.opentelemetryPropagatorB3.buildSrcTypesMod.B3InjectEncoding.SINGLE_HEADER & Double = js.native
   }
   
   @JSImport("@opentelemetry/propagator-b3", "B3Propagator")
   @js.native
   open class B3Propagator ()
-    extends typings.opentelemetryPropagatorB3.b3PropagatorMod.B3Propagator {
+    extends typings.opentelemetryPropagatorB3.buildSrcB3PropagatorMod.B3Propagator {
     def this(config: B3PropagatorConfig) = this()
   }
   

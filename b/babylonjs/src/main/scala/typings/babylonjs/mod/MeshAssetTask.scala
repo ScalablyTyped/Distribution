@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "MeshAssetTask")
 @js.native
 open class MeshAssetTask protected ()
-  extends typings.babylonjs.legacyMod.MeshAssetTask {
+  extends typings.babylonjs.legacyLegacyMod.MeshAssetTask {
   /**
     * Creates a new MeshAssetTask
     * @param name defines the name of the task
@@ -51,5 +51,49 @@ open class MeshAssetTask protected ()
     * Defines the filename or File of the scene to load from
     */
   sceneFilename: File
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the list of mesh's names you want to load
+    */
+  meshesNames: Any,
+    /**
+    * Defines the root url to use as a base to load your meshes and associated resources
+    */
+  rootUrl: String,
+    /**
+    * Defines the filename or File of the scene to load from
+    */
+  sceneFilename: String,
+    /**
+    * Defines the extension to use to load the scene (if not defined, ".babylon" will be used)
+    */
+  `extension`: String
+  ) = this()
+  def this(
+    /**
+    * Defines the name of the task
+    */
+  name: String,
+    /**
+    * Defines the list of mesh's names you want to load
+    */
+  meshesNames: Any,
+    /**
+    * Defines the root url to use as a base to load your meshes and associated resources
+    */
+  rootUrl: String,
+    /**
+    * Defines the filename or File of the scene to load from
+    */
+  sceneFilename: File,
+    /**
+    * Defines the extension to use to load the scene (if not defined, ".babylon" will be used)
+    */
+  `extension`: String
   ) = this()
 }

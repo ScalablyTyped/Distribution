@@ -9,7 +9,7 @@ object CodeLensResolveRequest {
   
   @JSImport("vscode-languageserver-protocol", "CodeLensResolveRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "CodeLensResolveRequest.method")
   @js.native
@@ -17,7 +17,7 @@ object CodeLensResolveRequest {
   
   @JSImport("vscode-languageserver-protocol", "CodeLensResolveRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     typings.vscodeLanguageserverTypes.mod.CodeLens, 
     typings.vscodeLanguageserverTypes.mod.CodeLens, 
     scala.Nothing, 

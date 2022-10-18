@@ -355,9 +355,9 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in std.Exclude<keyof @pixi/display.GlobalMixins.DisplayObject, keyof @pixi/utils.@pixi/utils.EventEmitter<string | symbol, any>> ]: @pixi/display.GlobalMixins.DisplayObject[P]} */ @JSImport("@pixi/display", "DisplayObject")
+  - Dropped {[ P in std.Exclude<keyof @pixi/display.GlobalMixins.DisplayObject, keyof @pixi/utils.@pixi/utils.EventEmitter<string | symbol, any>> ]: @pixi/display.GlobalMixins.DisplayObject[P]} */ /* note: abstract class */ @JSImport("@pixi/display", "DisplayObject")
   @js.native
-  abstract class DisplayObject ()
+  open class DisplayObject ()
     extends EventEmitter[String | js.Symbol, Any] {
     
     /** The bounds object, this is used to calculate and store the bounds of the displayObject. */

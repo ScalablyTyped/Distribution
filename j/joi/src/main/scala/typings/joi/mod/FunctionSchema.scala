@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.joi.mod._Schema because Already inherited */ @js.native
-trait FunctionSchema
+- typings.joi.mod.Schema because Already inherited */ @js.native
+trait FunctionSchema[TSchema]
   extends StObject
-     with ObjectSchema[Any] {
+     with ObjectSchema[TSchema] {
   
   /**
     * Specifies the arity of the function where:

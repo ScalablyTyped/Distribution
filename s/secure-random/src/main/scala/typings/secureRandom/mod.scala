@@ -40,7 +40,15 @@ object mod {
     */
   inline def randomUint8Array(byteCount: Double): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUint8Array")(byteCount.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  type ObjectType[T] = js.typedarray.Uint8Array | Buffer | js.Array[Double]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends 'Array' ? std.Array<number> : T extends 'Buffer' ? node.buffer.<global>.Buffer : T extends 'Uint8Array' ? std.Uint8Array : never
+    }}}
+    */
+  @js.native
+  trait ObjectType[T] extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.secureRandom.secureRandomStrings.Array

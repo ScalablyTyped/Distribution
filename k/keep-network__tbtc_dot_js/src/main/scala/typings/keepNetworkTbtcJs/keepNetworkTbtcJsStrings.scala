@@ -1,8 +1,8 @@
 package typings.keepNetworkTbtcJs
 
-import typings.keepNetworkTbtcJs.bitcoinHelpersMod.BitcoinNetworkType
-import typings.keepNetworkTbtcJs.commonTypesMod.AbiType
-import typings.keepNetworkTbtcJs.commonTypesMod.StateMutabilityType
+import typings.keepNetworkTbtcJs.srcBitcoinHelpersMod.BitcoinNetworkType
+import typings.keepNetworkTbtcJs.srcCommonTypesMod.AbiType
+import typings.keepNetworkTbtcJs.srcCommonTypesMod.StateMutabilityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

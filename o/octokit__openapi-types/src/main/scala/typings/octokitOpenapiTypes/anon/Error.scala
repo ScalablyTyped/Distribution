@@ -6,31 +6,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Error extends StObject {
   
-  var date: js.UndefOr[String] = js.undefined
+  var commit: String
   
-  var error: js.UndefOr[String] = js.undefined
+  /** Format: date-time */
+  var created_at: String
   
-  var status: js.UndefOr[String] = js.undefined
+  var duration: Double
+  
+  var error: `3`
+  
+  var pusher: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  
+  var status: String
+  
+  /** Format: date-time */
+  var updated_at: String
+  
+  /** Format: uri */
+  var url: String
 }
 object Error {
   
-  inline def apply(): Error = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    commit: String,
+    created_at: String,
+    duration: Double,
+    error: `3`,
+    pusher: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
+    status: String,
+    updated_at: String,
+    url: String
+  ): Error = {
+    val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], pusher = pusher.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
   
   extension [Self <: Error](x: Self) {
     
-    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setError(value: `3`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setPusher(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+    ): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

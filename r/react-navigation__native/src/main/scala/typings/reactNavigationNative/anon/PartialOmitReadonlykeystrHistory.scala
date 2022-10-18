@@ -1,8 +1,8 @@
 package typings.reactNavigationNative.anon
 
 import typings.reactNavigationNative.reactNavigationNativeBooleans.`true`
-import typings.reactNavigationRouters.typesMod.PartialRoute
-import typings.reactNavigationRouters.typesMod.Route
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.PartialRoute
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

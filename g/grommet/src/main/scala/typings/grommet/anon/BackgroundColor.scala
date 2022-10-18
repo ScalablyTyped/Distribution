@@ -1,6 +1,5 @@
 package typings.grommet.anon
 
-import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.ColorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BackgroundColor extends StObject {
   
-  var background: js.UndefOr[BackgroundType] = js.undefined
+  var background: js.UndefOr[ColorType | `5`] = js.undefined
   
   var color: js.UndefOr[ColorType] = js.undefined
 }
@@ -21,7 +20,7 @@ object BackgroundColor {
   
   extension [Self <: BackgroundColor](x: Self) {
     
-    inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: ColorType | `5`): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     

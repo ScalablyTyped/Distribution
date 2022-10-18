@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.performanceViewerCollectionStrategiesMod.PerfStrategyInitialization
+import typings.babylonjs.miscPerformanceViewerPerformanceViewerCollectionStrategiesMod.PerfStrategyInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PerfCollectionStrategy")
 @js.native
 open class PerfCollectionStrategy ()
-  extends typings.babylonjs.legacyMod.PerfCollectionStrategy
+  extends typings.babylonjs.legacyLegacyMod.PerfCollectionStrategy
 /* static members */
 object PerfCollectionStrategy {
   

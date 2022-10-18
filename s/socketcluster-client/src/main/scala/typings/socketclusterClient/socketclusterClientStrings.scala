@@ -1,7 +1,7 @@
 package typings.socketclusterClient
 
-import typings.socketclusterClient.clientsocketMod.AuthStates
-import typings.socketclusterClient.clientsocketMod.States
+import typings.socketclusterClient.libClientsocketMod.AuthStates
+import typings.socketclusterClient.libClientsocketMod.States
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

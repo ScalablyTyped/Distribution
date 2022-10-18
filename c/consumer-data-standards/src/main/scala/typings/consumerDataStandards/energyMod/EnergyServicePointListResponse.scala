@@ -1,9 +1,7 @@
 package typings.consumerDataStandards.energyMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.consumerDataStandards.anon.First
 import typings.consumerDataStandards.anon.ServicePoints
-import typings.consumerDataStandards.anon.TotalPages
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,14 +12,14 @@ trait EnergyServicePointListResponse
   
   var data: ServicePoints
   
-  var links: First
+  var links: LinksPaginated
   
-  var meta: js.UndefOr[TotalPages] = js.undefined
+  var meta: MetaPaginated
 }
 object EnergyServicePointListResponse {
   
-  inline def apply(data: ServicePoints, links: First): EnergyServicePointListResponse = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any])
+  inline def apply(data: ServicePoints, links: LinksPaginated, meta: MetaPaginated): EnergyServicePointListResponse = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnergyServicePointListResponse]
   }
   
@@ -29,10 +27,8 @@ object EnergyServicePointListResponse {
     
     inline def setData(value: ServicePoints): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setLinks(value: First): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: LinksPaginated): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    inline def setMeta(value: TotalPages): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
-    
-    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMeta(value: MetaPaginated): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
   }
 }

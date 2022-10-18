@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "FramebufferTexture")
 @js.native
 open class FramebufferTexture protected ()
-  extends typings.three.threeMod.FramebufferTexture {
+  extends typings.three.srcThreeMod.FramebufferTexture {
   def this(width: Double, height: Double, format: typings.three.srcConstantsMod.PixelFormat) = this()
 }

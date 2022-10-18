@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
-import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,9 +12,7 @@ trait InterconnectAttachmentAggregatedList extends StObject {
   
   /** A list of InterconnectAttachmentsScopedList resources. */
   var items: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.InterconnectAttachmentsScopedList}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.InterconnectAttachmentAggregatedList & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.InterconnectAttachmentsScopedList} */ js.Any
   ] = js.undefined
   
   /** [Output Only] Type of resource. Always compute#interconnectAttachmentAggregatedList for aggregated lists of interconnect attachments. */
@@ -50,9 +47,7 @@ object InterconnectAttachmentAggregatedList {
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setItems(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.InterconnectAttachmentsScopedList}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.InterconnectAttachmentAggregatedList & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.InterconnectAttachmentsScopedList} */ js.Any
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

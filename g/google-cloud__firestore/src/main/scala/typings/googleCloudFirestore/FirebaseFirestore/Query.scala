@@ -1,12 +1,32 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
-import typings.std.ReadableStream
+import typings.googleCloudFirestore.anon.Count
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Query[T] extends StObject {
+  
+  /**
+    * Returns a query that counts the documents in the result set of this
+    * query.
+    *
+    * The returned query, when executed, counts the documents in the result set
+    * of this query without actually downloading the documents.
+    *
+    * Using the returned query to count the documents is efficient because only
+    * the final count, not the documents' data, is downloaded. The returned
+    * query can even count the documents if the result set would be
+    * prohibitively large to download entirely (e.g. thousands of documents).
+    *
+    * @return a query that counts the documents in the result set of this
+    * query. The count can be retrieved from `snapshot.data().count`, where
+    * `snapshot` is the `AggregateQuerySnapshot` resulting from running the
+    * returned query.
+    */
+  def count(): AggregateQuery[Count] = js.native
   
   /**
     * Creates and returns a new Query that ends at the provided fields
@@ -206,7 +226,7 @@ trait Query[T] extends StObject {
     *
     * @return A stream of QueryDocumentSnapshot.
     */
-  def stream(): ReadableStream[Any] = js.native
+  def stream(): ReadableStream = js.native
   
   /**
     * Creates and returns a new Query with the additional filter that documents

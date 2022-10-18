@@ -1,6 +1,6 @@
 package typings.popperjsCore.anon
 
-import typings.popperjsCore.typesMod.VirtualElement
+import typings.popperjsCore.libTypesMod.VirtualElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

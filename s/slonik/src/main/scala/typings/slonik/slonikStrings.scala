@@ -95,10 +95,6 @@ object slonikStrings {
   inline def OR: OR = "OR".asInstanceOf[OR]
   
   @js.native
-  sealed trait QueryResultRowType extends StObject
-  inline def QueryResultRowType: QueryResultRowType = "QueryResultRowType".asInstanceOf[QueryResultRowType]
-  
-  @js.native
   sealed trait SELECT extends StObject
   inline def SELECT: SELECT = "SELECT".asInstanceOf[SELECT]
   

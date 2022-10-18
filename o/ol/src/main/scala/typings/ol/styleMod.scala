@@ -22,21 +22,21 @@ object styleMod {
   @JSImport("ol/style", "Fill")
   @js.native
   open class Fill ()
-    extends typings.ol.fillMod.default {
-    def this(opt_options: typings.ol.fillMod.Options) = this()
+    extends typings.ol.styleFillMod.default {
+    def this(opt_options: typings.ol.styleFillMod.Options) = this()
   }
   
   @JSImport("ol/style", "Icon")
   @js.native
   open class Icon ()
-    extends typings.ol.iconMod.default {
-    def this(opt_options: typings.ol.iconMod.Options) = this()
+    extends typings.ol.styleIconMod.default {
+    def this(opt_options: typings.ol.styleIconMod.Options) = this()
   }
   
   @JSImport("ol/style", "IconImage")
   @js.native
   open class IconImage protected ()
-    extends typings.ol.iconImageMod.default {
+    extends typings.ol.styleIconImageMod.default {
     def this(
       image: HTMLCanvasElement,
       src: String,
@@ -71,9 +71,9 @@ object styleMod {
     ) = this()
   }
   
-  @JSImport("ol/style", "Image")
+  /* note: abstract class */ @JSImport("ol/style", "Image")
   @js.native
-  abstract class Image protected ()
+  open class Image protected ()
     extends typings.ol.styleImageMod.default {
     def this(options: typings.ol.styleImageMod.Options) = this()
   }
@@ -81,15 +81,15 @@ object styleMod {
   @JSImport("ol/style", "RegularShape")
   @js.native
   open class RegularShape protected ()
-    extends typings.ol.regularShapeMod.default {
-    def this(options: typings.ol.regularShapeMod.Options) = this()
+    extends typings.ol.styleRegularShapeMod.default {
+    def this(options: typings.ol.styleRegularShapeMod.Options) = this()
   }
   
   @JSImport("ol/style", "Stroke")
   @js.native
   open class Stroke ()
-    extends typings.ol.strokeMod.default {
-    def this(opt_options: typings.ol.strokeMod.Options) = this()
+    extends typings.ol.styleStrokeMod.default {
+    def this(opt_options: typings.ol.styleStrokeMod.Options) = this()
   }
   
   @JSImport("ol/style", "Style")
@@ -102,7 +102,7 @@ object styleMod {
   @JSImport("ol/style", "Text")
   @js.native
   open class Text ()
-    extends typings.ol.textMod.default {
-    def this(opt_options: typings.ol.textMod.Options) = this()
+    extends typings.ol.styleTextMod.default {
+    def this(opt_options: typings.ol.styleTextMod.Options) = this()
   }
 }

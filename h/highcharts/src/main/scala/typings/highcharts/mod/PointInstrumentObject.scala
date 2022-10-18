@@ -14,18 +14,18 @@ trait PointInstrumentObject extends StObject {
     * An Instrument instance or the name of the instrument in the
     * Highcharts.sonification.instruments map.
     */
-  var instrument: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument
+  var instrument: String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Instrument
   
   /**
     * Mapping of instrument parameters for this instrument.
     */
-  var instrumentMapping: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentMappingObject
+  var instrumentMapping: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentMappingObject
   
   /**
     * Options for this instrument.
     */
   var instrumentOptions: js.UndefOr[
-    typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentOptionsObject
+    typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentOptionsObject
   ] = js.undefined
   
   /**
@@ -36,8 +36,8 @@ trait PointInstrumentObject extends StObject {
 object PointInstrumentObject {
   
   inline def apply(
-    instrument: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument,
-    instrumentMapping: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentMappingObject
+    instrument: String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Instrument,
+    instrumentMapping: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentMappingObject
   ): PointInstrumentObject = {
     val __obj = js.Dynamic.literal(instrument = instrument.asInstanceOf[js.Any], instrumentMapping = instrumentMapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointInstrumentObject]
@@ -45,11 +45,15 @@ object PointInstrumentObject {
   
   extension [Self <: PointInstrumentObject](x: Self) {
     
-    inline def setInstrument(value: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
+    inline def setInstrument(value: String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Instrument): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
     
-    inline def setInstrumentMapping(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentMappingObject): Self = StObject.set(x, "instrumentMapping", value.asInstanceOf[js.Any])
+    inline def setInstrumentMapping(
+      value: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentMappingObject
+    ): Self = StObject.set(x, "instrumentMapping", value.asInstanceOf[js.Any])
     
-    inline def setInstrumentOptions(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentOptionsObject): Self = StObject.set(x, "instrumentOptions", value.asInstanceOf[js.Any])
+    inline def setInstrumentOptions(
+      value: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentOptionsObject
+    ): Self = StObject.set(x, "instrumentOptions", value.asInstanceOf[js.Any])
     
     inline def setInstrumentOptionsUndefined: Self = StObject.set(x, "instrumentOptions", js.undefined)
     

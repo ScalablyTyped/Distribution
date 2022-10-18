@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "HeuristicPolicyManhattan")
 @js.native
 open class HeuristicPolicyManhattan ()
-  extends typings.yuka.yukaMod.HeuristicPolicyManhattan
+  extends typings.yuka.srcYukaMod.HeuristicPolicyManhattan
 /* static members */
 object HeuristicPolicyManhattan {
   
@@ -24,7 +24,7 @@ object HeuristicPolicyManhattan {
     * @return The manhattan distance between both nodes.
     */
   inline def calculate(
-    graph: typings.yuka.graphMod.Graph[typings.yuka.nodeMod.Node, typings.yuka.edgeMod.Edge],
+    graph: typings.yuka.srcGraphCoreGraphMod.Graph[typings.yuka.srcGraphCoreNodeMod.Node, typings.yuka.srcGraphCoreEdgeMod.Edge],
     source: Double,
     target: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculate")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]

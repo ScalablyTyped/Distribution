@@ -1,6 +1,6 @@
 package typings.jupyterlabInspector
 
-import typings.jupyterlabInspector.handlerMod.InspectionHandler.IOptions
+import typings.jupyterlabInspector.libHandlerMod.InspectionHandler.IOptions
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,12 +10,12 @@ object mod {
   
   @JSImport("@jupyterlab/inspector", "IInspector")
   @js.native
-  val IInspector: Token[typings.jupyterlabInspector.tokensMod.IInspector] = js.native
+  val IInspector: Token[typings.jupyterlabInspector.libTokensMod.IInspector] = js.native
   
   @JSImport("@jupyterlab/inspector", "InspectionHandler")
   @js.native
-  class InspectionHandler protected ()
-    extends typings.jupyterlabInspector.handlerMod.InspectionHandler {
+  open class InspectionHandler protected ()
+    extends typings.jupyterlabInspector.libHandlerMod.InspectionHandler {
     /**
       * Construct a new inspection handler for a widget.
       */
@@ -27,9 +27,9 @@ object mod {
   /**
     * Construct an inspector.
     */
-  class InspectorPanel ()
-    extends typings.jupyterlabInspector.inspectorMod.InspectorPanel {
-    def this(options: typings.jupyterlabInspector.inspectorMod.InspectorPanel.IOptions) = this()
+  open class InspectorPanel ()
+    extends typings.jupyterlabInspector.libInspectorMod.InspectorPanel {
+    def this(options: typings.jupyterlabInspector.libInspectorMod.InspectorPanel.IOptions) = this()
   }
   /* static members */
   object InspectorPanel {
@@ -43,19 +43,19 @@ object mod {
       */
     @JSImport("@jupyterlab/inspector", "InspectorPanel._generateContentWidget")
     @js.native
-    def _generateContentWidget: js.Any = js.native
-    inline def _generateContentWidget_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_generateContentWidget")(x.asInstanceOf[js.Any])
+    def _generateContentWidget: Any = js.native
+    inline def _generateContentWidget_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_generateContentWidget")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@jupyterlab/inspector", "KernelConnector")
   @js.native
-  class KernelConnector protected ()
-    extends typings.jupyterlabInspector.kernelconnectorMod.KernelConnector {
+  open class KernelConnector protected ()
+    extends typings.jupyterlabInspector.libKernelconnectorMod.KernelConnector {
     /**
       * Create a new kernel connector for inspection requests.
       *
-      * @param options - The instatiation options for the kernel connector.
+      * @param options - The instantiation options for the kernel connector.
       */
-    def this(options: typings.jupyterlabInspector.kernelconnectorMod.KernelConnector.IOptions) = this()
+    def this(options: typings.jupyterlabInspector.libKernelconnectorMod.KernelConnector.IOptions) = this()
   }
 }

@@ -87,9 +87,9 @@ object Import {
   }
   
   /** Represents the result of a operation that deletes imported media items from the source. */
-  @JSGlobal("Windows.Media.Import.PhotoImportDeleteImportedItemsFromSourceResult")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Import.PhotoImportDeleteImportedItemsFromSourceResult")
   @js.native
-  abstract class PhotoImportDeleteImportedItemsFromSourceResult ()
+  open class PhotoImportDeleteImportedItemsFromSourceResult ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Import.PhotoImportDeleteImportedItemsFromSourceResult {
     
@@ -147,16 +147,16 @@ object Import {
   }
   
   /** Represents the result of a operation that finds media items on a source. */
-  @JSGlobal("Windows.Media.Import.PhotoImportFindItemsResult")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Import.PhotoImportFindItemsResult")
   @js.native
-  abstract class PhotoImportFindItemsResult ()
+  open class PhotoImportFindItemsResult ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Import.PhotoImportFindItemsResult
   
   /** Represents the result of a operation that imports media items from the source. */
-  @JSGlobal("Windows.Media.Import.PhotoImportImportItemsResult")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Import.PhotoImportImportItemsResult")
   @js.native
-  abstract class PhotoImportImportItemsResult ()
+  open class PhotoImportImportItemsResult ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Import.PhotoImportImportItemsResult {
     
@@ -241,9 +241,9 @@ object Import {
   }
   
   /** Represents an media item that has been imported from a source. */
-  @JSGlobal("Windows.Media.Import.PhotoImportItem")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Import.PhotoImportItem")
   @js.native
-  abstract class PhotoImportItem ()
+  open class PhotoImportItem ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Import.PhotoImportItem {
     
@@ -297,9 +297,9 @@ object Import {
   }
   
   /** Provides data for the PhotoImportFindItemsResult::ItemImported event. */
-  @JSGlobal("Windows.Media.Import.PhotoImportItemImportedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Import.PhotoImportItemImportedEventArgs")
   @js.native
-  abstract class PhotoImportItemImportedEventArgs ()
+  open class PhotoImportItemImportedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Import.PhotoImportItemImportedEventArgs {
     
@@ -324,9 +324,9 @@ object Import {
   }
   
   /** Provides APIs for determining if photo import is supported on the current device, finding sources from which to import photos, and getting references to any pending photo import operations. */
-  @JSGlobal("Windows.Media.Import.PhotoImportManager")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Import.PhotoImportManager")
   @js.native
-  abstract class PhotoImportManager ()
+  open class PhotoImportManager ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Import.PhotoImportManager
   object PhotoImportManager {
@@ -358,9 +358,9 @@ object Import {
   }
   
   /** Represents an in-progress photo import operation. */
-  @JSGlobal("Windows.Media.Import.PhotoImportOperation")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Import.PhotoImportOperation")
   @js.native
-  abstract class PhotoImportOperation ()
+  open class PhotoImportOperation ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Import.PhotoImportOperation {
     
@@ -407,9 +407,9 @@ object Import {
   }
   
   /** Provides data for the PhotoImportFindItemsResult::SelectionChanged event. */
-  @JSGlobal("Windows.Media.Import.PhotoImportSelectionChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Import.PhotoImportSelectionChangedEventArgs")
   @js.native
-  abstract class PhotoImportSelectionChangedEventArgs ()
+  open class PhotoImportSelectionChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Import.PhotoImportSelectionChangedEventArgs {
     
@@ -419,9 +419,9 @@ object Import {
   }
   
   /** Represents a photo import session with a photo import source. */
-  @JSGlobal("Windows.Media.Import.PhotoImportSession")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Import.PhotoImportSession")
   @js.native
-  abstract class PhotoImportSession ()
+  open class PhotoImportSession ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Import.PhotoImportSession {
     
@@ -464,9 +464,9 @@ object Import {
   }
   
   /** Represents a sidecar file or a sibling file to a PhotoImportItem . */
-  @JSGlobal("Windows.Media.Import.PhotoImportSidecar")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Import.PhotoImportSidecar")
   @js.native
-  abstract class PhotoImportSidecar ()
+  open class PhotoImportSidecar ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Import.PhotoImportSidecar {
     
@@ -484,9 +484,9 @@ object Import {
   }
   
   /** Represents the source device for a photo import session. */
-  @JSGlobal("Windows.Media.Import.PhotoImportSource")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Import.PhotoImportSource")
   @js.native
-  abstract class PhotoImportSource ()
+  open class PhotoImportSource ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Import.PhotoImportSource {
     
@@ -625,9 +625,9 @@ object Import {
   }
   
   /** Represents a storage medium exposed by a photo import source device. */
-  @JSGlobal("Windows.Media.Import.PhotoImportStorageMedium")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Import.PhotoImportStorageMedium")
   @js.native
-  abstract class PhotoImportStorageMedium ()
+  open class PhotoImportStorageMedium ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Import.PhotoImportStorageMedium {
     
@@ -697,9 +697,9 @@ object Import {
   }
   
   /** Represents an imported video segment. */
-  @JSGlobal("Windows.Media.Import.PhotoImportVideoSegment")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Import.PhotoImportVideoSegment")
   @js.native
-  abstract class PhotoImportVideoSegment ()
+  open class PhotoImportVideoSegment ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Import.PhotoImportVideoSegment {
     

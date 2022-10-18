@@ -15,7 +15,7 @@ trait GetSelectedDataOptions extends StObject {
   var asyncContext: js.UndefOr[Any] = js.undefined
   
   /**
-    * Specify whether to get only the visible (that is, filtered-in) data or all the data. Useful when filtering data. 
+    * Specify whether to get only the visible (that is, filtered-in) data or all the data. Useful when filtering data.
     * Use {@link Office.FilterType} or string equivalent. This parameter is ignored in Word documents.
     */
   var filterType: js.UndefOr[FilterType | String] = js.undefined

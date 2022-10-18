@@ -1,10 +1,10 @@
 package typings.xstate.anon
 
 import typings.std.Record
-import typings.xstate.typesMod.ActionObject
-import typings.xstate.typesMod.ActionTypes.NullEvent
-import typings.xstate.typesMod.EventObject
-import typings.xstate.typesMod.Guard
+import typings.xstate.libTypesMod.ActionObject
+import typings.xstate.libTypesMod.ActionTypes.NullEvent
+import typings.xstate.libTypesMod.EventObject
+import typings.xstate.libTypesMod.Guard
 import typings.xstate.xstateStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

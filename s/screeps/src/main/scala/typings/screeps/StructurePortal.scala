@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StructurePortal
   extends StObject
      with Structure[STRUCTURE_PORTAL]
-     with AnyStructure
-     with ConcreteStructure[Any] {
+     with AnyStructure {
   
   /**
     * If this is an inter-room portal, then this property contains a RoomPosition object leading to the point in the destination room.

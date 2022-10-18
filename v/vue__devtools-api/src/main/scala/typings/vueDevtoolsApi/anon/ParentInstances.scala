@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ParentInstances extends StObject {
   
-  var componentInstance: typings.vueDevtoolsApi.componentMod.ComponentInstance
+  var componentInstance: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance
   
-  var parentInstances: js.Array[typings.vueDevtoolsApi.componentMod.ComponentInstance]
+  var parentInstances: js.Array[typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance]
 }
 object ParentInstances {
   
   inline def apply(
-    componentInstance: typings.vueDevtoolsApi.componentMod.ComponentInstance,
-    parentInstances: js.Array[typings.vueDevtoolsApi.componentMod.ComponentInstance]
+    componentInstance: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance,
+    parentInstances: js.Array[typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance]
   ): ParentInstances = {
     val __obj = js.Dynamic.literal(componentInstance = componentInstance.asInstanceOf[js.Any], parentInstances = parentInstances.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParentInstances]
@@ -22,10 +22,10 @@ object ParentInstances {
   
   extension [Self <: ParentInstances](x: Self) {
     
-    inline def setComponentInstance(value: typings.vueDevtoolsApi.componentMod.ComponentInstance): Self = StObject.set(x, "componentInstance", value.asInstanceOf[js.Any])
+    inline def setComponentInstance(value: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance): Self = StObject.set(x, "componentInstance", value.asInstanceOf[js.Any])
     
-    inline def setParentInstances(value: js.Array[typings.vueDevtoolsApi.componentMod.ComponentInstance]): Self = StObject.set(x, "parentInstances", value.asInstanceOf[js.Any])
+    inline def setParentInstances(value: js.Array[typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance]): Self = StObject.set(x, "parentInstances", value.asInstanceOf[js.Any])
     
-    inline def setParentInstancesVarargs(value: typings.vueDevtoolsApi.componentMod.ComponentInstance*): Self = StObject.set(x, "parentInstances", js.Array(value*))
+    inline def setParentInstancesVarargs(value: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance*): Self = StObject.set(x, "parentInstances", js.Array(value*))
   }
 }

@@ -1,14 +1,11 @@
 package typings.tabris.mod
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<keyof Resources, tabris.tabris.Selectable<tabris.tabris.FontValue>> */
-trait FontResourceData[Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof Resources ]: tabris.tabris.Font}
-  */ typings.tabris.tabrisStrings.FontResourceData & TopLevel[Any] */] extends StObject {
+trait FontResourceData[Resources /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Resources ]: tabris.tabris.Font} */ js.Any */] extends StObject {
   
   var build: Selectable[FontValue]
   
@@ -16,16 +13,12 @@ trait FontResourceData[Resources /* <: /* import warning: importer.ImportType#ap
 }
 object FontResourceData {
   
-  inline def apply[Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof Resources ]: tabris.tabris.Font}
-    */ typings.tabris.tabrisStrings.FontResourceData & TopLevel[Any] */](): FontResourceData[Resources] = {
+  inline def apply[Resources /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Resources ]: tabris.tabris.Font} */ js.Any */](): FontResourceData[Resources] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontResourceData[Resources]]
   }
   
-  extension [Self <: FontResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof Resources ]: tabris.tabris.Font}
-    */ typings.tabris.tabrisStrings.FontResourceData & TopLevel[Any] */](x: Self & FontResourceData[Resources]) {
+  extension [Self <: FontResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Resources ]: tabris.tabris.Font} */ js.Any */](x: Self & FontResourceData[Resources]) {
     
     inline def setBuild(value: Selectable[FontValue]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

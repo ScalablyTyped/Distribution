@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDatafusion.gapi.client.datafusion
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait OperationMetadata extends StObject {
     * ENABLING, DISABLING or DELETING
     */
   var additionalStatus: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatafusion.maximMazurokGapiClientDatafusionStrings.OperationMetadata & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** API version used to start the operation. */
@@ -51,9 +48,7 @@ object OperationMetadata {
   extension [Self <: OperationMetadata](x: Self) {
     
     inline def setAdditionalStatus(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatafusion.maximMazurokGapiClientDatafusionStrings.OperationMetadata & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "additionalStatus", value.asInstanceOf[js.Any])
     
     inline def setAdditionalStatusUndefined: Self = StObject.set(x, "additionalStatus", js.undefined)

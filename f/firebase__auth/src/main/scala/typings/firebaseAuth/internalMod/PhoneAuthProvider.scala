@@ -1,17 +1,17 @@
 package typings.firebaseAuth.internalMod
 
+import typings.firebaseAuth.distSrcModelPublicTypesMod.Auth
+import typings.firebaseAuth.distSrcModelPublicTypesMod.UserCredential
 import typings.firebaseAuth.firebaseAuthStrings.phone
-import typings.firebaseAuth.publicTypesMod.Auth
-import typings.firebaseAuth.publicTypesMod.UserCredential
 import typings.firebaseUtil.mod.FirebaseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/auth/dist/cordova/internal", "PhoneAuthProvider")
+@JSImport("@firebase/auth/internal", "PhoneAuthProvider")
 @js.native
 open class PhoneAuthProvider protected ()
-  extends typings.firebaseAuth.cordovaMod.PhoneAuthProvider {
+  extends typings.firebaseAuth.distInternalMod.PhoneAuthProvider {
   /**
     * @param auth - The Firebase {@link Auth} instance in which sign-ins should occur.
     *
@@ -21,17 +21,17 @@ open class PhoneAuthProvider protected ()
 /* static members */
 object PhoneAuthProvider {
   
-  @JSImport("@firebase/auth/dist/cordova/internal", "PhoneAuthProvider")
+  @JSImport("@firebase/auth/internal", "PhoneAuthProvider")
   @js.native
   val ^ : js.Any = js.native
   
   /** Always set to {@link SignInMethod}.PHONE. */
-  @JSImport("@firebase/auth/dist/cordova/internal", "PhoneAuthProvider.PHONE_SIGN_IN_METHOD")
+  @JSImport("@firebase/auth/internal", "PhoneAuthProvider.PHONE_SIGN_IN_METHOD")
   @js.native
   val PHONE_SIGN_IN_METHOD: phone = js.native
   
   /** Always set to {@link ProviderId}.PHONE. */
-  @JSImport("@firebase/auth/dist/cordova/internal", "PhoneAuthProvider.PROVIDER_ID")
+  @JSImport("@firebase/auth/internal", "PhoneAuthProvider.PROVIDER_ID")
   @js.native
   val PROVIDER_ID: phone = js.native
   
@@ -62,7 +62,7 @@ object PhoneAuthProvider {
     *
     * @returns The auth provider credential.
     */
-  inline def credential(verificationId: String, verificationCode: String): typings.firebaseAuth.phoneMod.PhoneAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(verificationId.asInstanceOf[js.Any], verificationCode.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseAuth.phoneMod.PhoneAuthCredential]
+  inline def credential(verificationId: String, verificationCode: String): typings.firebaseAuth.distSrcCoreCredentialsPhoneMod.PhoneAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(verificationId.asInstanceOf[js.Any], verificationCode.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseAuth.distSrcCoreCredentialsPhoneMod.PhoneAuthCredential]
   
   /**
     * Returns an {@link AuthCredential} when passed an error.
@@ -96,15 +96,15 @@ object PhoneAuthProvider {
     *
     * @param error - The error to generate a credential from.
     */
-  inline def credentialFromError(error: FirebaseError): typings.firebaseAuth.coreMod.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromError")(error.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.coreMod.AuthCredential | Null]
+  inline def credentialFromError(error: FirebaseError): typings.firebaseAuth.distSrcCoreMod.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromError")(error.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.distSrcCoreMod.AuthCredential | Null]
   
   /**
     * Generates an {@link AuthCredential} from a {@link UserCredential}.
     * @param userCredential - The user credential.
     */
-  inline def credentialFromResult(userCredential: UserCredential): typings.firebaseAuth.coreMod.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromResult")(userCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.coreMod.AuthCredential | Null]
+  inline def credentialFromResult(userCredential: UserCredential): typings.firebaseAuth.distSrcCoreMod.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromResult")(userCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.distSrcCoreMod.AuthCredential | Null]
   
-  @JSImport("@firebase/auth/dist/cordova/internal", "PhoneAuthProvider.credentialFromTaggedObject")
+  @JSImport("@firebase/auth/internal", "PhoneAuthProvider.credentialFromTaggedObject")
   @js.native
   def credentialFromTaggedObject: Any = js.native
   inline def credentialFromTaggedObject_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("credentialFromTaggedObject")(x.asInstanceOf[js.Any])

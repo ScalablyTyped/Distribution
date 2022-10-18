@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "InitialMass")
 @js.native
 open class InitialMass protected ()
-  extends typings.blackEngine.initialMassMod.InitialMass {
-  def this(values: (Double | typings.blackEngine.floatScatterBaseMod.FloatScatterBase)*) = this()
+  extends typings.blackEngine.particlesModsInitialMassMod.InitialMass {
+  def this(values: (Double | typings.blackEngine.scattersFloatScatterBaseMod.FloatScatterBase)*) = this()
 }

@@ -2,7 +2,7 @@ package typings.fundamentalReact.mod
 
 import typings.fundamentalReact.anon.PartialLinkProps
 import typings.fundamentalReact.anon.WeakValidationMapLinkProp
-import typings.fundamentalReact.linkMod.LinkProps
+import typings.fundamentalReact.libLinkLinkMod.LinkProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

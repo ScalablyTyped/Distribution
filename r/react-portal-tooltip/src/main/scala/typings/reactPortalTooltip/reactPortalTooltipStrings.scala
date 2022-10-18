@@ -1,8 +1,8 @@
 package typings.reactPortalTooltip
 
-import typings.reactPortalTooltip.cardMod.Card.Position
-import typings.reactPortalTooltip.cardMod.Card._Align
-import typings.reactPortalTooltip.cardMod.Card._Arrow
+import typings.reactPortalTooltip.libCardMod.Card.Position
+import typings.reactPortalTooltip.libCardMod.Card._Align
+import typings.reactPortalTooltip.libCardMod.Card._Arrow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

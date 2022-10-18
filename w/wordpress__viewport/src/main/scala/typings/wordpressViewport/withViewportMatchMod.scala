@@ -1,7 +1,6 @@
 package typings.wordpressViewport
 
 import typings.react.mod.ComponentType
-import typings.std.Omit
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,5 +32,11 @@ object withViewportMatchMod {
     * ```
     */
   // prettier-ignore
-  inline def default[T /* <: Record[String, String] */](queries: T): js.Function1[/* component */ ComponentType[Any], ComponentType[Omit[Any, /* keyof T */ String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(queries.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[Any], ComponentType[Omit[Any, /* keyof T */ String]]]]
+  inline def default[T /* <: Record[String, String] */](queries: T): js.Function1[
+    /* component */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer V> ? react.react.ComponentType<std.Omit<V, keyof T>> : never */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(queries.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer V> ? react.react.ComponentType<std.Omit<V, keyof T>> : never */ js.Any
+  ]]
 }

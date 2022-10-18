@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionAssignmentNode
   extends StObject
-     with MathNodeCommon
-     with _MathNode {
+     with MathNode {
   
   var expr: MathNode = js.native
   

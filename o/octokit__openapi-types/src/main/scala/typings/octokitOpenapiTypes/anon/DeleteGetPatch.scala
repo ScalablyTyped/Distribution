@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteGetPatch extends StObject {
   
-  var delete: ParametersPathCommentidResponses304403404
+  var delete: ParametersPathCommentidGistidResponses275
   
-  var get: ParametersPathCommentid
+  var get: ParametersPathCommentidGistid
   
-  var patch: Responses20043404
+  var patch: Responses200278404
 }
 object DeleteGetPatch {
   
   inline def apply(
-    delete: ParametersPathCommentidResponses304403404,
-    get: ParametersPathCommentid,
-    patch: Responses20043404
+    delete: ParametersPathCommentidGistidResponses275,
+    get: ParametersPathCommentidGistid,
+    patch: Responses200278404
   ): DeleteGetPatch = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGetPatch]
@@ -25,10 +25,10 @@ object DeleteGetPatch {
   
   extension [Self <: DeleteGetPatch](x: Self) {
     
-    inline def setDelete(value: ParametersPathCommentidResponses304403404): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: ParametersPathCommentidGistidResponses275): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: ParametersPathCommentid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: ParametersPathCommentidGistid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: Responses20043404): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses200278404): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

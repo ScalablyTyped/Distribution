@@ -4,9 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object easingMod {
   
-  @JSImport("svelte/types/runtime/easing", JSImport.Namespace)
+  @JSImport("svelte/easing", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -45,6 +46,8 @@ object easingMod {
   inline def expoInOut(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("expoInOut")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def expoOut(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("expoOut")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def linear(x: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("linear")(x.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def quadIn(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quadIn")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   

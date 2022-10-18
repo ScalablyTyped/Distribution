@@ -10,7 +10,7 @@ trait PartialInitOptions extends StObject {
   var fs: js.UndefOr[Null | TypeofFS] = js.undefined
   
   var method: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61, starting with typings.admZip.admZipInts.`0x0018`, typings.admZip.admZipInts.`19`, typings.admZip.admZipInts.`16` */ Any
   ] = js.undefined
   
   var noSort: js.UndefOr[Boolean] = js.undefined
@@ -32,7 +32,9 @@ object PartialInitOptions {
     
     inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
     
-    inline def setMethod(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61 */ Any): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61, starting with typings.admZip.admZipInts.`0x0018`, typings.admZip.admZipInts.`19`, typings.admZip.admZipInts.`16` */ Any
+    ): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     

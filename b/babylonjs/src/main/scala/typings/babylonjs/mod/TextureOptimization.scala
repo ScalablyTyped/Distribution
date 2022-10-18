@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param step defines the factor (0.5 by default) used to scale down textures bigger than maximum sized allowed.
   */
 open class TextureOptimization ()
-  extends typings.babylonjs.legacyMod.TextureOptimization {
+  extends typings.babylonjs.legacyLegacyMod.TextureOptimization {
   def this(/**
     * Defines the priority of this optimization (0 by default which means first in the list)
     */

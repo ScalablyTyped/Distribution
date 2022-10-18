@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("jsforce", "Apex")
 @js.native
 open class Apex protected ()
-  extends typings.jsforce.apexMod.Apex {
+  extends typings.jsforce.apiApexMod.Apex {
   def this(conn: typings.jsforce.connectionMod.Connection) = this()
 }

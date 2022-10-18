@@ -1,11 +1,11 @@
 package typings.mendixmodelsdk.mod.javaactions
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenJavaactionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.21.0: deleted
   * In version 6.7.0: introduced
   */
-@JSImport("mendixmodelsdk", "javaactions.ParameterType")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "javaactions.ParameterType")
 @js.native
-abstract class ParameterType protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.javaactions.ParameterType {
+open class ParameterType protected ()
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.javaactions.ParameterType {
   def this(
     model: AbstractModel,
     structureTypeName: String,

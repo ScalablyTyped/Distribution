@@ -1,11 +1,11 @@
 package typings.relayRuntime.anon
 
-import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
-import typings.relayRuntime.resolverFragmentsMod.ArrayKeyType
-import typings.relayRuntime.resolverFragmentsMod.ArrayKeyTypeData
-import typings.relayRuntime.resolverFragmentsMod.KeyType
-import typings.relayRuntime.resolverFragmentsMod.KeyTypeData
-import typings.relayRuntime.resolverFragmentsMod.ResolverContext
+import typings.relayRuntime.libQueryRelayModernGraphQLTagMod.GraphQLTaggedNode
+import typings.relayRuntime.libStoreResolverFragmentsMod.ArrayKeyType
+import typings.relayRuntime.libStoreResolverFragmentsMod.ArrayKeyTypeData
+import typings.relayRuntime.libStoreResolverFragmentsMod.KeyType
+import typings.relayRuntime.libStoreResolverFragmentsMod.KeyTypeData
+import typings.relayRuntime.libStoreResolverFragmentsMod.ResolverContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

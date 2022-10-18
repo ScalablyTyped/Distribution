@@ -13,11 +13,6 @@ import typings.chromeApps.chromeAppsInts.`2`
 import typings.chromeApps.chromeAppsStrings.IMAGE
 import typings.chromeApps.chromeAppsStrings.LIST
 import typings.chromeApps.chromeAppsStrings.PROGRESS
-import typings.chromeApps.chromeAppsStrings.basic_
-import typings.chromeApps.chromeAppsStrings.image_
-import typings.chromeApps.chromeAppsStrings.list_
-import typings.chromeApps.chromeAppsStrings.progress_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,10 +52,7 @@ trait PartialNotificationOption extends StObject {
     ToStringLiteral[
       BASIC, 
       /* keyof chrome-apps.anon.BASIC */ typings.chromeApps.chromeAppsStrings.BASIC | IMAGE | LIST | PROGRESS, 
-      Exclude[
-        /* keyof chrome-apps.anon.BASIC */ typings.chromeApps.chromeAppsStrings.BASIC | IMAGE | LIST | PROGRESS, 
-        basic_ | image_ | list_ | progress_
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  BASIC :'basic',   IMAGE :'image',   LIST :'list',   PROGRESS :'progress'} extends keyof {  BASIC :'basic',   IMAGE :'image',   LIST :'list',   PROGRESS :'progress'} ? std.Exclude<keyof {  BASIC :'basic',   IMAGE :'image',   LIST :'list',   PROGRESS :'progress'}, 'basic' | 'image' | 'list' | 'progress'> : never */ js.Any
     ]
   ] = js.undefined
 }
@@ -137,10 +129,7 @@ object PartialNotificationOption {
       value: ToStringLiteral[
           BASIC, 
           /* keyof chrome-apps.anon.BASIC */ typings.chromeApps.chromeAppsStrings.BASIC | IMAGE | LIST | PROGRESS, 
-          Exclude[
-            /* keyof chrome-apps.anon.BASIC */ typings.chromeApps.chromeAppsStrings.BASIC | IMAGE | LIST | PROGRESS, 
-            basic_ | image_ | list_ | progress_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  BASIC :'basic',   IMAGE :'image',   LIST :'list',   PROGRESS :'progress'} extends keyof {  BASIC :'basic',   IMAGE :'image',   LIST :'list',   PROGRESS :'progress'} ? std.Exclude<keyof {  BASIC :'basic',   IMAGE :'image',   LIST :'list',   PROGRESS :'progress'}, 'basic' | 'image' | 'list' | 'progress'> : never */ js.Any
         ]
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

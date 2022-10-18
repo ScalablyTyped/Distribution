@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientBinaryauthorizationStrings {
   
   @js.native
-  sealed trait Policy extends StObject
-  inline def Policy: Policy = "Policy".asInstanceOf[Policy]
-  
-  @js.native
   sealed trait binaryauthorization extends StObject
   inline def binaryauthorization: binaryauthorization = "binaryauthorization".asInstanceOf[binaryauthorization]
   

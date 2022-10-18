@@ -1,7 +1,6 @@
 package typings.styledTheming
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,14 +25,18 @@ object mod {
   
   type ThemeValueResult = String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FlattenInterpolation<ThemeProps<any>> */ Any)
   
-  type VariantMap[TVariant /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in TVariant ]: styled-theming.styled-theming.ThemeMap}
-    */ typings.styledTheming.styledThemingStrings.VariantMap & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ key in TVariant ]: styled-theming.styled-theming.ThemeMap}
+    }}}
+    */
+  @js.native
+  trait VariantMap[TVariant /* <: String */] extends StObject
   
   type VariantSet[TProp /* <: String */, TVariant /* <: String */] = js.Function1[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in TProp ]:? TVariant}
-    */ /* props */ typings.styledTheming.styledThemingStrings.VariantSet & TopLevel[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ key in TProp ]:? TVariant} */ /* props */ js.Any, 
     String
   ]
 }

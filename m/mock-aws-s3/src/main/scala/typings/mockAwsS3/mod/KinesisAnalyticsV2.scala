@@ -1,6 +1,6 @@
 package typings.mockAwsS3.mod
 
-import typings.awsSdk.kinesisanalyticsv2Mod.ClientConfiguration
+import typings.awsSdk.clientsKinesisanalyticsv2Mod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

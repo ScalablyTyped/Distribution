@@ -36,6 +36,8 @@ trait IElement
   
   def registerFunctionOnPropertyValueChanged(name: String, func: Any, key: String): Unit = js.native
   
+  def registerPropertyChangedHandlers(propertyNames: Any, handler: Any, key: String): Unit = js.native
+  
   def removeElement(el: IElement): Boolean = js.native
   
   var renderWidth: String = js.native

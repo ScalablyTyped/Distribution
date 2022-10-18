@@ -1,8 +1,8 @@
 package typings.tslint
 
-import typings.tslint.runnerMod.Status
-import typings.tslint.strictBooleanExpressionsRuleMod.TypeFailure
-import typings.tslint.strictComparisonsRuleMod.TypeKind
+import typings.tslint.libRulesStrictBooleanExpressionsRuleMod.TypeFailure
+import typings.tslint.libRulesStrictComparisonsRuleMod.TypeKind
+import typings.tslint.libRunnerMod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

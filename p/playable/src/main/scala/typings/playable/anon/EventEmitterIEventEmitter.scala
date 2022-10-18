@@ -1,6 +1,6 @@
 package typings.playable.anon
 
-import typings.playable.eventEmitterTypesMod.IEventEmitter
+import typings.playable.distSrcModulesEventEmitterTypesMod.IEventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

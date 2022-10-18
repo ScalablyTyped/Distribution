@@ -2,7 +2,7 @@ package typings.matrixAppservice
 
 import typings.matrixAppservice.anon.Errcode
 import typings.matrixAppservice.anon.HomeserverToken
-import typings.matrixAppservice.appServiceRegistrationMod.AppServiceOutput
+import typings.matrixAppservice.libAppServiceRegistrationMod.AppServiceOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object mod {
   @JSImport("matrix-appservice", "AppService")
   @js.native
   open class AppService protected ()
-    extends typings.matrixAppservice.appServiceMod.AppService {
+    extends typings.matrixAppservice.libAppServiceMod.AppService {
     /**
       * Construct a new application service.
       * @constructor
@@ -29,7 +29,7 @@ object mod {
   @JSImport("matrix-appservice", "AppServiceRegistration")
   @js.native
   open class AppServiceRegistration ()
-    extends typings.matrixAppservice.appServiceRegistrationMod.AppServiceRegistration {
+    extends typings.matrixAppservice.libAppServiceRegistrationMod.AppServiceRegistration {
     def this(url: String) = this()
   }
   /* static members */
@@ -45,7 +45,7 @@ object mod {
       * @param obj The registration object
       * @return The registration.
       */
-    inline def fromObject(obj: AppServiceOutput): typings.matrixAppservice.appServiceRegistrationMod.AppServiceRegistration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.matrixAppservice.appServiceRegistrationMod.AppServiceRegistration]
+    inline def fromObject(obj: AppServiceOutput): typings.matrixAppservice.libAppServiceRegistrationMod.AppServiceRegistration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.matrixAppservice.libAppServiceRegistrationMod.AppServiceRegistration]
     
     /**
       * Generate a random token.
@@ -57,7 +57,7 @@ object mod {
   @JSImport("matrix-appservice", "AppserviceHttpError")
   @js.native
   open class AppserviceHttpError protected ()
-    extends typings.matrixAppservice.appserviceHttpErrorMod.AppserviceHttpError {
+    extends typings.matrixAppservice.libAppserviceHttpErrorMod.AppserviceHttpError {
     /**
       * Creates a new Appservice HTTP error
       * @param body The error body.

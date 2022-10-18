@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for getting chat capabilities. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatCapabilitiesManager")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.ChatCapabilitiesManager")
 @js.native
-abstract class ChatCapabilitiesManager ()
+open class ChatCapabilitiesManager ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatCapabilitiesManager
 object ChatCapabilitiesManager {

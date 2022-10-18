@@ -10,10 +10,10 @@ Feathers Express framework bindings and REST provider
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/express |
 | Keywords           | feathers, feathers-plugin |
-| # releases         | 37 |
-| # dependents       | 79 |
-| # downloads        | 1092756 |
-| # stars            | 0 |
+| # releases         | 35 |
+| # dependents       | 0.0 |
+| # downloads        | 110952.33333333333 |
+| # stars            | 14155.0 |
 
 ## Links
 - [Homepage](https://feathersjs.com)

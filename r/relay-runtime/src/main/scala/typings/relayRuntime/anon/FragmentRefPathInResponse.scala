@@ -1,7 +1,7 @@
 package typings.relayRuntime.anon
 
-import typings.relayRuntime.readerNodeMod.ReaderRefetchMetadata
-import typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest
+import typings.relayRuntime.libUtilReaderNodeMod.ReaderRefetchMetadata
+import typings.relayRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Clock extends StObject {
   
-  var clock: typings.xstate.interpreterMod.Clock
+  var clock: typings.xstate.libInterpreterMod.Clock
   
   var deferEvents: Boolean
   
@@ -19,7 +19,7 @@ trait Clock extends StObject {
 object Clock {
   
   inline def apply(
-    clock: typings.xstate.interpreterMod.Clock,
+    clock: typings.xstate.libInterpreterMod.Clock,
     deferEvents: Boolean,
     devTools: Boolean,
     execute: Boolean,
@@ -31,7 +31,7 @@ object Clock {
   
   extension [Self <: Clock](x: Self) {
     
-    inline def setClock(value: typings.xstate.interpreterMod.Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
+    inline def setClock(value: typings.xstate.libInterpreterMod.Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     
     inline def setDeferEvents(value: Boolean): Self = StObject.set(x, "deferEvents", value.asInstanceOf[js.Any])
     

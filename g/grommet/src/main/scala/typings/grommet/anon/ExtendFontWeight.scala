@@ -1,8 +1,8 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait ExtendFontWeight extends StObject {
   
   var fontWeight: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Xsmall] = js.undefined
+  var size: js.UndefOr[Xlarge] = js.undefined
 }
 object ExtendFontWeight {
   
@@ -35,7 +35,7 @@ object ExtendFontWeight {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setSize(value: Xsmall): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Xlarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }

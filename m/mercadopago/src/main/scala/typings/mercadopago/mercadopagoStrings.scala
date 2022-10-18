@@ -1,6 +1,6 @@
 package typings.mercadopago
 
-import typings.mercadopago.currencyMod.Currency
+import typings.mercadopago.sharedCurrencyMod.Currency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

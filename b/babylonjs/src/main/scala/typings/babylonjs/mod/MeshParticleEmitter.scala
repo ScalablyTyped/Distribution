@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param mesh defines the mesh to use as source
   */
 open class MeshParticleEmitter ()
-  extends typings.babylonjs.legacyMod.MeshParticleEmitter {
-  def this(mesh: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh]) = this()
+  extends typings.babylonjs.legacyLegacyMod.MeshParticleEmitter {
+  def this(mesh: Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh]) = this()
 }

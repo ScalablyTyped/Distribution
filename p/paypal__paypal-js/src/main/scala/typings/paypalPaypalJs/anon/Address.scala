@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Address extends StObject {
   
   /** The portable international postal address. */
-  var address: typings.paypalPaypalJs.commonsMod.Address
+  var address: typings.paypalPaypalJs.typesApisCommonsMod.Address
   
   /** The name of the party. */
   var name: js.UndefOr[Fullname] = js.undefined
@@ -24,14 +24,14 @@ trait Address extends StObject {
 }
 object Address {
   
-  inline def apply(address: typings.paypalPaypalJs.commonsMod.Address): Address = {
+  inline def apply(address: typings.paypalPaypalJs.typesApisCommonsMod.Address): Address = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
   
   extension [Self <: Address](x: Self) {
     
-    inline def setAddress(value: typings.paypalPaypalJs.commonsMod.Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: typings.paypalPaypalJs.typesApisCommonsMod.Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     inline def setName(value: Fullname): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

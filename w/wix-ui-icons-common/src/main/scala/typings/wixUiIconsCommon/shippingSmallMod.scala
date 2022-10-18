@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsShippingSmallMod.ShippingSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shippingSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/ShippingSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/ShippingSmall", JSImport.Default)
   @js.native
   val default: FC[ShippingSmallProps] = js.native
-  
-  trait ShippingSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object ShippingSmallProps {
-    
-    inline def apply(): ShippingSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ShippingSmallProps]
-    }
-    
-    extension [Self <: ShippingSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[ShippingSmallProps]
   

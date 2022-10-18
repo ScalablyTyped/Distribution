@@ -1,28 +1,28 @@
 package typings.grammarkdown.mod
 
-import typings.grammarkdown.tokensMod.SyntaxKind.CloseBracketToken
-import typings.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
+import typings.grammarkdown.distTokensMod.SyntaxKind.CloseBracketToken
+import typings.grammarkdown.distTokensMod.SyntaxKind.OpenBracketToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Constraints")
 @js.native
-class Constraints protected ()
-  extends typings.grammarkdown.nodesMod.Constraints {
-  def this(openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken]) = this()
+open class Constraints protected ()
+  extends typings.grammarkdown.distNodesMod.Constraints {
+  def this(openBracketToken: typings.grammarkdown.distNodesMod.Token[OpenBracketToken]) = this()
   def this(
-    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
-    elements: js.Array[typings.grammarkdown.nodesMod.Argument]
+    openBracketToken: typings.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    elements: js.Array[typings.grammarkdown.distNodesMod.Argument]
   ) = this()
   def this(
-    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
-    elements: js.Array[typings.grammarkdown.nodesMod.Argument],
-    closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
+    openBracketToken: typings.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    elements: js.Array[typings.grammarkdown.distNodesMod.Argument],
+    closeBracketToken: typings.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
-    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
+    openBracketToken: typings.grammarkdown.distNodesMod.Token[OpenBracketToken],
     elements: Unit,
-    closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
+    closeBracketToken: typings.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
 }

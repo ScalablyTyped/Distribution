@@ -1,7 +1,7 @@
 package typings.rxjs.anon
 
-import typings.rxjs.internalTypesMod.ObservableInput
-import typings.rxjs.timeoutMod.TimeoutInfo
+import typings.rxjs.distTypesInternalOperatorsTimeoutMod.TimeoutInfo
+import typings.rxjs.distTypesInternalTypesMod.ObservableInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

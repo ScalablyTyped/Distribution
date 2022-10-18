@@ -6,27 +6,27 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.ReturnType
-import typings.storybookApi.addonsMod.SubAPI
 import typings.storybookApi.anon.CustomQueryParams
-import typings.storybookApi.layoutMod.Layout
-import typings.storybookApi.layoutMod.SubState
-import typings.storybookApi.layoutMod.UI
-import typings.storybookApi.notificationsMod.Notification
-import typings.storybookApi.refsMod.Refs
-import typings.storybookApi.settingsMod.Settings
-import typings.storybookApi.shortcutsMod.Shortcuts
-import typings.storybookApi.storeMod.Options
-import typings.storybookApi.storeMod.default
-import typings.storybookApi.storiesMod.Item
-import typings.storybookApi.storiesMod.StoriesHash
+import typings.storybookApi.distTs3Dot9LibStoriesMod.Item
+import typings.storybookApi.distTs3Dot9LibStoriesMod.StoriesHash
+import typings.storybookApi.distTs3Dot9ModulesAddonsMod.SubAPI
+import typings.storybookApi.distTs3Dot9ModulesLayoutMod.Layout
+import typings.storybookApi.distTs3Dot9ModulesLayoutMod.SubState
+import typings.storybookApi.distTs3Dot9ModulesLayoutMod.UI
+import typings.storybookApi.distTs3Dot9ModulesNotificationsMod.Notification
+import typings.storybookApi.distTs3Dot9ModulesRefsMod.Refs
+import typings.storybookApi.distTs3Dot9ModulesSettingsMod.Settings
+import typings.storybookApi.distTs3Dot9ModulesShortcutsMod.Shortcuts
+import typings.storybookApi.distTs3Dot9ModulesUrlMod.QueryParams
+import typings.storybookApi.distTs3Dot9ModulesVersionsMod.UnknownEntries
+import typings.storybookApi.distTs3Dot9ModulesVersionsMod.Versions
+import typings.storybookApi.distTs3Dot9StoreMod.Options
+import typings.storybookApi.distTs3Dot9StoreMod.default
 import typings.storybookApi.storybookApiStrings.addons
 import typings.storybookApi.storybookApiStrings.canvas
 import typings.storybookApi.storybookApiStrings.development
 import typings.storybookApi.storybookApiStrings.production
 import typings.storybookApi.storybookApiStrings.sidebar
-import typings.storybookApi.urlMod.QueryParams
-import typings.storybookApi.versionsMod.UnknownEntries
-import typings.storybookApi.versionsMod.Versions
 import typings.storybookChannels.mod.Listener
 import typings.storybookRouter.anon.PartialLocationAncestorOrigins
 import typings.storybookRouter.mod.RouterData
@@ -159,18 +159,18 @@ object mod {
   trait API
     extends StObject
        with SubAPI
-       with typings.storybookApi.channelMod.SubAPI
-       with typings.storybookApi.providerMod.SubAPI
-       with typings.storybookApi.modulesStoriesMod.SubAPI
-       with typings.storybookApi.refsMod.SubAPI
-       with typings.storybookApi.globalsMod.SubAPI
-       with typings.storybookApi.layoutMod.SubAPI
-       with typings.storybookApi.notificationsMod.SubAPI
-       with typings.storybookApi.shortcutsMod.SubAPI
-       with typings.storybookApi.releaseNotesMod.SubAPI
-       with typings.storybookApi.settingsMod.SubAPI
-       with typings.storybookApi.versionsMod.SubAPI
-       with typings.storybookApi.urlMod.SubAPI
+       with typings.storybookApi.distTs3Dot9ModulesChannelMod.SubAPI
+       with typings.storybookApi.distTs3Dot9ModulesProviderMod.SubAPI
+       with typings.storybookApi.distTs3Dot9ModulesStoriesMod.SubAPI
+       with typings.storybookApi.distTs3Dot9ModulesRefsMod.SubAPI
+       with typings.storybookApi.distTs3Dot9ModulesGlobalsMod.SubAPI
+       with typings.storybookApi.distTs3Dot9ModulesLayoutMod.SubAPI
+       with typings.storybookApi.distTs3Dot9ModulesNotificationsMod.SubAPI
+       with typings.storybookApi.distTs3Dot9ModulesShortcutsMod.SubAPI
+       with typings.storybookApi.distTs3Dot9ModulesReleaseNotesMod.SubAPI
+       with typings.storybookApi.distTs3Dot9ModulesSettingsMod.SubAPI
+       with typings.storybookApi.distTs3Dot9ModulesVersionsMod.SubAPI
+       with typings.storybookApi.distTs3Dot9ModulesUrlMod.SubAPI
        with Other
   
   trait ArgType
@@ -301,7 +301,7 @@ object mod {
           ]
         ],
       path: String,
-      provider: typings.storybookApi.providerMod.Provider
+      provider: typings.storybookApi.distTs3Dot9ModulesProviderMod.Provider
     ): ManagerProviderProps = {
       val __obj = js.Dynamic.literal(docsMode = docsMode.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], navigate = navigate.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[ManagerProviderProps]
@@ -374,7 +374,7 @@ object mod {
           ]
         ],
       path: String,
-      provider: typings.storybookApi.providerMod.Provider,
+      provider: typings.storybookApi.distTs3Dot9ModulesProviderMod.Provider,
       state: State,
       store: default
     ): ModuleArgs = {
@@ -404,18 +404,18 @@ object mod {
   
   trait ProviderData extends StObject {
     
-    var provider: typings.storybookApi.providerMod.Provider
+    var provider: typings.storybookApi.distTs3Dot9ModulesProviderMod.Provider
   }
   object ProviderData {
     
-    inline def apply(provider: typings.storybookApi.providerMod.Provider): ProviderData = {
+    inline def apply(provider: typings.storybookApi.distTs3Dot9ModulesProviderMod.Provider): ProviderData = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProviderData]
     }
     
     extension [Self <: ProviderData](x: Self) {
       
-      inline def setProvider(value: typings.storybookApi.providerMod.Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: typings.storybookApi.distTs3Dot9ModulesProviderMod.Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     }
   }
   
@@ -425,15 +425,15 @@ object mod {
   - typings.storybookRouter.mod.RouterData because var conflicts: storyId, viewMode. Inlined location, navigate */ trait State
     extends StObject
        with SubState
-       with typings.storybookApi.modulesStoriesMod.SubState
-       with typings.storybookApi.refsMod.SubState
-       with typings.storybookApi.notificationsMod.SubState
-       with typings.storybookApi.versionsMod.SubState
-       with typings.storybookApi.urlMod.SubState
-       with typings.storybookApi.shortcutsMod.SubState
-       with typings.storybookApi.releaseNotesMod.SubState
-       with typings.storybookApi.settingsMod.SubState
-       with typings.storybookApi.globalsMod.SubState
+       with typings.storybookApi.distTs3Dot9ModulesStoriesMod.SubState
+       with typings.storybookApi.distTs3Dot9ModulesRefsMod.SubState
+       with typings.storybookApi.distTs3Dot9ModulesNotificationsMod.SubState
+       with typings.storybookApi.distTs3Dot9ModulesVersionsMod.SubState
+       with typings.storybookApi.distTs3Dot9ModulesUrlMod.SubState
+       with typings.storybookApi.distTs3Dot9ModulesShortcutsMod.SubState
+       with typings.storybookApi.distTs3Dot9ModulesReleaseNotesMod.SubState
+       with typings.storybookApi.distTs3Dot9ModulesSettingsMod.SubState
+       with typings.storybookApi.distTs3Dot9ModulesGlobalsMod.SubState
        with Other {
     
     var location: PartialLocationAncestorOrigins

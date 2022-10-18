@@ -15,6 +15,8 @@ trait NumberFormatDigitOptions extends StObject {
   var minimumIntegerDigits: js.UndefOr[Double] = js.undefined
   
   var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
+  
+  var roundingPriority: js.UndefOr[RoundingPriorityType] = js.undefined
 }
 object NumberFormatDigitOptions {
   
@@ -44,5 +46,9 @@ object NumberFormatDigitOptions {
     inline def setMinimumSignificantDigits(value: Double): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
     
     inline def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
+    
+    inline def setRoundingPriority(value: RoundingPriorityType): Self = StObject.set(x, "roundingPriority", value.asInstanceOf[js.Any])
+    
+    inline def setRoundingPriorityUndefined: Self = StObject.set(x, "roundingPriority", js.undefined)
   }
 }

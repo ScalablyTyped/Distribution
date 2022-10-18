@@ -14,9 +14,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables an app to receive notifications related to the lifetime of the app. */
-@JSGlobal("Windows.UI.WebUI.WebUIApplication")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUIApplication")
 @js.native
-abstract class WebUIApplication ()
+open class WebUIApplication ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUIApplication
 object WebUIApplication {

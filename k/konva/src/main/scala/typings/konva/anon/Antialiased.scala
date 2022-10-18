@@ -1,7 +1,7 @@
 package typings.konva.anon
 
-import typings.konva.shapeMod.Shape
-import typings.konva.shapeMod.ShapeConfig
+import typings.konva.libShapeMod.Shape
+import typings.konva.libShapeMod.ShapeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

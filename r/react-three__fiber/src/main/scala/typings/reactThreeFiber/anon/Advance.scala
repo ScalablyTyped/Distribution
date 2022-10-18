@@ -1,6 +1,6 @@
 package typings.reactThreeFiber.anon
 
-import typings.reactThreeFiber.storeMod.RootState
+import typings.reactThreeFiber.distDeclarationsSrcCoreStoreMod.RootState
 import typings.webxr.XRFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

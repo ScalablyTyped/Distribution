@@ -1,6 +1,6 @@
 package typings.jupyterlabStatedb
 
-import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
+import typings.luminoCoreutils.typesJsonMod.ReadonlyPartialJSONValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

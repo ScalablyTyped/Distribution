@@ -1,6 +1,5 @@
 package typings.maplibreGl.mod
 
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,293 +7,599 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined maplibre-gl.maplibre-gl.Complete<maplibre-gl.maplibre-gl.MapOptions> */
 trait CompleteMapOptions extends StObject {
   
-  var antialias: js.UndefOr[Boolean] = js.undefined
+  var antialias: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'antialias'> * /
+  {  antialias :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'antialias'>> * /
+  {  antialias :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var attributionControl: js.UndefOr[Boolean] = js.undefined
+  var attributionControl: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'attributionControl'> * /
+  {  attributionControl :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'attributionControl'>> * /
+  {  attributionControl :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var bearing: js.UndefOr[Double] = js.undefined
+  var bearing: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bearing'> * /
+  {  bearing :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bearing'>> * /
+  {  bearing :number} ? number | undefined : number | undefined | undefined */ js.Any
   
-  var bearingSnap: js.UndefOr[Double] = js.undefined
+  var bearingSnap: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bearingSnap'> * /
+  {  bearingSnap :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bearingSnap'>> * /
+  {  bearingSnap :number} ? number | undefined : number | undefined | undefined */ js.Any
   
-  var bounds: js.UndefOr[LngLatBoundsLike] = js.undefined
+  var bounds: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bounds'> * /
+  {  bounds :maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bounds'>> * /
+  {  bounds :maplibre-gl.maplibre-gl.LngLatBoundsLike} ? maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined : maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined | undefined */ js.Any
   
-  var boxZoom: js.UndefOr[Boolean] = js.undefined
+  var boxZoom: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'boxZoom'> * /
+  {  boxZoom :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'boxZoom'>> * /
+  {  boxZoom :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var center: js.UndefOr[LngLatLike] = js.undefined
+  var center: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'center'> * /
+  {  center :maplibre-gl.maplibre-gl.LngLatLike | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'center'>> * /
+  {  center :maplibre-gl.maplibre-gl.LngLatLike} ? maplibre-gl.maplibre-gl.LngLatLike | undefined : maplibre-gl.maplibre-gl.LngLatLike | undefined | undefined */ js.Any
   
-  var clickTolerance: js.UndefOr[Double] = js.undefined
+  var clickTolerance: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'clickTolerance'> * /
+  {  clickTolerance :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'clickTolerance'>> * /
+  {  clickTolerance :number} ? number | undefined : number | undefined | undefined */ js.Any
   
-  var collectResourceTiming: js.UndefOr[Boolean] = js.undefined
+  var collectResourceTiming: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'collectResourceTiming'> * /
+  {  collectResourceTiming :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'collectResourceTiming'>> * /
+  {  collectResourceTiming :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var container: js.UndefOr[HTMLElement | String] = js.undefined
+  var container: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'container'> * /
+  {  container :std.HTMLElement | string} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'container'>> * /
+  {  container :std.HTMLElement | string} ? std.HTMLElement | string : std.HTMLElement | string | undefined */ js.Any
   
-  var cooperativeGestures: js.UndefOr[Boolean | GestureOptions] = js.undefined
+  var cooperativeGestures: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'cooperativeGestures'> * /
+  {  cooperativeGestures :boolean | maplibre-gl.maplibre-gl.GestureOptions | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'cooperativeGestures'>> * /
+  {  cooperativeGestures :boolean | maplibre-gl.maplibre-gl.GestureOptions} ? boolean | maplibre-gl.maplibre-gl.GestureOptions | undefined : boolean | maplibre-gl.maplibre-gl.GestureOptions | undefined | undefined */ js.Any
   
-  var crossSourceCollisions: js.UndefOr[Boolean] = js.undefined
+  var crossSourceCollisions: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'crossSourceCollisions'> * /
+  {  crossSourceCollisions :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'crossSourceCollisions'>> * /
+  {  crossSourceCollisions :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var customAttribution: js.UndefOr[String | js.Array[String]] = js.undefined
+  var customAttribution: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'customAttribution'> * /
+  {  customAttribution :string | std.Array<string> | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'customAttribution'>> * /
+  {  customAttribution :string | std.Array<string>} ? string | std.Array<string> | undefined : string | std.Array<string> | undefined | undefined */ js.Any
   
-  var doubleClickZoom: js.UndefOr[Boolean] = js.undefined
+  var doubleClickZoom: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'doubleClickZoom'> * /
+  {  doubleClickZoom :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'doubleClickZoom'>> * /
+  {  doubleClickZoom :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var dragPan: js.UndefOr[DragPanOptions | Boolean] = js.undefined
+  var dragPan: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'dragPan'> * /
+  {  dragPan :maplibre-gl.maplibre-gl.DragPanOptions | boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'dragPan'>> * /
+  {  dragPan :maplibre-gl.maplibre-gl.DragPanOptions | boolean} ? maplibre-gl.maplibre-gl.DragPanOptions | boolean | undefined : maplibre-gl.maplibre-gl.DragPanOptions | boolean | undefined | undefined */ js.Any
   
-  var dragRotate: js.UndefOr[Boolean] = js.undefined
+  var dragRotate: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'dragRotate'> * /
+  {  dragRotate :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'dragRotate'>> * /
+  {  dragRotate :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var fadeDuration: js.UndefOr[Double] = js.undefined
+  var fadeDuration: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'fadeDuration'> * /
+  {  fadeDuration :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'fadeDuration'>> * /
+  {  fadeDuration :number} ? number | undefined : number | undefined | undefined */ js.Any
   
-  var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined
+  var failIfMajorPerformanceCaveat: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'failIfMajorPerformanceCaveat'> * /
+  {  failIfMajorPerformanceCaveat :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'failIfMajorPerformanceCaveat'>> * /
+  {  failIfMajorPerformanceCaveat :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var fitBoundsOptions: js.UndefOr[js.Object] = js.undefined
+  var fitBoundsOptions: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'fitBoundsOptions'> * /
+  {  fitBoundsOptions :std.Object | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'fitBoundsOptions'>> * /
+  {  fitBoundsOptions :std.Object} ? std.Object | undefined : std.Object | undefined | undefined */ js.Any
   
-  var hash: js.UndefOr[Boolean | String] = js.undefined
+  var hash: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'hash'> * /
+  {  hash :boolean | string | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'hash'>> * /
+  {  hash :boolean | string} ? boolean | string | undefined : boolean | string | undefined | undefined */ js.Any
   
-  var interactive: js.UndefOr[Boolean] = js.undefined
+  var interactive: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'interactive'> * /
+  {  interactive :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'interactive'>> * /
+  {  interactive :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var keyboard: js.UndefOr[Boolean] = js.undefined
+  var keyboard: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'keyboard'> * /
+  {  keyboard :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'keyboard'>> * /
+  {  keyboard :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var localIdeographFontFamily: js.UndefOr[String] = js.undefined
+  var localIdeographFontFamily: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'localIdeographFontFamily'> * /
+  {  localIdeographFontFamily :string | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'localIdeographFontFamily'>> * /
+  {  localIdeographFontFamily :string} ? string | undefined : string | undefined | undefined */ js.Any
   
-  var locale: js.UndefOr[Any] = js.undefined
+  var locale: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'locale'> * /
+  {  locale :any | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'locale'>> * /
+  {  locale :any} ? any | undefined : any | undefined | undefined */ js.Any
   
-  var logoPosition: js.UndefOr[ControlPosition] = js.undefined
+  var logoPosition: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'logoPosition'> * /
+  {  logoPosition :maplibre-gl.maplibre-gl.ControlPosition | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'logoPosition'>> * /
+  {  logoPosition :maplibre-gl.maplibre-gl.ControlPosition} ? maplibre-gl.maplibre-gl.ControlPosition | undefined : maplibre-gl.maplibre-gl.ControlPosition | undefined | undefined */ js.Any
   
-  var maplibreLogo: js.UndefOr[Boolean] = js.undefined
+  var maplibreLogo: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maplibreLogo'> * /
+  {  maplibreLogo :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maplibreLogo'>> * /
+  {  maplibreLogo :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var maxBounds: js.UndefOr[LngLatBoundsLike] = js.undefined
+  var maxBounds: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxBounds'> * /
+  {  maxBounds :maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxBounds'>> * /
+  {  maxBounds :maplibre-gl.maplibre-gl.LngLatBoundsLike} ? maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined : maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined | undefined */ js.Any
   
-  var maxPitch: js.UndefOr[Double | Null] = js.undefined
+  var maxPitch: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxPitch'> * /
+  {  maxPitch :number | null | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxPitch'>> * /
+  {  maxPitch :number} ? number | null | undefined : number | null | undefined | undefined */ js.Any
   
-  var maxTileCacheSize: js.UndefOr[Double] = js.undefined
+  var maxTileCacheSize: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxTileCacheSize'> * /
+  {  maxTileCacheSize :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxTileCacheSize'>> * /
+  {  maxTileCacheSize :number} ? number | undefined : number | undefined | undefined */ js.Any
   
-  var maxZoom: js.UndefOr[Double | Null] = js.undefined
+  var maxZoom: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxZoom'> * /
+  {  maxZoom :number | null | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxZoom'>> * /
+  {  maxZoom :number} ? number | null | undefined : number | null | undefined | undefined */ js.Any
   
-  var minPitch: js.UndefOr[Double | Null] = js.undefined
+  var minPitch: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'minPitch'> * /
+  {  minPitch :number | null | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'minPitch'>> * /
+  {  minPitch :number} ? number | null | undefined : number | null | undefined | undefined */ js.Any
   
-  var minZoom: js.UndefOr[Double | Null] = js.undefined
+  var minZoom: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'minZoom'> * /
+  {  minZoom :number | null | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'minZoom'>> * /
+  {  minZoom :number} ? number | null | undefined : number | null | undefined | undefined */ js.Any
   
-  var pitch: js.UndefOr[Double] = js.undefined
+  var pitch: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pitch'> * /
+  {  pitch :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pitch'>> * /
+  {  pitch :number} ? number | undefined : number | undefined | undefined */ js.Any
   
-  var pitchWithRotate: js.UndefOr[Boolean] = js.undefined
+  var pitchWithRotate: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pitchWithRotate'> * /
+  {  pitchWithRotate :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pitchWithRotate'>> * /
+  {  pitchWithRotate :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var pixelRatio: js.UndefOr[Double] = js.undefined
+  var pixelRatio: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pixelRatio'> * /
+  {  pixelRatio :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pixelRatio'>> * /
+  {  pixelRatio :number} ? number | undefined : number | undefined | undefined */ js.Any
   
-  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
+  var preserveDrawingBuffer: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'preserveDrawingBuffer'> * /
+  {  preserveDrawingBuffer :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'preserveDrawingBuffer'>> * /
+  {  preserveDrawingBuffer :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var refreshExpiredTiles: js.UndefOr[Boolean] = js.undefined
+  var refreshExpiredTiles: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'refreshExpiredTiles'> * /
+  {  refreshExpiredTiles :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'refreshExpiredTiles'>> * /
+  {  refreshExpiredTiles :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var renderWorldCopies: js.UndefOr[Boolean] = js.undefined
+  var renderWorldCopies: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'renderWorldCopies'> * /
+  {  renderWorldCopies :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'renderWorldCopies'>> * /
+  {  renderWorldCopies :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var scrollZoom: js.UndefOr[Boolean] = js.undefined
+  var scrollZoom: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'scrollZoom'> * /
+  {  scrollZoom :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'scrollZoom'>> * /
+  {  scrollZoom :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var style: js.UndefOr[StyleSpecification | String] = js.undefined
+  var style: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'style'> * /
+  {  style :maplibre-gl.maplibre-gl.StyleSpecification | string} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'style'>> * /
+  {  style :maplibre-gl.maplibre-gl.StyleSpecification | string} ? maplibre-gl.maplibre-gl.StyleSpecification | string : maplibre-gl.maplibre-gl.StyleSpecification | string | undefined */ js.Any
   
-  var touchPitch: js.UndefOr[Boolean] = js.undefined
+  var touchPitch: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'touchPitch'> * /
+  {  touchPitch :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'touchPitch'>> * /
+  {  touchPitch :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var touchZoomRotate: js.UndefOr[Boolean] = js.undefined
+  var touchZoomRotate: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'touchZoomRotate'> * /
+  {  touchZoomRotate :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'touchZoomRotate'>> * /
+  {  touchZoomRotate :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var trackResize: js.UndefOr[Boolean] = js.undefined
+  var trackResize: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'trackResize'> * /
+  {  trackResize :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'trackResize'>> * /
+  {  trackResize :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
   
-  var transformRequest: js.UndefOr[RequestTransformFunction] = js.undefined
+  var transformRequest: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'transformRequest'> * /
+  {  transformRequest :maplibre-gl.maplibre-gl.RequestTransformFunction | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'transformRequest'>> * /
+  {readonly transformRequest (url : string): maplibre-gl.maplibre-gl.RequestParameters, readonly transformRequest (url : string, resourceType : maplibre-gl.maplibre-gl.ResourceTypeEnum): maplibre-gl.maplibre-gl.RequestParameters,   transformRequest :maplibre-gl.maplibre-gl.RequestTransformFunction} ? maplibre-gl.maplibre-gl.RequestTransformFunction | undefined : maplibre-gl.maplibre-gl.RequestTransformFunction | undefined | undefined */ js.Any
   
-  var zoom: js.UndefOr[Double] = js.undefined
+  var zoom: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'zoom'> * /
+  {  zoom :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'zoom'>> * /
+  {  zoom :number} ? number | undefined : number | undefined | undefined */ js.Any
 }
 object CompleteMapOptions {
   
-  inline def apply(): CompleteMapOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    antialias: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'antialias'> * /
+  {  antialias :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'antialias'>> * /
+  {  antialias :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    attributionControl: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'attributionControl'> * /
+  {  attributionControl :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'attributionControl'>> * /
+  {  attributionControl :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    bearing: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bearing'> * /
+  {  bearing :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bearing'>> * /
+  {  bearing :number} ? number | undefined : number | undefined | undefined */ js.Any,
+    bearingSnap: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bearingSnap'> * /
+  {  bearingSnap :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bearingSnap'>> * /
+  {  bearingSnap :number} ? number | undefined : number | undefined | undefined */ js.Any,
+    bounds: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bounds'> * /
+  {  bounds :maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bounds'>> * /
+  {  bounds :maplibre-gl.maplibre-gl.LngLatBoundsLike} ? maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined : maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined | undefined */ js.Any,
+    boxZoom: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'boxZoom'> * /
+  {  boxZoom :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'boxZoom'>> * /
+  {  boxZoom :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    center: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'center'> * /
+  {  center :maplibre-gl.maplibre-gl.LngLatLike | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'center'>> * /
+  {  center :maplibre-gl.maplibre-gl.LngLatLike} ? maplibre-gl.maplibre-gl.LngLatLike | undefined : maplibre-gl.maplibre-gl.LngLatLike | undefined | undefined */ js.Any,
+    clickTolerance: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'clickTolerance'> * /
+  {  clickTolerance :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'clickTolerance'>> * /
+  {  clickTolerance :number} ? number | undefined : number | undefined | undefined */ js.Any,
+    collectResourceTiming: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'collectResourceTiming'> * /
+  {  collectResourceTiming :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'collectResourceTiming'>> * /
+  {  collectResourceTiming :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    container: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'container'> * /
+  {  container :std.HTMLElement | string} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'container'>> * /
+  {  container :std.HTMLElement | string} ? std.HTMLElement | string : std.HTMLElement | string | undefined */ js.Any,
+    cooperativeGestures: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'cooperativeGestures'> * /
+  {  cooperativeGestures :boolean | maplibre-gl.maplibre-gl.GestureOptions | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'cooperativeGestures'>> * /
+  {  cooperativeGestures :boolean | maplibre-gl.maplibre-gl.GestureOptions} ? boolean | maplibre-gl.maplibre-gl.GestureOptions | undefined : boolean | maplibre-gl.maplibre-gl.GestureOptions | undefined | undefined */ js.Any,
+    crossSourceCollisions: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'crossSourceCollisions'> * /
+  {  crossSourceCollisions :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'crossSourceCollisions'>> * /
+  {  crossSourceCollisions :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    customAttribution: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'customAttribution'> * /
+  {  customAttribution :string | std.Array<string> | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'customAttribution'>> * /
+  {  customAttribution :string | std.Array<string>} ? string | std.Array<string> | undefined : string | std.Array<string> | undefined | undefined */ js.Any,
+    doubleClickZoom: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'doubleClickZoom'> * /
+  {  doubleClickZoom :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'doubleClickZoom'>> * /
+  {  doubleClickZoom :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    dragPan: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'dragPan'> * /
+  {  dragPan :maplibre-gl.maplibre-gl.DragPanOptions | boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'dragPan'>> * /
+  {  dragPan :maplibre-gl.maplibre-gl.DragPanOptions | boolean} ? maplibre-gl.maplibre-gl.DragPanOptions | boolean | undefined : maplibre-gl.maplibre-gl.DragPanOptions | boolean | undefined | undefined */ js.Any,
+    dragRotate: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'dragRotate'> * /
+  {  dragRotate :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'dragRotate'>> * /
+  {  dragRotate :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    fadeDuration: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'fadeDuration'> * /
+  {  fadeDuration :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'fadeDuration'>> * /
+  {  fadeDuration :number} ? number | undefined : number | undefined | undefined */ js.Any,
+    failIfMajorPerformanceCaveat: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'failIfMajorPerformanceCaveat'> * /
+  {  failIfMajorPerformanceCaveat :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'failIfMajorPerformanceCaveat'>> * /
+  {  failIfMajorPerformanceCaveat :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    fitBoundsOptions: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'fitBoundsOptions'> * /
+  {  fitBoundsOptions :std.Object | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'fitBoundsOptions'>> * /
+  {  fitBoundsOptions :std.Object} ? std.Object | undefined : std.Object | undefined | undefined */ js.Any,
+    hash: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'hash'> * /
+  {  hash :boolean | string | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'hash'>> * /
+  {  hash :boolean | string} ? boolean | string | undefined : boolean | string | undefined | undefined */ js.Any,
+    interactive: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'interactive'> * /
+  {  interactive :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'interactive'>> * /
+  {  interactive :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    keyboard: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'keyboard'> * /
+  {  keyboard :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'keyboard'>> * /
+  {  keyboard :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    localIdeographFontFamily: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'localIdeographFontFamily'> * /
+  {  localIdeographFontFamily :string | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'localIdeographFontFamily'>> * /
+  {  localIdeographFontFamily :string} ? string | undefined : string | undefined | undefined */ js.Any,
+    locale: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'locale'> * /
+  {  locale :any | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'locale'>> * /
+  {  locale :any} ? any | undefined : any | undefined | undefined */ js.Any,
+    logoPosition: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'logoPosition'> * /
+  {  logoPosition :maplibre-gl.maplibre-gl.ControlPosition | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'logoPosition'>> * /
+  {  logoPosition :maplibre-gl.maplibre-gl.ControlPosition} ? maplibre-gl.maplibre-gl.ControlPosition | undefined : maplibre-gl.maplibre-gl.ControlPosition | undefined | undefined */ js.Any,
+    maplibreLogo: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maplibreLogo'> * /
+  {  maplibreLogo :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maplibreLogo'>> * /
+  {  maplibreLogo :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    maxBounds: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxBounds'> * /
+  {  maxBounds :maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxBounds'>> * /
+  {  maxBounds :maplibre-gl.maplibre-gl.LngLatBoundsLike} ? maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined : maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined | undefined */ js.Any,
+    maxPitch: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxPitch'> * /
+  {  maxPitch :number | null | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxPitch'>> * /
+  {  maxPitch :number} ? number | null | undefined : number | null | undefined | undefined */ js.Any,
+    maxTileCacheSize: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxTileCacheSize'> * /
+  {  maxTileCacheSize :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxTileCacheSize'>> * /
+  {  maxTileCacheSize :number} ? number | undefined : number | undefined | undefined */ js.Any,
+    maxZoom: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxZoom'> * /
+  {  maxZoom :number | null | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxZoom'>> * /
+  {  maxZoom :number} ? number | null | undefined : number | null | undefined | undefined */ js.Any,
+    minPitch: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'minPitch'> * /
+  {  minPitch :number | null | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'minPitch'>> * /
+  {  minPitch :number} ? number | null | undefined : number | null | undefined | undefined */ js.Any,
+    minZoom: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'minZoom'> * /
+  {  minZoom :number | null | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'minZoom'>> * /
+  {  minZoom :number} ? number | null | undefined : number | null | undefined | undefined */ js.Any,
+    pitch: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pitch'> * /
+  {  pitch :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pitch'>> * /
+  {  pitch :number} ? number | undefined : number | undefined | undefined */ js.Any,
+    pitchWithRotate: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pitchWithRotate'> * /
+  {  pitchWithRotate :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pitchWithRotate'>> * /
+  {  pitchWithRotate :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    pixelRatio: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pixelRatio'> * /
+  {  pixelRatio :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pixelRatio'>> * /
+  {  pixelRatio :number} ? number | undefined : number | undefined | undefined */ js.Any,
+    preserveDrawingBuffer: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'preserveDrawingBuffer'> * /
+  {  preserveDrawingBuffer :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'preserveDrawingBuffer'>> * /
+  {  preserveDrawingBuffer :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    refreshExpiredTiles: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'refreshExpiredTiles'> * /
+  {  refreshExpiredTiles :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'refreshExpiredTiles'>> * /
+  {  refreshExpiredTiles :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    renderWorldCopies: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'renderWorldCopies'> * /
+  {  renderWorldCopies :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'renderWorldCopies'>> * /
+  {  renderWorldCopies :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    scrollZoom: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'scrollZoom'> * /
+  {  scrollZoom :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'scrollZoom'>> * /
+  {  scrollZoom :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    style: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'style'> * /
+  {  style :maplibre-gl.maplibre-gl.StyleSpecification | string} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'style'>> * /
+  {  style :maplibre-gl.maplibre-gl.StyleSpecification | string} ? maplibre-gl.maplibre-gl.StyleSpecification | string : maplibre-gl.maplibre-gl.StyleSpecification | string | undefined */ js.Any,
+    touchPitch: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'touchPitch'> * /
+  {  touchPitch :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'touchPitch'>> * /
+  {  touchPitch :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    touchZoomRotate: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'touchZoomRotate'> * /
+  {  touchZoomRotate :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'touchZoomRotate'>> * /
+  {  touchZoomRotate :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    trackResize: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'trackResize'> * /
+  {  trackResize :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'trackResize'>> * /
+  {  trackResize :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any,
+    transformRequest: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'transformRequest'> * /
+  {  transformRequest :maplibre-gl.maplibre-gl.RequestTransformFunction | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'transformRequest'>> * /
+  {readonly transformRequest (url : string): maplibre-gl.maplibre-gl.RequestParameters, readonly transformRequest (url : string, resourceType : maplibre-gl.maplibre-gl.ResourceTypeEnum): maplibre-gl.maplibre-gl.RequestParameters,   transformRequest :maplibre-gl.maplibre-gl.RequestTransformFunction} ? maplibre-gl.maplibre-gl.RequestTransformFunction | undefined : maplibre-gl.maplibre-gl.RequestTransformFunction | undefined | undefined */ js.Any,
+    zoom: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'zoom'> * /
+  {  zoom :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'zoom'>> * /
+  {  zoom :number} ? number | undefined : number | undefined | undefined */ js.Any
+  ): CompleteMapOptions = {
+    val __obj = js.Dynamic.literal(antialias = antialias.asInstanceOf[js.Any], attributionControl = attributionControl.asInstanceOf[js.Any], bearing = bearing.asInstanceOf[js.Any], bearingSnap = bearingSnap.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], boxZoom = boxZoom.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], clickTolerance = clickTolerance.asInstanceOf[js.Any], collectResourceTiming = collectResourceTiming.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], cooperativeGestures = cooperativeGestures.asInstanceOf[js.Any], crossSourceCollisions = crossSourceCollisions.asInstanceOf[js.Any], customAttribution = customAttribution.asInstanceOf[js.Any], doubleClickZoom = doubleClickZoom.asInstanceOf[js.Any], dragPan = dragPan.asInstanceOf[js.Any], dragRotate = dragRotate.asInstanceOf[js.Any], fadeDuration = fadeDuration.asInstanceOf[js.Any], failIfMajorPerformanceCaveat = failIfMajorPerformanceCaveat.asInstanceOf[js.Any], fitBoundsOptions = fitBoundsOptions.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], interactive = interactive.asInstanceOf[js.Any], keyboard = keyboard.asInstanceOf[js.Any], localIdeographFontFamily = localIdeographFontFamily.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], logoPosition = logoPosition.asInstanceOf[js.Any], maplibreLogo = maplibreLogo.asInstanceOf[js.Any], maxBounds = maxBounds.asInstanceOf[js.Any], maxPitch = maxPitch.asInstanceOf[js.Any], maxTileCacheSize = maxTileCacheSize.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], minPitch = minPitch.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], pitch = pitch.asInstanceOf[js.Any], pitchWithRotate = pitchWithRotate.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], preserveDrawingBuffer = preserveDrawingBuffer.asInstanceOf[js.Any], refreshExpiredTiles = refreshExpiredTiles.asInstanceOf[js.Any], renderWorldCopies = renderWorldCopies.asInstanceOf[js.Any], scrollZoom = scrollZoom.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], touchPitch = touchPitch.asInstanceOf[js.Any], touchZoomRotate = touchZoomRotate.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], transformRequest = transformRequest.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompleteMapOptions]
   }
   
   extension [Self <: CompleteMapOptions](x: Self) {
     
-    inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
-    
-    inline def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
-    
-    inline def setAttributionControl(value: Boolean): Self = StObject.set(x, "attributionControl", value.asInstanceOf[js.Any])
-    
-    inline def setAttributionControlUndefined: Self = StObject.set(x, "attributionControl", js.undefined)
-    
-    inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
-    
-    inline def setBearingSnap(value: Double): Self = StObject.set(x, "bearingSnap", value.asInstanceOf[js.Any])
-    
-    inline def setBearingSnapUndefined: Self = StObject.set(x, "bearingSnap", js.undefined)
-    
-    inline def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
-    
-    inline def setBounds(value: LngLatBoundsLike): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
-    
-    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
-    
-    inline def setBoxZoom(value: Boolean): Self = StObject.set(x, "boxZoom", value.asInstanceOf[js.Any])
-    
-    inline def setBoxZoomUndefined: Self = StObject.set(x, "boxZoom", js.undefined)
-    
-    inline def setCenter(value: LngLatLike): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
-    
-    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
-    
-    inline def setClickTolerance(value: Double): Self = StObject.set(x, "clickTolerance", value.asInstanceOf[js.Any])
-    
-    inline def setClickToleranceUndefined: Self = StObject.set(x, "clickTolerance", js.undefined)
-    
-    inline def setCollectResourceTiming(value: Boolean): Self = StObject.set(x, "collectResourceTiming", value.asInstanceOf[js.Any])
-    
-    inline def setCollectResourceTimingUndefined: Self = StObject.set(x, "collectResourceTiming", js.undefined)
-    
-    inline def setContainer(value: HTMLElement | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
-    
-    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
-    
-    inline def setCooperativeGestures(value: Boolean | GestureOptions): Self = StObject.set(x, "cooperativeGestures", value.asInstanceOf[js.Any])
-    
-    inline def setCooperativeGesturesUndefined: Self = StObject.set(x, "cooperativeGestures", js.undefined)
-    
-    inline def setCrossSourceCollisions(value: Boolean): Self = StObject.set(x, "crossSourceCollisions", value.asInstanceOf[js.Any])
-    
-    inline def setCrossSourceCollisionsUndefined: Self = StObject.set(x, "crossSourceCollisions", js.undefined)
-    
-    inline def setCustomAttribution(value: String | js.Array[String]): Self = StObject.set(x, "customAttribution", value.asInstanceOf[js.Any])
-    
-    inline def setCustomAttributionUndefined: Self = StObject.set(x, "customAttribution", js.undefined)
-    
-    inline def setCustomAttributionVarargs(value: String*): Self = StObject.set(x, "customAttribution", js.Array(value*))
-    
-    inline def setDoubleClickZoom(value: Boolean): Self = StObject.set(x, "doubleClickZoom", value.asInstanceOf[js.Any])
-    
-    inline def setDoubleClickZoomUndefined: Self = StObject.set(x, "doubleClickZoom", js.undefined)
-    
-    inline def setDragPan(value: DragPanOptions | Boolean): Self = StObject.set(x, "dragPan", value.asInstanceOf[js.Any])
-    
-    inline def setDragPanUndefined: Self = StObject.set(x, "dragPan", js.undefined)
-    
-    inline def setDragRotate(value: Boolean): Self = StObject.set(x, "dragRotate", value.asInstanceOf[js.Any])
-    
-    inline def setDragRotateUndefined: Self = StObject.set(x, "dragRotate", js.undefined)
-    
-    inline def setFadeDuration(value: Double): Self = StObject.set(x, "fadeDuration", value.asInstanceOf[js.Any])
-    
-    inline def setFadeDurationUndefined: Self = StObject.set(x, "fadeDuration", js.undefined)
-    
-    inline def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
-    
-    inline def setFailIfMajorPerformanceCaveatUndefined: Self = StObject.set(x, "failIfMajorPerformanceCaveat", js.undefined)
-    
-    inline def setFitBoundsOptions(value: js.Object): Self = StObject.set(x, "fitBoundsOptions", value.asInstanceOf[js.Any])
-    
-    inline def setFitBoundsOptionsUndefined: Self = StObject.set(x, "fitBoundsOptions", js.undefined)
-    
-    inline def setHash(value: Boolean | String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
-    
-    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
-    
-    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
-    
-    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
-    
-    inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
-    
-    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
-    
-    inline def setLocalIdeographFontFamily(value: String): Self = StObject.set(x, "localIdeographFontFamily", value.asInstanceOf[js.Any])
-    
-    inline def setLocalIdeographFontFamilyUndefined: Self = StObject.set(x, "localIdeographFontFamily", js.undefined)
-    
-    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
-    
-    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
-    
-    inline def setLogoPosition(value: ControlPosition): Self = StObject.set(x, "logoPosition", value.asInstanceOf[js.Any])
-    
-    inline def setLogoPositionUndefined: Self = StObject.set(x, "logoPosition", js.undefined)
-    
-    inline def setMaplibreLogo(value: Boolean): Self = StObject.set(x, "maplibreLogo", value.asInstanceOf[js.Any])
-    
-    inline def setMaplibreLogoUndefined: Self = StObject.set(x, "maplibreLogo", js.undefined)
-    
-    inline def setMaxBounds(value: LngLatBoundsLike): Self = StObject.set(x, "maxBounds", value.asInstanceOf[js.Any])
-    
-    inline def setMaxBoundsUndefined: Self = StObject.set(x, "maxBounds", js.undefined)
-    
-    inline def setMaxPitch(value: Double): Self = StObject.set(x, "maxPitch", value.asInstanceOf[js.Any])
-    
-    inline def setMaxPitchNull: Self = StObject.set(x, "maxPitch", null)
-    
-    inline def setMaxPitchUndefined: Self = StObject.set(x, "maxPitch", js.undefined)
-    
-    inline def setMaxTileCacheSize(value: Double): Self = StObject.set(x, "maxTileCacheSize", value.asInstanceOf[js.Any])
-    
-    inline def setMaxTileCacheSizeUndefined: Self = StObject.set(x, "maxTileCacheSize", js.undefined)
-    
-    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
-    
-    inline def setMaxZoomNull: Self = StObject.set(x, "maxZoom", null)
-    
-    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
-    
-    inline def setMinPitch(value: Double): Self = StObject.set(x, "minPitch", value.asInstanceOf[js.Any])
-    
-    inline def setMinPitchNull: Self = StObject.set(x, "minPitch", null)
-    
-    inline def setMinPitchUndefined: Self = StObject.set(x, "minPitch", js.undefined)
-    
-    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
-    
-    inline def setMinZoomNull: Self = StObject.set(x, "minZoom", null)
-    
-    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
-    
-    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
-    
-    inline def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
-    
-    inline def setPitchWithRotate(value: Boolean): Self = StObject.set(x, "pitchWithRotate", value.asInstanceOf[js.Any])
-    
-    inline def setPitchWithRotateUndefined: Self = StObject.set(x, "pitchWithRotate", js.undefined)
-    
-    inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
-    
-    inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
-    
-    inline def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
-    
-    inline def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
-    
-    inline def setRefreshExpiredTiles(value: Boolean): Self = StObject.set(x, "refreshExpiredTiles", value.asInstanceOf[js.Any])
-    
-    inline def setRefreshExpiredTilesUndefined: Self = StObject.set(x, "refreshExpiredTiles", js.undefined)
-    
-    inline def setRenderWorldCopies(value: Boolean): Self = StObject.set(x, "renderWorldCopies", value.asInstanceOf[js.Any])
-    
-    inline def setRenderWorldCopiesUndefined: Self = StObject.set(x, "renderWorldCopies", js.undefined)
-    
-    inline def setScrollZoom(value: Boolean): Self = StObject.set(x, "scrollZoom", value.asInstanceOf[js.Any])
-    
-    inline def setScrollZoomUndefined: Self = StObject.set(x, "scrollZoom", js.undefined)
-    
-    inline def setStyle(value: StyleSpecification | String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-    
-    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
-    
-    inline def setTouchPitch(value: Boolean): Self = StObject.set(x, "touchPitch", value.asInstanceOf[js.Any])
-    
-    inline def setTouchPitchUndefined: Self = StObject.set(x, "touchPitch", js.undefined)
-    
-    inline def setTouchZoomRotate(value: Boolean): Self = StObject.set(x, "touchZoomRotate", value.asInstanceOf[js.Any])
-    
-    inline def setTouchZoomRotateUndefined: Self = StObject.set(x, "touchZoomRotate", js.undefined)
-    
-    inline def setTrackResize(value: Boolean): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
-    
-    inline def setTrackResizeUndefined: Self = StObject.set(x, "trackResize", js.undefined)
-    
-    inline def setTransformRequest(value: (/* url */ String, /* resourceType */ js.UndefOr[ResourceTypeEnum]) => RequestParameters): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
-    
-    inline def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
-    
-    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
-    
-    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setAntialias(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'antialias'> * /
+    {  antialias :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'antialias'>> * /
+    {  antialias :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
+    
+    inline def setAttributionControl(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'attributionControl'> * /
+    {  attributionControl :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'attributionControl'>> * /
+    {  attributionControl :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "attributionControl", value.asInstanceOf[js.Any])
+    
+    inline def setBearing(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bearing'> * /
+    {  bearing :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bearing'>> * /
+    {  bearing :number} ? number | undefined : number | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
+    
+    inline def setBearingSnap(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bearingSnap'> * /
+    {  bearingSnap :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bearingSnap'>> * /
+    {  bearingSnap :number} ? number | undefined : number | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "bearingSnap", value.asInstanceOf[js.Any])
+    
+    inline def setBounds(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bounds'> * /
+    {  bounds :maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'bounds'>> * /
+    {  bounds :maplibre-gl.maplibre-gl.LngLatBoundsLike} ? maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined : maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    
+    inline def setBoxZoom(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'boxZoom'> * /
+    {  boxZoom :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'boxZoom'>> * /
+    {  boxZoom :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "boxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setCenter(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'center'> * /
+    {  center :maplibre-gl.maplibre-gl.LngLatLike | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'center'>> * /
+    {  center :maplibre-gl.maplibre-gl.LngLatLike} ? maplibre-gl.maplibre-gl.LngLatLike | undefined : maplibre-gl.maplibre-gl.LngLatLike | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    
+    inline def setClickTolerance(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'clickTolerance'> * /
+    {  clickTolerance :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'clickTolerance'>> * /
+    {  clickTolerance :number} ? number | undefined : number | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "clickTolerance", value.asInstanceOf[js.Any])
+    
+    inline def setCollectResourceTiming(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'collectResourceTiming'> * /
+    {  collectResourceTiming :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'collectResourceTiming'>> * /
+    {  collectResourceTiming :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "collectResourceTiming", value.asInstanceOf[js.Any])
+    
+    inline def setContainer(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'container'> * /
+    {  container :std.HTMLElement | string} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'container'>> * /
+    {  container :std.HTMLElement | string} ? std.HTMLElement | string : std.HTMLElement | string | undefined */ js.Any
+    ): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setCooperativeGestures(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'cooperativeGestures'> * /
+    {  cooperativeGestures :boolean | maplibre-gl.maplibre-gl.GestureOptions | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'cooperativeGestures'>> * /
+    {  cooperativeGestures :boolean | maplibre-gl.maplibre-gl.GestureOptions} ? boolean | maplibre-gl.maplibre-gl.GestureOptions | undefined : boolean | maplibre-gl.maplibre-gl.GestureOptions | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "cooperativeGestures", value.asInstanceOf[js.Any])
+    
+    inline def setCrossSourceCollisions(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'crossSourceCollisions'> * /
+    {  crossSourceCollisions :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'crossSourceCollisions'>> * /
+    {  crossSourceCollisions :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "crossSourceCollisions", value.asInstanceOf[js.Any])
+    
+    inline def setCustomAttribution(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'customAttribution'> * /
+    {  customAttribution :string | std.Array<string> | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'customAttribution'>> * /
+    {  customAttribution :string | std.Array<string>} ? string | std.Array<string> | undefined : string | std.Array<string> | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "customAttribution", value.asInstanceOf[js.Any])
+    
+    inline def setDoubleClickZoom(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'doubleClickZoom'> * /
+    {  doubleClickZoom :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'doubleClickZoom'>> * /
+    {  doubleClickZoom :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "doubleClickZoom", value.asInstanceOf[js.Any])
+    
+    inline def setDragPan(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'dragPan'> * /
+    {  dragPan :maplibre-gl.maplibre-gl.DragPanOptions | boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'dragPan'>> * /
+    {  dragPan :maplibre-gl.maplibre-gl.DragPanOptions | boolean} ? maplibre-gl.maplibre-gl.DragPanOptions | boolean | undefined : maplibre-gl.maplibre-gl.DragPanOptions | boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "dragPan", value.asInstanceOf[js.Any])
+    
+    inline def setDragRotate(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'dragRotate'> * /
+    {  dragRotate :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'dragRotate'>> * /
+    {  dragRotate :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "dragRotate", value.asInstanceOf[js.Any])
+    
+    inline def setFadeDuration(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'fadeDuration'> * /
+    {  fadeDuration :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'fadeDuration'>> * /
+    {  fadeDuration :number} ? number | undefined : number | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "fadeDuration", value.asInstanceOf[js.Any])
+    
+    inline def setFailIfMajorPerformanceCaveat(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'failIfMajorPerformanceCaveat'> * /
+    {  failIfMajorPerformanceCaveat :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'failIfMajorPerformanceCaveat'>> * /
+    {  failIfMajorPerformanceCaveat :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
+    
+    inline def setFitBoundsOptions(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'fitBoundsOptions'> * /
+    {  fitBoundsOptions :std.Object | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'fitBoundsOptions'>> * /
+    {  fitBoundsOptions :std.Object} ? std.Object | undefined : std.Object | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "fitBoundsOptions", value.asInstanceOf[js.Any])
+    
+    inline def setHash(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'hash'> * /
+    {  hash :boolean | string | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'hash'>> * /
+    {  hash :boolean | string} ? boolean | string | undefined : boolean | string | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    
+    inline def setInteractive(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'interactive'> * /
+    {  interactive :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'interactive'>> * /
+    {  interactive :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboard(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'keyboard'> * /
+    {  keyboard :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'keyboard'>> * /
+    {  keyboard :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    
+    inline def setLocalIdeographFontFamily(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'localIdeographFontFamily'> * /
+    {  localIdeographFontFamily :string | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'localIdeographFontFamily'>> * /
+    {  localIdeographFontFamily :string} ? string | undefined : string | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "localIdeographFontFamily", value.asInstanceOf[js.Any])
+    
+    inline def setLocale(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'locale'> * /
+    {  locale :any | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'locale'>> * /
+    {  locale :any} ? any | undefined : any | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLogoPosition(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'logoPosition'> * /
+    {  logoPosition :maplibre-gl.maplibre-gl.ControlPosition | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'logoPosition'>> * /
+    {  logoPosition :maplibre-gl.maplibre-gl.ControlPosition} ? maplibre-gl.maplibre-gl.ControlPosition | undefined : maplibre-gl.maplibre-gl.ControlPosition | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "logoPosition", value.asInstanceOf[js.Any])
+    
+    inline def setMaplibreLogo(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maplibreLogo'> * /
+    {  maplibreLogo :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maplibreLogo'>> * /
+    {  maplibreLogo :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "maplibreLogo", value.asInstanceOf[js.Any])
+    
+    inline def setMaxBounds(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxBounds'> * /
+    {  maxBounds :maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxBounds'>> * /
+    {  maxBounds :maplibre-gl.maplibre-gl.LngLatBoundsLike} ? maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined : maplibre-gl.maplibre-gl.LngLatBoundsLike | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "maxBounds", value.asInstanceOf[js.Any])
+    
+    inline def setMaxPitch(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxPitch'> * /
+    {  maxPitch :number | null | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxPitch'>> * /
+    {  maxPitch :number} ? number | null | undefined : number | null | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "maxPitch", value.asInstanceOf[js.Any])
+    
+    inline def setMaxTileCacheSize(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxTileCacheSize'> * /
+    {  maxTileCacheSize :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxTileCacheSize'>> * /
+    {  maxTileCacheSize :number} ? number | undefined : number | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "maxTileCacheSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxZoom(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxZoom'> * /
+    {  maxZoom :number | null | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'maxZoom'>> * /
+    {  maxZoom :number} ? number | null | undefined : number | null | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinPitch(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'minPitch'> * /
+    {  minPitch :number | null | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'minPitch'>> * /
+    {  minPitch :number} ? number | null | undefined : number | null | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "minPitch", value.asInstanceOf[js.Any])
+    
+    inline def setMinZoom(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'minZoom'> * /
+    {  minZoom :number | null | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'minZoom'>> * /
+    {  minZoom :number} ? number | null | undefined : number | null | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    
+    inline def setPitch(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pitch'> * /
+    {  pitch :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pitch'>> * /
+    {  pitch :number} ? number | undefined : number | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    
+    inline def setPitchWithRotate(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pitchWithRotate'> * /
+    {  pitchWithRotate :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pitchWithRotate'>> * /
+    {  pitchWithRotate :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "pitchWithRotate", value.asInstanceOf[js.Any])
+    
+    inline def setPixelRatio(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pixelRatio'> * /
+    {  pixelRatio :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'pixelRatio'>> * /
+    {  pixelRatio :number} ? number | undefined : number | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveDrawingBuffer(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'preserveDrawingBuffer'> * /
+    {  preserveDrawingBuffer :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'preserveDrawingBuffer'>> * /
+    {  preserveDrawingBuffer :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshExpiredTiles(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'refreshExpiredTiles'> * /
+    {  refreshExpiredTiles :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'refreshExpiredTiles'>> * /
+    {  refreshExpiredTiles :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "refreshExpiredTiles", value.asInstanceOf[js.Any])
+    
+    inline def setRenderWorldCopies(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'renderWorldCopies'> * /
+    {  renderWorldCopies :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'renderWorldCopies'>> * /
+    {  renderWorldCopies :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "renderWorldCopies", value.asInstanceOf[js.Any])
+    
+    inline def setScrollZoom(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'scrollZoom'> * /
+    {  scrollZoom :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'scrollZoom'>> * /
+    {  scrollZoom :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "scrollZoom", value.asInstanceOf[js.Any])
+    
+    inline def setStyle(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'style'> * /
+    {  style :maplibre-gl.maplibre-gl.StyleSpecification | string} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'style'>> * /
+    {  style :maplibre-gl.maplibre-gl.StyleSpecification | string} ? maplibre-gl.maplibre-gl.StyleSpecification | string : maplibre-gl.maplibre-gl.StyleSpecification | string | undefined */ js.Any
+    ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setTouchPitch(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'touchPitch'> * /
+    {  touchPitch :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'touchPitch'>> * /
+    {  touchPitch :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "touchPitch", value.asInstanceOf[js.Any])
+    
+    inline def setTouchZoomRotate(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'touchZoomRotate'> * /
+    {  touchZoomRotate :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'touchZoomRotate'>> * /
+    {  touchZoomRotate :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "touchZoomRotate", value.asInstanceOf[js.Any])
+    
+    inline def setTrackResize(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'trackResize'> * /
+    {  trackResize :boolean | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'trackResize'>> * /
+    {  trackResize :boolean} ? boolean | undefined : boolean | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
+    
+    inline def setTransformRequest(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'transformRequest'> * /
+    {  transformRequest :maplibre-gl.maplibre-gl.RequestTransformFunction | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'transformRequest'>> * /
+    {readonly transformRequest (url : string): maplibre-gl.maplibre-gl.RequestParameters, readonly transformRequest (url : string, resourceType : maplibre-gl.maplibre-gl.ResourceTypeEnum): maplibre-gl.maplibre-gl.RequestParameters,   transformRequest :maplibre-gl.maplibre-gl.RequestTransformFunction} ? maplibre-gl.maplibre-gl.RequestTransformFunction | undefined : maplibre-gl.maplibre-gl.RequestTransformFunction | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "transformRequest", value.asInstanceOf[js.Any])
+    
+    inline def setZoom(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'zoom'> * /
+    {  zoom :number | undefined} extends / * Inlined std.Required<std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'zoom'>> * /
+    {  zoom :number} ? number | undefined : number | undefined | undefined */ js.Any
+    ): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

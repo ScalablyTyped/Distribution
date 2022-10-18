@@ -1,6 +1,5 @@
 package typings.sequelizeCursorPagination
 
-import org.scalablytyped.runtime.TopLevel
 import typings.sequelize.anon.Exclude
 import typings.sequelize.mod.FindOptionsAttributesArray
 import typings.sequelize.mod.IncludeOptions
@@ -188,7 +187,7 @@ object mod {
       }
     }
     
-    type WithPaginationModel[MethodName /* <: String */, Model, ModelInst, ModelAttrs] = Model & typings.sequelizeCursorPagination.sequelizeCursorPaginationStrings.WithPaginationModel & TopLevel[Any]
+    type WithPaginationModel[MethodName /* <: String */, Model, ModelInst, ModelAttrs] = Model & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in MethodName ]: {None (): {  results :std.Array<ModelAttrs>,   cursors :sequelize-cursor-pagination.sequelize-cursor-pagination.SequelizeCursorPagination.Cursors}, None (options : sequelize-cursor-pagination.sequelize-cursor-pagination.SequelizeCursorPagination.PaginateRawOptions<ModelAttrs>): {  results :std.Array<ModelAttrs>,   cursors :sequelize-cursor-pagination.sequelize-cursor-pagination.SequelizeCursorPagination.Cursors}, None (): {  results :std.Array<ModelInst>,   cursors :sequelize-cursor-pagination.sequelize-cursor-pagination.SequelizeCursorPagination.Cursors}, None (options : sequelize-cursor-pagination.sequelize-cursor-pagination.SequelizeCursorPagination.PaginateInstOptions<ModelAttrs>): {  results :std.Array<ModelInst>,   cursors :sequelize-cursor-pagination.sequelize-cursor-pagination.SequelizeCursorPagination.Cursors}}} */ js.Any)
     
     trait WithPaginationOptions[MethodName /* <: String */] extends StObject {
       

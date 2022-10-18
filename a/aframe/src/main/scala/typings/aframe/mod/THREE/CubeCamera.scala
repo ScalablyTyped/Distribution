@@ -12,6 +12,6 @@ open class CubeCamera protected ()
   def this(
     near: Double,
     far: Double,
-    renderTarget: typings.three.webGLCubeRenderTargetMod.WebGLCubeRenderTarget
+    renderTarget: typings.three.srcRenderersWebGLCubeRenderTargetMod.WebGLCubeRenderTarget
   ) = this()
 }

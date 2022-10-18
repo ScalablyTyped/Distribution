@@ -21,7 +21,7 @@ trait Request
     */
   var acceptJSON: Boolean = js.native
   
-  var body: js.Any = js.native
+  var body: Any = js.native
   
   /**
     * get params pass by querystring, all value are Array type. {@link Request#query}

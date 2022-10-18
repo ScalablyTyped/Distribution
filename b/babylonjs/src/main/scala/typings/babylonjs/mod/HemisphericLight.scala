@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "HemisphericLight")
 @js.native
 open class HemisphericLight protected ()
-  extends typings.babylonjs.legacyMod.HemisphericLight {
+  extends typings.babylonjs.legacyLegacyMod.HemisphericLight {
   /**
     * Creates a HemisphericLight object in the scene according to the passed direction (Vector3).
     * The HemisphericLight simulates the ambient environment light, so the passed direction is the light reflection direction, not the incoming direction.
@@ -19,7 +19,7 @@ open class HemisphericLight protected ()
     */
   def this(
     name: String,
-    direction: typings.babylonjs.mathVectorMod.Vector3,
+    direction: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
 }

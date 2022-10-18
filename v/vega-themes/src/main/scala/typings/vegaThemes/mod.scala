@@ -1,7 +1,7 @@
 package typings.vegaThemes
 
-import typings.vegaLite.exprMod.ExprRef
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaLite.buildSrcExprMod.ExprRef
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,5 +52,5 @@ object mod {
   @js.native
   val vox: Config = js.native
   
-  type Config = typings.vegaTypings.configMod.Config | (typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef])
+  type Config = typings.vegaTypings.typesSpecConfigMod.Config | (typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef])
 }

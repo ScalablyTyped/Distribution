@@ -2,13 +2,14 @@ package typings.reachTooltip
 
 import typings.react.mod.Ref
 import typings.std.HTMLElement
+import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait DEBUGSTYLE[ElementType /* <: HTMLElement */] extends StObject {
+  trait DEBUGSTYLE[ElementType /* <: HTMLElement | SVGElement */] extends StObject {
     
     var DEBUG_STYLE: js.UndefOr[Boolean] = js.undefined
     
@@ -18,12 +19,12 @@ object anon {
   }
   object DEBUGSTYLE {
     
-    inline def apply[ElementType /* <: HTMLElement */](): DEBUGSTYLE[ElementType] = {
+    inline def apply[ElementType /* <: HTMLElement | SVGElement */](): DEBUGSTYLE[ElementType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DEBUGSTYLE[ElementType]]
     }
     
-    extension [Self <: DEBUGSTYLE[?], ElementType /* <: HTMLElement */](x: Self & DEBUGSTYLE[ElementType]) {
+    extension [Self <: DEBUGSTYLE[?], ElementType /* <: HTMLElement | SVGElement */](x: Self & DEBUGSTYLE[ElementType]) {
       
       inline def setDEBUG_STYLE(value: Boolean): Self = StObject.set(x, "DEBUG_STYLE", value.asInstanceOf[js.Any])
       

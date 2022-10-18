@@ -10,5 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[ValueType](value: ValueType): (js.Array[Any | String | ValueType]) | ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[(js.Array[Any | String | ValueType]) | ValueType]
+  inline def default[ValueType](value: ValueType): /* import warning: importer.ImportType#apply Failed type conversion: ValueType extends null | undefined ? [] : ValueType extends string ? [string] : ValueType extends std.Array<unknown> ? ValueType : ValueType extends std.Iterable<infer T> ? std.Array<T> : [ValueType] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: ValueType extends null | undefined ? [] : ValueType extends string ? [string] : ValueType extends std.Array<unknown> ? ValueType : ValueType extends std.Iterable<infer T> ? std.Array<T> : [ValueType] */ js.Any]
 }

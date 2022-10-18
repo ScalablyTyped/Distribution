@@ -1,15 +1,15 @@
 package typings.fpTs.mod
 
-import typings.fpTs.applicativeMod.Applicative2C
-import typings.fpTs.applyMod.Apply2C
-import typings.fpTs.chainMod.Chain2C
 import typings.fpTs.fpTsStrings.Writer
-import typings.fpTs.functorMod.Functor2
-import typings.fpTs.monadMod.Monad2C
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.pointedMod.Pointed2C
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.writerMod.Writer_
+import typings.fpTs.libApplicativeMod.Applicative2C
+import typings.fpTs.libApplyMod.Apply2C
+import typings.fpTs.libChainMod.Chain2C
+import typings.fpTs.libFunctorMod.Functor2
+import typings.fpTs.libMonadMod.Monad2C
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libPointedMod.Pointed2C
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libWriterMod.Writer_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ object writer {
   
   @JSImport("fp-ts", "writer.Functor")
   @js.native
-  val Functor: Functor2[typings.fpTs.writerMod.URI] = js.native
+  val Functor: Functor2[typings.fpTs.libWriterMod.URI] = js.native
   
   @JSImport("fp-ts", "writer.URI")
   @js.native
@@ -44,9 +44,9 @@ object writer {
   
   inline def getApply[W](S: Semigroup[W]): Apply2C[Writer, W] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApply")(S.asInstanceOf[js.Any]).asInstanceOf[Apply2C[Writer, W]]
   
-  inline def getChain[W](M: Monoid[W]): Chain2C[typings.fpTs.writerMod.URI, W] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChain")(M.asInstanceOf[js.Any]).asInstanceOf[Chain2C[typings.fpTs.writerMod.URI, W]]
+  inline def getChain[W](S: Semigroup[W]): Chain2C[typings.fpTs.libWriterMod.URI, W] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChain")(S.asInstanceOf[js.Any]).asInstanceOf[Chain2C[typings.fpTs.libWriterMod.URI, W]]
   
-  inline def getMonad[W](M: Monoid[W]): Monad2C[typings.fpTs.writerMod.URI, W] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonad")(M.asInstanceOf[js.Any]).asInstanceOf[Monad2C[typings.fpTs.writerMod.URI, W]]
+  inline def getMonad[W](M: Monoid[W]): Monad2C[typings.fpTs.libWriterMod.URI, W] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonad")(M.asInstanceOf[js.Any]).asInstanceOf[Monad2C[typings.fpTs.libWriterMod.URI, W]]
   
   inline def getPointed[W](M: Monoid[W]): Pointed2C[Writer, W] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointed")(M.asInstanceOf[js.Any]).asInstanceOf[Pointed2C[Writer, W]]
   
@@ -62,11 +62,12 @@ object writer {
   
   @JSImport("fp-ts", "writer.writer")
   @js.native
-  val writer: Functor2[typings.fpTs.writerMod.URI] = js.native
+  val writer: Functor2[typings.fpTs.libWriterMod.URI] = js.native
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native
-    trait URItoKind[A] extends StObject
+    trait URItoKind2[E, A] extends StObject
   }
 }

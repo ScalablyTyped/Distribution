@@ -1,10 +1,10 @@
 package typings.chartJs.mod
 
 import typings.chartJs.anon.After
-import typings.chartJs.basicMod.AnyObject
-import typings.chartJs.colorMod.Color
-import typings.chartJs.elementMod.Element
-import typings.chartJs.geometricMod.Point
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesColorMod.Color
+import typings.chartJs.typesElementMod.Element
+import typings.chartJs.typesGeometricMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

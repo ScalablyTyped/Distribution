@@ -1,6 +1,6 @@
 package typings.ol
 
-import typings.ol.circleMod.default
+import typings.ol.geomCircleMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,10 +30,10 @@ object coordinateMod {
   inline def format(coordinate: Coordinate, template: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(coordinate.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def format(coordinate: Coordinate, template: String, opt_fractionDigits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(coordinate.asInstanceOf[js.Any], template.asInstanceOf[js.Any], opt_fractionDigits.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getWorldsAway(coordinate: Coordinate, projection: typings.ol.projectionMod.default): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorldsAway")(coordinate.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getWorldsAway(coordinate: Coordinate, projection: typings.ol.projProjectionMod.default): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorldsAway")(coordinate.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def getWorldsAway(
     coordinate: Coordinate,
-    projection: typings.ol.projectionMod.default,
+    projection: typings.ol.projProjectionMod.default,
     opt_sourceExtentWidth: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorldsAway")(coordinate.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], opt_sourceExtentWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -51,7 +51,7 @@ object coordinateMod {
   inline def toStringXY(coordinate: Coordinate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStringXY")(coordinate.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def toStringXY(coordinate: Coordinate, opt_fractionDigits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toStringXY")(coordinate.asInstanceOf[js.Any], opt_fractionDigits.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def wrapX(coordinate: Coordinate, projection: typings.ol.projectionMod.default): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapX")(coordinate.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
+  inline def wrapX(coordinate: Coordinate, projection: typings.ol.projProjectionMod.default): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapX")(coordinate.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
   type Coordinate = js.Array[Double]
   

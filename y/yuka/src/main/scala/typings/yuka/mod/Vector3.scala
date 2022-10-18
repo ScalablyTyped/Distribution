@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [z=0] - The z component.
   */
 open class Vector3 ()
-  extends typings.yuka.yukaMod.Vector3 {
+  extends typings.yuka.srcYukaMod.Vector3 {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
   def this(x: Unit, y: Double) = this()

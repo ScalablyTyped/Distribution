@@ -143,7 +143,7 @@ trait Silent extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markArea.itemStyle
     */
-  var itemStyle: js.UndefOr[Emphasis] = js.undefined
+  var itemStyle: js.UndefOr[BorderWidth] = js.undefined
   
   /**
     * Label in mark area.
@@ -151,7 +151,7 @@ trait Silent extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markArea.label
     */
-  var label: js.UndefOr[FontFamily] = js.undefined
+  var label: js.UndefOr[Emphasis] = js.undefined
   
   /**
     * Whether to ignore mouse events.
@@ -208,11 +208,11 @@ object Silent {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setItemStyle(value: Emphasis): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    inline def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Emphasis): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** 
+  * Database creation options
+  * @see Docs: {@link https://docs.couchdb.org/en/stable/api/database/common.html#put--db} */
 trait DatabaseCreateParams extends StObject {
   
   var n: js.UndefOr[Double] = js.undefined

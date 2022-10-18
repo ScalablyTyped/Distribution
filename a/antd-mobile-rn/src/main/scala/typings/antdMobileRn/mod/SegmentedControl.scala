@@ -1,7 +1,7 @@
 package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.SelectedIndex
-import typings.antdMobileRn.segmentedControlIndexNativeMod.default
+import typings.antdMobileRn.libSegmentedControlIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

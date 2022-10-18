@@ -1,7 +1,7 @@
 package typings.reachDropdown.anon
 
-import typings.reachDropdown.srcMod.TriggerRef
-import typings.reachPopover.srcMod.Position
+import typings.reachDropdown.mod.TriggerRef
+import typings.reachPopover.mod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

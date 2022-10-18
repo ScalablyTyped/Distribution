@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "RichReply")
 @js.native
 /* private */ open class RichReply ()
-  extends typings.matrixBotSdk.richReplyMod.RichReply
+  extends typings.matrixBotSdk.libHelpersRichReplyMod.RichReply
 /* static members */
 object RichReply {
   

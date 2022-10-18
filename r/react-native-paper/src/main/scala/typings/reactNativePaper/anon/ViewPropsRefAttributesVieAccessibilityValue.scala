@@ -26,7 +26,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  title :string | undefined,   children :react.react.ReactNode,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme} */
+/* Inlined react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  progress :number | undefined,   color :string | undefined,   indeterminate :boolean | undefined,   visible :boolean | undefined,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme} */
 trait ViewPropsRefAttributesVieAccessibilityValue extends StObject {
   
   /**
@@ -108,10 +108,7 @@ trait ViewPropsRefAttributesVieAccessibilityValue extends StObject {
     */
   var accessible: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Content of the `Drawer.Section`.
-    */
-  var children: js.UndefOr[ReactNode] & ReactNode
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * Views that are only used to layout their children or otherwise don't draw anything
@@ -119,6 +116,11 @@ trait ViewPropsRefAttributesVieAccessibilityValue extends StObject {
     * Set this property to false to disable this optimization and ensure that this View exists in the native view hierarchy.
     */
   var collapsable: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Color of the progress bar. The background color will be calculated based on this but you can change it by passing `backgroundColor` to `style` prop.
+    */
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this `View` should be focusable with a non-touch input device, eg. receive focus with a hardware keyboard.
@@ -156,6 +158,11 @@ trait ViewPropsRefAttributesVieAccessibilityValue extends StObject {
     *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
     */
   var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  
+  /**
+    * If the progress bar will show indeterminate progress.
+    */
+  var indeterminate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *(Apple TV only)* When set to true, this view will be focusable
@@ -365,6 +372,11 @@ trait ViewPropsRefAttributesVieAccessibilityValue extends StObject {
     */
   var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
   
+  /**
+    * Progress value (between 0 and 1).
+    */
+  var progress: js.UndefOr[Double] = js.undefined
+  
   var ref: js.UndefOr[typings.react.mod.Ref[View]] = js.undefined
   
   /**
@@ -406,12 +418,7 @@ trait ViewPropsRefAttributesVieAccessibilityValue extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
-  
-  /**
-    * Title to show as the header for the section.
-    */
-  var title: js.UndefOr[String] = js.undefined
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
@@ -447,10 +454,15 @@ trait ViewPropsRefAttributesVieAccessibilityValue extends StObject {
     * @platform ios
     */
   var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Whether to show the ProgressBar (true, the default) or hide it (false).
+    */
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ViewPropsRefAttributesVieAccessibilityValue {
   
-  inline def apply(theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): ViewPropsRefAttributesVieAccessibilityValue = {
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): ViewPropsRefAttributesVieAccessibilityValue = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsRefAttributesVieAccessibilityValue]
   }
@@ -513,13 +525,17 @@ object ViewPropsRefAttributesVieAccessibilityValue {
     
     inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
-    inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
     
     inline def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
@@ -536,6 +552,10 @@ object ViewPropsRefAttributesVieAccessibilityValue {
     inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
+    
+    inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
+    
+    inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
     
     inline def setIsTVSelectable(value: Boolean): Self = StObject.set(x, "isTVSelectable", value.asInstanceOf[js.Any])
     
@@ -695,6 +715,10 @@ object ViewPropsRefAttributesVieAccessibilityValue {
     
     inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    
     inline def setRef(value: typings.react.mod.Ref[View]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     inline def setRefFunction1(value: /* instance */ View | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
@@ -725,11 +749,7 @@ object ViewPropsRefAttributesVieAccessibilityValue {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
-    
-    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-    
-    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     
@@ -750,5 +770,9 @@ object ViewPropsRefAttributesVieAccessibilityValue {
     inline def setTvParallaxTiltAngle(value: Double): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

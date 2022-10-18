@@ -1,8 +1,8 @@
 package typings.micromarkExtensionGfmFootnote
 
-import typings.micromarkExtensionGfmFootnote.htmlMod.HtmlExtension
-import typings.micromarkExtensionGfmFootnote.htmlMod.Options
-import typings.micromarkExtensionGfmFootnote.syntaxMod.Extension
+import typings.micromarkExtensionGfmFootnote.devLibHtmlMod.HtmlExtension
+import typings.micromarkExtensionGfmFootnote.devLibHtmlMod.Options
+import typings.micromarkExtensionGfmFootnote.devLibSyntaxMod.Extension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

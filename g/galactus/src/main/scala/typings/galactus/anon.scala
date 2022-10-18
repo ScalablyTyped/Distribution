@@ -1,8 +1,8 @@
 package typings.galactus
 
+import typings.floraColossus.libWalkerMod.Module
 import typings.floraColossus.mod.Walker
-import typings.floraColossus.walkerMod.Module
-import typings.galactus.destroyerOfModulesMod.ShouldKeepModuleTest
+import typings.galactus.libDestroyerOfModulesMod.ShouldKeepModuleTest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

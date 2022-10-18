@@ -8,6 +8,12 @@ trait DevtoolsHook extends StObject {
   
   var appRecords: js.Array[AppRecord]
   
+  /**
+    * Added at https://github.com/vuejs/devtools/commit/f2ad51eea789006ab66942e5a27c0f0986a257f9
+    * Returns wether the arg was buffered or not
+    */
+  var cleanupBuffer: js.UndefOr[js.Function1[/* matchArg */ Any, Boolean]] = js.undefined
+  
   def emit(event: String, payload: Any*): Unit
   
   var enabled: js.UndefOr[Boolean] = js.undefined
@@ -36,6 +42,10 @@ object DevtoolsHook {
     inline def setAppRecords(value: js.Array[AppRecord]): Self = StObject.set(x, "appRecords", value.asInstanceOf[js.Any])
     
     inline def setAppRecordsVarargs(value: AppRecord*): Self = StObject.set(x, "appRecords", js.Array(value*))
+    
+    inline def setCleanupBuffer(value: /* matchArg */ Any => Boolean): Self = StObject.set(x, "cleanupBuffer", js.Any.fromFunction1(value))
+    
+    inline def setCleanupBufferUndefined: Self = StObject.set(x, "cleanupBuffer", js.undefined)
     
     inline def setEmit(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     

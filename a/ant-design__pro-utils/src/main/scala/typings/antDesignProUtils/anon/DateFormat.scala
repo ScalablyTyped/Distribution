@@ -1,6 +1,6 @@
 package typings.antDesignProUtils.anon
 
-import typings.antDesignProUtils.typesMod.ProFieldValueType
+import typings.antDesignProUtils.esTypesMod.ProFieldValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

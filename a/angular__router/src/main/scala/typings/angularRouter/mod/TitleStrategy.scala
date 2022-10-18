@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/router", "TitleStrategy")
+/* note: abstract class */ @JSImport("@angular/router", "TitleStrategy")
 @js.native
-abstract class TitleStrategy () extends StObject {
+open class TitleStrategy () extends StObject {
   
   /**
     * @returns The `title` of the deepest primary route.

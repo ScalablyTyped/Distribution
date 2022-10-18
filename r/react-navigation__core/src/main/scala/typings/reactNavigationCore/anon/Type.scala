@@ -1,7 +1,7 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationCore.typesMod.EventMapBase
-import typings.reactNavigationCore.typesMod.Keyof
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.EventMapBase
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.Keyof
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

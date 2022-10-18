@@ -1,6 +1,5 @@
 package typings.firebaseAuth
 
-import org.scalablytyped.runtime.TopLevel
 import typings.firebaseAuth.anon.MessageString
 import typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
 import org.scalablytyped.runtime.StObject
@@ -600,7 +599,13 @@ object distSrcApiErrorsMod {
     inline def WEAK_PASSWORD: typings.firebaseAuth.firebaseAuthStrings.WEAK_PASSWORD = "WEAK_PASSWORD".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.WEAK_PASSWORD]
   }
   
-  type ServerErrorMap[ApiError /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in ApiError ]: @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorCode}
-    */ typings.firebaseAuth.firebaseAuthStrings.ServerErrorMap & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {readonly [ K in ApiError ]: @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorCode}
+    }}}
+    */
+  @js.native
+  trait ServerErrorMap[ApiError /* <: String */] extends StObject
 }

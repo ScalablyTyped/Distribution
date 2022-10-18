@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientFile.gapi.client.file
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility extend
     * error message emitted in the Eligibility Exporter log and the metric for the SLI in question will not be emitted.
     */
   var eligibilities: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.file.gapi.client.file.GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility}
-    */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.file.gapi.client.file.GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility} */ js.Any
   ] = js.undefined
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility {
@@ -30,9 +27,7 @@ object GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility {
   extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility](x: Self) {
     
     inline def setEligibilities(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.file.gapi.client.file.GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility}
-      */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.file.gapi.client.file.GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility} */ js.Any
     ): Self = StObject.set(x, "eligibilities", value.asInstanceOf[js.Any])
     
     inline def setEligibilitiesUndefined: Self = StObject.set(x, "eligibilities", js.undefined)

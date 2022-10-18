@@ -1,6 +1,6 @@
 package typings.aframe.mod.global.AFRAME.THREE
 
-import typings.three.eventDispatcherMod.BaseEvent
+import typings.three.srcCoreEventDispatcherMod.BaseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

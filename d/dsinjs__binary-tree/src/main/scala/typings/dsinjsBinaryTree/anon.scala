@@ -1,9 +1,9 @@
 package typings.dsinjsBinaryTree
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.dsinjsBinaryTree.btreeMod.BTreeRootAttrStruct
-import typings.dsinjsBinaryTree.btreeMod.BTreeValueAttrStruct
-import typings.dsinjsBinaryTree.btreenodeMod.BTreeNodeStruct
+import typings.dsinjsBinaryTree.distBtreeMod.BTreeRootAttrStruct
+import typings.dsinjsBinaryTree.distBtreeMod.BTreeValueAttrStruct
+import typings.dsinjsBinaryTree.distBtreenodeMod.BTreeNodeStruct
 import typings.dsinjsBinaryTree.dsinjsBinaryTreeStrings.L
 import typings.dsinjsBinaryTree.dsinjsBinaryTreeStrings.R
 import typings.dsinjsBinaryTree.dsinjsBinaryTreeStrings.U
@@ -19,7 +19,7 @@ object anon {
     
     var BTreeNode: Instantiable1[
         /* attr */ BTreeNodeStruct[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
-        typings.dsinjsBinaryTree.btreenodeMod.BTreeNode[js.Object]
+        typings.dsinjsBinaryTree.distBtreenodeMod.BTreeNode[js.Object]
       ]
   }
   object BTree {
@@ -28,7 +28,7 @@ object anon {
       BTree: TypeofBTree,
       BTreeNode: Instantiable1[
           /* attr */ BTreeNodeStruct[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
-          typings.dsinjsBinaryTree.btreenodeMod.BTreeNode[js.Object]
+          typings.dsinjsBinaryTree.distBtreenodeMod.BTreeNode[js.Object]
         ]
     ): BTree = {
       val __obj = js.Dynamic.literal(BTree = BTree.asInstanceOf[js.Any], BTreeNode = BTreeNode.asInstanceOf[js.Any])
@@ -42,7 +42,7 @@ object anon {
       inline def setBTreeNode(
         value: Instantiable1[
               /* attr */ BTreeNodeStruct[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
-              typings.dsinjsBinaryTree.btreenodeMod.BTreeNode[js.Object]
+              typings.dsinjsBinaryTree.distBtreenodeMod.BTreeNode[js.Object]
             ]
       ): Self = StObject.set(x, "BTreeNode", value.asInstanceOf[js.Any])
     }
@@ -52,7 +52,7 @@ object anon {
     
     var BTreeNode: Instantiable1[
         /* attr */ BTreeNodeStruct[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
-        typings.dsinjsBinaryTree.btreenodeMod.BTreeNode[js.Object]
+        typings.dsinjsBinaryTree.distBtreenodeMod.BTreeNode[js.Object]
       ]
   }
   object BTreeNode {
@@ -60,7 +60,7 @@ object anon {
     inline def apply(
       BTreeNode: Instantiable1[
           /* attr */ BTreeNodeStruct[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
-          typings.dsinjsBinaryTree.btreenodeMod.BTreeNode[js.Object]
+          typings.dsinjsBinaryTree.distBtreenodeMod.BTreeNode[js.Object]
         ]
     ): BTreeNode = {
       val __obj = js.Dynamic.literal(BTreeNode = BTreeNode.asInstanceOf[js.Any])
@@ -72,7 +72,7 @@ object anon {
       inline def setBTreeNode(
         value: Instantiable1[
               /* attr */ BTreeNodeStruct[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
-              typings.dsinjsBinaryTree.btreenodeMod.BTreeNode[js.Object]
+              typings.dsinjsBinaryTree.distBtreenodeMod.BTreeNode[js.Object]
             ]
       ): Self = StObject.set(x, "BTreeNode", value.asInstanceOf[js.Any])
     }
@@ -82,11 +82,11 @@ object anon {
     
     var done: Boolean
     
-    var value: typings.dsinjsBinaryTree.btreenodeMod.BTreeNode[T]
+    var value: typings.dsinjsBinaryTree.distBtreenodeMod.BTreeNode[T]
   }
   object Done {
     
-    inline def apply[T](done: Boolean, value: typings.dsinjsBinaryTree.btreenodeMod.BTreeNode[T]): Done[T] = {
+    inline def apply[T](done: Boolean, value: typings.dsinjsBinaryTree.distBtreenodeMod.BTreeNode[T]): Done[T] = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Done[T]]
     }
@@ -95,7 +95,7 @@ object anon {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: typings.dsinjsBinaryTree.btreenodeMod.BTreeNode[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: typings.dsinjsBinaryTree.distBtreenodeMod.BTreeNode[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,7 +125,7 @@ object anon {
     extends StObject
        with Instantiable1[
           (/* import warning: RewrittenClass.unapply cls was tparam T */ /* attr */ Any) | (/* attr */ BTreeRootAttrStruct[/* import warning: RewrittenClass.unapply cls was tparam T */ Any]) | (/* attr */ BTreeValueAttrStruct[/* import warning: RewrittenClass.unapply cls was tparam T */ Any]), 
-          typings.dsinjsBinaryTree.btreeMod.BTree[js.Object]
+          typings.dsinjsBinaryTree.distBtreeMod.BTree[js.Object]
         ] {
     
     /**
@@ -138,7 +138,7 @@ object anon {
       * @example
       * var tree = BTree.fromArray([10,20,30,40]);
       */
-    def fromArray[T2](arr: js.Array[T2]): typings.dsinjsBinaryTree.btreeMod.BTree[T2] = js.native
+    def fromArray[T2](arr: js.Array[T2]): typings.dsinjsBinaryTree.distBtreeMod.BTree[T2] = js.native
     
     /**
       * Returns index value from given path.

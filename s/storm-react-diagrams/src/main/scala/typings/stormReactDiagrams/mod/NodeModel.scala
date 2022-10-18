@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "NodeModel")
 @js.native
 open class NodeModel ()
-  extends typings.stormReactDiagrams.nodeModelMod.NodeModel {
+  extends typings.stormReactDiagrams.distSrcModelsNodeModelMod.NodeModel {
   def this(nodeType: String) = this()
   def this(nodeType: String, id: String) = this()
   def this(nodeType: Unit, id: String) = this()

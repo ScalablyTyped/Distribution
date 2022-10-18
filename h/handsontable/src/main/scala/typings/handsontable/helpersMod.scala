@@ -5,7 +5,7 @@ import typings.handsontable.anon.Platform
 import typings.handsontable.anon.UserAgent
 import typings.handsontable.commonMod.CellValue
 import typings.handsontable.coreMod.default
-import typings.handsontable.featureMod.Comparator
+import typings.handsontable.helpersFeatureMod.Comparator
 import typings.handsontable.settingsMod.GridSettings
 import typings.std.Document
 import typings.std.HTMLTableElement
@@ -24,139 +24,139 @@ object helpersMod {
   object KEY_CODES extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.handsontable.unicodeMod.KEY_CODES & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.handsontable.helpersUnicodeMod.KEY_CODES & Double] = js.native
     
-    /* 65 */ val A: typings.handsontable.unicodeMod.KEY_CODES.A & Double = js.native
+    /* 65 */ val A: typings.handsontable.helpersUnicodeMod.KEY_CODES.A & Double = js.native
     
-    /* 18 */ val ALT: typings.handsontable.unicodeMod.KEY_CODES.ALT & Double = js.native
+    /* 18 */ val ALT: typings.handsontable.helpersUnicodeMod.KEY_CODES.ALT & Double = js.native
     
-    /* 40 */ val ARROW_DOWN: typings.handsontable.unicodeMod.KEY_CODES.ARROW_DOWN & Double = js.native
+    /* 40 */ val ARROW_DOWN: typings.handsontable.helpersUnicodeMod.KEY_CODES.ARROW_DOWN & Double = js.native
     
-    /* 37 */ val ARROW_LEFT: typings.handsontable.unicodeMod.KEY_CODES.ARROW_LEFT & Double = js.native
+    /* 37 */ val ARROW_LEFT: typings.handsontable.helpersUnicodeMod.KEY_CODES.ARROW_LEFT & Double = js.native
     
-    /* 39 */ val ARROW_RIGHT: typings.handsontable.unicodeMod.KEY_CODES.ARROW_RIGHT & Double = js.native
+    /* 39 */ val ARROW_RIGHT: typings.handsontable.helpersUnicodeMod.KEY_CODES.ARROW_RIGHT & Double = js.native
     
-    /* 38 */ val ARROW_UP: typings.handsontable.unicodeMod.KEY_CODES.ARROW_UP & Double = js.native
+    /* 38 */ val ARROW_UP: typings.handsontable.helpersUnicodeMod.KEY_CODES.ARROW_UP & Double = js.native
     
-    /* 174 */ val AUDIO_DOWN: typings.handsontable.unicodeMod.KEY_CODES.AUDIO_DOWN & Double = js.native
+    /* 174 */ val AUDIO_DOWN: typings.handsontable.helpersUnicodeMod.KEY_CODES.AUDIO_DOWN & Double = js.native
     
-    /* 173 */ val AUDIO_MUTE: typings.handsontable.unicodeMod.KEY_CODES.AUDIO_MUTE & Double = js.native
+    /* 173 */ val AUDIO_MUTE: typings.handsontable.helpersUnicodeMod.KEY_CODES.AUDIO_MUTE & Double = js.native
     
-    /* 175 */ val AUDIO_UP: typings.handsontable.unicodeMod.KEY_CODES.AUDIO_UP & Double = js.native
+    /* 175 */ val AUDIO_UP: typings.handsontable.helpersUnicodeMod.KEY_CODES.AUDIO_UP & Double = js.native
     
-    /* 8 */ val BACKSPACE: typings.handsontable.unicodeMod.KEY_CODES.BACKSPACE & Double = js.native
+    /* 8 */ val BACKSPACE: typings.handsontable.helpersUnicodeMod.KEY_CODES.BACKSPACE & Double = js.native
     
-    /* 67 */ val C: typings.handsontable.unicodeMod.KEY_CODES.C & Double = js.native
+    /* 67 */ val C: typings.handsontable.helpersUnicodeMod.KEY_CODES.C & Double = js.native
     
-    /* 20 */ val CAPS_LOCK: typings.handsontable.unicodeMod.KEY_CODES.CAPS_LOCK & Double = js.native
+    /* 20 */ val CAPS_LOCK: typings.handsontable.helpersUnicodeMod.KEY_CODES.CAPS_LOCK & Double = js.native
     
-    /* 188 */ val COMMA: typings.handsontable.unicodeMod.KEY_CODES.COMMA & Double = js.native
+    /* 188 */ val COMMA: typings.handsontable.helpersUnicodeMod.KEY_CODES.COMMA & Double = js.native
     
-    /* 224 */ val COMMAND_FIREFOX: typings.handsontable.unicodeMod.KEY_CODES.COMMAND_FIREFOX & Double = js.native
+    /* 224 */ val COMMAND_FIREFOX: typings.handsontable.helpersUnicodeMod.KEY_CODES.COMMAND_FIREFOX & Double = js.native
     
-    /* 91 */ val COMMAND_LEFT: typings.handsontable.unicodeMod.KEY_CODES.COMMAND_LEFT & Double = js.native
+    /* 91 */ val COMMAND_LEFT: typings.handsontable.helpersUnicodeMod.KEY_CODES.COMMAND_LEFT & Double = js.native
     
-    /* 93 */ val COMMAND_RIGHT: typings.handsontable.unicodeMod.KEY_CODES.COMMAND_RIGHT & Double = js.native
+    /* 93 */ val COMMAND_RIGHT: typings.handsontable.helpersUnicodeMod.KEY_CODES.COMMAND_RIGHT & Double = js.native
     
-    /* 17 */ val CONTROL: typings.handsontable.unicodeMod.KEY_CODES.CONTROL & Double = js.native
+    /* 17 */ val CONTROL: typings.handsontable.helpersUnicodeMod.KEY_CODES.CONTROL & Double = js.native
     
-    /* 68 */ val D: typings.handsontable.unicodeMod.KEY_CODES.D & Double = js.native
+    /* 68 */ val D: typings.handsontable.helpersUnicodeMod.KEY_CODES.D & Double = js.native
     
-    /* 46 */ val DELETE: typings.handsontable.unicodeMod.KEY_CODES.DELETE & Double = js.native
+    /* 46 */ val DELETE: typings.handsontable.helpersUnicodeMod.KEY_CODES.DELETE & Double = js.native
     
-    /* 35 */ val END: typings.handsontable.unicodeMod.KEY_CODES.END & Double = js.native
+    /* 35 */ val END: typings.handsontable.helpersUnicodeMod.KEY_CODES.END & Double = js.native
     
-    /* 13 */ val ENTER: typings.handsontable.unicodeMod.KEY_CODES.ENTER & Double = js.native
+    /* 13 */ val ENTER: typings.handsontable.helpersUnicodeMod.KEY_CODES.ENTER & Double = js.native
     
-    /* 27 */ val ESCAPE: typings.handsontable.unicodeMod.KEY_CODES.ESCAPE & Double = js.native
+    /* 27 */ val ESCAPE: typings.handsontable.helpersUnicodeMod.KEY_CODES.ESCAPE & Double = js.native
     
-    /* 70 */ val F: typings.handsontable.unicodeMod.KEY_CODES.F & Double = js.native
+    /* 70 */ val F: typings.handsontable.helpersUnicodeMod.KEY_CODES.F & Double = js.native
     
-    /* 112 */ val F1: typings.handsontable.unicodeMod.KEY_CODES.F1 & Double = js.native
+    /* 112 */ val F1: typings.handsontable.helpersUnicodeMod.KEY_CODES.F1 & Double = js.native
     
-    /* 121 */ val F10: typings.handsontable.unicodeMod.KEY_CODES.F10 & Double = js.native
+    /* 121 */ val F10: typings.handsontable.helpersUnicodeMod.KEY_CODES.F10 & Double = js.native
     
-    /* 122 */ val F11: typings.handsontable.unicodeMod.KEY_CODES.F11 & Double = js.native
+    /* 122 */ val F11: typings.handsontable.helpersUnicodeMod.KEY_CODES.F11 & Double = js.native
     
-    /* 123 */ val F12: typings.handsontable.unicodeMod.KEY_CODES.F12 & Double = js.native
+    /* 123 */ val F12: typings.handsontable.helpersUnicodeMod.KEY_CODES.F12 & Double = js.native
     
-    /* 124 */ val F13: typings.handsontable.unicodeMod.KEY_CODES.F13 & Double = js.native
+    /* 124 */ val F13: typings.handsontable.helpersUnicodeMod.KEY_CODES.F13 & Double = js.native
     
-    /* 125 */ val F14: typings.handsontable.unicodeMod.KEY_CODES.F14 & Double = js.native
+    /* 125 */ val F14: typings.handsontable.helpersUnicodeMod.KEY_CODES.F14 & Double = js.native
     
-    /* 126 */ val F15: typings.handsontable.unicodeMod.KEY_CODES.F15 & Double = js.native
+    /* 126 */ val F15: typings.handsontable.helpersUnicodeMod.KEY_CODES.F15 & Double = js.native
     
-    /* 127 */ val F16: typings.handsontable.unicodeMod.KEY_CODES.F16 & Double = js.native
+    /* 127 */ val F16: typings.handsontable.helpersUnicodeMod.KEY_CODES.F16 & Double = js.native
     
-    /* 128 */ val F17: typings.handsontable.unicodeMod.KEY_CODES.F17 & Double = js.native
+    /* 128 */ val F17: typings.handsontable.helpersUnicodeMod.KEY_CODES.F17 & Double = js.native
     
-    /* 129 */ val F18: typings.handsontable.unicodeMod.KEY_CODES.F18 & Double = js.native
+    /* 129 */ val F18: typings.handsontable.helpersUnicodeMod.KEY_CODES.F18 & Double = js.native
     
-    /* 130 */ val F19: typings.handsontable.unicodeMod.KEY_CODES.F19 & Double = js.native
+    /* 130 */ val F19: typings.handsontable.helpersUnicodeMod.KEY_CODES.F19 & Double = js.native
     
-    /* 113 */ val F2: typings.handsontable.unicodeMod.KEY_CODES.F2 & Double = js.native
+    /* 113 */ val F2: typings.handsontable.helpersUnicodeMod.KEY_CODES.F2 & Double = js.native
     
-    /* 114 */ val F3: typings.handsontable.unicodeMod.KEY_CODES.F3 & Double = js.native
+    /* 114 */ val F3: typings.handsontable.helpersUnicodeMod.KEY_CODES.F3 & Double = js.native
     
-    /* 115 */ val F4: typings.handsontable.unicodeMod.KEY_CODES.F4 & Double = js.native
+    /* 115 */ val F4: typings.handsontable.helpersUnicodeMod.KEY_CODES.F4 & Double = js.native
     
-    /* 116 */ val F5: typings.handsontable.unicodeMod.KEY_CODES.F5 & Double = js.native
+    /* 116 */ val F5: typings.handsontable.helpersUnicodeMod.KEY_CODES.F5 & Double = js.native
     
-    /* 117 */ val F6: typings.handsontable.unicodeMod.KEY_CODES.F6 & Double = js.native
+    /* 117 */ val F6: typings.handsontable.helpersUnicodeMod.KEY_CODES.F6 & Double = js.native
     
-    /* 118 */ val F7: typings.handsontable.unicodeMod.KEY_CODES.F7 & Double = js.native
+    /* 118 */ val F7: typings.handsontable.helpersUnicodeMod.KEY_CODES.F7 & Double = js.native
     
-    /* 119 */ val F8: typings.handsontable.unicodeMod.KEY_CODES.F8 & Double = js.native
+    /* 119 */ val F8: typings.handsontable.helpersUnicodeMod.KEY_CODES.F8 & Double = js.native
     
-    /* 120 */ val F9: typings.handsontable.unicodeMod.KEY_CODES.F9 & Double = js.native
+    /* 120 */ val F9: typings.handsontable.helpersUnicodeMod.KEY_CODES.F9 & Double = js.native
     
-    /* 36 */ val HOME: typings.handsontable.unicodeMod.KEY_CODES.HOME & Double = js.native
+    /* 36 */ val HOME: typings.handsontable.helpersUnicodeMod.KEY_CODES.HOME & Double = js.native
     
-    /* 45 */ val INSERT: typings.handsontable.unicodeMod.KEY_CODES.INSERT & Double = js.native
+    /* 45 */ val INSERT: typings.handsontable.helpersUnicodeMod.KEY_CODES.INSERT & Double = js.native
     
-    /* 76 */ val L: typings.handsontable.unicodeMod.KEY_CODES.L & Double = js.native
+    /* 76 */ val L: typings.handsontable.helpersUnicodeMod.KEY_CODES.L & Double = js.native
     
-    /* 176 */ val MEDIA_NEXT: typings.handsontable.unicodeMod.KEY_CODES.MEDIA_NEXT & Double = js.native
+    /* 176 */ val MEDIA_NEXT: typings.handsontable.helpersUnicodeMod.KEY_CODES.MEDIA_NEXT & Double = js.native
     
-    /* 179 */ val MEDIA_PLAY_PAUSE: typings.handsontable.unicodeMod.KEY_CODES.MEDIA_PLAY_PAUSE & Double = js.native
+    /* 179 */ val MEDIA_PLAY_PAUSE: typings.handsontable.helpersUnicodeMod.KEY_CODES.MEDIA_PLAY_PAUSE & Double = js.native
     
-    /* 177 */ val MEDIA_PREV: typings.handsontable.unicodeMod.KEY_CODES.MEDIA_PREV & Double = js.native
+    /* 177 */ val MEDIA_PREV: typings.handsontable.helpersUnicodeMod.KEY_CODES.MEDIA_PREV & Double = js.native
     
-    /* 178 */ val MEDIA_STOP: typings.handsontable.unicodeMod.KEY_CODES.MEDIA_STOP & Double = js.native
+    /* 178 */ val MEDIA_STOP: typings.handsontable.helpersUnicodeMod.KEY_CODES.MEDIA_STOP & Double = js.native
     
-    /* 0 */ val NULL: typings.handsontable.unicodeMod.KEY_CODES.NULL & Double = js.native
+    /* 0 */ val NULL: typings.handsontable.helpersUnicodeMod.KEY_CODES.NULL & Double = js.native
     
-    /* 144 */ val NUM_LOCK: typings.handsontable.unicodeMod.KEY_CODES.NUM_LOCK & Double = js.native
+    /* 144 */ val NUM_LOCK: typings.handsontable.helpersUnicodeMod.KEY_CODES.NUM_LOCK & Double = js.native
     
-    /* 79 */ val O: typings.handsontable.unicodeMod.KEY_CODES.O & Double = js.native
+    /* 79 */ val O: typings.handsontable.helpersUnicodeMod.KEY_CODES.O & Double = js.native
     
-    /* 80 */ val P: typings.handsontable.unicodeMod.KEY_CODES.P & Double = js.native
+    /* 80 */ val P: typings.handsontable.helpersUnicodeMod.KEY_CODES.P & Double = js.native
     
-    /* 34 */ val PAGE_DOWN: typings.handsontable.unicodeMod.KEY_CODES.PAGE_DOWN & Double = js.native
+    /* 34 */ val PAGE_DOWN: typings.handsontable.helpersUnicodeMod.KEY_CODES.PAGE_DOWN & Double = js.native
     
-    /* 33 */ val PAGE_UP: typings.handsontable.unicodeMod.KEY_CODES.PAGE_UP & Double = js.native
+    /* 33 */ val PAGE_UP: typings.handsontable.helpersUnicodeMod.KEY_CODES.PAGE_UP & Double = js.native
     
-    /* 19 */ val PAUSE: typings.handsontable.unicodeMod.KEY_CODES.PAUSE & Double = js.native
+    /* 19 */ val PAUSE: typings.handsontable.helpersUnicodeMod.KEY_CODES.PAUSE & Double = js.native
     
-    /* 190 */ val PERIOD: typings.handsontable.unicodeMod.KEY_CODES.PERIOD & Double = js.native
+    /* 190 */ val PERIOD: typings.handsontable.helpersUnicodeMod.KEY_CODES.PERIOD & Double = js.native
     
-    /* 83 */ val S: typings.handsontable.unicodeMod.KEY_CODES.S & Double = js.native
+    /* 83 */ val S: typings.handsontable.helpersUnicodeMod.KEY_CODES.S & Double = js.native
     
-    /* 145 */ val SCROLL_LOCK: typings.handsontable.unicodeMod.KEY_CODES.SCROLL_LOCK & Double = js.native
+    /* 145 */ val SCROLL_LOCK: typings.handsontable.helpersUnicodeMod.KEY_CODES.SCROLL_LOCK & Double = js.native
     
-    /* 16 */ val SHIFT: typings.handsontable.unicodeMod.KEY_CODES.SHIFT & Double = js.native
+    /* 16 */ val SHIFT: typings.handsontable.helpersUnicodeMod.KEY_CODES.SHIFT & Double = js.native
     
-    /* 32 */ val SPACE: typings.handsontable.unicodeMod.KEY_CODES.SPACE & Double = js.native
+    /* 32 */ val SPACE: typings.handsontable.helpersUnicodeMod.KEY_CODES.SPACE & Double = js.native
     
-    /* 9 */ val TAB: typings.handsontable.unicodeMod.KEY_CODES.TAB & Double = js.native
+    /* 9 */ val TAB: typings.handsontable.helpersUnicodeMod.KEY_CODES.TAB & Double = js.native
     
-    /* 86 */ val V: typings.handsontable.unicodeMod.KEY_CODES.V & Double = js.native
+    /* 86 */ val V: typings.handsontable.helpersUnicodeMod.KEY_CODES.V & Double = js.native
     
-    /* 88 */ val X: typings.handsontable.unicodeMod.KEY_CODES.X & Double = js.native
+    /* 88 */ val X: typings.handsontable.helpersUnicodeMod.KEY_CODES.X & Double = js.native
     
-    /* 89 */ val Y: typings.handsontable.unicodeMod.KEY_CODES.Y & Double = js.native
+    /* 89 */ val Y: typings.handsontable.helpersUnicodeMod.KEY_CODES.Y & Double = js.native
     
-    /* 90 */ val Z: typings.handsontable.unicodeMod.KEY_CODES.Z & Double = js.native
+    /* 90 */ val Z: typings.handsontable.helpersUnicodeMod.KEY_CODES.Z & Double = js.native
   }
   
   inline def arrayAvg(array: js.Array[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayAvg")(array.asInstanceOf[js.Any]).asInstanceOf[Double]

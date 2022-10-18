@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.eventDispatcherMod.BaseEvent
+import typings.three.srcCoreEventDispatcherMod.BaseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,4 +11,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates eventDispatcher object. It needs to be call with '.call' to add the functionality to an object.
   */
 open class EventDispatcher[E /* <: BaseEvent */] ()
-  extends typings.three.threeMod.EventDispatcher[E]
+  extends typings.three.srcThreeMod.EventDispatcher[E]

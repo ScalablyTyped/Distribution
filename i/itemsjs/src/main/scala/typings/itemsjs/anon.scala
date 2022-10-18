@@ -136,35 +136,18 @@ object anon {
   
   trait Id extends StObject {
     
-    var id: /* import warning: importer.ImportType#apply Failed type conversion: infer ID */ js.Any
-  }
-  object Id {
-    
-    inline def apply(id: /* import warning: importer.ImportType#apply Failed type conversion: infer ID */ js.Any): Id = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Id]
-    }
-    
-    extension [Self <: Id](x: Self) {
-      
-      inline def setId(value: /* import warning: importer.ImportType#apply Failed type conversion: infer ID */ js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Intersectionlength extends StObject {
-    
     var _id: Double
     
     var intersection_length: Double
   }
-  object Intersectionlength {
+  object Id {
     
-    inline def apply(_id: Double, intersection_length: Double): Intersectionlength = {
+    inline def apply(_id: Double, intersection_length: Double): Id = {
       val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], intersection_length = intersection_length.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Intersectionlength]
+      __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Intersectionlength](x: Self) {
+    extension [Self <: Id](x: Self) {
       
       inline def setIntersection_length(value: Double): Self = StObject.set(x, "intersection_length", value.asInstanceOf[js.Any])
       
@@ -174,20 +157,20 @@ object anon {
   
   trait Items[I /* <: js.Object */] extends StObject {
     
-    var items: js.Array[I & Intersectionlength]
+    var items: js.Array[I & Id]
   }
   object Items {
     
-    inline def apply[I /* <: js.Object */](items: js.Array[I & Intersectionlength]): Items[I] = {
+    inline def apply[I /* <: js.Object */](items: js.Array[I & Id]): Items[I] = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[Items[I]]
     }
     
     extension [Self <: Items[?], I /* <: js.Object */](x: Self & Items[I]) {
       
-      inline def setItems(value: js.Array[I & Intersectionlength]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[I & Id]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: (I & Intersectionlength)*): Self = StObject.set(x, "items", js.Array(value*))
+      inline def setItemsVarargs(value: (I & Id)*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
   

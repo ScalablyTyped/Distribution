@@ -16,8 +16,10 @@ object code02 {
   
   @JSImport("@carbon/elements", "code02.fontFamily")
   @js.native
-  def fontFamily: String = js.native
-  inline def fontFamily_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontFamily")(x.asInstanceOf[js.Any])
+  def fontFamily: /* 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace */ String = js.native
+  inline def fontFamily_=(
+    x: /* 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace */ String
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontFamily")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "code02.fontSize")
   @js.native

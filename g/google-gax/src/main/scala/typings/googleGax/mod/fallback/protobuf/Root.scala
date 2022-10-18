@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options] Top level options
   */
 open class Root ()
-  extends typings.googleGax.fallbackMod.protobuf.Root {
+  extends typings.googleGax.buildSrcFallbackMod.protobuf.Root {
   def this(options: StringDictionary[Any]) = this()
 }
 /* static members */

@@ -1,7 +1,10 @@
 package typings.node.fsMod
 
+import typings.node.NodeJS.ArrayBufferView
+import typings.node.NodeJS.ErrnoException
 import typings.node.anon.Encoding
 import typings.node.anon.EncodingFlag
+import typings.node.anon.EncodingWithFileTypes
 import typings.node.anon.Flag
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
@@ -15,15 +18,16 @@ import typings.node.anon.WatchFileOptionsbigintfal
 import typings.node.anon.WatchFileOptionsbiginttru
 import typings.node.anon.WatchOptionsencodingbuffe
 import typings.node.anon.WithFileTypes
-import typings.node.anon.`2`
 import typings.node.anon.encodingBufferEncodingflaEncoding
 import typings.node.anon.encodingnullundefinedflagEncoding
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.^
 import typings.node.fsMod.symlink.Type
+import typings.node.nodeColonurlMod.URL
 import typings.node.nodeStrings.buffer_
-import typings.node.nodeUrlMod.URL
+import typings.std.BigInt64Array
+import typings.std.BigUint64Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,73 +74,33 @@ inline def copyFile(src: PathLike, dest: PathLike, mode: Double, callback: NoPar
 inline def copyFileSync(src: PathLike, dest: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFileSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def copyFileSync(src: PathLike, dest: PathLike, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFileSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def cp(
-  source: String,
-  destination: String,
-  callback: js.Function1[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cp(source: String, destination: String, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def cp(
   source: String,
   destination: String,
   opts: CopyOptions,
-  callback: js.Function1[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  Unit
-]
+  callback: js.Function1[/* err */ ErrnoException | Null, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def cp(
-  source: String,
-  destination: URL,
-  callback: js.Function1[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cp(source: String, destination: URL, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def cp(
   source: String,
   destination: URL,
   opts: CopyOptions,
-  callback: js.Function1[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  Unit
-]
+  callback: js.Function1[/* err */ ErrnoException | Null, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def cp(
-  source: URL,
-  destination: String,
-  callback: js.Function1[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cp(source: URL, destination: String, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def cp(
   source: URL,
   destination: String,
   opts: CopyOptions,
-  callback: js.Function1[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  Unit
-]
+  callback: js.Function1[/* err */ ErrnoException | Null, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def cp(
-  source: URL,
-  destination: URL,
-  callback: js.Function1[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cp(source: URL, destination: URL, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def cp(
   source: URL,
   destination: URL,
   opts: CopyOptions,
-  callback: js.Function1[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  Unit
-]
+  callback: js.Function1[/* err */ ErrnoException | Null, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def cpSync(source: String, destination: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpSync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -172,49 +136,26 @@ inline def fdatasync(fd: Double, callback: NoParamCallback): Unit = (^.asInstanc
 
 inline def fdatasyncSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fdatasyncSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def fstat(
-  fd: Double,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* stats */ Stats, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def fstat(fd: Double, callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def fstat(
   fd: Double,
   options: Unit,
-  callback: js.Function2[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  BigIntStats | (/* stats */ Stats), 
-  Unit
-]
+  callback: js.Function2[ErrnoException | Null, BigIntStats | (/* stats */ Stats), Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def fstat(
   fd: Double,
   options: StatOptionsbigintfalseund,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* stats */ Stats, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def fstat(
   fd: Double,
   options: StatOptionsbiginttrue,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* stats */ BigIntStats, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ BigIntStats, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def fstat(
   fd: Double,
   options: StatOptions,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* stats */ Stats | BigIntStats, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats | BigIntStats, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def fstatSync(fd: Double): Stats | BigIntStats = ^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Stats | BigIntStats]
@@ -252,49 +193,26 @@ inline def link(existingPath: PathLike, newPath: PathLike, callback: NoParamCall
 
 inline def linkSync(existingPath: PathLike, newPath: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linkSync")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def lstat(
-  path: PathLike,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* stats */ Stats, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def lstat(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def lstat(
   path: PathLike,
   options: Unit,
-  callback: js.Function2[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  BigIntStats | (/* stats */ Stats), 
-  Unit
-]
+  callback: js.Function2[ErrnoException | Null, BigIntStats | (/* stats */ Stats), Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def lstat(
   path: PathLike,
   options: StatOptionsbigintfalseund,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* stats */ Stats, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def lstat(
   path: PathLike,
   options: StatOptionsbiginttrue,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* stats */ BigIntStats, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ BigIntStats, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def lstat(
   path: PathLike,
   options: StatOptions,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* stats */ Stats | BigIntStats, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats | BigIntStats, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def lstatSync: StatSyncFn = ^.asInstanceOf[js.Dynamic].selectDynamic("lstatSync").asInstanceOf[StatSyncFn]
@@ -307,50 +225,30 @@ inline def mkdir(path: PathLike, callback: NoParamCallback): Unit = (^.asInstanc
 inline def mkdir(
   path: PathLike,
   options: Null,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* path */ js.UndefOr[String], 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def mkdir(path: PathLike, options: Null, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def mkdir(
   path: PathLike,
   options: Unit,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* path */ js.UndefOr[String], 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def mkdir(path: PathLike, options: Unit, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def mkdir(path: PathLike, options: MakeDirectoryOptionsrecurMode, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def mkdir(
   path: PathLike,
   options: MakeDirectoryOptionsrecur,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* path */ js.UndefOr[String], 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def mkdir(
   path: PathLike,
   options: MakeDirectoryOptions,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* path */ js.UndefOr[String], 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def mkdir(
   path: PathLike,
   options: Mode,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* path */ js.UndefOr[String], 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def mkdir(path: PathLike, options: Mode, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
@@ -363,40 +261,21 @@ inline def mkdirSync(path: PathLike, options: Mode): js.UndefOr[String] = (^.asI
 inline def mkdirSync_Unit(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def mkdirSync_Unit(path: PathLike, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+inline def mkdtemp(prefix: String, callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def mkdtemp(
   prefix: String,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* folder */ String, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def mkdtemp(
-  prefix: String,
-  options: `2`,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* folder */ Buffer, 
-  Unit
-]
+  options: Encoding,
+  callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ Buffer, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def mkdtemp(
   prefix: String,
   options: EncodingOption,
-  callback: js.Function2[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  Buffer | (/* folder */ String), 
-  Unit
-]
+  callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ String), Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def mkdtemp(
   prefix: String,
   options: buffer_,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* folder */ Buffer, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ Buffer, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def mkdtempSync(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -406,112 +285,62 @@ inline def mkdtempSync(prefix: String, options: EncodingOption): String = (^.asI
 inline def mkdtempSync_Union(prefix: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
 inline def mkdtempSync_Union(prefix: String, options: EncodingOption): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
 
-inline def open(
-  path: PathLike,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* fd */ Double, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def open(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def open(
   path: PathLike,
   flags: Unit,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* fd */ Double, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def open(
   path: PathLike,
   flags: Unit,
   mode: Null,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* fd */ Double, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def open(
   path: PathLike,
   flags: Unit,
   mode: Unit,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* fd */ Double, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def open(
   path: PathLike,
   flags: Unit,
   mode: Mode,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* fd */ Double, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def open(
   path: PathLike,
   flags: OpenMode,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* fd */ Double, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def open(
   path: PathLike,
   flags: OpenMode,
   mode: Null,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* fd */ Double, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def open(
   path: PathLike,
   flags: OpenMode,
   mode: Unit,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* fd */ Double, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def open(
   path: PathLike,
   flags: OpenMode,
   mode: Mode,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* fd */ Double, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def openSync(path: PathLike, flags: OpenMode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def openSync(path: PathLike, flags: OpenMode, mode: Mode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Double]
 
-inline def opendir(
-  path: PathLike,
-  cb: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* dir */ Dir, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def opendir(path: PathLike, cb: js.Function2[/* err */ ErrnoException | Null, /* dir */ Dir, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def opendir(
   path: PathLike,
   options: OpenDirOptions,
-  cb: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* dir */ Dir, 
-  Unit
-]
+  cb: js.Function2[/* err */ ErrnoException | Null, /* dir */ Dir, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def opendirSync(path: PathLike): Dir = ^.asInstanceOf[js.Dynamic].applyDynamic("opendirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Dir]
@@ -519,111 +348,364 @@ inline def opendirSync(path: PathLike, options: OpenDirOptions): Dir = (^.asInst
 
 inline def read(
   fd: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* bytesRead */ Double, 
-  /* buffer */ js.typedarray.ArrayBufferView, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def read[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
+  buffer: js.typedarray.DataView,
   offset: Double,
   length: Double,
   position: Null,
   callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  /* err */ ErrnoException | Null, 
   /* bytesRead */ Double, 
-  /* buffer */ TBuffer, 
+  /* buffer */ js.typedarray.DataView, 
   Unit
 ]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def read[TBuffer /* <: js.typedarray.ArrayBufferView */](
+inline def read(
   fd: Double,
-  buffer: TBuffer,
+  buffer: js.typedarray.DataView,
   offset: Double,
   length: Double,
   position: ReadPosition,
   callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  /* err */ ErrnoException | Null, 
   /* bytesRead */ Double, 
-  /* buffer */ TBuffer, 
+  /* buffer */ js.typedarray.DataView, 
   Unit
 ]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def read[TBuffer /* <: js.typedarray.ArrayBufferView */](
+inline def read(
   fd: Double,
-  options: ReadAsyncOptions[TBuffer],
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Double,
+  position: Null,
   callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  /* err */ ErrnoException | Null, 
   /* bytesRead */ Double, 
-  /* buffer */ TBuffer, 
+  /* buffer */ js.typedarray.Float32Array, 
   Unit
 ]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Double,
+  position: ReadPosition,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Double,
+  position: ReadPosition,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Double,
+  position: ReadPosition,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Double,
+  position: ReadPosition,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Double,
+  position: ReadPosition,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Double,
+  position: ReadPosition,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Double,
+  position: ReadPosition,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Double,
+  position: ReadPosition,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Double,
+  position: ReadPosition,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Double,
+  position: ReadPosition,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Double,
+  position: ReadPosition,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read(
+  fd: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* bytesRead */ Double, 
+  /* buffer */ ArrayBufferView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read[TBuffer /* <: ArrayBufferView */](
+  fd: Double,
+  options: ReadAsyncOptions[TBuffer],
+  callback: js.Function3[/* err */ ErrnoException | Null, /* bytesRead */ Double, /* buffer */ TBuffer, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def readFile(
   path: PathOrFileDescriptor,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* data */ Buffer, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readFile(
   path: PathOrFileDescriptor,
   options: Null,
-  callback: js.Function2[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  (/* data */ Buffer) | String, 
-  Unit
-]
+  callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readFile(
   path: PathOrFileDescriptor,
   options: Unit,
-  callback: js.Function2[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  (/* data */ Buffer) | String, 
-  Unit
-]
+  callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readFile(
   path: PathOrFileDescriptor,
   options: ObjectEncodingOptionsflag,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* data */ String | Buffer, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String | Buffer, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readFile(
   path: PathOrFileDescriptor,
   options: encodingBufferEncodingflaEncoding,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* data */ String, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readFile(
   path: PathOrFileDescriptor,
   options: encodingnullundefinedflagEncoding,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* data */ Buffer, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readFile(
   path: PathOrFileDescriptor,
   options: BufferEncoding,
-  callback: js.Function2[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  Buffer | (/* data */ String), 
-  Unit
-]
+  callback: js.Function2[ErrnoException | Null, Buffer | (/* data */ String), Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def readFileSync(path: PathOrFileDescriptor): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
@@ -636,132 +718,78 @@ inline def readFileSync_Buffer(path: PathOrFileDescriptor): Buffer = ^.asInstanc
 
 inline def readFileSync_Union(path: PathOrFileDescriptor, options: BufferEncoding): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
 
-inline def readSync(fd: Double, buffer: js.typedarray.ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def readSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def readSync(
-  fd: Double,
-  buffer: js.typedarray.ArrayBufferView,
-  offset: Double,
-  length: Double,
-  position: ReadPosition
-): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def readSync(fd: Double, buffer: js.typedarray.ArrayBufferView, opts: ReadSyncOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def readSync(fd: Double, buffer: ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: ReadPosition): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def readSync(fd: Double, buffer: ArrayBufferView, opts: ReadSyncOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
 
 inline def readdir(
   path: PathLike,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* files */ js.Array[String], 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readdir(
   path: PathLike,
   options: Null,
-  callback: js.Function2[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* files */ js.Array[Buffer | String], 
-  Unit
-]
+  callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readdir(
   path: PathLike,
   options: Unit,
-  callback: js.Function2[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* files */ js.Array[Buffer | String], 
-  Unit
-]
+  callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readdir(
   path: PathLike,
-  options: Encoding,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* files */ js.Array[Buffer], 
-  Unit
-]
+  options: EncodingWithFileTypes,
+  callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readdir(
   path: PathLike,
   options: ObjectEncodingOptionswithEncoding,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* files */ js.Array[Dirent], 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Dirent], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readdir(
   path: PathLike,
   options: ObjectEncodingOptionswith,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* files */ js.Array[Buffer | String], 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readdir(
   path: PathLike,
   options: WithFileTypes,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* files */ js.Array[String], 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readdir(
   path: PathLike,
   options: BufferEncoding,
-  callback: js.Function2[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* files */ js.Array[Buffer | String], 
-  Unit
-]
+  callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readdir(
   path: PathLike,
   options: buffer_,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* files */ js.Array[Buffer], 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def readdirSync(path: PathLike): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-inline def readdirSync(path: PathLike, options: Encoding): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
+inline def readdirSync(path: PathLike, options: EncodingWithFileTypes): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 inline def readdirSync(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer | String]]
 inline def readdirSync(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[Dirent] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Dirent]]
-inline def readdirSync(path: PathLike, options: WithFileTypes): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+inline def readdirSync(path: PathLike, options: WithFileTypes): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
 inline def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 
 inline def readdirSync_buffer(path: PathLike, options: buffer_): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
 
 inline def readlink(
   path: PathLike,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* linkString */ String, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readlink(
   path: PathLike,
   options: BufferEncodingOption,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* linkString */ Buffer, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ Buffer, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readlink(
   path: PathLike,
   options: EncodingOption,
-  callback: js.Function2[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  Buffer | (/* linkString */ String), 
-  Unit
-]
+  callback: js.Function2[ErrnoException | Null, Buffer | (/* linkString */ String), Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def readlinkSync(path: PathLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -773,28 +801,28 @@ inline def readlinkSync_Union(path: PathLike, options: EncodingOption): String |
 
 inline def readv(
   fd: Double,
-  buffers: js.Array[js.typedarray.ArrayBufferView],
+  buffers: js.Array[ArrayBufferView],
   cb: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  /* err */ ErrnoException | Null, 
   /* bytesRead */ Double, 
-  /* buffers */ js.Array[js.typedarray.ArrayBufferView], 
+  /* buffers */ js.Array[ArrayBufferView], 
   Unit
 ]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readv")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readv(
   fd: Double,
-  buffers: js.Array[js.typedarray.ArrayBufferView],
+  buffers: js.Array[ArrayBufferView],
   position: Double,
   cb: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  /* err */ ErrnoException | Null, 
   /* bytesRead */ Double, 
-  /* buffers */ js.Array[js.typedarray.ArrayBufferView], 
+  /* buffers */ js.Array[ArrayBufferView], 
   Unit
 ]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readv")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def readvSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readvSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def readvSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView], position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readvSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def readvSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readvSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def readvSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readvSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
 
 inline def rename(oldPath: PathLike, newPath: PathLike, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
@@ -812,49 +840,26 @@ inline def rmdir(path: PathLike, options: RmDirOptions, callback: NoParamCallbac
 inline def rmdirSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def rmdirSync(path: PathLike, options: RmDirOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def stat(
-  path: PathLike,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* stats */ Stats, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def stat(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def stat(
   path: PathLike,
   options: Unit,
-  callback: js.Function2[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  BigIntStats | (/* stats */ Stats), 
-  Unit
-]
+  callback: js.Function2[ErrnoException | Null, BigIntStats | (/* stats */ Stats), Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def stat(
   path: PathLike,
   options: StatOptionsbigintfalseund,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* stats */ Stats, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def stat(
   path: PathLike,
   options: StatOptionsbiginttrue,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* stats */ BigIntStats, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ BigIntStats, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def stat(
   path: PathLike,
   options: StatOptions,
-  callback: js.Function2[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* stats */ Stats | BigIntStats, 
-  Unit
-]
+  callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats | BigIntStats, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def statSync: StatSyncFn = ^.asInstanceOf[js.Dynamic].selectDynamic("statSync").asInstanceOf[StatSyncFn]
@@ -920,693 +925,6144 @@ inline def watch_buffer(filename: PathLike, options: buffer_, listener: WatchLis
 
 inline def write(
   fd: Double,
-  string: String,
+  buffer: js.typedarray.DataView,
   callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  /* err */ ErrnoException | Null, 
   /* written */ Double, 
-  /* str */ String, 
+  /* buffer */ js.typedarray.DataView, 
   Unit
 ]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Double,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Double,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Double,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Double,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Double,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Double,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Double,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Double,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Double,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Double,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Double,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Null,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Null,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Null,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Null,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Null,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Null,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Null,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Null,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Null,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Null,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Null,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Null,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Unit,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Unit,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Unit,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Unit,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Unit,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Unit,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Unit,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Unit,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Unit,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Unit,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Unit,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.DataView,
+  offset: Unit,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.DataView, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Double,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Null,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Null,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Null,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Null,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Null,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Null,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Null,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Null,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Null,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Null,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Null,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Null,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Unit,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Unit,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Unit,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Unit,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Unit,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Unit,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Unit,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Unit,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Unit,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Unit,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Unit,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float32Array,
+  offset: Unit,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Double,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Null,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Null,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Null,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Null,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Null,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Null,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Null,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Null,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Null,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Null,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Null,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Null,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Unit,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Unit,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Unit,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Unit,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Unit,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Unit,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Unit,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Unit,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Unit,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Unit,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Unit,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Float64Array,
+  offset: Unit,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Float64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Double,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Null,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Null,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Null,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Null,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Null,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Null,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Null,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Null,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Null,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Null,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Null,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Null,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Unit,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Unit,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Unit,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Unit,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Unit,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Unit,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Unit,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Unit,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Unit,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Unit,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Unit,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int16Array,
+  offset: Unit,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Double,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Null,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Null,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Null,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Null,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Null,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Null,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Null,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Null,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Null,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Null,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Null,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Null,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Unit,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Unit,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Unit,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Unit,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Unit,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Unit,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Unit,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Unit,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Unit,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Unit,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Unit,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int32Array,
+  offset: Unit,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Double,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Null,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Null,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Null,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Null,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Null,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Null,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Null,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Null,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Null,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Null,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Null,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Null,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Unit,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Unit,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Unit,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Unit,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Unit,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Unit,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Unit,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Unit,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Unit,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Unit,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Unit,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Int8Array,
+  offset: Unit,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Int8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Double,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Null,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Null,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Null,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Null,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Null,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Null,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Null,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Null,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Null,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Null,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Null,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Null,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Unit,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Unit,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Unit,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Unit,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Unit,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Unit,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Unit,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Unit,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Unit,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Unit,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Unit,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint16Array,
+  offset: Unit,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint16Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Double,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Null,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Null,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Null,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Null,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Null,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Null,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Null,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Null,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Null,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Null,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Null,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Null,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Unit,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Unit,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Unit,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Unit,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Unit,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Unit,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Unit,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Unit,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Unit,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Unit,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Unit,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint32Array,
+  offset: Unit,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint32Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Double,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Null,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Null,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Null,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Null,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Null,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Null,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Null,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Null,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Null,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Null,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Null,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Null,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Unit,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Unit,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Unit,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Unit,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Unit,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Unit,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Unit,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Unit,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Unit,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Unit,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Unit,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8Array,
+  offset: Unit,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Double,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Null,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Null,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Null,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Null,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Null,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Null,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Null,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Null,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Null,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Null,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Null,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Null,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Unit,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Unit,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Unit,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Unit,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Unit,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Unit,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Unit,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Unit,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Unit,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Unit,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Unit,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: js.typedarray.Uint8ClampedArray,
+  offset: Unit,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ js.typedarray.Uint8ClampedArray, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Double,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Null,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Null,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Null,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Null,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Null,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Null,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Null,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Null,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Null,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Null,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Null,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Null,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Unit,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Unit,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Unit,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Unit,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Unit,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Unit,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Unit,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Unit,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Unit,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Unit,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Unit,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigInt64Array,
+  offset: Unit,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigInt64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Double,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Null,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Null,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Null,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Null,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Null,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Null,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Null,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Null,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Null,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Null,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Null,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Null,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Unit,
+  length: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Unit,
+  length: Double,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Unit,
+  length: Double,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Unit,
+  length: Double,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Unit,
+  length: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Unit,
+  length: Null,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Unit,
+  length: Null,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Unit,
+  length: Null,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Unit,
+  length: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Unit,
+  length: Unit,
+  position: Double,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Unit,
+  length: Unit,
+  position: Null,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  buffer: BigUint64Array,
+  offset: Unit,
+  length: Unit,
+  position: Unit,
+  callback: js.Function3[
+  /* err */ ErrnoException | Null, 
+  /* written */ Double, 
+  /* buffer */ BigUint64Array, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(
+  fd: Double,
+  string: String,
+  callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def write(
   fd: Double,
   string: String,
   position: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* str */ String, 
-  Unit
-]
+  callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def write(
   fd: Double,
   string: String,
   position: Double,
   encoding: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* str */ String, 
-  Unit
-]
+  callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def write(
   fd: Double,
   string: String,
   position: Double,
   encoding: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* str */ String, 
-  Unit
-]
+  callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def write(
   fd: Double,
   string: String,
   position: Double,
   encoding: BufferEncoding,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* str */ String, 
-  Unit
-]
+  callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def write(
   fd: Double,
   string: String,
   position: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* str */ String, 
-  Unit
-]
+  callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def write(
   fd: Double,
   string: String,
   position: Null,
   encoding: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* str */ String, 
-  Unit
-]
+  callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def write(
   fd: Double,
   string: String,
   position: Null,
   encoding: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* str */ String, 
-  Unit
-]
+  callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def write(
   fd: Double,
   string: String,
   position: Null,
   encoding: BufferEncoding,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* str */ String, 
-  Unit
-]
+  callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def write(
   fd: Double,
   string: String,
   position: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* str */ String, 
-  Unit
-]
+  callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def write(
   fd: Double,
   string: String,
   position: Unit,
   encoding: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* str */ String, 
-  Unit
-]
+  callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def write(
   fd: Double,
   string: String,
   position: Unit,
   encoding: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* str */ String, 
-  Unit
-]
+  callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def write(
   fd: Double,
   string: String,
   position: Unit,
   encoding: BufferEncoding,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* str */ String, 
-  Unit
-]
+  callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Double,
-  length: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Double,
-  length: Double,
-  position: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Double,
-  length: Double,
-  position: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Double,
-  length: Double,
-  position: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Double,
-  length: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Double,
-  length: Null,
-  position: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Double,
-  length: Null,
-  position: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Double,
-  length: Null,
-  position: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Double,
-  length: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Double,
-  length: Unit,
-  position: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Double,
-  length: Unit,
-  position: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Double,
-  length: Unit,
-  position: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Null,
-  length: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Null,
-  length: Double,
-  position: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Null,
-  length: Double,
-  position: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Null,
-  length: Double,
-  position: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Null,
-  length: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Null,
-  length: Null,
-  position: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Null,
-  length: Null,
-  position: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Null,
-  length: Null,
-  position: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Null,
-  length: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Null,
-  length: Unit,
-  position: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Null,
-  length: Unit,
-  position: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Null,
-  length: Unit,
-  position: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Unit,
-  length: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Unit,
-  length: Double,
-  position: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Unit,
-  length: Double,
-  position: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Unit,
-  length: Double,
-  position: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Unit,
-  length: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Unit,
-  length: Null,
-  position: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Unit,
-  length: Null,
-  position: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Unit,
-  length: Null,
-  position: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Unit,
-  length: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Unit,
-  length: Unit,
-  position: Double,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Unit,
-  length: Unit,
-  position: Null,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def write[TBuffer /* <: js.typedarray.ArrayBufferView */](
-  fd: Double,
-  buffer: TBuffer,
-  offset: Unit,
-  length: Unit,
-  position: Unit,
-  callback: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* written */ Double, 
-  /* buffer */ TBuffer, 
-  Unit
-]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def writeFile(file: PathOrFileDescriptor, data: String, options: WriteFileOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def writeFile(
   file: PathOrFileDescriptor,
-  data: js.typedarray.ArrayBufferView,
+  data: ArrayBufferView,
   options: WriteFileOptions,
   callback: NoParamCallback
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def writeFile(path: PathOrFileDescriptor, data: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def writeFile(path: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeFile(path: PathOrFileDescriptor, data: ArrayBufferView, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def writeFileSync(file: PathOrFileDescriptor, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def writeFileSync(file: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def writeFileSync(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def writeFileSync(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeFileSync(file: PathOrFileDescriptor, data: ArrayBufferView): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeFileSync(file: PathOrFileDescriptor, data: ArrayBufferView, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writeSync(
-  fd: Double,
-  buffer: js.typedarray.ArrayBufferView,
-  offset: Double,
-  length: Double,
-  position: Double
-): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def writeSync(fd: Double, string: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def writeSync(fd: Double, string: String, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def writeSync(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -1615,28 +7071,28 @@ inline def writeSync(fd: Double, string: String, position: Unit, encoding: Buffe
 
 inline def writev(
   fd: Double,
-  buffers: js.Array[js.typedarray.ArrayBufferView],
+  buffers: js.Array[ArrayBufferView],
   cb: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  /* err */ ErrnoException | Null, 
   /* bytesWritten */ Double, 
-  /* buffers */ js.Array[js.typedarray.ArrayBufferView], 
+  /* buffers */ js.Array[ArrayBufferView], 
   Unit
 ]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def writev(
   fd: Double,
-  buffers: js.Array[js.typedarray.ArrayBufferView],
+  buffers: js.Array[ArrayBufferView],
   position: Double,
   cb: js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  /* err */ ErrnoException | Null, 
   /* bytesWritten */ Double, 
-  /* buffers */ js.Array[js.typedarray.ArrayBufferView], 
+  /* buffers */ js.Array[ArrayBufferView], 
   Unit
 ]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def writevSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writevSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def writevSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView], position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writevSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writevSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writevSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writevSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writevSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
 
 /* Rewritten from type alias, can be one of: 
   - typings.node.fsMod.ObjectEncodingOptions
@@ -1648,16 +7104,14 @@ type EncodingOption = js.UndefOr[_EncodingOption | Null]
 
 type Mode = Double | String
 
-type NoParamCallback = js.Function1[
-/* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-Unit]
+type NoParamCallback = js.Function1[/* err */ ErrnoException | Null, Unit]
 
 type OpenMode = Double | String
 
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
   - typings.node.bufferMod.global.Buffer
-  - typings.node.nodeUrlMod.URL
+  - typings.node.nodeColonurlMod.URL
 */
 type PathLike = _PathLike | String
 
@@ -1670,7 +7124,7 @@ type TimeLike = String | Double | js.Date
 type WatchListener[T] = js.Function2[/* event */ WatchEventType, /* filename */ T, Unit]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.node.anon.ObjectEncodingOptionsAborEncoding
+  - typings.node.anon.ObjectEncodingOptionsAbor
   - typings.node.bufferMod.global.BufferEncoding
   - scala.Null
 */

@@ -1,6 +1,6 @@
 package typings.karmaCoverage
 
-import typings.karmaCoverage.mod.ReporterType
+import typings.karmaCoverage.karmaMod.ReporterType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

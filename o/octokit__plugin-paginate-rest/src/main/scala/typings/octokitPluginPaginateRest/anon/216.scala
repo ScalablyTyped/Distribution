@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `216` extends StObject {
   
-  var data: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/user/codespaces']['get']>['data']['codespaces'] */ js.Any
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/user/codespaces/secrets']['get']>['data']['secrets'] */ js.Any
 }
 object `216` {
   
   inline def apply(
-    data: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/user/codespaces']['get']>['data']['codespaces'] */ js.Any
+    data: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/user/codespaces/secrets']['get']>['data']['secrets'] */ js.Any
   ): `216` = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[`216`]
@@ -20,7 +20,7 @@ object `216` {
   extension [Self <: `216`](x: Self) {
     
     inline def setData(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/user/codespaces']['get']>['data']['codespaces'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/user/codespaces/secrets']['get']>['data']['secrets'] */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

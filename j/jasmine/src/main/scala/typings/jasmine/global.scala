@@ -1,6 +1,5 @@
 package typings.jasmine
 
-import org.scalablytyped.runtime.TopLevel
 import typings.jasmine.jasmine.ArrayContaining
 import typings.jasmine.jasmine.ArrayLikeMatchers
 import typings.jasmine.jasmine.AsymmetricMatcher
@@ -25,7 +24,6 @@ import typings.jasmine.jasmine.SpyObj
 import typings.jasmine.jasmine.SpyObjMethodNames
 import typings.jasmine.jasmine.SpyObjPropertyNames
 import typings.jasmine.jasmineStrings.get
-import typings.jasmine.jasmineStrings.objectContaining_
 import typings.jasmine.jasmineStrings.set
 import typings.std.ArrayLike
 import typings.std.Map
@@ -311,9 +309,7 @@ object global {
     inline def notEmpty(): AsymmetricMatcher[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("notEmpty")().asInstanceOf[AsymmetricMatcher[Any]]
     
     inline def objectContaining[T](
-      sample: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]:? jasmine.jasmine.ExpectedRecursive<T[K]>}
-      */ objectContaining_ & TopLevel[T]
+      sample: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]:? jasmine.jasmine.ExpectedRecursive<T[K]>} */ js.Any
     ): ObjectContaining[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ObjectContaining[T]]
     
     inline def setContaining[T](sample: Set[T]): AsymmetricMatcher[Set[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[Set[T]]]
@@ -369,10 +365,13 @@ object global {
     * @param object The object upon which to install the `Spy`.
     * @param method The name of the method to replace with a `Spy`.
     */
-  inline def spyOn[T, K /* <: /* keyof T */ String */](`object`: T, method: K): Spy[
-    (js.Function1[/* args */ Any, Any]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any)
+  inline def spyOn[T, K /* <: /* keyof T */ String */](
+    `object`: T,
+    method: /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends std.Function ? K : never */ js.Any
+  ): Spy[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends jasmine.jasmine.Func ? T[K] : T[K] extends {new (args : infer A): infer V} ? (args : A): V : never */ js.Any
   ] = (js.Dynamic.global.applyDynamic("spyOn")(`object`.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Spy[
-    (js.Function1[/* args */ Any, Any]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any)
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends jasmine.jasmine.Func ? T[K] : T[K] extends {new (args : infer A): infer V} ? (args : A): V : never */ js.Any
   ]]
   
   /**

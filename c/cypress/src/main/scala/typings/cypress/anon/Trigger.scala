@@ -3,11 +3,14 @@ package typings.cypress.anon
 import typings.cypress.JQuery.Event
 import typings.cypress.JQuery._SpecialEventHook
 import typings.cypress.cypressBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Trigger[TTarget, TData] extends _SpecialEventHook[TTarget, TData] {
+trait Trigger[TTarget, TData]
+  extends StObject
+     with _SpecialEventHook[TTarget, TData] {
+  
   /**
     * Called when the `.trigger()` or `.triggerHandler()` methods are used to trigger an event for the special type from code, as opposed to events that originate from within the browser. The `this` keyword will be the element being triggered, and the event argument will be a `jQuery.Event` object constructed from the caller's input. At minimum, the event type, data, namespace, and target properties are set on the event. The data argument represents additional data passed by `.trigger()` if present.
     *
@@ -16,12 +19,15 @@ trait Trigger[TTarget, TData] extends _SpecialEventHook[TTarget, TData] {
     */
   def trigger(event: Event, data: TData): Unit | `false`
 }
-
 object Trigger {
-  @scala.inline
-  def apply[TTarget, TData](trigger: (Event, TData) => Unit | `false`): Trigger[TTarget, TData] = {
+  
+  inline def apply[TTarget, TData](trigger: (Event, TData) => Unit | `false`): Trigger[TTarget, TData] = {
     val __obj = js.Dynamic.literal(trigger = js.Any.fromFunction2(trigger))
     __obj.asInstanceOf[Trigger[TTarget, TData]]
   }
+  
+  extension [Self <: Trigger[?, ?], TTarget, TData](x: Self & (Trigger[TTarget, TData])) {
+    
+    inline def setTrigger(value: (Event, TData) => Unit | `false`): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
+  }
 }
-

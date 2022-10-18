@@ -39,10 +39,6 @@ object octokitOpenapiTypesStrings {
   inline def APPROVE: APPROVE = "APPROVE".asInstanceOf[APPROVE]
   
   @js.native
-  sealed trait Add extends StObject
-  inline def Add: Add = "Add".asInstanceOf[Add]
-  
-  @js.native
   sealed trait Archived extends StObject
   inline def Archived: Archived = "Archived".asInstanceOf[Archived]
   
@@ -79,6 +75,10 @@ object octokitOpenapiTypesStrings {
   inline def CONTRIBUTOR: CONTRIBUTOR = "CONTRIBUTOR".asInstanceOf[CONTRIBUTOR]
   
   @js.native
+  sealed trait CVE extends StObject
+  inline def CVE: CVE = "CVE".asInstanceOf[CVE]
+  
+  @js.native
   sealed trait Created extends StObject
   inline def Created: Created = "Created".asInstanceOf[Created]
   
@@ -109,6 +109,10 @@ object octokitOpenapiTypesStrings {
   @js.native
   sealed trait Failed extends StObject
   inline def Failed: Failed = "Failed".asInstanceOf[Failed]
+  
+  @js.native
+  sealed trait GHSA extends StObject
+  inline def GHSA: GHSA = "GHSA".asInstanceOf[GHSA]
   
   @js.native
   sealed trait LEFT extends StObject
@@ -169,14 +173,6 @@ object octokitOpenapiTypesStrings {
   @js.native
   sealed trait Rebuilding extends StObject
   inline def Rebuilding: Rebuilding = "Rebuilding".asInstanceOf[Rebuilding]
-  
-  @js.native
-  sealed trait Remove extends StObject
-  inline def Remove: Remove = "Remove".asInstanceOf[Remove]
-  
-  @js.native
-  sealed trait Replace extends StObject
-  inline def Replace: Replace = "Replace".asInstanceOf[Replace]
   
   @js.native
   sealed trait Shutdown extends StObject
@@ -241,10 +237,6 @@ object octokitOpenapiTypesStrings {
   @js.native
   sealed trait active extends StObject
   inline def active: active = "active".asInstanceOf[active]
-  
-  @js.native
-  sealed trait add_ extends StObject
-  inline def add_ : add_ = "add".asInstanceOf[add_]
   
   @js.native
   sealed trait added extends StObject
@@ -563,6 +555,10 @@ object octokitOpenapiTypesStrings {
   inline def file: file = "file".asInstanceOf[file]
   
   @js.native
+  sealed trait fix_started extends StObject
+  inline def fix_started: fix_started = "fix_started".asInstanceOf[fix_started]
+  
+  @js.native
   sealed trait fixed extends StObject
   inline def fixed: fixed = "fixed".asInstanceOf[fixed]
   
@@ -621,6 +617,10 @@ object octokitOpenapiTypesStrings {
   @js.native
   sealed trait in_progress extends StObject
   inline def in_progress: in_progress = "in_progress".asInstanceOf[in_progress]
+  
+  @js.native
+  sealed trait inaccurate extends StObject
+  inline def inaccurate: inaccurate = "inaccurate".asInstanceOf[inaccurate]
   
   @js.native
   sealed trait inactive extends StObject
@@ -751,6 +751,10 @@ object octokitOpenapiTypesStrings {
   inline def newest: newest = "newest".asInstanceOf[newest]
   
   @js.native
+  sealed trait no_bandwidth extends StObject
+  inline def no_bandwidth: no_bandwidth = "no_bandwidth".asInstanceOf[no_bandwidth]
+  
+  @js.native
   sealed trait none_ extends StObject
   inline def none_ : none_ = "none".asInstanceOf[none_]
   
@@ -761,6 +765,10 @@ object octokitOpenapiTypesStrings {
   @js.native
   sealed trait not_planned extends StObject
   inline def not_planned: not_planned = "not_planned".asInstanceOf[not_planned]
+  
+  @js.native
+  sealed trait not_used extends StObject
+  inline def not_used: not_used = "not_used".asInstanceOf[not_used]
   
   @js.native
   sealed trait note extends StObject
@@ -923,10 +931,6 @@ object octokitOpenapiTypesStrings {
   inline def rejected: rejected = "rejected".asInstanceOf[rejected]
   
   @js.native
-  sealed trait remove_ extends StObject
-  inline def remove_ : remove_ = "remove".asInstanceOf[remove_]
-  
-  @js.native
   sealed trait removed extends StObject
   inline def removed: removed = "removed".asInstanceOf[removed]
   
@@ -937,10 +941,6 @@ object octokitOpenapiTypesStrings {
   @js.native
   sealed trait reopened extends StObject
   inline def reopened: reopened = "reopened".asInstanceOf[reopened]
-  
-  @js.native
-  sealed trait replace_ extends StObject
-  inline def replace_ : replace_ = "replace".asInstanceOf[replace_]
   
   @js.native
   sealed trait repos extends StObject
@@ -1083,6 +1083,10 @@ object octokitOpenapiTypesStrings {
   inline def timed_out: timed_out = "timed_out".asInstanceOf[timed_out]
   
   @js.native
+  sealed trait tolerable_risk extends StObject
+  inline def tolerable_risk: tolerable_risk = "tolerable_risk".asInstanceOf[tolerable_risk]
+  
+  @js.native
   sealed trait `too heated` extends StObject
   inline def `too heated`: `too heated` = ("too heated").asInstanceOf[`too heated`]
   
@@ -1141,10 +1145,6 @@ object octokitOpenapiTypesStrings {
   @js.native
   sealed trait watchers extends StObject
   inline def watchers: watchers = "watchers".asInstanceOf[watchers]
-  
-  @js.native
-  sealed trait web extends StObject
-  inline def web: web = "web".asInstanceOf[web]
   
   @js.native
   sealed trait week extends StObject

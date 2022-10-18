@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Particles/index", "DepthSortedParticle")
 @js.native
 open class DepthSortedParticle protected ()
-  extends typings.babylonjs.solidParticleMod.DepthSortedParticle {
+  extends typings.babylonjs.particlesSolidParticleMod.DepthSortedParticle {
   /**
     * Creates a new sorted particle
     * @param idx

@@ -1,34 +1,26 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Plussign1
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`-1`
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.confused
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.eyes
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.heart
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.hooray
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.laugh
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `121` extends StObject {
   
-  /**
-    * @description The [reaction type](https://docs.github.com/rest/reference/reactions#reaction-types) to add to the team discussion.
-    * @enum {string}
-    */
-  var content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[Environmenturl]
 }
 object `121` {
   
-  inline def apply(content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): `121` = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+  inline def apply(applicationSlashjson: js.Array[Environmenturl]): `121` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`121`]
   }
   
   extension [Self <: `121`](x: Self) {
     
-    inline def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(value: js.Array[Environmenturl]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationSlashjsonVarargs(value: Environmenturl*): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

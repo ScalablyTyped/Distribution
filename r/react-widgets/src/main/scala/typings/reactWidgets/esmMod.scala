@@ -9,7 +9,7 @@ import typings.react.mod.RefAttributes
 import typings.react.mod.global.JSX.Element
 import typings.reactWidgets.anon.Century
 import typings.reactWidgets.anon.MoveForward
-import typings.reactWidgets.anon.PartialMessagesCreateOption
+import typings.reactWidgets.anon.PartialMessages
 import typings.reactWidgets.esmCalendarMod.CalendarProps
 import typings.reactWidgets.esmCalendarMod.Direction
 import typings.reactWidgets.esmCalendarMod.View
@@ -385,8 +385,8 @@ object esmMod {
     
     inline def useLocalizer(): Localizer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")().asInstanceOf[Localizer[Any, Any]]
     inline def useLocalizer(messages: Unit, formats: FormatterOverrides[Any, Any]): Localizer[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[Localizer[Any, Any]]
-    inline def useLocalizer(messages: PartialMessagesCreateOption): Localizer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any]).asInstanceOf[Localizer[Any, Any]]
-    inline def useLocalizer(messages: PartialMessagesCreateOption, formats: FormatterOverrides[Any, Any]): Localizer[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[Localizer[Any, Any]]
+    inline def useLocalizer(messages: PartialMessages): Localizer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any]).asInstanceOf[Localizer[Any, Any]]
+    inline def useLocalizer(messages: PartialMessages, formats: FormatterOverrides[Any, Any]): Localizer[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalizer")(messages.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[Localizer[Any, Any]]
   }
   
   /**

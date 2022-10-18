@@ -1,11 +1,11 @@
 package typings.formatjsIntl.anon
 
-import typings.formatjsIntl.errorMod.InvalidConfigError
-import typings.formatjsIntl.errorMod.MessageFormatError
-import typings.formatjsIntl.errorMod.MissingDataError
-import typings.formatjsIntl.errorMod.MissingTranslationError
-import typings.formatjsIntl.errorMod.UnsupportedFormatterError
-import typings.formatjsIntl.typesMod.OnErrorFn
+import typings.formatjsIntl.libSrcErrorMod.InvalidConfigError
+import typings.formatjsIntl.libSrcErrorMod.MessageFormatError
+import typings.formatjsIntl.libSrcErrorMod.MissingDataError
+import typings.formatjsIntl.libSrcErrorMod.MissingTranslationError
+import typings.formatjsIntl.libSrcErrorMod.UnsupportedFormatterError
+import typings.formatjsIntl.libSrcTypesMod.OnErrorFn
 import typings.intlMessageformat.mod.FormatError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

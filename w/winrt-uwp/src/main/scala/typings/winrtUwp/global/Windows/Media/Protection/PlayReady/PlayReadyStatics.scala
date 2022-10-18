@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides support for returning static or constant data. */
-@JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyStatics")
+/* note: abstract class */ @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyStatics")
 @js.native
-abstract class PlayReadyStatics ()
+open class PlayReadyStatics ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyStatics
 object PlayReadyStatics {

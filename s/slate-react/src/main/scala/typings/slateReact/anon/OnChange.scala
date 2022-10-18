@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OnChange extends StObject {
   
-  def onChange(editor: typings.slate.editorMod.Editor): Unit
+  def onChange(editor: typings.slate.distInterfacesEditorMod.Editor): Unit
   
   var selectorContext: GetSlate
 }
 object OnChange {
   
-  inline def apply(onChange: typings.slate.editorMod.Editor => Unit, selectorContext: GetSlate): OnChange = {
+  inline def apply(onChange: typings.slate.distInterfacesEditorMod.Editor => Unit, selectorContext: GetSlate): OnChange = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), selectorContext = selectorContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnChange]
   }
   
   extension [Self <: OnChange](x: Self) {
     
-    inline def setOnChange(value: typings.slate.editorMod.Editor => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: typings.slate.distInterfacesEditorMod.Editor => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setSelectorContext(value: GetSlate): Self = StObject.set(x, "selectorContext", value.asInstanceOf[js.Any])
   }

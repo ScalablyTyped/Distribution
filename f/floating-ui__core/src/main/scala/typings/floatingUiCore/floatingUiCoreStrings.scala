@@ -1,12 +1,12 @@
 package typings.floatingUiCore
 
-import typings.floatingUiCore.typesMod.Alignment
-import typings.floatingUiCore.typesMod.Axis
-import typings.floatingUiCore.typesMod.ElementContext
-import typings.floatingUiCore.typesMod.Length
-import typings.floatingUiCore.typesMod.RootBoundary
-import typings.floatingUiCore.typesMod.Side
-import typings.floatingUiCore.typesMod.Strategy
+import typings.floatingUiCore.srcTypesMod.Alignment
+import typings.floatingUiCore.srcTypesMod.Axis
+import typings.floatingUiCore.srcTypesMod.ElementContext
+import typings.floatingUiCore.srcTypesMod.Length
+import typings.floatingUiCore.srcTypesMod.RootBoundary
+import typings.floatingUiCore.srcTypesMod.Side
+import typings.floatingUiCore.srcTypesMod.Strategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

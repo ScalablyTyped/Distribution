@@ -379,9 +379,6 @@ open class Question protected ()
   
   def getValueName(): String = js.native
   
-  /*
-    * Specifies whether to display a comment area. Incompatible with the `hasOther` property.
-    */
   def hasComment: Boolean = js.native
   def hasComment_=(`val`: Boolean): Unit = js.native
   
@@ -402,9 +399,6 @@ open class Question protected ()
     */
   def hasInput: Boolean = js.native
   
-  /*
-    * Specifies whether to display the "Other" choice item. Incompatible with the `hasComment` property.
-    */
   def hasOther: Boolean = js.native
   
   /* protected */ def hasOtherChanged(): Unit = js.native
@@ -747,6 +741,12 @@ open class Question protected ()
   
   /* protected */ def setValueCore(newValue: Any): Unit = js.native
   
+  /*
+    * Specifies whether to display a comment area. Incompatible with the `showOtherItem` property.
+    */
+  def showCommentArea: Boolean = js.native
+  def showCommentArea_=(`val`: Boolean): Unit = js.native
+  
   def showErrorOnBottom: Boolean = js.native
   
   def showErrorOnCore(location: String): Boolean = js.native
@@ -756,6 +756,12 @@ open class Question protected ()
   def showErrorsAboveQuestion: Boolean = js.native
   
   def showErrorsBelowQuestion: Boolean = js.native
+  
+  /*
+    * Specifies whether to display the "Other" choice item. Incompatible with the `hasComment` property.
+    */
+  def showOtherItem: Boolean = js.native
+  def showOtherItem_=(`val`: Boolean): Unit = js.native
   
   /*
     * Disable this property if you want to render the current question on the same line or row with the previous question or panel.

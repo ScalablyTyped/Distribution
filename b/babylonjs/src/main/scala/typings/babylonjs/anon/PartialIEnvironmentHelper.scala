@@ -1,8 +1,8 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.baseTextureMod.BaseTexture
-import typings.babylonjs.mathColorMod.Color3
-import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
+import typings.babylonjs.mathsMathDotcolorMod.Color3
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

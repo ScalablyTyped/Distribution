@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a user. */
-@JSGlobal("Windows.System.User")
+/* note: abstract class */ @JSGlobal("Windows.System.User")
 @js.native
-abstract class User ()
+open class User ()
   extends StObject
      with typings.winrtUwp.Windows.System.User {
   

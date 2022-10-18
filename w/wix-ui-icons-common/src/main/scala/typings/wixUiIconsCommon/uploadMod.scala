@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsUploadMod.UploadProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsUploadMod.UploadProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Upload", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Upload", JSImport.Default)
   @js.native
   val default: FC[UploadProps] = js.native
   

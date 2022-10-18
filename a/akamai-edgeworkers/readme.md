@@ -1,7 +1,7 @@
 
 # Scala.js typings for akamai-edgeworkers
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 
 

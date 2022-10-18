@@ -9,7 +9,7 @@ object mod {
   @JSImport("semaphore-async-await", JSImport.Default)
   @js.native
   open class default protected ()
-    extends typings.semaphoreAsyncAwait.semaphoreMod.default {
+    extends typings.semaphoreAsyncAwait.distSemaphoreMod.default {
     /**
       * Creates a semaphore.
       * @param permits  The number of permits, i.e. things being allowed to run in parallel.
@@ -25,5 +25,5 @@ object mod {
     * Creates a lock.
     */
   open class Lock ()
-    extends typings.semaphoreAsyncAwait.lockMod.Lock
+    extends typings.semaphoreAsyncAwait.distLockMod.Lock
 }

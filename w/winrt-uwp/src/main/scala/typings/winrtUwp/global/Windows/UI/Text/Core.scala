@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Core {
   
   /** Provides data for the CompositionCompleted event. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextCompositionCompletedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextCompositionCompletedEventArgs")
   @js.native
-  abstract class CoreTextCompositionCompletedEventArgs ()
+  open class CoreTextCompositionCompletedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextCompositionCompletedEventArgs {
     
@@ -41,9 +41,9 @@ object Core {
   }
   
   /** Represents a segment in a composition string. See Remarks for an illustration. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextCompositionSegment")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextCompositionSegment")
   @js.native
-  abstract class CoreTextCompositionSegment ()
+  open class CoreTextCompositionSegment ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextCompositionSegment {
     
@@ -57,9 +57,9 @@ object Core {
   }
   
   /** Provides data for the CompositionStarted event. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextCompositionStartedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextCompositionStartedEventArgs")
   @js.native
-  abstract class CoreTextCompositionStartedEventArgs ()
+  open class CoreTextCompositionStartedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextCompositionStartedEventArgs {
     
@@ -76,16 +76,16 @@ object Core {
   }
   
   /** The primary object used by text input controls to communicate with the text input server. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextEditContext")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextEditContext")
   @js.native
-  abstract class CoreTextEditContext ()
+  open class CoreTextEditContext ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextEditContext
   
   /** Provides data for the FormatUpdating event. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextFormatUpdatingEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextFormatUpdatingEventArgs")
   @js.native
-  abstract class CoreTextFormatUpdatingEventArgs ()
+  open class CoreTextFormatUpdatingEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingEventArgs {
     
@@ -310,9 +310,9 @@ object Core {
   }
   
   /** Represents the bounding boxes—in screen coordinates—of a range of text, and of a text input control. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextLayoutBounds")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextLayoutBounds")
   @js.native
-  abstract class CoreTextLayoutBounds ()
+  open class CoreTextLayoutBounds ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextLayoutBounds {
     
@@ -326,9 +326,9 @@ object Core {
   }
   
   /** Represents information about a LayoutRequested event. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextLayoutRequest")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextLayoutRequest")
   @js.native
-  abstract class CoreTextLayoutRequest ()
+  open class CoreTextLayoutRequest ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextLayoutRequest {
     
@@ -353,9 +353,9 @@ object Core {
   }
   
   /** Provides data for the LayoutRequested event. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextLayoutRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextLayoutRequestedEventArgs")
   @js.native
-  abstract class CoreTextLayoutRequestedEventArgs ()
+  open class CoreTextLayoutRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextLayoutRequestedEventArgs {
     
@@ -365,9 +365,9 @@ object Core {
   }
   
   /** Represents information about a SelectionRequested event. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextSelectionRequest")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextSelectionRequest")
   @js.native
-  abstract class CoreTextSelectionRequest ()
+  open class CoreTextSelectionRequest ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextSelectionRequest {
     
@@ -388,9 +388,9 @@ object Core {
   }
   
   /** Provides data for the SelectionRequested event. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextSelectionRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextSelectionRequestedEventArgs")
   @js.native
-  abstract class CoreTextSelectionRequestedEventArgs ()
+  open class CoreTextSelectionRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextSelectionRequestedEventArgs {
     
@@ -400,9 +400,9 @@ object Core {
   }
   
   /** Provides data for the SelectionUpdating event. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextSelectionUpdatingEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextSelectionUpdatingEventArgs")
   @js.native
-  abstract class CoreTextSelectionUpdatingEventArgs ()
+  open class CoreTextSelectionUpdatingEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextSelectionUpdatingEventArgs {
     
@@ -440,9 +440,9 @@ object Core {
   }
   
   /** Provides constant values for use with the Windows core text APIs and the text input server. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextServicesConstants")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextServicesConstants")
   @js.native
-  abstract class CoreTextServicesConstants ()
+  open class CoreTextServicesConstants ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextServicesConstants
   object CoreTextServicesConstants {
@@ -460,9 +460,9 @@ object Core {
   }
   
   /** The entry point to all services provided by the Windows core text APIs and the text input server. This object is associated with an application's UI thread (the thread that CoreWindow runs on). */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextServicesManager")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextServicesManager")
   @js.native
-  abstract class CoreTextServicesManager ()
+  open class CoreTextServicesManager ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextServicesManager
   object CoreTextServicesManager {
@@ -480,9 +480,9 @@ object Core {
   }
   
   /** Represents information about a TextRequested event. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextTextRequest")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextTextRequest")
   @js.native
-  abstract class CoreTextTextRequest ()
+  open class CoreTextTextRequest ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextTextRequest {
     
@@ -507,9 +507,9 @@ object Core {
   }
   
   /** Provides data for the TextRequested event. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextTextRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextTextRequestedEventArgs")
   @js.native
-  abstract class CoreTextTextRequestedEventArgs ()
+  open class CoreTextTextRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextTextRequestedEventArgs {
     
@@ -519,9 +519,9 @@ object Core {
   }
   
   /** Provides data for the TextUpdating event. */
-  @JSGlobal("Windows.UI.Text.Core.CoreTextTextUpdatingEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Text.Core.CoreTextTextUpdatingEventArgs")
   @js.native
-  abstract class CoreTextTextUpdatingEventArgs ()
+  open class CoreTextTextUpdatingEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Text.Core.CoreTextTextUpdatingEventArgs {
     

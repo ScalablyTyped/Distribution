@@ -7,18 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientDisplayvideoStrings {
   
   @js.native
-  sealed trait FloodlightGroup extends StObject
-  inline def FloodlightGroup: FloodlightGroup = "FloodlightGroup".asInstanceOf[FloodlightGroup]
-  
-  @js.native
-  sealed trait Operation extends StObject
-  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
-  
-  @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
   sealed trait displayvideo extends StObject
   inline def displayvideo: displayvideo = "displayvideo".asInstanceOf[displayvideo]
   

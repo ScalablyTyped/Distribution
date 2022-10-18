@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.dataviewMod.DataViewProps
+import typings.primereact.dataviewDataviewMod.DataViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "DataView")
 @js.native
 open class DataView protected ()
-  extends typings.primereact.dataviewMod.DataView {
+  extends typings.primereact.dataviewDataviewMod.DataView {
   def this(props: DataViewProps) = this()
   /**
     * @deprecated

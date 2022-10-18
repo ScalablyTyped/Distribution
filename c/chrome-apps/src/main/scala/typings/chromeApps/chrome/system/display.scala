@@ -12,14 +12,9 @@ import typings.chromeApps.chromeAppsInts.`90`
 import typings.chromeApps.chromeAppsStrings.LEFT
 import typings.chromeApps.chromeAppsStrings.RIGHT
 import typings.chromeApps.chromeAppsStrings.TOP
-import typings.chromeApps.chromeAppsStrings.bottom_
-import typings.chromeApps.chromeAppsStrings.left_
 import typings.chromeApps.chromeAppsStrings.mixed
 import typings.chromeApps.chromeAppsStrings.normal_
 import typings.chromeApps.chromeAppsStrings.off
-import typings.chromeApps.chromeAppsStrings.right_
-import typings.chromeApps.chromeAppsStrings.top_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -270,10 +265,7 @@ object display {
     var position: ToStringLiteral[
         BOTTOM, 
         /* keyof chrome-apps.anon.BOTTOM */ TOP | RIGHT | typings.chromeApps.chromeAppsStrings.BOTTOM | LEFT, 
-        Exclude[
-          /* keyof chrome-apps.anon.BOTTOM */ TOP | RIGHT | typings.chromeApps.chromeAppsStrings.BOTTOM | LEFT, 
-          top_ | right_ | bottom_ | left_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  TOP :'top',   RIGHT :'right',   BOTTOM :'bottom',   LEFT :'left'} extends keyof {  TOP :'top',   RIGHT :'right',   BOTTOM :'bottom',   LEFT :'left'} ? std.Exclude<keyof {  TOP :'top',   RIGHT :'right',   BOTTOM :'bottom',   LEFT :'left'}, 'top' | 'right' | 'bottom' | 'left'> : never */ js.Any
       ]
   }
   object DisplayLayout {
@@ -285,10 +277,7 @@ object display {
       position: ToStringLiteral[
           BOTTOM, 
           /* keyof chrome-apps.anon.BOTTOM */ TOP | RIGHT | typings.chromeApps.chromeAppsStrings.BOTTOM | LEFT, 
-          Exclude[
-            /* keyof chrome-apps.anon.BOTTOM */ TOP | RIGHT | typings.chromeApps.chromeAppsStrings.BOTTOM | LEFT, 
-            top_ | right_ | bottom_ | left_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  TOP :'top',   RIGHT :'right',   BOTTOM :'bottom',   LEFT :'left'} extends keyof {  TOP :'top',   RIGHT :'right',   BOTTOM :'bottom',   LEFT :'left'} ? std.Exclude<keyof {  TOP :'top',   RIGHT :'right',   BOTTOM :'bottom',   LEFT :'left'}, 'top' | 'right' | 'bottom' | 'left'> : never */ js.Any
         ]
     ): DisplayLayout = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
@@ -307,10 +296,7 @@ object display {
         value: ToStringLiteral[
               BOTTOM, 
               /* keyof chrome-apps.anon.BOTTOM */ TOP | RIGHT | typings.chromeApps.chromeAppsStrings.BOTTOM | LEFT, 
-              Exclude[
-                /* keyof chrome-apps.anon.BOTTOM */ TOP | RIGHT | typings.chromeApps.chromeAppsStrings.BOTTOM | LEFT, 
-                top_ | right_ | bottom_ | left_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  TOP :'top',   RIGHT :'right',   BOTTOM :'bottom',   LEFT :'left'} extends keyof {  TOP :'top',   RIGHT :'right',   BOTTOM :'bottom',   LEFT :'left'} ? std.Exclude<keyof {  TOP :'top',   RIGHT :'right',   BOTTOM :'bottom',   LEFT :'left'}, 'top' | 'right' | 'bottom' | 'left'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }

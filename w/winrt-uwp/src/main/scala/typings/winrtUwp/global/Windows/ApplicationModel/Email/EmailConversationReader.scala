@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reads a batch of email conversations. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailConversationReader")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Email.EmailConversationReader")
 @js.native
-abstract class EmailConversationReader ()
+open class EmailConversationReader ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailConversationReader {
   

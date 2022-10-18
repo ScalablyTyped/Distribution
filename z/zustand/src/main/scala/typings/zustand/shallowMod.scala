@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object shallowMod {
   
-  @JSImport("zustand/esm/shallow", JSImport.Namespace)
+  @JSImport("zustand/shallow", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

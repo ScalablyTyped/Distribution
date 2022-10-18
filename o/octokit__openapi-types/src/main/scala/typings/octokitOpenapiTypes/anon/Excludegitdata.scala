@@ -7,46 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Excludegitdata extends StObject {
   
-  /**
-    * @description Exclude attributes from the API response to improve performance
-    * @example [
-    *   "repositories"
-    * ]
-    */
+  /** @description Exclude related items from being returned in the response in order to improve performance of the request. The array can include any of: `"repositories"`. */
   var exclude: js.UndefOr[js.Array[repositories]] = js.undefined
   
   /**
-    * @description Do not include attachments in the migration
+    * @description Indicates whether attachments should be excluded from the migration (to reduce migration archive file size).
+    * @default false
     * @example true
     */
   var exclude_attachments: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @description Indicates whether the repository git data should be excluded from the migration.
-    * @example true
+    * @default false
     */
   var exclude_git_data: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @description Indicates whether metadata should be excluded and only git source should be included for the migration.
-    * @example true
+    * @default false
     */
   var exclude_metadata: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @description Indicates whether projects owned by the organization or users should be excluded.
+    * @description Indicates whether projects owned by the organization or users should be excluded. from the migration.
+    * @default false
     * @example true
     */
   var exclude_owner_projects: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @description Do not include releases in the migration
+    * @description Indicates whether releases should be excluded from the migration (to reduce migration archive file size).
+    * @default false
     * @example true
     */
   var exclude_releases: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @description Lock the repositories being migrated at the start of the migration
+    * @description Indicates whether repositories should be locked (to prevent manipulation) while migrating data.
+    * @default false
     * @example true
     */
   var lock_repositories: js.UndefOr[Boolean] = js.undefined
@@ -58,6 +57,7 @@ trait Excludegitdata extends StObject {
     */
   var org_metadata_only: js.UndefOr[Boolean] = js.undefined
   
+  /** @description A list of arrays indicating which repositories should be migrated. */
   var repositories: js.Array[String]
 }
 object Excludegitdata {

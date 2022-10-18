@@ -3,16 +3,16 @@ package typings.reactFns
 import typings.react.mod.ComponentType
 import typings.reactFns.anon.PartialScrollConfig
 import typings.reactFns.anon.PartialWindowSizeConfig
-import typings.reactFns.deviceMotionDeviceMotionMod.DeviceMotionProps
-import typings.reactFns.deviceOrientationDeviceOrientationMod.DeviceOrientationProps
-import typings.reactFns.geoPositionGeoPositionMod.GeoPositionProps
-import typings.reactFns.localesLocalesMod.LocalesProps
-import typings.reactFns.networkNetworkMod.NetworkProps
-import typings.reactFns.scrollScrollMod.ScrollConfig
-import typings.reactFns.scrollScrollMod.ScrollProps
-import typings.reactFns.typesMod.SharedRenderProps
-import typings.reactFns.windowSizeWindowSizeMod.WindowSizeConfig
-import typings.reactFns.windowSizeWindowSizeMod.WindowSizeProps
+import typings.reactFns.distDeviceMotionDeviceMotionMod.DeviceMotionProps
+import typings.reactFns.distDeviceOrientationDeviceOrientationMod.DeviceOrientationProps
+import typings.reactFns.distGeoPositionGeoPositionMod.GeoPositionProps
+import typings.reactFns.distLocalesLocalesMod.LocalesProps
+import typings.reactFns.distNetworkNetworkMod.NetworkProps
+import typings.reactFns.distScrollScrollMod.ScrollConfig
+import typings.reactFns.distScrollScrollMod.ScrollProps
+import typings.reactFns.distTypesMod.SharedRenderProps
+import typings.reactFns.distWindowSizeWindowSizeMod.WindowSizeConfig
+import typings.reactFns.distWindowSizeWindowSizeMod.WindowSizeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ object mod {
   @JSImport("react-fns", "DeviceMotion")
   @js.native
   open class DeviceMotion protected ()
-    extends typings.reactFns.deviceMotionMod.DeviceMotion {
+    extends typings.reactFns.distDeviceMotionMod.DeviceMotion {
     def this(props: SharedRenderProps[DeviceMotionProps]) = this()
     /**
       * @deprecated
@@ -38,7 +38,7 @@ object mod {
   @JSImport("react-fns", "DeviceOrientation")
   @js.native
   open class DeviceOrientation protected ()
-    extends typings.reactFns.deviceOrientationMod.DeviceOrientation {
+    extends typings.reactFns.distDeviceOrientationMod.DeviceOrientation {
     def this(props: SharedRenderProps[DeviceOrientationProps]) = this()
     /**
       * @deprecated
@@ -50,7 +50,7 @@ object mod {
   @JSImport("react-fns", "GeoPosition")
   @js.native
   open class GeoPosition protected ()
-    extends typings.reactFns.geoPositionMod.GeoPosition {
+    extends typings.reactFns.distGeoPositionMod.GeoPosition {
     def this(props: SharedRenderProps[GeoPositionProps]) = this()
     /**
       * @deprecated
@@ -62,7 +62,7 @@ object mod {
   @JSImport("react-fns", "Locales")
   @js.native
   open class Locales protected ()
-    extends typings.reactFns.localesMod.Locales {
+    extends typings.reactFns.distLocalesMod.Locales {
     def this(props: SharedRenderProps[LocalesProps]) = this()
     /**
       * @deprecated
@@ -78,7 +78,7 @@ object mod {
   @JSImport("react-fns", "Network")
   @js.native
   open class Network protected ()
-    extends typings.reactFns.networkMod.Network {
+    extends typings.reactFns.distNetworkMod.Network {
     def this(props: SharedRenderProps[NetworkProps]) = this()
     /**
       * @deprecated
@@ -90,7 +90,7 @@ object mod {
   @JSImport("react-fns", "Scroll")
   @js.native
   open class Scroll protected ()
-    extends typings.reactFns.scrollMod.Scroll {
+    extends typings.reactFns.distScrollMod.Scroll {
     def this(props: ScrollConfig & SharedRenderProps[ScrollProps]) = this()
     /**
       * @deprecated
@@ -114,7 +114,7 @@ object mod {
   @JSImport("react-fns", "WindowSize")
   @js.native
   open class WindowSize protected ()
-    extends typings.reactFns.windowSizeMod.WindowSize {
+    extends typings.reactFns.distWindowSizeMod.WindowSize {
     def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps]) = this()
     /**
       * @deprecated

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequirementSetSupport extends StObject {
   
   /**
-    * Check if the specified requirement set is supported by the host Office application.
+    * Check if the specified requirement set is supported by the Office application.
     * @param name - The requirement set name (e.g., "ExcelApi").
     * @param minVersion - The minimum required version (e.g., "1.4").
     */

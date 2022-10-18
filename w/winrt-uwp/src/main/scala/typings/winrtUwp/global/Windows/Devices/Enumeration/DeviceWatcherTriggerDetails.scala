@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details about the device updates that invoked the trigger. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceWatcherTriggerDetails")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.DeviceWatcherTriggerDetails")
 @js.native
-abstract class DeviceWatcherTriggerDetails ()
+open class DeviceWatcherTriggerDetails ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcherTriggerDetails {
   

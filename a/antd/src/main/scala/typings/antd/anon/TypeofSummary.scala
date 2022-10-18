@@ -1,6 +1,6 @@
 package typings.antd.anon
 
-import typings.rcTable.summaryMod.SummaryProps
+import typings.rcTable.libFooterSummaryMod.SummaryProps
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

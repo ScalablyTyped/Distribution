@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "MaxBlock")
 @js.native
 open class MaxBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.MaxBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.MaxBlock {
   /**
     * Creates a new MaxBlock
     * @param name defines the block name

@@ -126,7 +126,9 @@ object mod {
     }
   }
   
-  type ClassesForStyles[S /* <: (Styles[Any, Any, Any]) | (js.Function1[/* theme */ Any, Styles[Any, Any, Unit]]) */] = typings.jss.mod.Classes[/* keyof S */ String]
+  type ClassesForStyles[S /* <: (Styles[Any, Any, Any]) | (js.Function1[/* theme */ Any, Styles[Any, Any, Unit]]) */] = typings.jss.mod.Classes[
+    /* import warning: importer.ImportType#apply Failed type conversion: S extends (theme : any): jss.jss.Styles<any, any, undefined> ? keyof std.ReturnType<S> : keyof S */ js.Any
+  ]
   
   trait CreateUseStylesOptions[Theme]
     extends StObject
@@ -151,7 +153,15 @@ object mod {
   
   type DefaultTheme = Theme
   
-  type GetProps[C] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    C extends react.react.ComponentType<infer P> ? P : never
+    }}}
+    */
+  @js.native
+  trait GetProps[C] extends StObject
   
   type Managers = NumberDictionary[StyleSheet]
   

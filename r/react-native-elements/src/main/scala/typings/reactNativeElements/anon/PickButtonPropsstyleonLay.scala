@@ -19,7 +19,8 @@ import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconNode
+import typings.reactNativeElements.distIconsIconMod.IconNode
+import typings.reactNativeElements.distTextTextMod.TextProps
 import typings.reactNativeElements.reactNativeElementsStrings.TouchableComponent
 import typings.reactNativeElements.reactNativeElementsStrings.ViewComponent
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
@@ -36,7 +37,6 @@ import typings.reactNativeElements.reactNativeElementsStrings.right
 import typings.reactNativeElements.reactNativeElementsStrings.solid
 import typings.reactNativeElements.reactNativeElementsStrings.top
 import typings.reactNativeElements.reactNativeElementsStrings.yes
-import typings.reactNativeElements.textMod.TextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

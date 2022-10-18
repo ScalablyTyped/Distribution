@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsGatewayOutlinedMod.GatewayOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gatewayOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/GatewayOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/GatewayOutlined", JSImport.Default)
   @js.native
   val default: GatewayOutlinedIconType = js.native
-  
-  @js.native
-  trait GatewayOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_GatewayOutlinedIconType: String = js.native
-  }
   
   type _To = GatewayOutlinedIconType
   

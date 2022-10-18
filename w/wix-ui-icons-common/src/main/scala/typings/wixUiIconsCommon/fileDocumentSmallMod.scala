@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsFileDocumentSmallMod.FileDocumentSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileDocumentSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/FileDocumentSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/FileDocumentSmall", JSImport.Default)
   @js.native
   val default: FC[FileDocumentSmallProps] = js.native
-  
-  trait FileDocumentSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object FileDocumentSmallProps {
-    
-    inline def apply(): FileDocumentSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FileDocumentSmallProps]
-    }
-    
-    extension [Self <: FileDocumentSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[FileDocumentSmallProps]
   

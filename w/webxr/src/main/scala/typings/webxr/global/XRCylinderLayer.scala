@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("XRCylinderLayer")
+/* note: abstract class */ @JSGlobal("XRCylinderLayer")
 @js.native
-abstract class XRCylinderLayer ()
+open class XRCylinderLayer ()
   extends StObject
      with typings.webxr.XRCylinderLayer

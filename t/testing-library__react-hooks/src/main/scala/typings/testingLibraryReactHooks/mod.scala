@@ -1,8 +1,8 @@
 package typings.testingLibraryReactHooks
 
-import typings.testingLibraryReactHooks.reactMod.RenderHookOptions
-import typings.testingLibraryReactHooks.typesMod.RenderHookResult
-import typings.testingLibraryReactHooks.typesMod.Renderer
+import typings.testingLibraryReactHooks.libTypesMod.RenderHookResult
+import typings.testingLibraryReactHooks.libTypesMod.Renderer
+import typings.testingLibraryReactHooks.libTypesReactMod.RenderHookOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

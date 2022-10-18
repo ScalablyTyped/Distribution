@@ -1,9 +1,9 @@
 package typings.googleCloudSpanner.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.googleCloudSpanner.codecMod.Field
-import typings.googleCloudSpanner.codecMod.Json
-import typings.googleCloudSpanner.codecMod.Struct
+import typings.googleCloudSpanner.buildSrcCodecMod.Field
+import typings.googleCloudSpanner.buildSrcCodecMod.Json
+import typings.googleCloudSpanner.buildSrcCodecMod.Struct
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

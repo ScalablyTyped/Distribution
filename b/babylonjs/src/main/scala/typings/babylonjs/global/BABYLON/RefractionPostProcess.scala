@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,7 +32,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera
+    camera: Nullable[typings.babylonjs.BABYLON.Camera]
   ) = this()
   def this(
     name: String,
@@ -40,7 +41,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera
+    camera: Nullable[typings.babylonjs.BABYLON.Camera]
   ) = this()
   def this(
     name: String,
@@ -49,7 +50,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double
   ) = this()
   def this(
@@ -59,7 +60,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double
   ) = this()
   def this(
@@ -69,7 +70,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
@@ -80,7 +81,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
@@ -91,7 +92,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
@@ -102,7 +103,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine
   ) = this()
@@ -113,7 +114,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: Unit,
     reusable: Boolean
@@ -125,7 +126,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
@@ -137,7 +138,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: Unit,
     reusable: Boolean
@@ -149,7 +150,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: Double,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
@@ -161,7 +162,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: Unit,
     reusable: Boolean
@@ -173,7 +174,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Double,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean
@@ -185,7 +186,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: Unit,
     reusable: Boolean
@@ -197,7 +198,7 @@ open class RefractionPostProcess protected ()
     depth: Double,
     colorLevel: Double,
     options: PostProcessOptions,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     samplingMode: Unit,
     engine: typings.babylonjs.BABYLON.Engine,
     reusable: Boolean

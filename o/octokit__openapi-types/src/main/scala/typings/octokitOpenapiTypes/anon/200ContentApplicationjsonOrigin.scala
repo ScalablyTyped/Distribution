@@ -9,11 +9,11 @@ trait `200ContentApplicationjsonOrigin` extends StObject {
   /** Response */
   var `200`: ContentApplicationjsonOrigin
   
-  var `422`: Content421
+  var `422`: Content8
 }
 object `200ContentApplicationjsonOrigin` {
   
-  inline def apply(`200`: ContentApplicationjsonOrigin, `422`: Content421): `200ContentApplicationjsonOrigin` = {
+  inline def apply(`200`: ContentApplicationjsonOrigin, `422`: Content8): `200ContentApplicationjsonOrigin` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("422")(`422`.asInstanceOf[js.Any])
@@ -24,6 +24,6 @@ object `200ContentApplicationjsonOrigin` {
     
     inline def set200(value: ContentApplicationjsonOrigin): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content421): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content8): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

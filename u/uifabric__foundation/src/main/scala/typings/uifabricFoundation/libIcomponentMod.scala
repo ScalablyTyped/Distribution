@@ -1,14 +1,13 @@
 package typings.uifabricFoundation
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fluentuiTheme.ithemeMod.ITheme
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
 import typings.react.mod.FunctionComponent
 import typings.react.mod.PropsWithChildren
 import typings.std.Array
 import typings.std.ReturnType
 import typings.uifabricFoundation.uifabricFoundationBooleans.`false`
 import typings.uifabricFoundation.uifabricFoundationStrings.children
-import typings.uifabricMergeStyles.istylesetMod.IStyleSet
+import typings.uifabricMergeStyles.libIstylesetMod.IStyleSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -158,9 +157,15 @@ object libIcomponentMod {
     }
   }
   
-  type IComponentStyles[TSlots] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof TSlots ]:? @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle}
-    */ typings.uifabricFoundation.uifabricFoundationStrings.IComponentStyles & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ key in keyof TSlots ]:? @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle}
+    }}}
+    */
+  @js.native
+  trait IComponentStyles[TSlots] extends StObject
   
   /* Inlined @uifabric/foundation.@uifabric/foundation/lib/IComponent.IStyleableComponentProps<TViewProps, TTokens, TStyleSet> & std.Required<std.Pick<@uifabric/foundation.@uifabric/foundation/lib/IComponent.IStyleableComponentProps<TViewProps, TTokens, TStyleSet>, 'theme'>> */
   trait ICustomizationProps[TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */] extends StObject {

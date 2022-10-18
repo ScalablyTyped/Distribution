@@ -1,7 +1,7 @@
 package typings.node.childProcessMod
 
-import typings.node.nodeStreamMod.Readable
-import typings.node.nodeStreamMod.Writable
+import typings.node.nodeColonstreamMod.Readable
+import typings.node.nodeColonstreamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

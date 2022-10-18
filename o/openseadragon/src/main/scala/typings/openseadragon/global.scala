@@ -22,6 +22,7 @@ import typings.openseadragon.mod.Options
 import typings.openseadragon.mod.OverlayOptions
 import typings.openseadragon.mod.TControlOptions
 import typings.openseadragon.mod.TileSourceOptions
+import typings.std.CSSStyleDeclaration
 import typings.std.CanvasRenderingContext2D
 import typings.std.Document
 import typings.std.Event
@@ -523,8 +524,8 @@ object global {
     inline def getElementSize(element: String): typings.openseadragon.mod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSize")(element.asInstanceOf[js.Any]).asInstanceOf[typings.openseadragon.mod.Point]
     inline def getElementSize(element: typings.std.Element): typings.openseadragon.mod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSize")(element.asInstanceOf[js.Any]).asInstanceOf[typings.openseadragon.mod.Point]
     
-    inline def getElementStyle(element: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementStyle")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
-    inline def getElementStyle(element: typings.std.Element): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementStyle")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def getElementStyle(element: String): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementStyle")(element.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
+    inline def getElementStyle(element: typings.std.Element): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementStyle")(element.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
     
     inline def getMousePosition(): typings.openseadragon.mod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("getMousePosition")().asInstanceOf[typings.openseadragon.mod.Point]
     inline def getMousePosition(event: OSDEvent[Any]): typings.openseadragon.mod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("getMousePosition")(event.asInstanceOf[js.Any]).asInstanceOf[typings.openseadragon.mod.Point]
@@ -535,7 +536,6 @@ object global {
     
     inline def getUrlParameter(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrlParameter")(key.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    // CSSStyle?
     inline def getViewer(element: typings.std.Element): typings.openseadragon.mod.Viewer = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewer")(element.asInstanceOf[js.Any]).asInstanceOf[typings.openseadragon.mod.Viewer]
     
     inline def getWindowSize(): typings.openseadragon.mod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowSize")().asInstanceOf[typings.openseadragon.mod.Point]
@@ -603,7 +603,7 @@ object global {
     
     inline def setPageScroll(point: typings.openseadragon.mod.Point): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPageScroll")(point.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def setString(property: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setString")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setString(property: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setString")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def stopEvent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEvent")().asInstanceOf[Unit]
     inline def stopEvent(event: OSDEvent[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]

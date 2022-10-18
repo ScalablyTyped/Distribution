@@ -14,16 +14,16 @@ object anon {
   trait AddButton[T, F] extends StObject {
     
     /** The template to use for the Add button used for AdditionalProperties and Array items */
-    var AddButton: ComponentType[IconButtonProps]
+    var AddButton: ComponentType[IconButtonProps[T, F]]
     
     /** The template to use for the Move Down button used for Array items */
-    var MoveDownButton: ComponentType[IconButtonProps]
+    var MoveDownButton: ComponentType[IconButtonProps[T, F]]
     
     /** The template to use for the Move Up button used for Array items */
-    var MoveUpButton: ComponentType[IconButtonProps]
+    var MoveUpButton: ComponentType[IconButtonProps[T, F]]
     
     /** The template to use for the Remove button used for AdditionalProperties and Array items */
-    var RemoveButton: ComponentType[IconButtonProps]
+    var RemoveButton: ComponentType[IconButtonProps[T, F]]
     
     /** The template to use for the main `Submit` button  */
     var SubmitButton: ComponentType[SubmitButtonProps[T, F]]
@@ -31,10 +31,10 @@ object anon {
   object AddButton {
     
     inline def apply[T, F](
-      AddButton: ComponentType[IconButtonProps],
-      MoveDownButton: ComponentType[IconButtonProps],
-      MoveUpButton: ComponentType[IconButtonProps],
-      RemoveButton: ComponentType[IconButtonProps],
+      AddButton: ComponentType[IconButtonProps[T, F]],
+      MoveDownButton: ComponentType[IconButtonProps[T, F]],
+      MoveUpButton: ComponentType[IconButtonProps[T, F]],
+      RemoveButton: ComponentType[IconButtonProps[T, F]],
       SubmitButton: ComponentType[SubmitButtonProps[T, F]]
     ): AddButton[T, F] = {
       val __obj = js.Dynamic.literal(AddButton = AddButton.asInstanceOf[js.Any], MoveDownButton = MoveDownButton.asInstanceOf[js.Any], MoveUpButton = MoveUpButton.asInstanceOf[js.Any], RemoveButton = RemoveButton.asInstanceOf[js.Any], SubmitButton = SubmitButton.asInstanceOf[js.Any])
@@ -43,13 +43,13 @@ object anon {
     
     extension [Self <: AddButton[?, ?], T, F](x: Self & (AddButton[T, F])) {
       
-      inline def setAddButton(value: ComponentType[IconButtonProps]): Self = StObject.set(x, "AddButton", value.asInstanceOf[js.Any])
+      inline def setAddButton(value: ComponentType[IconButtonProps[T, F]]): Self = StObject.set(x, "AddButton", value.asInstanceOf[js.Any])
       
-      inline def setMoveDownButton(value: ComponentType[IconButtonProps]): Self = StObject.set(x, "MoveDownButton", value.asInstanceOf[js.Any])
+      inline def setMoveDownButton(value: ComponentType[IconButtonProps[T, F]]): Self = StObject.set(x, "MoveDownButton", value.asInstanceOf[js.Any])
       
-      inline def setMoveUpButton(value: ComponentType[IconButtonProps]): Self = StObject.set(x, "MoveUpButton", value.asInstanceOf[js.Any])
+      inline def setMoveUpButton(value: ComponentType[IconButtonProps[T, F]]): Self = StObject.set(x, "MoveUpButton", value.asInstanceOf[js.Any])
       
-      inline def setRemoveButton(value: ComponentType[IconButtonProps]): Self = StObject.set(x, "RemoveButton", value.asInstanceOf[js.Any])
+      inline def setRemoveButton(value: ComponentType[IconButtonProps[T, F]]): Self = StObject.set(x, "RemoveButton", value.asInstanceOf[js.Any])
       
       inline def setSubmitButton(value: ComponentType[SubmitButtonProps[T, F]]): Self = StObject.set(x, "SubmitButton", value.asInstanceOf[js.Any])
     }

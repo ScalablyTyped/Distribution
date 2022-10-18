@@ -1,12 +1,13 @@
 package typings.bizcharts.mod
 
-import typings.antvG2.animationMod.Animation
-import typings.antvG2.controllerBaseMod.ControllerCtor
-import typings.antvG2.dependentsMod.IG
-import typings.antvG2.grammarInteractionMod.InteractionSteps
-import typings.antvG2.interactionInteractionMod.InteractionConstructor
-import typings.antvG2.labelBaseMod.GeometryLabelConstructor
-import typings.antvG2.labelMod.GeometryLabelsLayoutFn
+import typings.antvG2.libAnimateAnimationMod.Animation
+import typings.antvG2.libChartControllerBaseMod.ControllerCtor
+import typings.antvG2.libDependentsMod.IG
+import typings.antvG2.libGeometryLabelBaseMod.GeometryLabelConstructor
+import typings.antvG2.libGeometryLabelMod.GeometryLabelsLayoutFn
+import typings.antvG2.libInteractionActionRegisterMod.ActionConstructor
+import typings.antvG2.libInteractionGrammarInteractionMod.InteractionSteps
+import typings.antvG2.libInteractionInteractionMod.InteractionConstructor
 import typings.antvG2.libInterfaceMod.FacetCtor
 import typings.antvG2.libInterfaceMod.LooseObject
 import typings.antvG2.libInterfaceMod.RegisterShape
@@ -14,60 +15,57 @@ import typings.antvG2.libInterfaceMod.RegisterShapeFactory
 import typings.antvG2.libInterfaceMod.Shape
 import typings.antvG2.libInterfaceMod.ShapeFactory
 import typings.antvG2.libInterfaceMod.StyleSheet
-import typings.antvG2.registerMod.ActionConstructor
-import typings.bizcharts.areaChartMod.AreaOptions
-import typings.bizcharts.axisMod.IAxis
-import typings.bizcharts.barChartMod.BarOptions
-import typings.bizcharts.bubbleChartMod.BubbleOptions
-import typings.bizcharts.bulletChartMod.BulletOptions
-import typings.bizcharts.calendarChartMod.CalendarOptions
-import typings.bizcharts.columnChartMod.ColumnOptions
-import typings.bizcharts.coordinateMod.ICoordinateProps
-import typings.bizcharts.createTooltipConnectorMod.Connector
-import typings.bizcharts.densityHeatmapChartMod.DensityHeatmapOptions
-import typings.bizcharts.donutChartMod.DonutOptions
-import typings.bizcharts.dualAxesChartMod.DualAxesOptions
-import typings.bizcharts.effectsMod.IEffectsProps
-import typings.bizcharts.facetMod.IFacetProps
-import typings.bizcharts.funnelChartMod.FunnelOptions
-import typings.bizcharts.gaugeChartMod.GaugeOptions
-import typings.bizcharts.geometryMod.IGemo
-import typings.bizcharts.groupedBarChartMod.GroupedBarOptions
-import typings.bizcharts.groupedColumnChartMod.GroupedColumnOptions
-import typings.bizcharts.groupedRoseChartMod.GroupedRoseOptions
-import typings.bizcharts.heatmapChartMod.HeatmapOptions
-import typings.bizcharts.histogramChartMod.HistogramOptions
-import typings.bizcharts.interactionMod.IInteractionProps
-import typings.bizcharts.interfaceMod.IChartProps
-import typings.bizcharts.legendMod.ILegend
-import typings.bizcharts.lineAdvanceMod.ILineAdvanceGemoProps
-import typings.bizcharts.lineChartMod.LineOptions
-import typings.bizcharts.liquidChartMod.LiquidOptions
+import typings.bizcharts.libComponentsAxisMod.IAxis
+import typings.bizcharts.libComponentsEffectsMod.IEffectsProps
+import typings.bizcharts.libComponentsInteractionMod.IInteractionProps
+import typings.bizcharts.libComponentsLegendMod.ILegend
+import typings.bizcharts.libComponentsSliderMod.ISliderProps
+import typings.bizcharts.libConnectorCreateTooltipConnectorMod.Connector
+import typings.bizcharts.libGeometryLineAdvanceMod.ILineAdvanceGemoProps
+import typings.bizcharts.libGeometryMod.IGemo
+import typings.bizcharts.libInterfaceMod.IChartProps
+import typings.bizcharts.libPlotsAreaChartMod.AreaOptions
+import typings.bizcharts.libPlotsBarChartMod.BarOptions
+import typings.bizcharts.libPlotsBubbleChartMod.BubbleOptions
+import typings.bizcharts.libPlotsBulletChartMod.BulletOptions
+import typings.bizcharts.libPlotsCalendarChartMod.CalendarOptions
+import typings.bizcharts.libPlotsColumnChartMod.ColumnOptions
+import typings.bizcharts.libPlotsDensityHeatmapChartMod.DensityHeatmapOptions
+import typings.bizcharts.libPlotsDonutChartMod.DonutOptions
+import typings.bizcharts.libPlotsDualAxesChartMod.DualAxesOptions
+import typings.bizcharts.libPlotsFunnelChartMod.FunnelOptions
+import typings.bizcharts.libPlotsGaugeChartMod.GaugeOptions
+import typings.bizcharts.libPlotsGroupedBarChartMod.GroupedBarOptions
+import typings.bizcharts.libPlotsGroupedColumnChartMod.GroupedColumnOptions
+import typings.bizcharts.libPlotsGroupedRoseChartMod.GroupedRoseOptions
+import typings.bizcharts.libPlotsHeatmapChartMod.HeatmapOptions
+import typings.bizcharts.libPlotsHistogramChartMod.HistogramOptions
+import typings.bizcharts.libPlotsLineChartMod.LineOptions
+import typings.bizcharts.libPlotsLiquidChartMod.LiquidOptions
+import typings.bizcharts.libPlotsPercentStackedAreaChartMod.PercentStackedAreaOptions
+import typings.bizcharts.libPlotsPercentStackedBarChartMod.PercentStackedBarOptions
+import typings.bizcharts.libPlotsPercentStackedColumnChartMod.PercentStackedColumnOptions
+import typings.bizcharts.libPlotsPieChartMod.PieOptions
+import typings.bizcharts.libPlotsPlotAdapterMod.IAdapterProps
+import typings.bizcharts.libPlotsProgressChartMod.ProgressOptions
+import typings.bizcharts.libPlotsRadarChartMod.RadarOptions
+import typings.bizcharts.libPlotsRangeBarChartMod.RangeBarOptions
+import typings.bizcharts.libPlotsRangeColumnChartMod.RangeColumnOptions
+import typings.bizcharts.libPlotsRingProgressChartMod.RingProgressOptions
+import typings.bizcharts.libPlotsRoseChartMod.RoseOptions
+import typings.bizcharts.libPlotsScatterChartMod.ScatterOptions
+import typings.bizcharts.libPlotsStackedAreaChartMod.StackedAreaOptions
+import typings.bizcharts.libPlotsStackedBarChartMod.StackedBarOptions
+import typings.bizcharts.libPlotsStackedColumnChartMod.StackedColumnOptions
+import typings.bizcharts.libPlotsStackedRoseChartMod.StackedRoseOptions
+import typings.bizcharts.libPlotsStepLineChartMod.StepLineOptions
+import typings.bizcharts.libPlotsTinyAreaChartMod.TinyAreaOptions
+import typings.bizcharts.libPlotsTinyColumnChartMod.TinyColumnOptions
+import typings.bizcharts.libPlotsTinyLineChartMod.TinyLineOptions
+import typings.bizcharts.libPlotsTreemapChartMod.TreemapOptions
+import typings.bizcharts.libPlotsWaterfallChartMod.WaterfallOptions
+import typings.bizcharts.libPlotsWordCloudChartMod.WordCloudCfg
 import typings.bizcharts.mod.^
-import typings.bizcharts.percentStackedAreaChartMod.PercentStackedAreaOptions
-import typings.bizcharts.percentStackedBarChartMod.PercentStackedBarOptions
-import typings.bizcharts.percentStackedColumnChartMod.PercentStackedColumnOptions
-import typings.bizcharts.pieChartMod.PieOptions
-import typings.bizcharts.plotAdapterMod.IAdapterProps
-import typings.bizcharts.progressChartMod.ProgressOptions
-import typings.bizcharts.radarChartMod.RadarOptions
-import typings.bizcharts.rangeBarChartMod.RangeBarOptions
-import typings.bizcharts.rangeColumnChartMod.RangeColumnOptions
-import typings.bizcharts.ringProgressChartMod.RingProgressOptions
-import typings.bizcharts.roseChartMod.RoseOptions
-import typings.bizcharts.scatterChartMod.ScatterOptions
-import typings.bizcharts.sliderMod.ISliderProps
-import typings.bizcharts.stackedAreaChartMod.StackedAreaOptions
-import typings.bizcharts.stackedBarChartMod.StackedBarOptions
-import typings.bizcharts.stackedColumnChartMod.StackedColumnOptions
-import typings.bizcharts.stackedRoseChartMod.StackedRoseOptions
-import typings.bizcharts.stepLineChartMod.StepLineOptions
-import typings.bizcharts.tinyAreaChartMod.TinyAreaOptions
-import typings.bizcharts.tinyColumnChartMod.TinyColumnOptions
-import typings.bizcharts.tinyLineChartMod.TinyLineOptions
-import typings.bizcharts.treemapChartMod.TreemapOptions
-import typings.bizcharts.waterfallChartMod.WaterfallOptions
-import typings.bizcharts.wordCloudChartMod.WordCloudCfg
 import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.PropsWithoutRef
@@ -98,8 +96,6 @@ inline def ColumnChart: ForwardRefExoticComponent[ColumnOptions & RefAttributes[
 
 inline def Coord(props: Any): typings.react.mod.global.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Coord")(props.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
 
-inline def Coordinate(props: ICoordinateProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Coordinate")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
-
 inline def DensityHeatmapChart: ForwardRefExoticComponent[DensityHeatmapOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("DensityHeatmapChart").asInstanceOf[ForwardRefExoticComponent[DensityHeatmapOptions & RefAttributes[Any]]]
 
 inline def DonutChart: ForwardRefExoticComponent[DonutOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("DonutChart").asInstanceOf[ForwardRefExoticComponent[DonutOptions & RefAttributes[Any]]]
@@ -107,8 +103,6 @@ inline def DonutChart: ForwardRefExoticComponent[DonutOptions & RefAttributes[An
 inline def DualAxesChart: ForwardRefExoticComponent[DualAxesOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("DualAxesChart").asInstanceOf[ForwardRefExoticComponent[DualAxesOptions & RefAttributes[Any]]]
 
 inline def Effects(props: IEffectsProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Effects")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-
-inline def Facet(props: IFacetProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Facet")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
 
 inline def FunnelChart: ForwardRefExoticComponent[FunnelOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("FunnelChart").asInstanceOf[ForwardRefExoticComponent[FunnelOptions & RefAttributes[Any]]]
 
@@ -182,7 +176,7 @@ inline def TinyLineChart: ForwardRefExoticComponent[TinyLineOptions & RefAttribu
 
 inline def TreemapChart: ForwardRefExoticComponent[TreemapOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("TreemapChart").asInstanceOf[ForwardRefExoticComponent[TreemapOptions & RefAttributes[Any]]]
 
-inline def VERSION: /* "4.1.20" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[/* "4.1.20" */ String]
+inline def VERSION: /* "4.2.8" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[/* "4.2.8" */ String]
 
 inline def WaterfallChart: ForwardRefExoticComponent[WaterfallOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("WaterfallChart").asInstanceOf[ForwardRefExoticComponent[WaterfallOptions & RefAttributes[Any]]]
 
@@ -251,7 +245,7 @@ inline def useRootChart(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoo
 inline def useTheme(): js.Array[LooseObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[js.Array[LooseObject]]
 inline def useTheme(defaultThemeName: String): js.Array[LooseObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")(defaultThemeName.asInstanceOf[js.Any]).asInstanceOf[js.Array[LooseObject]]
 
-inline def useView(): typings.antvG2.chartMod.Chart = ^.asInstanceOf[js.Dynamic].applyDynamic("useView")().asInstanceOf[typings.antvG2.chartMod.Chart]
+inline def useView(): typings.antvG2.libChartMod.Chart = ^.asInstanceOf[js.Dynamic].applyDynamic("useView")().asInstanceOf[typings.antvG2.libChartMod.Chart]
 
 inline def withChartInstance[T](Component: Any): ForwardRefExoticComponent[PropsWithoutRef[T] & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withChartInstance")(Component.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[T] & RefAttributes[Any]]]
 

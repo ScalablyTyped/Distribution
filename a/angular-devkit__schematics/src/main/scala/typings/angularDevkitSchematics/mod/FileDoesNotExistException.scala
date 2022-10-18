@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "FileDoesNotExistException")
 @js.native
 open class FileDoesNotExistException protected ()
-  extends typings.angularDevkitSchematics.exceptionMod.FileDoesNotExistException {
+  extends typings.angularDevkitSchematics.srcExceptionExceptionMod.FileDoesNotExistException {
   def this(path: String) = this()
 }

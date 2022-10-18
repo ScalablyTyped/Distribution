@@ -1,21 +1,18 @@
 package typings.dateFns
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lightFormatIndexMod {
   
-  object default extends Shortcut {
+  object default {
     
-    @JSImport("date-fns/esm/fp/lightFormat/index", JSImport.Default)
+    inline def apply(date: js.Date, format: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, format: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @JSImport("date-fns/lightFormat/index", JSImport.Default)
     @js.native
-    val ^ : CurriedFn2[String, js.Date | Double, String] = js.native
-    
-    type _To = CurriedFn2[String, js.Date | Double, String]
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn2[String, js.Date | Double, String] = ^
+    val ^ : js.Any = js.native
   }
 }

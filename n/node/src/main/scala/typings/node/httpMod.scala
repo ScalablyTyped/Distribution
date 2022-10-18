@@ -1,14 +1,18 @@
 package typings.node
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.node.NodeJS.Dict
+import typings.node.NodeJS.ErrnoException
+import typings.node.NodeJS.ReadOnlyDict
 import typings.node.anon.Req
 import typings.node.bufferMod.global.Buffer
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.LookupFunction
 import typings.node.netMod.OnReadOpts
-import typings.node.nodeNetMod.Socket
-import typings.node.nodeStreamMod.Duplex
-import typings.node.nodeStreamMod.Readable
+import typings.node.nodeColonnetMod.Socket
+import typings.node.nodeColonstreamMod.Duplex
+import typings.node.nodeColonstreamMod.Readable
+import typings.node.nodeColonurlMod.URL
 import typings.node.nodeStrings.abort
 import typings.node.nodeStrings.checkContinue
 import typings.node.nodeStrings.checkExpectation
@@ -31,9 +35,8 @@ import typings.node.nodeStrings.socket
 import typings.node.nodeStrings.timeout
 import typings.node.nodeStrings.unpipe
 import typings.node.nodeStrings.upgrade
-import typings.node.nodeUrlMod.URL
-import typings.std.AbortSignal
 import typings.std.InstanceType
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,7 +127,7 @@ object httpMod {
       * removed from the array on `'timeout'`.
       * @since v0.11.4
       */
-    val freeSockets: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadOnlyDict<Array<Socket>> */ Any = js.native
+    val freeSockets: ReadOnlyDict[js.Array[Socket]] = js.native
     
     /**
       * By default set to 256\. For agents with `keepAlive` enabled, this
@@ -153,14 +156,14 @@ object httpMod {
       * sockets. Do not modify.
       * @since v0.5.9
       */
-    val requests: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadOnlyDict<Array<IncomingMessage>> */ Any = js.native
+    val requests: ReadOnlyDict[js.Array[IncomingMessage]] = js.native
     
     /**
       * An object which contains arrays of sockets currently in use by the
       * agent. Do not modify.
       * @since v0.3.6
       */
-    val sockets: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadOnlyDict<Array<Socket>> */ Any = js.native
+    val sockets: ReadOnlyDict[js.Array[Socket]] = js.native
   }
   
   /**
@@ -726,7 +729,7 @@ object httpMod {
       * The request/response trailers object. Only populated at the `'end'` event.
       * @since v0.3.0
       */
-    var trailers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any = js.native
+    var trailers: Dict[String] = js.native
     
     /**
       * **Only valid for request obtained from {@link Server}.**
@@ -1267,12 +1270,49 @@ object httpMod {
     var statusMessage: String = js.native
     
     /**
-      * Sends a HTTP/1.1 100 Continue message to the client, indicating that
+      * Sends an HTTP/1.1 100 Continue message to the client, indicating that
       * the request body should be sent. See the `'checkContinue'` event on`Server`.
       * @since v0.3.0
       */
     def writeContinue(): Unit = js.native
     def writeContinue(callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * Sends an HTTP/1.1 103 Early Hints message to the client with a Link header,
+      * indicating that the user agent can preload/preconnect the linked resources.
+      * The `hints` is an object containing the values of headers to be sent with
+      * early hints message. The optional `callback` argument will be called when
+      * the response message has been written.
+      *
+      * Example:
+      *
+      * ```js
+      * const earlyHintsLink = '</styles.css>; rel=preload; as=style';
+      * response.writeEarlyHints({
+      *   'link': earlyHintsLink,
+      * });
+      *
+      * const earlyHintsLinks = [
+      *   '</styles.css>; rel=preload; as=style',
+      *   '</scripts.js>; rel=preload; as=script',
+      * ];
+      * response.writeEarlyHints({
+      *   'link': earlyHintsLinks,
+      *   'x-trace-id': 'id for diagnostics'
+      * });
+      *
+      * const earlyHintsCallback = () => console.log('early hints message sent');
+      * response.writeEarlyHints({
+      *   'link': earlyHintsLinks
+      * }, earlyHintsCallback);
+      * ```
+      *
+      * @since v18.11.0
+      * @param hints An object containing the values of headers
+      * @param callback Will be called when the response message has been written
+      */
+    def writeEarlyHints(hints: Record[String, String | js.Array[String]]): Unit = js.native
+    def writeEarlyHints(hints: Record[String, String | js.Array[String]], callback: js.Function0[Unit]): Unit = js.native
     
     /**
       * Sends a response header to the request. The status code is a 3-digit HTTP
@@ -1341,7 +1381,7 @@ object httpMod {
     def writeHead(statusCode: Double, statusMessage: Unit, headers: OutgoingHttpHeaders): this.type = js.native
     
     /**
-      * Sends a HTTP/1.1 102 Processing message to the client, indicating that
+      * Sends an HTTP/1.1 102 Processing message to the client, indicating that
       * the request body should be sent.
       * @since v10.0.0
       */
@@ -1653,6 +1693,25 @@ object httpMod {
   inline def request(url: URL, options: RequestOptions): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
   inline def request(url: URL, options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
   
+  /**
+    * Performs the low-level validations on the provided name that are done when `res.setHeader(name, value)` is called.
+    * Passing illegal value as name will result in a TypeError being thrown, identified by `code: 'ERR_INVALID_HTTP_TOKEN'`.
+    * @param name Header name
+    * @since v14.3.0
+    */
+  inline def validateHeaderName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateHeaderName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /**
+    * Performs the low-level validations on the provided value that are done when `res.setHeader(name, value)` is called.
+    * Passing illegal value as value will result in a TypeError being thrown.
+    * - Undefined value error is identified by `code: 'ERR_HTTP_INVALID_HEADER_VALUE'`.
+    * - Invalid value character error is identified by `code: 'ERR_INVALID_CHAR'`.
+    * @param name Header name
+    * @param value Header value
+    * @since v14.3.0
+    */
+  inline def validateHeaderValue(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateHeaderValue")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* Inlined parent std.Partial<node.node:net.TcpSocketConnectOpts> */
   trait AgentOptions extends StObject {
     
@@ -1755,12 +1814,7 @@ object httpMod {
       inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
       
       inline def setLookup(
-        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-              /* address */ String, 
-              /* family */ Double, 
-              Unit
-            ]) => Unit
+        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
       ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
       
       inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
@@ -1905,12 +1959,7 @@ object httpMod {
       inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
       inline def setLookup(
-        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-              /* address */ String, 
-              /* family */ Double, 
-              Unit
-            ]) => Unit
+        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
       ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
       
       inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
@@ -1964,8 +2013,9 @@ object httpMod {
   }
   
   // incoming headers will never contain number
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string | Array<string>> * / any */ trait IncomingHttpHeaders extends StObject {
+  trait IncomingHttpHeaders
+    extends StObject
+       with Dict[String | js.Array[String]] {
     
     var accept: js.UndefOr[String] = js.undefined
     
@@ -2412,7 +2462,7 @@ object httpMod {
   // outgoing headers allows numbers (as they are converted internally to strings)
   type OutgoingHttpHeader = Double | String | js.Array[String]
   
-  type OutgoingHttpHeaders = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<OutgoingHttpHeader> */ Any
+  type OutgoingHttpHeaders = Dict[OutgoingHttpHeader]
   
   type RequestListener[Request /* <: Instantiable1[/* socket */ Socket, IncomingMessage] */, Response /* <: Instantiable1[
     /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 

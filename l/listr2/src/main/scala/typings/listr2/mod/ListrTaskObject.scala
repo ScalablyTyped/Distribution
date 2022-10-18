@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("listr2", "ListrTaskObject")
 @js.native
-open class ListrTaskObject[Ctx, Renderer /* <: ListrRendererFactory */] protected ()
-  extends StObject
-     with Task[Ctx, Renderer] {
+open class ListrTaskObject[Ctx, Renderer /* <: ListrRendererFactory */] protected () extends Task[Ctx, Renderer] {
   def this(
     listr: Listr[Ctx, Any, Any],
     tasks: ListrTask[Ctx, Any],

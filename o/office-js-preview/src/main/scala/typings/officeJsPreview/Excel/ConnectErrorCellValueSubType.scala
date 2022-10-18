@@ -10,8 +10,7 @@ sealed trait ConnectErrorCellValueSubType extends StObject
   * Represents types of #CONNECT! errors.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 @JSGlobal("Excel.ConnectErrorCellValueSubType")
 @js.native
@@ -21,8 +20,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by no service connection for linked data types. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait dataTypeNoConnection
@@ -33,8 +31,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by an issue in the service for linked data types. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait dataTypeServiceError
@@ -45,8 +42,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by an issue with the external links. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait externalLinks
@@ -57,8 +53,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by a failure to access external links. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait externalLinksAccessFailed
@@ -69,8 +64,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by external links failing to refresh. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait externalLinksFailedToRefresh
@@ -81,8 +75,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by an external link to a file which exceeds file size capacity. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait externalLinksFileTooLarge
@@ -93,8 +86,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by an invalid request while resolving an external link. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait externalLinksInvalidRequest
@@ -105,8 +97,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by an external link to a non-cloud location, such as a link to an Excel file that is saved to a local computer instead of to a cloud location. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait externalLinksNonCloudLocation
@@ -117,8 +108,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by a server error while resolving an external link. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait externalLinksServerError
@@ -129,8 +119,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by throttling from an external link host. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait externalLinksThrottledByHost
@@ -141,8 +130,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by a lack of authentication for external links. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait externalLinksUnAuthenticated
@@ -153,8 +141,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by an error returned from the server. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait genericServerError
@@ -165,8 +152,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by missing content. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait missingContent
@@ -177,8 +163,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by an outdated linked entity. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait outdatedLinkedEntity
@@ -189,8 +174,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by request throttling. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait requestThrottle
@@ -201,8 +185,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An error caused by a problem with the service. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait serviceError
@@ -213,8 +196,7 @@ object ConnectErrorCellValueSubType extends StObject {
     * An unknown type of error. Displays as error type #CONNECT! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait unknown

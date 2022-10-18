@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "CircleToCirclePair")
 @js.native
 open class CircleToCirclePair ()
-  extends typings.blackEngine.circleToCirclePairMod.CircleToCirclePair
+  extends typings.blackEngine.physicsArcadePairsCircleToCirclePairMod.CircleToCirclePair

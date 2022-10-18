@@ -1,10 +1,8 @@
 package typings.prettier.mod
 
-import typings.prettier.anon.Length
 import typings.prettier.anon._empty
 import typings.prettier.mod.^
 import typings.prettier.mod.doc.builders.Doc
-import typings.std.Exclude
 import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -28,17 +26,12 @@ inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version")
 
 type AST = Any
 
-// The type of elements that make up the given array T.
-type ArrayElement[T] = Any
-
 // A union of the properties of the given object that are arrays.
 type ArrayProperties[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: std.NonNullable<T[K]> extends std.Array<any>? K : never}[keyof T] */ js.Any
 
 type BuiltInParser = js.Function2[/* text */ String, /* options */ js.UndefOr[Any], AST]
 
 type CallCallback[T, U] = js.Function3[/* path */ AstPath[T], /* index */ Double, /* value */ Any, U]
-
-type CallProperties[T] = (/* keyof T */ String) | IndexProperties[T]
 
 type CustomParser = js.Function3[/* text */ String, /* parsers */ BuiltInParsers, /* options */ Options, AST]
 
@@ -47,19 +40,6 @@ type Doc_ = Doc
 type EachCallback[T] = js.Function3[/* path */ AstPath[ArrayElement[T]], /* index */ Double, /* value */ Any, Unit]
 
 type FastPath[T] = AstPath[T]
-
-// A union of the properties of the given array T that can be used to index it.
-// If the array is a tuple, then that's going to be the explicit indices of the
-// array, otherwise it's going to just be number.
-type IndexProperties[T /* <: Length */] = Double | (Exclude[
-/* import warning: importer.ImportType#apply Failed type conversion: std.Partial<T>['length'] */ js.Any, 
-/* import warning: importer.ImportType#apply Failed type conversion: T['length'] */ js.Any])
-
-// Effectively performing T[P], except that it's telling TypeScript that it's
-// safe to do this for tuples, arrays, or objects.
-type IndexValue[T, P] = /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
-
-type IterProperties[T] = ArrayProperties[T] | IndexProperties[T]
 
 type LiteralUnion[T /* <: U */, U] = T | ((Pick[U, scala.Nothing]) & _empty)
 

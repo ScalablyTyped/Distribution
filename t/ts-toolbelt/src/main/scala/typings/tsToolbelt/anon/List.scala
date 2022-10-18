@@ -1,9 +1,9 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.curryMod.Curry
-import typings.tsToolbelt.functionMod.Function
-import typings.tsToolbelt.multiSyncMod.ComposeMultiSync
-import typings.tsToolbelt.syncMod.ComposeListSync
+import typings.tsToolbelt.outFunctionComposeListSyncMod.ComposeListSync
+import typings.tsToolbelt.outFunctionComposeMultiSyncMod.ComposeMultiSync
+import typings.tsToolbelt.outFunctionCurryMod.Curry
+import typings.tsToolbelt.outFunctionFunctionMod.Function
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

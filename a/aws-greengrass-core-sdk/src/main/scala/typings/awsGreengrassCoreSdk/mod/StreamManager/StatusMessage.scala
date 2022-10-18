@@ -1,8 +1,8 @@
 package typings.awsGreengrassCoreSdk.mod.StreamManager
 
-import typings.awsGreengrassCoreSdk.dataMod.StatusMessageMap
-import typings.awsGreengrassCoreSdk.dataMod.TypesMap
-import typings.awsGreengrassCoreSdk.dataMod.ValidationsMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusMessageMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.TypesMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ValidationsMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,10 +21,10 @@ open class StatusMessage protected ()
     * @param timestampEpochMs  The time this status was added to the status-stream (in milliseconds since epoch).
     */
   def this(
-    eventType: js.UndefOr[typings.awsGreengrassCoreSdk.dataMod.EventType | Null],
-    statusLevel: js.UndefOr[typings.awsGreengrassCoreSdk.dataMod.StatusLevel | Null],
-    status: js.UndefOr[typings.awsGreengrassCoreSdk.dataMod.Status | Null],
-    statusContext: js.UndefOr[typings.awsGreengrassCoreSdk.dataMod.StatusContext | Null],
+    eventType: js.UndefOr[typings.awsGreengrassCoreSdk.streamManagerDataMod.EventType | Null],
+    statusLevel: js.UndefOr[typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevel | Null],
+    status: js.UndefOr[typings.awsGreengrassCoreSdk.streamManagerDataMod.Status | Null],
+    statusContext: js.UndefOr[typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusContext | Null],
     message: js.UndefOr[String | Null],
     timestampEpochMs: js.UndefOr[Double | Null]
   ) = this()
@@ -41,7 +41,7 @@ object StatusMessage {
   def formatsMap: Record[String, scala.Nothing] = js.native
   inline def formatsMap_=(x: Record[String, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatsMap")(x.asInstanceOf[js.Any])
   
-  inline def fromMap(d: StatusMessageMap): typings.awsGreengrassCoreSdk.dataMod.StatusMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.StatusMessage]
+  inline def fromMap(d: StatusMessageMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusMessage]
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.StatusMessage.typesMap")
   @js.native

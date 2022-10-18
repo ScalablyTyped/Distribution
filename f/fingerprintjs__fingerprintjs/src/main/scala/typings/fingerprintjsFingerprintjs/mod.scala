@@ -1,6 +1,5 @@
 package typings.fingerprintjsFingerprintjs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.fingerprintjsFingerprintjs.anon.Duration
 import typings.fingerprintjsFingerprintjs.anon.Error
 import typings.fingerprintjsFingerprintjs.anon.ReadonlyGetOptions
@@ -1338,7 +1337,15 @@ object mod {
   /**
     * Converts an entropy source type into the component type
     */
-  type SourceValue[TSource /* <: Source[Any, Any] */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TSource extends @fingerprintjs/fingerprintjs.@fingerprintjs/fingerprintjs.Source<any, infer T> ? T : never
+    }}}
+    */
+  @js.native
+  trait SourceValue[TSource /* <: Source[Any, Any] */] extends StObject
   
   /**
     * Converts an entropy source list type to a corresponding component list type.
@@ -1346,9 +1353,15 @@ object mod {
     * Warning for package users:
     * This type is out of Semantic Versioning, i.e. can change unexpectedly. Usage is at your own risk.
     */
-  type SourcesToComponents[TSources /* <: UnknownSources[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof TSources ]: @fingerprintjs/fingerprintjs.@fingerprintjs/fingerprintjs.Component<@fingerprintjs/fingerprintjs.@fingerprintjs/fingerprintjs.SourceValue<TSources[K]>>}
-    */ typings.fingerprintjsFingerprintjs.fingerprintjsFingerprintjsStrings.SourcesToComponents & TopLevel[TSources]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof TSources ]: @fingerprintjs/fingerprintjs.@fingerprintjs/fingerprintjs.Component<@fingerprintjs/fingerprintjs.@fingerprintjs/fingerprintjs.SourceValue<TSources[K]>>}
+    }}}
+    */
+  @js.native
+  trait SourcesToComponents[TSources /* <: UnknownSources[Any] */] extends StObject
   
   trait TouchSupport extends StObject {
     

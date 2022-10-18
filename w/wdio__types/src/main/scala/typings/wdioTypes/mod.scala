@@ -3,8 +3,8 @@ package typings.wdioTypes
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Array
 import typings.std.Pick
-import typings.wdioTypes.optionsMod.Testrunner
-import typings.wdioTypes.reportersMod.Options
+import typings.wdioTypes.buildOptionsMod.Testrunner
+import typings.wdioTypes.buildReportersMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,15 +35,23 @@ object mod {
   
   type JsonPrimitive = String | Double | Boolean | Null
   
-  type ThenArg[T] = T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.PromiseLike<infer U> ? U : T
+    }}}
+    */
+  @js.native
+  trait ThenArg[T] extends StObject
   
   object global {
     
     object WebDriver {
       
-      type Capabilities = typings.wdioTypes.capabilitiesMod.Capabilities
+      type Capabilities = typings.wdioTypes.buildCapabilitiesMod.Capabilities
       
-      type DesiredCapabilities = typings.wdioTypes.capabilitiesMod.DesiredCapabilities
+      type DesiredCapabilities = typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities
     }
     
     object WebdriverIO {
@@ -60,7 +68,7 @@ object mod {
       
       type ReporterOption = Options
       
-      type ServiceOption = typings.wdioTypes.servicesMod.ServiceOption
+      type ServiceOption = typings.wdioTypes.buildServicesMod.ServiceOption
       
       trait WDIODevtoolsOptions extends StObject
       

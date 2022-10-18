@@ -1,33 +1,33 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
-import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayout
-import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayoutCallArgument
-import typings.mendixmodelsdk.pagesMod.pages.BuildingBlock
-import typings.mendixmodelsdk.pagesMod.pages.DataView
-import typings.mendixmodelsdk.pagesMod.pages.DivContainer
-import typings.mendixmodelsdk.pagesMod.pages.GroupBox
-import typings.mendixmodelsdk.pagesMod.pages.Header
-import typings.mendixmodelsdk.pagesMod.pages.Layout
-import typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument
-import typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn
-import typings.mendixmodelsdk.pagesMod.pages.ListView
-import typings.mendixmodelsdk.pagesMod.pages.ListViewTemplate
-import typings.mendixmodelsdk.pagesMod.pages.MasterDetailRegion
-import typings.mendixmodelsdk.pagesMod.pages.NativeLayoutContent
-import typings.mendixmodelsdk.pagesMod.pages.NavigationListItem
-import typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion
-import typings.mendixmodelsdk.pagesMod.pages.Snippet
-import typings.mendixmodelsdk.pagesMod.pages.SplitPane
-import typings.mendixmodelsdk.pagesMod.pages.TabPage
-import typings.mendixmodelsdk.pagesMod.pages.TableCell
-import typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents
-import typings.mendixmodelsdk.pagesMod.pages.VerticalFlow
-import typings.mendixmodelsdk.pagesMod.pages.WebLayoutContent
-import typings.mendixmodelsdk.structuresMod.aliases.Container
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.WidgetValue
+import typings.mendixmodelsdk.srcGenNativepagesMod.nativepages.NativeLayout
+import typings.mendixmodelsdk.srcGenNativepagesMod.nativepages.NativeLayoutCallArgument
+import typings.mendixmodelsdk.srcGenPagesMod.pages.BuildingBlock
+import typings.mendixmodelsdk.srcGenPagesMod.pages.DataView
+import typings.mendixmodelsdk.srcGenPagesMod.pages.DivContainer
+import typings.mendixmodelsdk.srcGenPagesMod.pages.GroupBox
+import typings.mendixmodelsdk.srcGenPagesMod.pages.Header
+import typings.mendixmodelsdk.srcGenPagesMod.pages.Layout
+import typings.mendixmodelsdk.srcGenPagesMod.pages.LayoutCallArgument
+import typings.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridColumn
+import typings.mendixmodelsdk.srcGenPagesMod.pages.ListView
+import typings.mendixmodelsdk.srcGenPagesMod.pages.ListViewTemplate
+import typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetailRegion
+import typings.mendixmodelsdk.srcGenPagesMod.pages.NativeLayoutContent
+import typings.mendixmodelsdk.srcGenPagesMod.pages.NavigationListItem
+import typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion
+import typings.mendixmodelsdk.srcGenPagesMod.pages.Snippet
+import typings.mendixmodelsdk.srcGenPagesMod.pages.SplitPane
+import typings.mendixmodelsdk.srcGenPagesMod.pages.TabPage
+import typings.mendixmodelsdk.srcGenPagesMod.pages.TableCell
+import typings.mendixmodelsdk.srcGenPagesMod.pages.TemplateGridContents
+import typings.mendixmodelsdk.srcGenPagesMod.pages.VerticalFlow
+import typings.mendixmodelsdk.srcGenPagesMod.pages.WebLayoutContent
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +37,7 @@ object reports {
   @JSImport("mendixmodelsdk", "reports.AggregateFunctionEnum")
   @js.native
   open class AggregateFunctionEnum protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.AggregateFunctionEnum {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.AggregateFunctionEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object AggregateFunctionEnum {
@@ -49,38 +49,38 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.AggregateFunctionEnum.Average")
     @js.native
-    def Average: typings.mendixmodelsdk.reportsMod.reports.AggregateFunctionEnum = js.native
-    inline def Average_=(x: typings.mendixmodelsdk.reportsMod.reports.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Average")(x.asInstanceOf[js.Any])
+    def Average: typings.mendixmodelsdk.srcGenReportsMod.reports.AggregateFunctionEnum = js.native
+    inline def Average_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Average")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.AggregateFunctionEnum.Count")
     @js.native
-    def Count: typings.mendixmodelsdk.reportsMod.reports.AggregateFunctionEnum = js.native
-    inline def Count_=(x: typings.mendixmodelsdk.reportsMod.reports.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Count")(x.asInstanceOf[js.Any])
+    def Count: typings.mendixmodelsdk.srcGenReportsMod.reports.AggregateFunctionEnum = js.native
+    inline def Count_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Count")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.AggregateFunctionEnum.Maximum")
     @js.native
-    def Maximum: typings.mendixmodelsdk.reportsMod.reports.AggregateFunctionEnum = js.native
-    inline def Maximum_=(x: typings.mendixmodelsdk.reportsMod.reports.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Maximum")(x.asInstanceOf[js.Any])
+    def Maximum: typings.mendixmodelsdk.srcGenReportsMod.reports.AggregateFunctionEnum = js.native
+    inline def Maximum_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Maximum")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.AggregateFunctionEnum.Minimum")
     @js.native
-    def Minimum: typings.mendixmodelsdk.reportsMod.reports.AggregateFunctionEnum = js.native
-    inline def Minimum_=(x: typings.mendixmodelsdk.reportsMod.reports.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minimum")(x.asInstanceOf[js.Any])
+    def Minimum: typings.mendixmodelsdk.srcGenReportsMod.reports.AggregateFunctionEnum = js.native
+    inline def Minimum_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minimum")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.AggregateFunctionEnum.Sum")
     @js.native
-    def Sum: typings.mendixmodelsdk.reportsMod.reports.AggregateFunctionEnum = js.native
-    inline def Sum_=(x: typings.mendixmodelsdk.reportsMod.reports.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sum")(x.asInstanceOf[js.Any])
+    def Sum: typings.mendixmodelsdk.srcGenReportsMod.reports.AggregateFunctionEnum = js.native
+    inline def Sum_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sum")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "reports.AspectRatio")
   @js.native
   open class AspectRatio protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.AspectRatio {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.AspectRatio {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object AspectRatio {
@@ -92,44 +92,44 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.AspectRatio.FourToThree")
     @js.native
-    def FourToThree: typings.mendixmodelsdk.reportsMod.reports.AspectRatio = js.native
-    inline def FourToThree_=(x: typings.mendixmodelsdk.reportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FourToThree")(x.asInstanceOf[js.Any])
+    def FourToThree: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio = js.native
+    inline def FourToThree_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FourToThree")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.AspectRatio.NineToSixteen")
     @js.native
-    def NineToSixteen: typings.mendixmodelsdk.reportsMod.reports.AspectRatio = js.native
-    inline def NineToSixteen_=(x: typings.mendixmodelsdk.reportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NineToSixteen")(x.asInstanceOf[js.Any])
+    def NineToSixteen: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio = js.native
+    inline def NineToSixteen_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NineToSixteen")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.AspectRatio.OneToOne")
     @js.native
-    def OneToOne: typings.mendixmodelsdk.reportsMod.reports.AspectRatio = js.native
-    inline def OneToOne_=(x: typings.mendixmodelsdk.reportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OneToOne")(x.asInstanceOf[js.Any])
+    def OneToOne: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio = js.native
+    inline def OneToOne_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OneToOne")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.AspectRatio.SixteenToNine")
     @js.native
-    def SixteenToNine: typings.mendixmodelsdk.reportsMod.reports.AspectRatio = js.native
-    inline def SixteenToNine_=(x: typings.mendixmodelsdk.reportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SixteenToNine")(x.asInstanceOf[js.Any])
+    def SixteenToNine: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio = js.native
+    inline def SixteenToNine_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SixteenToNine")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.AspectRatio.ThreeToFour")
     @js.native
-    def ThreeToFour: typings.mendixmodelsdk.reportsMod.reports.AspectRatio = js.native
-    inline def ThreeToFour_=(x: typings.mendixmodelsdk.reportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThreeToFour")(x.asInstanceOf[js.Any])
+    def ThreeToFour: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio = js.native
+    inline def ThreeToFour_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThreeToFour")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.AspectRatio.ThreeToTwo")
     @js.native
-    def ThreeToTwo: typings.mendixmodelsdk.reportsMod.reports.AspectRatio = js.native
-    inline def ThreeToTwo_=(x: typings.mendixmodelsdk.reportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThreeToTwo")(x.asInstanceOf[js.Any])
+    def ThreeToTwo: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio = js.native
+    inline def ThreeToTwo_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThreeToTwo")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.AspectRatio.TwoToThree")
     @js.native
-    def TwoToThree: typings.mendixmodelsdk.reportsMod.reports.AspectRatio = js.native
-    inline def TwoToThree_=(x: typings.mendixmodelsdk.reportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TwoToThree")(x.asInstanceOf[js.Any])
+    def TwoToThree: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio = js.native
+    inline def TwoToThree_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TwoToThree")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -138,14 +138,14 @@ object reports {
   @JSImport("mendixmodelsdk", "reports.BasicReport")
   @js.native
   open class BasicReport protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.BasicReport {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.BasicReport {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object BasicReport {
@@ -160,7 +160,7 @@ object reports {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -171,7 +171,7 @@ object reports {
       *  7.7.0 to 7.14.0
       */
     /* static member */
-    inline def createInBuildingBlockUnderWidget(container: BuildingBlock): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInBuildingBlockUnderWidget(container: BuildingBlock): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -182,7 +182,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -193,7 +193,7 @@ object reports {
       *  6.7.0 to 7.14.0
       */
     /* static member */
-    inline def createInDataViewUnderFooterWidget(container: DataView): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInDataViewUnderFooterWidget(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -204,7 +204,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInDataViewUnderFooterWidgets(container: DataView): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInDataViewUnderFooterWidgets(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -215,7 +215,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInDataViewUnderWidget(container: DataView): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInDataViewUnderWidget(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -226,7 +226,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInDataViewUnderWidgets(container: DataView): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInDataViewUnderWidgets(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -237,7 +237,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInDivContainerUnderWidget(container: DivContainer): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInDivContainerUnderWidget(container: DivContainer): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -248,7 +248,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInDivContainerUnderWidgets(container: DivContainer): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInDivContainerUnderWidgets(container: DivContainer): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -259,7 +259,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInGroupBoxUnderWidget(container: GroupBox): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInGroupBoxUnderWidget(container: GroupBox): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -270,7 +270,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInGroupBoxUnderWidgets(container: GroupBox): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInGroupBoxUnderWidgets(container: GroupBox): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -281,7 +281,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInHeaderUnderLeftWidget(container: Header): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInHeaderUnderLeftWidget(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -292,7 +292,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInHeaderUnderLeftWidgets(container: Header): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInHeaderUnderLeftWidgets(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -303,7 +303,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInHeaderUnderRightWidget(container: Header): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInHeaderUnderRightWidget(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -314,7 +314,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInHeaderUnderRightWidgets(container: Header): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInHeaderUnderRightWidgets(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -325,7 +325,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -336,7 +336,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -347,7 +347,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -358,7 +358,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -369,7 +369,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutUnderWidget(container: Layout): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInLayoutUnderWidget(container: Layout): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -380,7 +380,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInLayoutUnderWidgets(container: Layout): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInLayoutUnderWidgets(container: Layout): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -391,7 +391,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -402,7 +402,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -413,7 +413,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInListViewUnderWidget(container: ListView): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInListViewUnderWidget(container: ListView): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -424,7 +424,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInListViewUnderWidgets(container: ListView): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInListViewUnderWidgets(container: ListView): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -435,7 +435,7 @@ object reports {
       *  7.1.0 to 7.14.0
       */
     /* static member */
-    inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -446,7 +446,7 @@ object reports {
       *  7.23.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -457,7 +457,7 @@ object reports {
       *  8.5.0 and higher
       */
     /* static member */
-    inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -468,7 +468,7 @@ object reports {
       *  8.0.0 and higher
       */
     /* static member */
-    inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -479,7 +479,7 @@ object reports {
       *  7.22.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -490,7 +490,7 @@ object reports {
       *  7.21.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -501,7 +501,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInNavigationListItemUnderWidget(container: NavigationListItem): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInNavigationListItemUnderWidget(container: NavigationListItem): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -512,7 +512,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -523,7 +523,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInReportPaneUnderParameterWidget(container: typings.mendixmodelsdk.reportsMod.reports.ReportPane): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInReportPaneUnderParameterWidget(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -534,7 +534,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInReportPaneUnderReportWidget(container: typings.mendixmodelsdk.reportsMod.reports.ReportPane): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInReportPaneUnderReportWidget(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -545,7 +545,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -556,7 +556,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -567,7 +567,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSnippetUnderWidget(container: Snippet): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInSnippetUnderWidget(container: Snippet): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -578,7 +578,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInSnippetUnderWidgets(container: Snippet): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInSnippetUnderWidgets(container: Snippet): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -589,7 +589,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSplitPaneUnderFirstWidget(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInSplitPaneUnderFirstWidget(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -600,7 +600,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -611,7 +611,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSplitPaneUnderSecondWidget(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInSplitPaneUnderSecondWidget(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -622,7 +622,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -633,7 +633,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTabPageUnderWidget(container: TabPage): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInTabPageUnderWidget(container: TabPage): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -644,7 +644,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInTabPageUnderWidgets(container: TabPage): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInTabPageUnderWidgets(container: TabPage): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -655,7 +655,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTableCellUnderWidget(container: TableCell): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInTableCellUnderWidget(container: TableCell): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -666,7 +666,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInTableCellUnderWidgets(container: TableCell): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInTableCellUnderWidgets(container: TableCell): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -677,7 +677,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -688,7 +688,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -699,7 +699,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -710,7 +710,7 @@ object reports {
       *  8.0.0 and higher
       */
     /* static member */
-    inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
@@ -721,7 +721,7 @@ object reports {
       *  8.2.0 and higher
       */
     /* static member */
-    inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.reportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReport]
+    inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport]
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.BasicReport.structureTypeName")
@@ -732,21 +732,21 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.BasicReport.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "reports.BasicReportAggregate")
   @js.native
   open class BasicReportAggregate protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.BasicReportAggregate {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.BasicReportAggregate {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object BasicReportAggregate {
@@ -761,7 +761,7 @@ object reports {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.reportsMod.reports.BasicReportAggregate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReportAggregate]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReportAggregate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReportAggregate]
     
     /**
       * Creates and returns a new BasicReportAggregate instance in the SDK and on the server.
@@ -769,7 +769,7 @@ object reports {
       * of the parent BasicReport element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.reportsMod.reports.BasicReport): typings.mendixmodelsdk.reportsMod.reports.BasicReportAggregate = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReportAggregate]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReportAggregate = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReportAggregate]
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.BasicReportAggregate.structureTypeName")
@@ -780,21 +780,21 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.BasicReportAggregate.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "reports.BasicReportColumn")
   @js.native
   open class BasicReportColumn protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.BasicReportColumn {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.BasicReportColumn {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object BasicReportColumn {
@@ -809,7 +809,7 @@ object reports {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.reportsMod.reports.BasicReportColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReportColumn]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReportColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReportColumn]
     
     /**
       * Creates and returns a new BasicReportColumn instance in the SDK and on the server.
@@ -817,7 +817,7 @@ object reports {
       * of the parent BasicReport element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.reportsMod.reports.BasicReport): typings.mendixmodelsdk.reportsMod.reports.BasicReportColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.BasicReportColumn]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport): typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReportColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReportColumn]
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.BasicReportColumn.structureTypeName")
@@ -828,14 +828,14 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.BasicReportColumn.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "reports.ChartType")
   @js.native
   open class ChartType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.ChartType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.ChartType {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object ChartType {
@@ -847,39 +847,39 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ChartType.Area")
     @js.native
-    def Area: typings.mendixmodelsdk.reportsMod.reports.ChartType = js.native
-    inline def Area_=(x: typings.mendixmodelsdk.reportsMod.reports.ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Area")(x.asInstanceOf[js.Any])
+    def Area: typings.mendixmodelsdk.srcGenReportsMod.reports.ChartType = js.native
+    inline def Area_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Area")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ChartType.HorizontalBars")
     @js.native
-    def HorizontalBars: typings.mendixmodelsdk.reportsMod.reports.ChartType = js.native
-    inline def HorizontalBars_=(x: typings.mendixmodelsdk.reportsMod.reports.ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HorizontalBars")(x.asInstanceOf[js.Any])
+    def HorizontalBars: typings.mendixmodelsdk.srcGenReportsMod.reports.ChartType = js.native
+    inline def HorizontalBars_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HorizontalBars")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ChartType.Lines")
     @js.native
-    def Lines: typings.mendixmodelsdk.reportsMod.reports.ChartType = js.native
-    inline def Lines_=(x: typings.mendixmodelsdk.reportsMod.reports.ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Lines")(x.asInstanceOf[js.Any])
+    def Lines: typings.mendixmodelsdk.srcGenReportsMod.reports.ChartType = js.native
+    inline def Lines_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Lines")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ChartType.VerticalBars")
     @js.native
-    def VerticalBars: typings.mendixmodelsdk.reportsMod.reports.ChartType = js.native
+    def VerticalBars: typings.mendixmodelsdk.srcGenReportsMod.reports.ChartType = js.native
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ChartType.VerticalBars3D")
     @js.native
-    def VerticalBars3D: typings.mendixmodelsdk.reportsMod.reports.ChartType = js.native
-    inline def VerticalBars3D_=(x: typings.mendixmodelsdk.reportsMod.reports.ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VerticalBars3D")(x.asInstanceOf[js.Any])
+    def VerticalBars3D: typings.mendixmodelsdk.srcGenReportsMod.reports.ChartType = js.native
+    inline def VerticalBars3D_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VerticalBars3D")(x.asInstanceOf[js.Any])
     
-    inline def VerticalBars_=(x: typings.mendixmodelsdk.reportsMod.reports.ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VerticalBars")(x.asInstanceOf[js.Any])
+    inline def VerticalBars_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VerticalBars")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "reports.ColumnFormat")
   @js.native
   open class ColumnFormat protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.ColumnFormat {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.ColumnFormat {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object ColumnFormat {
@@ -891,26 +891,26 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ColumnFormat.Default")
     @js.native
-    def Default: typings.mendixmodelsdk.reportsMod.reports.ColumnFormat = js.native
-    inline def Default_=(x: typings.mendixmodelsdk.reportsMod.reports.ColumnFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+    def Default: typings.mendixmodelsdk.srcGenReportsMod.reports.ColumnFormat = js.native
+    inline def Default_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.ColumnFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ColumnFormat.MonthName")
     @js.native
-    def MonthName: typings.mendixmodelsdk.reportsMod.reports.ColumnFormat = js.native
-    inline def MonthName_=(x: typings.mendixmodelsdk.reportsMod.reports.ColumnFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonthName")(x.asInstanceOf[js.Any])
+    def MonthName: typings.mendixmodelsdk.srcGenReportsMod.reports.ColumnFormat = js.native
+    inline def MonthName_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.ColumnFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonthName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ColumnFormat.WeekdayName")
     @js.native
-    def WeekdayName: typings.mendixmodelsdk.reportsMod.reports.ColumnFormat = js.native
-    inline def WeekdayName_=(x: typings.mendixmodelsdk.reportsMod.reports.ColumnFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WeekdayName")(x.asInstanceOf[js.Any])
+    def WeekdayName: typings.mendixmodelsdk.srcGenReportsMod.reports.ColumnFormat = js.native
+    inline def WeekdayName_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.ColumnFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WeekdayName")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "reports.DateRangeFieldEnum")
   @js.native
   open class DateRangeFieldEnum protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.DateRangeFieldEnum {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.DateRangeFieldEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object DateRangeFieldEnum {
@@ -922,32 +922,32 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.DateRangeFieldEnum.Month")
     @js.native
-    def Month: typings.mendixmodelsdk.reportsMod.reports.DateRangeFieldEnum = js.native
-    inline def Month_=(x: typings.mendixmodelsdk.reportsMod.reports.DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Month")(x.asInstanceOf[js.Any])
+    def Month: typings.mendixmodelsdk.srcGenReportsMod.reports.DateRangeFieldEnum = js.native
+    inline def Month_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Month")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.DateRangeFieldEnum.Period")
     @js.native
-    def Period: typings.mendixmodelsdk.reportsMod.reports.DateRangeFieldEnum = js.native
-    inline def Period_=(x: typings.mendixmodelsdk.reportsMod.reports.DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Period")(x.asInstanceOf[js.Any])
+    def Period: typings.mendixmodelsdk.srcGenReportsMod.reports.DateRangeFieldEnum = js.native
+    inline def Period_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Period")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.DateRangeFieldEnum.Quarter")
     @js.native
-    def Quarter: typings.mendixmodelsdk.reportsMod.reports.DateRangeFieldEnum = js.native
-    inline def Quarter_=(x: typings.mendixmodelsdk.reportsMod.reports.DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Quarter")(x.asInstanceOf[js.Any])
+    def Quarter: typings.mendixmodelsdk.srcGenReportsMod.reports.DateRangeFieldEnum = js.native
+    inline def Quarter_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Quarter")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.DateRangeFieldEnum.Week")
     @js.native
-    def Week: typings.mendixmodelsdk.reportsMod.reports.DateRangeFieldEnum = js.native
-    inline def Week_=(x: typings.mendixmodelsdk.reportsMod.reports.DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Week")(x.asInstanceOf[js.Any])
+    def Week: typings.mendixmodelsdk.srcGenReportsMod.reports.DateRangeFieldEnum = js.native
+    inline def Week_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Week")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.DateRangeFieldEnum.Year")
     @js.native
-    def Year: typings.mendixmodelsdk.reportsMod.reports.DateRangeFieldEnum = js.native
-    inline def Year_=(x: typings.mendixmodelsdk.reportsMod.reports.DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Year")(x.asInstanceOf[js.Any])
+    def Year: typings.mendixmodelsdk.srcGenReportsMod.reports.DateRangeFieldEnum = js.native
+    inline def Year_=(x: typings.mendixmodelsdk.srcGenReportsMod.reports.DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Year")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -956,14 +956,14 @@ object reports {
   @JSImport("mendixmodelsdk", "reports.ReportButton")
   @js.native
   open class ReportButton protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportButton {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.ReportButton {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ReportButton {
@@ -978,7 +978,7 @@ object reports {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -989,7 +989,7 @@ object reports {
       *  7.7.0 to 7.14.0
       */
     /* static member */
-    inline def createInBuildingBlockUnderWidget(container: BuildingBlock): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInBuildingBlockUnderWidget(container: BuildingBlock): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1000,7 +1000,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1011,7 +1011,7 @@ object reports {
       *  6.7.0 to 7.14.0
       */
     /* static member */
-    inline def createInDataViewUnderFooterWidget(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInDataViewUnderFooterWidget(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1022,7 +1022,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInDataViewUnderFooterWidgets(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInDataViewUnderFooterWidgets(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1033,7 +1033,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInDataViewUnderWidget(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInDataViewUnderWidget(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1044,7 +1044,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInDataViewUnderWidgets(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInDataViewUnderWidgets(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1055,7 +1055,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInDivContainerUnderWidget(container: DivContainer): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInDivContainerUnderWidget(container: DivContainer): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1066,7 +1066,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInDivContainerUnderWidgets(container: DivContainer): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInDivContainerUnderWidgets(container: DivContainer): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1077,7 +1077,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInGroupBoxUnderWidget(container: GroupBox): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInGroupBoxUnderWidget(container: GroupBox): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1088,7 +1088,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInGroupBoxUnderWidgets(container: GroupBox): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInGroupBoxUnderWidgets(container: GroupBox): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1099,7 +1099,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInHeaderUnderLeftWidget(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInHeaderUnderLeftWidget(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1110,7 +1110,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInHeaderUnderLeftWidgets(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInHeaderUnderLeftWidgets(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1121,7 +1121,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInHeaderUnderRightWidget(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInHeaderUnderRightWidget(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1132,7 +1132,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInHeaderUnderRightWidgets(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInHeaderUnderRightWidgets(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1143,7 +1143,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1154,7 +1154,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1165,7 +1165,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1176,7 +1176,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1187,7 +1187,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutUnderWidget(container: Layout): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInLayoutUnderWidget(container: Layout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1198,7 +1198,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInLayoutUnderWidgets(container: Layout): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInLayoutUnderWidgets(container: Layout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1209,7 +1209,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1220,7 +1220,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1231,7 +1231,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInListViewUnderWidget(container: ListView): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInListViewUnderWidget(container: ListView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1242,7 +1242,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInListViewUnderWidgets(container: ListView): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInListViewUnderWidgets(container: ListView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1253,7 +1253,7 @@ object reports {
       *  7.1.0 to 7.14.0
       */
     /* static member */
-    inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1264,7 +1264,7 @@ object reports {
       *  7.23.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1275,7 +1275,7 @@ object reports {
       *  8.5.0 and higher
       */
     /* static member */
-    inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1286,7 +1286,7 @@ object reports {
       *  8.0.0 and higher
       */
     /* static member */
-    inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1297,7 +1297,7 @@ object reports {
       *  7.22.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1308,7 +1308,7 @@ object reports {
       *  7.21.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1319,7 +1319,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInNavigationListItemUnderWidget(container: NavigationListItem): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInNavigationListItemUnderWidget(container: NavigationListItem): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1330,7 +1330,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1341,7 +1341,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInReportPaneUnderParameterWidget(container: typings.mendixmodelsdk.reportsMod.reports.ReportPane): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInReportPaneUnderParameterWidget(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1352,7 +1352,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInReportPaneUnderReportWidget(container: typings.mendixmodelsdk.reportsMod.reports.ReportPane): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInReportPaneUnderReportWidget(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1363,7 +1363,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1374,7 +1374,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1385,7 +1385,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSnippetUnderWidget(container: Snippet): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInSnippetUnderWidget(container: Snippet): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1396,7 +1396,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInSnippetUnderWidgets(container: Snippet): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInSnippetUnderWidgets(container: Snippet): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1407,7 +1407,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSplitPaneUnderFirstWidget(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInSplitPaneUnderFirstWidget(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1418,7 +1418,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1429,7 +1429,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSplitPaneUnderSecondWidget(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInSplitPaneUnderSecondWidget(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1440,7 +1440,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1451,7 +1451,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTabPageUnderWidget(container: TabPage): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInTabPageUnderWidget(container: TabPage): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1462,7 +1462,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInTabPageUnderWidgets(container: TabPage): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInTabPageUnderWidgets(container: TabPage): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1473,7 +1473,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTableCellUnderWidget(container: TableCell): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInTableCellUnderWidget(container: TableCell): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1484,7 +1484,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInTableCellUnderWidgets(container: TableCell): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInTableCellUnderWidgets(container: TableCell): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1495,7 +1495,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1506,7 +1506,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1517,7 +1517,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1528,7 +1528,7 @@ object reports {
       *  8.0.0 and higher
       */
     /* static member */
-    inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
@@ -1539,7 +1539,7 @@ object reports {
       *  8.2.0 and higher
       */
     /* static member */
-    inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.reportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportButton]
+    inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton]
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportButton.structureTypeName")
@@ -1550,8 +1550,8 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportButton.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -1562,14 +1562,14 @@ object reports {
   @JSImport("mendixmodelsdk", "reports.ReportChart")
   @js.native
   open class ReportChart protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportChart {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.ReportChart {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ReportChart {
@@ -1584,7 +1584,7 @@ object reports {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1595,7 +1595,7 @@ object reports {
       *  7.7.0 to 7.14.0
       */
     /* static member */
-    inline def createInBuildingBlockUnderWidget(container: BuildingBlock): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInBuildingBlockUnderWidget(container: BuildingBlock): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1606,7 +1606,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1617,7 +1617,7 @@ object reports {
       *  6.7.0 to 7.14.0
       */
     /* static member */
-    inline def createInDataViewUnderFooterWidget(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInDataViewUnderFooterWidget(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1628,7 +1628,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInDataViewUnderFooterWidgets(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInDataViewUnderFooterWidgets(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1639,7 +1639,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInDataViewUnderWidget(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInDataViewUnderWidget(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1650,7 +1650,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInDataViewUnderWidgets(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInDataViewUnderWidgets(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1661,7 +1661,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInDivContainerUnderWidget(container: DivContainer): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInDivContainerUnderWidget(container: DivContainer): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1672,7 +1672,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInDivContainerUnderWidgets(container: DivContainer): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInDivContainerUnderWidgets(container: DivContainer): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1683,7 +1683,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInGroupBoxUnderWidget(container: GroupBox): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInGroupBoxUnderWidget(container: GroupBox): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1694,7 +1694,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInGroupBoxUnderWidgets(container: GroupBox): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInGroupBoxUnderWidgets(container: GroupBox): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1705,7 +1705,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInHeaderUnderLeftWidget(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInHeaderUnderLeftWidget(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1716,7 +1716,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInHeaderUnderLeftWidgets(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInHeaderUnderLeftWidgets(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1727,7 +1727,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInHeaderUnderRightWidget(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInHeaderUnderRightWidget(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1738,7 +1738,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInHeaderUnderRightWidgets(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInHeaderUnderRightWidgets(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1749,7 +1749,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1760,7 +1760,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1771,7 +1771,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1782,7 +1782,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1793,7 +1793,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutUnderWidget(container: Layout): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInLayoutUnderWidget(container: Layout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1804,7 +1804,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInLayoutUnderWidgets(container: Layout): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInLayoutUnderWidgets(container: Layout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1815,7 +1815,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1826,7 +1826,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1837,7 +1837,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInListViewUnderWidget(container: ListView): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInListViewUnderWidget(container: ListView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1848,7 +1848,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInListViewUnderWidgets(container: ListView): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInListViewUnderWidgets(container: ListView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1859,7 +1859,7 @@ object reports {
       *  7.1.0 to 7.14.0
       */
     /* static member */
-    inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1870,7 +1870,7 @@ object reports {
       *  7.23.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1881,7 +1881,7 @@ object reports {
       *  8.5.0 to 9.0.0
       */
     /* static member */
-    inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1892,7 +1892,7 @@ object reports {
       *  8.0.0 to 9.0.0
       */
     /* static member */
-    inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1903,7 +1903,7 @@ object reports {
       *  7.22.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1914,7 +1914,7 @@ object reports {
       *  7.21.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1925,7 +1925,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInNavigationListItemUnderWidget(container: NavigationListItem): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInNavigationListItemUnderWidget(container: NavigationListItem): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1936,7 +1936,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1947,7 +1947,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInReportPaneUnderParameterWidget(container: typings.mendixmodelsdk.reportsMod.reports.ReportPane): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInReportPaneUnderParameterWidget(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1958,7 +1958,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInReportPaneUnderReportWidget(container: typings.mendixmodelsdk.reportsMod.reports.ReportPane): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInReportPaneUnderReportWidget(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1969,7 +1969,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1980,7 +1980,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -1991,7 +1991,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSnippetUnderWidget(container: Snippet): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInSnippetUnderWidget(container: Snippet): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2002,7 +2002,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInSnippetUnderWidgets(container: Snippet): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInSnippetUnderWidgets(container: Snippet): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2013,7 +2013,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSplitPaneUnderFirstWidget(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInSplitPaneUnderFirstWidget(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2024,7 +2024,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2035,7 +2035,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSplitPaneUnderSecondWidget(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInSplitPaneUnderSecondWidget(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2046,7 +2046,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2057,7 +2057,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTabPageUnderWidget(container: TabPage): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInTabPageUnderWidget(container: TabPage): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2068,7 +2068,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInTabPageUnderWidgets(container: TabPage): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInTabPageUnderWidgets(container: TabPage): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2079,7 +2079,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTableCellUnderWidget(container: TableCell): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInTableCellUnderWidget(container: TableCell): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2090,7 +2090,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInTableCellUnderWidgets(container: TableCell): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInTableCellUnderWidgets(container: TableCell): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2101,7 +2101,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2112,7 +2112,7 @@ object reports {
       *  7.15.0 to 9.0.0
       */
     /* static member */
-    inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2123,7 +2123,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2134,7 +2134,7 @@ object reports {
       *  8.0.0 to 9.0.0
       */
     /* static member */
-    inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
@@ -2145,7 +2145,7 @@ object reports {
       *  8.2.0 to 9.0.0
       */
     /* static member */
-    inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
+    inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart]
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportChart.structureTypeName")
@@ -2156,8 +2156,8 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportChart.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -2166,14 +2166,14 @@ object reports {
   @JSImport("mendixmodelsdk", "reports.ReportChartSeries")
   @js.native
   open class ReportChartSeries protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportChartSeries {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.ReportChartSeries {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ReportChartSeries {
@@ -2188,7 +2188,7 @@ object reports {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.reportsMod.reports.ReportChartSeries = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChartSeries]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChartSeries = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChartSeries]
     
     /**
       * Creates and returns a new ReportChartSeries instance in the SDK and on the server.
@@ -2199,7 +2199,7 @@ object reports {
       *  6.0.0 to 9.0.0
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.reportsMod.reports.ReportChart): typings.mendixmodelsdk.reportsMod.reports.ReportChartSeries = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChartSeries]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChartSeries = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChartSeries]
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportChartSeries.structureTypeName")
@@ -2210,8 +2210,8 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportChartSeries.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -2220,14 +2220,14 @@ object reports {
   @JSImport("mendixmodelsdk", "reports.ReportDateRangeField")
   @js.native
   open class ReportDateRangeField protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportDateRangeField {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.ReportDateRangeField {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ReportDateRangeField {
@@ -2242,7 +2242,7 @@ object reports {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeField = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeField]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeField = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeField]
     
     /**
       * Creates and returns a new ReportDateRangeField instance in the SDK and on the server.
@@ -2250,7 +2250,7 @@ object reports {
       * of the parent ReportDateRangeSelector element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeField = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeField]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeField = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeField]
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportDateRangeField.structureTypeName")
@@ -2261,8 +2261,8 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportDateRangeField.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -2271,14 +2271,14 @@ object reports {
   @JSImport("mendixmodelsdk", "reports.ReportDateRangeSelector")
   @js.native
   open class ReportDateRangeSelector protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportDateRangeSelector {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.ReportDateRangeSelector {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ReportDateRangeSelector {
@@ -2293,7 +2293,7 @@ object reports {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2304,7 +2304,7 @@ object reports {
       *  7.7.0 to 7.14.0
       */
     /* static member */
-    inline def createInBuildingBlockUnderWidget(container: BuildingBlock): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInBuildingBlockUnderWidget(container: BuildingBlock): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2315,7 +2315,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2326,7 +2326,7 @@ object reports {
       *  6.7.0 to 7.14.0
       */
     /* static member */
-    inline def createInDataViewUnderFooterWidget(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInDataViewUnderFooterWidget(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2337,7 +2337,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInDataViewUnderFooterWidgets(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInDataViewUnderFooterWidgets(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2348,7 +2348,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInDataViewUnderWidget(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInDataViewUnderWidget(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2359,7 +2359,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInDataViewUnderWidgets(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInDataViewUnderWidgets(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2370,7 +2370,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInDivContainerUnderWidget(container: DivContainer): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInDivContainerUnderWidget(container: DivContainer): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2381,7 +2381,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInDivContainerUnderWidgets(container: DivContainer): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInDivContainerUnderWidgets(container: DivContainer): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2392,7 +2392,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInGroupBoxUnderWidget(container: GroupBox): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInGroupBoxUnderWidget(container: GroupBox): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2403,7 +2403,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInGroupBoxUnderWidgets(container: GroupBox): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInGroupBoxUnderWidgets(container: GroupBox): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2414,7 +2414,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInHeaderUnderLeftWidget(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInHeaderUnderLeftWidget(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2425,7 +2425,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInHeaderUnderLeftWidgets(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInHeaderUnderLeftWidgets(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2436,7 +2436,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInHeaderUnderRightWidget(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInHeaderUnderRightWidget(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2447,7 +2447,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInHeaderUnderRightWidgets(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInHeaderUnderRightWidgets(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2458,7 +2458,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2469,7 +2469,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2480,7 +2480,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2491,7 +2491,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2502,7 +2502,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutUnderWidget(container: Layout): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInLayoutUnderWidget(container: Layout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2513,7 +2513,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInLayoutUnderWidgets(container: Layout): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInLayoutUnderWidgets(container: Layout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2524,7 +2524,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2535,7 +2535,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2546,7 +2546,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInListViewUnderWidget(container: ListView): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInListViewUnderWidget(container: ListView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2557,7 +2557,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInListViewUnderWidgets(container: ListView): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInListViewUnderWidgets(container: ListView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2568,7 +2568,7 @@ object reports {
       *  7.1.0 to 7.14.0
       */
     /* static member */
-    inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2579,7 +2579,7 @@ object reports {
       *  7.23.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2590,7 +2590,7 @@ object reports {
       *  8.5.0 and higher
       */
     /* static member */
-    inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2601,7 +2601,7 @@ object reports {
       *  8.0.0 and higher
       */
     /* static member */
-    inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2612,7 +2612,7 @@ object reports {
       *  7.22.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2623,7 +2623,7 @@ object reports {
       *  7.21.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2634,7 +2634,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInNavigationListItemUnderWidget(container: NavigationListItem): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInNavigationListItemUnderWidget(container: NavigationListItem): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2645,7 +2645,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2656,7 +2656,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInReportPaneUnderParameterWidget(container: typings.mendixmodelsdk.reportsMod.reports.ReportPane): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInReportPaneUnderParameterWidget(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2667,7 +2667,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInReportPaneUnderReportWidget(container: typings.mendixmodelsdk.reportsMod.reports.ReportPane): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInReportPaneUnderReportWidget(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2678,7 +2678,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2689,7 +2689,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2700,7 +2700,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSnippetUnderWidget(container: Snippet): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInSnippetUnderWidget(container: Snippet): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2711,7 +2711,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInSnippetUnderWidgets(container: Snippet): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInSnippetUnderWidgets(container: Snippet): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2722,7 +2722,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSplitPaneUnderFirstWidget(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInSplitPaneUnderFirstWidget(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2733,7 +2733,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2744,7 +2744,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSplitPaneUnderSecondWidget(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInSplitPaneUnderSecondWidget(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2755,7 +2755,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2766,7 +2766,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTabPageUnderWidget(container: TabPage): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInTabPageUnderWidget(container: TabPage): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2777,7 +2777,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInTabPageUnderWidgets(container: TabPage): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInTabPageUnderWidgets(container: TabPage): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2788,7 +2788,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTableCellUnderWidget(container: TableCell): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInTableCellUnderWidget(container: TableCell): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2799,7 +2799,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInTableCellUnderWidgets(container: TableCell): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInTableCellUnderWidgets(container: TableCell): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2810,7 +2810,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2821,7 +2821,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2832,7 +2832,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2843,7 +2843,7 @@ object reports {
       *  8.0.0 and higher
       */
     /* static member */
-    inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
@@ -2854,7 +2854,7 @@ object reports {
       *  8.2.0 and higher
       */
     /* static member */
-    inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector]
+    inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector]
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportDateRangeSelector.structureTypeName")
@@ -2865,8 +2865,8 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportDateRangeSelector.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -2875,14 +2875,14 @@ object reports {
   @JSImport("mendixmodelsdk", "reports.ReportDropDown")
   @js.native
   open class ReportDropDown protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportDropDown {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.ReportDropDown {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ReportDropDown {
@@ -2897,7 +2897,7 @@ object reports {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -2908,7 +2908,7 @@ object reports {
       *  7.7.0 to 7.14.0
       */
     /* static member */
-    inline def createInBuildingBlockUnderWidget(container: BuildingBlock): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInBuildingBlockUnderWidget(container: BuildingBlock): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -2919,7 +2919,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -2930,7 +2930,7 @@ object reports {
       *  6.7.0 to 7.14.0
       */
     /* static member */
-    inline def createInDataViewUnderFooterWidget(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInDataViewUnderFooterWidget(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -2941,7 +2941,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInDataViewUnderFooterWidgets(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInDataViewUnderFooterWidgets(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -2952,7 +2952,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInDataViewUnderWidget(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInDataViewUnderWidget(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -2963,7 +2963,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInDataViewUnderWidgets(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInDataViewUnderWidgets(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -2974,7 +2974,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInDivContainerUnderWidget(container: DivContainer): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInDivContainerUnderWidget(container: DivContainer): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -2985,7 +2985,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInDivContainerUnderWidgets(container: DivContainer): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInDivContainerUnderWidgets(container: DivContainer): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -2996,7 +2996,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInGroupBoxUnderWidget(container: GroupBox): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInGroupBoxUnderWidget(container: GroupBox): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3007,7 +3007,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInGroupBoxUnderWidgets(container: GroupBox): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInGroupBoxUnderWidgets(container: GroupBox): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3018,7 +3018,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInHeaderUnderLeftWidget(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInHeaderUnderLeftWidget(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3029,7 +3029,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInHeaderUnderLeftWidgets(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInHeaderUnderLeftWidgets(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3040,7 +3040,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInHeaderUnderRightWidget(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInHeaderUnderRightWidget(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3051,7 +3051,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInHeaderUnderRightWidgets(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInHeaderUnderRightWidgets(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3062,7 +3062,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3073,7 +3073,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3084,7 +3084,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3095,7 +3095,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3106,7 +3106,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInLayoutUnderWidget(container: Layout): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInLayoutUnderWidget(container: Layout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3117,7 +3117,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInLayoutUnderWidgets(container: Layout): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInLayoutUnderWidgets(container: Layout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3128,7 +3128,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3139,7 +3139,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3150,7 +3150,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInListViewUnderWidget(container: ListView): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInListViewUnderWidget(container: ListView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3161,7 +3161,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInListViewUnderWidgets(container: ListView): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInListViewUnderWidgets(container: ListView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3172,7 +3172,7 @@ object reports {
       *  7.1.0 to 7.14.0
       */
     /* static member */
-    inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3183,7 +3183,7 @@ object reports {
       *  7.23.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3194,7 +3194,7 @@ object reports {
       *  8.5.0 and higher
       */
     /* static member */
-    inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3205,7 +3205,7 @@ object reports {
       *  8.0.0 and higher
       */
     /* static member */
-    inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3216,7 +3216,7 @@ object reports {
       *  7.22.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3227,7 +3227,7 @@ object reports {
       *  7.21.0 to 7.23.0
       */
     /* static member */
-    inline def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3238,7 +3238,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInNavigationListItemUnderWidget(container: NavigationListItem): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInNavigationListItemUnderWidget(container: NavigationListItem): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3249,7 +3249,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3260,7 +3260,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInReportPaneUnderParameterWidget(container: typings.mendixmodelsdk.reportsMod.reports.ReportPane): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInReportPaneUnderParameterWidget(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3271,7 +3271,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInReportPaneUnderReportWidget(container: typings.mendixmodelsdk.reportsMod.reports.ReportPane): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInReportPaneUnderReportWidget(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3282,7 +3282,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3293,7 +3293,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3304,7 +3304,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSnippetUnderWidget(container: Snippet): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInSnippetUnderWidget(container: Snippet): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3315,7 +3315,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInSnippetUnderWidgets(container: Snippet): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInSnippetUnderWidgets(container: Snippet): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3326,7 +3326,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSplitPaneUnderFirstWidget(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInSplitPaneUnderFirstWidget(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3337,7 +3337,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3348,7 +3348,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInSplitPaneUnderSecondWidget(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInSplitPaneUnderSecondWidget(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3359,7 +3359,7 @@ object reports {
       *  7.15.0 to 7.23.0
       */
     /* static member */
-    inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3370,7 +3370,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTabPageUnderWidget(container: TabPage): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInTabPageUnderWidget(container: TabPage): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3381,7 +3381,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInTabPageUnderWidgets(container: TabPage): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInTabPageUnderWidgets(container: TabPage): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3392,7 +3392,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTableCellUnderWidget(container: TableCell): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInTableCellUnderWidget(container: TableCell): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3403,7 +3403,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInTableCellUnderWidgets(container: TableCell): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInTableCellUnderWidgets(container: TableCell): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3414,7 +3414,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3425,7 +3425,7 @@ object reports {
       *  7.15.0 and higher
       */
     /* static member */
-    inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3436,7 +3436,7 @@ object reports {
       *  6.0.0 to 7.14.0
       */
     /* static member */
-    inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3447,7 +3447,7 @@ object reports {
       *  8.0.0 and higher
       */
     /* static member */
-    inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
@@ -3458,7 +3458,7 @@ object reports {
       *  8.2.0 and higher
       */
     /* static member */
-    inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.reportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportDropDown]
+    inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDropDown]
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportDropDown.structureTypeName")
@@ -3469,8 +3469,8 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportDropDown.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -3481,14 +3481,14 @@ object reports {
   @JSImport("mendixmodelsdk", "reports.ReportPane")
   @js.native
   open class ReportPane protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportPane {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.ReportPane {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ReportPane {
@@ -3503,7 +3503,7 @@ object reports {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3514,7 +3514,7 @@ object reports {
       *  6.7.0 to 6.9.0
       */
     /* static member */
-    inline def createInDataViewUnderFooterWidget(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInDataViewUnderFooterWidget(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3525,7 +3525,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInDataViewUnderWidget(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInDataViewUnderWidget(container: DataView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3536,7 +3536,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInDivContainerUnderWidget(container: DivContainer): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInDivContainerUnderWidget(container: DivContainer): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3547,7 +3547,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInGroupBoxUnderWidget(container: GroupBox): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInGroupBoxUnderWidget(container: GroupBox): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3558,7 +3558,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInHeaderUnderLeftWidget(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInHeaderUnderLeftWidget(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3569,7 +3569,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInHeaderUnderRightWidget(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInHeaderUnderRightWidget(container: Header): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3580,7 +3580,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3591,7 +3591,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3602,7 +3602,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInLayoutUnderWidget(container: Layout): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInLayoutUnderWidget(container: Layout): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3613,7 +3613,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3624,7 +3624,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInListViewUnderWidget(container: ListView): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInListViewUnderWidget(container: ListView): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3635,7 +3635,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInNavigationListItemUnderWidget(container: NavigationListItem): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInNavigationListItemUnderWidget(container: NavigationListItem): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3646,7 +3646,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInReportPaneUnderParameterWidget(container: typings.mendixmodelsdk.reportsMod.reports.ReportPane): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInReportPaneUnderParameterWidget(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3657,7 +3657,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInReportPaneUnderReportWidget(container: typings.mendixmodelsdk.reportsMod.reports.ReportPane): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInReportPaneUnderReportWidget(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3668,7 +3668,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3679,7 +3679,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInSnippetUnderWidget(container: Snippet): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInSnippetUnderWidget(container: Snippet): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3690,7 +3690,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInSplitPaneUnderFirstWidget(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInSplitPaneUnderFirstWidget(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3701,7 +3701,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInSplitPaneUnderSecondWidget(container: SplitPane): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInSplitPaneUnderSecondWidget(container: SplitPane): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3712,7 +3712,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInTabPageUnderWidget(container: TabPage): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInTabPageUnderWidget(container: TabPage): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3723,7 +3723,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInTableCellUnderWidget(container: TableCell): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInTableCellUnderWidget(container: TableCell): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3734,7 +3734,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /**
       * Creates and returns a new ReportPane instance in the SDK and on the server.
@@ -3745,7 +3745,7 @@ object reports {
       *  6.0.0 to 6.9.0
       */
     /* static member */
-    inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): typings.mendixmodelsdk.reportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportPane]
+    inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane]
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportPane.structureTypeName")
@@ -3756,21 +3756,21 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportPane.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk", "reports.ReportParameter")
+  /* note: abstract class */ @JSImport("mendixmodelsdk", "reports.ReportParameter")
   @js.native
-  abstract class ReportParameter protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportParameter {
+  open class ReportParameter protected ()
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.ReportParameter {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ReportParameter {
@@ -3788,8 +3788,8 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportParameter.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -3798,17 +3798,17 @@ object reports {
   /**
     * See: {@link https://docs.mendix.com/refguide/report-widgets relevant section in reference guide}
     */
-  @JSImport("mendixmodelsdk", "reports.ReportWidget")
+  /* note: abstract class */ @JSImport("mendixmodelsdk", "reports.ReportWidget")
   @js.native
-  abstract class ReportWidget protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportWidget {
+  open class ReportWidget protected ()
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.ReportWidget {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ReportWidget {
@@ -3826,21 +3826,21 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportWidget.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "reports.ReportZoomInfo")
   @js.native
   open class ReportZoomInfo protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportZoomInfo {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.ReportZoomInfo {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ReportZoomInfo {
@@ -3855,7 +3855,7 @@ object reports {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.reportsMod.reports.ReportZoomInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportZoomInfo]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportZoomInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportZoomInfo]
     
     /**
       * Creates and returns a new ReportZoomInfo instance in the SDK and on the server.
@@ -3863,7 +3863,7 @@ object reports {
       * of the parent BasicReport element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.reportsMod.reports.BasicReport): typings.mendixmodelsdk.reportsMod.reports.ReportZoomInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportZoomInfo]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReport): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportZoomInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportZoomInfo]
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportZoomInfo.structureTypeName")
@@ -3874,21 +3874,21 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportZoomInfo.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "reports.ReportZoomMapping")
   @js.native
   open class ReportZoomMapping protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportZoomMapping {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.reports.ReportZoomMapping {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ReportZoomMapping {
@@ -3903,7 +3903,7 @@ object reports {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.reportsMod.reports.ReportZoomMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportZoomMapping]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportZoomMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportZoomMapping]
     
     /**
       * Creates and returns a new ReportZoomMapping instance in the SDK and on the server.
@@ -3911,7 +3911,7 @@ object reports {
       * of the parent ReportZoomInfo element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.reportsMod.reports.ReportZoomInfo): typings.mendixmodelsdk.reportsMod.reports.ReportZoomMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportZoomMapping]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenReportsMod.reports.ReportZoomInfo): typings.mendixmodelsdk.srcGenReportsMod.reports.ReportZoomMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenReportsMod.reports.ReportZoomMapping]
     
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportZoomMapping.structureTypeName")
@@ -3922,7 +3922,7 @@ object reports {
     /* static member */
     @JSImport("mendixmodelsdk", "reports.ReportZoomMapping.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.reportsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenReportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
 }

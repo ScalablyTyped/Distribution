@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-picker__picker
 
-Typings are for version 2.4.4
+Typings are for version 2.4.7
 
 ## Library description:
 React Native Picker for iOS, Android, macOS, and Windows

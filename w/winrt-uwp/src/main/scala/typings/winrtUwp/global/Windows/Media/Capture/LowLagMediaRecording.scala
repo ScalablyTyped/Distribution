@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods for taking a low lag media recording. */
-@JSGlobal("Windows.Media.Capture.LowLagMediaRecording")
+/* note: abstract class */ @JSGlobal("Windows.Media.Capture.LowLagMediaRecording")
 @js.native
-abstract class LowLagMediaRecording ()
+open class LowLagMediaRecording ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.LowLagMediaRecording {
   

@@ -1,9 +1,9 @@
 package typings.redisClient.anon
 
-import typings.redisClient.bzpopmaxMod.BZPopMaxReply
-import typings.redisClient.bzpopmaxMod.ZMemberRawReply
-import typings.redisClient.libCommandsMod.RedisCommandArgument
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsBzpopmaxMod.BZPopMaxReply
+import typings.redisClient.distLibCommandsBzpopmaxMod.ZMemberRawReply
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

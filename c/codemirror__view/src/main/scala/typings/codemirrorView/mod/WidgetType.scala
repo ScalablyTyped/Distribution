@@ -13,9 +13,9 @@ delay creating of the DOM structure for a widget until it is
 needed, and to avoid redrawing widgets even if the decorations
 that define them are recreated.
 */
-@JSImport("@codemirror/view", "WidgetType")
+/* note: abstract class */ @JSImport("@codemirror/view", "WidgetType")
 @js.native
-abstract class WidgetType () extends StObject {
+open class WidgetType () extends StObject {
   
   /**
     This is called when the an instance of the widget is removed

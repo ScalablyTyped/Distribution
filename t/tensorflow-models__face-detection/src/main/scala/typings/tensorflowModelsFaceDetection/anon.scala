@@ -1,7 +1,7 @@
 package typings.tensorflowModelsFaceDetection
 
-import typings.tensorflowModelsFaceDetection.calculateInverseMatrixMod.Matrix4x4
-import typings.tensorflowModelsFaceDetection.commonInterfacesMod.Padding
+import typings.tensorflowModelsFaceDetection.distSharedCalculatorsCalculateInverseMatrixMod.Matrix4x4
+import typings.tensorflowModelsFaceDetection.distSharedCalculatorsInterfacesCommonInterfacesMod.Padding
 import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

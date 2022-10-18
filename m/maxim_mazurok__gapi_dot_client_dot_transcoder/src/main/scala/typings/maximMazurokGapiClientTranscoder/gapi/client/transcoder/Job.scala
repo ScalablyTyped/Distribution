@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,9 +27,7 @@ trait Job extends StObject {
   
   /** The labels associated with this job. You can use these to organize and group your jobs. */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientTranscoder.maximMazurokGapiClientTranscoderStrings.Job & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The resource name of the job. Format: `projects/{project_number}/locations/{location}/jobs/{job}` */
@@ -90,9 +87,7 @@ object Job {
     inline def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientTranscoder.maximMazurokGapiClientTranscoderStrings.Job & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

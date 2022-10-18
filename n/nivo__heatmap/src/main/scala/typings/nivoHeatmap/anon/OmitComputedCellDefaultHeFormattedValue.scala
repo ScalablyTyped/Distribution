@@ -1,11 +1,11 @@
 package typings.nivoHeatmap.anon
 
-import typings.nivoHeatmap.typesMod.DefaultHeatMapDatum
+import typings.nivoHeatmap.distTypesTypesMod.DefaultHeatMapDatum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Omit<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<@nivo/heatmap.@nivo/heatmap/dist/types/types.DefaultHeatMapDatum>, 'borderColor' | 'color' | 'opacity' | 'label' | 'labelTextColor'> */
+/* Inlined std.Omit<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<@nivo/heatmap.@nivo/heatmap/dist/types/types.DefaultHeatMapDatum>, 'borderColor' | 'color' | 'opacity' | 'labelTextColor'> */
 trait OmitComputedCellDefaultHeFormattedValue extends StObject {
   
   var data: DefaultHeatMapDatum
@@ -15,6 +15,8 @@ trait OmitComputedCellDefaultHeFormattedValue extends StObject {
   var height: Double
   
   var id: String
+  
+  var label: String
   
   var serieId: String
   
@@ -32,12 +34,13 @@ object OmitComputedCellDefaultHeFormattedValue {
     data: DefaultHeatMapDatum,
     height: Double,
     id: String,
+    label: String,
     serieId: String,
     width: Double,
     x: Double,
     y: Double
   ): OmitComputedCellDefaultHeFormattedValue = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], serieId = serieId.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], serieId = serieId.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitComputedCellDefaultHeFormattedValue]
   }
   
@@ -54,6 +57,8 @@ object OmitComputedCellDefaultHeFormattedValue {
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setSerieId(value: String): Self = StObject.set(x, "serieId", value.asInstanceOf[js.Any])
     

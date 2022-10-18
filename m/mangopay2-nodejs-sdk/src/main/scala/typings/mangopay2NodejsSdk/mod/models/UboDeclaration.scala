@@ -1,10 +1,10 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.enumsMod.enums.IUboDeclarationRefusedReasonType
-import typings.mangopay2NodejsSdk.enumsMod.enums.IUboDeclarationStatus
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
-import typings.mangopay2NodejsSdk.typesMod.ValueOf
-import typings.mangopay2NodejsSdk.uboDeclarationMod.uboDeclaration.UboDeclarationData
+import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IUboDeclarationRefusedReasonType
+import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IUboDeclarationStatus
+import typings.mangopay2NodejsSdk.typingsModelsUboDeclarationMod.uboDeclaration.UboDeclarationData
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
+import typings.mangopay2NodejsSdk.typingsTypesMod.ValueOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,4 +55,10 @@ open class UboDeclaration protected ()
     */
   /* CompleteClass */
   var Ubos: js.Array[Any] = js.native
+  
+  /**
+    * ID of the user
+    */
+  /* CompleteClass */
+  var UserId: String = js.native
 }

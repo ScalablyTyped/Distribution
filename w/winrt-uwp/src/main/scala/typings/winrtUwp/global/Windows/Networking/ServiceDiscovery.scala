@@ -70,16 +70,16 @@ object ServiceDiscovery {
     }
     
     /** A collection of DNS Service Discovery (DNS-SD) service instances. */
-    @JSGlobal("Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstanceCollection")
+    /* note: abstract class */ @JSGlobal("Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstanceCollection")
     @js.native
-    abstract class DnssdServiceInstanceCollection ()
+    open class DnssdServiceInstanceCollection ()
       extends StObject
          with typings.winrtUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstanceCollection
     
     /** Maintains a collection of available DNS Service Discovery (DNS-SD) service instances. */
-    @JSGlobal("Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcher")
+    /* note: abstract class */ @JSGlobal("Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcher")
     @js.native
-    abstract class DnssdServiceWatcher ()
+    open class DnssdServiceWatcher ()
       extends StObject
          with typings.winrtUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcher
     

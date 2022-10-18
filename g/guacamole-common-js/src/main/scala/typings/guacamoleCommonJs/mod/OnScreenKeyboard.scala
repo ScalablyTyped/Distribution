@@ -1,6 +1,6 @@
 package typings.guacamoleCommonJs.mod
 
-import typings.guacamoleCommonJs.onScreenKeyboardMod.Layout
+import typings.guacamoleCommonJs.libOnScreenKeyboardMod.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-common-js", "OnScreenKeyboard")
 @js.native
 open class OnScreenKeyboard protected ()
-  extends typings.guacamoleCommonJs.onScreenKeyboardMod.OnScreenKeyboard {
+  extends typings.guacamoleCommonJs.libOnScreenKeyboardMod.OnScreenKeyboard {
   def this(layout: Layout) = this()
 }

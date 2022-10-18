@@ -1,16 +1,17 @@
 package typings.officeUiFabricReact.anon
 
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.baseButtonClassNamesMod.IButtonClassNames
-import typings.officeUiFabricReact.baseButtonMod.BaseButton
-import typings.officeUiFabricReact.buttonButtonMod.Button
-import typings.officeUiFabricReact.buttonTypesMod.ButtonType
-import typings.officeUiFabricReact.buttonTypesMod.IButton
-import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
-import typings.officeUiFabricReact.buttonTypesMod.IButtonStyles
-import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps
-import typings.officeUiFabricReact.iconTypesMod.IIconProps
-import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsButtonBaseButtonDotclassNamesMod.IButtonClassNames
+import typings.officeUiFabricReact.libComponentsButtonBaseButtonMod.BaseButton
+import typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ButtonType
+import typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.IButton
+import typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.IButtonProps
+import typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.IButtonStyles
+import typings.officeUiFabricReact.libComponentsButtonButtonMod.Button
+import typings.officeUiFabricReact.libComponentsButtonSplitButtonSplitButtonDotclassNamesMod.ISplitButtonClassNames
+import typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.IContextualMenuProps
+import typings.officeUiFabricReact.libComponentsIconIconDottypesMod.IIconProps
+import typings.officeUiFabricReact.libComponentsKeytipKeytipDottypesMod.IKeytipProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions removals`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions text`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`inline`
@@ -63,7 +64,6 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.url
 import typings.officeUiFabricReact.officeUiFabricReactStrings.user
 import typings.officeUiFabricReact.officeUiFabricReactStrings.vertical
 import typings.officeUiFabricReact.officeUiFabricReactStrings.yes
-import typings.officeUiFabricReact.splitButtonClassNamesMod.ISplitButtonClassNames
 import typings.react.anon.Html
 import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.AnimationEvent
@@ -109,11 +109,11 @@ import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLSpanElement
-import typings.uifabricMergeStyles.istyleMod.IStyle
-import typings.uifabricUtilities.createRefMod.IRefObject
-import typings.uifabricUtilities.icomponentasMod.IComponentAs
-import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
-import typings.uifabricUtilities.keyCodesMod.KeyCodes
+import typings.uifabricMergeStyles.libIstyleMod.IStyle
+import typings.uifabricUtilities.libCreateRefMod.IRefObject
+import typings.uifabricUtilities.libIcomponentasMod.IComponentAs
+import typings.uifabricUtilities.libIrenderfunctionMod.IRenderFunction
+import typings.uifabricUtilities.libKeyCodesMod.KeyCodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

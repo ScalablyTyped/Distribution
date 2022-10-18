@@ -1,14 +1,13 @@
 package typings.cypress.Chai
 
-import typings.cypress.Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Keys extends js.Object {
+trait Keys extends StObject {
+  
   def apply(keys: String*): Assertion = js.native
-  def apply(keys: js.Array[_]): Assertion = js.native
-  def apply(keys: Object): Assertion = js.native
+  def apply(keys: js.Array[Any]): Assertion = js.native
+  def apply(keys: js.Object): Assertion = js.native
 }
-

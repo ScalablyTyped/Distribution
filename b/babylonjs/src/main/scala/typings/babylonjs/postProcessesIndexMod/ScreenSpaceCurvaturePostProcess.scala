@@ -1,8 +1,8 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "ScreenSpaceCurvaturePostProcess")
 @js.native
 open class ScreenSpaceCurvaturePostProcess protected ()
-  extends typings.babylonjs.screenSpaceCurvaturePostProcessMod.ScreenSpaceCurvaturePostProcess {
+  extends typings.babylonjs.postProcessesScreenSpaceCurvaturePostProcessMod.ScreenSpaceCurvaturePostProcess {
   /**
     * Creates a new instance ScreenSpaceCurvaturePostProcess
     * @param name The name of the effect.
@@ -47,5 +47,5 @@ object ScreenSpaceCurvaturePostProcess {
   /**
     * @internal
     */
-  inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): typings.babylonjs.screenSpaceCurvaturePostProcessMod.ScreenSpaceCurvaturePostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.screenSpaceCurvaturePostProcessMod.ScreenSpaceCurvaturePostProcess]
+  inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): typings.babylonjs.postProcessesScreenSpaceCurvaturePostProcessMod.ScreenSpaceCurvaturePostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.postProcessesScreenSpaceCurvaturePostProcessMod.ScreenSpaceCurvaturePostProcess]
 }

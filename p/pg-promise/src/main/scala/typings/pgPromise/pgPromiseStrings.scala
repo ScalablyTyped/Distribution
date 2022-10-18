@@ -1,7 +1,7 @@
 package typings.pgPromise
 
 import typings.pgPromise.mod.FormattingFilter
-import typings.pgPromise.pgSubsetMod.ParserFormat
+import typings.pgPromise.typescriptPgSubsetMod.ParserFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

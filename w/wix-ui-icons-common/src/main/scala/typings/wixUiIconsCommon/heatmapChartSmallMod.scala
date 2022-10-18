@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsHeatmapChartSmallMod.HeatmapChartSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object heatmapChartSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/HeatmapChartSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/HeatmapChartSmall", JSImport.Default)
   @js.native
   val default: FC[HeatmapChartSmallProps] = js.native
-  
-  trait HeatmapChartSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object HeatmapChartSmallProps {
-    
-    inline def apply(): HeatmapChartSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[HeatmapChartSmallProps]
-    }
-    
-    extension [Self <: HeatmapChartSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[HeatmapChartSmallProps]
   

@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains a SOAP message used in manual challenge requests. */
-@JSGlobal("Windows.Media.Protection.PlayReady.PlayReadySoapMessage")
+/* note: abstract class */ @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadySoapMessage")
 @js.native
-abstract class PlayReadySoapMessage ()
+open class PlayReadySoapMessage ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadySoapMessage {
   

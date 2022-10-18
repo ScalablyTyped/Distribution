@@ -7,34 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OwnerRef extends StObject {
   
   /** The account owner of the repository. The name is not case sensitive. */
-  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
+  var owner: String
   
   var ref: String
   
   /** The name of the repository. The name is not case sensitive. */
-  var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
+  var repo: String
 }
 object OwnerRef {
   
-  inline def apply(
-    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any,
-    ref: String,
-    repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
-  ): OwnerRef = {
+  inline def apply(owner: String, ref: String, repo: String): OwnerRef = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[OwnerRef]
   }
   
   extension [Self <: OwnerRef](x: Self) {
     
-    inline def setOwner(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
-    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setRepo(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
-    ): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

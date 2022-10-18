@@ -1,6 +1,6 @@
 package typings.playable.anon
 
-import typings.playable.chomecastApiMockMod.CastContext
+import typings.playable.distSrcTestkitChomecastApiMockMod.CastContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

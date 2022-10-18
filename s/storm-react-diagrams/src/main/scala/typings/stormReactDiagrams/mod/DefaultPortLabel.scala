@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "DefaultPortLabel")
 @js.native
 open class DefaultPortLabel protected ()
-  extends typings.stormReactDiagrams.defaultPortLabelWidgetMod.DefaultPortLabel {
+  extends typings.stormReactDiagrams.distSrcDefaultsWidgetsDefaultPortLabelWidgetMod.DefaultPortLabel {
   def this(props: Any) = this()
 }

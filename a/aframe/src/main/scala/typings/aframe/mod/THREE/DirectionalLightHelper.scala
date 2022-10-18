@@ -14,5 +14,5 @@ open class DirectionalLightHelper protected ()
     * @param [size=1]
     * @param color
     */
-  def this(light: typings.three.directionalLightMod.DirectionalLight) = this()
+  def this(light: typings.three.srcLightsDirectionalLightMod.DirectionalLight) = this()
 }

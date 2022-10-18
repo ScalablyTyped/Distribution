@@ -3,7 +3,7 @@ package typings.tensorflowTfjsCore
 import org.scalablytyped.runtime.Instantiable4
 import typings.std.WebGLTexture
 import typings.tensorflowTfjsCore.anon.Indices
-import typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding
+import typings.tensorflowTfjsCore.distOpsConvUtilMod.ExplicitPadding
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.DataValues
@@ -733,7 +733,7 @@ object distTensorMod {
       * This means that the texture will use the RGBA channels to store value.
       *
       * For WebGPU backend, the data will be stored on a buffer. There is no
-      * parameter, so can not use an user defined size to create the buffer.
+      * parameter, so can not use a user-defined size to create the buffer.
       *
       * @param options:
       *     For WebGL,
@@ -925,7 +925,7 @@ object distTensorMod {
     
     def irfft[T /* <: Tensor[Rank] */](): Tensor[Rank] = js.native
     
-    val isDisposed: Boolean = js.native
+    def isDisposed: Boolean = js.native
     
     /* protected */ var isDisposedInternal: Boolean = js.native
     
@@ -1167,7 +1167,7 @@ object distTensorMod {
     def prod[T /* <: Tensor[Rank] */](axis: Double, keepDims: Boolean): T = js.native
     def prod[T /* <: Tensor[Rank] */](axis: Unit, keepDims: Boolean): T = js.native
     
-    val rank: Double = js.native
+    def rank: Double = js.native
     
     /** The rank type for the array (see `Rank` enum). */
     val rankType: R = js.native
@@ -1967,7 +1967,7 @@ object distTensorMod {
     
     def locToIndex(locs: js.Array[Double]): Double = js.native
     
-    val rank: Double = js.native
+    def rank: Double = js.native
     
     /**
       * Sets a value in the buffer at a given location.

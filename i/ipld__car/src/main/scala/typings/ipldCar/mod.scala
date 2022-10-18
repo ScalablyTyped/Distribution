@@ -3,13 +3,14 @@ package typings.ipldCar
 import typings.ipldCar.anon.ByteLength
 import typings.ipldCar.anon.Resize
 import typings.ipldCar.anon.Roots
-import typings.ipldCar.indexedReaderMod.RawLocation
-import typings.ipldCar.indexerMod.BlockIndex
-import typings.ipldCar.iteratorMod.Block
-import typings.ipldCar.iteratorMod.CID
-import typings.ipldCar.readerBrowserMod.CarHeader
-import typings.ipldCar.readerBrowserMod.CarV2Header
-import typings.ipldCar.writerBrowserMod.CarEncoder
+import typings.ipldCar.typesLibIndexedReaderMod.RawLocation
+import typings.ipldCar.typesLibIndexerMod.BlockIndex
+import typings.ipldCar.typesLibIteratorMod.Block
+import typings.ipldCar.typesLibIteratorMod.CID
+import typings.ipldCar.typesLibReaderBrowserMod.CarHeader
+import typings.ipldCar.typesLibReaderBrowserMod.CarV2Header
+import typings.ipldCar.typesLibWriterBrowserMod.CarEncoder
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.node.fsPromisesMod.FileHandle
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
@@ -23,7 +24,7 @@ object mod {
   @JSImport("@ipld/car", "CarBlockIterator")
   @js.native
   open class CarBlockIterator protected ()
-    extends typings.ipldCar.iteratorMod.CarBlockIterator {
+    extends typings.ipldCar.typesLibIteratorMod.CarBlockIterator {
     def this(version: Double, roots: js.Array[CID], iterable: Unit) = this()
     /**
       * @param {number} version
@@ -51,7 +52,7 @@ object mod {
       * @param {Uint8Array} bytes
       * @returns {Promise<CarBlockIterator>}
       */
-    inline def fromBytes(bytes: js.typedarray.Uint8Array): js.Promise[typings.ipldCar.iteratorMod.CarBlockIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.iteratorMod.CarBlockIterator]]
+    inline def fromBytes(bytes: js.typedarray.Uint8Array): js.Promise[typings.ipldCar.typesLibIteratorMod.CarBlockIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.typesLibIteratorMod.CarBlockIterator]]
     
     /**
       * Instantiate a {@link CarBlockIterator} from a `AsyncIterable<Uint8Array>`,
@@ -65,7 +66,7 @@ object mod {
       * @param {AsyncIterable<Uint8Array>} asyncIterable
       * @returns {Promise<CarBlockIterator>}
       */
-    inline def fromIterable(asyncIterable: AsyncIterable[js.typedarray.Uint8Array]): js.Promise[typings.ipldCar.iteratorMod.CarBlockIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.iteratorMod.CarBlockIterator]]
+    inline def fromIterable(asyncIterable: AsyncIterable[js.typedarray.Uint8Array]): js.Promise[typings.ipldCar.typesLibIteratorMod.CarBlockIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.typesLibIteratorMod.CarBlockIterator]]
   }
   
   object CarBufferWriter {
@@ -75,39 +76,42 @@ object mod {
     val ^ : js.Any = js.native
     
     inline def addBlock(
-      writer: typings.ipldCar.bufferWriterMod.CarBufferWriter,
-      hasCidBytes: typings.ipldCar.bufferWriterMod.Block
+      writer: typings.ipldCar.typesLibBufferWriterMod.CarBufferWriter,
+      hasCidBytes: typings.ipldCar.typesLibBufferWriterMod.Block
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBlock")(writer.asInstanceOf[js.Any], hasCidBytes.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def addRoot(writer: typings.ipldCar.bufferWriterMod.CarBufferWriter, root: typings.ipldCar.bufferWriterMod.CID): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRoot")(writer.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def addRoot(
-      writer: typings.ipldCar.bufferWriterMod.CarBufferWriter,
-      root: typings.ipldCar.bufferWriterMod.CID,
+      writer: typings.ipldCar.typesLibBufferWriterMod.CarBufferWriter,
+      root: typings.ipldCar.typesLibBufferWriterMod.CID
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRoot")(writer.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addRoot(
+      writer: typings.ipldCar.typesLibBufferWriterMod.CarBufferWriter,
+      root: typings.ipldCar.typesLibBufferWriterMod.CID,
       options: Resize
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRoot")(writer.asInstanceOf[js.Any], root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def blockLength(hasCidBytes: typings.ipldCar.bufferWriterMod.Block): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("blockLength")(hasCidBytes.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def blockLength(hasCidBytes: typings.ipldCar.typesLibBufferWriterMod.Block): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("blockLength")(hasCidBytes.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def calculateHeaderLength(rootLengths: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateHeaderLength")(rootLengths.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def close(writer: typings.ipldCar.bufferWriterMod.CarBufferWriter): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(writer.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
-    inline def close(writer: typings.ipldCar.bufferWriterMod.CarBufferWriter, options: Resize): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(writer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    inline def close(writer: typings.ipldCar.typesLibBufferWriterMod.CarBufferWriter): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(writer.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def close(writer: typings.ipldCar.typesLibBufferWriterMod.CarBufferWriter, options: Resize): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(writer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     
-    inline def createWriter(buffer: js.typedarray.ArrayBuffer): typings.ipldCar.bufferWriterMod.CarBufferWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.ipldCar.bufferWriterMod.CarBufferWriter]
-    inline def createWriter(buffer: js.typedarray.ArrayBuffer, options: ByteLength): typings.ipldCar.bufferWriterMod.CarBufferWriter = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.ipldCar.bufferWriterMod.CarBufferWriter]
+    inline def createWriter(buffer: js.typedarray.ArrayBuffer): typings.ipldCar.typesLibBufferWriterMod.CarBufferWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.ipldCar.typesLibBufferWriterMod.CarBufferWriter]
+    inline def createWriter(buffer: js.typedarray.ArrayBuffer, options: ByteLength): typings.ipldCar.typesLibBufferWriterMod.CarBufferWriter = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.ipldCar.typesLibBufferWriterMod.CarBufferWriter]
     
     inline def estimateHeaderLength(rootCount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("estimateHeaderLength")(rootCount.asInstanceOf[js.Any]).asInstanceOf[Double]
     inline def estimateHeaderLength(rootCount: Double, rootByteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("estimateHeaderLength")(rootCount.asInstanceOf[js.Any], rootByteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def headerLength(hasRoots: Roots): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("headerLength")(hasRoots.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def resizeHeader(writer: typings.ipldCar.bufferWriterMod.CarBufferWriter, byteLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeHeader")(writer.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def resizeHeader(writer: typings.ipldCar.typesLibBufferWriterMod.CarBufferWriter, byteLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeHeader")(writer.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("@ipld/car", "CarCIDIterator")
   @js.native
   open class CarCIDIterator protected ()
-    extends typings.ipldCar.iteratorMod.CarCIDIterator {
+    extends typings.ipldCar.typesLibIteratorMod.CarCIDIterator {
     def this(version: Double, roots: js.Array[CID], iterable: Unit) = this()
     /**
       * @param {number} version
@@ -135,7 +139,7 @@ object mod {
       * @param {Uint8Array} bytes
       * @returns {Promise<CarCIDIterator>}
       */
-    inline def fromBytes(bytes: js.typedarray.Uint8Array): js.Promise[typings.ipldCar.iteratorMod.CarCIDIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.iteratorMod.CarCIDIterator]]
+    inline def fromBytes(bytes: js.typedarray.Uint8Array): js.Promise[typings.ipldCar.typesLibIteratorMod.CarCIDIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.typesLibIteratorMod.CarCIDIterator]]
     
     /**
       * Instantiate a {@link CarCIDIterator} from a `AsyncIterable<Uint8Array>`,
@@ -150,13 +154,13 @@ object mod {
       * @param {AsyncIterable<Uint8Array>} asyncIterable
       * @returns {Promise<CarCIDIterator>}
       */
-    inline def fromIterable(asyncIterable: AsyncIterable[js.typedarray.Uint8Array]): js.Promise[typings.ipldCar.iteratorMod.CarCIDIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.iteratorMod.CarCIDIterator]]
+    inline def fromIterable(asyncIterable: AsyncIterable[js.typedarray.Uint8Array]): js.Promise[typings.ipldCar.typesLibIteratorMod.CarCIDIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.typesLibIteratorMod.CarCIDIterator]]
   }
   
   @JSImport("@ipld/car", "CarIndexedReader")
   @js.native
   open class CarIndexedReader protected ()
-    extends typings.ipldCar.indexedReaderMod.CarIndexedReader {
+    extends typings.ipldCar.typesLibIndexedReaderMod.CarIndexedReader {
     /**
       * @param {number} version
       * @param {string} path
@@ -167,9 +171,7 @@ object mod {
     def this(
       version: Double,
       path: String,
-      roots: js.Array[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
-          ],
+      roots: js.Array[typings.multiformats.cidMod.CID[Any, Double, Double, Version]],
       index: Map[String, RawLocation],
       order: js.Array[String]
     ) = this()
@@ -197,13 +199,13 @@ object mod {
       * @param {string} path
       * @returns {Promise<CarIndexedReader>}
       */
-    inline def fromFile(path: String): js.Promise[typings.ipldCar.indexedReaderMod.CarIndexedReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.indexedReaderMod.CarIndexedReader]]
+    inline def fromFile(path: String): js.Promise[typings.ipldCar.typesLibIndexedReaderMod.CarIndexedReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.typesLibIndexedReaderMod.CarIndexedReader]]
   }
   
   @JSImport("@ipld/car", "CarIndexer")
   @js.native
   open class CarIndexer protected ()
-    extends typings.ipldCar.indexerMod.CarIndexer {
+    extends typings.ipldCar.typesLibIndexerMod.CarIndexer {
     /**
       * @param {number} version
       * @param {CID[]} roots
@@ -211,7 +213,7 @@ object mod {
       */
     def this(
       version: Double,
-      roots: js.Array[typings.ipldCar.indexerMod.CID],
+      roots: js.Array[typings.ipldCar.typesLibIndexerMod.CID],
       iterator: AsyncGenerator[BlockIndex, Any, Any]
     ) = this()
   }
@@ -233,7 +235,7 @@ object mod {
       * @param {Uint8Array} bytes
       * @returns {Promise<CarIndexer>}
       */
-    inline def fromBytes(bytes: js.typedarray.Uint8Array): js.Promise[typings.ipldCar.indexerMod.CarIndexer] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.indexerMod.CarIndexer]]
+    inline def fromBytes(bytes: js.typedarray.Uint8Array): js.Promise[typings.ipldCar.typesLibIndexerMod.CarIndexer] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.typesLibIndexerMod.CarIndexer]]
     
     /**
       * Instantiate a {@link CarIndexer} from a `AsyncIterable<Uint8Array>`,
@@ -247,20 +249,20 @@ object mod {
       * @param {AsyncIterable<Uint8Array>} asyncIterable
       * @returns {Promise<CarIndexer>}
       */
-    inline def fromIterable(asyncIterable: AsyncIterable[js.typedarray.Uint8Array]): js.Promise[typings.ipldCar.indexerMod.CarIndexer] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.indexerMod.CarIndexer]]
+    inline def fromIterable(asyncIterable: AsyncIterable[js.typedarray.Uint8Array]): js.Promise[typings.ipldCar.typesLibIndexerMod.CarIndexer] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.typesLibIndexerMod.CarIndexer]]
   }
   
   @JSImport("@ipld/car", "CarReader")
   @js.native
   open class CarReader protected ()
-    extends typings.ipldCar.readerMod.CarReader {
+    extends typings.ipldCar.typesLibReaderMod.CarReader {
     /**
       * @constructs CarReader
       * @param {CarHeader|CarV2Header} header
       * @param {Block[]} blocks
       */
-    def this(header: CarHeader, blocks: js.Array[typings.ipldCar.readerBrowserMod.Block]) = this()
-    def this(header: CarV2Header, blocks: js.Array[typings.ipldCar.readerBrowserMod.Block]) = this()
+    def this(header: CarHeader, blocks: js.Array[typings.ipldCar.typesLibReaderBrowserMod.Block]) = this()
+    def this(header: CarV2Header, blocks: js.Array[typings.ipldCar.typesLibReaderBrowserMod.Block]) = this()
   }
   /* static members */
   object CarReader {
@@ -269,7 +271,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def readRaw(fd: Double, blockIndex: typings.ipldCar.readerMod.BlockIndex): js.Promise[typings.ipldCar.readerMod.Block] = (^.asInstanceOf[js.Dynamic].applyDynamic("readRaw")(fd.asInstanceOf[js.Any], blockIndex.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ipldCar.readerMod.Block]]
+    inline def readRaw(fd: Double, blockIndex: typings.ipldCar.typesLibReaderMod.BlockIndex): js.Promise[typings.ipldCar.typesLibReaderMod.Block] = (^.asInstanceOf[js.Dynamic].applyDynamic("readRaw")(fd.asInstanceOf[js.Any], blockIndex.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ipldCar.typesLibReaderMod.Block]]
     /**
       * Reads a block directly from a file descriptor for an open CAR file. This
       * function is **only available in Node.js** and not a browser environment.
@@ -290,21 +292,19 @@ object mod {
       * `{cid:CID, blockLength:number, blockOffset:number}`.
       * @returns {Promise<Block>} A `{ cid:CID, bytes:Uint8Array }` pair.
       */
-    inline def readRaw(fd: FileHandle, blockIndex: typings.ipldCar.readerMod.BlockIndex): js.Promise[typings.ipldCar.readerMod.Block] = (^.asInstanceOf[js.Dynamic].applyDynamic("readRaw")(fd.asInstanceOf[js.Any], blockIndex.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ipldCar.readerMod.Block]]
+    inline def readRaw(fd: FileHandle, blockIndex: typings.ipldCar.typesLibReaderMod.BlockIndex): js.Promise[typings.ipldCar.typesLibReaderMod.Block] = (^.asInstanceOf[js.Dynamic].applyDynamic("readRaw")(fd.asInstanceOf[js.Any], blockIndex.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ipldCar.typesLibReaderMod.Block]]
   }
   
   @JSImport("@ipld/car", "CarWriter")
   @js.native
   open class CarWriter protected ()
-    extends typings.ipldCar.writerMod.CarWriter {
+    extends typings.ipldCar.typesLibWriterMod.CarWriter {
     /**
       * @param {CID[]} roots
       * @param {CarEncoder} encoder
       */
     def this(
-      roots: js.Array[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
-          ],
+      roots: js.Array[typings.multiformats.cidMod.CID[Any, Double, Double, Version]],
       encoder: CarEncoder
     ) = this()
   }
@@ -315,7 +315,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def updateRootsInFile(fd: Double, roots: js.Array[typings.ipldCar.writerMod.CID]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRootsInFile")(fd.asInstanceOf[js.Any], roots.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def updateRootsInFile(fd: Double, roots: js.Array[typings.ipldCar.typesLibWriterMod.CID]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRootsInFile")(fd.asInstanceOf[js.Any], roots.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     /**
       * Update the list of roots in the header of an existing CAR file. The first
       * argument must be a file descriptor for CAR file that is open in read and
@@ -343,6 +343,6 @@ object mod {
       * as the existing roots.
       * @returns {Promise<void>}
       */
-    inline def updateRootsInFile(fd: FileHandle, roots: js.Array[typings.ipldCar.writerMod.CID]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRootsInFile")(fd.asInstanceOf[js.Any], roots.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def updateRootsInFile(fd: FileHandle, roots: js.Array[typings.ipldCar.typesLibWriterMod.CID]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRootsInFile")(fd.asInstanceOf[js.Any], roots.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
 }

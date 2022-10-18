@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Specifies whether filtering from the host application is applied when the data is retrieved.
+  * Specifies whether filtering from the Office application is applied when the data is retrieved.
   */
 @JSGlobal("Office.FilterType")
 @js.native

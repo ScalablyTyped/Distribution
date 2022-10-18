@@ -1,6 +1,6 @@
 package typings.luminoWidgets.mod
 
-import typings.luminoWidgets.boxpanelMod.BoxPanel.IOptions
+import typings.luminoWidgets.typesBoxpanelMod.BoxPanel.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options - The options for initializing the box panel.
   */
 open class BoxPanel ()
-  extends typings.luminoWidgets.boxpanelMod.BoxPanel {
+  extends typings.luminoWidgets.typesBoxpanelMod.BoxPanel {
   def this(options: IOptions) = this()
 }
 object BoxPanel {
@@ -29,7 +29,7 @@ object BoxPanel {
     *
     * @returns The box panel size basis for the widget.
     */
-  inline def getSizeBasis(widget: typings.luminoWidgets.widgetMod.Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeBasis")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getSizeBasis(widget: typings.luminoWidgets.typesWidgetMod.Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeBasis")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Get the box panel stretch factor for the given widget.
@@ -38,7 +38,7 @@ object BoxPanel {
     *
     * @returns The box panel stretch factor for the widget.
     */
-  inline def getStretch(widget: typings.luminoWidgets.widgetMod.Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getStretch(widget: typings.luminoWidgets.typesWidgetMod.Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Set the box panel size basis for the given widget.
@@ -47,7 +47,7 @@ object BoxPanel {
     *
     * @param value - The value for the size basis.
     */
-  inline def setSizeBasis(widget: typings.luminoWidgets.widgetMod.Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSizeBasis")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSizeBasis(widget: typings.luminoWidgets.typesWidgetMod.Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSizeBasis")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Set the box panel stretch factor for the given widget.
@@ -56,5 +56,5 @@ object BoxPanel {
     *
     * @param value - The value for the stretch factor.
     */
-  inline def setStretch(widget: typings.luminoWidgets.widgetMod.Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setStretch(widget: typings.luminoWidgets.typesWidgetMod.Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

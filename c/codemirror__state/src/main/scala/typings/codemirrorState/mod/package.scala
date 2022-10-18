@@ -1,6 +1,5 @@
 package typings.codemirrorState.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.codemirrorState.anon.Dispatch
 import typings.codemirrorState.codemirrorStateInts.`1`
 import typings.codemirrorState.codemirrorStateInts.`2`
@@ -36,9 +35,7 @@ inline def combineConfig[Config /* <: js.Object */](
   configs: js.Array[Partial[Config]],
   defaults: Partial[Config],
   // Should hold only the optional properties of Config, but I haven't managed to express that
-combine: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof Config ]:? (first : Config[P], second : Config[P]): Config[P]}
-  */ typings.codemirrorState.codemirrorStateStrings.combineConfig & TopLevel[Any]
+combine: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Config ]:? (first : Config[P], second : Config[P]): Config[P]} */ js.Any
 ): Config = (^.asInstanceOf[js.Dynamic].applyDynamic("combineConfig")(configs.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], combine.asInstanceOf[js.Any])).asInstanceOf[Config]
 
 /**

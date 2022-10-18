@@ -1,6 +1,6 @@
 package typings.nivoHeatmap.anon
 
-import typings.nivoHeatmap.typesMod.HeatMapDatum
+import typings.nivoHeatmap.distTypesTypesMod.HeatMapDatum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

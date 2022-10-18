@@ -1,23 +1,23 @@
 package typings.typedoc.anon
 
-import typings.typedoc.typedocStrings.excludeNotDocumented
+import typings.typedoc.typedocStrings.searchGroupBoosts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `32` extends StObject {
   
-  var name: excludeNotDocumented
+  var name: searchGroupBoosts
 }
 object `32` {
   
   inline def apply(): `32` = {
-    val __obj = js.Dynamic.literal(name = "excludeNotDocumented")
+    val __obj = js.Dynamic.literal(name = "searchGroupBoosts")
     __obj.asInstanceOf[`32`]
   }
   
   extension [Self <: `32`](x: Self) {
     
-    inline def setName(value: excludeNotDocumented): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: searchGroupBoosts): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

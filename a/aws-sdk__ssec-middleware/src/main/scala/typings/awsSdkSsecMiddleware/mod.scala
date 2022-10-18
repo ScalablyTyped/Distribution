@@ -1,9 +1,8 @@
 package typings.awsSdkSsecMiddleware
 
-import org.scalablytyped.runtime.TopLevel
 import typings.awsSdkSsecMiddleware.anon.Instantiable
-import typings.awsSdkTypes.utilMod.Decoder
-import typings.awsSdkTypes.utilMod.Encoder
+import typings.awsSdkTypes.distTypesUtilMod.Decoder
+import typings.awsSdkTypes.distTypesUtilMod.Encoder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,7 +53,13 @@ object mod {
     }
   }
   
-  type SsecPropertiesConfiguration[Input /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ sourceProperty in keyof Input ]:? {  targetProperty :string,   hashTargetProperty :string}}
-    */ typings.awsSdkSsecMiddleware.awsSdkSsecMiddlewareStrings.SsecPropertiesConfiguration & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ sourceProperty in keyof Input ]:? {  targetProperty :string,   hashTargetProperty :string}}
+    }}}
+    */
+  @js.native
+  trait SsecPropertiesConfiguration[Input /* <: js.Object */] extends StObject
 }

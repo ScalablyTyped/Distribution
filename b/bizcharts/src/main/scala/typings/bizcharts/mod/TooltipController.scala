@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("bizcharts", "TooltipController")
 @js.native
 open class TooltipController ()
-  extends typings.bizcharts.coreMod.TooltipController
+  extends typings.bizcharts.libCoreMod.TooltipController

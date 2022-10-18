@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lumino/polling" : "1.11.1"
+      "@lumino/polling" : "1.11.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@lumino/polling" : "1.11.1"
+      "@lumino/polling" : "1.11.2"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait PartialGroupByKeyInstruction extends StObject {
   
   /** The codec to use for interpreting an element in the input PTable. */
   var inputElementCodec: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** If this instruction includes a combining function this is the name of the intermediate store between the GBK and the CombineValues. */
@@ -28,9 +25,7 @@ trait PartialGroupByKeyInstruction extends StObject {
   
   /** The value combining function to invoke. */
   var valueCombiningFn: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object PartialGroupByKeyInstruction {
@@ -45,9 +40,7 @@ object PartialGroupByKeyInstruction {
     inline def setInput(value: InstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setInputElementCodec(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "inputElementCodec", value.asInstanceOf[js.Any])
     
     inline def setInputElementCodecUndefined: Self = StObject.set(x, "inputElementCodec", js.undefined)
@@ -69,9 +62,7 @@ object PartialGroupByKeyInstruction {
     inline def setSideInputsVarargs(value: SideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value*))
     
     inline def setValueCombiningFn(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "valueCombiningFn", value.asInstanceOf[js.Any])
     
     inline def setValueCombiningFnUndefined: Self = StObject.set(x, "valueCombiningFn", js.undefined)

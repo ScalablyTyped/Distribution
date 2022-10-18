@@ -2,11 +2,11 @@ package typings.uirouterCore.anon
 
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
-import typings.uirouterCore.paramMod.Param
-import typings.uirouterCore.paramTypesMod.ParamTypes
-import typings.uirouterCore.urlInterfaceMod.UrlMatcherCompileConfig
-import typings.uirouterCore.urlMatcherFactoryMod.ParamFactory
-import typings.uirouterCore.urlMatcherMod.UrlMatcher
+import typings.uirouterCore.libParamsParamMod.Param
+import typings.uirouterCore.libParamsParamTypesMod.ParamTypes
+import typings.uirouterCore.libUrlInterfaceMod.UrlMatcherCompileConfig
+import typings.uirouterCore.libUrlUrlMatcherFactoryMod.ParamFactory
+import typings.uirouterCore.libUrlUrlMatcherMod.UrlMatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

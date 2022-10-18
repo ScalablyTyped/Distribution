@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Interpolation")
 @js.native
 open class Interpolation ()
-  extends typings.blackEngine.interpolationMod.Interpolation
+  extends typings.blackEngine.animationInterpolationMod.Interpolation
 /* static members */
 object Interpolation {
   

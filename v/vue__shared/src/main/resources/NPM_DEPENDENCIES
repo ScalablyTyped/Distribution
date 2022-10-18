@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@vue/shared" : "3.2.40"
+      "@vue/shared" : "3.2.41"
     }
   ],
   "test-dependencies" : [
     {
-      "@vue/shared" : "3.2.40"
+      "@vue/shared" : "3.2.41"
     }
   ],
   "compile-devDependencies" : [

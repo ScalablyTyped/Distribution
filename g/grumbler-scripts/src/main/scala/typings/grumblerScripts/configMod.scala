@@ -1,7 +1,7 @@
 package typings.grumblerScripts
 
 import typings.grumblerScripts.anon.Version
-import typings.grumblerScripts.typesMod.WebpackConfigOptions
+import typings.grumblerScripts.configTypesMod.WebpackConfigOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,24 +12,26 @@ object configMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(karma: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(karma.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  
   @JSImport("grumbler-scripts/config", "ENV")
   @js.native
   object ENV extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.grumblerScripts.constantsMod.ENV & String] = js.native
+    def apply(value: String): js.UndefOr[typings.grumblerScripts.configConstantsMod.ENV & String] = js.native
     
-    /* "demo" */ val DEMO: typings.grumblerScripts.constantsMod.ENV.DEMO & String = js.native
+    /* "demo" */ val DEMO: typings.grumblerScripts.configConstantsMod.ENV.DEMO & String = js.native
     
-    /* "local" */ val LOCAL: typings.grumblerScripts.constantsMod.ENV.LOCAL & String = js.native
+    /* "local" */ val LOCAL: typings.grumblerScripts.configConstantsMod.ENV.LOCAL & String = js.native
     
-    /* "production" */ val PRODUCTION: typings.grumblerScripts.constantsMod.ENV.PRODUCTION & String = js.native
+    /* "production" */ val PRODUCTION: typings.grumblerScripts.configConstantsMod.ENV.PRODUCTION & String = js.native
     
-    /* "sandbox" */ val SANDBOX: typings.grumblerScripts.constantsMod.ENV.SANDBOX & String = js.native
+    /* "sandbox" */ val SANDBOX: typings.grumblerScripts.configConstantsMod.ENV.SANDBOX & String = js.native
     
-    /* "stage" */ val STAGE: typings.grumblerScripts.constantsMod.ENV.STAGE & String = js.native
+    /* "stage" */ val STAGE: typings.grumblerScripts.configConstantsMod.ENV.STAGE & String = js.native
     
-    /* "test" */ val TEST: typings.grumblerScripts.constantsMod.ENV.TEST & String = js.native
+    /* "test" */ val TEST: typings.grumblerScripts.configConstantsMod.ENV.TEST & String = js.native
   }
   
   inline def getCurrentVersion(pkg: Version): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentVersion")(pkg.asInstanceOf[js.Any]).asInstanceOf[String]

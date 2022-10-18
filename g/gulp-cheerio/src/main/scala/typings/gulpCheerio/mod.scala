@@ -1,6 +1,7 @@
 package typings.gulpCheerio
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,8 +23,8 @@ object mod extends Shortcut {
   @js.native
   trait GulpCheerio extends StObject {
     
-    def apply(callback: Callback): Any = js.native
-    def apply(option: Option): Any = js.native
+    def apply(callback: Callback): ReadWriteStream = js.native
+    def apply(option: Option): ReadWriteStream = js.native
   }
   
   trait Option extends StObject {

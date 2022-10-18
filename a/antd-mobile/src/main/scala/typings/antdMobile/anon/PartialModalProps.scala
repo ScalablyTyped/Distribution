@@ -40,8 +40,8 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.renderToContainerMod.GetContainer
-import typings.antdMobile.withStopPropagationMod.PropagationEvent
+import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
+import typings.antdMobile.esUtilsWithStopPropagationMod.PropagationEvent
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
@@ -55,7 +55,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<antd-mobile.antd-mobile/es/components/modal/modal.ModalProps> */
 trait PartialModalProps extends StObject {
   
-  var actions: js.UndefOr[js.Array[typings.antdMobile.modalActionButtonMod.Action]] = js.undefined
+  var actions: js.UndefOr[js.Array[typings.antdMobile.esComponentsModalModalActionButtonMod.Action]] = js.undefined
   
   var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -189,7 +189,7 @@ trait PartialModalProps extends StObject {
   
   var onAction: js.UndefOr[
     js.Function2[
-      /* action */ typings.antdMobile.modalActionButtonMod.Action, 
+      /* action */ typings.antdMobile.esComponentsModalModalActionButtonMod.Action, 
       /* index */ Double, 
       Unit | js.Promise[Unit]
     ]
@@ -218,11 +218,11 @@ object PartialModalProps {
   
   extension [Self <: PartialModalProps](x: Self) {
     
-    inline def setActions(value: js.Array[typings.antdMobile.modalActionButtonMod.Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[typings.antdMobile.esComponentsModalModalActionButtonMod.Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: typings.antdMobile.modalActionButtonMod.Action*): Self = StObject.set(x, "actions", js.Array(value*))
+    inline def setActionsVarargs(value: typings.antdMobile.esComponentsModalModalActionButtonMod.Action*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
     
@@ -487,7 +487,7 @@ object PartialModalProps {
     inline def setMaskStyleUndefined: Self = StObject.set(x, "maskStyle", js.undefined)
     
     inline def setOnAction(
-      value: (/* action */ typings.antdMobile.modalActionButtonMod.Action, /* index */ Double) => Unit | js.Promise[Unit]
+      value: (/* action */ typings.antdMobile.esComponentsModalModalActionButtonMod.Action, /* index */ Double) => Unit | js.Promise[Unit]
     ): Self = StObject.set(x, "onAction", js.Any.fromFunction2(value))
     
     inline def setOnActionUndefined: Self = StObject.set(x, "onAction", js.undefined)

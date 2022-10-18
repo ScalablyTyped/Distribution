@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait InstantiateWorkflowTemplateRequest extends StObject {
   
   /** Optional. Map from parameter names to values that should be used for those parameters. Values may not exceed 1000 characters. */
   var parameters: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.InstantiateWorkflowTemplateRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -37,9 +34,7 @@ object InstantiateWorkflowTemplateRequest {
   extension [Self <: InstantiateWorkflowTemplateRequest](x: Self) {
     
     inline def setParameters(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.InstantiateWorkflowTemplateRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)

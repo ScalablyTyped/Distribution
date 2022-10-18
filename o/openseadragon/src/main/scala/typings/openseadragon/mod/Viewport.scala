@@ -40,9 +40,8 @@ open class Viewport protected () extends StObject {
   def fitVertically(): Viewport = js.native
   def fitVertically(immediately: Boolean): Viewport = js.native
   
-  def getAspectRatio(): Any = js.native
+  def getAspectRatio(): Double = js.native
   
-  // TODO: determine return type
   def getBounds(): Rect = js.native
   def getBounds(current: Boolean): Rect = js.native
   

@@ -1,5 +1,6 @@
 package typings.node
 
+import typings.node.NodeJS.Dict
 import typings.node.anon.JsMemoryEstimate
 import typings.node.anon.Strings
 import typings.node.bufferMod.global.Buffer
@@ -501,7 +502,7 @@ object vmMod {
     }
   }
   
-  type Context = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<any> */ Any
+  type Context = Dict[Any]
   
   trait CreateContextOptions extends StObject {
     

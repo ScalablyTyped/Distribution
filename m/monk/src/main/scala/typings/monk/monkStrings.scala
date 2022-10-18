@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object monkStrings {
   
   @js.native
-  sealed trait CreateIndexInput extends StObject
-  inline def CreateIndexInput: CreateIndexInput = "CreateIndexInput".asInstanceOf[CreateIndexInput]
-  
-  @js.native
   sealed trait closed extends StObject
   inline def closed: closed = "closed".asInstanceOf[closed]
   

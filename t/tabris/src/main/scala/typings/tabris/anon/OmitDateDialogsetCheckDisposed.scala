@@ -202,7 +202,7 @@ trait OmitDateDialogsetCheckDisposed extends StObject {
       typings.tabris.global.tabris.DateDialog, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & Children
+  ]) & `3`
   
   var maxDate: js.Date
   
@@ -318,7 +318,7 @@ object OmitDateDialogsetCheckDisposed {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.DateDialog, 
       Omit[typings.tabris.global.tabris.DateDialog, set | jsxAttributes]
-    ]) & Children,
+    ]) & `3`,
     maxDate: js.Date,
     minDate: js.Date,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.DateDialog,
@@ -387,7 +387,7 @@ object OmitDateDialogsetCheckDisposed {
       value: (JSXAttributes[
           typings.tabris.global.tabris.DateDialog, 
           Omit[typings.tabris.global.tabris.DateDialog, set | jsxAttributes]
-        ]) & Children
+        ]) & `3`
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])

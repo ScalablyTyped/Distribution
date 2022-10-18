@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CacheAccountType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.azureMsalCommon.constantsMod.CacheAccountType & String] = js.native
+  def apply(value: String): js.UndefOr[typings.azureMsalCommon.distUtilsConstantsMod.CacheAccountType & String] = js.native
   
-  /* "ADFS" */ val ADFS_ACCOUNT_TYPE: typings.azureMsalCommon.constantsMod.CacheAccountType.ADFS_ACCOUNT_TYPE & String = js.native
+  /* "ADFS" */ val ADFS_ACCOUNT_TYPE: typings.azureMsalCommon.distUtilsConstantsMod.CacheAccountType.ADFS_ACCOUNT_TYPE & String = js.native
   
-  /* "Generic" */ val GENERIC_ACCOUNT_TYPE: typings.azureMsalCommon.constantsMod.CacheAccountType.GENERIC_ACCOUNT_TYPE & String = js.native
+  /* "Generic" */ val GENERIC_ACCOUNT_TYPE: typings.azureMsalCommon.distUtilsConstantsMod.CacheAccountType.GENERIC_ACCOUNT_TYPE & String = js.native
   
-  /* "MSA" */ val MSAV1_ACCOUNT_TYPE: typings.azureMsalCommon.constantsMod.CacheAccountType.MSAV1_ACCOUNT_TYPE & String = js.native
+  /* "MSA" */ val MSAV1_ACCOUNT_TYPE: typings.azureMsalCommon.distUtilsConstantsMod.CacheAccountType.MSAV1_ACCOUNT_TYPE & String = js.native
   
-  /* "MSSTS" */ val MSSTS_ACCOUNT_TYPE: typings.azureMsalCommon.constantsMod.CacheAccountType.MSSTS_ACCOUNT_TYPE & String = js.native
+  /* "MSSTS" */ val MSSTS_ACCOUNT_TYPE: typings.azureMsalCommon.distUtilsConstantsMod.CacheAccountType.MSSTS_ACCOUNT_TYPE & String = js.native
 }

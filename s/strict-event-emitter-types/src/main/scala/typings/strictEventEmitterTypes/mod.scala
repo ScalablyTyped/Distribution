@@ -2,18 +2,21 @@ package typings.strictEventEmitterTypes
 
 import typings.std.Exclude
 import typings.std.Pick
-import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  type EEMethodReturnType[T, S /* <: String */, TValue, FValue] = FValue | (InnerEEMethodReturnType[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[S] */ js.Any, 
-    TValue, 
-    FValue
-  ])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S extends keyof T ? strict-event-emitter-types.strict-event-emitter-types.InnerEEMethodReturnType<T[S], TValue, FValue> : FValue
+    }}}
+    */
+  @js.native
+  trait EEMethodReturnType[T, S /* <: String */, TValue, FValue] extends StObject
   
   type EmitEventNames[TEmitter /* <: TypeRecord[Any, Any, Any] */, TEventRecord /* <: NoUndefined[
     /* import warning: importer.ImportType#apply Failed type conversion: TEmitter[' _eventsType'] */ js.Any
@@ -27,13 +30,45 @@ object mod {
     /* import warning: importer.ImportType#apply Failed type conversion: TEmitter[' _emitType'] */ js.Any
   ] */] = /* keyof TEmitRecord */ String
   
-  type InnerEEMethodReturnType[T, TValue, FValue] = FValue | TValue
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends (args : ...any): any ? std.ReturnType<T> extends void | undefined ? FValue : TValue : FValue
+    }}}
+    */
+  @js.native
+  trait InnerEEMethodReturnType[T, TValue, FValue] extends StObject
   
-  type ListenerType[T] = js.Array[Any | T]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T] extends [(args : infer U): any] ? U : [T] extends [void] ? [] : [T]
+    }}}
+    */
+  @js.native
+  trait ListenerType[T] extends StObject
   
-  type MatchingKeys[TRecord, TMatch, K /* <: /* keyof TRecord */ String */] = K
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    K extends TRecord[K] extends TMatch ? K : never ? K : never
+    }}}
+    */
+  @js.native
+  trait MatchingKeys[TRecord, TMatch, K /* <: /* keyof TRecord */ String */] extends StObject
   
-  type NoUndefined[T] = T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends undefined ? never : T
+    }}}
+    */
+  @js.native
+  trait NoUndefined[T] extends StObject
   
   type OnEventNames[TEmitter /* <: TypeRecord[Any, Any, Any] */, TEventRecord /* <: NoUndefined[
     /* import warning: importer.ImportType#apply Failed type conversion: TEmitter[' _eventsType'] */ js.Any
@@ -134,11 +169,25 @@ object mod {
       ] = js.native
   }
   
-  type ReturnTypeOfMethod[T] = Unit | ReturnType[T]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends (args : ...any): any ? std.ReturnType<T> : void
+    }}}
+    */
+  @js.native
+  trait ReturnTypeOfMethod[T] extends StObject
   
-  type ReturnTypeOfMethodIfExists[T, S /* <: String */] = Unit | (ReturnTypeOfMethod[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[S] */ js.Any
-  ])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S extends keyof T ? strict-event-emitter-types.strict-event-emitter-types.ReturnTypeOfMethod<T[S]> : void
+    }}}
+    */
+  @js.native
+  trait ReturnTypeOfMethodIfExists[T, S /* <: String */] extends StObject
   
   @js.native
   trait StrictBroadcast[TEmitter /* <: TypeRecord[Any, Any, Any] */, TEmitRecord /* <: NoUndefined[

@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsAppMarketMod.AppMarketProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsAppMarketMod.AppMarketProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appMarketMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/AppMarket", JSImport.Default)
+  @JSImport("wix-ui-icons-common/AppMarket", JSImport.Default)
   @js.native
   val default: FC[AppMarketProps] = js.native
   

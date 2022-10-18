@@ -3,7 +3,6 @@ package typings.chartJs.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.chartJs.anon.AnimationSpecradaronProgr
 import typings.chartJs.anon.BackgroundColor
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsBooleans.`false`
 import typings.chartJs.chartJsStrings.after
 import typings.chartJs.chartJsStrings.before
@@ -13,8 +12,9 @@ import typings.chartJs.chartJsStrings.monotone
 import typings.chartJs.chartJsStrings.radar
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
-import typings.chartJs.colorMod.Color
-import typings.chartJs.geometricMod.ChartArea
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesColorMod.Color
+import typings.chartJs.typesGeometricMod.ChartArea
 import typings.std.CanvasLineCap
 import typings.std.CanvasLineJoin
 import org.scalablytyped.runtime.StObject

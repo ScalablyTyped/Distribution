@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/XR/index", "WebXRAbstractFeature")
+/* note: abstract class */ @JSImport("babylonjs/XR/index", "WebXRAbstractFeature")
 @js.native
-abstract class WebXRAbstractFeature protected ()
-  extends typings.babylonjs.featuresIndexMod.WebXRAbstractFeature {
+open class WebXRAbstractFeature protected ()
+  extends typings.babylonjs.xRFeaturesIndexMod.WebXRAbstractFeature {
   /**
     * Construct a new (abstract) WebXR feature
     * @param _xrSessionManager the xr session manager for this feature
     */
-  def this(_xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager) = this()
+  def this(_xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager) = this()
 }

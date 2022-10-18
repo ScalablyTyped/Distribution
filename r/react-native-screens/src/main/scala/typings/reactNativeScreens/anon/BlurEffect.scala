@@ -1,6 +1,6 @@
 package typings.reactNativeScreens.anon
 
-import typings.reactNativeScreens.typescriptTypesMod.BlurEffectTypes
+import typings.reactNativeScreens.libTypescriptTypesMod.BlurEffectTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,15 +1,17 @@
 package typings.cronParser
 
-import typings.cronParser.commonMod.ICronExpression
-import typings.cronParser.commonMod.IStringResult
-import typings.cronParser.commonMod.ParserOptions
 import typings.cronParser.cronParserInts.`0`
 import typings.cronParser.cronParserInts.`13`
 import typings.cronParser.cronParserInts.`1`
 import typings.cronParser.cronParserInts.`24`
+import typings.cronParser.cronParserInts.`30`
 import typings.cronParser.cronParserInts.`32`
+import typings.cronParser.cronParserInts.`60`
 import typings.cronParser.cronParserInts.`8`
 import typings.cronParser.cronParserStrings.L
+import typings.cronParser.typesCommonMod.ICronExpression
+import typings.cronParser.typesCommonMod.IStringResult
+import typings.cronParser.typesCommonMod.ParserOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,9 +32,25 @@ object typesMod {
   
   inline def parseString(data: String): StringResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(data.asInstanceOf[js.Any]).asInstanceOf[StringResult]
   
-  type BuildRange[Current /* <: Double */, End /* <: Double */, Accu /* <: Array[Double] */] = Current
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Accu['length'] extends End ? Current : cron-parser.cron-parser/types.BuildRange<Current | Accu['length'], End, [number, ...Accu]>
+    }}}
+    */
+  @js.native
+  trait BuildRange[Current /* <: Double */, End /* <: Double */, Accu /* <: Array[Double] */] extends StObject
   
-  type BuildRangeTuple[Current /* <: Array[Double] */, Count /* <: Double */] = Current
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Current['length'] extends Count ? Current : cron-parser.cron-parser/types.BuildRangeTuple<[number, ...Current], Count>
+    }}}
+    */
+  @js.native
+  trait BuildRangeTuple[Current /* <: Array[Double] */, Count /* <: Double */] extends StObject
   
   type CronExpression[IsIterable /* <: Boolean */] = ICronExpression[CronFields, IsIterable]
   
@@ -100,13 +118,11 @@ object typesMod {
   
   type MonthRange = Range[`1`, `13`]
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped cron-parser.cron-parser/types.RangeTuple<StartInclusive>['length'] extends EndExclusive ? StartInclusive : any */ trait Range[StartInclusive /* <: Double */, EndExclusive /* <: Double */] extends StObject
+  type Range[StartInclusive /* <: Double */, EndExclusive /* <: Double */] = BuildRange[StartInclusive, EndExclusive, RangeTuple[StartInclusive]]
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped []['length'] extends Count ? [] : any */ trait RangeTuple[Count /* <: Double */] extends StObject
+  type RangeTuple[Count /* <: Double */] = BuildRangeTuple[js.Array[Any], Count]
   
-  type SixtyRange = Any
+  type SixtyRange = Range[`0` | `30`, `30` | `60`]
   
   type StringResult = IStringResult[CronFields]
 }

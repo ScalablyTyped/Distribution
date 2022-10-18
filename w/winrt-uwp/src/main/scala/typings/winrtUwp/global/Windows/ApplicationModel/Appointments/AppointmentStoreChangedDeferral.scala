@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a background task deferral returned by the AppointmentStoreChangedEventArgs.GetDeferral method. */
-@JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStoreChangedDeferral")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStoreChangedDeferral")
 @js.native
-abstract class AppointmentStoreChangedDeferral ()
+open class AppointmentStoreChangedDeferral ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentStoreChangedDeferral {
   

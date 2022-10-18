@@ -86,10 +86,6 @@ object listr2Strings {
   inline def Password: Password = "Password".asInstanceOf[Password]
   
   @js.native
-  sealed trait PromptOptions extends StObject
-  inline def PromptOptions: PromptOptions = "PromptOptions".asInstanceOf[PromptOptions]
-  
-  @js.native
   sealed trait Quiz
     extends StObject
        with PromptTypes
@@ -106,10 +102,6 @@ object listr2Strings {
     extends StObject
        with PromptTypes
   inline def Select: Select = "Select".asInstanceOf[Select]
-  
-  @js.native
-  sealed trait SimpleRenderer extends StObject
-  inline def SimpleRenderer: SimpleRenderer = "SimpleRenderer".asInstanceOf[SimpleRenderer]
   
   @js.native
   sealed trait Snippet

@@ -15,15 +15,7 @@ import typings.chromeApps.chromeAppsStrings.OTHER
 import typings.chromeApps.chromeAppsStrings.PERMISSIONS_INCREASE
 import typings.chromeApps.chromeAppsStrings.SIDELOAD
 import typings.chromeApps.chromeAppsStrings.UNKNOWN
-import typings.chromeApps.chromeAppsStrings.admin_
-import typings.chromeApps.chromeAppsStrings.development_
-import typings.chromeApps.chromeAppsStrings.normal_
-import typings.chromeApps.chromeAppsStrings.other_
 import typings.chromeApps.chromeAppsStrings.packaged_app
-import typings.chromeApps.chromeAppsStrings.permissions_increase_
-import typings.chromeApps.chromeAppsStrings.sideload_
-import typings.chromeApps.chromeAppsStrings.unknown__
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,10 +49,7 @@ object management {
           ToStringLiteral[
             OPENASPINNEDTAB, 
             /* keyof chrome-apps.anon.OPENASPINNEDTAB */ OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
-            Exclude[
-              /* keyof chrome-apps.anon.OPENASPINNEDTAB */ OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
-              OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN
-            ]
+            /* import warning: importer.ImportType#apply Failed type conversion: keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'} extends keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'} ? std.Exclude<keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'}, 'OPEN_AS_REGULAR_TAB' | 'OPEN_AS_PINNED_TAB' | 'OPEN_AS_WINDOW' | 'OPEN_FULL_SCREEN'> : never */ js.Any
           ]
         ]
       ] = js.undefined
@@ -79,10 +68,7 @@ object management {
         ToStringLiteral[
           PERMISSIONSINCREASE, 
           /* keyof chrome-apps.anon.PERMISSIONSINCREASE */ UNKNOWN | PERMISSIONS_INCREASE, 
-          Exclude[
-            /* keyof chrome-apps.anon.PERMISSIONSINCREASE */ UNKNOWN | PERMISSIONS_INCREASE, 
-            unknown__ | permissions_increase_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  UNKNOWN :'unknown',   PERMISSIONS_INCREASE :'permissions_increase'} extends keyof {  UNKNOWN :'unknown',   PERMISSIONS_INCREASE :'permissions_increase'} ? std.Exclude<keyof {  UNKNOWN :'unknown',   PERMISSIONS_INCREASE :'permissions_increase'}, 'unknown' | 'permissions_increase'> : never */ js.Any
         ]
       ] = js.undefined
     
@@ -120,10 +106,7 @@ object management {
     var installType: ToStringLiteral[
         ADMIN, 
         /* keyof chrome-apps.anon.ADMIN */ typings.chromeApps.chromeAppsStrings.ADMIN | DEVELOPMENT | NORMAL | SIDELOAD | OTHER, 
-        Exclude[
-          /* keyof chrome-apps.anon.ADMIN */ typings.chromeApps.chromeAppsStrings.ADMIN | DEVELOPMENT | NORMAL | SIDELOAD | OTHER, 
-          other_ | normal_ | development_ | admin_ | sideload_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ADMIN :'admin',   DEVELOPMENT :'development',   NORMAL :'normal',   SIDELOAD :'sideload',   OTHER :'other'} extends keyof {  ADMIN :'admin',   DEVELOPMENT :'development',   NORMAL :'normal',   SIDELOAD :'sideload',   OTHER :'other'} ? std.Exclude<keyof {  ADMIN :'admin',   DEVELOPMENT :'development',   NORMAL :'normal',   SIDELOAD :'sideload',   OTHER :'other'}, 'other' | 'normal' | 'development' | 'admin' | 'sideload'> : never */ js.Any
       ]
     
     /**
@@ -140,10 +123,7 @@ object management {
         ToStringLiteral[
           OPENASPINNEDTAB, 
           /* keyof chrome-apps.anon.OPENASPINNEDTAB */ OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
-          Exclude[
-            /* keyof chrome-apps.anon.OPENASPINNEDTAB */ OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
-            OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'} extends keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'} ? std.Exclude<keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'}, 'OPEN_AS_REGULAR_TAB' | 'OPEN_AS_PINNED_TAB' | 'OPEN_AS_WINDOW' | 'OPEN_FULL_SCREEN'> : never */ js.Any
         ]
       ] = js.undefined
     
@@ -200,10 +180,7 @@ object management {
       installType: ToStringLiteral[
           ADMIN, 
           /* keyof chrome-apps.anon.ADMIN */ typings.chromeApps.chromeAppsStrings.ADMIN | DEVELOPMENT | NORMAL | SIDELOAD | OTHER, 
-          Exclude[
-            /* keyof chrome-apps.anon.ADMIN */ typings.chromeApps.chromeAppsStrings.ADMIN | DEVELOPMENT | NORMAL | SIDELOAD | OTHER, 
-            other_ | normal_ | development_ | admin_ | sideload_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ADMIN :'admin',   DEVELOPMENT :'development',   NORMAL :'normal',   SIDELOAD :'sideload',   OTHER :'other'} extends keyof {  ADMIN :'admin',   DEVELOPMENT :'development',   NORMAL :'normal',   SIDELOAD :'sideload',   OTHER :'other'} ? std.Exclude<keyof {  ADMIN :'admin',   DEVELOPMENT :'development',   NORMAL :'normal',   SIDELOAD :'sideload',   OTHER :'other'}, 'other' | 'normal' | 'development' | 'admin' | 'sideload'> : never */ js.Any
         ],
       mayDisable: Boolean,
       name: String,
@@ -229,10 +206,7 @@ object management {
               ToStringLiteral[
                 OPENASPINNEDTAB, 
                 /* keyof chrome-apps.anon.OPENASPINNEDTAB */ OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
-                Exclude[
-                  /* keyof chrome-apps.anon.OPENASPINNEDTAB */ OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
-                  OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN
-                ]
+                /* import warning: importer.ImportType#apply Failed type conversion: keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'} extends keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'} ? std.Exclude<keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'}, 'OPEN_AS_REGULAR_TAB' | 'OPEN_AS_PINNED_TAB' | 'OPEN_AS_WINDOW' | 'OPEN_FULL_SCREEN'> : never */ js.Any
               ]
             ]
       ): Self = StObject.set(x, "availableLaunchTypes", value.asInstanceOf[js.Any])
@@ -243,10 +217,7 @@ object management {
         value: (ToStringLiteral[
               OPENASPINNEDTAB, 
               /* keyof chrome-apps.anon.OPENASPINNEDTAB */ OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
-              Exclude[
-                /* keyof chrome-apps.anon.OPENASPINNEDTAB */ OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
-                OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'} extends keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'} ? std.Exclude<keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'}, 'OPEN_AS_REGULAR_TAB' | 'OPEN_AS_PINNED_TAB' | 'OPEN_AS_WINDOW' | 'OPEN_FULL_SCREEN'> : never */ js.Any
             ])*
       ): Self = StObject.set(x, "availableLaunchTypes", js.Array(value*))
       
@@ -256,10 +227,7 @@ object management {
         value: ToStringLiteral[
               PERMISSIONSINCREASE, 
               /* keyof chrome-apps.anon.PERMISSIONSINCREASE */ UNKNOWN | PERMISSIONS_INCREASE, 
-              Exclude[
-                /* keyof chrome-apps.anon.PERMISSIONSINCREASE */ UNKNOWN | PERMISSIONS_INCREASE, 
-                unknown__ | permissions_increase_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  UNKNOWN :'unknown',   PERMISSIONS_INCREASE :'permissions_increase'} extends keyof {  UNKNOWN :'unknown',   PERMISSIONS_INCREASE :'permissions_increase'} ? std.Exclude<keyof {  UNKNOWN :'unknown',   PERMISSIONS_INCREASE :'permissions_increase'}, 'unknown' | 'permissions_increase'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "disabledReason", value.asInstanceOf[js.Any])
       
@@ -287,10 +255,7 @@ object management {
         value: ToStringLiteral[
               ADMIN, 
               /* keyof chrome-apps.anon.ADMIN */ typings.chromeApps.chromeAppsStrings.ADMIN | DEVELOPMENT | NORMAL | SIDELOAD | OTHER, 
-              Exclude[
-                /* keyof chrome-apps.anon.ADMIN */ typings.chromeApps.chromeAppsStrings.ADMIN | DEVELOPMENT | NORMAL | SIDELOAD | OTHER, 
-                other_ | normal_ | development_ | admin_ | sideload_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ADMIN :'admin',   DEVELOPMENT :'development',   NORMAL :'normal',   SIDELOAD :'sideload',   OTHER :'other'} extends keyof {  ADMIN :'admin',   DEVELOPMENT :'development',   NORMAL :'normal',   SIDELOAD :'sideload',   OTHER :'other'} ? std.Exclude<keyof {  ADMIN :'admin',   DEVELOPMENT :'development',   NORMAL :'normal',   SIDELOAD :'sideload',   OTHER :'other'}, 'other' | 'normal' | 'development' | 'admin' | 'sideload'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "installType", value.asInstanceOf[js.Any])
       
@@ -302,10 +267,7 @@ object management {
         value: ToStringLiteral[
               OPENASPINNEDTAB, 
               /* keyof chrome-apps.anon.OPENASPINNEDTAB */ OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
-              Exclude[
-                /* keyof chrome-apps.anon.OPENASPINNEDTAB */ OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
-                OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'} extends keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'} ? std.Exclude<keyof {  OPEN_AS_REGULAR_TAB :'OPEN_AS_REGULAR_TAB',   OPEN_AS_PINNED_TAB :'OPEN_AS_PINNED_TAB',   OPEN_AS_WINDOW :'OPEN_AS_WINDOW',   OPEN_FULL_SCREEN :'OPEN_FULL_SCREEN'}, 'OPEN_AS_REGULAR_TAB' | 'OPEN_AS_PINNED_TAB' | 'OPEN_AS_WINDOW' | 'OPEN_FULL_SCREEN'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
       

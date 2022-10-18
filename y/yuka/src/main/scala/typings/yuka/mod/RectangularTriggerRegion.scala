@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [size=Vector3(0,0,0)] - The size of the region.
   */
 open class RectangularTriggerRegion ()
-  extends typings.yuka.yukaMod.RectangularTriggerRegion {
-  def this(size: typings.yuka.vector3Mod.Vector3) = this()
+  extends typings.yuka.srcYukaMod.RectangularTriggerRegion {
+  def this(size: typings.yuka.srcMathVector3Mod.Vector3) = this()
 }

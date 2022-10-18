@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.avatargroupMod.AvatarGroupProps
+import typings.primereact.avatargroupAvatargroupMod.AvatarGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "AvatarGroup")
 @js.native
 open class AvatarGroup protected ()
-  extends typings.primereact.avatargroupMod.AvatarGroup {
+  extends typings.primereact.avatargroupAvatargroupMod.AvatarGroup {
   def this(props: AvatarGroupProps) = this()
   /**
     * @deprecated

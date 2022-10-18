@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the scene mode settings on a capture device. */
-@JSGlobal("Windows.Media.Devices.SceneModeControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.SceneModeControl")
 @js.native
-abstract class SceneModeControl ()
+open class SceneModeControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.SceneModeControl {
   

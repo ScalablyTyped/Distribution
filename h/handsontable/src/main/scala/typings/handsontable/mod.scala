@@ -39,157 +39,157 @@ object mod {
       @JSImport("handsontable", "default.plugins.AutoColumnSize")
       @js.native
       open class AutoColumnSize ()
-        extends typings.handsontable.autoColumnSizeMod.AutoColumnSize
+        extends typings.handsontable.pluginsAutoColumnSizeMod.AutoColumnSize
       
       @JSImport("handsontable", "default.plugins.AutoRowSize")
       @js.native
       open class AutoRowSize ()
-        extends typings.handsontable.autoRowSizeMod.AutoRowSize
+        extends typings.handsontable.pluginsAutoRowSizeMod.AutoRowSize
       
       @JSImport("handsontable", "default.plugins.Autofill")
       @js.native
       open class Autofill ()
-        extends typings.handsontable.autofillMod.Autofill
+        extends typings.handsontable.pluginsAutofillMod.Autofill
       
       @JSImport("handsontable", "default.plugins.BindRowsWithHeaders")
       @js.native
       open class BindRowsWithHeaders ()
-        extends typings.handsontable.bindRowsWithHeadersMod.BindRowsWithHeaders
+        extends typings.handsontable.pluginsBindRowsWithHeadersMod.BindRowsWithHeaders
       
       @JSImport("handsontable", "default.plugins.CollapsibleColumns")
       @js.native
       open class CollapsibleColumns ()
-        extends typings.handsontable.collapsibleColumnsMod.CollapsibleColumns
+        extends typings.handsontable.pluginsCollapsibleColumnsMod.CollapsibleColumns
       
       @JSImport("handsontable", "default.plugins.ColumnSorting")
       @js.native
       open class ColumnSorting ()
-        extends typings.handsontable.columnSortingMod.ColumnSorting
+        extends typings.handsontable.pluginsColumnSortingMod.ColumnSorting
       
       @JSImport("handsontable", "default.plugins.ColumnSummary")
       @js.native
       open class ColumnSummary ()
-        extends typings.handsontable.columnSummaryMod.ColumnSummary
+        extends typings.handsontable.pluginsColumnSummaryMod.ColumnSummary
       
       @JSImport("handsontable", "default.plugins.Comments")
       @js.native
       open class Comments ()
-        extends typings.handsontable.commentsMod.Comments
+        extends typings.handsontable.pluginsCommentsMod.Comments
       
       @JSImport("handsontable", "default.plugins.ContextMenu")
       @js.native
       open class ContextMenu ()
-        extends typings.handsontable.contextMenuMod.ContextMenu
+        extends typings.handsontable.pluginsContextMenuMod.ContextMenu
       
       @JSImport("handsontable", "default.plugins.CopyPaste")
       @js.native
       open class CopyPaste ()
-        extends typings.handsontable.copyPasteMod.CopyPaste
+        extends typings.handsontable.pluginsCopyPasteMod.CopyPaste
       
       @JSImport("handsontable", "default.plugins.CustomBorders")
       @js.native
       open class CustomBorders ()
-        extends typings.handsontable.customBordersMod.CustomBorders
+        extends typings.handsontable.pluginsCustomBordersMod.CustomBorders
       
       @JSImport("handsontable", "default.plugins.DragToScroll")
       @js.native
       open class DragToScroll ()
-        extends typings.handsontable.dragToScrollMod.DragToScroll
+        extends typings.handsontable.pluginsDragToScrollMod.DragToScroll
       
       @JSImport("handsontable", "default.plugins.ExportFile")
       @js.native
       open class ExportFile ()
-        extends typings.handsontable.exportFileMod.ExportFile
+        extends typings.handsontable.pluginsExportFileMod.ExportFile
       
       @JSImport("handsontable", "default.plugins.Filters")
       @js.native
       open class Filters ()
-        extends typings.handsontable.filtersMod.Filters
+        extends typings.handsontable.pluginsFiltersMod.Filters
       
       @JSImport("handsontable", "default.plugins.Formulas")
       @js.native
       open class Formulas ()
-        extends typings.handsontable.formulasMod.Formulas
+        extends typings.handsontable.pluginsFormulasMod.Formulas
       
       @JSImport("handsontable", "default.plugins.HiddenColumns")
       @js.native
       open class HiddenColumns ()
-        extends typings.handsontable.hiddenColumnsMod.HiddenColumns
+        extends typings.handsontable.pluginsHiddenColumnsMod.HiddenColumns
       
       @JSImport("handsontable", "default.plugins.HiddenRows")
       @js.native
       open class HiddenRows ()
-        extends typings.handsontable.hiddenRowsMod.HiddenRows
+        extends typings.handsontable.pluginsHiddenRowsMod.HiddenRows
       
       @JSImport("handsontable", "default.plugins.ManualColumnFreeze")
       @js.native
       open class ManualColumnFreeze ()
-        extends typings.handsontable.manualColumnFreezeMod.ManualColumnFreeze
+        extends typings.handsontable.pluginsManualColumnFreezeMod.ManualColumnFreeze
       
       @JSImport("handsontable", "default.plugins.ManualColumnMove")
       @js.native
       open class ManualColumnMove ()
-        extends typings.handsontable.manualColumnMoveMod.ManualColumnMove
+        extends typings.handsontable.pluginsManualColumnMoveMod.ManualColumnMove
       
       @JSImport("handsontable", "default.plugins.ManualColumnResize")
       @js.native
       open class ManualColumnResize ()
-        extends typings.handsontable.manualColumnResizeMod.ManualColumnResize
+        extends typings.handsontable.pluginsManualColumnResizeMod.ManualColumnResize
       
       @JSImport("handsontable", "default.plugins.ManualRowMove")
       @js.native
       open class ManualRowMove ()
-        extends typings.handsontable.manualRowMoveMod.ManualRowMove
+        extends typings.handsontable.pluginsManualRowMoveMod.ManualRowMove
       
       @JSImport("handsontable", "default.plugins.ManualRowResize")
       @js.native
       open class ManualRowResize ()
-        extends typings.handsontable.manualRowResizeMod.ManualRowResize
+        extends typings.handsontable.pluginsManualRowResizeMod.ManualRowResize
       
       @JSImport("handsontable", "default.plugins.MergeCells")
       @js.native
       open class MergeCells ()
-        extends typings.handsontable.mergeCellsMod.MergeCells
+        extends typings.handsontable.pluginsMergeCellsMod.MergeCells
       
       @JSImport("handsontable", "default.plugins.MultiColumnSorting")
       @js.native
       open class MultiColumnSorting ()
-        extends typings.handsontable.multiColumnSortingMod.MultiColumnSorting
+        extends typings.handsontable.pluginsMultiColumnSortingMod.MultiColumnSorting
       
       @JSImport("handsontable", "default.plugins.MultipleSelectionHandles")
       @js.native
       open class MultipleSelectionHandles ()
-        extends typings.handsontable.multipleSelectionHandlesMod.MultipleSelectionHandles
+        extends typings.handsontable.pluginsMultipleSelectionHandlesMod.MultipleSelectionHandles
       
       @JSImport("handsontable", "default.plugins.NestedHeaders")
       @js.native
       open class NestedHeaders ()
-        extends typings.handsontable.nestedHeadersMod.NestedHeaders
+        extends typings.handsontable.pluginsNestedHeadersMod.NestedHeaders
       
       @JSImport("handsontable", "default.plugins.NestedRows")
       @js.native
       open class NestedRows ()
-        extends typings.handsontable.nestedRowsMod.NestedRows
+        extends typings.handsontable.pluginsNestedRowsMod.NestedRows
       
       @JSImport("handsontable", "default.plugins.PersistentState")
       @js.native
       open class PersistentState ()
-        extends typings.handsontable.persistentStateMod.PersistentState
+        extends typings.handsontable.pluginsPersistentStateMod.PersistentState
       
       @JSImport("handsontable", "default.plugins.Search")
       @js.native
       open class Search ()
-        extends typings.handsontable.searchMod.Search
+        extends typings.handsontable.pluginsSearchMod.Search
       
       @JSImport("handsontable", "default.plugins.TrimRows")
       @js.native
       open class TrimRows ()
-        extends typings.handsontable.trimRowsMod.TrimRows
+        extends typings.handsontable.pluginsTrimRowsMod.TrimRows
       
       @JSImport("handsontable", "default.plugins.UndoRedo")
       @js.native
       open class UndoRedo ()
-        extends typings.handsontable.undoRedoMod.UndoRedo
+        extends typings.handsontable.pluginsUndoRedoMod.UndoRedo
     }
     
     /* static member */
@@ -203,67 +203,67 @@ object mod {
     
     object plugins {
       
-      type AutoColumnSize = typings.handsontable.autoColumnSizeMod.AutoColumnSize
+      type AutoColumnSize = typings.handsontable.pluginsAutoColumnSizeMod.AutoColumnSize
       
-      type AutoRowSize = typings.handsontable.autoRowSizeMod.AutoRowSize
+      type AutoRowSize = typings.handsontable.pluginsAutoRowSizeMod.AutoRowSize
       
-      type Autofill = typings.handsontable.autofillMod.Autofill
+      type Autofill = typings.handsontable.pluginsAutofillMod.Autofill
       
-      type BindRowsWithHeaders = typings.handsontable.bindRowsWithHeadersMod.BindRowsWithHeaders
+      type BindRowsWithHeaders = typings.handsontable.pluginsBindRowsWithHeadersMod.BindRowsWithHeaders
       
-      type CollapsibleColumns = typings.handsontable.collapsibleColumnsMod.CollapsibleColumns
+      type CollapsibleColumns = typings.handsontable.pluginsCollapsibleColumnsMod.CollapsibleColumns
       
-      type ColumnSorting = typings.handsontable.columnSortingMod.ColumnSorting
+      type ColumnSorting = typings.handsontable.pluginsColumnSortingMod.ColumnSorting
       
-      type ColumnSummary = typings.handsontable.columnSummaryMod.ColumnSummary
+      type ColumnSummary = typings.handsontable.pluginsColumnSummaryMod.ColumnSummary
       
-      type Comments = typings.handsontable.commentsMod.Comments
+      type Comments = typings.handsontable.pluginsCommentsMod.Comments
       
-      type ContextMenu = typings.handsontable.contextMenuMod.ContextMenu
+      type ContextMenu = typings.handsontable.pluginsContextMenuMod.ContextMenu
       
-      type CopyPaste = typings.handsontable.copyPasteMod.CopyPaste
+      type CopyPaste = typings.handsontable.pluginsCopyPasteMod.CopyPaste
       
-      type CustomBorders = typings.handsontable.customBordersMod.CustomBorders
+      type CustomBorders = typings.handsontable.pluginsCustomBordersMod.CustomBorders
       
-      type DragToScroll = typings.handsontable.dragToScrollMod.DragToScroll
+      type DragToScroll = typings.handsontable.pluginsDragToScrollMod.DragToScroll
       
-      type ExportFile = typings.handsontable.exportFileMod.ExportFile
+      type ExportFile = typings.handsontable.pluginsExportFileMod.ExportFile
       
-      type Filters = typings.handsontable.filtersMod.Filters
+      type Filters = typings.handsontable.pluginsFiltersMod.Filters
       
-      type Formulas = typings.handsontable.formulasMod.Formulas
+      type Formulas = typings.handsontable.pluginsFormulasMod.Formulas
       
-      type HiddenColumns = typings.handsontable.hiddenColumnsMod.HiddenColumns
+      type HiddenColumns = typings.handsontable.pluginsHiddenColumnsMod.HiddenColumns
       
-      type HiddenRows = typings.handsontable.hiddenRowsMod.HiddenRows
+      type HiddenRows = typings.handsontable.pluginsHiddenRowsMod.HiddenRows
       
-      type ManualColumnFreeze = typings.handsontable.manualColumnFreezeMod.ManualColumnFreeze
+      type ManualColumnFreeze = typings.handsontable.pluginsManualColumnFreezeMod.ManualColumnFreeze
       
-      type ManualColumnMove = typings.handsontable.manualColumnMoveMod.ManualColumnMove
+      type ManualColumnMove = typings.handsontable.pluginsManualColumnMoveMod.ManualColumnMove
       
-      type ManualColumnResize = typings.handsontable.manualColumnResizeMod.ManualColumnResize
+      type ManualColumnResize = typings.handsontable.pluginsManualColumnResizeMod.ManualColumnResize
       
-      type ManualRowMove = typings.handsontable.manualRowMoveMod.ManualRowMove
+      type ManualRowMove = typings.handsontable.pluginsManualRowMoveMod.ManualRowMove
       
-      type ManualRowResize = typings.handsontable.manualRowResizeMod.ManualRowResize
+      type ManualRowResize = typings.handsontable.pluginsManualRowResizeMod.ManualRowResize
       
-      type MergeCells = typings.handsontable.mergeCellsMod.MergeCells
+      type MergeCells = typings.handsontable.pluginsMergeCellsMod.MergeCells
       
-      type MultiColumnSorting = typings.handsontable.multiColumnSortingMod.MultiColumnSorting
+      type MultiColumnSorting = typings.handsontable.pluginsMultiColumnSortingMod.MultiColumnSorting
       
-      type MultipleSelectionHandles = typings.handsontable.multipleSelectionHandlesMod.MultipleSelectionHandles
+      type MultipleSelectionHandles = typings.handsontable.pluginsMultipleSelectionHandlesMod.MultipleSelectionHandles
       
-      type NestedHeaders = typings.handsontable.nestedHeadersMod.NestedHeaders
+      type NestedHeaders = typings.handsontable.pluginsNestedHeadersMod.NestedHeaders
       
-      type NestedRows = typings.handsontable.nestedRowsMod.NestedRows
+      type NestedRows = typings.handsontable.pluginsNestedRowsMod.NestedRows
       
-      type PersistentState = typings.handsontable.persistentStateMod.PersistentState
+      type PersistentState = typings.handsontable.pluginsPersistentStateMod.PersistentState
       
-      type Search = typings.handsontable.searchMod.Search
+      type Search = typings.handsontable.pluginsSearchMod.Search
       
-      type TrimRows = typings.handsontable.trimRowsMod.TrimRows
+      type TrimRows = typings.handsontable.pluginsTrimRowsMod.TrimRows
       
-      type UndoRedo = typings.handsontable.undoRedoMod.UndoRedo
+      type UndoRedo = typings.handsontable.pluginsUndoRedoMod.UndoRedo
     }
   }
   type Handsontable = typings.handsontable.coreMod.default

@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Updates cost and usage information for a mobile broadband profile. */
-@JSGlobal("Windows.Networking.NetworkOperators.ProvisionedProfile")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.ProvisionedProfile")
 @js.native
-abstract class ProvisionedProfile ()
+open class ProvisionedProfile ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.ProvisionedProfile {
   

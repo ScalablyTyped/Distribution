@@ -1,6 +1,7 @@
 package typings.atomically
 
 import typings.atomically.atomicallyBooleans.`false`
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.anon.EncodingFlag
 import typings.node.anon.Flag
 import typings.node.anon.MakeDirectoryOptionsrecur
@@ -34,26 +35,20 @@ object anon {
   @js.native
   trait FnCallFdBufferOffsetLengthPosition extends StObject {
     
-    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView): Double = js.native
-    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double): Double = js.native
-    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Double): Double = js.native
-    def apply(
-      fd: Double,
-      buffer: js.typedarray.ArrayBufferView,
-      offset: Double,
-      length: Double,
-      position: Double
-    ): Double = js.native
-    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
-    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Unit, position: Double): Double = js.native
-    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Double): Double = js.native
-    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
-    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
-    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Unit, position: Double): Double = js.native
-    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Double): Double = js.native
-    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Double, position: Double): Double = js.native
-    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Null, position: Double): Double = js.native
-    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Unit, position: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Unit, position: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double, position: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Null, position: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = js.native
     def apply(fd: Double, string: String): Double = js.native
     def apply(fd: Double, string: String, position: Double): Double = js.native
     def apply(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = js.native

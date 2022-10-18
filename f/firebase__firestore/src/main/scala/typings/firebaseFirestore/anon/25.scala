@@ -1,22 +1,38 @@
 package typings.firebaseFirestore.anon
 
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcApiSnapshotMod.QuerySnapshot
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcUtilErrorMod.FirestoreError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `25` extends StObject {
+trait `25`[T] extends StObject {
   
-  var arrayValue: typings.firebaseFirestore.srcProtosFirestoreProtoApiMod.ArrayValue
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.undefined
+  
+  var next: js.UndefOr[js.Function1[/* snapshot */ QuerySnapshot[T], Unit]] = js.undefined
 }
 object `25` {
   
-  inline def apply(arrayValue: typings.firebaseFirestore.srcProtosFirestoreProtoApiMod.ArrayValue): `25` = {
-    val __obj = js.Dynamic.literal(arrayValue = arrayValue.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`25`]
+  inline def apply[T](): `25`[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`25`[T]]
   }
   
-  extension [Self <: `25`](x: Self) {
+  extension [Self <: `25`[?], T](x: Self & `25`[T]) {
     
-    inline def setArrayValue(value: typings.firebaseFirestore.srcProtosFirestoreProtoApiMod.ArrayValue): Self = StObject.set(x, "arrayValue", value.asInstanceOf[js.Any])
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setError(value: /* error */ FirestoreError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setNext(value: /* snapshot */ QuerySnapshot[T] => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+    
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
   }
 }

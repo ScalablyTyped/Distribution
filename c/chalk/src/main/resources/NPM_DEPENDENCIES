@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "chalk" : "5.0.1"
+      "chalk" : "5.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "chalk" : "5.0.1"
+      "chalk" : "5.1.2"
     }
   ],
   "compile-devDependencies" : [

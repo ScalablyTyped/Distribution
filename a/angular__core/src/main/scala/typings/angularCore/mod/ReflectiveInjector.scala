@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "ReflectiveInjector")
+/* note: abstract class */ @JSImport("@angular/core", "ReflectiveInjector")
 @js.native
-abstract class ReflectiveInjector () extends Injector {
+open class ReflectiveInjector () extends Injector {
   
   /**
     * Creates a child injector from previously resolved providers.

@@ -1,7 +1,7 @@
 package typings.nivoArcs.anon
 
-import typings.nivoArcs.typesTypesMod.DatumWithArcAndColor
-import typings.nivoColors.inheritedColorMod.InheritedColorConfig
+import typings.nivoArcs.distTypesTypesMod.DatumWithArcAndColor
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

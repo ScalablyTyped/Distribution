@@ -10,6 +10,8 @@ trait Precision extends StObject {
   
   var subdivisions: js.UndefOr[H] = js.undefined
   
+  var updatable: js.UndefOr[Boolean] = js.undefined
+  
   var xmax: Double
   
   var xmin: Double
@@ -34,6 +36,10 @@ object Precision {
     inline def setSubdivisions(value: H): Self = StObject.set(x, "subdivisions", value.asInstanceOf[js.Any])
     
     inline def setSubdivisionsUndefined: Self = StObject.set(x, "subdivisions", js.undefined)
+    
+    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     
     inline def setXmax(value: Double): Self = StObject.set(x, "xmax", value.asInstanceOf[js.Any])
     

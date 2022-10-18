@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object typestyleStrings {
   
   @js.native
-  sealed trait TypeStyle extends StObject
-  inline def TypeStyle: TypeStyle = "TypeStyle".asInstanceOf[TypeStyle]
-  
-  @js.native
   sealed trait all extends StObject
   inline def all: all = "all".asInstanceOf[all]
   
@@ -37,8 +33,4 @@ object typestyleStrings {
   @js.native
   sealed trait screen extends StObject
   inline def screen: screen = "screen".asInstanceOf[screen]
-  
-  @js.native
-  sealed trait stylesheet extends StObject
-  inline def stylesheet: stylesheet = "stylesheet".asInstanceOf[stylesheet]
 }

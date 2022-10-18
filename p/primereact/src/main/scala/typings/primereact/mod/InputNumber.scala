@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.inputnumberMod.InputNumberProps
+import typings.primereact.inputnumberInputnumberMod.InputNumberProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "InputNumber")
 @js.native
 open class InputNumber protected ()
-  extends typings.primereact.inputnumberMod.InputNumber {
+  extends typings.primereact.inputnumberInputnumberMod.InputNumber {
   def this(props: InputNumberProps) = this()
   /**
     * @deprecated

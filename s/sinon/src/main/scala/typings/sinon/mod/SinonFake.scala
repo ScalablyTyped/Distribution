@@ -29,7 +29,9 @@ trait SinonFake extends StObject {
     * Creates a fake that returns a resolved Promise for the passed value.
     * @param val Resolved promise
     */
-  def resolves[TArgs /* <: js.Array[Any] */, TReturnValue](`val`: Any): SinonSpy[TArgs, TReturnValue] = js.native
+  def resolves[TArgs /* <: js.Array[Any] */, TReturnValue](
+    `val`: /* import warning: importer.ImportType#apply Failed type conversion: TReturnValue extends std.PromiseLike<infer TResolveValue> ? TResolveValue : any */ js.Any
+  ): SinonSpy[TArgs, TReturnValue] = js.native
   
   /**
     * Creates a fake that returns the val argument

@@ -1,14 +1,14 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.inputInterfacesMod.IDeviceInputSystem
+import typings.babylonjs.deviceInputInputInterfacesMod.IDeviceInputSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "DeviceSource")
 @js.native
-open class DeviceSource[T /* <: typings.babylonjs.deviceEnumsMod.DeviceType */] protected ()
-  extends typings.babylonjs.legacyMod.DeviceSource[T] {
+open class DeviceSource[T /* <: typings.babylonjs.deviceInputInputDevicesDeviceEnumsMod.DeviceType */] protected ()
+  extends typings.babylonjs.legacyLegacyMod.DeviceSource[T] {
   /**
     * Default Constructor
     * @param deviceInputSystem - Reference to DeviceInputSystem

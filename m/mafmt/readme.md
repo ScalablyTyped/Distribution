@@ -1,7 +1,7 @@
 
 # Scala.js typings for mafmt
 
-Typings are for version 8.0.1
+Typings are for version 10.0.0
 
 ## Library description:
 A multiaddr validator
@@ -10,10 +10,10 @@ A multiaddr validator
 | ------------------ | :-------------: |
 | Full name          | mafmt |
 | Keywords           | multiaddr |
-| # releases         | 15 |
-| # dependents       | 42 |
-| # downloads        | 941078 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 269887.3333333333 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/multiformats/js-mafmt#readme)

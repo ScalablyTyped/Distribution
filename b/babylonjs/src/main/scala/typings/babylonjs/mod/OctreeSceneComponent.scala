@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param scene Defines the scene to register the component in
   */
 open class OctreeSceneComponent ()
-  extends typings.babylonjs.legacyMod.OctreeSceneComponent {
+  extends typings.babylonjs.legacyLegacyMod.OctreeSceneComponent {
   def this(scene: typings.babylonjs.sceneMod.Scene) = this()
 }

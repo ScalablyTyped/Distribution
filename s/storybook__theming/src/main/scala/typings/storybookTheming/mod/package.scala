@@ -28,7 +28,6 @@ import typings.react.mod.SVGAttributes
 import typings.react.mod.global.JSX.IntrinsicElements
 import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.std.Element
-import typings.std.Exclude
 import typings.std.Extract
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -37,17 +36,15 @@ import typings.std.Pick
 import typings.std.PropertyKey
 import typings.std.SVGElement
 import typings.std.TemplateStringsArray
-import typings.storybookTheming.anon.Background
+import typings.storybookTheming.`distTs3Dot9Modules@emotionCacheNodeModules@emotionUtilsTypesIndexMod`.EmotionCache
+import typings.storybookTheming.`distTs3Dot9Modules@emotionCacheNodeModules@emotionUtilsTypesIndexMod`.SerializedStyles
+import typings.storybookTheming.`distTs3Dot9Modules@emotionCacheTypesIndexMod`.Options
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.CSSInterpolation
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.Keyframes
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.ClassNamesProps
+import typings.storybookTheming.anon.Color
 import typings.storybookTheming.anon.Styles
-import typings.storybookTheming.anon.ThemeExclude
-import typings.storybookTheming.anon.ThemeT
 import typings.storybookTheming.anon.Typography
-import typings.storybookTheming.emotionCacheNodeModulesemotionUtilsTypesIndexMod.EmotionCache
-import typings.storybookTheming.emotionCacheNodeModulesemotionUtilsTypesIndexMod.SerializedStyles
-import typings.storybookTheming.emotionCacheTypesIndexMod.Options
-import typings.storybookTheming.emotionReactNodeModulesemotionSerializeTypesIndexMod.CSSInterpolation
-import typings.storybookTheming.emotionReactNodeModulesemotionSerializeTypesIndexMod.Keyframes
-import typings.storybookTheming.emotionReactTypesIndexMod.ClassNamesProps
 import typings.storybookTheming.mod.^
 import typings.storybookTheming.storybookThemingStrings.input
 import typings.storybookTheming.storybookThemingStrings.theme
@@ -62,7 +59,7 @@ inline def ClassNames(props: ClassNamesProps): ReactElement = ^.asInstanceOf[js.
 
 inline def Global(props: Styles): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Global")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
 
-inline def ThemeProvider: typings.storybookTheming.emotionReactTypesThemingMod.ThemeProvider = ^.asInstanceOf[js.Dynamic].selectDynamic("ThemeProvider").asInstanceOf[typings.storybookTheming.emotionReactTypesThemingMod.ThemeProvider]
+inline def ThemeProvider: typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesThemingMod`.ThemeProvider = ^.asInstanceOf[js.Dynamic].selectDynamic("ThemeProvider").asInstanceOf[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesThemingMod`.ThemeProvider]
 
 inline def convert(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")().asInstanceOf[Theme]
 inline def convert(inherit: ThemeVars): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(inherit.asInstanceOf[js.Any]).asInstanceOf[Theme]
@@ -74,7 +71,7 @@ inline def create(vars: ThemeVars, rest: Rest): ThemeVars = (^.asInstanceOf[js.D
 
 inline def createCache(options: Options): EmotionCache = ^.asInstanceOf[js.Dynamic].applyDynamic("createCache")(options.asInstanceOf[js.Any]).asInstanceOf[EmotionCache]
 
-inline def createGlobal(hasColorBackgroundTypography: Background): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createGlobal")(hasColorBackgroundTypography.asInstanceOf[js.Any]).asInstanceOf[Return]
+inline def createGlobal(hasColorBackgroundTypography: Color): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createGlobal")(hasColorBackgroundTypography.asInstanceOf[js.Any]).asInstanceOf[Return]
 
 inline def createReset(hasTypography: Typography): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createReset")(hasTypography.asInstanceOf[js.Any]).asInstanceOf[Return]
 
@@ -121,17 +118,17 @@ inline def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attrib
 inline def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
 inline def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
 inline def jsx[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.storybookTheming.storybookThemingStrings.a_, typings.storybookTheming.storybookThemingStrings.abbr, typings.storybookTheming.storybookThemingStrings.address */ Any,
   props: ClassAttributes[T] & P,
   children: ReactNode*
 ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
 inline def jsx[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.storybookTheming.storybookThemingStrings.a_, typings.storybookTheming.storybookThemingStrings.abbr, typings.storybookTheming.storybookThemingStrings.address */ Any,
   props: Null,
   children: ReactNode*
 ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
 inline def jsx[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.storybookTheming.storybookThemingStrings.a_, typings.storybookTheming.storybookThemingStrings.abbr, typings.storybookTheming.storybookThemingStrings.address */ Any,
   props: Unit,
   children: ReactNode*
 ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
@@ -145,17 +142,17 @@ inline def jsx_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`t
 inline def jsx_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
 
 inline def jsx_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.storybookTheming.storybookThemingStrings.animate, typings.storybookTheming.storybookThemingStrings.circle, typings.storybookTheming.storybookThemingStrings.clipPath */ Any,
   props: ClassAttributes[T] & P,
   children: ReactNode*
 ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
 inline def jsx_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.storybookTheming.storybookThemingStrings.animate, typings.storybookTheming.storybookThemingStrings.circle, typings.storybookTheming.storybookThemingStrings.clipPath */ Any,
   props: Null,
   children: ReactNode*
 ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
 inline def jsx_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.storybookTheming.storybookThemingStrings.animate, typings.storybookTheming.storybookThemingStrings.circle, typings.storybookTheming.storybookThemingStrings.clipPath */ Any,
   props: Unit,
   children: ReactNode*
 ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
@@ -179,18 +176,16 @@ type AddOptionalTo[T, U] = (DistributiveOmit[T, U]) & (Partial[Pick[T, Extract[/
 
 type CreateStyledComponentExtrinsic[Tag /* <: ComponentType[Any] */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[PropsOf[Tag], ExtraProps, Theme]
 
-type CreateStyledComponentIntrinsic[Tag /* <: /* keyof @storybook/theming.@storybook/theming.JSXInEl */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[
+type CreateStyledComponentIntrinsic[Tag /* <: /* keyof @storybook/theming.@storybook/theming.JSXInEl */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.storybookTheming.storybookThemingStrings.a_, typings.storybookTheming.storybookThemingStrings.abbr, typings.storybookTheming.storybookThemingStrings.address */ Any */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[
 /* import warning: importer.ImportType#apply Failed type conversion: @storybook/theming.@storybook/theming.JSXInEl[Tag] */ js.Any, 
 ExtraProps, 
 Theme]
-
-type DistributiveOmit[T, U] = Pick[T, Exclude[/* keyof T */ String, U]]
 
 type JSXInEl = IntrinsicElements
 
 type Overwrapped[T, U] = Pick[T, Extract[/* keyof T */ String, /* keyof U */ String]]
 
-type PropsOf[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */] = LibraryManagedAttributes[C, ComponentPropsWithRef[C]]
+type PropsOf[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.storybookTheming.storybookThemingStrings.a_, typings.storybookTheming.storybookThemingStrings.abbr, typings.storybookTheming.storybookThemingStrings.address */ Any */] = LibraryManagedAttributes[C, ComponentPropsWithRef[C]]
 
 type Rest = StringDictionary[Any]
 
@@ -199,5 +194,3 @@ type Return = StringDictionary[StringDictionary[Value]]
 type TextSize = Double | String
 
 type Value = String | Double
-
-type WithTheme_[P, T] = (P & ThemeT[T]) | (P & ThemeExclude)

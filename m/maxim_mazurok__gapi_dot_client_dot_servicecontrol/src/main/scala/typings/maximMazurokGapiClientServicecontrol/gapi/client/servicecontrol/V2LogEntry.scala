@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,16 +14,12 @@ trait V2LogEntry extends StObject {
   
   /** A set of user-defined (key, value) data that provides additional information about the log entry. */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.V2LogEntry & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** A set of user-defined (key, value) data that provides additional information about the moniotored resource that the log entry belongs to. */
   var monitoredResourceLabels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.V2LogEntry & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Required. The log to which this log entry belongs. Examples: `"syslog"`, `"book_log"`. */
@@ -35,9 +30,7 @@ trait V2LogEntry extends StObject {
   
   /** The log entry payload, represented as a protocol buffer that is expressed as a JSON object. The only accepted type currently is AuditLog. */
   var protoPayload: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.V2LogEntry & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** The severity of the log entry. The default value is `LogSeverity.DEFAULT`. */
@@ -48,9 +41,7 @@ trait V2LogEntry extends StObject {
   
   /** The log entry payload, represented as a structure that is expressed as a JSON object. */
   var structPayload: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.V2LogEntry & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** The log entry payload, represented as a Unicode string (UTF-8). */
@@ -83,17 +74,13 @@ object V2LogEntry {
     inline def setInsertIdUndefined: Self = StObject.set(x, "insertId", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.V2LogEntry & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     inline def setMonitoredResourceLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.V2LogEntry & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "monitoredResourceLabels", value.asInstanceOf[js.Any])
     
     inline def setMonitoredResourceLabelsUndefined: Self = StObject.set(x, "monitoredResourceLabels", js.undefined)
@@ -107,9 +94,7 @@ object V2LogEntry {
     inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     inline def setProtoPayload(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.V2LogEntry & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "protoPayload", value.asInstanceOf[js.Any])
     
     inline def setProtoPayloadUndefined: Self = StObject.set(x, "protoPayload", js.undefined)
@@ -123,9 +108,7 @@ object V2LogEntry {
     inline def setSourceLocationUndefined: Self = StObject.set(x, "sourceLocation", js.undefined)
     
     inline def setStructPayload(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.V2LogEntry & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "structPayload", value.asInstanceOf[js.Any])
     
     inline def setStructPayloadUndefined: Self = StObject.set(x, "structPayload", js.undefined)

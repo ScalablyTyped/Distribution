@@ -1,11 +1,11 @@
 package typings.notyf
 
 import typings.notyf.notyfBooleans.`false`
-import typings.notyf.notyfOptionsMod.DeepPartial
-import typings.notyf.notyfOptionsMod.INotyfIcon
-import typings.notyf.notyfOptionsMod.INotyfPosition
-import typings.notyf.notyfOptionsMod.NotyfHorizontalPosition
-import typings.notyf.notyfOptionsMod.NotyfVerticalPosition
+import typings.notyf.notyfDotoptionsMod.DeepPartial
+import typings.notyf.notyfDotoptionsMod.INotyfIcon
+import typings.notyf.notyfDotoptionsMod.INotyfPosition
+import typings.notyf.notyfDotoptionsMod.NotyfHorizontalPosition
+import typings.notyf.notyfDotoptionsMod.NotyfVerticalPosition
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement

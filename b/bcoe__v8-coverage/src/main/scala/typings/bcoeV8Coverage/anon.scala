@@ -1,8 +1,8 @@
 package typings.bcoeV8Coverage
 
-import typings.bcoeV8Coverage.typesMod.FunctionCov
-import typings.bcoeV8Coverage.typesMod.RangeCov
-import typings.bcoeV8Coverage.typesMod.ScriptCov
+import typings.bcoeV8Coverage.distLibTypesMod.FunctionCov
+import typings.bcoeV8Coverage.distLibTypesMod.RangeCov
+import typings.bcoeV8Coverage.distLibTypesMod.ScriptCov
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

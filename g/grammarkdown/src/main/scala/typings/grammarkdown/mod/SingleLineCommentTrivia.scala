@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grammarkdown", "SingleLineCommentTrivia")
 @js.native
-class SingleLineCommentTrivia ()
-  extends typings.grammarkdown.nodesMod.SingleLineCommentTrivia
+open class SingleLineCommentTrivia ()
+  extends typings.grammarkdown.distNodesMod.SingleLineCommentTrivia

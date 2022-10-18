@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an event that occurs when the app is launched as a 3D printing workflow. */
-@JSGlobal("Windows.ApplicationModel.Activation.Print3DWorkflowActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Activation.Print3DWorkflowActivatedEventArgs")
 @js.native
-abstract class Print3DWorkflowActivatedEventArgs ()
+open class Print3DWorkflowActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Activation.Print3DWorkflowActivatedEventArgs {
   

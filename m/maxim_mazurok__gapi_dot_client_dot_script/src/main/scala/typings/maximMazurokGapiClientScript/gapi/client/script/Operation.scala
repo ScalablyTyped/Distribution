@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientScript.gapi.client.script
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,7 @@ trait Operation extends StObject {
   
   /** If the script function returns successfully, this field contains an ExecutionResponse object with the function's return value. */
   var response: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Operation & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object Operation {
@@ -44,9 +41,7 @@ object Operation {
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setResponse(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Operation & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)

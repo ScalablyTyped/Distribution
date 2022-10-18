@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "ArrayBufferWriter")
 @js.native
 open class ArrayBufferWriter protected ()
-  extends typings.guacamoleClient.arrayBufferWriterMod.ArrayBufferWriter {
+  extends typings.guacamoleClient.libArrayBufferWriterMod.ArrayBufferWriter {
   /**
     * @param stream The stream that data will be written
     */
-  def this(stream: typings.guacamoleClient.outputStreamMod.OutputStream) = this()
+  def this(stream: typings.guacamoleClient.libOutputStreamMod.OutputStream) = this()
 }
 /* static members */
 object ArrayBufferWriter {

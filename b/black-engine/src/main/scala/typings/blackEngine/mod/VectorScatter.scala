@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "VectorScatter")
 @js.native
 open class VectorScatter ()
-  extends typings.blackEngine.vectorScatterMod.VectorScatter {
+  extends typings.blackEngine.scattersVectorScatterMod.VectorScatter {
   def this(minX: Double) = this()
   def this(minX: Double, minY: Double) = this()
   def this(minX: Unit, minY: Double) = this()
@@ -77,5 +77,5 @@ object VectorScatter {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromObject(values: (Double | typings.blackEngine.vectorScatterBaseMod.VectorScatterBase)*): typings.blackEngine.vectorScatterBaseMod.VectorScatterBase = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.blackEngine.vectorScatterBaseMod.VectorScatterBase]
+  inline def fromObject(values: (Double | typings.blackEngine.scattersVectorScatterBaseMod.VectorScatterBase)*): typings.blackEngine.scattersVectorScatterBaseMod.VectorScatterBase = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.blackEngine.scattersVectorScatterBaseMod.VectorScatterBase]
 }

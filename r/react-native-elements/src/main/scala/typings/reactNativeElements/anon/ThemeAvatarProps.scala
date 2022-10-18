@@ -11,13 +11,13 @@ import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.avatarMod.AvatarIcon
-import typings.reactNativeElements.inputMod.InputProps
+import typings.reactNativeElements.distAvatarAvatarMod.AvatarIcon
+import typings.reactNativeElements.distInputInputMod.InputProps
+import typings.reactNativeElements.distSearchbarSearchBarMod.SearchBarProps
 import typings.reactNativeElements.reactNativeElementsStrings.large
 import typings.reactNativeElements.reactNativeElementsStrings.medium
 import typings.reactNativeElements.reactNativeElementsStrings.small
 import typings.reactNativeElements.reactNativeElementsStrings.xlarge
-import typings.reactNativeElements.searchBarMod.SearchBarProps
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,15 +1,12 @@
 package typings.seamlessImmutable
 
 import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.seamlessImmutable.mod.Immutable.MakeImmutable
 import typings.seamlessImmutable.mod.ImmutableArray.Additions
 import typings.seamlessImmutable.mod.ImmutableArray.Overrides
 import typings.seamlessImmutable.mod.ImmutableArray.ReadOnlyIndexer
 import typings.seamlessImmutable.mod.ImmutableArray.Remaining
 import typings.seamlessImmutable.seamlessImmutableBooleans.`false`
 import typings.seamlessImmutable.seamlessImmutableBooleans.`true`
-import typings.seamlessImmutable.seamlessImmutableStrings.asMutable
 import typings.seamlessImmutable.seamlessImmutableStrings.concat
 import typings.seamlessImmutable.seamlessImmutableStrings.filter
 import typings.seamlessImmutable.seamlessImmutableStrings.forEach
@@ -45,56 +42,26 @@ object mod {
   
   inline def ImmutableError(message: String): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ImmutableError")(message.asInstanceOf[js.Any]).asInstanceOf[js.Error]
   
-  inline def asMutable[T](obj: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T]]
-  inline def asMutable[T](obj: T, opts: AsMutableOptions[Boolean]): T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T]) = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T])]
-  inline def asMutable[T](obj: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  inline def asMutable[T](obj: js.Array[T], opts: AsMutableOptions[Boolean]): js.Array[(Immutable[T, js.Object]) | T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[(Immutable[T, js.Object]) | T]]
-  inline def asMutable[T](obj: ImmutableObject[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T]]
-  inline def asMutable[T](obj: ImmutableObject[T], opts: AsMutableOptions[Boolean]): T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T]) = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.asMutable & TopLevel[T])]
+  inline def asMutable[T](obj: T): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any]
+  inline def asMutable[T](obj: T, opts: AsMutableOptions[Boolean]): T | (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T | (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any)]
+  inline def asMutable[T](obj: js.Array[T] | ImmutableArray[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def asMutable[T](obj: js.Array[T] | ImmutableArray[T], opts: AsMutableOptions[Boolean]): js.Array[(Immutable[T, js.Object]) | T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[(Immutable[T, js.Object]) | T]]
+  inline def asMutable[T](obj: ImmutableObject[T]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any]
+  inline def asMutable[T](obj: ImmutableObject[T], opts: AsMutableOptions[Boolean]): T | (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T | (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any)]
   
-  inline def asMutable_T_Array[T](obj: ImmutableArray[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  inline def asMutable_T_Array[T](obj: ImmutableArray[T], opts: AsMutableOptions[Boolean]): js.Array[(Immutable[T, js.Object]) | T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[(Immutable[T, js.Object]) | T]]
-  
-  inline def asMutable_false[T](obj: T, opts: AsMutableOptions[`false`]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ asMutable & TopLevel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ asMutable & TopLevel[T]]
-  inline def asMutable_false[T](obj: js.Array[T], opts: AsMutableOptions[`false`]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def asMutable_false[T](obj: ImmutableObject[T], opts: AsMutableOptions[`false`]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ asMutable & TopLevel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ asMutable & TopLevel[T]]
-  
-  inline def asMutable_false_T_Array[T](obj: ImmutableArray[T], opts: AsMutableOptions[`false`]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def asMutable_false[T](obj: T, opts: AsMutableOptions[`false`]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any]
+  inline def asMutable_false[T](obj: js.Array[T] | ImmutableArray[T], opts: AsMutableOptions[`false`]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def asMutable_false[T](obj: ImmutableObject[T], opts: AsMutableOptions[`false`]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any]
   
   inline def asMutable_true[T](obj: T, opts: AsMutableOptions[`true`]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def asMutable_true[T](obj: js.Array[T], opts: AsMutableOptions[`true`]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def asMutable_true[T](obj: ImmutableArray[T], opts: AsMutableOptions[`true`]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  
-  inline def asMutable_true_T_T[T](obj: ImmutableObject[T], opts: AsMutableOptions[`true`]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def asMutable_true[T](obj: js.Array[T] | ImmutableArray[T], opts: AsMutableOptions[`true`]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def asMutable_true[T](obj: ImmutableObject[T], opts: AsMutableOptions[`true`]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("asMutable")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def from[T](obj: T): Immutable[T, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[Immutable[T, js.Object]]
   inline def from[T](obj: T, options: Options): Immutable[T, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Immutable[T, js.Object]]
   
-  inline def isImmutable[T](target: (Immutable[T, js.Object]) | T): /* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImmutable")(target.asInstanceOf[js.Any]).asInstanceOf[/* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean]
+  inline def isImmutable[T](target: T): /* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImmutable")(target.asInstanceOf[js.Any]).asInstanceOf[/* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean]
+  inline def isImmutable[T](target: Immutable[T, js.Object]): /* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImmutable")(target.asInstanceOf[js.Any]).asInstanceOf[/* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean]
   
   inline def replace[T, S](obj: Immutable[T, js.Object], valueObj: S): Immutable[S, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(obj.asInstanceOf[js.Any], valueObj.asInstanceOf[js.Any])).asInstanceOf[Immutable[S, js.Object]]
   inline def replace[T, S](obj: Immutable[T, js.Object], valueObj: S, options: ReplaceConfig): Immutable[S, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(obj.asInstanceOf[js.Any], valueObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Immutable[S, js.Object]]
@@ -116,10 +83,25 @@ object mod {
     }
   }
   
-  type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? seamless-immutable.seamless-immutable.DeepPartial<T[P]>}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.DeepPartial & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]:? seamless-immutable.seamless-immutable.DeepPartial<T[P]>}
+    }}}
+    */
+  @js.native
+  trait DeepPartial[T] extends StObject
   
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Promise<infer U> ? std.Promise<seamless-immutable.seamless-immutable.Immutable.MakeImmutable<U, O>> : seamless-immutable.seamless-immutable.Immutable.MakeImmutable<T, O>
+    }}}
+    */
+  @js.native
+  trait Immutable[T, O /* <: js.Object */] extends StObject
   object Immutable {
     
     type AlreadyImmutable[O /* <: js.Object */] = ImmutableObject[O] | ImmutableArray[Any] | ImmutableDate
@@ -132,11 +114,18 @@ object mod {
     
     type CannotMakeImmutable[O /* <: js.Object */] = AlreadyImmutable[O] | Primitive
     
-    type MakeImmutable[T, O /* <: js.Object */] = ImmutableObject[T] | ImmutableDate | ImmutableArray[Any] | T
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      T extends seamless-immutable.seamless-immutable.Immutable.CannotMakeImmutable<O> ? T : T extends std.Array<infer Element> ? seamless-immutable.seamless-immutable.ImmutableArray<Element> : T extends std.Date ? seamless-immutable.seamless-immutable.ImmutableDate : seamless-immutable.seamless-immutable.ImmutableObject<T>
+      }}}
+      */
+    @js.native
+    trait MakeImmutable[T, O /* <: js.Object */] extends StObject
     
     type Primitive = js.UndefOr[Boolean | Double | String | js.Symbol | AnyFunction | Null]
   }
-  type Immutable[T, O /* <: js.Object */] = (MakeImmutable[T, O]) | (js.Promise[MakeImmutable[Any, O]])
   
   object ImmutableArray {
     
@@ -175,7 +164,10 @@ object mod {
             ]
       ): Immutable[U, js.Object] = js.native
       
-      def flatMap[TTarget](mapFunction: js.Function1[/* item */ T, TTarget]): Immutable[js.Array[TTarget] | TTarget, js.Object] = js.native
+      def flatMap[TTarget](mapFunction: js.Function1[/* item */ T, TTarget]): Immutable[
+            /* import warning: importer.ImportType#apply Failed type conversion: TTarget extends std.Array<any> ? TTarget : std.Array<TTarget> */ js.Any, 
+            js.Object
+          ] = js.native
     }
     
     /** These methods are banned by seamless-immutable. */
@@ -287,16 +279,7 @@ object mod {
     }
     
     /** Merging this into Overrides breaks stuff, so this is split out */
-    trait ReadOnlyIndexer[T]
-      extends StObject
-         with /* key */ NumberDictionary[Immutable[T, js.Object]]
-    object ReadOnlyIndexer {
-      
-      inline def apply[T](): ReadOnlyIndexer[T] = {
-        val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[ReadOnlyIndexer[T]]
-      }
-    }
+    type ReadOnlyIndexer[T] = NumberDictionary[Immutable[T, js.Object]]
     
     /** The remaining properties on Array<T>, after we remove the mutating functions and the wrapped non-mutating functions. */
     type Remaining[T] = Omit[
@@ -817,21 +800,15 @@ object mod {
     }
   }
   
-  type ImmutableObject[T] = ImmutableObjectMixin[T] & typings.seamlessImmutable.seamlessImmutableStrings.ImmutableObject & TopLevel[T]
+  type ImmutableObject[T] = ImmutableObjectMixin[T] & (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ P in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[P], {}>} */ js.Any)
   
   @js.native
   trait ImmutableObjectMixin[T] extends StObject {
     
-    def asMutable(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-      */ typings.seamlessImmutable.seamlessImmutableStrings.ImmutableObjectMixin & TopLevel[T] = js.native
-    def asMutable(opts: AsMutableOptions[Boolean]): T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-      */ typings.seamlessImmutable.seamlessImmutableStrings.ImmutableObjectMixin & TopLevel[T]) = js.native
+    def asMutable(): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any = js.native
+    def asMutable(opts: AsMutableOptions[Boolean]): T | (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any) = js.native
     @JSName("asMutable")
-    def asMutable_false(opts: AsMutableOptions[`false`]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-      */ typings.seamlessImmutable.seamlessImmutableStrings.ImmutableObjectMixin & TopLevel[T] = js.native
+    def asMutable_false(opts: AsMutableOptions[`false`]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>} */ js.Any = js.native
     @JSName("asMutable")
     def asMutable_true(opts: AsMutableOptions[`true`]): T = js.native
     

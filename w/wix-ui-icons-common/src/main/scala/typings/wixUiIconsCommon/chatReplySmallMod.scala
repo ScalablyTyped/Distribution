@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsChatReplySmallMod.ChatReplySmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chatReplySmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/ChatReplySmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/ChatReplySmall", JSImport.Default)
   @js.native
   val default: FC[ChatReplySmallProps] = js.native
-  
-  trait ChatReplySmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object ChatReplySmallProps {
-    
-    inline def apply(): ChatReplySmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ChatReplySmallProps]
-    }
-    
-    extension [Self <: ChatReplySmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[ChatReplySmallProps]
   

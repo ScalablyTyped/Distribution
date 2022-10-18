@@ -2,7 +2,7 @@ package typings.wordpressComponents
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ComponentType
-import typings.wordpressComponents.dateMod.DatePicker.Props
+import typings.wordpressComponents.dateTimeDateMod.DatePicker.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,5 +57,5 @@ object dateTimeMod {
   
   @JSImport("@wordpress/components/date-time", "TimePicker")
   @js.native
-  val TimePicker: ComponentType[typings.wordpressComponents.timeMod.TimePicker.Props] = js.native
+  val TimePicker: ComponentType[typings.wordpressComponents.dateTimeTimeMod.TimePicker.Props] = js.native
 }

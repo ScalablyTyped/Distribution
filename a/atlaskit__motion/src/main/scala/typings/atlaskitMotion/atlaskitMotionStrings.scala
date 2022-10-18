@@ -1,9 +1,9 @@
 package typings.atlaskitMotion
 
-import typings.atlaskitMotion.typesMod.Direction
-import typings.atlaskitMotion.typesMod.Distance
-import typings.atlaskitMotion.typesMod.Fade
-import typings.atlaskitMotion.typesMod.Transition
+import typings.atlaskitMotion.distTypesEnteringTypesMod.Direction
+import typings.atlaskitMotion.distTypesEnteringTypesMod.Distance
+import typings.atlaskitMotion.distTypesEnteringTypesMod.Fade
+import typings.atlaskitMotion.distTypesEnteringTypesMod.Transition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

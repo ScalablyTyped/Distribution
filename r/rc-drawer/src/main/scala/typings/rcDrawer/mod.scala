@@ -1,7 +1,7 @@
 package typings.rcDrawer
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcDrawer.drawerMod.DrawerProps
+import typings.rcDrawer.esDrawerMod.DrawerProps
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

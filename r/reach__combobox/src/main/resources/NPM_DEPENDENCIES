@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@reach/combobox" : "0.17.0"
+      "@reach/combobox" : "0.18.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@reach/combobox" : "0.17.0"
+      "@reach/combobox" : "0.18.0"
     }
   ],
   "compile-devDependencies" : [

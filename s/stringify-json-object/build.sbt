@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stringify-json-object"
-version := "1.0.7-1c8af2"
+version := "1.0.7-f33583"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

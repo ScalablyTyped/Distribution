@@ -15,7 +15,7 @@ import typings.pg.mod.Events
 import typings.pg.mod.Pool
 import typings.pg.mod.Query
 import typings.pg.mod.QueryResultRow
-import typings.pgProtocol.messagesMod.MessageName
+import typings.pgProtocol.distMessagesMod.MessageName
 import typings.pgTypes.mod.TypeId
 import typings.pgTypes.mod.TypeParser
 import org.scalablytyped.runtime.StObject

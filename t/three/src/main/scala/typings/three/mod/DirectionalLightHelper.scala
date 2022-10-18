@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.utilsMod.ColorRepresentation
+import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +8,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "DirectionalLightHelper")
 @js.native
 open class DirectionalLightHelper protected ()
-  extends typings.three.threeMod.DirectionalLightHelper {
+  extends typings.three.srcThreeMod.DirectionalLightHelper {
   /**
     * @param light
     * @param [size=1]
     * @param color
     */
-  def this(light: typings.three.directionalLightMod.DirectionalLight) = this()
-  def this(light: typings.three.directionalLightMod.DirectionalLight, size: Double) = this()
+  def this(light: typings.three.srcLightsDirectionalLightMod.DirectionalLight) = this()
+  def this(light: typings.three.srcLightsDirectionalLightMod.DirectionalLight, size: Double) = this()
   def this(
-    light: typings.three.directionalLightMod.DirectionalLight,
+    light: typings.three.srcLightsDirectionalLightMod.DirectionalLight,
     size: Double,
     color: ColorRepresentation
   ) = this()
-  def this(light: typings.three.directionalLightMod.DirectionalLight, size: Unit, color: ColorRepresentation) = this()
+  def this(
+    light: typings.three.srcLightsDirectionalLightMod.DirectionalLight,
+    size: Unit,
+    color: ColorRepresentation
+  ) = this()
 }

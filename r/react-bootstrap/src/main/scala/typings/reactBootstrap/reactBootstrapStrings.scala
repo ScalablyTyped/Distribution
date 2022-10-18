@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactBootstrapStrings {
   
   @js.native
+  sealed trait bottom extends StObject
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @js.native
   sealed trait checkbox extends StObject
   inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
@@ -38,6 +42,10 @@ object reactBootstrapStrings {
   inline def large: large = "large".asInstanceOf[large]
   
   @js.native
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
   sealed trait lg
     extends StObject
        with Sizes
@@ -56,6 +64,10 @@ object reactBootstrapStrings {
   @js.native
   sealed trait radio extends StObject
   inline def radio: radio = "radio".asInstanceOf[radio]
+  
+  @js.native
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait rootClose extends StObject
@@ -80,6 +92,10 @@ object reactBootstrapStrings {
   @js.native
   sealed trait success extends StObject
   inline def success: success = "success".asInstanceOf[success]
+  
+  @js.native
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait `type` extends StObject

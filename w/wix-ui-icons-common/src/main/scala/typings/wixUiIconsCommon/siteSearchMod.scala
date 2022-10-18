@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsSiteSearchMod.SiteSearchProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object siteSearchMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/SiteSearch", JSImport.Default)
+  @JSImport("wix-ui-icons-common/SiteSearch", JSImport.Default)
   @js.native
   val default: FC[SiteSearchProps] = js.native
-  
-  trait SiteSearchProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object SiteSearchProps {
-    
-    inline def apply(): SiteSearchProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SiteSearchProps]
-    }
-    
-    extension [Self <: SiteSearchProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[SiteSearchProps]
   

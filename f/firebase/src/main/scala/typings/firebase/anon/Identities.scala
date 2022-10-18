@@ -1,7 +1,6 @@
 package typings.firebase.anon
 
-import org.scalablytyped.runtime.TopLevel
-import typings.firebase.firebaseMod.firebase.FirebaseSignInProvider
+import typings.firebase.compatMod.firebase.FirebaseSignInProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +9,7 @@ trait Identities extends StObject {
   
   /** A map of providers to the user's list of unique identifiers from each provider */
   var identities: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ provider in firebase.firebase/compat.firebase.FirebaseSignInProvider ]:? std.Array<string>}
-    */ typings.firebase.firebaseStrings.Identities & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ provider in firebase.firebase/compat.firebase.FirebaseSignInProvider ]:? std.Array<string>} */ js.Any
   ] = js.undefined
   
   /** The primary sign-in provider */
@@ -28,9 +25,7 @@ object Identities {
   extension [Self <: Identities](x: Self) {
     
     inline def setIdentities(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ provider in firebase.firebase/compat.firebase.FirebaseSignInProvider ]:? std.Array<string>}
-      */ typings.firebase.firebaseStrings.Identities & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ provider in firebase.firebase/compat.firebase.FirebaseSignInProvider ]:? std.Array<string>} */ js.Any
     ): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     
     inline def setIdentitiesUndefined: Self = StObject.set(x, "identities", js.undefined)

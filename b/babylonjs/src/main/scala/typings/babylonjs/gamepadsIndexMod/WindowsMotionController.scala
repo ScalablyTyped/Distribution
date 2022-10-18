@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Gamepads/index", "WindowsMotionController")
 @js.native
 open class WindowsMotionController protected ()
-  extends typings.babylonjs.controllersIndexMod.WindowsMotionController {
+  extends typings.babylonjs.gamepadsControllersIndexMod.WindowsMotionController {
   /**
     * Creates a new WindowsMotionController from a gamepad
     * @param vrGamepad the gamepad that the controller should be created from

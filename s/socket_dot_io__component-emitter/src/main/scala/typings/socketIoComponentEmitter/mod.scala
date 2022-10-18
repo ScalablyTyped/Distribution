@@ -126,11 +126,19 @@ object mod {
     * This is a hack to mitigate https://github.com/socketio/socket.io/issues/3833.
     * Needed because of https://github.com/microsoft/TypeScript/issues/41778
     */
-  type FallbackToUntypedListener[T] = T | (js.Function1[/* repeated */ Any, Unit | js.Promise[Unit]])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T] extends [never] ? (args : ...any): void | std.Promise<void> : T
+    }}}
+    */
+  @js.native
+  trait FallbackToUntypedListener[T] extends StObject
   
   type ReservedOrUserEventNames[ReservedEventsMap /* <: EventsMap */, UserEvents /* <: EventsMap */] = EventNames[ReservedEventsMap | UserEvents]
   
   type ReservedOrUserListener[ReservedEvents /* <: EventsMap */, UserEvents /* <: EventsMap */, Ev /* <: ReservedOrUserEventNames[ReservedEvents, UserEvents] */] = FallbackToUntypedListener[
-    /* import warning: importer.ImportType#apply Failed type conversion: UserEvents[Ev] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Ev extends @socket.io/component-emitter.@socket.io/component-emitter.EventNames<ReservedEvents> ? ReservedEvents[Ev] : Ev extends @socket.io/component-emitter.@socket.io/component-emitter.EventNames<UserEvents> ? UserEvents[Ev] : never */ js.Any
   ]
 }

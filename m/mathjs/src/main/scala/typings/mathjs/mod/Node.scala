@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Node ()
   extends StObject
-     with MathNodeCommon
+     with MathNode

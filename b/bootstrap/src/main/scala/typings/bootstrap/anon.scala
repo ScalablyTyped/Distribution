@@ -6,35 +6,32 @@ import typings.bootstrap.bootstrapStrings.`click hover focus`
 import typings.bootstrap.bootstrapStrings.`click hover`
 import typings.bootstrap.bootstrapStrings.`hover focus`
 import typings.bootstrap.bootstrapStrings.auto
-import typings.bootstrap.bootstrapStrings.bottom
 import typings.bootstrap.bootstrapStrings.carousel
 import typings.bootstrap.bootstrapStrings.click
 import typings.bootstrap.bootstrapStrings.dynamic
 import typings.bootstrap.bootstrapStrings.focus
 import typings.bootstrap.bootstrapStrings.hover
 import typings.bootstrap.bootstrapStrings.inside
-import typings.bootstrap.bootstrapStrings.left
 import typings.bootstrap.bootstrapStrings.manual
 import typings.bootstrap.bootstrapStrings.offset
 import typings.bootstrap.bootstrapStrings.outside
 import typings.bootstrap.bootstrapStrings.parent
 import typings.bootstrap.bootstrapStrings.position
-import typings.bootstrap.bootstrapStrings.right
 import typings.bootstrap.bootstrapStrings.static
 import typings.bootstrap.bootstrapStrings.toggle
-import typings.bootstrap.bootstrapStrings.top
+import typings.bootstrap.jsDistPopoverMod.Popover.Options
+import typings.bootstrap.jsDistPopoverMod.Popover.PopperConfigFunction
+import typings.bootstrap.jsDistTooltipMod.Tooltip.Offset
+import typings.bootstrap.jsDistTooltipMod.Tooltip.OffsetFunction
+import typings.bootstrap.jsDistTooltipMod.Tooltip.PopoverPlacement
 import typings.bootstrap.mod.global.Element
 import typings.bootstrap.mod.global.JQuery
-import typings.bootstrap.popoverMod.Popover.Options
-import typings.bootstrap.popoverMod.Popover.PopperConfigFunction
-import typings.bootstrap.tooltipMod.Tooltip.Offset
-import typings.bootstrap.tooltipMod.Tooltip.OffsetFunction
 import typings.popperjsCore.anon.PartialModifieranyany
 import typings.popperjsCore.anon.PartialState
-import typings.popperjsCore.enumsMod.Boundary
-import typings.popperjsCore.enumsMod.Placement
-import typings.popperjsCore.typesMod.PositioningStrategy
-import typings.popperjsCore.typesMod.Rect
+import typings.popperjsCore.libEnumsMod.Boundary
+import typings.popperjsCore.libEnumsMod.Placement
+import typings.popperjsCore.libTypesMod.PositioningStrategy
+import typings.popperjsCore.libTypesMod.Rect
 import typings.std.HTMLElement
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -133,13 +130,13 @@ object anon {
     
     var delay: js.UndefOr[Double | Hide] = js.undefined
     
-    var fallbackPlacement: js.UndefOr[js.Array[String]] = js.undefined
+    var fallbackPlacements: js.UndefOr[js.Array[String]] = js.undefined
     
     var html: js.UndefOr[Boolean] = js.undefined
     
     var offset: js.UndefOr[Offset | String | OffsetFunction] = js.undefined
     
-    var placement: js.UndefOr[auto | top | bottom | left | right | js.Function0[Unit]] = js.undefined
+    var placement: js.UndefOr[PopoverPlacement | js.Function0[PopoverPlacement]] = js.undefined
     
     var popperConfig: js.UndefOr[Partial[Options] | PopperConfigFunction | Null] = js.undefined
     
@@ -202,11 +199,11 @@ object anon {
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      inline def setFallbackPlacement(value: js.Array[String]): Self = StObject.set(x, "fallbackPlacement", value.asInstanceOf[js.Any])
+      inline def setFallbackPlacements(value: js.Array[String]): Self = StObject.set(x, "fallbackPlacements", value.asInstanceOf[js.Any])
       
-      inline def setFallbackPlacementUndefined: Self = StObject.set(x, "fallbackPlacement", js.undefined)
+      inline def setFallbackPlacementsUndefined: Self = StObject.set(x, "fallbackPlacements", js.undefined)
       
-      inline def setFallbackPlacementVarargs(value: String*): Self = StObject.set(x, "fallbackPlacement", js.Array(value*))
+      inline def setFallbackPlacementsVarargs(value: String*): Self = StObject.set(x, "fallbackPlacements", js.Array(value*))
       
       inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -218,9 +215,9 @@ object anon {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setPlacement(value: auto | top | bottom | left | right | js.Function0[Unit]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: PopoverPlacement | js.Function0[PopoverPlacement]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      inline def setPlacementFunction0(value: () => Unit): Self = StObject.set(x, "placement", js.Any.fromFunction0(value))
+      inline def setPlacementFunction0(value: () => PopoverPlacement): Self = StObject.set(x, "placement", js.Any.fromFunction0(value))
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
@@ -304,11 +301,11 @@ object anon {
     var display: js.UndefOr[dynamic | static] = js.undefined
     
     var offset: js.UndefOr[
-        typings.bootstrap.dropdownMod.Dropdown.Offset | String | typings.bootstrap.dropdownMod.Dropdown.OffsetFunction
+        typings.bootstrap.jsDistDropdownMod.Dropdown.Offset | String | typings.bootstrap.jsDistDropdownMod.Dropdown.OffsetFunction
       ] = js.undefined
     
     var popperConfig: js.UndefOr[
-        Partial[typings.popperjsCore.typesMod.Options] | typings.bootstrap.dropdownMod.Dropdown.PopperConfigFunction | Null
+        Partial[typings.popperjsCore.libTypesMod.Options] | typings.bootstrap.jsDistDropdownMod.Dropdown.PopperConfigFunction | Null
       ] = js.undefined
     
     var reference: js.UndefOr[toggle | parent | Element | Rect] = js.undefined
@@ -337,15 +334,15 @@ object anon {
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
       inline def setOffset(
-        value: typings.bootstrap.dropdownMod.Dropdown.Offset | String | typings.bootstrap.dropdownMod.Dropdown.OffsetFunction
+        value: typings.bootstrap.jsDistDropdownMod.Dropdown.Offset | String | typings.bootstrap.jsDistDropdownMod.Dropdown.OffsetFunction
       ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      inline def setOffsetFunction0(value: () => typings.bootstrap.dropdownMod.Dropdown.Offset): Self = StObject.set(x, "offset", js.Any.fromFunction0(value))
+      inline def setOffsetFunction0(value: () => typings.bootstrap.jsDistDropdownMod.Dropdown.Offset): Self = StObject.set(x, "offset", js.Any.fromFunction0(value))
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
       inline def setPopperConfig(
-        value: Partial[typings.popperjsCore.typesMod.Options] | typings.bootstrap.dropdownMod.Dropdown.PopperConfigFunction
+        value: Partial[typings.popperjsCore.libTypesMod.Options] | typings.bootstrap.jsDistDropdownMod.Dropdown.PopperConfigFunction
       ): Self = StObject.set(x, "popperConfig", value.asInstanceOf[js.Any])
       
       inline def setPopperConfigFunction0(value: () => PartialOptionsModifiers): Self = StObject.set(x, "popperConfig", js.Any.fromFunction0(value))
@@ -407,16 +404,16 @@ object anon {
     
     var delay: js.UndefOr[Double | Hide] = js.undefined
     
-    var fallbackPlacement: js.UndefOr[js.Array[String]] = js.undefined
+    var fallbackPlacements: js.UndefOr[js.Array[String]] = js.undefined
     
     var html: js.UndefOr[Boolean] = js.undefined
     
     var offset: js.UndefOr[Offset | String | OffsetFunction] = js.undefined
     
-    var placement: js.UndefOr[auto | top | bottom | left | right | js.Function0[Unit]] = js.undefined
+    var placement: js.UndefOr[PopoverPlacement | js.Function0[PopoverPlacement]] = js.undefined
     
     var popperConfig: js.UndefOr[
-        Partial[typings.popperjsCore.typesMod.Options] | typings.bootstrap.tooltipMod.Tooltip.PopperConfigFunction | Null
+        Partial[typings.popperjsCore.libTypesMod.Options] | typings.bootstrap.jsDistTooltipMod.Tooltip.PopperConfigFunction | Null
       ] = js.undefined
     
     var sanitize: js.UndefOr[Boolean] = js.undefined
@@ -472,11 +469,11 @@ object anon {
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      inline def setFallbackPlacement(value: js.Array[String]): Self = StObject.set(x, "fallbackPlacement", value.asInstanceOf[js.Any])
+      inline def setFallbackPlacements(value: js.Array[String]): Self = StObject.set(x, "fallbackPlacements", value.asInstanceOf[js.Any])
       
-      inline def setFallbackPlacementUndefined: Self = StObject.set(x, "fallbackPlacement", js.undefined)
+      inline def setFallbackPlacementsUndefined: Self = StObject.set(x, "fallbackPlacements", js.undefined)
       
-      inline def setFallbackPlacementVarargs(value: String*): Self = StObject.set(x, "fallbackPlacement", js.Array(value*))
+      inline def setFallbackPlacementsVarargs(value: String*): Self = StObject.set(x, "fallbackPlacements", js.Array(value*))
       
       inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -488,18 +485,18 @@ object anon {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setPlacement(value: auto | top | bottom | left | right | js.Function0[Unit]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: PopoverPlacement | js.Function0[PopoverPlacement]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      inline def setPlacementFunction0(value: () => Unit): Self = StObject.set(x, "placement", js.Any.fromFunction0(value))
+      inline def setPlacementFunction0(value: () => PopoverPlacement): Self = StObject.set(x, "placement", js.Any.fromFunction0(value))
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
       inline def setPopperConfig(
-        value: Partial[typings.popperjsCore.typesMod.Options] | typings.bootstrap.tooltipMod.Tooltip.PopperConfigFunction
+        value: Partial[typings.popperjsCore.libTypesMod.Options] | typings.bootstrap.jsDistTooltipMod.Tooltip.PopperConfigFunction
       ): Self = StObject.set(x, "popperConfig", value.asInstanceOf[js.Any])
       
       inline def setPopperConfigFunction1(
-        value: /* defaultBsPopperConfig */ typings.bootstrap.tooltipMod.Tooltip.Options => PartialOptionsModifiers
+        value: /* defaultBsPopperConfig */ typings.bootstrap.jsDistTooltipMod.Tooltip.Options => PartialOptionsModifiers
       ): Self = StObject.set(x, "popperConfig", js.Any.fromFunction1(value))
       
       inline def setPopperConfigNull: Self = StObject.set(x, "popperConfig", null)
@@ -539,7 +536,7 @@ object anon {
   /* Inlined std.Partial<bootstrap.bootstrap/js/dist/offcanvas.Offcanvas.Options> */
   trait PartialOptionsKeyboard extends StObject {
     
-    var backdrop: js.UndefOr[Boolean] = js.undefined
+    var backdrop: js.UndefOr[Boolean | static] = js.undefined
     
     var keyboard: js.UndefOr[Boolean] = js.undefined
     
@@ -554,7 +551,7 @@ object anon {
     
     extension [Self <: PartialOptionsKeyboard](x: Self) {
       
-      inline def setBackdrop(value: Boolean): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+      inline def setBackdrop(value: Boolean | static): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       
       inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
       
@@ -574,6 +571,10 @@ object anon {
     var method: js.UndefOr[auto | offset | position] = js.undefined
     
     var offset: js.UndefOr[Double] = js.undefined
+    
+    var rootMargin: js.UndefOr[String] = js.undefined
+    
+    var smoothScroll: js.UndefOr[Boolean] = js.undefined
     
     var target: js.UndefOr[String | Element | JQuery] = js.undefined
     
@@ -595,6 +596,14 @@ object anon {
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      
+      inline def setRootMargin(value: String): Self = StObject.set(x, "rootMargin", value.asInstanceOf[js.Any])
+      
+      inline def setRootMarginUndefined: Self = StObject.set(x, "rootMargin", js.undefined)
+      
+      inline def setSmoothScroll(value: Boolean): Self = StObject.set(x, "smoothScroll", value.asInstanceOf[js.Any])
+      
+      inline def setSmoothScrollUndefined: Self = StObject.set(x, "smoothScroll", js.undefined)
       
       inline def setTarget(value: String | Element | JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Represents a collection of CustomXmlPart objects.
-  * 
+  *
   * @remarks
-  * 
-  * **Hosts**: Word
+  *
+  * **Applications**: Word
   */
 @js.native
 trait CustomXmlParts extends StObject {
   
   /**
     * Asynchronously adds a new custom XML part to a file.
-    * 
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xml The XML to add to the newly created custom XML part.
@@ -37,17 +37,17 @@ trait CustomXmlParts extends StObject {
   ): Unit = js.native
   
   /**
-    * Asynchronously gets the specified custom XML part by its id.
-    * 
+    * Asynchronously gets the specified custom XML part by its ID.
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param id The GUID of the custom XML part, including opening and closing braces.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is a CustomXmlPart object that represents the specified custom XML part.
-    *                  If there is no custom XML part with the specified id, the method returns null.
+    *                  If there is no custom XML part with the specified ID, the method returns null.
     */
   def getByIdAsync(id: String): Unit = js.native
   def getByIdAsync(id: String, callback: js.Function1[/* result */ AsyncResult[CustomXmlPart], Unit]): Unit = js.native
@@ -60,10 +60,10 @@ trait CustomXmlParts extends StObject {
   ): Unit = js.native
   
   /**
-    * Asynchronously gets the specified custom XML part(s) by its namespace.
-    * 
+    * Asynchronously gets the specified custom XML parts by its namespace.
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param ns  The namespace URI.

@@ -32,7 +32,7 @@ object mod {
     var label: js.UndefOr[String] = js.undefined
     
     /** Props for this item */
-    var props: js.UndefOr[PartialDropDownPropsAbsoluteRTLLayout] = js.undefined
+    var props: js.UndefOr[PartialDropDownProps] = js.undefined
     
     /** Value of item */
     var value: String
@@ -50,7 +50,7 @@ object mod {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setProps(value: PartialDropDownPropsAbsoluteRTLLayout): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: PartialDropDownProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
@@ -222,7 +222,9 @@ object mod {
     var pickerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /** Props extractor function. Extract props from item. */
-    var propsExtractor: js.UndefOr[js.Function2[/* item */ DropDownData, /* index */ Double, PartialDropDownProps]] = js.undefined
+    var propsExtractor: js.UndefOr[
+        js.Function2[/* item */ DropDownData, /* index */ Double, PartialDropDownPropsAbsoluteRTLLayout]
+      ] = js.undefined
     
     /** Render text field accessory */
     var renderAccessory: js.UndefOr[js.Function0[Element]] = js.undefined
@@ -390,7 +392,7 @@ object mod {
       
       inline def setPickerStyleUndefined: Self = StObject.set(x, "pickerStyle", js.undefined)
       
-      inline def setPropsExtractor(value: (/* item */ DropDownData, /* index */ Double) => PartialDropDownProps): Self = StObject.set(x, "propsExtractor", js.Any.fromFunction2(value))
+      inline def setPropsExtractor(value: (/* item */ DropDownData, /* index */ Double) => PartialDropDownPropsAbsoluteRTLLayout): Self = StObject.set(x, "propsExtractor", js.Any.fromFunction2(value))
       
       inline def setPropsExtractorUndefined: Self = StObject.set(x, "propsExtractor", js.undefined)
       

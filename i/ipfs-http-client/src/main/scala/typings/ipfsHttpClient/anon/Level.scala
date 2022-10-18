@@ -1,6 +1,8 @@
 package typings.ipfsHttpClient.anon
 
-import typings.std.AsyncGenerator
+import typings.ipfsCoreTypes.distSrcUtilsMod.AbortOptions
+import typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
+import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Level extends StObject {
   
-  def level(subsystem: js.Any, level: js.Any): js.Promise[js.Any] = js.native
-  def level(subsystem: js.Any, level: js.Any, options: js.Object): js.Promise[js.Any] = js.native
+  def level(subsystem: String, level: String): js.Promise[Any] = js.native
+  def level(subsystem: String, level: String, options: AbortOptions & HTTPClientExtraOptions): js.Promise[Any] = js.native
   
-  def ls(): js.Promise[js.Any] = js.native
-  def ls(options: js.Object): js.Promise[js.Any] = js.native
+  def ls(): js.Promise[Any] = js.native
+  def ls(options: AbortOptions & HTTPClientExtraOptions): js.Promise[Any] = js.native
   
-  def tail(): AsyncGenerator[js.Any, Unit, js.Any] = js.native
-  def tail(options: js.Object): AsyncGenerator[js.Any, Unit, js.Any] = js.native
+  def tail(): AsyncIterable[Any] = js.native
+  def tail(options: AbortOptions & HTTPClientExtraOptions): AsyncIterable[Any] = js.native
 }

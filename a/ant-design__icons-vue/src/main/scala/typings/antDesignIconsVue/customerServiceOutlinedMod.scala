@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCustomerServiceOutlinedMod.CustomerServiceOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customerServiceOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CustomerServiceOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CustomerServiceOutlined", JSImport.Default)
   @js.native
   val default: CustomerServiceOutlinedIconType = js.native
-  
-  @js.native
-  trait CustomerServiceOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CustomerServiceOutlinedIconType: String = js.native
-  }
   
   type _To = CustomerServiceOutlinedIconType
   

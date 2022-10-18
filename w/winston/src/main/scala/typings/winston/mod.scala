@@ -16,22 +16,22 @@ import typings.logform.mod.TimestampOptions
 import typings.logform.mod.TransformFunction
 import typings.logform.mod.TransformableInfo
 import typings.logform.mod.UncolorizeOptions
+import typings.node.NodeJS.ReadableStream
 import typings.node.streamMod.Transform
 import typings.std.Map
 import typings.std.Number
-import typings.std.ReadableStream
-import typings.winston.configMod.AbstractConfigSetColors
-import typings.winston.configMod.AbstractConfigSetLevels
-import typings.winston.configMod.Config
-import typings.winston.transportsMod.ConsoleTransportInstance
-import typings.winston.transportsMod.ConsoleTransportOptions
-import typings.winston.transportsMod.FileTransportInstance
-import typings.winston.transportsMod.FileTransportOptions
-import typings.winston.transportsMod.HttpTransportInstance
-import typings.winston.transportsMod.HttpTransportOptions
-import typings.winston.transportsMod.StreamTransportInstance
-import typings.winston.transportsMod.StreamTransportOptions
-import typings.winston.transportsMod.Transports
+import typings.winston.libWinstonConfigMod.AbstractConfigSetColors
+import typings.winston.libWinstonConfigMod.AbstractConfigSetLevels
+import typings.winston.libWinstonConfigMod.Config
+import typings.winston.libWinstonTransportsMod.ConsoleTransportInstance
+import typings.winston.libWinstonTransportsMod.ConsoleTransportOptions
+import typings.winston.libWinstonTransportsMod.FileTransportInstance
+import typings.winston.libWinstonTransportsMod.FileTransportOptions
+import typings.winston.libWinstonTransportsMod.HttpTransportInstance
+import typings.winston.libWinstonTransportsMod.HttpTransportOptions
+import typings.winston.libWinstonTransportsMod.StreamTransportInstance
+import typings.winston.libWinstonTransportsMod.StreamTransportOptions
+import typings.winston.libWinstonTransportsMod.Transports
 import typings.winston.winstonStrings.asc
 import typings.winston.winstonStrings.desc
 import typings.winstonTransport.mod.TransportStreamOptions
@@ -352,8 +352,8 @@ object mod {
     
     def startTimer(): Profiler = js.native
     
-    def stream(): ReadableStream[Any] = js.native
-    def stream(options: Any): ReadableStream[Any] = js.native
+    def stream(): ReadableStream = js.native
+    def stream(options: Any): ReadableStream = js.native
     
     var transports: js.Array[typings.winstonTransport.mod.^] = js.native
     
@@ -596,8 +596,8 @@ object mod {
   
   @JSImport("winston", "stream")
   @js.native
-  def stream: js.Function1[/* options */ js.UndefOr[Any], ReadableStream[Any]] = js.native
-  inline def stream_=(x: js.Function1[/* options */ js.UndefOr[Any], ReadableStream[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
+  def stream: js.Function1[/* options */ js.UndefOr[Any], ReadableStream] = js.native
+  inline def stream_=(x: js.Function1[/* options */ js.UndefOr[Any], ReadableStream]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "transport")
   @js.native

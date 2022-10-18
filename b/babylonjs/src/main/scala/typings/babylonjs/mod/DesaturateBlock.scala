@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "DesaturateBlock")
 @js.native
 open class DesaturateBlock protected ()
-  extends typings.babylonjs.legacyMod.DesaturateBlock {
+  extends typings.babylonjs.legacyLegacyMod.DesaturateBlock {
   /**
     * Creates a new DesaturateBlock
     * @param name defines the block name

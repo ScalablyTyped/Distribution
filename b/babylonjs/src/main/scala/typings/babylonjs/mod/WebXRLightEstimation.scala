@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.webXRLightEstimationMod.IWebXRLightEstimationOptions
+import typings.babylonjs.xRFeaturesWebXRLightEstimationMod.IWebXRLightEstimationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXRLightEstimation")
 @js.native
 open class WebXRLightEstimation protected ()
-  extends typings.babylonjs.legacyMod.WebXRLightEstimation {
+  extends typings.babylonjs.legacyLegacyMod.WebXRLightEstimation {
   /**
     * Creates a new instance of the light estimation feature
     * @param _xrSessionManager an instance of WebXRSessionManager
     * @param options options to use when constructing this feature
     */
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     /**
     * options to use when constructing this feature
     */

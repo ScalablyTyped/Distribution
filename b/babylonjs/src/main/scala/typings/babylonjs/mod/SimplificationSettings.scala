@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SimplificationSettings")
 @js.native
 open class SimplificationSettings protected ()
-  extends typings.babylonjs.legacyMod.SimplificationSettings {
+  extends typings.babylonjs.legacyLegacyMod.SimplificationSettings {
   /**
     * Creates a SimplificationSettings
     * @param quality expected quality

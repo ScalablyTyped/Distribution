@@ -1,6 +1,6 @@
 package typings.wordpressNux
 
-import typings.wordpressNux.selectorsMod.GuideInfo
+import typings.wordpressNux.storeSelectorsMod.GuideInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

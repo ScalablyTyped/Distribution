@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Options extends StObject {
   
-  var EXPERIMENTAL: js.UndefOr[js.Any] = js.undefined
+  var EXPERIMENTAL: js.UndefOr[Any] = js.undefined
   
-  var config: js.UndefOr[js.Any] = js.undefined
+  var config: js.UndefOr[Any] = js.undefined
   
   var init: js.UndefOr[Boolean] = js.undefined
   
@@ -25,11 +25,11 @@ object Options {
   
   extension [Self <: Options](x: Self) {
     
-    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    inline def setEXPERIMENTAL(value: js.Any): Self = StObject.set(x, "EXPERIMENTAL", value.asInstanceOf[js.Any])
+    inline def setEXPERIMENTAL(value: Any): Self = StObject.set(x, "EXPERIMENTAL", value.asInstanceOf[js.Any])
     
     inline def setEXPERIMENTALUndefined: Self = StObject.set(x, "EXPERIMENTAL", js.undefined)
     

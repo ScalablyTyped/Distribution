@@ -1,6 +1,6 @@
 package typings.babylonjs.enginesIndexMod
 
-import typings.babylonjs.textureCreationOptionsMod.TextureSize
+import typings.babylonjs.materialsTexturesTextureCreationOptionsMod.TextureSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Engines/index", "RenderTargetWrapper")
 @js.native
 open class RenderTargetWrapper protected ()
-  extends typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper {
+  extends typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper {
   /**
     * Initializes the render target wrapper
     * @param isMulti true if the wrapper is a multi render target
@@ -20,6 +20,6 @@ open class RenderTargetWrapper protected ()
     isMulti: Boolean,
     isCube: Boolean,
     size: TextureSize,
-    engine: typings.babylonjs.thinEngineMod.ThinEngine
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine
   ) = this()
 }

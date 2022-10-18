@@ -1,7 +1,7 @@
 package typings.reactNativeReanimated.anon
 
 import typings.react.mod.MutableRefObject
-import typings.reactNativeReanimated.setAndForwardRefMod.ForwardedRef
+import typings.reactNativeReanimated.libTypesSetAndForwardRefMod.ForwardedRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

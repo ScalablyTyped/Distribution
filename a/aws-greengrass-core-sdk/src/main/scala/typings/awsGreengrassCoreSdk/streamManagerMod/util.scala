@@ -1,6 +1,6 @@
 package typings.awsGreengrassCoreSdk.streamManagerMod
 
-import typings.awsGreengrassCoreSdk.utilMod.FromMap
+import typings.awsGreengrassCoreSdk.streamManagerUtilMod.FromMap
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

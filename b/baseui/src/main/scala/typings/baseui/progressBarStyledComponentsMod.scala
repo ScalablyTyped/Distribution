@@ -4,12 +4,12 @@ import typings.baseui.anon.Inline
 import typings.baseui.anon.IsLeft
 import typings.baseui.anon.PathLength
 import typings.baseui.anon.Steps
-import typings.baseui.anon.`257`
+import typings.baseui.anon.`254`
 import typings.baseui.baseuiStrings.div
 import typings.baseui.baseuiStrings.path
 import typings.baseui.baseuiStrings.svg
 import typings.baseui.progressBarTypesMod.StyleProps
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,15 +42,15 @@ object progressBarStyledComponentsMod {
   
   @JSImport("baseui/progress-bar/styled-components", "StyledProgressBarRoundedSvg")
   @js.native
-  val StyledProgressBarRoundedSvg: StyletronComponent[svg, `257`] = js.native
+  val StyledProgressBarRoundedSvg: StyletronComponent[svg, `254`] = js.native
   
   @JSImport("baseui/progress-bar/styled-components", "StyledProgressBarRoundedText")
   @js.native
-  val StyledProgressBarRoundedText: StyletronComponent[div, `257`] = js.native
+  val StyledProgressBarRoundedText: StyletronComponent[div, `254`] = js.native
   
   @JSImport("baseui/progress-bar/styled-components", "StyledProgressBarRoundedTrackBackground")
   @js.native
-  val StyledProgressBarRoundedTrackBackground: StyletronComponent[path, `257`] = js.native
+  val StyledProgressBarRoundedTrackBackground: StyletronComponent[path, `254`] = js.native
   
   @JSImport("baseui/progress-bar/styled-components", "StyledProgressBarRoundedTrackForeground")
   @js.native

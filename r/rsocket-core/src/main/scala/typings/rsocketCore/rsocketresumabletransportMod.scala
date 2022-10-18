@@ -2,7 +2,6 @@ package typings.rsocketCore
 
 import typings.rsocketCore.rsocketencodingMod.Encoders
 import typings.rsocketFlowable.mod.Flowable
-import typings.rsocketTypes.reactiveSocketTypesMod.ConnectionStatus
 import typings.rsocketTypes.reactiveSocketTypesMod.DuplexConnection
 import typings.rsocketTypes.reactiveSocketTypesMod.Encodable
 import typings.rsocketTypes.reactiveSocketTypesMod.Frame
@@ -41,7 +40,7 @@ object rsocketresumabletransportMod {
       * Implementations must publish values per the comments on ConnectionStatus.
       */
     /* CompleteClass */
-    override def connectionStatus(): Flowable[ConnectionStatus] = js.native
+    override def connectionStatus(): Any = js.native
     
     /**
       * Returns a stream of all `Frame`s received on this connection.
@@ -55,8 +54,10 @@ object rsocketresumabletransportMod {
       *   not should throw if `receive` is called more than once.
       */
     /* CompleteClass */
-    override def receive(): Flowable[Frame] = js.native
+    override def receive(): Any = js.native
     
+    /* CompleteClass */
+    override def send(frames: Flowable[Frame]): Unit = js.native
     /**
       * Send all the `input` frames on this connection.
       *
@@ -66,7 +67,9 @@ object rsocketresumabletransportMod {
       *   `receive()` Publisher.
       */
     /* CompleteClass */
-    override def send(input: Flowable[Frame]): Unit = js.native
+    override def send(
+      input: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Flowable<Frame> */ Any
+    ): Unit = js.native
     
     /**
       * Send a single frame on the connection.
@@ -102,19 +105,27 @@ object rsocketresumabletransportMod {
   
   trait RSocketResumableTransport
     extends StObject
-       with DuplexConnection
+       with DuplexConnection {
+    
+    def send(frames: Flowable[Frame]): Unit
+  }
   object RSocketResumableTransport {
     
     inline def apply(
       close: () => Unit,
       connect: () => Unit,
-      connectionStatus: () => Flowable[ConnectionStatus],
-      receive: () => Flowable[Frame],
+      connectionStatus: () => Any,
+      receive: () => Any,
       send: Flowable[Frame] => Unit,
       sendOne: Frame => Unit
     ): RSocketResumableTransport = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), connect = js.Any.fromFunction0(connect), connectionStatus = js.Any.fromFunction0(connectionStatus), receive = js.Any.fromFunction0(receive), send = js.Any.fromFunction1(send), sendOne = js.Any.fromFunction1(sendOne))
       __obj.asInstanceOf[RSocketResumableTransport]
+    }
+    
+    extension [Self <: RSocketResumableTransport](x: Self) {
+      
+      inline def setSend(value: Flowable[Frame] => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
   }
 }

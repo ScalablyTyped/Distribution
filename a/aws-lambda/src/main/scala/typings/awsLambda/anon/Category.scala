@@ -2,7 +2,7 @@ package typings.awsLambda.anon
 
 import typings.awsLambda.awsLambdaStrings.AWS
 import typings.awsLambda.awsLambdaStrings.ThirdParty
-import typings.awsLambda.codepipelineCloudwatchActionMod.CodePipelineActionCategory
+import typings.awsLambda.triggerCodepipelineCloudwatchActionMod.CodePipelineActionCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

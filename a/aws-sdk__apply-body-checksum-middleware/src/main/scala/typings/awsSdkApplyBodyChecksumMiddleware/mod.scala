@@ -1,9 +1,9 @@
 package typings.awsSdkApplyBodyChecksumMiddleware
 
 import typings.awsSdkApplyBodyChecksumMiddleware.anon.Instantiable
-import typings.awsSdkTypes.cryptoMod.StreamHasher
-import typings.awsSdkTypes.middlewareMod.BuildMiddleware
-import typings.awsSdkTypes.utilMod.Encoder
+import typings.awsSdkTypes.distTypesCryptoMod.StreamHasher
+import typings.awsSdkTypes.distTypesMiddlewareMod.BuildMiddleware
+import typings.awsSdkTypes.distTypesUtilMod.Encoder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -9,7 +9,7 @@ object coreDelayMod {
   /* was `typeof core.delay` */
   inline def apply(msec: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(msec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("core-js/library/core/delay", JSImport.Namespace)
+  @JSImport("core-js/core/delay", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
 }

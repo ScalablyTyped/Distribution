@@ -14,10 +14,10 @@ open class PlaySoundAction protected ()
     * @param sound defines the sound to play
     * @param condition defines the trigger related conditions
     */
-  def this(triggerOptions: Any, sound: typings.babylonjs.soundMod.Sound) = this()
+  def this(triggerOptions: Any, sound: typings.babylonjs.audioSoundMod.Sound) = this()
   def this(
     triggerOptions: Any,
-    sound: typings.babylonjs.soundMod.Sound,
-    condition: typings.babylonjs.conditionMod.Condition
+    sound: typings.babylonjs.audioSoundMod.Sound,
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
 }

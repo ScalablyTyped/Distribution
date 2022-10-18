@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsDateMod.DateProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/Date", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Date", JSImport.Default)
   @js.native
   val default: FC[DateProps] = js.native
-  
-  trait DateProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object DateProps {
-    
-    inline def apply(): DateProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DateProps]
-    }
-    
-    extension [Self <: DateProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[DateProps]
   

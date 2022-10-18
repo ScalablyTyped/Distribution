@@ -22,7 +22,7 @@ open class CustomPropertyCollection ()
   var context: ClientRequestContext = js.native
   
   /**
-    *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+    *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
     * isNullObject property.
     */
   /* CompleteClass */

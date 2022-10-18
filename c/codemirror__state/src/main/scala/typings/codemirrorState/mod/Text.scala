@@ -10,9 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
 The data structure for documents. @nonabstract
 */
-@JSImport("@codemirror/state", "Text")
 @js.native
-abstract class Text ()
+trait Text
   extends StObject
      with Iterable[String] {
   
@@ -103,25 +102,4 @@ abstract class Text ()
     deserialized again via [`Text.of`](https://codemirror.net/6/docs/ref/#state.Text^of)).
     */
   def toJSON(): js.Array[String] = js.native
-}
-object Text {
-  
-  @JSImport("@codemirror/state", "Text")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    The empty document.
-    */
-  /* static member */
-  @JSImport("@codemirror/state", "Text.empty")
-  @js.native
-  def empty: Text = js.native
-  inline def empty_=(x: Text): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
-  
-  /**
-    Create a `Text` instance for the given array of lines.
-    */
-  /* static member */
-  inline def of(text: js.Array[String]): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(text.asInstanceOf[js.Any]).asInstanceOf[Text]
 }

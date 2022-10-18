@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait WorkItemServiceState extends StObject {
   
   /** Other data returned by the service, specific to the particular worker harness. */
   var harnessData: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkItemServiceState & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -64,9 +61,7 @@ object WorkItemServiceState {
     inline def setCompleteWorkStatusUndefined: Self = StObject.set(x, "completeWorkStatus", js.undefined)
     
     inline def setHarnessData(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkItemServiceState & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "harnessData", value.asInstanceOf[js.Any])
     
     inline def setHarnessDataUndefined: Self = StObject.set(x, "harnessData", js.undefined)

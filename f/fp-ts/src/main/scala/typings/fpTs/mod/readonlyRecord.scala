@@ -2,44 +2,43 @@ package typings.fpTs.mod
 
 import typings.fpTs.anon.Fn27
 import typings.fpTs.anon.FnCallAFa
-import typings.fpTs.applicativeMod.Applicative
-import typings.fpTs.applicativeMod.Applicative1
-import typings.fpTs.applicativeMod.Applicative2
-import typings.fpTs.applicativeMod.Applicative2C
-import typings.fpTs.applicativeMod.Applicative3
-import typings.fpTs.applicativeMod.Applicative3C
-import typings.fpTs.applicativeMod.Applicative4
-import typings.fpTs.compactableMod.Compactable1
-import typings.fpTs.eitherMod.Either_
-import typings.fpTs.eqMod.Eq
-import typings.fpTs.filterableMod.Filterable1
-import typings.fpTs.filterableWithIndexMod.FilterableWithIndex1
-import typings.fpTs.filterableWithIndexMod.PredicateWithIndex
-import typings.fpTs.filterableWithIndexMod.RefinementWithIndex
-import typings.fpTs.foldableMod.Foldable1
-import typings.fpTs.foldableMod.Foldable2
-import typings.fpTs.foldableMod.Foldable3
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndex1
-import typings.fpTs.functorMod.Functor1
-import typings.fpTs.functorWithIndexMod.FunctorWithIndex1
-import typings.fpTs.magmaMod.Magma
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.optionMod.Option_
-import typings.fpTs.ordMod.Ord_
-import typings.fpTs.predicateMod.Predicate
-import typings.fpTs.readonlyRecordMod.ReadonlyRecord_
-import typings.fpTs.refinementMod.Refinement
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.separatedMod.Separated_
-import typings.fpTs.showMod.Show
-import typings.fpTs.traversableMod.Traversable1
-import typings.fpTs.traversableWithIndexMod.TraversableWithIndex1
-import typings.fpTs.unfoldableMod.Unfoldable
-import typings.fpTs.unfoldableMod.Unfoldable1
-import typings.fpTs.witherableMod.PipeableWilt1
-import typings.fpTs.witherableMod.PipeableWither1
-import typings.fpTs.witherableMod.Witherable1
-import typings.std.Exclude
+import typings.fpTs.libApplicativeMod.Applicative
+import typings.fpTs.libApplicativeMod.Applicative1
+import typings.fpTs.libApplicativeMod.Applicative2
+import typings.fpTs.libApplicativeMod.Applicative2C
+import typings.fpTs.libApplicativeMod.Applicative3
+import typings.fpTs.libApplicativeMod.Applicative3C
+import typings.fpTs.libApplicativeMod.Applicative4
+import typings.fpTs.libCompactableMod.Compactable1
+import typings.fpTs.libEitherMod.Either_
+import typings.fpTs.libEqMod.Eq
+import typings.fpTs.libFilterableMod.Filterable1
+import typings.fpTs.libFilterableWithIndexMod.FilterableWithIndex1
+import typings.fpTs.libFilterableWithIndexMod.PredicateWithIndex
+import typings.fpTs.libFilterableWithIndexMod.RefinementWithIndex
+import typings.fpTs.libFoldableMod.Foldable1
+import typings.fpTs.libFoldableMod.Foldable2
+import typings.fpTs.libFoldableMod.Foldable3
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex1
+import typings.fpTs.libFunctorMod.Functor1
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndex1
+import typings.fpTs.libMagmaMod.Magma
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libOptionMod.Option_
+import typings.fpTs.libOrdMod.Ord_
+import typings.fpTs.libPredicateMod.Predicate
+import typings.fpTs.libReadonlyRecordMod.ReadonlyRecord_
+import typings.fpTs.libRefinementMod.Refinement
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libSeparatedMod.Separated_
+import typings.fpTs.libShowMod.Show
+import typings.fpTs.libTraversableMod.Traversable1
+import typings.fpTs.libTraversableWithIndexMod.TraversableWithIndex1
+import typings.fpTs.libUnfoldableMod.Unfoldable
+import typings.fpTs.libUnfoldableMod.Unfoldable1
+import typings.fpTs.libWitherableMod.PipeableWilt1
+import typings.fpTs.libWitherableMod.PipeableWither1
+import typings.fpTs.libWitherableMod.Witherable1
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -53,39 +52,39 @@ object readonlyRecord {
   
   @JSImport("fp-ts", "readonlyRecord.Compactable")
   @js.native
-  val Compactable: Compactable1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  val Compactable: Compactable1[typings.fpTs.libReadonlyRecordMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyRecord.Filterable")
   @js.native
-  val Filterable: Filterable1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  val Filterable: Filterable1[typings.fpTs.libReadonlyRecordMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyRecord.FilterableWithIndex")
   @js.native
-  val FilterableWithIndex: FilterableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String] = js.native
+  val FilterableWithIndex: FilterableWithIndex1[typings.fpTs.libReadonlyRecordMod.URI, String] = js.native
   
   @JSImport("fp-ts", "readonlyRecord.Foldable")
   @js.native
-  val Foldable: Foldable1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  val Foldable: Foldable1[typings.fpTs.libReadonlyRecordMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyRecord.FoldableWithIndex")
   @js.native
-  val FoldableWithIndex: FoldableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String] = js.native
+  val FoldableWithIndex: FoldableWithIndex1[typings.fpTs.libReadonlyRecordMod.URI, String] = js.native
   
   @JSImport("fp-ts", "readonlyRecord.Functor")
   @js.native
-  val Functor: Functor1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  val Functor: Functor1[typings.fpTs.libReadonlyRecordMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyRecord.FunctorWithIndex")
   @js.native
-  val FunctorWithIndex: FunctorWithIndex1[typings.fpTs.readonlyRecordMod.URI, String] = js.native
+  val FunctorWithIndex: FunctorWithIndex1[typings.fpTs.libReadonlyRecordMod.URI, String] = js.native
   
   @JSImport("fp-ts", "readonlyRecord.Traversable")
   @js.native
-  val Traversable: Traversable1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  val Traversable: Traversable1[typings.fpTs.libReadonlyRecordMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyRecord.TraversableWithIndex")
   @js.native
-  val TraversableWithIndex: TraversableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String] = js.native
+  val TraversableWithIndex: TraversableWithIndex1[typings.fpTs.libReadonlyRecordMod.URI, String] = js.native
   
   @JSImport("fp-ts", "readonlyRecord.URI")
   @js.native
@@ -93,7 +92,7 @@ object readonlyRecord {
   
   @JSImport("fp-ts", "readonlyRecord.Witherable")
   @js.native
-  val Witherable: Witherable1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  val Witherable: Witherable1[typings.fpTs.libReadonlyRecordMod.URI] = js.native
   
   inline def collect(O: Ord_[String]): js.Function1[
     /* f */ js.Function2[/* k */ String, /* a */ Any, Any], 
@@ -108,10 +107,16 @@ object readonlyRecord {
   
   inline def deleteAt[K /* <: String */](k: K): js.Function1[
     /* r */ ReadonlyRecord_[String, Any], 
-    ReadonlyRecord_[(Exclude[String, K]) | String, Any]
+    ReadonlyRecord_[
+      /* import warning: importer.ImportType#apply Failed type conversion: string extends K ? string : std.Exclude<string, K> */ js.Any, 
+      Any
+    ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAt")(k.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* r */ ReadonlyRecord_[String, Any], 
-    ReadonlyRecord_[(Exclude[String, K]) | String, Any]
+    ReadonlyRecord_[
+      /* import warning: importer.ImportType#apply Failed type conversion: string extends K ? string : std.Exclude<string, K> */ js.Any, 
+      Any
+    ]
   ]]
   
   inline def difference[A](second: Record[String, A]): js.Function1[/* first */ Record[String, A], Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ Record[String, A], Record[String, A]]]
@@ -184,7 +189,7 @@ object readonlyRecord {
   
   inline def fromEntries[A](fa: js.Array[js.Tuple2[String, A]]): Record[String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEntries")(fa.asInstanceOf[js.Any]).asInstanceOf[Record[String, A]]
   
-  inline def fromFoldable[F, A](M: Magma[A], F: typings.fpTs.foldableMod.Foldable[F]): js.Function1[
+  inline def fromFoldable[F, A](M: Magma[A], F: typings.fpTs.libFoldableMod.Foldable[F]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, [string, A]> */ /* fka */ Any, 
     ReadonlyRecord_[String, A]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFoldable")(M.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
@@ -213,7 +218,7 @@ object readonlyRecord {
     ReadonlyRecord_[String, A]
   ]]
   
-  inline def fromFoldableMap[F, B](M: Magma[B], F: typings.fpTs.foldableMod.Foldable[F]): js.Function2[
+  inline def fromFoldableMap[F, B](M: Magma[B], F: typings.fpTs.libFoldableMod.Foldable[F]): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 
     /* f */ js.Function1[/* a */ Any, js.Tuple2[String, B]], 
     ReadonlyRecord_[String, B]
@@ -256,9 +261,9 @@ object readonlyRecord {
   
   inline def getEq[K /* <: String */, A](E: Eq[A]): Eq[ReadonlyRecord_[K, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEq")(E.asInstanceOf[js.Any]).asInstanceOf[Eq[ReadonlyRecord_[K, A]]]
   
-  inline def getFoldable(O: Ord_[String]): Foldable1[typings.fpTs.readonlyRecordMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFoldable")(O.asInstanceOf[js.Any]).asInstanceOf[Foldable1[typings.fpTs.readonlyRecordMod.URI]]
+  inline def getFoldable(O: Ord_[String]): Foldable1[typings.fpTs.libReadonlyRecordMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFoldable")(O.asInstanceOf[js.Any]).asInstanceOf[Foldable1[typings.fpTs.libReadonlyRecordMod.URI]]
   
-  inline def getFoldableWithIndex(O: Ord_[String]): FoldableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFoldableWithIndex")(O.asInstanceOf[js.Any]).asInstanceOf[FoldableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String]]
+  inline def getFoldableWithIndex(O: Ord_[String]): FoldableWithIndex1[typings.fpTs.libReadonlyRecordMod.URI, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFoldableWithIndex")(O.asInstanceOf[js.Any]).asInstanceOf[FoldableWithIndex1[typings.fpTs.libReadonlyRecordMod.URI, String]]
   
   inline def getIntersectionSemigroup[A](S: Semigroup[A]): Semigroup[Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIntersectionSemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[Semigroup[Record[String, A]]]
   
@@ -267,15 +272,15 @@ object readonlyRecord {
   inline def getShow(O: Ord_[String]): js.Function1[/* S */ Show[Any], Show[ReadonlyRecord_[String, Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getShow")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* S */ Show[Any], Show[ReadonlyRecord_[String, Any]]]]
   inline def getShow[A](S: Show[A]): Show[ReadonlyRecord_[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getShow")(S.asInstanceOf[js.Any]).asInstanceOf[Show[ReadonlyRecord_[String, A]]]
   
-  inline def getTraversable(O: Ord_[String]): Traversable1[typings.fpTs.readonlyRecordMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTraversable")(O.asInstanceOf[js.Any]).asInstanceOf[Traversable1[typings.fpTs.readonlyRecordMod.URI]]
+  inline def getTraversable(O: Ord_[String]): Traversable1[typings.fpTs.libReadonlyRecordMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTraversable")(O.asInstanceOf[js.Any]).asInstanceOf[Traversable1[typings.fpTs.libReadonlyRecordMod.URI]]
   
-  inline def getTraversableWithIndex(O: Ord_[String]): TraversableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTraversableWithIndex")(O.asInstanceOf[js.Any]).asInstanceOf[TraversableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String]]
+  inline def getTraversableWithIndex(O: Ord_[String]): TraversableWithIndex1[typings.fpTs.libReadonlyRecordMod.URI, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTraversableWithIndex")(O.asInstanceOf[js.Any]).asInstanceOf[TraversableWithIndex1[typings.fpTs.libReadonlyRecordMod.URI, String]]
   
   inline def getUnionMonoid[A](S: Semigroup[A]): Monoid[Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnionMonoid")(S.asInstanceOf[js.Any]).asInstanceOf[Monoid[Record[String, A]]]
   
   inline def getUnionSemigroup[A](S: Semigroup[A]): Semigroup[Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnionSemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[Semigroup[Record[String, A]]]
   
-  inline def getWitherable(O: Ord_[String]): Witherable1[typings.fpTs.readonlyRecordMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWitherable")(O.asInstanceOf[js.Any]).asInstanceOf[Witherable1[typings.fpTs.readonlyRecordMod.URI]]
+  inline def getWitherable(O: Ord_[String]): Witherable1[typings.fpTs.libReadonlyRecordMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWitherable")(O.asInstanceOf[js.Any]).asInstanceOf[Witherable1[typings.fpTs.libReadonlyRecordMod.URI]]
   
   inline def has[K /* <: String */](k: String, r: Record[K, Any]): /* is K */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(k.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[/* is K */ Boolean]
   
@@ -356,15 +361,31 @@ object readonlyRecord {
   
   inline def pop[K /* <: String */](k: K): js.Function1[
     /* r */ ReadonlyRecord_[String, Any], 
-    Option_[js.Tuple2[Any, ReadonlyRecord_[(Exclude[String, K]) | String, Any]]]
+    Option_[
+      js.Tuple2[
+        Any, 
+        ReadonlyRecord_[
+          /* import warning: importer.ImportType#apply Failed type conversion: string extends K ? string : std.Exclude<string, K> */ js.Any, 
+          Any
+        ]
+      ]
+    ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(k.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* r */ ReadonlyRecord_[String, Any], 
-    Option_[js.Tuple2[Any, ReadonlyRecord_[(Exclude[String, K]) | String, Any]]]
+    Option_[
+      js.Tuple2[
+        Any, 
+        ReadonlyRecord_[
+          /* import warning: importer.ImportType#apply Failed type conversion: string extends K ? string : std.Exclude<string, K> */ js.Any, 
+          Any
+        ]
+      ]
+    ]
   ]]
   
   @JSImport("fp-ts", "readonlyRecord.readonlyRecord")
   @js.native
-  val readonlyRecord: (FunctorWithIndex1[typings.fpTs.readonlyRecordMod.URI, String]) & (FoldableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String]) & (FilterableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String]) & (TraversableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String]) & Witherable1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  val readonlyRecord: (FunctorWithIndex1[typings.fpTs.libReadonlyRecordMod.URI, String]) & (FoldableWithIndex1[typings.fpTs.libReadonlyRecordMod.URI, String]) & (FilterableWithIndex1[typings.fpTs.libReadonlyRecordMod.URI, String]) & (TraversableWithIndex1[typings.fpTs.libReadonlyRecordMod.URI, String]) & Witherable1[typings.fpTs.libReadonlyRecordMod.URI] = js.native
   
   inline def reduce(O: Ord_[String]): js.Function2[
     /* b */ Any, 
@@ -814,11 +835,11 @@ object readonlyRecord {
   
   @JSImport("fp-ts", "readonlyRecord.wilt")
   @js.native
-  val wilt: PipeableWilt1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  val wilt: PipeableWilt1[typings.fpTs.libReadonlyRecordMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyRecord.wither")
   @js.native
-  val wither: PipeableWither1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  val wither: PipeableWither1[typings.fpTs.libReadonlyRecordMod.URI] = js.native
   
   /* augmented module */
   object HKTAugmentingMod {

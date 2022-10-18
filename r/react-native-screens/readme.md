@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-screens
 
-Typings are for version 3.17.0
+Typings are for version 3.18.2
 
 ## Library description:
 Native navigation primitives for your React Native app.

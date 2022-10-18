@@ -1,6 +1,6 @@
 package typings.guacamoleCommonJs
 
-import typings.guacamoleCommonJs.clientMod.Client.ExportLayer
+import typings.guacamoleCommonJs.libClientMod.Client.ExportLayer
 import typings.std.CanvasFillRule
 import typings.std.Path2D
 import org.scalablytyped.runtime.StObject

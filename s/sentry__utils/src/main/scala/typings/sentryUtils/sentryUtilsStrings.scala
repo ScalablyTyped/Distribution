@@ -1,8 +1,8 @@
 package typings.sentryUtils
 
-import typings.sentryUtils.instrumentMod.InstrumentHandlerType
-import typings.sentryUtils.loggerMod.ConsoleLevel
-import typings.sentryUtils.requestdataMod.TransactionNamingScheme
+import typings.sentryUtils.typesInstrumentMod.InstrumentHandlerType
+import typings.sentryUtils.typesLoggerMod.ConsoleLevel
+import typings.sentryUtils.typesRequestdataMod.TransactionNamingScheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.lineReader
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,21 +31,21 @@ trait LineReader extends StObject {
     errCb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): LineReader = js.native
   def eachLine(
-    file: ReadableStream[Any],
+    file: ReadableStream,
     cb: js.Function3[/* line */ String, /* last */ Boolean, /* continueCb */ js.UndefOr[js.Function], Unit]
   ): LineReader = js.native
   def eachLine(
-    file: ReadableStream[Any],
+    file: ReadableStream,
     cb: js.Function3[/* line */ String, /* last */ Boolean, /* continueCb */ js.UndefOr[js.Function], Unit],
     errCb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): LineReader = js.native
   def eachLine(
-    file: ReadableStream[Any],
+    file: ReadableStream,
     options: LineReaderOptions,
     cb: js.Function3[/* line */ String, /* last */ Boolean, /* continueCb */ js.UndefOr[js.Function], Unit]
   ): LineReader = js.native
   def eachLine(
-    file: ReadableStream[Any],
+    file: ReadableStream,
     options: LineReaderOptions,
     cb: js.Function3[/* line */ String, /* last */ Boolean, /* continueCb */ js.UndefOr[js.Function], Unit],
     errCb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
@@ -58,9 +58,9 @@ trait LineReader extends StObject {
     options: LineReaderOptions,
     cb: js.Function2[/* err */ js.Error, /* reader */ Reader, Unit]
   ): Unit = js.native
-  def open(file: ReadableStream[Any], cb: js.Function2[/* err */ js.Error, /* reader */ Reader, Unit]): Unit = js.native
+  def open(file: ReadableStream, cb: js.Function2[/* err */ js.Error, /* reader */ Reader, Unit]): Unit = js.native
   def open(
-    file: ReadableStream[Any],
+    file: ReadableStream,
     options: LineReaderOptions,
     cb: js.Function2[/* err */ js.Error, /* reader */ Reader, Unit]
   ): Unit = js.native

@@ -1,12 +1,12 @@
 package typings.storybookPreviewWeb.anon
 
-import typings.storybookPreviewWeb.previewMod.MaybePromise
-import typings.storybookStore.ts39TypesMod.ModuleExports
-import typings.storybookStore.ts39TypesMod.ModuleImportFn
-import typings.storybookStore.ts39TypesMod.Path
-import typings.storybookStore.ts39TypesMod.PromiseLike
-import typings.storybookStore.ts39TypesMod.StoryIndex
-import typings.storybookStore.ts39TypesMod.WebProjectAnnotations
+import typings.storybookPreviewWeb.distTs3Dot9PreviewMod.MaybePromise
+import typings.storybookStore.distTs3Dot9TypesMod.ModuleExports
+import typings.storybookStore.distTs3Dot9TypesMod.ModuleImportFn
+import typings.storybookStore.distTs3Dot9TypesMod.Path
+import typings.storybookStore.distTs3Dot9TypesMod.PromiseLike
+import typings.storybookStore.distTs3Dot9TypesMod.StoryIndex
+import typings.storybookStore.distTs3Dot9TypesMod.WebProjectAnnotations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

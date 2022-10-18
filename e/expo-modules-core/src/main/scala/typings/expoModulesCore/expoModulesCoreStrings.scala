@@ -1,6 +1,6 @@
 package typings.expoModulesCore
 
-import typings.expoModulesCore.platformMod._PlatformSelectOSType
+import typings.expoModulesCore.buildPlatformMod._PlatformSelectOSType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +12,6 @@ object expoModulesCoreStrings {
     extends StObject
        with _PlatformSelectOSType
   inline def default: default = "default".asInstanceOf[default]
-  
-  @js.native
-  sealed trait PlatformSelect extends StObject
-  inline def PlatformSelect: PlatformSelect = "PlatformSelect".asInstanceOf[PlatformSelect]
   
   @js.native
   sealed trait android extends StObject

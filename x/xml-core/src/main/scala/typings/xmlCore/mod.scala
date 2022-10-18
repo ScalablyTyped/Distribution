@@ -4,16 +4,16 @@ import typings.std.BufferSource
 import typings.std.Document
 import typings.std.Element
 import typings.std.Node
-import typings.xmlCore.errorMod.XE
-import typings.xmlCore.typesMod.AssocArray
-import typings.xmlCore.typesMod.IConverter
-import typings.xmlCore.typesMod.XmlAttributeType
-import typings.xmlCore.typesMod.XmlBufferEncoding
-import typings.xmlCore.typesMod.XmlChildElementType
-import typings.xmlCore.typesMod.XmlContentType
-import typings.xmlCore.typesMod.XmlElementType
-import typings.xmlCore.typesMod.XmlNamespace
-import typings.xmlCore.utilsMod.SelectNodes
+import typings.xmlCore.distTypesErrorMod.XE
+import typings.xmlCore.distTypesTypesMod.AssocArray
+import typings.xmlCore.distTypesTypesMod.IConverter
+import typings.xmlCore.distTypesTypesMod.XmlAttributeType
+import typings.xmlCore.distTypesTypesMod.XmlBufferEncoding
+import typings.xmlCore.distTypesTypesMod.XmlChildElementType
+import typings.xmlCore.distTypesTypesMod.XmlContentType
+import typings.xmlCore.distTypesTypesMod.XmlElementType
+import typings.xmlCore.distTypesTypesMod.XmlNamespace
+import typings.xmlCore.distTypesUtilsMod.SelectNodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,14 +31,14 @@ object mod {
   @JSImport("xml-core", "Collection")
   @js.native
   open class Collection[I] ()
-    extends typings.xmlCore.collectionMod.Collection[I] {
+    extends typings.xmlCore.distTypesCollectionMod.Collection[I] {
     def this(items: js.Array[I]) = this()
   }
   
   @JSImport("xml-core", "Convert")
   @js.native
   open class Convert ()
-    extends typings.xmlCore.convertMod.Convert
+    extends typings.xmlCore.distTypesConvertMod.Convert
   /* static members */
   object Convert {
     
@@ -122,7 +122,7 @@ object mod {
   @JSImport("xml-core", "NamespaceManager")
   @js.native
   open class NamespaceManager ()
-    extends typings.xmlCore.namespaceManagerMod.NamespaceManager {
+    extends typings.xmlCore.distTypesNamespaceManagerMod.NamespaceManager {
     def this(items: js.Array[XmlNamespace]) = this()
   }
   
@@ -143,45 +143,45 @@ object mod {
   object XE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.xmlCore.errorMod.XE & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.xmlCore.distTypesErrorMod.XE & Double] = js.native
     
-    /* 16 */ val ALGORITHM_NOT_SUPPORTED: typings.xmlCore.errorMod.XE.ALGORITHM_NOT_SUPPORTED & Double = js.native
+    /* 16 */ val ALGORITHM_NOT_SUPPORTED: typings.xmlCore.distTypesErrorMod.XE.ALGORITHM_NOT_SUPPORTED & Double = js.native
     
-    /* 17 */ val ALGORITHM_WRONG_NAME: typings.xmlCore.errorMod.XE.ALGORITHM_WRONG_NAME & Double = js.native
+    /* 17 */ val ALGORITHM_WRONG_NAME: typings.xmlCore.distTypesErrorMod.XE.ALGORITHM_WRONG_NAME & Double = js.native
     
-    /* 11 */ val ATTRIBUTE_MISSING: typings.xmlCore.errorMod.XE.ATTRIBUTE_MISSING & Double = js.native
+    /* 11 */ val ATTRIBUTE_MISSING: typings.xmlCore.distTypesErrorMod.XE.ATTRIBUTE_MISSING & Double = js.native
     
-    /* 4 */ val COLLECTION_LIMIT: typings.xmlCore.errorMod.XE.COLLECTION_LIMIT & Double = js.native
+    /* 4 */ val COLLECTION_LIMIT: typings.xmlCore.distTypesErrorMod.XE.COLLECTION_LIMIT & Double = js.native
     
-    /* 12 */ val CONTENT_MISSING: typings.xmlCore.errorMod.XE.CONTENT_MISSING & Double = js.native
+    /* 12 */ val CONTENT_MISSING: typings.xmlCore.distTypesErrorMod.XE.CONTENT_MISSING & Double = js.native
     
-    /* 8 */ val CONVERTER_UNSUPPORTED: typings.xmlCore.errorMod.XE.CONVERTER_UNSUPPORTED & Double = js.native
+    /* 8 */ val CONVERTER_UNSUPPORTED: typings.xmlCore.distTypesErrorMod.XE.CONVERTER_UNSUPPORTED & Double = js.native
     
-    /* 13 */ val CRYPTOGRAPHIC: typings.xmlCore.errorMod.XE.CRYPTOGRAPHIC & Double = js.native
+    /* 13 */ val CRYPTOGRAPHIC: typings.xmlCore.distTypesErrorMod.XE.CRYPTOGRAPHIC & Double = js.native
     
-    /* 14 */ val CRYPTOGRAPHIC_NO_MODULE: typings.xmlCore.errorMod.XE.CRYPTOGRAPHIC_NO_MODULE & Double = js.native
+    /* 14 */ val CRYPTOGRAPHIC_NO_MODULE: typings.xmlCore.distTypesErrorMod.XE.CRYPTOGRAPHIC_NO_MODULE & Double = js.native
     
-    /* 15 */ val CRYPTOGRAPHIC_UNKNOWN_TRANSFORM: typings.xmlCore.errorMod.XE.CRYPTOGRAPHIC_UNKNOWN_TRANSFORM & Double = js.native
+    /* 15 */ val CRYPTOGRAPHIC_UNKNOWN_TRANSFORM: typings.xmlCore.distTypesErrorMod.XE.CRYPTOGRAPHIC_UNKNOWN_TRANSFORM & Double = js.native
     
-    /* 3 */ val DECORATOR_NULL_PARAM: typings.xmlCore.errorMod.XE.DECORATOR_NULL_PARAM & Double = js.native
+    /* 3 */ val DECORATOR_NULL_PARAM: typings.xmlCore.distTypesErrorMod.XE.DECORATOR_NULL_PARAM & Double = js.native
     
-    /* 9 */ val ELEMENT_MALFORMED: typings.xmlCore.errorMod.XE.ELEMENT_MALFORMED & Double = js.native
+    /* 9 */ val ELEMENT_MALFORMED: typings.xmlCore.distTypesErrorMod.XE.ELEMENT_MALFORMED & Double = js.native
     
-    /* 10 */ val ELEMENT_MISSING: typings.xmlCore.errorMod.XE.ELEMENT_MISSING & Double = js.native
+    /* 10 */ val ELEMENT_MISSING: typings.xmlCore.distTypesErrorMod.XE.ELEMENT_MISSING & Double = js.native
     
-    /* 5 */ val METHOD_NOT_IMPLEMENTED: typings.xmlCore.errorMod.XE.METHOD_NOT_IMPLEMENTED & Double = js.native
+    /* 5 */ val METHOD_NOT_IMPLEMENTED: typings.xmlCore.distTypesErrorMod.XE.METHOD_NOT_IMPLEMENTED & Double = js.native
     
-    /* 6 */ val METHOD_NOT_SUPPORTED: typings.xmlCore.errorMod.XE.METHOD_NOT_SUPPORTED & Double = js.native
+    /* 6 */ val METHOD_NOT_SUPPORTED: typings.xmlCore.distTypesErrorMod.XE.METHOD_NOT_SUPPORTED & Double = js.native
     
-    /* 0 */ val NONE: typings.xmlCore.errorMod.XE.NONE & Double = js.native
+    /* 0 */ val NONE: typings.xmlCore.distTypesErrorMod.XE.NONE & Double = js.native
     
-    /* 2 */ val NULL_PARAM: typings.xmlCore.errorMod.XE.NULL_PARAM & Double = js.native
+    /* 2 */ val NULL_PARAM: typings.xmlCore.distTypesErrorMod.XE.NULL_PARAM & Double = js.native
     
-    /* 1 */ val NULL_REFERENCE: typings.xmlCore.errorMod.XE.NULL_REFERENCE & Double = js.native
+    /* 1 */ val NULL_REFERENCE: typings.xmlCore.distTypesErrorMod.XE.NULL_REFERENCE & Double = js.native
     
-    /* 7 */ val PARAM_REQUIRED: typings.xmlCore.errorMod.XE.PARAM_REQUIRED & Double = js.native
+    /* 7 */ val PARAM_REQUIRED: typings.xmlCore.distTypesErrorMod.XE.PARAM_REQUIRED & Double = js.native
     
-    /* 18 */ val XML_EXCEPTION: typings.xmlCore.errorMod.XE.XML_EXCEPTION & Double = js.native
+    /* 18 */ val XML_EXCEPTION: typings.xmlCore.distTypesErrorMod.XE.XML_EXCEPTION & Double = js.native
   }
   
   inline def XmlAttribute[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlAttribute")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
@@ -200,8 +200,8 @@ object mod {
   
   @JSImport("xml-core", "XmlCollection")
   @js.native
-  open class XmlCollection[I /* <: typings.xmlCore.xmlObjectMod.XmlObject */] ()
-    extends typings.xmlCore.xmlCollectionMod.XmlCollection[I] {
+  open class XmlCollection[I /* <: typings.xmlCore.distTypesXmlObjectMod.XmlObject */] ()
+    extends typings.xmlCore.distTypesXmlCollectionMod.XmlCollection[I] {
     def this(properties: js.Object) = this()
   }
   /* static members */
@@ -225,7 +225,7 @@ object mod {
   @JSImport("xml-core", "XmlError")
   @js.native
   open class XmlError protected ()
-    extends typings.xmlCore.errorMod.XmlError {
+    extends typings.xmlCore.distTypesErrorMod.XmlError {
     def this(code: XE, args: Any*) = this()
   }
   
@@ -234,43 +234,43 @@ object mod {
   object XmlNodeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.xmlCore.xmlMod.XmlNodeType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.xmlCore.distTypesXmlMod.XmlNodeType & Double] = js.native
     
-    /* 2 */ val Attribute: typings.xmlCore.xmlMod.XmlNodeType.Attribute & Double = js.native
+    /* 2 */ val Attribute: typings.xmlCore.distTypesXmlMod.XmlNodeType.Attribute & Double = js.native
     
-    /* 4 */ val CDATA: typings.xmlCore.xmlMod.XmlNodeType.CDATA & Double = js.native
+    /* 4 */ val CDATA: typings.xmlCore.distTypesXmlMod.XmlNodeType.CDATA & Double = js.native
     
-    /* 8 */ val Comment: typings.xmlCore.xmlMod.XmlNodeType.Comment & Double = js.native
+    /* 8 */ val Comment: typings.xmlCore.distTypesXmlMod.XmlNodeType.Comment & Double = js.native
     
-    /* 9 */ val Document: typings.xmlCore.xmlMod.XmlNodeType.Document & Double = js.native
+    /* 9 */ val Document: typings.xmlCore.distTypesXmlMod.XmlNodeType.Document & Double = js.native
     
-    /* 11 */ val DocumentFragment: typings.xmlCore.xmlMod.XmlNodeType.DocumentFragment & Double = js.native
+    /* 11 */ val DocumentFragment: typings.xmlCore.distTypesXmlMod.XmlNodeType.DocumentFragment & Double = js.native
     
-    /* 10 */ val DocumentType: typings.xmlCore.xmlMod.XmlNodeType.DocumentType & Double = js.native
+    /* 10 */ val DocumentType: typings.xmlCore.distTypesXmlMod.XmlNodeType.DocumentType & Double = js.native
     
-    /* 1 */ val Element: typings.xmlCore.xmlMod.XmlNodeType.Element & Double = js.native
+    /* 1 */ val Element: typings.xmlCore.distTypesXmlMod.XmlNodeType.Element & Double = js.native
     
-    /* 15 */ val EndElement: typings.xmlCore.xmlMod.XmlNodeType.EndElement & Double = js.native
+    /* 15 */ val EndElement: typings.xmlCore.distTypesXmlMod.XmlNodeType.EndElement & Double = js.native
     
-    /* 16 */ val EndEntity: typings.xmlCore.xmlMod.XmlNodeType.EndEntity & Double = js.native
+    /* 16 */ val EndEntity: typings.xmlCore.distTypesXmlMod.XmlNodeType.EndEntity & Double = js.native
     
-    /* 6 */ val Entity: typings.xmlCore.xmlMod.XmlNodeType.Entity & Double = js.native
+    /* 6 */ val Entity: typings.xmlCore.distTypesXmlMod.XmlNodeType.Entity & Double = js.native
     
-    /* 5 */ val EntityReference: typings.xmlCore.xmlMod.XmlNodeType.EntityReference & Double = js.native
+    /* 5 */ val EntityReference: typings.xmlCore.distTypesXmlMod.XmlNodeType.EntityReference & Double = js.native
     
-    /* 0 */ val None: typings.xmlCore.xmlMod.XmlNodeType.None & Double = js.native
+    /* 0 */ val None: typings.xmlCore.distTypesXmlMod.XmlNodeType.None & Double = js.native
     
-    /* 12 */ val Notation: typings.xmlCore.xmlMod.XmlNodeType.Notation & Double = js.native
+    /* 12 */ val Notation: typings.xmlCore.distTypesXmlMod.XmlNodeType.Notation & Double = js.native
     
-    /* 7 */ val ProcessingInstruction: typings.xmlCore.xmlMod.XmlNodeType.ProcessingInstruction & Double = js.native
+    /* 7 */ val ProcessingInstruction: typings.xmlCore.distTypesXmlMod.XmlNodeType.ProcessingInstruction & Double = js.native
     
-    /* 14 */ val SignificantWhitespace: typings.xmlCore.xmlMod.XmlNodeType.SignificantWhitespace & Double = js.native
+    /* 14 */ val SignificantWhitespace: typings.xmlCore.distTypesXmlMod.XmlNodeType.SignificantWhitespace & Double = js.native
     
-    /* 3 */ val Text: typings.xmlCore.xmlMod.XmlNodeType.Text & Double = js.native
+    /* 3 */ val Text: typings.xmlCore.distTypesXmlMod.XmlNodeType.Text & Double = js.native
     
-    /* 13 */ val Whitespace: typings.xmlCore.xmlMod.XmlNodeType.Whitespace & Double = js.native
+    /* 13 */ val Whitespace: typings.xmlCore.distTypesXmlMod.XmlNodeType.Whitespace & Double = js.native
     
-    /* 17 */ val XmlDeclaration: typings.xmlCore.xmlMod.XmlNodeType.XmlDeclaration & Double = js.native
+    /* 17 */ val XmlDeclaration: typings.xmlCore.distTypesXmlMod.XmlNodeType.XmlDeclaration & Double = js.native
   }
   
   @JSImport("xml-core", "XmlNumberConverter")
@@ -280,7 +280,7 @@ object mod {
   @JSImport("xml-core", "XmlObject")
   @js.native
   open class XmlObject ()
-    extends typings.xmlCore.xmlObjectMod.XmlObject {
+    extends typings.xmlCore.distTypesXmlObjectMod.XmlObject {
     def this(properties: js.Object) = this()
   }
   /* static members */
@@ -330,8 +330,8 @@ object mod {
     inline def GetFirstChild(node: Node, localName: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
     inline def GetFirstChild(node: Node, localName: String, nameSpace: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any], nameSpace.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
     
-    inline def LoadXml[T /* <: typings.xmlCore.xmlObjectMod.XmlObject */](param: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadXml")(param.asInstanceOf[js.Any]).asInstanceOf[T]
-    inline def LoadXml[T /* <: typings.xmlCore.xmlObjectMod.XmlObject */](param: Element): T = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadXml")(param.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def LoadXml[T /* <: typings.xmlCore.distTypesXmlObjectMod.XmlObject */](param: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadXml")(param.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def LoadXml[T /* <: typings.xmlCore.distTypesXmlObjectMod.XmlObject */](param: Element): T = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadXml")(param.asInstanceOf[js.Any]).asInstanceOf[T]
     
     @JSImport("xml-core", "XmlObject.attributes")
     @js.native

@@ -1,8 +1,8 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.anon.PartialAxis
-import typings.plotlyJs.anon.PartialGaugeBar
-import typings.plotlyJs.anon.PartialThreshold
+import typings.plotlyJs.anon.PartialAxisCalendar
+import typings.plotlyJs.anon.PartialGaugeBarColor
+import typings.plotlyJs.anon.PartialThresholdLine
 import typings.plotlyJs.plotlyJsStrings.angular
 import typings.plotlyJs.plotlyJsStrings.bullet
 import org.scalablytyped.runtime.StObject
@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Gauge extends StObject {
   
-  var axis: PartialAxis
+  var axis: PartialAxisCalendar
   
-  var bar: PartialGaugeBar
+  var bar: PartialGaugeBarColor
   
   var bgcolor: Color
   
@@ -25,19 +25,19 @@ trait Gauge extends StObject {
   
   var steps: js.Array[typings.plotlyJs.anon.Color]
   
-  var threshold: PartialThreshold
+  var threshold: PartialThresholdLine
 }
 object Gauge {
   
   inline def apply(
-    axis: PartialAxis,
-    bar: PartialGaugeBar,
+    axis: PartialAxisCalendar,
+    bar: PartialGaugeBarColor,
     bgcolor: Color,
     bordercolor: Color,
     borderwidth: Double,
     shape: angular | bullet,
     steps: js.Array[typings.plotlyJs.anon.Color],
-    threshold: PartialThreshold
+    threshold: PartialThresholdLine
   ): Gauge = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], bar = bar.asInstanceOf[js.Any], bgcolor = bgcolor.asInstanceOf[js.Any], bordercolor = bordercolor.asInstanceOf[js.Any], borderwidth = borderwidth.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[Gauge]
@@ -45,9 +45,9 @@ object Gauge {
   
   extension [Self <: Gauge](x: Self) {
     
-    inline def setAxis(value: PartialAxis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: PartialAxisCalendar): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    inline def setBar(value: PartialGaugeBar): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    inline def setBar(value: PartialGaugeBarColor): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
     inline def setBgcolor(value: Color): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
@@ -65,6 +65,6 @@ object Gauge {
     
     inline def setStepsVarargs(value: typings.plotlyJs.anon.Color*): Self = StObject.set(x, "steps", js.Array(value*))
     
-    inline def setThreshold(value: PartialThreshold): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: PartialThresholdLine): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait WriteRequest extends StObject {
   
   /** Labels associated with this write request. */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.WriteRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The ID of the write stream to resume. This may only be set in the first message. When left empty, a new write stream will be created. */
@@ -41,9 +38,7 @@ object WriteRequest {
   extension [Self <: WriteRequest](x: Self) {
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.WriteRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

@@ -1,42 +1,35 @@
 package typings.nextAuth.anon
 
+import typings.nextAuth.adaptersMod.AdapterUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Account extends StObject {
   
-  var Account: js.UndefOr[Model] = js.undefined
+  var account: typings.nextAuth.coreTypesMod.Account
   
-  var Session: js.UndefOr[Model] = js.undefined
+  var profile: typings.nextAuth.coreTypesMod.User | AdapterUser
   
-  var User: js.UndefOr[Model] = js.undefined
-  
-  var VerificationRequest: js.UndefOr[Model] = js.undefined
+  var user: typings.nextAuth.coreTypesMod.User | AdapterUser
 }
 object Account {
   
-  inline def apply(): Account = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    account: typings.nextAuth.coreTypesMod.Account,
+    profile: typings.nextAuth.coreTypesMod.User | AdapterUser,
+    user: typings.nextAuth.coreTypesMod.User | AdapterUser
+  ): Account = {
+    val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
   
   extension [Self <: Account](x: Self) {
     
-    inline def setAccount(value: Model): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: typings.nextAuth.coreTypesMod.Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    inline def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
+    inline def setProfile(value: typings.nextAuth.coreTypesMod.User | AdapterUser): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    inline def setSession(value: Model): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
-    
-    inline def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
-    
-    inline def setUser(value: Model): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
-    
-    inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
-    
-    inline def setVerificationRequest(value: Model): Self = StObject.set(x, "VerificationRequest", value.asInstanceOf[js.Any])
-    
-    inline def setVerificationRequestUndefined: Self = StObject.set(x, "VerificationRequest", js.undefined)
+    inline def setUser(value: typings.nextAuth.coreTypesMod.User | AdapterUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

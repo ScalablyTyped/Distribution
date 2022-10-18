@@ -1,10 +1,8 @@
 package typings.antvG2plot.anon
 
+import typings.antvG2.libChartLayoutPaddingCalMod.PaddingCalCtor
+import typings.antvG2.libChartViewMod.View
 import typings.antvG2.libInterfaceMod.SyncViewPaddingFn
-import typings.antvG2.paddingCalMod.PaddingCalCtor
-import typings.antvG2.viewMod.View
-import typings.antvG2plot.animationMod.Animation
-import typings.antvG2plot.annotationMod.Annotation
 import typings.antvG2plot.antvG2plotStrings.`node-link`
 import typings.antvG2plot.antvG2plotStrings.auto
 import typings.antvG2plot.antvG2plotStrings.canvas
@@ -14,20 +12,22 @@ import typings.antvG2plot.antvG2plotStrings.justify
 import typings.antvG2plot.antvG2plotStrings.left
 import typings.antvG2plot.antvG2plotStrings.right
 import typings.antvG2plot.antvG2plotStrings.svg
-import typings.antvG2plot.attrMod.ColorAttr
-import typings.antvG2plot.attrMod.PatternAttr
-import typings.antvG2plot.attrMod.ShapeStyle
-import typings.antvG2plot.attrMod.StyleAttr
-import typings.antvG2plot.interactionMod.Interaction
-import typings.antvG2plot.layoutMod.NodeDepth
-import typings.antvG2plot.layoutMod.NodeSort
-import typings.antvG2plot.metaMod.Meta
-import typings.antvG2plot.sankeyTypesMod.NodeLinkData
-import typings.antvG2plot.scrollbarMod.Scrollbar
-import typings.antvG2plot.sliderMod.Slider
-import typings.antvG2plot.tooltipMod.Tooltip
-import typings.antvG2plot.typesCommonMod.Datum
-import typings.antvG2plot.utilsPatternMod.PatternOption
+import typings.antvG2plot.libPlotsSankeyLayoutMod.NodeDepth
+import typings.antvG2plot.libPlotsSankeyLayoutMod.NodeSort
+import typings.antvG2plot.libPlotsSankeyTypesMod.NodeLinkData
+import typings.antvG2plot.libTypesAnimationMod.Animation
+import typings.antvG2plot.libTypesAnnotationMod.Annotation
+import typings.antvG2plot.libTypesAttrMod.ColorAttr
+import typings.antvG2plot.libTypesAttrMod.PatternAttr
+import typings.antvG2plot.libTypesAttrMod.ShapeStyle
+import typings.antvG2plot.libTypesAttrMod.StyleAttr
+import typings.antvG2plot.libTypesCommonMod.Datum
+import typings.antvG2plot.libTypesInteractionMod.Interaction
+import typings.antvG2plot.libTypesMetaMod.Meta
+import typings.antvG2plot.libTypesScrollbarMod.Scrollbar
+import typings.antvG2plot.libTypesSliderMod.Slider
+import typings.antvG2plot.libTypesTooltipMod.Tooltip
+import typings.antvG2plot.libUtilsPatternMod.PatternOption
 import typings.std.CanvasPattern
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -47,7 +47,7 @@ trait PartialSankeyOptions extends StObject {
   
   var color: js.UndefOr[ColorAttr] = js.undefined
   
-  var data: js.UndefOr[typings.antvG2plot.typesCommonMod.Data | NodeLinkData] = js.undefined
+  var data: js.UndefOr[typings.antvG2plot.libTypesCommonMod.Data | NodeLinkData] = js.undefined
   
   var dataType: js.UndefOr[`node-link` | detail] = js.undefined
   
@@ -55,7 +55,7 @@ trait PartialSankeyOptions extends StObject {
   
   var edgeInteractions: js.UndefOr[js.Array[Interaction]] = js.undefined
   
-  var edgeState: js.UndefOr[typings.antvG2plot.stateMod.State] = js.undefined
+  var edgeState: js.UndefOr[typings.antvG2plot.libTypesStateMod.State] = js.undefined
   
   var edgeStyle: js.UndefOr[StyleAttr] = js.undefined
   
@@ -63,9 +63,9 @@ trait PartialSankeyOptions extends StObject {
   
   var interactions: js.UndefOr[js.Array[Interaction]] = js.undefined
   
-  var label: js.UndefOr[typings.antvG2plot.typesLabelMod.Label] = js.undefined
+  var label: js.UndefOr[typings.antvG2plot.libTypesLabelMod.Label] = js.undefined
   
-  var legend: js.UndefOr[typings.antvG2plot.typesLegendMod.Legend] = js.undefined
+  var legend: js.UndefOr[typings.antvG2plot.libTypesLegendMod.Legend] = js.undefined
   
   var limitInPlot: js.UndefOr[Boolean] = js.undefined
   
@@ -89,7 +89,7 @@ trait PartialSankeyOptions extends StObject {
   
   var nodeSort: js.UndefOr[NodeSort] = js.undefined
   
-  var nodeState: js.UndefOr[typings.antvG2plot.stateMod.State] = js.undefined
+  var nodeState: js.UndefOr[typings.antvG2plot.libTypesStateMod.State] = js.undefined
   
   var nodeStyle: js.UndefOr[StyleAttr] = js.undefined
   
@@ -113,7 +113,7 @@ trait PartialSankeyOptions extends StObject {
   
   var sourceField: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[typings.antvG2plot.stateMod.State] = js.undefined
+  var state: js.UndefOr[typings.antvG2plot.libTypesStateMod.State] = js.undefined
   
   var supportCSSTransform: js.UndefOr[Boolean] = js.undefined
   
@@ -168,7 +168,7 @@ object PartialSankeyOptions {
     
     inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value*))
     
-    inline def setData(value: typings.antvG2plot.typesCommonMod.Data | NodeLinkData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: typings.antvG2plot.libTypesCommonMod.Data | NodeLinkData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataType(value: `node-link` | detail): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
@@ -190,7 +190,7 @@ object PartialSankeyOptions {
     
     inline def setEdgeInteractionsVarargs(value: Interaction*): Self = StObject.set(x, "edgeInteractions", js.Array(value*))
     
-    inline def setEdgeState(value: typings.antvG2plot.stateMod.State): Self = StObject.set(x, "edgeState", value.asInstanceOf[js.Any])
+    inline def setEdgeState(value: typings.antvG2plot.libTypesStateMod.State): Self = StObject.set(x, "edgeState", value.asInstanceOf[js.Any])
     
     inline def setEdgeStateUndefined: Self = StObject.set(x, "edgeState", js.undefined)
     
@@ -210,11 +210,11 @@ object PartialSankeyOptions {
     
     inline def setInteractionsVarargs(value: Interaction*): Self = StObject.set(x, "interactions", js.Array(value*))
     
-    inline def setLabel(value: typings.antvG2plot.typesLabelMod.Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: typings.antvG2plot.libTypesLabelMod.Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setLegend(value: typings.antvG2plot.typesLegendMod.Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: typings.antvG2plot.libTypesLegendMod.Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
@@ -264,7 +264,7 @@ object PartialSankeyOptions {
     
     inline def setNodeSortUndefined: Self = StObject.set(x, "nodeSort", js.undefined)
     
-    inline def setNodeState(value: typings.antvG2plot.stateMod.State): Self = StObject.set(x, "nodeState", value.asInstanceOf[js.Any])
+    inline def setNodeState(value: typings.antvG2plot.libTypesStateMod.State): Self = StObject.set(x, "nodeState", value.asInstanceOf[js.Any])
     
     inline def setNodeStateUndefined: Self = StObject.set(x, "nodeState", js.undefined)
     
@@ -320,7 +320,7 @@ object PartialSankeyOptions {
     
     inline def setSourceFieldUndefined: Self = StObject.set(x, "sourceField", js.undefined)
     
-    inline def setState(value: typings.antvG2plot.stateMod.State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: typings.antvG2plot.libTypesStateMod.State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     

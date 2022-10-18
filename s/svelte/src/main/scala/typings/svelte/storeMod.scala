@@ -1,13 +1,19 @@
 package typings.svelte
 
-import org.scalablytyped.runtime.TopLevel
+import typings.svelte.typesRuntimeStoreMod.Readable_
+import typings.svelte.typesRuntimeStoreMod.StartStopNotifier
+import typings.svelte.typesRuntimeStoreMod.Stores
+import typings.svelte.typesRuntimeStoreMod.StoresValues
+import typings.svelte.typesRuntimeStoreMod.Unsubscriber
+import typings.svelte.typesRuntimeStoreMod.Writable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object storeMod {
   
-  @JSImport("svelte/types/runtime/store", JSImport.Namespace)
+  @JSImport("svelte/store", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -31,6 +37,8 @@ object storeMod {
     initial_value: T
   ): Readable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("derived")(stores.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initial_value.asInstanceOf[js.Any])).asInstanceOf[Readable_[T]]
   
+  inline def get[T](store: Readable_[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(store.asInstanceOf[js.Any]).asInstanceOf[T]
+  
   inline def readable[T](): Readable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")().asInstanceOf[Readable_[T]]
   inline def readable[T](value: T): Readable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")(value.asInstanceOf[js.Any]).asInstanceOf[Readable_[T]]
   inline def readable[T](value: T, start: StartStopNotifier[T]): Readable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("readable")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Readable_[T]]
@@ -40,53 +48,4 @@ object storeMod {
   inline def writable[T](value: T): Writable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")(value.asInstanceOf[js.Any]).asInstanceOf[Writable_[T]]
   inline def writable[T](value: T, start: StartStopNotifier[T]): Writable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writable")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Writable_[T]]
   inline def writable[T](value: Unit, start: StartStopNotifier[T]): Writable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writable")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Writable_[T]]
-  
-  /** Cleanup logic callback. */
-  type Invalidator[T] = js.Function1[/* value */ js.UndefOr[T], Unit]
-  
-  @js.native
-  trait Readable_[T] extends StObject {
-    
-    /**
-      * Subscribe on value changes.
-      * @param run subscription callback
-      * @param invalidate cleanup callback
-      */
-    def subscribe(run: Subscriber[T]): Unsubscriber = js.native
-    def subscribe(run: Subscriber[T], invalidate: Invalidator[T]): Unsubscriber = js.native
-  }
-  
-  type StartStopNotifier[T] = js.Function1[/* set */ Subscriber[T], Unsubscriber | Unit]
-  
-  /** One or more `Readable`s. */
-  type Stores = Readable_[Any] | Array[Readable_[Any]] | js.Array[Readable_[Any]]
-  
-  /** One or more values from `Readable` stores. */
-  type StoresValues[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K] extends svelte.svelte/types/runtime/store.Readable<infer U>? any : never}
-    */ typings.svelte.svelteStrings.StoresValues & TopLevel[T]
-  
-  type Subscriber[T] = js.Function1[/* value */ T, Unit]
-  
-  type Unsubscriber = js.Function0[Unit]
-  
-  type Updater[T] = js.Function1[/* value */ T, T]
-  
-  @js.native
-  trait Writable_[T]
-    extends StObject
-       with Readable_[T] {
-    
-    /**
-      * Set value and inform subscribers.
-      * @param value to set
-      */
-    def set(value: T): Unit = js.native
-    
-    /**
-      * Update value using callback and inform subscribers.
-      * @param updater callback
-      */
-    def update(updater: Updater[T]): Unit = js.native
-  }
 }

@@ -1,10 +1,10 @@
 package typings.expoGl
 
 import typings.expoGl.anon.MsaaSamples
-import typings.expoGl.glviewMod.GLViewProps
-import typings.expoGl.glviewTypesMod.ExpoWebGLRenderingContext
-import typings.expoGl.glviewTypesMod.GLSnapshot
-import typings.expoGl.glviewTypesMod.SnapshotOptions
+import typings.expoGl.buildGlviewDottypesMod.ExpoWebGLRenderingContext
+import typings.expoGl.buildGlviewDottypesMod.GLSnapshot
+import typings.expoGl.buildGlviewDottypesMod.SnapshotOptions
+import typings.expoGl.buildGlviewMod.GLViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,25 +16,25 @@ object mod {
   object GLLoggingOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.expoGl.glviewTypesMod.GLLoggingOption & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.expoGl.buildGlviewDottypesMod.GLLoggingOption & Double] = js.native
     
-    /* 15 */ val ALL: typings.expoGl.glviewTypesMod.GLLoggingOption.ALL & Double = js.native
+    /* 15 */ val ALL: typings.expoGl.buildGlviewDottypesMod.GLLoggingOption.ALL & Double = js.native
     
-    /* 0 */ val DISABLED: typings.expoGl.glviewTypesMod.GLLoggingOption.DISABLED & Double = js.native
+    /* 0 */ val DISABLED: typings.expoGl.buildGlviewDottypesMod.GLLoggingOption.DISABLED & Double = js.native
     
-    /* 2 */ val GET_ERRORS: typings.expoGl.glviewTypesMod.GLLoggingOption.GET_ERRORS & Double = js.native
+    /* 2 */ val GET_ERRORS: typings.expoGl.buildGlviewDottypesMod.GLLoggingOption.GET_ERRORS & Double = js.native
     
-    /* 1 */ val METHOD_CALLS: typings.expoGl.glviewTypesMod.GLLoggingOption.METHOD_CALLS & Double = js.native
+    /* 1 */ val METHOD_CALLS: typings.expoGl.buildGlviewDottypesMod.GLLoggingOption.METHOD_CALLS & Double = js.native
     
-    /* 4 */ val RESOLVE_CONSTANTS: typings.expoGl.glviewTypesMod.GLLoggingOption.RESOLVE_CONSTANTS & Double = js.native
+    /* 4 */ val RESOLVE_CONSTANTS: typings.expoGl.buildGlviewDottypesMod.GLLoggingOption.RESOLVE_CONSTANTS & Double = js.native
     
-    /* 8 */ val TRUNCATE_STRINGS: typings.expoGl.glviewTypesMod.GLLoggingOption.TRUNCATE_STRINGS & Double = js.native
+    /* 8 */ val TRUNCATE_STRINGS: typings.expoGl.buildGlviewDottypesMod.GLLoggingOption.TRUNCATE_STRINGS & Double = js.native
   }
   
   @JSImport("expo-gl", "GLView")
   @js.native
   open class GLView protected ()
-    extends typings.expoGl.glviewMod.GLView {
+    extends typings.expoGl.buildGlviewMod.GLView {
     def this(props: GLViewProps) = this()
     /**
       * @deprecated

@@ -10,10 +10,10 @@ import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.NO
 import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.OR
 import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.SPECIFIC_ATTRIBUTES
 import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TOTAL
-import typings.awsSdkClientDynamodbBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbBrowser.typesAttributeValueMod.AttributeValue
 import typings.awsSdkClientDynamodbBrowser.typesConditionMod.Condition
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientDynamodbBrowser.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

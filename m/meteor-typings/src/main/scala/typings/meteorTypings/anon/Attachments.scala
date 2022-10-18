@@ -1,6 +1,6 @@
 package typings.meteorTypings.anon
 
-import typings.meteorTypings.emailMod.MailComposer
+import typings.meteorTypings.meteorEmailMod.MailComposer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -25,9 +25,9 @@ object global {
     inline def AlphaNumeric(message: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AlphaNumeric")(message.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
     inline def AlphaNumeric(message: MessageHandler[typings.decorum.mod.PatternValidator]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AlphaNumeric")(message.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
     
-    @JSGlobal("decorum.BaseValidator")
+    /* note: abstract class */ @JSGlobal("decorum.BaseValidator")
     @js.native
-    abstract class BaseValidator protected ()
+    open class BaseValidator protected ()
       extends typings.decorum.mod.BaseValidator {
       /**
         * Initializes the {BaseValidator}

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-node", "GetBucketWebsiteCommand")
 @js.native
 open class GetBucketWebsiteCommand protected ()
-  extends typings.awsSdkClientS3Node.getBucketWebsiteCommandMod.GetBucketWebsiteCommand {
+  extends typings.awsSdkClientS3Node.commandsGetBucketWebsiteCommandMod.GetBucketWebsiteCommand {
   def this(input: GetBucketWebsiteInput) = this()
 }

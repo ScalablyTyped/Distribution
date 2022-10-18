@@ -1,19 +1,19 @@
 
 # Scala.js typings for urllib
 
-Typings are for version 2.36.1
+Typings are for version 3.3.1
 
 ## Library description:
-Help in opening URLs (mostly HTTP) in a complex world — basic and digest authentication, redirections, cookies and more.
+Help in opening URLs (mostly HTTP) in a complex world — basic and digest authentication, redirections, cookies and more. Base undici fetch API.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | urllib |
-| Keywords           | urllib, http, urlopen, curl, wget, request, https |
-| # releases         | 17 |
-| # dependents       | 542 |
-| # downloads        | 2876142 |
-| # stars            | 26 |
+| Keywords           | urllib, http, urlopen, curl, wget, request, https, undici, fetch |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 901025.6666666666 |
+| # stars            | 679.0 |
 
 ## Links
 - [Homepage](https://github.com/node-modules/urllib)

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates the threading model of a Windows Runtime component. */
-@JSGlobal("Windows.Foundation.Metadata.ThreadingAttribute")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.Metadata.ThreadingAttribute")
 @js.native
-abstract class ThreadingAttribute ()
+open class ThreadingAttribute ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Metadata.ThreadingAttribute

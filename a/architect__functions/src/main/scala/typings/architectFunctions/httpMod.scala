@@ -1,8 +1,8 @@
 package typings.architectFunctions
 
-import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyEvent
-import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyResult
 import typings.awsLambda.handlerMod.Context
+import typings.awsLambda.triggerApiGatewayProxyMod.APIGatewayProxyEvent
+import typings.awsLambda.triggerApiGatewayProxyMod.APIGatewayProxyResult
 import typings.express.mod.Application_
 import typings.std.Record
 import org.scalablytyped.runtime.StObject

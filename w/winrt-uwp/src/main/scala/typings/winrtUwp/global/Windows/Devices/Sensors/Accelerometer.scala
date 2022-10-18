@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an accelerometer sensor. */
-@JSGlobal("Windows.Devices.Sensors.Accelerometer")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.Accelerometer")
 @js.native
-abstract class Accelerometer ()
+open class Accelerometer ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.Accelerometer
 object Accelerometer {

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object shouldPolyfillMod {
   
-  @JSImport("@formatjs/intl-listformat/lib/should-polyfill", JSImport.Namespace)
+  @JSImport("@formatjs/intl-listformat/should-polyfill", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

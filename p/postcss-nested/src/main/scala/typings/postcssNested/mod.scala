@@ -17,8 +17,8 @@ object mod extends Shortcut {
   trait Options extends StObject {
     
     /**
-      * By default, plugin will bubble only `@media` and `@supports` at-rules.
-      * You can add your custom at-rules to this list by this option.
+      * By default, plugin will bubble only `@media`, `@supports` and `@layer`
+      * at-rules. Use this option to add your custom at-rules to this list.
       */
     var bubble: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -28,6 +28,13 @@ object mod extends Shortcut {
       * to preserve them.
       */
     var preserveEmpty: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The plugin supports the SCSS custom at-rule `@at-root` which breaks
+      * rule blocks out of their nested position. If you want, you can choose
+      * a new custom name for this rule in your code.
+      */
+    var rootRuleName: js.UndefOr[String] = js.undefined
     
     /**
       * By default, plugin will unwrap only `@font-face`, `@keyframes`,
@@ -54,6 +61,10 @@ object mod extends Shortcut {
       inline def setPreserveEmpty(value: Boolean): Self = StObject.set(x, "preserveEmpty", value.asInstanceOf[js.Any])
       
       inline def setPreserveEmptyUndefined: Self = StObject.set(x, "preserveEmpty", js.undefined)
+      
+      inline def setRootRuleName(value: String): Self = StObject.set(x, "rootRuleName", value.asInstanceOf[js.Any])
+      
+      inline def setRootRuleNameUndefined: Self = StObject.set(x, "rootRuleName", js.undefined)
       
       inline def setUnwrap(value: js.Array[String]): Self = StObject.set(x, "unwrap", value.asInstanceOf[js.Any])
       

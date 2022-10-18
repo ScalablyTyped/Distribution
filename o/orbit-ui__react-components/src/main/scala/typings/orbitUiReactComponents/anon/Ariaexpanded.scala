@@ -1,9 +1,9 @@
 package typings.orbitUiReactComponents.anon
 
+import typings.orbitUiReactComponents.distSharedSrcUseMergedRefsMod.MergedRef
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.dialog
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.listbox
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.menu
-import typings.orbitUiReactComponents.useMergedRefsMod.MergedRef
 import typings.react.mod.KeyboardEvent
 import typings.std.Element
 import typings.std.HTMLElement

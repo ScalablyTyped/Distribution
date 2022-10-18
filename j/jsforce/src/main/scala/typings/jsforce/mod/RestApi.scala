@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsforce", "RestApi")
+/* note: abstract class */ @JSImport("jsforce", "RestApi")
 @js.native
-abstract class RestApi ()
+open class RestApi ()
   extends typings.jsforce.connectionMod.RestApi

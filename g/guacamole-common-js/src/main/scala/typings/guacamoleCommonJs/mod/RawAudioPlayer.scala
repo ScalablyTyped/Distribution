@@ -1,6 +1,6 @@
 package typings.guacamoleCommonJs.mod
 
-import typings.guacamoleCommonJs.guacCommonMod.Mimetype
+import typings.guacamoleCommonJs.libGuacCommonMod.Mimetype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-common-js", "RawAudioPlayer")
 @js.native
 open class RawAudioPlayer protected ()
-  extends typings.guacamoleCommonJs.rawAudioPlayerMod.RawAudioPlayer {
+  extends typings.guacamoleCommonJs.libRawAudioPlayerMod.RawAudioPlayer {
   /**
     * @param stream The Guacamole.InputStream to read audio data from.
     *
     * @param mimetype The mimetype of the audio data in the provided stream, which must be a
     * "audio/L8" or "audio/L16" mimetype with necessary parameters, such as: "audio/L16;rate=44100,channels=2".
     */
-  def this(stream: typings.guacamoleCommonJs.inputStreamMod.InputStream, mimetype: Mimetype) = this()
+  def this(stream: typings.guacamoleCommonJs.libInputStreamMod.InputStream, mimetype: Mimetype) = this()
 }
 /* static members */
 object RawAudioPlayer {

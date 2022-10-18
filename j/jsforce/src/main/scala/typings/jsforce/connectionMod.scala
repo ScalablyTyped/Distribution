@@ -1,17 +1,19 @@
 package typings.jsforce
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsforce.analyticsMod.Analytics
 import typings.jsforce.anon.Body
 import typings.jsforce.anon.Call
 import typings.jsforce.anon.Clear
 import typings.jsforce.anon.Customdomain
 import typings.jsforce.anon.PartialPartialOAuth2Optio
 import typings.jsforce.anon.Picture
-import typings.jsforce.apexMod.Apex
+import typings.jsforce.apiAnalyticsMod.Analytics
+import typings.jsforce.apiApexMod.Apex
+import typings.jsforce.apiChatterMod.Chatter
+import typings.jsforce.apiMetadataMod.Metadata
+import typings.jsforce.apiSoapMod.SoapApi
 import typings.jsforce.bulkMod.Bulk
 import typings.jsforce.cacheMod.Cache
-import typings.jsforce.chatterMod.Chatter
 import typings.jsforce.describeResultMod.BatchDescribeSObjectOptions
 import typings.jsforce.describeResultMod.DescribeGlobalResult
 import typings.jsforce.describeResultMod.DescribeSObjectOptions
@@ -20,7 +22,6 @@ import typings.jsforce.httpApiMod.HttpApiOptions
 import typings.jsforce.jsforceStrings.refresh
 import typings.jsforce.limitsInfoMod.LimitInfo
 import typings.jsforce.limitsInfoMod.LimitsInfo
-import typings.jsforce.metadataMod.Metadata
 import typings.jsforce.mod.OAuth2
 import typings.jsforce.mod.Streaming
 import typings.jsforce.queryMod.ExecuteOptions
@@ -29,7 +30,6 @@ import typings.jsforce.queryMod.QueryResult
 import typings.jsforce.recordMod.Record
 import typings.jsforce.recordResultMod.RecordResult
 import typings.jsforce.salesforceObjectMod.SObject
-import typings.jsforce.soapMod.SoapApi
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
 import org.scalablytyped.runtime.StObject
@@ -38,9 +38,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object connectionMod {
   
-  @JSImport("jsforce/connection", "BaseConnection")
+  /* note: abstract class */ @JSImport("jsforce/connection", "BaseConnection")
   @js.native
-  abstract class BaseConnection () extends EventEmitter {
+  open class BaseConnection () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     def _baseUrl(): String = js.native
@@ -592,9 +592,9 @@ object connectionMod {
     var version: String = js.native
   }
   
-  @JSImport("jsforce/connection", "RestApi")
+  /* note: abstract class */ @JSImport("jsforce/connection", "RestApi")
   @js.native
-  abstract class RestApi () extends StObject {
+  open class RestApi () extends StObject {
     
     def del(path: String, options: js.Object, callback: js.Function0[js.Object]): js.Promise[js.Object] = js.native
     

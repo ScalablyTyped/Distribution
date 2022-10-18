@@ -467,7 +467,7 @@ object mod {
     var tableValues: js.UndefOr[Double | String] = js.undefined
     
     var tagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.reactPointable.reactPointableStrings.a, typings.reactPointable.reactPointableStrings.abbr, typings.reactPointable.reactPointableStrings.address */ Any
       ] = js.undefined
     
     var target: js.UndefOr[String] = js.undefined
@@ -1380,7 +1380,9 @@ object mod {
       
       inline def setTableValuesUndefined: Self = StObject.set(x, "tableValues", js.undefined)
       
-      inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.reactPointable.reactPointableStrings.a, typings.reactPointable.reactPointableStrings.abbr, typings.reactPointable.reactPointableStrings.address */ Any
+      ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       

@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryDirectionPage extends StObject {
   
-  var path: Discussionnumber
+  var path: OrgString
   
   var query: DirectionPage
 }
 object QueryDirectionPage {
   
-  inline def apply(path: Discussionnumber, query: DirectionPage): QueryDirectionPage = {
+  inline def apply(path: OrgString, query: DirectionPage): QueryDirectionPage = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryDirectionPage]
   }
   
   extension [Self <: QueryDirectionPage](x: Self) {
     
-    inline def setPath(value: Discussionnumber): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: OrgString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: DirectionPage): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

@@ -1,9 +1,9 @@
 package typings.materialChips
 
+import typings.materialChips.actionConstantsMod.MDCChipActionType
+import typings.materialChips.actionTypesMod.MDCChipActionInteractionEventDetail
+import typings.materialChips.actionTypesMod.MDCChipActionNavigationEventDetail
 import typings.materialChips.chipConstantsMod.MDCChipAnimation
-import typings.materialChips.constantsMod.MDCChipActionType
-import typings.materialChips.typesMod.MDCChipActionInteractionEventDetail
-import typings.materialChips.typesMod.MDCChipActionNavigationEventDetail
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

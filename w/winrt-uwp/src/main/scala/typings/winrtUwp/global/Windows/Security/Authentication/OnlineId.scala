@@ -40,9 +40,9 @@ object OnlineId {
        with typings.winrtUwp.Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator
   
   /** Contains the ticket that is obtained after the user authenticates to this app or has provided consent to access user data stored in Live. */
-  @JSGlobal("Windows.Security.Authentication.OnlineId.OnlineIdServiceTicket")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.OnlineId.OnlineIdServiceTicket")
   @js.native
-  abstract class OnlineIdServiceTicket ()
+  open class OnlineIdServiceTicket ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Authentication.OnlineId.OnlineIdServiceTicket {
     
@@ -87,9 +87,9 @@ object OnlineId {
   }
   
   /** Allows users to sign out of your app. */
-  @JSGlobal("Windows.Security.Authentication.OnlineId.SignOutUserOperation")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.OnlineId.SignOutUserOperation")
   @js.native
-  abstract class SignOutUserOperation ()
+  open class SignOutUserOperation ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Authentication.OnlineId.SignOutUserOperation {
     
@@ -127,9 +127,9 @@ object OnlineId {
   }
   
   /** Asynchronously gets the user's identity and corresponding tickets and properties. */
-  @JSGlobal("Windows.Security.Authentication.OnlineId.UserAuthenticationOperation")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.OnlineId.UserAuthenticationOperation")
   @js.native
-  abstract class UserAuthenticationOperation ()
+  open class UserAuthenticationOperation ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Authentication.OnlineId.UserAuthenticationOperation {
     
@@ -173,9 +173,9 @@ object OnlineId {
   }
   
   /** Contains the ID, tickets, and other information associated with a user. */
-  @JSGlobal("Windows.Security.Authentication.OnlineId.UserIdentity")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Authentication.OnlineId.UserIdentity")
   @js.native
-  abstract class UserIdentity ()
+  open class UserIdentity ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Authentication.OnlineId.UserIdentity {
     

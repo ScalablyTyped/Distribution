@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param power Defines the power of the function
   */
 open class PowerEase ()
-  extends typings.babylonjs.legacyMod.PowerEase {
+  extends typings.babylonjs.legacyLegacyMod.PowerEase {
   def this(/** Defines the power of the function */
   power: Double) = this()
 }

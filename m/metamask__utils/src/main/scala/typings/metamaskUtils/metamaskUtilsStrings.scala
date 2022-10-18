@@ -1,7 +1,7 @@
 package typings.metamaskUtils
 
-import typings.metamaskUtils.jsonMod.JsonRpcError
-import typings.metamaskUtils.jsonMod.JsonRpcFailure
+import typings.metamaskUtils.distJsonMod.JsonRpcError
+import typings.metamaskUtils.distJsonMod.JsonRpcFailure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

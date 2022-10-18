@@ -1,10 +1,10 @@
 package typings.reactDnd
 
-import typings.dndCore.interfacesMod.BackendFactory
-import typings.dndCore.interfacesMod.DragDropManager
-import typings.dndCore.interfacesMod.Identifier
+import typings.dndCore.distInterfacesMod.BackendFactory
+import typings.dndCore.distInterfacesMod.DragDropManager
+import typings.dndCore.distInterfacesMod.Identifier
 import typings.react.mod.ReactNode
-import typings.reactDnd.dndProviderMod.DndProviderProps
+import typings.reactDnd.distCoreDndProviderMod.DndProviderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +47,7 @@ object anon {
   object Backend {
     
     inline def apply[BackendContext, BackendOptions](
-      backend: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[Any], /* configuration */ js.UndefOr[Any]) => typings.dndCore.interfacesMod.Backend
+      backend: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[Any], /* configuration */ js.UndefOr[Any]) => typings.dndCore.distInterfacesMod.Backend
     ): Backend[BackendContext, BackendOptions] = {
       val __obj = js.Dynamic.literal(backend = js.Any.fromFunction3(backend))
       __obj.asInstanceOf[Backend[BackendContext, BackendOptions]]
@@ -56,7 +56,7 @@ object anon {
     extension [Self <: Backend[?, ?], BackendContext, BackendOptions](x: Self & (Backend[BackendContext, BackendOptions])) {
       
       inline def setBackend(
-        value: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[Any], /* configuration */ js.UndefOr[Any]) => typings.dndCore.interfacesMod.Backend
+        value: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[Any], /* configuration */ js.UndefOr[Any]) => typings.dndCore.distInterfacesMod.Backend
       ): Self = StObject.set(x, "backend", js.Any.fromFunction3(value))
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides options for how to set the data in a binding.
   *
   * @remarks
-  * 
+  *
   * If the rows option is used, the value must be "thisRow".
   */
 trait SetBindingDataOptions extends StObject {
@@ -19,9 +19,9 @@ trait SetBindingDataOptions extends StObject {
   var asyncContext: js.UndefOr[Any] = js.undefined
   
   /**
-    * Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects that specify a range of 
-    * columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to that range. 
-    * 
+    * Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects that specify a range of
+    * columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to that range.
+    *
     * Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]`
     */
   var cellFormat: js.UndefOr[js.Array[RangeFormatConfiguration]] = js.undefined
@@ -33,7 +33,7 @@ trait SetBindingDataOptions extends StObject {
   
   /**
     * Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
-    * 
+    *
     * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
     * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
     * to build no-code business solutions for web and mobile devices.
@@ -42,7 +42,7 @@ trait SetBindingDataOptions extends StObject {
   
   /**
     * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
-    * 
+    *
     * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
     * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
     * to build no-code business solutions for web and mobile devices.
@@ -50,19 +50,19 @@ trait SetBindingDataOptions extends StObject {
   var rows: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted, data is set starting in 
+    * Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted, data is set starting in
     * the first column.
     */
   var startColumn: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings. If omitted, data is set 
+    * Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings. If omitted, data is set
     * starting in the first row.
     */
   var startRow: js.UndefOr[Double] = js.undefined
   
   /**
-    * For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows. 
+    * For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows.
     * Example: `{bandedRows: true,  filterButton: false}`
     */
   var tableOptions: js.UndefOr[js.Object] = js.undefined

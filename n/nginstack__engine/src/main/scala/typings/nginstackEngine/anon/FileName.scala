@@ -1,6 +1,6 @@
 package typings.nginstackEngine.anon
 
-import typings.nginstackEngine.dbkeyMod.^
+import typings.nginstackEngine.libDbkeyDbkeyMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

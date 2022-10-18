@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "GeometryBufferRendererSceneComponent")
 @js.native
 open class GeometryBufferRendererSceneComponent protected ()
-  extends typings.babylonjs.legacyMod.GeometryBufferRendererSceneComponent {
+  extends typings.babylonjs.legacyLegacyMod.GeometryBufferRendererSceneComponent {
   /**
     * Creates a new instance of the component for the given scene
     * @param scene Defines the scene to register the component in

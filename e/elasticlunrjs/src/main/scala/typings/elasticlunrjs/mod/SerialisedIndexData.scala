@@ -1,6 +1,5 @@
 package typings.elasticlunrjs.mod
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +10,7 @@ trait SerialisedIndexData[T] extends StObject {
   
   var fields: js.Array[/* keyof T */ String]
   
-  var index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? elasticlunrjs.elasticlunrjs.InvertedIndexNode}
-    */ typings.elasticlunrjs.elasticlunrjsStrings.SerialisedIndexData & TopLevel[Any]
+  var index: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]:? elasticlunrjs.elasticlunrjs.InvertedIndexNode} */ js.Any
   
   var pipeline: SerialisedPipeline
   
@@ -26,9 +23,7 @@ object SerialisedIndexData {
   inline def apply[T](
     documentStore: SerialisedDocumentStore[T],
     fields: js.Array[/* keyof T */ String],
-    index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? elasticlunrjs.elasticlunrjs.InvertedIndexNode}
-    */ typings.elasticlunrjs.elasticlunrjsStrings.SerialisedIndexData & TopLevel[Any],
+    index: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]:? elasticlunrjs.elasticlunrjs.InvertedIndexNode} */ js.Any,
     pipeline: SerialisedPipeline,
     ref: /* keyof T */ String,
     version: String
@@ -46,9 +41,7 @@ object SerialisedIndexData {
     inline def setFieldsVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setIndex(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]:? elasticlunrjs.elasticlunrjs.InvertedIndexNode}
-      */ typings.elasticlunrjs.elasticlunrjsStrings.SerialisedIndexData & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]:? elasticlunrjs.elasticlunrjs.InvertedIndexNode} */ js.Any
     ): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     inline def setPipeline(value: SerialisedPipeline): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])

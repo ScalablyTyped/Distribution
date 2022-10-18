@@ -13130,8 +13130,14 @@ object anon {
     }
   }
   
-  /* Inlined std.Pick<@react-md/states.@react-md/states/types/ripples/types.RippleEvent<std.HTMLElement>, 'type'> */
+  /* Inlined std.Pick<@react-md/states.@react-md/states/types/ripples/types.RippleEvent<std.HTMLElement>, 'pageX' | 'pageY' | 'touches' | 'type'> */
   trait PickRippleEventHTMLElemen extends StObject {
+    
+    var pageX: js.UndefOr[Double] = js.undefined
+    
+    var pageY: js.UndefOr[Double] = js.undefined
+    
+    var touches: js.UndefOr[TouchList] = js.undefined
     
     var `type`: String
   }
@@ -13145,31 +13151,6 @@ object anon {
     
     extension [Self <: PickRippleEventHTMLElemen](x: Self) {
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined std.Pick<@react-md/states.@react-md/states/types/ripples/types.RippleEvent<std.HTMLElement>, 'pageX' | 'pageY' | 'touches' | 'type'> */
-  trait PickRippleEventHTMLElemenPageX extends StObject {
-    
-    var pageX: js.UndefOr[Double] = js.undefined
-    
-    var pageY: js.UndefOr[Double] = js.undefined
-    
-    var touches: js.UndefOr[TouchList] = js.undefined
-    
-    var `type`: String
-  }
-  object PickRippleEventHTMLElemenPageX {
-    
-    inline def apply(`type`: String): PickRippleEventHTMLElemenPageX = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PickRippleEventHTMLElemenPageX]
-    }
-    
-    extension [Self <: PickRippleEventHTMLElemenPageX](x: Self) {
-      
       inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
       inline def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
@@ -13181,6 +13162,25 @@ object anon {
       inline def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
       inline def setTouchesUndefined: Self = StObject.set(x, "touches", js.undefined)
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Pick<@react-md/states.@react-md/states/types/ripples/types.RippleEvent<std.HTMLElement>, 'type'> */
+  trait PickRippleEventHTMLElemenType extends StObject {
+    
+    var `type`: String
+  }
+  object PickRippleEventHTMLElemenType {
+    
+    inline def apply(`type`: String): PickRippleEventHTMLElemenType = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PickRippleEventHTMLElemenType]
+    }
+    
+    extension [Self <: PickRippleEventHTMLElemenType](x: Self) {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

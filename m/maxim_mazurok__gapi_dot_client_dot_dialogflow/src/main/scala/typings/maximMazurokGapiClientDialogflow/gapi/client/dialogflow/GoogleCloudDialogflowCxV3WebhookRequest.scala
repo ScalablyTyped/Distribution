@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +26,7 @@ trait GoogleCloudDialogflowCxV3WebhookRequest extends StObject {
   
   /** Custom data set in QueryParameters.payload. */
   var payload: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3WebhookRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** The sentiment analysis result of the current user request. The field is filled when sentiment analysis is configured to be enabled for the request. */
@@ -86,9 +83,7 @@ object GoogleCloudDialogflowCxV3WebhookRequest {
     inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
     inline def setPayload(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3WebhookRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)

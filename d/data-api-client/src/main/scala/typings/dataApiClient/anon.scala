@@ -1,12 +1,12 @@
 package typings.dataApiClient
 
-import typings.awsSdk.rdsdataserviceMod.Id
-import typings.awsSdk.rdsdataserviceMod.RecordsFormatType
-import typings.awsSdk.rdsdataserviceMod.ResultSetOptions
-import typings.awsSdk.rdsdataserviceMod.SqlParameter
-import typings.awsSdk.rdsdataserviceMod.SqlParameterSets
-import typings.awsSdk.rdsdataserviceMod.SqlParametersList
-import typings.awsSdk.rdsdataserviceMod.SqlStatement
+import typings.awsSdk.clientsRdsdataserviceMod.Id
+import typings.awsSdk.clientsRdsdataserviceMod.RecordsFormatType
+import typings.awsSdk.clientsRdsdataserviceMod.ResultSetOptions
+import typings.awsSdk.clientsRdsdataserviceMod.SqlParameter
+import typings.awsSdk.clientsRdsdataserviceMod.SqlParameterSets
+import typings.awsSdk.clientsRdsdataserviceMod.SqlParametersList
+import typings.awsSdk.clientsRdsdataserviceMod.SqlStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -188,11 +188,11 @@ object anon {
   /* Inlined std.Omit<aws-sdk.aws-sdk/clients/rdsdataservice.ExecuteStatementRequest, data-api-client.data-api-client.OmittedValues> */
   trait OmitExecuteStatementReque extends StObject {
     
-    var continueAfterTimeout: js.UndefOr[typings.awsSdk.rdsdataserviceMod.Boolean] = js.undefined
+    var continueAfterTimeout: js.UndefOr[typings.awsSdk.clientsRdsdataserviceMod.Boolean] = js.undefined
     
     var formatRecordsAs: js.UndefOr[RecordsFormatType] = js.undefined
     
-    var includeResultMetadata: js.UndefOr[typings.awsSdk.rdsdataserviceMod.Boolean] = js.undefined
+    var includeResultMetadata: js.UndefOr[typings.awsSdk.clientsRdsdataserviceMod.Boolean] = js.undefined
     
     var parameters: js.UndefOr[SqlParametersList] = js.undefined
     
@@ -211,7 +211,7 @@ object anon {
     
     extension [Self <: OmitExecuteStatementReque](x: Self) {
       
-      inline def setContinueAfterTimeout(value: typings.awsSdk.rdsdataserviceMod.Boolean): Self = StObject.set(x, "continueAfterTimeout", value.asInstanceOf[js.Any])
+      inline def setContinueAfterTimeout(value: typings.awsSdk.clientsRdsdataserviceMod.Boolean): Self = StObject.set(x, "continueAfterTimeout", value.asInstanceOf[js.Any])
       
       inline def setContinueAfterTimeoutUndefined: Self = StObject.set(x, "continueAfterTimeout", js.undefined)
       
@@ -219,7 +219,7 @@ object anon {
       
       inline def setFormatRecordsAsUndefined: Self = StObject.set(x, "formatRecordsAs", js.undefined)
       
-      inline def setIncludeResultMetadata(value: typings.awsSdk.rdsdataserviceMod.Boolean): Self = StObject.set(x, "includeResultMetadata", value.asInstanceOf[js.Any])
+      inline def setIncludeResultMetadata(value: typings.awsSdk.clientsRdsdataserviceMod.Boolean): Self = StObject.set(x, "includeResultMetadata", value.asInstanceOf[js.Any])
       
       inline def setIncludeResultMetadataUndefined: Self = StObject.set(x, "includeResultMetadata", js.undefined)
       

@@ -1,11 +1,11 @@
 package typings.sass
 
-import typings.sass.importerMod.FileImporter
-import typings.sass.importerMod.Importer
-import typings.sass.loggerMod.Logger
-import typings.sass.promiseOrMod.PromiseOr
 import typings.sass.sassStrings.async
-import typings.sass.valueMod.Value
+import typings.sass.typesImporterMod.FileImporter
+import typings.sass.typesImporterMod.Importer
+import typings.sass.typesLoggerMod.Logger
+import typings.sass.typesUtilPromiseOrMod.PromiseOr
+import typings.sass.typesValueMod.Value
 import typings.std.Record
 import typings.std.URL
 import org.scalablytyped.runtime.StObject

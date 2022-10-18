@@ -3,10 +3,10 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.endpointsMod.ExtractOctokitResponse
-import typings.octokitTypes.endpointsMod.RequiredPreview
-import typings.octokitTypes.endpointsMod.ToOctokitParameters
-import typings.octokitTypes.requestParametersMod.RequestParameters
+import typings.octokitTypes.distTypesGeneratedEndpointsMod.ExtractOctokitResponse
+import typings.octokitTypes.distTypesGeneratedEndpointsMod.RequiredPreview
+import typings.octokitTypes.distTypesGeneratedEndpointsMod.ToOctokitParameters
+import typings.octokitTypes.distTypesRequestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,13 +16,13 @@ trait `1166` extends StObject {
   
   var parameters: RequestParameters & (Omit[
     (ToOctokitParameters[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/users/{username}/orgs']['get'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/migrations/{migration_id}/repos/{repo_name}/lock']['delete'] */ js.Any
     ]) & RequiredPreview[Any], 
     baseUrl | headers | mediaType
   ])
   
   var response: ExtractOctokitResponse[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/users/{username}/orgs']['get'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/migrations/{migration_id}/repos/{repo_name}/lock']['delete'] */ js.Any
   ]
 }
 object `1166` {
@@ -30,12 +30,12 @@ object `1166` {
   inline def apply(
     parameters: RequestParameters & (Omit[
       (ToOctokitParameters[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/users/{username}/orgs']['get'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/migrations/{migration_id}/repos/{repo_name}/lock']['delete'] */ js.Any
       ]) & RequiredPreview[Any], 
       baseUrl | headers | mediaType
     ]),
     response: ExtractOctokitResponse[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/users/{username}/orgs']['get'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/migrations/{migration_id}/repos/{repo_name}/lock']['delete'] */ js.Any
     ]
   ): `1166` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -47,7 +47,7 @@ object `1166` {
     inline def setParameters(
       value: RequestParameters & (Omit[
           (ToOctokitParameters[
-            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/users/{username}/orgs']['get'] */ js.Any
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/migrations/{migration_id}/repos/{repo_name}/lock']['delete'] */ js.Any
           ]) & RequiredPreview[Any], 
           baseUrl | headers | mediaType
         ])
@@ -55,7 +55,7 @@ object `1166` {
     
     inline def setResponse(
       value: ExtractOctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/users/{username}/orgs']['get'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/migrations/{migration_id}/repos/{repo_name}/lock']['delete'] */ js.Any
         ]
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }

@@ -10,7 +10,7 @@ import typings.baseui.baseuiStrings.svg
 import typings.baseui.baseuiStrings.ul
 import typings.baseui.selectTypesMod.SharedStylePropsArg
 import typings.baseui.spinnerTypesMod.SpinnerProps
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

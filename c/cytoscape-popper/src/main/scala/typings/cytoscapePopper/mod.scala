@@ -3,8 +3,8 @@ package typings.cytoscapePopper
 import org.scalablytyped.runtime.Shortcut
 import typings.cytoscape.mod.Ext
 import typings.cytoscape.mod.Position
-import typings.popperjsCore.typesMod.Instance
-import typings.popperjsCore.typesMod.VirtualElement
+import typings.popperjsCore.libTypesMod.Instance
+import typings.popperjsCore.libTypesMod.VirtualElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,7 +48,7 @@ object mod extends Shortcut {
       * The [Popper options](https://popper.js.org/docs/v2/constructors/#options) object.
       * You may use this to override Popper options.
       */
-    var popper: js.UndefOr[typings.popperjsCore.typesMod.Options] = js.undefined
+    var popper: js.UndefOr[typings.popperjsCore.libTypesMod.Options] = js.undefined
     
     /*
       * A function that can be used to override the [rendered](http://js.cytoscape.org/#notation/position) Cytoscape bounding box dimensions
@@ -78,7 +78,7 @@ object mod extends Shortcut {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setPopper(value: typings.popperjsCore.typesMod.Options): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+      inline def setPopper(value: typings.popperjsCore.libTypesMod.Options): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
       
       inline def setPopperUndefined: Self = StObject.set(x, "popper", js.undefined)
       

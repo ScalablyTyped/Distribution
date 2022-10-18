@@ -70,8 +70,20 @@ object validatorStrings {
   inline def AED: AED = "AED".asInstanceOf[AED]
   
   @js.native
+  sealed trait AF extends StObject
+  inline def AF: AF = "AF".asInstanceOf[AF]
+  
+  @js.native
   sealed trait AFN extends StObject
   inline def AFN: AFN = "AFN".asInstanceOf[AFN]
+  
+  @js.native
+  sealed trait AG extends StObject
+  inline def AG: AG = "AG".asInstanceOf[AG]
+  
+  @js.native
+  sealed trait AI extends StObject
+  inline def AI: AI = "AI".asInstanceOf[AI]
   
   @js.native
   sealed trait AL extends StObject
@@ -82,6 +94,10 @@ object validatorStrings {
   inline def ALL: ALL = "ALL".asInstanceOf[ALL]
   
   @js.native
+  sealed trait AM extends StObject
+  inline def AM: AM = "AM".asInstanceOf[AM]
+  
+  @js.native
   sealed trait AMD extends StObject
   inline def AMD: AMD = "AMD".asInstanceOf[AMD]
   
@@ -90,12 +106,28 @@ object validatorStrings {
   inline def ANG: ANG = "ANG".asInstanceOf[ANG]
   
   @js.native
+  sealed trait AO extends StObject
+  inline def AO: AO = "AO".asInstanceOf[AO]
+  
+  @js.native
   sealed trait AOA extends StObject
   inline def AOA: AOA = "AOA".asInstanceOf[AOA]
   
   @js.native
+  sealed trait AQ extends StObject
+  inline def AQ: AQ = "AQ".asInstanceOf[AQ]
+  
+  @js.native
+  sealed trait AR extends StObject
+  inline def AR: AR = "AR".asInstanceOf[AR]
+  
+  @js.native
   sealed trait ARS extends StObject
   inline def ARS: ARS = "ARS".asInstanceOf[ARS]
+  
+  @js.native
+  sealed trait AS extends StObject
+  inline def AS: AS = "AS".asInstanceOf[AS]
   
   @js.native
   sealed trait AT
@@ -114,8 +146,16 @@ object validatorStrings {
   inline def AUD: AUD = "AUD".asInstanceOf[AUD]
   
   @js.native
+  sealed trait AW extends StObject
+  inline def AW: AW = "AW".asInstanceOf[AW]
+  
+  @js.native
   sealed trait AWG extends StObject
   inline def AWG: AWG = "AWG".asInstanceOf[AWG]
+  
+  @js.native
+  sealed trait AX extends StObject
+  inline def AX: AX = "AX".asInstanceOf[AX]
   
   @js.native
   sealed trait AZ extends StObject
@@ -134,8 +174,16 @@ object validatorStrings {
   inline def BAM: BAM = "BAM".asInstanceOf[BAM]
   
   @js.native
+  sealed trait BB extends StObject
+  inline def BB: BB = "BB".asInstanceOf[BB]
+  
+  @js.native
   sealed trait BBD extends StObject
   inline def BBD: BBD = "BBD".asInstanceOf[BBD]
+  
+  @js.native
+  sealed trait BD extends StObject
+  inline def BD: BD = "BD".asInstanceOf[BD]
   
   @js.native
   sealed trait BDT extends StObject
@@ -146,6 +194,10 @@ object validatorStrings {
     extends StObject
        with PostalCodeLocale
   inline def BE: BE = "BE".asInstanceOf[BE]
+  
+  @js.native
+  sealed trait BF extends StObject
+  inline def BF: BF = "BF".asInstanceOf[BF]
   
   @js.native
   sealed trait BG
@@ -166,16 +218,40 @@ object validatorStrings {
   inline def BHD: BHD = "BHD".asInstanceOf[BHD]
   
   @js.native
+  sealed trait BI extends StObject
+  inline def BI: BI = "BI".asInstanceOf[BI]
+  
+  @js.native
   sealed trait BIF extends StObject
   inline def BIF: BIF = "BIF".asInstanceOf[BIF]
+  
+  @js.native
+  sealed trait BJ extends StObject
+  inline def BJ: BJ = "BJ".asInstanceOf[BJ]
+  
+  @js.native
+  sealed trait BL extends StObject
+  inline def BL: BL = "BL".asInstanceOf[BL]
+  
+  @js.native
+  sealed trait BM extends StObject
+  inline def BM: BM = "BM".asInstanceOf[BM]
   
   @js.native
   sealed trait BMD extends StObject
   inline def BMD: BMD = "BMD".asInstanceOf[BMD]
   
   @js.native
+  sealed trait BN extends StObject
+  inline def BN: BN = "BN".asInstanceOf[BN]
+  
+  @js.native
   sealed trait BND extends StObject
   inline def BND: BND = "BND".asInstanceOf[BND]
+  
+  @js.native
+  sealed trait BO extends StObject
+  inline def BO: BO = "BO".asInstanceOf[BO]
   
   @js.native
   sealed trait BOB extends StObject
@@ -184,6 +260,10 @@ object validatorStrings {
   @js.native
   sealed trait BOV extends StObject
   inline def BOV: BOV = "BOV".asInstanceOf[BOV]
+  
+  @js.native
+  sealed trait BQ extends StObject
+  inline def BQ: BQ = "BQ".asInstanceOf[BQ]
   
   @js.native
   sealed trait BR
@@ -196,12 +276,28 @@ object validatorStrings {
   inline def BRL: BRL = "BRL".asInstanceOf[BRL]
   
   @js.native
+  sealed trait BS extends StObject
+  inline def BS: BS = "BS".asInstanceOf[BS]
+  
+  @js.native
   sealed trait BSD extends StObject
   inline def BSD: BSD = "BSD".asInstanceOf[BSD]
   
   @js.native
+  sealed trait BT extends StObject
+  inline def BT: BT = "BT".asInstanceOf[BT]
+  
+  @js.native
   sealed trait BTN extends StObject
   inline def BTN: BTN = "BTN".asInstanceOf[BTN]
+  
+  @js.native
+  sealed trait BV extends StObject
+  inline def BV: BV = "BV".asInstanceOf[BV]
+  
+  @js.native
+  sealed trait BW extends StObject
+  inline def BW: BW = "BW".asInstanceOf[BW]
   
   @js.native
   sealed trait BWP extends StObject
@@ -214,6 +310,10 @@ object validatorStrings {
   @js.native
   sealed trait BYN extends StObject
   inline def BYN: BYN = "BYN".asInstanceOf[BYN]
+  
+  @js.native
+  sealed trait BZ extends StObject
+  inline def BZ: BZ = "BZ".asInstanceOf[BZ]
   
   @js.native
   sealed trait BZD extends StObject
@@ -230,8 +330,24 @@ object validatorStrings {
   inline def CAD: CAD = "CAD".asInstanceOf[CAD]
   
   @js.native
+  sealed trait CC extends StObject
+  inline def CC: CC = "CC".asInstanceOf[CC]
+  
+  @js.native
+  sealed trait CD extends StObject
+  inline def CD: CD = "CD".asInstanceOf[CD]
+  
+  @js.native
   sealed trait CDF extends StObject
   inline def CDF: CDF = "CDF".asInstanceOf[CDF]
+  
+  @js.native
+  sealed trait CF extends StObject
+  inline def CF: CF = "CF".asInstanceOf[CF]
+  
+  @js.native
+  sealed trait CG extends StObject
+  inline def CG: CG = "CG".asInstanceOf[CG]
   
   @js.native
   sealed trait CH
@@ -252,12 +368,28 @@ object validatorStrings {
   inline def CHW: CHW = "CHW".asInstanceOf[CHW]
   
   @js.native
+  sealed trait CI extends StObject
+  inline def CI: CI = "CI".asInstanceOf[CI]
+  
+  @js.native
+  sealed trait CK extends StObject
+  inline def CK: CK = "CK".asInstanceOf[CK]
+  
+  @js.native
+  sealed trait CL extends StObject
+  inline def CL: CL = "CL".asInstanceOf[CL]
+  
+  @js.native
   sealed trait CLF extends StObject
   inline def CLF: CLF = "CLF".asInstanceOf[CLF]
   
   @js.native
   sealed trait CLP extends StObject
   inline def CLP: CLP = "CLP".asInstanceOf[CLP]
+  
+  @js.native
+  sealed trait CM extends StObject
+  inline def CM: CM = "CM".asInstanceOf[CM]
   
   @js.native
   sealed trait CN
@@ -268,6 +400,10 @@ object validatorStrings {
   @js.native
   sealed trait CNY extends StObject
   inline def CNY: CNY = "CNY".asInstanceOf[CNY]
+  
+  @js.native
+  sealed trait CO extends StObject
+  inline def CO: CO = "CO".asInstanceOf[CO]
   
   @js.native
   sealed trait COP extends StObject
@@ -286,6 +422,10 @@ object validatorStrings {
   inline def CRC: CRC = "CRC".asInstanceOf[CRC]
   
   @js.native
+  sealed trait CU extends StObject
+  inline def CU: CU = "CU".asInstanceOf[CU]
+  
+  @js.native
   sealed trait CUC extends StObject
   inline def CUC: CUC = "CUC".asInstanceOf[CUC]
   
@@ -294,8 +434,20 @@ object validatorStrings {
   inline def CUP: CUP = "CUP".asInstanceOf[CUP]
   
   @js.native
+  sealed trait CV extends StObject
+  inline def CV: CV = "CV".asInstanceOf[CV]
+  
+  @js.native
   sealed trait CVE extends StObject
   inline def CVE: CVE = "CVE".asInstanceOf[CVE]
+  
+  @js.native
+  sealed trait CW extends StObject
+  inline def CW: CW = "CW".asInstanceOf[CW]
+  
+  @js.native
+  sealed trait CX extends StObject
+  inline def CX: CX = "CX".asInstanceOf[CX]
   
   @js.native
   sealed trait CY extends StObject
@@ -318,6 +470,10 @@ object validatorStrings {
   inline def DE: DE = "DE".asInstanceOf[DE]
   
   @js.native
+  sealed trait DJ extends StObject
+  inline def DJ: DJ = "DJ".asInstanceOf[DJ]
+  
+  @js.native
   sealed trait DJF extends StObject
   inline def DJF: DJF = "DJF".asInstanceOf[DJF]
   
@@ -330,6 +486,10 @@ object validatorStrings {
   @js.native
   sealed trait DKK extends StObject
   inline def DKK: DKK = "DKK".asInstanceOf[DKK]
+  
+  @js.native
+  sealed trait DM extends StObject
+  inline def DM: DM = "DM".asInstanceOf[DM]
   
   @js.native
   sealed trait DO extends StObject
@@ -350,6 +510,10 @@ object validatorStrings {
   inline def DZD: DZD = "DZD".asInstanceOf[DZD]
   
   @js.native
+  sealed trait EC extends StObject
+  inline def EC: EC = "EC".asInstanceOf[EC]
+  
+  @js.native
   sealed trait EE
     extends StObject
        with PostalCodeLocale
@@ -364,6 +528,14 @@ object validatorStrings {
   inline def EGP: EGP = "EGP".asInstanceOf[EGP]
   
   @js.native
+  sealed trait EH extends StObject
+  inline def EH: EH = "EH".asInstanceOf[EH]
+  
+  @js.native
+  sealed trait ER extends StObject
+  inline def ER: ER = "ER".asInstanceOf[ER]
+  
+  @js.native
   sealed trait ERN extends StObject
   inline def ERN: ERN = "ERN".asInstanceOf[ERN]
   
@@ -373,6 +545,10 @@ object validatorStrings {
        with IdentityCardLocale
        with PostalCodeLocale
   inline def ES: ES = "ES".asInstanceOf[ES]
+  
+  @js.native
+  sealed trait ET extends StObject
+  inline def ET: ET = "ET".asInstanceOf[ET]
   
   @js.native
   sealed trait ETB extends StObject
@@ -389,12 +565,24 @@ object validatorStrings {
   inline def FI: FI = "FI".asInstanceOf[FI]
   
   @js.native
+  sealed trait FJ extends StObject
+  inline def FJ: FJ = "FJ".asInstanceOf[FJ]
+  
+  @js.native
   sealed trait FJD extends StObject
   inline def FJD: FJD = "FJD".asInstanceOf[FJD]
   
   @js.native
+  sealed trait FK extends StObject
+  inline def FK: FK = "FK".asInstanceOf[FK]
+  
+  @js.native
   sealed trait FKP extends StObject
   inline def FKP: FKP = "FKP".asInstanceOf[FKP]
+  
+  @js.native
+  sealed trait FM extends StObject
+  inline def FM: FM = "FM".asInstanceOf[FM]
   
   @js.native
   sealed trait FO extends StObject
@@ -407,6 +595,10 @@ object validatorStrings {
   inline def FR: FR = "FR".asInstanceOf[FR]
   
   @js.native
+  sealed trait GA extends StObject
+  inline def GA: GA = "GA".asInstanceOf[GA]
+  
+  @js.native
   sealed trait GB
     extends StObject
        with PostalCodeLocale
@@ -417,12 +609,28 @@ object validatorStrings {
   inline def GBP: GBP = "GBP".asInstanceOf[GBP]
   
   @js.native
+  sealed trait GD extends StObject
+  inline def GD: GD = "GD".asInstanceOf[GD]
+  
+  @js.native
   sealed trait GE extends StObject
   inline def GE: GE = "GE".asInstanceOf[GE]
   
   @js.native
   sealed trait GEL extends StObject
   inline def GEL: GEL = "GEL".asInstanceOf[GEL]
+  
+  @js.native
+  sealed trait GF extends StObject
+  inline def GF: GF = "GF".asInstanceOf[GF]
+  
+  @js.native
+  sealed trait GG extends StObject
+  inline def GG: GG = "GG".asInstanceOf[GG]
+  
+  @js.native
+  sealed trait GH extends StObject
+  inline def GH: GH = "GH".asInstanceOf[GH]
   
   @js.native
   sealed trait GHS extends StObject
@@ -441,18 +649,38 @@ object validatorStrings {
   inline def GL: GL = "GL".asInstanceOf[GL]
   
   @js.native
+  sealed trait GM extends StObject
+  inline def GM: GM = "GM".asInstanceOf[GM]
+  
+  @js.native
   sealed trait GMD extends StObject
   inline def GMD: GMD = "GMD".asInstanceOf[GMD]
+  
+  @js.native
+  sealed trait GN extends StObject
+  inline def GN: GN = "GN".asInstanceOf[GN]
   
   @js.native
   sealed trait GNF extends StObject
   inline def GNF: GNF = "GNF".asInstanceOf[GNF]
   
   @js.native
+  sealed trait GP extends StObject
+  inline def GP: GP = "GP".asInstanceOf[GP]
+  
+  @js.native
+  sealed trait GQ extends StObject
+  inline def GQ: GQ = "GQ".asInstanceOf[GQ]
+  
+  @js.native
   sealed trait GR
     extends StObject
        with PostalCodeLocale
   inline def GR: GR = "GR".asInstanceOf[GR]
+  
+  @js.native
+  sealed trait GS extends StObject
+  inline def GS: GS = "GS".asInstanceOf[GS]
   
   @js.native
   sealed trait GT extends StObject
@@ -463,12 +691,36 @@ object validatorStrings {
   inline def GTQ: GTQ = "GTQ".asInstanceOf[GTQ]
   
   @js.native
+  sealed trait GU extends StObject
+  inline def GU: GU = "GU".asInstanceOf[GU]
+  
+  @js.native
+  sealed trait GW extends StObject
+  inline def GW: GW = "GW".asInstanceOf[GW]
+  
+  @js.native
+  sealed trait GY extends StObject
+  inline def GY: GY = "GY".asInstanceOf[GY]
+  
+  @js.native
   sealed trait GYD extends StObject
   inline def GYD: GYD = "GYD".asInstanceOf[GYD]
   
   @js.native
+  sealed trait HK extends StObject
+  inline def HK: HK = "HK".asInstanceOf[HK]
+  
+  @js.native
   sealed trait HKD extends StObject
   inline def HKD: HKD = "HKD".asInstanceOf[HKD]
+  
+  @js.native
+  sealed trait HM extends StObject
+  inline def HM: HM = "HM".asInstanceOf[HM]
+  
+  @js.native
+  sealed trait HN extends StObject
+  inline def HN: HN = "HN".asInstanceOf[HN]
   
   @js.native
   sealed trait HNL extends StObject
@@ -483,6 +735,10 @@ object validatorStrings {
   @js.native
   sealed trait HRK extends StObject
   inline def HRK: HRK = "HRK".asInstanceOf[HRK]
+  
+  @js.native
+  sealed trait HT extends StObject
+  inline def HT: HT = "HT".asInstanceOf[HT]
   
   @js.native
   sealed trait HTG extends StObject
@@ -525,6 +781,10 @@ object validatorStrings {
   inline def ILS: ILS = "ILS".asInstanceOf[ILS]
   
   @js.native
+  sealed trait IM extends StObject
+  inline def IM: IM = "IM".asInstanceOf[IM]
+  
+  @js.native
   sealed trait IN
     extends StObject
        with PostalCodeLocale
@@ -533,6 +793,10 @@ object validatorStrings {
   @js.native
   sealed trait INR extends StObject
   inline def INR: INR = "INR".asInstanceOf[INR]
+  
+  @js.native
+  sealed trait IO extends StObject
+  inline def IO: IO = "IO".asInstanceOf[IO]
   
   @js.native
   sealed trait IQ extends StObject
@@ -567,6 +831,14 @@ object validatorStrings {
   inline def IT: IT = "IT".asInstanceOf[IT]
   
   @js.native
+  sealed trait JE extends StObject
+  inline def JE: JE = "JE".asInstanceOf[JE]
+  
+  @js.native
+  sealed trait JM extends StObject
+  inline def JM: JM = "JM".asInstanceOf[JM]
+  
+  @js.native
   sealed trait JMD extends StObject
   inline def JMD: JMD = "JMD".asInstanceOf[JMD]
   
@@ -599,20 +871,48 @@ object validatorStrings {
   inline def KES: KES = "KES".asInstanceOf[KES]
   
   @js.native
+  sealed trait KG extends StObject
+  inline def KG: KG = "KG".asInstanceOf[KG]
+  
+  @js.native
   sealed trait KGS extends StObject
   inline def KGS: KGS = "KGS".asInstanceOf[KGS]
+  
+  @js.native
+  sealed trait KH extends StObject
+  inline def KH: KH = "KH".asInstanceOf[KH]
   
   @js.native
   sealed trait KHR extends StObject
   inline def KHR: KHR = "KHR".asInstanceOf[KHR]
   
   @js.native
+  sealed trait KI extends StObject
+  inline def KI: KI = "KI".asInstanceOf[KI]
+  
+  @js.native
+  sealed trait KM extends StObject
+  inline def KM: KM = "KM".asInstanceOf[KM]
+  
+  @js.native
   sealed trait KMF extends StObject
   inline def KMF: KMF = "KMF".asInstanceOf[KMF]
   
   @js.native
+  sealed trait KN extends StObject
+  inline def KN: KN = "KN".asInstanceOf[KN]
+  
+  @js.native
+  sealed trait KP extends StObject
+  inline def KP: KP = "KP".asInstanceOf[KP]
+  
+  @js.native
   sealed trait KPW extends StObject
   inline def KPW: KPW = "KPW".asInstanceOf[KPW]
+  
+  @js.native
+  sealed trait KR extends StObject
+  inline def KR: KR = "KR".asInstanceOf[KR]
   
   @js.native
   sealed trait KRW extends StObject
@@ -627,6 +927,10 @@ object validatorStrings {
   inline def KWD: KWD = "KWD".asInstanceOf[KWD]
   
   @js.native
+  sealed trait KY extends StObject
+  inline def KY: KY = "KY".asInstanceOf[KY]
+  
+  @js.native
   sealed trait KYD extends StObject
   inline def KYD: KYD = "KYD".asInstanceOf[KYD]
   
@@ -637,6 +941,10 @@ object validatorStrings {
   @js.native
   sealed trait KZT extends StObject
   inline def KZT: KZT = "KZT".asInstanceOf[KZT]
+  
+  @js.native
+  sealed trait LA extends StObject
+  inline def LA: LA = "LA".asInstanceOf[LA]
   
   @js.native
   sealed trait LAK extends StObject
@@ -661,12 +969,24 @@ object validatorStrings {
   inline def LI: LI = "LI".asInstanceOf[LI]
   
   @js.native
+  sealed trait LK extends StObject
+  inline def LK: LK = "LK".asInstanceOf[LK]
+  
+  @js.native
   sealed trait LKR extends StObject
   inline def LKR: LKR = "LKR".asInstanceOf[LKR]
   
   @js.native
+  sealed trait LR extends StObject
+  inline def LR: LR = "LR".asInstanceOf[LR]
+  
+  @js.native
   sealed trait LRD extends StObject
   inline def LRD: LRD = "LRD".asInstanceOf[LRD]
+  
+  @js.native
+  sealed trait LS extends StObject
+  inline def LS: LS = "LS".asInstanceOf[LS]
   
   @js.native
   sealed trait LSL extends StObject
@@ -691,8 +1011,16 @@ object validatorStrings {
   inline def LV: LV = "LV".asInstanceOf[LV]
   
   @js.native
+  sealed trait LY extends StObject
+  inline def LY: LY = "LY".asInstanceOf[LY]
+  
+  @js.native
   sealed trait LYD extends StObject
   inline def LYD: LYD = "LYD".asInstanceOf[LYD]
+  
+  @js.native
+  sealed trait MA extends StObject
+  inline def MA: MA = "MA".asInstanceOf[MA]
   
   @js.native
   sealed trait MAD extends StObject
@@ -715,8 +1043,20 @@ object validatorStrings {
   inline def ME: ME = "ME".asInstanceOf[ME]
   
   @js.native
+  sealed trait MF extends StObject
+  inline def MF: MF = "MF".asInstanceOf[MF]
+  
+  @js.native
+  sealed trait MG extends StObject
+  inline def MG: MG = "MG".asInstanceOf[MG]
+  
+  @js.native
   sealed trait MGA extends StObject
   inline def MGA: MGA = "MGA".asInstanceOf[MGA]
+  
+  @js.native
+  sealed trait MH extends StObject
+  inline def MH: MH = "MH".asInstanceOf[MH]
   
   @js.native
   sealed trait MK extends StObject
@@ -727,16 +1067,40 @@ object validatorStrings {
   inline def MKD: MKD = "MKD".asInstanceOf[MKD]
   
   @js.native
+  sealed trait ML extends StObject
+  inline def ML: ML = "ML".asInstanceOf[ML]
+  
+  @js.native
+  sealed trait MM extends StObject
+  inline def MM: MM = "MM".asInstanceOf[MM]
+  
+  @js.native
   sealed trait MMK extends StObject
   inline def MMK: MMK = "MMK".asInstanceOf[MMK]
+  
+  @js.native
+  sealed trait MN extends StObject
+  inline def MN: MN = "MN".asInstanceOf[MN]
   
   @js.native
   sealed trait MNT extends StObject
   inline def MNT: MNT = "MNT".asInstanceOf[MNT]
   
   @js.native
+  sealed trait MO extends StObject
+  inline def MO: MO = "MO".asInstanceOf[MO]
+  
+  @js.native
   sealed trait MOP extends StObject
   inline def MOP: MOP = "MOP".asInstanceOf[MOP]
+  
+  @js.native
+  sealed trait MP extends StObject
+  inline def MP: MP = "MP".asInstanceOf[MP]
+  
+  @js.native
+  sealed trait MQ extends StObject
+  inline def MQ: MQ = "MQ".asInstanceOf[MQ]
   
   @js.native
   sealed trait MR extends StObject
@@ -745,6 +1109,10 @@ object validatorStrings {
   @js.native
   sealed trait MRU extends StObject
   inline def MRU: MRU = "MRU".asInstanceOf[MRU]
+  
+  @js.native
+  sealed trait MS extends StObject
+  inline def MS: MS = "MS".asInstanceOf[MS]
   
   @js.native
   sealed trait MT
@@ -761,8 +1129,16 @@ object validatorStrings {
   inline def MUR: MUR = "MUR".asInstanceOf[MUR]
   
   @js.native
+  sealed trait MV extends StObject
+  inline def MV: MV = "MV".asInstanceOf[MV]
+  
+  @js.native
   sealed trait MVR extends StObject
   inline def MVR: MVR = "MVR".asInstanceOf[MVR]
+  
+  @js.native
+  sealed trait MW extends StObject
+  inline def MW: MW = "MW".asInstanceOf[MW]
   
   @js.native
   sealed trait MWK extends StObject
@@ -783,6 +1159,10 @@ object validatorStrings {
   inline def MXV: MXV = "MXV".asInstanceOf[MXV]
   
   @js.native
+  sealed trait MY extends StObject
+  inline def MY: MY = "MY".asInstanceOf[MY]
+  
+  @js.native
   sealed trait MYR extends StObject
   inline def MYR: MYR = "MYR".asInstanceOf[MYR]
   
@@ -795,12 +1175,36 @@ object validatorStrings {
   inline def MZN: MZN = "MZN".asInstanceOf[MZN]
   
   @js.native
+  sealed trait NA extends StObject
+  inline def NA: NA = "NA".asInstanceOf[NA]
+  
+  @js.native
   sealed trait NAD extends StObject
   inline def NAD: NAD = "NAD".asInstanceOf[NAD]
   
   @js.native
+  sealed trait NC extends StObject
+  inline def NC: NC = "NC".asInstanceOf[NC]
+  
+  @js.native
+  sealed trait NE extends StObject
+  inline def NE: NE = "NE".asInstanceOf[NE]
+  
+  @js.native
+  sealed trait NF extends StObject
+  inline def NF: NF = "NF".asInstanceOf[NF]
+  
+  @js.native
+  sealed trait NG extends StObject
+  inline def NG: NG = "NG".asInstanceOf[NG]
+  
+  @js.native
   sealed trait NGN extends StObject
   inline def NGN: NGN = "NGN".asInstanceOf[NGN]
+  
+  @js.native
+  sealed trait NI extends StObject
+  inline def NI: NI = "NI".asInstanceOf[NI]
   
   @js.native
   sealed trait NIO extends StObject
@@ -823,8 +1227,20 @@ object validatorStrings {
   inline def NOK: NOK = "NOK".asInstanceOf[NOK]
   
   @js.native
+  sealed trait NP extends StObject
+  inline def NP: NP = "NP".asInstanceOf[NP]
+  
+  @js.native
   sealed trait NPR extends StObject
   inline def NPR: NPR = "NPR".asInstanceOf[NPR]
+  
+  @js.native
+  sealed trait NR extends StObject
+  inline def NR: NR = "NR".asInstanceOf[NR]
+  
+  @js.native
+  sealed trait NU extends StObject
+  inline def NU: NU = "NU".asInstanceOf[NU]
   
   @js.native
   sealed trait NZ
@@ -837,20 +1253,44 @@ object validatorStrings {
   inline def NZD: NZD = "NZD".asInstanceOf[NZD]
   
   @js.native
+  sealed trait OM extends StObject
+  inline def OM: OM = "OM".asInstanceOf[OM]
+  
+  @js.native
   sealed trait OMR extends StObject
   inline def OMR: OMR = "OMR".asInstanceOf[OMR]
+  
+  @js.native
+  sealed trait PA extends StObject
+  inline def PA: PA = "PA".asInstanceOf[PA]
   
   @js.native
   sealed trait PAB extends StObject
   inline def PAB: PAB = "PAB".asInstanceOf[PAB]
   
   @js.native
+  sealed trait PE extends StObject
+  inline def PE: PE = "PE".asInstanceOf[PE]
+  
+  @js.native
   sealed trait PEN extends StObject
   inline def PEN: PEN = "PEN".asInstanceOf[PEN]
   
   @js.native
+  sealed trait PF extends StObject
+  inline def PF: PF = "PF".asInstanceOf[PF]
+  
+  @js.native
+  sealed trait PG extends StObject
+  inline def PG: PG = "PG".asInstanceOf[PG]
+  
+  @js.native
   sealed trait PGK extends StObject
   inline def PGK: PGK = "PGK".asInstanceOf[PGK]
+  
+  @js.native
+  sealed trait PH extends StObject
+  inline def PH: PH = "PH".asInstanceOf[PH]
   
   @js.native
   sealed trait PHP extends StObject
@@ -875,6 +1315,14 @@ object validatorStrings {
   inline def PLN: PLN = "PLN".asInstanceOf[PLN]
   
   @js.native
+  sealed trait PM extends StObject
+  inline def PM: PM = "PM".asInstanceOf[PM]
+  
+  @js.native
+  sealed trait PN extends StObject
+  inline def PN: PN = "PN".asInstanceOf[PN]
+  
+  @js.native
   sealed trait PR
     extends StObject
        with PostalCodeLocale
@@ -891,6 +1339,14 @@ object validatorStrings {
   inline def PT: PT = "PT".asInstanceOf[PT]
   
   @js.native
+  sealed trait PW extends StObject
+  inline def PW: PW = "PW".asInstanceOf[PW]
+  
+  @js.native
+  sealed trait PY extends StObject
+  inline def PY: PY = "PY".asInstanceOf[PY]
+  
+  @js.native
   sealed trait PYG extends StObject
   inline def PYG: PYG = "PYG".asInstanceOf[PYG]
   
@@ -901,6 +1357,10 @@ object validatorStrings {
   @js.native
   sealed trait QAR extends StObject
   inline def QAR: QAR = "QAR".asInstanceOf[QAR]
+  
+  @js.native
+  sealed trait RE extends StObject
+  inline def RE: RE = "RE".asInstanceOf[RE]
   
   @js.native
   sealed trait RO
@@ -931,6 +1391,10 @@ object validatorStrings {
   inline def RUB: RUB = "RUB".asInstanceOf[RUB]
   
   @js.native
+  sealed trait RW extends StObject
+  inline def RW: RW = "RW".asInstanceOf[RW]
+  
+  @js.native
   sealed trait RWF extends StObject
   inline def RWF: RWF = "RWF".asInstanceOf[RWF]
   
@@ -945,6 +1409,10 @@ object validatorStrings {
   inline def SAR: SAR = "SAR".asInstanceOf[SAR]
   
   @js.native
+  sealed trait SB extends StObject
+  inline def SB: SB = "SB".asInstanceOf[SB]
+  
+  @js.native
   sealed trait SBD extends StObject
   inline def SBD: SBD = "SBD".asInstanceOf[SBD]
   
@@ -955,6 +1423,10 @@ object validatorStrings {
   @js.native
   sealed trait SCR extends StObject
   inline def SCR: SCR = "SCR".asInstanceOf[SCR]
+  
+  @js.native
+  sealed trait SD extends StObject
+  inline def SD: SD = "SD".asInstanceOf[SD]
   
   @js.native
   sealed trait SDG extends StObject
@@ -971,8 +1443,16 @@ object validatorStrings {
   inline def SEK: SEK = "SEK".asInstanceOf[SEK]
   
   @js.native
+  sealed trait SG extends StObject
+  inline def SG: SG = "SG".asInstanceOf[SG]
+  
+  @js.native
   sealed trait SGD extends StObject
   inline def SGD: SGD = "SGD".asInstanceOf[SGD]
+  
+  @js.native
+  sealed trait SH extends StObject
+  inline def SH: SH = "SH".asInstanceOf[SH]
   
   @js.native
   sealed trait SHP extends StObject
@@ -985,10 +1465,18 @@ object validatorStrings {
   inline def SI: SI = "SI".asInstanceOf[SI]
   
   @js.native
+  sealed trait SJ extends StObject
+  inline def SJ: SJ = "SJ".asInstanceOf[SJ]
+  
+  @js.native
   sealed trait SK
     extends StObject
        with PostalCodeLocale
   inline def SK: SK = "SK".asInstanceOf[SK]
+  
+  @js.native
+  sealed trait SL extends StObject
+  inline def SL: SL = "SL".asInstanceOf[SL]
   
   @js.native
   sealed trait SLL extends StObject
@@ -999,16 +1487,36 @@ object validatorStrings {
   inline def SM: SM = "SM".asInstanceOf[SM]
   
   @js.native
+  sealed trait SN extends StObject
+  inline def SN: SN = "SN".asInstanceOf[SN]
+  
+  @js.native
+  sealed trait SO extends StObject
+  inline def SO: SO = "SO".asInstanceOf[SO]
+  
+  @js.native
   sealed trait SOS extends StObject
   inline def SOS: SOS = "SOS".asInstanceOf[SOS]
+  
+  @js.native
+  sealed trait SR extends StObject
+  inline def SR: SR = "SR".asInstanceOf[SR]
   
   @js.native
   sealed trait SRD extends StObject
   inline def SRD: SRD = "SRD".asInstanceOf[SRD]
   
   @js.native
+  sealed trait SS extends StObject
+  inline def SS: SS = "SS".asInstanceOf[SS]
+  
+  @js.native
   sealed trait SSP extends StObject
   inline def SSP: SSP = "SSP".asInstanceOf[SSP]
+  
+  @js.native
+  sealed trait ST extends StObject
+  inline def ST: ST = "ST".asInstanceOf[ST]
   
   @js.native
   sealed trait STN extends StObject
@@ -1023,24 +1531,68 @@ object validatorStrings {
   inline def SVC: SVC = "SVC".asInstanceOf[SVC]
   
   @js.native
+  sealed trait SX extends StObject
+  inline def SX: SX = "SX".asInstanceOf[SX]
+  
+  @js.native
+  sealed trait SY extends StObject
+  inline def SY: SY = "SY".asInstanceOf[SY]
+  
+  @js.native
   sealed trait SYP extends StObject
   inline def SYP: SYP = "SYP".asInstanceOf[SYP]
+  
+  @js.native
+  sealed trait SZ extends StObject
+  inline def SZ: SZ = "SZ".asInstanceOf[SZ]
   
   @js.native
   sealed trait SZL extends StObject
   inline def SZL: SZL = "SZL".asInstanceOf[SZL]
   
   @js.native
+  sealed trait TC extends StObject
+  inline def TC: TC = "TC".asInstanceOf[TC]
+  
+  @js.native
+  sealed trait TD extends StObject
+  inline def TD: TD = "TD".asInstanceOf[TD]
+  
+  @js.native
+  sealed trait TF extends StObject
+  inline def TF: TF = "TF".asInstanceOf[TF]
+  
+  @js.native
+  sealed trait TG extends StObject
+  inline def TG: TG = "TG".asInstanceOf[TG]
+  
+  @js.native
+  sealed trait TH extends StObject
+  inline def TH: TH = "TH".asInstanceOf[TH]
+  
+  @js.native
   sealed trait THB extends StObject
   inline def THB: THB = "THB".asInstanceOf[THB]
+  
+  @js.native
+  sealed trait TJ extends StObject
+  inline def TJ: TJ = "TJ".asInstanceOf[TJ]
   
   @js.native
   sealed trait TJS extends StObject
   inline def TJS: TJS = "TJS".asInstanceOf[TJS]
   
   @js.native
+  sealed trait TK extends StObject
+  inline def TK: TK = "TK".asInstanceOf[TK]
+  
+  @js.native
   sealed trait TL extends StObject
   inline def TL: TL = "TL".asInstanceOf[TL]
+  
+  @js.native
+  sealed trait TM extends StObject
+  inline def TM: TM = "TM".asInstanceOf[TM]
   
   @js.native
   sealed trait TMT extends StObject
@@ -1057,6 +1609,10 @@ object validatorStrings {
   inline def TND: TND = "TND".asInstanceOf[TND]
   
   @js.native
+  sealed trait TO extends StObject
+  inline def TO: TO = "TO".asInstanceOf[TO]
+  
+  @js.native
   sealed trait TOP extends StObject
   inline def TOP: TOP = "TOP".asInstanceOf[TOP]
   
@@ -1069,8 +1625,16 @@ object validatorStrings {
   inline def TRY: TRY = "TRY".asInstanceOf[TRY]
   
   @js.native
+  sealed trait TT extends StObject
+  inline def TT: TT = "TT".asInstanceOf[TT]
+  
+  @js.native
   sealed trait TTD extends StObject
   inline def TTD: TTD = "TTD".asInstanceOf[TTD]
+  
+  @js.native
+  sealed trait TV extends StObject
+  inline def TV: TV = "TV".asInstanceOf[TV]
   
   @js.native
   sealed trait TW
@@ -1081,6 +1645,10 @@ object validatorStrings {
   @js.native
   sealed trait TWD extends StObject
   inline def TWD: TWD = "TWD".asInstanceOf[TWD]
+  
+  @js.native
+  sealed trait TZ extends StObject
+  inline def TZ: TZ = "TZ".asInstanceOf[TZ]
   
   @js.native
   sealed trait TZS extends StObject
@@ -1097,8 +1665,16 @@ object validatorStrings {
   inline def UAH: UAH = "UAH".asInstanceOf[UAH]
   
   @js.native
+  sealed trait UG extends StObject
+  inline def UG: UG = "UG".asInstanceOf[UG]
+  
+  @js.native
   sealed trait UGX extends StObject
   inline def UGX: UGX = "UGX".asInstanceOf[UGX]
+  
+  @js.native
+  sealed trait UM extends StObject
+  inline def UM: UM = "UM".asInstanceOf[UM]
   
   @js.native
   sealed trait US
@@ -1115,6 +1691,10 @@ object validatorStrings {
   inline def USN: USN = "USN".asInstanceOf[USN]
   
   @js.native
+  sealed trait UY extends StObject
+  inline def UY: UY = "UY".asInstanceOf[UY]
+  
+  @js.native
   sealed trait UYI extends StObject
   inline def UYI: UYI = "UYI".asInstanceOf[UYI]
   
@@ -1127,12 +1707,24 @@ object validatorStrings {
   inline def UYW: UYW = "UYW".asInstanceOf[UYW]
   
   @js.native
+  sealed trait UZ extends StObject
+  inline def UZ: UZ = "UZ".asInstanceOf[UZ]
+  
+  @js.native
   sealed trait UZS extends StObject
   inline def UZS: UZS = "UZS".asInstanceOf[UZS]
   
   @js.native
   sealed trait VA extends StObject
   inline def VA: VA = "VA".asInstanceOf[VA]
+  
+  @js.native
+  sealed trait VC extends StObject
+  inline def VC: VC = "VC".asInstanceOf[VC]
+  
+  @js.native
+  sealed trait VE extends StObject
+  inline def VE: VE = "VE".asInstanceOf[VE]
   
   @js.native
   sealed trait VES extends StObject
@@ -1143,12 +1735,32 @@ object validatorStrings {
   inline def VG: VG = "VG".asInstanceOf[VG]
   
   @js.native
+  sealed trait VI extends StObject
+  inline def VI: VI = "VI".asInstanceOf[VI]
+  
+  @js.native
+  sealed trait VN extends StObject
+  inline def VN: VN = "VN".asInstanceOf[VN]
+  
+  @js.native
   sealed trait VND extends StObject
   inline def VND: VND = "VND".asInstanceOf[VND]
   
   @js.native
+  sealed trait VU extends StObject
+  inline def VU: VU = "VU".asInstanceOf[VU]
+  
+  @js.native
   sealed trait VUV extends StObject
   inline def VUV: VUV = "VUV".asInstanceOf[VUV]
+  
+  @js.native
+  sealed trait WF extends StObject
+  inline def WF: WF = "WF".asInstanceOf[WF]
+  
+  @js.native
+  sealed trait WS extends StObject
+  inline def WS: WS = "WS".asInstanceOf[WS]
   
   @js.native
   sealed trait WST extends StObject
@@ -1227,8 +1839,16 @@ object validatorStrings {
   inline def XXX: XXX = "XXX".asInstanceOf[XXX]
   
   @js.native
+  sealed trait YE extends StObject
+  inline def YE: YE = "YE".asInstanceOf[YE]
+  
+  @js.native
   sealed trait YER extends StObject
   inline def YER: YER = "YER".asInstanceOf[YER]
+  
+  @js.native
+  sealed trait YT extends StObject
+  inline def YT: YT = "YT".asInstanceOf[YT]
   
   @js.native
   sealed trait ZA
@@ -1251,6 +1871,10 @@ object validatorStrings {
   inline def ZMW: ZMW = "ZMW".asInstanceOf[ZMW]
   
   @js.native
+  sealed trait ZW extends StObject
+  inline def ZW: ZW = "ZW".asInstanceOf[ZW]
+  
+  @js.native
   sealed trait ZWL extends StObject
   inline def ZWL: ZWL = "ZWL".asInstanceOf[ZWL]
   
@@ -1270,14 +1894,6 @@ object validatorStrings {
   @js.native
   sealed trait any extends StObject
   inline def any: any = "any".asInstanceOf[any]
-  
-  @js.native
-  sealed trait ar
-    extends StObject
-       with AlphaLocale
-       with AlphanumericLocale
-       with FloatLocale
-  inline def ar: ar = "ar".asInstanceOf[ar]
   
   @js.native
   sealed trait `ar-AE`
@@ -1447,6 +2063,14 @@ object validatorStrings {
        with AlphanumericLocale
        with FloatLocale
   inline def `ar-YE`: `ar-YE` = "ar-YE".asInstanceOf[`ar-YE`]
+  
+  @js.native
+  sealed trait ar_
+    extends StObject
+       with AlphaLocale
+       with AlphanumericLocale
+       with FloatLocale
+  inline def ar_ : ar_ = "ar".asInstanceOf[ar_]
   
   @js.native
   sealed trait `az-AZ`

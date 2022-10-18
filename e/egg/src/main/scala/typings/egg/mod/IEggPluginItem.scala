@@ -32,7 +32,7 @@ object IEggPluginItem {
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    inline def setEnvVarargs(value: EggEnvType*): Self = StObject.set(x, "env", js.Array(value :_*))
+    inline def setEnvVarargs(value: EggEnvType*): Self = StObject.set(x, "env", js.Array(value*))
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

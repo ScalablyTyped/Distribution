@@ -19,12 +19,6 @@ trait Failing[T /* <: TestFn */] extends StObject {
     /* timeout */ js.UndefOr[Double], 
     Unit
   ] = js.native
-  def each[T /* <: Array[Any] */](table: T): js.Function3[
-    /* name */ String | NameLike, 
-    /* fn */ js.Function1[/* args */ T, ReturnType[T]], 
-    /* timeout */ js.UndefOr[Double], 
-    Unit
-  ] = js.native
   def each[T /* <: Record[String, Any] */](table: js.Array[T]): js.Function3[
     /* name */ String | NameLike, 
     /* fn */ js.Function1[/* arg */ T, ReturnType[T]], 

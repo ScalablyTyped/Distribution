@@ -1,6 +1,6 @@
 package typings.fastifyAjvCompiler
 
-import typings.ajv.coreMod.Options
+import typings.ajv.distCoreMod.Options
 import typings.ajv.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

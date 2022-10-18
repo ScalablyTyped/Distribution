@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class WebGLCubeUVMaps protected ()
   extends typings.three.mod.WebGLCubeUVMaps {
-  def this(renderer: typings.three.threeMod.WebGLRenderer) = this()
+  def this(renderer: typings.three.srcThreeMod.WebGLRenderer) = this()
 }

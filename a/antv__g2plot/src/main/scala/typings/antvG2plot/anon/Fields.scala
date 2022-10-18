@@ -1,6 +1,6 @@
 package typings.antvG2plot.anon
 
-import typings.antvG2plot.typesCommonMod.Datum
+import typings.antvG2plot.libTypesCommonMod.Datum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ trait Fields extends StObject {
   
   var fields: js.Array[String]
   
-  def formatter(datum: Datum): NameValue
+  def formatter(datum: Datum): Value
   
   def showContent(items: Any): Boolean
   
@@ -21,7 +21,7 @@ object Fields {
   
   inline def apply(
     fields: js.Array[String],
-    formatter: Datum => NameValue,
+    formatter: Datum => Value,
     showContent: Any => Boolean,
     showMarkers: Boolean,
     showTitle: Boolean
@@ -36,7 +36,7 @@ object Fields {
     
     inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     
-    inline def setFormatter(value: Datum => NameValue): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+    inline def setFormatter(value: Datum => Value): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
     inline def setShowContent(value: Any => Boolean): Self = StObject.set(x, "showContent", js.Any.fromFunction1(value))
     

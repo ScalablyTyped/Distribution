@@ -1,8 +1,8 @@
 package typings.awsSdkClientCodecommitNode
 
-import typings.awsSdkClientCodecommitNode.inputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientCodecommitNode.typesInputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientCodecommitNode.typesTargetMod.Target
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

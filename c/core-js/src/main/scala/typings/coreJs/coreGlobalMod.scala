@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object coreGlobalMod extends Shortcut {
   
-  @JSImport("core-js/library/core/global", JSImport.Namespace)
+  @JSImport("core-js/core/global", JSImport.Namespace)
   @js.native
   val ^ : Any = js.native
   

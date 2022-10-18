@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.CreateKycPage
+import typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.CreateKycPage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

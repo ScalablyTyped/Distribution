@@ -1,7 +1,7 @@
 package typings.nodemailerHtmlToText
 
 import typings.htmlToText.mod.HtmlToTextOptions
-import typings.nodemailer.mailerMod.PluginFunction
+import typings.nodemailer.libMailerMod.PluginFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

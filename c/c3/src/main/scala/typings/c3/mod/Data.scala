@@ -6,7 +6,7 @@ import typings.c3.anon.Format
 import typings.c3.anon.LabelText
 import typings.c3.anon.Normalize
 import typings.c3.anon.Value
-import typings.c3.anon.`1`
+import typings.c3.anon.`2`
 import typings.c3.c3Strings.asc
 import typings.c3.c3Strings.desc
 import typings.d3Color.mod.HSLColor
@@ -122,7 +122,7 @@ trait Data extends StObject {
     * Show labels on each data points or set formatter function for data labels.
     * Control all labels with a boolean value or `format` function, or control behavior for individual data with a `format` object.
     */
-  var labels: js.UndefOr[Boolean | Format | `1`] = js.undefined
+  var labels: js.UndefOr[Boolean | Format | `2`] = js.undefined
   
   /**
     * Used if loading JSON via `data.url`.
@@ -333,7 +333,7 @@ object Data {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setLabels(value: Boolean | Format | `1`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: Boolean | Format | `2`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     

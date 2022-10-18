@@ -45,7 +45,7 @@ trait Remarkable extends StObject {
   def renderInline(str: String): String = js.native
   def renderInline(str: String, env: Env): String = js.native
   
-  var renderer: typings.remarkable.rendererMod.^ = js.native
+  var renderer: typings.remarkable.libRendererMod.^ = js.native
   
   /**
     * Define options.

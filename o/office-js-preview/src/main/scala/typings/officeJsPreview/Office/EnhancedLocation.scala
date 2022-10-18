@@ -45,7 +45,7 @@ trait EnhancedLocation extends StObject {
     * - `InvalidFormatError`: The format of the specified data object is not valid.
     *
     * @param locationIdentifiers The locations to be added to the current list of locations.
-    * @param options An object literal that contains one or more of the following properties.
+    * @param options An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object. Check the `status` property of `asyncResult` to determine if the call succeeded.
@@ -82,7 +82,7 @@ trait EnhancedLocation extends StObject {
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
-    * @param options An object literal that contains one or more of the following properties.
+    * @param options An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -127,7 +127,7 @@ trait EnhancedLocation extends StObject {
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
     * @param locationIdentifiers The locations to be removed from the current list of locations.
-    * @param options An object literal that contains one or more of the following properties.
+    * @param options An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object. Check the `status` property of `asyncResult` to determine if the call succeeded.

@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCodepenSquareFilledMod.CodepenSquareFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codepenSquareFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CodepenSquareFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CodepenSquareFilled", JSImport.Default)
   @js.native
   val default: CodepenSquareFilledIconType = js.native
-  
-  @js.native
-  trait CodepenSquareFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CodepenSquareFilledIconType: String = js.native
-  }
   
   type _To = CodepenSquareFilledIconType
   

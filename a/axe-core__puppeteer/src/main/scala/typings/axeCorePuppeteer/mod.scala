@@ -1,7 +1,7 @@
 package typings.axeCorePuppeteer
 
-import typings.axeCorePuppeteer.loadPageMod.OwningAxePuppeteer
-import typings.axeCorePuppeteer.typesMod.IPageOptions
+import typings.axeCorePuppeteer.distLoadPageMod.OwningAxePuppeteer
+import typings.axeCorePuppeteer.distTypesMod.IPageOptions
 import typings.puppeteer.mod.Browser
 import typings.puppeteer.mod.Frame
 import typings.puppeteer.mod.Page
@@ -18,7 +18,7 @@ object mod {
   @JSImport("@axe-core/puppeteer", JSImport.Default)
   @js.native
   open class default protected ()
-    extends typings.axeCorePuppeteer.axePuppeteerMod.AxePuppeteer {
+    extends typings.axeCorePuppeteer.distAxePuppeteerMod.AxePuppeteer {
     def this(pageFrame: Frame) = this()
     def this(pageFrame: Page) = this()
     def this(pageFrame: Frame, source: String) = this()
@@ -28,7 +28,7 @@ object mod {
   @JSImport("@axe-core/puppeteer", "AxePuppeteer")
   @js.native
   open class AxePuppeteer protected ()
-    extends typings.axeCorePuppeteer.axePuppeteerMod.AxePuppeteer {
+    extends typings.axeCorePuppeteer.distAxePuppeteerMod.AxePuppeteer {
     def this(pageFrame: Frame) = this()
     def this(pageFrame: Page) = this()
     def this(pageFrame: Frame, source: String) = this()

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lumino/application" : "1.29.3"
+      "@lumino/application" : "1.29.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@lumino/application" : "1.29.3"
+      "@lumino/application" : "1.29.4"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 package typings.yaml.anon
 
-import typings.yaml.logMod.LogLevelId
-import typings.yaml.nodeMod.ParsedNode
+import typings.yaml.distLogMod.LogLevelId
+import typings.yaml.distNodesNodeMod.ParsedNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

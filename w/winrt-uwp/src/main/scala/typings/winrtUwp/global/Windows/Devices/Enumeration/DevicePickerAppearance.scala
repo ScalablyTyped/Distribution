@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the appearance of a device picker. */
-@JSGlobal("Windows.Devices.Enumeration.DevicePickerAppearance")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.DevicePickerAppearance")
 @js.native
-abstract class DevicePickerAppearance ()
+open class DevicePickerAppearance ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DevicePickerAppearance {
   

@@ -1,6 +1,6 @@
 package typings.awsGreengrassCoreSdk.streamManagerMod
 
-import typings.awsGreengrassCoreSdk.dataMod.IoTAnalyticsConfigMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.IoTAnalyticsConfigMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "IoTAnalyticsConfig")
 @js.native
 open class IoTAnalyticsConfig protected ()
-  extends typings.awsGreengrassCoreSdk.clientMod.IoTAnalyticsConfig {
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.IoTAnalyticsConfig {
   /**
     * @param identifier A unique identifier to identify this individual upload stream.
     * Must be an alphanumeric string including spaces, commas, periods, hyphens, and underscores with length between 1 and 255.
@@ -50,5 +50,5 @@ object IoTAnalyticsConfig {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromMap(d: IoTAnalyticsConfigMap): typings.awsGreengrassCoreSdk.dataMod.IoTAnalyticsConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.IoTAnalyticsConfig]
+  inline def fromMap(d: IoTAnalyticsConfigMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.IoTAnalyticsConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.IoTAnalyticsConfig]
 }

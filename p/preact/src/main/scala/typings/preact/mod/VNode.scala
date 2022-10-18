@@ -1,6 +1,6 @@
 package typings.preact.mod
 
-import typings.preact.anon.Children
+import typings.preact.anon.ChildrenComponentChildren
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait VNode[P] extends StObject {
   
   var key: Key
   
-  var props: P & Children
+  var props: P & ChildrenComponentChildren
   
   /**
   	 * ref is not guaranteed by React.ReactElement, for compatibility reasons
@@ -35,7 +35,7 @@ trait VNode[P] extends StObject {
 }
 object VNode {
   
-  inline def apply[P](key: Key, props: P & Children, `type`: ComponentType[P] | String): VNode[P] = {
+  inline def apply[P](key: Key, props: P & ChildrenComponentChildren, `type`: ComponentType[P] | String): VNode[P] = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNode[P]]
@@ -49,7 +49,7 @@ object VNode {
     
     inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: P & Children): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: P & ChildrenComponentChildren): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

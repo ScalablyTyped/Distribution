@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.SigPolicyQualifier")
 @js.native
 open class SigPolicyQualifier ()
-  extends typings.xadesjs.typesXmlMod.SigPolicyQualifier {
+  extends typings.xadesjs.buildTypesXmlMod.SigPolicyQualifier {
   def this(properties: js.Object) = this()
 }

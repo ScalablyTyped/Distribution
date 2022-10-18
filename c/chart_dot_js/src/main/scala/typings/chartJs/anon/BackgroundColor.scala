@@ -1,8 +1,8 @@
 package typings.chartJs.anon
 
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.mod.Scriptable
 import typings.chartJs.mod.ScriptableLineSegmentContext
+import typings.chartJs.typesBasicMod.AnyObject
 import typings.std.CanvasLineCap
 import typings.std.CanvasLineJoin
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BackgroundColor extends StObject {
   
-  var backgroundColor: Scriptable[js.UndefOr[typings.chartJs.colorMod.Color], ScriptableLineSegmentContext]
+  var backgroundColor: Scriptable[js.UndefOr[typings.chartJs.typesColorMod.Color], ScriptableLineSegmentContext]
   
   var borderCapStyle: Scriptable[js.UndefOr[CanvasLineCap], ScriptableLineSegmentContext]
   
-  var borderColor: Scriptable[js.UndefOr[typings.chartJs.colorMod.Color], ScriptableLineSegmentContext]
+  var borderColor: Scriptable[js.UndefOr[typings.chartJs.typesColorMod.Color], ScriptableLineSegmentContext]
   
   var borderDash: Scriptable[js.UndefOr[js.Array[Double]], ScriptableLineSegmentContext]
   
@@ -34,10 +34,10 @@ object BackgroundColor {
   
   extension [Self <: BackgroundColor](x: Self) {
     
-    inline def setBackgroundColor(value: Scriptable[js.UndefOr[typings.chartJs.colorMod.Color], ScriptableLineSegmentContext]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Scriptable[js.UndefOr[typings.chartJs.typesColorMod.Color], ScriptableLineSegmentContext]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorFunction2(
-      value: (ScriptableLineSegmentContext, /* options */ AnyObject) => js.UndefOr[js.UndefOr[typings.chartJs.colorMod.Color]]
+      value: (ScriptableLineSegmentContext, /* options */ AnyObject) => js.UndefOr[js.UndefOr[typings.chartJs.typesColorMod.Color]]
     ): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction2(value))
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
@@ -50,10 +50,10 @@ object BackgroundColor {
     
     inline def setBorderCapStyleUndefined: Self = StObject.set(x, "borderCapStyle", js.undefined)
     
-    inline def setBorderColor(value: Scriptable[js.UndefOr[typings.chartJs.colorMod.Color], ScriptableLineSegmentContext]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: Scriptable[js.UndefOr[typings.chartJs.typesColorMod.Color], ScriptableLineSegmentContext]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorFunction2(
-      value: (ScriptableLineSegmentContext, /* options */ AnyObject) => js.UndefOr[js.UndefOr[typings.chartJs.colorMod.Color]]
+      value: (ScriptableLineSegmentContext, /* options */ AnyObject) => js.UndefOr[js.UndefOr[typings.chartJs.typesColorMod.Color]]
     ): Self = StObject.set(x, "borderColor", js.Any.fromFunction2(value))
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)

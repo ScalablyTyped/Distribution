@@ -5,7 +5,7 @@ import typings.baseui.baseuiStrings.vertical
 import typings.baseui.datepickerTypesMod.DatepickerOverrides
 import typings.baseui.datepickerTypesMod.InputRole
 import typings.baseui.datepickerTypesMod.QuickSelectOption
-import typings.baseui.utilsTypesMod.DateIOAdapter
+import typings.baseui.datepickerUtilsTypesMod.DateIOAdapter
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,7 +55,7 @@ trait CalendarPropsunknownadapt extends StObject {
   var monthsShown: js.UndefOr[Double] = js.undefined
   
   /** Event handler that is called when a new date is selected. */
-  var onChange: js.UndefOr[js.Function1[/* a */ `4`, Any]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* a */ `1`, Any]] = js.undefined
   
   /** Day's `click` event handler. */
   var onDayClick: js.UndefOr[js.Function1[/* a */ Date, Any]] = js.undefined
@@ -193,7 +193,7 @@ object CalendarPropsunknownadapt {
     
     inline def setMonthsShownUndefined: Self = StObject.set(x, "monthsShown", js.undefined)
     
-    inline def setOnChange(value: /* a */ `4` => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* a */ `1` => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     

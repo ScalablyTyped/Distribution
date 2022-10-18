@@ -2,9 +2,6 @@ package typings.hydraBox
 
 import typings.express.mod.RequestHandler
 import typings.express.mod.Router
-import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
 import typings.hydraBox.apiMod.Api
 import typings.hydraBox.mod.ResourceLoader
 import typings.rdfjsTypes.dataModelMod.Quad
@@ -89,8 +86,6 @@ object middlewareMod {
             ])
       ): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
       
-      inline def setOperationsFunction3(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "operations", js.Any.fromFunction3(value))
-      
       inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
       
       inline def setOperationsVarargs(
@@ -120,8 +115,6 @@ object middlewareMod {
               ]
             ])
       ): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-      
-      inline def setResourceFunction3(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "resource", js.Any.fromFunction3(value))
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       

@@ -1,9 +1,9 @@
 package typings.fastifyFavicon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.fastify.pluginMod.FastifyPluginCallback
-import typings.fastify.typeProviderMod.FastifyTypeProviderDefault
-import typings.fastify.utilsMod.RawServerDefault
+import typings.fastify.typesPluginMod.FastifyPluginCallback
+import typings.fastify.typesTypeProviderMod.FastifyTypeProviderDefault
+import typings.fastify.typesUtilsMod.RawServerDefault
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.cheerioSelect
 
-import typings.cssWhat.typesMod.Selector
+import typings.cssWhat.libEsTypesMod.Selector
 import typings.domhandler.libNodeMod.AnyNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

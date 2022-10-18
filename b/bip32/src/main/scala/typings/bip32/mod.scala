@@ -1,7 +1,7 @@
 package typings.bip32
 
-import typings.bip32.bip32Mod.BIP32API
-import typings.bip32.bip32Mod.TinySecp256k1Interface
+import typings.bip32.typesBip32Mod.BIP32API
+import typings.bip32.typesBip32Mod.TinySecp256k1Interface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

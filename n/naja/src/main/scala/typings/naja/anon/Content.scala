@@ -1,6 +1,6 @@
 package typings.naja.anon
 
-import typings.naja.snippetHandlerMod.SnippetUpdateOperation
+import typings.naja.distCoreSnippetHandlerMod.SnippetUpdateOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait Content extends StObject {
   @JSName("operation")
   var operation_Original: SnippetUpdateOperation
   
-  var options: typings.naja.najaMod.Options
+  var options: typings.naja.distNajaMod.Options
   
   var snippet: typings.std.Element
 }
@@ -25,7 +25,7 @@ object Content {
     content: String,
     fromCache: Boolean,
     operation: (/* snippet */ typings.std.Element, /* content */ String) => Unit,
-    options: typings.naja.najaMod.Options,
+    options: typings.naja.distNajaMod.Options,
     snippet: typings.std.Element
   ): Content = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], fromCache = fromCache.asInstanceOf[js.Any], operation = js.Any.fromFunction2(operation), options = options.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any])
@@ -40,7 +40,7 @@ object Content {
     
     inline def setOperation(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
     
-    inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.naja.distNajaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setSnippet(value: typings.std.Element): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
   }

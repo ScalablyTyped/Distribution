@@ -26,14 +26,14 @@ object mod {
        with Extension {
     
     @JSName("base")
-    var base_StringExtension: StringSchema
+    var base_StringExtension: StringSchema[String]
     
     @JSName("type")
     var type_StringExtension: string
   }
   object StringExtension {
     
-    inline def apply(base: StringSchema): StringExtension = {
+    inline def apply(base: StringSchema[String]): StringExtension = {
       val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[StringExtension]
@@ -41,7 +41,7 @@ object mod {
     
     extension [Self <: StringExtension](x: Self) {
       
-      inline def setBase(value: StringSchema): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: StringSchema[String]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
       inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

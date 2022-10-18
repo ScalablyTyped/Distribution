@@ -9,13 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object LinkTrackingOptions extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.postmark.messageSupportingTypesMod.LinkTrackingOptions & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions & String
+  ] = js.native
   
-  /* "HtmlAndText" */ val HtmlAndText: typings.postmark.messageSupportingTypesMod.LinkTrackingOptions.HtmlAndText & String = js.native
+  /* "HtmlAndText" */ val HtmlAndText: typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.HtmlAndText & String = js.native
   
-  /* "HtmlOnly" */ val HtmlOnly: typings.postmark.messageSupportingTypesMod.LinkTrackingOptions.HtmlOnly & String = js.native
+  /* "HtmlOnly" */ val HtmlOnly: typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.HtmlOnly & String = js.native
   
-  /* "None" */ val None: typings.postmark.messageSupportingTypesMod.LinkTrackingOptions.None & String = js.native
+  /* "None" */ val None: typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.None & String = js.native
   
-  /* "TextOnly" */ val TextOnly: typings.postmark.messageSupportingTypesMod.LinkTrackingOptions.TextOnly & String = js.native
+  /* "TextOnly" */ val TextOnly: typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.TextOnly & String = js.native
 }

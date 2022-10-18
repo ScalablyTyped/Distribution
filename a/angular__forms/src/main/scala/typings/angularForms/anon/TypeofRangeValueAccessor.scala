@@ -16,7 +16,7 @@ trait TypeofRangeValueAccessor
   
   var ɵdir: ɵɵDirectiveDeclaration[
     RangeValueAccessor, 
-    String, 
+    /* input[type=range][formControlName],input[type=range][formControl],input[type=range][ngModel] */ String, 
     scala.Nothing, 
     js.Object, 
     js.Object, 

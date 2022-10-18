@@ -2,8 +2,8 @@ package typings.ssimJs
 
 import typings.ssimJs.anon.Mssim
 import typings.ssimJs.anon.PartialOptions
-import typings.ssimJs.typesMod.ImageData
-import typings.ssimJs.typesMod.Options
+import typings.ssimJs.distTypesMod.ImageData
+import typings.ssimJs.distTypesMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.devexpressUtils
 
-import typings.devexpressUtils.constMod.ConstInterval
-import typings.devexpressUtils.mutableMod.MutableInterval
+import typings.devexpressUtils.libIntervalsConstMod.ConstInterval
+import typings.devexpressUtils.libIntervalsMutableMod.MutableInterval
 import typings.std.HTMLScriptElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

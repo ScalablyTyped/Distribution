@@ -1,7 +1,7 @@
 package typings.reactstrap
 
-import typings.reactstrap.inputMod.InputType
-import typings.reactstrap.offcanvasMod.Direction
+import typings.reactstrap.typesLibInputMod.InputType
+import typings.reactstrap.typesLibOffcanvasMod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,7 +109,7 @@ object reactstrapStrings {
   @js.native
   sealed trait down
     extends StObject
-       with typings.reactstrap.dropdownMod.Direction
+       with typings.reactstrap.typesLibDropdownMod.Direction
   inline def down: down = "down".asInstanceOf[down]
   
   @js.native
@@ -121,8 +121,8 @@ object reactstrapStrings {
   @js.native
   sealed trait end
     extends StObject
+       with typings.reactstrap.typesLibDropdownMod.Direction
        with Direction
-       with typings.reactstrap.dropdownMod.Direction
   inline def end: end = "end".asInstanceOf[end]
   
   @js.native
@@ -330,8 +330,8 @@ object reactstrapStrings {
   @js.native
   sealed trait start
     extends StObject
+       with typings.reactstrap.typesLibDropdownMod.Direction
        with Direction
-       with typings.reactstrap.dropdownMod.Direction
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native
@@ -399,7 +399,7 @@ object reactstrapStrings {
   @js.native
   sealed trait up
     extends StObject
-       with typings.reactstrap.dropdownMod.Direction
+       with typings.reactstrap.typesLibDropdownMod.Direction
   inline def up: up = "up".asInstanceOf[up]
   
   @js.native

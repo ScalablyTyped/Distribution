@@ -1,8 +1,10 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.mod.Font
 import typings.plotlyJs.plotlyJsStrings.center
 import typings.plotlyJs.plotlyJsStrings.left
 import typings.plotlyJs.plotlyJsStrings.right
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<plotly.js.plotly.js.CurrentValue> */
 trait PartialCurrentValue extends StObject {
   
-  var font: js.UndefOr[PartialFont] = js.undefined
+  var font: js.UndefOr[Partial[Font]] = js.undefined
   
   var offset: js.UndefOr[Double] = js.undefined
   
@@ -31,7 +33,7 @@ object PartialCurrentValue {
   
   extension [Self <: PartialCurrentValue](x: Self) {
     
-    inline def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Partial[Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     

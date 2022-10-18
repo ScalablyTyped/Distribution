@@ -54,7 +54,7 @@ trait Assets extends StObject {
   /** Format: date-time */
   var published_at: String | Null
   
-  var reactions: js.UndefOr[Confused] = js.undefined
+  var reactions: js.UndefOr[`1`] = js.undefined
   
   /**
     * @description The name of the tag.
@@ -152,7 +152,7 @@ object Assets {
     
     inline def setPublished_atNull: Self = StObject.set(x, "published_at", null)
     
-    inline def setReactions(value: Confused): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+    inline def setReactions(value: `1`): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
     inline def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
     

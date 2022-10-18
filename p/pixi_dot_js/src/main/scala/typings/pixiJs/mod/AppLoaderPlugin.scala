@@ -1,6 +1,7 @@
 package typings.pixiJs.mod
 
 import typings.pixiExtensions.mod.ExtensionMetadata
+import typings.pixiLoaders.GlobalMixins.IApplicationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,9 +34,7 @@ object AppLoaderPlugin {
     * @private
     */
   inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
-  inline def init(
-    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalMixins.IApplicationOptions */ Any
-  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(options: IApplicationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Loader instance to help with asset loading.

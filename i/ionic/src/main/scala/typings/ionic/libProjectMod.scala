@@ -15,11 +15,11 @@ import typings.ionic.definitionsMod.IonicContext
 import typings.ionic.definitionsMod.IonicEnvironmentFlags
 import typings.ionic.definitionsMod.ProjectIntegration
 import typings.ionic.definitionsMod.ProjectType
-import typings.ionic.errorsMod.BaseException
 import typings.ionic.ionicStrings.app
 import typings.ionic.ionicStrings.multiapp
 import typings.ionic.ionicStrings.unknown
-import typings.ionicCliFramework.configMod.BaseConfigOptions
+import typings.ionic.libErrorsMod.BaseException
+import typings.ionicCliFramework.libConfigMod.BaseConfigOptions
 import typings.ionicCliFramework.mod.BaseConfig
 import typings.ionicCliFrameworkPrompts.mod.PromptModule
 import typings.ionicCliFrameworkPrompts.mod.PromptQuestionCheckbox
@@ -39,9 +39,9 @@ object libProjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("ionic/lib/project", "Project")
+  /* note: abstract class */ @JSImport("ionic/lib/project", "Project")
   @js.native
-  abstract class Project protected ()
+  open class Project protected ()
     extends StObject
        with IProject {
     def this(details: ProjectDetailsResult, e: ProjectDeps) = this()

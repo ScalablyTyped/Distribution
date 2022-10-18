@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.cloudeventsSdk.anon.TypeofHTTPEmitter
 import typings.cloudeventsSdk.anon.Url
-import typings.cloudeventsSdk.cloudeventMod.CE
+import typings.cloudeventsSdk.libCloudeventMod.CE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ object mod {
   @JSImport("cloudevents-sdk", "CloudEvent")
   @js.native
   open class CloudEvent protected ()
-    extends typings.cloudeventsSdk.cloudeventMod.CloudEvent {
+    extends typings.cloudeventsSdk.libCloudeventMod.CloudEvent {
     /**
       * Creates a new CloudEvent instance
       * @param {object} event CloudEvent properties as a simple object
@@ -39,8 +39,8 @@ object mod {
   }
   @JSImport("cloudevents-sdk", "CloudEvent")
   @js.native
-  def CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent] = js.native
-  inline def CloudEvent_=(x: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CloudEvent")(x.asInstanceOf[js.Any])
+  def CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.libCloudeventMod.CloudEvent] = js.native
+  inline def CloudEvent_=(x: Instantiable1[/* event */ CE, typings.cloudeventsSdk.libCloudeventMod.CloudEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CloudEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("cloudevents-sdk", "Constants")
   @js.native
@@ -51,7 +51,7 @@ object mod {
   @JSImport("cloudevents-sdk", "HTTPEmitter")
   @js.native
   open class HTTPEmitter protected ()
-    extends typings.cloudeventsSdk.httpEmitterMod.HTTPEmitter {
+    extends typings.cloudeventsSdk.libBindingsHttpHttpEmitterMod.HTTPEmitter {
     /**
       * Creates a new instance of {HTTPEmitter}. The default emitter uses the 1.0
       * protocol specification in binary mode.
@@ -75,9 +75,9 @@ object mod {
     * Create an instance of an HTTPReceiver to accept incoming CloudEvents.
     */
   open class HTTPReceiver ()
-    extends typings.cloudeventsSdk.httpReceiverMod.HTTPReceiver
+    extends typings.cloudeventsSdk.libBindingsHttpHttpReceiverMod.HTTPReceiver
   @JSImport("cloudevents-sdk", "HTTPReceiver")
   @js.native
-  def HTTPReceiver: Instantiable0[typings.cloudeventsSdk.httpReceiverMod.HTTPReceiver] = js.native
-  inline def HTTPReceiver_=(x: Instantiable0[typings.cloudeventsSdk.httpReceiverMod.HTTPReceiver]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPReceiver")(x.asInstanceOf[js.Any])
+  def HTTPReceiver: Instantiable0[typings.cloudeventsSdk.libBindingsHttpHttpReceiverMod.HTTPReceiver] = js.native
+  inline def HTTPReceiver_=(x: Instantiable0[typings.cloudeventsSdk.libBindingsHttpHttpReceiverMod.HTTPReceiver]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPReceiver")(x.asInstanceOf[js.Any])
 }

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientGenomics.gapi.client.genomics
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait WorkerStatus extends StObject {
   
   /** Status of attached disks. */
   var attachedDisks: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.genomics.gapi.client.genomics.DiskStatus}
-    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.WorkerStatus & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.genomics.gapi.client.genomics.DiskStatus} */ js.Any
   ] = js.undefined
   
   /** Status of the boot disk. */
@@ -36,9 +33,7 @@ object WorkerStatus {
   extension [Self <: WorkerStatus](x: Self) {
     
     inline def setAttachedDisks(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.genomics.gapi.client.genomics.DiskStatus}
-      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.WorkerStatus & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.genomics.gapi.client.genomics.DiskStatus} */ js.Any
     ): Self = StObject.set(x, "attachedDisks", value.asInstanceOf[js.Any])
     
     inline def setAttachedDisksUndefined: Self = StObject.set(x, "attachedDisks", js.undefined)

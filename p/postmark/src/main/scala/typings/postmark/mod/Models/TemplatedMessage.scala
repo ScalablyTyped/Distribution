@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postmark", "Models.TemplatedMessage")
 @js.native
 open class TemplatedMessage protected ()
-  extends typings.postmark.modelsMod.TemplatedMessage {
+  extends typings.postmark.distClientModelsMod.TemplatedMessage {
   def this(
     from: String,
     templateIdOrAlias: Double | String,
@@ -18,8 +18,8 @@ open class TemplatedMessage protected ()
     replyTo: js.UndefOr[String],
     tag: js.UndefOr[String],
     trackOpens: js.UndefOr[Boolean],
-    trackLinks: js.UndefOr[typings.postmark.messageSupportingTypesMod.LinkTrackingOptions],
-    headers: js.UndefOr[js.Array[typings.postmark.messageSupportingTypesMod.Header]],
-    attachments: js.UndefOr[js.Array[typings.postmark.messageSupportingTypesMod.Attachment]]
+    trackLinks: js.UndefOr[typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions],
+    headers: js.UndefOr[js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]],
+    attachments: js.UndefOr[js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Attachment]]
   ) = this()
 }

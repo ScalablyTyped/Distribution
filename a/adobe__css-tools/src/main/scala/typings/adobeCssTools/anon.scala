@@ -1,7 +1,7 @@
 package typings.adobeCssTools
 
-import typings.adobeCssTools.cssParseErrorMod.default
-import typings.adobeCssTools.typeMod.CssAtRuleAST
+import typings.adobeCssTools.distCjsCssParseErrorMod.default
+import typings.adobeCssTools.distCjsTypeMod.CssAtRuleAST
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

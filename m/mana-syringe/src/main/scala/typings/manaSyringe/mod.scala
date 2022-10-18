@@ -1,19 +1,19 @@
 package typings.manaSyringe
 
 import typings.inversify.anon.Constructor
-import typings.inversify.decoratorUtilsMod.DecoratorTarget
+import typings.inversify.libAnnotationDecoratorUtilsMod.DecoratorTarget
 import typings.manaSyringe.anon.PartialTokenOption
-import typings.manaSyringe.contributionProtocolMod.Option
-import typings.manaSyringe.coreMod.Decorator
-import typings.manaSyringe.coreMod.Syringe.DecoratorOption
-import typings.manaSyringe.coreMod.Syringe.InjectOption
-import typings.manaSyringe.coreMod.Syringe.MaybeArray
-import typings.manaSyringe.coreMod.Syringe.Module
-import typings.manaSyringe.coreMod.Syringe.Named
-import typings.manaSyringe.coreMod.Syringe.Register
-import typings.manaSyringe.coreMod.Syringe.Registry
-import typings.manaSyringe.coreMod.Syringe.Token
-import typings.manaSyringe.coreMod.Syringe.UnionToken
+import typings.manaSyringe.libContributionContributionProtocolMod.Option
+import typings.manaSyringe.libCoreMod.Decorator
+import typings.manaSyringe.libCoreMod.Syringe.DecoratorOption
+import typings.manaSyringe.libCoreMod.Syringe.InjectOption
+import typings.manaSyringe.libCoreMod.Syringe.MaybeArray
+import typings.manaSyringe.libCoreMod.Syringe.Module
+import typings.manaSyringe.libCoreMod.Syringe.Named
+import typings.manaSyringe.libCoreMod.Syringe.Register
+import typings.manaSyringe.libCoreMod.Syringe.Registry
+import typings.manaSyringe.libCoreMod.Syringe.Token
+import typings.manaSyringe.libCoreMod.Syringe.UnionToken
 import typings.manaSyringe.mod.Syringe.DefinedToken
 import typings.std.Map
 import typings.std.MethodDecorator
@@ -33,8 +33,8 @@ object mod {
   @JSImport("mana-syringe", "Container")
   @js.native
   open class Container ()
-    extends typings.manaSyringe.containerMod.Container {
-    def this(inversifyContainer: typings.inversify.interfacesMod.interfaces.Container) = this()
+    extends typings.manaSyringe.libContainerMod.Container {
+    def this(inversifyContainer: typings.inversify.libInterfacesInterfacesMod.interfaces.Container) = this()
   }
   /* static members */
   object Container {
@@ -45,12 +45,12 @@ object mod {
     
     inline def config(option: InjectOption[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def getContainer(key: typings.inversify.interfacesMod.interfaces.Container): typings.manaSyringe.coreMod.Syringe.Container = ^.asInstanceOf[js.Dynamic].applyDynamic("getContainer")(key.asInstanceOf[js.Any]).asInstanceOf[typings.manaSyringe.coreMod.Syringe.Container]
+    inline def getContainer(key: typings.inversify.libInterfacesInterfacesMod.interfaces.Container): typings.manaSyringe.libCoreMod.Syringe.Container = ^.asInstanceOf[js.Dynamic].applyDynamic("getContainer")(key.asInstanceOf[js.Any]).asInstanceOf[typings.manaSyringe.libCoreMod.Syringe.Container]
     
     inline def setContainer(
-      key: typings.inversify.interfacesMod.interfaces.Container,
-      value: typings.manaSyringe.coreMod.Syringe.Container
-    ): Map[Double, typings.manaSyringe.coreMod.Syringe.Container] = (^.asInstanceOf[js.Dynamic].applyDynamic("setContainer")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Map[Double, typings.manaSyringe.coreMod.Syringe.Container]]
+      key: typings.inversify.libInterfacesInterfacesMod.interfaces.Container,
+      value: typings.manaSyringe.libCoreMod.Syringe.Container
+    ): Map[Double, typings.manaSyringe.libCoreMod.Syringe.Container] = (^.asInstanceOf[js.Dynamic].applyDynamic("setContainer")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Map[Double, typings.manaSyringe.libCoreMod.Syringe.Container]]
   }
   
   object Contribution {
@@ -64,10 +64,10 @@ object mod {
     val Provider: DefinedToken = js.native
     
     /* was `typeof contributionRegister` */
-    inline def register(registerMethod: Register, identifier: typings.manaSyringe.coreMod.Syringe.DefinedToken): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(registerMethod.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(registerMethod: Register, identifier: typings.manaSyringe.libCoreMod.Syringe.DefinedToken): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(registerMethod.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def register(
       registerMethod: Register,
-      identifier: typings.manaSyringe.coreMod.Syringe.DefinedToken,
+      identifier: typings.manaSyringe.libCoreMod.Syringe.DefinedToken,
       option: Option
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(registerMethod.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
@@ -75,21 +75,21 @@ object mod {
   @JSImport("mana-syringe", "DefaultContributionProvider")
   @js.native
   open class DefaultContributionProvider[T /* <: Record[String, Any] */] protected ()
-    extends typings.manaSyringe.contributionMod.DefaultContributionProvider[T] {
-    def this(serviceIdentifier: Token[T], container: typings.manaSyringe.coreMod.Syringe.Container) = this()
+    extends typings.manaSyringe.libContributionMod.DefaultContributionProvider[T] {
+    def this(serviceIdentifier: Token[T], container: typings.manaSyringe.libCoreMod.Syringe.Container) = this()
     def this(
       serviceIdentifier: Token[T],
-      container: typings.manaSyringe.coreMod.Syringe.Container,
+      container: typings.manaSyringe.libCoreMod.Syringe.Container,
       option: Option
     ) = this()
   }
   
   @JSImport("mana-syringe", "GlobalContainer")
   @js.native
-  val GlobalContainer: typings.manaSyringe.containerMod.Container = js.native
+  val GlobalContainer: typings.manaSyringe.libContainerMod.Container = js.native
   
-  inline def Module(): typings.manaSyringe.syringeModuleMod.SyringeModule = ^.asInstanceOf[js.Dynamic].applyDynamic("Module")().asInstanceOf[typings.manaSyringe.syringeModuleMod.SyringeModule]
-  inline def Module(register: Registry): typings.manaSyringe.syringeModuleMod.SyringeModule = ^.asInstanceOf[js.Dynamic].applyDynamic("Module")(register.asInstanceOf[js.Any]).asInstanceOf[typings.manaSyringe.syringeModuleMod.SyringeModule]
+  inline def Module(): typings.manaSyringe.libModuleSyringeModuleMod.SyringeModule = ^.asInstanceOf[js.Dynamic].applyDynamic("Module")().asInstanceOf[typings.manaSyringe.libModuleSyringeModuleMod.SyringeModule]
+  inline def Module(register: Registry): typings.manaSyringe.libModuleSyringeModuleMod.SyringeModule = ^.asInstanceOf[js.Dynamic].applyDynamic("Module")(register.asInstanceOf[js.Any]).asInstanceOf[typings.manaSyringe.libModuleSyringeModuleMod.SyringeModule]
   
   @JSImport("mana-syringe", "OptionSymbol")
   @js.native
@@ -97,7 +97,7 @@ object mod {
   
   @JSImport("mana-syringe", "Provider")
   @js.native
-  val Provider: typings.manaSyringe.coreMod.Syringe.DefinedToken = js.native
+  val Provider: typings.manaSyringe.libCoreMod.Syringe.DefinedToken = js.native
   
   object Syringe {
     
@@ -116,7 +116,7 @@ object mod {
     @JSImport("mana-syringe", "Syringe.DefinedToken")
     @js.native
     open class DefinedToken protected ()
-      extends typings.manaSyringe.coreMod.Syringe.DefinedToken {
+      extends typings.manaSyringe.libCoreMod.Syringe.DefinedToken {
       def this(name: String) = this()
       def this(name: String, option: PartialTokenOption) = this()
     }
@@ -126,18 +126,18 @@ object mod {
     object Lifecycle extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.manaSyringe.coreMod.Syringe.Lifecycle & String] = js.native
+      def apply(value: String): js.UndefOr[typings.manaSyringe.libCoreMod.Syringe.Lifecycle & String] = js.native
       
-      /* "singleton" */ val singleton: typings.manaSyringe.coreMod.Syringe.Lifecycle.singleton & String = js.native
+      /* "singleton" */ val singleton: typings.manaSyringe.libCoreMod.Syringe.Lifecycle.singleton & String = js.native
       
-      /* "transient" */ val transient: typings.manaSyringe.coreMod.Syringe.Lifecycle.transient & String = js.native
+      /* "transient" */ val transient: typings.manaSyringe.libCoreMod.Syringe.Lifecycle.transient & String = js.native
     }
     
     /**
       * 定义注入标识，默认允许多重注入
       */
-    inline def defineToken(name: String): typings.manaSyringe.coreMod.Syringe.DefinedToken = ^.asInstanceOf[js.Dynamic].applyDynamic("defineToken")(name.asInstanceOf[js.Any]).asInstanceOf[typings.manaSyringe.coreMod.Syringe.DefinedToken]
-    inline def defineToken(name: String, option: PartialTokenOption): typings.manaSyringe.coreMod.Syringe.DefinedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("defineToken")(name.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[typings.manaSyringe.coreMod.Syringe.DefinedToken]
+    inline def defineToken(name: String): typings.manaSyringe.libCoreMod.Syringe.DefinedToken = ^.asInstanceOf[js.Dynamic].applyDynamic("defineToken")(name.asInstanceOf[js.Any]).asInstanceOf[typings.manaSyringe.libCoreMod.Syringe.DefinedToken]
+    inline def defineToken(name: String, option: PartialTokenOption): typings.manaSyringe.libCoreMod.Syringe.DefinedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("defineToken")(name.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[typings.manaSyringe.libCoreMod.Syringe.DefinedToken]
     
     inline def isModule(): /* is mana-syringe.mana-syringe/lib/core.Syringe.Module */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModule")().asInstanceOf[/* is mana-syringe.mana-syringe/lib/core.Syringe.Module */ Boolean]
     inline def isModule(data: Record[Any, Any]): /* is mana-syringe.mana-syringe/lib/core.Syringe.Module */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModule")(data.asInstanceOf[js.Any]).asInstanceOf[/* is mana-syringe.mana-syringe/lib/core.Syringe.Module */ Boolean]
@@ -146,7 +146,7 @@ object mod {
   @JSImport("mana-syringe", "SyringeModule")
   @js.native
   open class SyringeModule ()
-    extends typings.manaSyringe.moduleMod.SyringeModule {
+    extends typings.manaSyringe.libModuleMod.SyringeModule {
     def this(registry: Registry) = this()
   }
   

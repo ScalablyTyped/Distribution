@@ -14,19 +14,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class ScaleGizmo ()
   extends typings.babylonjs.gizmosIndexMod.ScaleGizmo {
-  def this(gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer) = this()
+  def this(gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer) = this()
   def this(gizmoLayer: Unit, thickness: Double) = this()
-  def this(gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer, thickness: Double) = this()
-  def this(gizmoLayer: Unit, thickness: Double, gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager) = this()
-  def this(gizmoLayer: Unit, thickness: Unit, gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager) = this()
   def this(
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    thickness: Double,
-    gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    thickness: Double
   ) = this()
   def this(
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
+    gizmoLayer: Unit,
+    thickness: Double,
+    gizmoManager: typings.babylonjs.gizmosGizmoManagerMod.GizmoManager
+  ) = this()
+  def this(
+    gizmoLayer: Unit,
     thickness: Unit,
-    gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+    gizmoManager: typings.babylonjs.gizmosGizmoManagerMod.GizmoManager
+  ) = this()
+  def this(
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    thickness: Double,
+    gizmoManager: typings.babylonjs.gizmosGizmoManagerMod.GizmoManager
+  ) = this()
+  def this(
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    thickness: Unit,
+    gizmoManager: typings.babylonjs.gizmosGizmoManagerMod.GizmoManager
   ) = this()
 }

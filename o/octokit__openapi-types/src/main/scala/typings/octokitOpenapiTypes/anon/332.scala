@@ -8,14 +8,14 @@ trait `332` extends StObject {
   
   @JSName("application/json")
   var applicationSlashjson: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['commit-activity'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['org-hook'] */ js.Any
   ]
 }
 object `332` {
   
   inline def apply(
     applicationSlashjson: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['commit-activity'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['org-hook'] */ js.Any
     ]
   ): `332` = {
     val __obj = js.Dynamic.literal()
@@ -27,12 +27,12 @@ object `332` {
     
     inline def setApplicationSlashjson(
       value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['commit-activity'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['org-hook'] */ js.Any
         ]
     ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
     inline def setApplicationSlashjsonVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['commit-activity'] */ js.Any)*
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['org-hook'] */ js.Any)*
     ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

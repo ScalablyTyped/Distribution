@@ -353,8 +353,8 @@ object mod {
       * Compile groups or single selector strings into
       * executable functions for matching or selecting.
       */
-    def compile[E /* <: Element */, M /* <: MatcherMode */](selector: String, mode: M): SelectLambda[E] | MatchLambda[E] = js.native
-    def compile[E /* <: Element */, M /* <: MatcherMode */](selector: String, mode: M, callback: js.Function1[/* element */ E, Unit]): SelectLambda[E] | MatchLambda[E] = js.native
+    def compile[E /* <: Element */, M /* <: MatcherMode */](selector: String, mode: M): /* import warning: importer.ImportType#apply Failed type conversion: M extends nwsapi.nwsapi.MatcherMode.MATCH ? nwsapi.nwsapi.MatchLambda<E> : M extends nwsapi.nwsapi.MatcherMode.SELECT | nwsapi.nwsapi.MatcherMode.USE_COLLECTION_ITEM ? nwsapi.nwsapi.SelectLambda<E> : never */ js.Any = js.native
+    def compile[E /* <: Element */, M /* <: MatcherMode */](selector: String, mode: M, callback: js.Function1[/* element */ E, Unit]): /* import warning: importer.ImportType#apply Failed type conversion: M extends nwsapi.nwsapi.MatcherMode.MATCH ? nwsapi.nwsapi.MatchLambda<E> : M extends nwsapi.nwsapi.MatcherMode.SELECT | nwsapi.nwsapi.MatcherMode.USE_COLLECTION_ITEM ? nwsapi.nwsapi.SelectLambda<E> : never */ js.Any = js.native
     
     /**
       * Returns the configuration object.
@@ -504,7 +504,15 @@ object mod {
     def uninstall(): Unit = js.native
   }
   
-  type ResolveElementType[T /* <: String */] = Element | (/* import warning: importer.ImportType#apply Failed type conversion: std.SVGElementTagNameMap[T] */ js.Any)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    string extends T ? std.Element : T extends 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'label' | 'legend' | 'li' | 'link' | 'main' | 'map' | 'mark' | 'menu' | 'meta' | 'meter' | 'nav' | 'noscript' | 'object' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'picture' | 'pre' | 'progress' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'script' | 'section' | 'select' | 'slot' | 'small' | 'source' | 'span' | 'strong' | 'style' | 'sub' | 'summary' | 'sup' | 'table' | 'tbody' | 'td' | 'template' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'track' | 'u' | 'ul' | 'var' | 'video' | 'wbr' ? std.HTMLElementTagNameMap[T] : T extends 'a' | 'animate' | 'animateMotion' | 'animateTransform' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feDropShadow' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'mpath' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'script' | 'set' | 'stop' | 'style' | 'svg' | 'switch' | 'symbol' | 'text' | 'textPath' | 'title' | 'tspan' | 'use' | 'view' ? std.SVGElementTagNameMap[T] : std.Element
+    }}}
+    */
+  @js.native
+  trait ResolveElementType[T /* <: String */] extends StObject
   
   type SelectLambda[T /* <: Element */] = js.Function4[
     /* element */ ArrayLike[T] | NodeListOf[T] | HTMLCollectionOf[T], 

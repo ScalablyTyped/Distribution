@@ -1,27 +1,27 @@
 package typings.vsoNodeApi
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
-import typings.vsoNodeApi.tfvcInterfacesMod.AssociatedWorkItem
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcBranch
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcBranchRef
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcChange
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcChangeset
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcChangesetRef
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcChangesetSearchCriteria
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcChangesetsRequestData
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcItem
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcItemRequestData
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcLabel
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcLabelRef
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcLabelRequestData
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcShelveset
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcShelvesetRef
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcShelvesetRequestData
-import typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionDescriptor
-import typings.vsoNodeApi.tfvcInterfacesMod.VersionControlRecursionType
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.AssociatedWorkItem
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcBranch
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcBranchRef
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcChange
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcChangeset
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcChangesetRef
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcChangesetSearchCriteria
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcChangesetsRequestData
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcItem
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcItemRequestData
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcLabel
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcLabelRef
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcLabelRequestData
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcShelveset
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcShelvesetRef
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcShelvesetRequestData
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.TfvcVersionDescriptor
+import typings.vsoNodeApi.interfacesTfvcInterfacesMod.VersionControlRecursionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -243,7 +243,7 @@ object tfvcApiMod {
       scopePath: js.UndefOr[String],
       recursionLevel: js.UndefOr[VersionControlRecursionType],
       versionDescriptor: js.UndefOr[TfvcVersionDescriptor]
-    ): js.Promise[ReadableStream[Any]] = js.native
+    ): js.Promise[ReadableStream] = js.native
     
     def getItemText(
       path: String,
@@ -253,7 +253,7 @@ object tfvcApiMod {
       scopePath: js.UndefOr[String],
       recursionLevel: js.UndefOr[VersionControlRecursionType],
       versionDescriptor: js.UndefOr[TfvcVersionDescriptor]
-    ): js.Promise[ReadableStream[Any]] = js.native
+    ): js.Promise[ReadableStream] = js.native
     
     def getItemZip(
       path: String,
@@ -263,7 +263,7 @@ object tfvcApiMod {
       scopePath: js.UndefOr[String],
       recursionLevel: js.UndefOr[VersionControlRecursionType],
       versionDescriptor: js.UndefOr[TfvcVersionDescriptor]
-    ): js.Promise[ReadableStream[Any]] = js.native
+    ): js.Promise[ReadableStream] = js.native
     
     def getItems(): js.Promise[js.Array[TfvcItem]] = js.native
     def getItems(project: String): js.Promise[js.Array[TfvcItem]] = js.native
@@ -412,8 +412,8 @@ object tfvcApiMod {
     def getItemsBatch(itemRequestData: TfvcItemRequestData): js.Promise[js.Array[js.Array[TfvcItem]]] = js.native
     def getItemsBatch(itemRequestData: TfvcItemRequestData, project: String): js.Promise[js.Array[js.Array[TfvcItem]]] = js.native
     
-    def getItemsBatchZip(itemRequestData: TfvcItemRequestData): js.Promise[ReadableStream[Any]] = js.native
-    def getItemsBatchZip(itemRequestData: TfvcItemRequestData, project: String): js.Promise[ReadableStream[Any]] = js.native
+    def getItemsBatchZip(itemRequestData: TfvcItemRequestData): js.Promise[ReadableStream] = js.native
+    def getItemsBatchZip(itemRequestData: TfvcItemRequestData, project: String): js.Promise[ReadableStream] = js.native
     
     def getLabel(labelId: String, requestData: TfvcLabelRequestData): js.Promise[TfvcLabel] = js.native
     def getLabel(labelId: String, requestData: TfvcLabelRequestData, project: String): js.Promise[TfvcLabel] = js.native

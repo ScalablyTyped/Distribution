@@ -1,5 +1,6 @@
 package typings.ignoreStyles
 
+import typings.node.NodeModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,9 +24,5 @@ object mod {
   
   inline def restore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restore")().asInstanceOf[Unit]
   
-  type Handler = js.Function2[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ /* m */ Any, 
-    /* filename */ String, 
-    Any
-  ]
+  type Handler = js.Function2[/* m */ NodeModule, /* filename */ String, Any]
 }

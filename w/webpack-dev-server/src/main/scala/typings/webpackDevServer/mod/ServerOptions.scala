@@ -1,7 +1,7 @@
 package typings.webpackDevServer.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeColonhttpMod.ServerResponse
 import typings.webpackDevServer.anon.Plain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +11,8 @@ trait ServerOptions
   extends StObject
      with typings.node.httpsMod.ServerOptions[
       Instantiable1[
-        /* socket */ typings.node.nodeNetMod.Socket, 
-        typings.node.nodeHttpMod.IncomingMessage
+        /* socket */ typings.node.nodeColonnetMod.Socket, 
+        typings.node.nodeColonhttpMod.IncomingMessage
       ], 
       Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 

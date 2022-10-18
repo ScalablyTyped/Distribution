@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [autoStart=true] Automatically start the clock.
   */
 open class Clock ()
-  extends typings.three.threeMod.Clock {
+  extends typings.three.srcThreeMod.Clock {
   def this(autoStart: Boolean) = this()
 }

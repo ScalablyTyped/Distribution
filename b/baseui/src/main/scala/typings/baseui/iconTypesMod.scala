@@ -1,6 +1,6 @@
 package typings.baseui
 
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject

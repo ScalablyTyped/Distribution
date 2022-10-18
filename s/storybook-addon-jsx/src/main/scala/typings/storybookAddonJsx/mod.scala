@@ -5,8 +5,8 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.storybookAddonJsx.anon.AddWithJSX
 import typings.storybookAddonJsx.anon.ParametersjsxAddonParamet
-import typings.storybookAddons.typesMod.DecoratorFunction
-import typings.storybookAddons.typesMod.StoryApi
+import typings.storybookAddons.distTs3Dot9TypesMod.DecoratorFunction
+import typings.storybookAddons.distTs3Dot9TypesMod.StoryApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

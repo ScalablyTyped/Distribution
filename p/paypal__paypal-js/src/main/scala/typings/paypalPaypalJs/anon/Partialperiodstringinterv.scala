@@ -1,6 +1,6 @@
 package typings.paypalPaypalJs.anon
 
-import typings.paypalPaypalJs.commonsMod.AmountWithCurrencyCode
+import typings.paypalPaypalJs.typesApisCommonsMod.AmountWithCurrencyCode
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

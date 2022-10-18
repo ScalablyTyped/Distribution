@@ -1,16 +1,12 @@
 package typings.storybookAddonKnobs
 
-import typings.storybookAddonKnobs.optionsMod.OptionsKnobOptionsDisplay
-import typings.storybookAddonKnobs.typesMod.KnobType
+import typings.storybookAddonKnobs.distComponentsTypesMod.KnobType
+import typings.storybookAddonKnobs.distComponentsTypesOptionsMod.OptionsKnobOptionsDisplay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storybookAddonKnobsStrings {
-  
-  @js.native
-  sealed trait Mutable extends StObject
-  inline def Mutable: Mutable = "Mutable".asInstanceOf[Mutable]
   
   @js.native
   sealed trait array

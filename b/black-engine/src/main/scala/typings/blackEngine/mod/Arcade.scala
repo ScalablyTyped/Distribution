@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Arcade")
 @js.native
 open class Arcade ()
-  extends typings.blackEngine.arcadeMod.Arcade
+  extends typings.blackEngine.physicsArcadeArcadeMod.Arcade

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "BoxToBoxPair")
 @js.native
 open class BoxToBoxPair ()
-  extends typings.blackEngine.boxToBoxPairMod.BoxToBoxPair
+  extends typings.blackEngine.physicsArcadePairsBoxToBoxPairMod.BoxToBoxPair

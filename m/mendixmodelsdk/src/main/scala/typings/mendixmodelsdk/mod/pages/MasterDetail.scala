@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.MasterDetail")
 @js.native
 open class MasterDetail protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.MasterDetail {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.MasterDetail {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -44,7 +44,7 @@ object MasterDetail {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -55,7 +55,7 @@ object MasterDetail {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  inline def createInBuildingBlockUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.BuildingBlock): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInBuildingBlockUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.BuildingBlock): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -66,7 +66,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInDataViewUnderFooterWidget(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInDataViewUnderFooterWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.DataView): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -77,7 +77,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInDataViewUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInDataViewUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.DataView): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -88,7 +88,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInDivContainerUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInDivContainerUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.DivContainer): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -99,7 +99,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInGroupBoxUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.GroupBox): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInGroupBoxUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.GroupBox): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -110,7 +110,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInHeaderUnderLeftWidget(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInHeaderUnderLeftWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Header): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -121,7 +121,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInHeaderUnderRightWidget(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInHeaderUnderRightWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Header): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -132,7 +132,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInLayoutCallArgumentUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInLayoutCallArgumentUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -143,7 +143,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInLayoutGridColumnUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInLayoutGridColumnUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -154,7 +154,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInLayoutUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.Layout): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInLayoutUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Layout): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -165,7 +165,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInListViewTemplateUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInListViewTemplateUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -176,7 +176,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInListViewUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInListViewUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ListView): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -187,7 +187,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInMasterDetailRegionUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.MasterDetailRegion): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInMasterDetailRegionUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetailRegion): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -198,7 +198,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInNavigationListItemUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInNavigationListItemUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.NavigationListItem): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -209,7 +209,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInScrollContainerRegionUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInScrollContainerRegionUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -220,7 +220,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInSnippetUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.Snippet): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInSnippetUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Snippet): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -231,7 +231,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInSplitPaneUnderFirstWidget(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInSplitPaneUnderFirstWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.SplitPane): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -242,7 +242,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInSplitPaneUnderSecondWidget(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInSplitPaneUnderSecondWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.SplitPane): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -253,7 +253,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInTabPageUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TabPage): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInTabPageUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.TabPage): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -264,7 +264,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInTableCellUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TableCell): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInTableCellUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.TableCell): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -275,7 +275,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInTemplateGridContentsUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInTemplateGridContentsUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -286,7 +286,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createInVerticalFlowUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.VerticalFlow): typings.mendixmodelsdk.pagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetail]
+  inline def createInVerticalFlowUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.VerticalFlow): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.MasterDetail.structureTypeName")

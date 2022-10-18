@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait GoogleCloudDialogflowCxV3ResponseMessageLiveAgentHandoff extends StObject 
   
   /** Custom metadata for your handoff procedure. Dialogflow doesn't impose any structure on this. */
   var metadata: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3ResponseMessageLiveAgentHandoff & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object GoogleCloudDialogflowCxV3ResponseMessageLiveAgentHandoff {
@@ -24,9 +21,7 @@ object GoogleCloudDialogflowCxV3ResponseMessageLiveAgentHandoff {
   extension [Self <: GoogleCloudDialogflowCxV3ResponseMessageLiveAgentHandoff](x: Self) {
     
     inline def setMetadata(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3ResponseMessageLiveAgentHandoff & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

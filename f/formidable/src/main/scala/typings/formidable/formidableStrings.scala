@@ -13,10 +13,6 @@ object formidableStrings {
   inline def END: END = "END".asInstanceOf[END]
   
   @js.native
-  sealed trait EnabledPlugins extends StObject
-  inline def EnabledPlugins: EnabledPlugins = "EnabledPlugins".asInstanceOf[EnabledPlugins]
-  
-  @js.native
   sealed trait HEADERS_ALMOST_DONE extends StObject
   inline def HEADERS_ALMOST_DONE: HEADERS_ALMOST_DONE = "HEADERS_ALMOST_DONE".asInstanceOf[HEADERS_ALMOST_DONE]
   

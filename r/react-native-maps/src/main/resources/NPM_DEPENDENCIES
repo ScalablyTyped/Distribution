@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-maps" : "1.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-maps" : "1.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

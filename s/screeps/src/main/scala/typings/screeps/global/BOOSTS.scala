@@ -1,9 +1,9 @@
 package typings.screeps.global
 
-import typings.screeps.anon.GH
 import typings.screeps.anon.GHO2
 import typings.screeps.anon.KH
 import typings.screeps.anon.KHO2
+import typings.screeps.anon.LH
 import typings.screeps.anon.LHO2
 import typings.screeps.anon.UH
 import typings.screeps.anon.XZHO2
@@ -50,6 +50,6 @@ object BOOSTS {
   
   @JSGlobal("BOOSTS.work")
   @js.native
-  def work: GH = js.native
-  inline def work_=(x: GH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("work")(x.asInstanceOf[js.Any])
+  def work: LH = js.native
+  inline def work_=(x: LH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("work")(x.asInstanceOf[js.Any])
 }

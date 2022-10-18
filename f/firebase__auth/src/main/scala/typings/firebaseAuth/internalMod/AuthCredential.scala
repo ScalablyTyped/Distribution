@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/auth/dist/cordova/internal", "AuthCredential")
+@JSImport("@firebase/auth/internal", "AuthCredential")
 @js.native
 open class AuthCredential protected ()
-  extends typings.firebaseAuth.cordovaMod.AuthCredential {
+  extends typings.firebaseAuth.distInternalMod.AuthCredential {
   /** @internal */
   /* protected */ def this(
     /**

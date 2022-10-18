@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.sceneLoaderMod.ISceneLoaderProgressEvent
+import typings.babylonjs.loadingSceneLoaderMod.ISceneLoaderProgressEvent
 import typings.babylonjs.typesMod.Nullable
 import typings.std.File
 import org.scalablytyped.runtime.StObject
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "FilesInput")
 @js.native
 open class FilesInput protected ()
-  extends typings.babylonjs.legacyMod.FilesInput {
+  extends typings.babylonjs.legacyLegacyMod.FilesInput {
   /**
     * Creates a new FilesInput
     * @param engine defines the rendering engine
@@ -24,7 +24,7 @@ open class FilesInput protected ()
     * @param errorCallback callback call if an error occurs
     */
   def this(
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
     sceneLoadedCallback: Nullable[
         js.Function2[/* sceneFile */ File, /* scene */ typings.babylonjs.sceneMod.Scene, Unit]

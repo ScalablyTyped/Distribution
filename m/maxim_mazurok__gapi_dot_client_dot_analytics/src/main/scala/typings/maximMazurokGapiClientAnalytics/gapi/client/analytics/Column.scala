@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait Column extends StObject {
   
   /** Map of attribute name and value for this column. */
   var attributes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.Column & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Column id. */
@@ -30,9 +27,7 @@ object Column {
   extension [Self <: Column](x: Self) {
     
     inline def setAttributes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.Column & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)

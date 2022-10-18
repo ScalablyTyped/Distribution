@@ -1,10 +1,10 @@
 package typings.mergeAnything
 
+import typings.mergeAnything.distTypesMergeMod.ExpandDeep
 import typings.mergeAnything.mergeAnythingStrings.deep
-import typings.mergeAnything.mergeMod.ExpandDeep
 import typings.std.Record
-import typings.tsToolbelt.builtInMod.BuiltIn
-import typings.tsToolbelt.objectAssignMod.Assign
+import typings.tsToolbelt.outMiscBuiltInMod.BuiltIn
+import typings.tsToolbelt.outObjectAssignMod.Assign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

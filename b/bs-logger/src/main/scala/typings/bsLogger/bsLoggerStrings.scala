@@ -1,6 +1,6 @@
 package typings.bsLogger
 
-import typings.bsLogger.levelMod.LogLevelName
+import typings.bsLogger.distLoggerLevelMod.LogLevelName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

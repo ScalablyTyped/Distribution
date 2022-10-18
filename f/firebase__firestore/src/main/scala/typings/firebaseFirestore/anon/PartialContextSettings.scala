@@ -1,8 +1,8 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.documentKeyMod.DocumentKey
-import typings.firebaseFirestore.pathMod.FieldPath
-import typings.firebaseFirestore.userDataReaderMod.UserDataSource
+import typings.firebaseFirestore.distFirestoreSrcLiteApiUserDataReaderMod.UserDataSource
+import typings.firebaseFirestore.distFirestoreSrcModelDocumentKeyMod.DocumentKey
+import typings.firebaseFirestore.distFirestoreSrcModelPathMod.FieldPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

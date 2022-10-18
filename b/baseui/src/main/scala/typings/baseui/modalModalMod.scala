@@ -2,7 +2,7 @@ package typings.baseui
 
 import typings.baseui.anon.IsVisible
 import typings.baseui.anon.OmitSharedStylePropsArgchAnimate
-import typings.baseui.anon.`18`
+import typings.baseui.anon.`15`
 import typings.baseui.modalTypesMod.CloseSource
 import typings.baseui.modalTypesMod.ModalOverrides
 import typings.baseui.modalTypesMod.ModalProps
@@ -79,8 +79,8 @@ object modalModalMod {
       
       @JSImport("baseui/modal/modal", "default.defaultProps.onClose")
       @js.native
-      def onClose: js.UndefOr[js.Function1[/* a */ `18`, Any]] = js.native
-      inline def onClose_=(x: js.UndefOr[js.Function1[/* a */ `18`, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onClose")(x.asInstanceOf[js.Any])
+      def onClose: js.UndefOr[js.Function1[/* a */ `15`, Any]] = js.native
+      inline def onClose_=(x: js.UndefOr[js.Function1[/* a */ `15`, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onClose")(x.asInstanceOf[js.Any])
       
       @JSImport("baseui/modal/modal", "default.defaultProps.overrides")
       @js.native

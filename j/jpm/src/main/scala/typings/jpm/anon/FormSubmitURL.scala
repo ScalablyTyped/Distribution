@@ -1,7 +1,7 @@
 package typings.jpm.anon
 
 import typings.jpm.FFAddonSDK.NSIException
-import typings.jpm.passwordsMod.Credential
+import typings.jpm.sdkPasswordsMod.Credential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

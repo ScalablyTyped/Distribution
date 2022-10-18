@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webcrypto-core", "AesCtrProvider")
+/* note: abstract class */ @JSImport("webcrypto-core", "AesCtrProvider")
 @js.native
-abstract class AesCtrProvider () extends AesProvider {
+open class AesCtrProvider () extends AesProvider {
   
   def checkAlgorithmParams(algorithm: AesCtrParams): Unit = js.native
   

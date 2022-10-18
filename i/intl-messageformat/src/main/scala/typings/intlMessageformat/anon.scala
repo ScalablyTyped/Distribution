@@ -1,8 +1,8 @@
 package typings.intlMessageformat
 
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptions
-import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserParserMod.ParserOptions
-import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
+import typings.formatjsIcuMessageformatParser.parserMod.ParserOptions
+import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
 import typings.intlMessageformat.intlMessageformatStrings.date
 import typings.intlMessageformat.intlMessageformatStrings.number
 import typings.intlMessageformat.intlMessageformatStrings.time
@@ -95,21 +95,21 @@ object anon {
     
     var date: js.UndefOr[
         Record[
-          typings.intlMessageformat.formattersMod.Format[typings.intlMessageformat.intlMessageformatStrings.date], 
+          typings.intlMessageformat.libSrcFormattersMod.Format[typings.intlMessageformat.intlMessageformatStrings.date], 
           DateTimeFormatOptions
         ]
       ] = js.undefined
     
     var number: js.UndefOr[
         Record[
-          typings.intlMessageformat.formattersMod.Format[typings.intlMessageformat.intlMessageformatStrings.number], 
+          typings.intlMessageformat.libSrcFormattersMod.Format[typings.intlMessageformat.intlMessageformatStrings.number], 
           NumberFormatOptions
         ]
       ] = js.undefined
     
     var time: js.UndefOr[
         Record[
-          typings.intlMessageformat.formattersMod.Format[typings.intlMessageformat.intlMessageformatStrings.time], 
+          typings.intlMessageformat.libSrcFormattersMod.Format[typings.intlMessageformat.intlMessageformatStrings.time], 
           DateTimeFormatOptions
         ]
       ] = js.undefined
@@ -123,15 +123,15 @@ object anon {
     
     extension [Self <: PartialFormatsDate](x: Self) {
       
-      inline def setDate(value: Record[typings.intlMessageformat.formattersMod.Format[date], DateTimeFormatOptions]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Record[typings.intlMessageformat.libSrcFormattersMod.Format[date], DateTimeFormatOptions]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      inline def setNumber(value: Record[typings.intlMessageformat.formattersMod.Format[number], NumberFormatOptions]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Record[typings.intlMessageformat.libSrcFormattersMod.Format[number], NumberFormatOptions]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
       inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      inline def setTime(value: Record[typings.intlMessageformat.formattersMod.Format[time], DateTimeFormatOptions]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Record[typings.intlMessageformat.libSrcFormattersMod.Format[time], DateTimeFormatOptions]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
       inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     }

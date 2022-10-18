@@ -1,7 +1,7 @@
 package typings.antdMobileRn.mod
 
-import typings.antdMobileRn.noticeBarIndexNativeMod.NoticeNativeProps
-import typings.antdMobileRn.noticeBarIndexNativeMod.default
+import typings.antdMobileRn.libNoticeBarIndexDotnativeMod.NoticeNativeProps
+import typings.antdMobileRn.libNoticeBarIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

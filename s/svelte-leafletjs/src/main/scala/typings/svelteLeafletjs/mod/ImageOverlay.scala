@@ -1,14 +1,19 @@
 package typings.svelteLeafletjs.mod
 
 import typings.leaflet.mod.ImageOverlay_
+import typings.svelte.mod.SvelteComponentTyped
+import typings.svelte.typesRuntimeInternalDevMod.ComponentConstructorOptions
+import typings.svelteLeafletjs.anon.Bounds
+import typings.svelteLeafletjs.anon.GetImageOverlay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SvelteComponentTyped<{  imageUrl :string,   bounds :L.LatLngBoundsExpression,   opacity :number | undefined,   zIndex :number | undefined,   options :L.ImageOverlayOptions | undefined,   events :PathEventKeys | undefined,   getImageOverlay :(): L.ImageOverlay | undefined}, PathEvents, never> * / any */ @JSImport("svelte-leafletjs", "ImageOverlay")
+@JSImport("svelte-leafletjs", "ImageOverlay")
 @js.native
-open class ImageOverlay () extends StObject {
+open class ImageOverlay protected ()
+  extends SvelteComponentTyped[Bounds, PathEvents, scala.Nothing] {
+  def this(options: ComponentConstructorOptions[GetImageOverlay]) = this()
   
   def getImageOverlay(): ImageOverlay_ = js.native
 }

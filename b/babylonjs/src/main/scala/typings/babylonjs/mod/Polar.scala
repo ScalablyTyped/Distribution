@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Polar")
 @js.native
 open class Polar protected ()
-  extends typings.babylonjs.legacyMod.Polar {
+  extends typings.babylonjs.legacyLegacyMod.Polar {
   /**
     * Creates a new Polar object
     * @param radius the radius of the vector
@@ -27,14 +27,14 @@ object Polar {
     * @param array the array to convert
     * @returns the converted polar
     */
-  inline def FromArray(array: js.Array[Double]): typings.babylonjs.mathPolarMod.Polar = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathPolarMod.Polar]
+  inline def FromArray(array: js.Array[Double]): typings.babylonjs.mathsMathDotpolarMod.Polar = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotpolarMod.Polar]
   
   /**
     * Converts a given Vector2 to its polar coordinates
     * @param v the Vector2 to convert
     * @returns a Polar
     */
-  inline def FromVector2(v: typings.babylonjs.mathVectorMod.Vector2): typings.babylonjs.mathPolarMod.Polar = ^.asInstanceOf[js.Dynamic].applyDynamic("FromVector2")(v.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathPolarMod.Polar]
+  inline def FromVector2(v: typings.babylonjs.mathsMathDotvectorMod.Vector2): typings.babylonjs.mathsMathDotpolarMod.Polar = ^.asInstanceOf[js.Dynamic].applyDynamic("FromVector2")(v.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotpolarMod.Polar]
   
   /**
     * Converts a given Vector2 to its polar coordinates
@@ -42,5 +42,8 @@ object Polar {
     * @param ref the reference to assign the result
     * @returns the updated reference
     */
-  inline def FromVector2ToRef(v: typings.babylonjs.mathVectorMod.Vector2, ref: typings.babylonjs.mathPolarMod.Polar): typings.babylonjs.mathPolarMod.Polar = (^.asInstanceOf[js.Dynamic].applyDynamic("FromVector2ToRef")(v.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPolarMod.Polar]
+  inline def FromVector2ToRef(
+    v: typings.babylonjs.mathsMathDotvectorMod.Vector2,
+    ref: typings.babylonjs.mathsMathDotpolarMod.Polar
+  ): typings.babylonjs.mathsMathDotpolarMod.Polar = (^.asInstanceOf[js.Dynamic].applyDynamic("FromVector2ToRef")(v.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotpolarMod.Polar]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isWellFormedUnitIdentifierMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/IsWellFormedUnitIdentifier", JSImport.Namespace)
+  @JSImport("@formatjs/ecma402-abstract/IsWellFormedUnitIdentifier", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

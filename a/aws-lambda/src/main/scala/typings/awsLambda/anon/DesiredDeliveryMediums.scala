@@ -4,8 +4,8 @@ import typings.awsLambda.awsLambdaStrings.EMAIL
 import typings.awsLambda.awsLambdaStrings.RESEND
 import typings.awsLambda.awsLambdaStrings.SMS
 import typings.awsLambda.awsLambdaStrings.SUPPRESS
-import typings.awsLambda.commonMod.StringMap
-import typings.awsLambda.userMigrationMod.UserStatus
+import typings.awsLambda.triggerCognitoUserPoolTriggerCommonMod.StringMap
+import typings.awsLambda.triggerCognitoUserPoolTriggerUserMigrationMod.UserStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

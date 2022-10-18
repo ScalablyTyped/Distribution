@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.node.eventsMod.EventEmitter
 import typings.node.fsMod.FSWatcher
 import typings.node.httpsMod.ServerOptions
-import typings.node.nodeHttpMod.IncomingMessage
-import typings.node.nodeHttpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonhttpMod.IncomingMessage
+import typings.node.nodeColonhttpMod.ServerResponse
+import typings.node.nodeColonnetMod.Socket
 import typings.ws.mod.Server
 import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject

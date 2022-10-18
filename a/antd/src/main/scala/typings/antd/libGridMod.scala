@@ -1,8 +1,8 @@
 package typings.antd
 
 import typings.antd.anon.PartialRecordBreakpointbo
-import typings.antd.gridColMod.ColProps
-import typings.antd.gridRowMod.RowProps
+import typings.antd.libGridColMod.ColProps
+import typings.antd.libGridRowMod.RowProps
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement

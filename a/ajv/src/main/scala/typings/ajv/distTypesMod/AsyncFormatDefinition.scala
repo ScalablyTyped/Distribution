@@ -1,8 +1,6 @@
 package typings.ajv.distTypesMod
 
 import typings.ajv.ajvBooleans.`true`
-import typings.ajv.ajvStrings.number
-import typings.ajv.ajvStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +11,9 @@ trait AsyncFormatDefinition[T /* <: String | Double */] extends StObject {
   
   var compare: js.UndefOr[FormatCompare[T]] = js.undefined
   
-  var `type`: js.UndefOr[number | string] = js.undefined
+  var `type`: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? 'string' | undefined : 'number' */ js.Any
+  ] = js.undefined
   
   def validate(data: T): js.Promise[Boolean]
   @JSName("validate")
@@ -34,7 +34,9 @@ object AsyncFormatDefinition {
     
     inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
-    inline def setType(value: number | string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? 'string' | undefined : 'number' */ js.Any
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

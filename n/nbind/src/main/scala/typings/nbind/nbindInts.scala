@@ -1,10 +1,10 @@
 package typings.nbind
 
-import typings.nbind.commonMod.SignatureType
-import typings.nbind.typeMod.StateFlags
-import typings.nbind.typeMod.StructureType
-import typings.nbind.typeMod.TypeFlagBase
-import typings.nbind.typeMod.TypeFlags
+import typings.nbind.distCommonMod.SignatureType
+import typings.nbind.distTypeMod.StateFlags
+import typings.nbind.distTypeMod.StructureType
+import typings.nbind.distTypeMod.TypeFlagBase
+import typings.nbind.distTypeMod.TypeFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

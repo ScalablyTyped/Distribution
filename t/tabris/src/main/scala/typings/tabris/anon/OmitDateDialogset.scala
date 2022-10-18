@@ -196,7 +196,7 @@ trait OmitDateDialogset extends StObject {
   
   var extend: js.UndefOr[Any] = js.undefined
   
-  var jsxAttributes: (JSXAttributes[DateDialog, Omit[DateDialog, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children
+  var jsxAttributes: (JSXAttributes[DateDialog, Omit[DateDialog, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3`
   
   var maxDate: js.Date
   
@@ -309,7 +309,7 @@ object OmitDateDialogset {
     close: () => DateDialog,
     constructor: /* properties */ js.UndefOr[Properties[DateDialog, Omit[DateDialog, set]]] => Any,
     date: js.Date,
-    jsxAttributes: (JSXAttributes[DateDialog, Omit[DateDialog, set | jsxAttributes]]) & Children,
+    jsxAttributes: (JSXAttributes[DateDialog, Omit[DateDialog, set | jsxAttributes]]) & `3`,
     maxDate: js.Date,
     minDate: js.Date,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => DateDialog,
@@ -374,7 +374,7 @@ object OmitDateDialogset {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setJsxAttributes(value: (JSXAttributes[DateDialog, Omit[DateDialog, set | jsxAttributes]]) & Children): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[DateDialog, Omit[DateDialog, set | jsxAttributes]]) & `3`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     

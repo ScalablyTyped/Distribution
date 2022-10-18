@@ -1,19 +1,20 @@
 package typings.cypress.Cypress
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.cypress.cypressStrings.chromium
   - typings.cypress.cypressStrings.firefox
+  - typings.cypress.cypressStrings.webkit
 */
-trait BrowserFamily extends js.Object
-
+trait BrowserFamily extends StObject
 object BrowserFamily {
-  @scala.inline
-  def chromium: typings.cypress.cypressStrings.chromium = "chromium".asInstanceOf[typings.cypress.cypressStrings.chromium]
-  @scala.inline
-  def firefox: typings.cypress.cypressStrings.firefox = "firefox".asInstanceOf[typings.cypress.cypressStrings.firefox]
+  
+  inline def chromium: typings.cypress.cypressStrings.chromium = "chromium".asInstanceOf[typings.cypress.cypressStrings.chromium]
+  
+  inline def firefox: typings.cypress.cypressStrings.firefox = "firefox".asInstanceOf[typings.cypress.cypressStrings.firefox]
+  
+  inline def webkit: typings.cypress.cypressStrings.webkit = "webkit".asInstanceOf[typings.cypress.cypressStrings.webkit]
 }
-

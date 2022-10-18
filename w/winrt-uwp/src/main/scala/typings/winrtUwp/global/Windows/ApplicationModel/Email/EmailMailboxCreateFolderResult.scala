@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of a TryCreateFolderAsync operation. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailMailboxCreateFolderResult")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxCreateFolderResult")
 @js.native
-abstract class EmailMailboxCreateFolderResult ()
+open class EmailMailboxCreateFolderResult ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderResult {
   

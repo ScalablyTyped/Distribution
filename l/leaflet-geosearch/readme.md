@@ -1,7 +1,7 @@
 
 # Scala.js typings for leaflet-geosearch
 
-Typings are for version 3.6.1
+Typings are for version 3.7.0
 
 ## Library description:
 Adds support for address lookup (a.k.a. geocoding / geoseaching) to Leaflet.

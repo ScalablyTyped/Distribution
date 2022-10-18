@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "DefaultCollisionCoordinator")
 @js.native
 open class DefaultCollisionCoordinator ()
-  extends typings.babylonjs.legacyMod.DefaultCollisionCoordinator
+  extends typings.babylonjs.legacyLegacyMod.DefaultCollisionCoordinator

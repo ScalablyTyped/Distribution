@@ -279,19 +279,19 @@ object mod {
     
     var server: js.UndefOr[
         (typings.node.httpMod.Server[
-          Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+          Instantiable1[/* socket */ typings.node.nodeColonnetMod.Socket, IncomingMessage], 
           Instantiable1[
             /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
             ServerResponse[IncomingMessage]
           ]
         ]) | (typings.node.httpsMod.Server[
           Instantiable1[
-            /* socket */ typings.node.nodeNetMod.Socket, 
-            typings.node.nodeHttpMod.IncomingMessage
+            /* socket */ typings.node.nodeColonnetMod.Socket, 
+            typings.node.nodeColonhttpMod.IncomingMessage
           ], 
           Instantiable1[
             /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+            typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
           ]
         ])
       ] = js.undefined
@@ -341,19 +341,19 @@ object mod {
       
       inline def setServer(
         value: (typings.node.httpMod.Server[
-              Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+              Instantiable1[/* socket */ typings.node.nodeColonnetMod.Socket, IncomingMessage], 
               Instantiable1[
                 /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
                 ServerResponse[IncomingMessage]
               ]
             ]) | (typings.node.httpsMod.Server[
               Instantiable1[
-                /* socket */ typings.node.nodeNetMod.Socket, 
-                typings.node.nodeHttpMod.IncomingMessage
+                /* socket */ typings.node.nodeColonnetMod.Socket, 
+                typings.node.nodeColonhttpMod.IncomingMessage
               ], 
               Instantiable1[
                 /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-                typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+                typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
               ]
             ])
       ): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
@@ -374,7 +374,7 @@ object mod {
   trait UwsHttp extends StObject {
     
     def createServer(): typings.node.httpMod.Server[
-        Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+        Instantiable1[/* socket */ typings.node.nodeColonnetMod.Socket, IncomingMessage], 
         Instantiable1[
           /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
           ServerResponse[IncomingMessage]
@@ -383,7 +383,7 @@ object mod {
     def createServer(
       requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse[IncomingMessage], Unit]
     ): typings.node.httpMod.Server[
-        Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+        Instantiable1[/* socket */ typings.node.nodeColonnetMod.Socket, IncomingMessage], 
         Instantiable1[
           /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
           ServerResponse[IncomingMessage]

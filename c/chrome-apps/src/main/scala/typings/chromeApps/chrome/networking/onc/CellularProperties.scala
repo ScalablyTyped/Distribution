@@ -18,10 +18,14 @@ trait CellularProperties[M /* <: ManagedObject */]
   var AllowRoaming: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the cellular network should be connected automatically (when in range). */
-  var AutoConnect: js.UndefOr[Boolean | ManagedBoolean] = js.undefined
+  var AutoConnect: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedBoolean : boolean | undefined */ js.Any
+  ] = js.undefined
   
   /** The name of the carrier for which the cellular device is configured. */
-  var Carrier: js.UndefOr[String | ManagedDOMString] = js.undefined
+  var Carrier: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMString : string | undefined */ js.Any
+  ] = js.undefined
   
   /** Cellular device technology family - CDMA or GSM. */
   var Family: js.UndefOr[CDMA | GSM] = js.undefined
@@ -85,11 +89,15 @@ object CellularProperties {
     
     inline def setAllowRoamingUndefined: Self = StObject.set(x, "AllowRoaming", js.undefined)
     
-    inline def setAutoConnect(value: Boolean | ManagedBoolean): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
+    inline def setAutoConnect(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedBoolean : boolean | undefined */ js.Any
+    ): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
     
     inline def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
     
-    inline def setCarrier(value: String | ManagedDOMString): Self = StObject.set(x, "Carrier", value.asInstanceOf[js.Any])
+    inline def setCarrier(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedDOMString : string | undefined */ js.Any
+    ): Self = StObject.set(x, "Carrier", value.asInstanceOf[js.Any])
     
     inline def setCarrierUndefined: Self = StObject.set(x, "Carrier", js.undefined)
     

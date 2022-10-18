@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "LimitExceededException")
 @js.native
 open class LimitExceededException protected ()
-  extends typings.awsSdkClientCognitoIdentity.modelsMod.LimitExceededException {
+  extends typings.awsSdkClientCognitoIdentity.distTypesModelsMod.LimitExceededException {
   /**
     * @internal
     */

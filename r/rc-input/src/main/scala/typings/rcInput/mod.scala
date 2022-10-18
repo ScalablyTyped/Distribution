@@ -1,9 +1,9 @@
 package typings.rcInput
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcInput.interfaceMod.BaseInputProps
-import typings.rcInput.interfaceMod.InputProps
-import typings.rcInput.interfaceMod.InputRef
+import typings.rcInput.esInterfaceMod.BaseInputProps
+import typings.rcInput.esInterfaceMod.InputProps
+import typings.rcInput.esInterfaceMod.InputRef
 import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes

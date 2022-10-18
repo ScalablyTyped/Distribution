@@ -4,18 +4,18 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.from2.anon.objectModetrueundefinedRe
 import typings.from2.from2Booleans.`false`
 import typings.from2.from2Booleans.`true`
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.ReadableOptions
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(opts: ObjectModeOptions, read: ReadObjectInput): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
-  inline def apply(opts: Options, read: ReadInput): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
-  inline def apply(read: ReadInput): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].apply(read.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
+  inline def apply(opts: ObjectModeOptions, read: ReadObjectInput): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def apply(opts: Options, read: ReadInput): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def apply(read: ReadInput): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(read.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
   
   @JSImport("from2", JSImport.Namespace)
   @js.native
@@ -25,12 +25,12 @@ object mod {
   inline def ctor(opts: ObjectModeOptions): From2Ctor[ReadObjectInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any]).asInstanceOf[From2Ctor[ReadObjectInput]]
   inline def ctor(opts: Options): From2Ctor[ReadInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any]).asInstanceOf[From2Ctor[ReadInput]]
   
-  inline def obj(opts: objectModetrueundefinedRe, read: ReadObjectInput): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
-  inline def obj(read: ReadObjectInput): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(read.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
+  inline def obj(opts: objectModetrueundefinedRe, read: ReadObjectInput): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def obj(read: ReadObjectInput): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(read.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
   
   type Chunk = String | Buffer | js.typedarray.Uint8Array | Null
   
-  type From2Ctor[R /* <: ReadInput | ReadObjectInput */] = Instantiable1[/* read */ R, ReadableStream[Any]]
+  type From2Ctor[R /* <: ReadInput | ReadObjectInput */] = Instantiable1[/* read */ R, ReadableStream]
   
   type NextCallback = js.Function2[/* err */ js.UndefOr[Any], /* chunk */ Chunk, Unit]
   

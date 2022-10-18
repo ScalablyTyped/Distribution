@@ -3,7 +3,7 @@ package typings.rcCollapse
 import org.scalablytyped.runtime.Instantiable0
 import typings.rcCollapse.anon.PartialCollapseState
 import typings.rcCollapse.anon.Typeofdefault
-import typings.rcCollapse.interfaceMod.CollapseProps
+import typings.rcCollapse.esInterfaceMod.CollapseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object mod {
   @JSImport("rc-collapse", JSImport.Default)
   @js.native
   open class default protected ()
-    extends typings.rcCollapse.collapseMod.default {
+    extends typings.rcCollapse.esCollapseMod.default {
     def this(props: CollapseProps) = this()
   }
   object default {
@@ -26,7 +26,7 @@ object mod {
     @JSImport("rc-collapse", "default.Panel")
     @js.native
     open class Panel ()
-      extends typings.rcCollapse.collapseMod.default.Panel
+      extends typings.rcCollapse.esCollapseMod.default.Panel
     /* was `typeof CollapsePanel` */
     object Panel {
       
@@ -94,8 +94,8 @@ object mod {
   @JSImport("rc-collapse", "Panel")
   @js.native
   open class Panel ()
-    extends typings.rcCollapse.panelMod.default
+    extends typings.rcCollapse.esPanelMod.default
   @JSImport("rc-collapse", "Panel")
   @js.native
-  val Panel: Instantiable0[typings.rcCollapse.panelMod.default] & Typeofdefault = js.native
+  val Panel: Instantiable0[typings.rcCollapse.esPanelMod.default] & Typeofdefault = js.native
 }

@@ -1,12 +1,11 @@
 package typings.googleCloudSpanner.anon
 
 import typings.googleCloudPreciseDate.mod.PreciseDate
-import typings.googleCloudSpanner.codecMod.Float
-import typings.googleCloudSpanner.codecMod.Int
-import typings.googleCloudSpanner.codecMod.Numeric
-import typings.googleCloudSpanner.codecMod.PGNumeric
-import typings.googleCloudSpanner.codecMod.Struct
-import typings.googleCloudSpanner.protosMod.google.spanner.admin.database.v1.DatabaseDialect
+import typings.googleCloudSpanner.buildSrcCodecMod.Float
+import typings.googleCloudSpanner.buildSrcCodecMod.Int
+import typings.googleCloudSpanner.buildSrcCodecMod.Numeric
+import typings.googleCloudSpanner.buildSrcCodecMod.PGNumeric
+import typings.googleCloudSpanner.buildSrcCodecMod.Struct
 import typings.protobufjs.mod.common.ITimestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,10 +25,10 @@ trait TypeofSpanner extends StObject {
   var COMMIT_TIMESTAMP: String = js.native
   
   /* static member */
-  var GOOGLE_STANDARD_SQL: DatabaseDialect = js.native
+  var GOOGLE_STANDARD_SQL: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.spanner.admin.database.v1.DatabaseDialect */ Any = js.native
   
   /* static member */
-  var POSTGRESQL: DatabaseDialect = js.native
+  var POSTGRESQL: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.spanner.admin.database.v1.DatabaseDialect */ Any = js.native
   
   /* static member */
   def date(): Any = js.native

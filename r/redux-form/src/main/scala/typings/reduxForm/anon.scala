@@ -1,9 +1,9 @@
 package typings.reduxForm
 
-import typings.reduxForm.actionsMod.FormAction
+import typings.reduxForm.libActionsMod.FormAction
+import typings.reduxForm.libReduxFormMod.WrappedReduxFormContext
 import typings.reduxForm.mod.FormErrors
 import typings.reduxForm.mod.FormWarnings
-import typings.reduxForm.reduxFormMod.WrappedReduxFormContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

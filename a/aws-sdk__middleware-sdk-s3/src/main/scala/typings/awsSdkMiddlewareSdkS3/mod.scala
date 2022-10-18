@@ -1,16 +1,16 @@
 package typings.awsSdkMiddlewareSdkS3
 
-import typings.awsSdkMiddlewareSdkS3.configurationMod.S3InputConfig
-import typings.awsSdkMiddlewareSdkS3.configurationMod.S3ResolvedConfig
-import typings.awsSdkMiddlewareSdkS3.throw200ExceptionsMod.PreviouslyResolved
-import typings.awsSdkTypes.middlewareMod.BuildMiddleware
-import typings.awsSdkTypes.middlewareMod.DeserializeMiddleware
-import typings.awsSdkTypes.middlewareMod.FinalizeRequestHandlerOptions
-import typings.awsSdkTypes.middlewareMod.FinalizeRequestMiddleware
-import typings.awsSdkTypes.middlewareMod.InitializeHandlerOptions
-import typings.awsSdkTypes.middlewareMod.InitializeMiddleware
-import typings.awsSdkTypes.middlewareMod.Pluggable
-import typings.awsSdkTypes.middlewareMod.RelativeMiddlewareOptions
+import typings.awsSdkMiddlewareSdkS3.distTypesConfigurationMod.S3InputConfig
+import typings.awsSdkMiddlewareSdkS3.distTypesConfigurationMod.S3ResolvedConfig
+import typings.awsSdkMiddlewareSdkS3.distTypesThrow200ExceptionsMod.PreviouslyResolved
+import typings.awsSdkTypes.distTypesMiddlewareMod.BuildMiddleware
+import typings.awsSdkTypes.distTypesMiddlewareMod.DeserializeMiddleware
+import typings.awsSdkTypes.distTypesMiddlewareMod.FinalizeRequestHandlerOptions
+import typings.awsSdkTypes.distTypesMiddlewareMod.FinalizeRequestMiddleware
+import typings.awsSdkTypes.distTypesMiddlewareMod.InitializeHandlerOptions
+import typings.awsSdkTypes.distTypesMiddlewareMod.InitializeMiddleware
+import typings.awsSdkTypes.distTypesMiddlewareMod.Pluggable
+import typings.awsSdkTypes.distTypesMiddlewareMod.RelativeMiddlewareOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +33,9 @@ object mod {
   
   inline def getValidateBucketNamePlugin(unused: Any): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getValidateBucketNamePlugin")(unused.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
   
-  inline def getWriteGetObjectResponseEndpointPlugin(config: typings.awsSdkMiddlewareSdkS3.writeGetObjectResponseEndpointMod.PreviouslyResolved): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWriteGetObjectResponseEndpointPlugin")(config.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
+  inline def getWriteGetObjectResponseEndpointPlugin(
+    config: typings.awsSdkMiddlewareSdkS3.distTypesWriteGetObjectResponseEndpointMod.PreviouslyResolved
+  ): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWriteGetObjectResponseEndpointPlugin")(config.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
   
   inline def resolveS3Config[T](input: T & S3InputConfig): T & S3ResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveS3Config")(input.asInstanceOf[js.Any]).asInstanceOf[T & S3ResolvedConfig]
   
@@ -49,7 +51,9 @@ object mod {
   @js.native
   val validateBucketNameMiddlewareOptions: InitializeHandlerOptions = js.native
   
-  inline def writeGetObjectResponseEndpointMiddleware(config: typings.awsSdkMiddlewareSdkS3.writeGetObjectResponseEndpointMod.PreviouslyResolved): BuildMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("writeGetObjectResponseEndpointMiddleware")(config.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[Any, Any]]
+  inline def writeGetObjectResponseEndpointMiddleware(
+    config: typings.awsSdkMiddlewareSdkS3.distTypesWriteGetObjectResponseEndpointMod.PreviouslyResolved
+  ): BuildMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("writeGetObjectResponseEndpointMiddleware")(config.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[Any, Any]]
   
   @JSImport("@aws-sdk/middleware-sdk-s3", "writeGetObjectResponseEndpointMiddlewareOptions")
   @js.native

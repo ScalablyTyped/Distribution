@@ -1,7 +1,7 @@
 package typings.dndCore
 
-import typings.dndCore.interfacesMod.BackendFactory
-import typings.dndCore.interfacesMod.DragDropManager
+import typings.dndCore.distInterfacesMod.BackendFactory
+import typings.dndCore.distInterfacesMod.DragDropManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +17,11 @@ object mod {
   object HandlerRole extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.dndCore.interfacesMod.HandlerRole & String] = js.native
+    def apply(value: String): js.UndefOr[typings.dndCore.distInterfacesMod.HandlerRole & String] = js.native
     
-    /* "SOURCE" */ val SOURCE: typings.dndCore.interfacesMod.HandlerRole.SOURCE & String = js.native
+    /* "SOURCE" */ val SOURCE: typings.dndCore.distInterfacesMod.HandlerRole.SOURCE & String = js.native
     
-    /* "TARGET" */ val TARGET: typings.dndCore.interfacesMod.HandlerRole.TARGET & String = js.native
+    /* "TARGET" */ val TARGET: typings.dndCore.distInterfacesMod.HandlerRole.TARGET & String = js.native
   }
   
   inline def createDragDropManager(backendFactory: BackendFactory): DragDropManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createDragDropManager")(backendFactory.asInstanceOf[js.Any]).asInstanceOf[DragDropManager]

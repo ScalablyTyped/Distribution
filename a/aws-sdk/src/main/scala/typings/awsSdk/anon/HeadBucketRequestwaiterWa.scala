@@ -1,8 +1,8 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.s3Mod.AccountId
-import typings.awsSdk.s3Mod.BucketName
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsS3Mod.AccountId
+import typings.awsSdk.clientsS3Mod.BucketName
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

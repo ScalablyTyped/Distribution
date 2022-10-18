@@ -1,7 +1,7 @@
 package typings.victoryCore.anon
 
-import typings.victoryCore.useAnimationStateMod.AnimationState
-import typings.victoryCore.useAnimationStateMod.AnyObject
+import typings.victoryCore.libVictoryUtilHooksUseAnimationStateMod.AnimationState
+import typings.victoryCore.libVictoryUtilHooksUseAnimationStateMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

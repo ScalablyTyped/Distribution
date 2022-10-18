@@ -9,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ColumnActionsMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.detailsListTypesMod.ColumnActionsMode & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnActionsMode & Double
+  ] = js.native
   
-  /* 1 */ val clickable: typings.officeUiFabricReact.detailsListTypesMod.ColumnActionsMode.clickable & Double = js.native
+  /* 1 */ val clickable: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnActionsMode.clickable & Double = js.native
   
-  /* 0 */ val disabled: typings.officeUiFabricReact.detailsListTypesMod.ColumnActionsMode.disabled & Double = js.native
+  /* 0 */ val disabled: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnActionsMode.disabled & Double = js.native
   
-  /* 2 */ val hasDropdown: typings.officeUiFabricReact.detailsListTypesMod.ColumnActionsMode.hasDropdown & Double = js.native
+  /* 2 */ val hasDropdown: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnActionsMode.hasDropdown & Double = js.native
 }

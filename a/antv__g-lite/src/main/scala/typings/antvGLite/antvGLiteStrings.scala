@@ -1,12 +1,12 @@
 package typings.antvGLite
 
-import typings.antvGLite.contextServiceMod.DataURLType
-import typings.antvGLite.csscolorvalueMod.ColorSpace
-import typings.antvGLite.cssnumericvalueMod.CSSNumericBaseType
+import typings.antvGLite.distCssCssomCsscolorvalueMod.ColorSpace
+import typings.antvGLite.distCssCssomCssnumericvalueMod.CSSNumericBaseType
+import typings.antvGLite.distCssStyleValueRegistryMod.CSSGlobalKeywords
+import typings.antvGLite.distServicesContextServiceMod.DataURLType
 import typings.antvGLite.distTypesMod.Cursor
 import typings.antvGLite.distTypesMod.TextTransform
 import typings.antvGLite.distTypesMod._TextOverflow
-import typings.antvGLite.styleValueRegistryMod.CSSGlobalKeywords
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -63,5 +63,7 @@ type IteratorFn[TData, TResult, TContext] = js.ThisFunction3[
 /* list */ typings.cssTree.mod.List[TData], 
 TResult]
 
+type ReduceFn[TData, TValue, TContext] = js.ThisFunction2[/* this */ TContext, /* accum */ TValue, /* data */ TData, TValue]
+
 type WalkOptions = (WalkOptionsVisit[
-AnPlusB | Atrule | AtrulePrelude | AttributeSelector | Block | Brackets | CDC | CDO | ClassSelector | Combinator | Comment | Declaration | DeclarationList | Dimension | FunctionNode | Hash | IdSelector | Identifier | MediaFeature | MediaQuery | MediaQueryList | Nth | NumberNode | Operator | Parentheses | Percentage | PseudoClassSelector | PseudoElementSelector | Ratio | Raw | Rule | Selector | SelectorList | StringNode | StyleSheet | TypeSelector | UnicodeRange | Url | Value | WhiteSpace]) | WalkOptionsNoVisit
+AnPlusB | Atrule | AtrulePrelude | AttributeSelector | Block | Brackets | CDC | CDO | ClassSelector | Combinator | Comment | Declaration | DeclarationList | Dimension | FunctionNode | Hash | IdSelector | Identifier | MediaFeature | MediaQuery | MediaQueryList | Nth | NumberNode | Operator | Parentheses | Percentage | PseudoClassSelector | PseudoElementSelector | Ratio | Raw | Rule | Selector | SelectorList | StringNode | StyleSheet | TypeSelector | UnicodeRange | Url_ | Value | WhiteSpace]) | WalkOptionsNoVisit

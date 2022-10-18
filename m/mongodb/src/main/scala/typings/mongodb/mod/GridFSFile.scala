@@ -1,13 +1,14 @@
 package typings.mongodb.mod
 
 import typings.bson.mod.Document
+import typings.bson.mod.ObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GridFSFile extends StObject {
   
-  var _id: typings.bson.mod.ObjectId
+  var _id: ObjectId
   
   var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -26,7 +27,7 @@ trait GridFSFile extends StObject {
 object GridFSFile {
   
   inline def apply(
-    _id: typings.bson.mod.ObjectId,
+    _id: ObjectId,
     chunkSize: scala.Double,
     filename: String,
     length: scala.Double,
@@ -60,6 +61,6 @@ object GridFSFile {
     
     inline def setUploadDate(value: js.Date): Self = StObject.set(x, "uploadDate", value.asInstanceOf[js.Any])
     
-    inline def set_id(value: typings.bson.mod.ObjectId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: ObjectId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TableLoadingOption extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.blueprintjsTable.esmRegionsMod.TableLoadingOption & String] = js.native
+  def apply(value: String): js.UndefOr[typings.blueprintjsTable.libEsmRegionsMod.TableLoadingOption & String] = js.native
   
-  /* "cells" */ val CELLS: typings.blueprintjsTable.esmRegionsMod.TableLoadingOption.CELLS & String = js.native
+  /* "cells" */ val CELLS: typings.blueprintjsTable.libEsmRegionsMod.TableLoadingOption.CELLS & String = js.native
   
-  /* "column-header" */ val COLUMN_HEADERS: typings.blueprintjsTable.esmRegionsMod.TableLoadingOption.COLUMN_HEADERS & String = js.native
+  /* "column-header" */ val COLUMN_HEADERS: typings.blueprintjsTable.libEsmRegionsMod.TableLoadingOption.COLUMN_HEADERS & String = js.native
   
-  /* "row-header" */ val ROW_HEADERS: typings.blueprintjsTable.esmRegionsMod.TableLoadingOption.ROW_HEADERS & String = js.native
+  /* "row-header" */ val ROW_HEADERS: typings.blueprintjsTable.libEsmRegionsMod.TableLoadingOption.ROW_HEADERS & String = js.native
 }

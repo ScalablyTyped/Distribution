@@ -1,8 +1,8 @@
 package typings.tsLoader
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.tsLoader.interfacesMod.FilePathKey
-import typings.tsLoader.interfacesMod.TSInstance
+import typings.tsLoader.distInterfacesMod.FilePathKey
+import typings.tsLoader.distInterfacesMod.TSInstance
 import typings.tsLoader.tsLoaderBooleans.`false`
 import typings.tsLoader.tsLoaderStrings.dts
 import typings.tsLoader.tsLoaderStrings.js_
@@ -444,7 +444,7 @@ object anon {
   
   trait ConfigFile extends StObject {
     
-    var configFile: typings.tsLoader.configMod.ConfigFile
+    var configFile: typings.tsLoader.distConfigMod.ConfigFile
     
     var configFileError: js.UndefOr[WebpackError] = js.undefined
     
@@ -452,14 +452,14 @@ object anon {
   }
   object ConfigFile {
     
-    inline def apply(configFile: typings.tsLoader.configMod.ConfigFile): ConfigFile = {
+    inline def apply(configFile: typings.tsLoader.distConfigMod.ConfigFile): ConfigFile = {
       val __obj = js.Dynamic.literal(configFile = configFile.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigFile]
     }
     
     extension [Self <: ConfigFile](x: Self) {
       
-      inline def setConfigFile(value: typings.tsLoader.configMod.ConfigFile): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
+      inline def setConfigFile(value: typings.tsLoader.distConfigMod.ConfigFile): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       
       inline def setConfigFileError(value: WebpackError): Self = StObject.set(x, "configFileError", value.asInstanceOf[js.Any])
       
@@ -524,6 +524,213 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: String,
+      options: CompilerOptions,
+      host: ModuleResolutionHost
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: String,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: Unit,
+      cache: Unit,
+      resolutionMode: CommonJS
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: String,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: Unit,
+      cache: Unit,
+      resolutionMode: ESNext
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: String,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: Unit,
+      cache: TypeReferenceDirectiveResolutionCache
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: String,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: Unit,
+      cache: TypeReferenceDirectiveResolutionCache,
+      resolutionMode: CommonJS
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: String,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: Unit,
+      cache: TypeReferenceDirectiveResolutionCache,
+      resolutionMode: ESNext
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: String,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: ResolvedProjectReference
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: String,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: ResolvedProjectReference,
+      cache: Unit,
+      resolutionMode: CommonJS
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: String,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: ResolvedProjectReference,
+      cache: Unit,
+      resolutionMode: ESNext
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: String,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: ResolvedProjectReference,
+      cache: TypeReferenceDirectiveResolutionCache
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: String,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: ResolvedProjectReference,
+      cache: TypeReferenceDirectiveResolutionCache,
+      resolutionMode: CommonJS
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: String,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: ResolvedProjectReference,
+      cache: TypeReferenceDirectiveResolutionCache,
+      resolutionMode: ESNext
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: Unit,
+      options: CompilerOptions,
+      host: ModuleResolutionHost
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: Unit,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: Unit,
+      cache: Unit,
+      resolutionMode: CommonJS
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: Unit,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: Unit,
+      cache: Unit,
+      resolutionMode: ESNext
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: Unit,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: Unit,
+      cache: TypeReferenceDirectiveResolutionCache
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: Unit,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: Unit,
+      cache: TypeReferenceDirectiveResolutionCache,
+      resolutionMode: CommonJS
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: Unit,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: Unit,
+      cache: TypeReferenceDirectiveResolutionCache,
+      resolutionMode: ESNext
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: Unit,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: ResolvedProjectReference
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: Unit,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: ResolvedProjectReference,
+      cache: Unit,
+      resolutionMode: CommonJS
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: Unit,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: ResolvedProjectReference,
+      cache: Unit,
+      resolutionMode: ESNext
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: Unit,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: ResolvedProjectReference,
+      cache: TypeReferenceDirectiveResolutionCache
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: Unit,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: ResolvedProjectReference,
+      cache: TypeReferenceDirectiveResolutionCache,
+      resolutionMode: CommonJS
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    def apply(
+      typeReferenceDirectiveName: String,
+      containingFile: Unit,
+      options: CompilerOptions,
+      host: ModuleResolutionHost,
+      redirectedReference: ResolvedProjectReference,
+      cache: TypeReferenceDirectiveResolutionCache,
+      resolutionMode: ESNext
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+  }
+  
+  @js.native
+  trait FnCallPathCallbackPollingIntervalOptions extends StObject {
+    
     def apply(path: String, callback: FileWatcherCallback): FileWatcher = js.native
     def apply(path: String, callback: FileWatcherCallback, pollingInterval: Double): FileWatcher = js.native
     def apply(path: String, callback: FileWatcherCallback, pollingInterval: Double, options: CompilerOptions): FileWatcher = js.native
@@ -537,213 +744,6 @@ object anon {
     def apply(path: String, callback: DirectoryWatcherCallback, recursive: Boolean): FileWatcher = js.native
     def apply(path: String, callback: DirectoryWatcherCallback, recursive: Boolean, options: CompilerOptions): FileWatcher = js.native
     def apply(path: String, callback: DirectoryWatcherCallback, recursive: Unit, options: CompilerOptions): FileWatcher = js.native
-  }
-  
-  @js.native
-  trait FnCallTypeReferenceDirectiveNameContainingFileOptionsHostRedirectedReferenceCacheResolutionMode extends StObject {
-    
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: Unit,
-      resolutionMode: ESNext
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: TypeReferenceDirectiveResolutionCache
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: ESNext
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: Unit,
-      resolutionMode: ESNext
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: TypeReferenceDirectiveResolutionCache
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: ESNext
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: Unit,
-      resolutionMode: ESNext
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: TypeReferenceDirectiveResolutionCache
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: ESNext
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: Unit,
-      resolutionMode: ESNext
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: TypeReferenceDirectiveResolutionCache
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def apply(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: ESNext
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
   }
   
   trait InputFileName extends StObject {

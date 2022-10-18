@@ -4,8 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.consumerDataStandards.consumerDataStandardsStrings.OFF_PEAK
 import typings.consumerDataStandards.consumerDataStandardsStrings.PEAK
 import typings.consumerDataStandards.consumerDataStandardsStrings.SHOULDER
-import typings.consumerDataStandards.consumerDataStandardsStrings.SHOULDER1
-import typings.consumerDataStandards.consumerDataStandardsStrings.SHOULDER2
+import typings.consumerDataStandards.consumerDataStandardsStrings.SOLAR_SPONGE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +14,17 @@ trait Rates
      with /* k */ StringDictionary[Any] {
   
   /**
-    * Description of the rate
+    * The daily supply charge (exclusive of GST) for this controlled load tier
+    */
+  var dailySupplyCharge: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Description of the controlled load rate
     */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Display name of the rate
+    * Display name of the controlled load rate
     */
   var displayName: String
   
@@ -30,22 +34,22 @@ trait Rates
   var rates: js.Array[MeasureUnit]
   
   /**
-    * Array of times of use
+    * Array of times of use.
     */
-  var timeOfUse: js.Array[EndTime]
+  var timeOfUse: js.Array[Days]
   
   /**
     * The type of usage that the rate applies to
     */
-  var `type`: PEAK | OFF_PEAK | SHOULDER | SHOULDER1 | SHOULDER2
+  var `type`: PEAK | OFF_PEAK | SHOULDER | SOLAR_SPONGE
 }
 object Rates {
   
   inline def apply(
     displayName: String,
     rates: js.Array[MeasureUnit],
-    timeOfUse: js.Array[EndTime],
-    `type`: PEAK | OFF_PEAK | SHOULDER | SHOULDER1 | SHOULDER2
+    timeOfUse: js.Array[Days],
+    `type`: PEAK | OFF_PEAK | SHOULDER | SOLAR_SPONGE
   ): Rates = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], rates = rates.asInstanceOf[js.Any], timeOfUse = timeOfUse.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -53,6 +57,10 @@ object Rates {
   }
   
   extension [Self <: Rates](x: Self) {
+    
+    inline def setDailySupplyCharge(value: String): Self = StObject.set(x, "dailySupplyCharge", value.asInstanceOf[js.Any])
+    
+    inline def setDailySupplyChargeUndefined: Self = StObject.set(x, "dailySupplyCharge", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -64,10 +72,10 @@ object Rates {
     
     inline def setRatesVarargs(value: MeasureUnit*): Self = StObject.set(x, "rates", js.Array(value*))
     
-    inline def setTimeOfUse(value: js.Array[EndTime]): Self = StObject.set(x, "timeOfUse", value.asInstanceOf[js.Any])
+    inline def setTimeOfUse(value: js.Array[Days]): Self = StObject.set(x, "timeOfUse", value.asInstanceOf[js.Any])
     
-    inline def setTimeOfUseVarargs(value: EndTime*): Self = StObject.set(x, "timeOfUse", js.Array(value*))
+    inline def setTimeOfUseVarargs(value: Days*): Self = StObject.set(x, "timeOfUse", js.Array(value*))
     
-    inline def setType(value: PEAK | OFF_PEAK | SHOULDER | SHOULDER1 | SHOULDER2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PEAK | OFF_PEAK | SHOULDER | SOLAR_SPONGE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -2,14 +2,12 @@ package typings.maplibreGl.mod
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.glMatrix.mod.mat4
 import typings.maplibreGl.anon.Casesensitive
 import typings.maplibreGl.anon.Currency
-import typings.maplibreGl.anon.Data
 import typings.maplibreGl.anon.Fontscale
+import typings.maplibreGl.anon.Target
 import typings.maplibreGl.anon.inPositionAnchorPointLike
-import typings.maplibreGl.maplibreGlStrings.$ObjMap
 import typings.maplibreGl.maplibreGlStrings.Asterisk
 import typings.maplibreGl.maplibreGlStrings.EqualssignEqualssign
 import typings.maplibreGl.maplibreGlStrings.Exclamationmark
@@ -85,7 +83,7 @@ import typings.maplibreGl.maplibreGlStrings.min
 import typings.maplibreGl.maplibreGlStrings.none
 import typings.maplibreGl.maplibreGlStrings.number
 import typings.maplibreGl.maplibreGlStrings.pi
-import typings.maplibreGl.maplibreGlStrings.properties_
+import typings.maplibreGl.maplibreGlStrings.properties
 import typings.maplibreGl.maplibreGlStrings.rgb
 import typings.maplibreGl.maplibreGlStrings.rgba
 import typings.maplibreGl.maplibreGlStrings.round
@@ -134,10 +132,6 @@ type ColorSpecification = String
 
 type CompareFuncType = GLenum
 
-type Complete[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof std.Required<T> ]: std.Pick<T, P> extends std.Required<std.Pick<T, P>>? T[P] : T[P] | undefined}
-  */ typings.maplibreGl.maplibreGlStrings.Complete & TopLevel[Any]
-
 type Coordinates = js.Tuple4[
 js.Tuple2[Double, Double], 
 js.Tuple2[Double, Double], 
@@ -184,7 +178,7 @@ Any | Double | ExpressionInputType,
 Any | Double | ExpressionInputType, 
 js.UndefOr[Any | CollatorExpressionSpecification | Double]]) | (Array[
 boolean | format | number | `object` | string | `to-color` | `to-number` | all | any | `case` | coalesce | `match` | interpolate | `interpolate-hcl` | `interpolate-lab` | step | let | concat | Asterisk | Plussign | max | min | Any | (js.Array[Double | ExpressionInputType]) | Boolean | ColorSpecification | Double | ExpressionInputType | Fontscale | InterpolationSpecification | String | (js.Tuple2[image_, Any])]) | CollatorExpressionSpecification | (js.Array[
-accumulated | `geometry-type` | id | `line-progress` | properties_ | typings.maplibreGl.maplibreGlStrings.ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`]) | (js.Tuple5[rgba, Double | Any, Double | Any, Double | Any, Double | Any])
+accumulated | `geometry-type` | id | `line-progress` | properties | typings.maplibreGl.maplibreGlStrings.ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`]) | (js.Tuple5[rgba, Double | Any, Double | Any, Double | Any, Double | Any])
 
 type FeatureState = StringDictionary[Any]
 
@@ -235,11 +229,7 @@ type LngLatBoundsLike = LngLatBounds | (js.Tuple2[LngLatLike, LngLatLike]) | (js
 */
 type LngLatLike = _LngLatLike | (js.Tuple2[Double, Double])
 
-type MessageListener = js.Function1[/* a */ Data, Any]
-
-type ObjMap[T /* <: js.Object */, F /* <: js.Function1[/* v */ Any, Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: F extends (v : T[K]): infer R? any : never}
-  */ $ObjMap & TopLevel[T]
+type MessageListener = js.Function1[/* a */ Target, Any]
 
 type Offset = Double | PointLike | inPositionAnchorPointLike
 

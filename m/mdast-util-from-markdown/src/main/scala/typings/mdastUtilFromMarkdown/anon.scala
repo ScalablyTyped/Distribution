@@ -1,14 +1,14 @@
 package typings.mdastUtilFromMarkdown
 
-import typings.mdastUtilFromMarkdown.libMod.CompileContext
-import typings.mdastUtilFromMarkdown.libMod.Fragment
-import typings.mdastUtilFromMarkdown.libMod.Handles
-import typings.mdastUtilFromMarkdown.libMod.Node
-import typings.mdastUtilFromMarkdown.libMod.NormalizedExtension
-import typings.mdastUtilFromMarkdown.libMod.OnEnterError
-import typings.mdastUtilFromMarkdown.libMod.OnExitError
-import typings.mdastUtilFromMarkdown.libMod.Token
-import typings.mdastUtilFromMarkdown.libMod.Transform
+import typings.mdastUtilFromMarkdown.devLibMod.CompileContext
+import typings.mdastUtilFromMarkdown.devLibMod.Fragment
+import typings.mdastUtilFromMarkdown.devLibMod.Handles
+import typings.mdastUtilFromMarkdown.devLibMod.Node
+import typings.mdastUtilFromMarkdown.devLibMod.NormalizedExtension
+import typings.mdastUtilFromMarkdown.devLibMod.OnEnterError
+import typings.mdastUtilFromMarkdown.devLibMod.OnExitError
+import typings.mdastUtilFromMarkdown.devLibMod.Token
+import typings.mdastUtilFromMarkdown.devLibMod.Transform
 import typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownStrings.characterReferenceMarkerHexadecimal
 import typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownStrings.characterReferenceMarkerNumeric
 import typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownStrings.collapsed
@@ -57,19 +57,19 @@ object anon {
     
     var canContainEols: js.Array[String]
     
-    var enter: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Handles
+    var enter: typings.mdastUtilFromMarkdown.libMod.Handles
     
-    var exit: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Handles
+    var exit: typings.mdastUtilFromMarkdown.libMod.Handles
     
-    var transforms: js.Array[typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Transform]
+    var transforms: js.Array[typings.mdastUtilFromMarkdown.libMod.Transform]
   }
   object Enter {
     
     inline def apply(
       canContainEols: js.Array[String],
-      enter: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Handles,
-      exit: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Handles,
-      transforms: js.Array[typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Transform]
+      enter: typings.mdastUtilFromMarkdown.libMod.Handles,
+      exit: typings.mdastUtilFromMarkdown.libMod.Handles,
+      transforms: js.Array[typings.mdastUtilFromMarkdown.libMod.Transform]
     ): Enter = {
       val __obj = js.Dynamic.literal(canContainEols = canContainEols.asInstanceOf[js.Any], enter = enter.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any], transforms = transforms.asInstanceOf[js.Any])
       __obj.asInstanceOf[Enter]
@@ -81,13 +81,13 @@ object anon {
       
       inline def setCanContainEolsVarargs(value: String*): Self = StObject.set(x, "canContainEols", js.Array(value*))
       
-      inline def setEnter(value: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Handles): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: typings.mdastUtilFromMarkdown.libMod.Handles): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      inline def setExit(value: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Handles): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: typings.mdastUtilFromMarkdown.libMod.Handles): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      inline def setTransforms(value: js.Array[typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Transform]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+      inline def setTransforms(value: js.Array[typings.mdastUtilFromMarkdown.libMod.Transform]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
       
-      inline def setTransformsVarargs(value: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Transform*): Self = StObject.set(x, "transforms", js.Array(value*))
+      inline def setTransformsVarargs(value: typings.mdastUtilFromMarkdown.libMod.Transform*): Self = StObject.set(x, "transforms", js.Array(value*))
     }
   }
   
@@ -224,39 +224,36 @@ object anon {
     
     def buffer(): Unit
     @JSName("buffer")
-    var buffer_Original: js.ThisFunction0[
-        /* this */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.CompileContext, 
-        Unit
-      ]
+    var buffer_Original: js.ThisFunction0[/* this */ typings.mdastUtilFromMarkdown.libMod.CompileContext, Unit]
     
-    var config: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.NormalizedExtension
+    var config: typings.mdastUtilFromMarkdown.libMod.NormalizedExtension
     
-    def enter[N /* <: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node */](node: N, token: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token): N
-    def enter[N /* <: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node */](
+    def enter[N /* <: typings.mdastUtilFromMarkdown.libMod.Node */](node: N, token: typings.mdastUtilFromMarkdown.libMod.Token): N
+    def enter[N /* <: typings.mdastUtilFromMarkdown.libMod.Node */](
       node: N,
-      token: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token,
-      onError: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.OnEnterError
+      token: typings.mdastUtilFromMarkdown.libMod.Token,
+      onError: typings.mdastUtilFromMarkdown.libMod.OnEnterError
     ): N
     @JSName("enter")
     var enter_Original: js.ThisFunction3[
-        /* this */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.CompileContext, 
-        /* node */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node, 
-        /* token */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token, 
-        /* onError */ js.UndefOr[typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.OnEnterError], 
-        typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node
+        /* this */ typings.mdastUtilFromMarkdown.libMod.CompileContext, 
+        /* node */ typings.mdastUtilFromMarkdown.libMod.Node, 
+        /* token */ typings.mdastUtilFromMarkdown.libMod.Token, 
+        /* onError */ js.UndefOr[typings.mdastUtilFromMarkdown.libMod.OnEnterError], 
+        typings.mdastUtilFromMarkdown.libMod.Node
       ]
     
-    def exit(token: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token): typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node
+    def exit(token: typings.mdastUtilFromMarkdown.libMod.Token): typings.mdastUtilFromMarkdown.libMod.Node
     def exit(
-      token: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token,
-      onError: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.OnExitError
-    ): typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node
+      token: typings.mdastUtilFromMarkdown.libMod.Token,
+      onError: typings.mdastUtilFromMarkdown.libMod.OnExitError
+    ): typings.mdastUtilFromMarkdown.libMod.Node
     @JSName("exit")
     var exit_Original: js.ThisFunction2[
-        /* this */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.CompileContext, 
-        /* token */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token, 
-        /* onError */ js.UndefOr[typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.OnExitError], 
-        typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node
+        /* this */ typings.mdastUtilFromMarkdown.libMod.CompileContext, 
+        /* token */ typings.mdastUtilFromMarkdown.libMod.Token, 
+        /* onError */ js.UndefOr[typings.mdastUtilFromMarkdown.libMod.OnExitError], 
+        typings.mdastUtilFromMarkdown.libMod.Node
       ]
     
     def getData[K /* <: String */](key: K): /* import warning: importer.ImportType#apply Failed type conversion: mdast-util-from-markdown.mdast-util-from-markdown/lib.CompileData[K] */ js.Any
@@ -268,10 +265,7 @@ object anon {
     
     def resume(): String
     @JSName("resume")
-    var resume_Original: js.ThisFunction0[
-        /* this */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.CompileContext, 
-        String
-      ]
+    var resume_Original: js.ThisFunction0[/* this */ typings.mdastUtilFromMarkdown.libMod.CompileContext, String]
     
     def setData(key: String): Unit
     def setData(key: String, value: Any): Unit
@@ -279,50 +273,44 @@ object anon {
     var setData_Original: js.Function2[/* key */ String, /* value */ js.UndefOr[Any], Unit]
     
     var stack: js.Array[
-        typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node | typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Fragment
+        typings.mdastUtilFromMarkdown.libMod.Node | typings.mdastUtilFromMarkdown.libMod.Fragment
       ]
     
     var tokenStack: js.Array[
         js.Tuple2[
-          typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token, 
-          js.UndefOr[typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.OnEnterError]
+          typings.mdastUtilFromMarkdown.libMod.Token, 
+          js.UndefOr[typings.mdastUtilFromMarkdown.libMod.OnEnterError]
         ]
       ]
   }
   object OmitCompileContextsliceSeBuffer {
     
     inline def apply(
-      buffer: js.ThisFunction0[
-          /* this */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.CompileContext, 
-          Unit
-        ],
-      config: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.NormalizedExtension,
+      buffer: js.ThisFunction0[/* this */ typings.mdastUtilFromMarkdown.libMod.CompileContext, Unit],
+      config: typings.mdastUtilFromMarkdown.libMod.NormalizedExtension,
       enter: js.ThisFunction3[
-          /* this */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.CompileContext, 
-          /* node */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node, 
-          /* token */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token, 
-          /* onError */ js.UndefOr[typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.OnEnterError], 
-          typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node
+          /* this */ typings.mdastUtilFromMarkdown.libMod.CompileContext, 
+          /* node */ typings.mdastUtilFromMarkdown.libMod.Node, 
+          /* token */ typings.mdastUtilFromMarkdown.libMod.Token, 
+          /* onError */ js.UndefOr[typings.mdastUtilFromMarkdown.libMod.OnEnterError], 
+          typings.mdastUtilFromMarkdown.libMod.Node
         ],
       exit: js.ThisFunction2[
-          /* this */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.CompileContext, 
-          /* token */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token, 
-          /* onError */ js.UndefOr[typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.OnExitError], 
-          typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node
+          /* this */ typings.mdastUtilFromMarkdown.libMod.CompileContext, 
+          /* token */ typings.mdastUtilFromMarkdown.libMod.Token, 
+          /* onError */ js.UndefOr[typings.mdastUtilFromMarkdown.libMod.OnExitError], 
+          typings.mdastUtilFromMarkdown.libMod.Node
         ],
       getData: /* key */ String => /* import warning: importer.ImportType#apply Failed type conversion: mdast-util-from-markdown.mdast-util-from-markdown/lib.CompileData[string] */ js.Any,
-      resume: js.ThisFunction0[
-          /* this */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.CompileContext, 
-          String
-        ],
+      resume: js.ThisFunction0[/* this */ typings.mdastUtilFromMarkdown.libMod.CompileContext, String],
       setData: (/* key */ String, /* value */ js.UndefOr[Any]) => Unit,
       stack: js.Array[
-          typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node | typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Fragment
+          typings.mdastUtilFromMarkdown.libMod.Node | typings.mdastUtilFromMarkdown.libMod.Fragment
         ],
       tokenStack: js.Array[
           js.Tuple2[
-            typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token, 
-            js.UndefOr[typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.OnEnterError]
+            typings.mdastUtilFromMarkdown.libMod.Token, 
+            js.UndefOr[typings.mdastUtilFromMarkdown.libMod.OnEnterError]
           ]
         ]
     ): OmitCompileContextsliceSeBuffer = {
@@ -332,31 +320,26 @@ object anon {
     
     extension [Self <: OmitCompileContextsliceSeBuffer](x: Self) {
       
-      inline def setBuffer(
-        value: js.ThisFunction0[
-              /* this */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.CompileContext, 
-              Unit
-            ]
-      ): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: js.ThisFunction0[/* this */ typings.mdastUtilFromMarkdown.libMod.CompileContext, Unit]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      inline def setConfig(value: typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.NormalizedExtension): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: typings.mdastUtilFromMarkdown.libMod.NormalizedExtension): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setEnter(
         value: js.ThisFunction3[
-              /* this */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.CompileContext, 
-              /* node */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node, 
-              /* token */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token, 
-              /* onError */ js.UndefOr[typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.OnEnterError], 
-              typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node
+              /* this */ typings.mdastUtilFromMarkdown.libMod.CompileContext, 
+              /* node */ typings.mdastUtilFromMarkdown.libMod.Node, 
+              /* token */ typings.mdastUtilFromMarkdown.libMod.Token, 
+              /* onError */ js.UndefOr[typings.mdastUtilFromMarkdown.libMod.OnEnterError], 
+              typings.mdastUtilFromMarkdown.libMod.Node
             ]
       ): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
       inline def setExit(
         value: js.ThisFunction2[
-              /* this */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.CompileContext, 
-              /* token */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token, 
-              /* onError */ js.UndefOr[typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.OnExitError], 
-              typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node
+              /* this */ typings.mdastUtilFromMarkdown.libMod.CompileContext, 
+              /* token */ typings.mdastUtilFromMarkdown.libMod.Token, 
+              /* onError */ js.UndefOr[typings.mdastUtilFromMarkdown.libMod.OnExitError], 
+              typings.mdastUtilFromMarkdown.libMod.Node
             ]
       ): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
@@ -364,38 +347,33 @@ object anon {
         value: /* key */ String => /* import warning: importer.ImportType#apply Failed type conversion: mdast-util-from-markdown.mdast-util-from-markdown/lib.CompileData[string] */ js.Any
       ): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
       
-      inline def setResume(
-        value: js.ThisFunction0[
-              /* this */ typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.CompileContext, 
-              String
-            ]
-      ): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
+      inline def setResume(value: js.ThisFunction0[/* this */ typings.mdastUtilFromMarkdown.libMod.CompileContext, String]): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
       
       inline def setSetData(value: (/* key */ String, /* value */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction2(value))
       
       inline def setStack(
         value: js.Array[
-              typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node | typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Fragment
+              typings.mdastUtilFromMarkdown.libMod.Node | typings.mdastUtilFromMarkdown.libMod.Fragment
             ]
       ): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
       inline def setStackVarargs(
-        value: (typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Node | typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Fragment)*
+        value: (typings.mdastUtilFromMarkdown.libMod.Node | typings.mdastUtilFromMarkdown.libMod.Fragment)*
       ): Self = StObject.set(x, "stack", js.Array(value*))
       
       inline def setTokenStack(
         value: js.Array[
               js.Tuple2[
-                typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token, 
-                js.UndefOr[typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.OnEnterError]
+                typings.mdastUtilFromMarkdown.libMod.Token, 
+                js.UndefOr[typings.mdastUtilFromMarkdown.libMod.OnEnterError]
               ]
             ]
       ): Self = StObject.set(x, "tokenStack", value.asInstanceOf[js.Any])
       
       inline def setTokenStackVarargs(
         value: (js.Tuple2[
-              typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.Token, 
-              js.UndefOr[typings.mdastUtilFromMarkdown.mdastUtilFromMarkdownMod.OnEnterError]
+              typings.mdastUtilFromMarkdown.libMod.Token, 
+              js.UndefOr[typings.mdastUtilFromMarkdown.libMod.OnEnterError]
             ])*
       ): Self = StObject.set(x, "tokenStack", js.Array(value*))
     }

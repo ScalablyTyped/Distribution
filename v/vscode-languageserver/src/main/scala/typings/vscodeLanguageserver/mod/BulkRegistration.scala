@@ -14,5 +14,5 @@ object BulkRegistration {
     * Creates a new bulk registration.
     * @return an empty bulk registration.
     */
-  inline def create(): typings.vscodeLanguageserver.serverMod.BulkRegistration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.vscodeLanguageserver.serverMod.BulkRegistration]
+  inline def create(): typings.vscodeLanguageserver.libCommonServerMod.BulkRegistration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.vscodeLanguageserver.libCommonServerMod.BulkRegistration]
 }

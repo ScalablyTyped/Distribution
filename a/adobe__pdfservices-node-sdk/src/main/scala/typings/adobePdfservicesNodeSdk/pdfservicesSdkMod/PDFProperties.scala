@@ -14,6 +14,6 @@ object PDFProperties {
     
     @JSImport("@adobe/pdfservices-node-sdk/pdfservices-sdk", "PDFProperties.options.PDFPropertiesOptions")
     @js.native
-    val PDFPropertiesOptions: typings.adobePdfservicesNodeSdk.pdfPropertiesOptionsMod.PDFPropertiesOptions = js.native
+    val PDFPropertiesOptions: typings.adobePdfservicesNodeSdk.operationOptionPdfpropertiesPdfPropertiesOptionsMod.PDFPropertiesOptions = js.native
   }
 }

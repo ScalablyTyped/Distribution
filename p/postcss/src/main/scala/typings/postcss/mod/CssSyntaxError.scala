@@ -1,6 +1,6 @@
 package typings.postcss.mod
 
-import typings.postcss.cssSyntaxErrorMod.RangePosition
+import typings.postcss.libCssSyntaxErrorMod.RangePosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postcss", "CssSyntaxError")
 @js.native
 open class CssSyntaxError protected ()
-  extends typings.postcss.cssSyntaxErrorMod.default {
+  extends typings.postcss.libCssSyntaxErrorMod.default {
   /**
     * Instantiates a CSS syntax error. Can be instantiated for a single position
     * or for a range.

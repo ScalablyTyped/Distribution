@@ -94,7 +94,15 @@ object LazyJS {
   
   type ErrorCallback = js.Function1[/* error */ Any, Unit]
   
-  type Flatten[T, Shallow /* <: Boolean */] = (/* import warning: importer.ImportType#apply Failed type conversion: lazy.js.anon.0<T, Shallow>[T extends lazy.js.LazyJS.Sequence<any> ? 0 : T extends std.Array<any> ? 0 : T extends std.ReadonlyArray<any> ? 0 : 1] */ js.Any) | T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Shallow extends true ? T extends lazy.js.LazyJS.Sequence<infer U> ? U : T : {  0 :T extends lazy.js.LazyJS.Sequence<infer U> ? lazy.js.LazyJS.Flatten<U, Shallow> : T extends std.Array<infer U> ? lazy.js.LazyJS.Flatten<U, Shallow> : T extends std.ReadonlyArray<infer U> ? lazy.js.LazyJS.Flatten<U, Shallow> : never,   1 :T}[T extends lazy.js.LazyJS.Sequence<any> ? 0 : T extends std.Array<any> ? 0 : T extends std.ReadonlyArray<any> ? 0 : 1]
+    }}}
+    */
+  @js.native
+  trait Flatten[T, Shallow /* <: Boolean */] extends StObject
   
   @js.native
   trait GeneratedSequence[T]
@@ -190,7 +198,15 @@ object LazyJS {
     def watch(propertyNames: js.Array[String]): Sequence[Property] = js.native
   }
   
-  type PushFront[TailT /* <: js.Array[Any] */, FrontT] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    (front : FrontT, rest : TailT): any extends (tuple : infer TupleT): any ? TupleT : never
+    }}}
+    */
+  @js.native
+  trait PushFront[TailT /* <: js.Array[Any] */, FrontT] extends StObject
   
   @js.native
   trait Sequence[T]
@@ -376,7 +392,7 @@ object LazyJS {
   
   type TestCallback[T, U] = js.Function2[/* value */ T, /* index */ U, Boolean]
   
-  type Tuple[ElementT, LengthT /* <: Double */, OutputT /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: lazy.js.anon.1<ElementT, OutputT, LengthT>[// LengthT is not compile-time constant
+  type Tuple[ElementT, LengthT /* <: Double */, OutputT /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: lazy.js.anon.0<ElementT, OutputT, LengthT>[// LengthT is not compile-time constant
   number extends LengthT ? 0 : LengthT extends 0 ? 1 : OutputT['length'] extends LengthT ? 2 : 3] */ js.Any
   
   type ValueCallback[T] = js.Function1[/* value */ T, Unit]

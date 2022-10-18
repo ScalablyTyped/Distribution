@@ -2,7 +2,7 @@ package typings.tensorflowTfjsNode.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tensorflowTfjsConverter.anon.Typeofio
-import typings.tensorflowTfjsConverter.operationsTypesMod.OpExecutor
+import typings.tensorflowTfjsConverter.distOperationsTypesMod.OpExecutor
 import typings.tensorflowTfjsCore.anon.Grad
 import typings.tensorflowTfjsCore.anon.Grads
 import typings.tensorflowTfjsCore.anon.Indexing
@@ -10,7 +10,23 @@ import typings.tensorflowTfjsCore.anon.Indices
 import typings.tensorflowTfjsCore.anon.Mean
 import typings.tensorflowTfjsCore.anon.Value
 import typings.tensorflowTfjsCore.anon.Values
-import typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding
+import typings.tensorflowTfjsCore.distEngineMod.CustomGradientFunc
+import typings.tensorflowTfjsCore.distEngineMod.Engine
+import typings.tensorflowTfjsCore.distEngineMod.MemoryInfo
+import typings.tensorflowTfjsCore.distEngineMod.ProfileInfo
+import typings.tensorflowTfjsCore.distEngineMod.ScopeFn
+import typings.tensorflowTfjsCore.distEngineMod.TimingInfo
+import typings.tensorflowTfjsCore.distIoTypesMod.IOHandler
+import typings.tensorflowTfjsCore.distIoTypesMod.IOHandlerSync
+import typings.tensorflowTfjsCore.distIoTypesMod.LoadOptions
+import typings.tensorflowTfjsCore.distIoTypesMod.ModelArtifacts
+import typings.tensorflowTfjsCore.distIoTypesMod.ModelJSON
+import typings.tensorflowTfjsCore.distKernelRegistryMod.GradConfig
+import typings.tensorflowTfjsCore.distKernelRegistryMod.KernelConfig
+import typings.tensorflowTfjsCore.distOpsConvUtilMod.ExplicitPadding
+import typings.tensorflowTfjsCore.distOpsMultiRnnCellMod.LSTMCellFunc
+import typings.tensorflowTfjsCore.distOpsRaggedGatherMod.RaggedGatherMap
+import typings.tensorflowTfjsCore.distPlatformsPlatformMod.Platform
 import typings.tensorflowTfjsCore.distTensorMod.Scalar
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
@@ -20,6 +36,8 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor5D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor6D
 import typings.tensorflowTfjsCore.distTensorMod.Variable
+import typings.tensorflowTfjsCore.distTensorTypesMod.NamedTensorMap
+import typings.tensorflowTfjsCore.distTensorTypesMod.TensorContainer
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank.R1
 import typings.tensorflowTfjsCore.distTypesMod.Rank.R2
@@ -34,26 +52,12 @@ import typings.tensorflowTfjsCore.distTypesMod.TensorLike3D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike5D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike6D
-import typings.tensorflowTfjsCore.engineMod.CustomGradientFunc
-import typings.tensorflowTfjsCore.engineMod.Engine
-import typings.tensorflowTfjsCore.engineMod.MemoryInfo
-import typings.tensorflowTfjsCore.engineMod.ProfileInfo
-import typings.tensorflowTfjsCore.engineMod.ScopeFn
-import typings.tensorflowTfjsCore.engineMod.TimingInfo
-import typings.tensorflowTfjsCore.kernelRegistryMod.GradConfig
-import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
-import typings.tensorflowTfjsCore.multiRnnCellMod.LSTMCellFunc
-import typings.tensorflowTfjsCore.platformMod.Platform
-import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
-import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
-import typings.tensorflowTfjsCore.typesMod.IOHandler
-import typings.tensorflowTfjsCore.typesMod.IOHandlerSync
-import typings.tensorflowTfjsCore.typesMod.LoadOptions
-import typings.tensorflowTfjsLayers.baseCallbacksMod.BaseCallbackConstructor
-import typings.tensorflowTfjsLayers.containerMod.ContainerArgs
-import typings.tensorflowTfjsLayers.inputLayerMod.InputConfig
-import typings.tensorflowTfjsLayers.modelsMod.Sequential
-import typings.tensorflowTfjsLayers.modelsMod.SequentialArgs
+import typings.tensorflowTfjsCore.distTypesMod.WebGLData
+import typings.tensorflowTfjsLayers.distBaseCallbacksMod.BaseCallbackConstructor
+import typings.tensorflowTfjsLayers.distEngineContainerMod.ContainerArgs
+import typings.tensorflowTfjsLayers.distEngineInputLayerMod.InputConfig
+import typings.tensorflowTfjsLayers.distModelsMod.Sequential
+import typings.tensorflowTfjsLayers.distModelsMod.SequentialArgs
 import typings.tensorflowTfjsNode.mod.^
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.NCDHW
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.NCHW
@@ -177,8 +181,8 @@ inline def Dilation2DBackpropInput: /* "Dilation2DBackpropInput" */ String = ^.a
 
 inline def Dilation2D_ : /* "Dilation2D" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Dilation2D").asInstanceOf[/* "Dilation2D" */ String]
 
-inline def ENV_ : typings.tensorflowTfjsCore.environmentMod.Environment = ^.asInstanceOf[js.Dynamic].selectDynamic("ENV").asInstanceOf[typings.tensorflowTfjsCore.environmentMod.Environment]
-inline def ENV__=(x: typings.tensorflowTfjsCore.environmentMod.Environment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENV")(x.asInstanceOf[js.Any])
+inline def ENV_ : typings.tensorflowTfjsCore.distEnvironmentMod.Environment = ^.asInstanceOf[js.Dynamic].selectDynamic("ENV").asInstanceOf[typings.tensorflowTfjsCore.distEnvironmentMod.Environment]
+inline def ENV__=(x: typings.tensorflowTfjsCore.distEnvironmentMod.Environment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENV")(x.asInstanceOf[js.Any])
 
 inline def Einsum_ : /* "Einsum" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Einsum").asInstanceOf[/* "Einsum" */ String]
 
@@ -319,6 +323,10 @@ inline def Pow_ : /* "Pow" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic(
 inline def Prelu_ : /* "Prelu" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Prelu").asInstanceOf[/* "Prelu" */ String]
 
 inline def Prod_ : /* "Prod" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Prod").asInstanceOf[/* "Prod" */ String]
+
+inline def RaggedGather_ : /* "RaggedGather" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("RaggedGather").asInstanceOf[/* "RaggedGather" */ String]
+
+inline def RaggedRange_ : /* "RaggedRange" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("RaggedRange").asInstanceOf[/* "RaggedRange" */ String]
 
 inline def RaggedTensorToTensor_ : /* "RaggedTensorToTensor" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("RaggedTensorToTensor").asInstanceOf[/* "RaggedTensorToTensor" */ String]
 
@@ -732,7 +740,7 @@ inline def avgPool3d[T /* <: Tensor4D | Tensor5D */](
   dataFormat: js.UndefOr[NDHWC | NCDHW]
 ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def backend(): typings.tensorflowTfjsCore.backendMod.KernelBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("backend")().asInstanceOf[typings.tensorflowTfjsCore.backendMod.KernelBackend]
+inline def backend(): typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("backend")().asInstanceOf[typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend]
 
 inline def basicLSTMCell: js.Function6[
 /* forgetBias */ Scalar | TensorLike, 
@@ -1491,9 +1499,9 @@ inline def cumsum[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] *
   * `f`. When called, `g` returns `f().value`. In backward mode, custom gradients
   * with respect to each input of `f` are computed using `f().gradFunc`.
   *
-  * The `save` function passsed to `f` should be used for saving tensors needed
+  * The `save` function passed to `f` should be used for saving tensors needed
   * in the gradient. And the `saved` passed to the `gradFunc` is a
-  * `NamedTensorMap`, which contains those saved tensor.
+  * `NamedTensorMap`, which contains those saved tensors.
   *
   * ```js
   * const customOp = tf.customGrad((x, save) => {
@@ -1914,7 +1922,7 @@ inline def enclosingPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynami
 
 inline def engine(): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("engine")().asInstanceOf[Engine]
 
-inline def env(): typings.tensorflowTfjsCore.environmentMod.Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[typings.tensorflowTfjsCore.environmentMod.Environment]
+inline def env(): typings.tensorflowTfjsCore.distEnvironmentMod.Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[typings.tensorflowTfjsCore.distEnvironmentMod.Environment]
 
 inline def equal[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
   a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
@@ -2000,11 +2008,11 @@ inline def fill[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   dtype: DataType
 ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
-inline def findBackend(name: String): typings.tensorflowTfjsCore.backendMod.KernelBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("findBackend")(name.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.backendMod.KernelBackend]
+inline def findBackend(name: String): typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("findBackend")(name.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend]
 
 inline def findBackendFactory(name: String): js.Function0[
-typings.tensorflowTfjsCore.backendMod.KernelBackend | js.Promise[typings.tensorflowTfjsCore.backendMod.KernelBackend]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findBackendFactory")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
-typings.tensorflowTfjsCore.backendMod.KernelBackend | js.Promise[typings.tensorflowTfjsCore.backendMod.KernelBackend]]]
+typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend | js.Promise[typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findBackendFactory")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
+typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend | js.Promise[typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend]]]
 
 inline def floor[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("floor")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
@@ -2167,7 +2175,7 @@ inline def imag[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */]
 inline def inTopKAsync[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */, U /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](predictions: T | TensorLike, targets: TensorLike | U): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("inTopKAsync")(predictions.asInstanceOf[js.Any], targets.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
 inline def inTopKAsync[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */, U /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](predictions: T | TensorLike, targets: TensorLike | U, k: Double): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("inTopKAsync")(predictions.asInstanceOf[js.Any], targets.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
 
-inline def input(config: InputConfig): typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(config.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor]
+inline def input(config: InputConfig): typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(config.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor]
 
 inline def irfft: js.Function1[
 /* input */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], 
@@ -2204,21 +2212,39 @@ inline def lessEqual[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank
 
 inline def linspace(start: Double, stop: Double, num: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("linspace")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
 
-inline def loadGraphModel(modelUrl: String): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
-inline def loadGraphModel(modelUrl: String, options: Unit, tfio: Typeofio): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
-inline def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
-inline def loadGraphModel(modelUrl: String, options: LoadOptions, tfio: Typeofio): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
-inline def loadGraphModel(modelUrl: IOHandler): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
-inline def loadGraphModel(modelUrl: IOHandler, options: Unit, tfio: Typeofio): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
-inline def loadGraphModel(modelUrl: IOHandler, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
-inline def loadGraphModel(modelUrl: IOHandler, options: LoadOptions, tfio: Typeofio): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: String): js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: String, options: Unit, tfio: Typeofio): js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: String, options: LoadOptions, tfio: Typeofio): js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: IOHandler): js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: IOHandler, options: Unit, tfio: Typeofio): js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: IOHandler, options: LoadOptions): js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]]]
+inline def loadGraphModel(modelUrl: IOHandler, options: LoadOptions, tfio: Typeofio): js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], tfio.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[String | IOHandler]]]
 
-inline def loadGraphModelSync(modelSource: IOHandlerSync): typings.tensorflowTfjsConverter.graphModelMod.GraphModel[IOHandlerSync] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModelSync")(modelSource.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsConverter.graphModelMod.GraphModel[IOHandlerSync]]
+inline def loadGraphModelSync(modelSource: js.Tuple2[ModelJSON, /* Weights */ js.typedarray.ArrayBuffer]): typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[IOHandlerSync] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModelSync")(modelSource.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[IOHandlerSync]]
+inline def loadGraphModelSync(modelSource: IOHandlerSync): typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[IOHandlerSync] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModelSync")(modelSource.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[IOHandlerSync]]
+inline def loadGraphModelSync(modelSource: ModelArtifacts): typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[IOHandlerSync] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModelSync")(modelSource.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsConverter.distExecutorGraphModelMod.GraphModel[IOHandlerSync]]
 
-inline def loadLayersModel(pathOrIOHandler: String): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
-inline def loadLayersModel(pathOrIOHandler: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
-inline def loadLayersModel(pathOrIOHandler: IOHandler): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
-inline def loadLayersModel(pathOrIOHandler: IOHandler, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
+inline def loadLayersModel(pathOrIOHandler: String): js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
+inline def loadLayersModel(pathOrIOHandler: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
+inline def loadLayersModel(pathOrIOHandler: IOHandler): js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
+inline def loadLayersModel(pathOrIOHandler: IOHandler, options: LoadOptions): js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
 
 inline def localResponseNormalization(x: Tensor[R3 | R4]): Tensor[R3] = ^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any]).asInstanceOf[Tensor[R3]]
 inline def localResponseNormalization(x: Tensor[R3 | R4], depthRadius: Double): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
@@ -2742,7 +2768,7 @@ inline def mod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
 inline def mod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 inline def mod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def model(args: ContainerArgs): typings.tensorflowTfjsLayers.trainingMod.LayersModel = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.trainingMod.LayersModel]
+inline def model(args: ContainerArgs): typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]
 
 inline def moments: js.Function3[
 /* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
@@ -2802,7 +2828,7 @@ Tensor1D | Tensor2D]]
 inline def neg[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("neg")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 
 /**
-  * Returns a promise that resolve when a requestAnimationFrame has completed.
+  * Returns a promise that resolves when a requestAnimationFrame has completed.
   *
   * On Node.js this uses setImmediate instead of requestAnimationFrame.
   *
@@ -2953,6 +2979,28 @@ inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */]
 inline def prod[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def profile(f: js.Function0[TensorContainer | js.Promise[TensorContainer]]): js.Promise[ProfileInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("profile")(f.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProfileInfo]]
+
+inline def raggedGather: js.Function4[
+/* paramsNestedSplits */ js.Array[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]], 
+/* paramsDenseValues */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* indices */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* outputRaggedRank */ Double, 
+RaggedGatherMap] = ^.asInstanceOf[js.Dynamic].selectDynamic("raggedGather").asInstanceOf[js.Function4[
+/* paramsNestedSplits */ js.Array[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]], 
+/* paramsDenseValues */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* indices */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* outputRaggedRank */ Double, 
+RaggedGatherMap]]
+
+inline def raggedRange: js.Function3[
+/* starts */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* limits */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* deltas */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+NamedTensorMap] = ^.asInstanceOf[js.Dynamic].selectDynamic("raggedRange").asInstanceOf[js.Function3[
+/* starts */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* limits */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+/* deltas */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
+NamedTensorMap]]
 
 inline def raggedTensorToTensor: js.Function5[
 /* shape */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
@@ -3312,13 +3360,13 @@ inline def reciprocal[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Ran
 inline def registerBackend(
   name: String,
   factory: js.Function0[
-  typings.tensorflowTfjsCore.backendMod.KernelBackend | js.Promise[typings.tensorflowTfjsCore.backendMod.KernelBackend]
+  typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend | js.Promise[typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend]
 ]
 ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerBackend")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def registerBackend(
   name: String,
   factory: js.Function0[
-  typings.tensorflowTfjsCore.backendMod.KernelBackend | js.Promise[typings.tensorflowTfjsCore.backendMod.KernelBackend]
+  typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend | js.Promise[typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend]
 ],
   priority: Double
 ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerBackend")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -3684,6 +3732,17 @@ inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   dtype: DataType
 ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](values: TensorLike, shape: Unit, dtype: DataType): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](values: WebGLData): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
+inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  values: WebGLData,
+  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  values: WebGLData,
+  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+  dtype: DataType
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](values: WebGLData, shape: Unit, dtype: DataType): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
 inline def tensor1d(values: TensorLike1D): Tensor1D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor1d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor1D]
 inline def tensor1d(values: TensorLike1D, dtype: DataType): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor1d")(values.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
@@ -3867,7 +3926,7 @@ inline def upperBound(sortedSequence: TensorLike, values: TensorLike): Tensor[ty
   * returns a metric you want to show.
   *
   * The result is a rich object with the following properties:
-  * - grad: The gradient of `f(x)` w.r.t `x` (result of `tf.grad`).
+  * - grad: The gradient of `f(x)` w.r.t. `x` (result of `tf.grad`).
   * - value: The value returned by `f(x)`.
   *
   * ```js
@@ -3894,7 +3953,7 @@ inline def valueAndGrad[I /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.R
   * returns a metric you want to show.
   *
   * The result is a rich object with the following properties:
-  * - grads: The gradients of `f()` w.r.t each input (result of `tf.grads`).
+  * - grads: The gradients of `f()` w.r.t. each input (result of `tf.grads`).
   * - value: The value returned by `f(x)`.
   *
   * ```js
@@ -3970,11 +4029,11 @@ inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](ini
 inline def variableGrads(f: js.Function0[Scalar]): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any]).asInstanceOf[Value]
 inline def variableGrads(f: js.Function0[Scalar], varList: js.Array[Variable[typings.tensorflowTfjsCore.distTypesMod.Rank]]): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any], varList.asInstanceOf[js.Any])).asInstanceOf[Value]
 
-inline def versionConverter: /* "3.20.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_converter").asInstanceOf[/* "3.20.0" */ String]
+inline def versionConverter: /* "4.0.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_converter").asInstanceOf[/* "4.0.0" */ String]
 
-inline def versionCore: /* "3.20.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_core").asInstanceOf[/* "3.20.0" */ String]
+inline def versionCore: /* "4.0.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_core").asInstanceOf[/* "4.0.0" */ String]
 
-inline def versionLayers: /* "3.20.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_layers").asInstanceOf[/* "3.20.0" */ String]
+inline def versionLayers: /* "4.0.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_layers").asInstanceOf[/* "4.0.0" */ String]
 
 inline def where[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
   condition: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],

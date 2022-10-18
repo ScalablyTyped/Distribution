@@ -3,8 +3,8 @@ package typings.awsLambda.anon
 import typings.awsLambda.awsLambdaStrings.Confirmed_
 import typings.awsLambda.awsLambdaStrings.Denied
 import typings.awsLambda.awsLambdaStrings.None
-import typings.awsLambda.lexMod.LexEventSlots
-import typings.awsLambda.lexMod.LexSlotDetails
+import typings.awsLambda.triggerLexMod.LexEventSlots
+import typings.awsLambda.triggerLexMod.LexSlotDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

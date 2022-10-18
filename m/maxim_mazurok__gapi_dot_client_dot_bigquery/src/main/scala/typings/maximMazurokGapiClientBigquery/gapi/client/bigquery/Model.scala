@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,9 +58,7 @@ trait Model extends StObject {
     * must have a different key.
     */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Model & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Output only. The time when this model was last modified, in millisecs since the epoch. */
@@ -150,9 +147,7 @@ object Model {
     inline def setLabelColumnsVarargs(value: StandardSqlField*): Self = StObject.set(x, "labelColumns", js.Array(value*))
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Model & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

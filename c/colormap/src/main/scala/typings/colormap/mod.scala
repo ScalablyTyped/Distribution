@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[T /* <: hex | rgbaString | rgba | float */](): js.Array[String | (js.Tuple4[Double, Double, Double, Double])] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[String | (js.Tuple4[Double, Double, Double, Double])]]
-  inline def apply[T /* <: hex | rgbaString | rgba | float */](spec: Alpha[T]): js.Array[String | (js.Tuple4[Double, Double, Double, Double])] = ^.asInstanceOf[js.Dynamic].apply(spec.asInstanceOf[js.Any]).asInstanceOf[js.Array[String | (js.Tuple4[Double, Double, Double, Double])]]
+  inline def apply[T /* <: hex | rgbaString | rgba | float */](): /* import warning: importer.ImportType#apply Failed type conversion: T extends 'rgba' | 'float' ? std.Array<[number, number, number, number]> : std.Array<string> */ js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends 'rgba' | 'float' ? std.Array<[number, number, number, number]> : std.Array<string> */ js.Any]
+  inline def apply[T /* <: hex | rgbaString | rgba | float */](spec: Alpha[T]): /* import warning: importer.ImportType#apply Failed type conversion: T extends 'rgba' | 'float' ? std.Array<[number, number, number, number]> : std.Array<string> */ js.Any = ^.asInstanceOf[js.Dynamic].apply(spec.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends 'rgba' | 'float' ? std.Array<[number, number, number, number]> : std.Array<string> */ js.Any]
   
   @JSImport("colormap", JSImport.Namespace)
   @js.native

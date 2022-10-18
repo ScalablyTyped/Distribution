@@ -16,10 +16,6 @@ object ctrlTinycolorStrings {
   inline def AAA: AAA = "AAA".asInstanceOf[AAA]
   
   @js.native
-  sealed trait Numberify extends StObject
-  inline def Numberify: Numberify = "Numberify".asInstanceOf[Numberify]
-  
-  @js.native
   sealed trait blue extends StObject
   inline def blue: blue = "blue".asInstanceOf[blue]
   

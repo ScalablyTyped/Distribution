@@ -1,7 +1,7 @@
 package typings.rbx.anon
 
-import typings.rbx.responsiveMod.LimitedResponsiveBreakpointProps
-import typings.rbx.responsiveMod.ResponsiveBreakpointProps
+import typings.rbx.baseHelpersResponsiveMod.LimitedResponsiveBreakpointProps
+import typings.rbx.baseHelpersResponsiveMod.ResponsiveBreakpointProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

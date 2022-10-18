@@ -1,12 +1,12 @@
 package typings.onflowFlowJsTesting
 
-import typings.onflowFlowJsTesting.accountMod.Address
-import typings.onflowFlowJsTesting.accountMod.KeyObject
-import typings.onflowFlowJsTesting.accountMod.PublicKey
-import typings.onflowFlowJsTesting.accountMod.SignerInfo
-import typings.onflowFlowJsTesting.interactionMod.ScriptProps
-import typings.onflowFlowJsTesting.interactionMod.TransactionProps
-import typings.onflowFlowJsTesting.transformersMod.CadenceTransformer
+import typings.onflowFlowJsTesting.srcAccountMod.Address
+import typings.onflowFlowJsTesting.srcAccountMod.KeyObject
+import typings.onflowFlowJsTesting.srcAccountMod.PublicKey
+import typings.onflowFlowJsTesting.srcAccountMod.SignerInfo
+import typings.onflowFlowJsTesting.srcInteractionMod.ScriptProps
+import typings.onflowFlowJsTesting.srcInteractionMod.TransactionProps
+import typings.onflowFlowJsTesting.srcTransformersMod.CadenceTransformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +15,11 @@ object anon {
   
   trait AddressMap extends StObject {
     
-    var addressMap: js.UndefOr[typings.onflowFlowJsTesting.accountMod.AddressMap] = js.undefined
+    var addressMap: js.UndefOr[typings.onflowFlowJsTesting.srcAccountMod.AddressMap] = js.undefined
     
     var args: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    var code: String
     
     var name: String
     
@@ -27,14 +29,14 @@ object anon {
   }
   object AddressMap {
     
-    inline def apply(name: String): AddressMap = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    inline def apply(code: String, name: String): AddressMap = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddressMap]
     }
     
     extension [Self <: AddressMap](x: Self) {
       
-      inline def setAddressMap(value: typings.onflowFlowJsTesting.accountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
+      inline def setAddressMap(value: typings.onflowFlowJsTesting.srcAccountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
       
       inline def setAddressMapUndefined: Self = StObject.set(x, "addressMap", js.undefined)
       
@@ -43,6 +45,8 @@ object anon {
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
       inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
+      
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -53,6 +57,51 @@ object anon {
       inline def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
       inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    }
+  }
+  
+  trait AddressMapArgs
+    extends StObject
+       with TransactionProps {
+    
+    var addressMap: js.UndefOr[typings.onflowFlowJsTesting.srcAccountMod.AddressMap] = js.undefined
+    
+    var args: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    var code: String
+    
+    var name: js.UndefOr[String] = js.undefined
+    
+    var signers: js.Array[Address | SignerInfo]
+  }
+  object AddressMapArgs {
+    
+    inline def apply(code: String, signers: js.Array[Address | SignerInfo]): AddressMapArgs = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], signers = signers.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AddressMapArgs]
+    }
+    
+    extension [Self <: AddressMapArgs](x: Self) {
+      
+      inline def setAddressMap(value: typings.onflowFlowJsTesting.srcAccountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
+      
+      inline def setAddressMapUndefined: Self = StObject.set(x, "addressMap", js.undefined)
+      
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
+      
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setSigners(value: js.Array[Address | SignerInfo]): Self = StObject.set(x, "signers", value.asInstanceOf[js.Any])
+      
+      inline def setSignersVarargs(value: (Address | SignerInfo)*): Self = StObject.set(x, "signers", js.Array(value*))
     }
   }
   
@@ -101,11 +150,9 @@ object anon {
   
   trait Args extends StObject {
     
-    var addressMap: js.UndefOr[typings.onflowFlowJsTesting.accountMod.AddressMap] = js.undefined
+    var addressMap: js.UndefOr[typings.onflowFlowJsTesting.srcAccountMod.AddressMap] = js.undefined
     
     var args: js.UndefOr[js.Array[Any]] = js.undefined
-    
-    var code: String
     
     var name: String
     
@@ -115,14 +162,14 @@ object anon {
   }
   object Args {
     
-    inline def apply(code: String, name: String): Args = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    inline def apply(name: String): Args = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
     }
     
     extension [Self <: Args](x: Self) {
       
-      inline def setAddressMap(value: typings.onflowFlowJsTesting.accountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
+      inline def setAddressMap(value: typings.onflowFlowJsTesting.srcAccountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
       
       inline def setAddressMapUndefined: Self = StObject.set(x, "addressMap", js.undefined)
       
@@ -131,8 +178,6 @@ object anon {
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
       inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
-      
-      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -146,52 +191,9 @@ object anon {
     }
   }
   
-  trait ArgsCode
-    extends StObject
-       with ScriptProps {
-    
-    var args: js.UndefOr[js.Array[Any]] = js.undefined
-    
-    var code: String
-    
-    var name: js.UndefOr[String] = js.undefined
-    
-    var transformers: js.UndefOr[js.Array[CadenceTransformer]] = js.undefined
-  }
-  object ArgsCode {
-    
-    inline def apply(code: String): ArgsCode = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ArgsCode]
-    }
-    
-    extension [Self <: ArgsCode](x: Self) {
-      
-      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
-      
-      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
-      
-      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
-      
-      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setTransformers(value: js.Array[CadenceTransformer]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
-      
-      inline def setTransformersUndefined: Self = StObject.set(x, "transformers", js.undefined)
-      
-      inline def setTransformersVarargs(value: CadenceTransformer*): Self = StObject.set(x, "transformers", js.Array(value*))
-    }
-  }
-  
   trait Code
     extends StObject
-       with TransactionProps {
-    
-    var addressMap: js.UndefOr[typings.onflowFlowJsTesting.accountMod.AddressMap] = js.undefined
+       with ScriptProps {
     
     var args: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -199,20 +201,16 @@ object anon {
     
     var name: String
     
-    var signers: js.Array[Address | SignerInfo]
+    var transformers: js.UndefOr[js.Array[CadenceTransformer]] = js.undefined
   }
   object Code {
     
-    inline def apply(name: String, signers: js.Array[Address | SignerInfo]): Code = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], signers = signers.asInstanceOf[js.Any])
+    inline def apply(name: String): Code = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
     extension [Self <: Code](x: Self) {
-      
-      inline def setAddressMap(value: typings.onflowFlowJsTesting.accountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
-      
-      inline def setAddressMapUndefined: Self = StObject.set(x, "addressMap", js.undefined)
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -226,9 +224,11 @@ object anon {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setSigners(value: js.Array[Address | SignerInfo]): Self = StObject.set(x, "signers", value.asInstanceOf[js.Any])
+      inline def setTransformers(value: js.Array[CadenceTransformer]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
       
-      inline def setSignersVarargs(value: (Address | SignerInfo)*): Self = StObject.set(x, "signers", js.Array(value*))
+      inline def setTransformersUndefined: Self = StObject.set(x, "transformers", js.undefined)
+      
+      inline def setTransformersVarargs(value: CadenceTransformer*): Self = StObject.set(x, "transformers", js.Array(value*))
     }
   }
   
@@ -261,7 +261,7 @@ object anon {
   
   trait Name extends StObject {
     
-    var addressMap: js.UndefOr[typings.onflowFlowJsTesting.accountMod.AddressMap] = js.undefined
+    var addressMap: js.UndefOr[typings.onflowFlowJsTesting.srcAccountMod.AddressMap] = js.undefined
     
     var name: String
   }
@@ -274,7 +274,7 @@ object anon {
     
     extension [Self <: Name](x: Self) {
       
-      inline def setAddressMap(value: typings.onflowFlowJsTesting.accountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
+      inline def setAddressMap(value: typings.onflowFlowJsTesting.srcAccountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
       
       inline def setAddressMapUndefined: Self = StObject.set(x, "addressMap", js.undefined)
       
@@ -305,26 +305,26 @@ object anon {
     extends StObject
        with TransactionProps {
     
-    var addressMap: js.UndefOr[typings.onflowFlowJsTesting.accountMod.AddressMap] = js.undefined
+    var addressMap: js.UndefOr[typings.onflowFlowJsTesting.srcAccountMod.AddressMap] = js.undefined
     
     var args: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var code: String
+    var code: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.undefined
+    var name: String
     
     var signers: js.Array[Address | SignerInfo]
   }
   object Signers {
     
-    inline def apply(code: String, signers: js.Array[Address | SignerInfo]): Signers = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], signers = signers.asInstanceOf[js.Any])
+    inline def apply(name: String, signers: js.Array[Address | SignerInfo]): Signers = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], signers = signers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Signers]
     }
     
     extension [Self <: Signers](x: Self) {
       
-      inline def setAddressMap(value: typings.onflowFlowJsTesting.accountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
+      inline def setAddressMap(value: typings.onflowFlowJsTesting.srcAccountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
       
       inline def setAddressMapUndefined: Self = StObject.set(x, "addressMap", js.undefined)
       
@@ -336,9 +336,9 @@ object anon {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setSigners(value: js.Array[Address | SignerInfo]): Self = StObject.set(x, "signers", value.asInstanceOf[js.Any])
       
@@ -352,16 +352,16 @@ object anon {
     
     var args: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var code: js.UndefOr[String] = js.undefined
+    var code: String
     
-    var name: String
+    var name: js.UndefOr[String] = js.undefined
     
     var transformers: js.UndefOr[js.Array[CadenceTransformer]] = js.undefined
   }
   object Transformers {
     
-    inline def apply(name: String): Transformers = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    inline def apply(code: String): Transformers = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[Transformers]
     }
     
@@ -375,9 +375,9 @@ object anon {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
-      
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setTransformers(value: js.Array[CadenceTransformer]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
       

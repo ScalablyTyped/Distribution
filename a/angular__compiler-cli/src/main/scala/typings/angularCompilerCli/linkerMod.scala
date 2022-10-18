@@ -1,12 +1,12 @@
 package typings.angularCompilerCli
 
 import typings.angularCompilerCli.anon.PartialLinkerOptions
-import typings.angularCompilerCli.astFactoryMod.AstFactory
-import typings.angularCompilerCli.astHostMod.AstHost
-import typings.angularCompilerCli.linkerOptionsMod.LinkerOptions
-import typings.angularCompilerCli.loggerMod.Logger
-import typings.angularCompilerCli.srcTypesMod.AbsoluteFsPath
-import typings.angularCompilerCli.srcTypesMod.ReadonlyFileSystem
+import typings.angularCompilerCli.linkerSrcAstAstHostMod.AstHost
+import typings.angularCompilerCli.linkerSrcFileLinkerLinkerOptionsMod.LinkerOptions
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.ReadonlyFileSystem
+import typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.Logger
+import typings.angularCompilerCli.srcNgtscTranslatorSrcApiAstFactoryMod.AstFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +24,7 @@ object linkerMod {
   @JSImport("@angular/compiler-cli/linker", "FatalLinkerError")
   @js.native
   open class FatalLinkerError protected ()
-    extends typings.angularCompilerCli.fatalLinkerErrorMod.FatalLinkerError {
+    extends typings.angularCompilerCli.linkerSrcFatalLinkerErrorMod.FatalLinkerError {
     /**
       * Create a new FatalLinkerError.
       *
@@ -37,9 +37,9 @@ object linkerMod {
   @JSImport("@angular/compiler-cli/linker", "FileLinker")
   @js.native
   open class FileLinker[TConstantScope, TStatement, TExpression] protected ()
-    extends typings.angularCompilerCli.fileLinkerMod.FileLinker[TConstantScope, TStatement, TExpression] {
+    extends typings.angularCompilerCli.linkerSrcFileLinkerFileLinkerMod.FileLinker[TConstantScope, TStatement, TExpression] {
     def this(
-      linkerEnvironment: typings.angularCompilerCli.linkerEnvironmentMod.LinkerEnvironment[TStatement, TExpression],
+      linkerEnvironment: typings.angularCompilerCli.linkerSrcFileLinkerLinkerEnvironmentMod.LinkerEnvironment[TStatement, TExpression],
       sourceUrl: AbsoluteFsPath,
       code: String
     ) = this()
@@ -48,7 +48,7 @@ object linkerMod {
   @JSImport("@angular/compiler-cli/linker", "LinkerEnvironment")
   @js.native
   /* private */ open class LinkerEnvironment[TStatement, TExpression] ()
-    extends typings.angularCompilerCli.linkerEnvironmentMod.LinkerEnvironment[TStatement, TExpression]
+    extends typings.angularCompilerCli.linkerSrcFileLinkerLinkerEnvironmentMod.LinkerEnvironment[TStatement, TExpression]
   /* static members */
   object LinkerEnvironment {
     
@@ -62,7 +62,7 @@ object linkerMod {
       host: AstHost[TExpression],
       factory: AstFactory[TStatement, TExpression],
       options: PartialLinkerOptions
-    ): typings.angularCompilerCli.linkerEnvironmentMod.LinkerEnvironment[TStatement, TExpression] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(fileSystem.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], host.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularCompilerCli.linkerEnvironmentMod.LinkerEnvironment[TStatement, TExpression]]
+    ): typings.angularCompilerCli.linkerSrcFileLinkerLinkerEnvironmentMod.LinkerEnvironment[TStatement, TExpression] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(fileSystem.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], host.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularCompilerCli.linkerSrcFileLinkerLinkerEnvironmentMod.LinkerEnvironment[TStatement, TExpression]]
   }
   
   inline def assert[T, K /* <: T */](node: T, predicate: js.Function1[/* node */ T, /* is K */ Boolean], expected: String): /* asserts node is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(K))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(node.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[/* asserts node is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(K))),IArray())*/ Boolean]

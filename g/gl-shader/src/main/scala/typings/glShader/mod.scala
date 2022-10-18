@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(gl: WebGLRenderingContext, options: Attributes): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Shader]
+  inline def apply(gl: WebGLRenderingContext, options: Fragment): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Shader]
   inline def apply(gl: WebGLRenderingContext, vertex: String, fragment: String): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], vertex.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any])).asInstanceOf[Shader]
   inline def apply(gl: WebGLRenderingContext, vertex: String, fragment: String, uniforms: js.Array[Parameter]): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], vertex.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[Shader]
   inline def apply(
@@ -96,7 +96,7 @@ object mod {
     
     var uniforms: StringDictionary[Any] = js.native
     
-    def update(obj: Fragment): Unit = js.native
+    def update(obj: Attributes): Unit = js.native
     def update(vertex: String, fragment: String): Unit = js.native
     def update(vertex: String, fragment: String, uniforms: js.Array[Parameter]): Unit = js.native
     def update(vertex: String, fragment: String, uniforms: js.Array[Parameter], attributes: js.Array[Parameter]): Unit = js.native

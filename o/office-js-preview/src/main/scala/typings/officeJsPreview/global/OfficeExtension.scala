@@ -42,7 +42,7 @@ object OfficeExtension {
   }
   
   /**
-    * An abstract RequestContext object that facilitates requests to the host Office application.
+    * An abstract RequestContext object that facilitates requests to the Office application.
     * The `Excel.run` and `Word.run` methods provide a request context.
     */
   @JSGlobal("OfficeExtension.ClientRequestContext")
@@ -96,7 +96,7 @@ object OfficeExtension {
     /* CompleteClass */
     var innerError: typings.officeJsPreview.OfficeExtension.Error = js.native
     
-    /** The error message passed through from the host Office application. */
+    /** The error message passed through from the Office application. */
     /* CompleteClass */
     var message: String = js.native
     
@@ -270,7 +270,7 @@ object OfficeExtension {
           ]) = this()
   }
   /**
-    * A Promise object that represents a deferred interaction with the host Office application.
+    * A Promise object that represents a deferred interaction with the Office application.
     * The publicly-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2.
     * Promises can be chained via ".then", and errors can be caught via ".catch".
     * Remember to always use a ".catch" on the outer promise, and to return intermediary promises so as not to break the promise chain.
@@ -301,7 +301,7 @@ object OfficeExtension {
     /**
       * Determines whether to log additional error information upon failure.
       *
-      * When this property is set to true, the error object will include a "debugInfo.fullStatements" property that lists all statements in the
+      * When this property is set to true, the error object will include a `debugInfo.fullStatements` property that lists all statements in the
       * batch request, including all statements that precede and follow the point of failure.
       *
       * Setting this property to true will negatively impact performance and will log all statements in the batch request, including any statements

@@ -1,7 +1,7 @@
 package typings.rcDropdown
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcDropdown.dropdownMod.DropdownProps
+import typings.rcDropdown.esDropdownMod.DropdownProps
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject

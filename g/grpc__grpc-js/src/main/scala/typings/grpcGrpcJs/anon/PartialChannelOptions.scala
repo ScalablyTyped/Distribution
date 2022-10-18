@@ -1,6 +1,6 @@
 package typings.grpcGrpcJs.anon
 
-import typings.grpcGrpcJs.compressionAlgorithmsMod.CompressionAlgorithms
+import typings.grpcGrpcJs.buildSrcCompressionAlgorithmsMod.CompressionAlgorithms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

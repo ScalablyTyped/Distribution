@@ -1,11 +1,11 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.rekognitionMod.ExtendedPaginationToken
-import typings.awsSdk.rekognitionMod.ProjectArn
-import typings.awsSdk.rekognitionMod.ProjectVersionsPageSize
-import typings.awsSdk.rekognitionMod.VersionName
-import typings.awsSdk.rekognitionMod.VersionNames
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsRekognitionMod.ExtendedPaginationToken
+import typings.awsSdk.clientsRekognitionMod.ProjectArn
+import typings.awsSdk.clientsRekognitionMod.ProjectVersionsPageSize
+import typings.awsSdk.clientsRekognitionMod.VersionName
+import typings.awsSdk.clientsRekognitionMod.VersionNames
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,12 +29,12 @@ trait DescribeProjectVersionsRe extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the project that contains the models you want to describe.
     */
-  var ProjectArn: typings.awsSdk.rekognitionMod.ProjectArn
+  var ProjectArn: typings.awsSdk.clientsRekognitionMod.ProjectArn
   
   /**
     * A list of model version names that you want to describe. You can add up to 10 model version names to the list. If you don't specify a value, all model descriptions are returned. A version name is part of a model (ProjectVersion) ARN. For example, my-model.2020-01-21T09.10.15 is the version name in the following ARN. arn:aws:rekognition:us-east-1:123456789012:project/getting-started/version/my-model.2020-01-21T09.10.15/1234567890123.
     */
-  var VersionNames: js.UndefOr[typings.awsSdk.rekognitionMod.VersionNames] = js.undefined
+  var VersionNames: js.UndefOr[typings.awsSdk.clientsRekognitionMod.VersionNames] = js.undefined
 }
 object DescribeProjectVersionsRe {
   

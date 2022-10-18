@@ -1,10 +1,10 @@
 package typings.linguiReact
 
-import typings.linguiReact.i18nProviderMod.I18nContext
-import typings.linguiReact.i18nProviderMod.I18nProviderProps
-import typings.linguiReact.i18nProviderMod.withI18nProps
+import typings.linguiReact.cjsI18nProviderMod.I18nContext
+import typings.linguiReact.cjsI18nProviderMod.I18nProviderProps
+import typings.linguiReact.cjsI18nProviderMod.withI18nProps
+import typings.linguiReact.cjsTransMod.TransProps
 import typings.linguiReact.linguiReactStrings.i18n
-import typings.linguiReact.transMod.TransProps
 import typings.react.mod.ComponentType
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement

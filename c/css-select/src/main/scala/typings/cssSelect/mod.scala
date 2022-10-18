@@ -1,13 +1,13 @@
 package typings.cssSelect
 
+import typings.cssSelect.libEsmTypesMod.InternalSelector
+import typings.cssSelect.libPseudoSelectorsFiltersMod.Filter
+import typings.cssSelect.libPseudoSelectorsPseudosMod.Pseudo
 import typings.cssSelect.libTypesMod.Adapter
 import typings.cssSelect.libTypesMod.CompiledQuery
-import typings.cssSelect.libTypesMod.InternalSelector
 import typings.cssSelect.libTypesMod.Options
 import typings.cssSelect.libTypesMod.Query
-import typings.cssSelect.pseudoSelectorsFiltersMod.Filter
-import typings.cssSelect.pseudoSelectorsPseudosMod.Pseudo
-import typings.cssWhat.typesMod.Selector
+import typings.cssWhat.libEsTypesMod.Selector
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

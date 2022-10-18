@@ -1,22 +1,30 @@
 package typings.firebaseFirestore.anon
 
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcLiteApiFieldPathMod.FieldPath
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcLiteApiReferenceMod.SetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `29` extends StObject {
+trait `29`
+  extends StObject
+     with SetOptions {
   
-  var mapValue: typings.firebaseFirestore.privateMod.MapValue
+  val mergeFields: js.UndefOr[js.Array[String | FieldPath]] = js.undefined
 }
 object `29` {
   
-  inline def apply(mapValue: typings.firebaseFirestore.privateMod.MapValue): `29` = {
-    val __obj = js.Dynamic.literal(mapValue = mapValue.asInstanceOf[js.Any])
+  inline def apply(): `29` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`29`]
   }
   
   extension [Self <: `29`](x: Self) {
     
-    inline def setMapValue(value: typings.firebaseFirestore.privateMod.MapValue): Self = StObject.set(x, "mapValue", value.asInstanceOf[js.Any])
+    inline def setMergeFields(value: js.Array[String | FieldPath]): Self = StObject.set(x, "mergeFields", value.asInstanceOf[js.Any])
+    
+    inline def setMergeFieldsUndefined: Self = StObject.set(x, "mergeFields", js.undefined)
+    
+    inline def setMergeFieldsVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "mergeFields", js.Array(value*))
   }
 }

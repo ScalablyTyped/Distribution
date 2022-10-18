@@ -2,9 +2,9 @@ package typings.cathoQuantum
 
 import typings.cathoQuantum.anon.BreakpointsColors
 import typings.cathoQuantum.anon.`17`
-import typings.cathoQuantum.footerMod.Footer
-import typings.cathoQuantum.headerTextMod.HeaderText
-import typings.cathoQuantum.titleMod.Title
+import typings.cathoQuantum.cardFooterMod.Footer
+import typings.cathoQuantum.cardHeaderTextMod.HeaderText
+import typings.cathoQuantum.cardTitleMod.Title
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.MouseEventHandler
@@ -38,7 +38,7 @@ object modalMod {
     
     @JSImport("@catho/quantum/Modal", "default.Footer")
     @js.native
-    def Footer: typings.cathoQuantum.footerMod.Footer = js.native
+    def Footer: typings.cathoQuantum.cardFooterMod.Footer = js.native
     inline def Footer_=(x: Footer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
     
     @JSImport("@catho/quantum/Modal", "default.Header")
@@ -47,14 +47,14 @@ object modalMod {
     
     @JSImport("@catho/quantum/Modal", "default.HeaderText")
     @js.native
-    def HeaderText: typings.cathoQuantum.headerTextMod.HeaderText = js.native
+    def HeaderText: typings.cathoQuantum.cardHeaderTextMod.HeaderText = js.native
     inline def HeaderText_=(x: HeaderText): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeaderText")(x.asInstanceOf[js.Any])
     
     inline def Header_=(x: ModalHeader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
     
     @JSImport("@catho/quantum/Modal", "default.Title")
     @js.native
-    def Title: typings.cathoQuantum.titleMod.Title = js.native
+    def Title: typings.cathoQuantum.cardTitleMod.Title = js.native
     inline def Title_=(x: Title): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
   }
   

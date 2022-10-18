@@ -6,42 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0`[CombinedImage /* <: Boolean */] extends StObject {
-    
-    var combinedImage: js.UndefOr[CombinedImage] = js.undefined
-  }
-  object `0` {
-    
-    inline def apply[CombinedImage /* <: Boolean */](): `0`[CombinedImage] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`[CombinedImage]]
-    }
-    
-    extension [Self <: `0`[?], CombinedImage /* <: Boolean */](x: Self & `0`[CombinedImage]) {
-      
-      inline def setCombinedImage(value: CombinedImage): Self = StObject.set(x, "combinedImage", value.asInstanceOf[js.Any])
-      
-      inline def setCombinedImageUndefined: Self = StObject.set(x, "combinedImage", js.undefined)
-    }
-  }
-  
-  trait CombinedImageCombinedImage[CombinedImage /* <: Boolean */] extends StObject {
-    
-    var combinedImage: CombinedImage
-  }
-  object CombinedImageCombinedImage {
-    
-    inline def apply[CombinedImage /* <: Boolean */](combinedImage: CombinedImage): CombinedImageCombinedImage[CombinedImage] = {
-      val __obj = js.Dynamic.literal(combinedImage = combinedImage.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CombinedImageCombinedImage[CombinedImage]]
-    }
-    
-    extension [Self <: CombinedImageCombinedImage[?], CombinedImage /* <: Boolean */](x: Self & CombinedImageCombinedImage[CombinedImage]) {
-      
-      inline def setCombinedImage(value: CombinedImage): Self = StObject.set(x, "combinedImage", value.asInstanceOf[js.Any])
-    }
-  }
-  
   /* Inlined std.Readonly<pdf-image.pdf-image.ConvertOptions> */
   trait ReadonlyConvertOptions extends StObject {
     

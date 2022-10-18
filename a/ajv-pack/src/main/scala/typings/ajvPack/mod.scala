@@ -27,22 +27,22 @@ object mod {
       * add custom keyword to the instance
       * @return result from ajv instance
       */
-    def addKeyword(kwdOrDef: String): typings.ajv.coreMod.Ajv
+    def addKeyword(kwdOrDef: String): typings.ajv.distCoreMod.Ajv
     /**
       * add custom keyword to the instance
       * @return result from ajv instance
       */
-    def addKeyword(kwdOrDef: String, `def`: KeywordDefinition): typings.ajv.coreMod.Ajv
+    def addKeyword(kwdOrDef: String, `def`: KeywordDefinition): typings.ajv.distCoreMod.Ajv
     /**
       * add custom keyword to the instance
       * @return result from ajv instance
       */
-    def addKeyword(kwdOrDef: KeywordDefinition): typings.ajv.coreMod.Ajv
+    def addKeyword(kwdOrDef: KeywordDefinition): typings.ajv.distCoreMod.Ajv
     /**
       * add custom keyword to the instance
       * @return result from ajv instance
       */
-    def addKeyword(kwdOrDef: KeywordDefinition, `def`: KeywordDefinition): typings.ajv.coreMod.Ajv
+    def addKeyword(kwdOrDef: KeywordDefinition, `def`: KeywordDefinition): typings.ajv.distCoreMod.Ajv
     /**
       * add custom keyword to the instance
       * @return result from ajv instance
@@ -54,13 +54,13 @@ object mod {
       * add schema to the instance
       * @return result from ajv instance
       */
-    def addSchema(schema: js.Array[AnySchema]): typings.ajv.coreMod.Ajv
+    def addSchema(schema: js.Array[AnySchema]): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
       */
     def addSchema(schema: js.Array[AnySchema], // If array is passed, `key` will be ignored
-    key: String): typings.ajv.coreMod.Ajv
+    key: String): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -71,7 +71,7 @@ object mod {
     key: String,
       // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
     _meta: Boolean
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -84,7 +84,7 @@ object mod {
     _meta: Boolean,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: Boolean
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -97,7 +97,7 @@ object mod {
     _meta: Unit,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: Boolean
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -108,7 +108,7 @@ object mod {
     key: Unit,
       // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
     _meta: Boolean
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -121,7 +121,7 @@ object mod {
     _meta: Boolean,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: Boolean
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -134,18 +134,18 @@ object mod {
     _meta: Unit,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: Boolean
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
       */
-    def addSchema(schema: AnySchema): typings.ajv.coreMod.Ajv
+    def addSchema(schema: AnySchema): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
       */
     def addSchema(schema: AnySchema, // If array is passed, `key` will be ignored
-    key: String): typings.ajv.coreMod.Ajv
+    key: String): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -156,7 +156,7 @@ object mod {
     key: String,
       // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
     _meta: Boolean
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -169,7 +169,7 @@ object mod {
     _meta: Boolean,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: Boolean
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -182,7 +182,7 @@ object mod {
     _meta: Unit,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: Boolean
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -193,7 +193,7 @@ object mod {
     key: Unit,
       // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
     _meta: Boolean
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -206,7 +206,7 @@ object mod {
     _meta: Boolean,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: Boolean
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -219,7 +219,7 @@ object mod {
     _meta: Unit,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: Boolean
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -239,7 +239,7 @@ object mod {
     _meta: Boolean,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: log
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -253,7 +253,7 @@ object mod {
     _meta: Unit,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: log
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -267,7 +267,7 @@ object mod {
     _meta: Boolean,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: log
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -281,7 +281,7 @@ object mod {
     _meta: Unit,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: log
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -295,7 +295,7 @@ object mod {
     _meta: Boolean,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: log
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -309,7 +309,7 @@ object mod {
     _meta: Unit,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: log
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -323,7 +323,7 @@ object mod {
     _meta: Boolean,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: log
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     /**
       * add schema to the instance
       * @return result from ajv instance
@@ -337,7 +337,7 @@ object mod {
     _meta: Unit,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: log
-    ): typings.ajv.coreMod.Ajv
+    ): typings.ajv.distCoreMod.Ajv
     
     /**
       * compile the schema and require the module

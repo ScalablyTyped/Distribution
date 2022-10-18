@@ -8,9 +8,7 @@ import typings.prosemirrorModel.mod.MarkType
 import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.NodeRange
 import typings.prosemirrorModel.mod.NodeType
-import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorModel.mod.Slice
-import typings.prosemirrorTransform.anon.FromJSON
 import typings.prosemirrorTransform.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,7 +25,9 @@ object mod {
   */
   @JSImport("prosemirror-transform", "AddMarkStep")
   @js.native
-  open class AddMarkStep protected () extends Step {
+  open class AddMarkStep protected ()
+    extends StObject
+       with Step {
     /**
       Create a mark step.
       */
@@ -47,11 +47,43 @@ object mod {
     ) = this()
     
     /**
+      Applies this step to the given document, returning a result
+      object that either indicates failure, if the step can not be
+      applied to this document, or indicates success by containing a
+      transformed document.
+      */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(doc: Node): StepResult = js.native
+    
+    /**
       The start of the marked range.
       */
     val from: Double = js.native
     
+    /**
+      Get the step map that represents the changes made by this step,
+      and which can be used to transform between positions in the old
+      and the new document.
+      */
+    /* CompleteClass */
+    override def getMap(): StepMap = js.native
+    
     def invert(): Step = js.native
+    /**
+      Create an inverted version of this step. Needs the document as it
+      was before the step as argument.
+      */
+    /* CompleteClass */
+    override def invert(doc: Node): Step = js.native
+    
+    /**
+      Map this step through a mappable thing, returning either a
+      version of that step with its positions adjusted, or `null` if
+      the step was entirely deleted by the mapping.
+      */
+    /* CompleteClass */
+    override def map(mapping: Mappable): Step | Null = js.native
     
     /**
       The mark to add.
@@ -59,9 +91,26 @@ object mod {
     val mark: Mark = js.native
     
     /**
+      Try to merge this step with another one, to be applied directly
+      after it. Returns the merged step when possible, null if the
+      steps can't be merged.
+      */
+    /* CompleteClass */
+    override def merge(other: Step): Step | Null = js.native
+    
+    /**
       The end of the marked range.
       */
     val to: Double = js.native
+    
+    /**
+      Create a JSON-serializeable representation of this step. When
+      defining this for a custom subclass, make sure the result object
+      includes the step type's [JSON id](https://prosemirror.net/docs/ref/#transform.Step^jsonID) under
+      the `stepType` property.
+      */
+    /* CompleteClass */
+    override def toJSON(): Any = js.native
   }
   
   /**
@@ -69,7 +118,9 @@ object mod {
   */
   @JSImport("prosemirror-transform", "AddNodeMarkStep")
   @js.native
-  open class AddNodeMarkStep protected () extends Step {
+  open class AddNodeMarkStep protected ()
+    extends StObject
+       with Step {
     /**
       Create a node mark step.
       */
@@ -82,57 +133,64 @@ object mod {
     mark: Mark) = this()
     
     /**
+      Applies this step to the given document, returning a result
+      object that either indicates failure, if the step can not be
+      applied to this document, or indicates success by containing a
+      transformed document.
+      */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(doc: Node): StepResult = js.native
+    
+    /**
+      Get the step map that represents the changes made by this step,
+      and which can be used to transform between positions in the old
+      and the new document.
+      */
+    /* CompleteClass */
+    override def getMap(): StepMap = js.native
+    
+    /**
+      Create an inverted version of this step. Needs the document as it
+      was before the step as argument.
+      */
+    /* CompleteClass */
+    override def invert(doc: Node): Step = js.native
+    
+    /**
+      Map this step through a mappable thing, returning either a
+      version of that step with its positions adjusted, or `null` if
+      the step was entirely deleted by the mapping.
+      */
+    /* CompleteClass */
+    override def map(mapping: Mappable): Step | Null = js.native
+    
+    /**
       The mark to add.
       */
     val mark: Mark = js.native
     
     /**
-      The position of the target node.
+      Try to merge this step with another one, to be applied directly
+      after it. Returns the merged step when possible, null if the
+      steps can't be merged.
       */
-    val pos: Double = js.native
-  }
-  
-  /**
-  Update an attribute in a specific node.
-  */
-  @JSImport("prosemirror-transform", "AttrStep")
-  @js.native
-  open class AttrStep protected () extends Step {
-    /**
-      Construct an attribute step.
-      */
-    def this(
-      /**
-      The position of the target node.
-      */
-    pos: Double,
-      /**
-      The attribute to set.
-      */
-    attr: String,
-      value: Any
-    ) = this()
-    
-    /**
-      The attribute to set.
-      */
-    val attr: String = js.native
+    /* CompleteClass */
+    override def merge(other: Step): Step | Null = js.native
     
     /**
       The position of the target node.
       */
     val pos: Double = js.native
     
-    val value: Any = js.native
-  }
-  object AttrStep {
-    
-    @JSImport("prosemirror-transform", "AttrStep")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    inline def fromJSON(schema: Schema[Any, Any], json: Any): AttrStep = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[AttrStep]
+    /**
+      Create a JSON-serializeable representation of this step. When
+      defining this for a custom subclass, make sure the result object
+      includes the step type's [JSON id](https://prosemirror.net/docs/ref/#transform.Step^jsonID) under
+      the `stepType` property.
+      */
+    /* CompleteClass */
+    override def toJSON(): Any = js.native
   }
   
   /**
@@ -487,7 +545,9 @@ object mod {
   */
   @JSImport("prosemirror-transform", "RemoveMarkStep")
   @js.native
-  open class RemoveMarkStep protected () extends Step {
+  open class RemoveMarkStep protected ()
+    extends StObject
+       with Step {
     /**
       Create a mark-removing step.
       */
@@ -507,11 +567,43 @@ object mod {
     ) = this()
     
     /**
+      Applies this step to the given document, returning a result
+      object that either indicates failure, if the step can not be
+      applied to this document, or indicates success by containing a
+      transformed document.
+      */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(doc: Node): StepResult = js.native
+    
+    /**
       The start of the unmarked range.
       */
     val from: Double = js.native
     
+    /**
+      Get the step map that represents the changes made by this step,
+      and which can be used to transform between positions in the old
+      and the new document.
+      */
+    /* CompleteClass */
+    override def getMap(): StepMap = js.native
+    
     def invert(): Step = js.native
+    /**
+      Create an inverted version of this step. Needs the document as it
+      was before the step as argument.
+      */
+    /* CompleteClass */
+    override def invert(doc: Node): Step = js.native
+    
+    /**
+      Map this step through a mappable thing, returning either a
+      version of that step with its positions adjusted, or `null` if
+      the step was entirely deleted by the mapping.
+      */
+    /* CompleteClass */
+    override def map(mapping: Mappable): Step | Null = js.native
     
     /**
       The mark to remove.
@@ -519,9 +611,26 @@ object mod {
     val mark: Mark = js.native
     
     /**
+      Try to merge this step with another one, to be applied directly
+      after it. Returns the merged step when possible, null if the
+      steps can't be merged.
+      */
+    /* CompleteClass */
+    override def merge(other: Step): Step | Null = js.native
+    
+    /**
       The end of the unmarked range.
       */
     val to: Double = js.native
+    
+    /**
+      Create a JSON-serializeable representation of this step. When
+      defining this for a custom subclass, make sure the result object
+      includes the step type's [JSON id](https://prosemirror.net/docs/ref/#transform.Step^jsonID) under
+      the `stepType` property.
+      */
+    /* CompleteClass */
+    override def toJSON(): Any = js.native
   }
   
   /**
@@ -529,7 +638,9 @@ object mod {
   */
   @JSImport("prosemirror-transform", "RemoveNodeMarkStep")
   @js.native
-  open class RemoveNodeMarkStep protected () extends Step {
+  open class RemoveNodeMarkStep protected ()
+    extends StObject
+       with Step {
     /**
       Create a mark-removing step.
       */
@@ -542,14 +653,64 @@ object mod {
     mark: Mark) = this()
     
     /**
+      Applies this step to the given document, returning a result
+      object that either indicates failure, if the step can not be
+      applied to this document, or indicates success by containing a
+      transformed document.
+      */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(doc: Node): StepResult = js.native
+    
+    /**
+      Get the step map that represents the changes made by this step,
+      and which can be used to transform between positions in the old
+      and the new document.
+      */
+    /* CompleteClass */
+    override def getMap(): StepMap = js.native
+    
+    /**
+      Create an inverted version of this step. Needs the document as it
+      was before the step as argument.
+      */
+    /* CompleteClass */
+    override def invert(doc: Node): Step = js.native
+    
+    /**
+      Map this step through a mappable thing, returning either a
+      version of that step with its positions adjusted, or `null` if
+      the step was entirely deleted by the mapping.
+      */
+    /* CompleteClass */
+    override def map(mapping: Mappable): Step | Null = js.native
+    
+    /**
       The mark to remove.
       */
     val mark: Mark = js.native
     
     /**
+      Try to merge this step with another one, to be applied directly
+      after it. Returns the merged step when possible, null if the
+      steps can't be merged.
+      */
+    /* CompleteClass */
+    override def merge(other: Step): Step | Null = js.native
+    
+    /**
       The position of the target node.
       */
     val pos: Double = js.native
+    
+    /**
+      Create a JSON-serializeable representation of this step. When
+      defining this for a custom subclass, make sure the result object
+      includes the step type's [JSON id](https://prosemirror.net/docs/ref/#transform.Step^jsonID) under
+      the `stepType` property.
+      */
+    /* CompleteClass */
+    override def toJSON(): Any = js.native
   }
   
   /**
@@ -559,7 +720,9 @@ object mod {
   */
   @JSImport("prosemirror-transform", "ReplaceAroundStep")
   @js.native
-  open class ReplaceAroundStep protected () extends Step {
+  open class ReplaceAroundStep protected ()
+    extends StObject
+       with Step {
     /**
       Create a replace-around step with the given range and gap.
       `insert` should be the point in the slice into which the content
@@ -626,6 +789,16 @@ object mod {
     ) = this()
     
     /**
+      Applies this step to the given document, returning a result
+      object that either indicates failure, if the step can not be
+      applied to this document, or indicates success by containing a
+      transformed document.
+      */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(doc: Node): StepResult = js.native
+    
+    /**
       The start position of the replaced range.
       */
     val from: Double = js.native
@@ -641,10 +814,41 @@ object mod {
     val gapTo: Double = js.native
     
     /**
+      Get the step map that represents the changes made by this step,
+      and which can be used to transform between positions in the old
+      and the new document.
+      */
+    /* CompleteClass */
+    override def getMap(): StepMap = js.native
+    
+    /**
       The position in the slice where the preserved range should be
       inserted.
       */
     val insert: Double = js.native
+    
+    /**
+      Create an inverted version of this step. Needs the document as it
+      was before the step as argument.
+      */
+    /* CompleteClass */
+    override def invert(doc: Node): Step = js.native
+    
+    /**
+      Map this step through a mappable thing, returning either a
+      version of that step with its positions adjusted, or `null` if
+      the step was entirely deleted by the mapping.
+      */
+    /* CompleteClass */
+    override def map(mapping: Mappable): Step | Null = js.native
+    
+    /**
+      Try to merge this step with another one, to be applied directly
+      after it. Returns the merged step when possible, null if the
+      steps can't be merged.
+      */
+    /* CompleteClass */
+    override def merge(other: Step): Step | Null = js.native
     
     /**
       The slice to insert.
@@ -655,6 +859,15 @@ object mod {
       The end position of the replaced range.
       */
     val to: Double = js.native
+    
+    /**
+      Create a JSON-serializeable representation of this step. When
+      defining this for a custom subclass, make sure the result object
+      includes the step type's [JSON id](https://prosemirror.net/docs/ref/#transform.Step^jsonID) under
+      the `stepType` property.
+      */
+    /* CompleteClass */
+    override def toJSON(): Any = js.native
   }
   
   /**
@@ -662,7 +875,9 @@ object mod {
   */
   @JSImport("prosemirror-transform", "ReplaceStep")
   @js.native
-  open class ReplaceStep_ protected () extends Step {
+  open class ReplaceStep_ protected ()
+    extends StObject
+       with Step {
     /**
       The given `slice` should fit the 'gap' between `from` and
       `to`—the depths must line up, and the surrounding nodes must be
@@ -706,9 +921,50 @@ object mod {
     ) = this()
     
     /**
+      Applies this step to the given document, returning a result
+      object that either indicates failure, if the step can not be
+      applied to this document, or indicates success by containing a
+      transformed document.
+      */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(doc: Node): StepResult = js.native
+    
+    /**
       The start position of the replaced range.
       */
     val from: Double = js.native
+    
+    /**
+      Get the step map that represents the changes made by this step,
+      and which can be used to transform between positions in the old
+      and the new document.
+      */
+    /* CompleteClass */
+    override def getMap(): StepMap = js.native
+    
+    /**
+      Create an inverted version of this step. Needs the document as it
+      was before the step as argument.
+      */
+    /* CompleteClass */
+    override def invert(doc: Node): Step = js.native
+    
+    /**
+      Map this step through a mappable thing, returning either a
+      version of that step with its positions adjusted, or `null` if
+      the step was entirely deleted by the mapping.
+      */
+    /* CompleteClass */
+    override def map(mapping: Mappable): Step | Null = js.native
+    
+    /**
+      Try to merge this step with another one, to be applied directly
+      after it. Returns the merged step when possible, null if the
+      steps can't be merged.
+      */
+    /* CompleteClass */
+    override def merge(other: Step): Step | Null = js.native
     
     /**
       The slice to insert.
@@ -719,57 +975,6 @@ object mod {
       The end position of the replaced range.
       */
     val to: Double = js.native
-  }
-  
-  /**
-  A step object represents an atomic change. It generally applies
-  only to the document it was created for, since the positions
-  stored in it will only make sense for that document.
-  New steps are defined by creating classes that extend `Step`,
-  overriding the `apply`, `invert`, `map`, `getMap` and `fromJSON`
-  methods, and registering your class with a unique
-  JSON-serialization identifier using
-  [`Step.jsonID`](https://prosemirror.net/docs/ref/#transform.Step^jsonID).
-  */
-  @JSImport("prosemirror-transform", "Step")
-  @js.native
-  abstract class Step () extends StObject {
-    
-    /**
-      Applies this step to the given document, returning a result
-      object that either indicates failure, if the step can not be
-      applied to this document, or indicates success by containing a
-      transformed document.
-      */
-    @JSName("apply")
-    def apply(doc: Node): StepResult = js.native
-    
-    /**
-      Get the step map that represents the changes made by this step,
-      and which can be used to transform between positions in the old
-      and the new document.
-      */
-    def getMap(): StepMap = js.native
-    
-    /**
-      Create an inverted version of this step. Needs the document as it
-      was before the step as argument.
-      */
-    def invert(doc: Node): Step = js.native
-    
-    /**
-      Map this step through a mappable thing, returning either a
-      version of that step with its positions adjusted, or `null` if
-      the step was entirely deleted by the mapping.
-      */
-    def map(mapping: Mappable): Step | Null = js.native
-    
-    /**
-      Try to merge this step with another one, to be applied directly
-      after it. Returns the merged step when possible, null if the
-      steps can't be merged.
-      */
-    def merge(other: Step): Step | Null = js.native
     
     /**
       Create a JSON-serializeable representation of this step. When
@@ -777,146 +982,8 @@ object mod {
       includes the step type's [JSON id](https://prosemirror.net/docs/ref/#transform.Step^jsonID) under
       the `stepType` property.
       */
-    def toJSON(): Any = js.native
-  }
-  object Step {
-    
-    @JSImport("prosemirror-transform", "Step")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      Deserialize a step from its JSON representation. Will call
-      through to the step class' own implementation of this method.
-      */
-    /* static member */
-    inline def fromJSON(schema: Schema[Any, Any], json: Any): Step = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Step]
-    
-    /**
-      To be able to serialize steps to JSON, each step needs a string
-      ID to attach to its JSON representation. Use this method to
-      register an ID for your step classes. Try to pick something
-      that's unlikely to clash with steps from other modules.
-      */
-    /* static member */
-    inline def jsonID(id: String, stepClass: FromJSON): FromJSON = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonID")(id.asInstanceOf[js.Any], stepClass.asInstanceOf[js.Any])).asInstanceOf[FromJSON]
-  }
-  
-  /**
-  A map describing the deletions and insertions made by a step, which
-  can be used to find the correspondence between positions in the
-  pre-step version of a document and the same position in the
-  post-step version.
-  */
-  @JSImport("prosemirror-transform", "StepMap")
-  @js.native
-  open class StepMap protected ()
-    extends StObject
-       with Mappable {
-    /**
-      Create a position map. The modifications to the document are
-      represented as an array of numbers, in which each group of three
-      represents a modified chunk as `[start, oldSize, newSize]`.
-      */
-    def this(/**
-      @internal
-      */
-    ranges: js.Array[Double]) = this()
-    def this(/**
-      @internal
-      */
-    ranges: js.Array[Double], /**
-      @internal
-      */
-    inverted: Boolean) = this()
-    
-    /**
-      Calls the given function on each of the changed ranges included in
-      this map.
-      */
-    def forEach(
-      f: js.Function4[
-          /* oldStart */ Double, 
-          /* oldEnd */ Double, 
-          /* newStart */ Double, 
-          /* newEnd */ Double, 
-          Unit
-        ]
-    ): Unit = js.native
-    
-    /**
-      Create an inverted version of this map. The result can be used to
-      map positions in the post-step document to the pre-step document.
-      */
-    def invert(): StepMap = js.native
-  }
-  object StepMap {
-    
-    @JSImport("prosemirror-transform", "StepMap")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      A StepMap that contains no changed ranges.
-      */
-    /* static member */
-    @JSImport("prosemirror-transform", "StepMap.empty")
-    @js.native
-    def empty: StepMap = js.native
-    inline def empty_=(x: StepMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
-    
-    /**
-      Create a map that moves all positions by offset `n` (which may be
-      negative). This can be useful when applying steps meant for a
-      sub-document to a larger document, or vice-versa.
-      */
-    /* static member */
-    inline def offset(n: Double): StepMap = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(n.asInstanceOf[js.Any]).asInstanceOf[StepMap]
-  }
-  
-  /**
-  The result of [applying](https://prosemirror.net/docs/ref/#transform.Step.apply) a step. Contains either a
-  new document or a failure value.
-  */
-  @JSImport("prosemirror-transform", "StepResult")
-  @js.native
-  open class StepResult () extends StObject {
-    
-    /**
-      The transformed document, if successful.
-      */
-    val doc: Node | Null = js.native
-    
-    /**
-      The failure message, if unsuccessful.
-      */
-    val failed: String | Null = js.native
-  }
-  object StepResult {
-    
-    @JSImport("prosemirror-transform", "StepResult")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      Create a failed step result.
-      */
-    /* static member */
-    inline def fail(message: String): StepResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[StepResult]
-    
-    /**
-      Call [`Node.replace`](https://prosemirror.net/docs/ref/#model.Node.replace) with the given
-      arguments. Create a successful result if it succeeds, and a
-      failed one if it throws a `ReplaceError`.
-      */
-    /* static member */
-    inline def fromReplace(doc: Node, from: Double, to: Double, slice: Slice): StepResult = (^.asInstanceOf[js.Dynamic].applyDynamic("fromReplace")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[StepResult]
-    
-    /**
-      Create a successful step result.
-      */
-    /* static member */
-    inline def ok(doc: Node): StepResult = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(doc.asInstanceOf[js.Any]).asInstanceOf[StepResult]
+    /* CompleteClass */
+    override def toJSON(): Any = js.native
   }
   
   /**
@@ -1234,6 +1301,52 @@ object mod {
   inline def replaceStep(doc: Node, from: Double, to: Unit, slice: Slice): Step | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStep")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[Step | Null]
   
   /**
+  Update an attribute in a specific node.
+  */
+  trait AttrStep
+    extends StObject
+       with Step {
+    
+    /**
+      The attribute to set.
+      */
+    val attr: String
+    
+    /**
+      The position of the target node.
+      */
+    val pos: Double
+    
+    val value: Any
+  }
+  object AttrStep {
+    
+    inline def apply(
+      apply: Node => StepResult,
+      attr: String,
+      getMap: () => StepMap,
+      invert: Node => Step,
+      map: Mappable => Step | Null,
+      merge: Step => Step | Null,
+      pos: Double,
+      toJSON: () => Any,
+      value: Any
+    ): AttrStep = {
+      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), attr = attr.asInstanceOf[js.Any], getMap = js.Any.fromFunction0(getMap), invert = js.Any.fromFunction1(invert), map = js.Any.fromFunction1(map), merge = js.Any.fromFunction1(merge), pos = pos.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AttrStep]
+    }
+    
+    extension [Self <: AttrStep](x: Self) {
+      
+      inline def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+      
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /**
   There are several things that positions can be mapped through.
   Such objects conform to this interface.
   */
@@ -1259,5 +1372,158 @@ object mod {
       */
     def mapResult(pos: Double): MapResult = js.native
     def mapResult(pos: Double, assoc: Double): MapResult = js.native
+  }
+  
+  /**
+  A step object represents an atomic change. It generally applies
+  only to the document it was created for, since the positions
+  stored in it will only make sense for that document.
+  New steps are defined by creating classes that extend `Step`,
+  overriding the `apply`, `invert`, `map`, `getMap` and `fromJSON`
+  methods, and registering your class with a unique
+  JSON-serialization identifier using
+  [`Step.jsonID`](https://prosemirror.net/docs/ref/#transform.Step^jsonID).
+  */
+  trait Step extends StObject {
+    
+    /**
+      Applies this step to the given document, returning a result
+      object that either indicates failure, if the step can not be
+      applied to this document, or indicates success by containing a
+      transformed document.
+      */
+    @JSName("apply")
+    def apply(doc: Node): StepResult
+    
+    /**
+      Get the step map that represents the changes made by this step,
+      and which can be used to transform between positions in the old
+      and the new document.
+      */
+    def getMap(): StepMap
+    
+    /**
+      Create an inverted version of this step. Needs the document as it
+      was before the step as argument.
+      */
+    def invert(doc: Node): Step
+    
+    /**
+      Map this step through a mappable thing, returning either a
+      version of that step with its positions adjusted, or `null` if
+      the step was entirely deleted by the mapping.
+      */
+    def map(mapping: Mappable): Step | Null
+    
+    /**
+      Try to merge this step with another one, to be applied directly
+      after it. Returns the merged step when possible, null if the
+      steps can't be merged.
+      */
+    def merge(other: Step): Step | Null
+    
+    /**
+      Create a JSON-serializeable representation of this step. When
+      defining this for a custom subclass, make sure the result object
+      includes the step type's [JSON id](https://prosemirror.net/docs/ref/#transform.Step^jsonID) under
+      the `stepType` property.
+      */
+    def toJSON(): Any
+  }
+  object Step {
+    
+    inline def apply(
+      apply: Node => StepResult,
+      getMap: () => StepMap,
+      invert: Node => Step,
+      map: Mappable => Step | Null,
+      merge: Step => Step | Null,
+      toJSON: () => Any
+    ): Step = {
+      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), getMap = js.Any.fromFunction0(getMap), invert = js.Any.fromFunction1(invert), map = js.Any.fromFunction1(map), merge = js.Any.fromFunction1(merge), toJSON = js.Any.fromFunction0(toJSON))
+      __obj.asInstanceOf[Step]
+    }
+    
+    extension [Self <: Step](x: Self) {
+      
+      inline def setApply(value: Node => StepResult): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      
+      inline def setGetMap(value: () => StepMap): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
+      
+      inline def setInvert(value: Node => Step): Self = StObject.set(x, "invert", js.Any.fromFunction1(value))
+      
+      inline def setMap(value: Mappable => Step | Null): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      
+      inline def setMerge(value: Step => Step | Null): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
+      
+      inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    }
+  }
+  
+  /**
+  A map describing the deletions and insertions made by a step, which
+  can be used to find the correspondence between positions in the
+  pre-step version of a document and the same position in the
+  post-step version.
+  */
+  @js.native
+  trait StepMap
+    extends StObject
+       with Mappable {
+    
+    /**
+      Calls the given function on each of the changed ranges included in
+      this map.
+      */
+    def forEach(
+      f: js.Function4[
+          /* oldStart */ Double, 
+          /* oldEnd */ Double, 
+          /* newStart */ Double, 
+          /* newEnd */ Double, 
+          Unit
+        ]
+    ): Unit = js.native
+    
+    /**
+      Create an inverted version of this map. The result can be used to
+      map positions in the post-step document to the pre-step document.
+      */
+    def invert(): StepMap = js.native
+  }
+  
+  /**
+  The result of [applying](https://prosemirror.net/docs/ref/#transform.Step.apply) a step. Contains either a
+  new document or a failure value.
+  */
+  trait StepResult extends StObject {
+    
+    /**
+      The transformed document, if successful.
+      */
+    val doc: Node | Null
+    
+    /**
+      The failure message, if unsuccessful.
+      */
+    val failed: String | Null
+  }
+  object StepResult {
+    
+    inline def apply(): StepResult = {
+      val __obj = js.Dynamic.literal(doc = null, failed = null)
+      __obj.asInstanceOf[StepResult]
+    }
+    
+    extension [Self <: StepResult](x: Self) {
+      
+      inline def setDoc(value: Node): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      
+      inline def setDocNull: Self = StObject.set(x, "doc", null)
+      
+      inline def setFailed(value: String): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+      
+      inline def setFailedNull: Self = StObject.set(x, "failed", null)
+    }
   }
 }

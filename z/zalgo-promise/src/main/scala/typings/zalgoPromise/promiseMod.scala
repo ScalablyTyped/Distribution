@@ -1,6 +1,5 @@
 package typings.zalgoPromise
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Partial
 import typings.zalgoPromise.anon.Cancel
 import org.scalablytyped.runtime.StObject
@@ -102,9 +101,23 @@ object promiseMod {
     inline def try_YA[Y, A /* <: js.Array[Any] */](method: js.Function1[/* args */ A, Y], context: Unit, args: Partial[A]): ZalgoPromise[Y] = (^.asInstanceOf[js.Dynamic].applyDynamic("try")(method.asInstanceOf[js.Any], context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Y]]
   }
   
-  type FlattenPromises[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K] extends zalgo-promise.zalgo-promise/promise.ZalgoPromise<any>? zalgo-promise.zalgo-promise/promise.ResultType<T[K]> : T[K]}
-    */ typings.zalgoPromise.zalgoPromiseStrings.FlattenPromises & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]: T[K] extends zalgo-promise.zalgo-promise/promise.ZalgoPromise<any>? zalgo-promise.zalgo-promise/promise.ResultType<T[K]> : T[K]}
+    }}}
+    */
+  @js.native
+  trait FlattenPromises[T /* <: js.Object */] extends StObject
   
-  type ResultType[P /* <: ZalgoPromise[Any] */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    P extends zalgo-promise.zalgo-promise/promise.ZalgoPromise<infer R> ? R : never
+    }}}
+    */
+  @js.native
+  trait ResultType[P /* <: ZalgoPromise[Any] */] extends StObject
 }

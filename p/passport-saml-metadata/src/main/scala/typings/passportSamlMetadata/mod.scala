@@ -3,7 +3,7 @@ package typings.passportSamlMetadata
 import typings.passportSaml.mod.SamlConfig
 import typings.passportSamlMetadata.anon.MultipleCerts
 import typings.passportSamlMetadata.anon.PartialMetadataConstructo
-import typings.passportSamlMetadata.fetchMod.FetchConfig
+import typings.passportSamlMetadata.srcFetchMod.FetchConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,12 +24,12 @@ object mod {
   
   inline def claimsToCamelCase(claims: Any, claimSchema: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("claimsToCamelCase")(claims.asInstanceOf[js.Any], claimSchema.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def fetch(config: FetchConfig): js.Promise[typings.passportSamlMetadata.readerMod.MetadataReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.passportSamlMetadata.readerMod.MetadataReader]]
+  inline def fetch(config: FetchConfig): js.Promise[typings.passportSamlMetadata.srcReaderMod.MetadataReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.passportSamlMetadata.srcReaderMod.MetadataReader]]
   
   inline def metadata(config: SamlConfig): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
   inline def toPassportConfig(): SamlConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("toPassportConfig")().asInstanceOf[SamlConfig]
   inline def toPassportConfig(reader: Unit, options: MultipleCerts): SamlConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("toPassportConfig")(reader.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SamlConfig]
-  inline def toPassportConfig(reader: typings.passportSamlMetadata.readerMod.MetadataReader): SamlConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("toPassportConfig")(reader.asInstanceOf[js.Any]).asInstanceOf[SamlConfig]
-  inline def toPassportConfig(reader: typings.passportSamlMetadata.readerMod.MetadataReader, options: MultipleCerts): SamlConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("toPassportConfig")(reader.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SamlConfig]
+  inline def toPassportConfig(reader: typings.passportSamlMetadata.srcReaderMod.MetadataReader): SamlConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("toPassportConfig")(reader.asInstanceOf[js.Any]).asInstanceOf[SamlConfig]
+  inline def toPassportConfig(reader: typings.passportSamlMetadata.srcReaderMod.MetadataReader, options: MultipleCerts): SamlConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("toPassportConfig")(reader.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SamlConfig]
 }

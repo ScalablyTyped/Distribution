@@ -6,20 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Nsecs extends StObject {
   
-  var nsecs: Double
+  var nsecs: js.UndefOr[Double] = js.undefined
   
   var secs: Double
 }
 object Nsecs {
   
-  inline def apply(nsecs: Double, secs: Double): Nsecs = {
-    val __obj = js.Dynamic.literal(nsecs = nsecs.asInstanceOf[js.Any], secs = secs.asInstanceOf[js.Any])
+  inline def apply(secs: Double): Nsecs = {
+    val __obj = js.Dynamic.literal(secs = secs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nsecs]
   }
   
   extension [Self <: Nsecs](x: Self) {
     
     inline def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
+    
+    inline def setNsecsUndefined: Self = StObject.set(x, "nsecs", js.undefined)
     
     inline def setSecs(value: Double): Self = StObject.set(x, "secs", value.asInstanceOf[js.Any])
   }

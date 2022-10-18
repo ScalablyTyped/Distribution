@@ -1,26 +1,23 @@
 package typings.maplibreGl.anon
 
-import typings.maplibreGl.maplibreGlStrings.source_
-import typings.maplibreGl.mod.SizeData
+import typings.maplibreGl.mod.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0`
-  extends StObject
-     with SizeData {
+trait `0` extends StObject {
   
-  var kind: source_
+  def cameraAnimation(map: Map): Unit
 }
 object `0` {
   
-  inline def apply(): `0` = {
-    val __obj = js.Dynamic.literal(kind = "source")
+  inline def apply(cameraAnimation: Map => Unit): `0` = {
+    val __obj = js.Dynamic.literal(cameraAnimation = js.Any.fromFunction1(cameraAnimation))
     __obj.asInstanceOf[`0`]
   }
   
   extension [Self <: `0`](x: Self) {
     
-    inline def setKind(value: source_): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setCameraAnimation(value: Map => Unit): Self = StObject.set(x, "cameraAnimation", js.Any.fromFunction1(value))
   }
 }

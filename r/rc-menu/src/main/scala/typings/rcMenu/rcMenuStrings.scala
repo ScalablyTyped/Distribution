@@ -1,7 +1,7 @@
 package typings.rcMenu
 
-import typings.rcMenu.interfaceMod.MenuMode
-import typings.rcMenu.interfaceMod.TriggerSubMenuAction
+import typings.rcMenu.esInterfaceMod.MenuMode
+import typings.rcMenu.esInterfaceMod.TriggerSubMenuAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

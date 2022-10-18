@@ -3,8 +3,6 @@ package typings.emotionStyledBase
 import org.scalablytyped.runtime.Shortcut
 import typings.emotionSerialize.mod.ComponentSelector
 import typings.emotionSerialize.mod.Interpolation
-import typings.emotionStyledBase.anon.ThemeExclude
-import typings.emotionStyledBase.anon.ThemeT
 import typings.emotionStyledBase.anon.`0`
 import typings.emotionStyledBase.emotionStyledBaseStrings.`object`
 import typings.emotionStyledBase.emotionStyledBaseStrings.`var`
@@ -182,9 +180,9 @@ import typings.emotionStyledBase.emotionStyledBaseStrings.video
 import typings.emotionStyledBase.emotionStyledBaseStrings.view
 import typings.emotionStyledBase.emotionStyledBaseStrings.wbr
 import typings.emotionStyledBase.emotionStyledBaseStrings.webview
-import typings.emotionStyledBase.helperMod.Omit
-import typings.emotionStyledBase.helperMod.Overwrapped
-import typings.emotionStyledBase.helperMod.PropsOf
+import typings.emotionStyledBase.typesHelperMod.Omit
+import typings.emotionStyledBase.typesHelperMod.Overwrapped
+import typings.emotionStyledBase.typesHelperMod.PropsOf
 import typings.react.HTMLWebViewElement
 import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.AreaHTMLAttributes
@@ -727,16 +725,19 @@ object mod extends Shortcut {
     def apply[Tag /* <: ComponentType[Any] */, ExtraProps](tag: Tag, options: StyledOptions): CreateStyledComponentExtrinsic[Tag, ExtraProps, Theme] = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.emotionStyledBase.mod.CreateStyledComponentBaseThemed[InnerProps, ExtraProps, StyledInstanceTheme]
-    - typings.emotionStyledBase.mod.CreateStyledComponentBaseThemeless[InnerProps, ExtraProps]
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    // this "reversed" condition checks if StyledInstanceTheme was already parametrized when using CreateStyled
+  object extends StyledInstanceTheme ? @emotion/styled-base.@emotion/styled-base.CreateStyledComponentBaseThemeless<InnerProps, ExtraProps> : @emotion/styled-base.@emotion/styled-base.CreateStyledComponentBaseThemed<InnerProps, ExtraProps, StyledInstanceTheme>
+    }}}
+    */
+  @js.native
   trait CreateStyledComponentBase[InnerProps, ExtraProps, StyledInstanceTheme /* <: js.Object */] extends StObject
   
   @js.native
-  trait CreateStyledComponentBaseThemed[InnerProps, ExtraProps, StyledInstanceTheme /* <: js.Object */]
-    extends StObject
-       with CreateStyledComponentBase[InnerProps, ExtraProps, StyledInstanceTheme] {
+  trait CreateStyledComponentBaseThemed[InnerProps, ExtraProps, StyledInstanceTheme /* <: js.Object */] extends StObject {
     
     def apply[StyleProps /* <: Omit[Overwrapped[InnerProps, StyleProps], ReactClassPropKeys] */](styles: (Interpolation[WithTheme[StyleProps, StyledInstanceTheme]])*): StyledComponent[InnerProps, StyleProps, StyledInstanceTheme] = js.native
     def apply[StyleProps /* <: Omit[Overwrapped[InnerProps, StyleProps], ReactClassPropKeys] */](
@@ -746,9 +747,7 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait CreateStyledComponentBaseThemeless[InnerProps, ExtraProps]
-    extends StObject
-       with CreateStyledComponentBase[InnerProps, ExtraProps, Any] {
+  trait CreateStyledComponentBaseThemeless[InnerProps, ExtraProps] extends StObject {
     
     def apply[StyleProps /* <: Omit[Overwrapped[InnerProps, StyleProps], ReactClassPropKeys] */, Theme /* <: js.Object */](styles: (Interpolation[WithTheme[StyleProps, Theme]])*): StyledComponent[InnerProps, StyleProps, Theme] = js.native
     def apply[StyleProps /* <: Omit[Overwrapped[InnerProps, StyleProps], ReactClassPropKeys] */, Theme /* <: js.Object */](template: TemplateStringsArray, styles: (Interpolation[WithTheme[StyleProps, Theme]])*): StyledComponent[InnerProps, StyleProps, Theme] = js.native
@@ -756,7 +755,7 @@ object mod extends Shortcut {
   
   type CreateStyledComponentExtrinsic[Tag /* <: ComponentType[Any] */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[PropsOf[Tag], ExtraProps, Theme]
   
-  type CreateStyledComponentIntrinsic[Tag /* <: /* keyof @emotion/styled-base.@emotion/styled-base.JSXInEl */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[
+  type CreateStyledComponentIntrinsic[Tag /* <: /* keyof @emotion/styled-base.@emotion/styled-base.JSXInEl */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.emotionStyledBase.emotionStyledBaseStrings.a, typings.emotionStyledBase.emotionStyledBaseStrings.abbr, typings.emotionStyledBase.emotionStyledBaseStrings.address */ Any */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[
     /* import warning: importer.ImportType#apply Failed type conversion: @emotion/styled-base.@emotion/styled-base.JSXInEl[Tag] */ js.Any, 
     ExtraProps, 
     Theme
@@ -1431,7 +1430,15 @@ object mod extends Shortcut {
     }
   }
   
-  type WithTheme[P, T] = (P & ThemeT[T]) | (P & ThemeExclude)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    P extends {  theme :infer Theme} ? P & {  theme :std.Exclude<Theme, undefined>} : P & {  theme :T}
+    }}}
+    */
+  @js.native
+  trait WithTheme[P, T] extends StObject
   
   type _To = CreateStyled[Any]
   

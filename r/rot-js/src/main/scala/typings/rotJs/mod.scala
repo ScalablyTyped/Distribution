@@ -15,10 +15,10 @@ import typings.rotJs.anon.PartialOptionsOrder
 import typings.rotJs.anon.PartialOptionsRoomDugPercentage
 import typings.rotJs.anon.TypeofRect
 import typings.rotJs.anon.TypeofTileGL
-import typings.rotJs.displayMod.default
-import typings.rotJs.lightingMod.ReflectivityCallback
-import typings.rotJs.pathPathMod.PassableCallback
-import typings.rotJs.speedMod.SpeedActor
+import typings.rotJs.libDisplayDisplayMod.default
+import typings.rotJs.libLightingMod.ReflectivityCallback
+import typings.rotJs.libPathPathMod.PassableCallback
+import typings.rotJs.libSchedulerSpeedMod.SpeedActor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,19 +35,19 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def add(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(scala.List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def add(color1: typings.rotJs.libColorMod.Color, colors: typings.rotJs.libColorMod.Color*): typings.rotJs.libColorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(scala.List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.libColorMod.Color]
     
-    inline def add_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("add_")(scala.List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def add_(color1: typings.rotJs.libColorMod.Color, colors: typings.rotJs.libColorMod.Color*): typings.rotJs.libColorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("add_")(scala.List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.libColorMod.Color]
     
-    inline def fromString(str: String): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def fromString(str: String): typings.rotJs.libColorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rotJs.libColorMod.Color]
     
-    inline def hsl2rgb(color: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl2rgb")(color.asInstanceOf[js.Any]).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def hsl2rgb(color: typings.rotJs.libColorMod.Color): typings.rotJs.libColorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl2rgb")(color.asInstanceOf[js.Any]).asInstanceOf[typings.rotJs.libColorMod.Color]
     
-    inline def interpolate(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
-    inline def interpolate(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color, factor: Double): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def interpolate(color1: typings.rotJs.libColorMod.Color, color2: typings.rotJs.libColorMod.Color): typings.rotJs.libColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.libColorMod.Color]
+    inline def interpolate(color1: typings.rotJs.libColorMod.Color, color2: typings.rotJs.libColorMod.Color, factor: Double): typings.rotJs.libColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.libColorMod.Color]
     
-    inline def interpolateHSL(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHSL")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
-    inline def interpolateHSL(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color, factor: Double): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHSL")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def interpolateHSL(color1: typings.rotJs.libColorMod.Color, color2: typings.rotJs.libColorMod.Color): typings.rotJs.libColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHSL")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.libColorMod.Color]
+    inline def interpolateHSL(color1: typings.rotJs.libColorMod.Color, color2: typings.rotJs.libColorMod.Color, factor: Double): typings.rotJs.libColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHSL")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.libColorMod.Color]
     
     @JSImport("rot-js", "Color.lerp")
     @js.native
@@ -57,18 +57,18 @@ object mod {
     @js.native
     val lerpHSL: /* import warning: importer.ImportType#apply Failed type conversion: typeof interpolateHSL */ js.Any = js.native
     
-    inline def multiply(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(scala.List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def multiply(color1: typings.rotJs.libColorMod.Color, colors: typings.rotJs.libColorMod.Color*): typings.rotJs.libColorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(scala.List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.libColorMod.Color]
     
-    inline def multiply_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply_")(scala.List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def multiply_(color1: typings.rotJs.libColorMod.Color, colors: typings.rotJs.libColorMod.Color*): typings.rotJs.libColorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply_")(scala.List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.libColorMod.Color]
     
-    inline def randomize(color: typings.rotJs.colorMod.Color, diff: Double): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("randomize")(color.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
-    inline def randomize(color: typings.rotJs.colorMod.Color, diff: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("randomize")(color.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def randomize(color: typings.rotJs.libColorMod.Color, diff: Double): typings.rotJs.libColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("randomize")(color.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.libColorMod.Color]
+    inline def randomize(color: typings.rotJs.libColorMod.Color, diff: typings.rotJs.libColorMod.Color): typings.rotJs.libColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("randomize")(color.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.libColorMod.Color]
     
-    inline def rgb2hsl(color: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hsl")(color.asInstanceOf[js.Any]).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def rgb2hsl(color: typings.rotJs.libColorMod.Color): typings.rotJs.libColorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hsl")(color.asInstanceOf[js.Any]).asInstanceOf[typings.rotJs.libColorMod.Color]
     
-    inline def toHex(color: typings.rotJs.colorMod.Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toHex(color: typings.rotJs.libColorMod.Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(color.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def toRGB(color: typings.rotJs.colorMod.Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toRGB")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toRGB(color: typings.rotJs.libColorMod.Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toRGB")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("rot-js", "DEFAULT_HEIGHT")
@@ -110,8 +110,8 @@ object mod {
     
     @JSImport("rot-js", "Display.Hex")
     @js.native
-    def Hex: Instantiable0[typings.rotJs.hexMod.default] = js.native
-    inline def Hex_=(x: Instantiable0[typings.rotJs.hexMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hex")(x.asInstanceOf[js.Any])
+    def Hex: Instantiable0[typings.rotJs.libDisplayHexMod.default] = js.native
+    inline def Hex_=(x: Instantiable0[typings.rotJs.libDisplayHexMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hex")(x.asInstanceOf[js.Any])
     
     @JSImport("rot-js", "Display.Rect")
     @js.native
@@ -120,26 +120,26 @@ object mod {
     
     @JSImport("rot-js", "Display.Term")
     @js.native
-    def Term: Instantiable0[typings.rotJs.termMod.default] = js.native
-    inline def Term_=(x: Instantiable0[typings.rotJs.termMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Term")(x.asInstanceOf[js.Any])
+    def Term: Instantiable0[typings.rotJs.libDisplayTermMod.default] = js.native
+    inline def Term_=(x: Instantiable0[typings.rotJs.libDisplayTermMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Term")(x.asInstanceOf[js.Any])
     
     @JSImport("rot-js", "Display.Tile")
     @js.native
-    def Tile: Instantiable0[typings.rotJs.tileMod.default] = js.native
+    def Tile: Instantiable0[typings.rotJs.libDisplayTileMod.default] = js.native
     
     @JSImport("rot-js", "Display.TileGL")
     @js.native
     def TileGL: TypeofTileGL = js.native
     inline def TileGL_=(x: TypeofTileGL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TileGL")(x.asInstanceOf[js.Any])
     
-    inline def Tile_=(x: Instantiable0[typings.rotJs.tileMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tile")(x.asInstanceOf[js.Any])
+    inline def Tile_=(x: Instantiable0[typings.rotJs.libDisplayTileMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tile")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rot-js", "Engine")
   @js.native
   open class Engine protected ()
-    extends typings.rotJs.engineMod.default {
-    def this(scheduler: typings.rotJs.schedulerSchedulerMod.default[Any]) = this()
+    extends typings.rotJs.libEngineMod.default {
+    def this(scheduler: typings.rotJs.libSchedulerSchedulerMod.default[Any]) = this()
   }
   
   @JSImport("rot-js", "EventQueue")
@@ -148,7 +148,7 @@ object mod {
     * @class Generic event queue: stores events and retrieves them based on their time
     */
   open class EventQueue[T] ()
-    extends typings.rotJs.eventqueueMod.default[T]
+    extends typings.rotJs.libEventqueueMod.default[T]
   
   object FOV {
     
@@ -160,31 +160,31 @@ object mod {
     @JSImport("rot-js", "FOV.DiscreteShadowcasting")
     @js.native
     open class DiscreteShadowcasting ()
-      extends typings.rotJs.discreteShadowcastingMod.default
+      extends typings.rotJs.libFovDiscreteShadowcastingMod.default
     @JSImport("rot-js", "FOV.DiscreteShadowcasting")
     @js.native
-    def DiscreteShadowcasting: Instantiable0[typings.rotJs.discreteShadowcastingMod.default] = js.native
-    inline def DiscreteShadowcasting_=(x: Instantiable0[typings.rotJs.discreteShadowcastingMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DiscreteShadowcasting")(x.asInstanceOf[js.Any])
+    def DiscreteShadowcasting: Instantiable0[typings.rotJs.libFovDiscreteShadowcastingMod.default] = js.native
+    inline def DiscreteShadowcasting_=(x: Instantiable0[typings.rotJs.libFovDiscreteShadowcastingMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DiscreteShadowcasting")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "FOV.PreciseShadowcasting")
     @js.native
     open class PreciseShadowcasting ()
-      extends typings.rotJs.preciseShadowcastingMod.default
+      extends typings.rotJs.libFovPreciseShadowcastingMod.default
     @JSImport("rot-js", "FOV.PreciseShadowcasting")
     @js.native
-    def PreciseShadowcasting: Instantiable0[typings.rotJs.preciseShadowcastingMod.default] = js.native
-    inline def PreciseShadowcasting_=(x: Instantiable0[typings.rotJs.preciseShadowcastingMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PreciseShadowcasting")(x.asInstanceOf[js.Any])
+    def PreciseShadowcasting: Instantiable0[typings.rotJs.libFovPreciseShadowcastingMod.default] = js.native
+    inline def PreciseShadowcasting_=(x: Instantiable0[typings.rotJs.libFovPreciseShadowcastingMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PreciseShadowcasting")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "FOV.RecursiveShadowcasting")
     @js.native
     open class RecursiveShadowcasting ()
-      extends typings.rotJs.recursiveShadowcastingMod.default
+      extends typings.rotJs.libFovRecursiveShadowcastingMod.default
     @JSImport("rot-js", "FOV.RecursiveShadowcasting")
     @js.native
-    def RecursiveShadowcasting: Instantiable0[typings.rotJs.recursiveShadowcastingMod.default] = js.native
-    inline def RecursiveShadowcasting_=(x: Instantiable0[typings.rotJs.recursiveShadowcastingMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RecursiveShadowcasting")(x.asInstanceOf[js.Any])
+    def RecursiveShadowcasting: Instantiable0[typings.rotJs.libFovRecursiveShadowcastingMod.default] = js.native
+    inline def RecursiveShadowcasting_=(x: Instantiable0[typings.rotJs.libFovRecursiveShadowcastingMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RecursiveShadowcasting")(x.asInstanceOf[js.Any])
   }
   
   object KEYS {
@@ -1146,7 +1146,7 @@ object mod {
   @JSImport("rot-js", "Lighting")
   @js.native
   open class Lighting protected ()
-    extends typings.rotJs.lightingMod.default {
+    extends typings.rotJs.libLightingMod.default {
     def this(reflectivityCallback: ReflectivityCallback) = this()
     def this(reflectivityCallback: ReflectivityCallback, options: PartialOptionsEmissionThreshold) = this()
   }
@@ -1161,17 +1161,17 @@ object mod {
     @JSImport("rot-js", "Map.Arena")
     @js.native
     open class Arena ()
-      extends typings.rotJs.arenaMod.default
+      extends typings.rotJs.libMapArenaMod.default
     @JSImport("rot-js", "Map.Arena")
     @js.native
-    def Arena: Instantiable0[typings.rotJs.arenaMod.default] = js.native
-    inline def Arena_=(x: Instantiable0[typings.rotJs.arenaMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arena")(x.asInstanceOf[js.Any])
+    def Arena: Instantiable0[typings.rotJs.libMapArenaMod.default] = js.native
+    inline def Arena_=(x: Instantiable0[typings.rotJs.libMapArenaMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arena")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Map.Cellular")
     @js.native
     open class Cellular protected ()
-      extends typings.rotJs.cellularMod.default {
+      extends typings.rotJs.libMapCellularMod.default {
       def this(width: Double, height: Double) = this()
       def this(width: Double, height: Double, options: PartialOptionsBorn) = this()
     }
@@ -1181,14 +1181,14 @@ object mod {
         /* width */ Double, 
         /* height */ Double, 
         /* options */ js.UndefOr[PartialOptionsBorn], 
-        typings.rotJs.cellularMod.default
+        typings.rotJs.libMapCellularMod.default
       ] = js.native
     inline def Cellular_=(
       x: Instantiable3[
           /* width */ Double, 
           /* height */ Double, 
           /* options */ js.UndefOr[PartialOptionsBorn], 
-          typings.rotJs.cellularMod.default
+          typings.rotJs.libMapCellularMod.default
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cellular")(x.asInstanceOf[js.Any])
     
@@ -1196,7 +1196,7 @@ object mod {
     @JSImport("rot-js", "Map.Digger")
     @js.native
     open class Digger protected ()
-      extends typings.rotJs.diggerMod.default {
+      extends typings.rotJs.libMapDiggerMod.default {
       def this(width: Double, height: Double) = this()
       def this(width: Double, height: Double, options: PartialOptionsCorridorLength) = this()
     }
@@ -1206,14 +1206,14 @@ object mod {
         /* width */ Double, 
         /* height */ Double, 
         /* options */ js.UndefOr[PartialOptionsCorridorLength], 
-        typings.rotJs.diggerMod.default
+        typings.rotJs.libMapDiggerMod.default
       ] = js.native
     inline def Digger_=(
       x: Instantiable3[
           /* width */ Double, 
           /* height */ Double, 
           /* options */ js.UndefOr[PartialOptionsCorridorLength], 
-          typings.rotJs.diggerMod.default
+          typings.rotJs.libMapDiggerMod.default
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Digger")(x.asInstanceOf[js.Any])
     
@@ -1221,27 +1221,27 @@ object mod {
     @JSImport("rot-js", "Map.DividedMaze")
     @js.native
     open class DividedMaze ()
-      extends typings.rotJs.dividedmazeMod.default
+      extends typings.rotJs.libMapDividedmazeMod.default
     @JSImport("rot-js", "Map.DividedMaze")
     @js.native
-    def DividedMaze: Instantiable0[typings.rotJs.dividedmazeMod.default] = js.native
-    inline def DividedMaze_=(x: Instantiable0[typings.rotJs.dividedmazeMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DividedMaze")(x.asInstanceOf[js.Any])
+    def DividedMaze: Instantiable0[typings.rotJs.libMapDividedmazeMod.default] = js.native
+    inline def DividedMaze_=(x: Instantiable0[typings.rotJs.libMapDividedmazeMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DividedMaze")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Map.EllerMaze")
     @js.native
     open class EllerMaze ()
-      extends typings.rotJs.ellermazeMod.default
+      extends typings.rotJs.libMapEllermazeMod.default
     @JSImport("rot-js", "Map.EllerMaze")
     @js.native
-    def EllerMaze: Instantiable0[typings.rotJs.ellermazeMod.default] = js.native
-    inline def EllerMaze_=(x: Instantiable0[typings.rotJs.ellermazeMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EllerMaze")(x.asInstanceOf[js.Any])
+    def EllerMaze: Instantiable0[typings.rotJs.libMapEllermazeMod.default] = js.native
+    inline def EllerMaze_=(x: Instantiable0[typings.rotJs.libMapEllermazeMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EllerMaze")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Map.IceyMaze")
     @js.native
     open class IceyMaze protected ()
-      extends typings.rotJs.iceymazeMod.default {
+      extends typings.rotJs.libMapIceymazeMod.default {
       def this(width: Double, height: Double) = this()
       def this(width: Double, height: Double, regularity: Double) = this()
     }
@@ -1251,14 +1251,14 @@ object mod {
         /* width */ Double, 
         /* height */ Double, 
         /* regularity */ js.UndefOr[Double], 
-        typings.rotJs.iceymazeMod.default
+        typings.rotJs.libMapIceymazeMod.default
       ] = js.native
     inline def IceyMaze_=(
       x: Instantiable3[
           /* width */ Double, 
           /* height */ Double, 
           /* regularity */ js.UndefOr[Double], 
-          typings.rotJs.iceymazeMod.default
+          typings.rotJs.libMapIceymazeMod.default
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IceyMaze")(x.asInstanceOf[js.Any])
     
@@ -1266,7 +1266,7 @@ object mod {
     @JSImport("rot-js", "Map.Rogue")
     @js.native
     open class Rogue protected ()
-      extends typings.rotJs.rogueMod.default {
+      extends typings.rotJs.libMapRogueMod.default {
       def this(width: Double, height: Double, options: PartialOptionsCellHeight) = this()
     }
     @JSImport("rot-js", "Map.Rogue")
@@ -1275,14 +1275,14 @@ object mod {
         /* width */ Double, 
         /* height */ Double, 
         /* options */ PartialOptionsCellHeight, 
-        typings.rotJs.rogueMod.default
+        typings.rotJs.libMapRogueMod.default
       ] = js.native
     inline def Rogue_=(
       x: Instantiable3[
           /* width */ Double, 
           /* height */ Double, 
           /* options */ PartialOptionsCellHeight, 
-          typings.rotJs.rogueMod.default
+          typings.rotJs.libMapRogueMod.default
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rogue")(x.asInstanceOf[js.Any])
     
@@ -1290,7 +1290,7 @@ object mod {
     @JSImport("rot-js", "Map.Uniform")
     @js.native
     open class Uniform protected ()
-      extends typings.rotJs.uniformMod.default {
+      extends typings.rotJs.libMapUniformMod.default {
       def this(width: Double, height: Double, options: PartialOptionsRoomDugPercentage) = this()
     }
     @JSImport("rot-js", "Map.Uniform")
@@ -1299,14 +1299,14 @@ object mod {
         /* width */ Double, 
         /* height */ Double, 
         /* options */ PartialOptionsRoomDugPercentage, 
-        typings.rotJs.uniformMod.default
+        typings.rotJs.libMapUniformMod.default
       ] = js.native
     inline def Uniform_=(
       x: Instantiable3[
           /* width */ Double, 
           /* height */ Double, 
           /* options */ PartialOptionsRoomDugPercentage, 
-          typings.rotJs.uniformMod.default
+          typings.rotJs.libMapUniformMod.default
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Uniform")(x.asInstanceOf[js.Any])
   }
@@ -1324,13 +1324,13 @@ object mod {
       * @param gradients Random gradients
       */
     open class Simplex ()
-      extends typings.rotJs.simplexMod.default {
+      extends typings.rotJs.libNoiseSimplexMod.default {
       def this(gradients: Double) = this()
     }
     @JSImport("rot-js", "Noise.Simplex")
     @js.native
-    def Simplex: Instantiable1[/* gradients */ js.UndefOr[Double], typings.rotJs.simplexMod.default] = js.native
-    inline def Simplex_=(x: Instantiable1[/* gradients */ js.UndefOr[Double], typings.rotJs.simplexMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Simplex")(x.asInstanceOf[js.Any])
+    def Simplex: Instantiable1[/* gradients */ js.UndefOr[Double], typings.rotJs.libNoiseSimplexMod.default] = js.native
+    inline def Simplex_=(x: Instantiable1[/* gradients */ js.UndefOr[Double], typings.rotJs.libNoiseSimplexMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Simplex")(x.asInstanceOf[js.Any])
   }
   
   object Path {
@@ -1343,7 +1343,7 @@ object mod {
     @JSImport("rot-js", "Path.AStar")
     @js.native
     open class AStar protected ()
-      extends typings.rotJs.astarMod.default {
+      extends typings.rotJs.libPathAstarMod.default {
       def this(toX: Double, toY: Double, passableCallback: PassableCallback) = this()
       def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: PartialOptions) = this()
     }
@@ -1354,7 +1354,7 @@ object mod {
         /* toY */ Double, 
         /* passableCallback */ PassableCallback, 
         /* options */ js.UndefOr[PartialOptions], 
-        typings.rotJs.astarMod.default
+        typings.rotJs.libPathAstarMod.default
       ] = js.native
     inline def AStar_=(
       x: Instantiable4[
@@ -1362,7 +1362,7 @@ object mod {
           /* toY */ Double, 
           /* passableCallback */ PassableCallback, 
           /* options */ js.UndefOr[PartialOptions], 
-          typings.rotJs.astarMod.default
+          typings.rotJs.libPathAstarMod.default
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AStar")(x.asInstanceOf[js.Any])
     
@@ -1370,7 +1370,7 @@ object mod {
     @JSImport("rot-js", "Path.Dijkstra")
     @js.native
     open class Dijkstra protected ()
-      extends typings.rotJs.dijkstraMod.default {
+      extends typings.rotJs.libPathDijkstraMod.default {
       def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: PartialOptions) = this()
     }
     @JSImport("rot-js", "Path.Dijkstra")
@@ -1380,7 +1380,7 @@ object mod {
         /* toY */ Double, 
         /* passableCallback */ PassableCallback, 
         /* options */ PartialOptions, 
-        typings.rotJs.dijkstraMod.default
+        typings.rotJs.libPathDijkstraMod.default
       ] = js.native
     inline def Dijkstra_=(
       x: Instantiable4[
@@ -1388,14 +1388,14 @@ object mod {
           /* toY */ Double, 
           /* passableCallback */ PassableCallback, 
           /* options */ PartialOptions, 
-          typings.rotJs.dijkstraMod.default
+          typings.rotJs.libPathDijkstraMod.default
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dijkstra")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rot-js", "RNG")
   @js.native
-  val RNG: typings.rotJs.rngMod.RNG = js.native
+  val RNG: typings.rotJs.libRngMod.RNG = js.native
   
   object Scheduler {
     
@@ -1407,37 +1407,37 @@ object mod {
     @JSImport("rot-js", "Scheduler.Action")
     @js.native
     open class Action[T] ()
-      extends typings.rotJs.actionMod.default[T]
+      extends typings.rotJs.libSchedulerActionMod.default[T]
     @JSImport("rot-js", "Scheduler.Action")
     @js.native
-    def Action: Instantiable0[typings.rotJs.actionMod.default[js.Object]] = js.native
-    inline def Action_=(x: Instantiable0[typings.rotJs.actionMod.default[js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Action")(x.asInstanceOf[js.Any])
+    def Action: Instantiable0[typings.rotJs.libSchedulerActionMod.default[js.Object]] = js.native
+    inline def Action_=(x: Instantiable0[typings.rotJs.libSchedulerActionMod.default[js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Action")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Scheduler.Simple")
     @js.native
     open class Simple[T] ()
-      extends typings.rotJs.simpleMod.default[T]
+      extends typings.rotJs.libSchedulerSimpleMod.default[T]
     @JSImport("rot-js", "Scheduler.Simple")
     @js.native
-    def Simple: Instantiable0[typings.rotJs.simpleMod.default[js.Object]] = js.native
-    inline def Simple_=(x: Instantiable0[typings.rotJs.simpleMod.default[js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Simple")(x.asInstanceOf[js.Any])
+    def Simple: Instantiable0[typings.rotJs.libSchedulerSimpleMod.default[js.Object]] = js.native
+    inline def Simple_=(x: Instantiable0[typings.rotJs.libSchedulerSimpleMod.default[js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Simple")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js", "Scheduler.Speed")
     @js.native
     open class Speed[T /* <: SpeedActor */] ()
-      extends typings.rotJs.speedMod.default[T]
+      extends typings.rotJs.libSchedulerSpeedMod.default[T]
     @JSImport("rot-js", "Scheduler.Speed")
     @js.native
-    def Speed: Instantiable0[typings.rotJs.speedMod.default[SpeedActor]] = js.native
-    inline def Speed_=(x: Instantiable0[typings.rotJs.speedMod.default[SpeedActor]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Speed")(x.asInstanceOf[js.Any])
+    def Speed: Instantiable0[typings.rotJs.libSchedulerSpeedMod.default[SpeedActor]] = js.native
+    inline def Speed_=(x: Instantiable0[typings.rotJs.libSchedulerSpeedMod.default[SpeedActor]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Speed")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rot-js", "StringGenerator")
   @js.native
   open class StringGenerator protected ()
-    extends typings.rotJs.stringgeneratorMod.default {
+    extends typings.rotJs.libStringgeneratorMod.default {
     def this(options: PartialOptionsOrder) = this()
   }
   

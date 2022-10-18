@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Allow HTTP header on an HTTP response. */
-@JSGlobal("Windows.Web.Http.Headers.HttpMethodHeaderValueCollection")
+/* note: abstract class */ @JSGlobal("Windows.Web.Http.Headers.HttpMethodHeaderValueCollection")
 @js.native
-abstract class HttpMethodHeaderValueCollection ()
+open class HttpMethodHeaderValueCollection ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpMethodHeaderValueCollection

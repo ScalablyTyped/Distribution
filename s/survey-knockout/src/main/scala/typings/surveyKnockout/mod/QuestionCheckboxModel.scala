@@ -15,16 +15,13 @@ open class QuestionCheckboxModel protected () extends QuestionCheckboxBase {
   
   /* protected */ def convertValueToObject(`val`: Any): Any = js.native
   
-  /*
-    * Set this property to true, to show the "Select All" item on the top. If end-user checks this item, then all items are checked.
-    */
   def hasSelectAll: Boolean = js.native
   def hasSelectAll_=(`val`: Boolean): Unit = js.native
   
   var invisibleOldValues: Any = js.native
   
   /*
-    * Returns true if all items are selected
+    * Returns `true` if all choice items, except "Other" and "None", are selected.
     */
   def isAllSelected: Boolean = js.native
   def isAllSelected_=(`val`: Boolean): Unit = js.native
@@ -34,46 +31,58 @@ open class QuestionCheckboxModel protected () extends QuestionCheckboxBase {
   def locSelectAllText: LocalizableString = js.native
   
   /*
-    * Set this property different to 0 to limit the number of selected choices in the checkbox.
+    * Sets a limit on the number of selected choices.
+    * 
+    * Default value: 0 (unlimited)
+    * 
+    * > NOTE: This property only limits the number of choice items that can be selected by users. You can select any number of choice items in code, regardless of the `maxSelectedChoices` value.
     */
   def maxSelectedChoices: Double = js.native
   def maxSelectedChoices_=(`val`: Double): Unit = js.native
   
   /*
-    * Select all items, except other and none.
+    * Selects all choice items, except "Other" and "None".
+    * 
+    * To clear selection, call the `clearValue()` method.
     */
   def selectAll(): Unit = js.native
   
   /*
-    * Returns the select all item. By using this property, you may change programmatically it's value and text.
+    * Returns the "Select All" choice item. Use this property to change the item's `value` or `text`.
     */
   def selectAllItem: ItemValue = js.native
   
   var selectAllItemValue: ItemValue = js.native
   
   /*
-    * Use this property to set the different text for Select All item.
+    * Gets or sets a caption for the "Select All" choice item.
     */
   def selectAllText: String = js.native
   def selectAllText_=(`val`: String): Unit = js.native
   
   /*
-    * Return the selected items in the checkbox. Returns empty array if the value is empty
+    * An array of selected choice items. Includes the "Other" and "None" choice items if they are selected, but not "Select All". Items are sorted in the order they were selected.
     */
+  def selectedChoices: Any = js.native
+  
   def selectedItems: Any = js.native
   
   /* protected */ def setDefaultValueWithOthers(): Unit = js.native
   
+  /*
+    * Enable this property to display a "Select All" item. When users select it, all other choice items, except "Other" and "None", also become selected.
+    */
+  def showSelectAllItem: Boolean = js.native
+  def showSelectAllItem_=(`val`: Boolean): Unit = js.native
+  
   /* protected */ def supportSelectAll(): Boolean = js.native
   
-  /*
-    * It will select all items, except other and none. If all items have been already selected then it will clear the value
-    */
   def toggleSelectAll(): Unit = js.native
   
   /*
-    * Set this property if you want to store the checkbox value as array of objects instead of array of values
-    * For example: if "valuePropertyName" equals car, then instead of having ["Ford", "Tesla"], you will have [{car: "Ford"}, {car: "Tesla"}]
+    * Specifies a property name used to store selected values.
+    * 
+    * Set this property if you want to store selected values in an array of objects instead of an array of primitive values. For example, if you set `valuePropertyName` to `"car"`, the `value` property will contain an array of objects `[{ car: "Ford" }, { car: "Tesla" }]`, not an array of string values `[ "Ford", "Tesla" ]`.
     */
   def valuePropertyName: String = js.native
   def valuePropertyName_=(`val`: String): Unit = js.native

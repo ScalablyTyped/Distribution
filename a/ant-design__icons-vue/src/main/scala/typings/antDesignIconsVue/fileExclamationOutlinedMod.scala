@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsFileExclamationOutlinedMod.FileExclamationOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileExclamationOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/FileExclamationOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/FileExclamationOutlined", JSImport.Default)
   @js.native
   val default: FileExclamationOutlinedIconType = js.native
-  
-  @js.native
-  trait FileExclamationOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_FileExclamationOutlinedIconType: String = js.native
-  }
   
   type _To = FileExclamationOutlinedIconType
   

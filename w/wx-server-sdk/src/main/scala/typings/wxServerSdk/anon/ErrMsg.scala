@@ -11,13 +11,11 @@ trait ErrMsg extends StObject {
   var fileID: String
   
   var status: Double
-  
-  var tempFileURL: String
 }
 object ErrMsg {
   
-  inline def apply(errMsg: String, fileID: String, status: Double, tempFileURL: String): ErrMsg = {
-    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], fileID = fileID.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], tempFileURL = tempFileURL.asInstanceOf[js.Any])
+  inline def apply(errMsg: String, fileID: String, status: Double): ErrMsg = {
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], fileID = fileID.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrMsg]
   }
   
@@ -28,7 +26,5 @@ object ErrMsg {
     inline def setFileID(value: String): Self = StObject.set(x, "fileID", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
-    
-    inline def setTempFileURL(value: String): Self = StObject.set(x, "tempFileURL", value.asInstanceOf[js.Any])
   }
 }

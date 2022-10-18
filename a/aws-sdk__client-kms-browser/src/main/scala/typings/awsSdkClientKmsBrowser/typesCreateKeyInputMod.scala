@@ -3,9 +3,9 @@ package typings.awsSdkClientKmsBrowser
 import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.AWS_KMS
 import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.ENCRYPT_DECRYPT
 import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.EXTERNAL
-import typings.awsSdkClientKmsBrowser.inputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientKmsBrowser.typesInputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientKmsBrowser.typesTagMod.Tag
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

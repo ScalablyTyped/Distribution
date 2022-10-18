@@ -11,11 +11,11 @@ object libHtmlMod {
   val ^ : js.Any = js.native
   
   inline def frontmatterHtml(): HtmlExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("frontmatterHtml")().asInstanceOf[HtmlExtension]
-  inline def frontmatterHtml(options: typings.micromarkExtensionFrontmatter.micromarkExtensionFrontmatterMod.Options): HtmlExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("frontmatterHtml")(options.asInstanceOf[js.Any]).asInstanceOf[HtmlExtension]
+  inline def frontmatterHtml(options: typings.micromarkExtensionFrontmatter.devMattersMod.Options): HtmlExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("frontmatterHtml")(options.asInstanceOf[js.Any]).asInstanceOf[HtmlExtension]
   
   type Handle = typings.micromarkUtilTypes.mod.Handle
   
   type HtmlExtension = typings.micromarkUtilTypes.mod.HtmlExtension
   
-  type Options = typings.micromarkExtensionFrontmatter.micromarkExtensionFrontmatterMod.Options
+  type Options = typings.micromarkExtensionFrontmatter.devMattersMod.Options
 }

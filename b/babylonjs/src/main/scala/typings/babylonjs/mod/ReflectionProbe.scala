@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ReflectionProbe")
 @js.native
 open class ReflectionProbe protected ()
-  extends typings.babylonjs.legacyMod.ReflectionProbe {
+  extends typings.babylonjs.legacyLegacyMod.ReflectionProbe {
   /**
     * Creates a new reflection probe
     * @param name defines the name of the probe
@@ -98,5 +98,5 @@ object ReflectionProbe {
     * @param rootUrl Define the root url of the parsing sequence in the case of relative dependencies
     * @returns The parsed reflection probe if successful
     */
-  inline def Parse(parsedReflectionProbe: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.reflectionProbeMod.ReflectionProbe] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedReflectionProbe.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.reflectionProbeMod.ReflectionProbe]]
+  inline def Parse(parsedReflectionProbe: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.probesReflectionProbeMod.ReflectionProbe] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedReflectionProbe.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.probesReflectionProbeMod.ReflectionProbe]]
 }

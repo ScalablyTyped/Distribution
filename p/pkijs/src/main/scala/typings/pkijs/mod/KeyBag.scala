@@ -1,5 +1,6 @@
 package typings.pkijs.mod
 
+import typings.asn1js.mod.OctetString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +14,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructor for Attribute class
   * @param parameters
   */
-open class KeyBag () extends PrivateKeyInfo {
+open class KeyBag ()
+  extends StObject
+     with PrivateKeyInfo {
   def this(parameters: js.Object) = this()
+  
+  /* CompleteClass */
+  var privateKey: OctetString = js.native
+  
+  /* CompleteClass */
+  var privateKeyAlgorithm: AlgorithmIdentifier = js.native
+  
+  /* CompleteClass */
+  var version: Double = js.native
 }

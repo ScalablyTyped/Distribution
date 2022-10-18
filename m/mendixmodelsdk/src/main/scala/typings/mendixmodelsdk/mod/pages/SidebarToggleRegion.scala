@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.SidebarToggleRegion")
 @js.native
 open class SidebarToggleRegion protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.SidebarToggleRegion {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.SidebarToggleRegion {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object SidebarToggleRegion {
@@ -20,12 +20,12 @@ object SidebarToggleRegion {
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SidebarToggleRegion.Left")
   @js.native
-  def Left: typings.mendixmodelsdk.pagesMod.pages.SidebarToggleRegion = js.native
-  inline def Left_=(x: typings.mendixmodelsdk.pagesMod.pages.SidebarToggleRegion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Left")(x.asInstanceOf[js.Any])
+  def Left: typings.mendixmodelsdk.srcGenPagesMod.pages.SidebarToggleRegion = js.native
+  inline def Left_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.SidebarToggleRegion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Left")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SidebarToggleRegion.Right")
   @js.native
-  def Right: typings.mendixmodelsdk.pagesMod.pages.SidebarToggleRegion = js.native
-  inline def Right_=(x: typings.mendixmodelsdk.pagesMod.pages.SidebarToggleRegion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Right")(x.asInstanceOf[js.Any])
+  def Right: typings.mendixmodelsdk.srcGenPagesMod.pages.SidebarToggleRegion = js.native
+  inline def Right_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.SidebarToggleRegion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Right")(x.asInstanceOf[js.Any])
 }

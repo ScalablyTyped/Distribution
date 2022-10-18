@@ -1,6 +1,6 @@
 package typings.uirouterCore.mod
 
-import typings.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
+import typings.uirouterCore.libParamsInterfaceMod.ParamTypeDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@uirouter/core", "ParamTypes")
 @js.native
 open class ParamTypes ()
-  extends typings.uirouterCore.paramsMod.ParamTypes
+  extends typings.uirouterCore.libParamsMod.ParamTypes
 /* static members */
 object ParamTypes {
   

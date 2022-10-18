@@ -1,6 +1,6 @@
 package typings.awsSdk.mod
 
-import typings.awsSdk.elasticbeanstalkMod.ClientConfiguration
+import typings.awsSdk.clientsElasticbeanstalkMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a service object. This object has one method for each API operation.
   */
 open class ElasticBeanstalk ()
-  extends typings.awsSdk.allMod.ElasticBeanstalk {
+  extends typings.awsSdk.clientsAllMod.ElasticBeanstalk {
   def this(options: ClientConfiguration) = this()
 }

@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** When supported, allows an app to enable High Dynamic Range (HDR) video recording on the capture device. */
-@JSGlobal("Windows.Media.Devices.HdrVideoControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.HdrVideoControl")
 @js.native
-abstract class HdrVideoControl ()
+open class HdrVideoControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.HdrVideoControl {
   

@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents data about the chat message transport. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageTransportConfiguration")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageTransportConfiguration")
 @js.native
-abstract class ChatMessageTransportConfiguration ()
+open class ChatMessageTransportConfiguration ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageTransportConfiguration {
   

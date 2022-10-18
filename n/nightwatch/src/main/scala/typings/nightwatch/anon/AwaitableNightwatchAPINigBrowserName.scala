@@ -630,13 +630,13 @@ trait AwaitableNightwatchAPINigBrowserName extends StObject {
   def elementIdSize(id: String): this.type = js.native
   def elementIdSize(
     id: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Width], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[HeightWidth], Unit]
   ): this.type = js.native
   @JSName("elementIdSize")
   var elementIdSize_Original: js.Function2[
     /* id */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Width], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[HeightWidth], Unit]
     ], 
     this.type
   ] = js.native
@@ -3872,14 +3872,14 @@ trait AwaitableNightwatchAPINigBrowserName extends StObject {
     this.type
   ] = js.native
   
-  def windowRect(options: Height): this.type = js.native
+  def windowRect(options: Width): this.type = js.native
   def windowRect(
-    options: Height,
+    options: Width,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
   @JSName("windowRect")
   var windowRect_Original: js.Function2[
-    /* options */ Height, 
+    /* options */ Width, 
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
     ], 

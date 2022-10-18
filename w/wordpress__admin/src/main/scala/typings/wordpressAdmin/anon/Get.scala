@@ -2,7 +2,7 @@ package typings.wordpressAdmin.anon
 
 import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
-import typings.wordpressAdmin.mediaModelsMod.Query
+import typings.wordpressAdmin.componentsMediaModelsMod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ trait Get extends StObject {
   
   def hasMore(): Boolean
   
-  def initialize(models: js.Array[typings.wordpressAdmin.mediaModelsMod.Attachment], options: Any): Unit
+  def initialize(models: js.Array[typings.wordpressAdmin.componentsMediaModelsMod.Attachment], options: Any): Unit
   
   def more(options: Any): js.Promise[Any]
   
@@ -24,7 +24,7 @@ object Get {
   inline def apply(
     get: (Any, Any) => Query,
     hasMore: () => Boolean,
-    initialize: (js.Array[typings.wordpressAdmin.mediaModelsMod.Attachment], Any) => Unit,
+    initialize: (js.Array[typings.wordpressAdmin.componentsMediaModelsMod.Attachment], Any) => Unit,
     more: Any => js.Promise[Any],
     sync: (String, Model[Any, ModelSetOptions, Any], Any) => Any
   ): Get = {
@@ -38,7 +38,7 @@ object Get {
     
     inline def setHasMore(value: () => Boolean): Self = StObject.set(x, "hasMore", js.Any.fromFunction0(value))
     
-    inline def setInitialize(value: (js.Array[typings.wordpressAdmin.mediaModelsMod.Attachment], Any) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
+    inline def setInitialize(value: (js.Array[typings.wordpressAdmin.componentsMediaModelsMod.Attachment], Any) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
     
     inline def setMore(value: Any => js.Promise[Any]): Self = StObject.set(x, "more", js.Any.fromFunction1(value))
     

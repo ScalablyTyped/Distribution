@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "Camera")
 @js.native
 open class Camera protected ()
-  extends typings.babylonjs.babylonjsMod.Camera {
+  extends typings.babylonjs.camerasIndexMod.Camera {
   /**
     * Instantiates a new camera object.
     * This should not be used directly but through the inherited cameras: ArcRotate, Free...
@@ -17,21 +17,21 @@ open class Camera protected ()
     * @param scene Defines the scene the camera belongs too
     * @param setActiveOnSceneIfNoneActive Defines if the camera should be set as active after creation if no other camera have been defined in the scene
     */
-  def this(name: String, position: typings.babylonjs.mathVectorMod.Vector3) = this()
+  def this(name: String, position: typings.babylonjs.mathsMathDotvectorMod.Vector3) = this()
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: Unit,
     setActiveOnSceneIfNoneActive: Boolean
   ) = this()
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene,
     setActiveOnSceneIfNoneActive: Boolean
   ) = this()
@@ -115,7 +115,7 @@ object Camera {
     * @param scene The scene to instantiate the camera in
     * @returns the newly constructed camera
     */
-  inline def Parse(parsedCamera: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.cameraMod.Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cameraMod.Camera]
+  inline def Parse(parsedCamera: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.camerasCameraMod.Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.camerasCameraMod.Camera]
   
   /**
     * Custom rig mode allowing rig cameras to be populated manually with any number of cameras
@@ -185,5 +185,5 @@ object Camera {
   /**
     * @internal
     */
-  inline def _CreateDefaultParsedCamera(name: String, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.cameraMod.Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateDefaultParsedCamera")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cameraMod.Camera]
+  inline def _CreateDefaultParsedCamera(name: String, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.camerasCameraMod.Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateDefaultParsedCamera")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.camerasCameraMod.Camera]
 }

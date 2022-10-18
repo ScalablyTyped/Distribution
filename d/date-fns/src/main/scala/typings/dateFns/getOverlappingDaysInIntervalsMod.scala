@@ -1,21 +1,17 @@
 package typings.dateFns
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getOverlappingDaysInIntervalsMod {
   
-  object default extends Shortcut {
+  object default {
     
-    @JSImport("date-fns/esm/fp/getOverlappingDaysInIntervals", JSImport.Default)
+    inline def apply(intervalLeft: typings.dateFns.mod.Interval, intervalRight: typings.dateFns.mod.Interval): Double = (^.asInstanceOf[js.Dynamic].apply(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @JSImport("date-fns/getOverlappingDaysInIntervals", JSImport.Default)
     @js.native
-    val ^ : CurriedFn2[Interval, Interval, Double] = js.native
-    
-    type _To = CurriedFn2[Interval, Interval, Double]
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn2[Interval, Interval, Double] = ^
+    val ^ : js.Any = js.native
   }
 }

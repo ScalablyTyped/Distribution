@@ -29,7 +29,7 @@ trait Pipe extends StObject {
     * Angular pipes marked as `standalone` do not need to be declared in an NgModule. Such
     * pipes don't depend on any "intermediate context" of an NgModule (ex. configured providers).
     *
-    * More information about standalone components, directives and pipes can be found in [this
+    * More information about standalone components, directives, and pipes can be found in [this
     * guide](guide/standalone-components).
     */
   var standalone: js.UndefOr[Boolean] = js.undefined

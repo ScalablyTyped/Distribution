@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "EventConstants")
 @js.native
 open class EventConstants ()
-  extends typings.babylonjs.legacyMod.EventConstants
+  extends typings.babylonjs.legacyLegacyMod.EventConstants
 /* static members */
 object EventConstants {
   

@@ -6,6 +6,7 @@ import typings.node.anon.TypeofURL
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.nodeBooleans.`false`
 import typings.node.nodeBooleans.`true`
+import typings.node.nodeColonbufferMod.Blob
 import typings.node.querystringMod.ParsedUrlQuery
 import typings.node.querystringMod.ParsedUrlQueryInput
 import typings.std.Iterable
@@ -570,7 +571,7 @@ object urlMod {
       * @experimental
       */
     /* static member */
-    inline def createObjectURL(blob: typings.node.nodeBufferMod.Blob): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectURL")(blob.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def createObjectURL(blob: Blob): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectURL")(blob.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Removes the stored `Blob` identified by the given ID. Attempting to revoke a
@@ -795,7 +796,7 @@ object urlMod {
       */
     @JSGlobal("URL")
     @js.native
-    def URL: TypeofURL & (Instantiable2[/* input */ String, /* base */ js.UndefOr[String | URL_], URL_]) = js.native
+    def URL: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   URL :infer T} ? T : {readonly createObjectURL (blob : node.node:buffer.Blob): string, readonly revokeObjectURL (objectUrl : string): void} & new (input : string, base : string | node.url.URL | undefined): node.url.URL */ js.Any = js.native
     
     /**
       * `URLSearchParams` class is a global reference for `require('url').URLSearchParams`
@@ -804,22 +805,14 @@ object urlMod {
       */
     @JSGlobal("URLSearchParams")
     @js.native
-    def URLSearchParams: Instantiable1[
-        /* init */ js.UndefOr[
-          typings.node.urlMod.URLSearchParams | String | (Record[String, String | js.Array[String]]) | (js.Iterable[js.Tuple2[String, String]]) | (js.Array[js.Tuple2[String, String]])
-        ], 
-        typings.node.urlMod.URLSearchParams
-      ] = js.native
+    def URLSearchParams: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   URLSearchParams :infer T} ? T : new (init : node.url.URLSearchParams | string | std.Record<string, string | std.ReadonlyArray<string>> | std.Iterable<[string, string]> | std.ReadonlyArray<[string, string]> | undefined): node.url.URLSearchParams */ js.Any = js.native
     inline def URLSearchParams_=(
-      x: Instantiable1[
-          /* init */ js.UndefOr[
-            URLSearchParams | String | (Record[String, String | js.Array[String]]) | (js.Iterable[js.Tuple2[String, String]]) | (js.Array[js.Tuple2[String, String]])
-          ], 
-          URLSearchParams
-        ]
+      x: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   URLSearchParams :infer T} ? T : new (init : node.url.URLSearchParams | string | std.Record<string, string | std.ReadonlyArray<string>> | std.Iterable<[string, string]> | std.ReadonlyArray<[string, string]> | undefined): node.url.URLSearchParams */ js.Any
     ): Unit = js.Dynamic.global.updateDynamic("URLSearchParams")(x.asInstanceOf[js.Any])
     
-    inline def URL_=(x: TypeofURL & (Instantiable2[/* input */ String, /* base */ js.UndefOr[String | URL_], URL_])): Unit = js.Dynamic.global.updateDynamic("URL")(x.asInstanceOf[js.Any])
+    inline def URL_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   URL :infer T} ? T : {readonly createObjectURL (blob : node.node:buffer.Blob): string, readonly revokeObjectURL (objectUrl : string): void} & new (input : string, base : string | node.url.URL | undefined): node.url.URL */ js.Any
+    ): Unit = js.Dynamic.global.updateDynamic("URL")(x.asInstanceOf[js.Any])
     
     trait Global extends StObject {
       

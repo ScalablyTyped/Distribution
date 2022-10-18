@@ -9,8 +9,6 @@ trait Checked extends StObject {
   
   var checked: js.UndefOr[Boolean] = js.undefined
   
-  var defaultChecked: js.UndefOr[Boolean] = js.undefined
-  
   var disabled: js.UndefOr[Boolean] = js.undefined
   
   var inputId: js.UndefOr[String] = js.undefined
@@ -35,10 +33,6 @@ object Checked {
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
-    
-    inline def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
-    
-    inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

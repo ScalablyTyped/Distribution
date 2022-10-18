@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.utilsMod.ColorRepresentation
+import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [intensity=1]
   */
 open class AmbientLight ()
-  extends typings.three.threeMod.AmbientLight {
+  extends typings.three.srcThreeMod.AmbientLight {
   def this(color: ColorRepresentation) = this()
   def this(color: Unit, intensity: Double) = this()
   def this(color: ColorRepresentation, intensity: Double) = this()

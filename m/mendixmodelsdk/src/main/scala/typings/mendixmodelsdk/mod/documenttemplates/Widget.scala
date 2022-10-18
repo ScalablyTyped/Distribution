@@ -1,11 +1,11 @@
 package typings.mendixmodelsdk.mod.documenttemplates
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.documenttemplatesMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenDocumenttemplatesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Interfaces and instance classes for types from the Mendix sub meta model `DocumentTemplates`.
   */
-@JSImport("mendixmodelsdk", "documenttemplates.Widget")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "documenttemplates.Widget")
 @js.native
-abstract class Widget protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.Widget {
+open class Widget protected ()
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.documenttemplates.Widget {
   def this(
     model: AbstractModel,
     structureTypeName: String,

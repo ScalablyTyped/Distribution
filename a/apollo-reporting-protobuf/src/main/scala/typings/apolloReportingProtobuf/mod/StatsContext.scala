@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apolloProtobufjs.mod.IConversionOptions
 import typings.apolloProtobufjs.mod.Reader
 import typings.apolloProtobufjs.mod.Writer
-import typings.apolloReportingProtobuf.protobufMod.IStatsContext
+import typings.apolloReportingProtobuf.generatedProtobufMod.IStatsContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [properties] Properties to set
   */
 open class StatsContext ()
-  extends typings.apolloReportingProtobuf.protobufMod.StatsContext {
+  extends typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext {
   def this(properties: IStatsContext) = this()
 }
 /* static members */
@@ -31,11 +31,11 @@ object StatsContext {
     * @param [properties] Properties to set
     * @returns StatsContext instance
     */
-  inline def create(): typings.apolloReportingProtobuf.protobufMod.StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloReportingProtobuf.protobufMod.StatsContext]
-  inline def create(properties: IStatsContext): typings.apolloReportingProtobuf.protobufMod.StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.StatsContext]
+  inline def create(): typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext]
+  inline def create(properties: IStatsContext): typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext]
   
-  inline def decode(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.protobufMod.StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.StatsContext]
-  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.apolloReportingProtobuf.protobufMod.StatsContext = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.StatsContext]
+  inline def decode(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext]
   /**
     * Decodes a StatsContext message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,10 +44,10 @@ object StatsContext {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  inline def decode(reader: Reader): typings.apolloReportingProtobuf.protobufMod.StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.StatsContext]
-  inline def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.protobufMod.StatsContext = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.StatsContext]
+  inline def decode(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext]
+  inline def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext]
   
-  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.protobufMod.StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.StatsContext]
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext]
   /**
     * Decodes a StatsContext message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -55,7 +55,7 @@ object StatsContext {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  inline def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.protobufMod.StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.StatsContext]
+  inline def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext]
   
   /**
     * Encodes the specified StatsContext message. Does not implicitly {@link StatsContext.verify|verify} messages.
@@ -81,8 +81,11 @@ object StatsContext {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: typings.apolloReportingProtobuf.protobufMod.StatsContext): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
-  inline def toObject(message: typings.apolloReportingProtobuf.protobufMod.StatsContext, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(
+    message: typings.apolloReportingProtobuf.generatedProtobufMod.StatsContext,
+    options: IConversionOptions
+  ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a StatsContext message.

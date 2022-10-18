@@ -75,6 +75,8 @@ trait CellComponent extends StObject {
   /** up - move to the same cell in the row above. */
   def navigateUp(): Unit = js.native
   
+  def popup(contents: String, position: PopupPosition): Unit = js.native
+  
   def restoreInitialValue(): Any = js.native
   
   /** The restoreOldValue reverts the value of the cell back to its previous value, without triggering any of the cell edit callbacks. */

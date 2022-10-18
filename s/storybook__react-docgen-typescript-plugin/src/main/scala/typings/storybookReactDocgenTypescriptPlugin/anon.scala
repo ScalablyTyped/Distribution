@@ -1,6 +1,6 @@
 package typings.storybookReactDocgenTypescriptPlugin
 
-import typings.reactDocgenTypescript.parserMod.ParserOptions
+import typings.reactDocgenTypescript.libParserMod.ParserOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

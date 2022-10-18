@@ -1,9 +1,9 @@
 package typings.reactMdTable
 
-import typings.reactMdTable.configMod.TableCellHorizontalAlignment
-import typings.reactMdTable.configMod.TableCellVerticalAlignment
-import typings.reactMdTable.tableCellContentMod.SortOrder
-import typings.reactMdTable.tableCheckboxMod.WantedCheckboxProps
+import typings.reactMdTable.typesConfigMod.TableCellHorizontalAlignment
+import typings.reactMdTable.typesConfigMod.TableCellVerticalAlignment
+import typings.reactMdTable.typesTableCellContentMod.SortOrder
+import typings.reactMdTable.typesTableCheckboxMod.WantedCheckboxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

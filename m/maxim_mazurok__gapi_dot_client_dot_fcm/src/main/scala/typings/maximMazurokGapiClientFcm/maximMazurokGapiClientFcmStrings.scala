@@ -7,22 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientFcmStrings {
   
   @js.native
-  sealed trait AndroidConfig extends StObject
-  inline def AndroidConfig: AndroidConfig = "AndroidConfig".asInstanceOf[AndroidConfig]
-  
-  @js.native
-  sealed trait ApnsConfig extends StObject
-  inline def ApnsConfig: ApnsConfig = "ApnsConfig".asInstanceOf[ApnsConfig]
-  
-  @js.native
-  sealed trait Message extends StObject
-  inline def Message: Message = "Message".asInstanceOf[Message]
-  
-  @js.native
-  sealed trait WebpushConfig extends StObject
-  inline def WebpushConfig: WebpushConfig = "WebpushConfig".asInstanceOf[WebpushConfig]
-  
-  @js.native
   sealed trait fcm extends StObject
   inline def fcm: fcm = "fcm".asInstanceOf[fcm]
   

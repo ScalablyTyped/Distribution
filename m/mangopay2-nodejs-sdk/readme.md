@@ -1,7 +1,7 @@
 
 # Scala.js typings for mangopay2-nodejs-sdk
 
-Typings are for version 1.31.0
+Typings are for version 1.31.1
 
 ## Library description:
 Mangopay Node.js SDK

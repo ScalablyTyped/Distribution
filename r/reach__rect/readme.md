@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__rect
 
-Typings are for version 0.17.0
+Typings are for version 0.18.0
 
 ## Library description:
 Measure React elements position in the DOM

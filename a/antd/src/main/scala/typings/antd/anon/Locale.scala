@@ -3,7 +3,7 @@ package typings.antd.anon
 import typings.antd.antdStrings.default
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.small
-import typings.antd.generatePickerMod.PickerLocale
+import typings.antd.libDatePickerGeneratePickerMod.PickerLocale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

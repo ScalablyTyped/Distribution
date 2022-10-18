@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler", "NodeWithI18n")
+/* note: abstract class */ @JSImport("@angular/compiler", "NodeWithI18n")
 @js.native
-abstract class NodeWithI18n protected ()
+open class NodeWithI18n protected ()
   extends StObject
      with BaseNode {
   def this(sourceSpan: ParseSourceSpan) = this()

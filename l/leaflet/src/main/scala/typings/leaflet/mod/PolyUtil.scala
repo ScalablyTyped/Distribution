@@ -12,4 +12,6 @@ object PolyUtil {
   
   inline def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("clipPolygon")(points.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
   inline def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression, round: Boolean): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("clipPolygon")(points.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], round.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
+  
+  inline def polygonCenter(latlngs: js.Array[LatLngExpression], crs: CRS): LatLng_ = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonCenter")(latlngs.asInstanceOf[js.Any], crs.asInstanceOf[js.Any])).asInstanceOf[LatLng_]
 }

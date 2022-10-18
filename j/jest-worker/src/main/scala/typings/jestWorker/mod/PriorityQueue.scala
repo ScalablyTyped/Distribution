@@ -11,7 +11,7 @@ open class PriorityQueue protected ()
      with TaskQueue {
   def this(_computePriority: ComputeTaskPriorityCallback) = this()
   
-  /* private */ var _computePriority: Any = js.native
+  /* private */ val _computePriority: Any = js.native
   
   def _enqueue(task: QueueChildMessage, queue: MinHeap[QueueItem]): Unit = js.native
   
@@ -19,5 +19,5 @@ open class PriorityQueue protected ()
   
   /* private */ var _queue: Any = js.native
   
-  /* private */ var _sharedQueue: Any = js.native
+  /* private */ val _sharedQueue: Any = js.native
 }

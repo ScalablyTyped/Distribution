@@ -9,8 +9,6 @@ trait RenderedChunk
   extends StObject
      with PreRenderedChunk {
   
-  var code: js.UndefOr[String] = js.undefined
-  
   var dynamicImports: js.Array[String]
   
   var fileName: String
@@ -21,7 +19,7 @@ trait RenderedChunk
   
   var imports: js.Array[String]
   
-  var map: js.UndefOr[SourceMap] = js.undefined
+  var modules: StringDictionary[RenderedModule]
   
   var referencedFiles: js.Array[String]
 }
@@ -37,20 +35,17 @@ object RenderedChunk {
     isDynamicEntry: Boolean,
     isEntry: Boolean,
     isImplicitEntry: Boolean,
+    moduleIds: js.Array[String],
     modules: StringDictionary[RenderedModule],
     name: String,
     referencedFiles: js.Array[String]
   ): RenderedChunk = {
-    val __obj = js.Dynamic.literal(dynamicImports = dynamicImports.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], implicitlyLoadedBefore = implicitlyLoadedBefore.asInstanceOf[js.Any], importedBindings = importedBindings.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], isDynamicEntry = isDynamicEntry.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isImplicitEntry = isImplicitEntry.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], referencedFiles = referencedFiles.asInstanceOf[js.Any], facadeModuleId = null)
+    val __obj = js.Dynamic.literal(dynamicImports = dynamicImports.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], implicitlyLoadedBefore = implicitlyLoadedBefore.asInstanceOf[js.Any], importedBindings = importedBindings.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], isDynamicEntry = isDynamicEntry.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isImplicitEntry = isImplicitEntry.asInstanceOf[js.Any], moduleIds = moduleIds.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], referencedFiles = referencedFiles.asInstanceOf[js.Any], facadeModuleId = null)
     __obj.updateDynamic("type")("chunk")
     __obj.asInstanceOf[RenderedChunk]
   }
   
   extension [Self <: RenderedChunk](x: Self) {
-    
-    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-    
-    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     inline def setDynamicImports(value: js.Array[String]): Self = StObject.set(x, "dynamicImports", value.asInstanceOf[js.Any])
     
@@ -68,9 +63,7 @@ object RenderedChunk {
     
     inline def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value*))
     
-    inline def setMap(value: SourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
-    
-    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setModules(value: StringDictionary[RenderedModule]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
     inline def setReferencedFiles(value: js.Array[String]): Self = StObject.set(x, "referencedFiles", value.asInstanceOf[js.Any])
     

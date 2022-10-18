@@ -5,6 +5,7 @@ import typings.lgtv2.lgtv2Strings.connect
 import typings.lgtv2.lgtv2Strings.connecting
 import typings.lgtv2.lgtv2Strings.error
 import typings.lgtv2.lgtv2Strings.prompt
+import typings.node.NodeJS.ErrnoException
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,12 +36,7 @@ object mod {
     var saveKey: js.UndefOr[
         js.Function2[
           /* key */ String, 
-          /* callback */ js.Function1[
-            /* error */ js.UndefOr[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
-            ], 
-            Unit
-          ], 
+          /* callback */ js.Function1[/* error */ js.UndefOr[ErrnoException | Null], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -71,12 +67,7 @@ object mod {
       inline def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
       
       inline def setSaveKey(
-        value: (/* key */ String, /* callback */ js.Function1[
-              /* error */ js.UndefOr[
-                (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
-              ], 
-              Unit
-            ]) => Unit
+        value: (/* key */ String, /* callback */ js.Function1[/* error */ js.UndefOr[ErrnoException | Null], Unit]) => Unit
       ): Self = StObject.set(x, "saveKey", js.Any.fromFunction2(value))
       
       inline def setSaveKeyUndefined: Self = StObject.set(x, "saveKey", js.undefined)

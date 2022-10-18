@@ -1,6 +1,7 @@
 package typings.snapShotCore
 
 import typings.snapShotCore.mod.CompareFunction
+import typings.snapShotCore.mod.Opts
 import typings.snapShotCore.mod.Result
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,7 +36,7 @@ object anon {
       */
     var file: js.UndefOr[String] = js.undefined
     
-    var opts: js.UndefOr[typings.snapShotCore.mod.Opts] = js.undefined
+    var opts: js.UndefOr[Opts] = js.undefined
     
     /**
       * A function that throws an error when the given value does not match the expected value.
@@ -88,7 +89,7 @@ object anon {
       
       inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      inline def setOpts(value: typings.snapShotCore.mod.Opts): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: Opts): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
       inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
       
@@ -147,18 +148,14 @@ object anon {
     
     var exactSpecName: js.UndefOr[String] = js.undefined
     
-    var fileParameter: String
-    
     var index: js.UndefOr[Double] = js.undefined
     
     var specName: js.UndefOr[String] = js.undefined
-    
-    var value: js.UndefOr[Any] = js.undefined
   }
   object ExactSpecName {
     
-    inline def apply(fileParameter: String): ExactSpecName = {
-      val __obj = js.Dynamic.literal(fileParameter = fileParameter.asInstanceOf[js.Any])
+    inline def apply(): ExactSpecName = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExactSpecName]
     }
     
@@ -168,8 +165,6 @@ object anon {
       
       inline def setExactSpecNameUndefined: Self = StObject.set(x, "exactSpecName", js.undefined)
       
-      inline def setFileParameter(value: String): Self = StObject.set(x, "fileParameter", value.asInstanceOf[js.Any])
-      
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
@@ -177,10 +172,6 @@ object anon {
       inline def setSpecName(value: String): Self = StObject.set(x, "specName", value.asInstanceOf[js.Any])
       
       inline def setSpecNameUndefined: Self = StObject.set(x, "specName", js.undefined)
-      
-      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -254,26 +245,32 @@ object anon {
     }
   }
   
-  trait Index extends StObject {
+  trait FileParameter extends StObject {
     
     var exactSpecName: js.UndefOr[String] = js.undefined
+    
+    var fileParameter: String
     
     var index: js.UndefOr[Double] = js.undefined
     
     var specName: js.UndefOr[String] = js.undefined
-  }
-  object Index {
     
-    inline def apply(): Index = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Index]
+    var value: js.UndefOr[Any] = js.undefined
+  }
+  object FileParameter {
+    
+    inline def apply(fileParameter: String): FileParameter = {
+      val __obj = js.Dynamic.literal(fileParameter = fileParameter.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FileParameter]
     }
     
-    extension [Self <: Index](x: Self) {
+    extension [Self <: FileParameter](x: Self) {
       
       inline def setExactSpecName(value: String): Self = StObject.set(x, "exactSpecName", value.asInstanceOf[js.Any])
       
       inline def setExactSpecNameUndefined: Self = StObject.set(x, "exactSpecName", js.undefined)
+      
+      inline def setFileParameter(value: String): Self = StObject.set(x, "fileParameter", value.asInstanceOf[js.Any])
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -282,6 +279,69 @@ object anon {
       inline def setSpecName(value: String): Self = StObject.set(x, "specName", value.asInstanceOf[js.Any])
       
       inline def setSpecNameUndefined: Self = StObject.set(x, "specName", js.undefined)
+      
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait Index extends StObject {
+    
+    var comment: js.UndefOr[String] = js.undefined
+    
+    var exactSpecName: js.UndefOr[String] = js.undefined
+    
+    var ext: js.UndefOr[/* template literal string: .${string} */ String] = js.undefined
+    
+    var file: String
+    
+    var index: js.UndefOr[Double] = js.undefined
+    
+    var opts: js.UndefOr[Opts] = js.undefined
+    
+    var specName: js.UndefOr[String] = js.undefined
+    
+    var value: js.Object | Null
+  }
+  object Index {
+    
+    inline def apply(file: String): Index = {
+      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], value = null)
+      __obj.asInstanceOf[Index]
+    }
+    
+    extension [Self <: Index](x: Self) {
+      
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      
+      inline def setExactSpecName(value: String): Self = StObject.set(x, "exactSpecName", value.asInstanceOf[js.Any])
+      
+      inline def setExactSpecNameUndefined: Self = StObject.set(x, "exactSpecName", js.undefined)
+      
+      inline def setExt(value: /* template literal string: .${string} */ String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      
+      inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+      
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      
+      inline def setOpts(value: Opts): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      
+      inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
+      
+      inline def setSpecName(value: String): Self = StObject.set(x, "specName", value.asInstanceOf[js.Any])
+      
+      inline def setSpecNameUndefined: Self = StObject.set(x, "specName", js.undefined)
+      
+      inline def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueNull: Self = StObject.set(x, "value", null)
     }
   }
   
@@ -309,65 +369,6 @@ object anon {
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setValue(value: U): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Opts extends StObject {
-    
-    var comment: js.UndefOr[String] = js.undefined
-    
-    var exactSpecName: js.UndefOr[String] = js.undefined
-    
-    var ext: js.UndefOr[/* template literal string: .${string} */ String] = js.undefined
-    
-    var file: String
-    
-    var index: js.UndefOr[Double] = js.undefined
-    
-    var opts: js.UndefOr[typings.snapShotCore.mod.Opts] = js.undefined
-    
-    var specName: js.UndefOr[String] = js.undefined
-    
-    var value: js.Object | Null
-  }
-  object Opts {
-    
-    inline def apply(file: String): Opts = {
-      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], value = null)
-      __obj.asInstanceOf[Opts]
-    }
-    
-    extension [Self <: Opts](x: Self) {
-      
-      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
-      
-      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
-      
-      inline def setExactSpecName(value: String): Self = StObject.set(x, "exactSpecName", value.asInstanceOf[js.Any])
-      
-      inline def setExactSpecNameUndefined: Self = StObject.set(x, "exactSpecName", js.undefined)
-      
-      inline def setExt(value: /* template literal string: .${string} */ String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
-      
-      inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
-      
-      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
-      
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
-      
-      inline def setOpts(value: typings.snapShotCore.mod.Opts): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
-      
-      inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
-      
-      inline def setSpecName(value: String): Self = StObject.set(x, "specName", value.asInstanceOf[js.Any])
-      
-      inline def setSpecNameUndefined: Self = StObject.set(x, "specName", js.undefined)
-      
-      inline def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueNull: Self = StObject.set(x, "value", null)
     }
   }
   

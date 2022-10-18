@@ -73,7 +73,7 @@ object mod {
     
     var comment: js.UndefOr[String] = js.undefined
     
-    var declaration: js.UndefOr[`0`] = js.undefined
+    var declaration: js.UndefOr[typings.xmlJs.anon.Attributes] = js.undefined
     
     var doctype: js.UndefOr[String] = js.undefined
     
@@ -108,7 +108,7 @@ object mod {
       
       inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      inline def setDeclaration(value: `0`): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+      inline def setDeclaration(value: typings.xmlJs.anon.Attributes): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       
       inline def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
       
@@ -150,7 +150,7 @@ object mod {
     
     var _comment: js.UndefOr[String] = js.undefined
     
-    var _declaration: js.UndefOr[typings.xmlJs.anon.Attributes] = js.undefined
+    var _declaration: js.UndefOr[`0`] = js.undefined
     
     var _doctype: js.UndefOr[String] = js.undefined
     
@@ -179,7 +179,7 @@ object mod {
       
       inline def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
       
-      inline def set_declaration(value: typings.xmlJs.anon.Attributes): Self = StObject.set(x, "_declaration", value.asInstanceOf[js.Any])
+      inline def set_declaration(value: `0`): Self = StObject.set(x, "_declaration", value.asInstanceOf[js.Any])
       
       inline def set_declarationUndefined: Self = StObject.set(x, "_declaration", js.undefined)
       

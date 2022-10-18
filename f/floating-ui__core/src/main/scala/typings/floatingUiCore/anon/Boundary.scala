@@ -1,14 +1,14 @@
 package typings.floatingUiCore.anon
 
-import typings.floatingUiCore.typesMod.RootBoundary
-import typings.floatingUiCore.typesMod.Strategy
+import typings.floatingUiCore.srcTypesMod.RootBoundary
+import typings.floatingUiCore.srcTypesMod.Strategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Boundary extends StObject {
   
-  var boundary: typings.floatingUiCore.typesMod.Boundary
+  var boundary: typings.floatingUiCore.srcTypesMod.Boundary
   
   var element: Any
   
@@ -19,7 +19,7 @@ trait Boundary extends StObject {
 object Boundary {
   
   inline def apply(
-    boundary: typings.floatingUiCore.typesMod.Boundary,
+    boundary: typings.floatingUiCore.srcTypesMod.Boundary,
     element: Any,
     rootBoundary: RootBoundary,
     strategy: Strategy
@@ -30,7 +30,7 @@ object Boundary {
   
   extension [Self <: Boundary](x: Self) {
     
-    inline def setBoundary(value: typings.floatingUiCore.typesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: typings.floatingUiCore.srcTypesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

@@ -40,9 +40,9 @@ object libMod {
     /* private */ var brand: `true` = js.native
   }
   
-  @JSImport("trusted-types/lib", "TrustedTypePolicy")
+  /* note: abstract class */ @JSImport("trusted-types/lib", "TrustedTypePolicy")
   @js.native
-  abstract class TrustedTypePolicy[Options /* <: TrustedTypePolicyOptions */] () extends StObject {
+  open class TrustedTypePolicy[Options /* <: TrustedTypePolicyOptions */] () extends StObject {
     
     @JSName("createHTML")
     def createHTML_createHTML(
@@ -62,9 +62,9 @@ object libMod {
     val name: String = js.native
   }
   
-  @JSImport("trusted-types/lib", "TrustedTypePolicyFactory")
+  /* note: abstract class */ @JSImport("trusted-types/lib", "TrustedTypePolicyFactory")
   @js.native
-  abstract class TrustedTypePolicyFactory () extends StObject {
+  open class TrustedTypePolicyFactory () extends StObject {
     
     def createPolicy[Options /* <: TrustedTypePolicyOptions */](policyName: String): Pick[TrustedTypePolicy[Options], name | (Extract[/* keyof Options */ String, FnNames])] = js.native
     def createPolicy[Options /* <: TrustedTypePolicyOptions */](policyName: String, policyOptions: Options): Pick[TrustedTypePolicy[Options], name | (Extract[/* keyof Options */ String, FnNames])] = js.native

@@ -4,40 +4,41 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate
+/** Database replication history.
+  * @see Docs: {@link http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate} */
 trait DatabaseReplicationHistoryItem extends StObject {
   
-  // Number of document write failures
+  /** Number of document write failures */
   var doc_write_failures: Double
   
-  // Number of documents read
+  /** Number of documents read */
   var docs_read: Double
   
-  // Number of documents written to target
+  /** Number of documents written to target */
   var docs_written: Double
   
-  // Last sequence number in changes stream
+  /** Last sequence number in changes stream */
   var end_last_seq: Double
   
-  // Date/Time replication operation completed in RFC 2822 format
+  /** Date/Time replication operation completed in RFC 2822 format */
   var end_time: String
   
-  // Number of missing documents checked
+  /** Number of missing documents checked */
   var missing_checked: Double
   
-  // Number of missing documents found
+  /** Number of missing documents found */
   var missing_found: Double
   
-  // Last recorded sequence number
+  /** Last recorded sequence number */
   var recorded_seq: Double
   
-  // Session ID for this replication operation
+  /** Session ID for this replication operation */
   var session_id: String
   
-  // First sequence number in changes stream
+  /** First sequence number in changes stream */
   var start_last_seq: Double
   
-  // Date/Time replication operation started in RFC 2822 format
+  /** Date/Time replication operation started in RFC 2822 format */
   var start_time: String
 }
 object DatabaseReplicationHistoryItem {

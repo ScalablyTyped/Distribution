@@ -19,9 +19,9 @@ import typings.jszip.jszipStrings.nodebuffer
 import typings.jszip.jszipStrings.string
 import typings.jszip.jszipStrings.text
 import typings.jszip.jszipStrings.uint8array
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.std.Blob
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,7 +93,7 @@ object mod extends Shortcut {
     
     var blob: Blob
     
-    var stream: ReadableStream[Any]
+    var stream: ReadableStream
     
     var string: String
     
@@ -109,7 +109,7 @@ object mod extends Shortcut {
       base64: String,
       binarystring: String,
       blob: Blob,
-      stream: ReadableStream[Any],
+      stream: ReadableStream,
       string: String,
       text: String,
       uint8array: js.typedarray.Uint8Array
@@ -132,7 +132,7 @@ object mod extends Shortcut {
       
       inline def setBlob(value: Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
       
-      inline def setStream(value: ReadableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: ReadableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
@@ -151,8 +151,8 @@ object mod extends Shortcut {
   //     compression: object;
   //     compressedContent: string|ArrayBuffer|Uint8Array|Buffer;
   // }
-  type InputFileFormat = Blob | String | js.typedarray.ArrayBuffer | ReadableStream[Any] | js.Array[Double] | js.typedarray.Uint8Array | (js.Promise[
-    Blob | String | js.typedarray.ArrayBuffer | ReadableStream[Any] | js.Array[Double] | js.typedarray.Uint8Array
+  type InputFileFormat = Blob | String | js.typedarray.ArrayBuffer | ReadableStream | js.Array[Double] | js.typedarray.Uint8Array | (js.Promise[
+    Blob | String | js.typedarray.ArrayBuffer | ReadableStream | js.Array[Double] | js.typedarray.Uint8Array
   ])
   
   /* Rewritten from type alias, can be one of: 
@@ -196,13 +196,13 @@ object mod extends Shortcut {
     def file(
       path: String,
       data: js.Promise[
-          js.Array[Double] | js.typedarray.ArrayBuffer | Blob | ReadableStream[Any] | String | js.typedarray.Uint8Array
+          js.Array[Double] | js.typedarray.ArrayBuffer | Blob | ReadableStream | String | js.typedarray.Uint8Array
         ]
     ): this.type = js.native
     def file(
       path: String,
       data: js.Promise[
-          js.Array[Double] | js.typedarray.ArrayBuffer | Blob | ReadableStream[Any] | String | js.typedarray.Uint8Array
+          js.Array[Double] | js.typedarray.ArrayBuffer | Blob | ReadableStream | String | js.typedarray.Uint8Array
         ],
       options: JSZipFileOptions
     ): this.type = js.native
@@ -211,10 +211,10 @@ object mod extends Shortcut {
     def file(path: String, data: js.typedarray.Uint8Array): this.type = js.native
     def file(path: String, data: js.typedarray.Uint8Array, options: JSZipFileOptions): this.type = js.native
     def file(path: String, data: Null, options: JSZipFileOptionsdirtrue): this.type = js.native
+    def file(path: String, data: ReadableStream): this.type = js.native
+    def file(path: String, data: ReadableStream, options: JSZipFileOptions): this.type = js.native
     def file(path: String, data: Blob): this.type = js.native
     def file(path: String, data: Blob, options: JSZipFileOptions): this.type = js.native
-    def file(path: String, data: ReadableStream[Any]): this.type = js.native
-    def file(path: String, data: ReadableStream[Any], options: JSZipFileOptions): this.type = js.native
     /**
       * Get files matching a RegExp from archive
       *
@@ -342,12 +342,12 @@ object mod extends Shortcut {
       * @param onUpdate The optional function called on each internal update with the metadata.
       * @return A Node.js `ReadableStream`
       */
-    def generateNodeStream(): ReadableStream[Any] = js.native
-    def generateNodeStream(options: Unit, onUpdate: OnUpdateCallback): ReadableStream[Any] = js.native
+    def generateNodeStream(): ReadableStream = js.native
+    def generateNodeStream(options: Unit, onUpdate: OnUpdateCallback): ReadableStream = js.native
     @JSName("generateNodeStream")
-    def generateNodeStream_nodebuffer(options: JSZipGeneratorOptions[nodebuffer]): ReadableStream[Any] = js.native
+    def generateNodeStream_nodebuffer(options: JSZipGeneratorOptions[nodebuffer]): ReadableStream = js.native
     @JSName("generateNodeStream")
-    def generateNodeStream_nodebuffer(options: JSZipGeneratorOptions[nodebuffer], onUpdate: OnUpdateCallback): ReadableStream[Any] = js.native
+    def generateNodeStream_nodebuffer(options: JSZipGeneratorOptions[nodebuffer], onUpdate: OnUpdateCallback): ReadableStream = js.native
     
     /**
       * Deserialize zip file asynchronously
@@ -680,12 +680,12 @@ object mod extends Shortcut {
     
     var name: String = js.native
     
-    def nodeStream(): ReadableStream[Any] = js.native
-    def nodeStream(`type`: Unit, onUpdate: OnUpdateCallback): ReadableStream[Any] = js.native
+    def nodeStream(): ReadableStream = js.native
+    def nodeStream(`type`: Unit, onUpdate: OnUpdateCallback): ReadableStream = js.native
     @JSName("nodeStream")
-    def nodeStream_nodebuffer(`type`: nodebuffer): ReadableStream[Any] = js.native
+    def nodeStream_nodebuffer(`type`: nodebuffer): ReadableStream = js.native
     @JSName("nodeStream")
-    def nodeStream_nodebuffer(`type`: nodebuffer, onUpdate: OnUpdateCallback): ReadableStream[Any] = js.native
+    def nodeStream_nodebuffer(`type`: nodebuffer, onUpdate: OnUpdateCallback): ReadableStream = js.native
     
     var options: JSZipObjectOptions = js.native
     

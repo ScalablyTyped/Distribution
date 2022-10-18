@@ -2,7 +2,7 @@ package typings.antvG2plot.anon
 
 import typings.antvG2plot.antvG2plotStrings.`bottom-left`
 import typings.antvG2plot.antvG2plotStrings.`top-left`
-import typings.antvGBase.typesMod.ShapeAttrs
+import typings.antvGBase.libTypesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

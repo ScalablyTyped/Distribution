@@ -1,12 +1,12 @@
 package typings.relayRuntime.anon
 
-import typings.relayRuntime.normalizationNodeMod.NormalizationLinkedField
+import typings.relayRuntime.libStoreRelayStoreTypesMod.MissingFieldHandler
+import typings.relayRuntime.libStoreRelayStoreTypesMod.ReadOnlyRecordSourceProxy
+import typings.relayRuntime.libStoreRelayStoreTypesMod.Record
+import typings.relayRuntime.libUtilNormalizationNodeMod.NormalizationLinkedField
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.DataID
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Variables
 import typings.relayRuntime.relayRuntimeStrings.linked
-import typings.relayRuntime.relayRuntimeTypesMod.DataID
-import typings.relayRuntime.relayRuntimeTypesMod.Variables
-import typings.relayRuntime.relayStoreTypesMod.MissingFieldHandler
-import typings.relayRuntime.relayStoreTypesMod.ReadOnlyRecordSourceProxy
-import typings.relayRuntime.relayStoreTypesMod.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

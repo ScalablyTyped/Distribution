@@ -12,7 +12,7 @@ object ManagementLockClient {
   @JSImport("azure-arm-resource", "ManagementLockClient.default")
   @js.native
   open class default protected ()
-    extends typings.azureArmResource.managementLockClientMod.default {
+    extends typings.azureArmResource.libLockManagementLockClientMod.default {
     /**
       * Initializes a new instance of the ManagementLockClient class.
       * @constructor
@@ -59,7 +59,7 @@ object ManagementLockClient {
   @JSImport("azure-arm-resource", "ManagementLockClient.ManagementLockClient")
   @js.native
   open class ManagementLockClient protected ()
-    extends typings.azureArmResource.managementLockClientMod.ManagementLockClient {
+    extends typings.azureArmResource.libLockManagementLockClientMod.ManagementLockClient {
     /**
       * Initializes a new instance of the ManagementLockClient class.
       * @constructor
@@ -108,12 +108,12 @@ object ManagementLockClient {
     @JSImport("azure-arm-resource", "ManagementLockClient.ManagementLockModels.BaseResource")
     @js.native
     open class BaseResource ()
-      extends typings.azureArmResource.managementLockClientMod.ManagementLockModels.BaseResource
+      extends typings.azureArmResource.libLockManagementLockClientMod.ManagementLockModels.BaseResource
     
     @JSImport("azure-arm-resource", "ManagementLockClient.ManagementLockModels.CloudError")
     @js.native
     open class CloudError protected ()
-      extends typings.azureArmResource.managementLockClientMod.ManagementLockModels.CloudError {
+      extends typings.azureArmResource.libLockManagementLockClientMod.ManagementLockModels.CloudError {
       def this(parameters: CloudErrorParameters) = this()
     }
   }

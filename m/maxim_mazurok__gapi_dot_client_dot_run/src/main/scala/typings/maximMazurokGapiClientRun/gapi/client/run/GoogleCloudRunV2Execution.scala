@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientRun.gapi.client.run
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait GoogleCloudRunV2Execution extends StObject {
   
   /** KRM-style annotations for the resource. */
   var annotations: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.GoogleCloudRunV2Execution & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Output only. Represents time when the execution was completed. It is not guaranteed to be set in happens-before order across separate operations. */
@@ -47,9 +44,7 @@ trait GoogleCloudRunV2Execution extends StObject {
     * Cloud Run will populate some labels with 'run.googleapis.com' or 'serving.knative.dev' namespaces. Those labels are read-only, and user changes will not be preserved.
     */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.GoogleCloudRunV2Execution & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -111,9 +106,7 @@ object GoogleCloudRunV2Execution {
   extension [Self <: GoogleCloudRunV2Execution](x: Self) {
     
     inline def setAnnotations(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.GoogleCloudRunV2Execution & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
@@ -157,9 +150,7 @@ object GoogleCloudRunV2Execution {
     inline def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.GoogleCloudRunV2Execution & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "MultiplyBlock")
 @js.native
 open class MultiplyBlock protected ()
-  extends typings.babylonjs.legacyMod.MultiplyBlock {
+  extends typings.babylonjs.legacyLegacyMod.MultiplyBlock {
   /**
     * Creates a new MultiplyBlock
     * @param name defines the block name

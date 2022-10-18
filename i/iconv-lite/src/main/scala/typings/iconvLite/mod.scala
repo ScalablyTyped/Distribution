@@ -1,5 +1,6 @@
 package typings.iconvLite
 
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,14 +15,14 @@ object mod {
   inline def decode(buffer: Buffer, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def decode(buffer: Buffer, encoding: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def decodeStream(encoding: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(encoding.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def decodeStream(encoding: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def decodeStream(encoding: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(encoding.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def decodeStream(encoding: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   inline def encode(content: String, encoding: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(content.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   inline def encode(content: String, encoding: String, options: Options): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(content.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  inline def encodeStream(encoding: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(encoding.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def encodeStream(encoding: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def encodeStream(encoding: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(encoding.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def encodeStream(encoding: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   inline def encodingExists(encoding: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("encodingExists")(encoding.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

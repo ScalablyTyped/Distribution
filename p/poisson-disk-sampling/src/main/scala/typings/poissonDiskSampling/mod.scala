@@ -31,7 +31,7 @@ object mod {
     override def getAllPointsWithDistance(): js.Array[js.Array[Double]] = js.native
     
     /* CompleteClass */
-    var implementation: typings.poissonDiskSampling.fixedDensityMod.^ | typings.poissonDiskSampling.variableDensityMod.^ = js.native
+    var implementation: typings.poissonDiskSampling.srcImplementationsFixedDensityMod.^ | typings.poissonDiskSampling.srcImplementationsVariableDensityMod.^ = js.native
     
     /* CompleteClass */
     override def next(): js.Array[Double] | Null = js.native
@@ -55,7 +55,7 @@ object mod {
     
     def getAllPointsWithDistance(): js.Array[js.Array[Double]]
     
-    var implementation: typings.poissonDiskSampling.fixedDensityMod.^ | typings.poissonDiskSampling.variableDensityMod.^
+    var implementation: typings.poissonDiskSampling.srcImplementationsFixedDensityMod.^ | typings.poissonDiskSampling.srcImplementationsVariableDensityMod.^
     
     def next(): js.Array[Double] | Null
     
@@ -71,7 +71,7 @@ object mod {
       fill: () => js.Array[js.Array[Double]],
       getAllPoints: () => js.Array[js.Array[Double]],
       getAllPointsWithDistance: () => js.Array[js.Array[Double]],
-      implementation: typings.poissonDiskSampling.fixedDensityMod.^ | typings.poissonDiskSampling.variableDensityMod.^,
+      implementation: typings.poissonDiskSampling.srcImplementationsFixedDensityMod.^ | typings.poissonDiskSampling.srcImplementationsVariableDensityMod.^,
       next: () => js.Array[Double] | Null,
       reset: () => Unit,
       shape: js.Array[Double]
@@ -93,7 +93,7 @@ object mod {
       inline def setGetAllPointsWithDistance(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getAllPointsWithDistance", js.Any.fromFunction0(value))
       
       inline def setImplementation(
-        value: typings.poissonDiskSampling.fixedDensityMod.^ | typings.poissonDiskSampling.variableDensityMod.^
+        value: typings.poissonDiskSampling.srcImplementationsFixedDensityMod.^ | typings.poissonDiskSampling.srcImplementationsVariableDensityMod.^
       ): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
       inline def setNext(value: () => js.Array[Double] | Null): Self = StObject.set(x, "next", js.Any.fromFunction0(value))

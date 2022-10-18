@@ -1,16 +1,16 @@
 package typings.reactMdUtils
 
-import typings.reactMdUtils.dirMod.WritingDirection
-import typings.reactMdUtils.focusElementWithinMod._Focus
-import typings.reactMdUtils.isContrastCompliantMod.ContrastRatioCompliance
-import typings.reactMdUtils.isFocusableMod.ElementFocusType
-import typings.reactMdUtils.modeTypesMod.UserInteractionMode
-import typings.reactMdUtils.movementTypesMod.FocusType
-import typings.reactMdUtils.positioningTypesMod.HorizontalPosition
-import typings.reactMdUtils.positioningTypesMod.PositionWidth
-import typings.reactMdUtils.positioningTypesMod.SimplePosition
-import typings.reactMdUtils.positioningTypesMod.VerticalPosition
-import typings.reactMdUtils.scrollbarSizeMod.SizingType
+import typings.reactMdUtils.typesColorsIsContrastCompliantMod.ContrastRatioCompliance
+import typings.reactMdUtils.typesDirMod.WritingDirection
+import typings.reactMdUtils.typesLayoutScrollbarSizeMod.SizingType
+import typings.reactMdUtils.typesModeTypesMod.UserInteractionMode
+import typings.reactMdUtils.typesPositioningTypesMod.HorizontalPosition
+import typings.reactMdUtils.typesPositioningTypesMod.PositionWidth
+import typings.reactMdUtils.typesPositioningTypesMod.SimplePosition
+import typings.reactMdUtils.typesPositioningTypesMod.VerticalPosition
+import typings.reactMdUtils.typesWiaAriaFocusElementWithinMod._Focus
+import typings.reactMdUtils.typesWiaAriaIsFocusableMod.ElementFocusType
+import typings.reactMdUtils.typesWiaAriaMovementTypesMod.FocusType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

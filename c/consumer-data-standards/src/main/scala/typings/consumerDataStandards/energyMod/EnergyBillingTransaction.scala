@@ -3,8 +3,8 @@ package typings.consumerDataStandards.energyMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.consumerDataStandards.anon.Adjustments
 import typings.consumerDataStandards.anon.CalculationFactors
-import typings.consumerDataStandards.anon.EndDate
 import typings.consumerDataStandards.anon.InvoiceNumber
+import typings.consumerDataStandards.anon.IsEstimate
 import typings.consumerDataStandards.anon.Method
 import typings.consumerDataStandards.consumerDataStandardsStrings.demand_
 import typings.consumerDataStandards.consumerDataStandardsStrings.onceOff
@@ -62,7 +62,7 @@ trait EnergyBillingTransaction
   /**
     * Represents a usage charge or generation credit.  Mandatory if transactionUType is equal to usage
     */
-  var usage: js.UndefOr[EndDate] = js.undefined
+  var usage: js.UndefOr[IsEstimate] = js.undefined
 }
 object EnergyBillingTransaction {
   
@@ -105,7 +105,7 @@ object EnergyBillingTransaction {
     
     inline def setTransactionUType(value: usage_ | demand_ | onceOff | otherCharges | payment_): Self = StObject.set(x, "transactionUType", value.asInstanceOf[js.Any])
     
-    inline def setUsage(value: EndDate): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: IsEstimate): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }

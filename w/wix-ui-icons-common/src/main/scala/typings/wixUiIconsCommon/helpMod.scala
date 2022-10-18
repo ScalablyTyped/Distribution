@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsHelpMod.HelpProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsHelpMod.HelpProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/system/Help", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Help", JSImport.Default)
   @js.native
   val default: FC[HelpProps] = js.native
   

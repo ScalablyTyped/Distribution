@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.selectionMod.default
+import typings.ckeditorCkeditor5Engine.srcModelSelectionMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +11,13 @@ trait MarkerRange extends StObject {
   
   var markerName: String
   
-  var markerRange: typings.ckeditorCkeditor5Engine.rangeMod.default
+  var markerRange: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default
   
-  var range: js.UndefOr[typings.ckeditorCkeditor5Engine.rangeMod.default] = js.undefined
+  var range: js.UndefOr[typings.ckeditorCkeditor5Engine.srcModelRangeMod.default] = js.undefined
 }
 object MarkerRange {
   
-  inline def apply(markerName: String, markerRange: typings.ckeditorCkeditor5Engine.rangeMod.default): MarkerRange = {
+  inline def apply(markerName: String, markerRange: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default): MarkerRange = {
     val __obj = js.Dynamic.literal(markerName = markerName.asInstanceOf[js.Any], markerRange = markerRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerRange]
   }
@@ -30,9 +30,9 @@ object MarkerRange {
     
     inline def setMarkerName(value: String): Self = StObject.set(x, "markerName", value.asInstanceOf[js.Any])
     
-    inline def setMarkerRange(value: typings.ckeditorCkeditor5Engine.rangeMod.default): Self = StObject.set(x, "markerRange", value.asInstanceOf[js.Any])
+    inline def setMarkerRange(value: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default): Self = StObject.set(x, "markerRange", value.asInstanceOf[js.Any])
     
-    inline def setRange(value: typings.ckeditorCkeditor5Engine.rangeMod.default): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }

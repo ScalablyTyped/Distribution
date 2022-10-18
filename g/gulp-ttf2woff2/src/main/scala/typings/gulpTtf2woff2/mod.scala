@@ -1,5 +1,6 @@
 package typings.gulpTtf2woff2
 
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.bufferMod.global.Buffer
 import typings.pluginError.mod.PluginError
 import org.scalablytyped.runtime.StObject
@@ -20,8 +21,8 @@ object mod {
     *     .pipe(gulp.dest('fonts/'));
     * });
     */
-  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
-  inline def apply(options: Options): Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(options: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-ttf2woff2", JSImport.Namespace)
   @js.native

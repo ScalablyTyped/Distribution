@@ -6,8 +6,8 @@ import typings.redux.mod.AnyAction
 import typings.redux.mod.Dispatch
 import typings.redux.mod.Middleware
 import typings.reduxSentryMiddleware.anon.TypeofSentry
-import typings.sentryTypes.miscMod.Primitive
-import typings.sentryTypes.userMod.User
+import typings.sentryTypes.typesMiscMod.Primitive
+import typings.sentryTypes.typesUserMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

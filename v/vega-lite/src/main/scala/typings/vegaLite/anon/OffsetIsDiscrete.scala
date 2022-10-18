@@ -8,11 +8,11 @@ trait OffsetIsDiscrete extends StObject {
   
   var offsetIsDiscrete: Boolean
   
-  var step: typings.vegaLite.specBaseMod.Step
+  var step: typings.vegaLite.buildSrcSpecBaseMod.Step
 }
 object OffsetIsDiscrete {
   
-  inline def apply(offsetIsDiscrete: Boolean, step: typings.vegaLite.specBaseMod.Step): OffsetIsDiscrete = {
+  inline def apply(offsetIsDiscrete: Boolean, step: typings.vegaLite.buildSrcSpecBaseMod.Step): OffsetIsDiscrete = {
     val __obj = js.Dynamic.literal(offsetIsDiscrete = offsetIsDiscrete.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetIsDiscrete]
   }
@@ -21,6 +21,6 @@ object OffsetIsDiscrete {
     
     inline def setOffsetIsDiscrete(value: Boolean): Self = StObject.set(x, "offsetIsDiscrete", value.asInstanceOf[js.Any])
     
-    inline def setStep(value: typings.vegaLite.specBaseMod.Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: typings.vegaLite.buildSrcSpecBaseMod.Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

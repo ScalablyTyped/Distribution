@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "EngineFactory")
 @js.native
 open class EngineFactory ()
-  extends typings.babylonjs.legacyMod.EngineFactory
+  extends typings.babylonjs.legacyLegacyMod.EngineFactory
 /* static members */
 object EngineFactory {
   
@@ -22,5 +22,5 @@ object EngineFactory {
     * @param options Defines the options passed to the engine to create the context dependencies
     * @returns a promise that resolves with the created engine
     */
-  inline def CreateAsync(canvas: HTMLCanvasElement, options: Any): js.Promise[typings.babylonjs.engineMod.Engine] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(canvas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.engineMod.Engine]]
+  inline def CreateAsync(canvas: HTMLCanvasElement, options: Any): js.Promise[typings.babylonjs.enginesEngineMod.Engine] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(canvas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.enginesEngineMod.Engine]]
 }

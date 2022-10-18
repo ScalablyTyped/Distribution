@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("egg", "Application")
 @js.native
-class Application () extends EggApplication {
+open class Application () extends EggApplication {
   def this(options: EggCoreOptions) = this()
   
   var controller: IController = js.native
@@ -19,13 +19,13 @@ class Application () extends EggApplication {
     * HTTP delete method
     */
   def delete(path: RouterPath, fn: String): Unit = js.native
-  def delete(path: RouterPath, middleware: js.Any*): Unit = js.native
+  def delete(path: RouterPath, middleware: Any*): Unit = js.native
   
   /**
     * HTTP get method
     */
   def get(path: RouterPath, fn: String): Unit = js.native
-  def get(path: RouterPath, middleware: js.Any*): Unit = js.native
+  def get(path: RouterPath, middleware: Any*): Unit = js.native
   
   /**
     * global locals for view
@@ -34,25 +34,25 @@ class Application () extends EggApplication {
   var locals: IApplicationLocals = js.native
   
   @JSName("middleware")
-  var middleware_Application: (js.Array[Middleware[DefaultState, DefaultContext]]) & IMiddleware = js.native
+  var middleware_Application: (js.Array[Middleware[DefaultState, DefaultContext, Any]]) & IMiddleware = js.native
   
   /**
     * HTTP patch method
     */
   def patch(path: RouterPath, fn: String): Unit = js.native
-  def patch(path: RouterPath, middleware: js.Any*): Unit = js.native
+  def patch(path: RouterPath, middleware: Any*): Unit = js.native
   
   /**
     * HTTP post method
     */
   def post(path: RouterPath, fn: String): Unit = js.native
-  def post(path: RouterPath, middleware: js.Any*): Unit = js.native
+  def post(path: RouterPath, middleware: Any*): Unit = js.native
   
   /**
     * HTTP put method
     */
   def put(path: RouterPath, fn: String): Unit = js.native
-  def put(path: RouterPath, middleware: js.Any*): Unit = js.native
+  def put(path: RouterPath, middleware: Any*): Unit = js.native
   
   def redirect(path: String, redirectPath: String): Unit = js.native
   
@@ -60,12 +60,12 @@ class Application () extends EggApplication {
     * restful router api
     */
   def resources(name: String, prefix: String, fn: String): Router = js.native
-  def resources(path: String, prefix: String, middleware: js.Any*): Router = js.native
+  def resources(path: String, prefix: String, middleware: Any*): Router = js.native
   
   /**
     * Run async function in the background
     * @see Context#runInBackground
     * @param {Function} scope - the first args is an anonymous ctx
     */
-  def runInBackground(scope: js.Function1[/* ctx */ Context, Unit]): Unit = js.native
+  def runInBackground(scope: js.Function1[/* ctx */ Context[Any], Unit]): Unit = js.native
 }

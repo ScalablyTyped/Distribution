@@ -69,7 +69,7 @@ object mod {
   
   inline def subtract(date1: js.Date, date2: js.Date): SubtractResult = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[SubtractResult]
   
-  inline def timeSpan(date1: js.Date, date2: js.Date): typings.dateAndTime.timespanMod.dateAndTimeAugmentingMod.TimeSpanResult = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSpan")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[typings.dateAndTime.timespanMod.dateAndTimeAugmentingMod.TimeSpanResult]
+  inline def timeSpan(date1: js.Date, date2: js.Date): typings.dateAndTime.pluginTimespanMod.dateAndTimeAugmentingMod.TimeSpanResult = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSpan")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[typings.dateAndTime.pluginTimespanMod.dateAndTimeAugmentingMod.TimeSpanResult]
   
   inline def transform(dateString: String, compiledObj1: js.Array[String], compiledObj2: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(dateString.asInstanceOf[js.Any], compiledObj1.asInstanceOf[js.Any], compiledObj2.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def transform(dateString: String, compiledObj1: js.Array[String], compiledObj2: js.Array[String], utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(dateString.asInstanceOf[js.Any], compiledObj1.asInstanceOf[js.Any], compiledObj2.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]

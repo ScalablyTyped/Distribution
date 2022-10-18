@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.documentfragmentMod.DocumentFragment
-import typings.ckeditorCkeditor5Engine.rangeMod.default
+import typings.ckeditorCkeditor5Engine.srcModelDocumentfragmentMod.DocumentFragment
+import typings.ckeditorCkeditor5Engine.srcModelRangeMod.default
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

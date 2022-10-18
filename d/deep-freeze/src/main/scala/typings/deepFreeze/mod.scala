@@ -1,6 +1,5 @@
 package typings.deepFreeze
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type DeepReadonly[T] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ P in keyof T ]: deep-freeze.deep-freeze.DeepReadonly<T[P]>}
-    */ typings.deepFreeze.deepFreezeStrings.DeepReadonly & TopLevel[T]) | T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends (args : any): any ? T : {readonly [ P in keyof T ]: deep-freeze.deep-freeze.DeepReadonly<T[P]>}
+    }}}
+    */
+  @js.native
+  trait DeepReadonly[T] extends StObject
 }

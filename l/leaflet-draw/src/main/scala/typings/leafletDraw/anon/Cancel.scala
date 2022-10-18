@@ -1,6 +1,6 @@
 package typings.leafletDraw.anon
 
-import typings.leafletDraw.mod.Localization.Action
+import typings.leafletDraw.leafletMod.Localization.Action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

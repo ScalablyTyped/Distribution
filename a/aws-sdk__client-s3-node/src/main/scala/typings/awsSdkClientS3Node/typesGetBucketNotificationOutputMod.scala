@@ -1,11 +1,11 @@
 package typings.awsSdkClientS3Node
 
-import typings.awsSdkClientS3Node.outputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkClientS3Node.typesCloudFunctionConfigurationMod.UnmarshalledCloudFunctionConfiguration
+import typings.awsSdkClientS3Node.typesOutputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkClientS3Node.typesQueueConfigurationDeprecatedMod.UnmarshalledQueueConfigurationDeprecated
 import typings.awsSdkClientS3Node.typesTopicConfigurationDeprecatedMod.UnmarshalledTopicConfigurationDeprecated
-import typings.awsSdkTypes.responseMod.MetadataBearer
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

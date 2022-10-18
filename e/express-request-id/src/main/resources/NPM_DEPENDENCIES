@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "express-request-id" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "express-request-id" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

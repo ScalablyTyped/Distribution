@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** Constructs a new writer instance. */
 open class Writer ()
-  extends typings.googleGax.fallbackMod.protobufMinimal.Writer
+  extends typings.googleGax.buildSrcFallbackMod.protobufMinimal.Writer
 /* static members */
 object Writer {
   

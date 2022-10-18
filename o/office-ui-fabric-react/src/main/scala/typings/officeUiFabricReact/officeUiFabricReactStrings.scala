@@ -1,11 +1,13 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.colorPickerBaseMod.ColorComponent
-import typings.officeUiFabricReact.docPageTypesMod.ApiKind
-import typings.officeUiFabricReact.docPageTypesMod.PageKind
-import typings.officeUiFabricReact.scrollablePaneTypesMod.ScrollbarVisibility
-import typings.officeUiFabricReact.spinnerTypesMod.SpinnerLabelPosition
-import typings.officeUiFabricReact.stackTypesMod.Alignment
+import typings.officeUiFabricReact.libCommonDocPageDottypesMod.ApiKind
+import typings.officeUiFabricReact.libCommonDocPageDottypesMod.PageKind
+import typings.officeUiFabricReact.libComponentsColorPickerColorPickerDotbaseMod.ColorComponent
+import typings.officeUiFabricReact.libComponentsPivotPivotDottypesMod.PivotLinkFormatType
+import typings.officeUiFabricReact.libComponentsPivotPivotDottypesMod.PivotLinkSizeType
+import typings.officeUiFabricReact.libComponentsScrollablePaneScrollablePaneDottypesMod.ScrollbarVisibility
+import typings.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerLabelPosition
+import typings.officeUiFabricReact.libComponentsStackStackDottypesMod.Alignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,22 +21,10 @@ object officeUiFabricReactStrings {
   inline def Components: Components = "Components".asInstanceOf[Components]
   
   @js.native
-  sealed trait IBaseCardProps extends StObject
-  inline def IBaseCardProps: IBaseCardProps = "IBaseCardProps".asInstanceOf[IBaseCardProps]
-  
-  @js.native
-  sealed trait PartialIStackProps extends StObject
-  inline def PartialIStackProps: PartialIStackProps = "PartialIStackProps".asInstanceOf[PartialIStackProps]
-  
-  @js.native
   sealed trait References
     extends StObject
        with PageKind
   inline def References: References = "References".asInstanceOf[References]
-  
-  @js.native
-  sealed trait WeakValidationMapIStackPr extends StObject
-  inline def WeakValidationMapIStackPr: WeakValidationMapIStackPr = "WeakValidationMapIStackPr".asInstanceOf[WeakValidationMapIStackPr]
   
   @js.native
   sealed trait _empty extends StObject
@@ -193,10 +183,6 @@ object officeUiFabricReactStrings {
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait buildClassMap extends StObject
-  inline def buildClassMap: buildClassMap = "buildClassMap".asInstanceOf[buildClassMap]
-  
-  @js.native
   sealed trait button extends StObject
   inline def button: button = "button".asInstanceOf[button]
   
@@ -351,10 +337,6 @@ object officeUiFabricReactStrings {
   @js.native
   sealed trait execute extends StObject
   inline def execute: execute = "execute".asInstanceOf[execute]
-  
-  @js.native
-  sealed trait extendComponent extends StObject
-  inline def extendComponent: extendComponent = "extendComponent".asInstanceOf[extendComponent]
   
   @js.native
   sealed trait focusBorder extends StObject
@@ -515,7 +497,9 @@ object officeUiFabricReactStrings {
   inline def kind: kind = "kind".asInstanceOf[kind]
   
   @js.native
-  sealed trait large extends StObject
+  sealed trait large
+    extends StObject
+       with PivotLinkSizeType
   inline def large: large = "large".asInstanceOf[large]
   
   @js.native
@@ -527,6 +511,12 @@ object officeUiFabricReactStrings {
   @js.native
   sealed trait link extends StObject
   inline def link: link = "link".asInstanceOf[link]
+  
+  @js.native
+  sealed trait links
+    extends StObject
+       with PivotLinkFormatType
+  inline def links: links = "links".asInstanceOf[links]
   
   @js.native
   sealed trait list extends StObject
@@ -723,6 +713,12 @@ object officeUiFabricReactStrings {
   @js.native
   sealed trait none extends StObject
   inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait normal
+    extends StObject
+       with PivotLinkSizeType
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait numeric extends StObject
@@ -955,6 +951,12 @@ object officeUiFabricReactStrings {
     extends StObject
        with ColorComponent
   inline def t: t = "t".asInstanceOf[t]
+  
+  @js.native
+  sealed trait tabs
+    extends StObject
+       with PivotLinkFormatType
+  inline def tabs: tabs = "tabs".asInstanceOf[tabs]
   
   @js.native
   sealed trait teal extends StObject

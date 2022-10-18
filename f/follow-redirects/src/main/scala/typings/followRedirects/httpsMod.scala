@@ -7,9 +7,9 @@ import typings.followRedirects.mod.FollowResponse
 import typings.followRedirects.mod.RedirectableRequest
 import typings.node.httpMod.ClientRequest
 import typings.node.httpsMod.RequestOptions
-import typings.node.nodeHttpMod.IncomingMessage
-import typings.node.nodeHttpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonhttpMod.IncomingMessage
+import typings.node.nodeColonhttpMod.ServerResponse
+import typings.node.nodeColonnetMod.Socket
 import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

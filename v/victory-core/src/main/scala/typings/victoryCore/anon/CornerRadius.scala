@@ -1,13 +1,13 @@
 package typings.victoryCore.anon
 
-import typings.victoryCore.callbacksMod.CallbackArgs
-import typings.victoryCore.callbacksMod.NumberOrCallback
-import typings.victoryCore.callbacksMod.OrientationOrCallback
-import typings.victoryCore.callbacksMod.PaddingOrCallback
-import typings.victoryCore.victoryThemeTypesMod.BlockProps
-import typings.victoryCore.victoryThemeTypesMod.OrientationTypes
-import typings.victoryCore.victoryThemeTypesMod.VictoryLabelStyleObject
-import typings.victoryCore.victoryThemeTypesMod.VictoryStyleObject
+import typings.victoryCore.libTypesCallbacksMod.CallbackArgs
+import typings.victoryCore.libTypesCallbacksMod.NumberOrCallback
+import typings.victoryCore.libTypesCallbacksMod.OrientationOrCallback
+import typings.victoryCore.libTypesCallbacksMod.PaddingOrCallback
+import typings.victoryCore.libVictoryThemeTypesMod.BlockProps
+import typings.victoryCore.libVictoryThemeTypesMod.OrientationTypes
+import typings.victoryCore.libVictoryThemeTypesMod.VictoryLabelStyleObject
+import typings.victoryCore.libVictoryThemeTypesMod.VictoryStyleObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

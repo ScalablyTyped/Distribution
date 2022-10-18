@@ -1,10 +1,10 @@
 package typings.reactThreeFiber.anon
 
-import typings.reactThreeFiber.threeTypesMod.Euler
-import typings.reactThreeFiber.threeTypesMod.Layers
-import typings.reactThreeFiber.threeTypesMod.Matrix4
-import typings.reactThreeFiber.threeTypesMod.Quaternion
-import typings.reactThreeFiber.threeTypesMod.Vector3
+import typings.reactThreeFiber.distDeclarationsSrcThreeTypesMod.Euler
+import typings.reactThreeFiber.distDeclarationsSrcThreeTypesMod.Layers
+import typings.reactThreeFiber.distDeclarationsSrcThreeTypesMod.Matrix4
+import typings.reactThreeFiber.distDeclarationsSrcThreeTypesMod.Quaternion
+import typings.reactThreeFiber.distDeclarationsSrcThreeTypesMod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +49,7 @@ object Dispose {
     inline def setMatrix(value: Matrix4): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
     inline def setMatrixFunction16(
-      value: (/* n11 */ Double, /* n12 */ Double, /* n13 */ Double, /* n14 */ Double, /* n21 */ Double, /* n22 */ Double, /* n23 */ Double, /* n24 */ Double, /* n31 */ Double, /* n32 */ Double, /* n33 */ Double, /* n34 */ Double, /* n41 */ Double, /* n42 */ Double, /* n43 */ Double, /* n44 */ Double) => typings.three.matrix4Mod.Matrix4
+      value: (/* n11 */ Double, /* n12 */ Double, /* n13 */ Double, /* n14 */ Double, /* n21 */ Double, /* n22 */ Double, /* n23 */ Double, /* n24 */ Double, /* n31 */ Double, /* n32 */ Double, /* n33 */ Double, /* n34 */ Double, /* n41 */ Double, /* n42 */ Double, /* n43 */ Double, /* n44 */ Double) => typings.three.srcMathMatrix4Mod.Matrix4
     ): Self = StObject.set(x, "matrix", js.Any.fromFunction16(value))
     
     inline def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)

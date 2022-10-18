@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@adobe/pdfservices-node-sdk/pdfservices-sdk", "FileRef")
 @js.native
 open class FileRef protected ()
-  extends typings.adobePdfservicesNodeSdk.fileRefMod.FileRef {
+  extends typings.adobePdfservicesNodeSdk.ioFileRefMod.FileRef {
   def this(input: Any) = this()
 }
 /* static members */
@@ -22,8 +22,8 @@ object FileRef {
     * extension.
     * <p>
     */
-  inline def createFromLocalFile(filePath: String): typings.adobePdfservicesNodeSdk.fileRefMod.FileRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromLocalFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[typings.adobePdfservicesNodeSdk.fileRefMod.FileRef]
-  inline def createFromLocalFile(filePath: String, mediaType: String): typings.adobePdfservicesNodeSdk.fileRefMod.FileRef = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromLocalFile")(filePath.asInstanceOf[js.Any], mediaType.asInstanceOf[js.Any])).asInstanceOf[typings.adobePdfservicesNodeSdk.fileRefMod.FileRef]
+  inline def createFromLocalFile(filePath: String): typings.adobePdfservicesNodeSdk.ioFileRefMod.FileRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromLocalFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[typings.adobePdfservicesNodeSdk.ioFileRefMod.FileRef]
+  inline def createFromLocalFile(filePath: String, mediaType: String): typings.adobePdfservicesNodeSdk.ioFileRefMod.FileRef = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromLocalFile")(filePath.asInstanceOf[js.Any], mediaType.asInstanceOf[js.Any])).asInstanceOf[typings.adobePdfservicesNodeSdk.ioFileRefMod.FileRef]
   
   /**
     * Creates a FileRef instance from a readable stream using the specified media type.
@@ -32,12 +32,12 @@ object FileRef {
     * an operation such as {@link CreatePDFOperation#execute} .
     *
     */
-  inline def createFromStream(inputStream: Any, mediaType: String): typings.adobePdfservicesNodeSdk.fileRefMod.FileRef = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromStream")(inputStream.asInstanceOf[js.Any], mediaType.asInstanceOf[js.Any])).asInstanceOf[typings.adobePdfservicesNodeSdk.fileRefMod.FileRef]
+  inline def createFromStream(inputStream: Any, mediaType: String): typings.adobePdfservicesNodeSdk.ioFileRefMod.FileRef = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromStream")(inputStream.asInstanceOf[js.Any], mediaType.asInstanceOf[js.Any])).asInstanceOf[typings.adobePdfservicesNodeSdk.ioFileRefMod.FileRef]
   
   /**
     * Creates a FileRef instance from the input URL and specified media type.
     *
     *
     */
-  inline def createFromURL(url: String): typings.adobePdfservicesNodeSdk.fileRefMod.FileRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromURL")(url.asInstanceOf[js.Any]).asInstanceOf[typings.adobePdfservicesNodeSdk.fileRefMod.FileRef]
+  inline def createFromURL(url: String): typings.adobePdfservicesNodeSdk.ioFileRefMod.FileRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromURL")(url.asInstanceOf[js.Any]).asInstanceOf[typings.adobePdfservicesNodeSdk.ioFileRefMod.FileRef]
 }

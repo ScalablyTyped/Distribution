@@ -2,11 +2,11 @@ package typings.reactCountdownCircleTimer
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.react.mod.ReactNode
-import typings.reactCountdownCircleTimer.mod.ColorFormat
-import typings.reactCountdownCircleTimer.mod.ColorHex
-import typings.reactCountdownCircleTimer.mod.OnComplete
-import typings.reactCountdownCircleTimer.mod.Props
-import typings.reactCountdownCircleTimer.mod.TimeProps
+import typings.reactCountdownCircleTimer.libMod.ColorFormat
+import typings.reactCountdownCircleTimer.libMod.ColorHex
+import typings.reactCountdownCircleTimer.libMod.OnComplete
+import typings.reactCountdownCircleTimer.libMod.Props
+import typings.reactCountdownCircleTimer.libMod.TimeProps
 import typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.butt
 import typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.clockwise
 import typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.counterclockwise

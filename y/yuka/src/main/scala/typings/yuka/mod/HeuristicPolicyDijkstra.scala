@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "HeuristicPolicyDijkstra")
 @js.native
 open class HeuristicPolicyDijkstra ()
-  extends typings.yuka.yukaMod.HeuristicPolicyDijkstra
+  extends typings.yuka.srcYukaMod.HeuristicPolicyDijkstra
 /* static members */
 object HeuristicPolicyDijkstra {
   
@@ -25,7 +25,7 @@ object HeuristicPolicyDijkstra {
     * @return The value 0.
     */
   inline def calculate(
-    graph: typings.yuka.graphMod.Graph[typings.yuka.nodeMod.Node, typings.yuka.edgeMod.Edge],
+    graph: typings.yuka.srcGraphCoreGraphMod.Graph[typings.yuka.srcGraphCoreNodeMod.Node, typings.yuka.srcGraphCoreEdgeMod.Edge],
     source: Double,
     target: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculate")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]

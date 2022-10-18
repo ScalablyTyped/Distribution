@@ -1,11 +1,11 @@
 package typings.azureMsalNode
 
-import typings.azureMsalCommon.clientConfigurationMod.ApplicationTelemetry
-import typings.azureMsalCommon.clientConfigurationMod.AzureCloudOptions
-import typings.azureMsalCommon.clientConfigurationMod.LoggerOptions
-import typings.azureMsalCommon.constantsMod.AuthenticationScheme
-import typings.azureMsalCommon.inetworkmoduleMod.INetworkModule
-import typings.azureMsalCommon.protocolModeMod.ProtocolMode
+import typings.azureMsalCommon.distAuthorityProtocolModeMod.ProtocolMode
+import typings.azureMsalCommon.distConfigClientConfigurationMod.ApplicationTelemetry
+import typings.azureMsalCommon.distConfigClientConfigurationMod.AzureCloudOptions
+import typings.azureMsalCommon.distConfigClientConfigurationMod.LoggerOptions
+import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
+import typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

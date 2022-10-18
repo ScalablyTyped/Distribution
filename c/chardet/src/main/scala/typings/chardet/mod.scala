@@ -1,7 +1,7 @@
 package typings.chardet
 
 import typings.chardet.anon.PartialFullOptions
-import typings.chardet.matchMod.Match
+import typings.chardet.libMatchMod.Match
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

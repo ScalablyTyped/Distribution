@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "InvalidRuleResultException")
 @js.native
 open class InvalidRuleResultException ()
-  extends typings.angularDevkitSchematics.callMod.InvalidRuleResultException {
+  extends typings.angularDevkitSchematics.srcRulesCallMod.InvalidRuleResultException {
   def this(value: js.Object) = this()
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "ArcCurve")
 @js.native
 open class ArcCurve protected ()
-  extends typings.three.threeMod.ArcCurve {
+  extends typings.three.srcThreeMod.ArcCurve {
   def this(
     aX: Double,
     aY: Double,

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200ContentApplicationjsonSecretsArrayTotalcountNumber extends StObject {
   
-  /** Lists all secrets available in a repository without revealing their encrypted values. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` repository permission to use this endpoint. */
+  /** Lists all secrets available in an organization without revealing their encrypted values. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint. */
   var get: Responses200ContentApplicationjsonSecretsArrayTotalcountNumber
 }
 object GetResponses200ContentApplicationjsonSecretsArrayTotalcountNumber {

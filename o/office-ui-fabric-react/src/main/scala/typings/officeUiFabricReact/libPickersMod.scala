@@ -5,31 +5,31 @@ import typings.officeUiFabricReact.anon.EnableAutofillOnKeyPress
 import typings.officeUiFabricReact.anon.IGenericItemkeyKey
 import typings.officeUiFabricReact.anon.Items
 import typings.officeUiFabricReact.anon.OnRenderItem
-import typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
-import typings.officeUiFabricReact.basePickerTypesMod.IBasePickerProps
-import typings.officeUiFabricReact.basePickerTypesMod.IBasePickerStyleProps
-import typings.officeUiFabricReact.basePickerTypesMod.IBasePickerStyles
-import typings.officeUiFabricReact.basePickerTypesMod.ValidationState
-import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedProps
-import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedStyleProps
-import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedStyles
-import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionProps
-import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionStyleProps
-import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionStyles
-import typings.officeUiFabricReact.peoplePickerMod.IPeoplePickerProps
-import typings.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionItemProps
-import typings.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionsItemStyleProps
-import typings.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionsItemStyles
-import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionsProps
-import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionsStyleProps
-import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionsStyles
-import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemProps
-import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemStyleProps
-import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemStyles
-import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionProps
-import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionStyleProps
-import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionStyles
-import typings.officeUiFabricReact.tagPickerTypesMod.ITagPickerProps
+import typings.officeUiFabricReact.libComponentsAutofillAutofillDottypesMod.IAutofillProps
+import typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.IBasePickerProps
+import typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.IBasePickerStyleProps
+import typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.IBasePickerStyles
+import typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.ValidationState
+import typings.officeUiFabricReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypesMod.IPeoplePickerItemSelectedProps
+import typings.officeUiFabricReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypesMod.IPeoplePickerItemSelectedStyleProps
+import typings.officeUiFabricReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypesMod.IPeoplePickerItemSelectedStyles
+import typings.officeUiFabricReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypesMod.IPeoplePickerItemSuggestionProps
+import typings.officeUiFabricReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypesMod.IPeoplePickerItemSuggestionStyleProps
+import typings.officeUiFabricReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypesMod.IPeoplePickerItemSuggestionStyles
+import typings.officeUiFabricReact.libComponentsPickersPeoplePickerPeoplePickerMod.IPeoplePickerProps
+import typings.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsDottypesMod.ISuggestionsProps
+import typings.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsDottypesMod.ISuggestionsStyleProps
+import typings.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsDottypesMod.ISuggestionsStyles
+import typings.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsItemDottypesMod.ISuggestionItemProps
+import typings.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsItemDottypesMod.ISuggestionsItemStyleProps
+import typings.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsItemDottypesMod.ISuggestionsItemStyles
+import typings.officeUiFabricReact.libComponentsPickersTagPickerTagPickerDottypesMod.ITagItemProps
+import typings.officeUiFabricReact.libComponentsPickersTagPickerTagPickerDottypesMod.ITagItemStyleProps
+import typings.officeUiFabricReact.libComponentsPickersTagPickerTagPickerDottypesMod.ITagItemStyles
+import typings.officeUiFabricReact.libComponentsPickersTagPickerTagPickerDottypesMod.ITagItemSuggestionProps
+import typings.officeUiFabricReact.libComponentsPickersTagPickerTagPickerDottypesMod.ITagItemSuggestionStyleProps
+import typings.officeUiFabricReact.libComponentsPickersTagPickerTagPickerDottypesMod.ITagItemSuggestionStyles
+import typings.officeUiFabricReact.libComponentsPickersTagPickerTagPickerDottypesMod.ITagPickerProps
 import typings.react.mod.FunctionComponent
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -45,7 +45,7 @@ object libPickersMod {
   @JSImport("office-ui-fabric-react/lib/Pickers", "Autofill")
   @js.native
   open class Autofill protected ()
-    extends typings.officeUiFabricReact.pickersMod.Autofill {
+    extends typings.officeUiFabricReact.libComponentsPickersMod.Autofill {
     def this(props: IAutofillProps) = this()
   }
   /* static members */
@@ -64,21 +64,21 @@ object libPickersMod {
   @JSImport("office-ui-fabric-react/lib/Pickers", "BaseAutoFill")
   @js.native
   open class BaseAutoFill protected ()
-    extends typings.officeUiFabricReact.pickersMod.BaseAutoFill {
+    extends typings.officeUiFabricReact.libComponentsPickersMod.BaseAutoFill {
     def this(props: IAutofillProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/Pickers", "BasePeoplePicker")
   @js.native
   open class BasePeoplePicker protected ()
-    extends typings.officeUiFabricReact.pickersMod.BasePeoplePicker {
+    extends typings.officeUiFabricReact.libComponentsPickersMod.BasePeoplePicker {
     def this(basePickerProps: IPeoplePickerProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/Pickers", "BasePicker")
   @js.native
   open class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
-    extends typings.officeUiFabricReact.pickersMod.BasePicker[T, P] {
+    extends typings.officeUiFabricReact.libComponentsPickersMod.BasePicker[T, P] {
     def this(basePickerProps: P) = this()
   }
   /* static members */
@@ -94,7 +94,7 @@ object libPickersMod {
   @JSImport("office-ui-fabric-react/lib/Pickers", "BasePickerListBelow")
   @js.native
   open class BasePickerListBelow[T, P /* <: IBasePickerProps[T] */] protected ()
-    extends typings.officeUiFabricReact.pickersMod.BasePickerListBelow[T, P] {
+    extends typings.officeUiFabricReact.libComponentsPickersMod.BasePickerListBelow[T, P] {
     def this(basePickerProps: P) = this()
   }
   
@@ -105,7 +105,7 @@ object libPickersMod {
   @JSImport("office-ui-fabric-react/lib/Pickers", "CompactPeoplePickerBase")
   @js.native
   open class CompactPeoplePickerBase protected ()
-    extends typings.officeUiFabricReact.pickersMod.CompactPeoplePickerBase {
+    extends typings.officeUiFabricReact.libComponentsPickersMod.CompactPeoplePickerBase {
     def this(basePickerProps: IPeoplePickerProps) = this()
   }
   /* static members */
@@ -129,7 +129,7 @@ object libPickersMod {
   @JSImport("office-ui-fabric-react/lib/Pickers", "ListPeoplePickerBase")
   @js.native
   open class ListPeoplePickerBase protected ()
-    extends typings.officeUiFabricReact.pickersMod.ListPeoplePickerBase {
+    extends typings.officeUiFabricReact.libComponentsPickersMod.ListPeoplePickerBase {
     def this(basePickerProps: IPeoplePickerProps) = this()
   }
   /* static members */
@@ -149,7 +149,7 @@ object libPickersMod {
   @JSImport("office-ui-fabric-react/lib/Pickers", "MemberListPeoplePicker")
   @js.native
   open class MemberListPeoplePicker protected ()
-    extends typings.officeUiFabricReact.pickersMod.MemberListPeoplePicker {
+    extends typings.officeUiFabricReact.libComponentsPickersMod.MemberListPeoplePicker {
     def this(basePickerProps: IPeoplePickerProps) = this()
   }
   
@@ -160,7 +160,7 @@ object libPickersMod {
   @JSImport("office-ui-fabric-react/lib/Pickers", "NormalPeoplePickerBase")
   @js.native
   open class NormalPeoplePickerBase protected ()
-    extends typings.officeUiFabricReact.pickersMod.NormalPeoplePickerBase {
+    extends typings.officeUiFabricReact.libComponentsPickersMod.NormalPeoplePickerBase {
     def this(basePickerProps: IPeoplePickerProps) = this()
   }
   /* static members */
@@ -194,31 +194,33 @@ object libPickersMod {
   object SuggestionActionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsDottypesMod.SuggestionActionType & Double
+      ] = js.native
     
-    /* 1 */ val forceResolve: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.forceResolve & Double = js.native
+    /* 1 */ val forceResolve: typings.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsDottypesMod.SuggestionActionType.forceResolve & Double = js.native
     
-    /* 0 */ val none: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.none & Double = js.native
+    /* 0 */ val none: typings.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsDottypesMod.SuggestionActionType.none & Double = js.native
     
-    /* 2 */ val searchMore: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.searchMore & Double = js.native
+    /* 2 */ val searchMore: typings.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsDottypesMod.SuggestionActionType.searchMore & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Pickers", "Suggestions")
   @js.native
   open class Suggestions[T] protected ()
-    extends typings.officeUiFabricReact.pickersMod.Suggestions[T] {
+    extends typings.officeUiFabricReact.libComponentsPickersMod.Suggestions[T] {
     def this(suggestionsProps: ISuggestionsProps[T]) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/Pickers", "SuggestionsController")
   @js.native
   open class SuggestionsController[T] ()
-    extends typings.officeUiFabricReact.pickersMod.SuggestionsController[T]
+    extends typings.officeUiFabricReact.libComponentsPickersMod.SuggestionsController[T]
   
   @JSImport("office-ui-fabric-react/lib/Pickers", "SuggestionsItem")
   @js.native
   open class SuggestionsItem[T] protected ()
-    extends typings.officeUiFabricReact.pickersMod.SuggestionsItem[T] {
+    extends typings.officeUiFabricReact.libComponentsPickersMod.SuggestionsItem[T] {
     def this(props: ISuggestionItemProps[T]) = this()
   }
   
@@ -241,7 +243,7 @@ object libPickersMod {
   @JSImport("office-ui-fabric-react/lib/Pickers", "TagPickerBase")
   @js.native
   open class TagPickerBase protected ()
-    extends typings.officeUiFabricReact.pickersMod.TagPickerBase {
+    extends typings.officeUiFabricReact.libComponentsPickersMod.TagPickerBase {
     def this(props: ITagPickerProps) = this()
   }
   /* static members */
@@ -262,13 +264,15 @@ object libPickersMod {
   object ValidationState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.basePickerTypesMod.ValidationState & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.ValidationState & Double
+      ] = js.native
     
-    /* 2 */ val invalid: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.invalid & Double = js.native
+    /* 2 */ val invalid: typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.ValidationState.invalid & Double = js.native
     
-    /* 0 */ val valid: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.valid & Double = js.native
+    /* 0 */ val valid: typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.ValidationState.valid & Double = js.native
     
-    /* 1 */ val warning: typings.officeUiFabricReact.basePickerTypesMod.ValidationState.warning & Double = js.native
+    /* 1 */ val warning: typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.ValidationState.warning & Double = js.native
   }
   
   inline def createGenericItem(name: String, currentValidationState: ValidationState): IGenericItemkeyKey = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericItem")(name.asInstanceOf[js.Any], currentValidationState.asInstanceOf[js.Any])).asInstanceOf[IGenericItemkeyKey]

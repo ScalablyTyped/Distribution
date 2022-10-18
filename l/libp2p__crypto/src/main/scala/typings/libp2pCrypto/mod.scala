@@ -1,14 +1,14 @@
 package typings.libp2pCrypto
 
-import typings.libp2pCrypto.aesMod.AESCipher
 import typings.libp2pCrypto.anon.Bytes
+import typings.libp2pCrypto.anon.Digest
 import typings.libp2pCrypto.anon.K1
-import typings.libp2pCrypto.anon.Length
 import typings.libp2pCrypto.anon.TypeofEd25519
 import typings.libp2pCrypto.anon.TypeofRSA
 import typings.libp2pCrypto.anon.TypeofSecp256k1
-import typings.libp2pCrypto.keysInterfaceMod.ECDHKey
-import typings.libp2pCrypto.keysMod.KeyTypes
+import typings.libp2pCrypto.distSrcAesMod.AESCipher
+import typings.libp2pCrypto.distSrcKeysInterfaceMod.ECDHKey
+import typings.libp2pCrypto.distSrcKeysMod.KeyTypes
 import typings.libp2pCrypto.libp2pCryptoStrings.Blowfish
 import typings.libp2pCrypto.libp2pCryptoStrings.SHA1
 import typings.libp2pCrypto.libp2pCryptoStrings.SHA256
@@ -17,7 +17,7 @@ import typings.libp2pCrypto.libp2pCryptoStrings.`AES-128`
 import typings.libp2pCrypto.libp2pCryptoStrings.`AES-256`
 import typings.libp2pInterfaceKeys.mod.PrivateKey
 import typings.libp2pInterfaceKeys.mod.PublicKey
-import typings.protonsRuntime.codecMod.Codec
+import typings.protonsRuntime.distSrcCodecMod.Codec
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,7 +44,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(hash: SHA1 | SHA256 | SHA512, secret: js.typedarray.Uint8Array): js.Promise[Length] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Length]]
+    inline def create(hash: SHA1 | SHA256 | SHA512, secret: js.typedarray.Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
   }
   
   object keys {
@@ -76,15 +76,15 @@ object mod {
       object KeyType extends StObject {
         
         @JSBracketAccess
-        def apply(value: String): js.UndefOr[typings.libp2pCrypto.keysKeysMod.KeyType & String] = js.native
+        def apply(value: String): js.UndefOr[typings.libp2pCrypto.distSrcKeysKeysMod.KeyType & String] = js.native
         
-        /* "Ed25519" */ val Ed25519: typings.libp2pCrypto.keysKeysMod.KeyType.Ed25519 & String = js.native
+        /* "Ed25519" */ val Ed25519: typings.libp2pCrypto.distSrcKeysKeysMod.KeyType.Ed25519 & String = js.native
         
-        /* "RSA" */ val RSA: typings.libp2pCrypto.keysKeysMod.KeyType.RSA & String = js.native
+        /* "RSA" */ val RSA: typings.libp2pCrypto.distSrcKeysKeysMod.KeyType.RSA & String = js.native
         
-        /* "Secp256k1" */ val Secp256k1: typings.libp2pCrypto.keysKeysMod.KeyType.Secp256k1 & String = js.native
+        /* "Secp256k1" */ val Secp256k1: typings.libp2pCrypto.distSrcKeysKeysMod.KeyType.Secp256k1 & String = js.native
         
-        def codec(): Codec[typings.libp2pCrypto.keysKeysMod.KeyType] = js.native
+        def codec(): Codec[typings.libp2pCrypto.distSrcKeysKeysMod.KeyType] = js.native
       }
       
       object PrivateKey {
@@ -93,12 +93,12 @@ object mod {
         @js.native
         val ^ : js.Any = js.native
         
-        inline def codec(): Codec[typings.libp2pCrypto.keysKeysMod.PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("codec")().asInstanceOf[Codec[typings.libp2pCrypto.keysKeysMod.PrivateKey]]
+        inline def codec(): Codec[typings.libp2pCrypto.distSrcKeysKeysMod.PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("codec")().asInstanceOf[Codec[typings.libp2pCrypto.distSrcKeysKeysMod.PrivateKey]]
         
-        inline def decode(buf: js.typedarray.Uint8Array): typings.libp2pCrypto.keysKeysMod.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[typings.libp2pCrypto.keysKeysMod.PrivateKey]
-        inline def decode(buf: Uint8ArrayList): typings.libp2pCrypto.keysKeysMod.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[typings.libp2pCrypto.keysKeysMod.PrivateKey]
+        inline def decode(buf: js.typedarray.Uint8Array): typings.libp2pCrypto.distSrcKeysKeysMod.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[typings.libp2pCrypto.distSrcKeysKeysMod.PrivateKey]
+        inline def decode(buf: Uint8ArrayList): typings.libp2pCrypto.distSrcKeysKeysMod.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[typings.libp2pCrypto.distSrcKeysKeysMod.PrivateKey]
         
-        inline def encode(obj: typings.libp2pCrypto.keysKeysMod.PrivateKey): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+        inline def encode(obj: typings.libp2pCrypto.distSrcKeysKeysMod.PrivateKey): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
       }
       
       object PublicKey {
@@ -107,12 +107,12 @@ object mod {
         @js.native
         val ^ : js.Any = js.native
         
-        inline def codec(): Codec[typings.libp2pCrypto.keysKeysMod.PublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("codec")().asInstanceOf[Codec[typings.libp2pCrypto.keysKeysMod.PublicKey]]
+        inline def codec(): Codec[typings.libp2pCrypto.distSrcKeysKeysMod.PublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("codec")().asInstanceOf[Codec[typings.libp2pCrypto.distSrcKeysKeysMod.PublicKey]]
         
-        inline def decode(buf: js.typedarray.Uint8Array): typings.libp2pCrypto.keysKeysMod.PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[typings.libp2pCrypto.keysKeysMod.PublicKey]
-        inline def decode(buf: Uint8ArrayList): typings.libp2pCrypto.keysKeysMod.PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[typings.libp2pCrypto.keysKeysMod.PublicKey]
+        inline def decode(buf: js.typedarray.Uint8Array): typings.libp2pCrypto.distSrcKeysKeysMod.PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[typings.libp2pCrypto.distSrcKeysKeysMod.PublicKey]
+        inline def decode(buf: Uint8ArrayList): typings.libp2pCrypto.distSrcKeysKeysMod.PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[typings.libp2pCrypto.distSrcKeysKeysMod.PublicKey]
         
-        inline def encode(obj: typings.libp2pCrypto.keysKeysMod.PublicKey): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+        inline def encode(obj: typings.libp2pCrypto.distSrcKeysKeysMod.PublicKey): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
       }
     }
     

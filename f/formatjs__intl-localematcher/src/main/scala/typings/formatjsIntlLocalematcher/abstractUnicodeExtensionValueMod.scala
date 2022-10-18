@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object abstractUnicodeExtensionValueMod {
   
-  @JSImport("@formatjs/intl-localematcher/lib/abstract/UnicodeExtensionValue", JSImport.Namespace)
+  @JSImport("@formatjs/intl-localematcher/abstract/UnicodeExtensionValue", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

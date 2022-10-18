@@ -12,7 +12,7 @@ trait PartialcardPartialCardban extends StObject {
   
   var bank_account: js.UndefOr[Accounttype] = js.undefined
   
-  var card: js.UndefOr[Partial[typings.paypalPaypalJs.commonsMod.Card]] = js.undefined
+  var card: js.UndefOr[Partial[typings.paypalPaypalJs.typesApisCommonsMod.Card]] = js.undefined
   
   var credit: js.UndefOr[Id] = js.undefined
 }
@@ -33,7 +33,7 @@ object PartialcardPartialCardban {
     
     inline def setBank_accountUndefined: Self = StObject.set(x, "bank_account", js.undefined)
     
-    inline def setCard(value: Partial[typings.paypalPaypalJs.commonsMod.Card]): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: Partial[typings.paypalPaypalJs.typesApisCommonsMod.Card]): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     

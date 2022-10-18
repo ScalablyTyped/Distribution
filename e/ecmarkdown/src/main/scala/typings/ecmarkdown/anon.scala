@@ -1,5 +1,12 @@
 package typings.ecmarkdown
 
+import typings.ecmarkdown.distNodeTypesMod.CommentNode
+import typings.ecmarkdown.distNodeTypesMod.LocationRange
+import typings.ecmarkdown.distNodeTypesMod.OrderedListItemNode
+import typings.ecmarkdown.distNodeTypesMod.OrderedListNode
+import typings.ecmarkdown.distNodeTypesMod.TagNode
+import typings.ecmarkdown.distNodeTypesMod.TextNode
+import typings.ecmarkdown.distNodeTypesMod.UnorderedListItemNode
 import typings.ecmarkdown.ecmarkdownStrings.algorithm
 import typings.ecmarkdown.ecmarkdownStrings.ol
 import typings.ecmarkdown.ecmarkdownStrings.pipe
@@ -9,13 +16,6 @@ import typings.ecmarkdown.ecmarkdownStrings.tick
 import typings.ecmarkdown.ecmarkdownStrings.tilde
 import typings.ecmarkdown.ecmarkdownStrings.ul
 import typings.ecmarkdown.ecmarkdownStrings.underscore
-import typings.ecmarkdown.nodeTypesMod.CommentNode
-import typings.ecmarkdown.nodeTypesMod.LocationRange
-import typings.ecmarkdown.nodeTypesMod.OrderedListItemNode
-import typings.ecmarkdown.nodeTypesMod.OrderedListNode
-import typings.ecmarkdown.nodeTypesMod.TagNode
-import typings.ecmarkdown.nodeTypesMod.TextNode
-import typings.ecmarkdown.nodeTypesMod.UnorderedListItemNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

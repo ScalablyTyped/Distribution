@@ -2,15 +2,15 @@ package typings.inversify
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.inversify.anon.Constructor
-import typings.inversify.decoratorUtilsMod.DecoratorTarget
-import typings.inversify.interfacesMod.interfaces.AsyncContainerModuleCallBack
-import typings.inversify.interfacesMod.interfaces.ConstraintFunction
-import typings.inversify.interfacesMod.interfaces.ContainerModuleCallBack
-import typings.inversify.interfacesMod.interfaces.ContainerOptions
-import typings.inversify.interfacesMod.interfaces.MetadataOrMetadataArray
-import typings.inversify.interfacesMod.interfaces.Request
-import typings.inversify.interfacesMod.interfaces.ServiceIdentifier
-import typings.inversify.lazyServiceIdentifierMod.ServiceIdentifierOrFunc
+import typings.inversify.libAnnotationDecoratorUtilsMod.DecoratorTarget
+import typings.inversify.libAnnotationLazyServiceIdentifierMod.ServiceIdentifierOrFunc
+import typings.inversify.libInterfacesInterfacesMod.interfaces.AsyncContainerModuleCallBack
+import typings.inversify.libInterfacesInterfacesMod.interfaces.ConstraintFunction
+import typings.inversify.libInterfacesInterfacesMod.interfaces.ContainerModuleCallBack
+import typings.inversify.libInterfacesInterfacesMod.interfaces.ContainerOptions
+import typings.inversify.libInterfacesInterfacesMod.interfaces.MetadataOrMetadataArray
+import typings.inversify.libInterfacesInterfacesMod.interfaces.Request
+import typings.inversify.libInterfacesInterfacesMod.interfaces.ServiceIdentifier
 import typings.std.MethodDecorator
 import typings.std.NewableFunction
 import typings.std.ParameterDecorator
@@ -28,22 +28,23 @@ object mod {
   @JSImport("inversify", "AsyncContainerModule")
   @js.native
   open class AsyncContainerModule protected ()
-    extends typings.inversify.containerModuleMod.AsyncContainerModule {
+    extends typings.inversify.libContainerContainerModuleMod.AsyncContainerModule {
     def this(registry: AsyncContainerModuleCallBack) = this()
   }
   
   @JSImport("inversify", "BindingScopeEnum")
   @js.native
-  val BindingScopeEnum: typings.inversify.interfacesMod.interfaces.BindingScopeEnum = js.native
+  val BindingScopeEnum: typings.inversify.libInterfacesInterfacesMod.interfaces.BindingScopeEnum = js.native
   
   @JSImport("inversify", "BindingTypeEnum")
   @js.native
-  val BindingTypeEnum: typings.inversify.interfacesMod.interfaces.BindingTypeEnum = js.native
+  val BindingTypeEnum: typings.inversify.libInterfacesInterfacesMod.interfaces.BindingTypeEnum = js.native
   
   @JSImport("inversify", "Container")
   @js.native
   open class Container ()
-    extends typings.inversify.containerMod.Container {
+    extends StObject
+       with typings.inversify.libContainerContainerMod.Container {
     def this(containerOptions: ContainerOptions) = this()
   }
   object Container {
@@ -54,23 +55,23 @@ object mod {
     
     /* static member */
     inline def merge(
-      container1: typings.inversify.interfacesMod.interfaces.Container,
-      container2: typings.inversify.interfacesMod.interfaces.Container,
-      containers: typings.inversify.interfacesMod.interfaces.Container*
-    ): typings.inversify.interfacesMod.interfaces.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")((scala.List(container1.asInstanceOf[js.Any], container2.asInstanceOf[js.Any])).`++`(containers.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.inversify.interfacesMod.interfaces.Container]
+      container1: typings.inversify.libInterfacesInterfacesMod.interfaces.Container,
+      container2: typings.inversify.libInterfacesInterfacesMod.interfaces.Container,
+      containers: typings.inversify.libInterfacesInterfacesMod.interfaces.Container*
+    ): typings.inversify.libInterfacesInterfacesMod.interfaces.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")((scala.List(container1.asInstanceOf[js.Any], container2.asInstanceOf[js.Any])).`++`(containers.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.inversify.libInterfacesInterfacesMod.interfaces.Container]
   }
   
   @JSImport("inversify", "ContainerModule")
   @js.native
   open class ContainerModule protected ()
-    extends typings.inversify.containerModuleMod.ContainerModule {
+    extends typings.inversify.libContainerContainerModuleMod.ContainerModule {
     def this(registry: ContainerModuleCallBack) = this()
   }
   
   @JSImport("inversify", "LazyServiceIdentifer")
   @js.native
   open class LazyServiceIdentifer[T] protected ()
-    extends typings.inversify.lazyServiceIdentifierMod.LazyServiceIdentifer[T] {
+    extends typings.inversify.libAnnotationLazyServiceIdentifierMod.LazyServiceIdentifer[T] {
     def this(cb: js.Function0[ServiceIdentifier[T]]) = this()
   }
   
@@ -132,11 +133,11 @@ object mod {
   @JSImport("inversify", "MetadataReader")
   @js.native
   open class MetadataReader ()
-    extends typings.inversify.metadataReaderMod.MetadataReader
+    extends typings.inversify.libPlanningMetadataReaderMod.MetadataReader
   
   @JSImport("inversify", "TargetTypeEnum")
   @js.native
-  val TargetTypeEnum: typings.inversify.interfacesMod.interfaces.TargetTypeEnum = js.native
+  val TargetTypeEnum: typings.inversify.libInterfacesInterfacesMod.interfaces.TargetTypeEnum = js.native
   
   inline def createTaggedDecorator(metadata: MetadataOrMetadataArray): js.Function3[
     /* target */ DecoratorTarget[Any], 
@@ -181,7 +182,7 @@ object mod {
     Instantiable1[/* args */ scala.Nothing, Any]
   ]]
   
-  inline def multiBindToService(container: typings.inversify.interfacesMod.interfaces.Container): js.Function1[
+  inline def multiBindToService(container: typings.inversify.libInterfacesInterfacesMod.interfaces.Container): js.Function1[
     /* service */ ServiceIdentifier[Any], 
     js.Function1[/* repeated */ ServiceIdentifier[Any], Unit]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiBindToService")(container.asInstanceOf[js.Any]).asInstanceOf[js.Function1[

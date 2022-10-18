@@ -1,7 +1,7 @@
 package typings.angularDevkitCore.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularDevkitCore.definitionsMod.TargetDefinition
+import typings.angularDevkitCore.srcWorkspaceDefinitionsMod.TargetDefinition
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

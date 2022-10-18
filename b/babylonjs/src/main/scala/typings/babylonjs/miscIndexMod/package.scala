@@ -3,27 +3,27 @@ package typings.babylonjs.miscIndexMod
 import typings.babylonjs.anon.BaseUrl
 import typings.babylonjs.anon.CrossOrigin
 import typings.babylonjs.anon.Match
-import typings.babylonjs.baseTextureMod.BaseTexture
-import typings.babylonjs.basisMod.TranscodeResult
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.coroutineMod.AsyncCoroutine
-import typings.babylonjs.coroutineMod.Coroutine
-import typings.babylonjs.coroutineMod.CoroutineScheduler
-import typings.babylonjs.coroutineMod.CoroutineStep
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.environmentTextureToolsMod.CreateEnvTextureOptions
-import typings.babylonjs.environmentTextureToolsMod.EnvironmentTextureInfo
-import typings.babylonjs.environmentTextureToolsMod.EnvironmentTextureInfoV2
-import typings.babylonjs.fileRequestMod.IFileRequest
-import typings.babylonjs.internalTextureMod.InternalTexture
-import typings.babylonjs.iofflineproviderMod.IOfflineProvider
-import typings.babylonjs.mathSizeMod.ISize
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
+import typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture
+import typings.babylonjs.materialsTexturesTextureMod.Texture
+import typings.babylonjs.mathsMathDotsizeMod.ISize
+import typings.babylonjs.mathsSphericalPolynomialMod.SphericalPolynomial
+import typings.babylonjs.miscBasisMod.TranscodeResult
+import typings.babylonjs.miscCoroutineMod.AsyncCoroutine
+import typings.babylonjs.miscCoroutineMod.Coroutine
+import typings.babylonjs.miscCoroutineMod.CoroutineScheduler
+import typings.babylonjs.miscCoroutineMod.CoroutineStep
+import typings.babylonjs.miscEnvironmentTextureToolsMod.CreateEnvTextureOptions
+import typings.babylonjs.miscEnvironmentTextureToolsMod.EnvironmentTextureInfo
+import typings.babylonjs.miscEnvironmentTextureToolsMod.EnvironmentTextureInfoV2
+import typings.babylonjs.miscFileRequestMod.IFileRequest
 import typings.babylonjs.miscIndexMod.^
+import typings.babylonjs.miscInterfacesScreenshotSizeMod.IScreenshotSize
+import typings.babylonjs.miscTimerMod.ITimerOptions
+import typings.babylonjs.offlineIofflineproviderMod.IOfflineProvider
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.screenshotSizeMod.IScreenshotSize
-import typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial
-import typings.babylonjs.textureMod.Texture
-import typings.babylonjs.timerMod.ITimerOptions
 import typings.babylonjs.typesMod.Nullable
 import typings.std.AbortSignal
 import typings.std.Blob
@@ -289,12 +289,12 @@ inline def LoadFile(
   useArrayBuffer: js.UndefOr[Boolean],
   onError: js.UndefOr[
   js.Function2[
-    /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-    /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+    /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
+    /* exception */ js.UndefOr[typings.babylonjs.miscFileToolsMod.LoadFileError], 
     Unit
   ]
 ],
-  onOpened: js.UndefOr[js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]]
+  onOpened: js.UndefOr[js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]]
 ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(fileOrUrl.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
 
 inline def LoadImage(
@@ -437,14 +437,14 @@ inline def ReadFile(
   onSuccess: js.Function1[/* data */ Any, Unit],
   onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
   useArrayBuffer: Boolean,
-  onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+  onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
 ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
 inline def ReadFile(
   file: File,
   onSuccess: js.Function1[/* data */ Any, Unit],
   onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
   useArrayBuffer: Unit,
-  onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+  onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
 ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
 inline def ReadFile(
   file: File,
@@ -457,14 +457,14 @@ inline def ReadFile(
   onSuccess: js.Function1[/* data */ Any, Unit],
   onProgress: Unit,
   useArrayBuffer: Boolean,
-  onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+  onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
 ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
 inline def ReadFile(
   file: File,
   onSuccess: js.Function1[/* data */ Any, Unit],
   onProgress: Unit,
   useArrayBuffer: Unit,
-  onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+  onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
 ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
 
 inline def RegisterClass(className: String, `type`: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterClass")(className.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -474,15 +474,17 @@ inline def RequestFile(
   onSuccess: js.UndefOr[
   js.Function2[
     /* data */ String | js.typedarray.ArrayBuffer, 
-    /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+    /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
     Unit
   ]
 ],
   onProgress: js.UndefOr[js.Function1[/* event */ ProgressEvent[EventTarget], Unit]],
   offlineProvider: js.UndefOr[IOfflineProvider],
   useArrayBuffer: js.UndefOr[Boolean],
-  onError: js.UndefOr[js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]],
-  onOpened: js.UndefOr[js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]]
+  onError: js.UndefOr[
+  js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit]
+],
+  onOpened: js.UndefOr[js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]]
 ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
 
 inline def SetCorsBehavior(url: String, element: CrossOrigin): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetCorsBehavior")(url.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -496,9 +498,12 @@ inline def ToHalfFloat(value: Double): Double = ^.asInstanceOf[js.Dynamic].apply
 
 inline def TranscodeAsync(
   data: js.typedarray.ArrayBufferView,
-  config: typings.babylonjs.basisMod.BasisTranscodeConfiguration
+  config: typings.babylonjs.miscBasisMod.BasisTranscodeConfiguration
 ): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
-inline def TranscodeAsync(data: js.typedarray.ArrayBuffer, config: typings.babylonjs.basisMod.BasisTranscodeConfiguration): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
+inline def TranscodeAsync(
+  data: js.typedarray.ArrayBuffer,
+  config: typings.babylonjs.miscBasisMod.BasisTranscodeConfiguration
+): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
 
 inline def UpdateRGBDAsync(
   internalTexture: InternalTexture,
@@ -564,12 +569,12 @@ inline def injectLTSFileTools(
   /* useArrayBuffer */ js.UndefOr[Boolean], 
   /* onError */ js.UndefOr[
     js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.miscFileToolsMod.LoadFileError], 
       Unit
     ]
   ], 
-  /* onOpened */ js.UndefOr[js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]], 
+  /* onOpened */ js.UndefOr[js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]], 
   IFileRequest
 ],
   LoadImage: js.Function6[
@@ -586,21 +591,23 @@ inline def injectLTSFileTools(
   /* onSuccess */ js.Function1[/* data */ Any, Unit], 
   /* onProgress */ js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], Any]], 
   /* useArrayBuffer */ js.UndefOr[Boolean], 
-  /* onError */ js.UndefOr[js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]], 
+  /* onError */ js.UndefOr[js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]], 
   IFileRequest
 ],
   RequestFile: js.Function7[
   /* url */ String, 
   /* onSuccess */ js.Function2[
     /* data */ String | js.typedarray.ArrayBuffer, 
-    /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+    /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
     Unit
   ], 
   /* onProgress */ js.UndefOr[js.Function1[/* event */ ProgressEvent[EventTarget], Unit]], 
   /* offlineProvider */ js.UndefOr[IOfflineProvider], 
   /* useArrayBuffer */ js.UndefOr[Boolean], 
-  /* onError */ js.UndefOr[js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]], 
-  /* onOpened */ js.UndefOr[js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]], 
+  /* onError */ js.UndefOr[
+    js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit]
+  ], 
+  /* onOpened */ js.UndefOr[js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]], 
   IFileRequest
 ],
   SetCorsBehavior: js.Function2[/* url */ String | js.Array[String], /* element */ CrossOrigin, Unit]
@@ -686,4 +693,4 @@ inline def serializeAsVector2(sourceName: String): js.Function2[/* target */ Any
 inline def serializeAsVector3(): js.Function2[/* target */ Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsVector3")().asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String | js.Symbol, Unit]]
 inline def serializeAsVector3(sourceName: String): js.Function2[/* target */ Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsVector3")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String | js.Symbol, Unit]]
 
-inline def setAndStartTimer(options: ITimerOptions[Any]): Nullable[typings.babylonjs.observableMod.Observer[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAndStartTimer")(options.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.observableMod.Observer[Any]]]
+inline def setAndStartTimer(options: ITimerOptions[Any]): Nullable[typings.babylonjs.miscObservableMod.Observer[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAndStartTimer")(options.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.miscObservableMod.Observer[Any]]]

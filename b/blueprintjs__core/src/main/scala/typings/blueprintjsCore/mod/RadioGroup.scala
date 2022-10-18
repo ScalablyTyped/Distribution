@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.radioGroupMod.RadioGroupProps
+import typings.blueprintjsCore.libEsmComponentsFormsRadioGroupMod.RadioGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "RadioGroup")
 @js.native
 open class RadioGroup protected ()
-  extends typings.blueprintjsCore.componentsMod.RadioGroup {
+  extends typings.blueprintjsCore.libEsmComponentsMod.RadioGroup {
   def this(props: RadioGroupProps) = this()
   def this(props: RadioGroupProps, context: Any) = this()
 }

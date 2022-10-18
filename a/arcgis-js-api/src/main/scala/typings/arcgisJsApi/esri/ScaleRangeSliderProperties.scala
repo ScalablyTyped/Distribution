@@ -62,7 +62,7 @@ trait ScaleRangeSliderProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#region)
     */
   var region: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 73 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 73, starting with typings.arcgisJsApi.arcgisJsApiStrings.AE, typings.arcgisJsApi.arcgisJsApiStrings.AR, typings.arcgisJsApi.arcgisJsApiStrings.AT */ Any
   ] = js.undefined
   
   /**
@@ -119,7 +119,9 @@ object ScaleRangeSliderProperties {
     
     inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
     
-    inline def setRegion(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 73 */ Any): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 73, starting with typings.arcgisJsApi.arcgisJsApiStrings.AE, typings.arcgisJsApi.arcgisJsApiStrings.AR, typings.arcgisJsApi.arcgisJsApiStrings.AT */ Any
+    ): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     

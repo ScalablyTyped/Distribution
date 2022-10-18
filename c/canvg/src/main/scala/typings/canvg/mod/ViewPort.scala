@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "ViewPort")
 @js.native
 open class ViewPort ()
-  extends typings.canvg.viewPortMod.ViewPort
+  extends typings.canvg.distViewPortMod.ViewPort
 /* static members */
 object ViewPort {
   

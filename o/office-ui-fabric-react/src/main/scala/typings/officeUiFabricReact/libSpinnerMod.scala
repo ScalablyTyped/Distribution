@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.spinnerTypesMod.ISpinnerProps
+import typings.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.ISpinnerProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object libSpinnerMod {
   @JSImport("office-ui-fabric-react/lib/Spinner", "SpinnerBase")
   @js.native
   open class SpinnerBase protected ()
-    extends typings.officeUiFabricReact.spinnerMod.SpinnerBase {
+    extends typings.officeUiFabricReact.libComponentsSpinnerMod.SpinnerBase {
     def this(props: ISpinnerProps) = this()
     /**
       * @deprecated
@@ -41,15 +41,17 @@ object libSpinnerMod {
   object SpinnerSize extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.spinnerTypesMod.SpinnerSize & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerSize & Double
+      ] = js.native
     
-    /* 3 */ val large: typings.officeUiFabricReact.spinnerTypesMod.SpinnerSize.large & Double = js.native
+    /* 3 */ val large: typings.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerSize.large & Double = js.native
     
-    /* 2 */ val medium: typings.officeUiFabricReact.spinnerTypesMod.SpinnerSize.medium & Double = js.native
+    /* 2 */ val medium: typings.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerSize.medium & Double = js.native
     
-    /* 1 */ val small: typings.officeUiFabricReact.spinnerTypesMod.SpinnerSize.small & Double = js.native
+    /* 1 */ val small: typings.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerSize.small & Double = js.native
     
-    /* 0 */ val xSmall: typings.officeUiFabricReact.spinnerTypesMod.SpinnerSize.xSmall & Double = js.native
+    /* 0 */ val xSmall: typings.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerSize.xSmall & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Spinner", "SpinnerType")
@@ -57,10 +59,12 @@ object libSpinnerMod {
   object SpinnerType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.spinnerTypesMod.SpinnerType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerType & Double
+      ] = js.native
     
-    /* 1 */ val large: typings.officeUiFabricReact.spinnerTypesMod.SpinnerType.large & Double = js.native
+    /* 1 */ val large: typings.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerType.large & Double = js.native
     
-    /* 0 */ val normal: typings.officeUiFabricReact.spinnerTypesMod.SpinnerType.normal & Double = js.native
+    /* 0 */ val normal: typings.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerType.normal & Double = js.native
   }
 }

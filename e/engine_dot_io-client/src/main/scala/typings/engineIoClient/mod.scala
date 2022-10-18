@@ -2,8 +2,8 @@ package typings.engineIoClient
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.engineIoClient.anon.PartialSocketOptions
-import typings.engineIoClient.pollingMod.Polling
-import typings.engineIoClient.websocketMod.WS
+import typings.engineIoClient.buildEsmTransportsPollingMod.Polling
+import typings.engineIoClient.buildEsmTransportsWebsocketMod.WS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object mod {
   @JSImport("engine.io-client", "Socket")
   @js.native
   open class Socket protected ()
-    extends typings.engineIoClient.socketMod.Socket {
+    extends typings.engineIoClient.buildEsmSocketMod.Socket {
     /**
       * Socket constructor.
       *
@@ -46,10 +46,10 @@ object mod {
     inline def protocol_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("protocol")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("engine.io-client", "Transport")
+  /* note: abstract class */ @JSImport("engine.io-client", "Transport")
   @js.native
-  abstract class Transport protected ()
-    extends typings.engineIoClient.transportMod.Transport {
+  open class Transport protected ()
+    extends typings.engineIoClient.buildEsmTransportMod.Transport {
     /**
       * Transport abstract constructor.
       *
@@ -60,6 +60,8 @@ object mod {
   }
   
   inline def installTimerFunctions(obj: Any, opts: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("installTimerFunctions")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def nextTick(callback: js.Function, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(scala.List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def parse(str: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
   

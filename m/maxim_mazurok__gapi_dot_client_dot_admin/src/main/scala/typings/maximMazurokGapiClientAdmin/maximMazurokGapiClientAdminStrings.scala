@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientAdminStrings {
   
   @js.native
-  sealed trait Channel extends StObject
-  inline def Channel: Channel = "Channel".asInstanceOf[Channel]
-  
-  @js.native
-  sealed trait DatetimeValue extends StObject
-  inline def DatetimeValue: DatetimeValue = "DatetimeValue".asInstanceOf[DatetimeValue]
-  
-  @js.native
   sealed trait admin extends StObject
   inline def admin: admin = "admin".asInstanceOf[admin]
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofClipPath
   extends StObject
-     with Instantiable0[typings.reactSketchapp.clipPathMod.ClipPath] {
+     with Instantiable0[typings.reactSketchapp.libComponentsSvgClipPathMod.ClipPath] {
   
   var propTypes: Id = js.native
 }

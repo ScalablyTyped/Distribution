@@ -1,12 +1,12 @@
 package typings.send
 
+import typings.node.NodeJS.WritableStream
 import typings.node.fsMod.Stats
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Stream
 import typings.send.sendStrings.allow
 import typings.send.sendStrings.deny
 import typings.send.sendStrings.ignore
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -256,7 +256,7 @@ object mod {
     /**
       * Pipe to `res`.
       */
-    def pipe[T /* <: WritableStream[Any] */](res: T): T = js.native
+    def pipe[T /* <: WritableStream */](res: T): T = js.native
     
     /**
       * Redirect to path.

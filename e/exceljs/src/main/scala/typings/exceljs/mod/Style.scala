@@ -1,7 +1,7 @@
 package typings.exceljs.mod
 
 import typings.exceljs.anon.PartialAlignment
-import typings.exceljs.anon.PartialBorders
+import typings.exceljs.anon.PartialBordersBottom
 import typings.exceljs.anon.PartialFont
 import typings.exceljs.anon.PartialProtection
 import org.scalablytyped.runtime.StObject
@@ -12,7 +12,7 @@ trait Style extends StObject {
   
   var alignment: PartialAlignment
   
-  var border: PartialBorders
+  var border: PartialBordersBottom
   
   var fill: Fill
   
@@ -26,7 +26,7 @@ object Style {
   
   inline def apply(
     alignment: PartialAlignment,
-    border: PartialBorders,
+    border: PartialBordersBottom,
     fill: Fill,
     font: PartialFont,
     numFmt: String,
@@ -40,7 +40,7 @@ object Style {
     
     inline def setAlignment(value: PartialAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    inline def setBorder(value: PartialBorders): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: PartialBordersBottom): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setFill(value: Fill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

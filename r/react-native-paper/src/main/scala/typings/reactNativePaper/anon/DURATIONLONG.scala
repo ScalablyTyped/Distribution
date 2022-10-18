@@ -1,7 +1,7 @@
 package typings.reactNativePaper.anon
 
 import typings.react.mod.global.JSX.Element
-import typings.reactNativePaper.snackbarMod.SnackbarProps
+import typings.reactNativePaper.libTypescriptComponentsSnackbarMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DURATIONLONG extends StObject {
   
-  def apply(hasVisibleActionDurationOnDismissChildrenWrapperStyleStyleThemeRest: SnackbarProps): Element | Null = js.native
+  def apply(hasVisibleActionDurationOnDismissChildrenWrapperStyleStyleThemeRest: Props): Element | Null = js.native
   
   /**
     * Show the Snackbar for a long duration.

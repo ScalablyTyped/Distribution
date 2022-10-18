@@ -1,8 +1,8 @@
 package typings.vueRouter.mod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.vueRouter.anon.Slots
-import typings.vueRouter.anon.`0`
+import typings.vueRouter.anon.Default
+import typings.vueRouter.anon.Props
 import typings.vueRouter.mod.^
 import typings.vueRuntimeCore.mod.AllowedComponentProps
 import typings.vueRuntimeCore.mod.ComponentCustomProps
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class RouterView ()
   extends StObject
-     with Slots {
+     with Props {
   
   /* CompleteClass */
   @JSName("$props")
@@ -24,9 +24,9 @@ open class RouterView ()
   
   /* CompleteClass */
   @JSName("$slots")
-  var $slots: `0` = js.native
+  var $slots: Default = js.native
 }
 object RouterView {
   
-  inline def apply: Instantiable0[Slots] = ^.asInstanceOf[js.Dynamic].selectDynamic("RouterView").asInstanceOf[Instantiable0[Slots]]
+  inline def apply: Instantiable0[Props] = ^.asInstanceOf[js.Dynamic].selectDynamic("RouterView").asInstanceOf[Instantiable0[Props]]
 }

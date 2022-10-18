@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueprintjs__core
 
-Typings are for version 4.10.2
+Typings are for version 4.11.3
 
 ## Library description:
 Core styles & components

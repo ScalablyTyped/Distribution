@@ -3,7 +3,6 @@ package typings.gun
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.TopLevel
 import typings.gun.anon.Ack
 import typings.gun.anon.Bucket
 import typings.gun.anon.Change
@@ -50,21 +49,59 @@ object mod extends Shortcut {
   
   object Gun {
     
-    type AccessObject[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof T ]: gun.gun.Gun.AlwaysDisallowedType<T[key]> extends never? never : gun.gun.Gun.AccessObject<T[key]>}
-      */ typings.gun.gunStrings.AccessObject & TopLevel[Any])
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      T extends object ? {[ key in keyof T ]: gun.gun.Gun.AlwaysDisallowedType<T[key]> extends never? never : gun.gun.Gun.AccessObject<T[key]>} : T
+      }}}
+      */
+    @js.native
+    trait AccessObject[T] extends StObject
     
     type AckCallback = js.Function1[/* ack */ Err | Ok, Unit]
     
     /** Gun does not accept Array value, so we need extract to make types correct */
-    type AllowArray[T] = ArrayOf[T] | T
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      gun.gun.Gun.ArrayOf<T> extends never ? T : gun.gun.Gun.ArrayOf<T>
+      }}}
+      */
+    @js.native
+    trait AllowArray[T] extends StObject
     
     /** These types cannot be stored on Gun */
-    type AlwaysDisallowedType[T] = AccessObject[T]
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      T extends (args : ...any): void ? never : T extends {new (args : ...any): any} ? never : gun.gun.Gun.AccessObject<T>
+      }}}
+      */
+    @js.native
+    trait AlwaysDisallowedType[T] extends StObject
     
-    type ArrayAsRecord[DataType] = (Record[String, Any]) | DataType
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      gun.gun.Gun.ArrayOf<DataType> extends never ? DataType : std.Record<string, any>
+      }}}
+      */
+    @js.native
+    trait ArrayAsRecord[DataType] extends StObject
     
-    type ArrayOf[T] = Any
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      T extends std.Array<infer U> ? U : never
+      }}}
+      */
+    @js.native
+    trait ArrayOf[T] extends StObject
     
     @js.native
     trait ChainReference[DataType, ReferenceKey, IsTop /* <: pre_root | root | `false` */] extends StObject {
@@ -137,18 +174,20 @@ object mod extends Shortcut {
         *
         * **Here the type of callback respect to the actual behavior**
         */
-      def get[K /* <: /* keyof DataType */ String */](key: K): ChainReference[
+      def get[K /* <: /* keyof DataType */ String */](
+        key: /* import warning: importer.ImportType#apply Failed type conversion: gun.gun.Gun.ArrayOf<DataType> extends never ? K : never */ js.Any
+      ): ChainReference[
             /* import warning: importer.ImportType#apply Failed type conversion: DataType[K] */ js.Any, 
             K, 
-            `false` | root
+            /* import warning: importer.ImportType#apply Failed type conversion: IsTop extends 'pre_root' ? 'root' : false */ js.Any
           ] = js.native
       def get[K /* <: /* keyof DataType */ String */](
-        key: K,
+        key: /* import warning: importer.ImportType#apply Failed type conversion: gun.gun.Gun.ArrayOf<DataType> extends never ? K : never */ js.Any,
         callback: js.Function2[/* paramA */ Recordgunrootidbackontagg, /* paramB */ Recordofftonexttheonasbac, Unit]
       ): ChainReference[
             /* import warning: importer.ImportType#apply Failed type conversion: DataType[K] */ js.Any, 
             K, 
-            `false` | root
+            /* import warning: importer.ImportType#apply Failed type conversion: IsTop extends 'pre_root' ? 'root' : false */ js.Any
           ] = js.native
       
       /**
@@ -389,8 +428,17 @@ object mod extends Shortcut {
         *
         * **This means only objects, for now, are supported.**
         */
-      def set(data: AlwaysDisallowedType[ArrayOf[DataType]]): ChainReference[ArrayOf[DataType], Any, `false`] = js.native
-      def set(data: AlwaysDisallowedType[ArrayOf[DataType]], callback: AckCallback): ChainReference[ArrayOf[DataType], Any, `false`] = js.native
+      def set(
+        data: AlwaysDisallowedType[
+              /* import warning: importer.ImportType#apply Failed type conversion: DataType extends std.Array<infer U> ? U extends {[key: string] : any, [key: number] : any} ? gun.gun.Gun.ArrayOf<DataType> : never : never */ js.Any
+            ]
+      ): ChainReference[ArrayOf[DataType], Any, `false`] = js.native
+      def set(
+        data: AlwaysDisallowedType[
+              /* import warning: importer.ImportType#apply Failed type conversion: DataType extends std.Array<infer U> ? U extends {[key: string] : any, [key: number] : any} ? gun.gun.Gun.ArrayOf<DataType> : never : never */ js.Any
+            ],
+        callback: AckCallback
+      ): ChainReference[ArrayOf[DataType], Any, `false`] = js.native
       
       /**
         * Returns a promise for you to use.
@@ -560,12 +608,36 @@ object mod extends Shortcut {
       }
     }
     
-    type DisallowArray[T] = T
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      gun.gun.Gun.ArrayOf<T> extends never ? T : never
+      }}}
+      */
+    @js.native
+    trait DisallowArray[T] extends StObject
     
     /** These types cannot be stored on Gun's root level */
-    type DisallowPrimitives[Open, T] = T
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      Open extends false ? T : T extends string ? never : T extends number ? never : T extends boolean ? never : T extends null ? never : T extends undefined ? never : T
+      }}}
+      */
+    @js.native
+    trait DisallowPrimitives[Open, T] extends StObject
     
-    type Parameters[T /* <: js.Function1[/* repeated */ Any, Any] */] = Any
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      T extends (args : infer P): any ? P : never
+      }}}
+      */
+    @js.native
+    trait Parameters[T /* <: js.Function1[/* repeated */ Any, Any] */] extends StObject
     
     type Saveable[DataType] = Partial[DataType] | String | Double | Boolean | Null | (ChainReference[DataType, Any, `false`])
   }

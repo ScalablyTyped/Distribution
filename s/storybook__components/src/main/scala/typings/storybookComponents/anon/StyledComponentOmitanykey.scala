@@ -359,7 +359,6 @@ import typings.storybookComponents.storybookComponentsStrings.video
 import typings.storybookComponents.storybookComponentsStrings.view
 import typings.storybookComponents.storybookComponentsStrings.wbr
 import typings.storybookComponents.storybookComponentsStrings.webview
-import typings.storybookTheming.anon.`1`
 import typings.storybookTheming.mod.DistributiveOmit
 import typings.storybookTheming.mod.PropsOf
 import typings.storybookTheming.mod.StyledComponent
@@ -381,7 +380,7 @@ trait StyledComponentOmitanykey extends StObject {
         size | align | valid | height
       ]) & InputStyleProps, 
       theme
-    ]) & `1`[typings.storybookTheming.mod.Theme]
+    ]) & typings.storybookTheming.anon.`0`[typings.storybookTheming.mod.Theme]
   ): ReactElement | Null = js.native
   def apply(
     props: (Omit[
@@ -393,7 +392,7 @@ trait StyledComponentOmitanykey extends StObject {
         size | align | valid | height
       ]) & InputStyleProps, 
       theme
-    ]) & `1`[typings.storybookTheming.mod.Theme],
+    ]) & typings.storybookTheming.anon.`0`[typings.storybookTheming.mod.Theme],
     context: Any
   ): ReactElement | Null = js.native
   
@@ -412,7 +411,7 @@ trait StyledComponentOmitanykey extends StObject {
           size | align | valid | height
         ]) & InputStyleProps, 
         theme
-      ]) & `1`[typings.storybookTheming.mod.Theme]
+      ]) & typings.storybookTheming.anon.`0`[typings.storybookTheming.mod.Theme]
     ]
   ] = js.native
   
@@ -429,7 +428,7 @@ trait StyledComponentOmitanykey extends StObject {
           size | align | valid | height
         ]) & InputStyleProps, 
         theme
-      ]) & `1`[typings.storybookTheming.mod.Theme]
+      ]) & typings.storybookTheming.anon.`0`[typings.storybookTheming.mod.Theme]
     ]
   ] = js.native
   

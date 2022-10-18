@@ -1,32 +1,32 @@
 package typings.sketchHqSketchFileFormatTs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.AssetCollection
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.BundleId
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.Color
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.ColorSpace
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.DocumentState
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.FontDescriptor
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.FontRef
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.ForeignLayerStyle
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.ForeignSwatch
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.ForeignSymbol
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.ForeignTextStyle
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.NumericalBool
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.Page
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.ParagraphStyle
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.PatchInfo
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.SharedStyleContainer
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.SharedTextStyleContainer
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.SketchVariant
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.StrikethroughStyle
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.SwatchContainer
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.SymbolContainer
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.TextTransform
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.TextVerticalAlignment
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.UnderlineStyle
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.Uuid
 import typings.sketchHqSketchFileFormatTs.sketchHqSketchFileFormatTsStrings.document
-import typings.sketchHqSketchFileFormatTs.typesMod.AssetCollection
-import typings.sketchHqSketchFileFormatTs.typesMod.BundleId
-import typings.sketchHqSketchFileFormatTs.typesMod.Color
-import typings.sketchHqSketchFileFormatTs.typesMod.ColorSpace
-import typings.sketchHqSketchFileFormatTs.typesMod.DocumentState
-import typings.sketchHqSketchFileFormatTs.typesMod.FontDescriptor
-import typings.sketchHqSketchFileFormatTs.typesMod.FontRef
-import typings.sketchHqSketchFileFormatTs.typesMod.ForeignLayerStyle
-import typings.sketchHqSketchFileFormatTs.typesMod.ForeignSwatch
-import typings.sketchHqSketchFileFormatTs.typesMod.ForeignSymbol
-import typings.sketchHqSketchFileFormatTs.typesMod.ForeignTextStyle
-import typings.sketchHqSketchFileFormatTs.typesMod.NumericalBool
-import typings.sketchHqSketchFileFormatTs.typesMod.Page
-import typings.sketchHqSketchFileFormatTs.typesMod.ParagraphStyle
-import typings.sketchHqSketchFileFormatTs.typesMod.PatchInfo
-import typings.sketchHqSketchFileFormatTs.typesMod.SharedStyleContainer
-import typings.sketchHqSketchFileFormatTs.typesMod.SharedTextStyleContainer
-import typings.sketchHqSketchFileFormatTs.typesMod.SketchVariant
-import typings.sketchHqSketchFileFormatTs.typesMod.StrikethroughStyle
-import typings.sketchHqSketchFileFormatTs.typesMod.SwatchContainer
-import typings.sketchHqSketchFileFormatTs.typesMod.SymbolContainer
-import typings.sketchHqSketchFileFormatTs.typesMod.TextTransform
-import typings.sketchHqSketchFileFormatTs.typesMod.TextVerticalAlignment
-import typings.sketchHqSketchFileFormatTs.typesMod.UnderlineStyle
-import typings.sketchHqSketchFileFormatTs.typesMod.Uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -291,6 +291,47 @@ object anon {
     
     var MSAttributedStringFontAttribute: FontDescriptor
     
+    var kerning: js.UndefOr[Double] = js.undefined
+    
+    var paragraphStyle: js.UndefOr[ParagraphStyle] = js.undefined
+    
+    var textStyleVerticalAlignmentKey: js.UndefOr[TextVerticalAlignment] = js.undefined
+  }
+  object Kerning {
+    
+    inline def apply(MSAttributedStringFontAttribute: FontDescriptor): Kerning = {
+      val __obj = js.Dynamic.literal(MSAttributedStringFontAttribute = MSAttributedStringFontAttribute.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Kerning]
+    }
+    
+    extension [Self <: Kerning](x: Self) {
+      
+      inline def setKerning(value: Double): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
+      
+      inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
+      
+      inline def setMSAttributedStringColorAttribute(value: Color): Self = StObject.set(x, "MSAttributedStringColorAttribute", value.asInstanceOf[js.Any])
+      
+      inline def setMSAttributedStringColorAttributeUndefined: Self = StObject.set(x, "MSAttributedStringColorAttribute", js.undefined)
+      
+      inline def setMSAttributedStringFontAttribute(value: FontDescriptor): Self = StObject.set(x, "MSAttributedStringFontAttribute", value.asInstanceOf[js.Any])
+      
+      inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
+      
+      inline def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
+      
+      inline def setTextStyleVerticalAlignmentKey(value: TextVerticalAlignment): Self = StObject.set(x, "textStyleVerticalAlignmentKey", value.asInstanceOf[js.Any])
+      
+      inline def setTextStyleVerticalAlignmentKeyUndefined: Self = StObject.set(x, "textStyleVerticalAlignmentKey", js.undefined)
+    }
+  }
+  
+  trait MSAttributedStringColorAttribute extends StObject {
+    
+    var MSAttributedStringColorAttribute: js.UndefOr[Color] = js.undefined
+    
+    var MSAttributedStringFontAttribute: FontDescriptor
+    
     var MSAttributedStringTextTransformAttribute: js.UndefOr[TextTransform] = js.undefined
     
     var kerning: js.UndefOr[Double] = js.undefined
@@ -303,14 +344,14 @@ object anon {
     
     var underlineStyle: js.UndefOr[UnderlineStyle] = js.undefined
   }
-  object Kerning {
+  object MSAttributedStringColorAttribute {
     
-    inline def apply(MSAttributedStringFontAttribute: FontDescriptor): Kerning = {
+    inline def apply(MSAttributedStringFontAttribute: FontDescriptor): MSAttributedStringColorAttribute = {
       val __obj = js.Dynamic.literal(MSAttributedStringFontAttribute = MSAttributedStringFontAttribute.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Kerning]
+      __obj.asInstanceOf[MSAttributedStringColorAttribute]
     }
     
-    extension [Self <: Kerning](x: Self) {
+    extension [Self <: MSAttributedStringColorAttribute](x: Self) {
       
       inline def setKerning(value: Double): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
       
@@ -341,47 +382,6 @@ object anon {
       inline def setUnderlineStyle(value: UnderlineStyle): Self = StObject.set(x, "underlineStyle", value.asInstanceOf[js.Any])
       
       inline def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
-    }
-  }
-  
-  trait MSAttributedStringColorAttribute extends StObject {
-    
-    var MSAttributedStringColorAttribute: js.UndefOr[Color] = js.undefined
-    
-    var MSAttributedStringFontAttribute: FontDescriptor
-    
-    var kerning: js.UndefOr[Double] = js.undefined
-    
-    var paragraphStyle: js.UndefOr[ParagraphStyle] = js.undefined
-    
-    var textStyleVerticalAlignmentKey: js.UndefOr[TextVerticalAlignment] = js.undefined
-  }
-  object MSAttributedStringColorAttribute {
-    
-    inline def apply(MSAttributedStringFontAttribute: FontDescriptor): MSAttributedStringColorAttribute = {
-      val __obj = js.Dynamic.literal(MSAttributedStringFontAttribute = MSAttributedStringFontAttribute.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MSAttributedStringColorAttribute]
-    }
-    
-    extension [Self <: MSAttributedStringColorAttribute](x: Self) {
-      
-      inline def setKerning(value: Double): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
-      
-      inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
-      
-      inline def setMSAttributedStringColorAttribute(value: Color): Self = StObject.set(x, "MSAttributedStringColorAttribute", value.asInstanceOf[js.Any])
-      
-      inline def setMSAttributedStringColorAttributeUndefined: Self = StObject.set(x, "MSAttributedStringColorAttribute", js.undefined)
-      
-      inline def setMSAttributedStringFontAttribute(value: FontDescriptor): Self = StObject.set(x, "MSAttributedStringFontAttribute", value.asInstanceOf[js.Any])
-      
-      inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
-      
-      inline def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
-      
-      inline def setTextStyleVerticalAlignmentKey(value: TextVerticalAlignment): Self = StObject.set(x, "textStyleVerticalAlignmentKey", value.asInstanceOf[js.Any])
-      
-      inline def setTextStyleVerticalAlignmentKeyUndefined: Self = StObject.set(x, "textStyleVerticalAlignmentKey", js.undefined)
     }
   }
   

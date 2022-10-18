@@ -9,7 +9,7 @@ object ShutdownRequest {
   
   @JSImport("vscode-languageserver", "ShutdownRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver", "ShutdownRequest.method")
   @js.native
@@ -17,5 +17,5 @@ object ShutdownRequest {
   
   @JSImport("vscode-languageserver", "ShutdownRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType0[Unit, scala.Nothing, Unit, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType0[Unit, scala.Nothing, Unit, Unit] = js.native
 }

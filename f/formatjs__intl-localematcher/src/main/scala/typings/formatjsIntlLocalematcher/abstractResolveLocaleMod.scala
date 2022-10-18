@@ -1,7 +1,6 @@
 package typings.formatjsIntlLocalematcher
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.formatjsIntlLocalematcher.anon.Dictk
 import typings.std.Record
 import typings.std.Set
@@ -11,13 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object abstractResolveLocaleMod {
   
-  @JSImport("@formatjs/intl-localematcher/lib/abstract/ResolveLocale", JSImport.Namespace)
+  @JSImport("@formatjs/intl-localematcher/abstract/ResolveLocale", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ResolveLocale[K /* <: String */, D /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in K ]: any}
-    */ typings.formatjsIntlLocalematcher.formatjsIntlLocalematcherStrings.ResolveLocale & TopLevel[Any] */](
+  inline def ResolveLocale[K /* <: String */, D /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in K ]: any} */ js.Any */](
     availableLocales: Set[String],
     requestedLocales: js.Array[String],
     options: Dictk,

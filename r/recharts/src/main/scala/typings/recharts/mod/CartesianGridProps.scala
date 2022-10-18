@@ -2,8 +2,8 @@ package typings.recharts.mod
 
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.recharts.anon.Height
 import typings.recharts.anon.Offset
+import typings.recharts.anon.Width
 import typings.recharts.rechartsInts.`100`
 import typings.recharts.rechartsInts.`200`
 import typings.recharts.rechartsInts.`300`
@@ -346,7 +346,7 @@ object CartesianGridProps {
     
     inline def setHorizontal(value: js.Object | ReactElement | (ContentRenderer[LineProps & CartesianGridProps]) | Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    inline def setHorizontalCoordinatesGenerator(value: /* arg */ Height => js.Array[Double]): Self = StObject.set(x, "horizontalCoordinatesGenerator", js.Any.fromFunction1(value))
+    inline def setHorizontalCoordinatesGenerator(value: /* arg */ Offset => js.Array[Double]): Self = StObject.set(x, "horizontalCoordinatesGenerator", js.Any.fromFunction1(value))
     
     inline def setHorizontalCoordinatesGeneratorUndefined: Self = StObject.set(x, "horizontalCoordinatesGenerator", js.undefined)
     
@@ -488,7 +488,7 @@ object CartesianGridProps {
     
     inline def setVertical(value: js.Object | ReactElement | (ContentRenderer[LineProps & CartesianGridProps]) | Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    inline def setVerticalCoordinatesGenerator(value: /* arg */ Offset => js.Array[Double]): Self = StObject.set(x, "verticalCoordinatesGenerator", js.Any.fromFunction1(value))
+    inline def setVerticalCoordinatesGenerator(value: /* arg */ Width => js.Array[Double]): Self = StObject.set(x, "verticalCoordinatesGenerator", js.Any.fromFunction1(value))
     
     inline def setVerticalCoordinatesGeneratorUndefined: Self = StObject.set(x, "verticalCoordinatesGenerator", js.undefined)
     

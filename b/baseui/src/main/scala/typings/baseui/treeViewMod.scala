@@ -12,8 +12,9 @@ import typings.baseui.treeViewTypesMod.TreeNodeData
 import typings.baseui.treeViewTypesMod.TreeNodeId
 import typings.baseui.treeViewTypesMod.TreeViewProps
 import typings.react.mod.ComponentType
+import typings.react.mod.PropsWithChildren
 import typings.react.mod.global.JSX.Element
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,7 +49,7 @@ object treeViewMod {
   
   @JSImport("baseui/tree-view", "TreeLabelInteractable")
   @js.native
-  val TreeLabelInteractable: ComponentType[Overrides] = js.native
+  val TreeLabelInteractable: PropsWithChildren[ComponentType[Overrides]] = js.native
   
   inline def TreeView(props: TreeViewProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeView")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   

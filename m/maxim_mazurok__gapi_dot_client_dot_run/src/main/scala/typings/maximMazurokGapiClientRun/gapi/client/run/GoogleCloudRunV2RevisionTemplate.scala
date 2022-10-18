@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientRun.gapi.client.run
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait GoogleCloudRunV2RevisionTemplate extends StObject {
   
   /** KRM-style annotations for the resource. */
   var annotations: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.GoogleCloudRunV2RevisionTemplate & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Holds the single container that defines the unit of execution for this Revision. */
@@ -25,9 +22,7 @@ trait GoogleCloudRunV2RevisionTemplate extends StObject {
   
   /** KRM-style labels for the resource. */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.GoogleCloudRunV2RevisionTemplate & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Sets the maximum number of requests that each serving instance can receive. */
@@ -64,9 +59,7 @@ object GoogleCloudRunV2RevisionTemplate {
   extension [Self <: GoogleCloudRunV2RevisionTemplate](x: Self) {
     
     inline def setAnnotations(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.GoogleCloudRunV2RevisionTemplate & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
@@ -86,9 +79,7 @@ object GoogleCloudRunV2RevisionTemplate {
     inline def setExecutionEnvironmentUndefined: Self = StObject.set(x, "executionEnvironment", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.GoogleCloudRunV2RevisionTemplate & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

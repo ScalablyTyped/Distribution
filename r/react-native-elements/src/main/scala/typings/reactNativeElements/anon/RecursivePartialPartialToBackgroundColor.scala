@@ -6,10 +6,10 @@ import typings.react.mod.ReactElement
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
+import typings.reactNativeElements.distConfigThemeMod.RecursivePartial
 import typings.reactNativeElements.reactNativeElementsStrings.ModalComponent
 import typings.reactNativeElements.reactNativeElementsStrings.onLongPress
 import typings.reactNativeElements.reactNativeElementsStrings.onPress
-import typings.reactNativeElements.themeMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

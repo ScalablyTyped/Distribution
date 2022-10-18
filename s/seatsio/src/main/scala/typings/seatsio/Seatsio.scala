@@ -17,8 +17,8 @@ import typings.seatsio.anon.LabelPrice
 import typings.seatsio.anon.Own
 import typings.seatsio.anon.Price
 import typings.seatsio.anon.TicketType
-import typings.seatsio.anon.Type
 import typings.seatsio.anon.X
+import typings.seatsio.anon.`0`
 import typings.seatsio.seatsioInts.`5`
 import typings.seatsio.seatsioStrings.Lato
 import typings.seatsio.seatsioStrings.Montserrat
@@ -835,7 +835,7 @@ object Seatsio {
     
     var disabledBySocialDistancingRules: Boolean = js.native
     
-    var parent: Type = js.native
+    var parent: `0` = js.native
     
     var restrictedView: Boolean = js.native
     
@@ -1557,21 +1557,21 @@ object Seatsio {
   
   /* Rewritten from type alias, can be one of: 
     - typings.seatsio.anon.Highlight
-    - typings.seatsio.anon.`0`
+    - typings.seatsio.anon.Type
   */
   trait SelectionValidator extends StObject
   object SelectionValidator {
-    
-    inline def `0`(): typings.seatsio.anon.`0` = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("consecutiveSeats")
-      __obj.asInstanceOf[typings.seatsio.anon.`0`]
-    }
     
     inline def Highlight(): typings.seatsio.anon.Highlight = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("noOrphanSeats")
       __obj.asInstanceOf[typings.seatsio.anon.Highlight]
+    }
+    
+    inline def Type(): typings.seatsio.anon.Type = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")("consecutiveSeats")
+      __obj.asInstanceOf[typings.seatsio.anon.Type]
     }
   }
   

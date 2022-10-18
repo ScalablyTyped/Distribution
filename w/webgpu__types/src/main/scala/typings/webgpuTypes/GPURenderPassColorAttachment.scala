@@ -8,30 +8,19 @@ trait GPURenderPassColorAttachment extends StObject {
   
   /**
     * Indicates the value to clear {@link GPURenderPassColorAttachment#view} to prior to executing the
-    * render pass. If not map/exist|provided defaults to `{r: 0, g: 0, b: 0, a: 0}`. Ignored
+    * render pass. If not map/exist|provided, defaults to `{r: 0, g: 0, b: 0, a: 0}`. Ignored
     * if {@link GPURenderPassColorAttachment#loadOp} is not {@link GPULoadOp#"clear"}.
-    * The members of {@link GPURenderPassColorAttachment#clearValue} are all double values, so
-    * they will first be converted to the fully qualified format type of
-    * {@link GPURenderPassColorAttachment#view} before being set as the clear value of
-    * {@link GPURenderPassColorAttachment#view}.
-    * <div algorithm="clearValue to texture value">
-    * Let `colorAttachmentFormat` be
-    * {@link GPURenderPassColorAttachment#view}.{@link GPUTextureView#[[descriptor]]}.{@link GPUTextureViewDescriptor#format}.
-    * `colorAttachmentFormat` has up to four components: `r`, `g`, `b`, and `a`, each
-    * component containing one scalar value.
-    * For each `componentType` of `colorAttachmentFormat` and corresponding component scalar
-    * value `value` in {@link GPURenderPassColorAttachment#clearValue}:
-    * 1. If `componentType` is a:
-    * <dl class=switch>
-    * : floating-point type or normalized type
-    * Convert `value` converted to an IDL value|to an IDL value of type {{unrestricted float}} (`f32`).
-    * : signed integer type
-    * Convert `value` converted to an IDL value|to an IDL value of type {{long long}} (`i32`).
-    * : unsigned integer type
-    * Convert `value` converted to an IDL value|to an IDL value of type {{unsigned long long}} (`u32`).
+    * The components of {@link GPURenderPassColorAttachment#clearValue} are all double values.
+    * They are converted [$to a texel value of texture format$] matching the render attachment.
+    * If conversion fails, a validation error is generated.
     */
   var clearValue: js.UndefOr[GPUColor] = js.undefined
   
+  /**
+    * Indicates the load operation to perform on {@link GPURenderPassColorAttachment#view} prior to
+    * executing the render pass.
+    * Note: It is recommended to prefer clearing; see {@link GPULoadOp#"clear"} for details.
+    */
   var loadOp: GPULoadOp
   
   /**
@@ -41,6 +30,10 @@ trait GPURenderPassColorAttachment extends StObject {
     */
   var resolveTarget: js.UndefOr[GPUTextureView] = js.undefined
   
+  /**
+    * The store operation to perform on {@link GPURenderPassColorAttachment#view}
+    * after executing the render pass.
+    */
   var storeOp: GPUStoreOp
   
   /**

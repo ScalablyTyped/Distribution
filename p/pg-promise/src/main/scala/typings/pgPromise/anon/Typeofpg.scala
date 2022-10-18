@@ -1,10 +1,10 @@
 package typings.pgPromise.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.pgPromise.pgSubsetMod.IClient
-import typings.pgPromise.pgSubsetMod.IConnectionParameters
-import typings.pgPromise.pgSubsetMod.IDefaults
-import typings.pgPromise.pgSubsetMod.ITypes
+import typings.pgPromise.typescriptPgSubsetMod.IClient
+import typings.pgPromise.typescriptPgSubsetMod.IConnectionParameters
+import typings.pgPromise.typescriptPgSubsetMod.IDefaults
+import typings.pgPromise.typescriptPgSubsetMod.ITypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

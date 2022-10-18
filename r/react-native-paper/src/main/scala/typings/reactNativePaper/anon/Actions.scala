@@ -1,6 +1,6 @@
 package typings.reactNativePaper.anon
 
-import typings.callstackReactThemeProvider.hoistNonReactStaticsMod.NonReactStatics
+import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonReactStatics
 import typings.react.mod.ComponentProps
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
@@ -12,8 +12,8 @@ import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.buttonMod.Props
-import typings.reactNativePaper.iconMod.IconSource
+import typings.reactNativePaper.libTypescriptComponentsButtonMod.Props
+import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSource
 import typings.reactNativePaper.reactNativePaperStrings.children
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -35,7 +35,7 @@ trait Actions extends StObject {
     LabelString & (Omit[
       ComponentProps[
         (ComponentType[
-          PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy
+          PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
         ]) & (NonReactStatics[
           ComponentType[Props] & (js.Function1[
             /* hasDisabledCompactModeDarkLoadingIconButtonColorChildrenUppercaseAccessibilityLabelAccessibilityHintOnPressOnLongPressStyleThemeContentStyleLabelStyleTestIDAccessibleRest */ Props, 
@@ -83,7 +83,7 @@ trait Actions extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * Whether banner is currently visible.
@@ -97,7 +97,7 @@ object Actions {
       LabelString & (Omit[
         ComponentProps[
           (ComponentType[
-            PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy
+            PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
           ]) & (NonReactStatics[
             ComponentType[Props] & (js.Function1[
               /* hasDisabledCompactModeDarkLoadingIconButtonColorChildrenUppercaseAccessibilityLabelAccessibilityHintOnPressOnLongPressStyleThemeContentStyleLabelStyleTestIDAccessibleRest */ Props, 
@@ -110,7 +110,7 @@ object Actions {
       ])
     ],
     children: String,
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme,
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme,
     visible: Boolean
   ): Actions = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
@@ -124,7 +124,7 @@ object Actions {
           LabelString & (Omit[
             ComponentProps[
               (ComponentType[
-                PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy
+                PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
               ]) & (NonReactStatics[
                 ComponentType[Props] & (js.Function1[
                   /* hasDisabledCompactModeDarkLoadingIconButtonColorChildrenUppercaseAccessibilityLabelAccessibilityHintOnPressOnLongPressStyleThemeContentStyleLabelStyleTestIDAccessibleRest */ Props, 
@@ -142,7 +142,7 @@ object Actions {
       value: (LabelString & (Omit[
           ComponentProps[
             (ComponentType[
-              PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy
+              PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
             ]) & (NonReactStatics[
               ComponentType[Props] & (js.Function1[
                 /* hasDisabledCompactModeDarkLoadingIconButtonColorChildrenUppercaseAccessibilityLabelAccessibilityHintOnPressOnLongPressStyleThemeContentStyleLabelStyleTestIDAccessibleRest */ Props, 
@@ -189,7 +189,7 @@ object Actions {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }

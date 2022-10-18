@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CameraProjectionMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.antvGLite.interfacesMod.CameraProjectionMode & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.antvGLite.distCameraInterfacesMod.CameraProjectionMode & Double] = js.native
   
-  /* 0 */ val ORTHOGRAPHIC: typings.antvGLite.interfacesMod.CameraProjectionMode.ORTHOGRAPHIC & Double = js.native
+  /* 0 */ val ORTHOGRAPHIC: typings.antvGLite.distCameraInterfacesMod.CameraProjectionMode.ORTHOGRAPHIC & Double = js.native
   
-  /* 1 */ val PERSPECTIVE: typings.antvGLite.interfacesMod.CameraProjectionMode.PERSPECTIVE & Double = js.native
+  /* 1 */ val PERSPECTIVE: typings.antvGLite.distCameraInterfacesMod.CameraProjectionMode.PERSPECTIVE & Double = js.native
 }

@@ -25,8 +25,6 @@ import typings.chromeApps.anon.`3D`
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chromeAppsInts.`2`
 import typings.chromeApps.chromeAppsStrings.NEW_NOTE
-import typings.chromeApps.chromeAppsStrings.new_note_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +44,15 @@ trait PartialManifest extends StObject {
     * @example
     * 'action_handlers': ['new_note']
     */
-  var action_handlers: js.UndefOr[js.Array[ToStringLiteral[NEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]]] = js.undefined
+  var action_handlers: js.UndefOr[
+    js.Array[
+      ToStringLiteral[
+        NEWNOTE, 
+        NEW_NOTE, 
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NEW_NOTE :'new_note'} extends keyof {  NEW_NOTE :'new_note'} ? std.Exclude<keyof {  NEW_NOTE :'new_note'}, 'new_note'> : never */ js.Any
+      ]
+    ]
+  ] = js.undefined
   
   //////////////
   // REQUIRED //
@@ -374,11 +380,25 @@ object PartialManifest {
   
   extension [Self <: PartialManifest](x: Self) {
     
-    inline def setAction_handlers(value: js.Array[ToStringLiteral[NEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]]): Self = StObject.set(x, "action_handlers", value.asInstanceOf[js.Any])
+    inline def setAction_handlers(
+      value: js.Array[
+          ToStringLiteral[
+            NEWNOTE, 
+            NEW_NOTE, 
+            /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NEW_NOTE :'new_note'} extends keyof {  NEW_NOTE :'new_note'} ? std.Exclude<keyof {  NEW_NOTE :'new_note'}, 'new_note'> : never */ js.Any
+          ]
+        ]
+    ): Self = StObject.set(x, "action_handlers", value.asInstanceOf[js.Any])
     
     inline def setAction_handlersUndefined: Self = StObject.set(x, "action_handlers", js.undefined)
     
-    inline def setAction_handlersVarargs(value: (ToStringLiteral[NEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]])*): Self = StObject.set(x, "action_handlers", js.Array(value*))
+    inline def setAction_handlersVarargs(
+      value: (ToStringLiteral[
+          NEWNOTE, 
+          NEW_NOTE, 
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NEW_NOTE :'new_note'} extends keyof {  NEW_NOTE :'new_note'} ? std.Exclude<keyof {  NEW_NOTE :'new_note'}, 'new_note'> : never */ js.Any
+        ])*
+    ): Self = StObject.set(x, "action_handlers", js.Array(value*))
     
     inline def setApp(value: Background): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

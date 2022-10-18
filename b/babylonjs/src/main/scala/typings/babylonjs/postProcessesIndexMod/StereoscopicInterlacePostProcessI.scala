@@ -1,7 +1,7 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.engineMod.Engine
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.enginesEngineMod.Engine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "StereoscopicInterlacePostProcessI")
 @js.native
 open class StereoscopicInterlacePostProcessI protected ()
-  extends typings.babylonjs.stereoscopicInterlacePostProcessMod.StereoscopicInterlacePostProcessI {
+  extends typings.babylonjs.postProcessesStereoscopicInterlacePostProcessMod.StereoscopicInterlacePostProcessI {
   /**
     * Initializes a StereoscopicInterlacePostProcessI
     * @param name The name of the effect.

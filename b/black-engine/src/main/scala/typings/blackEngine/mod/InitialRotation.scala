@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "InitialRotation")
 @js.native
 open class InitialRotation protected ()
-  extends typings.blackEngine.initialRotationMod.InitialRotation {
-  def this(values: (Double | typings.blackEngine.floatScatterBaseMod.FloatScatterBase)*) = this()
+  extends typings.blackEngine.particlesModsInitialRotationMod.InitialRotation {
+  def this(values: (Double | typings.blackEngine.scattersFloatScatterBaseMod.FloatScatterBase)*) = this()
 }

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDatafusion.gapi.client.datafusion
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,9 +53,7 @@ trait Instance extends StObject {
   
   /** The resource labels for instance to use to annotate any related underlying resources such as Compute Engine VMs. The character '=' is not allowed to be used within the labels. */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatafusion.maximMazurokGapiClientDatafusionStrings.Instance & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Output only. The name of this instance is in the form of projects/{project}/locations/{location}/instances/{instance}. */
@@ -67,9 +64,7 @@ trait Instance extends StObject {
   
   /** Map of additional options used to configure the behavior of Data Fusion instance. */
   var options: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatafusion.maximMazurokGapiClientDatafusionStrings.Instance & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Output only. P4 service account for the customer project. */
@@ -180,9 +175,7 @@ object Instance {
     inline def setGcsBucketUndefined: Self = StObject.set(x, "gcsBucket", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatafusion.maximMazurokGapiClientDatafusionStrings.Instance & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -196,9 +189,7 @@ object Instance {
     inline def setNetworkConfigUndefined: Self = StObject.set(x, "networkConfig", js.undefined)
     
     inline def setOptions(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatafusion.maximMazurokGapiClientDatafusionStrings.Instance & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)

@@ -1,6 +1,6 @@
 package typings.rollup.mod
 
-import typings.rollup.rollupBooleans.`false`
+import typings.rollup.rollupStrings.`if-default-prop`
 import typings.rollup.rollupStrings.`inline`
 import typings.rollup.rollupStrings.auto
 import typings.rollup.rollupStrings.default
@@ -17,7 +17,7 @@ trait OutputOptions extends StObject {
   
   var assetFileNames: js.UndefOr[String | (js.Function1[/* chunkInfo */ PreRenderedAsset, String])] = js.undefined
   
-  var banner: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
+  var banner: js.UndefOr[String | AddonFunction] = js.undefined
   
   var chunkFileNames: js.UndefOr[String | (js.Function1[/* chunkInfo */ PreRenderedChunk, String])] = js.undefined
   
@@ -29,20 +29,24 @@ trait OutputOptions extends StObject {
   /** @deprecated Use the "renderDynamicImport" plugin hook instead. */
   var dynamicImportFunction: js.UndefOr[String] = js.undefined
   
+  var dynamicImportInCjs: js.UndefOr[Boolean] = js.undefined
+  
   var entryFileNames: js.UndefOr[String | (js.Function1[/* chunkInfo */ PreRenderedChunk, String])] = js.undefined
   
-  var esModule: js.UndefOr[Boolean] = js.undefined
+  var esModule: js.UndefOr[Boolean | `if-default-prop`] = js.undefined
   
   var exports: js.UndefOr[default | named | none | auto] = js.undefined
   
   var extend: js.UndefOr[Boolean] = js.undefined
+  
+  var externalImportAssertions: js.UndefOr[Boolean] = js.undefined
   
   var externalLiveBindings: js.UndefOr[Boolean] = js.undefined
   
   // only required for bundle.write
   var file: js.UndefOr[String] = js.undefined
   
-  var footer: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
+  var footer: js.UndefOr[String | AddonFunction] = js.undefined
   
   var format: js.UndefOr[ModuleFormat] = js.undefined
   
@@ -60,7 +64,7 @@ trait OutputOptions extends StObject {
   
   var interop: js.UndefOr[InteropType | GetInterop] = js.undefined
   
-  var intro: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
+  var intro: js.UndefOr[String | AddonFunction] = js.undefined
   
   var manualChunks: js.UndefOr[ManualChunksOption] = js.undefined
   
@@ -73,11 +77,11 @@ trait OutputOptions extends StObject {
   
   var noConflict: js.UndefOr[Boolean] = js.undefined
   
-  var outro: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
+  var outro: js.UndefOr[String | AddonFunction] = js.undefined
   
   var paths: js.UndefOr[OptionsPaths] = js.undefined
   
-  var plugins: js.UndefOr[js.Array[js.UndefOr[OutputPlugin | Null | `false`]]] = js.undefined
+  var plugins: js.UndefOr[OutputPluginOption] = js.undefined
   
   /** @deprecated Use "generatedCode.constBindings" instead. */
   var preferConst: js.UndefOr[Boolean] = js.undefined
@@ -123,9 +127,9 @@ object OutputOptions {
     
     inline def setAssetFileNamesUndefined: Self = StObject.set(x, "assetFileNames", js.undefined)
     
-    inline def setBanner(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+    inline def setBanner(value: String | AddonFunction): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     
-    inline def setBannerFunction0(value: () => String | js.Promise[String]): Self = StObject.set(x, "banner", js.Any.fromFunction0(value))
+    inline def setBannerFunction1(value: /* chunk */ RenderedChunk => String | js.Promise[String]): Self = StObject.set(x, "banner", js.Any.fromFunction1(value))
     
     inline def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
     
@@ -147,13 +151,17 @@ object OutputOptions {
     
     inline def setDynamicImportFunctionUndefined: Self = StObject.set(x, "dynamicImportFunction", js.undefined)
     
+    inline def setDynamicImportInCjs(value: Boolean): Self = StObject.set(x, "dynamicImportInCjs", value.asInstanceOf[js.Any])
+    
+    inline def setDynamicImportInCjsUndefined: Self = StObject.set(x, "dynamicImportInCjs", js.undefined)
+    
     inline def setEntryFileNames(value: String | (js.Function1[/* chunkInfo */ PreRenderedChunk, String])): Self = StObject.set(x, "entryFileNames", value.asInstanceOf[js.Any])
     
     inline def setEntryFileNamesFunction1(value: /* chunkInfo */ PreRenderedChunk => String): Self = StObject.set(x, "entryFileNames", js.Any.fromFunction1(value))
     
     inline def setEntryFileNamesUndefined: Self = StObject.set(x, "entryFileNames", js.undefined)
     
-    inline def setEsModule(value: Boolean): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
+    inline def setEsModule(value: Boolean | `if-default-prop`): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
     
     inline def setEsModuleUndefined: Self = StObject.set(x, "esModule", js.undefined)
     
@@ -165,6 +173,10 @@ object OutputOptions {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
+    inline def setExternalImportAssertions(value: Boolean): Self = StObject.set(x, "externalImportAssertions", value.asInstanceOf[js.Any])
+    
+    inline def setExternalImportAssertionsUndefined: Self = StObject.set(x, "externalImportAssertions", js.undefined)
+    
     inline def setExternalLiveBindings(value: Boolean): Self = StObject.set(x, "externalLiveBindings", value.asInstanceOf[js.Any])
     
     inline def setExternalLiveBindingsUndefined: Self = StObject.set(x, "externalLiveBindings", js.undefined)
@@ -173,9 +185,9 @@ object OutputOptions {
     
     inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    inline def setFooter(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: String | AddonFunction): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    inline def setFooterFunction0(value: () => String | js.Promise[String]): Self = StObject.set(x, "footer", js.Any.fromFunction0(value))
+    inline def setFooterFunction1(value: /* chunk */ RenderedChunk => String | js.Promise[String]): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
     
     inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
@@ -215,15 +227,15 @@ object OutputOptions {
     
     inline def setInteropUndefined: Self = StObject.set(x, "interop", js.undefined)
     
-    inline def setIntro(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
+    inline def setIntro(value: String | AddonFunction): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
     
-    inline def setIntroFunction0(value: () => String | js.Promise[String]): Self = StObject.set(x, "intro", js.Any.fromFunction0(value))
+    inline def setIntroFunction1(value: /* chunk */ RenderedChunk => String | js.Promise[String]): Self = StObject.set(x, "intro", js.Any.fromFunction1(value))
     
     inline def setIntroUndefined: Self = StObject.set(x, "intro", js.undefined)
     
     inline def setManualChunks(value: ManualChunksOption): Self = StObject.set(x, "manualChunks", value.asInstanceOf[js.Any])
     
-    inline def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => String | Null | Unit): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
+    inline def setManualChunksFunction2(value: (/* id */ String, /* meta */ ManualChunkMeta) => String | NullValue): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
     
     inline def setManualChunksUndefined: Self = StObject.set(x, "manualChunks", js.undefined)
     
@@ -243,9 +255,9 @@ object OutputOptions {
     
     inline def setNoConflictUndefined: Self = StObject.set(x, "noConflict", js.undefined)
     
-    inline def setOutro(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "outro", value.asInstanceOf[js.Any])
+    inline def setOutro(value: String | AddonFunction): Self = StObject.set(x, "outro", value.asInstanceOf[js.Any])
     
-    inline def setOutroFunction0(value: () => String | js.Promise[String]): Self = StObject.set(x, "outro", js.Any.fromFunction0(value))
+    inline def setOutroFunction1(value: /* chunk */ RenderedChunk => String | js.Promise[String]): Self = StObject.set(x, "outro", js.Any.fromFunction1(value))
     
     inline def setOutroUndefined: Self = StObject.set(x, "outro", js.undefined)
     
@@ -255,11 +267,9 @@ object OutputOptions {
     
     inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    inline def setPlugins(value: js.Array[js.UndefOr[OutputPlugin | Null | `false`]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: OutputPluginOption): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
-    
-    inline def setPluginsVarargs(value: (js.UndefOr[OutputPlugin | Null | `false`])*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setPreferConst(value: Boolean): Self = StObject.set(x, "preferConst", value.asInstanceOf[js.Any])
     

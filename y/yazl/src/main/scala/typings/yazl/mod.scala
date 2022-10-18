@@ -1,7 +1,7 @@
 package typings.yazl
 
 import typings.buffer.mod.Buffer
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.yazl.anon.PartialDirectoryOptions
 import typings.yazl.anon.PartialOptions
 import typings.yazl.anon.PartialReadStreamOptions
@@ -24,8 +24,8 @@ object mod {
     def addFile(realPath: String, metadataPath: String): Unit = js.native
     def addFile(realPath: String, metadataPath: String, options: PartialOptions): Unit = js.native
     
-    def addReadStream(input: ReadableStream[Any], metadataPath: String): Unit = js.native
-    def addReadStream(input: ReadableStream[Any], metadataPath: String, options: PartialReadStreamOptions): Unit = js.native
+    def addReadStream(input: ReadableStream, metadataPath: String): Unit = js.native
+    def addReadStream(input: ReadableStream, metadataPath: String, options: PartialReadStreamOptions): Unit = js.native
     
     def dateToDosDateTime(jsDate: js.Date): DosDateTime = js.native
     
@@ -34,7 +34,7 @@ object mod {
     def end(options: EndOptions): Unit = js.native
     def end(options: EndOptions, finalSizeCallback: js.Function0[Unit]): Unit = js.native
     
-    var outputStream: ReadableStream[Any] = js.native
+    var outputStream: ReadableStream = js.native
   }
   
   trait DirectoryOptions extends StObject {

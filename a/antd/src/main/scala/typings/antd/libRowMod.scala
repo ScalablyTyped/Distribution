@@ -1,7 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.gridRowMod.RowProps
+import typings.antd.libGridRowMod.RowProps
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement

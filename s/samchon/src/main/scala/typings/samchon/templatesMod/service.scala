@@ -1,55 +1,55 @@
 package typings.samchon.templatesMod
 
-import typings.samchon.webClientDriverMod.WebClientDriver
+import typings.samchon.protocolCommunicatorClientDriverWebClientDriverMod.WebClientDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object service {
   
-  @JSImport("samchon/templates", "service.Client")
+  /* note: abstract class */ @JSImport("samchon/templates", "service.Client")
   @js.native
-  abstract class Client protected ()
-    extends typings.samchon.serviceMod.Client {
+  open class Client protected ()
+    extends typings.samchon.templatesServiceMod.Client {
     /**
       * Construct from parent {@link User} and communicator.
       *
       * @param user Parent {@link User} object.
       * @param driver Communicator with remote client.
       */
-    def this(user: typings.samchon.userMod.User, driver: WebClientDriver) = this()
+    def this(user: typings.samchon.templatesServiceUserMod.User, driver: WebClientDriver) = this()
   }
   
-  @JSImport("samchon/templates", "service.Server")
+  /* note: abstract class */ @JSImport("samchon/templates", "service.Server")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class Server ()
-    extends typings.samchon.serviceMod.Server
+  open class Server ()
+    extends typings.samchon.templatesServiceMod.Server
   
-  @JSImport("samchon/templates", "service.Service")
+  /* note: abstract class */ @JSImport("samchon/templates", "service.Service")
   @js.native
-  abstract class Service protected ()
-    extends typings.samchon.serviceMod.Service {
+  open class Service protected ()
+    extends typings.samchon.templatesServiceMod.Service {
     /**
       * Construct from parent {@link Client} and requested path.
       *
       * @param client Driver of remote client.
       * @param path Requested path that identifies this {@link Service}.
       */
-    def this(client: typings.samchon.clientMod.Client, path: String) = this()
+    def this(client: typings.samchon.templatesServiceClientMod.Client, path: String) = this()
   }
   
-  @JSImport("samchon/templates", "service.User")
+  /* note: abstract class */ @JSImport("samchon/templates", "service.User")
   @js.native
-  abstract class User protected ()
-    extends typings.samchon.serviceMod.User {
+  open class User protected ()
+    extends typings.samchon.templatesServiceMod.User {
     /**
       * Construct from its parent {@link Server}.
       *
       * @param server The parent {@link Server} object.
       */
-    def this(server: typings.samchon.serviceServerMod.Server) = this()
+    def this(server: typings.samchon.templatesServiceServerMod.Server) = this()
   }
 }

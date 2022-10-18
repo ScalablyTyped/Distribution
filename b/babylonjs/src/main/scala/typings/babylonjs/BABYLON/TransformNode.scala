@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.anon.`2`
+import typings.babylonjs.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -294,10 +294,10 @@ trait TransformNode
     options: Unit,
     onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
   ): Nullable[TransformNode] = js.native
-  def instantiateHierarchy(newParent: Unit, options: `2`): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(newParent: Unit, options: `0`): Nullable[TransformNode] = js.native
   def instantiateHierarchy(
     newParent: Unit,
-    options: `2`,
+    options: `0`,
     onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
   ): Nullable[TransformNode] = js.native
   def instantiateHierarchy(newParent: Nullable[TransformNode]): Nullable[TransformNode] = js.native
@@ -306,10 +306,10 @@ trait TransformNode
     options: Unit,
     onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
   ): Nullable[TransformNode] = js.native
-  def instantiateHierarchy(newParent: Nullable[TransformNode], options: `2`): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(newParent: Nullable[TransformNode], options: `0`): Nullable[TransformNode] = js.native
   def instantiateHierarchy(
     newParent: Nullable[TransformNode],
-    options: `2`,
+    options: `0`,
     onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
   ): Nullable[TransformNode] = js.native
   
@@ -526,13 +526,17 @@ trait TransformNode
     * The node will remain exactly where it is and its position / rotation will be updated accordingly.
     * Note that if the mesh has a pivot matrix / point defined it will be applied after the parent was updated.
     * In that case the node will not remain in the same space as it is, as the pivot will be applied.
+    * To avoid this, you can set updatePivot to true and the pivot will be updated to identity
     * @see https://doc.babylonjs.com/how_to/parenting
     * @param node the node ot set as the parent
     * @param preserveScalingSign if true, keep scaling sign of child. Otherwise, scaling sign might change.
+    * @param updatePivot if true, update the pivot matrix to keep the node in the same space as before
     * @returns this TransformNode.
     */
   def setParent(node: Nullable[Node]): TransformNode = js.native
   def setParent(node: Nullable[Node], preserveScalingSign: Boolean): TransformNode = js.native
+  def setParent(node: Nullable[Node], preserveScalingSign: Boolean, updatePivot: Boolean): TransformNode = js.native
+  def setParent(node: Nullable[Node], preserveScalingSign: Unit, updatePivot: Boolean): TransformNode = js.native
   
   /**
     * Sets a new pivot matrix to the current node

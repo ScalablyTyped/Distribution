@@ -143,14 +143,14 @@ object mod {
     @JSImport("antlr4", "tree.ErrorNode")
     @js.native
     open class ErrorNode protected ()
-      extends typings.antlr4.treeMod.ErrorNode {
+      extends typings.antlr4.treeTreeMod.ErrorNode {
       def this(symbol: typings.antlr4.tokenMod.Token) = this()
     }
     
     @JSImport("antlr4", "tree.ErrorNodeImpl")
     @js.native
     open class ErrorNodeImpl protected ()
-      extends typings.antlr4.treeMod.ErrorNodeImpl {
+      extends typings.antlr4.treeTreeMod.ErrorNodeImpl {
       def this(token: typings.antlr4.tokenMod.Token) = this()
     }
     
@@ -161,41 +161,41 @@ object mod {
     @JSImport("antlr4", "tree.ParseTree")
     @js.native
     open class ParseTree ()
-      extends typings.antlr4.treeMod.ParseTree
+      extends typings.antlr4.treeTreeMod.ParseTree
     
     @JSImport("antlr4", "tree.ParseTreeVisitor")
     @js.native
     open class ParseTreeVisitor ()
-      extends typings.antlr4.treeMod.ParseTreeVisitor
+      extends typings.antlr4.treeTreeMod.ParseTreeVisitor
     
     @JSImport("antlr4", "tree.ParseTreeWalker")
     @js.native
     open class ParseTreeWalker ()
-      extends typings.antlr4.treeMod.ParseTreeWalker
+      extends typings.antlr4.treeTreeMod.ParseTreeWalker
     /* static members */
     object ParseTreeWalker {
       
       @JSImport("antlr4", "tree.ParseTreeWalker.DEFAULT")
       @js.native
-      val DEFAULT: typings.antlr4.treeMod.ParseTreeWalker = js.native
+      val DEFAULT: typings.antlr4.treeTreeMod.ParseTreeWalker = js.native
     }
     
     @JSImport("antlr4", "tree.RuleNode")
     @js.native
     open class RuleNode ()
-      extends typings.antlr4.treeMod.RuleNode
+      extends typings.antlr4.treeTreeMod.RuleNode
     
     @JSImport("antlr4", "tree.TerminalNode")
     @js.native
     open class TerminalNode protected ()
-      extends typings.antlr4.treeMod.TerminalNode {
+      extends typings.antlr4.treeTreeMod.TerminalNode {
       def this(symbol: typings.antlr4.tokenMod.Token) = this()
     }
     
     @JSImport("antlr4", "tree.TerminalNodeImpl")
     @js.native
     open class TerminalNodeImpl protected ()
-      extends typings.antlr4.treeMod.TerminalNodeImpl {
+      extends typings.antlr4.treeTreeMod.TerminalNodeImpl {
       def this(symbol: typings.antlr4.tokenMod.Token) = this()
     }
   }

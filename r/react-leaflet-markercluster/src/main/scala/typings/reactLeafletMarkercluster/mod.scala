@@ -6,7 +6,7 @@ import typings.leaflet.mod.IconOptions
 import typings.leaflet.mod.Icon_
 import typings.leaflet.mod.Point_
 import typings.leaflet.mod.PolylineOptions
-import typings.leafletMarkercluster.mod.MarkerCluster
+import typings.leafletMarkercluster.leafletMod.MarkerCluster
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

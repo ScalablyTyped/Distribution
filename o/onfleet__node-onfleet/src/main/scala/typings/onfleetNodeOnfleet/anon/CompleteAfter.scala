@@ -1,8 +1,8 @@
 package typings.onfleetNodeOnfleet.anon
 
-import typings.onfleetNodeOnfleet.destinationsMod.CreateDestinationProps
 import typings.onfleetNodeOnfleet.metadataMod.OnfleetMetadata
-import typings.onfleetNodeOnfleet.recipientsMod.OnfleetRecipient
+import typings.onfleetNodeOnfleet.resourcesDestinationsMod.CreateDestinationProps
+import typings.onfleetNodeOnfleet.resourcesRecipientsMod.OnfleetRecipient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

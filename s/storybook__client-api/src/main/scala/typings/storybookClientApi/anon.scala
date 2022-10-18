@@ -1,12 +1,12 @@
 package typings.storybookClientApi
 
 import typings.std.Record
-import typings.storybookClientApi.typesMod._StorySpecifier
-import typings.storybookStore.ts39TypesMod.ModuleExports
-import typings.storybookStore.ts39TypesMod.ModuleImportFn
-import typings.storybookStore.ts39TypesMod.Path
-import typings.storybookStore.ts39TypesMod.PromiseLike
-import typings.storybookStore.ts39TypesMod.StoryIndexEntry
+import typings.storybookClientApi.distTs3Dot9TypesMod._StorySpecifier
+import typings.storybookStore.distTs3Dot9TypesMod.ModuleExports
+import typings.storybookStore.distTs3Dot9TypesMod.ModuleImportFn
+import typings.storybookStore.distTs3Dot9TypesMod.Path
+import typings.storybookStore.distTs3Dot9TypesMod.PromiseLike
+import typings.storybookStore.distTs3Dot9TypesMod.StoryIndexEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

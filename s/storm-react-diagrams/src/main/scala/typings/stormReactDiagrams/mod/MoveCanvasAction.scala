@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "MoveCanvasAction")
 @js.native
 open class MoveCanvasAction protected ()
-  extends typings.stormReactDiagrams.moveCanvasActionMod.MoveCanvasAction {
+  extends typings.stormReactDiagrams.distSrcActionsMoveCanvasActionMod.MoveCanvasAction {
   def this(
     mouseX: Double,
     mouseY: Double,
-    diagramModel: typings.stormReactDiagrams.diagramModelMod.DiagramModel
+    diagramModel: typings.stormReactDiagrams.distSrcModelsDiagramModelMod.DiagramModel
   ) = this()
 }

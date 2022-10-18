@@ -11,7 +11,7 @@ trait PickSunburstOptionsdataco extends StObject {
   
   var data: Any
   
-  var hierarchyConfig: js.UndefOr[OmitHierarchyOptionastype] = js.undefined
+  var hierarchyConfig: js.UndefOr[OmitHierarchyOptionastypeActiveDepth] = js.undefined
   
   var rawFields: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -30,7 +30,7 @@ object PickSunburstOptionsdataco {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setHierarchyConfig(value: OmitHierarchyOptionastype): Self = StObject.set(x, "hierarchyConfig", value.asInstanceOf[js.Any])
+    inline def setHierarchyConfig(value: OmitHierarchyOptionastypeActiveDepth): Self = StObject.set(x, "hierarchyConfig", value.asInstanceOf[js.Any])
     
     inline def setHierarchyConfigUndefined: Self = StObject.set(x, "hierarchyConfig", js.undefined)
     

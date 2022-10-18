@@ -1,0 +1,64 @@
+package typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.DataType
+
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Border
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlock
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockEnd
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockEndWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockStart
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockStartWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBottom
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBottomWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInline
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineEnd
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineEndWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineStart
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineStartWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderLeft
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderLeftWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderRight
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderRightWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderTop
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderTopWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ColumnRule
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ColumnRuleWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Outline
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._OutlineWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitBorderBefore
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitBorderBeforeWidth
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait _LineWidth[TLength]
+  extends StObject
+     with _Border[TLength]
+     with _BorderBlock[TLength]
+     with _BorderBlockEnd[TLength]
+     with _BorderBlockEndWidth[TLength]
+     with _BorderBlockStart[TLength]
+     with _BorderBlockStartWidth[TLength]
+     with _BorderBlockWidth[TLength]
+     with _BorderBottom[TLength]
+     with _BorderBottomWidth[TLength]
+     with _BorderInline[TLength]
+     with _BorderInlineEnd[TLength]
+     with _BorderInlineEndWidth[TLength]
+     with _BorderInlineStart[TLength]
+     with _BorderInlineStartWidth[TLength]
+     with _BorderInlineWidth[TLength]
+     with _BorderLeft[TLength]
+     with _BorderLeftWidth[TLength]
+     with _BorderRight[TLength]
+     with _BorderRightWidth[TLength]
+     with _BorderTop[TLength]
+     with _BorderTopWidth[TLength]
+     with _BorderWidth[TLength]
+     with _ColumnRule[TLength]
+     with _ColumnRuleWidth[TLength]
+     with _Outline[TLength]
+     with _OutlineWidth[TLength]
+     with _WebkitBorderBefore[TLength]
+     with _WebkitBorderBeforeWidth[TLength]

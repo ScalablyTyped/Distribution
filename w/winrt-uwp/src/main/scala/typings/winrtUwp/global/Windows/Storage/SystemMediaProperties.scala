@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A helper object that provides indexing names for Windows media file properties. */
-@JSGlobal("Windows.Storage.SystemMediaProperties")
+/* note: abstract class */ @JSGlobal("Windows.Storage.SystemMediaProperties")
 @js.native
-abstract class SystemMediaProperties ()
+open class SystemMediaProperties ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.SystemMediaProperties {
   

@@ -5,11 +5,11 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.requestStats.anon.Bytes
 import typings.requestStats.anon.BytesDelta
 import typings.requestStats.anon.Headers
-import typings.requestStats.anon.Speed
+import typings.requestStats.anon.Raw
 import typings.requestStats.requestStatsStrings.complete
 import typings.requestStats.requestStatsStrings.request
 import org.scalablytyped.runtime.StObject
@@ -56,19 +56,19 @@ object mod {
   ): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
   inline def apply(
     server: typings.node.httpsMod.Server[
-      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
       Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ]
     ]
   ): StatsEmitter = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[StatsEmitter]
   inline def apply(
     server: typings.node.httpsMod.Server[
-      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
       Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ]
     ],
     statsCallback: StatsCallback
@@ -85,9 +85,9 @@ object mod {
       */
     var completed: Boolean
     
-    var req: BytesDelta
+    var req: Bytes
     
-    var res: Speed
+    var res: BytesDelta
     
     /**
       * The total time the reuqest have been in progress
@@ -101,7 +101,7 @@ object mod {
   }
   object Progress {
     
-    inline def apply(completed: Boolean, req: BytesDelta, res: Speed, time: Double, timeDelta: Double): Progress = {
+    inline def apply(completed: Boolean, req: Bytes, res: BytesDelta, time: Double, timeDelta: Double): Progress = {
       val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], timeDelta = timeDelta.asInstanceOf[js.Any])
       __obj.asInstanceOf[Progress]
     }
@@ -110,9 +110,9 @@ object mod {
       
       inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
       
-      inline def setReq(value: BytesDelta): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: Bytes): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      inline def setRes(value: Speed): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: BytesDelta): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
@@ -149,9 +149,9 @@ object mod {
       */
     var ok: Boolean
     
-    var req: Bytes
+    var req: Headers
     
-    var res: Headers
+    var res: Raw
     
     /**
       * The milliseconds it took to serve the request
@@ -160,7 +160,7 @@ object mod {
   }
   object Stats {
     
-    inline def apply(ok: Boolean, req: Bytes, res: Headers, time: Double): Stats = {
+    inline def apply(ok: Boolean, req: Headers, res: Raw, time: Double): Stats = {
       val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stats]
     }
@@ -169,9 +169,9 @@ object mod {
       
       inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
-      inline def setReq(value: Bytes): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: Headers): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      inline def setRes(value: Headers): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: Raw): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }

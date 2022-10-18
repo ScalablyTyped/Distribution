@@ -1,8 +1,8 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.binMod.BinParams
-import typings.vegaLite.channelMod.NonPositionChannel
-import typings.vegaLite.channeldefMod.TypedFieldDef
+import typings.vegaLite.buildSrcBinMod.BinParams
+import typings.vegaLite.buildSrcChannelMod.NonPositionChannel
+import typings.vegaLite.buildSrcChanneldefMod.TypedFieldDef
 import typings.vegaLite.vegaLiteStrings.binned
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

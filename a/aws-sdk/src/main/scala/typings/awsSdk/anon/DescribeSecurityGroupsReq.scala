@@ -1,15 +1,15 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.ec2Mod.Boolean
-import typings.awsSdk.ec2Mod.DescribeSecurityGroupsMaxResults
-import typings.awsSdk.ec2Mod.Filter
-import typings.awsSdk.ec2Mod.FilterList
-import typings.awsSdk.ec2Mod.GroupIdStringList
-import typings.awsSdk.ec2Mod.GroupNameStringList
-import typings.awsSdk.ec2Mod.SecurityGroupId
-import typings.awsSdk.ec2Mod.SecurityGroupName
-import typings.awsSdk.ec2Mod.String
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsEc2Mod.Boolean
+import typings.awsSdk.clientsEc2Mod.DescribeSecurityGroupsMaxResults
+import typings.awsSdk.clientsEc2Mod.Filter
+import typings.awsSdk.clientsEc2Mod.FilterList
+import typings.awsSdk.clientsEc2Mod.GroupIdStringList
+import typings.awsSdk.clientsEc2Mod.GroupNameStringList
+import typings.awsSdk.clientsEc2Mod.SecurityGroupId
+import typings.awsSdk.clientsEc2Mod.SecurityGroupName
+import typings.awsSdk.clientsEc2Mod.String
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

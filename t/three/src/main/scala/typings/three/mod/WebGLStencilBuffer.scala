@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "WebGLStencilBuffer")
 @js.native
 open class WebGLStencilBuffer ()
-  extends typings.three.threeMod.WebGLStencilBuffer
+  extends typings.three.srcThreeMod.WebGLStencilBuffer

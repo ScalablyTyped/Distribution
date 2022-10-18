@@ -1,7 +1,7 @@
 package typings.nodeObjectHash
 
 import typings.node.cryptoMod.BinaryToTextEncoding
-import typings.nodeObjectHash.objectSorterMod.SorterOptions
+import typings.nodeObjectHash.distObjectSorterMod.SorterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

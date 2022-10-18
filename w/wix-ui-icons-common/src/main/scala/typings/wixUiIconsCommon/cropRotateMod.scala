@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsCropRotateMod.CropRotateProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cropRotateMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/CropRotate", JSImport.Default)
+  @JSImport("wix-ui-icons-common/CropRotate", JSImport.Default)
   @js.native
   val default: FC[CropRotateProps] = js.native
-  
-  trait CropRotateProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object CropRotateProps {
-    
-    inline def apply(): CropRotateProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CropRotateProps]
-    }
-    
-    extension [Self <: CropRotateProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[CropRotateProps]
   

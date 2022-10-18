@@ -1,14 +1,14 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.iterationMod.Iteration
-import typings.tsToolbelt.nextMod.Next
-import typings.tsToolbelt.prependMod.Prepend
-import typings.tsToolbelt.reverseMod.__Reverse
+import typings.tsToolbelt.outIterationIterationMod.Iteration
+import typings.tsToolbelt.outIterationNextMod.Next
+import typings.tsToolbelt.outListPrependMod.Prepend
+import typings.tsToolbelt.outListReverseMod.__Reverse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0Reverse`[L /* <: typings.tsToolbelt.listMod.List[Any] */, LO /* <: typings.tsToolbelt.listMod.List[Any] */, I /* <: Iteration */] extends StObject {
+trait `0Reverse`[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, LO /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */] extends StObject {
   
   var `0`: __Reverse[
     L, 
@@ -23,7 +23,7 @@ trait `0Reverse`[L /* <: typings.tsToolbelt.listMod.List[Any] */, LO /* <: typin
 }
 object `0Reverse` {
   
-  inline def apply[L /* <: typings.tsToolbelt.listMod.List[Any] */, LO /* <: typings.tsToolbelt.listMod.List[Any] */, I /* <: Iteration */](
+  inline def apply[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, LO /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */](
     `0`: __Reverse[
       L, 
       Prepend[
@@ -40,7 +40,7 @@ object `0Reverse` {
     __obj.asInstanceOf[`0Reverse`[L, LO, I]]
   }
   
-  extension [Self <: `0Reverse`[?, ?, ?], L /* <: typings.tsToolbelt.listMod.List[Any] */, LO /* <: typings.tsToolbelt.listMod.List[Any] */, I /* <: Iteration */](x: Self & (`0Reverse`[L, LO, I])) {
+  extension [Self <: `0Reverse`[?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, LO /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */](x: Self & (`0Reverse`[L, LO, I])) {
     
     inline def set0(
       value: __Reverse[

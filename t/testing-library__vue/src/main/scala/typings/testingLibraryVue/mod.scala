@@ -1,83 +1,66 @@
 package typings.testingLibraryVue
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.prettyFormat.anon.RequiredPartialreadonlyco
+import typings.prettyFormat.mod.NewPlugin
 import typings.prettyFormat.mod.OptionsReceived
-import typings.prettyFormat.typesMod.NewPlugin
 import typings.std.Document
+import typings.std.DocumentFragment
 import typings.std.Element
-import typings.std.Error
+import typings.std.Event
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLSelectElement
 import typings.std.HTMLTextAreaElement
-import typings.std.Partial
+import typings.std.Parameters
 import typings.std.Record
+import typings.std.ReturnType
 import typings.std.Window
-import typings.testingLibraryDom.anon.Interval
 import typings.testingLibraryDom.anon.PartialConfig
-import typings.testingLibraryDom.configMod.Config
-import typings.testingLibraryDom.configMod.ConfigFn
-import typings.testingLibraryDom.eventsMod.CreateFunction
-import typings.testingLibraryDom.eventsMod.CreateObject
-import typings.testingLibraryDom.getQueriesForElementMod.BoundFunction
-import typings.testingLibraryDom.getQueriesForElementMod.BoundFunctions
-import typings.testingLibraryDom.getQueriesForElementMod.Queries
-import typings.testingLibraryDom.matchesMod.DefaultNormalizerOptions
-import typings.testingLibraryDom.matchesMod.NormalizerFn
-import typings.testingLibraryDom.queriesMod.AllByBoundAttribute
-import typings.testingLibraryDom.queriesMod.AllByRole
-import typings.testingLibraryDom.queriesMod.AllByText
-import typings.testingLibraryDom.queriesMod.FindAllByBoundAttribute
-import typings.testingLibraryDom.queriesMod.FindAllByRole_
-import typings.testingLibraryDom.queriesMod.FindAllByText_
-import typings.testingLibraryDom.queriesMod.FindByBoundAttribute
-import typings.testingLibraryDom.queriesMod.FindByRole_
-import typings.testingLibraryDom.queriesMod.FindByText_
-import typings.testingLibraryDom.queriesMod.GetByBoundAttribute
-import typings.testingLibraryDom.queriesMod.GetByRole_
-import typings.testingLibraryDom.queriesMod.GetByText_
-import typings.testingLibraryDom.queriesMod.QueryByBoundAttribute
-import typings.testingLibraryDom.queriesMod.QueryByRole_
-import typings.testingLibraryDom.queriesMod.QueryByText_
-import typings.testingLibraryDom.queryHelpersMod.AllByAttribute
-import typings.testingLibraryDom.queryHelpersMod.BuiltQueryMethods
-import typings.testingLibraryDom.queryHelpersMod.GetAllBy
-import typings.testingLibraryDom.queryHelpersMod.QueryByAttribute_
-import typings.testingLibraryDom.suggestionsMod.Method
-import typings.testingLibraryDom.suggestionsMod.Suggestion
-import typings.testingLibraryDom.suggestionsMod.Variant
-import typings.testingLibraryDom.waitForMod.waitForOptions
+import typings.testingLibraryDom.anon.Typeofqueries
+import typings.testingLibraryDom.typesConfigMod.Config
+import typings.testingLibraryDom.typesConfigMod.ConfigFn
+import typings.testingLibraryDom.typesEventsMod.CreateFunction
+import typings.testingLibraryDom.typesEventsMod.CreateObject
+import typings.testingLibraryDom.typesEventsMod.FireFunction
+import typings.testingLibraryDom.typesEventsMod.FireObject
+import typings.testingLibraryDom.typesGetQueriesForElementMod.BoundFunctions
+import typings.testingLibraryDom.typesGetQueriesForElementMod.Queries
+import typings.testingLibraryDom.typesMatchesMod.DefaultNormalizerOptions
+import typings.testingLibraryDom.typesMatchesMod.NormalizerFn
+import typings.testingLibraryDom.typesPrettyDomMod.PrettyDOMOptions
+import typings.testingLibraryDom.typesQueriesMod.AllByBoundAttribute
+import typings.testingLibraryDom.typesQueriesMod.AllByRole
+import typings.testingLibraryDom.typesQueriesMod.AllByText
+import typings.testingLibraryDom.typesQueriesMod.FindAllByBoundAttribute
+import typings.testingLibraryDom.typesQueriesMod.FindAllByRole_
+import typings.testingLibraryDom.typesQueriesMod.FindAllByText_
+import typings.testingLibraryDom.typesQueriesMod.FindByBoundAttribute
+import typings.testingLibraryDom.typesQueriesMod.FindByRole_
+import typings.testingLibraryDom.typesQueriesMod.FindByText_
+import typings.testingLibraryDom.typesQueriesMod.GetByBoundAttribute
+import typings.testingLibraryDom.typesQueriesMod.GetByRole_
+import typings.testingLibraryDom.typesQueriesMod.GetByText_
+import typings.testingLibraryDom.typesQueriesMod.QueryByBoundAttribute
+import typings.testingLibraryDom.typesQueriesMod.QueryByRole_
+import typings.testingLibraryDom.typesQueriesMod.QueryByText_
+import typings.testingLibraryDom.typesQueryHelpersMod.AllByAttribute
+import typings.testingLibraryDom.typesQueryHelpersMod.BuiltQueryMethods
+import typings.testingLibraryDom.typesQueryHelpersMod.GetAllBy
+import typings.testingLibraryDom.typesQueryHelpersMod.GetErrorFunction
+import typings.testingLibraryDom.typesQueryHelpersMod.QueryByAttribute_
+import typings.testingLibraryDom.typesScreenMod.Screen_
+import typings.testingLibraryDom.typesSuggestionsMod.Method
+import typings.testingLibraryDom.typesSuggestionsMod.Suggestion
+import typings.testingLibraryDom.typesSuggestionsMod.Variant
+import typings.testingLibraryDom.typesWaitForMod.waitForOptions
 import typings.testingLibraryVue.testingLibraryVueBooleans.`false`
-import typings.vue.anon.Event
-import typings.vue.optionsMod.AsyncComponent
-import typings.vue.optionsMod.Component
-import typings.vue.optionsMod.ComponentOptions
-import typings.vue.optionsMod.DefaultComputed
-import typings.vue.optionsMod.DefaultData
-import typings.vue.optionsMod.DefaultMethods
-import typings.vue.optionsMod.DefaultProps
-import typings.vue.optionsMod.DirectiveFunction
-import typings.vue.optionsMod.DirectiveOptions
-import typings.vue.optionsMod.InjectOptions
-import typings.vue.optionsMod.PropsDefinition
-import typings.vue.optionsMod.RenderContext
-import typings.vue.optionsMod.WatchHandler
-import typings.vue.optionsMod.WatchOptionsWithHandler
-import typings.vue.vnodeMod.VNode
-import typings.vue.vnodeMod.VNodeData
-import typings.vue.vueMod.CreateElement
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
-import typings.vueRouter.mod.default
-import typings.vueRouter.routerMod.RouteConfig
-import typings.vueTestUtils.mod.Slots
-import typings.vueTestUtils.mod.Stubs
-import typings.vueTestUtils.mod.ThisTypedMountOptions
-import typings.vueTestUtils.mod.VueClass
-import typings.vuex.mod.Store
-import typings.vuex.mod.StoreOptions
+import typings.testingLibraryVue.testingLibraryVueBooleans.`true`
+import typings.vueTestUtils.anon.SlotDictionarydefaultSlot
+import typings.vueTestUtils.distTypesMod.GlobalMountOptions
+import typings.vueTestUtils.distTypesMod.RawProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,11 +71,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def buildQueries[Arguments /* <: js.Array[js.Any] */](
-    queryByAll: GetAllBy[Arguments],
-    getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],
-    getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
-  ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryByAll.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
+  inline def buildQueries[Arguments /* <: js.Array[Any] */](
+    queryAllBy: GetAllBy[Arguments],
+    getMultipleError: GetErrorFunction[Arguments],
+    getMissingError: GetErrorFunction[Arguments]
+  ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryAllBy.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
   
   inline def cleanup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")().asInstanceOf[Unit]
   
@@ -105,149 +88,152 @@ object mod {
   @js.native
   val createEvent: CreateObject & CreateFunction = js.native
   
-  @JSImport("@testing-library/vue", "findAllByAltText")
-  @js.native
-  val findAllByAltText: FindAllByBoundAttribute = js.native
+  inline def findAllByAltText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+  ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "findAllByDisplayValue")
-  @js.native
-  val findAllByDisplayValue: FindAllByBoundAttribute = js.native
+  inline def findAllByDisplayValue[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+  ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "findAllByLabelText")
-  @js.native
-  val findAllByLabelText: FindAllByText_ = js.native
+  inline def findAllByLabelText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByText<T>> is not an array type */ args: Parameters[FindAllByText_[T]]
+  ): ReturnType[FindAllByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByText_[T]]]
   
-  @JSImport("@testing-library/vue", "findAllByPlaceholderText")
-  @js.native
-  val findAllByPlaceholderText: FindAllByBoundAttribute = js.native
+  inline def findAllByPlaceholderText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+  ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "findAllByRole")
-  @js.native
-  val findAllByRole: FindAllByRole_ = js.native
+  inline def findAllByRole[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByRole<T>> is not an array type */ args: Parameters[FindAllByRole_[T]]
+  ): ReturnType[FindAllByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByRole_[T]]]
   
-  @JSImport("@testing-library/vue", "findAllByTestId")
-  @js.native
-  val findAllByTestId: FindAllByBoundAttribute = js.native
+  inline def findAllByTestId[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+  ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "findAllByText")
-  @js.native
-  val findAllByText: FindAllByText_ = js.native
+  inline def findAllByText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByText<T>> is not an array type */ args: Parameters[FindAllByText_[T]]
+  ): ReturnType[FindAllByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByText_[T]]]
   
-  @JSImport("@testing-library/vue", "findAllByTitle")
-  @js.native
-  val findAllByTitle: FindAllByBoundAttribute = js.native
+  inline def findAllByTitle[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+  ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "findByAltText")
-  @js.native
-  val findByAltText: FindByBoundAttribute = js.native
+  inline def findByAltText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+  ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "findByDisplayValue")
-  @js.native
-  val findByDisplayValue: FindByBoundAttribute = js.native
+  inline def findByDisplayValue[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+  ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "findByLabelText")
-  @js.native
-  val findByLabelText: FindByText_ = js.native
+  inline def findByLabelText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByText<T>> is not an array type */ args: Parameters[FindByText_[T]]
+  ): ReturnType[FindByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByText_[T]]]
   
-  @JSImport("@testing-library/vue", "findByPlaceholderText")
-  @js.native
-  val findByPlaceholderText: FindByBoundAttribute = js.native
+  inline def findByPlaceholderText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+  ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "findByRole")
-  @js.native
-  val findByRole: FindByRole_ = js.native
+  inline def findByRole[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByRole<T>> is not an array type */ args: Parameters[FindByRole_[T]]
+  ): ReturnType[FindByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByRole_[T]]]
   
-  @JSImport("@testing-library/vue", "findByTestId")
-  @js.native
-  val findByTestId: FindByBoundAttribute = js.native
+  inline def findByTestId[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+  ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "findByText")
-  @js.native
-  val findByText: FindByText_ = js.native
+  inline def findByText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByText<T>> is not an array type */ args: Parameters[FindByText_[T]]
+  ): ReturnType[FindByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByText_[T]]]
   
-  @JSImport("@testing-library/vue", "findByTitle")
-  @js.native
-  val findByTitle: FindByBoundAttribute = js.native
+  inline def findByTitle[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+  ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
   
   @JSImport("@testing-library/vue", "fireEvent")
   @js.native
-  val fireEvent: VueFireObject = js.native
+  val fireEvent: FireFunction & FireObject & VueFireEventObject = js.native
   
-  @JSImport("@testing-library/vue", "getAllByAltText")
-  @js.native
-  val getAllByAltText: AllByBoundAttribute = js.native
+  inline def getAllByAltText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "getAllByDisplayValue")
-  @js.native
-  val getAllByDisplayValue: AllByBoundAttribute = js.native
+  inline def getAllByDisplayValue[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "getAllByLabelText")
-  @js.native
-  val getAllByLabelText: AllByText = js.native
+  inline def getAllByLabelText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+  ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
   
-  @JSImport("@testing-library/vue", "getAllByPlaceholderText")
-  @js.native
-  val getAllByPlaceholderText: AllByBoundAttribute = js.native
+  inline def getAllByPlaceholderText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "getAllByRole")
-  @js.native
-  val getAllByRole: AllByRole = js.native
+  inline def getAllByRole[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByRole<T>> is not an array type */ args: Parameters[AllByRole[T]]
+  ): ReturnType[AllByRole[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByRole[T]]]
   
-  @JSImport("@testing-library/vue", "getAllByTestId")
-  @js.native
-  val getAllByTestId: AllByBoundAttribute = js.native
+  inline def getAllByTestId[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "getAllByText")
-  @js.native
-  val getAllByText: AllByText = js.native
+  inline def getAllByText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+  ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
   
-  @JSImport("@testing-library/vue", "getAllByTitle")
-  @js.native
-  val getAllByTitle: AllByBoundAttribute = js.native
+  inline def getAllByTitle[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "getByAltText")
-  @js.native
-  val getByAltText: GetByBoundAttribute = js.native
+  inline def getByAltText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+  ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "getByDisplayValue")
-  @js.native
-  val getByDisplayValue: GetByBoundAttribute = js.native
+  inline def getByDisplayValue[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+  ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "getByLabelText")
-  @js.native
-  val getByLabelText: GetByText_ = js.native
+  inline def getByLabelText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByText<T>> is not an array type */ args: Parameters[GetByText_[T]]
+  ): ReturnType[GetByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByText_[T]]]
   
-  @JSImport("@testing-library/vue", "getByPlaceholderText")
-  @js.native
-  val getByPlaceholderText: GetByBoundAttribute = js.native
+  inline def getByPlaceholderText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+  ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "getByRole")
-  @js.native
-  val getByRole: GetByRole_ = js.native
+  inline def getByRole[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByRole<T>> is not an array type */ args: Parameters[GetByRole_[T]]
+  ): ReturnType[GetByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByRole_[T]]]
   
-  @JSImport("@testing-library/vue", "getByTestId")
-  @js.native
-  val getByTestId: GetByBoundAttribute = js.native
+  inline def getByTestId[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+  ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "getByText")
-  @js.native
-  val getByText: GetByText_ = js.native
+  inline def getByText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByText<T>> is not an array type */ args: Parameters[GetByText_[T]]
+  ): ReturnType[GetByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByText_[T]]]
   
-  @JSImport("@testing-library/vue", "getByTitle")
-  @js.native
-  val getByTitle: GetByBoundAttribute = js.native
+  inline def getByTitle[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+  ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
   
   inline def getConfig(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config]
   
   inline def getDefaultNormalizer(): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")().asInstanceOf[NormalizerFn]
   inline def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizerFn]
   
-  inline def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def getElementError(message: String, container: HTMLElement): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+  inline def getElementError(message: Null, container: HTMLElement): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Error]
   
   inline def getNodeText(node: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeText")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getQueriesForElement[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
-  inline def getQueriesForElement[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
+  inline def getQueriesForElement[QueriesToBind /* <: Queries */, // Extra type parameter required for reassignment.
+  T /* <: QueriesToBind */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
+  inline def getQueriesForElement[QueriesToBind /* <: Queries */, // Extra type parameter required for reassignment.
+  T /* <: QueriesToBind */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
   
   inline def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoles")(container.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[HTMLElement]]]
   
@@ -260,45 +246,125 @@ object mod {
   
   inline def logDOM(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")().asInstanceOf[Unit]
   inline def logDOM(dom: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def logDOM(dom: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def logDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: Unit, maxLength: Double, options: PrettyDOMOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: Unit, maxLength: Unit, options: PrettyDOMOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def logDOM(dom: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def logDOM(dom: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def logDOM(dom: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def logDOM(dom: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: Element, maxLength: Double, options: PrettyDOMOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: Element, maxLength: Unit, options: PrettyDOMOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def logDOM(dom: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def logDOM(dom: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def logDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def logDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: HTMLDocument, maxLength: Double, options: PrettyDOMOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: HTMLDocument, maxLength: Unit, options: PrettyDOMOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def logRoles(container: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logRoles")(container.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def prettyDOM(): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")().asInstanceOf[String | `false`]
   inline def prettyDOM(dom: Unit, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  inline def prettyDOM(dom: Unit, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  inline def prettyDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Unit, maxLength: Double, options: PrettyDOMOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Unit, maxLength: Unit, options: PrettyDOMOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   inline def prettyDOM(dom: Element): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
   inline def prettyDOM(dom: Element, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  inline def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  inline def prettyDOM(dom: Element, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Element, maxLength: Double, options: PrettyDOMOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Element, maxLength: Unit, options: PrettyDOMOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   inline def prettyDOM(dom: HTMLDocument): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
   inline def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  inline def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  inline def prettyDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: HTMLDocument, maxLength: Double, options: PrettyDOMOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: HTMLDocument, maxLength: Unit, options: PrettyDOMOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   
   object prettyFormat {
+    
+    @JSImport("@testing-library/vue", "prettyFormat")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns a presentation string of your `val` object
       * @param val any potential JavaScript object
       * @param options Custom settings
       */
-    inline def apply(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def default(`val`: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def default(`val`: Any, options: OptionsReceived): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@testing-library/vue", "prettyFormat")
-    @js.native
-    val ^ : js.Any = js.native
+    object DEFAULT_OPTIONS {
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS.callToJSON")
+      @js.native
+      def callToJSON: `true` = js.native
+      inline def callToJSON_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("callToJSON")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS.compareKeys")
+      @js.native
+      def compareKeys: /* undefined */ Any = js.native
+      inline def compareKeys_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareKeys")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS.escapeRegex")
+      @js.native
+      def escapeRegex: `false` = js.native
+      inline def escapeRegex_=(x: `false`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("escapeRegex")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS.escapeString")
+      @js.native
+      def escapeString: `true` = js.native
+      inline def escapeString_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("escapeString")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS.highlight")
+      @js.native
+      def highlight: `false` = js.native
+      inline def highlight_=(x: `false`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highlight")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS.indent")
+      @js.native
+      def indent: Double = js.native
+      inline def indent_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indent")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS.maxDepth")
+      @js.native
+      def maxDepth: Double = js.native
+      inline def maxDepth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxDepth")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS.maxWidth")
+      @js.native
+      def maxWidth: Double = js.native
+      inline def maxWidth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxWidth")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS.min")
+      @js.native
+      def min: `false` = js.native
+      inline def min_=(x: `false`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("min")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS.plugins")
+      @js.native
+      def plugins: js.Array[scala.Nothing] = js.native
+      inline def plugins_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugins")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS.printBasicPrototype")
+      @js.native
+      def printBasicPrototype: `true` = js.native
+      inline def printBasicPrototype_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("printBasicPrototype")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS.printFunctionName")
+      @js.native
+      def printFunctionName: `true` = js.native
+      inline def printFunctionName_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("printFunctionName")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/vue", "prettyFormat.DEFAULT_OPTIONS.theme")
+      @js.native
+      def theme: RequiredPartialreadonlyco = js.native
+      inline def theme_=(x: RequiredPartialreadonlyco): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
+    }
+    
+    /**
+      * Returns a presentation string of your `val` object
+      * @param val any potential JavaScript object
+      * @param options Custom settings
+      */
+    inline def format(`val`: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def format(`val`: Any, options: OptionsReceived): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     object plugins {
       
@@ -310,11 +376,6 @@ object mod {
       @js.native
       def AsymmetricMatcher: NewPlugin = js.native
       inline def AsymmetricMatcher_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AsymmetricMatcher")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@testing-library/vue", "prettyFormat.plugins.ConvertAnsi")
-      @js.native
-      def ConvertAnsi: NewPlugin = js.native
-      inline def ConvertAnsi_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertAnsi")(x.asInstanceOf[js.Any])
       
       @JSImport("@testing-library/vue", "prettyFormat.plugins.DOMCollection")
       @js.native
@@ -345,270 +406,274 @@ object mod {
   
   object queries {
     
-    @JSImport("@testing-library/vue", "queries.findAllByAltText")
+    @JSImport("@testing-library/vue", "queries")
     @js.native
-    val findAllByAltText: FindAllByBoundAttribute = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@testing-library/vue", "queries.findAllByDisplayValue")
-    @js.native
-    val findAllByDisplayValue: FindAllByBoundAttribute = js.native
+    inline def findAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findAllByLabelText")
-    @js.native
-    val findAllByLabelText: FindAllByText_ = js.native
+    inline def findAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findAllByPlaceholderText")
-    @js.native
-    val findAllByPlaceholderText: FindAllByBoundAttribute = js.native
+    inline def findAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByText<T>> is not an array type */ args: Parameters[FindAllByText_[T]]
+    ): ReturnType[FindAllByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByText_[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findAllByRole")
-    @js.native
-    val findAllByRole: FindAllByRole_ = js.native
+    inline def findAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findAllByTestId")
-    @js.native
-    val findAllByTestId: FindAllByBoundAttribute = js.native
+    inline def findAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByRole<T>> is not an array type */ args: Parameters[FindAllByRole_[T]]
+    ): ReturnType[FindAllByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByRole_[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findAllByText")
-    @js.native
-    val findAllByText: FindAllByText_ = js.native
+    inline def findAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findAllByTitle")
-    @js.native
-    val findAllByTitle: FindAllByBoundAttribute = js.native
+    inline def findAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByText<T>> is not an array type */ args: Parameters[FindAllByText_[T]]
+    ): ReturnType[FindAllByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByText_[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findByAltText")
-    @js.native
-    val findByAltText: FindByBoundAttribute = js.native
+    inline def findAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findByDisplayValue")
-    @js.native
-    val findByDisplayValue: FindByBoundAttribute = js.native
+    inline def findByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findByLabelText")
-    @js.native
-    val findByLabelText: FindByText_ = js.native
+    inline def findByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findByPlaceholderText")
-    @js.native
-    val findByPlaceholderText: FindByBoundAttribute = js.native
+    inline def findByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByText<T>> is not an array type */ args: Parameters[FindByText_[T]]
+    ): ReturnType[FindByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByText_[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findByRole")
-    @js.native
-    val findByRole: FindByRole_ = js.native
+    inline def findByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findByTestId")
-    @js.native
-    val findByTestId: FindByBoundAttribute = js.native
+    inline def findByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByRole<T>> is not an array type */ args: Parameters[FindByRole_[T]]
+    ): ReturnType[FindByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByRole_[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findByText")
-    @js.native
-    val findByText: FindByText_ = js.native
+    inline def findByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.findByTitle")
-    @js.native
-    val findByTitle: FindByBoundAttribute = js.native
+    inline def findByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByText<T>> is not an array type */ args: Parameters[FindByText_[T]]
+    ): ReturnType[FindByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByText_[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getAllByAltText")
-    @js.native
-    val getAllByAltText: AllByBoundAttribute = js.native
+    inline def findByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getAllByDisplayValue")
-    @js.native
-    val getAllByDisplayValue: AllByBoundAttribute = js.native
+    inline def getAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getAllByLabelText")
-    @js.native
-    val getAllByLabelText: AllByText = js.native
+    inline def getAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getAllByPlaceholderText")
-    @js.native
-    val getAllByPlaceholderText: AllByBoundAttribute = js.native
+    inline def getAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getAllByRole")
-    @js.native
-    val getAllByRole: AllByRole = js.native
+    inline def getAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getAllByTestId")
-    @js.native
-    val getAllByTestId: AllByBoundAttribute = js.native
+    inline def getAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByRole<T>> is not an array type */ args: Parameters[AllByRole[T]]
+    ): ReturnType[AllByRole[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByRole[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getAllByText")
-    @js.native
-    val getAllByText: AllByText = js.native
+    inline def getAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getAllByTitle")
-    @js.native
-    val getAllByTitle: AllByBoundAttribute = js.native
+    inline def getAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getByAltText")
-    @js.native
-    val getByAltText: GetByBoundAttribute = js.native
+    inline def getAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getByDisplayValue")
-    @js.native
-    val getByDisplayValue: GetByBoundAttribute = js.native
+    inline def getByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getByLabelText")
-    @js.native
-    val getByLabelText: GetByText_ = js.native
+    inline def getByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getByPlaceholderText")
-    @js.native
-    val getByPlaceholderText: GetByBoundAttribute = js.native
+    inline def getByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByText<T>> is not an array type */ args: Parameters[GetByText_[T]]
+    ): ReturnType[GetByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByText_[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getByRole")
-    @js.native
-    val getByRole: GetByRole_ = js.native
+    inline def getByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getByTestId")
-    @js.native
-    val getByTestId: GetByBoundAttribute = js.native
+    inline def getByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByRole<T>> is not an array type */ args: Parameters[GetByRole_[T]]
+    ): ReturnType[GetByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByRole_[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getByText")
-    @js.native
-    val getByText: GetByText_ = js.native
+    inline def getByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.getByTitle")
-    @js.native
-    val getByTitle: GetByBoundAttribute = js.native
+    inline def getByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByText<T>> is not an array type */ args: Parameters[GetByText_[T]]
+    ): ReturnType[GetByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByText_[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryAllByAltText")
-    @js.native
-    val queryAllByAltText: AllByBoundAttribute = js.native
+    inline def getByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryAllByDisplayValue")
-    @js.native
-    val queryAllByDisplayValue: AllByBoundAttribute = js.native
+    inline def queryAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryAllByLabelText")
-    @js.native
-    val queryAllByLabelText: AllByText = js.native
+    inline def queryAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryAllByPlaceholderText")
-    @js.native
-    val queryAllByPlaceholderText: AllByBoundAttribute = js.native
+    inline def queryAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryAllByRole")
-    @js.native
-    val queryAllByRole: AllByRole = js.native
+    inline def queryAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryAllByTestId")
-    @js.native
-    val queryAllByTestId: AllByBoundAttribute = js.native
+    inline def queryAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByRole<T>> is not an array type */ args: Parameters[AllByRole[T]]
+    ): ReturnType[AllByRole[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByRole[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryAllByText")
-    @js.native
-    val queryAllByText: AllByText = js.native
+    inline def queryAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryAllByTitle")
-    @js.native
-    val queryAllByTitle: AllByBoundAttribute = js.native
+    inline def queryAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryByAltText")
-    @js.native
-    val queryByAltText: QueryByBoundAttribute = js.native
+    inline def queryAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryByDisplayValue")
-    @js.native
-    val queryByDisplayValue: QueryByBoundAttribute = js.native
+    inline def queryByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryByLabelText")
-    @js.native
-    val queryByLabelText: QueryByText_ = js.native
+    inline def queryByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryByPlaceholderText")
-    @js.native
-    val queryByPlaceholderText: QueryByBoundAttribute = js.native
+    inline def queryByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByText<T>> is not an array type */ args: Parameters[QueryByText_[T]]
+    ): ReturnType[QueryByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByText_[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryByRole")
-    @js.native
-    val queryByRole: QueryByRole_ = js.native
+    inline def queryByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryByTestId")
-    @js.native
-    val queryByTestId: QueryByBoundAttribute = js.native
+    inline def queryByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByRole<T>> is not an array type */ args: Parameters[QueryByRole_[T]]
+    ): ReturnType[QueryByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByRole_[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryByText")
-    @js.native
-    val queryByText: QueryByText_ = js.native
+    inline def queryByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/vue", "queries.queryByTitle")
-    @js.native
-    val queryByTitle: QueryByBoundAttribute = js.native
+    inline def queryByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByText<T>> is not an array type */ args: Parameters[QueryByText_[T]]
+    ): ReturnType[QueryByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByText_[T]]]
+    
+    inline def queryByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
   }
   
-  @JSImport("@testing-library/vue", "queryAllByAltText")
-  @js.native
-  val queryAllByAltText: AllByBoundAttribute = js.native
+  inline def queryAllByAltText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
   @JSImport("@testing-library/vue", "queryAllByAttribute")
   @js.native
   val queryAllByAttribute: AllByAttribute = js.native
   
-  @JSImport("@testing-library/vue", "queryAllByDisplayValue")
-  @js.native
-  val queryAllByDisplayValue: AllByBoundAttribute = js.native
+  inline def queryAllByDisplayValue[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "queryAllByLabelText")
-  @js.native
-  val queryAllByLabelText: AllByText = js.native
+  inline def queryAllByLabelText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+  ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
   
-  @JSImport("@testing-library/vue", "queryAllByPlaceholderText")
-  @js.native
-  val queryAllByPlaceholderText: AllByBoundAttribute = js.native
+  inline def queryAllByPlaceholderText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "queryAllByRole")
-  @js.native
-  val queryAllByRole: AllByRole = js.native
+  inline def queryAllByRole[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByRole<T>> is not an array type */ args: Parameters[AllByRole[T]]
+  ): ReturnType[AllByRole[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByRole[T]]]
   
-  @JSImport("@testing-library/vue", "queryAllByTestId")
-  @js.native
-  val queryAllByTestId: AllByBoundAttribute = js.native
+  inline def queryAllByTestId[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "queryAllByText")
-  @js.native
-  val queryAllByText: AllByText = js.native
+  inline def queryAllByText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+  ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
   
-  @JSImport("@testing-library/vue", "queryAllByTitle")
-  @js.native
-  val queryAllByTitle: AllByBoundAttribute = js.native
+  inline def queryAllByTitle[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "queryByAltText")
-  @js.native
-  val queryByAltText: QueryByBoundAttribute = js.native
+  inline def queryByAltText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+  ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
   
   @JSImport("@testing-library/vue", "queryByAttribute")
   @js.native
   val queryByAttribute: QueryByAttribute_ = js.native
   
-  @JSImport("@testing-library/vue", "queryByDisplayValue")
-  @js.native
-  val queryByDisplayValue: QueryByBoundAttribute = js.native
+  inline def queryByDisplayValue[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+  ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "queryByLabelText")
-  @js.native
-  val queryByLabelText: QueryByText_ = js.native
+  inline def queryByLabelText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByText<T>> is not an array type */ args: Parameters[QueryByText_[T]]
+  ): ReturnType[QueryByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByText_[T]]]
   
-  @JSImport("@testing-library/vue", "queryByPlaceholderText")
-  @js.native
-  val queryByPlaceholderText: QueryByBoundAttribute = js.native
+  inline def queryByPlaceholderText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+  ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "queryByRole")
-  @js.native
-  val queryByRole: QueryByRole_ = js.native
+  inline def queryByRole[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByRole<T>> is not an array type */ args: Parameters[QueryByRole_[T]]
+  ): ReturnType[QueryByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByRole_[T]]]
   
-  @JSImport("@testing-library/vue", "queryByTestId")
-  @js.native
-  val queryByTestId: QueryByBoundAttribute = js.native
+  inline def queryByTestId[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+  ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/vue", "queryByText")
-  @js.native
-  val queryByText: QueryByText_ = js.native
+  inline def queryByText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByText<T>> is not an array type */ args: Parameters[QueryByText_[T]]
+  ): ReturnType[QueryByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByText_[T]]]
   
-  @JSImport("@testing-library/vue", "queryByTitle")
-  @js.native
-  val queryByTitle: QueryByBoundAttribute = js.native
+  inline def queryByTitle[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+  ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
   
   object queryHelpers {
     
@@ -616,13 +681,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def buildQueries[Arguments /* <: js.Array[js.Any] */](
-      queryByAll: GetAllBy[Arguments],
-      getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],
-      getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
-    ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryByAll.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
+    inline def buildQueries[Arguments /* <: js.Array[Any] */](
+      queryAllBy: GetAllBy[Arguments],
+      getMultipleError: GetErrorFunction[Arguments],
+      getMissingError: GetErrorFunction[Arguments]
+    ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryAllBy.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
     
-    inline def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
+    inline def getElementError(message: String, container: HTMLElement): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+    inline def getElementError(message: Null, container: HTMLElement): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Error]
     
     @JSImport("@testing-library/vue", "queryHelpers.queryAllByAttribute")
     @js.native
@@ -633,811 +699,1161 @@ object mod {
     val queryByAttribute: QueryByAttribute_ = js.native
   }
   
-  inline def render[V /* <: Vue */](TestComponent: VueClass[V]): ComponentHarness = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentHarness]
-  inline def render[V /* <: Vue */](TestComponent: VueClass[V], options: Unit, configure: ConfigurationCallback[V]): ComponentHarness = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configure.asInstanceOf[js.Any])).asInstanceOf[ComponentHarness]
-  inline def render[V /* <: Vue */](TestComponent: VueClass[V], options: RenderOptions[V, js.Object]): ComponentHarness = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentHarness]
-  inline def render[V /* <: Vue */](
-    TestComponent: VueClass[V],
-    options: RenderOptions[V, js.Object],
-    configure: ConfigurationCallback[V]
-  ): ComponentHarness = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configure.asInstanceOf[js.Any])).asInstanceOf[ComponentHarness]
+  inline def render(TestComponent: Any): RenderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any]).asInstanceOf[RenderResult]
+  inline def render(TestComponent: Any, // this makes me sad :sob:
+  options: RenderOptions): RenderResult = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RenderResult]
   
-  /* Inlined @testing-library/dom.@testing-library/dom/types/screen.Screen<{ readonly getByLabelText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly getAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly queryByLabelText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly queryAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly findByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly findAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly getByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly getAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly queryByText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly queryAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly findByText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly findAllByText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly getByAltText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByAltText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByTitle :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByTitle :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByRole :@testing-library/dom.@testing-library/dom/types/queries.GetByRole,  readonly getAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly queryByRole :@testing-library/dom.@testing-library/dom/types/queries.QueryByRole,  readonly queryAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly findByRole :@testing-library/dom.@testing-library/dom/types/queries.FindByRole,  readonly findAllByRole :@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole,  readonly getByTestId :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByTestId :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute}> */
-  object screen {
-    
-    @JSImport("@testing-library/vue", "screen")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Convenience function for `pretty-dom` which also allows an array
-      * of elements
-      */
-    inline def debug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")().asInstanceOf[Unit]
-    inline def debug(element: js.Array[Element | HTMLDocument]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: js.Array[Element | HTMLDocument], maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def debug(element: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def debug(element: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    @JSImport("@testing-library/vue", "screen.findAllByAltText")
-    @js.native
-    def findAllByAltText: BoundFunction[FindAllByBoundAttribute] = js.native
-    inline def findAllByAltText_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByAltText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findAllByDisplayValue")
-    @js.native
-    def findAllByDisplayValue: BoundFunction[FindAllByBoundAttribute] = js.native
-    inline def findAllByDisplayValue_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByDisplayValue")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findAllByLabelText")
-    @js.native
-    def findAllByLabelText: BoundFunction[FindAllByText_] = js.native
-    inline def findAllByLabelText_=(x: BoundFunction[FindAllByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByLabelText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findAllByPlaceholderText")
-    @js.native
-    def findAllByPlaceholderText: BoundFunction[FindAllByBoundAttribute] = js.native
-    inline def findAllByPlaceholderText_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByPlaceholderText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findAllByRole")
-    @js.native
-    def findAllByRole: BoundFunction[FindAllByRole_] = js.native
-    inline def findAllByRole_=(x: BoundFunction[FindAllByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByRole")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findAllByTestId")
-    @js.native
-    def findAllByTestId: BoundFunction[FindAllByBoundAttribute] = js.native
-    inline def findAllByTestId_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByTestId")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findAllByText")
-    @js.native
-    def findAllByText: BoundFunction[FindAllByText_] = js.native
-    inline def findAllByText_=(x: BoundFunction[FindAllByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findAllByTitle")
-    @js.native
-    def findAllByTitle: BoundFunction[FindAllByBoundAttribute] = js.native
-    inline def findAllByTitle_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByTitle")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findByAltText")
-    @js.native
-    def findByAltText: BoundFunction[FindByBoundAttribute] = js.native
-    inline def findByAltText_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByAltText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findByDisplayValue")
-    @js.native
-    def findByDisplayValue: BoundFunction[FindByBoundAttribute] = js.native
-    inline def findByDisplayValue_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByDisplayValue")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findByLabelText")
-    @js.native
-    def findByLabelText: BoundFunction[FindByText_] = js.native
-    inline def findByLabelText_=(x: BoundFunction[FindByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByLabelText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findByPlaceholderText")
-    @js.native
-    def findByPlaceholderText: BoundFunction[FindByBoundAttribute] = js.native
-    inline def findByPlaceholderText_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByPlaceholderText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findByRole")
-    @js.native
-    def findByRole: BoundFunction[FindByRole_] = js.native
-    inline def findByRole_=(x: BoundFunction[FindByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByRole")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findByTestId")
-    @js.native
-    def findByTestId: BoundFunction[FindByBoundAttribute] = js.native
-    inline def findByTestId_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByTestId")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findByText")
-    @js.native
-    def findByText: BoundFunction[FindByText_] = js.native
-    inline def findByText_=(x: BoundFunction[FindByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.findByTitle")
-    @js.native
-    def findByTitle: BoundFunction[FindByBoundAttribute] = js.native
-    inline def findByTitle_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByTitle")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getAllByAltText")
-    @js.native
-    def getAllByAltText: BoundFunction[AllByBoundAttribute] = js.native
-    inline def getAllByAltText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByAltText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getAllByDisplayValue")
-    @js.native
-    def getAllByDisplayValue: BoundFunction[AllByBoundAttribute] = js.native
-    inline def getAllByDisplayValue_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByDisplayValue")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getAllByLabelText")
-    @js.native
-    def getAllByLabelText: BoundFunction[AllByText] = js.native
-    inline def getAllByLabelText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByLabelText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getAllByPlaceholderText")
-    @js.native
-    def getAllByPlaceholderText: BoundFunction[AllByBoundAttribute] = js.native
-    inline def getAllByPlaceholderText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByPlaceholderText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getAllByRole")
-    @js.native
-    def getAllByRole: BoundFunction[AllByRole] = js.native
-    inline def getAllByRole_=(x: BoundFunction[AllByRole]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByRole")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getAllByTestId")
-    @js.native
-    def getAllByTestId: BoundFunction[AllByBoundAttribute] = js.native
-    inline def getAllByTestId_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByTestId")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getAllByText")
-    @js.native
-    def getAllByText: BoundFunction[AllByText] = js.native
-    inline def getAllByText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getAllByTitle")
-    @js.native
-    def getAllByTitle: BoundFunction[AllByBoundAttribute] = js.native
-    inline def getAllByTitle_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByTitle")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getByAltText")
-    @js.native
-    def getByAltText: BoundFunction[GetByBoundAttribute] = js.native
-    inline def getByAltText_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByAltText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getByDisplayValue")
-    @js.native
-    def getByDisplayValue: BoundFunction[GetByBoundAttribute] = js.native
-    inline def getByDisplayValue_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByDisplayValue")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getByLabelText")
-    @js.native
-    def getByLabelText: BoundFunction[GetByText_] = js.native
-    inline def getByLabelText_=(x: BoundFunction[GetByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByLabelText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getByPlaceholderText")
-    @js.native
-    def getByPlaceholderText: BoundFunction[GetByBoundAttribute] = js.native
-    inline def getByPlaceholderText_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByPlaceholderText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getByRole")
-    @js.native
-    def getByRole: BoundFunction[GetByRole_] = js.native
-    inline def getByRole_=(x: BoundFunction[GetByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByRole")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getByTestId")
-    @js.native
-    def getByTestId: BoundFunction[GetByBoundAttribute] = js.native
-    inline def getByTestId_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByTestId")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getByText")
-    @js.native
-    def getByText: BoundFunction[GetByText_] = js.native
-    inline def getByText_=(x: BoundFunction[GetByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.getByTitle")
-    @js.native
-    def getByTitle: BoundFunction[GetByBoundAttribute] = js.native
-    inline def getByTitle_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByTitle")(x.asInstanceOf[js.Any])
-    
-    /**
-      * Convenience function for `Testing Playground` which logs URL that
-      * can be opened in a browser
-      */
-    inline def logTestingPlaygroundURL(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")().asInstanceOf[Unit]
-    inline def logTestingPlaygroundURL(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def logTestingPlaygroundURL(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    @JSImport("@testing-library/vue", "screen.queryAllByAltText")
-    @js.native
-    def queryAllByAltText: BoundFunction[AllByBoundAttribute] = js.native
-    inline def queryAllByAltText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByAltText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryAllByDisplayValue")
-    @js.native
-    def queryAllByDisplayValue: BoundFunction[AllByBoundAttribute] = js.native
-    inline def queryAllByDisplayValue_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByDisplayValue")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryAllByLabelText")
-    @js.native
-    def queryAllByLabelText: BoundFunction[AllByText] = js.native
-    inline def queryAllByLabelText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByLabelText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryAllByPlaceholderText")
-    @js.native
-    def queryAllByPlaceholderText: BoundFunction[AllByBoundAttribute] = js.native
-    inline def queryAllByPlaceholderText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByPlaceholderText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryAllByRole")
-    @js.native
-    def queryAllByRole: BoundFunction[AllByRole] = js.native
-    inline def queryAllByRole_=(x: BoundFunction[AllByRole]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByRole")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryAllByTestId")
-    @js.native
-    def queryAllByTestId: BoundFunction[AllByBoundAttribute] = js.native
-    inline def queryAllByTestId_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByTestId")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryAllByText")
-    @js.native
-    def queryAllByText: BoundFunction[AllByText] = js.native
-    inline def queryAllByText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryAllByTitle")
-    @js.native
-    def queryAllByTitle: BoundFunction[AllByBoundAttribute] = js.native
-    inline def queryAllByTitle_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByTitle")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryByAltText")
-    @js.native
-    def queryByAltText: BoundFunction[QueryByBoundAttribute] = js.native
-    inline def queryByAltText_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByAltText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryByDisplayValue")
-    @js.native
-    def queryByDisplayValue: BoundFunction[QueryByBoundAttribute] = js.native
-    inline def queryByDisplayValue_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByDisplayValue")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryByLabelText")
-    @js.native
-    def queryByLabelText: BoundFunction[QueryByText_] = js.native
-    inline def queryByLabelText_=(x: BoundFunction[QueryByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByLabelText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryByPlaceholderText")
-    @js.native
-    def queryByPlaceholderText: BoundFunction[QueryByBoundAttribute] = js.native
-    inline def queryByPlaceholderText_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByPlaceholderText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryByRole")
-    @js.native
-    def queryByRole: BoundFunction[QueryByRole_] = js.native
-    inline def queryByRole_=(x: BoundFunction[QueryByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByRole")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryByTestId")
-    @js.native
-    def queryByTestId: BoundFunction[QueryByBoundAttribute] = js.native
-    inline def queryByTestId_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByTestId")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryByText")
-    @js.native
-    def queryByText: BoundFunction[QueryByText_] = js.native
-    inline def queryByText_=(x: BoundFunction[QueryByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/vue", "screen.queryByTitle")
-    @js.native
-    def queryByTitle: BoundFunction[QueryByBoundAttribute] = js.native
-    inline def queryByTitle_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByTitle")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("@testing-library/vue", "screen")
+  @js.native
+  val screen: Screen_[Typeofqueries] = js.native
   
-  inline def waitFor[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  inline def waitFor[T](callback: js.Function0[T | js.Promise[T]], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  
-  inline def waitForDomChange(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDomChange")().asInstanceOf[js.Promise[js.Any]]
-  inline def waitForDomChange(options: waitForOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDomChange")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  
-  inline def waitForElement[T](callback: js.Function0[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  inline def waitForElement[T](callback: js.Function0[T], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def waitFor[T](callback: js.Function0[js.Promise[T] | T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def waitFor[T](callback: js.Function0[js.Promise[T] | T], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   inline def waitForElementToBeRemoved[T](callback: T): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def waitForElementToBeRemoved[T](callback: T, options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def waitForElementToBeRemoved[T](callback: js.Function0[T], options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def wait_(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")().asInstanceOf[js.Promise[Unit]]
-  inline def wait_(callback: js.Function0[Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def wait_(callback: js.Function0[Unit], options: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def wait_(callback: Unit, options: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
   /* was `typeof getQueriesForElement` */
-  inline def within[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
-  inline def within[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
+  inline def within[QueriesToBind /* <: Queries */, // Extra type parameter required for reassignment.
+  T /* <: QueriesToBind */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
+  inline def within[QueriesToBind /* <: Queries */, // Extra type parameter required for reassignment.
+  T /* <: QueriesToBind */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
   
   /* Inlined {[ K in @testing-library/dom.@testing-library/dom.EventType ]: (element : std.Document | std.Element | std.Window, options : {} | undefined): std.Promise<void>} */
   trait AsyncFireObject extends StObject {
     
-    var abort: js.Function2[
+    def abort(element: Document): js.Promise[Unit]
+    def abort(element: Document, options: js.Object): js.Promise[Unit]
+    def abort(element: Element): js.Promise[Unit]
+    def abort(element: Element, options: js.Object): js.Promise[Unit]
+    def abort(element: Window): js.Promise[Unit]
+    def abort(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("abort")
+    var abort_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var animationEnd: js.Function2[
+    def animationEnd(element: Document): js.Promise[Unit]
+    def animationEnd(element: Document, options: js.Object): js.Promise[Unit]
+    def animationEnd(element: Element): js.Promise[Unit]
+    def animationEnd(element: Element, options: js.Object): js.Promise[Unit]
+    def animationEnd(element: Window): js.Promise[Unit]
+    def animationEnd(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("animationEnd")
+    var animationEnd_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var animationIteration: js.Function2[
+    def animationIteration(element: Document): js.Promise[Unit]
+    def animationIteration(element: Document, options: js.Object): js.Promise[Unit]
+    def animationIteration(element: Element): js.Promise[Unit]
+    def animationIteration(element: Element, options: js.Object): js.Promise[Unit]
+    def animationIteration(element: Window): js.Promise[Unit]
+    def animationIteration(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("animationIteration")
+    var animationIteration_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var animationStart: js.Function2[
+    def animationStart(element: Document): js.Promise[Unit]
+    def animationStart(element: Document, options: js.Object): js.Promise[Unit]
+    def animationStart(element: Element): js.Promise[Unit]
+    def animationStart(element: Element, options: js.Object): js.Promise[Unit]
+    def animationStart(element: Window): js.Promise[Unit]
+    def animationStart(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("animationStart")
+    var animationStart_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var blur: js.Function2[
+    def blur(element: Document): js.Promise[Unit]
+    def blur(element: Document, options: js.Object): js.Promise[Unit]
+    def blur(element: Element): js.Promise[Unit]
+    def blur(element: Element, options: js.Object): js.Promise[Unit]
+    def blur(element: Window): js.Promise[Unit]
+    def blur(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("blur")
+    var blur_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var canPlay: js.Function2[
+    def canPlay(element: Document): js.Promise[Unit]
+    def canPlay(element: Document, options: js.Object): js.Promise[Unit]
+    def canPlay(element: Element): js.Promise[Unit]
+    def canPlay(element: Element, options: js.Object): js.Promise[Unit]
+    def canPlay(element: Window): js.Promise[Unit]
+    def canPlay(element: Window, options: js.Object): js.Promise[Unit]
+    
+    def canPlayThrough(element: Document): js.Promise[Unit]
+    def canPlayThrough(element: Document, options: js.Object): js.Promise[Unit]
+    def canPlayThrough(element: Element): js.Promise[Unit]
+    def canPlayThrough(element: Element, options: js.Object): js.Promise[Unit]
+    def canPlayThrough(element: Window): js.Promise[Unit]
+    def canPlayThrough(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("canPlayThrough")
+    var canPlayThrough_Original: js.Function2[
+        /* element */ Document | Element | Window, 
+        /* options */ js.UndefOr[js.Object], 
+        js.Promise[Unit]
+      ]
+    
+    @JSName("canPlay")
+    var canPlay_Original: js.Function2[
+        /* element */ Document | Element | Window, 
+        /* options */ js.UndefOr[js.Object], 
+        js.Promise[Unit]
+      ]
+    
+    def change(element: Document): js.Promise[Unit]
+    def change(element: Document, options: js.Object): js.Promise[Unit]
+    def change(element: Element): js.Promise[Unit]
+    def change(element: Element, options: js.Object): js.Promise[Unit]
+    def change(element: Window): js.Promise[Unit]
+    def change(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("change")
+    var change_Original: js.Function2[
+        /* element */ Document | Element | Window, 
+        /* options */ js.UndefOr[js.Object], 
+        js.Promise[Unit]
+      ]
+    
+    def click(element: Document): js.Promise[Unit]
+    def click(element: Document, options: js.Object): js.Promise[Unit]
+    def click(element: Element): js.Promise[Unit]
+    def click(element: Element, options: js.Object): js.Promise[Unit]
+    def click(element: Window): js.Promise[Unit]
+    def click(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("click")
+    var click_Original: js.Function2[
+        /* element */ Document | Element | Window, 
+        /* options */ js.UndefOr[js.Object], 
+        js.Promise[Unit]
+      ]
+    
+    def compositionEnd(element: Document): js.Promise[Unit]
+    def compositionEnd(element: Document, options: js.Object): js.Promise[Unit]
+    def compositionEnd(element: Element): js.Promise[Unit]
+    def compositionEnd(element: Element, options: js.Object): js.Promise[Unit]
+    def compositionEnd(element: Window): js.Promise[Unit]
+    def compositionEnd(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("compositionEnd")
+    var compositionEnd_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var canPlayThrough: js.Function2[
+    def compositionStart(element: Document): js.Promise[Unit]
+    def compositionStart(element: Document, options: js.Object): js.Promise[Unit]
+    def compositionStart(element: Element): js.Promise[Unit]
+    def compositionStart(element: Element, options: js.Object): js.Promise[Unit]
+    def compositionStart(element: Window): js.Promise[Unit]
+    def compositionStart(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("compositionStart")
+    var compositionStart_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var change: js.Function2[
+    def compositionUpdate(element: Document): js.Promise[Unit]
+    def compositionUpdate(element: Document, options: js.Object): js.Promise[Unit]
+    def compositionUpdate(element: Element): js.Promise[Unit]
+    def compositionUpdate(element: Element, options: js.Object): js.Promise[Unit]
+    def compositionUpdate(element: Window): js.Promise[Unit]
+    def compositionUpdate(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("compositionUpdate")
+    var compositionUpdate_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var click: js.Function2[
+    def contextMenu(element: Document): js.Promise[Unit]
+    def contextMenu(element: Document, options: js.Object): js.Promise[Unit]
+    def contextMenu(element: Element): js.Promise[Unit]
+    def contextMenu(element: Element, options: js.Object): js.Promise[Unit]
+    def contextMenu(element: Window): js.Promise[Unit]
+    def contextMenu(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("contextMenu")
+    var contextMenu_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var compositionEnd: js.Function2[
+    def copy(element: Document): js.Promise[Unit]
+    def copy(element: Document, options: js.Object): js.Promise[Unit]
+    def copy(element: Element): js.Promise[Unit]
+    def copy(element: Element, options: js.Object): js.Promise[Unit]
+    def copy(element: Window): js.Promise[Unit]
+    def copy(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("copy")
+    var copy_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var compositionStart: js.Function2[
+    def cut(element: Document): js.Promise[Unit]
+    def cut(element: Document, options: js.Object): js.Promise[Unit]
+    def cut(element: Element): js.Promise[Unit]
+    def cut(element: Element, options: js.Object): js.Promise[Unit]
+    def cut(element: Window): js.Promise[Unit]
+    def cut(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("cut")
+    var cut_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var compositionUpdate: js.Function2[
+    def dblClick(element: Document): js.Promise[Unit]
+    def dblClick(element: Document, options: js.Object): js.Promise[Unit]
+    def dblClick(element: Element): js.Promise[Unit]
+    def dblClick(element: Element, options: js.Object): js.Promise[Unit]
+    def dblClick(element: Window): js.Promise[Unit]
+    def dblClick(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("dblClick")
+    var dblClick_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var contextMenu: js.Function2[
+    def doubleClick(element: Document): js.Promise[Unit]
+    def doubleClick(element: Document, options: js.Object): js.Promise[Unit]
+    def doubleClick(element: Element): js.Promise[Unit]
+    def doubleClick(element: Element, options: js.Object): js.Promise[Unit]
+    def doubleClick(element: Window): js.Promise[Unit]
+    def doubleClick(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("doubleClick")
+    var doubleClick_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var copy: js.Function2[
+    def drag(element: Document): js.Promise[Unit]
+    def drag(element: Document, options: js.Object): js.Promise[Unit]
+    def drag(element: Element): js.Promise[Unit]
+    def drag(element: Element, options: js.Object): js.Promise[Unit]
+    def drag(element: Window): js.Promise[Unit]
+    def drag(element: Window, options: js.Object): js.Promise[Unit]
+    
+    def dragEnd(element: Document): js.Promise[Unit]
+    def dragEnd(element: Document, options: js.Object): js.Promise[Unit]
+    def dragEnd(element: Element): js.Promise[Unit]
+    def dragEnd(element: Element, options: js.Object): js.Promise[Unit]
+    def dragEnd(element: Window): js.Promise[Unit]
+    def dragEnd(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("dragEnd")
+    var dragEnd_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var cut: js.Function2[
+    def dragEnter(element: Document): js.Promise[Unit]
+    def dragEnter(element: Document, options: js.Object): js.Promise[Unit]
+    def dragEnter(element: Element): js.Promise[Unit]
+    def dragEnter(element: Element, options: js.Object): js.Promise[Unit]
+    def dragEnter(element: Window): js.Promise[Unit]
+    def dragEnter(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("dragEnter")
+    var dragEnter_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var dblClick: js.Function2[
+    def dragExit(element: Document): js.Promise[Unit]
+    def dragExit(element: Document, options: js.Object): js.Promise[Unit]
+    def dragExit(element: Element): js.Promise[Unit]
+    def dragExit(element: Element, options: js.Object): js.Promise[Unit]
+    def dragExit(element: Window): js.Promise[Unit]
+    def dragExit(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("dragExit")
+    var dragExit_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var doubleClick: js.Function2[
+    def dragLeave(element: Document): js.Promise[Unit]
+    def dragLeave(element: Document, options: js.Object): js.Promise[Unit]
+    def dragLeave(element: Element): js.Promise[Unit]
+    def dragLeave(element: Element, options: js.Object): js.Promise[Unit]
+    def dragLeave(element: Window): js.Promise[Unit]
+    def dragLeave(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("dragLeave")
+    var dragLeave_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var drag: js.Function2[
+    def dragOver(element: Document): js.Promise[Unit]
+    def dragOver(element: Document, options: js.Object): js.Promise[Unit]
+    def dragOver(element: Element): js.Promise[Unit]
+    def dragOver(element: Element, options: js.Object): js.Promise[Unit]
+    def dragOver(element: Window): js.Promise[Unit]
+    def dragOver(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("dragOver")
+    var dragOver_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var dragEnd: js.Function2[
+    def dragStart(element: Document): js.Promise[Unit]
+    def dragStart(element: Document, options: js.Object): js.Promise[Unit]
+    def dragStart(element: Element): js.Promise[Unit]
+    def dragStart(element: Element, options: js.Object): js.Promise[Unit]
+    def dragStart(element: Window): js.Promise[Unit]
+    def dragStart(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("dragStart")
+    var dragStart_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var dragEnter: js.Function2[
+    @JSName("drag")
+    var drag_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var dragExit: js.Function2[
+    def drop(element: Document): js.Promise[Unit]
+    def drop(element: Document, options: js.Object): js.Promise[Unit]
+    def drop(element: Element): js.Promise[Unit]
+    def drop(element: Element, options: js.Object): js.Promise[Unit]
+    def drop(element: Window): js.Promise[Unit]
+    def drop(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("drop")
+    var drop_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var dragLeave: js.Function2[
+    def durationChange(element: Document): js.Promise[Unit]
+    def durationChange(element: Document, options: js.Object): js.Promise[Unit]
+    def durationChange(element: Element): js.Promise[Unit]
+    def durationChange(element: Element, options: js.Object): js.Promise[Unit]
+    def durationChange(element: Window): js.Promise[Unit]
+    def durationChange(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("durationChange")
+    var durationChange_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var dragOver: js.Function2[
+    def emptied(element: Document): js.Promise[Unit]
+    def emptied(element: Document, options: js.Object): js.Promise[Unit]
+    def emptied(element: Element): js.Promise[Unit]
+    def emptied(element: Element, options: js.Object): js.Promise[Unit]
+    def emptied(element: Window): js.Promise[Unit]
+    def emptied(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("emptied")
+    var emptied_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var dragStart: js.Function2[
+    def encrypted(element: Document): js.Promise[Unit]
+    def encrypted(element: Document, options: js.Object): js.Promise[Unit]
+    def encrypted(element: Element): js.Promise[Unit]
+    def encrypted(element: Element, options: js.Object): js.Promise[Unit]
+    def encrypted(element: Window): js.Promise[Unit]
+    def encrypted(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("encrypted")
+    var encrypted_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var drop: js.Function2[
+    def ended(element: Document): js.Promise[Unit]
+    def ended(element: Document, options: js.Object): js.Promise[Unit]
+    def ended(element: Element): js.Promise[Unit]
+    def ended(element: Element, options: js.Object): js.Promise[Unit]
+    def ended(element: Window): js.Promise[Unit]
+    def ended(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("ended")
+    var ended_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var durationChange: js.Function2[
+    def error(element: Document): js.Promise[Unit]
+    def error(element: Document, options: js.Object): js.Promise[Unit]
+    def error(element: Element): js.Promise[Unit]
+    def error(element: Element, options: js.Object): js.Promise[Unit]
+    def error(element: Window): js.Promise[Unit]
+    def error(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("error")
+    var error_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var emptied: js.Function2[
+    def focus(element: Document): js.Promise[Unit]
+    def focus(element: Document, options: js.Object): js.Promise[Unit]
+    def focus(element: Element): js.Promise[Unit]
+    def focus(element: Element, options: js.Object): js.Promise[Unit]
+    def focus(element: Window): js.Promise[Unit]
+    def focus(element: Window, options: js.Object): js.Promise[Unit]
+    
+    def focusIn(element: Document): js.Promise[Unit]
+    def focusIn(element: Document, options: js.Object): js.Promise[Unit]
+    def focusIn(element: Element): js.Promise[Unit]
+    def focusIn(element: Element, options: js.Object): js.Promise[Unit]
+    def focusIn(element: Window): js.Promise[Unit]
+    def focusIn(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("focusIn")
+    var focusIn_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var encrypted: js.Function2[
+    def focusOut(element: Document): js.Promise[Unit]
+    def focusOut(element: Document, options: js.Object): js.Promise[Unit]
+    def focusOut(element: Element): js.Promise[Unit]
+    def focusOut(element: Element, options: js.Object): js.Promise[Unit]
+    def focusOut(element: Window): js.Promise[Unit]
+    def focusOut(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("focusOut")
+    var focusOut_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var ended: js.Function2[
+    @JSName("focus")
+    var focus_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var error: js.Function2[
+    def gotPointerCapture(element: Document): js.Promise[Unit]
+    def gotPointerCapture(element: Document, options: js.Object): js.Promise[Unit]
+    def gotPointerCapture(element: Element): js.Promise[Unit]
+    def gotPointerCapture(element: Element, options: js.Object): js.Promise[Unit]
+    def gotPointerCapture(element: Window): js.Promise[Unit]
+    def gotPointerCapture(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("gotPointerCapture")
+    var gotPointerCapture_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var focus: js.Function2[
+    def input(element: Document): js.Promise[Unit]
+    def input(element: Document, options: js.Object): js.Promise[Unit]
+    def input(element: Element): js.Promise[Unit]
+    def input(element: Element, options: js.Object): js.Promise[Unit]
+    def input(element: Window): js.Promise[Unit]
+    def input(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("input")
+    var input_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var focusIn: js.Function2[
+    def invalid(element: Document): js.Promise[Unit]
+    def invalid(element: Document, options: js.Object): js.Promise[Unit]
+    def invalid(element: Element): js.Promise[Unit]
+    def invalid(element: Element, options: js.Object): js.Promise[Unit]
+    def invalid(element: Window): js.Promise[Unit]
+    def invalid(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("invalid")
+    var invalid_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var focusOut: js.Function2[
+    def keyDown(element: Document): js.Promise[Unit]
+    def keyDown(element: Document, options: js.Object): js.Promise[Unit]
+    def keyDown(element: Element): js.Promise[Unit]
+    def keyDown(element: Element, options: js.Object): js.Promise[Unit]
+    def keyDown(element: Window): js.Promise[Unit]
+    def keyDown(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("keyDown")
+    var keyDown_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var gotPointerCapture: js.Function2[
+    def keyPress(element: Document): js.Promise[Unit]
+    def keyPress(element: Document, options: js.Object): js.Promise[Unit]
+    def keyPress(element: Element): js.Promise[Unit]
+    def keyPress(element: Element, options: js.Object): js.Promise[Unit]
+    def keyPress(element: Window): js.Promise[Unit]
+    def keyPress(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("keyPress")
+    var keyPress_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var input: js.Function2[
+    def keyUp(element: Document): js.Promise[Unit]
+    def keyUp(element: Document, options: js.Object): js.Promise[Unit]
+    def keyUp(element: Element): js.Promise[Unit]
+    def keyUp(element: Element, options: js.Object): js.Promise[Unit]
+    def keyUp(element: Window): js.Promise[Unit]
+    def keyUp(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("keyUp")
+    var keyUp_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
+    
+    def load(element: Document): js.Promise[Unit]
+    def load(element: Document, options: js.Object): js.Promise[Unit]
+    def load(element: Element): js.Promise[Unit]
+    def load(element: Element, options: js.Object): js.Promise[Unit]
+    def load(element: Window): js.Promise[Unit]
+    def load(element: Window, options: js.Object): js.Promise[Unit]
     
-    var invalid: js.Function2[
+    def loadStart(element: Document): js.Promise[Unit]
+    def loadStart(element: Document, options: js.Object): js.Promise[Unit]
+    def loadStart(element: Element): js.Promise[Unit]
+    def loadStart(element: Element, options: js.Object): js.Promise[Unit]
+    def loadStart(element: Window): js.Promise[Unit]
+    def loadStart(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("loadStart")
+    var loadStart_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var keyDown: js.Function2[
+    @JSName("load")
+    var load_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var keyPress: js.Function2[
+    def loadedData(element: Document): js.Promise[Unit]
+    def loadedData(element: Document, options: js.Object): js.Promise[Unit]
+    def loadedData(element: Element): js.Promise[Unit]
+    def loadedData(element: Element, options: js.Object): js.Promise[Unit]
+    def loadedData(element: Window): js.Promise[Unit]
+    def loadedData(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("loadedData")
+    var loadedData_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var keyUp: js.Function2[
+    def loadedMetadata(element: Document): js.Promise[Unit]
+    def loadedMetadata(element: Document, options: js.Object): js.Promise[Unit]
+    def loadedMetadata(element: Element): js.Promise[Unit]
+    def loadedMetadata(element: Element, options: js.Object): js.Promise[Unit]
+    def loadedMetadata(element: Window): js.Promise[Unit]
+    def loadedMetadata(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("loadedMetadata")
+    var loadedMetadata_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var load: js.Function2[
+    def lostPointerCapture(element: Document): js.Promise[Unit]
+    def lostPointerCapture(element: Document, options: js.Object): js.Promise[Unit]
+    def lostPointerCapture(element: Element): js.Promise[Unit]
+    def lostPointerCapture(element: Element, options: js.Object): js.Promise[Unit]
+    def lostPointerCapture(element: Window): js.Promise[Unit]
+    def lostPointerCapture(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("lostPointerCapture")
+    var lostPointerCapture_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var loadStart: js.Function2[
+    def mouseDown(element: Document): js.Promise[Unit]
+    def mouseDown(element: Document, options: js.Object): js.Promise[Unit]
+    def mouseDown(element: Element): js.Promise[Unit]
+    def mouseDown(element: Element, options: js.Object): js.Promise[Unit]
+    def mouseDown(element: Window): js.Promise[Unit]
+    def mouseDown(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("mouseDown")
+    var mouseDown_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var loadedData: js.Function2[
+    def mouseEnter(element: Document): js.Promise[Unit]
+    def mouseEnter(element: Document, options: js.Object): js.Promise[Unit]
+    def mouseEnter(element: Element): js.Promise[Unit]
+    def mouseEnter(element: Element, options: js.Object): js.Promise[Unit]
+    def mouseEnter(element: Window): js.Promise[Unit]
+    def mouseEnter(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("mouseEnter")
+    var mouseEnter_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var loadedMetadata: js.Function2[
+    def mouseLeave(element: Document): js.Promise[Unit]
+    def mouseLeave(element: Document, options: js.Object): js.Promise[Unit]
+    def mouseLeave(element: Element): js.Promise[Unit]
+    def mouseLeave(element: Element, options: js.Object): js.Promise[Unit]
+    def mouseLeave(element: Window): js.Promise[Unit]
+    def mouseLeave(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("mouseLeave")
+    var mouseLeave_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var lostPointerCapture: js.Function2[
+    def mouseMove(element: Document): js.Promise[Unit]
+    def mouseMove(element: Document, options: js.Object): js.Promise[Unit]
+    def mouseMove(element: Element): js.Promise[Unit]
+    def mouseMove(element: Element, options: js.Object): js.Promise[Unit]
+    def mouseMove(element: Window): js.Promise[Unit]
+    def mouseMove(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("mouseMove")
+    var mouseMove_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var mouseDown: js.Function2[
+    def mouseOut(element: Document): js.Promise[Unit]
+    def mouseOut(element: Document, options: js.Object): js.Promise[Unit]
+    def mouseOut(element: Element): js.Promise[Unit]
+    def mouseOut(element: Element, options: js.Object): js.Promise[Unit]
+    def mouseOut(element: Window): js.Promise[Unit]
+    def mouseOut(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("mouseOut")
+    var mouseOut_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var mouseEnter: js.Function2[
+    def mouseOver(element: Document): js.Promise[Unit]
+    def mouseOver(element: Document, options: js.Object): js.Promise[Unit]
+    def mouseOver(element: Element): js.Promise[Unit]
+    def mouseOver(element: Element, options: js.Object): js.Promise[Unit]
+    def mouseOver(element: Window): js.Promise[Unit]
+    def mouseOver(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("mouseOver")
+    var mouseOver_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var mouseLeave: js.Function2[
+    def mouseUp(element: Document): js.Promise[Unit]
+    def mouseUp(element: Document, options: js.Object): js.Promise[Unit]
+    def mouseUp(element: Element): js.Promise[Unit]
+    def mouseUp(element: Element, options: js.Object): js.Promise[Unit]
+    def mouseUp(element: Window): js.Promise[Unit]
+    def mouseUp(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("mouseUp")
+    var mouseUp_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var mouseMove: js.Function2[
+    def paste(element: Document): js.Promise[Unit]
+    def paste(element: Document, options: js.Object): js.Promise[Unit]
+    def paste(element: Element): js.Promise[Unit]
+    def paste(element: Element, options: js.Object): js.Promise[Unit]
+    def paste(element: Window): js.Promise[Unit]
+    def paste(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("paste")
+    var paste_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var mouseOut: js.Function2[
+    def pause(element: Document): js.Promise[Unit]
+    def pause(element: Document, options: js.Object): js.Promise[Unit]
+    def pause(element: Element): js.Promise[Unit]
+    def pause(element: Element, options: js.Object): js.Promise[Unit]
+    def pause(element: Window): js.Promise[Unit]
+    def pause(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("pause")
+    var pause_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var mouseOver: js.Function2[
+    def play(element: Document): js.Promise[Unit]
+    def play(element: Document, options: js.Object): js.Promise[Unit]
+    def play(element: Element): js.Promise[Unit]
+    def play(element: Element, options: js.Object): js.Promise[Unit]
+    def play(element: Window): js.Promise[Unit]
+    def play(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("play")
+    var play_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var mouseUp: js.Function2[
+    def playing(element: Document): js.Promise[Unit]
+    def playing(element: Document, options: js.Object): js.Promise[Unit]
+    def playing(element: Element): js.Promise[Unit]
+    def playing(element: Element, options: js.Object): js.Promise[Unit]
+    def playing(element: Window): js.Promise[Unit]
+    def playing(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("playing")
+    var playing_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var paste: js.Function2[
+    def pointerCancel(element: Document): js.Promise[Unit]
+    def pointerCancel(element: Document, options: js.Object): js.Promise[Unit]
+    def pointerCancel(element: Element): js.Promise[Unit]
+    def pointerCancel(element: Element, options: js.Object): js.Promise[Unit]
+    def pointerCancel(element: Window): js.Promise[Unit]
+    def pointerCancel(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("pointerCancel")
+    var pointerCancel_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var pause: js.Function2[
+    def pointerDown(element: Document): js.Promise[Unit]
+    def pointerDown(element: Document, options: js.Object): js.Promise[Unit]
+    def pointerDown(element: Element): js.Promise[Unit]
+    def pointerDown(element: Element, options: js.Object): js.Promise[Unit]
+    def pointerDown(element: Window): js.Promise[Unit]
+    def pointerDown(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("pointerDown")
+    var pointerDown_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var play: js.Function2[
+    def pointerEnter(element: Document): js.Promise[Unit]
+    def pointerEnter(element: Document, options: js.Object): js.Promise[Unit]
+    def pointerEnter(element: Element): js.Promise[Unit]
+    def pointerEnter(element: Element, options: js.Object): js.Promise[Unit]
+    def pointerEnter(element: Window): js.Promise[Unit]
+    def pointerEnter(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("pointerEnter")
+    var pointerEnter_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var playing: js.Function2[
+    def pointerLeave(element: Document): js.Promise[Unit]
+    def pointerLeave(element: Document, options: js.Object): js.Promise[Unit]
+    def pointerLeave(element: Element): js.Promise[Unit]
+    def pointerLeave(element: Element, options: js.Object): js.Promise[Unit]
+    def pointerLeave(element: Window): js.Promise[Unit]
+    def pointerLeave(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("pointerLeave")
+    var pointerLeave_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var pointerCancel: js.Function2[
+    def pointerMove(element: Document): js.Promise[Unit]
+    def pointerMove(element: Document, options: js.Object): js.Promise[Unit]
+    def pointerMove(element: Element): js.Promise[Unit]
+    def pointerMove(element: Element, options: js.Object): js.Promise[Unit]
+    def pointerMove(element: Window): js.Promise[Unit]
+    def pointerMove(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("pointerMove")
+    var pointerMove_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var pointerDown: js.Function2[
+    def pointerOut(element: Document): js.Promise[Unit]
+    def pointerOut(element: Document, options: js.Object): js.Promise[Unit]
+    def pointerOut(element: Element): js.Promise[Unit]
+    def pointerOut(element: Element, options: js.Object): js.Promise[Unit]
+    def pointerOut(element: Window): js.Promise[Unit]
+    def pointerOut(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("pointerOut")
+    var pointerOut_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var pointerEnter: js.Function2[
+    def pointerOver(element: Document): js.Promise[Unit]
+    def pointerOver(element: Document, options: js.Object): js.Promise[Unit]
+    def pointerOver(element: Element): js.Promise[Unit]
+    def pointerOver(element: Element, options: js.Object): js.Promise[Unit]
+    def pointerOver(element: Window): js.Promise[Unit]
+    def pointerOver(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("pointerOver")
+    var pointerOver_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var pointerLeave: js.Function2[
+    def pointerUp(element: Document): js.Promise[Unit]
+    def pointerUp(element: Document, options: js.Object): js.Promise[Unit]
+    def pointerUp(element: Element): js.Promise[Unit]
+    def pointerUp(element: Element, options: js.Object): js.Promise[Unit]
+    def pointerUp(element: Window): js.Promise[Unit]
+    def pointerUp(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("pointerUp")
+    var pointerUp_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var pointerMove: js.Function2[
+    def popState(element: Document): js.Promise[Unit]
+    def popState(element: Document, options: js.Object): js.Promise[Unit]
+    def popState(element: Element): js.Promise[Unit]
+    def popState(element: Element, options: js.Object): js.Promise[Unit]
+    def popState(element: Window): js.Promise[Unit]
+    def popState(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("popState")
+    var popState_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var pointerOut: js.Function2[
+    def progress(element: Document): js.Promise[Unit]
+    def progress(element: Document, options: js.Object): js.Promise[Unit]
+    def progress(element: Element): js.Promise[Unit]
+    def progress(element: Element, options: js.Object): js.Promise[Unit]
+    def progress(element: Window): js.Promise[Unit]
+    def progress(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("progress")
+    var progress_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var pointerOver: js.Function2[
+    def rateChange(element: Document): js.Promise[Unit]
+    def rateChange(element: Document, options: js.Object): js.Promise[Unit]
+    def rateChange(element: Element): js.Promise[Unit]
+    def rateChange(element: Element, options: js.Object): js.Promise[Unit]
+    def rateChange(element: Window): js.Promise[Unit]
+    def rateChange(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("rateChange")
+    var rateChange_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var pointerUp: js.Function2[
+    def reset(element: Document): js.Promise[Unit]
+    def reset(element: Document, options: js.Object): js.Promise[Unit]
+    def reset(element: Element): js.Promise[Unit]
+    def reset(element: Element, options: js.Object): js.Promise[Unit]
+    def reset(element: Window): js.Promise[Unit]
+    def reset(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("reset")
+    var reset_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var popState: js.Function2[
+    def resize(element: Document): js.Promise[Unit]
+    def resize(element: Document, options: js.Object): js.Promise[Unit]
+    def resize(element: Element): js.Promise[Unit]
+    def resize(element: Element, options: js.Object): js.Promise[Unit]
+    def resize(element: Window): js.Promise[Unit]
+    def resize(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("resize")
+    var resize_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var progress: js.Function2[
+    def scroll(element: Document): js.Promise[Unit]
+    def scroll(element: Document, options: js.Object): js.Promise[Unit]
+    def scroll(element: Element): js.Promise[Unit]
+    def scroll(element: Element, options: js.Object): js.Promise[Unit]
+    def scroll(element: Window): js.Promise[Unit]
+    def scroll(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("scroll")
+    var scroll_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var rateChange: js.Function2[
+    def seeked(element: Document): js.Promise[Unit]
+    def seeked(element: Document, options: js.Object): js.Promise[Unit]
+    def seeked(element: Element): js.Promise[Unit]
+    def seeked(element: Element, options: js.Object): js.Promise[Unit]
+    def seeked(element: Window): js.Promise[Unit]
+    def seeked(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("seeked")
+    var seeked_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var reset: js.Function2[
+    def seeking(element: Document): js.Promise[Unit]
+    def seeking(element: Document, options: js.Object): js.Promise[Unit]
+    def seeking(element: Element): js.Promise[Unit]
+    def seeking(element: Element, options: js.Object): js.Promise[Unit]
+    def seeking(element: Window): js.Promise[Unit]
+    def seeking(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("seeking")
+    var seeking_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var scroll: js.Function2[
+    def select(element: Document): js.Promise[Unit]
+    def select(element: Document, options: js.Object): js.Promise[Unit]
+    def select(element: Element): js.Promise[Unit]
+    def select(element: Element, options: js.Object): js.Promise[Unit]
+    def select(element: Window): js.Promise[Unit]
+    def select(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("select")
+    var select_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var seeked: js.Function2[
+    def stalled(element: Document): js.Promise[Unit]
+    def stalled(element: Document, options: js.Object): js.Promise[Unit]
+    def stalled(element: Element): js.Promise[Unit]
+    def stalled(element: Element, options: js.Object): js.Promise[Unit]
+    def stalled(element: Window): js.Promise[Unit]
+    def stalled(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("stalled")
+    var stalled_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var seeking: js.Function2[
+    def submit(element: Document): js.Promise[Unit]
+    def submit(element: Document, options: js.Object): js.Promise[Unit]
+    def submit(element: Element): js.Promise[Unit]
+    def submit(element: Element, options: js.Object): js.Promise[Unit]
+    def submit(element: Window): js.Promise[Unit]
+    def submit(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("submit")
+    var submit_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var select: js.Function2[
+    def suspend(element: Document): js.Promise[Unit]
+    def suspend(element: Document, options: js.Object): js.Promise[Unit]
+    def suspend(element: Element): js.Promise[Unit]
+    def suspend(element: Element, options: js.Object): js.Promise[Unit]
+    def suspend(element: Window): js.Promise[Unit]
+    def suspend(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("suspend")
+    var suspend_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var stalled: js.Function2[
+    def timeUpdate(element: Document): js.Promise[Unit]
+    def timeUpdate(element: Document, options: js.Object): js.Promise[Unit]
+    def timeUpdate(element: Element): js.Promise[Unit]
+    def timeUpdate(element: Element, options: js.Object): js.Promise[Unit]
+    def timeUpdate(element: Window): js.Promise[Unit]
+    def timeUpdate(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("timeUpdate")
+    var timeUpdate_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var submit: js.Function2[
+    def touchCancel(element: Document): js.Promise[Unit]
+    def touchCancel(element: Document, options: js.Object): js.Promise[Unit]
+    def touchCancel(element: Element): js.Promise[Unit]
+    def touchCancel(element: Element, options: js.Object): js.Promise[Unit]
+    def touchCancel(element: Window): js.Promise[Unit]
+    def touchCancel(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("touchCancel")
+    var touchCancel_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var suspend: js.Function2[
+    def touchEnd(element: Document): js.Promise[Unit]
+    def touchEnd(element: Document, options: js.Object): js.Promise[Unit]
+    def touchEnd(element: Element): js.Promise[Unit]
+    def touchEnd(element: Element, options: js.Object): js.Promise[Unit]
+    def touchEnd(element: Window): js.Promise[Unit]
+    def touchEnd(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("touchEnd")
+    var touchEnd_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var timeUpdate: js.Function2[
+    def touchMove(element: Document): js.Promise[Unit]
+    def touchMove(element: Document, options: js.Object): js.Promise[Unit]
+    def touchMove(element: Element): js.Promise[Unit]
+    def touchMove(element: Element, options: js.Object): js.Promise[Unit]
+    def touchMove(element: Window): js.Promise[Unit]
+    def touchMove(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("touchMove")
+    var touchMove_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var touchCancel: js.Function2[
+    def touchStart(element: Document): js.Promise[Unit]
+    def touchStart(element: Document, options: js.Object): js.Promise[Unit]
+    def touchStart(element: Element): js.Promise[Unit]
+    def touchStart(element: Element, options: js.Object): js.Promise[Unit]
+    def touchStart(element: Window): js.Promise[Unit]
+    def touchStart(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("touchStart")
+    var touchStart_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var touchEnd: js.Function2[
+    def transitionCancel(element: Document): js.Promise[Unit]
+    def transitionCancel(element: Document, options: js.Object): js.Promise[Unit]
+    def transitionCancel(element: Element): js.Promise[Unit]
+    def transitionCancel(element: Element, options: js.Object): js.Promise[Unit]
+    def transitionCancel(element: Window): js.Promise[Unit]
+    def transitionCancel(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("transitionCancel")
+    var transitionCancel_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var touchMove: js.Function2[
+    def transitionEnd(element: Document): js.Promise[Unit]
+    def transitionEnd(element: Document, options: js.Object): js.Promise[Unit]
+    def transitionEnd(element: Element): js.Promise[Unit]
+    def transitionEnd(element: Element, options: js.Object): js.Promise[Unit]
+    def transitionEnd(element: Window): js.Promise[Unit]
+    def transitionEnd(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("transitionEnd")
+    var transitionEnd_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var touchStart: js.Function2[
+    def transitionRun(element: Document): js.Promise[Unit]
+    def transitionRun(element: Document, options: js.Object): js.Promise[Unit]
+    def transitionRun(element: Element): js.Promise[Unit]
+    def transitionRun(element: Element, options: js.Object): js.Promise[Unit]
+    def transitionRun(element: Window): js.Promise[Unit]
+    def transitionRun(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("transitionRun")
+    var transitionRun_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var transitionEnd: js.Function2[
+    def transitionStart(element: Document): js.Promise[Unit]
+    def transitionStart(element: Document, options: js.Object): js.Promise[Unit]
+    def transitionStart(element: Element): js.Promise[Unit]
+    def transitionStart(element: Element, options: js.Object): js.Promise[Unit]
+    def transitionStart(element: Window): js.Promise[Unit]
+    def transitionStart(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("transitionStart")
+    var transitionStart_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var volumeChange: js.Function2[
+    def volumeChange(element: Document): js.Promise[Unit]
+    def volumeChange(element: Document, options: js.Object): js.Promise[Unit]
+    def volumeChange(element: Element): js.Promise[Unit]
+    def volumeChange(element: Element, options: js.Object): js.Promise[Unit]
+    def volumeChange(element: Window): js.Promise[Unit]
+    def volumeChange(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("volumeChange")
+    var volumeChange_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var waiting: js.Function2[
+    def waiting(element: Document): js.Promise[Unit]
+    def waiting(element: Document, options: js.Object): js.Promise[Unit]
+    def waiting(element: Element): js.Promise[Unit]
+    def waiting(element: Element, options: js.Object): js.Promise[Unit]
+    def waiting(element: Window): js.Promise[Unit]
+    def waiting(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("waiting")
+    var waiting_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
       ]
     
-    var wheel: js.Function2[
+    def wheel(element: Document): js.Promise[Unit]
+    def wheel(element: Document, options: js.Object): js.Promise[Unit]
+    def wheel(element: Element): js.Promise[Unit]
+    def wheel(element: Element, options: js.Object): js.Promise[Unit]
+    def wheel(element: Window): js.Promise[Unit]
+    def wheel(element: Window, options: js.Object): js.Promise[Unit]
+    @JSName("wheel")
+    var wheel_Original: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
@@ -1513,6 +1929,7 @@ object mod {
       progress: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
       rateChange: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
       reset: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
+      resize: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
       scroll: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
       seeked: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
       seeking: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
@@ -1525,12 +1942,15 @@ object mod {
       touchEnd: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
       touchMove: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
       touchStart: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
+      transitionCancel: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
       transitionEnd: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
+      transitionRun: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
+      transitionStart: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
       volumeChange: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
       waiting: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
       wheel: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
     ): AsyncFireObject = {
-      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction2(abort), animationEnd = js.Any.fromFunction2(animationEnd), animationIteration = js.Any.fromFunction2(animationIteration), animationStart = js.Any.fromFunction2(animationStart), blur = js.Any.fromFunction2(blur), canPlay = js.Any.fromFunction2(canPlay), canPlayThrough = js.Any.fromFunction2(canPlayThrough), change = js.Any.fromFunction2(change), click = js.Any.fromFunction2(click), compositionEnd = js.Any.fromFunction2(compositionEnd), compositionStart = js.Any.fromFunction2(compositionStart), compositionUpdate = js.Any.fromFunction2(compositionUpdate), contextMenu = js.Any.fromFunction2(contextMenu), copy = js.Any.fromFunction2(copy), cut = js.Any.fromFunction2(cut), dblClick = js.Any.fromFunction2(dblClick), doubleClick = js.Any.fromFunction2(doubleClick), drag = js.Any.fromFunction2(drag), dragEnd = js.Any.fromFunction2(dragEnd), dragEnter = js.Any.fromFunction2(dragEnter), dragExit = js.Any.fromFunction2(dragExit), dragLeave = js.Any.fromFunction2(dragLeave), dragOver = js.Any.fromFunction2(dragOver), dragStart = js.Any.fromFunction2(dragStart), drop = js.Any.fromFunction2(drop), durationChange = js.Any.fromFunction2(durationChange), emptied = js.Any.fromFunction2(emptied), encrypted = js.Any.fromFunction2(encrypted), ended = js.Any.fromFunction2(ended), error = js.Any.fromFunction2(error), focus = js.Any.fromFunction2(focus), focusIn = js.Any.fromFunction2(focusIn), focusOut = js.Any.fromFunction2(focusOut), gotPointerCapture = js.Any.fromFunction2(gotPointerCapture), input = js.Any.fromFunction2(input), invalid = js.Any.fromFunction2(invalid), keyDown = js.Any.fromFunction2(keyDown), keyPress = js.Any.fromFunction2(keyPress), keyUp = js.Any.fromFunction2(keyUp), load = js.Any.fromFunction2(load), loadStart = js.Any.fromFunction2(loadStart), loadedData = js.Any.fromFunction2(loadedData), loadedMetadata = js.Any.fromFunction2(loadedMetadata), lostPointerCapture = js.Any.fromFunction2(lostPointerCapture), mouseDown = js.Any.fromFunction2(mouseDown), mouseEnter = js.Any.fromFunction2(mouseEnter), mouseLeave = js.Any.fromFunction2(mouseLeave), mouseMove = js.Any.fromFunction2(mouseMove), mouseOut = js.Any.fromFunction2(mouseOut), mouseOver = js.Any.fromFunction2(mouseOver), mouseUp = js.Any.fromFunction2(mouseUp), paste = js.Any.fromFunction2(paste), pause = js.Any.fromFunction2(pause), play = js.Any.fromFunction2(play), playing = js.Any.fromFunction2(playing), pointerCancel = js.Any.fromFunction2(pointerCancel), pointerDown = js.Any.fromFunction2(pointerDown), pointerEnter = js.Any.fromFunction2(pointerEnter), pointerLeave = js.Any.fromFunction2(pointerLeave), pointerMove = js.Any.fromFunction2(pointerMove), pointerOut = js.Any.fromFunction2(pointerOut), pointerOver = js.Any.fromFunction2(pointerOver), pointerUp = js.Any.fromFunction2(pointerUp), popState = js.Any.fromFunction2(popState), progress = js.Any.fromFunction2(progress), rateChange = js.Any.fromFunction2(rateChange), reset = js.Any.fromFunction2(reset), scroll = js.Any.fromFunction2(scroll), seeked = js.Any.fromFunction2(seeked), seeking = js.Any.fromFunction2(seeking), select = js.Any.fromFunction2(select), stalled = js.Any.fromFunction2(stalled), submit = js.Any.fromFunction2(submit), suspend = js.Any.fromFunction2(suspend), timeUpdate = js.Any.fromFunction2(timeUpdate), touchCancel = js.Any.fromFunction2(touchCancel), touchEnd = js.Any.fromFunction2(touchEnd), touchMove = js.Any.fromFunction2(touchMove), touchStart = js.Any.fromFunction2(touchStart), transitionEnd = js.Any.fromFunction2(transitionEnd), volumeChange = js.Any.fromFunction2(volumeChange), waiting = js.Any.fromFunction2(waiting), wheel = js.Any.fromFunction2(wheel))
+      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction2(abort), animationEnd = js.Any.fromFunction2(animationEnd), animationIteration = js.Any.fromFunction2(animationIteration), animationStart = js.Any.fromFunction2(animationStart), blur = js.Any.fromFunction2(blur), canPlay = js.Any.fromFunction2(canPlay), canPlayThrough = js.Any.fromFunction2(canPlayThrough), change = js.Any.fromFunction2(change), click = js.Any.fromFunction2(click), compositionEnd = js.Any.fromFunction2(compositionEnd), compositionStart = js.Any.fromFunction2(compositionStart), compositionUpdate = js.Any.fromFunction2(compositionUpdate), contextMenu = js.Any.fromFunction2(contextMenu), copy = js.Any.fromFunction2(copy), cut = js.Any.fromFunction2(cut), dblClick = js.Any.fromFunction2(dblClick), doubleClick = js.Any.fromFunction2(doubleClick), drag = js.Any.fromFunction2(drag), dragEnd = js.Any.fromFunction2(dragEnd), dragEnter = js.Any.fromFunction2(dragEnter), dragExit = js.Any.fromFunction2(dragExit), dragLeave = js.Any.fromFunction2(dragLeave), dragOver = js.Any.fromFunction2(dragOver), dragStart = js.Any.fromFunction2(dragStart), drop = js.Any.fromFunction2(drop), durationChange = js.Any.fromFunction2(durationChange), emptied = js.Any.fromFunction2(emptied), encrypted = js.Any.fromFunction2(encrypted), ended = js.Any.fromFunction2(ended), error = js.Any.fromFunction2(error), focus = js.Any.fromFunction2(focus), focusIn = js.Any.fromFunction2(focusIn), focusOut = js.Any.fromFunction2(focusOut), gotPointerCapture = js.Any.fromFunction2(gotPointerCapture), input = js.Any.fromFunction2(input), invalid = js.Any.fromFunction2(invalid), keyDown = js.Any.fromFunction2(keyDown), keyPress = js.Any.fromFunction2(keyPress), keyUp = js.Any.fromFunction2(keyUp), load = js.Any.fromFunction2(load), loadStart = js.Any.fromFunction2(loadStart), loadedData = js.Any.fromFunction2(loadedData), loadedMetadata = js.Any.fromFunction2(loadedMetadata), lostPointerCapture = js.Any.fromFunction2(lostPointerCapture), mouseDown = js.Any.fromFunction2(mouseDown), mouseEnter = js.Any.fromFunction2(mouseEnter), mouseLeave = js.Any.fromFunction2(mouseLeave), mouseMove = js.Any.fromFunction2(mouseMove), mouseOut = js.Any.fromFunction2(mouseOut), mouseOver = js.Any.fromFunction2(mouseOver), mouseUp = js.Any.fromFunction2(mouseUp), paste = js.Any.fromFunction2(paste), pause = js.Any.fromFunction2(pause), play = js.Any.fromFunction2(play), playing = js.Any.fromFunction2(playing), pointerCancel = js.Any.fromFunction2(pointerCancel), pointerDown = js.Any.fromFunction2(pointerDown), pointerEnter = js.Any.fromFunction2(pointerEnter), pointerLeave = js.Any.fromFunction2(pointerLeave), pointerMove = js.Any.fromFunction2(pointerMove), pointerOut = js.Any.fromFunction2(pointerOut), pointerOver = js.Any.fromFunction2(pointerOver), pointerUp = js.Any.fromFunction2(pointerUp), popState = js.Any.fromFunction2(popState), progress = js.Any.fromFunction2(progress), rateChange = js.Any.fromFunction2(rateChange), reset = js.Any.fromFunction2(reset), resize = js.Any.fromFunction2(resize), scroll = js.Any.fromFunction2(scroll), seeked = js.Any.fromFunction2(seeked), seeking = js.Any.fromFunction2(seeking), select = js.Any.fromFunction2(select), stalled = js.Any.fromFunction2(stalled), submit = js.Any.fromFunction2(submit), suspend = js.Any.fromFunction2(suspend), timeUpdate = js.Any.fromFunction2(timeUpdate), touchCancel = js.Any.fromFunction2(touchCancel), touchEnd = js.Any.fromFunction2(touchEnd), touchMove = js.Any.fromFunction2(touchMove), touchStart = js.Any.fromFunction2(touchStart), transitionCancel = js.Any.fromFunction2(transitionCancel), transitionEnd = js.Any.fromFunction2(transitionEnd), transitionRun = js.Any.fromFunction2(transitionRun), transitionStart = js.Any.fromFunction2(transitionStart), volumeChange = js.Any.fromFunction2(volumeChange), waiting = js.Any.fromFunction2(waiting), wheel = js.Any.fromFunction2(wheel))
       __obj.asInstanceOf[AsyncFireObject]
     }
     
@@ -1804,6 +2224,10 @@ object mod {
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
       
+      inline def setResize(
+        value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
+      ): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
+      
       inline def setScroll(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "scroll", js.Any.fromFunction2(value))
@@ -1852,9 +2276,21 @@ object mod {
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "touchStart", js.Any.fromFunction2(value))
       
+      inline def setTransitionCancel(
+        value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
+      ): Self = StObject.set(x, "transitionCancel", js.Any.fromFunction2(value))
+      
       inline def setTransitionEnd(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction2(value))
+      
+      inline def setTransitionRun(
+        value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
+      ): Self = StObject.set(x, "transitionRun", js.Any.fromFunction2(value))
+      
+      inline def setTransitionStart(
+        value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
+      ): Self = StObject.set(x, "transitionStart", js.Any.fromFunction2(value))
       
       inline def setVolumeChange(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
@@ -1870,563 +2306,255 @@ object mod {
     }
   }
   
-  /* Inlined parent @testing-library/dom.@testing-library/dom.BoundFunctions<{ readonly getAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly getByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly findAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly queryByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly findByText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly queryByLabelText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly getAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly findByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly getAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly queryAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly getAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly queryAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByTitle :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly findAllByText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly findAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly queryAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly getAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly getByTitle :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly getByLabelText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly queryAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByAltText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly getByRole :@testing-library/dom.@testing-library/dom/types/queries.GetByRole,  readonly queryByTestId :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryByRole :@testing-library/dom.@testing-library/dom/types/queries.QueryByRole,  readonly queryAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly findByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly getAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly getByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly findAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly findAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findAllByRole :@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole,  readonly findAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly findAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByTestId :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly findByRole :@testing-library/dom.@testing-library/dom/types/queries.FindByRole,  readonly getByText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly queryByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly getByAltText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute}> */
-  @js.native
-  trait ComponentHarness extends StObject {
-    
-    var baseElement: HTMLElement = js.native
-    
-    var container: HTMLElement = js.native
-    
-    def debug(): Unit = js.native
-    def debug(el: js.Array[HTMLElement]): Unit = js.native
-    def debug(el: HTMLElement): Unit = js.native
-    
-    def emitted(): StringDictionary[js.Array[js.Array[js.Any]]] = js.native
-    
-    var findAllByAltText: BoundFunction[FindAllByBoundAttribute] = js.native
-    
-    var findAllByDisplayValue: BoundFunction[FindAllByBoundAttribute] = js.native
-    
-    var findAllByLabelText: BoundFunction[FindAllByText_] = js.native
-    
-    var findAllByPlaceholderText: BoundFunction[FindAllByBoundAttribute] = js.native
-    
-    var findAllByRole: BoundFunction[FindAllByRole_] = js.native
-    
-    var findAllByTestId: BoundFunction[FindAllByBoundAttribute] = js.native
-    
-    var findAllByText: BoundFunction[FindAllByText_] = js.native
-    
-    var findAllByTitle: BoundFunction[FindAllByBoundAttribute] = js.native
-    
-    var findByAltText: BoundFunction[FindByBoundAttribute] = js.native
-    
-    var findByDisplayValue: BoundFunction[FindByBoundAttribute] = js.native
-    
-    var findByLabelText: BoundFunction[FindByText_] = js.native
-    
-    var findByPlaceholderText: BoundFunction[FindByBoundAttribute] = js.native
-    
-    var findByRole: BoundFunction[FindByRole_] = js.native
-    
-    var findByTestId: BoundFunction[FindByBoundAttribute] = js.native
-    
-    var findByText: BoundFunction[FindByText_] = js.native
-    
-    var findByTitle: BoundFunction[FindByBoundAttribute] = js.native
-    
-    var getAllByAltText: BoundFunction[AllByBoundAttribute] = js.native
-    
-    var getAllByDisplayValue: BoundFunction[AllByBoundAttribute] = js.native
-    
-    var getAllByLabelText: BoundFunction[AllByText] = js.native
-    
-    var getAllByPlaceholderText: BoundFunction[AllByBoundAttribute] = js.native
-    
-    var getAllByRole: BoundFunction[AllByRole] = js.native
-    
-    var getAllByTestId: BoundFunction[AllByBoundAttribute] = js.native
-    
-    var getAllByText: BoundFunction[AllByText] = js.native
-    
-    var getAllByTitle: BoundFunction[AllByBoundAttribute] = js.native
-    
-    var getByAltText: BoundFunction[GetByBoundAttribute] = js.native
-    
-    var getByDisplayValue: BoundFunction[GetByBoundAttribute] = js.native
-    
-    var getByLabelText: BoundFunction[GetByText_] = js.native
-    
-    var getByPlaceholderText: BoundFunction[GetByBoundAttribute] = js.native
-    
-    var getByRole: BoundFunction[GetByRole_] = js.native
-    
-    var getByTestId: BoundFunction[GetByBoundAttribute] = js.native
-    
-    var getByText: BoundFunction[GetByText_] = js.native
-    
-    var getByTitle: BoundFunction[GetByBoundAttribute] = js.native
-    
-    def html(): String = js.native
-    
-    def isUnmounted(): Boolean = js.native
-    
-    var queryAllByAltText: BoundFunction[AllByBoundAttribute] = js.native
-    
-    var queryAllByDisplayValue: BoundFunction[AllByBoundAttribute] = js.native
-    
-    var queryAllByLabelText: BoundFunction[AllByText] = js.native
-    
-    var queryAllByPlaceholderText: BoundFunction[AllByBoundAttribute] = js.native
-    
-    var queryAllByRole: BoundFunction[AllByRole] = js.native
-    
-    var queryAllByTestId: BoundFunction[AllByBoundAttribute] = js.native
-    
-    var queryAllByText: BoundFunction[AllByText] = js.native
-    
-    var queryAllByTitle: BoundFunction[AllByBoundAttribute] = js.native
-    
-    var queryByAltText: BoundFunction[QueryByBoundAttribute] = js.native
-    
-    var queryByDisplayValue: BoundFunction[QueryByBoundAttribute] = js.native
-    
-    var queryByLabelText: BoundFunction[QueryByText_] = js.native
-    
-    var queryByPlaceholderText: BoundFunction[QueryByBoundAttribute] = js.native
-    
-    var queryByRole: BoundFunction[QueryByRole_] = js.native
-    
-    var queryByTestId: BoundFunction[QueryByBoundAttribute] = js.native
-    
-    var queryByText: BoundFunction[QueryByText_] = js.native
-    
-    var queryByTitle: BoundFunction[QueryByBoundAttribute] = js.native
-    
-    def unmount(): Unit = js.native
-    
-    def updateProps(props: js.Object): js.Promise[Unit] = js.native
-  }
-  
-  type ConfigurationCallback[V /* <: Vue */] = js.Function3[
-    /* localVue */ VueConstructor[Vue], 
-    /* store */ Store[js.Any], 
-    /* router */ default, 
-    Partial[ThisTypedMountOptions[V]] | Unit
+  type Debug = js.Function3[
+    /* baseElement */ js.UndefOr[(js.Array[DocumentFragment | Element]) | DocumentFragment | Element], 
+    /* maxLength */ js.UndefOr[Double], 
+    /* options */ js.UndefOr[OptionsReceived], 
+    Unit
   ]
   
-  /* Inlined parent // The props and store options special-cased by vue-testing-library and NOT passed to mount().
-  // In TS 3.5+: Omit<ThisTypedMountOptions<V>, "store" | "props">
-  std.Pick<@vue/test-utils.@vue/test-utils.ThisTypedMountOptions<V>, std.Exclude<keyof @vue/test-utils.@vue/test-utils.ThisTypedMountOptions<V>, 'store' | 'props'>> */
-  trait RenderOptions[V /* <: Vue */, S] extends StObject {
+  /* Inlined @testing-library/vue.@testing-library/vue.VueTestingLibraryRenderOptions & @testing-library/vue.@testing-library/vue.VueTestUtilsRenderOptions */
+  trait RenderOptions extends StObject {
     
-    var activated: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var attrs: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var attachTo: js.UndefOr[Element | String] = js.undefined
+    var baseElement: js.UndefOr[Element] = js.undefined
     
-    var attachToDocument: js.UndefOr[Boolean] = js.undefined
+    var container: js.UndefOr[Element] = js.undefined
     
-    var attrs: js.UndefOr[Record[String, String]] = js.undefined
-    
-    var baseElement: js.UndefOr[HTMLElement] = js.undefined
-    
-    var beforeCreate: js.UndefOr[js.ThisFunction0[/* this */ V, Unit]] = js.undefined
-    
-    var beforeDestroy: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    var beforeMount: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    var beforeUpdate: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    var comments: js.UndefOr[Boolean] = js.undefined
-    
-    var components: js.UndefOr[
-        StringDictionary[
-          (Component[js.Any, js.Any, js.Any, js.Any]) | (AsyncComponent[js.Any, js.Any, js.Any, js.Any])
+    var data: js.UndefOr[
+        js.Function0[
+          /* import warning: importer.ImportType#apply Failed type conversion: {} extends {} ? any : {} extends object ? / * Inlined std.Partial<{}> * /
+    {} : any */ js.Any
         ]
       ] = js.undefined
     
-    var computed: js.UndefOr[js.Object] = js.undefined
+    var global: js.UndefOr[GlobalMountOptions] = js.undefined
     
-    var container: js.UndefOr[HTMLElement] = js.undefined
-    
-    var context: js.UndefOr[VNodeData] = js.undefined
-    
-    var created: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    var data: js.UndefOr[DefaultData[V]] = js.undefined
-    
-    var deactivated: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    var delimiters: js.UndefOr[js.Tuple2[String, String]] = js.undefined
-    
-    var destroyed: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    var directives: js.UndefOr[StringDictionary[DirectiveFunction | DirectiveOptions]] = js.undefined
-    
-    var el: js.UndefOr[Element | String] = js.undefined
-    
-    var errorCaptured: js.UndefOr[js.Function3[/* err */ Error, /* vm */ Vue, /* info */ String, Boolean | Unit]] = js.undefined
-    
-    var `extends`: js.UndefOr[
-        (ComponentOptions[
-          Vue, 
-          DefaultData[Vue], 
-          DefaultMethods[Vue], 
-          DefaultComputed, 
-          PropsDefinition[DefaultProps], 
-          DefaultProps
-        ]) | VueConstructor[Vue]
+    var props: js.UndefOr[
+        (RawProps & (Record[String, Any])) | (/* import warning: importer.ImportType#apply Failed type conversion: {} extends std.Record<string, any> ? null : never */ js.Any)
       ] = js.undefined
     
-    var filters: js.UndefOr[StringDictionary[js.Function]] = js.undefined
+    /**
+      * @deprecated Add a Router instance through `global.plugins` array instead.
+      */
+    var routes: js.UndefOr[Any] = js.undefined
     
-    var inheritAttrs: js.UndefOr[Boolean] = js.undefined
+    var slots: js.UndefOr[SlotDictionarydefaultSlot] = js.undefined
     
-    var inject: js.UndefOr[InjectOptions] = js.undefined
-    
-    var listeners: js.UndefOr[Record[String, js.Function | js.Array[js.Function]]] = js.undefined
-    
-    var localVue: js.UndefOr[VueConstructor[Vue]] = js.undefined
-    
-    var methods: js.UndefOr[DefaultMethods[V]] = js.undefined
-    
-    var mixins: js.UndefOr[
-        js.Array[
-          (ComponentOptions[
-            Vue, 
-            DefaultData[Vue], 
-            DefaultMethods[Vue], 
-            DefaultComputed, 
-            PropsDefinition[DefaultProps], 
-            DefaultProps
-          ]) | VueConstructor[Vue]
-        ]
-      ] = js.undefined
-    
-    var mocks: js.UndefOr[js.Object | `false`] = js.undefined
-    
-    var model: js.UndefOr[Event] = js.undefined
-    
-    var mounted: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    var name: js.UndefOr[String] = js.undefined
-    
-    var parent: js.UndefOr[Vue] = js.undefined
-    
-    var parentComponent: js.UndefOr[
-        Component[
-          DefaultData[scala.Nothing], 
-          DefaultMethods[scala.Nothing], 
-          DefaultComputed, 
-          DefaultProps
-        ]
-      ] = js.undefined
-    
-    var props: js.UndefOr[js.Object] = js.undefined
-    
-    var propsData: js.UndefOr[js.Object] = js.undefined
-    
-    var provide: js.UndefOr[js.Object | js.Function0[js.Object]] = js.undefined
-    
-    var render: js.UndefOr[
-        js.Function2[/* createElement */ CreateElement, /* hack */ RenderContext[DefaultProps], VNode]
-      ] = js.undefined
-    
-    var renderError: js.UndefOr[js.Function2[/* createElement */ CreateElement, /* err */ Error, VNode]] = js.undefined
-    
-    var routes: js.UndefOr[js.Array[RouteConfig]] = js.undefined
-    
-    var scopedSlots: js.UndefOr[Record[String, String | js.Function]] = js.undefined
-    
-    var serverPrefetch: js.UndefOr[js.ThisFunction0[/* this */ V, js.Promise[Unit]]] = js.undefined
-    
-    var slots: js.UndefOr[Slots] = js.undefined
-    
-    var staticRenderFns: js.UndefOr[js.Array[js.Function1[/* createElement */ CreateElement, VNode]]] = js.undefined
-    
-    var store: js.UndefOr[StoreOptions[S]] = js.undefined
-    
-    var stubs: js.UndefOr[Stubs | `false`] = js.undefined
-    
-    var template: js.UndefOr[String] = js.undefined
-    
-    var transitions: js.UndefOr[StringDictionary[js.Object]] = js.undefined
-    
-    var updated: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    var watch: js.UndefOr[Record[String, WatchOptionsWithHandler[js.Any] | WatchHandler[js.Any] | String]] = js.undefined
+    /**
+      * @deprecated Add a Vuex instance through `global.plugins` array instead.
+      */
+    var store: js.UndefOr[Any] = js.undefined
   }
   object RenderOptions {
     
-    inline def apply[V /* <: Vue */, S](): RenderOptions[V, S] = {
+    inline def apply(): RenderOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[RenderOptions[V, S]]
+      __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions[?, ?], V /* <: Vue */, S](x: Self & (RenderOptions[V, S])) {
+    extension [Self <: RenderOptions](x: Self) {
       
-      inline def setActivated(value: () => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction0(value))
-      
-      inline def setActivatedUndefined: Self = StObject.set(x, "activated", js.undefined)
-      
-      inline def setAttachTo(value: Element | String): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
-      
-      inline def setAttachToDocument(value: Boolean): Self = StObject.set(x, "attachToDocument", value.asInstanceOf[js.Any])
-      
-      inline def setAttachToDocumentUndefined: Self = StObject.set(x, "attachToDocument", js.undefined)
-      
-      inline def setAttachToUndefined: Self = StObject.set(x, "attachTo", js.undefined)
-      
-      inline def setAttrs(value: Record[String, String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Record[String, Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
       inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      inline def setBaseElement(value: HTMLElement): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
+      inline def setBaseElement(value: Element): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
       
       inline def setBaseElementUndefined: Self = StObject.set(x, "baseElement", js.undefined)
       
-      inline def setBeforeCreate(value: js.ThisFunction0[/* this */ V, Unit]): Self = StObject.set(x, "beforeCreate", value.asInstanceOf[js.Any])
-      
-      inline def setBeforeCreateUndefined: Self = StObject.set(x, "beforeCreate", js.undefined)
-      
-      inline def setBeforeDestroy(value: () => Unit): Self = StObject.set(x, "beforeDestroy", js.Any.fromFunction0(value))
-      
-      inline def setBeforeDestroyUndefined: Self = StObject.set(x, "beforeDestroy", js.undefined)
-      
-      inline def setBeforeMount(value: () => Unit): Self = StObject.set(x, "beforeMount", js.Any.fromFunction0(value))
-      
-      inline def setBeforeMountUndefined: Self = StObject.set(x, "beforeMount", js.undefined)
-      
-      inline def setBeforeUpdate(value: () => Unit): Self = StObject.set(x, "beforeUpdate", js.Any.fromFunction0(value))
-      
-      inline def setBeforeUpdateUndefined: Self = StObject.set(x, "beforeUpdate", js.undefined)
-      
-      inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
-      
-      inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
-      
-      inline def setComponents(
-        value: StringDictionary[
-              (Component[js.Any, js.Any, js.Any, js.Any]) | (AsyncComponent[js.Any, js.Any, js.Any, js.Any])
-            ]
-      ): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
-      
-      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
-      
-      inline def setComputed(value: js.Object): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
-      
-      inline def setComputedUndefined: Self = StObject.set(x, "computed", js.undefined)
-      
-      inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      inline def setContext(value: VNodeData): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-      
-      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-      
-      inline def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
-      
-      inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
-      
-      inline def setData(value: DefaultData[V]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(
+        value: () => /* import warning: importer.ImportType#apply Failed type conversion: {} extends {} ? any : {} extends object ? / * Inlined std.Partial<{}> * /
+      {} : any */ js.Any
+      ): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDeactivated(value: () => Unit): Self = StObject.set(x, "deactivated", js.Any.fromFunction0(value))
+      inline def setGlobal(value: GlobalMountOptions): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      inline def setDeactivatedUndefined: Self = StObject.set(x, "deactivated", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      inline def setDelimiters(value: js.Tuple2[String, String]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
-      
-      inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
-      
-      inline def setDestroyed(value: () => Unit): Self = StObject.set(x, "destroyed", js.Any.fromFunction0(value))
-      
-      inline def setDestroyedUndefined: Self = StObject.set(x, "destroyed", js.undefined)
-      
-      inline def setDirectives(value: StringDictionary[DirectiveFunction | DirectiveOptions]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
-      
-      inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
-      
-      inline def setEl(value: Element | String): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
-      
-      inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
-      
-      inline def setErrorCaptured(value: (/* err */ Error, /* vm */ Vue, /* info */ String) => Boolean | Unit): Self = StObject.set(x, "errorCaptured", js.Any.fromFunction3(value))
-      
-      inline def setErrorCapturedUndefined: Self = StObject.set(x, "errorCaptured", js.undefined)
-      
-      inline def setExtends(
-        value: (ComponentOptions[
-              Vue, 
-              DefaultData[Vue], 
-              DefaultMethods[Vue], 
-              DefaultComputed, 
-              PropsDefinition[DefaultProps], 
-              DefaultProps
-            ]) | VueConstructor[Vue]
-      ): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
-      
-      inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
-      
-      inline def setFilters(value: StringDictionary[js.Function]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
-      
-      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
-      
-      inline def setInheritAttrs(value: Boolean): Self = StObject.set(x, "inheritAttrs", value.asInstanceOf[js.Any])
-      
-      inline def setInheritAttrsUndefined: Self = StObject.set(x, "inheritAttrs", js.undefined)
-      
-      inline def setInject(value: InjectOptions): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
-      
-      inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
-      
-      inline def setInjectVarargs(value: String*): Self = StObject.set(x, "inject", js.Array(value :_*))
-      
-      inline def setListeners(value: Record[String, js.Function | js.Array[js.Function]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
-      
-      inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
-      
-      inline def setLocalVue(value: VueConstructor[Vue]): Self = StObject.set(x, "localVue", value.asInstanceOf[js.Any])
-      
-      inline def setLocalVueUndefined: Self = StObject.set(x, "localVue", js.undefined)
-      
-      inline def setMethods(value: DefaultMethods[V]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
-      
-      inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
-      
-      inline def setMixins(
-        value: js.Array[
-              (ComponentOptions[
-                Vue, 
-                DefaultData[Vue], 
-                DefaultMethods[Vue], 
-                DefaultComputed, 
-                PropsDefinition[DefaultProps], 
-                DefaultProps
-              ]) | VueConstructor[Vue]
-            ]
-      ): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
-      
-      inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
-      
-      inline def setMixinsVarargs(
-        value: ((ComponentOptions[
-              Vue, 
-              DefaultData[Vue], 
-              DefaultMethods[Vue], 
-              DefaultComputed, 
-              PropsDefinition[DefaultProps], 
-              DefaultProps
-            ]) | VueConstructor[Vue])*
-      ): Self = StObject.set(x, "mixins", js.Array(value :_*))
-      
-      inline def setMocks(value: js.Object | `false`): Self = StObject.set(x, "mocks", value.asInstanceOf[js.Any])
-      
-      inline def setMocksUndefined: Self = StObject.set(x, "mocks", js.undefined)
-      
-      inline def setModel(value: Event): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
-      
-      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
-      
-      inline def setMounted(value: () => Unit): Self = StObject.set(x, "mounted", js.Any.fromFunction0(value))
-      
-      inline def setMountedUndefined: Self = StObject.set(x, "mounted", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setParent(value: Vue): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
-      
-      inline def setParentComponent(
-        value: Component[
-              DefaultData[scala.Nothing], 
-              DefaultMethods[scala.Nothing], 
-              DefaultComputed, 
-              DefaultProps
-            ]
-      ): Self = StObject.set(x, "parentComponent", value.asInstanceOf[js.Any])
-      
-      inline def setParentComponentUndefined: Self = StObject.set(x, "parentComponent", js.undefined)
-      
-      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
-      
-      inline def setProps(value: js.Object): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
-      
-      inline def setPropsData(value: js.Object): Self = StObject.set(x, "propsData", value.asInstanceOf[js.Any])
-      
-      inline def setPropsDataUndefined: Self = StObject.set(x, "propsData", js.undefined)
+      inline def setProps(
+        value: (RawProps & (Record[String, Any])) | (/* import warning: importer.ImportType#apply Failed type conversion: {} extends std.Record<string, any> ? null : never */ js.Any)
+      ): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      inline def setProvide(value: js.Object | js.Function0[js.Object]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
-      
-      inline def setProvideFunction0(value: () => js.Object): Self = StObject.set(x, "provide", js.Any.fromFunction0(value))
-      
-      inline def setProvideUndefined: Self = StObject.set(x, "provide", js.undefined)
-      
-      inline def setRender(value: (/* createElement */ CreateElement, /* hack */ RenderContext[DefaultProps]) => VNode): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
-      
-      inline def setRenderError(value: (/* createElement */ CreateElement, /* err */ Error) => VNode): Self = StObject.set(x, "renderError", js.Any.fromFunction2(value))
-      
-      inline def setRenderErrorUndefined: Self = StObject.set(x, "renderError", js.undefined)
-      
-      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
-      
-      inline def setRoutes(value: js.Array[RouteConfig]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
       inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
-      inline def setRoutesVarargs(value: RouteConfig*): Self = StObject.set(x, "routes", js.Array(value :_*))
-      
-      inline def setScopedSlots(value: Record[String, String | js.Function]): Self = StObject.set(x, "scopedSlots", value.asInstanceOf[js.Any])
-      
-      inline def setScopedSlotsUndefined: Self = StObject.set(x, "scopedSlots", js.undefined)
-      
-      inline def setServerPrefetch(value: js.ThisFunction0[/* this */ V, js.Promise[Unit]]): Self = StObject.set(x, "serverPrefetch", value.asInstanceOf[js.Any])
-      
-      inline def setServerPrefetchUndefined: Self = StObject.set(x, "serverPrefetch", js.undefined)
-      
-      inline def setSlots(value: Slots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: SlotDictionarydefaultSlot): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
-      inline def setStaticRenderFns(value: js.Array[js.Function1[/* createElement */ CreateElement, VNode]]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
-      
-      inline def setStaticRenderFnsUndefined: Self = StObject.set(x, "staticRenderFns", js.undefined)
-      
-      inline def setStaticRenderFnsVarargs(value: (js.Function1[/* createElement */ CreateElement, VNode])*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
-      
-      inline def setStore(value: StoreOptions[S]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
       inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
-      
-      inline def setStubs(value: Stubs | `false`): Self = StObject.set(x, "stubs", value.asInstanceOf[js.Any])
-      
-      inline def setStubsUndefined: Self = StObject.set(x, "stubs", js.undefined)
-      
-      inline def setStubsVarargs(value: String*): Self = StObject.set(x, "stubs", js.Array(value :_*))
-      
-      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
-      
-      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
-      
-      inline def setTransitions(value: StringDictionary[js.Object]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
-      
-      inline def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
-      
-      inline def setUpdated(value: () => Unit): Self = StObject.set(x, "updated", js.Any.fromFunction0(value))
-      
-      inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
-      
-      inline def setWatch(value: Record[String, WatchOptionsWithHandler[js.Any] | WatchHandler[js.Any] | String]): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
-      
-      inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
     }
   }
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped @testing-library/vue.anon.Typeofqueries extends {readonly findAllByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly findAllByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly findAllByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>, readonly findAllByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly findAllByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole<T>>, readonly findAllByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly findAllByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>, readonly findAllByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, readonly findByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly findByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly findByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>, readonly findByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly findByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByRole<T>>, readonly findByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly findByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>, readonly findByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, readonly getAllByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly getAllByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly getAllByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, readonly getAllByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly getAllByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>, readonly getAllByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly getAllByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, readonly getAllByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly getByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, readonly getByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, readonly getByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>, readonly getByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, readonly getByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByRole<T>>, readonly getByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, readonly getByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>, readonly getByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, readonly queryAllByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryAllByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryAllByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, readonly queryAllByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryAllByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>, readonly queryAllByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryAllByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, readonly queryAllByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, readonly queryByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly queryByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly queryByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>, readonly queryByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly queryByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByRole<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByRole<T>>, readonly queryByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, readonly queryByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>, readonly queryByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>} ? {getByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>, getAllByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, queryByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>, queryAllByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, findByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>, findAllByLabelText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>, getByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, getAllByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, queryByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, queryAllByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, findByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, findAllByPlaceholderText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, getByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByText<T>>, getAllByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, queryByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByText<T>>, queryAllByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByText<T>>, findByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByText<T>>, findAllByText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByText<T>>, getByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, getAllByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, queryByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, queryAllByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, findByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, findAllByAltText <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, getByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, getAllByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, queryByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, queryAllByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, findByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, findAllByTitle <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, getByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, getAllByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, queryByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, queryAllByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, findByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, findAllByDisplayValue <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>, getByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.GetByRole<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByRole<T>>, getAllByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>, queryByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.QueryByRole<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByRole<T>>, queryAllByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByRole<T>>, findByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindByRole<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByRole<T>>, findAllByRole <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole<T>>, getByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute<T>>, getAllByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, queryByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute<T>>, queryAllByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute<T>>, findByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute<T>>, findAllByTestId <T extends std.HTMLElement = std.HTMLElement>(args : std.Parameters<@testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>>): std.ReturnType<@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute<T>>} & {[ P in keyof @testing-library/vue.anon.Typeofqueries ]: @testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/vue.anon.Typeofqueries[P]>} : {[ P in keyof @testing-library/vue.anon.Typeofqueries ]: @testing-library/dom.@testing-library/dom/types/get-queries-for-element.BoundFunction<@testing-library/vue.anon.Typeofqueries[P]>} */ @js.native
+  trait RenderResult extends StObject {
+    
+    var baseElement: Element = js.native
+    
+    var container: Element = js.native
+    
+    def debug(): Unit = js.native
+    def debug(baseElement: js.Array[DocumentFragment | Element]): Unit = js.native
+    def debug(baseElement: js.Array[DocumentFragment | Element], maxLength: Double): Unit = js.native
+    def debug(baseElement: js.Array[DocumentFragment | Element], maxLength: Double, options: OptionsReceived): Unit = js.native
+    def debug(baseElement: js.Array[DocumentFragment | Element], maxLength: Unit, options: OptionsReceived): Unit = js.native
+    def debug(baseElement: Unit, maxLength: Double): Unit = js.native
+    def debug(baseElement: Unit, maxLength: Double, options: OptionsReceived): Unit = js.native
+    def debug(baseElement: Unit, maxLength: Unit, options: OptionsReceived): Unit = js.native
+    def debug(baseElement: DocumentFragment): Unit = js.native
+    def debug(baseElement: DocumentFragment, maxLength: Double): Unit = js.native
+    def debug(baseElement: DocumentFragment, maxLength: Double, options: OptionsReceived): Unit = js.native
+    def debug(baseElement: DocumentFragment, maxLength: Unit, options: OptionsReceived): Unit = js.native
+    def debug(baseElement: Element): Unit = js.native
+    def debug(baseElement: Element, maxLength: Double): Unit = js.native
+    def debug(baseElement: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
+    def debug(baseElement: Element, maxLength: Unit, options: OptionsReceived): Unit = js.native
+    @JSName("debug")
+    var debug_Original: Debug = js.native
+    
+    def emitted[T](): js.Array[T] = js.native
+    def emitted[T](name: String): js.Array[T] = js.native
+    @JSName("emitted")
+    def emitted_T_Record[T](): Record[String, js.Array[T]] = js.native
+    
+    def html(): String = js.native
+    
+    def rerender(props: js.Object): js.Promise[Unit] = js.native
+    
+    def unmount(): Unit = js.native
+  }
+  
   @js.native
-  trait VueFireObject
+  trait VueFireEventObject
     extends StObject
        with AsyncFireObject {
     
-    def apply(element: Document, event: typings.std.Event): js.Promise[Unit] = js.native
-    def apply(element: Element, event: typings.std.Event): js.Promise[Unit] = js.native
-    def apply(element: Window, event: typings.std.Event): js.Promise[Unit] = js.native
+    def apply(element: Document, event: Event): js.Promise[Unit] = js.native
+    def apply(element: Element, event: Event): js.Promise[Unit] = js.native
+    def apply(element: Window, event: Event): js.Promise[Unit] = js.native
     
     def touch(element: Document): js.Promise[Unit] = js.native
     def touch(element: Element): js.Promise[Unit] = js.native
     def touch(element: Window): js.Promise[Unit] = js.native
     
-    def update(element: HTMLElement): js.Promise[Unit] = js.native
-    def update(element: HTMLElement, value: String): js.Promise[Unit] = js.native
+    def update(element: Element): js.Promise[Unit] = js.native
+    def update(element: Element, value: String): js.Promise[Unit] = js.native
     def update(element: HTMLInputElement, value: String): js.Promise[Unit] = js.native
     def update(element: HTMLOptionElement): js.Promise[Unit] = js.native
     def update(element: HTMLSelectElement, value: String): js.Promise[Unit] = js.native
     def update(element: HTMLTextAreaElement, value: String): js.Promise[Unit] = js.native
+  }
+  
+  /* Inlined std.Omit<@vue/test-utils.@vue/test-utils.MountingOptions<std.Record<string, any>, {}>, 'attachTo' | 'propsData' | 'shallow'> */
+  trait VueTestUtilsRenderOptions extends StObject {
+    
+    var attrs: js.UndefOr[Record[String, Any]] = js.undefined
+    
+    var data: js.UndefOr[
+        js.Function0[
+          /* import warning: importer.ImportType#apply Failed type conversion: {} extends {} ? any : {} extends object ? / * Inlined std.Partial<{}> * /
+    {} : any */ js.Any
+        ]
+      ] = js.undefined
+    
+    var global: js.UndefOr[GlobalMountOptions] = js.undefined
+    
+    var props: js.UndefOr[
+        (RawProps & (Record[String, Any])) | (/* import warning: importer.ImportType#apply Failed type conversion: {} extends std.Record<string, any> ? null : never */ js.Any)
+      ] = js.undefined
+    
+    var slots: js.UndefOr[SlotDictionarydefaultSlot] = js.undefined
+  }
+  object VueTestUtilsRenderOptions {
+    
+    inline def apply(): VueTestUtilsRenderOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[VueTestUtilsRenderOptions]
+    }
+    
+    extension [Self <: VueTestUtilsRenderOptions](x: Self) {
+      
+      inline def setAttrs(value: Record[String, Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      
+      inline def setData(
+        value: () => /* import warning: importer.ImportType#apply Failed type conversion: {} extends {} ? any : {} extends object ? / * Inlined std.Partial<{}> * /
+      {} : any */ js.Any
+      ): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setGlobal(value: GlobalMountOptions): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      
+      inline def setProps(
+        value: (RawProps & (Record[String, Any])) | (/* import warning: importer.ImportType#apply Failed type conversion: {} extends std.Record<string, any> ? null : never */ js.Any)
+      ): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      
+      inline def setSlots(value: SlotDictionarydefaultSlot): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      
+      inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+    }
+  }
+  
+  trait VueTestingLibraryRenderOptions extends StObject {
+    
+    var baseElement: js.UndefOr[Element] = js.undefined
+    
+    var container: js.UndefOr[Element] = js.undefined
+    
+    /**
+      * @deprecated Add a Router instance through `global.plugins` array instead.
+      */
+    var routes: js.UndefOr[Any] = js.undefined
+    
+    /**
+      * @deprecated Add a Vuex instance through `global.plugins` array instead.
+      */
+    var store: js.UndefOr[Any] = js.undefined
+  }
+  object VueTestingLibraryRenderOptions {
+    
+    inline def apply(): VueTestingLibraryRenderOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[VueTestingLibraryRenderOptions]
+    }
+    
+    extension [Self <: VueTestingLibraryRenderOptions](x: Self) {
+      
+      inline def setBaseElement(value: Element): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
+      
+      inline def setBaseElementUndefined: Self = StObject.set(x, "baseElement", js.undefined)
+      
+      inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      
+      inline def setRoutes(value: Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      
+      inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+      
+      inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+    }
   }
 }

@@ -1,7 +1,7 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.computePressureMod.IComputePressureData
-import typings.babylonjs.computePressureMod.IComputePressureThresholds
+import typings.babylonjs.miscComputePressureMod.IComputePressureData
+import typings.babylonjs.miscComputePressureMod.IComputePressureThresholds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ComputePressureObserverWrapper")
 @js.native
 open class ComputePressureObserverWrapper protected ()
-  extends typings.babylonjs.legacyMod.ComputePressureObserverWrapper {
+  extends typings.babylonjs.legacyLegacyMod.ComputePressureObserverWrapper {
   /**
     * A compute pressure observer will call this callback, whenever these thresholds are met.
     * @param callback The callback that is called whenever thresholds are met.

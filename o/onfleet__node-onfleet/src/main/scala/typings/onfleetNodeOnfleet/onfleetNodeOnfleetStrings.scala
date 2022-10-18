@@ -3,7 +3,7 @@ package typings.onfleetNodeOnfleet
 import typings.onfleetNodeOnfleet.metadataMod.MetadataSubType
 import typings.onfleetNodeOnfleet.metadataMod.MetadataType
 import typings.onfleetNodeOnfleet.metadataMod.MetadataVisibility
-import typings.onfleetNodeOnfleet.recipientsMod.RecipientQueryKey
+import typings.onfleetNodeOnfleet.resourcesRecipientsMod.RecipientQueryKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.interactjsTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.interactjsTypes.eventsMod.FakeEvent
+import typings.interactjsTypes.coreEventsMod.FakeEvent
 import typings.interactjsTypes.interactjsTypesStrings.all
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,18 +13,18 @@ trait Add extends StObject {
   def add(
     eventTarget: typings.std.EventTarget,
     `type`: String,
-    listener: typings.interactjsTypes.eventsMod.Listener
+    listener: typings.interactjsTypes.coreEventsMod.Listener
   ): Unit = js.native
   def add(
     eventTarget: typings.std.EventTarget,
     `type`: String,
-    listener: typings.interactjsTypes.eventsMod.Listener,
+    listener: typings.interactjsTypes.coreEventsMod.Listener,
     optionalArg: Any
   ): Unit = js.native
   def add(
     eventTarget: typings.std.EventTarget,
     `type`: String,
-    listener: typings.interactjsTypes.eventsMod.Listener,
+    listener: typings.interactjsTypes.coreEventsMod.Listener,
     optionalArg: Boolean
   ): Unit = js.native
   
@@ -32,13 +32,13 @@ trait Add extends StObject {
     selector: String,
     context: typings.std.Node,
     `type`: String,
-    listener: typings.interactjsTypes.eventsMod.Listener
+    listener: typings.interactjsTypes.coreEventsMod.Listener
   ): Unit = js.native
   def addDelegate(
     selector: String,
     context: typings.std.Node,
     `type`: String,
-    listener: typings.interactjsTypes.eventsMod.Listener,
+    listener: typings.interactjsTypes.coreEventsMod.Listener,
     optionalArg: Any
   ): Unit = js.native
   
@@ -60,40 +60,40 @@ trait Add extends StObject {
   def remove(
     eventTarget: typings.std.EventTarget,
     `type`: String,
-    listener: typings.interactjsTypes.eventsMod.Listener
+    listener: typings.interactjsTypes.coreEventsMod.Listener
   ): Unit = js.native
   def remove(
     eventTarget: typings.std.EventTarget,
     `type`: String,
-    listener: typings.interactjsTypes.eventsMod.Listener,
+    listener: typings.interactjsTypes.coreEventsMod.Listener,
     optionalArg: Any
   ): Unit = js.native
   def remove(
     eventTarget: typings.std.EventTarget,
     `type`: String,
-    listener: typings.interactjsTypes.eventsMod.Listener,
+    listener: typings.interactjsTypes.coreEventsMod.Listener,
     optionalArg: Boolean
   ): Unit = js.native
   
-  def removeDelegate(selector: String, context: typings.interactjsTypes.typesMod.Element, `type`: String): Unit = js.native
+  def removeDelegate(selector: String, context: typings.interactjsTypes.coreTypesMod.Element, `type`: String): Unit = js.native
   def removeDelegate(
     selector: String,
-    context: typings.interactjsTypes.typesMod.Element,
+    context: typings.interactjsTypes.coreTypesMod.Element,
     `type`: String,
     listener: Unit,
     optionalArg: Any
   ): Unit = js.native
   def removeDelegate(
     selector: String,
-    context: typings.interactjsTypes.typesMod.Element,
+    context: typings.interactjsTypes.coreTypesMod.Element,
     `type`: String,
-    listener: typings.interactjsTypes.eventsMod.Listener
+    listener: typings.interactjsTypes.coreEventsMod.Listener
   ): Unit = js.native
   def removeDelegate(
     selector: String,
-    context: typings.interactjsTypes.typesMod.Element,
+    context: typings.interactjsTypes.coreTypesMod.Element,
     `type`: String,
-    listener: typings.interactjsTypes.eventsMod.Listener,
+    listener: typings.interactjsTypes.coreEventsMod.Listener,
     optionalArg: Any
   ): Unit = js.native
   def removeDelegate(selector: String, context: typings.std.Document, `type`: String): Unit = js.native
@@ -102,13 +102,13 @@ trait Add extends StObject {
     selector: String,
     context: typings.std.Document,
     `type`: String,
-    listener: typings.interactjsTypes.eventsMod.Listener
+    listener: typings.interactjsTypes.coreEventsMod.Listener
   ): Unit = js.native
   def removeDelegate(
     selector: String,
     context: typings.std.Document,
     `type`: String,
-    listener: typings.interactjsTypes.eventsMod.Listener,
+    listener: typings.interactjsTypes.coreEventsMod.Listener,
     optionalArg: Any
   ): Unit = js.native
   

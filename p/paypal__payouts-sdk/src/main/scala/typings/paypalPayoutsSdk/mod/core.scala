@@ -13,32 +13,34 @@ object core {
   /**
     * Live Environment
     */
-  @JSImport("@paypal/payouts-sdk", "core.LiveEnvironment")
-  @js.native
-  open class LiveEnvironment protected () extends PayPalEnvironment {
-    def this(clientId: String, clientSecret: String) = this()
-  }
+  type LiveEnvironment = PayPalEnvironment
   
   /**
     * Base class for PayPal environments
     */
-  @JSImport("@paypal/payouts-sdk", "core.PayPalEnvironment")
-  @js.native
-  open class PayPalEnvironment protected () extends StObject {
-    def this(clientId: String, clientSecret: String, baseUrl: String, webUrl: String) = this()
+  trait PayPalEnvironment extends StObject {
     
     // Authorization header string for basic authentication with the current client id and secret
-    def authorizationString(): String = js.native
+    def authorizationString(): String
+  }
+  object PayPalEnvironment {
+    
+    inline def apply(authorizationString: () => String): PayPalEnvironment = {
+      val __obj = js.Dynamic.literal(authorizationString = js.Any.fromFunction0(authorizationString))
+      __obj.asInstanceOf[PayPalEnvironment]
+    }
+    
+    extension [Self <: PayPalEnvironment](x: Self) {
+      
+      inline def setAuthorizationString(value: () => String): Self = StObject.set(x, "authorizationString", js.Any.fromFunction0(value))
+    }
   }
   
   /**
     * PayPal HTTP client
     */
-  @JSImport("@paypal/payouts-sdk", "core.PayPalHttpClient")
   @js.native
-  open class PayPalHttpClient protected () extends StObject {
-    def this(environment: PayPalEnvironment) = this()
-    def this(environment: PayPalEnvironment, refreshToken: String) = this()
+  trait PayPalHttpClient extends StObject {
     
     def execute(request: PayoutsGetRequest): js.Promise[HttpResponse[GetBatchPayoutResponse]] = js.native
     def execute(request: PayoutsItemCancelRequest): js.Promise[HttpResponse[GetPayoutsItemResponse]] = js.native
@@ -49,9 +51,5 @@ object core {
   /**
     * Sandbox Environment
     */
-  @JSImport("@paypal/payouts-sdk", "core.SandboxEnvironment")
-  @js.native
-  open class SandboxEnvironment protected () extends PayPalEnvironment {
-    def this(clientId: String, clientSecret: String) = this()
-  }
+  type SandboxEnvironment = PayPalEnvironment
 }

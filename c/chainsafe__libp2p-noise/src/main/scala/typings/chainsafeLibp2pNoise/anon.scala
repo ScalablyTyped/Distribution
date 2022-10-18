@@ -1,6 +1,6 @@
 package typings.chainsafeLibp2pNoise
 
-import typings.chainsafeLibp2pNoise.handshakeMod.CipherState
+import typings.chainsafeLibp2pNoise.distSrcHandshakeMod.CipherState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

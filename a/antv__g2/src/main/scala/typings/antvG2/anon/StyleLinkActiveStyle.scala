@@ -1,8 +1,8 @@
 package typings.antvG2.anon
 
-import typings.antvG2.elementMod.default
-import typings.antvG2.linkByColorMod.LinkActiveStyle
-import typings.antvGBase.typesMod.ShapeAttrs
+import typings.antvG2.libGeometryElementMod.default
+import typings.antvG2.libInteractionActionElementLinkByColorMod.LinkActiveStyle
+import typings.antvGBase.libTypesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

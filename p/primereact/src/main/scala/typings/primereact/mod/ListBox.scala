@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.listboxMod.ListBoxProps
+import typings.primereact.listboxListboxMod.ListBoxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "ListBox")
 @js.native
 open class ListBox protected ()
-  extends typings.primereact.listboxMod.ListBox {
+  extends typings.primereact.listboxListboxMod.ListBox {
   def this(props: ListBoxProps) = this()
   /**
     * @deprecated

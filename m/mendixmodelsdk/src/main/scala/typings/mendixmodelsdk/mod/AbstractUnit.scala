@@ -1,17 +1,17 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.unitsMod.IStructuralUnit
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalUnitsMod.IStructuralUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "AbstractUnit")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "AbstractUnit")
 @js.native
-abstract class AbstractUnit[TModel /* <: IAbstractModel */] protected ()
-  extends typings.mendixmodelsdk.internalMod.AbstractUnit[TModel] {
+open class AbstractUnit[TModel /* <: IAbstractModel */] protected ()
+  extends typings.mendixmodelsdk.srcSdkInternalMod.AbstractUnit[TModel] {
   def this(
-    model: typings.mendixmodelsdk.abstractModelMod.AbstractModel,
+    model: typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,

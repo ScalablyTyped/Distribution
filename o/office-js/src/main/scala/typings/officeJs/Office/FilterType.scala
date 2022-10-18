@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait FilterType extends StObject
 /**
-  * Specifies whether filtering from the host application is applied when the data is retrieved.
+  * Specifies whether filtering from the Office application is applied when the data is retrieved.
   */
 @JSGlobal("Office.FilterType")
 @js.native
 object FilterType extends StObject {
   
   /**
-    * Return all data (not filtered by the host application).
+    * Return all data (not filtered by the Office application).
     */
   @js.native
   sealed trait All
@@ -22,7 +22,7 @@ object FilterType extends StObject {
        with FilterType
   
   /**
-    * Return only the visible data (as filtered by the host application).
+    * Return only the visible data (as filtered by the Office application).
     */
   @js.native
   sealed trait OnlyVisible

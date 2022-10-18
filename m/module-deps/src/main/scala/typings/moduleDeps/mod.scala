@@ -13,7 +13,8 @@ import typings.moduleDeps.moduleDepsStrings.error
 import typings.moduleDeps.moduleDepsStrings.file
 import typings.moduleDeps.moduleDepsStrings.missing
 import typings.moduleDeps.moduleDepsStrings.transform
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,9 +100,10 @@ object mod {
     }
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream * / any */ @js.native
-  trait ModuleDepsObject extends StObject {
+  @js.native
+  trait ModuleDepsObject
+    extends StObject
+       with ReadWriteStream {
     
     def _flush(): Unit = js.native
     
@@ -111,13 +113,11 @@ object mod {
     def _transform(row: InputRow, enc: String, next: js.Function0[Unit]): Unit = js.native
     def _transform(row: InputTransform, enc: String, next: js.Function0[Unit]): Unit = js.native
     
-    def getTransforms(file: String, pkg: PackageObject): Any = js.native
-    def getTransforms(file: String, pkg: PackageObject, opts: Builtin): Any = js.native
+    def getTransforms(file: String, pkg: PackageObject): ReadWriteStream = js.native
+    def getTransforms(file: String, pkg: PackageObject, opts: Builtin): ReadWriteStream = js.native
     
     def lookupPackage(file: String, cb: js.Function3[/* a */ Any, /* b */ Any, /* c */ js.UndefOr[Any], Any]): Unit = js.native
     
-    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     /**
       * When a transform stream emits an error it is passed along to this stream an an 'error' event.
       */
@@ -142,14 +142,14 @@ object mod {
       * Every time a transform is applied to a file, a 'transform' event fires with the instantiated transform stream tr.
       */
     @JSName("on")
-    def on_transform(event: transform, listener: js.Function2[/* tr */ ReadableStream[Any], /* file */ String, Any]): this.type = js.native
+    def on_transform(event: transform, listener: js.Function2[/* tr */ ReadableStream, /* file */ String, Any]): this.type = js.native
     
     def parseDeps(file: String, src: String, cb: Any): js.Array[Any] = js.native
     
-    def readFile(file: String): ReadableStream[Any] = js.native
-    def readFile(file: String, id: Any): ReadableStream[Any] = js.native
-    def readFile(file: String, id: Any, pkg: PackageObject): ReadableStream[Any] = js.native
-    def readFile(file: String, id: Unit, pkg: PackageObject): ReadableStream[Any] = js.native
+    def readFile(file: String): ReadableStream = js.native
+    def readFile(file: String, id: Any): ReadableStream = js.native
+    def readFile(file: String, id: Any, pkg: PackageObject): ReadableStream = js.native
+    def readFile(file: String, id: Unit, pkg: PackageObject): ReadableStream = js.native
     
     def resolve(
       id: String,
@@ -335,9 +335,7 @@ object mod {
       
       inline def setGlobalTransform(value: Transform | js.Array[Transform]): Self = StObject.set(x, "globalTransform", value.asInstanceOf[js.Any])
       
-      inline def setGlobalTransformFunction2(
-        value: (/* file */ String, /* opts */ Basedir) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-      ): Self = StObject.set(x, "globalTransform", js.Any.fromFunction2(value))
+      inline def setGlobalTransformFunction2(value: (/* file */ String, /* opts */ Basedir) => ReadWriteStream): Self = StObject.set(x, "globalTransform", js.Any.fromFunction2(value))
       
       inline def setGlobalTransformUndefined: Self = StObject.set(x, "globalTransform", js.undefined)
       
@@ -395,9 +393,7 @@ object mod {
       
       inline def setTransform(value: Transform | js.Array[Transform]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      inline def setTransformFunction2(
-        value: (/* file */ String, /* opts */ Basedir) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-      ): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      inline def setTransformFunction2(value: (/* file */ String, /* opts */ Basedir) => ReadWriteStream): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
       inline def setTransformKey(value: js.Array[String]): Self = StObject.set(x, "transformKey", value.asInstanceOf[js.Any])
       
@@ -510,11 +506,7 @@ object mod {
     }
   }
   
-  type Transform = String | (js.Function2[
-    /* file */ String, 
-    /* opts */ Basedir, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ])
+  type Transform = String | (js.Function2[/* file */ String, /* opts */ Basedir, ReadWriteStream])
   
   trait TransformObject extends StObject {
     

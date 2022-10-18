@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,16 +65,12 @@ trait NamespacedDebugInput extends StObject {
   
   /** Flags to force in a particular experiment state. Map from flag name to flag value. */
   var forcedFlags: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Rollouts to force in a particular experiment state. Map from rollout name to rollout value. */
   var forcedRollouts: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: boolean}
-    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: boolean} */ js.Any
   ] = js.undefined
   
   /**
@@ -160,17 +155,13 @@ object NamespacedDebugInput {
     inline def setDisableOrganicSelectionUndefined: Self = StObject.set(x, "disableOrganicSelection", js.undefined)
     
     inline def setForcedFlags(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "forcedFlags", value.asInstanceOf[js.Any])
     
     inline def setForcedFlagsUndefined: Self = StObject.set(x, "forcedFlags", js.undefined)
     
     inline def setForcedRollouts(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: boolean}
-      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: boolean} */ js.Any
     ): Self = StObject.set(x, "forcedRollouts", value.asInstanceOf[js.Any])
     
     inline def setForcedRolloutsUndefined: Self = StObject.set(x, "forcedRollouts", js.undefined)

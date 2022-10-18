@@ -4,7 +4,7 @@ import typings.baseui.anon.Align
 import typings.baseui.baseuiStrings.li_
 import typings.baseui.baseuiStrings.nav
 import typings.baseui.baseuiStrings.ul
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

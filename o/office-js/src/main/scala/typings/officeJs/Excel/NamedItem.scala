@@ -139,6 +139,26 @@ trait NamedItem
   val value: Any = js.native
   
   /**
+    * A JSON representation of the values in this named item.
+    Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  val valueAsJson: CellValue | String = js.native
+  
+  /**
+    * A JSON representation of the values in this named item.
+    Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  val valueAsJsonLocal: CellValue | String = js.native
+  
+  /**
     * Specifies if the object is visible.
     *
     * @remarks

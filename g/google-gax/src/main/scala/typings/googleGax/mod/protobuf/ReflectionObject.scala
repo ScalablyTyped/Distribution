@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-gax", "protobuf.ReflectionObject")
+/* note: abstract class */ @JSImport("google-gax", "protobuf.ReflectionObject")
 @js.native
-abstract class ReflectionObject ()
+open class ReflectionObject ()
   extends typings.protobufjs.mod.ReflectionObject

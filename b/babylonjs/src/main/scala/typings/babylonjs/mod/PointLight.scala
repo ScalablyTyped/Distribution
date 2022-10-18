@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PointLight")
 @js.native
 open class PointLight protected ()
-  extends typings.babylonjs.legacyMod.PointLight {
+  extends typings.babylonjs.legacyLegacyMod.PointLight {
   /**
     * Creates a PointLight object from the passed name and position (Vector3) and adds it in the scene.
     * A PointLight emits the light in every direction.
@@ -23,7 +23,7 @@ open class PointLight protected ()
     */
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
 }

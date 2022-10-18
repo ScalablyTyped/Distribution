@@ -1,6 +1,6 @@
 package typings.antd.anon
 
-import typings.rcPicker.interfaceMod.PickerMode
+import typings.rcPicker.esInterfaceMod.PickerMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

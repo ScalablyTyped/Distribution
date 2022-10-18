@@ -1,6 +1,6 @@
 package typings.postcss.mod
 
-import typings.postcss.warningMod.WarningOptions
+import typings.postcss.libWarningMod.WarningOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postcss", "Warning")
 @js.native
 open class Warning protected ()
-  extends typings.postcss.warningMod.default {
+  extends typings.postcss.libWarningMod.default {
   /**
     * @param text Warning message.
     * @param opts Warning options.

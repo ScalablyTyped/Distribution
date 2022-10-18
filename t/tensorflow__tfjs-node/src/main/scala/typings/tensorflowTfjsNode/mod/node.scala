@@ -1,12 +1,12 @@
 package typings.tensorflowTfjsNode.mod
 
+import typings.tensorflowTfjsCore.distModelTypesMod.MetaGraph
 import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
-import typings.tensorflowTfjsCore.modelTypesMod.MetaGraph
-import typings.tensorflowTfjsNode.callbacksMod.TensorBoardCallback
-import typings.tensorflowTfjsNode.callbacksMod.TensorBoardCallbackArgs
-import typings.tensorflowTfjsNode.savedModelMod.TFSavedModel
-import typings.tensorflowTfjsNode.tensorboardMod.SummaryFileWriter_
+import typings.tensorflowTfjsNode.distCallbacksMod.TensorBoardCallback
+import typings.tensorflowTfjsNode.distCallbacksMod.TensorBoardCallbackArgs
+import typings.tensorflowTfjsNode.distSavedModelMod.TFSavedModel
+import typings.tensorflowTfjsNode.distTensorboardMod.SummaryFileWriter_
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings._empty
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.cm
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.grayscale

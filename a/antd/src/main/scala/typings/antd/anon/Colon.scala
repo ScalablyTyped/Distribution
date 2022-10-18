@@ -8,7 +8,7 @@ trait Colon extends StObject {
   
   var colon: js.UndefOr[Boolean] = js.undefined
   
-  var requiredMark: js.UndefOr[typings.antd.formFormMod.RequiredMark] = js.undefined
+  var requiredMark: js.UndefOr[typings.antd.libFormFormMod.RequiredMark] = js.undefined
 }
 object Colon {
   
@@ -23,7 +23,7 @@ object Colon {
     
     inline def setColonUndefined: Self = StObject.set(x, "colon", js.undefined)
     
-    inline def setRequiredMark(value: typings.antd.formFormMod.RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
+    inline def setRequiredMark(value: typings.antd.libFormFormMod.RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
     
     inline def setRequiredMarkUndefined: Self = StObject.set(x, "requiredMark", js.undefined)
   }

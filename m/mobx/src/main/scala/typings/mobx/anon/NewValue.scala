@@ -1,7 +1,7 @@
 package typings.mobx.anon
 
+import typings.mobx.distTypesObservablemapMod.ObservableMap
 import typings.mobx.mobxStrings.update
-import typings.mobx.observablemapMod.ObservableMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

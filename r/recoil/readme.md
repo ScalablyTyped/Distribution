@@ -1,7 +1,7 @@
 
 # Scala.js typings for recoil
 
-Typings are for version 0.7.5
+Typings are for version 0.7.6
 
 ## Library description:
 Recoil - A state management library for React

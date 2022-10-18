@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grammarkdown", "Parser")
 @js.native
-class Parser ()
-  extends typings.grammarkdown.parserMod.Parser
+open class Parser ()
+  extends typings.grammarkdown.distParserMod.Parser

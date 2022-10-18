@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Glob")
 @js.native
 open class Glob protected ()
-  extends typings.blackEngine.globMod.Glob {
+  extends typings.blackEngine.utilsGlobMod.Glob {
   def this(pattern: String) = this()
 }

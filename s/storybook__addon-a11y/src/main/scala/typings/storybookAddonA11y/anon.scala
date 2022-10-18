@@ -2,7 +2,7 @@ package typings.storybookAddonA11y
 
 import typings.axeCore.mod.Result
 import typings.react.mod.global.JSX.Element
-import typings.storybookAddonA11y.a11YPanelMod.RuleType
+import typings.storybookAddonA11y.distTs3Dot9ComponentsA11YPanelMod.RuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

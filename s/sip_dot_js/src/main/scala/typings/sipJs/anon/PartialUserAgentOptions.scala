@@ -2,16 +2,16 @@ package typings.sipJs.anon
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
-import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandler
-import typings.sipJs.coreMod.Logger
-import typings.sipJs.coreMod.URI
-import typings.sipJs.sessionDescriptionHandlerFactoryMod.SessionDescriptionHandlerFactory
-import typings.sipJs.sessionMod.Session
-import typings.sipJs.transportMod.Transport
-import typings.sipJs.userAgentDelegateMod.UserAgentDelegate
-import typings.sipJs.userAgentOptionsMod.LogConnector
-import typings.sipJs.userAgentOptionsMod.LogLevel
-import typings.sipJs.userAgentOptionsMod.SIPExtension
+import typings.sipJs.libApiSessionDescriptionHandlerFactoryMod.SessionDescriptionHandlerFactory
+import typings.sipJs.libApiSessionDescriptionHandlerMod.SessionDescriptionHandler
+import typings.sipJs.libApiSessionMod.Session
+import typings.sipJs.libApiTransportMod.Transport
+import typings.sipJs.libApiUserAgentDelegateMod.UserAgentDelegate
+import typings.sipJs.libApiUserAgentOptionsMod.LogConnector
+import typings.sipJs.libApiUserAgentOptionsMod.LogLevel
+import typings.sipJs.libApiUserAgentOptionsMod.SIPExtension
+import typings.sipJs.libCoreMod.Logger
+import typings.sipJs.libCoreMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

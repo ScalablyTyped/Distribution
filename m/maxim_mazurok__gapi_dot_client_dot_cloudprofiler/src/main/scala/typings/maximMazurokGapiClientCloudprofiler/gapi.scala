@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudprofiler
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCloudprofiler.anon.Accesstoken
 import typings.maximMazurokGapiClientCloudprofiler.anon.Alt
@@ -55,9 +54,7 @@ object gapi {
           * "region" label should be present describing the deployment location. An example of a zone is "us-central1-a", an example of a region is "us-central1" or "us-central".
           */
         var labels: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Deployment & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
               ] = js.undefined
         
         /** Project ID is the ID of a cloud project. Validation regex: `^a-z{4,61}[a-z0-9]$`. */
@@ -79,9 +76,7 @@ object gapi {
         extension [Self <: Deployment](x: Self) {
           
           inline def setLabels(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Deployment & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -113,9 +108,7 @@ object gapi {
           * validation rules and limits.
           */
         var labels: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Profile & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
               ] = js.undefined
         
         /** Output only. Opaque, server-assigned, unique ID for this profile. */
@@ -145,9 +138,7 @@ object gapi {
           inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
           
           inline def setLabels(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Profile & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

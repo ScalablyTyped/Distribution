@@ -1,20 +1,19 @@
 package typings.jridgewellTraceMapping
 
 import typings.jridgewellTraceMapping.anon.OmitDecodedSourceMapmappi
-import typings.jridgewellTraceMapping.sourcemapSegmentMod.SourceMapSegment
-import typings.jridgewellTraceMapping.typesMod.DecodedSourceMap
-import typings.jridgewellTraceMapping.typesMod.EachMapping
-import typings.jridgewellTraceMapping.typesMod.EncodedSourceMap
-import typings.jridgewellTraceMapping.typesMod.GeneratedMapping
-import typings.jridgewellTraceMapping.typesMod.InvalidGeneratedMapping
-import typings.jridgewellTraceMapping.typesMod.InvalidOriginalMapping
-import typings.jridgewellTraceMapping.typesMod.Needle
-import typings.jridgewellTraceMapping.typesMod.OriginalMapping
-import typings.jridgewellTraceMapping.typesMod.SectionedSourceMapInput
-import typings.jridgewellTraceMapping.typesMod.SourceMap
-import typings.jridgewellTraceMapping.typesMod.SourceMapInput
-import typings.jridgewellTraceMapping.typesMod.SourceNeedle
-import typings.jridgewellTraceMapping.typesMod._SourceMapInput
+import typings.jridgewellTraceMapping.distTypesSourcemapSegmentMod.SourceMapSegment
+import typings.jridgewellTraceMapping.distTypesTypesMod.DecodedSourceMap
+import typings.jridgewellTraceMapping.distTypesTypesMod.EachMapping
+import typings.jridgewellTraceMapping.distTypesTypesMod.EncodedSourceMap
+import typings.jridgewellTraceMapping.distTypesTypesMod.GeneratedMapping
+import typings.jridgewellTraceMapping.distTypesTypesMod.InvalidGeneratedMapping
+import typings.jridgewellTraceMapping.distTypesTypesMod.InvalidOriginalMapping
+import typings.jridgewellTraceMapping.distTypesTypesMod.Needle
+import typings.jridgewellTraceMapping.distTypesTypesMod.OriginalMapping
+import typings.jridgewellTraceMapping.distTypesTypesMod.SectionedSourceMapInput
+import typings.jridgewellTraceMapping.distTypesTypesMod.SourceMap
+import typings.jridgewellTraceMapping.distTypesTypesMod.SourceMapInput
+import typings.jridgewellTraceMapping.distTypesTypesMod.SourceNeedle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object mod {
   
   @JSImport("@jridgewell/trace-mapping", "AnyMap")
   @js.native
-  val AnyMap: typings.jridgewellTraceMapping.anyMapMod.AnyMap = js.native
+  val AnyMap: typings.jridgewellTraceMapping.distTypesAnyMapMod.AnyMap = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@jridgewell/trace-mapping", "AnyMap")
@@ -47,9 +46,7 @@ object mod {
   
   @JSImport("@jridgewell/trace-mapping", "TraceMap")
   @js.native
-  open class TraceMap protected ()
-    extends SourceMap
-       with _SourceMapInput {
+  open class TraceMap protected () extends SourceMap {
     def this(map: SourceMapInput) = this()
     def this(map: SourceMapInput, mapUrl: String) = this()
     
@@ -66,6 +63,11 @@ object mod {
     @JSName("resolvedSources")
     var resolvedSources_TraceMap: js.Array[String] = js.native
   }
+  
+  @JSImport("@jridgewell/trace-mapping", "allGeneratedPositionsFor")
+  @js.native
+  def allGeneratedPositionsFor: js.Function2[/* map */ TraceMap, /* needle */ SourceNeedle, js.Array[GeneratedMapping]] = js.native
+  inline def allGeneratedPositionsFor_=(x: js.Function2[/* map */ TraceMap, /* needle */ SourceNeedle, js.Array[GeneratedMapping]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allGeneratedPositionsFor")(x.asInstanceOf[js.Any])
   
   @JSImport("@jridgewell/trace-mapping", "decodedMap")
   @js.native

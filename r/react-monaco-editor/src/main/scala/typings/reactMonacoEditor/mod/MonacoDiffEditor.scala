@@ -1,7 +1,7 @@
 package typings.reactMonacoEditor.mod
 
 import typings.propTypes.mod.Requireable
-import typings.reactMonacoEditor.typesMod.MonacoDiffEditorProps
+import typings.reactMonacoEditor.libTypesMod.MonacoDiffEditorProps
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-monaco-editor", "MonacoDiffEditor")
 @js.native
 open class MonacoDiffEditor protected ()
-  extends typings.reactMonacoEditor.diffMod.default {
+  extends typings.reactMonacoEditor.libDiffMod.default {
   def this(props: MonacoDiffEditorProps) = this()
 }
 object MonacoDiffEditor {

@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.codedeployMod.DeploymentId
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsCodedeployMod.DeploymentId
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ trait GetDeploymentInputwaiterW extends StObject {
   var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
-    *  The unique ID of a deployment associated with the IAM user or AWS account. 
+    *  The unique ID of a deployment associated with the IAM user or Amazon Web Services account. 
     */
   var deploymentId: DeploymentId
 }

@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.SearchBar")
 @js.native
 open class SearchBar protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.SearchBar {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.SearchBar {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object SearchBar {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.SearchBar = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SearchBar]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBar = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBar]
   
   /**
     * Creates and returns a new SearchBar instance in the SDK and on the server.
@@ -47,7 +47,7 @@ object SearchBar {
     * of the parent GridBaseSource element passed as argument.
     */
   /* static member */
-  inline def createInGridBaseSourceUnderSearchBar(container: typings.mendixmodelsdk.pagesMod.pages.GridBaseSource): typings.mendixmodelsdk.pagesMod.pages.SearchBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridBaseSourceUnderSearchBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SearchBar]
+  inline def createInGridBaseSourceUnderSearchBar(container: typings.mendixmodelsdk.srcGenPagesMod.pages.GridBaseSource): typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridBaseSourceUnderSearchBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBar]
   
   /**
     * Creates and returns a new SearchBar instance in the SDK and on the server.
@@ -55,7 +55,7 @@ object SearchBar {
     * of the parent GridDatabaseSource element passed as argument.
     */
   /* static member */
-  inline def createInGridDatabaseSourceUnderSearchBar(container: typings.mendixmodelsdk.pagesMod.pages.GridDatabaseSource): typings.mendixmodelsdk.pagesMod.pages.SearchBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridDatabaseSourceUnderSearchBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SearchBar]
+  inline def createInGridDatabaseSourceUnderSearchBar(container: typings.mendixmodelsdk.srcGenPagesMod.pages.GridDatabaseSource): typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridDatabaseSourceUnderSearchBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBar]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SearchBar.structureTypeName")

@@ -1,14 +1,6 @@
 package typings.jimp
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.jimp.jimpStrings.`before-change`
-import typings.jimp.jimpStrings.changed
-import typings.jimp.jimpStrings.clone
-import typings.jimp.jimpStrings.constructor
-import typings.jimp.mod.ChangeName
 import typings.jimp.mod.DepreciatedJimp
-import typings.jimp.mod.ListenableName
-import typings.jimp.mod.ListenerData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -134,53 +126,6 @@ object anon {
       inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
       
       inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
-    }
-  }
-  
-  trait Dictkey[T /* <: ListenableName */]
-    extends StObject
-       with /* key */ StringDictionary[Any]
-       with ListenerData[T] {
-    
-    var eventName: `before-change` | changed
-    
-    var methodName: T
-  }
-  object Dictkey {
-    
-    inline def apply[T /* <: ListenableName */](eventName: `before-change` | changed, methodName: T): Dictkey[T] = {
-      val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Dictkey[T]]
-    }
-    
-    extension [Self <: Dictkey[?], T /* <: ListenableName */](x: Self & Dictkey[T]) {
-      
-      inline def setEventName(value: `before-change` | changed): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
-      
-      inline def setMethodName(value: T): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait EventName[T /* <: ListenableName */]
-    extends StObject
-       with ListenerData[T] {
-    
-    var eventName: T
-    
-    var methodName: clone | ChangeName | constructor
-  }
-  object EventName {
-    
-    inline def apply[T /* <: ListenableName */](eventName: T, methodName: clone | ChangeName | constructor): EventName[T] = {
-      val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
-      __obj.asInstanceOf[EventName[T]]
-    }
-    
-    extension [Self <: EventName[?], T /* <: ListenableName */](x: Self & EventName[T]) {
-      
-      inline def setEventName(value: T): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
-      
-      inline def setMethodName(value: clone | ChangeName | constructor): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     }
   }
   

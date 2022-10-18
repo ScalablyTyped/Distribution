@@ -1,6 +1,6 @@
 package typings.onfleetNodeOnfleet.anon
 
-import typings.onfleetNodeOnfleet.destinationsMod.Location
+import typings.onfleetNodeOnfleet.resourcesDestinationsMod.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "NotAuthorizedException")
 @js.native
 open class NotAuthorizedException protected ()
-  extends typings.awsSdkClientCognitoIdentity.modelsMod.NotAuthorizedException {
+  extends typings.awsSdkClientCognitoIdentity.distTypesModelsMod.NotAuthorizedException {
   /**
     * @internal
     */

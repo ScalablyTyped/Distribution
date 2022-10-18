@@ -1,21 +1,21 @@
 package typings.luxon
 
-import typings.luxon.datetimeMod.DateObjectUnits
-import typings.luxon.datetimeMod.DateTimeJSOptions
-import typings.luxon.datetimeMod.DateTimeOptions
-import typings.luxon.datetimeMod.ExplainedFormat
-import typings.luxon.datetimeMod.LocaleOptions
-import typings.luxon.durationMod.DurationLike
-import typings.luxon.durationMod.DurationLikeObject
-import typings.luxon.durationMod.DurationOptions
-import typings.luxon.infoMod.Features
-import typings.luxon.infoMod.InfoCalendarOptions
-import typings.luxon.infoMod.InfoOptions
-import typings.luxon.infoMod.InfoUnitOptions
-import typings.luxon.intervalMod.DateInput
-import typings.luxon.miscMod.DateTimeFormatOptions
-import typings.luxon.miscMod.StringUnitLength
-import typings.luxon.miscMod.UnitLength
+import typings.luxon.srcDatetimeMod.DateObjectUnits
+import typings.luxon.srcDatetimeMod.DateTimeJSOptions
+import typings.luxon.srcDatetimeMod.DateTimeOptions
+import typings.luxon.srcDatetimeMod.ExplainedFormat
+import typings.luxon.srcDatetimeMod.LocaleOptions
+import typings.luxon.srcDurationMod.DurationLike
+import typings.luxon.srcDurationMod.DurationLikeObject
+import typings.luxon.srcDurationMod.DurationOptions
+import typings.luxon.srcInfoMod.Features
+import typings.luxon.srcInfoMod.InfoCalendarOptions
+import typings.luxon.srcInfoMod.InfoOptions
+import typings.luxon.srcInfoMod.InfoUnitOptions
+import typings.luxon.srcIntervalMod.DateInput
+import typings.luxon.srcMiscMod.DateTimeFormatOptions
+import typings.luxon.srcMiscMod.StringUnitLength
+import typings.luxon.srcMiscMod.UnitLength
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,8 +60,8 @@ object global {
         * @param opts.numberingSystem - the numbering system to use when parsing. Will also set the resulting DateTime to this numbering system
         * @param opts.outputCalendar - the output calendar to set on the resulting DateTime instance
         */
-      inline def fromFormat(text: String, fmt: String): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormat")(text.asInstanceOf[js.Any], fmt.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def fromFormat(text: String, fmt: String, opts: DateTimeOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormat")(text.asInstanceOf[js.Any], fmt.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def fromFormat(text: String, fmt: String): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormat")(text.asInstanceOf[js.Any], fmt.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def fromFormat(text: String, fmt: String, opts: DateTimeOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormat")(text.asInstanceOf[js.Any], fmt.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       // MISC
       /**
@@ -96,8 +96,8 @@ object global {
         * @example
         * DateTime.fromHTTP('Sun Nov  6 08:49:37 1994')
         */
-      inline def fromHTTP(text: String): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTP")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def fromHTTP(text: String, opts: DateTimeOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTP")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def fromHTTP(text: String): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTP")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def fromHTTP(text: String, opts: DateTimeOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTP")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * Create a DateTime from an ISO 8601 string
@@ -121,8 +121,8 @@ object global {
         * @example
         * DateTime.fromISO('2016-W05-4')
         */
-      inline def fromISO(text: String): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def fromISO(text: String, opts: DateTimeOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def fromISO(text: String): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def fromISO(text: String, opts: DateTimeOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * Create a DateTime from a JavaScript Date object. Uses the default zone.
@@ -131,8 +131,8 @@ object global {
         * @param options - configuration options for the DateTime
         * @param options.zone - the zone to place the DateTime into
         */
-      inline def fromJSDate(date: js.Date): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def fromJSDate(date: js.Date, options: typings.luxon.anon.Zone): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSDate")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def fromJSDate(date: js.Date): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def fromJSDate(date: js.Date, options: typings.luxon.anon.Zone): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSDate")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * Create a DateTime from a number of milliseconds since the epoch (meaning since 1 January 1970 00:00:00 UTC). Uses the default zone.
@@ -144,8 +144,8 @@ object global {
         * @param options.outputCalendar - the output calendar to set on the resulting DateTime instance
         * @param options.numberingSystem - the numbering system to set on the resulting DateTime instance
         */
-      inline def fromMillis(milliseconds: Double): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def fromMillis(milliseconds: Double, options: DateTimeJSOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def fromMillis(milliseconds: Double): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def fromMillis(milliseconds: Double, options: DateTimeJSOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * Create a DateTime from a JavaScript object with keys like 'year' and 'hour' with reasonable defaults.
@@ -183,8 +183,8 @@ object global {
         * @example
         * DateTime.fromObject({ weekYear: 2016, weekNumber: 2, weekday: 3 }).toISODate() //=> '2016-01-13'
         */
-      inline def fromObject(obj: DateObjectUnits): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def fromObject(obj: DateObjectUnits, opts: DateTimeJSOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def fromObject(obj: DateObjectUnits): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def fromObject(obj: DateObjectUnits, opts: DateTimeJSOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * Create a DateTime from an RFC 2822 string
@@ -205,8 +205,8 @@ object global {
         * @example
         * DateTime.fromRFC2822('25 Nov 2016 13:23 Z')
         */
-      inline def fromRFC2822(text: String): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRFC2822")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def fromRFC2822(text: String, opts: DateTimeOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRFC2822")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def fromRFC2822(text: String): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRFC2822")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def fromRFC2822(text: String, opts: DateTimeOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRFC2822")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * Create a DateTime from a SQL date, time, or datetime
@@ -237,8 +237,8 @@ object global {
         * @example
         * DateTime.fromSQL('09:12:34.342')
         */
-      inline def fromSQL(text: String): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSQL")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def fromSQL(text: String, opts: DateTimeOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSQL")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def fromSQL(text: String): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSQL")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def fromSQL(text: String, opts: DateTimeOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSQL")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * Create a DateTime from a number of seconds since the epoch (meaning since 1 January 1970 00:00:00 UTC). Uses the default zone.
@@ -250,14 +250,14 @@ object global {
         * @param options.outputCalendar - the output calendar to set on the resulting DateTime instance
         * @param options.numberingSystem - the numbering system to set on the resulting DateTime instance
         */
-      inline def fromSeconds(seconds: Double): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def fromSeconds(seconds: Double, options: DateTimeJSOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def fromSeconds(seconds: Double): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def fromSeconds(seconds: Double, options: DateTimeJSOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * @deprecated use fromFormat instead
         */
-      inline def fromString(text: String, format: String): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def fromString(text: String, format: String, options: DateTimeOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def fromString(text: String, format: String): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def fromString(text: String, format: String, options: DateTimeOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * @deprecated use fromFormatExplain instead
@@ -271,8 +271,8 @@ object global {
         * @param reason - simple string of why this DateTime is invalid. Should not contain parameters or anything else data-dependent
         * @param explanation - longer explanation, may include parameters and other useful debugging information. Defaults to null.
         */
-      inline def invalid(reason: String): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def invalid(reason: String, explanation: String): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any], explanation.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def invalid(reason: String): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def invalid(reason: String, explanation: String): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any], explanation.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * Check if an object is a DateTime. Works across context boundaries
@@ -281,15 +281,15 @@ object global {
         */
       inline def isDateTime(o: Any): /* is luxon.luxon/src/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(o.asInstanceOf[js.Any]).asInstanceOf[/* is luxon.luxon/src/datetime.DateTime */ Boolean]
       
-      inline def local(): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def local(opts: DateTimeJSOptions): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("local")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def local(year: Double): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def local(year: Double, month: Double): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def local(year: Double, month: Double, day: Double): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def local(year: Double, month: Double, day: Double, hour: Double): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def local(year: Double, month: Double, day: Double, hour: Double, minute: Double): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def local(year: Double, month: Double, day: Double, hour: Double, minute: Double, opts: DateTimeJSOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def local(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def local(): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def local(opts: DateTimeJSOptions): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("local")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def local(year: Double): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def local(year: Double, month: Double): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def local(year: Double, month: Double, day: Double): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def local(year: Double, month: Double, day: Double, hour: Double): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def local(year: Double, month: Double, day: Double, hour: Double, minute: Double): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def local(year: Double, month: Double, day: Double, hour: Double, minute: Double, opts: DateTimeJSOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def local(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       /**
         * Create a local DateTime
         *
@@ -330,7 +330,7 @@ object global {
         minute: Double,
         second: Double,
         millisecond: Double
-      ): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      ): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       inline def local(
         year: Double,
         month: Double,
@@ -340,7 +340,7 @@ object global {
         second: Double,
         millisecond: Double,
         opts: DateTimeJSOptions
-      ): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      ): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       inline def local(
         year: Double,
         month: Double,
@@ -349,25 +349,25 @@ object global {
         minute: Double,
         second: Double,
         opts: DateTimeJSOptions
-      ): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def local(year: Double, month: Double, day: Double, hour: Double, opts: DateTimeJSOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def local(year: Double, month: Double, day: Double, opts: DateTimeJSOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def local(year: Double, month: Double, opts: DateTimeJSOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def local(year: Double, opts: DateTimeJSOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      ): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def local(year: Double, month: Double, day: Double, hour: Double, opts: DateTimeJSOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def local(year: Double, month: Double, day: Double, opts: DateTimeJSOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def local(year: Double, month: Double, opts: DateTimeJSOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def local(year: Double, opts: DateTimeJSOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * Return the max of several date times
         *
         * @param dateTimes - the DateTimes from which to choose the maximum
         */
-      inline def max(dateTimes: typings.luxon.datetimeMod.DateTime*): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dateTimes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def max(dateTimes: typings.luxon.srcDatetimeMod.DateTime*): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dateTimes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * Return the min of several date times
         *
         * @param dateTimes - the DateTimes from which to choose the minimum
         */
-      inline def min(dateTimes: typings.luxon.datetimeMod.DateTime*): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dateTimes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def min(dateTimes: typings.luxon.srcDatetimeMod.DateTime*): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dateTimes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * Create a DateTime for the current instant, in the system's time zone.
@@ -376,7 +376,7 @@ object global {
         * @example
         * DateTime.now().toISO() //~> now in the ISO format
         */
-      inline def now(): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def now(): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       
       /**
         * Produce the format string for a set of options
@@ -392,15 +392,15 @@ object global {
       inline def parseFormatForOpts(formatOpts: DateTimeFormatOptions): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFormatForOpts")(formatOpts.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       inline def parseFormatForOpts(formatOpts: DateTimeFormatOptions, localeOpts: LocaleOptions): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFormatForOpts")(formatOpts.asInstanceOf[js.Any], localeOpts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
       
-      inline def utc(): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def utc(options: LocaleOptions): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(options.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def utc(year: Double): typings.luxon.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def utc(year: Double, month: Double): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def utc(year: Double, month: Double, day: Double): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def utc(year: Double, month: Double, day: Double, hour: Double): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def utc(year: Double, month: Double, day: Double, hour: Double, minute: Double): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def utc(year: Double, month: Double, day: Double, hour: Double, minute: Double, options: LocaleOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def utc(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      inline def utc(): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def utc(options: LocaleOptions): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(options.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def utc(year: Double): typings.luxon.srcDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def utc(year: Double, month: Double): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def utc(year: Double, month: Double, day: Double): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def utc(year: Double, month: Double, day: Double, hour: Double): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def utc(year: Double, month: Double, day: Double, hour: Double, minute: Double): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def utc(year: Double, month: Double, day: Double, hour: Double, minute: Double, options: LocaleOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def utc(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       /**
         * Create a DateTime in UTC
         *
@@ -443,7 +443,7 @@ object global {
         minute: Double,
         second: Double,
         millisecond: Double
-      ): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      ): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       inline def utc(
         year: Double,
         month: Double,
@@ -453,7 +453,7 @@ object global {
         second: Double,
         millisecond: Double,
         options: LocaleOptions
-      ): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      ): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
       inline def utc(
         year: Double,
         month: Double,
@@ -462,11 +462,11 @@ object global {
         minute: Double,
         second: Double,
         options: LocaleOptions
-      ): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def utc(year: Double, month: Double, day: Double, hour: Double, options: LocaleOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def utc(year: Double, month: Double, day: Double, options: LocaleOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def utc(year: Double, month: Double, options: LocaleOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
-      inline def utc(year: Double, options: LocaleOptions): typings.luxon.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.datetimeMod.DateTime]
+      ): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def utc(year: Double, month: Double, day: Double, hour: Double, options: LocaleOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def utc(year: Double, month: Double, day: Double, options: LocaleOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def utc(year: Double, month: Double, options: LocaleOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
+      inline def utc(year: Double, options: LocaleOptions): typings.luxon.srcDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDatetimeMod.DateTime]
     }
     
     @JSGlobal("luxon.Duration")
@@ -488,7 +488,7 @@ object global {
         * @param durationLike
         * Either a Luxon Duration, a number of milliseconds, or the object argument to Duration.fromObject()
         */
-      inline def fromDurationLike(durationLike: DurationLike): typings.luxon.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDurationLike")(durationLike.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.durationMod.Duration]
+      inline def fromDurationLike(durationLike: DurationLike): typings.luxon.srcDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDurationLike")(durationLike.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDurationMod.Duration]
       
       /**
         * Create a Duration from an ISO 8601 duration string.
@@ -507,8 +507,8 @@ object global {
         * @example
         * Duration.fromISO('P5Y3M').toObject() //=> { years: 5, months: 3 }
         */
-      inline def fromISO(text: String): typings.luxon.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.durationMod.Duration]
-      inline def fromISO(text: String, opts: DurationOptions): typings.luxon.durationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.durationMod.Duration]
+      inline def fromISO(text: String): typings.luxon.srcDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDurationMod.Duration]
+      inline def fromISO(text: String, opts: DurationOptions): typings.luxon.srcDurationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDurationMod.Duration]
       
       /**
         * Create a Duration from an ISO 8601 time string.
@@ -531,8 +531,8 @@ object global {
         * @example
         * Duration.fromISOTime('T1100').toObject() //=> { hours: 11, minutes: 0, seconds: 0 }
         */
-      inline def fromISOTime(text: String): typings.luxon.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISOTime")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.durationMod.Duration]
-      inline def fromISOTime(text: String, opts: DurationOptions): typings.luxon.durationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISOTime")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.durationMod.Duration]
+      inline def fromISOTime(text: String): typings.luxon.srcDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISOTime")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDurationMod.Duration]
+      inline def fromISOTime(text: String, opts: DurationOptions): typings.luxon.srcDurationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISOTime")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDurationMod.Duration]
       
       /**
         * Create Duration from a number of milliseconds.
@@ -543,8 +543,8 @@ object global {
         * @param opts.numberingSystem - the numbering system to use
         * @param opts.conversionAccuracy - the conversion system to use
         */
-      inline def fromMillis(count: Double): typings.luxon.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(count.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.durationMod.Duration]
-      inline def fromMillis(count: Double, opts: DurationOptions): typings.luxon.durationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(count.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.durationMod.Duration]
+      inline def fromMillis(count: Double): typings.luxon.srcDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(count.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDurationMod.Duration]
+      inline def fromMillis(count: Double, opts: DurationOptions): typings.luxon.srcDurationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(count.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDurationMod.Duration]
       
       /**
         * Create a Duration from a JavaScript object with keys like 'years' and 'hours'.
@@ -565,8 +565,8 @@ object global {
         * @param opts.numberingSystem - the numbering system to use
         * @param opts.conversionAccuracy - the conversion system to use. Defaults to 'casual'.
         */
-      inline def fromObject(obj: DurationLikeObject): typings.luxon.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.durationMod.Duration]
-      inline def fromObject(obj: DurationLikeObject, opts: DurationOptions): typings.luxon.durationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.durationMod.Duration]
+      inline def fromObject(obj: DurationLikeObject): typings.luxon.srcDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDurationMod.Duration]
+      inline def fromObject(obj: DurationLikeObject, opts: DurationOptions): typings.luxon.srcDurationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDurationMod.Duration]
       
       /**
         * Create an invalid Duration.
@@ -574,8 +574,8 @@ object global {
         * @param reason - simple string of why this datetime is invalid. Should not contain parameters or anything else data-dependent
         * @param explanation - longer explanation, may include parameters and other useful debugging information. Defaults to null.
         */
-      inline def invalid(reason: String): typings.luxon.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.durationMod.Duration]
-      inline def invalid(reason: String, explanation: String): typings.luxon.durationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any], explanation.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.durationMod.Duration]
+      inline def invalid(reason: String): typings.luxon.srcDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcDurationMod.Duration]
+      inline def invalid(reason: String, explanation: String): typings.luxon.srcDurationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any], explanation.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcDurationMod.Duration]
       
       /**
         * Check if an object is a Duration. Works across context boundaries
@@ -601,7 +601,7 @@ object global {
         *
         * @param offset - The offset in minutes
         */
-      inline def instance(offset: Double): typings.luxon.zoneMod.FixedOffsetZone = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(offset.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.zoneMod.FixedOffsetZone]
+      inline def instance(offset: Double): typings.luxon.srcZoneMod.FixedOffsetZone = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(offset.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcZoneMod.FixedOffsetZone]
       
       /**
         * Get an instance of FixedOffsetZone from a UTC offset string, like "UTC+6"
@@ -615,7 +615,7 @@ object global {
         * @example
         * FixedOffsetZone.parseSpecifier("UTC-6:00")
         */
-      inline def parseSpecifier(s: String): typings.luxon.zoneMod.FixedOffsetZone = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSpecifier")(s.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.zoneMod.FixedOffsetZone]
+      inline def parseSpecifier(s: String): typings.luxon.srcZoneMod.FixedOffsetZone = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSpecifier")(s.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcZoneMod.FixedOffsetZone]
     }
     
     @JSGlobal("luxon.IANAZone")
@@ -634,7 +634,7 @@ object global {
       /**
         * Same as constructor but has caching.
         */
-      inline def create(name: String): typings.luxon.zoneMod.IANAZone = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.zoneMod.IANAZone]
+      inline def create(name: String): typings.luxon.srcZoneMod.IANAZone = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcZoneMod.IANAZone]
       
       /**
         * Returns whether the provided string is a valid specifier.
@@ -715,7 +715,7 @@ object global {
         */
       inline def hasDST(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasDST")().asInstanceOf[Boolean]
       inline def hasDST(zone: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasDST")(zone.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-      inline def hasDST(zone: typings.luxon.zoneMod.Zone): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasDST")(zone.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def hasDST(zone: typings.luxon.srcZoneMod.Zone): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasDST")(zone.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * Return whether the specified zone is a valid IANA specifier.
@@ -799,10 +799,10 @@ object global {
         *
         * @param input - the value to be converted
         */
-      inline def normalizeZone(): typings.luxon.zoneMod.Zone = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeZone")().asInstanceOf[typings.luxon.zoneMod.Zone]
-      inline def normalizeZone(input: String): typings.luxon.zoneMod.Zone = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeZone")(input.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.zoneMod.Zone]
-      inline def normalizeZone(input: Double): typings.luxon.zoneMod.Zone = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeZone")(input.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.zoneMod.Zone]
-      inline def normalizeZone(input: typings.luxon.zoneMod.Zone): typings.luxon.zoneMod.Zone = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeZone")(input.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.zoneMod.Zone]
+      inline def normalizeZone(): typings.luxon.srcZoneMod.Zone = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeZone")().asInstanceOf[typings.luxon.srcZoneMod.Zone]
+      inline def normalizeZone(input: String): typings.luxon.srcZoneMod.Zone = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeZone")(input.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcZoneMod.Zone]
+      inline def normalizeZone(input: Double): typings.luxon.srcZoneMod.Zone = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeZone")(input.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcZoneMod.Zone]
+      inline def normalizeZone(input: typings.luxon.srcZoneMod.Zone): typings.luxon.srcZoneMod.Zone = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeZone")(input.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcZoneMod.Zone]
       
       /**
         * Return an array of standalone week names.
@@ -865,7 +865,7 @@ object global {
         * @param start
         * @param duration - the length of the Interval.
         */
-      inline def after(start: DateInput, duration: DurationLike): typings.luxon.intervalMod.Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.intervalMod.Interval]
+      inline def after(start: DateInput, duration: DurationLike): typings.luxon.srcIntervalMod.Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcIntervalMod.Interval]
       
       /**
         * Create an Interval from an end DateTime and a Duration to extend backwards to.
@@ -873,7 +873,7 @@ object global {
         * @param end
         * @param duration - the length of the Interval.
         */
-      inline def before(end: DateInput, duration: DurationLike): typings.luxon.intervalMod.Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.intervalMod.Interval]
+      inline def before(end: DateInput, duration: DurationLike): typings.luxon.srcIntervalMod.Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcIntervalMod.Interval]
       
       /**
         * Create an Interval from a start DateTime and an end DateTime. Inclusive of the start but not the end.
@@ -881,7 +881,7 @@ object global {
         * @param start
         * @param end
         */
-      inline def fromDateTimes(start: DateInput, end: DateInput): typings.luxon.intervalMod.Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.intervalMod.Interval]
+      inline def fromDateTimes(start: DateInput, end: DateInput): typings.luxon.srcIntervalMod.Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcIntervalMod.Interval]
       
       /**
         * Create an Interval from an ISO 8601 string.
@@ -891,8 +891,8 @@ object global {
         * @param text - the ISO string to parse
         * @param opts - options to pass {@link DateTime.fromISO} and optionally {@link Duration.fromISO}
         */
-      inline def fromISO(text: String): typings.luxon.intervalMod.Interval = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.intervalMod.Interval]
-      inline def fromISO(text: String, opts: DateTimeOptions): typings.luxon.intervalMod.Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.intervalMod.Interval]
+      inline def fromISO(text: String): typings.luxon.srcIntervalMod.Interval = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcIntervalMod.Interval]
+      inline def fromISO(text: String, opts: DateTimeOptions): typings.luxon.srcIntervalMod.Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcIntervalMod.Interval]
       
       /**
         * Create an invalid Interval.
@@ -900,8 +900,8 @@ object global {
         * @param reason - simple string of why this Interval is invalid. Should not contain parameters or anything else data-dependent
         * @param explanation - longer explanation, may include parameters and other useful debugging information. Defaults to null.
         */
-      inline def invalid(reason: String): typings.luxon.intervalMod.Interval = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.intervalMod.Interval]
-      inline def invalid(reason: String, explanation: String): typings.luxon.intervalMod.Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any], explanation.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.intervalMod.Interval]
+      inline def invalid(reason: String): typings.luxon.srcIntervalMod.Interval = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcIntervalMod.Interval]
+      inline def invalid(reason: String, explanation: String): typings.luxon.srcIntervalMod.Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any], explanation.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcIntervalMod.Interval]
       
       /**
         * Check if an object is an Interval. Works across context boundaries
@@ -916,14 +916,14 @@ object global {
         *
         * @param intervals
         */
-      inline def merge(intervals: js.Array[typings.luxon.intervalMod.Interval]): js.Array[typings.luxon.intervalMod.Interval] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(intervals.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.luxon.intervalMod.Interval]]
+      inline def merge(intervals: js.Array[typings.luxon.srcIntervalMod.Interval]): js.Array[typings.luxon.srcIntervalMod.Interval] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(intervals.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.luxon.srcIntervalMod.Interval]]
       
       /**
         * Return an array of Intervals representing the spans of time that only appear in one of the specified Intervals.
         *
         *  @param intervals
         */
-      inline def xor(intervals: js.Array[typings.luxon.intervalMod.Interval]): js.Array[typings.luxon.intervalMod.Interval] = ^.asInstanceOf[js.Dynamic].applyDynamic("xor")(intervals.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.luxon.intervalMod.Interval]]
+      inline def xor(intervals: js.Array[typings.luxon.srcIntervalMod.Interval]): js.Array[typings.luxon.srcIntervalMod.Interval] = ^.asInstanceOf[js.Dynamic].applyDynamic("xor")(intervals.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.luxon.srcIntervalMod.Interval]]
     }
     
     @JSGlobal("luxon.InvalidZone")
@@ -949,8 +949,8 @@ object global {
         */
       @JSGlobal("luxon.Settings.defaultZone")
       @js.native
-      def defaultZone: typings.luxon.zoneMod.Zone | String = js.native
-      inline def defaultZone_=(x: typings.luxon.zoneMod.Zone | String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultZone")(x.asInstanceOf[js.Any])
+      def defaultZone: typings.luxon.srcZoneMod.Zone | String = js.native
+      inline def defaultZone_=(x: typings.luxon.srcZoneMod.Zone | String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultZone")(x.asInstanceOf[js.Any])
       
       /**
         * Reset Luxon's global caches. Should only be necessary in testing scenarios.
@@ -967,9 +967,9 @@ object global {
     @js.native
     val VERSION: String = js.native
     
-    @JSGlobal("luxon.Zone")
+    /* note: abstract class */ @JSGlobal("luxon.Zone")
     @js.native
-    abstract class Zone ()
+    open class Zone ()
       extends typings.luxon.mod.Zone
   }
 }

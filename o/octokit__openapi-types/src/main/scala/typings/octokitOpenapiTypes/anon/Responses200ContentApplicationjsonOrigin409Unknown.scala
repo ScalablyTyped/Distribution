@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Responses200ContentApplicationjsonOrigin409Unknown extends StObject {
   
-  var parameters: `491`
+  var parameters: `76`
   
   var requestBody: ContentApplicationjsonExpiryLimit
   
@@ -15,7 +15,7 @@ trait Responses200ContentApplicationjsonOrigin409Unknown extends StObject {
 object Responses200ContentApplicationjsonOrigin409Unknown {
   
   inline def apply(
-    parameters: `491`,
+    parameters: `76`,
     requestBody: ContentApplicationjsonExpiryLimit,
     responses: `200ContentApplicationjsonOrigin409Unknown`
   ): Responses200ContentApplicationjsonOrigin409Unknown = {
@@ -25,7 +25,7 @@ object Responses200ContentApplicationjsonOrigin409Unknown {
   
   extension [Self <: Responses200ContentApplicationjsonOrigin409Unknown](x: Self) {
     
-    inline def setParameters(value: `491`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `76`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonExpiryLimit): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

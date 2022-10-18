@@ -51,7 +51,7 @@ object mod {
   @js.native
   open class ^ protected () extends Primus {
     def this(server: Server[
-            Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+            Instantiable1[/* socket */ typings.node.nodeColonnetMod.Socket, IncomingMessage], 
             Instantiable1[
               /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
               ServerResponse[IncomingMessage]
@@ -59,7 +59,7 @@ object mod {
           ]) = this()
     def this(
       server: Server[
-            Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+            Instantiable1[/* socket */ typings.node.nodeColonnetMod.Socket, IncomingMessage], 
             Instantiable1[
               /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
               ServerResponse[IncomingMessage]

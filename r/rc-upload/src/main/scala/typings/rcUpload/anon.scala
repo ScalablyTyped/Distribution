@@ -1,7 +1,7 @@
 package typings.rcUpload
 
-import typings.rcUpload.interfaceMod.BeforeUploadFileType
-import typings.rcUpload.interfaceMod.RcFile
+import typings.rcUpload.esInterfaceMod.BeforeUploadFileType
+import typings.rcUpload.esInterfaceMod.RcFile
 import typings.std.Blob
 import typings.std.Exclude
 import typings.std.ReadableStream

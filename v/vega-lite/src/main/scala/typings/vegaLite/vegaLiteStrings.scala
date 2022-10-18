@@ -1,61 +1,59 @@
 package typings.vegaLite
 
-import typings.vegaLite.aggregateMod.Aggregate
-import typings.vegaLite.aggregateMod.NonArgAggregateOp
-import typings.vegaLite.axisMod.AxisPart
-import typings.vegaLite.axisMod.ConditionalAxisProp
-import typings.vegaLite.binMod._Bin
-import typings.vegaLite.boxplotMod.BoxPlotPart
-import typings.vegaLite.channelMod.Channel
-import typings.vegaLite.channelMod.ColorChannel
-import typings.vegaLite.channelMod.FacetChannel
-import typings.vegaLite.channelMod.GeoPositionChannel
-import typings.vegaLite.channelMod.PolarPositionChannel
-import typings.vegaLite.channelMod.PolarPositionScaleChannel
-import typings.vegaLite.channelMod.PositionChannel
-import typings.vegaLite.channelMod.PositionScaleChannel
-import typings.vegaLite.channelMod.SecondaryRangeChannel
-import typings.vegaLite.channelMod._MainChannelOf
-import typings.vegaLite.channelMod._SecondaryChannelOf
-import typings.vegaLite.channeldefMod.TypeForShape
-import typings.vegaLite.errorbandMod.ErrorBandPart
-import typings.vegaLite.errorbarMod.ErrorBarCenter
-import typings.vegaLite.errorbarMod.ErrorBarExtent
-import typings.vegaLite.errorbarMod.ErrorBarPart
-import typings.vegaLite.errorbarMod.ErrorInputType
-import typings.vegaLite.headerComponentMod.HeaderChannel
-import typings.vegaLite.headerComponentMod.HeaderType
-import typings.vegaLite.layoutsizeComponentMod.LayoutSizeType
-import typings.vegaLite.layoutsizeComponentMod._LayoutSize
-import typings.vegaLite.projectMod.TupleStoreType
-import typings.vegaLite.scaleMod.ScaleType
-import typings.vegaLite.scaleMod._Domain
-import typings.vegaLite.sortMod.SortByChannel
-import typings.vegaLite.sortMod.SortByChannelDesc
-import typings.vegaLite.sortMod.SortOrder
-import typings.vegaLite.specBaseMod.SpecType
-import typings.vegaLite.specBaseMod.StepFor
-import typings.vegaLite.splitMod.SplitParentProperty
-import typings.vegaLite.srcDataMod.DataFormatType
-import typings.vegaLite.srcDataMod._ParseValue
-import typings.vegaLite.srcMarkMod.Mark
-import typings.vegaLite.srcResolveMod.ResolveMode
-import typings.vegaLite.srcSelectionMod.LegendBinding
-import typings.vegaLite.srcSelectionMod.SelectionResolution
-import typings.vegaLite.srcSelectionMod.SelectionType
-import typings.vegaLite.srcStackMod.StackOffset
-import typings.vegaLite.srcTimeunitMod.LocalMultiTimeUnit
-import typings.vegaLite.srcTimeunitMod.LocalSingleTimeUnit
-import typings.vegaLite.srcTimeunitMod.TimeUnitFormat
-import typings.vegaLite.srcTimeunitMod.UtcMultiTimeUnit
-import typings.vegaLite.srcTimeunitMod.UtcSingleTimeUnit
-import typings.vegaLite.srcTypeMod.StandardType
-import typings.vegaLite.srcTypeMod.Type
-import typings.vegaLite.toplevelMod.AutosizeType
-import typings.vegaLite.toplevelMod.FitType
-import typings.vegaLite.transformMod.WindowOnlyOp
-import typings.vegaLite.typeMod._RangeType
-import typings.vegaLite.vegaSchemaMod.VgEncodeChannel
+import typings.vegaLite.buildSrcAggregateMod.Aggregate
+import typings.vegaLite.buildSrcAggregateMod.NonArgAggregateOp
+import typings.vegaLite.buildSrcAxisMod.AxisPart
+import typings.vegaLite.buildSrcAxisMod.ConditionalAxisProp
+import typings.vegaLite.buildSrcBinMod._Bin
+import typings.vegaLite.buildSrcChannelMod.Channel
+import typings.vegaLite.buildSrcChannelMod.ColorChannel
+import typings.vegaLite.buildSrcChannelMod.FacetChannel
+import typings.vegaLite.buildSrcChannelMod.GeoPositionChannel
+import typings.vegaLite.buildSrcChannelMod.PolarPositionChannel
+import typings.vegaLite.buildSrcChannelMod.PolarPositionScaleChannel
+import typings.vegaLite.buildSrcChannelMod.PositionChannel
+import typings.vegaLite.buildSrcChannelMod.PositionScaleChannel
+import typings.vegaLite.buildSrcChannelMod.SecondaryRangeChannel
+import typings.vegaLite.buildSrcChanneldefMod.TypeForShape
+import typings.vegaLite.buildSrcCompileHeaderComponentMod.HeaderChannel
+import typings.vegaLite.buildSrcCompileHeaderComponentMod.HeaderType
+import typings.vegaLite.buildSrcCompileLayoutsizeComponentMod.LayoutSizeType
+import typings.vegaLite.buildSrcCompileLayoutsizeComponentMod._LayoutSize
+import typings.vegaLite.buildSrcCompileScaleTypeMod._RangeType
+import typings.vegaLite.buildSrcCompileSelectionProjectMod.TupleStoreType
+import typings.vegaLite.buildSrcCompileSplitMod.SplitParentProperty
+import typings.vegaLite.buildSrcCompositemarkBoxplotMod.BoxPlotPart
+import typings.vegaLite.buildSrcCompositemarkErrorbandMod.ErrorBandPart
+import typings.vegaLite.buildSrcCompositemarkErrorbarMod.ErrorBarCenter
+import typings.vegaLite.buildSrcCompositemarkErrorbarMod.ErrorBarExtent
+import typings.vegaLite.buildSrcCompositemarkErrorbarMod.ErrorBarPart
+import typings.vegaLite.buildSrcCompositemarkErrorbarMod.ErrorInputType
+import typings.vegaLite.buildSrcDataMod.DataFormatType
+import typings.vegaLite.buildSrcDataMod._ParseValue
+import typings.vegaLite.buildSrcMarkMod.Mark
+import typings.vegaLite.buildSrcResolveMod.ResolveMode
+import typings.vegaLite.buildSrcScaleMod.ScaleType
+import typings.vegaLite.buildSrcScaleMod._Domain
+import typings.vegaLite.buildSrcSelectionMod.LegendBinding
+import typings.vegaLite.buildSrcSelectionMod.SelectionResolution
+import typings.vegaLite.buildSrcSelectionMod.SelectionType
+import typings.vegaLite.buildSrcSortMod.SortByChannel
+import typings.vegaLite.buildSrcSortMod.SortByChannelDesc
+import typings.vegaLite.buildSrcSortMod.SortOrder
+import typings.vegaLite.buildSrcSpecBaseMod.SpecType
+import typings.vegaLite.buildSrcSpecBaseMod.StepFor
+import typings.vegaLite.buildSrcSpecToplevelMod.AutosizeType
+import typings.vegaLite.buildSrcSpecToplevelMod.FitType
+import typings.vegaLite.buildSrcStackMod.StackOffset
+import typings.vegaLite.buildSrcTimeunitMod.LocalMultiTimeUnit
+import typings.vegaLite.buildSrcTimeunitMod.LocalSingleTimeUnit
+import typings.vegaLite.buildSrcTimeunitMod.TimeUnitFormat
+import typings.vegaLite.buildSrcTimeunitMod.UtcMultiTimeUnit
+import typings.vegaLite.buildSrcTimeunitMod.UtcSingleTimeUnit
+import typings.vegaLite.buildSrcTransformMod.WindowOnlyOp
+import typings.vegaLite.buildSrcTypeMod.StandardType
+import typings.vegaLite.buildSrcTypeMod.Type
+import typings.vegaLite.buildSrcVegaDotschemaMod.VgEncodeChannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -135,30 +133,10 @@ object vegaLiteStrings {
   inline def `-y`: `-y` = "-y".asInstanceOf[`-y`]
   
   @js.native
-  sealed trait DeepPartial extends StObject
-  inline def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
-  
-  @js.native
   sealed trait E
     extends StObject
        with TupleStoreType
   inline def E: E = "E".asInstanceOf[E]
-  
-  @js.native
-  sealed trait Flag extends StObject
-  inline def Flag: Flag = "Flag".asInstanceOf[Flag]
-  
-  @js.native
-  sealed trait MapExcludeAndKeepSignalAs extends StObject
-  inline def MapExcludeAndKeepSignalAs: MapExcludeAndKeepSignalAs = "MapExcludeAndKeepSignalAs".asInstanceOf[MapExcludeAndKeepSignalAs]
-  
-  @js.native
-  sealed trait MappedExclude extends StObject
-  inline def MappedExclude: MappedExclude = "MappedExclude".asInstanceOf[MappedExclude]
-  
-  @js.native
-  sealed trait PartialIndex extends StObject
-  inline def PartialIndex: PartialIndex = "PartialIndex".asInstanceOf[PartialIndex]
   
   @js.native
   sealed trait R
@@ -1372,7 +1350,6 @@ object vegaLiteStrings {
     extends StObject
        with Channel
        with GeoPositionChannel
-       with _MainChannelOf[Any]
   inline def latitude: latitude = "latitude".asInstanceOf[latitude]
   
   @js.native
@@ -1381,7 +1358,6 @@ object vegaLiteStrings {
        with Channel
        with GeoPositionChannel
        with SecondaryRangeChannel
-       with _SecondaryChannelOf[Any]
   inline def latitude2: latitude2 = "latitude2".asInstanceOf[latitude2]
   
   @js.native
@@ -1460,7 +1436,6 @@ object vegaLiteStrings {
     extends StObject
        with Channel
        with GeoPositionChannel
-       with _MainChannelOf[Any]
   inline def longitude: longitude = "longitude".asInstanceOf[longitude]
   
   @js.native
@@ -1469,7 +1444,6 @@ object vegaLiteStrings {
        with Channel
        with GeoPositionChannel
        with SecondaryRangeChannel
-       with _SecondaryChannelOf[Any]
   inline def longitude2: longitude2 = "longitude2".asInstanceOf[longitude2]
   
   @js.native
@@ -1842,7 +1816,6 @@ object vegaLiteStrings {
        with PolarPositionChannel
        with PolarPositionScaleChannel
        with VgEncodeChannel
-       with _MainChannelOf[Any]
   inline def radius: radius = "radius".asInstanceOf[radius]
   
   @js.native
@@ -1851,7 +1824,6 @@ object vegaLiteStrings {
        with Channel
        with PolarPositionChannel
        with SecondaryRangeChannel
-       with _SecondaryChannelOf[Any]
   inline def radius2: radius2 = "radius2".asInstanceOf[radius2]
   
   @js.native
@@ -2287,7 +2259,6 @@ object vegaLiteStrings {
        with PolarPositionChannel
        with PolarPositionScaleChannel
        with VgEncodeChannel
-       with _MainChannelOf[Any]
   inline def theta: theta = "theta".asInstanceOf[theta]
   
   @js.native
@@ -2296,7 +2267,6 @@ object vegaLiteStrings {
        with Channel
        with PolarPositionChannel
        with SecondaryRangeChannel
-       with _SecondaryChannelOf[Any]
   inline def theta2: theta2 = "theta2".asInstanceOf[theta2]
   
   @js.native
@@ -2885,7 +2855,6 @@ object vegaLiteStrings {
        with PositionScaleChannel
        with SortByChannel
        with VgEncodeChannel
-       with _MainChannelOf[Any]
   inline def x: x = "x".asInstanceOf[x]
   
   @js.native
@@ -2895,7 +2864,6 @@ object vegaLiteStrings {
        with PositionChannel
        with SecondaryRangeChannel
        with VgEncodeChannel
-       with _SecondaryChannelOf[Any]
   inline def x2: x2 = "x2".asInstanceOf[x2]
   
   @js.native
@@ -2922,7 +2890,6 @@ object vegaLiteStrings {
        with PositionScaleChannel
        with SortByChannel
        with VgEncodeChannel
-       with _MainChannelOf[Any]
   inline def y: y = "y".asInstanceOf[y]
   
   @js.native
@@ -2932,7 +2899,6 @@ object vegaLiteStrings {
        with PositionChannel
        with SecondaryRangeChannel
        with VgEncodeChannel
-       with _SecondaryChannelOf[Any]
   inline def y2: y2 = "y2".asInstanceOf[y2]
   
   @js.native

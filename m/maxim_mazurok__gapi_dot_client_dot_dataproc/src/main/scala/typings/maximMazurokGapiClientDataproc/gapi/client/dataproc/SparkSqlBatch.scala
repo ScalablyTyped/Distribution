@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait SparkSqlBatch extends StObject {
   
   /** Optional. Mapping of query variable names to values (equivalent to the Spark SQL command: SET name="value";). */
   var queryVariables: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlBatch & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object SparkSqlBatch {
@@ -40,9 +37,7 @@ object SparkSqlBatch {
     inline def setQueryFileUriUndefined: Self = StObject.set(x, "queryFileUri", js.undefined)
     
     inline def setQueryVariables(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlBatch & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "queryVariables", value.asInstanceOf[js.Any])
     
     inline def setQueryVariablesUndefined: Self = StObject.set(x, "queryVariables", js.undefined)

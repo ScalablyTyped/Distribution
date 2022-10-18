@@ -7,60 +7,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object applicatorsMod {
   
-  @JSImport("lodash-decorators/applicators", "Applicator")
+  /* note: abstract class */ @JSImport("lodash-decorators/applicators", "Applicator")
   @js.native
-  abstract class Applicator ()
-    extends typings.lodashDecorators.applicatorMod.Applicator
+  open class Applicator ()
+    extends typings.lodashDecorators.applicatorsApplicatorMod.Applicator
   
   @JSImport("lodash-decorators/applicators", "BindApplicator")
   @js.native
   open class BindApplicator ()
-    extends typings.lodashDecorators.bindApplicatorMod.BindApplicator
+    extends typings.lodashDecorators.applicatorsBindApplicatorMod.BindApplicator
   
   @JSImport("lodash-decorators/applicators", "ComposeApplicator")
   @js.native
   open class ComposeApplicator ()
-    extends typings.lodashDecorators.composeApplicatorMod.ComposeApplicator {
+    extends typings.lodashDecorators.applicatorsComposeApplicatorMod.ComposeApplicator {
     def this(_config: Post) = this()
   }
   
   @JSImport("lodash-decorators/applicators", "InvokeApplicator")
   @js.native
   open class InvokeApplicator ()
-    extends typings.lodashDecorators.invokeApplicatorMod.InvokeApplicator
+    extends typings.lodashDecorators.applicatorsInvokeApplicatorMod.InvokeApplicator
   
   @JSImport("lodash-decorators/applicators", "MemoizeApplicator")
   @js.native
   open class MemoizeApplicator ()
-    extends typings.lodashDecorators.memoizeApplicatorMod.MemoizeApplicator
+    extends typings.lodashDecorators.applicatorsMemoizeApplicatorMod.MemoizeApplicator
   
   @JSImport("lodash-decorators/applicators", "PartialApplicator")
   @js.native
   open class PartialApplicator ()
-    extends typings.lodashDecorators.partialApplicatorMod.PartialApplicator
+    extends typings.lodashDecorators.applicatorsPartialApplicatorMod.PartialApplicator
   
   @JSImport("lodash-decorators/applicators", "PartialValueApplicator")
   @js.native
   open class PartialValueApplicator ()
-    extends typings.lodashDecorators.partialValueApplicatorMod.PartialValueApplicator
+    extends typings.lodashDecorators.applicatorsPartialValueApplicatorMod.PartialValueApplicator
   
   @JSImport("lodash-decorators/applicators", "PartialedApplicator")
   @js.native
   open class PartialedApplicator ()
-    extends typings.lodashDecorators.partialedApplicatorMod.PartialedApplicator
+    extends typings.lodashDecorators.applicatorsPartialedApplicatorMod.PartialedApplicator
   
   @JSImport("lodash-decorators/applicators", "PostValueApplicator")
   @js.native
   open class PostValueApplicator ()
-    extends typings.lodashDecorators.postValueApplicatorMod.PostValueApplicator
+    extends typings.lodashDecorators.applicatorsPostValueApplicatorMod.PostValueApplicator
   
   @JSImport("lodash-decorators/applicators", "PreValueApplicator")
   @js.native
   open class PreValueApplicator ()
-    extends typings.lodashDecorators.preValueApplicatorMod.PreValueApplicator
+    extends typings.lodashDecorators.applicatorsPreValueApplicatorMod.PreValueApplicator
   
   @JSImport("lodash-decorators/applicators", "WrapApplicator")
   @js.native
   open class WrapApplicator ()
-    extends typings.lodashDecorators.wrapApplicatorMod.WrapApplicator
+    extends typings.lodashDecorators.applicatorsWrapApplicatorMod.WrapApplicator
 }

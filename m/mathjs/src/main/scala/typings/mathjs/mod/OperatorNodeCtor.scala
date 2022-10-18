@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OperatorNodeCtor
   extends StObject
-     with MathNodeCommon
+     with MathNode
      with Instantiable3[
       /* import warning: importer.ImportType#apply Failed type conversion: mathjs.mathjs.OperatorNodeMap[TFn] */ /* op */ js.Any, 
       /* fn */ OperatorNodeFn, 

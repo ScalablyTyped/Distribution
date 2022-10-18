@@ -1,43 +1,54 @@
 package typings.ipfsHttpServer
 
-import typings.ipfsHttpServer.anon.DebuggererrorDebugger
+import typings.hapiHapi.mod.Server_
+import typings.libp2p.mod.Libp2p
+import typings.libp2pLogger.mod.Logger_
+import typings.multiformatsMultiaddr.mod.Multiaddr_
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ipfs-http-server/dist/src", JSImport.Namespace)
+  @JSImport("ipfs-http-server", "HttpApi")
   @js.native
-  class ^ protected ()
-    extends StObject
-       with HttpApi {
-    def this(ipfs: js.Any) = this()
-    def this(ipfs: js.Any, options: js.Object) = this()
-  }
-  
-  @js.native
-  trait HttpApi extends StObject {
+  open class HttpApi protected () extends StObject {
+    /**
+      * @param {IPFS} ipfs
+      */
+    def this(ipfs: IPFS) = this()
     
-    var _apiServers: js.UndefOr[js.Array[js.Any]] = js.native
+    /** @type {Server[]} */
+    var _apiServers: js.Array[Server] = js.native
     
-    def _createApiServer(host: js.Any, port: js.Any, ipfs: js.Any, cors: js.Any): js.Promise[js.Any] = js.native
+    /**
+      * @param {string} host
+      * @param {string} port
+      * @param {IPFS} ipfs
+      * @param {Record<string, any>} cors
+      */
+    def _createApiServer(host: String, port: String, ipfs: IPFS, cors: Record[String, Any]): js.Promise[Server_] = js.native
     
-    var _ipfs: js.Any = js.native
+    var _ipfs: typings.ipfsCoreTypes.mod.IPFS[Any] = js.native
     
-    def _log(formatter: js.Any, args: js.Any*): Unit = js.native
+    def _log(formatter: Any, args: Any*): Unit = js.native
     @JSName("_log")
-    var _log_Original: DebuggererrorDebugger = js.native
+    var _log_Original: Logger_ = js.native
     
-    def apiAddr: typings.multiaddr.mod.^ = js.native
+    def apiAddr: Multiaddr_ = js.native
     
     /**
       * Starts the IPFS HTTP server
-      *
-      * @returns {Promise<HttpApi>}
       */
-    def start(): js.Promise[HttpApi] = js.native
+    def start(): js.Promise[Unit] = js.native
     
-    def stop(): js.Promise[HttpApi] = js.native
+    def stop(): js.Promise[Unit] = js.native
   }
+  
+  type IPFS = typings.ipfsCoreTypes.mod.IPFS[js.Object]
+  
+  type Server = typings.ipfsHttpServer.distSrcTypesMod.Server
+  
+  type libp2p = Libp2p
 }

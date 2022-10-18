@@ -14,7 +14,7 @@ object OfficeRuntime {
   trait ApiInformation extends StObject {
     
     /**
-      * Check if the specified requirement set is supported by the host Office application.
+      * Check if the specified requirement set is supported by the Office application.
       * @param name - Set name; e.g., "MatrixBindings".
       * @param minVersion - The minimum required version; e.g., "1.4".
       */
@@ -45,7 +45,7 @@ object OfficeRuntime {
       *
       * @remarks
       *
-      * **Hosts**: Excel, Outlook, PowerPoint, Word
+      * **Applications**: Excel, Outlook, PowerPoint, Word
       *
       * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.
       * @returns Promise to the access token.

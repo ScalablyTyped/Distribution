@@ -1,7 +1,7 @@
 package typings.inversifyInjectDecorators
 
-import typings.inversify.interfacesMod.interfaces.Abstract
-import typings.inversify.interfacesMod.interfaces.Newable
+import typings.inversify.libInterfacesInterfacesMod.interfaces.Abstract
+import typings.inversify.libInterfacesInterfacesMod.interfaces.Newable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

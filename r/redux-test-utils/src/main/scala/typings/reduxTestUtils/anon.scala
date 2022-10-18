@@ -20,12 +20,9 @@ object anon {
     @JSName("getState")
     var getState_Original: js.Function0[js.Object]
     
-    def replaceReducer(nextReducer: Reducer[js.Object, AnyAction]): /* import warning: importer.ImportType#apply Failed type conversion: void[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.observable * / any] */ js.Any
+    def replaceReducer(nextReducer: Reducer[js.Object, AnyAction]): Unit
     @JSName("replaceReducer")
-    var replaceReducer_Original: js.Function1[
-        /* nextReducer */ Reducer[js.Object, AnyAction], 
-        /* import warning: importer.ImportType#apply Failed type conversion: void[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.observable * / any] */ js.Any
-      ]
+    var replaceReducer_Original: js.Function1[/* nextReducer */ Reducer[js.Object, AnyAction], Unit]
     
     def subscribe(listener: js.Function0[Unit]): Unsubscribe
     @JSName("subscribe")
@@ -36,7 +33,7 @@ object anon {
     inline def apply(
       dispatch: /* action */ AnyAction => AnyAction,
       getState: () => js.Object,
-      replaceReducer: /* nextReducer */ Reducer[js.Object, AnyAction] => /* import warning: importer.ImportType#apply Failed type conversion: void[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.observable * / any] */ js.Any,
+      replaceReducer: /* nextReducer */ Reducer[js.Object, AnyAction] => Unit,
       subscribe: /* listener */ js.Function0[Unit] => Unsubscribe
     ): OmitStoreAnyActionSymbolo = {
       val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), getState = js.Any.fromFunction0(getState), replaceReducer = js.Any.fromFunction1(replaceReducer), subscribe = js.Any.fromFunction1(subscribe))
@@ -49,9 +46,7 @@ object anon {
       
       inline def setGetState(value: () => js.Object): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      inline def setReplaceReducer(
-        value: /* nextReducer */ Reducer[js.Object, AnyAction] => /* import warning: importer.ImportType#apply Failed type conversion: void[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.observable * / any] */ js.Any
-      ): Self = StObject.set(x, "replaceReducer", js.Any.fromFunction1(value))
+      inline def setReplaceReducer(value: /* nextReducer */ Reducer[js.Object, AnyAction] => Unit): Self = StObject.set(x, "replaceReducer", js.Any.fromFunction1(value))
       
       inline def setSubscribe(value: /* listener */ js.Function0[Unit] => Unsubscribe): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }

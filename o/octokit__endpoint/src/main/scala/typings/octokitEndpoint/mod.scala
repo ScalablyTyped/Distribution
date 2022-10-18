@@ -1,6 +1,6 @@
 package typings.octokitEndpoint
 
-import typings.octokitTypes.endpointInterfaceMod.EndpointInterface
+import typings.octokitTypes.distTypesEndpointInterfaceMod.EndpointInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

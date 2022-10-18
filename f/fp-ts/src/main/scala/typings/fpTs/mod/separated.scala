@@ -1,8 +1,8 @@
 package typings.fpTs.mod
 
-import typings.fpTs.bifunctorMod.Bifunctor2
-import typings.fpTs.functorMod.Functor2
-import typings.fpTs.separatedMod.Separated_
+import typings.fpTs.libBifunctorMod.Bifunctor2
+import typings.fpTs.libFunctorMod.Functor2
+import typings.fpTs.libSeparatedMod.Separated_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +15,11 @@ object separated {
   
   @JSImport("fp-ts", "separated.Bifunctor")
   @js.native
-  val Bifunctor: Bifunctor2[typings.fpTs.separatedMod.URI] = js.native
+  val Bifunctor: Bifunctor2[typings.fpTs.libSeparatedMod.URI] = js.native
   
   @JSImport("fp-ts", "separated.Functor")
   @js.native
-  val Functor: Functor2[typings.fpTs.separatedMod.URI] = js.native
+  val Functor: Functor2[typings.fpTs.libSeparatedMod.URI] = js.native
   
   @JSImport("fp-ts", "separated.URI")
   @js.native
@@ -39,9 +39,10 @@ object separated {
   
   inline def separated[E, A](left: E, right: A): Separated_[E, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("separated")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Separated_[E, A]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native
-    trait URItoKind[A] extends StObject
+    trait URItoKind2[E, A] extends StObject
   }
 }

@@ -1,6 +1,5 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.Vector3
 import typings.babylonjs.BABYLON.Vector4
 import org.scalablytyped.runtime.StObject
@@ -29,13 +28,9 @@ trait FirstNormal extends StObject {
   
   var path: js.Array[Vector3]
   
-  var ribbonCloseArray: js.UndefOr[Boolean] = js.undefined
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var ribbonClosePath: js.UndefOr[Boolean] = js.undefined
-  
-  var rotationFunction: js.UndefOr[Nullable[js.Function2[/* i */ Double, /* distance */ Double, Double]]] = js.undefined
-  
-  var scaleFunction: js.UndefOr[Nullable[js.Function2[/* i */ Double, /* distance */ Double, Double]]] = js.undefined
+  var scale: js.UndefOr[Double] = js.undefined
   
   var shape: js.Array[Vector3]
   
@@ -92,25 +87,13 @@ object FirstNormal {
     
     inline def setPathVarargs(value: Vector3*): Self = StObject.set(x, "path", js.Array(value*))
     
-    inline def setRibbonCloseArray(value: Boolean): Self = StObject.set(x, "ribbonCloseArray", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    inline def setRibbonCloseArrayUndefined: Self = StObject.set(x, "ribbonCloseArray", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    inline def setRibbonClosePath(value: Boolean): Self = StObject.set(x, "ribbonClosePath", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    inline def setRibbonClosePathUndefined: Self = StObject.set(x, "ribbonClosePath", js.undefined)
-    
-    inline def setRotationFunction(value: (/* i */ Double, /* distance */ Double) => Double): Self = StObject.set(x, "rotationFunction", js.Any.fromFunction2(value))
-    
-    inline def setRotationFunctionNull: Self = StObject.set(x, "rotationFunction", null)
-    
-    inline def setRotationFunctionUndefined: Self = StObject.set(x, "rotationFunction", js.undefined)
-    
-    inline def setScaleFunction(value: (/* i */ Double, /* distance */ Double) => Double): Self = StObject.set(x, "scaleFunction", js.Any.fromFunction2(value))
-    
-    inline def setScaleFunctionNull: Self = StObject.set(x, "scaleFunction", null)
-    
-    inline def setScaleFunctionUndefined: Self = StObject.set(x, "scaleFunction", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     inline def setShape(value: js.Array[Vector3]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

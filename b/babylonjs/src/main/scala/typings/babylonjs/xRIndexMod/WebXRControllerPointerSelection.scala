@@ -1,6 +1,6 @@
 package typings.babylonjs.xRIndexMod
 
-import typings.babylonjs.webXRControllerPointerSelectionMod.IWebXRControllerPointerSelectionOptions
+import typings.babylonjs.xRFeaturesWebXRControllerPointerSelectionMod.IWebXRControllerPointerSelectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXRControllerPointerSelection")
 @js.native
 open class WebXRControllerPointerSelection protected ()
-  extends typings.babylonjs.featuresIndexMod.WebXRControllerPointerSelection {
+  extends typings.babylonjs.xRFeaturesIndexMod.WebXRControllerPointerSelection {
   /**
     * constructs a new background remover module
     * @param _xrSessionManager the session manager for this module
     * @param _options read-only options to be used in this module
     */
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     _options: IWebXRControllerPointerSelectionOptions
   ) = this()
 }

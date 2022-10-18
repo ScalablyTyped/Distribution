@@ -1,7 +1,7 @@
 package typings.fluentuiReactComponentRef
 
-import typings.fluentuiReactComponentRef.refMod.RefProps
-import typings.fluentuiReactComponentRef.refMod.RefState
+import typings.fluentuiReactComponentRef.distEsRefMod.RefProps
+import typings.fluentuiReactComponentRef.distEsRefMod.RefState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object mod {
   @JSImport("@fluentui/react-component-ref", "Ref")
   @js.native
   open class Ref protected ()
-    extends typings.fluentuiReactComponentRef.refMod.Ref {
+    extends typings.fluentuiReactComponentRef.distEsRefMod.Ref {
     def this(props: RefProps) = this()
     /**
       * @deprecated

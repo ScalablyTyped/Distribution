@@ -1,5 +1,6 @@
 package typings.playcanvas.global.pc
 
+import typings.playcanvas.mod.Vec3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class BoundingSphere ()
   extends typings.playcanvas.mod.BoundingSphere {
-  def this(center: typings.playcanvas.mod.Vec3) = this()
+  def this(center: Vec3) = this()
   def this(center: Unit, radius: Double) = this()
-  def this(center: typings.playcanvas.mod.Vec3, radius: Double) = this()
+  def this(center: Vec3, radius: Double) = this()
 }

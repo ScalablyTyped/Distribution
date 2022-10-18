@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsStarMod.StarProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsStarMod.StarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object starMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Star", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Star", JSImport.Default)
   @js.native
   val default: FC[StarProps] = js.native
   

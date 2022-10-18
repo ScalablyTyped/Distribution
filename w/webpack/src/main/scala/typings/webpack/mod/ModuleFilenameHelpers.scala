@@ -1,5 +1,6 @@
 package typings.webpack.mod
 
+import typings.webpack.anon.HashFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -122,20 +123,8 @@ object ModuleFilenameHelpers {
   
   @JSImport("webpack", "ModuleFilenameHelpers.createFilename")
   @js.native
-  def createFilename: js.Function3[
-    /* module */ String | Module, 
-    /* options */ Any, 
-    /* __2 */ typings.webpack.anon.ChunkGraph, 
-    String
-  ] = js.native
-  inline def createFilename_=(
-    x: js.Function3[
-      /* module */ String | Module, 
-      /* options */ Any, 
-      /* __2 */ typings.webpack.anon.ChunkGraph, 
-      String
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createFilename")(x.asInstanceOf[js.Any])
+  def createFilename: js.Function3[/* module */ String | Module, /* options */ Any, /* __2 */ HashFunction, String] = js.native
+  inline def createFilename_=(x: js.Function3[/* module */ String | Module, /* options */ Any, /* __2 */ HashFunction, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createFilename")(x.asInstanceOf[js.Any])
   
   @JSImport("webpack", "ModuleFilenameHelpers.matchObject")
   @js.native

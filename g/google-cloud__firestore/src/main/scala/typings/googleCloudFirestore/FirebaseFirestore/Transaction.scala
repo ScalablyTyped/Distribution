@@ -30,6 +30,14 @@ trait Transaction extends StObject {
   def delete(documentRef: DocumentReference[Any], precondition: Precondition): Transaction = js.native
   
   /**
+    * Retrieves an aggregate query result. Holds a pessimistic lock on all
+    * documents that were matched by the underlying query.
+    *
+    * @param aggregateQuery An aggregate query to execute.
+    * @return An AggregateQuerySnapshot for the retrieved data.
+    */
+  def get[T /* <: AggregateSpec */](aggregateQuery: AggregateQuery[T]): js.Promise[AggregateQuerySnapshot[T]] = js.native
+  /**
     * Reads the document referenced by the provided `DocumentReference.`
     * Holds a pessimistic lock on the returned document.
     *

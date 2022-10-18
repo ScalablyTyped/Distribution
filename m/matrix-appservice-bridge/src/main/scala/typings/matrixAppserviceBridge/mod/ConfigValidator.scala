@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.configValidatorMod.Schema
+import typings.matrixAppserviceBridge.libComponentsConfigValidatorMod.Schema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "ConfigValidator")
 @js.native
 open class ConfigValidator protected ()
-  extends typings.matrixAppserviceBridge.configValidatorMod.ConfigValidator {
+  extends typings.matrixAppserviceBridge.libComponentsConfigValidatorMod.ConfigValidator {
   /**
     * Construct a validator of YAML files.
     * @param schema The JSON schema file object.
@@ -22,7 +22,7 @@ object ConfigValidator {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromSchemaFile(filename: String): typings.matrixAppserviceBridge.configValidatorMod.ConfigValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchemaFile")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.matrixAppserviceBridge.configValidatorMod.ConfigValidator]
+  inline def fromSchemaFile(filename: String): typings.matrixAppserviceBridge.libComponentsConfigValidatorMod.ConfigValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchemaFile")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.matrixAppserviceBridge.libComponentsConfigValidatorMod.ConfigValidator]
   
   @JSImport("matrix-appservice-bridge", "ConfigValidator.loadFromFile")
   @js.native

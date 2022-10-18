@@ -10,12 +10,12 @@ object LinkModels {
   @JSImport("azure-arm-resource", "LinkModels.BaseResource")
   @js.native
   open class BaseResource ()
-    extends typings.azureArmResource.linkModelsMod.BaseResource
+    extends typings.azureArmResource.libLinkModelsMod.BaseResource
   
   @JSImport("azure-arm-resource", "LinkModels.CloudError")
   @js.native
   open class CloudError protected ()
-    extends typings.azureArmResource.linkModelsMod.CloudError {
+    extends typings.azureArmResource.libLinkModelsMod.CloudError {
     def this(parameters: CloudErrorParameters) = this()
   }
 }

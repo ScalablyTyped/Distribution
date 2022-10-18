@@ -1,15 +1,15 @@
 package typings.ethereumjsTx
 
-import typings.ethereumjsTx.typesMod.AccessList
-import typings.ethereumjsTx.typesMod.AccessListBuffer
-import typings.ethereumjsTx.typesMod.AccessListEIP2930TxData
-import typings.ethereumjsTx.typesMod.AccessListEIP2930ValuesArray
-import typings.ethereumjsTx.typesMod.FeeMarketEIP1559TxData
-import typings.ethereumjsTx.typesMod.FeeMarketEIP1559ValuesArray
-import typings.ethereumjsTx.typesMod.TxData
-import typings.ethereumjsTx.typesMod.TxOptions
-import typings.ethereumjsTx.typesMod.TxValuesArray
-import typings.ethereumjsTx.typesMod.TypedTransaction
+import typings.ethereumjsTx.distTypesMod.AccessList
+import typings.ethereumjsTx.distTypesMod.AccessListBuffer
+import typings.ethereumjsTx.distTypesMod.AccessListEIP2930TxData
+import typings.ethereumjsTx.distTypesMod.AccessListEIP2930ValuesArray
+import typings.ethereumjsTx.distTypesMod.FeeMarketEIP1559TxData
+import typings.ethereumjsTx.distTypesMod.FeeMarketEIP1559ValuesArray
+import typings.ethereumjsTx.distTypesMod.TxData
+import typings.ethereumjsTx.distTypesMod.TxOptions
+import typings.ethereumjsTx.distTypesMod.TxValuesArray
+import typings.ethereumjsTx.distTypesMod.TypedTransaction
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +24,7 @@ object mod {
   @JSImport("@ethereumjs/tx", "AccessListEIP2930Transaction")
   @js.native
   open class AccessListEIP2930Transaction protected ()
-    extends typings.ethereumjsTx.eip2930TransactionMod.AccessListEIP2930Transaction {
+    extends typings.ethereumjsTx.distEip2930TransactionMod.AccessListEIP2930Transaction {
     /**
       * This constructor takes the values, validates them, assigns them and freezes the object.
       *
@@ -48,8 +48,8 @@ object mod {
       * Format: `0x01 || rlp([chainId, nonce, gasPrice, gasLimit, to, value, data, accessList,
       * signatureYParity (v), signatureR (r), signatureS (s)])`
       */
-    inline def fromSerializedTx(serialized: Buffer): typings.ethereumjsTx.eip2930TransactionMod.AccessListEIP2930Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSerializedTx")(serialized.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.eip2930TransactionMod.AccessListEIP2930Transaction]
-    inline def fromSerializedTx(serialized: Buffer, opts: TxOptions): typings.ethereumjsTx.eip2930TransactionMod.AccessListEIP2930Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSerializedTx")(serialized.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.eip2930TransactionMod.AccessListEIP2930Transaction]
+    inline def fromSerializedTx(serialized: Buffer): typings.ethereumjsTx.distEip2930TransactionMod.AccessListEIP2930Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSerializedTx")(serialized.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.distEip2930TransactionMod.AccessListEIP2930Transaction]
+    inline def fromSerializedTx(serialized: Buffer, opts: TxOptions): typings.ethereumjsTx.distEip2930TransactionMod.AccessListEIP2930Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSerializedTx")(serialized.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.distEip2930TransactionMod.AccessListEIP2930Transaction]
     
     /**
       * Instantiate a transaction from a data dictionary.
@@ -61,8 +61,8 @@ object mod {
       * - `chainId` will be set automatically if not provided
       * - All parameters are optional and have some basic default values
       */
-    inline def fromTxData(txData: AccessListEIP2930TxData): typings.ethereumjsTx.eip2930TransactionMod.AccessListEIP2930Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTxData")(txData.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.eip2930TransactionMod.AccessListEIP2930Transaction]
-    inline def fromTxData(txData: AccessListEIP2930TxData, opts: TxOptions): typings.ethereumjsTx.eip2930TransactionMod.AccessListEIP2930Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTxData")(txData.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.eip2930TransactionMod.AccessListEIP2930Transaction]
+    inline def fromTxData(txData: AccessListEIP2930TxData): typings.ethereumjsTx.distEip2930TransactionMod.AccessListEIP2930Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTxData")(txData.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.distEip2930TransactionMod.AccessListEIP2930Transaction]
+    inline def fromTxData(txData: AccessListEIP2930TxData, opts: TxOptions): typings.ethereumjsTx.distEip2930TransactionMod.AccessListEIP2930Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTxData")(txData.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.distEip2930TransactionMod.AccessListEIP2930Transaction]
     
     /**
       * Create a transaction from a values array.
@@ -70,8 +70,8 @@ object mod {
       * Format: `[chainId, nonce, gasPrice, gasLimit, to, value, data, accessList,
       * signatureYParity (v), signatureR (r), signatureS (s)]`
       */
-    inline def fromValuesArray(values: AccessListEIP2930ValuesArray): typings.ethereumjsTx.eip2930TransactionMod.AccessListEIP2930Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.eip2930TransactionMod.AccessListEIP2930Transaction]
-    inline def fromValuesArray(values: AccessListEIP2930ValuesArray, opts: TxOptions): typings.ethereumjsTx.eip2930TransactionMod.AccessListEIP2930Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.eip2930TransactionMod.AccessListEIP2930Transaction]
+    inline def fromValuesArray(values: AccessListEIP2930ValuesArray): typings.ethereumjsTx.distEip2930TransactionMod.AccessListEIP2930Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.distEip2930TransactionMod.AccessListEIP2930Transaction]
+    inline def fromValuesArray(values: AccessListEIP2930ValuesArray, opts: TxOptions): typings.ethereumjsTx.distEip2930TransactionMod.AccessListEIP2930Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.distEip2930TransactionMod.AccessListEIP2930Transaction]
   }
   
   @JSImport("@ethereumjs/tx", "Capability")
@@ -79,21 +79,21 @@ object mod {
   object Capability extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ethereumjsTx.typesMod.Capability & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ethereumjsTx.distTypesMod.Capability & Double] = js.native
     
-    /* 1559 */ val EIP1559FeeMarket: typings.ethereumjsTx.typesMod.Capability.EIP1559FeeMarket & Double = js.native
+    /* 1559 */ val EIP1559FeeMarket: typings.ethereumjsTx.distTypesMod.Capability.EIP1559FeeMarket & Double = js.native
     
-    /* 155 */ val EIP155ReplayProtection: typings.ethereumjsTx.typesMod.Capability.EIP155ReplayProtection & Double = js.native
+    /* 155 */ val EIP155ReplayProtection: typings.ethereumjsTx.distTypesMod.Capability.EIP155ReplayProtection & Double = js.native
     
-    /* 2718 */ val EIP2718TypedTransaction: typings.ethereumjsTx.typesMod.Capability.EIP2718TypedTransaction & Double = js.native
+    /* 2718 */ val EIP2718TypedTransaction: typings.ethereumjsTx.distTypesMod.Capability.EIP2718TypedTransaction & Double = js.native
     
-    /* 2930 */ val EIP2930AccessLists: typings.ethereumjsTx.typesMod.Capability.EIP2930AccessLists & Double = js.native
+    /* 2930 */ val EIP2930AccessLists: typings.ethereumjsTx.distTypesMod.Capability.EIP2930AccessLists & Double = js.native
   }
   
   @JSImport("@ethereumjs/tx", "FeeMarketEIP1559Transaction")
   @js.native
   open class FeeMarketEIP1559Transaction protected ()
-    extends typings.ethereumjsTx.eip1559TransactionMod.FeeMarketEIP1559Transaction {
+    extends typings.ethereumjsTx.distEip1559TransactionMod.FeeMarketEIP1559Transaction {
     /**
       * This constructor takes the values, validates them, assigns them and freezes the object.
       *
@@ -117,8 +117,8 @@ object mod {
       * Format: `0x02 || rlp([chainId, nonce, maxPriorityFeePerGas, maxFeePerGas, gasLimit, to, value, data,
       * accessList, signatureYParity, signatureR, signatureS])`
       */
-    inline def fromSerializedTx(serialized: Buffer): typings.ethereumjsTx.eip1559TransactionMod.FeeMarketEIP1559Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSerializedTx")(serialized.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.eip1559TransactionMod.FeeMarketEIP1559Transaction]
-    inline def fromSerializedTx(serialized: Buffer, opts: TxOptions): typings.ethereumjsTx.eip1559TransactionMod.FeeMarketEIP1559Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSerializedTx")(serialized.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.eip1559TransactionMod.FeeMarketEIP1559Transaction]
+    inline def fromSerializedTx(serialized: Buffer): typings.ethereumjsTx.distEip1559TransactionMod.FeeMarketEIP1559Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSerializedTx")(serialized.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.distEip1559TransactionMod.FeeMarketEIP1559Transaction]
+    inline def fromSerializedTx(serialized: Buffer, opts: TxOptions): typings.ethereumjsTx.distEip1559TransactionMod.FeeMarketEIP1559Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSerializedTx")(serialized.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.distEip1559TransactionMod.FeeMarketEIP1559Transaction]
     
     /**
       * Instantiate a transaction from a data dictionary.
@@ -130,8 +130,8 @@ object mod {
       * - `chainId` will be set automatically if not provided
       * - All parameters are optional and have some basic default values
       */
-    inline def fromTxData(txData: FeeMarketEIP1559TxData): typings.ethereumjsTx.eip1559TransactionMod.FeeMarketEIP1559Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTxData")(txData.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.eip1559TransactionMod.FeeMarketEIP1559Transaction]
-    inline def fromTxData(txData: FeeMarketEIP1559TxData, opts: TxOptions): typings.ethereumjsTx.eip1559TransactionMod.FeeMarketEIP1559Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTxData")(txData.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.eip1559TransactionMod.FeeMarketEIP1559Transaction]
+    inline def fromTxData(txData: FeeMarketEIP1559TxData): typings.ethereumjsTx.distEip1559TransactionMod.FeeMarketEIP1559Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTxData")(txData.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.distEip1559TransactionMod.FeeMarketEIP1559Transaction]
+    inline def fromTxData(txData: FeeMarketEIP1559TxData, opts: TxOptions): typings.ethereumjsTx.distEip1559TransactionMod.FeeMarketEIP1559Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTxData")(txData.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.distEip1559TransactionMod.FeeMarketEIP1559Transaction]
     
     /**
       * Create a transaction from a values array.
@@ -139,14 +139,14 @@ object mod {
       * Format: `[chainId, nonce, maxPriorityFeePerGas, maxFeePerGas, gasLimit, to, value, data,
       * accessList, signatureYParity, signatureR, signatureS]`
       */
-    inline def fromValuesArray(values: FeeMarketEIP1559ValuesArray): typings.ethereumjsTx.eip1559TransactionMod.FeeMarketEIP1559Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.eip1559TransactionMod.FeeMarketEIP1559Transaction]
-    inline def fromValuesArray(values: FeeMarketEIP1559ValuesArray, opts: TxOptions): typings.ethereumjsTx.eip1559TransactionMod.FeeMarketEIP1559Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.eip1559TransactionMod.FeeMarketEIP1559Transaction]
+    inline def fromValuesArray(values: FeeMarketEIP1559ValuesArray): typings.ethereumjsTx.distEip1559TransactionMod.FeeMarketEIP1559Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.distEip1559TransactionMod.FeeMarketEIP1559Transaction]
+    inline def fromValuesArray(values: FeeMarketEIP1559ValuesArray, opts: TxOptions): typings.ethereumjsTx.distEip1559TransactionMod.FeeMarketEIP1559Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.distEip1559TransactionMod.FeeMarketEIP1559Transaction]
   }
   
   @JSImport("@ethereumjs/tx", "Transaction")
   @js.native
   open class Transaction protected ()
-    extends typings.ethereumjsTx.legacyTransactionMod.Transaction {
+    extends typings.ethereumjsTx.distLegacyTransactionMod.Transaction {
     /**
       * This constructor takes the values, validates them, assigns them and freezes the object.
       *
@@ -169,8 +169,8 @@ object mod {
       *
       * Format: `rlp([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
       */
-    inline def fromSerializedTx(serialized: Buffer): typings.ethereumjsTx.legacyTransactionMod.Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSerializedTx")(serialized.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.legacyTransactionMod.Transaction]
-    inline def fromSerializedTx(serialized: Buffer, opts: TxOptions): typings.ethereumjsTx.legacyTransactionMod.Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSerializedTx")(serialized.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.legacyTransactionMod.Transaction]
+    inline def fromSerializedTx(serialized: Buffer): typings.ethereumjsTx.distLegacyTransactionMod.Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSerializedTx")(serialized.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.distLegacyTransactionMod.Transaction]
+    inline def fromSerializedTx(serialized: Buffer, opts: TxOptions): typings.ethereumjsTx.distLegacyTransactionMod.Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSerializedTx")(serialized.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.distLegacyTransactionMod.Transaction]
     
     /**
       * Instantiate a transaction from a data dictionary.
@@ -180,22 +180,22 @@ object mod {
       * Notes:
       * - All parameters are optional and have some basic default values
       */
-    inline def fromTxData(txData: TxData): typings.ethereumjsTx.legacyTransactionMod.Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTxData")(txData.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.legacyTransactionMod.Transaction]
-    inline def fromTxData(txData: TxData, opts: TxOptions): typings.ethereumjsTx.legacyTransactionMod.Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTxData")(txData.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.legacyTransactionMod.Transaction]
+    inline def fromTxData(txData: TxData): typings.ethereumjsTx.distLegacyTransactionMod.Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTxData")(txData.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.distLegacyTransactionMod.Transaction]
+    inline def fromTxData(txData: TxData, opts: TxOptions): typings.ethereumjsTx.distLegacyTransactionMod.Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTxData")(txData.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.distLegacyTransactionMod.Transaction]
     
     /**
       * Create a transaction from a values array.
       *
       * Format: `[nonce, gasPrice, gasLimit, to, value, data, v, r, s]`
       */
-    inline def fromValuesArray(values: TxValuesArray): typings.ethereumjsTx.legacyTransactionMod.Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.legacyTransactionMod.Transaction]
-    inline def fromValuesArray(values: TxValuesArray, opts: TxOptions): typings.ethereumjsTx.legacyTransactionMod.Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.legacyTransactionMod.Transaction]
+    inline def fromValuesArray(values: TxValuesArray): typings.ethereumjsTx.distLegacyTransactionMod.Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsTx.distLegacyTransactionMod.Transaction]
+    inline def fromValuesArray(values: TxValuesArray, opts: TxOptions): typings.ethereumjsTx.distLegacyTransactionMod.Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsTx.distLegacyTransactionMod.Transaction]
   }
   
   @JSImport("@ethereumjs/tx", "TransactionFactory")
   @js.native
   /* private */ open class TransactionFactory ()
-    extends typings.ethereumjsTx.transactionFactoryMod.TransactionFactory
+    extends typings.ethereumjsTx.distTransactionFactoryMod.TransactionFactory
   /* static members */
   object TransactionFactory {
     

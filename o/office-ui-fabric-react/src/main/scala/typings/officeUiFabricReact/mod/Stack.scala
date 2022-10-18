@@ -2,8 +2,8 @@ package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.PartialIStackProps
 import typings.officeUiFabricReact.anon.WeakValidationMapIStackPr
-import typings.officeUiFabricReact.stackItemTypesMod.IStackItemProps
-import typings.officeUiFabricReact.stackTypesMod.IStackProps
+import typings.officeUiFabricReact.libComponentsStackStackDottypesMod.IStackProps
+import typings.officeUiFabricReact.libComponentsStackStackItemStackItemDottypesMod.IStackItemProps
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap

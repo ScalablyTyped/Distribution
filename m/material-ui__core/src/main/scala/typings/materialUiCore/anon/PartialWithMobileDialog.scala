@@ -1,6 +1,6 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.createBreakpointsMod.Breakpoint
+import typings.materialUiCore.stylesCreateBreakpointsMod.Breakpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,10 +1,10 @@
 package typings.relayRuntime.anon
 
+import typings.relayRuntime.libStoreRelayStoreTypesMod.LogEvent
+import typings.relayRuntime.libStoreRelayStoreTypesMod.OperationAvailability
+import typings.relayRuntime.libStoreRelayStoreTypesMod.OperationDescriptor
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.RenderPolicy
 import typings.relayRuntime.relayRuntimeStrings.suspenseDotquery
-import typings.relayRuntime.relayRuntimeTypesMod.RenderPolicy
-import typings.relayRuntime.relayStoreTypesMod.LogEvent
-import typings.relayRuntime.relayStoreTypesMod.OperationAvailability
-import typings.relayRuntime.relayStoreTypesMod.OperationDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

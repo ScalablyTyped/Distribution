@@ -465,7 +465,7 @@ object mod {
   @JSImport("dataframe-js", "Matrix")
   @js.native
   open class Matrix protected ()
-    extends typings.dataframeJs.matrixMod.default {
+    extends typings.dataframeJs.modulesMatrixMod.default {
     /**
       * Start the Matrix module.
       * @param df An instance of DataFrame.
@@ -537,7 +537,7 @@ object mod {
   @JSImport("dataframe-js", "SQL")
   @js.native
   open class SQL protected ()
-    extends typings.dataframeJs.sqlMod.default {
+    extends typings.dataframeJs.modulesSqlMod.default {
     /**
       * Start the SQL module.
       * @param df An instance of DataFrame.
@@ -617,7 +617,7 @@ object mod {
   @JSImport("dataframe-js", "Stat")
   @js.native
   open class Stat protected ()
-    extends typings.dataframeJs.statMod.default {
+    extends typings.dataframeJs.modulesStatMod.default {
     /**
       * Start the Stat module.
       * @param df An instance of DataFrame.

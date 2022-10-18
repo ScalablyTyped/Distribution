@@ -1,7 +1,7 @@
 package typings.cssLineBreak
 
-import typings.cssLineBreak.lineBreakMod.ILineBreakIterator
-import typings.cssLineBreak.lineBreakMod.IOptions
+import typings.cssLineBreak.distTypesLineBreakMod.ILineBreakIterator
+import typings.cssLineBreak.distTypesLineBreakMod.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

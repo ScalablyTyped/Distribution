@@ -9,13 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Use the {@link SyncClient.map} method to obtain a reference to a Sync map.
   * Information about rate limits can be found [here](https://www.twilio.com/docs/sync/limits).
   */
-@JSImport("twilio-sync", "SyncMap")
 @js.native
-open class SyncMap protected () extends Closeable {
-  /**
-    * @internal
-    */
-  def this(syncMapImpl: SyncMapImpl) = this()
+trait SyncMap extends Closeable {
   
   def dateExpires: String = js.native
   
@@ -235,95 +230,4 @@ open class SyncMap protected () extends Closeable {
   
   // private props
   def uri: String = js.native
-}
-object SyncMap {
-  
-  /**
-    * Fired when a new item appears in the map, regardless of whether its creator was local or remote.
-    *
-    * Parameters:
-    * 1. object `args` - info object provided with the event. It has the following properties:
-    *     * {@link SyncMapItem} `item` - added item
-    *     * boolean `isLocal` - equals true if the item was added by a local actor, false otherwise
-    * @example
-    * ```typescript
-    * map.on('itemAdded', (args) => {
-    *   console.log(`Map item ${args.item.key} was added`);
-    *   console.log('args.item.data:', args.item.data);
-    *   console.log('args.isLocal:', args.isLocal);
-    * });
-    * ```
-    * @event
-    */
-  /* static member */
-  @JSImport("twilio-sync", "SyncMap.itemAdded")
-  @js.native
-  val itemAdded: /* "itemAdded" */ String = js.native
-  
-  /**
-    * Fired when a map item is removed, regardless of whether the remover was local or remote.
-    *
-    * Parameters:
-    * 1. object `args` - info object provided with the event. It has the following properties:
-    *     * string `key` - the key of the removed item
-    *     * boolean `isLocal` - equals true if the item was added by a local actor, false otherwise
-    *     * object `previousItemData` - contains a snapshot of the item data before removal
-    * @example
-    * ```typescript
-    * map.on('itemRemoved', (args) => {
-    *   console.log(`Map item ${args.key} was removed`);
-    *   console.log('args.previousItemData:', args.previousItemData);
-    *   console.log('args.isLocal:', args.isLocal);
-    * });
-    * ```
-    * @event
-    */
-  /* static member */
-  @JSImport("twilio-sync", "SyncMap.itemRemoved")
-  @js.native
-  val itemRemoved: /* "itemRemoved" */ String = js.native
-  
-  /**
-    * Fired when a map item is updated (not added or removed, but changed), regardless of whether the updater was local or remote.
-    *
-    * Parameters:
-    * 1. object `args` - info object provided with the event. It has the following properties:
-    *     * {@link SyncMapItem} `item` - updated item
-    *     * boolean `isLocal` - equals true if the item was updated by a local actor, false otherwise
-    *     * object `previousItemData` - contains a snapshot of the item data before the update
-    * @example
-    * ```typescript
-    * map.on('itemUpdated', (args) => {
-    *   console.log(`Map item ${args.item.key} was updated`);
-    *   console.log('args.item.data:', args.item.data);
-    *   console.log('args.isLocal:', args.isLocal);
-    *   console.log('args.previousItemData:', args.previousItemData);
-    * });
-    * ```
-    * @event
-    */
-  /* static member */
-  @JSImport("twilio-sync", "SyncMap.itemUpdated")
-  @js.native
-  val itemUpdated: /* "itemUpdated" */ String = js.native
-  
-  /**
-    * Fired when a map is deleted entirely, by any actor local or remote.
-    *
-    * Parameters:
-    * 1. object `args` - info object provided with the event. It has the following properties:
-    *     * boolean `isLocal` - equals true if the map was removed by a local actor, false otherwise
-    * @example
-    * ```typescript
-    * map.on('removed', (args) => {
-    *   console.log(`Map ${map.sid} was removed`);
-    *   console.log('args.isLocal:', args.isLocal);
-    * });
-    * ```
-    * @event
-    */
-  /* static member */
-  @JSImport("twilio-sync", "SyncMap.removed")
-  @js.native
-  val removed: /* "removed" */ String = js.native
 }

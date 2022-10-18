@@ -1,7 +1,7 @@
 package typings.floatingUiCore.anon
 
-import typings.floatingUiCore.shiftMod.LimitShiftOffset
-import typings.floatingUiCore.typesMod.MiddlewareArguments
+import typings.floatingUiCore.srcMiddlewareShiftMod.LimitShiftOffset
+import typings.floatingUiCore.srcTypesMod.MiddlewareArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

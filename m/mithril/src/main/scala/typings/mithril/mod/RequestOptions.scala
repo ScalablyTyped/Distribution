@@ -22,7 +22,9 @@ trait RequestOptions[T] extends StObject {
   var background: js.UndefOr[Boolean] = js.undefined
   
   /** The data to be serialized into the request body. */
-  var body: js.UndefOr[Any | (js.Object & StringDictionary[Any])] = js.undefined
+  var body: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: {None (): void, None (body : std.Document): void, None (body : std.XMLHttpRequestBodyInit): void} extends (x : infer R): any ? R : never */ js.Any) | (js.Object & StringDictionary[Any])
+  ] = js.undefined
   
   /** Exposes the underlying XMLHttpRequest object for low-level configuration. */
   var config: js.UndefOr[
@@ -89,7 +91,9 @@ object RequestOptions {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBody(value: Any | (js.Object & StringDictionary[Any])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: {None (): void, None (body : std.Document): void, None (body : std.XMLHttpRequestBodyInit): void} extends (x : infer R): any ? R : never */ js.Any) | (js.Object & StringDictionary[Any])
+    ): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     

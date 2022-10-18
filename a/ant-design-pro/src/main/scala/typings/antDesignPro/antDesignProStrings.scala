@@ -1,6 +1,6 @@
 package typings.antDesignPro
 
-import typings.antDesignPro.avatarItemMod._SizeType
+import typings.antDesignPro.libAvatarListAvatarItemMod._SizeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,10 +24,6 @@ object antDesignProStrings {
   @js.native
   sealed trait `500` extends StObject
   inline def `500`: `500` = "500".asInstanceOf[`500`]
-  
-  @js.native
-  sealed trait LoginItemType extends StObject
-  inline def LoginItemType: LoginItemType = "LoginItemType".asInstanceOf[LoginItemType]
   
   @js.native
   sealed trait bottomCenter extends StObject

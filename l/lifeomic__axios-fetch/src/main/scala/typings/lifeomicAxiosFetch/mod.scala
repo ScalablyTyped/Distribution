@@ -1,7 +1,7 @@
 package typings.lifeomicAxiosFetch
 
-import typings.lifeomicAxiosFetch.axiosTypesMod.AxiosInstance
-import typings.lifeomicAxiosFetch.axiosTypesMod.AxiosRequestConfig
+import typings.lifeomicAxiosFetch.srcAxiosTypesMod.AxiosInstance
+import typings.lifeomicAxiosFetch.srcAxiosTypesMod.AxiosRequestConfig
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response

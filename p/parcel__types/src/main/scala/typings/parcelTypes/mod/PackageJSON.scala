@@ -1,6 +1,5 @@
 package typings.parcelTypes.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.parcelTypes.parcelTypesStrings.module
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -10,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PackageJSON extends StObject {
   
   var alias: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in @parcel/types.@parcel/types.PackageName | @parcel/types.@parcel/types.FilePath | @parcel/types.@parcel/types.Glob ]:? @parcel/types.@parcel/types.PackageName | @parcel/types.@parcel/types.FilePath | {  global :string}}
-    */ typings.parcelTypes.parcelTypesStrings.PackageJSON & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @parcel/types.@parcel/types.PackageName | @parcel/types.@parcel/types.FilePath | @parcel/types.@parcel/types.Glob ]:? @parcel/types.@parcel/types.PackageName | @parcel/types.@parcel/types.FilePath | {  global :string}} */ js.Any
   ] = js.undefined
   
   var bin: js.UndefOr[String | (Record[String, FilePath])] = js.undefined
@@ -57,9 +54,7 @@ object PackageJSON {
   extension [Self <: PackageJSON](x: Self) {
     
     inline def setAlias(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in @parcel/types.@parcel/types.PackageName | @parcel/types.@parcel/types.FilePath | @parcel/types.@parcel/types.Glob ]:? @parcel/types.@parcel/types.PackageName | @parcel/types.@parcel/types.FilePath | {  global :string}}
-      */ typings.parcelTypes.parcelTypesStrings.PackageJSON & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @parcel/types.@parcel/types.PackageName | @parcel/types.@parcel/types.FilePath | @parcel/types.@parcel/types.Glob ]:? @parcel/types.@parcel/types.PackageName | @parcel/types.@parcel/types.FilePath | {  global :string}} */ js.Any
     ): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)

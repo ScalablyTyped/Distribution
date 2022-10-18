@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.CertifiedRoles")
 @js.native
 open class CertifiedRoles ()
-  extends typings.xadesjs.typesXmlMod.CertifiedRoles {
+  extends typings.xadesjs.buildTypesXmlMod.CertifiedRoles {
   def this(properties: js.Object) = this()
 }

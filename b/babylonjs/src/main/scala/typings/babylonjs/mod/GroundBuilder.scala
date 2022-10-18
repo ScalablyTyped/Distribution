@@ -1,8 +1,9 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.anon.ColorFilter
-import typings.babylonjs.anon.SubdivisionsX
-import typings.babylonjs.anon.Updatable
+import typings.babylonjs.anon.AlphaFilter
+import typings.babylonjs.anon.Precision
+import typings.babylonjs.anon.Subdivisions
+import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,44 +19,44 @@ object GroundBuilder {
   @js.native
   def CreateGround: js.Function3[
     /* name */ String, 
-    /* options */ js.UndefOr[SubdivisionsX], 
+    /* options */ js.UndefOr[Subdivisions], 
     /* scene */ js.UndefOr[typings.babylonjs.sceneMod.Scene], 
-    typings.babylonjs.groundMeshMod.GroundMesh
+    typings.babylonjs.meshesGroundMeshMod.GroundMesh
   ] = js.native
-  inline def CreateGround(name: String): typings.babylonjs.groundMeshMod.GroundMesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
-  inline def CreateGround(name: String, options: Unit, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
-  inline def CreateGround(name: String, options: SubdivisionsX): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
-  inline def CreateGround(name: String, options: SubdivisionsX, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
+  inline def CreateGround(name: String): typings.babylonjs.meshesGroundMeshMod.GroundMesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
+  inline def CreateGround(name: String, options: Unit, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
+  inline def CreateGround(name: String, options: Subdivisions): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
+  inline def CreateGround(name: String, options: Subdivisions, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
   
   @JSImport("babylonjs", "GroundBuilder.CreateGroundFromHeightMap")
   @js.native
   def CreateGroundFromHeightMap: js.Function4[
     /* name */ String, 
     /* url */ String, 
-    /* options */ js.UndefOr[ColorFilter], 
+    /* options */ js.UndefOr[AlphaFilter], 
     /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-    typings.babylonjs.groundMeshMod.GroundMesh
+    typings.babylonjs.meshesGroundMeshMod.GroundMesh
   ] = js.native
-  inline def CreateGroundFromHeightMap(name: String, url: String): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
-  inline def CreateGroundFromHeightMap(name: String, url: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
-  inline def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
-  inline def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
+  inline def CreateGroundFromHeightMap(name: String, url: String): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
+  inline def CreateGroundFromHeightMap(name: String, url: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
+  inline def CreateGroundFromHeightMap(name: String, url: String, options: AlphaFilter): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
+  inline def CreateGroundFromHeightMap(name: String, url: String, options: AlphaFilter, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
   inline def CreateGroundFromHeightMap_=(
     x: js.Function4[
       /* name */ String, 
       /* url */ String, 
-      /* options */ js.UndefOr[ColorFilter], 
+      /* options */ js.UndefOr[AlphaFilter], 
       /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-      typings.babylonjs.groundMeshMod.GroundMesh
+      typings.babylonjs.meshesGroundMeshMod.GroundMesh
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateGroundFromHeightMap")(x.asInstanceOf[js.Any])
   
   inline def CreateGround_=(
     x: js.Function3[
       /* name */ String, 
-      /* options */ js.UndefOr[SubdivisionsX], 
+      /* options */ js.UndefOr[Subdivisions], 
       /* scene */ js.UndefOr[typings.babylonjs.sceneMod.Scene], 
-      typings.babylonjs.groundMeshMod.GroundMesh
+      typings.babylonjs.meshesGroundMeshMod.GroundMesh
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateGround")(x.asInstanceOf[js.Any])
   
@@ -63,18 +64,18 @@ object GroundBuilder {
   @js.native
   def CreateTiledGround: js.Function3[
     /* name */ String, 
-    /* options */ Updatable, 
+    /* options */ Precision, 
     /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-    typings.babylonjs.meshMod.Mesh
+    Mesh
   ] = js.native
-  inline def CreateTiledGround(name: String, options: Updatable): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-  inline def CreateTiledGround(name: String, options: Updatable, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateTiledGround(name: String, options: Precision): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def CreateTiledGround(name: String, options: Precision, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
   inline def CreateTiledGround_=(
     x: js.Function3[
       /* name */ String, 
-      /* options */ Updatable, 
+      /* options */ Precision, 
       /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-      typings.babylonjs.meshMod.Mesh
+      Mesh
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateTiledGround")(x.asInstanceOf[js.Any])
 }

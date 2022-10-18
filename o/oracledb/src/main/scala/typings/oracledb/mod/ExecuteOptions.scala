@@ -1,6 +1,6 @@
 package typings.oracledb.mod
 
-import typings.oracledb.anon.Type
+import typings.oracledb.anon.TypeNumber
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -74,7 +74,7 @@ trait ExecuteOptions extends StObject {
     *          "HIRE_DETAILS": { type: oracledb.DEFAULT }  // override fetchAsString or fetchAsBuffer
     *      }
     */
-  var fetchInfo: js.UndefOr[Record[String, Type]] = js.undefined
+  var fetchInfo: js.UndefOr[Record[String, TypeNumber]] = js.undefined
   
   /**
     * The maximum number of rows that are fetched by a query with connection.execute() when not using a ResultSet.
@@ -159,7 +159,7 @@ object ExecuteOptions {
     
     inline def setFetchArraySizeUndefined: Self = StObject.set(x, "fetchArraySize", js.undefined)
     
-    inline def setFetchInfo(value: Record[String, Type]): Self = StObject.set(x, "fetchInfo", value.asInstanceOf[js.Any])
+    inline def setFetchInfo(value: Record[String, TypeNumber]): Self = StObject.set(x, "fetchInfo", value.asInstanceOf[js.Any])
     
     inline def setFetchInfoUndefined: Self = StObject.set(x, "fetchInfo", js.undefined)
     

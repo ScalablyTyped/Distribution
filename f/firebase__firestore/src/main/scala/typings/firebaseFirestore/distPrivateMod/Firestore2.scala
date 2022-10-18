@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The Cloud Firestore service interface.
   *
-  * Do not call this constructor directly. Instead, use {@link getFirestore}.
+  * Do not call this constructor directly. Instead, use {@link (getFirestore:1)}.
   */
 @js.native
 trait Firestore2

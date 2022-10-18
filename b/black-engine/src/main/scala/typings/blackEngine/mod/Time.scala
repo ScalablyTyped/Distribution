@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Time")
 @js.native
 open class Time ()
-  extends typings.blackEngine.timeMod.Time
+  extends typings.blackEngine.coreTimeMod.Time

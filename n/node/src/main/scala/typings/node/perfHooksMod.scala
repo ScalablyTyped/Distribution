@@ -2,7 +2,7 @@ package typings.node
 
 import typings.node.anon.Buffered
 import typings.node.anon.BufferedType
-import typings.node.nodeAsyncHooksMod.AsyncResource
+import typings.node.nodeColonasyncHooksMod.AsyncResource
 import typings.node.nodeInts.`0`
 import typings.node.nodeStrings.mark
 import typings.node.nodeStrings.measure
@@ -234,6 +234,21 @@ object perfHooksMod {
     */
   inline def createHistogram(): RecordableHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("createHistogram")().asInstanceOf[RecordableHistogram]
   inline def createHistogram(options: CreateHistogramOptions): RecordableHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("createHistogram")(options.asInstanceOf[js.Any]).asInstanceOf[RecordableHistogram]
+  
+  object global {
+    
+    /**
+      * `performance` is a global reference for `require('perf_hooks').performance`
+      * https://nodejs.org/api/globals.html#performance
+      * @since v16.0.0
+      */
+    @JSGlobal("performance")
+    @js.native
+    def performance: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   performance :infer T} ? T : node.perf_hooks.Performance */ js.Any = js.native
+    inline def performance_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   performance :infer T} ? T : node.perf_hooks.Performance */ js.Any
+    ): Unit = js.Dynamic.global.updateDynamic("performance")(x.asInstanceOf[js.Any])
+  }
   
   /**
     * _This property is an extension by Node.js. It is not available in Web browsers._

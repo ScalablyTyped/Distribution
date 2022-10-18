@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("raml-1-parser", "ds.SourceProvider")
 @js.native
 open class SourceProvider ()
-  extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.SourceProvider
+  extends typings.ramlDefinitionSystem.mod.SourceProvider
 /* static members */
 object SourceProvider {
   

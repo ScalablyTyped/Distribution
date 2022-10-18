@@ -1,8 +1,8 @@
 package typings.testingLibraryUserEvent.anon
 
-import typings.testingLibraryUserEvent.optionsMod.PointerEventsCheckLevel
-import typings.testingLibraryUserEvent.sharedMod.pointerKey
-import typings.testingLibraryUserEvent.systemKeyboardMod.keyboardKey
+import typings.testingLibraryUserEvent.distTypesOptionsMod.PointerEventsCheckLevel
+import typings.testingLibraryUserEvent.distTypesSystemKeyboardMod.keyboardKey
+import typings.testingLibraryUserEvent.distTypesSystemPointerSharedMod.pointerKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

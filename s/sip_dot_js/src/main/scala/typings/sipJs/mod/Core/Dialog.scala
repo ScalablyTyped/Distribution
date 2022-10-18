@@ -1,6 +1,6 @@
 package typings.sipJs.mod.Core
 
-import typings.sipJs.dialogStateMod.DialogState
+import typings.sipJs.libCoreDialogsDialogStateMod.DialogState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Core.Dialog")
 @js.native
 open class Dialog protected ()
-  extends typings.sipJs.coreMod.Dialog {
+  extends typings.sipJs.libCoreMod.Dialog {
   /**
     * Dialog constructor.
     * @param core - User agent core.
     * @param dialogState - Initial dialog state.
     */
-  /* protected */ def this(core: typings.sipJs.userAgentCoreMod.UserAgentCore, dialogState: DialogState) = this()
+  /* protected */ def this(core: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore, dialogState: DialogState) = this()
 }
 /* static members */
 object Dialog {
@@ -32,8 +32,8 @@ object Dialog {
     * @param incomingResponseMessage - Incoming response message creating dialog.
     */
   inline def initialDialogStateForUserAgentClient(
-    outgoingRequestMessage: typings.sipJs.messagesMod.OutgoingRequestMessage,
-    incomingResponseMessage: typings.sipJs.messagesMod.IncomingResponseMessage
+    outgoingRequestMessage: typings.sipJs.libCoreMessagesMod.OutgoingRequestMessage,
+    incomingResponseMessage: typings.sipJs.libCoreMessagesMod.IncomingResponseMessage
   ): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentClient")(outgoingRequestMessage.asInstanceOf[js.Any], incomingResponseMessage.asInstanceOf[js.Any])).asInstanceOf[DialogState]
   
   /**
@@ -43,9 +43,9 @@ object Dialog {
     * @param incomingRequestMessage - Incoming request message creating dialog.
     * @param toTag - Tag in the To field in the response to the incoming request.
     */
-  inline def initialDialogStateForUserAgentServer(incomingRequestMessage: typings.sipJs.messagesMod.IncomingRequestMessage, toTag: String): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentServer")(incomingRequestMessage.asInstanceOf[js.Any], toTag.asInstanceOf[js.Any])).asInstanceOf[DialogState]
+  inline def initialDialogStateForUserAgentServer(incomingRequestMessage: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage, toTag: String): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentServer")(incomingRequestMessage.asInstanceOf[js.Any], toTag.asInstanceOf[js.Any])).asInstanceOf[DialogState]
   inline def initialDialogStateForUserAgentServer(
-    incomingRequestMessage: typings.sipJs.messagesMod.IncomingRequestMessage,
+    incomingRequestMessage: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage,
     toTag: String,
     early: Boolean
   ): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentServer")(incomingRequestMessage.asInstanceOf[js.Any], toTag.asInstanceOf[js.Any], early.asInstanceOf[js.Any])).asInstanceOf[DialogState]

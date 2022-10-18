@@ -1,8 +1,8 @@
 package typings.jupyterlabSettingregistry
 
-import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.DefaultMenuId
-import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin.Phase
-import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.Primitive
+import typings.jupyterlabSettingregistry.libTokensMod.ISettingRegistry.DefaultMenuId
+import typings.jupyterlabSettingregistry.libTokensMod.ISettingRegistry.IPlugin.Phase
+import typings.jupyterlabSettingregistry.libTokensMod.ISettingRegistry.Primitive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

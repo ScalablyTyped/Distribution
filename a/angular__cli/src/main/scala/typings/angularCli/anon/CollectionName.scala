@@ -1,7 +1,7 @@
 package typings.angularCli.anon
 
-import typings.angularCli.commandModuleMod.OtherOptions
-import typings.angularCli.schematicsCommandModuleMod.SchematicsExecutionOptions
+import typings.angularCli.srcCommandBuilderCommandModuleMod.OtherOptions
+import typings.angularCli.srcCommandBuilderSchematicsCommandModuleMod.SchematicsExecutionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

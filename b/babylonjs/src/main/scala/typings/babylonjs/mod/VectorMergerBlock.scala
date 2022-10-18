@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "VectorMergerBlock")
 @js.native
 open class VectorMergerBlock protected ()
-  extends typings.babylonjs.legacyMod.VectorMergerBlock {
+  extends typings.babylonjs.legacyLegacyMod.VectorMergerBlock {
   /**
     * Create a new VectorMergerBlock
     * @param name defines the block name

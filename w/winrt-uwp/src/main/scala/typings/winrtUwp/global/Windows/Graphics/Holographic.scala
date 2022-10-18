@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Holographic {
   
-  @JSGlobal("Windows.Graphics.Holographic.HolographicCamera")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Holographic.HolographicCamera")
   @js.native
-  abstract class HolographicCamera ()
+  open class HolographicCamera ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicCamera {
     
@@ -36,9 +36,9 @@ object Holographic {
     var viewportScaleFactor: Any = js.native
   }
   
-  @JSGlobal("Windows.Graphics.Holographic.HolographicCameraPose")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Holographic.HolographicCameraPose")
   @js.native
-  abstract class HolographicCameraPose ()
+  open class HolographicCameraPose ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicCameraPose {
     
@@ -74,9 +74,9 @@ object Holographic {
     var viewport: Any = js.native
   }
   
-  @JSGlobal("Windows.Graphics.Holographic.HolographicCameraRenderingParameters")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Holographic.HolographicCameraRenderingParameters")
   @js.native
-  abstract class HolographicCameraRenderingParameters ()
+  open class HolographicCameraRenderingParameters ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicCameraRenderingParameters {
     
@@ -92,9 +92,9 @@ object Holographic {
     var setFocusPoint: Any = js.native
   }
   
-  @JSGlobal("Windows.Graphics.Holographic.HolographicFrame")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Holographic.HolographicFrame")
   @js.native
-  abstract class HolographicFrame ()
+  open class HolographicFrame ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicFrame {
     
@@ -130,9 +130,9 @@ object Holographic {
     var waitForFrameToFinish: Any = js.native
   }
   
-  @JSGlobal("Windows.Graphics.Holographic.HolographicFramePrediction")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Holographic.HolographicFramePrediction")
   @js.native
-  abstract class HolographicFramePrediction ()
+  open class HolographicFramePrediction ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicFramePrediction {
     
@@ -180,9 +180,9 @@ object Holographic {
     inline def waitForFrameToFinish_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitForFrameToFinish")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("Windows.Graphics.Holographic.HolographicSpace")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Holographic.HolographicSpace")
   @js.native
-  abstract class HolographicSpace ()
+  open class HolographicSpace ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicSpace {
     
@@ -227,9 +227,9 @@ object Holographic {
     inline def createForCoreWindow_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createForCoreWindow")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("Windows.Graphics.Holographic.HolographicSpaceCameraAddedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Holographic.HolographicSpaceCameraAddedEventArgs")
   @js.native
-  abstract class HolographicSpaceCameraAddedEventArgs ()
+  open class HolographicSpaceCameraAddedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicSpaceCameraAddedEventArgs {
     
@@ -241,9 +241,9 @@ object Holographic {
     var getDeferral: Any = js.native
   }
   
-  @JSGlobal("Windows.Graphics.Holographic.HolographicSpaceCameraRemovedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Holographic.HolographicSpaceCameraRemovedEventArgs")
   @js.native
-  abstract class HolographicSpaceCameraRemovedEventArgs ()
+  open class HolographicSpaceCameraRemovedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicSpaceCameraRemovedEventArgs {
     

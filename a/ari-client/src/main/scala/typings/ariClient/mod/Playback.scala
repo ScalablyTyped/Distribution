@@ -1,6 +1,6 @@
 package typings.ariClient.mod
 
-import typings.ariClient.anon.OperationString
+import typings.ariClient.anon.Operation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,13 +15,13 @@ trait Playback
     *
     * @param params.operation - Operation to perform on the playback.
     */
-  def control(params: OperationString): js.Promise[Unit] = js.native
+  def control(params: Operation): js.Promise[Unit] = js.native
   /**
     * Control a playback.
     *
     * @param params.operation - Operation to perform on the playback.
     */
-  def control(params: OperationString, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def control(params: Operation, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Get a playbacks details.

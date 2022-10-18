@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Excluded from this release type: Index */
-/* Excluded from this release type: IndexConfiguration */
-/* Excluded from this release type: IndexField */
 /* Rewritten from type alias, can be one of: 
   - typings.firebaseFirestore.firebaseFirestoreStrings.MODE_UNSPECIFIED
   - typings.firebaseFirestore.firebaseFirestoreStrings.ASCENDING

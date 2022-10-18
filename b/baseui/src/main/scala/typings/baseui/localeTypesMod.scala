@@ -1,12 +1,12 @@
 package typings.baseui
 
+import typings.baseui.accordionLocaleMod.AccordionLocale
 import typings.baseui.breadcrumbsLocaleMod.BreadcrumbLocale
 import typings.baseui.buttonGroupLocaleMod.ButtonGroupLocale
 import typings.baseui.dataTableLocaleMod.DataTableLocale
 import typings.baseui.datepickerLocaleMod.DatepickerLocale
 import typings.baseui.drawerLocaleMod.DrawerLocale
 import typings.baseui.fileUploaderLocaleMod.FileUploaderLocale
-import typings.baseui.localeMod.AccordionLocale
 import typings.baseui.menuLocaleMod.MenuLocale
 import typings.baseui.modalLocaleMod.ModalLocale
 import typings.baseui.paginationLocaleMod.PaginationLocale

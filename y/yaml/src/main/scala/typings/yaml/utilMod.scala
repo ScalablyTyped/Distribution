@@ -1,21 +1,21 @@
 package typings.yaml
 
-import typings.yaml.foldFlowLinesMod.FoldMode
-import typings.yaml.foldFlowLinesMod.FoldOptions
-import typings.yaml.logMod.LogLevelId
-import typings.yaml.pairMod.Pair
-import typings.yaml.scalarMod.Scalar
-import typings.yaml.stringifyMod.StringifyContext
-import typings.yaml.toJSMod.ToJSContext
-import typings.yaml.typesMod.CollectionTag
-import typings.yaml.typesMod.ScalarTag
+import typings.yaml.distLogMod.LogLevelId
+import typings.yaml.distNodesPairMod.Pair
+import typings.yaml.distNodesScalarMod.Scalar
+import typings.yaml.distNodesToJSMod.ToJSContext
+import typings.yaml.distSchemaTypesMod.CollectionTag
+import typings.yaml.distSchemaTypesMod.ScalarTag
+import typings.yaml.distStringifyFoldFlowLinesMod.FoldMode
+import typings.yaml.distStringifyFoldFlowLinesMod.FoldOptions
+import typings.yaml.distStringifyStringifyMod.StringifyContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("yaml/dist/util", JSImport.Namespace)
+  @JSImport("yaml/util", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -38,15 +38,15 @@ object utilMod {
     hasIndentAtStartLineWidthMinContentWidthOnFoldOnOverflow: FoldOptions
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldFlowLines")(text.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], hasIndentAtStartLineWidthMinContentWidthOnFoldOnOverflow.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("yaml/dist/util", "mapTag")
+  @JSImport("yaml/util", "mapTag")
   @js.native
   val mapTag: CollectionTag = js.native
   
-  @JSImport("yaml/dist/util", "seqTag")
+  @JSImport("yaml/util", "seqTag")
   @js.native
   val seqTag: CollectionTag = js.native
   
-  @JSImport("yaml/dist/util", "stringTag")
+  @JSImport("yaml/util", "stringTag")
   @js.native
   val stringTag: ScalarTag = js.native
   

@@ -1,14 +1,14 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.commonMod.common.IErrorCallback
-import typings.mendixmodelsdk.imodelserverclientMod.IModelServerClient
+import typings.mendixmodelsdk.srcCommonMod.common.IErrorCallback
+import typings.mendixmodelsdk.srcSdkInternalImodelserverclientMod.IModelServerClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "AbstractModel")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "AbstractModel")
 @js.native
-abstract class AbstractModel protected ()
-  extends typings.mendixmodelsdk.internalMod.AbstractModel {
+open class AbstractModel protected ()
+  extends typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel {
   def this(_client: IModelServerClient, _errorHandler: IErrorCallback) = this()
 }

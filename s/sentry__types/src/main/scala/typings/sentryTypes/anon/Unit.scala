@@ -1,6 +1,6 @@
 package typings.sentryTypes.anon
 
-import typings.sentryTypes.measurementMod.MeasurementUnit
+import typings.sentryTypes.typesMeasurementMod.MeasurementUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

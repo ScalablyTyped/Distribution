@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "Document")
 @js.native
 open class Document ()
-  extends typings.antvGLite.domMod.Document
+  extends typings.antvGLite.distDomMod.Document

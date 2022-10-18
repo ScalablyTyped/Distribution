@@ -1,6 +1,6 @@
 package typings.rcTree.anon
 
-import typings.rcTree.interfaceMod.DataNode
+import typings.rcTree.esInterfaceMod.DataNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

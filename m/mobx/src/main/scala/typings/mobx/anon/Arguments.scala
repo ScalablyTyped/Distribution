@@ -1,7 +1,7 @@
 package typings.mobx.anon
 
+import typings.mobx.distCoreSpyMod._PureSpyEvent
 import typings.mobx.mobxStrings.action
-import typings.mobx.spyMod._PureSpyEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

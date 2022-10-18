@@ -1,14 +1,15 @@
 package typings.jupyterlabCells
 
-import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
-import typings.jupyterlabCells.celldragutilsMod.CellDragUtils.ICellTargetArea
-import typings.jupyterlabCells.modelMod.ICellModel
-import typings.jupyterlabCells.widgetMod.Cell.IOptions
-import typings.jupyterlabCodeeditor.editorMod.CodeEditor.Factory
+import typings.jupyterlabApputils.libSessioncontextMod.ISessionContext
+import typings.jupyterlabCells.libCelldragutilsMod.CellDragUtils.ICellTargetArea
+import typings.jupyterlabCells.libModelMod.IAttachmentsCellModel
+import typings.jupyterlabCells.libModelMod.ICellModel
+import typings.jupyterlabCells.libWidgetMod.Cell.IOptions
+import typings.jupyterlabCodeeditor.libEditorMod.CodeEditor.Factory
 import typings.jupyterlabNbformat.mod.ICell
-import typings.jupyterlabServices.messagesMod.IExecuteReplyMsg
-import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
-import typings.luminoCoreutils.jsonMod.JSONObject
+import typings.jupyterlabServices.libKernelMessagesMod.IExecuteReplyMsg
+import typings.luminoAlgorithm.typesIterMod.IterableOrArrayLike
+import typings.luminoCoreutils.typesJsonMod.JSONObject
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLDivElement
@@ -23,24 +24,24 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@jupyterlab/cells", "AttachmentsCell")
+  /* note: abstract class */ @JSImport("@jupyterlab/cells", "AttachmentsCell")
   @js.native
-  abstract class AttachmentsCell protected ()
-    extends typings.jupyterlabCells.widgetMod.AttachmentsCell {
+  open class AttachmentsCell[T /* <: IAttachmentsCellModel */] protected ()
+    extends typings.jupyterlabCells.libWidgetMod.AttachmentsCell[T] {
     /**
       * Construct a new base cell widget.
       */
-    def this(options: IOptions) = this()
+    def this(options: IOptions[T]) = this()
   }
   
   @JSImport("@jupyterlab/cells", "AttachmentsCellModel")
   @js.native
-  class AttachmentsCellModel protected ()
-    extends typings.jupyterlabCells.modelMod.AttachmentsCellModel {
+  open class AttachmentsCellModel protected ()
+    extends typings.jupyterlabCells.libModelMod.AttachmentsCellModel {
     /**
       * Construct a new cell with optional attachments.
       */
-    def this(options: typings.jupyterlabCells.modelMod.AttachmentsCellModel.IOptions) = this()
+    def this(options: typings.jupyterlabCells.libModelMod.AttachmentsCellModel.IOptions) = this()
   }
   object AttachmentsCellModel {
     
@@ -49,25 +50,25 @@ object mod {
       */
     @JSImport("@jupyterlab/cells", "AttachmentsCellModel.ContentFactory")
     @js.native
-    class ContentFactory ()
-      extends typings.jupyterlabCells.modelMod.AttachmentsCellModel.ContentFactory
+    open class ContentFactory ()
+      extends typings.jupyterlabCells.libModelMod.AttachmentsCellModel.ContentFactory
     
     /**
       * The shared `ContentFactory` instance.
       */
     @JSImport("@jupyterlab/cells", "AttachmentsCellModel.defaultContentFactory")
     @js.native
-    val defaultContentFactory: typings.jupyterlabCells.modelMod.AttachmentsCellModel.ContentFactory = js.native
+    val defaultContentFactory: typings.jupyterlabCells.libModelMod.AttachmentsCellModel.ContentFactory = js.native
   }
   
   @JSImport("@jupyterlab/cells", "Cell")
   @js.native
-  class Cell protected ()
-    extends typings.jupyterlabCells.widgetMod.Cell {
+  open class Cell[T /* <: ICellModel */] protected ()
+    extends typings.jupyterlabCells.libWidgetMod.Cell[T] {
     /**
       * Construct a new base cell widget.
       */
-    def this(options: IOptions) = this()
+    def this(options: IOptions[T]) = this()
   }
   object Cell {
     
@@ -81,9 +82,9 @@ object mod {
     /**
       * Create a content factory for a cell.
       */
-    class ContentFactory ()
-      extends typings.jupyterlabCells.widgetMod.Cell.ContentFactory {
-      def this(options: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions) = this()
+    open class ContentFactory ()
+      extends typings.jupyterlabCells.libWidgetMod.Cell.ContentFactory {
+      def this(options: typings.jupyterlabCells.libWidgetMod.Cell.ContentFactory.IOptions) = this()
     }
     
     /**
@@ -91,7 +92,7 @@ object mod {
       */
     @JSImport("@jupyterlab/cells", "Cell.defaultContentFactory")
     @js.native
-    val defaultContentFactory: typings.jupyterlabCells.widgetMod.Cell.ContentFactory = js.native
+    val defaultContentFactory: typings.jupyterlabCells.libWidgetMod.Cell.ContentFactory = js.native
   }
   
   object CellDragUtils {
@@ -106,7 +107,7 @@ object mod {
       * @param activeCell - The cell from where the drag event is triggered
       * @param selectedCells - The cells to be dragged
       */
-    inline def createCellDragImage(activeCell: typings.jupyterlabCells.widgetMod.Cell, selectedCells: js.Array[ICell]): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createCellDragImage")(activeCell.asInstanceOf[js.Any], selectedCells.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def createCellDragImage(activeCell: typings.jupyterlabCells.libWidgetMod.Cell[ICellModel], selectedCells: js.Array[ICell]): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createCellDragImage")(activeCell.asInstanceOf[js.Any], selectedCells.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /**
       * Detect which part of the cell triggered the MouseEvent
@@ -114,7 +115,7 @@ object mod {
       * @param cell - The cell which contains the MouseEvent's target
       * @param target - The DOM node which triggered the MouseEvent
       */
-    inline def detectTargetArea(cell: typings.jupyterlabCells.widgetMod.Cell, target: HTMLElement): ICellTargetArea = (^.asInstanceOf[js.Dynamic].applyDynamic("detectTargetArea")(cell.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[ICellTargetArea]
+    inline def detectTargetArea(cell: typings.jupyterlabCells.libWidgetMod.Cell[ICellModel], target: HTMLElement): ICellTargetArea = (^.asInstanceOf[js.Dynamic].applyDynamic("detectTargetArea")(cell.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[ICellTargetArea]
     
     /**
       * Find the cell index containing the target html element.
@@ -131,7 +132,7 @@ object mod {
       */
     inline def findCell(
       node: HTMLElement,
-      cells: IterableOrArrayLike[typings.jupyterlabCells.widgetMod.Cell],
+      cells: IterableOrArrayLike[typings.jupyterlabCells.libWidgetMod.Cell[ICellModel]],
       isCellNode: js.Function1[/* node */ HTMLElement, Boolean]
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findCell")(node.asInstanceOf[js.Any], cells.asInstanceOf[js.Any], isCellNode.asInstanceOf[js.Any])).asInstanceOf[Double]
     
@@ -152,35 +153,35 @@ object mod {
   /**
     * Construct a new cell footer.
     */
-  class CellFooter ()
-    extends typings.jupyterlabCells.headerfooterMod.CellFooter
+  open class CellFooter ()
+    extends typings.jupyterlabCells.libHeaderfooterMod.CellFooter
   
   @JSImport("@jupyterlab/cells", "CellHeader")
   @js.native
   /**
     * Construct a new cell header.
     */
-  class CellHeader ()
-    extends typings.jupyterlabCells.headerfooterMod.CellHeader
+  open class CellHeader ()
+    extends typings.jupyterlabCells.libHeaderfooterMod.CellHeader
   
   @JSImport("@jupyterlab/cells", "CellModel")
   @js.native
-  class CellModel protected ()
-    extends typings.jupyterlabCells.modelMod.CellModel {
+  open class CellModel protected ()
+    extends typings.jupyterlabCells.libModelMod.CellModel {
     /**
       * Construct a cell model from optional cell content.
       */
-    def this(options: typings.jupyterlabCells.modelMod.CellModel.IOptions) = this()
+    def this(options: typings.jupyterlabCells.libModelMod.CellModel.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/cells", "CodeCell")
   @js.native
-  class CodeCell protected ()
-    extends typings.jupyterlabCells.widgetMod.CodeCell {
+  open class CodeCell protected ()
+    extends typings.jupyterlabCells.libWidgetMod.CodeCell {
     /**
       * Construct a code cell widget.
       */
-    def this(options: typings.jupyterlabCells.widgetMod.CodeCell.IOptions) = this()
+    def this(options: typings.jupyterlabCells.libWidgetMod.CodeCell.IOptions) = this()
   }
   object CodeCell {
     
@@ -191,9 +192,9 @@ object mod {
     /**
       * Execute a cell given a client session.
       */
-    inline def execute(cell: typings.jupyterlabCells.widgetMod.CodeCell, sessionContext: ISessionContext): js.Promise[IExecuteReplyMsg | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(cell.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IExecuteReplyMsg | Unit]]
+    inline def execute(cell: typings.jupyterlabCells.libWidgetMod.CodeCell, sessionContext: ISessionContext): js.Promise[IExecuteReplyMsg | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(cell.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IExecuteReplyMsg | Unit]]
     inline def execute(
-      cell: typings.jupyterlabCells.widgetMod.CodeCell,
+      cell: typings.jupyterlabCells.libWidgetMod.CodeCell,
       sessionContext: ISessionContext,
       metadata: JSONObject
     ): js.Promise[IExecuteReplyMsg | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(cell.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IExecuteReplyMsg | Unit]]
@@ -201,12 +202,12 @@ object mod {
   
   @JSImport("@jupyterlab/cells", "CodeCellModel")
   @js.native
-  class CodeCellModel protected ()
-    extends typings.jupyterlabCells.modelMod.CodeCellModel {
+  open class CodeCellModel protected ()
+    extends typings.jupyterlabCells.libModelMod.CodeCellModel {
     /**
       * Construct a new code cell with optional original cell content.
       */
-    def this(options: typings.jupyterlabCells.modelMod.CodeCellModel.IOptions) = this()
+    def this(options: typings.jupyterlabCells.libModelMod.CodeCellModel.IOptions) = this()
   }
   object CodeCellModel {
     
@@ -215,33 +216,33 @@ object mod {
       */
     @JSImport("@jupyterlab/cells", "CodeCellModel.ContentFactory")
     @js.native
-    class ContentFactory ()
-      extends typings.jupyterlabCells.modelMod.CodeCellModel.ContentFactory
+    open class ContentFactory ()
+      extends typings.jupyterlabCells.libModelMod.CodeCellModel.ContentFactory
     
     /**
       * The shared `ContentFactory` instance.
       */
     @JSImport("@jupyterlab/cells", "CodeCellModel.defaultContentFactory")
     @js.native
-    val defaultContentFactory: typings.jupyterlabCells.modelMod.CodeCellModel.ContentFactory = js.native
+    val defaultContentFactory: typings.jupyterlabCells.libModelMod.CodeCellModel.ContentFactory = js.native
   }
   
-  @JSImport("@jupyterlab/cells", "Collapser")
+  /* note: abstract class */ @JSImport("@jupyterlab/cells", "Collapser")
   @js.native
   /**
     * Construct a new collapser.
     */
-  abstract class Collapser ()
-    extends typings.jupyterlabCells.collapserMod.Collapser
+  open class Collapser ()
+    extends typings.jupyterlabCells.libCollapserMod.Collapser
   
   @JSImport("@jupyterlab/cells", "InputArea")
   @js.native
-  class InputArea protected ()
-    extends typings.jupyterlabCells.inputareaMod.InputArea {
+  open class InputArea protected ()
+    extends typings.jupyterlabCells.libInputareaMod.InputArea {
     /**
       * Construct an input area widget.
       */
-    def this(options: typings.jupyterlabCells.inputareaMod.InputArea.IOptions) = this()
+    def this(options: typings.jupyterlabCells.libInputareaMod.InputArea.IOptions) = this()
   }
   object InputArea {
     
@@ -255,9 +256,9 @@ object mod {
     /**
       * Construct a `ContentFactory`.
       */
-    class ContentFactory ()
-      extends typings.jupyterlabCells.inputareaMod.InputArea.ContentFactory {
-      def this(options: typings.jupyterlabCells.inputareaMod.InputArea.ContentFactory.IOptions) = this()
+    open class ContentFactory ()
+      extends typings.jupyterlabCells.libInputareaMod.InputArea.ContentFactory {
+      def this(options: typings.jupyterlabCells.libInputareaMod.InputArea.ContentFactory.IOptions) = this()
     }
     
     /**
@@ -265,7 +266,7 @@ object mod {
       */
     @JSImport("@jupyterlab/cells", "InputArea.defaultContentFactory")
     @js.native
-    val defaultContentFactory: typings.jupyterlabCells.inputareaMod.InputArea.ContentFactory = js.native
+    val defaultContentFactory: typings.jupyterlabCells.libInputareaMod.InputArea.ContentFactory = js.native
     
     /**
       * The default editor factory singleton based on CodeMirror.
@@ -280,13 +281,13 @@ object mod {
   /**
     * Construct a new input collapser.
     */
-  class InputCollapser ()
-    extends typings.jupyterlabCells.collapserMod.InputCollapser
+  open class InputCollapser ()
+    extends typings.jupyterlabCells.libCollapserMod.InputCollapser
   
   @JSImport("@jupyterlab/cells", "InputPlaceholder")
   @js.native
-  class InputPlaceholder protected ()
-    extends typings.jupyterlabCells.placeholderMod.InputPlaceholder {
+  open class InputPlaceholder protected ()
+    extends typings.jupyterlabCells.libPlaceholderMod.InputPlaceholder {
     /**
       * Construct a new input placeholder.
       */
@@ -295,27 +296,40 @@ object mod {
   
   @JSImport("@jupyterlab/cells", "InputPrompt")
   @js.native
-  class InputPrompt ()
-    extends typings.jupyterlabCells.inputareaMod.InputPrompt
+  open class InputPrompt ()
+    extends typings.jupyterlabCells.libInputareaMod.InputPrompt
+  
+  @JSImport("@jupyterlab/cells", "MARKDOWN_HEADING_COLLAPSED")
+  @js.native
+  val MARKDOWN_HEADING_COLLAPSED: /* "jp-MarkdownHeadingCollapsed" */ String = js.native
   
   @JSImport("@jupyterlab/cells", "MarkdownCell")
   @js.native
-  class MarkdownCell protected ()
-    extends typings.jupyterlabCells.widgetMod.MarkdownCell {
+  open class MarkdownCell protected ()
+    extends typings.jupyterlabCells.libWidgetMod.MarkdownCell {
     /**
       * Construct a Markdown cell widget.
       */
-    def this(options: typings.jupyterlabCells.widgetMod.MarkdownCell.IOptions) = this()
+    def this(options: typings.jupyterlabCells.libWidgetMod.MarkdownCell.IOptions) = this()
+  }
+  object MarkdownCell {
+    
+    /**
+      * Default value for showEditorForReadOnlyMarkdown.
+      */
+    @JSImport("@jupyterlab/cells", "MarkdownCell.defaultShowEditorForReadOnlyMarkdown")
+    @js.native
+    val defaultShowEditorForReadOnlyMarkdown: /* true */ Boolean = js.native
   }
   
   @JSImport("@jupyterlab/cells", "MarkdownCellModel")
   @js.native
-  class MarkdownCellModel protected ()
-    extends typings.jupyterlabCells.modelMod.MarkdownCellModel {
+  open class MarkdownCellModel protected ()
+    extends typings.jupyterlabCells.libModelMod.MarkdownCellModel {
     /**
       * Construct a markdown cell model from optional cell content.
       */
-    def this(options: typings.jupyterlabCells.modelMod.CellModel.IOptions) = this()
+    def this(options: typings.jupyterlabCells.libModelMod.CellModel.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/cells", "OutputCollapser")
@@ -323,23 +337,23 @@ object mod {
   /**
     * Construct a new output collapser.
     */
-  class OutputCollapser ()
-    extends typings.jupyterlabCells.collapserMod.OutputCollapser
+  open class OutputCollapser ()
+    extends typings.jupyterlabCells.libCollapserMod.OutputCollapser
   
   @JSImport("@jupyterlab/cells", "OutputPlaceholder")
   @js.native
-  class OutputPlaceholder protected ()
-    extends typings.jupyterlabCells.placeholderMod.OutputPlaceholder {
+  open class OutputPlaceholder protected ()
+    extends typings.jupyterlabCells.libPlaceholderMod.OutputPlaceholder {
     /**
       * Construct a new output placeholder.
       */
     def this(callback: js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]) = this()
   }
   
-  @JSImport("@jupyterlab/cells", "Placeholder")
+  /* note: abstract class */ @JSImport("@jupyterlab/cells", "Placeholder")
   @js.native
-  abstract class Placeholder protected ()
-    extends typings.jupyterlabCells.placeholderMod.Placeholder {
+  open class Placeholder protected ()
+    extends typings.jupyterlabCells.libPlaceholderMod.Placeholder {
     /**
       * Construct a new placeholder.
       */
@@ -348,22 +362,22 @@ object mod {
   
   @JSImport("@jupyterlab/cells", "RawCell")
   @js.native
-  class RawCell protected ()
-    extends typings.jupyterlabCells.widgetMod.RawCell {
+  open class RawCell protected ()
+    extends typings.jupyterlabCells.libWidgetMod.RawCell {
     /**
       * Construct a raw cell widget.
       */
-    def this(options: IOptions) = this()
+    def this(options: typings.jupyterlabCells.libWidgetMod.RawCell.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/cells", "RawCellModel")
   @js.native
-  class RawCellModel protected ()
-    extends typings.jupyterlabCells.modelMod.RawCellModel {
+  open class RawCellModel protected ()
+    extends typings.jupyterlabCells.libModelMod.RawCellModel {
     /**
       * Construct a new cell with optional attachments.
       */
-    def this(options: typings.jupyterlabCells.modelMod.AttachmentsCellModel.IOptions) = this()
+    def this(options: typings.jupyterlabCells.libModelMod.AttachmentsCellModel.IOptions) = this()
   }
   
   inline def isCodeCellModel(model: ICellModel): /* is @jupyterlab/cells.@jupyterlab/cells/lib/model.ICodeCellModel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCodeCellModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* is @jupyterlab/cells.@jupyterlab/cells/lib/model.ICodeCellModel */ Boolean]

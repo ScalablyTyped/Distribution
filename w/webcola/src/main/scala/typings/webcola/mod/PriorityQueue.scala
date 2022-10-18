@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "PriorityQueue")
 @js.native
 open class PriorityQueue[T] protected ()
-  extends typings.webcola.pqueueMod.PriorityQueue[T] {
+  extends typings.webcola.distSrcPqueueMod.PriorityQueue[T] {
   def this(lessThan: js.Function2[/* a */ T, /* b */ T, Boolean]) = this()
 }

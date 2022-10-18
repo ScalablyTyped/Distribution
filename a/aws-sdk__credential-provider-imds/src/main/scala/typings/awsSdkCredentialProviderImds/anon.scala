@@ -8,7 +8,7 @@ object anon {
   
   trait Logger extends StObject {
     
-    var logger: js.UndefOr[typings.awsSdkTypes.loggerMod.Logger] = js.undefined
+    var logger: js.UndefOr[typings.awsSdkTypes.distTypesLoggerMod.Logger] = js.undefined
   }
   object Logger {
     
@@ -19,7 +19,7 @@ object anon {
     
     extension [Self <: Logger](x: Self) {
       
-      inline def setLogger(value: typings.awsSdkTypes.loggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: typings.awsSdkTypes.distTypesLoggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     }

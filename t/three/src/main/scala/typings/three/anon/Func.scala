@@ -1,6 +1,6 @@
 package typings.three.anon
 
-import typings.three.threeMod.Vector3
+import typings.three.srcThreeMod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

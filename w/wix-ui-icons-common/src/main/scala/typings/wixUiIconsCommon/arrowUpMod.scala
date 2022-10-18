@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsArrowUpMod.ArrowUpProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsArrowUpMod.ArrowUpProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrowUpMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/ArrowUp", JSImport.Default)
+  @JSImport("wix-ui-icons-common/ArrowUp", JSImport.Default)
   @js.native
   val default: FC[ArrowUpProps] = js.native
   

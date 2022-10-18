@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsLowerCaseSmallMod.LowerCaseSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lowerCaseSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/LowerCaseSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/LowerCaseSmall", JSImport.Default)
   @js.native
   val default: FC[LowerCaseSmallProps] = js.native
-  
-  trait LowerCaseSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object LowerCaseSmallProps {
-    
-    inline def apply(): LowerCaseSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[LowerCaseSmallProps]
-    }
-    
-    extension [Self <: LowerCaseSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[LowerCaseSmallProps]
   

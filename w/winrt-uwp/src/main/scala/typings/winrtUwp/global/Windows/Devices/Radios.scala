@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Radios {
   
   /** Represents a radio device on the system. */
-  @JSGlobal("Windows.Devices.Radios.Radio")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Radios.Radio")
   @js.native
-  abstract class Radio ()
+  open class Radio ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Radios.Radio
   object Radio {

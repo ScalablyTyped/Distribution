@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.OnRenderCell
-import typings.officeUiFabricReact.listListMod.IListState
-import typings.officeUiFabricReact.listTypesMod.IListProps
+import typings.officeUiFabricReact.libComponentsListListDottypesMod.IListProps
+import typings.officeUiFabricReact.libComponentsListListMod.IListState
 import typings.officeUiFabricReact.officeUiFabricReactInts.`0`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`1`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`2`
@@ -16,7 +16,7 @@ object libListMod {
   @JSImport("office-ui-fabric-react/lib/List", "List")
   @js.native
   open class List[T] protected ()
-    extends typings.officeUiFabricReact.listMod.List[T] {
+    extends typings.officeUiFabricReact.libComponentsListMod.List[T] {
     def this(props: IListProps[T]) = this()
   }
   /* static members */

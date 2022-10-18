@@ -10,9 +10,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("preact", "Component")
+/* note: abstract class */ @JSImport("preact", "Component")
 @js.native
-abstract class Component[P, S] () extends StObject {
+open class Component[P, S] () extends StObject {
   def this(props: P) = this()
   def this(props: P, context: Any) = this()
   def this(props: Unit, context: Any) = this()

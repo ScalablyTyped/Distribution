@@ -61,8 +61,8 @@ trait PickthemeDeepPartialThemeChildren extends StObject {
   
   var action: js.UndefOr[
     (Omit[
-      PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy | (PropsWithChildren[
-        PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy
+      PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel | (PropsWithChildren[
+        PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
       ]), 
       children
     ]) & LabelString
@@ -257,8 +257,8 @@ object PickthemeDeepPartialThemeChildren {
     
     inline def setAction(
       value: (Omit[
-          PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy | (PropsWithChildren[
-            PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy
+          PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel | (PropsWithChildren[
+            PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
           ]), 
           children
         ]) & LabelString

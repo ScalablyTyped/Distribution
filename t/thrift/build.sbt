@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "thrift"
-version := "0.10-dt-20211202Z-81f2f1"
+version := "0.10-dt-20211202Z-51579a"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
-  "org.scalablytyped" %%% "node-int64" % "v0.4.0-dt-20220818Z-b8ef1d",
-  "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-1ac3b1",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "node-int64" % "v0.4.0-dt-20220818Z-74f82e",
+  "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-1566b2",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

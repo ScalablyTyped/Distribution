@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "ProfileCache")
 @js.native
 open class ProfileCache protected ()
-  extends typings.matrixBotSdk.profileCacheMod.ProfileCache {
+  extends typings.matrixBotSdk.libHelpersProfileCacheMod.ProfileCache {
   /**
     * Creates a new profile cache.
     * @param {number} maxEntries The maximum number of entries to cache.

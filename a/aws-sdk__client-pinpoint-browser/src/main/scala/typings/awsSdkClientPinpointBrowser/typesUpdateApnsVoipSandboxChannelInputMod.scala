@@ -1,8 +1,8 @@
 package typings.awsSdkClientPinpointBrowser
 
-import typings.awsSdkClientPinpointBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientPinpointBrowser.typesApnsvoipsandboxchannelrequestMod.APNSVoipSandboxChannelRequest
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientPinpointBrowser.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

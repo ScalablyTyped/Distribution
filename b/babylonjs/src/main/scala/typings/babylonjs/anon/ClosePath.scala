@@ -1,127 +1,86 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathVectorMod.Vector3
-import typings.babylonjs.mathVectorMod.Vector4
-import typings.babylonjs.typesMod.Nullable
+import typings.babylonjs.mathsMathDotcolorMod.Color4
+import typings.babylonjs.mathsMathDotvectorMod.Vector2
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
+import typings.babylonjs.mathsMathDotvectorMod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClosePath extends StObject {
   
-  var adjustFrame: js.UndefOr[Boolean] = js.undefined
-  
   var backUVs: js.UndefOr[Vector4] = js.undefined
   
-  var cap: js.UndefOr[Double] = js.undefined
+  var closeArray: js.UndefOr[Boolean] = js.undefined
   
   var closePath: js.UndefOr[Boolean] = js.undefined
   
-  var closeShape: js.UndefOr[Boolean] = js.undefined
-  
-  var firstNormal: js.UndefOr[Vector3] = js.undefined
+  var colors: js.UndefOr[js.Array[Color4]] = js.undefined
   
   var frontUVs: js.UndefOr[Vector4] = js.undefined
   
-  var instance: js.UndefOr[typings.babylonjs.meshMod.Mesh] = js.undefined
-  
   var invertUV: js.UndefOr[Boolean] = js.undefined
   
-  var path: js.Array[Vector3]
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var ribbonCloseArray: js.UndefOr[Boolean] = js.undefined
-  
-  var ribbonClosePath: js.UndefOr[Boolean] = js.undefined
-  
-  var rotationFunction: js.UndefOr[Nullable[js.Function2[/* i */ Double, /* distance */ Double, Double]]] = js.undefined
-  
-  var scaleFunction: js.UndefOr[Nullable[js.Function2[/* i */ Double, /* distance */ Double, Double]]] = js.undefined
-  
-  var shape: js.Array[Vector3]
+  var pathArray: js.Array[js.Array[Vector3]]
   
   var sideOrientation: js.UndefOr[Double] = js.undefined
   
-  var updatable: js.UndefOr[Boolean] = js.undefined
+  var uvs: js.UndefOr[js.Array[Vector2]] = js.undefined
 }
 object ClosePath {
   
-  inline def apply(path: js.Array[Vector3], shape: js.Array[Vector3]): ClosePath = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
+  inline def apply(pathArray: js.Array[js.Array[Vector3]]): ClosePath = {
+    val __obj = js.Dynamic.literal(pathArray = pathArray.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClosePath]
   }
   
   extension [Self <: ClosePath](x: Self) {
     
-    inline def setAdjustFrame(value: Boolean): Self = StObject.set(x, "adjustFrame", value.asInstanceOf[js.Any])
-    
-    inline def setAdjustFrameUndefined: Self = StObject.set(x, "adjustFrame", js.undefined)
-    
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     
     inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
     
-    inline def setCap(value: Double): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
+    inline def setCloseArray(value: Boolean): Self = StObject.set(x, "closeArray", value.asInstanceOf[js.Any])
     
-    inline def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
+    inline def setCloseArrayUndefined: Self = StObject.set(x, "closeArray", js.undefined)
     
     inline def setClosePath(value: Boolean): Self = StObject.set(x, "closePath", value.asInstanceOf[js.Any])
     
     inline def setClosePathUndefined: Self = StObject.set(x, "closePath", js.undefined)
     
-    inline def setCloseShape(value: Boolean): Self = StObject.set(x, "closeShape", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[Color4]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    inline def setCloseShapeUndefined: Self = StObject.set(x, "closeShape", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setFirstNormal(value: Vector3): Self = StObject.set(x, "firstNormal", value.asInstanceOf[js.Any])
-    
-    inline def setFirstNormalUndefined: Self = StObject.set(x, "firstNormal", js.undefined)
+    inline def setColorsVarargs(value: Color4*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
     
     inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
     
-    inline def setInstance(value: typings.babylonjs.meshMod.Mesh): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
-    
-    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
-    
     inline def setInvertUV(value: Boolean): Self = StObject.set(x, "invertUV", value.asInstanceOf[js.Any])
     
     inline def setInvertUVUndefined: Self = StObject.set(x, "invertUV", js.undefined)
     
-    inline def setPath(value: js.Array[Vector3]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: Vector3*): Self = StObject.set(x, "path", js.Array(value*))
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setRibbonCloseArray(value: Boolean): Self = StObject.set(x, "ribbonCloseArray", value.asInstanceOf[js.Any])
+    inline def setPathArray(value: js.Array[js.Array[Vector3]]): Self = StObject.set(x, "pathArray", value.asInstanceOf[js.Any])
     
-    inline def setRibbonCloseArrayUndefined: Self = StObject.set(x, "ribbonCloseArray", js.undefined)
-    
-    inline def setRibbonClosePath(value: Boolean): Self = StObject.set(x, "ribbonClosePath", value.asInstanceOf[js.Any])
-    
-    inline def setRibbonClosePathUndefined: Self = StObject.set(x, "ribbonClosePath", js.undefined)
-    
-    inline def setRotationFunction(value: (/* i */ Double, /* distance */ Double) => Double): Self = StObject.set(x, "rotationFunction", js.Any.fromFunction2(value))
-    
-    inline def setRotationFunctionNull: Self = StObject.set(x, "rotationFunction", null)
-    
-    inline def setRotationFunctionUndefined: Self = StObject.set(x, "rotationFunction", js.undefined)
-    
-    inline def setScaleFunction(value: (/* i */ Double, /* distance */ Double) => Double): Self = StObject.set(x, "scaleFunction", js.Any.fromFunction2(value))
-    
-    inline def setScaleFunctionNull: Self = StObject.set(x, "scaleFunction", null)
-    
-    inline def setScaleFunctionUndefined: Self = StObject.set(x, "scaleFunction", js.undefined)
-    
-    inline def setShape(value: js.Array[Vector3]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
-    
-    inline def setShapeVarargs(value: Vector3*): Self = StObject.set(x, "shape", js.Array(value*))
+    inline def setPathArrayVarargs(value: js.Array[Vector3]*): Self = StObject.set(x, "pathArray", js.Array(value*))
     
     inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
     inline def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
     
-    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
+    inline def setUvs(value: js.Array[Vector2]): Self = StObject.set(x, "uvs", value.asInstanceOf[js.Any])
     
-    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
+    inline def setUvsUndefined: Self = StObject.set(x, "uvs", js.undefined)
+    
+    inline def setUvsVarargs(value: Vector2*): Self = StObject.set(x, "uvs", js.Array(value*))
   }
 }

@@ -2,8 +2,12 @@ package typings.chalk
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
-import typings.chalk.supportsColorMod.ColorInfo
-import typings.chalk.supportsColorMod.ColorSupportLevel
+import typings.chalk.sourceVendorAnsiStylesMod.BackgroundColorName
+import typings.chalk.sourceVendorAnsiStylesMod.ColorName
+import typings.chalk.sourceVendorAnsiStylesMod.ForegroundColorName
+import typings.chalk.sourceVendorAnsiStylesMod.ModifierName
+import typings.chalk.sourceVendorSupportsColorMod.ColorInfo
+import typings.chalk.sourceVendorSupportsColorMod.ColorSupportLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,9 +36,41 @@ object mod extends Shortcut {
   @js.native
   val Chalk: Instantiable1[/* options */ js.UndefOr[Options], ChalkInstance] = js.native
   
+  @JSImport("chalk", "backgroundColorNames")
+  @js.native
+  val backgroundColorNames: js.Array[BackgroundColorName] = js.native
+  
+  @JSImport("chalk", "backgroundColors")
+  @js.native
+  val backgroundColors: js.Array[BackgroundColor] = js.native
+  
   @JSImport("chalk", "chalkStderr")
   @js.native
   val chalkStderr: ChalkInstance = js.native
+  
+  @JSImport("chalk", "colorNames")
+  @js.native
+  val colorNames: js.Array[ColorName] = js.native
+  
+  @JSImport("chalk", "colors")
+  @js.native
+  val colors: js.Array[Color] = js.native
+  
+  @JSImport("chalk", "foregroundColorNames")
+  @js.native
+  val foregroundColorNames: js.Array[ForegroundColorName] = js.native
+  
+  @JSImport("chalk", "foregroundColors")
+  @js.native
+  val foregroundColors: js.Array[ForegroundColor] = js.native
+  
+  @JSImport("chalk", "modifierNames")
+  @js.native
+  val modifierNames: js.Array[ModifierName] = js.native
+  
+  @JSImport("chalk", "modifiers")
+  @js.native
+  val modifiers: js.Array[Modifiers_] = js.native
   
   @JSImport("chalk", "supportsColor")
   @js.native
@@ -44,65 +80,7 @@ object mod extends Shortcut {
   @js.native
   val supportsColorStderr: ColorInfo = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.chalk.chalkStrings.bgBlack
-    - typings.chalk.chalkStrings.bgRed
-    - typings.chalk.chalkStrings.bgGreen
-    - typings.chalk.chalkStrings.bgYellow
-    - typings.chalk.chalkStrings.bgBlue
-    - typings.chalk.chalkStrings.bgMagenta
-    - typings.chalk.chalkStrings.bgCyan
-    - typings.chalk.chalkStrings.bgWhite
-    - typings.chalk.chalkStrings.bgGray
-    - typings.chalk.chalkStrings.bgGrey
-    - typings.chalk.chalkStrings.bgBlackBright
-    - typings.chalk.chalkStrings.bgRedBright
-    - typings.chalk.chalkStrings.bgGreenBright
-    - typings.chalk.chalkStrings.bgYellowBright
-    - typings.chalk.chalkStrings.bgBlueBright
-    - typings.chalk.chalkStrings.bgMagentaBright
-    - typings.chalk.chalkStrings.bgCyanBright
-    - typings.chalk.chalkStrings.bgWhiteBright
-  */
-  trait BackgroundColor extends StObject
-  object BackgroundColor {
-    
-    inline def bgBlack: typings.chalk.chalkStrings.bgBlack = "bgBlack".asInstanceOf[typings.chalk.chalkStrings.bgBlack]
-    
-    inline def bgBlackBright: typings.chalk.chalkStrings.bgBlackBright = "bgBlackBright".asInstanceOf[typings.chalk.chalkStrings.bgBlackBright]
-    
-    inline def bgBlue: typings.chalk.chalkStrings.bgBlue = "bgBlue".asInstanceOf[typings.chalk.chalkStrings.bgBlue]
-    
-    inline def bgBlueBright: typings.chalk.chalkStrings.bgBlueBright = "bgBlueBright".asInstanceOf[typings.chalk.chalkStrings.bgBlueBright]
-    
-    inline def bgCyan: typings.chalk.chalkStrings.bgCyan = "bgCyan".asInstanceOf[typings.chalk.chalkStrings.bgCyan]
-    
-    inline def bgCyanBright: typings.chalk.chalkStrings.bgCyanBright = "bgCyanBright".asInstanceOf[typings.chalk.chalkStrings.bgCyanBright]
-    
-    inline def bgGray: typings.chalk.chalkStrings.bgGray = "bgGray".asInstanceOf[typings.chalk.chalkStrings.bgGray]
-    
-    inline def bgGreen: typings.chalk.chalkStrings.bgGreen = "bgGreen".asInstanceOf[typings.chalk.chalkStrings.bgGreen]
-    
-    inline def bgGreenBright: typings.chalk.chalkStrings.bgGreenBright = "bgGreenBright".asInstanceOf[typings.chalk.chalkStrings.bgGreenBright]
-    
-    inline def bgGrey: typings.chalk.chalkStrings.bgGrey = "bgGrey".asInstanceOf[typings.chalk.chalkStrings.bgGrey]
-    
-    inline def bgMagenta: typings.chalk.chalkStrings.bgMagenta = "bgMagenta".asInstanceOf[typings.chalk.chalkStrings.bgMagenta]
-    
-    inline def bgMagentaBright: typings.chalk.chalkStrings.bgMagentaBright = "bgMagentaBright".asInstanceOf[typings.chalk.chalkStrings.bgMagentaBright]
-    
-    inline def bgRed: typings.chalk.chalkStrings.bgRed = "bgRed".asInstanceOf[typings.chalk.chalkStrings.bgRed]
-    
-    inline def bgRedBright: typings.chalk.chalkStrings.bgRedBright = "bgRedBright".asInstanceOf[typings.chalk.chalkStrings.bgRedBright]
-    
-    inline def bgWhite: typings.chalk.chalkStrings.bgWhite = "bgWhite".asInstanceOf[typings.chalk.chalkStrings.bgWhite]
-    
-    inline def bgWhiteBright: typings.chalk.chalkStrings.bgWhiteBright = "bgWhiteBright".asInstanceOf[typings.chalk.chalkStrings.bgWhiteBright]
-    
-    inline def bgYellow: typings.chalk.chalkStrings.bgYellow = "bgYellow".asInstanceOf[typings.chalk.chalkStrings.bgYellow]
-    
-    inline def bgYellowBright: typings.chalk.chalkStrings.bgYellowBright = "bgYellowBright".asInstanceOf[typings.chalk.chalkStrings.bgYellowBright]
-  }
+  type BackgroundColor = BackgroundColorName
   
   @js.native
   trait ChalkInstance extends StObject {
@@ -318,215 +296,11 @@ object mod extends Shortcut {
     val yellowBright: this.type = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.chalk.chalkStrings.black
-    - typings.chalk.chalkStrings.red
-    - typings.chalk.chalkStrings.green
-    - typings.chalk.chalkStrings.yellow
-    - typings.chalk.chalkStrings.blue
-    - typings.chalk.chalkStrings.magenta
-    - typings.chalk.chalkStrings.cyan
-    - typings.chalk.chalkStrings.white
-    - typings.chalk.chalkStrings.gray
-    - typings.chalk.chalkStrings.grey
-    - typings.chalk.chalkStrings.blackBright
-    - typings.chalk.chalkStrings.redBright
-    - typings.chalk.chalkStrings.greenBright
-    - typings.chalk.chalkStrings.yellowBright
-    - typings.chalk.chalkStrings.blueBright
-    - typings.chalk.chalkStrings.magentaBright
-    - typings.chalk.chalkStrings.cyanBright
-    - typings.chalk.chalkStrings.whiteBright
-    - typings.chalk.chalkStrings.bgBlack
-    - typings.chalk.chalkStrings.bgRed
-    - typings.chalk.chalkStrings.bgGreen
-    - typings.chalk.chalkStrings.bgYellow
-    - typings.chalk.chalkStrings.bgBlue
-    - typings.chalk.chalkStrings.bgMagenta
-    - typings.chalk.chalkStrings.bgCyan
-    - typings.chalk.chalkStrings.bgWhite
-    - typings.chalk.chalkStrings.bgGray
-    - typings.chalk.chalkStrings.bgGrey
-    - typings.chalk.chalkStrings.bgBlackBright
-    - typings.chalk.chalkStrings.bgRedBright
-    - typings.chalk.chalkStrings.bgGreenBright
-    - typings.chalk.chalkStrings.bgYellowBright
-    - typings.chalk.chalkStrings.bgBlueBright
-    - typings.chalk.chalkStrings.bgMagentaBright
-    - typings.chalk.chalkStrings.bgCyanBright
-    - typings.chalk.chalkStrings.bgWhiteBright
-  */
-  trait Color extends StObject
-  object Color {
-    
-    inline def bgBlack: typings.chalk.chalkStrings.bgBlack = "bgBlack".asInstanceOf[typings.chalk.chalkStrings.bgBlack]
-    
-    inline def bgBlackBright: typings.chalk.chalkStrings.bgBlackBright = "bgBlackBright".asInstanceOf[typings.chalk.chalkStrings.bgBlackBright]
-    
-    inline def bgBlue: typings.chalk.chalkStrings.bgBlue = "bgBlue".asInstanceOf[typings.chalk.chalkStrings.bgBlue]
-    
-    inline def bgBlueBright: typings.chalk.chalkStrings.bgBlueBright = "bgBlueBright".asInstanceOf[typings.chalk.chalkStrings.bgBlueBright]
-    
-    inline def bgCyan: typings.chalk.chalkStrings.bgCyan = "bgCyan".asInstanceOf[typings.chalk.chalkStrings.bgCyan]
-    
-    inline def bgCyanBright: typings.chalk.chalkStrings.bgCyanBright = "bgCyanBright".asInstanceOf[typings.chalk.chalkStrings.bgCyanBright]
-    
-    inline def bgGray: typings.chalk.chalkStrings.bgGray = "bgGray".asInstanceOf[typings.chalk.chalkStrings.bgGray]
-    
-    inline def bgGreen: typings.chalk.chalkStrings.bgGreen = "bgGreen".asInstanceOf[typings.chalk.chalkStrings.bgGreen]
-    
-    inline def bgGreenBright: typings.chalk.chalkStrings.bgGreenBright = "bgGreenBright".asInstanceOf[typings.chalk.chalkStrings.bgGreenBright]
-    
-    inline def bgGrey: typings.chalk.chalkStrings.bgGrey = "bgGrey".asInstanceOf[typings.chalk.chalkStrings.bgGrey]
-    
-    inline def bgMagenta: typings.chalk.chalkStrings.bgMagenta = "bgMagenta".asInstanceOf[typings.chalk.chalkStrings.bgMagenta]
-    
-    inline def bgMagentaBright: typings.chalk.chalkStrings.bgMagentaBright = "bgMagentaBright".asInstanceOf[typings.chalk.chalkStrings.bgMagentaBright]
-    
-    inline def bgRed: typings.chalk.chalkStrings.bgRed = "bgRed".asInstanceOf[typings.chalk.chalkStrings.bgRed]
-    
-    inline def bgRedBright: typings.chalk.chalkStrings.bgRedBright = "bgRedBright".asInstanceOf[typings.chalk.chalkStrings.bgRedBright]
-    
-    inline def bgWhite: typings.chalk.chalkStrings.bgWhite = "bgWhite".asInstanceOf[typings.chalk.chalkStrings.bgWhite]
-    
-    inline def bgWhiteBright: typings.chalk.chalkStrings.bgWhiteBright = "bgWhiteBright".asInstanceOf[typings.chalk.chalkStrings.bgWhiteBright]
-    
-    inline def bgYellow: typings.chalk.chalkStrings.bgYellow = "bgYellow".asInstanceOf[typings.chalk.chalkStrings.bgYellow]
-    
-    inline def bgYellowBright: typings.chalk.chalkStrings.bgYellowBright = "bgYellowBright".asInstanceOf[typings.chalk.chalkStrings.bgYellowBright]
-    
-    inline def black: typings.chalk.chalkStrings.black = "black".asInstanceOf[typings.chalk.chalkStrings.black]
-    
-    inline def blackBright: typings.chalk.chalkStrings.blackBright = "blackBright".asInstanceOf[typings.chalk.chalkStrings.blackBright]
-    
-    inline def blue: typings.chalk.chalkStrings.blue = "blue".asInstanceOf[typings.chalk.chalkStrings.blue]
-    
-    inline def blueBright: typings.chalk.chalkStrings.blueBright = "blueBright".asInstanceOf[typings.chalk.chalkStrings.blueBright]
-    
-    inline def cyan: typings.chalk.chalkStrings.cyan = "cyan".asInstanceOf[typings.chalk.chalkStrings.cyan]
-    
-    inline def cyanBright: typings.chalk.chalkStrings.cyanBright = "cyanBright".asInstanceOf[typings.chalk.chalkStrings.cyanBright]
-    
-    inline def gray: typings.chalk.chalkStrings.gray = "gray".asInstanceOf[typings.chalk.chalkStrings.gray]
-    
-    inline def green: typings.chalk.chalkStrings.green = "green".asInstanceOf[typings.chalk.chalkStrings.green]
-    
-    inline def greenBright: typings.chalk.chalkStrings.greenBright = "greenBright".asInstanceOf[typings.chalk.chalkStrings.greenBright]
-    
-    inline def grey: typings.chalk.chalkStrings.grey = "grey".asInstanceOf[typings.chalk.chalkStrings.grey]
-    
-    inline def magenta: typings.chalk.chalkStrings.magenta = "magenta".asInstanceOf[typings.chalk.chalkStrings.magenta]
-    
-    inline def magentaBright: typings.chalk.chalkStrings.magentaBright = "magentaBright".asInstanceOf[typings.chalk.chalkStrings.magentaBright]
-    
-    inline def red: typings.chalk.chalkStrings.red = "red".asInstanceOf[typings.chalk.chalkStrings.red]
-    
-    inline def redBright: typings.chalk.chalkStrings.redBright = "redBright".asInstanceOf[typings.chalk.chalkStrings.redBright]
-    
-    inline def white: typings.chalk.chalkStrings.white = "white".asInstanceOf[typings.chalk.chalkStrings.white]
-    
-    inline def whiteBright: typings.chalk.chalkStrings.whiteBright = "whiteBright".asInstanceOf[typings.chalk.chalkStrings.whiteBright]
-    
-    inline def yellow: typings.chalk.chalkStrings.yellow = "yellow".asInstanceOf[typings.chalk.chalkStrings.yellow]
-    
-    inline def yellowBright: typings.chalk.chalkStrings.yellowBright = "yellowBright".asInstanceOf[typings.chalk.chalkStrings.yellowBright]
-  }
+  type Color = ColorName
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.chalk.chalkStrings.black
-    - typings.chalk.chalkStrings.red
-    - typings.chalk.chalkStrings.green
-    - typings.chalk.chalkStrings.yellow
-    - typings.chalk.chalkStrings.blue
-    - typings.chalk.chalkStrings.magenta
-    - typings.chalk.chalkStrings.cyan
-    - typings.chalk.chalkStrings.white
-    - typings.chalk.chalkStrings.gray
-    - typings.chalk.chalkStrings.grey
-    - typings.chalk.chalkStrings.blackBright
-    - typings.chalk.chalkStrings.redBright
-    - typings.chalk.chalkStrings.greenBright
-    - typings.chalk.chalkStrings.yellowBright
-    - typings.chalk.chalkStrings.blueBright
-    - typings.chalk.chalkStrings.magentaBright
-    - typings.chalk.chalkStrings.cyanBright
-    - typings.chalk.chalkStrings.whiteBright
-  */
-  trait ForegroundColor extends StObject
-  object ForegroundColor {
-    
-    inline def black: typings.chalk.chalkStrings.black = "black".asInstanceOf[typings.chalk.chalkStrings.black]
-    
-    inline def blackBright: typings.chalk.chalkStrings.blackBright = "blackBright".asInstanceOf[typings.chalk.chalkStrings.blackBright]
-    
-    inline def blue: typings.chalk.chalkStrings.blue = "blue".asInstanceOf[typings.chalk.chalkStrings.blue]
-    
-    inline def blueBright: typings.chalk.chalkStrings.blueBright = "blueBright".asInstanceOf[typings.chalk.chalkStrings.blueBright]
-    
-    inline def cyan: typings.chalk.chalkStrings.cyan = "cyan".asInstanceOf[typings.chalk.chalkStrings.cyan]
-    
-    inline def cyanBright: typings.chalk.chalkStrings.cyanBright = "cyanBright".asInstanceOf[typings.chalk.chalkStrings.cyanBright]
-    
-    inline def gray: typings.chalk.chalkStrings.gray = "gray".asInstanceOf[typings.chalk.chalkStrings.gray]
-    
-    inline def green: typings.chalk.chalkStrings.green = "green".asInstanceOf[typings.chalk.chalkStrings.green]
-    
-    inline def greenBright: typings.chalk.chalkStrings.greenBright = "greenBright".asInstanceOf[typings.chalk.chalkStrings.greenBright]
-    
-    inline def grey: typings.chalk.chalkStrings.grey = "grey".asInstanceOf[typings.chalk.chalkStrings.grey]
-    
-    inline def magenta: typings.chalk.chalkStrings.magenta = "magenta".asInstanceOf[typings.chalk.chalkStrings.magenta]
-    
-    inline def magentaBright: typings.chalk.chalkStrings.magentaBright = "magentaBright".asInstanceOf[typings.chalk.chalkStrings.magentaBright]
-    
-    inline def red: typings.chalk.chalkStrings.red = "red".asInstanceOf[typings.chalk.chalkStrings.red]
-    
-    inline def redBright: typings.chalk.chalkStrings.redBright = "redBright".asInstanceOf[typings.chalk.chalkStrings.redBright]
-    
-    inline def white: typings.chalk.chalkStrings.white = "white".asInstanceOf[typings.chalk.chalkStrings.white]
-    
-    inline def whiteBright: typings.chalk.chalkStrings.whiteBright = "whiteBright".asInstanceOf[typings.chalk.chalkStrings.whiteBright]
-    
-    inline def yellow: typings.chalk.chalkStrings.yellow = "yellow".asInstanceOf[typings.chalk.chalkStrings.yellow]
-    
-    inline def yellowBright: typings.chalk.chalkStrings.yellowBright = "yellowBright".asInstanceOf[typings.chalk.chalkStrings.yellowBright]
-  }
+  type ForegroundColor = ForegroundColorName
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.chalk.chalkStrings.reset
-    - typings.chalk.chalkStrings.bold
-    - typings.chalk.chalkStrings.dim
-    - typings.chalk.chalkStrings.italic
-    - typings.chalk.chalkStrings.underline
-    - typings.chalk.chalkStrings.overline
-    - typings.chalk.chalkStrings.inverse
-    - typings.chalk.chalkStrings.hidden
-    - typings.chalk.chalkStrings.strikethrough
-    - typings.chalk.chalkStrings.visible
-  */
-  trait Modifiers extends StObject
-  object Modifiers {
-    
-    inline def bold: typings.chalk.chalkStrings.bold = "bold".asInstanceOf[typings.chalk.chalkStrings.bold]
-    
-    inline def dim: typings.chalk.chalkStrings.dim = "dim".asInstanceOf[typings.chalk.chalkStrings.dim]
-    
-    inline def hidden: typings.chalk.chalkStrings.hidden = "hidden".asInstanceOf[typings.chalk.chalkStrings.hidden]
-    
-    inline def inverse: typings.chalk.chalkStrings.inverse = "inverse".asInstanceOf[typings.chalk.chalkStrings.inverse]
-    
-    inline def italic: typings.chalk.chalkStrings.italic = "italic".asInstanceOf[typings.chalk.chalkStrings.italic]
-    
-    inline def overline: typings.chalk.chalkStrings.overline = "overline".asInstanceOf[typings.chalk.chalkStrings.overline]
-    
-    inline def reset: typings.chalk.chalkStrings.reset = "reset".asInstanceOf[typings.chalk.chalkStrings.reset]
-    
-    inline def strikethrough: typings.chalk.chalkStrings.strikethrough = "strikethrough".asInstanceOf[typings.chalk.chalkStrings.strikethrough]
-    
-    inline def underline: typings.chalk.chalkStrings.underline = "underline".asInstanceOf[typings.chalk.chalkStrings.underline]
-    
-    inline def visible: typings.chalk.chalkStrings.visible = "visible".asInstanceOf[typings.chalk.chalkStrings.visible]
-  }
+  type Modifiers_ = ModifierName
   
   trait Options extends StObject {
     

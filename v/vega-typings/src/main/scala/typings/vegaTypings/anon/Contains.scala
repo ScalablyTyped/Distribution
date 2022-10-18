@@ -1,7 +1,7 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.autosizeMod.AutoSize
-import typings.vegaTypings.autosizeMod.AutoSizeType
+import typings.vegaTypings.typesSpecAutosizeMod.AutoSize
+import typings.vegaTypings.typesSpecAutosizeMod.AutoSizeType
 import typings.vegaTypings.vegaTypingsStrings.content
 import typings.vegaTypings.vegaTypingsStrings.padding
 import org.scalablytyped.runtime.StObject

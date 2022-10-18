@@ -7,9 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/common/http", "HttpResponseBase")
+/* note: abstract class */ @JSImport("@angular/common/http", "HttpResponseBase")
 @js.native
-abstract class HttpResponseBase protected () extends StObject {
+open class HttpResponseBase protected () extends StObject {
   /**
     * Super-constructor for all responses.
     *

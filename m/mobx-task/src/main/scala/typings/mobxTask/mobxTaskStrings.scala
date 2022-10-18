@@ -1,7 +1,7 @@
 package typings.mobxTask
 
-import typings.mobxTask.taskGroupMod.QueryableMethods
-import typings.mobxTask.taskMod.TaskStatus
+import typings.mobxTask.libTaskGroupMod.QueryableMethods
+import typings.mobxTask.libTaskMod.TaskStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

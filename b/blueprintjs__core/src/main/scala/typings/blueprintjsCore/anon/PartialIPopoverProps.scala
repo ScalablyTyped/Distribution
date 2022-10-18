@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.anon
 
-import typings.blueprintjsCore.popoverMod.PopoverInteractionKind
-import typings.blueprintjsCore.popoverSharedPropsMod.PopoverPosition
+import typings.blueprintjsCore.libEsmComponentsPopoverPopoverMod.PopoverInteractionKind
+import typings.blueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition
 import typings.popperJs.mod.Boundary
 import typings.popperJs.mod.Modifiers
 import typings.popperJs.mod.Placement
@@ -104,7 +104,7 @@ trait PartialIPopoverProps extends StObject {
   var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
   
   var targetTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
   ] = js.undefined
   
   var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -112,7 +112,7 @@ trait PartialIPopoverProps extends StObject {
   var usePortal: js.UndefOr[Boolean] = js.undefined
   
   var wrapperTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
   ] = js.undefined
 }
 object PartialIPopoverProps {
@@ -280,7 +280,9 @@ object PartialIPopoverProps {
     
     inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
     
-    inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
+    inline def setTargetTagName(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+    ): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
     
     inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
     
@@ -294,7 +296,9 @@ object PartialIPopoverProps {
     
     inline def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
     
-    inline def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
+    inline def setWrapperTagName(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+    ): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
     
     inline def setWrapperTagNameUndefined: Self = StObject.set(x, "wrapperTagName", js.undefined)
   }

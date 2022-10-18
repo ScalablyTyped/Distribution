@@ -1,9 +1,9 @@
 package typings.fastify
 
-import typings.fastify.contentTypeParserMod.ConstructorAction
-import typings.fastify.contentTypeParserMod.ProtoAction
-import typings.fastify.requestMod.HTTPRequestPart
-import typings.fastify.utilsMod.HTTPMethods
+import typings.fastify.typesContentTypeParserMod.ConstructorAction
+import typings.fastify.typesContentTypeParserMod.ProtoAction
+import typings.fastify.typesRequestMod.HTTPRequestPart
+import typings.fastify.typesUtilsMod.HTTPMethods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,10 +115,6 @@ object fastifyStrings {
   @js.native
   sealed trait both extends StObject
   inline def both: both = "both".asInstanceOf[both]
-  
-  @js.native
-  sealed trait buffer extends StObject
-  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
   sealed trait constraints extends StObject
@@ -244,10 +240,6 @@ object fastifyStrings {
   @js.native
   sealed trait slash extends StObject
   inline def slash: slash = "slash".asInstanceOf[slash]
-  
-  @js.native
-  sealed trait string extends StObject
-  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait url extends StObject

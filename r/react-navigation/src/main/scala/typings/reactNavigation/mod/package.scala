@@ -15,8 +15,7 @@ import typings.reactNavigation.anon.GetScreen
 import typings.reactNavigation.anon.NavigationOptions
 import typings.reactNavigation.anon.NavigationOptionsOptions
 import typings.reactNavigation.anon.OnRef
-import typings.reactNavigation.anon.Path
-import typings.reactNavigation.anon.Router
+import typings.reactNavigation.anon.Params
 import typings.reactNavigation.anon.Screen
 import typings.reactNavigation.anon.TypeofStatusBar
 import typings.reactNavigation.anon.TypeofTextInput
@@ -25,6 +24,7 @@ import typings.reactNavigation.anon.`0`
 import typings.reactNavigation.anon.`2`
 import typings.reactNavigation.anon.`3`
 import typings.reactNavigation.anon.`4`
+import typings.reactNavigation.anon.`5`
 import typings.reactNavigation.mod.^
 import typings.reactNavigation.reactNavigationStrings.isFocused
 import typings.reactNavigation.reactNavigationStrings.isLandscape
@@ -118,23 +118,21 @@ inline def withNavigationFocus[P /* <: NavigationFocusInjectedProps[NavigationPa
 (Omit[
   P, 
   /* keyof react-navigation.react-navigation.NavigationFocusInjectedProps<react-navigation.react-navigation.NavigationParams> */ isFocused | navigation
-]) & (`3`[T, P])] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNavigationFocus")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+]) & (`4`[T, P])] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNavigationFocus")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
 (Omit[
   P, 
   /* keyof react-navigation.react-navigation.NavigationFocusInjectedProps<react-navigation.react-navigation.NavigationParams> */ isFocused | navigation
-]) & (`3`[T, P])]]
+]) & (`4`[T, P])]]
 
-inline def withNavigationFocus_TP[T, P](Component: ComponentType[T & NavigationFocusInjectedProps[P]]): ComponentType[T & (`4`[T, P])] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNavigationFocus")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[T & (`4`[T, P])]]
+inline def withNavigationFocus_TP[T, P](Component: ComponentType[T & NavigationFocusInjectedProps[P]]): ComponentType[T & (`5`[T, P])] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNavigationFocus")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[T & (`5`[T, P])]]
 
-inline def withNavigation_TP[T, P](Component: ComponentType[T & NavigationInjectedProps[P]]): ComponentType[T & (`2`[T, P])] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNavigation")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[T & (`2`[T, P])]]
+inline def withNavigation_TP[T, P](Component: ComponentType[T & NavigationInjectedProps[P]]): ComponentType[T & (`3`[T, P])] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNavigation")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[T & (`3`[T, P])]]
 
 inline def withOrientation[P /* <: NavigationOrientationInjectedProps */](Component: ComponentType[P]): ComponentType[Omit[P, isLandscape]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withOrientation")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[P, isLandscape]]]
 
 type AnimatedValue = Any
 
 type CreateNavigatorConfig[NavigatorConfig, RouterConfig, Options, NavigationScreenPropType] = NavigatorConfig & RouterConfig & (DefaultNavigationOptions[Options, NavigationScreenPropType])
-
-type InferProps[T /* <: ComponentType[Any] */] = Any
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactNavigation.mod.NavigationInitAction
@@ -152,17 +150,17 @@ type NavigationDispatch = js.Function1[/* action */ NavigationAction, Boolean]
 
 type NavigationEventCallback = js.Function1[/* payload */ NavigationEventPayload, Unit]
 
-type NavigationNavigator[Options, NavigationPropType] = (ComponentType[NavigationNavigatorProps[Options, js.Object, Any]]) & (Router[Options, NavigationPropType])
+type NavigationNavigator[Options, NavigationPropType] = (ComponentType[NavigationNavigatorProps[Options, js.Object, Any]]) & (NavigationOptions[Options, NavigationPropType])
 
 type NavigationParams = StringDictionary[Any]
 
 type NavigationPathsConfig = StringDictionary[String]
 
-type NavigationRouteConfig[Options, NavigationScreenPropType, ScreenProps] = (NavigationComponent[Options, NavigationScreenPropType]) | ((Screen[Options, NavigationScreenPropType]) & (Path[Options, NavigationScreenPropType, ScreenProps])) | ((GetScreen[Options, NavigationScreenPropType]) & (Path[Options, NavigationScreenPropType, ScreenProps]))
+type NavigationRouteConfig[Options, NavigationScreenPropType, ScreenProps] = (NavigationComponent[Options, NavigationScreenPropType]) | ((Screen[Options, NavigationScreenPropType]) & (Params[Options, NavigationScreenPropType, ScreenProps])) | ((GetScreen[Options, NavigationScreenPropType]) & (Params[Options, NavigationScreenPropType, ScreenProps]))
 
 type NavigationRouteConfigMap[Options, NavigationScreenPropType, ScreenProps] = StringDictionary[NavigationRouteConfig[Options, NavigationScreenPropType, ScreenProps]]
 
-type NavigationScreenComponent[Options, NavigationScreenPropType] = ComponentType[Any] & (NavigationOptions[Options, NavigationScreenPropType])
+type NavigationScreenComponent[Options, NavigationScreenPropType] = ComponentType[Any] & (`0`[Options, NavigationScreenPropType])
 
 type NavigationScreenConfig[Options, NavigationScreenPropType, ScreenProps] = Options | (js.Function1[
 /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps]) & NavigationOptionsOptions[Options], 
@@ -176,7 +174,7 @@ Options]
 
 type NavigationSwitchAction = NavigationJumpToAction
 
-type NavigationSwitchScreenComponent[Params, ScreenProps] = (ComponentType[NavigationSwitchScreenProps[Params, ScreenProps]]) & (`0`[Params, ScreenProps])
+type NavigationSwitchScreenComponent[Params, ScreenProps] = (ComponentType[NavigationSwitchScreenProps[Params, ScreenProps]]) & (`2`[Params, ScreenProps])
 
 type NavigationView[Options, State, ScreenProps] = ComponentType[
 ((Descriptors[Options, ScreenProps]) & NavigationInjectedProps[NavigationParams]) | Any]

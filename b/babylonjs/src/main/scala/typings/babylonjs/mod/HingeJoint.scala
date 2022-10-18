@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.physicsJointMod.PhysicsJointData
+import typings.babylonjs.physicsPhysicsJointMod.PhysicsJointData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "HingeJoint")
 @js.native
 open class HingeJoint protected ()
-  extends typings.babylonjs.legacyMod.HingeJoint {
+  extends typings.babylonjs.legacyLegacyMod.HingeJoint {
   /**
     * Initializes the Hinge-Joint
     * @param jointData The joint data for the Hinge-Joint

@@ -1,10 +1,8 @@
 package typings.jss.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.csstype.mod.Properties
 import typings.jss.anon.PartialJssOptions
-import typings.jss.anon.Theme
 import typings.jss.jssBooleans.`false`
 import typings.jss.jssStrings.Exclamationmarkimportant
 import typings.jss.mod.^
@@ -38,20 +36,15 @@ type Classes[Name /* <: String | Double | js.Symbol */] = Record[Name, String]
 
 type CreateGenerateId_ = js.Function1[/* options */ js.UndefOr[CreateGenerateIdOptions], GenerateId]
 
-type Func[P, T, R] = js.Function1[(/* data */ P & Theme[T]) | (/* data */ P), R]
-
 type GenerateId = js.Function2[/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]], String]
 
 type InsertionPoint = String | HTMLElement | Comment
 
-type JssStyle[Props, Theme] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof jss.jss.NormalCssProperties ]: jss.jss.NormalCssValues<K> | any | any | jss.jss.MinimalObservable<jss.jss.NormalCssValues<K> | any | undefined>}
-  */ typings.jss.jssStrings.JssStyle & TopLevel[Any]) | (StringDictionary[JssValue | Any | (MinimalObservable[js.UndefOr[JssValue | Any]])])
+type JssStyle[Props, Theme] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof jss.jss.NormalCssProperties ]: jss.jss.NormalCssValues<K> | any | jss.jss.Func<Props, Theme, jss.jss.NormalCssValues<K> | any | undefined> | jss.jss.MinimalObservable<jss.jss.NormalCssValues<K> | any | undefined>} */ js.Any) | (StringDictionary[
+JssValue | Any | (Func[Props, Theme, js.UndefOr[JssValue | Any]]) | (MinimalObservable[js.UndefOr[JssValue | Any]])])
 
 type JssValue = String | (Double & js.Object) | (js.Array[String | Double | (js.Array[String | Double]) | Exclamationmarkimportant]) | Null | `false`
 
 type Keyframes[Name /* <: String */] = Record[Name, String]
 
 type NormalCssProperties = Properties[String | Double, String]
-
-type NormalCssValues[K] = JssValue | (/* import warning: importer.ImportType#apply Failed type conversion: jss.jss.NormalCssProperties[K] */ js.Any)

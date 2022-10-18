@@ -1,5 +1,6 @@
 package typings.fsCson
 
+import typings.node.NodeJS.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,31 +20,14 @@ object mod {
   inline def updateFile(
     filePath: String,
     updater: js.Function1[/* data */ Any, Any],
-    done: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ]
+    done: js.Function1[/* err */ ErrnoException, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFile")(filePath.asInstanceOf[js.Any], updater.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def updateFileSync(filePath: String, updater: js.Function1[/* data */ Any, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFileSync")(filePath.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def writeFile(
-    filePath: String,
-    data: Any,
-    done: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeFile(filePath: String, data: Any, done: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def writeFileSafe(
-    filePath: String,
-    data: Any,
-    done: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSafe")(filePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeFileSafe(filePath: String, data: Any, done: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSafe")(filePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def writeFileSafeSync(filePath: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSafeSync")(filePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

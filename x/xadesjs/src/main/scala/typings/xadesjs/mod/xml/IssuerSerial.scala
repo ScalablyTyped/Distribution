@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.IssuerSerial")
 @js.native
 open class IssuerSerial ()
-  extends typings.xadesjs.typesXmlMod.IssuerSerial {
+  extends typings.xadesjs.buildTypesXmlMod.IssuerSerial {
   def this(properties: js.Object) = this()
 }

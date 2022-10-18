@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "StringDictionary")
 @js.native
 open class StringDictionary[T] ()
-  extends typings.babylonjs.legacyMod.StringDictionary[T]
+  extends typings.babylonjs.legacyLegacyMod.StringDictionary[T]

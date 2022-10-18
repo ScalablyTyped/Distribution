@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param owner - The owner of this instance.
   */
-open class Think[T /* <: typings.yuka.gameEntityMod.GameEntity */] ()
+open class Think[T /* <: typings.yuka.srcCoreGameEntityMod.GameEntity */] ()
   extends typings.yuka.mod.Think[T] {
   def this(owner: T) = this()
 }

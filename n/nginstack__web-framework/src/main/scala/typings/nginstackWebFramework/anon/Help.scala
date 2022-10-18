@@ -1,6 +1,6 @@
 package typings.nginstackWebFramework.anon
 
-import typings.nginstackWebFramework.processMod.^
+import typings.nginstackWebFramework.libProcessProcessMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

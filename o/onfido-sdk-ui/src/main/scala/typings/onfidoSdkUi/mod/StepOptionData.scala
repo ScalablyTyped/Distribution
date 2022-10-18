@@ -19,7 +19,9 @@ trait StepOptionData extends StObject {
   
   var first_name: js.UndefOr[String] = js.undefined
   
-  var getPersonalData: GetPersonalDataFunc
+  def getPersonalData(): Record[String, Any]
+  @JSName("getPersonalData")
+  var getPersonalData_Original: GetPersonalDataFunc
   
   var last_name: js.UndefOr[String] = js.undefined
   

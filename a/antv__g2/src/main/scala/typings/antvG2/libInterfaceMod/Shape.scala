@@ -1,9 +1,9 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvG2.dependentsMod.Coordinate
-import typings.antvGBase.interfacesMod.IGroup
-import typings.antvGBase.interfacesMod.IShape
-import typings.antvGBase.typesMod.PathCommand
+import typings.antvG2.libDependentsMod.Coordinate
+import typings.antvGBase.libInterfacesMod.IGroup
+import typings.antvGBase.libInterfacesMod.IShape
+import typings.antvGBase.libTypesMod.PathCommand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

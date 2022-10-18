@@ -1,8 +1,8 @@
 package typings.antd.anon
 
-import typings.antd.configProviderSizeContextMod.SizeType
-import typings.antd.motionMod.SelectCommonPlacement
-import typings.antd.statusUtilsMod.InputStatus
+import typings.antd.libConfigProviderSizeContextMod.SizeType
+import typings.antd.libUtilMotionMod.SelectCommonPlacement
+import typings.antd.libUtilStatusUtilsMod.InputStatus
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

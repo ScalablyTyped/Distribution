@@ -5,7 +5,6 @@ import typings.babelCore.mod.MatchPattern
 import typings.babelCore.mod.PluginItem
 import typings.customizeCra.anon.Dest
 import typings.customizeCra.anon.RequiredRuleSetRule
-import typings.customizeCra.coreMod.OverrideFunc
 import typings.customizeCra.customizeCraBooleans.`false`
 import typings.customizeCra.customizeCraInts.`0`
 import typings.customizeCra.customizeCraStrings.`errors-only`
@@ -16,6 +15,7 @@ import typings.customizeCra.customizeCraStrings.none
 import typings.customizeCra.customizeCraStrings.normal
 import typings.customizeCra.customizeCraStrings.summary
 import typings.customizeCra.customizeCraStrings.verbose
+import typings.customizeCra.srcCoreMod.OverrideFunc
 import typings.std.Record
 import typings.webpack.mod.Configuration
 import typings.webpack.mod.ExternalItem

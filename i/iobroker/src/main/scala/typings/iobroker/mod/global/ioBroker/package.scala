@@ -18,6 +18,7 @@ import typings.iobroker.objectsMod.global.ioBroker.Object
 import typings.iobroker.objectsMod.global.ioBroker.ObjectIdToObjectType
 import typings.iobroker.objectsMod.global.ioBroker.ObjectType
 import typings.iobroker.objectsMod.global.ioBroker.StringOrTranslated
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.std.Exclude
 import typings.std.Record
@@ -30,16 +31,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 type CallbackReturnTypeOf[T /* <: js.Function1[/* repeated */ Any, Any] */] = SecondParameterOf[T]
 
 type ChownFileCallback = js.Function2[
-/* err */ js.UndefOr[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
-], 
+/* err */ js.UndefOr[ErrnoException | Null], 
 /* processed */ js.UndefOr[js.Array[ChownFileResult]], 
 Unit]
 
 type ChownObjectCallback = js.Function2[
-/* err */ js.UndefOr[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
-], 
+/* err */ js.UndefOr[ErrnoException | Null], 
 /* list */ js.UndefOr[js.Array[Object]], 
 Unit]
 
@@ -53,11 +50,7 @@ type Enum = Any
 type EnumList = String | js.Array[String]
 
 /** Special variant of ErrorCallback for methods where Node.js returns an ErrnoException */
-type ErrnoCallback = js.Function1[
-/* err */ js.UndefOr[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
-], 
-Unit]
+type ErrnoCallback = js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]
 
 type ErrorCallback = js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
 
@@ -168,18 +161,14 @@ type ObjectChangeHandler = js.Function2[/* id */ String, /* obj */ js.UndefOr[Ob
 type Plugin = Record[String, Any]
 
 type ReadDirCallback = js.Function2[
-/* err */ js.UndefOr[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
-], 
+/* err */ js.UndefOr[ErrnoException | Null], 
 /* entries */ js.UndefOr[js.Array[ReadDirResult]], 
 Unit]
 
 type ReadDirPromise = js.Promise[NonNullCallbackReturnTypeOf[ReadDirCallback]]
 
 type ReadFileCallback = js.Function3[
-/* err */ js.UndefOr[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
-], 
+/* err */ js.UndefOr[ErrnoException | Null], 
 /* data */ js.UndefOr[Buffer | String], 
 /* mimeType */ js.UndefOr[String], 
 Unit]
@@ -190,13 +179,9 @@ type ReadFilePromise = js.Promise[Data]
 type ReadyHandler = js.Function0[Unit | js.Promise[Unit]]
 
 type RmCallback = js.Function2[
-/* err */ js.UndefOr[
-  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
-], 
+/* err */ js.UndefOr[ErrnoException | Null], 
 /* entries */ js.UndefOr[js.Array[RmResult]], 
 Unit]
-
-type SecondParameterOf[T /* <: js.Function1[/* repeated */ Any, Any] */] = Any
 
 type Session = Any
 

@@ -1,26 +1,26 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.appservicesMod.appservices.AppServiceAction
-import typings.mendixmodelsdk.appservicesMod.appservices.AppServiceActionParameter
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.constantsMod.constants.Constant
-import typings.mendixmodelsdk.datasetsMod.datasets.DataSetColumn
-import typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter
-import typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DocumentTemplateParameter
-import typings.mendixmodelsdk.importmappingsMod.importmappings.ImportMapping
-import typings.mendixmodelsdk.mappingsMod.mappings.ValueMappingElement
-import typings.mendixmodelsdk.microflowsMod.microflows.CreateVariableAction
-import typings.mendixmodelsdk.microflowsMod.microflows.MLModelCallParameterMapping
-import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowBase
-import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterBase
-import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterObject
-import typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling
-import typings.mendixmodelsdk.pagesMod.pages.PageParameter
-import typings.mendixmodelsdk.restMod.rest.RestOperationParameter
-import typings.mendixmodelsdk.structuresMod.aliases.Container
-import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
-import typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter
+import typings.mendixmodelsdk.srcGenAppservicesMod.appservices.AppServiceAction
+import typings.mendixmodelsdk.srcGenAppservicesMod.appservices.AppServiceActionParameter
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenConstantsMod.constants.Constant
+import typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetColumn
+import typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameter
+import typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DocumentTemplateParameter
+import typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportMapping
+import typings.mendixmodelsdk.srcGenMappingsMod.mappings.ValueMappingElement
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.CreateVariableAction
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MLModelCallParameterMapping
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowBase
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterBase
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterObject
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling
+import typings.mendixmodelsdk.srcGenPagesMod.pages.PageParameter
+import typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameter
+import typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedOperation
+import typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedParameter
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,14 +33,14 @@ object datatypes {
   @JSImport("mendixmodelsdk", "datatypes.BinaryType")
   @js.native
   open class BinaryType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.BinaryType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.BinaryType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object BinaryType {
@@ -55,7 +55,7 @@ object datatypes {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -66,7 +66,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -77,7 +77,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -88,7 +88,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -99,7 +99,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -110,7 +110,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -121,7 +121,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -132,7 +132,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -143,7 +143,7 @@ object datatypes {
       *  7.16.0 and higher
       */
     /* static member */
-    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -154,7 +154,7 @@ object datatypes {
       *  9.10.0 to 9.17.0
       */
     /* static member */
-    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -165,7 +165,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -176,7 +176,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -187,7 +187,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -198,7 +198,7 @@ object datatypes {
       *  9.4.0 and higher
       */
     /* static member */
-    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -209,7 +209,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -220,7 +220,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -231,7 +231,7 @@ object datatypes {
       *  7.17.0 and higher
       */
     /* static member */
-    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -242,7 +242,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -253,7 +253,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.BinaryType.structureTypeName")
@@ -264,8 +264,8 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.BinaryType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -274,14 +274,14 @@ object datatypes {
   @JSImport("mendixmodelsdk", "datatypes.BooleanType")
   @js.native
   open class BooleanType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.BooleanType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.BooleanType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object BooleanType {
@@ -296,7 +296,7 @@ object datatypes {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -307,7 +307,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -318,7 +318,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -329,7 +329,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -340,7 +340,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -351,7 +351,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -362,7 +362,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -373,7 +373,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -384,7 +384,7 @@ object datatypes {
       *  7.16.0 and higher
       */
     /* static member */
-    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -395,7 +395,7 @@ object datatypes {
       *  9.10.0 to 9.17.0
       */
     /* static member */
-    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -406,7 +406,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -417,7 +417,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -428,7 +428,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -439,7 +439,7 @@ object datatypes {
       *  9.4.0 and higher
       */
     /* static member */
-    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -450,7 +450,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -461,7 +461,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -472,7 +472,7 @@ object datatypes {
       *  7.17.0 and higher
       */
     /* static member */
-    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -483,7 +483,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -494,7 +494,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.BooleanType.structureTypeName")
@@ -505,8 +505,8 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.BooleanType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -514,17 +514,17 @@ object datatypes {
     *
     * In version 7.9.0: introduced
     */
-  @JSImport("mendixmodelsdk", "datatypes.DataType")
+  /* note: abstract class */ @JSImport("mendixmodelsdk", "datatypes.DataType")
   @js.native
-  abstract class DataType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.DataType {
+  open class DataType protected ()
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.DataType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DataType {
@@ -542,8 +542,8 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.DataType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -552,14 +552,14 @@ object datatypes {
   @JSImport("mendixmodelsdk", "datatypes.DateTimeType")
   @js.native
   open class DateTimeType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.DateTimeType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.DateTimeType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DateTimeType {
@@ -574,7 +574,7 @@ object datatypes {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -585,7 +585,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -596,7 +596,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -607,7 +607,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -618,7 +618,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -629,7 +629,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -640,7 +640,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -651,7 +651,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -662,7 +662,7 @@ object datatypes {
       *  7.16.0 and higher
       */
     /* static member */
-    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -673,7 +673,7 @@ object datatypes {
       *  9.10.0 to 9.17.0
       */
     /* static member */
-    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -684,7 +684,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -695,7 +695,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -706,7 +706,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -717,7 +717,7 @@ object datatypes {
       *  9.4.0 and higher
       */
     /* static member */
-    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -728,7 +728,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -739,7 +739,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -750,7 +750,7 @@ object datatypes {
       *  7.17.0 and higher
       */
     /* static member */
-    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -761,7 +761,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -772,7 +772,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.DateTimeType.structureTypeName")
@@ -783,8 +783,8 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.DateTimeType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -793,14 +793,14 @@ object datatypes {
   @JSImport("mendixmodelsdk", "datatypes.DecimalType")
   @js.native
   open class DecimalType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.DecimalType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.DecimalType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DecimalType {
@@ -815,7 +815,7 @@ object datatypes {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -826,7 +826,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -837,7 +837,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -848,7 +848,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -859,7 +859,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -870,7 +870,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -881,7 +881,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -892,7 +892,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -903,7 +903,7 @@ object datatypes {
       *  7.16.0 and higher
       */
     /* static member */
-    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -914,7 +914,7 @@ object datatypes {
       *  9.10.0 to 9.17.0
       */
     /* static member */
-    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -925,7 +925,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -936,7 +936,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -947,7 +947,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -958,7 +958,7 @@ object datatypes {
       *  9.4.0 and higher
       */
     /* static member */
-    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -969,7 +969,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -980,7 +980,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -991,7 +991,7 @@ object datatypes {
       *  7.17.0 and higher
       */
     /* static member */
-    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -1002,7 +1002,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -1013,7 +1013,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.DecimalType.structureTypeName")
@@ -1024,8 +1024,8 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.DecimalType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -1034,14 +1034,14 @@ object datatypes {
   @JSImport("mendixmodelsdk", "datatypes.EmptyType")
   @js.native
   open class EmptyType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.EmptyType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.EmptyType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object EmptyType {
@@ -1056,7 +1056,7 @@ object datatypes {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1067,7 +1067,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1078,7 +1078,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1089,7 +1089,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1100,7 +1100,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1111,7 +1111,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1122,7 +1122,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1133,7 +1133,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1144,7 +1144,7 @@ object datatypes {
       *  7.16.0 and higher
       */
     /* static member */
-    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1155,7 +1155,7 @@ object datatypes {
       *  9.10.0 to 9.17.0
       */
     /* static member */
-    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1166,7 +1166,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1177,7 +1177,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1188,7 +1188,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1199,7 +1199,7 @@ object datatypes {
       *  9.4.0 and higher
       */
     /* static member */
-    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1210,7 +1210,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1221,7 +1221,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1232,7 +1232,7 @@ object datatypes {
       *  7.17.0 and higher
       */
     /* static member */
-    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1243,7 +1243,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1254,7 +1254,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.EmptyType.structureTypeName")
@@ -1265,24 +1265,24 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.EmptyType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
     * In version 7.9.0: introduced
     */
-  @JSImport("mendixmodelsdk", "datatypes.EntityType")
+  /* note: abstract class */ @JSImport("mendixmodelsdk", "datatypes.EntityType")
   @js.native
-  abstract class EntityType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.EntityType {
+  open class EntityType protected ()
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.EntityType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object EntityType {
@@ -1300,8 +1300,8 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.EntityType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -1310,14 +1310,14 @@ object datatypes {
   @JSImport("mendixmodelsdk", "datatypes.EnumerationType")
   @js.native
   open class EnumerationType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.EnumerationType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.EnumerationType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object EnumerationType {
@@ -1332,7 +1332,7 @@ object datatypes {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1343,7 +1343,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1354,7 +1354,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1365,7 +1365,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1376,7 +1376,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1387,7 +1387,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1398,7 +1398,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1409,7 +1409,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1420,7 +1420,7 @@ object datatypes {
       *  7.16.0 and higher
       */
     /* static member */
-    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1431,7 +1431,7 @@ object datatypes {
       *  9.10.0 to 9.17.0
       */
     /* static member */
-    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1442,7 +1442,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1453,7 +1453,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1464,7 +1464,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1475,7 +1475,7 @@ object datatypes {
       *  9.4.0 and higher
       */
     /* static member */
-    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1486,7 +1486,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1497,7 +1497,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1508,7 +1508,7 @@ object datatypes {
       *  7.17.0 and higher
       */
     /* static member */
-    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1519,7 +1519,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1530,7 +1530,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.EnumerationType.structureTypeName")
@@ -1541,8 +1541,8 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.EnumerationType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -1551,14 +1551,14 @@ object datatypes {
   @JSImport("mendixmodelsdk", "datatypes.FloatType")
   @js.native
   open class FloatType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.FloatType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.FloatType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object FloatType {
@@ -1573,7 +1573,7 @@ object datatypes {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1584,7 +1584,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1595,7 +1595,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1606,7 +1606,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1617,7 +1617,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1628,7 +1628,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1639,7 +1639,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1650,7 +1650,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1661,7 +1661,7 @@ object datatypes {
       *  7.16.0 and higher
       */
     /* static member */
-    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1672,7 +1672,7 @@ object datatypes {
       *  9.10.0 to 9.17.0
       */
     /* static member */
-    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1683,7 +1683,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1694,7 +1694,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1705,7 +1705,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1716,7 +1716,7 @@ object datatypes {
       *  9.4.0 and higher
       */
     /* static member */
-    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1727,7 +1727,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1738,7 +1738,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1749,7 +1749,7 @@ object datatypes {
       *  7.17.0 and higher
       */
     /* static member */
-    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1760,7 +1760,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1771,7 +1771,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.FloatType.structureTypeName")
@@ -1782,8 +1782,8 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.FloatType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -1792,14 +1792,14 @@ object datatypes {
   @JSImport("mendixmodelsdk", "datatypes.IntegerType")
   @js.native
   open class IntegerType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.IntegerType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.IntegerType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object IntegerType {
@@ -1814,7 +1814,7 @@ object datatypes {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1825,7 +1825,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1836,7 +1836,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1847,7 +1847,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1858,7 +1858,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1869,7 +1869,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1880,7 +1880,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1891,7 +1891,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1902,7 +1902,7 @@ object datatypes {
       *  7.16.0 and higher
       */
     /* static member */
-    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1913,7 +1913,7 @@ object datatypes {
       *  9.10.0 to 9.17.0
       */
     /* static member */
-    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1924,7 +1924,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1935,7 +1935,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1946,7 +1946,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1957,7 +1957,7 @@ object datatypes {
       *  9.4.0 and higher
       */
     /* static member */
-    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1968,7 +1968,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1979,7 +1979,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1990,7 +1990,7 @@ object datatypes {
       *  7.17.0 and higher
       */
     /* static member */
-    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -2001,7 +2001,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -2012,7 +2012,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.IntegerType.structureTypeName")
@@ -2023,8 +2023,8 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.IntegerType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -2033,14 +2033,14 @@ object datatypes {
   @JSImport("mendixmodelsdk", "datatypes.ListType")
   @js.native
   open class ListType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.ListType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.ListType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ListType {
@@ -2055,7 +2055,7 @@ object datatypes {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2066,7 +2066,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2077,7 +2077,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2088,7 +2088,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2099,7 +2099,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2110,7 +2110,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2121,7 +2121,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2132,7 +2132,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2143,7 +2143,7 @@ object datatypes {
       *  7.16.0 and higher
       */
     /* static member */
-    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2154,7 +2154,7 @@ object datatypes {
       *  9.10.0 to 9.17.0
       */
     /* static member */
-    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2165,7 +2165,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2176,7 +2176,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2187,7 +2187,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2198,7 +2198,7 @@ object datatypes {
       *  9.4.0 and higher
       */
     /* static member */
-    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2209,7 +2209,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2220,7 +2220,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2231,7 +2231,7 @@ object datatypes {
       *  7.17.0 and higher
       */
     /* static member */
-    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2242,7 +2242,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2253,7 +2253,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.ListType.structureTypeName")
@@ -2264,8 +2264,8 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.ListType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -2274,14 +2274,14 @@ object datatypes {
   @JSImport("mendixmodelsdk", "datatypes.ObjectType")
   @js.native
   open class ObjectType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.ObjectType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.ObjectType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ObjectType {
@@ -2296,7 +2296,7 @@ object datatypes {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2307,7 +2307,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2318,7 +2318,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2329,7 +2329,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2340,7 +2340,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2351,7 +2351,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2362,7 +2362,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2373,7 +2373,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2384,7 +2384,7 @@ object datatypes {
       *  7.16.0 and higher
       */
     /* static member */
-    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2395,7 +2395,7 @@ object datatypes {
       *  9.10.0 to 9.17.0
       */
     /* static member */
-    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2406,7 +2406,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2417,7 +2417,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2428,7 +2428,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2439,7 +2439,7 @@ object datatypes {
       *  9.4.0 and higher
       */
     /* static member */
-    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2450,7 +2450,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2461,7 +2461,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2472,7 +2472,7 @@ object datatypes {
       *  7.17.0 and higher
       */
     /* static member */
-    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2483,7 +2483,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2494,7 +2494,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.ObjectType.structureTypeName")
@@ -2505,8 +2505,8 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.ObjectType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -2515,14 +2515,14 @@ object datatypes {
   @JSImport("mendixmodelsdk", "datatypes.StringType")
   @js.native
   open class StringType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.StringType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.StringType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object StringType {
@@ -2537,7 +2537,7 @@ object datatypes {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2548,7 +2548,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2559,7 +2559,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2570,7 +2570,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2581,7 +2581,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2592,7 +2592,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2603,7 +2603,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2614,7 +2614,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2625,7 +2625,7 @@ object datatypes {
       *  7.16.0 and higher
       */
     /* static member */
-    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2636,7 +2636,7 @@ object datatypes {
       *  9.10.0 to 9.17.0
       */
     /* static member */
-    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2647,7 +2647,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2658,7 +2658,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2669,7 +2669,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2680,7 +2680,7 @@ object datatypes {
       *  9.4.0 and higher
       */
     /* static member */
-    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2691,7 +2691,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2702,7 +2702,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2713,7 +2713,7 @@ object datatypes {
       *  7.17.0 and higher
       */
     /* static member */
-    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2724,7 +2724,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2735,7 +2735,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.StringType.structureTypeName")
@@ -2746,8 +2746,8 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.StringType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -2756,14 +2756,14 @@ object datatypes {
   @JSImport("mendixmodelsdk", "datatypes.UnknownType")
   @js.native
   open class UnknownType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.UnknownType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.UnknownType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object UnknownType {
@@ -2778,7 +2778,7 @@ object datatypes {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2789,7 +2789,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2800,7 +2800,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2811,7 +2811,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2822,7 +2822,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2833,7 +2833,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2844,7 +2844,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2855,7 +2855,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2866,7 +2866,7 @@ object datatypes {
       *  7.16.0 and higher
       */
     /* static member */
-    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2877,7 +2877,7 @@ object datatypes {
       *  9.10.0 to 9.17.0
       */
     /* static member */
-    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2888,7 +2888,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2899,7 +2899,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2910,7 +2910,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2921,7 +2921,7 @@ object datatypes {
       *  9.4.0 and higher
       */
     /* static member */
-    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2932,7 +2932,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2943,7 +2943,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2954,7 +2954,7 @@ object datatypes {
       *  7.17.0 and higher
       */
     /* static member */
-    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2965,7 +2965,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2976,7 +2976,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.UnknownType.structureTypeName")
@@ -2987,8 +2987,8 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.UnknownType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -2997,14 +2997,14 @@ object datatypes {
   @JSImport("mendixmodelsdk", "datatypes.VoidType")
   @js.native
   open class VoidType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datatypes.VoidType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datatypes.VoidType {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object VoidType {
@@ -3019,7 +3019,7 @@ object datatypes {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3030,7 +3030,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3041,7 +3041,7 @@ object datatypes {
       *  7.9.0 to 9.0.1
       */
     /* static member */
-    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3052,7 +3052,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInConstantUnderType(container: Constant): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3063,7 +3063,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3074,7 +3074,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3085,7 +3085,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3096,7 +3096,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3107,7 +3107,7 @@ object datatypes {
       *  7.16.0 and higher
       */
     /* static member */
-    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInImportMappingUnderParameterType(container: ImportMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3118,7 +3118,7 @@ object datatypes {
       *  9.10.0 to 9.17.0
       */
     /* static member */
-    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3129,7 +3129,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3140,7 +3140,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3151,7 +3151,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3162,7 +3162,7 @@ object datatypes {
       *  9.4.0 and higher
       */
     /* static member */
-    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3173,7 +3173,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3184,7 +3184,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3195,7 +3195,7 @@ object datatypes {
       *  7.17.0 and higher
       */
     /* static member */
-    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInRestOperationParameterUnderType(container: RestOperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3206,7 +3206,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -3217,7 +3217,7 @@ object datatypes {
       *  7.9.0 and higher
       */
     /* static member */
-    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    inline def createInValueMappingElementUnderType(container: ValueMappingElement): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.VoidType.structureTypeName")
@@ -3228,7 +3228,7 @@ object datatypes {
     /* static member */
     @JSImport("mendixmodelsdk", "datatypes.VoidType.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
 }

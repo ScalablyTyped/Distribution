@@ -1,7 +1,7 @@
 package typings.redisSearch.anon
 
-import typings.redisSearch.suggetMod.SugGetOptions
-import typings.redisSearch.suggetWITHSCORESMod.SuggestionWithScores
+import typings.redisSearch.distCommandsSuggetMod.SugGetOptions
+import typings.redisSearch.distCommandsSuggetWITHSCORESMod.SuggestionWithScores
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

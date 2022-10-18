@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.SearchBarTypeEnum")
 @js.native
 open class SearchBarTypeEnum protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.SearchBarTypeEnum {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.SearchBarTypeEnum {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object SearchBarTypeEnum {
@@ -20,24 +20,24 @@ object SearchBarTypeEnum {
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SearchBarTypeEnum.AlwaysOpen")
   @js.native
-  def AlwaysOpen: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum = js.native
-  inline def AlwaysOpen_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlwaysOpen")(x.asInstanceOf[js.Any])
+  def AlwaysOpen: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBarTypeEnum = js.native
+  inline def AlwaysOpen_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlwaysOpen")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SearchBarTypeEnum.FoldableClosed")
   @js.native
-  def FoldableClosed: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum = js.native
-  inline def FoldableClosed_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FoldableClosed")(x.asInstanceOf[js.Any])
+  def FoldableClosed: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBarTypeEnum = js.native
+  inline def FoldableClosed_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FoldableClosed")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SearchBarTypeEnum.FoldableOpen")
   @js.native
-  def FoldableOpen: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum = js.native
-  inline def FoldableOpen_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FoldableOpen")(x.asInstanceOf[js.Any])
+  def FoldableOpen: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBarTypeEnum = js.native
+  inline def FoldableOpen_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FoldableOpen")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SearchBarTypeEnum.None")
   @js.native
-  def None: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum = js.native
-  inline def None_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  def None: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBarTypeEnum = js.native
+  inline def None_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
 }

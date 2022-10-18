@@ -40,7 +40,7 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.indexBarIndexBarMod.IndexBarRef
+import typings.antdMobile.esComponentsIndexBarIndexBarMod.IndexBarRef
 import typings.react.mod.Booleanish
 import typings.react.mod.Key
 import typings.react.mod.ReactNode

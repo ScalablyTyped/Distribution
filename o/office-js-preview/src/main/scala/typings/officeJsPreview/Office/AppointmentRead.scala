@@ -75,7 +75,7 @@ trait AppointmentRead
     * @param eventType - The event that should invoke the handler.
     * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
     *                The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -225,7 +225,7 @@ trait AppointmentRead
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
     *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -316,7 +316,7 @@ trait AppointmentRead
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
     *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -425,7 +425,7 @@ trait AppointmentRead
     * - `InvalidAttachmentId`: The attachment identifier does not exist.
     *
     * @param attachmentId - The identifier of the attachment you want to get.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain
@@ -568,7 +568,7 @@ trait AppointmentRead
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                             of type `Office.AsyncResult`.
@@ -660,10 +660,9 @@ trait AppointmentRead
     * If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
     * and should not attempt to return the entire body of the item.
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
-    * Instead, use the `Body.getAsync` method to retrieve the entire body
+    * Instead, use the `Body.getAsync` method to retrieve the entire body.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
-    *
     *
     * @returns
     * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
@@ -714,7 +713,7 @@ trait AppointmentRead
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
@@ -761,12 +760,12 @@ trait AppointmentRead
     *   <tr>
     *     <td>Appointment items</td>
     *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
-    *     <td>IPM.Appointment,IPM.Appointment.Occurrence</td>
+    *     <td>IPM.Appointment, IPM.Appointment.Occurrence</td>
     *   </tr>
     *   <tr>
     *     <td>Message items</td>
     *     <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td>
-    *     <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
+    *     <td>IPM.Note, IPM.Schedule.Meeting.Request, IPM.Schedule.Meeting.Neg, IPM.Schedule.Meeting.Pos, IPM.Schedule.Meeting.Tent, IPM.Schedule.Meeting.Canceled</td>
     *   </tr>
     * </table>
     *
@@ -964,7 +963,7 @@ trait AppointmentRead
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param eventType - The event that should revoke the handler.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.

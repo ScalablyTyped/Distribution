@@ -1,10 +1,9 @@
 package typings.formatjsIntlLocalematcher
 
-import org.scalablytyped.runtime.TopLevel
+import typings.formatjsIntlLocalematcher.abstractResolveLocaleMod.ResolveLocaleResult
 import typings.formatjsIntlLocalematcher.anon.Dictk
 import typings.formatjsIntlLocalematcher.formatjsIntlLocalematcherStrings.`best fit`
 import typings.formatjsIntlLocalematcher.formatjsIntlLocalematcherStrings.lookup
-import typings.formatjsIntlLocalematcher.resolveLocaleMod.ResolveLocaleResult
 import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -19,9 +18,7 @@ object mod {
   
   inline def LookupSupportedLocales(availableLocales: Set[String], requestedLocales: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("LookupSupportedLocales")(availableLocales.asInstanceOf[js.Any], requestedLocales.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def ResolveLocale[K /* <: String */, D /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in K ]: any}
-    */ typings.formatjsIntlLocalematcher.formatjsIntlLocalematcherStrings.ResolveLocale & TopLevel[Any] */](
+  inline def ResolveLocale[K /* <: String */, D /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in K ]: any} */ js.Any */](
     availableLocales: Set[String],
     requestedLocales: js.Array[String],
     options: Dictk,

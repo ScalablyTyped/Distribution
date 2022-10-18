@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +21,7 @@ trait Secret extends StObject {
     * expression: `[\p{Ll}\p{Lo}\p{N}_-]{0,63}` No more than 64 labels can be assigned to a given resource.
     */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSecretmanager.maximMazurokGapiClientSecretmanagerStrings.Secret & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Output only. The resource name of the Secret in the format `projects/ *‍/secrets/ *`. */
@@ -49,9 +46,7 @@ trait Secret extends StObject {
     * AccessSecretVersion.
     */
   var versionAliases: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSecretmanager.maximMazurokGapiClientSecretmanagerStrings.Secret & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object Secret {
@@ -76,9 +71,7 @@ object Secret {
     inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSecretmanager.maximMazurokGapiClientSecretmanagerStrings.Secret & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -106,9 +99,7 @@ object Secret {
     inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     
     inline def setVersionAliases(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSecretmanager.maximMazurokGapiClientSecretmanagerStrings.Secret & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "versionAliases", value.asInstanceOf[js.Any])
     
     inline def setVersionAliasesUndefined: Self = StObject.set(x, "versionAliases", js.undefined)

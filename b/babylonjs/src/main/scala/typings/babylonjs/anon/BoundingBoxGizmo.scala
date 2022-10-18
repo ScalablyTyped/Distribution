@@ -1,9 +1,9 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.boundingBoxGizmoMod.IBoundingBoxGizmo
-import typings.babylonjs.positionGizmoMod.IPositionGizmo
-import typings.babylonjs.rotationGizmoMod.IRotationGizmo
-import typings.babylonjs.scaleGizmoMod.IScaleGizmo
+import typings.babylonjs.gizmosBoundingBoxGizmoMod.IBoundingBoxGizmo
+import typings.babylonjs.gizmosPositionGizmoMod.IPositionGizmo
+import typings.babylonjs.gizmosRotationGizmoMod.IRotationGizmo
+import typings.babylonjs.gizmosScaleGizmoMod.IScaleGizmo
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

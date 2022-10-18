@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the device that caused this trigger to fire. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceConnectionChangeTriggerDetails")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.DeviceConnectionChangeTriggerDetails")
 @js.native
-abstract class DeviceConnectionChangeTriggerDetails ()
+open class DeviceConnectionChangeTriggerDetails ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DeviceConnectionChangeTriggerDetails {
   

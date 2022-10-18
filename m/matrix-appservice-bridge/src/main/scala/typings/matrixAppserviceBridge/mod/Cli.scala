@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.cliMod.CliOpts
+import typings.matrixAppserviceBridge.libComponentsCliMod.CliOpts
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "Cli")
 @js.native
 open class Cli[ConfigType /* <: Record[String, Any] */] protected ()
-  extends typings.matrixAppserviceBridge.cliMod.Cli[ConfigType] {
+  extends typings.matrixAppserviceBridge.libComponentsCliMod.Cli[ConfigType] {
   /**
     * @constructor
     * @param opts CLI options

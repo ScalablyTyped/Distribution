@@ -6,35 +6,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Brand[A /* <: js.Object */] extends StObject {
+  trait `0`[A /* <: js.Object */] extends StObject {
     
     var __brand: /* keyof A */ String
   }
-  object Brand {
+  object `0` {
     
-    inline def apply[A /* <: js.Object */](__brand: /* keyof A */ String): Brand[A] = {
+    inline def apply[A /* <: js.Object */](__brand: /* keyof A */ String): `0`[A] = {
       val __obj = js.Dynamic.literal(__brand = __brand.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Brand[A]]
+      __obj.asInstanceOf[`0`[A]]
     }
     
-    extension [Self <: Brand[?], A /* <: js.Object */](x: Self & Brand[A]) {
+    extension [Self <: `0`[?], A /* <: js.Object */](x: Self & `0`[A]) {
       
       inline def set__brand(value: /* keyof A */ String): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
     }
   }
   
-  trait BrandU[U] extends StObject {
+  trait Brand[U] extends StObject {
     
     var __brand: U
   }
-  object BrandU {
+  object Brand {
     
-    inline def apply[U](__brand: U): BrandU[U] = {
+    inline def apply[U](__brand: U): Brand[U] = {
       val __obj = js.Dynamic.literal(__brand = __brand.asInstanceOf[js.Any])
-      __obj.asInstanceOf[BrandU[U]]
+      __obj.asInstanceOf[Brand[U]]
     }
     
-    extension [Self <: BrandU[?], U](x: Self & BrandU[U]) {
+    extension [Self <: Brand[?], U](x: Self & Brand[U]) {
       
       inline def set__brand(value: U): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
     }

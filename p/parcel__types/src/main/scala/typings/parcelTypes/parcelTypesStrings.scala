@@ -16,10 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object parcelTypesStrings {
   
   @js.native
-  sealed trait PackageJSON extends StObject
-  inline def PackageJSON: PackageJSON = "PackageJSON".asInstanceOf[PackageJSON]
-  
-  @js.native
   sealed trait `arrow-functions`
     extends StObject
        with EnvironmentFeature

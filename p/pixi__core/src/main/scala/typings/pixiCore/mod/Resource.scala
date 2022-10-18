@@ -5,13 +5,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pixi/core", "Resource")
+/* note: abstract class */ @JSImport("@pixi/core", "Resource")
 @js.native
 /**
   * @param width - Width of the resource
   * @param height - Height of the resource
   */
-abstract class Resource () extends StObject {
+open class Resource () extends StObject {
   def this(width: Double) = this()
   def this(width: Double, height: Double) = this()
   def this(width: Unit, height: Double) = this()

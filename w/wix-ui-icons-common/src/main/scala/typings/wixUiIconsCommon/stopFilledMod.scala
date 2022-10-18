@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsStopFilledMod.StopFilledProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stopFilledMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/StopFilled", JSImport.Default)
+  @JSImport("wix-ui-icons-common/StopFilled", JSImport.Default)
   @js.native
   val default: FC[StopFilledProps] = js.native
-  
-  trait StopFilledProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object StopFilledProps {
-    
-    inline def apply(): StopFilledProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StopFilledProps]
-    }
-    
-    extension [Self <: StopFilledProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[StopFilledProps]
   

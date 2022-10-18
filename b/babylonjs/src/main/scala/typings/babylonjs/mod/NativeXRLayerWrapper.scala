@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "NativeXRLayerWrapper")
 @js.native
 open class NativeXRLayerWrapper protected ()
-  extends typings.babylonjs.legacyMod.NativeXRLayerWrapper {
+  extends typings.babylonjs.legacyLegacyMod.NativeXRLayerWrapper {
   def this(layer: XRWebGLLayer) = this()
 }

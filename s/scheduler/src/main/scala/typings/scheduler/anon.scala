@@ -47,26 +47,4 @@ object anon {
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
-  
-  trait Type extends StObject {
-    
-    var `type`: /* import warning: importer.ImportType#apply Failed type conversion: infer BuildType */ js.Any
-  }
-  object Type {
-    
-    inline def apply(
-      `type`: /* import warning: importer.ImportType#apply Failed type conversion: infer BuildType */ js.Any
-    ): Type = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Type]
-    }
-    
-    extension [Self <: Type](x: Self) {
-      
-      inline def setType(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: infer BuildType */ js.Any
-      ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
 }

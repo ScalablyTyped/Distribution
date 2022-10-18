@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("jsforce", "Metadata")
 @js.native
 open class Metadata protected ()
-  extends typings.jsforce.metadataMod.Metadata {
+  extends typings.jsforce.apiMetadataMod.Metadata {
   def this(conn: typings.jsforce.connectionMod.Connection) = this()
 }

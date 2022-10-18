@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BABYLON.WebGPUShaderProcessor")
+/* note: abstract class */ @JSGlobal("BABYLON.WebGPUShaderProcessor")
 @js.native
-abstract class WebGPUShaderProcessor ()
+open class WebGPUShaderProcessor ()
   extends StObject
      with typings.babylonjs.BABYLON.WebGPUShaderProcessor {
   

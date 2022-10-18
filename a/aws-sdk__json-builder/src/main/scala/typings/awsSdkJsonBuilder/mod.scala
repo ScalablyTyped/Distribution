@@ -1,7 +1,7 @@
 package typings.awsSdkJsonBuilder
 
-import typings.awsSdkTypes.utilMod.Decoder
-import typings.awsSdkTypes.utilMod.Encoder
+import typings.awsSdkTypes.distTypesUtilMod.Decoder
+import typings.awsSdkTypes.distTypesUtilMod.Encoder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

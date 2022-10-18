@@ -15,14 +15,14 @@ trait EventSource extends StObject {
   
   var event: String
   
-  var source: `412`
+  var source: IssueType
   
   /** Format: date-time */
   var updated_at: String
 }
 object EventSource {
   
-  inline def apply(created_at: String, event: String, source: `412`, updated_at: String): EventSource = {
+  inline def apply(created_at: String, event: String, source: IssueType, updated_at: String): EventSource = {
     val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSource]
   }
@@ -39,7 +39,7 @@ object EventSource {
     
     inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    inline def setSource(value: `412`): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: IssueType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
   }

@@ -1,13 +1,13 @@
 package typings.mercadopago
 
-import typings.mercadopago.cardsMod.MercadoPagoCard
 import typings.mercadopago.configurationMod.ConfigOptions
 import typings.mercadopago.configurationMod.MercadoPagoConfig
-import typings.mercadopago.customersMod.MercadoPagoCustomer
-import typings.mercadopago.merchantOrdersMod.MercadoPagoMerchantOrder
-import typings.mercadopago.paymentMod.MercadoPagoPayment
-import typings.mercadopago.preapprovalMod.MercadoPagoPreApproval
-import typings.mercadopago.preferencesMod.MercadoPagoPreference
+import typings.mercadopago.resourcesCardsMod.MercadoPagoCard
+import typings.mercadopago.resourcesCustomersMod.MercadoPagoCustomer
+import typings.mercadopago.resourcesMerchantOrdersMod.MercadoPagoMerchantOrder
+import typings.mercadopago.resourcesPaymentMod.MercadoPagoPayment
+import typings.mercadopago.resourcesPreapprovalMod.MercadoPagoPreApproval
+import typings.mercadopago.resourcesPreferencesMod.MercadoPagoPreference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

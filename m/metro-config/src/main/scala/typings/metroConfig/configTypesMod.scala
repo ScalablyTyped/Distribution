@@ -507,7 +507,7 @@ object configTypesMod {
     Any
   ]
   
-  type PostProcessBundleSourcemap = js.Function1[/* args */ Code, Map]
+  type PostProcessBundleSourcemap = js.Function1[/* args */ Map, CodeMap]
   
   trait ResolverConfigT extends StObject {
     
@@ -623,7 +623,7 @@ object configTypesMod {
           ], 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Graph */ /* graph */ Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SerializerOptions */ /* options */ Any, 
-          js.Promise[String | CodeMap]
+          js.Promise[String | Code]
         ]
       ] = js.native
     
@@ -641,7 +641,7 @@ object configTypesMod {
     
     var polyfillModuleNames: js.Array[String] = js.native
     
-    def postProcessBundleSourcemap(args: Code): Map = js.native
+    def postProcessBundleSourcemap(args: Map): CodeMap = js.native
     @JSName("postProcessBundleSourcemap")
     var postProcessBundleSourcemap_Original: PostProcessBundleSourcemap = js.native
     

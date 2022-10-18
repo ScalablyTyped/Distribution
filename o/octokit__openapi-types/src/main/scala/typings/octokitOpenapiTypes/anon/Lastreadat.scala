@@ -6,30 +6,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Lastreadat extends StObject {
   
-  /**
-    * Format: date-time
-    * @description Describes the last point that notifications were checked. Anything updated since this time will not be marked as read. If you omit this parameter, all notifications are marked as read. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. Default: The current timestamp.
-    */
-  var last_read_at: js.UndefOr[String] = js.undefined
+  var id: String
   
-  /** @description Whether the notification has been read. */
-  var read: js.UndefOr[Boolean] = js.undefined
+  var last_read_at: String | Null
+  
+  var reason: String
+  
+  var repository: Blobsurl
+  
+  var subject: Latestcommenturl
+  
+  /** @example https://api.github.com/notifications/threads/2/subscription */
+  var subscription_url: String
+  
+  var unread: Boolean
+  
+  var updated_at: String
+  
+  var url: String
 }
 object Lastreadat {
   
-  inline def apply(): Lastreadat = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    id: String,
+    reason: String,
+    repository: Blobsurl,
+    subject: Latestcommenturl,
+    subscription_url: String,
+    unread: Boolean,
+    updated_at: String,
+    url: String
+  ): Lastreadat = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], subscription_url = subscription_url.asInstanceOf[js.Any], unread = unread.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], last_read_at = null)
     __obj.asInstanceOf[Lastreadat]
   }
   
   extension [Self <: Lastreadat](x: Self) {
     
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
     inline def setLast_read_at(value: String): Self = StObject.set(x, "last_read_at", value.asInstanceOf[js.Any])
     
-    inline def setLast_read_atUndefined: Self = StObject.set(x, "last_read_at", js.undefined)
+    inline def setLast_read_atNull: Self = StObject.set(x, "last_read_at", null)
     
-    inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setRepository(value: Blobsurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    
+    inline def setSubject(value: Latestcommenturl): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    
+    inline def setSubscription_url(value: String): Self = StObject.set(x, "subscription_url", value.asInstanceOf[js.Any])
+    
+    inline def setUnread(value: Boolean): Self = StObject.set(x, "unread", value.asInstanceOf[js.Any])
+    
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

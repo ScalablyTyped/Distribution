@@ -1,7 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,15 +18,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param internalTexture Define the internal texture associated with the texture
   */
 open class BaseTexture ()
-  extends typings.babylonjs.texturesIndexMod.BaseTexture {
+  extends typings.babylonjs.materialsTexturesIndexMod.BaseTexture {
   def this(sceneOrEngine: Nullable[Scene | ThinEngine]) = this()
   def this(
     sceneOrEngine: Unit,
-    internalTexture: Nullable[typings.babylonjs.internalTextureMod.InternalTexture]
+    internalTexture: Nullable[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]
   ) = this()
   def this(
     sceneOrEngine: Nullable[Scene | ThinEngine],
-    internalTexture: Nullable[typings.babylonjs.internalTextureMod.InternalTexture]
+    internalTexture: Nullable[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]
   ) = this()
 }
 /* static members */
@@ -50,7 +50,10 @@ object BaseTexture {
     * @param textures Define the list of textures to wait for
     * @param callback Define the callback triggered once the entire list will be ready
     */
-  inline def WhenAllReady(textures: js.Array[typings.babylonjs.baseTextureMod.BaseTexture], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("WhenAllReady")(textures.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def WhenAllReady(
+    textures: js.Array[typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture],
+    callback: js.Function0[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("WhenAllReady")(textures.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("babylonjs/Materials/index", "BaseTexture._IsScene")
   @js.native

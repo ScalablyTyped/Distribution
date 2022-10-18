@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Profile {
   
   /** Provides information about the device for profiling purposes. */
-  @JSGlobal("Windows.System.Profile.AnalyticsInfo")
+  /* note: abstract class */ @JSGlobal("Windows.System.Profile.AnalyticsInfo")
   @js.native
-  abstract class AnalyticsInfo ()
+  open class AnalyticsInfo ()
     extends StObject
        with typings.winrtUwp.Windows.System.Profile.AnalyticsInfo
   object AnalyticsInfo {
@@ -37,9 +37,9 @@ object Profile {
   }
   
   /** Provides version information about the device family. */
-  @JSGlobal("Windows.System.Profile.AnalyticsVersionInfo")
+  /* note: abstract class */ @JSGlobal("Windows.System.Profile.AnalyticsVersionInfo")
   @js.native
-  abstract class AnalyticsVersionInfo ()
+  open class AnalyticsVersionInfo ()
     extends StObject
        with typings.winrtUwp.Windows.System.Profile.AnalyticsVersionInfo {
     
@@ -53,9 +53,9 @@ object Profile {
   }
   
   /** Provides the ability to obtain a hardware identifier that represents the current hardware. */
-  @JSGlobal("Windows.System.Profile.HardwareIdentification")
+  /* note: abstract class */ @JSGlobal("Windows.System.Profile.HardwareIdentification")
   @js.native
-  abstract class HardwareIdentification ()
+  open class HardwareIdentification ()
     extends StObject
        with typings.winrtUwp.Windows.System.Profile.HardwareIdentification
   object HardwareIdentification {
@@ -74,9 +74,9 @@ object Profile {
   }
   
   /** Represents a token that contains a hardware based identification that is sufficiently unique. */
-  @JSGlobal("Windows.System.Profile.HardwareToken")
+  /* note: abstract class */ @JSGlobal("Windows.System.Profile.HardwareToken")
   @js.native
-  abstract class HardwareToken ()
+  open class HardwareToken ()
     extends StObject
        with typings.winrtUwp.Windows.System.Profile.HardwareToken {
     
@@ -94,9 +94,9 @@ object Profile {
   }
   
   /** Identifies the string keys that might exist within the RetailInfo.Properties map of retail-demo relevant property values. */
-  @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties")
+  /* note: abstract class */ @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties")
   @js.native
-  abstract class KnownRetailInfoProperties ()
+  open class KnownRetailInfoProperties ()
     extends StObject
        with typings.winrtUwp.Windows.System.Profile.KnownRetailInfoProperties
   object KnownRetailInfoProperties {
@@ -290,9 +290,9 @@ object Profile {
     inline def security_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("security")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings")
+  /* note: abstract class */ @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings")
   @js.native
-  abstract class PlatformDiagnosticsAndUsageDataSettings ()
+  open class PlatformDiagnosticsAndUsageDataSettings ()
     extends StObject
        with typings.winrtUwp.Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings
   object PlatformDiagnosticsAndUsageDataSettings {
@@ -337,9 +337,9 @@ object Profile {
   }
   
   /** A utility class that supports one method, IsDemoModeEnabled , and one property, Properties . Call IsDemoModeEnabled to determine whether the device where the app is running has specifically enabled its retail demo mode. */
-  @JSGlobal("Windows.System.Profile.RetailInfo")
+  /* note: abstract class */ @JSGlobal("Windows.System.Profile.RetailInfo")
   @js.native
-  abstract class RetailInfo ()
+  open class RetailInfo ()
     extends StObject
        with typings.winrtUwp.Windows.System.Profile.RetailInfo
   object RetailInfo {
@@ -367,9 +367,9 @@ object Profile {
   object SystemManufacturers {
     
     /** Enables access to properties from the SMBIOS for the system. */
-    @JSGlobal("Windows.System.Profile.SystemManufacturers.SmbiosInformation")
+    /* note: abstract class */ @JSGlobal("Windows.System.Profile.SystemManufacturers.SmbiosInformation")
     @js.native
-    abstract class SmbiosInformation ()
+    open class SmbiosInformation ()
       extends StObject
          with typings.winrtUwp.Windows.System.Profile.SystemManufacturers.SmbiosInformation
     object SmbiosInformation {

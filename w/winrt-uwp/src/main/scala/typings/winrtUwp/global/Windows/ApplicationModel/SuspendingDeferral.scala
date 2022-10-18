@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages a delayed app suspending operation. */
-@JSGlobal("Windows.ApplicationModel.SuspendingDeferral")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.SuspendingDeferral")
 @js.native
-abstract class SuspendingDeferral ()
+open class SuspendingDeferral ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.SuspendingDeferral {
   

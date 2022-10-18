@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "MatrixHostResolver")
 @js.native
 open class MatrixHostResolver ()
-  extends typings.matrixAppserviceBridge.matrixHostResolverMod.MatrixHostResolver {
+  extends typings.matrixAppserviceBridge.libUtilsMatrixHostResolverMod.MatrixHostResolver {
   def this(opts: Axios) = this()
 }
 /* static members */

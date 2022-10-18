@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "BoundingBox")
 @js.native
 open class BoundingBox ()
-  extends typings.canvg.boundingBoxMod.BoundingBox {
+  extends typings.canvg.distBoundingBoxMod.BoundingBox {
   def this(x1: Double) = this()
   def this(x1: Double, y1: Double) = this()
   def this(x1: Unit, y1: Double) = this()

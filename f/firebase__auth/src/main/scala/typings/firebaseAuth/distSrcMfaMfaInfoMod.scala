@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcMfaMfaInfoMod {
   
-  @JSImport("@firebase/auth/dist/src/mfa/mfa_info", "MultiFactorInfoImpl")
+  /* note: abstract class */ @JSImport("@firebase/auth/dist/src/mfa/mfa_info", "MultiFactorInfoImpl")
   @js.native
-  abstract class MultiFactorInfoImpl protected ()
+  open class MultiFactorInfoImpl protected ()
     extends StObject
        with MultiFactorInfo {
     /* protected */ def this(factorId: FactorId, response: MfaEnrollment) = this()

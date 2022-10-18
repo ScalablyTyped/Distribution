@@ -2,9 +2,9 @@ package typings.workboxCacheableResponse
 
 import typings.std.Response
 import typings.workboxCacheableResponse.cacheableResponseMod.CacheableResponseConfig
-import typings.workboxCore.workboxPluginMod.CacheWillUpdateCallback
-import typings.workboxCore.workboxPluginMod.CacheWillUpdateCallbackParamParam
-import typings.workboxCore.workboxPluginMod.WorkboxPlugin
+import typings.workboxCore.typesWorkboxPluginMod.CacheWillUpdateCallback
+import typings.workboxCore.typesWorkboxPluginMod.CacheWillUpdateCallbackParamParam
+import typings.workboxCore.typesWorkboxPluginMod.WorkboxPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

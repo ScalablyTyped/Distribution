@@ -2,7 +2,7 @@ package typings.mnemonist.mod
 
 import typings.mnemonist.hashedArrayTreeMod.HashedArrayTreeOptions
 import typings.mnemonist.hashedArrayTreeMod.default
-import typings.mnemonist.typesMod.IArrayLikeConstructor
+import typings.mnemonist.utilsTypesMod.IArrayLikeConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

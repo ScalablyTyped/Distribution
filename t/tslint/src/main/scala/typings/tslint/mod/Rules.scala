@@ -1,17 +1,17 @@
 package typings.tslint.mod
 
-import typings.tslint.ruleMod.IOptions
-import typings.tslint.ruleMod.IRuleMetadata
+import typings.tslint.libLanguageRuleRuleMod.IOptions
+import typings.tslint.libLanguageRuleRuleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Rules {
   
-  @JSImport("tslint", "Rules.AbstractRule")
+  /* note: abstract class */ @JSImport("tslint", "Rules.AbstractRule")
   @js.native
-  abstract class AbstractRule protected ()
-    extends typings.tslint.rulesMod.AbstractRule {
+  open class AbstractRule protected ()
+    extends typings.tslint.libRulesMod.AbstractRule {
     def this(options: IOptions) = this()
   }
   /* static members */
@@ -27,17 +27,17 @@ object Rules {
     inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("tslint", "Rules.OptionallyTypedRule")
+  /* note: abstract class */ @JSImport("tslint", "Rules.OptionallyTypedRule")
   @js.native
-  abstract class OptionallyTypedRule protected ()
-    extends typings.tslint.rulesMod.OptionallyTypedRule {
+  open class OptionallyTypedRule protected ()
+    extends typings.tslint.libRulesMod.OptionallyTypedRule {
     def this(options: IOptions) = this()
   }
   
-  @JSImport("tslint", "Rules.TypedRule")
+  /* note: abstract class */ @JSImport("tslint", "Rules.TypedRule")
   @js.native
-  abstract class TypedRule protected ()
-    extends typings.tslint.rulesMod.TypedRule {
+  open class TypedRule protected ()
+    extends typings.tslint.libRulesMod.TypedRule {
     def this(options: IOptions) = this()
   }
 }

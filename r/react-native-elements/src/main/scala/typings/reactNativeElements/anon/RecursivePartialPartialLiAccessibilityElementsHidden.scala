@@ -16,7 +16,8 @@ import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconNode
+import typings.reactNativeElements.distConfigThemeProviderMod.RecursivePartial
+import typings.reactNativeElements.distIconsIconMod.IconNode
 import typings.reactNativeElements.reactNativeElementsStrings.ViewComponent
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.assertive
@@ -25,7 +26,6 @@ import typings.reactNativeElements.reactNativeElementsStrings.no
 import typings.reactNativeElements.reactNativeElementsStrings.none
 import typings.reactNativeElements.reactNativeElementsStrings.polite
 import typings.reactNativeElements.reactNativeElementsStrings.yes
-import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

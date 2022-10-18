@@ -1,6 +1,6 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.vegaSchemaMod.VgValueRef
+import typings.vegaLite.buildSrcVegaDotschemaMod.VgValueRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

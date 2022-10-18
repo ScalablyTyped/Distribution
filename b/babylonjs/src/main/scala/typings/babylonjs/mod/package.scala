@@ -1,8 +1,10 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.anon.AdjustFrame
+import typings.babylonjs.anon.AlignHorizontal
 import typings.babylonjs.anon.AlignVertical
 import typings.babylonjs.anon.AlphaFilter
+import typings.babylonjs.anon.Arc
 import typings.babylonjs.anon.BackUVs
 import typings.babylonjs.anon.BaseUrl
 import typings.babylonjs.anon.BottomBaseAt
@@ -10,14 +12,15 @@ import typings.babylonjs.anon.Cap
 import typings.babylonjs.anon.Clip
 import typings.babylonjs.anon.CloseArray
 import typings.babylonjs.anon.ClosePath
-import typings.babylonjs.anon.ColorFilter
+import typings.babylonjs.anon.CloseShape
 import typings.babylonjs.anon.Colors
 import typings.babylonjs.anon.CrossOrigin
 import typings.babylonjs.anon.Custom
 import typings.babylonjs.anon.DashNb
 import typings.babylonjs.anon.DashSize
 import typings.babylonjs.anon.DedupTopBottomIndices
-import typings.babylonjs.anon.DiameterBottom
+import typings.babylonjs.anon.Depth
+import typings.babylonjs.anon.Diameter
 import typings.babylonjs.anon.DiameterX
 import typings.babylonjs.anon.FaceColors
 import typings.babylonjs.anon.FaceUV
@@ -26,7 +29,7 @@ import typings.babylonjs.anon.FrontUVs
 import typings.babylonjs.anon.Holes
 import typings.babylonjs.anon.Instance
 import typings.babylonjs.anon.InvertUV
-import typings.babylonjs.anon.M
+import typings.babylonjs.anon.Lines
 import typings.babylonjs.anon.Match
 import typings.babylonjs.anon.Maximum
 import typings.babylonjs.anon.P
@@ -35,36 +38,34 @@ import typings.babylonjs.anon.Precision
 import typings.babylonjs.anon.Q
 import typings.babylonjs.anon.Radius
 import typings.babylonjs.anon.RadiusX
-import typings.babylonjs.anon.Segments
 import typings.babylonjs.anon.SideOrientation
-import typings.babylonjs.anon.SizeX
 import typings.babylonjs.anon.Subdivisions
 import typings.babylonjs.anon.SubdivisionsX
 import typings.babylonjs.anon.Tessellation
 import typings.babylonjs.anon.Thickness
 import typings.babylonjs.anon.TileHeight
-import typings.babylonjs.anon.TopBaseAt
-import typings.babylonjs.anon.Updatable
-import typings.babylonjs.basisMod.TranscodeResult
-import typings.babylonjs.capsuleBuilderMod.ICreateCapsuleOptions
-import typings.babylonjs.coroutineMod.AsyncCoroutine
-import typings.babylonjs.coroutineMod.Coroutine
-import typings.babylonjs.coroutineMod.CoroutineScheduler
-import typings.babylonjs.coroutineMod.CoroutineStep
-import typings.babylonjs.environmentTextureToolsMod.CreateEnvTextureOptions
-import typings.babylonjs.environmentTextureToolsMod.EnvironmentTextureInfo
-import typings.babylonjs.environmentTextureToolsMod.EnvironmentTextureInfoV2
-import typings.babylonjs.fileRequestMod.IFileRequest
-import typings.babylonjs.goldbergBuilderMod.GoldbergCreationOption
-import typings.babylonjs.goldbergBuilderMod.GoldbergVertexDataOption
-import typings.babylonjs.iofflineproviderMod.IOfflineProvider
-import typings.babylonjs.materialPluginManagerMod.PluginMaterialFactory
-import typings.babylonjs.mathSizeMod.ISize
+import typings.babylonjs.anon.Xmax
+import typings.babylonjs.enginesNativeNativeInterfacesMod.INative
+import typings.babylonjs.materialsMaterialPluginManagerMod.PluginMaterialFactory
+import typings.babylonjs.materialsNodeNodeMaterialDecoratorMod.IEditablePropertyOption
+import typings.babylonjs.mathsMathDotsizeMod.ISize
+import typings.babylonjs.meshesBuildersCapsuleBuilderMod.ICreateCapsuleOptions
+import typings.babylonjs.meshesBuildersGoldbergBuilderMod.GoldbergCreationOption
+import typings.babylonjs.meshesBuildersGoldbergBuilderMod.GoldbergVertexDataOption
+import typings.babylonjs.meshesMeshMod.Mesh
+import typings.babylonjs.miscBasisMod.TranscodeResult
+import typings.babylonjs.miscCoroutineMod.AsyncCoroutine
+import typings.babylonjs.miscCoroutineMod.Coroutine
+import typings.babylonjs.miscCoroutineMod.CoroutineScheduler
+import typings.babylonjs.miscCoroutineMod.CoroutineStep
+import typings.babylonjs.miscEnvironmentTextureToolsMod.CreateEnvTextureOptions
+import typings.babylonjs.miscEnvironmentTextureToolsMod.EnvironmentTextureInfo
+import typings.babylonjs.miscEnvironmentTextureToolsMod.EnvironmentTextureInfoV2
+import typings.babylonjs.miscFileRequestMod.IFileRequest
+import typings.babylonjs.miscInterfacesScreenshotSizeMod.IScreenshotSize
+import typings.babylonjs.miscTimerMod.ITimerOptions
 import typings.babylonjs.mod.^
-import typings.babylonjs.nativeInterfacesMod.INative
-import typings.babylonjs.nodeMaterialDecoratorMod.IEditablePropertyOption
-import typings.babylonjs.screenshotSizeMod.IScreenshotSize
-import typings.babylonjs.timerMod.ITimerOptions
+import typings.babylonjs.offlineIofflineproviderMod.IOfflineProvider
 import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.IndicesArray
 import typings.babylonjs.typesMod.Nullable
@@ -86,563 +87,561 @@ inline def AcquireNativeObjectAsync(): js.Promise[INative] = ^.asInstanceOf[js.D
 
 inline def ApplyPostProcess(
   postProcessName: String,
-  internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+  internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
   scene: typings.babylonjs.sceneMod.Scene
-): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
 inline def ApplyPostProcess(
   postProcessName: String,
-  internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+  internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
   scene: typings.babylonjs.sceneMod.Scene,
   `type`: Double
-): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
 inline def ApplyPostProcess(
   postProcessName: String,
-  internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+  internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
   scene: typings.babylonjs.sceneMod.Scene,
   `type`: Double,
   samplingMode: Double
-): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
 inline def ApplyPostProcess(
   postProcessName: String,
-  internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+  internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
   scene: typings.babylonjs.sceneMod.Scene,
   `type`: Double,
   samplingMode: Double,
   format: Double
-): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
 inline def ApplyPostProcess(
   postProcessName: String,
-  internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+  internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
   scene: typings.babylonjs.sceneMod.Scene,
   `type`: Double,
   samplingMode: Unit,
   format: Double
-): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
 inline def ApplyPostProcess(
   postProcessName: String,
-  internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+  internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
   scene: typings.babylonjs.sceneMod.Scene,
   `type`: Unit,
   samplingMode: Double
-): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
 inline def ApplyPostProcess(
   postProcessName: String,
-  internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+  internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
   scene: typings.babylonjs.sceneMod.Scene,
   `type`: Unit,
   samplingMode: Double,
   format: Double
-): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
 inline def ApplyPostProcess(
   postProcessName: String,
-  internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+  internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
   scene: typings.babylonjs.sceneMod.Scene,
   `type`: Unit,
   samplingMode: Unit,
   format: Double
-): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
 
 inline def BabylonLoaderRegistered: Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("_BabylonLoaderRegistered").asInstanceOf[Boolean]
 inline def BabylonLoaderRegistered_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BabylonLoaderRegistered")(x.asInstanceOf[js.Any])
 
-inline def CreateBox(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateBox(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateBox(name: String, options: BottomBaseAt): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateBox(name: String, options: BottomBaseAt, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateBox(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+inline def CreateBox(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateBox(name: String, options: BackUVs): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateBox(name: String, options: BackUVs, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateBoxVertexData(options: TopBaseAt): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateBoxVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateBoxVertexData(options: BottomBaseAt): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateBoxVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateCapsule(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateCapsule(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateCapsule(name: String, options: ICreateCapsuleOptions): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateCapsule(name: String, options: ICreateCapsuleOptions, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateCapsule(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+inline def CreateCapsule(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateCapsule(name: String, options: ICreateCapsuleOptions): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateCapsule(name: String, options: ICreateCapsuleOptions, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateCapsuleVertexData(): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsuleVertexData")().asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreateCapsuleVertexData(options: ICreateCapsuleOptions): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsuleVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateCapsuleVertexData(): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsuleVertexData")().asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreateCapsuleVertexData(options: ICreateCapsuleOptions): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsuleVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateCylinder(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateCylinder(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateCylinder(name: String, options: Cap): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateCylinder(name: String, options: Cap, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateCylinder(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+inline def CreateCylinder(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateCylinder(name: String, options: Arc): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateCylinder(name: String, options: Arc, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateCylinderVertexData(options: DiameterBottom): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinderVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateCylinderVertexData(options: Cap): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinderVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateDashedLines(name: String, options: DashSize): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
-inline def CreateDashedLines(name: String, options: DashSize, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+inline def CreateDashedLines(name: String, options: DashNb): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
+inline def CreateDashedLines(name: String, options: DashNb, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
 
-inline def CreateDashedLinesVertexData(options: DashNb): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLinesVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateDashedLinesVertexData(options: DashSize): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLinesVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
 inline def CreateDecal(
   name: String,
-  sourceMesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+  sourceMesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
   options: typings.babylonjs.anon.Angle
-): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDecal")(name.asInstanceOf[js.Any], sourceMesh.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDecal")(name.asInstanceOf[js.Any], sourceMesh.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateDisc(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateDisc(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateDisc(name: String, options: Tessellation): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateDisc(name: String, options: Tessellation, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateDisc(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+inline def CreateDisc(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateDisc(name: String, options: FrontUVs): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateDisc(name: String, options: FrontUVs, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateDiscVertexData(options: Radius): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDiscVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateDiscVertexData(options: Radius): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDiscVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateEnvTextureAsync(texture: typings.babylonjs.baseTextureMod.BaseTexture): js.Promise[js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateEnvTextureAsync")(texture.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
-inline def CreateEnvTextureAsync(texture: typings.babylonjs.baseTextureMod.BaseTexture, options: CreateEnvTextureOptions): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateEnvTextureAsync")(texture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
+inline def CreateEnvTextureAsync(texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture): js.Promise[js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateEnvTextureAsync")(texture.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
+inline def CreateEnvTextureAsync(
+  texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
+  options: CreateEnvTextureOptions
+): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateEnvTextureAsync")(texture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
 
-inline def CreateGeodesic(name: String, options: M): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGeodesic")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateGeodesic(name: String, options: M, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGeodesic")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateGeodesic(name: String, options: FaceColors): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGeodesic")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateGeodesic(name: String, options: FaceColors, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGeodesic")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateGoldberg(name: String, options: GoldbergCreationOption): typings.babylonjs.goldbergMeshMod.GoldbergMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGoldberg")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.goldbergMeshMod.GoldbergMesh]
-inline def CreateGoldberg(name: String, options: GoldbergCreationOption, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.goldbergMeshMod.GoldbergMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGoldberg")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.goldbergMeshMod.GoldbergMesh]
+inline def CreateGoldberg(name: String, options: GoldbergCreationOption): typings.babylonjs.meshesGoldbergMeshMod.GoldbergMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGoldberg")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGoldbergMeshMod.GoldbergMesh]
+inline def CreateGoldberg(name: String, options: GoldbergCreationOption, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshesGoldbergMeshMod.GoldbergMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGoldberg")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGoldbergMeshMod.GoldbergMesh]
 
-inline def CreateGoldbergVertexData(options: GoldbergVertexDataOption, goldbergData: typings.babylonjs.geodesicMeshMod.PolyhedronData): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGoldbergVertexData")(options.asInstanceOf[js.Any], goldbergData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateGoldbergVertexData(
+  options: GoldbergVertexDataOption,
+  goldbergData: typings.babylonjs.meshesGeodesicMeshMod.PolyhedronData
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGoldbergVertexData")(options.asInstanceOf[js.Any], goldbergData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateGround(name: String): typings.babylonjs.groundMeshMod.GroundMesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
-inline def CreateGround(name: String, options: Unit, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
-inline def CreateGround(name: String, options: SubdivisionsX): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
-inline def CreateGround(name: String, options: SubdivisionsX, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
+inline def CreateGround(name: String): typings.babylonjs.meshesGroundMeshMod.GroundMesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
+inline def CreateGround(name: String, options: Unit, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
+inline def CreateGround(name: String, options: Subdivisions): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
+inline def CreateGround(name: String, options: Subdivisions, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
 
-inline def CreateGroundFromHeightMap(name: String, url: String): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
-inline def CreateGroundFromHeightMap(name: String, url: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
-inline def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
-inline def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.groundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.groundMeshMod.GroundMesh]
+inline def CreateGroundFromHeightMap(name: String, url: String): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
+inline def CreateGroundFromHeightMap(name: String, url: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
+inline def CreateGroundFromHeightMap(name: String, url: String, options: AlphaFilter): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
+inline def CreateGroundFromHeightMap(name: String, url: String, options: AlphaFilter, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshesGroundMeshMod.GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesGroundMeshMod.GroundMesh]
 
-inline def CreateGroundFromHeightMapVertexData(options: AlphaFilter): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMapVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateGroundFromHeightMapVertexData(options: typings.babylonjs.anon.Buffer): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMapVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateGroundVertexData(options: Subdivisions): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateGroundVertexData(options: SubdivisionsX): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateHemisphere(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateHemisphere(name: String, options: Unit, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateHemisphere(name: String, options: Segments): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateHemisphere(name: String, options: Segments, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateHemisphere(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+inline def CreateHemisphere(name: String, options: Unit, scene: typings.babylonjs.sceneMod.Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateHemisphere(name: String, options: Diameter): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateHemisphere(name: String, options: Diameter, scene: typings.babylonjs.sceneMod.Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateIcoSphere(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateIcoSphere(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateIcoSphere(name: String, options: RadiusX): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateIcoSphere(name: String, options: RadiusX, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateIcoSphere(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+inline def CreateIcoSphere(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateIcoSphere(name: String, options: Flat): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateIcoSphere(name: String, options: Flat, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateIcoSphereVertexData(options: Flat): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphereVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateIcoSphereVertexData(options: RadiusX): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphereVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
 inline def CreateImageDataArrayBufferViews(data: js.typedarray.ArrayBufferView, info: EnvironmentTextureInfo): js.Array[js.Array[js.typedarray.ArrayBufferView]] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateImageDataArrayBufferViews")(data.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[js.typedarray.ArrayBufferView]]]
 
-inline def CreateLathe(name: String, options: Clip): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLathe")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateLathe(name: String, options: Clip, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLathe")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateLathe(name: String, options: Clip): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLathe")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateLathe(name: String, options: Clip, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLathe")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateLineSystem(name: String, options: Instance, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+inline def CreateLineSystem(name: String, options: Colors, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
 
-inline def CreateLineSystemVertexData(options: Colors): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystemVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateLineSystemVertexData(options: Lines): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystemVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateLines(name: String, options: typings.babylonjs.anon.Material): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
-inline def CreateLines(
-  name: String,
-  options: typings.babylonjs.anon.Material,
-  scene: Nullable[typings.babylonjs.sceneMod.Scene]
-): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+inline def CreateLines(name: String, options: Instance): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
+inline def CreateLines(name: String, options: Instance, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
 
-inline def CreatePlane(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreatePlane(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreatePlane(name: String, options: typings.babylonjs.anon.Size): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreatePlane(
-  name: String,
-  options: typings.babylonjs.anon.Size,
-  scene: Nullable[typings.babylonjs.sceneMod.Scene]
-): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreatePlane(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+inline def CreatePlane(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreatePlane(name: String, options: SideOrientation): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreatePlane(name: String, options: SideOrientation, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreatePlaneVertexData(options: SideOrientation): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlaneVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreatePlaneVertexData(options: typings.babylonjs.anon.Size): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlaneVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreatePolygon(name: String, options: FaceUV): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreatePolygon(name: String, options: FaceUV, scene: Unit, earcutInjection: Any): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreatePolygon(name: String, options: FaceUV, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreatePolygon(name: String, options: Depth): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreatePolygon(name: String, options: Depth, scene: Unit, earcutInjection: Any): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreatePolygon(name: String, options: Depth, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 inline def CreatePolygon(
   name: String,
-  options: FaceUV,
+  options: Depth,
   scene: Nullable[typings.babylonjs.sceneMod.Scene],
   earcutInjection: Any
-): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreatePolygonVertexData(polygon: typings.babylonjs.meshMod.Mesh, sideOrientation: Double): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreatePolygonVertexData(polygon: Mesh, sideOrientation: Double): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4]
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4]
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4]
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4]
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
   frontUVs: Unit,
   backUVs: Unit,
   wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
   frontUVs: Unit,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
   frontUVs: Unit,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
   wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4,
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
   backUVs: Unit,
   wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4,
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
   wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: Unit,
-  frontUVs: Unit,
-  backUVs: Unit,
-  wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: Unit,
-  frontUVs: Unit,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: Unit,
-  frontUVs: Unit,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4,
-  wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: Unit,
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: Unit,
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4,
-  backUVs: Unit,
-  wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: Unit,
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: js.Array[typings.babylonjs.mathVectorMod.Vector4],
-  fColors: Unit,
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4,
-  wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: Unit,
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4]
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: Unit,
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
-  frontUVs: Unit,
-  backUVs: Unit,
-  wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: Unit,
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
-  frontUVs: Unit,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: Unit,
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
-  frontUVs: Unit,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4,
-  wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: Unit,
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: Unit,
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4,
-  backUVs: Unit,
-  wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: Unit,
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: Unit,
-  fColors: js.Array[typings.babylonjs.mathColorMod.Color4],
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4,
-  wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
-inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
-  sideOrientation: Double,
-  fUV: Unit,
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
   fColors: Unit,
   frontUVs: Unit,
   backUVs: Unit,
   wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: Unit,
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
   fColors: Unit,
   frontUVs: Unit,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: Unit,
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
   fColors: Unit,
   frontUVs: Unit,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
   wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: Unit,
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
   fColors: Unit,
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: Unit,
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
   fColors: Unit,
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4,
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
   backUVs: Unit,
   wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: Unit,
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
   fColors: Unit,
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 inline def CreatePolygonVertexData(
-  polygon: typings.babylonjs.meshMod.Mesh,
+  polygon: Mesh,
   sideOrientation: Double,
-  fUV: Unit,
+  fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
   fColors: Unit,
-  frontUVs: typings.babylonjs.mathVectorMod.Vector4,
-  backUVs: typings.babylonjs.mathVectorMod.Vector4,
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
   wrp: Boolean
-): typings.babylonjs.meshVertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4]
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
+  frontUVs: Unit,
+  backUVs: Unit,
+  wrp: Boolean
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
+  frontUVs: Unit,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
+  frontUVs: Unit,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  wrp: Boolean
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  backUVs: Unit,
+  wrp: Boolean
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  wrp: Boolean
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: Unit,
+  frontUVs: Unit,
+  backUVs: Unit,
+  wrp: Boolean
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: Unit,
+  frontUVs: Unit,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: Unit,
+  frontUVs: Unit,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  wrp: Boolean
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: Unit,
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: Unit,
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  backUVs: Unit,
+  wrp: Boolean
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: Unit,
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+inline def CreatePolygonVertexData(
+  polygon: Mesh,
+  sideOrientation: Double,
+  fUV: Unit,
+  fColors: Unit,
+  frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4,
+  wrp: Boolean
+): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygonVertexData")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrp.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreatePolyhedron(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreatePolyhedron(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreatePolyhedron(name: String, options: SizeX): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreatePolyhedron(name: String, options: SizeX, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreatePolyhedron(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+inline def CreatePolyhedron(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreatePolyhedron(name: String, options: Custom): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreatePolyhedron(name: String, options: Custom, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreatePolyhedronVertexData(options: Custom): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedronVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreatePolyhedronVertexData(options: FaceUV): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedronVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateResizedCopy(texture: typings.babylonjs.textureMod.Texture, width: Double, height: Double): typings.babylonjs.textureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateResizedCopy")(texture.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.textureMod.Texture]
+inline def CreateResizedCopy(texture: typings.babylonjs.materialsTexturesTextureMod.Texture, width: Double, height: Double): typings.babylonjs.materialsTexturesTextureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateResizedCopy")(texture.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesTextureMod.Texture]
 inline def CreateResizedCopy(
-  texture: typings.babylonjs.textureMod.Texture,
+  texture: typings.babylonjs.materialsTexturesTextureMod.Texture,
   width: Double,
   height: Double,
   useBilinearMode: Boolean
-): typings.babylonjs.textureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateResizedCopy")(texture.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], useBilinearMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.textureMod.Texture]
+): typings.babylonjs.materialsTexturesTextureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateResizedCopy")(texture.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], useBilinearMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesTextureMod.Texture]
 
-inline def CreateRibbon(name: String, options: CloseArray): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateRibbon(name: String, options: CloseArray, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateRibbon(name: String, options: CloseArray): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateRibbon(name: String, options: CloseArray, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateRibbonVertexData(options: BackUVs): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbonVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateRibbonVertexData(options: ClosePath): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbonVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: Double
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: Double,
   successCallback: js.Function1[/* data */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: Double,
   successCallback: js.Function1[/* data */ String, Unit],
   mimeType: String
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: Double,
   successCallback: js.Function1[/* data */ String, Unit],
   mimeType: String,
   forceDownload: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: Double,
   successCallback: js.Function1[/* data */ String, Unit],
   mimeType: Unit,
   forceDownload: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: Double,
   successCallback: Unit,
   mimeType: String
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: Double,
   successCallback: Unit,
   mimeType: String,
   forceDownload: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: Double,
   successCallback: Unit,
   mimeType: Unit,
   forceDownload: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: IScreenshotSize
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: IScreenshotSize,
   successCallback: js.Function1[/* data */ String, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: IScreenshotSize,
   successCallback: js.Function1[/* data */ String, Unit],
   mimeType: String
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: IScreenshotSize,
   successCallback: js.Function1[/* data */ String, Unit],
   mimeType: String,
   forceDownload: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: IScreenshotSize,
   successCallback: js.Function1[/* data */ String, Unit],
   mimeType: Unit,
   forceDownload: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: IScreenshotSize,
   successCallback: Unit,
   mimeType: String
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: IScreenshotSize,
   successCallback: Unit,
   mimeType: String,
   forceDownload: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def CreateScreenshot(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: IScreenshotSize,
   successCallback: Unit,
   mimeType: Unit,
@@ -650,31 +649,31 @@ inline def CreateScreenshot(
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def CreateScreenshotAsync(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: Double
 ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 inline def CreateScreenshotAsync(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: Double,
   mimeType: String
 ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 inline def CreateScreenshotAsync(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: IScreenshotSize
 ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 inline def CreateScreenshotAsync(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: IScreenshotSize,
   mimeType: String
 ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 
 inline def CreateScreenshotUsingRenderTarget(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: IScreenshotSize | Double,
   successCallback: js.UndefOr[js.Function1[/* data */ String, Unit]],
   mimeType: js.UndefOr[String],
@@ -686,8 +685,8 @@ inline def CreateScreenshotUsingRenderTarget(
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTarget")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any], enableStencilBuffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def CreateScreenshotUsingRenderTargetAsync(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   size: IScreenshotSize | Double,
   mimeType: js.UndefOr[String],
   samples: js.UndefOr[Double],
@@ -697,57 +696,57 @@ inline def CreateScreenshotUsingRenderTargetAsync(
 ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 
 inline def CreateScreenshotWithResizeAsync(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   width: Double,
   height: Double
 ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotWithResizeAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def CreateScreenshotWithResizeAsync(
-  engine: typings.babylonjs.engineMod.Engine,
-  camera: typings.babylonjs.cameraMod.Camera,
+  engine: typings.babylonjs.enginesEngineMod.Engine,
+  camera: typings.babylonjs.camerasCameraMod.Camera,
   width: Double,
   height: Double,
   mimeType: String
 ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotWithResizeAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
-inline def CreateSphere(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateSphere(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateSphere(name: String, options: DiameterX): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateSphere(name: String, options: DiameterX, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateSphere(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+inline def CreateSphere(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateSphere(name: String, options: DiameterX): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateSphere(name: String, options: DiameterX, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateSphereVertexData(options: DedupTopBottomIndices): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphereVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateSphereVertexData(options: DedupTopBottomIndices): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphereVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateTiledBox(name: String, options: FaceColors): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateTiledBox(name: String, options: FaceColors, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateTiledBox(name: String, options: AlignHorizontal): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateTiledBox(name: String, options: AlignHorizontal, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateTiledBoxVertexData(options: TileHeight): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBoxVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateTiledBoxVertexData(options: AlignVertical): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBoxVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateTiledGround(name: String, options: Updatable): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateTiledGround(name: String, options: Updatable, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateTiledGround(name: String, options: Precision): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateTiledGround(name: String, options: Precision, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateTiledGroundVertexData(options: Precision): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGroundVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateTiledGroundVertexData(options: Xmax): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGroundVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateTiledPlane(name: String, options: Pattern): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateTiledPlane(name: String, options: Pattern, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateTiledPlane(name: String, options: Pattern): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateTiledPlane(name: String, options: Pattern, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateTiledPlaneVertexData(options: AlignVertical): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlaneVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateTiledPlaneVertexData(options: TileHeight): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlaneVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateTorus(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateTorus(name: String, options: Unit, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateTorus(name: String, options: Thickness): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateTorus(name: String, options: Thickness, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateTorus(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+inline def CreateTorus(name: String, options: Unit, scene: typings.babylonjs.sceneMod.Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateTorus(name: String, options: Tessellation): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateTorus(name: String, options: Tessellation, scene: typings.babylonjs.sceneMod.Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateTorusKnot(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateTorusKnot(name: String, options: Unit, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateTorusKnot(name: String, options: Q): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateTorusKnot(name: String, options: Q, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateTorusKnot(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+inline def CreateTorusKnot(name: String, options: Unit, scene: typings.babylonjs.sceneMod.Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateTorusKnot(name: String, options: P): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateTorusKnot(name: String, options: P, scene: typings.babylonjs.sceneMod.Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def CreateTorusKnotVertexData(options: P): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnotVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateTorusKnotVertexData(options: Q): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnotVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateTorusVertexData(options: FrontUVs): typings.babylonjs.meshVertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshVertexDataMod.VertexData]
+inline def CreateTorusVertexData(options: Thickness): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
 
-inline def CreateTube(name: String, options: InvertUV): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def CreateTube(name: String, options: InvertUV, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def CreateTube(name: String, options: InvertUV): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def CreateTube(name: String, options: InvertUV, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTube")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
 inline def Decode(buffer: js.typedarray.Uint16Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
 inline def Decode(buffer: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -771,36 +770,52 @@ inline def EndsWith(str: String, suffix: String): Boolean = (^.asInstanceOf[js.D
   */
 inline def Epsilon: /* 0.001 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("Epsilon").asInstanceOf[/* 0.001 */ Double]
 
-inline def ExtrudePolygon(name: String, options: Holes): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def ExtrudePolygon(name: String, options: Holes, scene: Unit, earcutInjection: Any): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def ExtrudePolygon(name: String, options: Holes, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def ExtrudePolygon(name: String, options: Holes): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def ExtrudePolygon(name: String, options: Holes, scene: Unit, earcutInjection: Any): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def ExtrudePolygon(name: String, options: Holes, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 inline def ExtrudePolygon(
   name: String,
   options: Holes,
   scene: Nullable[typings.babylonjs.sceneMod.Scene],
   earcutInjection: Any
-): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def ExtrudeShape(name: String, options: AdjustFrame): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def ExtrudeShape(name: String, options: AdjustFrame, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def ExtrudeShape(name: String, options: AdjustFrame): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def ExtrudeShape(name: String, options: AdjustFrame, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-inline def ExtrudeShapeCustom(name: String, options: ClosePath): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-inline def ExtrudeShapeCustom(name: String, options: ClosePath, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+inline def ExtrudeShapeCustom(name: String, options: CloseShape): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+inline def ExtrudeShapeCustom(name: String, options: CloseShape, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
 inline def FromHalfFloat(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("FromHalfFloat")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 
 inline def GenerateBase64StringFromPixelData(pixels: js.typedarray.ArrayBufferView, size: ISize): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromPixelData")(pixels.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
 inline def GenerateBase64StringFromPixelData(pixels: js.typedarray.ArrayBufferView, size: ISize, invertY: Boolean): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromPixelData")(pixels.asInstanceOf[js.Any], size.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
 
-inline def GenerateBase64StringFromTexture(texture: typings.babylonjs.baseTextureMod.BaseTexture): Nullable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[Nullable[String]]
-inline def GenerateBase64StringFromTexture(texture: typings.babylonjs.baseTextureMod.BaseTexture, faceIndex: Double): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
-inline def GenerateBase64StringFromTexture(texture: typings.babylonjs.baseTextureMod.BaseTexture, faceIndex: Double, level: Double): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
-inline def GenerateBase64StringFromTexture(texture: typings.babylonjs.baseTextureMod.BaseTexture, faceIndex: Unit, level: Double): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
+inline def GenerateBase64StringFromTexture(texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture): Nullable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[Nullable[String]]
+inline def GenerateBase64StringFromTexture(texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, faceIndex: Double): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
+inline def GenerateBase64StringFromTexture(
+  texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
+  faceIndex: Double,
+  level: Double
+): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
+inline def GenerateBase64StringFromTexture(
+  texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
+  faceIndex: Unit,
+  level: Double
+): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTexture")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
 
-inline def GenerateBase64StringFromTextureAsync(texture: typings.babylonjs.baseTextureMod.BaseTexture): js.Promise[Nullable[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Nullable[String]]]
-inline def GenerateBase64StringFromTextureAsync(texture: typings.babylonjs.baseTextureMod.BaseTexture, faceIndex: Double): js.Promise[Nullable[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nullable[String]]]
-inline def GenerateBase64StringFromTextureAsync(texture: typings.babylonjs.baseTextureMod.BaseTexture, faceIndex: Double, level: Double): js.Promise[Nullable[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nullable[String]]]
-inline def GenerateBase64StringFromTextureAsync(texture: typings.babylonjs.baseTextureMod.BaseTexture, faceIndex: Unit, level: Double): js.Promise[Nullable[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nullable[String]]]
+inline def GenerateBase64StringFromTextureAsync(texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture): js.Promise[Nullable[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Nullable[String]]]
+inline def GenerateBase64StringFromTextureAsync(texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, faceIndex: Double): js.Promise[Nullable[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nullable[String]]]
+inline def GenerateBase64StringFromTextureAsync(
+  texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
+  faceIndex: Double,
+  level: Double
+): js.Promise[Nullable[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nullable[String]]]
+inline def GenerateBase64StringFromTextureAsync(
+  texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
+  faceIndex: Unit,
+  level: Double
+): js.Promise[Nullable[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateBase64StringFromTextureAsync")(texture.asInstanceOf[js.Any], faceIndex.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nullable[String]]]
 
 inline def GetClass(fqdn: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetClass")(fqdn.asInstanceOf[js.Any]).asInstanceOf[Any]
 
@@ -808,9 +823,9 @@ inline def GetDOMTextContent(element: HTMLElement): String = ^.asInstanceOf[js.D
 
 inline def GetEnvInfo(data: js.typedarray.ArrayBufferView): Nullable[EnvironmentTextureInfoV2] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEnvInfo")(data.asInstanceOf[js.Any]).asInstanceOf[Nullable[EnvironmentTextureInfoV2]]
 
-inline def GetEnvironmentBRDFTexture(scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.baseTextureMod.BaseTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEnvironmentBRDFTexture")(scene.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.baseTextureMod.BaseTexture]
+inline def GetEnvironmentBRDFTexture(scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEnvironmentBRDFTexture")(scene.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture]
 
-inline def GetInternalFormatFromBasisFormat(basisFormat: Double, engine: typings.babylonjs.engineMod.Engine): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetInternalFormatFromBasisFormat")(basisFormat.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def GetInternalFormatFromBasisFormat(basisFormat: Double, engine: typings.babylonjs.enginesEngineMod.Engine): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetInternalFormatFromBasisFormat")(basisFormat.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Double]
 
 inline def GetTGAHeader(data: js.typedarray.Uint8Array): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTGAHeader")(data.asInstanceOf[js.Any]).asInstanceOf[Any]
 
@@ -837,12 +852,12 @@ inline def LoadFile(
   useArrayBuffer: js.UndefOr[Boolean],
   onError: js.UndefOr[
   js.Function2[
-    /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-    /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+    /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
+    /* exception */ js.UndefOr[typings.babylonjs.miscFileToolsMod.LoadFileError], 
     Unit
   ]
 ],
-  onOpened: js.UndefOr[js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]]
+  onOpened: js.UndefOr[js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]]
 ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(fileOrUrl.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
 
 inline def LoadImage(
@@ -962,7 +977,10 @@ inline def LoadImage(
   imageBitmapOptions: ImageBitmapOptions
 ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], imageBitmapOptions.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
 
-inline def LoadTextureFromTranscodeResult(texture: typings.babylonjs.internalTextureMod.InternalTexture, transcodeResult: TranscodeResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadTextureFromTranscodeResult")(texture.asInstanceOf[js.Any], transcodeResult.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def LoadTextureFromTranscodeResult(
+  texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
+  transcodeResult: TranscodeResult
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadTextureFromTranscodeResult")(texture.asInstanceOf[js.Any], transcodeResult.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def PHI: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PHI").asInstanceOf[Double]
 
@@ -987,14 +1005,14 @@ inline def ReadFile(
   onSuccess: js.Function1[/* data */ Any, Unit],
   onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
   useArrayBuffer: Boolean,
-  onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+  onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
 ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
 inline def ReadFile(
   file: File,
   onSuccess: js.Function1[/* data */ Any, Unit],
   onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
   useArrayBuffer: Unit,
-  onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+  onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
 ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
 inline def ReadFile(
   file: File,
@@ -1007,14 +1025,14 @@ inline def ReadFile(
   onSuccess: js.Function1[/* data */ Any, Unit],
   onProgress: Unit,
   useArrayBuffer: Boolean,
-  onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+  onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
 ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
 inline def ReadFile(
   file: File,
   onSuccess: js.Function1[/* data */ Any, Unit],
   onProgress: Unit,
   useArrayBuffer: Unit,
-  onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+  onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
 ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
 
 inline def RegisterClass(className: String, `type`: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterClass")(className.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1028,15 +1046,17 @@ inline def RequestFile(
   onSuccess: js.UndefOr[
   js.Function2[
     /* data */ String | js.typedarray.ArrayBuffer, 
-    /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+    /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
     Unit
   ]
 ],
   onProgress: js.UndefOr[js.Function1[/* event */ ProgressEvent[EventTarget], Unit]],
   offlineProvider: js.UndefOr[IOfflineProvider],
   useArrayBuffer: js.UndefOr[Boolean],
-  onError: js.UndefOr[js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]],
-  onOpened: js.UndefOr[js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]]
+  onError: js.UndefOr[
+  js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit]
+],
+  onOpened: js.UndefOr[js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]]
 ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
 
 inline def SetCorsBehavior(url: String, element: CrossOrigin): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetCorsBehavior")(url.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1054,38 +1074,47 @@ inline def ToLinearSpace: /* 2.2 */ Double = ^.asInstanceOf[js.Dynamic].selectDy
 
 inline def TranscodeAsync(
   data: js.typedarray.ArrayBufferView,
-  config: typings.babylonjs.basisMod.BasisTranscodeConfiguration
+  config: typings.babylonjs.miscBasisMod.BasisTranscodeConfiguration
 ): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
-inline def TranscodeAsync(data: js.typedarray.ArrayBuffer, config: typings.babylonjs.basisMod.BasisTranscodeConfiguration): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
+inline def TranscodeAsync(
+  data: js.typedarray.ArrayBuffer,
+  config: typings.babylonjs.miscBasisMod.BasisTranscodeConfiguration
+): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
 
 inline def UnregisterAllMaterialPlugins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UnregisterAllMaterialPlugins")().asInstanceOf[Unit]
 
 inline def UnregisterMaterialPlugin(pluginName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UnregisterMaterialPlugin")(pluginName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
 inline def UpdateRGBDAsync(
-  internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
+  internalTexture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
   data: js.Array[js.Array[js.typedarray.ArrayBufferView]],
-  sphericalPolynomial: Nullable[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial],
+  sphericalPolynomial: Nullable[typings.babylonjs.mathsSphericalPolynomialMod.SphericalPolynomial],
   lodScale: Double,
   lodOffset: Double
-): js.Promise[typings.babylonjs.internalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("_UpdateRGBDAsync")(internalTexture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], sphericalPolynomial.asInstanceOf[js.Any], lodScale.asInstanceOf[js.Any], lodOffset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.internalTextureMod.InternalTexture]]
+): js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("_UpdateRGBDAsync")(internalTexture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], sphericalPolynomial.asInstanceOf[js.Any], lodScale.asInstanceOf[js.Any], lodOffset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]]
 
-inline def UploadContent(texture: typings.babylonjs.internalTextureMod.InternalTexture, data: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadContent")(texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def UploadContent(
+  texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
+  data: js.typedarray.Uint8Array
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadContent")(texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def UploadEnvLevelsAsync(
-  texture: typings.babylonjs.internalTextureMod.InternalTexture,
+  texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
   data: js.typedarray.ArrayBufferView,
   info: EnvironmentTextureInfo
 ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadEnvLevelsAsync")(texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
-inline def UploadEnvSpherical(texture: typings.babylonjs.internalTextureMod.InternalTexture, info: EnvironmentTextureInfo): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadEnvSpherical")(texture.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def UploadEnvSpherical(
+  texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
+  info: EnvironmentTextureInfo
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadEnvSpherical")(texture.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def UploadLevelsAsync(
-  texture: typings.babylonjs.internalTextureMod.InternalTexture,
+  texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
   imageData: js.Array[js.Array[js.typedarray.ArrayBufferView]]
 ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadLevelsAsync")(texture.asInstanceOf[js.Any], imageData.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def UploadLevelsAsync(
-  texture: typings.babylonjs.internalTextureMod.InternalTexture,
+  texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
   imageData: js.Array[js.Array[js.typedarray.ArrayBufferView]],
   imageType: String
 ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadLevelsAsync")(texture.asInstanceOf[js.Any], imageData.asInstanceOf[js.Any], imageType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
@@ -1117,19 +1146,19 @@ inline def allocateAndCopyTypedBuffer(`type`: Double, sizeOrDstBuffer: Double, s
 inline def className(name: String): js.Function1[/* target */ js.Object, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("className")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ js.Object, Unit]]
 inline def className(name: String, module: String): js.Function1[/* target */ js.Object, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("className")(name.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Object, Unit]]
 
-inline def createDetailMapPlugin(material: typings.babylonjs.materialMod.Material): Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDetailMapPlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase]]
+inline def createDetailMapPlugin(material: typings.babylonjs.materialsMaterialMod.Material): Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDetailMapPlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase]]
 
-inline def createPBRAnisotropicPlugin(material: typings.babylonjs.materialMod.Material): Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPBRAnisotropicPlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase]]
+inline def createPBRAnisotropicPlugin(material: typings.babylonjs.materialsMaterialMod.Material): Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPBRAnisotropicPlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase]]
 
-inline def createPBRBRDFPlugin(material: typings.babylonjs.materialMod.Material): Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPBRBRDFPlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase]]
+inline def createPBRBRDFPlugin(material: typings.babylonjs.materialsMaterialMod.Material): Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPBRBRDFPlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase]]
 
-inline def createPBRClearCoatPlugin(material: typings.babylonjs.materialMod.Material): Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPBRClearCoatPlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase]]
+inline def createPBRClearCoatPlugin(material: typings.babylonjs.materialsMaterialMod.Material): Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPBRClearCoatPlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase]]
 
-inline def createPBRIridescencePlugin(material: typings.babylonjs.materialMod.Material): Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPBRIridescencePlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase]]
+inline def createPBRIridescencePlugin(material: typings.babylonjs.materialsMaterialMod.Material): Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPBRIridescencePlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase]]
 
-inline def createPBRSheenPlugin(material: typings.babylonjs.materialMod.Material): Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPBRSheenPlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase]]
+inline def createPBRSheenPlugin(material: typings.babylonjs.materialsMaterialMod.Material): Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPBRSheenPlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase]]
 
-inline def createPBRSubSurfacePlugin(material: typings.babylonjs.materialMod.Material): Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPBRSubSurfacePlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialPluginBaseMod.MaterialPluginBase]]
+inline def createPBRSubSurfacePlugin(material: typings.babylonjs.materialsMaterialMod.Material): Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPBRSubSurfacePlugin")(material.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.materialsMaterialPluginBaseMod.MaterialPluginBase]]
 
 inline def createYieldingScheduler[T](): js.Function3[
 /* coroutine */ AsyncCoroutine[T], 
@@ -1156,22 +1185,22 @@ inline def editableInPropertyPage(displayName: String, propertyType: Unit, group
 inline def editableInPropertyPage(displayName: String, propertyType: Unit, groupName: Unit, options: IEditablePropertyOption): js.Function2[/* target */ Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String, Unit]]
 inline def editableInPropertyPage(
   displayName: String,
-  propertyType: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition
+  propertyType: typings.babylonjs.materialsNodeNodeMaterialDecoratorMod.PropertyTypeForEdition
 ): js.Function2[/* target */ Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String, Unit]]
 inline def editableInPropertyPage(
   displayName: String,
-  propertyType: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition,
+  propertyType: typings.babylonjs.materialsNodeNodeMaterialDecoratorMod.PropertyTypeForEdition,
   groupName: String
 ): js.Function2[/* target */ Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String, Unit]]
 inline def editableInPropertyPage(
   displayName: String,
-  propertyType: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition,
+  propertyType: typings.babylonjs.materialsNodeNodeMaterialDecoratorMod.PropertyTypeForEdition,
   groupName: String,
   options: IEditablePropertyOption
 ): js.Function2[/* target */ Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String, Unit]]
 inline def editableInPropertyPage(
   displayName: String,
-  propertyType: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition,
+  propertyType: typings.babylonjs.materialsNodeNodeMaterialDecoratorMod.PropertyTypeForEdition,
   groupName: Unit,
   options: IEditablePropertyOption
 ): js.Function2[/* target */ Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String, Unit]]
@@ -1185,13 +1214,13 @@ inline def extractMinAndMax(
   positions: FloatArray,
   start: Double,
   count: Double,
-  bias: Nullable[typings.babylonjs.mathVectorMod.Vector2]
+  bias: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector2]
 ): Maximum = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMinAndMax")(positions.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Maximum]
 inline def extractMinAndMax(
   positions: FloatArray,
   start: Double,
   count: Double,
-  bias: Nullable[typings.babylonjs.mathVectorMod.Vector2],
+  bias: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector2],
   stride: Double
 ): Maximum = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMinAndMax")(positions.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Maximum]
 
@@ -1201,7 +1230,7 @@ inline def extractMinAndMaxIndexed(
   indices: IndicesArray,
   indexStart: Double,
   indexCount: Double,
-  bias: Nullable[typings.babylonjs.mathVectorMod.Vector2]
+  bias: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector2]
 ): Maximum = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMinAndMaxIndexed")(positions.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Maximum]
 
 inline def forceSceneHelpersToBundle: Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("_forceSceneHelpersToBundle").asInstanceOf[Boolean]
@@ -1228,12 +1257,12 @@ inline def injectLTSFileTools(
   /* useArrayBuffer */ js.UndefOr[Boolean], 
   /* onError */ js.UndefOr[
     js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
+      /* exception */ js.UndefOr[typings.babylonjs.miscFileToolsMod.LoadFileError], 
       Unit
     ]
   ], 
-  /* onOpened */ js.UndefOr[js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]], 
+  /* onOpened */ js.UndefOr[js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]], 
   IFileRequest
 ],
   LoadImage: js.Function6[
@@ -1250,21 +1279,23 @@ inline def injectLTSFileTools(
   /* onSuccess */ js.Function1[/* data */ Any, Unit], 
   /* onProgress */ js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], Any]], 
   /* useArrayBuffer */ js.UndefOr[Boolean], 
-  /* onError */ js.UndefOr[js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]], 
+  /* onError */ js.UndefOr[js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]], 
   IFileRequest
 ],
   RequestFile: js.Function7[
   /* url */ String, 
   /* onSuccess */ js.Function2[
     /* data */ String | js.typedarray.ArrayBuffer, 
-    /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+    /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
     Unit
   ], 
   /* onProgress */ js.UndefOr[js.Function1[/* event */ ProgressEvent[EventTarget], Unit]], 
   /* offlineProvider */ js.UndefOr[IOfflineProvider], 
   /* useArrayBuffer */ js.UndefOr[Boolean], 
-  /* onError */ js.UndefOr[js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]], 
-  /* onOpened */ js.UndefOr[js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]], 
+  /* onError */ js.UndefOr[
+    js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit]
+  ], 
+  /* onOpened */ js.UndefOr[js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]], 
   IFileRequest
 ],
   SetCorsBehavior: js.Function2[/* url */ String | js.Array[String], /* element */ CrossOrigin, Unit]
@@ -1350,12 +1381,12 @@ inline def serializeAsVector2(sourceName: String): js.Function2[/* target */ Any
 inline def serializeAsVector3(): js.Function2[/* target */ Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsVector3")().asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String | js.Symbol, Unit]]
 inline def serializeAsVector3(sourceName: String): js.Function2[/* target */ Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsVector3")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String | js.Symbol, Unit]]
 
-inline def setAndStartTimer(options: ITimerOptions[Any]): Nullable[typings.babylonjs.observableMod.Observer[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAndStartTimer")(options.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.observableMod.Observer[Any]]]
+inline def setAndStartTimer(options: ITimerOptions[Any]): Nullable[typings.babylonjs.miscObservableMod.Observer[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAndStartTimer")(options.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.miscObservableMod.Observer[Any]]]
 
-inline def setStereoscopicAnaglyphRigMode(camera: typings.babylonjs.cameraMod.Camera): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStereoscopicAnaglyphRigMode")(camera.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setStereoscopicAnaglyphRigMode(camera: typings.babylonjs.camerasCameraMod.Camera): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStereoscopicAnaglyphRigMode")(camera.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def setStereoscopicRigMode(camera: typings.babylonjs.cameraMod.Camera): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStereoscopicRigMode")(camera.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setStereoscopicRigMode(camera: typings.babylonjs.camerasCameraMod.Camera): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStereoscopicRigMode")(camera.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def setVRRigMode(camera: typings.babylonjs.cameraMod.Camera, rigParams: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVRRigMode")(camera.asInstanceOf[js.Any], rigParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def setVRRigMode(camera: typings.babylonjs.camerasCameraMod.Camera, rigParams: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVRRigMode")(camera.asInstanceOf[js.Any], rigParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def setWebVRRigMode(camera: typings.babylonjs.cameraMod.Camera, rigParams: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setWebVRRigMode")(camera.asInstanceOf[js.Any], rigParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def setWebVRRigMode(camera: typings.babylonjs.camerasCameraMod.Camera, rigParams: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setWebVRRigMode")(camera.asInstanceOf[js.Any], rigParams.asInstanceOf[js.Any])).asInstanceOf[Unit]

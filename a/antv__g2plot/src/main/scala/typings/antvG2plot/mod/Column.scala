@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialColumnOptions
-import typings.antvG2plot.columnTypesMod.ColumnOptions
+import typings.antvG2plot.libPlotsColumnTypesMod.ColumnOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Column")
 @js.native
 open class Column protected ()
-  extends typings.antvG2plot.columnMod.Column {
+  extends typings.antvG2plot.libPlotsColumnMod.Column {
   def this(container: String, options: ColumnOptions) = this()
   def this(container: HTMLElement, options: ColumnOptions) = this()
 }

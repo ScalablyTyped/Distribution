@@ -1,6 +1,5 @@
 package typings.q
 
-import typings.q.anon.Typeofq
 import typings.q.mod.Deferred
 import typings.q.mod.IPromise
 import typings.q.mod.IWhenable
@@ -110,7 +109,7 @@ object global {
     
     inline def ninvoke[T](nodeModule: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ninvoke")((scala.List(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
     
-    inline def noConflict(): Typeofq = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Typeofq]
+    inline def noConflict(): js.Function0[Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[js.Function0[Promise[Unit]]]
     
     inline def npost[T](nodeModule: Any, functionName: String, args: js.Array[Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("npost")(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     

@@ -8,11 +8,11 @@ trait Options extends StObject {
   
   var options: AllowUnknown
   
-  var query: js.Any
+  var query: Any
 }
 object Options {
   
-  inline def apply(options: AllowUnknown, query: js.Any): Options = {
+  inline def apply(options: AllowUnknown, query: Any): Options = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
@@ -21,6 +21,6 @@ object Options {
     
     inline def setOptions(value: AllowUnknown): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

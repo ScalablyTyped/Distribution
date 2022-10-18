@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.matrixMod.MatrixRoomData
+import typings.matrixAppserviceBridge.libModelsRoomsMatrixMod.MatrixRoomData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "MatrixRoom")
 @js.native
 open class MatrixRoom protected ()
-  extends typings.matrixAppserviceBridge.matrixMod.MatrixRoom {
+  extends typings.matrixAppserviceBridge.libModelsRoomsMatrixMod.MatrixRoom {
   /**
     * Create a matrix room.
     * @param roomId The room ID

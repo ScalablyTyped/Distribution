@@ -5,8 +5,8 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
 import typings.linkifyIt.mod.LinkifyIt
-import typings.markdownIt.helpersMod.Helpers
-import typings.markdownIt.utilsMod.Utils
+import typings.markdownIt.libCommonUtilsMod.Utils
+import typings.markdownIt.libHelpersMod.Helpers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +36,7 @@ object libMod extends Shortcut {
       * writing plugins. For simple rules control use [[MarkdownIt.disable]] and
       * [[MarkdownIt.enable]].
       */
-    val block: typings.markdownIt.parserBlockMod.^ = js.native
+    val block: typings.markdownIt.libParserBlockMod.^ = js.native
     
     /**
       * *chainable*, *internal*
@@ -55,7 +55,7 @@ object libMod extends Shortcut {
       * writing plugins. For simple rules control use [[MarkdownIt.disable]] and
       * [[MarkdownIt.enable]].
       */
-    val core: typings.markdownIt.parserCoreMod.^ = js.native
+    val core: typings.markdownIt.libParserCoreMod.^ = js.native
     
     /**
       * *chainable*
@@ -100,7 +100,7 @@ object libMod extends Shortcut {
       * writing plugins. For simple rules control use [[MarkdownIt.disable]] and
       * [[MarkdownIt.enable]].
       */
-    val `inline`: typings.markdownIt.parserInlineMod.^ = js.native
+    val `inline`: typings.markdownIt.libParserInlineMod.^ = js.native
     
     /**
       * [linkify-it](https://github.com/markdown-it/linkify-it) instance.
@@ -138,7 +138,7 @@ object libMod extends Shortcut {
       * @param src source string
       * @param env environment sandbox
       */
-    def parse(src: String, env: Any): js.Array[typings.markdownIt.tokenMod.^] = js.native
+    def parse(src: String, env: Any): js.Array[typings.markdownIt.libTokenMod.^] = js.native
     
     /**
       * *internal*
@@ -150,7 +150,7 @@ object libMod extends Shortcut {
       * @param src source string
       * @param env environment sandbox
       */
-    def parseInline(src: String, env: Any): js.Array[typings.markdownIt.tokenMod.^] = js.native
+    def parseInline(src: String, env: Any): js.Array[typings.markdownIt.libTokenMod.^] = js.native
     
     /**
       * Render markdown string into html. It does all magic for you :).
@@ -194,7 +194,7 @@ object libMod extends Shortcut {
       *
       * See [[Renderer]] docs and [source code](https://github.com/markdown-it/markdown-it/blob/master/lib/renderer.js).
       */
-    val renderer: typings.markdownIt.rendererMod.^ = js.native
+    val renderer: typings.markdownIt.libRendererMod.^ = js.native
     
     /**
       * *chainable*

@@ -1,9 +1,9 @@
 package typings.bugsnagJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.bugsnagJs.clientMod._NotifiableError
-import typings.bugsnagJs.reportMod.IStackframe
-import typings.bugsnagJs.reportMod.Report
+import typings.bugsnagJs.typesClientMod._NotifiableError
+import typings.bugsnagJs.typesReportMod.IStackframe
+import typings.bugsnagJs.typesReportMod.Report
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +12,21 @@ object anon {
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[String] {
+       with /* key */ StringDictionary[Any] {
     
-    var releaseStage: String
+    var `type`: String
   }
   object Dictkey {
     
-    inline def apply(releaseStage: String): Dictkey = {
-      val __obj = js.Dynamic.literal(releaseStage = releaseStage.asInstanceOf[js.Any])
+    inline def apply(`type`: String): Dictkey = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
     extension [Self <: Dictkey](x: Self) {
       
-      inline def setReleaseStage(value: String): Self = StObject.set(x, "releaseStage", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -144,23 +145,22 @@ object anon {
     }
   }
   
-  trait Type
+  trait ReleaseStage
     extends StObject
-       with /* key */ StringDictionary[Any] {
+       with /* key */ StringDictionary[String] {
     
-    var `type`: String
+    var releaseStage: String
   }
-  object Type {
+  object ReleaseStage {
     
-    inline def apply(`type`: String): Type = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Type]
+    inline def apply(releaseStage: String): ReleaseStage = {
+      val __obj = js.Dynamic.literal(releaseStage = releaseStage.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ReleaseStage]
     }
     
-    extension [Self <: Type](x: Self) {
+    extension [Self <: ReleaseStage](x: Self) {
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setReleaseStage(value: String): Self = StObject.set(x, "releaseStage", value.asInstanceOf[js.Any])
     }
   }
   

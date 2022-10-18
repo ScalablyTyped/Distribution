@@ -12,18 +12,16 @@ import typings.grpcGcp.anon.TypeofServerCredentials
 import typings.grpcGcp.anon.Typeofcredentials
 import typings.grpcGcp.anon.Typeofexperimental
 import typings.grpcGrpcJs.anon.PartialConsole
-import typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
-import typings.grpcGrpcJs.channelMod.Channel
-import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
-import typings.grpcGrpcJs.clientInterceptorsMod.InterceptingCallInterface
-import typings.grpcGrpcJs.clientMod.Client
-import typings.grpcGrpcJs.constantsMod.LogVerbosity
-import typings.grpcGrpcJs.makeClientMod.GrpcObject
-import typings.grpcGrpcJs.makeClientMod.PackageDefinition
-import typings.grpcGrpcJs.makeClientMod.ServiceClientConstructor
-import typings.grpcGrpcJs.srcServerMod.Server
-import typings.grpcGrpcJs.v1ChannelzMod.ChannelzDefinition
-import typings.grpcGrpcJs.v1ChannelzMod.ChannelzHandlers
+import typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials
+import typings.grpcGrpcJs.buildSrcChannelMod.Channel
+import typings.grpcGrpcJs.buildSrcChannelOptionsMod.ChannelOptions
+import typings.grpcGrpcJs.buildSrcClientInterceptorsMod.InterceptingCallInterface
+import typings.grpcGrpcJs.buildSrcClientMod.Client
+import typings.grpcGrpcJs.buildSrcConstantsMod.LogVerbosity
+import typings.grpcGrpcJs.buildSrcMakeClientMod.GrpcObject
+import typings.grpcGrpcJs.buildSrcMakeClientMod.PackageDefinition
+import typings.grpcGrpcJs.buildSrcMakeClientMod.ServiceClientConstructor
+import typings.grpcGrpcJs.buildSrcServerMod.Server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,9 +78,9 @@ object mod {
     
     val experimental: Typeofexperimental = js.native
     
-    def getChannelzHandlers(): ChannelzHandlers = js.native
+    def getChannelzHandlers(): Any = js.native
     
-    def getChannelzServiceDefinition(): ChannelzDefinition = js.native
+    def getChannelzServiceDefinition(): Any = js.native
     
     def getClientChannel(client: Client): Channel = js.native
     

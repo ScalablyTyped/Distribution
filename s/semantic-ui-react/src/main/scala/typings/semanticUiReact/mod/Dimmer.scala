@@ -3,10 +3,10 @@ package typings.semanticUiReact.mod
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.dimmerDimmableMod.DimmerDimmableProps
-import typings.semanticUiReact.dimmerDimmerMod.DimmerComponent
-import typings.semanticUiReact.dimmerDimmerMod.DimmerProps
-import typings.semanticUiReact.dimmerInnerMod.default
+import typings.semanticUiReact.distCommonjsModulesDimmerDimmerDimmableMod.DimmerDimmableProps
+import typings.semanticUiReact.distCommonjsModulesDimmerDimmerInnerMod.default
+import typings.semanticUiReact.distCommonjsModulesDimmerDimmerMod.DimmerComponent
+import typings.semanticUiReact.distCommonjsModulesDimmerDimmerMod.DimmerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

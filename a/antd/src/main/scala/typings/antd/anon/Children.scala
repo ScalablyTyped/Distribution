@@ -1,6 +1,6 @@
 package typings.antd.anon
 
-import typings.rcSelect.baseSelectMod.BaseSelectRef
+import typings.rcSelect.libBaseSelectMod.BaseSelectRef
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

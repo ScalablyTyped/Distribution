@@ -1,7 +1,7 @@
 
 # Scala.js typings for atlaskit__ds-lib
 
-Typings are for version 2.1.1
+Typings are for version 2.1.2
 
 ## Library description:
 Reusable utilities and hooks specific to design system.

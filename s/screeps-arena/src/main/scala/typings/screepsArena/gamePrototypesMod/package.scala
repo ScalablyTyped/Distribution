@@ -1,7 +1,6 @@
 package typings.screepsArena.gamePrototypesMod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.screepsArena.constantsMod.ResourceConstant
+import typings.screepsArena.gameConstantsMod.ResourceConstant
 import typings.screepsArena.gamePrototypesMod.^
 import typings.screepsArena.screepsArenaStrings.`extension`
 import typings.screepsArena.screepsArenaStrings.constructedWall
@@ -38,6 +37,6 @@ type STRUCTURE_TOWER = tower
 
 type STRUCTURE_WALL = constructedWall
 
-type Store[POSSIBLE_RESOURCES /* <: ResourceConstant */] = StoreBase[POSSIBLE_RESOURCES] & typings.screepsArena.screepsArenaStrings.Store & TopLevel[Any]
+type Store[POSSIBLE_RESOURCES /* <: ResourceConstant */] = StoreBase[POSSIBLE_RESOURCES] & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in POSSIBLE_RESOURCES ]: number} */ js.Any)
 
 type StructureConstant = STRUCTURE_TOWER | STRUCTURE_EXTENSION | STRUCTURE_WALL | STRUCTURE_CONTAINER | STRUCTURE_RAMPART | STRUCTURE_SPAWN | STRUCTURE_ROAD

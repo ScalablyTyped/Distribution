@@ -1,7 +1,7 @@
 package typings.hellosignSdk.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.hellosignSdk.anon.AccountidEmailaddress
+import typings.hellosignSdk.anon.Accountid
 import typings.hellosignSdk.anon.Caninserteverywhere
 import typings.hellosignSdk.anon.Chargesusers
 import org.scalablytyped.runtime.StObject
@@ -26,7 +26,7 @@ trait ApiApp extends StObject {
   
   var options: Caninserteverywhere
   
-  var owner_account: AccountidEmailaddress
+  var owner_account: Accountid
   
   var white_labeling_options: StringDictionary[Any]
 }
@@ -40,7 +40,7 @@ object ApiApp {
     is_approved: Boolean,
     name: String,
     options: Caninserteverywhere,
-    owner_account: AccountidEmailaddress,
+    owner_account: Accountid,
     white_labeling_options: StringDictionary[Any]
   ): ApiApp = {
     val __obj = js.Dynamic.literal(callback_url = callback_url.asInstanceOf[js.Any], client_id = client_id.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], is_approved = is_approved.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], owner_account = owner_account.asInstanceOf[js.Any], white_labeling_options = white_labeling_options.asInstanceOf[js.Any], oauth = null)
@@ -67,7 +67,7 @@ object ApiApp {
     
     inline def setOptions(value: Caninserteverywhere): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOwner_account(value: AccountidEmailaddress): Self = StObject.set(x, "owner_account", value.asInstanceOf[js.Any])
+    inline def setOwner_account(value: Accountid): Self = StObject.set(x, "owner_account", value.asInstanceOf[js.Any])
     
     inline def setWhite_labeling_options(value: StringDictionary[Any]): Self = StObject.set(x, "white_labeling_options", value.asInstanceOf[js.Any])
   }

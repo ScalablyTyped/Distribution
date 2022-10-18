@@ -1,5 +1,6 @@
 package typings.node.http2Mod
 
+import typings.node.nodeColontlsMod.TLSSocket
 import typings.node.nodeStrings.checkContinue
 import typings.node.nodeStrings.request
 import typings.node.nodeStrings.session
@@ -7,7 +8,6 @@ import typings.node.nodeStrings.sessionError
 import typings.node.nodeStrings.stream
 import typings.node.nodeStrings.timeout
 import typings.node.nodeStrings.unknownProtocol
-import typings.node.nodeTlsMod.TLSSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

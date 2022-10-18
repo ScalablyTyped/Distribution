@@ -18,9 +18,6 @@ trait TreeshakingOptions extends StObject {
   
   var propertyReadSideEffects: js.UndefOr[Boolean | always] = js.undefined
   
-  /** @deprecated Use `moduleSideEffects` instead */
-  var pureExternalModules: js.UndefOr[PureModulesOption] = js.undefined
-  
   var tryCatchDeoptimization: js.UndefOr[Boolean] = js.undefined
   
   var unknownGlobalSideEffects: js.UndefOr[Boolean] = js.undefined
@@ -57,14 +54,6 @@ object TreeshakingOptions {
     inline def setPropertyReadSideEffects(value: Boolean | always): Self = StObject.set(x, "propertyReadSideEffects", value.asInstanceOf[js.Any])
     
     inline def setPropertyReadSideEffectsUndefined: Self = StObject.set(x, "propertyReadSideEffects", js.undefined)
-    
-    inline def setPureExternalModules(value: PureModulesOption): Self = StObject.set(x, "pureExternalModules", value.asInstanceOf[js.Any])
-    
-    inline def setPureExternalModulesFunction1(value: /* id */ String => Boolean | Null | Unit): Self = StObject.set(x, "pureExternalModules", js.Any.fromFunction1(value))
-    
-    inline def setPureExternalModulesUndefined: Self = StObject.set(x, "pureExternalModules", js.undefined)
-    
-    inline def setPureExternalModulesVarargs(value: String*): Self = StObject.set(x, "pureExternalModules", js.Array(value*))
     
     inline def setTryCatchDeoptimization(value: Boolean): Self = StObject.set(x, "tryCatchDeoptimization", value.asInstanceOf[js.Any])
     

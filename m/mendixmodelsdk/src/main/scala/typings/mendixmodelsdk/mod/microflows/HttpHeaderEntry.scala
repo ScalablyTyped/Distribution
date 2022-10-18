@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.microflows
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "microflows.HttpHeaderEntry")
 @js.native
 open class HttpHeaderEntry protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.microflows.HttpHeaderEntry {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.microflows.HttpHeaderEntry {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object HttpHeaderEntry {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpHeaderEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpHeaderEntry]
   
   /**
     * Creates and returns a new HttpHeaderEntry instance in the SDK and on the server.
@@ -47,7 +47,7 @@ object HttpHeaderEntry {
     *  6.0.0 to 9.1.0
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration): typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpHeaderEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpHeaderEntry]
   
   /**
     * Creates and returns a new HttpHeaderEntry instance in the SDK and on the server.
@@ -58,7 +58,7 @@ object HttpHeaderEntry {
     *  9.2.0 and higher
     */
   /* static member */
-  inline def createInFormDataPartUnderHeaderEntries(container: typings.mendixmodelsdk.microflowsMod.microflows.FormDataPart): typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderHeaderEntries")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry]
+  inline def createInFormDataPartUnderHeaderEntries(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.FormDataPart): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpHeaderEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderHeaderEntries")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpHeaderEntry]
   
   /**
     * Creates and returns a new HttpHeaderEntry instance in the SDK and on the server.
@@ -66,7 +66,7 @@ object HttpHeaderEntry {
     * of the parent HttpConfiguration element passed as argument.
     */
   /* static member */
-  inline def createInHttpConfigurationUnderHeaderEntries(container: typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration): typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderHeaderEntries")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry]
+  inline def createInHttpConfigurationUnderHeaderEntries(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpHeaderEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderHeaderEntries")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpHeaderEntry]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.HttpHeaderEntry.structureTypeName")

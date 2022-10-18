@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information for the RedialRequested event. */
-@JSGlobal("Windows.Media.Devices.RedialRequestedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.RedialRequestedEventArgs")
 @js.native
-abstract class RedialRequestedEventArgs ()
+open class RedialRequestedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.RedialRequestedEventArgs {
   

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Checkoutstep
   extends StObject
-     with /* key */ StringDictionary[Any] {
+     with /** Custom claims set by the developer */
+/* claim */ StringDictionary[Any] {
   
   var checkout_option: js.UndefOr[String] = js.undefined
   

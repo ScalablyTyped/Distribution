@@ -9,7 +9,7 @@ object mod {
   @JSImport("rmc-cascader", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.rmcCascader.cascaderMod.default
+    extends typings.rmcCascader.libCascaderMod.default
   object default {
     
     /* static member */

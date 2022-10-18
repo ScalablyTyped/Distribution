@@ -1,11 +1,11 @@
 package typings.reachDescendants
 
+import typings.reachDescendants.mod.Descendant
+import typings.reachDescendants.mod.DescendantContextValue
 import typings.reachDescendants.reachDescendantsStrings.both
 import typings.reachDescendants.reachDescendantsStrings.horizontal
 import typings.reachDescendants.reachDescendantsStrings.option
 import typings.reachDescendants.reachDescendantsStrings.vertical
-import typings.reachDescendants.srcMod.Descendant
-import typings.reachDescendants.srcMod.DescendantContextValue
 import typings.react.mod.Context
 import typings.react.mod.Dispatch
 import typings.react.mod.ReactNode

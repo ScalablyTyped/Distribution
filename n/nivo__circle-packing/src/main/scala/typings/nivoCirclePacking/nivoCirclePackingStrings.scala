@@ -1,6 +1,6 @@
 package typings.nivoCirclePacking
 
-import typings.nivoCirclePacking.typesMod.CirclePackingLayerId
+import typings.nivoCirclePacking.distTypesTypesMod.CirclePackingLayerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

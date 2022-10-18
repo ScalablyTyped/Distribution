@@ -1,7 +1,7 @@
 package typings.rxjs.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.rxjs.coldObservableMod.ColdObservable
+import typings.rxjs.distTypesInternalTestingColdObservableMod.ColdObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

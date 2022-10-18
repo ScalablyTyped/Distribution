@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RenderMode extends StObject {
   
-  var renderMode: typings.blueprintjsTable.renderModeMod.RenderMode
+  var renderMode: typings.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode
 }
 object RenderMode {
   
-  inline def apply(renderMode: typings.blueprintjsTable.renderModeMod.RenderMode): RenderMode = {
+  inline def apply(renderMode: typings.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode): RenderMode = {
     val __obj = js.Dynamic.literal(renderMode = renderMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderMode]
   }
   
   extension [Self <: RenderMode](x: Self) {
     
-    inline def setRenderMode(value: typings.blueprintjsTable.renderModeMod.RenderMode): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
+    inline def setRenderMode(value: typings.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
   }
 }

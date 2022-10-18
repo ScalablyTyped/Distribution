@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsPenNibAddSmallMod.PenNibAddSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object penNibAddSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/PenNibAddSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/PenNibAddSmall", JSImport.Default)
   @js.native
   val default: FC[PenNibAddSmallProps] = js.native
-  
-  trait PenNibAddSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object PenNibAddSmallProps {
-    
-    inline def apply(): PenNibAddSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PenNibAddSmallProps]
-    }
-    
-    extension [Self <: PenNibAddSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[PenNibAddSmallProps]
   

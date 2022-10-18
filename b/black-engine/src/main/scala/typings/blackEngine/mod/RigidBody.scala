@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "RigidBody")
 @js.native
 open class RigidBody ()
-  extends typings.blackEngine.rigidBodyMod.RigidBody
+  extends typings.blackEngine.physicsRigidBodyMod.RigidBody

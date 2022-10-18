@@ -1,9 +1,9 @@
 package typings.jupyterlabApputils
 
-import typings.jupyterlabApputils.hoverboxMod.OutOfViewDisplay
-import typings.jupyterlabApputils.iframeMod.IFrame.ReferrerPolicy
-import typings.jupyterlabApputils.iframeMod.IFrame.SandboxExceptions
-import typings.jupyterlabApputils.sessioncontextMod.ISessionContext._KernelDisplayStatus
+import typings.jupyterlabApputils.libHoverboxMod.OutOfViewDisplay
+import typings.jupyterlabApputils.libIframeMod.IFrame.ReferrerPolicy
+import typings.jupyterlabApputils.libIframeMod.IFrame.SandboxExceptions
+import typings.jupyterlabApputils.libSessioncontextMod.ISessionContext._KernelDisplayStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

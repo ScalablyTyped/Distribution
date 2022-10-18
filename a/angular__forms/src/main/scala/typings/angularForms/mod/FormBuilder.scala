@@ -1,7 +1,6 @@
 package typings.angularForms.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectableDeclaration
 import typings.angularForms.anon.FormControlOptionsinitial
@@ -144,14 +143,10 @@ open class FormBuilder () extends StObject {
     * | submit').
     */
   def group[T /* <: js.Object */](controls: T): FormGroup[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: @angular/forms.@angular/forms.ɵElement<T[K], null>}
-    */ typings.angularForms.angularFormsStrings.FormBuilder & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: @angular/forms.@angular/forms.ɵElement<T[K], null>} */ js.Any
   ] = js.native
   def group[T /* <: js.Object */](controls: T, options: AbstractControlOptions): FormGroup[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: @angular/forms.@angular/forms.ɵElement<T[K], null>}
-    */ typings.angularForms.angularFormsStrings.FormBuilder & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: @angular/forms.@angular/forms.ɵElement<T[K], null>} */ js.Any
   ] = js.native
   
   /**

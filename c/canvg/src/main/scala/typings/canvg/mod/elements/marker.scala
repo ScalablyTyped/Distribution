@@ -1,7 +1,7 @@
 package typings.canvg.mod.elements
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.canvg.markerElementMod.MarkerElement
+import typings.canvg.distDocumentMarkerElementMod.MarkerElement
 import typings.canvg.mod.elements.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

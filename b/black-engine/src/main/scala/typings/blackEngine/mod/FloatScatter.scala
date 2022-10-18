@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "FloatScatter")
 @js.native
 open class FloatScatter ()
-  extends typings.blackEngine.floatScatterMod.FloatScatter {
+  extends typings.blackEngine.scattersFloatScatterMod.FloatScatter {
   def this(min: Double) = this()
   def this(min: Double, max: Double) = this()
   def this(min: Unit, max: Double) = this()
@@ -23,5 +23,5 @@ object FloatScatter {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromObject(values: (Double | typings.blackEngine.floatScatterBaseMod.FloatScatterBase)*): typings.blackEngine.floatScatterBaseMod.FloatScatterBase = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.blackEngine.floatScatterBaseMod.FloatScatterBase]
+  inline def fromObject(values: (Double | typings.blackEngine.scattersFloatScatterBaseMod.FloatScatterBase)*): typings.blackEngine.scattersFloatScatterBaseMod.FloatScatterBase = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.blackEngine.scattersFloatScatterBaseMod.FloatScatterBase]
 }

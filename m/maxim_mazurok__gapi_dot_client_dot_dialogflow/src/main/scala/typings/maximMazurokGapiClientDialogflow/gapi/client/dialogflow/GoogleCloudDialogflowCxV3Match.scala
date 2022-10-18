@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,9 +28,7 @@ trait GoogleCloudDialogflowCxV3Match extends StObject {
     * composite entity then use map from composite entity property names to property values, otherwise, use parameter value.
     */
   var parameters: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3Match & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Final text input which was matched during MatchIntent. This value can be different from original input sent in request because of spelling correction or other processing. */
@@ -63,9 +60,7 @@ object GoogleCloudDialogflowCxV3Match {
     inline def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
     
     inline def setParameters(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3Match & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)

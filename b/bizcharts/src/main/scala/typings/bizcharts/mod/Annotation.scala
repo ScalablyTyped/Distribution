@@ -9,12 +9,12 @@ object Annotation {
   @JSImport("bizcharts", "Annotation.Arc")
   @js.native
   open class Arc ()
-    extends typings.bizcharts.annotationMod.Arc
+    extends typings.bizcharts.libComponentsAnnotationMod.Arc
   
-  @JSImport("bizcharts", "Annotation.Base")
+  /* note: abstract class */ @JSImport("bizcharts", "Annotation.Base")
   @js.native
-  abstract class Base[PropsI] ()
-    extends typings.bizcharts.annotationMod.Base[PropsI]
+  open class Base[PropsI] ()
+    extends typings.bizcharts.libComponentsAnnotationMod.Base[PropsI]
   object Base {
     
     @JSImport("bizcharts", "Annotation.Base")
@@ -31,45 +31,45 @@ object Annotation {
   @JSImport("bizcharts", "Annotation.DataMarker")
   @js.native
   open class DataMarker ()
-    extends typings.bizcharts.annotationMod.DataMarker
+    extends typings.bizcharts.libComponentsAnnotationMod.DataMarker
   
   @JSImport("bizcharts", "Annotation.DataRegion")
   @js.native
   open class DataRegion ()
-    extends typings.bizcharts.annotationMod.DataRegion
+    extends typings.bizcharts.libComponentsAnnotationMod.DataRegion
   
   @JSImport("bizcharts", "Annotation.Html")
   @js.native
   open class Html ()
-    extends typings.bizcharts.annotationMod.Html
+    extends typings.bizcharts.libComponentsAnnotationMod.Html
   
   @JSImport("bizcharts", "Annotation.Image")
   @js.native
   open class Image ()
-    extends typings.bizcharts.annotationMod.Image
+    extends typings.bizcharts.libComponentsAnnotationMod.Image
   
   @JSImport("bizcharts", "Annotation.Line")
   @js.native
   open class Line ()
-    extends typings.bizcharts.annotationMod.Line
+    extends typings.bizcharts.libComponentsAnnotationMod.Line
   
   @JSImport("bizcharts", "Annotation.ReactElement")
   @js.native
   open class ReactElement ()
-    extends typings.bizcharts.annotationMod.ReactElement
+    extends typings.bizcharts.libComponentsAnnotationMod.ReactElement
   
   @JSImport("bizcharts", "Annotation.Region")
   @js.native
   open class Region ()
-    extends typings.bizcharts.annotationMod.Region
+    extends typings.bizcharts.libComponentsAnnotationMod.Region
   
   @JSImport("bizcharts", "Annotation.RegionFilter")
   @js.native
   open class RegionFilter ()
-    extends typings.bizcharts.annotationMod.RegionFilter
+    extends typings.bizcharts.libComponentsAnnotationMod.RegionFilter
   
   @JSImport("bizcharts", "Annotation.Text")
   @js.native
   open class Text ()
-    extends typings.bizcharts.annotationMod.Text
+    extends typings.bizcharts.libComponentsAnnotationMod.Text
 }

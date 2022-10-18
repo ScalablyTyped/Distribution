@@ -1,6 +1,6 @@
 package typings.awsLambda.anon
 
-import typings.awsLambda.lexV2Mod.LexV2ResultDialogAction
+import typings.awsLambda.triggerLexV2Mod.LexV2ResultDialogAction
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

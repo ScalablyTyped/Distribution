@@ -148,7 +148,7 @@ object global {
     }
     
     /* augmented module */
-    object mod {
+    object leafletMod {
       
       @JSImport("leaflet", "CustomIcon")
       @js.native

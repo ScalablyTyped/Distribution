@@ -105,39 +105,18 @@ object anon {
   
   trait After extends StObject {
     
-    var after: Double
-    
-    var before: Double
-  }
-  object After {
-    
-    inline def apply(after: Double, before: Double): After = {
-      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
-      __obj.asInstanceOf[After]
-    }
-    
-    extension [Self <: After](x: Self) {
-      
-      inline def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
-      
-      inline def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Before extends StObject {
-    
     var after: js.UndefOr[Double] = js.undefined
     
     var before: js.UndefOr[Double] = js.undefined
   }
-  object Before {
+  object After {
     
-    inline def apply(): Before = {
+    inline def apply(): After = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Before]
+      __obj.asInstanceOf[After]
     }
     
-    extension [Self <: Before](x: Self) {
+    extension [Self <: After](x: Self) {
       
       inline def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -146,6 +125,27 @@ object anon {
       inline def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
       inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    }
+  }
+  
+  trait Before extends StObject {
+    
+    var after: Double
+    
+    var before: Double
+  }
+  object Before {
+    
+    inline def apply(after: Double, before: Double): Before = {
+      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Before]
+    }
+    
+    extension [Self <: Before](x: Self) {
+      
+      inline def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      
+      inline def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     }
   }
   
@@ -227,7 +227,7 @@ object anon {
     
     var keyboard: Boolean
     
-    var peek: Double | Before
+    var peek: Double | After
     
     var perTouch: Double | `false`
     
@@ -264,7 +264,7 @@ object anon {
       gap: Double,
       hoverpause: Boolean,
       keyboard: Boolean,
-      peek: Double | Before,
+      peek: Double | After,
       perTouch: Double | `false`,
       perView: Double,
       rewind: Boolean,
@@ -307,7 +307,7 @@ object anon {
       
       inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
       
-      inline def setPeek(value: Double | Before): Self = StObject.set(x, "peek", value.asInstanceOf[js.Any])
+      inline def setPeek(value: Double | After): Self = StObject.set(x, "peek", value.asInstanceOf[js.Any])
       
       inline def setPerTouch(value: Double | `false`): Self = StObject.set(x, "perTouch", value.asInstanceOf[js.Any])
       

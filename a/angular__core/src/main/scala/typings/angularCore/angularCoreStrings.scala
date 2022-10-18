@@ -3,7 +3,7 @@ package typings.angularCore
 import typings.angularCore.mod.GlobalTargetName
 import typings.angularCore.mod.InjectorScope
 import typings.angularCore.mod.ɵBypassType
-import typings.angularCore.propertyNameMod.PropertyNameWithText
+import typings.angularCore.schematicsUtilsTypescriptPropertyNameMod.PropertyNameWithText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,14 +21,6 @@ object angularCoreStrings {
   @js.native
   sealed trait BrowserAnimations extends StObject
   inline def BrowserAnimations: BrowserAnimations = "BrowserAnimations".asInstanceOf[BrowserAnimations]
-  
-  @js.native
-  sealed trait ChangeDetection extends StObject
-  inline def ChangeDetection: ChangeDetection = "ChangeDetection".asInstanceOf[ChangeDetection]
-  
-  @js.native
-  sealed trait ContentQueries extends StObject
-  inline def ContentQueries: ContentQueries = "ContentQueries".asInstanceOf[ContentQueries]
   
   @js.native
   sealed trait HTML
@@ -203,8 +195,4 @@ object angularCoreStrings {
   @js.native
   sealed trait zoneDotjs extends StObject
   inline def zoneDotjs: zoneDotjs = "zone.js".asInstanceOf[zoneDotjs]
-  
-  @js.native
-  sealed trait ɵDirectiveDef extends StObject
-  inline def ɵDirectiveDef: ɵDirectiveDef = "\u0275DirectiveDef".asInstanceOf[ɵDirectiveDef]
 }

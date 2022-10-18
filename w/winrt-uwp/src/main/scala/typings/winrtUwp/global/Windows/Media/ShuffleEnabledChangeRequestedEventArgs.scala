@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the ShuffleEnabledChangeRequested event. */
-@JSGlobal("Windows.Media.ShuffleEnabledChangeRequestedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.ShuffleEnabledChangeRequestedEventArgs")
 @js.native
-abstract class ShuffleEnabledChangeRequestedEventArgs ()
+open class ShuffleEnabledChangeRequestedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.ShuffleEnabledChangeRequestedEventArgs {
   

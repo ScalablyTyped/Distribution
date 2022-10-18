@@ -12,6 +12,9 @@ object NodeJS {
   
   trait Process extends StObject {
     
+    /**
+      * @deprecated Use `typeof window` instead
+      */
     val browser: Boolean
   }
   object Process {

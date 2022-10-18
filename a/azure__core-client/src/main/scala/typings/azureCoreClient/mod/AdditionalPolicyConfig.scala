@@ -2,7 +2,7 @@ package typings.azureCoreClient.mod
 
 import typings.azureCoreClient.azureCoreClientStrings.perCall
 import typings.azureCoreClient.azureCoreClientStrings.perRetry
-import typings.azureCoreRestPipeline.coreRestPipelineMod.PipelinePolicy
+import typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.PipelinePolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

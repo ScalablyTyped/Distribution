@@ -1,8 +1,8 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialAreaOptions
-import typings.antvG2plot.plotsAreaMod.Area
-import typings.antvG2plot.typesMod.AreaOptions
+import typings.antvG2plot.libPlotsAreaMod.Area
+import typings.antvG2plot.libPlotsAreaTypesMod.AreaOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

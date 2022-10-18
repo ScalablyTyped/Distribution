@@ -1,7 +1,7 @@
 package typings.reactBootstrap.mod
 
 import typings.reactBootstrap.anon.BsClass
-import typings.reactBootstrap.bootstrapUtilsMod.BSProps
+import typings.reactBootstrap.libUtilsBootstrapUtilsMod.BSProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

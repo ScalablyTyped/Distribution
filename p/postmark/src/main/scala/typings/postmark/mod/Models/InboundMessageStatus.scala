@@ -9,17 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object InboundMessageStatus extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.postmark.messageFilteringParametersMod.InboundMessageStatus & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus & String
+  ] = js.native
   
-  /* "blocked" */ val Blocked: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Blocked & String = js.native
+  /* "blocked" */ val Blocked: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Blocked & String = js.native
   
-  /* "failed" */ val Failed: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Failed & String = js.native
+  /* "failed" */ val Failed: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Failed & String = js.native
   
-  /* "processed" */ val Processed: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Processed & String = js.native
+  /* "processed" */ val Processed: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Processed & String = js.native
   
-  /* "queued" */ val Queued: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Queued & String = js.native
+  /* "queued" */ val Queued: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Queued & String = js.native
   
-  /* "scheduled" */ val Scheduled: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Scheduled & String = js.native
+  /* "scheduled" */ val Scheduled: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Scheduled & String = js.native
   
-  /* "sent" */ val Sent: typings.postmark.messageFilteringParametersMod.InboundMessageStatus.Sent & String = js.native
+  /* "sent" */ val Sent: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Sent & String = js.native
 }

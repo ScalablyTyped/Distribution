@@ -36,8 +36,8 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactWidgets.localizationMod.Localizer
-import typings.reactWidgets.localizationMod.RequiredDateMethods
+import typings.reactWidgets.cjsLocalizationMod.Localizer
+import typings.reactWidgets.cjsLocalizationMod.RequiredDateMethods
 import typings.reactWidgets.reactWidgetsStrings.`additions removals`
 import typings.reactWidgets.reactWidgetsStrings.`additions text`
 import typings.reactWidgets.reactWidgetsStrings.`inline`

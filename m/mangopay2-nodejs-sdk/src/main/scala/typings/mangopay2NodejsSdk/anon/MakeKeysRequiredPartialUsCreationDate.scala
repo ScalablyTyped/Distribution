@@ -1,12 +1,12 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.addressMod.address.AddressType
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LEGAL
-import typings.mangopay2NodejsSdk.typesMod.CountryISO
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
-import typings.mangopay2NodejsSdk.userMod.user.KYCLevel
-import typings.mangopay2NodejsSdk.userMod.user.LegalPersonType
-import typings.mangopay2NodejsSdk.userMod.user.UserCategory
+import typings.mangopay2NodejsSdk.typingsModelsAddressMod.address.AddressType
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.KYCLevel
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.LegalPersonType
+import typings.mangopay2NodejsSdk.typingsModelsUserMod.user.UserCategory
+import typings.mangopay2NodejsSdk.typingsTypesMod.CountryISO
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +24,9 @@ trait MakeKeysRequiredPartialUsCreationDate extends StObject {
   
   var Id: js.UndefOr[String] = js.undefined
   
-  var KYCLevel: js.UndefOr[typings.mangopay2NodejsSdk.userMod.user.KYCLevel] = js.undefined
+  var KYCLevel: js.UndefOr[typings.mangopay2NodejsSdk.typingsModelsUserMod.user.KYCLevel] = js.undefined
   
-  var LegalPersonType: typings.mangopay2NodejsSdk.userMod.user.LegalPersonType
+  var LegalPersonType: typings.mangopay2NodejsSdk.typingsModelsUserMod.user.LegalPersonType
   
   var LegalRepresentativeAddress: AddressType
   
@@ -58,7 +58,7 @@ trait MakeKeysRequiredPartialUsCreationDate extends StObject {
   
   var TermsAndConditionsAccepted: Boolean
   
-  var UserCategory: js.UndefOr[typings.mangopay2NodejsSdk.userMod.user.UserCategory] = js.undefined
+  var UserCategory: js.UndefOr[typings.mangopay2NodejsSdk.typingsModelsUserMod.user.UserCategory] = js.undefined
 }
 object MakeKeysRequiredPartialUsCreationDate {
   

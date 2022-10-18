@@ -1,12 +1,13 @@
 package typings.parse5
 
-import typings.parse5.commonErrorCodesMod.ParserError
-import typings.parse5.commonErrorCodesMod.ParserErrorHandler
-import typings.parse5.commonTokenMod.CharacterToken
-import typings.parse5.commonTokenMod.CommentToken
-import typings.parse5.commonTokenMod.DoctypeToken
-import typings.parse5.commonTokenMod.EOFToken
-import typings.parse5.commonTokenMod.TagToken
+import typings.parse5.distCommonErrorCodesMod.ParserError
+import typings.parse5.distCommonErrorCodesMod.ParserErrorHandler
+import typings.parse5.distCommonTokenMod.CharacterToken
+import typings.parse5.distCommonTokenMod.CommentToken
+import typings.parse5.distCommonTokenMod.DoctypeToken
+import typings.parse5.distCommonTokenMod.EOFToken
+import typings.parse5.distCommonTokenMod.TagToken
+import typings.parse5.distTokenizerPreprocessorMod.Preprocessor
 import typings.parse5.parse5Ints.`0`
 import typings.parse5.parse5Ints.`10`
 import typings.parse5.parse5Ints.`11`
@@ -86,7 +87,6 @@ import typings.parse5.parse5Ints.`78`
 import typings.parse5.parse5Ints.`7`
 import typings.parse5.parse5Ints.`8`
 import typings.parse5.parse5Ints.`9`
-import typings.parse5.tokenizerPreprocessorMod.Preprocessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

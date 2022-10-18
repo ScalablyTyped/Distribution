@@ -1,19 +1,20 @@
 package typings.crc
 
 import org.scalablytyped.runtime.Shortcut
-import typings.crc.typesMod.CRCCalculator
+import typings.crc.mjsTypesMod.CRCModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object crc32Mod extends Shortcut {
   
-  @JSImport("crc/mjs/calculators/crc32", JSImport.Default)
+  @JSImport("crc/crc32", JSImport.Default)
   @js.native
-  val default: CRCCalculator[js.typedarray.Uint8Array] = js.native
+  val default: CRCModule = js.native
   
-  type _To = CRCCalculator[js.typedarray.Uint8Array]
+  type _To = CRCModule
   
   /* This means you don't have to write `default`, but can instead just say `crc32Mod.foo` */
-  override def _to: CRCCalculator[js.typedarray.Uint8Array] = default
+  override def _to: CRCModule = default
 }

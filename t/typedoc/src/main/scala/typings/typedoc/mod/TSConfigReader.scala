@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "TSConfigReader")
 @js.native
 open class TSConfigReader ()
-  extends typings.typedoc.libUtilsMod.TSConfigReader
+  extends typings.typedoc.distLibUtilsMod.TSConfigReader
 /* static members */
 object TSConfigReader {
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeData extends StObject {
   
-  var duration: typings.fullcalendarCommon.mod.Duration
+  var duration: typings.fullcalendarCommon.mod.Duration | Null
   
   var typeData: Any
   
@@ -14,14 +14,16 @@ trait TypeData extends StObject {
 }
 object TypeData {
   
-  inline def apply(duration: typings.fullcalendarCommon.mod.Duration, typeData: Any, typeId: Double): TypeData = {
-    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], typeData = typeData.asInstanceOf[js.Any], typeId = typeId.asInstanceOf[js.Any])
+  inline def apply(typeData: Any, typeId: Double): TypeData = {
+    val __obj = js.Dynamic.literal(typeData = typeData.asInstanceOf[js.Any], typeId = typeId.asInstanceOf[js.Any], duration = null)
     __obj.asInstanceOf[TypeData]
   }
   
   extension [Self <: TypeData](x: Self) {
     
     inline def setDuration(value: typings.fullcalendarCommon.mod.Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationNull: Self = StObject.set(x, "duration", null)
     
     inline def setTypeData(value: Any): Self = StObject.set(x, "typeData", value.asInstanceOf[js.Any])
     

@@ -329,7 +329,7 @@ object journeySharing {
       * Returns the destination markers, if any.
       */
     /* CompleteClass */
-    var destinationMarkers: js.Array[typings.googleMaps.google.maps.Marker] = js.native
+    var destinationMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
     
     /**
       * This Field is read-only. The DOM element backing the view.
@@ -383,7 +383,7 @@ object journeySharing {
       * Returns the origin markers, if any.
       */
     /* CompleteClass */
-    var originMarkers: js.Array[typings.googleMaps.google.maps.Marker] = js.native
+    var originMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
     
     /**
       * Configures options for a ping location marker. Invoked whenever a new
@@ -424,7 +424,7 @@ object journeySharing {
       * Returns the successful task markers, if any.
       */
     /* CompleteClass */
-    var successfulTaskMarkers: js.Array[typings.googleMaps.google.maps.Marker] = js.native
+    var successfulTaskMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
     
     /**
       * Configures options for a taken route polyline. Invoked whenever a new
@@ -472,7 +472,7 @@ object journeySharing {
       * Returns the task outcome markers, if any.
       */
     /* CompleteClass */
-    var taskOutcomeMarkers: js.Array[typings.googleMaps.google.maps.Marker] = js.native
+    var taskOutcomeMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
     
     /**
       * Configures options for an unsuccessful task location marker. Invoked
@@ -496,7 +496,7 @@ object journeySharing {
       * Returns the unsuccessful task markers, if any.
       */
     /* CompleteClass */
-    var unsuccessfulTaskMarkers: js.Array[typings.googleMaps.google.maps.Marker] = js.native
+    var unsuccessfulTaskMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
     
     /**
       * Configures options for a vehicle location marker. Invoked whenever a new
@@ -519,7 +519,7 @@ object journeySharing {
       * Returns the vehicle markers, if any.
       */
     /* CompleteClass */
-    var vehicleMarkers: js.Array[typings.googleMaps.google.maps.Marker] = js.native
+    var vehicleMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
     
     /**
       * Configures options for a waypoint location marker. Invoked whenever a new
@@ -543,7 +543,7 @@ object journeySharing {
       * Returns the waypoint markers, if any.
       */
     /* CompleteClass */
-    var waypointMarkers: js.Array[typings.googleMaps.google.maps.Marker] = js.native
+    var waypointMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
   }
   
   /**
@@ -551,9 +551,9 @@ object journeySharing {
     * Parent class of location providers. Use the child location provider that
     * suits your purpose, rather than the parent class.
     */
-  @JSGlobal("google.maps.journeySharing.LocationProvider")
+  /* note: abstract class */ @JSGlobal("google.maps.journeySharing.LocationProvider")
   @js.native
-  abstract class LocationProvider ()
+  open class LocationProvider ()
     extends StObject
        with typings.googleMaps.google.maps.journeySharing.LocationProvider {
     

@@ -1,14 +1,14 @@
 package typings.angularDevkitArchitect
 
-import typings.angularDevkitArchitect.apiMod.BuilderInfo
-import typings.angularDevkitArchitect.apiMod.Target
-import typings.angularDevkitArchitect.apiMod.TypedBuilderProgress
-import typings.angularDevkitArchitect.progressSchemaMod.State.Running
-import typings.angularDevkitArchitect.progressSchemaMod.State.Stopped
-import typings.angularDevkitArchitect.progressSchemaMod.State.Waiting
-import typings.angularDevkitCore.jobsApiMod.Scheduler
-import typings.angularDevkitCore.loggerLoggerMod.LoggerApi
-import typings.angularDevkitCore.utilsMod.JsonValue
+import typings.angularDevkitArchitect.srcApiMod.BuilderInfo
+import typings.angularDevkitArchitect.srcApiMod.Target
+import typings.angularDevkitArchitect.srcApiMod.TypedBuilderProgress
+import typings.angularDevkitArchitect.srcProgressSchemaMod.State.Running
+import typings.angularDevkitArchitect.srcProgressSchemaMod.State.Stopped
+import typings.angularDevkitArchitect.srcProgressSchemaMod.State.Waiting
+import typings.angularDevkitCore.srcExperimentalJobsApiMod.Scheduler
+import typings.angularDevkitCore.srcJsonUtilsMod.JsonValue
+import typings.angularDevkitCore.srcLoggerLoggerMod.LoggerApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object anon {
   
   trait Analytics extends StObject {
     
-    var analytics: js.UndefOr[typings.angularDevkitCore.apiMod.Analytics] = js.undefined
+    var analytics: js.UndefOr[typings.angularDevkitCore.srcAnalyticsApiMod.Analytics] = js.undefined
     
     var currentDirectory: String | js.Promise[String]
     
@@ -43,7 +43,7 @@ object anon {
     
     extension [Self <: Analytics](x: Self) {
       
-      inline def setAnalytics(value: typings.angularDevkitCore.apiMod.Analytics): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
+      inline def setAnalytics(value: typings.angularDevkitCore.srcAnalyticsApiMod.Analytics): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
       
       inline def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
       
@@ -121,7 +121,7 @@ object anon {
   
   trait CurrentDirectory extends StObject {
     
-    var analytics: js.UndefOr[typings.angularDevkitCore.apiMod.Analytics] = js.undefined
+    var analytics: js.UndefOr[typings.angularDevkitCore.srcAnalyticsApiMod.Analytics] = js.undefined
     
     var currentDirectory: String | js.Promise[String]
     
@@ -145,7 +145,7 @@ object anon {
     
     extension [Self <: CurrentDirectory](x: Self) {
       
-      inline def setAnalytics(value: typings.angularDevkitCore.apiMod.Analytics): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
+      inline def setAnalytics(value: typings.angularDevkitCore.srcAnalyticsApiMod.Analytics): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
       
       inline def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
       
@@ -165,11 +165,11 @@ object anon {
     
     var error: JsonValue
     
-    var state: typings.angularDevkitArchitect.progressSchemaMod.State.Error
+    var state: typings.angularDevkitArchitect.srcProgressSchemaMod.State.Error
   }
   object Error {
     
-    inline def apply(state: typings.angularDevkitArchitect.progressSchemaMod.State.Error): Error = {
+    inline def apply(state: typings.angularDevkitArchitect.srcProgressSchemaMod.State.Error): Error = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], error = null)
       __obj.asInstanceOf[Error]
     }
@@ -180,7 +180,7 @@ object anon {
       
       inline def setErrorNull: Self = StObject.set(x, "error", null)
       
-      inline def setState(value: typings.angularDevkitArchitect.progressSchemaMod.State.Error): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: typings.angularDevkitArchitect.srcProgressSchemaMod.State.Error): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   

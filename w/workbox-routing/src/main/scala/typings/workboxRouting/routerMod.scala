@@ -4,12 +4,12 @@ import typings.std.Map
 import typings.std.Request
 import typings.std.Response
 import typings.std.URL
-import typings.workboxRouting.httpmethodMod.HTTPMethod
-import typings.workboxRouting.routeHandlerMod.RouteHandler
 import typings.workboxRouting.routeMod.Route
 import typings.workboxRouting.routerMod.Router.FindMatchingRouteOptions
 import typings.workboxRouting.routerMod.Router.FindMatchingRouteReturn
 import typings.workboxRouting.routerMod.Router.HandleRequestOptions
+import typings.workboxRouting.typesHttpmethodMod.HTTPMethod
+import typings.workboxRouting.typesRouteHandlerMod.RouteHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

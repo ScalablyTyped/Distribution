@@ -11,7 +11,7 @@ import typings.gravatarUrl.gravatarUrlStrings.r
 import typings.gravatarUrl.gravatarUrlStrings.retro
 import typings.gravatarUrl.gravatarUrlStrings.wavatar
 import typings.gravatarUrl.gravatarUrlStrings.x
-import typings.typeFest.literalUnionMod.LiteralUnion
+import typings.typeFest.sourceLiteralUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Diagnostics {
   
   /** Provides a simple diagnostic facility for tracing and profiling web traffic in applications built on Microsoft’s HTTP stacks. */
-  @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticProvider")
+  /* note: abstract class */ @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticProvider")
   @js.native
-  abstract class HttpDiagnosticProvider ()
+  open class HttpDiagnosticProvider ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticProvider
   object HttpDiagnosticProvider {
@@ -33,9 +33,9 @@ object Diagnostics {
   }
   
   /** Provides data for the RequestResponseCompleted event. */
-  @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticProviderRequestResponseCompletedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticProviderRequestResponseCompletedEventArgs")
   @js.native
-  abstract class HttpDiagnosticProviderRequestResponseCompletedEventArgs ()
+  open class HttpDiagnosticProviderRequestResponseCompletedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticProviderRequestResponseCompletedEventArgs {
     
@@ -69,9 +69,9 @@ object Diagnostics {
   }
   
   /** Provides all the timestamps for connection events. */
-  @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticProviderRequestResponseTimestamps")
+  /* note: abstract class */ @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticProviderRequestResponseTimestamps")
   @js.native
-  abstract class HttpDiagnosticProviderRequestResponseTimestamps ()
+  open class HttpDiagnosticProviderRequestResponseTimestamps ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticProviderRequestResponseTimestamps {
     
@@ -113,9 +113,9 @@ object Diagnostics {
   }
   
   /** Provides data for the RequestSent event. */
-  @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticProviderRequestSentEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticProviderRequestSentEventArgs")
   @js.native
-  abstract class HttpDiagnosticProviderRequestSentEventArgs ()
+  open class HttpDiagnosticProviderRequestSentEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticProviderRequestSentEventArgs {
     
@@ -149,9 +149,9 @@ object Diagnostics {
   }
   
   /** Provides data for the ResponseReceived event. */
-  @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticProviderResponseReceivedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticProviderResponseReceivedEventArgs")
   @js.native
-  abstract class HttpDiagnosticProviderResponseReceivedEventArgs ()
+  open class HttpDiagnosticProviderResponseReceivedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticProviderResponseReceivedEventArgs {
     
@@ -200,9 +200,9 @@ object Diagnostics {
   }
   
   /** Contains the source location of the HTTP activity. */
-  @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticSourceLocation")
+  /* note: abstract class */ @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticSourceLocation")
   @js.native
-  abstract class HttpDiagnosticSourceLocation ()
+  open class HttpDiagnosticSourceLocation ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticSourceLocation {
     

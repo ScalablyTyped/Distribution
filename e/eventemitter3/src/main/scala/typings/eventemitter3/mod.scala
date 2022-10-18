@@ -2,7 +2,6 @@ package typings.eventemitter3
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -105,9 +104,15 @@ object mod extends Shortcut {
   def prefixed: String | Boolean = js.native
   inline def prefixed_=(x: String | Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixed")(x.asInstanceOf[js.Any])
   
-  type ArgumentMap[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K] extends (args : ...any): void? std.Parameters<T[K]> : T[K] extends std.Array<any>? T[K] : std.Array<any>}
-    */ typings.eventemitter3.eventemitter3Strings.ArgumentMap & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]: T[K] extends (args : ...any): void? std.Parameters<T[K]> : T[K] extends std.Array<any>? T[K] : std.Array<any>}
+    }}}
+    */
+  @js.native
+  trait ArgumentMap[T /* <: js.Object */] extends StObject
   
   type EventArgs[T /* <: ValidEventTypes */, K /* <: EventNames[T] */] = Parameters[EventListener[T, K]]
   
@@ -116,12 +121,25 @@ object mod extends Shortcut {
     extends StObject
        with Instantiable0[typings.eventemitter3.mod.EventEmitter[ValidEventTypes, js.Object]]
   
-  type EventListener[T /* <: ValidEventTypes */, K /* <: EventNames[T] */] = js.Function1[
-    (/* import warning: importer.ImportType#apply Failed type conversion: eventemitter3.eventemitter3.ArgumentMap<std.Exclude<T, string | symbol>>[std.Extract<K, keyof T>] */ /* args */ js.Any) | (/* repeated */ Any), 
-    Unit
-  ]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends string | symbol ? (args : ...any): void : (args : eventemitter3.eventemitter3.ArgumentMap<std.Exclude<T, string | symbol>>[std.Extract<K, keyof T>]): void
+    }}}
+    */
+  @js.native
+  trait EventListener[T /* <: ValidEventTypes */, K /* <: EventNames[T] */] extends StObject
   
-  type EventNames[T /* <: ValidEventTypes */] = (/* keyof T */ String) | T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends string | symbol ? T : keyof T
+    }}}
+    */
+  @js.native
+  trait EventNames[T /* <: ValidEventTypes */] extends StObject
   
   type ListenerFn[Args /* <: js.Array[Any] */] = js.Function1[/* args */ Args, Unit]
   

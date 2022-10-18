@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates files and folders inside the Downloads folder. */
-@JSGlobal("Windows.Storage.DownloadsFolder")
+/* note: abstract class */ @JSGlobal("Windows.Storage.DownloadsFolder")
 @js.native
-abstract class DownloadsFolder ()
+open class DownloadsFolder ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.DownloadsFolder
 object DownloadsFolder {

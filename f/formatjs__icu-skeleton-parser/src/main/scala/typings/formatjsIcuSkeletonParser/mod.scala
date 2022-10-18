@@ -1,7 +1,7 @@
 package typings.formatjsIcuSkeletonParser
 
-import typings.formatjsIcuSkeletonParser.formatjsIcuSkeletonParserMod.ExtendedNumberFormatOptions
-import typings.formatjsIcuSkeletonParser.formatjsIcuSkeletonParserMod.NumberSkeletonToken
+import typings.formatjsIcuSkeletonParser.numberMod.ExtendedNumberFormatOptions
+import typings.formatjsIcuSkeletonParser.numberMod.NumberSkeletonToken
 import typings.std.Intl.DateTimeFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -9,6 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object heremapsStrings {
   
   @js.native
+  sealed trait `arrow-head`
+    extends StObject
+       with LineCap
+  inline def `arrow-head`: `arrow-head` = "arrow-head".asInstanceOf[`arrow-head`]
+  
+  @js.native
+  sealed trait `arrow-tail`
+    extends StObject
+       with LineCap
+  inline def `arrow-tail`: `arrow-tail` = "arrow-tail".asInstanceOf[`arrow-tail`]
+  
+  @js.native
   sealed trait bevel
     extends StObject
        with LineJoin

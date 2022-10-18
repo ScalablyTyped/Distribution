@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.`0`
-import typings.antDesignReactNative.tabBarMod.default
+import typings.antDesignReactNative.libTabBarMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object TabBar {
   @JSImport("@ant-design/react-native", "TabBar.Item")
   @js.native
   open class Item ()
-    extends typings.antDesignReactNative.tabBarMod.default.Item
+    extends typings.antDesignReactNative.libTabBarMod.default.Item
   /* static members */
   object Item {
     

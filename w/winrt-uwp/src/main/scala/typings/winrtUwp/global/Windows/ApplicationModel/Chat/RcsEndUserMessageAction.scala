@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the actions to which the user can respond. */
-@JSGlobal("Windows.ApplicationModel.Chat.RcsEndUserMessageAction")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.RcsEndUserMessageAction")
 @js.native
-abstract class RcsEndUserMessageAction ()
+open class RcsEndUserMessageAction ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.RcsEndUserMessageAction {
   

@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.spinnerMod.SpinnerProps
+import typings.blueprintjsCore.libEsmComponentsSpinnerSpinnerMod.SpinnerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Spinner")
 @js.native
 open class Spinner protected ()
-  extends typings.blueprintjsCore.componentsMod.Spinner {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Spinner {
   def this(props: SpinnerProps) = this()
   def this(props: SpinnerProps, context: Any) = this()
 }

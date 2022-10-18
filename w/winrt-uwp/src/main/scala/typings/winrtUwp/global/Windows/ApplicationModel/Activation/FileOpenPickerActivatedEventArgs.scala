@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an activated event that fires when the user tries to pick files or folders that are provided by the app. */
-@JSGlobal("Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs")
 @js.native
-abstract class FileOpenPickerActivatedEventArgs ()
+open class FileOpenPickerActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs {
   

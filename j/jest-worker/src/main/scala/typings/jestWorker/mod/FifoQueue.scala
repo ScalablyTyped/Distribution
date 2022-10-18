@@ -10,7 +10,7 @@ open class FifoQueue ()
   extends StObject
      with TaskQueue {
   
-  /* private */ var _sharedQueue: Any = js.native
+  /* private */ val _sharedQueue: Any = js.native
   
   /* private */ var _workerQueues: Any = js.native
 }

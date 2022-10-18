@@ -1,29 +1,28 @@
 package typings.ipfsHttpClient.anon
 
-import typings.multiaddr.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Addrs extends StObject {
   
-  var addrs: js.Array[^]
+  var Addrs: js.Array[String]
   
-  var id: String
+  var ID: String
 }
 object Addrs {
   
-  inline def apply(addrs: js.Array[^], id: String): Addrs = {
-    val __obj = js.Dynamic.literal(addrs = addrs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+  inline def apply(Addrs: js.Array[String], ID: String): Addrs = {
+    val __obj = js.Dynamic.literal(Addrs = Addrs.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Addrs]
   }
   
   extension [Self <: Addrs](x: Self) {
     
-    inline def setAddrs(value: js.Array[^]): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
+    inline def setAddrs(value: js.Array[String]): Self = StObject.set(x, "Addrs", value.asInstanceOf[js.Any])
     
-    inline def setAddrsVarargs(value: ^ *): Self = StObject.set(x, "addrs", js.Array(value :_*))
+    inline def setAddrsVarargs(value: String*): Self = StObject.set(x, "Addrs", js.Array(value*))
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
   }
 }

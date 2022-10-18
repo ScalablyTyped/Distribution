@@ -1,8 +1,8 @@
 package typings.babylonjs
 
-import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.lightsShadowLightMod.IShadowLight
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.shadowLightMod.IShadowLight
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,7 @@ object lightsIndexMod {
   @JSImport("babylonjs/Lights/index", "CascadedShadowGenerator")
   @js.native
   open class CascadedShadowGenerator protected ()
-    extends typings.babylonjs.shadowsIndexMod.CascadedShadowGenerator {
+    extends typings.babylonjs.lightsShadowsIndexMod.CascadedShadowGenerator {
     /**
       * Creates a Cascaded Shadow Generator object.
       * A ShadowGenerator is the required tool to use the shadows.
@@ -23,10 +23,10 @@ object lightsIndexMod {
       * @param light The directional light object generating the shadows.
       * @param usefulFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
       */
-    def this(mapSize: Double, light: typings.babylonjs.directionalLightMod.DirectionalLight) = this()
+    def this(mapSize: Double, light: typings.babylonjs.lightsDirectionalLightMod.DirectionalLight) = this()
     def this(
       mapSize: Double,
-      light: typings.babylonjs.directionalLightMod.DirectionalLight,
+      light: typings.babylonjs.lightsDirectionalLightMod.DirectionalLight,
       usefulFloatFirst: Boolean
     ) = this()
   }
@@ -72,7 +72,7 @@ object lightsIndexMod {
       * @param scene The scene to create the shadow map for
       * @returns The parsed shadow generator
       */
-    inline def Parse(parsedShadowGenerator: Any, scene: Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
+    inline def Parse(parsedShadowGenerator: Any, scene: Scene): typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator]
     
     @JSImport("babylonjs/Lights/index", "CascadedShadowGenerator._FrustumCornersNDCSpace")
     @js.native
@@ -87,7 +87,7 @@ object lightsIndexMod {
   @JSImport("babylonjs/Lights/index", "DirectionalLight")
   @js.native
   open class DirectionalLight protected ()
-    extends typings.babylonjs.directionalLightMod.DirectionalLight {
+    extends typings.babylonjs.lightsDirectionalLightMod.DirectionalLight {
     /**
       * Creates a DirectionalLight object in the scene, oriented towards the passed direction (Vector3).
       * The directional light is emitted from everywhere in the given direction.
@@ -103,7 +103,7 @@ object lightsIndexMod {
   @JSImport("babylonjs/Lights/index", "HemisphericLight")
   @js.native
   open class HemisphericLight protected ()
-    extends typings.babylonjs.hemisphericLightMod.HemisphericLight {
+    extends typings.babylonjs.lightsHemisphericLightMod.HemisphericLight {
     /**
       * Creates a HemisphericLight object in the scene according to the passed direction (Vector3).
       * The HemisphericLight simulates the ambient environment light, so the passed direction is the light reflection direction, not the incoming direction.
@@ -116,10 +116,10 @@ object lightsIndexMod {
     def this(name: String, direction: Vector3, scene: Scene) = this()
   }
   
-  @JSImport("babylonjs/Lights/index", "Light")
+  /* note: abstract class */ @JSImport("babylonjs/Lights/index", "Light")
   @js.native
-  abstract class Light protected ()
-    extends typings.babylonjs.lightMod.Light {
+  open class Light protected ()
+    extends typings.babylonjs.lightsLightMod.Light {
     /**
       * Creates a Light object in the scene.
       * Documentation : https://doc.babylonjs.com/babylon101/lights
@@ -275,13 +275,13 @@ object lightsIndexMod {
       * @param scene The scene to create the parsed light in
       * @returns the created light after parsing
       */
-    inline def Parse(parsedLight: Any, scene: Scene): Nullable[typings.babylonjs.lightMod.Light] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.lightMod.Light]]
+    inline def Parse(parsedLight: Any, scene: Scene): Nullable[typings.babylonjs.lightsLightMod.Light] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.lightsLightMod.Light]]
   }
   
   @JSImport("babylonjs/Lights/index", "PointLight")
   @js.native
   open class PointLight protected ()
-    extends typings.babylonjs.pointLightMod.PointLight {
+    extends typings.babylonjs.lightsPointLightMod.PointLight {
     /**
       * Creates a PointLight object from the passed name and position (Vector3) and adds it in the scene.
       * A PointLight emits the light in every direction.
@@ -301,7 +301,7 @@ object lightsIndexMod {
   @JSImport("babylonjs/Lights/index", "ShadowGenerator")
   @js.native
   open class ShadowGenerator protected ()
-    extends typings.babylonjs.shadowsIndexMod.ShadowGenerator {
+    extends typings.babylonjs.lightsShadowsIndexMod.ShadowGenerator {
     /**
       * Creates a ShadowGenerator object.
       * A ShadowGenerator is the required tool to use the shadows.
@@ -411,12 +411,12 @@ object lightsIndexMod {
       * @param constr A function that builds a shadow generator or undefined to create an instance of the default shadow generator
       * @returns The parsed shadow generator
       */
-    inline def Parse(parsedShadowGenerator: Any, scene: Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
+    inline def Parse(parsedShadowGenerator: Any, scene: Scene): typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator]
     inline def Parse(
       parsedShadowGenerator: Any,
       scene: Scene,
       constr: js.Function2[/* mapSize */ Double, /* light */ IShadowLight, this.type]
-    ): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], constr.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
+    ): typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], constr.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator]
     
     /**
       * Reserved for PCF and PCSS
@@ -463,7 +463,7 @@ object lightsIndexMod {
   @JSImport("babylonjs/Lights/index", "ShadowGeneratorSceneComponent")
   @js.native
   open class ShadowGeneratorSceneComponent protected ()
-    extends typings.babylonjs.shadowsIndexMod.ShadowGeneratorSceneComponent {
+    extends typings.babylonjs.lightsShadowsIndexMod.ShadowGeneratorSceneComponent {
     /**
       * Creates a new instance of the component for the given scene
       * @param scene Defines the scene to register the component in
@@ -471,10 +471,10 @@ object lightsIndexMod {
     def this(scene: Scene) = this()
   }
   
-  @JSImport("babylonjs/Lights/index", "ShadowLight")
+  /* note: abstract class */ @JSImport("babylonjs/Lights/index", "ShadowLight")
   @js.native
-  abstract class ShadowLight protected ()
-    extends typings.babylonjs.shadowLightMod.ShadowLight {
+  open class ShadowLight protected ()
+    extends typings.babylonjs.lightsShadowLightMod.ShadowLight {
     /**
       * Creates a Light object in the scene.
       * Documentation : https://doc.babylonjs.com/babylon101/lights
@@ -487,7 +487,7 @@ object lightsIndexMod {
   @JSImport("babylonjs/Lights/index", "SpotLight")
   @js.native
   open class SpotLight protected ()
-    extends typings.babylonjs.spotLightMod.SpotLight {
+    extends typings.babylonjs.lightsSpotLightMod.SpotLight {
     /**
       * Creates a SpotLight object in the scene. A spot light is a simply light oriented cone.
       * It can cast shadows.

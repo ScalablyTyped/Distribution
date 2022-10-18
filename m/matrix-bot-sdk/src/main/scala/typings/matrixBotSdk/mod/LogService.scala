@@ -1,6 +1,6 @@
 package typings.matrixBotSdk.mod
 
-import typings.matrixBotSdk.iloggerMod.ILogger
+import typings.matrixBotSdk.libLoggingIloggerMod.ILogger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "LogService")
 @js.native
 /* private */ open class LogService ()
-  extends typings.matrixBotSdk.logServiceMod.LogService
+  extends typings.matrixBotSdk.libLoggingLogServiceMod.LogService
 /* static members */
 object LogService {
   
@@ -62,7 +62,7 @@ object LogService {
     * Sets the log level for this logger. Defaults to DEBUG.
     * @param {LogLevel} level the new log level
     */
-  inline def setLevel(level: typings.matrixBotSdk.logServiceMod.LogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLevel(level: typings.matrixBotSdk.libLoggingLogServiceMod.LogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Sets a new logger for the Log Service

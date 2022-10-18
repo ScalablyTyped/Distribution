@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.joi.mod.Root
 import typings.joi.mod.ValidationError
 import typings.joi.mod.ValidationErrorItem
+import typings.node.NodeJS.ReadableStream
 import typings.nodeFetch.mod.BodyInit
 import typings.nodeFetch.mod.Headers
 import typings.nodeFetch.mod.HeadersInit
@@ -11,7 +12,6 @@ import typings.nodeFetch.mod.RequestInfo
 import typings.nodeFetch.mod.RequestInit
 import typings.nodeFetch.mod.ResponseInit
 import typings.std.FormData
-import typings.std.ReadableStream
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -81,11 +81,11 @@ object mod {
     
     def setup(opts: js.Object, replace: Boolean): FrisbySpec[FrisbyResponse] = js.native
     
-    def `then`[T](onFulfilled: js.Function1[/* response */ TResult, T | js.Promise[T]]): FrisbySpec[Any | T] = js.native
+    def `then`[T](onFulfilled: js.Function1[/* response */ TResult, T | js.Promise[T]]): /* import warning: importer.ImportType#apply Failed type conversion: [T] extends [frisby.frisby.FrisbySpec<infer U>] ? frisby.frisby.FrisbySpec<U> : frisby.frisby.FrisbySpec<T> */ js.Any = js.native
     def `then`[T](
       onFulfilled: js.Function1[/* response */ TResult, T | js.Promise[T]],
       onRejected: js.Function1[/* repeated */ Any, Unit]
-    ): FrisbySpec[Any | T] = js.native
+    ): /* import warning: importer.ImportType#apply Failed type conversion: [T] extends [frisby.frisby.FrisbySpec<infer U>] ? frisby.frisby.FrisbySpec<U> : frisby.frisby.FrisbySpec<T> */ js.Any = js.native
     def `then`[T](onFulfilled: FrisbySpec[T]): FrisbySpec[T] = js.native
     
     def timeout(timeout: Double): Double = js.native
@@ -253,7 +253,7 @@ object mod {
   
   trait FrisbyResponse extends StObject {
     
-    val body: ReadableStream[Any] | Null
+    val body: ReadableStream | Null
     
     val headers: Headers
     
@@ -272,7 +272,7 @@ object mod {
     
     extension [Self <: FrisbyResponse](x: Self) {
       
-      inline def setBody(value: ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyNull: Self = StObject.set(x, "body", null)
       

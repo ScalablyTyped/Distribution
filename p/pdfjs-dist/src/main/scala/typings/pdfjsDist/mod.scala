@@ -1,18 +1,18 @@
 package typings.pdfjsDist
 
-import typings.pdfjsDist.annotationEditorLayerMod.AnnotationEditorLayerOptions
-import typings.pdfjsDist.annotationLayerMod.AnnotationLayerParameters
 import typings.pdfjsDist.anon.Element
 import typings.pdfjsDist.anon.Name
 import typings.pdfjsDist.anon.Rotation
 import typings.pdfjsDist.anon.TextDivs
-import typings.pdfjsDist.apiMod.GetDocumentParameters
-import typings.pdfjsDist.apiMod.PDFWorkerParameters
-import typings.pdfjsDist.textLayerMod.TextLayerRenderParameters
-import typings.pdfjsDist.toolsMod.KeyboardManager
-import typings.pdfjsDist.utilMod.PromiseCapability
-import typings.pdfjsDist.workerOptionsMod.GlobalWorkerOptionsType
-import typings.pdfjsDist.xfaLayerMod.XfaLayerParameters
+import typings.pdfjsDist.typesSrcDisplayAnnotationLayerMod.AnnotationLayerParameters
+import typings.pdfjsDist.typesSrcDisplayApiMod.GetDocumentParameters
+import typings.pdfjsDist.typesSrcDisplayApiMod.PDFWorkerParameters
+import typings.pdfjsDist.typesSrcDisplayEditorAnnotationEditorLayerMod.AnnotationEditorLayerOptions
+import typings.pdfjsDist.typesSrcDisplayEditorToolsMod.KeyboardManager
+import typings.pdfjsDist.typesSrcDisplayTextLayerMod.TextLayerRenderParameters
+import typings.pdfjsDist.typesSrcDisplayWorkerOptionsMod.GlobalWorkerOptionsType
+import typings.pdfjsDist.typesSrcDisplayXfaLayerMod.XfaLayerParameters
+import typings.pdfjsDist.typesSrcSharedUtilMod.PromiseCapability
 import typings.std.HTMLDivElement
 import typings.std.URL
 import typings.std.WeakMap
@@ -29,7 +29,7 @@ object mod {
   @JSImport("pdfjs-dist", "AnnotationEditorLayer")
   @js.native
   open class AnnotationEditorLayer protected ()
-    extends typings.pdfjsDist.annotationEditorLayerMod.AnnotationEditorLayer {
+    extends typings.pdfjsDist.typesSrcDisplayEditorAnnotationEditorLayerMod.AnnotationEditorLayer {
     /**
       * @param {AnnotationEditorLayerOptions} options
       */
@@ -97,7 +97,7 @@ object mod {
   @JSImport("pdfjs-dist", "AnnotationEditorUIManager")
   @js.native
   open class AnnotationEditorUIManager protected ()
-    extends typings.pdfjsDist.toolsMod.AnnotationEditorUIManager {
+    extends typings.pdfjsDist.typesSrcDisplayEditorToolsMod.AnnotationEditorUIManager {
     def this(container: Any, eventBus: Any) = this()
   }
   /* static members */
@@ -116,7 +116,7 @@ object mod {
   @JSImport("pdfjs-dist", "AnnotationLayer")
   @js.native
   open class AnnotationLayer ()
-    extends typings.pdfjsDist.annotationLayerMod.AnnotationLayer
+    extends typings.pdfjsDist.typesSrcDisplayAnnotationLayerMod.AnnotationLayer
   /* static members */
   object AnnotationLayer {
     
@@ -132,7 +132,10 @@ object mod {
       * @param {HTMLDivElement} div
       * @param {PageViewport} viewport
       */
-    inline def `__Numbersign26@NumbersignsetDimensions`(div: HTMLDivElement, hasWidthHeightRotation: typings.pdfjsDist.annotationLayerMod.PageViewport): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#26@#setDimensions")(div.asInstanceOf[js.Any], hasWidthHeightRotation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def `__Numbersign26@NumbersignsetDimensions`(
+      div: HTMLDivElement,
+      hasWidthHeightRotation: typings.pdfjsDist.typesSrcDisplayAnnotationLayerMod.PageViewport
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#26@#setDimensions")(div.asInstanceOf[js.Any], hasWidthHeightRotation.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Render a new annotation layer with all annotation elements.
@@ -194,19 +197,19 @@ object mod {
   @JSImport("pdfjs-dist", "InvalidPDFException")
   @js.native
   open class InvalidPDFException protected ()
-    extends typings.pdfjsDist.utilMod.InvalidPDFException {
+    extends typings.pdfjsDist.typesSrcSharedUtilMod.InvalidPDFException {
     def this(msg: Any) = this()
   }
   
   @JSImport("pdfjs-dist", "LoopbackPort")
   @js.native
   open class LoopbackPort ()
-    extends typings.pdfjsDist.apiMod.LoopbackPort
+    extends typings.pdfjsDist.typesSrcDisplayApiMod.LoopbackPort
   
   @JSImport("pdfjs-dist", "MissingPDFException")
   @js.native
   open class MissingPDFException protected ()
-    extends typings.pdfjsDist.utilMod.MissingPDFException {
+    extends typings.pdfjsDist.typesSrcSharedUtilMod.MissingPDFException {
     def this(msg: Any) = this()
   }
   
@@ -580,7 +583,7 @@ object mod {
   @JSImport("pdfjs-dist", "PDFDataRangeTransport")
   @js.native
   open class PDFDataRangeTransport protected ()
-    extends typings.pdfjsDist.apiMod.PDFDataRangeTransport {
+    extends typings.pdfjsDist.typesSrcDisplayApiMod.PDFDataRangeTransport {
     /**
       * @param {number} length
       * @param {Uint8Array} initialData
@@ -606,7 +609,7 @@ object mod {
   @JSImport("pdfjs-dist", "PDFDateString")
   @js.native
   open class PDFDateString ()
-    extends typings.pdfjsDist.displayUtilsMod.PDFDateString
+    extends typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PDFDateString
   /* static members */
   object PDFDateString {
     
@@ -636,7 +639,7 @@ object mod {
   @JSImport("pdfjs-dist", "PDFWorker")
   @js.native
   open class PDFWorker ()
-    extends typings.pdfjsDist.apiMod.PDFWorker {
+    extends typings.pdfjsDist.typesSrcDisplayApiMod.PDFWorker {
     def this(hasNamePortVerbosity: Name) = this()
   }
   /* static members */
@@ -705,7 +708,7 @@ object mod {
   @JSImport("pdfjs-dist", "PixelsPerInch")
   @js.native
   open class PixelsPerInch ()
-    extends typings.pdfjsDist.displayUtilsMod.PixelsPerInch
+    extends typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PixelsPerInch
   /* static members */
   object PixelsPerInch {
     
@@ -732,7 +735,7 @@ object mod {
   @JSImport("pdfjs-dist", "RenderingCancelledException")
   @js.native
   open class RenderingCancelledException protected ()
-    extends typings.pdfjsDist.displayUtilsMod.RenderingCancelledException {
+    extends typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.RenderingCancelledException {
     def this(msg: Any, `type`: Any) = this()
   }
   
@@ -835,14 +838,14 @@ object mod {
   @JSImport("pdfjs-dist", "UnexpectedResponseException")
   @js.native
   open class UnexpectedResponseException protected ()
-    extends typings.pdfjsDist.utilMod.UnexpectedResponseException {
+    extends typings.pdfjsDist.typesSrcSharedUtilMod.UnexpectedResponseException {
     def this(msg: Any, status: Any) = this()
   }
   
   @JSImport("pdfjs-dist", "Util")
   @js.native
   open class Util ()
-    extends typings.pdfjsDist.utilMod.Util
+    extends typings.pdfjsDist.typesSrcSharedUtilMod.Util
   /* static members */
   object Util {
     
@@ -893,7 +896,7 @@ object mod {
   @JSImport("pdfjs-dist", "XfaLayer")
   @js.native
   open class XfaLayer ()
-    extends typings.pdfjsDist.xfaLayerMod.XfaLayer
+    extends typings.pdfjsDist.typesSrcDisplayXfaLayerMod.XfaLayer
   /* static members */
   object XfaLayer {
     
@@ -939,21 +942,21 @@ object mod {
   inline def createValidAbsoluteUrl(url: URL, baseUrl: URL): URL | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createValidAbsoluteUrl")(url.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any])).asInstanceOf[URL | Null]
   inline def createValidAbsoluteUrl(url: URL, baseUrl: URL, options: js.Object): URL | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createValidAbsoluteUrl")(url.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URL | Null]
   
-  inline def getDocument(src: GetDocumentParameters): typings.pdfjsDist.apiMod.PDFDocumentLoadingTask = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")(src.asInstanceOf[js.Any]).asInstanceOf[typings.pdfjsDist.apiMod.PDFDocumentLoadingTask]
+  inline def getDocument(src: GetDocumentParameters): typings.pdfjsDist.typesSrcDisplayApiMod.PDFDocumentLoadingTask = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")(src.asInstanceOf[js.Any]).asInstanceOf[typings.pdfjsDist.typesSrcDisplayApiMod.PDFDocumentLoadingTask]
   
   inline def getFilenameFromUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilenameFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getPdfFilenameFromUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPdfFilenameFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def getPdfFilenameFromUrl(url: String, defaultFilename: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPdfFilenameFromUrl")(url.asInstanceOf[js.Any], defaultFilename.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getXfaPageViewport(xfaPage: Any, hasScaleRotation: Rotation): typings.pdfjsDist.displayUtilsMod.PageViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("getXfaPageViewport")(xfaPage.asInstanceOf[js.Any], hasScaleRotation.asInstanceOf[js.Any])).asInstanceOf[typings.pdfjsDist.displayUtilsMod.PageViewport]
+  inline def getXfaPageViewport(xfaPage: Any, hasScaleRotation: Rotation): typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("getXfaPageViewport")(xfaPage.asInstanceOf[js.Any], hasScaleRotation.asInstanceOf[js.Any])).asInstanceOf[typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport]
   
   inline def isPdfFile(filename: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPdfFile")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def loadScript(src: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadScript")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def loadScript(src: String, removeScriptElement: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadScript")(src.asInstanceOf[js.Any], removeScriptElement.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def renderTextLayer(renderParameters: TextLayerRenderParameters): typings.pdfjsDist.textLayerMod.TextLayerRenderTask = ^.asInstanceOf[js.Dynamic].applyDynamic("renderTextLayer")(renderParameters.asInstanceOf[js.Any]).asInstanceOf[typings.pdfjsDist.textLayerMod.TextLayerRenderTask]
+  inline def renderTextLayer(renderParameters: TextLayerRenderParameters): typings.pdfjsDist.typesSrcDisplayTextLayerMod.TextLayerRenderTask = ^.asInstanceOf[js.Dynamic].applyDynamic("renderTextLayer")(renderParameters.asInstanceOf[js.Any]).asInstanceOf[typings.pdfjsDist.typesSrcDisplayTextLayerMod.TextLayerRenderTask]
   
   inline def shadow(obj: Any, prop: Any, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shadow")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   
@@ -961,15 +964,15 @@ object mod {
   @js.native
   val version: String = js.native
   
-  type PDFDocumentLoadingTask = typings.pdfjsDist.apiMod.PDFDocumentLoadingTask
+  type PDFDocumentLoadingTask = typings.pdfjsDist.typesSrcDisplayApiMod.PDFDocumentLoadingTask
   
-  type PDFDocumentProxy = typings.pdfjsDist.apiMod.PDFDocumentProxy
+  type PDFDocumentProxy = typings.pdfjsDist.typesSrcDisplayApiMod.PDFDocumentProxy
   
-  type PDFPageProxy = typings.pdfjsDist.apiMod.PDFPageProxy
+  type PDFPageProxy = typings.pdfjsDist.typesSrcDisplayApiMod.PDFPageProxy
   
-  type PageViewport = typings.pdfjsDist.displayUtilsMod.PageViewport
+  type PageViewport = typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport
   
-  type RenderTask = typings.pdfjsDist.apiMod.RenderTask
+  type RenderTask = typings.pdfjsDist.typesSrcDisplayApiMod.RenderTask
   
-  type TextLayerRenderTask = typings.pdfjsDist.textLayerMod.TextLayerRenderTask
+  type TextLayerRenderTask = typings.pdfjsDist.typesSrcDisplayTextLayerMod.TextLayerRenderTask
 }

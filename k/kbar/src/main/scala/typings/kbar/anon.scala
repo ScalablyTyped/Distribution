@@ -1,6 +1,5 @@
 package typings.kbar
 
-import typings.kbar.actionImplMod.ActionImpl
 import typings.kbar.kbarStrings.`additions removals`
 import typings.kbar.kbarStrings.`additions text`
 import typings.kbar.kbarStrings.`inline`
@@ -59,10 +58,11 @@ import typings.kbar.kbarStrings.url
 import typings.kbar.kbarStrings.user
 import typings.kbar.kbarStrings.vertical
 import typings.kbar.kbarStrings.yes
-import typings.kbar.typesMod.ActionId
-import typings.kbar.typesMod.ActionSection
-import typings.kbar.typesMod.HistoryItem
-import typings.kbar.typesMod.Priority
+import typings.kbar.libActionActionImplMod.ActionImpl
+import typings.kbar.libTypesMod.ActionId
+import typings.kbar.libTypesMod.ActionSection
+import typings.kbar.libTypesMod.HistoryItem
+import typings.kbar.libTypesMod.Priority
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler

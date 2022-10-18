@@ -1,7 +1,7 @@
 package typings.watsonDeveloperCloud.sdkMod
 
-import typings.watsonDeveloperCloud.v2Mod.Options
-import typings.watsonDeveloperCloud.v2Mod.^
+import typings.watsonDeveloperCloud.assistantV2Mod.Options
+import typings.watsonDeveloperCloud.assistantV2Mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("watson-developer-cloud/sdk", "AssistantV2")
 @js.native
-class AssistantV2 protected () extends ^ {
+open class AssistantV2 protected () extends ^ {
   /**
     * Construct a AssistantV2 object.
     *

@@ -11,6 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@material/dialog", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialDialog.foundationMod.default {
+    def this(adapter: PartialMDCDialogAdapter) = this()
+  }
+  
   @JSImport("@material/dialog", "MDCDialog")
   @js.native
   open class MDCDialog protected ()

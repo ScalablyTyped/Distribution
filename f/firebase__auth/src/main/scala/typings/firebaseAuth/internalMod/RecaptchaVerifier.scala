@@ -1,16 +1,16 @@
 package typings.firebaseAuth.internalMod
 
-import typings.firebaseAuth.publicTypesMod.Auth
-import typings.firebaseAuth.publicTypesMod.RecaptchaParameters
+import typings.firebaseAuth.distSrcModelPublicTypesMod.Auth
+import typings.firebaseAuth.distSrcModelPublicTypesMod.RecaptchaParameters
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/auth/dist/cordova/internal", "RecaptchaVerifier")
+@JSImport("@firebase/auth/internal", "RecaptchaVerifier")
 @js.native
 open class RecaptchaVerifier protected ()
-  extends typings.firebaseAuth.cordovaMod.RecaptchaVerifier {
+  extends typings.firebaseAuth.distInternalMod.RecaptchaVerifier {
   def this(containerOrId: String, parameters: RecaptchaParameters, authExtern: Auth) = this()
   /**
     *

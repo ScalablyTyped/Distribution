@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactResizeDetectorStrings {
   
   @js.native
-  sealed trait OptionalKey extends StObject
-  inline def OptionalKey: OptionalKey = "OptionalKey".asInstanceOf[OptionalKey]
-  
-  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   

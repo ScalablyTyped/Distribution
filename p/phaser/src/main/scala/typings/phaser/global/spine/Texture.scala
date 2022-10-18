@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.Texture")
+/* note: abstract class */ @JSGlobal("spine.Texture")
 @js.native
-abstract class Texture protected ()
+open class Texture protected ()
   extends StObject
      with typings.phaser.spine.Texture {
   def this(image: HTMLImageElement) = this()

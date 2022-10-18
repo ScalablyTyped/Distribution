@@ -26,12 +26,12 @@ object DocStructure {
     
     inline def setLeading_sentencesUndefined: Self = StObject.set(x, "leading_sentences", js.undefined)
     
-    inline def setLeading_sentencesVarargs(value: LeadingSentence*): Self = StObject.set(x, "leading_sentences", js.Array(value :_*))
+    inline def setLeading_sentencesVarargs(value: LeadingSentence*): Self = StObject.set(x, "leading_sentences", js.Array(value*))
     
     inline def setSection_titles(value: js.Array[SectionTitles]): Self = StObject.set(x, "section_titles", value.asInstanceOf[js.Any])
     
     inline def setSection_titlesUndefined: Self = StObject.set(x, "section_titles", js.undefined)
     
-    inline def setSection_titlesVarargs(value: SectionTitles*): Self = StObject.set(x, "section_titles", js.Array(value :_*))
+    inline def setSection_titlesVarargs(value: SectionTitles*): Self = StObject.set(x, "section_titles", js.Array(value*))
   }
 }

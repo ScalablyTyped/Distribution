@@ -22,7 +22,7 @@ trait XIdlReflection
     * @returns reflection interface for the demanded type (or null)
     */
   def forName(aTypeName: String): XIdlClass[Any] = js.native
-  def forName[K /* <: /* keyof activex-libreoffice.LibreOffice.InstantiableNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1752 */ Any */](aTypeName: K): XIdlClass[
+  def forName[K /* <: /* keyof activex-libreoffice.LibreOffice.InstantiableNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1752, starting with typings.activexLibreoffice.activexLibreofficeStrings.comDotsunDotstarDotaccessibilityDotAccessible, typings.activexLibreoffice.activexLibreofficeStrings.comDotsunDotstarDotaccessibilityDotAccessibleContext, typings.activexLibreoffice.activexLibreofficeStrings.comDotsunDotstarDotaccessibilityDotMSAAService */ Any */](aTypeName: K): XIdlClass[
     /* import warning: importer.ImportType#apply Failed type conversion: activex-libreoffice.LibreOffice.InstantiableNameMap[K] */ js.Any
   ] = js.native
   

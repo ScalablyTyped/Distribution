@@ -2,7 +2,7 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.antDesignReactNative.multiPickerPropsMod.MultiPickerProps
+import typings.antDesignReactNative.libPickerMultiPickerPropsMod.MultiPickerProps
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

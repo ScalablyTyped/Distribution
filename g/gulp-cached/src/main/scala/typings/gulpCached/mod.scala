@@ -2,6 +2,7 @@ package typings.gulpCached
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,8 +21,8 @@ object mod extends Shortcut {
     /**
       * Creates a new cache hash or uses an existing one.
       */
-    def apply(name: String): Any = js.native
-    def apply(name: String, options: IOptions): Any = js.native
+    def apply(name: String): ReadWriteStream = js.native
+    def apply(name: String, options: IOptions): ReadWriteStream = js.native
     
     /**
       * Cache store.

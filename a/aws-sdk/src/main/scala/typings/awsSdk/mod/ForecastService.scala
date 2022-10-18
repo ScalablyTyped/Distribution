@@ -1,6 +1,6 @@
 package typings.awsSdk.mod
 
-import typings.awsSdk.forecastserviceMod.ClientConfiguration
+import typings.awsSdk.clientsForecastserviceMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a service object. This object has one method for each API operation.
   */
 open class ForecastService ()
-  extends typings.awsSdk.allMod.ForecastService {
+  extends typings.awsSdk.clientsAllMod.ForecastService {
   def this(options: ClientConfiguration) = this()
 }

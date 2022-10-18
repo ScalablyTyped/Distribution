@@ -6,33 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `294` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['page-build'] */ js.Any
-  ]
+  /** The unique identifier of the pull request thread. */
+  var thread_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['thread-id'] */ js.Any
 }
 object `294` {
   
   inline def apply(
-    applicationSlashjson: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['page-build'] */ js.Any
-    ]
+    thread_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['thread-id'] */ js.Any
   ): `294` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(thread_id = thread_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[`294`]
   }
   
   extension [Self <: `294`](x: Self) {
     
-    inline def setApplicationSlashjson(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['page-build'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['page-build'] */ js.Any)*
-    ): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setThread_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['thread-id'] */ js.Any
+    ): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
   }
 }

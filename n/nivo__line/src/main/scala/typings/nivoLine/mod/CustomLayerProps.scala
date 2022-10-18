@@ -1,18 +1,18 @@
 package typings.nivoLine.mod
 
 import typings.d3Shape.mod.Line_
-import typings.nivoAxes.typesMod.AxisProps
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoAxes.distTypesTypesMod.AxisProps
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.anon.Dictkey
 import typings.nivoCore.anon.Id
 import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.CartesianMarkerProps
 import typings.nivoCore.mod.Theme
 import typings.nivoCore.mod.ValueFormat
-import typings.nivoLegends.typesTypesMod.LegendProps
+import typings.nivoLegends.distTypesTypesMod.LegendProps
 import typings.nivoLine.anon.ReadonlyPointSymbolProps
 import typings.nivoLine.anon.X
-import typings.nivoLine.anon.XFormatted
+import typings.nivoLine.anon.Y
 import typings.nivoLine.nivoLineBooleans.`false`
 import typings.nivoLine.nivoLineStrings.basis
 import typings.nivoLine.nivoLineStrings.cardinal
@@ -26,9 +26,9 @@ import typings.nivoLine.nivoLineStrings.stepAfter
 import typings.nivoLine.nivoLineStrings.stepBefore
 import typings.nivoLine.nivoLineStrings.x
 import typings.nivoLine.nivoLineStrings.y
-import typings.nivoScales.typesMod.Scale
-import typings.nivoScales.typesMod.TicksSpec
-import typings.nivoTooltip.typesMod.CrosshairType
+import typings.nivoScales.distTypesTypesMod.Scale
+import typings.nivoScales.distTypesTypesMod.TicksSpec
+import typings.nivoTooltip.distTypesTypesMod.CrosshairType
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
@@ -102,7 +102,7 @@ trait CustomLayerProps extends StObject {
   
   var legends: js.UndefOr[js.Array[LegendProps]] = js.undefined
   
-  var lineGenerator: Line_[js.Array[X]]
+  var lineGenerator: Line_[js.Array[Y]]
   
   var lineWidth: js.UndefOr[Double] = js.undefined
   
@@ -166,7 +166,7 @@ object CustomLayerProps {
     data: js.Array[Serie],
     innerHeight: Double,
     innerWidth: Double,
-    lineGenerator: Line_[js.Array[X]],
+    lineGenerator: Line_[js.Array[Y]],
     points: js.Array[Point],
     series: js.Array[ComputedSerie],
     xScale: Scale[Any, Any],
@@ -320,7 +320,7 @@ object CustomLayerProps {
     
     inline def setLegendsVarargs(value: LegendProps*): Self = StObject.set(x, "legends", js.Array(value*))
     
-    inline def setLineGenerator(value: Line_[js.Array[X]]): Self = StObject.set(x, "lineGenerator", value.asInstanceOf[js.Any])
+    inline def setLineGenerator(value: Line_[js.Array[Y]]): Self = StObject.set(x, "lineGenerator", value.asInstanceOf[js.Any])
     
     inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
@@ -372,7 +372,7 @@ object CustomLayerProps {
     
     inline def setPointLabel(value: String | AccessorFunc): Self = StObject.set(x, "pointLabel", value.asInstanceOf[js.Any])
     
-    inline def setPointLabelFunction1(value: /* datum */ XFormatted => String): Self = StObject.set(x, "pointLabel", js.Any.fromFunction1(value))
+    inline def setPointLabelFunction1(value: /* datum */ X => String): Self = StObject.set(x, "pointLabel", js.Any.fromFunction1(value))
     
     inline def setPointLabelUndefined: Self = StObject.set(x, "pointLabel", js.undefined)
     
@@ -412,10 +412,6 @@ object CustomLayerProps {
     
     inline def setTooltipFormat(value: ValueFormat[DatumValue, Unit]): Self = StObject.set(x, "tooltipFormat", value.asInstanceOf[js.Any])
     
-    inline def setTooltipFormatFunction1(value: DatumValue => String): Self = StObject.set(x, "tooltipFormat", js.Any.fromFunction1(value))
-    
-    inline def setTooltipFormatFunction2(value: (DatumValue, Unit) => String): Self = StObject.set(x, "tooltipFormat", js.Any.fromFunction2(value))
-    
     inline def setTooltipFormatUndefined: Self = StObject.set(x, "tooltipFormat", js.undefined)
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
@@ -426,19 +422,11 @@ object CustomLayerProps {
     
     inline def setXFormat(value: ValueFormat[DatumValue, Unit]): Self = StObject.set(x, "xFormat", value.asInstanceOf[js.Any])
     
-    inline def setXFormatFunction1(value: DatumValue => String): Self = StObject.set(x, "xFormat", js.Any.fromFunction1(value))
-    
-    inline def setXFormatFunction2(value: (DatumValue, Unit) => String): Self = StObject.set(x, "xFormat", js.Any.fromFunction2(value))
-    
     inline def setXFormatUndefined: Self = StObject.set(x, "xFormat", js.undefined)
     
     inline def setXScale(value: Scale[Any, Any]): Self = StObject.set(x, "xScale", value.asInstanceOf[js.Any])
     
     inline def setYFormat(value: ValueFormat[DatumValue, Unit]): Self = StObject.set(x, "yFormat", value.asInstanceOf[js.Any])
-    
-    inline def setYFormatFunction1(value: DatumValue => String): Self = StObject.set(x, "yFormat", js.Any.fromFunction1(value))
-    
-    inline def setYFormatFunction2(value: (DatumValue, Unit) => String): Self = StObject.set(x, "yFormat", js.Any.fromFunction2(value))
     
     inline def setYFormatUndefined: Self = StObject.set(x, "yFormat", js.undefined)
     

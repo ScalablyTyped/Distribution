@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SceneLoaderFlags")
 @js.native
 open class SceneLoaderFlags ()
-  extends typings.babylonjs.legacyMod.SceneLoaderFlags
+  extends typings.babylonjs.legacyLegacyMod.SceneLoaderFlags
 /* static members */
 object SceneLoaderFlags {
   

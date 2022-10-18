@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "fixturify-project"
-version := "5.1.0-c8a603"
+version := "5.1.0-7f9099"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "fixturify" % "2.1.1-1cbc3f",
-  "org.scalablytyped" %%% "minimatch" % "5.1-dt-20220831Z-84ae38",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
-  "org.scalablytyped" %%% "type-fest" % "3.0.0-e72bbe")
+  "org.scalablytyped" %%% "fixturify" % "2.1.1-e9019e",
+  "org.scalablytyped" %%% "minimatch" % "5.1-dt-20220831Z-374fcc",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "type-fest" % "3.1.0-f509c8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

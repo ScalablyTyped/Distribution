@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [owner=null] - The owner of this vision instance.
   */
 open class Vision ()
-  extends typings.yuka.yukaMod.Vision {
-  def this(owner: typings.yuka.gameEntityMod.GameEntity) = this()
+  extends typings.yuka.srcYukaMod.Vision {
+  def this(owner: typings.yuka.srcCoreGameEntityMod.GameEntity) = this()
 }

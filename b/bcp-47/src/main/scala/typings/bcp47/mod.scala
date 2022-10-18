@@ -10,17 +10,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parse(tag: String): typings.bcp47.parseMod.Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tag.asInstanceOf[js.Any]).asInstanceOf[typings.bcp47.parseMod.Schema]
-  inline def parse(tag: String, options: typings.bcp47.parseMod.Options): typings.bcp47.parseMod.Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tag.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bcp47.parseMod.Schema]
+  inline def parse(tag: String): typings.bcp47.libParseMod.Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tag.asInstanceOf[js.Any]).asInstanceOf[typings.bcp47.libParseMod.Schema]
+  inline def parse(tag: String, options: typings.bcp47.libParseMod.Options): typings.bcp47.libParseMod.Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tag.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bcp47.libParseMod.Schema]
   
   inline def stringify(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")().asInstanceOf[String]
-  inline def stringify(schema: typings.bcp47.stringifyMod.Schema): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(schema.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(schema: typings.bcp47.libStringifyMod.Schema): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(schema.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type Extension = typings.bcp47.parseMod.Extension
+  type Extension = typings.bcp47.libParseMod.Extension
   
-  type Options = typings.bcp47.parseMod.Options
+  type Options = typings.bcp47.libParseMod.Options
   
-  type Schema = typings.bcp47.parseMod.Schema
+  type Schema = typings.bcp47.libParseMod.Schema
   
-  type Warning = typings.bcp47.parseMod.Warning
+  type Warning = typings.bcp47.libParseMod.Warning
 }

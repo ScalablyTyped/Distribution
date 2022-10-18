@@ -208,7 +208,7 @@ trait OmitNavigationBarsetBackground extends StObject {
       typings.tabris.global.tabris.NavigationBar_, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & `15`
+  ]) & `4`
   
   def off(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], Unit]): typings.tabris.global.tabris.NavigationBar_
   def off(
@@ -314,7 +314,7 @@ object OmitNavigationBarsetBackground {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.NavigationBar_, 
       Omit[typings.tabris.global.tabris.NavigationBar_, set | jsxAttributes]
-    ]) & `15`,
+    ]) & `4`,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.NavigationBar_,
     on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.NavigationBar_,
     onBackgroundChanged: ChangeListeners[typings.tabris.global.tabris.NavigationBar_, background],
@@ -383,7 +383,7 @@ object OmitNavigationBarsetBackground {
       value: (JSXAttributes[
           typings.tabris.global.tabris.NavigationBar_, 
           Omit[typings.tabris.global.tabris.NavigationBar_, set | jsxAttributes]
-        ]) & `15`
+        ]) & `4`
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setOff(

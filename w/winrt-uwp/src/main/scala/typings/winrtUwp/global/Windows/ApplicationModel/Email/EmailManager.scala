@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Allows an application to launch the email application with a new message displayed. Use this to allow users to send email from your application. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailManager")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Email.EmailManager")
 @js.native
-abstract class EmailManager ()
+open class EmailManager ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailManager
 object EmailManager {

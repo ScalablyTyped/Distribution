@@ -1,6 +1,6 @@
 package typings.rcUtil
 
-import typings.rcUtil.dynamicCSSMod.AppendType
+import typings.rcUtil.libDomDynamicCSSMod.AppendType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -39,9 +39,9 @@ object UserProfile {
   }
   
   /** Provides a property that lets the caller retrieve the advertising ID, which is an ID used to provide more relevant advertising by understanding which apps are used by the user and how they are used, and to improve quality of service by determining the frequency and effectiveness of ads and to detect fraud and security issues. */
-  @JSGlobal("Windows.System.UserProfile.AdvertisingManager")
+  /* note: abstract class */ @JSGlobal("Windows.System.UserProfile.AdvertisingManager")
   @js.native
-  abstract class AdvertisingManager ()
+  open class AdvertisingManager ()
     extends StObject
        with typings.winrtUwp.Windows.System.UserProfile.AdvertisingManager
   object AdvertisingManager {
@@ -59,9 +59,9 @@ object UserProfile {
   }
   
   /** Represents a collection of settings that a user can opt-in to during the first run experience. */
-  @JSGlobal("Windows.System.UserProfile.FirstSignInSettings")
+  /* note: abstract class */ @JSGlobal("Windows.System.UserProfile.FirstSignInSettings")
   @js.native
-  abstract class FirstSignInSettings ()
+  open class FirstSignInSettings ()
     extends StObject
        with typings.winrtUwp.Windows.System.UserProfile.FirstSignInSettings {
     
@@ -113,9 +113,9 @@ object UserProfile {
   }
   
   /** A static class for holding various user globalization preferences. */
-  @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences")
+  /* note: abstract class */ @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences")
   @js.native
-  abstract class GlobalizationPreferences ()
+  open class GlobalizationPreferences ()
     extends StObject
        with typings.winrtUwp.Windows.System.UserProfile.GlobalizationPreferences
   object GlobalizationPreferences {
@@ -168,9 +168,9 @@ object UserProfile {
   }
   
   /** Provides properties and methods to manage the full-screen image used as the lock screen background. */
-  @JSGlobal("Windows.System.UserProfile.LockScreen")
+  /* note: abstract class */ @JSGlobal("Windows.System.UserProfile.LockScreen")
   @js.native
-  abstract class LockScreen ()
+  open class LockScreen ()
     extends StObject
        with typings.winrtUwp.Windows.System.UserProfile.LockScreen
   object LockScreen {
@@ -262,9 +262,9 @@ object UserProfile {
   }
   
   /** Represents information about the user, such as name and account picture. */
-  @JSGlobal("Windows.System.UserProfile.UserInformation")
+  /* note: abstract class */ @JSGlobal("Windows.System.UserProfile.UserInformation")
   @js.native
-  abstract class UserInformation ()
+  open class UserInformation ()
     extends StObject
        with typings.winrtUwp.Windows.System.UserProfile.UserInformation
   object UserInformation {
@@ -394,9 +394,9 @@ object UserProfile {
   }
   
   /** Provides properties and methods to manage the user's desktop wallpaper and lock screen background image. */
-  @JSGlobal("Windows.System.UserProfile.UserProfilePersonalizationSettings")
+  /* note: abstract class */ @JSGlobal("Windows.System.UserProfile.UserProfilePersonalizationSettings")
   @js.native
-  abstract class UserProfilePersonalizationSettings ()
+  open class UserProfilePersonalizationSettings ()
     extends StObject
        with typings.winrtUwp.Windows.System.UserProfile.UserProfilePersonalizationSettings {
     

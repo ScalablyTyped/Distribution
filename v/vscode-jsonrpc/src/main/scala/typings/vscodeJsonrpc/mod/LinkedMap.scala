@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-jsonrpc", "LinkedMap")
 @js.native
 open class LinkedMap[K, V] ()
-  extends typings.vscodeJsonrpc.linkedMapMod.LinkedMap[K, V]
+  extends typings.vscodeJsonrpc.libCommonLinkedMapMod.LinkedMap[K, V]

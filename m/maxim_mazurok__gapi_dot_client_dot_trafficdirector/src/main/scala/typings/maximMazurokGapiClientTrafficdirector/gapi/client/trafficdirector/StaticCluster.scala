@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait StaticCluster extends StObject {
   
   /** The cluster config. */
   var cluster: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticCluster & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** The timestamp when the Cluster was last updated. */
@@ -27,9 +24,7 @@ object StaticCluster {
   extension [Self <: StaticCluster](x: Self) {
     
     inline def setCluster(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticCluster & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)

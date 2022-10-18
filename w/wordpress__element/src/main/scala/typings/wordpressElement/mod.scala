@@ -18,6 +18,7 @@ import typings.react.mod.DOMElement
 import typings.react.mod.DependencyList
 import typings.react.mod.DetailedReactHTMLElement
 import typings.react.mod.Dispatch
+import typings.react.mod.DispatchWithoutAction
 import typings.react.mod.EffectCallback
 import typings.react.mod.ExoticComponent
 import typings.react.mod.ForwardRefExoticComponent
@@ -41,6 +42,7 @@ import typings.react.mod.Reducer
 import typings.react.mod.ReducerAction
 import typings.react.mod.ReducerState
 import typings.react.mod.ReducerStateWithoutAction
+import typings.react.mod.ReducerWithoutAction
 import typings.react.mod.Ref
 import typings.react.mod.RefAttributes
 import typings.react.mod.RefObject
@@ -56,8 +58,8 @@ import typings.std.HTMLInputElement
 import typings.std.Partial
 import typings.std.SVGElement
 import typings.std.Text
-import typings.wordpressElement.createInterpolateElementMod.WPElement
-import typings.wordpressElement.rawHtmlMod.RawHTMLProps
+import typings.wordpressElement.buildTypesCreateInterpolateElementMod.WPElement
+import typings.wordpressElement.buildTypesRawHtmlMod.RawHTMLProps
 import typings.wordpressElement.wordpressElementStrings.input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -81,10 +83,10 @@ object mod {
     inline def forEach[C](children: C, fn: js.Function2[/* child */ C, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(children.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def forEach[C](children: js.Array[C], fn: js.Function2[/* child */ C, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(children.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def map[T, C](children: C, fn: js.Function2[/* child */ C, /* index */ Double, T]): (js.Array[Exclude[T, js.UndefOr[Boolean | Null]]]) | C = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(children.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[(js.Array[Exclude[T, js.UndefOr[Boolean | Null]]]) | C]
-    inline def map[T, C](children: js.Array[C], fn: js.Function2[/* child */ C, /* index */ Double, T]): (js.Array[Exclude[T, js.UndefOr[Boolean | Null]]]) | C = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(children.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[(js.Array[Exclude[T, js.UndefOr[Boolean | Null]]]) | C]
+    inline def map[T, C](children: C, fn: js.Function2[/* child */ C, /* index */ Double, T]): /* import warning: importer.ImportType#apply Failed type conversion: C extends null | undefined ? C : std.Array<std.Exclude<T, boolean | null | undefined>> */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(children.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: C extends null | undefined ? C : std.Array<std.Exclude<T, boolean | null | undefined>> */ js.Any]
+    inline def map[T, C](children: js.Array[C], fn: js.Function2[/* child */ C, /* index */ Double, T]): /* import warning: importer.ImportType#apply Failed type conversion: C extends null | undefined ? C : std.Array<std.Exclude<T, boolean | null | undefined>> */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(children.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: C extends null | undefined ? C : std.Array<std.Exclude<T, boolean | null | undefined>> */ js.Any]
     
-    inline def only[C](children: C): C = ^.asInstanceOf[js.Dynamic].applyDynamic("only")(children.asInstanceOf[js.Any]).asInstanceOf[C]
+    inline def only[C](children: C): /* import warning: importer.ImportType#apply Failed type conversion: C extends std.Array<any> ? never : C */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("only")(children.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: C extends std.Array<any> ? never : C */ js.Any]
     
     inline def toArray(children: js.Array[ReactNode]): js.Array[Exclude[ReactNode, js.UndefOr[Boolean | Null]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[Exclude[ReactNode, js.UndefOr[Boolean | Null]]]]
     inline def toArray(children: ReactNode): js.Array[Exclude[ReactNode, js.UndefOr[Boolean | Null]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[Exclude[ReactNode, js.UndefOr[Boolean | Null]]]]
@@ -94,7 +96,7 @@ object mod {
   @JSImport("@wordpress/element", "Component")
   @js.native
   open class Component[P, S, SS] protected ()
-    extends typings.wordpressElement.reactMod.Component[P, S, SS] {
+    extends typings.wordpressElement.buildTypesReactMod.Component[P, S, SS] {
     def this(props: P) = this()
     /**
       * @deprecated
@@ -223,17 +225,17 @@ object mod {
   inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
   inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
   inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.wordpressElement.wordpressElementStrings.a, typings.wordpressElement.wordpressElementStrings.abbr, typings.wordpressElement.wordpressElementStrings.address */ Any,
     props: ClassAttributes[T] & P,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
   inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.wordpressElement.wordpressElementStrings.a, typings.wordpressElement.wordpressElementStrings.abbr, typings.wordpressElement.wordpressElementStrings.address */ Any,
     props: Null,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
   inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.wordpressElement.wordpressElementStrings.a, typings.wordpressElement.wordpressElementStrings.abbr, typings.wordpressElement.wordpressElementStrings.address */ Any,
     props: Unit,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
@@ -247,17 +249,17 @@ object mod {
   inline def createElement_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: typings.std.Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
   
   inline def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.wordpressElement.wordpressElementStrings.animate, typings.wordpressElement.wordpressElementStrings.circle, typings.wordpressElement.wordpressElementStrings.clipPath */ Any,
     props: ClassAttributes[T] & P,
     children: ReactNode*
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
   inline def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.wordpressElement.wordpressElementStrings.animate, typings.wordpressElement.wordpressElementStrings.circle, typings.wordpressElement.wordpressElementStrings.clipPath */ Any,
     props: Null,
     children: ReactNode*
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
   inline def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.wordpressElement.wordpressElementStrings.animate, typings.wordpressElement.wordpressElementStrings.circle, typings.wordpressElement.wordpressElementStrings.clipPath */ Any,
     props: Unit,
     children: ReactNode*
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
@@ -462,6 +464,7 @@ object mod {
   // which would prevent autocompletion from ever working.
   // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
   // in older versions, or a regression in newer versions of the typescript completion service.
+  inline def useReducer[R /* <: Reducer[Any, Any] */](reducer: R, initialState: ReducerState[R], initializer: Unit): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]]]
   /**
     * An alternative to `useState`.
     *
@@ -473,7 +476,7 @@ object mod {
     * @see https://reactjs.org/docs/hooks-reference.html#usereducer
     */
   // overload where dispatch could accept 0 arguments.
-  inline def useReducer[R /* <: Reducer[Any, Any] */](reducer: R, initialState: ReducerState[R] | ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]]]
+  inline def useReducer[R /* <: ReducerWithoutAction[Any] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction]]
   /**
     * An alternative to `useState`.
     *

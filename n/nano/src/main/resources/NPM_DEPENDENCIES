@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "nano" : "9.0.1"
+      "nano" : "10.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "nano" : "9.0.1"
+      "nano" : "10.0.0"
     }
   ],
   "compile-devDependencies" : [

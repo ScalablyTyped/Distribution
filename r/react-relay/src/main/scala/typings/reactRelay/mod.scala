@@ -13,48 +13,48 @@ import typings.reactRelay.anon.Relay
 import typings.reactRelay.anon.RelayRelayPaginationProp
 import typings.reactRelay.anon.RelayRelayRefetchProp
 import typings.reactRelay.anon.UNSTABLErenderPolicy
-import typings.reactRelay.entryPointTypesMod.EnvironmentProviderOptions
-import typings.reactRelay.entryPointTypesMod.IEnvironmentProvider
-import typings.reactRelay.entryPointTypesMod.LoadQueryOptions
-import typings.reactRelay.entryPointTypesMod.PreloadableConcreteRequest
-import typings.reactRelay.entryPointTypesMod.PreloadedEntryPoint
-import typings.reactRelay.entryPointTypesMod.PreloadedQuery
-import typings.reactRelay.helpersMod.ArrayKeyType
-import typings.reactRelay.helpersMod.ArrayKeyTypeData
-import typings.reactRelay.helpersMod.GetEntryPointComponentFromEntryPoint
-import typings.reactRelay.helpersMod.GetEntryPointParamsFromEntryPoint
 import typings.reactRelay.legacyMod.ConnectionConfig
 import typings.reactRelay.legacyMod.Container
 import typings.reactRelay.legacyMod.PropsWithoutRelay
-import typings.reactRelay.profilerContextMod.ProfilerContextType
-import typings.reactRelay.relayEnvironmentProviderReactMod.Props
-import typings.reactRelay.useEntryPointLoaderMod.UseEntryPointLoaderHookType
-import typings.reactRelay.useMutationMod.UseMutationConfig
-import typings.reactRelay.usePaginationFragmentMod.usePaginationFragmentHookType
-import typings.reactRelay.useQueryLoaderMod.useQueryLoaderHookType
-import typings.reactRelay.useRefetchableFragmentMod.useRefetchableFragmentHookType
+import typings.reactRelay.relayHooksEntryPointTypesMod.EnvironmentProviderOptions
+import typings.reactRelay.relayHooksEntryPointTypesMod.IEnvironmentProvider
+import typings.reactRelay.relayHooksEntryPointTypesMod.LoadQueryOptions
+import typings.reactRelay.relayHooksEntryPointTypesMod.PreloadableConcreteRequest
+import typings.reactRelay.relayHooksEntryPointTypesMod.PreloadedEntryPoint
+import typings.reactRelay.relayHooksEntryPointTypesMod.PreloadedQuery
+import typings.reactRelay.relayHooksHelpersMod.ArrayKeyType
+import typings.reactRelay.relayHooksHelpersMod.ArrayKeyTypeData
+import typings.reactRelay.relayHooksHelpersMod.GetEntryPointComponentFromEntryPoint
+import typings.reactRelay.relayHooksHelpersMod.GetEntryPointParamsFromEntryPoint
+import typings.reactRelay.relayHooksProfilerContextMod.ProfilerContextType
+import typings.reactRelay.relayHooksRelayEnvironmentProviderDotreactMod.Props
+import typings.reactRelay.relayHooksUseEntryPointLoaderMod.UseEntryPointLoaderHookType
+import typings.reactRelay.relayHooksUseMutationMod.UseMutationConfig
+import typings.reactRelay.relayHooksUsePaginationFragmentMod.usePaginationFragmentHookType
+import typings.reactRelay.relayHooksUseQueryLoaderMod.useQueryLoaderHookType
+import typings.reactRelay.relayHooksUseRefetchableFragmentMod.useRefetchableFragmentHookType
 import typings.relayRuntime.anon.FetchPolicy
-import typings.relayRuntime.applyOptimisticMutationMod.OptimisticMutationConfig
-import typings.relayRuntime.commitMutationMod.MutationConfig
-import typings.relayRuntime.commitMutationMod.MutationParameters
-import typings.relayRuntime.readInlineDataMod.KeyType
-import typings.relayRuntime.readInlineDataMod.KeyTypeData
-import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
-import typings.relayRuntime.relayObservableMod.RelayObservable
-import typings.relayRuntime.relayRuntimeTypesMod.CacheConfig
-import typings.relayRuntime.relayRuntimeTypesMod.DataID
-import typings.relayRuntime.relayRuntimeTypesMod.Disposable
-import typings.relayRuntime.relayRuntimeTypesMod.OperationType
-import typings.relayRuntime.relayRuntimeTypesMod.Variables
-import typings.relayRuntime.relayRuntimeTypesMod.VariablesOf
-import typings.relayRuntime.relayStoreTypesMod.Environment
-import typings.relayRuntime.relayStoreTypesMod.HandleFieldPayload
-import typings.relayRuntime.relayStoreTypesMod.ReadOnlyRecordProxy
-import typings.relayRuntime.relayStoreTypesMod.RecordProxy
-import typings.relayRuntime.relayStoreTypesMod.RecordSourceProxy
-import typings.relayRuntime.relayStoreTypesMod.RelayContext
-import typings.relayRuntime.relayStoreTypesMod.StoreUpdater
-import typings.relayRuntime.requestSubscriptionMod.GraphQLSubscriptionConfig
+import typings.relayRuntime.libMutationsApplyOptimisticMutationMod.OptimisticMutationConfig
+import typings.relayRuntime.libMutationsCommitMutationMod.MutationConfig
+import typings.relayRuntime.libMutationsCommitMutationMod.MutationParameters
+import typings.relayRuntime.libNetworkRelayObservableMod.RelayObservable
+import typings.relayRuntime.libQueryRelayModernGraphQLTagMod.GraphQLTaggedNode
+import typings.relayRuntime.libStoreReadInlineDataMod.KeyType
+import typings.relayRuntime.libStoreReadInlineDataMod.KeyTypeData
+import typings.relayRuntime.libStoreRelayStoreTypesMod.Environment
+import typings.relayRuntime.libStoreRelayStoreTypesMod.HandleFieldPayload
+import typings.relayRuntime.libStoreRelayStoreTypesMod.ReadOnlyRecordProxy
+import typings.relayRuntime.libStoreRelayStoreTypesMod.RecordProxy
+import typings.relayRuntime.libStoreRelayStoreTypesMod.RecordSourceProxy
+import typings.relayRuntime.libStoreRelayStoreTypesMod.RelayContext
+import typings.relayRuntime.libStoreRelayStoreTypesMod.StoreUpdater
+import typings.relayRuntime.libSubscriptionRequestSubscriptionMod.GraphQLSubscriptionConfig
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.CacheConfig
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.DataID
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Disposable
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.OperationType
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Variables
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.VariablesOf
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -299,7 +299,7 @@ object mod {
   inline def useFragment[TKey /* <: ArrayKeyType[Any] */](fragmentInput: GraphQLTaggedNode): (ArrayKeyTypeData[TKey, Any]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[(ArrayKeyTypeData[TKey, Any]) | Null]
   inline def useFragment[TKey /* <: ArrayKeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): ArrayKeyTypeData[TKey, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[ArrayKeyTypeData[TKey, Any]]
   
-  inline def useFragment_TKey_KeyTypeData[TKey /* <: typings.reactRelay.helpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactRelay.helpersMod.KeyTypeData[TKey, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]]
+  inline def useFragment_TKey_KeyTypeData[TKey /* <: typings.reactRelay.relayHooksHelpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]]
   
   inline def useFragment_TKey_Union[TKey /* <: ArrayKeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): (ArrayKeyTypeData[TKey, Any]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[(ArrayKeyTypeData[TKey, Any]) | Null]
   
@@ -312,12 +312,28 @@ object mod {
     commitMutationFn: js.Function2[/* environment */ Environment, /* config */ MutationConfig[TMutation], Disposable]
   ): js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useMutation")(mutation.asInstanceOf[js.Any], commitMutationFn.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean]]
   
-  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.helpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
-  usePaginationFragmentHookType[TQuery, TKey | Null, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
-  usePaginationFragmentHookType[TQuery, TKey | Null, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null]]
-  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.helpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
-  usePaginationFragmentHookType[TQuery, TKey | Null, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
-  usePaginationFragmentHookType[TQuery, TKey | Null, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null]]
+  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.relayHooksHelpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[
+    TQuery, 
+    TKey | Null, 
+    (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[
+    TQuery, 
+    TKey | Null, 
+    (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
+  ]]
+  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.relayHooksHelpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[
+    TQuery, 
+    TKey | Null, 
+    (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[
+    TQuery, 
+    TKey | Null, 
+    (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
+  ]]
   
   inline def usePreloadedQuery[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
@@ -340,12 +356,28 @@ object mod {
     initialQueryReference: PreloadedQuery[TQuery, EnvironmentProviderOptions[Record[String, Any]]]
   ): useQueryLoaderHookType[TQuery] = (^.asInstanceOf[js.Dynamic].applyDynamic("useQueryLoader")(preloadableRequest.asInstanceOf[js.Any], initialQueryReference.asInstanceOf[js.Any])).asInstanceOf[useQueryLoaderHookType[TQuery]]
   
-  inline def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.helpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
-  useRefetchableFragmentHookType[TQuery, TKey, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
-  useRefetchableFragmentHookType[TQuery, TKey, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null]]
-  inline def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.helpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
-  useRefetchableFragmentHookType[TQuery, TKey, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
-  useRefetchableFragmentHookType[TQuery, TKey, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null]]
+  inline def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.relayHooksHelpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
+  useRefetchableFragmentHookType[
+    TQuery, 
+    TKey, 
+    (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  useRefetchableFragmentHookType[
+    TQuery, 
+    TKey, 
+    (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
+  ]]
+  inline def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.relayHooksHelpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
+  useRefetchableFragmentHookType[
+    TQuery, 
+    TKey, 
+    (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  useRefetchableFragmentHookType[
+    TQuery, 
+    TKey, 
+    (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
+  ]]
   
   inline def useRelayEnvironment(): typings.relayRuntime.mod.Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("useRelayEnvironment")().asInstanceOf[typings.relayRuntime.mod.Environment]
   

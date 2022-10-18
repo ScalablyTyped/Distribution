@@ -18,10 +18,10 @@ object babylonjsMeshesLinesMeshAugmentingMod {
       * @returns the current InstancedLinesMesh
       * @see https://www.babylonjs-playground.com/#19O9TU#0
       */
-    def enableEdgesRendering(): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
-    def enableEdgesRendering(epsilon: Double): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
-    def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
-    def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
+    def enableEdgesRendering(): typings.babylonjs.renderingEdgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
+    def enableEdgesRendering(epsilon: Double): typings.babylonjs.renderingEdgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
+    def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.renderingEdgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
+    def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.renderingEdgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
   }
   
   @js.native
@@ -35,9 +35,9 @@ object babylonjsMeshesLinesMeshAugmentingMod {
       * @returns the currentAbstractMesh
       * @see https://www.babylonjs-playground.com/#19O9TU#0
       */
-    def enableEdgesRendering(): typings.babylonjs.abstractMeshMod.AbstractMesh = js.native
-    def enableEdgesRendering(epsilon: Double): typings.babylonjs.abstractMeshMod.AbstractMesh = js.native
-    def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.abstractMeshMod.AbstractMesh = js.native
-    def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.abstractMeshMod.AbstractMesh = js.native
+    def enableEdgesRendering(): typings.babylonjs.meshesAbstractMeshMod.AbstractMesh = js.native
+    def enableEdgesRendering(epsilon: Double): typings.babylonjs.meshesAbstractMeshMod.AbstractMesh = js.native
+    def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.meshesAbstractMeshMod.AbstractMesh = js.native
+    def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.meshesAbstractMeshMod.AbstractMesh = js.native
   }
 }

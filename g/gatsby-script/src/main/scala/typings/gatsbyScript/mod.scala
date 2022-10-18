@@ -1,7 +1,7 @@
 package typings.gatsbyScript
 
 import typings.gatsbyScript.anon.Error
-import typings.gatsbyScript.gatsbyScriptMod.ScriptProps
+import typings.gatsbyScript.distGatsbyScriptMod.ScriptProps
 import typings.react.mod.global.JSX.Element
 import typings.std.Map
 import typings.std.Set
@@ -22,13 +22,13 @@ object mod {
   object ScriptStrategy extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.gatsbyScript.gatsbyScriptMod.ScriptStrategy & String] = js.native
+    def apply(value: String): js.UndefOr[typings.gatsbyScript.distGatsbyScriptMod.ScriptStrategy & String] = js.native
     
-    /* "idle" */ val idle: typings.gatsbyScript.gatsbyScriptMod.ScriptStrategy.idle & String = js.native
+    /* "idle" */ val idle: typings.gatsbyScript.distGatsbyScriptMod.ScriptStrategy.idle & String = js.native
     
-    /* "off-main-thread" */ val offMainThread: typings.gatsbyScript.gatsbyScriptMod.ScriptStrategy.offMainThread & String = js.native
+    /* "off-main-thread" */ val offMainThread: typings.gatsbyScript.distGatsbyScriptMod.ScriptStrategy.offMainThread & String = js.native
     
-    /* "post-hydrate" */ val postHydrate: typings.gatsbyScript.gatsbyScriptMod.ScriptStrategy.postHydrate & String = js.native
+    /* "post-hydrate" */ val postHydrate: typings.gatsbyScript.distGatsbyScriptMod.ScriptStrategy.postHydrate & String = js.native
   }
   
   object collectedScriptsByPage {

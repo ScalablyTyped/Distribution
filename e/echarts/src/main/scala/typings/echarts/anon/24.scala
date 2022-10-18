@@ -14,7 +14,7 @@ trait `24` extends StObject {
   /**
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label
     */
-  var label: js.UndefOr[TextShadowBlur] = js.undefined
+  var label: js.UndefOr[TextBorderColor] = js.undefined
 }
 object `24` {
   
@@ -29,7 +29,7 @@ object `24` {
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    inline def setLabel(value: TextShadowBlur): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: TextBorderColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }

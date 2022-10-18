@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "RenderTargetCanvas")
 @js.native
 open class RenderTargetCanvas protected ()
-  extends typings.blackEngine.renderTargetCanvasMod.RenderTargetCanvas {
+  extends typings.blackEngine.driversCanvasRenderTargetCanvasMod.RenderTargetCanvas {
   def this(width: Double, height: Double) = this()
 }

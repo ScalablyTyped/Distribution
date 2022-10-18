@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "string-strip-html" : "11.6.9"
+      "string-strip-html" : "11.6.15"
     }
   ],
   "test-dependencies" : [
     {
-      "string-strip-html" : "11.6.9"
+      "string-strip-html" : "11.6.15"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__pro-layout
 
-Typings are for version 7.1.3
+Typings are for version 7.1.8
 
 ## Library description:
 @ant-design/pro-layout

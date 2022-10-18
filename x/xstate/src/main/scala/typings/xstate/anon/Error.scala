@@ -1,6 +1,6 @@
 package typings.xstate.anon
 
-import typings.xstate.behaviorsMod.PromiseEvents
+import typings.xstate.libBehaviorsMod.PromiseEvents
 import typings.xstate.xstateStrings.reject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

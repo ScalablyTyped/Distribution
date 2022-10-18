@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TreeView[T] extends Disposable {
   
   /**
+    * The badge to display for this TreeView.
+    * To remove the badge, set to undefined.
+    */
+  var badge: js.UndefOr[ViewBadge] = js.native
+  
+  /**
     * An optional human-readable description which is rendered less prominently in the title of the view.
     * Setting the title description to null, undefined, or empty string will remove the description from the view.
     */

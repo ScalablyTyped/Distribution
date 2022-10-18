@@ -1,7 +1,7 @@
 package typings.uirouterCore.anon
 
-import typings.uirouterCore.paramsInterfaceMod.RawParams
-import typings.uirouterCore.stateInterfaceMod._RedirectToResult
+import typings.uirouterCore.libParamsInterfaceMod.RawParams
+import typings.uirouterCore.libStateInterfaceMod._RedirectToResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

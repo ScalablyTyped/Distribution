@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsPlusCircleTwoToneMod.PlusCircleTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object plusCircleTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/PlusCircleTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/PlusCircleTwoTone", JSImport.Default)
   @js.native
   val default: PlusCircleTwoToneIconType = js.native
-  
-  @js.native
-  trait PlusCircleTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_PlusCircleTwoToneIconType: String = js.native
-  }
   
   type _To = PlusCircleTwoToneIconType
   

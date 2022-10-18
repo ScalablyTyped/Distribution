@@ -1,5 +1,6 @@
 package typings.floatingUiDom
 
+import typings.floatingUiCore.anon.Fn
 import typings.floatingUiCore.anon.PartialLimitShiftOptions
 import typings.floatingUiCore.anon.PartialOptionsOptions
 import typings.floatingUiCore.anon.PartialOptionsOptionsAltBoundary
@@ -7,17 +8,17 @@ import typings.floatingUiCore.anon.PartialOptionsOptionsApply
 import typings.floatingUiCore.anon.PartialOptionsOptionsBoundary
 import typings.floatingUiCore.anon.PartialOptionsOptionsCrossAxis
 import typings.floatingUiCore.anon.PartialOptionsPadding
-import typings.floatingUiCore.arrowMod.Options
-import typings.floatingUiCore.typesMod.ComputePositionReturn
-import typings.floatingUiCore.typesMod.Middleware
-import typings.floatingUiCore.typesMod.MiddlewareArguments
-import typings.floatingUiCore.typesMod.SideObject
+import typings.floatingUiCore.srcMiddlewareArrowMod.Options
+import typings.floatingUiCore.srcTypesMod.ComputePositionReturn
+import typings.floatingUiCore.srcTypesMod.Middleware
+import typings.floatingUiCore.srcTypesMod.MiddlewareArguments
+import typings.floatingUiCore.srcTypesMod.SideObject
 import typings.floatingUiDom.anon.PartialComputePositionCon
 import typings.floatingUiDom.anon.PartialOptions
-import typings.floatingUiDom.isMod.global.Window
-import typings.floatingUiDom.typesMod.FloatingElement
-import typings.floatingUiDom.typesMod.Platform_
-import typings.floatingUiDom.typesMod.ReferenceElement
+import typings.floatingUiDom.srcTypesMod.FloatingElement
+import typings.floatingUiDom.srcTypesMod.Platform_
+import typings.floatingUiDom.srcTypesMod.ReferenceElement
+import typings.floatingUiDom.srcUtilsIsMod.global.Window
 import typings.std.Element
 import typings.std.Node
 import typings.std.VisualViewport
@@ -62,11 +63,11 @@ object srcMod {
   inline def `inline`(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("inline")().asInstanceOf[Middleware]
   inline def `inline`(options: PartialOptionsPadding): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("inline")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
-  inline def limitShift(): typings.floatingUiCore.anon.Options = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")().asInstanceOf[typings.floatingUiCore.anon.Options]
-  inline def limitShift(options: PartialLimitShiftOptions): typings.floatingUiCore.anon.Options = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")(options.asInstanceOf[js.Any]).asInstanceOf[typings.floatingUiCore.anon.Options]
+  inline def limitShift(): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")().asInstanceOf[Fn]
+  inline def limitShift(options: PartialLimitShiftOptions): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")(options.asInstanceOf[js.Any]).asInstanceOf[Fn]
   
   inline def offset(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")().asInstanceOf[Middleware]
-  inline def offset(value: typings.floatingUiCore.offsetMod.Options): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(value.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def offset(value: typings.floatingUiCore.srcMiddlewareOffsetMod.Options): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(value.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
   @JSImport("@floating-ui/dom/src", "platform")
   @js.native

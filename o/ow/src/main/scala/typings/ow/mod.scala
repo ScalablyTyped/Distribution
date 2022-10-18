@@ -1,259 +1,193 @@
 package typings.ow
 
-import org.scalablytyped.runtime.Shortcut
-import typings.ow.basePredicateMod.BasePredicate
-import typings.ow.modifiersMod.Modifiers
-import typings.ow.predicateMod.PredicateOptions
-import typings.ow.predicatesMod.Predicates
+import typings.ow.distPredicatesBasePredicateMod.BasePredicate
+import typings.ow.distPredicatesMod.Predicates
+import typings.ow.distPredicatesPredicateMod.PredicateOptions
 import typings.std.ArrayBufferLike
 import typings.std.Map
 import typings.std.Set
-import typings.typeFest.typedArrayMod.TypedArray
+import typings.typeFest.sourceTypedArrayMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+/* from `exports` in `package.json` */
+object mod {
   
-  @JSImport("ow/dist", JSImport.Default)
+  @JSImport("ow", JSImport.Namespace)
   @js.native
-  val default: Ow = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ow/dist", "AnyPredicate")
+  inline def default[T](`object`: T): T & Predicates = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[T & Predicates]
+  inline def default[T](`object`: T, options: PredicateOptions): T & Predicates = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & Predicates]
+  
+  @JSImport("ow", "AnyPredicate")
   @js.native
   open class AnyPredicate[T] protected ()
-    extends typings.ow.predicatesMod.AnyPredicate[T] {
+    extends typings.ow.distMod.AnyPredicate[T] {
     def this(predicates: js.Array[BasePredicate[Any]]) = this()
     def this(predicates: js.Array[BasePredicate[Any]], options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "ArgumentError")
+  @JSImport("ow", "ArgumentError")
   @js.native
   open class ArgumentError protected ()
-    extends typings.ow.argumentErrorMod.ArgumentError {
+    extends typings.ow.distMod.ArgumentError {
     def this(message: String, context: js.Function) = this()
     def this(message: String, context: js.Function, errors: Map[String, Set[String]]) = this()
   }
   
-  @JSImport("ow/dist", "ArrayBufferPredicate")
+  @JSImport("ow", "ArrayBufferPredicate")
   @js.native
   open class ArrayBufferPredicate[T /* <: ArrayBufferLike */] protected ()
-    extends typings.ow.predicatesMod.ArrayBufferPredicate[T] {
+    extends typings.ow.distMod.ArrayBufferPredicate[T] {
     def this(`type`: String) = this()
     def this(`type`: String, options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "ArrayPredicate")
+  @JSImport("ow", "ArrayPredicate")
   @js.native
   /**
     @hidden
     */
   open class ArrayPredicate[T] ()
-    extends typings.ow.predicatesMod.ArrayPredicate[T] {
+    extends typings.ow.distMod.ArrayPredicate[T] {
     def this(options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "BigIntPredicate")
+  @JSImport("ow", "BigIntPredicate")
   @js.native
   /**
     @hidden
     */
   open class BigIntPredicate ()
-    extends typings.ow.predicatesMod.BigIntPredicate {
+    extends typings.ow.distMod.BigIntPredicate {
     def this(options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "BooleanPredicate")
+  @JSImport("ow", "BooleanPredicate")
   @js.native
   /**
     @hidden
     */
   open class BooleanPredicate ()
-    extends typings.ow.predicatesMod.BooleanPredicate {
+    extends typings.ow.distMod.BooleanPredicate {
     def this(options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "DataViewPredicate")
+  @JSImport("ow", "DataViewPredicate")
   @js.native
   /**
     @hidden
     */
   open class DataViewPredicate ()
-    extends typings.ow.predicatesMod.DataViewPredicate {
+    extends typings.ow.distMod.DataViewPredicate {
     def this(options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "DatePredicate")
+  @JSImport("ow", "DatePredicate")
   @js.native
   /**
     @hidden
     */
   open class DatePredicate ()
-    extends typings.ow.predicatesMod.DatePredicate {
+    extends typings.ow.distMod.DatePredicate {
     def this(options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "ErrorPredicate")
+  @JSImport("ow", "ErrorPredicate")
   @js.native
   /**
     @hidden
     */
   open class ErrorPredicate ()
-    extends typings.ow.predicatesMod.ErrorPredicate {
+    extends typings.ow.distMod.ErrorPredicate {
     def this(options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "MapPredicate")
+  @JSImport("ow", "MapPredicate")
   @js.native
   /**
     @hidden
     */
   open class MapPredicate[T1, T2] ()
-    extends typings.ow.predicatesMod.MapPredicate[T1, T2] {
+    extends typings.ow.distMod.MapPredicate[T1, T2] {
     def this(options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "NumberPredicate")
+  @JSImport("ow", "NumberPredicate")
   @js.native
   /**
     @hidden
     */
   open class NumberPredicate ()
-    extends typings.ow.predicatesMod.NumberPredicate {
+    extends typings.ow.distMod.NumberPredicate {
     def this(options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "ObjectPredicate")
+  @JSImport("ow", "ObjectPredicate")
   @js.native
   /**
     @hidden
     */
   open class ObjectPredicate[T /* <: js.Object */] ()
-    extends typings.ow.predicatesMod.ObjectPredicate[T] {
+    extends typings.ow.distMod.ObjectPredicate[T] {
     def this(options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "Predicate")
+  @JSImport("ow", "Predicate")
   @js.native
   open class Predicate[T] protected ()
-    extends typings.ow.predicateMod.Predicate[T] {
+    extends typings.ow.distMod.Predicate[T] {
     def this(`type`: String) = this()
     def this(`type`: String, options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "SetPredicate")
+  @JSImport("ow", "SetPredicate")
   @js.native
   /**
     @hidden
     */
   open class SetPredicate[T] ()
-    extends typings.ow.predicatesMod.SetPredicate[T] {
+    extends typings.ow.distMod.SetPredicate[T] {
     def this(options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "StringPredicate")
+  @JSImport("ow", "StringPredicate")
   @js.native
   /**
     @hidden
     */
   open class StringPredicate ()
-    extends typings.ow.predicatesMod.StringPredicate {
+    extends typings.ow.distMod.StringPredicate {
     def this(options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "TypedArrayPredicate")
+  @JSImport("ow", "TypedArrayPredicate")
   @js.native
   open class TypedArrayPredicate[T /* <: TypedArray */] protected ()
-    extends typings.ow.predicatesMod.TypedArrayPredicate[T] {
+    extends typings.ow.distMod.TypedArrayPredicate[T] {
     def this(`type`: String) = this()
     def this(`type`: String, options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "WeakMapPredicate")
+  @JSImport("ow", "WeakMapPredicate")
   @js.native
   /**
     @hidden
     */
   open class WeakMapPredicate[KeyType /* <: js.Object */] ()
-    extends typings.ow.predicatesMod.WeakMapPredicate[KeyType] {
+    extends typings.ow.distMod.WeakMapPredicate[KeyType] {
     def this(options: PredicateOptions) = this()
   }
   
-  @JSImport("ow/dist", "WeakSetPredicate")
+  @JSImport("ow", "WeakSetPredicate")
   @js.native
   /**
     @hidden
     */
   open class WeakSetPredicate[T /* <: js.Object */] ()
-    extends typings.ow.predicatesMod.WeakSetPredicate[T] {
+    extends typings.ow.distMod.WeakSetPredicate[T] {
     def this(options: PredicateOptions) = this()
   }
-  
-  type AssertingValidator[T] = js.Function2[
-    /* value */ Any, 
-    js.UndefOr[String], 
-    /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(any))),IArray())*/ Boolean
-  ]
-  
-  type Infer[P] = Any
-  
-  type Main = js.Function4[
-    /* value */ Any, 
-    /* label */ String | js.Function, 
-    /* predicate */ BasePredicate[Any], 
-    /* idLabel */ js.UndefOr[Boolean], 
-    Unit
-  ]
-  
-  @js.native
-  trait Ow
-    extends StObject
-       with Modifiers
-       with Predicates {
-    
-    /**
-      Test if `value` matches the provided `predicate`. Throws an `ArgumentError` with the specified `label` if the test fails.
-      @param value - Value to test.
-      @param label - Label which should be used in error messages.
-      @param predicate - Predicate to test against.
-      */
-    def apply[T](value: Any, label: String, predicate: BasePredicate[T]): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = js.native
-    /**
-      Test if the value matches the predicate. Throws an `ArgumentError` if the test fails.
-      @param value - Value to test.
-      @param predicate - Predicate to test against.
-      */
-    def apply[T](value: Any, predicate: BasePredicate[T]): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = js.native
-    
-    /**
-      Create a reusable validator.
-      @param predicate - Predicate used in the validator function.
-      */
-    def create[T](label: String, predicate: BasePredicate[T]): ReusableValidator[T] = js.native
-    /**
-      Create a reusable validator.
-      @param predicate - Predicate used in the validator function.
-      */
-    def create[T](predicate: BasePredicate[T]): ReusableValidator[T] = js.native
-    /**
-      Create a reusable validator.
-      @param predicate - Predicate used in the validator function.
-      */
-    @JSName("create")
-    var create_Original: (js.Function1[/* predicate */ BasePredicate[Any], ReusableValidator[Any]]) & (js.Function2[/* label */ String, /* predicate */ BasePredicate[Any], ReusableValidator[Any]]) = js.native
-    
-    /**
-      Returns `true` if the value matches the predicate, otherwise returns `false`.
-      @param value - Value to test.
-      @param predicate - Predicate to test against.
-      */
-    def isValid[T](value: Any, predicate: BasePredicate[T]): /* is T */ Boolean = js.native
-  }
-  
-  type ReusableValidator[T] = js.Function2[/* value */ Any | T, /* label */ js.UndefOr[String], Unit]
-  
-  type _To = Ow
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: Ow = default
 }

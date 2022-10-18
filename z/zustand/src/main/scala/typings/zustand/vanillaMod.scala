@@ -2,11 +2,12 @@ package typings.zustand
 
 import org.scalablytyped.runtime.Shortcut
 import typings.std.Partial
-import typings.zustand.devtoolsMod.WithDevtools
-import typings.zustand.immerMod.WithImmer
-import typings.zustand.persistMod.WithPersist
-import typings.zustand.reduxMod.WithRedux
-import typings.zustand.subscribeWithSelectorMod.WithSelectorSubscribe
+import typings.zustand.anon.`1`
+import typings.zustand.middlewareDevtoolsMod.WithDevtools
+import typings.zustand.middlewareImmerMod.WithImmer
+import typings.zustand.middlewarePersistMod.WithPersist
+import typings.zustand.middlewareReduxMod.WithRedux
+import typings.zustand.middlewareSubscribeWithSelectorMod.WithSelectorSubscribe
 import typings.zustand.zustandStrings.getState
 import typings.zustand.zustandStrings.setState
 import org.scalablytyped.runtime.StObject
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object vanillaMod extends Shortcut {
   
-  @JSImport("zustand/esm/vanilla", JSImport.Default)
+  @JSImport("zustand/vanilla", JSImport.Default)
   @js.native
   val default: CreateStore = js.native
   
@@ -33,11 +34,27 @@ object vanillaMod extends Shortcut {
   
   type EqualityChecker[T] = js.Function2[/* state */ T, /* newState */ T, Boolean]
   
-  type Get[T, K, F] = F | (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    K extends keyof T ? T[K] : F
+    }}}
+    */
+  @js.native
+  trait Get[T, K, F] extends StObject
   
   type GetState[T /* <: State */] = js.Function0[T]
   
-  type Mutate[S, Ms] = Any | S
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Ms extends [] ? S : Ms extends [[infer Mi, infer Ma], ...infer Mrs] ? zustand.zustand/vanilla.Mutate<zustand.zustand/vanilla.StoreMutators<S, Ma>[Mi & zustand.zustand/vanilla.StoreMutatorIdentifier], Mrs> : never
+    }}}
+    */
+  @js.native
+  trait Mutate[S, Ms] extends StObject
   
   type PartialState[T /* <: State */] = Partial[T] | (js.Function1[/* state */ T, Partial[T]])
   
@@ -56,12 +73,12 @@ object vanillaMod extends Shortcut {
   type State = Any
   
   type StateCreator[T, Mis /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */, Mos /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */, U] = (js.Function4[
-    /* setState */ Get[Any, setState, Unit], 
-    /* getState */ Get[Any, getState, Unit], 
-    /* store */ Any, 
+    /* setState */ Get[Mutate[StoreApi[T], Mis], setState, Unit], 
+    /* getState */ Get[Mutate[StoreApi[T], Mis], getState, Unit], 
+    /* store */ Mutate[StoreApi[T], Mis], 
     /* $$storeMutations */ Mis, 
     U
-  ]) & typings.zustand.anon.StoreMutators[Mos]
+  ]) & `1`[Mos]
   
   type StateListener[T] = js.Function2[/* state */ T, /* previousState */ T, Unit]
   
@@ -105,7 +122,7 @@ object vanillaMod extends Shortcut {
     }
   }
   
-  /* keyof zustand.zustand/esm/vanilla.StoreMutators<unknown, unknown> */ /* Rewritten from type alias, can be one of: 
+  /* keyof zustand.zustand/vanilla.StoreMutators<unknown, unknown> */ /* Rewritten from type alias, can be one of: 
     - typings.zustand.zustandStrings.zustandSlashdevtools
     - typings.zustand.zustandStrings.zustandSlashimmer
     - typings.zustand.zustandStrings.zustandSlashpersist

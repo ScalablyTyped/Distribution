@@ -1,7 +1,9 @@
 package typings.jestEnvironmentNode
 
+import org.scalablytyped.runtime.Instantiable2
+import typings.jestEnvironment.mod.EnvironmentContext
 import typings.jestEnvironment.mod.JestEnvironment
-import typings.jestTypes.configMod.ProjectConfig
+import typings.jestEnvironment.mod.JestEnvironmentConfig
 import typings.node.vmMod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,19 +11,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("jest-environment-node", JSImport.Namespace)
+  @JSImport("jest-environment-node", JSImport.Default)
   @js.native
-  class ^ protected () extends NodeEnvironment {
-    def this(config: ProjectConfig) = this()
+  open class default protected () extends NodeEnvironment {
+    def this(config: JestEnvironmentConfig, _context: EnvironmentContext) = this()
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("jest-environment-node", "TestEnvironment")
   @js.native
-  trait NodeEnvironment extends JestEnvironment {
+  open class TestEnvironment protected () extends NodeEnvironment {
+    def this(config: JestEnvironmentConfig, _context: EnvironmentContext) = this()
+  }
+  @JSImport("jest-environment-node", "TestEnvironment")
+  @js.native
+  val TestEnvironment: Instantiable2[
+    /* config */ JestEnvironmentConfig, 
+    /* _context */ EnvironmentContext, 
+    NodeEnvironment
+  ] = js.native
+  
+  @js.native
+  trait NodeEnvironment extends JestEnvironment[Timer] {
     
     var context: Context | Null = js.native
     
-    @JSName("getVmContext")
-    def getVmContext_MNodeEnvironment(): Context | Null = js.native
+    var customExportConditions: js.Array[String] = js.native
+    
+    @JSName("exportConditions")
+    def exportConditions_MNodeEnvironment(): js.Array[String] = js.native
   }
   
   trait Timer extends StObject {

@@ -1,6 +1,7 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.anon.SizeX
+import typings.babylonjs.anon.Custom
+import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,20 +17,20 @@ object PolyhedronBuilder {
   @js.native
   def CreatePolyhedron: js.Function3[
     /* name */ String, 
-    /* options */ js.UndefOr[SizeX], 
+    /* options */ js.UndefOr[Custom], 
     /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-    typings.babylonjs.meshMod.Mesh
+    Mesh
   ] = js.native
-  inline def CreatePolyhedron(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-  inline def CreatePolyhedron(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-  inline def CreatePolyhedron(name: String, options: SizeX): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-  inline def CreatePolyhedron(name: String, options: SizeX, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreatePolyhedron(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+  inline def CreatePolyhedron(name: String, options: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def CreatePolyhedron(name: String, options: Custom): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def CreatePolyhedron(name: String, options: Custom, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
   inline def CreatePolyhedron_=(
     x: js.Function3[
       /* name */ String, 
-      /* options */ js.UndefOr[SizeX], 
+      /* options */ js.UndefOr[Custom], 
       /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-      typings.babylonjs.meshMod.Mesh
+      Mesh
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreatePolyhedron")(x.asInstanceOf[js.Any])
 }

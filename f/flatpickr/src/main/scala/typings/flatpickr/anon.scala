@@ -1,5 +1,16 @@
 package typings.flatpickr
 
+import typings.flatpickr.distTypesGlobalsMod.global.Date
+import typings.flatpickr.distTypesGlobalsMod.global.HTMLElement
+import typings.flatpickr.distTypesInstanceMod.Instance
+import typings.flatpickr.distTypesLocaleMod.CustomLocale
+import typings.flatpickr.distTypesLocaleMod.Locale
+import typings.flatpickr.distTypesLocaleMod.key
+import typings.flatpickr.distTypesOptionsMod.DateLimit
+import typings.flatpickr.distTypesOptionsMod.DateOption
+import typings.flatpickr.distTypesOptionsMod.Hook
+import typings.flatpickr.distTypesOptionsMod.ParsedOptions
+import typings.flatpickr.distTypesOptionsMod.Plugin
 import typings.flatpickr.flatpickrStrings.`above center`
 import typings.flatpickr.flatpickrStrings.`above left`
 import typings.flatpickr.flatpickrStrings.`above right`
@@ -18,17 +29,6 @@ import typings.flatpickr.flatpickrStrings.range
 import typings.flatpickr.flatpickrStrings.single
 import typings.flatpickr.flatpickrStrings.static
 import typings.flatpickr.flatpickrStrings.time
-import typings.flatpickr.globalsMod.global.Date
-import typings.flatpickr.globalsMod.global.HTMLElement
-import typings.flatpickr.instanceMod.Instance
-import typings.flatpickr.localeMod.CustomLocale
-import typings.flatpickr.localeMod.Locale
-import typings.flatpickr.localeMod.key
-import typings.flatpickr.optionsMod.DateLimit
-import typings.flatpickr.optionsMod.DateOption
-import typings.flatpickr.optionsMod.Hook
-import typings.flatpickr.optionsMod.ParsedOptions
-import typings.flatpickr.optionsMod.Plugin
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface exposes the methods and properties used to control and configure tethering capabilities for a specific network account. */
-@JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager")
 @js.native
-abstract class NetworkOperatorTetheringManager ()
+open class NetworkOperatorTetheringManager ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager {
   

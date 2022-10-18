@@ -37,5 +37,5 @@ object PlaneGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.planeGeometryMod.PlaneGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.planeGeometryMod.PlaneGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesPlaneGeometryMod.PlaneGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesPlaneGeometryMod.PlaneGeometry]
 }

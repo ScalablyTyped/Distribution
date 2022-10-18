@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param frameSampleSize The number of samples required to saturate the sliding window
   */
 open class PerformanceMonitor ()
-  extends typings.babylonjs.performanceMonitorMod.PerformanceMonitor {
+  extends typings.babylonjs.miscPerformanceMonitorMod.PerformanceMonitor {
   def this(frameSampleSize: Double) = this()
 }

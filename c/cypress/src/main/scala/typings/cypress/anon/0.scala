@@ -1,16 +1,24 @@
 package typings.cypress.anon
 
-import typings.cypress.sinonMod.SinonSandbox
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `0` extends js.Object {
-  /**
-    * @deprecated Since 5.0, use `sinon.createSandbox` instead
-    */
-  def create(): SinonSandbox = js.native
-  def create(config: PartialSinonSandboxConfig): SinonSandbox = js.native
+trait `0` extends StObject {
+  
+  val length: js.UndefOr[Double] = js.undefined
 }
-
+object `0` {
+  
+  inline def apply(): `0` = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`0`]
+  }
+  
+  extension [Self <: `0`](x: Self) {
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+  }
+}

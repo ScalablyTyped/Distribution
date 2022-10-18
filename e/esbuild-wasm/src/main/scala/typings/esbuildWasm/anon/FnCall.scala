@@ -1,8 +1,8 @@
 package typings.esbuildWasm.anon
 
-import typings.esbuildWasm.browserMod.BuildIncremental
-import typings.esbuildWasm.browserMod.BuildOptions
-import typings.esbuildWasm.browserMod.BuildResult
+import typings.esbuildWasm.libBrowserMod.BuildIncremental
+import typings.esbuildWasm.libBrowserMod.BuildOptions
+import typings.esbuildWasm.libBrowserMod.BuildResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

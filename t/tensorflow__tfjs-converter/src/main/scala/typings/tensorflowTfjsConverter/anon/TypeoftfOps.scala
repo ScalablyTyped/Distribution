@@ -13,6 +13,8 @@ import typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.left
 import typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.right
 import typings.tensorflowTfjsCore.anon.Indexing
 import typings.tensorflowTfjsCore.anon.Mean
+import typings.tensorflowTfjsCore.distOpsMultiRnnCellMod.LSTMCellFunc
+import typings.tensorflowTfjsCore.distOpsRaggedGatherMod.RaggedGatherMap
 import typings.tensorflowTfjsCore.distTensorMod.Scalar
 import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
@@ -22,6 +24,7 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor5D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor6D
 import typings.tensorflowTfjsCore.distTensorMod.TensorBuffer
 import typings.tensorflowTfjsCore.distTensorMod.Variable
+import typings.tensorflowTfjsCore.distTensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
@@ -31,7 +34,7 @@ import typings.tensorflowTfjsCore.distTypesMod.TensorLike3D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike5D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike6D
-import typings.tensorflowTfjsCore.multiRnnCellMod.LSTMCellFunc
+import typings.tensorflowTfjsCore.distTypesMod.WebGLData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -813,6 +816,68 @@ trait TypeoftfOps extends StObject {
   
   val prod: Typeofprod = js.native
   
+  def raggedGather(
+    paramsNestedSplits: js.Array[typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank]],
+    paramsDenseValues: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    indices: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    outputRaggedRank: Double
+  ): RaggedGatherMap = js.native
+  def raggedGather(
+    paramsNestedSplits: js.Array[typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank]],
+    paramsDenseValues: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    indices: TensorLike,
+    outputRaggedRank: Double
+  ): RaggedGatherMap = js.native
+  def raggedGather(
+    paramsNestedSplits: js.Array[typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank]],
+    paramsDenseValues: TensorLike,
+    indices: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    outputRaggedRank: Double
+  ): RaggedGatherMap = js.native
+  def raggedGather(
+    paramsNestedSplits: js.Array[typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank]],
+    paramsDenseValues: TensorLike,
+    indices: TensorLike,
+    outputRaggedRank: Double
+  ): RaggedGatherMap = js.native
+  
+  def raggedRange(
+    starts: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    limits: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    deltas: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank]
+  ): NamedTensorMap = js.native
+  def raggedRange(
+    starts: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    limits: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    deltas: TensorLike
+  ): NamedTensorMap = js.native
+  def raggedRange(
+    starts: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    limits: TensorLike,
+    deltas: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank]
+  ): NamedTensorMap = js.native
+  def raggedRange(
+    starts: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    limits: TensorLike,
+    deltas: TensorLike
+  ): NamedTensorMap = js.native
+  def raggedRange(
+    starts: TensorLike,
+    limits: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    deltas: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank]
+  ): NamedTensorMap = js.native
+  def raggedRange(
+    starts: TensorLike,
+    limits: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    deltas: TensorLike
+  ): NamedTensorMap = js.native
+  def raggedRange(
+    starts: TensorLike,
+    limits: TensorLike,
+    deltas: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank]
+  ): NamedTensorMap = js.native
+  def raggedRange(starts: TensorLike, limits: TensorLike, deltas: TensorLike): NamedTensorMap = js.native
+  
   def raggedTensorToTensor(
     shape: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
     values: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
@@ -1086,6 +1151,17 @@ trait TypeoftfOps extends StObject {
     dtype: DataType
   ): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = js.native
   def tensor[R /* <: Rank */](values: TensorLike, shape: Unit, dtype: DataType): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = js.native
+  def tensor[R /* <: Rank */](values: WebGLData): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = js.native
+  def tensor[R /* <: Rank */](
+    values: WebGLData,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+  ): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = js.native
+  def tensor[R /* <: Rank */](
+    values: WebGLData,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    dtype: DataType
+  ): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = js.native
+  def tensor[R /* <: Rank */](values: WebGLData, shape: Unit, dtype: DataType): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = js.native
   
   def tensor1d(values: TensorLike1D): Tensor1D = js.native
   def tensor1d(values: TensorLike1D, dtype: DataType): Tensor1D = js.native

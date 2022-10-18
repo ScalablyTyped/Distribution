@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "SplashScreen")
 @js.native
 open class SplashScreen ()
-  extends typings.blackEngine.splashScreenMod.SplashScreen {
+  extends typings.blackEngine.coreSplashScreenMod.SplashScreen {
   def this(duration: Double) = this()
 }

@@ -1,7 +1,7 @@
 package typings.lodashDecorators
 
 import typings.lodashDecorators.anon.Instantiable
-import typings.lodashDecorators.commonMod.ResolvableFunction
+import typings.lodashDecorators.factoryCommonMod.ResolvableFunction
 import typings.lodashDecorators.factoryMod.DecoratorConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

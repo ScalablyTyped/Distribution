@@ -1,47 +1,41 @@
 package typings.cadesplugin.CAdESCOM
 
-import org.scalablytyped.runtime.TopLevel
-import typings.cadesplugin.CADESCommon.PromisifiedFunction
-import typings.cadesplugin.CADESCommon.Unpacked
-import typings.cadesplugin.CADESCommon._Unpacked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAdESCOM.Version> */
-trait VersionAsync
-  extends StObject
-     with _Unpacked[Any] {
+trait VersionAsync extends StObject {
   
-  val BuildVersion: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+  val BuildVersion: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
   
-  val MajorVersion: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+  val MajorVersion: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
   
-  val MinorVersion: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+  val MinorVersion: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
   
-  val toStringDefault: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+  val toStringDefault: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
   
   @JSName("toString")
-  val toString_FVersionAsync: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[String]]]) | PromisifiedFunction[js.Function0[String]]
+  val toString_FVersionAsync: /* import warning: importer.ImportType#apply Failed type conversion: (): string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): string>> */ js.Any
 }
 object VersionAsync {
   
   inline def apply(
-    BuildVersion: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double],
-    MajorVersion: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double],
-    MinorVersion: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double],
-    toStringDefault: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
-    toString_ : (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[String]]]) | PromisifiedFunction[js.Function0[String]]
+    BuildVersion: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any,
+    MajorVersion: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any,
+    MinorVersion: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any,
+    toStringDefault: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any,
+    toString_ : /* import warning: importer.ImportType#apply Failed type conversion: (): string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): string>> */ js.Any
   ): VersionAsync = {
     val __obj = js.Dynamic.literal(BuildVersion = BuildVersion.asInstanceOf[js.Any], MajorVersion = MajorVersion.asInstanceOf[js.Any], MinorVersion = MinorVersion.asInstanceOf[js.Any], toStringDefault = toStringDefault.asInstanceOf[js.Any])
     __obj.updateDynamic("toString")(toString_.asInstanceOf[js.Any])
@@ -51,60 +45,28 @@ object VersionAsync {
   extension [Self <: VersionAsync](x: Self) {
     
     inline def setBuildVersion(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
     ): Self = StObject.set(x, "BuildVersion", value.asInstanceOf[js.Any])
     
-    inline def setBuildVersionFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "BuildVersion", js.Any.fromFunction1(value))
-    
     inline def setMajorVersion(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
     ): Self = StObject.set(x, "MajorVersion", value.asInstanceOf[js.Any])
     
-    inline def setMajorVersionFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "MajorVersion", js.Any.fromFunction1(value))
-    
     inline def setMinorVersion(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
     ): Self = StObject.set(x, "MinorVersion", value.asInstanceOf[js.Any])
     
-    inline def setMinorVersionFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "MinorVersion", js.Any.fromFunction1(value))
-    
     inline def setToStringDefault(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
     ): Self = StObject.set(x, "toStringDefault", value.asInstanceOf[js.Any])
     
-    inline def setToStringDefaultFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "toStringDefault", js.Any.fromFunction1(value))
-    
     inline def setToString_(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[js.Function0[String]]]) | PromisifiedFunction[js.Function0[String]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(): string>> */ js.Any
     ): Self = StObject.set(x, "toString", value.asInstanceOf[js.Any])
-    
-    inline def setToString_Function0(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
-    
-    inline def setToString_Function1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
   }
 }

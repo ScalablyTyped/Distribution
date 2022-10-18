@@ -12,11 +12,11 @@ object vsdiag {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[
-        typings.vscodeLanguageclient.diagnosticMod.vsdiag.DocumentDiagnosticReportKind & String
+        typings.vscodeLanguageclient.libCommonDiagnosticMod.vsdiag.DocumentDiagnosticReportKind & String
       ] = js.native
     
-    /* "full" */ val full: typings.vscodeLanguageclient.diagnosticMod.vsdiag.DocumentDiagnosticReportKind.full & String = js.native
+    /* "full" */ val full: typings.vscodeLanguageclient.libCommonDiagnosticMod.vsdiag.DocumentDiagnosticReportKind.full & String = js.native
     
-    /* "unChanged" */ val unChanged: typings.vscodeLanguageclient.diagnosticMod.vsdiag.DocumentDiagnosticReportKind.unChanged & String = js.native
+    /* "unChanged" */ val unChanged: typings.vscodeLanguageclient.libCommonDiagnosticMod.vsdiag.DocumentDiagnosticReportKind.unChanged & String = js.native
   }
 }

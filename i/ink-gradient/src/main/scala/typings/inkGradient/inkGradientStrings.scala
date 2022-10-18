@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object inkGradientStrings {
   
   @js.native
-  sealed trait Without extends StObject
-  inline def Without: Without = "Without".asInstanceOf[Without]
-  
-  @js.native
   sealed trait atlas extends StObject
   inline def atlas: atlas = "atlas".asInstanceOf[atlas]
   

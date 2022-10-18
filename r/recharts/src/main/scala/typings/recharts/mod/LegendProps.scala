@@ -2,8 +2,8 @@ package typings.recharts.mod
 
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.recharts.anon.Height
 import typings.recharts.anon.PartialMargin
-import typings.recharts.anon.Width
 import typings.recharts.rechartsStrings.bottom
 import typings.recharts.rechartsStrings.center
 import typings.recharts.rechartsStrings.left
@@ -107,7 +107,7 @@ object LegendProps {
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setOnBBoxUpdate(value: /* box */ Width => Unit): Self = StObject.set(x, "onBBoxUpdate", js.Any.fromFunction1(value))
+    inline def setOnBBoxUpdate(value: /* box */ Height => Unit): Self = StObject.set(x, "onBBoxUpdate", js.Any.fromFunction1(value))
     
     inline def setOnBBoxUpdateUndefined: Self = StObject.set(x, "onBBoxUpdate", js.undefined)
     

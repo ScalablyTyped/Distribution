@@ -4,7 +4,7 @@ import typings.baseui.baseuiStrings.any
 import typings.baseui.baseuiStrings.change_
 import typings.baseui.baseuiStrings.end_
 import typings.baseui.baseuiStrings.start
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.csstype.mod.Property.Resize
 import typings.react.mod.ChangeEvent
 import typings.react.mod.FocusEvent

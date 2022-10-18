@@ -6,17 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200Content544` extends StObject {
   
-  /** Response */
+  /** The branch has been successfully synced with the upstream repository */
   var `200`: Content544
   
-  var `404`: Content55
+  /** The branch could not be synced because of a merge conflict */
+  var `409`: Any
+  
+  /** The branch could not be synced for some other reason */
+  var `422`: Any
 }
 object `200Content544` {
   
-  inline def apply(`200`: Content544, `404`: Content55): `200Content544` = {
+  inline def apply(`200`: Content544, `409`: Any, `422`: Any): `200Content544` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
+    __obj.updateDynamic("409")(`409`.asInstanceOf[js.Any])
+    __obj.updateDynamic("422")(`422`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content544`]
   }
   
@@ -24,6 +29,8 @@ object `200Content544` {
     
     inline def set200(value: Content544): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content55): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set409(value: Any): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
+    
+    inline def set422(value: Any): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

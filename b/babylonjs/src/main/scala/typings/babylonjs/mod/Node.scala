@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Node")
 @js.native
 open class Node protected ()
-  extends typings.babylonjs.legacyMod.Node {
+  extends typings.babylonjs.legacyLegacyMod.Node {
   /**
     * Creates a new Node
     * @param name the name and id to be given to this node
@@ -54,7 +54,7 @@ object Node {
   /**
     * @internal
     */
-  inline def _AnimationRangeFactory(_name: String, _from: Double, _to: Double): typings.babylonjs.animationRangeMod.AnimationRange = (^.asInstanceOf[js.Dynamic].applyDynamic("_AnimationRangeFactory")(_name.asInstanceOf[js.Any], _from.asInstanceOf[js.Any], _to.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationRangeMod.AnimationRange]
+  inline def _AnimationRangeFactory(_name: String, _from: Double, _to: Double): typings.babylonjs.animationsAnimationRangeMod.AnimationRange = (^.asInstanceOf[js.Dynamic].applyDynamic("_AnimationRangeFactory")(_name.asInstanceOf[js.Any], _from.asInstanceOf[js.Any], _to.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationRangeMod.AnimationRange]
   
   @JSImport("babylonjs", "Node._NodeConstructors")
   @js.native

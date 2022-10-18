@@ -1,7 +1,7 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControllerObject
-import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandedness
+import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.IMinimalMotionControllerObject
+import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.MotionControllerHandedness
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXRGenericHandController")
 @js.native
 open class WebXRGenericHandController protected ()
-  extends typings.babylonjs.legacyMod.WebXRGenericHandController {
+  extends typings.babylonjs.legacyLegacyMod.WebXRGenericHandController {
   /**
     * Create a new hand controller object, without loading a controller model
     * @param scene the scene to use to create this controller

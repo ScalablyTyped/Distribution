@@ -1,6 +1,5 @@
 package typings.vueRouter.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Exclude
 import typings.std.Record
 import typings.vueReactivity.mod.ComputedRef
@@ -16,9 +15,7 @@ import typings.vueRuntimeCore.mod.ComponentOptionsMixin
 import typings.vueRuntimeCore.mod.ComponentPublicInstance
 import typings.vueRuntimeCore.mod.ComputedOptions
 import typings.vueRuntimeCore.mod.DefineComponent_
-import typings.vueRuntimeCore.mod.EmitsToProps
 import typings.vueRuntimeCore.mod.ExtractDefaultPropTypes
-import typings.vueRuntimeCore.mod.ExtractPropTypes
 import typings.vueRuntimeCore.mod.InjectionKey
 import typings.vueRuntimeCore.mod.MethodOptions
 import typings.vueRuntimeCore.mod.PublicProps
@@ -178,7 +175,7 @@ ComponentOptionsMixin,
 js.Object, 
 String, 
 PublicProps, 
-(js.Object | ExtractPropTypes[js.Object]) & (EmitsToProps[js.Object] | js.Object), 
+/* import warning: importer.ImportType#apply Failed type conversion: {} extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<{}> : {} */ js.Any, 
 ExtractDefaultPropTypes[js.Object]])
 
 /* Rewritten from type alias, can be one of: 
@@ -216,12 +213,3 @@ type RouterScrollBehavior = js.Function3[
 /* from */ RouteLocationNormalizedLoaded, 
 /* savedPosition */ ScrollPositionNormalized | Null, 
 Awaitable[ScrollPosition | `false` | Unit]]
-
-/**
-  * Type to transform a static object into one that allows passing Refs as
-  * values.
-  * @internal
-  */
-type VueUseOptions[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ k in keyof T ]: @vue/reactivity.@vue/reactivity.Ref<T[k]> | T[k]}
-  */ typings.vueRouter.vueRouterStrings.VueUseOptions & TopLevel[Any]

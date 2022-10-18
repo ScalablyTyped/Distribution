@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for blocking messages. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageBlocking")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageBlocking")
 @js.native
-abstract class ChatMessageBlocking ()
+open class ChatMessageBlocking ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageBlocking
 object ChatMessageBlocking {

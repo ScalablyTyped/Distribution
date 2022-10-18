@@ -1,6 +1,5 @@
 package typings.cStruct
 
-import org.scalablytyped.runtime.TopLevel
 import typings.cStruct.cStructStrings.b
 import typings.cStruct.cStructStrings.l
 import typings.node.bufferMod.global.Buffer
@@ -104,9 +103,15 @@ object mod {
     }
   }
   
-  type SchemaDefinition[TObject] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ _ in keyof TObject ]: string}
-    */ typings.cStruct.cStructStrings.SchemaDefinition & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ _ in keyof TObject ]: string}
+    }}}
+    */
+  @js.native
+  trait SchemaDefinition[TObject] extends StObject
   
   trait UnpackOptions extends StObject {
     

@@ -1,6 +1,6 @@
 package typings.happyguestmxWebUtilities.mod
 
-import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyResult
+import typings.awsLambda.triggerApiGatewayProxyMod.APIGatewayProxyResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

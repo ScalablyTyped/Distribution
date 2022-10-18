@@ -4,7 +4,7 @@ import typings.std.Set
 import typings.typedoc.anon.Kind
 import typings.typedoc.anon.Tag
 import typings.typedoc.anon.Text
-import typings.typedoc.commentMod.CommentDisplayPart
+import typings.typedoc.distLibModelsCommentsCommentMod.CommentDisplayPart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,19 +15,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new Comment instance.
   */
 open class Comment ()
-  extends typings.typedoc.modelsMod.Comment {
+  extends typings.typedoc.distLibModelsMod.Comment {
   def this(summary: js.Array[CommentDisplayPart]) = this()
-  def this(summary: js.Array[CommentDisplayPart], blockTags: js.Array[typings.typedoc.commentMod.CommentTag]) = this()
-  def this(summary: Unit, blockTags: js.Array[typings.typedoc.commentMod.CommentTag]) = this()
   def this(
     summary: js.Array[CommentDisplayPart],
-    blockTags: js.Array[typings.typedoc.commentMod.CommentTag],
+    blockTags: js.Array[typings.typedoc.distLibModelsCommentsCommentMod.CommentTag]
+  ) = this()
+  def this(summary: Unit, blockTags: js.Array[typings.typedoc.distLibModelsCommentsCommentMod.CommentTag]) = this()
+  def this(
+    summary: js.Array[CommentDisplayPart],
+    blockTags: js.Array[typings.typedoc.distLibModelsCommentsCommentMod.CommentTag],
     modifierTags: Set[String]
   ) = this()
   def this(summary: js.Array[CommentDisplayPart], blockTags: Unit, modifierTags: Set[String]) = this()
   def this(
     summary: Unit,
-    blockTags: js.Array[typings.typedoc.commentMod.CommentTag],
+    blockTags: js.Array[typings.typedoc.distLibModelsCommentsCommentMod.CommentTag],
     modifierTags: Set[String]
   ) = this()
   def this(summary: Unit, blockTags: Unit, modifierTags: Set[String]) = this()

@@ -1,7 +1,7 @@
 package typings.awsSdkMiddlewareStack
 
-import typings.awsSdkMiddlewareStack.typesMod.Normalized
-import typings.awsSdkMiddlewareStack.typesMod.RelativeMiddlewareEntry
+import typings.awsSdkMiddlewareStack.distTypesTypesMod.Normalized
+import typings.awsSdkMiddlewareStack.distTypesTypesMod.RelativeMiddlewareEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

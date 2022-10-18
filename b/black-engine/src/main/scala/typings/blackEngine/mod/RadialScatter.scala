@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "RadialScatter")
 @js.native
 open class RadialScatter ()
-  extends typings.blackEngine.radialScatterMod.RadialScatter {
+  extends typings.blackEngine.scattersRadialScatterMod.RadialScatter {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
   def this(x: Unit, y: Double) = this()

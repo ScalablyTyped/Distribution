@@ -22,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SpeechRecognition {
   
   /** Contains event data for the SpeechContinuousRecognitionSession.Completed event. */
-  @JSGlobal("Windows.Media.SpeechRecognition.SpeechContinuousRecognitionCompletedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.SpeechRecognition.SpeechContinuousRecognitionCompletedEventArgs")
   @js.native
-  abstract class SpeechContinuousRecognitionCompletedEventArgs ()
+  open class SpeechContinuousRecognitionCompletedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechContinuousRecognitionCompletedEventArgs {
     
@@ -49,9 +49,9 @@ object SpeechRecognition {
   }
   
   /** Contains event data for the SpeechContinuousRecognitionSession.ResultGenerated event. */
-  @JSGlobal("Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs")
   @js.native
-  abstract class SpeechContinuousRecognitionResultGeneratedEventArgs ()
+  open class SpeechContinuousRecognitionResultGeneratedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs {
     
@@ -61,9 +61,9 @@ object SpeechRecognition {
   }
   
   /** Manages speech input for free-form dictation, or an arbitrary sequence of words or phrases that are defined in a grammar set. */
-  @JSGlobal("Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession")
+  /* note: abstract class */ @JSGlobal("Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession")
   @js.native
-  abstract class SpeechContinuousRecognitionSession ()
+  open class SpeechContinuousRecognitionSession ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession
   
@@ -93,9 +93,9 @@ object SpeechRecognition {
   }
   
   /** The result of compiling the constraints set for a SpeechRecognizer object. */
-  @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionCompilationResult")
+  /* note: abstract class */ @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionCompilationResult")
   @js.native
-  abstract class SpeechRecognitionCompilationResult ()
+  open class SpeechRecognitionCompilationResult ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionCompilationResult {
     
@@ -199,9 +199,9 @@ object SpeechRecognition {
   }
   
   /** A recognition result fragment returned by the speech recognizer during an ongoing dictation session. */
-  @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionHypothesis")
+  /* note: abstract class */ @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionHypothesis")
   @js.native
-  abstract class SpeechRecognitionHypothesis ()
+  open class SpeechRecognitionHypothesis ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionHypothesis {
     
@@ -211,9 +211,9 @@ object SpeechRecognition {
   }
   
   /** Contains event data for the SpeechRecognizer.HypothesisGenerated event. */
-  @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionHypothesisGeneratedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionHypothesisGeneratedEventArgs")
   @js.native
-  abstract class SpeechRecognitionHypothesisGeneratedEventArgs ()
+  open class SpeechRecognitionHypothesisGeneratedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionHypothesisGeneratedEventArgs {
     
@@ -262,9 +262,9 @@ object SpeechRecognition {
   }
   
   /** Provides data for the SpeechRecognitionQualityDegradingEvent event. */
-  @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionQualityDegradingEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionQualityDegradingEventArgs")
   @js.native
-  abstract class SpeechRecognitionQualityDegradingEventArgs ()
+  open class SpeechRecognitionQualityDegradingEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionQualityDegradingEventArgs {
     
@@ -274,9 +274,9 @@ object SpeechRecognition {
   }
   
   /** The result of a speech recognition session. */
-  @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionResult")
+  /* note: abstract class */ @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionResult")
   @js.native
-  abstract class SpeechRecognitionResult ()
+  open class SpeechRecognitionResult ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResult {
     
@@ -376,9 +376,9 @@ object SpeechRecognition {
   }
   
   /** Represents the semantic properties of a recognized phrase in a Speech Recognition Grammar Specification (SRGS) grammar. */
-  @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionSemanticInterpretation")
+  /* note: abstract class */ @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionSemanticInterpretation")
   @js.native
-  abstract class SpeechRecognitionSemanticInterpretation ()
+  open class SpeechRecognitionSemanticInterpretation ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionSemanticInterpretation {
     
@@ -433,9 +433,9 @@ object SpeechRecognition {
   }
   
   /** A constraint for a SpeechRecognizer object based on a Voice Command Definition (VCD) file. */
-  @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionVoiceCommandDefinitionConstraint")
+  /* note: abstract class */ @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionVoiceCommandDefinitionConstraint")
   @js.native
-  abstract class SpeechRecognitionVoiceCommandDefinitionConstraint ()
+  open class SpeechRecognitionVoiceCommandDefinitionConstraint ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionVoiceCommandDefinitionConstraint {
     
@@ -521,9 +521,9 @@ object SpeechRecognition {
   }
   
   /** Provides data for the SpeechRecognizer.StateChangedEvent event. */
-  @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizerStateChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizerStateChangedEventArgs")
   @js.native
-  abstract class SpeechRecognizerStateChangedEventArgs ()
+  open class SpeechRecognizerStateChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognizerStateChangedEventArgs {
     
@@ -533,9 +533,9 @@ object SpeechRecognition {
   }
   
   /** The timespan that a speech recognizer ignores silence or unrecognizable sounds (babble) and continues listening for speech input. */
-  @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizerTimeouts")
+  /* note: abstract class */ @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizerTimeouts")
   @js.native
-  abstract class SpeechRecognizerTimeouts ()
+  open class SpeechRecognizerTimeouts ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognizerTimeouts {
     
@@ -553,9 +553,9 @@ object SpeechRecognition {
   }
   
   /** Specifies the UI settings for the SpeechRecognizer.RecognizeWithUIAsync method. */
-  @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizerUIOptions")
+  /* note: abstract class */ @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizerUIOptions")
   @js.native
-  abstract class SpeechRecognizerUIOptions ()
+  open class SpeechRecognizerUIOptions ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognizerUIOptions {
     

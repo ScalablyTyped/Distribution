@@ -63,7 +63,7 @@ trait Chart
     * @remarks
     * [Api set: ExcelApi 1.7]
     */
-  var chartType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 83 */ Any = js.native
+  var chartType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 83, starting with typings.officeJs.Excel.ChartType, typings.officeJs.officeJsStrings.Invalid, typings.officeJs.officeJsStrings.ColumnClustered */ Any = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")

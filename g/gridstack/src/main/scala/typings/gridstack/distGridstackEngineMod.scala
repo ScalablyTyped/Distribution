@@ -47,6 +47,7 @@ object distGridstackEngineMod {
       */
     def cacheOneLayout(n: GridStackNode, column: Double): GridStackEngine = js.native
     
+    /** does a pixel coverage returning the node that has the most coverage by area */
     /** called to cache the nodes pixel rectangles used for collision detection during drag */
     def cacheRects(w: Double, h: Double, top: Double, right: Double, bottom: Double, left: Double): GridStackEngine = js.native
     
@@ -67,13 +68,13 @@ object distGridstackEngineMod {
     def collideAll(skip: GridStackNode, area: GridStackNode): js.Array[GridStackNode] = js.native
     def collideAll(skip: GridStackNode, area: GridStackNode, skip2: GridStackNode): js.Array[GridStackNode] = js.native
     
-    /** does a pixel coverage collision, returning the node that has the most coverage that is >50% mid line */
-    def collideCoverage(node: GridStackNode, o: GridStackMoveOpts, collides: js.Array[GridStackNode]): GridStackNode = js.native
-    
     var column: Double = js.native
     
     /** re-layout grid items to reclaim any empty space */
     def compact(): GridStackEngine = js.native
+    
+    /** does a pixel coverage collision based on where we started, returning the node that has the most coverage that is >50% mid line */
+    /* protected */ def directionCollideCoverage(node: GridStackNode, o: GridStackMoveOpts, collides: js.Array[GridStackNode]): GridStackNode = js.native
     
     def endUpdate(): GridStackEngine = js.native
     

@@ -11,6 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object drawer {
   
+  @JSImport("material-components-web", "drawer.default")
+  @js.native
+  open class default ()
+    extends typings.materialDrawer.mod.default {
+    def this(adapter: PartialMDCDrawerAdapter) = this()
+  }
+  
   @JSImport("material-components-web", "drawer.MDCDismissibleDrawerFoundation")
   @js.native
   open class MDCDismissibleDrawerFoundation ()
@@ -25,7 +32,7 @@ object drawer {
     def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
-      foundation: typings.materialDrawer.foundationMod.MDCDismissibleDrawerFoundation,
+      foundation: typings.materialDrawer.dismissibleFoundationMod.MDCDismissibleDrawerFoundation,
       args: Any*
     ) = this()
   }

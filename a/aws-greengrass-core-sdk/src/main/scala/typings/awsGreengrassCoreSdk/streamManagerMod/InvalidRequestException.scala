@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "InvalidRequestException")
 @js.native
 open class InvalidRequestException ()
-  extends typings.awsGreengrassCoreSdk.clientMod.InvalidRequestException
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.InvalidRequestException

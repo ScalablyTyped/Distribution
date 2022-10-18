@@ -4,31 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate
+/** Database _replicate options.
+  * @see Docs: {@link http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate} */
 trait DatabaseReplicateOptions extends StObject {
   
-  // Cancels the replication
+  /** Cancels the replication */
   var cancel: js.UndefOr[Boolean] = js.undefined
   
-  // Configure the replication to be continuous
+  /** Configure the replication to be continuous */
   var continuous: js.UndefOr[Boolean] = js.undefined
   
-  // Creates the target database. Required administrator’s privileges on target server.
+  /** Creates the target database. Required administrator’s privileges on target server. */
   var create_target: js.UndefOr[Boolean] = js.undefined
   
-  // Array of document IDs to be synchronized
+  /** Array of document IDs to be synchronized */
   var doc_ids: js.UndefOr[js.Array[String]] = js.undefined
   
-  // The name of a filter function.
+  /** The name of a filter function. */
   var filter: js.UndefOr[String] = js.undefined
   
-  // Address of a proxy server through which replication should occur (protocol can be “http” or “socks5”)
+  /** Address of a proxy server through which replication should occur (protocol can be “http” or “socks5”) */
   var proxy: js.UndefOr[String] = js.undefined
   
-  // Source database name or URL
+  /** Source database name or URL */
   var source: js.UndefOr[String] = js.undefined
   
-  // Target database name or URL
+  /** Target database name or URL */
   var target: js.UndefOr[String] = js.undefined
 }
 object DatabaseReplicateOptions {
@@ -56,7 +57,7 @@ object DatabaseReplicateOptions {
     
     inline def setDoc_idsUndefined: Self = StObject.set(x, "doc_ids", js.undefined)
     
-    inline def setDoc_idsVarargs(value: String*): Self = StObject.set(x, "doc_ids", js.Array(value :_*))
+    inline def setDoc_idsVarargs(value: String*): Self = StObject.set(x, "doc_ids", js.Array(value*))
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

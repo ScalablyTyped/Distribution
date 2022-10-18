@@ -1,11 +1,11 @@
 package typings.ajv.distTypesMod
 
 import typings.ajv.ajvBooleans.`false`
-import typings.ajv.codeMod.Code
-import typings.ajv.codegenMod.CodeGen
-import typings.ajv.codegenMod.Name
-import typings.ajv.compileMod.SchemaCxt
-import typings.ajv.rulesMod.JSONType
+import typings.ajv.distCompileCodegenCodeMod.Code
+import typings.ajv.distCompileCodegenMod.CodeGen
+import typings.ajv.distCompileCodegenMod.Name
+import typings.ajv.distCompileMod.SchemaCxt
+import typings.ajv.distCompileRulesMod.JSONType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

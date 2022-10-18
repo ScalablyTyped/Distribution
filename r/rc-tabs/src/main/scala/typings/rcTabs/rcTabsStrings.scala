@@ -1,7 +1,7 @@
 package typings.rcTabs
 
-import typings.rcTabs.interfaceMod.TabBarExtraPosition
-import typings.rcTabs.interfaceMod.TabPosition
+import typings.rcTabs.esInterfaceMod.TabBarExtraPosition
+import typings.rcTabs.esInterfaceMod.TabPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

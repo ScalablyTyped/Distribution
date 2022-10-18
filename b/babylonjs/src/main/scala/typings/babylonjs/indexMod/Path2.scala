@@ -28,5 +28,5 @@ object Path2 {
     * @param y starting y value
     * @returns a new Path2 starting at the coordinates (x, y).
     */
-  inline def StartingAt(x: Double, y: Double): typings.babylonjs.mathPathMod.Path2 = (^.asInstanceOf[js.Dynamic].applyDynamic("StartingAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPathMod.Path2]
+  inline def StartingAt(x: Double, y: Double): typings.babylonjs.mathsMathDotpathMod.Path2 = (^.asInstanceOf[js.Dynamic].applyDynamic("StartingAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotpathMod.Path2]
 }

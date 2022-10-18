@@ -1,5 +1,6 @@
 package typings.nginstackDatasource
 
+import typings.nginstackDatasource.libDataSourceFiltersMod.ModelDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -173,7 +174,7 @@ object anon {
     
     var children: Boolean
     
-    var classDef: Any
+    var classDef: ModelDef
     
     var excludeFieldNames: String
     
@@ -187,7 +188,7 @@ object anon {
     
     inline def apply(
       children: Boolean,
-      classDef: Any,
+      classDef: ModelDef,
       excludeFieldNames: String,
       includeFieldNames: String,
       onlyIncludedFieldNames: Boolean,
@@ -201,7 +202,7 @@ object anon {
       
       inline def setChildren(value: Boolean): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setClassDef(value: Any): Self = StObject.set(x, "classDef", value.asInstanceOf[js.Any])
+      inline def setClassDef(value: ModelDef): Self = StObject.set(x, "classDef", value.asInstanceOf[js.Any])
       
       inline def setExcludeFieldNames(value: String): Self = StObject.set(x, "excludeFieldNames", value.asInstanceOf[js.Any])
       

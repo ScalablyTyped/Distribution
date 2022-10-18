@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new game entity.
   */
 open class GameEntity ()
-  extends typings.yuka.yukaMod.GameEntity
+  extends typings.yuka.srcYukaMod.GameEntity

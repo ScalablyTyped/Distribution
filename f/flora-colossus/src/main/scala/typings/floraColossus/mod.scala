@@ -1,10 +1,10 @@
 package typings.floraColossus
 
-import typings.floraColossus.depTypesMod.DepType
-import typings.floraColossus.depTypesMod.DepType.DEV
-import typings.floraColossus.depTypesMod.DepType.DEV_OPTIONAL
-import typings.floraColossus.depTypesMod.DepType.OPTIONAL
-import typings.floraColossus.depTypesMod.DepType.PROD
+import typings.floraColossus.libDepTypesMod.DepType
+import typings.floraColossus.libDepTypesMod.DepType.DEV
+import typings.floraColossus.libDepTypesMod.DepType.DEV_OPTIONAL
+import typings.floraColossus.libDepTypesMod.DepType.OPTIONAL
+import typings.floraColossus.libDepTypesMod.DepType.PROD
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,23 +20,23 @@ object mod {
   object DepType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.floraColossus.depTypesMod.DepType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.floraColossus.libDepTypesMod.DepType & Double] = js.native
     
-    /* 1 */ val DEV: typings.floraColossus.depTypesMod.DepType.DEV & Double = js.native
+    /* 1 */ val DEV: typings.floraColossus.libDepTypesMod.DepType.DEV & Double = js.native
     
-    /* 3 */ val DEV_OPTIONAL: typings.floraColossus.depTypesMod.DepType.DEV_OPTIONAL & Double = js.native
+    /* 3 */ val DEV_OPTIONAL: typings.floraColossus.libDepTypesMod.DepType.DEV_OPTIONAL & Double = js.native
     
-    /* 2 */ val OPTIONAL: typings.floraColossus.depTypesMod.DepType.OPTIONAL & Double = js.native
+    /* 2 */ val OPTIONAL: typings.floraColossus.libDepTypesMod.DepType.OPTIONAL & Double = js.native
     
-    /* 0 */ val PROD: typings.floraColossus.depTypesMod.DepType.PROD & Double = js.native
+    /* 0 */ val PROD: typings.floraColossus.libDepTypesMod.DepType.PROD & Double = js.native
     
-    /* 4 */ val ROOT: typings.floraColossus.depTypesMod.DepType.ROOT & Double = js.native
+    /* 4 */ val ROOT: typings.floraColossus.libDepTypesMod.DepType.ROOT & Double = js.native
   }
   
   @JSImport("flora-colossus", "Walker")
   @js.native
   open class Walker protected ()
-    extends typings.floraColossus.walkerMod.Walker {
+    extends typings.floraColossus.libWalkerMod.Walker {
     def this(modulePath: String) = this()
   }
   

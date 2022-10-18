@@ -94,7 +94,15 @@ object mod extends Shortcut {
   
   type Rates = Record[String, Double | String]
   
-  type Result[T_VAL /* <: Value */] = js.Array[Double] | Double
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T_VAL extends string | number ? number : std.Array<number>
+    }}}
+    */
+  @js.native
+  trait Result[T_VAL /* <: Value */] extends StObject
   
   type Value = String | Double | (js.Array[Double | String])
   

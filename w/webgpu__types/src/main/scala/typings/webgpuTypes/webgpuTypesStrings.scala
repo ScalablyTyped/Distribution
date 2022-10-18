@@ -106,6 +106,10 @@ object webgpuTypesStrings {
   inline def GPUExternalTexture: GPUExternalTexture = "GPUExternalTexture".asInstanceOf[GPUExternalTexture]
   
   @js.native
+  sealed trait GPUInternalError extends StObject
+  inline def GPUInternalError: GPUInternalError = "GPUInternalError".asInstanceOf[GPUInternalError]
+  
+  @js.native
   sealed trait GPUMapMode extends StObject
   inline def GPUMapMode: GPUMapMode = "GPUMapMode".asInstanceOf[GPUMapMode]
   
@@ -795,6 +799,12 @@ object webgpuTypesStrings {
   inline def instance: instance = "instance".asInstanceOf[instance]
   
   @js.native
+  sealed trait internal
+    extends StObject
+       with GPUErrorFilter
+  inline def internal: internal = "internal".asInstanceOf[internal]
+  
+  @js.native
   sealed trait invert
     extends StObject
        with GPUStencilOperation
@@ -848,6 +858,12 @@ object webgpuTypesStrings {
     extends StObject
        with GPUPowerPreference
   inline def `low-power`: `low-power` = "low-power".asInstanceOf[`low-power`]
+  
+  @js.native
+  sealed trait mapped
+    extends StObject
+       with GPUBufferMapState
+  inline def mapped: mapped = "mapped".asInstanceOf[mapped]
   
   @js.native
   sealed trait max
@@ -953,6 +969,12 @@ object webgpuTypesStrings {
   inline def `out-of-memory`: `out-of-memory` = "out-of-memory".asInstanceOf[`out-of-memory`]
   
   @js.native
+  sealed trait pending
+    extends StObject
+       with GPUBufferMapState
+  inline def pending: pending = "pending".asInstanceOf[pending]
+  
+  @js.native
   sealed trait `point-list`
     extends StObject
        with GPUPrimitiveTopology
@@ -1053,6 +1075,12 @@ object webgpuTypesStrings {
     extends StObject
        with GPUTextureFormat
   inline def rg11b10ufloat: rg11b10ufloat = "rg11b10ufloat".asInstanceOf[rg11b10ufloat]
+  
+  @js.native
+  sealed trait `rg11b10ufloat-renderable`
+    extends StObject
+       with GPUFeatureName
+  inline def `rg11b10ufloat-renderable`: `rg11b10ufloat-renderable` = "rg11b10ufloat-renderable".asInstanceOf[`rg11b10ufloat-renderable`]
   
   @js.native
   sealed trait rg16float
@@ -1438,6 +1466,12 @@ object webgpuTypesStrings {
     extends StObject
        with GPUBufferBindingType
   inline def uniform: uniform = "uniform".asInstanceOf[uniform]
+  
+  @js.native
+  sealed trait unmapped
+    extends StObject
+       with GPUBufferMapState
+  inline def unmapped: unmapped = "unmapped".asInstanceOf[unmapped]
   
   @js.native
   sealed trait unorm16x2

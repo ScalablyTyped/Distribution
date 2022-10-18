@@ -1,6 +1,6 @@
 package typings.swiper
 
-import typings.swiper.swiperSolidMod.SlideData
+import typings.swiper.solidSwiperSolidMod.SlideData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,10 +2,10 @@ package typings.gulpTypescript
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.gulpTypescript.anon.Typeofts
-import typings.gulpTypescript.projectMod.ICompileStream
-import typings.gulpTypescript.reporterMod.CompilationResult
-import typings.gulpTypescript.reporterMod.Reporter
-import typings.gulpTypescript.typesMod.GetCustomTransformers
+import typings.gulpTypescript.releaseProjectMod.ICompileStream
+import typings.gulpTypescript.releaseReporterMod.CompilationResult
+import typings.gulpTypescript.releaseReporterMod.Reporter
+import typings.gulpTypescript.releaseTypesMod.GetCustomTransformers
 import typings.typescript.mod.CustomTransformers
 import typings.typescript.mod.ModuleKind
 import typings.typescript.mod.Program
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(): CompileStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[CompileStream]
-  inline def apply(proj: typings.gulpTypescript.projectMod.Project): CompileStream = ^.asInstanceOf[js.Dynamic].apply(proj.asInstanceOf[js.Any]).asInstanceOf[CompileStream]
-  inline def apply(proj: typings.gulpTypescript.projectMod.Project, theReporter: Reporter): CompileStream = (^.asInstanceOf[js.Dynamic].apply(proj.asInstanceOf[js.Any], theReporter.asInstanceOf[js.Any])).asInstanceOf[CompileStream]
+  inline def apply(proj: typings.gulpTypescript.releaseProjectMod.Project): CompileStream = ^.asInstanceOf[js.Dynamic].apply(proj.asInstanceOf[js.Any]).asInstanceOf[CompileStream]
+  inline def apply(proj: typings.gulpTypescript.releaseProjectMod.Project, theReporter: Reporter): CompileStream = (^.asInstanceOf[js.Dynamic].apply(proj.asInstanceOf[js.Any], theReporter.asInstanceOf[js.Any])).asInstanceOf[CompileStream]
   inline def apply(settings: Settings): CompileStream = ^.asInstanceOf[js.Dynamic].apply(settings.asInstanceOf[js.Any]).asInstanceOf[CompileStream]
   inline def apply(settings: Settings, theReporter: Reporter): CompileStream = (^.asInstanceOf[js.Dynamic].apply(settings.asInstanceOf[js.Any], theReporter.asInstanceOf[js.Any])).asInstanceOf[CompileStream]
   
@@ -55,7 +55,7 @@ object mod {
   
   type CompileStream = ICompileStream
   
-  type Project = typings.gulpTypescript.projectMod.Project
+  type Project = typings.gulpTypescript.releaseProjectMod.Project
   
   trait Settings
     extends StObject

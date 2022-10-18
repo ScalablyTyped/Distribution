@@ -1,167 +1,103 @@
 package typings.googleCloudTextToSpeech.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.googleGax.mod.IamProtos.google.protobuf.DescriptorProto
-import typings.googleGax.mod.IamProtos.google.protobuf.EnumDescriptorProto
-import typings.googleGax.mod.IamProtos.google.protobuf.EnumOptions
-import typings.googleGax.mod.IamProtos.google.protobuf.EnumValueDescriptorProto
-import typings.googleGax.mod.IamProtos.google.protobuf.EnumValueOptions
-import typings.googleGax.mod.IamProtos.google.protobuf.ExtensionRangeOptions
-import typings.googleGax.mod.IamProtos.google.protobuf.FieldDescriptorProto
-import typings.googleGax.mod.IamProtos.google.protobuf.FieldOptions
-import typings.googleGax.mod.IamProtos.google.protobuf.FileDescriptorProto
-import typings.googleGax.mod.IamProtos.google.protobuf.FileDescriptorSet
-import typings.googleGax.mod.IamProtos.google.protobuf.FileOptions
-import typings.googleGax.mod.IamProtos.google.protobuf.GeneratedCodeInfo
-import typings.googleGax.mod.IamProtos.google.protobuf.MessageOptions
-import typings.googleGax.mod.IamProtos.google.protobuf.MethodDescriptorProto
-import typings.googleGax.mod.IamProtos.google.protobuf.MethodOptions
-import typings.googleGax.mod.IamProtos.google.protobuf.OneofDescriptorProto
-import typings.googleGax.mod.IamProtos.google.protobuf.OneofOptions
-import typings.googleGax.mod.IamProtos.google.protobuf.ServiceDescriptorProto
-import typings.googleGax.mod.IamProtos.google.protobuf.ServiceOptions
-import typings.googleGax.mod.IamProtos.google.protobuf.SourceCodeInfo
-import typings.googleGax.mod.IamProtos.google.protobuf.UninterpretedOption
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable3
+import typings.protobufjs.mod.Buffer
+import typings.protobufjs.mod.Codegen
+import typings.protobufjs.mod.IParseOptions
+import typings.protobufjs.mod.IParserResult
+import typings.protobufjs.mod.LoadCallback
+import typings.protobufjs.mod.Root
+import typings.protobufjs.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Typeofprotobuf extends StObject {
   
-  /** Represents a DescriptorProto. */
-  var DescriptorProto: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.DescriptorProto] & TypeofDescriptorProto
+  var BufferReader: Instantiable1[/* buffer */ Buffer, typings.googleGax.mod.fallback.protobuf.BufferReader] = js.native
   
-  /** Represents an EnumDescriptorProto. */
-  var EnumDescriptorProto: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.EnumDescriptorProto] & TypeofEnumDescriptorProto
+  var BufferWriter: TypeofBufferWriter = js.native
   
-  /** Represents an EnumOptions. */
-  var EnumOptions: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.EnumOptions] & TypeofEnumOptions
+  var Enum: TypeofEnum = js.native
   
-  /** Represents an EnumValueDescriptorProto. */
-  var EnumValueDescriptorProto: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.EnumValueDescriptorProto] & TypeofEnumValueDescriptor
+  var Field: TypeofField = js.native
   
-  /** Represents an EnumValueOptions. */
-  var EnumValueOptions: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.EnumValueOptions] & TypeofEnumValueOptions
+  var FieldBase: Instantiable3[
+    /* name */ String, 
+    /* id */ Double, 
+    /* type */ String, 
+    typings.googleGax.mod.fallback.protobuf.FieldBase
+  ] = js.native
   
-  /** Represents an ExtensionRangeOptions. */
-  var ExtensionRangeOptions: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.ExtensionRangeOptions] & TypeofExtensionRangeOptio
+  var MapField: TypeofMapField = js.native
   
-  /** Represents a FieldDescriptorProto. */
-  var FieldDescriptorProto: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.FieldDescriptorProto] & TypeofFieldDescriptorProt
+  var Message: TypeofMessage = js.native
   
-  /** Represents a FieldOptions. */
-  var FieldOptions: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.FieldOptions] & TypeofFieldOptions
+  var Method: TypeofMethod = js.native
   
-  /** Represents a FileDescriptorProto. */
-  var FileDescriptorProto: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.FileDescriptorProto] & TypeofFileDescriptorProto
+  var Namespace: TypeofNamespace = js.native
   
-  /** Represents a FileDescriptorSet. */
-  var FileDescriptorSet: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.FileDescriptorSet] & TypeofFileDescriptorSet
+  var NamespaceBase: Instantiable0[typings.googleGax.mod.fallback.protobuf.NamespaceBase] = js.native
   
-  /** Represents a FileOptions. */
-  var FileOptions: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.FileOptions] & TypeofFileOptions
+  var OneOf: TypeofOneOf = js.native
   
-  /** Represents a GeneratedCodeInfo. */
-  var GeneratedCodeInfo: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.GeneratedCodeInfo] & TypeofGeneratedCodeInfo
+  var Reader: TypeofReader = js.native
   
-  /** Represents a MessageOptions. */
-  var MessageOptions: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.MessageOptions] & TypeofMessageOptions
+  var ReflectionObject: Instantiable0[typings.googleGax.mod.fallback.protobuf.ReflectionObject] = js.native
   
-  /** Represents a MethodDescriptorProto. */
-  var MethodDescriptorProto: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.MethodDescriptorProto] & TypeofMethodDescriptorPro
+  var Root: TypeofRoot = js.native
   
-  /** Represents a MethodOptions. */
-  var MethodOptions: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.MethodOptions] & TypeofMethodOptions
+  var Service: TypeofService = js.native
   
-  /** Represents an OneofDescriptorProto. */
-  var OneofDescriptorProto: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.OneofDescriptorProto] & TypeofOneofDescriptorProt
+  var Type: TypeofType = js.native
   
-  /** Represents an OneofOptions. */
-  var OneofOptions: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.OneofOptions] & TypeofOneofOptions
+  var Writer: TypeofWriter = js.native
   
-  /** Represents a ServiceDescriptorProto. */
-  var ServiceDescriptorProto: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.ServiceDescriptorProto] & TypeofServiceDescriptorPr
+  val build: String = js.native
   
-  /** Represents a ServiceOptions. */
-  var ServiceOptions: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.ServiceOptions] & TypeofServiceOptions
+  val common: Typeofcommon = js.native
   
-  /** Represents a SourceCodeInfo. */
-  var SourceCodeInfo: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.SourceCodeInfo] & TypeofSourceCodeInfo
+  def configure(): Unit = js.native
   
-  /** Represents an UninterpretedOption. */
-  var UninterpretedOption: Instantiable0[typings.googleGax.mod.IamProtos.google.protobuf.UninterpretedOption] & TypeofUninterpretedOption
-}
-object Typeofprotobuf {
+  val converter: Typeofconverter = js.native
   
-  inline def apply(
-    DescriptorProto: Instantiable0[DescriptorProto] & TypeofDescriptorProto,
-    EnumDescriptorProto: Instantiable0[EnumDescriptorProto] & TypeofEnumDescriptorProto,
-    EnumOptions: Instantiable0[EnumOptions] & TypeofEnumOptions,
-    EnumValueDescriptorProto: Instantiable0[EnumValueDescriptorProto] & TypeofEnumValueDescriptor,
-    EnumValueOptions: Instantiable0[EnumValueOptions] & TypeofEnumValueOptions,
-    ExtensionRangeOptions: Instantiable0[ExtensionRangeOptions] & TypeofExtensionRangeOptio,
-    FieldDescriptorProto: Instantiable0[FieldDescriptorProto] & TypeofFieldDescriptorProt,
-    FieldOptions: Instantiable0[FieldOptions] & TypeofFieldOptions,
-    FileDescriptorProto: Instantiable0[FileDescriptorProto] & TypeofFileDescriptorProto,
-    FileDescriptorSet: Instantiable0[FileDescriptorSet] & TypeofFileDescriptorSet,
-    FileOptions: Instantiable0[FileOptions] & TypeofFileOptions,
-    GeneratedCodeInfo: Instantiable0[GeneratedCodeInfo] & TypeofGeneratedCodeInfo,
-    MessageOptions: Instantiable0[MessageOptions] & TypeofMessageOptions,
-    MethodDescriptorProto: Instantiable0[MethodDescriptorProto] & TypeofMethodDescriptorPro,
-    MethodOptions: Instantiable0[MethodOptions] & TypeofMethodOptions,
-    OneofDescriptorProto: Instantiable0[OneofDescriptorProto] & TypeofOneofDescriptorProt,
-    OneofOptions: Instantiable0[OneofOptions] & TypeofOneofOptions,
-    ServiceDescriptorProto: Instantiable0[ServiceDescriptorProto] & TypeofServiceDescriptorPr,
-    ServiceOptions: Instantiable0[ServiceOptions] & TypeofServiceOptions,
-    SourceCodeInfo: Instantiable0[SourceCodeInfo] & TypeofSourceCodeInfo,
-    UninterpretedOption: Instantiable0[UninterpretedOption] & TypeofUninterpretedOption
-  ): Typeofprotobuf = {
-    val __obj = js.Dynamic.literal(DescriptorProto = DescriptorProto.asInstanceOf[js.Any], EnumDescriptorProto = EnumDescriptorProto.asInstanceOf[js.Any], EnumOptions = EnumOptions.asInstanceOf[js.Any], EnumValueDescriptorProto = EnumValueDescriptorProto.asInstanceOf[js.Any], EnumValueOptions = EnumValueOptions.asInstanceOf[js.Any], ExtensionRangeOptions = ExtensionRangeOptions.asInstanceOf[js.Any], FieldDescriptorProto = FieldDescriptorProto.asInstanceOf[js.Any], FieldOptions = FieldOptions.asInstanceOf[js.Any], FileDescriptorProto = FileDescriptorProto.asInstanceOf[js.Any], FileDescriptorSet = FileDescriptorSet.asInstanceOf[js.Any], FileOptions = FileOptions.asInstanceOf[js.Any], GeneratedCodeInfo = GeneratedCodeInfo.asInstanceOf[js.Any], MessageOptions = MessageOptions.asInstanceOf[js.Any], MethodDescriptorProto = MethodDescriptorProto.asInstanceOf[js.Any], MethodOptions = MethodOptions.asInstanceOf[js.Any], OneofDescriptorProto = OneofDescriptorProto.asInstanceOf[js.Any], OneofOptions = OneofOptions.asInstanceOf[js.Any], ServiceDescriptorProto = ServiceDescriptorProto.asInstanceOf[js.Any], ServiceOptions = ServiceOptions.asInstanceOf[js.Any], SourceCodeInfo = SourceCodeInfo.asInstanceOf[js.Any], UninterpretedOption = UninterpretedOption.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Typeofprotobuf]
-  }
+  def decoder(mtype: Type): Codegen = js.native
   
-  extension [Self <: Typeofprotobuf](x: Self) {
-    
-    inline def setDescriptorProto(value: Instantiable0[DescriptorProto] & TypeofDescriptorProto): Self = StObject.set(x, "DescriptorProto", value.asInstanceOf[js.Any])
-    
-    inline def setEnumDescriptorProto(value: Instantiable0[EnumDescriptorProto] & TypeofEnumDescriptorProto): Self = StObject.set(x, "EnumDescriptorProto", value.asInstanceOf[js.Any])
-    
-    inline def setEnumOptions(value: Instantiable0[EnumOptions] & TypeofEnumOptions): Self = StObject.set(x, "EnumOptions", value.asInstanceOf[js.Any])
-    
-    inline def setEnumValueDescriptorProto(value: Instantiable0[EnumValueDescriptorProto] & TypeofEnumValueDescriptor): Self = StObject.set(x, "EnumValueDescriptorProto", value.asInstanceOf[js.Any])
-    
-    inline def setEnumValueOptions(value: Instantiable0[EnumValueOptions] & TypeofEnumValueOptions): Self = StObject.set(x, "EnumValueOptions", value.asInstanceOf[js.Any])
-    
-    inline def setExtensionRangeOptions(value: Instantiable0[ExtensionRangeOptions] & TypeofExtensionRangeOptio): Self = StObject.set(x, "ExtensionRangeOptions", value.asInstanceOf[js.Any])
-    
-    inline def setFieldDescriptorProto(value: Instantiable0[FieldDescriptorProto] & TypeofFieldDescriptorProt): Self = StObject.set(x, "FieldDescriptorProto", value.asInstanceOf[js.Any])
-    
-    inline def setFieldOptions(value: Instantiable0[FieldOptions] & TypeofFieldOptions): Self = StObject.set(x, "FieldOptions", value.asInstanceOf[js.Any])
-    
-    inline def setFileDescriptorProto(value: Instantiable0[FileDescriptorProto] & TypeofFileDescriptorProto): Self = StObject.set(x, "FileDescriptorProto", value.asInstanceOf[js.Any])
-    
-    inline def setFileDescriptorSet(value: Instantiable0[FileDescriptorSet] & TypeofFileDescriptorSet): Self = StObject.set(x, "FileDescriptorSet", value.asInstanceOf[js.Any])
-    
-    inline def setFileOptions(value: Instantiable0[FileOptions] & TypeofFileOptions): Self = StObject.set(x, "FileOptions", value.asInstanceOf[js.Any])
-    
-    inline def setGeneratedCodeInfo(value: Instantiable0[GeneratedCodeInfo] & TypeofGeneratedCodeInfo): Self = StObject.set(x, "GeneratedCodeInfo", value.asInstanceOf[js.Any])
-    
-    inline def setMessageOptions(value: Instantiable0[MessageOptions] & TypeofMessageOptions): Self = StObject.set(x, "MessageOptions", value.asInstanceOf[js.Any])
-    
-    inline def setMethodDescriptorProto(value: Instantiable0[MethodDescriptorProto] & TypeofMethodDescriptorPro): Self = StObject.set(x, "MethodDescriptorProto", value.asInstanceOf[js.Any])
-    
-    inline def setMethodOptions(value: Instantiable0[MethodOptions] & TypeofMethodOptions): Self = StObject.set(x, "MethodOptions", value.asInstanceOf[js.Any])
-    
-    inline def setOneofDescriptorProto(value: Instantiable0[OneofDescriptorProto] & TypeofOneofDescriptorProt): Self = StObject.set(x, "OneofDescriptorProto", value.asInstanceOf[js.Any])
-    
-    inline def setOneofOptions(value: Instantiable0[OneofOptions] & TypeofOneofOptions): Self = StObject.set(x, "OneofOptions", value.asInstanceOf[js.Any])
-    
-    inline def setServiceDescriptorProto(value: Instantiable0[ServiceDescriptorProto] & TypeofServiceDescriptorPr): Self = StObject.set(x, "ServiceDescriptorProto", value.asInstanceOf[js.Any])
-    
-    inline def setServiceOptions(value: Instantiable0[ServiceOptions] & TypeofServiceOptions): Self = StObject.set(x, "ServiceOptions", value.asInstanceOf[js.Any])
-    
-    inline def setSourceCodeInfo(value: Instantiable0[SourceCodeInfo] & TypeofSourceCodeInfo): Self = StObject.set(x, "SourceCodeInfo", value.asInstanceOf[js.Any])
-    
-    inline def setUninterpretedOption(value: Instantiable0[UninterpretedOption] & TypeofUninterpretedOption): Self = StObject.set(x, "UninterpretedOption", value.asInstanceOf[js.Any])
-  }
+  def encoder(mtype: Type): Codegen = js.native
+  
+  def load(filename: String): js.Promise[Root] = js.native
+  def load(filename: String, callback: LoadCallback): Unit = js.native
+  def load(filename: String, root: Root): js.Promise[Root] = js.native
+  def load(filename: String, root: Root, callback: LoadCallback): Unit = js.native
+  def load(filename: js.Array[String]): js.Promise[Root] = js.native
+  def load(filename: js.Array[String], callback: LoadCallback): Unit = js.native
+  def load(filename: js.Array[String], root: Root): js.Promise[Root] = js.native
+  def load(filename: js.Array[String], root: Root, callback: LoadCallback): Unit = js.native
+  
+  def loadSync(filename: String): Root = js.native
+  def loadSync(filename: String, root: Root): Root = js.native
+  def loadSync(filename: js.Array[String]): Root = js.native
+  def loadSync(filename: js.Array[String], root: Root): Root = js.native
+  
+  def parse(source: String): IParserResult = js.native
+  def parse(source: String, options: IParseOptions): IParserResult = js.native
+  def parse(source: String, root: Root): IParserResult = js.native
+  def parse(source: String, root: Root, options: IParseOptions): IParserResult = js.native
+  
+  val roots: Any = js.native
+  
+  val rpc: Typeofrpc = js.native
+  
+  val tokenize: Typeoftokenize = js.native
+  
+  val types: Typeoftypes = js.native
+  
+  val util: Typeofutil = js.native
+  
+  def verifier(mtype: Type): Codegen = js.native
+  
+  val wrappers: Any = js.native
 }

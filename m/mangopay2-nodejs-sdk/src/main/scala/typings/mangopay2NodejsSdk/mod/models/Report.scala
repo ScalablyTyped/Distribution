@@ -4,14 +4,14 @@ import typings.mangopay2NodejsSdk.anon.PartialReportData
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CSV
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSACTION
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WALLET
-import typings.mangopay2NodejsSdk.reportMod.report.Column
-import typings.mangopay2NodejsSdk.reportMod.report.Filters
-import typings.mangopay2NodejsSdk.reportMod.report.ReportData
-import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionNature
-import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionStatus
-import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionType
-import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
+import typings.mangopay2NodejsSdk.typingsModelsReportMod.report.Column
+import typings.mangopay2NodejsSdk.typingsModelsReportMod.report.Filters
+import typings.mangopay2NodejsSdk.typingsModelsReportMod.report.ReportData
+import typings.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionNature
+import typings.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionStatus
+import typings.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.typingsTypesMod.CurrencyISO
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,7 +73,7 @@ open class Report ()
     * An object of various filters for the report
     */
   /* CompleteClass */
-  var Filters: typings.mangopay2NodejsSdk.reportMod.report.Filters = js.native
+  var Filters: typings.mangopay2NodejsSdk.typingsModelsReportMod.report.Filters = js.native
   
   /* CompleteClass */
   var Id: String = js.native

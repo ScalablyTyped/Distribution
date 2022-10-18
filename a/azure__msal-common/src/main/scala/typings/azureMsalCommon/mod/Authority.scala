@@ -1,11 +1,11 @@
 package typings.azureMsalCommon.mod
 
-import typings.azureMsalCommon.authorityOptionsMod.AuthorityOptions
-import typings.azureMsalCommon.clientConfigurationMod.AzureCloudOptions
-import typings.azureMsalCommon.cloudDiscoveryMetadataMod.CloudDiscoveryMetadata
-import typings.azureMsalCommon.icachemanagerMod.ICacheManager
-import typings.azureMsalCommon.inetworkmoduleMod.INetworkModule
-import typings.azureMsalCommon.openIdConfigResponseMod.OpenIdConfigResponse
+import typings.azureMsalCommon.distAuthorityAuthorityOptionsMod.AuthorityOptions
+import typings.azureMsalCommon.distAuthorityCloudDiscoveryMetadataMod.CloudDiscoveryMetadata
+import typings.azureMsalCommon.distAuthorityOpenIdConfigResponseMod.OpenIdConfigResponse
+import typings.azureMsalCommon.distCacheInterfaceIcachemanagerMod.ICacheManager
+import typings.azureMsalCommon.distConfigClientConfigurationMod.AzureCloudOptions
+import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "Authority")
 @js.native
 open class Authority protected ()
-  extends typings.azureMsalCommon.authorityMod.Authority {
+  extends typings.azureMsalCommon.distAuthorityAuthorityMod.Authority {
   def this(
     authority: String,
     networkInterface: INetworkModule,

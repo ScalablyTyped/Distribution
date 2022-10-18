@@ -1,7 +1,7 @@
 package typings.ipfsUnixfs
 
-import typings.ipfsUnixfs.typesMod.MtimeLike
-import typings.ipfsUnixfs.typesMod._MtimeLike
+import typings.ipfsUnixfs.distSrcTypesMod.MtimeLike
+import typings.ipfsUnixfs.distSrcTypesMod._MtimeLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

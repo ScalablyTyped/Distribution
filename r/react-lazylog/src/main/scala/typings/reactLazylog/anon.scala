@@ -5,7 +5,7 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.reactLazylog.lazyLogMod.WebsocketOptions
+import typings.reactLazylog.buildLazyLogMod.WebsocketOptions
 import typings.std.HTMLAnchorElement
 import typings.std.Range
 import typings.std.RequestInit

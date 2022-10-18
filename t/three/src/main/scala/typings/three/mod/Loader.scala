@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Loader")
 @js.native
 open class Loader ()
-  extends typings.three.threeMod.Loader {
-  def this(manager: typings.three.loadingManagerMod.LoadingManager) = this()
+  extends typings.three.srcThreeMod.Loader {
+  def this(manager: typings.three.srcLoadersLoadingManagerMod.LoadingManager) = this()
 }

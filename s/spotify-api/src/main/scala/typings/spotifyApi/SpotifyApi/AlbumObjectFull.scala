@@ -1,10 +1,10 @@
 package typings.spotifyApi.SpotifyApi
 
-import typings.spotifyApi.spotifyApiStrings.album
-import typings.spotifyApi.spotifyApiStrings.compilation
+import typings.spotifyApi.spotifyApiStrings.album_
+import typings.spotifyApi.spotifyApiStrings.compilation_
 import typings.spotifyApi.spotifyApiStrings.day
 import typings.spotifyApi.spotifyApiStrings.month
-import typings.spotifyApi.spotifyApiStrings.single
+import typings.spotifyApi.spotifyApiStrings.single_
 import typings.spotifyApi.spotifyApiStrings.year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -57,7 +57,7 @@ trait AlbumObjectFull
 object AlbumObjectFull {
   
   inline def apply(
-    album_type: album | single | compilation,
+    album_type: album_ | single_ | compilation_,
     artists: js.Array[ArtistObjectSimplified],
     copyrights: js.Array[CopyrightObject],
     external_ids: ExternalIdObject,

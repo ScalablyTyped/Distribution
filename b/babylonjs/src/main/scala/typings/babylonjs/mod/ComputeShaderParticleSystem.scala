@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ComputeShaderParticleSystem")
 @js.native
 open class ComputeShaderParticleSystem protected ()
-  extends typings.babylonjs.legacyMod.ComputeShaderParticleSystem {
+  extends typings.babylonjs.legacyLegacyMod.ComputeShaderParticleSystem {
   def this(
-    parent: typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem,
-    engine: typings.babylonjs.thinEngineMod.ThinEngine
+    parent: typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine
   ) = this()
 }

@@ -19,9 +19,9 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSGlobal("falcor.DataSource")
+    /* note: abstract class */ @JSGlobal("falcor.DataSource")
     @js.native
-    abstract class DataSource ()
+    open class DataSource ()
       extends typings.falcor.mod.DataSource
     
     /**

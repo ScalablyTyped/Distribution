@@ -11,91 +11,91 @@ object fastJsonPatchStrings {
   sealed trait OPERATION_FROM_REQUIRED
     extends StObject
        with JsonPatchErrorName
-       with typings.fastJsonPatch.helpersMod.JsonPatchErrorName
+       with typings.fastJsonPatch.commonjsHelpersMod.JsonPatchErrorName
   inline def OPERATION_FROM_REQUIRED: OPERATION_FROM_REQUIRED = "OPERATION_FROM_REQUIRED".asInstanceOf[OPERATION_FROM_REQUIRED]
   
   @js.native
   sealed trait OPERATION_FROM_UNRESOLVABLE
     extends StObject
        with JsonPatchErrorName
-       with typings.fastJsonPatch.helpersMod.JsonPatchErrorName
+       with typings.fastJsonPatch.commonjsHelpersMod.JsonPatchErrorName
   inline def OPERATION_FROM_UNRESOLVABLE: OPERATION_FROM_UNRESOLVABLE = "OPERATION_FROM_UNRESOLVABLE".asInstanceOf[OPERATION_FROM_UNRESOLVABLE]
   
   @js.native
   sealed trait OPERATION_NOT_AN_OBJECT
     extends StObject
        with JsonPatchErrorName
-       with typings.fastJsonPatch.helpersMod.JsonPatchErrorName
+       with typings.fastJsonPatch.commonjsHelpersMod.JsonPatchErrorName
   inline def OPERATION_NOT_AN_OBJECT: OPERATION_NOT_AN_OBJECT = "OPERATION_NOT_AN_OBJECT".asInstanceOf[OPERATION_NOT_AN_OBJECT]
   
   @js.native
   sealed trait OPERATION_OP_INVALID
     extends StObject
        with JsonPatchErrorName
-       with typings.fastJsonPatch.helpersMod.JsonPatchErrorName
+       with typings.fastJsonPatch.commonjsHelpersMod.JsonPatchErrorName
   inline def OPERATION_OP_INVALID: OPERATION_OP_INVALID = "OPERATION_OP_INVALID".asInstanceOf[OPERATION_OP_INVALID]
   
   @js.native
   sealed trait OPERATION_PATH_CANNOT_ADD
     extends StObject
        with JsonPatchErrorName
-       with typings.fastJsonPatch.helpersMod.JsonPatchErrorName
+       with typings.fastJsonPatch.commonjsHelpersMod.JsonPatchErrorName
   inline def OPERATION_PATH_CANNOT_ADD: OPERATION_PATH_CANNOT_ADD = "OPERATION_PATH_CANNOT_ADD".asInstanceOf[OPERATION_PATH_CANNOT_ADD]
   
   @js.native
   sealed trait OPERATION_PATH_ILLEGAL_ARRAY_INDEX
     extends StObject
        with JsonPatchErrorName
-       with typings.fastJsonPatch.helpersMod.JsonPatchErrorName
+       with typings.fastJsonPatch.commonjsHelpersMod.JsonPatchErrorName
   inline def OPERATION_PATH_ILLEGAL_ARRAY_INDEX: OPERATION_PATH_ILLEGAL_ARRAY_INDEX = "OPERATION_PATH_ILLEGAL_ARRAY_INDEX".asInstanceOf[OPERATION_PATH_ILLEGAL_ARRAY_INDEX]
   
   @js.native
   sealed trait OPERATION_PATH_INVALID
     extends StObject
        with JsonPatchErrorName
-       with typings.fastJsonPatch.helpersMod.JsonPatchErrorName
+       with typings.fastJsonPatch.commonjsHelpersMod.JsonPatchErrorName
   inline def OPERATION_PATH_INVALID: OPERATION_PATH_INVALID = "OPERATION_PATH_INVALID".asInstanceOf[OPERATION_PATH_INVALID]
   
   @js.native
   sealed trait OPERATION_PATH_UNRESOLVABLE
     extends StObject
        with JsonPatchErrorName
-       with typings.fastJsonPatch.helpersMod.JsonPatchErrorName
+       with typings.fastJsonPatch.commonjsHelpersMod.JsonPatchErrorName
   inline def OPERATION_PATH_UNRESOLVABLE: OPERATION_PATH_UNRESOLVABLE = "OPERATION_PATH_UNRESOLVABLE".asInstanceOf[OPERATION_PATH_UNRESOLVABLE]
   
   @js.native
   sealed trait OPERATION_VALUE_CANNOT_CONTAIN_UNDEFINED
     extends StObject
        with JsonPatchErrorName
-       with typings.fastJsonPatch.helpersMod.JsonPatchErrorName
+       with typings.fastJsonPatch.commonjsHelpersMod.JsonPatchErrorName
   inline def OPERATION_VALUE_CANNOT_CONTAIN_UNDEFINED: OPERATION_VALUE_CANNOT_CONTAIN_UNDEFINED = "OPERATION_VALUE_CANNOT_CONTAIN_UNDEFINED".asInstanceOf[OPERATION_VALUE_CANNOT_CONTAIN_UNDEFINED]
   
   @js.native
   sealed trait OPERATION_VALUE_OUT_OF_BOUNDS
     extends StObject
        with JsonPatchErrorName
-       with typings.fastJsonPatch.helpersMod.JsonPatchErrorName
+       with typings.fastJsonPatch.commonjsHelpersMod.JsonPatchErrorName
   inline def OPERATION_VALUE_OUT_OF_BOUNDS: OPERATION_VALUE_OUT_OF_BOUNDS = "OPERATION_VALUE_OUT_OF_BOUNDS".asInstanceOf[OPERATION_VALUE_OUT_OF_BOUNDS]
   
   @js.native
   sealed trait OPERATION_VALUE_REQUIRED
     extends StObject
        with JsonPatchErrorName
-       with typings.fastJsonPatch.helpersMod.JsonPatchErrorName
+       with typings.fastJsonPatch.commonjsHelpersMod.JsonPatchErrorName
   inline def OPERATION_VALUE_REQUIRED: OPERATION_VALUE_REQUIRED = "OPERATION_VALUE_REQUIRED".asInstanceOf[OPERATION_VALUE_REQUIRED]
   
   @js.native
   sealed trait SEQUENCE_NOT_AN_ARRAY
     extends StObject
        with JsonPatchErrorName
-       with typings.fastJsonPatch.helpersMod.JsonPatchErrorName
+       with typings.fastJsonPatch.commonjsHelpersMod.JsonPatchErrorName
   inline def SEQUENCE_NOT_AN_ARRAY: SEQUENCE_NOT_AN_ARRAY = "SEQUENCE_NOT_AN_ARRAY".asInstanceOf[SEQUENCE_NOT_AN_ARRAY]
   
   @js.native
   sealed trait TEST_OPERATION_FAILED
     extends StObject
        with JsonPatchErrorName
-       with typings.fastJsonPatch.helpersMod.JsonPatchErrorName
+       with typings.fastJsonPatch.commonjsHelpersMod.JsonPatchErrorName
   inline def TEST_OPERATION_FAILED: TEST_OPERATION_FAILED = "TEST_OPERATION_FAILED".asInstanceOf[TEST_OPERATION_FAILED]
   
   @js.native

@@ -1,6 +1,6 @@
 package typings.expressRouters
 
-import typings.expressRouters.expressRoutersMod.RouteConfigMethod
+import typings.expressRouters.distExpressRoutersMod.RouteConfigMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

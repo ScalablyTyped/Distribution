@@ -140,11 +140,11 @@ object pathMod extends Shortcut {
       * Often used to extract the file name from a fully qualified path.
       *
       * @param path the path to evaluate.
-      * @param ext optionally, an extension to remove from the result.
+      * @param suffix optionally, an extension to remove from the result.
       * @throws {TypeError} if `path` is not a string or if `ext` is given and is not a string.
       */
     def basename(path: String): String = js.native
-    def basename(path: String, ext: String): String = js.native
+    def basename(path: String, suffix: String): String = js.native
     
     /**
       * The platform-specific file delimiter. ';' or ':'.
@@ -242,7 +242,7 @@ object pathMod extends Shortcut {
     /**
       * The platform-specific file separator. '\\' or '/'.
       */
-    val sep: String | Slash = js.native
+    val sep: (/* \ */ String) | Slash = js.native
     
     /**
       * On Windows systems only, returns an equivalent namespace-prefixed path for the given path.

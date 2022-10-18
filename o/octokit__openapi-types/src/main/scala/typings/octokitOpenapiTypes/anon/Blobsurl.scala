@@ -24,7 +24,9 @@ trait Blobsurl extends StObject {
   
   var clone_url: js.UndefOr[String] = js.undefined
   
-  var code_of_conduct: js.UndefOr[BodyHtmlurl] = js.undefined
+  var code_of_conduct: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-of-conduct'] */ js.Any
+  ] = js.undefined
   
   /** @example http://api.github.com/repos/octocat/Hello-World/collaborators{/collaborator} */
   var collaborators_url: String
@@ -159,7 +161,7 @@ trait Blobsurl extends StObject {
     */
   var languages_url: String
   
-  var license: js.UndefOr[Spdxid | Null] = js.undefined
+  var license: js.UndefOr[Key | Null] = js.undefined
   
   /**
     * Format: uri
@@ -188,7 +190,7 @@ trait Blobsurl extends StObject {
   
   var open_issues_count: js.UndefOr[Double] = js.undefined
   
-  var owner: Avatarurl
+  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
   
   var permissions: js.UndefOr[Maintain] = js.undefined
   
@@ -209,6 +211,7 @@ trait Blobsurl extends StObject {
   /** @example admin */
   var role_name: js.UndefOr[String] = js.undefined
   
+  /** @description The size of the repository. Size is calculated hourly. When a repository is initially created, the size is 0. */
   var size: js.UndefOr[Double] = js.undefined
   
   var ssh_url: js.UndefOr[String] = js.undefined
@@ -254,7 +257,9 @@ trait Blobsurl extends StObject {
   
   var temp_clone_token: js.UndefOr[String] = js.undefined
   
-  var template_repository: js.UndefOr[Allowupdatebranch | Null] = js.undefined
+  var template_repository: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-repository'] */ js.Any
+  ] = js.undefined
   
   var topics: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -319,7 +324,7 @@ object Blobsurl {
     name: String,
     node_id: String,
     notifications_url: String,
-    owner: Avatarurl,
+    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any,
     `private`: Boolean,
     pulls_url: String,
     releases_url: String,
@@ -359,7 +364,9 @@ object Blobsurl {
     
     inline def setClone_urlUndefined: Self = StObject.set(x, "clone_url", js.undefined)
     
-    inline def setCode_of_conduct(value: BodyHtmlurl): Self = StObject.set(x, "code_of_conduct", value.asInstanceOf[js.Any])
+    inline def setCode_of_conduct(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-of-conduct'] */ js.Any
+    ): Self = StObject.set(x, "code_of_conduct", value.asInstanceOf[js.Any])
     
     inline def setCode_of_conductUndefined: Self = StObject.set(x, "code_of_conduct", js.undefined)
     
@@ -481,7 +488,7 @@ object Blobsurl {
     
     inline def setLanguages_url(value: String): Self = StObject.set(x, "languages_url", value.asInstanceOf[js.Any])
     
-    inline def setLicense(value: Spdxid): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    inline def setLicense(value: Key): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
     inline def setLicenseNull: Self = StObject.set(x, "license", null)
     
@@ -515,7 +522,9 @@ object Blobsurl {
     
     inline def setOpen_issues_countUndefined: Self = StObject.set(x, "open_issues_count", js.undefined)
     
-    inline def setOwner(value: Avatarurl): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
+    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setPermissions(value: Maintain): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
@@ -573,9 +582,9 @@ object Blobsurl {
     
     inline def setTemp_clone_tokenUndefined: Self = StObject.set(x, "temp_clone_token", js.undefined)
     
-    inline def setTemplate_repository(value: Allowupdatebranch): Self = StObject.set(x, "template_repository", value.asInstanceOf[js.Any])
-    
-    inline def setTemplate_repositoryNull: Self = StObject.set(x, "template_repository", null)
+    inline def setTemplate_repository(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-repository'] */ js.Any
+    ): Self = StObject.set(x, "template_repository", value.asInstanceOf[js.Any])
     
     inline def setTemplate_repositoryUndefined: Self = StObject.set(x, "template_repository", js.undefined)
     

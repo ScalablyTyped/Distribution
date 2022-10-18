@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.WidgetValidation")
 @js.native
 open class WidgetValidation protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.WidgetValidation {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.WidgetValidation {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object WidgetValidation {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.WidgetValidation]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.WidgetValidation]
   
   /**
     * Creates and returns a new WidgetValidation instance in the SDK and on the server.
@@ -50,7 +50,7 @@ object WidgetValidation {
     *  7.6.0 and higher
     */
   /* static member */
-  inline def createInAttributeWidgetUnderValidation(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderValidation")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.WidgetValidation]
+  inline def createInAttributeWidgetUnderValidation(container: typings.mendixmodelsdk.srcGenPagesMod.pages.AttributeWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderValidation")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.WidgetValidation]
   
   /**
     * Creates and returns a new WidgetValidation instance in the SDK and on the server.
@@ -61,7 +61,7 @@ object WidgetValidation {
     *  7.6.0 and higher
     */
   /* static member */
-  inline def createInReferenceSelectorUnderValidation(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSelector): typings.mendixmodelsdk.pagesMod.pages.WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderValidation")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.WidgetValidation]
+  inline def createInReferenceSelectorUnderValidation(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ReferenceSelector): typings.mendixmodelsdk.srcGenPagesMod.pages.WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderValidation")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.WidgetValidation]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.WidgetValidation.structureTypeName")

@@ -1,8 +1,8 @@
 package typings.canvg.mod.elements
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.canvg.documentDocumentMod.Document
-import typings.canvg.feGaussianBlurElementMod.FeGaussianBlurElement
+import typings.canvg.distDocumentDocumentMod.Document
+import typings.canvg.distDocumentFeGaussianBlurElementMod.FeGaussianBlurElement
 import typings.canvg.mod.elements.^
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject

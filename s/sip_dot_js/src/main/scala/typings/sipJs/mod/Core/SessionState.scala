@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SessionState extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.sipJs.sessionSessionMod.SessionState & String] = js.native
+  def apply(value: String): js.UndefOr[typings.sipJs.libCoreSessionSessionMod.SessionState & String] = js.native
   
-  /* "AckWait" */ val AckWait: typings.sipJs.sessionSessionMod.SessionState.AckWait & String = js.native
+  /* "AckWait" */ val AckWait: typings.sipJs.libCoreSessionSessionMod.SessionState.AckWait & String = js.native
   
-  /* "Confirmed" */ val Confirmed: typings.sipJs.sessionSessionMod.SessionState.Confirmed & String = js.native
+  /* "Confirmed" */ val Confirmed: typings.sipJs.libCoreSessionSessionMod.SessionState.Confirmed & String = js.native
   
-  /* "Early" */ val Early: typings.sipJs.sessionSessionMod.SessionState.Early & String = js.native
+  /* "Early" */ val Early: typings.sipJs.libCoreSessionSessionMod.SessionState.Early & String = js.native
   
-  /* "Initial" */ val Initial: typings.sipJs.sessionSessionMod.SessionState.Initial & String = js.native
+  /* "Initial" */ val Initial: typings.sipJs.libCoreSessionSessionMod.SessionState.Initial & String = js.native
   
-  /* "Terminated" */ val Terminated: typings.sipJs.sessionSessionMod.SessionState.Terminated & String = js.native
+  /* "Terminated" */ val Terminated: typings.sipJs.libCoreSessionSessionMod.SessionState.Terminated & String = js.native
 }

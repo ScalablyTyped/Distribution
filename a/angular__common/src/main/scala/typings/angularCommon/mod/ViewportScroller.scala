@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/common", "ViewportScroller")
+/* note: abstract class */ @JSImport("@angular/common", "ViewportScroller")
 @js.native
-abstract class ViewportScroller () extends StObject {
+open class ViewportScroller () extends StObject {
   
   /**
     * Retrieves the current scroll position.

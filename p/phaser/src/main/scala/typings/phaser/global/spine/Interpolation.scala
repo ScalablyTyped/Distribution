@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.Interpolation")
+/* note: abstract class */ @JSGlobal("spine.Interpolation")
 @js.native
-abstract class Interpolation ()
+open class Interpolation ()
   extends StObject
      with typings.phaser.spine.Interpolation {
   

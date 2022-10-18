@@ -7,37 +7,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SymbolOffset extends StObject {
   
   /**
-    * Mark point style.
+    * Label of this data item, which will be merged with
+    * `label` of starting point and ending point.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.label
     */
-  var itemStyle: js.UndefOr[Emphasis] = js.undefined
+  var label: js.UndefOr[Position] = js.undefined
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.label
+    * Line style of this data item, which will be merged
+    * with `lineStyle` of starting point and ending point.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.lineStyle
     */
-  var label: js.UndefOr[FontFamily] = js.undefined
+  var lineStyle: js.UndefOr[ShadowOffsetX] = js.undefined
   
   /**
-    * Mark point name.
+    * Name of the marker, which will display as a label.
     *
     *
-    * @default
-    * ''
-    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.name
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.1.name
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Symbol of .
+    * Symbol of ending point.
     *
-    * Icon types provided by ECharts includes `'circle'`, `'rect'`,
-    * `'roundRect'`, `'triangle'`, `'diamond'`, `'pin'`, `'arrow'`,
-    * `'none'`
+    * Icon types provided by ECharts includes `'circle'`,
+    * `'rect'`, `'roundRect'`, `'triangle'`, `'diamond'`,
+    * `'pin'`, `'arrow'`, `'none'`
     *
-    * It can be set to an image with `'image://url'` , in which
-    * URL is the link to an image, or `dataURI` of an image.
+    * It can be set to an image with `'image://url'` ,
+    * in which URL is the link to an image, or `dataURI`
+    * of an image.
     *
     * An image URL example:
     *
@@ -48,79 +52,82 @@ trait SymbolOffset extends StObject {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markLine.data.1)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
-    * As compared with raster image, vector paths prevent from
-    * jagging and blurring when scaled, and have a better control
-    * over changing colors.
+    * As compared with raster image, vector paths prevent
+    * from jagging and blurring when scaled, and have a
+    * better control over changing colors.
     * Size of vectoer icon will be adapted automatically.
     * Refer to
     * [SVG PathData](http://www.w3.org/TR/SVG/paths.html#PathData)
     * for more information about format of path.
-    * You may export vector paths from tools like Adobe Illustrator.
+    * You may export vector paths from tools like Adobe
+    * Illustrator.
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markLine.data.1)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbol
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether to keep aspect for symbols in the form of `path://`.
+    * Whether to keep aspect for symbols in the form of
+    * `path://`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Offset of symbol relative to original position.
+    * Offset of ending point symbol relative to original
+    * position.
     * By default, symbol will be put in the center position
     * of data.
-    * But if symbol is from user-defined vector path or image,
-    * you may not expect symbol to be in center.
+    * But if symbol is from user-defined vector path or
+    * image, you may not expect symbol to be in center.
     * In this case, you may use this attribute to set offset
     * to default position.
-    * It can be in absolute pixel value, or in relative percentage
-    * value.
+    * It can be in absolute pixel value, or in relative
+    * percentage value.
     *
-    * For example, `[0, '50%']` means to move upside side position
-    * of symbol height.
-    * It can be used to make the arrow in the bottom to be
-    * at data position when symbol is pin.
+    * For example, `[0, '50%']` means to move upside side
+    * position of symbol height.
+    * It can be used to make the arrow in the bottom to
+    * be at data position when symbol is pin.
     *
     *
     * @default
     * [0, 0]
-    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
-    * Rotate degree of symbol.
-    * Note that when `symbol` is set to be `'arrow'` in `markLine`,
-    * `symbolRotate` value will be ignored, and compulsively
-    * use tangent angle.
+    * Rotate degree of ending point symbol.
+    * Note that when `symbol` is set to be `'arrow'` in
+    * `markLine`, `symbolRotate` value will be ignored,
+    * and compulsively use tangent angle.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   
   /**
-    * symbol size.
-    * It can be set to single numbers like `10`, or use an
-    * array to represent width and height.
-    * For example, `[20, 10]` means symbol width is `20`, and
-    * height is`10`.
+    * ending point symbol size.
+    * It can be set to single numbers like `10`, or use
+    * an array to represent width and height.
+    * For example, `[20, 10]` means symbol width is `20`,
+    * and height is`10`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
@@ -128,7 +135,7 @@ trait SymbolOffset extends StObject {
     * Label value, which can be ignored.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.value
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.value
     */
   var value: js.UndefOr[Double] = js.undefined
   
@@ -136,7 +143,7 @@ trait SymbolOffset extends StObject {
     * X position according to container, in pixel.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.x
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.x
     */
   var x: js.UndefOr[Double] = js.undefined
   
@@ -144,7 +151,7 @@ trait SymbolOffset extends StObject {
     * Y position according to container, in pixel.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.y
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.y
     */
   var y: js.UndefOr[Double] = js.undefined
 }
@@ -157,13 +164,13 @@ object SymbolOffset {
   
   extension [Self <: SymbolOffset](x: Self) {
     
-    inline def setItemStyle(value: Emphasis): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
-    
-    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
-    
-    inline def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Position): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLineStyle(value: ShadowOffsetX): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

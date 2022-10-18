@@ -168,9 +168,23 @@ object mod {
     }
   }
   
-  type DispatcherMap = Record[String, js.Function1[/* repeated */ Any, Unit | EnsurePromise[Unit]]]
+  type DispatcherMap = Record[
+    String, 
+    js.Function1[
+      /* repeated */ Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: true extends true ? @wordpress/data.@wordpress/data.EnsurePromise<void> : void */ js.Any
+    ]
+  ]
   
-  type EnsurePromise[T] = js.Promise[T] | T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Promise<any> ? T : std.Promise<T>
+    }}}
+    */
+  @js.native
+  trait EnsurePromise[T] extends StObject
   
   trait GenericStoreConfig extends StObject {
     

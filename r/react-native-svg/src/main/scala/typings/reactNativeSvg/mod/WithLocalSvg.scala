@@ -1,6 +1,6 @@
 package typings.reactNativeSvg.mod
 
-import typings.reactNativeSvg.localSvgMod.LocalProps
+import typings.reactNativeSvg.libTypescriptLocalSvgMod.LocalProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native-svg", "WithLocalSvg")
 @js.native
 open class WithLocalSvg protected ()
-  extends typings.reactNativeSvg.reactNativeSVGMod.WithLocalSvg {
+  extends typings.reactNativeSvg.libTypescriptReactNativeSVGMod.WithLocalSvg {
   def this(props: LocalProps) = this()
   /**
     * @deprecated

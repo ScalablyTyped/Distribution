@@ -23,9 +23,9 @@ object mod {
     /* private */ var config: Any = js.native
   }
   
-  @JSImport("@azure/core-lro", "Poller")
+  /* note: abstract class */ @JSImport("@azure/core-lro", "Poller")
   @js.native
-  abstract class Poller[TState /* <: PollOperationState[TResult] */, TResult] protected ()
+  open class Poller[TState /* <: PollOperationState[TResult] */, TResult] protected ()
     extends StObject
        with PollerLike[TState, TResult] {
     /**

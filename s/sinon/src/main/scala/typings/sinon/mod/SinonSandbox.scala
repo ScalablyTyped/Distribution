@@ -1,6 +1,5 @@
 package typings.sinon.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.sinon.anon.Get
 import typings.sinon.anon.PartialFakeTimerInstallOp
 import typings.sinon.sinonStrings.get
@@ -34,9 +33,7 @@ trait SinonSandbox extends StObject {
   def createStubInstance[TType](constructor: StubbableType[TType]): SinonStubbedInstance[TType] = js.native
   def createStubInstance[TType](
     constructor: StubbableType[TType],
-    overrides: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof TType ]:? sinon.sinon.SinonStubbedMember<TType[K]> | TType[K] extends (args : ...any): infer R? any : TType[K]}
-    */ typings.sinon.sinonStrings.SinonSandbox & TopLevel[Any]
+    overrides: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof TType ]:? sinon.sinon.SinonStubbedMember<TType[K]> | TType[K] extends (args : ...any): infer R? R : TType[K]} */ js.Any
   ): SinonStubbedInstance[TType] = js.native
   
   /**
@@ -191,7 +188,7 @@ trait SinonSandbox extends StObject {
   /**
     * Works exactly like sinon.spy
     */
-  def spy[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonSpy[Any | js.Array[Any], Any] = js.native
+  def spy[T, K /* <: /* keyof T */ String */](obj: T, method: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends (args : infer TArgs): infer TReturnValue ? sinon.sinon.SinonSpy<TArgs, TReturnValue> : sinon.sinon.SinonSpy<std.Array<any>, any> */ js.Any = js.native
   /**
     * Works exactly like sinon.spy
     */
@@ -237,7 +234,7 @@ trait SinonSandbox extends StObject {
   /**
     * Works exactly like sinon.stub.
     */
-  def stub[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonStub[Any | js.Array[Any], Any] = js.native
+  def stub[T, K /* <: /* keyof T */ String */](obj: T, method: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends (args : infer TArgs): infer TReturnValue ? sinon.sinon.SinonStub<TArgs, TReturnValue> : sinon.sinon.SinonStub<std.Array<any>, any> */ js.Any = js.native
   /**
     * Works exactly like sinon.stub.
     */

@@ -1,6 +1,5 @@
 package typings.loadJsonFile
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +18,7 @@ object mod {
   
   type BeforeParse = js.Function1[/* data */ String, String]
   
-  type JsonValue = String | Double | Boolean | Null | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ Key in string ]:? any}
-    */ typings.loadJsonFile.loadJsonFileStrings.JsonValue & TopLevel[Any]) | js.Array[Any]
+  type JsonValue = String | Double | Boolean | Null | (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in string ]:? any} */ js.Any) | js.Array[Any]
   
   trait Options extends StObject {
     

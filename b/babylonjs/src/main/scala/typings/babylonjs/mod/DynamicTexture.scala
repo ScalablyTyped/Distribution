@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "DynamicTexture")
 @js.native
 open class DynamicTexture protected ()
-  extends typings.babylonjs.legacyMod.DynamicTexture {
+  extends typings.babylonjs.legacyLegacyMod.DynamicTexture {
   /**
     * Creates a DynamicTexture
     * @param name defines the name of the texture

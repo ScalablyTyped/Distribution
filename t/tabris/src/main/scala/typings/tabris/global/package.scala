@@ -8,8 +8,8 @@ import typings.tabris.CordovaPlugins
 import typings.tabris.Crypto
 import typings.tabris.RequestInit
 import typings.tabris.Window
-import typings.tabris.anon.ChildrenJSXChildren
-import typings.tabris.anon.`12`
+import typings.tabris.anon.Children
+import typings.tabris.anon.`0`
 import typings.tabris.mod.Device_
 import typings.tabris.mod.JSXChildren
 import typings.tabris.mod.Module
@@ -32,16 +32,16 @@ inline def _empty(attributes: Null, children: JSXChildren[Widget[Any]]): WidgetC
   * @param attributes This parameter needs to be null since <$> does not support any attributes
   * @param children The widgets to be included in the resulting WidgetCollection instance.
   */
-inline def _empty(attributes: ChildrenJSXChildren, children: JSXChildren[Widget[Any]]): WidgetCollection[Widget[Any]] = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[WidgetCollection[Widget[Any]]]
+inline def _empty(attributes: Children, children: JSXChildren[Widget[Any]]): WidgetCollection[Widget[Any]] = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[WidgetCollection[Widget[Any]]]
 /**
   * A JSX stateless functional component that joins any given content in to a single string.
   * @param attributes This parameter needs to be null since <$> does not support any attributes.
   * @param children The content of the resulting string.
   */
-inline def _empty(attributes: `12`, children: String): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def _empty(attributes: `12`, children: js.Array[Null | String | Double | Boolean]): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def _empty(attributes: `12`, children: Boolean): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def _empty(attributes: `12`, children: Double): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `0`, children: String): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `0`, children: js.Array[Null | String | Double | Boolean]): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `0`, children: Boolean): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `0`, children: Double): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
 /**
   * Returns the non-disposed `NativeObject` instance (e.g. a widget) associated with the given cid
   * number. The number can be obtained via the [cid](./NativeObject.md#cid) property. Example: If the cid

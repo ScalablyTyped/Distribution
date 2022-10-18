@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grammarkdown", "RightHandSide")
 @js.native
-class RightHandSide ()
-  extends typings.grammarkdown.nodesMod.RightHandSide {
-  def this(constraints: typings.grammarkdown.nodesMod.Constraints) = this()
-  def this(constraints: Unit, head: typings.grammarkdown.nodesMod.SymbolSpan) = this()
+open class RightHandSide ()
+  extends typings.grammarkdown.distNodesMod.RightHandSide {
+  def this(constraints: typings.grammarkdown.distNodesMod.Constraints) = this()
+  def this(constraints: Unit, head: typings.grammarkdown.distNodesMod.SymbolSpan) = this()
   def this(
-    constraints: typings.grammarkdown.nodesMod.Constraints,
-    head: typings.grammarkdown.nodesMod.SymbolSpan
+    constraints: typings.grammarkdown.distNodesMod.Constraints,
+    head: typings.grammarkdown.distNodesMod.SymbolSpan
   ) = this()
-  def this(constraints: Unit, head: Unit, reference: typings.grammarkdown.nodesMod.LinkReference) = this()
+  def this(constraints: Unit, head: Unit, reference: typings.grammarkdown.distNodesMod.LinkReference) = this()
   def this(
     constraints: Unit,
-    head: typings.grammarkdown.nodesMod.SymbolSpan,
-    reference: typings.grammarkdown.nodesMod.LinkReference
+    head: typings.grammarkdown.distNodesMod.SymbolSpan,
+    reference: typings.grammarkdown.distNodesMod.LinkReference
   ) = this()
   def this(
-    constraints: typings.grammarkdown.nodesMod.Constraints,
+    constraints: typings.grammarkdown.distNodesMod.Constraints,
     head: Unit,
-    reference: typings.grammarkdown.nodesMod.LinkReference
+    reference: typings.grammarkdown.distNodesMod.LinkReference
   ) = this()
   def this(
-    constraints: typings.grammarkdown.nodesMod.Constraints,
-    head: typings.grammarkdown.nodesMod.SymbolSpan,
-    reference: typings.grammarkdown.nodesMod.LinkReference
+    constraints: typings.grammarkdown.distNodesMod.Constraints,
+    head: typings.grammarkdown.distNodesMod.SymbolSpan,
+    reference: typings.grammarkdown.distNodesMod.LinkReference
   ) = this()
 }

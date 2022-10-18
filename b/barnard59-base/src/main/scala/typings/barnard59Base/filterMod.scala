@@ -1,6 +1,6 @@
 package typings.barnard59Base
 
-import typings.barnard59Core.streamObjectMod.Context
+import typings.barnard59Core.libStreamObjectMod.Context
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

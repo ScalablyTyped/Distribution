@@ -1,7 +1,7 @@
 package typings.azureCoreHttp
 
-import typings.azureAbortController.abortSignalMod.AbortSignalLike
-import typings.azureCoreHttp.operationOptionsMod.OperationOptions
+import typings.azureAbortController.typesSrcAbortSignalMod.AbortSignalLike
+import typings.azureCoreHttp.typesLatestSrcOperationOptionsMod.OperationOptions
 import typings.std.AbortSignal
 import typings.std.BodyInit
 import typings.std.HeadersInit

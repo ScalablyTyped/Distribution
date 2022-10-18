@@ -1,7 +1,7 @@
 package typings.grommet.anon
 
+import typings.grommet.componentsVideoMod.controlsItems
 import typings.grommet.utilsMod.A11yTitleType
-import typings.grommet.videoMod.controlsItems
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

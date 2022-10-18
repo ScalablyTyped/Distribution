@@ -1,13 +1,13 @@
 package typings.classTransformer
 
-import typings.classTransformer.classConstructorTypeMod.ClassConstructor
-import typings.classTransformer.classTransformerOptionsInterfaceMod.ClassTransformOptions
-import typings.classTransformer.excludeOptionsInterfaceMod.ExcludeOptions
-import typings.classTransformer.exposeOptionsInterfaceMod.ExposeOptions
-import typings.classTransformer.transformFnParamsInterfaceMod.TransformFnParams
-import typings.classTransformer.transformOptionsInterfaceMod.TransformOptions
-import typings.classTransformer.typeHelpOptionsInterfaceMod.TypeHelpOptions
-import typings.classTransformer.typeOptionsInterfaceMod.TypeOptions
+import typings.classTransformer.typesInterfacesClassConstructorDottypeMod.ClassConstructor
+import typings.classTransformer.typesInterfacesClassTransformerOptionsDotinterfaceMod.ClassTransformOptions
+import typings.classTransformer.typesInterfacesDecoratorOptionsExcludeOptionsDotinterfaceMod.ExcludeOptions
+import typings.classTransformer.typesInterfacesDecoratorOptionsExposeOptionsDotinterfaceMod.ExposeOptions
+import typings.classTransformer.typesInterfacesDecoratorOptionsTransformOptionsDotinterfaceMod.TransformOptions
+import typings.classTransformer.typesInterfacesDecoratorOptionsTypeOptionsDotinterfaceMod.TypeOptions
+import typings.classTransformer.typesInterfacesMetadataTransformFnParamsDotinterfaceMod.TransformFnParams
+import typings.classTransformer.typesInterfacesTypeHelpOptionsDotinterfaceMod.TypeHelpOptions
 import typings.std.ClassDecorator
 import typings.std.MethodDecorator
 import typings.std.PropertyDecorator
@@ -25,7 +25,7 @@ object mod {
   @JSImport("class-transformer", "ClassTransformer")
   @js.native
   open class ClassTransformer ()
-    extends typings.classTransformer.classTransformerMod.ClassTransformer
+    extends typings.classTransformer.typesClassTransformerMod.ClassTransformer
   
   inline def Exclude(): PropertyDecorator & ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Exclude")().asInstanceOf[PropertyDecorator & ClassDecorator]
   inline def Exclude(options: ExcludeOptions): PropertyDecorator & ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Exclude")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator & ClassDecorator]
@@ -50,13 +50,15 @@ object mod {
   object TransformationType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.classTransformer.transformationTypeEnumMod.TransformationType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.classTransformer.typesEnumsTransformationTypeDotenumMod.TransformationType & Double
+      ] = js.native
     
-    /* 2 */ val CLASS_TO_CLASS: typings.classTransformer.transformationTypeEnumMod.TransformationType.CLASS_TO_CLASS & Double = js.native
+    /* 2 */ val CLASS_TO_CLASS: typings.classTransformer.typesEnumsTransformationTypeDotenumMod.TransformationType.CLASS_TO_CLASS & Double = js.native
     
-    /* 1 */ val CLASS_TO_PLAIN: typings.classTransformer.transformationTypeEnumMod.TransformationType.CLASS_TO_PLAIN & Double = js.native
+    /* 1 */ val CLASS_TO_PLAIN: typings.classTransformer.typesEnumsTransformationTypeDotenumMod.TransformationType.CLASS_TO_PLAIN & Double = js.native
     
-    /* 0 */ val PLAIN_TO_CLASS: typings.classTransformer.transformationTypeEnumMod.TransformationType.PLAIN_TO_CLASS & Double = js.native
+    /* 0 */ val PLAIN_TO_CLASS: typings.classTransformer.typesEnumsTransformationTypeDotenumMod.TransformationType.PLAIN_TO_CLASS & Double = js.native
   }
   
   inline def Type(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")().asInstanceOf[PropertyDecorator]

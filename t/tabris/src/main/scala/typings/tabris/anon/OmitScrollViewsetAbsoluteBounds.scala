@@ -2,6 +2,7 @@ package typings.tabris.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tabris.mod.AnimationOptions
+import typings.tabris.mod.Bounds
 import typings.tabris.mod.BoxDimensions
 import typings.tabris.mod.ChangeListeners
 import typings.tabris.mod.ColorValue
@@ -125,10 +126,10 @@ trait OmitScrollViewsetAbsoluteBounds extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `25`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.ScrollView]): typings.tabris.global.tabris.widgets.ScrollView
+  def _apply[Target](options: `26`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.ScrollView]): typings.tabris.global.tabris.widgets.ScrollView
   @JSName("_apply")
   var _apply_Original: js.Function2[
-    /* options */ `25`[typings.tabris.global.tabris.widgets.ScrollView], 
+    /* options */ `26`[typings.tabris.global.tabris.widgets.ScrollView], 
     /* rules */ RuleSet[typings.tabris.global.tabris.widgets.ScrollView], 
     typings.tabris.global.tabris.widgets.ScrollView
   ]
@@ -291,7 +292,7 @@ trait OmitScrollViewsetAbsoluteBounds extends StObject {
   @JSName("_wasSet")
   var _wasSet_Original: js.Function1[/* propertyName */ String, Boolean]
   
-  var absoluteBounds: typings.tabris.mod.Bounds
+  var absoluteBounds: Bounds
   
   def animate(properties: Opacity, options: AnimationOptions): js.Promise[Unit]
   @JSName("animate")
@@ -310,10 +311,10 @@ trait OmitScrollViewsetAbsoluteBounds extends StObject {
   var append_Original: js.Function1[/* repeated */ Widget[Any], typings.tabris.global.tabris.widgets.ScrollView]
   
   @JSName("apply")
-  def apply[Target](options: `25`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.ScrollView]): typings.tabris.global.tabris.widgets.ScrollView
+  def apply[Target](options: `26`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.ScrollView]): typings.tabris.global.tabris.widgets.ScrollView
   @JSName("apply")
   var apply_Original: js.Function2[
-    /* options */ `25`[typings.tabris.global.tabris.widgets.ScrollView], 
+    /* options */ `26`[typings.tabris.global.tabris.widgets.ScrollView], 
     /* rules */ RuleSet[typings.tabris.global.tabris.widgets.ScrollView], 
     typings.tabris.global.tabris.widgets.ScrollView
   ]
@@ -324,7 +325,7 @@ trait OmitScrollViewsetAbsoluteBounds extends StObject {
   
   var bottom: ConstraintValue
   
-  var bounds: typings.tabris.mod.Bounds
+  var bounds: Bounds
   
   var centerX: typings.tabris.mod.Offset | auto | `true`
   
@@ -575,20 +576,20 @@ trait OmitScrollViewsetAbsoluteBounds extends StObject {
   var right: ConstraintValue
   
   def scrollToX(offset: Double): typings.tabris.global.tabris.widgets.ScrollView
-  def scrollToX(offset: Double, options: `7`): typings.tabris.global.tabris.widgets.ScrollView
+  def scrollToX(offset: Double, options: `14`): typings.tabris.global.tabris.widgets.ScrollView
   @JSName("scrollToX")
   var scrollToX_Original: js.Function2[
     /* offset */ Double, 
-    /* options */ js.UndefOr[`7`], 
+    /* options */ js.UndefOr[`14`], 
     typings.tabris.global.tabris.widgets.ScrollView
   ]
   
   def scrollToY(offset: Double): typings.tabris.global.tabris.widgets.ScrollView
-  def scrollToY(offset: Double, options: `7`): typings.tabris.global.tabris.widgets.ScrollView
+  def scrollToY(offset: Double, options: `14`): typings.tabris.global.tabris.widgets.ScrollView
   @JSName("scrollToY")
   var scrollToY_Original: js.Function2[
     /* offset */ Double, 
-    /* options */ js.UndefOr[`7`], 
+    /* options */ js.UndefOr[`14`], 
     typings.tabris.global.tabris.widgets.ScrollView
   ]
   
@@ -636,7 +637,7 @@ object OmitScrollViewsetAbsoluteBounds {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `25`[typings.tabris.global.tabris.widgets.ScrollView], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.ScrollView]) => typings.tabris.global.tabris.widgets.ScrollView,
+    _apply: (/* options */ `26`[typings.tabris.global.tabris.widgets.ScrollView], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.ScrollView]) => typings.tabris.global.tabris.widgets.ScrollView,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -673,14 +674,14 @@ object OmitScrollViewsetAbsoluteBounds {
     _trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean,
     _triggerChangeEvent: (/* propertyName */ String, /* newEncodedValue */ Any) => Unit,
     _wasSet: /* propertyName */ String => Boolean,
-    absoluteBounds: typings.tabris.mod.Bounds,
+    absoluteBounds: Bounds,
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => typings.tabris.global.tabris.widgets.ScrollView,
     appendTo: /* parent */ Composite[Widget[Any]] => typings.tabris.global.tabris.widgets.ScrollView,
-    apply: (/* options */ `25`[typings.tabris.global.tabris.widgets.ScrollView], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.ScrollView]) => typings.tabris.global.tabris.widgets.ScrollView,
+    apply: (/* options */ `26`[typings.tabris.global.tabris.widgets.ScrollView], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.ScrollView]) => typings.tabris.global.tabris.widgets.ScrollView,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
-    bounds: typings.tabris.mod.Bounds,
+    bounds: Bounds,
     centerX: typings.tabris.mod.Offset | auto | `true`,
     centerY: typings.tabris.mod.Offset | auto | `true`,
     children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -766,8 +767,8 @@ object OmitScrollViewsetAbsoluteBounds {
     opacity: Double,
     parent: () => Composite[Widget[Any]],
     right: ConstraintValue,
-    scrollToX: (/* offset */ Double, /* options */ js.UndefOr[`7`]) => typings.tabris.global.tabris.widgets.ScrollView,
-    scrollToY: (/* offset */ Double, /* options */ js.UndefOr[`7`]) => typings.tabris.global.tabris.widgets.ScrollView,
+    scrollToX: (/* offset */ Double, /* options */ js.UndefOr[`14`]) => typings.tabris.global.tabris.widgets.ScrollView,
+    scrollToY: (/* offset */ Double, /* options */ js.UndefOr[`14`]) => typings.tabris.global.tabris.widgets.ScrollView,
     scrollXState: drag | rest | scroll,
     scrollYState: drag | rest | scroll,
     scrollbarVisible: Boolean,
@@ -804,7 +805,7 @@ object OmitScrollViewsetAbsoluteBounds {
     
     inline def set$trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "$trigger", js.Any.fromFunction2(value))
     
-    inline def setAbsoluteBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
+    inline def setAbsoluteBounds(value: Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
     
     inline def setAnimate(value: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit]): Self = StObject.set(x, "animate", js.Any.fromFunction2(value))
     
@@ -813,7 +814,7 @@ object OmitScrollViewsetAbsoluteBounds {
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => typings.tabris.global.tabris.widgets.ScrollView): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
     inline def setApply(
-      value: (/* options */ `25`[typings.tabris.global.tabris.widgets.ScrollView], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.ScrollView]) => typings.tabris.global.tabris.widgets.ScrollView
+      value: (/* options */ `26`[typings.tabris.global.tabris.widgets.ScrollView], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.ScrollView]) => typings.tabris.global.tabris.widgets.ScrollView
     ): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
@@ -824,7 +825,7 @@ object OmitScrollViewsetAbsoluteBounds {
     
     inline def setBottom(value: ConstraintValue): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    inline def setBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     inline def setCenterX(value: typings.tabris.mod.Offset | auto | `true`): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
@@ -1045,11 +1046,11 @@ object OmitScrollViewsetAbsoluteBounds {
     inline def setRight(value: ConstraintValue): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     inline def setScrollToX(
-      value: (/* offset */ Double, /* options */ js.UndefOr[`7`]) => typings.tabris.global.tabris.widgets.ScrollView
+      value: (/* offset */ Double, /* options */ js.UndefOr[`14`]) => typings.tabris.global.tabris.widgets.ScrollView
     ): Self = StObject.set(x, "scrollToX", js.Any.fromFunction2(value))
     
     inline def setScrollToY(
-      value: (/* offset */ Double, /* options */ js.UndefOr[`7`]) => typings.tabris.global.tabris.widgets.ScrollView
+      value: (/* offset */ Double, /* options */ js.UndefOr[`14`]) => typings.tabris.global.tabris.widgets.ScrollView
     ): Self = StObject.set(x, "scrollToY", js.Any.fromFunction2(value))
     
     inline def setScrollXState(value: drag | rest | scroll): Self = StObject.set(x, "scrollXState", value.asInstanceOf[js.Any])
@@ -1079,7 +1080,7 @@ object OmitScrollViewsetAbsoluteBounds {
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
     inline def set_apply(
-      value: (/* options */ `25`[typings.tabris.global.tabris.widgets.ScrollView], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.ScrollView]) => typings.tabris.global.tabris.widgets.ScrollView
+      value: (/* options */ `26`[typings.tabris.global.tabris.widgets.ScrollView], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.ScrollView]) => typings.tabris.global.tabris.widgets.ScrollView
     ): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))

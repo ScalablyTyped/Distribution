@@ -1,7 +1,7 @@
 
 # Scala.js typings for theme-ui__core
 
-Typings are for version 0.15.1
+Typings are for version 0.15.3
 
 ## Library description:
 [![Minified Size on Bundlephobia](https://badgen.net/bundlephobia/minzip/@theme-ui/core)](https://bundlephobia.com/package/@theme-ui/core)

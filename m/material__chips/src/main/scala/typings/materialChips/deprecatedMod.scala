@@ -10,6 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object deprecatedMod {
   
+  @JSImport("@material/chips/deprecated", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialChips.deprecatedChipSetMod.default {
+    def this(adapter: PartialMDCChipSetAdapterAnnounceMessage) = this()
+  }
+  
   @JSImport("@material/chips/deprecated", "MDCChip")
   @js.native
   open class MDCChip protected ()
@@ -69,11 +76,11 @@ object deprecatedMod {
   @JSImport("@material/chips/deprecated", "MDCChipTrailingAction")
   @js.native
   open class MDCChipTrailingAction protected ()
-    extends typings.materialChips.trailingactionMod.MDCChipTrailingAction {
+    extends typings.materialChips.deprecatedTrailingactionMod.MDCChipTrailingAction {
     def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
-      foundation: typings.materialChips.trailingactionFoundationMod.MDCChipTrailingActionFoundation,
+      foundation: typings.materialChips.deprecatedTrailingactionFoundationMod.MDCChipTrailingActionFoundation,
       args: Any*
     ) = this()
   }
@@ -84,13 +91,13 @@ object deprecatedMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: typings.std.Element): typings.materialChips.trailingactionComponentMod.MDCChipTrailingAction = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.trailingactionComponentMod.MDCChipTrailingAction]
+    inline def attachTo(root: typings.std.Element): typings.materialChips.deprecatedTrailingactionComponentMod.MDCChipTrailingAction = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.deprecatedTrailingactionComponentMod.MDCChipTrailingAction]
   }
   
   @JSImport("@material/chips/deprecated", "MDCChipTrailingActionFoundation")
   @js.native
   open class MDCChipTrailingActionFoundation ()
-    extends typings.materialChips.trailingactionMod.MDCChipTrailingActionFoundation {
+    extends typings.materialChips.deprecatedTrailingactionMod.MDCChipTrailingActionFoundation {
     def this(adapter: PartialMDCChipTrailingAct) = this()
   }
   

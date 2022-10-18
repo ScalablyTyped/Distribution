@@ -193,6 +193,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object karmaAugmentingMod {
     
     trait ConfigOptions extends StObject {

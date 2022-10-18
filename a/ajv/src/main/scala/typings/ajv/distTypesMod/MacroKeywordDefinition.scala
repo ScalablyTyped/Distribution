@@ -1,6 +1,6 @@
 package typings.ajv.distTypesMod
 
-import typings.ajv.compileMod.SchemaCxt
+import typings.ajv.distCompileMod.SchemaCxt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

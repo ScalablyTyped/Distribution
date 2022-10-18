@@ -1,6 +1,6 @@
 package typings.aframe.mod.THREE
 
-import typings.three.eventDispatcherMod.Event
+import typings.three.srcCoreEventDispatcherMod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,5 +14,5 @@ open class BoxHelper protected ()
     * @param object
     * @param [color=0xffff00]
     */
-  def this(`object`: typings.three.object3DMod.Object3D[Event]) = this()
+  def this(`object`: typings.three.srcCoreObject3DMod.Object3D[Event]) = this()
 }

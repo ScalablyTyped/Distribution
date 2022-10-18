@@ -1,7 +1,7 @@
 package typings.reactNavigationRouters.anon
 
-import typings.reactNavigationRouters.commonActionsMod.Action
-import typings.reactNavigationRouters.commonActionsMod.ResetState
+import typings.reactNavigationRouters.libTypescriptSrcCommonActionsMod.Action
+import typings.reactNavigationRouters.libTypescriptSrcCommonActionsMod.ResetState
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.RESET
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

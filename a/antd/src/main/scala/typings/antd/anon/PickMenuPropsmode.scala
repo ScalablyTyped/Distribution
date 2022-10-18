@@ -1,6 +1,6 @@
 package typings.antd.anon
 
-import typings.rcMenu.interfaceMod.MenuMode
+import typings.rcMenu.esInterfaceMod.MenuMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

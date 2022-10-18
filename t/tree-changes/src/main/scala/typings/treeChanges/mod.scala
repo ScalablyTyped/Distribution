@@ -1,7 +1,7 @@
 package typings.treeChanges
 
-import typings.treeChanges.typesMod.Data
-import typings.treeChanges.typesMod.TreeChanges
+import typings.treeChanges.distTypesMod.Data
+import typings.treeChanges.distTypesMod.TreeChanges
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

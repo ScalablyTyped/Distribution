@@ -9,22 +9,22 @@ trait `200304403422503` extends StObject {
   /** Response */
   var `200`: ContentApplicationjsonIncompleteresultsBooleanItemsArrayTotalcountNumber
   
-  var `304`: Any
+  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any
   
-  var `403`: Content55
+  var `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any
   
-  var `422`: Content421
+  var `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
   
-  var `503`: ContentApplicationjsonCodeDocumentationurlMessage
+  var `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
 }
 object `200304403422503` {
   
   inline def apply(
     `200`: ContentApplicationjsonIncompleteresultsBooleanItemsArrayTotalcountNumber,
-    `304`: Any,
-    `403`: Content55,
-    `422`: Content421,
-    `503`: ContentApplicationjsonCodeDocumentationurlMessage
+    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any,
+    `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any,
+    `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any,
+    `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
   ): `200304403422503` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -39,12 +39,20 @@ object `200304403422503` {
     
     inline def set200(value: ContentApplicationjsonIncompleteresultsBooleanItemsArrayTotalcountNumber): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set304(value: Any): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
+    inline def set304(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any
+    ): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content55): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any
+    ): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content421): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
+    ): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
     
-    inline def set503(value: ContentApplicationjsonCodeDocumentationurlMessage): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
+    inline def set503(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
+    ): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }
 }

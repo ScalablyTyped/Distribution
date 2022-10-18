@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates an identity matrix.
   */
 open class Matrix3 ()
-  extends typings.three.threeMod.Matrix3
+  extends typings.three.srcThreeMod.Matrix3

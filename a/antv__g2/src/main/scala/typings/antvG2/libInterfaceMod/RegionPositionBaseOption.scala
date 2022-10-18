@@ -1,6 +1,6 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvGBase.typesMod.ShapeAttrs
+import typings.antvGBase.libTypesMod.ShapeAttrs
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.wixWixUiIconsCommon
 
-import typings.wixWixUiIconsCommon.typesTypesMod.IconMetadata
+import typings.wixWixUiIconsCommon.distTypesTypesMod.IconMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

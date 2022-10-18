@@ -1,30 +1,20 @@
 package typings.dateFnsTz
 
-import org.scalablytyped.runtime.Shortcut
+import typings.dateFnsTz.mod.OptionsWithTZ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object zonedTimeToUtcMod extends Shortcut {
+object zonedTimeToUtcMod {
   
-  @JSImport("date-fns-tz/esm/fp/zonedTimeToUtc", JSImport.Namespace)
+  inline def apply(date: String, timeZone: String): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  inline def apply(date: String, timeZone: String, options: OptionsWithTZ): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  inline def apply(date: js.Date, timeZone: String): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  inline def apply(date: js.Date, timeZone: String, options: OptionsWithTZ): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  inline def apply(date: Double, timeZone: String): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  inline def apply(date: Double, timeZone: String, options: OptionsWithTZ): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  
+  @JSImport("date-fns-tz/zonedTimeToUtc", JSImport.Namespace)
   @js.native
-  val ^ : CurriedFn2[String, js.Date | String | Double, js.Date] = js.native
-  
-  object default extends Shortcut {
-    
-    @JSImport("date-fns-tz/esm/fp/zonedTimeToUtc", JSImport.Default)
-    @js.native
-    val ^ : CurriedFn2[String, js.Date | String | Double, js.Date] = js.native
-    
-    type _To = CurriedFn2[String, js.Date | String | Double, js.Date]
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn2[String, js.Date | String | Double, js.Date] = ^
-  }
-  
-  type _To = CurriedFn2[String, js.Date | String | Double, js.Date]
-  
-  /* This means you don't have to write `^`, but can instead just say `zonedTimeToUtcMod.foo` */
-  override def _to: CurriedFn2[String, js.Date | String | Double, js.Date] = ^
+  val ^ : js.Any = js.native
 }

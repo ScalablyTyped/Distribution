@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the physical location of a device in its enclosure. */
-@JSGlobal("Windows.Devices.Enumeration.EnclosureLocation")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.EnclosureLocation")
 @js.native
-abstract class EnclosureLocation ()
+open class EnclosureLocation ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.EnclosureLocation {
   

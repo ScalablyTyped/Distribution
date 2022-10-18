@@ -3,7 +3,7 @@ package typings.chartJs.mod
 import typings.chartJs.anon.X
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
-import typings.chartJs.geometricMod.ChartArea
+import typings.chartJs.typesGeometricMod.ChartArea
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

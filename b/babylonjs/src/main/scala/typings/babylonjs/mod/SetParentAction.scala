@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SetParentAction")
 @js.native
 open class SetParentAction protected ()
-  extends typings.babylonjs.legacyMod.SetParentAction {
+  extends typings.babylonjs.legacyLegacyMod.SetParentAction {
   /**
     * Instantiate the action
     * @param triggerOptions defines the trigger options
@@ -16,5 +16,10 @@ open class SetParentAction protected ()
     * @param condition defines the trigger related conditions
     */
   def this(triggerOptions: Any, target: Any, parent: Any) = this()
-  def this(triggerOptions: Any, target: Any, parent: Any, condition: typings.babylonjs.conditionMod.Condition) = this()
+  def this(
+    triggerOptions: Any,
+    target: Any,
+    parent: Any,
+    condition: typings.babylonjs.actionsConditionMod.Condition
+  ) = this()
 }

@@ -7,8 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<FormSelectOptions> * / any */ trait FormSelect extends StObject {
+trait FormSelect
+  extends StObject
+     with Component[FormSelectOptions] {
   
   /**
     * Instance of the dropdown plugin for this select
@@ -43,14 +44,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FormSelect {
   
   inline def apply(
+    destroy: () => Unit,
     dropdown: Dropdown,
     dropdownOptions: HTMLUListElement,
+    el: Element,
     getSelectedValues: () => js.Array[String],
     input: HTMLInputElement,
     isMultiple: Boolean,
+    options: FormSelectOptions,
     wrapper: Element
   ): FormSelect = {
-    val __obj = js.Dynamic.literal(dropdown = dropdown.asInstanceOf[js.Any], dropdownOptions = dropdownOptions.asInstanceOf[js.Any], getSelectedValues = js.Any.fromFunction0(getSelectedValues), input = input.asInstanceOf[js.Any], isMultiple = isMultiple.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), dropdown = dropdown.asInstanceOf[js.Any], dropdownOptions = dropdownOptions.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any], getSelectedValues = js.Any.fromFunction0(getSelectedValues), input = input.asInstanceOf[js.Any], isMultiple = isMultiple.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormSelect]
   }
   

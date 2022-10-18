@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.menuMod.MenuProps
+import typings.primereact.menuMenuMod.MenuProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Menu")
 @js.native
 open class Menu protected ()
-  extends typings.primereact.menuMod.Menu {
+  extends typings.primereact.menuMenuMod.Menu {
   def this(props: MenuProps) = this()
   /**
     * @deprecated

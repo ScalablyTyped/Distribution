@@ -1,7 +1,7 @@
 package typings.rcVirtualList
 
 import typings.rcVirtualList.anon.Ref
-import typings.rcVirtualList.listMod.ListProps
+import typings.rcVirtualList.esListMod.ListProps
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

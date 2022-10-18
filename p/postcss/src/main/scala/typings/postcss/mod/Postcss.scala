@@ -7,16 +7,16 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable6
 import typings.postcss.anon.PickProcessOptionsmapfrom
 import typings.postcss.anon.ToString
-import typings.postcss.atRuleMod.AtRuleProps
-import typings.postcss.commentMod.CommentProps
-import typings.postcss.cssSyntaxErrorMod.RangePosition
-import typings.postcss.declarationMod.DeclarationProps
-import typings.postcss.documentMod.DocumentProps
-import typings.postcss.nodeMod.AnyNode
-import typings.postcss.resultMod.ResultOptions
-import typings.postcss.rootMod.RootProps
-import typings.postcss.ruleMod.RuleProps
-import typings.postcss.warningMod.WarningOptions
+import typings.postcss.libAtRuleMod.AtRuleProps
+import typings.postcss.libCommentMod.CommentProps
+import typings.postcss.libCssSyntaxErrorMod.RangePosition
+import typings.postcss.libDeclarationMod.DeclarationProps
+import typings.postcss.libDocumentMod.DocumentProps
+import typings.postcss.libNodeMod.AnyNode
+import typings.postcss.libResultMod.ResultOptions
+import typings.postcss.libRootMod.RootProps
+import typings.postcss.libRuleMod.RuleProps
+import typings.postcss.libWarningMod.WarningOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,15 +39,15 @@ trait Postcss extends StObject {
     * @param plugins PostCSS plugins.
     * @return Processor to process multiple CSS.
     */
-  def apply(): typings.postcss.processorMod.default = js.native
-  def apply(plugins: AcceptedPlugin*): typings.postcss.processorMod.default = js.native
-  def apply(plugins: js.Array[AcceptedPlugin]): typings.postcss.processorMod.default = js.native
+  def apply(): typings.postcss.libProcessorMod.default = js.native
+  def apply(plugins: AcceptedPlugin*): typings.postcss.libProcessorMod.default = js.native
+  def apply(plugins: js.Array[AcceptedPlugin]): typings.postcss.libProcessorMod.default = js.native
   
-  var AtRule: Instantiable1[/* defaults */ js.UndefOr[AtRuleProps], typings.postcss.atRuleMod.default] = js.native
+  var AtRule: Instantiable1[/* defaults */ js.UndefOr[AtRuleProps], typings.postcss.libAtRuleMod.default] = js.native
   
-  var Comment: Instantiable1[/* defaults */ js.UndefOr[CommentProps], typings.postcss.commentMod.default] = js.native
+  var Comment: Instantiable1[/* defaults */ js.UndefOr[CommentProps], typings.postcss.libCommentMod.default] = js.native
   
-  var Container: Instantiable0[typings.postcss.containerMod.default[typings.postcss.nodeMod.default]] = js.native
+  var Container: Instantiable0[typings.postcss.libContainerMod.default[typings.postcss.libNodeMod.default]] = js.native
   
   var CssSyntaxError: Instantiable6[
     /* message */ String, 
@@ -56,37 +56,37 @@ trait Postcss extends StObject {
     /* source */ js.UndefOr[String], 
     /* file */ js.UndefOr[String], 
     /* plugin */ js.UndefOr[String], 
-    typings.postcss.cssSyntaxErrorMod.default
+    typings.postcss.libCssSyntaxErrorMod.default
   ] = js.native
   
   var Declaration: Instantiable1[
     /* defaults */ js.UndefOr[DeclarationProps], 
-    typings.postcss.declarationMod.default
+    typings.postcss.libDeclarationMod.default
   ] = js.native
   
   var Input: Instantiable2[
     /* css */ String, 
     /* opts */ js.UndefOr[ProcessOptions], 
-    typings.postcss.inputMod.default
+    typings.postcss.libInputMod.default
   ] = js.native
   
-  var Node: Instantiable1[/* defaults */ js.UndefOr[js.Object], typings.postcss.nodeMod.default] = js.native
+  var Node: Instantiable1[/* defaults */ js.UndefOr[js.Object], typings.postcss.libNodeMod.default] = js.native
   
   var Result: Instantiable3[
-    /* processor */ typings.postcss.processorMod.default, 
+    /* processor */ typings.postcss.libProcessorMod.default, 
     /* root */ Root_ | Document, 
     /* opts */ ResultOptions, 
-    typings.postcss.resultMod.default
+    typings.postcss.libResultMod.default
   ] = js.native
   
-  var Root: Instantiable1[/* defaults */ js.UndefOr[RootProps], typings.postcss.rootMod.default] = js.native
+  var Root: Instantiable1[/* defaults */ js.UndefOr[RootProps], typings.postcss.libRootMod.default] = js.native
   
-  var Rule: Instantiable1[/* defaults */ js.UndefOr[RuleProps], typings.postcss.ruleMod.default] = js.native
+  var Rule: Instantiable1[/* defaults */ js.UndefOr[RuleProps], typings.postcss.libRuleMod.default] = js.native
   
   var Warning: Instantiable2[
     /* text */ String, 
     /* opts */ js.UndefOr[WarningOptions], 
-    typings.postcss.warningMod.default
+    typings.postcss.libWarningMod.default
   ] = js.native
   
   /**
@@ -95,8 +95,8 @@ trait Postcss extends StObject {
     * @param defaults Properties for the new node.
     * @return New at-rule node.
     */
-  def atRule(): typings.postcss.atRuleMod.default = js.native
-  def atRule(defaults: AtRuleProps): typings.postcss.atRuleMod.default = js.native
+  def atRule(): typings.postcss.libAtRuleMod.default = js.native
+  def atRule(defaults: AtRuleProps): typings.postcss.libAtRuleMod.default = js.native
   
   /**
     * Creates a new `Comment` node.
@@ -104,8 +104,8 @@ trait Postcss extends StObject {
     * @param defaults Properties for the new node.
     * @return New comment node
     */
-  def comment(): typings.postcss.commentMod.default = js.native
-  def comment(defaults: CommentProps): typings.postcss.commentMod.default = js.native
+  def comment(): typings.postcss.libCommentMod.default = js.native
+  def comment(defaults: CommentProps): typings.postcss.libCommentMod.default = js.native
   
   /**
     * Creates a new `Declaration` node.
@@ -113,8 +113,8 @@ trait Postcss extends StObject {
     * @param defaults Properties for the new node.
     * @return New declaration node.
     */
-  def decl(): typings.postcss.declarationMod.default = js.native
-  def decl(defaults: DeclarationProps): typings.postcss.declarationMod.default = js.native
+  def decl(): typings.postcss.libDeclarationMod.default = js.native
+  def decl(defaults: DeclarationProps): typings.postcss.libDeclarationMod.default = js.native
   
   /**
     * Creates a new `Document` node.
@@ -122,8 +122,8 @@ trait Postcss extends StObject {
     * @param defaults Properties for the new node.
     * @return New document node.
     */
-  def document(): typings.postcss.documentMod.default = js.native
-  def document(defaults: DocumentProps): typings.postcss.documentMod.default = js.native
+  def document(): typings.postcss.libDocumentMod.default = js.native
+  def document(defaults: DocumentProps): typings.postcss.libDocumentMod.default = js.native
   
   /**
     * Rehydrate a JSON AST (from `Node#toJSON`) back into the AST classes.
@@ -134,7 +134,7 @@ trait Postcss extends StObject {
     * const root2  = postcss.fromJSON(json)
     * ```
     */
-  def fromJSON(data: js.Array[js.Object]): js.Array[typings.postcss.nodeMod.default] = js.native
+  def fromJSON(data: js.Array[js.Object]): js.Array[typings.postcss.libNodeMod.default] = js.native
   /**
     * Rehydrate a JSON AST (from `Node#toJSON`) back into the AST classes.
     *
@@ -144,7 +144,7 @@ trait Postcss extends StObject {
     * const root2  = postcss.fromJSON(json)
     * ```
     */
-  def fromJSON(data: js.Object): typings.postcss.nodeMod.default = js.native
+  def fromJSON(data: js.Object): typings.postcss.libNodeMod.default = js.native
   /**
     * Rehydrate a JSON AST (from `Node#toJSON`) back into the AST classes.
     *
@@ -160,7 +160,7 @@ trait Postcss extends StObject {
   /**
     * Contains the `list` module.
     */
-  var list: typings.postcss.listMod.List = js.native
+  var list: typings.postcss.libListMod.List = js.native
   
   /**
     * Parses source css and returns a new `Root` or `Document` node,
@@ -173,10 +173,10 @@ trait Postcss extends StObject {
     * root1.append(root2).toResult().css
     * ```
     */
-  def parse(css: String): typings.postcss.rootMod.default = js.native
-  def parse(css: String, opts: PickProcessOptionsmapfrom): typings.postcss.rootMod.default = js.native
-  def parse(css: ToString): typings.postcss.rootMod.default = js.native
-  def parse(css: ToString, opts: PickProcessOptionsmapfrom): typings.postcss.rootMod.default = js.native
+  def parse(css: String): typings.postcss.libRootMod.default = js.native
+  def parse(css: String, opts: PickProcessOptionsmapfrom): typings.postcss.libRootMod.default = js.native
+  def parse(css: ToString): typings.postcss.libRootMod.default = js.native
+  def parse(css: ToString, opts: PickProcessOptionsmapfrom): typings.postcss.libRootMod.default = js.native
   /**
     * Parses source css and returns a new `Root` or `Document` node,
     * which contains the source CSS nodes.
@@ -189,7 +189,7 @@ trait Postcss extends StObject {
     * ```
     */
   @JSName("parse")
-  var parse_Original: Parser[typings.postcss.rootMod.default] = js.native
+  var parse_Original: Parser[typings.postcss.libRootMod.default] = js.native
   
   /**
     * Creates a new `Root` node.
@@ -197,8 +197,8 @@ trait Postcss extends StObject {
     * @param defaults Properties for the new node.
     * @return New root node.
     */
-  def root(): typings.postcss.rootMod.default = js.native
-  def root(defaults: RootProps): typings.postcss.rootMod.default = js.native
+  def root(): typings.postcss.libRootMod.default = js.native
+  def root(defaults: RootProps): typings.postcss.libRootMod.default = js.native
   
   /**
     * Creates a new `Rule` node.
@@ -206,8 +206,8 @@ trait Postcss extends StObject {
     * @param default Properties for the new node.
     * @return New rule node.
     */
-  def rule(): typings.postcss.ruleMod.default = js.native
-  def rule(defaults: RuleProps): typings.postcss.ruleMod.default = js.native
+  def rule(): typings.postcss.libRuleMod.default = js.native
+  def rule(defaults: RuleProps): typings.postcss.libRuleMod.default = js.native
   
   /**
     * Default function to convert a node tree into a CSS string.

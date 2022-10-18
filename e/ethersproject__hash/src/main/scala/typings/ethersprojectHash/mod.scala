@@ -18,7 +18,7 @@ object mod {
   @JSImport("@ethersproject/hash", "_TypedDataEncoder")
   @js.native
   open class TypedDataEncoder protected ()
-    extends typings.ethersprojectHash.typedDataMod.TypedDataEncoder {
+    extends typings.ethersprojectHash.libTypedDataMod.TypedDataEncoder {
     def this(types: Record[String, js.Array[TypedDataField]]) = this()
   }
   /* static members */
@@ -34,7 +34,7 @@ object mod {
       value: Record[String, Any]
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(domain.asInstanceOf[js.Any], types.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def from(types: Record[String, js.Array[TypedDataField]]): typings.ethersprojectHash.typedDataMod.TypedDataEncoder = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(types.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectHash.typedDataMod.TypedDataEncoder]
+    inline def from(types: Record[String, js.Array[TypedDataField]]): typings.ethersprojectHash.libTypedDataMod.TypedDataEncoder = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(types.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectHash.libTypedDataMod.TypedDataEncoder]
     
     inline def getPayload(
       domain: TypedDataDomain,

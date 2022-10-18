@@ -7,26 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientDatafusionStrings {
   
   @js.native
-  sealed trait Instance extends StObject
-  inline def Instance: Instance = "Instance".asInstanceOf[Instance]
-  
-  @js.native
-  sealed trait Location extends StObject
-  inline def Location: Location = "Location".asInstanceOf[Location]
-  
-  @js.native
-  sealed trait Operation extends StObject
-  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
-  
-  @js.native
-  sealed trait OperationMetadata extends StObject
-  inline def OperationMetadata: OperationMetadata = "OperationMetadata".asInstanceOf[OperationMetadata]
-  
-  @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
   sealed trait datafusion extends StObject
   inline def datafusion: datafusion = "datafusion".asInstanceOf[datafusion]
   

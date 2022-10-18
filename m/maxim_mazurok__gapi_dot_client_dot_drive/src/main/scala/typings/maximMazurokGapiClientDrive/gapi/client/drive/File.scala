@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
-import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientDrive.anon.Aperture
 import typings.maximMazurokGapiClientDrive.anon.CanAcceptOwnership
 import typings.maximMazurokGapiClientDrive.anon.DurationMillis
@@ -20,9 +19,7 @@ trait File extends StObject {
     * token obtained with a OAuth 2 client ID. You cannot use an API key to retrieve private properties.
     */
   var appProperties: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Capabilities the current user has on this file. Each capability corresponds to a fine-grained action that a user may take. */
@@ -51,9 +48,7 @@ trait File extends StObject {
   
   /** Links for exporting Docs Editors files to specific formats. */
   var exportLinks: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The final component of fullFileExtension. This is only available for files with binary content in Google Drive. */
@@ -160,9 +155,7 @@ trait File extends StObject {
     * Entries with null values are cleared in update and copy requests.
     */
   var properties: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The number of storage quota bytes used by the file. This includes the head revision as well as previous revisions with keepForever enabled. */
@@ -251,9 +244,7 @@ object File {
   extension [Self <: File](x: Self) {
     
     inline def setAppProperties(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "appProperties", value.asInstanceOf[js.Any])
     
     inline def setAppPropertiesUndefined: Self = StObject.set(x, "appProperties", js.undefined)
@@ -293,9 +284,7 @@ object File {
     inline def setExplicitlyTrashedUndefined: Self = StObject.set(x, "explicitlyTrashed", js.undefined)
     
     inline def setExportLinks(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "exportLinks", value.asInstanceOf[js.Any])
     
     inline def setExportLinksUndefined: Self = StObject.set(x, "exportLinks", js.undefined)
@@ -413,9 +402,7 @@ object File {
     inline def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setProperties(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.File & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)

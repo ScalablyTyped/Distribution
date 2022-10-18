@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for an app navigation event. */
-@JSGlobal("Windows.UI.WebUI.WebUINavigatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUINavigatedEventArgs")
 @js.native
-abstract class WebUINavigatedEventArgs ()
+open class WebUINavigatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUINavigatedEventArgs {
   

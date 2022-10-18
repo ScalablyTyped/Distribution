@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Mask extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.antvGLite.frustumMod.Mask & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.antvGLite.distShapesFrustumMod.Mask & Double] = js.native
   
-  /* 2147483647 */ val INDETERMINATE: typings.antvGLite.frustumMod.Mask.INDETERMINATE & Double = js.native
+  /* 2147483647 */ val INDETERMINATE: typings.antvGLite.distShapesFrustumMod.Mask.INDETERMINATE & Double = js.native
   
-  /* 0 */ val INSIDE: typings.antvGLite.frustumMod.Mask.INSIDE & Double = js.native
+  /* 0 */ val INSIDE: typings.antvGLite.distShapesFrustumMod.Mask.INSIDE & Double = js.native
   
-  /* 4294967295.0 */ val OUTSIDE: typings.antvGLite.frustumMod.Mask.OUTSIDE & Double = js.native
+  /* 4294967295.0 */ val OUTSIDE: typings.antvGLite.distShapesFrustumMod.Mask.OUTSIDE & Double = js.native
 }

@@ -31,37 +31,37 @@ object anon {
   
   trait Id extends StObject {
     
-    /** Identificador de data_type do meio de pagamento. */
-    var id: String
+    /** Identificador do método de envio. */
+    var id: Double
   }
   object Id {
     
-    inline def apply(id: String): Id = {
+    inline def apply(id: Double): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
     extension [Self <: Id](x: Self) {
       
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
-  trait IdNumber extends StObject {
+  trait IdString extends StObject {
     
-    /** Identificador de preço diferenciado. */
-    var id: Double
+    /** Identificador de data_type do meio de pagamento. */
+    var id: String
   }
-  object IdNumber {
+  object IdString {
     
-    inline def apply(id: Double): IdNumber = {
+    inline def apply(id: String): IdString = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IdNumber]
+      __obj.asInstanceOf[IdString]
     }
     
-    extension [Self <: IdNumber](x: Self) {
+    extension [Self <: IdString](x: Self) {
       
-      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   

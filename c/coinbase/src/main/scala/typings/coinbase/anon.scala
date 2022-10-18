@@ -94,16 +94,25 @@ object anon {
   
   trait Id extends StObject {
     
+    /**
+      * Abbreviation e.g. "USD" or "BTC"
+      */
     var id: String
     
-    var message: String
+    /**
+      * Floating-point number in a string
+      */
+    var min_size: String
     
-    var url: String
+    /**
+      * Full name e.g. "United Arab Emirates Dirham"
+      */
+    var name: String
   }
   object Id {
     
-    inline def apply(id: String, message: String, url: String): Id = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(id: String, min_size: String, name: String): Id = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], min_size = min_size.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
@@ -111,9 +120,9 @@ object anon {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMin_size(value: String): Self = StObject.set(x, "min_size", value.asInstanceOf[js.Any])
       
-      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,37 +151,28 @@ object anon {
     }
   }
   
-  trait Minsize extends StObject {
+  trait Message extends StObject {
     
-    /**
-      * Abbreviation e.g. "USD" or "BTC"
-      */
     var id: String
     
-    /**
-      * Floating-point number in a string
-      */
-    var min_size: String
+    var message: String
     
-    /**
-      * Full name e.g. "United Arab Emirates Dirham"
-      */
-    var name: String
+    var url: String
   }
-  object Minsize {
+  object Message {
     
-    inline def apply(id: String, min_size: String, name: String): Minsize = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], min_size = min_size.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Minsize]
+    inline def apply(id: String, message: String, url: String): Message = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Minsize](x: Self) {
+    extension [Self <: Message](x: Self) {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setMin_size(value: String): Self = StObject.set(x, "min_size", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

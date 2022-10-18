@@ -2,58 +2,91 @@ package typings.gitlab.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.gitlab.baseServiceMod.BaseServiceOptions
-import typings.gitlab.servicesMod.EpicNotes
-import typings.gitlab.servicesMod.Epics
-import typings.gitlab.servicesMod.GroupAccessRequests
-import typings.gitlab.servicesMod.GroupBadges
-import typings.gitlab.servicesMod.GroupCustomAttributes
-import typings.gitlab.servicesMod.GroupIssueBoards
-import typings.gitlab.servicesMod.GroupLabels
-import typings.gitlab.servicesMod.GroupMembers
-import typings.gitlab.servicesMod.GroupMilestones
-import typings.gitlab.servicesMod.GroupProjects
-import typings.gitlab.servicesMod.GroupVariables
-import typings.gitlab.servicesMod.Groups
+import typings.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
+import typings.gitlab.distTypesCoreServicesMod.EpicNotes
+import typings.gitlab.distTypesCoreServicesMod.Epics
+import typings.gitlab.distTypesCoreServicesMod.GroupAccessRequests
+import typings.gitlab.distTypesCoreServicesMod.GroupBadges
+import typings.gitlab.distTypesCoreServicesMod.GroupCustomAttributes
+import typings.gitlab.distTypesCoreServicesMod.GroupIssueBoards
+import typings.gitlab.distTypesCoreServicesMod.GroupLabels
+import typings.gitlab.distTypesCoreServicesMod.GroupMembers
+import typings.gitlab.distTypesCoreServicesMod.GroupMilestones
+import typings.gitlab.distTypesCoreServicesMod.GroupProjects
+import typings.gitlab.distTypesCoreServicesMod.GroupVariables
+import typings.gitlab.distTypesCoreServicesMod.Groups
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EpicDiscussions extends StObject {
   
-  var EpicDiscussions: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.EpicDiscussions]
+  var EpicDiscussions: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distTypesCoreServicesMod.EpicDiscussions
+  ]
   
-  var EpicIssues: Instantiable0[typings.gitlab.servicesMod.EpicIssues]
+  var EpicIssues: Instantiable0[typings.gitlab.distTypesCoreServicesMod.EpicIssues]
   
-  var EpicNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.EpicNotes]
+  var EpicNotes: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distTypesCoreServicesMod.EpicNotes
+  ]
   
-  var Epics: Instantiable0[typings.gitlab.servicesMod.Epics]
+  var Epics: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Epics]
   
-  var GroupAccessRequests: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupAccessRequests]
+  var GroupAccessRequests: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distTypesCoreServicesMod.GroupAccessRequests
+  ]
   
-  var GroupBadges: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupBadges]
+  var GroupBadges: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distTypesCoreServicesMod.GroupBadges
+  ]
   
-  var GroupCustomAttributes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupCustomAttributes]
+  var GroupCustomAttributes: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distTypesCoreServicesMod.GroupCustomAttributes
+  ]
   
-  var GroupIssueBoards: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupIssueBoards]
+  var GroupIssueBoards: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distTypesCoreServicesMod.GroupIssueBoards
+  ]
   
-  var GroupLabels: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupLabels]
+  var GroupLabels: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distTypesCoreServicesMod.GroupLabels
+  ]
   
-  var GroupMembers: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupMembers]
+  var GroupMembers: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distTypesCoreServicesMod.GroupMembers
+  ]
   
-  var GroupMilestones: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupMilestones]
+  var GroupMilestones: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distTypesCoreServicesMod.GroupMilestones
+  ]
   
-  var GroupProjects: Instantiable0[typings.gitlab.servicesMod.GroupProjects]
+  var GroupProjects: Instantiable0[typings.gitlab.distTypesCoreServicesMod.GroupProjects]
   
-  var GroupVariables: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.GroupVariables]
+  var GroupVariables: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distTypesCoreServicesMod.GroupVariables
+  ]
   
-  var Groups: Instantiable0[typings.gitlab.servicesMod.Groups]
+  var Groups: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Groups]
 }
 object EpicDiscussions {
   
   inline def apply(
-    EpicDiscussions: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.EpicDiscussions],
-    EpicIssues: Instantiable0[typings.gitlab.servicesMod.EpicIssues],
+    EpicDiscussions: Instantiable1[
+      /* options */ BaseServiceOptions, 
+      typings.gitlab.distTypesCoreServicesMod.EpicDiscussions
+    ],
+    EpicIssues: Instantiable0[typings.gitlab.distTypesCoreServicesMod.EpicIssues],
     EpicNotes: Instantiable1[/* options */ BaseServiceOptions, EpicNotes],
     Epics: Instantiable0[Epics],
     GroupAccessRequests: Instantiable1[/* options */ BaseServiceOptions, GroupAccessRequests],
@@ -73,9 +106,14 @@ object EpicDiscussions {
   
   extension [Self <: EpicDiscussions](x: Self) {
     
-    inline def setEpicDiscussions(value: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.EpicDiscussions]): Self = StObject.set(x, "EpicDiscussions", value.asInstanceOf[js.Any])
+    inline def setEpicDiscussions(
+      value: Instantiable1[
+          /* options */ BaseServiceOptions, 
+          typings.gitlab.distTypesCoreServicesMod.EpicDiscussions
+        ]
+    ): Self = StObject.set(x, "EpicDiscussions", value.asInstanceOf[js.Any])
     
-    inline def setEpicIssues(value: Instantiable0[typings.gitlab.servicesMod.EpicIssues]): Self = StObject.set(x, "EpicIssues", value.asInstanceOf[js.Any])
+    inline def setEpicIssues(value: Instantiable0[typings.gitlab.distTypesCoreServicesMod.EpicIssues]): Self = StObject.set(x, "EpicIssues", value.asInstanceOf[js.Any])
     
     inline def setEpicNotes(value: Instantiable1[/* options */ BaseServiceOptions, EpicNotes]): Self = StObject.set(x, "EpicNotes", value.asInstanceOf[js.Any])
     

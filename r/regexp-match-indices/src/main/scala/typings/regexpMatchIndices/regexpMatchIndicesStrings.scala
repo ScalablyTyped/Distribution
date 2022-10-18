@@ -1,6 +1,6 @@
 package typings.regexpMatchIndices
 
-import typings.regexpMatchIndices.astMod.AstNode
+import typings.regexpMatchIndices.regexpTreeAstMod.AstNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

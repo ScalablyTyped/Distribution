@@ -2,11 +2,11 @@ package typings.globby
 
 import typings.fastGlob.anon.PartialFileSystemAdapter
 import typings.fastGlob.mod.Entry
-import typings.fastGlob.typesMod.Pattern
+import typings.fastGlob.outTypesMod.Pattern
 import typings.globby.anon.Extensions
 import typings.globby.anon.OptionsobjectModetrue
-import typings.node.nodeUrlMod.URL
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.nodeColonurlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,10 +34,10 @@ object mod {
   inline def globby(patterns: js.Array[String], options: OptionsobjectModetrue): js.Promise[js.Array[GlobEntry]] = (^.asInstanceOf[js.Dynamic].applyDynamic("globby")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[GlobEntry]]]
   inline def globby(patterns: js.Array[String], options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("globby")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  inline def globbyStream(patterns: String): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("globbyStream")(patterns.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
-  inline def globbyStream(patterns: String, options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("globbyStream")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
-  inline def globbyStream(patterns: js.Array[String]): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("globbyStream")(patterns.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
-  inline def globbyStream(patterns: js.Array[String], options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("globbyStream")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def globbyStream(patterns: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("globbyStream")(patterns.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def globbyStream(patterns: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("globbyStream")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def globbyStream(patterns: js.Array[String]): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("globbyStream")(patterns.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def globbyStream(patterns: js.Array[String], options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("globbyStream")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
   inline def globbySync(patterns: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("globbySync")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   inline def globbySync(patterns: String, options: OptionsobjectModetrue): js.Array[GlobEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("globbySync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[GlobEntry]]

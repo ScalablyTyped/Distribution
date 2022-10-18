@@ -1,5 +1,6 @@
 package typings.rxjsCompat
 
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +11,5 @@ object operatorWindowToggleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def windowToggle[T, O](
-    openings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<O> */ Any,
-    closingSelector: js.Function1[
-      /* openValue */ O, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
-    ]
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("windowToggle")(openings.asInstanceOf[js.Any], closingSelector.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def windowToggle[T, O](openings: Observable_[O], closingSelector: js.Function1[/* openValue */ O, Observable_[Any]]): Observable_[Observable_[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("windowToggle")(openings.asInstanceOf[js.Any], closingSelector.asInstanceOf[js.Any])).asInstanceOf[Observable_[Observable_[T]]]
 }

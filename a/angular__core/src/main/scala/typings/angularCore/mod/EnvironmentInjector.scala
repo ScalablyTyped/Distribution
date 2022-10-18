@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "EnvironmentInjector")
+/* note: abstract class */ @JSImport("@angular/core", "EnvironmentInjector")
 @js.native
-abstract class EnvironmentInjector () extends Injector {
+open class EnvironmentInjector () extends Injector {
   
   def destroy(): Unit = js.native
   

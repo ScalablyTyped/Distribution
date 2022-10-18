@@ -6,7 +6,7 @@ import typings.vm2.anon.ColumnOffset
 import typings.vm2.anon.Compiler
 import typings.vm2.anon.Filename
 import typings.vm2.anon.Modules
-import typings.vm2.anon.Strict
+import typings.vm2.anon.`0`
 import typings.vm2.vm2Strings.coffeescript
 import typings.vm2.vm2Strings.commonjs
 import typings.vm2.vm2Strings.host
@@ -48,12 +48,12 @@ object mod {
     /** Runs the code */
     def run(js_ : String): Any = js.native
     def run(js_ : String, options: String): Any = js.native
-    def run(js_ : String, options: Strict): Any = js.native
+    def run(js_ : String, options: Filename): Any = js.native
     def run(js_ : VMScript): Any = js.native
     def run(js_ : VMScript, options: String): Any = js.native
-    def run(js_ : VMScript, options: Strict): Any = js.native
-    def run(script: String, options: Filename): Any = js.native
-    def run(script: VMScript, options: Filename): Any = js.native
+    def run(js_ : VMScript, options: Filename): Any = js.native
+    def run(script: String, options: `0`): Any = js.native
+    def run(script: VMScript, options: `0`): Any = js.native
     
     /** Runs the code in the specific file */
     def runFile(filename: String): Any = js.native
@@ -121,10 +121,10 @@ object mod {
     /** Runs the code */
     def run(script: String): Any = js.native
     def run(script: String, options: String): Any = js.native
-    def run(script: String, options: Filename): Any = js.native
+    def run(script: String, options: `0`): Any = js.native
     def run(script: VMScript): Any = js.native
     def run(script: VMScript, options: String): Any = js.native
-    def run(script: VMScript, options: Filename): Any = js.native
+    def run(script: VMScript, options: `0`): Any = js.native
     
     /** Runs the code in the specific file */
     def runFile(filename: String): Any = js.native

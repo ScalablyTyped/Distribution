@@ -1,9 +1,9 @@
 package typings.jimpJpeg
 
-import typings.jimpCore.etcMod.Bitmap
-import typings.jimpCore.etcMod.DecoderFn
-import typings.jimpCore.etcMod.EncoderFn
-import typings.jimpCore.etcMod.Image
+import typings.jimpCore.typesEtcMod.Bitmap
+import typings.jimpCore.typesEtcMod.DecoderFn
+import typings.jimpCore.typesEtcMod.EncoderFn
+import typings.jimpCore.typesEtcMod.Image
 import typings.jimpJpeg.jimpJpegStrings.imageSlashjpeg
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject

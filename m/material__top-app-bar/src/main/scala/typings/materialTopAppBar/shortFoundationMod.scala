@@ -1,7 +1,7 @@
 package typings.materialTopAppBar
 
 import typings.materialTopAppBar.anon.PartialMDCTopAppBarAdapte
-import typings.materialTopAppBar.materialTopAppBarMod.MDCTopAppBarBaseFoundation
+import typings.materialTopAppBar.foundationMod.MDCTopAppBarBaseFoundation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

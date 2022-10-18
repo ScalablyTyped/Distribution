@@ -1,6 +1,6 @@
 package typings.googleGax.mod
 
-import typings.googleGax.gaxMod.CallOptions
+import typings.googleGax.buildSrcGaxMod.CallOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,6 +26,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor
   */
 open class CallSettings ()
-  extends typings.googleGax.gaxMod.CallSettings {
+  extends typings.googleGax.buildSrcGaxMod.CallSettings {
   def this(settings: CallOptions) = this()
 }

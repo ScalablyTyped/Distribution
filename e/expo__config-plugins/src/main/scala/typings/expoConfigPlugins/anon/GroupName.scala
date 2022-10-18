@@ -10,6 +10,8 @@ trait GroupName extends StObject {
   
   var groupName: String
   
+  var isBuildFile: js.UndefOr[Boolean] = js.undefined
+  
   var project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any
   
   var targetUuid: js.UndefOr[String] = js.undefined
@@ -32,6 +34,10 @@ object GroupName {
     inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
     
     inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    
+    inline def setIsBuildFile(value: Boolean): Self = StObject.set(x, "isBuildFile", value.asInstanceOf[js.Any])
+    
+    inline def setIsBuildFileUndefined: Self = StObject.set(x, "isBuildFile", js.undefined)
     
     inline def setProject(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any

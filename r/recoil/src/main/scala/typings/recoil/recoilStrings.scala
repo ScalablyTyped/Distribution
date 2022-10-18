@@ -12,18 +12,6 @@ object recoilStrings {
   inline def DefaultValue: DefaultValue = "DefaultValue".asInstanceOf[DefaultValue]
   
   @js.native
-  sealed trait UnwrapLoadables extends StObject
-  inline def UnwrapLoadables: UnwrapLoadables = "UnwrapLoadables".asInstanceOf[UnwrapLoadables]
-  
-  @js.native
-  sealed trait UnwrapRecoilValueLoadables extends StObject
-  inline def UnwrapRecoilValueLoadables: UnwrapRecoilValueLoadables = "UnwrapRecoilValueLoadables".asInstanceOf[UnwrapRecoilValueLoadables]
-  
-  @js.native
-  sealed trait UnwrapRecoilValues extends StObject
-  inline def UnwrapRecoilValues: UnwrapRecoilValues = "UnwrapRecoilValues".asInstanceOf[UnwrapRecoilValues]
-  
-  @js.native
   sealed trait atom extends StObject
   inline def atom: atom = "atom".asInstanceOf[atom]
   

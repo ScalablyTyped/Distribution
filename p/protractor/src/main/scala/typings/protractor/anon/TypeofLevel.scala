@@ -15,53 +15,53 @@ trait TypeofLevel
     * Indicates all log messages should be recorded.
     * @const
     */
-  var ALL: typings.seleniumWebdriver.loggingMod.Level = js.native
+  var ALL: typings.seleniumWebdriver.libLoggingMod.Level = js.native
   
   /**
     * Log messages with a level of `700` or higher.
     * @const
     */
-  var DEBUG: typings.seleniumWebdriver.loggingMod.Level = js.native
+  var DEBUG: typings.seleniumWebdriver.libLoggingMod.Level = js.native
   
   /**
     * Log messages with a level of `500` or higher.
     * @const
     */
-  var FINE: typings.seleniumWebdriver.loggingMod.Level = js.native
+  var FINE: typings.seleniumWebdriver.libLoggingMod.Level = js.native
   
   /**
     * Log messages with a level of `400` or higher.
     * @const
     */
-  var FINER: typings.seleniumWebdriver.loggingMod.Level = js.native
+  var FINER: typings.seleniumWebdriver.libLoggingMod.Level = js.native
   
   /**
     * Log messages with a level of `300` or higher.
     * @const
     */
-  var FINEST: typings.seleniumWebdriver.loggingMod.Level = js.native
+  var FINEST: typings.seleniumWebdriver.libLoggingMod.Level = js.native
   
   /**
     * Log messages with a level of `800` or higher.
     * @const
     */
-  var INFO: typings.seleniumWebdriver.loggingMod.Level = js.native
+  var INFO: typings.seleniumWebdriver.libLoggingMod.Level = js.native
   
   /**
     * Indicates no log messages should be recorded.
     * @const
     */
-  var OFF: typings.seleniumWebdriver.loggingMod.Level = js.native
+  var OFF: typings.seleniumWebdriver.libLoggingMod.Level = js.native
   
   /**
     * Log messages with a level of `1000` or higher.
     * @const
     */
-  var SEVERE: typings.seleniumWebdriver.loggingMod.Level = js.native
+  var SEVERE: typings.seleniumWebdriver.libLoggingMod.Level = js.native
   
   /**
     * Log messages with a level of `900` or higher.
     * @const
     */
-  var WARNING: typings.seleniumWebdriver.loggingMod.Level = js.native
+  var WARNING: typings.seleniumWebdriver.libLoggingMod.Level = js.native
 }

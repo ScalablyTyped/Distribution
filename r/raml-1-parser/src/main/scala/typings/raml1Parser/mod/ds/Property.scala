@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify typeSystem.IProperty * / any */ @JSImport("raml-1-parser", "ds.Property")
 @js.native
 open class Property ()
-  extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.Property
+  extends typings.ramlDefinitionSystem.mod.Property
 /* static members */
 object Property {
   

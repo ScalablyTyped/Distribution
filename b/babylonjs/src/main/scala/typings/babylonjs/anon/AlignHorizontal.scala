@@ -1,7 +1,7 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathColorMod.Color4
-import typings.babylonjs.mathVectorMod.Vector4
+import typings.babylonjs.mathsMathDotcolorMod.Color4
+import typings.babylonjs.mathsMathDotvectorMod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,6 +29,8 @@ trait AlignHorizontal extends StObject {
   var tileSize: js.UndefOr[Double] = js.undefined
   
   var tileWidth: js.UndefOr[Double] = js.undefined
+  
+  var updatable: js.UndefOr[Boolean] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -88,6 +90,10 @@ object AlignHorizontal {
     inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
     inline def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
+    
+    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

@@ -1,8 +1,8 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.bitcoinMod.RefTransaction
-import typings.trezorConnect.protobufMod.TxInput
-import typings.trezorConnect.protobufMod.TxOutputType
+import typings.trezorConnect.libTypescriptNetworksBitcoinMod.RefTransaction
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.TxInput
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.TxOutputType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

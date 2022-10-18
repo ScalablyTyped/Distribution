@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsThumbsUpSmallMod.ThumbsUpSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object thumbsUpSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/ThumbsUpSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/ThumbsUpSmall", JSImport.Default)
   @js.native
   val default: FC[ThumbsUpSmallProps] = js.native
-  
-  trait ThumbsUpSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object ThumbsUpSmallProps {
-    
-    inline def apply(): ThumbsUpSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ThumbsUpSmallProps]
-    }
-    
-    extension [Self <: ThumbsUpSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[ThumbsUpSmallProps]
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for tiny-lru
 
-Typings are for version 8.0.2
+Typings are for version 9.0.3
 
 ## Library description:
 Tiny LRU cache for Client or Server

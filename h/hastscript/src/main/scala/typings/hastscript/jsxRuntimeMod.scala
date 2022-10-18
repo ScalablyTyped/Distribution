@@ -3,18 +3,18 @@ package typings.hastscript
 import typings.hast.mod.Element
 import typings.hast.mod.Root
 import typings.hastscript.anon.Children
-import typings.hastscript.runtimeMod.JSXProps
+import typings.hastscript.libRuntimeMod.JSXProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsxRuntimeMod {
   
-  @JSImport("hastscript/html/jsx-runtime", JSImport.Namespace)
+  @JSImport("hastscript/jsx-runtime", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("hastscript/html/jsx-runtime", "Fragment")
+  @JSImport("hastscript/jsx-runtime", "Fragment")
   @js.native
   val Fragment: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any = js.native
   

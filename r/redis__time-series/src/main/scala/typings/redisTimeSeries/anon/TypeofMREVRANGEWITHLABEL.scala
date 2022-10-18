@@ -1,11 +1,11 @@
 package typings.redisTimeSeries.anon
 
-import typings.redisClient.libCommandsMod.RedisCommandArguments
-import typings.redisTimeSeries.commandsMod.Filter
-import typings.redisTimeSeries.commandsMod.MRangeRawReply
-import typings.redisTimeSeries.commandsMod.MRangeWithLabelsOptions
-import typings.redisTimeSeries.commandsMod.MRangeWithLabelsReplyItem
-import typings.redisTimeSeries.commandsMod.Timestamp
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisTimeSeries.distCommandsMod.Filter
+import typings.redisTimeSeries.distCommandsMod.MRangeRawReply
+import typings.redisTimeSeries.distCommandsMod.MRangeWithLabelsOptions
+import typings.redisTimeSeries.distCommandsMod.MRangeWithLabelsReplyItem
+import typings.redisTimeSeries.distCommandsMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

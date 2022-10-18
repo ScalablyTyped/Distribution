@@ -1,8 +1,8 @@
 package typings.opentelemetryInstrumentation
 
-import typings.opentelemetryInstrumentation.srcTypesMod.InstrumentationConfig
-import typings.opentelemetryInstrumentation.typesInternalMod.AutoLoaderOptions
-import typings.opentelemetryInstrumentation.typesMod.InstrumentationModuleFile
+import typings.opentelemetryInstrumentation.buildSrcPlatformNodeTypesMod.InstrumentationModuleFile
+import typings.opentelemetryInstrumentation.buildSrcTypesInternalMod.AutoLoaderOptions
+import typings.opentelemetryInstrumentation.buildSrcTypesMod.InstrumentationConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +13,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@opentelemetry/instrumentation", "InstrumentationBase")
+  /* note: abstract class */ @JSImport("@opentelemetry/instrumentation", "InstrumentationBase")
   @js.native
-  abstract class InstrumentationBase[T] protected ()
-    extends typings.opentelemetryInstrumentation.platformMod.InstrumentationBase[T] {
+  open class InstrumentationBase[T] protected ()
+    extends typings.opentelemetryInstrumentation.buildSrcPlatformMod.InstrumentationBase[T] {
     def this(instrumentationName: String, instrumentationVersion: String) = this()
     def this(instrumentationName: String, instrumentationVersion: String, config: InstrumentationConfig) = this()
   }
@@ -24,7 +24,7 @@ object mod {
   @JSImport("@opentelemetry/instrumentation", "InstrumentationNodeModuleDefinition")
   @js.native
   open class InstrumentationNodeModuleDefinition[T] protected ()
-    extends typings.opentelemetryInstrumentation.platformMod.InstrumentationNodeModuleDefinition[T] {
+    extends typings.opentelemetryInstrumentation.buildSrcPlatformMod.InstrumentationNodeModuleDefinition[T] {
     def this(name: String, supportedVersions: js.Array[String]) = this()
     def this(
       name: String,
@@ -76,7 +76,7 @@ object mod {
   @JSImport("@opentelemetry/instrumentation", "InstrumentationNodeModuleFile")
   @js.native
   open class InstrumentationNodeModuleFile[T] protected ()
-    extends typings.opentelemetryInstrumentation.platformMod.InstrumentationNodeModuleFile[T] {
+    extends typings.opentelemetryInstrumentation.buildSrcPlatformMod.InstrumentationNodeModuleFile[T] {
     def this(
       name: String,
       supportedVersions: js.Array[String],

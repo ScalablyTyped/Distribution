@@ -1,7 +1,9 @@
 package typings.floatingUiCore.anon
 
-import typings.floatingUiCore.typesMod.Coords
-import typings.floatingUiCore.typesMod.MiddlewareArguments
+import typings.floatingUiCore.srcMiddlewareShiftMod.LimitShiftOffset
+import typings.floatingUiCore.srcTypesMod.Coords
+import typings.floatingUiCore.srcTypesMod.MiddlewareArguments
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +12,12 @@ trait Fn extends StObject {
   
   def fn(middlewareArguments: MiddlewareArguments): Coords
   
-  var options: js.UndefOr[Any] = js.undefined
+  var options: Partial[LimitShiftOffset]
 }
 object Fn {
   
-  inline def apply(fn: MiddlewareArguments => Coords): Fn = {
-    val __obj = js.Dynamic.literal(fn = js.Any.fromFunction1(fn))
+  inline def apply(fn: MiddlewareArguments => Coords, options: Partial[LimitShiftOffset]): Fn = {
+    val __obj = js.Dynamic.literal(fn = js.Any.fromFunction1(fn), options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fn]
   }
   
@@ -23,8 +25,8 @@ object Fn {
     
     inline def setFn(value: MiddlewareArguments => Coords): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
     
-    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Partial[LimitShiftOffset]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsFunction1(value: /* args */ MiddlewareArguments => Double | CrossAxis): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
   }
 }

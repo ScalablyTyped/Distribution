@@ -1,7 +1,7 @@
 package typings.awsSdkUtilUserAgentNode
 
-import typings.awsSdkTypes.utilMod.Provider
-import typings.awsSdkTypes.utilMod.UserAgent
+import typings.awsSdkTypes.distTypesUtilMod.Provider
+import typings.awsSdkTypes.distTypesUtilMod.UserAgent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

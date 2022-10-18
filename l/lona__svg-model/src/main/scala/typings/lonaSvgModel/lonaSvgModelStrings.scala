@@ -1,7 +1,7 @@
 package typings.lonaSvgModel
 
-import typings.lonaSvgModel.styleMod.FillRule
-import typings.lonaSvgModel.styleMod.LineCap
+import typings.lonaSvgModel.libStyleMod.FillRule
+import typings.lonaSvgModel.libStyleMod.LineCap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

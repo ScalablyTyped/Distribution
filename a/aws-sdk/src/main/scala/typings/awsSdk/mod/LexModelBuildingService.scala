@@ -1,6 +1,6 @@
 package typings.awsSdk.mod
 
-import typings.awsSdk.lexmodelbuildingserviceMod.ClientConfiguration
+import typings.awsSdk.clientsLexmodelbuildingserviceMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a service object. This object has one method for each API operation.
   */
 open class LexModelBuildingService ()
-  extends typings.awsSdk.allMod.LexModelBuildingService {
+  extends typings.awsSdk.clientsAllMod.LexModelBuildingService {
   def this(options: ClientConfiguration) = this()
 }

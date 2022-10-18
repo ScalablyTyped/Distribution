@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait ManagedConfigurationTemplate extends StObject {
   
   /** Optional, a map containing configuration variables defined for the configuration. */
   var configurationVariables: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ManagedConfigurationTemplate & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The ID of the managed configurations template. */
@@ -27,9 +24,7 @@ object ManagedConfigurationTemplate {
   extension [Self <: ManagedConfigurationTemplate](x: Self) {
     
     inline def setConfigurationVariables(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ManagedConfigurationTemplate & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "configurationVariables", value.asInstanceOf[js.Any])
     
     inline def setConfigurationVariablesUndefined: Self = StObject.set(x, "configurationVariables", js.undefined)

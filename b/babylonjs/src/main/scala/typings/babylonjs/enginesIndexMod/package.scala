@@ -1,7 +1,7 @@
 package typings.babylonjs.enginesIndexMod
 
 import typings.babylonjs.enginesIndexMod.^
-import typings.babylonjs.nativeInterfacesMod.INative
+import typings.babylonjs.enginesNativeNativeInterfacesMod.INative
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

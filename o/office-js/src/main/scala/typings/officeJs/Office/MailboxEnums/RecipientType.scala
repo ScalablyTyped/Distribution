@@ -11,7 +11,7 @@ sealed trait RecipientType extends StObject
   *
   * @remarks
   * [Api set: Mailbox 1.1]
-  * 
+  *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   * 
   * **Important**: A `recipientType` property value isn't returned by the 

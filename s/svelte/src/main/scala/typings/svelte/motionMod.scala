@@ -1,16 +1,17 @@
 package typings.svelte
 
-import typings.svelte.springMod.SpringOpts
-import typings.svelte.springMod.Spring_
-import typings.svelte.tweenedMod.Options
-import typings.svelte.tweenedMod.Tweened_
+import typings.svelte.typesRuntimeMotionSpringMod.SpringOpts
+import typings.svelte.typesRuntimeMotionSpringMod.Spring_
+import typings.svelte.typesRuntimeMotionTweenedMod.Options
+import typings.svelte.typesRuntimeMotionTweenedMod.Tweened_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object motionMod {
   
-  @JSImport("svelte/types/runtime/motion", JSImport.Namespace)
+  @JSImport("svelte/motion", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

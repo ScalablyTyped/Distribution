@@ -3,6 +3,7 @@ package typings.gulpUtil
 import org.scalablytyped.runtime.Shortcut
 import typings.chalk.mod.ChalkInstance
 import typings.gulpUtil.anon.File
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.streamMod.DuplexOptions
 import typings.node.streamMod.Transform
 import typings.std.Error
@@ -95,29 +96,15 @@ object mod {
   
   inline def beep(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beep")().asInstanceOf[Unit]
   
-  inline def buffer(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")().asInstanceOf[Any]
-  inline def buffer(cb: js.Function2[/* err */ js.Error, /* data */ js.Array[Any], Unit]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(cb.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def buffer(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")().asInstanceOf[ReadWriteStream]
+  inline def buffer(cb: js.Function2[/* err */ js.Error, /* data */ js.Array[Any], Unit]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(cb.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-util", "colors")
   @js.native
   val colors: ChalkInstance = js.native
   
-  inline def combine(
-    streams: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any)*
-  ): js.Function0[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function0[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ]]
-  inline def combine(
-    streams: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-    ]
-  ): js.Function0[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ]]
+  inline def combine(streams: ReadWriteStream*): js.Function0[ReadWriteStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function0[ReadWriteStream]]
+  inline def combine(streams: js.Array[ReadWriteStream]): js.Function0[ReadWriteStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadWriteStream]]
   
   object date {
     

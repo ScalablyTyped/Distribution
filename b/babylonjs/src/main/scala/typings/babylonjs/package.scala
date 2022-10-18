@@ -1,9 +1,9 @@
 package typings.babylonjs
 
-import typings.babylonjs.babylonjsStrings.`bounded-floor`
 import typings.babylonjs.babylonjsStrings.`write-only`
 import typings.babylonjs.babylonjsStrings.auto
 import typings.babylonjs.babylonjsStrings.destroyed
+import typings.babylonjs.babylonjsStrings.redraw
 import typings.babylonjs.babylonjsStrings.srgb
 import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
@@ -82,26 +82,46 @@ type GPUSupportedFeatures = ReadonlySet[String]
 
 type GPUTextureUsageFlags = Double
 
+// Experimental/Draft features
+// Anchors
 type XRAnchorSet = Set[XRAnchor]
-
-type XRBoundedReferenceSpaceType = `bounded-floor`
-
-type XREventHandler = js.Function1[/* callback */ Any, Unit]
 
 type XRFrameRequestCallback = js.Function2[/* time */ DOMHighResTimeStamp, /* frame */ XRFrame, Unit]
 
-// to be extended
-type XRHandJoint = String
+type XRInputSourceChangeEventHandler = js.Function1[/* evt */ XRInputSourceChangeEvent, Any]
 
-type XRInputSourceArray = js.Array[XRInputSource]
+type XRInputSourceEventHandler = js.Function1[/* evt */ XRInputSourceEvent, Any]
 
-type XRJointSpace = XRSpace
-
+// WebXR Layers
+/**
+  * The base class for XRWebGLLayer and other layer types introduced by future extensions.
+  * ref: https://immersive-web.github.io/webxr/#xrlayer-interface
+  */
+// tslint:disable-next-line no-empty-interface
 type XRLayer = EventTarget
+
+type XRLayerEventType = redraw
 
 type XRMeshSet = Set[XRMesh]
 
+// Plane detection
 type XRPlaneSet = Set[XRPlane]
 
+type XRReferenceSpaceEventHandler = js.Function1[/* event */ XRReferenceSpaceEvent, Any]
+
+type XRSessionEventHandler = js.Function1[/* evt */ XRSessionEvent, Any]
+
+/**
+  * Represents a virtual coordinate system with an origin that corresponds to a physical location.
+  * Spatial data that is requested from the API or given to the API is always expressed in relation
+  * to a specific XRSpace at the time of a specific XRFrame. Numeric values such as pose positions
+  * are coordinates in that space relative to its origin. The interface is intentionally opaque.
+  *
+  * ref: https://immersive-web.github.io/webxr/#xrspace-interface
+  */
 // tslint:disable-next-line no-empty-interface
 type XRSpace = EventTarget
+
+type XRSystemDeviceChangeEventHandler = js.Function1[/* event */ XRSystemDeviceChangeEvent, Any]
+
+type XRSystemSessionGrantedEventHandler = js.Function1[/* event */ XRSystemSessionGrantedEvent, Any]

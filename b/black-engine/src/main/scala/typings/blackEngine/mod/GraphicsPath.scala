@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "GraphicsPath")
 @js.native
 open class GraphicsPath ()
-  extends typings.blackEngine.graphicsPathMod.GraphicsPath
+  extends typings.blackEngine.displayGraphicsPathMod.GraphicsPath

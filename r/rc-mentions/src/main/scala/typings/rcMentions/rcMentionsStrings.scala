@@ -1,7 +1,7 @@
 package typings.rcMentions
 
-import typings.rcMentions.mentionsMod.Direction
-import typings.rcMentions.mentionsMod.Placement
+import typings.rcMentions.esMentionsMod.Direction
+import typings.rcMentions.esMentionsMod.Placement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

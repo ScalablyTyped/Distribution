@@ -1,6 +1,6 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.anon.Style
+import typings.materialUiCore.anon.Ref
 import typings.materialUiCore.formLabelFormLabelMod.FormLabelProps
 import typings.materialUiCore.materialUiCoreStrings.dense
 import typings.materialUiCore.materialUiCoreStrings.filled
@@ -68,7 +68,7 @@ object inputLabelInputLabelMod {
   - Dropped @material-ui/core.@material-ui/core/FormLabel/FormLabel.FormLabelProps<'label', {}> extends any ? std.Pick<@material-ui/core.@material-ui/core/FormLabel/FormLabel.FormLabelProps<'label', {}>, std.Exclude<keyof @material-ui/core.@material-ui/core/FormLabel/FormLabel.FormLabelProps<'label', {}>, 'classes' | never>> : never */ trait InputLabelProps
     extends StObject
        with StyledComponentProps[InputLabelClassKey]
-       with Style[FormLabelProps[label, js.Object]] {
+       with Ref[FormLabelProps[label, js.Object]] {
     
     /**
       * The contents of the `InputLabel`.

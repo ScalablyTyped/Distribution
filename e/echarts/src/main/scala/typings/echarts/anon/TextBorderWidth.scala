@@ -8,37 +8,56 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextBorderWidth extends StObject {
   
   /**
+    * Horizontal alignment of text, automatic by default.
+    *
+    * Options are:
+    *
+    * + `'left'`
+    * + `'center'`
+    * + `'right'`
+    *
+    * If `align` is not set in `rich`, `align` in parent level
+    * will be used. For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.data.upperLabel)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.align
+    */
+  var align: js.UndefOr[String] = js.undefined
+  
+  /**
     * Background color of the text fregment.
     *
     * Can be color string, like `'#123234'`, `'red'`, `rgba(0,23,11,0.3)'`.
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.data.upperLabel)
     *
     * `width` or `height` can be specified when using background
     * image, or auto adapted by default.
     *
-    * If set as `'auto'`, the color will assigned as visual color,
-    * such as series color.
+    * If set as `'auto'`, the color will assigned as visual
+    * color, such as series color.
     *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.backgroundColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   
   /**
     * Border color of the text fregment.
     *
-    * If set as `'auto'`, the color will assigned as visual color,
-    * such as series color.
+    * If set as `'auto'`, the color will assigned as visual
+    * color, such as series color.
     *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   
@@ -46,7 +65,7 @@ trait TextBorderWidth extends StObject {
     * Border radius of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.borderRadius
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   
@@ -54,20 +73,20 @@ trait TextBorderWidth extends StObject {
     * Border width of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * text color.
     *
-    * If set as `'auto'`, the color will assigned as visual color,
-    * such as series color.
+    * If set as `'auto'`, the color will assigned as visual
+    * color, such as series color.
     *
     *
     * @default
-    * '#000'
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.color
+    * ""#fff""
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.color
     */
   var color: js.UndefOr[String] = js.undefined
   
@@ -82,9 +101,20 @@ trait TextBorderWidth extends StObject {
     *
     * @default
     * 5
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.distance
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.distance
     */
   var distance: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * When the text is overflow, whether to replace the excess
+    * part with apostrophe.
+    *
+    *
+    * @default
+    * "true"
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.ellipsis
+    */
+  var ellipsis: js.UndefOr[Boolean] = js.undefined
   
   /**
     * font family
@@ -94,7 +124,7 @@ trait TextBorderWidth extends StObject {
     *
     * @default
     * "sans-serif"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.fontFamily
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   
@@ -103,8 +133,8 @@ trait TextBorderWidth extends StObject {
     *
     *
     * @default
-    * 11
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.fontSize
+    * 12
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   
@@ -120,7 +150,7 @@ trait TextBorderWidth extends StObject {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.fontStyle
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   
@@ -138,62 +168,100 @@ trait TextBorderWidth extends StObject {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.fontWeight
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.fontWeight
     */
-  var fontWeight: js.UndefOr[Double | String] = js.undefined
+  var fontWeight: js.UndefOr[String | Double] = js.undefined
   
   /**
-    * Height of the text block.
-    * It is the width of the text by default.
-    * You may want to use it in some cases like using background
-    * image (see `backgroundColor`).
+    * Data label formatter, which supports string template
+    * and callback function.
+    * In either form, `\n` is supported to represent a new
+    * line.
     *
-    * Notice, `width` and `height` specifies the width and height
-    * of the content, without `padding`.
+    * **String template**
     *
-    * Notice, `width` and `height` only work when `rich` specified.
+    * Model variation includes:
+    *
+    * + `{a}`: series name.
+    * + `{b}`: the name of a data item.
+    * + `{c}`: the value of a data item.
+    * + `{@xxx}: the value of a dimension named`'xxx'`, for
+    * example,`{@product}`refers the value of`'product'\` dimension。
+    * + `{@[n]}: the value of a dimension at the index of`n`,
+    * for example,`{@\[3\]}\` refers the value at dimensions\[3\].
+    *
+    * **example:**
+    *
+    * ```
+    * formatter: '{b}: {@score}'
+    *
+    * ```
+    *
+    * **Callback function**
+    *
+    * Callback function is in form of:
+    *
+    * ```
+    * (params: Object|Array) => string
+    *
+    * ```
+    *
+    * where `params` is the single dataset needed by formatter,
+    * which is formed as:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.data.upperLabel)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.height
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.formatter
     */
-  var height: js.UndefOr[Double | String] = js.undefined
+  var formatter: js.UndefOr[js.Function | String] = js.undefined
+  
+  /**
+    * Height of label area.
+    *
+    *
+    * @default
+    * 20
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.height
+    */
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Line height of the text fregment.
     *
-    * If `lineHeight` is not set in `rich`, `lineHeight` in parent
-    * level will be used. For example:
+    * If `lineHeight` is not set in `rich`, `lineHeight` in
+    * parent level will be used. For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.data.upperLabel)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.lineHeight
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to move text slightly.
-    * For example: `[30, 40]` means move `30` horizontally and
-    * move `40` vertically.
+    * For example: `[30, 40]` means move `30` horizontally
+    * and move `40` vertically.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.offset
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.offset
     */
   var offset: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Padding of the text fregment, for example:
     *
-    * + `padding: [3, 4, 5, 6]`: represents padding of `[top, right,
-    * bottom, left]`.
+    * + `padding: [3, 4, 5, 6]`: represents padding of `[top,
+    * right, bottom, left]`.
     * + `padding: 4`: represents `padding: [4, 4, 4, 4]`.
     * + `padding: [3, 4]`: represents `padding: [3, 4, 3, 4]`.
     *
-    * Notice, `width` and `height` specifies the width and height
-    * of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width and
+    * height of the content, without `padding`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.padding
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.padding
     */
   var padding: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
@@ -204,11 +272,11 @@ trait TextBorderWidth extends StObject {
     *
     * + \[x, y\]
     *
-    * Use relative percentage, or absolute pixel values to represent
-    * position of label relative to top-left corner of bounding
-    * box. For example:
+    * Use relative percentage, or absolute pixel values to
+    * represent position of label relative to top-left corner
+    * of bounding box. For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.data.upperLabel)
     *
     * + 'top'
     *
@@ -231,8 +299,8 @@ trait TextBorderWidth extends StObject {
     *
     *
     * @default
-    * "left"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.position
+    * "inside"
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.position
     */
   var position: js.UndefOr[js.Array[Any] | String] = js.undefined
   
@@ -240,18 +308,18 @@ trait TextBorderWidth extends StObject {
     * "Rich text styles" can be defined in this `rich` property.
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.data.upperLabel)
     *
     * For more details, see
     * [Rich Text](https://echarts.apache.org/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.rich
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.rich
     */
   var rich: js.UndefOr[
     /**
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Align]
   ] = js.undefined
@@ -265,7 +333,7 @@ trait TextBorderWidth extends StObject {
     * .
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.rotate
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.rotate
     */
   var rotate: js.UndefOr[Double] = js.undefined
   
@@ -273,7 +341,7 @@ trait TextBorderWidth extends StObject {
     * Show blur of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -283,7 +351,7 @@ trait TextBorderWidth extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   
@@ -291,7 +359,7 @@ trait TextBorderWidth extends StObject {
     * Shadow X offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -299,7 +367,7 @@ trait TextBorderWidth extends StObject {
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
@@ -307,22 +375,20 @@ trait TextBorderWidth extends StObject {
     * Whether to show label.
     *
     *
-    * @default
-    * "true"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.show
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Storke color of the text.
     *
-    * If set as `'auto'`, the color will assigned as visual color,
-    * such as series color.
+    * If set as `'auto'`, the color will assigned as visual
+    * color, such as series color.
     *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.textBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   
@@ -330,7 +396,7 @@ trait TextBorderWidth extends StObject {
     * Storke line width of the text.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.textBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   
@@ -338,7 +404,7 @@ trait TextBorderWidth extends StObject {
     * Shadow blue of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.textShadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -348,7 +414,7 @@ trait TextBorderWidth extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.textShadowColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   
@@ -356,7 +422,7 @@ trait TextBorderWidth extends StObject {
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.textShadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -364,31 +430,51 @@ trait TextBorderWidth extends StObject {
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.textShadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Vertical alignment of text, automatic by default.
+    *
+    * Options are:
+    *
+    * + `'top'`
+    * + `'middle'`
+    * + `'bottom'`
+    *
+    * If `verticalAlign` is not set in `rich`, `verticalAlign`
+    * in parent level will be used. For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.data.upperLabel)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.verticalAlign
+    */
+  var verticalAlign: js.UndefOr[String] = js.undefined
   
   /**
     * Width of the text block.
     * It is the width of the text by default.
     * In most cases, there is no need to specify it.
-    * You may want to use it in some cases like make simple table
-    * or using background image (see `backgroundColor`).
+    * You may want to use it in some cases like make simple
+    * table or using background image (see `backgroundColor`).
     *
-    * Notice, `width` and `height` specifies the width and height
-    * of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width and
+    * height of the content, without `padding`.
     *
     * `width` can also be percent string, like `'100%'`, which
-    * represents the percent of `contentWidth` (that is, the width
-    * without `padding`) of its container box.
-    * It is based on `contentWidth` because that each text fregment
-    * is layout based on the `content box`, where it makes no sense
-    * that calculating width based on `outerWith` in prectice.
+    * represents the percent of `contentWidth` (that is, the
+    * width without `padding`) of its container box.
+    * It is based on `contentWidth` because that each text
+    * fregment is layout based on the `content box`, where
+    * it makes no sense that calculating width based on `outerWith`
+    * in prectice.
     *
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.width
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -400,6 +486,10 @@ object TextBorderWidth {
   }
   
   extension [Self <: TextBorderWidth](x: Self) {
+    
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     inline def setBackgroundColor(value: js.Object | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
@@ -425,6 +515,10 @@ object TextBorderWidth {
     
     inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
+    inline def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+    
+    inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+    
     inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
@@ -437,11 +531,15 @@ object TextBorderWidth {
     
     inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    inline def setFontWeight(value: Double | String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: String | Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setFormatter(value: js.Function | String): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -469,7 +567,7 @@ object TextBorderWidth {
     
     inline def setRich(
       value: /**
-      * @see https://echarts.apache.org/en/option.html#series-themeRiver.label.rich.%3Cuser%20defined%20style%20name%3E
+      * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel.rich.%3Cuser%20defined%20style%20name%3E
       */
     StringDictionary[Align]
     ): Self = StObject.set(x, "rich", value.asInstanceOf[js.Any])
@@ -523,6 +621,10 @@ object TextBorderWidth {
     inline def setTextShadowOffsetY(value: Double): Self = StObject.set(x, "textShadowOffsetY", value.asInstanceOf[js.Any])
     
     inline def setTextShadowOffsetYUndefined: Self = StObject.set(x, "textShadowOffsetY", js.undefined)
+    
+    inline def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

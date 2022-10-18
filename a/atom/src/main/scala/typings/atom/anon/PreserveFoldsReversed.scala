@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PreserveFoldsReversed extends StObject {
   
-  var autoscroll: js.UndefOr[Boolean] = js.undefined
-  
   var preserveFolds: js.UndefOr[Boolean] = js.undefined
   
   var reversed: js.UndefOr[Boolean] = js.undefined
@@ -20,10 +18,6 @@ object PreserveFoldsReversed {
   }
   
   extension [Self <: PreserveFoldsReversed](x: Self) {
-    
-    inline def setAutoscroll(value: Boolean): Self = StObject.set(x, "autoscroll", value.asInstanceOf[js.Any])
-    
-    inline def setAutoscrollUndefined: Self = StObject.set(x, "autoscroll", js.undefined)
     
     inline def setPreserveFolds(value: Boolean): Self = StObject.set(x, "preserveFolds", value.asInstanceOf[js.Any])
     

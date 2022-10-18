@@ -1,13 +1,13 @@
 package typings.mendixmodelsdk.mod.domainmodels
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
-import typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenDomainmodelsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "domainmodels.AssociationRef")
 @js.native
 open class AssociationRef protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.AssociationRef {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.domainmodels.AssociationRef {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -41,7 +41,7 @@ object AssociationRef {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationRef]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AssociationRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AssociationRef]
   
   /**
     * Creates and returns a new AssociationRef instance in the SDK and on the server.
@@ -52,7 +52,7 @@ object AssociationRef {
     *  7.11.0 to 9.7.0
     */
   /* static member */
-  inline def createIn(container: VariableRefExpression): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationRef]
+  inline def createIn(container: VariableRefExpression): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AssociationRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AssociationRef]
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.AssociationRef.structureTypeName")

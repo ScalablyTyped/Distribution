@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Core {
   
   /** Provides data for the PhotoCaptured event. */
-  @JSGlobal("Windows.Media.Capture.Core.VariablePhotoCapturedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Capture.Core.VariablePhotoCapturedEventArgs")
   @js.native
-  abstract class VariablePhotoCapturedEventArgs ()
+  open class VariablePhotoCapturedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Capture.Core.VariablePhotoCapturedEventArgs {
     
@@ -32,9 +32,9 @@ object Core {
   }
   
   /** Provides methods and events that enable the capture of variable photo sequences. */
-  @JSGlobal("Windows.Media.Capture.Core.VariablePhotoSequenceCapture")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Capture.Core.VariablePhotoSequenceCapture")
   @js.native
-  abstract class VariablePhotoSequenceCapture ()
+  open class VariablePhotoSequenceCapture ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Capture.Core.VariablePhotoSequenceCapture
 }

@@ -111,8 +111,20 @@ object mod {
   
   @JSImport("glob", "glob")
   @js.native
-  def glob: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof G */ Any = js.native
-  inline def glob_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof G */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("glob")(x.asInstanceOf[js.Any])
+  def glob: js.Function3[
+    /* pattern */ String, 
+    /* options */ IOptions, 
+    /* cb */ js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit], 
+    IGlob
+  ] = js.native
+  inline def glob_=(
+    x: js.Function3[
+      /* pattern */ String, 
+      /* options */ IOptions, 
+      /* cb */ js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit], 
+      IGlob
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("glob")(x.asInstanceOf[js.Any])
   
   inline def hasMagic(pattern: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def hasMagic(pattern: String, options: IOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]

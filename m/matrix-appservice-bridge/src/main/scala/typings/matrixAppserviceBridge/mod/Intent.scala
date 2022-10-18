@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.intentMod.IntentOpts
+import typings.matrixAppserviceBridge.libComponentsIntentMod.IntentOpts
 import typings.matrixBotSdk.mod.MatrixClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "Intent")
 @js.native
 open class Intent protected ()
-  extends typings.matrixAppserviceBridge.intentMod.Intent {
+  extends typings.matrixAppserviceBridge.libComponentsIntentMod.Intent {
   /**
     * Create an entity which can fulfil the intent of a given user.
     * @constructor

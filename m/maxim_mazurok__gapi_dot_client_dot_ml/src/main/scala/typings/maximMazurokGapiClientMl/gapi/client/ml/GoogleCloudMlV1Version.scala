@@ -1,7 +1,5 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
-import org.scalablytyped.runtime.TopLevel
-import typings.maximMazurokGapiClientMl.maximMazurokGapiClientMlStrings.GoogleCloudMlV1__Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,9 +71,7 @@ trait GoogleCloudMlV1Version extends StObject {
     * supply. For more information, see the documentation on using labels. Note that this field is not updatable for mls1* models.
     */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ GoogleCloudMlV1__Version & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -223,9 +219,7 @@ object GoogleCloudMlV1Version {
     inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ GoogleCloudMlV1__Version & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

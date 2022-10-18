@@ -2,6 +2,7 @@ package typings.tabris.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tabris.mod.AnimationOptions
+import typings.tabris.mod.Bounds
 import typings.tabris.mod.BoxDimensions
 import typings.tabris.mod.ChangeListeners
 import typings.tabris.mod.ColorValue
@@ -116,9 +117,9 @@ trait OmitStackset extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `9`[Target], rules: RuleSet[Stack]): Stack
+  def _apply[Target](options: `16`[Target], rules: RuleSet[Stack]): Stack
   @JSName("_apply")
-  var _apply_Original: js.Function2[/* options */ `9`[Stack], /* rules */ RuleSet[Stack], Stack]
+  var _apply_Original: js.Function2[/* options */ `16`[Stack], /* rules */ RuleSet[Stack], Stack]
   
   def _checkDisposed(): Unit
   @JSName("_checkDisposed")
@@ -278,7 +279,7 @@ trait OmitStackset extends StObject {
   @JSName("_wasSet")
   var _wasSet_Original: js.Function1[/* propertyName */ String, Boolean]
   
-  var absoluteBounds: typings.tabris.mod.Bounds
+  var absoluteBounds: Bounds
   
   var alignment: left | centerX | stretchX | right
   
@@ -296,9 +297,9 @@ trait OmitStackset extends StObject {
   var append_Original: js.Function1[/* repeated */ Widget[Any], Stack]
   
   @JSName("apply")
-  def apply[Target](options: `9`[Target], rules: RuleSet[Stack]): Stack
+  def apply[Target](options: `16`[Target], rules: RuleSet[Stack]): Stack
   @JSName("apply")
-  var apply_Original: js.Function2[/* options */ `9`[Stack], /* rules */ RuleSet[Stack], Stack]
+  var apply_Original: js.Function2[/* options */ `16`[Stack], /* rules */ RuleSet[Stack], Stack]
   
   var background: LinearGradientValue | ColorValue | ImageValue
   
@@ -306,7 +307,7 @@ trait OmitStackset extends StObject {
   
   var bottom: ConstraintValue
   
-  var bounds: typings.tabris.mod.Bounds
+  var bounds: Bounds
   
   var centerX: typings.tabris.mod.Offset | auto | `true`
   
@@ -576,7 +577,7 @@ object OmitStackset {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `9`[Stack], /* rules */ RuleSet[Stack]) => Stack,
+    _apply: (/* options */ `16`[Stack], /* rules */ RuleSet[Stack]) => Stack,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -613,15 +614,15 @@ object OmitStackset {
     _trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean,
     _triggerChangeEvent: (/* propertyName */ String, /* newEncodedValue */ Any) => Unit,
     _wasSet: /* propertyName */ String => Boolean,
-    absoluteBounds: typings.tabris.mod.Bounds,
+    absoluteBounds: Bounds,
     alignment: left | centerX | stretchX | right,
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => Stack,
     appendTo: /* parent */ Composite[Widget[Any]] => Stack,
-    apply: (/* options */ `9`[Stack], /* rules */ RuleSet[Stack]) => Stack,
+    apply: (/* options */ `16`[Stack], /* rules */ RuleSet[Stack]) => Stack,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
-    bounds: typings.tabris.mod.Bounds,
+    bounds: Bounds,
     centerX: typings.tabris.mod.Offset | auto | `true`,
     centerY: typings.tabris.mod.Offset | auto | `true`,
     children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -732,7 +733,7 @@ object OmitStackset {
     
     inline def set$trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "$trigger", js.Any.fromFunction2(value))
     
-    inline def setAbsoluteBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
+    inline def setAbsoluteBounds(value: Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
     
     inline def setAlignment(value: left | centerX | stretchX | right): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
@@ -742,7 +743,7 @@ object OmitStackset {
     
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => Stack): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
-    inline def setApply(value: (/* options */ `9`[Stack], /* rules */ RuleSet[Stack]) => Stack): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (/* options */ `16`[Stack], /* rules */ RuleSet[Stack]) => Stack): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
@@ -752,7 +753,7 @@ object OmitStackset {
     
     inline def setBottom(value: ConstraintValue): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    inline def setBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     inline def setCenterX(value: typings.tabris.mod.Offset | auto | `true`): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
@@ -970,7 +971,7 @@ object OmitStackset {
     
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
-    inline def set_apply(value: (/* options */ `9`[Stack], /* rules */ RuleSet[Stack]) => Stack): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
+    inline def set_apply(value: (/* options */ `16`[Stack], /* rules */ RuleSet[Stack]) => Stack): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
     

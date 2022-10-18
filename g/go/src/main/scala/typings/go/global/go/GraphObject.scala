@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This is the abstract base class for all graphical objects.
   */
-@JSGlobal("go.GraphObject")
+/* note: abstract class */ @JSGlobal("go.GraphObject")
 @js.native
 /**
   * This is an abstract class, so you should not use this constructor.
   */
-abstract class GraphObject ()
+open class GraphObject ()
   extends typings.go.mod.GraphObject
 object GraphObject {
   

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.PartialIColorPickerProps
-import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerProps
+import typings.officeUiFabricReact.libComponentsColorPickerColorPickerDottypesMod.IColorPickerProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object libColorPickerMod {
   @JSImport("office-ui-fabric-react/lib/ColorPicker", "ColorPickerBase")
   @js.native
   open class ColorPickerBase protected ()
-    extends typings.officeUiFabricReact.colorPickerMod.ColorPickerBase {
+    extends typings.officeUiFabricReact.libComponentsColorPickerMod.ColorPickerBase {
     def this(props: IColorPickerProps) = this()
   }
   /* static members */

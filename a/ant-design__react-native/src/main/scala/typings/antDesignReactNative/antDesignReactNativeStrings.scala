@@ -1,6 +1,6 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.swipeActionMod.SwipeableExcludes
+import typings.antDesignReactNative.libSwipeActionMod.SwipeableExcludes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -644,10 +644,6 @@ object antDesignReactNativeStrings {
   inline def desktop: desktop = "desktop".asInstanceOf[desktop]
   
   @js.native
-  sealed trait dialog extends StObject
-  inline def dialog: dialog = "dialog".asInstanceOf[dialog]
-  
-  @js.native
   sealed trait diff extends StObject
   inline def diff: diff = "diff".asInstanceOf[diff]
   
@@ -722,10 +718,6 @@ object antDesignReactNativeStrings {
   @js.native
   sealed trait dropbox extends StObject
   inline def dropbox: dropbox = "dropbox".asInstanceOf[dropbox]
-  
-  @js.native
-  sealed trait dropdown extends StObject
-  inline def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
   
   @js.native
   sealed trait edit extends StObject

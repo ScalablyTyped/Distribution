@@ -1,8 +1,8 @@
 package typings.awsCryptoIe11Detection
 
-import typings.awsCryptoIe11Detection.msSubtleCryptoMod.Ie11DigestAlgorithm
-import typings.awsCryptoIe11Detection.msSubtleCryptoMod.KeyUsage
-import typings.awsCryptoIe11Detection.msSubtleCryptoMod._Ie11EncryptionAlgorithm
+import typings.awsCryptoIe11Detection.buildMsSubtleCryptoMod.Ie11DigestAlgorithm
+import typings.awsCryptoIe11Detection.buildMsSubtleCryptoMod.KeyUsage
+import typings.awsCryptoIe11Detection.buildMsSubtleCryptoMod._Ie11EncryptionAlgorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

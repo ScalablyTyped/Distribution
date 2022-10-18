@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait SparkSqlJob extends StObject {
   
   /** Optional. A mapping of property names to values, used to configure Spark SQL's SparkConf. Properties that conflict with values set by the Dataproc API may be overwritten. */
   var properties: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlJob & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The HCFS URI of the script that contains SQL queries. */
@@ -28,9 +25,7 @@ trait SparkSqlJob extends StObject {
   
   /** Optional. Mapping of query variable names to values (equivalent to the Spark SQL command: SET name="value";). */
   var scriptVariables: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlJob & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object SparkSqlJob {
@@ -53,9 +48,7 @@ object SparkSqlJob {
     inline def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
     
     inline def setProperties(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlJob & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
@@ -69,9 +62,7 @@ object SparkSqlJob {
     inline def setQueryListUndefined: Self = StObject.set(x, "queryList", js.undefined)
     
     inline def setScriptVariables(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlJob & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "scriptVariables", value.asInstanceOf[js.Any])
     
     inline def setScriptVariablesUndefined: Self = StObject.set(x, "scriptVariables", js.undefined)

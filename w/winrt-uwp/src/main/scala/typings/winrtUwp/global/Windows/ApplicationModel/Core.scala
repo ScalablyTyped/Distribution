@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Core {
   
   /** Provides an app's display info such as its display name and description, and a method to launch the app. */
-  @JSGlobal("Windows.ApplicationModel.Core.AppListEntry")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Core.AppListEntry")
   @js.native
-  abstract class AppListEntry ()
+  open class AppListEntry ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Core.AppListEntry {
     

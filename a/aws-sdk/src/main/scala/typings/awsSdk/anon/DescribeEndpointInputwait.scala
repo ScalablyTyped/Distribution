@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.sagemakerMod.EndpointName
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsSagemakerMod.EndpointName
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait DescribeEndpointInputwait extends StObject {
   /**
     * The name of the endpoint.
     */
-  var EndpointName: typings.awsSdk.sagemakerMod.EndpointName
+  var EndpointName: typings.awsSdk.clientsSagemakerMod.EndpointName
 }
 object DescribeEndpointInputwait {
   

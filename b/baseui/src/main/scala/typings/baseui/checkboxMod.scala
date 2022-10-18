@@ -14,7 +14,7 @@ import typings.baseui.checkboxTypesMod.SharedStyleProps
 import typings.baseui.checkboxTypesMod.StatefulCheckboxProps
 import typings.baseui.checkboxTypesMod.StatefulContainerProps
 import typings.react.mod.global.JSX.Element
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -102,7 +102,7 @@ object checkboxMod {
   @JSImport("baseui/checkbox", "StatefulContainer")
   @js.native
   open class StatefulContainer protected ()
-    extends typings.baseui.statefulCheckboxContainerMod.default {
+    extends typings.baseui.checkboxStatefulCheckboxContainerMod.default {
     def this(props: StatefulContainerProps) = this()
   }
   object StatefulContainer {

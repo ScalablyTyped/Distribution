@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object installationsDistRemoteConfigMod {
   
-  @JSImport("firebase/compat/installations/dist/remote-config", JSImport.Namespace)
+  @JSImport("firebase/installations/dist/remote-config", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -1,5 +1,6 @@
 package typings.metro.anon
 
+import typings.metro.libReportingMod.ReportableEvent
 import typings.metro.metroStrings.client_log
 import typings.metro.metroStrings.debug
 import typings.metro.metroStrings.group
@@ -9,7 +10,6 @@ import typings.metro.metroStrings.info
 import typings.metro.metroStrings.log
 import typings.metro.metroStrings.trace
 import typings.metro.metroStrings.warn
-import typings.metro.reportingMod.ReportableEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

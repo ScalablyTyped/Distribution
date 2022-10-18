@@ -1,7 +1,7 @@
 package typings.reduxThunk
 
 import typings.redux.mod.Action
-import typings.reduxThunk.typesMod.ThunkMiddleware
+import typings.reduxThunk.esTypesMod.ThunkMiddleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

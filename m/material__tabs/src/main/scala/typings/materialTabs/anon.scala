@@ -4,7 +4,7 @@ import typings.materialBase.typesMod.EventType
 import typings.materialBase.typesMod.SpecificEventListener
 import typings.materialTabs.materialTabsStrings.click
 import typings.materialTabs.materialTabsStrings.resize
-import typings.materialTabs.typesMod.MDCTabBarChangeEventDetail
+import typings.materialTabs.tabBarTypesMod.MDCTabBarChangeEventDetail
 import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject

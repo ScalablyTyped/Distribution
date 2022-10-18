@@ -37,11 +37,11 @@ trait Label extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
 }
 object Label {
   
-  inline def apply(label: String, theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Label = {
+  inline def apply(label: String, theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Label = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Label]
   }
@@ -70,6 +70,6 @@ object Label {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

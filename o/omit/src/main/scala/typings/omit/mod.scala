@@ -1,6 +1,5 @@
 package typings.omit
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Exclude
 import typings.std.Pick
 import typings.std.Record
@@ -13,31 +12,31 @@ object mod {
   // Static key
   inline def apply(key: String): js.Function1[
     /* target */ Any, 
-    (OmitMultiple[Any, String]) | (js.Array[OmitMultiple[Any, String]])
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer T> ? std.Array<omit.omit.OmitMultiple<T, string>> : omit.omit.OmitMultiple<T, string> */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* target */ Any, 
-    (OmitMultiple[Any, String]) | (js.Array[OmitMultiple[Any, String]])
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer T> ? std.Array<omit.omit.OmitMultiple<T, string>> : omit.omit.OmitMultiple<T, string> */ js.Any
   ]]
   inline def apply(key: js.Array[String]): js.Function1[
     /* target */ Any, 
-    (OmitMultiple[Any, js.Array[String]]) | (js.Array[OmitMultiple[Any, js.Array[String]]])
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer T> ? std.Array<omit.omit.OmitMultiple<T, std.Array<string>>> : omit.omit.OmitMultiple<T, std.Array<string>> */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* target */ Any, 
-    (OmitMultiple[Any, js.Array[String]]) | (js.Array[OmitMultiple[Any, js.Array[String]]])
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer T> ? std.Array<omit.omit.OmitMultiple<T, std.Array<string>>> : omit.omit.OmitMultiple<T, std.Array<string>> */ js.Any
   ]]
   // Static key, with target
-  inline def apply[T](key: String, target: T): (OmitMultiple[Any, String]) | (js.Array[OmitMultiple[Any, String]]) = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[(OmitMultiple[Any, String]) | (js.Array[OmitMultiple[Any, String]])]
-  inline def apply[T](key: js.Array[String], target: T): (OmitMultiple[Any, js.Array[String]]) | (js.Array[OmitMultiple[Any, js.Array[String]]]) = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[(OmitMultiple[Any, js.Array[String]]) | (js.Array[OmitMultiple[Any, js.Array[String]]])]
+  inline def apply[T](key: String, target: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer T> ? std.Array<omit.omit.OmitMultiple<T, string>> : omit.omit.OmitMultiple<T, string> */ js.Any = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer T> ? std.Array<omit.omit.OmitMultiple<T, string>> : omit.omit.OmitMultiple<T, string> */ js.Any]
+  inline def apply[T](key: js.Array[String], target: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer T> ? std.Array<omit.omit.OmitMultiple<T, std.Array<string>>> : omit.omit.OmitMultiple<T, std.Array<string>> */ js.Any = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer T> ? std.Array<omit.omit.OmitMultiple<T, std.Array<string>>> : omit.omit.OmitMultiple<T, std.Array<string>> */ js.Any]
   // Custom key
   inline def apply[K /* <: Key */](rule: Rule[K, Any]): js.Function1[
     /* target */ Any, 
-    (MaybeOmitMultiple[Any, K]) | (js.Array[MaybeOmitMultiple[Any, K]])
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer T> ? std.Array<omit.omit.MaybeOmitMultiple<T, K>> : omit.omit.MaybeOmitMultiple<T, K> */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].apply(rule.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* target */ Any, 
-    (MaybeOmitMultiple[Any, K]) | (js.Array[MaybeOmitMultiple[Any, K]])
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer T> ? std.Array<omit.omit.MaybeOmitMultiple<T, K>> : omit.omit.MaybeOmitMultiple<T, K> */ js.Any
   ]]
   // Custom key, with target
-  inline def apply[T, K /* <: Key */](key: Rule[K, Any], target: T): (MaybeOmitMultiple[Any, K]) | (js.Array[MaybeOmitMultiple[Any, K]]) = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[(MaybeOmitMultiple[Any, K]) | (js.Array[MaybeOmitMultiple[Any, K]])]
+  inline def apply[T, K /* <: Key */](key: Rule[K, Any], target: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer T> ? std.Array<omit.omit.MaybeOmitMultiple<T, K>> : omit.omit.MaybeOmitMultiple<T, K> */ js.Any = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer T> ? std.Array<omit.omit.MaybeOmitMultiple<T, K>> : omit.omit.MaybeOmitMultiple<T, K> */ js.Any]
   
   @JSImport("omit", JSImport.Namespace)
   @js.native
@@ -45,9 +44,17 @@ object mod {
   
   type Key = String | js.Array[String]
   
-  type KeyAsStringType[K /* <: Key */] = K | (/* import warning: importer.ImportType#apply Failed type conversion: K[number] */ js.Any)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    K extends std.Array<string> ? K[number] : K
+    }}}
+    */
+  @js.native
+  trait KeyAsStringType[K /* <: Key */] extends StObject
   
-  type MaybeOmitMultiple[T, K /* <: Key */] = (OmitMultiple[T, K]) & typings.omit.omitStrings.MaybeOmitMultiple & TopLevel[T]
+  type MaybeOmitMultiple[T, K /* <: Key */] = (OmitMultiple[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in std.Extract<keyof T, omit.omit.KeyAsStringType<K>> ]:? T[P]} */ js.Any)
   
   type OmitMultiple[T, K /* <: Key */] = Pick[T, Exclude[/* keyof T */ String, KeyAsStringType[K]]]
   

@@ -1,7 +1,7 @@
 package typings.csstoolsPostcssCascadeLayers
 
 import org.scalablytyped.runtime.Shortcut
-import typings.csstoolsPostcssCascadeLayers.optionsMod.pluginOptions
+import typings.csstoolsPostcssCascadeLayers.distOptionsMod.pluginOptions
 import typings.postcss.mod.PluginCreator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

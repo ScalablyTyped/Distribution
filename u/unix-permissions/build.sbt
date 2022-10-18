@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "unix-permissions"
-version := "4.3.0-b196ef"
+version := "4.5.0-607a45"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

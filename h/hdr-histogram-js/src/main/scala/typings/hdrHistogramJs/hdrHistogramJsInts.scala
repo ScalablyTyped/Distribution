@@ -1,6 +1,6 @@
 package typings.hdrHistogramJs
 
-import typings.hdrHistogramJs.histogramMod.BitBucketSize
+import typings.hdrHistogramJs.distHistogramMod.BitBucketSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

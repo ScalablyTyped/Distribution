@@ -1,7 +1,7 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.iconButtonIconButtonMod.IconButtonProps
-import typings.materialUiCore.tablePaginationActionsMod.TablePaginationActionsProps
+import typings.materialUiCore.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
 import typings.materialUiCore.tablePaginationTablePaginationMod.LabelDisplayedRowsArgs
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.ElementType
@@ -26,7 +26,7 @@ trait ActionsComponent extends StObject {
   var backIconButtonProps: js.UndefOr[
     Partial[
       IconButtonProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.DefaultComponent['defaultComponent'] */ js.Any, 
         js.Object
       ]
     ]
@@ -43,7 +43,7 @@ trait ActionsComponent extends StObject {
   var nextIconButtonProps: js.UndefOr[
     Partial[
       IconButtonProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.DefaultComponent['defaultComponent'] */ js.Any, 
         js.Object
       ]
     ]

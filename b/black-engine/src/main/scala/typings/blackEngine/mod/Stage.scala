@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Stage")
 @js.native
 open class Stage ()
-  extends typings.blackEngine.stageMod.Stage
+  extends typings.blackEngine.displayStageMod.Stage

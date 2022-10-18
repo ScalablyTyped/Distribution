@@ -1,6 +1,6 @@
 package typings.appiumAdb.anon
 
-import typings.appiumAdb.systemCallsMod.BinaryName
+import typings.appiumAdb.libToolsSystemCallsMod.BinaryName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

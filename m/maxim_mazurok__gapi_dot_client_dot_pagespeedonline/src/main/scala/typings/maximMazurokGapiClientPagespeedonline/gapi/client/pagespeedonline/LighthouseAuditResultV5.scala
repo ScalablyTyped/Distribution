@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonline
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait LighthouseAuditResultV5 extends StObject {
   
   /** Freeform details section of the audit. */
   var details: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseAuditResultV5 & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** The value that should be displayed on the UI for this audit. */
@@ -64,9 +61,7 @@ object LighthouseAuditResultV5 {
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setDetails(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseAuditResultV5 & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)

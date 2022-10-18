@@ -118,7 +118,7 @@ object materialUiCoreStylesOverridesAugmentingMod {
     
     var MUIDataTableJumpToPage: root | caption | input | select | selectIcon | selectRoot
     
-    var MUIDataTablePagination: root | String | navContainer | selectRoot | tableCellContainer | toolbar
+    var MUIDataTablePagination: root | (/* @media screen and (max-width: 400px) */ String) | navContainer | selectRoot | tableCellContainer | toolbar
     
     var MUIDataTableResize: root | resizer
     
@@ -126,7 +126,7 @@ object materialUiCoreStylesOverridesAugmentingMod {
     
     var MUIDataTableSelectCell: root | checkboxRoot | checked | disabled | expandDisabled | expanded | fixedHeader | fixedLeft | headerCell | hide | icon
     
-    var MUIDataTableToolbar: root | String | actions | filterCloseIcon | filterPaper | fullWidthActions | fullWidthLeft | fullWidthRoot | fullWidthTitleText | icon | iconActive | left | searchIcon | titleRoot | titleText
+    var MUIDataTableToolbar: root | (/* @media screen and (max-width: 480px) */ String) | actions | filterCloseIcon | filterPaper | fullWidthActions | fullWidthLeft | fullWidthRoot | fullWidthTitleText | icon | iconActive | left | searchIcon | titleRoot | titleText
     
     var MUIDataTableToolbarSelect: root | deleteIcon | iconButton | title
     
@@ -144,11 +144,11 @@ object materialUiCoreStylesOverridesAugmentingMod {
       MUIDataTableHead: main | responsiveSimple | responsiveStacked | responsiveStackedAlways,
       MUIDataTableHeadCell: root | contentWrapper | data | dragCursor | fixedHeader | hintIconAlone | hintIconWithSortIcon | mypopper | sortAction | sortActive | sortLabelRoot | toolButton | tooltip,
       MUIDataTableJumpToPage: root | caption | input | select | selectIcon | selectRoot,
-      MUIDataTablePagination: root | String | navContainer | selectRoot | tableCellContainer | toolbar,
+      MUIDataTablePagination: root | (/* @media screen and (max-width: 400px) */ String) | navContainer | selectRoot | tableCellContainer | toolbar,
       MUIDataTableResize: root | resizer,
       MUIDataTableSearch: clearIcon | main | searchIcon | searchText,
       MUIDataTableSelectCell: root | checkboxRoot | checked | disabled | expandDisabled | expanded | fixedHeader | fixedLeft | headerCell | hide | icon,
-      MUIDataTableToolbar: root | String | actions | filterCloseIcon | filterPaper | fullWidthActions | fullWidthLeft | fullWidthRoot | fullWidthTitleText | icon | iconActive | left | searchIcon | titleRoot | titleText,
+      MUIDataTableToolbar: root | (/* @media screen and (max-width: 480px) */ String) | actions | filterCloseIcon | filterPaper | fullWidthActions | fullWidthLeft | fullWidthRoot | fullWidthTitleText | icon | iconActive | left | searchIcon | titleRoot | titleText,
       MUIDataTableToolbarSelect: root | deleteIcon | iconButton | title,
       MUIDataTableViewCol: root | checkbox | checkboxRoot | checked | formControl | formGroup | label | title
     ): ComponentNameToClassKey = {
@@ -186,7 +186,9 @@ object materialUiCoreStylesOverridesAugmentingMod {
       
       inline def setMUIDataTableJumpToPage(value: root | caption | input | select | selectIcon | selectRoot): Self = StObject.set(x, "MUIDataTableJumpToPage", value.asInstanceOf[js.Any])
       
-      inline def setMUIDataTablePagination(value: root | String | navContainer | selectRoot | tableCellContainer | toolbar): Self = StObject.set(x, "MUIDataTablePagination", value.asInstanceOf[js.Any])
+      inline def setMUIDataTablePagination(
+        value: root | (/* @media screen and (max-width: 400px) */ String) | navContainer | selectRoot | tableCellContainer | toolbar
+      ): Self = StObject.set(x, "MUIDataTablePagination", value.asInstanceOf[js.Any])
       
       inline def setMUIDataTableResize(value: root | resizer): Self = StObject.set(x, "MUIDataTableResize", value.asInstanceOf[js.Any])
       
@@ -197,7 +199,7 @@ object materialUiCoreStylesOverridesAugmentingMod {
       ): Self = StObject.set(x, "MUIDataTableSelectCell", value.asInstanceOf[js.Any])
       
       inline def setMUIDataTableToolbar(
-        value: root | String | actions | filterCloseIcon | filterPaper | fullWidthActions | fullWidthLeft | fullWidthRoot | fullWidthTitleText | icon | iconActive | left | searchIcon | titleRoot | titleText
+        value: root | (/* @media screen and (max-width: 480px) */ String) | actions | filterCloseIcon | filterPaper | fullWidthActions | fullWidthLeft | fullWidthRoot | fullWidthTitleText | icon | iconActive | left | searchIcon | titleRoot | titleText
       ): Self = StObject.set(x, "MUIDataTableToolbar", value.asInstanceOf[js.Any])
       
       inline def setMUIDataTableToolbarSelect(value: root | deleteIcon | iconButton | title): Self = StObject.set(x, "MUIDataTableToolbarSelect", value.asInstanceOf[js.Any])

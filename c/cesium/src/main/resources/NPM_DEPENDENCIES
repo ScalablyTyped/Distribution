@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cesium" : "1.97.0"
+      "cesium" : "1.98.1"
     }
   ],
   "test-dependencies" : [
     {
-      "cesium" : "1.97.0"
+      "cesium" : "1.98.1"
     }
   ],
   "compile-devDependencies" : [

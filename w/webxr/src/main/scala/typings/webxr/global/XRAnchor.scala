@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("XRAnchor")
+/* note: abstract class */ @JSGlobal("XRAnchor")
 @js.native
-abstract class XRAnchor ()
+open class XRAnchor ()
   extends StObject
      with typings.webxr.XRAnchor {
   

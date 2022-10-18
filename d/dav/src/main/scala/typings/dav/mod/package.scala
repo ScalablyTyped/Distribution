@@ -1,6 +1,5 @@
 package typings.dav.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.dav.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,6 +37,11 @@ inline def updateCard(card: VCard, options: UpdateCardOptions): js.Promise[VCard
 inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 
-type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]:? T[P]}
-  */ typings.dav.davStrings.Partial & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ P in keyof T ]:? T[P]}
+  }}}
+  */
+type Partial[T] = T

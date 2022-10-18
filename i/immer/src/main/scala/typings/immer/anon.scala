@@ -2,6 +2,15 @@ package typings.immer
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import typings.immer.distCoreScopeMod.ImmerScope
+import typings.immer.distTypesTypesExternalMod.Patch
+import typings.immer.distTypesTypesInternalMod.AnyMap
+import typings.immer.distTypesTypesInternalMod.AnySet
+import typings.immer.distTypesTypesInternalMod.Drafted
+import typings.immer.distTypesTypesInternalMod.ImmerState
+import typings.immer.distUtilsPluginsMod.ES5ArrayState
+import typings.immer.distUtilsPluginsMod.ES5ObjectState
+import typings.immer.distUtilsPluginsMod.PatchPath
 import typings.immer.immerStrings.`Illegal state`
 import typings.immer.immerStrings.`Immer drafts cannot have computed properties`
 import typings.immer.immerStrings.`Immer forbids circular references`
@@ -10,15 +19,6 @@ import typings.immer.immerStrings.`Sets cannot have QuotationmarkreplaceQuotatio
 import typings.immer.immerStrings.`The first or second argument to GraveaccentproduceGraveaccent must be a function`
 import typings.immer.immerStrings.`The given draft is already finalized`
 import typings.immer.immerStrings.`This object has been frozen and should not be mutated`
-import typings.immer.pluginsMod.ES5ArrayState
-import typings.immer.pluginsMod.ES5ObjectState
-import typings.immer.pluginsMod.PatchPath
-import typings.immer.scopeMod.ImmerScope
-import typings.immer.typesExternalMod.Patch
-import typings.immer.typesInternalMod.AnyMap
-import typings.immer.typesInternalMod.AnySet
-import typings.immer.typesInternalMod.Drafted
-import typings.immer.typesInternalMod.ImmerState
 import typings.std.FlatArray
 import typings.std.IterableIterator
 import typings.std.Map
@@ -38,13 +38,13 @@ object anon {
     
     val `10`: `The given draft is already finalized`
     
-    val `11`: String
+    val `11`: /* Object.defineProperty() cannot be used on an Immer draft */ String
     
-    val `12`: String
+    val `12`: /* Object.setPrototypeOf() cannot be used on an Immer draft */ String
     
     val `13`: `Immer only supports deleting array indices`
     
-    val `14`: String
+    val `14`: /* Immer only supports setting array indices and the 'length' property */ String
     
     def `15`(path: String): String
     
@@ -56,7 +56,7 @@ object anon {
     
     val `2`: `This object has been frozen and should not be mutated`
     
-    val `20`: String
+    val `20`: /* Cannot use proxies if Proxy, Proxy.revocable or Reflect are not available */ String
     
     def `21`(thing: String): String
     
@@ -64,21 +64,21 @@ object anon {
     
     def `23`(thing: String): String
     
-    val `24`: String
+    val `24`: /* Patching reserved attributes like __proto__, prototype and constructor is not allowed */ String
     
     def `3`(data: Any): String
     
-    val `4`: String
+    val `4`: /* An immer producer returned a new value *and* modified its draft. Either return a new value *or* modify the draft. */ String
     
     val `5`: `Immer forbids circular references`
     
     val `6`: `The first or second argument to GraveaccentproduceGraveaccent must be a function`
     
-    val `7`: String
+    val `7`: /* The third argument to `produce` must be a function or undefined */ String
     
-    val `8`: String
+    val `8`: /* First argument to `createDraft` must be a plain object, an array, or an immerable object */ String
     
-    val `9`: String
+    val `9`: /* First argument to `finishDraft` must be a draft returned by `createDraft` */ String
   }
   object `0` {
     
@@ -127,13 +127,13 @@ object anon {
       
       inline def set10(value: `The given draft is already finalized`): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
       
-      inline def set11(value: String): Self = StObject.set(x, "11", value.asInstanceOf[js.Any])
+      inline def set11(value: /* Object.defineProperty() cannot be used on an Immer draft */ String): Self = StObject.set(x, "11", value.asInstanceOf[js.Any])
       
-      inline def set12(value: String): Self = StObject.set(x, "12", value.asInstanceOf[js.Any])
+      inline def set12(value: /* Object.setPrototypeOf() cannot be used on an Immer draft */ String): Self = StObject.set(x, "12", value.asInstanceOf[js.Any])
       
       inline def set13(value: `Immer only supports deleting array indices`): Self = StObject.set(x, "13", value.asInstanceOf[js.Any])
       
-      inline def set14(value: String): Self = StObject.set(x, "14", value.asInstanceOf[js.Any])
+      inline def set14(value: /* Immer only supports setting array indices and the 'length' property */ String): Self = StObject.set(x, "14", value.asInstanceOf[js.Any])
       
       inline def set15(value: String => String): Self = StObject.set(x, "15", js.Any.fromFunction1(value))
       
@@ -145,7 +145,7 @@ object anon {
       
       inline def set2(value: `This object has been frozen and should not be mutated`): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
       
-      inline def set20(value: String): Self = StObject.set(x, "20", value.asInstanceOf[js.Any])
+      inline def set20(value: /* Cannot use proxies if Proxy, Proxy.revocable or Reflect are not available */ String): Self = StObject.set(x, "20", value.asInstanceOf[js.Any])
       
       inline def set21(value: String => String): Self = StObject.set(x, "21", js.Any.fromFunction1(value))
       
@@ -153,21 +153,27 @@ object anon {
       
       inline def set23(value: String => String): Self = StObject.set(x, "23", js.Any.fromFunction1(value))
       
-      inline def set24(value: String): Self = StObject.set(x, "24", value.asInstanceOf[js.Any])
+      inline def set24(
+        value: /* Patching reserved attributes like __proto__, prototype and constructor is not allowed */ String
+      ): Self = StObject.set(x, "24", value.asInstanceOf[js.Any])
       
       inline def set3(value: Any => String): Self = StObject.set(x, "3", js.Any.fromFunction1(value))
       
-      inline def set4(value: String): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+      inline def set4(
+        value: /* An immer producer returned a new value *and* modified its draft. Either return a new value *or* modify the draft. */ String
+      ): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
       
       inline def set5(value: `Immer forbids circular references`): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
       
       inline def set6(value: `The first or second argument to GraveaccentproduceGraveaccent must be a function`): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
       
-      inline def set7(value: String): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
+      inline def set7(value: /* The third argument to `produce` must be a function or undefined */ String): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
       
-      inline def set8(value: String): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
+      inline def set8(
+        value: /* First argument to `createDraft` must be a plain object, an array, or an immerable object */ String
+      ): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
       
-      inline def set9(value: String): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
+      inline def set9(value: /* First argument to `finishDraft` must be a draft returned by `createDraft` */ String): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
     }
   }
   

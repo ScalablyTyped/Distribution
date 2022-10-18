@@ -1,0 +1,639 @@
+package typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`
+
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._AccentColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._AlignContent
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._AlignItems
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._AlignSelf
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._AlignTracks
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Animation
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._AnimationDirection
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._AnimationFillMode
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._AnimationIterationCount
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._AnimationName
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._AnimationPlayState
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._AnimationTimingFunction
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._AspectRatio
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Azimuth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BackdropFilter
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Background
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BackgroundAttachment
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BackgroundBlendMode
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BackgroundClip
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BackgroundColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BackgroundImage
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BackgroundOrigin
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BackgroundPosition
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BackgroundPositionX
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BackgroundPositionY
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BackgroundRepeat
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BackgroundSize
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BaselineShift
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BlockOverflow
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BlockSize
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Border
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlock
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockEnd
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockEndColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockEndWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockStart
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockStartColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockStartWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBottom
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBottomColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBottomWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderImage
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderImageRepeat
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderImageSource
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderImageWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInline
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineEnd
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineEndColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineEndWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineStart
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineStartColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineStartWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderLeft
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderLeftColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderLeftWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderRight
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderRightColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderRightWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderStyle
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderTop
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderTopColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderTopWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Bottom
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BoxShadow
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._CaretColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Clip
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ClipPath
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Color
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ColorScheme
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ColumnCount
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ColumnGap
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ColumnRule
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ColumnRuleColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ColumnRuleStyle
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ColumnRuleWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ColumnWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Columns
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Contain
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Content
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._CounterIncrement
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._CounterReset
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._CounterSet
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Cursor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Display
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Fill
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Filter
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Flex
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FlexBasis
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FlexFlow
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FloodColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Font
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontFamily
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontFeatureSettings
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontLanguageOverride
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontSize
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontSizeAdjust
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontSmooth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontStretch
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontStyle
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontSynthesis
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontVariant
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontVariantAlternates
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontVariantEastAsian
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontVariantLigatures
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontVariantNumeric
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontVariationSettings
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FontWeight
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Gap
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._GlyphOrientationVertical
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Grid
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._GridAutoColumns
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._GridAutoFlow
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._GridAutoRows
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._GridTemplate
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._GridTemplateAreas
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._GridTemplateColumns
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._GridTemplateRows
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._HangingPunctuation
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Height
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ImageOrientation
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ImageResolution
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._InitialLetter
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._InlineSize
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Inset
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._InsetBlock
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._InsetBlockEnd
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._InsetBlockStart
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._InsetInline
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._InsetInlineEnd
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._InsetInlineStart
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._JustifyContent
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._JustifyItems
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._JustifySelf
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._JustifyTracks
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Left
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._LetterSpacing
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._LightingColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._LineClamp
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._LineHeight
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ListStyle
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ListStyleImage
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ListStyleType
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Margin
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MarginBlock
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MarginBlockEnd
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MarginBlockStart
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MarginBottom
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MarginInline
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MarginInlineEnd
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MarginInlineStart
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MarginLeft
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MarginRight
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MarginTop
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Marker
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MarkerEnd
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MarkerMid
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MarkerStart
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Mask
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaskBorder
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaskBorderRepeat
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaskBorderSource
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaskBorderWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaskClip
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaskComposite
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaskImage
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaskMode
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaskOrigin
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaskPosition
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaskRepeat
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaskSize
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaxBlockSize
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaxHeight
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaxInlineSize
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaxLines
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MaxWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MinBlockSize
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MinHeight
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MinInlineSize
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MinWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MozBinding
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MozBorderBottomColors
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MozBorderLeftColors
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MozBorderRightColors
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MozBorderTopColors
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MozContextProperties
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MozForceBrokenImageIcon
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MozImageRegion
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsContentZoomSnap
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsFlowFrom
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsFlowInto
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsGridColumns
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsGridRows
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsHyphenateLimitChars
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsHyphenateLimitLines
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollLimitXMax
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollLimitYMax
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbar3dlightColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarArrowColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarBaseColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarDarkshadowColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarFaceColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarHighlightColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarShadowColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarTrackColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ObjectPosition
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Offset
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._OffsetAnchor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._OffsetPath
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._OffsetRotate
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Outline
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._OutlineColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._OutlineStyle
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._OutlineWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Overflow
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._OverflowClipMargin
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._OverscrollBehavior
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._PaintOrder
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Perspective
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._PerspectiveOrigin
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._PlaceContent
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._PlaceItems
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._PlaceSelf
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Quotes
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Right
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Rotate
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._RowGap
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._RubyPosition
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Scale
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollPadding
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollPaddingBlock
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollPaddingBlockEnd
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollPaddingBlockStart
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollPaddingBottom
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollPaddingInline
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollPaddingInlineEnd
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollPaddingInlineStart
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollPaddingLeft
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollPaddingRight
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollPaddingTop
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollSnapAlign
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollSnapCoordinate
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollSnapDestination
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollSnapPointsX
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollSnapPointsY
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollSnapType
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollbarColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ScrollbarGutter
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ShapeOutside
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._StopColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Stroke
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._StrokeDasharray
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextCombineUpright
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextDecoration
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextDecorationColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextDecorationLine
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextDecorationSkip
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextDecorationThickness
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextEmphasis
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextEmphasisColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextEmphasisStyle
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextOverflow
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextShadow
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextSizeAdjust
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextUnderlineOffset
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextUnderlinePosition
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Top
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TouchAction
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Transform
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TransformOrigin
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Transition
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TransitionProperty
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TransitionTimingFunction
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Translate
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._VerticalAlign
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitBorderBefore
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitBorderBeforeColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitBorderBeforeStyle
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitBorderBeforeWidth
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitBoxReflect
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitLineClamp
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitMask
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitMaskAttachment
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitMaskClip
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitMaskComposite
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitMaskImage
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitMaskOrigin
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitMaskPosition
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitMaskPositionX
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitMaskPositionY
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitMaskRepeat
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitMaskSize
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitTapHighlightColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitTextFillColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitTextStroke
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitTextStrokeColor
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Width
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WillChange
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WordSpacing
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ZIndex
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Zoom
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.storybookTheming.storybookThemingStrings.`-moz-initial`
+  - typings.storybookTheming.storybookThemingStrings.inherit
+  - typings.storybookTheming.storybookThemingStrings.initial
+  - typings.storybookTheming.storybookThemingStrings.revert
+  - typings.storybookTheming.storybookThemingStrings.unset
+*/
+trait Globals
+  extends StObject
+     with _AccentColor
+     with _AlignContent
+     with _AlignItems
+     with _AlignSelf
+     with _AlignTracks
+     with _Animation[Any]
+     with _AnimationDirection
+     with _AnimationFillMode
+     with _AnimationIterationCount
+     with _AnimationName
+     with _AnimationPlayState
+     with _AnimationTimingFunction
+     with _AspectRatio
+     with _Azimuth
+     with _BackdropFilter
+     with _Background[Any]
+     with _BackgroundAttachment
+     with _BackgroundBlendMode
+     with _BackgroundClip
+     with _BackgroundColor
+     with _BackgroundImage
+     with _BackgroundOrigin
+     with _BackgroundPosition[Any]
+     with _BackgroundPositionX[Any]
+     with _BackgroundPositionY[Any]
+     with _BackgroundRepeat
+     with _BackgroundSize[Any]
+     with _BaselineShift[Any]
+     with _BlockOverflow
+     with _BlockSize[Any]
+     with _Border[Any]
+     with _BorderBlock[Any]
+     with _BorderBlockColor
+     with _BorderBlockEnd[Any]
+     with _BorderBlockEndColor
+     with _BorderBlockEndWidth[Any]
+     with _BorderBlockStart[Any]
+     with _BorderBlockStartColor
+     with _BorderBlockStartWidth[Any]
+     with _BorderBlockWidth[Any]
+     with _BorderBottom[Any]
+     with _BorderBottomColor
+     with _BorderBottomWidth[Any]
+     with _BorderColor
+     with _BorderImage
+     with _BorderImageRepeat
+     with _BorderImageSource
+     with _BorderImageWidth[Any]
+     with _BorderInline[Any]
+     with _BorderInlineColor
+     with _BorderInlineEnd[Any]
+     with _BorderInlineEndColor
+     with _BorderInlineEndWidth[Any]
+     with _BorderInlineStart[Any]
+     with _BorderInlineStartColor
+     with _BorderInlineStartWidth[Any]
+     with _BorderInlineWidth[Any]
+     with _BorderLeft[Any]
+     with _BorderLeftColor
+     with _BorderLeftWidth[Any]
+     with _BorderRight[Any]
+     with _BorderRightColor
+     with _BorderRightWidth[Any]
+     with _BorderStyle
+     with _BorderTop[Any]
+     with _BorderTopColor
+     with _BorderTopWidth[Any]
+     with _BorderWidth[Any]
+     with _Bottom[Any]
+     with _BoxShadow
+     with _CaretColor
+     with _Clip
+     with _ClipPath
+     with _Color
+     with _ColorScheme
+     with _ColumnCount
+     with _ColumnGap[Any]
+     with _ColumnRule[Any]
+     with _ColumnRuleColor
+     with _ColumnRuleStyle
+     with _ColumnRuleWidth[Any]
+     with _ColumnWidth[Any]
+     with _Columns[Any]
+     with _Contain
+     with _Content
+     with _CounterIncrement
+     with _CounterReset
+     with _CounterSet
+     with _Cursor
+     with _Display
+     with _Fill
+     with _Filter
+     with _Flex[Any]
+     with _FlexBasis[Any]
+     with _FlexFlow
+     with _FloodColor
+     with _Font
+     with _FontFamily
+     with _FontFeatureSettings
+     with _FontLanguageOverride
+     with _FontSize[Any]
+     with _FontSizeAdjust
+     with _FontSmooth[Any]
+     with _FontStretch
+     with _FontStyle
+     with _FontSynthesis
+     with _FontVariant
+     with _FontVariantAlternates
+     with _FontVariantEastAsian
+     with _FontVariantLigatures
+     with _FontVariantNumeric
+     with _FontVariationSettings
+     with _FontWeight
+     with _Gap[Any]
+     with _GlyphOrientationVertical
+     with _Grid
+     with _GridAutoColumns[Any]
+     with _GridAutoFlow
+     with _GridAutoRows[Any]
+     with _GridTemplate
+     with _GridTemplateAreas
+     with _GridTemplateColumns[Any]
+     with _GridTemplateRows[Any]
+     with _HangingPunctuation
+     with _Height[Any]
+     with _ImageOrientation
+     with _ImageResolution
+     with _InitialLetter
+     with _InlineSize[Any]
+     with _Inset[Any]
+     with _InsetBlock[Any]
+     with _InsetBlockEnd[Any]
+     with _InsetBlockStart[Any]
+     with _InsetInline[Any]
+     with _InsetInlineEnd[Any]
+     with _InsetInlineStart[Any]
+     with _JustifyContent
+     with _JustifyItems
+     with _JustifySelf
+     with _JustifyTracks
+     with _Left[Any]
+     with _LetterSpacing[Any]
+     with _LightingColor
+     with _LineClamp
+     with _LineHeight[Any]
+     with _ListStyle
+     with _ListStyleImage
+     with _ListStyleType
+     with _Margin[Any]
+     with _MarginBlock[Any]
+     with _MarginBlockEnd[Any]
+     with _MarginBlockStart[Any]
+     with _MarginBottom[Any]
+     with _MarginInline[Any]
+     with _MarginInlineEnd[Any]
+     with _MarginInlineStart[Any]
+     with _MarginLeft[Any]
+     with _MarginRight[Any]
+     with _MarginTop[Any]
+     with _Marker
+     with _MarkerEnd
+     with _MarkerMid
+     with _MarkerStart
+     with _Mask[Any]
+     with _MaskBorder
+     with _MaskBorderRepeat
+     with _MaskBorderSource
+     with _MaskBorderWidth[Any]
+     with _MaskClip
+     with _MaskComposite
+     with _MaskImage
+     with _MaskMode
+     with _MaskOrigin
+     with _MaskPosition[Any]
+     with _MaskRepeat
+     with _MaskSize[Any]
+     with _MaxBlockSize[Any]
+     with _MaxHeight[Any]
+     with _MaxInlineSize[Any]
+     with _MaxLines
+     with _MaxWidth[Any]
+     with _MinBlockSize[Any]
+     with _MinHeight[Any]
+     with _MinInlineSize[Any]
+     with _MinWidth[Any]
+     with _MozBinding
+     with _MozBorderBottomColors
+     with _MozBorderLeftColors
+     with _MozBorderRightColors
+     with _MozBorderTopColors
+     with _MozContextProperties
+     with _MozForceBrokenImageIcon
+     with _MozImageRegion
+     with _MsContentZoomSnap
+     with _MsFlowFrom
+     with _MsFlowInto
+     with _MsGridColumns[Any]
+     with _MsGridRows[Any]
+     with _MsHyphenateLimitChars
+     with _MsHyphenateLimitLines
+     with _MsScrollLimitXMax[Any]
+     with _MsScrollLimitYMax[Any]
+     with _MsScrollbar3dlightColor
+     with _MsScrollbarArrowColor
+     with _MsScrollbarBaseColor
+     with _MsScrollbarDarkshadowColor
+     with _MsScrollbarFaceColor
+     with _MsScrollbarHighlightColor
+     with _MsScrollbarShadowColor
+     with _MsScrollbarTrackColor
+     with _ObjectPosition[Any]
+     with _Offset[Any]
+     with _OffsetAnchor[Any]
+     with _OffsetPath
+     with _OffsetRotate
+     with _Outline[Any]
+     with _OutlineColor
+     with _OutlineStyle
+     with _OutlineWidth[Any]
+     with _Overflow
+     with _OverflowClipMargin[Any]
+     with _OverscrollBehavior
+     with _PaintOrder
+     with _Perspective[Any]
+     with _PerspectiveOrigin[Any]
+     with _PlaceContent
+     with _PlaceItems
+     with _PlaceSelf
+     with _Quotes
+     with _Right[Any]
+     with _Rotate
+     with _RowGap[Any]
+     with _RubyPosition
+     with _Scale
+     with _ScrollPadding[Any]
+     with _ScrollPaddingBlock[Any]
+     with _ScrollPaddingBlockEnd[Any]
+     with _ScrollPaddingBlockStart[Any]
+     with _ScrollPaddingBottom[Any]
+     with _ScrollPaddingInline[Any]
+     with _ScrollPaddingInlineEnd[Any]
+     with _ScrollPaddingInlineStart[Any]
+     with _ScrollPaddingLeft[Any]
+     with _ScrollPaddingRight[Any]
+     with _ScrollPaddingTop[Any]
+     with _ScrollSnapAlign
+     with _ScrollSnapCoordinate[Any]
+     with _ScrollSnapDestination[Any]
+     with _ScrollSnapPointsX
+     with _ScrollSnapPointsY
+     with _ScrollSnapType
+     with _ScrollbarColor
+     with _ScrollbarGutter
+     with _ShapeOutside
+     with _StopColor
+     with _Stroke
+     with _StrokeDasharray[Any]
+     with _TextCombineUpright
+     with _TextDecoration[Any]
+     with _TextDecorationColor
+     with _TextDecorationLine
+     with _TextDecorationSkip
+     with _TextDecorationThickness[Any]
+     with _TextEmphasis
+     with _TextEmphasisColor
+     with _TextEmphasisStyle
+     with _TextOverflow
+     with _TextShadow
+     with _TextSizeAdjust
+     with _TextUnderlineOffset[Any]
+     with _TextUnderlinePosition
+     with _Top[Any]
+     with _TouchAction
+     with _Transform
+     with _TransformOrigin[Any]
+     with _Transition[Any]
+     with _TransitionProperty
+     with _TransitionTimingFunction
+     with _Translate[Any]
+     with _VerticalAlign[Any]
+     with _WebkitBorderBefore[Any]
+     with _WebkitBorderBeforeColor
+     with _WebkitBorderBeforeStyle
+     with _WebkitBorderBeforeWidth[Any]
+     with _WebkitBoxReflect[Any]
+     with _WebkitLineClamp
+     with _WebkitMask[Any]
+     with _WebkitMaskAttachment
+     with _WebkitMaskClip
+     with _WebkitMaskComposite
+     with _WebkitMaskImage
+     with _WebkitMaskOrigin
+     with _WebkitMaskPosition[Any]
+     with _WebkitMaskPositionX[Any]
+     with _WebkitMaskPositionY[Any]
+     with _WebkitMaskRepeat
+     with _WebkitMaskSize[Any]
+     with _WebkitTapHighlightColor
+     with _WebkitTextFillColor
+     with _WebkitTextStroke[Any]
+     with _WebkitTextStrokeColor
+     with _Width[Any]
+     with _WillChange
+     with _WordSpacing[Any]
+     with _ZIndex
+     with _Zoom
+object Globals {
+  
+  inline def `-moz-initial`: typings.storybookTheming.storybookThemingStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.storybookTheming.storybookThemingStrings.`-moz-initial`]
+  
+  inline def inherit: typings.storybookTheming.storybookThemingStrings.inherit = "inherit".asInstanceOf[typings.storybookTheming.storybookThemingStrings.inherit]
+  
+  inline def initial: typings.storybookTheming.storybookThemingStrings.initial = "initial".asInstanceOf[typings.storybookTheming.storybookThemingStrings.initial]
+  
+  inline def revert: typings.storybookTheming.storybookThemingStrings.revert = "revert".asInstanceOf[typings.storybookTheming.storybookThemingStrings.revert]
+  
+  inline def unset: typings.storybookTheming.storybookThemingStrings.unset = "unset".asInstanceOf[typings.storybookTheming.storybookThemingStrings.unset]
+}

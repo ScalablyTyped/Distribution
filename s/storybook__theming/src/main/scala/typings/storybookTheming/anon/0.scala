@@ -4,19 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0` extends StObject {
+trait `0`[Theme /* <: js.Object */] extends StObject {
   
-  var theme: /* import warning: importer.ImportType#apply Failed type conversion: infer Theme */ js.Any
+  var theme: js.UndefOr[Theme] = js.undefined
 }
 object `0` {
   
-  inline def apply(theme: /* import warning: importer.ImportType#apply Failed type conversion: infer Theme */ js.Any): `0` = {
-    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`0`]
+  inline def apply[Theme /* <: js.Object */](): `0`[Theme] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`0`[Theme]]
   }
   
-  extension [Self <: `0`](x: Self) {
+  extension [Self <: `0`[?], Theme /* <: js.Object */](x: Self & `0`[Theme]) {
     
-    inline def setTheme(value: /* import warning: importer.ImportType#apply Failed type conversion: infer Theme */ js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

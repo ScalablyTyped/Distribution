@@ -1,7 +1,7 @@
 package typings.fluentReact
 
-import typings.fluentBundle.bundleMod.FluentVariable
-import typings.fluentReact.localizationMod.ReactLocalization
+import typings.fluentBundle.esmBundleMod.FluentVariable
+import typings.fluentReact.esmLocalizationMod.ReactLocalization
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TestStepResultStatus extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.cucumberMessages.messagesMod.TestStepResultStatus & String] = js.native
+  def apply(value: String): js.UndefOr[typings.cucumberMessages.distCjsSrcMessagesMod.TestStepResultStatus & String] = js.native
   
-  /* "AMBIGUOUS" */ val AMBIGUOUS: typings.cucumberMessages.messagesMod.TestStepResultStatus.AMBIGUOUS & String = js.native
+  /* "AMBIGUOUS" */ val AMBIGUOUS: typings.cucumberMessages.distCjsSrcMessagesMod.TestStepResultStatus.AMBIGUOUS & String = js.native
   
-  /* "FAILED" */ val FAILED: typings.cucumberMessages.messagesMod.TestStepResultStatus.FAILED & String = js.native
+  /* "FAILED" */ val FAILED: typings.cucumberMessages.distCjsSrcMessagesMod.TestStepResultStatus.FAILED & String = js.native
   
-  /* "PASSED" */ val PASSED: typings.cucumberMessages.messagesMod.TestStepResultStatus.PASSED & String = js.native
+  /* "PASSED" */ val PASSED: typings.cucumberMessages.distCjsSrcMessagesMod.TestStepResultStatus.PASSED & String = js.native
   
-  /* "PENDING" */ val PENDING: typings.cucumberMessages.messagesMod.TestStepResultStatus.PENDING & String = js.native
+  /* "PENDING" */ val PENDING: typings.cucumberMessages.distCjsSrcMessagesMod.TestStepResultStatus.PENDING & String = js.native
   
-  /* "SKIPPED" */ val SKIPPED: typings.cucumberMessages.messagesMod.TestStepResultStatus.SKIPPED & String = js.native
+  /* "SKIPPED" */ val SKIPPED: typings.cucumberMessages.distCjsSrcMessagesMod.TestStepResultStatus.SKIPPED & String = js.native
   
-  /* "UNDEFINED" */ val UNDEFINED: typings.cucumberMessages.messagesMod.TestStepResultStatus.UNDEFINED & String = js.native
+  /* "UNDEFINED" */ val UNDEFINED: typings.cucumberMessages.distCjsSrcMessagesMod.TestStepResultStatus.UNDEFINED & String = js.native
   
-  /* "UNKNOWN" */ val UNKNOWN: typings.cucumberMessages.messagesMod.TestStepResultStatus.UNKNOWN & String = js.native
+  /* "UNKNOWN" */ val UNKNOWN: typings.cucumberMessages.distCjsSrcMessagesMod.TestStepResultStatus.UNKNOWN & String = js.native
 }

@@ -10,7 +10,7 @@ object navigationPluginsIndexMod {
   @JSImport("babylonjs/Navigation/Plugins/index", "RecastJSCrowd")
   @js.native
   open class RecastJSCrowd protected ()
-    extends typings.babylonjs.recastJSPluginMod.RecastJSCrowd {
+    extends typings.babylonjs.navigationPluginsRecastJSPluginMod.RecastJSCrowd {
     /**
       * Constructor
       * @param plugin recastJS plugin
@@ -20,7 +20,7 @@ object navigationPluginsIndexMod {
       * @returns the crowd you can add agents to
       */
     def this(
-      plugin: typings.babylonjs.recastJSPluginMod.RecastJSPlugin,
+      plugin: typings.babylonjs.navigationPluginsRecastJSPluginMod.RecastJSPlugin,
       maxAgents: Double,
       maxAgentRadius: Double,
       scene: Scene
@@ -34,7 +34,7 @@ object navigationPluginsIndexMod {
     * @param recastInjection can be used to inject your own recast reference
     */
   open class RecastJSPlugin ()
-    extends typings.babylonjs.recastJSPluginMod.RecastJSPlugin {
+    extends typings.babylonjs.navigationPluginsRecastJSPluginMod.RecastJSPlugin {
     def this(recastInjection: Any) = this()
   }
 }

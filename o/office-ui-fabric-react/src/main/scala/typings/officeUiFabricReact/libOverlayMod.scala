@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.overlayTypesMod.IOverlayProps
+import typings.officeUiFabricReact.libComponentsOverlayOverlayDottypesMod.IOverlayProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object libOverlayMod {
   @JSImport("office-ui-fabric-react/lib/Overlay", "OverlayBase")
   @js.native
   open class OverlayBase protected ()
-    extends typings.officeUiFabricReact.overlayMod.OverlayBase {
+    extends typings.officeUiFabricReact.libComponentsOverlayMod.OverlayBase {
     def this(props: IOverlayProps) = this()
   }
 }

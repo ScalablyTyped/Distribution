@@ -1,10 +1,10 @@
 package typings.table
 
-import typings.table.apiMod.Alignment
-import typings.table.apiMod.DrawVerticalLine
-import typings.table.apiMod.VerticalAlignment
-import typings.table.drawBorderMod.Separator
-import typings.table.spanningCellManagerMod.SpanningCellManager
+import typings.table.distSrcDrawBorderMod.Separator
+import typings.table.distSrcSpanningCellManagerMod.SpanningCellManager
+import typings.table.distSrcTypesApiMod.Alignment
+import typings.table.distSrcTypesApiMod.DrawVerticalLine
+import typings.table.distSrcTypesApiMod.VerticalAlignment
 import typings.table.tableBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

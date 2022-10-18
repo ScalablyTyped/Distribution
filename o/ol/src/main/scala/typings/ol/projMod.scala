@@ -2,8 +2,8 @@ package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
-import typings.ol.projectionMod.default
-import typings.ol.unitsMod.Units
+import typings.ol.projProjectionMod.default
+import typings.ol.projUnitsMod.Units
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

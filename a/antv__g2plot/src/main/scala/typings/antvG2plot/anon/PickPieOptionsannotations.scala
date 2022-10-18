@@ -1,6 +1,6 @@
 package typings.antvG2plot.anon
 
-import typings.antvG2plot.annotationMod.Annotation
+import typings.antvG2plot.libTypesAnnotationMod.Annotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ trait PickPieOptionsannotations extends StObject {
   
   var annotations: js.UndefOr[js.Array[Annotation]] = js.undefined
   
-  var statistic: js.UndefOr[typings.antvG2plot.statisticMod.Statistic] = js.undefined
+  var statistic: js.UndefOr[typings.antvG2plot.libTypesStatisticMod.Statistic] = js.undefined
 }
 object PickPieOptionsannotations {
   
@@ -27,7 +27,7 @@ object PickPieOptionsannotations {
     
     inline def setAnnotationsVarargs(value: Annotation*): Self = StObject.set(x, "annotations", js.Array(value*))
     
-    inline def setStatistic(value: typings.antvG2plot.statisticMod.Statistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
+    inline def setStatistic(value: typings.antvG2plot.libTypesStatisticMod.Statistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
     
     inline def setStatisticUndefined: Self = StObject.set(x, "statistic", js.undefined)
   }

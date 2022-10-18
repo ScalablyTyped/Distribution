@@ -28,14 +28,39 @@ open class GlobalAppInstance () extends StObject {
   def getActiveSessions(): js.Array[AppContentSession] = js.native
   
   /**
+    * @see https://developer.knuddels.de/docs/classes/GlobalAppInstance.html#method_getAddAsFavoriteChatCommand
+    * @since AppServer 20220502-125000
+    */
+  def getAddAsFavoriteChatCommand(): java.lang.String = js.native
+  
+  /**
     * @see https://developer.knuddels.de/docs/classes/GlobalAppInstance.html#method_getAppConfig
     */
   def getAppConfig(): GlobalAppConfig = js.native
   
   /**
-    * @see https://developer.knuddels.de/docs/classes/GlobalAppInstance.html#method_getOpenSlashCommand
+    * @see https://developer.knuddels.de/docs/classes/GlobalAppInstance.html#method_getOpenAppChatCommand
+    * @since AppServer 20220502-125000
     */
-  def getOpenSlashCommand(): java.lang.String = js.native
+  def getOpenAppChatCommand(): java.lang.String = js.native
+  
+  /**
+    * @see https://developer.knuddels.de/docs/classes/GlobalAppInstance.html#method_getRemoveAsFavoriteChatCommand
+    * @since AppServer 20220502-125000
+    */
+  def getRemoveAsFavoriteChatCommand(): java.lang.String = js.native
+  
+  /**
+    * @see https://developer.knuddels.de/docs/classes/GlobalAppInstance.html#method_hasAsFavorite
+    * @since AppServer 20220502-152500
+    */
+  def hasAsFavorite(user: User): Boolean = js.native
+  
+  /**
+    * @see https://developer.knuddels.de/docs/classes/GlobalAppInstance.html#method_openGlobalApp
+    */
+  def openGlobalApp(user: User): AppContentSession = js.native
+  def openGlobalApp(user: User, forceReplace: Boolean): AppContentSession = js.native
   
   /**
     * @see https://developer.knuddels.de/docs/classes/GlobalAppInstance.html#method_setAppConfig

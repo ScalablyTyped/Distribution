@@ -3,9 +3,9 @@ package typings.lezerLr
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.NumberDictionary
 import typings.lezerCommon.mod.Tree
-import typings.lezerLr.stackMod.Stack
-import typings.lezerLr.tokenMod.ExternalTokenizer
-import typings.lezerLr.tokenMod.InputStream
+import typings.lezerLr.distStackMod.Stack
+import typings.lezerLr.distTokenMod.ExternalTokenizer
+import typings.lezerLr.distTokenMod.InputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

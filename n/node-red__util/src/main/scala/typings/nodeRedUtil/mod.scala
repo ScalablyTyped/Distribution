@@ -42,11 +42,11 @@ object mod extends Shortcut {
     
     var msg: NodeMessage
     
-    var node: IdNode
+    var node: Id
   }
   object CompleteEvent {
     
-    inline def apply(msg: NodeMessage, node: IdNode): CompleteEvent = {
+    inline def apply(msg: NodeMessage, node: Id): CompleteEvent = {
       val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[CompleteEvent]
     }
@@ -59,7 +59,7 @@ object mod extends Shortcut {
       
       inline def setMsg(value: NodeMessage): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      inline def setNode(value: IdNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Id): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   
@@ -509,20 +509,20 @@ object mod extends Shortcut {
   
   trait ReceiveEvent extends StObject {
     
-    var destination: IdNode
+    var destination: Id
     
     var msg: NodeMessage
   }
   object ReceiveEvent {
     
-    inline def apply(destination: IdNode, msg: NodeMessage): ReceiveEvent = {
+    inline def apply(destination: Id, msg: NodeMessage): ReceiveEvent = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiveEvent]
     }
     
     extension [Self <: ReceiveEvent](x: Self) {
       
-      inline def setDestination(value: IdNode): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: Id): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
       inline def setMsg(value: NodeMessage): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     }
@@ -533,15 +533,15 @@ object mod extends Shortcut {
     
     var cloneMessage: Boolean
     
-    var destination: Node
+    var destination: IdNode
     
     var msg: NodeMessage
     
-    var source: Id
+    var source: Node
   }
   object SendEvent {
     
-    inline def apply(cloneMessage: Boolean, destination: Node, msg: NodeMessage, source: Id): SendEvent = {
+    inline def apply(cloneMessage: Boolean, destination: IdNode, msg: NodeMessage, source: Node): SendEvent = {
       val __obj = js.Dynamic.literal(cloneMessage = cloneMessage.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendEvent]
     }
@@ -550,11 +550,11 @@ object mod extends Shortcut {
       
       inline def setCloneMessage(value: Boolean): Self = StObject.set(x, "cloneMessage", value.asInstanceOf[js.Any])
       
-      inline def setDestination(value: Node): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: IdNode): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
       inline def setMsg(value: NodeMessage): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      inline def setSource(value: Id): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Node): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   

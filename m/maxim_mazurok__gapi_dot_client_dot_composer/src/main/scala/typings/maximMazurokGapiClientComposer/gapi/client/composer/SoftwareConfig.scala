@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientComposer.gapi.client.composer
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait SoftwareConfig extends StObject {
     * Airflow configuration property values are [blocked](/composer/docs/concepts/airflow-configurations), and cannot be overridden.
     */
   var airflowConfigOverrides: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -27,9 +24,7 @@ trait SoftwareConfig extends StObject {
     * `SQL_INSTANCE` * `SQL_PASSWORD` * `SQL_PROJECT` * `SQL_REGION` * `SQL_USER`
     */
   var envVariables: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -50,9 +45,7 @@ trait SoftwareConfig extends StObject {
     * as the value.
     */
   var pypiPackages: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -75,17 +68,13 @@ object SoftwareConfig {
   extension [Self <: SoftwareConfig](x: Self) {
     
     inline def setAirflowConfigOverrides(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "airflowConfigOverrides", value.asInstanceOf[js.Any])
     
     inline def setAirflowConfigOverridesUndefined: Self = StObject.set(x, "airflowConfigOverrides", js.undefined)
     
     inline def setEnvVariables(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "envVariables", value.asInstanceOf[js.Any])
     
     inline def setEnvVariablesUndefined: Self = StObject.set(x, "envVariables", js.undefined)
@@ -95,9 +84,7 @@ object SoftwareConfig {
     inline def setImageVersionUndefined: Self = StObject.set(x, "imageVersion", js.undefined)
     
     inline def setPypiPackages(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "pypiPackages", value.asInstanceOf[js.Any])
     
     inline def setPypiPackagesUndefined: Self = StObject.set(x, "pypiPackages", js.undefined)

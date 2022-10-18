@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "Frustum")
 @js.native
 open class Frustum ()
-  extends typings.antvGLite.shapesMod.Frustum {
-  def this(planes: js.Array[typings.antvGLite.planeMod.Plane]) = this()
+  extends typings.antvGLite.distShapesMod.Frustum {
+  def this(planes: js.Array[typings.antvGLite.distShapesPlaneMod.Plane]) = this()
 }

@@ -7,7 +7,6 @@ import typings.chromeApps.chromeAppsStrings.INVALID_PUK
 import typings.chromeApps.chromeAppsStrings.MAX_ATTEMPTS_EXCEEDED
 import typings.chromeApps.chromeAppsStrings.PUK
 import typings.chromeApps.chromeAppsStrings.UNKNOWN_ERROR
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,10 +123,7 @@ object certificateProvider {
         ToStringLiteral[
           INVALIDPIN, 
           /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
-          Exclude[
-            /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
-            INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  INVALID_PIN :'INVALID_PIN',   INVALID_PUK :'INVALID_PUK',   MAX_ATTEMPTS_EXCEEDED :'MAX_ATTEMPTS_EXCEEDED',   UNKNOWN_ERROR :'UNKNOWN_ERROR'} extends keyof {  INVALID_PIN :'INVALID_PIN',   INVALID_PUK :'INVALID_PUK',   MAX_ATTEMPTS_EXCEEDED :'MAX_ATTEMPTS_EXCEEDED',   UNKNOWN_ERROR :'UNKNOWN_ERROR'} ? std.Exclude<keyof {  INVALID_PIN :'INVALID_PIN',   INVALID_PUK :'INVALID_PUK',   MAX_ATTEMPTS_EXCEEDED :'MAX_ATTEMPTS_EXCEEDED',   UNKNOWN_ERROR :'UNKNOWN_ERROR'}, 'INVALID_PIN' | 'INVALID_PUK' | 'MAX_ATTEMPTS_EXCEEDED' | 'UNKNOWN_ERROR'> : never */ js.Any
         ]
       ] = js.undefined
     
@@ -139,10 +135,7 @@ object certificateProvider {
         ToStringLiteral[
           PIN, 
           /* keyof chrome-apps.anon.PIN */ typings.chromeApps.chromeAppsStrings.PIN | PUK, 
-          Exclude[
-            /* keyof chrome-apps.anon.PIN */ typings.chromeApps.chromeAppsStrings.PIN | PUK, 
-            typings.chromeApps.chromeAppsStrings.PIN | PUK
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  PIN :'PIN',   PUK :'PUK'} extends keyof {  PIN :'PIN',   PUK :'PUK'} ? std.Exclude<keyof {  PIN :'PIN',   PUK :'PUK'}, 'PIN' | 'PUK'> : never */ js.Any
         ]
       ] = js.undefined
     
@@ -168,10 +161,7 @@ object certificateProvider {
         value: ToStringLiteral[
               INVALIDPIN, 
               /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
-              Exclude[
-                /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
-                INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  INVALID_PIN :'INVALID_PIN',   INVALID_PUK :'INVALID_PUK',   MAX_ATTEMPTS_EXCEEDED :'MAX_ATTEMPTS_EXCEEDED',   UNKNOWN_ERROR :'UNKNOWN_ERROR'} extends keyof {  INVALID_PIN :'INVALID_PIN',   INVALID_PUK :'INVALID_PUK',   MAX_ATTEMPTS_EXCEEDED :'MAX_ATTEMPTS_EXCEEDED',   UNKNOWN_ERROR :'UNKNOWN_ERROR'} ? std.Exclude<keyof {  INVALID_PIN :'INVALID_PIN',   INVALID_PUK :'INVALID_PUK',   MAX_ATTEMPTS_EXCEEDED :'MAX_ATTEMPTS_EXCEEDED',   UNKNOWN_ERROR :'UNKNOWN_ERROR'}, 'INVALID_PIN' | 'INVALID_PUK' | 'MAX_ATTEMPTS_EXCEEDED' | 'UNKNOWN_ERROR'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
       
@@ -181,10 +171,7 @@ object certificateProvider {
         value: ToStringLiteral[
               PIN, 
               /* keyof chrome-apps.anon.PIN */ typings.chromeApps.chromeAppsStrings.PIN | PUK, 
-              Exclude[
-                /* keyof chrome-apps.anon.PIN */ typings.chromeApps.chromeAppsStrings.PIN | PUK, 
-                typings.chromeApps.chromeAppsStrings.PIN | PUK
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  PIN :'PIN',   PUK :'PUK'} extends keyof {  PIN :'PIN',   PUK :'PUK'} ? std.Exclude<keyof {  PIN :'PIN',   PUK :'PUK'}, 'PIN' | 'PUK'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
       
@@ -250,10 +237,7 @@ object certificateProvider {
         ToStringLiteral[
           INVALIDPIN, 
           /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
-          Exclude[
-            /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
-            INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  INVALID_PIN :'INVALID_PIN',   INVALID_PUK :'INVALID_PUK',   MAX_ATTEMPTS_EXCEEDED :'MAX_ATTEMPTS_EXCEEDED',   UNKNOWN_ERROR :'UNKNOWN_ERROR'} extends keyof {  INVALID_PIN :'INVALID_PIN',   INVALID_PUK :'INVALID_PUK',   MAX_ATTEMPTS_EXCEEDED :'MAX_ATTEMPTS_EXCEEDED',   UNKNOWN_ERROR :'UNKNOWN_ERROR'} ? std.Exclude<keyof {  INVALID_PIN :'INVALID_PIN',   INVALID_PUK :'INVALID_PUK',   MAX_ATTEMPTS_EXCEEDED :'MAX_ATTEMPTS_EXCEEDED',   UNKNOWN_ERROR :'UNKNOWN_ERROR'}, 'INVALID_PIN' | 'INVALID_PUK' | 'MAX_ATTEMPTS_EXCEEDED' | 'UNKNOWN_ERROR'> : never */ js.Any
         ]
       ] = js.undefined
     
@@ -275,10 +259,7 @@ object certificateProvider {
         value: ToStringLiteral[
               INVALIDPIN, 
               /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
-              Exclude[
-                /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
-                INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  INVALID_PIN :'INVALID_PIN',   INVALID_PUK :'INVALID_PUK',   MAX_ATTEMPTS_EXCEEDED :'MAX_ATTEMPTS_EXCEEDED',   UNKNOWN_ERROR :'UNKNOWN_ERROR'} extends keyof {  INVALID_PIN :'INVALID_PIN',   INVALID_PUK :'INVALID_PUK',   MAX_ATTEMPTS_EXCEEDED :'MAX_ATTEMPTS_EXCEEDED',   UNKNOWN_ERROR :'UNKNOWN_ERROR'} ? std.Exclude<keyof {  INVALID_PIN :'INVALID_PIN',   INVALID_PUK :'INVALID_PUK',   MAX_ATTEMPTS_EXCEEDED :'MAX_ATTEMPTS_EXCEEDED',   UNKNOWN_ERROR :'UNKNOWN_ERROR'}, 'INVALID_PIN' | 'INVALID_PUK' | 'MAX_ATTEMPTS_EXCEEDED' | 'UNKNOWN_ERROR'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
       

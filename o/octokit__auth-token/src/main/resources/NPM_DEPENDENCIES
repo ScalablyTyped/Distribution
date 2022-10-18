@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/auth-token" : "3.0.1"
+      "@octokit/auth-token" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/auth-token" : "3.0.1"
+      "@octokit/auth-token" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AppService {
   
   /** Enumerates the available app service providers on the device. */
-  @JSGlobal("Windows.ApplicationModel.AppService.AppServiceCatalog")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.AppService.AppServiceCatalog")
   @js.native
-  abstract class AppServiceCatalog ()
+  open class AppServiceCatalog ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceCatalog
   object AppServiceCatalog {
@@ -31,9 +31,9 @@ object AppService {
   }
   
   /** Provides data for the AppServiceConnection.ServiceClosed event that occurs when the other endpoint closes connection to the app service. */
-  @JSGlobal("Windows.ApplicationModel.AppService.AppServiceClosedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.AppService.AppServiceClosedEventArgs")
   @js.native
-  abstract class AppServiceClosedEventArgs ()
+  open class AppServiceClosedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceClosedEventArgs {
     
@@ -91,9 +91,9 @@ object AppService {
   }
   
   /** Enables the background task for an app service to get a deferral so that the app service can respond to subsequent requests. */
-  @JSGlobal("Windows.ApplicationModel.AppService.AppServiceDeferral")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.AppService.AppServiceDeferral")
   @js.native
-  abstract class AppServiceDeferral ()
+  open class AppServiceDeferral ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceDeferral {
     
@@ -103,9 +103,9 @@ object AppService {
   }
   
   /** Represents a message that the endpoint for one app service sends to another app service. */
-  @JSGlobal("Windows.ApplicationModel.AppService.AppServiceRequest")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.AppService.AppServiceRequest")
   @js.native
-  abstract class AppServiceRequest ()
+  open class AppServiceRequest ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceRequest {
     
@@ -123,9 +123,9 @@ object AppService {
   }
   
   /** Provides data for the AppServiceConnection.RequestReceived event that occurs when a message arrives from the other endpoint of the app service connection. */
-  @JSGlobal("Windows.ApplicationModel.AppService.AppServiceRequestReceivedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.AppService.AppServiceRequestReceivedEventArgs")
   @js.native
-  abstract class AppServiceRequestReceivedEventArgs ()
+  open class AppServiceRequestReceivedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceRequestReceivedEventArgs {
     
@@ -142,9 +142,9 @@ object AppService {
   }
   
   /** Represents the message that the app service sent in response to a request. */
-  @JSGlobal("Windows.ApplicationModel.AppService.AppServiceResponse")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.AppService.AppServiceResponse")
   @js.native
-  abstract class AppServiceResponse ()
+  open class AppServiceResponse ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceResponse {
     
@@ -177,9 +177,9 @@ object AppService {
   }
   
   /** Represents details associated with the background task for the app service. */
-  @JSGlobal("Windows.ApplicationModel.AppService.AppServiceTriggerDetails")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.AppService.AppServiceTriggerDetails")
   @js.native
-  abstract class AppServiceTriggerDetails ()
+  open class AppServiceTriggerDetails ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceTriggerDetails {
     

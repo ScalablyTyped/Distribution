@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("jsforce", "AsyncResultLocator")
 @js.native
 open class AsyncResultLocator[T] ()
-  extends typings.jsforce.metadataMod.AsyncResultLocator[T] {
+  extends typings.jsforce.apiMetadataMod.AsyncResultLocator[T] {
   def this(options: EventEmitterOptions) = this()
 }

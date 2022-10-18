@@ -1,15 +1,15 @@
 package typings.braintreeWeb
 
-import typings.braintreeWeb.applePayMod.ApplePayLineItemType
-import typings.braintreeWeb.applePayMod.ApplePayPaymentTiming
-import typings.braintreeWeb.applePayMod.ApplePayRecurringPaymentDateUnit
-import typings.braintreeWeb.applePayMod.ApplePayTokenizeValues
-import typings.braintreeWeb.coreMod.BraintreeErrorTypes
-import typings.braintreeWeb.googlePaymentMod.GooglePaymentTokenizeValues
-import typings.braintreeWeb.hostedFieldsMod.HostedFieldEventType
-import typings.braintreeWeb.hostedFieldsMod.HostedFieldsHostedFieldsFieldName
-import typings.braintreeWeb.localPaymentMod.LocalPaymentTypes
-import typings.braintreeWeb.threeDSecureMod.ThreeDSecureEvent
+import typings.braintreeWeb.modulesApplePayMod.ApplePayLineItemType
+import typings.braintreeWeb.modulesApplePayMod.ApplePayPaymentTiming
+import typings.braintreeWeb.modulesApplePayMod.ApplePayRecurringPaymentDateUnit
+import typings.braintreeWeb.modulesApplePayMod.ApplePayTokenizeValues
+import typings.braintreeWeb.modulesCoreMod.BraintreeErrorTypes
+import typings.braintreeWeb.modulesGooglePaymentMod.GooglePaymentTokenizeValues
+import typings.braintreeWeb.modulesHostedFieldsMod.HostedFieldEventType
+import typings.braintreeWeb.modulesHostedFieldsMod.HostedFieldsHostedFieldsFieldName
+import typings.braintreeWeb.modulesLocalPaymentMod.LocalPaymentTypes
+import typings.braintreeWeb.modulesThreeDSecureMod.ThreeDSecureEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

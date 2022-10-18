@@ -78,5 +78,5 @@ object mod {
     }
   }
   
-  type PackageJson = typings.typeFest.packageJsonMod.PackageJson
+  type PackageJson = typings.typeFest.sourcePackageJsonMod.PackageJson
 }

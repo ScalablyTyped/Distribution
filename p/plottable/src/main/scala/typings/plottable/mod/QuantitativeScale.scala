@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor
   */
 open class QuantitativeScale[D] ()
-  extends typings.plottable.quantitativeScaleMod.QuantitativeScale[D]
+  extends typings.plottable.buildSrcScalesQuantitativeScaleMod.QuantitativeScale[D]
 /* static members */
 object QuantitativeScale {
   

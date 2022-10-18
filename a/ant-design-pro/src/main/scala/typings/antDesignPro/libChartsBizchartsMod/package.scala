@@ -1,0 +1,252 @@
+package typings.antDesignPro.libChartsBizchartsMod
+
+import typings.antDesignPro.libChartsBizchartsMod.^
+import typings.antvG2.libAnimateAnimationMod.Animation
+import typings.antvG2.libChartControllerBaseMod.ControllerCtor
+import typings.antvG2.libDependentsMod.IG
+import typings.antvG2.libGeometryLabelBaseMod.GeometryLabelConstructor
+import typings.antvG2.libGeometryLabelMod.GeometryLabelsLayoutFn
+import typings.antvG2.libInteractionActionRegisterMod.ActionConstructor
+import typings.antvG2.libInteractionGrammarInteractionMod.InteractionSteps
+import typings.antvG2.libInteractionInteractionMod.InteractionConstructor
+import typings.antvG2.libInterfaceMod.FacetCtor
+import typings.antvG2.libInterfaceMod.LooseObject
+import typings.antvG2.libInterfaceMod.RegisterShape
+import typings.antvG2.libInterfaceMod.RegisterShapeFactory
+import typings.antvG2.libInterfaceMod.Shape
+import typings.antvG2.libInterfaceMod.ShapeFactory
+import typings.antvG2.libInterfaceMod.StyleSheet
+import typings.bizcharts.libComponentsAxisMod.IAxis
+import typings.bizcharts.libComponentsEffectsMod.IEffectsProps
+import typings.bizcharts.libComponentsInteractionMod.IInteractionProps
+import typings.bizcharts.libComponentsLegendMod.ILegend
+import typings.bizcharts.libComponentsSliderMod.ISliderProps
+import typings.bizcharts.libConnectorCreateTooltipConnectorMod.Connector
+import typings.bizcharts.libGeometryLineAdvanceMod.ILineAdvanceGemoProps
+import typings.bizcharts.libGeometryMod.IGemo
+import typings.bizcharts.libInterfaceMod.IChartProps
+import typings.bizcharts.libPlotsAreaChartMod.AreaOptions
+import typings.bizcharts.libPlotsBarChartMod.BarOptions
+import typings.bizcharts.libPlotsBubbleChartMod.BubbleOptions
+import typings.bizcharts.libPlotsBulletChartMod.BulletOptions
+import typings.bizcharts.libPlotsCalendarChartMod.CalendarOptions
+import typings.bizcharts.libPlotsColumnChartMod.ColumnOptions
+import typings.bizcharts.libPlotsDensityHeatmapChartMod.DensityHeatmapOptions
+import typings.bizcharts.libPlotsDonutChartMod.DonutOptions
+import typings.bizcharts.libPlotsDualAxesChartMod.DualAxesOptions
+import typings.bizcharts.libPlotsFunnelChartMod.FunnelOptions
+import typings.bizcharts.libPlotsGaugeChartMod.GaugeOptions
+import typings.bizcharts.libPlotsGroupedBarChartMod.GroupedBarOptions
+import typings.bizcharts.libPlotsGroupedColumnChartMod.GroupedColumnOptions
+import typings.bizcharts.libPlotsGroupedRoseChartMod.GroupedRoseOptions
+import typings.bizcharts.libPlotsHeatmapChartMod.HeatmapOptions
+import typings.bizcharts.libPlotsHistogramChartMod.HistogramOptions
+import typings.bizcharts.libPlotsLineChartMod.LineOptions
+import typings.bizcharts.libPlotsLiquidChartMod.LiquidOptions
+import typings.bizcharts.libPlotsPercentStackedAreaChartMod.PercentStackedAreaOptions
+import typings.bizcharts.libPlotsPercentStackedBarChartMod.PercentStackedBarOptions
+import typings.bizcharts.libPlotsPercentStackedColumnChartMod.PercentStackedColumnOptions
+import typings.bizcharts.libPlotsPieChartMod.PieOptions
+import typings.bizcharts.libPlotsPlotAdapterMod.IAdapterProps
+import typings.bizcharts.libPlotsProgressChartMod.ProgressOptions
+import typings.bizcharts.libPlotsRadarChartMod.RadarOptions
+import typings.bizcharts.libPlotsRangeBarChartMod.RangeBarOptions
+import typings.bizcharts.libPlotsRangeColumnChartMod.RangeColumnOptions
+import typings.bizcharts.libPlotsRingProgressChartMod.RingProgressOptions
+import typings.bizcharts.libPlotsRoseChartMod.RoseOptions
+import typings.bizcharts.libPlotsScatterChartMod.ScatterOptions
+import typings.bizcharts.libPlotsStackedAreaChartMod.StackedAreaOptions
+import typings.bizcharts.libPlotsStackedBarChartMod.StackedBarOptions
+import typings.bizcharts.libPlotsStackedColumnChartMod.StackedColumnOptions
+import typings.bizcharts.libPlotsStackedRoseChartMod.StackedRoseOptions
+import typings.bizcharts.libPlotsStepLineChartMod.StepLineOptions
+import typings.bizcharts.libPlotsTinyAreaChartMod.TinyAreaOptions
+import typings.bizcharts.libPlotsTinyColumnChartMod.TinyColumnOptions
+import typings.bizcharts.libPlotsTinyLineChartMod.TinyLineOptions
+import typings.bizcharts.libPlotsTreemapChartMod.TreemapOptions
+import typings.bizcharts.libPlotsWaterfallChartMod.WaterfallOptions
+import typings.bizcharts.libPlotsWordCloudChartMod.WordCloudCfg
+import typings.react.mod.FC
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.PropsWithoutRef
+import typings.react.mod.ReactElement
+import typings.react.mod.RefAttributes
+import typings.std.Pick
+import typings.std.Record
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+
+inline def AreaChart: ForwardRefExoticComponent[AreaOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("AreaChart").asInstanceOf[ForwardRefExoticComponent[AreaOptions & RefAttributes[Any]]]
+
+inline def Axis(props: IAxis): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Axis")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
+
+inline def BarChart: ForwardRefExoticComponent[BarOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("BarChart").asInstanceOf[ForwardRefExoticComponent[BarOptions & RefAttributes[Any]]]
+
+inline def BubbleChart: ForwardRefExoticComponent[BubbleOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("BubbleChart").asInstanceOf[ForwardRefExoticComponent[BubbleOptions & RefAttributes[Any]]]
+
+inline def BulletChart: ForwardRefExoticComponent[BulletOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("BulletChart").asInstanceOf[ForwardRefExoticComponent[BulletOptions & RefAttributes[Any]]]
+
+inline def CalendarChart: ForwardRefExoticComponent[CalendarOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("CalendarChart").asInstanceOf[ForwardRefExoticComponent[CalendarOptions & RefAttributes[Any]]]
+
+inline def Chart: ForwardRefExoticComponent[(Pick[IChartProps, String | Double]) & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("Chart").asInstanceOf[ForwardRefExoticComponent[(Pick[IChartProps, String | Double]) & RefAttributes[Any]]]
+
+inline def ColumnChart: ForwardRefExoticComponent[ColumnOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("ColumnChart").asInstanceOf[ForwardRefExoticComponent[ColumnOptions & RefAttributes[Any]]]
+
+inline def Coord(props: Any): typings.react.mod.global.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Coord")(props.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
+
+inline def DensityHeatmapChart: ForwardRefExoticComponent[DensityHeatmapOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("DensityHeatmapChart").asInstanceOf[ForwardRefExoticComponent[DensityHeatmapOptions & RefAttributes[Any]]]
+
+inline def DonutChart: ForwardRefExoticComponent[DonutOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("DonutChart").asInstanceOf[ForwardRefExoticComponent[DonutOptions & RefAttributes[Any]]]
+
+inline def DualAxesChart: ForwardRefExoticComponent[DualAxesOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("DualAxesChart").asInstanceOf[ForwardRefExoticComponent[DualAxesOptions & RefAttributes[Any]]]
+
+inline def Effects(props: IEffectsProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Effects")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+
+inline def FunnelChart: ForwardRefExoticComponent[FunnelOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("FunnelChart").asInstanceOf[ForwardRefExoticComponent[FunnelOptions & RefAttributes[Any]]]
+
+inline def GaugeChart: ForwardRefExoticComponent[GaugeOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("GaugeChart").asInstanceOf[ForwardRefExoticComponent[GaugeOptions & RefAttributes[Any]]]
+
+inline def Geom(props: IGemo): typings.react.mod.global.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Geom")(props.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
+
+inline def GroupedBarChart: ForwardRefExoticComponent[GroupedBarOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupedBarChart").asInstanceOf[ForwardRefExoticComponent[GroupedBarOptions & RefAttributes[Any]]]
+
+inline def GroupedColumnChart: ForwardRefExoticComponent[GroupedColumnOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupedColumnChart").asInstanceOf[ForwardRefExoticComponent[GroupedColumnOptions & RefAttributes[Any]]]
+
+inline def GroupedRoseChart: ForwardRefExoticComponent[GroupedRoseOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupedRoseChart").asInstanceOf[ForwardRefExoticComponent[GroupedRoseOptions & RefAttributes[Any]]]
+
+inline def HeatmapChart: ForwardRefExoticComponent[HeatmapOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("HeatmapChart").asInstanceOf[ForwardRefExoticComponent[HeatmapOptions & RefAttributes[Any]]]
+
+inline def HistogramChart: ForwardRefExoticComponent[HistogramOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("HistogramChart").asInstanceOf[ForwardRefExoticComponent[HistogramOptions & RefAttributes[Any]]]
+
+inline def Interaction(props: IInteractionProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Interaction")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
+
+inline def Label(props: Any): typings.react.mod.global.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Label")(props.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
+
+inline def Legend(props: ILegend): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Legend")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
+
+inline def LineAdvance(props: ILineAdvanceGemoProps): typings.react.mod.global.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LineAdvance")(props.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
+
+inline def LineChart: ForwardRefExoticComponent[LineOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("LineChart").asInstanceOf[ForwardRefExoticComponent[LineOptions & RefAttributes[Any]]]
+
+inline def LiquidChart: ForwardRefExoticComponent[LiquidOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("LiquidChart").asInstanceOf[ForwardRefExoticComponent[LiquidOptions & RefAttributes[Any]]]
+
+inline def PercentStackedAreaChart: ForwardRefExoticComponent[PercentStackedAreaOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("PercentStackedAreaChart").asInstanceOf[ForwardRefExoticComponent[PercentStackedAreaOptions & RefAttributes[Any]]]
+
+inline def PercentStackedBarChart: ForwardRefExoticComponent[PercentStackedBarOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("PercentStackedBarChart").asInstanceOf[ForwardRefExoticComponent[PercentStackedBarOptions & RefAttributes[Any]]]
+
+inline def PercentStackedColumnChart: ForwardRefExoticComponent[PercentStackedColumnOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("PercentStackedColumnChart").asInstanceOf[ForwardRefExoticComponent[PercentStackedColumnOptions & RefAttributes[Any]]]
+
+inline def PieChart: ForwardRefExoticComponent[PieOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("PieChart").asInstanceOf[ForwardRefExoticComponent[PieOptions & RefAttributes[Any]]]
+
+inline def PlotAdapter: FC[IAdapterProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("PlotAdapter").asInstanceOf[FC[IAdapterProps]]
+
+inline def ProgressChart: ForwardRefExoticComponent[ProgressOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("ProgressChart").asInstanceOf[ForwardRefExoticComponent[ProgressOptions & RefAttributes[Any]]]
+
+inline def RadarChart: ForwardRefExoticComponent[RadarOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("RadarChart").asInstanceOf[ForwardRefExoticComponent[RadarOptions & RefAttributes[Any]]]
+
+inline def RangeBarChart: ForwardRefExoticComponent[RangeBarOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("RangeBarChart").asInstanceOf[ForwardRefExoticComponent[RangeBarOptions & RefAttributes[Any]]]
+
+inline def RangeColumnChart: ForwardRefExoticComponent[RangeColumnOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("RangeColumnChart").asInstanceOf[ForwardRefExoticComponent[RangeColumnOptions & RefAttributes[Any]]]
+
+inline def RingProgressChart: ForwardRefExoticComponent[RingProgressOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("RingProgressChart").asInstanceOf[ForwardRefExoticComponent[RingProgressOptions & RefAttributes[Any]]]
+
+inline def RoseChart: ForwardRefExoticComponent[RoseOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("RoseChart").asInstanceOf[ForwardRefExoticComponent[RoseOptions & RefAttributes[Any]]]
+
+inline def ScatterChart: ForwardRefExoticComponent[ScatterOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("ScatterChart").asInstanceOf[ForwardRefExoticComponent[ScatterOptions & RefAttributes[Any]]]
+
+inline def Slider(props: ISliderProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Slider")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
+
+inline def StackedAreaChart: ForwardRefExoticComponent[StackedAreaOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("StackedAreaChart").asInstanceOf[ForwardRefExoticComponent[StackedAreaOptions & RefAttributes[Any]]]
+
+inline def StackedBarChart: ForwardRefExoticComponent[StackedBarOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("StackedBarChart").asInstanceOf[ForwardRefExoticComponent[StackedBarOptions & RefAttributes[Any]]]
+
+inline def StackedColumnChart: ForwardRefExoticComponent[StackedColumnOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("StackedColumnChart").asInstanceOf[ForwardRefExoticComponent[StackedColumnOptions & RefAttributes[Any]]]
+
+inline def StackedRoseChart: ForwardRefExoticComponent[StackedRoseOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("StackedRoseChart").asInstanceOf[ForwardRefExoticComponent[StackedRoseOptions & RefAttributes[Any]]]
+
+inline def StepLineChart: ForwardRefExoticComponent[StepLineOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("StepLineChart").asInstanceOf[ForwardRefExoticComponent[StepLineOptions & RefAttributes[Any]]]
+
+inline def TinyAreaChart: ForwardRefExoticComponent[TinyAreaOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("TinyAreaChart").asInstanceOf[ForwardRefExoticComponent[TinyAreaOptions & RefAttributes[Any]]]
+
+inline def TinyColumnChart: ForwardRefExoticComponent[TinyColumnOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("TinyColumnChart").asInstanceOf[ForwardRefExoticComponent[TinyColumnOptions & RefAttributes[Any]]]
+
+inline def TinyLineChart: ForwardRefExoticComponent[TinyLineOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("TinyLineChart").asInstanceOf[ForwardRefExoticComponent[TinyLineOptions & RefAttributes[Any]]]
+
+inline def TreemapChart: ForwardRefExoticComponent[TreemapOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("TreemapChart").asInstanceOf[ForwardRefExoticComponent[TreemapOptions & RefAttributes[Any]]]
+
+inline def VERSION: /* "4.2.8" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[/* "4.2.8" */ String]
+
+inline def WaterfallChart: ForwardRefExoticComponent[WaterfallOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("WaterfallChart").asInstanceOf[ForwardRefExoticComponent[WaterfallOptions & RefAttributes[Any]]]
+
+inline def WordCloudChart: ForwardRefExoticComponent[WordCloudCfg & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("WordCloudChart").asInstanceOf[ForwardRefExoticComponent[WordCloudCfg & RefAttributes[Any]]]
+
+inline def createPlot[IPlotConfig /* <: Record[String, Any] */](PlotClass: Any, name: String): ForwardRefExoticComponent[PropsWithoutRef[IPlotConfig] & RefAttributes[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlot")(PlotClass.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[IPlotConfig] & RefAttributes[Any]]]
+inline def createPlot[IPlotConfig /* <: Record[String, Any] */](PlotClass: Any, name: String, transCfg: js.Function): ForwardRefExoticComponent[PropsWithoutRef[IPlotConfig] & RefAttributes[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlot")(PlotClass.asInstanceOf[js.Any], name.asInstanceOf[js.Any], transCfg.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[IPlotConfig] & RefAttributes[Any]]]
+
+inline def createThemeByStyleSheet(styleSheet: StyleSheet): LooseObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createThemeByStyleSheet")(styleSheet.asInstanceOf[js.Any]).asInstanceOf[LooseObject]
+
+inline def createTooltipConnector(): Connector = ^.asInstanceOf[js.Dynamic].applyDynamic("createTooltipConnector")().asInstanceOf[Connector]
+
+inline def getActionClass(actionName: String): ActionConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("getActionClass")(actionName.asInstanceOf[js.Any]).asInstanceOf[ActionConstructor]
+
+inline def getAnimation(`type`: String): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnimation")(`type`.asInstanceOf[js.Any]).asInstanceOf[Animation]
+
+inline def getEngine(name: String): IG = ^.asInstanceOf[js.Dynamic].applyDynamic("getEngine")(name.asInstanceOf[js.Any]).asInstanceOf[IG]
+
+inline def getFacet(`type`: String): FacetCtor = ^.asInstanceOf[js.Dynamic].applyDynamic("getFacet")(`type`.asInstanceOf[js.Any]).asInstanceOf[FacetCtor]
+
+inline def getGeometryLabel(`type`: String): GeometryLabelConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeometryLabel")(`type`.asInstanceOf[js.Any]).asInstanceOf[GeometryLabelConstructor]
+
+inline def getGeometryLabelLayout(`type`: String): GeometryLabelsLayoutFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeometryLabelLayout")(`type`.asInstanceOf[js.Any]).asInstanceOf[GeometryLabelsLayoutFn]
+
+inline def getInteraction(name: String): InteractionSteps | InteractionConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("getInteraction")(name.asInstanceOf[js.Any]).asInstanceOf[InteractionSteps | InteractionConstructor]
+
+inline def getShapeFactory(factoryName: String): ShapeFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("getShapeFactory")(factoryName.asInstanceOf[js.Any]).asInstanceOf[ShapeFactory]
+
+inline def getTheme(): LooseObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")().asInstanceOf[LooseObject]
+inline def getTheme(theme: String): LooseObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[LooseObject]
+
+inline def registerAction(actionName: String, ActionClass: ActionConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAction")(actionName.asInstanceOf[js.Any], ActionClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def registerAction(actionName: String, ActionClass: ActionConstructor, cfg: LooseObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAction")(actionName.asInstanceOf[js.Any], ActionClass.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def registerAnimation(`type`: String, animation: Animation): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAnimation")(`type`.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def registerComponentController(name: String, plugin: ControllerCtor[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerComponentController")(name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def registerEngine(name: String, engine: IG): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerEngine")(name.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def registerFacet(`type`: String, ctor: FacetCtor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFacet")(`type`.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def registerGeometry(name: String, Ctor: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGeometry")(name.asInstanceOf[js.Any], Ctor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def registerGeometryLabel(`type`: String, ctor: GeometryLabelConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGeometryLabel")(`type`.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def registerGeometryLabelLayout(`type`: String, layoutFn: GeometryLabelsLayoutFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGeometryLabelLayout")(`type`.asInstanceOf[js.Any], layoutFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def registerInteraction(name: String, interaction: InteractionSteps): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerInteraction")(name.asInstanceOf[js.Any], interaction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def registerInteraction(name: String, interaction: InteractionConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerInteraction")(name.asInstanceOf[js.Any], interaction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def registerShape(factoryName: String, shapeType: String, cfg: RegisterShape): Shape = (^.asInstanceOf[js.Dynamic].applyDynamic("registerShape")(factoryName.asInstanceOf[js.Any], shapeType.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[Shape]
+
+inline def registerShapeFactory(factoryName: String, cfg: RegisterShapeFactory): ShapeFactory = (^.asInstanceOf[js.Dynamic].applyDynamic("registerShapeFactory")(factoryName.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[ShapeFactory]
+
+inline def registerTheme(theme: String, value: LooseObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTheme")(theme.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def setDefaultErrorFallback(CustComponents: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultErrorFallback")(CustComponents.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def setGlobal(datum: Record[String, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobal")(datum.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def useChartInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useChartInstance")().asInstanceOf[Any]
+
+inline def useRootChart(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useRootChart")().asInstanceOf[Any]
+
+inline def useTheme(): js.Array[LooseObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[js.Array[LooseObject]]
+inline def useTheme(defaultThemeName: String): js.Array[LooseObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")(defaultThemeName.asInstanceOf[js.Any]).asInstanceOf[js.Array[LooseObject]]
+
+inline def useView(): typings.antvG2.libChartMod.Chart = ^.asInstanceOf[js.Dynamic].applyDynamic("useView")().asInstanceOf[typings.antvG2.libChartMod.Chart]
+
+inline def withChartInstance[T](Component: Any): ForwardRefExoticComponent[PropsWithoutRef[T] & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withChartInstance")(Component.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[T] & RefAttributes[Any]]]
+
+inline def withView[T](Component: Any): js.Function1[/* props */ T, typings.react.mod.global.JSX.Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("withView")(Component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ T, typings.react.mod.global.JSX.Element]]

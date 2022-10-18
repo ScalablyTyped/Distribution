@@ -25,9 +25,9 @@ object mod {
   inline def default(input: MJMLJsonObject): MJMLParseResults = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[MJMLParseResults]
   inline def default(input: MJMLJsonObject, options: MJMLParsingOptions): MJMLParseResults = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MJMLParseResults]
   
-  @JSImport("mjml-core", "BodyComponent")
+  /* note: abstract class */ @JSImport("mjml-core", "BodyComponent")
   @js.native
-  abstract class BodyComponent protected () extends Component {
+  open class BodyComponent protected () extends Component {
     def this(initialData: Any) = this()
     
     def getBoxWidths(): Borders = js.native
@@ -53,9 +53,9 @@ object mod {
     def styles(styles: Any): Any = js.native
   }
   
-  @JSImport("mjml-core", "Component")
+  /* note: abstract class */ @JSImport("mjml-core", "Component")
   @js.native
-  abstract class Component protected () extends StObject {
+  open class Component protected () extends StObject {
     def this(initialData: Any) = this()
     
     var attributes: Record[String, String] = js.native
@@ -117,9 +117,9 @@ object mod {
     inline def isRawElement(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRawElement")().asInstanceOf[Boolean]
   }
   
-  @JSImport("mjml-core", "HeadComponent")
+  /* note: abstract class */ @JSImport("mjml-core", "HeadComponent")
   @js.native
-  abstract class HeadComponent protected () extends Component {
+  open class HeadComponent protected () extends Component {
     def this(initialData: Any) = this()
     
     def handlerChildren(): Any = js.native

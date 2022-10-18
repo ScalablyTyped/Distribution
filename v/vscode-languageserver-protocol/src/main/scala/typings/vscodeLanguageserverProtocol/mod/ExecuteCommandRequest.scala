@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.ExecuteCommandParams
-import typings.vscodeLanguageserverProtocol.protocolMod.ExecuteCommandRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.ExecuteCommandParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.ExecuteCommandRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashexecuteCommand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object ExecuteCommandRequest {
   
   @JSImport("vscode-languageserver-protocol", "ExecuteCommandRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "ExecuteCommandRequest.method")
   @js.native
@@ -19,5 +19,5 @@ object ExecuteCommandRequest {
   
   @JSImport("vscode-languageserver-protocol", "ExecuteCommandRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[ExecuteCommandParams, Any, scala.Nothing, Unit, ExecuteCommandRegistrationOptions] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[ExecuteCommandParams, Any, scala.Nothing, Unit, ExecuteCommandRegistrationOptions] = js.native
 }

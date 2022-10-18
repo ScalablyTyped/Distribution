@@ -2,9 +2,9 @@ package typings.simplePlist
 
 import typings.node.fsMod.PathOrFileDescriptor
 import typings.node.fsMod.WriteFileOptions
-import typings.simplePlist.typesMod.PlistJsObj
-import typings.simplePlist.typesMod.StringOrBuffer
-import typings.simplePlist.typesMod.callbackFn
+import typings.simplePlist.distTypesMod.PlistJsObj
+import typings.simplePlist.distTypesMod.StringOrBuffer
+import typings.simplePlist.distTypesMod.callbackFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

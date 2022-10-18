@@ -1,7 +1,7 @@
 package typings.jimpPluginDisplace
 
-import typings.jimpCore.etcMod.ImageCallback
-import typings.jimpCore.jimpMod.Jimp
+import typings.jimpCore.typesEtcMod.ImageCallback
+import typings.jimpCore.typesJimpMod.Jimp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

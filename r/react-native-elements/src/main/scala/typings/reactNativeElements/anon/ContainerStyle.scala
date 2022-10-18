@@ -6,7 +6,7 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconNode
+import typings.reactNativeElements.distIconsIconMod.IconNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

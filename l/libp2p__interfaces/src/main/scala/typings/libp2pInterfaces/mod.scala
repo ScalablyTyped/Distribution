@@ -1,6 +1,5 @@
 package typings.libp2pInterfaces
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,7 +26,13 @@ object mod {
     }
   }
   
-  type RecursivePartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? T[P] extends std.Array<infer I>? std.Array<@libp2p/interfaces.@libp2p/interfaces.RecursivePartial<any>> : T[P] extends (args : ...any): any? T[P] : @libp2p/interfaces.@libp2p/interfaces.RecursivePartial<T[P]>}
-    */ typings.libp2pInterfaces.libp2pInterfacesStrings.RecursivePartial & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]:? T[P] extends std.Array<infer I>? std.Array<@libp2p/interfaces.@libp2p/interfaces.RecursivePartial<I>> : T[P] extends (args : ...any): any? T[P] : @libp2p/interfaces.@libp2p/interfaces.RecursivePartial<T[P]>}
+    }}}
+    */
+  @js.native
+  trait RecursivePartial[T] extends StObject
 }

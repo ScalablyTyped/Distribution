@@ -6,23 +6,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `217` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['community-profile'] */ js.Any
+  /**
+    * @description Body of the project
+    * @example This project represents the sprint of the first week in January
+    */
+  var body: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * @description Name of the project
+    * @example Week One Sprint
+    */
+  var name: String
 }
 object `217` {
   
-  inline def apply(
-    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['community-profile'] */ js.Any
-  ): `217` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+  inline def apply(name: String): `217` = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[`217`]
   }
   
   extension [Self <: `217`](x: Self) {
     
-    inline def setApplicationSlashjson(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['community-profile'] */ js.Any
-    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyNull: Self = StObject.set(x, "body", null)
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

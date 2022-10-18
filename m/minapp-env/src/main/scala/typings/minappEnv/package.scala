@@ -2,7 +2,6 @@ package typings.minappEnv
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.minappEnv.anon.OptionalRecordcompletesuc
 import typings.minappEnv.minappEnvStrings.complete
 import typings.minappEnv.minappEnvStrings.fail
@@ -18,17 +17,20 @@ type AnyObject = StringDictionary[Any]
 
 type ClassDecorator = js.Function1[/* target */ Function, Function | Unit]
 
-type Exclude[T, U] = T
-
 type IAPIFunction[T, P /* <: IAPIParam[T] */] = js.Function1[/* param */ P, Promise[T] | Any]
 
 type IAnyObject = Record[java.lang.String, Any]
 
 type ICloudServices = StringDictionary[ICloudService]
 
-type KVInfer[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: T[K]}
-  */ typings.minappEnv.minappEnvStrings.KVInfer & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ K in keyof T ]: T[K]}
+  }}}
+  */
+type KVInfer[T] = T
 
 type MethodDecorator = js.Function3[
 /* target */ Object, 
@@ -38,9 +40,14 @@ TypedPropertyDescriptor[Any] | Unit]
 
 type OQ[T /* <: OptionalRecordcompletesuc */] = (RQ[T] & (Required[Pick[T, success]])) | (RQ[T] & (Required[Pick[T, fail]])) | (RQ[T] & (Required[Pick[T, complete]])) | (RQ[T] & (Required[Pick[T, success | fail]])) | (RQ[T] & (Required[Pick[T, success | complete]])) | (RQ[T] & (Required[Pick[T, fail | complete]])) | (RQ[T] & (Required[Pick[T, fail | complete | success]]))
 
-type Optional[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? T[K]}
-  */ typings.minappEnv.minappEnvStrings.Optional & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ K in keyof T ]:? T[K]}
+  }}}
+  */
+type Optional[T] = T
 
 type ParameterDecorator = js.Function3[
 /* target */ Object, 
@@ -51,18 +58,28 @@ Unit]
 /**
   * Make all properties in T optional
   */
-type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]:? T[P]}
-  */ typings.minappEnv.minappEnvStrings.Partial & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ P in keyof T ]:? T[P]}
+  }}}
+  */
+type Partial[T] = T
 
 type PartialOptional[T, K /* <: /* keyof T */ java.lang.String */] = (Partial[Pick[T, K]]) & (Pick[T, Exclude[/* keyof T */ java.lang.String, K]])
 
 /**
   * From T pick a set of properties K
   */
-type Pick[T, K /* <: /* keyof T */ java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in K ]: T[P]}
-  */ typings.minappEnv.minappEnvStrings.Pick & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ P in K ]: T[P]}
+  }}}
+  */
+type Pick[T, K /* <: /* keyof T */ java.lang.String */] = T
 
 type PromiseConstructorLike = Instantiable1[
 /* executor */ js.Function2[
@@ -83,22 +100,37 @@ type RQ[T /* <: OptionalRecordcompletesuc */] = Pick[T, Exclude[/* keyof T */ ja
 /**
   * Make all properties in T readonly
   */
-type Readonly[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{readonly [ P in keyof T ]: T[P]}
-  */ typings.minappEnv.minappEnvStrings.Readonly & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {readonly [ P in keyof T ]: T[P]}
+  }}}
+  */
+type Readonly[T] = T
 
 /**
   * Construct a type with a set of properties K of type T
   */
-type Record[K /* <: java.lang.String */, T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in K ]: T}
-  */ typings.minappEnv.minappEnvStrings.Record & TopLevel[Any]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation throws away the known field names. 
+  * TS definition: {{{
+  {[ P in K ]: T}
+  }}}
+  */
+type Record[K /* <: java.lang.String */, T] = StringDictionary[T]
 
 /**
   * Utils
   */
-type Required[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: -? T[P]}
-  */ typings.minappEnv.minappEnvStrings.Required & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ P in keyof T ]: -? T[P]}
+  }}}
+  */
+type Required[T] = T
 
 type Void[T] = js.UndefOr[T | Null]

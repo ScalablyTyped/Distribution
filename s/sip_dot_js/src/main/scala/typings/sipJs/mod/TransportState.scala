@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TransportState extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.sipJs.transportStateMod.TransportState & String] = js.native
+  def apply(value: String): js.UndefOr[typings.sipJs.libApiTransportStateMod.TransportState & String] = js.native
   
-  /* "Connected" */ val Connected: typings.sipJs.transportStateMod.TransportState.Connected & String = js.native
+  /* "Connected" */ val Connected: typings.sipJs.libApiTransportStateMod.TransportState.Connected & String = js.native
   
-  /* "Connecting" */ val Connecting: typings.sipJs.transportStateMod.TransportState.Connecting & String = js.native
+  /* "Connecting" */ val Connecting: typings.sipJs.libApiTransportStateMod.TransportState.Connecting & String = js.native
   
-  /* "Disconnected" */ val Disconnected: typings.sipJs.transportStateMod.TransportState.Disconnected & String = js.native
+  /* "Disconnected" */ val Disconnected: typings.sipJs.libApiTransportStateMod.TransportState.Disconnected & String = js.native
   
-  /* "Disconnecting" */ val Disconnecting: typings.sipJs.transportStateMod.TransportState.Disconnecting & String = js.native
+  /* "Disconnecting" */ val Disconnecting: typings.sipJs.libApiTransportStateMod.TransportState.Disconnecting & String = js.native
 }

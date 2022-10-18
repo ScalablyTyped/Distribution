@@ -3,9 +3,9 @@ package typings.rcTreeSelect
 import org.scalablytyped.runtime.Shortcut
 import typings.rcTreeSelect.anon.Children
 import typings.rcTreeSelect.anon.SHOWALL
-import typings.rcTreeSelect.treeNodeMod.TreeNodeProps
-import typings.rcTreeSelect.treeSelectMod.DefaultOptionType
-import typings.rcTreeSelect.treeSelectMod.TreeSelectProps
+import typings.rcTreeSelect.esTreeNodeMod.TreeNodeProps
+import typings.rcTreeSelect.esTreeSelectMod.DefaultOptionType
+import typings.rcTreeSelect.esTreeSelectMod.TreeSelectProps
 import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject

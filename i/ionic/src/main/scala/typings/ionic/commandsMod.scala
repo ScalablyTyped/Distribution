@@ -2,7 +2,7 @@ package typings.ionic
 
 import typings.ionic.definitionsMod.IProject
 import typings.ionic.definitionsMod.IonicEnvironment
-import typings.ionic.namespaceMod.Namespace
+import typings.ionic.libNamespaceMod.Namespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

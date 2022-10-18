@@ -1,6 +1,6 @@
 package typings.luminoWidgets.mod
 
-import typings.luminoWidgets.docklayoutMod.DockLayout.IOptions
+import typings.luminoWidgets.typesDocklayoutMod.DockLayout.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@lumino/widgets", "DockLayout")
 @js.native
 open class DockLayout protected ()
-  extends typings.luminoWidgets.docklayoutMod.DockLayout {
+  extends typings.luminoWidgets.typesDocklayoutMod.DockLayout {
   /**
     * Construct a new dock layout.
     *

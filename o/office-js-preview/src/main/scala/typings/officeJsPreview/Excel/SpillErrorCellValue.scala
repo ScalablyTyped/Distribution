@@ -19,8 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the value of a cell containing a #SPILL! error.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait SpillErrorCellValue
   extends StObject
@@ -30,8 +29,7 @@ trait SpillErrorCellValue
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: js.UndefOr[error | Error] = js.undefined
   
@@ -41,8 +39,7 @@ trait SpillErrorCellValue
     * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: js.UndefOr[NumbersignSPILLExclamationmark | String] = js.undefined
   
@@ -50,8 +47,7 @@ trait SpillErrorCellValue
     * Represents the number of columns that would spill if there were no #SPILL! error.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var columnCount: js.UndefOr[Double] = js.undefined
   
@@ -59,8 +55,7 @@ trait SpillErrorCellValue
     * Represents the type of `SpillErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var errorSubType: js.UndefOr[
     SpillErrorCellValueSubType | Unknown_ | Collision | IndeterminateSize | WorksheetEdge | OutOfMemoryWhileCalc | typings.officeJsPreview.officeJsPreviewStrings.Table | MergedCell
@@ -70,8 +65,7 @@ trait SpillErrorCellValue
     * Represents the type of `ErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var errorType: js.UndefOr[spill | Spill] = js.undefined
   
@@ -79,8 +73,7 @@ trait SpillErrorCellValue
     * Represents the number of rows that would spill if there were no #SPILL! error.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var rowCount: js.UndefOr[Double] = js.undefined
   
@@ -88,8 +81,7 @@ trait SpillErrorCellValue
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: typings.officeJsPreview.Excel.CellValueType.error | Error
 }

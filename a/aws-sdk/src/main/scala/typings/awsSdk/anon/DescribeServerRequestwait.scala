@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.serviceMod.WaiterConfiguration
-import typings.awsSdk.transferMod.ServerId
+import typings.awsSdk.clientsTransferMod.ServerId
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait DescribeServerRequestwait extends StObject {
   /**
     * A system-assigned unique identifier for a server.
     */
-  var ServerId: typings.awsSdk.transferMod.ServerId
+  var ServerId: typings.awsSdk.clientsTransferMod.ServerId
 }
 object DescribeServerRequestwait {
   

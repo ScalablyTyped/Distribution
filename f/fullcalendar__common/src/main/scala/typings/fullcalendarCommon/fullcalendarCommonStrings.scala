@@ -28,10 +28,6 @@ object fullcalendarCommonStrings {
   inline def CHANGE_VIEW_TYPE: CHANGE_VIEW_TYPE = "CHANGE_VIEW_TYPE".asInstanceOf[CHANGE_VIEW_TYPE]
   
   @js.native
-  sealed trait EqualityFuncs extends StObject
-  inline def EqualityFuncs: EqualityFuncs = "EqualityFuncs".asInstanceOf[EqualityFuncs]
-  
-  @js.native
   sealed trait FETCH_EVENT_SOURCES extends StObject
   inline def FETCH_EVENT_SOURCES: FETCH_EVENT_SOURCES = "FETCH_EVENT_SOURCES".asInstanceOf[FETCH_EVENT_SOURCES]
   
@@ -84,14 +80,6 @@ object fullcalendarCommonStrings {
   @js.native
   sealed trait RESET_EVENTS extends StObject
   inline def RESET_EVENTS: RESET_EVENTS = "RESET_EVENTS".asInstanceOf[RESET_EVENTS]
-  
-  @js.native
-  sealed trait RawOptionsFromRefiners extends StObject
-  inline def RawOptionsFromRefiners: RawOptionsFromRefiners = "RawOptionsFromRefiners".asInstanceOf[RawOptionsFromRefiners]
-  
-  @js.native
-  sealed trait RefinedOptionsFromRefiners extends StObject
-  inline def RefinedOptionsFromRefiners: RefinedOptionsFromRefiners = "RefinedOptionsFromRefiners".asInstanceOf[RefinedOptionsFromRefiners]
   
   @js.native
   sealed trait SELECT_DATES extends StObject

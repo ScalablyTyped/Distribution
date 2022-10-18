@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSourcerepo.gapi.client.sourcerepo
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait Repo extends StObject {
   
   /** How this repository publishes a change in the repository through Cloud Pub/Sub. Keyed by the topic names. */
   var pubsubConfigs: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.sourcerepo.gapi.client.sourcerepo.PubsubConfig}
-    */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.Repo & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.sourcerepo.gapi.client.sourcerepo.PubsubConfig} */ js.Any
   ] = js.undefined
   
   /** The disk usage of the repo, in bytes. Read-only field. Size is only returned by GetRepo. */
@@ -44,9 +41,7 @@ object Repo {
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setPubsubConfigs(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.sourcerepo.gapi.client.sourcerepo.PubsubConfig}
-      */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.Repo & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.sourcerepo.gapi.client.sourcerepo.PubsubConfig} */ js.Any
     ): Self = StObject.set(x, "pubsubConfigs", value.asInstanceOf[js.Any])
     
     inline def setPubsubConfigsUndefined: Self = StObject.set(x, "pubsubConfigs", js.undefined)

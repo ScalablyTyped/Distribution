@@ -1,6 +1,6 @@
 package typings.luminoWidgets.mod
 
-import typings.luminoWidgets.menuMod.Menu.IOptions
+import typings.luminoWidgets.typesMenuMod.Menu.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@lumino/widgets", "Menu")
 @js.native
 open class Menu protected ()
-  extends typings.luminoWidgets.menuMod.Menu {
+  extends typings.luminoWidgets.typesMenuMod.Menu {
   /**
     * Construct a new menu.
     *
@@ -27,12 +27,12 @@ object Menu {
   @JSImport("@lumino/widgets", "Menu.Renderer")
   @js.native
   open class Renderer ()
-    extends typings.luminoWidgets.menuMod.Menu.Renderer
+    extends typings.luminoWidgets.typesMenuMod.Menu.Renderer
   
   /**
     * The default `Renderer` instance.
     */
   @JSImport("@lumino/widgets", "Menu.defaultRenderer")
   @js.native
-  val defaultRenderer: typings.luminoWidgets.menuMod.Menu.Renderer = js.native
+  val defaultRenderer: typings.luminoWidgets.typesMenuMod.Menu.Renderer = js.native
 }

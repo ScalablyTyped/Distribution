@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("js-joda", "IsoChronology")
+/* note: abstract class */ @JSImport("js-joda", "IsoChronology")
 @js.native
-/* private */ abstract class IsoChronology () extends StObject {
+/* private */ open class IsoChronology () extends StObject {
   
   def resolveDate(fieldValues: Any, resolverStyle: Any): Any = js.native
 }

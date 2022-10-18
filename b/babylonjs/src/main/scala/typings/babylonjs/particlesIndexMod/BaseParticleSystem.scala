@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Particles/index", "BaseParticleSystem")
 @js.native
 open class BaseParticleSystem protected ()
-  extends typings.babylonjs.baseParticleSystemMod.BaseParticleSystem {
+  extends typings.babylonjs.particlesBaseParticleSystemMod.BaseParticleSystem {
   /**
     * Instantiates a particle system.
     * Particles are often small sprites used to simulate hard-to-reproduce phenomena like fire, smoke, water, or abstract visual effects like magic glitter and faery dust.

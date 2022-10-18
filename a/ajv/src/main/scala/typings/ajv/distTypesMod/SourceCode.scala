@@ -1,8 +1,8 @@
 package typings.ajv.distTypesMod
 
-import typings.ajv.codeMod.Code
-import typings.ajv.codegenMod.ValueScopeName
-import typings.ajv.scopeMod.ScopeValueSets
+import typings.ajv.distCompileCodegenCodeMod.Code
+import typings.ajv.distCompileCodegenMod.ValueScopeName
+import typings.ajv.distCompileCodegenScopeMod.ScopeValueSets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

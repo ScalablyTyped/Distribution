@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def equivalentURI(a: typings.sipJs.uriMod.URI, b: typings.sipJs.uriMod.URI): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equivalentURI")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def equivalentURI(a: typings.sipJs.libGrammarUriMod.URI, b: typings.sipJs.libGrammarUriMod.URI): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equivalentURI")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def name: /* "sip.js" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("name").asInstanceOf[/* "sip.js" */ String]
 

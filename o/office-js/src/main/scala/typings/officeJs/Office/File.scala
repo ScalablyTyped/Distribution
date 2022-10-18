@@ -8,46 +8,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the document file associated with an Office Add-in.
   *
   * @remarks
-  * 
+  *
   * Access the File object with the AsyncResult.value property in the callback function passed to the Document.getFileAsync method.
-  * 
+  *
   */
 @js.native
 trait File extends StObject {
   
   /**
     * Closes the document file.
-    * 
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file | File}
-    * 
-    * No more than two documents are allowed to be in memory; otherwise the Document.getFileAsync operation will fail. Use the File.closeAsync 
+    *
+    * No more than two documents are allowed to be in memory; otherwise the Document.getFileAsync operation will fail. Use the File.closeAsync
     * method to close the file when you are finished working with it.
-    * 
-    * In the callback function passed to the closeAsync method, you can use the properties of the AsyncResult object to return the following 
+    *
+    * In the callback function passed to the closeAsync method, you can use the properties of the AsyncResult object to return the following
     * information.
-    * 
+    *
     * <table>
     *   <tr>
     *     <th>Property</th>
-    *     <th>Use to...</th>
+    *     <th>Use</th>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.value</td>
-    *     <td>Always returns undefined because there is no object or data to retrieve.</td>
+    *     <td><code>AsyncResult.value</code></td>
+    *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.status</td>
-    *     <td>Determine the success or failure of the operation.</td>
+    *     <td><code>AsyncResult.status</code></td>
+    *     <td>Determine the success or failure of the operation</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.error</td>
-    *     <td>Access an Error object that provides error information if the operation failed.</td>
+    *     <td><code>AsyncResult.error</code></td>
+    *     <td>Access an Error object that provides error information if the operation failed</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.asyncContext</td>
-    *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+    *     <td><code>AsyncResult.asyncContext</code></td>
+    *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
     *   </tr>
     * </table>
     *
@@ -58,37 +58,37 @@ trait File extends StObject {
   
   /**
     * Returns the specified slice.
-    * 
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file | File}
-    * 
-    * In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object to return the following 
+    *
+    * In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object to return the following
     * information.
-    * 
+    *
     * <table>
     *   <tr>
     *     <th>Property</th>
-    *     <th>Use to...</th>
+    *     <th>Use</th>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.value</td>
-    *     <td>Access the Slice object.</td>
+    *     <td><code>AsyncResult.value</code></td>
+    *     <td>Access the Slice object</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.status</td>
-    *     <td>Determine the success or failure of the operation.</td>
+    *     <td><code>AsyncResult.status</code></td>
+    *     <td>Determine the success or failure of the operation</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.error</td>
-    *     <td>Access an Error object that provides error information if the operation failed.</td>
+    *     <td><code>AsyncResult.error</code></td>
+    *     <td>Access an Error object that provides error information if the operation failed</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.asyncContext</td>
-    *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+    *     <td><code>AsyncResult.asyncContext</code></td>
+    *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
     *   </tr>
     * </table>
-    * 
+    *
     * @param sliceIndex Specifies the zero-based index of the slice to be retrieved. Required.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the {@link Office.Slice} object.

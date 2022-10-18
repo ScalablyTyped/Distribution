@@ -30,6 +30,6 @@ object Category {
     
     inline def setProvenance_idsUndefined: Self = StObject.set(x, "provenance_ids", js.undefined)
     
-    inline def setProvenance_idsVarargs(value: String*): Self = StObject.set(x, "provenance_ids", js.Array(value :_*))
+    inline def setProvenance_idsVarargs(value: String*): Self = StObject.set(x, "provenance_ids", js.Array(value*))
   }
 }

@@ -104,9 +104,9 @@ object mod {
     val type_CSSMediaRule: `4` = js.native
   }
   
-  @JSImport("cssom", "CSSRule")
+  /* note: abstract class */ @JSImport("cssom", "CSSRule")
   @js.native
-  abstract class CSSRule () extends StObject {
+  open class CSSRule () extends StObject {
     
     val cssText: String = js.native
     
@@ -304,9 +304,9 @@ object mod {
     var mediaText: String = js.native
   }
   
-  @JSImport("cssom", "StyleSheet")
+  /* note: abstract class */ @JSImport("cssom", "StyleSheet")
   @js.native
-  abstract class StyleSheet () extends StObject {
+  open class StyleSheet () extends StObject {
     
     var parentStyleSheet: StyleSheet | Null = js.native
   }

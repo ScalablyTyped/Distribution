@@ -2,7 +2,7 @@ package typings.webpackPluginServe
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.connectHistoryApiFallback.mod.Options
-import typings.httpProxyMiddleware.typesMod.RequestHandler
+import typings.httpProxyMiddleware.distTypesMod.RequestHandler
 import typings.koa.mod.Context
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
@@ -10,9 +10,9 @@ import typings.koa.mod.^
 import typings.koaCompress.mod.CompressOptions
 import typings.node.http2Mod.SecureServerOptions
 import typings.node.http2Mod.ServerOptions
-import typings.node.nodeHttpMod.IncomingMessage
-import typings.node.nodeHttpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonhttpMod.IncomingMessage
+import typings.node.nodeColonhttpMod.ServerResponse
+import typings.node.nodeColonnetMod.Socket
 import typings.webpackPluginServe.anon.Address
 import typings.webpackPluginServe.anon.App
 import typings.webpackPluginServe.anon.Apply
@@ -48,7 +48,7 @@ object mod {
     
     def historyFallback(opts: Options): Unit = js.native
     
-    def proxy(args: typings.httpProxyMiddleware.typesMod.Options): RequestHandler = js.native
+    def proxy(args: typings.httpProxyMiddleware.distTypesMod.Options): RequestHandler = js.native
     
     def static(paths: js.Array[String]): Unit = js.native
     def static(paths: js.Array[String], opts: typings.koaStatic.mod.Options): Unit = js.native

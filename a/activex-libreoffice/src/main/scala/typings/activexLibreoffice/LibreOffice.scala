@@ -1786,7 +1786,7 @@ object LibreOffice {
     @JSName("getByName")
     def getByName_singletoncomsunstardeploymentExtensionManager(aName: SlashsingletonSlashcomDotsunDotstarDotdeploymentDotExtensionManager): ExtensionManager = js.native
     @JSName("getByName")
-    def getByName_singletoncomsunstardeploymentPackageInformationProvider(aName: String): PackageInformationProvider = js.native
+    def getByName_singletoncomsunstardeploymentPackageInformationProvider(aName: /* /singleton/com.sun.star.deployment.PackageInformationProvider */ String): PackageInformationProvider = js.native
     @JSName("getByName")
     def getByName_singletoncomsunstardeploymentthePackageManagerFactory(aName: SlashsingletonSlashcomDotsunDotstarDotdeploymentDotthePackageManagerFactory): thePackageManagerFactory = js.native
     @JSName("getByName")
@@ -1814,7 +1814,7 @@ object LibreOffice {
     @JSName("getByName")
     def getByName_singletoncomsunstarscriptbrowsetheBrowseNodeFactory(aName: SlashsingletonSlashcomDotsunDotstarDotscriptDotbrowseDottheBrowseNodeFactory): theBrowseNodeFactory = js.native
     @JSName("getByName")
-    def getByName_singletoncomsunstarscriptprovidertheMasterScriptProviderFactory(aName: String): theMasterScriptProviderFactory = js.native
+    def getByName_singletoncomsunstarscriptprovidertheMasterScriptProviderFactory(aName: /* /singleton/com.sun.star.script.provider.theMasterScriptProviderFactory */ String): theMasterScriptProviderFactory = js.native
     @JSName("getByName")
     def getByName_singletoncomsunstarscripttheServiceDocumenter(aName: SlashsingletonSlashcomDotsunDotstarDotscriptDottheServiceDocumenter): theServiceDocumenter = js.native
     @JSName("getByName")
@@ -1826,7 +1826,7 @@ object LibreOffice {
     @JSName("getByName")
     def getByName_singletoncomsunstaruiContextChangeEventMultiplexer(aName: SlashsingletonSlashcomDotsunDotstarDotuiDotContextChangeEventMultiplexer): ContextChangeEventMultiplexer = js.native
     @JSName("getByName")
-    def getByName_singletoncomsunstaruitheModuleUIConfigurationManagerSupplier(aName: String): theModuleUIConfigurationManagerSupplier = js.native
+    def getByName_singletoncomsunstaruitheModuleUIConfigurationManagerSupplier(aName: /* /singleton/com.sun.star.ui.theModuleUIConfigurationManagerSupplier */ String): theModuleUIConfigurationManagerSupplier = js.native
     @JSName("getByName")
     def getByName_singletoncomsunstaruitheUICategoryDescription(aName: SlashsingletonSlashcomDotsunDotstarDotuiDottheUICategoryDescription): theUICategoryDescription = js.native
     @JSName("getByName")
@@ -1838,7 +1838,7 @@ object LibreOffice {
     @JSName("getByName")
     def getByName_singletoncomsunstarutiltheMacroExpander(aName: SlashsingletonSlashcomDotsunDotstarDotutilDottheMacroExpander): theMacroExpander = js.native
     @JSName("getByName")
-    def getByName_singletoncomsunstarutiltheOfficeInstallationDirectories(aName: String): theOfficeInstallationDirectories = js.native
+    def getByName_singletoncomsunstarutiltheOfficeInstallationDirectories(aName: /* /singleton/com.sun.star.util.theOfficeInstallationDirectories */ String): theOfficeInstallationDirectories = js.native
     @JSName("getByName")
     def getByName_singletoncomsunstarutilthePathSettings(aName: SlashsingletonSlashcomDotsunDotstarDotutilDotthePathSettings): thePathSettings = js.native
   }
@@ -1848,7 +1848,7 @@ object LibreOffice {
     extends StObject
        with ServiceManager {
     
-    def Bridge_GetStruct[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 388 */ Any */](structName: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-libreoffice.LibreOffice.StructNameMap[K] */ js.Any = js.native
+    def Bridge_GetStruct[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 388, starting with typings.activexLibreoffice.activexLibreofficeStrings.comDotsunDotstarDotaccessibilityDotAccessibleEventObject, typings.activexLibreoffice.activexLibreofficeStrings.comDotsunDotstarDotaccessibilityDotAccessibleRelation, typings.activexLibreoffice.activexLibreofficeStrings.comDotsunDotstarDotaccessibilityDotAccessibleTableModelChange */ Any */](structName: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-libreoffice.LibreOffice.StructNameMap[K] */ js.Any = js.native
     
     /**
       * Returns a Value Object, for explicitly specifying the types of values passed into the UNO API

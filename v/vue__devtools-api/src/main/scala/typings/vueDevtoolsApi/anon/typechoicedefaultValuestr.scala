@@ -1,6 +1,6 @@
 package typings.vueDevtoolsApi.anon
 
-import typings.vueDevtoolsApi.pluginMod.PluginSettingsItem
+import typings.vueDevtoolsApi.libEsmPluginMod.PluginSettingsItem
 import typings.vueDevtoolsApi.vueDevtoolsApiStrings.`button-group`
 import typings.vueDevtoolsApi.vueDevtoolsApiStrings.choice
 import typings.vueDevtoolsApi.vueDevtoolsApiStrings.select

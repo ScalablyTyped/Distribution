@@ -7,7 +7,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/server/common.html#get--_db_updates
+/** Global changes feed paramters.
+  * @see Docs: {@link http://docs.couchdb.org/en/latest/api/server/common.html#get--_db_updates} */
 trait UpdatesParams extends StObject {
   
   var feed: longpoll | continuous | eventsource

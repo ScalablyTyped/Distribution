@@ -1,7 +1,7 @@
 package typings.atlaskitAnalyticsNext
 
-import typings.atlaskitAnalyticsNext.analyticsErrorBoundaryMod.AnalyticsErrorBoundaryErrorInfo
-import typings.atlaskitAnalyticsNext.uianalyticseventMod.default
+import typings.atlaskitAnalyticsNext.distTypesComponentsAnalyticsErrorBoundaryMod.AnalyticsErrorBoundaryErrorInfo
+import typings.atlaskitAnalyticsNext.distTypesEventsUianalyticseventMod.default
 import typings.react.mod.ComponentType
 import typings.react.mod.Key
 import typings.react.mod.ReactNode

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** Constructs a new buffer writer instance. */
 open class BufferWriter ()
-  extends typings.googleGax.fallbackMod.protobuf.BufferWriter
+  extends typings.googleGax.buildSrcFallbackMod.protobuf.BufferWriter
 /* static members */
 object BufferWriter {
   

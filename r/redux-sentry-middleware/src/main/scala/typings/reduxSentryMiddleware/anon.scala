@@ -5,10 +5,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.sentryBrowser.anon.TypeofCoreIntegrations
 import typings.sentryBrowser.anon.TypeofCoreIntegrationsInstantiable
-import typings.sentryBrowser.clientMod.BrowserClientOptions
-import typings.sentryBrowser.clientMod.BrowserOptions
-import typings.sentryBrowser.helpersMod.ReportDialogOptions
-import typings.sentryBrowser.integrationsMod.TryCatch
 import typings.sentryBrowser.mod.Breadcrumbs
 import typings.sentryBrowser.mod.Dedupe
 import typings.sentryBrowser.mod.FunctionToString
@@ -17,37 +13,41 @@ import typings.sentryBrowser.mod.HttpContext
 import typings.sentryBrowser.mod.InboundFilters
 import typings.sentryBrowser.mod.LinkedErrors
 import typings.sentryBrowser.mod.Scope
-import typings.sentryBrowser.typesMod.BrowserTransportOptions
-import typings.sentryBrowser.utilsMod.FetchImpl
-import typings.sentryHub.anon.FnCall
-import typings.sentryHub.anon.FnCallBreadcrumbHint
-import typings.sentryHub.anon.FnCallCallback
-import typings.sentryHub.anon.FnCallContextCustomSamplingContext
-import typings.sentryHub.anon.FnCallEventHint
-import typings.sentryHub.anon.FnCallMessageLevelHint
-import typings.sentryHub.anon.FnCallNameContext
-import typings.sentryHub.anon.FnCallUser
-import typings.sentryHub.hubMod.Carrier
-import typings.sentryHub.hubMod.Hub
-import typings.sentryTypes.breadcrumbMod.Breadcrumb
-import typings.sentryTypes.eventMod.Event
-import typings.sentryTypes.eventMod.EventHint
-import typings.sentryTypes.eventprocessorMod.EventProcessor
-import typings.sentryTypes.extraMod.Extra
-import typings.sentryTypes.extraMod.Extras
-import typings.sentryTypes.miscMod.Primitive
-import typings.sentryTypes.scopeMod.CaptureContext
-import typings.sentryTypes.severityMod.Severity
-import typings.sentryTypes.severityMod.SeverityLevel
-import typings.sentryTypes.stackframeMod.StackFrame
-import typings.sentryTypes.stacktraceMod.StackLineParser
-import typings.sentryTypes.transactionMod.CustomSamplingContext
-import typings.sentryTypes.transactionMod.TransactionContext
-import typings.sentryTypes.transportMod.InternalBaseTransportOptions
-import typings.sentryTypes.transportMod.Transport
-import typings.sentryTypes.transportMod.TransportRequestExecutor
-import typings.sentryTypes.userMod.User
-import typings.sentryUtils.promisebufferMod.PromiseBuffer
+import typings.sentryBrowser.typesClientMod.BrowserClientOptions
+import typings.sentryBrowser.typesClientMod.BrowserOptions
+import typings.sentryBrowser.typesHelpersMod.ReportDialogOptions
+import typings.sentryBrowser.typesIntegrationsMod.TryCatch
+import typings.sentryBrowser.typesTransportsTypesMod.BrowserTransportOptions
+import typings.sentryBrowser.typesTransportsUtilsMod.FetchImpl
+import typings.sentryCore.anon.FnCall
+import typings.sentryCore.anon.FnCallCallback
+import typings.sentryCore.anon.FnCallContextCustomSamplingContext
+import typings.sentryCore.anon.FnCallEventHint
+import typings.sentryCore.anon.FnCallExceptionHint
+import typings.sentryCore.anon.FnCallMessageLevelHint
+import typings.sentryCore.anon.FnCallNameContext
+import typings.sentryCore.anon.FnCallUser
+import typings.sentryCore.typesHubMod.Carrier
+import typings.sentryCore.typesHubMod.Hub
+import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
+import typings.sentryTypes.typesEventMod.Event
+import typings.sentryTypes.typesEventMod.EventHint
+import typings.sentryTypes.typesEventprocessorMod.EventProcessor
+import typings.sentryTypes.typesExtraMod.Extra
+import typings.sentryTypes.typesExtraMod.Extras
+import typings.sentryTypes.typesMiscMod.Primitive
+import typings.sentryTypes.typesScopeMod.CaptureContext
+import typings.sentryTypes.typesSeverityMod.Severity
+import typings.sentryTypes.typesSeverityMod.SeverityLevel
+import typings.sentryTypes.typesStackframeMod.StackFrame
+import typings.sentryTypes.typesStacktraceMod.StackLineParser
+import typings.sentryTypes.typesTransactionMod.CustomSamplingContext
+import typings.sentryTypes.typesTransactionMod.TransactionContext
+import typings.sentryTypes.typesTransportMod.InternalBaseTransportOptions
+import typings.sentryTypes.typesTransportMod.Transport
+import typings.sentryTypes.typesTransportMod.TransportRequestExecutor
+import typings.sentryTypes.typesUserMod.User
+import typings.sentryUtils.typesPromisebufferMod.PromiseBuffer
 import typings.std.PromiseLike
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -197,7 +197,7 @@ object anon {
     extends StObject
        with Instantiable0[Scope] {
     
-    def clone(scope: typings.sentryHub.scopeMod.Scope): typings.sentryHub.scopeMod.Scope = js.native
+    def clone(scope: typings.sentryCore.typesScopeMod.Scope): typings.sentryCore.typesScopeMod.Scope = js.native
   }
   
   @js.native
@@ -223,21 +223,21 @@ object anon {
     
     var LinkedErrors: TypeofLinkedErrors = js.native
     
-    val SDK_VERSION: /* "7.14.0" */ String = js.native
+    val SDK_VERSION: /* "7.15.0" */ String = js.native
     
     var Scope: TypeofScope = js.native
     
     var TryCatch: TypeofTryCatch = js.native
     
-    def addBreadcrumb(breadcrumb: Breadcrumb): ReturnType[FnCallBreadcrumbHint] = js.native
+    def addBreadcrumb(breadcrumb: Breadcrumb): ReturnType[FnCall] = js.native
     
     def addGlobalEventProcessor(callback: EventProcessor): Unit = js.native
     
     def captureEvent(event: Event): ReturnType[FnCallEventHint] = js.native
     def captureEvent(event: Event, hint: EventHint): ReturnType[FnCallEventHint] = js.native
     
-    def captureException(exception: Any): ReturnType[FnCall] = js.native
-    def captureException(exception: Any, captureContext: CaptureContext): ReturnType[FnCall] = js.native
+    def captureException(exception: Any): ReturnType[FnCallExceptionHint] = js.native
+    def captureException(exception: Any, captureContext: CaptureContext): ReturnType[FnCallExceptionHint] = js.native
     
     def captureMessage(message: String): ReturnType[FnCallMessageLevelHint] = js.native
     def captureMessage(message: String, captureContext: CaptureContext): ReturnType[FnCallMessageLevelHint] = js.native
@@ -249,7 +249,7 @@ object anon {
     def close(): PromiseLike[Boolean] = js.native
     def close(timeout: Double): PromiseLike[Boolean] = js.native
     
-    def configureScope(callback: js.Function1[/* scope */ typings.sentryHub.scopeMod.Scope, Unit]): ReturnType[FnCallCallback] = js.native
+    def configureScope(callback: js.Function1[/* scope */ typings.sentryCore.typesScopeMod.Scope, Unit]): ReturnType[FnCallCallback] = js.native
     
     def createTransport(options: InternalBaseTransportOptions, makeRequest: TransportRequestExecutor): Transport = js.native
     def createTransport(
@@ -259,7 +259,7 @@ object anon {
     ): Transport = js.native
     
     val defaultIntegrations: js.Array[
-        typings.sentryBrowser.integrationsMod.GlobalHandlers | TryCatch | typings.sentryBrowser.integrationsMod.Breadcrumbs | typings.sentryBrowser.integrationsMod.LinkedErrors | typings.sentryBrowser.integrationsMod.HttpContext | typings.sentryBrowser.integrationsMod.Dedupe | typings.sentryCore.mod.Integrations.InboundFilters | typings.sentryCore.mod.Integrations.FunctionToString
+        typings.sentryBrowser.typesIntegrationsMod.GlobalHandlers | TryCatch | typings.sentryBrowser.typesIntegrationsMod.Breadcrumbs | typings.sentryBrowser.typesIntegrationsMod.LinkedErrors | typings.sentryBrowser.typesIntegrationsMod.HttpContext | typings.sentryBrowser.typesIntegrationsMod.Dedupe | typings.sentryCore.mod.Integrations.InboundFilters | typings.sentryCore.mod.Integrations.FunctionToString
       ] = js.native
     
     val defaultStackLineParsers: js.Array[StackLineParser] = js.native
@@ -320,7 +320,7 @@ object anon {
     
     val winjsStackLineParser: StackLineParser = js.native
     
-    def withScope(callback: js.Function1[/* scope */ typings.sentryHub.scopeMod.Scope, Unit]): ReturnType[FnCallCallback] = js.native
+    def withScope(callback: js.Function1[/* scope */ typings.sentryCore.typesScopeMod.Scope, Unit]): ReturnType[FnCallCallback] = js.native
     
     def wrap(fn: js.Function1[/* args */ Any, Any]): Any = js.native
   }

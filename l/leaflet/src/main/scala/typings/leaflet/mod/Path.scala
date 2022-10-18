@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("leaflet", "Path")
+/* note: abstract class */ @JSImport("leaflet", "Path")
 @js.native
-abstract class Path () extends Layer {
+open class Path () extends Layer {
   def this(options: LayerOptions) = this()
   
   def bringToBack(): this.type = js.native

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides an interface for a barometric sensor to measure atmospheric pressure. */
-@JSGlobal("Windows.Devices.Sensors.Barometer")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.Barometer")
 @js.native
-abstract class Barometer ()
+open class Barometer ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.Barometer
 object Barometer {

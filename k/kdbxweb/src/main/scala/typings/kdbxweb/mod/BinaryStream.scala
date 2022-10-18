@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("kdbxweb", "BinaryStream")
 @js.native
 open class BinaryStream ()
-  extends typings.kdbxweb.binaryStreamMod.BinaryStream {
+  extends typings.kdbxweb.distTypesUtilsBinaryStreamMod.BinaryStream {
   def this(arrayBuffer: js.typedarray.ArrayBuffer) = this()
 }

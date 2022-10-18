@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.Delay
-import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
+import typings.officeUiFabricReact.libComponentsTooltipTooltipHostDottypesMod.ITooltipHostProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

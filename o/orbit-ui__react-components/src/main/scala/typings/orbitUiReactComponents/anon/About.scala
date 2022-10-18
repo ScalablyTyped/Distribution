@@ -1,5 +1,6 @@
 package typings.orbitUiReactComponents.anon
 
+import typings.orbitUiReactComponents.distSharedSrcUseMergedRefsMod.MergedRef
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.`additions removals`
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.`additions text`
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.`inline`
@@ -50,7 +51,6 @@ import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.tree
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.url
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.vertical
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.yes
-import typings.orbitUiReactComponents.useMergedRefsMod.MergedRef
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.AriaRole
 import typings.react.mod.ClipboardEventHandler

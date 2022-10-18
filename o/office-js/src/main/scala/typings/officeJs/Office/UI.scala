@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in your Office Add-ins.
-  * 
-  * Visit "{@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Dialog API in your Office Add-ins}" 
+  *
+  * Visit "{@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Dialog API in your Office Add-ins}"
   * for more information.
   */
 @js.native
@@ -65,20 +65,20 @@ trait UI extends StObject {
     * Closes the UI container where the JavaScript is executing.
     *
     * @remarks
-    * 
-    * **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.5), PowerPoint, Word
-    * 
+    *
+    * **Applications**: Excel, Outlook (Minimum requirement set: Mailbox 1.5), PowerPoint, Word
+    *
     * **Requirement sets**:
     *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
     *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.5}
-    * 
+    *
     * The behavior of this method is specified by the following:
     *
     * - Called from a UI-less command button: No effect. Any dialog opened by displayDialogAsync will remain open.
     *
-    * - Called from a task pane: The task pane will close. Any dialog opened by displayDialogAsync will also close. 
+    * - Called from a task pane: The task pane will close. Any dialog opened by displayDialogAsync will also close.
     * If the task pane supports pinning and was pinned by the user, it will be un-pinned.
     *
     * - Called from a module extension: No effect.
@@ -90,35 +90,35 @@ trait UI extends StObject {
     *
     * @remarks
     *
-    * **Hosts**: Excel, Outlook, PowerPoint, Word
+    * **Applications**: Excel, Outlook, PowerPoint, Word
     *
-    * **Requirement sets**: 
+    * **Requirement sets**:
     *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
     *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.4}
     *
     * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
-    * for Outlook. For more on how to specify a requirement set in your manifest, see 
-    * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
+    * for Outlook. For more on how to specify a requirement set in your manifest, see
+    * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}.
     *
-    * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to 
+    * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
     * other domains.
     *
     * Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
     *
     * **Design considerations**:
     *
-    * The following design considerations apply to dialog boxes:
+    * The following design considerations apply to dialog boxes.
     *
-    * - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in 
+    * - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in
     * Commands (custom ribbon buttons or menu items).
     *
     * - Every dialog box can be moved and resized by the user.
     *
     * - Every dialog box is centered on the screen when opened.
     *
-    * - Dialog boxes appear on top of the host application and in the order in which they were created.
+    * - Dialog boxes appear on top of the application and in the order in which they were created.
     *
     * Use a dialog box to:
     *
@@ -129,9 +129,9 @@ trait UI extends StObject {
     * - Temporarily increase the surface area that a user has available to complete a task.
     *
     * Do not use a dialog box to interact with a document. Use a task pane instead.
-    * 
-    * **displayDialogAsync Errors**:
-    * 
+    *
+    * **displayDialogAsync Errors**
+    *
     * <table>
     *   <tr>
     *     <th>Code number</th>
@@ -139,7 +139,7 @@ trait UI extends StObject {
     *   </tr>
     *   <tr>
     *     <td>12004</td>
-    *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the `AppDomains` section of the add-in manifest.</td>
+    *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <code>AppDomains</code> section of the add-in manifest.</td>
     *   </tr>
     *   <tr>
     *     <td>12005</td>
@@ -154,30 +154,30 @@ trait UI extends StObject {
     *     <td>The user chose to ignore the dialog box. This error can occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td>
     *   </tr>
     * </table>
-    * 
-    * In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the 
+    *
+    * In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the
     * following information.
-    * 
+    *
     * <table>
     *   <tr>
     *     <th>Property</th>
-    *     <th>Use to</th>
+    *     <th>Use</th>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.value</td>
-    *     <td>Access the Dialog object.</td>
+    *     <td><code>AsyncResult.value</code></td>
+    *     <td>Access the Dialog object</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.status</td>
-    *     <td>Determine the success or failure of the operation.</td>
+    *     <td><code>AsyncResult.status</code></td>
+    *     <td>Determine the success or failure of the operation</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.error</td>
-    *     <td>Access an Error object that provides error information if the operation failed.</td>
+    *     <td><code>AsyncResult.error</code></td>
+    *     <td>Access an Error object that provides error information if the operation failed</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.asyncContext</td>
-    *     <td>Access your user-defined object or value, if you passed one as the asyncContext parameter.</td>
+    *     <td><code>AsyncResult.asyncContext</code></td>
+    *     <td>Access your user-defined object or value, if you passed one as the asyncContext parameter</td>
     *   </tr>
     * </table>
     *

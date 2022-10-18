@@ -5,9 +5,9 @@ import typings.node.anon.encodingbuffernullExecOpt
 import typings.node.bufferMod.global.Buffer
 import typings.node.childProcessMod.^
 import typings.node.fsMod.ObjectEncodingOptions
-import typings.node.nodeStreamMod.Readable
-import typings.node.nodeStreamMod.Stream
-import typings.node.nodeStreamMod.Writable
+import typings.node.nodeColonstreamMod.Readable
+import typings.node.nodeColonstreamMod.Stream
+import typings.node.nodeColonstreamMod.Writable
 import typings.node.nodeStrings.ipc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

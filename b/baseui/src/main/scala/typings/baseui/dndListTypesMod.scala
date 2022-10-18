@@ -4,7 +4,7 @@ import typings.baseui.anon.NewIndex
 import typings.baseui.anon.NewState
 import typings.baseui.anon.OmitListPropschildren
 import typings.baseui.baseuiStrings.change_
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

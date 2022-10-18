@@ -1,8 +1,8 @@
 package typings.antvGBase
 
-import typings.antvGBase.typesMod.ChangeType
-import typings.antvGBase.typesMod.Cursor
-import typings.antvGBase.typesMod.Renderer
+import typings.antvGBase.libTypesMod.ChangeType
+import typings.antvGBase.libTypesMod.Cursor
+import typings.antvGBase.libTypesMod.Renderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

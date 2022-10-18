@@ -1,7 +1,7 @@
 package typings.uirouterAngularjs.mod
 
-import typings.uirouterCore.urlInterfaceMod.UrlRuleHandlerFn
-import typings.uirouterCore.urlInterfaceMod.UrlRuleMatchFn
+import typings.uirouterCore.libUrlInterfaceMod.UrlRuleHandlerFn
+import typings.uirouterCore.libUrlInterfaceMod.UrlRuleMatchFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

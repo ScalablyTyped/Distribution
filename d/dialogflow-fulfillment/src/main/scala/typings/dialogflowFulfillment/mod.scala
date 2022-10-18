@@ -1,8 +1,8 @@
 package typings.dialogflowFulfillment
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.actionsOnGoogle.commonMod.JsonObject
-import typings.actionsOnGoogle.contextMod.Contexts
+import typings.actionsOnGoogle.distCommonMod.JsonObject
+import typings.actionsOnGoogle.distServiceDialogflowContextMod.Contexts
 import typings.actionsOnGoogle.mod.DialogflowConversation
 import typings.dialogflowFulfillment.anon.ImageUrl
 import typings.dialogflowFulfillment.anon.Lifespan

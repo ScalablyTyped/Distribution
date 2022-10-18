@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/core", "UnsupportedPlatformException")
 @js.native
 open class UnsupportedPlatformException ()
-  extends typings.angularDevkitCore.exceptionMod.UnsupportedPlatformException
+  extends typings.angularDevkitCore.srcExceptionMod.UnsupportedPlatformException

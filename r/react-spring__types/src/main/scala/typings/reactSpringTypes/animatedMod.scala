@@ -1,13 +1,18 @@
 package typings.reactSpringTypes
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animatedMod {
   
-  type Animatable[T] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: @react-spring/types.@react-spring/types/animated.Animatable<T[P]>}
-    */ typings.reactSpringTypes.reactSpringTypesStrings.Animatable & TopLevel[T]) | (js.Array[Double | String]) | String | Double
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends number ? number : T extends string ? string : T extends std.ReadonlyArray<number | string> ? std.Array<number | string> extends T ? std.ReadonlyArray<number | string> : {[ P in keyof T ]: @react-spring/types.@react-spring/types/animated.Animatable<T[P]>} : never
+    }}}
+    */
+  @js.native
+  trait Animatable[T] extends StObject
 }

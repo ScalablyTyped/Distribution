@@ -1,6 +1,6 @@
 package typings.reactFlatpickr
 
-import typings.flatpickr.globalsMod.global.Date
+import typings.flatpickr.distTypesGlobalsMod.global.Date
 import typings.flatpickr.mod.flatpickr.Instance
 import typings.flatpickr.mod.flatpickr.Options.Hook
 import typings.flatpickr.mod.flatpickr.Options.Options
@@ -1618,49 +1618,49 @@ object mod {
       inline def setOffsetWidthUndefined: Self = StObject.set(x, "offsetWidth", js.undefined)
       
       inline def setOnChange(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.instanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.distTypesInstanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       inline def setOnClose(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.instanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.distTypesInstanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onClose", js.Any.fromFunction4(value))
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
       inline def setOnDayCreate(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.instanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.distTypesInstanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onDayCreate", js.Any.fromFunction4(value))
       
       inline def setOnDayCreateUndefined: Self = StObject.set(x, "onDayCreate", js.undefined)
       
       inline def setOnMonthChange(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.instanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.distTypesInstanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onMonthChange", js.Any.fromFunction4(value))
       
       inline def setOnMonthChangeUndefined: Self = StObject.set(x, "onMonthChange", js.undefined)
       
       inline def setOnOpen(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.instanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.distTypesInstanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onOpen", js.Any.fromFunction4(value))
       
       inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
       inline def setOnReady(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.instanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.distTypesInstanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onReady", js.Any.fromFunction4(value))
       
       inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
       
       inline def setOnValueUpdate(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.instanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.distTypesInstanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onValueUpdate", js.Any.fromFunction4(value))
       
       inline def setOnValueUpdateUndefined: Self = StObject.set(x, "onValueUpdate", js.undefined)
       
       inline def setOnYearChange(
-        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.instanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
+        value: (/* dates */ js.Array[Date], /* currentDateString */ String, /* self */ typings.flatpickr.distTypesInstanceMod.Instance, /* data */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onYearChange", js.Any.fromFunction4(value))
       
       inline def setOnYearChangeUndefined: Self = StObject.set(x, "onYearChange", js.undefined)

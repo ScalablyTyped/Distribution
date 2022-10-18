@@ -6,9 +6,9 @@ import typings.bunyanDebugStream.anon.Consumed
 import typings.bunyanDebugStream.anon.DebugStream
 import typings.bunyanDebugStream.bunyanDebugStreamBooleans.`false`
 import typings.bunyanDebugStream.bunyanDebugStreamStrings.auto
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Writable
 import typings.node.ttyMod.WriteStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +19,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(options: BunyanDebugStreamOptions): WritableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream[Any]]
+  inline def default(options: BunyanDebugStreamOptions): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream]
   
-  inline def create(options: BunyanDebugStreamOptions): WritableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream[Any]]
+  inline def create(options: BunyanDebugStreamOptions): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream]
   
   @js.native
   trait BunyanDebugStream extends Writable {

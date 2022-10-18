@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait BuildProvenance extends StObject {
   
   /** Special options applied to this build. This is a catch-all field where build providers can enter any desired additional details. */
   var buildOptions: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BuildProvenance & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Version string of the builder at the time this build was executed. */
@@ -63,9 +60,7 @@ object BuildProvenance {
   extension [Self <: BuildProvenance](x: Self) {
     
     inline def setBuildOptions(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BuildProvenance & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "buildOptions", value.asInstanceOf[js.Any])
     
     inline def setBuildOptionsUndefined: Self = StObject.set(x, "buildOptions", js.undefined)

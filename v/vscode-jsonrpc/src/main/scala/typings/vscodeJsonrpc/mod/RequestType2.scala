@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-jsonrpc", "RequestType2")
 @js.native
 open class RequestType2[P1, P2, R, E] protected ()
-  extends typings.vscodeJsonrpc.messagesMod.RequestType2[P1, P2, R, E] {
+  extends typings.vscodeJsonrpc.libCommonMessagesMod.RequestType2[P1, P2, R, E] {
   def this(method: String) = this()
 }

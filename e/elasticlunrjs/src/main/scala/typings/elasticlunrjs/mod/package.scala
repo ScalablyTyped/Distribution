@@ -1,7 +1,6 @@
 package typings.elasticlunrjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.elasticlunrjs.anon.Tf
 import typings.elasticlunrjs.mod.^
 import org.scalablytyped.runtime.StObject
@@ -23,10 +22,6 @@ inline def resetStopWords(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("res
 inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
 type DocumentReference = String | Double
-
-type FieldSearchConfig[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? {  bool :elasticlunrjs.elasticlunrjs.Bool | undefined,   boost :number | undefined}}
-  */ typings.elasticlunrjs.elasticlunrjsStrings.FieldSearchConfig & TopLevel[Any]
 
 type IndexDocuments[T] = StringDictionary[T]
 

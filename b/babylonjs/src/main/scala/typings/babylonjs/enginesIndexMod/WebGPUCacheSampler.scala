@@ -2,7 +2,7 @@ package typings.babylonjs.enginesIndexMod
 
 import typings.babylonjs.GPUCompareFunction
 import typings.babylonjs.GPUDevice
-import typings.babylonjs.textureSamplerMod.TextureSampler
+import typings.babylonjs.materialsTexturesTextureSamplerMod.TextureSampler
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Engines/index", "WebGPUCacheSampler")
 @js.native
 open class WebGPUCacheSampler protected ()
-  extends typings.babylonjs.webgpuCacheSamplerMod.WebGPUCacheSampler {
+  extends typings.babylonjs.enginesWebGPUWebgpuCacheSamplerMod.WebGPUCacheSampler {
   def this(device: GPUDevice) = this()
 }
 /* static members */

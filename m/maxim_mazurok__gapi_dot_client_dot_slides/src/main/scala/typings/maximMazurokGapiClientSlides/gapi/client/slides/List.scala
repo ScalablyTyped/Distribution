@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait List extends StObject {
     * through 8, inclusive.
     */
   var nestingLevel: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.NestingLevel}
-    */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.List & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.NestingLevel} */ js.Any
   ] = js.undefined
 }
 object List {
@@ -34,9 +31,7 @@ object List {
     inline def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
     inline def setNestingLevel(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.NestingLevel}
-      */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.List & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.NestingLevel} */ js.Any
     ): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
     
     inline def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)

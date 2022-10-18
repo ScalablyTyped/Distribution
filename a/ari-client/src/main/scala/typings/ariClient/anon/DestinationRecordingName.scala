@@ -7,20 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DestinationRecordingName extends StObject {
   
   var destinationRecordingName: String
-  
-  var recordingName: String
 }
 object DestinationRecordingName {
   
-  inline def apply(destinationRecordingName: String, recordingName: String): DestinationRecordingName = {
-    val __obj = js.Dynamic.literal(destinationRecordingName = destinationRecordingName.asInstanceOf[js.Any], recordingName = recordingName.asInstanceOf[js.Any])
+  inline def apply(destinationRecordingName: String): DestinationRecordingName = {
+    val __obj = js.Dynamic.literal(destinationRecordingName = destinationRecordingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestinationRecordingName]
   }
   
   extension [Self <: DestinationRecordingName](x: Self) {
     
     inline def setDestinationRecordingName(value: String): Self = StObject.set(x, "destinationRecordingName", value.asInstanceOf[js.Any])
-    
-    inline def setRecordingName(value: String): Self = StObject.set(x, "recordingName", value.asInstanceOf[js.Any])
   }
 }

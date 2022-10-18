@@ -73,11 +73,11 @@ import typings.antDesignProUtils.antDesignProUtilsStrings.user
 import typings.antDesignProUtils.antDesignProUtilsStrings.vertical
 import typings.antDesignProUtils.antDesignProUtilsStrings.week
 import typings.antDesignProUtils.antDesignProUtilsStrings.yes
-import typings.antd.configProviderSizeContextMod.SizeType
-import typings.antd.statusUtilsMod.InputStatus
+import typings.antd.libConfigProviderSizeContextMod.SizeType
+import typings.antd.libUtilStatusUtilsMod.InputStatus
 import typings.rcInput.anon.ClearIcon
-import typings.rcInput.interfaceMod.ShowCountProps
-import typings.rcInput.typesMod.LiteralUnion
+import typings.rcInput.esInterfaceMod.ShowCountProps
+import typings.rcInput.esUtilsTypesMod.LiteralUnion
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler

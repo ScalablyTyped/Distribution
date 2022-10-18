@@ -1,13 +1,13 @@
 package typings.testingLibraryUserEvent.anon
 
-import typings.testingLibraryUserEvent.cssPointerEventsMod.global.Element
+import typings.testingLibraryUserEvent.distTypesUtilsPointerCssPointerEventsMod.global.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Node extends StObject {
   
-  var node: js.UndefOr[typings.testingLibraryUserEvent.prepareDocumentMod.global.Node] = js.undefined
+  var node: js.UndefOr[typings.testingLibraryUserEvent.distTypesDocumentPrepareDocumentMod.global.Node] = js.undefined
   
   var offset: js.UndefOr[Double] = js.undefined
   
@@ -22,7 +22,7 @@ object Node {
   
   extension [Self <: Node](x: Self) {
     
-    inline def setNode(value: typings.testingLibraryUserEvent.prepareDocumentMod.global.Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: typings.testingLibraryUserEvent.distTypesDocumentPrepareDocumentMod.global.Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     

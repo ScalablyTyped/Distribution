@@ -1,7 +1,7 @@
 package typings.popmotionPose
 
-import typings.popmotionPose.typesMod.DomPopmotionConfig
-import typings.popmotionPose.typesMod.DomPopmotionPoser
+import typings.popmotionPose.libTypesMod.DomPopmotionConfig
+import typings.popmotionPose.libTypesMod.DomPopmotionPoser
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,9 +1,9 @@
 package typings.googleCloudCommon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.googleCloudCommon.utilMod.ApiError
-import typings.googleCloudCommon.utilMod.GoogleErrorBody
-import typings.googleCloudCommon.utilMod.GoogleInnerError
+import typings.googleCloudCommon.buildSrcUtilMod.ApiError
+import typings.googleCloudCommon.buildSrcUtilMod.GoogleErrorBody
+import typings.googleCloudCommon.buildSrcUtilMod.GoogleInnerError
 import typings.teenyRequest.mod.CoreOptions
 import typings.teenyRequest.mod.Options
 import org.scalablytyped.runtime.StObject

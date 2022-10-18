@@ -20,9 +20,9 @@ object ExecutionContext {
     * Creates a context instance using the provided {@link Credentials} and {@link ClientConfig}.
     *
     */
-  inline def create(credentials: typings.adobePdfservicesNodeSdk.credentialsMod.Credentials): typings.adobePdfservicesNodeSdk.executionContextMod.ExecutionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(credentials.asInstanceOf[js.Any]).asInstanceOf[typings.adobePdfservicesNodeSdk.executionContextMod.ExecutionContext]
+  inline def create(credentials: typings.adobePdfservicesNodeSdk.authCredentialsMod.Credentials): typings.adobePdfservicesNodeSdk.executionContextMod.ExecutionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(credentials.asInstanceOf[js.Any]).asInstanceOf[typings.adobePdfservicesNodeSdk.executionContextMod.ExecutionContext]
   inline def create(
-    credentials: typings.adobePdfservicesNodeSdk.credentialsMod.Credentials,
+    credentials: typings.adobePdfservicesNodeSdk.authCredentialsMod.Credentials,
     clientConfig: typings.adobePdfservicesNodeSdk.clientConfigMod.ClientConfig
   ): typings.adobePdfservicesNodeSdk.executionContextMod.ExecutionContext = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(credentials.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any])).asInstanceOf[typings.adobePdfservicesNodeSdk.executionContextMod.ExecutionContext]
 }

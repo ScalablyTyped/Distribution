@@ -124,23 +124,23 @@ object Processors {
     inline def setAtRuleExit(value: AtRuleProcessor | StringDictionary[AtRuleProcessor]): Self = StObject.set(x, "AtRuleExit", value.asInstanceOf[js.Any])
     
     inline def setAtRuleExitFunction2(
-      value: (/* atRule */ typings.postcss.atRuleMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* atRule */ typings.postcss.libAtRuleMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "AtRuleExit", js.Any.fromFunction2(value))
     
     inline def setAtRuleExitUndefined: Self = StObject.set(x, "AtRuleExit", js.undefined)
     
     inline def setAtRuleFunction2(
-      value: (/* atRule */ typings.postcss.atRuleMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* atRule */ typings.postcss.libAtRuleMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "AtRule", js.Any.fromFunction2(value))
     
     inline def setAtRuleUndefined: Self = StObject.set(x, "AtRule", js.undefined)
     
     inline def setComment(
-      value: (/* comment */ typings.postcss.commentMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* comment */ typings.postcss.libCommentMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "Comment", js.Any.fromFunction2(value))
     
     inline def setCommentExit(
-      value: (/* comment */ typings.postcss.commentMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* comment */ typings.postcss.libCommentMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "CommentExit", js.Any.fromFunction2(value))
     
     inline def setCommentExitUndefined: Self = StObject.set(x, "CommentExit", js.undefined)
@@ -152,23 +152,23 @@ object Processors {
     inline def setDeclarationExit(value: DeclarationProcessor | StringDictionary[DeclarationProcessor]): Self = StObject.set(x, "DeclarationExit", value.asInstanceOf[js.Any])
     
     inline def setDeclarationExitFunction2(
-      value: (/* decl */ typings.postcss.declarationMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* decl */ typings.postcss.libDeclarationMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "DeclarationExit", js.Any.fromFunction2(value))
     
     inline def setDeclarationExitUndefined: Self = StObject.set(x, "DeclarationExit", js.undefined)
     
     inline def setDeclarationFunction2(
-      value: (/* decl */ typings.postcss.declarationMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* decl */ typings.postcss.libDeclarationMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "Declaration", js.Any.fromFunction2(value))
     
     inline def setDeclarationUndefined: Self = StObject.set(x, "Declaration", js.undefined)
     
     inline def setDocument(
-      value: (/* document */ typings.postcss.documentMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* document */ typings.postcss.libDocumentMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "Document", js.Any.fromFunction2(value))
     
     inline def setDocumentExit(
-      value: (/* document */ typings.postcss.documentMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* document */ typings.postcss.libDocumentMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "DocumentExit", js.Any.fromFunction2(value))
     
     inline def setDocumentExitUndefined: Self = StObject.set(x, "DocumentExit", js.undefined)
@@ -176,17 +176,17 @@ object Processors {
     inline def setDocumentUndefined: Self = StObject.set(x, "Document", js.undefined)
     
     inline def setExit(
-      value: (/* root */ typings.postcss.rootMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* root */ typings.postcss.libRootMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "Exit", js.Any.fromFunction2(value))
     
     inline def setExitUndefined: Self = StObject.set(x, "Exit", js.undefined)
     
     inline def setOnce(
-      value: (/* root */ typings.postcss.rootMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* root */ typings.postcss.libRootMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "Once", js.Any.fromFunction2(value))
     
     inline def setOnceExit(
-      value: (/* root */ typings.postcss.rootMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* root */ typings.postcss.libRootMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "OnceExit", js.Any.fromFunction2(value))
     
     inline def setOnceExitUndefined: Self = StObject.set(x, "OnceExit", js.undefined)
@@ -194,11 +194,11 @@ object Processors {
     inline def setOnceUndefined: Self = StObject.set(x, "Once", js.undefined)
     
     inline def setRoot(
-      value: (/* root */ typings.postcss.rootMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* root */ typings.postcss.libRootMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "Root", js.Any.fromFunction2(value))
     
     inline def setRootExit(
-      value: (/* root */ typings.postcss.rootMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* root */ typings.postcss.libRootMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "RootExit", js.Any.fromFunction2(value))
     
     inline def setRootExitUndefined: Self = StObject.set(x, "RootExit", js.undefined)
@@ -206,11 +206,11 @@ object Processors {
     inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
     
     inline def setRule(
-      value: (/* rule */ typings.postcss.ruleMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* rule */ typings.postcss.libRuleMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "Rule", js.Any.fromFunction2(value))
     
     inline def setRuleExit(
-      value: (/* rule */ typings.postcss.ruleMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
+      value: (/* rule */ typings.postcss.libRuleMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
     ): Self = StObject.set(x, "RuleExit", js.Any.fromFunction2(value))
     
     inline def setRuleExitUndefined: Self = StObject.set(x, "RuleExit", js.undefined)

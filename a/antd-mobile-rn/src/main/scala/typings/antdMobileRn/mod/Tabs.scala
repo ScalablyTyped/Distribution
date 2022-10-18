@@ -1,7 +1,7 @@
 package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.TypeofRMCDefaultTabBar
-import typings.antdMobileRn.tabsIndexNativeMod.default
+import typings.antdMobileRn.libTabsIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

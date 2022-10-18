@@ -1,6 +1,6 @@
 package typings.adobePdfservicesNodeSdk.mod
 
-import typings.adobePdfservicesNodeSdk.serviceAccountCredentialsBuilderMod.ServiceAccountCredentialsBuilder
+import typings.adobePdfservicesNodeSdk.authServiceAccountCredentialsBuilderMod.ServiceAccountCredentialsBuilder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

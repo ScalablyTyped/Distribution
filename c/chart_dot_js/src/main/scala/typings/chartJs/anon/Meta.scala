@@ -1,11 +1,11 @@
 package typings.chartJs.anon
 
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsBooleans.`false`
-import typings.chartJs.elementMod.Element
 import typings.chartJs.mod.ChartMeta
 import typings.chartJs.mod.ChartType
 import typings.chartJs.mod.UpdateMode
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesElementMod.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

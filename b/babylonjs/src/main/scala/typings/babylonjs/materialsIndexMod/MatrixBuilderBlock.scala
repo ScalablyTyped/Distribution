@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "MatrixBuilderBlock")
 @js.native
 open class MatrixBuilderBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.MatrixBuilderBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.MatrixBuilderBlock {
   /**
     * Creates a new MatrixBuilder
     * @param name defines the block name

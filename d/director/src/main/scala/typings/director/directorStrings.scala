@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object directorStrings {
   
   @js.native
-  sealed trait HttpRouterGeneratedMethodsCheck extends StObject
-  inline def HttpRouterGeneratedMethodsCheck: HttpRouterGeneratedMethodsCheck = "HttpRouterGeneratedMethodsCheck".asInstanceOf[HttpRouterGeneratedMethodsCheck]
-  
-  @js.native
   sealed trait acl
     extends StObject
        with HttpRouterGeneratedMethodNames

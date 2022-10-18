@@ -4,25 +4,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `6` extends StObject {
+trait `6`[T] extends StObject {
   
-  var date: js.UndefOr[Any | Null | js.Array[Any]] = js.undefined
+  var date: T
 }
 object `6` {
   
-  inline def apply(): `6` = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`6`]
+  inline def apply[T](date: T): `6`[T] = {
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`6`[T]]
   }
   
-  extension [Self <: `6`](x: Self) {
+  extension [Self <: `6`[?], T](x: Self & `6`[T]) {
     
-    inline def setDate(value: Any | js.Array[Any]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
-    
-    inline def setDateNull: Self = StObject.set(x, "date", null)
-    
-    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
-    
-    inline def setDateVarargs(value: Any*): Self = StObject.set(x, "date", js.Array(value*))
+    inline def setDate(value: T): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

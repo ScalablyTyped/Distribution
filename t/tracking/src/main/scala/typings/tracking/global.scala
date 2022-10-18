@@ -83,9 +83,9 @@ object global {
     /**
       * Base class for specific tracker types.
       */
-    @JSGlobal("tracking.Tracker")
+    /* note: abstract class */ @JSGlobal("tracking.Tracker")
     @js.native
-    abstract class Tracker ()
+    open class Tracker ()
       extends StObject
          with typings.tracking.tracking.Tracker
     

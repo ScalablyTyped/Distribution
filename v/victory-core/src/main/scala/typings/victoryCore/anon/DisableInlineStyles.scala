@@ -4,9 +4,9 @@ import typings.propTypes.mod.InferProps
 import typings.propTypes.mod.ReactElementLike
 import typings.propTypes.mod.Requireable
 import typings.react.mod.Validator
-import typings.victoryCore.callbacksMod.NumberOrCallback
-import typings.victoryCore.callbacksMod.StringOrCallback
-import typings.victoryCore.victoryLabelMod.OriginType
+import typings.victoryCore.libTypesCallbacksMod.NumberOrCallback
+import typings.victoryCore.libTypesCallbacksMod.StringOrCallback
+import typings.victoryCore.libVictoryLabelVictoryLabelMod.OriginType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore", "QueryConstraint")
+/* note: abstract class */ @JSImport("@firebase/firestore", "QueryConstraint")
 @js.native
-abstract class QueryConstraint () extends StObject {
+open class QueryConstraint () extends StObject {
   
   /** The type of this query constraints */
   val `type`: QueryConstraintType = js.native

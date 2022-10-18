@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait GoogleCloudDatacatalogV1UsageSignal extends StObject {
   
   /** Usage statistics over each of the predefined time ranges. Supported time ranges are `{"24H", "7D", "30D"}`. */
   var usageWithinTimeRange: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.datacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1UsageStats}
-    */ typings.maximMazurokGapiClientDatacatalog.maximMazurokGapiClientDatacatalogStrings.GoogleCloudDatacatalogV1UsageSignal & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.datacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1UsageStats} */ js.Any
   ] = js.undefined
 }
 object GoogleCloudDatacatalogV1UsageSignal {
@@ -31,9 +28,7 @@ object GoogleCloudDatacatalogV1UsageSignal {
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     inline def setUsageWithinTimeRange(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.datacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1UsageStats}
-      */ typings.maximMazurokGapiClientDatacatalog.maximMazurokGapiClientDatacatalogStrings.GoogleCloudDatacatalogV1UsageSignal & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.datacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1UsageStats} */ js.Any
     ): Self = StObject.set(x, "usageWithinTimeRange", value.asInstanceOf[js.Any])
     
     inline def setUsageWithinTimeRangeUndefined: Self = StObject.set(x, "usageWithinTimeRange", js.undefined)

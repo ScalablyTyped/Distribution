@@ -7,21 +7,21 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.proto
 import typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.rest
-import typings.googleGax.apitypesMod.GRPCCall
-import typings.googleGax.apitypesMod.GaxCall
-import typings.googleGax.clientInterfaceMod.ClientOptions
-import typings.googleGax.descriptorMod.Descriptor
-import typings.googleGax.gaxMod.BackoffSettings
-import typings.googleGax.gaxMod.CallOptions
-import typings.googleGax.gaxMod.CallSettings
-import typings.googleGax.gaxMod.ClientConfig
-import typings.googleGax.grpcMod.GrpcClient
-import typings.googleGax.grpcMod.GrpcClientOptions
-import typings.googleGax.longRunningDescriptorMod.LongRunningDescriptor
-import typings.googleGax.longrunningMod.LROOperation
+import typings.googleGax.buildSrcApitypesMod.GRPCCall
+import typings.googleGax.buildSrcApitypesMod.GaxCall
+import typings.googleGax.buildSrcClientInterfaceMod.ClientOptions
+import typings.googleGax.buildSrcDescriptorMod.Descriptor
+import typings.googleGax.buildSrcGaxMod.BackoffSettings
+import typings.googleGax.buildSrcGaxMod.CallOptions
+import typings.googleGax.buildSrcGaxMod.CallSettings
+import typings.googleGax.buildSrcGaxMod.ClientConfig
+import typings.googleGax.buildSrcGrpcMod.GrpcClient
+import typings.googleGax.buildSrcGrpcMod.GrpcClientOptions
+import typings.googleGax.buildSrcLongRunningCallsLongRunningDescriptorMod.LongRunningDescriptor
+import typings.googleGax.buildSrcLongRunningCallsLongrunningMod.LROOperation
+import typings.googleGax.buildSrcOperationsClientMod.OperationsClientBuilder
+import typings.googleGax.buildSrcStreamingCallsStreamingMod.StreamType
 import typings.googleGax.mod.fallback.Operation_
-import typings.googleGax.operationsClientMod.OperationsClientBuilder
-import typings.googleGax.streamingMod.StreamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,10 +44,6 @@ trait Typeoffallback extends StObject {
   var GrpcClient: TypeofGrpcClient = js.native
   
   var IamClient: TypeofIamClient = js.native
-  
-  val IamProtos: TypeofIamProtosGoogle = js.native
-  
-  val LocationProtos: TypeofLocationProtos = js.native
   
   var LocationsClient: TypeofLocationsClient = js.native
   
@@ -117,17 +113,15 @@ trait Typeoffallback extends StObject {
   
   def lro(options: GrpcClientOptions): OperationsClientBuilder = js.native
   
-  def operation(op: LROOperation, longrunningDescriptor: LongRunningDescriptor, backoffSettings: BackoffSettings): typings.googleGax.longrunningMod.Operation_ = js.native
+  def operation(op: LROOperation, longrunningDescriptor: LongRunningDescriptor, backoffSettings: BackoffSettings): typings.googleGax.buildSrcLongRunningCallsLongrunningMod.Operation_ = js.native
   def operation(
     op: LROOperation,
     longrunningDescriptor: LongRunningDescriptor,
     backoffSettings: BackoffSettings,
     callOptions: CallOptions
-  ): typings.googleGax.longrunningMod.Operation_ = js.native
+  ): typings.googleGax.buildSrcLongRunningCallsLongrunningMod.Operation_ = js.native
   
-  val operationsProtos: TypeofoperationsProtos = js.native
-  
-  val protobuf: TypeofprotobufBufferReader = js.native
+  val protobuf: Typeofprotobuf = js.native
   
   val protobufMinimal: TypeofprotobufMinimal = js.native
   

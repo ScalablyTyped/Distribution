@@ -1,9 +1,9 @@
 package typings.octokitRequestError
 
-import typings.octokitRequestError.typesMod.RequestErrorOptions
-import typings.octokitTypes.octokitResponseMod.OctokitResponse
-import typings.octokitTypes.requestOptionsMod.RequestOptions
-import typings.octokitTypes.responseHeadersMod.ResponseHeaders
+import typings.octokitRequestError.distTypesTypesMod.RequestErrorOptions
+import typings.octokitTypes.distTypesOctokitResponseMod.OctokitResponse
+import typings.octokitTypes.distTypesRequestOptionsMod.RequestOptions
+import typings.octokitTypes.distTypesResponseHeadersMod.ResponseHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

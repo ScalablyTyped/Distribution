@@ -1,292 +1,485 @@
 package typings.reactNativePaper.anon
 
-import typings.callstackReactThemeProvider.mod.DeepPartial
 import typings.react.mod.ReactNode
-import typings.react.mod.RefObject
+import typings.reactNative.mod.AccessibilityActionEvent
+import typings.reactNative.mod.AccessibilityActionInfo
+import typings.reactNative.mod.AccessibilityRole
+import typings.reactNative.mod.AccessibilityValue
+import typings.reactNative.mod.GestureResponderEvent
+import typings.reactNative.mod.Insets
+import typings.reactNative.mod.LayoutChangeEvent
+import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TouchableWithoutFeedback
+import typings.reactNative.mod.TVParallaxProperties
+import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.iconMod.IconSource
+import typings.reactNativePaper.reactNativePaperStrings.`box-none`
+import typings.reactNativePaper.reactNativePaperStrings.`box-only`
+import typings.reactNativePaper.reactNativePaperStrings.`no-hide-descendants`
+import typings.reactNativePaper.reactNativePaperStrings.assertive
+import typings.reactNativePaper.reactNativePaperStrings.auto
+import typings.reactNativePaper.reactNativePaperStrings.no
+import typings.reactNativePaper.reactNativePaperStrings.none
+import typings.reactNativePaper.reactNativePaperStrings.polite
+import typings.reactNativePaper.reactNativePaperStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<{  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined,   children :react.react.ReactNode | undefined} & std.Pick<react-native-paper.react-native-paper/lib/typescript/types.$RemoveChildren<react.react.ComponentType<std.Pick<react-native.react-native.TouchableWithoutFeedbackProps & react.react.RefAttributes<react-native.react-native.TouchableWithoutFeedback> & {  borderless :boolean | undefined,   background :std.Object | undefined,   centered :boolean | undefined,   disabled :boolean | undefined,   onPress :(e : react-native.react-native.GestureResponderEvent): void | undefined,   onLongPress :(e : react-native.react-native.GestureResponderEvent): void | undefined,   rippleColor :string | undefined,   underlayColor :string | undefined,   children :react.react.ReactNode,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme}, keyof react-native.react-native.TouchableWithoutFeedbackProps | 'background' | 'borderless' | 'rippleColor' | 'underlayColor' | 'centered' | keyof react.react.RefAttributes<react-native.react-native.TouchableWithoutFeedback>> & {  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined}> & @callstack/react-theme-provider.@callstack/react-theme-provider/typings/hoist-non-react-statics.NonReactStatics<react.react.ComponentType<react-native.react-native.TouchableWithoutFeedbackProps & react.react.RefAttributes<react-native.react-native.TouchableWithoutFeedback> & {  borderless :boolean | undefined,   background :std.Object | undefined,   centered :boolean | undefined,   disabled :boolean | undefined,   onPress :(e : react-native.react-native.GestureResponderEvent): void | undefined,   onLongPress :(e : react-native.react-native.GestureResponderEvent): void | undefined,   rippleColor :string | undefined,   underlayColor :string | undefined,   children :react.react.ReactNode,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme}> & {None (hasStyle_backgroundBorderlessDisabledPropRippleColor_underlayColorChildrenThemeRest : react-native.react-native.TouchableWithoutFeedbackProps & react.react.RefAttributes<react-native.react-native.TouchableWithoutFeedback> & {  borderless :boolean | undefined,   background :std.Object | undefined,   centered :boolean | undefined,   disabled :boolean | undefined,   onPress :(e : react-native.react-native.GestureResponderEvent): void | undefined,   onLongPress :(e : react-native.react-native.GestureResponderEvent): void | undefined,   rippleColor :string | undefined,   underlayColor :string | undefined,   children :react.react.ReactNode,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme}): react.react.<global>.JSX.Element,   supported :boolean}, {}>> & {  icon :react-native-paper.react-native-paper/lib/typescript/components/Icon.IconSource,   color :string | undefined,   size :number | undefined,   disabled :boolean | undefined,   animated :boolean | undefined,   accessibilityLabel :string | undefined,   onPress :(e : react-native.react-native.GestureResponderEvent): void | undefined,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   ref :react.react.RefObject<react-native.react-native.TouchableWithoutFeedback> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme}, 'style' | 'color' | 'size' | 'onLayout' | 'onPress' | 'onPressIn' | 'onPressOut' | 'onLongPress' | 'testID' | 'accessible' | 'accessibilityActions' | 'accessibilityLabel' | 'accessibilityRole' | 'accessibilityState' | 'accessibilityHint' | 'accessibilityValue' | 'onAccessibilityAction' | 'accessibilityLiveRegion' | 'importantForAccessibility' | 'accessibilityElementsHidden' | 'accessibilityViewIsModal' | 'onAccessibilityEscape' | 'onAccessibilityTap' | 'onMagicTap' | 'accessibilityIgnoresInvertColors' | 'icon' | 'ref' | 'key' | 'hitSlop' | 'delayLongPress' | 'delayPressIn' | 'delayPressOut' | 'disabled' | 'onBlur' | 'onFocus' | 'pressRetentionOffset' | 'touchSoundDisabled' | 'background' | 'borderless' | 'rippleColor' | 'underlayColor' | 'centered' | 'animated'>, 'style' | 'children' | 'color' | 'size' | 'onLayout' | 'onPress' | 'onPressIn' | 'onPressOut' | 'onLongPress' | 'testID' | 'accessible' | 'accessibilityActions' | 'accessibilityLabel' | 'accessibilityRole' | 'accessibilityState' | 'accessibilityHint' | 'accessibilityValue' | 'onAccessibilityAction' | 'accessibilityLiveRegion' | 'importantForAccessibility' | 'accessibilityElementsHidden' | 'accessibilityViewIsModal' | 'onAccessibilityEscape' | 'onAccessibilityTap' | 'onMagicTap' | 'accessibilityIgnoresInvertColors' | 'icon' | 'key' | 'hitSlop' | 'theme' | 'delayLongPress' | 'delayPressIn' | 'delayPressOut' | 'disabled' | 'onBlur' | 'onFocus' | 'pressRetentionOffset' | 'touchSoundDisabled' | 'background' | 'borderless' | 'rippleColor' | 'underlayColor' | 'centered' | 'animated'> & {  color :string | undefined,   icon :react-native-paper.react-native-paper/lib/typescript/components/Icon.IconSource,   size :number | undefined,   disabled :boolean | undefined,   accessibilityLabel :string | undefined,   onPress :(): void | undefined,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   ref :react.react.RefObject<react-native.react-native.TouchableWithoutFeedback> | undefined} */
+/* Inlined std.Pick<{  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined,   dark :boolean | undefined,   statusBarHeight :number | undefined,   children :react.react.ReactNode,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined} & std.Pick<std.Partial<react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View>> & {  dark :boolean | undefined,   children :react.react.ReactNode,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined}, keyof react-native.react-native.ViewProps | 'dark' | keyof react.react.RefAttributes<react-native.react-native.View>>, keyof react-native.react-native.ViewProps | 'dark' | keyof react.react.RefAttributes<react-native.react-native.View> | 'statusBarHeight'> & {  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined} */
 trait PickthemeDeepPartialThemeAccessibilityElementsHidden extends StObject {
   
-  var accessibilityActions: js.UndefOr[Any] = js.undefined
+  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
   
-  var accessibilityElementsHidden: js.UndefOr[Any] = js.undefined
+  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
-  var accessibilityHint: js.UndefOr[Any] = js.undefined
+  var accessibilityHint: js.UndefOr[String] = js.undefined
   
-  var accessibilityIgnoresInvertColors: js.UndefOr[Any] = js.undefined
+  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
   
-  var accessibilityLabel: js.UndefOr[Any] & js.UndefOr[String]
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var accessibilityLiveRegion: js.UndefOr[Any] = js.undefined
+  var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var accessibilityRole: js.UndefOr[Any] = js.undefined
+  var accessibilityLanguage: js.UndefOr[String] = js.undefined
   
-  var accessibilityState: js.UndefOr[Any] = js.undefined
+  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
   
-  var accessibilityValue: js.UndefOr[Any] = js.undefined
+  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
-  var accessibilityViewIsModal: js.UndefOr[Any] = js.undefined
+  var accessibilityState: js.UndefOr[typings.reactNative.mod.AccessibilityState] = js.undefined
   
-  var accessible: js.UndefOr[Any] = js.undefined
+  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
-  var animated: js.UndefOr[Any] = js.undefined
+  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
   
-  var background: js.UndefOr[Any] = js.undefined
-  
-  var borderless: js.UndefOr[Any] = js.undefined
-  
-  var centered: js.UndefOr[Any] = js.undefined
+  var accessible: js.UndefOr[Boolean] = js.undefined
   
   var children: js.UndefOr[ReactNode] = js.undefined
   
-  var color: js.UndefOr[Any] & js.UndefOr[String]
+  var collapsable: js.UndefOr[Boolean] = js.undefined
   
-  var delayLongPress: js.UndefOr[Any] = js.undefined
+  var dark: js.UndefOr[Boolean] = js.undefined
   
-  var delayPressIn: js.UndefOr[Any] = js.undefined
+  var focusable: js.UndefOr[Boolean] = js.undefined
   
-  var delayPressOut: js.UndefOr[Any] = js.undefined
+  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Any] & js.UndefOr[Boolean]
+  var hitSlop: js.UndefOr[Insets] = js.undefined
   
-  var hitSlop: js.UndefOr[Any] = js.undefined
+  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
   
-  var icon: js.UndefOr[Any] & IconSource
+  var isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
-  var importantForAccessibility: js.UndefOr[Any] = js.undefined
+  var key: js.UndefOr[typings.react.mod.Key | Null] = js.undefined
   
-  var key: js.UndefOr[Any] = js.undefined
+  var nativeID: js.UndefOr[String] = js.undefined
   
-  var onAccessibilityAction: js.UndefOr[Any] = js.undefined
+  var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
   
-  var onAccessibilityEscape: js.UndefOr[Any] = js.undefined
+  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
   
-  var onAccessibilityTap: js.UndefOr[Any] = js.undefined
+  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onBlur: js.UndefOr[Any] = js.undefined
+  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onFocus: js.UndefOr[Any] = js.undefined
+  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
-  var onLayout: js.UndefOr[Any] = js.undefined
+  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLongPress: js.UndefOr[Any] = js.undefined
+  var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  var onMagicTap: js.UndefOr[Any] = js.undefined
+  var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  var onPress: js.UndefOr[Any] & js.UndefOr[js.Function0[Unit]]
+  var onPointerCancel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPressIn: js.UndefOr[Any] = js.undefined
+  var onPointerCancelCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var onPressOut: js.UndefOr[Any] = js.undefined
+  var onPointerDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var pressRetentionOffset: js.UndefOr[Any] = js.undefined
+  var onPointerDownCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var ref: js.UndefOr[RefObject[TouchableWithoutFeedback]] = js.undefined
+  var onPointerEnter: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var rippleColor: js.UndefOr[Any] = js.undefined
+  var onPointerEnterCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var size: js.UndefOr[Any] & js.UndefOr[Double]
+  var onPointerLeave: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var style: js.UndefOr[Any] & js.UndefOr[StyleProp[ViewStyle]]
+  var onPointerLeaveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var testID: js.UndefOr[Any] = js.undefined
+  var onPointerMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var theme: js.UndefOr[
-    DeepPartial[typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme]
-  ] = js.undefined
+  var onPointerMoveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var touchSoundDisabled: js.UndefOr[Any] = js.undefined
+  var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
-  var underlayColor: js.UndefOr[Any] = js.undefined
+  var onPointerUpCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
+  
+  var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
+  
+  var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
+  
+  var onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
+  
+  var ref: js.UndefOr[typings.react.mod.Ref[View]] = js.undefined
+  
+  var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
+  
+  var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
+  
+  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
+  
+  var statusBarHeight: js.UndefOr[Double] = js.undefined
+  
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  
+  var testID: js.UndefOr[String] = js.undefined
+  
+  var theme: js.UndefOr[DeepPartialThemeDark] = js.undefined
+  
+  var tvParallaxMagnification: js.UndefOr[Double] = js.undefined
+  
+  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
+  
+  var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
+  
+  var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
+  
+  var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
 }
 object PickthemeDeepPartialThemeAccessibilityElementsHidden {
   
-  inline def apply(
-    accessibilityLabel: js.UndefOr[Any] & js.UndefOr[String],
-    color: js.UndefOr[Any] & js.UndefOr[String],
-    disabled: js.UndefOr[Any] & js.UndefOr[Boolean],
-    icon: js.UndefOr[Any] & IconSource,
-    onPress: js.UndefOr[Any] & js.UndefOr[js.Function0[Unit]],
-    size: js.UndefOr[Any] & js.UndefOr[Double],
-    style: js.UndefOr[Any] & js.UndefOr[StyleProp[ViewStyle]]
-  ): PickthemeDeepPartialThemeAccessibilityElementsHidden = {
-    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], onPress = onPress.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+  inline def apply(): PickthemeDeepPartialThemeAccessibilityElementsHidden = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickthemeDeepPartialThemeAccessibilityElementsHidden]
   }
   
   extension [Self <: PickthemeDeepPartialThemeAccessibilityElementsHidden](x: Self) {
     
-    inline def setAccessibilityActions(value: Any): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
+    inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    inline def setAccessibilityElementsHidden(value: Any): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
+    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
+    
+    inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityElementsHiddenUndefined: Self = StObject.set(x, "accessibilityElementsHidden", js.undefined)
     
-    inline def setAccessibilityHint(value: Any): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
+    inline def setAccessibilityHint(value: String): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityHintUndefined: Self = StObject.set(x, "accessibilityHint", js.undefined)
     
-    inline def setAccessibilityIgnoresInvertColors(value: Any): Self = StObject.set(x, "accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
+    inline def setAccessibilityIgnoresInvertColors(value: Boolean): Self = StObject.set(x, "accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityIgnoresInvertColorsUndefined: Self = StObject.set(x, "accessibilityIgnoresInvertColors", js.undefined)
     
-    inline def setAccessibilityLabel(value: js.UndefOr[Any] & js.UndefOr[String]): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
-    inline def setAccessibilityLiveRegion(value: Any): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
+    
+    inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+    
+    inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
+    inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
-    inline def setAccessibilityRole(value: Any): Self = StObject.set(x, "accessibilityRole", value.asInstanceOf[js.Any])
+    inline def setAccessibilityRole(value: AccessibilityRole): Self = StObject.set(x, "accessibilityRole", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityRoleUndefined: Self = StObject.set(x, "accessibilityRole", js.undefined)
     
-    inline def setAccessibilityState(value: Any): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
+    inline def setAccessibilityState(value: typings.reactNative.mod.AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
     
-    inline def setAccessibilityValue(value: Any): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
+    inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityValueUndefined: Self = StObject.set(x, "accessibilityValue", js.undefined)
     
-    inline def setAccessibilityViewIsModal(value: Any): Self = StObject.set(x, "accessibilityViewIsModal", value.asInstanceOf[js.Any])
+    inline def setAccessibilityViewIsModal(value: Boolean): Self = StObject.set(x, "accessibilityViewIsModal", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityViewIsModalUndefined: Self = StObject.set(x, "accessibilityViewIsModal", js.undefined)
     
-    inline def setAccessible(value: Any): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
+    inline def setAccessible(value: Boolean): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
     
     inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
-    
-    inline def setAnimated(value: Any): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
-    
-    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
-    
-    inline def setBackground(value: Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
-    
-    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
-    
-    inline def setBorderless(value: Any): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
-    
-    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
-    
-    inline def setCentered(value: Any): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
-    
-    inline def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setColor(value: js.UndefOr[Any] & js.UndefOr[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
     
-    inline def setDelayLongPress(value: Any): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
+    inline def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
     
-    inline def setDelayLongPressUndefined: Self = StObject.set(x, "delayLongPress", js.undefined)
+    inline def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    inline def setDelayPressIn(value: Any): Self = StObject.set(x, "delayPressIn", value.asInstanceOf[js.Any])
+    inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
     
-    inline def setDelayPressInUndefined: Self = StObject.set(x, "delayPressIn", js.undefined)
+    inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
-    inline def setDelayPressOut(value: Any): Self = StObject.set(x, "delayPressOut", value.asInstanceOf[js.Any])
+    inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
-    inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
+    inline def setHasTVPreferredFocus(value: Boolean): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
     
-    inline def setDisabled(value: js.UndefOr[Any] & js.UndefOr[Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
     
-    inline def setHitSlop(value: Any): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
+    inline def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
     
     inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
     
-    inline def setIcon(value: js.UndefOr[Any] & IconSource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
-    
-    inline def setImportantForAccessibility(value: Any): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+    inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
-    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setIsTVSelectable(value: Boolean): Self = StObject.set(x, "isTVSelectable", value.asInstanceOf[js.Any])
+    
+    inline def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
+    
+    inline def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setOnAccessibilityAction(value: Any): Self = StObject.set(x, "onAccessibilityAction", value.asInstanceOf[js.Any])
+    inline def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
+    
+    inline def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
+    
+    inline def setNeedsOffscreenAlphaCompositing(value: Boolean): Self = StObject.set(x, "needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
+    
+    inline def setNeedsOffscreenAlphaCompositingUndefined: Self = StObject.set(x, "needsOffscreenAlphaCompositing", js.undefined)
+    
+    inline def setOnAccessibilityAction(value: /* event */ AccessibilityActionEvent => Unit): Self = StObject.set(x, "onAccessibilityAction", js.Any.fromFunction1(value))
     
     inline def setOnAccessibilityActionUndefined: Self = StObject.set(x, "onAccessibilityAction", js.undefined)
     
-    inline def setOnAccessibilityEscape(value: Any): Self = StObject.set(x, "onAccessibilityEscape", value.asInstanceOf[js.Any])
+    inline def setOnAccessibilityEscape(value: () => Unit): Self = StObject.set(x, "onAccessibilityEscape", js.Any.fromFunction0(value))
     
     inline def setOnAccessibilityEscapeUndefined: Self = StObject.set(x, "onAccessibilityEscape", js.undefined)
     
-    inline def setOnAccessibilityTap(value: Any): Self = StObject.set(x, "onAccessibilityTap", value.asInstanceOf[js.Any])
+    inline def setOnAccessibilityTap(value: () => Unit): Self = StObject.set(x, "onAccessibilityTap", js.Any.fromFunction0(value))
     
     inline def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
     
-    inline def setOnBlur(value: Any): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
-    
-    inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
-    
-    inline def setOnFocus(value: Any): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
-    
-    inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
-    
-    inline def setOnLayout(value: Any): Self = StObject.set(x, "onLayout", value.asInstanceOf[js.Any])
+    inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
     
     inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
     
-    inline def setOnLongPress(value: Any): Self = StObject.set(x, "onLongPress", value.asInstanceOf[js.Any])
-    
-    inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
-    
-    inline def setOnMagicTap(value: Any): Self = StObject.set(x, "onMagicTap", value.asInstanceOf[js.Any])
+    inline def setOnMagicTap(value: () => Unit): Self = StObject.set(x, "onMagicTap", js.Any.fromFunction0(value))
     
     inline def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
     
-    inline def setOnPress(value: js.UndefOr[Any] & js.UndefOr[js.Function0[Unit]]): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
+    inline def setOnMoveShouldSetResponder(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onMoveShouldSetResponder", js.Any.fromFunction1(value))
     
-    inline def setOnPressIn(value: Any): Self = StObject.set(x, "onPressIn", value.asInstanceOf[js.Any])
+    inline def setOnMoveShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
     
-    inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+    inline def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
     
-    inline def setOnPressOut(value: Any): Self = StObject.set(x, "onPressOut", value.asInstanceOf[js.Any])
+    inline def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
     
-    inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
+    inline def setOnPointerCancel(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
     
-    inline def setPressRetentionOffset(value: Any): Self = StObject.set(x, "pressRetentionOffset", value.asInstanceOf[js.Any])
+    inline def setOnPointerCancelCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancelCapture", js.Any.fromFunction1(value))
     
-    inline def setPressRetentionOffsetUndefined: Self = StObject.set(x, "pressRetentionOffset", js.undefined)
+    inline def setOnPointerCancelCaptureUndefined: Self = StObject.set(x, "onPointerCancelCapture", js.undefined)
     
-    inline def setRef(value: RefObject[TouchableWithoutFeedback]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
+    
+    inline def setOnPointerDown(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerDownCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDownCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerDownCaptureUndefined: Self = StObject.set(x, "onPointerDownCapture", js.undefined)
+    
+    inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+    
+    inline def setOnPointerEnter(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerEnterCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerEnterCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerEnterCaptureUndefined: Self = StObject.set(x, "onPointerEnterCapture", js.undefined)
+    
+    inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+    
+    inline def setOnPointerLeave(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerLeaveCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerLeaveCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerLeaveCaptureUndefined: Self = StObject.set(x, "onPointerLeaveCapture", js.undefined)
+    
+    inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
+    
+    inline def setOnPointerMove(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerMoveCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMoveCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerMoveCaptureUndefined: Self = StObject.set(x, "onPointerMoveCapture", js.undefined)
+    
+    inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+    
+    inline def setOnPointerUp(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerUpCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUpCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerUpCaptureUndefined: Self = StObject.set(x, "onPointerUpCapture", js.undefined)
+    
+    inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
+    
+    inline def setOnResponderEnd(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderEnd", js.Any.fromFunction1(value))
+    
+    inline def setOnResponderEndUndefined: Self = StObject.set(x, "onResponderEnd", js.undefined)
+    
+    inline def setOnResponderGrant(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderGrant", js.Any.fromFunction1(value))
+    
+    inline def setOnResponderGrantUndefined: Self = StObject.set(x, "onResponderGrant", js.undefined)
+    
+    inline def setOnResponderMove(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderMove", js.Any.fromFunction1(value))
+    
+    inline def setOnResponderMoveUndefined: Self = StObject.set(x, "onResponderMove", js.undefined)
+    
+    inline def setOnResponderReject(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderReject", js.Any.fromFunction1(value))
+    
+    inline def setOnResponderRejectUndefined: Self = StObject.set(x, "onResponderReject", js.undefined)
+    
+    inline def setOnResponderRelease(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderRelease", js.Any.fromFunction1(value))
+    
+    inline def setOnResponderReleaseUndefined: Self = StObject.set(x, "onResponderRelease", js.undefined)
+    
+    inline def setOnResponderStart(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderStart", js.Any.fromFunction1(value))
+    
+    inline def setOnResponderStartUndefined: Self = StObject.set(x, "onResponderStart", js.undefined)
+    
+    inline def setOnResponderTerminate(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderTerminate", js.Any.fromFunction1(value))
+    
+    inline def setOnResponderTerminateUndefined: Self = StObject.set(x, "onResponderTerminate", js.undefined)
+    
+    inline def setOnResponderTerminationRequest(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onResponderTerminationRequest", js.Any.fromFunction1(value))
+    
+    inline def setOnResponderTerminationRequestUndefined: Self = StObject.set(x, "onResponderTerminationRequest", js.undefined)
+    
+    inline def setOnStartShouldSetResponder(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onStartShouldSetResponder", js.Any.fromFunction1(value))
+    
+    inline def setOnStartShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onStartShouldSetResponderCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnStartShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onStartShouldSetResponderCapture", js.undefined)
+    
+    inline def setOnStartShouldSetResponderUndefined: Self = StObject.set(x, "onStartShouldSetResponder", js.undefined)
+    
+    inline def setOnTouchCancel(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
+    
+    inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
+    
+    inline def setOnTouchEnd(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+    
+    inline def setOnTouchEndCapture(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchEndCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnTouchEndCaptureUndefined: Self = StObject.set(x, "onTouchEndCapture", js.undefined)
+    
+    inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+    
+    inline def setOnTouchMove(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+    
+    inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+    
+    inline def setOnTouchStart(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+    
+    inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+    
+    inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    
+    inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+    
+    inline def setRef(value: typings.react.mod.Ref[View]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefFunction1(value: /* instance */ View | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    inline def setRippleColor(value: Any): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
+    inline def setRemoveClippedSubviews(value: Boolean): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
     
-    inline def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
+    inline def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
     
-    inline def setSize(value: js.UndefOr[Any] & js.UndefOr[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setRenderToHardwareTextureAndroid(value: Boolean): Self = StObject.set(x, "renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
     
-    inline def setStyle(value: js.UndefOr[Any] & js.UndefOr[StyleProp[ViewStyle]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
     
-    inline def setTestID(value: Any): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
+    inline def setShouldRasterizeIOS(value: Boolean): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
+    
+    inline def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
+    
+    inline def setStatusBarHeight(value: Double): Self = StObject.set(x, "statusBarHeight", value.asInstanceOf[js.Any])
+    
+    inline def setStatusBarHeightUndefined: Self = StObject.set(x, "statusBarHeight", js.undefined)
+    
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: DeepPartial[typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: DeepPartialThemeDark): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    inline def setTouchSoundDisabled(value: Any): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
+    inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     
-    inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
+    inline def setTvParallaxMagnificationUndefined: Self = StObject.set(x, "tvParallaxMagnification", js.undefined)
     
-    inline def setUnderlayColor(value: Any): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
+    inline def setTvParallaxProperties(value: TVParallaxProperties): Self = StObject.set(x, "tvParallaxProperties", value.asInstanceOf[js.Any])
     
-    inline def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
+    inline def setTvParallaxPropertiesUndefined: Self = StObject.set(x, "tvParallaxProperties", js.undefined)
+    
+    inline def setTvParallaxShiftDistanceX(value: Double): Self = StObject.set(x, "tvParallaxShiftDistanceX", value.asInstanceOf[js.Any])
+    
+    inline def setTvParallaxShiftDistanceXUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceX", js.undefined)
+    
+    inline def setTvParallaxShiftDistanceY(value: Double): Self = StObject.set(x, "tvParallaxShiftDistanceY", value.asInstanceOf[js.Any])
+    
+    inline def setTvParallaxShiftDistanceYUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceY", js.undefined)
+    
+    inline def setTvParallaxTiltAngle(value: Double): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
+    
+    inline def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
   }
 }

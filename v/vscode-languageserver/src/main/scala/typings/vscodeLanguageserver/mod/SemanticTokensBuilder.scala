@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-languageserver", "SemanticTokensBuilder")
 @js.native
 open class SemanticTokensBuilder ()
-  extends typings.vscodeLanguageserver.semanticTokensMod.SemanticTokensBuilder
+  extends typings.vscodeLanguageserver.libCommonSemanticTokensMod.SemanticTokensBuilder

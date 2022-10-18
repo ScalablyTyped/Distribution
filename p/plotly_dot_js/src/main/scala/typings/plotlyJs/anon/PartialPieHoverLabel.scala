@@ -1,8 +1,8 @@
 package typings.plotlyJs.anon
 
-import typings.plotlyJs.pieMod.PieColor
-import typings.plotlyJs.pieMod.PieColors
-import typings.plotlyJs.pieMod.PieFont
+import typings.plotlyJs.libTracesPieMod.PieColor
+import typings.plotlyJs.libTracesPieMod.PieColors
+import typings.plotlyJs.libTracesPieMod.PieFont
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.left
 import typings.plotlyJs.plotlyJsStrings.right

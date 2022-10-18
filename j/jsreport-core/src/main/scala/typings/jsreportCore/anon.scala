@@ -93,14 +93,16 @@ object anon {
   
   trait Enabled extends StObject {
     
+    /** @default true */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[String] = js.undefined
+    /** lenght must be 16 characters */
+    var secretKey: String
   }
   object Enabled {
     
-    inline def apply(): Enabled = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(secretKey: String): Enabled = {
+      val __obj = js.Dynamic.literal(secretKey = secretKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[Enabled]
     }
     
@@ -110,9 +112,7 @@ object anon {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-      
-      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,6 +134,31 @@ object anon {
       inline def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
       
       inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value*))
+    }
+  }
+  
+  trait Format extends StObject {
+    
+    var enabled: js.UndefOr[Boolean] = js.undefined
+    
+    var format: js.UndefOr[String] = js.undefined
+  }
+  object Format {
+    
+    inline def apply(): Format = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Format]
+    }
+    
+    extension [Self <: Format](x: Self) {
+      
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     }
   }
   
@@ -206,31 +231,6 @@ object anon {
       inline def setProvider(value: ReporterOptionsStoreProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
       inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
-    }
-  }
-  
-  trait SecretKey extends StObject {
-    
-    /** @default true */
-    var enabled: js.UndefOr[Boolean] = js.undefined
-    
-    /** lenght must be 16 characters */
-    var secretKey: String
-  }
-  object SecretKey {
-    
-    inline def apply(secretKey: String): SecretKey = {
-      val __obj = js.Dynamic.literal(secretKey = secretKey.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SecretKey]
-    }
-    
-    extension [Self <: SecretKey](x: Self) {
-      
-      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
-      
-      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
-      
-      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     }
   }
   

@@ -9,8 +9,7 @@ import typings.reactNative.mod.RegisteredStyle
 import typings.reactNative.mod.ScrollView
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeGestureHandler.gestureHandlerTypesCompatMod.GestureHandlerGestureEvent
-import typings.reactNativeReanimated.anon.Height
+import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerTypesCompatMod.GestureHandlerGestureEvent
 import typings.reactNativeReanimated.anon.InputRange
 import typings.reactNativeReanimated.anon.TypeofBaseAnimationBuildeDelay
 import typings.reactNativeReanimated.anon.X
@@ -21,7 +20,6 @@ import typings.reactNativeReanimated.mod.Animated.BackwardCompatibleWrapper
 import typings.reactNativeReanimated.mod.Animated.BinaryOperator
 import typings.reactNativeReanimated.mod.Animated.DecayConfig
 import typings.reactNativeReanimated.mod.Animated.DecayState
-import typings.reactNativeReanimated.mod.Animated.EventMappingArray
 import typings.reactNativeReanimated.mod.Animated.InterpolationConfig
 import typings.reactNativeReanimated.mod.Animated.MultiOperator
 import typings.reactNativeReanimated.mod.Animated.Nullable
@@ -160,9 +158,11 @@ inline def enableLayoutAnimations(flag: Boolean): Unit = ^.asInstanceOf[js.Dynam
 
 inline def eq_ : BinaryOperator[`0` | `1`] = ^.asInstanceOf[js.Dynamic].selectDynamic("eq").asInstanceOf[BinaryOperator[`0` | `1`]]
 
-inline def event[T](argMapping: EventMappingArray[T] | js.Array[typings.reactNativeReanimated.mod.Animated.Mapping]): js.Function1[/* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
 inline def event[T](
-  argMapping: EventMappingArray[T] | js.Array[typings.reactNativeReanimated.mod.Animated.Mapping],
+  argMapping: /* import warning: importer.ImportType#apply Failed type conversion: T extends never ? std.ReadonlyArray<react-native-reanimated.react-native-reanimated.Animated.Mapping> : std.Readonly<react-native-reanimated.react-native-reanimated.Animated.EventMappingArray<T>> */ js.Any
+): js.Function1[/* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
+inline def event[T](
+  argMapping: /* import warning: importer.ImportType#apply Failed type conversion: T extends never ? std.ReadonlyArray<react-native-reanimated.react-native-reanimated.Animated.Mapping> : std.Readonly<react-native-reanimated.react-native-reanimated.Animated.EventMappingArray<T>> */ js.Any,
   config: js.Object
 ): js.Function1[/* repeated */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
 
@@ -207,7 +207,7 @@ inline def makeMutable[T](initialValue: T): SharedValue[T] = ^.asInstanceOf[js.D
 
 inline def max: BinaryOperator[Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("max").asInstanceOf[BinaryOperator[Double]]
 
-inline def measure[T /* <: Component[js.Object, js.Object, Any] */](ref: RefObject[T]): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("measure")(ref.asInstanceOf[js.Any]).asInstanceOf[Height]
+inline def measure[T /* <: Component[js.Object, js.Object, Any] */](ref: RefObject[T]): MeasuredDimensions | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("measure")(ref.asInstanceOf[js.Any]).asInstanceOf[MeasuredDimensions | Null]
 
 inline def min: BinaryOperator[Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("min").asInstanceOf[BinaryOperator[Double]]
 
@@ -331,10 +331,12 @@ inline def useAnimatedScrollHandler[TContext /* <: Context */](handlers: ScrollH
 inline def useAnimatedScrollHandler[TContext /* <: Context */](handlers: ScrollHandlers[TContext]): OnScroll = ^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedScrollHandler")(handlers.asInstanceOf[js.Any]).asInstanceOf[OnScroll]
 inline def useAnimatedScrollHandler[TContext /* <: Context */](handlers: ScrollHandlers[TContext], deps: DependencyList): OnScroll = (^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedScrollHandler")(handlers.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[OnScroll]
 
-inline def useAnimatedSensor(sensorType: (Exclude[SensorType, ROTATION]) | SensorType): AnimatedSensor[SensorValue3D] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedSensor")(sensorType.asInstanceOf[js.Any]).asInstanceOf[AnimatedSensor[SensorValue3D]]
-inline def useAnimatedSensor(sensorType: (Exclude[SensorType, ROTATION]) | SensorType, userConfig: SensorConfig): AnimatedSensor[SensorValue3D] = (^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedSensor")(sensorType.asInstanceOf[js.Any], userConfig.asInstanceOf[js.Any])).asInstanceOf[AnimatedSensor[SensorValue3D]]
+inline def useAnimatedSensor(sensorType: SensorType): AnimatedSensor[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedSensor")(sensorType.asInstanceOf[js.Any]).asInstanceOf[AnimatedSensor[Any]]
 inline def useAnimatedSensor(sensorType: ROTATION): AnimatedSensor[SensorValueRotation] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedSensor")(sensorType.asInstanceOf[js.Any]).asInstanceOf[AnimatedSensor[SensorValueRotation]]
 inline def useAnimatedSensor(sensorType: ROTATION, userConfig: SensorConfig): AnimatedSensor[SensorValueRotation] = (^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedSensor")(sensorType.asInstanceOf[js.Any], userConfig.asInstanceOf[js.Any])).asInstanceOf[AnimatedSensor[SensorValueRotation]]
+inline def useAnimatedSensor(sensorType: SensorType, userConfig: SensorConfig): AnimatedSensor[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedSensor")(sensorType.asInstanceOf[js.Any], userConfig.asInstanceOf[js.Any])).asInstanceOf[AnimatedSensor[Any]]
+inline def useAnimatedSensor(sensorType: Exclude[SensorType, ROTATION]): AnimatedSensor[SensorValue3D] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedSensor")(sensorType.asInstanceOf[js.Any]).asInstanceOf[AnimatedSensor[SensorValue3D]]
+inline def useAnimatedSensor(sensorType: Exclude[SensorType, ROTATION], userConfig: SensorConfig): AnimatedSensor[SensorValue3D] = (^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedSensor")(sensorType.asInstanceOf[js.Any], userConfig.asInstanceOf[js.Any])).asInstanceOf[AnimatedSensor[SensorValue3D]]
 
 inline def useAnimatedStyle[T /* <: AnimatedStyleProp[ViewStyle | ImageStyle | TextStyle] */](updater: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedStyle")(updater.asInstanceOf[js.Any]).asInstanceOf[T]
 inline def useAnimatedStyle[T /* <: AnimatedStyleProp[ViewStyle | ImageStyle | TextStyle] */](updater: js.Function0[T], deps: DependencyList): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedStyle")(updater.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -355,14 +357,16 @@ inline def useEvent[T /* <: js.Object */](handler: js.Function1[/* e */ T, Unit]
 inline def useEvent[T /* <: js.Object */](handler: js.Function1[/* e */ T, Unit], eventNames: js.Array[String], rebuild: Boolean): js.Function1[/* e */ NativeSyntheticEvent[T], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(handler.asInstanceOf[js.Any], eventNames.asInstanceOf[js.Any], rebuild.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* e */ NativeSyntheticEvent[T], Unit]]
 inline def useEvent[T /* <: js.Object */](handler: js.Function1[/* e */ T, Unit], eventNames: Unit, rebuild: Boolean): js.Function1[/* e */ NativeSyntheticEvent[T], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(handler.asInstanceOf[js.Any], eventNames.asInstanceOf[js.Any], rebuild.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* e */ NativeSyntheticEvent[T], Unit]]
 
-inline def useFrameCallback(callback: js.Function0[Unit]): FrameCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("useFrameCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[FrameCallback]
-inline def useFrameCallback(callback: js.Function0[Unit], autostart: Boolean): FrameCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("useFrameCallback")(callback.asInstanceOf[js.Any], autostart.asInstanceOf[js.Any])).asInstanceOf[FrameCallback]
+inline def useFrameCallback(callback: js.Function1[/* frameInfo */ FrameInfo, Unit]): FrameCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("useFrameCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[FrameCallback]
+inline def useFrameCallback(callback: js.Function1[/* frameInfo */ FrameInfo, Unit], autostart: Boolean): FrameCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("useFrameCallback")(callback.asInstanceOf[js.Any], autostart.asInstanceOf[js.Any])).asInstanceOf[FrameCallback]
 
 inline def useHandler[T, TContext /* <: Context */](handlers: Record[String, Handler[T, TContext]]): typings.reactNativeReanimated.anon.Context[TContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHandler")(handlers.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.anon.Context[TContext]]
 inline def useHandler[T, TContext /* <: Context */](handlers: Record[String, Handler[T, TContext]], deps: DependencyList): typings.reactNativeReanimated.anon.Context[TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("useHandler")(handlers.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.anon.Context[TContext]]
 
 inline def useInterpolateConfig(inputRange: js.Array[Double], outputRange: js.Array[String | Double]): SharedValue[InterpolateConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("useInterpolateConfig")(inputRange.asInstanceOf[js.Any], outputRange.asInstanceOf[js.Any])).asInstanceOf[SharedValue[InterpolateConfig]]
 inline def useInterpolateConfig(inputRange: js.Array[Double], outputRange: js.Array[String | Double], colorSpace: ColorSpace): SharedValue[InterpolateConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("useInterpolateConfig")(inputRange.asInstanceOf[js.Any], outputRange.asInstanceOf[js.Any], colorSpace.asInstanceOf[js.Any])).asInstanceOf[SharedValue[InterpolateConfig]]
+
+inline def useScrollViewOffset(aref: RefObject[typings.reactNativeReanimated.mod.Animated.ScrollView]): SharedValue[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollViewOffset")(aref.asInstanceOf[js.Any]).asInstanceOf[SharedValue[Double]]
 
 inline def useSharedValue[T](initialValue: T): SharedValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSharedValue")(initialValue.asInstanceOf[js.Any]).asInstanceOf[SharedValue[T]]
 
@@ -486,6 +490,8 @@ type ExtrapolationType = js.UndefOr[_ExtrapolationType | String]
 type Handler[T, TContext /* <: Context */] = js.Function2[/* event */ T, /* context */ TContext, Unit]
 
 type LayoutAnimationFunction = js.Function1[/* targetValues */ LayoutAnimationsValues, LayoutAnimation]
+
+type MeasuredDimensions = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_commonTypes.MeasuredDimensions */ Any
 
 // gesture-handler
 type OnGestureEvent[T /* <: GestureHandlerGestureEvent */] = js.Function1[/* event */ T, Unit]

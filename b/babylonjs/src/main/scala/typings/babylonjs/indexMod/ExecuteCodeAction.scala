@@ -16,11 +16,11 @@ open class ExecuteCodeAction protected ()
     */
   def this(
     triggerOptions: Any,
-    func: js.Function1[/* evt */ typings.babylonjs.actionEventMod.ActionEvent, Unit]
+    func: js.Function1[/* evt */ typings.babylonjs.actionsActionEventMod.ActionEvent, Unit]
   ) = this()
   def this(
     triggerOptions: Any,
-    func: js.Function1[/* evt */ typings.babylonjs.actionEventMod.ActionEvent, Unit],
-    condition: typings.babylonjs.conditionMod.Condition
+    func: js.Function1[/* evt */ typings.babylonjs.actionsActionEventMod.ActionEvent, Unit],
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
 }

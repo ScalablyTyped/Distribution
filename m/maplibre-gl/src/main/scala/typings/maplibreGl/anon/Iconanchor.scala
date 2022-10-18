@@ -1,5 +1,10 @@
 package typings.maplibreGl.anon
 
+import typings.maplibreGl.distStyleSpecMod.DataDrivenPropertyValueSpecification
+import typings.maplibreGl.distStyleSpecMod.FormattedSpecification
+import typings.maplibreGl.distStyleSpecMod.PaddingSpecification
+import typings.maplibreGl.distStyleSpecMod.PropertyValueSpecification
+import typings.maplibreGl.distStyleSpecMod.ResolvedImageSpecification
 import typings.maplibreGl.maplibreGlStrings.ExpressionSpecification
 import typings.maplibreGl.maplibreGlStrings.`bottom-left`
 import typings.maplibreGl.maplibreGlStrings.`bottom-right`
@@ -30,7 +35,7 @@ import typings.maplibreGl.maplibreGlStrings.never
 import typings.maplibreGl.maplibreGlStrings.none
 import typings.maplibreGl.maplibreGlStrings.pi
 import typings.maplibreGl.maplibreGlStrings.point_
-import typings.maplibreGl.maplibreGlStrings.properties_
+import typings.maplibreGl.maplibreGlStrings.properties
 import typings.maplibreGl.maplibreGlStrings.right
 import typings.maplibreGl.maplibreGlStrings.source_
 import typings.maplibreGl.maplibreGlStrings.top
@@ -40,11 +45,6 @@ import typings.maplibreGl.maplibreGlStrings.viewport
 import typings.maplibreGl.maplibreGlStrings.visible
 import typings.maplibreGl.maplibreGlStrings.width
 import typings.maplibreGl.maplibreGlStrings.zoom
-import typings.maplibreGl.styleSpecMod.DataDrivenPropertyValueSpecification
-import typings.maplibreGl.styleSpecMod.FormattedSpecification
-import typings.maplibreGl.styleSpecMod.PaddingSpecification
-import typings.maplibreGl.styleSpecMod.PropertyValueSpecification
-import typings.maplibreGl.styleSpecMod.ResolvedImageSpecification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -175,7 +175,7 @@ object Iconanchor {
     inline def `setIcon-anchorUndefined`: Self = StObject.set(x, "icon-anchor", js.undefined)
     
     inline def `setIcon-anchorVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "icon-anchor", js.Array(value*))
     
     inline def `setIcon-ignore-placement`(value: PropertyValueSpecification[Boolean]): Self = StObject.set(x, "icon-ignore-placement", value.asInstanceOf[js.Any])
@@ -187,7 +187,7 @@ object Iconanchor {
     inline def `setIcon-imageUndefined`: Self = StObject.set(x, "icon-image", js.undefined)
     
     inline def `setIcon-imageVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "icon-image", js.Array(value*))
     
     inline def `setIcon-keep-upright`(value: PropertyValueSpecification[Boolean]): Self = StObject.set(x, "icon-keep-upright", value.asInstanceOf[js.Any])
@@ -199,7 +199,7 @@ object Iconanchor {
     inline def `setIcon-offsetUndefined`: Self = StObject.set(x, "icon-offset", js.undefined)
     
     inline def `setIcon-offsetVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "icon-offset", js.Array(value*))
     
     inline def `setIcon-optional`(value: PropertyValueSpecification[Boolean]): Self = StObject.set(x, "icon-optional", value.asInstanceOf[js.Any])
@@ -215,7 +215,7 @@ object Iconanchor {
     inline def `setIcon-paddingUndefined`: Self = StObject.set(x, "icon-padding", js.undefined)
     
     inline def `setIcon-paddingVarargs`(
-      value: (Double | ExpressionSpecification | accumulated | `geometry-type` | `heatmap-density` | id | `line-progress` | ln2 | pi | properties_ | zoom)*
+      value: (Double | ExpressionSpecification | accumulated | `geometry-type` | `heatmap-density` | id | `line-progress` | ln2 | pi | properties | zoom)*
     ): Self = StObject.set(x, "icon-padding", js.Array(value*))
     
     inline def `setIcon-pitch-alignment`(value: PropertyValueSpecification[map | viewport | auto]): Self = StObject.set(x, "icon-pitch-alignment", value.asInstanceOf[js.Any])
@@ -227,7 +227,7 @@ object Iconanchor {
     inline def `setIcon-rotateUndefined`: Self = StObject.set(x, "icon-rotate", js.undefined)
     
     inline def `setIcon-rotateVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "icon-rotate", js.Array(value*))
     
     inline def `setIcon-rotation-alignment`(value: PropertyValueSpecification[map | viewport | auto]): Self = StObject.set(x, "icon-rotation-alignment", value.asInstanceOf[js.Any])
@@ -239,7 +239,7 @@ object Iconanchor {
     inline def `setIcon-sizeUndefined`: Self = StObject.set(x, "icon-size", js.undefined)
     
     inline def `setIcon-sizeVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "icon-size", js.Array(value*))
     
     inline def `setIcon-text-fit`(value: PropertyValueSpecification[none | width | height | both]): Self = StObject.set(x, "icon-text-fit", value.asInstanceOf[js.Any])
@@ -263,7 +263,7 @@ object Iconanchor {
     inline def `setSymbol-sort-keyUndefined`: Self = StObject.set(x, "symbol-sort-key", js.undefined)
     
     inline def `setSymbol-sort-keyVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "symbol-sort-key", js.Array(value*))
     
     inline def `setSymbol-spacing`(value: PropertyValueSpecification[Double]): Self = StObject.set(x, "symbol-spacing", value.asInstanceOf[js.Any])
@@ -287,7 +287,7 @@ object Iconanchor {
     inline def `setText-anchorUndefined`: Self = StObject.set(x, "text-anchor", js.undefined)
     
     inline def `setText-anchorVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-anchor", js.Array(value*))
     
     inline def `setText-field`(value: DataDrivenPropertyValueSpecification[FormattedSpecification]): Self = StObject.set(x, "text-field", value.asInstanceOf[js.Any])
@@ -295,7 +295,7 @@ object Iconanchor {
     inline def `setText-fieldUndefined`: Self = StObject.set(x, "text-field", js.undefined)
     
     inline def `setText-fieldVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-field", js.Array(value*))
     
     inline def `setText-font`(value: DataDrivenPropertyValueSpecification[js.Array[String]]): Self = StObject.set(x, "text-font", value.asInstanceOf[js.Any])
@@ -303,7 +303,7 @@ object Iconanchor {
     inline def `setText-fontUndefined`: Self = StObject.set(x, "text-font", js.undefined)
     
     inline def `setText-fontVarargs`(
-      value: (ExpressionSpecification | String | accumulated | `geometry-type` | `heatmap-density` | id | `line-progress` | ln2 | pi | properties_ | zoom)*
+      value: (ExpressionSpecification | String | accumulated | `geometry-type` | `heatmap-density` | id | `line-progress` | ln2 | pi | properties | zoom)*
     ): Self = StObject.set(x, "text-font", js.Array(value*))
     
     inline def `setText-ignore-placement`(value: PropertyValueSpecification[Boolean]): Self = StObject.set(x, "text-ignore-placement", value.asInstanceOf[js.Any])
@@ -315,7 +315,7 @@ object Iconanchor {
     inline def `setText-justifyUndefined`: Self = StObject.set(x, "text-justify", js.undefined)
     
     inline def `setText-justifyVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-justify", js.Array(value*))
     
     inline def `setText-keep-upright`(value: PropertyValueSpecification[Boolean]): Self = StObject.set(x, "text-keep-upright", value.asInstanceOf[js.Any])
@@ -327,7 +327,7 @@ object Iconanchor {
     inline def `setText-letter-spacingUndefined`: Self = StObject.set(x, "text-letter-spacing", js.undefined)
     
     inline def `setText-letter-spacingVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-letter-spacing", js.Array(value*))
     
     inline def `setText-line-height`(value: PropertyValueSpecification[Double]): Self = StObject.set(x, "text-line-height", value.asInstanceOf[js.Any])
@@ -343,7 +343,7 @@ object Iconanchor {
     inline def `setText-max-widthUndefined`: Self = StObject.set(x, "text-max-width", js.undefined)
     
     inline def `setText-max-widthVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-max-width", js.Array(value*))
     
     inline def `setText-offset`(value: DataDrivenPropertyValueSpecification[js.Tuple2[Double, Double]]): Self = StObject.set(x, "text-offset", value.asInstanceOf[js.Any])
@@ -351,7 +351,7 @@ object Iconanchor {
     inline def `setText-offsetUndefined`: Self = StObject.set(x, "text-offset", js.undefined)
     
     inline def `setText-offsetVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-offset", js.Array(value*))
     
     inline def `setText-optional`(value: PropertyValueSpecification[Boolean]): Self = StObject.set(x, "text-optional", value.asInstanceOf[js.Any])
@@ -375,7 +375,7 @@ object Iconanchor {
     inline def `setText-radial-offsetUndefined`: Self = StObject.set(x, "text-radial-offset", js.undefined)
     
     inline def `setText-radial-offsetVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-radial-offset", js.Array(value*))
     
     inline def `setText-rotate`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "text-rotate", value.asInstanceOf[js.Any])
@@ -383,7 +383,7 @@ object Iconanchor {
     inline def `setText-rotateUndefined`: Self = StObject.set(x, "text-rotate", js.undefined)
     
     inline def `setText-rotateVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-rotate", js.Array(value*))
     
     inline def `setText-rotation-alignment`(value: PropertyValueSpecification[map | viewport | `viewport-glyph` | auto]): Self = StObject.set(x, "text-rotation-alignment", value.asInstanceOf[js.Any])
@@ -395,7 +395,7 @@ object Iconanchor {
     inline def `setText-sizeUndefined`: Self = StObject.set(x, "text-size", js.undefined)
     
     inline def `setText-sizeVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-size", js.Array(value*))
     
     inline def `setText-transform`(value: DataDrivenPropertyValueSpecification[none | uppercase | lowercase]): Self = StObject.set(x, "text-transform", value.asInstanceOf[js.Any])
@@ -403,7 +403,7 @@ object Iconanchor {
     inline def `setText-transformUndefined`: Self = StObject.set(x, "text-transform", js.undefined)
     
     inline def `setText-transformVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-transform", js.Array(value*))
     
     inline def `setText-variable-anchor`(

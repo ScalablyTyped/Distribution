@@ -1,10 +1,10 @@
 package typings.antd.anon
 
 import typings.antd.antdStrings.picker
-import typings.antd.generatePickerMod.PickerDateProps
-import typings.antd.generatePickerMod.PickerTimeProps
-import typings.antd.generatePickerMod.RangePickerProps
-import typings.antd.interfaceMod.PickerComponentClass
+import typings.antd.libDatePickerGeneratePickerInterfaceMod.PickerComponentClass
+import typings.antd.libDatePickerGeneratePickerMod.PickerDateProps
+import typings.antd.libDatePickerGeneratePickerMod.PickerTimeProps
+import typings.antd.libDatePickerGeneratePickerMod.RangePickerProps
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

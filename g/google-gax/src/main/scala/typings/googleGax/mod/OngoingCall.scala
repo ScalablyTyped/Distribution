@@ -1,6 +1,6 @@
 package typings.googleGax.mod
 
-import typings.googleGax.apitypesMod.APICallback
+import typings.googleGax.buildSrcApitypesMod.APICallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "OngoingCall")
 @js.native
 open class OngoingCall protected ()
-  extends typings.googleGax.callMod.OngoingCall {
+  extends typings.googleGax.buildSrcCallMod.OngoingCall {
   /**
     * OngoingCall manages callback, API calls, and cancellation
     * of the API calls.

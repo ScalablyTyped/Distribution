@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new entity manager.
   */
 open class EntityManager ()
-  extends typings.yuka.yukaMod.EntityManager
+  extends typings.yuka.srcYukaMod.EntityManager

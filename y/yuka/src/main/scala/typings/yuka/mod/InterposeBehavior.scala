@@ -14,19 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [deceleration] - The amount of deceleration.
   */
 open class InterposeBehavior ()
-  extends typings.yuka.yukaMod.InterposeBehavior {
-  def this(entity1: typings.yuka.movingEntityMod.MovingEntity) = this()
-  def this(entity1: Unit, entity2: typings.yuka.movingEntityMod.MovingEntity) = this()
+  extends typings.yuka.srcYukaMod.InterposeBehavior {
+  def this(entity1: typings.yuka.srcCoreMovingEntityMod.MovingEntity) = this()
+  def this(entity1: Unit, entity2: typings.yuka.srcCoreMovingEntityMod.MovingEntity) = this()
   def this(
-    entity1: typings.yuka.movingEntityMod.MovingEntity,
-    entity2: typings.yuka.movingEntityMod.MovingEntity
+    entity1: typings.yuka.srcCoreMovingEntityMod.MovingEntity,
+    entity2: typings.yuka.srcCoreMovingEntityMod.MovingEntity
   ) = this()
   def this(entity1: Unit, entity2: Unit, deceleration: Double) = this()
-  def this(entity1: Unit, entity2: typings.yuka.movingEntityMod.MovingEntity, deceleration: Double) = this()
-  def this(entity1: typings.yuka.movingEntityMod.MovingEntity, entity2: Unit, deceleration: Double) = this()
+  def this(entity1: Unit, entity2: typings.yuka.srcCoreMovingEntityMod.MovingEntity, deceleration: Double) = this()
+  def this(entity1: typings.yuka.srcCoreMovingEntityMod.MovingEntity, entity2: Unit, deceleration: Double) = this()
   def this(
-    entity1: typings.yuka.movingEntityMod.MovingEntity,
-    entity2: typings.yuka.movingEntityMod.MovingEntity,
+    entity1: typings.yuka.srcCoreMovingEntityMod.MovingEntity,
+    entity2: typings.yuka.srcCoreMovingEntityMod.MovingEntity,
     deceleration: Double
   ) = this()
 }

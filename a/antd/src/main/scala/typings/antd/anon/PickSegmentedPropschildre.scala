@@ -54,8 +54,8 @@ import typings.antd.antdStrings.url
 import typings.antd.antdStrings.user
 import typings.antd.antdStrings.vertical
 import typings.antd.antdStrings.yes
-import typings.antd.configProviderSizeContextMod.SizeType
-import typings.antd.segmentedMod.SegmentedLabeledOption
+import typings.antd.libConfigProviderSizeContextMod.SizeType
+import typings.antd.libSegmentedMod.SegmentedLabeledOption
 import typings.rcSegmented.mod.SegmentedRawOption
 import typings.rcSegmented.mod.SegmentedValue
 import typings.react.anon.Html

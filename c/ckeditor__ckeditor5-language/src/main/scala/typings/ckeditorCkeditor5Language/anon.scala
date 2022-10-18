@@ -3,7 +3,7 @@ package typings.ckeditorCkeditor5Language
 import org.scalablytyped.runtime.Instantiable0
 import typings.ckeditorCkeditor5Language.ckeditorCkeditor5LanguageStrings.TextPartLanguageEditing
 import typings.ckeditorCkeditor5Language.ckeditorCkeditor5LanguageStrings.TextPartLanguageUI
-import typings.ckeditorCkeditor5Language.textpartlanguageeditingMod.default
+import typings.ckeditorCkeditor5Language.srcTextpartlanguageeditingMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,7 +67,7 @@ object anon {
   @js.native
   trait TypeofTextPartLanguageUI
     extends StObject
-       with Instantiable0[typings.ckeditorCkeditor5Language.textpartlanguageuiMod.default] {
+       with Instantiable0[typings.ckeditorCkeditor5Language.srcTextpartlanguageuiMod.default] {
     
     val pluginName: TextPartLanguageUI = js.native
   }

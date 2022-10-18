@@ -1,13 +1,13 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.WidgetValue
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.TemplatePlaceholder")
 @js.native
 open class TemplatePlaceholder protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.TemplatePlaceholder {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.TemplatePlaceholder {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,7 +40,7 @@ object TemplatePlaceholder {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -51,7 +51,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInBuildingBlockUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.BuildingBlock): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInBuildingBlockUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.BuildingBlock): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -62,7 +62,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInDataViewUnderFooterWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInDataViewUnderFooterWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.DataView): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -73,7 +73,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInDataViewUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInDataViewUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.DataView): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -84,7 +84,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInDivContainerUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInDivContainerUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.DivContainer): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -95,7 +95,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInGroupBoxUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.GroupBox): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInGroupBoxUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.GroupBox): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -106,7 +106,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInHeaderUnderLeftWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInHeaderUnderLeftWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Header): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -117,7 +117,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInHeaderUnderRightWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInHeaderUnderRightWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Header): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -128,7 +128,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInLayoutCallArgumentUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInLayoutCallArgumentUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -139,7 +139,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInLayoutGridColumnUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInLayoutGridColumnUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -150,7 +150,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInListViewTemplateUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInListViewTemplateUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -161,7 +161,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInListViewUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInListViewUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ListView): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -172,7 +172,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInNativeLayoutContentUnderSidebarWidgets(container: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutContent): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInNativeLayoutContentUnderSidebarWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.NativeLayoutContent): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -183,7 +183,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInNativeLayoutContentUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutContent): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInNativeLayoutContentUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.NativeLayoutContent): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -194,7 +194,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInNavigationListItemUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInNavigationListItemUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.NavigationListItem): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -205,7 +205,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInScrollContainerRegionUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInScrollContainerRegionUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -216,7 +216,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInSnippetUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Snippet): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInSnippetUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Snippet): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -227,7 +227,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInTabPageUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TabPage): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInTabPageUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.TabPage): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -238,7 +238,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInTableCellUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TableCell): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInTableCellUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.TableCell): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -249,7 +249,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInTemplateGridContentsUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInTemplateGridContentsUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -260,7 +260,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.WebLayoutContent): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.WebLayoutContent): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
@@ -271,7 +271,7 @@ object TemplatePlaceholder {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplatePlaceholder]
+  inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.TemplatePlaceholder]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.TemplatePlaceholder.structureTypeName")

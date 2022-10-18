@@ -3,10 +3,10 @@ package typings.jridgewellGenMapping
 import typings.jridgewellGenMapping.anon.Content
 import typings.jridgewellGenMapping.anon.Generated
 import typings.jridgewellGenMapping.anon.Name
-import typings.jridgewellGenMapping.typesMod.DecodedSourceMap
-import typings.jridgewellGenMapping.typesMod.EncodedSourceMap
-import typings.jridgewellGenMapping.typesMod.Mapping
-import typings.jridgewellTraceMapping.typesMod.SourceMapInput
+import typings.jridgewellGenMapping.distTypesTypesMod.DecodedSourceMap
+import typings.jridgewellGenMapping.distTypesTypesMod.EncodedSourceMap
+import typings.jridgewellGenMapping.distTypesTypesMod.Mapping
+import typings.jridgewellTraceMapping.distTypesTypesMod.SourceMapInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fullcalendar/common", "NamedTimeZoneImpl")
+/* note: abstract class */ @JSImport("@fullcalendar/common", "NamedTimeZoneImpl")
 @js.native
-abstract class NamedTimeZoneImpl protected () extends StObject {
+open class NamedTimeZoneImpl protected () extends StObject {
   def this(timeZoneName: String) = this()
   
   def offsetForArray(a: js.Array[Double]): Double = js.native

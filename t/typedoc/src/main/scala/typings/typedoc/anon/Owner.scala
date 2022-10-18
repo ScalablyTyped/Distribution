@@ -1,7 +1,7 @@
 package typings.typedoc.anon
 
-import typings.typedoc.modelsMod.ReferenceType
-import typings.typedoc.modelsMod.Reflection
+import typings.typedoc.distLibModelsMod.ReferenceType
+import typings.typedoc.distLibModelsMod.Reflection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

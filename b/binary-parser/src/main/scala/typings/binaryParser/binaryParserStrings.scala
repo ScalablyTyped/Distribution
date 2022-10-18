@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object binaryParserStrings {
   
   @js.native
-  sealed trait Next extends StObject
-  inline def Next: Next = "Next".asInstanceOf[Next]
-  
-  @js.native
   sealed trait big
     extends StObject
        with Endianness

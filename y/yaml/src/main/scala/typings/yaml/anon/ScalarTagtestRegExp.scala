@@ -1,10 +1,10 @@
 package typings.yaml.anon
 
-import typings.yaml.createNodeMod.CreateNodeContext
-import typings.yaml.optionsMod.ParseOptions
-import typings.yaml.scalarMod.Scalar
-import typings.yaml.schemaSchemaMod.Schema
-import typings.yaml.stringifyMod.StringifyContext
+import typings.yaml.distDocCreateNodeMod.CreateNodeContext
+import typings.yaml.distNodesScalarMod.Scalar
+import typings.yaml.distOptionsMod.ParseOptions
+import typings.yaml.distSchemaSchemaMod.Schema
+import typings.yaml.distStringifyStringifyMod.StringifyContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ trait ScalarTagtestRegExp extends StObject {
       /* schema */ Schema, 
       /* value */ Any, 
       /* ctx */ CreateNodeContext, 
-      typings.yaml.nodeMod.Node[Any]
+      typings.yaml.distNodesNodeMod.Node[Any]
     ]
   ] = js.undefined
   
@@ -105,7 +105,7 @@ object ScalarTagtestRegExp {
   extension [Self <: ScalarTagtestRegExp](x: Self) {
     
     inline def setCreateNode(
-      value: (/* schema */ Schema, /* value */ Any, /* ctx */ CreateNodeContext) => typings.yaml.nodeMod.Node[Any]
+      value: (/* schema */ Schema, /* value */ Any, /* ctx */ CreateNodeContext) => typings.yaml.distNodesNodeMod.Node[Any]
     ): Self = StObject.set(x, "createNode", js.Any.fromFunction3(value))
     
     inline def setCreateNodeUndefined: Self = StObject.set(x, "createNode", js.undefined)

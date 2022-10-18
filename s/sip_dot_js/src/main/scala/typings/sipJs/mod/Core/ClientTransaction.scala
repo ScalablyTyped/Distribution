@@ -1,20 +1,20 @@
 package typings.sipJs.mod.Core
 
-import typings.sipJs.coreTransportMod.Transport
-import typings.sipJs.transactionUserMod.ClientTransactionUser
+import typings.sipJs.libCoreTransactionsTransactionUserMod.ClientTransactionUser
+import typings.sipJs.libCoreTransportMod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js", "Core.ClientTransaction")
+/* note: abstract class */ @JSImport("sip.js", "Core.ClientTransaction")
 @js.native
-abstract class ClientTransaction protected ()
-  extends typings.sipJs.coreMod.ClientTransaction {
+open class ClientTransaction protected ()
+  extends typings.sipJs.libCoreMod.ClientTransaction {
   /* protected */ def this(
-    _request: typings.sipJs.messagesMod.OutgoingRequestMessage,
+    _request: typings.sipJs.libCoreMessagesMod.OutgoingRequestMessage,
     transport: Transport,
     user: ClientTransactionUser,
-    state: typings.sipJs.transactionStateMod.TransactionState,
+    state: typings.sipJs.libCoreTransactionsTransactionStateMod.TransactionState,
     loggerCategory: String
   ) = this()
 }

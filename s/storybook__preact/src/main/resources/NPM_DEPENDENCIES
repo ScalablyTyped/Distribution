@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/preact" : "6.1.2"
+      "@storybook/preact" : "6.5.12"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/preact" : "6.1.2"
+      "@storybook/preact" : "6.5.12"
     }
   ],
   "compile-devDependencies" : [

@@ -1,5 +1,7 @@
 package typings.materializeCss.global.M
 
+import typings.materializeCss.M.FormSelectOptions
+import typings.materializeCss.MElements
 import typings.materializeCss.anon.PartialFormSelectOptions
 import typings.std.Element
 import typings.std.HTMLInputElement
@@ -15,6 +17,12 @@ open class FormSelect ()
      with typings.materializeCss.M.FormSelect {
   
   /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
     * Instance of the dropdown plugin for this select
     */
   /* CompleteClass */
@@ -25,6 +33,12 @@ open class FormSelect ()
     */
   /* CompleteClass */
   var dropdownOptions: HTMLUListElement = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
   
   /**
     * Get selected values in an array
@@ -43,6 +57,12 @@ open class FormSelect ()
     */
   /* CompleteClass */
   var isMultiple: Boolean = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: FormSelectOptions = js.native
   
   /**
     * The select wrapper element
@@ -66,13 +86,8 @@ object FormSelect {
     * Init FormSelects
     */
   /* static member */
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any
-  ): js.Array[typings.materializeCss.M.FormSelect] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.FormSelect]]
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any,
-    options: PartialFormSelectOptions
-  ): js.Array[typings.materializeCss.M.FormSelect] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.FormSelect]]
+  inline def init(els: MElements): js.Array[typings.materializeCss.M.FormSelect] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.FormSelect]]
+  inline def init(els: MElements, options: PartialFormSelectOptions): js.Array[typings.materializeCss.M.FormSelect] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.FormSelect]]
   /**
     * Init FormSelect
     */

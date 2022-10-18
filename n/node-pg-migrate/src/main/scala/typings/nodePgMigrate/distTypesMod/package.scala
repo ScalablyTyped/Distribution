@@ -1,6 +1,6 @@
 package typings.nodePgMigrate.distTypesMod
 
-import typings.nodePgMigrate.generalTypesMod.Name
+import typings.nodePgMigrate.distOperationsGeneralTypesMod.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

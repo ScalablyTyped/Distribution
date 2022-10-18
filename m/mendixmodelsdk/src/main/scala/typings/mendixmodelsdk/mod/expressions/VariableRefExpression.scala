@@ -1,42 +1,42 @@
 package typings.mendixmodelsdk.mod.expressions
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.expressionsMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.microflowsMod.microflows.AppServiceCallParameterMapping
-import typings.mendixmodelsdk.microflowsMod.microflows.BasicCodeActionParameterValue
-import typings.mendixmodelsdk.microflowsMod.microflows.BasicJavaActionParameterValue
-import typings.mendixmodelsdk.microflowsMod.microflows.BinaryRequestHandling
-import typings.mendixmodelsdk.microflowsMod.microflows.ChangeListAction
-import typings.mendixmodelsdk.microflowsMod.microflows.ChangeVariableAction
-import typings.mendixmodelsdk.microflowsMod.microflows.CreateVariableAction
-import typings.mendixmodelsdk.microflowsMod.microflows.CustomRange
-import typings.mendixmodelsdk.microflowsMod.microflows.DocumentTemplateParameterMapping
-import typings.mendixmodelsdk.microflowsMod.microflows.EndEvent
-import typings.mendixmodelsdk.microflowsMod.microflows.ExpressionListOperation
-import typings.mendixmodelsdk.microflowsMod.microflows.ExpressionSplitCondition
-import typings.mendixmodelsdk.microflowsMod.microflows.FormDataPart
-import typings.mendixmodelsdk.microflowsMod.microflows.GenerateDocumentAction
-import typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration
-import typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry
-import typings.mendixmodelsdk.microflowsMod.microflows.InspectAttribute
-import typings.mendixmodelsdk.microflowsMod.microflows.LogMessageAction
-import typings.mendixmodelsdk.microflowsMod.microflows.MemberChange
-import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowCallParameterMapping
-import typings.mendixmodelsdk.microflowsMod.microflows.NanoflowCallParameterMapping
-import typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration
-import typings.mendixmodelsdk.microflowsMod.microflows.RestCallAction
-import typings.mendixmodelsdk.microflowsMod.microflows.RuleCallParameterMapping
-import typings.mendixmodelsdk.microflowsMod.microflows.TemplateArgument
-import typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction
-import typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationParameterMapping
-import typings.mendixmodelsdk.pagesMod.pages.ConditionalSettings
-import typings.mendixmodelsdk.pagesMod.pages.WidgetValidation
-import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenExpressionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.AppServiceCallParameterMapping
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.BasicCodeActionParameterValue
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.BasicJavaActionParameterValue
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.BinaryRequestHandling
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ChangeListAction
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ChangeVariableAction
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.CreateVariableAction
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.CustomRange
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.DocumentTemplateParameterMapping
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.EndEvent
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ExpressionListOperation
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ExpressionSplitCondition
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.FormDataPart
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.GenerateDocumentAction
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpHeaderEntry
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.InspectAttribute
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.LogMessageAction
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MemberChange
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowCallParameterMapping
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.NanoflowCallParameterMapping
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ProxyConfiguration
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RestCallAction
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RuleCallParameterMapping
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.TemplateArgument
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.WebServiceCallAction
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.WebServiceOperationParameterMapping
+import typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalSettings
+import typings.mendixmodelsdk.srcGenPagesMod.pages.WidgetValidation
+import typings.mendixmodelsdk.srcGenRestMod.rest.ConsumedODataService
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +52,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "expressions.VariableRefExpression")
 @js.native
 open class VariableRefExpression protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.expressions.VariableRefExpression {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.expressions.VariableRefExpression {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -74,7 +74,7 @@ object VariableRefExpression {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -85,7 +85,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.0.1
     */
   /* static member */
-  inline def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -96,7 +96,7 @@ object VariableRefExpression {
     *  7.21.0 to 9.7.0
     */
   /* static member */
-  inline def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -107,7 +107,7 @@ object VariableRefExpression {
     *  7.9.0 to 7.20.0
     */
   /* static member */
-  inline def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -118,7 +118,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInBinaryExpressionUnderLeft(container: typings.mendixmodelsdk.expressionsMod.expressions.BinaryExpression): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInBinaryExpressionUnderLeft(container: typings.mendixmodelsdk.srcGenExpressionsMod.expressions.BinaryExpression): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -129,7 +129,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInBinaryExpressionUnderRight(container: typings.mendixmodelsdk.expressionsMod.expressions.BinaryExpression): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInBinaryExpressionUnderRight(container: typings.mendixmodelsdk.srcGenExpressionsMod.expressions.BinaryExpression): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -140,7 +140,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -151,7 +151,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInChangeListActionUnderValueModel(container: ChangeListAction): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInChangeListActionUnderValueModel(container: ChangeListAction): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -162,7 +162,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -173,7 +173,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -184,7 +184,7 @@ object VariableRefExpression {
     *  8.5.0 to 9.7.0
     */
   /* static member */
-  inline def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -195,7 +195,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -206,7 +206,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -217,7 +217,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -228,7 +228,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -239,7 +239,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInEndEventUnderReturnValueModel(container: EndEvent): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInEndEventUnderReturnValueModel(container: EndEvent): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -250,7 +250,7 @@ object VariableRefExpression {
     *  9.0.3 to 9.7.0
     */
   /* static member */
-  inline def createInExpressionListOperationUnderExpressionModel(container: ExpressionListOperation): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionListOperationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInExpressionListOperationUnderExpressionModel(container: ExpressionListOperation): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionListOperationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -261,7 +261,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -272,7 +272,7 @@ object VariableRefExpression {
     *  8.0.0 to 9.7.0
     */
   /* static member */
-  inline def createInFormDataPartUnderValueModel(container: FormDataPart): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInFormDataPartUnderValueModel(container: FormDataPart): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -283,7 +283,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInFunctionCallExpressionUnderArguments(container: typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInFunctionCallExpressionUnderArguments(container: typings.mendixmodelsdk.srcGenExpressionsMod.expressions.FunctionCallExpression): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -294,7 +294,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -305,7 +305,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -316,7 +316,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -327,7 +327,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -338,7 +338,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -349,7 +349,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInHttpConfigurationUnderPassword(container: HttpConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInHttpConfigurationUnderPassword(container: HttpConfiguration): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -360,7 +360,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInHttpConfigurationUnderUsername(container: HttpConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInHttpConfigurationUnderUsername(container: HttpConfiguration): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -371,7 +371,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -382,7 +382,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInIfExpressionUnderCondition(container: typings.mendixmodelsdk.expressionsMod.expressions.IfExpression): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInIfExpressionUnderCondition(container: typings.mendixmodelsdk.srcGenExpressionsMod.expressions.IfExpression): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -393,7 +393,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInIfExpressionUnderIfFalse(container: typings.mendixmodelsdk.expressionsMod.expressions.IfExpression): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInIfExpressionUnderIfFalse(container: typings.mendixmodelsdk.srcGenExpressionsMod.expressions.IfExpression): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -404,7 +404,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInIfExpressionUnderIfTrue(container: typings.mendixmodelsdk.expressionsMod.expressions.IfExpression): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInIfExpressionUnderIfTrue(container: typings.mendixmodelsdk.srcGenExpressionsMod.expressions.IfExpression): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -415,7 +415,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -426,7 +426,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInLogMessageActionUnderNodeModel(container: LogMessageAction): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInLogMessageActionUnderNodeModel(container: LogMessageAction): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -437,7 +437,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInMemberChangeUnderValueModel(container: MemberChange): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInMemberChangeUnderValueModel(container: MemberChange): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -448,7 +448,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -459,7 +459,7 @@ object VariableRefExpression {
     *  8.0.0 to 9.7.0
     */
   /* static member */
-  inline def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -470,7 +470,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInParenthesisExpressionUnderExpression(container: typings.mendixmodelsdk.expressionsMod.expressions.ParenthesisExpression): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInParenthesisExpressionUnderExpression(container: typings.mendixmodelsdk.srcGenExpressionsMod.expressions.ParenthesisExpression): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -481,7 +481,7 @@ object VariableRefExpression {
     *  7.15.0 to 9.7.0
     */
   /* static member */
-  inline def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -492,7 +492,7 @@ object VariableRefExpression {
     *  7.15.0 to 9.7.0
     */
   /* static member */
-  inline def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -503,7 +503,7 @@ object VariableRefExpression {
     *  7.15.0 to 9.7.0
     */
   /* static member */
-  inline def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -514,7 +514,7 @@ object VariableRefExpression {
     *  7.15.0 to 9.7.0
     */
   /* static member */
-  inline def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -525,7 +525,7 @@ object VariableRefExpression {
     *  7.15.0 to 9.7.0
     */
   /* static member */
-  inline def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -536,7 +536,7 @@ object VariableRefExpression {
     *  7.15.0 to 9.7.0
     */
   /* static member */
-  inline def createInRestCallActionUnderTimeOutModel(container: RestCallAction): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInRestCallActionUnderTimeOutModel(container: RestCallAction): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -547,7 +547,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -558,7 +558,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -569,7 +569,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInUnaryExpressionUnderExpression(container: typings.mendixmodelsdk.expressionsMod.expressions.UnaryExpression): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInUnaryExpressionUnderExpression(container: typings.mendixmodelsdk.srcGenExpressionsMod.expressions.UnaryExpression): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -580,7 +580,7 @@ object VariableRefExpression {
     *  7.15.0 to 9.7.0
     */
   /* static member */
-  inline def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -591,7 +591,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -602,7 +602,7 @@ object VariableRefExpression {
     *  7.9.0 to 9.7.0
     */
   /* static member */
-  inline def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression]
+  inline def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression]
   
   /* static member */
   @JSImport("mendixmodelsdk", "expressions.VariableRefExpression.structureTypeName")

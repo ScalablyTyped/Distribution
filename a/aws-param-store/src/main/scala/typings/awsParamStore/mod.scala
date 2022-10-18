@@ -1,11 +1,11 @@
 package typings.awsParamStore
 
-import typings.awsSdk.ssmMod.ClientConfiguration
-import typings.awsSdk.ssmMod.GetParametersResult
-import typings.awsSdk.ssmMod.PSParameterName
-import typings.awsSdk.ssmMod.Parameter
-import typings.awsSdk.ssmMod.ParameterList
-import typings.awsSdk.ssmMod.ParameterNameList
+import typings.awsSdk.clientsSsmMod.ClientConfiguration
+import typings.awsSdk.clientsSsmMod.GetParametersResult
+import typings.awsSdk.clientsSsmMod.PSParameterName
+import typings.awsSdk.clientsSsmMod.Parameter
+import typings.awsSdk.clientsSsmMod.ParameterList
+import typings.awsSdk.clientsSsmMod.ParameterNameList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

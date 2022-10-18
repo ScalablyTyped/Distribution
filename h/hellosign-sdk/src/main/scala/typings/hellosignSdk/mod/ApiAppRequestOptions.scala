@@ -1,7 +1,7 @@
 package typings.hellosignSdk.mod
 
 import typings.hellosignSdk.anon.Scopes
-import typings.hellosignSdk.anon.`1`
+import typings.hellosignSdk.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ trait ApiAppRequestOptions extends StObject {
   
   var oauth: js.UndefOr[Scopes] = js.undefined
   
-  var options: js.UndefOr[`1`] = js.undefined
+  var options: js.UndefOr[`0`] = js.undefined
   
   var white_labeling_options: js.UndefOr[js.Array[Any]] = js.undefined
 }
@@ -51,7 +51,7 @@ object ApiAppRequestOptions {
     
     inline def setOauthUndefined: Self = StObject.set(x, "oauth", js.undefined)
     
-    inline def setOptions(value: `1`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: `0`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     

@@ -94,7 +94,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react.react.DetailedHTMLProps<react.react.FormHTMLAttributes<std.HTMLFormElement>, std.HTMLFormElement> & @storybook/theming.@storybook/theming.DistributiveOmit<std.Pick<react.react.ClassAttributes<std.HTMLFormElement> & react.react.FormHTMLAttributes<std.HTMLFormElement>, keyof react.react.FormHTMLAttributes<std.HTMLFormElement>>, 'theme'> & @storybook/theming.anon.1<@storybook/theming.@storybook/theming.Theme> */
+/* Inlined react.react.DetailedHTMLProps<react.react.FormHTMLAttributes<std.HTMLFormElement>, std.HTMLFormElement> & @storybook/theming.@storybook/theming.DistributiveOmit<std.Pick<react.react.ClassAttributes<std.HTMLFormElement> & react.react.FormHTMLAttributes<std.HTMLFormElement>, keyof react.react.FormHTMLAttributes<std.HTMLFormElement>>, 'theme'> & @storybook/theming.anon.0<@storybook/theming.@storybook/theming.Theme> */
 trait DetailedHTMLPropsFormHTML extends StObject {
   
   // RDFa Attributes

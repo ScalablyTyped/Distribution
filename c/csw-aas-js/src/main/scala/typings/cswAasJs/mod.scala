@@ -1,10 +1,10 @@
 package typings.cswAasJs
 
-import typings.cswAasJs.authContextMod.AuthContextType
-import typings.cswAasJs.authContextProviderMod.AuthContextProps
-import typings.cswAasJs.checkLoginMod.CheckLoginProps
-import typings.cswAasJs.clientRoleMod.ClientRoleProps
-import typings.cswAasJs.realmRoleMod.RealmRoleProps
+import typings.cswAasJs.distComponentsAuthenticationCheckLoginMod.CheckLoginProps
+import typings.cswAasJs.distComponentsAuthorizationClientRoleMod.ClientRoleProps
+import typings.cswAasJs.distComponentsAuthorizationRealmRoleMod.RealmRoleProps
+import typings.cswAasJs.distComponentsContextAuthContextMod.AuthContextType
+import typings.cswAasJs.distComponentsContextAuthContextProviderMod.AuthContextProps
 import typings.react.mod.Context
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

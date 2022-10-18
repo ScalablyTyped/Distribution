@@ -1,8 +1,8 @@
 package typings.reactDaumPostcode
 
 import typings.react.mod.global.JSX.Element
-import typings.reactDaumPostcode.loadPostcodeMod.PostcodeConstructor
-import typings.reactDaumPostcode.useDaumPostcodePopupMod.DaumPostcodePopupParams
+import typings.reactDaumPostcode.libLoadPostcodeMod.PostcodeConstructor
+import typings.reactDaumPostcode.libUseDaumPostcodePopupMod.DaumPostcodePopupParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object mod {
   @JSImport("react-daum-postcode", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.reactDaumPostcode.daumPostcodeEmbedMod.default
+    extends typings.reactDaumPostcode.libDaumPostcodeEmbedMod.default
   object default {
     
     /* static member */
@@ -46,7 +46,7 @@ object mod {
   @JSImport("react-daum-postcode", "DaumPostcodeEmbed")
   @js.native
   open class DaumPostcodeEmbed ()
-    extends typings.reactDaumPostcode.daumPostcodeEmbedMod.default
+    extends typings.reactDaumPostcode.libDaumPostcodeEmbedMod.default
   object DaumPostcodeEmbed {
     
     /* static member */

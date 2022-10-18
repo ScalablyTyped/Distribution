@@ -8,7 +8,7 @@ object AddinCommands {
   
   /**
     * The `Event` object is passed as a parameter to add-in functions invoked by function command buttons. The object allows the add-in to identify
-    * which button was clicked and to signal the host that it has completed its processing.
+    * which button was clicked and to signal the Office application that it has completed its processing.
     *
     * @remarks
     *

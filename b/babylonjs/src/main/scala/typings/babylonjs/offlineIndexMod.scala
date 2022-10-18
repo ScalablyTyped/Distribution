@@ -9,7 +9,7 @@ object offlineIndexMod {
   @JSImport("babylonjs/Offline/index", "Database")
   @js.native
   open class Database protected ()
-    extends typings.babylonjs.databaseMod.Database {
+    extends typings.babylonjs.offlineDatabaseMod.Database {
     /**
       * Creates a new Database
       * @param urlToScene defines the url to load the scene

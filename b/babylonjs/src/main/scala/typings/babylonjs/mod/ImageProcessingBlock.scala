@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ImageProcessingBlock")
 @js.native
 open class ImageProcessingBlock protected ()
-  extends typings.babylonjs.legacyMod.ImageProcessingBlock {
+  extends typings.babylonjs.legacyLegacyMod.ImageProcessingBlock {
   /**
     * Create a new ImageProcessingBlock
     * @param name defines the block name

@@ -129,6 +129,7 @@ object mod {
     def stop(): Unit = js.native
   }
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {

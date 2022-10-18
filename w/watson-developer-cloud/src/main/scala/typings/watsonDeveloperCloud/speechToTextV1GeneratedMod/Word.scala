@@ -48,15 +48,15 @@ object Word {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setErrorVarargs(value: WordError*): Self = StObject.set(x, "error", js.Array(value :_*))
+    inline def setErrorVarargs(value: WordError*): Self = StObject.set(x, "error", js.Array(value*))
     
     inline def setSounds_like(value: js.Array[String]): Self = StObject.set(x, "sounds_like", value.asInstanceOf[js.Any])
     
-    inline def setSounds_likeVarargs(value: String*): Self = StObject.set(x, "sounds_like", js.Array(value :_*))
+    inline def setSounds_likeVarargs(value: String*): Self = StObject.set(x, "sounds_like", js.Array(value*))
     
     inline def setSource(value: js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value*))
     
     inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
   }

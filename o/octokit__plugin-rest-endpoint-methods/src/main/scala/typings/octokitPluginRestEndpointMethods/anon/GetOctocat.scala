@@ -3,7 +3,7 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.requestParametersMod.RequestParameters
+import typings.octokitTypes.distTypesRequestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -46,7 +46,7 @@ trait GetOctocat extends StObject {
     * Get the octocat as ASCII art
     */
   @JSName("getOctocat")
-  var getOctocat_Original: `342`
+  var getOctocat_Original: `356`
   
   /**
     * Get a random sentence from the Zen of GitHub
@@ -66,7 +66,7 @@ trait GetOctocat extends StObject {
     * Get a random sentence from the Zen of GitHub
     */
   @JSName("getZen")
-  var getZen_Original: `343`
+  var getZen_Original: `357`
   
   /**
     * Returns meta information about GitHub, including a list of GitHub's IP addresses. For more information, see "[About GitHub's IP addresses](https://docs.github.com/articles/about-github-s-ip-addresses/)."
@@ -74,7 +74,7 @@ trait GetOctocat extends StObject {
     * **Note:** The IP addresses shown in the documentation's response are only example values. You must always query the API directly to get the latest list of IP addresses.
     */
   @JSName("get")
-  var get_Original: `341`
+  var get_Original: `355`
   
   /**
     * Get Hypermedia links to resources accessible in GitHub's REST API
@@ -94,23 +94,23 @@ trait GetOctocat extends StObject {
     * Get Hypermedia links to resources accessible in GitHub's REST API
     */
   @JSName("root")
-  var root_Original: `344`
+  var root_Original: `358`
 }
 object GetOctocat {
   
-  inline def apply(get: `341`, getOctocat: `342`, getZen: `343`, root: `344`): GetOctocat = {
+  inline def apply(get: `355`, getOctocat: `356`, getZen: `357`, root: `358`): GetOctocat = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], getOctocat = getOctocat.asInstanceOf[js.Any], getZen = getZen.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOctocat]
   }
   
   extension [Self <: GetOctocat](x: Self) {
     
-    inline def setGet(value: `341`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `355`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setGetOctocat(value: `342`): Self = StObject.set(x, "getOctocat", value.asInstanceOf[js.Any])
+    inline def setGetOctocat(value: `356`): Self = StObject.set(x, "getOctocat", value.asInstanceOf[js.Any])
     
-    inline def setGetZen(value: `343`): Self = StObject.set(x, "getZen", value.asInstanceOf[js.Any])
+    inline def setGetZen(value: `357`): Self = StObject.set(x, "getZen", value.asInstanceOf[js.Any])
     
-    inline def setRoot(value: `344`): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: `358`): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

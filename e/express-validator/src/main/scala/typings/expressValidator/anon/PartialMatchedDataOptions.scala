@@ -9,7 +9,7 @@ trait PartialMatchedDataOptions extends StObject {
   
   var includeOptionals: js.UndefOr[Boolean] = js.undefined
   
-  var locations: js.UndefOr[js.Array[typings.expressValidator.baseMod.Location]] = js.undefined
+  var locations: js.UndefOr[js.Array[typings.expressValidator.srcBaseMod.Location]] = js.undefined
   
   var onlyValidData: js.UndefOr[Boolean] = js.undefined
 }
@@ -26,11 +26,11 @@ object PartialMatchedDataOptions {
     
     inline def setIncludeOptionalsUndefined: Self = StObject.set(x, "includeOptionals", js.undefined)
     
-    inline def setLocations(value: js.Array[typings.expressValidator.baseMod.Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[typings.expressValidator.srcBaseMod.Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: typings.expressValidator.baseMod.Location*): Self = StObject.set(x, "locations", js.Array(value*))
+    inline def setLocationsVarargs(value: typings.expressValidator.srcBaseMod.Location*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setOnlyValidData(value: Boolean): Self = StObject.set(x, "onlyValidData", value.asInstanceOf[js.Any])
     

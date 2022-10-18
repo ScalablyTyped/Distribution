@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("jsforce", "Resource")
 @js.native
 open class Resource[T] protected ()
-  extends typings.jsforce.chatterMod.Resource[T] {
-  def this(chatter: typings.jsforce.chatterMod.Chatter, url: String) = this()
-  def this(chatter: typings.jsforce.chatterMod.Chatter, url: String, queryParams: js.Object) = this()
+  extends typings.jsforce.apiChatterMod.Resource[T] {
+  def this(chatter: typings.jsforce.apiChatterMod.Chatter, url: String) = this()
+  def this(chatter: typings.jsforce.apiChatterMod.Chatter, url: String, queryParams: js.Object) = this()
 }

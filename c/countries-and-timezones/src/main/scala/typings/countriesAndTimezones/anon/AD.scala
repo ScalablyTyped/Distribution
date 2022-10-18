@@ -729,9 +729,9 @@ trait AD extends StObject {
   
   var VE: Venezuela
   
-  var VG: String
+  var VG: /* Virgin Islands (UK) */ String
   
-  var VI: String
+  var VI: /* Virgin Islands (US) */ String
   
   var VN: Vietnam
   
@@ -1236,9 +1236,9 @@ object AD {
     
     inline def setVE(value: Venezuela): Self = StObject.set(x, "VE", value.asInstanceOf[js.Any])
     
-    inline def setVG(value: String): Self = StObject.set(x, "VG", value.asInstanceOf[js.Any])
+    inline def setVG(value: /* Virgin Islands (UK) */ String): Self = StObject.set(x, "VG", value.asInstanceOf[js.Any])
     
-    inline def setVI(value: String): Self = StObject.set(x, "VI", value.asInstanceOf[js.Any])
+    inline def setVI(value: /* Virgin Islands (US) */ String): Self = StObject.set(x, "VI", value.asInstanceOf[js.Any])
     
     inline def setVN(value: Vietnam): Self = StObject.set(x, "VN", value.asInstanceOf[js.Any])
     

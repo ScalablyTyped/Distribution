@@ -10,30 +10,23 @@ sealed trait StatusTypes extends StObject
 @js.native
 object StatusTypes extends StObject {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[StatusTypes & String] = js.native
-  
   @js.native
   sealed trait fulfilled
     extends StObject
        with StatusTypes
-  /* "fulfilled" */ val fulfilled: typings.reactAsync.mod.StatusTypes.fulfilled & String = js.native
   
   @js.native
   sealed trait initial
     extends StObject
        with StatusTypes
-  /* "initial" */ val initial: typings.reactAsync.mod.StatusTypes.initial & String = js.native
   
   @js.native
   sealed trait pending
     extends StObject
        with StatusTypes
-  /* "pending" */ val pending: typings.reactAsync.mod.StatusTypes.pending & String = js.native
   
   @js.native
   sealed trait rejected
     extends StObject
        with StatusTypes
-  /* "rejected" */ val rejected: typings.reactAsync.mod.StatusTypes.rejected & String = js.native
 }

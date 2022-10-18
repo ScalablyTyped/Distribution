@@ -1,6 +1,5 @@
 package typings.terserWebpackPlugin
 
-import typings.terserWebpackPlugin.mod.DefinedDefaultMinimizerAndOptions
 import typings.terserWebpackPlugin.mod.MinimizerImplementation
 import typings.terserWebpackPlugin.mod.MinimizerOptions
 import typings.terserWebpackPlugin.terserWebpackPluginStrings.comment1
@@ -71,58 +70,6 @@ object anon {
       inline def setImplementation(value: MinimizerImplementation[T]): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
       inline def setOptions(value: MinimizerOptions[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Minify[T]
-    extends StObject
-       with DefinedDefaultMinimizerAndOptions[T] {
-    
-    var minify: js.UndefOr[MinimizerImplementation[T]] = js.undefined
-    
-    var terserOptions: js.UndefOr[MinimizerOptions[T]] = js.undefined
-  }
-  object Minify {
-    
-    inline def apply[T](): Minify[T] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Minify[T]]
-    }
-    
-    extension [Self <: Minify[?], T](x: Self & Minify[T]) {
-      
-      inline def setMinify(value: MinimizerImplementation[T]): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
-      
-      inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
-      
-      inline def setTerserOptions(value: MinimizerOptions[T]): Self = StObject.set(x, "terserOptions", value.asInstanceOf[js.Any])
-      
-      inline def setTerserOptionsUndefined: Self = StObject.set(x, "terserOptions", js.undefined)
-    }
-  }
-  
-  trait TerserOptions[T]
-    extends StObject
-       with DefinedDefaultMinimizerAndOptions[T] {
-    
-    var minify: MinimizerImplementation[T]
-    
-    var terserOptions: js.UndefOr[MinimizerOptions[T]] = js.undefined
-  }
-  object TerserOptions {
-    
-    inline def apply[T](minify: MinimizerImplementation[T]): TerserOptions[T] = {
-      val __obj = js.Dynamic.literal(minify = minify.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TerserOptions[T]]
-    }
-    
-    extension [Self <: TerserOptions[?], T](x: Self & TerserOptions[T]) {
-      
-      inline def setMinify(value: MinimizerImplementation[T]): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
-      
-      inline def setTerserOptions(value: MinimizerOptions[T]): Self = StObject.set(x, "terserOptions", value.asInstanceOf[js.Any])
-      
-      inline def setTerserOptionsUndefined: Self = StObject.set(x, "terserOptions", js.undefined)
     }
   }
 }

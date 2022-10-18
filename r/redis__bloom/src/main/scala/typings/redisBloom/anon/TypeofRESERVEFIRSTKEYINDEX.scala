@@ -1,6 +1,6 @@
 package typings.redisBloom.anon
 
-import typings.redisBloom.cuckooReserveMod.ReserveOptions
+import typings.redisBloom.distCommandsCuckooReserveMod.ReserveOptions
 import typings.redisBloom.redisBloomStrings.OK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

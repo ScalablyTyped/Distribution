@@ -20,9 +20,9 @@ object transportMod {
     }
   }
   
-  @JSImport("ndn-js/transport", "Transport")
+  /* note: abstract class */ @JSImport("ndn-js/transport", "Transport")
   @js.native
-  abstract class Transport () extends StObject {
+  open class Transport () extends StObject {
     
     def isLocal(): Boolean = js.native
   }
@@ -39,9 +39,9 @@ object transportMod {
     inline def ConnectionInfo_=(x: TransportConnectionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConnectionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("ndn-js/transport", "TransportConnectionInfo")
+  /* note: abstract class */ @JSImport("ndn-js/transport", "TransportConnectionInfo")
   @js.native
-  abstract class TransportConnectionInfo () extends StObject
+  open class TransportConnectionInfo () extends StObject
   
   @JSImport("ndn-js/transport", "UnixTransport")
   @js.native

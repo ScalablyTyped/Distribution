@@ -18,14 +18,14 @@ trait EggAppInfo extends StObject {
   // package.json
   var name: String
   
-  var pkg: js.Any
+  var pkg: Any
   
   // home directory of the OS
   var root: String
 }
 object EggAppInfo {
   
-  inline def apply(HOME: String, baseDir: String, env: EggEnvType, name: String, pkg: js.Any, root: String): EggAppInfo = {
+  inline def apply(HOME: String, baseDir: String, env: EggEnvType, name: String, pkg: Any, root: String): EggAppInfo = {
     val __obj = js.Dynamic.literal(HOME = HOME.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pkg = pkg.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[EggAppInfo]
   }
@@ -40,7 +40,7 @@ object EggAppInfo {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setPkg(value: js.Any): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+    inline def setPkg(value: Any): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }

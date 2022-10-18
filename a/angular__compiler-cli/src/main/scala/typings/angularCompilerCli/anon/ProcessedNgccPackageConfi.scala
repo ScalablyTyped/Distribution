@@ -1,9 +1,9 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.configurationMod.NgccEntryPointConfig
-import typings.angularCompilerCli.configurationMod.RawNgccPackageConfig
-import typings.angularCompilerCli.srcTypesMod.AbsoluteFsPath
-import typings.angularCompilerCli.srcTypesMod.PathManipulation
+import typings.angularCompilerCli.ngccSrcPackagesConfigurationMod.NgccEntryPointConfig
+import typings.angularCompilerCli.ngccSrcPackagesConfigurationMod.RawNgccPackageConfig
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.PathManipulation
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

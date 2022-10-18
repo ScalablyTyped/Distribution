@@ -1,7 +1,7 @@
 package typings.chevrotainGast
 
-import typings.chevrotainGast.modelMod.Alternative
-import typings.chevrotainGast.modelMod.Rule
+import typings.chevrotainGast.libSrcModelMod.Alternative
+import typings.chevrotainGast.libSrcModelMod.Rule
 import typings.chevrotainTypes.mod.IGASTVisitor
 import typings.chevrotainTypes.mod.IProduction
 import typings.chevrotainTypes.mod.TokenType
@@ -13,35 +13,6 @@ object anon {
   
   trait Definition extends StObject {
     
-    var definition: js.Array[IProduction]
-    
-    var name: String
-    
-    var orgText: js.UndefOr[String] = js.undefined
-  }
-  object Definition {
-    
-    inline def apply(definition: js.Array[IProduction], name: String): Definition = {
-      val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Definition]
-    }
-    
-    extension [Self <: Definition](x: Self) {
-      
-      inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
-      
-      inline def setDefinitionVarargs(value: IProduction*): Self = StObject.set(x, "definition", js.Array(value*))
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setOrgText(value: String): Self = StObject.set(x, "orgText", value.asInstanceOf[js.Any])
-      
-      inline def setOrgTextUndefined: Self = StObject.set(x, "orgText", js.undefined)
-    }
-  }
-  
-  trait HasPredicates extends StObject {
-    
     var definition: js.Array[Alternative]
     
     var hasPredicates: js.UndefOr[Boolean] = js.undefined
@@ -52,14 +23,14 @@ object anon {
     
     var maxLookahead: js.UndefOr[Double] = js.undefined
   }
-  object HasPredicates {
+  object Definition {
     
-    inline def apply(definition: js.Array[Alternative]): HasPredicates = {
+    inline def apply(definition: js.Array[Alternative]): Definition = {
       val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any])
-      __obj.asInstanceOf[HasPredicates]
+      __obj.asInstanceOf[Definition]
     }
     
-    extension [Self <: HasPredicates](x: Self) {
+    extension [Self <: Definition](x: Self) {
       
       inline def setDefinition(value: js.Array[Alternative]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
@@ -89,12 +60,14 @@ object anon {
     
     var label: js.UndefOr[String] = js.undefined
     
-    var terminalType: TokenType
+    var nonTerminalName: String
+    
+    var referencedRule: js.UndefOr[Rule] = js.undefined
   }
   object Idx {
     
-    inline def apply(terminalType: TokenType): Idx = {
-      val __obj = js.Dynamic.literal(terminalType = terminalType.asInstanceOf[js.Any])
+    inline def apply(nonTerminalName: String): Idx = {
+      val __obj = js.Dynamic.literal(nonTerminalName = nonTerminalName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Idx]
     }
     
@@ -108,7 +81,11 @@ object anon {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setTerminalType(value: TokenType): Self = StObject.set(x, "terminalType", value.asInstanceOf[js.Any])
+      inline def setNonTerminalName(value: String): Self = StObject.set(x, "nonTerminalName", value.asInstanceOf[js.Any])
+      
+      inline def setReferencedRule(value: Rule): Self = StObject.set(x, "referencedRule", value.asInstanceOf[js.Any])
+      
+      inline def setReferencedRuleUndefined: Self = StObject.set(x, "referencedRule", js.undefined)
     }
   }
   
@@ -143,14 +120,12 @@ object anon {
     
     var label: js.UndefOr[String] = js.undefined
     
-    var nonTerminalName: String
-    
-    var referencedRule: js.UndefOr[Rule] = js.undefined
+    var terminalType: TokenType
   }
   object Label {
     
-    inline def apply(nonTerminalName: String): Label = {
-      val __obj = js.Dynamic.literal(nonTerminalName = nonTerminalName.asInstanceOf[js.Any])
+    inline def apply(terminalType: TokenType): Label = {
+      val __obj = js.Dynamic.literal(terminalType = terminalType.asInstanceOf[js.Any])
       __obj.asInstanceOf[Label]
     }
     
@@ -164,11 +139,7 @@ object anon {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setNonTerminalName(value: String): Self = StObject.set(x, "nonTerminalName", value.asInstanceOf[js.Any])
-      
-      inline def setReferencedRule(value: Rule): Self = StObject.set(x, "referencedRule", value.asInstanceOf[js.Any])
-      
-      inline def setReferencedRuleUndefined: Self = StObject.set(x, "referencedRule", js.undefined)
+      inline def setTerminalType(value: TokenType): Self = StObject.set(x, "terminalType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,6 +171,35 @@ object anon {
       inline def setMaxLookahead(value: Double): Self = StObject.set(x, "maxLookahead", value.asInstanceOf[js.Any])
       
       inline def setMaxLookaheadUndefined: Self = StObject.set(x, "maxLookahead", js.undefined)
+    }
+  }
+  
+  trait Name extends StObject {
+    
+    var definition: js.Array[IProduction]
+    
+    var name: String
+    
+    var orgText: js.UndefOr[String] = js.undefined
+  }
+  object Name {
+    
+    inline def apply(definition: js.Array[IProduction], name: String): Name = {
+      val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Name]
+    }
+    
+    extension [Self <: Name](x: Self) {
+      
+      inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+      
+      inline def setDefinitionVarargs(value: IProduction*): Self = StObject.set(x, "definition", js.Array(value*))
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setOrgText(value: String): Self = StObject.set(x, "orgText", value.asInstanceOf[js.Any])
+      
+      inline def setOrgTextUndefined: Self = StObject.set(x, "orgText", js.undefined)
     }
   }
   

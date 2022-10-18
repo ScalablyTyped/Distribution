@@ -1,7 +1,7 @@
 package typings.ltijs
 
-import typings.ltijs.idTokenMod.IdToken
-import typings.ltijs.platformMod.PlatformContext
+import typings.ltijs.libIdTokenMod.IdToken
+import typings.ltijs.libUtilsPlatformMod.PlatformContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

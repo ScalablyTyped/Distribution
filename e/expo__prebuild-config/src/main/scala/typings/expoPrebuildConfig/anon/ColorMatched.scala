@@ -1,10 +1,10 @@
 package typings.expoPrebuildConfig.anon
 
+import typings.expoPrebuildConfig.buildPluginsUnversionedExpoSplashScreenInterfaceBuilderMod.IBBoolean
 import typings.expoPrebuildConfig.expoPrebuildConfigStrings.`3Dot0`
 import typings.expoPrebuildConfig.expoPrebuildConfigStrings.comDotappleDotInterfaceBuilder3DotCocoaTouchDotStoryboardDotXIB
 import typings.expoPrebuildConfig.expoPrebuildConfigStrings.iOSDotCocoaTouch
 import typings.expoPrebuildConfig.expoPrebuildConfigStrings.none
-import typings.expoPrebuildConfig.interfaceBuilderMod.IBBoolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

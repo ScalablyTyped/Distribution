@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +9,7 @@ trait BuildBazelRemoteExecutionV2ExecutedActionMetadata extends StObject {
   /** Details that are specific to the kind of worker used. For example, on POSIX-like systems this could contain a message with getrusage(2) statistics. */
   var auxiliaryMetadata: js.UndefOr[
     js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecutedActionMetadata & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ]
   ] = js.undefined
   
@@ -57,18 +54,14 @@ object BuildBazelRemoteExecutionV2ExecutedActionMetadata {
     
     inline def setAuxiliaryMetadata(
       value: js.Array[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecutedActionMetadata & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
         ]
     ): Self = StObject.set(x, "auxiliaryMetadata", value.asInstanceOf[js.Any])
     
     inline def setAuxiliaryMetadataUndefined: Self = StObject.set(x, "auxiliaryMetadata", js.undefined)
     
     inline def setAuxiliaryMetadataVarargs(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecutedActionMetadata & TopLevel[Any])*
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any)*
     ): Self = StObject.set(x, "auxiliaryMetadata", js.Array(value*))
     
     inline def setExecutionCompletedTimestamp(value: String): Self = StObject.set(x, "executionCompletedTimestamp", value.asInstanceOf[js.Any])

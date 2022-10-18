@@ -1,7 +1,7 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.vegaSchemaMod.VgComparator
-import typings.vegaTypings.axisMod.Axis
+import typings.vegaLite.buildSrcVegaDotschemaMod.VgComparator
+import typings.vegaTypings.typesSpecAxisMod.Axis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ trait Axes extends StObject {
   
   var sort: js.UndefOr[VgComparator] = js.undefined
   
-  var title: js.UndefOr[Dx | Encode | Font | FontStyle] = js.undefined
+  var title: js.UndefOr[Align | Anchor | Angle | Aria] = js.undefined
   
   var `type`: String
 }
@@ -56,7 +56,7 @@ object Axes {
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setTitle(value: Dx | Encode | Font | FontStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Align | Anchor | Angle | Aria): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     

@@ -1,8 +1,8 @@
 package typings.blueprintjsTable.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.blueprintjsTable.cellTypesMod.IFocusedCellCoordinates
-import typings.blueprintjsTable.esmRegionsMod.IRegion
+import typings.blueprintjsTable.libEsmCommonCellTypesMod.IFocusedCellCoordinates
+import typings.blueprintjsTable.libEsmRegionsMod.IRegion
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

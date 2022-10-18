@@ -4,7 +4,7 @@ import typings.antDesignReactNative.anon.Full
 import typings.antDesignReactNative.anon.TypeofCardBody
 import typings.antDesignReactNative.anon.TypeofCardFooter
 import typings.antDesignReactNative.anon.TypeofCardHeader
-import typings.antDesignReactNative.cardMod.default
+import typings.antDesignReactNative.libCardMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

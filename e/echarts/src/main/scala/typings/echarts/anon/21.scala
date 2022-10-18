@@ -14,7 +14,7 @@ trait `21` extends StObject {
   /**
     * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label
     */
-  var label: js.UndefOr[LineHeight] = js.undefined
+  var label: js.UndefOr[FontWeight] = js.undefined
 }
 object `21` {
   
@@ -29,7 +29,7 @@ object `21` {
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    inline def setLabel(value: LineHeight): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: FontWeight): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }

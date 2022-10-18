@@ -1,6 +1,6 @@
 package typings.nivoBar
 
-import typings.nivoBar.typesMod.BarLayerId
+import typings.nivoBar.distTypesTypesMod.BarLayerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

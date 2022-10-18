@@ -677,7 +677,7 @@ trait Paragraph
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149 */ Any = js.native
+  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJsPreview.Word.Style, typings.officeJsPreview.officeJsPreviewStrings.Other, typings.officeJsPreview.officeJsPreviewStrings.Normal */ Any = js.native
   
   /**
     * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.

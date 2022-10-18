@@ -1,8 +1,6 @@
 package typings.hapiCode
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.hapiHoek.mod.deepEqual.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,23 +14,129 @@ object mod {
   
   inline def count(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Double]
   
-  object expect {
+  inline def fail(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[Unit]
+  inline def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def incomplete(): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("incomplete")().asInstanceOf[js.Array[String] | Null]
+  
+  @JSImport("@hapi/code", "settings")
+  @js.native
+  val settings: Settings_ = js.native
+  
+  object thrownAt {
     
-    inline def apply[T](value: T): Assertion[T, T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Assertion[T, T]]
-    inline def apply[T](value: T, prefix: String): Assertion[T, T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Assertion[T, T]]
+    inline def apply(): Location = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Location]
+    inline def apply(error: js.Error): Location = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[Location]
     
-    @JSImport("@hapi/code", "expect")
+    @JSImport("@hapi/code", "thrownAt")
     @js.native
     val ^ : js.Any = js.native
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.hapiCode.mod.expect.BaseAssertion[T, T]
-      - typings.hapiCode.mod.expect.PromiseAssertion[T]
-      - typings.hapiCode.mod.expect.NumberAssertion[T]
-      - typings.hapiCode.mod.expect.StringAssertion[T]
-      - typings.hapiCode.mod.expect.FunctionAssertion[T]
+    trait Location extends StObject {
+      
+      var column: String
+      
+      var filename: String
+      
+      var line: String
+    }
+    object Location {
+      
+      inline def apply(column: String, filename: String, line: String): Location = {
+        val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Location]
+      }
+      
+      extension [Self <: Location](x: Self) {
+        
+        inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        
+        inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+        
+        inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      }
+    }
+  }
+  
+  // Internal helpers
+  type Class[T] = Instantiable1[/* args (repeated) */ Any, T]
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends object ? @hapi/code.@hapi/code.RecursivePartial<T> & {[key: string] : any} : T
+    }}}
     */
-    type Assertion[T, TTest /* <: T */] = (_Assertion[T, TTest]) | (BaseAssertion[T, T])
+  @js.native
+  trait Loosely[T] extends StObject
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends object ? {[ P in keyof T ]:? T[P] extends std.Array<infer I>? std.Array<@hapi/code.@hapi/code.RecursivePartial<I>> : @hapi/code.@hapi/code.RecursivePartial<T[P]>} : T
+    }}}
+    */
+  @js.native
+  trait RecursivePartial[T] extends StObject
+  
+  trait Settings_ extends StObject {
+    
+    /**
+      * Ignore object prototypes when doing a deep comparison.
+      * 
+      * @defaults false
+      */
+    var comparePrototypes: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Truncate long assertion error messages for readability.
+      * 
+      * @default false
+      */
+    var truncateMessages: js.UndefOr[Boolean] = js.undefined
+  }
+  object Settings_ {
+    
+    inline def apply(): Settings_ = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Settings_]
+    }
+    
+    extension [Self <: Settings_](x: Self) {
+      
+      inline def setComparePrototypes(value: Boolean): Self = StObject.set(x, "comparePrototypes", value.asInstanceOf[js.Any])
+      
+      inline def setComparePrototypesUndefined: Self = StObject.set(x, "comparePrototypes", js.undefined)
+      
+      inline def setTruncateMessages(value: Boolean): Self = StObject.set(x, "truncateMessages", value.asInstanceOf[js.Any])
+      
+      inline def setTruncateMessagesUndefined: Self = StObject.set(x, "truncateMessages", js.undefined)
+    }
+  }
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<infer U> ? U : T
+    }}}
+    */
+  @js.native
+  trait UnpackArray[T] extends StObject
+  
+  object expect {
+    
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      TTest extends std.Function ? @hapi/code.@hapi/code.expect.FunctionAssertion<T> : TTest extends string ? @hapi/code.@hapi/code.expect.StringAssertion<T> : TTest extends number | bigint ? @hapi/code.@hapi/code.expect.NumberAssertion<T> : TTest extends std.Promise<any> ? @hapi/code.@hapi/code.expect.PromiseAssertion<T> : @hapi/code.@hapi/code.expect.BaseAssertion<T, T>
+      }}}
+      */
+    @js.native
+    trait Assertion[T, TTest /* <: T */] extends StObject
     
     @js.native
     trait BaseAssertion[T, TTest /* <: T */] extends StObject {
@@ -131,6 +235,15 @@ object mod {
       def equal(value: RecursivePartial[T]): Assertion[T, T] = js.native
       def equal(value: RecursivePartial[T], options: Options): Assertion[T, T] = js.native
       
+      /**
+        * Asserts that the reference value equals the provided value.
+        *
+        * @param value - the value to match.
+        * @param options - comparison options.
+        *
+        * @returns assertion chain object.
+        */
+      def equals(value: RecursivePartial[T]): Assertion[T, T] = js.native
       def equals(value: RecursivePartial[T], options: Options): Assertion[T, T] = js.native
       
       def error(): Assertion[T, T] = js.native
@@ -224,7 +337,9 @@ object mod {
         *
         * @returns assertion chain object.
         */
-      def length(size: Double): Assertion[T, T] = js.native
+      def length(
+        size: /* import warning: importer.ImportType#apply Failed type conversion: T extends string | node.buffer.<global>.Buffer | object | std.Array<any> ? number : never */ js.Any
+      ): Assertion[T, T] = js.native
       
       /**
         * Asserts that the reference value's toString() representation matches the provided regular expression.
@@ -248,7 +363,7 @@ object mod {
       /**
         * Inverses the expected result of the assertion chain.
         */
-      var not: this.type | NotPromiseAssertion[T] | NotFunctionAssertion[T] = js.native
+      var not: /* import warning: importer.ImportType#apply Failed type conversion: TTest extends std.Function ? @hapi/code.@hapi/code.expect.Not_FunctionAssertion<T> : TTest extends std.Promise<any> ? @hapi/code.@hapi/code.expect.Not_PromiseAssertion<T> : this */ js.Any = js.native
       
       /**
         * Asserts that the reference value is null.
@@ -344,8 +459,7 @@ object mod {
     @js.native
     trait FunctionAssertion[T]
       extends StObject
-         with BaseAssertion[T, T]
-         with _Assertion[T, Any] {
+         with BaseAssertion[T, T] {
       
       def `throw`[E](): E = js.native
       def `throw`[E](message: String): E = js.native
@@ -421,8 +535,7 @@ object mod {
     @js.native
     trait NumberAssertion[T]
       extends StObject
-         with BaseAssertion[T, T]
-         with _Assertion[T, Any] {
+         with BaseAssertion[T, T] {
       
       /**
         * Asserts that the reference value is about the provided value within a delta margin of difference.
@@ -432,7 +545,10 @@ object mod {
         *
         * @returns assertion chain object.
         */
-      def about(value: T, delta: T): Assertion[T, T] = js.native
+      def about(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? T : never */ js.Any,
+        delta: /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? T : never */ js.Any
+      ): Assertion[T, T] = js.native
       
       /**
         * Asserts that the reference value is greater than (>) the provided value.
@@ -540,8 +656,7 @@ object mod {
     @js.native
     trait PromiseAssertion[T]
       extends StObject
-         with BaseAssertion[T, T]
-         with _Assertion[T, Any] {
+         with BaseAssertion[T, T] {
       
       def reject[E](): js.Promise[E] = js.native
       def reject[E](message: String): js.Promise[E] = js.native
@@ -577,8 +692,7 @@ object mod {
     @js.native
     trait StringAssertion[T]
       extends StObject
-         with BaseAssertion[T, T]
-         with _Assertion[T, Any] {
+         with BaseAssertion[T, T] {
       
       /**
         * Asserts that the reference value (a string) ends with the provided value.
@@ -616,97 +730,5 @@ object mod {
         */
       def startsWith(value: String): Assertion[T, T] = js.native
     }
-    
-    trait _Assertion[T, TTest /* <: T */] extends StObject
   }
-  
-  inline def fail(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[Unit]
-  inline def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def incomplete(): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("incomplete")().asInstanceOf[js.Array[String] | Null]
-  
-  @JSImport("@hapi/code", "settings")
-  @js.native
-  val settings: Settings_ = js.native
-  
-  object thrownAt {
-    
-    inline def apply(): Location = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Location]
-    inline def apply(error: js.Error): Location = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[Location]
-    
-    @JSImport("@hapi/code", "thrownAt")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    trait Location extends StObject {
-      
-      var column: String
-      
-      var filename: String
-      
-      var line: String
-    }
-    object Location {
-      
-      inline def apply(column: String, filename: String, line: String): Location = {
-        val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Location]
-      }
-      
-      extension [Self <: Location](x: Self) {
-        
-        inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
-        
-        inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
-        
-        inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
-      }
-    }
-  }
-  
-  // Internal helpers
-  type Class[T] = Instantiable1[/* args (repeated) */ Any, T]
-  
-  type Loosely[T] = T | (RecursivePartial[T] & StringDictionary[Any])
-  
-  type RecursivePartial[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? T[P] extends std.Array<infer I>? std.Array<@hapi/code.@hapi/code.RecursivePartial<any>> : @hapi/code.@hapi/code.RecursivePartial<T[P]>}
-    */ typings.hapiCode.hapiCodeStrings.RecursivePartial & TopLevel[Any])
-  
-  trait Settings_ extends StObject {
-    
-    /**
-      * Ignore object prototypes when doing a deep comparison.
-      * 
-      * @defaults false
-      */
-    var comparePrototypes: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Truncate long assertion error messages for readability.
-      * 
-      * @default false
-      */
-    var truncateMessages: js.UndefOr[Boolean] = js.undefined
-  }
-  object Settings_ {
-    
-    inline def apply(): Settings_ = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Settings_]
-    }
-    
-    extension [Self <: Settings_](x: Self) {
-      
-      inline def setComparePrototypes(value: Boolean): Self = StObject.set(x, "comparePrototypes", value.asInstanceOf[js.Any])
-      
-      inline def setComparePrototypesUndefined: Self = StObject.set(x, "comparePrototypes", js.undefined)
-      
-      inline def setTruncateMessages(value: Boolean): Self = StObject.set(x, "truncateMessages", value.asInstanceOf[js.Any])
-      
-      inline def setTruncateMessagesUndefined: Self = StObject.set(x, "truncateMessages", js.undefined)
-    }
-  }
-  
-  type UnpackArray[T] = T
 }

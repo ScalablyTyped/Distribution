@@ -8,8 +8,8 @@ import typings.domhandler.mod.Document
 import typings.domhandler.mod.Element
 import typings.domhandler.mod.ProcessingInstruction
 import typings.domhandler.mod.Text
-import typings.parse5.treeAdaptersInterfaceMod.TreeAdapter
-import typings.parse5.treeAdaptersInterfaceMod.TreeAdapterTypeMap
+import typings.parse5.distTreeAdaptersInterfaceMod.TreeAdapter
+import typings.parse5.distTreeAdaptersInterfaceMod.TreeAdapterTypeMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

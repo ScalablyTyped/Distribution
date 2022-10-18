@@ -1,8 +1,9 @@
 package typings.reactNativePaper.anon
 
-import typings.callstackReactThemeProvider.hoistNonReactStaticsMod.NonReactStatics
+import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonReactStatics
 import typings.react.mod.ComponentType
-import typings.reactNativePaper.typescriptTypesMod.RemoveChildren
+import typings.reactNativePaper.libTypescriptComponentsCheckboxCheckboxItemMod.Props
+import typings.reactNativePaper.libTypescriptTypesMod.RemoveChildren
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ trait Android extends StObject {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & Status
-    ]) & CallHasStatusThemeDisabledOnPressTestIDRestDisplayNameString, 
+    ]) & CallHasStatusThemeDisabledOnPressTestIDRest, 
     js.Object
   ])
   
@@ -23,12 +24,12 @@ trait Android extends StObject {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & TestID
-    ]) & CallHasStatusDisabledOnPressThemeTestIDRestDisplayNameString, 
+    ]) & CallHasStatusDisabledOnPressThemeTestIDRest, 
     js.Object
   ])
   
-  var Item: ComponentType[PickstatuscheckeduncheckeColor] & (NonReactStatics[
-    ComponentType[LabelStyle] & CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledPropsDisplayNameString, 
+  var Item: ComponentType[PickPropslabelstylecoloroColor] & (NonReactStatics[
+    ComponentType[Props] & CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledProps, 
     js.Object
   ])
 }
@@ -40,7 +41,7 @@ object Android {
         (RemoveChildren[
           ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
         ]) & Status
-      ]) & CallHasStatusThemeDisabledOnPressTestIDRestDisplayNameString, 
+      ]) & CallHasStatusThemeDisabledOnPressTestIDRest, 
       js.Object
     ]),
     IOS: ComponentType[PickRemoveChildrenComponeAccessibilityLabel] & (NonReactStatics[
@@ -48,11 +49,11 @@ object Android {
         (RemoveChildren[
           ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
         ]) & TestID
-      ]) & CallHasStatusDisabledOnPressThemeTestIDRestDisplayNameString, 
+      ]) & CallHasStatusDisabledOnPressThemeTestIDRest, 
       js.Object
     ]),
-    Item: ComponentType[PickstatuscheckeduncheckeColor] & (NonReactStatics[
-      ComponentType[LabelStyle] & CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledPropsDisplayNameString, 
+    Item: ComponentType[PickPropslabelstylecoloroColor] & (NonReactStatics[
+      ComponentType[Props] & CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledProps, 
       js.Object
     ])
   ): Android = {
@@ -68,7 +69,7 @@ object Android {
             (RemoveChildren[
               ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
             ]) & Status
-          ]) & CallHasStatusThemeDisabledOnPressTestIDRestDisplayNameString, 
+          ]) & CallHasStatusThemeDisabledOnPressTestIDRest, 
           js.Object
         ])
     ): Self = StObject.set(x, "Android", value.asInstanceOf[js.Any])
@@ -79,14 +80,14 @@ object Android {
             (RemoveChildren[
               ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
             ]) & TestID
-          ]) & CallHasStatusDisabledOnPressThemeTestIDRestDisplayNameString, 
+          ]) & CallHasStatusDisabledOnPressThemeTestIDRest, 
           js.Object
         ])
     ): Self = StObject.set(x, "IOS", value.asInstanceOf[js.Any])
     
     inline def setItem(
-      value: ComponentType[PickstatuscheckeduncheckeColor] & (NonReactStatics[
-          ComponentType[LabelStyle] & CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledPropsDisplayNameString, 
+      value: ComponentType[PickPropslabelstylecoloroColor] & (NonReactStatics[
+          ComponentType[Props] & CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledProps, 
           js.Object
         ])
     ): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])

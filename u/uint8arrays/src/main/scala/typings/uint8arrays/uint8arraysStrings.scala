@@ -1,6 +1,6 @@
 package typings.uint8arrays
 
-import typings.uint8arrays.basesMod.SupportedEncodings
+import typings.uint8arrays.distSrcUtilBasesMod.SupportedEncodings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +8,70 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object uint8arraysStrings {
   
   @js.native
+  sealed trait `0` extends StObject
+  inline def `0`: `0` = "0".asInstanceOf[`0`]
+  
+  @js.native
+  sealed trait `7` extends StObject
+  inline def `7`: `7` = "7".asInstanceOf[`7`]
+  
+  @js.native
+  sealed trait `9` extends StObject
+  inline def `9`: `9` = "9".asInstanceOf[`9`]
+  
+  @js.native
+  sealed trait B extends StObject
+  inline def B: B = "B".asInstanceOf[B]
+  
+  @js.native
+  sealed trait C extends StObject
+  inline def C: C = "C".asInstanceOf[C]
+  
+  @js.native
+  sealed trait F extends StObject
+  inline def F: F = "F".asInstanceOf[F]
+  
+  @js.native
+  sealed trait Highsurrogatesd83dLowsurrogatesde80 extends StObject
+  inline def Highsurrogatesd83dLowsurrogatesde80: Highsurrogatesd83dLowsurrogatesde80 = "\uD83D\uDE80".asInstanceOf[Highsurrogatesd83dLowsurrogatesde80]
+  
+  @js.native
+  sealed trait K extends StObject
+  inline def K: K = "K".asInstanceOf[K]
+  
+  @js.native
+  sealed trait M extends StObject
+  inline def M: M = "M".asInstanceOf[M]
+  
+  @js.native
+  sealed trait Null extends StObject
+  inline def Null: Null = "\u0000".asInstanceOf[Null]
+  
+  @js.native
+  sealed trait T extends StObject
+  inline def T: T = "T".asInstanceOf[T]
+  
+  @js.native
+  sealed trait U extends StObject
+  inline def U: U = "U".asInstanceOf[U]
+  
+  @js.native
+  sealed trait V extends StObject
+  inline def V: V = "V".asInstanceOf[V]
+  
+  @js.native
+  sealed trait Z extends StObject
+  inline def Z: Z = "Z".asInstanceOf[Z]
+  
+  @js.native
   sealed trait ascii
     extends StObject
        with SupportedEncodings
   inline def ascii: ascii = "ascii".asInstanceOf[ascii]
+  
+  @js.native
+  sealed trait b_ extends StObject
+  inline def b_ : b_ = "b".asInstanceOf[b_]
   
   @js.native
   sealed trait base10
@@ -158,6 +218,18 @@ object uint8arraysStrings {
   inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
+  sealed trait c_ extends StObject
+  inline def c_ : c_ = "c".asInstanceOf[c_]
+  
+  @js.native
+  sealed trait f_ extends StObject
+  inline def f_ : f_ = "f".asInstanceOf[f_]
+  
+  @js.native
+  sealed trait h extends StObject
+  inline def h: h = "h".asInstanceOf[h]
+  
+  @js.native
   sealed trait hex
     extends StObject
        with SupportedEncodings
@@ -170,10 +242,26 @@ object uint8arraysStrings {
   inline def identity: identity = "identity".asInstanceOf[identity]
   
   @js.native
+  sealed trait k_ extends StObject
+  inline def k_ : k_ = "k".asInstanceOf[k_]
+  
+  @js.native
   sealed trait latin1
     extends StObject
        with SupportedEncodings
   inline def latin1: latin1 = "latin1".asInstanceOf[latin1]
+  
+  @js.native
+  sealed trait m_ extends StObject
+  inline def m_ : m_ = "m".asInstanceOf[m_]
+  
+  @js.native
+  sealed trait t_ extends StObject
+  inline def t_ : t_ = "t".asInstanceOf[t_]
+  
+  @js.native
+  sealed trait u_ extends StObject
+  inline def u_ : u_ = "u".asInstanceOf[u_]
   
   @js.native
   sealed trait `utf-8`
@@ -186,4 +274,12 @@ object uint8arraysStrings {
     extends StObject
        with SupportedEncodings
   inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  
+  @js.native
+  sealed trait v_ extends StObject
+  inline def v_ : v_ = "v".asInstanceOf[v_]
+  
+  @js.native
+  sealed trait z_ extends StObject
+  inline def z_ : z_ = "z".asInstanceOf[z_]
 }

@@ -1,9 +1,9 @@
 package typings.chartJs.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.adaptersMod.TimeUnit
 import typings.chartJs.chartJsStrings.isoWeek
 import typings.chartJs.mod.ChartType
+import typings.chartJs.typesAdaptersMod.TimeUnit
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new moving entity.
   */
 open class MovingEntity ()
-  extends typings.yuka.yukaMod.MovingEntity
+  extends typings.yuka.srcYukaMod.MovingEntity

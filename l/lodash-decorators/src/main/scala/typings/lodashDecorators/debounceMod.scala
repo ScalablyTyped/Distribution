@@ -1,6 +1,6 @@
 package typings.lodashDecorators
 
-import typings.lodashDecorators.commonMod.LodashDecorator
+import typings.lodashDecorators.factoryCommonMod.LodashDecorator
 import typings.lodashDecorators.sharedMod.DebounceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new task queue.
   */
 open class TaskQueue ()
-  extends typings.yuka.yukaMod.TaskQueue
+  extends typings.yuka.srcYukaMod.TaskQueue

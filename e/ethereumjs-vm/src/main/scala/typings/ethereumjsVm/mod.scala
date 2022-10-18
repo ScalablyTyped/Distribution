@@ -1,15 +1,15 @@
 package typings.ethereumjsVm
 
-import typings.ethereumjsVm.evmMod.EVMResult
-import typings.ethereumjsVm.evmMod.ExecResult
-import typings.ethereumjsVm.opcodesMod.OpcodeList
-import typings.ethereumjsVm.runBlockMod.RunBlockOpts
-import typings.ethereumjsVm.runBlockMod.RunBlockResult
-import typings.ethereumjsVm.runCallMod.RunCallOpts
-import typings.ethereumjsVm.runCodeMod.RunCodeOpts
-import typings.ethereumjsVm.runTxMod.RunTxOpts
-import typings.ethereumjsVm.runTxMod.RunTxResult
-import typings.ethereumjsVm.stateMod.StateManager
+import typings.ethereumjsVm.distEvmEvmMod.EVMResult
+import typings.ethereumjsVm.distEvmEvmMod.ExecResult
+import typings.ethereumjsVm.distEvmOpcodesMod.OpcodeList
+import typings.ethereumjsVm.distRunBlockMod.RunBlockOpts
+import typings.ethereumjsVm.distRunBlockMod.RunBlockResult
+import typings.ethereumjsVm.distRunCallMod.RunCallOpts
+import typings.ethereumjsVm.distRunCodeMod.RunCodeOpts
+import typings.ethereumjsVm.distRunTxMod.RunTxOpts
+import typings.ethereumjsVm.distRunTxMod.RunTxResult
+import typings.ethereumjsVm.distStateMod.StateManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +56,7 @@ object mod {
     var opts: VMOpts = js.native
     
     /* CompleteClass */
-    override val pStateManager: typings.ethereumjsVm.promisifiedMod.default = js.native
+    override val pStateManager: typings.ethereumjsVm.distStatePromisifiedMod.default = js.native
     
     /**
       * Processes the `block` running all of the transactions it contains and updating the miner's account
@@ -131,7 +131,7 @@ object mod {
     
     var opts: VMOpts
     
-    val pStateManager: typings.ethereumjsVm.promisifiedMod.default
+    val pStateManager: typings.ethereumjsVm.distStatePromisifiedMod.default
     
     /**
       * Processes the `block` running all of the transactions it contains and updating the miner's account
@@ -189,7 +189,7 @@ object mod {
       blockchain: typings.ethereumjsBlockchain.mod.default,
       copy: () => VM,
       opts: VMOpts,
-      pStateManager: typings.ethereumjsVm.promisifiedMod.default,
+      pStateManager: typings.ethereumjsVm.distStatePromisifiedMod.default,
       runBlock: RunBlockOpts => js.Promise[RunBlockResult],
       runBlockchain: Any => js.Promise[Unit],
       runCall: RunCallOpts => js.Promise[EVMResult],
@@ -211,7 +211,7 @@ object mod {
       
       inline def setOpts(value: VMOpts): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      inline def setPStateManager(value: typings.ethereumjsVm.promisifiedMod.default): Self = StObject.set(x, "pStateManager", value.asInstanceOf[js.Any])
+      inline def setPStateManager(value: typings.ethereumjsVm.distStatePromisifiedMod.default): Self = StObject.set(x, "pStateManager", value.asInstanceOf[js.Any])
       
       inline def setRunBlock(value: RunBlockOpts => js.Promise[RunBlockResult]): Self = StObject.set(x, "runBlock", js.Any.fromFunction1(value))
       

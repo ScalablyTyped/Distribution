@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Uint32Attribute")
 @js.native
 open class Uint32Attribute protected ()
-  extends typings.three.threeMod.Uint32Attribute {
+  extends typings.three.srcThreeMod.Uint32Attribute {
   def this(array: Any, itemSize: Double) = this()
 }

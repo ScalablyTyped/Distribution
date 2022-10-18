@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "i18next" : "21.9.2"
+      "i18next" : "21.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "i18next" : "21.9.2"
+      "i18next" : "21.10.0"
     }
   ],
   "compile-devDependencies" : [

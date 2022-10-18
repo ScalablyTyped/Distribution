@@ -9,7 +9,7 @@ object CodeActionResolveRequest {
   
   @JSImport("vscode-languageclient", "CodeActionResolveRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageclient", "CodeActionResolveRequest.method")
   @js.native
@@ -17,7 +17,7 @@ object CodeActionResolveRequest {
   
   @JSImport("vscode-languageclient", "CodeActionResolveRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     typings.vscodeLanguageserverTypes.mod.CodeAction, 
     typings.vscodeLanguageserverTypes.mod.CodeAction, 
     scala.Nothing, 

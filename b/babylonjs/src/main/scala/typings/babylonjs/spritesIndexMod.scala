@@ -1,14 +1,14 @@
 package typings.babylonjs
 
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.ispritesMod.ISpriteJSONAtlas
-import typings.babylonjs.observableMod.Observable
-import typings.babylonjs.pickingInfoMod.PickingInfo
-import typings.babylonjs.rayMod.Ray
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.collisionsPickingInfoMod.PickingInfo
+import typings.babylonjs.cullingRayMod.Ray
+import typings.babylonjs.materialsTexturesTextureMod.Texture
+import typings.babylonjs.miscObservableMod.Observable
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.spriteManagerMod.ISpriteManager
-import typings.babylonjs.spriteMapMod.ISpriteMapOptions
-import typings.babylonjs.textureMod.Texture
+import typings.babylonjs.spritesIspritesMod.ISpriteJSONAtlas
+import typings.babylonjs.spritesSpriteManagerMod.ISpriteManager
+import typings.babylonjs.spritesSpriteMapMod.ISpriteMapOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object spritesIndexMod {
   @JSImport("babylonjs/Sprites/index", "Sprite")
   @js.native
   open class Sprite protected ()
-    extends typings.babylonjs.spriteMod.Sprite {
+    extends typings.babylonjs.spritesSpriteMod.Sprite {
     /**
       * Creates a new Sprite
       * @param name defines the name
@@ -41,13 +41,13 @@ object spritesIndexMod {
       * @param manager defines the hosting manager
       * @returns the new sprite
       */
-    inline def Parse(parsedSprite: Any, manager: typings.babylonjs.spriteManagerMod.SpriteManager): typings.babylonjs.spriteMod.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSprite.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.spriteMod.Sprite]
+    inline def Parse(parsedSprite: Any, manager: typings.babylonjs.spritesSpriteManagerMod.SpriteManager): typings.babylonjs.spritesSpriteMod.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSprite.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.spritesSpriteMod.Sprite]
   }
   
   @JSImport("babylonjs/Sprites/index", "SpriteManager")
   @js.native
   open class SpriteManager protected ()
-    extends typings.babylonjs.spriteManagerMod.SpriteManager {
+    extends typings.babylonjs.spritesSpriteManagerMod.SpriteManager {
     /**
       * Creates a new sprite manager
       * @param name defines the manager's name
@@ -267,7 +267,7 @@ object spritesIndexMod {
       * @param rootUrl The root url to use to load external dependencies like texture
       * @returns the new sprite manager
       */
-    inline def Parse(parsedManager: Any, scene: Scene, rootUrl: String): typings.babylonjs.spriteManagerMod.SpriteManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedManager.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.spriteManagerMod.SpriteManager]
+    inline def Parse(parsedManager: Any, scene: Scene, rootUrl: String): typings.babylonjs.spritesSpriteManagerMod.SpriteManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedManager.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.spritesSpriteManagerMod.SpriteManager]
     
     /**
       * Creates a sprite manager from a snippet saved in a remote file
@@ -277,8 +277,8 @@ object spritesIndexMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a promise that will resolve to the new sprite manager
       */
-    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
-    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
+    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[typings.babylonjs.spritesSpriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spritesSpriteManagerMod.SpriteManager]]
+    inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.spritesSpriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spritesSpriteManagerMod.SpriteManager]]
     
     /**
       * Creates a sprite manager from a snippet saved by the sprite editor
@@ -287,8 +287,8 @@ object spritesIndexMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a promise that will resolve to the new sprite manager
       */
-    inline def ParseFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
-    inline def ParseFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[typings.babylonjs.spritesSpriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spritesSpriteManagerMod.SpriteManager]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.spritesSpriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spritesSpriteManagerMod.SpriteManager]]
     
     /** Define the Url to load snippets */
     @JSImport("babylonjs/Sprites/index", "SpriteManager.SnippetUrl")
@@ -300,7 +300,7 @@ object spritesIndexMod {
   @JSImport("babylonjs/Sprites/index", "SpriteMap")
   @js.native
   open class SpriteMap protected ()
-    extends typings.babylonjs.spriteMapMod.SpriteMap {
+    extends typings.babylonjs.spritesSpriteMapMod.SpriteMap {
     /**
       * Creates a new SpriteMap
       * @param name defines the SpriteMaps Name
@@ -321,7 +321,7 @@ object spritesIndexMod {
   @JSImport("babylonjs/Sprites/index", "SpritePackedManager")
   @js.native
   open class SpritePackedManager protected ()
-    extends typings.babylonjs.spritePackedManagerMod.SpritePackedManager {
+    extends typings.babylonjs.spritesSpritePackedManagerMod.SpritePackedManager {
     /**
       * Creates a new sprite manager from a packed sprite sheet
       * @param name defines the manager's name
@@ -440,7 +440,7 @@ object spritesIndexMod {
   @JSImport("babylonjs/Sprites/index", "SpriteSceneComponent")
   @js.native
   open class SpriteSceneComponent protected ()
-    extends typings.babylonjs.spriteSceneComponentMod.SpriteSceneComponent {
+    extends typings.babylonjs.spritesSpriteSceneComponentMod.SpriteSceneComponent {
     /**
       * Creates a new instance of the component for the given scene
       * @param scene Defines the scene to register the component in
@@ -456,31 +456,31 @@ object spritesIndexMod {
       
       /** @internal */
       def _internalMultiPickSprites(ray: Ray): Nullable[js.Array[PickingInfo]] = js.native
-      def _internalMultiPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
+      def _internalMultiPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPickSprites(
         ray: Ray,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
         camera: Camera
       ): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPickSprites(ray: Ray, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
       
       /** @internal */
       def _internalPickSprites(ray: Ray): Nullable[PickingInfo] = js.native
-      def _internalPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]): Nullable[PickingInfo] = js.native
+      def _internalPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean]): Nullable[PickingInfo] = js.native
       def _internalPickSprites(
         ray: Ray,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
         fastCheck: Boolean
       ): Nullable[PickingInfo] = js.native
       def _internalPickSprites(
         ray: Ray,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
         fastCheck: Boolean,
         camera: Camera
       ): Nullable[PickingInfo] = js.native
       def _internalPickSprites(
         ray: Ray,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
         fastCheck: Unit,
         camera: Camera
       ): Nullable[PickingInfo] = js.native
@@ -489,10 +489,10 @@ object spritesIndexMod {
       def _internalPickSprites(ray: Ray, predicate: Unit, fastCheck: Unit, camera: Camera): Nullable[PickingInfo] = js.native
       
       /** @internal */
-      var _pickedDownSprite: Nullable[typings.babylonjs.spriteMod.Sprite] = js.native
+      var _pickedDownSprite: Nullable[typings.babylonjs.spritesSpriteMod.Sprite] = js.native
       
       /** @internal */
-      var _pointerOverSprite: Nullable[typings.babylonjs.spriteMod.Sprite] = js.native
+      var _pointerOverSprite: Nullable[typings.babylonjs.spritesSpriteMod.Sprite] = js.native
       
       /** @internal */
       var _tempSpritePickingRay: Nullable[Ray] = js.native
@@ -501,7 +501,7 @@ object spritesIndexMod {
         * Gets the sprite under the pointer
         * @returns a Sprite or null if no sprite is under the pointer
         */
-      def getPointerOverSprite(): Nullable[typings.babylonjs.spriteMod.Sprite] = js.native
+      def getPointerOverSprite(): Nullable[typings.babylonjs.spritesSpriteMod.Sprite] = js.native
       
       /** Launch a ray to try to pick sprites in the scene
         * @param x position on screen
@@ -514,12 +514,12 @@ object spritesIndexMod {
       def multiPickSprite(
         x: Double,
         y: Double,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean]
       ): Nullable[js.Array[PickingInfo]] = js.native
       def multiPickSprite(
         x: Double,
         y: Double,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
         camera: Camera
       ): Nullable[js.Array[PickingInfo]] = js.native
       def multiPickSprite(x: Double, y: Double, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
@@ -531,10 +531,10 @@ object spritesIndexMod {
         * @returns a PickingInfo array
         */
       def multiPickSpriteWithRay(ray: Ray): Nullable[js.Array[PickingInfo]] = js.native
-      def multiPickSpriteWithRay(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
+      def multiPickSpriteWithRay(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
       def multiPickSpriteWithRay(
         ray: Ray,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
         camera: Camera
       ): Nullable[js.Array[PickingInfo]] = js.native
       def multiPickSpriteWithRay(ray: Ray, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
@@ -543,13 +543,17 @@ object spritesIndexMod {
         * An event triggered when sprites rendering is done
         * Note: This event can be trigger more than once per frame (because sprites can be rendered by render target textures as well)
         */
-      var onAfterSpritesRenderingObservable: Observable[typings.babylonjs.spriteSceneComponentMod.babylonjsSceneAugmentingMod.Scene] = js.native
+      var onAfterSpritesRenderingObservable: Observable[
+            typings.babylonjs.spritesSpriteSceneComponentMod.babylonjsSceneAugmentingMod.Scene
+          ] = js.native
       
       /**
         * An event triggered when sprites rendering is about to start
         * Note: This event can be trigger more than once per frame (because sprites can be rendered by render target textures as well)
         */
-      var onBeforeSpritesRenderingObservable: Observable[typings.babylonjs.spriteSceneComponentMod.babylonjsSceneAugmentingMod.Scene] = js.native
+      var onBeforeSpritesRenderingObservable: Observable[
+            typings.babylonjs.spritesSpriteSceneComponentMod.babylonjsSceneAugmentingMod.Scene
+          ] = js.native
       
       /** Launch a ray to try to pick a sprite in the scene
         * @param x position on screen
@@ -563,25 +567,25 @@ object spritesIndexMod {
       def pickSprite(
         x: Double,
         y: Double,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean]
       ): Nullable[PickingInfo] = js.native
       def pickSprite(
         x: Double,
         y: Double,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
         fastCheck: Boolean
       ): Nullable[PickingInfo] = js.native
       def pickSprite(
         x: Double,
         y: Double,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
         fastCheck: Boolean,
         camera: Camera
       ): Nullable[PickingInfo] = js.native
       def pickSprite(
         x: Double,
         y: Double,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
         fastCheck: Unit,
         camera: Camera
       ): Nullable[PickingInfo] = js.native
@@ -597,21 +601,21 @@ object spritesIndexMod {
         * @returns a PickingInfo
         */
       def pickSpriteWithRay(ray: Ray): Nullable[PickingInfo] = js.native
-      def pickSpriteWithRay(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]): Nullable[PickingInfo] = js.native
+      def pickSpriteWithRay(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean]): Nullable[PickingInfo] = js.native
       def pickSpriteWithRay(
         ray: Ray,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
         fastCheck: Boolean
       ): Nullable[PickingInfo] = js.native
       def pickSpriteWithRay(
         ray: Ray,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
         fastCheck: Boolean,
         camera: Camera
       ): Nullable[PickingInfo] = js.native
       def pickSpriteWithRay(
         ray: Ray,
-        predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+        predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
         fastCheck: Unit,
         camera: Camera
       ): Nullable[PickingInfo] = js.native
@@ -623,7 +627,7 @@ object spritesIndexMod {
         * Force the sprite under the pointer
         * @param sprite defines the sprite to use
         */
-      def setPointerOverSprite(sprite: Nullable[typings.babylonjs.spriteMod.Sprite]): Unit = js.native
+      def setPointerOverSprite(sprite: Nullable[typings.babylonjs.spritesSpriteMod.Sprite]): Unit = js.native
       
       /**
         * All of the sprite managers added to this scene

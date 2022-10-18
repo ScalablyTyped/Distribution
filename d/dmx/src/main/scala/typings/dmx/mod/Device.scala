@@ -1,7 +1,6 @@
 package typings.dmx.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.dmx.anon.Colorpretsets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +14,9 @@ trait Device
   
   var channels: js.Array[String]
   
-  var ranges: js.UndefOr[Colorpretsets & typings.dmx.dmxStrings.Device & TopLevel[Any]] = js.undefined
+  var ranges: js.UndefOr[
+    Colorpretsets & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in string ]:? dmx.dmx.Range | undefined} */ js.Any)
+  ] = js.undefined
 }
 object Device {
   
@@ -36,7 +37,9 @@ object Device {
     
     inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
     
-    inline def setRanges(value: Colorpretsets & typings.dmx.dmxStrings.Device & TopLevel[Any]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(
+      value: Colorpretsets & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in string ]:? dmx.dmx.Range | undefined} */ js.Any)
+    ): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
   }

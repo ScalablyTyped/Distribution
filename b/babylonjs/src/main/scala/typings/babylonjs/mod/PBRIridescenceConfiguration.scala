@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PBRIridescenceConfiguration")
 @js.native
 open class PBRIridescenceConfiguration protected ()
-  extends typings.babylonjs.legacyMod.PBRIridescenceConfiguration {
-  def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial) = this()
-  def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial, addToPluginList: Boolean) = this()
+  extends typings.babylonjs.legacyLegacyMod.PBRIridescenceConfiguration {
+  def this(material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial) = this()
+  def this(
+    material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial,
+    addToPluginList: Boolean
+  ) = this()
 }
 /* static members */
 object PBRIridescenceConfiguration {

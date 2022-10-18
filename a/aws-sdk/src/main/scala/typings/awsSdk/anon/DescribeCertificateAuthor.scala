@@ -1,8 +1,8 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.acmpcaMod.Arn
-import typings.awsSdk.acmpcaMod.AuditReportId
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsAcmpcaMod.Arn
+import typings.awsSdk.clientsAcmpcaMod.AuditReportId
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait DescribeCertificateAuthor extends StObject {
   /**
     * The report ID returned by calling the CreateCertificateAuthorityAuditReport action.
     */
-  var AuditReportId: typings.awsSdk.acmpcaMod.AuditReportId
+  var AuditReportId: typings.awsSdk.clientsAcmpcaMod.AuditReportId
   
   /**
     * The Amazon Resource Name (ARN) of the private CA. This must be of the form:  arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 . 

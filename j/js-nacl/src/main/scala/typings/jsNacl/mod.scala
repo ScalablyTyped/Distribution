@@ -11,8 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def instantiate(cb: NaclCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def instantiate(cb: NaclCallback, opts: NaclOpts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(cb.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def instantiate(cb: NaclCallback): js.Promise[Nacl] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Nacl]]
+  inline def instantiate(cb: NaclCallback, opts: NaclOpts): js.Promise[Nacl] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(cb.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nacl]]
   
   trait BoxKeyPair extends StObject {
     

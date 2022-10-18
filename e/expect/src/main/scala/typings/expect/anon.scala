@@ -40,15 +40,27 @@ object anon {
   /* Inlined std.Omit<expect.expect.AsymmetricMatchers, 'any' | 'anything'> */
   trait OmitAsymmetricMatchersany extends StObject {
     
-    var arrayContaining: js.Function1[/* sample */ js.Array[Any], AsymmetricMatcher2]
+    def arrayContaining(sample: js.Array[Any]): AsymmetricMatcher2
+    @JSName("arrayContaining")
+    var arrayContaining_Original: js.Function1[/* sample */ js.Array[Any], AsymmetricMatcher2]
     
-    var closeTo: js.Function2[/* sample */ Double, /* precision */ js.UndefOr[Double], AsymmetricMatcher2]
+    def closeTo(sample: Double): AsymmetricMatcher2
+    def closeTo(sample: Double, precision: Double): AsymmetricMatcher2
+    @JSName("closeTo")
+    var closeTo_Original: js.Function2[/* sample */ Double, /* precision */ js.UndefOr[Double], AsymmetricMatcher2]
     
-    var objectContaining: js.Function1[/* sample */ Record[String, Any], AsymmetricMatcher2]
+    def objectContaining(sample: Record[String, Any]): AsymmetricMatcher2
+    @JSName("objectContaining")
+    var objectContaining_Original: js.Function1[/* sample */ Record[String, Any], AsymmetricMatcher2]
     
-    var stringContaining: js.Function1[/* sample */ String, AsymmetricMatcher2]
+    def stringContaining(sample: String): AsymmetricMatcher2
+    @JSName("stringContaining")
+    var stringContaining_Original: js.Function1[/* sample */ String, AsymmetricMatcher2]
     
-    var stringMatching: js.Function1[/* sample */ String | js.RegExp, AsymmetricMatcher2]
+    def stringMatching(sample: String): AsymmetricMatcher2
+    def stringMatching(sample: js.RegExp): AsymmetricMatcher2
+    @JSName("stringMatching")
+    var stringMatching_Original: js.Function1[/* sample */ String | js.RegExp, AsymmetricMatcher2]
   }
   object OmitAsymmetricMatchersany {
     
@@ -227,7 +239,9 @@ object anon {
     
     def highlightTrailingWhitespace(text: String): String = js.native
     
-    var iterableEquality: Tester = js.native
+    def iterableEquality(a: Any, b: Any): js.UndefOr[Boolean] = js.native
+    @JSName("iterableEquality")
+    var iterableEquality_Original: Tester = js.native
     
     def matcherErrorMessage(hint: String, generic: String): String = js.native
     def matcherErrorMessage(hint: String, generic: String, specific: String): String = js.native
@@ -256,6 +270,8 @@ object anon {
     def stringify(`object`: Any, maxDepth: Double, maxWidth: Double): String = js.native
     def stringify(`object`: Any, maxDepth: Unit, maxWidth: Double): String = js.native
     
-    var subsetEquality: Tester = js.native
+    def subsetEquality(a: Any, b: Any): js.UndefOr[Boolean] = js.native
+    @JSName("subsetEquality")
+    var subsetEquality_Original: Tester = js.native
   }
 }

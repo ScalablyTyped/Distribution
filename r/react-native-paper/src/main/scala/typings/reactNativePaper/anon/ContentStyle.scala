@@ -9,7 +9,7 @@ import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.iconMod.IconSource
+import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSource
 import typings.reactNativePaper.reactNativePaperStrings.children
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -29,8 +29,8 @@ trait ContentStyle extends StObject {
     */
   var actions: js.Array[
     LabelString & (Omit[
-      PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy | (PropsWithChildren[
-        PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy
+      PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel | (PropsWithChildren[
+        PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
       ]), 
       children
     ])
@@ -71,7 +71,7 @@ trait ContentStyle extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * Whether banner is currently visible.
@@ -83,14 +83,14 @@ object ContentStyle {
   inline def apply(
     actions: js.Array[
       LabelString & (Omit[
-        PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy | (PropsWithChildren[
-          PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy
+        PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel | (PropsWithChildren[
+          PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
         ]), 
         children
       ])
     ],
     children: String,
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme,
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme,
     visible: Boolean
   ): ContentStyle = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
@@ -102,8 +102,8 @@ object ContentStyle {
     inline def setActions(
       value: js.Array[
           LabelString & (Omit[
-            PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy | (PropsWithChildren[
-              PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy
+            PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel | (PropsWithChildren[
+              PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
             ]), 
             children
           ])
@@ -112,8 +112,8 @@ object ContentStyle {
     
     inline def setActionsVarargs(
       value: (LabelString & (Omit[
-          PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy | (PropsWithChildren[
-            PickthemeDeepPartialThemeAccessibilityLabel | PickthemeDeepPartialThemeAccessibilityLabelledBy
+          PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel | (PropsWithChildren[
+            PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
           ]), 
           children
         ]))*
@@ -153,7 +153,7 @@ object ContentStyle {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }

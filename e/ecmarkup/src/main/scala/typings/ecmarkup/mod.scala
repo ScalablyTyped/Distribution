@@ -6,9 +6,10 @@ import typings.ecmarkup.ecmarkupStrings.external
 import typings.ecmarkup.ecmarkupStrings.none
 import typings.ecmarkup.ecmarkupStrings.proposal
 import typings.ecmarkup.ecmarkupStrings.standard
-import typings.ecmarkup.specMod.Spec
+import typings.ecmarkup.libBiblioMod.ExportedBiblio
+import typings.ecmarkup.libSpecMod.Spec
 import typings.prex.mod.CancellationToken
-import typings.std.Date
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ object mod {
   
   @JSImport("ecmarkup", "Boilerplate")
   @js.native
-  class Boilerplate () extends StObject {
+  open class Boilerplate () extends StObject {
     
     var address: js.UndefOr[String] = js.native
     
@@ -32,22 +33,22 @@ object mod {
   
   inline def build(
     path: String,
-    fetch: js.Function2[/* path */ String, /* token */ CancellationToken, js.Thenable[String]]
+    fetch: js.Function2[/* path */ String, /* token */ CancellationToken, PromiseLike[String]]
   ): js.Promise[Spec] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(path.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Spec]]
   inline def build(
     path: String,
-    fetch: js.Function2[/* path */ String, /* token */ CancellationToken, js.Thenable[String]],
+    fetch: js.Function2[/* path */ String, /* token */ CancellationToken, PromiseLike[String]],
     opts: Unit,
     token: CancellationToken
   ): js.Promise[Spec] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(path.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Spec]]
   inline def build(
     path: String,
-    fetch: js.Function2[/* path */ String, /* token */ CancellationToken, js.Thenable[String]],
+    fetch: js.Function2[/* path */ String, /* token */ CancellationToken, PromiseLike[String]],
     opts: Options
   ): js.Promise[Spec] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(path.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Spec]]
   inline def build(
     path: String,
-    fetch: js.Function2[/* path */ String, /* token */ CancellationToken, js.Thenable[String]],
+    fetch: js.Function2[/* path */ String, /* token */ CancellationToken, PromiseLike[String]],
     opts: Options,
     token: CancellationToken
   ): js.Promise[Spec] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(path.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Spec]]
@@ -115,9 +116,9 @@ object mod {
     
     var cssOut: js.UndefOr[String] = js.undefined
     
-    var date: js.UndefOr[Date] = js.undefined
+    var date: js.UndefOr[js.Date] = js.undefined
     
-    var ecma262Biblio: js.UndefOr[Boolean] = js.undefined
+    var extraBiblios: js.UndefOr[js.Array[ExportedBiblio]] = js.undefined
     
     var jsOut: js.UndefOr[String] = js.undefined
     
@@ -126,6 +127,10 @@ object mod {
     var location: js.UndefOr[String] = js.undefined
     
     var log: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
+    
+    var markEffects: js.UndefOr[Boolean] = js.undefined
+    
+    var multipage: js.UndefOr[Boolean] = js.undefined
     
     var oldToc: js.UndefOr[Boolean] = js.undefined
     
@@ -174,13 +179,15 @@ object mod {
       
       inline def setCssOutUndefined: Self = StObject.set(x, "cssOut", js.undefined)
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      inline def setEcma262Biblio(value: Boolean): Self = StObject.set(x, "ecma262Biblio", value.asInstanceOf[js.Any])
+      inline def setExtraBiblios(value: js.Array[ExportedBiblio]): Self = StObject.set(x, "extraBiblios", value.asInstanceOf[js.Any])
       
-      inline def setEcma262BiblioUndefined: Self = StObject.set(x, "ecma262Biblio", js.undefined)
+      inline def setExtraBibliosUndefined: Self = StObject.set(x, "extraBiblios", js.undefined)
+      
+      inline def setExtraBibliosVarargs(value: ExportedBiblio*): Self = StObject.set(x, "extraBiblios", js.Array(value*))
       
       inline def setJsOut(value: String): Self = StObject.set(x, "jsOut", value.asInstanceOf[js.Any])
       
@@ -197,6 +204,14 @@ object mod {
       inline def setLog(value: /* msg */ String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      
+      inline def setMarkEffects(value: Boolean): Self = StObject.set(x, "markEffects", value.asInstanceOf[js.Any])
+      
+      inline def setMarkEffectsUndefined: Self = StObject.set(x, "markEffects", js.undefined)
+      
+      inline def setMultipage(value: Boolean): Self = StObject.set(x, "multipage", value.asInstanceOf[js.Any])
+      
+      inline def setMultipageUndefined: Self = StObject.set(x, "multipage", js.undefined)
       
       inline def setOldToc(value: Boolean): Self = StObject.set(x, "oldToc", value.asInstanceOf[js.Any])
       

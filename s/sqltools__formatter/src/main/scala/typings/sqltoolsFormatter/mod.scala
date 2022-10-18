@@ -1,7 +1,7 @@
 package typings.sqltoolsFormatter
 
-import typings.sqltoolsFormatter.typesMod.Config
-import typings.sqltoolsFormatter.typesMod.Token
+import typings.sqltoolsFormatter.libCoreTypesMod.Config
+import typings.sqltoolsFormatter.libCoreTypesMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

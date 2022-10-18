@@ -1,8 +1,8 @@
 package typings.antd
 
-import typings.antd.directoryTreeMod.ExpandAction
-import typings.antd.disabledContextMod._DisabledType
-import typings.antd.statisticUtilsMod._Formatter
+import typings.antd.libConfigProviderDisabledContextMod._DisabledType
+import typings.antd.libStatisticUtilsMod._Formatter
+import typings.antd.libTreeDirectoryTreeMod.ExpandAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

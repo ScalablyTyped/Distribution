@@ -1,9 +1,9 @@
 package typings.floatingUiDom.anon
 
-import typings.floatingUiCore.typesMod.Placement
-import typings.floatingUiCore.typesMod.Strategy
-import typings.floatingUiDom.typesMod.Middleware
-import typings.floatingUiDom.typesMod.Platform_
+import typings.floatingUiCore.srcTypesMod.Placement
+import typings.floatingUiCore.srcTypesMod.Strategy
+import typings.floatingUiDom.srcTypesMod.Middleware
+import typings.floatingUiDom.srcTypesMod.Platform_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

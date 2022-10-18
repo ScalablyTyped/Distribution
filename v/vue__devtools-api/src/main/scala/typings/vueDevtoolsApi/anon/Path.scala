@@ -1,6 +1,6 @@
 package typings.vueDevtoolsApi.anon
 
-import typings.vueDevtoolsApi.hooksMod.EditStatePayload
+import typings.vueDevtoolsApi.libEsmApiHooksMod.EditStatePayload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Path extends StObject {
   
-  var app: typings.vueDevtoolsApi.appMod.App = js.native
+  var app: typings.vueDevtoolsApi.libEsmApiAppMod.App = js.native
   
-  var componentInstance: typings.vueDevtoolsApi.componentMod.ComponentInstance = js.native
+  var componentInstance: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance = js.native
   
   var path: js.Array[String] = js.native
   

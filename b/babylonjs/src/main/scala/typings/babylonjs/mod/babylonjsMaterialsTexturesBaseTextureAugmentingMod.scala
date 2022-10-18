@@ -21,7 +21,7 @@ object babylonjsMaterialsTexturesBaseTextureAugmentingMod {
       * This is mainly use as a fast way to recover IBL Diffuse irradiance data.
       * @see https://learnopengl.com/PBR/IBL/Diffuse-irradiance
       */
-    var sphericalPolynomial: Nullable[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial]
+    var sphericalPolynomial: Nullable[typings.babylonjs.mathsSphericalPolynomialMod.SphericalPolynomial]
   }
   object BaseTexture {
     
@@ -34,7 +34,7 @@ object babylonjsMaterialsTexturesBaseTextureAugmentingMod {
       
       inline def setForceSphericalPolynomialsRecompute(value: () => Unit): Self = StObject.set(x, "forceSphericalPolynomialsRecompute", js.Any.fromFunction0(value))
       
-      inline def setSphericalPolynomial(value: Nullable[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial]): Self = StObject.set(x, "sphericalPolynomial", value.asInstanceOf[js.Any])
+      inline def setSphericalPolynomial(value: Nullable[typings.babylonjs.mathsSphericalPolynomialMod.SphericalPolynomial]): Self = StObject.set(x, "sphericalPolynomial", value.asInstanceOf[js.Any])
       
       inline def setSphericalPolynomialNull: Self = StObject.set(x, "sphericalPolynomial", null)
     }

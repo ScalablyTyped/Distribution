@@ -1,6 +1,6 @@
 package typings.intlMessageformat
 
-import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
+import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
 import typings.intlMessageformat.anon.FnCall
 import typings.intlMessageformat.anon.Locale
 import typings.intlMessageformat.anon.PartialFormats

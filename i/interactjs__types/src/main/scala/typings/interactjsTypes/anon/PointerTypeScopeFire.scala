@@ -1,7 +1,7 @@
 package typings.interactjsTypes.anon
 
+import typings.interactjsTypes.coreScopeMod.ListenerName
 import typings.interactjsTypes.interactjsTypesBooleans.`false`
-import typings.interactjsTypes.scopeMod.ListenerName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

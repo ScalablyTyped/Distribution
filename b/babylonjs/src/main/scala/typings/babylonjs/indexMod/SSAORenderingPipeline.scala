@@ -20,6 +20,6 @@ open class SSAORenderingPipeline protected ()
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
     ratio: Any,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera]
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
 }

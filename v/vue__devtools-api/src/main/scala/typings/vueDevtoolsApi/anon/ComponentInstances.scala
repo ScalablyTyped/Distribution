@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ComponentInstances extends StObject {
   
-  var app: typings.vueDevtoolsApi.appMod.App
+  var app: typings.vueDevtoolsApi.libEsmApiAppMod.App
   
-  var componentInstances: js.Array[typings.vueDevtoolsApi.componentMod.ComponentInstance]
+  var componentInstances: js.Array[typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance]
 }
 object ComponentInstances {
   
   inline def apply(
-    app: typings.vueDevtoolsApi.appMod.App,
-    componentInstances: js.Array[typings.vueDevtoolsApi.componentMod.ComponentInstance]
+    app: typings.vueDevtoolsApi.libEsmApiAppMod.App,
+    componentInstances: js.Array[typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance]
   ): ComponentInstances = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], componentInstances = componentInstances.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentInstances]
@@ -22,10 +22,10 @@ object ComponentInstances {
   
   extension [Self <: ComponentInstances](x: Self) {
     
-    inline def setApp(value: typings.vueDevtoolsApi.appMod.App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: typings.vueDevtoolsApi.libEsmApiAppMod.App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    inline def setComponentInstances(value: js.Array[typings.vueDevtoolsApi.componentMod.ComponentInstance]): Self = StObject.set(x, "componentInstances", value.asInstanceOf[js.Any])
+    inline def setComponentInstances(value: js.Array[typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance]): Self = StObject.set(x, "componentInstances", value.asInstanceOf[js.Any])
     
-    inline def setComponentInstancesVarargs(value: typings.vueDevtoolsApi.componentMod.ComponentInstance*): Self = StObject.set(x, "componentInstances", js.Array(value*))
+    inline def setComponentInstancesVarargs(value: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance*): Self = StObject.set(x, "componentInstances", js.Array(value*))
   }
 }

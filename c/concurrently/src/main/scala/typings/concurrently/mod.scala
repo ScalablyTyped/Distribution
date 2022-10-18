@@ -9,16 +9,16 @@ import typings.concurrently.anon.PartialConcurrentlyOption
 import typings.concurrently.anon.PartialConcurrentlyOptionAdditionalArguments
 import typings.concurrently.anon.Process
 import typings.concurrently.anon.TimestampFormat
-import typings.concurrently.commandMod.ChildProcess
-import typings.concurrently.commandMod.CloseEvent
-import typings.concurrently.commandMod.CommandIdentifier
-import typings.concurrently.commandMod.KillProcess
-import typings.concurrently.commandMod.SpawnCommand
-import typings.concurrently.concurrentlyMod.ConcurrentlyCommandInput
-import typings.concurrently.concurrentlyMod.ConcurrentlyResult
-import typings.concurrently.flowControllerMod.FlowController
-import typings.concurrently.killOthersMod.ProcessCloseCondition
-import typings.concurrently.logTimingsMod.TimingInfo
+import typings.concurrently.distSrcCommandMod.ChildProcess
+import typings.concurrently.distSrcCommandMod.CloseEvent
+import typings.concurrently.distSrcCommandMod.CommandIdentifier
+import typings.concurrently.distSrcCommandMod.KillProcess
+import typings.concurrently.distSrcCommandMod.SpawnCommand
+import typings.concurrently.distSrcConcurrentlyMod.ConcurrentlyCommandInput
+import typings.concurrently.distSrcConcurrentlyMod.ConcurrentlyResult
+import typings.concurrently.distSrcFlowControlFlowControllerMod.FlowController
+import typings.concurrently.distSrcFlowControlKillOthersMod.ProcessCloseCondition
+import typings.concurrently.distSrcFlowControlLogTimingsMod.TimingInfo
 import typings.node.childProcessMod.SpawnOptions
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
@@ -40,7 +40,7 @@ object mod {
   @JSImport("concurrently", "Command")
   @js.native
   open class Command protected ()
-    extends typings.concurrently.commandMod.Command {
+    extends typings.concurrently.distSrcCommandMod.Command {
     def this(
       hasIndexNameCommandPrefixColorEnvCwd: CommandInfoindexnumber,
       spawnOpts: SpawnOptions,
@@ -52,49 +52,49 @@ object mod {
   @JSImport("concurrently", "InputHandler")
   @js.native
   open class InputHandler protected ()
-    extends typings.concurrently.inputHandlerMod.InputHandler {
+    extends typings.concurrently.distSrcFlowControlInputHandlerMod.InputHandler {
     def this(hasDefaultInputTargetInputStreamPauseInputStreamOnFinishLogger: DefaultInputTarget) = this()
   }
   
   @JSImport("concurrently", "KillOnSignal")
   @js.native
   open class KillOnSignal protected ()
-    extends typings.concurrently.killOnSignalMod.KillOnSignal {
+    extends typings.concurrently.distSrcFlowControlKillOnSignalMod.KillOnSignal {
     def this(hasProcess: Process) = this()
   }
   
   @JSImport("concurrently", "KillOthers")
   @js.native
   open class KillOthers protected ()
-    extends typings.concurrently.killOthersMod.KillOthers {
+    extends typings.concurrently.distSrcFlowControlKillOthersMod.KillOthers {
     def this(hasLoggerConditions: Conditions) = this()
   }
   
   @JSImport("concurrently", "LogError")
   @js.native
   open class LogError protected ()
-    extends typings.concurrently.logErrorMod.LogError {
+    extends typings.concurrently.distSrcFlowControlLogErrorMod.LogError {
     def this(hasLogger: typings.concurrently.anon.Logger) = this()
   }
   
   @JSImport("concurrently", "LogExit")
   @js.native
   open class LogExit protected ()
-    extends typings.concurrently.logExitMod.LogExit {
+    extends typings.concurrently.distSrcFlowControlLogExitMod.LogExit {
     def this(hasLogger: typings.concurrently.anon.Logger) = this()
   }
   
   @JSImport("concurrently", "LogOutput")
   @js.native
   open class LogOutput protected ()
-    extends typings.concurrently.logOutputMod.LogOutput {
+    extends typings.concurrently.distSrcFlowControlLogOutputMod.LogOutput {
     def this(hasLogger: typings.concurrently.anon.Logger) = this()
   }
   
   @JSImport("concurrently", "LogTimings")
   @js.native
   open class LogTimings protected ()
-    extends typings.concurrently.logTimingsMod.LogTimings {
+    extends typings.concurrently.distSrcFlowControlLogTimingsMod.LogTimings {
     def this(hasLoggerTimestampFormat: TimestampFormat) = this()
   }
   /* static members */
@@ -110,14 +110,14 @@ object mod {
   @JSImport("concurrently", "Logger")
   @js.native
   open class Logger protected ()
-    extends typings.concurrently.loggerMod.Logger {
+    extends typings.concurrently.distSrcLoggerMod.Logger {
     def this(hasHidePrefixFormatPrefixLengthRawTimestampFormat: Hide) = this()
   }
   
   @JSImport("concurrently", "RestartProcess")
   @js.native
   open class RestartProcess protected ()
-    extends typings.concurrently.restartProcessMod.RestartProcess {
+    extends typings.concurrently.distSrcFlowControlRestartProcessMod.RestartProcess {
     def this(hasDelayTriesLoggerScheduler: Delay) = this()
   }
   
@@ -126,7 +126,7 @@ object mod {
   
   trait ConcurrentlyOptions
     extends StObject
-       with typings.concurrently.concurrentlyMod.ConcurrentlyOptions {
+       with typings.concurrently.distSrcConcurrentlyMod.ConcurrentlyOptions {
     
     var defaultInputTarget: js.UndefOr[CommandIdentifier] = js.undefined
     

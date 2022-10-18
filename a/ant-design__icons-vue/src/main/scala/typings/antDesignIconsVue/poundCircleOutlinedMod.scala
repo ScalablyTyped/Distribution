@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsPoundCircleOutlinedMod.PoundCircleOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object poundCircleOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/PoundCircleOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/PoundCircleOutlined", JSImport.Default)
   @js.native
   val default: PoundCircleOutlinedIconType = js.native
-  
-  @js.native
-  trait PoundCircleOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_PoundCircleOutlinedIconType: String = js.native
-  }
   
   type _To = PoundCircleOutlinedIconType
   

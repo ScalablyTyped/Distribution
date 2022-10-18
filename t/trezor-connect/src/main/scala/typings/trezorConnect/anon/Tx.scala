@@ -1,7 +1,7 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.transactionsMod.BlockbookTransaction
-import typings.trezorConnect.transactionsMod.TypedRawTransaction
+import typings.trezorConnect.libTypescriptBackendTransactionsMod.BlockbookTransaction
+import typings.trezorConnect.libTypescriptBackendTransactionsMod.TypedRawTransaction
 import typings.trezorConnect.trezorConnectStrings.blockbook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

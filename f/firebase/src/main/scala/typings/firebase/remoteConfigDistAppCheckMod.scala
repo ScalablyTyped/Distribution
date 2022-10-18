@@ -13,18 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object remoteConfigDistAppCheckMod {
   
-  @JSImport("firebase/compat/remote-config/dist/app-check", JSImport.Namespace)
+  @JSImport("firebase/remote-config/dist/app-check", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("firebase/compat/remote-config/dist/app-check", "CustomProvider")
+  @JSImport("firebase/remote-config/dist/app-check", "CustomProvider")
   @js.native
   open class CustomProvider protected ()
     extends typings.firebaseAppCheck.mod.CustomProvider {
     def this(_customProviderOptions: CustomProviderOptions) = this()
   }
   
-  @JSImport("firebase/compat/remote-config/dist/app-check", "ReCaptchaEnterpriseProvider")
+  @JSImport("firebase/remote-config/dist/app-check", "ReCaptchaEnterpriseProvider")
   @js.native
   open class ReCaptchaEnterpriseProvider protected ()
     extends typings.firebaseAppCheck.mod.ReCaptchaEnterpriseProvider {
@@ -35,7 +35,7 @@ object remoteConfigDistAppCheckMod {
     def this(_siteKey: String) = this()
   }
   
-  @JSImport("firebase/compat/remote-config/dist/app-check", "ReCaptchaV3Provider")
+  @JSImport("firebase/remote-config/dist/app-check", "ReCaptchaV3Provider")
   @js.native
   open class ReCaptchaV3Provider protected ()
     extends typings.firebaseAppCheck.mod.ReCaptchaV3Provider {

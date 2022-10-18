@@ -16,7 +16,7 @@ import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconNode
+import typings.reactNativeElements.distIconsIconMod.IconNode
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.assertive
 import typings.reactNativeElements.reactNativeElementsStrings.auto

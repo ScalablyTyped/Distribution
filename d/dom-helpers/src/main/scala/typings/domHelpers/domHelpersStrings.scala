@@ -1,10 +1,10 @@
 package typings.domHelpers
 
-import typings.domHelpers.collectElementsMod.TraverseDirection
-import typings.domHelpers.isTransformMod.TransformValue
-import typings.domHelpers.typesMod.CamelProperty
-import typings.domHelpers.typesMod.HyphenProperty
-import typings.domHelpers.typesMod.Styles
+import typings.domHelpers.cjsCollectElementsMod.TraverseDirection
+import typings.domHelpers.cjsIsTransformMod.TransformValue
+import typings.domHelpers.cjsTypesMod.CamelProperty
+import typings.domHelpers.cjsTypesMod.HyphenProperty
+import typings.domHelpers.cjsTypesMod.Styles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

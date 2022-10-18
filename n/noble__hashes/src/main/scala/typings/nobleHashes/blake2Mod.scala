@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object blake2Mod {
   
-  @JSImport("@noble/hashes/_blake2", "BLAKE2")
+  /* note: abstract class */ @JSImport("@noble/hashes/_blake2", "BLAKE2")
   @js.native
-  abstract class BLAKE2[T /* <: BLAKE2[T] */] protected () extends Hash[T] {
+  open class BLAKE2[T /* <: BLAKE2[T] */] protected () extends Hash[T] {
     def this(blockLen: Double, outputLen: Double, opts: Unit, keyLen: Double, saltLen: Double, persLen: Double) = this()
     def this(
       blockLen: Double,

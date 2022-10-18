@@ -1,11 +1,11 @@
 package typings.mendixmodelsdk.mod.microflows
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.21.0: deleted
   * In version 6.7.0: introduced
   */
-@JSImport("mendixmodelsdk", "microflows.JavaActionParameterValue")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "microflows.JavaActionParameterValue")
 @js.native
-abstract class JavaActionParameterValue protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.microflows.JavaActionParameterValue {
+open class JavaActionParameterValue protected ()
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.microflows.JavaActionParameterValue {
   def this(
     model: AbstractModel,
     structureTypeName: String,

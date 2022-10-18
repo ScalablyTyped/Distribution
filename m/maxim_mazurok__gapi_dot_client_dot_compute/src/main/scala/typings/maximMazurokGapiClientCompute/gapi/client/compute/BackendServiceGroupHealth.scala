@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait BackendServiceGroupHealth extends StObject {
   
   /** Metadata defined as annotations on the network endpoint group. */
   var annotations: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.BackendServiceGroupHealth & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Health state of the backend instances or endpoints in requested instance or network endpoint group, determined based on configured health checks. */
@@ -30,9 +27,7 @@ object BackendServiceGroupHealth {
   extension [Self <: BackendServiceGroupHealth](x: Self) {
     
     inline def setAnnotations(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.BackendServiceGroupHealth & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)

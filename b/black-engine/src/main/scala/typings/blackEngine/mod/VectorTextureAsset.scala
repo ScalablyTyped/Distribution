@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "VectorTextureAsset")
 @js.native
 open class VectorTextureAsset protected ()
-  extends typings.blackEngine.vectorTextureAssetMod.VectorTextureAsset {
+  extends typings.blackEngine.assetsVectorTextureAssetMod.VectorTextureAsset {
   def this(name: String, url: String, bakeSelf: Boolean, bakeChildren: Boolean, namesToBake: js.Array[String]) = this()
 }

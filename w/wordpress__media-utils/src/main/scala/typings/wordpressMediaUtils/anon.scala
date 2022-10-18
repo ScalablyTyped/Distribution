@@ -1,7 +1,7 @@
 package typings.wordpressMediaUtils
 
 import typings.std.File
-import typings.wordpressMediaUtils.uploadMediaMod.UploadMediaErrorCode
+import typings.wordpressMediaUtils.utilsUploadMediaMod.UploadMediaErrorCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

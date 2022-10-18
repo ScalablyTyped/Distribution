@@ -12,7 +12,7 @@ import typings.baseui.toastTypesMod.ToasterProps
 import typings.baseui.toastTypesMod.ToasterSharedStylePropsArg
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,7 +112,7 @@ object toastMod {
   @JSImport("baseui/toast", "ToasterContainer")
   @js.native
   open class ToasterContainer protected ()
-    extends typings.baseui.toasterMod.ToasterContainer {
+    extends typings.baseui.toastToasterMod.ToasterContainer {
     def this(props: ToasterProps) = this()
   }
   /* static members */
@@ -137,7 +137,7 @@ object toastMod {
     inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
     inline def clear(key: Key): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def getRef(): js.UndefOr[typings.baseui.toasterMod.ToasterContainer] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[js.UndefOr[typings.baseui.toasterMod.ToasterContainer]]
+    inline def getRef(): js.UndefOr[typings.baseui.toastToasterMod.ToasterContainer] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[js.UndefOr[typings.baseui.toastToasterMod.ToasterContainer]]
     
     inline def info(children: ReactNode): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(children.asInstanceOf[js.Any]).asInstanceOf[Key]
     inline def info(children: ReactNode, props: ToastPropsShape): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(children.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Key]
@@ -163,7 +163,7 @@ object toastMod {
     def clear(): Unit = js.native
     def clear(key: Key): Unit = js.native
     
-    def getRef(): js.UndefOr[typings.baseui.toasterMod.ToasterContainer] = js.native
+    def getRef(): js.UndefOr[typings.baseui.toastToasterMod.ToasterContainer] = js.native
     
     def info(children: ReactNode): Key = js.native
     def info(children: ReactNode, props: ToastPropsShape): Key = js.native

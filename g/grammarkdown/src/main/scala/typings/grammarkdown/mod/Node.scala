@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grammarkdown", "Node")
+/* note: abstract class */ @JSImport("grammarkdown", "Node")
 @js.native
-abstract class Node[TKind /* <: typings.grammarkdown.tokensMod.SyntaxKind */] protected ()
-  extends typings.grammarkdown.nodesMod.Node[TKind] {
+open class Node[TKind /* <: typings.grammarkdown.distTokensMod.SyntaxKind */] protected ()
+  extends typings.grammarkdown.distNodesMod.Node[TKind] {
   def this(kind: TKind) = this()
 }

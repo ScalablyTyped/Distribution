@@ -4,7 +4,7 @@ import typings.antdMobileRn.anon.Full
 import typings.antdMobileRn.anon.TypeofCardBody
 import typings.antdMobileRn.anon.TypeofCardFooter
 import typings.antdMobileRn.anon.TypeofCardHeader
-import typings.antdMobileRn.cardIndexNativeMod.default
+import typings.antdMobileRn.libCardIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.rcSlider
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcSlider.sliderMod.SliderProps
-import typings.rcSlider.sliderMod.SliderRef
+import typings.rcSlider.libSliderMod.SliderProps
+import typings.rcSlider.libSliderMod.SliderRef
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject

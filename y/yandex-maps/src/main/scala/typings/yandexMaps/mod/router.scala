@@ -25,9 +25,9 @@ object router {
     def stop(): Unit = js.native
   }
   
-  @JSImport("yandex-maps", "router.Route")
+  /* note: abstract class */ @JSImport("yandex-maps", "router.Route")
   @js.native
-  abstract class Route ()
+  open class Route ()
     extends StObject
        with IGeoObject[IGeometry] {
     

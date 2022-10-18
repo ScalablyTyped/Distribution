@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PostProcessManager")
 @js.native
 open class PostProcessManager protected ()
-  extends typings.babylonjs.legacyMod.PostProcessManager {
+  extends typings.babylonjs.legacyLegacyMod.PostProcessManager {
   /**
     * Creates a new instance PostProcess
     * @param scene The scene that the post process is associated with.

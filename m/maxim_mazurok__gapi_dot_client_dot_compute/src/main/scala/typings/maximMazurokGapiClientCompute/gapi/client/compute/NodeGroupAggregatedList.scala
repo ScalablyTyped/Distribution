@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
-import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,9 +12,7 @@ trait NodeGroupAggregatedList extends StObject {
   
   /** A list of NodeGroupsScopedList resources. */
   var items: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.NodeGroupsScopedList}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NodeGroupAggregatedList & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.NodeGroupsScopedList} */ js.Any
   ] = js.undefined
   
   /** [Output Only] Type of resource.Always compute#nodeGroupAggregatedList for aggregated lists of node groups. */
@@ -50,9 +47,7 @@ object NodeGroupAggregatedList {
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setItems(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.NodeGroupsScopedList}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NodeGroupAggregatedList & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.NodeGroupsScopedList} */ js.Any
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

@@ -1,11 +1,11 @@
 package typings.parchment
 
-import typings.parchment.attributorMod.AttributorOptions
-import typings.parchment.attributorMod.default
-import typings.parchment.blotMod.Blot
-import typings.parchment.blotMod.BlotConstructor
-import typings.parchment.blotMod.Root
-import typings.parchment.scopeMod.Scope
+import typings.parchment.distTypingsAttributorAttributorMod.AttributorOptions
+import typings.parchment.distTypingsAttributorAttributorMod.default
+import typings.parchment.distTypingsBlotAbstractBlotMod.Blot
+import typings.parchment.distTypingsBlotAbstractBlotMod.BlotConstructor
+import typings.parchment.distTypingsBlotAbstractBlotMod.Root
+import typings.parchment.distTypingsScopeMod.Scope
 import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -37,14 +37,14 @@ object mod {
   @JSImport("parchment", "AttributorStore")
   @js.native
   open class AttributorStore protected ()
-    extends typings.parchment.storeMod.default {
+    extends typings.parchment.distTypingsAttributorStoreMod.default {
     def this(domNode: HTMLElement) = this()
   }
   
   @JSImport("parchment", "BlockBlot")
   @js.native
   open class BlockBlot protected ()
-    extends typings.parchment.blockMod.default {
+    extends typings.parchment.distTypingsBlotBlockMod.default {
     def this(scroll: Root, domNode: Node) = this()
   }
   object BlockBlot {
@@ -84,7 +84,7 @@ object mod {
   @JSImport("parchment", "ClassAttributor")
   @js.native
   open class ClassAttributor ()
-    extends typings.parchment.classMod.default
+    extends typings.parchment.distTypingsAttributorClassMod.default
   object ClassAttributor {
     
     @JSImport("parchment", "ClassAttributor")
@@ -98,7 +98,7 @@ object mod {
   @JSImport("parchment", "ContainerBlot")
   @js.native
   open class ContainerBlot ()
-    extends typings.parchment.containerMod.default
+    extends typings.parchment.distTypingsBlotAbstractContainerMod.default
   object ContainerBlot {
     
     @JSImport("parchment", "ContainerBlot")
@@ -127,7 +127,7 @@ object mod {
   @JSImport("parchment", "EmbedBlot")
   @js.native
   open class EmbedBlot ()
-    extends typings.parchment.embedMod.default
+    extends typings.parchment.distTypingsBlotEmbedMod.default
   object EmbedBlot {
     
     @JSImport("parchment", "EmbedBlot")
@@ -141,7 +141,7 @@ object mod {
   @JSImport("parchment", "InlineBlot")
   @js.native
   open class InlineBlot protected ()
-    extends typings.parchment.inlineMod.default {
+    extends typings.parchment.distTypingsBlotInlineMod.default {
     def this(scroll: Root, domNode: Node) = this()
   }
   object InlineBlot {
@@ -181,7 +181,7 @@ object mod {
   @JSImport("parchment", "LeafBlot")
   @js.native
   open class LeafBlot ()
-    extends typings.parchment.leafMod.default
+    extends typings.parchment.distTypingsBlotAbstractLeafMod.default
   object LeafBlot {
     
     @JSImport("parchment", "LeafBlot")
@@ -201,7 +201,7 @@ object mod {
   @JSImport("parchment", "ParentBlot")
   @js.native
   open class ParentBlot protected ()
-    extends typings.parchment.parentMod.default {
+    extends typings.parchment.distTypingsBlotAbstractParentMod.default {
     def this(scroll: Root, domNode: Node) = this()
   }
   object ParentBlot {
@@ -232,7 +232,7 @@ object mod {
   @JSImport("parchment", "Registry")
   @js.native
   open class Registry ()
-    extends typings.parchment.registryMod.default
+    extends typings.parchment.distTypingsRegistryMod.default
   /* static members */
   object Registry {
     
@@ -256,36 +256,36 @@ object mod {
   object Scope extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.parchment.scopeMod.Scope & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.parchment.distTypingsScopeMod.Scope & Double] = js.native
     
-    /* 15 */ val ANY: typings.parchment.scopeMod.Scope.ANY & Double = js.native
+    /* 15 */ val ANY: typings.parchment.distTypingsScopeMod.Scope.ANY & Double = js.native
     
-    /* 13 */ val ATTRIBUTE: typings.parchment.scopeMod.Scope.ATTRIBUTE & Double = js.native
+    /* 13 */ val ATTRIBUTE: typings.parchment.distTypingsScopeMod.Scope.ATTRIBUTE & Double = js.native
     
-    /* 11 */ val BLOCK: typings.parchment.scopeMod.Scope.BLOCK & Double = js.native
+    /* 11 */ val BLOCK: typings.parchment.distTypingsScopeMod.Scope.BLOCK & Double = js.native
     
-    /* 9 */ val BLOCK_ATTRIBUTE: typings.parchment.scopeMod.Scope.BLOCK_ATTRIBUTE & Double = js.native
+    /* 9 */ val BLOCK_ATTRIBUTE: typings.parchment.distTypingsScopeMod.Scope.BLOCK_ATTRIBUTE & Double = js.native
     
-    /* 10 */ val BLOCK_BLOT: typings.parchment.scopeMod.Scope.BLOCK_BLOT & Double = js.native
+    /* 10 */ val BLOCK_BLOT: typings.parchment.distTypingsScopeMod.Scope.BLOCK_BLOT & Double = js.native
     
-    /* 14 */ val BLOT: typings.parchment.scopeMod.Scope.BLOT & Double = js.native
+    /* 14 */ val BLOT: typings.parchment.distTypingsScopeMod.Scope.BLOT & Double = js.native
     
-    /* 7 */ val INLINE: typings.parchment.scopeMod.Scope.INLINE & Double = js.native
+    /* 7 */ val INLINE: typings.parchment.distTypingsScopeMod.Scope.INLINE & Double = js.native
     
-    /* 5 */ val INLINE_ATTRIBUTE: typings.parchment.scopeMod.Scope.INLINE_ATTRIBUTE & Double = js.native
+    /* 5 */ val INLINE_ATTRIBUTE: typings.parchment.distTypingsScopeMod.Scope.INLINE_ATTRIBUTE & Double = js.native
     
-    /* 6 */ val INLINE_BLOT: typings.parchment.scopeMod.Scope.INLINE_BLOT & Double = js.native
+    /* 6 */ val INLINE_BLOT: typings.parchment.distTypingsScopeMod.Scope.INLINE_BLOT & Double = js.native
     
-    /* 12 */ val LEVEL: typings.parchment.scopeMod.Scope.LEVEL & Double = js.native
+    /* 12 */ val LEVEL: typings.parchment.distTypingsScopeMod.Scope.LEVEL & Double = js.native
     
-    /* 3 */ val TYPE: typings.parchment.scopeMod.Scope.TYPE & Double = js.native
+    /* 3 */ val TYPE: typings.parchment.distTypingsScopeMod.Scope.TYPE & Double = js.native
   }
   
   @JSImport("parchment", "ScrollBlot")
   @js.native
   open class ScrollBlot protected ()
-    extends typings.parchment.scrollMod.default {
-    def this(registry: typings.parchment.registryMod.default, node: HTMLDivElement) = this()
+    extends typings.parchment.distTypingsBlotScrollMod.default {
+    def this(registry: typings.parchment.distTypingsRegistryMod.default, node: HTMLDivElement) = this()
   }
   object ScrollBlot {
     
@@ -309,7 +309,7 @@ object mod {
     @JSImport("parchment", "ScrollBlot.defaultChild")
     @js.native
     open class defaultChild protected ()
-      extends typings.parchment.scrollMod.default.defaultChild {
+      extends typings.parchment.distTypingsBlotScrollMod.default.defaultChild {
       def this(scroll: Root, domNode: Node) = this()
     }
     /* was `typeof BlockBlot` */
@@ -363,7 +363,7 @@ object mod {
   @JSImport("parchment", "StyleAttributor")
   @js.native
   open class StyleAttributor ()
-    extends typings.parchment.styleMod.default
+    extends typings.parchment.distTypingsAttributorStyleMod.default
   object StyleAttributor {
     
     @JSImport("parchment", "StyleAttributor")
@@ -377,7 +377,7 @@ object mod {
   @JSImport("parchment", "TextBlot")
   @js.native
   open class TextBlot protected ()
-    extends typings.parchment.textMod.default {
+    extends typings.parchment.distTypingsBlotTextMod.default {
     def this(scroll: Root, node: Node) = this()
   }
   object TextBlot {

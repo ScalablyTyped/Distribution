@@ -7,8 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "RendererEvent")
 @js.native
 open class RendererEvent protected ()
-  extends typings.typedoc.outputMod.RendererEvent {
-  def this(name: String, outputDirectory: String, project: typings.typedoc.projectMod.ProjectReflection) = this()
+  extends typings.typedoc.distLibOutputMod.RendererEvent {
+  def this(
+    name: String,
+    outputDirectory: String,
+    project: typings.typedoc.distLibModelsReflectionsProjectMod.ProjectReflection
+  ) = this()
 }
 /* static members */
 object RendererEvent {

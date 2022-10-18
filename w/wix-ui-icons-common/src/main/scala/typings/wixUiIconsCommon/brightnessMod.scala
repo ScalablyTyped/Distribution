@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsBrightnessMod.BrightnessProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsBrightnessMod.BrightnessProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object brightnessMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Brightness", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Brightness", JSImport.Default)
   @js.native
   val default: FC[BrightnessProps] = js.native
   

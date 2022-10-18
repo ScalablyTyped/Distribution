@@ -1,7 +1,7 @@
 package typings.fluentBundle
 
-import typings.fluentBundle.bundleMod.TextTransform
-import typings.fluentBundle.typesMod.FluentFunction
+import typings.fluentBundle.esmBundleMod.TextTransform
+import typings.fluentBundle.esmTypesMod.FluentFunction
 import typings.std.Intl.DateTimeFormat
 import typings.std.Intl.DateTimeFormatOptions
 import typings.std.Intl.NumberFormat

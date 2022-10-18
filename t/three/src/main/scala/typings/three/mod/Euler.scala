@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Euler")
 @js.native
 open class Euler ()
-  extends typings.three.threeMod.Euler {
+  extends typings.three.srcThreeMod.Euler {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
   def this(x: Unit, y: Double) = this()

@@ -3,7 +3,7 @@ package typings.ckeditorCkeditor5Highlight
 import org.scalablytyped.runtime.Instantiable0
 import typings.ckeditorCkeditor5Highlight.ckeditorCkeditor5HighlightStrings.HighlightEditing
 import typings.ckeditorCkeditor5Highlight.ckeditorCkeditor5HighlightStrings.HighlightUI
-import typings.ckeditorCkeditor5Highlight.highlighteditingMod.default
+import typings.ckeditorCkeditor5Highlight.srcHighlighteditingMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,7 +71,7 @@ object anon {
   @js.native
   trait TypeofHighlightUI
     extends StObject
-       with Instantiable0[typings.ckeditorCkeditor5Highlight.highlightuiMod.default] {
+       with Instantiable0[typings.ckeditorCkeditor5Highlight.srcHighlightuiMod.default] {
     
     val pluginName: HighlightUI = js.native
   }

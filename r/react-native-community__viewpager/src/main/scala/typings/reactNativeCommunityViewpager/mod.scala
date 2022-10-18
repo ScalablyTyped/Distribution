@@ -1,7 +1,7 @@
 package typings.reactNativeCommunityViewpager
 
-import typings.reactNativeCommunityViewpager.typesMod.ViewPagerProps
-import typings.reactNativeCommunityViewpager.viewPagerMod.ViewPager
+import typings.reactNativeCommunityViewpager.libTypescriptSrcTypesMod.ViewPagerProps
+import typings.reactNativeCommunityViewpager.libTypescriptSrcViewPagerMod.ViewPager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

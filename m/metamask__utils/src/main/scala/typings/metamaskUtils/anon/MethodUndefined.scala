@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MethodUndefined extends StObject {
   
-  var id: Double
+  var id: Unit
   
   var jsonrpc: String
   
@@ -16,14 +16,14 @@ trait MethodUndefined extends StObject {
 }
 object MethodUndefined {
   
-  inline def apply(id: Double, jsonrpc: String, method: Unit, params: Unit): MethodUndefined = {
+  inline def apply(id: Unit, jsonrpc: String, method: Unit, params: Unit): MethodUndefined = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodUndefined]
   }
   
   extension [Self <: MethodUndefined](x: Self) {
     
-    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Unit): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setJsonrpc(value: String): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
     

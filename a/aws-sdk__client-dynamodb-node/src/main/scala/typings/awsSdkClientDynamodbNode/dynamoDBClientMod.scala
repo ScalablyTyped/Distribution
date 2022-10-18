@@ -2,9 +2,9 @@ package typings.awsSdkClientDynamodbNode
 
 import typings.awsSdkClientDynamodbNode.dynamoDBConfigurationMod.DynamoDBConfiguration
 import typings.awsSdkClientDynamodbNode.dynamoDBConfigurationMod.DynamoDBResolvedConfiguration
-import typings.awsSdkClientDynamodbNode.inputTypesUnionMod.InputTypesUnion
-import typings.awsSdkClientDynamodbNode.outputTypesUnionMod.OutputTypesUnion
-import typings.awsSdkTypes.commandMod.Command
+import typings.awsSdkClientDynamodbNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientDynamodbNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesCommandMod.Command
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

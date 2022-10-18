@@ -8,11 +8,11 @@ trait ParametersQueryOrderPagePerpageQSort extends StObject {
   
   var parameters: QueryOrderPagePerpageQSort
   
-  var responses: `200ContentApplicationjson594`
+  var responses: `200ContentApplicationjson604`
 }
 object ParametersQueryOrderPagePerpageQSort {
   
-  inline def apply(parameters: QueryOrderPagePerpageQSort, responses: `200ContentApplicationjson594`): ParametersQueryOrderPagePerpageQSort = {
+  inline def apply(parameters: QueryOrderPagePerpageQSort, responses: `200ContentApplicationjson604`): ParametersQueryOrderPagePerpageQSort = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryOrderPagePerpageQSort]
   }
@@ -21,6 +21,6 @@ object ParametersQueryOrderPagePerpageQSort {
     
     inline def setParameters(value: QueryOrderPagePerpageQSort): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjson594`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjson604`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

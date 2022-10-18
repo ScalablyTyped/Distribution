@@ -1,27 +1,32 @@
 package typings.tuyaPanelKit.anon
 
-import typings.tuyaPanelKit.routersTypesMod.ParamListBase
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait A[ParamList /* <: ParamListBase */] extends StObject {
+trait A extends StObject {
   
-  var a: ParamList
+  var a: ParamListBase
   
-  var b: /* keyof ParamList */ String
+  var b: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String
 }
 object A {
   
-  inline def apply[ParamList /* <: ParamListBase */](a: ParamList, b: /* keyof ParamList */ String): A[ParamList] = {
+  inline def apply(
+    a: ParamListBase,
+    b: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String
+  ): A = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any])
-    __obj.asInstanceOf[A[ParamList]]
+    __obj.asInstanceOf[A]
   }
   
-  extension [Self <: A[?], ParamList /* <: ParamListBase */](x: Self & A[ParamList]) {
+  extension [Self <: A](x: Self) {
     
-    inline def setA(value: ParamList): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: ParamListBase): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    inline def setB(value: /* keyof ParamList */ String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(
+      value: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String
+    ): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
   }
 }

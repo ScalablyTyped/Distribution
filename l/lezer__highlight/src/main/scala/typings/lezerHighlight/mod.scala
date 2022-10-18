@@ -1,10 +1,10 @@
 package typings.lezerHighlight
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.lezerCommon.distTreeMod.NodePropSource
+import typings.lezerCommon.distTreeMod.SyntaxNodeRef
 import typings.lezerCommon.mod.NodeType
 import typings.lezerCommon.mod.Tree
-import typings.lezerCommon.treeMod.NodePropSource
-import typings.lezerCommon.treeMod.SyntaxNodeRef
 import typings.lezerHighlight.anon.All
 import typings.lezerHighlight.anon.Class
 import typings.lezerHighlight.anon.Inherit

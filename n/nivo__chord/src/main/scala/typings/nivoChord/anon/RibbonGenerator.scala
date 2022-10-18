@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RibbonGenerator extends StObject {
   
-  var ribbonGenerator: typings.nivoChord.typesMod.RibbonGenerator
+  var ribbonGenerator: typings.nivoChord.distTypesTypesMod.RibbonGenerator
   
   var sourceEndAngle: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any
   
@@ -19,7 +19,7 @@ trait RibbonGenerator extends StObject {
 object RibbonGenerator {
   
   inline def apply(
-    ribbonGenerator: typings.nivoChord.typesMod.RibbonGenerator,
+    ribbonGenerator: typings.nivoChord.distTypesTypesMod.RibbonGenerator,
     sourceEndAngle: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any,
     sourceStartAngle: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any,
     targetEndAngle: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any,
@@ -31,7 +31,7 @@ object RibbonGenerator {
   
   extension [Self <: RibbonGenerator](x: Self) {
     
-    inline def setRibbonGenerator(value: typings.nivoChord.typesMod.RibbonGenerator): Self = StObject.set(x, "ribbonGenerator", value.asInstanceOf[js.Any])
+    inline def setRibbonGenerator(value: typings.nivoChord.distTypesTypesMod.RibbonGenerator): Self = StObject.set(x, "ribbonGenerator", value.asInstanceOf[js.Any])
     
     inline def setSourceEndAngle(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any

@@ -1,7 +1,7 @@
 package typings.reactVis.mod
 
+import typings.reactVis.anon.Axes
 import typings.reactVis.anon.Domain
-import typings.reactVis.anon.Labels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +30,7 @@ trait ParallelCoordinatesProps extends StObject {
   // default: {'axes':{'line':{},'ticks':{},'text':{}},'labels':{'fontSize':10,'textAnchor':'middle'},'lines':{'strokeWidth':1,'strokeOpacity':1}}
   var showMarks: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[Labels] = js.undefined
+  var style: js.UndefOr[Axes] = js.undefined
   
   var tickFormat: js.UndefOr[RVTickFormat] = js.undefined
   
@@ -81,7 +81,7 @@ object ParallelCoordinatesProps {
     
     inline def setShowMarksUndefined: Self = StObject.set(x, "showMarks", js.undefined)
     
-    inline def setStyle(value: Labels): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Axes): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

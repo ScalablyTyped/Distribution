@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait UpdateFailureState extends StObject {
   
   /** What the component configuration would have been if the update had succeeded. */
   var failedConfiguration: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.UpdateFailureState & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Time of the latest failed update attempt. */
@@ -34,9 +31,7 @@ object UpdateFailureState {
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     inline def setFailedConfiguration(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.UpdateFailureState & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "failedConfiguration", value.asInstanceOf[js.Any])
     
     inline def setFailedConfigurationUndefined: Self = StObject.set(x, "failedConfiguration", js.undefined)

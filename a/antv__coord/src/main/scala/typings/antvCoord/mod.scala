@@ -14,7 +14,7 @@ object mod {
     * @param options Custom options
     */
   open class Coordinate ()
-    extends typings.antvCoord.coordinateMod.Coordinate {
+    extends typings.antvCoord.libCoordinateMod.Coordinate {
     def this(options: PartialOptions) = this()
   }
 }

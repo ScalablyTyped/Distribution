@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Quaternion. */
-@JSGlobal("Windows.Devices.Sensors.SensorQuaternion")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.SensorQuaternion")
 @js.native
-abstract class SensorQuaternion ()
+open class SensorQuaternion ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.SensorQuaternion {
   

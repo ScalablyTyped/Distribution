@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information for a device that invokes pairing. */
-@JSGlobal("Windows.UI.WebUI.WebUIDevicePairingActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUIDevicePairingActivatedEventArgs")
 @js.native
-abstract class WebUIDevicePairingActivatedEventArgs ()
+open class WebUIDevicePairingActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUIDevicePairingActivatedEventArgs {
   

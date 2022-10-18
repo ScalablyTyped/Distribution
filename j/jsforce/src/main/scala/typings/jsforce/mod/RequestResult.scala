@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("jsforce", "RequestResult")
 @js.native
 open class RequestResult ()
-  extends typings.jsforce.chatterMod.RequestResult
+  extends typings.jsforce.apiChatterMod.RequestResult

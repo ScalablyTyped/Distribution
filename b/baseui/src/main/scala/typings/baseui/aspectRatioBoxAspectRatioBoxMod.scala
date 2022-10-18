@@ -1,7 +1,6 @@
 package typings.baseui
 
 import org.scalablytyped.runtime.Shortcut
-import typings.baseui.anon.`0`
 import typings.baseui.aspectRatioBoxTypesMod.AspectRatioBoxProps
 import typings.baseui.baseuiStrings.div
 import typings.baseui.blockTypesMod.StyledBlockProps
@@ -23,9 +22,9 @@ object aspectRatioBoxAspectRatioBoxMod extends Shortcut {
   trait AspectRatioCoxComponentType[D /* <: ElementType[Any] */] extends StObject {
     
     def apply[C /* <: ElementType[Any] */](
-      props: AspectRatioBoxProps[C] & (js.Object | `0`) & (Omit[
+      props: AspectRatioBoxProps[C] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<C> extends {  ref :infer R | undefined} ? {  ref :R | undefined} : {} */ js.Any) & (Omit[
           StyledBlockProps & ComponentProps[C], 
-          /* keyof baseui.baseui/aspect-ratio-box/types.AspectRatioBoxProps<react.react.ElementType<any>> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 69 */ Any
+          /* keyof baseui.baseui/aspect-ratio-box/types.AspectRatioBoxProps<react.react.ElementType<any>> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 69, starting with typings.baseui.baseuiStrings.aspectRatio, typings.baseui.baseuiStrings.children, typings.baseui.baseuiStrings.as_ */ Any
         ])
     ): Element = js.native
     

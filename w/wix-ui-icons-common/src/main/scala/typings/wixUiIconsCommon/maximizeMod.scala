@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsMaximizeMod.MaximizeProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsMaximizeMod.MaximizeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object maximizeMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Maximize", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Maximize", JSImport.Default)
   @js.native
   val default: FC[MaximizeProps] = js.native
   

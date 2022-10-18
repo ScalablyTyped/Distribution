@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.deviceInputEventsMod.IMouseEvent
+import typings.babylonjs.eventsDeviceInputEventsMod.IMouseEvent
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PointerInfo")
 @js.native
 open class PointerInfo protected ()
-  extends typings.babylonjs.legacyMod.PointerInfo {
+  extends typings.babylonjs.legacyLegacyMod.PointerInfo {
   /**
     * Instantiates a PointerInfo to store pointer related info to the onPointerObservable event.
     * @param type Defines the type of event (PointerEventTypes)
@@ -22,6 +22,6 @@ open class PointerInfo protected ()
     /**
     * Defines the picking info associated to the info (if any)\
     */
-  pickInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo]
+  pickInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]
   ) = this()
 }

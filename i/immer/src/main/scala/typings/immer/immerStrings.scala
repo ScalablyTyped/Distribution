@@ -123,10 +123,6 @@ object immerStrings {
   inline def `Immer only supports deleting array indices`: `Immer only supports deleting array indices` = ("Immer only supports deleting array indices").asInstanceOf[`Immer only supports deleting array indices`]
   
   @js.native
-  sealed trait Immutable extends StObject
-  inline def Immutable: Immutable = "Immutable".asInstanceOf[Immutable]
-  
-  @js.native
   sealed trait MapSet extends StObject
   inline def MapSet: MapSet = "MapSet".asInstanceOf[MapSet]
   
@@ -151,16 +147,8 @@ object immerStrings {
   inline def `This object has been frozen and should not be mutated`: `This object has been frozen and should not be mutated` = ("This object has been frozen and should not be mutated").asInstanceOf[`This object has been frozen and should not be mutated`]
   
   @js.native
-  sealed trait WritableDraft extends StObject
-  inline def WritableDraft: WritableDraft = "WritableDraft".asInstanceOf[WritableDraft]
-  
-  @js.native
   sealed trait add extends StObject
   inline def add: add = "add".asInstanceOf[add]
-  
-  @js.native
-  sealed trait getOwnPropertyDescriptors extends StObject
-  inline def getOwnPropertyDescriptors: getOwnPropertyDescriptors = "getOwnPropertyDescriptors".asInstanceOf[getOwnPropertyDescriptors]
   
   @js.native
   sealed trait remove extends StObject

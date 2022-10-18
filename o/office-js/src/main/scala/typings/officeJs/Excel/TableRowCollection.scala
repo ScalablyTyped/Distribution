@@ -62,6 +62,31 @@ trait TableRowCollection
   def add(index: Unit, values: Double, alwaysInsert: Boolean): TableRow = js.native
   def add(index: Unit, values: Unit, alwaysInsert: Boolean): TableRow = js.native
   
+  /**
+    * Adds one or more rows to the table. The returned object will be the top row of the newly added row or rows.
+    Unlike `add()`, `addAsJson()` takes any type of cell value, such as image or entity data types.
+    
+    Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
+    a `TableRow` object represents the physical location of the table row, but not the data.
+    That is, if the data is sorted or if new rows are added, a table row will continue
+    to point at the index for which it was created.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    *
+    * @param index Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
+    * @param values Optional. A 2D array of cell values of the table row.
+    * @param alwaysInsert Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If `true`, the new rows will be inserted into the table. If `false`, the new rows will be added below the table. Default is `true`.
+    */
+  def addAsJson(): TableRow = js.native
+  def addAsJson(index: Double): TableRow = js.native
+  def addAsJson(index: Double, values: js.Array[js.Array[CellValue]]): TableRow = js.native
+  def addAsJson(index: Double, values: js.Array[js.Array[CellValue]], alwaysInsert: Boolean): TableRow = js.native
+  def addAsJson(index: Double, values: Unit, alwaysInsert: Boolean): TableRow = js.native
+  def addAsJson(index: Unit, values: js.Array[js.Array[CellValue]]): TableRow = js.native
+  def addAsJson(index: Unit, values: js.Array[js.Array[CellValue]], alwaysInsert: Boolean): TableRow = js.native
+  def addAsJson(index: Unit, values: Unit, alwaysInsert: Boolean): TableRow = js.native
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TableRowCollection: RequestContext = js.native

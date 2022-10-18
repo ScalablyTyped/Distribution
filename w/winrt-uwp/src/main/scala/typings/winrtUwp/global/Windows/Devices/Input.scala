@@ -55,9 +55,9 @@ object Input {
   }
   
   /** Supports the ability to identify and track connected mouse devices. */
-  @JSGlobal("Windows.Devices.Input.MouseDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Input.MouseDevice")
   @js.native
-  abstract class MouseDevice ()
+  open class MouseDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Input.MouseDevice
   object MouseDevice {
@@ -75,9 +75,9 @@ object Input {
   }
   
   /** Contains event data for the MouseMoved event. */
-  @JSGlobal("Windows.Devices.Input.MouseEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Input.MouseEventArgs")
   @js.native
-  abstract class MouseEventArgs ()
+  open class MouseEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Input.MouseEventArgs {
     
@@ -87,9 +87,9 @@ object Input {
   }
   
   /** Supports the ability to identify the connected pointer devices and determine their capabilities. */
-  @JSGlobal("Windows.Devices.Input.PointerDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Input.PointerDevice")
   @js.native
-  abstract class PointerDevice ()
+  open class PointerDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Input.PointerDevice {
     

@@ -3,7 +3,7 @@ package typings.materialChips
 import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialChips.deprecatedChipFoundationMod.MDCChipFoundation
-import typings.materialChips.trailingactionComponentMod.MDCChipTrailingActionFactory
+import typings.materialChips.deprecatedTrailingactionComponentMod.MDCChipTrailingActionFactory
 import typings.materialRipple.componentMod.MDCRipple
 import typings.materialRipple.componentMod.MDCRippleFactory
 import org.scalablytyped.runtime.StObject

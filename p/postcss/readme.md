@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss
 
-Typings are for version 8.4.16
+Typings are for version 8.4.18
 
 ## Library description:
 Tool for transforming styles with JS plugins

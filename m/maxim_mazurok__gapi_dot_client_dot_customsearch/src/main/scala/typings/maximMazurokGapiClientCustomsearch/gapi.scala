@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCustomsearch
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCustomsearch.anon.Accesstoken
 import typings.maximMazurokGapiClientCustomsearch.anon.ByteSize
@@ -128,9 +127,7 @@ object gapi {
         
         /** Contains [PageMap](https://developers.google.com/custom-search/docs/structured_data#pagemaps) information for this search result. */
         var pagemap: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Result & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
               ] = js.undefined
         
         /** The snippet of the search result, in plain text. */
@@ -199,9 +196,7 @@ object gapi {
           inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
           
           inline def setPagemap(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Result & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
           ): Self = StObject.set(x, "pagemap", value.asInstanceOf[js.Any])
           
           inline def setPagemapUndefined: Self = StObject.set(x, "pagemap", js.undefined)
@@ -223,9 +218,7 @@ object gapi {
           * objects](https://developers.google.com/custom-search/docs/refinements#create) (refinements) you can use for refining a search.
           */
         var context: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Search & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
               ] = js.undefined
         
         /** The current set of custom search results. */
@@ -262,9 +255,7 @@ object gapi {
         extension [Self <: Search](x: Self) {
           
           inline def setContext(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Search & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
           ): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
           
           inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)

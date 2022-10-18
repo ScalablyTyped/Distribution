@@ -1,17 +1,17 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.atMod.At
-import typings.tsToolbelt.iterationMod.Iteration
-import typings.tsToolbelt.keyMod.Key
-import typings.tsToolbelt.nextMod.Next
-import typings.tsToolbelt.unionNonNullableMod.NonNullable
-import typings.tsToolbelt.validPathMod.ValidatePath
-import typings.tsToolbelt.validPathMod.__ValidPath
+import typings.tsToolbelt.outAnyAtMod.At
+import typings.tsToolbelt.outAnyKeyMod.Key
+import typings.tsToolbelt.outFunctionValidPathMod.ValidatePath
+import typings.tsToolbelt.outFunctionValidPathMod.__ValidPath
+import typings.tsToolbelt.outIterationIterationMod.Iteration
+import typings.tsToolbelt.outIterationNextMod.Next
+import typings.tsToolbelt.outUnionNonNullableMod.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0ValidPath`[O, Path /* <: typings.tsToolbelt.listMod.List[Key] */, I /* <: Iteration */] extends StObject {
+trait `0ValidPath`[O, Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, I /* <: Iteration */] extends StObject {
   
   var `0`: __ValidPath[
     NonNullable[
@@ -28,7 +28,7 @@ trait `0ValidPath`[O, Path /* <: typings.tsToolbelt.listMod.List[Key] */, I /* <
 }
 object `0ValidPath` {
   
-  inline def apply[O, Path /* <: typings.tsToolbelt.listMod.List[Key] */, I /* <: Iteration */](
+  inline def apply[O, Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, I /* <: Iteration */](
     `0`: __ValidPath[
       NonNullable[
         At[
@@ -47,7 +47,7 @@ object `0ValidPath` {
     __obj.asInstanceOf[`0ValidPath`[O, Path, I]]
   }
   
-  extension [Self <: `0ValidPath`[?, ?, ?], O, Path /* <: typings.tsToolbelt.listMod.List[Key] */, I /* <: Iteration */](x: Self & (`0ValidPath`[O, Path, I])) {
+  extension [Self <: `0ValidPath`[?, ?, ?], O, Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, I /* <: Iteration */](x: Self & (`0ValidPath`[O, Path, I])) {
     
     inline def set0(
       value: __ValidPath[

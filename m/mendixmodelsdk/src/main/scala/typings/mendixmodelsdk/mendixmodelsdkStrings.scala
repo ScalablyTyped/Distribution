@@ -1,10 +1,10 @@
 package typings.mendixmodelsdk
 
-import typings.mendixmodelsdk.iworkingcopyeventMod.BuildResultStatus
-import typings.mendixmodelsdk.structuresMod.StructureState
-import typings.mendixmodelsdk.transactionManagerMod.TransactionType
-import typings.mendixmodelsdk.transportInterfacesMod.LockType
-import typings.mendixmodelsdk.transportationMod.RequestMethod
+import typings.mendixmodelsdk.srcSdkInternalDeltasTransactionManagerMod.TransactionType
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.StructureState
+import typings.mendixmodelsdk.srcSdkInternalTransportInterfacesMod.LockType
+import typings.mendixmodelsdk.srcSdkInternalTransportationMod.RequestMethod
+import typings.mendixmodelsdk.srcSdkInternalWorkingCopyEventsIworkingcopyeventMod.BuildResultStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

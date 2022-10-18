@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@zip.js/zip.js", "ZipReader")
 @js.native
 open class ZipReader[Type] protected () extends StObject {
+  def this(reader: js.Array[ReadableReader | ReadableStream[Any] | Reader[Any]]) = this()
   def this(reader: ReadableStream[Any]) = this()
   def this(reader: ReadableReader) = this()
   /**
@@ -18,6 +19,10 @@ open class ZipReader[Type] protected () extends StObject {
     * @param options The options.
     */
   def this(reader: Reader[Type]) = this()
+  def this(
+    reader: js.Array[ReadableReader | ReadableStream[Any] | Reader[Any]],
+    options: ZipReaderConstructorOptions
+  ) = this()
   def this(reader: ReadableStream[Any], options: ZipReaderConstructorOptions) = this()
   def this(reader: ReadableReader, options: ZipReaderConstructorOptions) = this()
   def this(reader: Reader[Type], options: ZipReaderConstructorOptions) = this()

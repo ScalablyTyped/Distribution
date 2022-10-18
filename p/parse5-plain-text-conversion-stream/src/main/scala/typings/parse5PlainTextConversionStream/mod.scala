@@ -1,7 +1,7 @@
 package typings.parse5PlainTextConversionStream
 
 import typings.parse5.distParserMod.ParserOptions
-import typings.parse5.treeAdaptersInterfaceMod.TreeAdapterTypeMap
+import typings.parse5.distTreeAdaptersInterfaceMod.TreeAdapterTypeMap
 import typings.parse5ParserStream.mod.ParserStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

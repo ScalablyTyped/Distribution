@@ -1,6 +1,6 @@
 package typings.cosmiconfig
 
-import typings.cosmiconfig.typesMod.CosmiconfigResult
+import typings.cosmiconfig.distTypesMod.CosmiconfigResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ object anon {
   
   trait Config extends StObject {
     
-    var config: typings.cosmiconfig.typesMod.Config
+    var config: typings.cosmiconfig.distTypesMod.Config
     
     var filepath: String
     
@@ -47,14 +47,14 @@ object anon {
   }
   object Config {
     
-    inline def apply(config: typings.cosmiconfig.typesMod.Config, filepath: String): Config = {
+    inline def apply(config: typings.cosmiconfig.distTypesMod.Config, filepath: String): Config = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], filepath = filepath.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
     extension [Self <: Config](x: Self) {
       
-      inline def setConfig(value: typings.cosmiconfig.typesMod.Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: typings.cosmiconfig.distTypesMod.Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
       

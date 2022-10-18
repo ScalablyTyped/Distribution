@@ -24,10 +24,13 @@ trait CanGoBack extends StObject {
   
   def isFocused(): Boolean = js.native
   
-  def navigate[RouteName /* <: String */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RouteName extends unknown ? [screen: RouteName] | [screen: RouteName, params: object | undefined] : never is not an array type */ args: (js.Array[/* screen */ RouteName]) | (js.Tuple2[/* screen */ RouteName, /* params */ js.UndefOr[js.Object]])
+  def navigate[RouteName_1 /* <: String */](
+    options: /* import warning: importer.ImportType#apply Failed type conversion: RouteName_1 extends unknown ? {  key :string,   params :object | undefined,   merge :boolean | undefined} | {  name :RouteName_1,   key :string | undefined,   params :object | undefined,   merge :boolean | undefined} : never */ js.Any
   ): Unit = js.native
-  def navigate[RouteName_1 /* <: String */](options: Merge | KeyMerge[RouteName_1]): Unit = js.native
+  @JSName("navigate")
+  def navigate_RouteName[RouteName /* <: String */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RouteName extends unknown ? [screen: RouteName] | [screen: RouteName, params: object | undefined] : never is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: RouteName extends unknown ? [screen: RouteName] | [screen: RouteName, params: object | undefined] : never */ js.Any
+  ): Unit = js.native
   
   def reset(state: PartialStateReadonlykeystHistory): Unit = js.native
   def reset(state: ReadonlykeystringindexnumHistory): Unit = js.native

@@ -1,8 +1,7 @@
 package typings.ol
 
-import org.scalablytyped.runtime.TopLevel
 import typings.ol.coordinateMod.Coordinate
-import typings.ol.olFeatureMod.FeatureLike
+import typings.ol.featureMod.FeatureLike
 import typings.ol.renderMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,11 +23,7 @@ object styleStyleMod {
   
   inline def createDefaultStyle(feature: FeatureLike, resolution: Double): js.Array[Style] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultStyle")(feature.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any])).asInstanceOf[js.Array[Style]]
   
-  inline def createEditingStyle(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in ol.ol/geom/GeometryType.GeometryType ]: std.Array<ol.ol/style/Style.Style>}
-    */ typings.ol.olStrings.createEditingStyle & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEditingStyle")().asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in ol.ol/geom/GeometryType.GeometryType ]: std.Array<ol.ol/style/Style.Style>}
-    */ typings.ol.olStrings.createEditingStyle & TopLevel[Any]]
+  inline def createEditingStyle(): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in ol.ol/geom/GeometryType.GeometryType ]: std.Array<ol.ol/style/Style.Style>} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEditingStyle")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ key in ol.ol/geom/GeometryType.GeometryType ]: std.Array<ol.ol/style/Style.Style>} */ js.Any]
   
   inline def toFunction(obj: js.Array[Style]): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
   inline def toFunction(obj: Style): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
@@ -36,22 +31,22 @@ object styleStyleMod {
   
   type GeometryFunction = js.Function1[
     /* p0 */ FeatureLike, 
-    js.UndefOr[typings.ol.geometryMod.default | typings.ol.renderFeatureMod.default]
+    js.UndefOr[typings.ol.geomGeometryMod.default | typings.ol.renderFeatureMod.default]
   ]
   
   trait Options extends StObject {
     
-    var fill: js.UndefOr[typings.ol.fillMod.default] = js.undefined
+    var fill: js.UndefOr[typings.ol.styleFillMod.default] = js.undefined
     
-    var geometry: js.UndefOr[String | typings.ol.geometryMod.default | GeometryFunction] = js.undefined
+    var geometry: js.UndefOr[String | typings.ol.geomGeometryMod.default | GeometryFunction] = js.undefined
     
     var image: js.UndefOr[typings.ol.styleImageMod.default] = js.undefined
     
     var renderer: js.UndefOr[RenderFunction] = js.undefined
     
-    var stroke: js.UndefOr[typings.ol.strokeMod.default] = js.undefined
+    var stroke: js.UndefOr[typings.ol.styleStrokeMod.default] = js.undefined
     
-    var text: js.UndefOr[typings.ol.textMod.default] = js.undefined
+    var text: js.UndefOr[typings.ol.styleTextMod.default] = js.undefined
     
     var zIndex: js.UndefOr[Double] = js.undefined
   }
@@ -64,14 +59,14 @@ object styleStyleMod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setFill(value: typings.ol.fillMod.default): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: typings.ol.styleFillMod.default): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      inline def setGeometry(value: String | typings.ol.geometryMod.default | GeometryFunction): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: String | typings.ol.geomGeometryMod.default | GeometryFunction): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
       inline def setGeometryFunction1(
-        value: /* p0 */ FeatureLike => js.UndefOr[typings.ol.geometryMod.default | typings.ol.renderFeatureMod.default]
+        value: /* p0 */ FeatureLike => js.UndefOr[typings.ol.geomGeometryMod.default | typings.ol.renderFeatureMod.default]
       ): Self = StObject.set(x, "geometry", js.Any.fromFunction1(value))
       
       inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
@@ -86,11 +81,11 @@ object styleStyleMod {
       
       inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       
-      inline def setStroke(value: typings.ol.strokeMod.default): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: typings.ol.styleStrokeMod.default): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
       inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
       
-      inline def setText(value: typings.ol.textMod.default): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: typings.ol.styleTextMod.default): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
@@ -112,12 +107,12 @@ object styleStyleMod {
     /**
       * Get the fill style.
       */
-    def getFill(): typings.ol.fillMod.default = js.native
+    def getFill(): typings.ol.styleFillMod.default = js.native
     
     /**
       * Get the geometry to be rendered.
       */
-    def getGeometry(): String | typings.ol.geometryMod.default | GeometryFunction = js.native
+    def getGeometry(): String | typings.ol.geomGeometryMod.default | GeometryFunction = js.native
     
     /**
       * Get the function used to generate a geometry for rendering.
@@ -138,12 +133,12 @@ object styleStyleMod {
     /**
       * Get the stroke style.
       */
-    def getStroke(): typings.ol.strokeMod.default = js.native
+    def getStroke(): typings.ol.styleStrokeMod.default = js.native
     
     /**
       * Get the text style.
       */
-    def getText(): typings.ol.textMod.default = js.native
+    def getText(): typings.ol.styleTextMod.default = js.native
     
     /**
       * Get the z-index for the style.
@@ -153,13 +148,13 @@ object styleStyleMod {
     /**
       * Set the fill style.
       */
-    def setFill(fill: typings.ol.fillMod.default): Unit = js.native
+    def setFill(fill: typings.ol.styleFillMod.default): Unit = js.native
     
     /**
       * Set a geometry that is rendered instead of the feature's geometry.
       */
     def setGeometry(geometry: String): Unit = js.native
-    def setGeometry(geometry: typings.ol.geometryMod.default): Unit = js.native
+    def setGeometry(geometry: typings.ol.geomGeometryMod.default): Unit = js.native
     def setGeometry(geometry: GeometryFunction): Unit = js.native
     
     /**
@@ -177,12 +172,12 @@ object styleStyleMod {
     /**
       * Set the stroke style.
       */
-    def setStroke(stroke: typings.ol.strokeMod.default): Unit = js.native
+    def setStroke(stroke: typings.ol.styleStrokeMod.default): Unit = js.native
     
     /**
       * Set the text style.
       */
-    def setText(text: typings.ol.textMod.default): Unit = js.native
+    def setText(text: typings.ol.styleTextMod.default): Unit = js.native
     
     /**
       * Set the z-index.

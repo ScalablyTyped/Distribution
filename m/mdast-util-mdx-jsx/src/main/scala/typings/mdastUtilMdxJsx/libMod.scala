@@ -27,15 +27,15 @@ object libMod {
   
   type Literal = typings.mdast.mod.Literal
   
-  type MdxJsxAttribute = typings.mdastUtilMdxJsx.complexTypesMod.MdxJsxAttribute
+  type MdxJsxAttribute = typings.mdastUtilMdxJsx.libComplexTypesMod.MdxJsxAttribute
   
-  type MdxJsxAttributeValueExpression = typings.mdastUtilMdxJsx.complexTypesMod.MdxJsxAttributeValueExpression
+  type MdxJsxAttributeValueExpression = typings.mdastUtilMdxJsx.libComplexTypesMod.MdxJsxAttributeValueExpression
   
-  type MdxJsxExpressionAttribute = typings.mdastUtilMdxJsx.complexTypesMod.MdxJsxExpressionAttribute
+  type MdxJsxExpressionAttribute = typings.mdastUtilMdxJsx.libComplexTypesMod.MdxJsxExpressionAttribute
   
-  type MdxJsxFlowElement = typings.mdastUtilMdxJsx.complexTypesMod.MdxJsxFlowElement
+  type MdxJsxFlowElement = typings.mdastUtilMdxJsx.libComplexTypesMod.MdxJsxFlowElement
   
-  type MdxJsxTextElement = typings.mdastUtilMdxJsx.complexTypesMod.MdxJsxTextElement
+  type MdxJsxTextElement = typings.mdastUtilMdxJsx.libComplexTypesMod.MdxJsxTextElement
   
   type OnEnterError = typings.mdastUtilFromMarkdown.mod.OnEnterError
   
@@ -111,7 +111,7 @@ object libMod {
     /**
       * Preferred quote to use around attribute values.
       */
-    var quote: js.UndefOr[Quotationmark | String] = js.undefined
+    var quote: js.UndefOr[Quotationmark | (/* ' */ String)] = js.undefined
     
     /**
       * Use the other quote if that results in less bytes.
@@ -137,7 +137,7 @@ object libMod {
       
       inline def setPrintWidthUndefined: Self = StObject.set(x, "printWidth", js.undefined)
       
-      inline def setQuote(value: Quotationmark | String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      inline def setQuote(value: Quotationmark | (/* ' */ String)): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
       inline def setQuoteSmart(value: Boolean): Self = StObject.set(x, "quoteSmart", value.asInstanceOf[js.Any])
       

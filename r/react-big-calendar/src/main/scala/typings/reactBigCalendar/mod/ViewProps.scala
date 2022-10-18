@@ -7,6 +7,7 @@ import typings.react.mod.SyntheticEvent
 import typings.reactBigCalendar.anon.Accessors
 import typings.reactBigCalendar.anon.ClassName
 import typings.reactBigCalendar.anon.End
+import typings.reactBigCalendar.anon.Style
 import typings.reactBigCalendar.anon.X
 import typings.reactBigCalendar.reactBigCalendarStrings.ignoreEvents
 import typings.std.HTMLDivElement
@@ -43,6 +44,8 @@ trait ViewProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends
   var doShowMoreDrillDown: js.UndefOr[Boolean] = js.undefined
   
   var drilldownView: js.UndefOr[View | Null] = js.undefined
+  
+  var enableAutoScroll: js.UndefOr[Boolean] = js.undefined
   
   var endAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, js.Date])] = js.undefined
   
@@ -211,7 +214,7 @@ object ViewProps {
     
     inline def setDayLayoutAlgorithm(value: DayLayoutAlgorithm | DayLayoutFunction[TEvent]): Self = StObject.set(x, "dayLayoutAlgorithm", value.asInstanceOf[js.Any])
     
-    inline def setDayLayoutAlgorithmFunction1(value: /* _ */ Accessors[TEvent] => js.Array[typings.reactBigCalendar.anon.Event[TEvent]]): Self = StObject.set(x, "dayLayoutAlgorithm", js.Any.fromFunction1(value))
+    inline def setDayLayoutAlgorithmFunction1(value: /* _ */ Accessors[TEvent] => js.Array[Style[TEvent]]): Self = StObject.set(x, "dayLayoutAlgorithm", js.Any.fromFunction1(value))
     
     inline def setDayLayoutAlgorithmUndefined: Self = StObject.set(x, "dayLayoutAlgorithm", js.undefined)
     
@@ -238,6 +241,10 @@ object ViewProps {
     inline def setDrilldownViewNull: Self = StObject.set(x, "drilldownView", null)
     
     inline def setDrilldownViewUndefined: Self = StObject.set(x, "drilldownView", js.undefined)
+    
+    inline def setEnableAutoScroll(value: Boolean): Self = StObject.set(x, "enableAutoScroll", value.asInstanceOf[js.Any])
+    
+    inline def setEnableAutoScrollUndefined: Self = StObject.set(x, "enableAutoScroll", js.undefined)
     
     inline def setEndAccessor(value: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, js.Date])): Self = StObject.set(x, "endAccessor", value.asInstanceOf[js.Any])
     

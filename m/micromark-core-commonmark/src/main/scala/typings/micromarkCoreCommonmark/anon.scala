@@ -1,6 +1,6 @@
 package typings.micromarkCoreCommonmark
 
-import typings.micromarkCoreCommonmark.listMod.Code
+import typings.micromarkCoreCommonmark.devLibListMod.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

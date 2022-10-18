@@ -1,12 +1,16 @@
 package typings.cypress
 
 import typings.cypress.Mocha.Interface
+import typings.cypress.Mocha.MochaOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrowserMocha extends Mocha {
+trait BrowserMocha
+  extends StObject
+     with Mocha {
+  
   /**
     * Setup mocha with the given settings options.
     *
@@ -14,7 +18,8 @@ trait BrowserMocha extends Mocha {
     */
   def setup(): this.type = js.native
   def setup(opts: Interface): this.type = js.native
-  def setup(opts: MochaSetupOptions): this.type = js.native
+  def setup(opts: MochaOptions): this.type = js.native
+  
   /**
     * Function to allow assertion libraries to throw errors directly into mocha.
     * This is useful when running tests in a browser because window.onerror will
@@ -22,6 +27,5 @@ trait BrowserMocha extends Mocha {
     *
     * - _Only supported in the browser._
     */
-  def throwError(err: js.Any): scala.Nothing = js.native
+  def throwError(err: Any): scala.Nothing = js.native
 }
-

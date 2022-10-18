@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a printing operation including the content to be printed, as well as providing access to information describing how the content is to be printed. */
-@JSGlobal("Windows.Graphics.Printing.PrintTask")
+/* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.PrintTask")
 @js.native
-abstract class PrintTask ()
+open class PrintTask ()
   extends StObject
      with typings.winrtUwp.Windows.Graphics.Printing.PrintTask

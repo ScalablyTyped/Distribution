@@ -1,18 +1,18 @@
 package typings.nivoChord.anon
 
-import typings.nivoChord.typesMod.ArcDatum
-import typings.nivoChord.typesMod.ArcTooltipComponent
-import typings.nivoChord.typesMod.ChordArcMouseHandler
-import typings.nivoChord.typesMod.CustomCanvasLayer
-import typings.nivoChord.typesMod.LayerId
-import typings.nivoColors.inheritedColorMod.InheritedColorConfig
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoChord.distTypesTypesMod.ArcDatum
+import typings.nivoChord.distTypesTypesMod.ArcTooltipComponent
+import typings.nivoChord.distTypesTypesMod.ChordArcMouseHandler
+import typings.nivoChord.distTypesTypesMod.CustomCanvasLayer
+import typings.nivoChord.distTypesTypesMod.LayerId
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.CssMixBlendMode
 import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoCore.mod.Theme
 import typings.nivoCore.mod.ValueFormat
-import typings.nivoLegends.typesTypesMod.LegendProps
+import typings.nivoLegends.distTypesTypesMod.LegendProps
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.Element
@@ -289,10 +289,6 @@ object OmitChordCanvasPropswidth {
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     inline def setValueFormat(value: ValueFormat[Double, Unit]): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
-    
-    inline def setValueFormatFunction1(value: Double => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction1(value))
-    
-    inline def setValueFormatFunction2(value: (Double, Unit) => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction2(value))
     
     inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
   }

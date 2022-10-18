@@ -1,10 +1,10 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenNavigationMod.navigation.NavigationProfile
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +17,9 @@ object menus {
   @JSImport("mendixmodelsdk", "menus.MenuDocument")
   @js.native
   open class MenuDocument protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.menus.MenuDocument {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.menus.MenuDocument {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
@@ -37,7 +37,7 @@ object menus {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.menusMod.menus.MenuDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.menusMod.menus.MenuDocument]
+    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenMenusMod.menus.MenuDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMenusMod.menus.MenuDocument]
     
     /* static member */
     @JSImport("mendixmodelsdk", "menus.MenuDocument.structureTypeName")
@@ -48,8 +48,8 @@ object menus {
     /* static member */
     @JSImport("mendixmodelsdk", "menus.MenuDocument.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.menusMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.menusMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenMenusMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenMenusMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -58,14 +58,14 @@ object menus {
   @JSImport("mendixmodelsdk", "menus.MenuItem")
   @js.native
   open class MenuItem protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.menus.MenuItem {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.menus.MenuItem {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object MenuItem {
@@ -80,7 +80,7 @@ object menus {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.menusMod.menus.MenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.menusMod.menus.MenuItem]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenMenusMod.menus.MenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMenusMod.menus.MenuItem]
     
     /**
       * Creates and returns a new MenuItem instance in the SDK and on the server.
@@ -88,7 +88,7 @@ object menus {
       * of the parent MenuItemContainer element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.menusMod.menus.MenuItemContainer): typings.mendixmodelsdk.menusMod.menus.MenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.menusMod.menus.MenuItem]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenMenusMod.menus.MenuItemContainer): typings.mendixmodelsdk.srcGenMenusMod.menus.MenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMenusMod.menus.MenuItem]
     
     /* static member */
     @JSImport("mendixmodelsdk", "menus.MenuItem.structureTypeName")
@@ -99,21 +99,21 @@ object menus {
     /* static member */
     @JSImport("mendixmodelsdk", "menus.MenuItem.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.menusMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.menusMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenMenusMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenMenusMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "menus.MenuItemCollection")
   @js.native
   open class MenuItemCollection protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.menus.MenuItemCollection {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.menus.MenuItemCollection {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object MenuItemCollection {
@@ -128,7 +128,7 @@ object menus {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.menusMod.menus.MenuItemCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.menusMod.menus.MenuItemCollection]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenMenusMod.menus.MenuItemCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMenusMod.menus.MenuItemCollection]
     
     /**
       * Creates and returns a new MenuItemCollection instance in the SDK and on the server.
@@ -136,7 +136,7 @@ object menus {
       * of the parent MenuDocument element passed as argument.
       */
     /* static member */
-    inline def createInMenuDocumentUnderItemCollection(container: typings.mendixmodelsdk.menusMod.menus.MenuDocument): typings.mendixmodelsdk.menusMod.menus.MenuItemCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuDocumentUnderItemCollection")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.menusMod.menus.MenuItemCollection]
+    inline def createInMenuDocumentUnderItemCollection(container: typings.mendixmodelsdk.srcGenMenusMod.menus.MenuDocument): typings.mendixmodelsdk.srcGenMenusMod.menus.MenuItemCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuDocumentUnderItemCollection")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMenusMod.menus.MenuItemCollection]
     
     /**
       * Creates and returns a new MenuItemCollection instance in the SDK and on the server.
@@ -144,7 +144,7 @@ object menus {
       * of the parent navigation.NavigationProfile element passed as argument.
       */
     /* static member */
-    inline def createInNavigationProfileUnderMenuItemCollection(container: NavigationProfile): typings.mendixmodelsdk.menusMod.menus.MenuItemCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationProfileUnderMenuItemCollection")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.menusMod.menus.MenuItemCollection]
+    inline def createInNavigationProfileUnderMenuItemCollection(container: NavigationProfile): typings.mendixmodelsdk.srcGenMenusMod.menus.MenuItemCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationProfileUnderMenuItemCollection")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMenusMod.menus.MenuItemCollection]
     
     /* static member */
     @JSImport("mendixmodelsdk", "menus.MenuItemCollection.structureTypeName")
@@ -155,21 +155,21 @@ object menus {
     /* static member */
     @JSImport("mendixmodelsdk", "menus.MenuItemCollection.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.menusMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.menusMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenMenusMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenMenusMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk", "menus.MenuItemContainer")
+  /* note: abstract class */ @JSImport("mendixmodelsdk", "menus.MenuItemContainer")
   @js.native
-  abstract class MenuItemContainer protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.menus.MenuItemContainer {
+  open class MenuItemContainer protected ()
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.menus.MenuItemContainer {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object MenuItemContainer {
@@ -187,7 +187,7 @@ object menus {
     /* static member */
     @JSImport("mendixmodelsdk", "menus.MenuItemContainer.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.menusMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.menusMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenMenusMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenMenusMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
 }

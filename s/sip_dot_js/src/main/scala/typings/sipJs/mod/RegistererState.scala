@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object RegistererState extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.sipJs.registererStateMod.RegistererState & String] = js.native
+  def apply(value: String): js.UndefOr[typings.sipJs.libApiRegistererStateMod.RegistererState & String] = js.native
   
-  /* "Initial" */ val Initial: typings.sipJs.registererStateMod.RegistererState.Initial & String = js.native
+  /* "Initial" */ val Initial: typings.sipJs.libApiRegistererStateMod.RegistererState.Initial & String = js.native
   
-  /* "Registered" */ val Registered: typings.sipJs.registererStateMod.RegistererState.Registered & String = js.native
+  /* "Registered" */ val Registered: typings.sipJs.libApiRegistererStateMod.RegistererState.Registered & String = js.native
   
-  /* "Terminated" */ val Terminated: typings.sipJs.registererStateMod.RegistererState.Terminated & String = js.native
+  /* "Terminated" */ val Terminated: typings.sipJs.libApiRegistererStateMod.RegistererState.Terminated & String = js.native
   
-  /* "Unregistered" */ val Unregistered: typings.sipJs.registererStateMod.RegistererState.Unregistered & String = js.native
+  /* "Unregistered" */ val Unregistered: typings.sipJs.libApiRegistererStateMod.RegistererState.Unregistered & String = js.native
 }

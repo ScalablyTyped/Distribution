@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FontFamilyFontSize extends StObject {
   
-  var fontFamily: String
+  var fontFamily: /* 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace */ String
   
   var fontSize: `0Dot75rem`
   
@@ -29,7 +29,9 @@ object FontFamilyFontSize {
   
   extension [Self <: FontFamilyFontSize](x: Self) {
     
-    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(
+      value: /* 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace */ String
+    ): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     inline def setFontSize(value: `0Dot75rem`): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     

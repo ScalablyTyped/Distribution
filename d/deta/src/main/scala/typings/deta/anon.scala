@@ -1,6 +1,6 @@
 package typings.deta
 
-import typings.deta.basicMod.ArrayType
+import typings.deta.distTypesTypesBasicMod.ArrayType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

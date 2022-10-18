@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables applications to initiate renewal of components which need updating in order to play protected media content. */
-@JSGlobal("Windows.Media.Protection.ComponentRenewal")
+/* note: abstract class */ @JSGlobal("Windows.Media.Protection.ComponentRenewal")
 @js.native
-abstract class ComponentRenewal ()
+open class ComponentRenewal ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.ComponentRenewal
 object ComponentRenewal {

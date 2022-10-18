@@ -1,5 +1,6 @@
 package typings.node.netMod
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.^
 import org.scalablytyped.runtime.StObject
@@ -161,10 +162,5 @@ inline def isIPv6(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDyna
 type LookupFunction = js.Function3[
 /* hostname */ String, 
 /* options */ LookupOneOptions, 
-/* callback */ js.Function3[
-  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-  /* address */ String, 
-  /* family */ Double, 
-  Unit
-], 
+/* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit], 
 Unit]

@@ -1,6 +1,5 @@
 package typings.maplibreGl.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.mapboxPointGeometry.mod.^
 import typings.maplibreGl.anon.NumTouches
 import typings.std.Touch
@@ -26,9 +25,7 @@ open class SingleTapRecognizer protected () extends StObject {
   
   def touchend(e: TouchEvent, points: js.Array[^], mapTouches: js.Array[Touch]): ^ = js.native
   
-  var touches: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in number | string ]: @mapbox/point-geometry.@mapbox/point-geometry.^}
-    */ typings.maplibreGl.maplibreGlStrings.SingleTapRecognizer & TopLevel[Any] = js.native
+  var touches: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in number | string ]: @mapbox/point-geometry.@mapbox/point-geometry.^} */ js.Any = js.native
   
   def touchmove(e: TouchEvent, points: js.Array[^], mapTouches: js.Array[Touch]): scala.Unit = js.native
   

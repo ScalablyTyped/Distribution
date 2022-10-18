@@ -1,7 +1,7 @@
 package typings.pgPacketStream
 
-import typings.pgPacketStream.messagesMod.MessageName
-import typings.pgPacketStream.messagesMod.Mode
+import typings.pgPacketStream.distMessagesMod.MessageName
+import typings.pgPacketStream.distMessagesMod.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.cypress.Cypress
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalStorage extends js.Object {
+trait LocalStorage extends StObject {
+  
   /**
     * Called internally to clear `localStorage` in two situations.
     *
@@ -19,4 +20,3 @@ trait LocalStorage extends js.Object {
   def clear(): Unit = js.native
   def clear(keys: js.Array[String]): Unit = js.native
 }
-

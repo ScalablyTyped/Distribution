@@ -1,7 +1,6 @@
 package typings.asyncBusboy
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.busboy.mod.FileInfo
 import typings.busboy.mod.Limits
 import typings.node.fsMod.ReadStream
@@ -221,5 +220,5 @@ object mod {
     }
   }
   
-  type WithRequiredProps[T /* <: js.Object */, K /* <: /* keyof T */ String */] = (Omit[T, K]) & typings.asyncBusboy.asyncBusboyStrings.WithRequiredProps & TopLevel[T]
+  type WithRequiredProps[T /* <: js.Object */, K /* <: /* keyof T */ String */] = (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ MK in K ]: -? std.NonNullable<T[MK]>} */ js.Any)
 }

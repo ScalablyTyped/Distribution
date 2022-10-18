@@ -1,8 +1,8 @@
 package typings.googleAuthLibrary
 
-import typings.googleAuthLibrary.identitypoolclientMod.SubjectTokenFormatType
-import typings.googleAuthLibrary.oauth2commonMod.ConfidentialClientType
-import typings.googleAuthLibrary.oauth2commonMod._OAuthErrorCode
+import typings.googleAuthLibrary.buildSrcAuthIdentitypoolclientMod.SubjectTokenFormatType
+import typings.googleAuthLibrary.buildSrcAuthOauth2commonMod.ConfidentialClientType
+import typings.googleAuthLibrary.buildSrcAuthOauth2commonMod._OAuthErrorCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

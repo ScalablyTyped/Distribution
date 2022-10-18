@@ -28,6 +28,6 @@ object srcMessageMod {
       ]
     ], 
     /* opts */ js.UndefOr[Options], 
-    (js.Array[T | String]) | String | T
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? string : std.Array<T | string> | string | T */ js.Any
   ]
 }

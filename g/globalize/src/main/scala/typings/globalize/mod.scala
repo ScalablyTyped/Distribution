@@ -2,8 +2,8 @@ package typings.globalize
 
 import org.scalablytyped.runtime.Shortcut
 import typings.cldrjs.mod.CldrStatic
-import typings.globalize.globalizeMod.Shared
-import typings.globalize.globalizeMod.Static
+import typings.globalize.distGlobalizeMod.Shared
+import typings.globalize.distGlobalizeMod.Static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

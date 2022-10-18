@@ -314,7 +314,7 @@ trait ImagePropsRefAttributesIm extends StObject {
     */
   var testID: js.UndefOr[String] = js.undefined
   
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   var total: js.UndefOr[Double] = js.undefined
 }
@@ -322,7 +322,7 @@ object ImagePropsRefAttributesIm {
   
   inline def apply(
     style: js.UndefOr[StyleProp[ImageStyle]] & js.UndefOr[StyleProp[ViewStyle]],
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   ): ImagePropsRefAttributesIm = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePropsRefAttributesIm]
@@ -520,7 +520,7 @@ object ImagePropsRefAttributesIm {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.diagnosticChannel
 
-import typings.diagnosticChannel.patchRequireMod.IModulePatchMap
-import typings.diagnosticChannel.patchRequireMod.IModulePatcher
+import typings.diagnosticChannel.distSrcPatchRequireMod.IModulePatchMap
+import typings.diagnosticChannel.distSrcPatchRequireMod.IModulePatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

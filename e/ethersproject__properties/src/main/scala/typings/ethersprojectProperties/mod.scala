@@ -1,7 +1,6 @@
 package typings.ethersprojectProperties
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ object mod {
   @JSImport("@ethersproject/properties", "Description")
   @js.native
   open class Description[T] protected () extends StObject {
-    def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]: T[K]}
-      */ typings.ethersprojectProperties.ethersprojectPropertiesStrings.Description & TopLevel[T]) = this()
+    def this(info: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K]} */ js.Any) = this()
   }
   
   inline def checkProperties(`object`: Any, properties: StringDictionary[Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkProperties")(`object`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -36,7 +33,13 @@ object mod {
   
   inline def shallowCopy[T](`object`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowCopy")(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  type Deferrable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K] | std.Promise<T[K]>}
-    */ typings.ethersprojectProperties.ethersprojectPropertiesStrings.Deferrable & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]: T[K] | std.Promise<T[K]>}
+    }}}
+    */
+  @js.native
+  trait Deferrable[T] extends StObject
 }

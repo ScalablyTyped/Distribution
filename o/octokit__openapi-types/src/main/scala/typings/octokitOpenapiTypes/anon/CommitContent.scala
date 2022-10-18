@@ -8,7 +8,7 @@ trait CommitContent extends StObject {
   
   var commit: Verification
   
-  var content: GiturlHtmlurl | Null
+  var content: Type | Null
 }
 object CommitContent {
   
@@ -21,7 +21,7 @@ object CommitContent {
     
     inline def setCommit(value: Verification): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    inline def setContent(value: GiturlHtmlurl): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Type): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentNull: Self = StObject.set(x, "content", null)
   }

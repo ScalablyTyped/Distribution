@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Portable {
   
   /** Provides methods for identifying a device service for a portable device that supports WPD (Windows Portable Devices) for device enumeration. */
-  @JSGlobal("Windows.Devices.Portable.ServiceDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Portable.ServiceDevice")
   @js.native
-  abstract class ServiceDevice ()
+  open class ServiceDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Portable.ServiceDevice
   object ServiceDevice {
@@ -62,9 +62,9 @@ object Portable {
   }
   
   /** Provides methods for accessing the storage functionality of a portable device that supports WPD. */
-  @JSGlobal("Windows.Devices.Portable.StorageDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Portable.StorageDevice")
   @js.native
-  abstract class StorageDevice ()
+  open class StorageDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Portable.StorageDevice
   object StorageDevice {

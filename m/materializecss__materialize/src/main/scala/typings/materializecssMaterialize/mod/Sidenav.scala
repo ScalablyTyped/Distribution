@@ -1,5 +1,7 @@
 package typings.materializecssMaterialize.mod
 
+import typings.materializecssMaterialize.M.SidenavOptions
+import typings.materializecssMaterialize.MElements
 import typings.materializecssMaterialize.anon.PartialSidenavOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -12,11 +14,20 @@ open class Sidenav ()
   extends StObject
      with typings.materializecssMaterialize.M.Sidenav {
   
-  /**
-    * Closes Sidenav
-    */
   /* CompleteClass */
   override def close(): Unit = js.native
+  
+  /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
   
   /**
     * Describes if Sidenav is being dragged
@@ -30,17 +41,17 @@ open class Sidenav ()
   /* CompleteClass */
   var isFixed: Boolean = js.native
   
-  /**
-    * Describes open/close state of Sidenav
-    */
   /* CompleteClass */
   var isOpen: Boolean = js.native
   
-  /**
-    * Opens Sidenav
-    */
   /* CompleteClass */
   override def open(): Unit = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: SidenavOptions = js.native
 }
 object Sidenav {
   
@@ -58,13 +69,8 @@ object Sidenav {
     * Init Sidenavs
     */
   /* static member */
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any
-  ): js.Array[typings.materializecssMaterialize.M.Sidenav] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Sidenav]]
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any,
-    options: PartialSidenavOptions
-  ): js.Array[typings.materializecssMaterialize.M.Sidenav] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Sidenav]]
+  inline def init(els: MElements): js.Array[typings.materializecssMaterialize.M.Sidenav] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Sidenav]]
+  inline def init(els: MElements, options: PartialSidenavOptions): js.Array[typings.materializecssMaterialize.M.Sidenav] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Sidenav]]
   /**
     * Init Sidenav
     */

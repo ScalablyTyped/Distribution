@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.portalMod.default
+import typings.antDesignReactNative.libPortalMod.default
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,7 +41,7 @@ object Portal {
   @JSImport("@ant-design/react-native", "Portal.Host")
   @js.native
   open class Host ()
-    extends typings.antDesignReactNative.portalMod.default.Host
+    extends typings.antDesignReactNative.libPortalMod.default.Host
   /* static members */
   object Host {
     

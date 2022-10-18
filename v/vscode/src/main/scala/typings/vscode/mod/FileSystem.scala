@@ -1,8 +1,8 @@
 package typings.vscode.mod
 
 import typings.vscode.Thenable
-import typings.vscode.anon.UseTrash
-import typings.vscode.anon.`0`
+import typings.vscode.anon.Overwrite
+import typings.vscode.anon.Recursive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ trait FileSystem extends StObject {
     * @param options Defines if existing files should be overwritten.
     */
   def copy(source: Uri, target: Uri): Thenable[Unit] = js.native
-  def copy(source: Uri, target: Uri, options: `0`): Thenable[Unit] = js.native
+  def copy(source: Uri, target: Uri, options: Overwrite): Thenable[Unit] = js.native
   
   /**
     * Create a new directory (Note, that new files are created via `write`-calls).
@@ -37,7 +37,7 @@ trait FileSystem extends StObject {
     * @param options Defines if trash can should be used and if deletion of folders is recursive
     */
   def delete(uri: Uri): Thenable[Unit] = js.native
-  def delete(uri: Uri, options: UseTrash): Thenable[Unit] = js.native
+  def delete(uri: Uri, options: Recursive): Thenable[Unit] = js.native
   
   /**
     * Check if a given file system supports writing files.
@@ -78,7 +78,7 @@ trait FileSystem extends StObject {
     * @param options Defines if existing files should be overwritten.
     */
   def rename(source: Uri, target: Uri): Thenable[Unit] = js.native
-  def rename(source: Uri, target: Uri, options: `0`): Thenable[Unit] = js.native
+  def rename(source: Uri, target: Uri, options: Overwrite): Thenable[Unit] = js.native
   
   /**
     * Retrieve metadata about a file.

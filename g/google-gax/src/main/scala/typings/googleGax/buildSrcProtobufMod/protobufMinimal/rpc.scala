@@ -1,0 +1,26 @@
+package typings.googleGax.buildSrcProtobufMod.protobufMinimal
+
+import typings.protobufjs.mod.RPCImpl
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object rpc {
+  
+  /** An RPC service as returned by {@link Service#create}. */
+  @JSImport("google-gax/build/src/protobuf", "protobufMinimal.rpc.Service")
+  @js.native
+  open class Service protected ()
+    extends typings.protobufjs.minimalMod.rpc.Service {
+    /**
+      * Constructs a new RPC service instance.
+      * @param rpcImpl RPC implementation
+      * @param [requestDelimited=false] Whether requests are length-delimited
+      * @param [responseDelimited=false] Whether responses are length-delimited
+      */
+    def this(rpcImpl: RPCImpl) = this()
+    def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
+    def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+    def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
+  }
+}

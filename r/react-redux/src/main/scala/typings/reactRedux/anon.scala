@@ -2,11 +2,11 @@ package typings.reactRedux
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
-import typings.reactRedux.subscriptionMod.Listener
-import typings.reactRedux.typesMod.EqualityFn
-import typings.reactRedux.wrapMapToPropsMod.AnyProps
-import typings.reactRedux.wrapMapToPropsMod.AnyState
-import typings.reactRedux.wrapMapToPropsMod.StateOrDispatch
+import typings.reactRedux.esConnectWrapMapToPropsMod.AnyProps
+import typings.reactRedux.esConnectWrapMapToPropsMod.AnyState
+import typings.reactRedux.esConnectWrapMapToPropsMod.StateOrDispatch
+import typings.reactRedux.esTypesMod.EqualityFn
+import typings.reactRedux.esUtilsSubscriptionMod.Listener
 import typings.redux.mod.ActionCreator
 import typings.redux.mod.ActionCreatorsMapObject
 import typings.redux.mod.AnyAction
@@ -49,13 +49,13 @@ object anon {
   @js.native
   trait CallDependsOnOwnProps[P /* <: AnyProps */] extends StObject {
     
-    def apply(stateOrDispatch: StateOrDispatch[AnyState]): typings.reactRedux.wrapMapToPropsMod.MapToProps[AnyProps] = js.native
-    def apply(stateOrDispatch: StateOrDispatch[AnyState], ownProps: P): typings.reactRedux.wrapMapToPropsMod.MapToProps[AnyProps] = js.native
+    def apply(stateOrDispatch: StateOrDispatch[AnyState]): typings.reactRedux.esConnectWrapMapToPropsMod.MapToProps[AnyProps] = js.native
+    def apply(stateOrDispatch: StateOrDispatch[AnyState], ownProps: P): typings.reactRedux.esConnectWrapMapToPropsMod.MapToProps[AnyProps] = js.native
     
     var dependsOnOwnProps: Boolean = js.native
     
-    def mapToProps(stateOrDispatch: StateOrDispatch[AnyState]): typings.reactRedux.wrapMapToPropsMod.MapToProps[AnyProps] = js.native
-    def mapToProps(stateOrDispatch: StateOrDispatch[AnyState], ownProps: P): typings.reactRedux.wrapMapToPropsMod.MapToProps[AnyProps] = js.native
+    def mapToProps(stateOrDispatch: StateOrDispatch[AnyState]): typings.reactRedux.esConnectWrapMapToPropsMod.MapToProps[AnyProps] = js.native
+    def mapToProps(stateOrDispatch: StateOrDispatch[AnyState], ownProps: P): typings.reactRedux.esConnectWrapMapToPropsMod.MapToProps[AnyProps] = js.native
   }
   
   trait Clear extends StObject {
@@ -132,17 +132,17 @@ object anon {
   @js.native
   trait MapToProps extends StObject {
     
-    def apply(stateOrDispatch: StringDictionary[Any]): typings.reactRedux.wrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
-    def apply(stateOrDispatch: StringDictionary[Any], ownProps: StringDictionary[Any]): typings.reactRedux.wrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
-    def apply(stateOrDispatch: Dispatch[AnyAction]): typings.reactRedux.wrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
-    def apply(stateOrDispatch: Dispatch[AnyAction], ownProps: StringDictionary[Any]): typings.reactRedux.wrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
+    def apply(stateOrDispatch: StringDictionary[Any]): typings.reactRedux.esConnectWrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
+    def apply(stateOrDispatch: StringDictionary[Any], ownProps: StringDictionary[Any]): typings.reactRedux.esConnectWrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
+    def apply(stateOrDispatch: Dispatch[AnyAction]): typings.reactRedux.esConnectWrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
+    def apply(stateOrDispatch: Dispatch[AnyAction], ownProps: StringDictionary[Any]): typings.reactRedux.esConnectWrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
     
     var dependsOnOwnProps: Boolean = js.native
     
-    def mapToProps(stateOrDispatch: StringDictionary[Any]): typings.reactRedux.wrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
-    def mapToProps(stateOrDispatch: StringDictionary[Any], ownProps: StringDictionary[Any]): typings.reactRedux.wrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
-    def mapToProps(stateOrDispatch: Dispatch[AnyAction]): typings.reactRedux.wrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
-    def mapToProps(stateOrDispatch: Dispatch[AnyAction], ownProps: StringDictionary[Any]): typings.reactRedux.wrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
+    def mapToProps(stateOrDispatch: StringDictionary[Any]): typings.reactRedux.esConnectWrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
+    def mapToProps(stateOrDispatch: StringDictionary[Any], ownProps: StringDictionary[Any]): typings.reactRedux.esConnectWrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
+    def mapToProps(stateOrDispatch: Dispatch[AnyAction]): typings.reactRedux.esConnectWrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
+    def mapToProps(stateOrDispatch: Dispatch[AnyAction], ownProps: StringDictionary[Any]): typings.reactRedux.esConnectWrapMapToPropsMod.MapToProps[StringDictionary[Any]] = js.native
   }
   
   trait WrappedComponent[C /* <: ComponentType[Any] */] extends StObject {

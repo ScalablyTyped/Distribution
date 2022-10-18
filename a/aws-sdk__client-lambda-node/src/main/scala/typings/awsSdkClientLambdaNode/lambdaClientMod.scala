@@ -1,10 +1,10 @@
 package typings.awsSdkClientLambdaNode
 
-import typings.awsSdkClientLambdaNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientLambdaNode.lambdaConfigurationMod.LambdaConfiguration
 import typings.awsSdkClientLambdaNode.lambdaConfigurationMod.LambdaResolvedConfiguration
-import typings.awsSdkClientLambdaNode.outputTypesUnionMod.OutputTypesUnion
-import typings.awsSdkTypes.commandMod.Command
+import typings.awsSdkClientLambdaNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientLambdaNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesCommandMod.Command
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

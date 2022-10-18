@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsPrinterTwoToneMod.PrinterTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object printerTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/PrinterTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/PrinterTwoTone", JSImport.Default)
   @js.native
   val default: PrinterTwoToneIconType = js.native
-  
-  @js.native
-  trait PrinterTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_PrinterTwoToneIconType: String = js.native
-  }
   
   type _To = PrinterTwoToneIconType
   

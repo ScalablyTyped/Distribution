@@ -3,9 +3,9 @@ package typings.reactBase16Styling
 import org.scalablytyped.runtime.StringDictionary
 import typings.base16.mod.Base16Theme
 import typings.lodash.mod.CurriedFunction3
-import typings.reactBase16Styling.typesMod.StylingConfig
-import typings.reactBase16Styling.typesMod.StylingFunction
-import typings.reactBase16Styling.typesMod.Theme
+import typings.reactBase16Styling.libTypesTypesMod.StylingConfig
+import typings.reactBase16Styling.libTypesTypesMod.StylingFunction
+import typings.reactBase16Styling.libTypesTypesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

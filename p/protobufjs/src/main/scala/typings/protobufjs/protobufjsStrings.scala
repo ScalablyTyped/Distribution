@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object protobufjsStrings {
   
   @js.native
-  sealed trait Properties extends StObject
-  inline def Properties: Properties = "Properties".asInstanceOf[Properties]
-  
-  @js.native
   sealed trait bool extends StObject
   inline def bool: bool = "bool".asInstanceOf[bool]
   

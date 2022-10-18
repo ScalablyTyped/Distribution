@@ -9,10 +9,10 @@ import typings.reactabularTable.anon.ColumnIndex
 import typings.reactabularTable.anon.Draggable
 import typings.reactabularTable.anon.Formatters
 import typings.reactabularTable.anon.PartialCSSStyleDeclaratio
+import typings.reactabularTable.anon.Property
 import typings.reactabularTable.anon.Row
 import typings.reactabularTable.anon.RowData
 import typings.reactabularTable.anon.RowIndex
-import typings.reactabularTable.anon.RowIndexNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +59,7 @@ object mod {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var onRow: js.UndefOr[js.Function2[/* row */ Any, /* props */ RowIndexNumber, Any]] = js.undefined
+    var onRow: js.UndefOr[js.Function2[/* row */ Any, /* props */ RowIndex, Any]] = js.undefined
     
     var rowKey: String
     
@@ -80,7 +80,7 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setOnRow(value: (/* row */ Any, /* props */ RowIndexNumber) => Any): Self = StObject.set(x, "onRow", js.Any.fromFunction2(value))
+      inline def setOnRow(value: (/* row */ Any, /* props */ RowIndex) => Any): Self = StObject.set(x, "onRow", js.Any.fromFunction2(value))
       
       inline def setOnRowUndefined: Self = StObject.set(x, "onRow", js.undefined)
       
@@ -96,7 +96,7 @@ object mod {
     }
   }
   
-  type CellFormatter = js.Function2[/* value */ Any, /* props */ RowIndex, String | Element]
+  type CellFormatter = js.Function2[/* value */ Any, /* props */ typings.reactabularTable.anon.Column, String | Element]
   
   type CellTransform = js.Function2[/* value */ Any, /* props */ ColumnIndex, Any]
   
@@ -141,11 +141,7 @@ object mod {
   
   type ColumnFormatter = js.Function2[/* label */ String | Element, /* props */ RowData, String | Element]
   
-  type ColumnTransform = js.Function2[
-    /* label */ String | Element | ReactInstance, 
-    /* props */ typings.reactabularTable.anon.Column, 
-    Any
-  ]
+  type ColumnTransform = js.Function2[/* label */ String | Element | ReactInstance, /* props */ Property, Any]
   
   trait HeaderProps extends StObject {
     

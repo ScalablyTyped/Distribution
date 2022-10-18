@@ -20,7 +20,13 @@ trait RequestPausedEvent extends StObject {
     * If the intercepted request had a corresponding Network.requestWillBeSent event fired for it,
     * then this networkId will be the same as the requestId present in the requestWillBeSent event.
     */
-  var networkId: js.UndefOr[RequestId] = js.undefined
+  var networkId: js.UndefOr[typings.devtoolsProtocol.mod.Protocol.Network.RequestId] = js.undefined
+  
+  /**
+    * If the request is due to a redirect response from the server, the id of the request that
+    * has caused the redirect.
+    */
+  var redirectedRequestId: js.UndefOr[RequestId] = js.undefined
   
   /**
     * The details of the request.
@@ -68,9 +74,13 @@ object RequestPausedEvent {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    inline def setNetworkId(value: RequestId): Self = StObject.set(x, "networkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: typings.devtoolsProtocol.mod.Protocol.Network.RequestId): Self = StObject.set(x, "networkId", value.asInstanceOf[js.Any])
     
     inline def setNetworkIdUndefined: Self = StObject.set(x, "networkId", js.undefined)
+    
+    inline def setRedirectedRequestId(value: RequestId): Self = StObject.set(x, "redirectedRequestId", value.asInstanceOf[js.Any])
+    
+    inline def setRedirectedRequestIdUndefined: Self = StObject.set(x, "redirectedRequestId", js.undefined)
     
     inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "DirectionalLight")
 @js.native
 open class DirectionalLight protected ()
-  extends typings.babylonjs.legacyMod.DirectionalLight {
+  extends typings.babylonjs.legacyLegacyMod.DirectionalLight {
   /**
     * Creates a DirectionalLight object in the scene, oriented towards the passed direction (Vector3).
     * The directional light is emitted from everywhere in the given direction.
@@ -19,7 +19,7 @@ open class DirectionalLight protected ()
     */
   def this(
     name: String,
-    direction: typings.babylonjs.mathVectorMod.Vector3,
+    direction: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
 }

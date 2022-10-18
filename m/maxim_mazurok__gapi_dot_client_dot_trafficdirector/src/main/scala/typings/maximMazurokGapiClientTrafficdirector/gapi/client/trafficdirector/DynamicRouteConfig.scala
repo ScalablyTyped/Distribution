@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait DynamicRouteConfig extends StObject {
   
   /** The route config. */
   var routeConfig: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicRouteConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** This is the per-resource version information. This version is currently taken from the :ref:`version_info ` field at the time that the route configuration was loaded. */
@@ -34,9 +31,7 @@ object DynamicRouteConfig {
     inline def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
     
     inline def setRouteConfig(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicRouteConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "routeConfig", value.asInstanceOf[js.Any])
     
     inline def setRouteConfigUndefined: Self = StObject.set(x, "routeConfig", js.undefined)

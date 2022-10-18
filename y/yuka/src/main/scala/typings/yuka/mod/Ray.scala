@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [direction=Vector3(0,0,0)] - The direction of the ray.
   */
 open class Ray ()
-  extends typings.yuka.yukaMod.Ray {
-  def this(origin: typings.yuka.vector3Mod.Vector3) = this()
-  def this(origin: Unit, direction: typings.yuka.vector3Mod.Vector3) = this()
-  def this(origin: typings.yuka.vector3Mod.Vector3, direction: typings.yuka.vector3Mod.Vector3) = this()
+  extends typings.yuka.srcYukaMod.Ray {
+  def this(origin: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(origin: Unit, direction: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(origin: typings.yuka.srcMathVector3Mod.Vector3, direction: typings.yuka.srcMathVector3Mod.Vector3) = this()
 }

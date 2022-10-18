@@ -1,6 +1,6 @@
 package typings.luminoWidgets.mod
 
-import typings.luminoWidgets.stackedlayoutMod.StackedLayout.IOptions
+import typings.luminoWidgets.typesStackedlayoutMod.StackedLayout.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@lumino/widgets", "StackedLayout")
 @js.native
 open class StackedLayout ()
-  extends typings.luminoWidgets.stackedlayoutMod.StackedLayout {
+  extends typings.luminoWidgets.typesStackedlayoutMod.StackedLayout {
   def this(options: IOptions) = this()
 }

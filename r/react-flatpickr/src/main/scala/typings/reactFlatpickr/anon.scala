@@ -1,7 +1,7 @@
 package typings.reactFlatpickr
 
-import typings.flatpickr.globalsMod.global.Date
-import typings.flatpickr.instanceMod.Instance
+import typings.flatpickr.distTypesGlobalsMod.global.Date
+import typings.flatpickr.distTypesInstanceMod.Instance
 import typings.flatpickr.mod.flatpickr.Options.Hook
 import typings.react.mod.ReactNode
 import typings.reactFlatpickr.reactFlatpickrStrings.a

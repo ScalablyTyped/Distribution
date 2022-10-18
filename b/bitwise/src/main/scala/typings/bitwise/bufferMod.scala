@@ -1,6 +1,6 @@
 package typings.bitwise
 
-import typings.bitwise.bitwiseTypesMod.Bits
+import typings.bitwise.typesMod.Bits
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

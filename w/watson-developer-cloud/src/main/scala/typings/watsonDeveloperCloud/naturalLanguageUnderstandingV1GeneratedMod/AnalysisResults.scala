@@ -69,13 +69,13 @@ object AnalysisResults {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: CategoriesResult*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: CategoriesResult*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setConcepts(value: js.Array[ConceptsResult]): Self = StObject.set(x, "concepts", value.asInstanceOf[js.Any])
     
     inline def setConceptsUndefined: Self = StObject.set(x, "concepts", js.undefined)
     
-    inline def setConceptsVarargs(value: ConceptsResult*): Self = StObject.set(x, "concepts", js.Array(value :_*))
+    inline def setConceptsVarargs(value: ConceptsResult*): Self = StObject.set(x, "concepts", js.Array(value*))
     
     inline def setEmotion(value: EmotionResult): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     
@@ -85,13 +85,13 @@ object AnalysisResults {
     
     inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    inline def setEntitiesVarargs(value: EntitiesResult*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: EntitiesResult*): Self = StObject.set(x, "entities", js.Array(value*))
     
     inline def setKeywords(value: js.Array[KeywordsResult]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    inline def setKeywordsVarargs(value: KeywordsResult*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: KeywordsResult*): Self = StObject.set(x, "keywords", js.Array(value*))
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object AnalysisResults {
     
     inline def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
     
-    inline def setRelationsVarargs(value: RelationsResult*): Self = StObject.set(x, "relations", js.Array(value :_*))
+    inline def setRelationsVarargs(value: RelationsResult*): Self = StObject.set(x, "relations", js.Array(value*))
     
     inline def setRetrieved_url(value: String): Self = StObject.set(x, "retrieved_url", value.asInstanceOf[js.Any])
     
@@ -115,7 +115,7 @@ object AnalysisResults {
     
     inline def setSemantic_rolesUndefined: Self = StObject.set(x, "semantic_roles", js.undefined)
     
-    inline def setSemantic_rolesVarargs(value: SemanticRolesResult*): Self = StObject.set(x, "semantic_roles", js.Array(value :_*))
+    inline def setSemantic_rolesVarargs(value: SemanticRolesResult*): Self = StObject.set(x, "semantic_roles", js.Array(value*))
     
     inline def setSentiment(value: SentimentResult): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     

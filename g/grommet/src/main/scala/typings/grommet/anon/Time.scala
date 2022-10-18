@@ -1,9 +1,9 @@
 package typings.grommet.anon
 
-import typings.grommet.boxMod.BoxProps
+import typings.grommet.componentsBoxMod.BoxProps
+import typings.grommet.componentsLayerMod.LayerProps
 import typings.grommet.grommetStrings.column
 import typings.grommet.grommetStrings.row
-import typings.grommet.layerMod.LayerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

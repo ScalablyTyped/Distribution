@@ -1,7 +1,7 @@
 package typings.electronNotarize
 
-import typings.electronNotarize.typesMod.LegacyNotarizeCredentials
-import typings.electronNotarize.typesMod.NotarizeOptions
+import typings.electronNotarize.libTypesMod.LegacyNotarizeCredentials
+import typings.electronNotarize.libTypesMod.NotarizeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

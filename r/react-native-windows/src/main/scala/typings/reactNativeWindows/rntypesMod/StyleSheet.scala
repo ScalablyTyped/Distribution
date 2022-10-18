@@ -1,6 +1,5 @@
 package typings.reactNativeWindows.rntypesMod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.reactNativeWindows.reactNativeWindowsInts.`0`
 import typings.reactNativeWindows.reactNativeWindowsStrings.absolute
 import org.scalablytyped.runtime.StObject
@@ -29,8 +28,8 @@ object StyleSheet {
   inline def create[T /* <: NamedStyles[Any | T] */](styles: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(styles.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def create[T /* <: NamedStyles[Any | T] */](styles: NamedStyles[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(styles.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def flatten[T](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[T]
-  inline def flatten[T](style: StyleProp[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(style.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def flatten[T](): /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any]
+  inline def flatten[T](style: StyleProp[T]): /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(style.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any]
   
   @JSImport("react-native-windows/rntypes", "StyleSheet.hairlineWidth")
   @js.native
@@ -71,7 +70,13 @@ object StyleSheet {
     }
   }
   
-  type NamedStyles[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: react-native-windows.react-native-windows/rntypes.ViewStyle | react-native-windows.react-native-windows/rntypes.TextStyle | react-native-windows.react-native-windows/rntypes.ImageStyle}
-    */ typings.reactNativeWindows.reactNativeWindowsStrings.NamedStyles & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: react-native-windows.react-native-windows/rntypes.ViewStyle | react-native-windows.react-native-windows/rntypes.TextStyle | react-native-windows.react-native-windows/rntypes.ImageStyle}
+    }}}
+    */
+  @js.native
+  trait NamedStyles[T] extends StObject
 }

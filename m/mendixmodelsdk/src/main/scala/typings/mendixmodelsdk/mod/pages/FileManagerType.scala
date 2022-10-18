@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.FileManagerType")
 @js.native
 open class FileManagerType protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.FileManagerType {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.FileManagerType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object FileManagerType {
@@ -20,18 +20,18 @@ object FileManagerType {
   /* static member */
   @JSImport("mendixmodelsdk", "pages.FileManagerType.Both")
   @js.native
-  def Both: typings.mendixmodelsdk.pagesMod.pages.FileManagerType = js.native
-  inline def Both_=(x: typings.mendixmodelsdk.pagesMod.pages.FileManagerType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Both")(x.asInstanceOf[js.Any])
+  def Both: typings.mendixmodelsdk.srcGenPagesMod.pages.FileManagerType = js.native
+  inline def Both_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.FileManagerType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Both")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.FileManagerType.Download")
   @js.native
-  def Download: typings.mendixmodelsdk.pagesMod.pages.FileManagerType = js.native
-  inline def Download_=(x: typings.mendixmodelsdk.pagesMod.pages.FileManagerType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Download")(x.asInstanceOf[js.Any])
+  def Download: typings.mendixmodelsdk.srcGenPagesMod.pages.FileManagerType = js.native
+  inline def Download_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.FileManagerType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Download")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.FileManagerType.Upload")
   @js.native
-  def Upload: typings.mendixmodelsdk.pagesMod.pages.FileManagerType = js.native
-  inline def Upload_=(x: typings.mendixmodelsdk.pagesMod.pages.FileManagerType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Upload")(x.asInstanceOf[js.Any])
+  def Upload: typings.mendixmodelsdk.srcGenPagesMod.pages.FileManagerType = js.native
+  inline def Upload_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.FileManagerType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Upload")(x.asInstanceOf[js.Any])
 }

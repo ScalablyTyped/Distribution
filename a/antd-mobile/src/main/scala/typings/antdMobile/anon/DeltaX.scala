@@ -1,6 +1,6 @@
 package typings.antdMobile.anon
 
-import typings.antdMobile.useTouchMod.Direction
+import typings.antdMobile.esUtilsUseTouchMod.Direction
 import typings.react.mod.MutableRefObject
 import typings.std.Event
 import typings.std.EventListener

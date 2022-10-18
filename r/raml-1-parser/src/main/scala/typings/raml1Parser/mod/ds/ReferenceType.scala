@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("raml-1-parser", "ds.ReferenceType")
 @js.native
 open class ReferenceType protected ()
-  extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.ReferenceType {
+  extends typings.ramlDefinitionSystem.mod.ReferenceType {
   def this(
     name: String,
     path: String,
     referenceTo: String,
-    _universe: typings.ramlDefinitionSystem.ramlDefinitionSystemMod.Universe
+    _universe: typings.ramlDefinitionSystem.mod.Universe
   ) = this()
 }
 /* static members */

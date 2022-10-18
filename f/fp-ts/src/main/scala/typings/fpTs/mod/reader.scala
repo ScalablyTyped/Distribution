@@ -1,20 +1,19 @@
 package typings.fpTs.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.applicativeMod.Applicative2
-import typings.fpTs.applyMod.Apply2
-import typings.fpTs.categoryMod.Category2
-import typings.fpTs.chainMod.Chain2
-import typings.fpTs.choiceMod.Choice2
-import typings.fpTs.functorMod.Functor2
-import typings.fpTs.monadMod.Monad2
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.pointedMod.Pointed2
-import typings.fpTs.profunctorMod.Profunctor2
-import typings.fpTs.readerMod.Reader_
-import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.strongMod.Strong2
+import typings.fpTs.libApplicativeMod.Applicative2
+import typings.fpTs.libApplyMod.Apply2
+import typings.fpTs.libCategoryMod.Category2
+import typings.fpTs.libChainMod.Chain2
+import typings.fpTs.libChoiceMod.Choice2
+import typings.fpTs.libFunctorMod.Functor2
+import typings.fpTs.libMonadMod.Monad2
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libPointedMod.Pointed2
+import typings.fpTs.libProfunctorMod.Profunctor2
+import typings.fpTs.libReaderMod.Reader_
+import typings.fpTs.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libStrongMod.Strong2
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,23 +31,23 @@ object reader {
   
   @JSImport("fp-ts", "reader.Applicative")
   @js.native
-  val Applicative: Applicative2[typings.fpTs.readerMod.URI] = js.native
+  val Applicative: Applicative2[typings.fpTs.libReaderMod.URI] = js.native
   
   @JSImport("fp-ts", "reader.Apply")
   @js.native
-  val Apply: Apply2[typings.fpTs.readerMod.URI] = js.native
+  val Apply: Apply2[typings.fpTs.libReaderMod.URI] = js.native
   
   @JSImport("fp-ts", "reader.Category")
   @js.native
-  val Category: Category2[typings.fpTs.readerMod.URI] = js.native
+  val Category: Category2[typings.fpTs.libReaderMod.URI] = js.native
   
   @JSImport("fp-ts", "reader.Chain")
   @js.native
-  val Chain_ : Chain2[typings.fpTs.readerMod.URI] = js.native
+  val Chain_ : Chain2[typings.fpTs.libReaderMod.URI] = js.native
   
   @JSImport("fp-ts", "reader.Choice")
   @js.native
-  val Choice: Choice2[typings.fpTs.readerMod.URI] = js.native
+  val Choice: Choice2[typings.fpTs.libReaderMod.URI] = js.native
   
   @JSImport("fp-ts", "reader.Do")
   @js.native
@@ -56,23 +55,23 @@ object reader {
   
   @JSImport("fp-ts", "reader.Functor")
   @js.native
-  val Functor: Functor2[typings.fpTs.readerMod.URI] = js.native
+  val Functor: Functor2[typings.fpTs.libReaderMod.URI] = js.native
   
   @JSImport("fp-ts", "reader.Monad")
   @js.native
-  val Monad: Monad2[typings.fpTs.readerMod.URI] = js.native
+  val Monad: Monad2[typings.fpTs.libReaderMod.URI] = js.native
   
   @JSImport("fp-ts", "reader.Pointed")
   @js.native
-  val Pointed: Pointed2[typings.fpTs.readerMod.URI] = js.native
+  val Pointed: Pointed2[typings.fpTs.libReaderMod.URI] = js.native
   
   @JSImport("fp-ts", "reader.Profunctor")
   @js.native
-  val Profunctor: Profunctor2[typings.fpTs.readerMod.URI] = js.native
+  val Profunctor: Profunctor2[typings.fpTs.libReaderMod.URI] = js.native
   
   @JSImport("fp-ts", "reader.Strong")
   @js.native
-  val Strong: Strong2[typings.fpTs.readerMod.URI] = js.native
+  val Strong: Strong2[typings.fpTs.libReaderMod.URI] = js.native
   
   @JSImport("fp-ts", "reader.URI")
   @js.native
@@ -88,17 +87,13 @@ object reader {
     /* fa */ Reader_[E, A], 
     Reader_[
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apS")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ Reader_[E, A], 
     Reader_[
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -106,17 +101,13 @@ object reader {
     /* fa */ Reader_[Any, A], 
     Reader_[
       Any & R2, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apSW & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apSW")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ Reader_[Any, A], 
     Reader_[
       Any & R2, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apSW & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -138,17 +129,13 @@ object reader {
     /* ma */ Reader_[E, A], 
     Reader_[
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* ma */ Reader_[E, A], 
     Reader_[
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -156,17 +143,13 @@ object reader {
     /* fa */ Reader_[Any, Any], 
     Reader_[
       Any, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindTo")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* fa */ Reader_[Any, Any], 
     Reader_[
       Any, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ]]
   
@@ -174,23 +157,19 @@ object reader {
     /* fa */ Reader_[Any, A], 
     Reader_[
       Any & R2, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bindW & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindW")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ Reader_[Any, A], 
     Reader_[
       Any & R2, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bindW & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
   inline def chain[A, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* ma */ Reader_[R, A], Reader_[R, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Reader_[R, A], Reader_[R, B]]]
   
-  inline def chainFirst[A, E, B](f: js.Function1[/* a */ A, Reader_[E, B]]): js.Function1[/* first */ Reader_[E, A], Reader_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ Reader_[E, A], Reader_[E, A]]]
+  inline def chainFirst[A, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* first */ Reader_[R, A], Reader_[R, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ Reader_[R, A], Reader_[R, A]]]
   
   inline def chainFirstW[R2, A, B](f: js.Function1[/* a */ A, Reader_[R2, B]]): js.Function1[/* ma */ Reader_[Any, A], Reader_[Any & R2, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Reader_[Any, A], Reader_[Any & R2, A]]]
   
@@ -228,22 +207,31 @@ object reader {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, Either<A, C>, Either<B, C>> */ Any
   ] = js.native
   
+  inline def let[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, B]): js.Function1[
+    /* fa */ Reader_[Any, A], 
+    Reader_[
+      Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("let")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* fa */ Reader_[Any, A], 
+    Reader_[
+      Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ]]
+  
   inline def local[R2, R1](f: js.Function1[/* r2 */ R2, R1]): js.Function1[/* ma */ Reader_[R1, Any], Reader_[R2, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("local")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Reader_[R1, Any], Reader_[R2, Any]]]
   
   inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Reader_[Any, A], Reader_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Reader_[Any, A], Reader_[Any, B]]]
   
-  @JSImport("fp-ts", "reader.of")
-  @js.native
-  val of: js.Function1[
-    /* a */ Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
-  ] = js.native
+  inline def of[R, A](a: A): Reader_[R, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any]).asInstanceOf[Reader_[R, A]]
   
   inline def promap[E, A, D, B](f: js.Function1[/* d */ D, E], g: js.Function1[/* a */ A, B]): js.Function1[/* fea */ Reader_[E, A], Reader_[D, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promap")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fea */ Reader_[E, A], Reader_[D, B]]]
   
   @JSImport("fp-ts", "reader.reader")
   @js.native
-  val reader: Monad2[typings.fpTs.readerMod.URI] & Profunctor2[typings.fpTs.readerMod.URI] & Category2[typings.fpTs.readerMod.URI] & Strong2[typings.fpTs.readerMod.URI] & Choice2[typings.fpTs.readerMod.URI] = js.native
+  val reader: Monad2[typings.fpTs.libReaderMod.URI] & Profunctor2[typings.fpTs.libReaderMod.URI] & Category2[typings.fpTs.libReaderMod.URI] & Strong2[typings.fpTs.libReaderMod.URI] & Choice2[typings.fpTs.libReaderMod.URI] = js.native
   
   @JSImport("fp-ts", "reader.right")
   @js.native
@@ -269,9 +257,10 @@ object reader {
   
   inline def traverseReadonlyNonEmptyArrayWithIndex[A, R, B](f: js.Function2[/* index */ Double, /* a */ A, Reader_[R, B]]): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], Reader_[R, ReadonlyNonEmptyArray_[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseReadonlyNonEmptyArrayWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], Reader_[R, ReadonlyNonEmptyArray_[B]]]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native
-    trait URItoKind[A] extends StObject
+    trait URItoKind2[E, A] extends StObject
   }
 }

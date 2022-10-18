@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ref: https://immersive-web.github.io/webxr/#xrviewerpose-interface
   */
-@JSGlobal("XRViewerPose")
+/* note: abstract class */ @JSGlobal("XRViewerPose")
 @js.native
-abstract class XRViewerPose ()
+open class XRViewerPose ()
   extends StObject
      with typings.webxr.XRViewerPose {
   

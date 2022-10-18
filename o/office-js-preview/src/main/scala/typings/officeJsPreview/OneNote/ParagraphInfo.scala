@@ -58,7 +58,7 @@ trait ParagraphInfo extends StObject {
     * @remarks
     * [Api set: OneNoteApi 1.1]
     */
-  var numberType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+  var numberType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.officeJsPreview.OneNote.NumberType, typings.officeJsPreview.officeJsPreviewStrings.None, typings.officeJsPreview.officeJsPreviewStrings.Arabic */ Any
 }
 object ParagraphInfo {
   
@@ -67,7 +67,7 @@ object ParagraphInfo {
     indentationLevel: Double,
     index: Double,
     listType: ListType | None | Number | Bullet,
-    numberType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+    numberType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.officeJsPreview.OneNote.NumberType, typings.officeJsPreview.officeJsPreviewStrings.None, typings.officeJsPreview.officeJsPreviewStrings.Arabic */ Any
   ): ParagraphInfo = {
     val __obj = js.Dynamic.literal(bulletType = bulletType.asInstanceOf[js.Any], indentationLevel = indentationLevel.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], listType = listType.asInstanceOf[js.Any], numberType = numberType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphInfo]
@@ -83,6 +83,8 @@ object ParagraphInfo {
     
     inline def setListType(value: ListType | None | Number | Bullet): Self = StObject.set(x, "listType", value.asInstanceOf[js.Any])
     
-    inline def setNumberType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any): Self = StObject.set(x, "numberType", value.asInstanceOf[js.Any])
+    inline def setNumberType(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.officeJsPreview.OneNote.NumberType, typings.officeJsPreview.officeJsPreviewStrings.None, typings.officeJsPreview.officeJsPreviewStrings.Arabic */ Any
+    ): Self = StObject.set(x, "numberType", value.asInstanceOf[js.Any])
   }
 }

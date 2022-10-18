@@ -1,7 +1,7 @@
 package typings.redisClient.anon
 
 import typings.node.bufferMod.global.Buffer
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import typings.redisClient.redisClientStrings.ALL
 import typings.redisClient.redisClientStrings.OK
 import typings.redisClient.redisClientStrings.WRITE

@@ -35,8 +35,7 @@ object mod {
   */
   type Coordinate = _Coordinate | LatLonTuple
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.haversine.mod._ParamType because Already inherited */ trait CoordinateLatLng
+  trait CoordinateLatLng
     extends StObject
        with _Coordinate {
     
@@ -59,8 +58,7 @@ object mod {
     }
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.haversine.mod._ParamType because Already inherited */ trait CoordinateLonLat
+  trait CoordinateLonLat
     extends StObject
        with _Coordinate {
     
@@ -83,8 +81,7 @@ object mod {
     }
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.haversine.mod._ParamType because Already inherited */ trait CoordinateLongitudeLatitude
+  trait CoordinateLongitudeLatitude
     extends StObject
        with _Coordinate {
     
@@ -107,8 +104,7 @@ object mod {
     }
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.haversine.mod._ParamType because Already inherited */ trait GeoJSON
+  trait GeoJSON
     extends StObject
        with _Coordinate {
     
@@ -172,21 +168,27 @@ object mod {
   }
   
   // The input & output types of haversine() both depend on the Options object.
-  /* Rewritten from type alias, can be one of: 
-    - typings.haversine.mod.Coordinate
-    - typings.haversine.mod.GeoJSON
-    - typings.haversine.mod.CoordinateLatLng
-    - typings.haversine.mod.CoordinateLonLat
-    - js.Tuple2[scala.Double, scala.Double]
-    - typings.haversine.mod.CoordinateLongitudeLatitude
-  */
-  type ParamType[T /* <: js.UndefOr[Options] */] = _ParamType[T] | (js.Tuple2[Double, Double]) | LatLonTuple
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends undefined ? haversine.haversine.CoordinateLongitudeLatitude : T extends {  format :'[lat,lon]' | '[lon,lat]'} ? [number, number] : T extends {  format :'{lat,lon}'} ? haversine.haversine.CoordinateLonLat : T extends {  format :'{lat,lng}'} ? haversine.haversine.CoordinateLatLng : T extends {  format :'geojson'} ? haversine.haversine.GeoJSON : haversine.haversine.Coordinate
+    }}}
+    */
+  @js.native
+  trait ParamType[T /* <: js.UndefOr[Options] */] extends StObject
   
-  type Return[T /* <: js.UndefOr[Options] */] = Double | Boolean
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends {  threshold :number} ? boolean : number
+    }}}
+    */
+  @js.native
+  trait Return[T /* <: js.UndefOr[Options] */] extends StObject
   
-  trait _Coordinate
-    extends StObject
-       with _ParamType[Any]
+  trait _Coordinate extends StObject
   object _Coordinate {
     
     inline def CoordinateLatLng(lat: Double, lng: Double): typings.haversine.mod.CoordinateLatLng = {
@@ -209,6 +211,4 @@ object mod {
       __obj.asInstanceOf[typings.haversine.mod.GeoJSON]
     }
   }
-  
-  trait _ParamType[T /* <: js.UndefOr[Options] */] extends StObject
 }

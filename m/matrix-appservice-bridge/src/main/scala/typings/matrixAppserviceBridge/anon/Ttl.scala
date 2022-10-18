@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Ttl extends StObject {
   
-  var size: Double
+  var size: js.UndefOr[Double] = js.undefined
   
-  var ttl: Double
+  var ttl: js.UndefOr[Double] = js.undefined
 }
 object Ttl {
   
-  inline def apply(size: Double, ttl: Double): Ttl = {
-    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
+  inline def apply(): Ttl = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Ttl]
   }
   
@@ -21,6 +21,10 @@ object Ttl {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
     inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

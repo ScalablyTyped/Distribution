@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ldapjs", "LDAPMessage")
+/* note: abstract class */ @JSImport("ldapjs", "LDAPMessage")
 @js.native
-abstract class LDAPMessage () extends StObject {
+open class LDAPMessage () extends StObject {
   
   var controls: js.Array[Control] = js.native
   

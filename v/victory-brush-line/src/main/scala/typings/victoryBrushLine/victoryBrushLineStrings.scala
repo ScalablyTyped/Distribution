@@ -1,6 +1,6 @@
 package typings.victoryBrushLine
 
-import typings.victoryBrushLine.victoryBrushLineMod.VictoryBrushLineTargetType
+import typings.victoryBrushLine.libVictoryBrushLineMod.VictoryBrushLineTargetType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,7 +2,7 @@ package typings.babylonjs.xRIndexMod
 
 import typings.babylonjs.XRInputSource
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.webXRInputSourceMod.IWebXRControllerOptions
+import typings.babylonjs.xRWebXRInputSourceMod.IWebXRControllerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXRInputSource")
 @js.native
 open class WebXRInputSource protected ()
-  extends typings.babylonjs.webXRInputSourceMod.WebXRInputSource {
+  extends typings.babylonjs.xRWebXRInputSourceMod.WebXRInputSource {
   /**
     * Creates the input source object
     * @see https://doc.babylonjs.com/how_to/webxr_controllers_support

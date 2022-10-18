@@ -12,7 +12,7 @@ import typings.baseui.layoutGridTypesMod.GridProps
 import typings.baseui.layoutGridTypesMod.StyledCellProps
 import typings.baseui.layoutGridTypesMod.StyledGridProps
 import typings.react.mod.global.JSX.Element
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

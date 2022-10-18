@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "TableElement")
+/* note: abstract class */ @JSImport("k6/html", "TableElement")
 @js.native
-abstract class TableElement () extends Element {
+open class TableElement () extends Element {
   
   /** First child <caption> element. */
   def caption(): js.UndefOr[Element] = js.native

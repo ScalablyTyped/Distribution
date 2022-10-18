@@ -1,8 +1,8 @@
 package typings.linguiCore
 
-import typings.linguiCore.i18nMod.I18n
-import typings.linguiCore.i18nMod.Locales
-import typings.linguiCore.i18nMod.setupI18nProps
+import typings.linguiCore.cjsI18nMod.I18n
+import typings.linguiCore.cjsI18nMod.Locales
+import typings.linguiCore.cjsI18nMod.setupI18nProps
 import typings.std.Intl.DateTimeFormatOptions
 import typings.std.Intl.NumberFormatOptions
 import org.scalablytyped.runtime.StObject

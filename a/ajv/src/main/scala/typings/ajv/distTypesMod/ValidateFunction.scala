@@ -1,6 +1,6 @@
 package typings.ajv.distTypesMod
 
-import typings.ajv.compileMod.SchemaEnv
+import typings.ajv.distCompileMod.SchemaEnv
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

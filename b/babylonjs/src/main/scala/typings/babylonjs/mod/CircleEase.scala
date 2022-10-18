@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "CircleEase")
 @js.native
 open class CircleEase ()
-  extends typings.babylonjs.legacyMod.CircleEase
+  extends typings.babylonjs.legacyLegacyMod.CircleEase

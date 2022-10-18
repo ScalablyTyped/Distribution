@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "AnimationController")
 @js.native
 open class AnimationController ()
-  extends typings.blackEngine.animationControllerMod.AnimationController
+  extends typings.blackEngine.animationAnimationControllerMod.AnimationController

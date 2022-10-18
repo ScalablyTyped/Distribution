@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.cloudcontrolMod.RequestToken
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsCloudcontrolMod.RequestToken
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait GetResourceRequestStatusI extends StObject {
   /**
     * A unique token used to track the progress of the resource operation request. Request tokens are included in the ProgressEvent type returned by a resource operation request.
     */
-  var RequestToken: typings.awsSdk.cloudcontrolMod.RequestToken
+  var RequestToken: typings.awsSdk.clientsCloudcontrolMod.RequestToken
 }
 object GetResourceRequestStatusI {
   

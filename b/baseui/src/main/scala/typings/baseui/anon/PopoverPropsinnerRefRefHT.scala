@@ -98,7 +98,7 @@ trait PopoverPropsinnerRefRefHT extends StObject {
   var overrides: js.UndefOr[PopoverOverrides] = js.undefined
   
   /** How to position the popover relative to the target. */
-  var placement: TetherPlacement
+  var placement: js.UndefOr[TetherPlacement] = js.undefined
   
   /** Margin of the popover */
   var popoverMargin: js.UndefOr[Double] = js.undefined
@@ -122,12 +122,12 @@ trait PopoverPropsinnerRefRefHT extends StObject {
   var showArrow: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to toggle the popover when trigger is clicked or hovered. */
-  var triggerType: TriggerType
+  var triggerType: js.UndefOr[TriggerType] = js.undefined
 }
 object PopoverPropsinnerRefRefHT {
   
-  inline def apply(isOpen: Boolean, placement: TetherPlacement, triggerType: TriggerType): PopoverPropsinnerRefRefHT = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
+  inline def apply(isOpen: Boolean): PopoverPropsinnerRefRefHT = {
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverPropsinnerRefRefHT]
   }
   
@@ -231,6 +231,8 @@ object PopoverPropsinnerRefRefHT {
     
     inline def setPlacement(value: TetherPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    
     inline def setPopoverMargin(value: Double): Self = StObject.set(x, "popoverMargin", value.asInstanceOf[js.Any])
     
     inline def setPopoverMarginUndefined: Self = StObject.set(x, "popoverMargin", js.undefined)
@@ -254,5 +256,7 @@ object PopoverPropsinnerRefRefHT {
     inline def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
     
     inline def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
   }
 }

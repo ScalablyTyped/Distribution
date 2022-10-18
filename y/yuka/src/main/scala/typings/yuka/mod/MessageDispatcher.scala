@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new message dispatcher.
   */
 open class MessageDispatcher ()
-  extends typings.yuka.yukaMod.MessageDispatcher
+  extends typings.yuka.srcYukaMod.MessageDispatcher

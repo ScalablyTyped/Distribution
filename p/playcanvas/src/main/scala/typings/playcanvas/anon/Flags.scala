@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Flags extends StObject {
   
-  var color: js.UndefOr[js.Array[Double]] = js.undefined
+  var color: js.Array[Double]
   
-  var depth: js.UndefOr[Double] = js.undefined
+  var depth: Double
   
-  var flags: js.UndefOr[Double] = js.undefined
+  var flags: Double
   
-  var stencil: js.UndefOr[Double] = js.undefined
+  var stencil: Double
 }
 object Flags {
   
-  inline def apply(): Flags = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(color: js.Array[Double], depth: Double, flags: Double, stencil: Double): Flags = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], stencil = stencil.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flags]
   }
   
@@ -25,20 +25,12 @@ object Flags {
     
     inline def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-    
     inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
-    
     inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
-    
     inline def setStencil(value: Double): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
-    
-    inline def setStencilUndefined: Self = StObject.set(x, "stencil", js.undefined)
   }
 }

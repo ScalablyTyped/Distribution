@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait CheckDataAccessResponse extends StObject {
   
   /** The resource names of all evaluated Consents mapped to their evaluation. */
   var consentDetails: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.healthcare.gapi.client.healthcare.ConsentEvaluation}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.CheckDataAccessResponse & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.healthcare.gapi.client.healthcare.ConsentEvaluation} */ js.Any
   ] = js.undefined
   
   /** Whether the requested resource is consented for the given use. */
@@ -27,9 +24,7 @@ object CheckDataAccessResponse {
   extension [Self <: CheckDataAccessResponse](x: Self) {
     
     inline def setConsentDetails(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.healthcare.gapi.client.healthcare.ConsentEvaluation}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.CheckDataAccessResponse & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.healthcare.gapi.client.healthcare.ConsentEvaluation} */ js.Any
     ): Self = StObject.set(x, "consentDetails", value.asInstanceOf[js.Any])
     
     inline def setConsentDetailsUndefined: Self = StObject.set(x, "consentDetails", js.undefined)

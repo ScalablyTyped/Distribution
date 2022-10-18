@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "UnknownCollectionException")
 @js.native
 open class UnknownCollectionException protected ()
-  extends typings.angularDevkitSchematics.engineMod.UnknownCollectionException {
+  extends typings.angularDevkitSchematics.srcEngineMod.UnknownCollectionException {
   def this(name: String) = this()
 }

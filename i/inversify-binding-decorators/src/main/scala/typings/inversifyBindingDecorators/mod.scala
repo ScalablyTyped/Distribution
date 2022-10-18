@@ -1,9 +1,9 @@
 package typings.inversifyBindingDecorators
 
-import typings.inversify.interfacesMod.interfaces.Container
-import typings.inversify.interfacesMod.interfaces.ContainerModule
-import typings.inversify.interfacesMod.interfaces.ServiceIdentifier
-import typings.inversifyBindingDecorators.interfacesMod.interfaces.ProvideInWhenOnSyntax
+import typings.inversify.libInterfacesInterfacesMod.interfaces.Container
+import typings.inversify.libInterfacesInterfacesMod.interfaces.ContainerModule
+import typings.inversify.libInterfacesInterfacesMod.interfaces.ServiceIdentifier
+import typings.inversifyBindingDecorators.dtsInterfacesInterfacesMod.interfaces.ProvideInWhenOnSyntax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

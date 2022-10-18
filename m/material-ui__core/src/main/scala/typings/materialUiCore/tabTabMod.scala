@@ -1,7 +1,7 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.anon.ClassKeyTabClassKey
+import typings.materialUiCore.anon.ClassKeyTabClassKeyDefaultComponentD
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import typings.materialUiCore.materialUiCoreStrings.div
@@ -66,7 +66,7 @@ object tabTabMod extends Shortcut {
   
   type TabProps[D /* <: ElementType[Any] */, P] = OverrideProps[TabTypeMap[P, D], D]
   
-  type TabTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[ClassKeyTabClassKey[P, D]]
+  type TabTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[ClassKeyTabClassKeyDefaultComponentD[P, D]]
   
   type _To = ExtendButtonBase[TabTypeMap[js.Object, div]]
   

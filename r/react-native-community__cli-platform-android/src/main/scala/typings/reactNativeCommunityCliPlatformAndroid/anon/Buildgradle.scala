@@ -9,11 +9,11 @@ trait Buildgradle extends StObject {
   @JSName("build.gradle")
   var buildDotgradle: Any
   
-  var src: AndroidManifestxml
+  var src: AndroidManifestxmlMain
 }
 object Buildgradle {
   
-  inline def apply(buildDotgradle: Any, src: AndroidManifestxml): Buildgradle = {
+  inline def apply(buildDotgradle: Any, src: AndroidManifestxmlMain): Buildgradle = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     __obj.updateDynamic("build.gradle")(buildDotgradle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buildgradle]
@@ -23,6 +23,6 @@ object Buildgradle {
     
     inline def setBuildDotgradle(value: Any): Self = StObject.set(x, "build.gradle", value.asInstanceOf[js.Any])
     
-    inline def setSrc(value: AndroidManifestxml): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: AndroidManifestxmlMain): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

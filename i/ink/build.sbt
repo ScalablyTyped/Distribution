@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "ink"
-version := "3.2.0-17c0a2"
+version := "3.2.0-d6e536"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-0912f8",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-975e63",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-fc8273",
-  "org.scalablytyped" %%% "react-reconciler" % "0.28-dt-20220624Z-f8a5d5",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-3fbb8c",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
-  "org.scalablytyped" %%% "type-fest" % "3.0.0-e72bbe",
+  "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
+  "org.scalablytyped" %%% "react-reconciler" % "0.28-dt-20220624Z-a2371c",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "type-fest" % "3.1.0-f509c8",
   "org.scalablytyped" %%% "yoga-layout" % "1.9-dt-20211202Z-a7875c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Gamepads/index", "ViveController")
 @js.native
 open class ViveController protected ()
-  extends typings.babylonjs.controllersIndexMod.ViveController {
+  extends typings.babylonjs.gamepadsControllersIndexMod.ViveController {
   /**
     * Creates a new ViveController from a gamepad
     * @param vrGamepad the gamepad that the controller should be created from

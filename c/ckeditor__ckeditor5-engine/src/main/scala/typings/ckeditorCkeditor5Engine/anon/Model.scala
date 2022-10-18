@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.matcherMod.MatcherPattern
-import typings.ckeditorCkeditor5Engine.viewElementMod.default
+import typings.ckeditorCkeditor5Engine.srcViewElementMod.default
+import typings.ckeditorCkeditor5Engine.srcViewMatcherMod.MatcherPattern
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

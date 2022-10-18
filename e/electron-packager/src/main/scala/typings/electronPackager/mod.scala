@@ -2,9 +2,9 @@ package typings.electronPackager
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.asar.mod.CreateOptions
-import typings.electronNotarize.typesMod.LegacyNotarizeCredentials
-import typings.electronNotarize.typesMod.NotaryToolCredentials
-import typings.electronNotarize.typesMod.TransporterOptions
+import typings.electronNotarize.libTypesMod.LegacyNotarizeCredentials
+import typings.electronNotarize.libTypesMod.NotaryToolCredentials
+import typings.electronNotarize.libTypesMod.TransporterOptions
 import typings.electronPackager.anon.Tool
 import typings.electronPackager.anon.`0`
 import typings.electronPackager.electronPackagerBooleans.`false`

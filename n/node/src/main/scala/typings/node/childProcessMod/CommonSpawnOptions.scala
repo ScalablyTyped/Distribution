@@ -1,7 +1,7 @@
 package typings.node.childProcessMod
 
 import typings.node.eventsMod.Abortable
-import typings.node.nodeStreamMod.Stream
+import typings.node.nodeColonstreamMod.Stream
 import typings.node.nodeStrings.ipc
 import typings.node.processMod.global.NodeJS.Signals
 import org.scalablytyped.runtime.StObject

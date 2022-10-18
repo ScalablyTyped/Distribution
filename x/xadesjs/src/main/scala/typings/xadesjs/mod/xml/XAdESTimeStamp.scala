@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.XAdESTimeStamp")
 @js.native
 open class XAdESTimeStamp ()
-  extends typings.xadesjs.typesXmlMod.XAdESTimeStamp {
+  extends typings.xadesjs.buildTypesXmlMod.XAdESTimeStamp {
   def this(properties: js.Object) = this()
 }

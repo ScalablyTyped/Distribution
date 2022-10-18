@@ -25,7 +25,7 @@ trait DebugInfo extends StObject {
   /** Inner error, if applicable. */
   var innerError: js.UndefOr[DebugInfo | String] = js.undefined
   
-  /** The error message passed through from the host Office application. */
+  /** The error message passed through from the Office application. */
   var message: String
   
   /**

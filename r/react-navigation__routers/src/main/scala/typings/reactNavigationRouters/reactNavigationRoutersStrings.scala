@@ -1,7 +1,7 @@
 package typings.reactNavigationRouters
 
-import typings.reactNavigationRouters.drawerRouterMod.DrawerStatus
-import typings.reactNavigationRouters.tabRouterMod.BackBehavior
+import typings.reactNavigationRouters.libTypescriptSrcDrawerRouterMod.DrawerStatus
+import typings.reactNavigationRouters.libTypescriptSrcTabRouterMod.BackBehavior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

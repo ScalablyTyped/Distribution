@@ -2,8 +2,8 @@ package typings.hastscript
 
 import typings.hast.mod.Element
 import typings.hast.mod.Root
-import typings.hastscript.coreMod.HChild
-import typings.hastscript.coreMod.HProperties
+import typings.hastscript.libCoreMod.HChild
+import typings.hastscript.libCoreMod.HProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.tsLoader
 
-import typings.tsLoader.interfacesMod.LogLevel
-import typings.tsLoader.interfacesMod.Severity
+import typings.tsLoader.distInterfacesMod.LogLevel
+import typings.tsLoader.distInterfacesMod.Severity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

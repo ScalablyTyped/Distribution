@@ -9,13 +9,13 @@ object threadMod {
   /**
     * Represents a set of Dispatch jobs with associated state which can be controlled as a unit.
     */
-  @JSImport("thread", JSImport.Default)
+  /* note: abstract class */ @JSImport("thread", JSImport.Default)
   @js.native
   /**
     * Construct a new `Thread`, optionally specifying options for its Dispatch jobs.
     * @param options Options for the thread's recurring Dispatch jobs.
     */
-  abstract class default ()
+  open class default ()
     extends StObject
        with Thread {
     def this(options: JobOptions) = this()

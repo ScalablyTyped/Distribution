@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the value of a cell containing a #NUM! error.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait NumErrorCellValue
   extends StObject
@@ -26,8 +25,7 @@ trait NumErrorCellValue
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: js.UndefOr[error | Error] = js.undefined
   
@@ -37,8 +35,7 @@ trait NumErrorCellValue
     * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: js.UndefOr[NumbersignNUMExclamationmark | String] = js.undefined
   
@@ -46,8 +43,7 @@ trait NumErrorCellValue
     * Represents the type of `NumErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var errorSubType: js.UndefOr[NumErrorCellValueSubType | Unknown_ | ArrayTooLarge] = js.undefined
   
@@ -55,8 +51,7 @@ trait NumErrorCellValue
     * Represents the type of `ErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var errorType: js.UndefOr[num | Num] = js.undefined
   
@@ -64,8 +59,7 @@ trait NumErrorCellValue
     * Represents the name of the function causing the error.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var functionName: js.UndefOr[String] = js.undefined
   
@@ -73,8 +67,7 @@ trait NumErrorCellValue
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: typings.officeJsPreview.Excel.CellValueType.error | Error
 }

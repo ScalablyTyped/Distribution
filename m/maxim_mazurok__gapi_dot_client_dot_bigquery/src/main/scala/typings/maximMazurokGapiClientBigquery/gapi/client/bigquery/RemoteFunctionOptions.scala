@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +23,7 @@ trait RemoteFunctionOptions extends StObject {
     * number of bytes of keys and values must be less than 8KB.
     */
   var userDefinedContext: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.RemoteFunctionOptions & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object RemoteFunctionOptions {
@@ -51,9 +48,7 @@ object RemoteFunctionOptions {
     inline def setMaxBatchingRowsUndefined: Self = StObject.set(x, "maxBatchingRows", js.undefined)
     
     inline def setUserDefinedContext(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.RemoteFunctionOptions & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "userDefinedContext", value.asInstanceOf[js.Any])
     
     inline def setUserDefinedContextUndefined: Self = StObject.set(x, "userDefinedContext", js.undefined)

@@ -177,10 +177,8 @@ import typings.cxs.cxsStrings.view
 import typings.cxs.cxsStrings.wbr
 import typings.cxs.cxsStrings.webview
 import typings.cxs.mod.CSSObject
-import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.JSXElementConstructor
 import typings.react.mod.ReactElement
-import typings.react.mod.global.JSX.LibraryManagedAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1424,6 +1422,14 @@ object componentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  type ApparentComponentProps[// eslint-disable-next-line @typescript-eslint/no-explicit-any
-  C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */] = ComponentPropsWithRef[C] | (LibraryManagedAttributes[C, Any])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    C extends react.react.JSXElementConstructor<infer P> ? react.react.<global>.JSX.LibraryManagedAttributes<C, P> : react.react.ComponentPropsWithRef<C>
+    }}}
+    */
+  @js.native
+  trait ApparentComponentProps[// eslint-disable-next-line @typescript-eslint/no-explicit-any
+  C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.cxs.cxsStrings.a, typings.cxs.cxsStrings.abbr, typings.cxs.cxsStrings.address */ Any */] extends StObject
 }

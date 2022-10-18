@@ -1,6 +1,6 @@
 package typings.libarchiveJs
 
-import typings.libarchiveJs.compressedFileMod.CompressedFile
+import typings.libarchiveJs.srcCompressedFileMod.CompressedFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

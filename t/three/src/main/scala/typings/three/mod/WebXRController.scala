@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "WebXRController")
 @js.native
 open class WebXRController ()
-  extends typings.three.threeMod.WebXRController
+  extends typings.three.srcThreeMod.WebXRController

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object headMod {
   
-  @JSImport("next-server/dist/lib/head", JSImport.Namespace)
+  @JSImport("next-server/head", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -21,11 +21,11 @@ object headMod {
       */
     inline def apply(hasChildren: Children): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    @JSImport("next-server/dist/lib/head", JSImport.Default)
+    @JSImport("next-server/head", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("next-server/dist/lib/head", "default.rewind")
+    @JSImport("next-server/head", "default.rewind")
     @js.native
     def rewind: js.Function0[js.UndefOr[js.Array[ReactElement]]] = js.native
     inline def rewind_=(x: js.Function0[js.UndefOr[js.Array[ReactElement]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rewind")(x.asInstanceOf[js.Any])

@@ -2,13 +2,13 @@ package typings.airtable
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.airtable.airtableBaseMod.AirtableBase
 import typings.airtable.anon.PickAirtableOptionsapiKey
 import typings.airtable.anon.TypeofAirtableTable
 import typings.airtable.anon.TypeofBase
-import typings.airtable.objectMapMod.ObjectMap
-import typings.airtable.queryParamsMod.QueryParams
-import typings.airtable.recordMod.RecordJson
+import typings.airtable.libAirtableBaseMod.AirtableBase
+import typings.airtable.libObjectMapMod.ObjectMap
+import typings.airtable.libQueryParamsMod.QueryParams
+import typings.airtable.libRecordMod.RecordJson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,7 +54,7 @@ object mod {
   @JSImport("airtable", "Base")
   @js.native
   open class BaseCls protected ()
-    extends typings.airtable.baseMod.^ {
+    extends typings.airtable.libBaseMod.^ {
     def this(airtable: typings.airtable.mod.^, baseId: String) = this()
   }
   
@@ -64,7 +64,7 @@ object mod {
   def Base_ : TypeofBase & (Instantiable2[
     /* airtable */ typings.airtable.mod.^, 
     /* baseId */ String, 
-    typings.airtable.baseMod.^
+    typings.airtable.libBaseMod.^
   ]) = js.native
   
   type Base_ = AirtableBase
@@ -72,7 +72,7 @@ object mod {
     x: TypeofBase & (Instantiable2[
       /* airtable */ typings.airtable.mod.^, 
       /* baseId */ String, 
-      typings.airtable.baseMod.^
+      typings.airtable.libBaseMod.^
     ])
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Base")(x.asInstanceOf[js.Any])
   
@@ -83,15 +83,15 @@ object mod {
     /* error */ String, 
     /* message */ String, 
     /* statusCode */ Double, 
-    typings.airtable.airtableErrorMod.^
+    typings.airtable.libAirtableErrorMod.^
   ] = js.native
-  type Error = typings.airtable.airtableErrorMod.^
+  type Error = typings.airtable.libAirtableErrorMod.^
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("airtable", "Error")
   @js.native
   open class ErrorCls protected ()
-    extends typings.airtable.airtableErrorMod.^ {
+    extends typings.airtable.libAirtableErrorMod.^ {
     def this(error: String, message: String, statusCode: Double) = this()
   }
   
@@ -100,7 +100,7 @@ object mod {
       /* error */ String, 
       /* message */ String, 
       /* statusCode */ Double, 
-      typings.airtable.airtableErrorMod.^
+      typings.airtable.libAirtableErrorMod.^
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Error")(x.asInstanceOf[js.Any])
   
@@ -108,24 +108,24 @@ object mod {
   @JSImport("airtable", "Record")
   @js.native
   def Record: Instantiable3[
-    /* table */ typings.airtable.tableMod.^[/* import warning: RewrittenClass.unapply cls was tparam TFields */ Any], 
+    /* table */ typings.airtable.libTableMod.^[/* import warning: RewrittenClass.unapply cls was tparam TFields */ Any], 
     /* recordId */ String, 
     /* recordJson */ js.UndefOr[RecordJson], 
-    typings.airtable.recordMod.^[typings.airtable.fieldSetMod.FieldSet]
+    typings.airtable.libRecordMod.^[typings.airtable.libFieldSetMod.FieldSet]
   ] = js.native
-  type Record[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] = typings.airtable.recordMod.^[TFields]
+  type Record[TFields /* <: typings.airtable.libFieldSetMod.FieldSet */] = typings.airtable.libRecordMod.^[TFields]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("airtable", "Record")
   @js.native
-  open class RecordCls[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] protected ()
-    extends typings.airtable.recordMod.^[TFields] {
+  open class RecordCls[TFields /* <: typings.airtable.libFieldSetMod.FieldSet */] protected ()
+    extends typings.airtable.libRecordMod.^[TFields] {
     def this(
-      table: typings.airtable.tableMod.^[/* import warning: RewrittenClass.unapply cls was tparam TFields */ Any],
+      table: typings.airtable.libTableMod.^[/* import warning: RewrittenClass.unapply cls was tparam TFields */ Any],
       recordId: String
     ) = this()
     def this(
-      table: typings.airtable.tableMod.^[/* import warning: RewrittenClass.unapply cls was tparam TFields */ Any],
+      table: typings.airtable.libTableMod.^[/* import warning: RewrittenClass.unapply cls was tparam TFields */ Any],
       recordId: String,
       recordJson: RecordJson
     ) = this()
@@ -133,10 +133,10 @@ object mod {
   
   inline def Record_=(
     x: Instantiable3[
-      /* table */ typings.airtable.tableMod.^[/* import warning: RewrittenClass.unapply cls was tparam TFields */ Any], 
+      /* table */ typings.airtable.libTableMod.^[/* import warning: RewrittenClass.unapply cls was tparam TFields */ Any], 
       /* recordId */ String, 
       /* recordJson */ js.UndefOr[RecordJson], 
-      typings.airtable.recordMod.^[typings.airtable.fieldSetMod.FieldSet]
+      typings.airtable.libRecordMod.^[typings.airtable.libFieldSetMod.FieldSet]
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Record")(x.asInstanceOf[js.Any])
   
@@ -144,27 +144,27 @@ object mod {
   @JSImport("airtable", "Table")
   @js.native
   def Table: TypeofAirtableTable & (Instantiable3[
-    /* base */ typings.airtable.baseMod.^, 
+    /* base */ typings.airtable.libBaseMod.^, 
     /* tableId */ String, 
     /* tableName */ String, 
-    typings.airtable.tableMod.^[typings.airtable.fieldSetMod.FieldSet]
+    typings.airtable.libTableMod.^[typings.airtable.libFieldSetMod.FieldSet]
   ]) = js.native
-  type Table[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] = typings.airtable.tableMod.^[TFields]
+  type Table[TFields /* <: typings.airtable.libFieldSetMod.FieldSet */] = typings.airtable.libTableMod.^[TFields]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("airtable", "Table")
   @js.native
-  open class TableCls[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] protected ()
-    extends typings.airtable.tableMod.^[TFields] {
-    def this(base: typings.airtable.baseMod.^, tableId: String, tableName: String) = this()
+  open class TableCls[TFields /* <: typings.airtable.libFieldSetMod.FieldSet */] protected ()
+    extends typings.airtable.libTableMod.^[TFields] {
+    def this(base: typings.airtable.libBaseMod.^, tableId: String, tableName: String) = this()
   }
   
   inline def Table_=(
     x: TypeofAirtableTable & (Instantiable3[
-      /* base */ typings.airtable.baseMod.^, 
+      /* base */ typings.airtable.libBaseMod.^, 
       /* tableId */ String, 
       /* tableName */ String, 
-      typings.airtable.tableMod.^[typings.airtable.fieldSetMod.FieldSet]
+      typings.airtable.libTableMod.^[typings.airtable.libFieldSetMod.FieldSet]
     ])
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Table")(x.asInstanceOf[js.Any])
   
@@ -310,21 +310,21 @@ object mod {
     }
   }
   
-  type Attachment = typings.airtable.attachmentMod.Attachment
+  type Attachment = typings.airtable.libAttachmentMod.Attachment
   
-  type Collaborator = typings.airtable.collaboratorMod.Collaborator
+  type Collaborator = typings.airtable.libCollaboratorMod.Collaborator
   
   type CustomHeaders = ObjectMap[String, String | Double | Boolean]
   
-  type FieldSet = typings.airtable.fieldSetMod.FieldSet
+  type FieldSet = typings.airtable.libFieldSetMod.FieldSet
   
-  type Query[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] = typings.airtable.queryMod.^[TFields]
+  type Query[TFields /* <: typings.airtable.libFieldSetMod.FieldSet */] = typings.airtable.libQueryMod.^[TFields]
   
-  type RecordData[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] = typings.airtable.recordDataMod.RecordData[TFields]
+  type RecordData[TFields /* <: typings.airtable.libFieldSetMod.FieldSet */] = typings.airtable.libRecordDataMod.RecordData[TFields]
   
-  type Records[TFields /* <: typings.airtable.fieldSetMod.FieldSet */] = typings.airtable.recordsMod.Records[TFields]
+  type Records[TFields /* <: typings.airtable.libFieldSetMod.FieldSet */] = typings.airtable.libRecordsMod.Records[TFields]
   
   type SelectOptions[TFields] = QueryParams[TFields]
   
-  type Thumbnail = typings.airtable.thumbnailMod.Thumbnail
+  type Thumbnail = typings.airtable.libThumbnailMod.Thumbnail
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BlockFillerMode extends StObject {
   
-  var blockFillerMode: js.UndefOr[typings.ckeditorCkeditor5Engine.domconverterMod.BlockFillerMode] = js.undefined
+  var blockFillerMode: js.UndefOr[typings.ckeditorCkeditor5Engine.srcViewDomconverterMod.BlockFillerMode] = js.undefined
   
   var renderingMode: js.UndefOr[data | editing] = js.undefined
 }
@@ -21,7 +21,7 @@ object BlockFillerMode {
   
   extension [Self <: BlockFillerMode](x: Self) {
     
-    inline def setBlockFillerMode(value: typings.ckeditorCkeditor5Engine.domconverterMod.BlockFillerMode): Self = StObject.set(x, "blockFillerMode", value.asInstanceOf[js.Any])
+    inline def setBlockFillerMode(value: typings.ckeditorCkeditor5Engine.srcViewDomconverterMod.BlockFillerMode): Self = StObject.set(x, "blockFillerMode", value.asInstanceOf[js.Any])
     
     inline def setBlockFillerModeUndefined: Self = StObject.set(x, "blockFillerMode", js.undefined)
     

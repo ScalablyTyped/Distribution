@@ -5,7 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.reactNative.anon.Start
+import typings.reactNative.anon.End
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -34,7 +34,7 @@ import typings.reactNative.mod.TextInputSubmitEditingEventData
 import typings.reactNative.mod.TextInputTextInputEventData
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconNode
+import typings.reactNativeElements.distIconsIconMod.IconNode
 import typings.reactNativeElements.reactNativeElementsStrings.InputComponent
 import typings.reactNativeElements.reactNativeElementsStrings.URL
 import typings.reactNativeElements.reactNativeElementsStrings.`box-none`
@@ -352,7 +352,7 @@ trait Pickplatformiosandroiddef extends StObject {
   
   var selectTextOnFocus: js.UndefOr[Boolean] = js.undefined
   
-  var selection: js.UndefOr[Start] = js.undefined
+  var selection: js.UndefOr[End] = js.undefined
   
   var selectionColor: js.UndefOr[ColorValue] = js.undefined
   
@@ -913,7 +913,7 @@ object Pickplatformiosandroiddef {
     
     inline def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
     
-    inline def setSelection(value: Start): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: End): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     inline def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     

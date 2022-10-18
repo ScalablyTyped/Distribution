@@ -10,7 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(word: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(word.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def default(word: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(word.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def default(word: String, plural: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(word.asInstanceOf[js.Any], plural.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -1,7 +1,7 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.hdrMod.HDRInfo
-import typings.babylonjs.panoramaToCubemapMod.CubeMapInfo
+import typings.babylonjs.miscHighDynamicRangeHdrMod.HDRInfo
+import typings.babylonjs.miscHighDynamicRangePanoramaToCubemapMod.CubeMapInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "HDRTools")
 @js.native
 open class HDRTools ()
-  extends typings.babylonjs.highDynamicRangeIndexMod.HDRTools
+  extends typings.babylonjs.miscHighDynamicRangeIndexMod.HDRTools
 /* static members */
 object HDRTools {
   

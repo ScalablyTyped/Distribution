@@ -1,8 +1,8 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.environmentTextureToolsMod.CreateEnvTextureOptions
-import typings.babylonjs.environmentTextureToolsMod.EnvironmentTextureInfo
-import typings.babylonjs.environmentTextureToolsMod.EnvironmentTextureInfoV2
+import typings.babylonjs.miscEnvironmentTextureToolsMod.CreateEnvTextureOptions
+import typings.babylonjs.miscEnvironmentTextureToolsMod.EnvironmentTextureInfo
+import typings.babylonjs.miscEnvironmentTextureToolsMod.EnvironmentTextureInfoV2
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +25,7 @@ object EnvironmentTextureTools {
   @JSImport("babylonjs/index", "EnvironmentTextureTools.CreateEnvTextureAsync")
   @js.native
   def CreateEnvTextureAsync: js.Function2[
-    /* texture */ typings.babylonjs.baseTextureMod.BaseTexture, 
+    /* texture */ typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, 
     /* options */ js.UndefOr[CreateEnvTextureOptions], 
     js.Promise[js.typedarray.ArrayBuffer]
   ] = js.native
@@ -37,11 +37,14 @@ object EnvironmentTextureTools {
     * @param options.imageQuality the image quality of encoded WebP images.
     * @returns a promise containing the environment data if successful.
     */
-  inline def CreateEnvTextureAsync(texture: typings.babylonjs.baseTextureMod.BaseTexture): js.Promise[js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateEnvTextureAsync")(texture.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
-  inline def CreateEnvTextureAsync(texture: typings.babylonjs.baseTextureMod.BaseTexture, options: CreateEnvTextureOptions): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateEnvTextureAsync")(texture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
+  inline def CreateEnvTextureAsync(texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture): js.Promise[js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateEnvTextureAsync")(texture.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
+  inline def CreateEnvTextureAsync(
+    texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
+    options: CreateEnvTextureOptions
+  ): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateEnvTextureAsync")(texture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
   inline def CreateEnvTextureAsync_=(
     x: js.Function2[
-      /* texture */ typings.babylonjs.baseTextureMod.BaseTexture, 
+      /* texture */ typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, 
       /* options */ js.UndefOr[CreateEnvTextureOptions], 
       js.Promise[js.typedarray.ArrayBuffer]
     ]
@@ -101,7 +104,7 @@ object EnvironmentTextureTools {
   @JSImport("babylonjs/index", "EnvironmentTextureTools.UploadEnvLevelsAsync")
   @js.native
   def UploadEnvLevelsAsync: js.Function3[
-    /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+    /* texture */ typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture, 
     /* data */ js.typedarray.ArrayBufferView, 
     /* info */ EnvironmentTextureInfo, 
     js.Promise[Unit]
@@ -114,13 +117,13 @@ object EnvironmentTextureTools {
     * @returns a promise
     */
   inline def UploadEnvLevelsAsync(
-    texture: typings.babylonjs.internalTextureMod.InternalTexture,
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     data: js.typedarray.ArrayBufferView,
     info: EnvironmentTextureInfo
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadEnvLevelsAsync")(texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def UploadEnvLevelsAsync_=(
     x: js.Function3[
-      /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+      /* texture */ typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture, 
       /* data */ js.typedarray.ArrayBufferView, 
       /* info */ EnvironmentTextureInfo, 
       js.Promise[Unit]
@@ -135,7 +138,7 @@ object EnvironmentTextureTools {
   @JSImport("babylonjs/index", "EnvironmentTextureTools.UploadEnvSpherical")
   @js.native
   def UploadEnvSpherical: js.Function2[
-    /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+    /* texture */ typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture, 
     /* info */ EnvironmentTextureInfo, 
     Unit
   ] = js.native
@@ -144,10 +147,13 @@ object EnvironmentTextureTools {
     * @param texture defines the texture we are trying to upload the information to
     * @param info defines the environment texture info retrieved through the GetEnvInfo method
     */
-  inline def UploadEnvSpherical(texture: typings.babylonjs.internalTextureMod.InternalTexture, info: EnvironmentTextureInfo): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadEnvSpherical")(texture.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def UploadEnvSpherical(
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
+    info: EnvironmentTextureInfo
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadEnvSpherical")(texture.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def UploadEnvSpherical_=(
     x: js.Function2[
-      /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+      /* texture */ typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture, 
       /* info */ EnvironmentTextureInfo, 
       Unit
     ]
@@ -163,7 +169,7 @@ object EnvironmentTextureTools {
   @JSImport("babylonjs/index", "EnvironmentTextureTools.UploadLevelsAsync")
   @js.native
   def UploadLevelsAsync: js.Function3[
-    /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+    /* texture */ typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture, 
     /* imageData */ js.Array[js.Array[js.typedarray.ArrayBufferView]], 
     /* imageType */ js.UndefOr[String], 
     js.Promise[Unit]
@@ -176,17 +182,17 @@ object EnvironmentTextureTools {
     * @returns a promise
     */
   inline def UploadLevelsAsync(
-    texture: typings.babylonjs.internalTextureMod.InternalTexture,
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     imageData: js.Array[js.Array[js.typedarray.ArrayBufferView]]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadLevelsAsync")(texture.asInstanceOf[js.Any], imageData.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def UploadLevelsAsync(
-    texture: typings.babylonjs.internalTextureMod.InternalTexture,
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
     imageData: js.Array[js.Array[js.typedarray.ArrayBufferView]],
     imageType: String
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadLevelsAsync")(texture.asInstanceOf[js.Any], imageData.asInstanceOf[js.Any], imageType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def UploadLevelsAsync_=(
     x: js.Function3[
-      /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+      /* texture */ typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture, 
       /* imageData */ js.Array[js.Array[js.typedarray.ArrayBufferView]], 
       /* imageType */ js.UndefOr[String], 
       js.Promise[Unit]

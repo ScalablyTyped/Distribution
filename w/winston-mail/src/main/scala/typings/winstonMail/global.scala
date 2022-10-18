@@ -17,7 +17,7 @@ object global {
     }
     
     /* augmented module */
-    object mod {
+    object winstonMod {
       
       trait Transports extends StObject {
         

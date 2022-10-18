@@ -1,7 +1,7 @@
 package typings.blueprintjsTable.mod
 
 import typings.blueprintjsTable.anon.PreventDefault
-import typings.blueprintjsTable.draggableMod.IDraggableProps
+import typings.blueprintjsTable.libEsmInteractionsDraggableMod.IDraggableProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "Draggable")
 @js.native
 open class Draggable protected ()
-  extends typings.blueprintjsTable.draggableMod.Draggable {
+  extends typings.blueprintjsTable.libEsmInteractionsDraggableMod.Draggable {
   def this(props: IDraggableProps) = this()
   /**
     * @deprecated

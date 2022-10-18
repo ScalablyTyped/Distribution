@@ -1,6 +1,5 @@
 package typings.atom.anon
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait AllowPrevious extends StObject {
   
   var includeNonWordCharacters: js.UndefOr[Boolean] = js.undefined
   
-  var wordRegex: js.UndefOr[RegExp] = js.undefined
+  var wordRegex: js.UndefOr[js.RegExp] = js.undefined
 }
 object AllowPrevious {
   
@@ -30,7 +29,7 @@ object AllowPrevious {
     
     inline def setIncludeNonWordCharactersUndefined: Self = StObject.set(x, "includeNonWordCharacters", js.undefined)
     
-    inline def setWordRegex(value: RegExp): Self = StObject.set(x, "wordRegex", value.asInstanceOf[js.Any])
+    inline def setWordRegex(value: js.RegExp): Self = StObject.set(x, "wordRegex", value.asInstanceOf[js.Any])
     
     inline def setWordRegexUndefined: Self = StObject.set(x, "wordRegex", js.undefined)
   }

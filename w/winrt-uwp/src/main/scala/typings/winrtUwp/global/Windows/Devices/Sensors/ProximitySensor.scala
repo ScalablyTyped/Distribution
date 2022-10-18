@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides an interface for a proximity sensor to determine whether or not an object is detected. */
-@JSGlobal("Windows.Devices.Sensors.ProximitySensor")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.ProximitySensor")
 @js.native
-abstract class ProximitySensor ()
+open class ProximitySensor ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.ProximitySensor
 object ProximitySensor {

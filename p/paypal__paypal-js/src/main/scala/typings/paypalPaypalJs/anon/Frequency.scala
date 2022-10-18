@@ -1,9 +1,9 @@
 package typings.paypalPaypalJs.anon
 
-import typings.paypalPaypalJs.commonsMod.AmountWithCurrencyCode
-import typings.paypalPaypalJs.commonsMod.Taxes
 import typings.paypalPaypalJs.paypalPaypalJsStrings.REGULAR
 import typings.paypalPaypalJs.paypalPaypalJsStrings.TRIAL
+import typings.paypalPaypalJs.typesApisCommonsMod.AmountWithCurrencyCode
+import typings.paypalPaypalJs.typesApisCommonsMod.Taxes
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

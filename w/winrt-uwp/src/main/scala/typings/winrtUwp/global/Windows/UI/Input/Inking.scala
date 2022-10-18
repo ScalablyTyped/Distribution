@@ -102,9 +102,9 @@ object Inking {
   }
   
   /** Provides properties and methods to manage InkStroke handwriting recognition data. */
-  @JSGlobal("Windows.UI.Input.Inking.InkRecognitionResult")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Inking.InkRecognitionResult")
   @js.native
-  abstract class InkRecognitionResult ()
+  open class InkRecognitionResult ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Inking.InkRecognitionResult {
     
@@ -143,9 +143,9 @@ object Inking {
   }
   
   /** Manages all aspects of handwriting recognition. */
-  @JSGlobal("Windows.UI.Input.Inking.InkRecognizer")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Inking.InkRecognizer")
   @js.native
-  abstract class InkRecognizer ()
+  open class InkRecognizer ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Inking.InkRecognizer {
     
@@ -190,9 +190,9 @@ object Inking {
   }
   
   /** A single ink stroke, including the Bézier curve parameters used for final rendering of the stroke. */
-  @JSGlobal("Windows.UI.Input.Inking.InkStroke")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Inking.InkStroke")
   @js.native
-  abstract class InkStroke ()
+  open class InkStroke ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Inking.InkStroke {
     
@@ -407,9 +407,9 @@ object Inking {
   }
   
   /** A single segment of a complete ink stroke. */
-  @JSGlobal("Windows.UI.Input.Inking.InkStrokeRenderingSegment")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Inking.InkStrokeRenderingSegment")
   @js.native
-  abstract class InkStrokeRenderingSegment ()
+  open class InkStrokeRenderingSegment ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Inking.InkStrokeRenderingSegment {
     

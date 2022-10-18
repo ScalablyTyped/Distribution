@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.PartialICoachmarkProps
-import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkProps
+import typings.officeUiFabricReact.libComponentsCoachmarkCoachmarkDottypesMod.ICoachmarkProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +20,7 @@ object libCoachmarkMod {
   @JSImport("office-ui-fabric-react/lib/Coachmark", "CoachmarkBase")
   @js.native
   open class CoachmarkBase protected ()
-    extends typings.officeUiFabricReact.coachmarkMod.CoachmarkBase {
+    extends typings.officeUiFabricReact.libComponentsCoachmarkMod.CoachmarkBase {
     def this(props: ICoachmarkProps) = this()
   }
   /* static members */

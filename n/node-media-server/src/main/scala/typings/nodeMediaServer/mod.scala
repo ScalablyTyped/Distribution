@@ -1,6 +1,5 @@
 package typings.nodeMediaServer
 
-import typings.nodeMediaServer.nodeMediaServerBooleans.`true`
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -433,7 +432,7 @@ object mod {
     
     var app: String
     
-    var dash: js.UndefOr[`true`] = js.undefined
+    var dash: js.UndefOr[Boolean] = js.undefined
     
     var dashFlags: js.UndefOr[String] = js.undefined
     
@@ -474,7 +473,7 @@ object mod {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      inline def setDash(value: `true`): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
+      inline def setDash(value: Boolean): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
       
       inline def setDashFlags(value: String): Self = StObject.set(x, "dashFlags", value.asInstanceOf[js.Any])
       

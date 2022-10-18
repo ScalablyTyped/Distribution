@@ -1,9 +1,9 @@
 package typings.frctlFractal.mod
 
+import typings.frctlFractal.anon.Handle
 import typings.frctlFractal.anon.Mount
 import typings.frctlFractal.anon.Params
 import typings.frctlFractal.anon.Path
-import typings.frctlFractal.anon.`0`
 import typings.frctlFractal.frctlFractalBooleans.`false`
 import typings.frctlFractal.frctlFractalStrings.favicon
 import typings.frctlFractal.frctlFractalStrings.format
@@ -32,8 +32,8 @@ open class WebTheme protected () extends ConfigurableEmitter[WebThemeOptions] {
   
   def addResolver(handle: String, resolvers: Any): this.type = js.native
   
-  def addRoute(path: String, opts: `0`): this.type = js.native
-  def addRoute(path: String, opts: `0`, resolver: Any): this.type = js.native
+  def addRoute(path: String, opts: Handle): this.type = js.native
+  def addRoute(path: String, opts: Handle, resolver: Any): this.type = js.native
   
   def addStatic(path: String, mount: String): Unit = js.native
   

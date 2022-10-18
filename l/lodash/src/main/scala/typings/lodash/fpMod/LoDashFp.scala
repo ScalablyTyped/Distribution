@@ -1,6 +1,5 @@
 package typings.lodash.fpMod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.lodash.anon.LodashAnyHack
 import typings.lodash.anon.TrapAny
 import typings.lodash.anon.Typeoflodash
@@ -2980,14 +2979,10 @@ trait LoDashFp extends StObject {
   def mapValues[T](callbackOrIterateeOrIterateeOrIteratee: __, obj: NumericDictionary[T]): LodashMapValues1x2[T]
   def mapValues[T /* <: js.Object */](callbackOrIterateeOrIteratee: __): LodashMapValues2x2[T]
   def mapValues[T /* <: js.Object */](callbackOrIterateeOrIteratee: __, obj: T): LodashMapValues2x2[T]
-  def mapValues[T /* <: js.Object */](iteratee: java.lang.String, obj: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: any}
-    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[Any]
+  def mapValues[T /* <: js.Object */](iteratee: java.lang.String, obj: T): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: any} */ js.Any
   def mapValues[T](iteratee: java.lang.String, obj: Dictionary[T]): Dictionary[Any]
   def mapValues[T](iteratee: java.lang.String, obj: NumericDictionary[T]): Dictionary[Any]
-  def mapValues[T /* <: js.Object */](iteratee: js.Object, obj: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: boolean}
-    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[Any]
+  def mapValues[T /* <: js.Object */](iteratee: js.Object, obj: T): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: boolean} */ js.Any
   def mapValues[T](iteratee: js.Object, obj: Dictionary[T]): Dictionary[Boolean]
   def mapValues[T](iteratee: js.Object, obj: NumericDictionary[T]): Dictionary[Boolean]
   def mapValues[T /* <: js.Object */, TResult](
@@ -2995,18 +2990,14 @@ trait LoDashFp extends StObject {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ]
-  ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: TResult}
-    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[Any]
+  ): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: TResult} */ js.Any
   def mapValues[T /* <: js.Object */, TResult](
     callback: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ],
     obj: T
-  ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: TResult}
-    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[Any]
+  ): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: TResult} */ js.Any
   def mapValues[T, TResult](callback: js.Function1[/* value */ T, TResult], obj: Dictionary[T]): Dictionary[TResult]
   def mapValues[T, TResult](callback: js.Function1[/* value */ T, TResult], obj: NumericDictionary[T]): Dictionary[TResult]
   def mapValues[T, TKey /* <: /* keyof T */ java.lang.String */](iteratee: TKey): LodashMapValues5x1[T, TKey]
@@ -3034,17 +3025,13 @@ trait LoDashFp extends StObject {
     ]
   ): LodashMapValues2x1[T, TResult]
   @JSName("mapValues")
+  def mapValues_T_Any[T /* <: js.Object */](iteratee: java.lang.String): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: any} */ js.Any
+  @JSName("mapValues")
+  def mapValues_T_Any[T /* <: js.Object */](iteratee: js.Object): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: boolean} */ js.Any
+  @JSName("mapValues")
   def mapValues_T_Dictionary[T](iteratee: java.lang.String): Dictionary[Any]
   @JSName("mapValues")
   def mapValues_T_Dictionary[T](iteratee: js.Object): Dictionary[Boolean]
-  @JSName("mapValues")
-  def mapValues_T_Intersection[T /* <: js.Object */](iteratee: java.lang.String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: any}
-    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[Any]
-  @JSName("mapValues")
-  def mapValues_T_Intersection[T /* <: js.Object */](iteratee: js.Object): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: boolean}
-    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[Any]
   @JSName("mapValues")
   def mapValues_T_LodashMapValues1x2[T](callbackOrIterateeOrIterateeOrIteratee: __): LodashMapValues1x2[T]
   

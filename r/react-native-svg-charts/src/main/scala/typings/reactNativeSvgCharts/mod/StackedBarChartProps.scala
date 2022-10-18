@@ -2,8 +2,8 @@ package typings.reactNativeSvgCharts.mod
 
 import typings.d3Shape.mod.Series
 import typings.react.mod.Component
-import typings.reactNativeSvg.linearGradientMod.LinearGradientProps
-import typings.reactNativeSvg.radialGradientMod.RadialGradientProps
+import typings.reactNativeSvg.libTypescriptElementsLinearGradientMod.LinearGradientProps
+import typings.reactNativeSvg.libTypescriptElementsRadialGradientMod.RadialGradientProps
 import typings.reactNativeSvgCharts.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

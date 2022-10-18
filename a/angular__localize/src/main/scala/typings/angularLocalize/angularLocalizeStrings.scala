@@ -1,6 +1,6 @@
 package typings.angularLocalize
 
-import typings.angularLocalize.diagnosticsMod.DiagnosticHandlingStrategy
+import typings.angularLocalize.toolsSrcDiagnosticsMod.DiagnosticHandlingStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-native-community/cli-hermes" : "9.1.0"
+      "@react-native-community/cli-hermes" : "9.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-native-community/cli-hermes" : "9.1.0"
+      "@react-native-community/cli-hermes" : "9.2.1"
     }
   ],
   "compile-devDependencies" : [

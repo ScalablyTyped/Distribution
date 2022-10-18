@@ -1,7 +1,7 @@
 package typings.postmark.mod.Models
 
-import typings.postmark.webhookMod.HttpAuth
-import typings.postmark.webhookMod.WebhookRequestTriggers
+import typings.postmark.distClientModelsWebhooksWebhookMod.HttpAuth
+import typings.postmark.distClientModelsWebhooksWebhookMod.WebhookRequestTriggers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postmark", "Models.CreateWebhookRequest")
 @js.native
 open class CreateWebhookRequest ()
-  extends typings.postmark.modelsMod.CreateWebhookRequest {
+  extends typings.postmark.distClientModelsMod.CreateWebhookRequest {
   def this(url: String) = this()
   def this(url: String, triggers: WebhookRequestTriggers) = this()
   def this(url: Unit, triggers: WebhookRequestTriggers) = this()
@@ -21,55 +21,55 @@ open class CreateWebhookRequest ()
     url: String,
     triggers: Unit,
     httpAuth: Unit,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header]
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]
   ) = this()
   def this(
     url: String,
     triggers: Unit,
     httpAuth: HttpAuth,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header]
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]
   ) = this()
   def this(
     url: String,
     triggers: WebhookRequestTriggers,
     httpAuth: Unit,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header]
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]
   ) = this()
   def this(
     url: String,
     triggers: WebhookRequestTriggers,
     httpAuth: HttpAuth,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header]
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]
   ) = this()
   def this(
     url: Unit,
     triggers: Unit,
     httpAuth: Unit,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header]
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]
   ) = this()
   def this(
     url: Unit,
     triggers: Unit,
     httpAuth: HttpAuth,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header]
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]
   ) = this()
   def this(
     url: Unit,
     triggers: WebhookRequestTriggers,
     httpAuth: Unit,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header]
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]
   ) = this()
   def this(
     url: Unit,
     triggers: WebhookRequestTriggers,
     httpAuth: HttpAuth,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header]
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]
   ) = this()
   def this(
     url: String,
     triggers: Unit,
     httpAuth: Unit,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header],
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header],
     messageStream: String
   ) = this()
   def this(url: String, triggers: Unit, httpAuth: Unit, httpHeaders: Unit, messageStream: String) = this()
@@ -77,7 +77,7 @@ open class CreateWebhookRequest ()
     url: String,
     triggers: Unit,
     httpAuth: HttpAuth,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header],
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header],
     messageStream: String
   ) = this()
   def this(url: String, triggers: Unit, httpAuth: HttpAuth, httpHeaders: Unit, messageStream: String) = this()
@@ -85,7 +85,7 @@ open class CreateWebhookRequest ()
     url: String,
     triggers: WebhookRequestTriggers,
     httpAuth: Unit,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header],
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header],
     messageStream: String
   ) = this()
   def this(
@@ -99,7 +99,7 @@ open class CreateWebhookRequest ()
     url: String,
     triggers: WebhookRequestTriggers,
     httpAuth: HttpAuth,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header],
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header],
     messageStream: String
   ) = this()
   def this(
@@ -113,7 +113,7 @@ open class CreateWebhookRequest ()
     url: Unit,
     triggers: Unit,
     httpAuth: Unit,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header],
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header],
     messageStream: String
   ) = this()
   def this(url: Unit, triggers: Unit, httpAuth: Unit, httpHeaders: Unit, messageStream: String) = this()
@@ -121,7 +121,7 @@ open class CreateWebhookRequest ()
     url: Unit,
     triggers: Unit,
     httpAuth: HttpAuth,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header],
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header],
     messageStream: String
   ) = this()
   def this(url: Unit, triggers: Unit, httpAuth: HttpAuth, httpHeaders: Unit, messageStream: String) = this()
@@ -129,7 +129,7 @@ open class CreateWebhookRequest ()
     url: Unit,
     triggers: WebhookRequestTriggers,
     httpAuth: Unit,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header],
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header],
     messageStream: String
   ) = this()
   def this(
@@ -143,7 +143,7 @@ open class CreateWebhookRequest ()
     url: Unit,
     triggers: WebhookRequestTriggers,
     httpAuth: HttpAuth,
-    httpHeaders: js.Array[typings.postmark.messageSupportingTypesMod.Header],
+    httpHeaders: js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header],
     messageStream: String
   ) = this()
   def this(

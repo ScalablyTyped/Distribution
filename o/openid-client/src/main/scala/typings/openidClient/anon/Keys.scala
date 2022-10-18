@@ -1,6 +1,6 @@
 package typings.openidClient.anon
 
-import typings.jose.typesMod.JWK
+import typings.jose.distTypesTypesMod.JWK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

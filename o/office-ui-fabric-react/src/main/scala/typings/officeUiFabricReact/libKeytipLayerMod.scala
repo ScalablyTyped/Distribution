@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps
+import typings.officeUiFabricReact.libComponentsKeytipLayerKeytipLayerDottypesMod.IKeytipLayerProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object libKeytipLayerMod {
   @JSImport("office-ui-fabric-react/lib/KeytipLayer", "KeytipLayerBase")
   @js.native
   open class KeytipLayerBase protected ()
-    extends typings.officeUiFabricReact.keytipLayerMod.KeytipLayerBase {
+    extends typings.officeUiFabricReact.libComponentsKeytipLayerMod.KeytipLayerBase {
     def this(props: IKeytipLayerProps, context: Any) = this()
   }
   /* static members */

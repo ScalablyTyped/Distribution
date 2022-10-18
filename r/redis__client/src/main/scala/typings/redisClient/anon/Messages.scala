@@ -1,8 +1,8 @@
 package typings.redisClient.anon
 
-import typings.redisClient.genericTransformersMod.StreamMessageReply
-import typings.redisClient.genericTransformersMod.StreamMessagesReply
-import typings.redisClient.libCommandsMod.RedisCommandArgument
+import typings.redisClient.distLibCommandsGenericTransformersMod.StreamMessageReply
+import typings.redisClient.distLibCommandsGenericTransformersMod.StreamMessagesReply
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

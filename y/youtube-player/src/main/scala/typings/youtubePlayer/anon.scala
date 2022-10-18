@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.CustomEvent
 import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
-import typings.youtubePlayer.playerStatesMod.PlayerStates.ENDED
-import typings.youtubePlayer.playerStatesMod.PlayerStates.PAUSED
-import typings.youtubePlayer.playerStatesMod.PlayerStates.PLAYING
-import typings.youtubePlayer.typesMod.Options
-import typings.youtubePlayer.typesMod.YouTubePlayer
+import typings.youtubePlayer.distConstantsPlayerStatesMod.PlayerStates.ENDED
+import typings.youtubePlayer.distConstantsPlayerStatesMod.PlayerStates.PAUSED
+import typings.youtubePlayer.distConstantsPlayerStatesMod.PlayerStates.PLAYING
+import typings.youtubePlayer.distTypesMod.Options
+import typings.youtubePlayer.distTypesMod.YouTubePlayer
 import typings.youtubePlayer.youtubePlayerBooleans.`false`
 import typings.youtubePlayer.youtubePlayerBooleans.`true`
 import typings.youtubePlayer.youtubePlayerInts.`0`

@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/core", "AbstractComponent2")
+/* note: abstract class */ @JSImport("@blueprintjs/core", "AbstractComponent2")
 @js.native
-abstract class AbstractComponent2[P, S, SS] protected ()
-  extends typings.blueprintjsCore.commonMod.AbstractComponent2[P, S, SS] {
+open class AbstractComponent2[P, S, SS] protected ()
+  extends typings.blueprintjsCore.libEsmCommonMod.AbstractComponent2[P, S, SS] {
   def this(props: P) = this()
   def this(props: P, context: Any) = this()
 }

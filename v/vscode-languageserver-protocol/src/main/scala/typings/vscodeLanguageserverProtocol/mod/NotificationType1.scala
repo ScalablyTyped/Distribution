@@ -9,5 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class NotificationType1[P1] protected ()
   extends typings.vscodeJsonrpc.mod.NotificationType1[P1] {
   def this(method: String) = this()
-  def this(method: String, _parameterStructures: typings.vscodeJsonrpc.messagesMod.ParameterStructures) = this()
+  def this(
+    method: String,
+    _parameterStructures: typings.vscodeJsonrpc.libCommonMessagesMod.ParameterStructures
+  ) = this()
 }

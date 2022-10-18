@@ -2,8 +2,8 @@ package typings.reactNativeDraggableFlatlist.anon
 
 import typings.react.mod.ForwardedRef
 import typings.react.mod.global.JSX.Element
-import typings.reactNativeDraggableFlatlist.typescriptTypesMod.DraggableFlatListProps
-import typings.reactNativeGestureHandler.gestureComponentsMod.FlatList
+import typings.reactNativeDraggableFlatlist.libTypescriptTypesMod.DraggableFlatListProps
+import typings.reactNativeGestureHandler.libTypescriptComponentsGestureComponentsMod.FlatList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

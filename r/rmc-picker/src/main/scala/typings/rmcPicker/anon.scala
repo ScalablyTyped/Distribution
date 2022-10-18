@@ -9,9 +9,9 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.rmcPicker.multiPickerPropsMod.IMultiPickerProps
-import typings.rmcPicker.pickerMixinMod.IItemProps
-import typings.rmcPicker.pickerTypesMod.IPickerProps
+import typings.rmcPicker.libMultiPickerPropsMod.IMultiPickerProps
+import typings.rmcPicker.libPickerMixinMod.IItemProps
+import typings.rmcPicker.libPickerTypesMod.IPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

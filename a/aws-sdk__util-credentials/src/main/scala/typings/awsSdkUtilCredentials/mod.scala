@@ -1,8 +1,8 @@
 package typings.awsSdkUtilCredentials
 
-import typings.awsSdkSharedIniFileLoader.loadSharedConfigFilesMod.SharedConfigInit
-import typings.awsSdkSharedIniFileLoader.typesMod.ParsedIniData
-import typings.awsSdkSharedIniFileLoader.typesMod.SharedConfigFiles
+import typings.awsSdkSharedIniFileLoader.distTypesLoadSharedConfigFilesMod.SharedConfigInit
+import typings.awsSdkSharedIniFileLoader.distTypesTypesMod.ParsedIniData
+import typings.awsSdkSharedIniFileLoader.distTypesTypesMod.SharedConfigFiles
 import typings.awsSdkUtilCredentials.anon.Profile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

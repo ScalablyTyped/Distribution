@@ -1,9 +1,9 @@
 package typings.mischnicJsonSourcemap
 
+import typings.mischnicJsonSourcemap.distMod.Mapping
+import typings.mischnicJsonSourcemap.distMod.Position
 import typings.mischnicJsonSourcemap.mischnicJsonSourcemapStrings.JSON
 import typings.mischnicJsonSourcemap.mischnicJsonSourcemapStrings.JSON5
-import typings.mischnicJsonSourcemap.mod.Mapping
-import typings.mischnicJsonSourcemap.mod.Position
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

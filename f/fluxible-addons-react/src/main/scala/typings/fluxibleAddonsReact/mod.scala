@@ -19,7 +19,10 @@ object mod {
   inline def connectToStores(
     Component: ConnectableComponent,
     stores: js.Array[
-      (Instantiable1[/* dispatcher */ DispatcherInterface, typings.fluxible.baseStoreMod.^[js.Object]]) | String
+      (Instantiable1[
+        /* dispatcher */ DispatcherInterface, 
+        typings.fluxible.addonsBaseStoreMod.^[js.Object]
+      ]) | String
     ],
     getStateFromStores: js.Function2[/* context */ ComponentContext, /* props */ Any, Any]
   ): TypeofComponent & (Instantiable1[
@@ -32,7 +35,10 @@ object mod {
   inline def connectToStores(
     Component: ConnectableComponent,
     stores: js.Array[
-      (Instantiable1[/* dispatcher */ DispatcherInterface, typings.fluxible.baseStoreMod.^[js.Object]]) | String
+      (Instantiable1[
+        /* dispatcher */ DispatcherInterface, 
+        typings.fluxible.addonsBaseStoreMod.^[js.Object]
+      ]) | String
     ],
     getStateFromStores: js.Function2[/* context */ ComponentContext, /* props */ Any, Any],
     customContextTypes: Any

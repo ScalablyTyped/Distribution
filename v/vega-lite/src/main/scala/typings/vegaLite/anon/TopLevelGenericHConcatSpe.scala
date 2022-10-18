@@ -1,20 +1,20 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.specMod.NonNormalizedSpec
-import typings.vegaLite.specMod._TopLevelSpec
-import typings.vegaLite.srcResolveMod.Resolve
-import typings.vegaLite.titleMod.TitleParams
-import typings.vegaLite.toplevelMod.AutoSizeParams
-import typings.vegaLite.toplevelMod.AutosizeType
-import typings.vegaLite.toplevelMod.Padding
-import typings.vegaLite.toplevelMod.TopLevelParameter
-import typings.vegaLite.transformMod.Transform
-import typings.vegaLite.utilMod.Dict
+import typings.vegaLite.buildSrcExprMod.ExprRef
+import typings.vegaLite.buildSrcResolveMod.Resolve
+import typings.vegaLite.buildSrcSpecMod.NonNormalizedSpec
+import typings.vegaLite.buildSrcSpecMod._TopLevelSpec
+import typings.vegaLite.buildSrcSpecToplevelMod.AutoSizeParams
+import typings.vegaLite.buildSrcSpecToplevelMod.AutosizeType
+import typings.vegaLite.buildSrcSpecToplevelMod.Padding
+import typings.vegaLite.buildSrcSpecToplevelMod.TopLevelParameter
+import typings.vegaLite.buildSrcTitleMod.TitleParams
+import typings.vegaLite.buildSrcTransformMod.Transform
+import typings.vegaLite.buildSrcUtilMod.Dict
 import typings.vegaLite.vegaLiteStrings.flush
 import typings.vegaLite.vegaLiteStrings.full
-import typings.vegaTypings.encodeMod.Text
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaTypings.typesSpecEncodeMod.Text
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +44,7 @@ trait TopLevelGenericHConcatSpe
     *
     * __Default value:__ `"white"`
     */
-  var background: js.UndefOr[typings.vegaTypings.colorMod.Color | ExprRef | SignalRef] = js.undefined
+  var background: js.UndefOr[typings.vegaTypings.typesSpecColorMod.Color | ExprRef | SignalRef] = js.undefined
   
   /**
     * The bounds calculation method to use for determining the extent of a sub-plot. One of `full` (the default) or `flush`.
@@ -66,18 +66,18 @@ trait TopLevelGenericHConcatSpe
   /**
     * Vega-Lite configuration object. This property can only be defined at the top-level of a specification.
     */
-  var config: js.UndefOr[typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]] = js.undefined
+  var config: js.UndefOr[typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef]] = js.undefined
   
   /**
     * An object describing the data source. Set to `null` to ignore the parent's data source. If no data is set, it is derived from the parent.
     */
-  var data: js.UndefOr[typings.vegaLite.srcDataMod.Data | Null] = js.undefined
+  var data: js.UndefOr[typings.vegaLite.buildSrcDataMod.Data | Null] = js.undefined
   
   /**
     * A global data store for named datasets. This is a mapping from names to inline datasets.
     * This can be an array of objects or primitive values or a string. Arrays of primitive values are ingested as objects with a `data` property.
     */
-  var datasets: js.UndefOr[typings.vegaLite.toplevelMod.Datasets] = js.undefined
+  var datasets: js.UndefOr[typings.vegaLite.buildSrcSpecToplevelMod.Datasets] = js.undefined
   
   /**
     * Description of this mark for commenting purpose.
@@ -152,7 +152,7 @@ object TopLevelGenericHConcatSpe {
     
     inline def setAutosizeUndefined: Self = StObject.set(x, "autosize", js.undefined)
     
-    inline def setBackground(value: typings.vegaTypings.colorMod.Color | ExprRef | SignalRef): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: typings.vegaTypings.typesSpecColorMod.Color | ExprRef | SignalRef): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
@@ -164,17 +164,17 @@ object TopLevelGenericHConcatSpe {
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    inline def setData(value: typings.vegaLite.srcDataMod.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: typings.vegaLite.buildSrcDataMod.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataNull: Self = StObject.set(x, "data", null)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDatasets(value: typings.vegaLite.toplevelMod.Datasets): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
+    inline def setDatasets(value: typings.vegaLite.buildSrcSpecToplevelMod.Datasets): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
     
     inline def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
     

@@ -5,7 +5,7 @@ import typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.floor
 import typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.round
 import typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.same
 import typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.valid
-import typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding
+import typings.tensorflowTfjsCore.distOpsConvUtilMod.ExplicitPadding
 import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike

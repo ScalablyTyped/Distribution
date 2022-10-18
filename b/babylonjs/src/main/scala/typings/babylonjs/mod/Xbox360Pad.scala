@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Xbox360Pad")
 @js.native
 open class Xbox360Pad protected ()
-  extends typings.babylonjs.legacyMod.Xbox360Pad {
+  extends typings.babylonjs.legacyLegacyMod.Xbox360Pad {
   /**
     * Creates a new XBox360 gamepad object
     * @param id defines the id of this gamepad

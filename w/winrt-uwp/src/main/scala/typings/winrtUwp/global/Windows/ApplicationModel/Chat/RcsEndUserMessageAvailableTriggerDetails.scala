@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data to the background task about a new message. */
-@JSGlobal("Windows.ApplicationModel.Chat.RcsEndUserMessageAvailableTriggerDetails")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.RcsEndUserMessageAvailableTriggerDetails")
 @js.native
-abstract class RcsEndUserMessageAvailableTriggerDetails ()
+open class RcsEndUserMessageAvailableTriggerDetails ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.RcsEndUserMessageAvailableTriggerDetails {
   

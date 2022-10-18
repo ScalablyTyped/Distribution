@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "datastore-core" : "8.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "datastore-core" : "8.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

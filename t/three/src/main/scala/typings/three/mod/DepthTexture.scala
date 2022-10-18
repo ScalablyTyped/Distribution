@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "DepthTexture")
 @js.native
 open class DepthTexture protected ()
-  extends typings.three.threeMod.DepthTexture {
+  extends typings.three.srcThreeMod.DepthTexture {
   /**
     * @param width
     * @param height

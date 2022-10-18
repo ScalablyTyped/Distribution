@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,9 +44,7 @@ trait AutoscalingPolicy extends StObject {
     * all scaling schedules is applied. Up to 128 scaling schedules are allowed.
     */
   var scalingSchedules: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.AutoscalingPolicyScalingSchedule}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AutoscalingPolicy & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.AutoscalingPolicyScalingSchedule} */ js.Any
   ] = js.undefined
 }
 object AutoscalingPolicy {
@@ -94,9 +91,7 @@ object AutoscalingPolicy {
     inline def setScaleInControlUndefined: Self = StObject.set(x, "scaleInControl", js.undefined)
     
     inline def setScalingSchedules(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.AutoscalingPolicyScalingSchedule}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AutoscalingPolicy & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.AutoscalingPolicyScalingSchedule} */ js.Any
     ): Self = StObject.set(x, "scalingSchedules", value.asInstanceOf[js.Any])
     
     inline def setScalingSchedulesUndefined: Self = StObject.set(x, "scalingSchedules", js.undefined)

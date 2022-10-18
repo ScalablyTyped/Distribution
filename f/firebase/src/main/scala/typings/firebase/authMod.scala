@@ -137,53 +137,54 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object authMod {
   
-  @JSImport("firebase/analytics/dist/auth", JSImport.Namespace)
+  @JSImport("firebase/auth", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   object ActionCodeOperation {
     
     /** The email link sign-in action. */
-    @JSImport("firebase/analytics/dist/auth", "ActionCodeOperation.EMAIL_SIGNIN")
+    @JSImport("firebase/auth", "ActionCodeOperation.EMAIL_SIGNIN")
     @js.native
     val EMAIL_SIGNIN: typings.firebase.firebaseStrings.EMAIL_SIGNIN = js.native
     
     /** The password reset action. */
-    @JSImport("firebase/analytics/dist/auth", "ActionCodeOperation.PASSWORD_RESET")
+    @JSImport("firebase/auth", "ActionCodeOperation.PASSWORD_RESET")
     @js.native
     val PASSWORD_RESET: typings.firebase.firebaseStrings.PASSWORD_RESET = js.native
     
     /** The email revocation action. */
-    @JSImport("firebase/analytics/dist/auth", "ActionCodeOperation.RECOVER_EMAIL")
+    @JSImport("firebase/auth", "ActionCodeOperation.RECOVER_EMAIL")
     @js.native
     val RECOVER_EMAIL: typings.firebase.firebaseStrings.RECOVER_EMAIL = js.native
     
     /** The revert second factor addition email action. */
-    @JSImport("firebase/analytics/dist/auth", "ActionCodeOperation.REVERT_SECOND_FACTOR_ADDITION")
+    @JSImport("firebase/auth", "ActionCodeOperation.REVERT_SECOND_FACTOR_ADDITION")
     @js.native
     val REVERT_SECOND_FACTOR_ADDITION: typings.firebase.firebaseStrings.REVERT_SECOND_FACTOR_ADDITION = js.native
     
     /** The revert second factor addition email action. */
-    @JSImport("firebase/analytics/dist/auth", "ActionCodeOperation.VERIFY_AND_CHANGE_EMAIL")
+    @JSImport("firebase/auth", "ActionCodeOperation.VERIFY_AND_CHANGE_EMAIL")
     @js.native
     val VERIFY_AND_CHANGE_EMAIL: typings.firebase.firebaseStrings.VERIFY_AND_CHANGE_EMAIL = js.native
     
     /** The email verification action. */
-    @JSImport("firebase/analytics/dist/auth", "ActionCodeOperation.VERIFY_EMAIL")
+    @JSImport("firebase/auth", "ActionCodeOperation.VERIFY_EMAIL")
     @js.native
     val VERIFY_EMAIL: typings.firebase.firebaseStrings.VERIFY_EMAIL = js.native
   }
   
-  @JSImport("firebase/analytics/dist/auth", "ActionCodeURL")
+  @JSImport("firebase/auth", "ActionCodeURL")
   @js.native
   open class ActionCodeURL ()
-    extends typings.firebaseAuth.mod.ActionCodeURL
+    extends typings.firebase.authDistAuthMod.ActionCodeURL
   /* static members */
   object ActionCodeURL {
     
-    @JSImport("firebase/analytics/dist/auth", "ActionCodeURL")
+    @JSImport("firebase/auth", "ActionCodeURL")
     @js.native
     val ^ : js.Any = js.native
     
@@ -200,402 +201,402 @@ object authMod {
     inline def parseLink(link: String): typings.firebaseAuth.mod.ActionCodeURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLink")(link.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.mod.ActionCodeURL | Null]
   }
   
-  @JSImport("firebase/analytics/dist/auth", "AuthCredential")
+  @JSImport("firebase/auth", "AuthCredential")
   @js.native
   open class AuthCredential ()
-    extends typings.firebaseAuth.mod.AuthCredential
+    extends typings.firebase.authDistAuthMod.AuthCredential
   
   object AuthErrorCodes {
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.ADMIN_ONLY_OPERATION")
+    @JSImport("firebase/auth", "AuthErrorCodes.ADMIN_ONLY_OPERATION")
     @js.native
     val ADMIN_ONLY_OPERATION: `authSlashadmin-restricted-operation` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.ALREADY_INITIALIZED")
+    @JSImport("firebase/auth", "AuthErrorCodes.ALREADY_INITIALIZED")
     @js.native
     val ALREADY_INITIALIZED: `authSlashalready-initialized` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.APP_NOT_AUTHORIZED")
+    @JSImport("firebase/auth", "AuthErrorCodes.APP_NOT_AUTHORIZED")
     @js.native
     val APP_NOT_AUTHORIZED: `authSlashapp-not-authorized` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.APP_NOT_INSTALLED")
+    @JSImport("firebase/auth", "AuthErrorCodes.APP_NOT_INSTALLED")
     @js.native
     val APP_NOT_INSTALLED: `authSlashapp-not-installed` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.ARGUMENT_ERROR")
+    @JSImport("firebase/auth", "AuthErrorCodes.ARGUMENT_ERROR")
     @js.native
     val ARGUMENT_ERROR: `authSlashargument-error` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.CAPTCHA_CHECK_FAILED")
+    @JSImport("firebase/auth", "AuthErrorCodes.CAPTCHA_CHECK_FAILED")
     @js.native
     val CAPTCHA_CHECK_FAILED: `authSlashcaptcha-check-failed` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.CODE_EXPIRED")
+    @JSImport("firebase/auth", "AuthErrorCodes.CODE_EXPIRED")
     @js.native
     val CODE_EXPIRED: `authSlashcode-expired` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.CORDOVA_NOT_READY")
+    @JSImport("firebase/auth", "AuthErrorCodes.CORDOVA_NOT_READY")
     @js.native
     val CORDOVA_NOT_READY: `authSlashcordova-not-ready` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.CORS_UNSUPPORTED")
+    @JSImport("firebase/auth", "AuthErrorCodes.CORS_UNSUPPORTED")
     @js.native
     val CORS_UNSUPPORTED: `authSlashcors-unsupported` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.CREDENTIAL_ALREADY_IN_USE")
+    @JSImport("firebase/auth", "AuthErrorCodes.CREDENTIAL_ALREADY_IN_USE")
     @js.native
     val CREDENTIAL_ALREADY_IN_USE: `authSlashcredential-already-in-use` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.CREDENTIAL_MISMATCH")
+    @JSImport("firebase/auth", "AuthErrorCodes.CREDENTIAL_MISMATCH")
     @js.native
     val CREDENTIAL_MISMATCH: `authSlashcustom-token-mismatch` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.CREDENTIAL_TOO_OLD_LOGIN_AGAIN")
+    @JSImport("firebase/auth", "AuthErrorCodes.CREDENTIAL_TOO_OLD_LOGIN_AGAIN")
     @js.native
     val CREDENTIAL_TOO_OLD_LOGIN_AGAIN: `authSlashrequires-recent-login` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.DEPENDENT_SDK_INIT_BEFORE_AUTH")
+    @JSImport("firebase/auth", "AuthErrorCodes.DEPENDENT_SDK_INIT_BEFORE_AUTH")
     @js.native
     val DEPENDENT_SDK_INIT_BEFORE_AUTH: `authSlashdependent-sdk-initialized-before-auth` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.DYNAMIC_LINK_NOT_ACTIVATED")
+    @JSImport("firebase/auth", "AuthErrorCodes.DYNAMIC_LINK_NOT_ACTIVATED")
     @js.native
     val DYNAMIC_LINK_NOT_ACTIVATED: `authSlashdynamic-link-not-activated` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.EMAIL_CHANGE_NEEDS_VERIFICATION")
+    @JSImport("firebase/auth", "AuthErrorCodes.EMAIL_CHANGE_NEEDS_VERIFICATION")
     @js.native
     val EMAIL_CHANGE_NEEDS_VERIFICATION: `authSlashemail-change-needs-verification` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.EMAIL_EXISTS")
+    @JSImport("firebase/auth", "AuthErrorCodes.EMAIL_EXISTS")
     @js.native
     val EMAIL_EXISTS: `authSlashemail-already-in-use` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.EMULATOR_CONFIG_FAILED")
+    @JSImport("firebase/auth", "AuthErrorCodes.EMULATOR_CONFIG_FAILED")
     @js.native
     val EMULATOR_CONFIG_FAILED: `authSlashemulator-config-failed` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.EXPIRED_OOB_CODE")
+    @JSImport("firebase/auth", "AuthErrorCodes.EXPIRED_OOB_CODE")
     @js.native
     val EXPIRED_OOB_CODE: `authSlashexpired-action-code` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.EXPIRED_POPUP_REQUEST")
+    @JSImport("firebase/auth", "AuthErrorCodes.EXPIRED_POPUP_REQUEST")
     @js.native
     val EXPIRED_POPUP_REQUEST: `authSlashcancelled-popup-request` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INTERNAL_ERROR")
+    @JSImport("firebase/auth", "AuthErrorCodes.INTERNAL_ERROR")
     @js.native
     val INTERNAL_ERROR: `authSlashinternal-error` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_API_KEY")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_API_KEY")
     @js.native
     val INVALID_API_KEY: `authSlashinvalid-api-key` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_APP_CREDENTIAL")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_APP_CREDENTIAL")
     @js.native
     val INVALID_APP_CREDENTIAL: `authSlashinvalid-app-credential` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_APP_ID")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_APP_ID")
     @js.native
     val INVALID_APP_ID: `authSlashinvalid-app-id` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_AUTH")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_AUTH")
     @js.native
     val INVALID_AUTH: `authSlashinvalid-user-token` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_AUTH_EVENT")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_AUTH_EVENT")
     @js.native
     val INVALID_AUTH_EVENT: `authSlashinvalid-auth-event` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_CERT_HASH")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_CERT_HASH")
     @js.native
     val INVALID_CERT_HASH: `authSlashinvalid-cert-hash` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_CODE")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_CODE")
     @js.native
     val INVALID_CODE: `authSlashinvalid-verification-code` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_CONTINUE_URI")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_CONTINUE_URI")
     @js.native
     val INVALID_CONTINUE_URI: `authSlashinvalid-continue-uri` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_CORDOVA_CONFIGURATION")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_CORDOVA_CONFIGURATION")
     @js.native
     val INVALID_CORDOVA_CONFIGURATION: `authSlashinvalid-cordova-configuration` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_CUSTOM_TOKEN")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_CUSTOM_TOKEN")
     @js.native
     val INVALID_CUSTOM_TOKEN: `authSlashinvalid-custom-token` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_DYNAMIC_LINK_DOMAIN")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_DYNAMIC_LINK_DOMAIN")
     @js.native
     val INVALID_DYNAMIC_LINK_DOMAIN: `authSlashinvalid-dynamic-link-domain` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_EMAIL")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_EMAIL")
     @js.native
     val INVALID_EMAIL: `authSlashinvalid-email` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_EMULATOR_SCHEME")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_EMULATOR_SCHEME")
     @js.native
     val INVALID_EMULATOR_SCHEME: `authSlashinvalid-emulator-scheme` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_IDP_RESPONSE")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_IDP_RESPONSE")
     @js.native
     val INVALID_IDP_RESPONSE: `authSlashinvalid-credential` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_MESSAGE_PAYLOAD")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_MESSAGE_PAYLOAD")
     @js.native
     val INVALID_MESSAGE_PAYLOAD: `authSlashinvalid-message-payload` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_MFA_SESSION")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_MFA_SESSION")
     @js.native
     val INVALID_MFA_SESSION: `authSlashinvalid-multi-factor-session` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_OAUTH_CLIENT_ID")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_OAUTH_CLIENT_ID")
     @js.native
     val INVALID_OAUTH_CLIENT_ID: `authSlashinvalid-oauth-client-id` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_OAUTH_PROVIDER")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_OAUTH_PROVIDER")
     @js.native
     val INVALID_OAUTH_PROVIDER: `authSlashinvalid-oauth-provider` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_OOB_CODE")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_OOB_CODE")
     @js.native
     val INVALID_OOB_CODE: `authSlashinvalid-action-code` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_ORIGIN")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_ORIGIN")
     @js.native
     val INVALID_ORIGIN: `authSlashunauthorized-domain` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_PASSWORD")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_PASSWORD")
     @js.native
     val INVALID_PASSWORD: `authSlashwrong-password` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_PERSISTENCE")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_PERSISTENCE")
     @js.native
     val INVALID_PERSISTENCE: `authSlashinvalid-persistence-type` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_PHONE_NUMBER")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_PHONE_NUMBER")
     @js.native
     val INVALID_PHONE_NUMBER: `authSlashinvalid-phone-number` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_PROVIDER_ID")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_PROVIDER_ID")
     @js.native
     val INVALID_PROVIDER_ID: `authSlashinvalid-provider-id` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_RECIPIENT_EMAIL")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_RECIPIENT_EMAIL")
     @js.native
     val INVALID_RECIPIENT_EMAIL: `authSlashinvalid-recipient-email` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_SENDER")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_SENDER")
     @js.native
     val INVALID_SENDER: `authSlashinvalid-sender` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_SESSION_INFO")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_SESSION_INFO")
     @js.native
     val INVALID_SESSION_INFO: `authSlashinvalid-verification-id` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.INVALID_TENANT_ID")
+    @JSImport("firebase/auth", "AuthErrorCodes.INVALID_TENANT_ID")
     @js.native
     val INVALID_TENANT_ID: `authSlashinvalid-tenant-id` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MFA_INFO_NOT_FOUND")
+    @JSImport("firebase/auth", "AuthErrorCodes.MFA_INFO_NOT_FOUND")
     @js.native
     val MFA_INFO_NOT_FOUND: `authSlashmulti-factor-info-not-found` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MFA_REQUIRED")
+    @JSImport("firebase/auth", "AuthErrorCodes.MFA_REQUIRED")
     @js.native
     val MFA_REQUIRED: `authSlashmulti-factor-auth-required` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MISSING_ANDROID_PACKAGE_NAME")
+    @JSImport("firebase/auth", "AuthErrorCodes.MISSING_ANDROID_PACKAGE_NAME")
     @js.native
     val MISSING_ANDROID_PACKAGE_NAME: `authSlashmissing-android-pkg-name` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MISSING_APP_CREDENTIAL")
+    @JSImport("firebase/auth", "AuthErrorCodes.MISSING_APP_CREDENTIAL")
     @js.native
     val MISSING_APP_CREDENTIAL: `authSlashmissing-app-credential` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MISSING_AUTH_DOMAIN")
+    @JSImport("firebase/auth", "AuthErrorCodes.MISSING_AUTH_DOMAIN")
     @js.native
     val MISSING_AUTH_DOMAIN: `authSlashauth-domain-config-required` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MISSING_CODE")
+    @JSImport("firebase/auth", "AuthErrorCodes.MISSING_CODE")
     @js.native
     val MISSING_CODE: `authSlashmissing-verification-code` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MISSING_CONTINUE_URI")
+    @JSImport("firebase/auth", "AuthErrorCodes.MISSING_CONTINUE_URI")
     @js.native
     val MISSING_CONTINUE_URI: `authSlashmissing-continue-uri` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MISSING_IFRAME_START")
+    @JSImport("firebase/auth", "AuthErrorCodes.MISSING_IFRAME_START")
     @js.native
     val MISSING_IFRAME_START: `authSlashmissing-iframe-start` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MISSING_IOS_BUNDLE_ID")
+    @JSImport("firebase/auth", "AuthErrorCodes.MISSING_IOS_BUNDLE_ID")
     @js.native
     val MISSING_IOS_BUNDLE_ID: `authSlashmissing-ios-bundle-id` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MISSING_MFA_INFO")
+    @JSImport("firebase/auth", "AuthErrorCodes.MISSING_MFA_INFO")
     @js.native
     val MISSING_MFA_INFO: `authSlashmissing-multi-factor-info` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MISSING_MFA_SESSION")
+    @JSImport("firebase/auth", "AuthErrorCodes.MISSING_MFA_SESSION")
     @js.native
     val MISSING_MFA_SESSION: `authSlashmissing-multi-factor-session` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MISSING_OR_INVALID_NONCE")
+    @JSImport("firebase/auth", "AuthErrorCodes.MISSING_OR_INVALID_NONCE")
     @js.native
     val MISSING_OR_INVALID_NONCE: `authSlashmissing-or-invalid-nonce` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MISSING_PHONE_NUMBER")
+    @JSImport("firebase/auth", "AuthErrorCodes.MISSING_PHONE_NUMBER")
     @js.native
     val MISSING_PHONE_NUMBER: `authSlashmissing-phone-number` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MISSING_SESSION_INFO")
+    @JSImport("firebase/auth", "AuthErrorCodes.MISSING_SESSION_INFO")
     @js.native
     val MISSING_SESSION_INFO: `authSlashmissing-verification-id` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.MODULE_DESTROYED")
+    @JSImport("firebase/auth", "AuthErrorCodes.MODULE_DESTROYED")
     @js.native
     val MODULE_DESTROYED: `authSlashapp-deleted` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.NEED_CONFIRMATION")
+    @JSImport("firebase/auth", "AuthErrorCodes.NEED_CONFIRMATION")
     @js.native
     val NEED_CONFIRMATION: `authSlashaccount-exists-with-different-credential` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.NETWORK_REQUEST_FAILED")
+    @JSImport("firebase/auth", "AuthErrorCodes.NETWORK_REQUEST_FAILED")
     @js.native
     val NETWORK_REQUEST_FAILED: `authSlashnetwork-request-failed` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.NO_AUTH_EVENT")
+    @JSImport("firebase/auth", "AuthErrorCodes.NO_AUTH_EVENT")
     @js.native
     val NO_AUTH_EVENT: `authSlashno-auth-event` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.NO_SUCH_PROVIDER")
+    @JSImport("firebase/auth", "AuthErrorCodes.NO_SUCH_PROVIDER")
     @js.native
     val NO_SUCH_PROVIDER: `authSlashno-such-provider` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.NULL_USER")
+    @JSImport("firebase/auth", "AuthErrorCodes.NULL_USER")
     @js.native
     val NULL_USER: `authSlashnull-user` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.OPERATION_NOT_ALLOWED")
+    @JSImport("firebase/auth", "AuthErrorCodes.OPERATION_NOT_ALLOWED")
     @js.native
     val OPERATION_NOT_ALLOWED: `authSlashoperation-not-allowed` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.OPERATION_NOT_SUPPORTED")
+    @JSImport("firebase/auth", "AuthErrorCodes.OPERATION_NOT_SUPPORTED")
     @js.native
     val OPERATION_NOT_SUPPORTED: `authSlashoperation-not-supported-in-this-environment` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.POPUP_BLOCKED")
+    @JSImport("firebase/auth", "AuthErrorCodes.POPUP_BLOCKED")
     @js.native
     val POPUP_BLOCKED: `authSlashpopup-blocked` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.POPUP_CLOSED_BY_USER")
+    @JSImport("firebase/auth", "AuthErrorCodes.POPUP_CLOSED_BY_USER")
     @js.native
     val POPUP_CLOSED_BY_USER: `authSlashpopup-closed-by-user` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.PROVIDER_ALREADY_LINKED")
+    @JSImport("firebase/auth", "AuthErrorCodes.PROVIDER_ALREADY_LINKED")
     @js.native
     val PROVIDER_ALREADY_LINKED: `authSlashprovider-already-linked` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.QUOTA_EXCEEDED")
+    @JSImport("firebase/auth", "AuthErrorCodes.QUOTA_EXCEEDED")
     @js.native
     val QUOTA_EXCEEDED: `authSlashquota-exceeded` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.REDIRECT_CANCELLED_BY_USER")
+    @JSImport("firebase/auth", "AuthErrorCodes.REDIRECT_CANCELLED_BY_USER")
     @js.native
     val REDIRECT_CANCELLED_BY_USER: `authSlashredirect-cancelled-by-user` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.REDIRECT_OPERATION_PENDING")
+    @JSImport("firebase/auth", "AuthErrorCodes.REDIRECT_OPERATION_PENDING")
     @js.native
     val REDIRECT_OPERATION_PENDING: `authSlashredirect-operation-pending` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.REJECTED_CREDENTIAL")
+    @JSImport("firebase/auth", "AuthErrorCodes.REJECTED_CREDENTIAL")
     @js.native
     val REJECTED_CREDENTIAL: `authSlashrejected-credential` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.SECOND_FACTOR_ALREADY_ENROLLED")
+    @JSImport("firebase/auth", "AuthErrorCodes.SECOND_FACTOR_ALREADY_ENROLLED")
     @js.native
     val SECOND_FACTOR_ALREADY_ENROLLED: `authSlashsecond-factor-already-in-use` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.SECOND_FACTOR_LIMIT_EXCEEDED")
+    @JSImport("firebase/auth", "AuthErrorCodes.SECOND_FACTOR_LIMIT_EXCEEDED")
     @js.native
     val SECOND_FACTOR_LIMIT_EXCEEDED: `authSlashmaximum-second-factor-count-exceeded` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.TENANT_ID_MISMATCH")
+    @JSImport("firebase/auth", "AuthErrorCodes.TENANT_ID_MISMATCH")
     @js.native
     val TENANT_ID_MISMATCH: `authSlashtenant-id-mismatch` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.TIMEOUT")
+    @JSImport("firebase/auth", "AuthErrorCodes.TIMEOUT")
     @js.native
     val TIMEOUT: authSlashtimeout = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.TOKEN_EXPIRED")
+    @JSImport("firebase/auth", "AuthErrorCodes.TOKEN_EXPIRED")
     @js.native
     val TOKEN_EXPIRED: `authSlashuser-token-expired` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.TOO_MANY_ATTEMPTS_TRY_LATER")
+    @JSImport("firebase/auth", "AuthErrorCodes.TOO_MANY_ATTEMPTS_TRY_LATER")
     @js.native
     val TOO_MANY_ATTEMPTS_TRY_LATER: `authSlashtoo-many-requests` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.UNAUTHORIZED_DOMAIN")
+    @JSImport("firebase/auth", "AuthErrorCodes.UNAUTHORIZED_DOMAIN")
     @js.native
     val UNAUTHORIZED_DOMAIN: `authSlashunauthorized-continue-uri` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.UNSUPPORTED_FIRST_FACTOR")
+    @JSImport("firebase/auth", "AuthErrorCodes.UNSUPPORTED_FIRST_FACTOR")
     @js.native
     val UNSUPPORTED_FIRST_FACTOR: `authSlashunsupported-first-factor` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.UNSUPPORTED_PERSISTENCE")
+    @JSImport("firebase/auth", "AuthErrorCodes.UNSUPPORTED_PERSISTENCE")
     @js.native
     val UNSUPPORTED_PERSISTENCE: `authSlashunsupported-persistence-type` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.UNSUPPORTED_TENANT_OPERATION")
+    @JSImport("firebase/auth", "AuthErrorCodes.UNSUPPORTED_TENANT_OPERATION")
     @js.native
     val UNSUPPORTED_TENANT_OPERATION: `authSlashunsupported-tenant-operation` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.UNVERIFIED_EMAIL")
+    @JSImport("firebase/auth", "AuthErrorCodes.UNVERIFIED_EMAIL")
     @js.native
     val UNVERIFIED_EMAIL: `authSlashunverified-email` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.USER_CANCELLED")
+    @JSImport("firebase/auth", "AuthErrorCodes.USER_CANCELLED")
     @js.native
     val USER_CANCELLED: `authSlashuser-cancelled` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.USER_DELETED")
+    @JSImport("firebase/auth", "AuthErrorCodes.USER_DELETED")
     @js.native
     val USER_DELETED: `authSlashuser-not-found` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.USER_DISABLED")
+    @JSImport("firebase/auth", "AuthErrorCodes.USER_DISABLED")
     @js.native
     val USER_DISABLED: `authSlashuser-disabled` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.USER_MISMATCH")
+    @JSImport("firebase/auth", "AuthErrorCodes.USER_MISMATCH")
     @js.native
     val USER_MISMATCH: `authSlashuser-mismatch` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.USER_SIGNED_OUT")
+    @JSImport("firebase/auth", "AuthErrorCodes.USER_SIGNED_OUT")
     @js.native
     val USER_SIGNED_OUT: `authSlashuser-signed-out` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.WEAK_PASSWORD")
+    @JSImport("firebase/auth", "AuthErrorCodes.WEAK_PASSWORD")
     @js.native
     val WEAK_PASSWORD: `authSlashweak-password` = js.native
     
-    @JSImport("firebase/analytics/dist/auth", "AuthErrorCodes.WEB_STORAGE_UNSUPPORTED")
+    @JSImport("firebase/auth", "AuthErrorCodes.WEB_STORAGE_UNSUPPORTED")
     @js.native
     val WEB_STORAGE_UNSUPPORTED: `authSlashweb-storage-unsupported` = js.native
   }
   
-  @JSImport("firebase/analytics/dist/auth", "EmailAuthCredential")
+  @JSImport("firebase/auth", "EmailAuthCredential")
   @js.native
   open class EmailAuthCredential ()
-    extends typings.firebaseAuth.mod.EmailAuthCredential
+    extends typings.firebase.authDistAuthMod.EmailAuthCredential
   /* static members */
   object EmailAuthCredential {
     
-    @JSImport("firebase/analytics/dist/auth", "EmailAuthCredential")
+    @JSImport("firebase/auth", "EmailAuthCredential")
     @js.native
     val ^ : js.Any = js.native
     
@@ -611,35 +612,35 @@ object authMod {
     inline def fromJSON(json: js.Object): typings.firebaseAuth.mod.EmailAuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.mod.EmailAuthCredential | Null]
   }
   
-  @JSImport("firebase/analytics/dist/auth", "EmailAuthProvider")
+  @JSImport("firebase/auth", "EmailAuthProvider")
   @js.native
   open class EmailAuthProvider ()
-    extends typings.firebaseAuth.mod.EmailAuthProvider
+    extends typings.firebase.authDistAuthMod.EmailAuthProvider
   /* static members */
   object EmailAuthProvider {
     
-    @JSImport("firebase/analytics/dist/auth", "EmailAuthProvider")
+    @JSImport("firebase/auth", "EmailAuthProvider")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * Always set to {@link SignInMethod}.EMAIL_LINK.
       */
-    @JSImport("firebase/analytics/dist/auth", "EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD")
+    @JSImport("firebase/auth", "EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD")
     @js.native
     val EMAIL_LINK_SIGN_IN_METHOD: emailLink = js.native
     
     /**
       * Always set to {@link SignInMethod}.EMAIL_PASSWORD.
       */
-    @JSImport("firebase/analytics/dist/auth", "EmailAuthProvider.EMAIL_PASSWORD_SIGN_IN_METHOD")
+    @JSImport("firebase/auth", "EmailAuthProvider.EMAIL_PASSWORD_SIGN_IN_METHOD")
     @js.native
     val EMAIL_PASSWORD_SIGN_IN_METHOD: password = js.native
     
     /**
       * Always set to {@link ProviderId}.PASSWORD, even for email link.
       */
-    @JSImport("firebase/analytics/dist/auth", "EmailAuthProvider.PROVIDER_ID")
+    @JSImport("firebase/auth", "EmailAuthProvider.PROVIDER_ID")
     @js.native
     val PROVIDER_ID: password = js.native
     
@@ -688,24 +689,24 @@ object authMod {
     inline def credentialWithLink(email: String, emailLink: String): typings.firebaseAuth.mod.EmailAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credentialWithLink")(email.asInstanceOf[js.Any], emailLink.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseAuth.mod.EmailAuthCredential]
   }
   
-  @JSImport("firebase/analytics/dist/auth", "FacebookAuthProvider")
+  @JSImport("firebase/auth", "FacebookAuthProvider")
   @js.native
   open class FacebookAuthProvider ()
-    extends typings.firebaseAuth.mod.FacebookAuthProvider
+    extends typings.firebase.authDistAuthMod.FacebookAuthProvider
   /* static members */
   object FacebookAuthProvider {
     
-    @JSImport("firebase/analytics/dist/auth", "FacebookAuthProvider")
+    @JSImport("firebase/auth", "FacebookAuthProvider")
     @js.native
     val ^ : js.Any = js.native
     
     /** Always set to {@link SignInMethod}.FACEBOOK. */
-    @JSImport("firebase/analytics/dist/auth", "FacebookAuthProvider.FACEBOOK_SIGN_IN_METHOD")
+    @JSImport("firebase/auth", "FacebookAuthProvider.FACEBOOK_SIGN_IN_METHOD")
     @js.native
     val FACEBOOK_SIGN_IN_METHOD: facebookDotcom = js.native
     
     /** Always set to {@link ProviderId}.FACEBOOK. */
-    @JSImport("firebase/analytics/dist/auth", "FacebookAuthProvider.PROVIDER_ID")
+    @JSImport("firebase/auth", "FacebookAuthProvider.PROVIDER_ID")
     @js.native
     val PROVIDER_ID: facebookDotcom = js.native
     
@@ -738,7 +739,7 @@ object authMod {
       */
     inline def credentialFromResult(userCredential: UserCredential): typings.firebaseAuth.mod.OAuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromResult")(userCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.mod.OAuthCredential | Null]
     
-    @JSImport("firebase/analytics/dist/auth", "FacebookAuthProvider.credentialFromTaggedObject")
+    @JSImport("firebase/auth", "FacebookAuthProvider.credentialFromTaggedObject")
     @js.native
     def credentialFromTaggedObject: Any = js.native
     inline def credentialFromTaggedObject_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("credentialFromTaggedObject")(x.asInstanceOf[js.Any])
@@ -747,29 +748,29 @@ object authMod {
   object FactorId {
     
     /** Phone as second factor */
-    @JSImport("firebase/analytics/dist/auth", "FactorId.PHONE")
+    @JSImport("firebase/auth", "FactorId.PHONE")
     @js.native
     val PHONE: phone = js.native
   }
   
-  @JSImport("firebase/analytics/dist/auth", "GithubAuthProvider")
+  @JSImport("firebase/auth", "GithubAuthProvider")
   @js.native
   open class GithubAuthProvider ()
-    extends typings.firebaseAuth.mod.GithubAuthProvider
+    extends typings.firebase.authDistAuthMod.GithubAuthProvider
   /* static members */
   object GithubAuthProvider {
     
-    @JSImport("firebase/analytics/dist/auth", "GithubAuthProvider")
+    @JSImport("firebase/auth", "GithubAuthProvider")
     @js.native
     val ^ : js.Any = js.native
     
     /** Always set to {@link SignInMethod}.GITHUB. */
-    @JSImport("firebase/analytics/dist/auth", "GithubAuthProvider.GITHUB_SIGN_IN_METHOD")
+    @JSImport("firebase/auth", "GithubAuthProvider.GITHUB_SIGN_IN_METHOD")
     @js.native
     val GITHUB_SIGN_IN_METHOD: githubDotcom = js.native
     
     /** Always set to {@link ProviderId}.GITHUB. */
-    @JSImport("firebase/analytics/dist/auth", "GithubAuthProvider.PROVIDER_ID")
+    @JSImport("firebase/auth", "GithubAuthProvider.PROVIDER_ID")
     @js.native
     val PROVIDER_ID: githubDotcom = js.native
     
@@ -795,30 +796,30 @@ object authMod {
       */
     inline def credentialFromResult(userCredential: UserCredential): typings.firebaseAuth.mod.OAuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromResult")(userCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.mod.OAuthCredential | Null]
     
-    @JSImport("firebase/analytics/dist/auth", "GithubAuthProvider.credentialFromTaggedObject")
+    @JSImport("firebase/auth", "GithubAuthProvider.credentialFromTaggedObject")
     @js.native
     def credentialFromTaggedObject: Any = js.native
     inline def credentialFromTaggedObject_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("credentialFromTaggedObject")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("firebase/analytics/dist/auth", "GoogleAuthProvider")
+  @JSImport("firebase/auth", "GoogleAuthProvider")
   @js.native
   open class GoogleAuthProvider ()
-    extends typings.firebaseAuth.mod.GoogleAuthProvider
+    extends typings.firebase.authDistAuthMod.GoogleAuthProvider
   /* static members */
   object GoogleAuthProvider {
     
-    @JSImport("firebase/analytics/dist/auth", "GoogleAuthProvider")
+    @JSImport("firebase/auth", "GoogleAuthProvider")
     @js.native
     val ^ : js.Any = js.native
     
     /** Always set to {@link SignInMethod}.GOOGLE. */
-    @JSImport("firebase/analytics/dist/auth", "GoogleAuthProvider.GOOGLE_SIGN_IN_METHOD")
+    @JSImport("firebase/auth", "GoogleAuthProvider.GOOGLE_SIGN_IN_METHOD")
     @js.native
     val GOOGLE_SIGN_IN_METHOD: googleDotcom = js.native
     
     /** Always set to {@link ProviderId}.GOOGLE. */
-    @JSImport("firebase/analytics/dist/auth", "GoogleAuthProvider.PROVIDER_ID")
+    @JSImport("firebase/auth", "GoogleAuthProvider.PROVIDER_ID")
     @js.native
     val PROVIDER_ID: googleDotcom = js.native
     
@@ -856,20 +857,20 @@ object authMod {
       */
     inline def credentialFromResult(userCredential: UserCredential): typings.firebaseAuth.mod.OAuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromResult")(userCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.mod.OAuthCredential | Null]
     
-    @JSImport("firebase/analytics/dist/auth", "GoogleAuthProvider.credentialFromTaggedObject")
+    @JSImport("firebase/auth", "GoogleAuthProvider.credentialFromTaggedObject")
     @js.native
     def credentialFromTaggedObject: Any = js.native
     inline def credentialFromTaggedObject_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("credentialFromTaggedObject")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("firebase/analytics/dist/auth", "OAuthCredential")
+  @JSImport("firebase/auth", "OAuthCredential")
   @js.native
   open class OAuthCredential ()
-    extends typings.firebaseAuth.mod.OAuthCredential
+    extends typings.firebase.authDistAuthMod.OAuthCredential
   /* static members */
   object OAuthCredential {
     
-    @JSImport("firebase/analytics/dist/auth", "OAuthCredential")
+    @JSImport("firebase/auth", "OAuthCredential")
     @js.native
     val ^ : js.Any = js.native
     
@@ -886,14 +887,14 @@ object authMod {
     inline def fromJSON(json: js.Object): typings.firebaseAuth.mod.OAuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.mod.OAuthCredential | Null]
   }
   
-  @JSImport("firebase/analytics/dist/auth", "OAuthProvider")
+  @JSImport("firebase/auth", "OAuthProvider")
   @js.native
   open class OAuthProvider ()
-    extends typings.firebaseAuth.mod.OAuthProvider
+    extends typings.firebase.authDistAuthMod.OAuthProvider
   /* static members */
   object OAuthProvider {
     
-    @JSImport("firebase/analytics/dist/auth", "OAuthProvider")
+    @JSImport("firebase/auth", "OAuthProvider")
     @js.native
     val ^ : js.Any = js.native
     
@@ -919,7 +920,7 @@ object authMod {
       */
     inline def credentialFromResult(userCredential: UserCredential): typings.firebaseAuth.mod.OAuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromResult")(userCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.mod.OAuthCredential | Null]
     
-    @JSImport("firebase/analytics/dist/auth", "OAuthProvider.oauthCredentialFromTaggedObject")
+    @JSImport("firebase/auth", "OAuthProvider.oauthCredentialFromTaggedObject")
     @js.native
     def oauthCredentialFromTaggedObject: Any = js.native
     inline def oauthCredentialFromTaggedObject_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oauthCredentialFromTaggedObject")(x.asInstanceOf[js.Any])
@@ -928,29 +929,29 @@ object authMod {
   object OperationType {
     
     /** Operation involving linking an additional provider to an already signed-in user. */
-    @JSImport("firebase/analytics/dist/auth", "OperationType.LINK")
+    @JSImport("firebase/auth", "OperationType.LINK")
     @js.native
     val LINK: link = js.native
     
     /** Operation involving using a provider to reauthenticate an already signed-in user. */
-    @JSImport("firebase/analytics/dist/auth", "OperationType.REAUTHENTICATE")
+    @JSImport("firebase/auth", "OperationType.REAUTHENTICATE")
     @js.native
     val REAUTHENTICATE: reauthenticate = js.native
     
     /** Operation involving signing in a user. */
-    @JSImport("firebase/analytics/dist/auth", "OperationType.SIGN_IN")
+    @JSImport("firebase/auth", "OperationType.SIGN_IN")
     @js.native
     val SIGN_IN: signIn = js.native
   }
   
-  @JSImport("firebase/analytics/dist/auth", "PhoneAuthCredential")
+  @JSImport("firebase/auth", "PhoneAuthCredential")
   @js.native
   /* private */ open class PhoneAuthCredential ()
-    extends typings.firebaseAuth.mod.PhoneAuthCredential
+    extends typings.firebase.authDistAuthMod.PhoneAuthCredential
   /* static members */
   object PhoneAuthCredential {
     
-    @JSImport("firebase/analytics/dist/auth", "PhoneAuthCredential")
+    @JSImport("firebase/auth", "PhoneAuthCredential")
     @js.native
     val ^ : js.Any = js.native
     
@@ -959,10 +960,10 @@ object authMod {
     inline def fromJSON(json: js.Object): typings.firebaseAuth.mod.PhoneAuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.mod.PhoneAuthCredential | Null]
   }
   
-  @JSImport("firebase/analytics/dist/auth", "PhoneAuthProvider")
+  @JSImport("firebase/auth", "PhoneAuthProvider")
   @js.native
   open class PhoneAuthProvider protected ()
-    extends typings.firebaseAuth.mod.PhoneAuthProvider {
+    extends typings.firebase.authDistAuthMod.PhoneAuthProvider {
     /**
       * @param auth - The Firebase {@link Auth} instance in which sign-ins should occur.
       *
@@ -972,17 +973,17 @@ object authMod {
   /* static members */
   object PhoneAuthProvider {
     
-    @JSImport("firebase/analytics/dist/auth", "PhoneAuthProvider")
+    @JSImport("firebase/auth", "PhoneAuthProvider")
     @js.native
     val ^ : js.Any = js.native
     
     /** Always set to {@link SignInMethod}.PHONE. */
-    @JSImport("firebase/analytics/dist/auth", "PhoneAuthProvider.PHONE_SIGN_IN_METHOD")
+    @JSImport("firebase/auth", "PhoneAuthProvider.PHONE_SIGN_IN_METHOD")
     @js.native
     val PHONE_SIGN_IN_METHOD: phone = js.native
     
     /** Always set to {@link ProviderId}.PHONE. */
-    @JSImport("firebase/analytics/dist/auth", "PhoneAuthProvider.PROVIDER_ID")
+    @JSImport("firebase/auth", "PhoneAuthProvider.PROVIDER_ID")
     @js.native
     val PROVIDER_ID: phone = js.native
     
@@ -1055,27 +1056,27 @@ object authMod {
       */
     inline def credentialFromResult(userCredential: UserCredential): typings.firebaseAuth.mod.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromResult")(userCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.mod.AuthCredential | Null]
     
-    @JSImport("firebase/analytics/dist/auth", "PhoneAuthProvider.credentialFromTaggedObject")
+    @JSImport("firebase/auth", "PhoneAuthProvider.credentialFromTaggedObject")
     @js.native
     def credentialFromTaggedObject: Any = js.native
     inline def credentialFromTaggedObject_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("credentialFromTaggedObject")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("firebase/analytics/dist/auth", "PhoneMultiFactorGenerator")
+  @JSImport("firebase/auth", "PhoneMultiFactorGenerator")
   @js.native
   /* private */ open class PhoneMultiFactorGenerator ()
-    extends typings.firebaseAuth.mod.PhoneMultiFactorGenerator
+    extends typings.firebase.authDistAuthMod.PhoneMultiFactorGenerator
   /* static members */
   object PhoneMultiFactorGenerator {
     
-    @JSImport("firebase/analytics/dist/auth", "PhoneMultiFactorGenerator")
+    @JSImport("firebase/auth", "PhoneMultiFactorGenerator")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * The identifier of the phone second factor: `phone`.
       */
-    @JSImport("firebase/analytics/dist/auth", "PhoneMultiFactorGenerator.FACTOR_ID")
+    @JSImport("firebase/auth", "PhoneMultiFactorGenerator.FACTOR_ID")
     @js.native
     def FACTOR_ID: String = js.native
     inline def FACTOR_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACTOR_ID")(x.asInstanceOf[js.Any])
@@ -1093,40 +1094,40 @@ object authMod {
   object ProviderId {
     
     /** Facebook provider ID */
-    @JSImport("firebase/analytics/dist/auth", "ProviderId.FACEBOOK")
+    @JSImport("firebase/auth", "ProviderId.FACEBOOK")
     @js.native
     val FACEBOOK: facebookDotcom = js.native
     
     /** GitHub provider ID */
-    @JSImport("firebase/analytics/dist/auth", "ProviderId.GITHUB")
+    @JSImport("firebase/auth", "ProviderId.GITHUB")
     @js.native
     val GITHUB: githubDotcom = js.native
     
     /** Google provider ID */
-    @JSImport("firebase/analytics/dist/auth", "ProviderId.GOOGLE")
+    @JSImport("firebase/auth", "ProviderId.GOOGLE")
     @js.native
     val GOOGLE: googleDotcom = js.native
     
     /** Password provider */
-    @JSImport("firebase/analytics/dist/auth", "ProviderId.PASSWORD")
+    @JSImport("firebase/auth", "ProviderId.PASSWORD")
     @js.native
     val PASSWORD: password = js.native
     
     /** Phone provider */
-    @JSImport("firebase/analytics/dist/auth", "ProviderId.PHONE")
+    @JSImport("firebase/auth", "ProviderId.PHONE")
     @js.native
     val PHONE: phone = js.native
     
     /** Twitter provider ID */
-    @JSImport("firebase/analytics/dist/auth", "ProviderId.TWITTER")
+    @JSImport("firebase/auth", "ProviderId.TWITTER")
     @js.native
     val TWITTER: twitterDotcom = js.native
   }
   
-  @JSImport("firebase/analytics/dist/auth", "RecaptchaVerifier")
+  @JSImport("firebase/auth", "RecaptchaVerifier")
   @js.native
   open class RecaptchaVerifier protected ()
-    extends typings.firebaseAuth.mod.RecaptchaVerifier {
+    extends typings.firebase.authDistAuthMod.RecaptchaVerifier {
     def this(containerOrId: String, parameters: RecaptchaParameters, authExtern: Auth) = this()
     /**
       *
@@ -1151,10 +1152,10 @@ object authMod {
     def this(containerOrId: HTMLElement, parameters: RecaptchaParameters, authExtern: Auth) = this()
   }
   
-  @JSImport("firebase/analytics/dist/auth", "SAMLAuthProvider")
+  @JSImport("firebase/auth", "SAMLAuthProvider")
   @js.native
   open class SAMLAuthProvider protected ()
-    extends typings.firebaseAuth.mod.SAMLAuthProvider {
+    extends typings.firebase.authDistAuthMod.SAMLAuthProvider {
     /**
       * Constructor. The providerId must start with "saml."
       * @param providerId - SAML provider ID.
@@ -1164,7 +1165,7 @@ object authMod {
   /* static members */
   object SAMLAuthProvider {
     
-    @JSImport("firebase/analytics/dist/auth", "SAMLAuthProvider")
+    @JSImport("firebase/auth", "SAMLAuthProvider")
     @js.native
     val ^ : js.Any = js.native
     
@@ -1201,7 +1202,7 @@ object authMod {
       */
     inline def credentialFromResult(userCredential: UserCredential): typings.firebaseAuth.mod.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromResult")(userCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.mod.AuthCredential | Null]
     
-    @JSImport("firebase/analytics/dist/auth", "SAMLAuthProvider.samlCredentialFromTaggedObject")
+    @JSImport("firebase/auth", "SAMLAuthProvider.samlCredentialFromTaggedObject")
     @js.native
     def samlCredentialFromTaggedObject: Any = js.native
     inline def samlCredentialFromTaggedObject_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("samlCredentialFromTaggedObject")(x.asInstanceOf[js.Any])
@@ -1210,59 +1211,59 @@ object authMod {
   object SignInMethod {
     
     /** Email link sign in method */
-    @JSImport("firebase/analytics/dist/auth", "SignInMethod.EMAIL_LINK")
+    @JSImport("firebase/auth", "SignInMethod.EMAIL_LINK")
     @js.native
     val EMAIL_LINK: emailLink = js.native
     
     /** Email/password sign in method */
-    @JSImport("firebase/analytics/dist/auth", "SignInMethod.EMAIL_PASSWORD")
+    @JSImport("firebase/auth", "SignInMethod.EMAIL_PASSWORD")
     @js.native
     val EMAIL_PASSWORD: password = js.native
     
     /** Facebook sign in method */
-    @JSImport("firebase/analytics/dist/auth", "SignInMethod.FACEBOOK")
+    @JSImport("firebase/auth", "SignInMethod.FACEBOOK")
     @js.native
     val FACEBOOK: facebookDotcom = js.native
     
     /** GitHub sign in method */
-    @JSImport("firebase/analytics/dist/auth", "SignInMethod.GITHUB")
+    @JSImport("firebase/auth", "SignInMethod.GITHUB")
     @js.native
     val GITHUB: githubDotcom = js.native
     
     /** Google sign in method */
-    @JSImport("firebase/analytics/dist/auth", "SignInMethod.GOOGLE")
+    @JSImport("firebase/auth", "SignInMethod.GOOGLE")
     @js.native
     val GOOGLE: googleDotcom = js.native
     
     /** Phone sign in method */
-    @JSImport("firebase/analytics/dist/auth", "SignInMethod.PHONE")
+    @JSImport("firebase/auth", "SignInMethod.PHONE")
     @js.native
     val PHONE: phone = js.native
     
     /** Twitter sign in method */
-    @JSImport("firebase/analytics/dist/auth", "SignInMethod.TWITTER")
+    @JSImport("firebase/auth", "SignInMethod.TWITTER")
     @js.native
     val TWITTER: twitterDotcom = js.native
   }
   
-  @JSImport("firebase/analytics/dist/auth", "TwitterAuthProvider")
+  @JSImport("firebase/auth", "TwitterAuthProvider")
   @js.native
   open class TwitterAuthProvider ()
-    extends typings.firebaseAuth.mod.TwitterAuthProvider
+    extends typings.firebase.authDistAuthMod.TwitterAuthProvider
   /* static members */
   object TwitterAuthProvider {
     
-    @JSImport("firebase/analytics/dist/auth", "TwitterAuthProvider")
+    @JSImport("firebase/auth", "TwitterAuthProvider")
     @js.native
     val ^ : js.Any = js.native
     
     /** Always set to {@link ProviderId}.TWITTER. */
-    @JSImport("firebase/analytics/dist/auth", "TwitterAuthProvider.PROVIDER_ID")
+    @JSImport("firebase/auth", "TwitterAuthProvider.PROVIDER_ID")
     @js.native
     val PROVIDER_ID: twitterDotcom = js.native
     
     /** Always set to {@link SignInMethod}.TWITTER. */
-    @JSImport("firebase/analytics/dist/auth", "TwitterAuthProvider.TWITTER_SIGN_IN_METHOD")
+    @JSImport("firebase/auth", "TwitterAuthProvider.TWITTER_SIGN_IN_METHOD")
     @js.native
     val TWITTER_SIGN_IN_METHOD: twitterDotcom = js.native
     
@@ -1289,7 +1290,7 @@ object authMod {
       */
     inline def credentialFromResult(userCredential: UserCredential): typings.firebaseAuth.mod.OAuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromResult")(userCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.mod.OAuthCredential | Null]
     
-    @JSImport("firebase/analytics/dist/auth", "TwitterAuthProvider.credentialFromTaggedObject")
+    @JSImport("firebase/auth", "TwitterAuthProvider.credentialFromTaggedObject")
     @js.native
     def credentialFromTaggedObject: Any = js.native
     inline def credentialFromTaggedObject_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("credentialFromTaggedObject")(x.asInstanceOf[js.Any])
@@ -1304,15 +1305,15 @@ object authMod {
     onAbort: js.Function0[Unit]
   ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeAuthStateChanged")(auth.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
   
-  @JSImport("firebase/analytics/dist/auth", "browserLocalPersistence")
+  @JSImport("firebase/auth", "browserLocalPersistence")
   @js.native
   val browserLocalPersistence: Persistence = js.native
   
-  @JSImport("firebase/analytics/dist/auth", "browserPopupRedirectResolver")
+  @JSImport("firebase/auth", "browserPopupRedirectResolver")
   @js.native
   val browserPopupRedirectResolver: PopupRedirectResolver = js.native
   
-  @JSImport("firebase/analytics/dist/auth", "browserSessionPersistence")
+  @JSImport("firebase/auth", "browserSessionPersistence")
   @js.native
   val browserSessionPersistence: Persistence = js.native
   
@@ -1325,7 +1326,7 @@ object authMod {
   
   inline def createUserWithEmailAndPassword(auth: Auth, email: String, password: String): js.Promise[UserCredential] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUserWithEmailAndPassword")(auth.asInstanceOf[js.Any], email.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserCredential]]
   
-  @JSImport("firebase/analytics/dist/auth", "debugErrorMap")
+  @JSImport("firebase/auth", "debugErrorMap")
   @js.native
   val debugErrorMap: AuthErrorMap = js.native
   
@@ -1349,11 +1350,11 @@ object authMod {
   inline def getRedirectResult(auth: Auth): js.Promise[UserCredential | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRedirectResult")(auth.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UserCredential | Null]]
   inline def getRedirectResult(auth: Auth, resolver: PopupRedirectResolver): js.Promise[UserCredential | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRedirectResult")(auth.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserCredential | Null]]
   
-  @JSImport("firebase/analytics/dist/auth", "inMemoryPersistence")
+  @JSImport("firebase/auth", "inMemoryPersistence")
   @js.native
   val inMemoryPersistence: Persistence = js.native
   
-  @JSImport("firebase/analytics/dist/auth", "indexedDBLocalPersistence")
+  @JSImport("firebase/auth", "indexedDBLocalPersistence")
   @js.native
   val indexedDBLocalPersistence: Persistence = js.native
   
@@ -1386,7 +1387,7 @@ object authMod {
   
   inline def parseActionCodeURL(link: String): typings.firebaseAuth.mod.ActionCodeURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseActionCodeURL")(link.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.mod.ActionCodeURL | Null]
   
-  @JSImport("firebase/analytics/dist/auth", "prodErrorMap")
+  @JSImport("firebase/auth", "prodErrorMap")
   @js.native
   val prodErrorMap: AuthErrorMap = js.native
   

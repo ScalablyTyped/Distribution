@@ -1,0 +1,26 @@
+package typings.actionsOnGoogle.distServiceActionssdkApiV2Mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_INPUT_TYPE
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.TOUCH
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.VOICE
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.KEYBOARD
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.URL
+*/
+trait GoogleActionsV2RawInputInputType extends StObject
+object GoogleActionsV2RawInputInputType {
+  
+  inline def KEYBOARD: typings.actionsOnGoogle.actionsOnGoogleStrings.KEYBOARD = "KEYBOARD".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.KEYBOARD]
+  
+  inline def TOUCH: typings.actionsOnGoogle.actionsOnGoogleStrings.TOUCH = "TOUCH".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TOUCH]
+  
+  inline def UNSPECIFIED_INPUT_TYPE: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_INPUT_TYPE = "UNSPECIFIED_INPUT_TYPE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_INPUT_TYPE]
+  
+  inline def URL: typings.actionsOnGoogle.actionsOnGoogleStrings.URL = "URL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.URL]
+  
+  inline def VOICE: typings.actionsOnGoogle.actionsOnGoogleStrings.VOICE = "VOICE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.VOICE]
+}

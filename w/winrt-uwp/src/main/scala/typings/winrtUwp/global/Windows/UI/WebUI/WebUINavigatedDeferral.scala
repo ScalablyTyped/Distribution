@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages delayed navigation for an app. */
-@JSGlobal("Windows.UI.WebUI.WebUINavigatedDeferral")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUINavigatedDeferral")
 @js.native
-abstract class WebUINavigatedDeferral ()
+open class WebUINavigatedDeferral ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUINavigatedDeferral {
   

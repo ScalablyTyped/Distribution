@@ -2,9 +2,9 @@ package typings.blueprintjsCore.anon
 
 import typings.blueprintjsCore.blueprintjsCoreStrings.horizontal
 import typings.blueprintjsCore.blueprintjsCoreStrings.vertical
-import typings.blueprintjsCore.nonIdealStateMod.NonIdealStateIconSize
-import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
+import typings.blueprintjsCore.libEsmComponentsNonIdealStateNonIdealStateMod.NonIdealStateIconSize
+import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.ReactChild
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element

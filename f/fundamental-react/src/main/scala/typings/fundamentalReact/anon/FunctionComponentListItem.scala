@@ -1,7 +1,7 @@
 package typings.fundamentalReact.anon
 
 import typings.fundamentalReact.fundamentalReactStrings.ListDotItem
-import typings.fundamentalReact.listMod.ListItemProps
+import typings.fundamentalReact.libListListMod.ListItemProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

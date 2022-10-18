@@ -1,6 +1,6 @@
 package typings.formatjsEcma402Abstract.anon
 
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatRoundingType
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatRoundingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

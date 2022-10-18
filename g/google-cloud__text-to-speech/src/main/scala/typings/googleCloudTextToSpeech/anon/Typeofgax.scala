@@ -7,24 +7,24 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.proto
 import typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.rest
-import typings.googleGax.apitypesMod.APICallback
-import typings.googleGax.apitypesMod.GRPCCall
-import typings.googleGax.apitypesMod.GaxCall
-import typings.googleGax.bundleExecutorMod.BundleOptions
-import typings.googleGax.clientInterfaceMod.ClientOptions
-import typings.googleGax.descriptorMod.Descriptor
-import typings.googleGax.gaxMod.BackoffSettings
-import typings.googleGax.gaxMod.BundlingConfig
-import typings.googleGax.gaxMod.CallOptions
-import typings.googleGax.gaxMod.CallSettings
-import typings.googleGax.gaxMod.ClientConfig
-import typings.googleGax.gaxMod.RetryOptions
-import typings.googleGax.grpcMod.GrpcClient
-import typings.googleGax.longRunningDescriptorMod.LongRunningDescriptor
-import typings.googleGax.longrunningMod.LROOperation
+import typings.googleGax.buildSrcApitypesMod.APICallback
+import typings.googleGax.buildSrcApitypesMod.GRPCCall
+import typings.googleGax.buildSrcApitypesMod.GaxCall
+import typings.googleGax.buildSrcBundlingCallsBundleExecutorMod.BundleOptions
+import typings.googleGax.buildSrcClientInterfaceMod.ClientOptions
+import typings.googleGax.buildSrcDescriptorMod.Descriptor
+import typings.googleGax.buildSrcGaxMod.BackoffSettings
+import typings.googleGax.buildSrcGaxMod.BundlingConfig
+import typings.googleGax.buildSrcGaxMod.CallOptions
+import typings.googleGax.buildSrcGaxMod.CallSettings
+import typings.googleGax.buildSrcGaxMod.ClientConfig
+import typings.googleGax.buildSrcGaxMod.RetryOptions
+import typings.googleGax.buildSrcGrpcMod.GrpcClient
+import typings.googleGax.buildSrcLongRunningCallsLongRunningDescriptorMod.LongRunningDescriptor
+import typings.googleGax.buildSrcLongRunningCallsLongrunningMod.LROOperation
+import typings.googleGax.buildSrcStreamingCallsStreamingMod.StreamType
 import typings.googleGax.mod.Operation_
-import typings.googleGax.streamingMod.StreamType
-import typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
+import typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,10 +59,6 @@ trait Typeofgax extends StObject {
   var GrpcClient: TypeofGrpcClientInstantiable = js.native
   
   var IamClient: TypeofIamClient = js.native
-  
-  val IamProtos: TypeofIamProtos = js.native
-  
-  val LocationProtos: TypeofLocationProtosGoogle = js.native
   
   var LocationsClient: TypeofLocationsClient = js.native
   
@@ -279,19 +275,17 @@ trait Typeofgax extends StObject {
   
   val grpc: Typeofgrpc = js.native
   
-  val lro: Typeoflro = js.native
+  val lro: Any = js.native
   
-  def operation(op: LROOperation, longrunningDescriptor: LongRunningDescriptor, backoffSettings: BackoffSettings): typings.googleGax.longrunningMod.Operation_ = js.native
+  def operation(op: LROOperation, longrunningDescriptor: LongRunningDescriptor, backoffSettings: BackoffSettings): typings.googleGax.buildSrcLongRunningCallsLongrunningMod.Operation_ = js.native
   def operation(
     op: LROOperation,
     longrunningDescriptor: LongRunningDescriptor,
     backoffSettings: BackoffSettings,
     callOptions: CallOptions
-  ): typings.googleGax.longrunningMod.Operation_ = js.native
+  ): typings.googleGax.buildSrcLongRunningCallsLongrunningMod.Operation_ = js.native
   
-  val operationsProtos: TypeofoperationsProtosGoogle = js.native
-  
-  val protobuf: TypeofprotobufBufferWriter = js.native
+  val protobuf: TypeofprotobufBufferReader = js.native
   
   val protobufMinimal: TypeofprotobufMinimalBufferReader = js.native
   

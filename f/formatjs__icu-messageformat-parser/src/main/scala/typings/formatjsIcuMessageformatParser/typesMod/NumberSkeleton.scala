@@ -1,7 +1,7 @@
 package typings.formatjsIcuMessageformatParser.typesMod
 
 import typings.formatjsIcuMessageformatParser.typesMod.SKELETON_TYPE.number
-import typings.formatjsIcuSkeletonParser.formatjsIcuSkeletonParserMod.NumberSkeletonToken
+import typings.formatjsIcuSkeletonParser.numberMod.NumberSkeletonToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

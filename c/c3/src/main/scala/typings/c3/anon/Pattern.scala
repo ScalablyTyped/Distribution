@@ -14,7 +14,7 @@ trait Pattern extends StObject {
   /**
     * **Experimental.**
     */
-  var threshold: js.UndefOr[Max] = js.undefined
+  var threshold: js.UndefOr[Unit] = js.undefined
 }
 object Pattern {
   
@@ -31,7 +31,7 @@ object Pattern {
     
     inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value*))
     
-    inline def setThreshold(value: Max): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Unit): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait RuntimeInfo extends StObject {
   
   /** Output only. Map of remote access endpoints (such as web interfaces and APIs) to their URIs. */
   var endpoints: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.RuntimeInfo & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Output only. A URI pointing to the location of the stdout and stderr of the workload. */
@@ -34,9 +31,7 @@ object RuntimeInfo {
     inline def setDiagnosticOutputUriUndefined: Self = StObject.set(x, "diagnosticOutputUri", js.undefined)
     
     inline def setEndpoints(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.RuntimeInfo & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
     inline def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)

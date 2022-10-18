@@ -1,10 +1,10 @@
 package typings.msportalfxMock
 
-import typings.msportalfxMock.mockFxMod.MockFx.Events
-import typings.msportalfxMock.mockFxMod.MockFx.Headers
-import typings.msportalfxMock.mockFxMod.MockFx.LogLevel
-import typings.msportalfxMock.mockFxMod.MockFx.Mode
-import typings.msportalfxMock.serverMod.MockHeaders
+import typings.msportalfxMock.libSrcMockFxMod.MockFx.Events
+import typings.msportalfxMock.libSrcMockFxMod.MockFx.Headers
+import typings.msportalfxMock.libSrcMockFxMod.MockFx.LogLevel
+import typings.msportalfxMock.libSrcMockFxMod.MockFx.Mode
+import typings.msportalfxMock.libSrcMockFxServerMod.MockHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

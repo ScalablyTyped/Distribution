@@ -1,7 +1,7 @@
 package typings.server
 
-import typings.server.commonMod.Middleware
-import typings.server.commonMod.Middlewares
+import typings.server.typingsCommonMod.Middleware
+import typings.server.typingsCommonMod.Middlewares
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

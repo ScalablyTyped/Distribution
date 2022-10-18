@@ -5,7 +5,7 @@ import typings.barnard59Base.concatMod.ConcatStream
 import typings.barnard59Base.concatMod.Factory
 import typings.barnard59Base.filterMod.Filter
 import typings.barnard59Base.globMod.Options
-import typings.barnard59Core.streamObjectMod.Context
+import typings.barnard59Core.libStreamObjectMod.Context
 import typings.node.streamMod.DuplexOptions
 import typings.node.streamMod.Stream
 import typings.node.streamMod.Transform

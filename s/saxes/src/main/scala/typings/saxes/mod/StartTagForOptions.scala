@@ -1,30 +1,15 @@
 package typings.saxes.mod
 
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.saxes.mod.SaxesStartTag
-  - typings.saxes.mod.SaxesStartTagPlain
-  - typings.saxes.mod.SaxesStartTagNS
-*/
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * You'll have to cast your way around this structure, unfortunately. 
+  * TS definition: {{{
+  O extends {  xmlns :true} ? saxes.saxes.SaxesStartTagNS : O extends {  xmlns :false | undefined} ? saxes.saxes.SaxesStartTagPlain : saxes.saxes.SaxesStartTag
+  }}}
+  */
+@js.native
 trait StartTagForOptions[O /* <: SaxesOptions */] extends StObject
-object StartTagForOptions {
-  
-  inline def SaxesStartTag(attributes: Record[String, SaxesAttributeNS | String], name: String): typings.saxes.mod.SaxesStartTag = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.saxes.mod.SaxesStartTag]
-  }
-  
-  inline def SaxesStartTagNS(attributes: Record[String, SaxesAttributeNS | String], name: String, ns: Record[String, String]): typings.saxes.mod.SaxesStartTagNS = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.saxes.mod.SaxesStartTagNS]
-  }
-  
-  inline def SaxesStartTagPlain(attributes: Record[String, SaxesAttributeNS | String], name: String): typings.saxes.mod.SaxesStartTagPlain = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.saxes.mod.SaxesStartTagPlain]
-  }
-}

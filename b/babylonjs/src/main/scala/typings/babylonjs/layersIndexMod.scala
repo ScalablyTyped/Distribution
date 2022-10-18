@@ -2,7 +2,7 @@ package typings.babylonjs
 
 import typings.babylonjs.anon.PartialIGlowLayerOptions
 import typings.babylonjs.anon.PartialIHighlightLayerOpt
-import typings.babylonjs.mathColorMod.Color4
+import typings.babylonjs.mathsMathDotcolorMod.Color4
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object layersIndexMod {
   
-  @JSImport("babylonjs/Layers/index", "EffectLayer")
+  /* note: abstract class */ @JSImport("babylonjs/Layers/index", "EffectLayer")
   @js.native
-  abstract class EffectLayer protected ()
-    extends typings.babylonjs.effectLayerMod.EffectLayer {
+  open class EffectLayer protected ()
+    extends typings.babylonjs.layersEffectLayerMod.EffectLayer {
     /**
       * Instantiates a new effect Layer and references it in the scene.
       * @param name The name of the layer
@@ -39,7 +39,7 @@ object layersIndexMod {
       * @param rootUrl defines the root URL containing the effect layer information
       * @returns a parsed effect Layer
       */
-    inline def Parse(parsedEffectLayer: Any, scene: Scene, rootUrl: String): typings.babylonjs.effectLayerMod.EffectLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedEffectLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.effectLayerMod.EffectLayer]
+    inline def Parse(parsedEffectLayer: Any, scene: Scene, rootUrl: String): typings.babylonjs.layersEffectLayerMod.EffectLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedEffectLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.layersEffectLayerMod.EffectLayer]
     
     /**
       * @internal
@@ -54,14 +54,14 @@ object layersIndexMod {
     * @param scene Defines the scene to register the component in
     */
   open class EffectLayerSceneComponent ()
-    extends typings.babylonjs.effectLayerSceneComponentMod.EffectLayerSceneComponent {
+    extends typings.babylonjs.layersEffectLayerSceneComponentMod.EffectLayerSceneComponent {
     def this(scene: Scene) = this()
   }
   
   @JSImport("babylonjs/Layers/index", "GlowLayer")
   @js.native
   open class GlowLayer protected ()
-    extends typings.babylonjs.glowLayerMod.GlowLayer {
+    extends typings.babylonjs.layersGlowLayerMod.GlowLayer {
     /**
       * Instantiates a new glow Layer and references it to the scene.
       * @param name The name of the layer
@@ -110,13 +110,13 @@ object layersIndexMod {
       * @param rootUrl defines the root URL containing the glow layer information
       * @returns a parsed Glow Layer
       */
-    inline def Parse(parsedGlowLayer: Any, scene: Scene, rootUrl: String): typings.babylonjs.glowLayerMod.GlowLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedGlowLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.glowLayerMod.GlowLayer]
+    inline def Parse(parsedGlowLayer: Any, scene: Scene, rootUrl: String): typings.babylonjs.layersGlowLayerMod.GlowLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedGlowLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.layersGlowLayerMod.GlowLayer]
   }
   
   @JSImport("babylonjs/Layers/index", "HighlightLayer")
   @js.native
   open class HighlightLayer protected ()
-    extends typings.babylonjs.highlightLayerMod.HighlightLayer {
+    extends typings.babylonjs.layersHighlightLayerMod.HighlightLayer {
     /**
       * Instantiates a new highlight Layer and references it to the scene..
       * @param name The name of the layer
@@ -174,13 +174,13 @@ object layersIndexMod {
       * @param rootUrl defines the root URL containing the Highlight layer information
       * @returns a parsed Highlight layer
       */
-    inline def Parse(parsedHightlightLayer: Any, scene: Scene, rootUrl: String): typings.babylonjs.highlightLayerMod.HighlightLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedHightlightLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.highlightLayerMod.HighlightLayer]
+    inline def Parse(parsedHightlightLayer: Any, scene: Scene, rootUrl: String): typings.babylonjs.layersHighlightLayerMod.HighlightLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedHightlightLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.layersHighlightLayerMod.HighlightLayer]
   }
   
   @JSImport("babylonjs/Layers/index", "Layer")
   @js.native
   open class Layer protected ()
-    extends typings.babylonjs.layerMod.Layer {
+    extends typings.babylonjs.layersLayerMod.Layer {
     /**
       * Instantiates a new layer.
       * This represents a full screen 2d layer.
@@ -238,7 +238,7 @@ object layersIndexMod {
     * @param scene Defines the scene to register the component in
     */
   open class LayerSceneComponent ()
-    extends typings.babylonjs.layerSceneComponentMod.LayerSceneComponent {
+    extends typings.babylonjs.layersLayerSceneComponentMod.LayerSceneComponent {
     def this(scene: Scene) = this()
   }
   
@@ -251,50 +251,50 @@ object layersIndexMod {
         * Adds the given effect layer to this scene
         * @param newEffectLayer defines the effect layer to add
         */
-      def addEffectLayer(newEffectLayer: typings.babylonjs.effectLayerMod.EffectLayer): Unit
+      def addEffectLayer(newEffectLayer: typings.babylonjs.layersEffectLayerMod.EffectLayer): Unit
       
       /**
         * The list of effect layers (highlights/glow) added to the scene
         * @see https://doc.babylonjs.com/how_to/highlight_layer
         * @see https://doc.babylonjs.com/how_to/glow_layer
         */
-      var effectLayers: js.Array[typings.babylonjs.effectLayerMod.EffectLayer]
+      var effectLayers: js.Array[typings.babylonjs.layersEffectLayerMod.EffectLayer]
       
       /**
         * Return a the first highlight layer of the scene with a given name.
         * @param name The name of the highlight layer to look for.
         * @returns The highlight layer if found otherwise null.
         */
-      def getGlowLayerByName(name: String): Nullable[typings.babylonjs.glowLayerMod.GlowLayer]
+      def getGlowLayerByName(name: String): Nullable[typings.babylonjs.layersGlowLayerMod.GlowLayer]
       
       /**
         * Return a the first highlight layer of the scene with a given name.
         * @param name The name of the highlight layer to look for.
         * @returns The highlight layer if found otherwise null.
         */
-      def getHighlightLayerByName(name: String): Nullable[typings.babylonjs.highlightLayerMod.HighlightLayer]
+      def getHighlightLayerByName(name: String): Nullable[typings.babylonjs.layersHighlightLayerMod.HighlightLayer]
       
       /**
         * The list of layers (background and foreground) of the scene
         */
-      var layers: js.Array[typings.babylonjs.layerMod.Layer]
+      var layers: js.Array[typings.babylonjs.layersLayerMod.Layer]
       
       /**
         * Removes the given effect layer from this scene.
         * @param toRemove defines the effect layer to remove
         * @returns the index of the removed effect layer
         */
-      def removeEffectLayer(toRemove: typings.babylonjs.effectLayerMod.EffectLayer): Double
+      def removeEffectLayer(toRemove: typings.babylonjs.layersEffectLayerMod.EffectLayer): Double
     }
     object AbstractScene {
       
       inline def apply(
-        addEffectLayer: typings.babylonjs.effectLayerMod.EffectLayer => Unit,
-        effectLayers: js.Array[typings.babylonjs.effectLayerMod.EffectLayer],
-        getGlowLayerByName: String => Nullable[typings.babylonjs.glowLayerMod.GlowLayer],
-        getHighlightLayerByName: String => Nullable[typings.babylonjs.highlightLayerMod.HighlightLayer],
-        layers: js.Array[typings.babylonjs.layerMod.Layer],
-        removeEffectLayer: typings.babylonjs.effectLayerMod.EffectLayer => Double
+        addEffectLayer: typings.babylonjs.layersEffectLayerMod.EffectLayer => Unit,
+        effectLayers: js.Array[typings.babylonjs.layersEffectLayerMod.EffectLayer],
+        getGlowLayerByName: String => Nullable[typings.babylonjs.layersGlowLayerMod.GlowLayer],
+        getHighlightLayerByName: String => Nullable[typings.babylonjs.layersHighlightLayerMod.HighlightLayer],
+        layers: js.Array[typings.babylonjs.layersLayerMod.Layer],
+        removeEffectLayer: typings.babylonjs.layersEffectLayerMod.EffectLayer => Double
       ): AbstractScene = {
         val __obj = js.Dynamic.literal(addEffectLayer = js.Any.fromFunction1(addEffectLayer), effectLayers = effectLayers.asInstanceOf[js.Any], getGlowLayerByName = js.Any.fromFunction1(getGlowLayerByName), getHighlightLayerByName = js.Any.fromFunction1(getHighlightLayerByName), layers = layers.asInstanceOf[js.Any], removeEffectLayer = js.Any.fromFunction1(removeEffectLayer))
         __obj.asInstanceOf[AbstractScene]
@@ -302,21 +302,21 @@ object layersIndexMod {
       
       extension [Self <: AbstractScene](x: Self) {
         
-        inline def setAddEffectLayer(value: typings.babylonjs.effectLayerMod.EffectLayer => Unit): Self = StObject.set(x, "addEffectLayer", js.Any.fromFunction1(value))
+        inline def setAddEffectLayer(value: typings.babylonjs.layersEffectLayerMod.EffectLayer => Unit): Self = StObject.set(x, "addEffectLayer", js.Any.fromFunction1(value))
         
-        inline def setEffectLayers(value: js.Array[typings.babylonjs.effectLayerMod.EffectLayer]): Self = StObject.set(x, "effectLayers", value.asInstanceOf[js.Any])
+        inline def setEffectLayers(value: js.Array[typings.babylonjs.layersEffectLayerMod.EffectLayer]): Self = StObject.set(x, "effectLayers", value.asInstanceOf[js.Any])
         
-        inline def setEffectLayersVarargs(value: typings.babylonjs.effectLayerMod.EffectLayer*): Self = StObject.set(x, "effectLayers", js.Array(value*))
+        inline def setEffectLayersVarargs(value: typings.babylonjs.layersEffectLayerMod.EffectLayer*): Self = StObject.set(x, "effectLayers", js.Array(value*))
         
-        inline def setGetGlowLayerByName(value: String => Nullable[typings.babylonjs.glowLayerMod.GlowLayer]): Self = StObject.set(x, "getGlowLayerByName", js.Any.fromFunction1(value))
+        inline def setGetGlowLayerByName(value: String => Nullable[typings.babylonjs.layersGlowLayerMod.GlowLayer]): Self = StObject.set(x, "getGlowLayerByName", js.Any.fromFunction1(value))
         
-        inline def setGetHighlightLayerByName(value: String => Nullable[typings.babylonjs.highlightLayerMod.HighlightLayer]): Self = StObject.set(x, "getHighlightLayerByName", js.Any.fromFunction1(value))
+        inline def setGetHighlightLayerByName(value: String => Nullable[typings.babylonjs.layersHighlightLayerMod.HighlightLayer]): Self = StObject.set(x, "getHighlightLayerByName", js.Any.fromFunction1(value))
         
-        inline def setLayers(value: js.Array[typings.babylonjs.layerMod.Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+        inline def setLayers(value: js.Array[typings.babylonjs.layersLayerMod.Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
         
-        inline def setLayersVarargs(value: typings.babylonjs.layerMod.Layer*): Self = StObject.set(x, "layers", js.Array(value*))
+        inline def setLayersVarargs(value: typings.babylonjs.layersLayerMod.Layer*): Self = StObject.set(x, "layers", js.Array(value*))
         
-        inline def setRemoveEffectLayer(value: typings.babylonjs.effectLayerMod.EffectLayer => Double): Self = StObject.set(x, "removeEffectLayer", js.Any.fromFunction1(value))
+        inline def setRemoveEffectLayer(value: typings.babylonjs.layersEffectLayerMod.EffectLayer => Double): Self = StObject.set(x, "removeEffectLayer", js.Any.fromFunction1(value))
       }
     }
   }

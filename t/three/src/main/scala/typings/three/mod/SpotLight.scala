@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.utilsMod.ColorRepresentation
+import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "SpotLight")
 @js.native
 open class SpotLight protected ()
-  extends typings.three.threeMod.SpotLight {
+  extends typings.three.srcThreeMod.SpotLight {
   def this(
     color: js.UndefOr[ColorRepresentation],
     intensity: js.UndefOr[Double],

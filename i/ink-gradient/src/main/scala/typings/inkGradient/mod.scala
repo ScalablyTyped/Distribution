@@ -1,7 +1,6 @@
 package typings.inkGradient
 
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.TopLevel
 import typings.inkGradient.anon.Children
 import typings.inkGradient.inkGradientStrings.atlas
 import typings.inkGradient.inkGradientStrings.cristal
@@ -73,11 +72,25 @@ object mod extends Shortcut {
   // This needs to be updated when TypeScript enhances their support for mutual
   // exclusivity in properties. This edit I made will now throw errors when
   // a user gives both of the mutually exclusive props.
-  type Without[T, U] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in std.Exclude<keyof T, keyof U> ]:? never}
-    */ typings.inkGradient.inkGradientStrings.Without & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in std.Exclude<keyof T, keyof U> ]:? never}
+    }}}
+    */
+  @js.native
+  trait Without[T, U] extends StObject
   
-  type XOR[T, U] = T | U | ((Without[T, U]) & U) | ((Without[U, T]) & T)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T | U extends object ? ink-gradient.ink-gradient.Without<T, U> & U | ink-gradient.ink-gradient.Without<U, T> & T : T | U
+    }}}
+    */
+  @js.native
+  trait XOR[T, U] extends StObject
   
   type _To = FC[GradientProps]
   

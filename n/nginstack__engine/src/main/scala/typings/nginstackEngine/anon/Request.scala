@@ -1,13 +1,13 @@
 package typings.nginstackEngine.anon
 
-import typings.nginstackEngine.brokerMod.Response
+import typings.nginstackEngine.libRouterBrokerMod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Request extends StObject {
   
-  var request: js.UndefOr[typings.nginstackEngine.brokerMod.Request] = js.undefined
+  var request: js.UndefOr[typings.nginstackEngine.libRouterBrokerMod.Request] = js.undefined
   
   var response: js.UndefOr[Response] = js.undefined
 }
@@ -20,7 +20,7 @@ object Request {
   
   extension [Self <: Request](x: Self) {
     
-    inline def setRequest(value: typings.nginstackEngine.brokerMod.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: typings.nginstackEngine.libRouterBrokerMod.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     

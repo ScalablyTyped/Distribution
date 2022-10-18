@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `361` extends StObject {
   
-  /** The handle for the GitHub user account. */
-  var username: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
+  /** Response */
+  var `200`: Content349
 }
 object `361` {
   
-  inline def apply(
-    username: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
-  ): `361` = {
-    val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
+  inline def apply(`200`: Content349): `361` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`361`]
   }
   
   extension [Self <: `361`](x: Self) {
     
-    inline def setUsername(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
-    ): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def set200(value: Content349): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
   }
 }

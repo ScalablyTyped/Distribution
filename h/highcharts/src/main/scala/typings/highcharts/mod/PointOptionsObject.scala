@@ -10,7 +10,7 @@ trait PointOptionsObject extends StObject {
     * (Highcharts) Accessibility options for a data point.
     */
   var accessibility: js.UndefOr[PointAccessibilityOptionsObject] & (js.UndefOr[
-    typings.highcharts.accessibilityMod.highchartsAugmentingMod.PointAccessibilityOptionsObject
+    typings.highcharts.modulesAccessibilityMod.highchartsAugmentingMod.PointAccessibilityOptionsObject
   ])
   
   /**
@@ -380,7 +380,7 @@ object PointOptionsObject {
   
   inline def apply(
     accessibility: js.UndefOr[PointAccessibilityOptionsObject] & (js.UndefOr[
-      typings.highcharts.accessibilityMod.highchartsAugmentingMod.PointAccessibilityOptionsObject
+      typings.highcharts.modulesAccessibilityMod.highchartsAugmentingMod.PointAccessibilityOptionsObject
     ])
   ): PointOptionsObject = {
     val __obj = js.Dynamic.literal(accessibility = accessibility.asInstanceOf[js.Any])
@@ -391,7 +391,7 @@ object PointOptionsObject {
     
     inline def setAccessibility(
       value: js.UndefOr[PointAccessibilityOptionsObject] & (js.UndefOr[
-          typings.highcharts.accessibilityMod.highchartsAugmentingMod.PointAccessibilityOptionsObject
+          typings.highcharts.modulesAccessibilityMod.highchartsAugmentingMod.PointAccessibilityOptionsObject
         ])
     ): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

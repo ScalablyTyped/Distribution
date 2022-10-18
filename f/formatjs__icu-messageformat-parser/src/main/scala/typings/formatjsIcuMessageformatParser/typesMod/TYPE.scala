@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait TYPE extends StObject
-@JSImport("@formatjs/icu-messageformat-parser/lib/types", "TYPE")
+@JSImport("@formatjs/icu-messageformat-parser/types", "TYPE")
 @js.native
 object TYPE extends StObject {
   

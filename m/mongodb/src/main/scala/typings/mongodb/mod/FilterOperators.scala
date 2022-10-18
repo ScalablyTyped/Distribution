@@ -70,7 +70,9 @@ trait FilterOperators[TValue]
   var $maxDistance: js.UndefOr[scala.Double] = js.undefined
   
   @JSName("$mod")
-  var $mod: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
+  var $mod: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: TValue extends number ? [number, number] : never */ js.Any
+  ] = js.undefined
   
   @JSName("$ne")
   var $ne: js.UndefOr[TValue] = js.undefined
@@ -85,19 +87,27 @@ trait FilterOperators[TValue]
   var $nin: js.UndefOr[js.Array[TValue]] = js.undefined
   
   @JSName("$not")
-  var $not: js.UndefOr[FilterOperators[TValue] | js.RegExp] = js.undefined
+  var $not: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: TValue extends string ? mongodb.mongodb.FilterOperators<TValue> | std.RegExp : mongodb.mongodb.FilterOperators<TValue> */ js.Any
+  ] = js.undefined
   
   @JSName("$options")
-  var $options: js.UndefOr[String] = js.undefined
+  var $options: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: TValue extends string ? string : never */ js.Any
+  ] = js.undefined
   
   @JSName("$rand")
   var $rand: js.UndefOr[Record[String, scala.Nothing]] = js.undefined
   
   @JSName("$regex")
-  var $regex: js.UndefOr[js.RegExp | typings.bson.mod.BSONRegExp | String] = js.undefined
+  var $regex: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: TValue extends string ? std.RegExp | bson.bson.BSONRegExp | string : never */ js.Any
+  ] = js.undefined
   
   @JSName("$size")
-  var $size: js.UndefOr[scala.Double] = js.undefined
+  var $size: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: TValue extends std.ReadonlyArray<any> ? number : never */ js.Any
+  ] = js.undefined
   
   @JSName("$type")
   var $type: js.UndefOr[BSONType | BSONTypeAlias] = js.undefined
@@ -195,7 +205,9 @@ object FilterOperators {
     
     inline def set$maxDistanceUndefined: Self = StObject.set(x, "$maxDistance", js.undefined)
     
-    inline def set$mod(value: js.Tuple2[scala.Double, scala.Double]): Self = StObject.set(x, "$mod", value.asInstanceOf[js.Any])
+    inline def set$mod(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: TValue extends number ? [number, number] : never */ js.Any
+    ): Self = StObject.set(x, "$mod", value.asInstanceOf[js.Any])
     
     inline def set$modUndefined: Self = StObject.set(x, "$mod", js.undefined)
     
@@ -217,11 +229,15 @@ object FilterOperators {
     
     inline def set$ninVarargs(value: TValue*): Self = StObject.set(x, "$nin", js.Array(value*))
     
-    inline def set$not(value: FilterOperators[TValue] | js.RegExp): Self = StObject.set(x, "$not", value.asInstanceOf[js.Any])
+    inline def set$not(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: TValue extends string ? mongodb.mongodb.FilterOperators<TValue> | std.RegExp : mongodb.mongodb.FilterOperators<TValue> */ js.Any
+    ): Self = StObject.set(x, "$not", value.asInstanceOf[js.Any])
     
     inline def set$notUndefined: Self = StObject.set(x, "$not", js.undefined)
     
-    inline def set$options(value: String): Self = StObject.set(x, "$options", value.asInstanceOf[js.Any])
+    inline def set$options(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: TValue extends string ? string : never */ js.Any
+    ): Self = StObject.set(x, "$options", value.asInstanceOf[js.Any])
     
     inline def set$optionsUndefined: Self = StObject.set(x, "$options", js.undefined)
     
@@ -229,11 +245,15 @@ object FilterOperators {
     
     inline def set$randUndefined: Self = StObject.set(x, "$rand", js.undefined)
     
-    inline def set$regex(value: js.RegExp | typings.bson.mod.BSONRegExp | String): Self = StObject.set(x, "$regex", value.asInstanceOf[js.Any])
+    inline def set$regex(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: TValue extends string ? std.RegExp | bson.bson.BSONRegExp | string : never */ js.Any
+    ): Self = StObject.set(x, "$regex", value.asInstanceOf[js.Any])
     
     inline def set$regexUndefined: Self = StObject.set(x, "$regex", js.undefined)
     
-    inline def set$size(value: scala.Double): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+    inline def set$size(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: TValue extends std.ReadonlyArray<any> ? number : never */ js.Any
+    ): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
     
     inline def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
     

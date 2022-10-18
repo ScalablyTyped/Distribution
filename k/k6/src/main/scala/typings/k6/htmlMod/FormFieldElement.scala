@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "FormFieldElement")
+/* note: abstract class */ @JSImport("k6/html", "FormFieldElement")
 @js.native
-abstract class FormFieldElement () extends Element {
+open class FormFieldElement () extends Element {
   
   /** Owning <form> element. */
   def form(): js.UndefOr[FormElement] = js.native

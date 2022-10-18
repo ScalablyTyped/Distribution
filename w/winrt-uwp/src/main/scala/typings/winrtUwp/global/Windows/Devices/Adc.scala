@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Adc {
   
   /** Represents a single ADC channel. */
-  @JSGlobal("Windows.Devices.Adc.AdcChannel")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Adc.AdcChannel")
   @js.native
-  abstract class AdcChannel ()
+  open class AdcChannel ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Adc.AdcChannel {
     
@@ -55,9 +55,9 @@ object Adc {
   }
   
   /** Represents an ADC controller on the system */
-  @JSGlobal("Windows.Devices.Adc.AdcController")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Adc.AdcController")
   @js.native
-  abstract class AdcController ()
+  open class AdcController ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Adc.AdcController {
     

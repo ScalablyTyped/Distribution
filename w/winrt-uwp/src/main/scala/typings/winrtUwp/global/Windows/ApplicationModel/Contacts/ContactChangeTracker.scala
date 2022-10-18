@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for monitoring changes to Contact objects in the ContactStore . */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactChangeTracker")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactChangeTracker")
 @js.native
-abstract class ContactChangeTracker ()
+open class ContactChangeTracker ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChangeTracker {
   

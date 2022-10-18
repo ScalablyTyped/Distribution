@@ -10,7 +10,7 @@ sealed trait ProjectProjectFields extends StObject
   * Specifies the project fields that are available as a parameter for the {@link Office.Document | Document}.getProjectFieldAsync method.
   *
   * @remarks
-  * 
+  *
   * A ProjectProjectFields constant can be used as a parameter of the {@link Office.Document | Document}.getProjectFieldAsync method.
   */
 @JSGlobal("Office.ProjectProjectFields")
@@ -34,7 +34,7 @@ object ProjectProjectFields extends StObject {
        with ProjectProjectFields
   
   /**
-    * The placement of the currency symbol: Not specified = -1; Before the value with no space ($0) = 0; After the value with no space (0$) = 1; 
+    * The placement of the currency symbol: Not specified = -1; Before the value with no space ($0) = 0; After the value with no space (0$) = 1;
     * Before the value with a space ($ 0) = 2; After the value with a space (0 $) = 3.
     */
   @js.native

@@ -208,7 +208,7 @@ object mod {
       options: js.UndefOr[AnalyticsCallOptions]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCurrentScreen")(analyticsInstance.asInstanceOf[js.Any], screenName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def setUserId(analyticsInstance: FirebaseAnalytics, id: String, options: js.UndefOr[AnalyticsCallOptions]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(analyticsInstance.asInstanceOf[js.Any], id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setUserId(analyticsInstance: FirebaseAnalytics, id: String | Null, options: js.UndefOr[AnalyticsCallOptions]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(analyticsInstance.asInstanceOf[js.Any], id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def setUserProperties(
       analyticsInstance: FirebaseAnalytics,

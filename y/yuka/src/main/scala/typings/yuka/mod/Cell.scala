@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [aabb] - The bounding volume of the cell.
   */
 open class Cell ()
-  extends typings.yuka.yukaMod.Cell {
-  def this(aabb: typings.yuka.aabbMod.AABB) = this()
+  extends typings.yuka.srcYukaMod.Cell {
+  def this(aabb: typings.yuka.srcMathAabbMod.AABB) = this()
 }

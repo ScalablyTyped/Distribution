@@ -48,7 +48,15 @@ object conditionalConditionalMod {
       ] = js.native
   }
   
-  type TExtends[L /* <: TSchema */, R /* <: TSchema */, T /* <: TSchema */, U /* <: TSchema */] = U | T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    @sinclair/typebox.@sinclair/typebox.Static<L, []> extends @sinclair/typebox.@sinclair/typebox.Static<R, []> ? T : U
+    }}}
+    */
+  @js.native
+  trait TExtends[L /* <: TSchema */, R /* <: TSchema */, T /* <: TSchema */, U /* <: TSchema */] extends StObject
   
   @js.native
   trait TExtract[T /* <: TSchema */, U /* <: TUnion[js.Array[TSchema]] */]

@@ -1,6 +1,5 @@
 package typings.camelcaseKeys
 
-import org.scalablytyped.runtime.TopLevel
 import typings.camelcaseKeys.camelcaseKeysBooleans.`false`
 import typings.camelcaseKeys.camelcaseKeysStrings._empty
 import typings.std.Record
@@ -96,11 +95,25 @@ object mod {
   /**
   Append a segment to dot-notation path.
   */
-  type AppendPath[S /* <: String */, Last /* <: String */] = (/* template literal string: ${S}.${Last} */ String) | Last
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S extends '' ? Last : / * template literal string: ${S}.${Last} * / string
+    }}}
+    */
+  @js.native
+  trait AppendPath[S /* <: String */, Last /* <: String */] extends StObject
   
-  type CamelCaseKeys[T /* <: (Record[String, Any]) | js.Array[Any] */, Deep /* <: Boolean */, IsPascalCase /* <: Boolean */, Exclude /* <: js.Array[Any] */, StopPaths /* <: js.Array[String] */, Path /* <: String */] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T as [camelcase-keys.camelcase-keys.IsInclude<Exclude, P>] extends [true]? P : [IsPascalCase] extends [true]? type-fest.type-fest/source/pascal-case.PascalCase<P> : type-fest.type-fest/source/camel-case.CamelCase<P> ]: [camelcase-keys.camelcase-keys.IsInclude<StopPaths, camelcase-keys.camelcase-keys.AppendPath<Path, P & string>>] extends [true]? T[P] : {} extends camelcase-keys.camelcase-keys.CamelCaseKeys<T[P], false, false, camelcase-keys.camelcase-keys.EmptyTuple, camelcase-keys.camelcase-keys.EmptyTuple, ''>? T[P] : [Deep] extends [true]? camelcase-keys.camelcase-keys.CamelCaseKeys<T[P], Deep, IsPascalCase, Exclude, StopPaths, camelcase-keys.camelcase-keys.AppendPath<Path, P & string>> : T[P]}
-    */ typings.camelcaseKeys.camelcaseKeysStrings.CamelCaseKeys & TopLevel[Any])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<any> ? {[ P in keyof T ]: T[P] extends std.Record<string, any> | std.Array<any>? {} extends camelcase-keys.camelcase-keys.CamelCaseKeys<T[P], false, false, camelcase-keys.camelcase-keys.EmptyTuple, camelcase-keys.camelcase-keys.EmptyTuple, ''>? T[P] : camelcase-keys.camelcase-keys.CamelCaseKeys<T[P], Deep, IsPascalCase, Exclude, StopPaths, ''> : T[P]} : T extends std.Record<string, any> ? {[ P in keyof T as [camelcase-keys.camelcase-keys.IsInclude<Exclude, P>] extends [true]? P : [IsPascalCase] extends [true]? type-fest.type-fest/source/pascal-case.PascalCase<P> : type-fest.type-fest/source/camel-case.CamelCase<P> ]: [camelcase-keys.camelcase-keys.IsInclude<StopPaths, camelcase-keys.camelcase-keys.AppendPath<Path, P & string>>] extends [true]? T[P] : {} extends camelcase-keys.camelcase-keys.CamelCaseKeys<T[P], false, false, camelcase-keys.camelcase-keys.EmptyTuple, camelcase-keys.camelcase-keys.EmptyTuple, ''>? T[P] : [Deep] extends [true]? camelcase-keys.camelcase-keys.CamelCaseKeys<T[P], Deep, IsPascalCase, Exclude, StopPaths, camelcase-keys.camelcase-keys.AppendPath<Path, P & string>> : T[P]} : T
+    }}}
+    */
+  @js.native
+  trait CamelCaseKeys[T /* <: (Record[String, Any]) | js.Array[Any] */, Deep /* <: Boolean */, IsPascalCase /* <: Boolean */, Exclude /* <: js.Array[Any] */, StopPaths /* <: js.Array[String] */, Path /* <: String */] extends StObject
   
   // eslint-disable-next-line @typescript-eslint/ban-types
   type EmptyTuple = js.Array[Any]
@@ -110,12 +123,15 @@ object mod {
   /**
   Check if an element is included in a tuple.
   */
-  /* Rewritten from type alias, can be one of: 
-    - scala.Boolean
-    - typings.camelcaseKeys.camelcaseKeysBooleans.`true`
-    - typings.camelcaseKeys.camelcaseKeysBooleans.`false`
-  */
-  type IsInclude[List /* <: js.Array[Any] */, Target] = (_IsInclude[List, Target]) | Boolean
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    List extends undefined ? false : List extends std.Readonly<camelcase-keys.camelcase-keys.EmptyTuple> ? false : List extends [infer First, ...infer Rest] ? First extends Target ? true : camelcase-keys.camelcase-keys.IsInclude<Rest, Target> : boolean
+    }}}
+    */
+  @js.native
+  trait IsInclude[List /* <: js.Array[Any] */, Target] extends StObject
   
   trait Options extends StObject {
     
@@ -208,7 +224,13 @@ object mod {
   @template T - Input type.
   @template U - Default type.
   */
-  type WithDefault[T, U /* <: T */] = T | U
-  
-  trait _IsInclude[List /* <: js.Array[Any] */, Target] extends StObject
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends undefined | void | null ? U : T
+    }}}
+    */
+  @js.native
+  trait WithDefault[T, U /* <: T */] extends StObject
 }

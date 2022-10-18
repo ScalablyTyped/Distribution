@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides results for validation of chat messages. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageValidationResult")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageValidationResult")
 @js.native
-abstract class ChatMessageValidationResult ()
+open class ChatMessageValidationResult ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageValidationResult {
   

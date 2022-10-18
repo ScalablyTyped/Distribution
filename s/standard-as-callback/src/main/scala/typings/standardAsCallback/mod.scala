@@ -1,6 +1,6 @@
 package typings.standardAsCallback
 
-import typings.standardAsCallback.typesMod.CallbackFunction
+import typings.standardAsCallback.builtTypesMod.CallbackFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

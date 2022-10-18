@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "ms-rest-azure"
-version := "3.0.2-08fbc6"
+version := "3.0.2-a0c794"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "adal-node" % "0.2.3-c4d8b1",
-  "org.scalablytyped" %%% "ms-rest" % "2.5.6-7bc3a5",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
+  "org.scalablytyped" %%% "adal-node" % "0.2.3-355a6d",
+  "org.scalablytyped" %%% "ms-rest" % "2.5.6-ccef18",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

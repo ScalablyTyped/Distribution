@@ -1,7 +1,7 @@
 package typings.awsLambda.anon
 
 import typings.awsLambda.awsLambdaStrings.applicationSlashvndDotamazonawsDotcardDotgeneric
-import typings.awsLambda.lexMod.LexGenericAttachment
+import typings.awsLambda.triggerLexMod.LexGenericAttachment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

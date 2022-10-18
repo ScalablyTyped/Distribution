@@ -1,7 +1,7 @@
 package typings.redisClient.anon
 
-import typings.redisClient.clusterLINKSMod.ClusterLinksRawReply
-import typings.redisClient.clusterLINKSMod.ClusterLinksReply
+import typings.redisClient.distLibCommandsClusterLINKSMod.ClusterLinksRawReply
+import typings.redisClient.distLibCommandsClusterLINKSMod.ClusterLinksReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

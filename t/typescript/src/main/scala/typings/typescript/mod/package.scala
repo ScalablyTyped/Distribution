@@ -11662,7 +11662,7 @@ java.lang.String | Double | Boolean | (js.Array[Double | PluginImport | ProjectR
 /* Rewritten from type alias, can be one of: 
   - typings.typescript.typescriptStrings.Dot
   - typings.typescript.typescriptStrings.Quotationmark
-  - java.lang.String
+  - / * ' * / java.lang.String
   - typings.typescript.typescriptStrings.Graveaccent
   - typings.typescript.typescriptStrings.Slash
   - typings.typescript.typescriptStrings.`@`
@@ -11670,7 +11670,7 @@ java.lang.String | Double | Boolean | (js.Array[Double | PluginImport | ProjectR
   - typings.typescript.typescriptStrings.Numbersign
   - typings.typescript.typescriptStrings.Space
 */
-type CompletionsTriggerCharacter = _CompletionsTriggerCharacter | java.lang.String
+type CompletionsTriggerCharacter = _CompletionsTriggerCharacter | (/* ' */ java.lang.String)
 
 type ConciseBody = FunctionBody | Expression
 
@@ -11817,18 +11817,18 @@ type ResolvedConfigFileName = java.lang.String
 type ShiftOperatorOrHigher = AdditiveOperatorOrHigher | ShiftOperator
 
 /* Rewritten from type alias, can be one of: 
-  - java.lang.String
+  - / * ) * / java.lang.String
   - typings.typescript.typescriptStrings.Comma
   - typings.typescript.typescriptStrings.Lessthansign
 */
-type SignatureHelpRetriggerCharacter = _SignatureHelpRetriggerCharacter | java.lang.String
+type SignatureHelpRetriggerCharacter = _SignatureHelpRetriggerCharacter | (/* ) */ java.lang.String)
 
 /* Rewritten from type alias, can be one of: 
   - typings.typescript.typescriptStrings.Comma
-  - java.lang.String
+  - / * ( * / java.lang.String
   - typings.typescript.typescriptStrings.Lessthansign
 */
-type SignatureHelpTriggerCharacter = _SignatureHelpTriggerCharacter | java.lang.String
+type SignatureHelpTriggerCharacter = _SignatureHelpTriggerCharacter | (/* ( */ java.lang.String)
 
 type StaticKeyword = ModifierToken[typings.typescript.mod.SyntaxKind.StaticKeyword]
 

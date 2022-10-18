@@ -1,9 +1,8 @@
 package typings.testingLibraryUserEvent.anon
 
-import typings.testingLibraryUserEvent.optionsMod.PointerEventsCheckLevel
-import typings.testingLibraryUserEvent.sharedMod.pointerKey
-import typings.testingLibraryUserEvent.systemKeyboardMod.keyboardKey
-import typings.testingLibraryUserEvent.systemMod.System
+import typings.testingLibraryUserEvent.distTypesOptionsMod.PointerEventsCheckLevel
+import typings.testingLibraryUserEvent.distTypesSystemKeyboardMod.keyboardKey
+import typings.testingLibraryUserEvent.distTypesSystemPointerSharedMod.pointerKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,7 +67,7 @@ trait DirectOptionskeyboardStat extends StObject {
     */
   var keyboardMap: js.UndefOr[js.Array[keyboardKey]] = js.undefined
   
-  var keyboardState: js.UndefOr[System] = js.undefined
+  var keyboardState: js.UndefOr[typings.testingLibraryUserEvent.distTypesSystemMod.System] = js.undefined
   
   /**
     * The pointer API includes a check if an element has or inherits `pointer-events: none`.
@@ -88,7 +87,7 @@ trait DirectOptionskeyboardStat extends StObject {
     */
   var pointerMap: js.UndefOr[js.Array[pointerKey]] = js.undefined
   
-  var pointerState: js.UndefOr[System] = js.undefined
+  var pointerState: js.UndefOr[typings.testingLibraryUserEvent.distTypesSystemMod.System] = js.undefined
   
   /**
     * `userEvent.type` automatically releases any keys still pressed at the end of the call.
@@ -162,7 +161,7 @@ object DirectOptionskeyboardStat {
     
     inline def setKeyboardMapVarargs(value: keyboardKey*): Self = StObject.set(x, "keyboardMap", js.Array(value*))
     
-    inline def setKeyboardState(value: System): Self = StObject.set(x, "keyboardState", value.asInstanceOf[js.Any])
+    inline def setKeyboardState(value: typings.testingLibraryUserEvent.distTypesSystemMod.System): Self = StObject.set(x, "keyboardState", value.asInstanceOf[js.Any])
     
     inline def setKeyboardStateUndefined: Self = StObject.set(x, "keyboardState", js.undefined)
     
@@ -176,7 +175,7 @@ object DirectOptionskeyboardStat {
     
     inline def setPointerMapVarargs(value: pointerKey*): Self = StObject.set(x, "pointerMap", js.Array(value*))
     
-    inline def setPointerState(value: System): Self = StObject.set(x, "pointerState", value.asInstanceOf[js.Any])
+    inline def setPointerState(value: typings.testingLibraryUserEvent.distTypesSystemMod.System): Self = StObject.set(x, "pointerState", value.asInstanceOf[js.Any])
     
     inline def setPointerStateUndefined: Self = StObject.set(x, "pointerState", js.undefined)
     

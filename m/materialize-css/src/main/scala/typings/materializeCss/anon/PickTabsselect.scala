@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<materialize-css.M.Tabs, 'select'> */
 trait PickTabsselect extends StObject {
   
-  var select: js.UndefOr[Any] = js.undefined
+  def select(tabId: String): Unit
+  @JSName("select")
+  var select_Original: js.Function1[/* tabId */ String, Unit]
 }
 object PickTabsselect {
   
-  inline def apply(): PickTabsselect = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(select: /* tabId */ String => Unit): PickTabsselect = {
+    val __obj = js.Dynamic.literal(select = js.Any.fromFunction1(select))
     __obj.asInstanceOf[PickTabsselect]
   }
   
   extension [Self <: PickTabsselect](x: Self) {
     
-    inline def setSelect(value: Any): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
-    
-    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelect(value: /* tabId */ String => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
   }
 }

@@ -1,7 +1,7 @@
 package typings.storybookAddonLinks
 
-import typings.storybookAddonLinks.utilsMod.ParamsCombo
-import typings.storybookAddonLinks.utilsMod.ParamsId
+import typings.storybookAddonLinks.distTs3Dot9UtilsMod.ParamsCombo
+import typings.storybookAddonLinks.distTs3Dot9UtilsMod.ParamsId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

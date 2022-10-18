@@ -1,8 +1,8 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.ddsMod.DDSInfo
-import typings.babylonjs.internalTextureMod.InternalTexture
-import typings.babylonjs.thinEngineMod.ThinEngine
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
+import typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture
+import typings.babylonjs.miscDdsMod.DDSInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "DDSTools")
 @js.native
 open class DDSTools ()
-  extends typings.babylonjs.ddsMod.DDSTools
+  extends typings.babylonjs.miscDdsMod.DDSTools
 /* static members */
 object DDSTools {
   

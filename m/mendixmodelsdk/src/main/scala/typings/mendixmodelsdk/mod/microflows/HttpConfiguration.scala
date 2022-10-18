@@ -1,14 +1,14 @@
 package typings.mendixmodelsdk.mod.microflows
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
-import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
-import typings.mendixmodelsdk.restMod.rest.InteractiveRest
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenRestMod.rest.ConsumedODataService
+import typings.mendixmodelsdk.srcGenRestMod.rest.InteractiveRest
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "microflows.HttpConfiguration")
 @js.native
 open class HttpConfiguration protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.microflows.HttpConfiguration {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.microflows.HttpConfiguration {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -38,7 +38,7 @@ object HttpConfiguration {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
@@ -49,7 +49,7 @@ object HttpConfiguration {
     *  6.0.0 to 6.5.0
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
@@ -60,7 +60,7 @@ object HttpConfiguration {
     *  8.0.0 and higher
     */
   /* static member */
-  inline def createInConsumedODataServiceUnderHttpConfiguration(container: ConsumedODataService): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
+  inline def createInConsumedODataServiceUnderHttpConfiguration(container: ConsumedODataService): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
@@ -71,7 +71,7 @@ object HttpConfiguration {
     *  9.18.0 and higher
     */
   /* static member */
-  inline def createInInteractiveRestUnderHttpConfiguration(container: InteractiveRest): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInteractiveRestUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
+  inline def createInInteractiveRestUnderHttpConfiguration(container: InteractiveRest): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInteractiveRestUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
@@ -82,7 +82,7 @@ object HttpConfiguration {
     *  6.6.0 and higher
     */
   /* static member */
-  inline def createInRestCallActionUnderHttpConfiguration(container: typings.mendixmodelsdk.microflowsMod.microflows.RestCallAction): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
+  inline def createInRestCallActionUnderHttpConfiguration(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RestCallAction): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
@@ -90,7 +90,7 @@ object HttpConfiguration {
     * of the parent WebServiceCallAction element passed as argument.
     */
   /* static member */
-  inline def createInWebServiceCallActionUnderHttpConfiguration(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
+  inline def createInWebServiceCallActionUnderHttpConfiguration(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.HttpConfiguration.structureTypeName")

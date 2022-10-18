@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "SynapseAdminApis")
 @js.native
 open class SynapseAdminApis protected ()
-  extends typings.matrixBotSdk.synapseAdminApisMod.SynapseAdminApis {
-  def this(client: typings.matrixBotSdk.matrixClientMod.MatrixClient) = this()
+  extends typings.matrixBotSdk.libSynapseAdminApisMod.SynapseAdminApis {
+  def this(client: typings.matrixBotSdk.libMatrixClientMod.MatrixClient) = this()
 }

@@ -2,9 +2,9 @@ package typings.floatingUiCore.anon
 
 import typings.floatingUiCore.floatingUiCoreStrings.bestFit
 import typings.floatingUiCore.floatingUiCoreStrings.initialPlacement
-import typings.floatingUiCore.typesMod.ElementContext
-import typings.floatingUiCore.typesMod.Padding
-import typings.floatingUiCore.typesMod.RootBoundary
+import typings.floatingUiCore.srcTypesMod.ElementContext
+import typings.floatingUiCore.srcTypesMod.Padding
+import typings.floatingUiCore.srcTypesMod.RootBoundary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,13 +14,13 @@ trait PartialOptionsOptionsAltBoundary extends StObject {
   
   var altBoundary: js.UndefOr[Boolean] = js.undefined
   
-  var boundary: js.UndefOr[typings.floatingUiCore.typesMod.Boundary] = js.undefined
+  var boundary: js.UndefOr[typings.floatingUiCore.srcTypesMod.Boundary] = js.undefined
   
   var crossAxis: js.UndefOr[Boolean] = js.undefined
   
   var elementContext: js.UndefOr[ElementContext] = js.undefined
   
-  var fallbackPlacements: js.UndefOr[js.Array[typings.floatingUiCore.typesMod.Placement]] = js.undefined
+  var fallbackPlacements: js.UndefOr[js.Array[typings.floatingUiCore.srcTypesMod.Placement]] = js.undefined
   
   var fallbackStrategy: js.UndefOr[bestFit | initialPlacement] = js.undefined
   
@@ -45,7 +45,7 @@ object PartialOptionsOptionsAltBoundary {
     
     inline def setAltBoundaryUndefined: Self = StObject.set(x, "altBoundary", js.undefined)
     
-    inline def setBoundary(value: typings.floatingUiCore.typesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: typings.floatingUiCore.srcTypesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
@@ -57,11 +57,11 @@ object PartialOptionsOptionsAltBoundary {
     
     inline def setElementContextUndefined: Self = StObject.set(x, "elementContext", js.undefined)
     
-    inline def setFallbackPlacements(value: js.Array[typings.floatingUiCore.typesMod.Placement]): Self = StObject.set(x, "fallbackPlacements", value.asInstanceOf[js.Any])
+    inline def setFallbackPlacements(value: js.Array[typings.floatingUiCore.srcTypesMod.Placement]): Self = StObject.set(x, "fallbackPlacements", value.asInstanceOf[js.Any])
     
     inline def setFallbackPlacementsUndefined: Self = StObject.set(x, "fallbackPlacements", js.undefined)
     
-    inline def setFallbackPlacementsVarargs(value: typings.floatingUiCore.typesMod.Placement*): Self = StObject.set(x, "fallbackPlacements", js.Array(value*))
+    inline def setFallbackPlacementsVarargs(value: typings.floatingUiCore.srcTypesMod.Placement*): Self = StObject.set(x, "fallbackPlacements", js.Array(value*))
     
     inline def setFallbackStrategy(value: bestFit | initialPlacement): Self = StObject.set(x, "fallbackStrategy", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object linkifyMod {
   
-  @JSImport("remarkable/lib/linkify", JSImport.Namespace)
+  @JSImport("remarkable/linkify", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

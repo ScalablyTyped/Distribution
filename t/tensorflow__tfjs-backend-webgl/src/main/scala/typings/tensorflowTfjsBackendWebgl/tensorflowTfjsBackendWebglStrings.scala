@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import typings.tensorflowTfjsBackendWebgl.reduceMod.ReduceTypes
-import typings.tensorflowTfjsBackendWebgl.shaderCompilerMod.UniformType
+import typings.tensorflowTfjsBackendWebgl.distKernelUtilsReduceMod.ReduceTypes
+import typings.tensorflowTfjsBackendWebgl.distShaderCompilerMod.UniformType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

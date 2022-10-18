@@ -1,9 +1,9 @@
 package typings.tensorflowTfjsBackendWasm.anon
 
-import typings.tensorflowTfjsBackendWasm.backendWasmMod.BackendWasm
-import typings.tensorflowTfjsCore.kernelNamesMod.PackAttrs
-import typings.tensorflowTfjsCore.kernelNamesMod.PackInputs
-import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsBackendWasm.distBackendWasmMod.BackendWasm
+import typings.tensorflowTfjsCore.distKernelNamesMod.PackAttrs
+import typings.tensorflowTfjsCore.distKernelNamesMod.PackInputs
+import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

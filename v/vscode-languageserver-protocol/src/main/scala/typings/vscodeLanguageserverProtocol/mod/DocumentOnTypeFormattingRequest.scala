@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.DocumentOnTypeFormattingParams
-import typings.vscodeLanguageserverProtocol.protocolMod.DocumentOnTypeFormattingRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.DocumentOnTypeFormattingParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.DocumentOnTypeFormattingRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashonTypeFormatting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object DocumentOnTypeFormattingRequest {
   
   @JSImport("vscode-languageserver-protocol", "DocumentOnTypeFormattingRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "DocumentOnTypeFormattingRequest.method")
   @js.native
@@ -19,7 +19,7 @@ object DocumentOnTypeFormattingRequest {
   
   @JSImport("vscode-languageserver-protocol", "DocumentOnTypeFormattingRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     DocumentOnTypeFormattingParams, 
     js.Array[typings.vscodeLanguageserverTypes.mod.TextEdit] | Null, 
     scala.Nothing, 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__openapi-types
 
-Typings are for version 13.12.0
+Typings are for version 14.0.0
 
 ## Library description:
 Generated TypeScript definitions based on GitHub's OpenAPI spec for api.github.com

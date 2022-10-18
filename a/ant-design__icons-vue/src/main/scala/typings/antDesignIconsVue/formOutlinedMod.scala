@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsFormOutlinedMod.FormOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/FormOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/FormOutlined", JSImport.Default)
   @js.native
   val default: FormOutlinedIconType = js.native
-  
-  @js.native
-  trait FormOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_FormOutlinedIconType: String = js.native
-  }
   
   type _To = FormOutlinedIconType
   

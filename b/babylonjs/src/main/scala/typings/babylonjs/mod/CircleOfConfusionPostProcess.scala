@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "CircleOfConfusionPostProcess")
 @js.native
 open class CircleOfConfusionPostProcess protected ()
-  extends typings.babylonjs.legacyMod.CircleOfConfusionPostProcess {
+  extends typings.babylonjs.legacyLegacyMod.CircleOfConfusionPostProcess {
   /**
     * Creates a new instance CircleOfConfusionPostProcess
     * @param name The name of the effect.
@@ -24,11 +24,11 @@ open class CircleOfConfusionPostProcess protected ()
     */
   def this(
     name: String,
-    depthTexture: Nullable[typings.babylonjs.renderTargetTextureMod.RenderTargetTexture],
+    depthTexture: Nullable[typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture],
     options: Double | PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: js.UndefOr[Double],
-    engine: js.UndefOr[typings.babylonjs.engineMod.Engine],
+    engine: js.UndefOr[typings.babylonjs.enginesEngineMod.Engine],
     reusable: js.UndefOr[Boolean],
     textureType: js.UndefOr[Double],
     blockCompilation: js.UndefOr[Boolean]

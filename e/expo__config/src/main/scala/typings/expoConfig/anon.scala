@@ -1,12 +1,12 @@
 package typings.expoConfig
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.expoConfig.configTypesMod.AppJSONConfig
-import typings.expoConfig.configTypesMod.EASConfig
-import typings.expoConfig.configTypesMod.ExpoClientConfig
-import typings.expoConfig.configTypesMod.ExpoGoConfig
-import typings.expoConfig.configTypesMod.ProjectConfig
-import typings.expoConfig.evalConfigMod._RawDynamicConfig
+import typings.expoConfig.buildConfigDottypesMod.AppJSONConfig
+import typings.expoConfig.buildConfigDottypesMod.EASConfig
+import typings.expoConfig.buildConfigDottypesMod.ExpoClientConfig
+import typings.expoConfig.buildConfigDottypesMod.ExpoGoConfig
+import typings.expoConfig.buildConfigDottypesMod.ProjectConfig
+import typings.expoConfig.buildEvalConfigMod._RawDynamicConfig
 import typings.expoConfig.expoConfigStrings.`object`
 import typings.expoConfig.expoConfigStrings.android
 import typings.expoConfig.expoConfigStrings.automatic
@@ -34,14 +34,14 @@ import typings.expoConfig.expoConfigStrings.unlisted
 import typings.expoConfig.expoConfigStrings.warn
 import typings.expoConfig.expoConfigStrings.web
 import typings.expoConfigTypes.anon.AndroidCollapsedTitle
-import typings.expoConfigTypes.anon.BackgroundColor
 import typings.expoConfigTypes.anon.BarStyle
 import typings.expoConfigTypes.anon.CheckAutomatically
-import typings.expoConfigTypes.anon.Dictk
+import typings.expoConfigTypes.anon.PluginHistory
 import typings.expoConfigTypes.anon.Policy
 import typings.expoConfigTypes.anon.PostExport
 import typings.expoConfigTypes.anon.SilentLaunch
 import typings.expoConfigTypes.anon.TurboModules
+import typings.expoConfigTypes.anon.Visible
 import typings.expoConfigTypes.mod.Android
 import typings.expoConfigTypes.mod.IOS
 import typings.expoConfigTypes.mod.Splash
@@ -224,13 +224,13 @@ object anon {
     extends StObject
        with _RawDynamicConfig {
     
-    var _internal: js.UndefOr[Dictk] = js.undefined
+    var _internal: js.UndefOr[PluginHistory] = js.undefined
     
     var android: js.UndefOr[Android] = js.undefined
     
-    var androidNavigationBar: js.UndefOr[BarStyle] = js.undefined
+    var androidNavigationBar: js.UndefOr[Visible] = js.undefined
     
-    var androidStatusBar: js.UndefOr[BackgroundColor] = js.undefined
+    var androidStatusBar: js.UndefOr[BarStyle] = js.undefined
     
     var appKey: js.UndefOr[String] = js.undefined
     
@@ -327,11 +327,11 @@ object anon {
       
       inline def setAndroid(value: Android): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
-      inline def setAndroidNavigationBar(value: BarStyle): Self = StObject.set(x, "androidNavigationBar", value.asInstanceOf[js.Any])
+      inline def setAndroidNavigationBar(value: Visible): Self = StObject.set(x, "androidNavigationBar", value.asInstanceOf[js.Any])
       
       inline def setAndroidNavigationBarUndefined: Self = StObject.set(x, "androidNavigationBar", js.undefined)
       
-      inline def setAndroidStatusBar(value: BackgroundColor): Self = StObject.set(x, "androidStatusBar", value.asInstanceOf[js.Any])
+      inline def setAndroidStatusBar(value: BarStyle): Self = StObject.set(x, "androidStatusBar", value.asInstanceOf[js.Any])
       
       inline def setAndroidStatusBarUndefined: Self = StObject.set(x, "androidStatusBar", js.undefined)
       
@@ -511,7 +511,7 @@ object anon {
       
       inline def setWebUndefined: Self = StObject.set(x, "web", js.undefined)
       
-      inline def set_internal(value: Dictk): Self = StObject.set(x, "_internal", value.asInstanceOf[js.Any])
+      inline def set_internal(value: PluginHistory): Self = StObject.set(x, "_internal", value.asInstanceOf[js.Any])
       
       inline def set_internalUndefined: Self = StObject.set(x, "_internal", js.undefined)
     }

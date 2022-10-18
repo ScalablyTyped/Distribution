@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.MasterDetailDetailRegion")
 @js.native
 open class MasterDetailDetailRegion protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.MasterDetailDetailRegion {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.MasterDetailDetailRegion {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -44,7 +44,7 @@ object MasterDetailDetailRegion {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.MasterDetailDetailRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetailDetailRegion]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetailDetailRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetailDetailRegion]
   
   /**
     * Creates and returns a new MasterDetailDetailRegion instance in the SDK and on the server.
@@ -55,7 +55,7 @@ object MasterDetailDetailRegion {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.MasterDetail): typings.mendixmodelsdk.pagesMod.pages.MasterDetailDetailRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.MasterDetailDetailRegion]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetail): typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetailDetailRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetailDetailRegion]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.MasterDetailDetailRegion.structureTypeName")

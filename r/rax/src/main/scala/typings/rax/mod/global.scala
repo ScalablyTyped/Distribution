@@ -1261,6 +1261,14 @@ object global {
     
     // We can't recurse forever because `type` can't be self-referential;
     // let's assume it's reasonable to do a single Rax.lazy() around a single Rax.memo() / vice-versa
-    type LibraryManagedAttributes[C, P] = RaxManagedAttributes[Any | C, P]
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      C extends rax.rax.MemoExoticComponent<infer T> ? T extends rax.rax.MemoExoticComponent<infer U> ? rax.rax.RaxManagedAttributes<U, P> : rax.rax.RaxManagedAttributes<T, P> : rax.rax.RaxManagedAttributes<C, P>
+      }}}
+      */
+    @js.native
+    trait LibraryManagedAttributes[C, P] extends StObject
   }
 }

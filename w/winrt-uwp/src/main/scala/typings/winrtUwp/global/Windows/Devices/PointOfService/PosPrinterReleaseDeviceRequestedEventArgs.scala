@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the ClaimedPosPrinter.ReleaseDeviceRequested event that occurs when a point-of-service printer gets a request to release its exclusive claim. */
-@JSGlobal("Windows.Devices.PointOfService.PosPrinterReleaseDeviceRequestedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.PosPrinterReleaseDeviceRequestedEventArgs")
 @js.native
-abstract class PosPrinterReleaseDeviceRequestedEventArgs ()
+open class PosPrinterReleaseDeviceRequestedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.PosPrinterReleaseDeviceRequestedEventArgs

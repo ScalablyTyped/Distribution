@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a session of the USSD network protocol. */
-@JSGlobal("Windows.Networking.NetworkOperators.UssdSession")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.UssdSession")
 @js.native
-abstract class UssdSession ()
+open class UssdSession ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.UssdSession {
   

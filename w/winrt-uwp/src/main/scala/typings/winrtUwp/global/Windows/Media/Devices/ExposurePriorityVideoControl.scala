@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** When supported, allows an app to specify whether the camera driver can dynamically adjust the frame rate of video capture in order to improve video quality in low-light conditions. */
-@JSGlobal("Windows.Media.Devices.ExposurePriorityVideoControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.ExposurePriorityVideoControl")
 @js.native
-abstract class ExposurePriorityVideoControl ()
+open class ExposurePriorityVideoControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.ExposurePriorityVideoControl {
   

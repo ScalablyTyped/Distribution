@@ -68,6 +68,20 @@ object CodeActionKind {
   val RefactorInline: typings.vscode.mod.CodeActionKind = js.native
   
   /**
+    * Base kind for refactoring move actions: `refactor.move`
+    *
+    * Example move actions:
+    *
+    * - Move a function to a new file
+    * - Move a property between classes
+    * - Move method to base class
+    * - ...
+    */
+  @JSGlobal("vscode.CodeActionKind.RefactorMove")
+  @js.native
+  val RefactorMove: typings.vscode.mod.CodeActionKind = js.native
+  
+  /**
     * Base kind for refactoring rewrite actions: `refactor.rewrite`
     *
     * Example rewrite actions:
@@ -76,7 +90,6 @@ object CodeActionKind {
     * - Add or remove parameter
     * - Encapsulate field
     * - Make method static
-    * - Move method to base class
     * - ...
     */
   @JSGlobal("vscode.CodeActionKind.RefactorRewrite")

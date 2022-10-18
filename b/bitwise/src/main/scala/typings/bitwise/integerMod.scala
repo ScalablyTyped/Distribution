@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object integerMod {
   
-  @JSImport("bitwise/esm/integer", JSImport.Namespace)
+  @JSImport("bitwise/integer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   object default {
     
-    @JSImport("bitwise/esm/integer", JSImport.Default)
+    @JSImport("bitwise/integer", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

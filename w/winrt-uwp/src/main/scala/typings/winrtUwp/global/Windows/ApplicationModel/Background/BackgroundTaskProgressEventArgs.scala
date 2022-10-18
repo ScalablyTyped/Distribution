@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents progress information for a task at the time a progress update notification is sent. */
-@JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskProgressEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskProgressEventArgs")
 @js.native
-abstract class BackgroundTaskProgressEventArgs ()
+open class BackgroundTaskProgressEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundTaskProgressEventArgs {
   

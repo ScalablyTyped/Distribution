@@ -1,7 +1,7 @@
 package typings.opentelemetrySdkTraceNode
 
-import typings.opentelemetrySdkTraceBase.basicTracerProviderMod.PROPAGATOR_FACTORY
-import typings.opentelemetrySdkTraceNode.configMod.NodeTracerConfig
+import typings.opentelemetrySdkTraceBase.buildSrcBasicTracerProviderMod.PROPAGATOR_FACTORY
+import typings.opentelemetrySdkTraceNode.buildSrcConfigMod.NodeTracerConfig
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ object mod {
   @JSImport("@opentelemetry/sdk-trace-node", "NodeTracerProvider")
   @js.native
   open class NodeTracerProvider ()
-    extends typings.opentelemetrySdkTraceNode.nodeTracerProviderMod.NodeTracerProvider {
+    extends typings.opentelemetrySdkTraceNode.buildSrcNodeTracerProviderMod.NodeTracerProvider {
     def this(config: NodeTracerConfig) = this()
   }
   /* static members */

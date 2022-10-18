@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-cli
 
-Typings are for version 0.2.1
+Typings are for version 0.14.2
 
 ## Library description:
 JavaScript implementation of the IPFS specification
@@ -10,10 +10,10 @@ JavaScript implementation of the IPFS specification
 | ------------------ | :-------------: |
 | Full name          | ipfs-cli |
 | Keywords           | IPFS |
-| # releases         | 92 |
-| # dependents       | 3 |
-| # downloads        | 79266 |
-| # stars            | 0 |
+| # releases         | 251 |
+| # dependents       | 0.0 |
+| # downloads        | 20109.0 |
+| # stars            | 7055.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-cli#readme)

@@ -6,29 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0`[U, T /* <: Double */] extends StObject {
-    
-    var `0`: U
-    
-    var length: T
-  }
-  object `0` {
-    
-    inline def apply[U, T /* <: Double */](`0`: U, length: T): `0`[U, T] = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
-      __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`0`[U, T]]
-    }
-    
-    extension [Self <: `0`[?, ?], U, T /* <: Double */](x: Self & (`0`[U, T])) {
-      
-      inline def set0(value: U): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
-      
-      inline def setLength(value: T): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait `1`[U, T /* <: js.Array[Any] */] extends StObject {
+  trait `0`[U, T /* <: js.Array[Any] */] extends StObject {
     
     var `0`: js.Array[U]
     
@@ -100,7 +78,7 @@ object anon {
         U
       ]
   }
-  object `1` {
+  object `0` {
     
     inline def apply[U, T /* <: js.Array[Any] */](
       `0`: js.Array[U],
@@ -164,7 +142,7 @@ object anon {
           /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any, 
           U
         ]
-    ): `1`[U, T] = {
+    ): `0`[U, T] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
       __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
@@ -175,10 +153,10 @@ object anon {
       __obj.updateDynamic("6")(`6`.asInstanceOf[js.Any])
       __obj.updateDynamic("7")(`7`.asInstanceOf[js.Any])
       __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`1`[U, T]]
+      __obj.asInstanceOf[`0`[U, T]]
     }
     
-    extension [Self <: `1`[?, ?], U, T /* <: js.Array[Any] */](x: Self & (`1`[U, T])) {
+    extension [Self <: `0`[?, ?], U, T /* <: js.Array[Any] */](x: Self & (`0`[U, T])) {
       
       inline def set0(value: js.Array[U]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       

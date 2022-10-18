@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientCloudtraceStrings {
   
   @js.native
-  sealed trait Attributes extends StObject
-  inline def Attributes: Attributes = "Attributes".asInstanceOf[Attributes]
-  
-  @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
   sealed trait cloudtrace extends StObject
   inline def cloudtrace: cloudtrace = "cloudtrace".asInstanceOf[cloudtrace]
   

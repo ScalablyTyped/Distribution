@@ -13,32 +13,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ProviderId {
   
   /** Facebook provider ID */
-  @JSImport("@firebase/auth/dist/cordova/internal", "ProviderId.FACEBOOK")
+  @JSImport("@firebase/auth/internal", "ProviderId.FACEBOOK")
   @js.native
   val FACEBOOK: facebookDotcom = js.native
   
   /** GitHub provider ID */
-  @JSImport("@firebase/auth/dist/cordova/internal", "ProviderId.GITHUB")
+  @JSImport("@firebase/auth/internal", "ProviderId.GITHUB")
   @js.native
   val GITHUB: githubDotcom = js.native
   
   /** Google provider ID */
-  @JSImport("@firebase/auth/dist/cordova/internal", "ProviderId.GOOGLE")
+  @JSImport("@firebase/auth/internal", "ProviderId.GOOGLE")
   @js.native
   val GOOGLE: googleDotcom = js.native
   
   /** Password provider */
-  @JSImport("@firebase/auth/dist/cordova/internal", "ProviderId.PASSWORD")
+  @JSImport("@firebase/auth/internal", "ProviderId.PASSWORD")
   @js.native
   val PASSWORD: password = js.native
   
   /** Phone provider */
-  @JSImport("@firebase/auth/dist/cordova/internal", "ProviderId.PHONE")
+  @JSImport("@firebase/auth/internal", "ProviderId.PHONE")
   @js.native
   val PHONE: phone = js.native
   
   /** Twitter provider ID */
-  @JSImport("@firebase/auth/dist/cordova/internal", "ProviderId.TWITTER")
+  @JSImport("@firebase/auth/internal", "ProviderId.TWITTER")
   @js.native
   val TWITTER: twitterDotcom = js.native
 }

@@ -59,17 +59,10 @@ object jimpStrings {
   inline def changed: changed = "changed".asInstanceOf[changed]
   
   @js.native
-  sealed trait clone extends StObject
-  
-  @js.native
   sealed trait cloned
     extends StObject
        with ListenableName
   inline def cloned: cloned = "cloned".asInstanceOf[cloned]
-  
-  @js.native
-  sealed trait constructor extends StObject
-  inline def constructor: constructor = "constructor".asInstanceOf[constructor]
   
   @js.native
   sealed trait crop

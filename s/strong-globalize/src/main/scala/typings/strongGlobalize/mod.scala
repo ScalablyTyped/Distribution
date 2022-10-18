@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Map
 import typings.strongGlobalize.anon.Typeofglobalize
 import typings.strongGlobalize.anon.Typeofhelper
-import typings.strongGlobalize.configMod.AnyObject
-import typings.strongGlobalize.strongGlobalizeMod.StrongGlobalize
+import typings.strongGlobalize.libConfigMod.AnyObject
+import typings.strongGlobalize.libStrongGlobalizeMod.StrongGlobalize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.graphqlPlaygroundHtml
 
-import typings.graphqlPlaygroundHtml.renderPlaygroundPageMod.RenderPageOptions
+import typings.graphqlPlaygroundHtml.distRenderPlaygroundPageMod.RenderPageOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

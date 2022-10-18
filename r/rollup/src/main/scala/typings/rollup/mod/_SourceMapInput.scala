@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _SourceMapInput extends StObject
 object _SourceMapInput {
   
-  inline def `0`(): typings.rollup.anon.`0` = {
+  inline def `2`(): typings.rollup.anon.`2` = {
     val __obj = js.Dynamic.literal(mappings = "")
-    __obj.asInstanceOf[typings.rollup.anon.`0`]
+    __obj.asInstanceOf[typings.rollup.anon.`2`]
   }
   
   inline def ExistingRawSourceMap(mappings: String, names: js.Array[String], sources: js.Array[String], version: Double): typings.rollup.mod.ExistingRawSourceMap = {

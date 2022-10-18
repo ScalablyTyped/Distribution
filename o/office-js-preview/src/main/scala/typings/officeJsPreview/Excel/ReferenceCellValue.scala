@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a reference into `referencedValues`. One scenario for using this reference is to avoid duplicating cell value objects (such as an `EntityCellValue`). Define a cell value object once in `referencedValues`, and then refer to that cell value from many places by using a `ReferenceCellValue` where the duplicated value would have appeared.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait ReferenceCellValue extends StObject {
   
@@ -24,8 +23,7 @@ trait ReferenceCellValue extends StObject {
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: js.UndefOr[RangeValueType | Boolean | Double | Error | Empty | String] = js.undefined
   
@@ -33,8 +31,7 @@ trait ReferenceCellValue extends StObject {
     * Represents the value that would be returned by `Range.values` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: js.UndefOr[scala.Boolean | scala.Double | java.lang.String] = js.undefined
   
@@ -42,8 +39,7 @@ trait ReferenceCellValue extends StObject {
     * Represents the index into the `referencedValues` properties of cell values such as `EntityCellValue` and `ArrayCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var reference: scala.Double
   
@@ -51,8 +47,7 @@ trait ReferenceCellValue extends StObject {
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: reference | Reference
 }

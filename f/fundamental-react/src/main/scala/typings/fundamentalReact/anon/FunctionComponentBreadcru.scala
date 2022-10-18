@@ -1,7 +1,7 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.breadcrumbMod.BreadcrumbItemProps
 import typings.fundamentalReact.fundamentalReactStrings.BreadcrumbDotItem
+import typings.fundamentalReact.libBreadcrumbBreadcrumbMod.BreadcrumbItemProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

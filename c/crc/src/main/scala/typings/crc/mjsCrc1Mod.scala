@@ -1,7 +1,7 @@
 package typings.crc
 
 import org.scalablytyped.runtime.Shortcut
-import typings.crc.typesMod.CRCModule
+import typings.crc.mjsTypesMod.CRCModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

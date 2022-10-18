@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param overlappingPairCache can be used to specify your own overlapping pair cache
   */
 open class AmmoJSPlugin ()
-  extends typings.babylonjs.legacyMod.AmmoJSPlugin {
+  extends typings.babylonjs.legacyLegacyMod.AmmoJSPlugin {
   def this(_useDeltaForWorldStep: Boolean) = this()
   def this(_useDeltaForWorldStep: Boolean, ammoInjection: Any) = this()
   def this(_useDeltaForWorldStep: Unit, ammoInjection: Any) = this()

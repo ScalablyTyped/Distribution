@@ -1,7 +1,7 @@
 package typings.webcola.mod
 
-import typings.webcola.rectangleMod.GraphNode
-import typings.webcola.rectangleMod.ProjectionGroup
+import typings.webcola.distSrcRectangleMod.GraphNode
+import typings.webcola.distSrcRectangleMod.ProjectionGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "Projection")
 @js.native
 open class Projection protected ()
-  extends typings.webcola.rectangleMod.Projection {
+  extends typings.webcola.distSrcRectangleMod.Projection {
   def this(nodes: js.Array[GraphNode], groups: js.Array[ProjectionGroup]) = this()
   def this(nodes: js.Array[GraphNode], groups: js.Array[ProjectionGroup], rootGroup: ProjectionGroup) = this()
   def this(

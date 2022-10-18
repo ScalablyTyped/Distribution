@@ -43,10 +43,10 @@ import typings.autocannon.autocannonStrings.reqError
 import typings.autocannon.autocannonStrings.response
 import typings.autocannon.autocannonStrings.start
 import typings.autocannon.autocannonStrings.tick
+import typings.node.NodeJS.WritableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.httpMod.IncomingHttpHeaders
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -617,7 +617,7 @@ object mod {
       * The stream to output to.
       * @default process.stderr
       */
-    var outputStream: js.UndefOr[WritableStream[Any]] = js.undefined
+    var outputStream: js.UndefOr[WritableStream] = js.undefined
     
     /**
       * A truthy value to enable the rendering of the advanced latency table.
@@ -640,7 +640,7 @@ object mod {
     
     extension [Self <: PrintResultOptions](x: Self) {
       
-      inline def setOutputStream(value: WritableStream[Any]): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
+      inline def setOutputStream(value: WritableStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
       
       inline def setOutputStreamUndefined: Self = StObject.set(x, "outputStream", js.undefined)
       
@@ -851,7 +851,7 @@ object mod {
       * The stream to output to.
       * @default process.stderr
       */
-    var outputStream: js.UndefOr[WritableStream[Any]] = js.undefined
+    var outputStream: js.UndefOr[WritableStream] = js.undefined
     
     /**
       * A `String` defining the format of the progress display output. Must be valid input for the [progress bar module](https://www.npmjs.com/package/progress).
@@ -886,7 +886,7 @@ object mod {
     
     extension [Self <: TrackingOptions](x: Self) {
       
-      inline def setOutputStream(value: WritableStream[Any]): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
+      inline def setOutputStream(value: WritableStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
       
       inline def setOutputStreamUndefined: Self = StObject.set(x, "outputStream", js.undefined)
       

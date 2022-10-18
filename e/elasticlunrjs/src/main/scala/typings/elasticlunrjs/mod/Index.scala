@@ -1,6 +1,5 @@
 package typings.elasticlunrjs.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.elasticlunrjs.elasticlunrjsStrings.AND
 import typings.elasticlunrjs.elasticlunrjsStrings.OR
 import org.scalablytyped.runtime.StObject
@@ -30,9 +29,7 @@ open class Index[T /* <: js.Object */] () extends StObject {
   
   def idf(term: String, field: /* keyof T */ String): Double = js.native
   
-  var index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? elasticlunrjs.elasticlunrjs.InvertedIndex}
-    */ typings.elasticlunrjs.elasticlunrjsStrings.Index & TopLevel[Any] = js.native
+  var index: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]:? elasticlunrjs.elasticlunrjs.InvertedIndex} */ js.Any = js.native
   
   def mergeScores(accumScores: Null, scores: SearchScores, op: AND | OR): SearchScores = js.native
   def mergeScores(accumScores: SearchScores, scores: SearchScores, op: AND | OR): SearchScores = js.native

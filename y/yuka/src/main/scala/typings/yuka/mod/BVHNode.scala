@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a BVH node.
   */
 open class BVHNode ()
-  extends typings.yuka.yukaMod.BVHNode
+  extends typings.yuka.srcYukaMod.BVHNode

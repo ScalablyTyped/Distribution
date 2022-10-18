@@ -1,14 +1,14 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.adapterMod.ExtendedCompilerHostMethods
-import typings.angularCompilerCli.astFactoryMod.BinaryOperator
-import typings.angularCompilerCli.astFactoryMod.UnaryOperator
-import typings.angularCompilerCli.astFactoryMod.VariableDeclarationType
-import typings.angularCompilerCli.entryPointMod.EntryPointFormat
-import typings.angularCompilerCli.entryPointMod.EntryPointJsonProperty
-import typings.angularCompilerCli.entryPointMod.PackageJsonFormatProperties
-import typings.angularCompilerCli.ngccOptionsMod.OptionalNgccOptionKeys
-import typings.angularCompilerCli.writingPackageJsonUpdaterMod.PackageJsonPropertyPositioning
+import typings.angularCompilerCli.ngccSrcNgccOptionsMod.OptionalNgccOptionKeys
+import typings.angularCompilerCli.ngccSrcPackagesEntryPointMod.EntryPointFormat
+import typings.angularCompilerCli.ngccSrcPackagesEntryPointMod.EntryPointJsonProperty
+import typings.angularCompilerCli.ngccSrcPackagesEntryPointMod.PackageJsonFormatProperties
+import typings.angularCompilerCli.ngccSrcWritingPackageJsonUpdaterMod.PackageJsonPropertyPositioning
+import typings.angularCompilerCli.srcNgtscCoreApiSrcAdapterMod.ExtendedCompilerHostMethods
+import typings.angularCompilerCli.srcNgtscTranslatorSrcApiAstFactoryMod.BinaryOperator
+import typings.angularCompilerCli.srcNgtscTranslatorSrcApiAstFactoryMod.UnaryOperator
+import typings.angularCompilerCli.srcNgtscTranslatorSrcApiAstFactoryMod.VariableDeclarationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,10 +43,6 @@ object angularCompilerCliStrings {
     extends StObject
        with BinaryOperator
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  
-  @js.native
-  sealed trait Checks extends StObject
-  inline def Checks: Checks = "Checks".asInstanceOf[Checks]
   
   @js.native
   sealed trait EqualssignEqualssign
@@ -128,10 +124,6 @@ object angularCompilerCliStrings {
     extends StObject
        with BinaryOperator
   inline def QuestionmarkQuestionmark: QuestionmarkQuestionmark = "??".asInstanceOf[QuestionmarkQuestionmark]
-  
-  @js.native
-  sealed trait RequiredDelegations extends StObject
-  inline def RequiredDelegations: RequiredDelegations = "RequiredDelegations".asInstanceOf[RequiredDelegations]
   
   @js.native
   sealed trait Slash

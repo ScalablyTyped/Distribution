@@ -1,8 +1,10 @@
 package typings.ipfsHttpClient.anon
 
-import typings.cids.mod.^
-import typings.ipfsHttpClient.mod.HttpOptions
-import typings.std.Uint8Array
+import typings.ipfsCoreTypes.distSrcUtilsMod.AbortOptions
+import typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
+import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.multiformats.cidMod.CID
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,48 +13,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Stat extends StObject {
   
   def stat(): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_stat.BitswapStats */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Stats */ Any
   ] = js.native
-  def stat(
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.AbortOptions */ js.Any) & HttpOptions
-  ): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_stat.BitswapStats */ js.Any
+  def stat(options: AbortOptions & HTTPClientExtraOptions): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Stats */ Any
   ] = js.native
   
-  def unwant(cid: js.Array[^]): js.Promise[Unit] = js.native
-  def unwant(
-    cid: js.Array[^],
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.AbortOptions */ js.Any) & HttpOptions
-  ): js.Promise[Unit] = js.native
-  def unwant(cid: ^): js.Promise[Unit] = js.native
-  def unwant(
-    cid: ^,
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.AbortOptions */ js.Any) & HttpOptions
-  ): js.Promise[Unit] = js.native
+  def unwant(cid: js.Array[CID[Any, Double, Double, Version]]): js.Promise[Unit] = js.native
+  def unwant(cid: js.Array[CID[Any, Double, Double, Version]], options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
+  def unwant(cid: CID[Any, Double, Double, Version]): js.Promise[Unit] = js.native
+  def unwant(cid: CID[Any, Double, Double, Version], options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
   
-  def wantlist(): js.Promise[js.Array[^]] = js.native
-  def wantlist(
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.AbortOptions */ js.Any) & HttpOptions
-  ): js.Promise[js.Array[^]] = js.native
+  def wantlist(): js.Promise[js.Array[CID[Any, Double, Double, Version]]] = js.native
+  def wantlist(options: AbortOptions & HTTPClientExtraOptions): js.Promise[js.Array[CID[Any, Double, Double, Version]]] = js.native
   
-  def wantlistForPeer(peerId: String): js.Promise[js.Array[^]] = js.native
-  def wantlistForPeer(
-    peerId: String,
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.AbortOptions */ js.Any) & HttpOptions
-  ): js.Promise[js.Array[^]] = js.native
-  def wantlistForPeer(peerId: ^): js.Promise[js.Array[^]] = js.native
-  def wantlistForPeer(
-    peerId: ^,
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.AbortOptions */ js.Any) & HttpOptions
-  ): js.Promise[js.Array[^]] = js.native
-  def wantlistForPeer(peerId: typings.peerId.mod.^): js.Promise[js.Array[^]] = js.native
-  def wantlistForPeer(
-    peerId: typings.peerId.mod.^,
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.AbortOptions */ js.Any) & HttpOptions
-  ): js.Promise[js.Array[^]] = js.native
-  def wantlistForPeer(peerId: Uint8Array): js.Promise[js.Array[^]] = js.native
-  def wantlistForPeer(
-    peerId: Uint8Array,
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.AbortOptions */ js.Any) & HttpOptions
-  ): js.Promise[js.Array[^]] = js.native
+  def wantlistForPeer(peerId: PeerId): js.Promise[js.Array[CID[Any, Double, Double, Version]]] = js.native
+  def wantlistForPeer(peerId: PeerId, options: AbortOptions & HTTPClientExtraOptions): js.Promise[js.Array[CID[Any, Double, Double, Version]]] = js.native
 }

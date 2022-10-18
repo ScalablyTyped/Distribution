@@ -6,35 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Artifacts extends StObject {
   
-  var artifacts: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['artifact'] */ js.Any
-  ]
+  var artifacts: js.Array[Archivedownloadurl]
   
   var total_count: Double
 }
 object Artifacts {
   
-  inline def apply(
-    artifacts: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['artifact'] */ js.Any
-    ],
-    total_count: Double
-  ): Artifacts = {
+  inline def apply(artifacts: js.Array[Archivedownloadurl], total_count: Double): Artifacts = {
     val __obj = js.Dynamic.literal(artifacts = artifacts.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[Artifacts]
   }
   
   extension [Self <: Artifacts](x: Self) {
     
-    inline def setArtifacts(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['artifact'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+    inline def setArtifacts(value: js.Array[Archivedownloadurl]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
-    inline def setArtifactsVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['artifact'] */ js.Any)*
-    ): Self = StObject.set(x, "artifacts", js.Array(value*))
+    inline def setArtifactsVarargs(value: Archivedownloadurl*): Self = StObject.set(x, "artifacts", js.Array(value*))
     
     inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }

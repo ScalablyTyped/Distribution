@@ -11,7 +11,7 @@ trait Prefix extends StObject {
   
   var prefix: Precedence
   
-  var regSymbol: String
+  var regSymbol: /* \+ */ String
   
   var symbol: Plussign
 }
@@ -28,7 +28,7 @@ object Prefix {
     
     inline def setPrefix(value: Precedence): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    inline def setRegSymbol(value: String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: /* \+ */ String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
     inline def setSymbol(value: Plussign): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }

@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.microflows
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "microflows.SortItemList")
 @js.native
 open class SortItemList protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.microflows.SortItemList {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.microflows.SortItemList {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object SortItemList {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.SortItemList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.SortItemList]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.SortItemList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.SortItemList]
   
   /**
     * Creates and returns a new SortItemList instance in the SDK and on the server.
@@ -44,7 +44,7 @@ object SortItemList {
     * of the parent DatabaseRetrieveSource element passed as argument.
     */
   /* static member */
-  inline def createInDatabaseRetrieveSourceUnderSortItemList(container: typings.mendixmodelsdk.microflowsMod.microflows.DatabaseRetrieveSource): typings.mendixmodelsdk.microflowsMod.microflows.SortItemList = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDatabaseRetrieveSourceUnderSortItemList")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.SortItemList]
+  inline def createInDatabaseRetrieveSourceUnderSortItemList(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.DatabaseRetrieveSource): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.SortItemList = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDatabaseRetrieveSourceUnderSortItemList")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.SortItemList]
   
   /**
     * Creates and returns a new SortItemList instance in the SDK and on the server.
@@ -52,7 +52,7 @@ object SortItemList {
     * of the parent Sort element passed as argument.
     */
   /* static member */
-  inline def createInSortUnderSortItemList(container: typings.mendixmodelsdk.microflowsMod.microflows.Sort): typings.mendixmodelsdk.microflowsMod.microflows.SortItemList = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSortUnderSortItemList")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.SortItemList]
+  inline def createInSortUnderSortItemList(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.Sort): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.SortItemList = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSortUnderSortItemList")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.SortItemList]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.SortItemList.structureTypeName")

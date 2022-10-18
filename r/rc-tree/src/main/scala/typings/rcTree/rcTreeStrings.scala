@@ -1,7 +1,7 @@
 package typings.rcTree
 
-import typings.rcTree.interfaceMod._Direction
-import typings.rcTree.treeMod.ExpandAction
+import typings.rcTree.esInterfaceMod._Direction
+import typings.rcTree.esTreeMod.ExpandAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -47,7 +47,7 @@ trait Time extends StObject {
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                  of type `Office.AsyncResult`. The `value` property of the result is a `Date` object.
@@ -103,7 +103,7 @@ trait Time extends StObject {
     * - `InvalidEndTime`: The appointment end time is before the appointment start time.
     *
     * @param dateTime - A date-time object in Coordinated Universal Time (UTC).
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *               type `Office.AsyncResult`. If setting the date and time fails, the `asyncResult.error` property will contain an error code.

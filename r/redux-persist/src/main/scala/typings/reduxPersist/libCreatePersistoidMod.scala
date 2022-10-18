@@ -1,7 +1,7 @@
 package typings.reduxPersist
 
-import typings.reduxPersist.typesMod.PersistConfig
-import typings.reduxPersist.typesMod.Persistoid
+import typings.reduxPersist.esTypesMod.PersistConfig
+import typings.reduxPersist.esTypesMod.Persistoid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

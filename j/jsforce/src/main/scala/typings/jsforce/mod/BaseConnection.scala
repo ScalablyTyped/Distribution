@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsforce", "BaseConnection")
+/* note: abstract class */ @JSImport("jsforce", "BaseConnection")
 @js.native
-abstract class BaseConnection ()
+open class BaseConnection ()
   extends typings.jsforce.connectionMod.BaseConnection {
   def this(options: EventEmitterOptions) = this()
 }

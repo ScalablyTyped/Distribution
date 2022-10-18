@@ -1,6 +1,6 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.typeCheckBlockMod.Context
+import typings.angularCompilerCli.srcNgtscTypecheckSrcTypeCheckBlockMod.Context
 import typings.typescript.mod.ClassElement
 import typings.typescript.mod.HeritageClause
 import typings.typescript.mod.Identifier

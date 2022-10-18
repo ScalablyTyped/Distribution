@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ParamFactory protected ()
   extends typings.uirouterCore.libUrlMod.ParamFactory {
-  def this(router: typings.uirouterCore.routerMod.UIRouter) = this()
+  def this(router: typings.uirouterCore.libRouterMod.UIRouter) = this()
 }

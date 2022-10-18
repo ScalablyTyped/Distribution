@@ -3,7 +3,7 @@ package typings.babylonjs.xRIndexMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.XRInputSource
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.webXRMotionControllerManagerMod.MotionControllerConstructor
+import typings.babylonjs.xRMotionControllerWebXRMotionControllerManagerMod.MotionControllerConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXRMotionControllerManager")
 @js.native
 open class WebXRMotionControllerManager ()
-  extends typings.babylonjs.motionControllerIndexMod.WebXRMotionControllerManager
+  extends typings.babylonjs.xRMotionControllerIndexMod.WebXRMotionControllerManager
 /* static members */
 object WebXRMotionControllerManager {
   
@@ -73,8 +73,16 @@ object WebXRMotionControllerManager {
     * @param forceProfile force a certain profile for this controller
     * @returns A promise that fulfils with the motion controller class for this profile id or the generic standard class if none was found
     */
-  inline def GetMotionControllerWithXRInput(xrInput: XRInputSource, scene: Scene): js.Promise[typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetMotionControllerWithXRInput")(xrInput.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController]]
-  inline def GetMotionControllerWithXRInput(xrInput: XRInputSource, scene: Scene, forceProfile: String): js.Promise[typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetMotionControllerWithXRInput")(xrInput.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forceProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController]]
+  inline def GetMotionControllerWithXRInput(xrInput: XRInputSource, scene: Scene): js.Promise[
+    typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.WebXRAbstractMotionController
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetMotionControllerWithXRInput")(xrInput.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.WebXRAbstractMotionController
+  ]]
+  inline def GetMotionControllerWithXRInput(xrInput: XRInputSource, scene: Scene, forceProfile: String): js.Promise[
+    typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.WebXRAbstractMotionController
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetMotionControllerWithXRInput")(xrInput.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forceProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.WebXRAbstractMotionController
+  ]]
   
   /**
     * Which repository gets priority - local or online

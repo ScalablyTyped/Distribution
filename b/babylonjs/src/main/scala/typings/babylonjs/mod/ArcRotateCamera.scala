@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ArcRotateCamera")
 @js.native
 open class ArcRotateCamera protected ()
-  extends typings.babylonjs.legacyMod.ArcRotateCamera {
+  extends typings.babylonjs.legacyLegacyMod.ArcRotateCamera {
   /**
     * Instantiates a new ArcRotateCamera in a given scene
     * @param name Defines the name of the camera
@@ -23,14 +23,14 @@ open class ArcRotateCamera protected ()
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3
   ) = this()
   def this(
     name: String,
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
   def this(
@@ -38,7 +38,7 @@ open class ArcRotateCamera protected ()
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: Unit,
     setActiveOnSceneIfNoneActive: Boolean
   ) = this()
@@ -47,7 +47,7 @@ open class ArcRotateCamera protected ()
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene,
     setActiveOnSceneIfNoneActive: Boolean
   ) = this()

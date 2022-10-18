@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait TargetHttpProxyAggregatedList extends StObject {
   
   /** A list of TargetHttpProxiesScopedList resources. */
   var items: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.TargetHttpProxiesScopedList}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetHttpProxyAggregatedList & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.TargetHttpProxiesScopedList} */ js.Any
   ] = js.undefined
   
   /** [Output Only] Type of resource. Always compute#targetHttpProxyAggregatedList for lists of Target HTTP Proxies. */
@@ -46,9 +43,7 @@ object TargetHttpProxyAggregatedList {
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setItems(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.TargetHttpProxiesScopedList}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetHttpProxyAggregatedList & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.TargetHttpProxiesScopedList} */ js.Any
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

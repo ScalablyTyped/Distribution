@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grammarkdown", "SymbolTable")
 @js.native
-class SymbolTable ()
-  extends typings.grammarkdown.symbolsMod.SymbolTable
+open class SymbolTable ()
+  extends typings.grammarkdown.distSymbolsMod.SymbolTable

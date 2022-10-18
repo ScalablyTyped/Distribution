@@ -11,6 +11,18 @@ object dcpClientStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
+  sealed trait accepted extends StObject
+  inline def accepted: accepted = "accepted".asInstanceOf[accepted]
+  
+  @js.native
+  sealed trait complete extends StObject
+  inline def complete: complete = "complete".asInstanceOf[complete]
+  
+  @js.native
+  sealed trait console extends StObject
+  inline def console: console = "console".asInstanceOf[console]
+  
+  @js.native
   sealed trait fetch extends StObject
   inline def fetch: fetch = "fetch".asInstanceOf[fetch]
   
@@ -29,6 +41,14 @@ object dcpClientStrings {
   @js.native
   sealed trait payment extends StObject
   inline def payment: payment = "payment".asInstanceOf[payment]
+  
+  @js.native
+  sealed trait readystatechange extends StObject
+  inline def readystatechange: readystatechange = "readystatechange".asInstanceOf[readystatechange]
+  
+  @js.native
+  sealed trait result extends StObject
+  inline def result: result = "result".asInstanceOf[result]
   
   @js.native
   sealed trait sandbox extends StObject

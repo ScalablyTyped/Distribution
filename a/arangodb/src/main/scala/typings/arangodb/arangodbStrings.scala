@@ -36,10 +36,6 @@ object arangodbStrings {
   inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait Document extends StObject
-  inline def Document: Document = "Document".asInstanceOf[Document]
-  
-  @js.native
   sealed trait ERROR_AGENCY_CANNOT_REBUILD_DBS
     extends StObject
        with _ErrorName
@@ -1858,10 +1854,6 @@ object arangodbStrings {
     extends StObject
        with HttpMethod
   inline def PUT: PUT = "PUT".asInstanceOf[PUT]
-  
-  @js.native
-  sealed trait Patch_ extends StObject
-  inline def Patch_ : Patch_ = "Patch".asInstanceOf[Patch_]
   
   @js.native
   sealed trait SIMPLE_CLIENT_COULD_NOT_CONNECT

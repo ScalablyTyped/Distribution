@@ -4,6 +4,7 @@ import typings.xrm.Xrm.Async.PromiseLike
 import typings.xrm.Xrm.Attributes.Attribute
 import typings.xrm.Xrm.Collection.ItemCollection
 import typings.xrm.Xrm.Events.ContextSensitiveHandler
+import typings.xrm.Xrm.Events.DataLoadEventHandler
 import typings.xrm.Xrm.ProcessFlow.ProcessManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +22,7 @@ trait Data extends StObject {
     * Adds a function to be called when form data is loaded.
     * @param handler The function to be executed when the form data loads. The function will be added to the bottom of the event handler pipeline.
     */
-  def addOnLoad(handler: ContextSensitiveHandler): Unit = js.native
+  def addOnLoad(handler: DataLoadEventHandler): Unit = js.native
   
   /**
     * Collection of non-entity data on the form.

@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.SearchFieldType")
 @js.native
 open class SearchFieldType protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.SearchFieldType {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.SearchFieldType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object SearchFieldType {
@@ -20,18 +20,18 @@ object SearchFieldType {
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SearchFieldType.Hidden")
   @js.native
-  def Hidden: typings.mendixmodelsdk.pagesMod.pages.SearchFieldType = js.native
-  inline def Hidden_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchFieldType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hidden")(x.asInstanceOf[js.Any])
+  def Hidden: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchFieldType = js.native
+  inline def Hidden_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchFieldType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hidden")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SearchFieldType.Normal")
   @js.native
-  def Normal: typings.mendixmodelsdk.pagesMod.pages.SearchFieldType = js.native
-  inline def Normal_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchFieldType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Normal")(x.asInstanceOf[js.Any])
+  def Normal: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchFieldType = js.native
+  inline def Normal_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchFieldType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Normal")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SearchFieldType.ReadOnly")
   @js.native
-  def ReadOnly: typings.mendixmodelsdk.pagesMod.pages.SearchFieldType = js.native
-  inline def ReadOnly_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchFieldType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReadOnly")(x.asInstanceOf[js.Any])
+  def ReadOnly: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchFieldType = js.native
+  inline def ReadOnly_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.SearchFieldType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReadOnly")(x.asInstanceOf[js.Any])
 }

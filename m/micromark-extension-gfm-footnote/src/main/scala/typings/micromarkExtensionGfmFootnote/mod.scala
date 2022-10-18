@@ -18,5 +18,5 @@ object mod {
   inline def gfmFootnoteHtml(): HtmlExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("gfmFootnoteHtml")().asInstanceOf[HtmlExtension]
   inline def gfmFootnoteHtml(options: Options): HtmlExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("gfmFootnoteHtml")(options.asInstanceOf[js.Any]).asInstanceOf[HtmlExtension]
   
-  type HtmlOptions = Options
+  type HtmlOptions = typings.micromarkExtensionGfmFootnote.devLibHtmlMod.Options
 }

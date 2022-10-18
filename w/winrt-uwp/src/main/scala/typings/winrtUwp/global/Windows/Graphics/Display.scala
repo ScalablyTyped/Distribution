@@ -56,9 +56,9 @@ object Display {
       /* 0 */ val none: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayHdrOption.none & Double = js.native
     }
     
-    @JSGlobal("Windows.Graphics.Display.Core.HdmiDisplayInformation")
+    /* note: abstract class */ @JSGlobal("Windows.Graphics.Display.Core.HdmiDisplayInformation")
     @js.native
-    abstract class HdmiDisplayInformation ()
+    open class HdmiDisplayInformation ()
       extends StObject
          with typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayInformation
     object HdmiDisplayInformation {
@@ -72,9 +72,9 @@ object Display {
       inline def getForCurrentView(): typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayInformation]
     }
     
-    @JSGlobal("Windows.Graphics.Display.Core.HdmiDisplayMode")
+    /* note: abstract class */ @JSGlobal("Windows.Graphics.Display.Core.HdmiDisplayMode")
     @js.native
-    abstract class HdmiDisplayMode ()
+    open class HdmiDisplayMode ()
       extends StObject
          with typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayMode {
       
@@ -145,9 +145,9 @@ object Display {
   }
   
   /** Monitors and controls physical display information. The class provides events to allow clients to monitor for changes in the display. */
-  @JSGlobal("Windows.Graphics.Display.DisplayInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Display.DisplayInformation")
   @js.native
-  abstract class DisplayInformation ()
+  open class DisplayInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Display.DisplayInformation
   object DisplayInformation {
@@ -216,9 +216,9 @@ object Display {
   }
   
   /** Provides various properties that are related to the physical display. */
-  @JSGlobal("Windows.Graphics.Display.DisplayProperties")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Display.DisplayProperties")
   @js.native
-  abstract class DisplayProperties ()
+  open class DisplayProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Display.DisplayProperties
   object DisplayProperties {

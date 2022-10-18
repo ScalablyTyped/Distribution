@@ -4,9 +4,9 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.animatedFABAnimatedFABMod.AnimatedFABAnimateFrom
-import typings.reactNativePaper.animatedFABAnimatedFABMod.AnimatedFABIconMode
-import typings.reactNativePaper.iconMod.IconSource
+import typings.reactNativePaper.libTypescriptComponentsFabAnimatedFABAnimatedFABMod.AnimatedFABAnimateFrom
+import typings.reactNativePaper.libTypescriptComponentsFabAnimatedFABAnimatedFABMod.AnimatedFABIconMode
+import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,7 +76,7 @@ trait AccessibilityState extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * Make the label text uppercased.
@@ -94,7 +94,7 @@ object AccessibilityState {
     extended: Boolean,
     icon: IconSource,
     label: String,
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   ): AccessibilityState = {
     val __obj = js.Dynamic.literal(extended = extended.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibilityState]
@@ -154,7 +154,7 @@ object AccessibilityState {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setUppercase(value: Boolean): Self = StObject.set(x, "uppercase", value.asInstanceOf[js.Any])
     

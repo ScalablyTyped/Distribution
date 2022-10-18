@@ -8,8 +8,10 @@ import typings.vsoNodeApi.extensionManagementApiMod.IExtensionManagementApi
 import typings.vsoNodeApi.featureManagementApiMod.IFeatureManagementApi
 import typings.vsoNodeApi.fileContainerApiMod.IFileContainerApi
 import typings.vsoNodeApi.gitApiMod.IGitApi
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesLocationsInterfacesMod.ConnectionData
 import typings.vsoNodeApi.locationsApiMod.ILocationsApi
-import typings.vsoNodeApi.locationsInterfacesMod.ConnectionData
 import typings.vsoNodeApi.notificationApiMod.INotificationApi
 import typings.vsoNodeApi.policyApiMod.IPolicyApi
 import typings.vsoNodeApi.profileApiMod.IProfileApi
@@ -20,8 +22,6 @@ import typings.vsoNodeApi.taskAgentApiMod.ITaskAgentApi
 import typings.vsoNodeApi.taskApiMod.ITaskApi
 import typings.vsoNodeApi.testApiMod.ITestApi
 import typings.vsoNodeApi.tfvcApiMod.ITfvcApi
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vsoClientMod.VsoClient
 import typings.vsoNodeApi.workApiMod.IWorkApi
 import typings.vsoNodeApi.workItemTrackingApiMod.IWorkItemTrackingApi

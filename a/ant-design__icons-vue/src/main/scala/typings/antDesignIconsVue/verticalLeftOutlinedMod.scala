@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsVerticalLeftOutlinedMod.VerticalLeftOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object verticalLeftOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/VerticalLeftOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/VerticalLeftOutlined", JSImport.Default)
   @js.native
   val default: VerticalLeftOutlinedIconType = js.native
-  
-  @js.native
-  trait VerticalLeftOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_VerticalLeftOutlinedIconType: String = js.native
-  }
   
   type _To = VerticalLeftOutlinedIconType
   

@@ -1,7 +1,7 @@
 package typings.reactNativePermissions
 
-import typings.reactNativePermissions.typesMod.LocationAccuracy
-import typings.reactNativePermissions.typesMod.NotificationOption
+import typings.reactNativePermissions.distTypescriptTypesMod.LocationAccuracy
+import typings.reactNativePermissions.distTypescriptTypesMod.NotificationOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

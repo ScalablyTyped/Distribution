@@ -30,6 +30,12 @@ trait TargetInfo extends StObject {
     */
   var openerId: js.UndefOr[TargetID] = js.undefined
   
+  /**
+    * Provides additional details for specific target types. For example, for
+    * the type of "page", this may be set to "portal" or "prerender".
+    */
+  var subtype: js.UndefOr[String] = js.undefined
+  
   var targetId: TargetID
   
   var title: String
@@ -70,6 +76,10 @@ object TargetInfo {
     inline def setOpenerId(value: TargetID): Self = StObject.set(x, "openerId", value.asInstanceOf[js.Any])
     
     inline def setOpenerIdUndefined: Self = StObject.set(x, "openerId", js.undefined)
+    
+    inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+    
+    inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
     
     inline def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     

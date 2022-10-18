@@ -6,35 +6,35 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/auth/dist/cordova/internal", "EmailAuthProvider")
+@JSImport("@firebase/auth/internal", "EmailAuthProvider")
 @js.native
 open class EmailAuthProvider ()
-  extends typings.firebaseAuth.cordovaMod.EmailAuthProvider
+  extends typings.firebaseAuth.distInternalMod.EmailAuthProvider
 /* static members */
 object EmailAuthProvider {
   
-  @JSImport("@firebase/auth/dist/cordova/internal", "EmailAuthProvider")
+  @JSImport("@firebase/auth/internal", "EmailAuthProvider")
   @js.native
   val ^ : js.Any = js.native
   
   /**
     * Always set to {@link SignInMethod}.EMAIL_LINK.
     */
-  @JSImport("@firebase/auth/dist/cordova/internal", "EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD")
+  @JSImport("@firebase/auth/internal", "EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD")
   @js.native
   val EMAIL_LINK_SIGN_IN_METHOD: emailLink = js.native
   
   /**
     * Always set to {@link SignInMethod}.EMAIL_PASSWORD.
     */
-  @JSImport("@firebase/auth/dist/cordova/internal", "EmailAuthProvider.EMAIL_PASSWORD_SIGN_IN_METHOD")
+  @JSImport("@firebase/auth/internal", "EmailAuthProvider.EMAIL_PASSWORD_SIGN_IN_METHOD")
   @js.native
   val EMAIL_PASSWORD_SIGN_IN_METHOD: password = js.native
   
   /**
     * Always set to {@link ProviderId}.PASSWORD, even for email link.
     */
-  @JSImport("@firebase/auth/dist/cordova/internal", "EmailAuthProvider.PROVIDER_ID")
+  @JSImport("@firebase/auth/internal", "EmailAuthProvider.PROVIDER_ID")
   @js.native
   val PROVIDER_ID: password = js.native
   
@@ -56,7 +56,7 @@ object EmailAuthProvider {
     * @param password - User account password.
     * @returns The auth provider credential.
     */
-  inline def credential(email: String, password: String): typings.firebaseAuth.emailMod.EmailAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(email.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseAuth.emailMod.EmailAuthCredential]
+  inline def credential(email: String, password: String): typings.firebaseAuth.distSrcCoreCredentialsEmailMod.EmailAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(email.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseAuth.distSrcCoreCredentialsEmailMod.EmailAuthCredential]
   
   /**
     * Initialize an {@link AuthCredential} using an email and an email link after a sign in with
@@ -80,5 +80,5 @@ object EmailAuthProvider {
     * @param emailLink - Sign-in email link.
     * @returns - The auth provider credential.
     */
-  inline def credentialWithLink(email: String, emailLink: String): typings.firebaseAuth.emailMod.EmailAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credentialWithLink")(email.asInstanceOf[js.Any], emailLink.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseAuth.emailMod.EmailAuthCredential]
+  inline def credentialWithLink(email: String, emailLink: String): typings.firebaseAuth.distSrcCoreCredentialsEmailMod.EmailAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credentialWithLink")(email.asInstanceOf[js.Any], emailLink.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseAuth.distSrcCoreCredentialsEmailMod.EmailAuthCredential]
 }

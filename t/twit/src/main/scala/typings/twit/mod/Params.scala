@@ -29,6 +29,8 @@ trait Params extends StObject {
   
   var enable_dmcommands: js.UndefOr[Boolean] = js.undefined
   
+  var event: js.UndefOr[MessageCreateEvent] = js.undefined
+  
   var exclude_replies: js.UndefOr[Boolean] = js.undefined
   
   var exclude_reply_user_ids: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -163,6 +165,10 @@ object Params {
     inline def setEnable_dmcommands(value: Boolean): Self = StObject.set(x, "enable_dmcommands", value.asInstanceOf[js.Any])
     
     inline def setEnable_dmcommandsUndefined: Self = StObject.set(x, "enable_dmcommands", js.undefined)
+    
+    inline def setEvent(value: MessageCreateEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     inline def setExclude_replies(value: Boolean): Self = StObject.set(x, "exclude_replies", value.asInstanceOf[js.Any])
     

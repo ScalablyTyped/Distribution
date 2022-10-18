@@ -5,8 +5,8 @@ import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbreviation
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.composite
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.name
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.offset
-import typings.blueprintjsTimezone.timezoneMetadataMod.ITimezoneMetadata
-import typings.blueprintjsTimezone.timezonePickerMod.TimezonePickerProps
+import typings.blueprintjsTimezone.libEsmComponentsTimezonePickerTimezoneMetadataMod.ITimezoneMetadata
+import typings.blueprintjsTimezone.libEsmComponentsTimezonePickerTimezonePickerMod.TimezonePickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,7 +62,7 @@ object mod {
   @JSImport("@blueprintjs/timezone", "TimezonePicker")
   @js.native
   open class TimezonePicker protected ()
-    extends typings.blueprintjsTimezone.componentsMod.TimezonePicker {
+    extends typings.blueprintjsTimezone.libEsmComponentsMod.TimezonePicker {
     def this(props: TimezonePickerProps) = this()
     def this(props: TimezonePickerProps, context: Any) = this()
   }

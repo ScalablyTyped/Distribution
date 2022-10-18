@@ -9,7 +9,7 @@ object ExitNotification {
   
   @JSImport("vscode-languageserver-protocol", "ExitNotification.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "ExitNotification.method")
   @js.native
@@ -17,5 +17,5 @@ object ExitNotification {
   
   @JSImport("vscode-languageserver-protocol", "ExitNotification.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType0[Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType0[Unit] = js.native
 }

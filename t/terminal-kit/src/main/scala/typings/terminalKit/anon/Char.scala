@@ -7,23 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Char extends StObject {
   
-  var attr: Attributes | Double
+  var attr: Attributes
   
-  var char: js.UndefOr[String] = js.undefined
+  var char: String
 }
 object Char {
   
-  inline def apply(attr: Attributes | Double): Char = {
-    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any])
+  inline def apply(attr: Attributes, char: String): Char = {
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any])
     __obj.asInstanceOf[Char]
   }
   
   extension [Self <: Char](x: Self) {
     
-    inline def setAttr(value: Attributes | Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: Attributes): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     inline def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
-    
-    inline def setCharUndefined: Self = StObject.set(x, "char", js.undefined)
   }
 }

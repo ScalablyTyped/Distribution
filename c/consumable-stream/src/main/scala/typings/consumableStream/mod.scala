@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("consumable-stream", JSImport.Namespace)
+  /* note: abstract class */ @JSImport("consumable-stream", JSImport.Namespace)
   @js.native
-  abstract class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with ConsumableStream[T]
   

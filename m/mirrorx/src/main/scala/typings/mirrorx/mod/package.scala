@@ -8,7 +8,7 @@ import typings.mirrorx.mod.^
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
-import typings.reactRedux.connectMod.Connect
+import typings.reactRedux.esComponentsConnectMod.Connect
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

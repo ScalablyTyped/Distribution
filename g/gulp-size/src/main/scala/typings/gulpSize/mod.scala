@@ -1,5 +1,6 @@
 package typings.gulpSize
 
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -103,35 +104,23 @@ object mod {
     }
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream * / any */ trait SizeStream extends StObject {
+  @js.native
+  trait SizeStream
+    extends StObject
+       with ReadWriteStream {
     
     /**
       * Prettified version of .size.
       *
       * @example 14 kB
       */
-    var prettySize: String
+    var prettySize: String = js.native
     
     /**
       * The total size of all files in bytes.
       *
       * @example 12423000
       */
-    var size: Double
-  }
-  object SizeStream {
-    
-    inline def apply(prettySize: String, size: Double): SizeStream = {
-      val __obj = js.Dynamic.literal(prettySize = prettySize.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SizeStream]
-    }
-    
-    extension [Self <: SizeStream](x: Self) {
-      
-      inline def setPrettySize(value: String): Self = StObject.set(x, "prettySize", value.asInstanceOf[js.Any])
-      
-      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-    }
+    var size: Double = js.native
   }
 }

@@ -1,6 +1,6 @@
 package typings.fpTs.anon
 
-import typings.fpTs.nonEmptyArrayMod.NonEmptyArray_
+import typings.fpTs.libNonEmptyArrayMod.NonEmptyArray_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

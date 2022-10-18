@@ -1,6 +1,8 @@
 package typings.materializeCss.mod
 
+import typings.materializeCss.M.TimepickerOptions
 import typings.materializeCss.M.Views
+import typings.materializeCss.MElements
 import typings.materializeCss.anon.PartialTimepickerOptions
 import typings.materializeCss.materializeCssStrings.AM
 import typings.materializeCss.materializeCssStrings.PM
@@ -37,6 +39,18 @@ open class Timepicker ()
   var currentView: Views = js.native
   
   /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
+  
+  /**
     * If the picker is open.
     */
   /* CompleteClass */
@@ -47,6 +61,12 @@ open class Timepicker ()
     */
   /* CompleteClass */
   override def open(): Unit = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: TimepickerOptions = js.native
   
   /**
     * Show hours or minutes view on timepicker
@@ -83,13 +103,8 @@ object Timepicker {
     * Init Timepickers
     */
   /* static member */
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any
-  ): js.Array[typings.materializeCss.M.Timepicker] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Timepicker]]
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any,
-    options: PartialTimepickerOptions
-  ): js.Array[typings.materializeCss.M.Timepicker] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Timepicker]]
+  inline def init(els: MElements): js.Array[typings.materializeCss.M.Timepicker] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Timepicker]]
+  inline def init(els: MElements, options: PartialTimepickerOptions): js.Array[typings.materializeCss.M.Timepicker] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Timepicker]]
   /**
     * Init Timepicker
     */

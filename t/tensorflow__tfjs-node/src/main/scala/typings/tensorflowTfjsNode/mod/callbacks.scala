@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsNode.mod
 
-import typings.tensorflowTfjsLayers.callbacksMod.EarlyStoppingCallbackArgs
-import typings.tensorflowTfjsLayers.callbacksMod.EarlyStopping_
+import typings.tensorflowTfjsLayers.distCallbacksMod.EarlyStoppingCallbackArgs
+import typings.tensorflowTfjsLayers.distCallbacksMod.EarlyStopping_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

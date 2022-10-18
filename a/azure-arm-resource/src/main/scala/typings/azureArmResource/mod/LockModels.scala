@@ -10,12 +10,12 @@ object LockModels {
   @JSImport("azure-arm-resource", "LockModels.BaseResource")
   @js.native
   open class BaseResource ()
-    extends typings.azureArmResource.lockModelsMod.BaseResource
+    extends typings.azureArmResource.libLockModelsMod.BaseResource
   
   @JSImport("azure-arm-resource", "LockModels.CloudError")
   @js.native
   open class CloudError protected ()
-    extends typings.azureArmResource.lockModelsMod.CloudError {
+    extends typings.azureArmResource.libLockModelsMod.CloudError {
     def this(parameters: CloudErrorParameters) = this()
   }
 }

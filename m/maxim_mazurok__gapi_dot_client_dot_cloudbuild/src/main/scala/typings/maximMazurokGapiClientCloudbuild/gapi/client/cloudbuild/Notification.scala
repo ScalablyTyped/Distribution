@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,7 @@ trait Notification extends StObject {
   
   /** Escape hatch for users to supply custom delivery configs. */
   var structDelivery: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Notification & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object Notification {
@@ -52,9 +49,7 @@ object Notification {
     inline def setSmtpDeliveryUndefined: Self = StObject.set(x, "smtpDelivery", js.undefined)
     
     inline def setStructDelivery(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Notification & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "structDelivery", value.asInstanceOf[js.Any])
     
     inline def setStructDeliveryUndefined: Self = StObject.set(x, "structDelivery", js.undefined)

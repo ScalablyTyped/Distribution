@@ -1,15 +1,15 @@
 package typings.awsServerlessExpress
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyEvent
 import typings.awsLambda.handlerMod.Context
+import typings.awsLambda.triggerApiGatewayProxyMod.APIGatewayProxyEvent
 import typings.awsServerlessExpress.awsServerlessExpressStrings.CALLBACK
 import typings.awsServerlessExpress.awsServerlessExpressStrings.CONTEXT_SUCCEED
 import typings.awsServerlessExpress.awsServerlessExpressStrings.PROMISE
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

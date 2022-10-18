@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/animations", "AnimationFactory")
+/* note: abstract class */ @JSImport("@angular/animations", "AnimationFactory")
 @js.native
-abstract class AnimationFactory () extends StObject {
+open class AnimationFactory () extends StObject {
   
   /**
     * Creates an `AnimationPlayer` instance for the reusable animation defined by

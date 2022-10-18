@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ethersproject__networks"
-version := "5.7.1-8dafae"
+version := "5.7.1-afc521"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

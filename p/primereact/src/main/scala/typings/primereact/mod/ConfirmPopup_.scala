@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.confirmpopupMod.ConfirmPopupProps
+import typings.primereact.confirmpopupConfirmpopupMod.ConfirmPopupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "ConfirmPopup")
 @js.native
 open class ConfirmPopup_ protected ()
-  extends typings.primereact.confirmpopupMod.ConfirmPopup_ {
+  extends typings.primereact.confirmpopupConfirmpopupMod.ConfirmPopup_ {
   def this(props: ConfirmPopupProps) = this()
   /**
     * @deprecated

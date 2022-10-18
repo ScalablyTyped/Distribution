@@ -3,10 +3,10 @@ package typings.reactNativePaper.anon
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
+import typings.reactNativePaper.libTypescriptComponentsTextInputTypesMod.RenderProps
+import typings.reactNativePaper.libTypescriptComponentsTextInputTypesMod.TextInputLabelProp
 import typings.reactNativePaper.reactNativePaperStrings.flat
 import typings.reactNativePaper.reactNativePaperStrings.outlined
-import typings.reactNativePaper.typesMod.RenderProps
-import typings.reactNativePaper.typesMod.TextInputLabelProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -133,7 +133,7 @@ trait ActiveOutlineColor extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * Inactive underline color of the input.
@@ -147,7 +147,7 @@ trait ActiveOutlineColor extends StObject {
 }
 object ActiveOutlineColor {
   
-  inline def apply(theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): ActiveOutlineColor = {
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): ActiveOutlineColor = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveOutlineColor]
   }
@@ -232,7 +232,7 @@ object ActiveOutlineColor {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setUnderlineColor(value: String): Self = StObject.set(x, "underlineColor", value.asInstanceOf[js.Any])
     

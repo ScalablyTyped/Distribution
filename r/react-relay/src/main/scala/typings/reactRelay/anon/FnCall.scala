@@ -1,8 +1,8 @@
 package typings.reactRelay.anon
 
-import typings.relayRuntime.relayRuntimeTypesMod.Disposable
-import typings.relayRuntime.relayRuntimeTypesMod.OperationType
-import typings.relayRuntime.requestSubscriptionMod.GraphQLSubscriptionConfig
+import typings.relayRuntime.libSubscriptionRequestSubscriptionMod.GraphQLSubscriptionConfig
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Disposable
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.OperationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FnCall extends StObject {
   
   def apply[TSubscription /* <: OperationType */](
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
     // tslint:disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscription]
   ): Disposable = js.native

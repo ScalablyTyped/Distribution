@@ -1,11 +1,11 @@
 package typings.mali
 
+import typings.grpcGrpcJs.buildSrcServerCallMod.ServerDuplexStream
+import typings.grpcGrpcJs.buildSrcServerCallMod.ServerReadableStream
+import typings.grpcGrpcJs.buildSrcServerCallMod.ServerUnaryCall
+import typings.grpcGrpcJs.buildSrcServerCallMod.ServerWritableStream
 import typings.grpcGrpcJs.mod.Metadata
 import typings.grpcGrpcJs.mod.Server
-import typings.grpcGrpcJs.serverCallMod.ServerDuplexStream
-import typings.grpcGrpcJs.serverCallMod.ServerReadableStream
-import typings.grpcGrpcJs.serverCallMod.ServerUnaryCall
-import typings.grpcGrpcJs.serverCallMod.ServerWritableStream
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

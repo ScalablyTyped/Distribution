@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Data3DTexture")
 @js.native
 open class Data3DTexture protected ()
-  extends typings.three.threeMod.Data3DTexture {
+  extends typings.three.srcThreeMod.Data3DTexture {
   def this(data: BufferSource, width: Double, height: Double, depth: Double) = this()
 }

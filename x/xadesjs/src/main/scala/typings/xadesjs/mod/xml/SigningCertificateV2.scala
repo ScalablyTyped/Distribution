@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.SigningCertificateV2")
 @js.native
 open class SigningCertificateV2 ()
-  extends typings.xadesjs.typesXmlMod.SigningCertificateV2 {
+  extends typings.xadesjs.buildTypesXmlMod.SigningCertificateV2 {
   def this(properties: js.Object) = this()
 }

@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents an schemaless set of properties.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait EntityCellValue
   extends StObject
@@ -25,8 +24,7 @@ trait EntityCellValue
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: js.UndefOr[error | Error] = js.undefined
   
@@ -36,8 +34,7 @@ trait EntityCellValue
     * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: js.UndefOr[NumbersignVALUEExclamationmark | String] = js.undefined
   
@@ -45,8 +42,7 @@ trait EntityCellValue
     * Represents layout information for views of this entity.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var layouts: js.UndefOr[EntityViewLayouts] = js.undefined
   
@@ -54,8 +50,7 @@ trait EntityCellValue
     * Represents the properties of this entity and their metadata.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var properties: js.UndefOr[StringDictionary[EntityPropertyType]] = js.undefined
   
@@ -64,8 +59,7 @@ trait EntityCellValue
     * This information can be used for branding in entity cards.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var provider: js.UndefOr[CellValueProviderAttributes] = js.undefined
   
@@ -73,8 +67,7 @@ trait EntityCellValue
     * Represents the cell values which are referenced within `EntityCellValue.properties`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var referencedValues: js.UndefOr[js.Array[ReferencedValue]] = js.undefined
   
@@ -82,8 +75,7 @@ trait EntityCellValue
     * Represents the text shown when a cell with this value is rendered.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var text: js.UndefOr[String] = js.undefined
   
@@ -91,8 +83,7 @@ trait EntityCellValue
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: entity | typings.officeJsPreview.Excel.ReferenceValueType.entity | Entity
 }

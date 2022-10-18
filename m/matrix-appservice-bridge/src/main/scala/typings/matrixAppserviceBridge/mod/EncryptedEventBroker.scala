@@ -1,8 +1,8 @@
 package typings.matrixAppserviceBridge.mod
 
 import typings.matrixAppserviceBridge.anon.Flows
-import typings.matrixAppserviceBridge.encryptionMod.ClientEncryptionStore
-import typings.matrixAppserviceBridge.eventTypesMod.WeakEvent
+import typings.matrixAppserviceBridge.libComponentsEncryptionMod.ClientEncryptionStore
+import typings.matrixAppserviceBridge.libComponentsEventTypesMod.WeakEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "EncryptedEventBroker")
 @js.native
 open class EncryptedEventBroker protected ()
-  extends typings.matrixAppserviceBridge.encryptionMod.EncryptedEventBroker {
+  extends typings.matrixAppserviceBridge.libComponentsEncryptionMod.EncryptedEventBroker {
   def this(
-    membership: typings.matrixAppserviceBridge.membershipCacheMod.MembershipCache,
-    asBot: typings.matrixAppserviceBridge.appServiceBotMod.AppServiceBot,
+    membership: typings.matrixAppserviceBridge.libComponentsMembershipCacheMod.MembershipCache,
+    asBot: typings.matrixAppserviceBridge.libComponentsAppServiceBotMod.AppServiceBot,
     onEvent: js.Function1[/* weakEvent */ WeakEvent, Unit],
-    getIntent: js.Function1[/* userId */ String, typings.matrixAppserviceBridge.intentMod.Intent],
+    getIntent: js.Function1[/* userId */ String, typings.matrixAppserviceBridge.libComponentsIntentMod.Intent],
     store: ClientEncryptionStore
   ) = this()
 }

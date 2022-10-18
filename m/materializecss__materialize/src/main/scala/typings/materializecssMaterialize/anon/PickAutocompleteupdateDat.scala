@@ -1,5 +1,6 @@
 package typings.materializecssMaterialize.anon
 
+import typings.materializecssMaterialize.M.AutocompleteData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@materializecss/materialize.M.Autocomplete, 'updateData'> */
 trait PickAutocompleteupdateDat extends StObject {
   
-  var updateData: js.UndefOr[Any] = js.undefined
+  def updateData(data: AutocompleteData): Unit
+  @JSName("updateData")
+  var updateData_Original: js.Function1[/* data */ AutocompleteData, Unit]
 }
 object PickAutocompleteupdateDat {
   
-  inline def apply(): PickAutocompleteupdateDat = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(updateData: /* data */ AutocompleteData => Unit): PickAutocompleteupdateDat = {
+    val __obj = js.Dynamic.literal(updateData = js.Any.fromFunction1(updateData))
     __obj.asInstanceOf[PickAutocompleteupdateDat]
   }
   
   extension [Self <: PickAutocompleteupdateDat](x: Self) {
     
-    inline def setUpdateData(value: Any): Self = StObject.set(x, "updateData", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateDataUndefined: Self = StObject.set(x, "updateData", js.undefined)
+    inline def setUpdateData(value: /* data */ AutocompleteData => Unit): Self = StObject.set(x, "updateData", js.Any.fromFunction1(value))
   }
 }

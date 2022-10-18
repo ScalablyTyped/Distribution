@@ -1,6 +1,6 @@
 package typings.ionicons
 
-import typings.ionicons.stencilPublicRuntimeMod.ListenTargetOptions
+import typings.ionicons.distTypesStencilPublicRuntimeMod.ListenTargetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

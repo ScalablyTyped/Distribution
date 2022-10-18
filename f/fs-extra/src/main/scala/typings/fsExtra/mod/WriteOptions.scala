@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WriteOptions
-  extends StObject
-     with WriteFileOptions {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped node.anon.ObjectEncodingOptionsAbor | node.buffer.<global>.BufferEncoding | null */ trait WriteOptions extends StObject {
   
   var EOL: js.UndefOr[String] = js.undefined
   

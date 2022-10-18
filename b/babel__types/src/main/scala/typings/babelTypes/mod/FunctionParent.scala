@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.mod.ClassMethod_
   - typings.babelTypes.mod.ClassPrivateMethod_
   - typings.babelTypes.mod.StaticBlock_
+  - typings.babelTypes.mod.TSModuleBlock_
 */
 trait FunctionParent
   extends StObject
@@ -110,5 +111,11 @@ object FunctionParent {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("StaticBlock")
     __obj.asInstanceOf[typings.babelTypes.mod.StaticBlock_]
+  }
+  
+  inline def TSModuleBlock_(body: js.Array[Statement]): typings.babelTypes.mod.TSModuleBlock_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSModuleBlock")
+    __obj.asInstanceOf[typings.babelTypes.mod.TSModuleBlock_]
   }
 }

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,9 +41,7 @@ trait LogMetric extends StObject {
     * time series that are allowed in a project.
     */
   var labelExtractors: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogMetric & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -115,9 +112,7 @@ object LogMetric {
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     inline def setLabelExtractors(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogMetric & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labelExtractors", value.asInstanceOf[js.Any])
     
     inline def setLabelExtractorsUndefined: Self = StObject.set(x, "labelExtractors", js.undefined)

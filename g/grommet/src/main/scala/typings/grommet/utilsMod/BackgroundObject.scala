@@ -6,7 +6,7 @@ import typings.grommet.grommetStrings.cover
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.repeat
 import typings.grommet.grommetStrings.strong
-import typings.grommet.grommetStrings.text_
+import typings.grommet.grommetStrings.text
 import typings.grommet.grommetStrings.weak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BackgroundObject extends StObject {
   
-  var clip: js.UndefOr[text_ | String] = js.undefined
+  var clip: js.UndefOr[text | String] = js.undefined
   
   var color: js.UndefOr[ColorType] = js.undefined
   
@@ -43,7 +43,7 @@ object BackgroundObject {
   
   extension [Self <: BackgroundObject](x: Self) {
     
-    inline def setClip(value: text_ | String): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: text | String): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
     inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     

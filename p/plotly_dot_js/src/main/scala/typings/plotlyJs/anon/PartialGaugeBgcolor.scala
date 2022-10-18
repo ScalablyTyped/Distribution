@@ -1,7 +1,11 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.mod.Axis
+import typings.plotlyJs.mod.GaugeBar
+import typings.plotlyJs.mod.Threshold
 import typings.plotlyJs.plotlyJsStrings.angular
 import typings.plotlyJs.plotlyJsStrings.bullet
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<plotly.js.plotly.js.Gauge> */
 trait PartialGaugeBgcolor extends StObject {
   
-  var axis: js.UndefOr[PartialAxisAutorange] = js.undefined
+  var axis: js.UndefOr[Partial[Axis]] = js.undefined
   
-  var bar: js.UndefOr[PartialGaugeBar] = js.undefined
+  var bar: js.UndefOr[Partial[GaugeBar]] = js.undefined
   
   var bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
@@ -23,7 +27,7 @@ trait PartialGaugeBgcolor extends StObject {
   
   var steps: js.UndefOr[js.Array[Color]] = js.undefined
   
-  var threshold: js.UndefOr[PartialThreshold] = js.undefined
+  var threshold: js.UndefOr[Partial[Threshold]] = js.undefined
 }
 object PartialGaugeBgcolor {
   
@@ -34,11 +38,11 @@ object PartialGaugeBgcolor {
   
   extension [Self <: PartialGaugeBgcolor](x: Self) {
     
-    inline def setAxis(value: PartialAxisAutorange): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Partial[Axis]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    inline def setBar(value: PartialGaugeBar): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    inline def setBar(value: Partial[GaugeBar]): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
     inline def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
@@ -68,7 +72,7 @@ object PartialGaugeBgcolor {
     
     inline def setStepsVarargs(value: Color*): Self = StObject.set(x, "steps", js.Array(value*))
     
-    inline def setThreshold(value: PartialThreshold): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Partial[Threshold]): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }

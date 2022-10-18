@@ -1,0 +1,29 @@
+package typings.antDesignIconsVue
+
+import org.scalablytyped.runtime.Shortcut
+import typings.antDesignIconsVue.libComponentsAntdIconMod.AntdIconProps
+import typings.vueRuntimeCore.mod.FunctionalComponent
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object libIconsCarTwoToneMod extends Shortcut {
+  
+  @JSImport("@ant-design/icons-vue/lib/icons/CarTwoTone", JSImport.Default)
+  @js.native
+  val default: CarTwoToneIconType = js.native
+  
+  @js.native
+  trait CarTwoToneIconType
+    extends StObject
+       with FunctionalComponent[AntdIconProps, js.Object] {
+    
+    @JSName("displayName")
+    var displayName_CarTwoToneIconType: String = js.native
+  }
+  
+  type _To = CarTwoToneIconType
+  
+  /* This means you don't have to write `default`, but can instead just say `libIconsCarTwoToneMod.foo` */
+  override def _to: CarTwoToneIconType = default
+}

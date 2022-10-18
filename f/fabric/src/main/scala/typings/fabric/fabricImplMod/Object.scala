@@ -1,9 +1,9 @@
 package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fabric.anon.Br
 import typings.fabric.anon.E
 import typings.fabric.anon.Mb
+import typings.fabric.anon.Ml
 import typings.fabric.anon.PropertySet
 import typings.fabric.anon.ScaleX
 import typings.fabric.anon.Top
@@ -46,7 +46,7 @@ open class Object ()
   def _applyPatternGradientTransform(ctx: CanvasRenderingContext2D, filler: Gradient): Unit = js.native
   def _applyPatternGradientTransform(ctx: CanvasRenderingContext2D, filler: Pattern): Unit = js.native
   
-  var _controlsVisibility: Br = js.native
+  var _controlsVisibility: Mb = js.native
   
   /**
     * Determines which corner has been clicked
@@ -61,7 +61,7 @@ open class Object ()
     * @private
     * @returns {Object}
     */
-  def _getControlsVisibility(): Mb = js.native
+  def _getControlsVisibility(): Ml = js.native
   
   /**
     * Returns the top, left coordinates
@@ -684,7 +684,7 @@ open class Object ()
     * @param [options] Options object
     */
   def setControlsVisibility(): this.type = js.native
-  def setControlsVisibility(options: Br): this.type = js.native
+  def setControlsVisibility(options: Mb): this.type = js.native
   
   // functions from geometry mixin
   // -------------------------------------------------------------------------------------------------------------------------------

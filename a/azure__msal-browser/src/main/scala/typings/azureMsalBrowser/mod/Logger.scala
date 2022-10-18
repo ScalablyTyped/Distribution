@@ -1,6 +1,6 @@
 package typings.azureMsalBrowser.mod
 
-import typings.azureMsalCommon.clientConfigurationMod.LoggerOptions
+import typings.azureMsalCommon.distConfigClientConfigurationMod.LoggerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

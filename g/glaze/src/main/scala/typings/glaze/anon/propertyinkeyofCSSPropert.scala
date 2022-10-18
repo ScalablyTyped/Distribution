@@ -1,7 +1,7 @@
 package typings.glaze.anon
 
+import typings.glaze.distTypesThemeMod.Tokens
 import typings.glaze.glazeStrings.scales
-import typings.glaze.themeMod.Tokens
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

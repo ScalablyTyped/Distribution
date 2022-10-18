@@ -24,9 +24,6 @@ type EventListener = js.Function0[Unit]
 
 type EventListeners = StringDictionary[HippyEventListener]
 
-// T | T[] -> T
-type FlattenGenericStyle[Type] = Any
-
 // interface RecursiveArray<T> extends Array<T | ReadonlyArray<T> | RecursiveArray<T>> {}
 type GenericStyleProp[T] = T | js.Array[T]
 

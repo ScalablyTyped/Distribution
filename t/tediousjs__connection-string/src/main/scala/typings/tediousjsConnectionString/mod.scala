@@ -1,7 +1,7 @@
 package typings.tediousjsConnectionString
 
-import typings.tediousjsConnectionString.connectionStringMod.ParserConfig
-import typings.tediousjsConnectionString.sqlConnectionStringMod.SchemaDefinition
+import typings.tediousjsConnectionString.libParserConnectionStringMod.ParserConfig
+import typings.tediousjsConnectionString.libParserSqlConnectionStringMod.SchemaDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

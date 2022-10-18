@@ -120,7 +120,7 @@ trait AccentHeight extends StObject {
   var additive: js.UndefOr[replace | sum] = js.undefined
   
   var alignmentBaseline: js.UndefOr[
-    auto | inherit | alphabetic | hanging | ideographic | middle | baseline | `after-edge` | `before-edge` | central | mathematical | `text-after-edge` | `text-before-edge`
+    inherit | auto | baseline | middle | `after-edge` | alphabetic | `before-edge` | central | hanging | ideographic | mathematical | `text-after-edge` | `text-before-edge`
   ] = js.undefined
   
   var allowReorder: js.UndefOr[yes | no] = js.undefined
@@ -135,7 +135,7 @@ trait AccentHeight extends StObject {
   
   var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-autocomplete`: js.UndefOr[`inline` | both | none | list] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | list | `inline` | both] = js.undefined
   
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   
@@ -149,7 +149,7 @@ trait AccentHeight extends StObject {
   
   var `aria-controls`: js.UndefOr[String] = js.undefined
   
-  var `aria-current`: js.UndefOr[Boolean | location | time | page | step | date] = js.undefined
+  var `aria-current`: js.UndefOr[Boolean | time | location | page | step | date] = js.undefined
   
   var `aria-describedby`: js.UndefOr[String] = js.undefined
   
@@ -157,7 +157,7 @@ trait AccentHeight extends StObject {
   
   var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-dropeffect`: js.UndefOr[link | none | copy | move | execute | popup] = js.undefined
+  var `aria-dropeffect`: js.UndefOr[none | link | move | copy | execute | popup] = js.undefined
   
   var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
@@ -167,7 +167,7 @@ trait AccentHeight extends StObject {
   
   var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-haspopup`: js.UndefOr[Boolean | grid | dialog | menu | listbox | tree] = js.undefined
+  var `aria-haspopup`: js.UndefOr[Boolean | grid | menu | tree | dialog | listbox] = js.undefined
   
   var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
   
@@ -202,7 +202,7 @@ trait AccentHeight extends StObject {
   var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
-    all | text | additions | (`additions removals`) | (`additions text`) | removals | (`removals additions`) | (`removals text`) | (`text additions`) | (`text removals`)
+    text | additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | (`text additions`) | (`text removals`)
   ] = js.undefined
   
   var `aria-required`: js.UndefOr[Boolean] = js.undefined
@@ -219,7 +219,7 @@ trait AccentHeight extends StObject {
   
   var `aria-setsize`: js.UndefOr[Double] = js.undefined
   
-  var `aria-sort`: js.UndefOr[none | other | ascending | descending] = js.undefined
+  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
   
   var `aria-valuemax`: Double
   
@@ -273,7 +273,7 @@ trait AccentHeight extends StObject {
   
   var colorInterpolation: js.UndefOr[String | Double] = js.undefined
   
-  var colorInterpolationFilters: js.UndefOr[auto | inherit | linearRGB | sRGB] = js.undefined
+  var colorInterpolationFilters: js.UndefOr[inherit | auto | linearRGB | sRGB] = js.undefined
   
   var colorProfile: js.UndefOr[String | Double] = js.undefined
   
@@ -331,7 +331,7 @@ trait AccentHeight extends StObject {
   
   var fillOpacity: js.UndefOr[String | Double] = js.undefined
   
-  var fillRule: js.UndefOr[evenodd | nonzero | inherit] = js.undefined
+  var fillRule: js.UndefOr[inherit | evenodd | nonzero] = js.undefined
   
   var filter: js.UndefOr[String] = js.undefined
   
@@ -343,7 +343,7 @@ trait AccentHeight extends StObject {
   
   var floodOpacity: js.UndefOr[String | Double] = js.undefined
   
-  var focusable: js.UndefOr[auto | Boolean] = js.undefined
+  var focusable: js.UndefOr[Boolean | auto] = js.undefined
   
   var fontFamily: js.UndefOr[String] = js.undefined
   
@@ -360,6 +360,8 @@ trait AccentHeight extends StObject {
   var fontWeight: js.UndefOr[String | Double] = js.undefined
   
   var format: js.UndefOr[String | Double] = js.undefined
+  
+  var fr: js.UndefOr[String | Double] = js.undefined
   
   var from: js.UndefOr[String | Double] = js.undefined
   
@@ -919,9 +921,9 @@ trait AccentHeight extends StObject {
   
   var strokeDashoffset: js.UndefOr[String | Double] = js.undefined
   
-  var strokeLinecap: js.UndefOr[square | butt | round | inherit] = js.undefined
+  var strokeLinecap: js.UndefOr[square | round | inherit | butt] = js.undefined
   
-  var strokeLinejoin: js.UndefOr[round | bevel | miter | inherit] = js.undefined
+  var strokeLinejoin: js.UndefOr[round | inherit | bevel | miter] = js.undefined
   
   var strokeMiterlimit: js.UndefOr[String | Double] = js.undefined
   
@@ -1079,7 +1081,7 @@ object AccentHeight {
     inline def setAdditiveUndefined: Self = StObject.set(x, "additive", js.undefined)
     
     inline def setAlignmentBaseline(
-      value: auto | inherit | alphabetic | hanging | ideographic | middle | baseline | `after-edge` | `before-edge` | central | mathematical | `text-after-edge` | `text-before-edge`
+      value: inherit | auto | baseline | middle | `after-edge` | alphabetic | `before-edge` | central | hanging | ideographic | mathematical | `text-after-edge` | `text-before-edge`
     ): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     
     inline def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
@@ -1108,7 +1110,7 @@ object AccentHeight {
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
-    inline def `setAria-autocomplete`(value: `inline` | both | none | list): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+    inline def `setAria-autocomplete`(value: none | list | `inline` | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
@@ -1136,7 +1138,7 @@ object AccentHeight {
     
     inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
     
-    inline def `setAria-current`(value: Boolean | location | time | page | step | date): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+    inline def `setAria-current`(value: Boolean | time | location | page | step | date): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
     
     inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
     
@@ -1152,7 +1154,7 @@ object AccentHeight {
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
-    inline def `setAria-dropeffect`(value: link | none | copy | move | execute | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+    inline def `setAria-dropeffect`(value: none | link | move | copy | execute | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
     
     inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
     
@@ -1172,7 +1174,7 @@ object AccentHeight {
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
-    inline def `setAria-haspopup`(value: Boolean | grid | dialog | menu | listbox | tree): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+    inline def `setAria-haspopup`(value: Boolean | grid | menu | tree | dialog | listbox): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
@@ -1241,7 +1243,7 @@ object AccentHeight {
     inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
     inline def `setAria-relevant`(
-      value: all | text | additions | (`additions removals`) | (`additions text`) | removals | (`removals additions`) | (`removals text`) | (`text additions`) | (`text removals`)
+      value: text | additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | (`text additions`) | (`text removals`)
     ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
     
     inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -1274,7 +1276,7 @@ object AccentHeight {
     
     inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
     
-    inline def `setAria-sort`(value: none | other | ascending | descending): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+    inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
     
     inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
     
@@ -1372,7 +1374,7 @@ object AccentHeight {
     
     inline def setColorInterpolation(value: String | Double): Self = StObject.set(x, "colorInterpolation", value.asInstanceOf[js.Any])
     
-    inline def setColorInterpolationFilters(value: auto | inherit | linearRGB | sRGB): Self = StObject.set(x, "colorInterpolationFilters", value.asInstanceOf[js.Any])
+    inline def setColorInterpolationFilters(value: inherit | auto | linearRGB | sRGB): Self = StObject.set(x, "colorInterpolationFilters", value.asInstanceOf[js.Any])
     
     inline def setColorInterpolationFiltersUndefined: Self = StObject.set(x, "colorInterpolationFilters", js.undefined)
     
@@ -1490,7 +1492,7 @@ object AccentHeight {
     
     inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
-    inline def setFillRule(value: evenodd | nonzero | inherit): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
+    inline def setFillRule(value: inherit | evenodd | nonzero): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
     
     inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
     
@@ -1516,7 +1518,7 @@ object AccentHeight {
     
     inline def setFloodOpacityUndefined: Self = StObject.set(x, "floodOpacity", js.undefined)
     
-    inline def setFocusable(value: auto | Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+    inline def setFocusable(value: Boolean | auto): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
     inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
@@ -1551,6 +1553,10 @@ object AccentHeight {
     inline def setFormat(value: String | Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setFr(value: String | Double): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
+    
+    inline def setFrUndefined: Self = StObject.set(x, "fr", js.undefined)
     
     inline def setFrom(value: String | Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
@@ -2664,11 +2670,11 @@ object AccentHeight {
     
     inline def setStrokeDashoffsetUndefined: Self = StObject.set(x, "strokeDashoffset", js.undefined)
     
-    inline def setStrokeLinecap(value: square | butt | round | inherit): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+    inline def setStrokeLinecap(value: square | round | inherit | butt): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
     
     inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
     
-    inline def setStrokeLinejoin(value: round | bevel | miter | inherit): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
+    inline def setStrokeLinejoin(value: round | inherit | bevel | miter): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
     
     inline def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
     

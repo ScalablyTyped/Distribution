@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Orientation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.mathPathMod.Orientation & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.mathsMathDotpathMod.Orientation & Double] = js.native
   
-  /* 1 */ val CCW: typings.babylonjs.mathPathMod.Orientation.CCW & Double = js.native
+  /* 1 */ val CCW: typings.babylonjs.mathsMathDotpathMod.Orientation.CCW & Double = js.native
   
-  /* 0 */ val CW: typings.babylonjs.mathPathMod.Orientation.CW & Double = js.native
+  /* 0 */ val CW: typings.babylonjs.mathsMathDotpathMod.Orientation.CW & Double = js.native
 }

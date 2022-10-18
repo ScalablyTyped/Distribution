@@ -20,6 +20,6 @@ object WebXRManagedOutputCanvasOptions {
     * @param engine defines the engine to use (can be null)
     * @returns default values of this configuration object
     */
-  inline def GetDefaults(): typings.babylonjs.webXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDefaults")().asInstanceOf[typings.babylonjs.webXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions]
-  inline def GetDefaults(engine: typings.babylonjs.thinEngineMod.ThinEngine): typings.babylonjs.webXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDefaults")(engine.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.webXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions]
+  inline def GetDefaults(): typings.babylonjs.xRWebXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDefaults")().asInstanceOf[typings.babylonjs.xRWebXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions]
+  inline def GetDefaults(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine): typings.babylonjs.xRWebXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDefaults")(engine.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.xRWebXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions]
 }

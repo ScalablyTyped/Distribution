@@ -24,9 +24,9 @@ trait TypeofQuaternion
     * @deprecated Use qm.slerpQuaternions( qa, qb, t ) instead..
     */
   def slerp(
-    qa: typings.three.quaternionMod.Quaternion,
-    qb: typings.three.quaternionMod.Quaternion,
-    qm: typings.three.quaternionMod.Quaternion,
+    qa: typings.three.srcMathQuaternionMod.Quaternion,
+    qb: typings.three.srcMathQuaternionMod.Quaternion,
+    qm: typings.three.srcMathQuaternionMod.Quaternion,
     t: Double
   ): Double = js.native
   
@@ -38,5 +38,5 @@ trait TypeofQuaternion
     src1: js.Array[Double],
     stcOffset1: Double,
     t: Double
-  ): typings.three.quaternionMod.Quaternion = js.native
+  ): typings.three.srcMathQuaternionMod.Quaternion = js.native
 }

@@ -14,5 +14,5 @@ open class PlaneHelper protected ()
     * @param [size=1]
     * @param [hex=0xffff00]
     */
-  def this(plane: typings.three.planeMod.Plane) = this()
+  def this(plane: typings.three.srcMathPlaneMod.Plane) = this()
 }

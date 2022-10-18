@@ -1,7 +1,6 @@
 package typings.algoliaClientCommon
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.algoliaClientCommon.algoliaClientCommonStrings.headers
 import typings.algoliaClientCommon.algoliaClientCommonStrings.hosts
 import typings.algoliaClientCommon.algoliaClientCommonStrings.hostsCache
@@ -55,7 +54,7 @@ object mod {
   @js.native
   val version: /* "4.14.2" */ String = js.native
   
-  type AddedMethods[TBase, TMethods /* <: Methods[TBase] */] = TBase & typings.algoliaClientCommon.algoliaClientCommonStrings.AddedMethods & TopLevel[TMethods]
+  type AddedMethods[TBase, TMethods /* <: Methods[TBase] */] = TBase & (/* import warning: importer.ImportType#apply Failed type conversion: {[ TKey in keyof TMethods extends string? keyof TMethods : never ]: std.ReturnType<TMethods[TKey]>} */ js.Any)
   
   trait Auth extends StObject {
     
@@ -117,7 +116,7 @@ object mod {
       StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ Any, Any]]], 
       TClient
     ]), 
-    TClient & typings.algoliaClientCommon.algoliaClientCommonStrings.CreateClient & TopLevel[Any]
+    TClient & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof {readonly [key: string] : (base : TClient): (args : any): any} extends string? keyof {readonly [key: string] : (base : TClient): (args : any): any} : never ]: std.ReturnType<{readonly [key: string] : (base : TClient): (args : any): any}[key]>} */ js.Any)
   ]
   
   type Methods[TBase] = StringDictionary[js.Function1[/* base */ TBase, js.Function1[/* repeated */ Any, Any]]]

@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.hdrFilteringMod.IHDRFilteringOptions
+import typings.babylonjs.materialsTexturesFilteringHdrFilteringMod.IHDRFilteringOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,6 +15,6 @@ open class HDRFiltering protected ()
     * @param engine Thin engine
     * @param options Options
     */
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine) = this()
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, options: IHDRFilteringOptions) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine, options: IHDRFilteringOptions) = this()
 }

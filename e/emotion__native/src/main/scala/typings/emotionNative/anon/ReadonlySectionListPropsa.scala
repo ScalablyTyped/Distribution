@@ -31,7 +31,7 @@ import typings.reactNative.anon.AutoscrollToTopThreshold
 import typings.reactNative.anon.AverageItemLength
 import typings.reactNative.anon.Changed
 import typings.reactNative.anon.DistanceFromEnd
-import typings.reactNative.anon.Index
+import typings.reactNative.anon.Length
 import typings.reactNative.anon.Section
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
@@ -178,7 +178,7 @@ trait ReadonlySectionListPropsa extends StObject {
         ]
       ]) | Null, 
       /* index */ Double, 
-      Index
+      Length
     ]
   ] = js.undefined
   
@@ -636,7 +636,7 @@ object ReadonlySectionListPropsa {
             /* import warning: RewrittenClass.unapply cls was tparam ItemT */ Any, 
             /* import warning: RewrittenClass.unapply cls was tparam SectionT */ Any
           ]
-        ]) | Null, /* index */ Double) => Index
+        ]) | Null, /* index */ Double) => Length
     ): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
     
     inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)

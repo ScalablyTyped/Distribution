@@ -1,6 +1,10 @@
 package typings.baseui
 
 import typings.baseui.accordionAccordionMod.default
+import typings.baseui.accordionTypesMod.PanelStateReducer
+import typings.baseui.accordionTypesMod.SharedStylePropsArg
+import typings.baseui.accordionTypesMod.StatefulPanelProps
+import typings.baseui.accordionTypesMod.StatelessAccordionProps
 import typings.baseui.anon.ExpandedBoolean
 import typings.baseui.anon.PartialAccordionProps
 import typings.baseui.anon.childrenReactNodedisabled
@@ -10,13 +14,9 @@ import typings.baseui.baseuiStrings.g
 import typings.baseui.baseuiStrings.li_
 import typings.baseui.baseuiStrings.svg
 import typings.baseui.baseuiStrings.ul
-import typings.baseui.typesMod.PanelStateReducer
-import typings.baseui.typesMod.SharedStylePropsArg
-import typings.baseui.typesMod.StatefulPanelProps
-import typings.baseui.typesMod.StatelessAccordionProps
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.global.JSX.Element
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +59,7 @@ object accordionMod {
   @JSImport("baseui/accordion", "StatefulPanelContainer")
   @js.native
   open class StatefulPanelContainer ()
-    extends typings.baseui.statefulPanelContainerMod.default
+    extends typings.baseui.accordionStatefulPanelContainerMod.default
   object StatefulPanelContainer {
     
     /* static member */

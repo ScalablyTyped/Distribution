@@ -19,8 +19,8 @@ import typings.amapJsApi.amapJsApiStrings.rightclick
 import typings.amapJsApi.amapJsApiStrings.touchend
 import typings.amapJsApi.amapJsApiStrings.touchmove
 import typings.amapJsApi.amapJsApiStrings.touchstart
-import typings.amapJsApi.anon.Name
 import typings.amapJsApi.anon.PassedPath
+import typings.amapJsApi.anon.Position
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -111,7 +111,7 @@ trait Marker[ExtraData]
     * @param obj 唤起参数
     */
   def markOnAMAP(): Unit = js.native
-  def markOnAMAP(obj: Name): Unit = js.native
+  def markOnAMAP(obj: Position): Unit = js.native
   
   /**
     * 以指定的速度，点标记沿指定的路径移动

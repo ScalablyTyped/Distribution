@@ -1,6 +1,6 @@
 package typings.luminoDisposable
 
-import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
+import typings.luminoAlgorithm.typesIterMod.IterableOrArrayLike
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

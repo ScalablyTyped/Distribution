@@ -13,6 +13,7 @@ import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextLayoutEventData
 import typings.reactNative.mod.TextStyle
+import typings.reactNativeElements.distConfigThemeMod.RecursivePartial
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.all
 import typings.reactNativeElements.reactNativeElementsStrings.assertive
@@ -33,7 +34,6 @@ import typings.reactNativeElements.reactNativeElementsStrings.polite
 import typings.reactNativeElements.reactNativeElementsStrings.simple
 import typings.reactNativeElements.reactNativeElementsStrings.tail
 import typings.reactNativeElements.reactNativeElementsStrings.yes
-import typings.reactNativeElements.themeMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

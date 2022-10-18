@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the DeviceSelected event on the DevicePicker object. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceSelectedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.DeviceSelectedEventArgs")
 @js.native
-abstract class DeviceSelectedEventArgs ()
+open class DeviceSelectedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DeviceSelectedEventArgs {
   

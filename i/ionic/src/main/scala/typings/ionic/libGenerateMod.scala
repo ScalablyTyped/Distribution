@@ -23,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libGenerateMod {
   
-  @JSImport("ionic/lib/generate", "GenerateRunner")
+  /* note: abstract class */ @JSImport("ionic/lib/generate", "GenerateRunner")
   @js.native
-  abstract class GenerateRunner[T /* <: GenerateOptions */] ()
+  open class GenerateRunner[T /* <: GenerateOptions */] ()
     extends StObject
        with Runner[T, Unit] {
     

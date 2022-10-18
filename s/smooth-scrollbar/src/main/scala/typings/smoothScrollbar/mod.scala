@@ -2,7 +2,7 @@ package typings.smoothScrollbar
 
 import typings.smoothScrollbar.anon.PartialScrollbarOptions
 import typings.smoothScrollbar.anon.TypeofScrollbarPlugin
-import typings.smoothScrollbar.smoothScrollbarScrollbarMod.Scrollbar
+import typings.smoothScrollbar.scrollbarMod.Scrollbar
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -101,7 +101,7 @@ object mod {
   @JSImport("smooth-scrollbar", "ScrollbarPlugin")
   @js.native
   open class ScrollbarPlugin protected ()
-    extends typings.smoothScrollbar.smoothScrollbarMod.ScrollbarPlugin {
+    extends typings.smoothScrollbar.pluginMod.ScrollbarPlugin {
     def this(scrollbar: Scrollbar) = this()
     def this(scrollbar: Scrollbar, options: Any) = this()
   }

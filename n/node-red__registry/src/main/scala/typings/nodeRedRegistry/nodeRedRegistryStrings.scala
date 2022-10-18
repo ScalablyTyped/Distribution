@@ -9,14 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object nodeRedRegistryStrings {
   
   @js.native
-  sealed trait NodeCredentials extends StObject
-  inline def NodeCredentials: NodeCredentials = "NodeCredentials".asInstanceOf[NodeCredentials]
-  
-  @js.native
-  sealed trait NodeSettings extends StObject
-  inline def NodeSettings: NodeSettings = "NodeSettings".asInstanceOf[NodeSettings]
-  
-  @js.native
   sealed trait blue
     extends StObject
        with NodeStatusFill

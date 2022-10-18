@@ -88,7 +88,7 @@ object mod {
     
     var animate_id: Double = js.native
     
-    var arrows: Prev = js.native
+    var arrows: Next = js.native
     
     var breakpoint: Double = js.native
     
@@ -289,7 +289,7 @@ object mod {
     /**
       * An object containing the prev/next arrow settings
       */
-    var arrows: js.UndefOr[Next] = js.undefined
+    var arrows: js.UndefOr[Prev] = js.undefined
     
     /**
       * An HTML element or selector containing the dot container
@@ -401,7 +401,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setArrows(value: Next): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
+      inline def setArrows(value: Prev): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
       
       inline def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
       

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +21,7 @@ trait BuildBazelRemoteExecutionV2ExecuteResponse extends StObject {
     * worker's setup phase. The keys SHOULD be human readable so that a client can display them to a user.
     */
   var serverLogs: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.remotebuildexecution.gapi.client.remotebuildexecution.BuildBazelRemoteExecutionV2LogFile}
-    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecuteResponse & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.remotebuildexecution.gapi.client.remotebuildexecution.BuildBazelRemoteExecutionV2LogFile} */ js.Any
   ] = js.undefined
   
   /**
@@ -57,9 +54,7 @@ object BuildBazelRemoteExecutionV2ExecuteResponse {
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     inline def setServerLogs(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.remotebuildexecution.gapi.client.remotebuildexecution.BuildBazelRemoteExecutionV2LogFile}
-      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecuteResponse & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.remotebuildexecution.gapi.client.remotebuildexecution.BuildBazelRemoteExecutionV2LogFile} */ js.Any
     ): Self = StObject.set(x, "serverLogs", value.asInstanceOf[js.Any])
     
     inline def setServerLogsUndefined: Self = StObject.set(x, "serverLogs", js.undefined)

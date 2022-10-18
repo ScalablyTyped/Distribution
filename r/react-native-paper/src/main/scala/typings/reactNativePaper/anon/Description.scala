@@ -4,7 +4,7 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.typescriptTypesMod.EllipsizeProp
+import typings.reactNativePaper.libTypescriptTypesMod.EllipsizeProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait Description extends StObject {
   /**
     * Description text for the list item or callback which returns a React element to display the description.
     */
-  var description: js.UndefOr[typings.reactNativePaper.listItemMod.Description] = js.undefined
+  var description: js.UndefOr[typings.reactNativePaper.libTypescriptComponentsListListItemMod.Description] = js.undefined
   
   /**
     * Ellipsize Mode for the Description.  One of `'head'`, `'middle'`, `'tail'`, `'clip'`.
@@ -57,12 +57,12 @@ trait Description extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * Title text for the list item.
     */
-  var title: typings.reactNativePaper.listItemMod.Title
+  var title: typings.reactNativePaper.libTypescriptComponentsListListItemMod.Title
   
   /**
     * Ellipsize Mode for the Title.  One of `'head'`, `'middle'`, `'tail'`, `'clip'`.
@@ -84,14 +84,14 @@ trait Description extends StObject {
 }
 object Description {
   
-  inline def apply(theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Description = {
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Description = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Description]
   }
   
   extension [Self <: Description](x: Self) {
     
-    inline def setDescription(value: typings.reactNativePaper.listItemMod.Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: typings.reactNativePaper.libTypescriptComponentsListListItemMod.Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionEllipsizeMode(value: EllipsizeProp): Self = StObject.set(x, "descriptionEllipsizeMode", value.asInstanceOf[js.Any])
     
@@ -129,9 +129,9 @@ object Description {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    inline def setTitle(value: typings.reactNativePaper.listItemMod.Title): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: typings.reactNativePaper.libTypescriptComponentsListListItemMod.Title): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleEllipsizeMode(value: EllipsizeProp): Self = StObject.set(x, "titleEllipsizeMode", value.asInstanceOf[js.Any])
     

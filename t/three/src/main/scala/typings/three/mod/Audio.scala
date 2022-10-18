@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Audio")
 @js.native
 open class Audio[NodeType /* <: AudioNode */] protected ()
-  extends typings.three.threeMod.Audio[NodeType] {
-  def this(listener: typings.three.audioListenerMod.AudioListener) = this()
+  extends typings.three.srcThreeMod.Audio[NodeType] {
+  def this(listener: typings.three.srcAudioAudioListenerMod.AudioListener) = this()
 }

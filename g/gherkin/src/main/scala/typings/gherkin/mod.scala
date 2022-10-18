@@ -1,9 +1,9 @@
 package typings.gherkin
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.IEnvelope
-import typings.gherkin.dialectMod.Dialect
-import typings.gherkin.igherkinoptionsMod.IGherkinOptions
+import typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.IEnvelope
+import typings.gherkin.distSrcDialectMod.Dialect
+import typings.gherkin.distSrcIgherkinoptionsMod.IGherkinOptions
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -53,15 +53,15 @@ object mod {
     def fromStream: js.Function2[
         /* stream */ Readable, 
         /* options */ js.UndefOr[IGherkinOptions], 
-        typings.gherkin.parserMessageStreamMod.default
+        typings.gherkin.distSrcStreamParserMessageStreamMod.default
       ] = js.native
-    inline def fromStream(stream: Readable): typings.gherkin.parserMessageStreamMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[typings.gherkin.parserMessageStreamMod.default]
-    inline def fromStream(stream: Readable, options: IGherkinOptions): typings.gherkin.parserMessageStreamMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.gherkin.parserMessageStreamMod.default]
+    inline def fromStream(stream: Readable): typings.gherkin.distSrcStreamParserMessageStreamMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[typings.gherkin.distSrcStreamParserMessageStreamMod.default]
+    inline def fromStream(stream: Readable, options: IGherkinOptions): typings.gherkin.distSrcStreamParserMessageStreamMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.gherkin.distSrcStreamParserMessageStreamMod.default]
     inline def fromStream_=(
       x: js.Function2[
           /* stream */ Readable, 
           /* options */ js.UndefOr[IGherkinOptions], 
-          typings.gherkin.parserMessageStreamMod.default
+          typings.gherkin.distSrcStreamParserMessageStreamMod.default
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromStream")(x.asInstanceOf[js.Any])
   }

@@ -59,7 +59,7 @@ trait PartialAnnotationsAlign extends StObject {
   
   var height: js.UndefOr[Double] = js.undefined
   
-  var hoverlabel: js.UndefOr[PartialHoverLabel] = js.undefined
+  var hoverlabel: js.UndefOr[PartialHoverLabelAlign] = js.undefined
   
   var hovertext: js.UndefOr[String] = js.undefined
   
@@ -186,7 +186,7 @@ object PartialAnnotationsAlign {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHoverlabel(value: PartialHoverLabel): Self = StObject.set(x, "hoverlabel", value.asInstanceOf[js.Any])
+    inline def setHoverlabel(value: PartialHoverLabelAlign): Self = StObject.set(x, "hoverlabel", value.asInstanceOf[js.Any])
     
     inline def setHoverlabelUndefined: Self = StObject.set(x, "hoverlabel", js.undefined)
     

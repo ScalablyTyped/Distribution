@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a collection of DeviceInformation objects. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceInformationCollection")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.DeviceInformationCollection")
 @js.native
-abstract class DeviceInformationCollection ()
+open class DeviceInformationCollection ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection

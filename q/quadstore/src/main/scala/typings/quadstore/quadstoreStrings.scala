@@ -1,6 +1,6 @@
 package typings.quadstore
 
-import typings.quadstore.typesMod.TermName
+import typings.quadstore.distCjsTypesMod.TermName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

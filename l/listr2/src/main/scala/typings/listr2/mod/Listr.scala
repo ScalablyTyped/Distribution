@@ -1,5 +1,6 @@
 package typings.listr2.mod
 
+import typings.rxjs.mod.Subject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +60,7 @@ open class Listr[Ctx /* <: ListrContext */, Renderer /* <: ListrRendererValue */
   var path: js.Array[String] = js.native
   
   @JSName("renderHook$")
-  var renderHook$: /* import warning: importer.ImportType#apply Failed type conversion: listr2.listr2.Task<any, any>['renderHook$'] */ js.Any = js.native
+  var renderHook$: Subject[Unit] = js.native
   
   /* private */ var renderer: Any = js.native
   

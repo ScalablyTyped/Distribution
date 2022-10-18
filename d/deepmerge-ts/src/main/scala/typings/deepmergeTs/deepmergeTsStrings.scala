@@ -1,6 +1,6 @@
 package typings.deepmergeTs
 
-import typings.deepmergeTs.v46Mod.DeepMergeMergeFunctionURIs
+import typings.deepmergeTs.distNodeTypesLegacyV46Mod.DeepMergeMergeFunctionURIs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,10 +36,6 @@ object deepmergeTsStrings {
     extends StObject
        with DeepMergeMergeFunctionURIs
   inline def DeepMergeSetsDefaultURI: DeepMergeSetsDefaultURI = "DeepMergeSetsDefaultURI".asInstanceOf[DeepMergeSetsDefaultURI]
-  
-  @js.native
-  sealed trait FlatternAlias extends StObject
-  inline def FlatternAlias: FlatternAlias = "FlatternAlias".asInstanceOf[FlatternAlias]
   
   @js.native
   sealed trait __proto__ extends StObject

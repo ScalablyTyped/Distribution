@@ -1,7 +1,7 @@
 
 # Scala.js typings for testing-library__vue
 
-Typings are for version 5.0
+Typings are for version 6.6.1
 
 ## Library description:
 Simple and complete Vue DOM testing utilities that encourage good testing practices.
@@ -9,11 +9,11 @@ Simple and complete Vue DOM testing utilities that encourage good testing practi
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @testing-library/vue |
-| Keywords           | vue.js, vue.js testing, vue, vue testing, vue.js 2, vue.js 2 testing, vue 2, vue 2 testing |
-| # releases         | 38 |
-| # dependents       | 2 |
-| # downloads        | 850405 |
-| # stars            | 0 |
+| Keywords           | vue.js, vue.js testing, vue, vue testing, vue.js 3, vue.js 3 testing, vue 3, vue 3 testing |
+| # releases         | 31 |
+| # dependents       | 0.0 |
+| # downloads        | 556358.3333333334 |
+| # stars            | 862.0 |
 
 ## Links
 - [Homepage](https://github.com/testing-library/vue-testing-library#readme)
@@ -24,7 +24,7 @@ Simple and complete Vue DOM testing utilities that encourage good testing practi
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

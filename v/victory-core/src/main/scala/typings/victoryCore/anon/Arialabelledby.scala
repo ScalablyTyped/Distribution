@@ -30,7 +30,7 @@ trait Arialabelledby extends StObject {
   
   var name: Requireable[String]
   
-  var origin: Requireable[InferProps[X]]
+  var origin: Requireable[InferProps[XRequireable]]
   
   var ouiaId: Requireable[String | Double]
   
@@ -73,7 +73,7 @@ object Arialabelledby {
     events: Requireable[js.Object],
     height: Requireable[js.UndefOr[Double]],
     name: Requireable[String],
-    origin: Requireable[InferProps[X]],
+    origin: Requireable[InferProps[XRequireable]],
     ouiaId: Requireable[String | Double],
     ouiaSafe: Requireable[Boolean],
     ouiaType: Requireable[String],
@@ -117,7 +117,7 @@ object Arialabelledby {
     
     inline def setName(value: Requireable[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOrigin(value: Requireable[InferProps[X]]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Requireable[InferProps[XRequireable]]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     inline def setOuiaId(value: Requireable[String | Double]): Self = StObject.set(x, "ouiaId", value.asInstanceOf[js.Any])
     

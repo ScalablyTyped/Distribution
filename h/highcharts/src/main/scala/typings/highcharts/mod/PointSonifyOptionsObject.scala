@@ -21,7 +21,9 @@ trait PointSonifyOptionsObject extends StObject {
   /**
     * The instrument definitions for this point.
     */
-  var instruments: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject]
+  var instruments: js.Array[
+    typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject
+  ]
   
   /**
     * Callback called when the sonification has finished.
@@ -31,7 +33,9 @@ trait PointSonifyOptionsObject extends StObject {
 object PointSonifyOptionsObject {
   
   inline def apply(
-    instruments: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject]
+    instruments: js.Array[
+      typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject
+    ]
   ): PointSonifyOptionsObject = {
     val __obj = js.Dynamic.literal(instruments = instruments.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointSonifyOptionsObject]
@@ -43,9 +47,13 @@ object PointSonifyOptionsObject {
     
     inline def setDataExtremesUndefined: Self = StObject.set(x, "dataExtremes", js.undefined)
     
-    inline def setInstruments(value: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject]): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
+    inline def setInstruments(
+      value: js.Array[
+          typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject
+        ]
+    ): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
     
-    inline def setInstrumentsVarargs(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject*): Self = StObject.set(x, "instruments", js.Array(value*))
+    inline def setInstrumentsVarargs(value: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject*): Self = StObject.set(x, "instruments", js.Array(value*))
     
     inline def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.thrift.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

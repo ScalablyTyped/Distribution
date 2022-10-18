@@ -155,4 +155,24 @@ trait RangeView
     * [Api set: ExcelApi 1.3]
     */
   var values: js.Array[js.Array[Any]] = js.native
+  
+  /**
+    * A JSON representation of the values in the cells in this range.
+    Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  var valuesAsJson: js.Array[js.Array[CellValue]] = js.native
+  
+  /**
+    * A JSON representation of the values in the cells in this range.
+    Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  var valuesAsJsonLocal: js.Array[js.Array[CellValue]] = js.native
 }

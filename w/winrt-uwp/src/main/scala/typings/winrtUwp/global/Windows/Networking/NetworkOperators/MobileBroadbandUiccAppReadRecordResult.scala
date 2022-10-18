@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Encapsulates the results of a UICC application record read operation. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandUiccAppReadRecordResult")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandUiccAppReadRecordResult")
 @js.native
-abstract class MobileBroadbandUiccAppReadRecordResult ()
+open class MobileBroadbandUiccAppReadRecordResult ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandUiccAppReadRecordResult {
   

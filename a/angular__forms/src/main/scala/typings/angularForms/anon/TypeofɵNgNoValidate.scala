@@ -16,7 +16,7 @@ trait TypeofɵNgNoValidate
   
   var ɵdir: ɵɵDirectiveDeclaration[
     ɵNgNoValidate, 
-    String, 
+    /* form:not([ngNoForm]):not([ngNativeValidate]) */ String, 
     scala.Nothing, 
     js.Object, 
     js.Object, 

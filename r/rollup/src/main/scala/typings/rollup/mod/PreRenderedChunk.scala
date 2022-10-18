@@ -1,6 +1,5 @@
 package typings.rollup.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.rollup.rollupStrings.chunk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +17,7 @@ trait PreRenderedChunk extends StObject {
   
   var isImplicitEntry: Boolean
   
-  var modules: StringDictionary[RenderedModule]
+  var moduleIds: js.Array[String]
   
   var name: String
   
@@ -31,10 +30,10 @@ object PreRenderedChunk {
     isDynamicEntry: Boolean,
     isEntry: Boolean,
     isImplicitEntry: Boolean,
-    modules: StringDictionary[RenderedModule],
+    moduleIds: js.Array[String],
     name: String
   ): PreRenderedChunk = {
-    val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any], isDynamicEntry = isDynamicEntry.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isImplicitEntry = isImplicitEntry.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], facadeModuleId = null)
+    val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any], isDynamicEntry = isDynamicEntry.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isImplicitEntry = isImplicitEntry.asInstanceOf[js.Any], moduleIds = moduleIds.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], facadeModuleId = null)
     __obj.updateDynamic("type")("chunk")
     __obj.asInstanceOf[PreRenderedChunk]
   }
@@ -55,7 +54,9 @@ object PreRenderedChunk {
     
     inline def setIsImplicitEntry(value: Boolean): Self = StObject.set(x, "isImplicitEntry", value.asInstanceOf[js.Any])
     
-    inline def setModules(value: StringDictionary[RenderedModule]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    inline def setModuleIds(value: js.Array[String]): Self = StObject.set(x, "moduleIds", value.asInstanceOf[js.Any])
+    
+    inline def setModuleIdsVarargs(value: String*): Self = StObject.set(x, "moduleIds", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

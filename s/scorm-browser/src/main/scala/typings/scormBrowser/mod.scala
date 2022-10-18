@@ -1,6 +1,6 @@
 package typings.scormBrowser
 
-import typings.scormBrowser.`12Mod`.SCORM12
+import typings.scormBrowser.`1Dot2Mod`.SCORM12
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -11,7 +11,7 @@ import typings.ionic.definitionsMod.KnownResourceType
 import typings.ionic.definitionsMod.NpmClient
 import typings.ionic.definitionsMod.ProjectType
 import typings.ionic.libProjectMod.ProjectDetailsErrorCode
-import typings.ionic.npmMod.PkgManagerCommand
+import typings.ionic.libUtilsNpmMod.PkgManagerCommand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.popperjsCore.anon
 
-import typings.popperjsCore.enumsMod.Boundary
-import typings.popperjsCore.enumsMod.RootBoundary
-import typings.popperjsCore.typesMod.Padding
+import typings.popperjsCore.libEnumsMod.Boundary
+import typings.popperjsCore.libEnumsMod.RootBoundary
+import typings.popperjsCore.libTypesMod.Padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/modifiers/flip.Options> */
 trait PartialOptionsAllowedAutoPlacements extends StObject {
   
-  var allowedAutoPlacements: js.UndefOr[js.Array[typings.popperjsCore.enumsMod.Placement]] = js.undefined
+  var allowedAutoPlacements: js.UndefOr[js.Array[typings.popperjsCore.libEnumsMod.Placement]] = js.undefined
   
   var altAxis: js.UndefOr[Boolean] = js.undefined
   
@@ -18,7 +18,7 @@ trait PartialOptionsAllowedAutoPlacements extends StObject {
   
   var boundary: js.UndefOr[Boundary] = js.undefined
   
-  var fallbackPlacements: js.UndefOr[js.Array[typings.popperjsCore.enumsMod.Placement]] = js.undefined
+  var fallbackPlacements: js.UndefOr[js.Array[typings.popperjsCore.libEnumsMod.Placement]] = js.undefined
   
   var flipVariations: js.UndefOr[Boolean] = js.undefined
   
@@ -37,11 +37,11 @@ object PartialOptionsAllowedAutoPlacements {
   
   extension [Self <: PartialOptionsAllowedAutoPlacements](x: Self) {
     
-    inline def setAllowedAutoPlacements(value: js.Array[typings.popperjsCore.enumsMod.Placement]): Self = StObject.set(x, "allowedAutoPlacements", value.asInstanceOf[js.Any])
+    inline def setAllowedAutoPlacements(value: js.Array[typings.popperjsCore.libEnumsMod.Placement]): Self = StObject.set(x, "allowedAutoPlacements", value.asInstanceOf[js.Any])
     
     inline def setAllowedAutoPlacementsUndefined: Self = StObject.set(x, "allowedAutoPlacements", js.undefined)
     
-    inline def setAllowedAutoPlacementsVarargs(value: typings.popperjsCore.enumsMod.Placement*): Self = StObject.set(x, "allowedAutoPlacements", js.Array(value*))
+    inline def setAllowedAutoPlacementsVarargs(value: typings.popperjsCore.libEnumsMod.Placement*): Self = StObject.set(x, "allowedAutoPlacements", js.Array(value*))
     
     inline def setAltAxis(value: Boolean): Self = StObject.set(x, "altAxis", value.asInstanceOf[js.Any])
     
@@ -57,11 +57,11 @@ object PartialOptionsAllowedAutoPlacements {
     
     inline def setBoundaryVarargs(value: typings.std.Element*): Self = StObject.set(x, "boundary", js.Array(value*))
     
-    inline def setFallbackPlacements(value: js.Array[typings.popperjsCore.enumsMod.Placement]): Self = StObject.set(x, "fallbackPlacements", value.asInstanceOf[js.Any])
+    inline def setFallbackPlacements(value: js.Array[typings.popperjsCore.libEnumsMod.Placement]): Self = StObject.set(x, "fallbackPlacements", value.asInstanceOf[js.Any])
     
     inline def setFallbackPlacementsUndefined: Self = StObject.set(x, "fallbackPlacements", js.undefined)
     
-    inline def setFallbackPlacementsVarargs(value: typings.popperjsCore.enumsMod.Placement*): Self = StObject.set(x, "fallbackPlacements", js.Array(value*))
+    inline def setFallbackPlacementsVarargs(value: typings.popperjsCore.libEnumsMod.Placement*): Self = StObject.set(x, "fallbackPlacements", js.Array(value*))
     
     inline def setFlipVariations(value: Boolean): Self = StObject.set(x, "flipVariations", value.asInstanceOf[js.Any])
     

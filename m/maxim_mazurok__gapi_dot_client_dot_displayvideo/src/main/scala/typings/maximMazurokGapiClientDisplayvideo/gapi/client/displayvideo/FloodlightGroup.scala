@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +18,7 @@ trait FloodlightGroup extends StObject {
     * than 64 characters long, and cannot contain the following characters: `"<>`.
     */
   var customVariables: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDisplayvideo.maximMazurokGapiClientDisplayvideoStrings.FloodlightGroup & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Required. The display name of the Floodlight group. */
@@ -53,9 +50,7 @@ object FloodlightGroup {
     inline def setActiveViewConfigUndefined: Self = StObject.set(x, "activeViewConfig", js.undefined)
     
     inline def setCustomVariables(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDisplayvideo.maximMazurokGapiClientDisplayvideoStrings.FloodlightGroup & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "customVariables", value.asInstanceOf[js.Any])
     
     inline def setCustomVariablesUndefined: Self = StObject.set(x, "customVariables", js.undefined)

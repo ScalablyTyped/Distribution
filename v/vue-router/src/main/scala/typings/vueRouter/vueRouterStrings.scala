@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object vueRouterStrings {
   
   @js.native
-  sealed trait VueUseOptions extends StObject
-  inline def VueUseOptions: VueUseOptions = "VueUseOptions".asInstanceOf[VueUseOptions]
-  
-  @js.native
   sealed trait date extends StObject
   inline def date: date = "date".asInstanceOf[date]
   

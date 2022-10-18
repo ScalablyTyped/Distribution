@@ -1,9 +1,9 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvG2.paddingCalMod.PaddingCalCtor
-import typings.antvG2.viewMod.View
-import typings.antvGBase.interfacesMod.ICanvas
-import typings.antvGBase.interfacesMod.IGroup
+import typings.antvG2.libChartLayoutPaddingCalMod.PaddingCalCtor
+import typings.antvG2.libChartViewMod.View
+import typings.antvGBase.libInterfacesMod.ICanvas
+import typings.antvGBase.libInterfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

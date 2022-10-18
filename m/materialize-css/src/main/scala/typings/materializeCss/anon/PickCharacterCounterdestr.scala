@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<materialize-css.M.CharacterCounter, 'destroy'> */
 trait PickCharacterCounterdestr extends StObject {
   
-  var destroy: js.UndefOr[Any] = js.undefined
+  def destroy(): Unit
+  @JSName("destroy")
+  var destroy_Original: js.Function0[Unit]
 }
 object PickCharacterCounterdestr {
   
-  inline def apply(): PickCharacterCounterdestr = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(destroy: () => Unit): PickCharacterCounterdestr = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[PickCharacterCounterdestr]
   }
   
   extension [Self <: PickCharacterCounterdestr](x: Self) {
     
-    inline def setDestroy(value: Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
-    
-    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }
 }

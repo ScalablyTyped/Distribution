@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the TimedTextSource::Resolved event. */
-@JSGlobal("Windows.Media.Core.TimedTextSourceResolveResultEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.TimedTextSourceResolveResultEventArgs")
 @js.native
-abstract class TimedTextSourceResolveResultEventArgs ()
+open class TimedTextSourceResolveResultEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.TimedTextSourceResolveResultEventArgs {
   

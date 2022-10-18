@@ -20,7 +20,12 @@ import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeModal.modalMod.OnSwipeCompleteParams
+import typings.reactNativeModal.distModalMod.OnSwipeCompleteParams
+import typings.reactNativeModal.distTypesMod.Direction
+import typings.reactNativeModal.distTypesMod.GestureResponderEvent
+import typings.reactNativeModal.distTypesMod.OnOrientationChange
+import typings.reactNativeModal.distTypesMod.OrNull
+import typings.reactNativeModal.distTypesMod.PresentationStyle
 import typings.reactNativeModal.reactNativeModalStrings.`box-none`
 import typings.reactNativeModal.reactNativeModalStrings.`box-only`
 import typings.reactNativeModal.reactNativeModalStrings.`landscape-left`
@@ -37,11 +42,6 @@ import typings.reactNativeModal.reactNativeModalStrings.none
 import typings.reactNativeModal.reactNativeModalStrings.polite
 import typings.reactNativeModal.reactNativeModalStrings.portrait
 import typings.reactNativeModal.reactNativeModalStrings.yes
-import typings.reactNativeModal.typesMod.Direction
-import typings.reactNativeModal.typesMod.GestureResponderEvent
-import typings.reactNativeModal.typesMod.OnOrientationChange
-import typings.reactNativeModal.typesMod.OrNull
-import typings.reactNativeModal.typesMod.PresentationStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -259,11 +259,11 @@ object anon {
   
   trait AnimationInTiming extends StObject {
     
-    var animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+    var animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
     
     var animationInTiming: Double
     
-    var animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+    var animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
     
     var animationOutTiming: Double
     
@@ -332,9 +332,9 @@ object anon {
   object AnimationInTiming {
     
     inline def apply(
-      animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+      animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any,
       animationInTiming: Double,
-      animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+      animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any,
       animationOutTiming: Double,
       avoidKeyboard: Boolean,
       backdropColor: String,
@@ -373,11 +373,15 @@ object anon {
     
     extension [Self <: AnimationInTiming](x: Self) {
       
-      inline def setAnimationIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
+      inline def setAnimationIn(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
+      ): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
       
       inline def setAnimationInTiming(value: Double): Self = StObject.set(x, "animationInTiming", value.asInstanceOf[js.Any])
       
-      inline def setAnimationOut(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
+      inline def setAnimationOut(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
+      ): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
       
       inline def setAnimationOutTiming(value: Double): Self = StObject.set(x, "animationOutTiming", value.asInstanceOf[js.Any])
       
@@ -463,15 +467,15 @@ object anon {
   
   trait AnimationOut extends StObject {
     
-    var animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+    var animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
     
-    var animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+    var animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
   }
   object AnimationOut {
     
     inline def apply(
-      animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
-      animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+      animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any,
+      animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
     ): AnimationOut = {
       val __obj = js.Dynamic.literal(animationIn = animationIn.asInstanceOf[js.Any], animationOut = animationOut.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnimationOut]
@@ -479,9 +483,13 @@ object anon {
     
     extension [Self <: AnimationOut](x: Self) {
       
-      inline def setAnimationIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
+      inline def setAnimationIn(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
+      ): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
       
-      inline def setAnimationOut(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
+      inline def setAnimationOut(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
+      ): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
     }
   }
   
@@ -643,11 +651,11 @@ object anon {
     
     val accessible: js.UndefOr[Boolean] = js.undefined
     
-    val animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+    val animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
     
     val animationInTiming: Double
     
-    val animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+    val animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
     
     val animationOutTiming: Double
     
@@ -854,9 +862,9 @@ object anon {
   object ReadonlyModalProps {
     
     inline def apply(
-      animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+      animationIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any,
       animationInTiming: Double,
-      animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+      animationOut: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any,
       animationOutTiming: Double,
       avoidKeyboard: Boolean,
       backdropColor: String,
@@ -951,11 +959,15 @@ object anon {
       
       inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
       
-      inline def setAnimationIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
+      inline def setAnimationIn(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
+      ): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
       
       inline def setAnimationInTiming(value: Double): Self = StObject.set(x, "animationInTiming", value.asInstanceOf[js.Any])
       
-      inline def setAnimationOut(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
+      inline def setAnimationOut(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
+      ): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
       
       inline def setAnimationOutTiming(value: Double): Self = StObject.set(x, "animationOutTiming", value.asInstanceOf[js.Any])
       

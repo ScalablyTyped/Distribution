@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsDropdownMod.DropdownProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsDropdownMod.DropdownProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Dropdown", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Dropdown", JSImport.Default)
   @js.native
   val default: FC[DropdownProps] = js.native
   

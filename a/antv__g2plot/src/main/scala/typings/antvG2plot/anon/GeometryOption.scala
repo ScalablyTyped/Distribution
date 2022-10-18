@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GeometryOption extends StObject {
   
-  var geometryOption: typings.antvG2plot.dualAxesTypesMod.GeometryOption
+  var geometryOption: typings.antvG2plot.libPlotsDualAxesTypesMod.GeometryOption
   
   var xField: String
   
@@ -14,14 +14,18 @@ trait GeometryOption extends StObject {
 }
 object GeometryOption {
   
-  inline def apply(geometryOption: typings.antvG2plot.dualAxesTypesMod.GeometryOption, xField: String, yField: String): GeometryOption = {
+  inline def apply(
+    geometryOption: typings.antvG2plot.libPlotsDualAxesTypesMod.GeometryOption,
+    xField: String,
+    yField: String
+  ): GeometryOption = {
     val __obj = js.Dynamic.literal(geometryOption = geometryOption.asInstanceOf[js.Any], xField = xField.asInstanceOf[js.Any], yField = yField.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeometryOption]
   }
   
   extension [Self <: GeometryOption](x: Self) {
     
-    inline def setGeometryOption(value: typings.antvG2plot.dualAxesTypesMod.GeometryOption): Self = StObject.set(x, "geometryOption", value.asInstanceOf[js.Any])
+    inline def setGeometryOption(value: typings.antvG2plot.libPlotsDualAxesTypesMod.GeometryOption): Self = StObject.set(x, "geometryOption", value.asInstanceOf[js.Any])
     
     inline def setXField(value: String): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
     

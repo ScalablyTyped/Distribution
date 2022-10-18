@@ -1,6 +1,6 @@
 package typings.mapboxMapboxSdk.anon
 
-import typings.mapboxMapboxSdk.stylesMod.Style
+import typings.mapboxMapboxSdk.servicesStylesMod.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

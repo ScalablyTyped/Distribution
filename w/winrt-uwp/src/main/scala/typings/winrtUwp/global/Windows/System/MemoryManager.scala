@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to information on an app's memory usage. */
-@JSGlobal("Windows.System.MemoryManager")
+/* note: abstract class */ @JSGlobal("Windows.System.MemoryManager")
 @js.native
-abstract class MemoryManager ()
+open class MemoryManager ()
   extends StObject
      with typings.winrtUwp.Windows.System.MemoryManager
 object MemoryManager {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__html
 
-Typings are for version 6.1.2
+Typings are for version 6.5.12
 
 ## Library description:
 Storybook for HTML: View HTML snippets in isolation with Hot Reloading.
@@ -10,13 +10,13 @@ Storybook for HTML: View HTML snippets in isolation with Hot Reloading.
 | ------------------ | :-------------: |
 | Full name          | @storybook/html |
 | Keywords           | storybook |
-| # releases         | 547 |
-| # dependents       | 14 |
-| # downloads        | 1729420 |
-| # stars            | 0 |
+| # releases         | 460 |
+| # dependents       | 0.0 |
+| # downloads        | 238128.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/app/html)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/app/html)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Fhtml)

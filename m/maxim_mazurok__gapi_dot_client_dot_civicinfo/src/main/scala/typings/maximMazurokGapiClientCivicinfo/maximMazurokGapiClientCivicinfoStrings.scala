@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientCivicinfoStrings {
   
   @js.native
-  sealed trait RepresentativeInfoData extends StObject
-  inline def RepresentativeInfoData: RepresentativeInfoData = "RepresentativeInfoData".asInstanceOf[RepresentativeInfoData]
-  
-  @js.native
-  sealed trait RepresentativeInfoResponse extends StObject
-  inline def RepresentativeInfoResponse: RepresentativeInfoResponse = "RepresentativeInfoResponse".asInstanceOf[RepresentativeInfoResponse]
-  
-  @js.native
   sealed trait civicinfo extends StObject
   inline def civicinfo: civicinfo = "civicinfo".asInstanceOf[civicinfo]
   

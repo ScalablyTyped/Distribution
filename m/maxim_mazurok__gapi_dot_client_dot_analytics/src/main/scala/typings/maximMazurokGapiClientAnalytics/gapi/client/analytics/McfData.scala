@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
-import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientAnalytics.anon.AccountId
 import typings.maximMazurokGapiClientAnalytics.anon.ColumnType
 import typings.maximMazurokGapiClientAnalytics.anon.ConversionPathValue
@@ -61,9 +60,7 @@ trait McfData extends StObject {
     * the request.
     */
   var totalsForAllResults: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.McfData & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object McfData {
@@ -136,9 +133,7 @@ object McfData {
     inline def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
     
     inline def setTotalsForAllResults(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.McfData & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "totalsForAllResults", value.asInstanceOf[js.Any])
     
     inline def setTotalsForAllResultsUndefined: Self = StObject.set(x, "totalsForAllResults", js.undefined)

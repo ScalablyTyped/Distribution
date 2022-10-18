@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.ConfirmationInfo")
 @js.native
 open class ConfirmationInfo protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.ConfirmationInfo {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.ConfirmationInfo {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object ConfirmationInfo {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConfirmationInfo]
   
   /**
     * Creates and returns a new ConfirmationInfo instance in the SDK and on the server.
@@ -47,7 +47,7 @@ object ConfirmationInfo {
     *  6.0.0 to 7.7.0
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenPagesMod.pages.MicroflowSettings): typings.mendixmodelsdk.srcGenPagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConfirmationInfo]
   
   /**
     * Creates and returns a new ConfirmationInfo instance in the SDK and on the server.
@@ -58,7 +58,7 @@ object ConfirmationInfo {
     *  7.8.0 and higher
     */
   /* static member */
-  inline def createInCallNanoflowClientActionUnderConfirmationInfo(container: typings.mendixmodelsdk.pagesMod.pages.CallNanoflowClientAction): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallNanoflowClientActionUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
+  inline def createInCallNanoflowClientActionUnderConfirmationInfo(container: typings.mendixmodelsdk.srcGenPagesMod.pages.CallNanoflowClientAction): typings.mendixmodelsdk.srcGenPagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallNanoflowClientActionUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConfirmationInfo]
   
   /**
     * Creates and returns a new ConfirmationInfo instance in the SDK and on the server.
@@ -69,7 +69,7 @@ object ConfirmationInfo {
     *  9.12.0 and higher
     */
   /* static member */
-  inline def createInCallWorkflowClientActionUnderConfirmationInfo(container: typings.mendixmodelsdk.pagesMod.pages.CallWorkflowClientAction): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallWorkflowClientActionUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
+  inline def createInCallWorkflowClientActionUnderConfirmationInfo(container: typings.mendixmodelsdk.srcGenPagesMod.pages.CallWorkflowClientAction): typings.mendixmodelsdk.srcGenPagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallWorkflowClientActionUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConfirmationInfo]
   
   /**
     * Creates and returns a new ConfirmationInfo instance in the SDK and on the server.
@@ -77,7 +77,7 @@ object ConfirmationInfo {
     * of the parent MicroflowSettings element passed as argument.
     */
   /* static member */
-  inline def createInMicroflowSettingsUnderConfirmationInfo(container: typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowSettingsUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
+  inline def createInMicroflowSettingsUnderConfirmationInfo(container: typings.mendixmodelsdk.srcGenPagesMod.pages.MicroflowSettings): typings.mendixmodelsdk.srcGenPagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowSettingsUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConfirmationInfo]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ConfirmationInfo.structureTypeName")

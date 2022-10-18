@@ -1,12 +1,12 @@
 package typings.wordpressHooks
 
 import typings.std.Record
-import typings.wordpressHooks.createAddHookMod.AddHook
-import typings.wordpressHooks.createDidHookMod.DidHook
-import typings.wordpressHooks.createDoingHookMod.DoingHook
-import typings.wordpressHooks.createHasHookMod.HasHook
-import typings.wordpressHooks.createHooksMod._Hooks
-import typings.wordpressHooks.createRemoveHookMod.RemoveHook
+import typings.wordpressHooks.buildTypesCreateAddHookMod.AddHook
+import typings.wordpressHooks.buildTypesCreateDidHookMod.DidHook
+import typings.wordpressHooks.buildTypesCreateDoingHookMod.DoingHook
+import typings.wordpressHooks.buildTypesCreateHasHookMod.HasHook
+import typings.wordpressHooks.buildTypesCreateHooksMod._Hooks
+import typings.wordpressHooks.buildTypesCreateRemoveHookMod.RemoveHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +37,7 @@ object mod {
     *
     * @return {Hooks} A Hooks instance.
     */
-  inline def createHooks(): typings.wordpressHooks.createHooksMod.Hooks = ^.asInstanceOf[js.Dynamic].applyDynamic("createHooks")().asInstanceOf[typings.wordpressHooks.createHooksMod.Hooks]
+  inline def createHooks(): typings.wordpressHooks.buildTypesCreateHooksMod.Hooks = ^.asInstanceOf[js.Dynamic].applyDynamic("createHooks")().asInstanceOf[typings.wordpressHooks.buildTypesCreateHooksMod.Hooks]
   
   inline def currentAction(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("currentAction")().asInstanceOf[String | Null]
   
@@ -194,7 +194,7 @@ object mod {
     }
   }
   
-  type Hooks = typings.wordpressHooks.createHooksMod.Hooks
+  type Hooks = typings.wordpressHooks.buildTypesCreateHooksMod.Hooks
   
   type Store = (Record[String, Hook]) & typings.wordpressHooks.anon.Current
   

@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsAlignTopMod.AlignTopProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsAlignTopMod.AlignTopProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alignTopMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/system/AlignTop", JSImport.Default)
+  @JSImport("wix-ui-icons-common/AlignTop", JSImport.Default)
   @js.native
   val default: FC[AlignTopProps] = js.native
   

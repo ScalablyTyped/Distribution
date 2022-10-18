@@ -2,16 +2,16 @@ package typings.msportalfxMock
 
 import typings.express.mod.Express
 import typings.express.mod.RequestHandler
-import typings.msportalfxMock.armManagerMod.ArmManager.Manager
-import typings.msportalfxMock.armMod.ARMDefinitionConfiguration
-import typings.msportalfxMock.httpsProxyMod.HttpsProxy.ProxyOptions
-import typings.msportalfxMock.httpsProxyMod.HttpsProxy.ProxyServer
-import typings.msportalfxMock.httpsProxyMod.HttpsProxy.ServerOptions
-import typings.msportalfxMock.loggerMod.LoggerType
-import typings.msportalfxMock.mockFxMod.MockFx.Configuration
-import typings.msportalfxMock.mockFxMod.MockFx.Endpoints
-import typings.msportalfxMock.mockFxMod.MockFx.TargetDefinition
-import typings.msportalfxMock.storageMod.StorageDefinitionConfiguration
+import typings.msportalfxMock.libSrcArmProxyArmManagerMod.ArmManager.Manager
+import typings.msportalfxMock.libSrcHttpsProxyHttpsProxyMod.HttpsProxy.ProxyOptions
+import typings.msportalfxMock.libSrcHttpsProxyHttpsProxyMod.HttpsProxy.ProxyServer
+import typings.msportalfxMock.libSrcHttpsProxyHttpsProxyMod.HttpsProxy.ServerOptions
+import typings.msportalfxMock.libSrcMockFxLoggerMod.LoggerType
+import typings.msportalfxMock.libSrcMockFxMod.MockFx.Configuration
+import typings.msportalfxMock.libSrcMockFxMod.MockFx.Endpoints
+import typings.msportalfxMock.libSrcMockFxMod.MockFx.TargetDefinition
+import typings.msportalfxMock.libSrcMockFxTargetsArmMod.ARMDefinitionConfiguration
+import typings.msportalfxMock.libSrcMockFxTargetsStorageMod.StorageDefinitionConfiguration
 import typings.q.mod.Promise
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -138,7 +138,7 @@ object mod {
   @JSImport("msportalfx-mock", "MockFx")
   @js.native
   /* private */ open class MockFx ()
-    extends typings.msportalfxMock.mockFxMod.MockFx
+    extends typings.msportalfxMock.libSrcMockFxMod.MockFx
   /* static members */
   object MockFx {
     
@@ -154,7 +154,7 @@ object mod {
       * @returns {Promise<MockFx>}
       * @memberof MockFx
       */
-    inline def create(config: Configuration): js.Promise[typings.msportalfxMock.mockFxMod.MockFx] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.msportalfxMock.mockFxMod.MockFx]]
+    inline def create(config: Configuration): js.Promise[typings.msportalfxMock.libSrcMockFxMod.MockFx] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.msportalfxMock.libSrcMockFxMod.MockFx]]
     
     /**
       * Returns an object with endpoints for the mock server for registering, finalizing, and obtaining the plug-in
@@ -244,25 +244,25 @@ object mod {
     inline def create(
       rdfeEndpoint: String,
       serverPort: Double,
-      rdfeManager: typings.msportalfxMock.rdfeManagerMod.RdfeManager.Manager
+      rdfeManager: typings.msportalfxMock.libSrcRdfeProxyRdfeManagerMod.RdfeManager.Manager
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rdfeEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], rdfeManager.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
     inline def create(
       rdfeEndpoint: String,
       serverPort: Double,
-      rdfeManager: typings.msportalfxMock.rdfeManagerMod.RdfeManager.Manager,
+      rdfeManager: typings.msportalfxMock.libSrcRdfeProxyRdfeManagerMod.RdfeManager.Manager,
       customRoutes: js.Function1[/* app */ Express, Unit]
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rdfeEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], rdfeManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
     inline def create(
       rdfeEndpoint: String,
       serverPort: Double,
-      rdfeManager: typings.msportalfxMock.rdfeManagerMod.RdfeManager.Manager,
+      rdfeManager: typings.msportalfxMock.libSrcRdfeProxyRdfeManagerMod.RdfeManager.Manager,
       customRoutes: js.Function1[/* app */ Express, Unit],
       enablePassthrough: Boolean
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rdfeEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], rdfeManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any], enablePassthrough.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
     inline def create(
       rdfeEndpoint: String,
       serverPort: Double,
-      rdfeManager: typings.msportalfxMock.rdfeManagerMod.RdfeManager.Manager,
+      rdfeManager: typings.msportalfxMock.libSrcRdfeProxyRdfeManagerMod.RdfeManager.Manager,
       customRoutes: Unit,
       enablePassthrough: Boolean
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rdfeEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], rdfeManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any], enablePassthrough.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]

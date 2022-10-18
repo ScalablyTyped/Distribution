@@ -12,6 +12,7 @@ import typings.lightMyRequest.lightMyRequestStrings.options_
 import typings.lightMyRequest.lightMyRequestStrings.patch_
 import typings.lightMyRequest.lightMyRequestStrings.post_
 import typings.lightMyRequest.lightMyRequestStrings.put_
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.IncomingMessage
@@ -19,9 +20,8 @@ import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.httpMod.RequestListener
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.std.Promise
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -266,7 +266,7 @@ object mod {
     }
   }
   
-  type InjectPayload = String | js.Object | Buffer | ReadableStream[Any]
+  type InjectPayload = String | js.Object | Buffer | ReadableStream
   
   trait Response extends StObject {
     

@@ -8,7 +8,7 @@ trait XRJointPose
   extends StObject
      with XRPose {
   
-  var radius: js.UndefOr[Double] = js.undefined
+  val radius: js.UndefOr[Double] = js.undefined
 }
 object XRJointPose {
   

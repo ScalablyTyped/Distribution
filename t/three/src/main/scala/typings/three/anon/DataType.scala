@@ -1,6 +1,6 @@
 package typings.three.anon
 
-import typings.three.webXRControllerMod.XRControllerEventType
+import typings.three.srcRenderersWebxrWebXRControllerMod.XRControllerEventType
 import typings.webxr.XRInputSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

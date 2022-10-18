@@ -1,8 +1,8 @@
 package typings.plottable.mod
 
-import typings.plottable.labelMod.LabelFontSizePx
-import typings.plottable.scalesMod.Color
-import typings.plottable.scalesMod.InterpolatedColor
+import typings.plottable.buildSrcComponentsLabelMod.LabelFontSizePx
+import typings.plottable.buildSrcScalesMod.Color
+import typings.plottable.buildSrcScalesMod.InterpolatedColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object Components {
     * @param {number} [angle] One of -90/0/90. 0 is horizontal.
     */
   open class AxisLabel ()
-    extends typings.plottable.componentsMod.AxisLabel {
+    extends typings.plottable.buildSrcComponentsMod.AxisLabel {
     def this(text: String) = this()
     def this(text: String, angle: Double) = this()
     def this(text: Unit, angle: Double) = this()
@@ -47,12 +47,12 @@ object Components {
     * @constructor
     */
   open class DragBoxLayer ()
-    extends typings.plottable.componentsMod.DragBoxLayer
+    extends typings.plottable.buildSrcComponentsMod.DragBoxLayer
   
   @JSImport("plottable", "Components.DragLineLayer")
   @js.native
   open class DragLineLayer[D] protected ()
-    extends typings.plottable.componentsMod.DragLineLayer[D] {
+    extends typings.plottable.buildSrcComponentsMod.DragLineLayer[D] {
     def this(orientation: String) = this()
   }
   
@@ -64,12 +64,12 @@ object Components {
     * @param {Scale} yScale The scale to base the y gridlines on. Pass null if no gridlines are desired.
     */
   open class Gridlines ()
-    extends typings.plottable.componentsMod.Gridlines {
-    def this(xScale: typings.plottable.scaleMod.Scale[Any, Any]) = this()
-    def this(xScale: Null, yScale: typings.plottable.scaleMod.Scale[Any, Any]) = this()
+    extends typings.plottable.buildSrcComponentsMod.Gridlines {
+    def this(xScale: typings.plottable.buildSrcScalesScaleMod.Scale[Any, Any]) = this()
+    def this(xScale: Null, yScale: typings.plottable.buildSrcScalesScaleMod.Scale[Any, Any]) = this()
     def this(
-      xScale: typings.plottable.scaleMod.Scale[Any, Any],
-      yScale: typings.plottable.scaleMod.Scale[Any, Any]
+      xScale: typings.plottable.buildSrcScalesScaleMod.Scale[Any, Any],
+      yScale: typings.plottable.buildSrcScalesScaleMod.Scale[Any, Any]
     ) = this()
   }
   
@@ -85,14 +85,14 @@ object Components {
     * @param {Component[]} [components=[]] Components to be added to the Group.
     */
   open class Group ()
-    extends typings.plottable.componentsMod.Group {
-    def this(components: js.Array[typings.plottable.componentMod.Component]) = this()
+    extends typings.plottable.buildSrcComponentsMod.Group {
+    def this(components: js.Array[typings.plottable.buildSrcComponentsComponentMod.Component]) = this()
   }
   
   @JSImport("plottable", "Components.GuideLineLayer")
   @js.native
   open class GuideLineLayer[D] protected ()
-    extends typings.plottable.componentsMod.GuideLineLayer[D] {
+    extends typings.plottable.buildSrcComponentsMod.GuideLineLayer[D] {
     def this(orientation: String) = this()
   }
   /* static members */
@@ -116,7 +116,7 @@ object Components {
   @JSImport("plottable", "Components.InterpolatedColorLegend")
   @js.native
   open class InterpolatedColorLegend protected ()
-    extends typings.plottable.componentsMod.InterpolatedColorLegend {
+    extends typings.plottable.buildSrcComponentsMod.InterpolatedColorLegend {
     /**
       * Creates an InterpolatedColorLegend.
       *
@@ -165,7 +165,7 @@ object Components {
     * @param {number} [angle=0] The angle of the Label in degrees (-90/0/90). 0 is horizontal.
     */
   open class Label ()
-    extends typings.plottable.componentsMod.Label {
+    extends typings.plottable.buildSrcComponentsMod.Label {
     def this(displayText: String) = this()
     def this(displayText: String, angle: Double) = this()
     def this(displayText: Unit, angle: Double) = this()
@@ -196,7 +196,7 @@ object Components {
   @JSImport("plottable", "Components.Legend")
   @js.native
   open class Legend protected ()
-    extends typings.plottable.componentsMod.Legend {
+    extends typings.plottable.buildSrcComponentsMod.Legend {
     /**
       * The Legend consists of a series of entries, each with a color and label taken from the Color Scale.
       *
@@ -249,8 +249,8 @@ object Components {
     * @param {Component[]} [components=[]] Components to be added to the Group.
     */
   open class PlotGroup ()
-    extends typings.plottable.componentsMod.PlotGroup {
-    def this(components: js.Array[typings.plottable.componentMod.Component]) = this()
+    extends typings.plottable.buildSrcComponentsMod.PlotGroup {
+    def this(components: js.Array[typings.plottable.buildSrcComponentsComponentMod.Component]) = this()
   }
   
   @JSImport("plottable", "Components.PropertyMode")
@@ -258,17 +258,17 @@ object Components {
   object PropertyMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.plottable.selectionBoxLayerMod.PropertyMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.plottable.buildSrcComponentsSelectionBoxLayerMod.PropertyMode & Double] = js.native
     
-    /* 1 */ val PIXEL: typings.plottable.selectionBoxLayerMod.PropertyMode.PIXEL & Double = js.native
+    /* 1 */ val PIXEL: typings.plottable.buildSrcComponentsSelectionBoxLayerMod.PropertyMode.PIXEL & Double = js.native
     
-    /* 0 */ val VALUE: typings.plottable.selectionBoxLayerMod.PropertyMode.VALUE & Double = js.native
+    /* 0 */ val VALUE: typings.plottable.buildSrcComponentsSelectionBoxLayerMod.PropertyMode.VALUE & Double = js.native
   }
   
   @JSImport("plottable", "Components.SelectionBoxLayer")
   @js.native
   open class SelectionBoxLayer ()
-    extends typings.plottable.componentsMod.SelectionBoxLayer
+    extends typings.plottable.buildSrcComponentsMod.SelectionBoxLayer
   
   @JSImport("plottable", "Components.Table")
   @js.native
@@ -285,8 +285,10 @@ object Components {
     *   null can be used if a cell is empty.
     */
   open class Table ()
-    extends typings.plottable.componentsMod.Table {
-    def this(rows: js.Array[js.Array[js.UndefOr[typings.plottable.componentMod.Component | Null]]]) = this()
+    extends typings.plottable.buildSrcComponentsMod.Table {
+    def this(rows: js.Array[
+            js.Array[js.UndefOr[typings.plottable.buildSrcComponentsComponentMod.Component | Null]]
+          ]) = this()
   }
   /* static members */
   object Table {
@@ -319,7 +321,7 @@ object Components {
     * @param {number} [angle] One of -90/0/90. 0 is horizontal.
     */
   open class TitleLabel ()
-    extends typings.plottable.componentsMod.TitleLabel {
+    extends typings.plottable.buildSrcComponentsMod.TitleLabel {
     def this(text: String) = this()
     def this(text: String, angle: Double) = this()
     def this(text: Unit, angle: Double) = this()
@@ -347,7 +349,7 @@ object Components {
     * @param {number} [angle=0] The angle of the Label in degrees (-90/0/90). 0 is horizontal.
     */
   open class WrappedLabel ()
-    extends typings.plottable.componentsMod.WrappedLabel {
+    extends typings.plottable.buildSrcComponentsMod.WrappedLabel {
     def this(displayText: String) = this()
     def this(displayText: String, angle: Double) = this()
     def this(displayText: Unit, angle: Double) = this()
@@ -362,7 +364,7 @@ object Components {
     * @constructor
     */
   open class XDragBoxLayer ()
-    extends typings.plottable.componentsMod.XDragBoxLayer
+    extends typings.plottable.buildSrcComponentsMod.XDragBoxLayer
   
   @JSImport("plottable", "Components.YDragBoxLayer")
   @js.native
@@ -373,5 +375,5 @@ object Components {
     * @constructor
     */
   open class YDragBoxLayer ()
-    extends typings.plottable.componentsMod.YDragBoxLayer
+    extends typings.plottable.buildSrcComponentsMod.YDragBoxLayer
 }

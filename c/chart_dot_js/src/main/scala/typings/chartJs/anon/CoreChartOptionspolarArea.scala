@@ -1,13 +1,11 @@
 package typings.chartJs.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsBooleans.`false`
 import typings.chartJs.chartJsStrings.polarArea
 import typings.chartJs.chartJsStrings.radialLinear
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
-import typings.chartJs.geometricMod.ChartArea
 import typings.chartJs.mod.ActiveElement
 import typings.chartJs.mod.AnimationsSpec
 import typings.chartJs.mod.ChartEvent
@@ -20,6 +18,8 @@ import typings.chartJs.mod.ScaleOptionsByType
 import typings.chartJs.mod.Scriptable
 import typings.chartJs.mod.ScriptableContext
 import typings.chartJs.mod.TransitionsSpec
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesGeometricMod.ChartArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +41,7 @@ trait CoreChartOptionspolarArea extends StObject {
     * base background color
     * @see Defaults.backgroundColor
     */
-  var backgroundColor: Scriptable[typings.chartJs.colorMod.Color, ScriptableContext[polarArea]]
+  var backgroundColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[polarArea]]
   
   var bar: Datasets
   
@@ -49,7 +49,7 @@ trait CoreChartOptionspolarArea extends StObject {
     * base border color
     * @see Defaults.borderColor
     */
-  var borderColor: Scriptable[typings.chartJs.colorMod.Color, ScriptableContext[polarArea]]
+  var borderColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[polarArea]]
   
   var bubble: DatasetsBubbleControllerDatasetOptions
   
@@ -62,7 +62,7 @@ trait CoreChartOptionspolarArea extends StObject {
     * base color
     * @see Defaults.color
     */
-  var color: Scriptable[typings.chartJs.colorMod.Color, ScriptableContext[polarArea]]
+  var color: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[polarArea]]
   
   var datasets: keyinChartTypeChartTypeReBar
   
@@ -81,7 +81,7 @@ trait CoreChartOptionspolarArea extends StObject {
     * @default ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove']
     */
   var events: js.Array[
-    /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ Any
+    /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any
   ]
   
   /**
@@ -190,18 +190,18 @@ object CoreChartOptionspolarArea {
     animation: (`false` | AnimationSpecpolarAreaonP) & (`false` | PolarAreaAnimationOptions),
     animations: AnimationsSpec[polarArea],
     aspectRatio: Double,
-    backgroundColor: Scriptable[typings.chartJs.colorMod.Color, ScriptableContext[polarArea]],
+    backgroundColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[polarArea]],
     bar: Datasets,
-    borderColor: Scriptable[typings.chartJs.colorMod.Color, ScriptableContext[polarArea]],
+    borderColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[polarArea]],
     bubble: DatasetsBubbleControllerDatasetOptions,
     clip: Double | ChartArea | `false`,
-    color: Scriptable[typings.chartJs.colorMod.Color, ScriptableContext[polarArea]],
+    color: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[polarArea]],
     datasets: keyinChartTypeChartTypeReBar,
     devicePixelRatio: Double,
     doughnut: DatasetsDoughnutControllerDatasetOptions,
     elements: ElementOptionsByType[polarArea],
     events: js.Array[
-      /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ Any
+      /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any
     ],
     font: PartialFontSpec,
     hover: CoreInteractionOptions,
@@ -239,28 +239,28 @@ object CoreChartOptionspolarArea {
     
     inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundColor(value: Scriptable[typings.chartJs.colorMod.Color, ScriptableContext[polarArea]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[polarArea]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorFunction2(
-      value: (ScriptableContext[polarArea], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[polarArea], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction2(value))
     
     inline def setBar(value: Datasets): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
-    inline def setBorderColor(value: Scriptable[typings.chartJs.colorMod.Color, ScriptableContext[polarArea]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[polarArea]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorFunction2(
-      value: (ScriptableContext[polarArea], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[polarArea], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "borderColor", js.Any.fromFunction2(value))
     
     inline def setBubble(value: DatasetsBubbleControllerDatasetOptions): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
     
     inline def setClip(value: Double | ChartArea | `false`): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: Scriptable[typings.chartJs.colorMod.Color, ScriptableContext[polarArea]]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[polarArea]]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorFunction2(
-      value: (ScriptableContext[polarArea], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[polarArea], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "color", js.Any.fromFunction2(value))
     
     inline def setDatasets(value: keyinChartTypeChartTypeReBar): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
@@ -273,12 +273,12 @@ object CoreChartOptionspolarArea {
     
     inline def setEvents(
       value: js.Array[
-          /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ Any
+          /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any
         ]
     ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsVarargs(
-      value: (/* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ Any)*
+      value: (/* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any)*
     ): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setFont(value: PartialFontSpec): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])

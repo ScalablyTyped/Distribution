@@ -1,6 +1,6 @@
 package typings.sentryUtils.anon
 
-import typings.sentryUtils.requestdataMod.InjectedNodeDeps
+import typings.sentryUtils.typesRequestdataMod.InjectedNodeDeps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

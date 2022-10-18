@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,9 +40,7 @@ trait Job extends StObject {
     * `string_values` across all keys is 50KB.
     */
   var customAttributes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.CustomAttribute}
-    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.Job & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.CustomAttribute} */ js.Any
   ] = js.undefined
   
   /** The desired education degrees for the job, such as Bachelors, Masters. */
@@ -193,9 +190,7 @@ object Job {
     inline def setCompensationInfoUndefined: Self = StObject.set(x, "compensationInfo", js.undefined)
     
     inline def setCustomAttributes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.CustomAttribute}
-      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.Job & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.CustomAttribute} */ js.Any
     ): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
     
     inline def setCustomAttributesUndefined: Self = StObject.set(x, "customAttributes", js.undefined)

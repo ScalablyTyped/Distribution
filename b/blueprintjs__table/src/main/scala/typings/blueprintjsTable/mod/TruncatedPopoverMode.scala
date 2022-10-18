@@ -9,13 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TruncatedPopoverMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.blueprintjsTable.truncatedFormatMod.TruncatedPopoverMode & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.blueprintjsTable.libEsmCellFormatsTruncatedFormatMod.TruncatedPopoverMode & String
+  ] = js.native
   
-  /* "always" */ val ALWAYS: typings.blueprintjsTable.truncatedFormatMod.TruncatedPopoverMode.ALWAYS & String = js.native
+  /* "always" */ val ALWAYS: typings.blueprintjsTable.libEsmCellFormatsTruncatedFormatMod.TruncatedPopoverMode.ALWAYS & String = js.native
   
-  /* "never" */ val NEVER: typings.blueprintjsTable.truncatedFormatMod.TruncatedPopoverMode.NEVER & String = js.native
+  /* "never" */ val NEVER: typings.blueprintjsTable.libEsmCellFormatsTruncatedFormatMod.TruncatedPopoverMode.NEVER & String = js.native
   
-  /* "when-truncated" */ val WHEN_TRUNCATED: typings.blueprintjsTable.truncatedFormatMod.TruncatedPopoverMode.WHEN_TRUNCATED & String = js.native
+  /* "when-truncated" */ val WHEN_TRUNCATED: typings.blueprintjsTable.libEsmCellFormatsTruncatedFormatMod.TruncatedPopoverMode.WHEN_TRUNCATED & String = js.native
   
-  /* "when-truncated-approx" */ val WHEN_TRUNCATED_APPROX: typings.blueprintjsTable.truncatedFormatMod.TruncatedPopoverMode.WHEN_TRUNCATED_APPROX & String = js.native
+  /* "when-truncated-approx" */ val WHEN_TRUNCATED_APPROX: typings.blueprintjsTable.libEsmCellFormatsTruncatedFormatMod.TruncatedPopoverMode.WHEN_TRUNCATED_APPROX & String = js.native
 }

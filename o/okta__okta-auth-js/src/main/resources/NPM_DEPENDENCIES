@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@okta/okta-auth-js" : "7.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@okta/okta-auth-js" : "7.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

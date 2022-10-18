@@ -1,15 +1,12 @@
 package typings.nodeSql2.mod
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TableDefinition[Name /* <: String */, Row] extends StObject {
   
-  var columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ CName in keyof Row ]: node-sql-2.node-sql-2.ColumnDefinition<CName, Row[CName]>}
-    */ typings.nodeSql2.nodeSql2Strings.TableDefinition & TopLevel[Row]
+  var columns: /* import warning: importer.ImportType#apply Failed type conversion: {[ CName in keyof Row ]: node-sql-2.node-sql-2.ColumnDefinition<CName, Row[CName]>} */ js.Any
   
   var dialect: js.UndefOr[SQLDialects] = js.undefined
   
@@ -24,9 +21,7 @@ trait TableDefinition[Name /* <: String */, Row] extends StObject {
 object TableDefinition {
   
   inline def apply[Name /* <: String */, Row](
-    columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ CName in keyof Row ]: node-sql-2.node-sql-2.ColumnDefinition<CName, Row[CName]>}
-    */ typings.nodeSql2.nodeSql2Strings.TableDefinition & TopLevel[Row],
+    columns: /* import warning: importer.ImportType#apply Failed type conversion: {[ CName in keyof Row ]: node-sql-2.node-sql-2.ColumnDefinition<CName, Row[CName]>} */ js.Any,
     name: Name,
     schema: String
   ): TableDefinition[Name, Row] = {
@@ -37,9 +32,7 @@ object TableDefinition {
   extension [Self <: TableDefinition[?, ?], Name /* <: String */, Row](x: Self & (TableDefinition[Name, Row])) {
     
     inline def setColumns(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ CName in keyof Row ]: node-sql-2.node-sql-2.ColumnDefinition<CName, Row[CName]>}
-      */ typings.nodeSql2.nodeSql2Strings.TableDefinition & TopLevel[Row]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ CName in keyof Row ]: node-sql-2.node-sql-2.ColumnDefinition<CName, Row[CName]>} */ js.Any
     ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setDialect(value: SQLDialects): Self = StObject.set(x, "dialect", value.asInstanceOf[js.Any])

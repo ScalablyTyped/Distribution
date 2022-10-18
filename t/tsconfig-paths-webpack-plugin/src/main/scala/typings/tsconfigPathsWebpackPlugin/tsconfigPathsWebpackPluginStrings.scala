@@ -1,6 +1,6 @@
 package typings.tsconfigPathsWebpackPlugin
 
-import typings.tsconfigPathsWebpackPlugin.optionsMod.LogLevel
+import typings.tsconfigPathsWebpackPlugin.libOptionsMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

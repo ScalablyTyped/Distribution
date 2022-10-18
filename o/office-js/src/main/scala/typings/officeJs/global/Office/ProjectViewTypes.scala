@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies the types of views that the {@link Office.Document | Document}.getSelectedViewAsync method can recognize.
   *
   * @remarks
-  * 
-  * The {@link Office.Document | Document}.getSelectedViewAsync method returns the ProjectViewTypes constant value and name that corresponds to the 
+  *
+  * The {@link Office.Document | Document}.getSelectedViewAsync method returns the ProjectViewTypes constant value and name that corresponds to the
   * active view.
   */
 @JSGlobal("Office.ProjectViewTypes")

@@ -150,7 +150,9 @@ trait SinonStub[TArgs /* <: js.Array[Any] */, TReturnValue]
     * Since sinon@2.0.0
     */
   def resolves(): SinonStub[TArgs, TReturnValue] = js.native
-  def resolves(value: Any): SinonStub[TArgs, TReturnValue] = js.native
+  def resolves(
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TReturnValue extends std.PromiseLike<infer TResolveValue> ? TResolveValue : any */ js.Any
+  ): SinonStub[TArgs, TReturnValue] = js.native
   
   /**
     * Causes the stub to return a Promise which resolves to the argument at the provided index.

@@ -1,6 +1,6 @@
 package typings.expoConfigPlugins.anon
 
-import typings.expoConfigPlugins.pluginTypesMod.ConfigPlugin
+import typings.expoConfigPlugins.buildPluginDottypesMod.ConfigPlugin
 import typings.expoConfigTypes.mod.ExpoConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

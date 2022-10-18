@@ -1,5 +1,6 @@
 package typings.browserSync.mod
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
@@ -10,7 +11,7 @@ trait ProxyOptions extends StObject {
   
   var error: js.UndefOr[
     js.Function3[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+      /* err */ ErrnoException, 
       /* req */ IncomingMessage, 
       /* res */ ServerResponse[IncomingMessage], 
       Unit
@@ -41,7 +42,7 @@ object ProxyOptions {
   extension [Self <: ProxyOptions](x: Self) {
     
     inline def setError(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, /* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage]) => Unit
+      value: (/* err */ ErrnoException, /* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage]) => Unit
     ): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)

@@ -16,7 +16,6 @@ import typings.std.Partial
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -38,58 +37,51 @@ object mod extends Shortcut {
     
     def enabled(name: String): Boolean = js.native
     
-    def get(name: String): js.Any = js.native
+    def get(name: String): Any = js.native
     
     def hooks(hooks: PartialHooksObject): this.type = js.native
     
-    def service(location: String): Service[_] = js.native
+    def service(location: String): /* import warning: importer.ImportType#apply Failed type conversion: keyof ServiceTypes extends never ? @feathersjs/feathers.@feathersjs/feathers.Service<any> : never */ js.Any = js.native
     def service[L /* <: /* keyof ServiceTypes */ String */](location: L): Service[
         /* import warning: importer.ImportType#apply Failed type conversion: ServiceTypes[L] */ js.Any
       ] = js.native
     
-    def set(name: String, value: js.Any): this.type = js.native
+    def set(name: String, value: Any): this.type = js.native
     
     def setup(): this.type = js.native
-    def setup(server: js.Any): this.type = js.native
+    def setup(server: Any): this.type = js.native
     
     def use(path: String, service: PartialServiceMethodsanyS): this.type = js.native
-    def use(path: String, service: PartialServiceMethodsanyS, options: js.Any): this.type = js.native
-    def use(path: String, service: Application[_]): this.type = js.native
-    def use(path: String, service: Application[_], options: js.Any): this.type = js.native
+    def use(path: String, service: PartialServiceMethodsanyS, options: Any): this.type = js.native
+    def use(path: String, service: Application[Any]): this.type = js.native
+    def use(path: String, service: Application[Any], options: Any): this.type = js.native
     
     var version: String = js.native
   }
   
   /* Inlined std.Pick<@feathersjs/feathers.@feathersjs/feathers.Params, 'query' | 'paginate'> */
-  @js.native
   trait ClientSideParams extends StObject {
     
-    var paginate: js.UndefOr[`false` | PickPaginationOptionsmax] = js.native
+    var paginate: js.UndefOr[`false` | PickPaginationOptionsmax] = js.undefined
     
-    var query: js.UndefOr[Query] = js.native
+    var query: js.UndefOr[Query] = js.undefined
   }
   object ClientSideParams {
     
-    @scala.inline
-    def apply(): ClientSideParams = {
+    inline def apply(): ClientSideParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientSideParams]
     }
     
-    @scala.inline
-    implicit class ClientSideParamsMutableBuilder[Self <: ClientSideParams] (val x: Self) extends AnyVal {
+    extension [Self <: ClientSideParams](x: Self) {
       
-      @scala.inline
-      def setPaginate(value: `false` | PickPaginationOptionsmax): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
+      inline def setPaginate(value: `false` | PickPaginationOptionsmax): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
+      inline def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
       
-      @scala.inline
-      def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
   
@@ -112,62 +104,61 @@ object mod extends Shortcut {
   
   // tslint:disable-next-line void-return
   type Hook = js.Function1[
-    /* hook */ HookContext[js.Any], 
-    (js.Promise[HookContext[js.Any] | SkipSymbol | Unit]) | HookContext[js.Any] | SkipSymbol | Unit
+    /* hook */ HookContext[Any], 
+    (js.Promise[HookContext[Any] | SkipSymbol | Unit]) | HookContext[Any] | SkipSymbol | Unit
   ]
   
-  @js.native
   trait HookContext[T] extends StObject {
     
     /**
       * A read only property that contains the Feathers application object. This can be used to
       * retrieve other services (via context.app.service('name')) or configuration values.
       */
-    val app: Application[js.Object] = js.native
+    val app: Application[js.Object]
     
     /**
       * A writeable property containing the data of a create, update and patch service
       * method call.
       */
-    var data: js.UndefOr[T] = js.native
+    var data: js.UndefOr[T] = js.undefined
     
     /**
       * A writeable, optional property and contains a "safe" version of the data that
       * should be sent to any client. If context.dispatch has not been set context.result
       * will be sent to the client instead.
       */
-    var dispatch: js.UndefOr[T] = js.native
+    var dispatch: js.UndefOr[T] = js.undefined
     
     /**
       * A writeable property with the error object that was thrown in a failed method call.
       * It is only available in error hooks.
       */
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[Any] = js.undefined
     
     /**
       * A writeable property and the id for a get, remove, update and patch service
       * method call. For remove, update and patch context.id can also be null when
       * modifying multiple entries. In all other cases it will be undefined.
       */
-    var id: js.UndefOr[String | Double] = js.native
+    var id: js.UndefOr[String | Double] = js.undefined
     
     /**
       * A read only property with the name of the service method (one of find, get,
       * create, update, patch, remove).
       */
-    val method: String = js.native
+    val method: String
     
     /**
       * A writeable property that contains the service method parameters (including
       * params.query).
       */
-    var params: Params = js.native
+    var params: Params
     
     /**
       * A read only property and contains the service name (or path) without leading or
       * trailing slashes.
       */
-    val path: String = js.native
+    val path: String
     
     /**
       * A writeable property containing the result of the successful service method call.
@@ -178,28 +169,27 @@ object mod extends Shortcut {
       *  - A before hook to skip the actual service method (database) call
       *  - An error hook to swallow the error and return a result instead
       */
-    var result: js.UndefOr[T] = js.native
+    var result: js.UndefOr[T] = js.undefined
     
     /**
       * A read only property and contains the service this hook currently runs on.
       */
-    val service: Service[T] = js.native
+    val service: Service[T]
     
     /**
       * A writeable, optional property that allows to override the standard HTTP status
       * code that should be returned.
       */
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
     
     /**
       * A read only property with the hook type (one of before, after or error).
       */
-    val `type`: before | after | error = js.native
+    val `type`: before | after | error
   }
   object HookContext {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       app: Application[js.Object],
       method: String,
       params: Params,
@@ -212,86 +202,65 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HookContext[T]]
     }
     
-    @scala.inline
-    implicit class HookContextMutableBuilder[Self <: HookContext[_], T] (val x: Self with HookContext[T]) extends AnyVal {
+    extension [Self <: HookContext[?], T](x: Self & HookContext[T]) {
       
-      @scala.inline
-      def setApp(value: Application[js.Object]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: Application[js.Object]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDispatch(value: T): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: T): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
+      inline def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      @scala.inline
-      def setService(value: Service[T]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: Service[T]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
       
-      @scala.inline
-      def setType(value: before | after | error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: before | after | error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait HookMap extends StObject {
     
-    var all: Hook | js.Array[Hook] = js.native
+    var all: Hook | js.Array[Hook]
     
-    var create: Hook | js.Array[Hook] = js.native
+    var create: Hook | js.Array[Hook]
     
-    var find: Hook | js.Array[Hook] = js.native
+    var find: Hook | js.Array[Hook]
     
-    var get: Hook | js.Array[Hook] = js.native
+    var get: Hook | js.Array[Hook]
     
-    var patch: Hook | js.Array[Hook] = js.native
+    var patch: Hook | js.Array[Hook]
     
-    var remove: Hook | js.Array[Hook] = js.native
+    var remove: Hook | js.Array[Hook]
     
-    var update: Hook | js.Array[Hook] = js.native
+    var update: Hook | js.Array[Hook]
   }
   object HookMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       all: Hook | js.Array[Hook],
       create: Hook | js.Array[Hook],
       find: Hook | js.Array[Hook],
@@ -304,103 +273,79 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HookMap]
     }
     
-    @scala.inline
-    implicit class HookMapMutableBuilder[Self <: HookMap] (val x: Self) extends AnyVal {
+    extension [Self <: HookMap](x: Self) {
       
-      @scala.inline
-      def setAll(value: Hook | js.Array[Hook]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: Hook | js.Array[Hook]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllFunction1(
-        value: /* hook */ HookContext[js.Any] => (js.Promise[HookContext[js.Any] | SkipSymbol | Unit]) | HookContext[js.Any] | SkipSymbol | Unit
+      inline def setAllFunction1(
+        value: /* hook */ HookContext[Any] => (js.Promise[HookContext[Any] | SkipSymbol | Unit]) | HookContext[Any] | SkipSymbol | Unit
       ): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAllVarargs(value: Hook*): Self = StObject.set(x, "all", js.Array(value :_*))
+      inline def setAllVarargs(value: Hook*): Self = StObject.set(x, "all", js.Array(value*))
       
-      @scala.inline
-      def setCreate(value: Hook | js.Array[Hook]): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: Hook | js.Array[Hook]): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateFunction1(
-        value: /* hook */ HookContext[js.Any] => (js.Promise[HookContext[js.Any] | SkipSymbol | Unit]) | HookContext[js.Any] | SkipSymbol | Unit
+      inline def setCreateFunction1(
+        value: /* hook */ HookContext[Any] => (js.Promise[HookContext[Any] | SkipSymbol | Unit]) | HookContext[Any] | SkipSymbol | Unit
       ): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateVarargs(value: Hook*): Self = StObject.set(x, "create", js.Array(value :_*))
+      inline def setCreateVarargs(value: Hook*): Self = StObject.set(x, "create", js.Array(value*))
       
-      @scala.inline
-      def setFind(value: Hook | js.Array[Hook]): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
+      inline def setFind(value: Hook | js.Array[Hook]): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindFunction1(
-        value: /* hook */ HookContext[js.Any] => (js.Promise[HookContext[js.Any] | SkipSymbol | Unit]) | HookContext[js.Any] | SkipSymbol | Unit
+      inline def setFindFunction1(
+        value: /* hook */ HookContext[Any] => (js.Promise[HookContext[Any] | SkipSymbol | Unit]) | HookContext[Any] | SkipSymbol | Unit
       ): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindVarargs(value: Hook*): Self = StObject.set(x, "find", js.Array(value :_*))
+      inline def setFindVarargs(value: Hook*): Self = StObject.set(x, "find", js.Array(value*))
       
-      @scala.inline
-      def setGet(value: Hook | js.Array[Hook]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      inline def setGet(value: Hook | js.Array[Hook]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetFunction1(
-        value: /* hook */ HookContext[js.Any] => (js.Promise[HookContext[js.Any] | SkipSymbol | Unit]) | HookContext[js.Any] | SkipSymbol | Unit
+      inline def setGetFunction1(
+        value: /* hook */ HookContext[Any] => (js.Promise[HookContext[Any] | SkipSymbol | Unit]) | HookContext[Any] | SkipSymbol | Unit
       ): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetVarargs(value: Hook*): Self = StObject.set(x, "get", js.Array(value :_*))
+      inline def setGetVarargs(value: Hook*): Self = StObject.set(x, "get", js.Array(value*))
       
-      @scala.inline
-      def setPatch(value: Hook | js.Array[Hook]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+      inline def setPatch(value: Hook | js.Array[Hook]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatchFunction1(
-        value: /* hook */ HookContext[js.Any] => (js.Promise[HookContext[js.Any] | SkipSymbol | Unit]) | HookContext[js.Any] | SkipSymbol | Unit
+      inline def setPatchFunction1(
+        value: /* hook */ HookContext[Any] => (js.Promise[HookContext[Any] | SkipSymbol | Unit]) | HookContext[Any] | SkipSymbol | Unit
       ): Self = StObject.set(x, "patch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPatchVarargs(value: Hook*): Self = StObject.set(x, "patch", js.Array(value :_*))
+      inline def setPatchVarargs(value: Hook*): Self = StObject.set(x, "patch", js.Array(value*))
       
-      @scala.inline
-      def setRemove(value: Hook | js.Array[Hook]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Hook | js.Array[Hook]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveFunction1(
-        value: /* hook */ HookContext[js.Any] => (js.Promise[HookContext[js.Any] | SkipSymbol | Unit]) | HookContext[js.Any] | SkipSymbol | Unit
+      inline def setRemoveFunction1(
+        value: /* hook */ HookContext[Any] => (js.Promise[HookContext[Any] | SkipSymbol | Unit]) | HookContext[Any] | SkipSymbol | Unit
       ): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveVarargs(value: Hook*): Self = StObject.set(x, "remove", js.Array(value :_*))
+      inline def setRemoveVarargs(value: Hook*): Self = StObject.set(x, "remove", js.Array(value*))
       
-      @scala.inline
-      def setUpdate(value: Hook | js.Array[Hook]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: Hook | js.Array[Hook]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateFunction1(
-        value: /* hook */ HookContext[js.Any] => (js.Promise[HookContext[js.Any] | SkipSymbol | Unit]) | HookContext[js.Any] | SkipSymbol | Unit
+      inline def setUpdateFunction1(
+        value: /* hook */ HookContext[Any] => (js.Promise[HookContext[Any] | SkipSymbol | Unit]) | HookContext[Any] | SkipSymbol | Unit
       ): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateVarargs(value: Hook*): Self = StObject.set(x, "update", js.Array(value :_*))
+      inline def setUpdateVarargs(value: Hook*): Self = StObject.set(x, "update", js.Array(value*))
     }
   }
   
-  @js.native
   trait HooksObject extends StObject {
     
-    var after: PartialHookMap | Hook | js.Array[Hook] = js.native
+    var after: PartialHookMap | Hook | js.Array[Hook]
     
-    var before: PartialHookMap | Hook | js.Array[Hook] = js.native
+    var before: PartialHookMap | Hook | js.Array[Hook]
     
-    var error: PartialHookMap | Hook | js.Array[Hook] = js.native
+    var error: PartialHookMap | Hook | js.Array[Hook]
     
-    var `finally`: js.UndefOr[PartialHookMap | Hook | js.Array[Hook]] = js.native
+    var `finally`: js.UndefOr[PartialHookMap | Hook | js.Array[Hook]] = js.undefined
   }
   object HooksObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       after: PartialHookMap | Hook | js.Array[Hook],
       before: PartialHookMap | Hook | js.Array[Hook],
       error: PartialHookMap | Hook | js.Array[Hook]
@@ -409,55 +354,41 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HooksObject]
     }
     
-    @scala.inline
-    implicit class HooksObjectMutableBuilder[Self <: HooksObject] (val x: Self) extends AnyVal {
+    extension [Self <: HooksObject](x: Self) {
       
-      @scala.inline
-      def setAfter(value: PartialHookMap | Hook | js.Array[Hook]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: PartialHookMap | Hook | js.Array[Hook]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterFunction1(
-        value: /* hook */ HookContext[js.Any] => (js.Promise[HookContext[js.Any] | SkipSymbol | Unit]) | HookContext[js.Any] | SkipSymbol | Unit
+      inline def setAfterFunction1(
+        value: /* hook */ HookContext[Any] => (js.Promise[HookContext[Any] | SkipSymbol | Unit]) | HookContext[Any] | SkipSymbol | Unit
       ): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterVarargs(value: Hook*): Self = StObject.set(x, "after", js.Array(value :_*))
+      inline def setAfterVarargs(value: Hook*): Self = StObject.set(x, "after", js.Array(value*))
       
-      @scala.inline
-      def setBefore(value: PartialHookMap | Hook | js.Array[Hook]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: PartialHookMap | Hook | js.Array[Hook]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeFunction1(
-        value: /* hook */ HookContext[js.Any] => (js.Promise[HookContext[js.Any] | SkipSymbol | Unit]) | HookContext[js.Any] | SkipSymbol | Unit
+      inline def setBeforeFunction1(
+        value: /* hook */ HookContext[Any] => (js.Promise[HookContext[Any] | SkipSymbol | Unit]) | HookContext[Any] | SkipSymbol | Unit
       ): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeVarargs(value: Hook*): Self = StObject.set(x, "before", js.Array(value :_*))
+      inline def setBeforeVarargs(value: Hook*): Self = StObject.set(x, "before", js.Array(value*))
       
-      @scala.inline
-      def setError(value: PartialHookMap | Hook | js.Array[Hook]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: PartialHookMap | Hook | js.Array[Hook]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorFunction1(
-        value: /* hook */ HookContext[js.Any] => (js.Promise[HookContext[js.Any] | SkipSymbol | Unit]) | HookContext[js.Any] | SkipSymbol | Unit
+      inline def setErrorFunction1(
+        value: /* hook */ HookContext[Any] => (js.Promise[HookContext[Any] | SkipSymbol | Unit]) | HookContext[Any] | SkipSymbol | Unit
       ): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorVarargs(value: Hook*): Self = StObject.set(x, "error", js.Array(value :_*))
+      inline def setErrorVarargs(value: Hook*): Self = StObject.set(x, "error", js.Array(value*))
       
-      @scala.inline
-      def setFinally(value: PartialHookMap | Hook | js.Array[Hook]): Self = StObject.set(x, "finally", value.asInstanceOf[js.Any])
+      inline def setFinally(value: PartialHookMap | Hook | js.Array[Hook]): Self = StObject.set(x, "finally", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinallyFunction1(
-        value: /* hook */ HookContext[js.Any] => (js.Promise[HookContext[js.Any] | SkipSymbol | Unit]) | HookContext[js.Any] | SkipSymbol | Unit
+      inline def setFinallyFunction1(
+        value: /* hook */ HookContext[Any] => (js.Promise[HookContext[Any] | SkipSymbol | Unit]) | HookContext[Any] | SkipSymbol | Unit
       ): Self = StObject.set(x, "finally", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFinallyUndefined: Self = StObject.set(x, "finally", js.undefined)
+      inline def setFinallyUndefined: Self = StObject.set(x, "finally", js.undefined)
       
-      @scala.inline
-      def setFinallyVarargs(value: Hook*): Self = StObject.set(x, "finally", js.Array(value :_*))
+      inline def setFinallyVarargs(value: Hook*): Self = StObject.set(x, "finally", js.Array(value*))
     }
   }
   
@@ -465,109 +396,109 @@ object mod extends Shortcut {
   
   type NullableId = Id | Null
   
-  @js.native
   trait Paginated[T] extends StObject {
     
-    var data: js.Array[T] = js.native
+    var data: js.Array[T]
     
-    var limit: Double = js.native
+    var limit: Double
     
-    var skip: Double = js.native
+    var skip: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Paginated {
     
-    @scala.inline
-    def apply[T](data: js.Array[T], limit: Double, skip: Double, total: Double): Paginated[T] = {
+    inline def apply[T](data: js.Array[T], limit: Double, skip: Double, total: Double): Paginated[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Paginated[T]]
     }
     
-    @scala.inline
-    implicit class PaginatedMutableBuilder[Self <: Paginated[_], T] (val x: Self with Paginated[T]) extends AnyVal {
+    extension [Self <: Paginated[?], T](x: Self & Paginated[T]) {
       
-      @scala.inline
-      def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait PaginationOptions extends StObject {
     
-    var default: Double = js.native
+    var default: Double
     
-    var max: Double = js.native
+    var max: Double
   }
   object PaginationOptions {
     
-    @scala.inline
-    def apply(default: Double, max: Double): PaginationOptions = {
+    inline def apply(default: Double, max: Double): PaginationOptions = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationOptions]
     }
     
-    @scala.inline
-    implicit class PaginationOptionsMutableBuilder[Self <: PaginationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationOptions](x: Self) {
       
-      @scala.inline
-      def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Params
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[Any] {
     
-    var paginate: js.UndefOr[`false` | PickPaginationOptionsmax] = js.native
+    var paginate: js.UndefOr[`false` | PickPaginationOptionsmax] = js.undefined
     
-    var query: js.UndefOr[Query] = js.native
+    var query: js.UndefOr[Query] = js.undefined
   }
   object Params {
     
-    @scala.inline
-    def apply(): Params = {
+    inline def apply(): Params = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Params]
     }
     
-    @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+    extension [Self <: Params](x: Self) {
       
-      @scala.inline
-      def setPaginate(value: `false` | PickPaginationOptionsmax): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
+      inline def setPaginate(value: `false` | PickPaginationOptionsmax): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
+      inline def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
       
-      @scala.inline
-      def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
   
-  type Query = StringDictionary[js.Any]
+  type Query = StringDictionary[Any]
   
   type ServerSideParams = Params
   
-  type Service[T] = ServiceOverloads[T] with ServiceAddons[T] with ServiceMethods[T]
+  @js.native
+  trait Service[T]
+    extends ServiceAddons[T]
+       with ServiceOverloads[T]
+       with ServiceMethods[T] {
+    
+    /* InferMemberOverrides */
+    override def create(data: js.Array[Partial[T]]): (js.Promise[T | js.Array[T]]) & js.Promise[js.Array[T]] = js.native
+    /* InferMemberOverrides */
+    override def create(data: js.Array[Partial[T]], params: Params): (js.Promise[T | js.Array[T]]) & js.Promise[js.Array[T]] = js.native
+    /* InferMemberOverrides */
+    override def create(data: Partial[T]): (js.Promise[T | js.Array[T]]) & js.Promise[T] = js.native
+    /* InferMemberOverrides */
+    override def create(data: Partial[T], params: Params): (js.Promise[T | js.Array[T]]) & js.Promise[T] = js.native
+    
+    /* InferMemberOverrides */
+    override def patch(id: NullableId, data: Partial[T]): js.Promise[T] = js.native
+    /* InferMemberOverrides */
+    override def patch(id: NullableId, data: Partial[T], params: Params): js.Promise[T] = js.native
+  }
   
   @js.native
   trait ServiceAddons[T] extends EventEmitter {
@@ -612,24 +543,20 @@ object mod extends Shortcut {
     def patch(id: NullableId, data: Pick[T, /* keyof T */ String], params: Params): js.Promise[T] = js.native
   }
   
-  @js.native
   trait SetupMethod extends StObject {
     
-    def setup(app: Application[_], path: String): Unit = js.native
+    def setup(app: Application[Any], path: String): Unit
   }
   object SetupMethod {
     
-    @scala.inline
-    def apply(setup: (Application[_], String) => Unit): SetupMethod = {
+    inline def apply(setup: (Application[Any], String) => Unit): SetupMethod = {
       val __obj = js.Dynamic.literal(setup = js.Any.fromFunction2(setup))
       __obj.asInstanceOf[SetupMethod]
     }
     
-    @scala.inline
-    implicit class SetupMethodMutableBuilder[Self <: SetupMethod] (val x: Self) extends AnyVal {
+    extension [Self <: SetupMethod](x: Self) {
       
-      @scala.inline
-      def setSetup(value: (Application[_], String) => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction2(value))
+      inline def setSetup(value: (Application[Any], String) => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction2(value))
     }
   }
   

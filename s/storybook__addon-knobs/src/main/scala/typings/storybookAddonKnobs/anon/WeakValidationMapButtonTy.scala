@@ -1,8 +1,5 @@
 package typings.storybookAddonKnobs.anon
 
-import typings.react.mod.Validator
-import typings.storybookAddonKnobs.buttonMod.ButtonTypeKnob
-import typings.storybookAddonKnobs.buttonMod.ButtonTypeOnClickProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined react.react.WeakValidationMap<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeProps> */
 trait WeakValidationMapButtonTy extends StObject {
   
-  var knob: js.UndefOr[Validator[js.UndefOr[ButtonTypeKnob | Null]]] = js.undefined
-  
-  var onChange: js.UndefOr[
-    Validator[js.UndefOr[(js.Function1[/* value */ scala.Nothing, scala.Nothing]) | Null]]
+  var knob: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeKnob ? react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeKnob | null | undefined> : undefined extends @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeKnob ? react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeKnob | null | undefined> : react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeKnob> */ js.Any
   ] = js.undefined
   
-  var onClick: js.UndefOr[Validator[js.UndefOr[ButtonTypeOnClickProp | Null]]] = js.undefined
+  var onChange: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends (value : never): never ? react.react.Validator<(value : never): never | null | undefined> : undefined extends (value : never): never ? react.react.Validator<(value : never): never | null | undefined> : react.react.Validator<(value : never): never> */ js.Any
+  ] = js.undefined
+  
+  var onClick: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeOnClickProp ? react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeOnClickProp | null | undefined> : undefined extends @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeOnClickProp ? react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeOnClickProp | null | undefined> : react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeOnClickProp> */ js.Any
+  ] = js.undefined
 }
 object WeakValidationMapButtonTy {
   
@@ -27,15 +28,21 @@ object WeakValidationMapButtonTy {
   
   extension [Self <: WeakValidationMapButtonTy](x: Self) {
     
-    inline def setKnob(value: Validator[js.UndefOr[ButtonTypeKnob | Null]]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeKnob ? react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeKnob | null | undefined> : undefined extends @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeKnob ? react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeKnob | null | undefined> : react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeKnob> */ js.Any
+    ): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
     inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
-    inline def setOnChange(value: Validator[js.UndefOr[(js.Function1[/* value */ scala.Nothing, scala.Nothing]) | Null]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends (value : never): never ? react.react.Validator<(value : never): never | null | undefined> : undefined extends (value : never): never ? react.react.Validator<(value : never): never | null | undefined> : react.react.Validator<(value : never): never> */ js.Any
+    ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnClick(value: Validator[js.UndefOr[ButtonTypeOnClickProp | Null]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeOnClickProp ? react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeOnClickProp | null | undefined> : undefined extends @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeOnClickProp ? react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeOnClickProp | null | undefined> : react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeOnClickProp> */ js.Any
+    ): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }

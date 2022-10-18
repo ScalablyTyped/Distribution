@@ -1,6 +1,6 @@
 package typings.ahooks.anon
 
-import typings.ahooks.useEventTargetMod.EventTarget
+import typings.ahooks.libUseEventTargetMod.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

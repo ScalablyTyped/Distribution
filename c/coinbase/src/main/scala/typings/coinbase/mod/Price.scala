@@ -1,7 +1,7 @@
 package typings.coinbase.mod
 
 import typings.coinbase.anon.Amount
-import typings.coinbase.anon.Id
+import typings.coinbase.anon.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ trait Price extends StObject {
   
   var data: Amount
   
-  var warnings: js.UndefOr[js.Array[Id]] = js.undefined
+  var warnings: js.UndefOr[js.Array[Message]] = js.undefined
 }
 object Price {
   
@@ -23,10 +23,10 @@ object Price {
     
     inline def setData(value: Amount): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setWarnings(value: js.Array[Id]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[Message]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: Id*): Self = StObject.set(x, "warnings", js.Array(value*))
+    inline def setWarningsVarargs(value: Message*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

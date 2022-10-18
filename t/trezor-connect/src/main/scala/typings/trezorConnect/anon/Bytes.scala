@@ -1,6 +1,6 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.accountMod.PrecomposedTransaction
+import typings.trezorConnect.libTypescriptAccountMod.PrecomposedTransaction
 import typings.trezorConnect.trezorConnectStrings.nonfinal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

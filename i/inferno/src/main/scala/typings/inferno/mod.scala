@@ -2,15 +2,15 @@ package typings.inferno
 
 import typings.inferno.anon.Children
 import typings.inferno.anon.ReadonlychildrenInfernoNo
-import typings.inferno.typesMod.ForwardRef
-import typings.inferno.typesMod.Inferno.ComponentClass
-import typings.inferno.typesMod.Inferno.ExoticComponent
-import typings.inferno.typesMod.Inferno.InfernoNode
-import typings.inferno.typesMod.LinkedEvent
-import typings.inferno.typesMod.Ref
-import typings.inferno.typesMod.RefObject
-import typings.inferno.typesMod.Refs
-import typings.inferno.typesMod.VNode
+import typings.inferno.distCoreTypesMod.ForwardRef
+import typings.inferno.distCoreTypesMod.Inferno.ComponentClass
+import typings.inferno.distCoreTypesMod.Inferno.ExoticComponent
+import typings.inferno.distCoreTypesMod.Inferno.InfernoNode
+import typings.inferno.distCoreTypesMod.LinkedEvent
+import typings.inferno.distCoreTypesMod.Ref
+import typings.inferno.distCoreTypesMod.RefObject
+import typings.inferno.distCoreTypesMod.Refs
+import typings.inferno.distCoreTypesMod.VNode
 import typings.infernoVnodeFlags.mod.ChildFlags
 import typings.infernoVnodeFlags.mod.VNodeFlags
 import typings.std.DocumentFragment
@@ -33,12 +33,12 @@ object mod {
   @JSImport("inferno", "AnimationQueues")
   @js.native
   open class AnimationQueues ()
-    extends typings.inferno.commonMod.AnimationQueues
+    extends typings.inferno.distDomUtilsCommonMod.AnimationQueues
   
   @JSImport("inferno", "Component")
   @js.native
   open class Component[P, S] ()
-    extends typings.inferno.componentMod.Component[P, S] {
+    extends typings.inferno.distCoreComponentMod.Component[P, S] {
     def this(props: P) = this()
     def this(props: P, context: Any) = this()
     def this(props: Unit, context: Any) = this()
@@ -90,7 +90,7 @@ object mod {
     isSVG: Boolean,
     nextNode: Null,
     lifecycle: js.Array[js.Function],
-    animations: typings.inferno.commonMod.AnimationQueues
+    animations: typings.inferno.distDomUtilsCommonMod.AnimationQueues
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_M")(vNode.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], context.asInstanceOf[js.Any], isSVG.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], lifecycle.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def _M(
     vNode: VNode,
@@ -99,7 +99,7 @@ object mod {
     isSVG: Boolean,
     nextNode: Element,
     lifecycle: js.Array[js.Function],
-    animations: typings.inferno.commonMod.AnimationQueues
+    animations: typings.inferno.distDomUtilsCommonMod.AnimationQueues
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_M")(vNode.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], context.asInstanceOf[js.Any], isSVG.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], lifecycle.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def _M(
     vNode: VNode,
@@ -108,7 +108,7 @@ object mod {
     isSVG: Boolean,
     nextNode: Null,
     lifecycle: js.Array[js.Function],
-    animations: typings.inferno.commonMod.AnimationQueues
+    animations: typings.inferno.distDomUtilsCommonMod.AnimationQueues
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_M")(vNode.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], context.asInstanceOf[js.Any], isSVG.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], lifecycle.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def _M(
     vNode: VNode,
@@ -117,14 +117,14 @@ object mod {
     isSVG: Boolean,
     nextNode: Element,
     lifecycle: js.Array[js.Function],
-    animations: typings.inferno.commonMod.AnimationQueues
+    animations: typings.inferno.distDomUtilsCommonMod.AnimationQueues
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_M")(vNode.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], context.asInstanceOf[js.Any], isSVG.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], lifecycle.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def _MCCC(
     ref: Any,
     instance: Any,
     lifecycle: js.Array[js.Function],
-    animations: typings.inferno.commonMod.AnimationQueues
+    animations: typings.inferno.distDomUtilsCommonMod.AnimationQueues
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_MCCC")(ref.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], lifecycle.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def _ME(
@@ -134,7 +134,7 @@ object mod {
     isSVG: Boolean,
     nextNode: Null,
     lifecycle: js.Array[js.Function],
-    animations: typings.inferno.commonMod.AnimationQueues
+    animations: typings.inferno.distDomUtilsCommonMod.AnimationQueues
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_ME")(vNode.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], context.asInstanceOf[js.Any], isSVG.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], lifecycle.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def _ME(
     vNode: VNode,
@@ -143,7 +143,7 @@ object mod {
     isSVG: Boolean,
     nextNode: Element,
     lifecycle: js.Array[js.Function],
-    animations: typings.inferno.commonMod.AnimationQueues
+    animations: typings.inferno.distDomUtilsCommonMod.AnimationQueues
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_ME")(vNode.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], context.asInstanceOf[js.Any], isSVG.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], lifecycle.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def _ME(
     vNode: VNode,
@@ -152,7 +152,7 @@ object mod {
     isSVG: Boolean,
     nextNode: Null,
     lifecycle: js.Array[js.Function],
-    animations: typings.inferno.commonMod.AnimationQueues
+    animations: typings.inferno.distDomUtilsCommonMod.AnimationQueues
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_ME")(vNode.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], context.asInstanceOf[js.Any], isSVG.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], lifecycle.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def _ME(
     vNode: VNode,
@@ -161,13 +161,13 @@ object mod {
     isSVG: Boolean,
     nextNode: Element,
     lifecycle: js.Array[js.Function],
-    animations: typings.inferno.commonMod.AnimationQueues
+    animations: typings.inferno.distDomUtilsCommonMod.AnimationQueues
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_ME")(vNode.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], context.asInstanceOf[js.Any], isSVG.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], lifecycle.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def _MFCC(
     vNode: VNode,
     lifecycle: js.Array[js.Function],
-    animations: typings.inferno.commonMod.AnimationQueues
+    animations: typings.inferno.distDomUtilsCommonMod.AnimationQueues
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_MFCC")(vNode.asInstanceOf[js.Any], lifecycle.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def _MP(
@@ -176,7 +176,7 @@ object mod {
     props: Any,
     dom: Any,
     isSVG: Any,
-    animations: typings.inferno.commonMod.AnimationQueues
+    animations: typings.inferno.distDomUtilsCommonMod.AnimationQueues
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_MP")(vNode.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], props.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], isSVG.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def _MR(ref: Any, value: Any, lifecycle: js.Array[js.Function]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_MR")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any], lifecycle.asInstanceOf[js.Any])).asInstanceOf[Unit]

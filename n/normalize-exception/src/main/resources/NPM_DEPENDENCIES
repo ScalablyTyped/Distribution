@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "normalize-exception" : "2.5.1"
+      "normalize-exception" : "2.8.1"
     }
   ],
   "test-dependencies" : [
     {
-      "normalize-exception" : "2.5.1"
+      "normalize-exception" : "2.8.1"
     }
   ],
   "compile-devDependencies" : [

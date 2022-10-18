@@ -1,9 +1,9 @@
 package typings.storybookAddonKnobs.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.storybookAddonKnobs.dateMod.DateTypeKnobValue
-import typings.storybookAddonKnobs.dateMod.DateTypeProps
-import typings.storybookAddonKnobs.dateMod.default
+import typings.storybookAddonKnobs.distComponentsTypesDateMod.DateTypeKnobValue
+import typings.storybookAddonKnobs.distComponentsTypesDateMod.DateTypeProps
+import typings.storybookAddonKnobs.distComponentsTypesDateMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

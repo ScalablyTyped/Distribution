@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @remarks
   *
-  * **Hosts**: Word
+  * **Applications**: Word
   */
 @js.native
 trait CustomXmlParts extends StObject {
@@ -37,7 +37,7 @@ trait CustomXmlParts extends StObject {
   ): Unit = js.native
   
   /**
-    * Asynchronously gets the specified custom XML part by its id.
+    * Asynchronously gets the specified custom XML part by its ID.
     *
     * @remarks
     *
@@ -47,7 +47,7 @@ trait CustomXmlParts extends StObject {
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is a CustomXmlPart object that represents the specified custom XML part.
-    *                  If there is no custom XML part with the specified id, the method returns null.
+    *                  If there is no custom XML part with the specified ID, the method returns null.
     */
   def getByIdAsync(id: String): Unit = js.native
   def getByIdAsync(id: String, callback: js.Function1[/* result */ AsyncResult[CustomXmlPart], Unit]): Unit = js.native
@@ -60,7 +60,7 @@ trait CustomXmlParts extends StObject {
   ): Unit = js.native
   
   /**
-    * Asynchronously gets the specified custom XML part(s) by its namespace.
+    * Asynchronously gets the specified custom XML parts by its namespace.
     *
     * @remarks
     *

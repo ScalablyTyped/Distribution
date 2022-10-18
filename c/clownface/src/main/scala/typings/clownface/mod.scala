@@ -1,7 +1,7 @@
 package typings.clownface
 
 import typings.clownface.anon.ToString
-import typings.clownface.contextMod.Context
+import typings.clownface.libContextMod.Context
 import typings.rdfjsTypes.dataModelMod.BlankNode
 import typings.rdfjsTypes.dataModelMod.Literal
 import typings.rdfjsTypes.dataModelMod.NamedNode
@@ -117,8 +117,14 @@ object mod {
     def has(predicates: SingleOrArrayOfTerms[Term]): AnyPointer[js.Array[NamedNode[String] | BlankNode], D] = js.native
     def has(predicates: SingleOrArrayOfTerms[Term], objects: SingleOrArrayOfTermsOrLiterals[Term]): AnyPointer[js.Array[NamedNode[String] | BlankNode], D] = js.native
     
-    def in(): MultiPointer[NamedNode[String] | BlankNode, D] = js.native
-    def in(predicates: SingleOrArrayOfTerms[Term]): MultiPointer[NamedNode[String] | BlankNode, D] = js.native
+    def in(): MultiPointer[
+        /* import warning: importer.ImportType#apply Failed type conversion: T extends undefined ? never : @rdfjs/types.@rdfjs/types/data-model.NamedNode<string> | @rdfjs/types.@rdfjs/types/data-model.BlankNode */ js.Any, 
+        D
+      ] = js.native
+    def in(predicates: SingleOrArrayOfTerms[Term]): MultiPointer[
+        /* import warning: importer.ImportType#apply Failed type conversion: T extends undefined ? never : @rdfjs/types.@rdfjs/types/data-model.NamedNode<string> | @rdfjs/types.@rdfjs/types/data-model.BlankNode */ js.Any, 
+        D
+      ] = js.native
     
     def isList(): Boolean = js.native
     
@@ -176,24 +182,32 @@ object mod {
     @JSName("node")
     def node_X_MultiPointer[X /* <: Term */](value: js.Iterable[GraphPointer[X, D]], options: NodeOptions): MultiPointer[X, D] = js.native
     
-    def out(): MultiPointer[Term, D] = js.native
-    def out(predicates: Unit, options: OutOptions): MultiPointer[Literal, D] = js.native
-    def out(predicates: SingleOrArrayOfTerms[Term]): MultiPointer[Term, D] = js.native
-    def out(predicates: SingleOrArrayOfTerms[Term], options: OutOptions): MultiPointer[Literal, D] = js.native
-    
-    val term: js.UndefOr[
-        T | (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any)
+    def out(): MultiPointer[
+        /* import warning: importer.ImportType#apply Failed type conversion: T extends undefined ? never : @rdfjs/types.@rdfjs/types/data-model.Term */ js.Any, 
+        D
+      ] = js.native
+    def out(predicates: Unit, options: OutOptions): MultiPointer[
+        /* import warning: importer.ImportType#apply Failed type conversion: T extends undefined ? never : @rdfjs/types.@rdfjs/types/data-model.Literal */ js.Any, 
+        D
+      ] = js.native
+    def out(predicates: SingleOrArrayOfTerms[Term]): MultiPointer[
+        /* import warning: importer.ImportType#apply Failed type conversion: T extends undefined ? never : @rdfjs/types.@rdfjs/types/data-model.Term */ js.Any, 
+        D
+      ] = js.native
+    def out(predicates: SingleOrArrayOfTerms[Term], options: OutOptions): MultiPointer[
+        /* import warning: importer.ImportType#apply Failed type conversion: T extends undefined ? never : @rdfjs/types.@rdfjs/types/data-model.Literal */ js.Any, 
+        D
       ] = js.native
     
-    val terms: (js.Array[T | Term]) | T = js.native
+    val term: /* import warning: importer.ImportType#apply Failed type conversion: T extends undefined ? undefined : T extends std.Array<any> ? undefined | T[0] : T */ js.Any = js.native
+    
+    val terms: /* import warning: importer.ImportType#apply Failed type conversion: T extends undefined ? std.Array<@rdfjs/types.@rdfjs/types/data-model.Term> : T extends std.Array<any> ? T : [T] */ js.Any = js.native
     
     def toArray(): js.Array[AnyPointer[ExtractContext[T], D]] = js.native
     
-    val value: js.UndefOr[
-        String | (/* import warning: importer.ImportType#apply Failed type conversion: string[0] */ js.Any)
-      ] = js.native
+    val value: /* import warning: importer.ImportType#apply Failed type conversion: T extends undefined ? undefined : T extends std.Array<any> ? undefined | string[0] : string */ js.Any = js.native
     
-    val values: js.Array[String] = js.native
+    val values: /* import warning: importer.ImportType#apply Failed type conversion: T extends undefined ? std.Array<string> : T extends std.Array<any> ? std.Array<string> : [string] */ js.Any = js.native
   }
   
   /* Inlined std.Partial<std.Pick<clownface.clownface.AnyPointer<clownface.clownface.AnyContext, D>, 'dataset' | '_context'> & {  graph :rdf-js.rdf-js.Quad_Graph}> */
@@ -346,7 +360,15 @@ object mod {
     }
   }
   
-  type ExtractContext[T /* <: AnyContext */] = T | (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends undefined ? never : T extends std.Array<any> ? T[0] : T
+    }}}
+    */
+  @js.native
+  trait ExtractContext[T /* <: AnyContext */] extends StObject
   
   type FilterCallback[T /* <: AnyContext */, D /* <: DatasetCore[Quad, Quad] */, S /* <: T */] = js.Function3[
     /* ptr */ Iteratee[T, D], 
@@ -357,10 +379,15 @@ object mod {
   
   type GraphPointer[T /* <: Term */, D /* <: DatasetCore[Quad, Quad] */] = AnyPointer[T, D]
   
-  type Iteratee[T /* <: AnyContext */, D /* <: DatasetCore[Quad, Quad] */] = AnyPointer[
-    (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any) | T, 
-    D
-  ]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends undefined ? never : T extends std.Array<any> ? clownface.clownface.AnyPointer<T[0], D> : clownface.clownface.AnyPointer<T, D>
+    }}}
+    */
+  @js.native
+  trait Iteratee[T /* <: AnyContext */, D /* <: DatasetCore[Quad, Quad] */] extends StObject
   
   @js.native
   trait ListPointer[T /* <: Term */, D /* <: DatasetCore[Quad, Quad] */]
@@ -425,10 +452,15 @@ object mod {
     }
   }
   
-  type Predicate[T /* <: AnyContext */, D /* <: DatasetCore[Quad, Quad] */] = Iteratee[
-    (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any) | T, 
-    D
-  ]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends undefined ? never : T extends std.Array<any> ? clownface.clownface.Iteratee<T[0], D> : clownface.clownface.Iteratee<T, D>
+    }}}
+    */
+  @js.native
+  trait Predicate[T /* <: AnyContext */, D /* <: DatasetCore[Quad, Quad] */] extends StObject
   
   type SingleOrArray[T] = T | js.Array[T]
   

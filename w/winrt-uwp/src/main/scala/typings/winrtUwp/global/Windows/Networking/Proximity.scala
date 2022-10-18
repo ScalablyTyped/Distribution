@@ -20,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Proximity {
   
   /** Contains properties that are passed to an application with the ConnectionRequested event. */
-  @JSGlobal("Windows.Networking.Proximity.ConnectionRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Proximity.ConnectionRequestedEventArgs")
   @js.native
-  abstract class ConnectionRequestedEventArgs ()
+  open class ConnectionRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Proximity.ConnectionRequestedEventArgs {
     
@@ -47,9 +47,9 @@ object Proximity {
   }
   
   /** Enables you to discover other instances of your app on nearby devices and create a socket connection between the peer apps by using a tap gesture or by browsing. For creating Bluetooth socket connections on Windows 8.1 and later, use Windows.Devices.Bluetooth.Rfcomm instead. */
-  @JSGlobal("Windows.Networking.Proximity.PeerFinder")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Proximity.PeerFinder")
   @js.native
-  abstract class PeerFinder ()
+  open class PeerFinder ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Proximity.PeerFinder
   object PeerFinder {
@@ -212,9 +212,9 @@ object Proximity {
   }
   
   /** Contains information that identifies a peer. */
-  @JSGlobal("Windows.Networking.Proximity.PeerInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Proximity.PeerInformation")
   @js.native
-  abstract class PeerInformation ()
+  open class PeerInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Proximity.PeerInformation {
     
@@ -255,9 +255,9 @@ object Proximity {
   }
   
   /** Dynamically discovers peer apps within wireless range. */
-  @JSGlobal("Windows.Networking.Proximity.PeerWatcher")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Proximity.PeerWatcher")
   @js.native
-  abstract class PeerWatcher ()
+  open class PeerWatcher ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Proximity.PeerWatcher
   
@@ -283,9 +283,9 @@ object Proximity {
   }
   
   /** Enables you to publish messages to proximate devices or subscribe to messages from proximate devices. */
-  @JSGlobal("Windows.Networking.Proximity.ProximityDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Proximity.ProximityDevice")
   @js.native
-  abstract class ProximityDevice ()
+  open class ProximityDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Proximity.ProximityDevice
   object ProximityDevice {
@@ -318,9 +318,9 @@ object Proximity {
   }
   
   /** Represents a message that's received from a subscription. */
-  @JSGlobal("Windows.Networking.Proximity.ProximityMessage")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Proximity.ProximityMessage")
   @js.native
-  abstract class ProximityMessage ()
+  open class ProximityMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Proximity.ProximityMessage {
     
@@ -363,9 +363,9 @@ object Proximity {
   }
   
   /** Contains properties that the TriggeredConnectionStateChanged event passes to an application. */
-  @JSGlobal("Windows.Networking.Proximity.TriggeredConnectionStateChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Proximity.TriggeredConnectionStateChangedEventArgs")
   @js.native
-  abstract class TriggeredConnectionStateChangedEventArgs ()
+  open class TriggeredConnectionStateChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Proximity.TriggeredConnectionStateChangedEventArgs {
     

@@ -4,7 +4,7 @@ import typings.materialUiCore.anon.PartialFilledInputProps
 import typings.materialUiCore.anon.PartialInputProps
 import typings.materialUiCore.anon.PartialOutlinedInputProps
 import typings.materialUiCore.anon.PartialSelectPropsAbout
-import typings.materialUiCore.anon.Style
+import typings.materialUiCore.anon.Ref
 import typings.materialUiCore.formControlFormControlMod.FormControlProps
 import typings.materialUiCore.formHelperTextFormHelperTextMod.FormHelperTextProps
 import typings.materialUiCore.inputBaseInputBaseMod.InputBaseComponentProps
@@ -27,7 +27,6 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.ReactNode
-import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
@@ -48,7 +47,7 @@ object textFieldTextFieldMod {
   - Dropped @material-ui/core.@material-ui/core/FormControl/FormControl.FormControlProps<'div', {}> extends any ? std.Pick<@material-ui/core.@material-ui/core/FormControl/FormControl.FormControlProps<'div', {}>, std.Exclude<keyof @material-ui/core.@material-ui/core/FormControl/FormControl.FormControlProps<'div', {}>, 'classes' | 'onChange' | 'onBlur' | 'onFocus' | 'defaultValue'>> : never */ trait BaseTextFieldProps
     extends StObject
        with StyledComponentProps[TextFieldClassKey]
-       with Style[FormControlProps[div, js.Object]] {
+       with Ref[FormControlProps[div, js.Object]] {
     
     /**
       * Props applied to the [`FormHelperText`](/api/form-helper-text/) element.
@@ -125,7 +124,7 @@ object textFieldTextFieldMod {
     /**
       * Pass a ref to the `input` element.
       */
-    var inputRef: js.UndefOr[Ref[Any]] = js.undefined
+    var inputRef: js.UndefOr[typings.react.mod.Ref[Any]] = js.undefined
     
     /**
       * The label content.
@@ -257,7 +256,7 @@ object textFieldTextFieldMod {
       
       inline def setInputLabelPropsUndefined: Self = StObject.set(x, "InputLabelProps", js.undefined)
       
-      inline def setInputRef(value: Ref[Any]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      inline def setInputRef(value: typings.react.mod.Ref[Any]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
       
       inline def setInputRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       

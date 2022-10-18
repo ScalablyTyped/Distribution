@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsEyeTwoToneMod.EyeTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eyeTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/EyeTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/EyeTwoTone", JSImport.Default)
   @js.native
   val default: EyeTwoToneIconType = js.native
-  
-  @js.native
-  trait EyeTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_EyeTwoToneIconType: String = js.native
-  }
   
   type _To = EyeTwoToneIconType
   

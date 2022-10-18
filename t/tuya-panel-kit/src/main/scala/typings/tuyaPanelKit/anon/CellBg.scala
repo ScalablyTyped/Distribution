@@ -18,8 +18,6 @@ trait CellBg extends StObject {
   
   var fontColor: js.UndefOr[String] = js.undefined
   
-  var iconColor: js.UndefOr[String] = js.undefined
-  
   var margin: js.UndefOr[js.Array[Double] | Double] = js.undefined
   
   var padding: js.UndefOr[js.Array[Double] | Double] = js.undefined
@@ -58,10 +56,6 @@ object CellBg {
     inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     inline def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
-    
-    inline def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
-    
-    inline def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
     
     inline def setMargin(value: js.Array[Double] | Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     

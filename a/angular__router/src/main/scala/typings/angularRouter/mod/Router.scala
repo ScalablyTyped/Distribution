@@ -16,6 +16,7 @@ import typings.angularRouter.angularRouterStrings.ignore
 import typings.angularRouter.angularRouterStrings.legacy
 import typings.angularRouter.angularRouterStrings.reload
 import typings.angularRouter.angularRouterStrings.replace
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -192,7 +193,7 @@ open class Router protected () extends StObject {
   /**
     * An event stream for routing events in this NgModule.
     */
-  val events: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Event_2> */ Any = js.native
+  val events: Observable_[Event2] = js.native
   
   /* private */ var generateNgRouterState: Any = js.native
   

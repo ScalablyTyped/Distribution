@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object resourceLoaderStrings {
   
   @js.native
-  sealed trait Overwrite extends StObject
-  inline def Overwrite: Overwrite = "Overwrite".asInstanceOf[Overwrite]
-  
-  @js.native
   sealed trait audio extends StObject
   inline def audio: audio = "audio".asInstanceOf[audio]
   

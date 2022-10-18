@@ -1,6 +1,5 @@
 package typings.materialBase
 
-import org.scalablytyped.runtime.TopLevel
 import typings.materialBase.typesMod.Constructor
 import typings.std.TypedPropertyDescriptor
 import org.scalablytyped.runtime.StObject
@@ -88,7 +87,13 @@ object observerMod {
     Unit
   ]
   
-  type ObserverRecord[T /* <: js.Object */, This] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? @material/base.@material/base/observer.Observer<T, K, This>}
-    */ typings.materialBase.materialBaseStrings.ObserverRecord & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]:? @material/base.@material/base/observer.Observer<T, K, This>}
+    }}}
+    */
+  @js.native
+  trait ObserverRecord[T /* <: js.Object */, This] extends StObject
 }

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [region] - The region of the trigger.
   */
 open class Trigger ()
-  extends typings.yuka.yukaMod.Trigger {
-  def this(region: typings.yuka.triggerRegionMod.TriggerRegion) = this()
+  extends typings.yuka.srcYukaMod.Trigger {
+  def this(region: typings.yuka.srcTriggerTriggerRegionMod.TriggerRegion) = this()
 }

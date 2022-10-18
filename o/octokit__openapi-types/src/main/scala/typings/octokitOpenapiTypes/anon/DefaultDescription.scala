@@ -10,7 +10,7 @@ trait DefaultDescription extends StObject {
   
   var color: String
   
-  var description: String
+  var description: String | Null
   
   /** Format: int64 */
   var id: Double
@@ -23,16 +23,8 @@ trait DefaultDescription extends StObject {
 }
 object DefaultDescription {
   
-  inline def apply(
-    color: String,
-    default: Boolean,
-    description: String,
-    id: Double,
-    name: String,
-    node_id: String,
-    url: String
-  ): DefaultDescription = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def apply(color: String, default: Boolean, id: Double, name: String, node_id: String, url: String): DefaultDescription = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], description = null)
     __obj.asInstanceOf[DefaultDescription]
   }
   
@@ -43,6 +35,8 @@ object DefaultDescription {
     inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -1,11 +1,11 @@
 package typings.vuex
 
-import typings.vuex.loggerMod.LoggerOption
 import typings.vuex.mod.ActionTree
 import typings.vuex.mod.GetterTree
 import typings.vuex.mod.ModuleTree
 import typings.vuex.mod.MutationTree
 import typings.vuex.mod.Plugin
+import typings.vuex.typesLoggerMod.LoggerOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates that the interface contains protected methods. */
-@JSGlobal("Windows.Foundation.Metadata.ProtectedAttribute")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.Metadata.ProtectedAttribute")
 @js.native
-abstract class ProtectedAttribute ()
+open class ProtectedAttribute ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Metadata.ProtectedAttribute

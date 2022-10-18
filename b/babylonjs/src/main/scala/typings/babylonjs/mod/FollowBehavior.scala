@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "FollowBehavior")
 @js.native
 open class FollowBehavior ()
-  extends typings.babylonjs.legacyMod.FollowBehavior
+  extends typings.babylonjs.legacyLegacyMod.FollowBehavior

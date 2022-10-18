@@ -6,34 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreatedatId extends StObject {
   
-  /** @example 2011-01-26T19:01:12Z */
-  var created_at: js.UndefOr[String] = js.undefined
+  /** Format: date-time */
+  var created_at: String
   
-  /** @example 2 */
-  var id: js.UndefOr[Double] = js.undefined
+  var id: Double
   
-  /**
-    * @description The Base64 encoded public key.
-    * @example hBT5WZEj8ZoOv6TYJsfWq7MxTEQopZO5/IT3ZCVQPzs=
-    */
   var key: String
   
-  /**
-    * @description The identifier for the key.
-    * @example 1234567
-    */
-  var key_id: String
-  
-  /** @example ssh-rsa AAAAB3NzaC1yc2EAAA */
-  var title: js.UndefOr[String] = js.undefined
-  
-  /** @example https://api.github.com/user/keys/2 */
-  var url: js.UndefOr[String] = js.undefined
+  var title: String
 }
 object CreatedatId {
   
-  inline def apply(key: String, key_id: String): CreatedatId = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], key_id = key_id.asInstanceOf[js.Any])
+  inline def apply(created_at: String, id: Double, key: String, title: String): CreatedatId = {
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatedatId]
   }
   
@@ -41,22 +26,10 @@ object CreatedatId {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
-    
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setKey_id(value: String): Self = StObject.set(x, "key_id", value.asInstanceOf[js.Any])
-    
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-    
-    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-    
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    
-    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a value whose properties derive from a service.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait LinkedEntityCellValue extends StObject {
   
@@ -24,8 +23,7 @@ trait LinkedEntityCellValue extends StObject {
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: js.UndefOr[error | Error] = js.undefined
   
@@ -35,8 +33,7 @@ trait LinkedEntityCellValue extends StObject {
     * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: js.UndefOr[NumbersignVALUEExclamationmark | String] = js.undefined
   
@@ -45,8 +42,7 @@ trait LinkedEntityCellValue extends StObject {
     * If the `CardLayout` object doesn't have a layout property, it default value is "Entity".
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var cardLayout: js.UndefOr[CardLayout] = js.undefined
   
@@ -54,8 +50,7 @@ trait LinkedEntityCellValue extends StObject {
     * Represents the service source that provided the information in this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var id: LinkedEntityId
   
@@ -63,8 +58,7 @@ trait LinkedEntityCellValue extends StObject {
     * Represents the properties of this linked entity and their metadata.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var properties: js.UndefOr[StringDictionary[CellValue & PropertyMetadata]] = js.undefined
   
@@ -73,8 +67,7 @@ trait LinkedEntityCellValue extends StObject {
     * This information can be used for branding in entity cards.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var provider: js.UndefOr[CellValueProviderAttributes] = js.undefined
   
@@ -82,8 +75,7 @@ trait LinkedEntityCellValue extends StObject {
     * Represents the text shown when a cell with this value is rendered.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var text: js.UndefOr[String] = js.undefined
   
@@ -91,8 +83,7 @@ trait LinkedEntityCellValue extends StObject {
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: linkedEntity | LinkedEntity
 }

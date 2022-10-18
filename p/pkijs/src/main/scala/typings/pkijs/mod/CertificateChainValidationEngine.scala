@@ -26,14 +26,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * const chain = await chainEngine.verify();
   * ```
   */
-@JSImport("pkijs", "CertificateChainValidationEngine")
 @js.native
-/**
-  * Constructor for CertificateChainValidationEngine class
-  * @param parameters
-  */
-open class CertificateChainValidationEngine () extends StObject {
-  def this(parameters: CertificateChainValidationEngineParameters) = this()
+trait CertificateChainValidationEngine extends StObject {
   
   /**
     * Array with certificate chain. Could be only one end-user certificate in there!
@@ -120,13 +114,4 @@ open class CertificateChainValidationEngine () extends StObject {
   def verify(parameters: Unit, crypto: ICryptoEngine): js.Promise[CertificateChainValidationEngineVerifyResult] = js.native
   def verify(parameters: CertificateChainValidationEngineVerifyParams): js.Promise[CertificateChainValidationEngineVerifyResult] = js.native
   def verify(parameters: CertificateChainValidationEngineVerifyParams, crypto: ICryptoEngine): js.Promise[CertificateChainValidationEngineVerifyResult] = js.native
-}
-object CertificateChainValidationEngine {
-  
-  @JSImport("pkijs", "CertificateChainValidationEngine")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
-  inline def defaultFindOrigin(certificate: Certificate, validationEngine: CertificateChainValidationEngine): String = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultFindOrigin")(certificate.asInstanceOf[js.Any], validationEngine.asInstanceOf[js.Any])).asInstanceOf[String]
 }

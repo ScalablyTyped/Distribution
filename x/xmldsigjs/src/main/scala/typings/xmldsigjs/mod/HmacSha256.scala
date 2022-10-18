@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xmldsigjs", "HmacSha256")
 @js.native
 open class HmacSha256 ()
-  extends typings.xmldsigjs.algorithmsMod.HmacSha256
+  extends typings.xmldsigjs.buildTypesAlgorithmsMod.HmacSha256

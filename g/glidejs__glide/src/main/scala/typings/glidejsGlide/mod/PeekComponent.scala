@@ -1,6 +1,6 @@
 package typings.glidejsGlide.mod
 
-import typings.glidejsGlide.anon.After
+import typings.glidejsGlide.anon.Before
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,11 +23,11 @@ trait PeekComponent
   /**
     * Holds value of a peeking.
     */
-  var value: Double | After
+  var value: Double | Before
 }
 object PeekComponent {
   
-  inline def apply(mount: () => Unit, reductor: Double, value: Double | After): PeekComponent = {
+  inline def apply(mount: () => Unit, reductor: Double, value: Double | Before): PeekComponent = {
     val __obj = js.Dynamic.literal(mount = js.Any.fromFunction0(mount), reductor = reductor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeekComponent]
   }
@@ -38,6 +38,6 @@ object PeekComponent {
     
     inline def setReductor(value: Double): Self = StObject.set(x, "reductor", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: Double | After): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | Before): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

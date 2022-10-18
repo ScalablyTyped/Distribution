@@ -1,6 +1,6 @@
 package typings.ajv.anon
 
-import typings.ajv.jsonSchemaMod.UncheckedPartialSchema
+import typings.ajv.distTypesJsonSchemaMod.UncheckedPartialSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

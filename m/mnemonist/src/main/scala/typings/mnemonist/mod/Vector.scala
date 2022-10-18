@@ -1,7 +1,7 @@
 package typings.mnemonist.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mnemonist.typesMod.IArrayLikeConstructor
+import typings.mnemonist.utilsTypesMod.IArrayLikeConstructor
 import typings.mnemonist.vectorMod.VectorOptions
 import typings.mnemonist.vectorMod.default
 import org.scalablytyped.runtime.StObject

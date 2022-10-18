@@ -1,12 +1,12 @@
 package typings.reactNativeSvg.anon
 
-import typings.reactNativeSvg.reactNativeSVGWebMod.BlurEvent
-import typings.reactNativeSvg.reactNativeSVGWebMod.EdgeInsetsProp
-import typings.reactNativeSvg.reactNativeSVGWebMod.FocusEvent
-import typings.reactNativeSvg.reactNativeSVGWebMod.LayoutEvent
-import typings.reactNativeSvg.reactNativeSVGWebMod.PressEvent
-import typings.reactNativeSvg.typesMod.NumberArray
-import typings.reactNativeSvg.typesMod.NumberProp
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberArray
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
+import typings.reactNativeSvg.libTypescriptReactNativeSVGDotwebMod.BlurEvent
+import typings.reactNativeSvg.libTypescriptReactNativeSVGDotwebMod.EdgeInsetsProp
+import typings.reactNativeSvg.libTypescriptReactNativeSVGDotwebMod.FocusEvent
+import typings.reactNativeSvg.libTypescriptReactNativeSVGDotwebMod.LayoutEvent
+import typings.reactNativeSvg.libTypescriptReactNativeSVGDotwebMod.PressEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

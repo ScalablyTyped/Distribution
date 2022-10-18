@@ -1,0 +1,9 @@
+package typings.dcpClient.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("dcp-client", "JobHandle")
+@js.native
+open class JobHandle () extends Job

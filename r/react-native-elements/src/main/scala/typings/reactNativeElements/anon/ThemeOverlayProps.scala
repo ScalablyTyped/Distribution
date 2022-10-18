@@ -16,7 +16,8 @@ import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.inputMod.InputProps
+import typings.reactNativeElements.distInputInputMod.InputProps
+import typings.reactNativeElements.distSearchbarSearchBarMod.SearchBarProps
 import typings.reactNativeElements.reactNativeElementsStrings.`box-none`
 import typings.reactNativeElements.reactNativeElementsStrings.`box-only`
 import typings.reactNativeElements.reactNativeElementsStrings.`landscape-left`
@@ -37,7 +38,6 @@ import typings.reactNativeElements.reactNativeElementsStrings.polite
 import typings.reactNativeElements.reactNativeElementsStrings.portrait
 import typings.reactNativeElements.reactNativeElementsStrings.slide
 import typings.reactNativeElements.reactNativeElementsStrings.yes
-import typings.reactNativeElements.searchBarMod.SearchBarProps
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

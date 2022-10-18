@@ -1,8 +1,8 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.emrMod.ClusterId
-import typings.awsSdk.emrMod.StepId
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsEmrMod.ClusterId
+import typings.awsSdk.clientsEmrMod.StepId
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,12 +16,12 @@ trait DescribeStepInputwaiterWa extends StObject {
   /**
     * The identifier of the cluster with steps to describe.
     */
-  var ClusterId: typings.awsSdk.emrMod.ClusterId
+  var ClusterId: typings.awsSdk.clientsEmrMod.ClusterId
   
   /**
     * The identifier of the step to describe.
     */
-  var StepId: typings.awsSdk.emrMod.StepId
+  var StepId: typings.awsSdk.clientsEmrMod.StepId
 }
 object DescribeStepInputwaiterWa {
   

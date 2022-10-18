@@ -3,8 +3,8 @@ package typings.reduxPersist
 import typings.redux.mod.Action
 import typings.redux.mod.Reducer
 import typings.redux.mod.ReducersMapObject
-import typings.reduxPersist.persistReducerMod.PersistPartial
-import typings.reduxPersist.typesMod.PersistConfig
+import typings.reduxPersist.esPersistReducerMod.PersistPartial
+import typings.reduxPersist.esTypesMod.PersistConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

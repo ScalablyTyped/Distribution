@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialPieOptions
-import typings.antvG2plot.pieTypesMod.PieOptions
+import typings.antvG2plot.libPlotsPieTypesMod.PieOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Pie")
 @js.native
 open class Pie protected ()
-  extends typings.antvG2plot.pieMod.Pie {
+  extends typings.antvG2plot.libPlotsPieMod.Pie {
   def this(container: String, options: PieOptions) = this()
   def this(container: HTMLElement, options: PieOptions) = this()
 }

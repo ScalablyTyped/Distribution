@@ -6,42 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Protected extends StObject {
   
-  /** Page number of the results to fetch. */
-  var page: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
-  ] = js.undefined
+  var commit: Sha
   
-  /** The number of results per page (max 100). */
-  var per_page: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
-  ] = js.undefined
+  var name: String
   
-  /** Setting to `true` returns only protected branches. When set to `false`, only unprotected branches are returned. Omitting this parameter returns all branches. */
-  var `protected`: js.UndefOr[Boolean] = js.undefined
+  var `protected`: Boolean
 }
 object Protected {
   
-  inline def apply(): Protected = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(commit: Sha, name: String, `protected`: Boolean): Protected = {
+    val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Protected]
   }
   
   extension [Self <: Protected](x: Self) {
     
-    inline def setPage(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
-    ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setCommit(value: Sha): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
-    
-    inline def setPer_page(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
-    ): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
-    
-    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
-    
-    inline def setProtectedUndefined: Self = StObject.set(x, "protected", js.undefined)
   }
 }

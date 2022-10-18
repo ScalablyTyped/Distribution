@@ -1,6 +1,6 @@
 package typings.jestWorker.mod
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +11,9 @@ trait WorkerPoolInterface extends StObject {
   
   def end(): js.Promise[PoolExitResult]
   
-  def getStderr(): ReadableStream[Any]
+  def getStderr(): ReadableStream
   
-  def getStdout(): ReadableStream[Any]
+  def getStdout(): ReadableStream
   
   def getWorkers(): js.Array[WorkerInterface]
   
@@ -32,8 +32,8 @@ object WorkerPoolInterface {
   inline def apply(
     createWorker: WorkerOptions2 => WorkerInterface,
     end: () => js.Promise[PoolExitResult],
-    getStderr: () => ReadableStream[Any],
-    getStdout: () => ReadableStream[Any],
+    getStderr: () => ReadableStream,
+    getStdout: () => ReadableStream,
     getWorkers: () => js.Array[WorkerInterface],
     send: (/* workerId */ Double, /* request */ ChildMessage, /* onStart */ OnStart, /* onEnd */ OnEnd, /* onCustomMessage */ OnCustomMessage) => Unit
   ): WorkerPoolInterface = {
@@ -47,9 +47,9 @@ object WorkerPoolInterface {
     
     inline def setEnd(value: () => js.Promise[PoolExitResult]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    inline def setGetStderr(value: () => ReadableStream[Any]): Self = StObject.set(x, "getStderr", js.Any.fromFunction0(value))
+    inline def setGetStderr(value: () => ReadableStream): Self = StObject.set(x, "getStderr", js.Any.fromFunction0(value))
     
-    inline def setGetStdout(value: () => ReadableStream[Any]): Self = StObject.set(x, "getStdout", js.Any.fromFunction0(value))
+    inline def setGetStdout(value: () => ReadableStream): Self = StObject.set(x, "getStdout", js.Any.fromFunction0(value))
     
     inline def setGetWorkers(value: () => js.Array[WorkerInterface]): Self = StObject.set(x, "getWorkers", js.Any.fromFunction0(value))
     

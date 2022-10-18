@@ -1,6 +1,6 @@
 package typings.tslint.anon
 
-import typings.tslint.ruleMod.RuleSeverity
+import typings.tslint.libLanguageRuleRuleMod.RuleSeverity
 import typings.tslint.tslintStrings.default
 import typings.tslint.tslintStrings.none
 import typings.tslint.tslintStrings.warn

@@ -174,8 +174,15 @@ trait Assert extends StObject {
     * @param needle   Potential subset of the haystack's properties.
     * @param message   Message to display on error.
     */
-  def deepInclude[T](haystack: T, needle: Partial[T]): Unit = js.native
-  def deepInclude[T](haystack: T, needle: Partial[T], message: String): Unit = js.native
+  def deepInclude[T](
+    haystack: T,
+    needle: /* import warning: importer.ImportType#apply Failed type conversion: T extends std.WeakSet<any> ? never : std.Partial<T> */ js.Any
+  ): Unit = js.native
+  def deepInclude[T](
+    haystack: T,
+    needle: /* import warning: importer.ImportType#apply Failed type conversion: T extends std.WeakSet<any> ? never : std.Partial<T> */ js.Any,
+    message: String
+  ): Unit = js.native
   /**
     * Asserts that haystack includes needle. Deep equality is used.
     *
@@ -1142,8 +1149,15 @@ trait Assert extends StObject {
     * @param needle   Potential subset of the haystack's properties.
     * @param message   Message to display on error.
     */
-  def notDeepInclude[T](haystack: T, needle: Partial[T]): Unit = js.native
-  def notDeepInclude[T](haystack: T, needle: Partial[T], message: String): Unit = js.native
+  def notDeepInclude[T](
+    haystack: T,
+    needle: /* import warning: importer.ImportType#apply Failed type conversion: T extends std.WeakSet<any> ? never : std.Partial<T> */ js.Any
+  ): Unit = js.native
+  def notDeepInclude[T](
+    haystack: T,
+    needle: /* import warning: importer.ImportType#apply Failed type conversion: T extends std.WeakSet<any> ? never : std.Partial<T> */ js.Any,
+    message: String
+  ): Unit = js.native
   /**
     * Asserts that haystack does not includes needle. Deep equality is used.
     *

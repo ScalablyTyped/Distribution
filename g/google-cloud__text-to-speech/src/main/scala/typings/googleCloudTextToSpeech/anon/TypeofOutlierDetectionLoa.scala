@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable7
 import typings.googleGax.mod.grpc.experimental.OutlierDetectionLoadBalancingConfig
 import typings.grpcGrpcJs.anon.PartialFailurePercentageE
 import typings.grpcGrpcJs.anon.PartialSuccessRateEjectio
-import typings.grpcGrpcJs.loadBalancerMod.LoadBalancingConfig
+import typings.grpcGrpcJs.buildSrcLoadBalancerMod.LoadBalancingConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,5 +23,5 @@ trait TypeofOutlierDetectionLoa
       OutlierDetectionLoadBalancingConfig
     ] {
   
-  def createFromJson(obj: Any): typings.grpcGrpcJs.loadBalancerOutlierDetectionMod.OutlierDetectionLoadBalancingConfig = js.native
+  def createFromJson(obj: Any): typings.grpcGrpcJs.buildSrcLoadBalancerOutlierDetectionMod.OutlierDetectionLoadBalancingConfig = js.native
 }

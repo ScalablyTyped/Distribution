@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.elastictranscoderMod.Id
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsElastictranscoderMod.Id
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait ReadJobRequestwaiterWaite extends StObject {
   /**
     * The identifier of the job for which you want to get detailed information.
     */
-  var Id: typings.awsSdk.elastictranscoderMod.Id
+  var Id: typings.awsSdk.clientsElastictranscoderMod.Id
 }
 object ReadJobRequestwaiterWaite {
   

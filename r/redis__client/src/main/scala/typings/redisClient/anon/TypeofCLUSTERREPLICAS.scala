@@ -1,6 +1,6 @@
 package typings.redisClient.anon
 
-import typings.redisClient.clusterNODESMod.RedisClusterMasterNode
+import typings.redisClient.distLibCommandsClusterNODESMod.RedisClusterMasterNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

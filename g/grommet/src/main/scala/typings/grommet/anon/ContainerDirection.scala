@@ -1,6 +1,6 @@
 package typings.grommet.anon
 
-import typings.grommet.boxMod.BoxProps
+import typings.grommet.componentsBoxMod.BoxProps
 import typings.grommet.grommetStrings.column
 import typings.grommet.grommetStrings.row
 import org.scalablytyped.runtime.StObject

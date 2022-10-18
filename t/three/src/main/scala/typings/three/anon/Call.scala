@@ -1,9 +1,9 @@
 package typings.three.anon
 
-import typings.three.functionNodeMod.FunctionNodeArguments
-import typings.three.nodesMod.Node
-import typings.three.shaderNodeBaseElementsMod.Fn_
-import typings.three.shaderNodeMod.Swizzable
+import typings.three.examplesJsmNodesCoreFunctionNodeMod.FunctionNodeArguments
+import typings.three.examplesJsmNodesNodesMod.Node
+import typings.three.examplesJsmNodesShadernodeShaderNodeBaseElementsMod.Fn_
+import typings.three.examplesJsmNodesShadernodeShaderNodeMod.Swizzable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

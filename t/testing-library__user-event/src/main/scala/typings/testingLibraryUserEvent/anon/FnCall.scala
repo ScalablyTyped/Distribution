@@ -1,6 +1,7 @@
 package typings.testingLibraryUserEvent.anon
 
-import typings.testingLibraryUserEvent.cssPointerEventsMod.global.Element
+import typings.testingLibraryUserEvent.distTypesEventTypesMod.EventTypeInit
+import typings.testingLibraryUserEvent.distTypesUtilsPointerCssPointerEventsMod.global.Element
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.DOMContentLoaded
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.abort
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.animationcancel
@@ -106,7 +107,6 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.webkitanim
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.webkitanimationstart
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.webkittransitionend
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.wheel
-import typings.testingLibraryUserEvent.typesMod.EventTypeInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

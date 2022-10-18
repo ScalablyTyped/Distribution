@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("azure-sb", "WrapService")
 @js.native
 open class WrapService protected ()
-  extends typings.azureSb.wrapserviceMod.^ {
+  extends typings.azureSb.libWrapserviceMod.^ {
   def this(acsHost: String) = this()
   def this(acsHost: String, issuer: String) = this()
   def this(acsHost: String, issuer: String, accessKey: String) = this()

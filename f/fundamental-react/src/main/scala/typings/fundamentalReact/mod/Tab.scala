@@ -2,7 +2,7 @@ package typings.fundamentalReact.mod
 
 import typings.fundamentalReact.anon.PartialTabProps
 import typings.fundamentalReact.anon.WeakValidationMapTabProps
-import typings.fundamentalReact.tabMod.TabProps
+import typings.fundamentalReact.libTabsTabMod.TabProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

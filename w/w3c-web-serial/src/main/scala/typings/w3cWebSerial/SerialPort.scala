@@ -28,6 +28,8 @@ trait SerialPort
   
   def close(): js.Promise[Unit] = js.native
   
+  def forget(): js.Promise[Unit] = js.native
+  
   def getInfo(): SerialPortInfo = js.native
   
   def getSignals(): js.Promise[SerialInputSignals] = js.native

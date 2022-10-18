@@ -1,6 +1,6 @@
 package typings.recurlyRecurlyJs.anon
 
-import typings.recurlyRecurlyJs.elementsMod.CommonElementStyle
+import typings.recurlyRecurlyJs.libElementsMod.CommonElementStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

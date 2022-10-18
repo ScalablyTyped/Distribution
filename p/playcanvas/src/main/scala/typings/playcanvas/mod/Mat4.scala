@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A 4x4 matrix.
   */
-@JSImport("playcanvas", "Mat4")
 @js.native
-open class Mat4 () extends StObject {
+trait Mat4 extends StObject {
   
   /**
     * Adds the specified 4x4 matrix to the current instance.
@@ -503,35 +502,4 @@ open class Mat4 () extends StObject {
     * m.transpose();
     */
   def transpose(): Mat4 = js.native
-}
-object Mat4 {
-  
-  @JSImport("playcanvas", "Mat4")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    * A constant matrix set to the identity.
-    *
-    * @type {Mat4}
-    * @readonly
-    */
-  /* static member */
-  @JSImport("playcanvas", "Mat4.IDENTITY")
-  @js.native
-  val IDENTITY: Mat4 = js.native
-  
-  /**
-    * A constant matrix with all elements set to 0.
-    *
-    * @type {Mat4}
-    * @readonly
-    */
-  /* static member */
-  @JSImport("playcanvas", "Mat4.ZERO")
-  @js.native
-  val ZERO: Mat4 = js.native
-  
-  /* static member */
-  inline def getPerspectiveHalfSize(halfSize: Any, fov: Any, aspect: Any, znear: Any, fovIsHorizontal: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_getPerspectiveHalfSize")(halfSize.asInstanceOf[js.Any], fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], fovIsHorizontal.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

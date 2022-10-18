@@ -1,10 +1,10 @@
 package typings.yaml.anon
 
 import typings.std.Record
-import typings.yaml.optionsMod.SchemaOptions
-import typings.yaml.pairMod.Pair
-import typings.yaml.typesMod.CollectionTag
-import typings.yaml.typesMod.ScalarTag
+import typings.yaml.distNodesPairMod.Pair
+import typings.yaml.distOptionsMod.SchemaOptions
+import typings.yaml.distSchemaTypesMod.CollectionTag
+import typings.yaml.distSchemaTypesMod.ScalarTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

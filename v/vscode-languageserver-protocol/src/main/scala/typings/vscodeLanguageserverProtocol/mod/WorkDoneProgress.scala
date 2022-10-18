@@ -1,8 +1,8 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolProgressMod.WorkDoneProgressBegin
-import typings.vscodeLanguageserverProtocol.protocolProgressMod.WorkDoneProgressEnd
-import typings.vscodeLanguageserverProtocol.protocolProgressMod.WorkDoneProgressReport
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotprogressMod.WorkDoneProgressBegin
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotprogressMod.WorkDoneProgressEnd
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotprogressMod.WorkDoneProgressReport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

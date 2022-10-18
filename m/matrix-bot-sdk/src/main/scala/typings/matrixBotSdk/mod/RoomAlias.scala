@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "RoomAlias")
 @js.native
 open class RoomAlias protected ()
-  extends typings.matrixBotSdk.matrixEntityMod.RoomAlias {
+  extends typings.matrixBotSdk.libHelpersMatrixEntityMod.RoomAlias {
   def this(alias: String) = this()
 }

@@ -1,7 +1,7 @@
 package typings.reactNativeElements.anon
 
-import typings.reactNativeElements.colorsMod.PlatformColors
-import typings.reactNativeElements.themeMod.RecursivePartial
+import typings.reactNativeElements.distConfigColorsMod.PlatformColors
+import typings.reactNativeElements.distConfigThemeMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppservice.appServiceRegistrationMod.AppServiceOutput
+import typings.matrixAppservice.libAppServiceRegistrationMod.AppServiceOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +24,7 @@ object AppServiceRegistration {
     * @param obj The registration object
     * @return The registration.
     */
-  inline def fromObject(obj: AppServiceOutput): typings.matrixAppservice.appServiceRegistrationMod.AppServiceRegistration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.matrixAppservice.appServiceRegistrationMod.AppServiceRegistration]
+  inline def fromObject(obj: AppServiceOutput): typings.matrixAppservice.libAppServiceRegistrationMod.AppServiceRegistration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.matrixAppservice.libAppServiceRegistrationMod.AppServiceRegistration]
   
   /**
     * Generate a random token.

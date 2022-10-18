@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "ValidationException")
 @js.native
 open class ValidationException ()
-  extends typings.awsGreengrassCoreSdk.clientMod.ValidationException
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.ValidationException

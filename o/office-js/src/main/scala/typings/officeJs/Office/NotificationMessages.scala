@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @remarks
   * [Api set: Mailbox 1.3]
-  * 
+  *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @js.native
@@ -28,12 +28,12 @@ trait NotificationMessages extends StObject {
     * is allowed per add-in. Attempting to add more will throw an error.
     *
     * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.3]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param key - A developer-specified key used to reference this notification message.
@@ -60,19 +60,19 @@ trait NotificationMessages extends StObject {
     * is allowed per add-in. Attempting to add more will throw an error.
     *
     * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.3]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param key - A developer-specified key used to reference this notification message.
     *             Developers can use it to modify this message later. It can't be longer than 32 characters.
     * @param JSONmessage - A JSON object that contains the notification message to be added to the item.
     *                    It contains a `NotificationMessageDetails` object.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`.
@@ -90,11 +90,11 @@ trait NotificationMessages extends StObject {
     *
     * @remarks
     * [Api set: Mailbox 1.3]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
+    *
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`. The `value` property of the result is an array of `NotificationMessageDetails` objects.
     */
@@ -105,12 +105,12 @@ trait NotificationMessages extends StObject {
     *
     * @remarks
     * [Api set: Mailbox 1.3]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
-    * @param options - An object literal that contains one or more of the following properties.
+    *
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`. The `value` property of the result is an array of `NotificationMessageDetails` objects.
@@ -126,11 +126,11 @@ trait NotificationMessages extends StObject {
     *
     * @remarks
     * [Api set: Mailbox 1.3]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
+    *
     * @param key - The key for the notification message to remove.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`.
@@ -142,13 +142,13 @@ trait NotificationMessages extends StObject {
     *
     * @remarks
     * [Api set: Mailbox 1.3]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
+    *
     * @param key - The key for the notification message to remove.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`.
@@ -167,13 +167,13 @@ trait NotificationMessages extends StObject {
     *
     * @remarks
     * [Api set: Mailbox 1.3]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
+    *
     * @param key - The key for the notification message to replace. It can't be longer than 32 characters.
-    * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. 
+    * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message.
     *                    It contains a `NotificationMessageDetails` object.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`.
@@ -191,15 +191,15 @@ trait NotificationMessages extends StObject {
     *
     * @remarks
     * [Api set: Mailbox 1.3]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
+    *
     * @param key - The key for the notification message to replace. It can't be longer than 32 characters.
-    * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. 
+    * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message.
     *                    It contains a `NotificationMessageDetails` object.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`.

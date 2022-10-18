@@ -12,7 +12,7 @@ open class WebXRFeaturePointSystem protected ()
     * construct the feature point system
     * @param _xrSessionManager an instance of xr Session manager
     */
-  def this(_xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager) = this()
+  def this(_xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager) = this()
 }
 /* static members */
 object WebXRFeaturePointSystem {

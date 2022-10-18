@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Universal Integrated Circuit Card (UICC), normally called a SIM Card on a mobile broadband device. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandUicc")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandUicc")
 @js.native
-abstract class MobileBroadbandUicc ()
+open class MobileBroadbandUicc ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandUicc {
   

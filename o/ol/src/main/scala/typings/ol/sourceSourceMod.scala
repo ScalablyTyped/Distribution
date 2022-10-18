@@ -2,16 +2,16 @@ package typings.ol
 
 import typings.ol.pluggableMapMod.FrameState
 import typings.ol.projMod.ProjectionLike
-import typings.ol.stateMod.State
+import typings.ol.sourceStateMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceSourceMod {
   
-  @JSImport("ol/source/Source", JSImport.Default)
+  /* note: abstract class */ @JSImport("ol/source/Source", JSImport.Default)
   @js.native
-  abstract class default protected () extends Source {
+  open class default protected () extends Source {
     def this(options: Options) = this()
   }
   
@@ -82,7 +82,7 @@ object sourceSourceMod {
     /**
       * Get the projection of the source.
       */
-    def getProjection(): typings.ol.projectionMod.default = js.native
+    def getProjection(): typings.ol.projProjectionMod.default = js.native
     
     def getResolutions(): js.UndefOr[js.Array[Double]] = js.native
     

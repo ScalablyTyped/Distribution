@@ -1,9 +1,9 @@
 package typings.storybookComponents.anon
 
 import typings.std.Element
-import typings.storybookComponents.popperjsCoreLibEnumsMod.Boundary
-import typings.storybookComponents.popperjsCoreLibEnumsMod.RootBoundary
-import typings.storybookComponents.popperjsCoreLibTypesMod.Padding
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Boundary
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.RootBoundary
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.Padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@storybook/components.@storybook/components/dist/ts3.9/_modules/@popperjs-core-lib-modifiers-flip.Options> */
 trait PartialOptionsAllowedAutoPlacements extends StObject {
   
-  var allowedAutoPlacements: js.UndefOr[js.Array[typings.storybookComponents.popperjsCoreLibEnumsMod.Placement]] = js.undefined
+  var allowedAutoPlacements: js.UndefOr[
+    js.Array[
+      typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement
+    ]
+  ] = js.undefined
   
   var altAxis: js.UndefOr[Boolean] = js.undefined
   
@@ -19,7 +23,11 @@ trait PartialOptionsAllowedAutoPlacements extends StObject {
   
   var boundary: js.UndefOr[Boundary] = js.undefined
   
-  var fallbackPlacements: js.UndefOr[js.Array[typings.storybookComponents.popperjsCoreLibEnumsMod.Placement]] = js.undefined
+  var fallbackPlacements: js.UndefOr[
+    js.Array[
+      typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement
+    ]
+  ] = js.undefined
   
   var flipVariations: js.UndefOr[Boolean] = js.undefined
   
@@ -38,11 +46,15 @@ object PartialOptionsAllowedAutoPlacements {
   
   extension [Self <: PartialOptionsAllowedAutoPlacements](x: Self) {
     
-    inline def setAllowedAutoPlacements(value: js.Array[typings.storybookComponents.popperjsCoreLibEnumsMod.Placement]): Self = StObject.set(x, "allowedAutoPlacements", value.asInstanceOf[js.Any])
+    inline def setAllowedAutoPlacements(
+      value: js.Array[
+          typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement
+        ]
+    ): Self = StObject.set(x, "allowedAutoPlacements", value.asInstanceOf[js.Any])
     
     inline def setAllowedAutoPlacementsUndefined: Self = StObject.set(x, "allowedAutoPlacements", js.undefined)
     
-    inline def setAllowedAutoPlacementsVarargs(value: typings.storybookComponents.popperjsCoreLibEnumsMod.Placement*): Self = StObject.set(x, "allowedAutoPlacements", js.Array(value*))
+    inline def setAllowedAutoPlacementsVarargs(value: typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement*): Self = StObject.set(x, "allowedAutoPlacements", js.Array(value*))
     
     inline def setAltAxis(value: Boolean): Self = StObject.set(x, "altAxis", value.asInstanceOf[js.Any])
     
@@ -58,11 +70,15 @@ object PartialOptionsAllowedAutoPlacements {
     
     inline def setBoundaryVarargs(value: Element*): Self = StObject.set(x, "boundary", js.Array(value*))
     
-    inline def setFallbackPlacements(value: js.Array[typings.storybookComponents.popperjsCoreLibEnumsMod.Placement]): Self = StObject.set(x, "fallbackPlacements", value.asInstanceOf[js.Any])
+    inline def setFallbackPlacements(
+      value: js.Array[
+          typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement
+        ]
+    ): Self = StObject.set(x, "fallbackPlacements", value.asInstanceOf[js.Any])
     
     inline def setFallbackPlacementsUndefined: Self = StObject.set(x, "fallbackPlacements", js.undefined)
     
-    inline def setFallbackPlacementsVarargs(value: typings.storybookComponents.popperjsCoreLibEnumsMod.Placement*): Self = StObject.set(x, "fallbackPlacements", js.Array(value*))
+    inline def setFallbackPlacementsVarargs(value: typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement*): Self = StObject.set(x, "fallbackPlacements", js.Array(value*))
     
     inline def setFlipVariations(value: Boolean): Self = StObject.set(x, "flipVariations", value.asInstanceOf[js.Any])
     

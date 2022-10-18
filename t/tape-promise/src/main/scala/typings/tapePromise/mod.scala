@@ -2,7 +2,7 @@ package typings.tapePromise
 
 import typings.std.PromiseLike
 import typings.tape.mod.TestOptions
-import typings.tapePromise.anon.AsyncTapeFunctionNoneopts
+import typings.tapePromise.anon.AsyncTapeFunctionNonename
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(tapeTest: Any): AsyncTapeFunctionNoneopts = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tapeTest.asInstanceOf[js.Any]).asInstanceOf[AsyncTapeFunctionNoneopts]
+  inline def default(tapeTest: Any): AsyncTapeFunctionNonename = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tapeTest.asInstanceOf[js.Any]).asInstanceOf[AsyncTapeFunctionNonename]
   
   // tslint:enable: ban-types
   // tslint:disable: unified-signatures
@@ -34,7 +34,7 @@ object mod {
       * Create a new test harness instance, which is a function like test(),
       * but with a new pending stack and test state.
       */
-    def createHarness(): AsyncTapeFunctionNoneopts = js.native
+    def createHarness(): AsyncTapeFunctionNonename = js.native
     
     def only(cb: TestCase): Unit = js.native
     /**

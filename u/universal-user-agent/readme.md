@@ -1,7 +1,7 @@
 
 # Scala.js typings for universal-user-agent
 
-Typings are for version 7.0.0
+Typings are for version 7.0.1
 
 ## Library description:
 Get a user agent string across all JavaScript Runtime Environments

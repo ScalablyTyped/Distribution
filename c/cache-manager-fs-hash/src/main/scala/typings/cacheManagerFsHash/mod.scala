@@ -1,10 +1,9 @@
 package typings.cacheManagerFsHash
 
 import org.scalablytyped.runtime.Shortcut
-import typings.cacheManager.mod.Cache
-import typings.cacheManager.mod.CacheOptions
-import typings.cacheManager.mod.Store
-import typings.cacheManager.mod.StoreConfig
+import typings.cacheManager.distCachingMod.Cache
+import typings.cacheManager.distCachingMod.Store
+import typings.cacheManager.distCachingMod.StoreConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,9 @@ object mod extends Shortcut {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def caching(IConfig: FsHashStoreConfig | (StoreConfig & CacheOptions)): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("caching")(IConfig.asInstanceOf[js.Any]).asInstanceOf[Cache]
+    inline def caching(
+      IConfig: FsHashStoreConfig | (StoreConfig & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheOptions */ Any))
+    ): Cache[Store] = ^.asInstanceOf[js.Dynamic].applyDynamic("caching")(IConfig.asInstanceOf[js.Any]).asInstanceOf[Cache[Store]]
   }
   
   trait FsHashStoreConfig extends StObject {

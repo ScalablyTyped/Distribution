@@ -2,10 +2,10 @@ package typings.rtlcss
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.postcss.libProcessorMod.default
 import typings.postcss.mod.PluginCreator
 import typings.postcss.mod.Postcss
 import typings.postcss.mod.Root_
-import typings.postcss.processorMod.default
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

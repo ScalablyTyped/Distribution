@@ -1,7 +1,5 @@
 package typings.progressbarJs
 
-import typings.progressbarJs.mod.AnimationOptions
-import typings.progressbarJs.mod.AnimationSupport
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,17 +15,38 @@ object pathMod {
        with Path[SElement] {
     def this(path: SElement) = this()
     def this(path: String) = this()
-    def this(path: SElement, options: AnimationOptions) = this()
-    def this(path: String, options: AnimationOptions) = this()
-    def this(path: Null, options: AnimationOptions) = this()
+    def this(
+      path: SElement,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimationOptions */ Any
+    ) = this()
+    def this(
+      path: String,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimationOptions */ Any
+    ) = this()
+    def this(
+      path: Null,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimationOptions */ Any
+    ) = this()
   }
   
   // tslint:disable-next-line no-empty-interface adds members from animation contract
-  @js.native
-  trait Path[SElement /* <: Element */]
-    extends StObject
-       with AnimationSupport {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimationSupport * / any */ trait Path[SElement /* <: Element */] extends StObject {
     
-    val path: js.UndefOr[SElement] = js.native
+    val path: js.UndefOr[SElement] = js.undefined
+  }
+  object Path {
+    
+    inline def apply[SElement /* <: Element */](): Path[SElement] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Path[SElement]]
+    }
+    
+    extension [Self <: Path[?], SElement /* <: Element */](x: Self & Path[SElement]) {
+      
+      inline def setPath(value: SElement): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    }
   }
 }

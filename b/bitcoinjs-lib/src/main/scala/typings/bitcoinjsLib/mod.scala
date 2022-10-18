@@ -1,14 +1,14 @@
 package typings.bitcoinjsLib
 
-import typings.bitcoinjsLib.addressMod.Base58CheckResult
-import typings.bitcoinjsLib.addressMod.Bech32Result
-import typings.bitcoinjsLib.cryptoMod.TaggedHashPrefix
-import typings.bitcoinjsLib.networksMod.Network
-import typings.bitcoinjsLib.paymentsMod.Payment
-import typings.bitcoinjsLib.paymentsMod.PaymentOpts
-import typings.bitcoinjsLib.paymentsMod.Stack
-import typings.bitcoinjsLib.psbtMod.PsbtOptsOptional
-import typings.bitcoinjsLib.scriptSignatureMod.ScriptSignature
+import typings.bitcoinjsLib.srcAddressMod.Base58CheckResult
+import typings.bitcoinjsLib.srcAddressMod.Bech32Result
+import typings.bitcoinjsLib.srcCryptoMod.TaggedHashPrefix
+import typings.bitcoinjsLib.srcNetworksMod.Network
+import typings.bitcoinjsLib.srcPaymentsMod.Payment
+import typings.bitcoinjsLib.srcPaymentsMod.PaymentOpts
+import typings.bitcoinjsLib.srcPaymentsMod.Stack
+import typings.bitcoinjsLib.srcPsbtMod.PsbtOptsOptional
+import typings.bitcoinjsLib.srcScriptSignatureMod.ScriptSignature
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object mod {
   @JSImport("bitcoinjs-lib", "Block")
   @js.native
   open class Block ()
-    extends typings.bitcoinjsLib.blockMod.Block
+    extends typings.bitcoinjsLib.srcBlockMod.Block
   /* static members */
   object Block {
     
@@ -27,20 +27,20 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def calculateMerkleRoot(transactions: js.Array[typings.bitcoinjsLib.transactionMod.Transaction]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMerkleRoot")(transactions.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-    inline def calculateMerkleRoot(transactions: js.Array[typings.bitcoinjsLib.transactionMod.Transaction], forWitness: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateMerkleRoot")(transactions.asInstanceOf[js.Any], forWitness.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    inline def calculateMerkleRoot(transactions: js.Array[typings.bitcoinjsLib.srcTransactionMod.Transaction]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMerkleRoot")(transactions.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def calculateMerkleRoot(transactions: js.Array[typings.bitcoinjsLib.srcTransactionMod.Transaction], forWitness: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateMerkleRoot")(transactions.asInstanceOf[js.Any], forWitness.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
     inline def calculateTarget(bits: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateTarget")(bits.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    inline def fromBuffer(buffer: Buffer): typings.bitcoinjsLib.blockMod.Block = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.blockMod.Block]
+    inline def fromBuffer(buffer: Buffer): typings.bitcoinjsLib.srcBlockMod.Block = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.srcBlockMod.Block]
     
-    inline def fromHex(hex: String): typings.bitcoinjsLib.blockMod.Block = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.blockMod.Block]
+    inline def fromHex(hex: String): typings.bitcoinjsLib.srcBlockMod.Block = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.srcBlockMod.Block]
   }
   
   @JSImport("bitcoinjs-lib", "Psbt")
   @js.native
   open class Psbt ()
-    extends typings.bitcoinjsLib.psbtMod.Psbt {
+    extends typings.bitcoinjsLib.srcPsbtMod.Psbt {
     def this(opts: PsbtOptsOptional) = this()
     def this(opts: Unit, data: typings.bip174.mod.Psbt) = this()
     def this(opts: PsbtOptsOptional, data: typings.bip174.mod.Psbt) = this()
@@ -52,20 +52,20 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromBase64(data: String): typings.bitcoinjsLib.psbtMod.Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.psbtMod.Psbt]
-    inline def fromBase64(data: String, opts: PsbtOptsOptional): typings.bitcoinjsLib.psbtMod.Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.psbtMod.Psbt]
+    inline def fromBase64(data: String): typings.bitcoinjsLib.srcPsbtMod.Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.srcPsbtMod.Psbt]
+    inline def fromBase64(data: String, opts: PsbtOptsOptional): typings.bitcoinjsLib.srcPsbtMod.Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.srcPsbtMod.Psbt]
     
-    inline def fromBuffer(buffer: Buffer): typings.bitcoinjsLib.psbtMod.Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.psbtMod.Psbt]
-    inline def fromBuffer(buffer: Buffer, opts: PsbtOptsOptional): typings.bitcoinjsLib.psbtMod.Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.psbtMod.Psbt]
+    inline def fromBuffer(buffer: Buffer): typings.bitcoinjsLib.srcPsbtMod.Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.srcPsbtMod.Psbt]
+    inline def fromBuffer(buffer: Buffer, opts: PsbtOptsOptional): typings.bitcoinjsLib.srcPsbtMod.Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.srcPsbtMod.Psbt]
     
-    inline def fromHex(data: String): typings.bitcoinjsLib.psbtMod.Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.psbtMod.Psbt]
-    inline def fromHex(data: String, opts: PsbtOptsOptional): typings.bitcoinjsLib.psbtMod.Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.psbtMod.Psbt]
+    inline def fromHex(data: String): typings.bitcoinjsLib.srcPsbtMod.Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.srcPsbtMod.Psbt]
+    inline def fromHex(data: String, opts: PsbtOptsOptional): typings.bitcoinjsLib.srcPsbtMod.Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.srcPsbtMod.Psbt]
   }
   
   @JSImport("bitcoinjs-lib", "Transaction")
   @js.native
   open class Transaction ()
-    extends typings.bitcoinjsLib.transactionMod.Transaction
+    extends typings.bitcoinjsLib.srcTransactionMod.Transaction
   /* static members */
   object Transaction {
     
@@ -113,10 +113,10 @@ object mod {
     @js.native
     val SIGHASH_SINGLE: /* 3 */ Double = js.native
     
-    inline def fromBuffer(buffer: Buffer): typings.bitcoinjsLib.transactionMod.Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.transactionMod.Transaction]
-    inline def fromBuffer(buffer: Buffer, _NO_STRICT: Boolean): typings.bitcoinjsLib.transactionMod.Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], _NO_STRICT.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.transactionMod.Transaction]
+    inline def fromBuffer(buffer: Buffer): typings.bitcoinjsLib.srcTransactionMod.Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.srcTransactionMod.Transaction]
+    inline def fromBuffer(buffer: Buffer, _NO_STRICT: Boolean): typings.bitcoinjsLib.srcTransactionMod.Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], _NO_STRICT.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.srcTransactionMod.Transaction]
     
-    inline def fromHex(hex: String): typings.bitcoinjsLib.transactionMod.Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.transactionMod.Transaction]
+    inline def fromHex(hex: String): typings.bitcoinjsLib.srcTransactionMod.Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.srcTransactionMod.Transaction]
     
     inline def isCoinbaseHash(buffer: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoinbaseHash")(buffer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }

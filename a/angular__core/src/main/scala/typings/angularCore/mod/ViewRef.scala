@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "ViewRef")
+/* note: abstract class */ @JSImport("@angular/core", "ViewRef")
 @js.native
-abstract class ViewRef () extends ChangeDetectorRef {
+open class ViewRef () extends ChangeDetectorRef {
   
   /**
     * Destroys this view and all of the data structures associated with it.

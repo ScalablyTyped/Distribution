@@ -1,7 +1,7 @@
 package typings.materialTextfield
 
 import typings.materialTextfield.anon.PickValidityStatebadInput
-import typings.materialTextfield.foundationMod.MDCTextFieldCharacterCounterFoundation
+import typings.materialTextfield.characterCounterFoundationMod.MDCTextFieldCharacterCounterFoundation
 import typings.materialTextfield.helperTextFoundationMod.MDCTextFieldHelperTextFoundation
 import typings.materialTextfield.iconFoundationMod.MDCTextFieldIconFoundation
 import org.scalablytyped.runtime.StObject

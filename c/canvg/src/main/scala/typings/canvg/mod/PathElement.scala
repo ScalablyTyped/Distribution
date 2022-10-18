@@ -12,11 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "PathElement")
 @js.native
 open class PathElement protected ()
-  extends typings.canvg.documentMod.PathElement {
-  def this(document: typings.canvg.documentDocumentMod.Document) = this()
-  def this(document: typings.canvg.documentDocumentMod.Document, node: HTMLElement) = this()
-  def this(document: typings.canvg.documentDocumentMod.Document, node: Unit, captureTextNodes: Boolean) = this()
-  def this(document: typings.canvg.documentDocumentMod.Document, node: HTMLElement, captureTextNodes: Boolean) = this()
+  extends typings.canvg.distDocumentMod.PathElement {
+  def this(document: typings.canvg.distDocumentDocumentMod.Document) = this()
+  def this(document: typings.canvg.distDocumentDocumentMod.Document, node: HTMLElement) = this()
+  def this(document: typings.canvg.distDocumentDocumentMod.Document, node: Unit, captureTextNodes: Boolean) = this()
+  def this(
+    document: typings.canvg.distDocumentDocumentMod.Document,
+    node: HTMLElement,
+    captureTextNodes: Boolean
+  ) = this()
 }
 /* static members */
 object PathElement {
@@ -25,23 +29,23 @@ object PathElement {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def pathA(pathParser: typings.canvg.pathParserMod.PathParser): A1 = ^.asInstanceOf[js.Dynamic].applyDynamic("pathA")(pathParser.asInstanceOf[js.Any]).asInstanceOf[A1]
+  inline def pathA(pathParser: typings.canvg.distPathParserMod.PathParser): A1 = ^.asInstanceOf[js.Dynamic].applyDynamic("pathA")(pathParser.asInstanceOf[js.Any]).asInstanceOf[A1]
   
-  inline def pathC(pathParser: typings.canvg.pathParserMod.PathParser): ControlPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("pathC")(pathParser.asInstanceOf[js.Any]).asInstanceOf[ControlPoint]
+  inline def pathC(pathParser: typings.canvg.distPathParserMod.PathParser): ControlPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("pathC")(pathParser.asInstanceOf[js.Any]).asInstanceOf[ControlPoint]
   
-  inline def pathH(pathParser: typings.canvg.pathParserMod.PathParser): Current = ^.asInstanceOf[js.Dynamic].applyDynamic("pathH")(pathParser.asInstanceOf[js.Any]).asInstanceOf[Current]
+  inline def pathH(pathParser: typings.canvg.distPathParserMod.PathParser): Current = ^.asInstanceOf[js.Dynamic].applyDynamic("pathH")(pathParser.asInstanceOf[js.Any]).asInstanceOf[Current]
   
-  inline def pathL(pathParser: typings.canvg.pathParserMod.PathParser): Current = ^.asInstanceOf[js.Dynamic].applyDynamic("pathL")(pathParser.asInstanceOf[js.Any]).asInstanceOf[Current]
+  inline def pathL(pathParser: typings.canvg.distPathParserMod.PathParser): Current = ^.asInstanceOf[js.Dynamic].applyDynamic("pathL")(pathParser.asInstanceOf[js.Any]).asInstanceOf[Current]
   
-  inline def pathM(pathParser: typings.canvg.pathParserMod.PathParser): typings.canvg.anon.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("pathM")(pathParser.asInstanceOf[js.Any]).asInstanceOf[typings.canvg.anon.Point]
+  inline def pathM(pathParser: typings.canvg.distPathParserMod.PathParser): typings.canvg.anon.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("pathM")(pathParser.asInstanceOf[js.Any]).asInstanceOf[typings.canvg.anon.Point]
   
-  inline def pathQ(pathParser: typings.canvg.pathParserMod.PathParser): CurrentPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("pathQ")(pathParser.asInstanceOf[js.Any]).asInstanceOf[CurrentPoint]
+  inline def pathQ(pathParser: typings.canvg.distPathParserMod.PathParser): CurrentPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("pathQ")(pathParser.asInstanceOf[js.Any]).asInstanceOf[CurrentPoint]
   
-  inline def pathS(pathParser: typings.canvg.pathParserMod.PathParser): ControlPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("pathS")(pathParser.asInstanceOf[js.Any]).asInstanceOf[ControlPoint]
+  inline def pathS(pathParser: typings.canvg.distPathParserMod.PathParser): ControlPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("pathS")(pathParser.asInstanceOf[js.Any]).asInstanceOf[ControlPoint]
   
-  inline def pathT(pathParser: typings.canvg.pathParserMod.PathParser): CurrentPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("pathT")(pathParser.asInstanceOf[js.Any]).asInstanceOf[CurrentPoint]
+  inline def pathT(pathParser: typings.canvg.distPathParserMod.PathParser): CurrentPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("pathT")(pathParser.asInstanceOf[js.Any]).asInstanceOf[CurrentPoint]
   
-  inline def pathV(pathParser: typings.canvg.pathParserMod.PathParser): Current = ^.asInstanceOf[js.Dynamic].applyDynamic("pathV")(pathParser.asInstanceOf[js.Any]).asInstanceOf[Current]
+  inline def pathV(pathParser: typings.canvg.distPathParserMod.PathParser): Current = ^.asInstanceOf[js.Dynamic].applyDynamic("pathV")(pathParser.asInstanceOf[js.Any]).asInstanceOf[Current]
   
-  inline def pathZ(pathParser: typings.canvg.pathParserMod.PathParser): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pathZ")(pathParser.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def pathZ(pathParser: typings.canvg.distPathParserMod.PathParser): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pathZ")(pathParser.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -1,5 +1,6 @@
 package typings.node.cryptoMod.webcrypto
 
+import typings.node.NodeJS.TypedArray
 import typings.node.anon._empty
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
@@ -27,10 +28,7 @@ trait Crypto extends StObject {
     * An error will be thrown if the given `typedArray` is larger than 65,536 bytes.
     * @since v15.0.0
     */
-  def getRandomValues[T /* <: Exclude[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any, 
-    js.typedarray.Float32Array | js.typedarray.Float64Array
-  ] */](typedArray: T): T
+  def getRandomValues[T /* <: Exclude[TypedArray, js.typedarray.Float32Array | js.typedarray.Float64Array] */](typedArray: T): T
   
   /**
     * Generates a random {@link https://www.rfc-editor.org/rfc/rfc4122.txt RFC 4122} version 4 UUID.

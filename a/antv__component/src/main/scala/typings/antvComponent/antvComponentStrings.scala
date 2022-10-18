@@ -1,7 +1,7 @@
 package typings.antvComponent
 
-import typings.antvComponent.typesMod.LocationType
-import typings.antvComponent.typesMod.TooltipPosition
+import typings.antvComponent.libTypesMod.LocationType
+import typings.antvComponent.libTypesMod.TooltipPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

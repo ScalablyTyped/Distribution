@@ -1,19 +1,19 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.s3Mod.AccountId
-import typings.awsSdk.s3Mod.BucketName
-import typings.awsSdk.s3Mod.ChecksumMode
-import typings.awsSdk.s3Mod.IfMatch
-import typings.awsSdk.s3Mod.IfNoneMatch
-import typings.awsSdk.s3Mod.ObjectKey
-import typings.awsSdk.s3Mod.ObjectVersionId
-import typings.awsSdk.s3Mod.PartNumber
-import typings.awsSdk.s3Mod.Range
-import typings.awsSdk.s3Mod.RequestPayer
-import typings.awsSdk.s3Mod.SSECustomerAlgorithm
-import typings.awsSdk.s3Mod.SSECustomerKey
-import typings.awsSdk.s3Mod.SSECustomerKeyMD5
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsS3Mod.AccountId
+import typings.awsSdk.clientsS3Mod.BucketName
+import typings.awsSdk.clientsS3Mod.ChecksumMode
+import typings.awsSdk.clientsS3Mod.IfMatch
+import typings.awsSdk.clientsS3Mod.IfNoneMatch
+import typings.awsSdk.clientsS3Mod.ObjectKey
+import typings.awsSdk.clientsS3Mod.ObjectVersionId
+import typings.awsSdk.clientsS3Mod.PartNumber
+import typings.awsSdk.clientsS3Mod.Range
+import typings.awsSdk.clientsS3Mod.RequestPayer
+import typings.awsSdk.clientsS3Mod.SSECustomerAlgorithm
+import typings.awsSdk.clientsS3Mod.SSECustomerKey
+import typings.awsSdk.clientsS3Mod.SSECustomerKeyMD5
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,7 @@ trait HeadObjectRequestwaiterWa extends StObject {
   /**
     * To retrieve the checksum, this parameter must be enabled. In addition, if you enable ChecksumMode and the object is encrypted with Amazon Web Services Key Management Service (Amazon Web Services KMS), you must have permission to use the kms:Decrypt action for the request to succeed.
     */
-  var ChecksumMode: js.UndefOr[typings.awsSdk.s3Mod.ChecksumMode] = js.undefined
+  var ChecksumMode: js.UndefOr[typings.awsSdk.clientsS3Mod.ChecksumMode] = js.undefined
   
   /**
     * The account ID of the expected bucket owner. If the bucket is owned by a different account, the request fails with the HTTP status code 403 Forbidden (access denied).
@@ -42,7 +42,7 @@ trait HeadObjectRequestwaiterWa extends StObject {
   /**
     * Return the object only if its entity tag (ETag) is the same as the one specified; otherwise, return a 412 (precondition failed) error.
     */
-  var IfMatch: js.UndefOr[typings.awsSdk.s3Mod.IfMatch] = js.undefined
+  var IfMatch: js.UndefOr[typings.awsSdk.clientsS3Mod.IfMatch] = js.undefined
   
   /**
     * Return the object only if it has been modified since the specified time; otherwise, return a 304 (not modified) error.
@@ -52,7 +52,7 @@ trait HeadObjectRequestwaiterWa extends StObject {
   /**
     * Return the object only if its entity tag (ETag) is different from the one specified; otherwise, return a 304 (not modified) error.
     */
-  var IfNoneMatch: js.UndefOr[typings.awsSdk.s3Mod.IfNoneMatch] = js.undefined
+  var IfNoneMatch: js.UndefOr[typings.awsSdk.clientsS3Mod.IfNoneMatch] = js.undefined
   
   /**
     * Return the object only if it has not been modified since the specified time; otherwise, return a 412 (precondition failed) error.
@@ -67,29 +67,29 @@ trait HeadObjectRequestwaiterWa extends StObject {
   /**
     * Part number of the object being read. This is a positive integer between 1 and 10,000. Effectively performs a 'ranged' HEAD request for the part specified. Useful querying about the size of the part and the number of parts in this object.
     */
-  var PartNumber: js.UndefOr[typings.awsSdk.s3Mod.PartNumber] = js.undefined
+  var PartNumber: js.UndefOr[typings.awsSdk.clientsS3Mod.PartNumber] = js.undefined
   
   /**
     * Because HeadObject returns only the metadata for an object, this parameter has no effect.
     */
-  var Range: js.UndefOr[typings.awsSdk.s3Mod.Range] = js.undefined
+  var Range: js.UndefOr[typings.awsSdk.clientsS3Mod.Range] = js.undefined
   
-  var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.undefined
+  var RequestPayer: js.UndefOr[typings.awsSdk.clientsS3Mod.RequestPayer] = js.undefined
   
   /**
     * Specifies the algorithm to use to when encrypting the object (for example, AES256).
     */
-  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.undefined
+  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.clientsS3Mod.SSECustomerAlgorithm] = js.undefined
   
   /**
     * Specifies the customer-provided encryption key for Amazon S3 to use in encrypting data. This value is used to store the object and then it is discarded; Amazon S3 does not store the encryption key. The key must be appropriate for use with the algorithm specified in the x-amz-server-side-encryption-customer-algorithm header.
     */
-  var SSECustomerKey: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKey] = js.undefined
+  var SSECustomerKey: js.UndefOr[typings.awsSdk.clientsS3Mod.SSECustomerKey] = js.undefined
   
   /**
     * Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.
     */
-  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.undefined
+  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.clientsS3Mod.SSECustomerKeyMD5] = js.undefined
   
   /**
     * VersionId used to reference a specific version of the object.

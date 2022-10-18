@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the barcode scanner device. */
-@JSGlobal("Windows.Devices.PointOfService.BarcodeScanner")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.BarcodeScanner")
 @js.native
-abstract class BarcodeScanner ()
+open class BarcodeScanner ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.BarcodeScanner
 object BarcodeScanner {

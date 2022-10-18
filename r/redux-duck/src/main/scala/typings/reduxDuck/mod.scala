@@ -1,6 +1,5 @@
 package typings.reduxDuck
 
-import org.scalablytyped.runtime.TopLevel
 import typings.redux.mod.Action
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Reducer
@@ -19,14 +18,25 @@ object mod {
   inline def createDuck(a: DuckName): DuckBuilder[AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDuck")(a.asInstanceOf[js.Any]).asInstanceOf[DuckBuilder[AnyAction]]
   inline def createDuck(a: DuckName, b: AppName): DuckBuilder[AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDuck")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[DuckBuilder[AnyAction]]
   
-  type ActionCreator[A /* <: FSAHack */] = js.Function0[A] | (js.Function1[
-    /* import warning: importer.ImportType#apply Failed type conversion: A['payload'] */ /* a */ js.Any, 
-    A
-  ])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    A extends {  payload :any} ? (a : A['payload']): A : (): A
+    }}}
+    */
+  @js.native
+  trait ActionCreator[A /* <: FSAHack */] extends StObject
   
-  type ActionHandlers[S, A /* <: Action[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ T in A['type'] ]:? (x : S, y : std.Extract<A, {  type :T}>): S}
-    */ typings.reduxDuck.reduxDuckStrings.ActionHandlers & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ T in A['type'] ]:? (x : S, y : std.Extract<A, {  type :T}>): S}
+    }}}
+    */
+  @js.native
+  trait ActionHandlers[S, A /* <: Action[Any] */] extends StObject
   
   type ActionName = String
   

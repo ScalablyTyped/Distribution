@@ -1,13 +1,13 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.WidgetValue
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.PageVariable")
 @js.native
 open class PageVariable protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.PageVariable {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.PageVariable {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,7 +40,7 @@ object PageVariable {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageVariable]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -51,7 +51,7 @@ object PageVariable {
     *  8.8.0 and higher
     */
   /* static member */
-  inline def createInAttributeWidgetUnderSourceVariable(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageVariable]
+  inline def createInAttributeWidgetUnderSourceVariable(container: typings.mendixmodelsdk.srcGenPagesMod.pages.AttributeWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -62,7 +62,7 @@ object PageVariable {
     *  8.4.0 and higher
     */
   /* static member */
-  inline def createInMicroflowParameterMappingUnderVariable(container: typings.mendixmodelsdk.pagesMod.pages.MicroflowParameterMapping): typings.mendixmodelsdk.pagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageVariable]
+  inline def createInMicroflowParameterMappingUnderVariable(container: typings.mendixmodelsdk.srcGenPagesMod.pages.MicroflowParameterMapping): typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -73,7 +73,7 @@ object PageVariable {
     *  8.4.0 and higher
     */
   /* static member */
-  inline def createInNanoflowParameterMappingUnderVariable(container: typings.mendixmodelsdk.pagesMod.pages.NanoflowParameterMapping): typings.mendixmodelsdk.pagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageVariable]
+  inline def createInNanoflowParameterMappingUnderVariable(container: typings.mendixmodelsdk.srcGenPagesMod.pages.NanoflowParameterMapping): typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -84,7 +84,7 @@ object PageVariable {
     *  9.7.0 and higher
     */
   /* static member */
-  inline def createInPageParameterMappingUnderVariable(container: typings.mendixmodelsdk.pagesMod.pages.PageParameterMapping): typings.mendixmodelsdk.pagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageVariable]
+  inline def createInPageParameterMappingUnderVariable(container: typings.mendixmodelsdk.srcGenPagesMod.pages.PageParameterMapping): typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -95,7 +95,7 @@ object PageVariable {
     *  8.8.0 and higher
     */
   /* static member */
-  inline def createInWidgetValueUnderSourceVariable(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageVariable]
+  inline def createInWidgetValueUnderSourceVariable(container: WidgetValue): typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.PageVariable.structureTypeName")

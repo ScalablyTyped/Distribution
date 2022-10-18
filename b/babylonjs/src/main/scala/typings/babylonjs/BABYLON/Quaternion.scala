@@ -43,19 +43,19 @@ trait Quaternion extends StObject {
   def asArray(): js.Array[Double] = js.native
   
   /**
-    * Conjugates in place (1-q) the current quaternion
+    * Conjugates (1-q) the current quaternion
     * @returns a new quaternion
     */
   def conjugate(): Quaternion = js.native
   
   /**
-    * Conjugates in place (1-q) the current quaternion
+    * Conjugates in place the current quaternion
     * @returns the current updated quaternion
     */
   def conjugateInPlace(): Quaternion = js.native
   
   /**
-    * Conjugates (1-q) the current quaternion and stores the result in the given quaternion
+    * Conjugates the current quaternion and stores the result in the given quaternion
     * @param ref defines the target quaternion
     * @returns the current quaternion
     */

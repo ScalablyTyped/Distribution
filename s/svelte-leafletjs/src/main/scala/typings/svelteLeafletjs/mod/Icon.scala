@@ -2,14 +2,18 @@ package typings.svelteLeafletjs.mod
 
 import typings.leaflet.mod.IconOptions
 import typings.leaflet.mod.Icon_
+import typings.svelte.mod.SvelteComponentTyped
+import typings.svelte.typesRuntimeInternalDevMod.ComponentConstructorOptions
+import typings.svelteLeafletjs.anon.GetIcon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SvelteComponentTyped<{  options :L.IconOptions | undefined,   getIcon :(): L.Icon | undefined}, never, never> * / any */ @JSImport("svelte-leafletjs", "Icon")
+@JSImport("svelte-leafletjs", "Icon")
 @js.native
-open class Icon () extends StObject {
+open class Icon protected ()
+  extends SvelteComponentTyped[GetIcon, scala.Nothing, scala.Nothing] {
+  def this(options: ComponentConstructorOptions[GetIcon]) = this()
   
   def getIcon(): Icon_[IconOptions] = js.native
 }

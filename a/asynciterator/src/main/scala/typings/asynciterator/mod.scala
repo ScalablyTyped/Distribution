@@ -5,8 +5,8 @@ import typings.asynciterator.anon.AutoStart
 import typings.asynciterator.anon.BufferedIteratorOptionsde
 import typings.asynciterator.anon.End
 import typings.asynciterator.anon.Limit
-import typings.asynciterator.taskschedulerMod.Task
-import typings.asynciterator.taskschedulerMod.TaskScheduler
+import typings.asynciterator.distTaskschedulerMod.Task
+import typings.asynciterator.distTaskschedulerMod.TaskScheduler
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -520,7 +520,7 @@ object mod {
   @JSImport("asynciterator", "LinkedList")
   @js.native
   open class LinkedList[V] ()
-    extends typings.asynciterator.linkedlistMod.LinkedList[V]
+    extends typings.asynciterator.distLinkedlistMod.LinkedList[V]
   
   @JSImport("asynciterator", "MappingIterator")
   @js.native

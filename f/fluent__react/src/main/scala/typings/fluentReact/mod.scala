@@ -1,11 +1,11 @@
 package typings.fluentReact
 
 import typings.fluentBundle.mod.FluentBundle
-import typings.fluentReact.localizedMod.LocalizedProps
-import typings.fluentReact.markupMod.MarkupParser
-import typings.fluentReact.providerMod.LocalizationProviderProps
-import typings.fluentReact.withLocalizationMod.WithLocalizationProps
-import typings.fluentReact.withLocalizationMod.WithoutLocalizationProps
+import typings.fluentReact.esmLocalizedMod.LocalizedProps
+import typings.fluentReact.esmMarkupMod.MarkupParser
+import typings.fluentReact.esmProviderMod.LocalizationProviderProps
+import typings.fluentReact.esmWithLocalizationMod.WithLocalizationProps
+import typings.fluentReact.esmWithLocalizationMod.WithoutLocalizationProps
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
@@ -25,14 +25,14 @@ object mod {
   @JSImport("@fluent/react", "ReactLocalization")
   @js.native
   open class ReactLocalization protected ()
-    extends typings.fluentReact.localizationMod.ReactLocalization {
+    extends typings.fluentReact.esmLocalizationMod.ReactLocalization {
     def this(bundles: js.Iterable[FluentBundle]) = this()
     def this(bundles: js.Iterable[FluentBundle], parseMarkup: MarkupParser) = this()
   }
   
   @JSImport("@fluent/react", "useLocalization")
   @js.native
-  val useLocalization: typings.fluentReact.useLocalizationMod.useLocalization = js.native
+  val useLocalization: typings.fluentReact.esmUseLocalizationMod.useLocalization = js.native
   
   inline def withLocalization[P /* <: WithLocalizationProps */](Inner: ComponentType[P]): ComponentType[WithoutLocalizationProps[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withLocalization")(Inner.asInstanceOf[js.Any]).asInstanceOf[ComponentType[WithoutLocalizationProps[P]]]
 }

@@ -25,10 +25,6 @@ object reactNativeJoiStrings {
   inline def NFKD: NFKD = "NFKD".asInstanceOf[NFKD]
   
   @js.native
-  sealed trait Rules extends StObject
-  inline def Rules: Rules = "Rules".asInstanceOf[Rules]
-  
-  @js.native
   sealed trait alternatives
     extends StObject
        with Types

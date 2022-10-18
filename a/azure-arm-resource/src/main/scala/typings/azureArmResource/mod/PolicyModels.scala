@@ -10,12 +10,12 @@ object PolicyModels {
   @JSImport("azure-arm-resource", "PolicyModels.BaseResource")
   @js.native
   open class BaseResource ()
-    extends typings.azureArmResource.policyModelsMod.BaseResource
+    extends typings.azureArmResource.libPolicyModelsMod.BaseResource
   
   @JSImport("azure-arm-resource", "PolicyModels.CloudError")
   @js.native
   open class CloudError protected ()
-    extends typings.azureArmResource.policyModelsMod.CloudError {
+    extends typings.azureArmResource.libPolicyModelsMod.CloudError {
     def this(parameters: CloudErrorParameters) = this()
   }
 }

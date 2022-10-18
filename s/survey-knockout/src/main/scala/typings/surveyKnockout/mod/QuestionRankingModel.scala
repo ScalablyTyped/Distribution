@@ -25,6 +25,8 @@ open class QuestionRankingModel protected () extends QuestionCheckboxModel {
   
   /* protected */ def getItemClassCore(item: ItemValue, options: Any): String = js.native
   
+  def getItemTabIndex(item: ItemValue): Double = js.native
+  
   def getNumberByIndex(index: Double): String = js.native
   
   def ghostPositionCssClass: String = js.native

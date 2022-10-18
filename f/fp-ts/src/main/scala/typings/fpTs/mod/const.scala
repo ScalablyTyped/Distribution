@@ -1,21 +1,21 @@
 package typings.fpTs.mod
 
-import typings.fpTs.applicativeMod.Applicative2C
-import typings.fpTs.applyMod.Apply2C
-import typings.fpTs.bifunctorMod.Bifunctor2
-import typings.fpTs.booleanAlgebraMod.BooleanAlgebra
-import typings.fpTs.boundedMod.Bounded
-import typings.fpTs.constMod.Const_
-import typings.fpTs.contravariantMod.Contravariant2
-import typings.fpTs.eqMod.Eq
-import typings.fpTs.functorMod.Functor2
-import typings.fpTs.heytingAlgebraMod.HeytingAlgebra
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.ordMod.Ord_
-import typings.fpTs.ringMod.Ring
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.semiringMod.Semiring
-import typings.fpTs.showMod.Show
+import typings.fpTs.libApplicativeMod.Applicative2C
+import typings.fpTs.libApplyMod.Apply2C
+import typings.fpTs.libBifunctorMod.Bifunctor2
+import typings.fpTs.libBooleanAlgebraMod.BooleanAlgebra
+import typings.fpTs.libBoundedMod.Bounded
+import typings.fpTs.libConstMod.Const_
+import typings.fpTs.libContravariantMod.Contravariant2
+import typings.fpTs.libEqMod.Eq
+import typings.fpTs.libFunctorMod.Functor2
+import typings.fpTs.libHeytingAlgebraMod.HeytingAlgebra
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libOrdMod.Ord_
+import typings.fpTs.libRingMod.Ring
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libSemiringMod.Semiring
+import typings.fpTs.libShowMod.Show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,15 +28,15 @@ object const {
   
   @JSImport("fp-ts", "const.Bifunctor")
   @js.native
-  val Bifunctor: Bifunctor2[typings.fpTs.constMod.URI] = js.native
+  val Bifunctor: Bifunctor2[typings.fpTs.libConstMod.URI] = js.native
   
   @JSImport("fp-ts", "const.Contravariant")
   @js.native
-  val Contravariant: Contravariant2[typings.fpTs.constMod.URI] = js.native
+  val Contravariant: Contravariant2[typings.fpTs.libConstMod.URI] = js.native
   
   @JSImport("fp-ts", "const.Functor")
   @js.native
-  val Functor: Functor2[typings.fpTs.constMod.URI] = js.native
+  val Functor: Functor2[typings.fpTs.libConstMod.URI] = js.native
   
   @JSImport("fp-ts", "const.URI")
   @js.native
@@ -46,15 +46,15 @@ object const {
   
   @JSImport("fp-ts", "const.const_")
   @js.native
-  val const: Functor2[typings.fpTs.constMod.URI] & Contravariant2[typings.fpTs.constMod.URI] & Bifunctor2[typings.fpTs.constMod.URI] = js.native
+  val const: Functor2[typings.fpTs.libConstMod.URI] & Contravariant2[typings.fpTs.libConstMod.URI] & Bifunctor2[typings.fpTs.libConstMod.URI] = js.native
   
   inline def contramap[A, B](f: js.Function1[/* b */ B, A]): js.Function1[/* fa */ Const_[Any, A], Const_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("contramap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Const_[Any, A], Const_[Any, B]]]
   
   inline def flap[A](a: A): js.Function1[/* fab */ Const_[Any, js.Function1[/* a */ A, Any]], Const_[Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Const_[Any, js.Function1[/* a */ A, Any]], Const_[Any, Any]]]
   
-  inline def getApplicative[E](M: Monoid[E]): Applicative2C[typings.fpTs.constMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicative")(M.asInstanceOf[js.Any]).asInstanceOf[Applicative2C[typings.fpTs.constMod.URI, E]]
+  inline def getApplicative[E](M: Monoid[E]): Applicative2C[typings.fpTs.libConstMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicative")(M.asInstanceOf[js.Any]).asInstanceOf[Applicative2C[typings.fpTs.libConstMod.URI, E]]
   
-  inline def getApply[E](S: Semigroup[E]): Apply2C[typings.fpTs.constMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApply")(S.asInstanceOf[js.Any]).asInstanceOf[Apply2C[typings.fpTs.constMod.URI, E]]
+  inline def getApply[E](S: Semigroup[E]): Apply2C[typings.fpTs.libConstMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApply")(S.asInstanceOf[js.Any]).asInstanceOf[Apply2C[typings.fpTs.libConstMod.URI, E]]
   
   inline def getBooleanAlgebra[E, A](H: BooleanAlgebra[E]): BooleanAlgebra[Const_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBooleanAlgebra")(H.asInstanceOf[js.Any]).asInstanceOf[BooleanAlgebra[Const_[E, A]]]
   
@@ -82,9 +82,10 @@ object const {
   
   inline def mapLeft[E, G](f: js.Function1[/* e */ E, G]): js.Function1[/* fa */ Const_[E, Any], Const_[G, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLeft")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Const_[E, Any], Const_[G, Any]]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native
-    trait URItoKind[A] extends StObject
+    trait URItoKind2[E, A] extends StObject
   }
 }

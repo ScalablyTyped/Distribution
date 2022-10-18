@@ -1,11 +1,11 @@
 package typings.nbind
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.nbind.distTypeMod.TypeClass
+import typings.nbind.distTypeMod.TypeFlags
+import typings.nbind.distTypeMod.TypeSpec
+import typings.nbind.distTypeMod.TypeSpecWithName
 import typings.nbind.mod.ClassType
-import typings.nbind.typeMod.TypeClass
-import typings.nbind.typeMod.TypeFlags
-import typings.nbind.typeMod.TypeSpec
-import typings.nbind.typeMod.TypeSpecWithName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -213,20 +213,20 @@ object anon {
   
   trait Reflect extends StObject {
     
-    var reflect: typings.nbind.reflectMod.Reflect
+    var reflect: typings.nbind.distReflectMod.Reflect
     
     var shim: js.UndefOr[Boolean] = js.undefined
   }
   object Reflect {
     
-    inline def apply(reflect: typings.nbind.reflectMod.Reflect): Reflect = {
+    inline def apply(reflect: typings.nbind.distReflectMod.Reflect): Reflect = {
       val __obj = js.Dynamic.literal(reflect = reflect.asInstanceOf[js.Any])
       __obj.asInstanceOf[Reflect]
     }
     
     extension [Self <: Reflect](x: Self) {
       
-      inline def setReflect(value: typings.nbind.reflectMod.Reflect): Self = StObject.set(x, "reflect", value.asInstanceOf[js.Any])
+      inline def setReflect(value: typings.nbind.distReflectMod.Reflect): Self = StObject.set(x, "reflect", value.asInstanceOf[js.Any])
       
       inline def setShim(value: Boolean): Self = StObject.set(x, "shim", value.asInstanceOf[js.Any])
       

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Name extends StObject {
   
   /**
-    * The name of the server as defined by the server.
+    * The name of the client as defined by the client.
     */
   var name: String
   
   /**
-    * The server's version as defined by the server.
+    * The client's version as defined by the client.
     */
   var version: js.UndefOr[String] = js.undefined
 }

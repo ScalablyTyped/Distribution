@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class TokenFileWebIdentityCredentials ()
   extends typings.awsSdk.mod.TokenFileWebIdentityCredentials {
-  def this(clientConfig: typings.awsSdk.configBaseMod.ConfigurationOptions) = this()
+  def this(clientConfig: typings.awsSdk.libConfigBaseMod.ConfigurationOptions) = this()
 }

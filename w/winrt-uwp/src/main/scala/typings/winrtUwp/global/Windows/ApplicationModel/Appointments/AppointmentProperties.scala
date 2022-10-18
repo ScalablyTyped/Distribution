@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides strings that identify the properties of an appointment. */
-@JSGlobal("Windows.ApplicationModel.Appointments.AppointmentProperties")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentProperties")
 @js.native
-abstract class AppointmentProperties ()
+open class AppointmentProperties ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentProperties
 object AppointmentProperties {

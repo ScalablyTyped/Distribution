@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsGoldFilledMod.GoldFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object goldFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/GoldFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/GoldFilled", JSImport.Default)
   @js.native
   val default: GoldFilledIconType = js.native
-  
-  @js.native
-  trait GoldFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_GoldFilledIconType: String = js.native
-  }
   
   type _To = GoldFilledIconType
   

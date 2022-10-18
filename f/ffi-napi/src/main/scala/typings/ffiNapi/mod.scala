@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
-import org.scalablytyped.runtime.TopLevel
 import typings.ffiNapi.anon.Alignment
 import typings.ffiNapi.anon.Elements
 import typings.ffiNapi.ffiNapiStrings.void
@@ -846,10 +845,16 @@ object mod {
     }
   }
   
-  type LibraryObject[T /* <: LibraryDefinitionBase */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  // catches T extends never/any (since `0` doesn't overlap with our constraint)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T] extends [never] | [0] ? any : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: T[P][2] extends undefined? ffi-napi.ffi-napi.ForeignFunction<ref-napi.ref-napi.UnderlyingType<T[P][0]>, ref-napi.ref-napi.UnderlyingTypes<T[P][1]>> : T[P][2] extends {  varargs :true}? ffi-napi.ffi-napi.VariadicForeignFunction<T[P][0], T[P][1]> : T[P][2] extends {  async :true}? (args : [...ref-napi.ref-napi.UnderlyingTypes<T[P][1]>, (err : any, value : ref-napi.ref-napi.UnderlyingType<T[P][0]>): void]): void : ffi-napi.ffi-napi.ForeignFunction<ref-napi.ref-napi.UnderlyingType<T[P][0]>, ref-napi.ref-napi.UnderlyingTypes<T[P][1]>>}
-    */ typings.ffiNapi.ffiNapiStrings.LibraryObject & TopLevel[Any]
+    }}}
+    */
+  @js.native
+  trait LibraryObject[T /* <: LibraryDefinitionBase */] extends StObject
   
   type LibraryObjectDefinitionBase = Record[
     String, 
@@ -862,10 +867,16 @@ object mod {
   
   type LibraryObjectDefinitionInferenceMarker = Record[String, js.Tuple2[void, /* argTypes */ ArgTypesInferenceMarker]]
   
-  type LibraryObjectDefinitionToLibraryDefinition[T /* <: LibraryObjectDefinitionBase */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  // catches T extends never/any (since `0` doesn't overlap with our constraint)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T] extends [never] | [0] ? any : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: [retType: ref-napi.ref-napi.CoerceType<T[P][0]>, argTypes: ref-napi.ref-napi.CoerceTypes<T[P][1]>, opts: T[P][2]]}
-    */ typings.ffiNapi.ffiNapiStrings.LibraryObjectDefinitionToLibraryDefinition & TopLevel[Any]
+    }}}
+    */
+  @js.native
+  trait LibraryObjectDefinitionToLibraryDefinition[T /* <: LibraryObjectDefinitionBase */] extends StObject
   
   type PFFI_TYPE = Pointer[typings.ffiNapi.mod.ffiType.FFI_TYPE]
   

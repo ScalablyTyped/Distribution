@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param scene The scene the AssetContainer belongs to.
   */
 open class AssetContainer ()
-  extends typings.babylonjs.legacyMod.AssetContainer {
+  extends typings.babylonjs.legacyLegacyMod.AssetContainer {
   def this(scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
 }

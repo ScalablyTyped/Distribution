@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.anon
 
-import typings.matrixAppserviceBridge.remoteMod.RemoteRoom
+import typings.matrixAppserviceBridge.libModelsRoomsRemoteMod.RemoteRoom
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

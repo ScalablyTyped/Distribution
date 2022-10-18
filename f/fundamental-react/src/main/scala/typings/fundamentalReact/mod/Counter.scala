@@ -2,7 +2,7 @@ package typings.fundamentalReact.mod
 
 import typings.fundamentalReact.anon.PartialCounterProps
 import typings.fundamentalReact.anon.WeakValidationMapCounterP
-import typings.fundamentalReact.counterMod.CounterProps
+import typings.fundamentalReact.libCounterCounterMod.CounterProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

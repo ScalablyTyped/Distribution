@@ -1,6 +1,5 @@
 package typings.maplibreGl.mod
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ open class WorkerPool () extends StObject {
   def acquire(mapId: String): js.Array[WorkerInterface] = js.native
   def acquire(mapId: Double): js.Array[WorkerInterface] = js.native
   
-  var active: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ _ in number | string ]: boolean}
-    */ typings.maplibreGl.maplibreGlStrings.WorkerPool & TopLevel[Any] = js.native
+  var active: /* import warning: importer.ImportType#apply Failed type conversion: {[ _ in number | string ]: boolean} */ js.Any = js.native
   
   def isPreloaded(): Boolean = js.native
   

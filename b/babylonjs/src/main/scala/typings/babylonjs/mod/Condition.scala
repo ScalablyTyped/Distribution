@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Condition")
 @js.native
 open class Condition protected ()
-  extends typings.babylonjs.legacyMod.Condition {
+  extends typings.babylonjs.legacyLegacyMod.Condition {
   /**
     * Creates a new Condition
     * @param actionManager the manager of the action the condition is applied to
     */
-  def this(actionManager: typings.babylonjs.actionManagerMod.ActionManager) = this()
+  def this(actionManager: typings.babylonjs.actionsActionManagerMod.ActionManager) = this()
 }

@@ -1,7 +1,7 @@
 package typings.antDesignProLayout
 
-import typings.antDesignProUtils.useStyleMod.ProAliasToken
-import typings.antDesignProUtils.useStyleMod.UseStyleResult
+import typings.antDesignProUtils.esUseStyleMod.ProAliasToken
+import typings.antDesignProUtils.esUseStyleMod.UseStyleResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

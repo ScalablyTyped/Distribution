@@ -1,7 +1,6 @@
 package typings.prosemirrorTestBuilder
 
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.TopLevel
 import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.Schema
 import typings.std.Record
@@ -20,7 +19,7 @@ object mod extends Shortcut {
   type Builder = js.Function2[
     /* testSchema */ Schema[String, String], 
     /* names */ Record[String, NodeTypeAttributes | MarkTypeAttributes], 
-    (Record[String, NodeBuilderMethod[Schema[String, String]]]) & (Record[String, MarkBuilderMethod[Schema[String, String]]]) & typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.Builder & (TopLevel[Record[String, NodeTypeAttributes | MarkTypeAttributes]])
+    (Record[String, NodeBuilderMethod[Schema[String, String]]]) & (Record[String, MarkBuilderMethod[Schema[String, String]]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof std.Record<string, prosemirror-test-builder.prosemirror-test-builder.NodeTypeAttributes | prosemirror-test-builder.prosemirror-test-builder.MarkTypeAttributes> ]: std.Record<string, prosemirror-test-builder.prosemirror-test-builder.NodeTypeAttributes | prosemirror-test-builder.prosemirror-test-builder.MarkTypeAttributes>[P] extends prosemirror-test-builder.prosemirror-test-builder.NodeTypeAttributes? prosemirror-test-builder.prosemirror-test-builder.NodeBuilderMethod<prosemirror-model.prosemirror-model.Schema<string, string>> : prosemirror-test-builder.prosemirror-test-builder.MarkBuilderMethod<prosemirror-model.prosemirror-model.Schema<string, string>>} */ js.Any)
   ]
   
   trait EqMethod extends StObject {
@@ -101,7 +100,7 @@ object mod extends Shortcut {
     @JSName("br")
     var br_Original: NodeBuilderMethod[TestSchema]
     
-    def builders[Obj /* <: Record[String, NodeTypeAttributes | MarkTypeAttributes] */, N /* <: String */, M /* <: String */](testSchema: Schema[N, M], names: Obj): (Record[N, NodeBuilderMethod[Schema[N, M]]]) & (Record[M, MarkBuilderMethod[Schema[N, M]]]) & typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ProsemirrorTestBuilder & TopLevel[Obj]
+    def builders[Obj /* <: Record[String, NodeTypeAttributes | MarkTypeAttributes] */, N /* <: String */, M /* <: String */](testSchema: Schema[N, M], names: Obj): (Record[N, NodeBuilderMethod[Schema[N, M]]]) & (Record[M, MarkBuilderMethod[Schema[N, M]]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Obj ]: Obj[P] extends prosemirror-test-builder.prosemirror-test-builder.NodeTypeAttributes? prosemirror-test-builder.prosemirror-test-builder.NodeBuilderMethod<prosemirror-model.prosemirror-model.Schema<N, M>> : prosemirror-test-builder.prosemirror-test-builder.MarkBuilderMethod<prosemirror-model.prosemirror-model.Schema<N, M>>} */ js.Any)
     @JSName("builders")
     var builders_Original: Builder
     
@@ -269,7 +268,7 @@ object mod extends Shortcut {
       a: /* args */ Args => TaggedFlatObject[TestSchema],
       blockquote: /* args */ Args => TaggedProsemirrorNode[TestSchema],
       br: /* args */ Args => TaggedProsemirrorNode[TestSchema],
-      builders: (/* testSchema */ Schema[String, String], /* names */ Record[String, NodeTypeAttributes | MarkTypeAttributes]) => (Record[String, NodeBuilderMethod[Schema[String, String]]]) & (Record[String, MarkBuilderMethod[Schema[String, String]]]) & typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.Builder & (TopLevel[Record[String, NodeTypeAttributes | MarkTypeAttributes]]),
+      builders: (/* testSchema */ Schema[String, String], /* names */ Record[String, NodeTypeAttributes | MarkTypeAttributes]) => (Record[String, NodeBuilderMethod[Schema[String, String]]]) & (Record[String, MarkBuilderMethod[Schema[String, String]]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof std.Record<string, prosemirror-test-builder.prosemirror-test-builder.NodeTypeAttributes | prosemirror-test-builder.prosemirror-test-builder.MarkTypeAttributes> ]: std.Record<string, prosemirror-test-builder.prosemirror-test-builder.NodeTypeAttributes | prosemirror-test-builder.prosemirror-test-builder.MarkTypeAttributes>[P] extends prosemirror-test-builder.prosemirror-test-builder.NodeTypeAttributes? prosemirror-test-builder.prosemirror-test-builder.NodeBuilderMethod<prosemirror-model.prosemirror-model.Schema<string, string>> : prosemirror-test-builder.prosemirror-test-builder.MarkBuilderMethod<prosemirror-model.prosemirror-model.Schema<string, string>>} */ js.Any),
       bullet_list: /* args */ Args => TaggedProsemirrorNode[TestSchema],
       code: /* args */ Args => TaggedFlatObject[TestSchema],
       code_block: /* args */ Args => TaggedProsemirrorNode[TestSchema],
@@ -312,7 +311,7 @@ object mod extends Shortcut {
       inline def setBr(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "br", js.Any.fromFunction1(value))
       
       inline def setBuilders(
-        value: (/* testSchema */ Schema[String, String], /* names */ Record[String, NodeTypeAttributes | MarkTypeAttributes]) => (Record[String, NodeBuilderMethod[Schema[String, String]]]) & (Record[String, MarkBuilderMethod[Schema[String, String]]]) & typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.Builder & (TopLevel[Record[String, NodeTypeAttributes | MarkTypeAttributes]])
+        value: (/* testSchema */ Schema[String, String], /* names */ Record[String, NodeTypeAttributes | MarkTypeAttributes]) => (Record[String, NodeBuilderMethod[Schema[String, String]]]) & (Record[String, MarkBuilderMethod[Schema[String, String]]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof std.Record<string, prosemirror-test-builder.prosemirror-test-builder.NodeTypeAttributes | prosemirror-test-builder.prosemirror-test-builder.MarkTypeAttributes> ]: std.Record<string, prosemirror-test-builder.prosemirror-test-builder.NodeTypeAttributes | prosemirror-test-builder.prosemirror-test-builder.MarkTypeAttributes>[P] extends prosemirror-test-builder.prosemirror-test-builder.NodeTypeAttributes? prosemirror-test-builder.prosemirror-test-builder.NodeBuilderMethod<prosemirror-model.prosemirror-model.Schema<string, string>> : prosemirror-test-builder.prosemirror-test-builder.MarkBuilderMethod<prosemirror-model.prosemirror-model.Schema<string, string>>} */ js.Any)
       ): Self = StObject.set(x, "builders", js.Any.fromFunction2(value))
       
       inline def setBullet_list(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "bullet_list", js.Any.fromFunction1(value))
@@ -396,8 +395,9 @@ object mod extends Shortcut {
   
   @js.native
   trait TaggedProsemirrorNode[S /* <: Schema[Any, Any] */]
-    extends Node
+    extends StObject
        with TaggedFlatObject[S]
+       with Node
   
   /* Rewritten from type alias, can be one of: 
     - typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.a

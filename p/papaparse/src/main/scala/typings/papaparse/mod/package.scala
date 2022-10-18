@@ -1,5 +1,6 @@
 package typings.papaparse.mod
 
+import typings.node.NodeJS.ReadableStream
 import typings.node.streamMod.Duplex
 import typings.papaparse.anon.Download
 import typings.papaparse.anon.Worker
@@ -7,7 +8,6 @@ import typings.papaparse.mod.^
 import typings.papaparse.papaparseStrings.Informationseparatorone
 import typings.papaparse.papaparseStrings.Informationseparatortwo
 import typings.std.File
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,13 +36,14 @@ inline def parse(stream: js.Symbol): Duplex = ^.asInstanceOf[js.Dynamic].applyDy
 inline def parse(stream: js.Symbol, config: ParseConfig[Any, Unit]): Duplex = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(stream.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Duplex]
 inline def parse[T](csvString: String): ParseResult[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(csvString.asInstanceOf[js.Any]).asInstanceOf[ParseResult[T]]
 inline def parse[T](csvString: String, config: ParseWorkerConfig[T] & Download & (ParseLocalConfig[T, LocalFile])): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(csvString.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parse[T](file: ReadableStream, config: ParseLocalConfig[T, ReadableStream]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(file.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parse[T](file: File, config: ParseLocalConfig[T, File]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(file.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def parse[T](source: String, config: (ParseConfig[T, Unit]) & Worker & (ParseLocalConfig[T, LocalFile])): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def parse[T](source: String, config: ParseRemoteConfig[T] & (ParseLocalConfig[T, LocalFile])): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def parse[T](source: LocalFile, config: ParseWorkerConfig[T] & Download & (ParseLocalConfig[T, LocalFile])): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def parse[T](source: LocalFile, config: ParseRemoteConfig[T] & (ParseLocalConfig[T, LocalFile])): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def parse[T](source: LocalFile, config: (ParseConfig[T, Unit]) & Worker & (ParseLocalConfig[T, LocalFile])): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def parse[T](url: String, config: ParseRemoteConfig[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def parse[T, TFile /* <: LocalFile */](file: TFile, config: ParseLocalConfig[T, TFile]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(file.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def parse_T_ParseResult[T](csvString: String, config: (ParseConfig[T, Unit]) & Worker): ParseResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(csvString.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ParseResult[T]]
 
@@ -51,4 +52,4 @@ inline def unparse[T](data: js.Array[T], config: UnparseConfig): String = (^.asI
 inline def unparse[T](data: UnparseObject[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(data.asInstanceOf[js.Any]).asInstanceOf[String]
 inline def unparse[T](data: UnparseObject[T], config: UnparseConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
 
-type LocalFile = File | ReadableStream[Any]
+type LocalFile = File | ReadableStream

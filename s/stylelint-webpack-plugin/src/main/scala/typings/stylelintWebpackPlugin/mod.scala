@@ -6,8 +6,8 @@ import typings.stylelint.mod.Config
 import typings.stylelint.mod.CustomSyntax
 import typings.stylelintWebpackPlugin.anon.PartialPluginOptions
 import typings.stylelintWebpackPlugin.anon.Timestamp
-import typings.stylelintWebpackPlugin.optionsMod.FormatterType
-import typings.stylelintWebpackPlugin.optionsMod.OutputReport
+import typings.stylelintWebpackPlugin.typesOptionsMod.FormatterType
+import typings.stylelintWebpackPlugin.typesOptionsMod.OutputReport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

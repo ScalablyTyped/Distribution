@@ -1,23 +1,15 @@
 package typings.remixRunRouter
 
-import typings.remixRunRouter.routerMod.Fetcher
-import typings.remixRunRouter.routerMod.Navigation
-import typings.remixRunRouter.routerMod.RevalidationState
-import typings.remixRunRouter.utilsMod.FormEncType
-import typings.remixRunRouter.utilsMod.FormMethod
+import typings.remixRunRouter.distRouterMod.Fetcher
+import typings.remixRunRouter.distRouterMod.Navigation
+import typings.remixRunRouter.distRouterMod.RevalidationState
+import typings.remixRunRouter.distUtilsMod.FormEncType
+import typings.remixRunRouter.distUtilsMod.FormMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remixRunRouterStrings {
-  
-  @js.native
-  sealed trait Asterisk extends StObject
-  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  
-  @js.native
-  sealed trait Params extends StObject
-  inline def Params: Params = "Params".asInstanceOf[Params]
   
   @js.native
   sealed trait `applicationSlashx-www-form-urlencoded`
@@ -64,10 +56,6 @@ object remixRunRouterStrings {
        with Fetcher[Any]
        with Navigation
   inline def formMethod: formMethod = "formMethod".asInstanceOf[formMethod]
-  
-  @js.native
-  sealed trait generatePath extends StObject
-  inline def generatePath: generatePath = "generatePath".asInstanceOf[generatePath]
   
   @js.native
   sealed trait get

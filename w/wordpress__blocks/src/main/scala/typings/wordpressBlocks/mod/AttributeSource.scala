@@ -1,12 +1,11 @@
 package typings.wordpressBlocks.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.wordpressBlocks.wordpressBlocksStrings.array
 import typings.wordpressBlocks.wordpressBlocksStrings.html
 import typings.wordpressBlocks.wordpressBlocksStrings.li
 import typings.wordpressBlocks.wordpressBlocksStrings.meta
 import typings.wordpressBlocks.wordpressBlocksStrings.p
-import typings.wordpressBlocks.wordpressBlocksStrings.query_
+import typings.wordpressBlocks.wordpressBlocksStrings.query
 import typings.wordpressBlocks.wordpressBlocksStrings.string
 import typings.wordpressBlocks.wordpressBlocksStrings.text
 import org.scalablytyped.runtime.StObject
@@ -172,22 +171,18 @@ object AttributeSource {
     
     var default: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var query: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-      */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[Any]
+    var query: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? U : T[k]>} */ js.Any
     
     var selector: String
     
-    var source: query_
+    var source: query
     
     var `type`: array
   }
   object Query {
     
     inline def apply[T](
-      query: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-      */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[Any],
+      query: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? U : T[k]>} */ js.Any,
       selector: String
     ): Query[T] = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], source = "query")
@@ -204,14 +199,12 @@ object AttributeSource {
       inline def setDefaultVarargs(value: Any*): Self = StObject.set(x, "default", js.Array(value*))
       
       inline def setQuery(
-        value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-        */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[Any]
+        value: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? U : T[k]>} */ js.Any
       ): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      inline def setSource(value: query_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: query): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

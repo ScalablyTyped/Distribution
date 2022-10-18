@@ -1,7 +1,7 @@
 package typings.node.http2Mod
 
-import typings.node.nodeStreamMod.Duplex
-import typings.node.nodeUrlMod.URL
+import typings.node.nodeColonstreamMod.Duplex
+import typings.node.nodeColonurlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "Slider")
 @js.native
 open class Slider protected ()
-  extends typings.carbonComponents.componentsMod.Slider {
+  extends typings.carbonComponents.globalsJsComponentsMod.Slider {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialSliderOptions) = this()
 }

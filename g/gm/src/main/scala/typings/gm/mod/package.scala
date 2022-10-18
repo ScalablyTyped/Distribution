@@ -1,9 +1,9 @@
 package typings.gm.mod
 
 import typings.gm.mod.^
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def apply(stream: String): State = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[State]
 inline def apply(stream: String, image: String): State = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[State]
+inline def apply(stream: ReadableStream): State = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[State]
+inline def apply(stream: ReadableStream, image: String): State = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[State]
 inline def apply(stream: Buffer): State = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[State]
 inline def apply(stream: Buffer, image: String): State = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[State]
-inline def apply(stream: ReadableStream[Any]): State = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[State]
-inline def apply(stream: ReadableStream[Any], image: String): State = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[State]
 inline def apply(width: Double, height: Double): State = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[State]
 inline def apply(width: Double, height: Double, color: String): State = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[State]
 

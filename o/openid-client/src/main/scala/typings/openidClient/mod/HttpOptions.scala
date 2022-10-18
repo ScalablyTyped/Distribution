@@ -1,5 +1,6 @@
 package typings.openidClient.mod
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.httpMod.Agent
@@ -76,12 +77,7 @@ object HttpOptions {
     inline def setKeyVarargs(value: (String | Buffer | KeyObject)*): Self = StObject.set(x, "key", js.Array(value*))
     
     inline def setLookup(
-      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* address */ String, 
-          /* family */ Double, 
-          Unit
-        ]) => Unit
+      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
     ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
     
     inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)

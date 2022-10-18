@@ -1,7 +1,7 @@
 package typings.yaml.anon
 
-import typings.yaml.cstMod.SourceToken
-import typings.yaml.cstMod.Token
+import typings.yaml.distParseCstMod.SourceToken
+import typings.yaml.distParseCstMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.itLengthPrefixed
 
-import typings.itLengthPrefixed.decodeMod.DecoderOptions
-import typings.itLengthPrefixed.encodeMod.EncoderOptions
+import typings.itLengthPrefixed.distSrcDecodeMod.DecoderOptions
+import typings.itLengthPrefixed.distSrcEncodeMod.EncoderOptions
 import typings.itReader.mod.Reader_
 import typings.itStreamTypes.mod.Source
 import typings.itStreamTypes.mod.Transform

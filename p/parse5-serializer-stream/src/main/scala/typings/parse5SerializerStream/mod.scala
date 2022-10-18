@@ -2,7 +2,7 @@ package typings.parse5SerializerStream
 
 import typings.node.streamMod.Readable
 import typings.parse5.distSerializerMod.SerializerOptions
-import typings.parse5.treeAdaptersInterfaceMod.TreeAdapterTypeMap
+import typings.parse5.distTreeAdaptersInterfaceMod.TreeAdapterTypeMap
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

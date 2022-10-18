@@ -1,7 +1,7 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.anon.ClassKeyTableSortLabelClassKey
+import typings.materialUiCore.anon.ClassKeyTableSortLabelClassKeyDefaultComponentD
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import typings.materialUiCore.materialUiCoreStrings.span
@@ -51,7 +51,7 @@ object tableSortLabelTableSortLabelMod extends Shortcut {
   
   type TableSortLabelProps[D /* <: ElementType[Any] */, P] = OverrideProps[TableSortLabelTypeMap[P, D], D]
   
-  type TableSortLabelTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[ClassKeyTableSortLabelClassKey[P, D]]
+  type TableSortLabelTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[ClassKeyTableSortLabelClassKeyDefaultComponentD[P, D]]
   
   type _To = ExtendButtonBase[TableSortLabelTypeMap[js.Object, span]]
   

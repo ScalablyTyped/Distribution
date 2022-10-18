@@ -5,8 +5,8 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.IterableIterator
 import typings.whatwgUrl.anon.Context
-import typings.whatwgUrl.anon.`0`
-import typings.whatwgUrl.urlImplMod.implementation
+import typings.whatwgUrl.anon.`1`
+import typings.whatwgUrl.libUrlImplMod.implementation
 import typings.whatwgUrl.whatwgUrlStrings.key
 import typings.whatwgUrl.whatwgUrlStrings.keyPlussignvalue
 import typings.whatwgUrl.whatwgUrlStrings.value
@@ -66,8 +66,8 @@ object webidl2jsWrapperMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def convert(globalObject: js.Object, obj: Any): typings.whatwgUrl.urlsearchparamsImplMod.implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(globalObject.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.urlsearchparamsImplMod.implementation]
-    inline def convert(globalObject: js.Object, obj: Any, hasContext: Context): typings.whatwgUrl.urlsearchparamsImplMod.implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(globalObject.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], hasContext.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.urlsearchparamsImplMod.implementation]
+    inline def convert(globalObject: js.Object, obj: Any): typings.whatwgUrl.libUrlsearchparamsImplMod.implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(globalObject.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.libUrlsearchparamsImplMod.implementation]
+    inline def convert(globalObject: js.Object, obj: Any, hasContext: Context): typings.whatwgUrl.libUrlsearchparamsImplMod.implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(globalObject.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], hasContext.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.libUrlsearchparamsImplMod.implementation]
     
     inline def create(globalObject: js.Object): typings.whatwgUrl.mod.URLSearchParams = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(globalObject.asInstanceOf[js.Any]).asInstanceOf[typings.whatwgUrl.mod.URLSearchParams]
     inline def create(
@@ -81,31 +81,35 @@ object webidl2jsWrapperMod {
       constructorArgs: js.Array[
           /* init */ (js.Array[js.Tuple2[/* name */ String, /* value */ String]]) | StringDictionary[String] | String
         ],
-      privateData: `0`
+      privateData: `1`
     ): typings.whatwgUrl.mod.URLSearchParams = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(globalObject.asInstanceOf[js.Any], constructorArgs.asInstanceOf[js.Any], privateData.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.mod.URLSearchParams]
-    inline def create(globalObject: js.Object, constructorArgs: Unit, privateData: `0`): typings.whatwgUrl.mod.URLSearchParams = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(globalObject.asInstanceOf[js.Any], constructorArgs.asInstanceOf[js.Any], privateData.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.mod.URLSearchParams]
+    inline def create(globalObject: js.Object, constructorArgs: Unit, privateData: `1`): typings.whatwgUrl.mod.URLSearchParams = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(globalObject.asInstanceOf[js.Any], constructorArgs.asInstanceOf[js.Any], privateData.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.mod.URLSearchParams]
     
     inline def createDefaultIterator[TIteratorKind /* <: key | value | keyPlussignvalue */](
       globalObject: js.Object,
-      target: typings.whatwgUrl.urlsearchparamsImplMod.implementation,
+      target: typings.whatwgUrl.libUrlsearchparamsImplMod.implementation,
       kind: TIteratorKind
-    ): IterableIterator[(js.Tuple2[/* name */ String, /* value */ String]) | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultIterator")(globalObject.asInstanceOf[js.Any], target.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[(js.Tuple2[/* name */ String, /* value */ String]) | String]]
+    ): IterableIterator[
+        /* import warning: importer.ImportType#apply Failed type conversion: TIteratorKind extends 'key' | 'value' ? string : [name: string, value: string] */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultIterator")(globalObject.asInstanceOf[js.Any], target.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[
+        /* import warning: importer.ImportType#apply Failed type conversion: TIteratorKind extends 'key' | 'value' ? string : [name: string, value: string] */ js.Any
+      ]]
     
-    inline def createImpl(globalObject: js.Object): typings.whatwgUrl.urlsearchparamsImplMod.implementation = ^.asInstanceOf[js.Dynamic].applyDynamic("createImpl")(globalObject.asInstanceOf[js.Any]).asInstanceOf[typings.whatwgUrl.urlsearchparamsImplMod.implementation]
+    inline def createImpl(globalObject: js.Object): typings.whatwgUrl.libUrlsearchparamsImplMod.implementation = ^.asInstanceOf[js.Dynamic].applyDynamic("createImpl")(globalObject.asInstanceOf[js.Any]).asInstanceOf[typings.whatwgUrl.libUrlsearchparamsImplMod.implementation]
     inline def createImpl(
       globalObject: js.Object,
       constructorArgs: js.Array[
           /* init */ (js.Array[js.Tuple2[/* name */ String, /* value */ String]]) | StringDictionary[String] | String
         ]
-    ): typings.whatwgUrl.urlsearchparamsImplMod.implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("createImpl")(globalObject.asInstanceOf[js.Any], constructorArgs.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.urlsearchparamsImplMod.implementation]
+    ): typings.whatwgUrl.libUrlsearchparamsImplMod.implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("createImpl")(globalObject.asInstanceOf[js.Any], constructorArgs.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.libUrlsearchparamsImplMod.implementation]
     inline def createImpl(
       globalObject: js.Object,
       constructorArgs: js.Array[
           /* init */ (js.Array[js.Tuple2[/* name */ String, /* value */ String]]) | StringDictionary[String] | String
         ],
-      privateData: `0`
-    ): typings.whatwgUrl.urlsearchparamsImplMod.implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("createImpl")(globalObject.asInstanceOf[js.Any], constructorArgs.asInstanceOf[js.Any], privateData.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.urlsearchparamsImplMod.implementation]
-    inline def createImpl(globalObject: js.Object, constructorArgs: Unit, privateData: `0`): typings.whatwgUrl.urlsearchparamsImplMod.implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("createImpl")(globalObject.asInstanceOf[js.Any], constructorArgs.asInstanceOf[js.Any], privateData.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.urlsearchparamsImplMod.implementation]
+      privateData: `1`
+    ): typings.whatwgUrl.libUrlsearchparamsImplMod.implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("createImpl")(globalObject.asInstanceOf[js.Any], constructorArgs.asInstanceOf[js.Any], privateData.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.libUrlsearchparamsImplMod.implementation]
+    inline def createImpl(globalObject: js.Object, constructorArgs: Unit, privateData: `1`): typings.whatwgUrl.libUrlsearchparamsImplMod.implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("createImpl")(globalObject.asInstanceOf[js.Any], constructorArgs.asInstanceOf[js.Any], privateData.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.libUrlsearchparamsImplMod.implementation]
     
     inline def install(globalObject: js.Object, globalNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(globalObject.asInstanceOf[js.Any], globalNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -119,14 +123,14 @@ object webidl2jsWrapperMod {
       * Useful when implementing specifications that initialize objects
       * in different ways than their constructors do.
       */
-    inline def `new`(globalObject: js.Object): typings.whatwgUrl.urlsearchparamsImplMod.implementation = ^.asInstanceOf[js.Dynamic].applyDynamic("new")(globalObject.asInstanceOf[js.Any]).asInstanceOf[typings.whatwgUrl.urlsearchparamsImplMod.implementation]
+    inline def `new`(globalObject: js.Object): typings.whatwgUrl.libUrlsearchparamsImplMod.implementation = ^.asInstanceOf[js.Dynamic].applyDynamic("new")(globalObject.asInstanceOf[js.Any]).asInstanceOf[typings.whatwgUrl.libUrlsearchparamsImplMod.implementation]
     inline def `new`(
       globalObject: js.Object,
       newTarget: Instantiable1[
           /* init */ (js.Array[js.Tuple2[/* name */ String, /* value */ String]]) | StringDictionary[String] | String, 
           typings.whatwgUrl.mod.URLSearchParams
         ]
-    ): typings.whatwgUrl.urlsearchparamsImplMod.implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("new")(globalObject.asInstanceOf[js.Any], newTarget.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.urlsearchparamsImplMod.implementation]
+    ): typings.whatwgUrl.libUrlsearchparamsImplMod.implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("new")(globalObject.asInstanceOf[js.Any], newTarget.asInstanceOf[js.Any])).asInstanceOf[typings.whatwgUrl.libUrlsearchparamsImplMod.implementation]
     
     inline def setup[T /* <: typings.whatwgUrl.mod.URLSearchParams */](obj: T, globalObject: js.Object): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(obj.asInstanceOf[js.Any], globalObject.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def setup[T /* <: typings.whatwgUrl.mod.URLSearchParams */](
@@ -142,8 +146,8 @@ object webidl2jsWrapperMod {
       constructorArgs: js.Array[
           /* init */ (js.Array[js.Tuple2[/* name */ String, /* value */ String]]) | StringDictionary[String] | String
         ],
-      privateData: `0`
+      privateData: `1`
     ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(obj.asInstanceOf[js.Any], globalObject.asInstanceOf[js.Any], constructorArgs.asInstanceOf[js.Any], privateData.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def setup[T /* <: typings.whatwgUrl.mod.URLSearchParams */](obj: T, globalObject: js.Object, constructorArgs: Unit, privateData: `0`): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(obj.asInstanceOf[js.Any], globalObject.asInstanceOf[js.Any], constructorArgs.asInstanceOf[js.Any], privateData.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def setup[T /* <: typings.whatwgUrl.mod.URLSearchParams */](obj: T, globalObject: js.Object, constructorArgs: Unit, privateData: `1`): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(obj.asInstanceOf[js.Any], globalObject.asInstanceOf[js.Any], constructorArgs.asInstanceOf[js.Any], privateData.asInstanceOf[js.Any])).asInstanceOf[T]
   }
 }

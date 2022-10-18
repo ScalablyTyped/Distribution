@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class FleeBehavior ()
   extends typings.yuka.mod.FleeBehavior {
-  def this(target: typings.yuka.vector3Mod.Vector3) = this()
+  def this(target: typings.yuka.srcMathVector3Mod.Vector3) = this()
   def this(target: Unit, panicDistance: Double) = this()
-  def this(target: typings.yuka.vector3Mod.Vector3, panicDistance: Double) = this()
+  def this(target: typings.yuka.srcMathVector3Mod.Vector3, panicDistance: Double) = this()
 }

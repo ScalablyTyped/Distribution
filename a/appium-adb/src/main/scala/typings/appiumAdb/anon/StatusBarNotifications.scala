@@ -1,6 +1,6 @@
 package typings.appiumAdb.anon
 
-import typings.appiumAdb.settingsClientCommandsMod.StatusBarNotification
+import typings.appiumAdb.libToolsSettingsClientCommandsMod.StatusBarNotification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

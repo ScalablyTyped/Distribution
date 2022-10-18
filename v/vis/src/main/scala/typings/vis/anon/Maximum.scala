@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Maximum extends StObject {
   
   var maximum: js.UndefOr[Double] = js.undefined
-  
-  var minimum: js.UndefOr[Double] = js.undefined
 }
 object Maximum {
   
@@ -22,9 +20,5 @@ object Maximum {
     inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
     inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
-    
-    inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
-    
-    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
   }
 }

@@ -99,7 +99,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Omit<react.react.SelectHTMLAttributes<std.HTMLSelectElement>, keyof @storybook/components.@storybook/components.InputStyleProps> & @storybook/components.@storybook/components.InputStyleProps & react.react.RefAttributes<any> & @storybook/theming.@storybook/theming.DistributiveOmit<std.Omit<react.react.SelectHTMLAttributes<std.HTMLSelectElement>, keyof @storybook/components.@storybook/components.InputStyleProps> & @storybook/components.@storybook/components.InputStyleProps, 'theme'> & @storybook/theming.anon.1<@storybook/theming.@storybook/theming.Theme> */
+/* Inlined std.Omit<react.react.SelectHTMLAttributes<std.HTMLSelectElement>, keyof @storybook/components.@storybook/components.InputStyleProps> & @storybook/components.@storybook/components.InputStyleProps & react.react.RefAttributes<any> & @storybook/theming.@storybook/theming.DistributiveOmit<std.Omit<react.react.SelectHTMLAttributes<std.HTMLSelectElement>, keyof @storybook/components.@storybook/components.InputStyleProps> & @storybook/components.@storybook/components.InputStyleProps, 'theme'> & @storybook/theming.anon.0<@storybook/theming.@storybook/theming.Theme> */
 trait OmitSelectHTMLAttributesHAbout extends StObject {
   
   var about: js.UndefOr[String] = js.undefined

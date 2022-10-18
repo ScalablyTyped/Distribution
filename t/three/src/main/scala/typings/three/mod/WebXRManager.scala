@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "WebXRManager")
 @js.native
 open class WebXRManager protected ()
-  extends typings.three.threeMod.WebXRManager {
+  extends typings.three.srcThreeMod.WebXRManager {
   def this(renderer: Any, gl: WebGLRenderingContext) = this()
 }

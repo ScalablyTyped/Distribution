@@ -11,10 +11,10 @@ object mod {
   object EndpointURLScheme extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.awsSdkTypes.endpointMod.EndpointURLScheme & String] = js.native
+    def apply(value: String): js.UndefOr[typings.awsSdkTypes.distTypesEndpointMod.EndpointURLScheme & String] = js.native
     
-    /* "http" */ val HTTP: typings.awsSdkTypes.endpointMod.EndpointURLScheme.HTTP & String = js.native
+    /* "http" */ val HTTP: typings.awsSdkTypes.distTypesEndpointMod.EndpointURLScheme.HTTP & String = js.native
     
-    /* "https" */ val HTTPS: typings.awsSdkTypes.endpointMod.EndpointURLScheme.HTTPS & String = js.native
+    /* "https" */ val HTTPS: typings.awsSdkTypes.distTypesEndpointMod.EndpointURLScheme.HTTPS & String = js.native
   }
 }

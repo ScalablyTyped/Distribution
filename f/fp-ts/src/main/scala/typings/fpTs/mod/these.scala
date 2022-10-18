@@ -1,31 +1,30 @@
 package typings.fpTs.mod
 
-import typings.fpTs.applicativeMod.Applicative2C
-import typings.fpTs.applyMod.Apply2C
-import typings.fpTs.bifunctorMod.Bifunctor2
-import typings.fpTs.chainMod.Chain2C
-import typings.fpTs.eqMod.Eq
-import typings.fpTs.foldableMod.Foldable2
-import typings.fpTs.fpTsStrings.Option
 import typings.fpTs.fpTsStrings.These
-import typings.fpTs.fromEitherMod.FromEither2
-import typings.fpTs.fromTheseMod.FromThese2
-import typings.fpTs.functionMod.Lazy
-import typings.fpTs.functorMod.Functor2
-import typings.fpTs.monadMod.Monad2C
-import typings.fpTs.monadThrowMod.MonadThrow2C
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.naturalTransformationMod.NaturalTransformation12C
-import typings.fpTs.optionMod.Option_
-import typings.fpTs.pointedMod.Pointed2
-import typings.fpTs.predicateMod.Predicate
-import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.showMod.Show
-import typings.fpTs.theseMod.These_
-import typings.fpTs.traversableMod.PipeableTraverse2
-import typings.fpTs.traversableMod.Sequence2
-import typings.fpTs.traversableMod.Traversable2
+import typings.fpTs.libApplicativeMod.Applicative2C
+import typings.fpTs.libApplyMod.Apply2C
+import typings.fpTs.libBifunctorMod.Bifunctor2
+import typings.fpTs.libChainMod.Chain2C
+import typings.fpTs.libEqMod.Eq
+import typings.fpTs.libFoldableMod.Foldable2
+import typings.fpTs.libFromEitherMod.FromEither2
+import typings.fpTs.libFromTheseMod.FromThese2
+import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctorMod.Functor2
+import typings.fpTs.libMonadMod.Monad2C
+import typings.fpTs.libMonadThrowMod.MonadThrow2C
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libOptionMod.Option_
+import typings.fpTs.libPointedMod.Pointed2
+import typings.fpTs.libPredicateMod.Predicate
+import typings.fpTs.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
+import typings.fpTs.libRefinementMod.Refinement
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libShowMod.Show
+import typings.fpTs.libTheseMod.These_
+import typings.fpTs.libTraversableMod.PipeableTraverse2
+import typings.fpTs.libTraversableMod.Sequence2
+import typings.fpTs.libTraversableMod.Traversable2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,31 +41,31 @@ object these {
   
   @JSImport("fp-ts", "these.Bifunctor")
   @js.native
-  val Bifunctor: Bifunctor2[typings.fpTs.theseMod.URI] = js.native
+  val Bifunctor: Bifunctor2[typings.fpTs.libTheseMod.URI] = js.native
   
   @JSImport("fp-ts", "these.Foldable")
   @js.native
-  val Foldable: Foldable2[typings.fpTs.theseMod.URI] = js.native
+  val Foldable: Foldable2[typings.fpTs.libTheseMod.URI] = js.native
   
   @JSImport("fp-ts", "these.FromEither")
   @js.native
-  val FromEither: FromEither2[typings.fpTs.theseMod.URI] = js.native
+  val FromEither: FromEither2[typings.fpTs.libTheseMod.URI] = js.native
   
   @JSImport("fp-ts", "these.FromThese")
   @js.native
-  val FromThese: FromThese2[typings.fpTs.theseMod.URI] = js.native
+  val FromThese: FromThese2[typings.fpTs.libTheseMod.URI] = js.native
   
   @JSImport("fp-ts", "these.Functor")
   @js.native
-  val Functor: Functor2[typings.fpTs.theseMod.URI] = js.native
+  val Functor: Functor2[typings.fpTs.libTheseMod.URI] = js.native
   
   @JSImport("fp-ts", "these.Pointed")
   @js.native
-  val Pointed: Pointed2[typings.fpTs.theseMod.URI] = js.native
+  val Pointed: Pointed2[typings.fpTs.libTheseMod.URI] = js.native
   
   @JSImport("fp-ts", "these.Traversable")
   @js.native
-  val Traversable: Traversable2[typings.fpTs.theseMod.URI] = js.native
+  val Traversable: Traversable2[typings.fpTs.libTheseMod.URI] = js.native
   
   @JSImport("fp-ts", "these.URI")
   @js.native
@@ -96,7 +95,7 @@ object these {
     onBoth: js.Function2[/* e */ E, /* a */ A, D]
   ): js.Function1[/* fa */ These_[E, A], B | C | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldW")(onLeft.asInstanceOf[js.Any], onRight.asInstanceOf[js.Any], onBoth.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ These_[E, A], B | C | D]]
   
-  inline def fromOption[E](onNone: Lazy[E]): NaturalTransformation12C[Option, These, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[NaturalTransformation12C[Option, These, E]]
+  inline def fromOption[E](onNone: Lazy[E]): js.Function1[/* fa */ Option_[Any], These_[E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[Any], These_[E, Any]]]
   
   inline def fromOptionK[E](onNone: Lazy[E]): js.Function1[
     /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
@@ -108,11 +107,15 @@ object these {
   
   inline def fromOptions[E, A](fe: Option_[E], fa: Option_[A]): Option_[These_[E, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(fe.asInstanceOf[js.Any], fa.asInstanceOf[js.Any])).asInstanceOf[Option_[These_[E, A]]]
   
-  inline def getApplicative[E](S: Semigroup[E]): Applicative2C[typings.fpTs.theseMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicative")(S.asInstanceOf[js.Any]).asInstanceOf[Applicative2C[typings.fpTs.theseMod.URI, E]]
+  inline def fromPredicate[A, E](predicate: Predicate[A], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* b */ A, These_[E, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* b */ A, These_[E, A]]]
+  
+  inline def fromPredicate_ABE[A, B /* <: A */, E](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, These_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, These_[E, B]]]
+  
+  inline def getApplicative[E](S: Semigroup[E]): Applicative2C[typings.fpTs.libTheseMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicative")(S.asInstanceOf[js.Any]).asInstanceOf[Applicative2C[typings.fpTs.libTheseMod.URI, E]]
   
   inline def getApply[E](S: Semigroup[E]): Apply2C[These, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApply")(S.asInstanceOf[js.Any]).asInstanceOf[Apply2C[These, E]]
   
-  inline def getChain[E](S: Semigroup[E]): Chain2C[typings.fpTs.theseMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChain")(S.asInstanceOf[js.Any]).asInstanceOf[Chain2C[typings.fpTs.theseMod.URI, E]]
+  inline def getChain[E](S: Semigroup[E]): Chain2C[typings.fpTs.libTheseMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChain")(S.asInstanceOf[js.Any]).asInstanceOf[Chain2C[typings.fpTs.libTheseMod.URI, E]]
   
   inline def getEq[E, A](EE: Eq[E], EA: Eq[A]): Eq[These_[E, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEq")(EE.asInstanceOf[js.Any], EA.asInstanceOf[js.Any])).asInstanceOf[Eq[These_[E, A]]]
   
@@ -120,7 +123,7 @@ object these {
   
   inline def getLeftOnly[E, A](fa: These_[E, A]): Option_[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLeftOnly")(fa.asInstanceOf[js.Any]).asInstanceOf[Option_[E]]
   
-  inline def getMonad[E](S: Semigroup[E]): (Monad2C[typings.fpTs.theseMod.URI, E]) & (MonadThrow2C[typings.fpTs.theseMod.URI, E]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonad")(S.asInstanceOf[js.Any]).asInstanceOf[(Monad2C[typings.fpTs.theseMod.URI, E]) & (MonadThrow2C[typings.fpTs.theseMod.URI, E])]
+  inline def getMonad[E](S: Semigroup[E]): (Monad2C[typings.fpTs.libTheseMod.URI, E]) & (MonadThrow2C[typings.fpTs.libTheseMod.URI, E]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonad")(S.asInstanceOf[js.Any]).asInstanceOf[(Monad2C[typings.fpTs.libTheseMod.URI, E]) & (MonadThrow2C[typings.fpTs.libTheseMod.URI, E])]
   
   inline def getRight[E, A](fa: These_[E, A]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRight")(fa.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
   
@@ -168,13 +171,13 @@ object these {
   
   @JSImport("fp-ts", "these.sequence")
   @js.native
-  val sequence: Sequence2[typings.fpTs.theseMod.URI] = js.native
+  val sequence: Sequence2[typings.fpTs.libTheseMod.URI] = js.native
   
   inline def swap[E, A](fa: These_[E, A]): These_[A, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("swap")(fa.asInstanceOf[js.Any]).asInstanceOf[These_[A, E]]
   
   @JSImport("fp-ts", "these.these")
   @js.native
-  val these: Functor2[typings.fpTs.theseMod.URI] & Bifunctor2[typings.fpTs.theseMod.URI] & Foldable2[typings.fpTs.theseMod.URI] & Traversable2[typings.fpTs.theseMod.URI] = js.native
+  val these: Functor2[typings.fpTs.libTheseMod.URI] & Bifunctor2[typings.fpTs.libTheseMod.URI] & Foldable2[typings.fpTs.libTheseMod.URI] & Traversable2[typings.fpTs.libTheseMod.URI] = js.native
   
   inline def toTuple[E, A](e: E, a: A): js.Function1[/* fa */ These_[E, A], js.Tuple2[E, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTuple")(e.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ These_[E, A], js.Tuple2[E, A]]]
   
@@ -182,7 +185,7 @@ object these {
   
   @JSImport("fp-ts", "these.traverse")
   @js.native
-  val traverse: PipeableTraverse2[typings.fpTs.theseMod.URI] = js.native
+  val traverse: PipeableTraverse2[typings.fpTs.libTheseMod.URI] = js.native
   
   inline def traverseReadonlyArrayWithIndex[E](S: Semigroup[E]): js.Function1[
     /* f */ js.Function2[/* index */ Double, /* a */ Any, These_[E, Any]], 
@@ -200,9 +203,10 @@ object these {
     js.Function1[/* as */ ReadonlyNonEmptyArray_[Any], These_[E, ReadonlyNonEmptyArray_[Any]]]
   ]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native
-    trait URItoKind[A] extends StObject
+    trait URItoKind2[E, A] extends StObject
   }
 }

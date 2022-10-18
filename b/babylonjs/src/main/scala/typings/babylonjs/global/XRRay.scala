@@ -6,23 +6,24 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// Experimental/Draft features
+// AR Hit testing
 @JSGlobal("XRRay")
 @js.native
-open class XRRay protected ()
+open class XRRay ()
   extends StObject
      with typings.babylonjs.XRRay {
   def this(transformOrOrigin: typings.babylonjs.XRRigidTransform) = this()
   def this(transformOrOrigin: DOMPointInit) = this()
+  def this(transformOrOrigin: Unit, direction: DOMPointInit) = this()
   def this(transformOrOrigin: typings.babylonjs.XRRigidTransform, direction: DOMPointInit) = this()
   def this(transformOrOrigin: DOMPointInit, direction: DOMPointInit) = this()
   
   /* CompleteClass */
-  var direction: DOMPointReadOnly = js.native
+  override val direction: DOMPointReadOnly = js.native
   
   /* CompleteClass */
-  var matrix: js.typedarray.Float32Array = js.native
+  override val matrix: js.typedarray.Float32Array = js.native
   
   /* CompleteClass */
-  var origin: DOMPointReadOnly = js.native
+  override val origin: DOMPointReadOnly = js.native
 }

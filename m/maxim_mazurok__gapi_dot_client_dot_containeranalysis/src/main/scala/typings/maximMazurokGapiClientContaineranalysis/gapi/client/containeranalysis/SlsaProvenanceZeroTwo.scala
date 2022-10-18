@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SlsaProvenanceZeroTwo extends StObject {
   
   var buildConfig: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.SlsaProvenanceZeroTwo & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   var buildType: js.UndefOr[String] = js.undefined
@@ -33,9 +30,7 @@ object SlsaProvenanceZeroTwo {
   extension [Self <: SlsaProvenanceZeroTwo](x: Self) {
     
     inline def setBuildConfig(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.SlsaProvenanceZeroTwo & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "buildConfig", value.asInstanceOf[js.Any])
     
     inline def setBuildConfigUndefined: Self = StObject.set(x, "buildConfig", js.undefined)

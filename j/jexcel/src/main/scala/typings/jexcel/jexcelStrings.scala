@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object jexcelStrings {
   
   @js.native
-  sealed trait InitializationOptions extends StObject
-  inline def InitializationOptions: InitializationOptions = "InitializationOptions".asInstanceOf[InitializationOptions]
-  
-  @js.native
-  sealed trait UnDocumentOptions extends StObject
-  inline def UnDocumentOptions: UnDocumentOptions = "UnDocumentOptions".asInstanceOf[UnDocumentOptions]
-  
-  @js.native
   sealed trait autocomplete extends StObject
   inline def autocomplete: autocomplete = "autocomplete".asInstanceOf[autocomplete]
   

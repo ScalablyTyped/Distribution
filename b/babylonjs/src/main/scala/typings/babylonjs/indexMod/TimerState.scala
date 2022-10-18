@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TimerState extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.timerMod.TimerState & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.miscTimerMod.TimerState & Double] = js.native
   
-  /* 2 */ val ENDED: typings.babylonjs.timerMod.TimerState.ENDED & Double = js.native
+  /* 2 */ val ENDED: typings.babylonjs.miscTimerMod.TimerState.ENDED & Double = js.native
   
-  /* 0 */ val INIT: typings.babylonjs.timerMod.TimerState.INIT & Double = js.native
+  /* 0 */ val INIT: typings.babylonjs.miscTimerMod.TimerState.INIT & Double = js.native
   
-  /* 1 */ val STARTED: typings.babylonjs.timerMod.TimerState.STARTED & Double = js.native
+  /* 1 */ val STARTED: typings.babylonjs.miscTimerMod.TimerState.STARTED & Double = js.native
 }

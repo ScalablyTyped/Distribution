@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ComputeShader")
 @js.native
 open class ComputeShader protected ()
-  extends typings.babylonjs.legacyMod.ComputeShader {
+  extends typings.babylonjs.legacyLegacyMod.ComputeShader {
   /**
     * Instantiates a new compute shader.
     * @param name Defines the name of the compute shader in the scene
@@ -20,10 +20,10 @@ open class ComputeShader protected ()
     *  * string: try first to find the code in ShaderStore.ShadersStoreWGSL[shaderPath + "ComputeShader"]. If not, assumes it is a file with name shaderPath.compute.fx in index.html folder.
     * @param options Define the options used to create the shader
     */
-  def this(name: String, engine: typings.babylonjs.thinEngineMod.ThinEngine, shaderPath: Any) = this()
+  def this(name: String, engine: typings.babylonjs.enginesThinEngineMod.ThinEngine, shaderPath: Any) = this()
   def this(
     name: String,
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
     shaderPath: Any,
     options: PartialIComputeShaderOpti
   ) = this()
@@ -42,5 +42,5 @@ object ComputeShader {
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
     * @returns a new compute shader
     */
-  inline def Parse(source: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.computeShaderMod.ComputeShader = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.computeShaderMod.ComputeShader]
+  inline def Parse(source: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.computeComputeShaderMod.ComputeShader = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.computeComputeShaderMod.ComputeShader]
 }

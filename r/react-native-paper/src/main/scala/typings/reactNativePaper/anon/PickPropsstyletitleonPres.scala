@@ -5,7 +5,7 @@ import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.iconMod.IconSource
+import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ trait PickPropsstyletitleonPres extends StObject {
   
   var testID: js.UndefOr[String] = js.undefined
   
-  var theme: js.UndefOr[DeepPartialTheme] = js.undefined
+  var theme: js.UndefOr[DeepPartialThemeDark] = js.undefined
   
   var title: ReactNode
   
@@ -78,7 +78,7 @@ object PickPropsstyletitleonPres {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: DeepPartialTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: DeepPartialThemeDark): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     

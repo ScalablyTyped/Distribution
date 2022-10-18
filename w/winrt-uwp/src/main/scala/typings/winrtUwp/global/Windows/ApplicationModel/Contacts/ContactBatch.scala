@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a group of Contact objects and server search status. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactBatch")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactBatch")
 @js.native
-abstract class ContactBatch ()
+open class ContactBatch ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactBatch {
   

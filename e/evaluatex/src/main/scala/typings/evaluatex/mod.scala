@@ -3,7 +3,7 @@ package typings.evaluatex
 import org.scalablytyped.runtime.Shortcut
 import typings.evaluatex.anon.Latex
 import typings.evaluatex.anon.Name
-import typings.evaluatex.evaluatexMod.Constant
+import typings.evaluatex.distEvaluatexMod.Constant
 import typings.evaluatex.evaluatexStrings.COMMAND
 import typings.evaluatex.evaluatexStrings.DIVIDE
 import typings.evaluatex.evaluatexStrings.INVERSE

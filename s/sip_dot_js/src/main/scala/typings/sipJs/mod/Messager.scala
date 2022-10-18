@@ -1,6 +1,6 @@
 package typings.sipJs.mod
 
-import typings.sipJs.messagerOptionsMod.MessagerOptions
+import typings.sipJs.libApiMessagerOptionsMod.MessagerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Messager")
 @js.native
 open class Messager protected ()
-  extends typings.sipJs.apiMod.Messager {
+  extends typings.sipJs.libApiMod.Messager {
   /**
     * Constructs a new instance of the `Messager` class.
     * @param userAgent - User agent. See {@link UserAgent} for details.
@@ -18,26 +18,26 @@ open class Messager protected ()
     * @param options - Options bucket. See {@link MessagerOptions} for details.
     */
   def this(
-    userAgent: typings.sipJs.userAgentMod.UserAgent,
-    targetURI: typings.sipJs.coreMod.URI,
+    userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
+    targetURI: typings.sipJs.libCoreMod.URI,
     content: String
   ) = this()
   def this(
-    userAgent: typings.sipJs.userAgentMod.UserAgent,
-    targetURI: typings.sipJs.coreMod.URI,
+    userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
+    targetURI: typings.sipJs.libCoreMod.URI,
     content: String,
     contentType: String
   ) = this()
   def this(
-    userAgent: typings.sipJs.userAgentMod.UserAgent,
-    targetURI: typings.sipJs.coreMod.URI,
+    userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
+    targetURI: typings.sipJs.libCoreMod.URI,
     content: String,
     contentType: String,
     options: MessagerOptions
   ) = this()
   def this(
-    userAgent: typings.sipJs.userAgentMod.UserAgent,
-    targetURI: typings.sipJs.coreMod.URI,
+    userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
+    targetURI: typings.sipJs.libCoreMod.URI,
     content: String,
     contentType: Unit,
     options: MessagerOptions

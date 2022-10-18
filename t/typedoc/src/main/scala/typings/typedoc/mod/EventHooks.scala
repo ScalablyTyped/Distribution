@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "EventHooks")
 @js.native
 open class EventHooks[T /* <: Record[/* keyof T */ String, js.Array[Any]] */, R] ()
-  extends typings.typedoc.libUtilsMod.EventHooks[T, R]
+  extends typings.typedoc.distLibUtilsMod.EventHooks[T, R]

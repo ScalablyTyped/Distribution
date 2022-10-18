@@ -1,8 +1,8 @@
 package typings.grommet.anon
 
-import typings.grommet.boxMod.BoxProps
-import typings.grommet.headingMod.HeadingProps
-import typings.grommet.paragraphMod.ParagraphProps
+import typings.grommet.componentsBoxMod.BoxProps
+import typings.grommet.componentsHeadingMod.HeadingProps
+import typings.grommet.componentsParagraphMod.ParagraphProps
 import typings.grommet.utilsMod.PadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,7 @@ trait Parent extends StObject {
   
   var responsive: js.UndefOr[Areas] = js.undefined
   
-  var size: js.UndefOr[MediumSmall] = js.undefined
+  var size: js.UndefOr[LargeMedium] = js.undefined
   
   var small: js.UndefOr[Columns] = js.undefined
   
@@ -63,7 +63,7 @@ object Parent {
     
     inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
     
-    inline def setSize(value: MediumSmall): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: LargeMedium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     

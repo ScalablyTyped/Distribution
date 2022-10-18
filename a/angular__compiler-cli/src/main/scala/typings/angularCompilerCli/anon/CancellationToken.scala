@@ -1,9 +1,9 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.transformersApiMod.EmitFlags
-import typings.angularCompilerCli.transformersApiMod.TsEmitArguments
-import typings.angularCompilerCli.transformersApiMod.TsEmitCallback
-import typings.angularCompilerCli.transformersApiMod.TsMergeEmitResultsCallback
+import typings.angularCompilerCli.srcTransformersApiMod.EmitFlags
+import typings.angularCompilerCli.srcTransformersApiMod.TsEmitArguments
+import typings.angularCompilerCli.srcTransformersApiMod.TsEmitCallback
+import typings.angularCompilerCli.srcTransformersApiMod.TsMergeEmitResultsCallback
 import typings.typescript.mod.EmitResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,7 @@ trait CancellationToken extends StObject {
   
   var cancellationToken: js.UndefOr[typings.typescript.mod.CancellationToken] = js.undefined
   
-  var customTransformers: js.UndefOr[typings.angularCompilerCli.transformersApiMod.CustomTransformers] = js.undefined
+  var customTransformers: js.UndefOr[typings.angularCompilerCli.srcTransformersApiMod.CustomTransformers] = js.undefined
   
   var emitCallback: js.UndefOr[TsEmitCallback] = js.undefined
   
@@ -36,7 +36,7 @@ object CancellationToken {
     
     inline def setCancellationTokenUndefined: Self = StObject.set(x, "cancellationToken", js.undefined)
     
-    inline def setCustomTransformers(value: typings.angularCompilerCli.transformersApiMod.CustomTransformers): Self = StObject.set(x, "customTransformers", value.asInstanceOf[js.Any])
+    inline def setCustomTransformers(value: typings.angularCompilerCli.srcTransformersApiMod.CustomTransformers): Self = StObject.set(x, "customTransformers", value.asInstanceOf[js.Any])
     
     inline def setCustomTransformersUndefined: Self = StObject.set(x, "customTransformers", js.undefined)
     

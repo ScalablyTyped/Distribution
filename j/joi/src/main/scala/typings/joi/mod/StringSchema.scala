@@ -10,12 +10,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StringSchema
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.joi.mod.Schema because Already inherited */ @js.native
+trait StringSchema[TSchema]
   extends StObject
-     with AnySchema[Any]
-     with _ObjectPropertiesSchema[Any]
-     with _Schema[Any] {
+     with AnySchema[TSchema] {
   
   /**
     * Requires the string value to only contain a-z, A-Z, and 0-9.

@@ -17,7 +17,7 @@ object selectSelectMod {
   
   inline def default(
     props: ComponentProps[
-      (Instantiable1[/* props */ SelectProps, typings.baseui.selectComponentMod.default]) & TypeofSelectComponent
+      (Instantiable1[/* props */ SelectProps, typings.baseui.selectSelectComponentMod.default]) & TypeofSelectComponent
     ]
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

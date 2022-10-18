@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,9 +32,7 @@ trait GoogleCloudDialogflowV2IntentMessage extends StObject {
   
   /** A custom platform-specific response. */
   var payload: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2IntentMessage & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Optional. The platform that this message is intended for. */
@@ -98,9 +95,7 @@ object GoogleCloudDialogflowV2IntentMessage {
     inline def setMediaContentUndefined: Self = StObject.set(x, "mediaContent", js.undefined)
     
     inline def setPayload(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2IntentMessage & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)

@@ -1313,7 +1313,7 @@ trait Range extends StObject {
   @JSName("Precedents")
   val Precedents_Original: Range = js.native
   
-  val PrefixCharacter: String | Quotationmark | ^ | _empty = js.native
+  val PrefixCharacter: (/* ' */ String) | Quotationmark | ^ | _empty = js.native
   
   def Previous(Address: String): Range = js.native
   def Previous(RowIndex: Double): Range = js.native

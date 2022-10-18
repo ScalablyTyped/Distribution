@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AnimatedInputBlockTypes extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.babylonjs.materialsNodeBlocksInputAnimatedInputBlockTypesMod.AnimatedInputBlockTypes & Double
+  ] = js.native
   
-  /* 0 */ val None: typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes.None & Double = js.native
+  /* 0 */ val None: typings.babylonjs.materialsNodeBlocksInputAnimatedInputBlockTypesMod.AnimatedInputBlockTypes.None & Double = js.native
   
-  /* 1 */ val Time: typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes.Time & Double = js.native
+  /* 1 */ val Time: typings.babylonjs.materialsNodeBlocksInputAnimatedInputBlockTypesMod.AnimatedInputBlockTypes.Time & Double = js.native
 }

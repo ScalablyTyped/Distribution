@@ -1,8 +1,8 @@
 package typings.novncCore
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.novncCore.devicesMod.Keyboard
-import typings.novncCore.devicesMod.Mouse
+import typings.novncCore.libInputDevicesMod.Keyboard
+import typings.novncCore.libInputDevicesMod.Mouse
 import typings.novncCore.novncCoreInts.`0`
 import typings.novncCore.novncCoreInts.`1`
 import typings.novncCore.novncCoreInts.`2`
@@ -268,7 +268,7 @@ object mod {
     
     def get_disconnectTimeout(): Double = js.native
     
-    def get_display(): typings.novncCore.displayMod.default = js.native
+    def get_display(): typings.novncCore.libDisplayMod.default = js.native
     
     def get_encrypt(): Boolean = js.native
     

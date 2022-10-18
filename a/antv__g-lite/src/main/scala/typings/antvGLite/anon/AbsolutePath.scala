@@ -1,9 +1,9 @@
 package typings.antvGLite.anon
 
-import typings.antvGLite.displayObjectsPathMod.PathSegment
-import typings.antvGLite.rectangleMod.Rectangle
-import typings.antvUtil.pathTypesMod.AbsoluteArray
-import typings.antvUtil.pathTypesMod.CurveArray
+import typings.antvGLite.distDisplayObjectsPathMod.PathSegment
+import typings.antvGLite.distShapesRectangleMod.Rectangle
+import typings.antvUtil.libPathTypesMod.AbsoluteArray
+import typings.antvUtil.libPathTypesMod.CurveArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

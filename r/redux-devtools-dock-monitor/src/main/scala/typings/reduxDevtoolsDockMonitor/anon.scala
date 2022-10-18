@@ -8,14 +8,13 @@ import typings.react.mod.GetDerivedStateFromError
 import typings.react.mod.GetDerivedStateFromProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
-import typings.react.mod.Validator
 import typings.redux.mod.Action
 import typings.redux.mod.Dispatch
-import typings.reduxDevtools.createDevToolsMod.Monitor
-import typings.reduxDevtoolsDockMonitor.actionsMod.DockMonitorAction
-import typings.reduxDevtoolsDockMonitor.dockMonitorMod.DefaultProps
-import typings.reduxDevtoolsDockMonitor.dockMonitorMod.ExternalProps
-import typings.reduxDevtoolsDockMonitor.reducersMod.DockMonitorState
+import typings.reduxDevtools.libCreateDevToolsMod.Monitor
+import typings.reduxDevtoolsDockMonitor.libActionsMod.DockMonitorAction
+import typings.reduxDevtoolsDockMonitor.libDockMonitorMod.DefaultProps
+import typings.reduxDevtoolsDockMonitor.libDockMonitorMod.ExternalProps
+import typings.reduxDevtoolsDockMonitor.libReducersMod.DockMonitorState
 import typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.bottom
 import typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.left
 import typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.right
@@ -203,29 +202,41 @@ object anon {
   /* Inlined react.react.WeakValidationMap<redux-devtools-dock-monitor.redux-devtools-dock-monitor/lib/DockMonitor.ExternalProps<unknown, redux.redux.Action<unknown>>> */
   trait WeakValidationMapExternal extends StObject {
     
-    var changeMonitorKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-    
-    var changePositionKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-    
-    var children: js.UndefOr[
-        Validator[
-          js.UndefOr[
-            (js.Array[Monitor[Any, Action[Any], LiftedState[Any, Action[Any], Any], Any, Action[Any]]]) | (Monitor[Any, Action[Any], LiftedState[Any, Action[Any], Any], Any, Action[Any]]) | Null
-          ]
-        ]
+    var changeMonitorKey: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
       ] = js.undefined
     
-    var defaultIsVisible: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+    var changePositionKey: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends string ? react.react.Validator<string | null | undefined> : undefined extends string ? react.react.Validator<string | null | undefined> : react.react.Validator<string> */ js.Any
+      ] = js.undefined
     
-    var defaultPosition: js.UndefOr[Validator[js.UndefOr[left | top | right | bottom | Null]]] = js.undefined
+    var children: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>> | std.Array<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>>> ? react.react.Validator<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>> | std.Array<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>>> | null | undefined> : undefined extends redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>> | std.Array<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>>> ? react.react.Validator<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>> | std.Array<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>>> | null | undefined> : react.react.Validator<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>> | std.Array<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>>>> */ js.Any
+      ] = js.undefined
     
-    var defaultSize: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+    var defaultIsVisible: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean ? react.react.Validator<boolean | null | undefined> : undefined extends boolean ? react.react.Validator<boolean | null | undefined> : react.react.Validator<boolean> */ js.Any
+      ] = js.undefined
     
-    var dispatch: js.UndefOr[Validator[js.UndefOr[Dispatch[DockMonitorAction] | Null]]] = js.undefined
+    var defaultPosition: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends 'left' | 'top' | 'right' | 'bottom' ? react.react.Validator<'left' | 'top' | 'right' | 'bottom' | null | undefined> : undefined extends 'left' | 'top' | 'right' | 'bottom' ? react.react.Validator<'left' | 'top' | 'right' | 'bottom' | null | undefined> : react.react.Validator<'left' | 'top' | 'right' | 'bottom'> */ js.Any
+      ] = js.undefined
     
-    var fluid: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+    var defaultSize: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends number ? react.react.Validator<number | null | undefined> : undefined extends number ? react.react.Validator<number | null | undefined> : react.react.Validator<number> */ js.Any
+      ] = js.undefined
     
-    var toggleVisibilityKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+    var dispatch: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends redux.redux.Dispatch<redux-devtools-dock-monitor.redux-devtools-dock-monitor/lib/actions.DockMonitorAction> ? react.react.Validator<redux.redux.Dispatch<redux-devtools-dock-monitor.redux-devtools-dock-monitor/lib/actions.DockMonitorAction> | null | undefined> : undefined extends redux.redux.Dispatch<redux-devtools-dock-monitor.redux-devtools-dock-monitor/lib/actions.DockMonitorAction> ? react.react.Validator<redux.redux.Dispatch<redux-devtools-dock-monitor.redux-devtools-dock-monitor/lib/actions.DockMonitorAction> | null | undefined> : react.react.Validator<redux.redux.Dispatch<redux-devtools-dock-monitor.redux-devtools-dock-monitor/lib/actions.DockMonitorAction>> */ js.Any
+      ] = js.undefined
+    
+    var fluid: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean ? react.react.Validator<boolean | null | undefined> : undefined extends boolean ? react.react.Validator<boolean | null | undefined> : react.react.Validator<boolean> */ js.Any
+      ] = js.undefined
+    
+    var toggleVisibilityKey: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends string ? react.react.Validator<string | null | undefined> : undefined extends string ? react.react.Validator<string | null | undefined> : react.react.Validator<string> */ js.Any
+      ] = js.undefined
   }
   object WeakValidationMapExternal {
     
@@ -236,45 +247,57 @@ object anon {
     
     extension [Self <: WeakValidationMapExternal](x: Self) {
       
-      inline def setChangeMonitorKey(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "changeMonitorKey", value.asInstanceOf[js.Any])
+      inline def setChangeMonitorKey(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+      ): Self = StObject.set(x, "changeMonitorKey", value.asInstanceOf[js.Any])
       
       inline def setChangeMonitorKeyUndefined: Self = StObject.set(x, "changeMonitorKey", js.undefined)
       
-      inline def setChangePositionKey(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "changePositionKey", value.asInstanceOf[js.Any])
+      inline def setChangePositionKey(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string ? react.react.Validator<string | null | undefined> : undefined extends string ? react.react.Validator<string | null | undefined> : react.react.Validator<string> */ js.Any
+      ): Self = StObject.set(x, "changePositionKey", value.asInstanceOf[js.Any])
       
       inline def setChangePositionKeyUndefined: Self = StObject.set(x, "changePositionKey", js.undefined)
       
       inline def setChildren(
-        value: Validator[
-              js.UndefOr[
-                (js.Array[Monitor[Any, Action[Any], LiftedState[Any, Action[Any], Any], Any, Action[Any]]]) | (Monitor[Any, Action[Any], LiftedState[Any, Action[Any], Any], Any, Action[Any]]) | Null
-              ]
-            ]
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>> | std.Array<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>>> ? react.react.Validator<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>> | std.Array<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>>> | null | undefined> : undefined extends redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>> | std.Array<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>>> ? react.react.Validator<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>> | std.Array<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>>> | null | undefined> : react.react.Validator<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>> | std.Array<redux-devtools.redux-devtools/lib/createDevTools.Monitor<unknown, redux.redux.Action<unknown>, redux-devtools-instrument.redux-devtools-instrument.LiftedState<unknown, redux.redux.Action<unknown>, unknown>, unknown, redux.redux.Action<unknown>>>> */ js.Any
       ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setDefaultIsVisible(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "defaultIsVisible", value.asInstanceOf[js.Any])
+      inline def setDefaultIsVisible(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean ? react.react.Validator<boolean | null | undefined> : undefined extends boolean ? react.react.Validator<boolean | null | undefined> : react.react.Validator<boolean> */ js.Any
+      ): Self = StObject.set(x, "defaultIsVisible", value.asInstanceOf[js.Any])
       
       inline def setDefaultIsVisibleUndefined: Self = StObject.set(x, "defaultIsVisible", js.undefined)
       
-      inline def setDefaultPosition(value: Validator[js.UndefOr[left | top | right | bottom | Null]]): Self = StObject.set(x, "defaultPosition", value.asInstanceOf[js.Any])
+      inline def setDefaultPosition(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends 'left' | 'top' | 'right' | 'bottom' ? react.react.Validator<'left' | 'top' | 'right' | 'bottom' | null | undefined> : undefined extends 'left' | 'top' | 'right' | 'bottom' ? react.react.Validator<'left' | 'top' | 'right' | 'bottom' | null | undefined> : react.react.Validator<'left' | 'top' | 'right' | 'bottom'> */ js.Any
+      ): Self = StObject.set(x, "defaultPosition", value.asInstanceOf[js.Any])
       
       inline def setDefaultPositionUndefined: Self = StObject.set(x, "defaultPosition", js.undefined)
       
-      inline def setDefaultSize(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
+      inline def setDefaultSize(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends number ? react.react.Validator<number | null | undefined> : undefined extends number ? react.react.Validator<number | null | undefined> : react.react.Validator<number> */ js.Any
+      ): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
       
       inline def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
       
-      inline def setDispatch(value: Validator[js.UndefOr[Dispatch[DockMonitorAction] | Null]]): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends redux.redux.Dispatch<redux-devtools-dock-monitor.redux-devtools-dock-monitor/lib/actions.DockMonitorAction> ? react.react.Validator<redux.redux.Dispatch<redux-devtools-dock-monitor.redux-devtools-dock-monitor/lib/actions.DockMonitorAction> | null | undefined> : undefined extends redux.redux.Dispatch<redux-devtools-dock-monitor.redux-devtools-dock-monitor/lib/actions.DockMonitorAction> ? react.react.Validator<redux.redux.Dispatch<redux-devtools-dock-monitor.redux-devtools-dock-monitor/lib/actions.DockMonitorAction> | null | undefined> : react.react.Validator<redux.redux.Dispatch<redux-devtools-dock-monitor.redux-devtools-dock-monitor/lib/actions.DockMonitorAction>> */ js.Any
+      ): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       
       inline def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
       
-      inline def setFluid(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
+      inline def setFluid(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean ? react.react.Validator<boolean | null | undefined> : undefined extends boolean ? react.react.Validator<boolean | null | undefined> : react.react.Validator<boolean> */ js.Any
+      ): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
       
       inline def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
       
-      inline def setToggleVisibilityKey(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "toggleVisibilityKey", value.asInstanceOf[js.Any])
+      inline def setToggleVisibilityKey(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string ? react.react.Validator<string | null | undefined> : undefined extends string ? react.react.Validator<string | null | undefined> : react.react.Validator<string> */ js.Any
+      ): Self = StObject.set(x, "toggleVisibilityKey", value.asInstanceOf[js.Any])
       
       inline def setToggleVisibilityKeyUndefined: Self = StObject.set(x, "toggleVisibilityKey", js.undefined)
     }

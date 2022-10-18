@@ -1,0 +1,30 @@
+package typings.nextAuth.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Start extends StObject {
+  
+  var end: Double
+  
+  var start: Double
+  
+  var tag: String
+}
+object Start {
+  
+  inline def apply(end: Double, start: Double, tag: String): Start = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Start]
+  }
+  
+  extension [Self <: Start](x: Self) {
+    
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+  }
+}

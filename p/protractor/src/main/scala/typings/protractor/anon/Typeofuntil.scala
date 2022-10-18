@@ -1,6 +1,6 @@
 package typings.protractor.anon
 
-import typings.seleniumWebdriver.byMod.ByHash
+import typings.seleniumWebdriver.libByMod.ByHash
 import typings.seleniumWebdriver.mod.Alert
 import typings.seleniumWebdriver.mod.By
 import typings.seleniumWebdriver.mod.Condition

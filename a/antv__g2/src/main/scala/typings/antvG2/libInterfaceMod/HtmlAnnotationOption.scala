@@ -5,7 +5,7 @@ import typings.antvG2.antvG2Strings.left
 import typings.antvG2.antvG2Strings.middle
 import typings.antvG2.antvG2Strings.right
 import typings.antvG2.antvG2Strings.top
-import typings.antvG2.viewMod.View
+import typings.antvG2.libChartViewMod.View
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.personaTypesMod.IPersonaPresenceProps
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.IPersonaPresenceProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object libPersonaPresenceMod {
   @JSImport("office-ui-fabric-react/lib/PersonaPresence", "PersonaPresenceBase")
   @js.native
   open class PersonaPresenceBase protected ()
-    extends typings.officeUiFabricReact.personaPresenceMod.PersonaPresenceBase {
+    extends typings.officeUiFabricReact.libComponentsPersonaPersonaPresenceMod.PersonaPresenceBase {
     def this(props: IPersonaPresenceProps) = this()
   }
 }

@@ -18,7 +18,7 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.avatarImageMod.AvatarImageSource
+import typings.reactNativePaper.libTypescriptComponentsAvatarAvatarImageMod.AvatarImageSource
 import typings.reactNativePaper.reactNativePaperStrings.`box-none`
 import typings.reactNativePaper.reactNativePaperStrings.`box-only`
 import typings.reactNativePaper.reactNativePaperStrings.`no-hide-descendants`
@@ -449,7 +449,7 @@ trait ViewPropsRefAttributesVieAccessibilityElementsHidden extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
@@ -490,7 +490,7 @@ object ViewPropsRefAttributesVieAccessibilityElementsHidden {
   
   inline def apply(
     source: AvatarImageSource,
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   ): ViewPropsRefAttributesVieAccessibilityElementsHidden = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsRefAttributesVieAccessibilityElementsHidden]
@@ -796,7 +796,7 @@ object ViewPropsRefAttributesVieAccessibilityElementsHidden {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     

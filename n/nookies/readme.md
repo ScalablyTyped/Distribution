@@ -1,7 +1,7 @@
 
 # Scala.js typings for nookies
 
-Typings are for version 2.5.0
+Typings are for version 2.5.2
 
 ## Library description:
 A set of cookie helpers for Next.js
@@ -10,10 +10,10 @@ A set of cookie helpers for Next.js
 | ------------------ | :-------------: |
 | Full name          | nookies |
 | Keywords           | cookie, cookies, next, nextjs, js, auth, destory, parse, create, nookies |
-| # releases         | 21 |
-| # dependents       | 23 |
-| # downloads        | 2375500 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 632257.3333333334 |
+| # stars            | 1798.0 |
 
 ## Links
 - [Homepage](https://github.com/maticzav/nookies#readme)

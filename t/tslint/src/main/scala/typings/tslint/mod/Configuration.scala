@@ -2,10 +2,10 @@ package typings.tslint.mod
 
 import typings.std.Map
 import typings.tslint.anon.PartialIOptions
-import typings.tslint.configurationMod.IConfigurationFile
-import typings.tslint.configurationMod.IConfigurationLoadResult
-import typings.tslint.configurationMod.RawConfigFile
-import typings.tslint.ruleMod.IOptions
+import typings.tslint.libConfigurationMod.IConfigurationFile
+import typings.tslint.libConfigurationMod.IConfigurationLoadResult
+import typings.tslint.libConfigurationMod.RawConfigFile
+import typings.tslint.libLanguageRuleRuleMod.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

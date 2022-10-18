@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAdmin.anon
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +18,7 @@ trait DatetimeValue extends StObject {
   /** Output only. Nested message value of the parameter. */
   var msgValue: js.UndefOr[
     js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ]
   ] = js.undefined
   
@@ -54,18 +51,14 @@ object DatetimeValue {
     
     inline def setMsgValue(
       value: js.Array[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
         ]
     ): Self = StObject.set(x, "msgValue", value.asInstanceOf[js.Any])
     
     inline def setMsgValueUndefined: Self = StObject.set(x, "msgValue", js.undefined)
     
     inline def setMsgValueVarargs(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue & TopLevel[Any])*
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any)*
     ): Self = StObject.set(x, "msgValue", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

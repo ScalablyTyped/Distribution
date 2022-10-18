@@ -1,6 +1,5 @@
 package typings.megajs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.megajs.megajsBooleans.`true`
 import typings.megajs.megajsStrings.add
 import typings.megajs.megajsStrings.delete
@@ -139,9 +138,7 @@ object mod {
     def this(options: StorageOptions) = this()
     def this(options: StorageOptions, callback: Any) = this()
     
-    var files: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ id in string ]: megajs.megajs.MutableFile}
-      */ typings.megajs.megajsStrings.Storage & TopLevel[Any] = js.native
+    var files: /* import warning: importer.ImportType#apply Failed type conversion: {[ id in string ]: megajs.megajs.MutableFile} */ js.Any = js.native
     
     def getAccountInfo(cb: Any): AccountInfo = js.native
     

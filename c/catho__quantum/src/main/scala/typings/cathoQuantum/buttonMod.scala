@@ -1,6 +1,7 @@
 package typings.cathoQuantum
 
 import typings.cathoQuantum.anon.Breakpoints
+import typings.cathoQuantum.buttonIconButtonMod.IconButton
 import typings.cathoQuantum.cathoQuantumStrings.button
 import typings.cathoQuantum.cathoQuantumStrings.error
 import typings.cathoQuantum.cathoQuantumStrings.large
@@ -15,7 +16,6 @@ import typings.cathoQuantum.cathoQuantumStrings.success
 import typings.cathoQuantum.cathoQuantumStrings.warning
 import typings.cathoQuantum.cathoQuantumStrings.xlarge
 import typings.cathoQuantum.cathoQuantumStrings.xsmall
-import typings.cathoQuantum.iconButtonMod.IconButton
 import typings.cathoQuantum.iconMod.IconNames
 import typings.react.mod.ButtonHTMLAttributes
 import typings.react.mod.Component

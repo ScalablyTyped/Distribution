@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import org.scalablytyped.runtime.Shortcut
-import typings.officeUiFabricReact.modalTypesMod.IModalProps
+import typings.officeUiFabricReact.libComponentsModalModalDottypesMod.IModalProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +20,7 @@ object libModalMod extends Shortcut {
   @JSImport("office-ui-fabric-react/lib/Modal", "ModalBase")
   @js.native
   open class ModalBase protected ()
-    extends typings.officeUiFabricReact.modalMod.ModalBase {
+    extends typings.officeUiFabricReact.libComponentsModalMod.ModalBase {
     def this(props: IModalProps) = this()
   }
   /* static members */

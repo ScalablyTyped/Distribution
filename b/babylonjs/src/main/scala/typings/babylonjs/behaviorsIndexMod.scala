@@ -1,10 +1,10 @@
 package typings.babylonjs
 
+import typings.babylonjs.animationsEasingMod.BackEase
+import typings.babylonjs.animationsEasingMod.ExponentialEase
 import typings.babylonjs.anon.DragAxis
-import typings.babylonjs.easingMod.BackEase
-import typings.babylonjs.easingMod.ExponentialEase
+import typings.babylonjs.meshesTransformNodeMod.TransformNode
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.transformNodeMod.TransformNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object behaviorsIndexMod {
   @JSImport("babylonjs/Behaviors/index", "AttachToBoxBehavior")
   @js.native
   open class AttachToBoxBehavior protected ()
-    extends typings.babylonjs.meshesIndexMod.AttachToBoxBehavior {
+    extends typings.babylonjs.behaviorsMeshesIndexMod.AttachToBoxBehavior {
     /**
       * Creates the AttachToBoxBehavior, used to attach UI to the closest face of the box to a camera
       * @param _ui The transform node that should be attached to the mesh
@@ -25,12 +25,12 @@ object behaviorsIndexMod {
   @JSImport("babylonjs/Behaviors/index", "AutoRotationBehavior")
   @js.native
   open class AutoRotationBehavior ()
-    extends typings.babylonjs.camerasIndexMod.AutoRotationBehavior
+    extends typings.babylonjs.behaviorsCamerasIndexMod.AutoRotationBehavior
   
   @JSImport("babylonjs/Behaviors/index", "BaseSixDofDragBehavior")
   @js.native
   open class BaseSixDofDragBehavior ()
-    extends typings.babylonjs.meshesIndexMod.BaseSixDofDragBehavior
+    extends typings.babylonjs.behaviorsMeshesIndexMod.BaseSixDofDragBehavior
   /* static members */
   object BaseSixDofDragBehavior {
     
@@ -47,7 +47,7 @@ object behaviorsIndexMod {
   @JSImport("babylonjs/Behaviors/index", "BouncingBehavior")
   @js.native
   open class BouncingBehavior ()
-    extends typings.babylonjs.camerasIndexMod.BouncingBehavior
+    extends typings.babylonjs.behaviorsCamerasIndexMod.BouncingBehavior
   /* static members */
   object BouncingBehavior {
     
@@ -78,17 +78,17 @@ object behaviorsIndexMod {
     * Instantiates the FadeInOutBehavior
     */
   open class FadeInOutBehavior ()
-    extends typings.babylonjs.meshesIndexMod.FadeInOutBehavior
+    extends typings.babylonjs.behaviorsMeshesIndexMod.FadeInOutBehavior
   
   @JSImport("babylonjs/Behaviors/index", "FollowBehavior")
   @js.native
   open class FollowBehavior ()
-    extends typings.babylonjs.meshesIndexMod.FollowBehavior
+    extends typings.babylonjs.behaviorsMeshesIndexMod.FollowBehavior
   
   @JSImport("babylonjs/Behaviors/index", "FramingBehavior")
   @js.native
   open class FramingBehavior ()
-    extends typings.babylonjs.camerasIndexMod.FramingBehavior
+    extends typings.babylonjs.behaviorsCamerasIndexMod.FramingBehavior
   /* static members */
   object FramingBehavior {
     
@@ -135,18 +135,20 @@ object behaviorsIndexMod {
     * Builds a hand constraint behavior
     */
   open class HandConstraintBehavior ()
-    extends typings.babylonjs.meshesIndexMod.HandConstraintBehavior
+    extends typings.babylonjs.behaviorsMeshesIndexMod.HandConstraintBehavior
   
   @JSImport("babylonjs/Behaviors/index", "HandConstraintOrientation")
   @js.native
   object HandConstraintOrientation extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.handConstraintBehaviorMod.HandConstraintOrientation & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintOrientation & Double
+      ] = js.native
     
-    /* 1 */ val HAND_ROTATION: typings.babylonjs.handConstraintBehaviorMod.HandConstraintOrientation.HAND_ROTATION & Double = js.native
+    /* 1 */ val HAND_ROTATION: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintOrientation.HAND_ROTATION & Double = js.native
     
-    /* 0 */ val LOOK_AT_CAMERA: typings.babylonjs.handConstraintBehaviorMod.HandConstraintOrientation.LOOK_AT_CAMERA & Double = js.native
+    /* 0 */ val LOOK_AT_CAMERA: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintOrientation.LOOK_AT_CAMERA & Double = js.native
   }
   
   @JSImport("babylonjs/Behaviors/index", "HandConstraintVisibility")
@@ -154,15 +156,17 @@ object behaviorsIndexMod {
   object HandConstraintVisibility extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.handConstraintBehaviorMod.HandConstraintVisibility & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintVisibility & Double
+      ] = js.native
     
-    /* 0 */ val ALWAYS_VISIBLE: typings.babylonjs.handConstraintBehaviorMod.HandConstraintVisibility.ALWAYS_VISIBLE & Double = js.native
+    /* 0 */ val ALWAYS_VISIBLE: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintVisibility.ALWAYS_VISIBLE & Double = js.native
     
-    /* 2 */ val GAZE_FOCUS: typings.babylonjs.handConstraintBehaviorMod.HandConstraintVisibility.GAZE_FOCUS & Double = js.native
+    /* 2 */ val GAZE_FOCUS: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintVisibility.GAZE_FOCUS & Double = js.native
     
-    /* 3 */ val PALM_AND_GAZE: typings.babylonjs.handConstraintBehaviorMod.HandConstraintVisibility.PALM_AND_GAZE & Double = js.native
+    /* 3 */ val PALM_AND_GAZE: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintVisibility.PALM_AND_GAZE & Double = js.native
     
-    /* 1 */ val PALM_UP: typings.babylonjs.handConstraintBehaviorMod.HandConstraintVisibility.PALM_UP & Double = js.native
+    /* 1 */ val PALM_UP: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintVisibility.PALM_UP & Double = js.native
   }
   
   @JSImport("babylonjs/Behaviors/index", "HandConstraintZone")
@@ -170,15 +174,17 @@ object behaviorsIndexMod {
   object HandConstraintZone extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.handConstraintBehaviorMod.HandConstraintZone & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintZone & Double
+      ] = js.native
     
-    /* 0 */ val ABOVE_FINGER_TIPS: typings.babylonjs.handConstraintBehaviorMod.HandConstraintZone.ABOVE_FINGER_TIPS & Double = js.native
+    /* 0 */ val ABOVE_FINGER_TIPS: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintZone.ABOVE_FINGER_TIPS & Double = js.native
     
-    /* 3 */ val BELOW_WRIST: typings.babylonjs.handConstraintBehaviorMod.HandConstraintZone.BELOW_WRIST & Double = js.native
+    /* 3 */ val BELOW_WRIST: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintZone.BELOW_WRIST & Double = js.native
     
-    /* 1 */ val RADIAL_SIDE: typings.babylonjs.handConstraintBehaviorMod.HandConstraintZone.RADIAL_SIDE & Double = js.native
+    /* 1 */ val RADIAL_SIDE: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintZone.RADIAL_SIDE & Double = js.native
     
-    /* 2 */ val ULNAR_SIDE: typings.babylonjs.handConstraintBehaviorMod.HandConstraintZone.ULNAR_SIDE & Double = js.native
+    /* 2 */ val ULNAR_SIDE: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintZone.ULNAR_SIDE & Double = js.native
   }
   
   @JSImport("babylonjs/Behaviors/index", "MultiPointerScaleBehavior")
@@ -187,7 +193,7 @@ object behaviorsIndexMod {
     * Instantiate a new behavior that when attached to a mesh will allow the mesh to be scaled
     */
   open class MultiPointerScaleBehavior ()
-    extends typings.babylonjs.meshesIndexMod.MultiPointerScaleBehavior
+    extends typings.babylonjs.behaviorsMeshesIndexMod.MultiPointerScaleBehavior
   
   @JSImport("babylonjs/Behaviors/index", "PointerDragBehavior")
   @js.native
@@ -198,7 +204,7 @@ object behaviorsIndexMod {
     * @param options.dragPlaneNormal
     */
   open class PointerDragBehavior ()
-    extends typings.babylonjs.meshesIndexMod.PointerDragBehavior {
+    extends typings.babylonjs.behaviorsMeshesIndexMod.PointerDragBehavior {
     def this(options: DragAxis) = this()
   }
   /* static members */
@@ -222,10 +228,10 @@ object behaviorsIndexMod {
   @JSImport("babylonjs/Behaviors/index", "SixDofDragBehavior")
   @js.native
   open class SixDofDragBehavior ()
-    extends typings.babylonjs.meshesIndexMod.SixDofDragBehavior
+    extends typings.babylonjs.behaviorsMeshesIndexMod.SixDofDragBehavior
   
   @JSImport("babylonjs/Behaviors/index", "SurfaceMagnetismBehavior")
   @js.native
   open class SurfaceMagnetismBehavior ()
-    extends typings.babylonjs.meshesIndexMod.SurfaceMagnetismBehavior
+    extends typings.babylonjs.behaviorsMeshesIndexMod.SurfaceMagnetismBehavior
 }

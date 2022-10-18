@@ -34,9 +34,9 @@ object authDistDatabaseMod {
   /* private */ open class OnDisconnect_ ()
     extends typings.firebaseDatabase.mod.OnDisconnect_
   
-  @JSImport("firebase/auth/dist/database", "QueryConstraint")
+  /* note: abstract class */ @JSImport("firebase/auth/dist/database", "QueryConstraint")
   @js.native
-  abstract class QueryConstraint ()
+  open class QueryConstraint ()
     extends typings.firebaseDatabase.mod.QueryConstraint
   
   @JSImport("firebase/auth/dist/database", "TransactionResult")

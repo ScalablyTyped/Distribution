@@ -1,8 +1,8 @@
 package typings.creditCardType
 
 import typings.creditCardType.anon.PartialCreditCardType
-import typings.creditCardType.typesMod.CreditCardType
-import typings.creditCardType.typesMod.CreditCardTypeCardBrandId
+import typings.creditCardType.distTypesMod.CreditCardType
+import typings.creditCardType.distTypesMod.CreditCardTypeCardBrandId
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

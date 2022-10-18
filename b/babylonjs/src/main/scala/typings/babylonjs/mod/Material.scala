@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Material")
 @js.native
 open class Material protected ()
-  extends typings.babylonjs.legacyMod.Material {
+  extends typings.babylonjs.legacyLegacyMod.Material {
   /**
     * Creates a material instance
     * @param name defines the name of the material
@@ -147,8 +147,8 @@ object Material {
     */
   @JSImport("babylonjs", "Material.OnEventObservable")
   @js.native
-  def OnEventObservable: typings.babylonjs.observableMod.Observable[typings.babylonjs.materialMod.Material] = js.native
-  inline def OnEventObservable_=(x: typings.babylonjs.observableMod.Observable[typings.babylonjs.materialMod.Material]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnEventObservable")(x.asInstanceOf[js.Any])
+  def OnEventObservable: typings.babylonjs.miscObservableMod.Observable[typings.babylonjs.materialsMaterialMod.Material] = js.native
+  inline def OnEventObservable_=(x: typings.babylonjs.miscObservableMod.Observable[typings.babylonjs.materialsMaterialMod.Material]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnEventObservable")(x.asInstanceOf[js.Any])
   
   /**
     * Creates a material from parsed material data
@@ -157,7 +157,7 @@ object Material {
     * @param rootUrl defines the root URL to use to load textures
     * @returns a new material
     */
-  inline def Parse(parsedMaterial: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.materialMod.Material] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.materialMod.Material]]
+  inline def Parse(parsedMaterial: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.materialsMaterialMod.Material] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.materialsMaterialMod.Material]]
   
   /**
     * Returns the point fill mode

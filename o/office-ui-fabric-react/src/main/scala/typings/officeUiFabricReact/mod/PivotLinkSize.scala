@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PivotLinkSize extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.pivotTypesMod.PivotLinkSize & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsPivotPivotDottypesMod.PivotLinkSize & Double
+  ] = js.native
   
-  /* 1 */ val large: typings.officeUiFabricReact.pivotTypesMod.PivotLinkSize.large & Double = js.native
+  /* 1 */ val large: typings.officeUiFabricReact.libComponentsPivotPivotDottypesMod.PivotLinkSize.large & Double = js.native
   
-  /* 0 */ val normal: typings.officeUiFabricReact.pivotTypesMod.PivotLinkSize.normal & Double = js.native
+  /* 0 */ val normal: typings.officeUiFabricReact.libComponentsPivotPivotDottypesMod.PivotLinkSize.normal & Double = js.native
 }

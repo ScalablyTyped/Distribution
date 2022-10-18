@@ -28,7 +28,7 @@ open class VertexBuffer protected ()
     */
   def this(
     engine: Any,
-    data: DataArray | typings.babylonjs.bufferMod.Buffer | typings.babylonjs.dataBufferMod.DataBuffer,
+    data: DataArray | typings.babylonjs.buffersBufferMod.Buffer | typings.babylonjs.buffersDataBufferMod.DataBuffer,
     kind: String,
     updatable: Boolean,
     postponeInternalCreation: js.UndefOr[Boolean],

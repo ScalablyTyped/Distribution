@@ -1,10 +1,10 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.animatableInterfaceMod.IAnimatable
-import typings.babylonjs.baseTextureMod.BaseTexture
-import typings.babylonjs.colorCurvesMod.ColorCurves
-import typings.babylonjs.fresnelParametersMod.FresnelParameters
-import typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration
+import typings.babylonjs.animationsAnimatableDotinterfaceMod.IAnimatable
+import typings.babylonjs.materialsColorCurvesMod.ColorCurves
+import typings.babylonjs.materialsFresnelParametersMod.FresnelParameters
+import typings.babylonjs.materialsImageProcessingConfigurationMod.ImageProcessingConfiguration
+import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "SerializationHelper")
 @js.native
 open class SerializationHelper ()
-  extends typings.babylonjs.decoratorsMod.SerializationHelper
+  extends typings.babylonjs.miscDecoratorsMod.SerializationHelper
 /* static members */
 object SerializationHelper {
   

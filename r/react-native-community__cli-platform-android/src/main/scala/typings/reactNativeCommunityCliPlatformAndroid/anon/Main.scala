@@ -9,11 +9,11 @@ trait Main extends StObject {
   @JSName("AndroidManifest.xml")
   var AndroidManifestDotxml: Any
   
-  var main: ComSome0
+  var main: ComSomeExampleMainjava
 }
 object Main {
   
-  inline def apply(AndroidManifestDotxml: Any, main: ComSome0): Main = {
+  inline def apply(AndroidManifestDotxml: Any, main: ComSomeExampleMainjava): Main = {
     val __obj = js.Dynamic.literal(main = main.asInstanceOf[js.Any])
     __obj.updateDynamic("AndroidManifest.xml")(AndroidManifestDotxml.asInstanceOf[js.Any])
     __obj.asInstanceOf[Main]
@@ -23,6 +23,6 @@ object Main {
     
     inline def setAndroidManifestDotxml(value: Any): Self = StObject.set(x, "AndroidManifest.xml", value.asInstanceOf[js.Any])
     
-    inline def setMain(value: ComSome0): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+    inline def setMain(value: ComSomeExampleMainjava): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
   }
 }

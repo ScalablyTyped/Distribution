@@ -1,15 +1,15 @@
 package typings.reactNativeReanimated.anon
 
 import typings.react.mod.Ref
-import typings.reactNativeReanimated.animationBuilderCommonTypesMod.EntryAnimationsValues
-import typings.reactNativeReanimated.animationBuilderCommonTypesMod.EntryExitAnimationFunction
-import typings.reactNativeReanimated.animationBuilderCommonTypesMod.ExitAnimationsValues
-import typings.reactNativeReanimated.animationBuilderCommonTypesMod.ILayoutAnimationBuilder
-import typings.reactNativeReanimated.animationBuilderCommonTypesMod.LayoutAnimation
-import typings.reactNativeReanimated.createAnimatedComponentMod.AnimatedComponentProps
-import typings.reactNativeReanimated.createAnimatedComponentMod.NestedArray
-import typings.reactNativeReanimated.layoutReanimationMod.BaseAnimationBuilder
-import typings.reactNativeReanimated.reanimated2CommonTypesMod.StyleProps
+import typings.reactNativeReanimated.libTypesCreateAnimatedComponentMod.AnimatedComponentProps
+import typings.reactNativeReanimated.libTypesCreateAnimatedComponentMod.NestedArray
+import typings.reactNativeReanimated.libTypesReanimated2CommonTypesMod.StyleProps
+import typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod.EntryAnimationsValues
+import typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod.EntryExitAnimationFunction
+import typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod.ExitAnimationsValues
+import typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod.ILayoutAnimationBuilder
+import typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod.LayoutAnimation
+import typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationMod.BaseAnimationBuilder
 import typings.std.Keyframe
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -20,7 +20,7 @@ trait AnimatedProps extends StObject {
   
   var animatedProps: js.UndefOr[
     Partial[
-      AnimatedComponentProps[typings.reactNativeReanimated.createAnimatedComponentMod.AnimatedProps]
+      AnimatedComponentProps[typings.reactNativeReanimated.libTypesCreateAnimatedComponentMod.AnimatedProps]
     ]
   ] = js.undefined
   
@@ -51,7 +51,7 @@ object AnimatedProps {
     
     inline def setAnimatedProps(
       value: Partial[
-          AnimatedComponentProps[typings.reactNativeReanimated.createAnimatedComponentMod.AnimatedProps]
+          AnimatedComponentProps[typings.reactNativeReanimated.libTypesCreateAnimatedComponentMod.AnimatedProps]
         ]
     ): Self = StObject.set(x, "animatedProps", value.asInstanceOf[js.Any])
     

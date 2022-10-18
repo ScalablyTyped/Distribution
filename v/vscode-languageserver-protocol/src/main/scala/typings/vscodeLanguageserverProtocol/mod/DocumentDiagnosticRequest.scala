@@ -1,9 +1,9 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolDiagnosticMod.DiagnosticRegistrationOptions
-import typings.vscodeLanguageserverProtocol.protocolDiagnosticMod.DocumentDiagnosticParams
-import typings.vscodeLanguageserverProtocol.protocolDiagnosticMod.DocumentDiagnosticReport
-import typings.vscodeLanguageserverProtocol.protocolDiagnosticMod.DocumentDiagnosticReportPartialResult
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotdiagnosticMod.DiagnosticRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotdiagnosticMod.DocumentDiagnosticParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotdiagnosticMod.DocumentDiagnosticReport
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotdiagnosticMod.DocumentDiagnosticReportPartialResult
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashdiagnostic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,7 @@ object DocumentDiagnosticRequest {
   
   @JSImport("vscode-languageserver-protocol", "DocumentDiagnosticRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "DocumentDiagnosticRequest.method")
   @js.native
@@ -25,11 +25,11 @@ object DocumentDiagnosticRequest {
   
   @JSImport("vscode-languageserver-protocol", "DocumentDiagnosticRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     DocumentDiagnosticParams, 
     DocumentDiagnosticReport, 
     DocumentDiagnosticReportPartialResult, 
-    typings.vscodeLanguageserverProtocol.protocolDiagnosticMod.DiagnosticServerCancellationData, 
+    typings.vscodeLanguageserverProtocol.libCommonProtocolDotdiagnosticMod.DiagnosticServerCancellationData, 
     DiagnosticRegistrationOptions
   ] = js.native
 }

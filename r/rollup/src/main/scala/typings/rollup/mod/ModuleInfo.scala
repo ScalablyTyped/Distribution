@@ -1,6 +1,7 @@
 package typings.rollup.mod
 
 import typings.rollup.rollupStrings.`no-treeshake`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,6 +46,7 @@ trait ModuleInfo
 object ModuleInfo {
   
   inline def apply(
+    assertions: Record[String, String],
     dynamicImporters: js.Array[String],
     dynamicallyImportedIdResolutions: js.Array[ResolvedId],
     dynamicallyImportedIds: js.Array[String],
@@ -61,7 +63,7 @@ object ModuleInfo {
     moduleSideEffects: Boolean | `no-treeshake`,
     syntheticNamedExports: Boolean | String
   ): ModuleInfo = {
-    val __obj = js.Dynamic.literal(dynamicImporters = dynamicImporters.asInstanceOf[js.Any], dynamicallyImportedIdResolutions = dynamicallyImportedIdResolutions.asInstanceOf[js.Any], dynamicallyImportedIds = dynamicallyImportedIds.asInstanceOf[js.Any], hasModuleSideEffects = hasModuleSideEffects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], implicitlyLoadedAfterOneOf = implicitlyLoadedAfterOneOf.asInstanceOf[js.Any], implicitlyLoadedBefore = implicitlyLoadedBefore.asInstanceOf[js.Any], importedIdResolutions = importedIdResolutions.asInstanceOf[js.Any], importedIds = importedIds.asInstanceOf[js.Any], importers = importers.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isExternal = isExternal.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], moduleSideEffects = moduleSideEffects.asInstanceOf[js.Any], syntheticNamedExports = syntheticNamedExports.asInstanceOf[js.Any], ast = null, code = null, hasDefaultExport = null, isIncluded = null)
+    val __obj = js.Dynamic.literal(assertions = assertions.asInstanceOf[js.Any], dynamicImporters = dynamicImporters.asInstanceOf[js.Any], dynamicallyImportedIdResolutions = dynamicallyImportedIdResolutions.asInstanceOf[js.Any], dynamicallyImportedIds = dynamicallyImportedIds.asInstanceOf[js.Any], hasModuleSideEffects = hasModuleSideEffects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], implicitlyLoadedAfterOneOf = implicitlyLoadedAfterOneOf.asInstanceOf[js.Any], implicitlyLoadedBefore = implicitlyLoadedBefore.asInstanceOf[js.Any], importedIdResolutions = importedIdResolutions.asInstanceOf[js.Any], importedIds = importedIds.asInstanceOf[js.Any], importers = importers.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isExternal = isExternal.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], moduleSideEffects = moduleSideEffects.asInstanceOf[js.Any], syntheticNamedExports = syntheticNamedExports.asInstanceOf[js.Any], ast = null, code = null, hasDefaultExport = null, isIncluded = null)
     __obj.asInstanceOf[ModuleInfo]
   }
   

@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.accordionMod.AccordionHeader
-import typings.antDesignReactNative.accordionMod.default
+import typings.antDesignReactNative.libAccordionMod.AccordionHeader
+import typings.antDesignReactNative.libAccordionMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,5 +15,5 @@ object Accordion {
   @JSImport("@ant-design/react-native", "Accordion.Panel")
   @js.native
   open class Panel ()
-    extends typings.antDesignReactNative.accordionMod.default.Panel
+    extends typings.antDesignReactNative.libAccordionMod.default.Panel
 }

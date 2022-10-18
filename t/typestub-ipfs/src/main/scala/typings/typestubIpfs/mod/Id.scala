@@ -33,7 +33,7 @@ object Id {
     
     inline def setAddresses(value: js.Array[Multiaddr]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    inline def setAddressesVarargs(value: Multiaddr*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: Multiaddr*): Self = StObject.set(x, "addresses", js.Array(value*))
     
     inline def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
     

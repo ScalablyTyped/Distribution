@@ -1,7 +1,7 @@
 package typings.rcSelect
 
-import typings.rcSelect.baseSelectMod.Mode
-import typings.rcSelect.baseSelectMod.Placement
+import typings.rcSelect.libBaseSelectMod.Mode
+import typings.rcSelect.libBaseSelectMod.Placement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,11 @@
 package typings.azureMsalBrowser.mod
 
 import typings.azureMsalBrowser.anon.RequiredCacheOptions
-import typings.azureMsalBrowser.configurationMod.BrowserConfiguration
-import typings.azureMsalBrowser.inavigationclientMod.INavigationClient
-import typings.azureMsalCommon.commonAuthorizationCodeRequestMod.CommonAuthorizationCodeRequest
-import typings.azureMsalCommon.icryptoMod.ICrypto
-import typings.azureMsalCommon.iperformanceclientMod.IPerformanceClient
+import typings.azureMsalBrowser.distConfigConfigurationMod.BrowserConfiguration
+import typings.azureMsalBrowser.distNavigationInavigationclientMod.INavigationClient
+import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
+import typings.azureMsalCommon.distRequestCommonAuthorizationCodeRequestMod.CommonAuthorizationCodeRequest
+import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import typings.azureMsalCommon.mod.AuthorizationCodeClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object internals {
   @JSImport("@azure/msal-browser", "internals.BrowserCacheManager")
   @js.native
   open class BrowserCacheManager protected ()
-    extends typings.azureMsalBrowser.internalsMod.BrowserCacheManager {
+    extends typings.azureMsalBrowser.distInternalsMod.BrowserCacheManager {
     def this(
       clientId: String,
       cacheConfig: RequiredCacheOptions,
@@ -91,14 +91,14 @@ object internals {
   @JSImport("@azure/msal-browser", "internals.EventHandler")
   @js.native
   open class EventHandler protected ()
-    extends typings.azureMsalBrowser.internalsMod.EventHandler {
+    extends typings.azureMsalBrowser.distInternalsMod.EventHandler {
     def this(logger: typings.azureMsalCommon.mod.Logger, browserCrypto: ICrypto) = this()
   }
   
   @JSImport("@azure/msal-browser", "internals.NativeMessageHandler")
   @js.native
   open class NativeMessageHandler protected ()
-    extends typings.azureMsalBrowser.internalsMod.NativeMessageHandler {
+    extends typings.azureMsalBrowser.distInternalsMod.NativeMessageHandler {
     def this(logger: typings.azureMsalCommon.mod.Logger, handshakeTimeoutMs: Double) = this()
     def this(logger: typings.azureMsalCommon.mod.Logger, handshakeTimeoutMs: Double, extensionId: String) = this()
   }
@@ -114,7 +114,11 @@ object internals {
       * @param logger
       * @param handshakeTimeoutMs
       */
-    inline def createProvider(logger: typings.azureMsalCommon.mod.Logger, handshakeTimeoutMs: Double): js.Promise[typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProvider")(logger.asInstanceOf[js.Any], handshakeTimeoutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler]]
+    inline def createProvider(logger: typings.azureMsalCommon.mod.Logger, handshakeTimeoutMs: Double): js.Promise[
+        typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProvider")(logger.asInstanceOf[js.Any], handshakeTimeoutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler
+      ]]
     
     /**
       * Returns boolean indicating whether or not the request should attempt to use native broker
@@ -128,68 +132,68 @@ object internals {
       config: BrowserConfiguration,
       logger: typings.azureMsalCommon.mod.Logger,
       nativeExtensionProvider: Unit,
-      authenticationScheme: typings.azureMsalCommon.constantsMod.AuthenticationScheme
+      authenticationScheme: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNativeAvailable")(config.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], nativeExtensionProvider.asInstanceOf[js.Any], authenticationScheme.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def isNativeAvailable(
       config: BrowserConfiguration,
       logger: typings.azureMsalCommon.mod.Logger,
-      nativeExtensionProvider: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler
+      nativeExtensionProvider: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNativeAvailable")(config.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], nativeExtensionProvider.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def isNativeAvailable(
       config: BrowserConfiguration,
       logger: typings.azureMsalCommon.mod.Logger,
-      nativeExtensionProvider: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler,
-      authenticationScheme: typings.azureMsalCommon.constantsMod.AuthenticationScheme
+      nativeExtensionProvider: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler,
+      authenticationScheme: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNativeAvailable")(config.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], nativeExtensionProvider.asInstanceOf[js.Any], authenticationScheme.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   @JSImport("@azure/msal-browser", "internals.PopupClient")
   @js.native
   open class PopupClient protected ()
-    extends typings.azureMsalBrowser.internalsMod.PopupClient {
+    extends typings.azureMsalBrowser.distInternalsMod.PopupClient {
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeStorageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeStorageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
-      nativeMessageHandler: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
+      nativeMessageHandler: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeStorageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       nativeMessageHandler: Unit,
       correlationId: String
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeStorageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
-      nativeMessageHandler: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler,
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
+      nativeMessageHandler: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler,
       correlationId: String
     ) = this()
   }
@@ -197,50 +201,50 @@ object internals {
   @JSImport("@azure/msal-browser", "internals.RedirectClient")
   @js.native
   open class RedirectClient protected ()
-    extends typings.azureMsalBrowser.internalsMod.RedirectClient {
+    extends typings.azureMsalBrowser.distInternalsMod.RedirectClient {
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeStorageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeStorageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
-      nativeMessageHandler: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
+      nativeMessageHandler: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeStorageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       nativeMessageHandler: Unit,
       correlationId: String
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeStorageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
-      nativeMessageHandler: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler,
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
+      nativeMessageHandler: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler,
       correlationId: String
     ) = this()
   }
@@ -248,10 +252,10 @@ object internals {
   @JSImport("@azure/msal-browser", "internals.RedirectHandler")
   @js.native
   open class RedirectHandler protected ()
-    extends typings.azureMsalBrowser.internalsMod.RedirectHandler {
+    extends typings.azureMsalBrowser.distInternalsMod.RedirectHandler {
     def this(
       authCodeModule: AuthorizationCodeClient,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       authCodeRequest: CommonAuthorizationCodeRequest,
       logger: typings.azureMsalCommon.mod.Logger,
       browserCrypto: ICrypto
@@ -261,32 +265,32 @@ object internals {
   @JSImport("@azure/msal-browser", "internals.SilentCacheClient")
   @js.native
   open class SilentCacheClient protected ()
-    extends typings.azureMsalBrowser.internalsMod.SilentCacheClient {
+    extends typings.azureMsalBrowser.distInternalsMod.SilentCacheClient {
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeMessageHandler: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler
+      nativeMessageHandler: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
       nativeMessageHandler: Unit,
@@ -294,13 +298,13 @@ object internals {
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeMessageHandler: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler,
+      nativeMessageHandler: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler,
       correlationId: String
     ) = this()
   }
@@ -308,54 +312,54 @@ object internals {
   @JSImport("@azure/msal-browser", "internals.SilentIframeClient")
   @js.native
   open class SilentIframeClient protected ()
-    extends typings.azureMsalBrowser.internalsMod.SilentIframeClient {
+    extends typings.azureMsalBrowser.distInternalsMod.SilentIframeClient {
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
-      apiId: typings.azureMsalBrowser.browserConstantsMod.ApiId,
+      apiId: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.ApiId,
       performanceClient: IPerformanceClient,
-      nativeStorageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
-      apiId: typings.azureMsalBrowser.browserConstantsMod.ApiId,
+      apiId: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.ApiId,
       performanceClient: IPerformanceClient,
-      nativeStorageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
-      nativeMessageHandler: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
+      nativeMessageHandler: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
-      apiId: typings.azureMsalBrowser.browserConstantsMod.ApiId,
+      apiId: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.ApiId,
       performanceClient: IPerformanceClient,
-      nativeStorageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       nativeMessageHandler: Unit,
       correlationId: String
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
-      apiId: typings.azureMsalBrowser.browserConstantsMod.ApiId,
+      apiId: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.ApiId,
       performanceClient: IPerformanceClient,
-      nativeStorageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
-      nativeMessageHandler: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler,
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
+      nativeMessageHandler: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler,
       correlationId: String
     ) = this()
   }
@@ -363,32 +367,32 @@ object internals {
   @JSImport("@azure/msal-browser", "internals.SilentRefreshClient")
   @js.native
   open class SilentRefreshClient protected ()
-    extends typings.azureMsalBrowser.internalsMod.SilentRefreshClient {
+    extends typings.azureMsalBrowser.distInternalsMod.SilentRefreshClient {
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeMessageHandler: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler
+      nativeMessageHandler: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
       nativeMessageHandler: Unit,
@@ -396,46 +400,46 @@ object internals {
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeMessageHandler: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler,
+      nativeMessageHandler: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler,
       correlationId: String
     ) = this()
   }
   
-  @JSImport("@azure/msal-browser", "internals.StandardInteractionClient")
+  /* note: abstract class */ @JSImport("@azure/msal-browser", "internals.StandardInteractionClient")
   @js.native
-  abstract class StandardInteractionClient protected ()
-    extends typings.azureMsalBrowser.internalsMod.StandardInteractionClient {
+  open class StandardInteractionClient protected ()
+    extends typings.azureMsalBrowser.distInternalsMod.StandardInteractionClient {
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeMessageHandler: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler
+      nativeMessageHandler: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
       nativeMessageHandler: Unit,
@@ -443,13 +447,13 @@ object internals {
     ) = this()
     def this(
       config: BrowserConfiguration,
-      storageImpl: typings.azureMsalBrowser.browserCacheManagerMod.BrowserCacheManager,
+      storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       browserCrypto: ICrypto,
       logger: typings.azureMsalCommon.mod.Logger,
-      eventHandler: typings.azureMsalBrowser.eventHandlerMod.EventHandler,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
       navigationClient: INavigationClient,
       performanceClient: IPerformanceClient,
-      nativeMessageHandler: typings.azureMsalBrowser.nativeMessageHandlerMod.NativeMessageHandler,
+      nativeMessageHandler: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler,
       correlationId: String
     ) = this()
   }
@@ -459,34 +463,36 @@ object internals {
   object TemporaryCacheKeys extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys & String
+      ] = js.native
     
-    /* "acquireToken.account" */ val ACQUIRE_TOKEN_ACCOUNT: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.ACQUIRE_TOKEN_ACCOUNT & String = js.native
+    /* "acquireToken.account" */ val ACQUIRE_TOKEN_ACCOUNT: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.ACQUIRE_TOKEN_ACCOUNT & String = js.native
     
-    /* "authority" */ val AUTHORITY: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.AUTHORITY & String = js.native
+    /* "authority" */ val AUTHORITY: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.AUTHORITY & String = js.native
     
-    /* "ccs.credential" */ val CCS_CREDENTIAL: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.CCS_CREDENTIAL & String = js.native
+    /* "ccs.credential" */ val CCS_CREDENTIAL: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.CCS_CREDENTIAL & String = js.native
     
-    /* "request.correlationId" */ val CORRELATION_ID: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.CORRELATION_ID & String = js.native
+    /* "request.correlationId" */ val CORRELATION_ID: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.CORRELATION_ID & String = js.native
     
-    /* "interaction.status" */ val INTERACTION_STATUS_KEY: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.INTERACTION_STATUS_KEY & String = js.native
+    /* "interaction.status" */ val INTERACTION_STATUS_KEY: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.INTERACTION_STATUS_KEY & String = js.native
     
-    /* "request.native" */ val NATIVE_REQUEST: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.NATIVE_REQUEST & String = js.native
+    /* "request.native" */ val NATIVE_REQUEST: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.NATIVE_REQUEST & String = js.native
     
-    /* "nonce.id_token" */ val NONCE_IDTOKEN: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.NONCE_IDTOKEN & String = js.native
+    /* "nonce.id_token" */ val NONCE_IDTOKEN: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.NONCE_IDTOKEN & String = js.native
     
-    /* "request.origin" */ val ORIGIN_URI: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.ORIGIN_URI & String = js.native
+    /* "request.origin" */ val ORIGIN_URI: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.ORIGIN_URI & String = js.native
     
-    /* "token.renew.status" */ val RENEW_STATUS: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.RENEW_STATUS & String = js.native
+    /* "token.renew.status" */ val RENEW_STATUS: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.RENEW_STATUS & String = js.native
     
-    /* "request.params" */ val REQUEST_PARAMS: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.REQUEST_PARAMS & String = js.native
+    /* "request.params" */ val REQUEST_PARAMS: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.REQUEST_PARAMS & String = js.native
     
-    /* "request.state" */ val REQUEST_STATE: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.REQUEST_STATE & String = js.native
+    /* "request.state" */ val REQUEST_STATE: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.REQUEST_STATE & String = js.native
     
-    /* "scopes" */ val SCOPES: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.SCOPES & String = js.native
+    /* "scopes" */ val SCOPES: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.SCOPES & String = js.native
     
-    /* "session.state" */ val SESSION_STATE: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.SESSION_STATE & String = js.native
+    /* "session.state" */ val SESSION_STATE: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.SESSION_STATE & String = js.native
     
-    /* "urlHash" */ val URL_HASH: typings.azureMsalBrowser.browserConstantsMod.TemporaryCacheKeys.URL_HASH & String = js.native
+    /* "urlHash" */ val URL_HASH: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.URL_HASH & String = js.native
   }
 }

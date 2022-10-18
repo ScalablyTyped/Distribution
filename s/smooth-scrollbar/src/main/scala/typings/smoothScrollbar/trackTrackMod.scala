@@ -1,7 +1,7 @@
 package typings.smoothScrollbar
 
-import typings.smoothScrollbar.directionMod.TrackDirection
-import typings.smoothScrollbar.trackMod.ScrollbarThumb
+import typings.smoothScrollbar.interfacesTrackMod.ScrollbarThumb
+import typings.smoothScrollbar.trackDirectionMod.TrackDirection
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,7 @@ object trackTrackMod {
   @js.native
   open class ScrollbarTrack protected ()
     extends StObject
-       with typings.smoothScrollbar.trackMod.ScrollbarTrack {
+       with typings.smoothScrollbar.interfacesTrackMod.ScrollbarTrack {
     def this(direction: TrackDirection) = this()
     def this(direction: TrackDirection, thumbMinSize: Double) = this()
     

@@ -1,5 +1,6 @@
 package typings.babylonjs.materialsIndexMod
 
+import typings.babylonjs.materialsTexturesTextureCreationOptionsMod.TextureSize
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "CustomProceduralTexture")
 @js.native
 open class CustomProceduralTexture protected ()
-  extends typings.babylonjs.texturesIndexMod.CustomProceduralTexture {
+  extends typings.babylonjs.materialsTexturesIndexMod.CustomProceduralTexture {
   /**
     * Instantiates a new Custom Procedural Texture.
     * Procedural texturing is a way to programmatically create a texture. There are 2 types of procedural textures: code-only, and code that references some classic 2D images, sometimes called 'refMaps' or 'sampler' images.
@@ -22,18 +23,18 @@ open class CustomProceduralTexture protected ()
     * @param generateMipMaps Define if the texture should creates mip maps or not
     * @param skipJson Define a boolena indicating that there is no json config file to load
     */
-  def this(name: String, texturePath: String, size: Double, scene: Scene) = this()
+  def this(name: String, texturePath: String, size: TextureSize, scene: Scene) = this()
   def this(
     name: String,
     texturePath: String,
-    size: Double,
+    size: TextureSize,
     scene: Scene,
-    fallbackTexture: typings.babylonjs.textureMod.Texture
+    fallbackTexture: typings.babylonjs.materialsTexturesTextureMod.Texture
   ) = this()
   def this(
     name: String,
     texturePath: String,
-    size: Double,
+    size: TextureSize,
     scene: Scene,
     fallbackTexture: Unit,
     generateMipMaps: Boolean
@@ -41,15 +42,15 @@ open class CustomProceduralTexture protected ()
   def this(
     name: String,
     texturePath: String,
-    size: Double,
+    size: TextureSize,
     scene: Scene,
-    fallbackTexture: typings.babylonjs.textureMod.Texture,
+    fallbackTexture: typings.babylonjs.materialsTexturesTextureMod.Texture,
     generateMipMaps: Boolean
   ) = this()
   def this(
     name: String,
     texturePath: String,
-    size: Double,
+    size: TextureSize,
     scene: Scene,
     fallbackTexture: Unit,
     generateMipMaps: Boolean,
@@ -58,7 +59,7 @@ open class CustomProceduralTexture protected ()
   def this(
     name: String,
     texturePath: String,
-    size: Double,
+    size: TextureSize,
     scene: Scene,
     fallbackTexture: Unit,
     generateMipMaps: Unit,
@@ -67,18 +68,18 @@ open class CustomProceduralTexture protected ()
   def this(
     name: String,
     texturePath: String,
-    size: Double,
+    size: TextureSize,
     scene: Scene,
-    fallbackTexture: typings.babylonjs.textureMod.Texture,
+    fallbackTexture: typings.babylonjs.materialsTexturesTextureMod.Texture,
     generateMipMaps: Boolean,
     skipJson: Boolean
   ) = this()
   def this(
     name: String,
     texturePath: String,
-    size: Double,
+    size: TextureSize,
     scene: Scene,
-    fallbackTexture: typings.babylonjs.textureMod.Texture,
+    fallbackTexture: typings.babylonjs.materialsTexturesTextureMod.Texture,
     generateMipMaps: Unit,
     skipJson: Boolean
   ) = this()

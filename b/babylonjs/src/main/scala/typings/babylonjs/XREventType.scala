@@ -4,50 +4,18 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Type of XR events available
-  */
 /* Rewritten from type alias, can be one of: 
-  - typings.babylonjs.babylonjsStrings.devicechange
-  - typings.babylonjs.babylonjsStrings.visibilitychange
-  - typings.babylonjs.babylonjsStrings.end
   - typings.babylonjs.babylonjsStrings.inputsourceschange
+  - typings.babylonjs.babylonjsStrings.end
+  - typings.babylonjs.babylonjsStrings.visibilitychange
+  - typings.babylonjs.babylonjsStrings.frameratechange
   - typings.babylonjs.babylonjsStrings.select
   - typings.babylonjs.babylonjsStrings.selectstart
   - typings.babylonjs.babylonjsStrings.selectend
   - typings.babylonjs.babylonjsStrings.squeeze
   - typings.babylonjs.babylonjsStrings.squeezestart
   - typings.babylonjs.babylonjsStrings.squeezeend
-  - typings.babylonjs.babylonjsStrings.reset
   - typings.babylonjs.babylonjsStrings.eyetrackingstart
   - typings.babylonjs.babylonjsStrings.eyetrackingend
 */
 trait XREventType extends StObject
-object XREventType {
-  
-  inline def devicechange: typings.babylonjs.babylonjsStrings.devicechange = "devicechange".asInstanceOf[typings.babylonjs.babylonjsStrings.devicechange]
-  
-  inline def end: typings.babylonjs.babylonjsStrings.end = "end".asInstanceOf[typings.babylonjs.babylonjsStrings.end]
-  
-  inline def eyetrackingend: typings.babylonjs.babylonjsStrings.eyetrackingend = "eyetrackingend".asInstanceOf[typings.babylonjs.babylonjsStrings.eyetrackingend]
-  
-  inline def eyetrackingstart: typings.babylonjs.babylonjsStrings.eyetrackingstart = "eyetrackingstart".asInstanceOf[typings.babylonjs.babylonjsStrings.eyetrackingstart]
-  
-  inline def inputsourceschange: typings.babylonjs.babylonjsStrings.inputsourceschange = "inputsourceschange".asInstanceOf[typings.babylonjs.babylonjsStrings.inputsourceschange]
-  
-  inline def reset: typings.babylonjs.babylonjsStrings.reset = "reset".asInstanceOf[typings.babylonjs.babylonjsStrings.reset]
-  
-  inline def select: typings.babylonjs.babylonjsStrings.select = "select".asInstanceOf[typings.babylonjs.babylonjsStrings.select]
-  
-  inline def selectend: typings.babylonjs.babylonjsStrings.selectend = "selectend".asInstanceOf[typings.babylonjs.babylonjsStrings.selectend]
-  
-  inline def selectstart: typings.babylonjs.babylonjsStrings.selectstart = "selectstart".asInstanceOf[typings.babylonjs.babylonjsStrings.selectstart]
-  
-  inline def squeeze: typings.babylonjs.babylonjsStrings.squeeze = "squeeze".asInstanceOf[typings.babylonjs.babylonjsStrings.squeeze]
-  
-  inline def squeezeend: typings.babylonjs.babylonjsStrings.squeezeend = "squeezeend".asInstanceOf[typings.babylonjs.babylonjsStrings.squeezeend]
-  
-  inline def squeezestart: typings.babylonjs.babylonjsStrings.squeezestart = "squeezestart".asInstanceOf[typings.babylonjs.babylonjsStrings.squeezestart]
-  
-  inline def visibilitychange: typings.babylonjs.babylonjsStrings.visibilitychange = "visibilitychange".asInstanceOf[typings.babylonjs.babylonjsStrings.visibilitychange]
-}

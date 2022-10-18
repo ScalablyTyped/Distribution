@@ -1,8 +1,8 @@
 package typings.tokeyImportsParser
 
 import typings.std.Record
-import typings.tokeyCore.typesMod.Descriptors
-import typings.tokeyCore.typesMod.Token
+import typings.tokeyCore.distTypesMod.Descriptors
+import typings.tokeyCore.distTypesMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,11 +90,11 @@ object mod {
     
     inline def Leftcurlybracket: typings.tokeyImportsParser.tokeyImportsParserStrings.Leftcurlybracket = "{".asInstanceOf[typings.tokeyImportsParser.tokeyImportsParserStrings.Leftcurlybracket]
     
-    inline def Leftparenthesis: String = String.asInstanceOf[String]
+    inline def Leftparenthesis: /* ( */ String = "(".asInstanceOf[/* ( */ String]
     
     inline def Rightcurlybracket: typings.tokeyImportsParser.tokeyImportsParserStrings.Rightcurlybracket = "}".asInstanceOf[typings.tokeyImportsParser.tokeyImportsParserStrings.Rightcurlybracket]
     
-    inline def Rightparenthesis: String = String.asInstanceOf[String]
+    inline def Rightparenthesis: /* ) */ String = ")".asInstanceOf[/* ) */ String]
     
     inline def Semicolon: typings.tokeyImportsParser.tokeyImportsParserStrings.Semicolon = ";".asInstanceOf[typings.tokeyImportsParser.tokeyImportsParserStrings.Semicolon]
     
@@ -110,10 +110,10 @@ object mod {
     - typings.tokeyImportsParser.tokeyImportsParserStrings.Rightcurlybracket
     - typings.tokeyImportsParser.tokeyImportsParserStrings.`[`
     - typings.tokeyImportsParser.tokeyImportsParserStrings.`]`
-    - java.lang.String
+    - / * ( * / java.lang.String
     - typings.tokeyImportsParser.tokeyImportsParserStrings.Asterisk
   */
-  type Delimiters = _Delimiters | String
+  type Delimiters = _Delimiters | (/* ( */ String)
   
   trait ImportValue extends StObject {
     

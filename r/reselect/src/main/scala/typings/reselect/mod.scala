@@ -1,28 +1,25 @@
 package typings.reselect
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.reselect.anon.ClearCache
 import typings.reselect.anon.FnCall
-import typings.reselect.defaultMemoizeMod.DefaultMemoizeOptions
-import typings.reselect.reselectBooleans.`false`
-import typings.reselect.reselectBooleans.`true`
-import typings.reselect.typesMod.DropFirst
-import typings.reselect.typesMod.EqualityFn
-import typings.reselect.typesMod.Expand
-import typings.reselect.typesMod.ExtractParams
-import typings.reselect.typesMod.GetParamsFromSelectors
-import typings.reselect.typesMod.Head
-import typings.reselect.typesMod.LastOf
-import typings.reselect.typesMod.LongestArray
-import typings.reselect.typesMod.MergeParameters
-import typings.reselect.typesMod.OutputSelector
-import typings.reselect.typesMod.Selector
-import typings.reselect.typesMod.SelectorArray
-import typings.reselect.typesMod.SelectorResultArray
-import typings.reselect.typesMod.Tail
-import typings.reselect.typesMod.Transpose
-import typings.reselect.typesMod.TuplifyUnion
+import typings.reselect.esDefaultMemoizeMod.DefaultMemoizeOptions
+import typings.reselect.esTypesMod.DropFirst
+import typings.reselect.esTypesMod.EqualityFn
+import typings.reselect.esTypesMod.Expand
+import typings.reselect.esTypesMod.ExtractParams
+import typings.reselect.esTypesMod.GetParamsFromSelectors
+import typings.reselect.esTypesMod.Head
+import typings.reselect.esTypesMod.LastOf
+import typings.reselect.esTypesMod.LongestArray
+import typings.reselect.esTypesMod.MergeParameters
+import typings.reselect.esTypesMod.OutputSelector
+import typings.reselect.esTypesMod.Selector
+import typings.reselect.esTypesMod.SelectorArray
+import typings.reselect.esTypesMod.SelectorResultArray
+import typings.reselect.esTypesMod.Tail
+import typings.reselect.esTypesMod.Transpose
+import typings.reselect.esTypesMod.TuplifyUnion
 import typings.std.Parameters
 import typings.std.Pick
 import typings.std.ReturnType
@@ -100,13 +97,13 @@ object mod {
               TuplifyUnion[
                 Transpose[ExtractParams[Selectors]], 
                 LastOf[Transpose[ExtractParams[Selectors]]], 
-                `false` | `true`
+                /* import warning: importer.ImportType#apply Failed type conversion: [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<Selectors>>] extends [never] ? true : false */ js.Any
               ], 
               LongestArray[
                 TuplifyUnion[
                   Transpose[ExtractParams[Selectors]], 
                   LastOf[Transpose[ExtractParams[Selectors]]], 
-                  `false` | `true`
+                  /* import warning: importer.ImportType#apply Failed type conversion: [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<Selectors>>] extends [never] ? true : false */ js.Any
                 ]
               ]
             ]
@@ -131,13 +128,13 @@ object mod {
               TuplifyUnion[
                 Transpose[ExtractParams[Selectors]], 
                 LastOf[Transpose[ExtractParams[Selectors]]], 
-                `false` | `true`
+                /* import warning: importer.ImportType#apply Failed type conversion: [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<Selectors>>] extends [never] ? true : false */ js.Any
               ], 
               LongestArray[
                 TuplifyUnion[
                   Transpose[ExtractParams[Selectors]], 
                   LastOf[Transpose[ExtractParams[Selectors]]], 
-                  `false` | `true`
+                  /* import warning: importer.ImportType#apply Failed type conversion: [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<Selectors>>] extends [never] ? true : false */ js.Any
                 ]
               ]
             ]
@@ -162,13 +159,13 @@ object mod {
               TuplifyUnion[
                 Transpose[ExtractParams[Selectors]], 
                 LastOf[Transpose[ExtractParams[Selectors]]], 
-                `false` | `true`
+                /* import warning: importer.ImportType#apply Failed type conversion: [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<Selectors>>] extends [never] ? true : false */ js.Any
               ], 
               LongestArray[
                 TuplifyUnion[
                   Transpose[ExtractParams[Selectors]], 
                   LastOf[Transpose[ExtractParams[Selectors]]], 
-                  `false` | `true`
+                  /* import warning: importer.ImportType#apply Failed type conversion: [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<Selectors>>] extends [never] ? true : false */ js.Any
                 ]
               ]
             ]
@@ -206,9 +203,7 @@ object mod {
     def apply[SelectorMap /* <: SelectorsObject */, SelectorParams](selectorMap: SelectorMap): js.Function2[
         /* state */ Head[SelectorParams], 
         /* params */ Tail[SelectorParams], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Key in keyof SelectorMap ]: std.ReturnType<SelectorMap[Key]>}
-      */ typings.reselect.reselectStrings.StructuredSelectorCreator & TopLevel[SelectorMap]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in keyof SelectorMap ]: std.ReturnType<SelectorMap[Key]>} */ js.Any
       ] = js.native
     def apply[SelectorMap /* <: SelectorsObject */, SelectorParams](
       selectorMap: SelectorMap,
@@ -216,19 +211,13 @@ object mod {
     ): js.Function2[
         /* state */ Head[SelectorParams], 
         /* params */ Tail[SelectorParams], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Key in keyof SelectorMap ]: std.ReturnType<SelectorMap[Key]>}
-      */ typings.reselect.reselectStrings.StructuredSelectorCreator & TopLevel[SelectorMap]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in keyof SelectorMap ]: std.ReturnType<SelectorMap[Key]>} */ js.Any
       ] = js.native
     def apply[State, Result](
-      selectors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Result ]: reselect.reselect/es/types.Selector<State, Result[K], never>}
-      */ typings.reselect.reselectStrings.StructuredSelectorCreator & TopLevel[Result]
+      selectors: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Result ]: reselect.reselect/es/types.Selector<State, Result[K], never>} */ js.Any
     ): Selector[State, Result, scala.Nothing] = js.native
     def apply[State, Result](
-      selectors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Result ]: reselect.reselect/es/types.Selector<State, Result[K], never>}
-      */ typings.reselect.reselectStrings.StructuredSelectorCreator & TopLevel[Result],
+      selectors: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Result ]: reselect.reselect/es/types.Selector<State, Result[K], never>} */ js.Any,
       selectorCreator: CreateSelectorFunction[Any, Any, Any, Expand[Pick[ReturnType[Any], /* keyof std.ReturnType<any> */ String]]]
     ): Selector[State, Result, scala.Nothing] = js.native
   }

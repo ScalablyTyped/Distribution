@@ -99,7 +99,7 @@ open class ZipDirectoryEntry ()
   var directory: `true` = js.native
   
   /**
-    * Returns a `Blob` instance containing a zip file of the entry and its descendants, if any
+    * Returns a `Blob` instance containing a zip file of the entry and its descendants, if unknown
     * 
     * @param options  The options.
     * @returns A promise resolving to the `Blob` instance.
@@ -108,7 +108,7 @@ open class ZipDirectoryEntry ()
   def exportBlob(options: ZipDirectoryEntryExportOptions): js.Promise[Blob] = js.native
   
   /**
-    * Returns a Data URI `string` encoded in Base64 containing a zip file of the entry and its descendants, if any
+    * Returns a Data URI `string` encoded in Base64 containing a zip file of the entry and its descendants, if unknown
     * 
     * @param options  The options.
     * @returns A promise resolving to the Data URI `string` encoded in Base64.
@@ -117,7 +117,7 @@ open class ZipDirectoryEntry ()
   def exportData64URI(options: ZipDirectoryEntryExportOptions): js.Promise[String] = js.native
   
   /**
-    * Returns a `Uint8Array` instance containing a zip file of the entry and its descendants, if any
+    * Returns a `Uint8Array` instance containing a zip file of the entry and its descendants, if unknown
     * 
     * @param options  The options.
     * @returns A promise resolving to the `Uint8Array` instance.
@@ -126,14 +126,13 @@ open class ZipDirectoryEntry ()
   def exportUint8Array(options: ZipDirectoryEntryExportOptions): js.Promise[js.typedarray.Uint8Array] = js.native
   
   /**
-    * Creates a zip file via a `WritableStream` instance containing the entry and its descendants, if any
+    * Creates a zip file via a `WritableStream` instance containing the entry and its descendants, if unknown
     * 
     * @param writable The `WritableStream` instance.
     * @param options  The options.
     * @returns A promise resolving to the `Uint8Array` instance.
     */
   def exportWritable(): js.Promise[WritableStream[Any]] = js.native
-  def exportWritable(writable: Null, options: ZipDirectoryEntryExportOptions): js.Promise[WritableStream[Any]] = js.native
   def exportWritable(writable: Unit, options: ZipDirectoryEntryExportOptions): js.Promise[WritableStream[Any]] = js.native
   def exportWritable(writable: WritableStream[Any]): js.Promise[WritableStream[Any]] = js.native
   def exportWritable(writable: WritableStream[Any], options: ZipDirectoryEntryExportOptions): js.Promise[WritableStream[Any]] = js.native

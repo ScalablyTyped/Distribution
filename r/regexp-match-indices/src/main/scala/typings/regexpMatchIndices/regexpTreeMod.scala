@@ -2,9 +2,9 @@ package typings.regexpMatchIndices
 
 import typings.regexpMatchIndices.anon.TraversalKind
 import typings.regexpMatchIndices.anon.`0`
-import typings.regexpMatchIndices.astMod.AstNode
 import typings.regexpMatchIndices.regexpMatchIndicesStrings.Ast
 import typings.regexpMatchIndices.regexpMatchIndicesStrings.AstPath
+import typings.regexpMatchIndices.regexpTreeAstMod.AstNode
 import typings.regexpTree.astMod.Alternative
 import typings.regexpTree.astMod.Assertion
 import typings.regexpTree.astMod.AstRegExp

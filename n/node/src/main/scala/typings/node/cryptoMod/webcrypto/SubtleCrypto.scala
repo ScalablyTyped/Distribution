@@ -31,10 +31,13 @@ trait SubtleCrypto extends StObject {
   def decrypt(algorithm: AlgorithmIdentifier, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def decrypt(algorithm: RsaOaepParams, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
   
+  def deriveBits(algorithm: AlgorithmIdentifier, baseKey: CryptoKey, length: Double): js.Promise[js.typedarray.ArrayBuffer] = js.native
   /**
     * Using the method and parameters specified in `algorithm` and the keying material provided by `baseKey`,
     * `subtle.deriveBits()` attempts to generate `length` bits.
-    * The Node.js implementation requires that `length` is a multiple of `8`.
+    * The Node.js implementation requires that when `length` is a number it must be multiple of `8`.
+    * When `length` is `null` the maximum number of bits for a given algorithm is generated. This is allowed
+    * for the `'ECDH'`, `'X25519'`, and `'X448'` algorithms.
     * If successful, the returned promise will be resolved with an `<ArrayBuffer>` containing the generated data.
     *
     * The algorithms currently supported include:
@@ -46,7 +49,7 @@ trait SubtleCrypto extends StObject {
     * - `'PBKDF2'`
     * @since v15.0.0
     */
-  def deriveBits(algorithm: AlgorithmIdentifier, baseKey: CryptoKey, length: Double): js.Promise[js.typedarray.ArrayBuffer] = js.native
+  def deriveBits(algorithm: EcdhKeyDeriveParams, baseKey: CryptoKey): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def deriveBits(algorithm: EcdhKeyDeriveParams, baseKey: CryptoKey, length: Double): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def deriveBits(algorithm: HkdfParams, baseKey: CryptoKey, length: Double): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def deriveBits(algorithm: Pbkdf2Params, baseKey: CryptoKey, length: Double): js.Promise[js.typedarray.ArrayBuffer] = js.native

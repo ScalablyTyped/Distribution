@@ -1,22 +1,23 @@
 package typings.vegaLite.anon
 
-import typings.vegaTypings.encodeMod.Text
-import typings.vegaTypings.signalMod.SignalRef
-import typings.vegaTypings.titleMod.TitleEncode
-import typings.vegaTypings.valuesMod.AnchorValue
-import typings.vegaTypings.valuesMod.ColorValue
-import typings.vegaTypings.valuesMod.FontStyleValue
-import typings.vegaTypings.valuesMod.FontWeightValue
-import typings.vegaTypings.valuesMod.NumberValue
-import typings.vegaTypings.valuesMod.StringValue
-import typings.vegaTypings.valuesMod.TextBaselineValue
+import typings.vegaTypings.typesSpecEncodeMod.Text
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
+import typings.vegaTypings.typesSpecTitleMod.TitleEncode
+import typings.vegaTypings.typesSpecValuesMod.AlignValue
+import typings.vegaTypings.typesSpecValuesMod.AnchorValue
+import typings.vegaTypings.typesSpecValuesMod.ColorValue
+import typings.vegaTypings.typesSpecValuesMod.FontStyleValue
+import typings.vegaTypings.typesSpecValuesMod.FontWeightValue
+import typings.vegaTypings.typesSpecValuesMod.NumberValue
+import typings.vegaTypings.typesSpecValuesMod.StringValue
+import typings.vegaTypings.typesSpecValuesMod.TextBaselineValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Aria extends StObject {
   
-  var align: String | SignalRef | FieldField | Scale | Band | Range | ValueAlign
+  var align: js.UndefOr[AlignValue] = js.undefined
   
   var anchor: js.UndefOr[AnchorValue] = js.undefined
   
@@ -42,9 +43,7 @@ trait Aria extends StObject {
   
   var fontWeight: js.UndefOr[FontWeightValue] = js.undefined
   
-  var frame: js.UndefOr[
-    String | SignalRef | FieldField | Scale | FieldScale | Band | Range | ValueString
-  ] = js.undefined
+  var frame: String | SignalRef | FieldField | Scale | Band | Range | ValueString
   
   var interactive: js.UndefOr[Boolean] = js.undefined
   
@@ -83,17 +82,19 @@ trait Aria extends StObject {
 object Aria {
   
   inline def apply(
-    align: String | SignalRef | FieldField | Scale | Band | Range | ValueAlign,
+    frame: String | SignalRef | FieldField | Scale | Band | Range | ValueString,
     style: String | js.Array[String],
     text: SignalRef | Text
   ): Aria = {
-    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Aria]
   }
   
   extension [Self <: Aria](x: Self) {
     
-    inline def setAlign(value: String | SignalRef | FieldField | Scale | Band | Range | ValueAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     inline def setAnchor(value: AnchorValue): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
@@ -147,9 +148,7 @@ object Aria {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setFrame(value: String | SignalRef | FieldField | Scale | FieldScale | Band | Range | ValueString): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
-    
-    inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+    inline def setFrame(value: String | SignalRef | FieldField | Scale | Band | Range | ValueString): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     

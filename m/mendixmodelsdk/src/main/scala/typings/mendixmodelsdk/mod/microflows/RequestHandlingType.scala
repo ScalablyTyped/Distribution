@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod.microflows
 
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "microflows.RequestHandlingType")
 @js.native
 open class RequestHandlingType protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.microflows.RequestHandlingType {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.microflows.RequestHandlingType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object RequestHandlingType {
@@ -20,36 +20,36 @@ object RequestHandlingType {
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.RequestHandlingType.Advanced")
   @js.native
-  def Advanced: typings.mendixmodelsdk.microflowsMod.microflows.RequestHandlingType = js.native
-  inline def Advanced_=(x: typings.mendixmodelsdk.microflowsMod.microflows.RequestHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Advanced")(x.asInstanceOf[js.Any])
+  def Advanced: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RequestHandlingType = js.native
+  inline def Advanced_=(x: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RequestHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Advanced")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.RequestHandlingType.Binary")
   @js.native
-  def Binary: typings.mendixmodelsdk.microflowsMod.microflows.RequestHandlingType = js.native
-  inline def Binary_=(x: typings.mendixmodelsdk.microflowsMod.microflows.RequestHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Binary")(x.asInstanceOf[js.Any])
+  def Binary: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RequestHandlingType = js.native
+  inline def Binary_=(x: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RequestHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Binary")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.RequestHandlingType.Custom")
   @js.native
-  def Custom: typings.mendixmodelsdk.microflowsMod.microflows.RequestHandlingType = js.native
-  inline def Custom_=(x: typings.mendixmodelsdk.microflowsMod.microflows.RequestHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Custom")(x.asInstanceOf[js.Any])
+  def Custom: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RequestHandlingType = js.native
+  inline def Custom_=(x: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RequestHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Custom")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.RequestHandlingType.FormData")
   @js.native
-  def FormData: typings.mendixmodelsdk.microflowsMod.microflows.RequestHandlingType = js.native
-  inline def FormData_=(x: typings.mendixmodelsdk.microflowsMod.microflows.RequestHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormData")(x.asInstanceOf[js.Any])
+  def FormData: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RequestHandlingType = js.native
+  inline def FormData_=(x: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RequestHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormData")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.RequestHandlingType.Mapping")
   @js.native
-  def Mapping: typings.mendixmodelsdk.microflowsMod.microflows.RequestHandlingType = js.native
-  inline def Mapping_=(x: typings.mendixmodelsdk.microflowsMod.microflows.RequestHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mapping")(x.asInstanceOf[js.Any])
+  def Mapping: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RequestHandlingType = js.native
+  inline def Mapping_=(x: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RequestHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mapping")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.RequestHandlingType.Simple")
   @js.native
-  def Simple: typings.mendixmodelsdk.microflowsMod.microflows.RequestHandlingType = js.native
-  inline def Simple_=(x: typings.mendixmodelsdk.microflowsMod.microflows.RequestHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Simple")(x.asInstanceOf[js.Any])
+  def Simple: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RequestHandlingType = js.native
+  inline def Simple_=(x: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.RequestHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Simple")(x.asInstanceOf[js.Any])
 }

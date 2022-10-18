@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsSmileMod.SmileProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object smileMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/Smile", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Smile", JSImport.Default)
   @js.native
   val default: FC[SmileProps] = js.native
-  
-  trait SmileProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object SmileProps {
-    
-    inline def apply(): SmileProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SmileProps]
-    }
-    
-    extension [Self <: SmileProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[SmileProps]
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "DepthPeelingSceneComponent")
 @js.native
 open class DepthPeelingSceneComponent protected ()
-  extends typings.babylonjs.legacyMod.DepthPeelingSceneComponent {
+  extends typings.babylonjs.legacyLegacyMod.DepthPeelingSceneComponent {
   /**
     * Creates a new instance of the component for the given scene
     * @param scene Defines the scene to register the component in

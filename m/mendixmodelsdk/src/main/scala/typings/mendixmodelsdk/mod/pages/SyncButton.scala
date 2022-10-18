@@ -1,13 +1,13 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.reportsMod.reports.ReportPane
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenReportsMod.reports.ReportPane
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.SyncButton")
 @js.native
 open class SyncButton protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.SyncButton {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.SyncButton {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,7 +40,7 @@ object SyncButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -51,7 +51,7 @@ object SyncButton {
     *  6.7.0 to 7.0.1
     */
   /* static member */
-  inline def createInDataViewUnderFooterWidget(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInDataViewUnderFooterWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.DataView): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -62,7 +62,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInDataViewUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInDataViewUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.DataView): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -73,7 +73,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInDivContainerUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInDivContainerUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.DivContainer): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -84,7 +84,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInGroupBoxUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.GroupBox): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInGroupBoxUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.GroupBox): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -95,7 +95,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInHeaderUnderLeftWidget(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInHeaderUnderLeftWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Header): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -106,7 +106,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInHeaderUnderRightWidget(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInHeaderUnderRightWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Header): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -117,7 +117,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInLayoutCallArgumentUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInLayoutCallArgumentUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -128,7 +128,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInLayoutGridColumnUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInLayoutGridColumnUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -139,7 +139,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInLayoutUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.Layout): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInLayoutUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Layout): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -150,7 +150,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInListViewTemplateUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInListViewTemplateUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -161,7 +161,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInListViewUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInListViewUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ListView): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -172,7 +172,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInNavigationListItemUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInNavigationListItemUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.NavigationListItem): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -183,7 +183,7 @@ object SyncButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  inline def createInReportPaneUnderParameterWidget(container: ReportPane): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInReportPaneUnderParameterWidget(container: ReportPane): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -194,7 +194,7 @@ object SyncButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  inline def createInReportPaneUnderReportWidget(container: ReportPane): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInReportPaneUnderReportWidget(container: ReportPane): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -205,7 +205,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInScrollContainerRegionUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInScrollContainerRegionUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -216,7 +216,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInSnippetUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.Snippet): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInSnippetUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Snippet): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -227,7 +227,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInSplitPaneUnderFirstWidget(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInSplitPaneUnderFirstWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.SplitPane): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -238,7 +238,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInSplitPaneUnderSecondWidget(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInSplitPaneUnderSecondWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.SplitPane): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -249,7 +249,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInTabPageUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TabPage): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInTabPageUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.TabPage): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -260,7 +260,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInTableCellUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TableCell): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInTableCellUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.TableCell): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -271,7 +271,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInTemplateGridContentsUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInTemplateGridContentsUnderWidget(container: typings.mendixmodelsdk.srcGenPagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
@@ -282,7 +282,7 @@ object SyncButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  inline def createInVerticalFlowUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.VerticalFlow): typings.mendixmodelsdk.pagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SyncButton]
+  inline def createInVerticalFlowUnderWidgets(container: typings.mendixmodelsdk.srcGenPagesMod.pages.VerticalFlow): typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.SyncButton]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SyncButton.structureTypeName")

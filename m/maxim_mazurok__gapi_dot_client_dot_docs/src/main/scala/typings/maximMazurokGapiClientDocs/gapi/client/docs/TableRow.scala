@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,7 @@ trait TableRow extends StObject {
   
   /** The suggested style changes to this row, keyed by suggestion ID. */
   var suggestedTableRowStyleChanges: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedTableRowStyle}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.TableRow & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedTableRowStyle} */ js.Any
   ] = js.undefined
   
   /**
@@ -65,9 +62,7 @@ object TableRow {
     inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
     
     inline def setSuggestedTableRowStyleChanges(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedTableRowStyle}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.TableRow & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedTableRowStyle} */ js.Any
     ): Self = StObject.set(x, "suggestedTableRowStyleChanges", value.asInstanceOf[js.Any])
     
     inline def setSuggestedTableRowStyleChangesUndefined: Self = StObject.set(x, "suggestedTableRowStyleChanges", js.undefined)

@@ -1,15 +1,15 @@
 package typings.guacamoleCommonJs.mod
 
 import typings.guacamoleCommonJs.guacamoleCommonJsStrings._empty
-import typings.guacamoleCommonJs.tunnelMod.Tunnel.TunnelState
+import typings.guacamoleCommonJs.libTunnelMod.Tunnel.TunnelState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-common-js", "Tunnel")
+/* note: abstract class */ @JSImport("guacamole-common-js", "Tunnel")
 @js.native
-abstract class Tunnel ()
-  extends typings.guacamoleCommonJs.tunnelMod.Tunnel
+open class Tunnel ()
+  extends typings.guacamoleCommonJs.libTunnelMod.Tunnel
 /* static members */
 object Tunnel {
   

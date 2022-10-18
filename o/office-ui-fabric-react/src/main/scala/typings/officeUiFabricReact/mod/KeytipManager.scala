@@ -25,5 +25,5 @@ object KeytipManager {
     *
     * @returns Singleton KeytipManager instance
     */
-  inline def getInstance(): typings.officeUiFabricReact.keytipManagerMod.KeytipManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.officeUiFabricReact.keytipManagerMod.KeytipManager]
+  inline def getInstance(): typings.officeUiFabricReact.libUtilitiesKeytipsKeytipManagerMod.KeytipManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.officeUiFabricReact.libUtilitiesKeytipsKeytipManagerMod.KeytipManager]
 }

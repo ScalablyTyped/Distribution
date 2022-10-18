@@ -8,7 +8,7 @@ trait ViewMode extends StObject {
   
   var ref: js.UndefOr[String] = js.undefined
   
-  var viewMode: js.UndefOr[typings.storybookApi.modulesStoriesMod.ViewMode] = js.undefined
+  var viewMode: js.UndefOr[typings.storybookApi.distTs3Dot9ModulesStoriesMod.ViewMode] = js.undefined
 }
 object ViewMode {
   
@@ -23,7 +23,7 @@ object ViewMode {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    inline def setViewMode(value: typings.storybookApi.modulesStoriesMod.ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: typings.storybookApi.distTs3Dot9ModulesStoriesMod.ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     
     inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
   }

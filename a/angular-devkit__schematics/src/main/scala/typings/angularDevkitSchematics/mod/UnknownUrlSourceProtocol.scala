@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "UnknownUrlSourceProtocol")
 @js.native
 open class UnknownUrlSourceProtocol protected ()
-  extends typings.angularDevkitSchematics.engineMod.UnknownUrlSourceProtocol {
+  extends typings.angularDevkitSchematics.srcEngineMod.UnknownUrlSourceProtocol {
   def this(url: String) = this()
 }

@@ -1,0 +1,54 @@
+package typings.awsSdk.clientsRoute53Mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ChangeTagsForResourceRequest extends StObject {
+  
+  /**
+    * A complex type that contains a list of the tags that you want to add to the specified health check or hosted zone and/or the tags that you want to edit Value for. You can add a maximum of 10 tags to a health check or a hosted zone.
+    */
+  var AddTags: js.UndefOr[TagList] = js.undefined
+  
+  /**
+    * A complex type that contains a list of the tags that you want to delete from the specified health check or hosted zone. You can specify up to 10 keys.
+    */
+  var RemoveTagKeys: js.UndefOr[TagKeyList] = js.undefined
+  
+  /**
+    * The ID of the resource for which you want to add, change, or delete tags.
+    */
+  var ResourceId: TagResourceId
+  
+  /**
+    * The type of the resource.   The resource type for health checks is healthcheck.   The resource type for hosted zones is hostedzone.  
+    */
+  var ResourceType: TagResourceType
+}
+object ChangeTagsForResourceRequest {
+  
+  inline def apply(ResourceId: TagResourceId, ResourceType: TagResourceType): ChangeTagsForResourceRequest = {
+    val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChangeTagsForResourceRequest]
+  }
+  
+  extension [Self <: ChangeTagsForResourceRequest](x: Self) {
+    
+    inline def setAddTags(value: TagList): Self = StObject.set(x, "AddTags", value.asInstanceOf[js.Any])
+    
+    inline def setAddTagsUndefined: Self = StObject.set(x, "AddTags", js.undefined)
+    
+    inline def setAddTagsVarargs(value: Tag*): Self = StObject.set(x, "AddTags", js.Array(value*))
+    
+    inline def setRemoveTagKeys(value: TagKeyList): Self = StObject.set(x, "RemoveTagKeys", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveTagKeysUndefined: Self = StObject.set(x, "RemoveTagKeys", js.undefined)
+    
+    inline def setRemoveTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "RemoveTagKeys", js.Array(value*))
+    
+    inline def setResourceId(value: TagResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    
+    inline def setResourceType(value: TagResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+  }
+}

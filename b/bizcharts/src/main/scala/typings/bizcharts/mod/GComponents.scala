@@ -1,16 +1,16 @@
 package typings.bizcharts.mod
 
-import typings.bizcharts.circleMod.ICircleProps
-import typings.bizcharts.ellipseMod.IEllipseProps
-import typings.bizcharts.gComponentsCanvasMod.ICanvasProps
-import typings.bizcharts.gComponentsGroupMod.IGroupProps
-import typings.bizcharts.gComponentsImageMod.IImageProps
-import typings.bizcharts.gComponentsLineMod.ILineProps
-import typings.bizcharts.gComponentsPolygonMod.IPolygonProps
-import typings.bizcharts.gComponentsTextMod.ITextProps
-import typings.bizcharts.markerMod.IMarkerProps
-import typings.bizcharts.polylineMod.IPolylineProps
-import typings.bizcharts.rectMod.IRectProps
+import typings.bizcharts.libGComponentsCanvasMod.ICanvasProps
+import typings.bizcharts.libGComponentsCircleMod.ICircleProps
+import typings.bizcharts.libGComponentsEllipseMod.IEllipseProps
+import typings.bizcharts.libGComponentsGroupMod.IGroupProps
+import typings.bizcharts.libGComponentsImageMod.IImageProps
+import typings.bizcharts.libGComponentsLineMod.ILineProps
+import typings.bizcharts.libGComponentsMarkerMod.IMarkerProps
+import typings.bizcharts.libGComponentsPolygonMod.IPolygonProps
+import typings.bizcharts.libGComponentsPolylineMod.IPolylineProps
+import typings.bizcharts.libGComponentsRectMod.IRectProps
+import typings.bizcharts.libGComponentsTextMod.ITextProps
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.std.Pick
@@ -55,7 +55,7 @@ object GComponents {
   @JSImport("bizcharts", "GComponents.Path")
   @js.native
   val Path: ForwardRefExoticComponent[
-    (Pick[typings.bizcharts.gComponentsPathMod.IImageProps, String | Double]) & RefAttributes[Any]
+    (Pick[typings.bizcharts.libGComponentsPathMod.IImageProps, String | Double]) & RefAttributes[Any]
   ] = js.native
   
   @JSImport("bizcharts", "GComponents.Polygon")

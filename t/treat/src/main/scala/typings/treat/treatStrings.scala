@@ -11,10 +11,6 @@ object treatStrings {
   inline def LOCAL: LOCAL = "LOCAL".asInstanceOf[LOCAL]
   
   @js.native
-  sealed trait PseudoProperties extends StObject
-  inline def PseudoProperties: PseudoProperties = "PseudoProperties".asInstanceOf[PseudoProperties]
-  
-  @js.native
   sealed trait THEMED extends StObject
   inline def THEMED: THEMED = "THEMED".asInstanceOf[THEMED]
 }

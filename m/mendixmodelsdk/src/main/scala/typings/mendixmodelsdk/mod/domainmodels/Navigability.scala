@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod.domainmodels
 
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "domainmodels.Navigability")
 @js.native
 open class Navigability protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.Navigability {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.domainmodels.Navigability {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object Navigability {
@@ -20,12 +20,12 @@ object Navigability {
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.Navigability.BothDirections")
   @js.native
-  def BothDirections: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Navigability = js.native
-  inline def BothDirections_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Navigability): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BothDirections")(x.asInstanceOf[js.Any])
+  def BothDirections: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Navigability = js.native
+  inline def BothDirections_=(x: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Navigability): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BothDirections")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.Navigability.ParentToChild")
   @js.native
-  def ParentToChild: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Navigability = js.native
-  inline def ParentToChild_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Navigability): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParentToChild")(x.asInstanceOf[js.Any])
+  def ParentToChild: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Navigability = js.native
+  inline def ParentToChild_=(x: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Navigability): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParentToChild")(x.asInstanceOf[js.Any])
 }

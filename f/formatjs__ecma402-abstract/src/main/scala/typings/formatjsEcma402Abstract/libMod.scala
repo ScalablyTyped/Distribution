@@ -12,7 +12,6 @@ import typings.formatjsEcma402Abstract.anon.TzData
 import typings.formatjsEcma402Abstract.anon.Value
 import typings.formatjsEcma402Abstract.anon.`0`
 import typings.formatjsEcma402Abstract.anon.valueanyThisTypeany
-import typings.formatjsEcma402Abstract.formatToPartsMod.NumberResult
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`10`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`11`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`1`
@@ -34,14 +33,17 @@ import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.Symbol
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.Undefined
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.boolean_
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.string_
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatDigitInternalSlots
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatDigitOptions
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatLocaleInternalData
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatNotation
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatOptions
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatPart
-import typings.formatjsEcma402Abstract.numberMod.RawNumberFormatResult
-import typings.formatjsEcma402Abstract.utilsMod.LiteralPart
+import typings.formatjsEcma402Abstract.libNumberFormatFormatToPartsMod.NumberResult
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatDigitInternalSlots
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatDigitOptions
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatLocaleInternalData
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatNotation
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatOptions
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatPart
+import typings.formatjsEcma402Abstract.libTypesNumberMod.RawNumberFormatResult
+import typings.formatjsEcma402Abstract.libTypesNumberMod.RoundingModeType
+import typings.formatjsEcma402Abstract.libTypesNumberMod.UnsignedRoundingModeType
+import typings.formatjsEcma402Abstract.libUtilsMod.LiteralPart
 import typings.std.Exclude
 import typings.std.Intl.NumberFormat
 import typings.std.Intl.PluralRules
@@ -59,6 +61,8 @@ object libMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def ApplyUnsignedRoundingMode(x: Double, r1: Double, r2: Double, unsignedRoundingMode: UnsignedRoundingModeType): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyUnsignedRoundingMode")(x.asInstanceOf[js.Any], r1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any], unsignedRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   inline def ArrayCreate(len: Double): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayCreate")(len.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   inline def CanonicalizeLocaleList(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeLocaleList")().asInstanceOf[js.Array[String]]
@@ -69,6 +73,8 @@ object libMod {
   
   inline def CoerceOptionsToObject[T](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("CoerceOptionsToObject")().asInstanceOf[T]
   inline def CoerceOptionsToObject[T](options: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("CoerceOptionsToObject")(options.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  inline def CollapseNumberRange[T](result: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("CollapseNumberRange")(result.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def ComputeExponent(numberFormat: NumberFormat, x: Double, hasGetInternalSlots: `0`): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponent")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
@@ -85,6 +91,8 @@ object libMod {
   inline def DayWithinYear(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("DayWithinYear")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def DaysInYear(y: Double): `365` | `366` = ^.asInstanceOf[js.Dynamic].applyDynamic("DaysInYear")(y.asInstanceOf[js.Any]).asInstanceOf[`365` | `366`]
+  
+  inline def FormatApproximately(numberFormat: NumberFormat, result: js.Array[NumberFormatPart], hasGetInternalSlots: `0`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatApproximately")(numberFormat.asInstanceOf[js.Any], result.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
   
   inline def FormatNumericToParts(nf: NumberFormat, x: Double, implDetails: `0`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatNumericToParts")(nf.asInstanceOf[js.Any], x.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
   
@@ -117,6 +125,146 @@ object libMod {
   
   inline def GetOptionsObject[T /* <: js.Object */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("GetOptionsObject")().asInstanceOf[T]
   inline def GetOptionsObject[T /* <: js.Object */](options: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("GetOptionsObject")(options.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ],
+    trueValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    falsyValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    fallback: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ],
+    trueValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    falsyValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    fallback: Boolean
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ],
+    trueValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    falsyValue: Boolean,
+    fallback: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ],
+    trueValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    falsyValue: Boolean,
+    fallback: Boolean
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ],
+    trueValue: Boolean,
+    falsyValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    fallback: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ],
+    trueValue: Boolean,
+    falsyValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    fallback: Boolean
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ],
+    trueValue: Boolean,
+    falsyValue: Boolean,
+    fallback: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ],
+    trueValue: Boolean,
+    falsyValue: Boolean,
+    fallback: Boolean
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: Unit,
+    trueValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    falsyValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    fallback: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: Unit,
+    trueValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    falsyValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    fallback: Boolean
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: Unit,
+    trueValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    falsyValue: Boolean,
+    fallback: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: Unit,
+    trueValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    falsyValue: Boolean,
+    fallback: Boolean
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: Unit,
+    trueValue: Boolean,
+    falsyValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    fallback: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: Unit,
+    trueValue: Boolean,
+    falsyValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    fallback: Boolean
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](
+    opts: T,
+    prop: K,
+    values: Unit,
+    trueValue: Boolean,
+    falsyValue: Boolean,
+    fallback: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  inline def GetStringOrBooleanOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](opts: T, prop: K, values: Unit, trueValue: Boolean, falsyValue: Boolean, fallback: Boolean): (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringOrBooleanOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], trueValue.asInstanceOf[js.Any], falsyValue.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | Boolean]
+  
+  inline def GetUnsignedRoundingMode(roundingMode: RoundingModeType, isNegative: Boolean): UnsignedRoundingModeType = (^.asInstanceOf[js.Dynamic].applyDynamic("GetUnsignedRoundingMode")(roundingMode.asInstanceOf[js.Any], isNegative.asInstanceOf[js.Any])).asInstanceOf[UnsignedRoundingModeType]
   
   inline def HasOwnProperty(o: js.Object, prop: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("HasOwnProperty")(o.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -176,7 +324,9 @@ object libMod {
   inline def OrdinaryHasInstance(C: js.Object, O: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("OrdinaryHasInstance")(C.asInstanceOf[js.Any], O.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def OrdinaryHasInstance(C: js.Object, O: Any, internalSlots: BoundTargetFunction): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("OrdinaryHasInstance")(C.asInstanceOf[js.Any], O.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def PartitionNumberPattern(numberFormat: NumberFormat, x: Double, hasGetInternalSlots: `0`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionNumberPattern")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
+  inline def PartitionNumberPattern(numberFormat: NumberFormat, x: Double, hasGetInternalSlots: `0`): js.Array[typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionNumberPattern")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatPart]]
+  
+  inline def PartitionNumberRangePattern(numberFormat: NumberFormat, x: Double, y: Double, hasGetInternalSlots: `0`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionNumberRangePattern")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
   
   inline def PartitionPattern[T /* <: String */](pattern: String): js.Array[Type[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("PartitionPattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[Type[T]]]
   
@@ -185,13 +335,13 @@ object libMod {
   object RangePatternType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.formatjsEcma402Abstract.dateTimeMod.RangePatternType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.formatjsEcma402Abstract.libTypesDateTimeMod.RangePatternType & String] = js.native
     
-    /* "endRange" */ val endRange: typings.formatjsEcma402Abstract.dateTimeMod.RangePatternType.endRange & String = js.native
+    /* "endRange" */ val endRange: typings.formatjsEcma402Abstract.libTypesDateTimeMod.RangePatternType.endRange & String = js.native
     
-    /* "shared" */ val shared: typings.formatjsEcma402Abstract.dateTimeMod.RangePatternType.shared & String = js.native
+    /* "shared" */ val shared: typings.formatjsEcma402Abstract.libTypesDateTimeMod.RangePatternType.shared & String = js.native
     
-    /* "startRange" */ val startRange: typings.formatjsEcma402Abstract.dateTimeMod.RangePatternType.startRange & String = js.native
+    /* "startRange" */ val startRange: typings.formatjsEcma402Abstract.libTypesDateTimeMod.RangePatternType.startRange & String = js.native
   }
   
   @JSImport("@formatjs/ecma402-abstract/lib", "SANCTIONED_UNITS")
@@ -226,7 +376,7 @@ object libMod {
   
   inline def ToNumber(`val`: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ToNumber")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def ToObject[T](arg: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ToObject")(arg.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def ToObject[T](arg: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends null ? never : T extends undefined ? never : T */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ToObject")(arg.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends null ? never : T extends undefined ? never : T */ js.Any]
   
   inline def ToRawFixed(x: Double, minFraction: Double, maxFraction: Double): RawNumberFormatResult = (^.asInstanceOf[js.Dynamic].applyDynamic("ToRawFixed")(x.asInstanceOf[js.Any], minFraction.asInstanceOf[js.Any], maxFraction.asInstanceOf[js.Any])).asInstanceOf[RawNumberFormatResult]
   

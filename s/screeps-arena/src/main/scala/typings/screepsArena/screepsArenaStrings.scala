@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object screepsArenaStrings {
   
   @js.native
-  sealed trait Store extends StObject
-  inline def Store: Store = "Store".asInstanceOf[Store]
-  
-  @js.native
   sealed trait attack extends StObject
   inline def attack: attack = "attack".asInstanceOf[attack]
   

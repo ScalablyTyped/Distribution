@@ -1,0 +1,60 @@
+package typings.mendixmodelsdk.srcGenAllModelClassesMod.microflows
+
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MemberChange")
+@js.native
+open class MemberChange protected ()
+  extends typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MemberChange {
+  def this(
+    model: AbstractModel,
+    structureTypeName: String,
+    id: String,
+    isPartial: Boolean,
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
+  ) = this()
+}
+object MemberChange {
+  
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MemberChange")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Creates and returns a new MemberChange instance in the SDK and on the server.
+    * Expects one argument: the IModel object the instance will "live on".
+    * After creation, assign or add this instance to a property that accepts this kind of objects.
+    */
+  /* static member */
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MemberChange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MemberChange]
+  
+  /**
+    * Creates and returns a new MemberChange instance in the SDK and on the server.
+    * The new MemberChange will be automatically stored in the 'items' property
+    * of the parent ChangeMembersAction element passed as argument.
+    */
+  /* static member */
+  inline def createIn(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ChangeMembersAction): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MemberChange = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MemberChange]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MemberChange.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MemberChange.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+}

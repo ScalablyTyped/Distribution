@@ -1,9 +1,9 @@
 package typings.webcola.mod
 
 import typings.webcola.anon.X
-import typings.webcola.layoutMod.Group
-import typings.webcola.layoutMod.Link
-import typings.webcola.layoutMod.Node
+import typings.webcola.distSrcLayoutMod.Group
+import typings.webcola.distSrcLayoutMod.Link
+import typings.webcola.distSrcLayoutMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "Layout")
 @js.native
 open class Layout ()
-  extends typings.webcola.layoutMod.Layout
+  extends typings.webcola.distSrcLayoutMod.Layout
 /* static members */
 object Layout {
   

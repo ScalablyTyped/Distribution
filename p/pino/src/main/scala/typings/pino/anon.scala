@@ -1,6 +1,7 @@
 package typings.pino
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.Dict
 import typings.node.workerThreadsMod.ResourceLimits_
 import typings.node.workerThreadsMod.TransferListItem
 import typings.pino.mod.pino.LogEvent
@@ -219,23 +220,6 @@ object anon {
     }
   }
   
-  trait CustomLevels extends StObject {
-    
-    var customLevels: Record[String, Double]
-  }
-  object CustomLevels {
-    
-    inline def apply(customLevels: Record[String, Double]): CustomLevels = {
-      val __obj = js.Dynamic.literal(customLevels = customLevels.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CustomLevels]
-    }
-    
-    extension [Self <: CustomLevels](x: Self) {
-      
-      inline def setCustomLevels(value: Record[String, Double]): Self = StObject.set(x, "customLevels", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait DictlogLevel
     extends StObject
        with /* logLevel */ StringDictionary[WriteFn] {
@@ -426,9 +410,7 @@ object anon {
     
     var autoEnd: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any) | js.Symbol
-      ] = js.undefined
+    var env: js.UndefOr[Dict[String] | js.Symbol] = js.undefined
     
     var eval: js.UndefOr[Boolean] = js.undefined
     
@@ -473,9 +455,7 @@ object anon {
       
       inline def setAutoEndUndefined: Self = StObject.set(x, "autoEnd", js.undefined)
       
-      inline def setEnv(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any) | js.Symbol
-      ): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Dict[String] | js.Symbol): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       

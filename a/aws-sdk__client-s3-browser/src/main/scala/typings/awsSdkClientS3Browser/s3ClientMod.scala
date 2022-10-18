@@ -1,10 +1,10 @@
 package typings.awsSdkClientS3Browser
 
-import typings.awsSdkClientS3Browser.inputTypesUnionMod.InputTypesUnion
-import typings.awsSdkClientS3Browser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientS3Browser.s3ConfigurationMod.S3Configuration
 import typings.awsSdkClientS3Browser.s3ConfigurationMod.S3ResolvedConfiguration
-import typings.awsSdkTypes.commandMod.Command
+import typings.awsSdkClientS3Browser.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientS3Browser.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesCommandMod.Command
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

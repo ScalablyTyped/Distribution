@@ -1,6 +1,6 @@
 package typings.luminoWidgets.mod
 
-import typings.luminoWidgets.tabbarMod.TabBar.IOptions
+import typings.luminoWidgets.typesTabbarMod.TabBar.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options - The options for initializing the tab bar.
   */
 open class TabBar[T] ()
-  extends typings.luminoWidgets.tabbarMod.TabBar[T] {
+  extends typings.luminoWidgets.typesTabbarMod.TabBar[T] {
   def this(options: IOptions[T]) = this()
 }
 object TabBar {
@@ -27,7 +27,20 @@ object TabBar {
   @JSImport("@lumino/widgets", "TabBar.Renderer")
   @js.native
   open class Renderer ()
-    extends typings.luminoWidgets.tabbarMod.TabBar.Renderer
+    extends typings.luminoWidgets.typesTabbarMod.TabBar.Renderer
+  object Renderer {
+    
+    @JSImport("@lumino/widgets", "TabBar.Renderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@lumino/widgets", "TabBar.Renderer._nInstance")
+    @js.native
+    def nInstance: Any = js.native
+    
+    inline def nInstance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_nInstance")(x.asInstanceOf[js.Any])
+  }
   
   /**
     * A selector which matches the add button node in the tab bar.
@@ -41,5 +54,5 @@ object TabBar {
     */
   @JSImport("@lumino/widgets", "TabBar.defaultRenderer")
   @js.native
-  val defaultRenderer: typings.luminoWidgets.tabbarMod.TabBar.Renderer = js.native
+  val defaultRenderer: typings.luminoWidgets.typesTabbarMod.TabBar.Renderer = js.native
 }

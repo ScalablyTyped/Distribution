@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("watson-developer-cloud/sdk", "NaturalLanguageClassifierV1")
 @js.native
-class NaturalLanguageClassifierV1 protected () extends ^ {
+open class NaturalLanguageClassifierV1 protected () extends ^ {
   /**
     * Construct a NaturalLanguageClassifierV1 object.
     *

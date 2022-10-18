@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the RightTapped event. */
-@JSGlobal("Windows.UI.Input.RightTappedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.Input.RightTappedEventArgs")
 @js.native
-abstract class RightTappedEventArgs ()
+open class RightTappedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.RightTappedEventArgs {
   

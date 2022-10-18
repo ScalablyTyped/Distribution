@@ -1,9 +1,9 @@
 package typings.firebase
 
 import typings.firebaseApp.mod.FirebaseApp
-import typings.firebasePerformance.publicTypesMod.FirebasePerformance
-import typings.firebasePerformance.publicTypesMod.PerformanceSettings
-import typings.firebasePerformance.publicTypesMod.PerformanceTrace
+import typings.firebasePerformance.distSrcPublicTypesMod.FirebasePerformance
+import typings.firebasePerformance.distSrcPublicTypesMod.PerformanceSettings
+import typings.firebasePerformance.distSrcPublicTypesMod.PerformanceTrace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

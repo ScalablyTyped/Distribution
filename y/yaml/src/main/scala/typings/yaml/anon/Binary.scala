@@ -1,7 +1,7 @@
 package typings.yaml.anon
 
-import typings.yaml.typesMod.CollectionTag
-import typings.yaml.typesMod.ScalarTag
+import typings.yaml.distSchemaTypesMod.CollectionTag
+import typings.yaml.distSchemaTypesMod.ScalarTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

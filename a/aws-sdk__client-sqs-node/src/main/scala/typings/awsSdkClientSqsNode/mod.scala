@@ -30,105 +30,105 @@ object mod {
   @JSImport("@aws-sdk/client-sqs-node", "AddPermissionCommand")
   @js.native
   open class AddPermissionCommand protected ()
-    extends typings.awsSdkClientSqsNode.addPermissionCommandMod.AddPermissionCommand {
+    extends typings.awsSdkClientSqsNode.commandsAddPermissionCommandMod.AddPermissionCommand {
     def this(input: AddPermissionInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "ChangeMessageVisibilityBatchCommand")
   @js.native
   open class ChangeMessageVisibilityBatchCommand protected ()
-    extends typings.awsSdkClientSqsNode.changeMessageVisibilityBatchCommandMod.ChangeMessageVisibilityBatchCommand {
+    extends typings.awsSdkClientSqsNode.commandsChangeMessageVisibilityBatchCommandMod.ChangeMessageVisibilityBatchCommand {
     def this(input: ChangeMessageVisibilityBatchInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "ChangeMessageVisibilityCommand")
   @js.native
   open class ChangeMessageVisibilityCommand protected ()
-    extends typings.awsSdkClientSqsNode.changeMessageVisibilityCommandMod.ChangeMessageVisibilityCommand {
+    extends typings.awsSdkClientSqsNode.commandsChangeMessageVisibilityCommandMod.ChangeMessageVisibilityCommand {
     def this(input: ChangeMessageVisibilityInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "CreateQueueCommand")
   @js.native
   open class CreateQueueCommand protected ()
-    extends typings.awsSdkClientSqsNode.createQueueCommandMod.CreateQueueCommand {
+    extends typings.awsSdkClientSqsNode.commandsCreateQueueCommandMod.CreateQueueCommand {
     def this(input: CreateQueueInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "DeleteMessageBatchCommand")
   @js.native
   open class DeleteMessageBatchCommand protected ()
-    extends typings.awsSdkClientSqsNode.deleteMessageBatchCommandMod.DeleteMessageBatchCommand {
+    extends typings.awsSdkClientSqsNode.commandsDeleteMessageBatchCommandMod.DeleteMessageBatchCommand {
     def this(input: DeleteMessageBatchInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "DeleteMessageCommand")
   @js.native
   open class DeleteMessageCommand protected ()
-    extends typings.awsSdkClientSqsNode.deleteMessageCommandMod.DeleteMessageCommand {
+    extends typings.awsSdkClientSqsNode.commandsDeleteMessageCommandMod.DeleteMessageCommand {
     def this(input: DeleteMessageInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "DeleteQueueCommand")
   @js.native
   open class DeleteQueueCommand protected ()
-    extends typings.awsSdkClientSqsNode.deleteQueueCommandMod.DeleteQueueCommand {
+    extends typings.awsSdkClientSqsNode.commandsDeleteQueueCommandMod.DeleteQueueCommand {
     def this(input: DeleteQueueInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "GetQueueAttributesCommand")
   @js.native
   open class GetQueueAttributesCommand protected ()
-    extends typings.awsSdkClientSqsNode.getQueueAttributesCommandMod.GetQueueAttributesCommand {
+    extends typings.awsSdkClientSqsNode.commandsGetQueueAttributesCommandMod.GetQueueAttributesCommand {
     def this(input: GetQueueAttributesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "GetQueueUrlCommand")
   @js.native
   open class GetQueueUrlCommand protected ()
-    extends typings.awsSdkClientSqsNode.getQueueUrlCommandMod.GetQueueUrlCommand {
+    extends typings.awsSdkClientSqsNode.commandsGetQueueUrlCommandMod.GetQueueUrlCommand {
     def this(input: GetQueueUrlInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "ListDeadLetterSourceQueuesCommand")
   @js.native
   open class ListDeadLetterSourceQueuesCommand protected ()
-    extends typings.awsSdkClientSqsNode.listDeadLetterSourceQueuesCommandMod.ListDeadLetterSourceQueuesCommand {
+    extends typings.awsSdkClientSqsNode.commandsListDeadLetterSourceQueuesCommandMod.ListDeadLetterSourceQueuesCommand {
     def this(input: ListDeadLetterSourceQueuesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "ListQueueTagsCommand")
   @js.native
   open class ListQueueTagsCommand protected ()
-    extends typings.awsSdkClientSqsNode.listQueueTagsCommandMod.ListQueueTagsCommand {
+    extends typings.awsSdkClientSqsNode.commandsListQueueTagsCommandMod.ListQueueTagsCommand {
     def this(input: ListQueueTagsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "ListQueuesCommand")
   @js.native
   open class ListQueuesCommand protected ()
-    extends typings.awsSdkClientSqsNode.listQueuesCommandMod.ListQueuesCommand {
+    extends typings.awsSdkClientSqsNode.commandsListQueuesCommandMod.ListQueuesCommand {
     def this(input: ListQueuesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "PurgeQueueCommand")
   @js.native
   open class PurgeQueueCommand protected ()
-    extends typings.awsSdkClientSqsNode.purgeQueueCommandMod.PurgeQueueCommand {
+    extends typings.awsSdkClientSqsNode.commandsPurgeQueueCommandMod.PurgeQueueCommand {
     def this(input: PurgeQueueInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "ReceiveMessageCommand")
   @js.native
   open class ReceiveMessageCommand protected ()
-    extends typings.awsSdkClientSqsNode.receiveMessageCommandMod.ReceiveMessageCommand {
+    extends typings.awsSdkClientSqsNode.commandsReceiveMessageCommandMod.ReceiveMessageCommand {
     def this(input: ReceiveMessageInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "RemovePermissionCommand")
   @js.native
   open class RemovePermissionCommand protected ()
-    extends typings.awsSdkClientSqsNode.removePermissionCommandMod.RemovePermissionCommand {
+    extends typings.awsSdkClientSqsNode.commandsRemovePermissionCommandMod.RemovePermissionCommand {
     def this(input: RemovePermissionInput) = this()
   }
   
@@ -149,35 +149,35 @@ object mod {
   @JSImport("@aws-sdk/client-sqs-node", "SendMessageBatchCommand")
   @js.native
   open class SendMessageBatchCommand protected ()
-    extends typings.awsSdkClientSqsNode.sendMessageBatchCommandMod.SendMessageBatchCommand {
+    extends typings.awsSdkClientSqsNode.commandsSendMessageBatchCommandMod.SendMessageBatchCommand {
     def this(input: SendMessageBatchInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "SendMessageCommand")
   @js.native
   open class SendMessageCommand protected ()
-    extends typings.awsSdkClientSqsNode.sendMessageCommandMod.SendMessageCommand {
+    extends typings.awsSdkClientSqsNode.commandsSendMessageCommandMod.SendMessageCommand {
     def this(input: SendMessageInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "SetQueueAttributesCommand")
   @js.native
   open class SetQueueAttributesCommand protected ()
-    extends typings.awsSdkClientSqsNode.setQueueAttributesCommandMod.SetQueueAttributesCommand {
+    extends typings.awsSdkClientSqsNode.commandsSetQueueAttributesCommandMod.SetQueueAttributesCommand {
     def this(input: SetQueueAttributesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "TagQueueCommand")
   @js.native
   open class TagQueueCommand protected ()
-    extends typings.awsSdkClientSqsNode.tagQueueCommandMod.TagQueueCommand {
+    extends typings.awsSdkClientSqsNode.commandsTagQueueCommandMod.TagQueueCommand {
     def this(input: TagQueueInput) = this()
   }
   
   @JSImport("@aws-sdk/client-sqs-node", "UntagQueueCommand")
   @js.native
   open class UntagQueueCommand protected ()
-    extends typings.awsSdkClientSqsNode.untagQueueCommandMod.UntagQueueCommand {
+    extends typings.awsSdkClientSqsNode.commandsUntagQueueCommandMod.UntagQueueCommand {
     def this(input: UntagQueueInput) = this()
   }
   

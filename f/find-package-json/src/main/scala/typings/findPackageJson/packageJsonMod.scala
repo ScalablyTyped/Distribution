@@ -167,7 +167,7 @@ object packageJsonMod {
     /**
       * The url to your project's issue tracker and / or the email address to which issues should be reported. These are helpful for people who encounter issues with your package.
       */
-    var bugs: js.UndefOr[Email | String] = js.undefined
+    var bugs: js.UndefOr[Dictk | String] = js.undefined
     
     /**
       * DEPRECATED: This field is honored, but "bundledDependencies" is the correct field name.
@@ -388,7 +388,7 @@ object packageJsonMod {
       
       inline def setBinUndefined: Self = StObject.set(x, "bin", js.undefined)
       
-      inline def setBugs(value: Email | String): Self = StObject.set(x, "bugs", value.asInstanceOf[js.Any])
+      inline def setBugs(value: Dictk | String): Self = StObject.set(x, "bugs", value.asInstanceOf[js.Any])
       
       inline def setBugsUndefined: Self = StObject.set(x, "bugs", js.undefined)
       
@@ -601,7 +601,7 @@ object packageJsonMod {
     }
   }
   
-  type Person = Dictk | String
+  type Person = Email | String
   
   type ScriptsInstallAfter = String
   

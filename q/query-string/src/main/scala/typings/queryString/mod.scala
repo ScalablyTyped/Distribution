@@ -30,17 +30,17 @@ object mod {
   inline def exclude(
     url: String,
     filter: js.Function2[/* key */ String, /* value */ String | Boolean, Boolean],
-    options: parseBooleanstrueParseOptArrayFormat
+    options: parseBooleanstrueParseOpt
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def exclude(
     url: String,
     filter: js.Function2[/* key */ String, /* value */ String | Boolean | Double, Boolean],
-    options: parseBooleanstrueparseNumArrayFormat
+    options: parseBooleanstrueparseNum
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def exclude(
     url: String,
     filter: js.Function2[/* key */ String, /* value */ String | Double, Boolean],
-    options: parseNumberstrueParseOptiArrayFormat
+    options: parseNumberstrueParseOpti
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def exclude(url: String, keys: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(url.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def exclude(url: String, keys: js.Array[String], options: ParseOptions & StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(url.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -48,9 +48,9 @@ object mod {
   inline def extract(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def parse(query: String): ParsedQuery[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any]).asInstanceOf[ParsedQuery[String]]
-  inline def parse(query: String, options: parseBooleanstrueParseOpt): ParsedQuery[String | Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedQuery[String | Boolean]]
-  inline def parse(query: String, options: parseBooleanstrueparseNum): ParsedQuery[String | Boolean | Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedQuery[String | Boolean | Double]]
-  inline def parse(query: String, options: parseNumberstrueParseOpti): ParsedQuery[String | Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedQuery[String | Double]]
+  inline def parse(query: String, options: parseBooleanstrueParseOptArrayFormat): ParsedQuery[String | Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedQuery[String | Boolean]]
+  inline def parse(query: String, options: parseBooleanstrueparseNumArrayFormat): ParsedQuery[String | Boolean | Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedQuery[String | Boolean | Double]]
+  inline def parse(query: String, options: parseNumberstrueParseOptiArrayFormat): ParsedQuery[String | Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedQuery[String | Double]]
   inline def parse(query: String, options: ParseOptions): ParsedQuery[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedQuery[String]]
   
   inline def parseUrl(url: String): ParsedUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[ParsedUrl]
@@ -60,17 +60,17 @@ object mod {
   inline def pick(
     url: String,
     filter: js.Function2[/* key */ String, /* value */ String | Boolean, Boolean],
-    options: parseBooleanstrueParseOptArrayFormat
+    options: parseBooleanstrueParseOpt
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def pick(
     url: String,
     filter: js.Function2[/* key */ String, /* value */ String | Boolean | Double, Boolean],
-    options: parseBooleanstrueparseNumArrayFormat
+    options: parseBooleanstrueparseNum
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def pick(
     url: String,
     filter: js.Function2[/* key */ String, /* value */ String | Double, Boolean],
-    options: parseNumberstrueParseOptiArrayFormat
+    options: parseNumberstrueParseOpti
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(url.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def pick(url: String, keys: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(url.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def pick(url: String, keys: js.Array[String], options: ParseOptions & StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(url.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]

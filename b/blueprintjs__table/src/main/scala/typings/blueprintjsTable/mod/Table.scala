@@ -2,9 +2,9 @@ package typings.blueprintjsTable.mod
 
 import typings.blueprintjsTable.anon.ChildrenArray
 import typings.blueprintjsTable.anon.ValidationMapColumnIntera
-import typings.blueprintjsTable.tablePropsMod.TablePropsDefaults
-import typings.blueprintjsTable.tablePropsMod.TablePropsWithDefaults
-import typings.blueprintjsTable.tableStateMod.TableState
+import typings.blueprintjsTable.libEsmTablePropsMod.TablePropsDefaults
+import typings.blueprintjsTable.libEsmTablePropsMod.TablePropsWithDefaults
+import typings.blueprintjsTable.libEsmTableStateMod.TableState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "Table")
 @js.native
 open class Table protected ()
-  extends typings.blueprintjsTable.tableMod.Table {
+  extends typings.blueprintjsTable.libEsmTableMod.Table {
   def this(props: TablePropsWithDefaults) = this()
   def this(props: TablePropsWithDefaults, context: Any) = this()
 }

@@ -13,9 +13,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a captured video frame. */
-@JSGlobal("Windows.Media.Capture.CapturedFrame")
+/* note: abstract class */ @JSGlobal("Windows.Media.Capture.CapturedFrame")
 @js.native
-abstract class CapturedFrame ()
+open class CapturedFrame ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.CapturedFrame {
   

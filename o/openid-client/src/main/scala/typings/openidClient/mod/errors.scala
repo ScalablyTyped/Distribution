@@ -1,9 +1,9 @@
 package typings.openidClient.mod
 
 import typings.node.httpMod.IncomingMessage
-import typings.openidClient.anon.Body
 import typings.openidClient.anon.FnCallFormatParam
 import typings.openidClient.anon.Message
+import typings.openidClient.anon.`1`
 import typings.std.Error
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ object errors {
     extends StObject
        with Error {
     def this(params: typings.openidClient.anon.Error) = this()
-    def this(params: typings.openidClient.anon.Error, response: Body & IncomingMessage) = this()
+    def this(params: typings.openidClient.anon.Error, response: `1` & IncomingMessage) = this()
     
     var error: js.UndefOr[String] = js.native
     
@@ -34,7 +34,7 @@ object errors {
     /* CompleteClass */
     var name: String = js.native
     
-    var response: js.UndefOr[Body & IncomingMessage] = js.native
+    var response: js.UndefOr[`1` & IncomingMessage] = js.native
     
     var scope: js.UndefOr[String] = js.native
     
@@ -77,7 +77,7 @@ object errors {
     
     var params: js.UndefOr[js.Object] = js.native
     
-    var response: js.UndefOr[Body & IncomingMessage] = js.native
+    var response: js.UndefOr[`1` & IncomingMessage] = js.native
     
     var tolerance: js.UndefOr[Double] = js.native
   }

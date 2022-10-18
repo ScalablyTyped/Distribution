@@ -10,6 +10,7 @@ import typings.std.Record
 import typings.std.ReturnType
 import typings.webpackDevMiddleware.mod.API
 import typings.webpackDevMiddleware.mod.Callback
+import typings.webpackDevServer.anon.FnCallName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +48,7 @@ trait Server extends StObject {
   def close(): Unit = js.native
   def close(callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   
-  var compiler: Compiler | MultiCompiler = js.native
+  var compiler: typings.webpack.mod.Compiler | typings.webpack.mod.MultiCompiler = js.native
   
   /**
     * @private
@@ -127,9 +128,7 @@ trait Server extends StObject {
   /**
     * @type {ReturnType<Compiler["getInfrastructureLogger"]>}
     * */
-  var logger: ReturnType[
-    /* import warning: importer.ImportType#apply Failed type conversion: webpack-dev-server.webpack-dev-server.Compiler['getInfrastructureLogger'] */ js.Any
-  ] = js.native
+  var logger: ReturnType[FnCallName] = js.native
   
   var middleware: js.UndefOr[
     (API[
@@ -196,7 +195,10 @@ trait Server extends StObject {
   /** @type {import("http").Server | undefined | null} */
   var server: js.UndefOr[
     (typings.node.httpMod.Server[
-      Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, typings.node.httpMod.IncomingMessage], 
+      Instantiable1[
+        /* socket */ typings.node.nodeColonnetMod.Socket, 
+        typings.node.httpMod.IncomingMessage
+      ], 
       Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
         ServerResponse[typings.node.httpMod.IncomingMessage]

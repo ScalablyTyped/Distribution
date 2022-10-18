@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "BitmapFontCharData")
 @js.native
 open class BitmapFontCharData ()
-  extends typings.blackEngine.bitmapFontAssetMod.BitmapFontCharData
+  extends typings.blackEngine.assetsBitmapFontAssetMod.BitmapFontCharData

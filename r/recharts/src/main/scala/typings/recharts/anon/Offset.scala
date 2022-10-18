@@ -1,7 +1,7 @@
 package typings.recharts.anon
 
 import typings.recharts.mod.ChartOffset
-import typings.recharts.mod.XAxisProps
+import typings.recharts.mod.YAxisProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait Offset extends StObject {
   
   var width: js.UndefOr[Double] = js.undefined
   
-  var xAxis: js.UndefOr[XAxisProps] = js.undefined
+  var yAxis: js.UndefOr[YAxisProps] = js.undefined
 }
 object Offset {
   
@@ -37,8 +37,8 @@ object Offset {
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setXAxis(value: XAxisProps): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: YAxisProps): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
-    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }
 }

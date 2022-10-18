@@ -30,5 +30,5 @@ object KeyframeTrack {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def toJSON(track: typings.three.keyframeTrackMod.KeyframeTrack): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(track.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def toJSON(track: typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(track.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

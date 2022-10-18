@@ -1,6 +1,6 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvG2.dependentsMod.Coordinate
+import typings.antvG2.libDependentsMod.Coordinate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

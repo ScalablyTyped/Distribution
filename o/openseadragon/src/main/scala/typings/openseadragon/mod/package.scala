@@ -5,6 +5,7 @@ import typings.openseadragon.anon.Capture
 import typings.openseadragon.anon.Error
 import typings.openseadragon.anon.`0`
 import typings.openseadragon.mod.^
+import typings.std.CSSStyleDeclaration
 import typings.std.Document
 import typings.std.Element
 import typings.std.Event
@@ -77,8 +78,8 @@ inline def getElementPosition(element: Element): Point = ^.asInstanceOf[js.Dynam
 inline def getElementSize(element: String): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSize")(element.asInstanceOf[js.Any]).asInstanceOf[Point]
 inline def getElementSize(element: Element): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSize")(element.asInstanceOf[js.Any]).asInstanceOf[Point]
 
-inline def getElementStyle(element: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementStyle")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
-inline def getElementStyle(element: Element): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementStyle")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def getElementStyle(element: String): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementStyle")(element.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
+inline def getElementStyle(element: Element): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementStyle")(element.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
 
 inline def getMousePosition(): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("getMousePosition")().asInstanceOf[Point]
 inline def getMousePosition(event: OSDEvent[Any]): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("getMousePosition")(event.asInstanceOf[js.Any]).asInstanceOf[Point]
@@ -89,7 +90,6 @@ inline def getString(property: String): String = ^.asInstanceOf[js.Dynamic].appl
 
 inline def getUrlParameter(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrlParameter")(key.asInstanceOf[js.Any]).asInstanceOf[String]
 
-// CSSStyle?
 inline def getViewer(element: Element): Viewer = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewer")(element.asInstanceOf[js.Any]).asInstanceOf[Viewer]
 
 inline def getWindowSize(): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowSize")().asInstanceOf[Point]
@@ -155,7 +155,7 @@ inline def setImageFormatsSupported(formats: Bmp): Unit = ^.asInstanceOf[js.Dyna
 
 inline def setPageScroll(point: Point): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPageScroll")(point.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def setString(property: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setString")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def setString(property: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setString")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def stopEvent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEvent")().asInstanceOf[Unit]
 inline def stopEvent(event: OSDEvent[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]

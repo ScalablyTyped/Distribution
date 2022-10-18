@@ -11,9 +11,9 @@ object mod {
     @JSImport("sxml", "default.XML")
     @js.native
     open class XML ()
-      extends typings.sxml.moduleMod.XML {
+      extends typings.sxml.libModuleMod.XML {
       def this(str: String) = this()
-      def this(xml: typings.sxml.xmlMod.XML) = this()
+      def this(xml: typings.sxml.libModuleXmlMod.XML) = this()
     }
     /* static members */
     object XML {
@@ -53,15 +53,15 @@ object mod {
     @JSImport("sxml", "default.XMLList")
     @js.native
     open class XMLList ()
-      extends typings.sxml.moduleMod.XMLList
+      extends typings.sxml.libModuleMod.XMLList
   }
   
   @JSImport("sxml", "XML")
   @js.native
   open class XML ()
-    extends typings.sxml.moduleMod.XML {
+    extends typings.sxml.libModuleMod.XML {
     def this(str: String) = this()
-    def this(xml: typings.sxml.xmlMod.XML) = this()
+    def this(xml: typings.sxml.libModuleXmlMod.XML) = this()
   }
   /* static members */
   object XML {
@@ -101,5 +101,5 @@ object mod {
   @JSImport("sxml", "XMLList")
   @js.native
   open class XMLList ()
-    extends typings.sxml.moduleMod.XMLList
+    extends typings.sxml.libModuleMod.XMLList
 }

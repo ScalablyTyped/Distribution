@@ -1,7 +1,6 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathPlaneMod.Plane
-import typings.babylonjs.mathVectorMod.Vector4
+import typings.babylonjs.mathsMathDotvectorMod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +16,6 @@ trait Size extends StObject {
   var sideOrientation: js.UndefOr[Double] = js.undefined
   
   var size: js.UndefOr[Double] = js.undefined
-  
-  var sourcePlane: js.UndefOr[Plane] = js.undefined
-  
-  var updatable: js.UndefOr[Boolean] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -52,14 +47,6 @@ object Size {
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    
-    inline def setSourcePlane(value: Plane): Self = StObject.set(x, "sourcePlane", value.asInstanceOf[js.Any])
-    
-    inline def setSourcePlaneUndefined: Self = StObject.set(x, "sourcePlane", js.undefined)
-    
-    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
-    
-    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

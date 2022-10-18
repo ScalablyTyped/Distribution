@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FormatPluralOptions extends StObject {
   
   var format: js.UndefOr[
-    String | (/* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats[string] */ js.Any)
+    /* import warning: importer.ImportType#apply Failed type conversion: string extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats[string] : string */ js.Any
   ] = js.undefined
   
   var maximumFractionDigits: js.UndefOr[Double] = js.undefined
@@ -34,7 +34,7 @@ object FormatPluralOptions {
   extension [Self <: FormatPluralOptions](x: Self) {
     
     inline def setFormat(
-      value: String | (/* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats[string] */ js.Any)
+      value: /* import warning: importer.ImportType#apply Failed type conversion: string extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats[string] : string */ js.Any
     ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)

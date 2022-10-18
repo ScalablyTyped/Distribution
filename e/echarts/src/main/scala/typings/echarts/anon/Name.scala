@@ -27,7 +27,7 @@ trait Name extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.1.itemStyle
     */
-  var itemStyle: js.UndefOr[Emphasis] = js.undefined
+  var itemStyle: js.UndefOr[BorderWidth] = js.undefined
   
   /**
     * Label style of the item.
@@ -37,7 +37,7 @@ trait Name extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.1.label
     */
-  var label: js.UndefOr[FontFamily] = js.undefined
+  var label: js.UndefOr[Emphasis] = js.undefined
   
   /**
     * Name of the marker, which will display as a label.
@@ -130,11 +130,11 @@ object Name {
     
     inline def setCoordVarargs(value: Any*): Self = StObject.set(x, "coord", js.Array(value*))
     
-    inline def setItemStyle(value: Emphasis): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    inline def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Emphasis): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

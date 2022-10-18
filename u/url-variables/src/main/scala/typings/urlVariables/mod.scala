@@ -1,6 +1,6 @@
 package typings.urlVariables
 
-import typings.urlVariables.urlvariablesMod.URLVariables
+import typings.urlVariables.libUrlvariablesMod.URLVariables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

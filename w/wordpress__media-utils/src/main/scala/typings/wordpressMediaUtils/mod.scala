@@ -1,8 +1,8 @@
 package typings.wordpressMediaUtils
 
 import typings.react.mod.global.JSX.Element
-import typings.wordpressBlockEditor.mediaUploadMod.MediaUpload.Props
-import typings.wordpressMediaUtils.uploadMediaMod.UploadMediaOptions
+import typings.wordpressBlockEditor.componentsMediaUploadMod.MediaUpload.Props
+import typings.wordpressMediaUtils.utilsUploadMediaMod.UploadMediaOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

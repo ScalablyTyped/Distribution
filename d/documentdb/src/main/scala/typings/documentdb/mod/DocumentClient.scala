@@ -1,7 +1,7 @@
 package typings.documentdb.mod
 
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,11 +50,7 @@ open class DocumentClient protected () extends StObject {
     callback: RequestCallback[AttachmentMeta]
   ): Unit = js.native
   
-  def createAttachmentAndUploadMedia(
-    documentLink: String,
-    readableStream: ReadableStream[Any],
-    callback: RequestCallback[AttachmentMeta]
-  ): Unit = js.native
+  def createAttachmentAndUploadMedia(documentLink: String, readableStream: ReadableStream, callback: RequestCallback[AttachmentMeta]): Unit = js.native
   /**
     * Create an attachment with media file for the document object.
     * @param documentLink      - The self-link of the document.
@@ -64,7 +60,7 @@ open class DocumentClient protected () extends StObject {
     */
   def createAttachmentAndUploadMedia(
     documentLink: String,
-    readableStream: ReadableStream[Any],
+    readableStream: ReadableStream,
     options: MediaOptions,
     callback: RequestCallback[AttachmentMeta]
   ): Unit = js.native
@@ -536,7 +532,7 @@ open class DocumentClient protected () extends StObject {
     * @param mediaLink     - The media link of the media in the attachment.
     * @param callback      - The callback for the request, the result parameter can be a buffer or a stream depending on the value of MediaReadMode
     */
-  def readMedia(mediaLink: String, callback: RequestCallback[Buffer | ReadableStream[Any]]): Unit = js.native
+  def readMedia(mediaLink: String, callback: RequestCallback[Buffer | ReadableStream]): Unit = js.native
   
   /**
     * Read an offer.
@@ -760,7 +756,7 @@ open class DocumentClient protected () extends StObject {
     callback: RequestCallback[UserDefinedFunctionMeta]
   ): Unit = js.native
   
-  def updateMedia(mediaLink: String, readableStream: ReadableStream[Any], callback: RequestCallback[Any]): Unit = js.native
+  def updateMedia(mediaLink: String, readableStream: ReadableStream, callback: RequestCallback[Any]): Unit = js.native
   /**
     * Update media for the attachment
     * @param mediaLink         - The media link of the media in the attachment.
@@ -770,7 +766,7 @@ open class DocumentClient protected () extends StObject {
     */
   def updateMedia(
     mediaLink: String,
-    readableStream: ReadableStream[Any],
+    readableStream: ReadableStream,
     options: MediaOptions,
     callback: RequestCallback[Any]
   ): Unit = js.native
@@ -794,7 +790,7 @@ open class DocumentClient protected () extends StObject {
     callback: RequestCallback[AttachmentMeta]
   ): Unit = js.native
   
-  def upsertAttachmentAndUploadMedia(documentLink: String, readableStream: ReadableStream[Any], callback: RequestCallback[Any]): Unit = js.native
+  def upsertAttachmentAndUploadMedia(documentLink: String, readableStream: ReadableStream, callback: RequestCallback[Any]): Unit = js.native
   /**
     * Upsert an attachment for the document object.
     * @param documentLink      - The self-link of the document.
@@ -804,7 +800,7 @@ open class DocumentClient protected () extends StObject {
     */
   def upsertAttachmentAndUploadMedia(
     documentLink: String,
-    readableStream: ReadableStream[Any],
+    readableStream: ReadableStream,
     options: MediaOptions,
     callback: RequestCallback[Any]
   ): Unit = js.native

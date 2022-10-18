@@ -8,11 +8,14 @@ trait ParametersPathEnvironmentnameRepositoryid extends StObject {
   
   var parameters: PathEnvironmentnameRepositoryid
   
-  var responses: `200ContentApplicationjsonSecretsArray`
+  var responses: `200ContentApplicationjsonSecretsTotalcount`
 }
 object ParametersPathEnvironmentnameRepositoryid {
   
-  inline def apply(parameters: PathEnvironmentnameRepositoryid, responses: `200ContentApplicationjsonSecretsArray`): ParametersPathEnvironmentnameRepositoryid = {
+  inline def apply(
+    parameters: PathEnvironmentnameRepositoryid,
+    responses: `200ContentApplicationjsonSecretsTotalcount`
+  ): ParametersPathEnvironmentnameRepositoryid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathEnvironmentnameRepositoryid]
   }
@@ -21,6 +24,6 @@ object ParametersPathEnvironmentnameRepositoryid {
     
     inline def setParameters(value: PathEnvironmentnameRepositoryid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjsonSecretsArray`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonSecretsTotalcount`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

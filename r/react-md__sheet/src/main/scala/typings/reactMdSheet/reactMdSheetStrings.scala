@@ -1,8 +1,8 @@
 package typings.reactMdSheet
 
-import typings.reactMdSheet.sheetMod.SheetHorizontalSize
-import typings.reactMdSheet.sheetMod.SheetPosition
-import typings.reactMdSheet.sheetMod.SheetVerticalSize
+import typings.reactMdSheet.typesSheetMod.SheetHorizontalSize
+import typings.reactMdSheet.typesSheetMod.SheetPosition
+import typings.reactMdSheet.typesSheetMod.SheetVerticalSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

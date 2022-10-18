@@ -18,7 +18,7 @@ object babylonjsCamerasFreeCameraInputsManagerAugmentingMod {
       * @internal
       */
     var _deviceOrientationInput: Nullable[
-        typings.babylonjs.freeCameraDeviceOrientationInputMod.FreeCameraDeviceOrientationInput
+        typings.babylonjs.camerasInputsFreeCameraDeviceOrientationInputMod.FreeCameraDeviceOrientationInput
       ] = js.native
     
     /**
@@ -26,19 +26,19 @@ object babylonjsCamerasFreeCameraInputsManagerAugmentingMod {
       * @param smoothFactor deviceOrientation smoothing. 0: no smoothing, 1: new data ignored, 0.9 recommended for smoothing
       * @returns the current input manager
       */
-    def addDeviceOrientation(): typings.babylonjs.freeCameraDeviceOrientationInputMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager = js.native
-    def addDeviceOrientation(smoothFactor: Double): typings.babylonjs.freeCameraDeviceOrientationInputMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager = js.native
+    def addDeviceOrientation(): typings.babylonjs.camerasInputsFreeCameraDeviceOrientationInputMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager = js.native
+    def addDeviceOrientation(smoothFactor: Double): typings.babylonjs.camerasInputsFreeCameraDeviceOrientationInputMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager = js.native
     
     /**
       * Adds gamepad input support to the FreeCameraInputsManager.
       * @returns the FreeCameraInputsManager
       */
-    def addGamepad(): typings.babylonjs.gamepadSceneComponentMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager = js.native
+    def addGamepad(): typings.babylonjs.gamepadsGamepadSceneComponentMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager = js.native
     
     /**
       * Add virtual joystick input support to the input manager.
       * @returns the current input manager
       */
-    def addVirtualJoystick(): typings.babylonjs.freeCameraVirtualJoystickInputMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager = js.native
+    def addVirtualJoystick(): typings.babylonjs.camerasInputsFreeCameraVirtualJoystickInputMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager = js.native
   }
 }

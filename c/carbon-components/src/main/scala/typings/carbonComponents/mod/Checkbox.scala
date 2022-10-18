@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "Checkbox")
 @js.native
 open class Checkbox protected ()
-  extends typings.carbonComponents.componentsMod.Checkbox {
+  extends typings.carbonComponents.globalsJsComponentsMod.Checkbox {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialCheckboxOptions) = this()
 }

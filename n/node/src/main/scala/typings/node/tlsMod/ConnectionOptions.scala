@@ -1,5 +1,6 @@
 package typings.node.tlsMod
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.LookupFunction
@@ -75,12 +76,7 @@ object ConnectionOptions {
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     inline def setLookup(
-      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* address */ String, 
-          /* family */ Double, 
-          Unit
-        ]) => Unit
+      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
     ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
     
     inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)

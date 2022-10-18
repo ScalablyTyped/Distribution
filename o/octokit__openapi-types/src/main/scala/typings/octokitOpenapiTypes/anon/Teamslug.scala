@@ -8,17 +8,14 @@ trait Teamslug extends StObject {
   
   /** The organization name. The name is not case sensitive. */
   @JSName("org")
-  var org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
+  var org_ : String
   
   /** The slug of the team name. */
-  var team_slug: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-slug'] */ js.Any
+  var team_slug: String
 }
 object Teamslug {
   
-  inline def apply(
-    org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any,
-    team_slug: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-slug'] */ js.Any
-  ): Teamslug = {
+  inline def apply(org_ : String, team_slug: String): Teamslug = {
     val __obj = js.Dynamic.literal(team_slug = team_slug.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Teamslug]
@@ -26,12 +23,8 @@ object Teamslug {
   
   extension [Self <: Teamslug](x: Self) {
     
-    inline def setOrg_(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
-    ): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    inline def setTeam_slug(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-slug'] */ js.Any
-    ): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
+    inline def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
   }
 }

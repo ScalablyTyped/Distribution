@@ -1,6 +1,6 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
+import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "SSAORenderingPipeline")
 @js.native
 open class SSAORenderingPipeline protected ()
-  extends typings.babylonjs.renderPipelineIndexMod.SSAORenderingPipeline {
+  extends typings.babylonjs.postProcessesRenderPipelineIndexMod.SSAORenderingPipeline {
   /**
     * @constructor
     * @param name - The rendering pipeline name

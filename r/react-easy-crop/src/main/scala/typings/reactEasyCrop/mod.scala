@@ -4,6 +4,7 @@ import typings.react.mod.NativeMouseEvent
 import typings.reactEasyCrop.anon.Crop
 import typings.reactEasyCrop.anon.X
 import typings.reactEasyCrop.anon.Zoom
+import typings.reactEasyCrop.cropperMod.GestureEvent
 import typings.reactEasyCrop.reactEasyCropStrings.contain
 import typings.reactEasyCrop.reactEasyCropStrings.rect
 import typings.reactEasyCrop.typesMod.Area
@@ -99,8 +100,16 @@ object mod {
     /* static member */
     @JSImport("react-easy-crop", "default.getMousePoint")
     @js.native
-    def getMousePoint: js.Function1[/* e */ MouseEvent | (typings.react.mod.MouseEvent[Element, NativeMouseEvent]), X] = js.native
-    inline def getMousePoint_=(x: js.Function1[/* e */ MouseEvent | (typings.react.mod.MouseEvent[Element, NativeMouseEvent]), X]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getMousePoint")(x.asInstanceOf[js.Any])
+    def getMousePoint: js.Function1[
+        /* e */ MouseEvent | (typings.react.mod.MouseEvent[Element, NativeMouseEvent]) | GestureEvent, 
+        X
+      ] = js.native
+    inline def getMousePoint_=(
+      x: js.Function1[
+          /* e */ MouseEvent | (typings.react.mod.MouseEvent[Element, NativeMouseEvent]) | GestureEvent, 
+          X
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getMousePoint")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("react-easy-crop", "default.getTouchPoint")

@@ -21,7 +21,7 @@ object ParameterStructures {
     */
   @JSImport("vscode-languageclient", "ParameterStructures.auto")
   @js.native
-  val auto: typings.vscodeJsonrpc.messagesMod.ParameterStructures = js.native
+  val auto: typings.vscodeJsonrpc.libCommonMessagesMod.ParameterStructures = js.native
   
   /**
     * Forces `byName` parameter structure. This is only useful when having a single
@@ -30,7 +30,7 @@ object ParameterStructures {
     */
   @JSImport("vscode-languageclient", "ParameterStructures.byName")
   @js.native
-  val byName: typings.vscodeJsonrpc.messagesMod.ParameterStructures = js.native
+  val byName: typings.vscodeJsonrpc.libCommonMessagesMod.ParameterStructures = js.native
   
   /**
     * Forces `byPosition` parameter structure. This is useful if you have a single
@@ -38,7 +38,7 @@ object ParameterStructures {
     */
   @JSImport("vscode-languageclient", "ParameterStructures.byPosition")
   @js.native
-  val byPosition: typings.vscodeJsonrpc.messagesMod.ParameterStructures = js.native
+  val byPosition: typings.vscodeJsonrpc.libCommonMessagesMod.ParameterStructures = js.native
   
   inline def is(value: Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/common/messages.ParameterStructures */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/common/messages.ParameterStructures */ Boolean]
 }

@@ -2,11 +2,11 @@ package typings.reduxAuthWrapper
 
 import typings.history.mod.Location
 import typings.redux.mod.Action
+import typings.reduxAuthWrapper.history3RedirectMod.ConnectedRouterRedirectConfig
+import typings.reduxAuthWrapper.history3RedirectMod.InjectedAuthReduxProps
+import typings.reduxAuthWrapper.history3RedirectMod.InjectedAuthRouterProps
 import typings.reduxAuthWrapper.mod.AuthWrapperDecorator
 import typings.reduxAuthWrapper.mod.StateSelector
-import typings.reduxAuthWrapper.redirectMod.ConnectedRouterRedirectConfig
-import typings.reduxAuthWrapper.redirectMod.InjectedAuthReduxProps
-import typings.reduxAuthWrapper.redirectMod.InjectedAuthRouterProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

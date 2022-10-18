@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.gradientsMod.IValueGradient
+import typings.babylonjs.miscGradientsMod.IValueGradient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "GradientHelper")
 @js.native
 open class GradientHelper ()
-  extends typings.babylonjs.legacyMod.GradientHelper
+  extends typings.babylonjs.legacyLegacyMod.GradientHelper
 /* static members */
 object GradientHelper {
   

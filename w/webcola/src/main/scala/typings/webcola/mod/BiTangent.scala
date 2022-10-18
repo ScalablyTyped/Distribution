@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "BiTangent")
 @js.native
 open class BiTangent protected ()
-  extends typings.webcola.geomMod.BiTangent {
+  extends typings.webcola.distSrcGeomMod.BiTangent {
   def this(t1: Double, t2: Double) = this()
 }

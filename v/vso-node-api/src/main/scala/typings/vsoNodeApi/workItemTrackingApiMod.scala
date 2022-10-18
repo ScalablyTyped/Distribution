@@ -1,60 +1,60 @@
 package typings.vsoNodeApi
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.vsoNodeApi.anon.Key
 import typings.vsoNodeApi.anon.Value
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
-import typings.vsoNodeApi.coreInterfacesMod.TeamContext
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
-import typings.vsoNodeApi.vssinterfacesMod.JsonPatchDocument
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.AccountMyWorkResult
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.AccountRecentActivityWorkItemModel
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.AccountRecentMentionWorkItemModel
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.ArtifactUriQuery
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.ArtifactUriQueryResult
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.AttachmentReference
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.CommentSortOrder
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.FieldsToEvaluate
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.GetFieldsExpand
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.ProjectWorkItemStateColors
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.ProvisioningResult
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.QueryExpand
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.QueryHierarchyItem
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.QueryHierarchyItemsResult
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.QueryOption
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.ReportingRevisionsExpand
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.ReportingWorkItemLinksBatch
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.ReportingWorkItemRevisionsBatch
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.ReportingWorkItemRevisionsFilter
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.TreeStructureGroup
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.Wiql
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkArtifactLink
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItem
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemClassificationNode
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemComment
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemComments
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemDelete
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemDeleteReference
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemDeleteUpdate
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemErrorPolicy
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemExpand
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemField
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemIcon
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemNextStateOnTransition
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemQueryResult
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemReference
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemRelationType
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemStateColor
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemTemplate
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemTemplateReference
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemType
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemTypeCategory
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemTypeFieldInstance
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemTypeFieldsExpandLevel
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemTypeTemplate
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemTypeTemplateUpdateModel
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemUpdate
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonVssinterfacesMod.JsonPatchDocument
+import typings.vsoNodeApi.interfacesCoreInterfacesMod.TeamContext
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.AccountMyWorkResult
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.AccountRecentActivityWorkItemModel
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.AccountRecentMentionWorkItemModel
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.ArtifactUriQuery
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.ArtifactUriQueryResult
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.AttachmentReference
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.CommentSortOrder
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.FieldsToEvaluate
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.GetFieldsExpand
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.ProjectWorkItemStateColors
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.ProvisioningResult
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.QueryExpand
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.QueryHierarchyItem
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.QueryHierarchyItemsResult
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.QueryOption
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.ReportingRevisionsExpand
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.ReportingWorkItemLinksBatch
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.ReportingWorkItemRevisionsBatch
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.ReportingWorkItemRevisionsFilter
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.TreeStructureGroup
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.Wiql
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkArtifactLink
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItem
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemClassificationNode
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemComment
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemComments
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemDelete
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemDeleteReference
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemDeleteUpdate
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemErrorPolicy
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemField
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemIcon
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemNextStateOnTransition
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemQueryResult
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemReference
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemRelationType
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemStateColor
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemTemplate
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemTemplateReference
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemType
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeCategory
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeFieldInstance
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeFieldsExpandLevel
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeTemplate
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeTemplateUpdateModel
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,34 +78,34 @@ object workItemTrackingApiMod {
   @js.native
   trait IWorkItemTrackingApi extends ClientApiBase {
     
-    def createAttachment(customHeaders: Any, contentStream: ReadableStream[Any]): js.Promise[AttachmentReference] = js.native
-    def createAttachment(customHeaders: Any, contentStream: ReadableStream[Any], fileName: String): js.Promise[AttachmentReference] = js.native
-    def createAttachment(customHeaders: Any, contentStream: ReadableStream[Any], fileName: String, uploadType: String): js.Promise[AttachmentReference] = js.native
+    def createAttachment(customHeaders: Any, contentStream: ReadableStream): js.Promise[AttachmentReference] = js.native
+    def createAttachment(customHeaders: Any, contentStream: ReadableStream, fileName: String): js.Promise[AttachmentReference] = js.native
+    def createAttachment(customHeaders: Any, contentStream: ReadableStream, fileName: String, uploadType: String): js.Promise[AttachmentReference] = js.native
     def createAttachment(
       customHeaders: Any,
-      contentStream: ReadableStream[Any],
+      contentStream: ReadableStream,
       fileName: String,
       uploadType: String,
       areaPath: String
     ): js.Promise[AttachmentReference] = js.native
     def createAttachment(
       customHeaders: Any,
-      contentStream: ReadableStream[Any],
+      contentStream: ReadableStream,
       fileName: String,
       uploadType: Unit,
       areaPath: String
     ): js.Promise[AttachmentReference] = js.native
-    def createAttachment(customHeaders: Any, contentStream: ReadableStream[Any], fileName: Unit, uploadType: String): js.Promise[AttachmentReference] = js.native
+    def createAttachment(customHeaders: Any, contentStream: ReadableStream, fileName: Unit, uploadType: String): js.Promise[AttachmentReference] = js.native
     def createAttachment(
       customHeaders: Any,
-      contentStream: ReadableStream[Any],
+      contentStream: ReadableStream,
       fileName: Unit,
       uploadType: String,
       areaPath: String
     ): js.Promise[AttachmentReference] = js.native
     def createAttachment(
       customHeaders: Any,
-      contentStream: ReadableStream[Any],
+      contentStream: ReadableStream,
       fileName: Unit,
       uploadType: Unit,
       areaPath: String
@@ -216,11 +216,11 @@ object workItemTrackingApiMod {
     def getAccountMyWorkData(): js.Promise[AccountMyWorkResult] = js.native
     def getAccountMyWorkData(queryOption: QueryOption): js.Promise[AccountMyWorkResult] = js.native
     
-    def getAttachmentContent(id: String): js.Promise[ReadableStream[Any]] = js.native
-    def getAttachmentContent(id: String, fileName: String): js.Promise[ReadableStream[Any]] = js.native
+    def getAttachmentContent(id: String): js.Promise[ReadableStream] = js.native
+    def getAttachmentContent(id: String, fileName: String): js.Promise[ReadableStream] = js.native
     
-    def getAttachmentZip(id: String): js.Promise[ReadableStream[Any]] = js.native
-    def getAttachmentZip(id: String, fileName: String): js.Promise[ReadableStream[Any]] = js.native
+    def getAttachmentZip(id: String): js.Promise[ReadableStream] = js.native
+    def getAttachmentZip(id: String, fileName: String): js.Promise[ReadableStream] = js.native
     
     def getClassificationNode(project: String, structureGroup: TreeStructureGroup): js.Promise[WorkItemClassificationNode] = js.native
     def getClassificationNode(project: String, structureGroup: TreeStructureGroup, path: String): js.Promise[WorkItemClassificationNode] = js.native
@@ -341,10 +341,10 @@ object workItemTrackingApiMod {
     def getWorkItemIconJson(icon: String, color: String, v: Double): js.Promise[WorkItemIcon] = js.native
     def getWorkItemIconJson(icon: String, color: Unit, v: Double): js.Promise[WorkItemIcon] = js.native
     
-    def getWorkItemIconSvg(icon: String): js.Promise[ReadableStream[Any]] = js.native
-    def getWorkItemIconSvg(icon: String, color: String): js.Promise[ReadableStream[Any]] = js.native
-    def getWorkItemIconSvg(icon: String, color: String, v: Double): js.Promise[ReadableStream[Any]] = js.native
-    def getWorkItemIconSvg(icon: String, color: Unit, v: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getWorkItemIconSvg(icon: String): js.Promise[ReadableStream] = js.native
+    def getWorkItemIconSvg(icon: String, color: String): js.Promise[ReadableStream] = js.native
+    def getWorkItemIconSvg(icon: String, color: String, v: Double): js.Promise[ReadableStream] = js.native
+    def getWorkItemIconSvg(icon: String, color: Unit, v: Double): js.Promise[ReadableStream] = js.native
     
     def getWorkItemIcons(): js.Promise[js.Array[WorkItemIcon]] = js.native
     

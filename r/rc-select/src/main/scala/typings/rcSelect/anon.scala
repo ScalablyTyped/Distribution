@@ -1,9 +1,11 @@
 package typings.rcSelect
 
-import typings.rcSelect.baseSelectMod.BaseSelectRef
-import typings.rcSelect.baseSelectMod.DisplayValueType
-import typings.rcSelect.optGroupMod.OptionGroupFC
-import typings.rcSelect.optionMod.OptionFC
+import typings.rcSelect.libBaseSelectMod.BaseSelectRef
+import typings.rcSelect.libBaseSelectMod.DisplayValueType
+import typings.rcSelect.libOptGroupMod.OptionGroupFC
+import typings.rcSelect.libOptionMod.OptionFC
+import typings.rcSelect.libSelectMod.FieldNames
+import typings.rcSelect.libSelectMod.RawValueType
 import typings.rcSelect.rcSelectStrings.add
 import typings.rcSelect.rcSelectStrings.blur
 import typings.rcSelect.rcSelectStrings.clear
@@ -13,8 +15,6 @@ import typings.rcSelect.rcSelectStrings.mouse
 import typings.rcSelect.rcSelectStrings.remove
 import typings.rcSelect.rcSelectStrings.submit
 import typings.rcSelect.rcSelectStrings.typing
-import typings.rcSelect.selectMod.FieldNames
-import typings.rcSelect.selectMod.RawValueType
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.std.Map

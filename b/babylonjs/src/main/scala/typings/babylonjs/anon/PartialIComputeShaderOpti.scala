@@ -1,6 +1,6 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.engineComputeShaderMod.ComputeBindingMapping
+import typings.babylonjs.enginesExtensionsEngineDotcomputeShaderMod.ComputeBindingMapping
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

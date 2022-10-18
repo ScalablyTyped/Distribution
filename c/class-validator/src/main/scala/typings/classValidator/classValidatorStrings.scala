@@ -1,8 +1,8 @@
 package typings.classValidator
 
-import typings.classValidator.isIPMod.IsIpVersion
-import typings.classValidator.isISBNMod.IsISBNVersion
-import typings.classValidator.isUUIDMod.UUIDVersion
+import typings.classValidator.typesDecoratorStringIsIPMod.IsIpVersion
+import typings.classValidator.typesDecoratorStringIsISBNMod.IsISBNVersion
+import typings.classValidator.typesDecoratorStringIsUUIDMod.UUIDVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

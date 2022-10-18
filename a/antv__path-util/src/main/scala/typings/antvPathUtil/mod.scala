@@ -1,10 +1,10 @@
 package typings.antvPathUtil
 
 import typings.antvPathUtil.anon.ArcFlag
-import typings.antvPathUtil.catmullRom2BezierMod.Pos
-import typings.antvPathUtil.getLineIntersectMod.Point
-import typings.antvPathUtil.rectPathMod.Ele
-import typings.antvPathUtil.typesMod.PathCommand
+import typings.antvPathUtil.libCatmullRom2BezierMod.Pos
+import typings.antvPathUtil.libGetLineIntersectMod.Point
+import typings.antvPathUtil.libRectPathMod.Ele
+import typings.antvPathUtil.libTypesMod.PathCommand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

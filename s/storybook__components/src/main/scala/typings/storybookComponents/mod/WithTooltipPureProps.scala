@@ -1,8 +1,8 @@
 package typings.storybookComponents.mod
 
 import typings.react.mod.ReactNode
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement
 import typings.storybookComponents.anon.PartialModifierstring
-import typings.storybookComponents.popperjsCoreLibEnumsMod.Placement
 import typings.storybookComponents.storybookComponentsStrings.`right-click`
 import typings.storybookComponents.storybookComponentsStrings.click
 import typings.storybookComponents.storybookComponentsStrings.hover

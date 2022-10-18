@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "AssetManager")
 @js.native
 open class AssetManager ()
-  extends typings.blackEngine.assetManagerMod.AssetManager
+  extends typings.blackEngine.assetsAssetManagerMod.AssetManager

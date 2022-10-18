@@ -9,13 +9,13 @@ trait XRProjectionLayer
   extends StObject
      with XRCompositionLayer {
   
-  var fixedFoveation: js.UndefOr[Double] = js.native
+  var fixedFoveation: Double = js.native
   
-  var ignoreDepthValues: Boolean = js.native
+  val ignoreDepthValues: Double = js.native
   
-  var textureArrayLength: Double = js.native
+  val textureArrayLength: Double = js.native
   
-  var textureHeight: Double = js.native
+  val textureHeight: Double = js.native
   
-  var textureWidth: Double = js.native
+  val textureWidth: Double = js.native
 }

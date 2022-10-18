@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "onfido-sdk-ui" : "9.1.1"
+      "onfido-sdk-ui" : "9.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "onfido-sdk-ui" : "9.1.1"
+      "onfido-sdk-ui" : "9.1.2"
     }
   ],
   "compile-devDependencies" : [

@@ -449,13 +449,37 @@ object mod {
     }
   }
   
-  type EventListener[TEvents /* <: Events */, TEvent /* <: String | js.Symbol | Double */] = (js.Function1[/* repeated */ Any, Unit]) | (/* import warning: importer.ImportType#apply Failed type conversion: TEvents[TEvent] */ js.Any)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TEvents extends undefined ? (args : ...any): void : TEvent extends keyof TEvents ? TEvents[TEvent] : (args : ...any): void
+    }}}
+    */
+  @js.native
+  trait EventListener[TEvents /* <: Events */, TEvent /* <: String | js.Symbol | Double */] extends StObject
   
-  type EventName[TEvents /* <: Events */] = (/* keyof TEvents */ String) | js.Symbol
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TEvents extends undefined ? string | symbol : keyof TEvents
+    }}}
+    */
+  @js.native
+  trait EventName[TEvents /* <: Events */] extends StObject
   
   type Events = js.UndefOr[StringDictionary[js.Function1[/* repeated */ Any, Unit]]]
   
-  type FromType[TData] = (Readable[Any | TData, Any | TData, Any | TData, `true`, `false`, ReadableEvents[Any | TData]]) | TData
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TData extends streamx.streamx.Readable<any, any, any, true, false, streamx.streamx.ReadableEvents<any>> ? TData : TData extends std.Iterable<infer TType> ? streamx.streamx.Readable<TType, TType, TType, true, false, streamx.streamx.ReadableEvents<TType>> : TData extends std.AsyncIterable<infer TType> ? streamx.streamx.Readable<TType, TType, TType, true, false, streamx.streamx.ReadableEvents<TType>> : streamx.streamx.Readable<TData, TData, TData, true, false, streamx.streamx.ReadableEvents<TData>>
+    }}}
+    */
+  @js.native
+  trait FromType[TData] extends StObject
   
   type MapFunction[TThis, TIn, TOut] = js.UndefOr[(js.ThisFunction1[/* this */ TThis, /* input */ TIn, TOut]) | Null]
   

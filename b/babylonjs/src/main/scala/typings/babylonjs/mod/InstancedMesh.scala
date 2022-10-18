@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import typings.babylonjs.meshesMeshMod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "InstancedMesh")
 @js.native
 open class InstancedMesh protected ()
-  extends typings.babylonjs.legacyMod.InstancedMesh {
-  def this(name: String, source: typings.babylonjs.meshMod.Mesh) = this()
+  extends typings.babylonjs.legacyLegacyMod.InstancedMesh {
+  def this(name: String, source: Mesh) = this()
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-browser", "NavigationClient")
 @js.native
 open class NavigationClient ()
-  extends typings.azureMsalBrowser.navigationClientMod.NavigationClient
+  extends typings.azureMsalBrowser.distNavigationNavigationClientMod.NavigationClient
 /* static members */
 object NavigationClient {
   

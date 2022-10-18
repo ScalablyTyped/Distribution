@@ -10,13 +10,21 @@ trait DragMetaInput
   extends StObject
      with /* otherProp */ StringDictionary[Any] {
   
-  var create: js.UndefOr[Any] = js.undefined
+  var create: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.BooleanConstructor extends (input : infer RawType): infer RefinedType ? any extends RawType ? RefinedType : RawType : never */ js.Any
+  ] = js.undefined
   
-  var duration: js.UndefOr[Any] = js.undefined
+  var duration: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof createDuration extends (input : infer RawType): infer RefinedType ? any extends RawType ? RefinedType : RawType : never */ js.Any
+  ] = js.undefined
   
-  var sourceId: js.UndefOr[Any] = js.undefined
+  var sourceId: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.StringConstructor extends (input : infer RawType): infer RefinedType ? any extends RawType ? RefinedType : RawType : never */ js.Any
+  ] = js.undefined
   
-  var startTime: js.UndefOr[Any] = js.undefined
+  var startTime: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof createDuration extends (input : infer RawType): infer RefinedType ? any extends RawType ? RefinedType : RawType : never */ js.Any
+  ] = js.undefined
 }
 object DragMetaInput {
   
@@ -27,19 +35,27 @@ object DragMetaInput {
   
   extension [Self <: DragMetaInput](x: Self) {
     
-    inline def setCreate(value: Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.BooleanConstructor extends (input : infer RawType): infer RefinedType ? any extends RawType ? RefinedType : RawType : never */ js.Any
+    ): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    inline def setDuration(value: Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: typeof createDuration extends (input : infer RawType): infer RefinedType ? any extends RawType ? RefinedType : RawType : never */ js.Any
+    ): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setSourceId(value: Any): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.StringConstructor extends (input : infer RawType): infer RefinedType ? any extends RawType ? RefinedType : RawType : never */ js.Any
+    ): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
     inline def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
     
-    inline def setStartTime(value: Any): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: typeof createDuration extends (input : infer RawType): infer RefinedType ? any extends RawType ? RefinedType : RawType : never */ js.Any
+    ): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }

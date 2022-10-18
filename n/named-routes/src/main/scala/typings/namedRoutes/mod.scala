@@ -7,6 +7,8 @@ import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.express.mod.Router
+import typings.expressServeStaticCore.mod.PathParams
+import typings.expressServeStaticCore.mod.RequestHandlerParams
 import typings.namedRoutes.anon.PartialRouteOptions
 import typings.namedRoutes.anon.PartialRouterOptions
 import typings.std.Record
@@ -209,6 +211,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object expressServeStaticCoreAugmentingMod {
     
     trait Application extends StObject {
@@ -229,11 +232,14 @@ object mod {
     }
     
     // tslint:disable-next-line interface-name
-    type IRouterMatcher[T] = js.Function3[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PathParams */ /* path */ Any, 
-        /* name */ String, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestHandler */ /* repeated */ Any, 
-        T
-      ]
+    @js.native
+    trait IRouterMatcher[T] extends StObject {
+      
+      def apply(
+        path: PathParams,
+        name: String,
+        handlers: (typings.expressServeStaticCore.mod.RequestHandler | RequestHandlerParams)*
+      ): T = js.native
+    }
   }
 }

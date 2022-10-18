@@ -1,8 +1,8 @@
 package typings.reactNativePagerView
 
-import typings.reactNativePagerView.typesMod.Orientation
-import typings.reactNativePagerView.typesMod.OverScrollMode
-import typings.reactNativePagerView.typesMod.PageScrollState
+import typings.reactNativePagerView.libTypescriptTypesMod.Orientation
+import typings.reactNativePagerView.libTypescriptTypesMod.OverScrollMode
+import typings.reactNativePagerView.libTypescriptTypesMod.PageScrollState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

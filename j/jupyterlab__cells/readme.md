@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__cells
 
-Typings are for version 2.2.7
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Notebook Cells
@@ -10,10 +10,10 @@ JupyterLab - Notebook Cells
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/cells |
 | Keywords           | - |
-| # releases         | 129 |
-| # dependents       | 75 |
-| # downloads        | 1750624 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 220412.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

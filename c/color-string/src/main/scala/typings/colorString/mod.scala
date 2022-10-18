@@ -17,11 +17,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def hsl[TColorStr /* <: String | Null */](colorString: TColorStr): Null | Color = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(colorString.asInstanceOf[js.Any]).asInstanceOf[Null | Color]
+    inline def hsl[TColorStr /* <: String | Null */](colorString: TColorStr): /* import warning: importer.ImportType#apply Failed type conversion: TColorStr extends string ? color-string.color-string.Color : null */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(colorString.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TColorStr extends string ? color-string.color-string.Color : null */ js.Any]
     
-    inline def hwb[TColorStr /* <: String | Null */](colorString: TColorStr): Null | Color = ^.asInstanceOf[js.Dynamic].applyDynamic("hwb")(colorString.asInstanceOf[js.Any]).asInstanceOf[Null | Color]
+    inline def hwb[TColorStr /* <: String | Null */](colorString: TColorStr): /* import warning: importer.ImportType#apply Failed type conversion: TColorStr extends string ? color-string.color-string.Color : null */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hwb")(colorString.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TColorStr extends string ? color-string.color-string.Color : null */ js.Any]
     
-    inline def rgb[TColorStr /* <: String | Null */](colorString: TColorStr): Null | Color = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(colorString.asInstanceOf[js.Any]).asInstanceOf[Null | Color]
+    inline def rgb[TColorStr /* <: String | Null */](colorString: TColorStr): /* import warning: importer.ImportType#apply Failed type conversion: TColorStr extends string ? color-string.color-string.Color : null */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(colorString.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TColorStr extends string ? color-string.color-string.Color : null */ js.Any]
   }
   
   object to {

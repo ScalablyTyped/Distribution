@@ -3,10 +3,10 @@ package typings.awsSdkClientS3Node
 import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.AES256
 import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.awsColonkms
 import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.requester_
-import typings.awsSdkClientS3Node.outputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkClientS3Node.typesCopyPartResultMod.UnmarshalledCopyPartResult
-import typings.awsSdkTypes.responseMod.MetadataBearer
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkClientS3Node.typesOutputTypesUnionMod._OutputTypesUnion
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

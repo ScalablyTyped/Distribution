@@ -1,10 +1,10 @@
 package typings.rcTree.anon
 
-import typings.rcTree.interfaceMod.DataNode
-import typings.rcTree.interfaceMod.FieldDataNode
-import typings.rcTree.interfaceMod.IconType
+import typings.rcTree.esInterfaceMod.DataNode
+import typings.rcTree.esInterfaceMod.FieldDataNode
+import typings.rcTree.esInterfaceMod.IconType
+import typings.rcTree.esTreeNodeMod.TreeNodeProps
 import typings.rcTree.rcTreeStrings.children
-import typings.rcTree.treeNodeMod.TreeNodeProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject

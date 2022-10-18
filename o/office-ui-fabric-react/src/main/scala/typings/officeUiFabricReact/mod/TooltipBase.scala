@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.PartialITooltipProps
-import typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps
+import typings.officeUiFabricReact.libComponentsTooltipTooltipDottypesMod.ITooltipProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

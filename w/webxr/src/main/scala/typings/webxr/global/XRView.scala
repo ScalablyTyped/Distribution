@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ref: https://immersive-web.github.io/webxr/#xrview-interface
   */
-@JSGlobal("XRView")
+/* note: abstract class */ @JSGlobal("XRView")
 @js.native
-abstract class XRView ()
+open class XRView ()
   extends StObject
      with typings.webxr.XRView {
   

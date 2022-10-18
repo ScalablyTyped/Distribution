@@ -1,10 +1,10 @@
 package typings.awsSdkClientPinpointBrowser
 
-import typings.awsSdkClientPinpointBrowser.inputTypesUnionMod.InputTypesUnion
-import typings.awsSdkClientPinpointBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientPinpointBrowser.pinpointConfigurationMod.PinpointConfiguration
 import typings.awsSdkClientPinpointBrowser.pinpointConfigurationMod.PinpointResolvedConfiguration
-import typings.awsSdkTypes.commandMod.Command
+import typings.awsSdkClientPinpointBrowser.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientPinpointBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesCommandMod.Command
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

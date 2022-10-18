@@ -19,7 +19,7 @@ object linterMod {
   trait CallbackSolution extends StObject {
     
     @JSName("apply")
-    def apply(): js.Any
+    def apply(): Any
     
     var position: Range
     
@@ -29,14 +29,14 @@ object linterMod {
   }
   object CallbackSolution {
     
-    inline def apply(apply: () => js.Any, position: Range): CallbackSolution = {
+    inline def apply(apply: () => Any, position: Range): CallbackSolution = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction0(apply), position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallbackSolution]
     }
     
     extension [Self <: CallbackSolution](x: Self) {
       
-      inline def setApply(value: () => js.Any): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
+      inline def setApply(value: () => Any): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
       
       inline def setPosition(value: Range): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -154,7 +154,7 @@ object linterMod {
       
       inline def setGrammarScopes(value: js.Array[String]): Self = StObject.set(x, "grammarScopes", value.asInstanceOf[js.Any])
       
-      inline def setGrammarScopesVarargs(value: String*): Self = StObject.set(x, "grammarScopes", js.Array(value :_*))
+      inline def setGrammarScopesVarargs(value: String*): Self = StObject.set(x, "grammarScopes", js.Array(value*))
       
       inline def setLint(value: TextEditor => LintResult | js.Promise[LintResult]): Self = StObject.set(x, "lint", js.Any.fromFunction1(value))
       
@@ -235,7 +235,7 @@ object linterMod {
       
       inline def setSolutionsUndefined: Self = StObject.set(x, "solutions", js.undefined)
       
-      inline def setSolutionsVarargs(value: (ReplacementSolution | CallbackSolution)*): Self = StObject.set(x, "solutions", js.Array(value :_*))
+      inline def setSolutionsVarargs(value: (ReplacementSolution | CallbackSolution)*): Self = StObject.set(x, "solutions", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("watson-developer-cloud/sdk", "ToneAnalyzerV3")
 @js.native
-class ToneAnalyzerV3 protected () extends ^ {
+open class ToneAnalyzerV3 protected () extends ^ {
   /**
     * Construct a ToneAnalyzerV3 object.
     *

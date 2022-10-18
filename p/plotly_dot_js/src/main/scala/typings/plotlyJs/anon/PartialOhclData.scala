@@ -1,8 +1,8 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.libTracesOhclMod.HoverInfo
+import typings.plotlyJs.libTracesOhclMod.XCalendar
 import typings.plotlyJs.mod.Data
-import typings.plotlyJs.ohclMod.HoverInfo
-import typings.plotlyJs.ohclMod.XCalendar
 import typings.plotlyJs.plotlyJsStrings.end
 import typings.plotlyJs.plotlyJsStrings.legendonly
 import typings.plotlyJs.plotlyJsStrings.middle

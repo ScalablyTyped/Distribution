@@ -2,11 +2,11 @@ package typings.rotJs
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.rotJs.rectMod.default
+import typings.rotJs.libDisplayRectMod.default
+import typings.rotJs.libDisplayTypesMod.LayoutType
 import typings.rotJs.rotJsInts.`4`
 import typings.rotJs.rotJsInts.`6`
 import typings.rotJs.rotJsInts.`8`
-import typings.rotJs.typesMod.LayoutType
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
@@ -407,7 +407,7 @@ object anon {
   @js.native
   trait TypeofTileGL
     extends StObject
-       with Instantiable0[typings.rotJs.tileGlMod.default] {
+       with Instantiable0[typings.rotJs.libDisplayTileGlMod.default] {
     
     def isSupported(): Boolean = js.native
   }

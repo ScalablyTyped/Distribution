@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.datePickerTypesMod.IDatePickerProps
+import typings.officeUiFabricReact.libComponentsDatePickerDatePickerDottypesMod.IDatePickerProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object libDatePickerMod {
   @JSImport("office-ui-fabric-react/lib/DatePicker", "DatePickerBase")
   @js.native
   open class DatePickerBase protected ()
-    extends typings.officeUiFabricReact.datePickerMod.DatePickerBase {
+    extends typings.officeUiFabricReact.libComponentsDatePickerMod.DatePickerBase {
     def this(props: IDatePickerProps) = this()
   }
   /* static members */
@@ -36,15 +36,17 @@ object libDatePickerMod {
   object DateRangeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType & Double
+      ] = js.native
     
-    /* 0 */ val Day: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Day & Double = js.native
+    /* 0 */ val Day: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType.Day & Double = js.native
     
-    /* 2 */ val Month: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Month & Double = js.native
+    /* 2 */ val Month: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType.Month & Double = js.native
     
-    /* 1 */ val Week: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Week & Double = js.native
+    /* 1 */ val Week: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType.Week & Double = js.native
     
-    /* 3 */ val WorkWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.WorkWeek & Double = js.native
+    /* 3 */ val WorkWeek: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType.WorkWeek & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/DatePicker", "DayOfWeek")
@@ -52,21 +54,21 @@ object libDatePickerMod {
   object DayOfWeek extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek & Double] = js.native
     
-    /* 5 */ val Friday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Friday & Double = js.native
+    /* 5 */ val Friday: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Friday & Double = js.native
     
-    /* 1 */ val Monday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Monday & Double = js.native
+    /* 1 */ val Monday: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Monday & Double = js.native
     
-    /* 6 */ val Saturday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Saturday & Double = js.native
+    /* 6 */ val Saturday: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Saturday & Double = js.native
     
-    /* 0 */ val Sunday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Sunday & Double = js.native
+    /* 0 */ val Sunday: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Sunday & Double = js.native
     
-    /* 4 */ val Thursday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Thursday & Double = js.native
+    /* 4 */ val Thursday: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Thursday & Double = js.native
     
-    /* 2 */ val Tuesday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Tuesday & Double = js.native
+    /* 2 */ val Tuesday: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Tuesday & Double = js.native
     
-    /* 3 */ val Wednesday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Wednesday & Double = js.native
+    /* 3 */ val Wednesday: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Wednesday & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/DatePicker", "FirstWeekOfYear")
@@ -74,12 +76,14 @@ object libDatePickerMod {
   object FirstWeekOfYear extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.FirstWeekOfYear & Double
+      ] = js.native
     
-    /* 0 */ val FirstDay: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstDay & Double = js.native
+    /* 0 */ val FirstDay: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.FirstWeekOfYear.FirstDay & Double = js.native
     
-    /* 2 */ val FirstFourDayWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstFourDayWeek & Double = js.native
+    /* 2 */ val FirstFourDayWeek: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.FirstWeekOfYear.FirstFourDayWeek & Double = js.native
     
-    /* 1 */ val FirstFullWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstFullWeek & Double = js.native
+    /* 1 */ val FirstFullWeek: typings.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.FirstWeekOfYear.FirstFullWeek & Double = js.native
   }
 }

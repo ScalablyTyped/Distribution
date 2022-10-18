@@ -1,6 +1,6 @@
 package typings.awsLambda.anon
 
-import typings.awsLambda.appsyncResolverMod.AppSyncResolverEventHeaders
+import typings.awsLambda.triggerAppsyncResolverMod.AppSyncResolverEventHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

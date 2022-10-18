@@ -1,7 +1,7 @@
 package typings.ol
 
-import typings.ol.attributionMod.Options
-import typings.ol.attributionMod.default
+import typings.ol.controlAttributionMod.Options
+import typings.ol.controlAttributionMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,57 +28,57 @@ object controlMod {
   @JSImport("ol/control", "FullScreen")
   @js.native
   open class FullScreen ()
-    extends typings.ol.fullScreenMod.default {
-    def this(opt_options: typings.ol.fullScreenMod.Options) = this()
+    extends typings.ol.controlFullScreenMod.default {
+    def this(opt_options: typings.ol.controlFullScreenMod.Options) = this()
   }
   
   @JSImport("ol/control", "MousePosition")
   @js.native
   open class MousePosition ()
-    extends typings.ol.mousePositionMod.default {
-    def this(opt_options: typings.ol.mousePositionMod.Options) = this()
+    extends typings.ol.controlMousePositionMod.default {
+    def this(opt_options: typings.ol.controlMousePositionMod.Options) = this()
   }
   
   @JSImport("ol/control", "OverviewMap")
   @js.native
   open class OverviewMap ()
-    extends typings.ol.overviewMapMod.default {
-    def this(opt_options: typings.ol.overviewMapMod.Options) = this()
+    extends typings.ol.controlOverviewMapMod.default {
+    def this(opt_options: typings.ol.controlOverviewMapMod.Options) = this()
   }
   
   @JSImport("ol/control", "Rotate")
   @js.native
   open class Rotate ()
-    extends typings.ol.rotateMod.default {
-    def this(opt_options: typings.ol.rotateMod.Options) = this()
+    extends typings.ol.controlRotateMod.default {
+    def this(opt_options: typings.ol.controlRotateMod.Options) = this()
   }
   
   @JSImport("ol/control", "ScaleLine")
   @js.native
   open class ScaleLine ()
-    extends typings.ol.scaleLineMod.default {
-    def this(opt_options: typings.ol.scaleLineMod.Options) = this()
+    extends typings.ol.controlScaleLineMod.default {
+    def this(opt_options: typings.ol.controlScaleLineMod.Options) = this()
   }
   
   @JSImport("ol/control", "Zoom")
   @js.native
   open class Zoom ()
-    extends typings.ol.zoomMod.default {
-    def this(opt_options: typings.ol.zoomMod.Options) = this()
+    extends typings.ol.controlZoomMod.default {
+    def this(opt_options: typings.ol.controlZoomMod.Options) = this()
   }
   
   @JSImport("ol/control", "ZoomSlider")
   @js.native
   open class ZoomSlider ()
-    extends typings.ol.zoomSliderMod.default {
-    def this(opt_options: typings.ol.zoomSliderMod.Options) = this()
+    extends typings.ol.controlZoomSliderMod.default {
+    def this(opt_options: typings.ol.controlZoomSliderMod.Options) = this()
   }
   
   @JSImport("ol/control", "ZoomToExtent")
   @js.native
   open class ZoomToExtent ()
-    extends typings.ol.zoomToExtentMod.default {
-    def this(opt_options: typings.ol.zoomToExtentMod.Options) = this()
+    extends typings.ol.controlZoomToExtentMod.default {
+    def this(opt_options: typings.ol.controlZoomToExtentMod.Options) = this()
   }
   
   inline def defaults(): typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[typings.ol.collectionMod.default[typings.ol.controlControlMod.default]]
@@ -92,11 +92,11 @@ object controlMod {
     
     var rotate: js.UndefOr[Boolean] = js.undefined
     
-    var rotateOptions: js.UndefOr[typings.ol.rotateMod.Options] = js.undefined
+    var rotateOptions: js.UndefOr[typings.ol.controlRotateMod.Options] = js.undefined
     
     var zoom: js.UndefOr[Boolean] = js.undefined
     
-    var zoomOptions: js.UndefOr[typings.ol.zoomMod.Options] = js.undefined
+    var zoomOptions: js.UndefOr[typings.ol.controlZoomMod.Options] = js.undefined
   }
   object DefaultsOptions {
     
@@ -117,7 +117,7 @@ object controlMod {
       
       inline def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      inline def setRotateOptions(value: typings.ol.rotateMod.Options): Self = StObject.set(x, "rotateOptions", value.asInstanceOf[js.Any])
+      inline def setRotateOptions(value: typings.ol.controlRotateMod.Options): Self = StObject.set(x, "rotateOptions", value.asInstanceOf[js.Any])
       
       inline def setRotateOptionsUndefined: Self = StObject.set(x, "rotateOptions", js.undefined)
       
@@ -125,7 +125,7 @@ object controlMod {
       
       inline def setZoom(value: Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      inline def setZoomOptions(value: typings.ol.zoomMod.Options): Self = StObject.set(x, "zoomOptions", value.asInstanceOf[js.Any])
+      inline def setZoomOptions(value: typings.ol.controlZoomMod.Options): Self = StObject.set(x, "zoomOptions", value.asInstanceOf[js.Any])
       
       inline def setZoomOptionsUndefined: Self = StObject.set(x, "zoomOptions", js.undefined)
       

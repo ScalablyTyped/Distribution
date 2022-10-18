@@ -1,7 +1,7 @@
 package typings.puppeteer.mod
 
 import typings.puppeteer.puppeteerStrings.disconnected
-import typings.puppeteer.puppeteerStrings.targetchanged_
+import typings.puppeteer.puppeteerStrings.targetchanged
 import typings.puppeteer.puppeteerStrings.targetcreated
 import typings.puppeteer.puppeteerStrings.targetdestroyed
 import org.scalablytyped.runtime.StObject
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.puppeteer.puppeteerStrings.disconnected
-  - typings.puppeteer.puppeteerStrings.targetchanged_
+  - typings.puppeteer.puppeteerStrings.targetchanged
   - typings.puppeteer.puppeteerStrings.targetcreated
   - typings.puppeteer.puppeteerStrings.targetdestroyed
 */
@@ -34,7 +34,7 @@ object BrowserEmittedEvents {
     *
     * Note that this includes target changes in incognito browser contexts.
     */
-  inline def TargetChanged: targetchanged_ = "targetchanged".asInstanceOf[targetchanged_]
+  inline def TargetChanged: targetchanged = "targetchanged".asInstanceOf[targetchanged]
   
   /**
     * Emitted when a target is created, for example when a new page is opened by

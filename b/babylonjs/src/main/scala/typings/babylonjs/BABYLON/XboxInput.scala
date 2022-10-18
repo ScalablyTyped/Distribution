@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait XboxInput
-  extends StObject
-     with _DeviceInput[Any]
+sealed trait XboxInput extends StObject
 @JSGlobal("BABYLON.XboxInput")
 @js.native
 object XboxInput extends StObject {

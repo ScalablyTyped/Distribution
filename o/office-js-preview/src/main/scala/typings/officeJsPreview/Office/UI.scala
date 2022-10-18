@@ -66,12 +66,12 @@ trait UI extends StObject {
     *
     * @remarks
     *
-    * **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.5), PowerPoint, Word
+    * **Applications**: Excel, Outlook (Minimum requirement set: Mailbox 1.5), PowerPoint, Word
     *
-    * **Requirement sets**: 
-    * 
+    * **Requirement sets**:
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.5}
     *
     * The behavior of this method is specified by the following:
@@ -90,7 +90,7 @@ trait UI extends StObject {
     *
     * @remarks
     *
-    * **Hosts**: Excel, Outlook, PowerPoint, Word
+    * **Applications**: Excel, Outlook, PowerPoint, Word
     *
     * **Requirement sets**:
     *
@@ -100,7 +100,7 @@ trait UI extends StObject {
     *
     * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
     * for Outlook. For more on how to specify a requirement set in your manifest, see
-    * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}.
     *
     * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
     * other domains.
@@ -109,7 +109,7 @@ trait UI extends StObject {
     *
     * **Design considerations**:
     *
-    * The following design considerations apply to dialog boxes:
+    * The following design considerations apply to dialog boxes.
     *
     * - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in
     * Commands (custom ribbon buttons or menu items).
@@ -118,7 +118,7 @@ trait UI extends StObject {
     *
     * - Every dialog box is centered on the screen when opened.
     *
-    * - Dialog boxes appear on top of the host application and in the order in which they were created.
+    * - Dialog boxes appear on top of the application and in the order in which they were created.
     *
     * Use a dialog box to:
     *
@@ -130,7 +130,7 @@ trait UI extends StObject {
     *
     * Do not use a dialog box to interact with a document. Use a task pane instead.
     *
-    * **displayDialogAsync Errors**:
+    * **displayDialogAsync Errors**
     *
     * <table>
     *   <tr>
@@ -139,7 +139,7 @@ trait UI extends StObject {
     *   </tr>
     *   <tr>
     *     <td>12004</td>
-    *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the `AppDomains` section of the add-in manifest.</td>
+    *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <code>AppDomains</code> section of the add-in manifest.</td>
     *   </tr>
     *   <tr>
     *     <td>12005</td>
@@ -161,23 +161,23 @@ trait UI extends StObject {
     * <table>
     *   <tr>
     *     <th>Property</th>
-    *     <th>Use to</th>
+    *     <th>Use</th>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.value</td>
-    *     <td>Access the Dialog object.</td>
+    *     <td><code>AsyncResult.value</code></td>
+    *     <td>Access the Dialog object</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.status</td>
-    *     <td>Determine the success or failure of the operation.</td>
+    *     <td><code>AsyncResult.status</code></td>
+    *     <td>Determine the success or failure of the operation</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.error</td>
-    *     <td>Access an Error object that provides error information if the operation failed.</td>
+    *     <td><code>AsyncResult.error</code></td>
+    *     <td>Access an Error object that provides error information if the operation failed</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.asyncContext</td>
-    *     <td>Access your user-defined object or value, if you passed one as the asyncContext parameter.</td>
+    *     <td><code>AsyncResult.asyncContext</code></td>
+    *     <td>Access your user-defined object or value, if you passed one as the asyncContext parameter</td>
     *   </tr>
     * </table>
     *

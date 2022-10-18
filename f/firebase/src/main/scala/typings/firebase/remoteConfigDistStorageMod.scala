@@ -16,15 +16,15 @@ import typings.firebaseStorage.mod.StringFormat
 import typings.firebaseStorage.mod.UploadMetadata
 import typings.firebaseStorage.mod.UploadResult
 import typings.firebaseStorage.mod.UploadTask
+import typings.node.NodeJS.ReadableStream
 import typings.std.Blob
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remoteConfigDistStorageMod {
   
-  @JSImport("firebase/compat/remote-config/dist/storage", JSImport.Namespace)
+  @JSImport("firebase/remote-config/dist/storage", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -36,7 +36,7 @@ object remoteConfigDistStorageMod {
       * Example: The string 'rWmO++E6t7/rlw==' becomes the byte sequence
       * ad 69 8e fb e1 3a b7 bf eb 97
       */
-    @JSImport("firebase/compat/remote-config/dist/storage", "StringFormat.BASE64")
+    @JSImport("firebase/remote-config/dist/storage", "StringFormat.BASE64")
     @js.native
     val BASE64: base64 = js.native
     
@@ -46,7 +46,7 @@ object remoteConfigDistStorageMod {
       * Example: The string 'rWmO--E6t7_rlw==' becomes the byte sequence
       * ad 69 8e fb e1 3a b7 bf eb 97
       */
-    @JSImport("firebase/compat/remote-config/dist/storage", "StringFormat.BASE64URL")
+    @JSImport("firebase/remote-config/dist/storage", "StringFormat.BASE64URL")
     @js.native
     val BASE64URL: base64url = js.native
     
@@ -59,7 +59,7 @@ object remoteConfigDistStorageMod {
       * (the content-type "application/octet-stream" is also applied, but can
       * be overridden in the metadata object).
       */
-    @JSImport("firebase/compat/remote-config/dist/storage", "StringFormat.DATA_URL")
+    @JSImport("firebase/remote-config/dist/storage", "StringFormat.DATA_URL")
     @js.native
     val DATA_URL: data_url = js.native
     
@@ -70,7 +70,7 @@ object remoteConfigDistStorageMod {
       * Example: The string 'Hello! \\\ud83d\\\ude0a' becomes the byte sequence
       * 48 65 6c 6c 6f 21 20 f0 9f 98 8a
       */
-    @JSImport("firebase/compat/remote-config/dist/storage", "StringFormat.RAW")
+    @JSImport("firebase/remote-config/dist/storage", "StringFormat.RAW")
     @js.native
     val RAW: raw = js.native
   }
@@ -95,8 +95,8 @@ object remoteConfigDistStorageMod {
   inline def getStorage(app: FirebaseApp): FirebaseStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorage")(app.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorage]
   inline def getStorage(app: FirebaseApp, bucketUrl: String): FirebaseStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorage")(app.asInstanceOf[js.Any], bucketUrl.asInstanceOf[js.Any])).asInstanceOf[FirebaseStorage]
   
-  inline def getStream(ref: StorageReference): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(ref.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
-  inline def getStream(ref: StorageReference, maxDownloadSizeBytes: Double): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(ref.asInstanceOf[js.Any], maxDownloadSizeBytes.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def getStream(ref: StorageReference): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(ref.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def getStream(ref: StorageReference, maxDownloadSizeBytes: Double): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(ref.asInstanceOf[js.Any], maxDownloadSizeBytes.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
   inline def list(ref: StorageReference): js.Promise[ListResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ListResult]]
   inline def list(ref: StorageReference, options: ListOptions): js.Promise[ListResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(ref.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListResult]]

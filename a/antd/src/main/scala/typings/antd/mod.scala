@@ -1,9 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.affixMod.AffixProps
-import typings.antd.alertMod.AlertInterface
-import typings.antd.anchorMod.AnchorInterface
 import typings.antd.anon.Children
 import typings.antd.anon.DataSource
 import typings.antd.anon.DisplayName
@@ -21,82 +18,85 @@ import typings.antd.anon.SourceSelectedKeys
 import typings.antd.anon.WeakValidationMapConfigPr
 import typings.antd.anon.`1`
 import typings.antd.anon.`2`
-import typings.antd.antdStrings.`4Dot23Dot3`
-import typings.antd.autoCompleteMod.AutoCompleteProps
-import typings.antd.avatarMod.CompoundedComponent
-import typings.antd.backTopMod.BackTopProps
-import typings.antd.breadcrumbBreadcrumbMod.BreadcrumbInterface
-import typings.antd.cardMod.CardInterface
-import typings.antd.carouselMod.CarouselProps
-import typings.antd.carouselMod.CarouselRef
-import typings.antd.cascaderMod.CascaderProps
-import typings.antd.collapseCollapseMod.CollapseInterface
-import typings.antd.commentMod.CommentProps
-import typings.antd.configProviderContextMod.ConfigConsumerProps
-import typings.antd.configProviderMod.ConfigProviderProps
-import typings.antd.configProviderSizeContextMod.SizeType
-import typings.antd.descriptionsMod.DescriptionsProps
-import typings.antd.dividerMod.DividerProps
-import typings.antd.drawerMod.DrawerProps
-import typings.antd.dropdownDropdownMod.DropdownInterface
-import typings.antd.emptyMod.EmptyType
-import typings.antd.errorBoundaryMod.default
-import typings.antd.formMod.FormInterface
-import typings.antd.generateCalendarMod.CalendarProps
-import typings.antd.generatePickerMod.PickerProps
-import typings.antd.generatePickerMod.RangePickerProps
-import typings.antd.gridColMod.ColProps
-import typings.antd.gridRowMod.RowProps
-import typings.antd.imageMod.CompositionImage
-import typings.antd.inputNumberMod.InputNumberProps
-import typings.antd.interfaceMod.PickerComponentClass
-import typings.antd.itemMod.DescriptionsItemProps
-import typings.antd.layoutMod.LayoutType
+import typings.antd.antdStrings.`4Dot23Dot6`
+import typings.antd.libAffixMod.AffixProps
+import typings.antd.libAlertErrorBoundaryMod.default
+import typings.antd.libAlertMod.AlertInterface
+import typings.antd.libAnchorMod.AnchorInterface
+import typings.antd.libAutoCompleteMod.AutoCompleteProps
+import typings.antd.libAvatarMod.CompoundedComponent
+import typings.antd.libBackTopMod.BackTopProps
+import typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbInterface
+import typings.antd.libCalendarGenerateCalendarMod.CalendarProps
+import typings.antd.libCardMod.CardInterface
+import typings.antd.libCarouselMod.CarouselProps
+import typings.antd.libCarouselMod.CarouselRef
+import typings.antd.libCascaderMod.CascaderProps
+import typings.antd.libCollapseCollapseMod.CollapseInterface
+import typings.antd.libCommentMod.CommentProps
+import typings.antd.libConfigProviderContextMod.ConfigConsumerProps
+import typings.antd.libConfigProviderMod.ConfigProviderProps
+import typings.antd.libConfigProviderSizeContextMod.SizeType
+import typings.antd.libDatePickerGeneratePickerInterfaceMod.PickerComponentClass
+import typings.antd.libDatePickerGeneratePickerMod.PickerProps
+import typings.antd.libDatePickerGeneratePickerMod.RangePickerProps
+import typings.antd.libDescriptionsItemMod.DescriptionsItemProps
+import typings.antd.libDescriptionsMod.DescriptionsProps
+import typings.antd.libDividerMod.DividerProps
+import typings.antd.libDrawerMod.DrawerProps
+import typings.antd.libDropdownDropdownMod.DropdownInterface
+import typings.antd.libEmptyMod.EmptyType
+import typings.antd.libFormMod.FormInterface
+import typings.antd.libGridColMod.ColProps
+import typings.antd.libGridRowMod.RowProps
+import typings.antd.libImageMod.CompositionImage
+import typings.antd.libInputNumberMod.InputNumberProps
+import typings.antd.libLayoutMod.LayoutType
+import typings.antd.libListItemMod.ListItemTypeProps
+import typings.antd.libListMod.ListProps
+import typings.antd.libMenuMenuContextMod.MenuContextProps
+import typings.antd.libMenuMenuDividerMod.MenuDividerProps
+import typings.antd.libMenuSubMenuMod.SubMenuProps
+import typings.antd.libMessageMod.MessageApi
+import typings.antd.libModalMod.ModalType
+import typings.antd.libNotificationMod.NotificationApi
+import typings.antd.libPageHeaderMod.PageHeaderProps
+import typings.antd.libPaginationPaginationMod.PaginationProps
+import typings.antd.libPopconfirmMod.PopconfirmProps
+import typings.antd.libPopoverMod.PopoverProps
+import typings.antd.libProgressProgressMod.ProgressProps
+import typings.antd.libRateMod.RateProps
+import typings.antd.libResultMod.ResultType
 import typings.antd.libSelectMod.SelectProps
+import typings.antd.libSkeletonSkeletonMod.SkeletonProps
+import typings.antd.libSliderMod.SliderRangeProps
+import typings.antd.libSliderMod.SliderSingleProps
+import typings.antd.libSpaceMod.SpaceProps
+import typings.antd.libSpinMod.SpinFCType
+import typings.antd.libStatisticStatisticMod.StatisticComponent
+import typings.antd.libStatisticStatisticMod.StatisticProps
 import typings.antd.libStepsMod.StepsType
-import typings.antd.listItemMod.ListItemTypeProps
-import typings.antd.listMod.ListProps
-import typings.antd.menuContextMod.MenuContextProps
-import typings.antd.menuDividerMod.MenuDividerProps
-import typings.antd.messageMod.MessageApi
-import typings.antd.modalMod.ModalType
-import typings.antd.notificationMod.NotificationApi
-import typings.antd.operationMod.TransferOperationProps
-import typings.antd.pageHeaderMod.PageHeaderProps
-import typings.antd.paginationPaginationMod.PaginationProps
-import typings.antd.popconfirmMod.PopconfirmProps
-import typings.antd.popoverMod.PopoverProps
-import typings.antd.progressProgressMod.ProgressProps
-import typings.antd.rateMod.RateProps
-import typings.antd.resultMod.ResultType
-import typings.antd.skeletonSkeletonMod.SkeletonProps
-import typings.antd.sliderMod.SliderRangeProps
-import typings.antd.sliderMod.SliderSingleProps
-import typings.antd.spaceMod.SpaceProps
-import typings.antd.spinMod.SpinFCType
-import typings.antd.statisticStatisticMod.StatisticComponent
-import typings.antd.statisticStatisticMod.StatisticProps
-import typings.antd.subMenuMod.SubMenuProps
-import typings.antd.tableTableMod.TableInterface
-import typings.antd.tabsMod.TabsProps
-import typings.antd.tagMod.TagType
-import typings.antd.timePickerMod.MergedTimePicker
-import typings.antd.timelineTimelineMod.TimelineType
-import typings.antd.tooltipMod.TooltipProps
-import typings.antd.transferListMod.TransferListProps
-import typings.antd.transferMod.KeyWiseTransferItem
-import typings.antd.transferMod.TransferItem
-import typings.antd.transferMod.TransferProps
-import typings.antd.transferSearchMod.TransferSearchProps
-import typings.antd.treeSelectMod.TreeSelectInterface
-import typings.antd.typographyMod.TypographyProps
-import typings.antd.uploadMod.UploadInterface
+import typings.antd.libTableTableMod.TableInterface
+import typings.antd.libTabsMod.TabsProps
+import typings.antd.libTagMod.TagType
+import typings.antd.libTimePickerMod.MergedTimePicker
+import typings.antd.libTimelineTimelineMod.TimelineType
+import typings.antd.libTooltipMod.TooltipProps
+import typings.antd.libTransferListMod.TransferListProps
+import typings.antd.libTransferMod.KeyWiseTransferItem
+import typings.antd.libTransferMod.TransferItem
+import typings.antd.libTransferMod.TransferProps
+import typings.antd.libTransferOperationMod.TransferOperationProps
+import typings.antd.libTransferSearchMod.TransferSearchProps
+import typings.antd.libTreeSelectMod.TreeSelectInterface
+import typings.antd.libTypographyMod.TypographyProps
+import typings.antd.libUploadMod.UploadInterface
 import typings.moment.mod.Moment
-import typings.rcImage.imageMod.ImageProps
-import typings.rcInputNumber.miniDecimalMod.ValueType
-import typings.rcMenu.menuItemGroupMod.MenuItemGroupProps
-import typings.rcSelect.selectMod.DefaultOptionType
-import typings.rcTabs.tabPaneMod.TabPaneProps
+import typings.rcImage.libImageMod.ImageProps
+import typings.rcInputNumber.esUtilsMiniDecimalMod.ValueType
+import typings.rcMenu.esMenuItemGroupMod.MenuItemGroupProps
+import typings.rcSelect.libSelectMod.DefaultOptionType
+import typings.rcTabs.esTabPanelListTabPaneMod.TabPaneProps
 import typings.react.mod.Component
 import typings.react.mod.Context
 import typings.react.mod.FC
@@ -124,7 +124,7 @@ object mod {
   
   @JSImport("antd", "Affix")
   @js.native
-  val Affix: ForwardRefExoticComponent[AffixProps & RefAttributes[typings.antd.affixMod.Affix]] = js.native
+  val Affix: ForwardRefExoticComponent[AffixProps & RefAttributes[typings.antd.libAffixMod.Affix]] = js.native
   
   object Alert extends Shortcut {
     
@@ -153,7 +153,7 @@ object mod {
     @JSImport("antd", "Anchor.Link")
     @js.native
     open class Link ()
-      extends typings.antd.anchorLinkMod.default
+      extends typings.antd.libAnchorAnchorLinkMod.default
     
     type _To = AnchorInterface
     
@@ -175,7 +175,7 @@ object mod {
   
   @JSImport("antd", "Badge")
   @js.native
-  val Badge: typings.antd.badgeMod.CompoundedComponent = js.native
+  val Badge: typings.antd.libBadgeMod.CompoundedComponent = js.native
   
   @JSImport("antd", "Breadcrumb")
   @js.native
@@ -183,7 +183,7 @@ object mod {
   
   @JSImport("antd", "Button")
   @js.native
-  val Button: typings.antd.buttonButtonMod.CompoundedComponent = js.native
+  val Button: typings.antd.libButtonButtonMod.CompoundedComponent = js.native
   
   inline def Calendar(props: CalendarProps[Moment]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Calendar")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -198,13 +198,13 @@ object mod {
   @JSImport("antd", "Cascader")
   @js.native
   val Cascader: (js.Function1[
-    /* props */ PropsWithChildren[CascaderProps[typings.rcCascader.cascaderMod.DefaultOptionType]] & Ref, 
+    /* props */ PropsWithChildren[CascaderProps[typings.rcCascader.esCascaderMod.DefaultOptionType]] & Ref, 
     ReactElement
   ]) & DisplayName = js.native
   
   @JSImport("antd", "Checkbox")
   @js.native
-  val Checkbox: typings.antd.checkboxMod.CompoundedComponent = js.native
+  val Checkbox: typings.antd.libCheckboxMod.CompoundedComponent = js.native
   
   @JSImport("antd", "Col")
   @js.native
@@ -455,7 +455,7 @@ object mod {
   
   @JSImport("antd", "Input")
   @js.native
-  val Input: typings.antd.inputMod.CompoundedComponent = js.native
+  val Input: typings.antd.libInputMod.CompoundedComponent = js.native
   
   @JSImport("antd", "InputNumber")
   @js.native
@@ -483,12 +483,12 @@ object mod {
   
   @JSImport("antd", "Mentions")
   @js.native
-  val Mentions: typings.antd.mentionsMod.CompoundedComponent = js.native
+  val Mentions: typings.antd.libMentionsMod.CompoundedComponent = js.native
   
   @JSImport("antd", "Menu")
   @js.native
   open class Menu ()
-    extends typings.antd.menuMod.default
+    extends typings.antd.libMenuMod.default
   object Menu {
     
     @JSImport("antd", "Menu")
@@ -505,7 +505,7 @@ object mod {
     @JSImport("antd", "Menu.Item")
     @js.native
     open class Item ()
-      extends typings.antd.menuItemMod.default
+      extends typings.antd.libMenuMenuItemMod.default
     /* static member */
     /* was `typeof Item` */
     object Item {
@@ -561,7 +561,7 @@ object mod {
   
   @JSImport("antd", "Radio")
   @js.native
-  val Radio: typings.antd.radioMod.CompoundedComponent = js.native
+  val Radio: typings.antd.libRadioMod.CompoundedComponent = js.native
   
   @JSImport("antd", "Rate")
   @js.native
@@ -585,7 +585,7 @@ object mod {
   
   @JSImport("antd", "Skeleton")
   @js.native
-  val Skeleton: FC[SkeletonProps] & typings.antd.skeletonSkeletonMod.CompoundedComponent = js.native
+  val Skeleton: FC[SkeletonProps] & typings.antd.libSkeletonSkeletonMod.CompoundedComponent = js.native
   
   @JSImport("antd", "Slider")
   @js.native
@@ -601,23 +601,9 @@ object mod {
   @js.native
   val Spin: SpinFCType = js.native
   
-  object Statistic extends Shortcut {
-    
-    @JSImport("antd", "Statistic")
-    @js.native
-    val ^ : FC[StatisticProps] & StatisticComponent = js.native
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("antd", "Statistic.Countdown")
-    @js.native
-    open class Countdown ()
-      extends typings.antd.countdownMod.default
-    
-    type _To = FC[StatisticProps] & StatisticComponent
-    
-    /* This means you don't have to write `^`, but can instead just say `Statistic.foo` */
-    override def _to: FC[StatisticProps] & StatisticComponent = ^
-  }
+  @JSImport("antd", "Statistic")
+  @js.native
+  val Statistic: FC[StatisticProps] & StatisticComponent = js.native
   
   @JSImport("antd", "Steps")
   @js.native
@@ -625,7 +611,7 @@ object mod {
   
   @JSImport("antd", "Switch")
   @js.native
-  val Switch: typings.antd.switchMod.CompoundedComponent = js.native
+  val Switch: typings.antd.libSwitchMod.CompoundedComponent = js.native
   
   @JSImport("antd", "Table")
   @js.native
@@ -664,7 +650,7 @@ object mod {
   @JSImport("antd", "Transfer")
   @js.native
   open class Transfer[RecordType /* <: TransferItem */] protected ()
-    extends typings.antd.transferMod.default[RecordType] {
+    extends typings.antd.libTransferMod.default[RecordType] {
     def this(props: TransferProps[RecordType]) = this()
   }
   object Transfer {
@@ -677,7 +663,7 @@ object mod {
     @JSImport("antd", "Transfer.List")
     @js.native
     open class List[RecordType /* <: KeyWiseTransferItem */] protected ()
-      extends typings.antd.transferListMod.default[RecordType] {
+      extends typings.antd.libTransferListMod.default[RecordType] {
       def this(props: TransferListProps[/* import warning: RewrittenClass.unapply cls was tparam RecordType */ Any]) = this()
     }
     /* static member */
@@ -741,7 +727,7 @@ object mod {
   
   @JSImport("antd", "Tree")
   @js.native
-  val Tree: typings.antd.treeTreeMod.CompoundedComponent = js.native
+  val Tree: typings.antd.libTreeTreeMod.CompoundedComponent = js.native
   
   @JSImport("antd", "TreeSelect")
   @js.native
@@ -769,5 +755,5 @@ object mod {
   
   @JSImport("antd", "version")
   @js.native
-  val version: `4Dot23Dot3` = js.native
+  val version: `4Dot23Dot6` = js.native
 }

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "IndexEvent")
 @js.native
 open class IndexEvent protected ()
-  extends typings.typedoc.outputMod.IndexEvent {
-  def this(name: String, searchResults: js.Array[typings.typedoc.modelsMod.DeclarationReflection]) = this()
+  extends typings.typedoc.distLibOutputMod.IndexEvent {
+  def this(name: String, searchResults: js.Array[typings.typedoc.distLibModelsMod.DeclarationReflection]) = this()
 }
 /* static members */
 object IndexEvent {

@@ -76,7 +76,7 @@ inline def DecrementStencilOp: typings.three.srcConstantsMod.StencilOp = ^.asIns
 
 inline def DecrementWrapStencilOp: typings.three.srcConstantsMod.StencilOp = ^.asInstanceOf[js.Dynamic].selectDynamic("DecrementWrapStencilOp").asInstanceOf[typings.three.srcConstantsMod.StencilOp]
 
-inline def DefaultLoadingManager: typings.three.loadingManagerMod.LoadingManager = ^.asInstanceOf[js.Dynamic].selectDynamic("DefaultLoadingManager").asInstanceOf[typings.three.loadingManagerMod.LoadingManager]
+inline def DefaultLoadingManager: typings.three.srcLoadersLoadingManagerMod.LoadingManager = ^.asInstanceOf[js.Dynamic].selectDynamic("DefaultLoadingManager").asInstanceOf[typings.three.srcLoadersLoadingManagerMod.LoadingManager]
 
 inline def DepthFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("DepthFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
@@ -172,7 +172,7 @@ inline def LinearMipmapNearestFilter: typings.three.srcConstantsMod.TextureFilte
 
 inline def LinearToneMapping: typings.three.srcConstantsMod.ToneMapping = ^.asInstanceOf[js.Dynamic].selectDynamic("LinearToneMapping").asInstanceOf[typings.three.srcConstantsMod.ToneMapping]
 
-inline def LoaderUtils: typings.three.loaderUtilsMod.LoaderUtils = ^.asInstanceOf[js.Dynamic].selectDynamic("LoaderUtils").asInstanceOf[typings.three.loaderUtilsMod.LoaderUtils]
+inline def LoaderUtils: typings.three.srcLoadersLoaderUtilsMod.LoaderUtils = ^.asInstanceOf[js.Dynamic].selectDynamic("LoaderUtils").asInstanceOf[typings.three.srcLoadersLoaderUtilsMod.LoaderUtils]
 
 inline def LoopOnce: typings.three.srcConstantsMod.AnimationActionLoopStyles = ^.asInstanceOf[js.Dynamic].selectDynamic("LoopOnce").asInstanceOf[typings.three.srcConstantsMod.AnimationActionLoopStyles]
 
@@ -400,9 +400,9 @@ inline def WebGLShader(gl: WebGLRenderingContext, `type`: String, string: String
 
 inline def WebGLUniformsGroups(
   gl: WebGLRenderingContext,
-  info: typings.three.webGLInfoMod.WebGLInfo,
-  capabilities: typings.three.webGLCapabilitiesMod.WebGLCapabilities,
-  state: typings.three.webGLStateMod.WebGLState
+  info: typings.three.srcRenderersWebglWebGLInfoMod.WebGLInfo,
+  capabilities: typings.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities,
+  state: typings.three.srcRenderersWebglWebGLStateMod.WebGLState
 ): Bind = (^.asInstanceOf[js.Dynamic].applyDynamic("WebGLUniformsGroups")(gl.asInstanceOf[js.Any], info.asInstanceOf[js.Any], capabilities.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Bind]
 
 inline def WrapAroundEnding: typings.three.srcConstantsMod.InterpolationEndingModes = ^.asInstanceOf[js.Dynamic].selectDynamic("WrapAroundEnding").asInstanceOf[typings.three.srcConstantsMod.InterpolationEndingModes]
@@ -419,7 +419,7 @@ inline def ZeroStencilOp: typings.three.srcConstantsMod.StencilOp = ^.asInstance
 
 inline def cloneUniforms(uniforms_src: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneUniforms")(uniforms_src.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def cloneUniformsGroups(src: js.Array[typings.three.uniformsGroupMod.UniformsGroup]): js.Array[typings.three.uniformsGroupMod.UniformsGroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneUniformsGroups")(src.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.three.uniformsGroupMod.UniformsGroup]]
+inline def cloneUniformsGroups(src: js.Array[typings.three.srcCoreUniformsGroupMod.UniformsGroup]): js.Array[typings.three.srcCoreUniformsGroupMod.UniformsGroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneUniformsGroups")(src.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.three.srcCoreUniformsGroupMod.UniformsGroup]]
 
 inline def fromHalfFloat(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHalfFloat")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Rendering/index", "UtilityLayerRenderer")
 @js.native
 open class UtilityLayerRenderer protected ()
-  extends typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer {
+  extends typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer {
   /**
     * Instantiates a UtilityLayerRenderer
     * @param originalScene the original scene that will be rendered on top of
@@ -35,17 +35,17 @@ object UtilityLayerRenderer {
     * @param scene associated scene
     * @internal
     */
-  inline def _CreateDefaultUtilityLayerFromScene(scene: Scene): typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("_CreateDefaultUtilityLayerFromScene")(scene.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer]
+  inline def _CreateDefaultUtilityLayerFromScene(scene: Scene): typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("_CreateDefaultUtilityLayerFromScene")(scene.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer]
   
   /** @internal */
   @JSImport("babylonjs/Rendering/index", "UtilityLayerRenderer._DefaultKeepDepthUtilityLayer")
   @js.native
-  def _DefaultKeepDepthUtilityLayer: Nullable[typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer] = js.native
-  inline def _DefaultKeepDepthUtilityLayer_=(x: Nullable[typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
+  def _DefaultKeepDepthUtilityLayer: Nullable[typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer] = js.native
+  inline def _DefaultKeepDepthUtilityLayer_=(x: Nullable[typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
   
   /** @internal */
   @JSImport("babylonjs/Rendering/index", "UtilityLayerRenderer._DefaultUtilityLayer")
   @js.native
-  def _DefaultUtilityLayer: Nullable[typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer] = js.native
-  inline def _DefaultUtilityLayer_=(x: Nullable[typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultUtilityLayer")(x.asInstanceOf[js.Any])
+  def _DefaultUtilityLayer: Nullable[typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer] = js.native
+  inline def _DefaultUtilityLayer_=(x: Nullable[typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultUtilityLayer")(x.asInstanceOf[js.Any])
 }

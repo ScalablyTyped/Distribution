@@ -35,7 +35,7 @@ open class Animatable protected ()
     speedRatio: js.UndefOr[Double],
     /** defines a callback to call when animation ends if it is not looping */
   onAnimationEnd: js.UndefOr[Nullable[js.Function0[Unit]]],
-    animations: js.UndefOr[js.Array[typings.babylonjs.animationMod.Animation]],
+    animations: js.UndefOr[js.Array[typings.babylonjs.animationsAnimationMod.Animation]],
     /** defines a callback to call when animation loops */
   onAnimationLoop: js.UndefOr[Nullable[js.Function0[Unit]]],
     /** defines whether the animation should be evaluated additively */

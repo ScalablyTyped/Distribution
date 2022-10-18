@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.toastMod.ToastProps
+import typings.blueprintjsCore.libEsmComponentsToastToastMod.ToastProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Toast")
 @js.native
 open class Toast protected ()
-  extends typings.blueprintjsCore.componentsMod.Toast {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Toast {
   def this(props: ToastProps) = this()
   def this(props: ToastProps, context: Any) = this()
 }

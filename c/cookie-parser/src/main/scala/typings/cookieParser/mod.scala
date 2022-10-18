@@ -1,7 +1,6 @@
 package typings.cookieParser
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.cookieParser.cookieParserBooleans.`false`
 import typings.express.mod.RequestHandler
 import typings.std.Record
@@ -96,25 +95,13 @@ object mod {
   
   inline def JSONCookie(jsonCookie: String): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("JSONCookie")(jsonCookie.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
   
-  inline def JSONCookies[T /* <: StringDictionary[String] */](jsonCookies: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: object | undefined}
-    */ typings.cookieParser.cookieParserStrings.JSONCookies & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("JSONCookies")(jsonCookies.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: object | undefined}
-    */ typings.cookieParser.cookieParserStrings.JSONCookies & TopLevel[Any]]
+  inline def JSONCookies[T /* <: StringDictionary[String] */](jsonCookies: T): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: object | undefined} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JSONCookies")(jsonCookies.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: object | undefined} */ js.Any]
   
   inline def signedCookie(cookie: String, secret: String): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("signedCookie")(cookie.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   inline def signedCookie(cookie: String, secret: js.Array[String]): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("signedCookie")(cookie.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   
-  inline def signedCookies[T /* <: StringDictionary[String] */](cookies: T, secret: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? string | false}
-    */ typings.cookieParser.cookieParserStrings.signedCookies & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("signedCookies")(cookies.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? string | false}
-    */ typings.cookieParser.cookieParserStrings.signedCookies & TopLevel[Any]]
-  inline def signedCookies[T /* <: StringDictionary[String] */](cookies: T, secret: js.Array[String]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? string | false}
-    */ typings.cookieParser.cookieParserStrings.signedCookies & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("signedCookies")(cookies.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? string | false}
-    */ typings.cookieParser.cookieParserStrings.signedCookies & TopLevel[Any]]
+  inline def signedCookies[T /* <: StringDictionary[String] */](cookies: T, secret: String): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? string | false} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signedCookies")(cookies.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? string | false} */ js.Any]
+  inline def signedCookies[T /* <: StringDictionary[String] */](cookies: T, secret: js.Array[String]): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? string | false} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signedCookies")(cookies.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? string | false} */ js.Any]
   
   trait CookieParseOptions extends StObject {
     

@@ -156,7 +156,7 @@ trait MapOptions extends StObject {
   
   /** The language used for map labels. ex. TrimbleMaps.Common.Language.EN */
   var language: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 56 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 56, starting with typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.da, typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.hi, typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.bn */ Any
   ] = js.undefined
   
   /**
@@ -372,7 +372,9 @@ object MapOptions {
     
     inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
-    inline def setLanguage(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 56 */ Any): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 56, starting with typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.da, typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.hi, typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.bn */ Any
+    ): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     

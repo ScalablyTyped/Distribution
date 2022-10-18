@@ -1,7 +1,7 @@
 package typings.restartHooks
 
-import typings.restartHooks.useBreakpointMod.BreakpointDirection
-import typings.restartHooks.useBreakpointMod.BreakpointMap
+import typings.restartHooks.cjsUseBreakpointMod.BreakpointDirection
+import typings.restartHooks.cjsUseBreakpointMod.BreakpointMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

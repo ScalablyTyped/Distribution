@@ -1,7 +1,7 @@
 package typings.raml1Parser.mod.ds
 
-import typings.ramlTypesystem.typesystemInterfacesMod.IAnnotationValidationPlugin
-import typings.ramlTypesystem.typesystemInterfacesMod.ITypeValidationPlugin
+import typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IAnnotationValidationPlugin
+import typings.ramlTypesystem.distSrcTypesystemInterfacesMod.ITypeValidationPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

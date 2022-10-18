@@ -1,84 +1,81 @@
 package typings.next.anon
 
-import typings.next.serverRouterMod.DynamicRoutes
-import typings.next.serverRouterMod.PageChecker
-import typings.next.serverRouterMod.Route_
+import typings.next.distServerRouterMod.PageChecker
+import typings.next.distServerRouterMod.Route
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CatchAllRoute extends StObject {
   
-  var basePath: String
+  var catchAllMiddleware: js.Array[Route]
   
-  var catchAllRoute: Route_
+  var catchAllRoute: Route
   
-  var dynamicRoutes: js.UndefOr[DynamicRoutes] = js.undefined
+  var dynamicRoutes: js.UndefOr[typings.next.distServerRouterMod.DynamicRoutes] = js.undefined
   
-  var fsRoutes: js.Array[Route_]
+  var fsRoutes: js.Array[Route]
   
-  var headers: js.Array[Route_]
+  var headers: js.Array[Route]
   
-  var locales: js.Array[String]
+  var nextConfig: typings.next.distServerConfigSharedMod.NextConfig
   
   var pageChecker: PageChecker
   
-  var redirects: js.Array[Route_]
+  var redirects: js.Array[Route]
   
-  var rewrites: js.Array[Route_]
+  var rewrites: Fallback
   
   var useFileSystemPublicRoutes: Boolean
 }
 object CatchAllRoute {
   
   inline def apply(
-    basePath: String,
-    catchAllRoute: Route_,
-    fsRoutes: js.Array[Route_],
-    headers: js.Array[Route_],
-    locales: js.Array[String],
+    catchAllMiddleware: js.Array[Route],
+    catchAllRoute: Route,
+    fsRoutes: js.Array[Route],
+    headers: js.Array[Route],
+    nextConfig: typings.next.distServerConfigSharedMod.NextConfig,
     pageChecker: /* pathname */ String => js.Promise[Boolean],
-    redirects: js.Array[Route_],
-    rewrites: js.Array[Route_],
+    redirects: js.Array[Route],
+    rewrites: Fallback,
     useFileSystemPublicRoutes: Boolean
   ): CatchAllRoute = {
-    val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any], catchAllRoute = catchAllRoute.asInstanceOf[js.Any], fsRoutes = fsRoutes.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], locales = locales.asInstanceOf[js.Any], pageChecker = js.Any.fromFunction1(pageChecker), redirects = redirects.asInstanceOf[js.Any], rewrites = rewrites.asInstanceOf[js.Any], useFileSystemPublicRoutes = useFileSystemPublicRoutes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(catchAllMiddleware = catchAllMiddleware.asInstanceOf[js.Any], catchAllRoute = catchAllRoute.asInstanceOf[js.Any], fsRoutes = fsRoutes.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], nextConfig = nextConfig.asInstanceOf[js.Any], pageChecker = js.Any.fromFunction1(pageChecker), redirects = redirects.asInstanceOf[js.Any], rewrites = rewrites.asInstanceOf[js.Any], useFileSystemPublicRoutes = useFileSystemPublicRoutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatchAllRoute]
   }
   
   extension [Self <: CatchAllRoute](x: Self) {
     
-    inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+    inline def setCatchAllMiddleware(value: js.Array[Route]): Self = StObject.set(x, "catchAllMiddleware", value.asInstanceOf[js.Any])
     
-    inline def setCatchAllRoute(value: Route_): Self = StObject.set(x, "catchAllRoute", value.asInstanceOf[js.Any])
+    inline def setCatchAllMiddlewareVarargs(value: Route*): Self = StObject.set(x, "catchAllMiddleware", js.Array(value*))
     
-    inline def setDynamicRoutes(value: DynamicRoutes): Self = StObject.set(x, "dynamicRoutes", value.asInstanceOf[js.Any])
+    inline def setCatchAllRoute(value: Route): Self = StObject.set(x, "catchAllRoute", value.asInstanceOf[js.Any])
+    
+    inline def setDynamicRoutes(value: typings.next.distServerRouterMod.DynamicRoutes): Self = StObject.set(x, "dynamicRoutes", value.asInstanceOf[js.Any])
     
     inline def setDynamicRoutesUndefined: Self = StObject.set(x, "dynamicRoutes", js.undefined)
     
-    inline def setDynamicRoutesVarargs(value: Match*): Self = StObject.set(x, "dynamicRoutes", js.Array(value :_*))
+    inline def setDynamicRoutesVarargs(value: Match*): Self = StObject.set(x, "dynamicRoutes", js.Array(value*))
     
-    inline def setFsRoutes(value: js.Array[Route_]): Self = StObject.set(x, "fsRoutes", value.asInstanceOf[js.Any])
+    inline def setFsRoutes(value: js.Array[Route]): Self = StObject.set(x, "fsRoutes", value.asInstanceOf[js.Any])
     
-    inline def setFsRoutesVarargs(value: Route_ *): Self = StObject.set(x, "fsRoutes", js.Array(value :_*))
+    inline def setFsRoutesVarargs(value: Route*): Self = StObject.set(x, "fsRoutes", js.Array(value*))
     
-    inline def setHeaders(value: js.Array[Route_]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[Route]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    inline def setHeadersVarargs(value: Route_ *): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: Route*): Self = StObject.set(x, "headers", js.Array(value*))
     
-    inline def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
-    
-    inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+    inline def setNextConfig(value: typings.next.distServerConfigSharedMod.NextConfig): Self = StObject.set(x, "nextConfig", value.asInstanceOf[js.Any])
     
     inline def setPageChecker(value: /* pathname */ String => js.Promise[Boolean]): Self = StObject.set(x, "pageChecker", js.Any.fromFunction1(value))
     
-    inline def setRedirects(value: js.Array[Route_]): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
+    inline def setRedirects(value: js.Array[Route]): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
     
-    inline def setRedirectsVarargs(value: Route_ *): Self = StObject.set(x, "redirects", js.Array(value :_*))
+    inline def setRedirectsVarargs(value: Route*): Self = StObject.set(x, "redirects", js.Array(value*))
     
-    inline def setRewrites(value: js.Array[Route_]): Self = StObject.set(x, "rewrites", value.asInstanceOf[js.Any])
-    
-    inline def setRewritesVarargs(value: Route_ *): Self = StObject.set(x, "rewrites", js.Array(value :_*))
+    inline def setRewrites(value: Fallback): Self = StObject.set(x, "rewrites", value.asInstanceOf[js.Any])
     
     inline def setUseFileSystemPublicRoutes(value: Boolean): Self = StObject.set(x, "useFileSystemPublicRoutes", value.asInstanceOf[js.Any])
   }

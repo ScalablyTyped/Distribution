@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,9 +29,7 @@ trait Environment extends StObject {
   
   /** Experimental settings. */
   var internalExperiments: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -40,9 +37,7 @@ trait Environment extends StObject {
     * language agnostic and platform independent way.
     */
   var sdkPipelineOptions: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Identity to run virtual machines as. Defaults to the default account. */
@@ -72,16 +67,12 @@ trait Environment extends StObject {
   
   /** A description of the process that generated the request. */
   var userAgent: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** A structure describing which components and their versions of the service are required in order to run the job. */
   var version: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** The worker pools. At least one "harness" worker pool must be specified in order for the job to have workers. */
@@ -131,17 +122,13 @@ object Environment {
     inline def setFlexResourceSchedulingGoalUndefined: Self = StObject.set(x, "flexResourceSchedulingGoal", js.undefined)
     
     inline def setInternalExperiments(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "internalExperiments", value.asInstanceOf[js.Any])
     
     inline def setInternalExperimentsUndefined: Self = StObject.set(x, "internalExperiments", js.undefined)
     
     inline def setSdkPipelineOptions(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "sdkPipelineOptions", value.asInstanceOf[js.Any])
     
     inline def setSdkPipelineOptionsUndefined: Self = StObject.set(x, "sdkPipelineOptions", js.undefined)
@@ -169,17 +156,13 @@ object Environment {
     inline def setTempStoragePrefixUndefined: Self = StObject.set(x, "tempStoragePrefix", js.undefined)
     
     inline def setUserAgent(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     
     inline def setVersion(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)

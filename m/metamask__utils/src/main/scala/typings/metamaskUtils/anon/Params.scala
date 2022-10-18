@@ -10,11 +10,11 @@ trait Params extends StObject {
   
   var method: String
   
-  var params: js.Array[String]
+  var params: Foo
 }
 object Params {
   
-  inline def apply(jsonrpc: String, method: String, params: js.Array[String]): Params = {
+  inline def apply(jsonrpc: String, method: String, params: Foo): Params = {
     val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
@@ -25,8 +25,6 @@ object Params {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setParams(value: js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
-    
-    inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value*))
+    inline def setParams(value: Foo): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

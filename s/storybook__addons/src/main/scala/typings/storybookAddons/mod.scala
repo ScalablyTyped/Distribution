@@ -1,10 +1,10 @@
 package typings.storybookAddons
 
 import typings.storybookAddons.anon.Current
-import typings.storybookAddons.hooksMod.EventMap
-import typings.storybookAddons.makeDecoratorMod.MakeDecoratorOptions
-import typings.storybookAddons.makeDecoratorMod.MakeDecoratorResult
-import typings.storybookAddons.typesMod.Types_
+import typings.storybookAddons.distTs3Dot9HooksMod.EventMap
+import typings.storybookAddons.distTs3Dot9MakeDecoratorMod.MakeDecoratorOptions
+import typings.storybookAddons.distTs3Dot9MakeDecoratorMod.MakeDecoratorResult
+import typings.storybookAddons.distTs3Dot9TypesMod.Types_
 import typings.storybookChannels.mod.ChannelArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,28 +18,28 @@ object mod {
   
   @JSImport("@storybook/addons", JSImport.Default)
   @js.native
-  val default: typings.storybookAddons.ts39Mod.AddonStore = js.native
+  val default: typings.storybookAddons.distTs3Dot9Mod.AddonStore = js.native
   
   @JSImport("@storybook/addons", "AddonStore")
   @js.native
   open class AddonStore ()
-    extends typings.storybookAddons.ts39Mod.AddonStore
+    extends typings.storybookAddons.distTs3Dot9Mod.AddonStore
   
   @JSImport("@storybook/addons", "Channel")
   @js.native
   open class Channel ()
-    extends typings.storybookAddons.ts39Mod.Channel {
+    extends typings.storybookAddons.distTs3Dot9Mod.Channel {
     def this(hasTransportAsync: ChannelArgs) = this()
   }
   
   @JSImport("@storybook/addons", "HooksContext")
   @js.native
   open class HooksContext[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] ()
-    extends typings.storybookAddons.hooksMod.HooksContext[TFramework]
+    extends typings.storybookAddons.distTs3Dot9HooksMod.HooksContext[TFramework]
   
   @JSImport("@storybook/addons", "addons")
   @js.native
-  val addons: typings.storybookAddons.ts39Mod.AddonStore = js.native
+  val addons: typings.storybookAddons.distTs3Dot9Mod.AddonStore = js.native
   
   inline def applyHooks[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](
     applyDecorators: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DecoratorApplicator<TFramework, Args> */ Any
@@ -56,19 +56,19 @@ object mod {
   object types extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.storybookAddons.typesMod.types & String] = js.native
+    def apply(value: String): js.UndefOr[typings.storybookAddons.distTs3Dot9TypesMod.types & String] = js.native
     
-    /* "notes-element" */ val NOTES_ELEMENT: typings.storybookAddons.typesMod.types.NOTES_ELEMENT & String = js.native
+    /* "notes-element" */ val NOTES_ELEMENT: typings.storybookAddons.distTs3Dot9TypesMod.types.NOTES_ELEMENT & String = js.native
     
-    /* "panel" */ val PANEL: typings.storybookAddons.typesMod.types.PANEL & String = js.native
+    /* "panel" */ val PANEL: typings.storybookAddons.distTs3Dot9TypesMod.types.PANEL & String = js.native
     
-    /* "preview" */ val PREVIEW: typings.storybookAddons.typesMod.types.PREVIEW & String = js.native
+    /* "preview" */ val PREVIEW: typings.storybookAddons.distTs3Dot9TypesMod.types.PREVIEW & String = js.native
     
-    /* "tab" */ val TAB: typings.storybookAddons.typesMod.types.TAB & String = js.native
+    /* "tab" */ val TAB: typings.storybookAddons.distTs3Dot9TypesMod.types.TAB & String = js.native
     
-    /* "tool" */ val TOOL: typings.storybookAddons.typesMod.types.TOOL & String = js.native
+    /* "tool" */ val TOOL: typings.storybookAddons.distTs3Dot9TypesMod.types.TOOL & String = js.native
     
-    /* "toolextra" */ val TOOLEXTRA: typings.storybookAddons.typesMod.types.TOOLEXTRA & String = js.native
+    /* "toolextra" */ val TOOLEXTRA: typings.storybookAddons.distTs3Dot9TypesMod.types.TOOLEXTRA & String = js.native
   }
   
   inline def useArgs(): js.Tuple3[

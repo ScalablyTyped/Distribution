@@ -1,8 +1,8 @@
 package typings.dsinjsBinaryTree
 
-import typings.dsinjsBinaryTree.btreeMod.BTreeRootAttrStruct
-import typings.dsinjsBinaryTree.btreeMod.BTreeValueAttrStruct
-import typings.dsinjsBinaryTree.btreenodeMod.BTreeNodeStruct
+import typings.dsinjsBinaryTree.distBtreeMod.BTreeRootAttrStruct
+import typings.dsinjsBinaryTree.distBtreeMod.BTreeValueAttrStruct
+import typings.dsinjsBinaryTree.distBtreenodeMod.BTreeNodeStruct
 import typings.dsinjsBinaryTree.dsinjsBinaryTreeStrings.L
 import typings.dsinjsBinaryTree.dsinjsBinaryTreeStrings.R
 import typings.dsinjsBinaryTree.dsinjsBinaryTreeStrings.U
@@ -15,7 +15,7 @@ object mod {
   @JSImport("@dsinjs/binary-tree", "BTree")
   @js.native
   open class BTree[T] protected ()
-    extends typings.dsinjsBinaryTree.btreeMod.BTree[T] {
+    extends typings.dsinjsBinaryTree.distBtreeMod.BTree[T] {
     def this(attr: T) = this()
     /**
       * Constructor for Binary Tree.
@@ -42,7 +42,7 @@ object mod {
       * @example
       * var tree = BTree.fromArray([10,20,30,40]);
       */
-    inline def fromArray[T2](arr: js.Array[T2]): typings.dsinjsBinaryTree.btreeMod.BTree[T2] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(arr.asInstanceOf[js.Any]).asInstanceOf[typings.dsinjsBinaryTree.btreeMod.BTree[T2]]
+    inline def fromArray[T2](arr: js.Array[T2]): typings.dsinjsBinaryTree.distBtreeMod.BTree[T2] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(arr.asInstanceOf[js.Any]).asInstanceOf[typings.dsinjsBinaryTree.distBtreeMod.BTree[T2]]
     
     /**
       * Returns index value from given path.
@@ -69,7 +69,7 @@ object mod {
   @JSImport("@dsinjs/binary-tree", "BTreeNode")
   @js.native
   open class BTreeNode[T] protected ()
-    extends typings.dsinjsBinaryTree.btreenodeMod.BTreeNode[T] {
+    extends typings.dsinjsBinaryTree.distBtreenodeMod.BTreeNode[T] {
     /**
       *
       * @param {BTreeNodeStruct} attr attributes to initialize the node.

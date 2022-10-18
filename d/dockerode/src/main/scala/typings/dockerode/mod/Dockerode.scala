@@ -1,9 +1,9 @@
 package typings.dockerode.mod
 
 import typings.dockerode.anon.Volumes
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,18 +11,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Dockerode extends StObject {
   
-  def buildImage(file: String): js.Promise[ReadableStream[Any]] = js.native
-  def buildImage(file: String, callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def buildImage(file: String, options: ImageBuildOptions): js.Promise[ReadableStream[Any]] = js.native
-  def buildImage(file: String, options: ImageBuildOptions, callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def buildImage(file: ImageBuildContext): js.Promise[ReadableStream[Any]] = js.native
-  def buildImage(file: ImageBuildContext, callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def buildImage(file: ImageBuildContext, options: ImageBuildOptions): js.Promise[ReadableStream[Any]] = js.native
-  def buildImage(file: ImageBuildContext, options: ImageBuildOptions, callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def buildImage(file: ReadableStream[Any]): js.Promise[ReadableStream[Any]] = js.native
-  def buildImage(file: ReadableStream[Any], callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def buildImage(file: ReadableStream[Any], options: ImageBuildOptions): js.Promise[ReadableStream[Any]] = js.native
-  def buildImage(file: ReadableStream[Any], options: ImageBuildOptions, callback: Callback[ReadableStream[Any]]): Unit = js.native
+  def buildImage(file: String): js.Promise[ReadableStream] = js.native
+  def buildImage(file: String, callback: Callback[ReadableStream]): Unit = js.native
+  def buildImage(file: String, options: ImageBuildOptions): js.Promise[ReadableStream] = js.native
+  def buildImage(file: String, options: ImageBuildOptions, callback: Callback[ReadableStream]): Unit = js.native
+  def buildImage(file: ImageBuildContext): js.Promise[ReadableStream] = js.native
+  def buildImage(file: ImageBuildContext, callback: Callback[ReadableStream]): Unit = js.native
+  def buildImage(file: ImageBuildContext, options: ImageBuildOptions): js.Promise[ReadableStream] = js.native
+  def buildImage(file: ImageBuildContext, options: ImageBuildOptions, callback: Callback[ReadableStream]): Unit = js.native
+  def buildImage(file: ReadableStream): js.Promise[ReadableStream] = js.native
+  def buildImage(file: ReadableStream, callback: Callback[ReadableStream]): Unit = js.native
+  def buildImage(file: ReadableStream, options: ImageBuildOptions): js.Promise[ReadableStream] = js.native
+  def buildImage(file: ReadableStream, options: ImageBuildOptions, callback: Callback[ReadableStream]): Unit = js.native
   
   def checkAuth(options: Any): js.Promise[Any] = js.native
   def checkAuth(options: Any, callback: Callback[Any]): Unit = js.native
@@ -33,10 +33,10 @@ trait Dockerode extends StObject {
   def createContainer(options: ContainerCreateOptions): js.Promise[Container] = js.native
   def createContainer(options: ContainerCreateOptions, callback: Callback[Container]): Unit = js.native
   
-  def createImage(auth: Any, options: js.Object): js.Promise[ReadableStream[Any]] = js.native
-  def createImage(auth: Any, options: js.Object, callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def createImage(options: js.Object): js.Promise[ReadableStream[Any]] = js.native
-  def createImage(options: js.Object, callback: Callback[ReadableStream[Any]]): Unit = js.native
+  def createImage(auth: Any, options: js.Object): js.Promise[ReadableStream] = js.native
+  def createImage(auth: Any, options: js.Object, callback: Callback[ReadableStream]): Unit = js.native
+  def createImage(options: js.Object): js.Promise[ReadableStream] = js.native
+  def createImage(options: js.Object, callback: Callback[ReadableStream]): Unit = js.native
   
   def createNetwork(options: NetworkCreateOptions): js.Promise[Network] = js.native
   def createNetwork(options: NetworkCreateOptions, callback: Callback[Network]): Unit = js.native
@@ -63,10 +63,10 @@ trait Dockerode extends StObject {
   
   def getContainer(id: String): Container = js.native
   
-  def getEvents(): js.Promise[ReadableStream[Any]] = js.native
-  def getEvents(callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def getEvents(options: GetEventsOptions): js.Promise[ReadableStream[Any]] = js.native
-  def getEvents(options: GetEventsOptions, callback: Callback[ReadableStream[Any]]): Unit = js.native
+  def getEvents(): js.Promise[ReadableStream] = js.native
+  def getEvents(callback: Callback[ReadableStream]): Unit = js.native
+  def getEvents(options: GetEventsOptions): js.Promise[ReadableStream] = js.native
+  def getEvents(options: GetEventsOptions, callback: Callback[ReadableStream]): Unit = js.native
   
   def getExec(id: String): Exec = js.native
   
@@ -86,14 +86,14 @@ trait Dockerode extends StObject {
   
   def getVolume(name: String): Volume = js.native
   
-  def importImage(file: String): js.Promise[ReadableStream[Any]] = js.native
-  def importImage(file: String, callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def importImage(file: String, options: js.Object): js.Promise[ReadableStream[Any]] = js.native
-  def importImage(file: String, options: js.Object, callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def importImage(file: ReadableStream[Any]): js.Promise[ReadableStream[Any]] = js.native
-  def importImage(file: ReadableStream[Any], callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def importImage(file: ReadableStream[Any], options: js.Object): js.Promise[ReadableStream[Any]] = js.native
-  def importImage(file: ReadableStream[Any], options: js.Object, callback: Callback[ReadableStream[Any]]): Unit = js.native
+  def importImage(file: String): js.Promise[ReadableStream] = js.native
+  def importImage(file: String, callback: Callback[ReadableStream]): Unit = js.native
+  def importImage(file: String, options: js.Object): js.Promise[ReadableStream] = js.native
+  def importImage(file: String, options: js.Object, callback: Callback[ReadableStream]): Unit = js.native
+  def importImage(file: ReadableStream): js.Promise[ReadableStream] = js.native
+  def importImage(file: ReadableStream, callback: Callback[ReadableStream]): Unit = js.native
+  def importImage(file: ReadableStream, options: js.Object): js.Promise[ReadableStream] = js.native
+  def importImage(file: ReadableStream, options: js.Object, callback: Callback[ReadableStream]): Unit = js.native
   
   def info(): js.Promise[Any] = js.native
   def info(callback: Callback[Any]): Unit = js.native
@@ -148,14 +148,14 @@ trait Dockerode extends StObject {
   def listVolumes(options: js.Object): js.Promise[Volumes] = js.native
   def listVolumes(options: js.Object, callback: Callback[Volumes]): Unit = js.native
   
-  def loadImage(file: String): js.Promise[ReadableStream[Any]] = js.native
-  def loadImage(file: String, callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def loadImage(file: String, options: js.Object): js.Promise[ReadableStream[Any]] = js.native
-  def loadImage(file: String, options: js.Object, callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def loadImage(file: ReadableStream[Any]): js.Promise[ReadableStream[Any]] = js.native
-  def loadImage(file: ReadableStream[Any], callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def loadImage(file: ReadableStream[Any], options: js.Object): js.Promise[ReadableStream[Any]] = js.native
-  def loadImage(file: ReadableStream[Any], options: js.Object, callback: Callback[ReadableStream[Any]]): Unit = js.native
+  def loadImage(file: String): js.Promise[ReadableStream] = js.native
+  def loadImage(file: String, callback: Callback[ReadableStream]): Unit = js.native
+  def loadImage(file: String, options: js.Object): js.Promise[ReadableStream] = js.native
+  def loadImage(file: String, options: js.Object, callback: Callback[ReadableStream]): Unit = js.native
+  def loadImage(file: ReadableStream): js.Promise[ReadableStream] = js.native
+  def loadImage(file: ReadableStream, callback: Callback[ReadableStream]): Unit = js.native
+  def loadImage(file: ReadableStream, options: js.Object): js.Promise[ReadableStream] = js.native
+  def loadImage(file: ReadableStream, options: js.Object, callback: Callback[ReadableStream]): Unit = js.native
   
   var modem: typings.dockerModem.mod.^ = js.native
   
@@ -187,30 +187,30 @@ trait Dockerode extends StObject {
   def pull(repoTag: String, options: js.Object, callback: Callback[Any]): Image = js.native
   def pull(repoTag: String, options: js.Object, callback: Callback[Any], auth: js.Object): Image = js.native
   
-  def run(image: String, cmd: js.Array[String], outputStream: js.Array[WritableStream[Any]]): js.Promise[Any] = js.native
+  def run(image: String, cmd: js.Array[String], outputStream: js.Array[WritableStream]): js.Promise[Any] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
-    outputStream: js.Array[WritableStream[Any]],
+    outputStream: js.Array[WritableStream],
     callback: Callback[Any]
   ): EventEmitter = js.native
   def run(
     image: String,
     cmd: js.Array[String],
-    outputStream: js.Array[WritableStream[Any]],
+    outputStream: js.Array[WritableStream],
     createOptions: js.Object
   ): js.Promise[Any] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
-    outputStream: js.Array[WritableStream[Any]],
+    outputStream: js.Array[WritableStream],
     createOptions: js.Object,
     startOptions: js.Object
   ): js.Promise[Any] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
-    outputStream: js.Array[WritableStream[Any]],
+    outputStream: js.Array[WritableStream],
     createOptions: js.Object,
     startOptions: js.Object,
     callback: Callback[Any]
@@ -218,31 +218,31 @@ trait Dockerode extends StObject {
   def run(
     image: String,
     cmd: js.Array[String],
-    outputStream: js.Array[WritableStream[Any]],
+    outputStream: js.Array[WritableStream],
     createOptions: Unit,
     startOptions: js.Object
   ): js.Promise[Any] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
-    outputStream: js.Array[WritableStream[Any]],
+    outputStream: js.Array[WritableStream],
     startOptions: js.Object,
     callback: Callback[Any]
   ): EventEmitter = js.native
-  def run(image: String, cmd: js.Array[String], outputStream: WritableStream[Any]): js.Promise[Any] = js.native
-  def run(image: String, cmd: js.Array[String], outputStream: WritableStream[Any], callback: Callback[Any]): EventEmitter = js.native
-  def run(image: String, cmd: js.Array[String], outputStream: WritableStream[Any], createOptions: js.Object): js.Promise[Any] = js.native
+  def run(image: String, cmd: js.Array[String], outputStream: WritableStream): js.Promise[Any] = js.native
+  def run(image: String, cmd: js.Array[String], outputStream: WritableStream, callback: Callback[Any]): EventEmitter = js.native
+  def run(image: String, cmd: js.Array[String], outputStream: WritableStream, createOptions: js.Object): js.Promise[Any] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
-    outputStream: WritableStream[Any],
+    outputStream: WritableStream,
     createOptions: js.Object,
     startOptions: js.Object
   ): js.Promise[Any] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
-    outputStream: WritableStream[Any],
+    outputStream: WritableStream,
     createOptions: js.Object,
     startOptions: js.Object,
     callback: Callback[Any]
@@ -250,14 +250,14 @@ trait Dockerode extends StObject {
   def run(
     image: String,
     cmd: js.Array[String],
-    outputStream: WritableStream[Any],
+    outputStream: WritableStream,
     createOptions: Unit,
     startOptions: js.Object
   ): js.Promise[Any] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
-    outputStream: WritableStream[Any],
+    outputStream: WritableStream,
     startOptions: js.Object,
     callback: Callback[Any]
   ): EventEmitter = js.native

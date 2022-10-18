@@ -1,15 +1,18 @@
 package typings.steamcommunity.mod
 
 import typings.steamcommunity.anon.Appid
-import typings.steamcommunity.chatMod.Chat
-import typings.steamcommunity.confirmationsMod.Confirmations
-import typings.steamcommunity.groupsMod.Groups
-import typings.steamcommunity.helpMod.Help
-import typings.steamcommunity.helpersMod.Helpers
-import typings.steamcommunity.httpMod.Http
-import typings.steamcommunity.inventoryhistoryMod.InventoryHistory
-import typings.steamcommunity.marketMod.Market
-import typings.steamcommunity.profileMod.Profile
+import typings.steamcommunity.componentsChatMod.Chat
+import typings.steamcommunity.componentsConfirmationsMod.Confirmations
+import typings.steamcommunity.componentsGroupsMod.Groups
+import typings.steamcommunity.componentsHelpMod.Help
+import typings.steamcommunity.componentsHelpersMod.Helpers
+import typings.steamcommunity.componentsHttpMod.Http
+import typings.steamcommunity.componentsInventoryhistoryMod.InventoryHistory
+import typings.steamcommunity.componentsMarketMod.Market
+import typings.steamcommunity.componentsProfileMod.Profile
+import typings.steamcommunity.componentsTwofactorMod.TwoFactor
+import typings.steamcommunity.componentsUsersMod.Users
+import typings.steamcommunity.componentsWebapiMod.WebApi
 import typings.steamcommunity.steamcommunityStrings.chatLogOnFailed
 import typings.steamcommunity.steamcommunityStrings.chatLoggedOff
 import typings.steamcommunity.steamcommunityStrings.chatLoggedOn
@@ -21,9 +24,6 @@ import typings.steamcommunity.steamcommunityStrings.confirmationAccepted
 import typings.steamcommunity.steamcommunityStrings.debug
 import typings.steamcommunity.steamcommunityStrings.newConfirmation
 import typings.steamcommunity.steamcommunityStrings.sessionExpired
-import typings.steamcommunity.twofactorMod.TwoFactor
-import typings.steamcommunity.usersMod.Users
-import typings.steamcommunity.webapiMod.WebApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,7 +83,11 @@ trait SteamCommunity
     appid: Any,
     hashName: Any,
     currency: Any,
-    callback: js.Function2[/* err */ CallbackError, /* item */ typings.steamcommunity.cmarketitemMod.^, Any]
+    callback: js.Function2[
+      /* err */ CallbackError, 
+      /* item */ typings.steamcommunity.classesCmarketitemMod.^, 
+      Any
+    ]
   ): Unit = js.native
   
   /**
@@ -102,7 +106,11 @@ trait SteamCommunity
   
   def getSteamGroup(
     id: String,
-    callback: js.Function2[/* err */ CallbackError, /* group */ typings.steamcommunity.csteamgroupMod.^, Any]
+    callback: js.Function2[
+      /* err */ CallbackError, 
+      /* group */ typings.steamcommunity.classesCsteamgroupMod.^, 
+      Any
+    ]
   ): Unit = js.native
   /**
     * Creates and returns a `CSteamGroup` object for a particular group.
@@ -112,12 +120,20 @@ trait SteamCommunity
     */
   def getSteamGroup(
     id: SteamID,
-    callback: js.Function2[/* err */ CallbackError, /* group */ typings.steamcommunity.csteamgroupMod.^, Any]
+    callback: js.Function2[
+      /* err */ CallbackError, 
+      /* group */ typings.steamcommunity.classesCsteamgroupMod.^, 
+      Any
+    ]
   ): Unit = js.native
   
   def getSteamUser(
     id: String,
-    callback: js.Function2[/* err */ CallbackError, /* group */ typings.steamcommunity.csteamuserMod.^, Any]
+    callback: js.Function2[
+      /* err */ CallbackError, 
+      /* group */ typings.steamcommunity.classesCsteamuserMod.^, 
+      Any
+    ]
   ): Unit = js.native
   /**
     * Creates and returns a CSteamUser object for a particular user.
@@ -127,7 +143,11 @@ trait SteamCommunity
     */
   def getSteamUser(
     id: SteamID,
-    callback: js.Function2[/* err */ CallbackError, /* group */ typings.steamcommunity.csteamuserMod.^, Any]
+    callback: js.Function2[
+      /* err */ CallbackError, 
+      /* group */ typings.steamcommunity.classesCsteamuserMod.^, 
+      Any
+    ]
   ): Unit = js.native
   
   /**
@@ -173,7 +193,7 @@ trait SteamCommunity
     options: String,
     callback: js.Function2[
       /* err */ CallbackError, 
-      /* items */ js.Array[typings.steamcommunity.cmarketsearchresultMod.^], 
+      /* items */ js.Array[typings.steamcommunity.classesCmarketsearchresultMod.^], 
       Any
     ]
   ): Unit = js.native
@@ -181,7 +201,7 @@ trait SteamCommunity
     options: Appid,
     callback: js.Function2[
       /* err */ CallbackError, 
-      /* items */ js.Array[typings.steamcommunity.cmarketsearchresultMod.^], 
+      /* items */ js.Array[typings.steamcommunity.classesCmarketsearchresultMod.^], 
       Any
     ]
   ): Unit = js.native

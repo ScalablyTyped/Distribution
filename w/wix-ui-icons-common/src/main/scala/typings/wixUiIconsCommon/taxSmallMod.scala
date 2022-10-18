@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsTaxSmallMod.TaxSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taxSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/TaxSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/TaxSmall", JSImport.Default)
   @js.native
   val default: FC[TaxSmallProps] = js.native
-  
-  trait TaxSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object TaxSmallProps {
-    
-    inline def apply(): TaxSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TaxSmallProps]
-    }
-    
-    extension [Self <: TaxSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[TaxSmallProps]
   

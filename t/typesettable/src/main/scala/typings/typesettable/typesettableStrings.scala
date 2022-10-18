@@ -1,8 +1,8 @@
 package typings.typesettable
 
-import typings.typesettable.svgMod.IAnchor
-import typings.typesettable.writerMod.IXAlign
-import typings.typesettable.writerMod.IYAlign
+import typings.typesettable.buildSrcContextsSvgMod.IAnchor
+import typings.typesettable.buildSrcWritersWriterMod.IXAlign
+import typings.typesettable.buildSrcWritersWriterMod.IYAlign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

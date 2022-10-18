@@ -70,13 +70,21 @@ object mod {
     
     var id: Double
     
-    var result: js.Promise[T]
+    var result: js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: T extends std.PromiseLike<infer U> ? U : T */ js.Any
+      ]
     
     var state: State
   }
   object Task {
     
-    inline def apply[T](id: Double, result: js.Promise[T], state: State): Task[T] = {
+    inline def apply[T](
+      id: Double,
+      result: js.Promise[
+          /* import warning: importer.ImportType#apply Failed type conversion: T extends std.PromiseLike<infer U> ? U : T */ js.Any
+        ],
+      state: State
+    ): Task[T] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[Task[T]]
     }
@@ -85,7 +93,11 @@ object mod {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setResult(value: js.Promise[T]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(
+        value: js.Promise[
+              /* import warning: importer.ImportType#apply Failed type conversion: T extends std.PromiseLike<infer U> ? U : T */ js.Any
+            ]
+      ): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }

@@ -1,6 +1,6 @@
 package typings.nivoLine.mod
 
-import typings.nivoLine.anon.XFormatted
+import typings.nivoLine.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ trait Point extends StObject {
   
   var color: String
   
-  var data: XFormatted
+  var data: X
   
   var id: String
   
@@ -30,7 +30,7 @@ object Point {
   inline def apply(
     borderColor: String,
     color: String,
-    data: XFormatted,
+    data: X,
     id: String,
     index: Double,
     serieColor: String,
@@ -48,7 +48,7 @@ object Point {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setData(value: XFormatted): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: X): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

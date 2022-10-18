@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "TriggerRegion")
 @js.native
 open class TriggerRegion ()
-  extends typings.yuka.yukaMod.TriggerRegion
+  extends typings.yuka.srcYukaMod.TriggerRegion

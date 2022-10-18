@@ -1,6 +1,5 @@
 package typings.mithril
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,23 +23,15 @@ object streamMod {
   
   inline def lift[S /* <: js.Array[Any] */, T](
     fn: js.Function1[/* values */ S, T],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param streams because its type {[ I in keyof S ]: Stream<S[I]>} is not an array type */ streams: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>}
-    */ typings.mithril.mithrilStrings.lift & TopLevel[S]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param streams because its type {[ I in keyof S ]: Stream<S[I]>} is not an array type */ streams: /* import warning: importer.ImportType#apply Failed type conversion: {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>} */ js.Any
   ): Stream[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("lift")(fn.asInstanceOf[js.Any], streams.asInstanceOf[js.Any])).asInstanceOf[Stream[T]]
   
   inline def merge[S /* <: js.Array[Any] */](
-    streams: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>}
-    */ typings.mithril.mithrilStrings.merge & TopLevel[S]
+    streams: /* import warning: importer.ImportType#apply Failed type conversion: {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>} */ js.Any
   ): Stream[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ I in keyof S ]: S[I]}
-    */ typings.mithril.mithrilStrings.merge & TopLevel[S]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ I in keyof S ]: S[I]} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(streams.asInstanceOf[js.Any]).asInstanceOf[Stream[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ I in keyof S ]: S[I]}
-    */ typings.mithril.mithrilStrings.merge & TopLevel[S]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ I in keyof S ]: S[I]} */ js.Any
   ]]
   
   inline def scan[T, U](fn: js.Function2[/* acc */ U, /* value */ T, U], acc: U, stream: Stream[T]): Stream[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(fn.asInstanceOf[js.Any], acc.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Stream[U]]

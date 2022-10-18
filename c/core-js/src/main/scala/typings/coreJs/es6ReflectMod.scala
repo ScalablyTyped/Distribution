@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object es6ReflectMod {
   
-  @JSImport("core-js/library/es6/reflect", JSImport.Namespace)
+  @JSImport("core-js/es6/reflect", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

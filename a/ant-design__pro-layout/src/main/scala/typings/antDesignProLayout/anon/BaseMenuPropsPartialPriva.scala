@@ -62,31 +62,31 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.tree
 import typings.antDesignProLayout.antDesignProLayoutStrings.url
 import typings.antDesignProLayout.antDesignProLayoutStrings.vertical
 import typings.antDesignProLayout.antDesignProLayoutStrings.yes
-import typings.antDesignProLayout.baseMenuMod.MenuMode
-import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
-import typings.antDesignProLayout.typingsMod.MenuDataItem
-import typings.antDesignProLayout.typingsMod.MessageDescriptor
-import typings.antDesignProLayout.typingsMod.Route
-import typings.antDesignProLayout.typingsMod.StaticContext
-import typings.antDesignProLayout.typingsMod.WithFalse
-import typings.antDesignProLayout.typingsMod.`match`
-import typings.antd.menuContextMod.MenuTheme
-import typings.antd.menuMod.MenuProps
-import typings.antd.useItemsMod.ItemType
+import typings.antDesignProLayout.esComponentsSiderMenuBaseMenuMod.MenuMode
+import typings.antDesignProLayout.esDefaultSettingsMod.ContentWidth
+import typings.antDesignProLayout.esTypingsMod.MenuDataItem
+import typings.antDesignProLayout.esTypingsMod.MessageDescriptor
+import typings.antDesignProLayout.esTypingsMod.Route
+import typings.antDesignProLayout.esTypingsMod.StaticContext
+import typings.antDesignProLayout.esTypingsMod.WithFalse
+import typings.antDesignProLayout.esTypingsMod.`match`
+import typings.antd.libMenuHooksUseItemsMod.ItemType
+import typings.antd.libMenuMenuContextMod.MenuTheme
+import typings.antd.libMenuMod.MenuProps
 import typings.history.mod.History
 import typings.history.mod.Location
 import typings.rcMenu.anon.Active
 import typings.rcMenu.anon.PartialkeyinMenuModeother
 import typings.rcMenu.anon.Selected
-import typings.rcMenu.interfaceMod.BuiltinPlacements
-import typings.rcMenu.interfaceMod.MenuClickEventHandler
-import typings.rcMenu.interfaceMod.MenuInfo
-import typings.rcMenu.interfaceMod.RenderIconInfo
-import typings.rcMenu.interfaceMod.RenderIconType
-import typings.rcMenu.interfaceMod.SelectEventHandler
-import typings.rcMenu.interfaceMod.SelectInfo
-import typings.rcMenu.interfaceMod.TriggerSubMenuAction
-import typings.rcMotion.cssmotionMod.CSSMotionProps
+import typings.rcMenu.esInterfaceMod.BuiltinPlacements
+import typings.rcMenu.esInterfaceMod.MenuClickEventHandler
+import typings.rcMenu.esInterfaceMod.MenuInfo
+import typings.rcMenu.esInterfaceMod.RenderIconInfo
+import typings.rcMenu.esInterfaceMod.RenderIconType
+import typings.rcMenu.esInterfaceMod.SelectEventHandler
+import typings.rcMenu.esInterfaceMod.SelectInfo
+import typings.rcMenu.esInterfaceMod.TriggerSubMenuAction
+import typings.rcMotion.esCssmotionMod.CSSMotionProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -134,8 +134,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined @ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/BaseMenu.BaseMenuProps & std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/SiderMenu.PrivateSiderMenuProps> */
 trait BaseMenuPropsPartialPriva extends StObject {
-  
-  var _internalDisableMenuItemTitleTooltip: js.UndefOr[Boolean] = js.undefined
   
   var _internalRenderMenuItem: js.UndefOr[
     js.Function3[
@@ -370,7 +368,7 @@ trait BaseMenuPropsPartialPriva extends StObject {
   
   var location: js.UndefOr[Location | Pathname] = js.undefined
   
-  var `match`: js.UndefOr[typings.antDesignProLayout.typingsMod.`match`[Record[String, Any]]] = js.undefined
+  var `match`: js.UndefOr[typings.antDesignProLayout.esTypingsMod.`match`[Record[String, Any]]] = js.undefined
   
   var matchMenuKeys: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -401,7 +399,7 @@ trait BaseMenuPropsPartialPriva extends StObject {
   
   var menuRenderType: js.UndefOr[header | sider] = js.undefined
   
-  var mode: js.UndefOr[MenuMode] & js.UndefOr[typings.rcMenu.interfaceMod.MenuMode]
+  var mode: js.UndefOr[MenuMode] & js.UndefOr[typings.rcMenu.esInterfaceMod.MenuMode]
   
   var motion: js.UndefOr[CSSMotionProps] = js.undefined
   
@@ -670,7 +668,7 @@ trait BaseMenuPropsPartialPriva extends StObject {
 }
 object BaseMenuPropsPartialPriva {
   
-  inline def apply(mode: js.UndefOr[MenuMode] & js.UndefOr[typings.rcMenu.interfaceMod.MenuMode]): BaseMenuPropsPartialPriva = {
+  inline def apply(mode: js.UndefOr[MenuMode] & js.UndefOr[typings.rcMenu.esInterfaceMod.MenuMode]): BaseMenuPropsPartialPriva = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseMenuPropsPartialPriva]
   }
@@ -1160,7 +1158,7 @@ object BaseMenuPropsPartialPriva {
     
     inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
-    inline def setMode(value: js.UndefOr[MenuMode] & js.UndefOr[typings.rcMenu.interfaceMod.MenuMode]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: js.UndefOr[MenuMode] & js.UndefOr[typings.rcMenu.esInterfaceMod.MenuMode]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setMotion(value: CSSMotionProps): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
     
@@ -1662,10 +1660,6 @@ object BaseMenuPropsPartialPriva {
     inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
     
     inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
-    
-    inline def set_internalDisableMenuItemTitleTooltip(value: Boolean): Self = StObject.set(x, "_internalDisableMenuItemTitleTooltip", value.asInstanceOf[js.Any])
-    
-    inline def set_internalDisableMenuItemTitleTooltipUndefined: Self = StObject.set(x, "_internalDisableMenuItemTitleTooltip", js.undefined)
     
     inline def set_internalRenderMenuItem(
       value: (/* originNode */ ReactElement, /* menuItemProps */ Any, /* stateProps */ Selected) => ReactElement

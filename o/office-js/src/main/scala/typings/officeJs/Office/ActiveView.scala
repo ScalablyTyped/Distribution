@@ -15,7 +15,7 @@ sealed trait ActiveView extends StObject
 object ActiveView extends StObject {
   
   /**
-    * The active view of the host application lets the user edit the content in the document.
+    * The active view of the Office application lets the user edit the content in the document.
     */
   @js.native
   sealed trait Edit
@@ -23,7 +23,7 @@ object ActiveView extends StObject {
        with ActiveView
   
   /**
-    * The active view of the host application only lets the user read the content in the document.
+    * The active view of the Office application only lets the user read the content in the document.
     */
   @js.native
   sealed trait Read

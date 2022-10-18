@@ -4,16 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/server/authn.html#cookie-authentication
+/** Database authentication response.
+  * @see Docs: {@link http://docs.couchdb.org/en/latest/api/server/authn.html#cookie-authentication} */
 trait DatabaseAuthResponse extends StObject {
   
-  // Username
+  /** Username */
   var name: String
   
-  // Operation status
+  /** Operation status */
   var ok: Boolean
   
-  // List of user roles
+  /** List of user roles */
   var roles: js.Array[String]
 }
 object DatabaseAuthResponse {
@@ -31,6 +32,6 @@ object DatabaseAuthResponse {
     
     inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value*))
   }
 }

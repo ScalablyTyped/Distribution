@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("XRQuadLayer")
+/* note: abstract class */ @JSGlobal("XRQuadLayer")
 @js.native
-abstract class XRQuadLayer ()
+open class XRQuadLayer ()
   extends StObject
      with typings.webxr.XRQuadLayer

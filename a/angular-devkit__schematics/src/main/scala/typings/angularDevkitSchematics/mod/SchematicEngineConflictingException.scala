@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "SchematicEngineConflictingException")
 @js.native
 open class SchematicEngineConflictingException ()
-  extends typings.angularDevkitSchematics.engineMod.SchematicEngineConflictingException
+  extends typings.angularDevkitSchematics.srcEngineMod.SchematicEngineConflictingException

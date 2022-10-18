@@ -1,9 +1,9 @@
 package typings.tensorflowTfjsNode.mod
 
+import typings.tensorflowTfjsCore.distSerializationMod.ConfigDict
+import typings.tensorflowTfjsCore.distSerializationMod.SerializableConstructor
 import typings.tensorflowTfjsCore.mod.serialization.Serializable
-import typings.tensorflowTfjsCore.serializationMod.ConfigDict
-import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
-import typings.tensorflowTfjsLayers.modelsMod.SequentialArgs
+import typings.tensorflowTfjsLayers.distModelsMod.SequentialArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

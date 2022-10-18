@@ -1,9 +1,9 @@
 package typings.zustand.anon
 
 import typings.std.Partial
-import typings.zustand.reactMod.ExtractState
-import typings.zustand.vanillaMod.SetStateInternal
-import typings.zustand.vanillaMod.StoreApi
+import typings.zustand.esmReactMod.ExtractState
+import typings.zustand.esmVanillaMod.SetStateInternal
+import typings.zustand.esmVanillaMod.StoreApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,10 +1,7 @@
 package typings.pProps
 
-import org.scalablytyped.runtime.TopLevel
 import typings.pMap.mod.Options
-import typings.std.Map
 import typings.std.PromiseLike
-import typings.std.ReadonlyMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,59 +14,32 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default[InputType /* <: Record[String, Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType): js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof InputType ]: MappedValueType}
-    */ typings.pProps.pPropsStrings.default & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof InputType ]: MappedValueType} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof InputType ]: MappedValueType}
-    */ typings.pProps.pPropsStrings.default & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof InputType ]: MappedValueType} */ js.Any
   ]]
   inline def default[InputType /* <: Record[String, Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType, mapper: Unit, options: Options): js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof InputType ]: MappedValueType}
-    */ typings.pProps.pPropsStrings.default & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof InputType ]: MappedValueType} */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof InputType ]: MappedValueType}
-    */ typings.pProps.pPropsStrings.default & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof InputType ]: MappedValueType} */ js.Any
   ]]
   inline def default[InputType /* <: Record[String, Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
     map: InputType,
     mapper: Mapper[PromiseResult[ValueType], /* keyof InputType */ String, MappedValueType]
   ): js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof InputType ]: MappedValueType}
-    */ typings.pProps.pPropsStrings.default & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof InputType ]: MappedValueType} */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof InputType ]: MappedValueType}
-    */ typings.pProps.pPropsStrings.default & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof InputType ]: MappedValueType} */ js.Any
   ]]
   inline def default[InputType /* <: Record[String, Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
     map: InputType,
     mapper: Mapper[PromiseResult[ValueType], /* keyof InputType */ String, MappedValueType],
     options: Options
   ): js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof InputType ]: MappedValueType}
-    */ typings.pProps.pPropsStrings.default & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof InputType ]: MappedValueType} */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof InputType ]: MappedValueType}
-    */ typings.pProps.pPropsStrings.default & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof InputType ]: MappedValueType} */ js.Any
   ]]
-  inline def default[KeyType, ValueType, MappedValueType](map: ReadonlyMap[KeyType, ValueType]): js.Promise[Map[KeyType, MappedValueType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
-  inline def default[KeyType, ValueType, MappedValueType](map: ReadonlyMap[KeyType, ValueType], mapper: Unit, options: Options): js.Promise[Map[KeyType, MappedValueType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
-  inline def default[KeyType, ValueType, MappedValueType](
-    map: ReadonlyMap[KeyType, ValueType],
-    mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType]
-  ): js.Promise[Map[KeyType, MappedValueType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
-  inline def default[KeyType, ValueType, MappedValueType](
-    map: ReadonlyMap[KeyType, ValueType],
-    mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType],
-    options: Options
-  ): js.Promise[Map[KeyType, MappedValueType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
   
   type Mapper[ValueType, KeyType, MappedValueType] = js.Function2[
     /* value */ ValueType, 
@@ -77,5 +47,13 @@ object mod {
     MappedValueType | PromiseLike[MappedValueType]
   ]
   
-  type PromiseResult[Value] = Value
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Value extends std.PromiseLike<infer Result> ? Result : Value
+    }}}
+    */
+  @js.native
+  trait PromiseResult[Value] extends StObject
 }

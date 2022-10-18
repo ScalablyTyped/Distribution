@@ -1,6 +1,6 @@
 package typings.pubnub.mod
 
-import typings.pubnub.anon.Value
+import typings.pubnub.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // message actions
 trait AddMessageActionParameters extends StObject {
   
-  var action: Value
+  var action: Type
   
   var channel: String
   
@@ -16,14 +16,14 @@ trait AddMessageActionParameters extends StObject {
 }
 object AddMessageActionParameters {
   
-  inline def apply(action: Value, channel: String, messageTimetoken: String): AddMessageActionParameters = {
+  inline def apply(action: Type, channel: String, messageTimetoken: String): AddMessageActionParameters = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], messageTimetoken = messageTimetoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddMessageActionParameters]
   }
   
   extension [Self <: AddMessageActionParameters](x: Self) {
     
-    inline def setAction(value: Value): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Type): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

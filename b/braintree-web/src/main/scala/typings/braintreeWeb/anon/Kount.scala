@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Kount extends StObject {
   
-  var client: typings.braintreeWeb.clientMod.Client
+  var client: typings.braintreeWeb.modulesClientMod.Client
   
   var kount: js.UndefOr[Boolean] = js.undefined
   
@@ -14,14 +14,14 @@ trait Kount extends StObject {
 }
 object Kount {
   
-  inline def apply(client: typings.braintreeWeb.clientMod.Client): Kount = {
+  inline def apply(client: typings.braintreeWeb.modulesClientMod.Client): Kount = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
     __obj.asInstanceOf[Kount]
   }
   
   extension [Self <: Kount](x: Self) {
     
-    inline def setClient(value: typings.braintreeWeb.clientMod.Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: typings.braintreeWeb.modulesClientMod.Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     inline def setKount(value: Boolean): Self = StObject.set(x, "kount", value.asInstanceOf[js.Any])
     

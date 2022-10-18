@@ -1,8 +1,8 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.OnBlur
-import typings.antDesignReactNative.searchBarMod.SearchBarProps
-import typings.antDesignReactNative.searchBarMod.default
+import typings.antDesignReactNative.libSearchBarMod.SearchBarProps
+import typings.antDesignReactNative.libSearchBarMod.default
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

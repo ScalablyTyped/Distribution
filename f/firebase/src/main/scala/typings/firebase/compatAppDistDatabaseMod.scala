@@ -34,9 +34,9 @@ object compatAppDistDatabaseMod {
   /* private */ open class OnDisconnect_ ()
     extends typings.firebaseDatabase.mod.OnDisconnect_
   
-  @JSImport("firebase/compat/app/dist/database", "QueryConstraint")
+  /* note: abstract class */ @JSImport("firebase/compat/app/dist/database", "QueryConstraint")
   @js.native
-  abstract class QueryConstraint ()
+  open class QueryConstraint ()
     extends typings.firebaseDatabase.mod.QueryConstraint
   
   @JSImport("firebase/compat/app/dist/database", "TransactionResult")

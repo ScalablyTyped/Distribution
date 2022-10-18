@@ -96,6 +96,10 @@ trait ColumnDefinition
   /** sets css classes on header and cells in this column. (value should be a string containing space separated class names) */
   var cssClass: js.UndefOr[String] = js.undefined
   
+  var dblClickMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.undefined
+  
+  var dblClickPopup: js.UndefOr[String] = js.undefined
+  
   /** show or hide column in downloaded data */
   var download: js.UndefOr[Boolean | (js.Function1[/* column */ ColumnComponent, Boolean])] = js.undefined
   
@@ -153,6 +157,10 @@ trait ColumnDefinition
   /** Callback for when user double clicks on the header for this column. */
   var headerDblClick: js.UndefOr[ColumnEventCallback] = js.undefined
   
+  var headerDblClickMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.undefined
+  
+  var headerDblClickPopup: js.UndefOr[String] = js.undefined
+  
   /** callback for when user double taps on a header for this column, triggered in touch displays when a user taps the same header twice in under 300ms */
   var headerDblTap: js.UndefOr[ColumnEventCallback] = js.undefined
   
@@ -198,6 +206,15 @@ trait ColumnDefinition
   /** You can add a menu to any column by passing an array of menu items to the headerMenu option in that columns definition. */
   var headerMenu: js.UndefOr[js.Array[MenuObject[ColumnComponent] | MenuSeparator]] = js.undefined
   
+  /** The headerMenuIcon option will accept one of three types of value. You can pass in a string for the HTML contents of the button. Or you can pass the DOM node for the button. Though be careful not to pass the same node to multple columns or you may run into issues. Or you can define a function that is called when the column header is rendered that should return either an HTML string or the contents of the element. This funtion is passed the column component as its first argument. */
+  var headerMenuIcon: js.UndefOr[
+    String | HTMLElement | (js.Function1[/* component */ ColumnComponent, HTMLElement | String])
+  ] = js.undefined
+  
+  var headerMouseDown: js.UndefOr[ColumnEventCallback] = js.undefined
+  
+  var headerMouseUp: js.UndefOr[ColumnEventCallback] = js.undefined
+  
   // Column Header
   /** By default all columns in a table are sortable by clicking on the column header, if you want to disable this behavior, set the headerSort property to false in the column definition array: */
   var headerSort: js.UndefOr[Boolean] = js.undefined
@@ -231,6 +248,8 @@ trait ColumnDefinition
     * - "flip" - vertical columns enabled, with text direction flipped by 180 degrees*
     */
   var headerVertical: js.UndefOr[Boolean | flip] = js.undefined
+  
+  var headerWordWrap: js.UndefOr[Boolean] = js.undefined
   
   /** When the getHtml function is called, hide the column from the output. */
   var hideInHtml: js.UndefOr[Boolean] = js.undefined
@@ -514,6 +533,16 @@ object ColumnDefinition {
     
     inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
+    inline def setDblClickMenu(value: js.Array[MenuObject[CellComponent] | MenuSeparator]): Self = StObject.set(x, "dblClickMenu", value.asInstanceOf[js.Any])
+    
+    inline def setDblClickMenuUndefined: Self = StObject.set(x, "dblClickMenu", js.undefined)
+    
+    inline def setDblClickMenuVarargs(value: (MenuObject[CellComponent] | MenuSeparator)*): Self = StObject.set(x, "dblClickMenu", js.Array(value*))
+    
+    inline def setDblClickPopup(value: String): Self = StObject.set(x, "dblClickPopup", value.asInstanceOf[js.Any])
+    
+    inline def setDblClickPopupUndefined: Self = StObject.set(x, "dblClickPopup", js.undefined)
+    
     inline def setDownload(value: Boolean | (js.Function1[/* column */ ColumnComponent, Boolean])): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     inline def setDownloadFunction1(value: /* column */ ColumnComponent => Boolean): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
@@ -620,6 +649,16 @@ object ColumnDefinition {
     
     inline def setHeaderDblClick(value: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit): Self = StObject.set(x, "headerDblClick", js.Any.fromFunction2(value))
     
+    inline def setHeaderDblClickMenu(value: js.Array[MenuObject[CellComponent] | MenuSeparator]): Self = StObject.set(x, "headerDblClickMenu", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderDblClickMenuUndefined: Self = StObject.set(x, "headerDblClickMenu", js.undefined)
+    
+    inline def setHeaderDblClickMenuVarargs(value: (MenuObject[CellComponent] | MenuSeparator)*): Self = StObject.set(x, "headerDblClickMenu", js.Array(value*))
+    
+    inline def setHeaderDblClickPopup(value: String): Self = StObject.set(x, "headerDblClickPopup", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderDblClickPopupUndefined: Self = StObject.set(x, "headerDblClickPopup", js.undefined)
+    
     inline def setHeaderDblClickUndefined: Self = StObject.set(x, "headerDblClick", js.undefined)
     
     inline def setHeaderDblTap(value: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit): Self = StObject.set(x, "headerDblTap", js.Any.fromFunction2(value))
@@ -678,9 +717,25 @@ object ColumnDefinition {
     
     inline def setHeaderMenu(value: js.Array[MenuObject[ColumnComponent] | MenuSeparator]): Self = StObject.set(x, "headerMenu", value.asInstanceOf[js.Any])
     
+    inline def setHeaderMenuIcon(
+      value: String | HTMLElement | (js.Function1[/* component */ ColumnComponent, HTMLElement | String])
+    ): Self = StObject.set(x, "headerMenuIcon", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderMenuIconFunction1(value: /* component */ ColumnComponent => HTMLElement | String): Self = StObject.set(x, "headerMenuIcon", js.Any.fromFunction1(value))
+    
+    inline def setHeaderMenuIconUndefined: Self = StObject.set(x, "headerMenuIcon", js.undefined)
+    
     inline def setHeaderMenuUndefined: Self = StObject.set(x, "headerMenu", js.undefined)
     
     inline def setHeaderMenuVarargs(value: (MenuObject[ColumnComponent] | MenuSeparator)*): Self = StObject.set(x, "headerMenu", js.Array(value*))
+    
+    inline def setHeaderMouseDown(value: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit): Self = StObject.set(x, "headerMouseDown", js.Any.fromFunction2(value))
+    
+    inline def setHeaderMouseDownUndefined: Self = StObject.set(x, "headerMouseDown", js.undefined)
+    
+    inline def setHeaderMouseUp(value: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit): Self = StObject.set(x, "headerMouseUp", js.Any.fromFunction2(value))
+    
+    inline def setHeaderMouseUpUndefined: Self = StObject.set(x, "headerMouseUp", js.undefined)
     
     inline def setHeaderSort(value: Boolean): Self = StObject.set(x, "headerSort", value.asInstanceOf[js.Any])
     
@@ -711,6 +766,10 @@ object ColumnDefinition {
     inline def setHeaderVertical(value: Boolean | flip): Self = StObject.set(x, "headerVertical", value.asInstanceOf[js.Any])
     
     inline def setHeaderVerticalUndefined: Self = StObject.set(x, "headerVertical", js.undefined)
+    
+    inline def setHeaderWordWrap(value: Boolean): Self = StObject.set(x, "headerWordWrap", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderWordWrapUndefined: Self = StObject.set(x, "headerWordWrap", js.undefined)
     
     inline def setHideInHtml(value: Boolean): Self = StObject.set(x, "hideInHtml", value.asInstanceOf[js.Any])
     

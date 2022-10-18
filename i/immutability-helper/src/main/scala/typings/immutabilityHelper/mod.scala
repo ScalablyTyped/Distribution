@@ -1,7 +1,6 @@
 package typings.immutabilityHelper
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.immutabilityHelper.anon.NoInferenceCustomCommandsBrand
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -59,13 +58,9 @@ object mod {
     - typings.immutabilityHelper.anon.Toggle[T]
     - typings.immutabilityHelper.anon.Unset[T]
     - typings.immutabilityHelper.anon.Merge[T]
-    - / * import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? immutability-helper.immutability-helper.Spec<T[K], C>}
-    * / typings.immutabilityHelper.immutabilityHelperStrings.ObjectSpec & org.scalablytyped.runtime.TopLevel[T]
+    - / * import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]:? immutability-helper.immutability-helper.Spec<T[K], C>} * / js.Any
   */
-  type ObjectSpec[T, C /* <: CustomCommands[js.Object] */] = (_ObjectSpec[T, C]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? immutability-helper.immutability-helper.Spec<T[K], C>}
-    */ typings.immutabilityHelper.immutabilityHelperStrings.ObjectSpec & TopLevel[T])
+  type ObjectSpec[T, C /* <: CustomCommands[js.Object] */] = (_ObjectSpec[T, C]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]:? immutability-helper.immutability-helper.Spec<T[K], C>} */ js.Any)
   
   /* Rewritten from type alias, can be one of: 
     - typings.immutabilityHelper.anon.AddReadonlyArray[T]
@@ -86,16 +81,12 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.immutabilityHelper.mod.ObjectSpec[T, C]
-    - typings.immutabilityHelper.mod.SetSpec[scala.Any]
+    - / * import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> | std.ReadonlyArray<infer U> ? immutability-helper.immutability-helper.ArraySpec<U, C> : T extends std.Map<infer K, infer V> | std.ReadonlyMap<infer K, infer V> ? immutability-helper.immutability-helper.MapSpec<K, V, C> : T extends std.Set<infer X> | std.ReadonlySet<infer X> ? immutability-helper.immutability-helper.SetSpec<X> : T extends object ? immutability-helper.immutability-helper.ObjectSpec<T, C> : never * / js.Any
     - typings.immutabilityHelper.anon.Set[T]
     - typings.immutabilityHelper.anon.Apply[T]
     - js.Function1[/ * v * / T, T]
-    - scala.Any
   */
-  type Spec[T, C /* <: CustomCommands[js.Object] */] = (_Spec[T, C]) | SetSpec[Any] | (js.Function1[/* v */ T, T]) | Any | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? immutability-helper.immutability-helper.Spec<T[K], C>}
-    */ typings.immutabilityHelper.immutabilityHelperStrings.ObjectSpec & TopLevel[T])
+  type Spec[T, C /* <: CustomCommands[js.Object] */] = (_Spec[T, C]) | (js.Function1[/* v */ T, T]) | (/* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> | std.ReadonlyArray<infer U> ? immutability-helper.immutability-helper.ArraySpec<U, C> : T extends std.Map<infer K, infer V> | std.ReadonlyMap<infer K, infer V> ? immutability-helper.immutability-helper.MapSpec<K, V, C> : T extends std.Set<infer X> | std.ReadonlySet<infer X> ? immutability-helper.immutability-helper.SetSpec<X> : T extends object ? immutability-helper.immutability-helper.ObjectSpec<T, C> : never */ js.Any)
   
   trait _ArraySpec[T, C /* <: CustomCommands[js.Object] */] extends StObject
   object _ArraySpec {
@@ -130,9 +121,7 @@ object mod {
     }
   }
   
-  trait _ObjectSpec[T, C /* <: CustomCommands[js.Object] */]
-    extends StObject
-       with _Spec[T, C]
+  trait _ObjectSpec[T, C /* <: CustomCommands[js.Object] */] extends StObject
   object _ObjectSpec {
     
     inline def Merge[T]($merge: Partial[T]): typings.immutabilityHelper.anon.Merge[T] = {
@@ -152,4 +141,16 @@ object mod {
   }
   
   trait _Spec[T, C /* <: CustomCommands[js.Object] */] extends StObject
+  object _Spec {
+    
+    inline def Apply[T]($apply: T => T): typings.immutabilityHelper.anon.Apply[T] = {
+      val __obj = js.Dynamic.literal($apply = js.Any.fromFunction1($apply))
+      __obj.asInstanceOf[typings.immutabilityHelper.anon.Apply[T]]
+    }
+    
+    inline def Set[T]($set: T): typings.immutabilityHelper.anon.Set[T] = {
+      val __obj = js.Dynamic.literal($set = $set.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.immutabilityHelper.anon.Set[T]]
+    }
+  }
 }

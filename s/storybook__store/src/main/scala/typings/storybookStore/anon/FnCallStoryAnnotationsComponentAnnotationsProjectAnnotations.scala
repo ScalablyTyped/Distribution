@@ -1,9 +1,9 @@
 package typings.storybookStore.anon
 
-import typings.storybookStore.ts39TypesMod.NormalizedComponentAnnotations
-import typings.storybookStore.ts39TypesMod.NormalizedProjectAnnotations
-import typings.storybookStore.ts39TypesMod.NormalizedStoryAnnotations
-import typings.storybookStore.ts39TypesMod.Story
+import typings.storybookStore.distTs3Dot9TypesMod.NormalizedComponentAnnotations
+import typings.storybookStore.distTs3Dot9TypesMod.NormalizedProjectAnnotations
+import typings.storybookStore.distTs3Dot9TypesMod.NormalizedStoryAnnotations
+import typings.storybookStore.distTs3Dot9TypesMod.Story
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

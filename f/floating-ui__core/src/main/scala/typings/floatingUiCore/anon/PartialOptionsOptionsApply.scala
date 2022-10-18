@@ -1,8 +1,8 @@
 package typings.floatingUiCore.anon
 
-import typings.floatingUiCore.typesMod.ElementContext
-import typings.floatingUiCore.typesMod.Padding
-import typings.floatingUiCore.typesMod.RootBoundary
+import typings.floatingUiCore.srcTypesMod.ElementContext
+import typings.floatingUiCore.srcTypesMod.Padding
+import typings.floatingUiCore.srcTypesMod.RootBoundary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait PartialOptionsOptionsApply extends StObject {
   @JSName("apply")
   var apply: js.UndefOr[js.Function1[/* args */ MiddlewareArgumentsavaila, Unit | js.Promise[Unit]]] = js.undefined
   
-  var boundary: js.UndefOr[typings.floatingUiCore.typesMod.Boundary] = js.undefined
+  var boundary: js.UndefOr[typings.floatingUiCore.srcTypesMod.Boundary] = js.undefined
   
   var elementContext: js.UndefOr[ElementContext] = js.undefined
   
@@ -40,7 +40,7 @@ object PartialOptionsOptionsApply {
     
     inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     
-    inline def setBoundary(value: typings.floatingUiCore.typesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: typings.floatingUiCore.srcTypesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     

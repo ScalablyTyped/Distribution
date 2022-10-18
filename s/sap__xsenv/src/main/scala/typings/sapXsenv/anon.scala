@@ -6,6 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait DisableCache extends StObject {
+    
+    var disableCache: js.UndefOr[Boolean] = js.undefined
+  }
+  object DisableCache {
+    
+    inline def apply(): DisableCache = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DisableCache]
+    }
+    
+    extension [Self <: DisableCache](x: Self) {
+      
+      inline def setDisableCache(value: Boolean): Self = StObject.set(x, "disableCache", value.asInstanceOf[js.Any])
+      
+      inline def setDisableCacheUndefined: Self = StObject.set(x, "disableCache", js.undefined)
+    }
+  }
+  
   trait Label extends StObject {
     
     var label: js.UndefOr[String] = js.undefined

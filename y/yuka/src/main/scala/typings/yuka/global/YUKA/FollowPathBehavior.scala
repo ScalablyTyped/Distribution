@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class FollowPathBehavior ()
   extends typings.yuka.mod.FollowPathBehavior {
-  def this(path: typings.yuka.pathMod.Path) = this()
+  def this(path: typings.yuka.srcSteeringPathMod.Path) = this()
   def this(path: Unit, nextWaypointDistance: Double) = this()
-  def this(path: typings.yuka.pathMod.Path, nextWaypointDistance: Double) = this()
+  def this(path: typings.yuka.srcSteeringPathMod.Path, nextWaypointDistance: Double) = this()
 }

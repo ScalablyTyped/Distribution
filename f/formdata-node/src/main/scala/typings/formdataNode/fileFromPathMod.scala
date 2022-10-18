@@ -1,13 +1,15 @@
 package typings.formdataNode
 
-import typings.formdataNode.fileMod.File
+import typings.formdataNode.`@typeFileFromPathMod`.FileFromPathOptions
+import typings.formdataNode.`@typeFileMod`.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object fileFromPathMod {
   
-  @JSImport("formdata-node/@type/fileFromPath", JSImport.Namespace)
+  @JSImport("formdata-node/file-from-path", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -24,24 +26,4 @@ object fileFromPathMod {
   inline def fileFromPathSync(path: String, options: FileFromPathOptions): File = (^.asInstanceOf[js.Dynamic].applyDynamic("fileFromPathSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[File]
   
   inline def isFile(value: Any): /* is formdata-node.formdata-node/@type/File.File */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFile")(value.asInstanceOf[js.Any]).asInstanceOf[/* is formdata-node.formdata-node/@type/File.File */ Boolean]
-  
-  /* Inlined std.Omit<formdata-node.formdata-node/@type/File.FilePropertyBag, 'lastModified'> */
-  trait FileFromPathOptions extends StObject {
-    
-    var `type`: js.UndefOr[String] = js.undefined
-  }
-  object FileFromPathOptions {
-    
-    inline def apply(): FileFromPathOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FileFromPathOptions]
-    }
-    
-    extension [Self <: FileFromPathOptions](x: Self) {
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-    }
-  }
 }

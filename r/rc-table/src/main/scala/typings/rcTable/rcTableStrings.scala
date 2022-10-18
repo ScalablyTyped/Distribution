@@ -1,10 +1,10 @@
 package typings.rcTable
 
-import typings.rcTable.interfaceMod.AlignType
-import typings.rcTable.interfaceMod.ExpandableType
-import typings.rcTable.interfaceMod.TableLayout
-import typings.rcTable.interfaceMod._Component
-import typings.rcTable.interfaceMod._FixedType
+import typings.rcTable.libInterfaceMod.AlignType
+import typings.rcTable.libInterfaceMod.ExpandableType
+import typings.rcTable.libInterfaceMod.TableLayout
+import typings.rcTable.libInterfaceMod._Component
+import typings.rcTable.libInterfaceMod._FixedType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -16,11 +16,9 @@ object mod {
   /**
     * Provides the functionality to create a new Inquirer plugin
     */
-  @JSImport("inquirer-autocomplete-prompt", JSImport.Namespace)
+  @JSImport("inquirer-autocomplete-prompt", JSImport.Default)
   @js.native
-  open class ^[T /* <: Answers */] protected ()
-    extends StObject
-       with AutocompletePrompt[T] {
+  open class default[T /* <: Answers */] protected () extends AutocompletePrompt[T] {
     /**
       * Create new AutocompletePrompt
       *
@@ -37,14 +35,14 @@ object mod {
   /**
     * Provides the functionality to create a new Inquirer plugin
     */
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Base * / any */ @js.native
-  trait AutocompletePrompt[T /* <: Answers */] extends StObject {
+  @js.native
+  trait AutocompletePrompt[T /* <: Answers */]
+    extends typings.inquirer.libPromptsBaseMod.default[Question[Answers]] {
     
     /**
       * The choices currently available on the prompt
       */
-    var currentChoices: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Choices */ Any = js.native
+    var currentChoices: typings.inquirer.libObjectsChoicesMod.default[Answers] = js.native
     
     /**
       * Verify selected range is not out of bounds
@@ -88,7 +86,7 @@ object mod {
     /**
       * Paginator for choices
       */
-    var paginator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Paginator */ Any = js.native
+    var paginator: typings.inquirer.libUtilsPaginatorMod.default = js.native
     
     /**
       * Questions to prompt
@@ -114,55 +112,60 @@ object mod {
       */
     var selected: Double = js.native
   }
-  
   /**
-    * Provides options for a question of type `AutocompletePrompt`.
-    *
-    * @template T
-    * The type of the answers.
+    * Provides inquirer prompt options for type `AutocompletePrompt`.
     */
-  @js.native
-  trait AutocompleteQuestionOptions[T /* <: Answers */]
-    extends StObject
-       with Question[T] {
+  object AutocompletePrompt {
     
     /**
-      *  Is the text shown if the search returns no results. Defaults: No results...
+      * Provides options for a question of type `AutocompletePrompt`.
+      *
+      * @template T
+      * The type of the answers.
       */
-    var emptyText: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * The key to save the answer to the answers-hash.
-      */
-    @JSName("name")
-    var name_AutocompleteQuestionOptions: KeyUnion[T] = js.native
-    
-    /**
-      * The number of elements to show on each page.
-      */
-    var pageSize: js.UndefOr[Double] = js.native
-    
-    /**
-      * Is the text shown when searching. Defaults: Searching...
-      */
-    var searchText: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * Function to determine what options to display to user.
-      * Called with previous answers object and the current user input each time the user types, it must return a promise.
-      */
-    def source(answersSoFar: T): js.Promise[js.Array[Any]] = js.native
-    def source(answersSoFar: T, input: String): js.Promise[js.Array[Any]] = js.native
-    
-    /**
-      * default false. Setting it to true turns the input into a normal text input.
-      */
-    var suggestOnly: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * The key to save the answer to the answers-hash.
-      */
-    @JSName("type")
-    var type_AutocompleteQuestionOptions: autocomplete = js.native
+    @js.native
+    trait AutocompleteQuestionOptions[T /* <: Answers */]
+      extends StObject
+         with Question[T] {
+      
+      /**
+        *  Is the text shown if the search returns no results. Defaults: No results...
+        */
+      var emptyText: js.UndefOr[Boolean] = js.native
+      
+      /**
+        * The key to save the answer to the answers-hash.
+        */
+      @JSName("name")
+      var name_AutocompleteQuestionOptions: KeyUnion[T] = js.native
+      
+      /**
+        * The number of elements to show on each page.
+        */
+      var pageSize: js.UndefOr[Double] = js.native
+      
+      /**
+        * Is the text shown when searching. Defaults: Searching...
+        */
+      var searchText: js.UndefOr[Boolean] = js.native
+      
+      /**
+        * Function to determine what options to display to user.
+        * Called with previous answers object and the current user input each time the user types, it must return a promise.
+        */
+      def source(answersSoFar: T): js.Promise[js.Array[Any]] = js.native
+      def source(answersSoFar: T, input: String): js.Promise[js.Array[Any]] = js.native
+      
+      /**
+        * default false. Setting it to true turns the input into a normal text input.
+        */
+      var suggestOnly: js.UndefOr[Boolean] = js.native
+      
+      /**
+        * The key to save the answer to the answers-hash.
+        */
+      @JSName("type")
+      var type_AutocompleteQuestionOptions: autocomplete = js.native
+    }
   }
 }

@@ -1,7 +1,7 @@
 package typings.victoryLegend
 
-import typings.victoryLegend.mod.VictoryLegendOrientationType
-import typings.victoryLegend.mod.VictoryLegendTTargetType
+import typings.victoryLegend.libMod.VictoryLegendOrientationType
+import typings.victoryLegend.libMod.VictoryLegendTTargetType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

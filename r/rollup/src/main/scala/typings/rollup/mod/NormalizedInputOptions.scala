@@ -121,7 +121,7 @@ object NormalizedInputOptions {
     
     inline def setManualChunks(value: ManualChunksOption): Self = StObject.set(x, "manualChunks", value.asInstanceOf[js.Any])
     
-    inline def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => String | Null | Unit): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
+    inline def setManualChunksFunction2(value: (/* id */ String, /* meta */ ManualChunkMeta) => String | NullValue): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
     
     inline def setManualChunksUndefined: Self = StObject.set(x, "manualChunks", js.undefined)
     

@@ -1,6 +1,6 @@
 package typings.reactNativeSvg.mod
 
-import typings.reactNativeSvg.anon.X
+import typings.reactNativeSvg.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native-svg", "Mask")
 @js.native
 open class Mask ()
-  extends typings.reactNativeSvg.reactNativeSVGMod.Mask
+  extends typings.reactNativeSvg.libTypescriptReactNativeSVGMod.Mask
 /* static members */
 object Mask {
   
@@ -18,8 +18,8 @@ object Mask {
   
   @JSImport("react-native-svg", "Mask.defaultProps")
   @js.native
-  def defaultProps: X = js.native
-  inline def defaultProps_=(x: X): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: Height = js.native
+  inline def defaultProps_=(x: Height): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("react-native-svg", "Mask.displayName")
   @js.native

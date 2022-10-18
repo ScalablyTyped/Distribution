@@ -6,20 +6,11 @@ import typings.chromeApps.anon.PBC
 import typings.chromeApps.chromeAppsStrings.CAPABILITIES_NEGOTIATION_ERROR
 import typings.chromeApps.chromeAppsStrings.CONNECTING
 import typings.chromeApps.chromeAppsStrings.CONNECTION_ERROR
-import typings.chromeApps.chromeAppsStrings.Connected_
-import typings.chromeApps.chromeAppsStrings.Connecting_
 import typings.chromeApps.chromeAppsStrings.DISCONNECTED
-import typings.chromeApps.chromeAppsStrings.Disconnected_
 import typings.chromeApps.chromeAppsStrings.MEDIA_PIPELINE_ERROR
 import typings.chromeApps.chromeAppsStrings.PIN
 import typings.chromeApps.chromeAppsStrings.TIMEOUT_ERROR
 import typings.chromeApps.chromeAppsStrings.UNKNOWN_ERROR
-import typings.chromeApps.chromeAppsStrings.capabilities_negotiation_error_
-import typings.chromeApps.chromeAppsStrings.connection_error_
-import typings.chromeApps.chromeAppsStrings.media_pipeline_error_
-import typings.chromeApps.chromeAppsStrings.timeout_error_
-import typings.chromeApps.chromeAppsStrings.unknown_error_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,10 +43,7 @@ object displaySource {
         ToStringLiteral[
           PBC, 
           /* keyof chrome-apps.anon.PBC */ typings.chromeApps.chromeAppsStrings.PBC | PIN, 
-          Exclude[
-            /* keyof chrome-apps.anon.PBC */ typings.chromeApps.chromeAppsStrings.PBC | PIN, 
-            typings.chromeApps.chromeAppsStrings.PBC | PIN
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  PBC :'PBC',   PIN :'PIN'} extends keyof {  PBC :'PBC',   PIN :'PIN'} ? std.Exclude<keyof {  PBC :'PBC',   PIN :'PIN'}, 'PBC' | 'PIN'> : never */ js.Any
         ]
       ] = js.undefined
   }
@@ -76,10 +64,7 @@ object displaySource {
         value: ToStringLiteral[
               PBC, 
               /* keyof chrome-apps.anon.PBC */ typings.chromeApps.chromeAppsStrings.PBC | PIN, 
-              Exclude[
-                /* keyof chrome-apps.anon.PBC */ typings.chromeApps.chromeAppsStrings.PBC | PIN, 
-                typings.chromeApps.chromeAppsStrings.PBC | PIN
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  PBC :'PBC',   PIN :'PIN'} extends keyof {  PBC :'PBC',   PIN :'PIN'} ? std.Exclude<keyof {  PBC :'PBC',   PIN :'PIN'}, 'PBC' | 'PIN'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -95,10 +80,7 @@ object displaySource {
     var `type`: ToStringLiteral[
         CAPABILITIESNEGOTIATIONERROR, 
         /* keyof chrome-apps.anon.CAPABILITIESNEGOTIATIONERROR */ CONNECTION_ERROR | CAPABILITIES_NEGOTIATION_ERROR | MEDIA_PIPELINE_ERROR | TIMEOUT_ERROR | UNKNOWN_ERROR, 
-        Exclude[
-          /* keyof chrome-apps.anon.CAPABILITIESNEGOTIATIONERROR */ CONNECTION_ERROR | CAPABILITIES_NEGOTIATION_ERROR | MEDIA_PIPELINE_ERROR | TIMEOUT_ERROR | UNKNOWN_ERROR, 
-          unknown_error_ | media_pipeline_error_ | connection_error_ | capabilities_negotiation_error_ | timeout_error_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CONNECTION_ERROR :'connection_error',   CAPABILITIES_NEGOTIATION_ERROR :'capabilities_negotiation_error',   MEDIA_PIPELINE_ERROR :'media_pipeline_error',   TIMEOUT_ERROR :'timeout_error',   UNKNOWN_ERROR :'unknown_error'} extends keyof {  CONNECTION_ERROR :'connection_error',   CAPABILITIES_NEGOTIATION_ERROR :'capabilities_negotiation_error',   MEDIA_PIPELINE_ERROR :'media_pipeline_error',   TIMEOUT_ERROR :'timeout_error',   UNKNOWN_ERROR :'unknown_error'} ? std.Exclude<keyof {  CONNECTION_ERROR :'connection_error',   CAPABILITIES_NEGOTIATION_ERROR :'capabilities_negotiation_error',   MEDIA_PIPELINE_ERROR :'media_pipeline_error',   TIMEOUT_ERROR :'timeout_error',   UNKNOWN_ERROR :'unknown_error'}, 'unknown_error' | 'media_pipeline_error' | 'connection_error' | 'capabilities_negotiation_error' | 'timeout_error'> : never */ js.Any
       ]
   }
   object ErrorInfo {
@@ -107,10 +89,7 @@ object displaySource {
       `type`: ToStringLiteral[
           CAPABILITIESNEGOTIATIONERROR, 
           /* keyof chrome-apps.anon.CAPABILITIESNEGOTIATIONERROR */ CONNECTION_ERROR | CAPABILITIES_NEGOTIATION_ERROR | MEDIA_PIPELINE_ERROR | TIMEOUT_ERROR | UNKNOWN_ERROR, 
-          Exclude[
-            /* keyof chrome-apps.anon.CAPABILITIESNEGOTIATIONERROR */ CONNECTION_ERROR | CAPABILITIES_NEGOTIATION_ERROR | MEDIA_PIPELINE_ERROR | TIMEOUT_ERROR | UNKNOWN_ERROR, 
-            unknown_error_ | media_pipeline_error_ | connection_error_ | capabilities_negotiation_error_ | timeout_error_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CONNECTION_ERROR :'connection_error',   CAPABILITIES_NEGOTIATION_ERROR :'capabilities_negotiation_error',   MEDIA_PIPELINE_ERROR :'media_pipeline_error',   TIMEOUT_ERROR :'timeout_error',   UNKNOWN_ERROR :'unknown_error'} extends keyof {  CONNECTION_ERROR :'connection_error',   CAPABILITIES_NEGOTIATION_ERROR :'capabilities_negotiation_error',   MEDIA_PIPELINE_ERROR :'media_pipeline_error',   TIMEOUT_ERROR :'timeout_error',   UNKNOWN_ERROR :'unknown_error'} ? std.Exclude<keyof {  CONNECTION_ERROR :'connection_error',   CAPABILITIES_NEGOTIATION_ERROR :'capabilities_negotiation_error',   MEDIA_PIPELINE_ERROR :'media_pipeline_error',   TIMEOUT_ERROR :'timeout_error',   UNKNOWN_ERROR :'unknown_error'}, 'unknown_error' | 'media_pipeline_error' | 'connection_error' | 'capabilities_negotiation_error' | 'timeout_error'> : never */ js.Any
         ]
     ): ErrorInfo = {
       val __obj = js.Dynamic.literal()
@@ -128,10 +107,7 @@ object displaySource {
         value: ToStringLiteral[
               CAPABILITIESNEGOTIATIONERROR, 
               /* keyof chrome-apps.anon.CAPABILITIESNEGOTIATIONERROR */ CONNECTION_ERROR | CAPABILITIES_NEGOTIATION_ERROR | MEDIA_PIPELINE_ERROR | TIMEOUT_ERROR | UNKNOWN_ERROR, 
-              Exclude[
-                /* keyof chrome-apps.anon.CAPABILITIESNEGOTIATIONERROR */ CONNECTION_ERROR | CAPABILITIES_NEGOTIATION_ERROR | MEDIA_PIPELINE_ERROR | TIMEOUT_ERROR | UNKNOWN_ERROR, 
-                unknown_error_ | media_pipeline_error_ | connection_error_ | capabilities_negotiation_error_ | timeout_error_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CONNECTION_ERROR :'connection_error',   CAPABILITIES_NEGOTIATION_ERROR :'capabilities_negotiation_error',   MEDIA_PIPELINE_ERROR :'media_pipeline_error',   TIMEOUT_ERROR :'timeout_error',   UNKNOWN_ERROR :'unknown_error'} extends keyof {  CONNECTION_ERROR :'connection_error',   CAPABILITIES_NEGOTIATION_ERROR :'capabilities_negotiation_error',   MEDIA_PIPELINE_ERROR :'media_pipeline_error',   TIMEOUT_ERROR :'timeout_error',   UNKNOWN_ERROR :'unknown_error'} ? std.Exclude<keyof {  CONNECTION_ERROR :'connection_error',   CAPABILITIES_NEGOTIATION_ERROR :'capabilities_negotiation_error',   MEDIA_PIPELINE_ERROR :'media_pipeline_error',   TIMEOUT_ERROR :'timeout_error',   UNKNOWN_ERROR :'unknown_error'}, 'unknown_error' | 'media_pipeline_error' | 'connection_error' | 'capabilities_negotiation_error' | 'timeout_error'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -152,10 +128,7 @@ object displaySource {
     var state: ToStringLiteral[
         CONNECTED, 
         /* keyof chrome-apps.anon.CONNECTED */ typings.chromeApps.chromeAppsStrings.CONNECTED | CONNECTING | DISCONNECTED, 
-        Exclude[
-          /* keyof chrome-apps.anon.CONNECTED */ typings.chromeApps.chromeAppsStrings.CONNECTED | CONNECTING | DISCONNECTED, 
-          Connected_ | Connecting_ | Disconnected_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CONNECTED :'Connected',   CONNECTING :'Connecting',   DISCONNECTED :'Disconnected'} extends keyof {  CONNECTED :'Connected',   CONNECTING :'Connecting',   DISCONNECTED :'Disconnected'} ? std.Exclude<keyof {  CONNECTED :'Connected',   CONNECTING :'Connecting',   DISCONNECTED :'Disconnected'}, 'Connected' | 'Connecting' | 'Disconnected'> : never */ js.Any
       ]
   }
   object SinkInfo {
@@ -166,10 +139,7 @@ object displaySource {
       state: ToStringLiteral[
           CONNECTED, 
           /* keyof chrome-apps.anon.CONNECTED */ typings.chromeApps.chromeAppsStrings.CONNECTED | CONNECTING | DISCONNECTED, 
-          Exclude[
-            /* keyof chrome-apps.anon.CONNECTED */ typings.chromeApps.chromeAppsStrings.CONNECTED | CONNECTING | DISCONNECTED, 
-            Connected_ | Connecting_ | Disconnected_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CONNECTED :'Connected',   CONNECTING :'Connecting',   DISCONNECTED :'Disconnected'} extends keyof {  CONNECTED :'Connected',   CONNECTING :'Connecting',   DISCONNECTED :'Disconnected'} ? std.Exclude<keyof {  CONNECTED :'Connected',   CONNECTING :'Connecting',   DISCONNECTED :'Disconnected'}, 'Connected' | 'Connecting' | 'Disconnected'> : never */ js.Any
         ]
     ): SinkInfo = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
@@ -186,10 +156,7 @@ object displaySource {
         value: ToStringLiteral[
               CONNECTED, 
               /* keyof chrome-apps.anon.CONNECTED */ typings.chromeApps.chromeAppsStrings.CONNECTED | CONNECTING | DISCONNECTED, 
-              Exclude[
-                /* keyof chrome-apps.anon.CONNECTED */ typings.chromeApps.chromeAppsStrings.CONNECTED | CONNECTING | DISCONNECTED, 
-                Connected_ | Connecting_ | Disconnected_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CONNECTED :'Connected',   CONNECTING :'Connecting',   DISCONNECTED :'Disconnected'} extends keyof {  CONNECTED :'Connected',   CONNECTING :'Connecting',   DISCONNECTED :'Disconnected'} ? std.Exclude<keyof {  CONNECTED :'Connected',   CONNECTING :'Connecting',   DISCONNECTED :'Disconnected'}, 'Connected' | 'Connecting' | 'Disconnected'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }

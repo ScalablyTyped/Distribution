@@ -9,7 +9,7 @@ import typings.nightwatch.anon.FnCallUsingSelectorCallback
 import typings.nightwatch.anon.FnCallUsingSelectorCssPropertyCallback
 import typings.nightwatch.anon.FnCallUsingSelectorInputValueCallback
 import typings.nightwatch.anon.FnCallUsingSelectorPropertyCallback
-import typings.nightwatch.anon.X
+import typings.nightwatch.anon.Height
 import typings.nightwatch.nightwatchStrings.string
 import typings.seleniumWebdriver.mod.By
 import typings.seleniumWebdriver.mod.WebElement
@@ -314,7 +314,7 @@ open class Element ()
   
   var pseudoSelector: Null = js.native
   
-  def rect(): X = js.native
+  def rect(): Height = js.native
   
   var resolvedElement: Any = js.native
   

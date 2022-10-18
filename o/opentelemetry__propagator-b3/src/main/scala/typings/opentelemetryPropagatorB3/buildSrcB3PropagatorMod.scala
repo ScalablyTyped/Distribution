@@ -1,0 +1,66 @@
+package typings.opentelemetryPropagatorB3
+
+import typings.opentelemetryApi.buildSrcContextTypesMod.Context
+import typings.opentelemetryApi.buildSrcPropagationTextMapPropagatorMod.TextMapGetter
+import typings.opentelemetryApi.buildSrcPropagationTextMapPropagatorMod.TextMapPropagator
+import typings.opentelemetryApi.buildSrcPropagationTextMapPropagatorMod.TextMapSetter
+import typings.opentelemetryPropagatorB3.buildSrcTypesMod.B3PropagatorConfig
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object buildSrcB3PropagatorMod {
+  
+  @JSImport("@opentelemetry/propagator-b3/build/src/B3Propagator", "B3Propagator")
+  @js.native
+  open class B3Propagator ()
+    extends StObject
+       with TextMapPropagator[Any] {
+    def this(config: B3PropagatorConfig) = this()
+    
+    /* private */ val _b3MultiPropagator: Any = js.native
+    
+    /* private */ val _b3SinglePropagator: Any = js.native
+    
+    val _fields: js.Array[String] = js.native
+    
+    /* private */ val _inject: Any = js.native
+    
+    /**
+      * Given a `Context` and a carrier, extract context values from a
+      * carrier and return a new context, created from the old context, with the
+      * extracted values.
+      *
+      * @param context the Context from which to extract values to transmit over
+      *     the wire.
+      * @param carrier the carrier of propagation fields, such as http request
+      *     headers.
+      * @param getter an optional {@link TextMapGetter}. If undefined, keys will be all
+      *     own properties, and keys will be accessed by direct object access.
+      */
+    /* CompleteClass */
+    override def extract(context: Context, carrier: Any, getter: TextMapGetter[Any]): Context = js.native
+    
+    /**
+      * Return a list of all fields which may be used by the propagator.
+      */
+    /* CompleteClass */
+    override def fields(): js.Array[String] = js.native
+    
+    /**
+      * Injects values from a given `Context` into a carrier.
+      *
+      * OpenTelemetry defines a common set of format values (TextMapPropagator),
+      * and each has an expected `carrier` type.
+      *
+      * @param context the Context from which to extract values to transmit over
+      *     the wire.
+      * @param carrier the carrier of propagation fields, such as http request
+      *     headers.
+      * @param setter an optional {@link TextMapSetter}. If undefined, values will be
+      *     set by direct object assignment.
+      */
+    /* CompleteClass */
+    override def inject(context: Context, carrier: Any, setter: TextMapSetter[Any]): Unit = js.native
+  }
+}

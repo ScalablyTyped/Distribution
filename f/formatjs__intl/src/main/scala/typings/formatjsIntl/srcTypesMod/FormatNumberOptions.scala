@@ -7,17 +7,17 @@ import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsNotatio
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsSignDisplay
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsStyle
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsUnitDisplay
-import typings.formatjsIntl.formatjsIntlStrings.auto
+import typings.formatjsEcma402Abstract.typesNumberMod.RoundingModeType
+import typings.formatjsEcma402Abstract.typesNumberMod.RoundingPriorityType
+import typings.formatjsEcma402Abstract.typesNumberMod.TrailingZeroDisplay
+import typings.formatjsEcma402Abstract.typesNumberMod.UseGroupingType
 import typings.formatjsIntl.formatjsIntlStrings.compact
 import typings.formatjsIntl.formatjsIntlStrings.engineering
-import typings.formatjsIntl.formatjsIntlStrings.lessPrecision
 import typings.formatjsIntl.formatjsIntlStrings.long
-import typings.formatjsIntl.formatjsIntlStrings.morePrecision
 import typings.formatjsIntl.formatjsIntlStrings.narrow
 import typings.formatjsIntl.formatjsIntlStrings.scientific
 import typings.formatjsIntl.formatjsIntlStrings.short
 import typings.formatjsIntl.formatjsIntlStrings.standard
-import typings.formatjsIntl.formatjsIntlStrings.stripIfInteger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +34,7 @@ trait FormatNumberOptions extends StObject {
   var currencySign: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsCurrencySign]
   
   var format: js.UndefOr[
-    String | (/* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['number'] */ js.Any)
+    /* import warning: importer.ImportType#apply Failed type conversion: 'number' extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['number'] : string */ js.Any
   ] = js.undefined
   
   var maximumFractionDigits: js.UndefOr[Double] = js.undefined
@@ -51,19 +51,23 @@ trait FormatNumberOptions extends StObject {
   
   var numberingSystem: js.UndefOr[String] = js.undefined
   
-  var roundingPriority: js.UndefOr[auto | morePrecision | lessPrecision] = js.undefined
+  var roundingIncrement: js.UndefOr[Double] = js.undefined
+  
+  var roundingMode: js.UndefOr[RoundingModeType] = js.undefined
+  
+  var roundingPriority: js.UndefOr[RoundingPriorityType] = js.undefined
   
   var signDisplay: js.UndefOr[NumberFormatOptionsSignDisplay] = js.undefined
   
   var style: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsStyle]
   
-  var trailingZeroDisplay: js.UndefOr[auto | stripIfInteger] = js.undefined
+  var trailingZeroDisplay: js.UndefOr[TrailingZeroDisplay] = js.undefined
   
   var unit: js.UndefOr[String] = js.undefined
   
   var unitDisplay: (js.UndefOr[short | long | narrow]) & js.UndefOr[NumberFormatOptionsUnitDisplay]
   
-  var useGrouping: js.UndefOr[Boolean] = js.undefined
+  var useGrouping: js.UndefOr[UseGroupingType] = js.undefined
 }
 object FormatNumberOptions {
   
@@ -92,7 +96,7 @@ object FormatNumberOptions {
     inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     inline def setFormat(
-      value: String | (/* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['number'] */ js.Any)
+      value: /* import warning: importer.ImportType#apply Failed type conversion: 'number' extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['number'] : string */ js.Any
     ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
@@ -125,7 +129,15 @@ object FormatNumberOptions {
     
     inline def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
     
-    inline def setRoundingPriority(value: auto | morePrecision | lessPrecision): Self = StObject.set(x, "roundingPriority", value.asInstanceOf[js.Any])
+    inline def setRoundingIncrement(value: Double): Self = StObject.set(x, "roundingIncrement", value.asInstanceOf[js.Any])
+    
+    inline def setRoundingIncrementUndefined: Self = StObject.set(x, "roundingIncrement", js.undefined)
+    
+    inline def setRoundingMode(value: RoundingModeType): Self = StObject.set(x, "roundingMode", value.asInstanceOf[js.Any])
+    
+    inline def setRoundingModeUndefined: Self = StObject.set(x, "roundingMode", js.undefined)
+    
+    inline def setRoundingPriority(value: RoundingPriorityType): Self = StObject.set(x, "roundingPriority", value.asInstanceOf[js.Any])
     
     inline def setRoundingPriorityUndefined: Self = StObject.set(x, "roundingPriority", js.undefined)
     
@@ -135,7 +147,7 @@ object FormatNumberOptions {
     
     inline def setStyle(value: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    inline def setTrailingZeroDisplay(value: auto | stripIfInteger): Self = StObject.set(x, "trailingZeroDisplay", value.asInstanceOf[js.Any])
+    inline def setTrailingZeroDisplay(value: TrailingZeroDisplay): Self = StObject.set(x, "trailingZeroDisplay", value.asInstanceOf[js.Any])
     
     inline def setTrailingZeroDisplayUndefined: Self = StObject.set(x, "trailingZeroDisplay", js.undefined)
     
@@ -145,7 +157,7 @@ object FormatNumberOptions {
     
     inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    inline def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+    inline def setUseGrouping(value: UseGroupingType): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
     
     inline def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
   }

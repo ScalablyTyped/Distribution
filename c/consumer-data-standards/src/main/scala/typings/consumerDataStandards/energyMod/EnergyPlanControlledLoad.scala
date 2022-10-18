@@ -1,7 +1,10 @@
 package typings.consumerDataStandards.energyMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.consumerDataStandards.anon.UnitPrice
+import typings.consumerDataStandards.anon.DailySupplyCharge
+import typings.consumerDataStandards.anon.Rates
+import typings.consumerDataStandards.consumerDataStandardsStrings.singleRate
+import typings.consumerDataStandards.consumerDataStandardsStrings.timeOfUseRates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,53 +14,64 @@ trait EnergyPlanControlledLoad
      with /* k */ StringDictionary[Any] {
   
   /**
-    * The daily supply charge (exclusive of GST) for this controlled load tier
-    */
-  var dailyCharge: String
-  
-  /**
-    * A description of the controlled load tier
-    */
-  var description: js.UndefOr[String | Null] = js.undefined
-  
-  /**
-    * A display name for the controlled load tier
+    * A display name for the controlled load
     */
   var displayName: String
   
   /**
-    * The period for which the controlled load rate applies. Formatted according to [ISO 8601 Durations](https://en.wikipedia.org/wiki/ISO_8601#Durations) (excludes recurrence syntax)
+    * Optional end date of the application of the controlled load rate
     */
-  var period: String
+  var endDate: js.UndefOr[String] = js.undefined
   
   /**
-    * Array of controlled load rates in order of usage volume
+    * Specifies the type of controlloed load rate
     */
-  var rates: js.Array[UnitPrice]
+  var rateBlockUType: singleRate | timeOfUseRates
+  
+  /**
+    * Object representing a single controlled load rate.  Required if rateBlockUType is singleRate
+    */
+  var singleRate: js.UndefOr[DailySupplyCharge] = js.undefined
+  
+  /**
+    * Optional start date of the application of the controlled load rate
+    */
+  var startDate: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Array of objects representing time of use rates.  Required if rateBlockUType is timeOfUseRates
+    */
+  var timeOfUseRates: js.UndefOr[js.Array[Rates]] = js.undefined
 }
 object EnergyPlanControlledLoad {
   
-  inline def apply(dailyCharge: String, displayName: String, period: String, rates: js.Array[UnitPrice]): EnergyPlanControlledLoad = {
-    val __obj = js.Dynamic.literal(dailyCharge = dailyCharge.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], rates = rates.asInstanceOf[js.Any])
+  inline def apply(displayName: String, rateBlockUType: singleRate | timeOfUseRates): EnergyPlanControlledLoad = {
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], rateBlockUType = rateBlockUType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnergyPlanControlledLoad]
   }
   
   extension [Self <: EnergyPlanControlledLoad](x: Self) {
     
-    inline def setDailyCharge(value: String): Self = StObject.set(x, "dailyCharge", value.asInstanceOf[js.Any])
-    
-    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
-    
-    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
-    
-    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
-    
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    inline def setRates(value: js.Array[UnitPrice]): Self = StObject.set(x, "rates", value.asInstanceOf[js.Any])
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    inline def setRatesVarargs(value: UnitPrice*): Self = StObject.set(x, "rates", js.Array(value*))
+    inline def setRateBlockUType(value: singleRate | timeOfUseRates): Self = StObject.set(x, "rateBlockUType", value.asInstanceOf[js.Any])
+    
+    inline def setSingleRate(value: DailySupplyCharge): Self = StObject.set(x, "singleRate", value.asInstanceOf[js.Any])
+    
+    inline def setSingleRateUndefined: Self = StObject.set(x, "singleRate", js.undefined)
+    
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    
+    inline def setTimeOfUseRates(value: js.Array[Rates]): Self = StObject.set(x, "timeOfUseRates", value.asInstanceOf[js.Any])
+    
+    inline def setTimeOfUseRatesUndefined: Self = StObject.set(x, "timeOfUseRates", js.undefined)
+    
+    inline def setTimeOfUseRatesVarargs(value: Rates*): Self = StObject.set(x, "timeOfUseRates", js.Array(value*))
   }
 }

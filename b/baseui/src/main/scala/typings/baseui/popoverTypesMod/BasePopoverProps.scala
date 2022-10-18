@@ -70,7 +70,7 @@ trait BasePopoverProps extends StObject {
   var overrides: js.UndefOr[PopoverOverrides] = js.undefined
   
   /** How to position the popover relative to the target. */
-  var placement: TetherPlacement
+  var placement: js.UndefOr[TetherPlacement] = js.undefined
   
   /** Margin of the popover */
   var popoverMargin: js.UndefOr[Double] = js.undefined
@@ -94,12 +94,12 @@ trait BasePopoverProps extends StObject {
   var showArrow: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to toggle the popover when trigger is clicked or hovered. */
-  var triggerType: TriggerType
+  var triggerType: js.UndefOr[TriggerType] = js.undefined
 }
 object BasePopoverProps {
   
-  inline def apply(placement: TetherPlacement, triggerType: TriggerType): BasePopoverProps = {
-    val __obj = js.Dynamic.literal(placement = placement.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
+  inline def apply(): BasePopoverProps = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasePopoverProps]
   }
   
@@ -175,6 +175,8 @@ object BasePopoverProps {
     
     inline def setPlacement(value: TetherPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    
     inline def setPopoverMargin(value: Double): Self = StObject.set(x, "popoverMargin", value.asInstanceOf[js.Any])
     
     inline def setPopoverMarginUndefined: Self = StObject.set(x, "popoverMargin", js.undefined)
@@ -198,5 +200,7 @@ object BasePopoverProps {
     inline def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
     
     inline def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
   }
 }

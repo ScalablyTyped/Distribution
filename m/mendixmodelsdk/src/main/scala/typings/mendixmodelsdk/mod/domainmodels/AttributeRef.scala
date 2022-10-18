@@ -1,25 +1,25 @@
 package typings.mendixmodelsdk.mod.domainmodels
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
-import typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.AttributeWidget
-import typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn
-import typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem
-import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
-import typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.microflowsMod.microflows.SortItem
-import typings.mendixmodelsdk.pagesMod.pages.ClientTemplateParameter
-import typings.mendixmodelsdk.pagesMod.pages.GridColumn
-import typings.mendixmodelsdk.pagesMod.pages.ListViewSearch
-import typings.mendixmodelsdk.pagesMod.pages.MemberWidget
-import typings.mendixmodelsdk.pagesMod.pages.RangeSearchField
-import typings.mendixmodelsdk.pagesMod.pages.SingleSearchField
-import typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.WidgetValue
+import typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.AttributeWidget
+import typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DataGridColumn
+import typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.GridSortItem
+import typings.mendixmodelsdk.srcGenDomainmodelsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.SortItem
+import typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplateParameter
+import typings.mendixmodelsdk.srcGenPagesMod.pages.GridColumn
+import typings.mendixmodelsdk.srcGenPagesMod.pages.ListViewSearch
+import typings.mendixmodelsdk.srcGenPagesMod.pages.MemberWidget
+import typings.mendixmodelsdk.srcGenPagesMod.pages.RangeSearchField
+import typings.mendixmodelsdk.srcGenPagesMod.pages.SingleSearchField
+import typings.mendixmodelsdk.srcGenPagesMod.pages.StaticOrDynamicString
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "domainmodels.AttributeRef")
 @js.native
 open class AttributeRef protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.AttributeRef {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.domainmodels.AttributeRef {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -53,7 +53,7 @@ object AttributeRef {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -64,7 +64,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInAttributeWidgetUnderAttributeRef(container: AttributeWidget): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInAttributeWidgetUnderAttributeRef(container: AttributeWidget): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -75,7 +75,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInClientTemplateParameterUnderAttributeRef(container: ClientTemplateParameter): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateParameterUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInClientTemplateParameterUnderAttributeRef(container: ClientTemplateParameter): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateParameterUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -86,7 +86,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInDataGridColumnUnderAttributeRef(container: DataGridColumn): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInDataGridColumnUnderAttributeRef(container: DataGridColumn): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -97,7 +97,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInDocumentTemplatesGridSortItemUnderAttributeRef(container: GridSortItem): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplatesGridSortItemUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInDocumentTemplatesGridSortItemUnderAttributeRef(container: GridSortItem): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplatesGridSortItemUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -108,7 +108,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInGridColumnUnderAttributeRef(container: GridColumn): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInGridColumnUnderAttributeRef(container: GridColumn): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -119,7 +119,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInListViewSearchUnderSearchRefs(container: ListViewSearch): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewSearchUnderSearchRefs")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInListViewSearchUnderSearchRefs(container: ListViewSearch): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewSearchUnderSearchRefs")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -130,7 +130,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInMemberWidgetUnderAttributeRef(container: MemberWidget): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberWidgetUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInMemberWidgetUnderAttributeRef(container: MemberWidget): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberWidgetUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -141,7 +141,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInPagesGridSortItemUnderAttributeRef(container: typings.mendixmodelsdk.pagesMod.pages.GridSortItem): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPagesGridSortItemUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInPagesGridSortItemUnderAttributeRef(container: typings.mendixmodelsdk.srcGenPagesMod.pages.GridSortItem): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPagesGridSortItemUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -152,7 +152,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInRangeSearchFieldUnderLowerBoundRef(container: RangeSearchField): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRangeSearchFieldUnderLowerBoundRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInRangeSearchFieldUnderLowerBoundRef(container: RangeSearchField): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRangeSearchFieldUnderLowerBoundRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -163,7 +163,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInRangeSearchFieldUnderUpperBoundRef(container: RangeSearchField): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRangeSearchFieldUnderUpperBoundRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInRangeSearchFieldUnderUpperBoundRef(container: RangeSearchField): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRangeSearchFieldUnderUpperBoundRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -174,7 +174,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInSingleSearchFieldUnderAttributeRef(container: SingleSearchField): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSingleSearchFieldUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInSingleSearchFieldUnderAttributeRef(container: SingleSearchField): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSingleSearchFieldUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -185,7 +185,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInSortItemUnderAttributeRef(container: SortItem): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSortItemUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInSortItemUnderAttributeRef(container: SortItem): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSortItemUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -196,7 +196,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInStaticOrDynamicStringUnderAttributeRef(container: StaticOrDynamicString): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticOrDynamicStringUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInStaticOrDynamicStringUnderAttributeRef(container: StaticOrDynamicString): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticOrDynamicStringUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -207,7 +207,7 @@ object AttributeRef {
     *  7.11.0 to 9.7.0
     */
   /* static member */
-  inline def createInVariableRefExpressionUnderMember(container: VariableRefExpression): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVariableRefExpressionUnderMember")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInVariableRefExpressionUnderMember(container: VariableRefExpression): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVariableRefExpressionUnderMember")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -218,7 +218,7 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  inline def createInWidgetValueUnderAttributeRef(container: WidgetValue): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]
+  inline def createInWidgetValueUnderAttributeRef(container: WidgetValue): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.AttributeRef.structureTypeName")

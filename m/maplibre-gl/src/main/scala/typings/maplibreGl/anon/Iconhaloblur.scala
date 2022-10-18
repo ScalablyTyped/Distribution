@@ -1,5 +1,8 @@
 package typings.maplibreGl.anon
 
+import typings.maplibreGl.distStyleSpecMod.ColorSpecification
+import typings.maplibreGl.distStyleSpecMod.DataDrivenPropertyValueSpecification
+import typings.maplibreGl.distStyleSpecMod.PropertyValueSpecification
 import typings.maplibreGl.maplibreGlStrings.ExpressionSpecification
 import typings.maplibreGl.maplibreGlStrings.`geometry-type`
 import typings.maplibreGl.maplibreGlStrings.`heatmap-density`
@@ -9,12 +12,9 @@ import typings.maplibreGl.maplibreGlStrings.id
 import typings.maplibreGl.maplibreGlStrings.ln2
 import typings.maplibreGl.maplibreGlStrings.map
 import typings.maplibreGl.maplibreGlStrings.pi
-import typings.maplibreGl.maplibreGlStrings.properties_
+import typings.maplibreGl.maplibreGlStrings.properties
 import typings.maplibreGl.maplibreGlStrings.viewport
 import typings.maplibreGl.maplibreGlStrings.zoom
-import typings.maplibreGl.styleSpecMod.ColorSpecification
-import typings.maplibreGl.styleSpecMod.DataDrivenPropertyValueSpecification
-import typings.maplibreGl.styleSpecMod.PropertyValueSpecification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,7 +63,7 @@ object Iconhaloblur {
     inline def `setIcon-colorUndefined`: Self = StObject.set(x, "icon-color", js.undefined)
     
     inline def `setIcon-colorVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "icon-color", js.Array(value*))
     
     inline def `setIcon-halo-blur`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "icon-halo-blur", value.asInstanceOf[js.Any])
@@ -71,7 +71,7 @@ object Iconhaloblur {
     inline def `setIcon-halo-blurUndefined`: Self = StObject.set(x, "icon-halo-blur", js.undefined)
     
     inline def `setIcon-halo-blurVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "icon-halo-blur", js.Array(value*))
     
     inline def `setIcon-halo-color`(value: DataDrivenPropertyValueSpecification[ColorSpecification]): Self = StObject.set(x, "icon-halo-color", value.asInstanceOf[js.Any])
@@ -79,7 +79,7 @@ object Iconhaloblur {
     inline def `setIcon-halo-colorUndefined`: Self = StObject.set(x, "icon-halo-color", js.undefined)
     
     inline def `setIcon-halo-colorVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "icon-halo-color", js.Array(value*))
     
     inline def `setIcon-halo-width`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "icon-halo-width", value.asInstanceOf[js.Any])
@@ -87,7 +87,7 @@ object Iconhaloblur {
     inline def `setIcon-halo-widthUndefined`: Self = StObject.set(x, "icon-halo-width", js.undefined)
     
     inline def `setIcon-halo-widthVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "icon-halo-width", js.Array(value*))
     
     inline def `setIcon-opacity`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "icon-opacity", value.asInstanceOf[js.Any])
@@ -95,7 +95,7 @@ object Iconhaloblur {
     inline def `setIcon-opacityUndefined`: Self = StObject.set(x, "icon-opacity", js.undefined)
     
     inline def `setIcon-opacityVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "icon-opacity", js.Array(value*))
     
     inline def `setIcon-translate`(value: PropertyValueSpecification[js.Tuple2[Double, Double]]): Self = StObject.set(x, "icon-translate", value.asInstanceOf[js.Any])
@@ -111,7 +111,7 @@ object Iconhaloblur {
     inline def `setText-colorUndefined`: Self = StObject.set(x, "text-color", js.undefined)
     
     inline def `setText-colorVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-color", js.Array(value*))
     
     inline def `setText-halo-blur`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "text-halo-blur", value.asInstanceOf[js.Any])
@@ -119,7 +119,7 @@ object Iconhaloblur {
     inline def `setText-halo-blurUndefined`: Self = StObject.set(x, "text-halo-blur", js.undefined)
     
     inline def `setText-halo-blurVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-halo-blur", js.Array(value*))
     
     inline def `setText-halo-color`(value: DataDrivenPropertyValueSpecification[ColorSpecification]): Self = StObject.set(x, "text-halo-color", value.asInstanceOf[js.Any])
@@ -127,7 +127,7 @@ object Iconhaloblur {
     inline def `setText-halo-colorUndefined`: Self = StObject.set(x, "text-halo-color", js.undefined)
     
     inline def `setText-halo-colorVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-halo-color", js.Array(value*))
     
     inline def `setText-halo-width`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "text-halo-width", value.asInstanceOf[js.Any])
@@ -135,7 +135,7 @@ object Iconhaloblur {
     inline def `setText-halo-widthUndefined`: Self = StObject.set(x, "text-halo-width", js.undefined)
     
     inline def `setText-halo-widthVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-halo-width", js.Array(value*))
     
     inline def `setText-opacity`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "text-opacity", value.asInstanceOf[js.Any])
@@ -143,7 +143,7 @@ object Iconhaloblur {
     inline def `setText-opacityUndefined`: Self = StObject.set(x, "text-opacity", js.undefined)
     
     inline def `setText-opacityVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "text-opacity", js.Array(value*))
     
     inline def `setText-translate`(value: PropertyValueSpecification[js.Tuple2[Double, Double]]): Self = StObject.set(x, "text-translate", value.asInstanceOf[js.Any])

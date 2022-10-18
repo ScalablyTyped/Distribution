@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object egjsAgentStrings {
   
   @js.native
-  sealed trait NavigatorUAData extends StObject
-  inline def NavigatorUAData: NavigatorUAData = "NavigatorUAData".asInstanceOf[NavigatorUAData]
-  
-  @js.native
   sealed trait architecture extends StObject
   inline def architecture: architecture = "architecture".asInstanceOf[architecture]
   

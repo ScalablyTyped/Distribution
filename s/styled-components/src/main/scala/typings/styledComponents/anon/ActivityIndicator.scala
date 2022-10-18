@@ -45,7 +45,7 @@ import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewProps
 import typings.reactNative.mod.VirtualizedList
 import typings.reactNative.mod.VirtualizedListProps
-import typings.styledComponents.constructWithOptionsMod.Styled
+import typings.styledComponents.nativeDistConstructorsConstructWithOptionsMod.Styled
 import typings.styledComponents.styledComponentsStrings.native
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

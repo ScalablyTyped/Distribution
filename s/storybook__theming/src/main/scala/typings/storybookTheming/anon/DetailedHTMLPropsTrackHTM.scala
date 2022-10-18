@@ -40,7 +40,7 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLTrackElement
-import typings.storybookTheming.emotionReactNodeModulesemotionSerializeTypesIndexMod.Interpolation
+import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.Interpolation
 import typings.storybookTheming.storybookThemingStrings.`additions removals`
 import typings.storybookTheming.storybookThemingStrings.`additions text`
 import typings.storybookTheming.storybookThemingStrings.`inline`
@@ -357,7 +357,9 @@ trait DetailedHTMLPropsTrackHTM extends StObject {
   
   var contextMenu: js.UndefOr[String] = js.undefined
   
-  var css: js.UndefOr[Interpolation[typings.storybookTheming.emotionReactTypesIndexMod.Theme]] = js.undefined
+  var css: js.UndefOr[
+    Interpolation[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme]
+  ] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
@@ -874,7 +876,9 @@ object DetailedHTMLPropsTrackHTM {
     
     inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
-    inline def setCss(value: Interpolation[typings.storybookTheming.emotionReactTypesIndexMod.Theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(
+      value: Interpolation[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme]
+    ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssNull: Self = StObject.set(x, "css", null)
     

@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.PartialTabProps
-import typings.blueprintjsCore.tabMod.TabProps
+import typings.blueprintjsCore.libEsmComponentsTabsTabMod.TabProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Tab")
 @js.native
 open class Tab protected ()
-  extends typings.blueprintjsCore.componentsMod.Tab {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Tab {
   def this(props: TabProps) = this()
   def this(props: TabProps, context: Any) = this()
 }

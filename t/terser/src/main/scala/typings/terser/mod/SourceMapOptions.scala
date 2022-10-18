@@ -1,6 +1,6 @@
 package typings.terser.mod
 
-import typings.jridgewellTraceMapping.typesMod.SectionedSourceMapInput
+import typings.jridgewellTraceMapping.distTypesTypesMod.SectionedSourceMapInput
 import typings.terser.terserStrings.`inline`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,11 +1,11 @@
 package typings.paypalCheckoutComponents
 
-import typings.paypalCheckoutComponents.buttonMod.FundingOption
-import typings.paypalCheckoutComponents.callbackDataMod.AuthorizationData
-import typings.paypalCheckoutComponents.callbackDataMod.AuthorizationResponse
-import typings.paypalCheckoutComponents.callbackDataMod.CancellationData
-import typings.paypalCheckoutComponents.configurationMod.ButtonStyle
-import typings.paypalCheckoutComponents.configurationMod.Environment
+import typings.paypalCheckoutComponents.modulesButtonMod.FundingOption
+import typings.paypalCheckoutComponents.modulesCallbackDataMod.AuthorizationData
+import typings.paypalCheckoutComponents.modulesCallbackDataMod.AuthorizationResponse
+import typings.paypalCheckoutComponents.modulesCallbackDataMod.CancellationData
+import typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonStyle
+import typings.paypalCheckoutComponents.modulesConfigurationMod.Environment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

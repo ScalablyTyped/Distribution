@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-languageserver", "ErrorMessageTracker")
 @js.native
 open class ErrorMessageTracker ()
-  extends typings.vscodeLanguageserver.serverMod.ErrorMessageTracker
+  extends typings.vscodeLanguageserver.libCommonServerMod.ErrorMessageTracker

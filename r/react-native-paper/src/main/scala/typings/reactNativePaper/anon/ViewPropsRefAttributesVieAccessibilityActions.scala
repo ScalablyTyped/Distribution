@@ -14,7 +14,7 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.iconMod.IconSource
+import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSource
 import typings.reactNativePaper.reactNativePaperStrings.`box-none`
 import typings.reactNativePaper.reactNativePaperStrings.`box-only`
 import typings.reactNativePaper.reactNativePaperStrings.`no-hide-descendants`
@@ -420,7 +420,7 @@ trait ViewPropsRefAttributesVieAccessibilityActions extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
@@ -459,7 +459,10 @@ trait ViewPropsRefAttributesVieAccessibilityActions extends StObject {
 }
 object ViewPropsRefAttributesVieAccessibilityActions {
   
-  inline def apply(icon: IconSource, theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): ViewPropsRefAttributesVieAccessibilityActions = {
+  inline def apply(
+    icon: IconSource,
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
+  ): ViewPropsRefAttributesVieAccessibilityActions = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsRefAttributesVieAccessibilityActions]
   }
@@ -748,7 +751,7 @@ object ViewPropsRefAttributesVieAccessibilityActions {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     

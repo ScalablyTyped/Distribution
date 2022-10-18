@@ -2,12 +2,12 @@ package typings.jimpCompact
 
 import org.scalablytyped.runtime.Shortcut
 import typings.jimpCompact.anon.Decoders
-import typings.jimpCore.jimpMod.JimpConstructors
-import typings.jimpCore.utilsMod.GetPluginConst
-import typings.jimpCore.utilsMod.GetPluginDecoders
-import typings.jimpCore.utilsMod.GetPluginEncoders
-import typings.jimpCore.utilsMod.GetPluginVal
-import typings.jimpCore.utilsMod.UnionToIntersection
+import typings.jimpCore.typesJimpMod.JimpConstructors
+import typings.jimpCore.typesUtilsMod.GetPluginConst
+import typings.jimpCore.typesUtilsMod.GetPluginDecoders
+import typings.jimpCore.typesUtilsMod.GetPluginEncoders
+import typings.jimpCore.typesUtilsMod.GetPluginVal
+import typings.jimpCore.typesUtilsMod.UnionToIntersection
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,7 +27,7 @@ object mod extends Shortcut {
   
   type IntersectedPluginTypes = UnionToIntersection[GetPluginVal[Plugins | Types]]
   
-  type Jimp = typings.jimpCore.jimpMod.Jimp & IntersectedPluginTypes
+  type Jimp = typings.jimpCore.typesJimpMod.Jimp & IntersectedPluginTypes
   
   type Plugins = ReturnType[js.Function0[typings.jimpPlugins.mod.Plugins]]
   

@@ -8,9 +8,9 @@ object void {
   
   @JSImport("fp-ts", "void.Monoid")
   @js.native
-  val Monoid: typings.fpTs.monoidMod.Monoid[Unit] = js.native
+  val Monoid: typings.fpTs.libMonoidMod.Monoid[Unit] = js.native
   
   @JSImport("fp-ts", "void.Semigroup")
   @js.native
-  val Semigroup: typings.fpTs.semigroupMod.Semigroup[Unit] = js.native
+  val Semigroup: typings.fpTs.libSemigroupMod.Semigroup[Unit] = js.native
 }

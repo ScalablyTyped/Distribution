@@ -2,8 +2,9 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.CardDismissDelay
 import typings.officeUiFabricReact.anon.CompactCardHeight
-import typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardProps
-import typings.officeUiFabricReact.hoverCardTypesMod.IHoverCardProps
+import typings.officeUiFabricReact.libComponentsHoverCardExpandingCardDottypesMod.IExpandingCardProps
+import typings.officeUiFabricReact.libComponentsHoverCardHoverCardDottypesMod.IHoverCardProps
+import typings.officeUiFabricReact.libComponentsHoverCardPlainCardPlainCardDottypesMod.IPlainCardProps
 import typings.officeUiFabricReact.officeUiFabricReactInts.`0`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`10`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`11`
@@ -18,7 +19,6 @@ import typings.officeUiFabricReact.officeUiFabricReactInts.`6`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`7`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`8`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`9`
-import typings.officeUiFabricReact.plainCardTypesMod.IPlainCardProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -154,7 +154,7 @@ object libHoverCardMod {
   @JSImport("office-ui-fabric-react/lib/HoverCard", "ExpandingCardBase")
   @js.native
   open class ExpandingCardBase protected ()
-    extends typings.officeUiFabricReact.hoverCardMod.ExpandingCardBase {
+    extends typings.officeUiFabricReact.libComponentsHoverCardMod.ExpandingCardBase {
     def this(props: IExpandingCardProps) = this()
   }
   /* static members */
@@ -175,11 +175,13 @@ object libHoverCardMod {
   object ExpandingCardMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsHoverCardExpandingCardDottypesMod.ExpandingCardMode & Double
+      ] = js.native
     
-    /* 0 */ val compact: typings.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode.compact & Double = js.native
+    /* 0 */ val compact: typings.officeUiFabricReact.libComponentsHoverCardExpandingCardDottypesMod.ExpandingCardMode.compact & Double = js.native
     
-    /* 1 */ val expanded: typings.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode.expanded & Double = js.native
+    /* 1 */ val expanded: typings.officeUiFabricReact.libComponentsHoverCardExpandingCardDottypesMod.ExpandingCardMode.expanded & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/HoverCard", "HoverCard")
@@ -189,7 +191,7 @@ object libHoverCardMod {
   @JSImport("office-ui-fabric-react/lib/HoverCard", "HoverCardBase")
   @js.native
   open class HoverCardBase protected ()
-    extends typings.officeUiFabricReact.hoverCardMod.HoverCardBase {
+    extends typings.officeUiFabricReact.libComponentsHoverCardMod.HoverCardBase {
     def this(props: IHoverCardProps) = this()
   }
   /* static members */
@@ -210,11 +212,13 @@ object libHoverCardMod {
   object HoverCardType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsHoverCardHoverCardDottypesMod.HoverCardType & String
+      ] = js.native
     
-    /* "ExpandingCard" */ val expanding: typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType.expanding & String = js.native
+    /* "ExpandingCard" */ val expanding: typings.officeUiFabricReact.libComponentsHoverCardHoverCardDottypesMod.HoverCardType.expanding & String = js.native
     
-    /* "PlainCard" */ val plain: typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType.plain & String = js.native
+    /* "PlainCard" */ val plain: typings.officeUiFabricReact.libComponentsHoverCardHoverCardDottypesMod.HoverCardType.plain & String = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/HoverCard", "OpenCardMode")
@@ -222,11 +226,13 @@ object libHoverCardMod {
   object OpenCardMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsHoverCardHoverCardDottypesMod.OpenCardMode & Double
+      ] = js.native
     
-    /* 1 */ val hotKey: typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode.hotKey & Double = js.native
+    /* 1 */ val hotKey: typings.officeUiFabricReact.libComponentsHoverCardHoverCardDottypesMod.OpenCardMode.hotKey & Double = js.native
     
-    /* 0 */ val hover: typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode.hover & Double = js.native
+    /* 0 */ val hover: typings.officeUiFabricReact.libComponentsHoverCardHoverCardDottypesMod.OpenCardMode.hover & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/HoverCard", "PlainCard")
@@ -236,7 +242,7 @@ object libHoverCardMod {
   @JSImport("office-ui-fabric-react/lib/HoverCard", "PlainCardBase")
   @js.native
   open class PlainCardBase protected ()
-    extends typings.officeUiFabricReact.hoverCardMod.PlainCardBase {
+    extends typings.officeUiFabricReact.libComponentsHoverCardMod.PlainCardBase {
     def this(props: IPlainCardProps) = this()
   }
 }

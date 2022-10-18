@@ -1,6 +1,6 @@
 package typings.grommet.anon
 
-import typings.grommet.diagramMod._DiagramAnimationType
+import typings.grommet.componentsDiagramMod._DiagramAnimationType
 import typings.grommet.grommetStrings.draw
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium

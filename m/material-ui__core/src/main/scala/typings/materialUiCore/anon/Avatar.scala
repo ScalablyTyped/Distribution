@@ -36,9 +36,7 @@ trait Avatar[SubheaderTypographyComponent /* <: ElementType[Any] */, TitleTypogr
     * These props will be forwarded to the subheader
     * (as long as disableTypography is not `true`).
     */
-  var subheaderTypographyProps: js.UndefOr[
-    TypographyProps[SubheaderTypographyComponent, Component[SubheaderTypographyComponent]]
-  ] = js.undefined
+  var subheaderTypographyProps: js.UndefOr[TypographyProps[SubheaderTypographyComponent, `1`[SubheaderTypographyComponent]]] = js.undefined
   
   /**
     * The content of the Card Title.
@@ -49,7 +47,7 @@ trait Avatar[SubheaderTypographyComponent /* <: ElementType[Any] */, TitleTypogr
     * These props will be forwarded to the title
     * (as long as disableTypography is not `true`).
     */
-  var titleTypographyProps: js.UndefOr[TypographyProps[TitleTypographyComponent, `1`[TitleTypographyComponent]]] = js.undefined
+  var titleTypographyProps: js.UndefOr[TypographyProps[TitleTypographyComponent, `2`[TitleTypographyComponent]]] = js.undefined
 }
 object Avatar {
   
@@ -74,7 +72,7 @@ object Avatar {
     
     inline def setSubheader(value: ReactNode): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
     
-    inline def setSubheaderTypographyProps(value: TypographyProps[SubheaderTypographyComponent, Component[SubheaderTypographyComponent]]): Self = StObject.set(x, "subheaderTypographyProps", value.asInstanceOf[js.Any])
+    inline def setSubheaderTypographyProps(value: TypographyProps[SubheaderTypographyComponent, `1`[SubheaderTypographyComponent]]): Self = StObject.set(x, "subheaderTypographyProps", value.asInstanceOf[js.Any])
     
     inline def setSubheaderTypographyPropsUndefined: Self = StObject.set(x, "subheaderTypographyProps", js.undefined)
     
@@ -82,7 +80,7 @@ object Avatar {
     
     inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setTitleTypographyProps(value: TypographyProps[TitleTypographyComponent, `1`[TitleTypographyComponent]]): Self = StObject.set(x, "titleTypographyProps", value.asInstanceOf[js.Any])
+    inline def setTitleTypographyProps(value: TypographyProps[TitleTypographyComponent, `2`[TitleTypographyComponent]]): Self = StObject.set(x, "titleTypographyProps", value.asInstanceOf[js.Any])
     
     inline def setTitleTypographyPropsUndefined: Self = StObject.set(x, "titleTypographyProps", js.undefined)
     

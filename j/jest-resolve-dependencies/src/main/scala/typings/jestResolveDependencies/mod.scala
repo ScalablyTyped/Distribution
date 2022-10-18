@@ -16,11 +16,11 @@ object mod {
   open class DependencyResolver protected () extends StObject {
     def this(resolver: default, hasteFS: IHasteFS, snapshotResolver: SnapshotResolver) = this()
     
-    /* private */ var _hasteFS: Any = js.native
+    /* private */ val _hasteFS: Any = js.native
     
-    /* private */ var _resolver: Any = js.native
+    /* private */ val _resolver: Any = js.native
     
-    /* private */ var _snapshotResolver: Any = js.native
+    /* private */ val _snapshotResolver: Any = js.native
     
     def resolve(file: String): js.Array[String] = js.native
     def resolve(file: String, options: ResolveModuleConfig): js.Array[String] = js.native

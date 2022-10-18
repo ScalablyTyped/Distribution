@@ -7,28 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AttributesData extends StObject {
   
-  var attributes: js.UndefOr[
-    (Record[String, String | Double | Boolean]) | (js.Array[js.Tuple2[String, String | Double | Boolean]])
-  ] = js.undefined
+  var attributes: Record[String, String | Double | Boolean]
   
   var data: String
 }
 object AttributesData {
   
-  inline def apply(data: String): AttributesData = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+  inline def apply(attributes: Record[String, String | Double | Boolean], data: String): AttributesData = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributesData]
   }
   
   extension [Self <: AttributesData](x: Self) {
     
-    inline def setAttributes(
-      value: (Record[String, String | Double | Boolean]) | (js.Array[js.Tuple2[String, String | Double | Boolean]])
-    ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
-    
-    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
-    
-    inline def setAttributesVarargs(value: (js.Tuple2[String, String | Double | Boolean])*): Self = StObject.set(x, "attributes", js.Array(value*))
+    inline def setAttributes(value: Record[String, String | Double | Boolean]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

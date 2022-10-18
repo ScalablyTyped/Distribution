@@ -4,8 +4,8 @@ import typings.std.MouseEvent
 import typings.vegaTooltip.anon.Height
 import typings.vegaTooltip.anon.X
 import typings.vegaTypings.mod.View
-import typings.vegaTypings.runtimeMod.Item
-import typings.vegaTypings.runtimeMod.TooltipHandler
+import typings.vegaTypings.typesRuntimeMod.Item
+import typings.vegaTypings.typesRuntimeMod.TooltipHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.bizcharts.mod
 
 import typings.bizcharts.anon.PreInteractions
-import typings.bizcharts.interfaceMod.IViewProps
-import typings.bizcharts.viewMod.default
+import typings.bizcharts.libComponentsViewMod.default
+import typings.bizcharts.libInterfaceMod.IViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

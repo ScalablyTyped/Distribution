@@ -1,7 +1,6 @@
 package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
@@ -129,14 +128,6 @@ type BasicDoc = StringDictionary[String]
 type ConnectedComponentClass[TProps, TProvidedProps, TExposedProps] = ComponentClass[(Omit[TProps, TProvidedProps]) & TExposedProps, ComponentState]
 
 type ConnectorProvided[TProvided] = CreateURL & TProvided
-
-type HighlightResult[TDoc] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof TDoc ]:? react-instantsearch-core.react-instantsearch-core.HighlightResultField<TDoc[K]>}
-  */ typings.reactInstantsearchCore.reactInstantsearchCoreStrings.HighlightResult & TopLevel[TDoc]
-
-type HighlightResultArray[TItem] = js.Array[HighlightResult[TItem] | HighlightResultPrimitive]
-
-type HighlightResultField[TField] = HighlightResult[TField] | HighlightResultPrimitive | HighlightResultArray[Any]
 
 type Hit[TDoc] = TDoc & typings.reactInstantsearchCore.anon.HighlightResult[TDoc]
 

@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<plotly.js.plotly.js.Scene> */
 trait PartialSceneAnnotations extends StObject {
   
-  var annotations: js.UndefOr[PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor]] = js.undefined
+  var annotations: js.UndefOr[PartialAnnotationsAlign | js.Array[PartialAnnotationsAlign]] = js.undefined
   
   var aspectmode: js.UndefOr[auto | cube | data | manual] = js.undefined
   
@@ -50,11 +50,11 @@ object PartialSceneAnnotations {
   
   extension [Self <: PartialSceneAnnotations](x: Self) {
     
-    inline def setAnnotations(value: PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: PartialAnnotationsAlign | js.Array[PartialAnnotationsAlign]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    inline def setAnnotationsVarargs(value: PartialAnnotationsArrowcolor*): Self = StObject.set(x, "annotations", js.Array(value*))
+    inline def setAnnotationsVarargs(value: PartialAnnotationsAlign*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setAspectmode(value: auto | cube | data | manual): Self = StObject.set(x, "aspectmode", value.asInstanceOf[js.Any])
     

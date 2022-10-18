@@ -1,31 +1,31 @@
 package typings.uapiJson
 
-import typings.uapiJson.airMod.AddSegmentsParams
-import typings.uapiJson.airMod.BookParams
-import typings.uapiJson.airMod.CancelBookingParams
-import typings.uapiJson.airMod.CancelTicketParams
-import typings.uapiJson.airMod.FareRulesParams
-import typings.uapiJson.airMod.FlightInfoParams
-import typings.uapiJson.airMod.GetBookingParams
-import typings.uapiJson.airMod.GetEMDItemParams
-import typings.uapiJson.airMod.GetEMDListParams
-import typings.uapiJson.airMod.GetTicketParams
-import typings.uapiJson.airMod.GetTicketsParams
-import typings.uapiJson.airMod.GetUniversalRecordByPNRParams
-import typings.uapiJson.airMod.GetUniversalRecordParams
-import typings.uapiJson.airMod.SearchBookingsByPassengerNameParams
-import typings.uapiJson.airMod.ShopParams
-import typings.uapiJson.airMod.TicketParams
-import typings.uapiJson.airMod.ToQueueParams
-import typings.uapiJson.hotelsServiceMod.CancelBookParams
-import typings.uapiJson.hotelsServiceMod.RatesParams
-import typings.uapiJson.hotelsServiceMod.SearchParams
+import typings.uapiJson.libAirMod.AddSegmentsParams
+import typings.uapiJson.libAirMod.BookParams
+import typings.uapiJson.libAirMod.CancelBookingParams
+import typings.uapiJson.libAirMod.CancelTicketParams
+import typings.uapiJson.libAirMod.FareRulesParams
+import typings.uapiJson.libAirMod.FlightInfoParams
+import typings.uapiJson.libAirMod.GetBookingParams
+import typings.uapiJson.libAirMod.GetEMDItemParams
+import typings.uapiJson.libAirMod.GetEMDListParams
+import typings.uapiJson.libAirMod.GetTicketParams
+import typings.uapiJson.libAirMod.GetTicketsParams
+import typings.uapiJson.libAirMod.GetUniversalRecordByPNRParams
+import typings.uapiJson.libAirMod.GetUniversalRecordParams
+import typings.uapiJson.libAirMod.SearchBookingsByPassengerNameParams
+import typings.uapiJson.libAirMod.ShopParams
+import typings.uapiJson.libAirMod.TicketParams
+import typings.uapiJson.libAirMod.ToQueueParams
+import typings.uapiJson.libHotelsServiceMod.CancelBookParams
+import typings.uapiJson.libHotelsServiceMod.RatesParams
+import typings.uapiJson.libHotelsServiceMod.SearchParams
+import typings.uapiJson.libUtilsServiceMod.CurrencyConvertParams
+import typings.uapiJson.libUtilsServiceMod.ReferenceDataParams
 import typings.uapiJson.uapiJsonBooleans.`true`
 import typings.uapiJson.uapiJsonStrings.Cash
 import typings.uapiJson.uapiJsonStrings.Z
 import typings.uapiJson.uapiJsonStrings.ZA
-import typings.uapiJson.utilsServiceMod.CurrencyConvertParams
-import typings.uapiJson.utilsServiceMod.ReferenceDataParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -187,7 +187,7 @@ object anon {
   
   trait Book extends StObject {
     
-    def book(params: typings.uapiJson.hotelsServiceMod.BookParams): js.Promise[Any]
+    def book(params: typings.uapiJson.libHotelsServiceMod.BookParams): js.Promise[Any]
     
     def cancelBook(params: CancelBookParams): js.Promise[Any]
     
@@ -198,7 +198,7 @@ object anon {
   object Book {
     
     inline def apply(
-      book: typings.uapiJson.hotelsServiceMod.BookParams => js.Promise[Any],
+      book: typings.uapiJson.libHotelsServiceMod.BookParams => js.Promise[Any],
       cancelBook: CancelBookParams => js.Promise[Any],
       rates: RatesParams => js.Promise[Any],
       search: SearchParams => js.Promise[Any]
@@ -209,7 +209,7 @@ object anon {
     
     extension [Self <: Book](x: Self) {
       
-      inline def setBook(value: typings.uapiJson.hotelsServiceMod.BookParams => js.Promise[Any]): Self = StObject.set(x, "book", js.Any.fromFunction1(value))
+      inline def setBook(value: typings.uapiJson.libHotelsServiceMod.BookParams => js.Promise[Any]): Self = StObject.set(x, "book", js.Any.fromFunction1(value))
       
       inline def setCancelBook(value: CancelBookParams => js.Promise[Any]): Self = StObject.set(x, "cancelBook", js.Any.fromFunction1(value))
       

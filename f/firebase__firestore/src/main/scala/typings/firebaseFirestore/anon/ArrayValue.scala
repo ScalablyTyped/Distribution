@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ArrayValue extends StObject {
   
-  var arrayValue: typings.firebaseFirestore.firestoreProtoApiMod.ArrayValue
+  var arrayValue: typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.ArrayValue
 }
 object ArrayValue {
   
-  inline def apply(arrayValue: typings.firebaseFirestore.firestoreProtoApiMod.ArrayValue): ArrayValue = {
+  inline def apply(arrayValue: typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.ArrayValue): ArrayValue = {
     val __obj = js.Dynamic.literal(arrayValue = arrayValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayValue]
   }
   
   extension [Self <: ArrayValue](x: Self) {
     
-    inline def setArrayValue(value: typings.firebaseFirestore.firestoreProtoApiMod.ArrayValue): Self = StObject.set(x, "arrayValue", value.asInstanceOf[js.Any])
+    inline def setArrayValue(value: typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.ArrayValue): Self = StObject.set(x, "arrayValue", value.asInstanceOf[js.Any])
   }
 }

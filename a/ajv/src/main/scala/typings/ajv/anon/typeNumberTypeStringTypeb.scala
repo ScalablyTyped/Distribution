@@ -1,9 +1,9 @@
 package typings.ajv.anon
 
 import typings.ajv.ajvStrings.boolean
-import typings.ajv.typesJtdSchemaMod.NumberType
-import typings.ajv.typesJtdSchemaMod.SomeJTDSchemaType
-import typings.ajv.typesJtdSchemaMod.StringType
+import typings.ajv.distTypesJtdSchemaMod.NumberType
+import typings.ajv.distTypesJtdSchemaMod.SomeJTDSchemaType
+import typings.ajv.distTypesJtdSchemaMod.StringType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

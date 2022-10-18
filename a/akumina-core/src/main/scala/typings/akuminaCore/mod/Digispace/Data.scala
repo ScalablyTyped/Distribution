@@ -1,11 +1,11 @@
 package typings.akuminaCore.mod.Digispace
 
 import typings.akuminaCore.akuminaCoreBooleans.`false`
-import typings.akuminaCore.igetlistrequestMod.IGetListRequest
-import typings.akuminaCore.ipageinterfacesMod.IPageVersion
-import typings.akuminaCore.ipageinterfacesMod.IPageVersionPriorityGroup
-import typings.akuminaCore.ipageinterfacesMod.IPageVersionProperties
-import typings.akuminaCore.ipagewidgetMod.IPageWidget
+import typings.akuminaCore.interfacesIgetlistrequestMod.IGetListRequest
+import typings.akuminaCore.interfacesIpageinterfacesMod.IPageVersion
+import typings.akuminaCore.interfacesIpageinterfacesMod.IPageVersionPriorityGroup
+import typings.akuminaCore.interfacesIpageinterfacesMod.IPageVersionProperties
+import typings.akuminaCore.interfacesIpagewidgetMod.IPageWidget
 import typings.jquery.JQueryDeferred
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

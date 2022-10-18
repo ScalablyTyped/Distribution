@@ -21,6 +21,6 @@ object Corpora {
     
     inline def setCorpora(value: js.Array[Corpus]): Self = StObject.set(x, "corpora", value.asInstanceOf[js.Any])
     
-    inline def setCorporaVarargs(value: Corpus*): Self = StObject.set(x, "corpora", js.Array(value :_*))
+    inline def setCorporaVarargs(value: Corpus*): Self = StObject.set(x, "corpora", js.Array(value*))
   }
 }

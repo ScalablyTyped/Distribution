@@ -1,15 +1,15 @@
 package typings.officeUiFabricReact.anon
 
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorCellProps
-import typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellStyleProps
-import typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellStyles
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsSwatchColorPickerColorPickerGridCellDottypesMod.IColorCellProps
+import typings.officeUiFabricReact.libComponentsSwatchColorPickerColorPickerGridCellDottypesMod.IColorPickerGridCellStyleProps
+import typings.officeUiFabricReact.libComponentsSwatchColorPickerColorPickerGridCellDottypesMod.IColorPickerGridCellStyles
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLButtonElement
-import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.fpTs.mod
 
-import typings.fpTs.iOMod.IO_
-import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
+import typings.fpTs.libIOMod.IO_
+import typings.fpTs.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

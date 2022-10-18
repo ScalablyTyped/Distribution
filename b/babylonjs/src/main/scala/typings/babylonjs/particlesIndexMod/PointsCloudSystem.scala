@@ -1,6 +1,6 @@
 package typings.babylonjs.particlesIndexMod
 
-import typings.babylonjs.anon.`0`
+import typings.babylonjs.anon.Updatable
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Particles/index", "PointsCloudSystem")
 @js.native
 open class PointsCloudSystem protected ()
-  extends typings.babylonjs.pointsCloudSystemMod.PointsCloudSystem {
+  extends typings.babylonjs.particlesPointsCloudSystemMod.PointsCloudSystem {
   /**
     * Creates a PCS (Points Cloud System) object
     * @param name (String) is the PCS name, this will be the underlying mesh name
@@ -20,5 +20,5 @@ open class PointsCloudSystem protected ()
     * @param options.updatable
     */
   def this(name: String, pointSize: Double, scene: Scene) = this()
-  def this(name: String, pointSize: Double, scene: Scene, options: `0`) = this()
+  def this(name: String, pointSize: Double, scene: Scene, options: Updatable) = this()
 }

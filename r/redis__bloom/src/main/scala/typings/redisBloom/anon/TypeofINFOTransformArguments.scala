@@ -1,7 +1,7 @@
 package typings.redisBloom.anon
 
-import typings.redisBloom.topKInfoMod.InfoRawReply
-import typings.redisBloom.topKInfoMod.InfoReply
+import typings.redisBloom.distCommandsTopKInfoMod.InfoRawReply
+import typings.redisBloom.distCommandsTopKInfoMod.InfoReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

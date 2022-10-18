@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Label extends StObject {
   
+  var channelId: String
+  
   var context: js.UndefOr[String] = js.undefined
   
   var `extension`: js.UndefOr[String] = js.undefined
@@ -16,12 +18,14 @@ trait Label extends StObject {
 }
 object Label {
   
-  inline def apply(): Label = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(channelId: String): Label = {
+    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Label]
   }
   
   extension [Self <: Label](x: Self) {
+    
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

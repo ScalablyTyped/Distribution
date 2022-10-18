@@ -2,8 +2,8 @@ package typings.vscodeTextmate
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.vscodeTextmate.anon.Background
-import typings.vscodeTextmate.typesMod.IOnigLib
-import typings.vscodeTextmate.typesMod.IRawGrammar
+import typings.vscodeTextmate.releaseTypesMod.IOnigLib
+import typings.vscodeTextmate.releaseTypesMod.IRawGrammar
 import typings.vscodeTextmate.vscodeTextmateDoubles.`4278190080`
 import typings.vscodeTextmate.vscodeTextmateInts.`0`
 import typings.vscodeTextmate.vscodeTextmateInts.`1024`

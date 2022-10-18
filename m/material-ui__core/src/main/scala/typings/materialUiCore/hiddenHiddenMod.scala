@@ -1,9 +1,9 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.createBreakpointsMod.Breakpoint
 import typings.materialUiCore.materialUiCoreStrings.css
 import typings.materialUiCore.materialUiCoreStrings.js_
+import typings.materialUiCore.stylesCreateBreakpointsMod.Breakpoint
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -206,13 +206,13 @@ object anon {
       msg: Message,
       obj: js.Object,
       extensions: NumberDictionary[ExtensionFieldInfo[Message]],
-      getExtensionFn: js.Function1[/* fieldInfo */ ExtensionFieldInfo[this.type], this.type]
+      getExtensionFn: js.Function1[/* fieldInfo */ ExtensionFieldInfo[Message], Message]
     ): Unit = js.native
     def toObjectExtension(
       msg: Message,
       obj: js.Object,
       extensions: NumberDictionary[ExtensionFieldInfo[Message]],
-      getExtensionFn: js.Function1[/* fieldInfo */ ExtensionFieldInfo[this.type], this.type],
+      getExtensionFn: js.Function1[/* fieldInfo */ ExtensionFieldInfo[Message], Message],
       includeInstance: Boolean
     ): Unit = js.native
     
@@ -405,13 +405,13 @@ object anon {
       msg: Message,
       obj: js.Object,
       extensions: NumberDictionary[ExtensionFieldInfo[Message]],
-      getExtensionFn: js.Function1[/* fieldInfo */ ExtensionFieldInfo[Message], Message]
+      getExtensionFn: js.Function1[/* fieldInfo */ ExtensionFieldInfo[this.type], this.type]
     ): Unit = js.native
     def toObjectExtension(
       msg: Message,
       obj: js.Object,
       extensions: NumberDictionary[ExtensionFieldInfo[Message]],
-      getExtensionFn: js.Function1[/* fieldInfo */ ExtensionFieldInfo[Message], Message],
+      getExtensionFn: js.Function1[/* fieldInfo */ ExtensionFieldInfo[this.type], this.type],
       includeInstance: Boolean
     ): Unit = js.native
     

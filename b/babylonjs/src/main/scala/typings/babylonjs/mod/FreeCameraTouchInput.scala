@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param allowMouse Defines if mouse events can be treated as touch events
   */
 open class FreeCameraTouchInput ()
-  extends typings.babylonjs.legacyMod.FreeCameraTouchInput {
+  extends typings.babylonjs.legacyLegacyMod.FreeCameraTouchInput {
   def this(/**
     * Define if mouse events can be treated as touch events
     */

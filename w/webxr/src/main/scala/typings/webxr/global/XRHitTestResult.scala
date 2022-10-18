@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("XRHitTestResult")
+/* note: abstract class */ @JSGlobal("XRHitTestResult")
 @js.native
-abstract class XRHitTestResult ()
+open class XRHitTestResult ()
   extends StObject
      with typings.webxr.XRHitTestResult {
   

@@ -20,8 +20,10 @@ import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconNode
-import typings.reactNativeElements.inputMod.InputProps
+import typings.reactNativeElements.distIconsIconMod.IconNode
+import typings.reactNativeElements.distInputInputMod.InputProps
+import typings.reactNativeElements.distSearchbarSearchBarMod.SearchBarProps
+import typings.reactNativeElements.distTextTextMod.TextProps
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.assertive
 import typings.reactNativeElements.reactNativeElementsStrings.auto
@@ -38,8 +40,6 @@ import typings.reactNativeElements.reactNativeElementsStrings.small
 import typings.reactNativeElements.reactNativeElementsStrings.solid
 import typings.reactNativeElements.reactNativeElementsStrings.top
 import typings.reactNativeElements.reactNativeElementsStrings.yes
-import typings.reactNativeElements.searchBarMod.SearchBarProps
-import typings.reactNativeElements.textMod.TextProps
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

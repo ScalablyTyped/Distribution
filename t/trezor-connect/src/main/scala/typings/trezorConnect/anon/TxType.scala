@@ -1,7 +1,7 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.transactionsMod.RippleLibTransaction
-import typings.trezorConnect.transactionsMod.TypedRawTransaction
+import typings.trezorConnect.libTypescriptBackendTransactionsMod.RippleLibTransaction
+import typings.trezorConnect.libTypescriptBackendTransactionsMod.TypedRawTransaction
 import typings.trezorConnect.trezorConnectStrings.ripple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "ProgressElement")
+/* note: abstract class */ @JSImport("k6/html", "ProgressElement")
 @js.native
-abstract class ProgressElement () extends Element {
+open class ProgressElement () extends Element {
   
   /** Associated <label> elements. */
   def labels(): js.Array[LabelElement] = js.native

@@ -15,22 +15,10 @@ object flashpointLauncherStrings {
   inline def ASC: ASC = "ASC".asInstanceOf[ASC]
   
   @js.native
-  sealed trait AppPreferencesData extends StObject
-  inline def AppPreferencesData: AppPreferencesData = "AppPreferencesData".asInstanceOf[AppPreferencesData]
-  
-  @js.native
   sealed trait DESC
     extends StObject
        with GameOrderDirection
   inline def DESC: DESC = "DESC".asInstanceOf[DESC]
-  
-  @js.native
-  sealed trait DeepPartial extends StObject
-  inline def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
-  
-  @js.native
-  sealed trait DeepPartialAppPreferencesAppPathOverrides extends StObject
-  inline def DeepPartialAppPreferencesAppPathOverrides: DeepPartialAppPreferencesAppPathOverrides = "DeepPartialAppPreferencesAppPathOverrides".asInstanceOf[DeepPartialAppPreferencesAppPathOverrides]
   
   @js.native
   sealed trait activeDataId

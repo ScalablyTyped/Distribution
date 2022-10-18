@@ -6,7 +6,6 @@ import typings.officeJs.Excel.Interfaces.ConditionalFormatCollectionLoadOptions
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.LoadOption
-import typings.officeJs.officeJsStrings.CellValue
 import typings.officeJs.officeJsStrings.ColorScale
 import typings.officeJs.officeJsStrings.ContainsText
 import typings.officeJs.officeJsStrings.Custom
@@ -37,7 +36,7 @@ trait ConditionalFormatCollection
     * @param type The type of conditional format being added. See `Excel.ConditionalFormatType` for details.
     */
   def add(
-    `type`: Custom | DataBar | ColorScale | typings.officeJs.officeJsStrings.IconSet | TopBottom | PresetCriteria | ContainsText | CellValue
+    `type`: Custom | DataBar | ColorScale | typings.officeJs.officeJsStrings.IconSet | TopBottom | PresetCriteria | ContainsText | typings.officeJs.officeJsStrings.CellValue
   ): ConditionalFormat = js.native
   /**
     * Adds a new conditional format to the collection at the first/top priority.

@@ -1,10 +1,10 @@
 package typings.relayRuntime.anon
 
-import typings.relayRuntime.relayConcreteNodeMod.RequestParameters
+import typings.relayRuntime.libStoreRelayStoreTypesMod.LogEvent
+import typings.relayRuntime.libUtilRelayConcreteNodeMod.RequestParameters
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.CacheConfig
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Variables
 import typings.relayRuntime.relayRuntimeStrings.networkDotstart
-import typings.relayRuntime.relayRuntimeTypesMod.CacheConfig
-import typings.relayRuntime.relayRuntimeTypesMod.Variables
-import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

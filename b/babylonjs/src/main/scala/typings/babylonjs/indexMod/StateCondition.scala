@@ -15,7 +15,7 @@ open class StateCondition protected ()
     * @param value to compare with target state
     */
   def this(
-    actionManager: typings.babylonjs.actionManagerMod.ActionManager,
+    actionManager: typings.babylonjs.actionsActionManagerMod.ActionManager,
     target: Any,
     /** Value to compare with target state  */
   value: String

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AttachmentsChangedEventArgs extends StObject {
   
-  /** 
-    * Represents the set of attachments that were added or removed. 
+  /**
+    * Represents the set of attachments that were added or removed.
     * For each such attachment, gets `id`, `name`, `size`, and `attachmentType` properties.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.8]
     */
@@ -19,15 +19,15 @@ trait AttachmentsChangedEventArgs extends StObject {
   
   /**
     * Gets whether the attachments were added or removed. For details, refer to {@link Office.MailboxEnums.AttachmentStatus | MailboxEnums.AttachmentStatus}.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.8]
-    */ 
+    */
   var attachmentStatus: AttachmentStatus | String
   
   /**
     * Gets the type of the event. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.8]
     */

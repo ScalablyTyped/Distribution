@@ -6,7 +6,7 @@ import typings.express.mod.Express
 import typings.expressServeStaticCore.mod.Application
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.pollyjsNodeServer.anon.PartialConfig
 import typings.pollyjsNodeServer.anon.PartialServerConfig
 import typings.pollyjsNodeServer.anon.PickConfigrecordingsDir

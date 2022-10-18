@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates the number of array elements. */
-@JSGlobal("Windows.Foundation.Metadata.LengthIsAttribute")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.Metadata.LengthIsAttribute")
 @js.native
-abstract class LengthIsAttribute ()
+open class LengthIsAttribute ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Metadata.LengthIsAttribute

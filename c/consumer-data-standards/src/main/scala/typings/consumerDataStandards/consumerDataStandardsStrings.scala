@@ -164,10 +164,6 @@ object consumerDataStandardsStrings {
   inline def BUSINESS: BUSINESS = "BUSINESS".asInstanceOf[BUSINESS]
   
   @js.native
-  sealed trait BUSINESS_DAYS extends StObject
-  inline def BUSINESS_DAYS: BUSINESS_DAYS = "BUSINESS_DAYS".asInstanceOf[BUSINESS_DAYS]
-  
-  @js.native
   sealed trait BUSINESS_LOANS
     extends StObject
        with BankingProductCategory
@@ -540,10 +536,6 @@ object consumerDataStandardsStrings {
   inline def FRI: FRI = "FRI".asInstanceOf[FRI]
   
   @js.native
-  sealed trait FRIDAY extends StObject
-  inline def FRIDAY: FRIDAY = "FRIDAY".asInstanceOf[FRIDAY]
-  
-  @js.native
   sealed trait FRMP extends StObject
   inline def FRMP: FRMP = "FRMP".asInstanceOf[FRMP]
   
@@ -816,10 +808,6 @@ object consumerDataStandardsStrings {
   inline def MON: MON = "MON".asInstanceOf[MON]
   
   @js.native
-  sealed trait MONDAY extends StObject
-  inline def MONDAY: MONDAY = "MONDAY".asInstanceOf[MONDAY]
-  
-  @js.native
   sealed trait MONTH extends StObject
   inline def MONTH: MONTH = "MONTH".asInstanceOf[MONTH]
   
@@ -1076,6 +1064,10 @@ object consumerDataStandardsStrings {
   inline def PS256: PS256 = "PS256".asInstanceOf[PS256]
   
   @js.native
+  sealed trait PUBLIC_HOLIDAYS extends StObject
+  inline def PUBLIC_HOLIDAYS: PUBLIC_HOLIDAYS = "PUBLIC_HOLIDAYS".asInstanceOf[PUBLIC_HOLIDAYS]
+  
+  @js.native
   sealed trait PURCHASE extends StObject
   inline def PURCHASE: PURCHASE = "PURCHASE".asInstanceOf[PURCHASE]
   
@@ -1184,10 +1176,6 @@ object consumerDataStandardsStrings {
   inline def SAT: SAT = "SAT".asInstanceOf[SAT]
   
   @js.native
-  sealed trait SATURDAY extends StObject
-  inline def SATURDAY: SATURDAY = "SATURDAY".asInstanceOf[SATURDAY]
-  
-  @js.native
   sealed trait SCHEDULED_OUTAGE extends StObject
   inline def SCHEDULED_OUTAGE: SCHEDULED_OUTAGE = "SCHEDULED_OUTAGE".asInstanceOf[SCHEDULED_OUTAGE]
   
@@ -1244,6 +1232,10 @@ object consumerDataStandardsStrings {
   inline def SOLAR_PV: SOLAR_PV = "SOLAR_PV".asInstanceOf[SOLAR_PV]
   
   @js.native
+  sealed trait SOLAR_SPONGE extends StObject
+  inline def SOLAR_SPONGE: SOLAR_SPONGE = "SOLAR_SPONGE".asInstanceOf[SOLAR_SPONGE]
+  
+  @js.native
   sealed trait SOLE_TRADER extends StObject
   inline def SOLE_TRADER: SOLE_TRADER = "SOLE_TRADER".asInstanceOf[SOLE_TRADER]
   
@@ -1288,10 +1280,6 @@ object consumerDataStandardsStrings {
   inline def SUN: SUN = "SUN".asInstanceOf[SUN]
   
   @js.native
-  sealed trait SUNDAY extends StObject
-  inline def SUNDAY: SUNDAY = "SUNDAY".asInstanceOf[SUNDAY]
-  
-  @js.native
   sealed trait SURRENDERED extends StObject
   inline def SURRENDERED: SURRENDERED = "SURRENDERED".asInstanceOf[SURRENDERED]
   
@@ -1324,10 +1312,6 @@ object consumerDataStandardsStrings {
   @js.native
   sealed trait THU extends StObject
   inline def THU: THU = "THU".asInstanceOf[THU]
-  
-  @js.native
-  sealed trait THURSDAY extends StObject
-  inline def THURSDAY: THURSDAY = "THURSDAY".asInstanceOf[THURSDAY]
   
   @js.native
   sealed trait TIME_OF_USE extends StObject
@@ -1380,10 +1364,6 @@ object consumerDataStandardsStrings {
   inline def TUE: TUE = "TUE".asInstanceOf[TUE]
   
   @js.native
-  sealed trait TUESDAY extends StObject
-  inline def TUESDAY: TUESDAY = "TUESDAY".asInstanceOf[TUESDAY]
-  
-  @js.native
   sealed trait UMCP extends StObject
   inline def UMCP: UMCP = "UMCP".asInstanceOf[UMCP]
   
@@ -1434,10 +1414,6 @@ object consumerDataStandardsStrings {
   @js.native
   sealed trait WED extends StObject
   inline def WED: WED = "WED".asInstanceOf[WED]
-  
-  @js.native
-  sealed trait WEDNESDAY extends StObject
-  inline def WEDNESDAY: WEDNESDAY = "WEDNESDAY".asInstanceOf[WEDNESDAY]
   
   @js.native
   sealed trait WEEKLY extends StObject

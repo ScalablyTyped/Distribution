@@ -1,7 +1,7 @@
 package typings.rcFieldForm.anon
 
-import typings.rcFieldForm.interfaceMod.NamePath
-import typings.rcFieldForm.interfaceMod.Rule
+import typings.rcFieldForm.esInterfaceMod.NamePath
+import typings.rcFieldForm.esInterfaceMod.Rule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.carbonComponents.mod
 
 import typings.carbonComponents.anon.PartialPaginationOptions
-import typings.carbonComponents.paginationMod.PaginationOptions
+import typings.carbonComponents.componentsPaginationPaginationMod.PaginationOptions
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "Pagination")
 @js.native
 open class Pagination protected ()
-  extends typings.carbonComponents.componentsMod.Pagination {
+  extends typings.carbonComponents.globalsJsComponentsMod.Pagination {
   def this(element: Any) = this()
   def this(element: Any, options: PartialPaginationOptions) = this()
 }

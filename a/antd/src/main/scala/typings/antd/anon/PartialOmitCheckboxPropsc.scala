@@ -1,6 +1,6 @@
 package typings.antd.anon
 
-import typings.antd.checkboxCheckboxMod.CheckboxChangeEvent
+import typings.antd.libCheckboxCheckboxMod.CheckboxChangeEvent
 import typings.react.mod.CSSProperties
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler

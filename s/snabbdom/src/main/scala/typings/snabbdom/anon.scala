@@ -1,12 +1,12 @@
 package typings.snabbdom
 
-import typings.snabbdom.hooksMod.CreateHook
-import typings.snabbdom.hooksMod.DestroyHook
-import typings.snabbdom.hooksMod.PostHook
-import typings.snabbdom.hooksMod.PreHook
-import typings.snabbdom.hooksMod.RemoveHook
-import typings.snabbdom.hooksMod.UpdateHook
-import typings.snabbdom.vnodeMod.VNode_
+import typings.snabbdom.buildHooksMod.CreateHook
+import typings.snabbdom.buildHooksMod.DestroyHook
+import typings.snabbdom.buildHooksMod.PostHook
+import typings.snabbdom.buildHooksMod.PreHook
+import typings.snabbdom.buildHooksMod.RemoveHook
+import typings.snabbdom.buildHooksMod.UpdateHook
+import typings.snabbdom.buildVnodeMod.VNode_
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -60,7 +60,7 @@ object anon {
   
   trait Key extends StObject {
     
-    var key: js.UndefOr[typings.snabbdom.vnodeMod.Key] = js.undefined
+    var key: js.UndefOr[typings.snabbdom.buildVnodeMod.Key] = js.undefined
   }
   object Key {
     
@@ -71,7 +71,7 @@ object anon {
     
     extension [Self <: Key](x: Self) {
       
-      inline def setKey(value: typings.snabbdom.vnodeMod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: typings.snabbdom.buildVnodeMod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }

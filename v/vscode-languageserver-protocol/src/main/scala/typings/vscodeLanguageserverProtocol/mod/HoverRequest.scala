@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.HoverParams
-import typings.vscodeLanguageserverProtocol.protocolMod.HoverRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.HoverParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.HoverRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashhover
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object HoverRequest {
   
   @JSImport("vscode-languageserver-protocol", "HoverRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "HoverRequest.method")
   @js.native
@@ -19,7 +19,7 @@ object HoverRequest {
   
   @JSImport("vscode-languageserver-protocol", "HoverRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     HoverParams, 
     typings.vscodeLanguageserverTypes.mod.Hover | Null, 
     scala.Nothing, 

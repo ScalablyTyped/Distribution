@@ -3,6 +3,7 @@ package typings.cacheableLookup
 import typings.cacheableLookup.anon.LookupOptionsalltrue
 import typings.cacheableLookup.anon.Typeoflookup
 import typings.cacheableLookup.cacheableLookupBooleans.`false`
+import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.promises.Resolver
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
@@ -71,12 +72,7 @@ object mod {
     
     def lookup(
       hostname: String,
-      callback: js.Function3[
-          /* error */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* address */ String, 
-          /* family */ IPFamily, 
-          Unit
-        ]
+      callback: js.Function3[/* error */ ErrnoException | Null, /* address */ String, /* family */ IPFamily, Unit]
     ): Unit = js.native
     /**
     	 * @see https://nodejs.org/api/dns.html#dns_dns_lookup_hostname_options_callback
@@ -84,31 +80,17 @@ object mod {
     def lookup(
       hostname: String,
       family: IPFamily,
-      callback: js.Function3[
-          /* error */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* address */ String, 
-          /* family */ IPFamily, 
-          Unit
-        ]
+      callback: js.Function3[/* error */ ErrnoException | Null, /* address */ String, /* family */ IPFamily, Unit]
     ): Unit = js.native
     def lookup(
       hostname: String,
       options: LookupOptionsalltrue,
-      callback: js.Function2[
-          /* error */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* result */ js.Array[EntryObject], 
-          Unit
-        ]
+      callback: js.Function2[/* error */ ErrnoException | Null, /* result */ js.Array[EntryObject], Unit]
     ): Unit = js.native
     def lookup(
       hostname: String,
       options: LookupOptions,
-      callback: js.Function3[
-          /* error */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* address */ String, 
-          /* family */ IPFamily, 
-          Unit
-        ]
+      callback: js.Function3[/* error */ ErrnoException | Null, /* address */ String, /* family */ IPFamily, Unit]
     ): Unit = js.native
     
     def lookupAsync(hostname: String): js.Promise[EntryObject] = js.native

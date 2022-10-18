@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Lat
   extends StObject
      with _LngLatLike
-     with typings.maplibreGl.styleSpecMod._LngLatLike {
+     with typings.maplibreGl.distStyleSpecMod._LngLatLike {
   
   var lat: Double
   

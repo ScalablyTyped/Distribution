@@ -1,7 +1,7 @@
 package typings.carbonComponents.mod
 
 import typings.carbonComponents.anon.PartialNotificationOption
-import typings.carbonComponents.notificationMod.NotificationOptions
+import typings.carbonComponents.componentsNotificationNotificationMod.NotificationOptions
 import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "Notification")
 @js.native
 open class Notification protected ()
-  extends typings.carbonComponents.componentsMod.Notification {
+  extends typings.carbonComponents.globalsJsComponentsMod.Notification {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialNotificationOption) = this()
 }

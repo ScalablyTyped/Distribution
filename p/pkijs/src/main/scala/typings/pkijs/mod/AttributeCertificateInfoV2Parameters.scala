@@ -19,8 +19,6 @@ trait AttributeCertificateInfoV2Parameters extends StObject {
   
   var className: js.UndefOr[js.Function0[String]] = js.undefined
   
-  var constructor: js.UndefOr[js.Function1[/* parameters */ js.UndefOr[this.type], Any]] = js.undefined
-  
   var extensions: js.UndefOr[Extensions] = js.undefined
   
   var fromSchema: js.UndefOr[js.Function1[/* schema */ SchemaType, Unit]] = js.undefined
@@ -68,10 +66,6 @@ object AttributeCertificateInfoV2Parameters {
     inline def setClassName(value: () => String): Self = StObject.set(x, "className", js.Any.fromFunction0(value))
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-    
-    inline def setConstructor(value: /* parameters */ js.UndefOr[AttributeCertificateInfoV2Parameters] => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
-    
-    inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     
     inline def setExtensions(value: Extensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     

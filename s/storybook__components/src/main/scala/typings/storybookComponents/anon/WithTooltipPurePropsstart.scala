@@ -25,7 +25,9 @@ trait WithTooltipPurePropsstart extends StObject {
   
   var onVisibilityChange: js.UndefOr[js.Function1[/* visibility */ Boolean, Unit | Boolean]] = js.undefined
   
-  var placement: js.UndefOr[typings.storybookComponents.popperjsCoreLibEnumsMod.Placement] = js.undefined
+  var placement: js.UndefOr[
+    typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement
+  ] = js.undefined
   
   var startOpen: js.UndefOr[Boolean] = js.undefined
   
@@ -72,7 +74,7 @@ object WithTooltipPurePropsstart {
     
     inline def setOnVisibilityChangeUndefined: Self = StObject.set(x, "onVisibilityChange", js.undefined)
     
-    inline def setPlacement(value: typings.storybookComponents.popperjsCoreLibEnumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     

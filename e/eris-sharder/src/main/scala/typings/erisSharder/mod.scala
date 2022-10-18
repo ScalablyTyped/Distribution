@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("eris-sharder", "Base")
+  /* note: abstract class */ @JSImport("eris-sharder", "Base")
   @js.native
-  abstract class Base protected () extends StObject {
+  open class Base protected () extends StObject {
     def this(setup: Bot) = this()
     
     /* protected */ var bot: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Eris.Client */ Any = js.native

@@ -22,7 +22,7 @@ open class Buffer protected ()
     */
   def this(
     engine: Any,
-    data: DataArray | typings.babylonjs.dataBufferMod.DataBuffer,
+    data: DataArray | typings.babylonjs.buffersDataBufferMod.DataBuffer,
     updatable: Boolean,
     stride: js.UndefOr[Double],
     postponeInternalCreation: js.UndefOr[Boolean],

@@ -1,6 +1,6 @@
 package typings.reactNativeDraggableFlatlist.anon
 
-import typings.reactNativeGestureHandler.gestureComponentsMod.FlatList
+import typings.reactNativeGestureHandler.libTypescriptComponentsGestureComponentsMod.FlatList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

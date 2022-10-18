@@ -1,7 +1,7 @@
 package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.PartialDocumentPageConsul
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class DocumentPageConsult protected ()
   extends Model[Any]
-     with typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentPageConsult {
+     with typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.DocumentPageConsult {
   def this(data: PartialDocumentPageConsul) = this()
   
   /**

@@ -1,13 +1,16 @@
 organization := "org.scalablytyped"
 name := "datastore-core"
-version := "1.1-dt-20200729Z-850d7d"
-scalaVersion := "3.0.1"
+version := "8.0.2-54995a"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "interface-datastore" % "1.0-dt-20200729Z-b7485f",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "err-code" % "3.0.1-7f0a54",
+  "org.scalablytyped" %%% "interface-datastore" % "7.0.1-da5dc9",
+  "org.scalablytyped" %%% "interface-store" % "3.0.1-7ca61f",
+  "org.scalablytyped" %%% "multiformats" % "10.0.0-e339c8",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "uint8arrays" % "4.0.2-caebd5")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

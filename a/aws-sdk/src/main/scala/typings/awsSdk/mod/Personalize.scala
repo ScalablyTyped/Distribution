@@ -1,6 +1,6 @@
 package typings.awsSdk.mod
 
-import typings.awsSdk.personalizeMod.ClientConfiguration
+import typings.awsSdk.clientsPersonalizeMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a service object. This object has one method for each API operation.
   */
 open class Personalize ()
-  extends typings.awsSdk.allMod.Personalize {
+  extends typings.awsSdk.clientsAllMod.Personalize {
   def this(options: ClientConfiguration) = this()
 }

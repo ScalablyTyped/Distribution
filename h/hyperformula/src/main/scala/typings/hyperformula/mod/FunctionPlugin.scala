@@ -1,16 +1,16 @@
 package typings.hyperformula.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.hyperformula.functionPluginMod.ImplementedFunctions
-import typings.hyperformula.interpreterInterpreterMod.Interpreter
+import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
+import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ImplementedFunctions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hyperformula", "FunctionPlugin")
+/* note: abstract class */ @JSImport("hyperformula", "FunctionPlugin")
 @js.native
-abstract class FunctionPlugin protected ()
-  extends typings.hyperformula.interpreterMod.FunctionPlugin {
+open class FunctionPlugin protected ()
+  extends typings.hyperformula.typingsInterpreterMod.FunctionPlugin {
   def this(interpreter: Interpreter) = this()
 }
 /* static members */

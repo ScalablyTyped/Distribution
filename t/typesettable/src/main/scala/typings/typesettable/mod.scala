@@ -5,14 +5,14 @@ import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.SVGElement
 import typings.std.SVGGraphicsElement
-import typings.typesettable.abstractMeasurerMod.IDimensions
-import typings.typesettable.abstractMeasurerMod.IRuler
 import typings.typesettable.anon.KinIXAlignnumber
 import typings.typesettable.anon.KinIYAlignnumber
-import typings.typesettable.canvasMod.ICanvasFontStyle
-import typings.typesettable.contextsMod.IPenFactoryContext
-import typings.typesettable.contextsMod.IRulerFactoryContext
-import typings.typesettable.contextsMod.ITypesetterContext
+import typings.typesettable.buildSrcContextsCanvasMod.ICanvasFontStyle
+import typings.typesettable.buildSrcContextsMod.IPenFactoryContext
+import typings.typesettable.buildSrcContextsMod.IRulerFactoryContext
+import typings.typesettable.buildSrcContextsMod.ITypesetterContext
+import typings.typesettable.buildSrcMeasurersAbstractMeasurerMod.IDimensions
+import typings.typesettable.buildSrcMeasurersAbstractMeasurerMod.IRuler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +22,9 @@ object mod {
   @JSImport("typesettable", "AbstractMeasurer")
   @js.native
   open class AbstractMeasurer protected ()
-    extends typings.typesettable.measurersMod.AbstractMeasurer {
-    def this(ruler: IRuler) = this()
+    extends typings.typesettable.buildSrcMeasurersMod.AbstractMeasurer {
     def this(ruler: IRulerFactoryContext) = this()
+    def this(ruler: IRuler) = this()
   }
   /* static members */
   object AbstractMeasurer {
@@ -49,7 +49,7 @@ object mod {
   @JSImport("typesettable", "Cache")
   @js.native
   open class Cache[T] protected ()
-    extends typings.typesettable.utilsMod.Cache[T] {
+    extends typings.typesettable.buildSrcUtilsMod.Cache[T] {
     /**
       * @constructor
       *
@@ -61,25 +61,25 @@ object mod {
   @JSImport("typesettable", "CacheCharacterMeasurer")
   @js.native
   open class CacheCharacterMeasurer protected ()
-    extends typings.typesettable.measurersMod.CacheCharacterMeasurer {
-    def this(ruler: IRuler) = this()
+    extends typings.typesettable.buildSrcMeasurersMod.CacheCharacterMeasurer {
     def this(ruler: IRulerFactoryContext) = this()
-    def this(ruler: IRuler, useGuards: Boolean) = this()
+    def this(ruler: IRuler) = this()
     def this(ruler: IRulerFactoryContext, useGuards: Boolean) = this()
+    def this(ruler: IRuler, useGuards: Boolean) = this()
   }
   
   @JSImport("typesettable", "CacheMeasurer")
   @js.native
   open class CacheMeasurer protected ()
-    extends typings.typesettable.measurersMod.CacheMeasurer {
-    def this(ruler: IRuler) = this()
+    extends typings.typesettable.buildSrcMeasurersMod.CacheMeasurer {
     def this(ruler: IRulerFactoryContext) = this()
+    def this(ruler: IRuler) = this()
   }
   
   @JSImport("typesettable", "CanvasContext")
   @js.native
   open class CanvasContext protected ()
-    extends typings.typesettable.contextsMod.CanvasContext {
+    extends typings.typesettable.buildSrcContextsMod.CanvasContext {
     def this(ctx: CanvasRenderingContext2D) = this()
     def this(ctx: CanvasRenderingContext2D, lineHeight: Double) = this()
     def this(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle) = this()
@@ -89,17 +89,17 @@ object mod {
   @JSImport("typesettable", "CharacterMeasurer")
   @js.native
   open class CharacterMeasurer protected ()
-    extends typings.typesettable.measurersMod.CharacterMeasurer {
-    def this(ruler: IRuler) = this()
+    extends typings.typesettable.buildSrcMeasurersMod.CharacterMeasurer {
     def this(ruler: IRulerFactoryContext) = this()
-    def this(ruler: IRuler, useGuards: Boolean) = this()
+    def this(ruler: IRuler) = this()
     def this(ruler: IRulerFactoryContext, useGuards: Boolean) = this()
+    def this(ruler: IRuler, useGuards: Boolean) = this()
   }
   
   @JSImport("typesettable", "HtmlContext")
   @js.native
   open class HtmlContext protected ()
-    extends typings.typesettable.contextsMod.HtmlContext {
+    extends typings.typesettable.buildSrcContextsMod.HtmlContext {
     /**
       * @param element - The CSS font styles applied to `element` will determine the
       * size of text measurements. Also the default text block container.
@@ -115,7 +115,7 @@ object mod {
   @JSImport("typesettable", "HtmlUtils")
   @js.native
   open class HtmlUtils ()
-    extends typings.typesettable.contextsMod.HtmlUtils
+    extends typings.typesettable.buildSrcContextsMod.HtmlUtils
   /* static members */
   object HtmlUtils {
     
@@ -150,17 +150,17 @@ object mod {
   @JSImport("typesettable", "Measurer")
   @js.native
   open class Measurer protected ()
-    extends typings.typesettable.measurersMod.Measurer {
-    def this(ruler: IRuler) = this()
+    extends typings.typesettable.buildSrcMeasurersMod.Measurer {
     def this(ruler: IRulerFactoryContext) = this()
-    def this(ruler: IRuler, useGuards: Boolean) = this()
+    def this(ruler: IRuler) = this()
     def this(ruler: IRulerFactoryContext, useGuards: Boolean) = this()
+    def this(ruler: IRuler, useGuards: Boolean) = this()
   }
   
   @JSImport("typesettable", "Methods")
   @js.native
   open class Methods ()
-    extends typings.typesettable.utilsMod.Methods
+    extends typings.typesettable.buildSrcUtilsMod.Methods
   /* static members */
   object Methods {
     
@@ -194,7 +194,7 @@ object mod {
   @JSImport("typesettable", "SingleLineWrapper")
   @js.native
   open class SingleLineWrapper ()
-    extends typings.typesettable.wrappersMod.SingleLineWrapper
+    extends typings.typesettable.buildSrcWrappersMod.SingleLineWrapper
   /* static members */
   object SingleLineWrapper {
     
@@ -211,7 +211,7 @@ object mod {
   @JSImport("typesettable", "StringMethods")
   @js.native
   open class StringMethods ()
-    extends typings.typesettable.utilsMod.StringMethods
+    extends typings.typesettable.buildSrcUtilsMod.StringMethods
   /* static members */
   object StringMethods {
     
@@ -236,7 +236,7 @@ object mod {
   @JSImport("typesettable", "SvgContext")
   @js.native
   open class SvgContext protected ()
-    extends typings.typesettable.contextsMod.SvgContext {
+    extends typings.typesettable.buildSrcContextsMod.SvgContext {
     def this(element: SVGElement) = this()
     def this(element: SVGElement, className: String) = this()
     def this(element: SVGElement, className: String, addTitleElement: Boolean) = this()
@@ -258,7 +258,7 @@ object mod {
   @JSImport("typesettable", "SvgUtils")
   @js.native
   open class SvgUtils ()
-    extends typings.typesettable.contextsMod.SvgUtils
+    extends typings.typesettable.buildSrcContextsMod.SvgUtils
   /* static members */
   object SvgUtils {
     
@@ -293,12 +293,12 @@ object mod {
   @JSImport("typesettable", "Tokenizer")
   @js.native
   open class Tokenizer ()
-    extends typings.typesettable.utilsMod.Tokenizer
+    extends typings.typesettable.buildSrcUtilsMod.Tokenizer
   
   @JSImport("typesettable", "Typesetter")
   @js.native
   open class Typesetter protected ()
-    extends typings.typesettable.typesetterMod.Typesetter {
+    extends typings.typesettable.buildSrcTypesetterMod.Typesetter {
     def this(context: ITypesetterContext[Any]) = this()
   }
   /* static members */
@@ -308,39 +308,39 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def canvas(ctx: CanvasRenderingContext2D): typings.typesettable.typesetterMod.Typesetter = ^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any]).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
-    inline def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
-    inline def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
-    inline def canvas(ctx: CanvasRenderingContext2D, lineHeight: Unit, style: ICanvasFontStyle): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
+    inline def canvas(ctx: CanvasRenderingContext2D): typings.typesettable.buildSrcTypesetterMod.Typesetter = ^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any]).asInstanceOf[typings.typesettable.buildSrcTypesetterMod.Typesetter]
+    inline def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double): typings.typesettable.buildSrcTypesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.buildSrcTypesetterMod.Typesetter]
+    inline def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle): typings.typesettable.buildSrcTypesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.buildSrcTypesetterMod.Typesetter]
+    inline def canvas(ctx: CanvasRenderingContext2D, lineHeight: Unit, style: ICanvasFontStyle): typings.typesettable.buildSrcTypesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.buildSrcTypesetterMod.Typesetter]
     
-    inline def html(element: HTMLElement): typings.typesettable.typesetterMod.Typesetter = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any]).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
-    inline def html(element: HTMLElement, className: String): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
-    inline def html(element: HTMLElement, className: String, addTitle: Boolean): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitle.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
-    inline def html(element: HTMLElement, className: Unit, addTitle: Boolean): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitle.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
+    inline def html(element: HTMLElement): typings.typesettable.buildSrcTypesetterMod.Typesetter = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any]).asInstanceOf[typings.typesettable.buildSrcTypesetterMod.Typesetter]
+    inline def html(element: HTMLElement, className: String): typings.typesettable.buildSrcTypesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.buildSrcTypesetterMod.Typesetter]
+    inline def html(element: HTMLElement, className: String, addTitle: Boolean): typings.typesettable.buildSrcTypesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitle.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.buildSrcTypesetterMod.Typesetter]
+    inline def html(element: HTMLElement, className: Unit, addTitle: Boolean): typings.typesettable.buildSrcTypesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitle.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.buildSrcTypesetterMod.Typesetter]
     
-    inline def svg(element: SVGElement): typings.typesettable.typesetterMod.Typesetter = ^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any]).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
-    inline def svg(element: SVGElement, className: String): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
-    inline def svg(element: SVGElement, className: String, addTitleElement: Boolean): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitleElement.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
-    inline def svg(element: SVGElement, className: Unit, addTitleElement: Boolean): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitleElement.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
+    inline def svg(element: SVGElement): typings.typesettable.buildSrcTypesetterMod.Typesetter = ^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any]).asInstanceOf[typings.typesettable.buildSrcTypesetterMod.Typesetter]
+    inline def svg(element: SVGElement, className: String): typings.typesettable.buildSrcTypesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.buildSrcTypesetterMod.Typesetter]
+    inline def svg(element: SVGElement, className: String, addTitleElement: Boolean): typings.typesettable.buildSrcTypesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitleElement.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.buildSrcTypesetterMod.Typesetter]
+    inline def svg(element: SVGElement, className: Unit, addTitleElement: Boolean): typings.typesettable.buildSrcTypesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitleElement.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.buildSrcTypesetterMod.Typesetter]
   }
   
   @JSImport("typesettable", "Wrapper")
   @js.native
   open class Wrapper ()
-    extends typings.typesettable.wrappersMod.Wrapper
+    extends typings.typesettable.buildSrcWrappersMod.Wrapper
   
   @JSImport("typesettable", "Writer")
   @js.native
   open class Writer protected ()
-    extends typings.typesettable.writersMod.Writer {
+    extends typings.typesettable.buildSrcWritersMod.Writer {
     def this(
-      _measurer: typings.typesettable.measurersMod.AbstractMeasurer,
+      _measurer: typings.typesettable.buildSrcMeasurersMod.AbstractMeasurer,
       _penFactory: IPenFactoryContext[Any]
     ) = this()
     def this(
-      _measurer: typings.typesettable.measurersMod.AbstractMeasurer,
+      _measurer: typings.typesettable.buildSrcMeasurersMod.AbstractMeasurer,
       _penFactory: IPenFactoryContext[Any],
-      _wrapper: typings.typesettable.wrappersMod.Wrapper
+      _wrapper: typings.typesettable.buildSrcWrappersMod.Wrapper
     ) = this()
   }
   /* static members */

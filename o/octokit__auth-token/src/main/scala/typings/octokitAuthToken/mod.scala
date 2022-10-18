@@ -1,8 +1,8 @@
 package typings.octokitAuthToken
 
-import typings.octokitAuthToken.typesMod.Authentication
-import typings.octokitAuthToken.typesMod.StrategyInterface
-import typings.octokitAuthToken.typesMod.Token
+import typings.octokitAuthToken.distTypesTypesMod.Authentication
+import typings.octokitAuthToken.distTypesTypesMod.StrategyInterface
+import typings.octokitAuthToken.distTypesTypesMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object mod {
   
   trait Types extends StObject {
     
-    var Authentication: typings.octokitAuthToken.typesMod.Authentication
+    var Authentication: typings.octokitAuthToken.distTypesTypesMod.Authentication
     
     var StrategyOptions: Token
   }

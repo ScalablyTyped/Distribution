@@ -3,7 +3,7 @@ package typings.wordpressNux
 import typings.react.mod.ComponentType
 import typings.wordpressNux.anon.TypeofimportedActions
 import typings.wordpressNux.anon.TypeofimportedSelectors
-import typings.wordpressNux.dotTipMod.DotTip.Props
+import typings.wordpressNux.componentsDotTipMod.DotTip.Props
 import typings.wordpressNux.wordpressNuxStrings.coreSlashnux
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

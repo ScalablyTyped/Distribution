@@ -1,5 +1,6 @@
 package typings.node.netMod
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupOneOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -68,12 +69,7 @@ object TcpSocketConnectOpts {
     inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
     
     inline def setLookup(
-      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* address */ String, 
-          /* family */ Double, 
-          Unit
-        ]) => Unit
+      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
     ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
     
     inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)

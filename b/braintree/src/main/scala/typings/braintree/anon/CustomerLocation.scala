@@ -1,6 +1,5 @@
 package typings.braintree.anon
 
-import typings.braintree.mod.DurbinRegulated
 import typings.braintree.mod.HealthCare
 import typings.braintree.mod.Payroll
 import typings.braintree.mod.Prepaid
@@ -24,7 +23,7 @@ trait CustomerLocation extends StObject {
   
   var debit: typings.braintree.mod.Debit
   
-  var durbinRegulated: DurbinRegulated
+  var durbinRegulated: typings.braintree.mod.DurbinRegulated
   
   var expirationDate: String
   
@@ -48,8 +47,6 @@ trait CustomerLocation extends StObject {
   
   var productId: String
   
-  var sourceCardLast4: String
-  
   var token: String
 }
 object CustomerLocation {
@@ -62,7 +59,7 @@ object CustomerLocation {
     countryOfIssuance: String,
     customerLocation: typings.braintree.mod.CustomerLocation,
     debit: typings.braintree.mod.Debit,
-    durbinRegulated: DurbinRegulated,
+    durbinRegulated: typings.braintree.mod.DurbinRegulated,
     expirationDate: String,
     expirationMonth: String,
     expirationYear: String,
@@ -74,10 +71,9 @@ object CustomerLocation {
     payroll: Payroll,
     prepaid: Prepaid,
     productId: String,
-    sourceCardLast4: String,
     token: String
   ): CustomerLocation = {
-    val __obj = js.Dynamic.literal(bin = bin.asInstanceOf[js.Any], cardType = cardType.asInstanceOf[js.Any], cardholderName = cardholderName.asInstanceOf[js.Any], commercial = commercial.asInstanceOf[js.Any], countryOfIssuance = countryOfIssuance.asInstanceOf[js.Any], customerLocation = customerLocation.asInstanceOf[js.Any], debit = debit.asInstanceOf[js.Any], durbinRegulated = durbinRegulated.asInstanceOf[js.Any], expirationDate = expirationDate.asInstanceOf[js.Any], expirationMonth = expirationMonth.asInstanceOf[js.Any], expirationYear = expirationYear.asInstanceOf[js.Any], healthcare = healthcare.asInstanceOf[js.Any], imageUrl = imageUrl.asInstanceOf[js.Any], issuingBank = issuingBank.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], maskedNumber = maskedNumber.asInstanceOf[js.Any], payroll = payroll.asInstanceOf[js.Any], prepaid = prepaid.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], sourceCardLast4 = sourceCardLast4.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bin = bin.asInstanceOf[js.Any], cardType = cardType.asInstanceOf[js.Any], cardholderName = cardholderName.asInstanceOf[js.Any], commercial = commercial.asInstanceOf[js.Any], countryOfIssuance = countryOfIssuance.asInstanceOf[js.Any], customerLocation = customerLocation.asInstanceOf[js.Any], debit = debit.asInstanceOf[js.Any], durbinRegulated = durbinRegulated.asInstanceOf[js.Any], expirationDate = expirationDate.asInstanceOf[js.Any], expirationMonth = expirationMonth.asInstanceOf[js.Any], expirationYear = expirationYear.asInstanceOf[js.Any], healthcare = healthcare.asInstanceOf[js.Any], imageUrl = imageUrl.asInstanceOf[js.Any], issuingBank = issuingBank.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], maskedNumber = maskedNumber.asInstanceOf[js.Any], payroll = payroll.asInstanceOf[js.Any], prepaid = prepaid.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerLocation]
   }
   
@@ -97,7 +93,7 @@ object CustomerLocation {
     
     inline def setDebit(value: typings.braintree.mod.Debit): Self = StObject.set(x, "debit", value.asInstanceOf[js.Any])
     
-    inline def setDurbinRegulated(value: DurbinRegulated): Self = StObject.set(x, "durbinRegulated", value.asInstanceOf[js.Any])
+    inline def setDurbinRegulated(value: typings.braintree.mod.DurbinRegulated): Self = StObject.set(x, "durbinRegulated", value.asInstanceOf[js.Any])
     
     inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
@@ -120,8 +116,6 @@ object CustomerLocation {
     inline def setPrepaid(value: Prepaid): Self = StObject.set(x, "prepaid", value.asInstanceOf[js.Any])
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
-    
-    inline def setSourceCardLast4(value: String): Self = StObject.set(x, "sourceCardLast4", value.asInstanceOf[js.Any])
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }

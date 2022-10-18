@@ -21,16 +21,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Effects {
   
   /** Represent an audio capture effects manager which can be used to discover the audio processing chain on a device for a specific media category and audio processing mode. */
-  @JSGlobal("Windows.Media.Effects.AudioCaptureEffectsManager")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Effects.AudioCaptureEffectsManager")
   @js.native
-  abstract class AudioCaptureEffectsManager ()
+  open class AudioCaptureEffectsManager ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Effects.AudioCaptureEffectsManager
   
   /** Represents an audio effect. */
-  @JSGlobal("Windows.Media.Effects.AudioEffect")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Effects.AudioEffect")
   @js.native
-  abstract class AudioEffect ()
+  open class AudioEffect ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Effects.AudioEffect {
     
@@ -112,9 +112,9 @@ object Effects {
   }
   
   /** Provides functionality for creating audio capture and render effects manager objects. */
-  @JSGlobal("Windows.Media.Effects.AudioEffectsManager")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Effects.AudioEffectsManager")
   @js.native
-  abstract class AudioEffectsManager ()
+  open class AudioEffectsManager ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Effects.AudioEffectsManager
   object AudioEffectsManager {
@@ -165,16 +165,16 @@ object Effects {
   }
   
   /** Represent an audio render effects manager which can be used to discover the audio processing chain on a device for a specific media category and audio processing mode. */
-  @JSGlobal("Windows.Media.Effects.AudioRenderEffectsManager")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Effects.AudioRenderEffectsManager")
   @js.native
-  abstract class AudioRenderEffectsManager ()
+  open class AudioRenderEffectsManager ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Effects.AudioRenderEffectsManager
   
   /** Provides context for performing a custom overlay operation within the CompositeFrame method. */
-  @JSGlobal("Windows.Media.Effects.CompositeVideoFrameContext")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Effects.CompositeVideoFrameContext")
   @js.native
-  abstract class CompositeVideoFrameContext ()
+  open class CompositeVideoFrameContext ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Effects.CompositeVideoFrameContext {
     
@@ -232,9 +232,9 @@ object Effects {
   }
   
   /** Provides context for performing a custom audio effect operation within the ProcessFrame method. */
-  @JSGlobal("Windows.Media.Effects.ProcessAudioFrameContext")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Effects.ProcessAudioFrameContext")
   @js.native
-  abstract class ProcessAudioFrameContext ()
+  open class ProcessAudioFrameContext ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Effects.ProcessAudioFrameContext {
     
@@ -248,9 +248,9 @@ object Effects {
   }
   
   /** Provides context for performing a custom video effect operation within the ProcessFrame method. */
-  @JSGlobal("Windows.Media.Effects.ProcessVideoFrameContext")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Effects.ProcessVideoFrameContext")
   @js.native
-  abstract class ProcessVideoFrameContext ()
+  open class ProcessVideoFrameContext ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Effects.ProcessVideoFrameContext {
     

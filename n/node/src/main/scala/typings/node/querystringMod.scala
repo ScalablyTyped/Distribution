@@ -1,5 +1,6 @@
 package typings.node
 
+import typings.node.NodeJS.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -253,9 +254,9 @@ object querystringMod {
     }
   }
   
-  type ParsedUrlQuery = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string | Array<string>> */ Any
+  type ParsedUrlQuery = Dict[String | js.Array[String]]
   
-  type ParsedUrlQueryInput = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string | number | boolean | ReadonlyArray<string> | ReadonlyArray<number> | ReadonlyArray<boolean> | null> */ Any
+  type ParsedUrlQueryInput = Dict[String | Double | Boolean | (js.Array[Boolean | Double | String]) | Null]
   
   trait StringifyOptions extends StObject {
     

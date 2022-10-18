@@ -45,10 +45,6 @@ object cassanknexStrings {
   inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
-  sealed trait SelectAsClause extends StObject
-  inline def SelectAsClause: SelectAsClause = "SelectAsClause".asInstanceOf[SelectAsClause]
-  
-  @js.native
   sealed trait asc extends StObject
   inline def asc: asc = "asc".asInstanceOf[asc]
   

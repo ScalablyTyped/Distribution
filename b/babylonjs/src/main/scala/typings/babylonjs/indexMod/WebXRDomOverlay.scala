@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.webXRDOMOverlayMod.IWebXRDomOverlayOptions
+import typings.babylonjs.xRFeaturesWebXRDOMOverlayMod.IWebXRDomOverlayOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ open class WebXRDomOverlay protected ()
     * @param options options to use when constructing this feature
     */
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     /**
     * options to use when constructing this feature
     */

@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AdornmentConfig extends StObject {
   
-  var adornmentConfig: js.Array[typings.reactNativePaper.adornmentTypesMod.AdornmentConfig]
+  var adornmentConfig: js.Array[
+    typings.reactNativePaper.libTypescriptComponentsTextInputAdornmentTypesMod.AdornmentConfig
+  ]
   
   var inputOffset: js.UndefOr[Double] = js.undefined
   
@@ -23,7 +25,9 @@ trait AdornmentConfig extends StObject {
 object AdornmentConfig {
   
   inline def apply(
-    adornmentConfig: js.Array[typings.reactNativePaper.adornmentTypesMod.AdornmentConfig],
+    adornmentConfig: js.Array[
+      typings.reactNativePaper.libTypescriptComponentsTextInputAdornmentTypesMod.AdornmentConfig
+    ],
     leftAffixWidth: Double,
     rightAffixWidth: Double
   ): AdornmentConfig = {
@@ -33,9 +37,13 @@ object AdornmentConfig {
   
   extension [Self <: AdornmentConfig](x: Self) {
     
-    inline def setAdornmentConfig(value: js.Array[typings.reactNativePaper.adornmentTypesMod.AdornmentConfig]): Self = StObject.set(x, "adornmentConfig", value.asInstanceOf[js.Any])
+    inline def setAdornmentConfig(
+      value: js.Array[
+          typings.reactNativePaper.libTypescriptComponentsTextInputAdornmentTypesMod.AdornmentConfig
+        ]
+    ): Self = StObject.set(x, "adornmentConfig", value.asInstanceOf[js.Any])
     
-    inline def setAdornmentConfigVarargs(value: typings.reactNativePaper.adornmentTypesMod.AdornmentConfig*): Self = StObject.set(x, "adornmentConfig", js.Array(value*))
+    inline def setAdornmentConfigVarargs(value: typings.reactNativePaper.libTypescriptComponentsTextInputAdornmentTypesMod.AdornmentConfig*): Self = StObject.set(x, "adornmentConfig", js.Array(value*))
     
     inline def setInputOffset(value: Double): Self = StObject.set(x, "inputOffset", value.asInstanceOf[js.Any])
     

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the events that notify an app of triggers to its edge-based UI. */
-@JSGlobal("Windows.UI.Input.EdgeGesture")
+/* note: abstract class */ @JSGlobal("Windows.UI.Input.EdgeGesture")
 @js.native
-abstract class EdgeGesture ()
+open class EdgeGesture ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.EdgeGesture
 object EdgeGesture {

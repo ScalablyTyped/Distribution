@@ -20,14 +20,14 @@ object tileQueueMod {
   
   inline def getTilePriority(
     frameState: FrameState,
-    tile: typings.ol.olTileMod.default,
+    tile: typings.ol.tileMod.default,
     tileSourceKey: String,
     tileCenter: Coordinate,
     tileResolution: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTilePriority")(frameState.asInstanceOf[js.Any], tile.asInstanceOf[js.Any], tileSourceKey.asInstanceOf[js.Any], tileCenter.asInstanceOf[js.Any], tileResolution.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   type PriorityFunction = js.Function4[
-    /* p0 */ typings.ol.olTileMod.default, 
+    /* p0 */ typings.ol.tileMod.default, 
     /* p1 */ String, 
     /* p2 */ Coordinate, 
     /* p3 */ Double, 
@@ -36,13 +36,13 @@ object tileQueueMod {
   
   @js.native
   trait TileQueue
-    extends typings.ol.priorityQueueMod.default[Any] {
+    extends typings.ol.structsPriorityQueueMod.default[Any] {
     
     def enqueue(element: js.Array[Any]): Boolean = js.native
     
     def getTilesLoading(): Double = js.native
     
-    /* protected */ def handleTileChange(event: typings.ol.eventMod.default): Unit = js.native
+    /* protected */ def handleTileChange(event: typings.ol.eventsEventMod.default): Unit = js.native
     
     def loadMoreTiles(maxTotalLoading: Double, maxNewLoads: Double): Unit = js.native
   }

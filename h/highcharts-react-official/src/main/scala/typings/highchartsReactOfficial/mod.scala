@@ -63,7 +63,7 @@ object mod {
         * Reference to the chart factory (Default: chart)
         */
       var constructorType: js.UndefOr[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86, starting with typings.highchartsReactOfficial.highchartsReactOfficialStrings.getMagnitude, typings.highchartsReactOfficial.highchartsReactOfficialStrings.attr, typings.highchartsReactOfficial.highchartsReactOfficialStrings.discardElement */ Any
           ] = js.undefined
       
       /**
@@ -111,7 +111,9 @@ object mod {
         
         inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
         
-        inline def setConstructorType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any): Self = StObject.set(x, "constructorType", value.asInstanceOf[js.Any])
+        inline def setConstructorType(
+          value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86, starting with typings.highchartsReactOfficial.highchartsReactOfficialStrings.getMagnitude, typings.highchartsReactOfficial.highchartsReactOfficialStrings.attr, typings.highchartsReactOfficial.highchartsReactOfficialStrings.discardElement */ Any
+        ): Self = StObject.set(x, "constructorType", value.asInstanceOf[js.Any])
         
         inline def setConstructorTypeUndefined: Self = StObject.set(x, "constructorType", js.undefined)
         

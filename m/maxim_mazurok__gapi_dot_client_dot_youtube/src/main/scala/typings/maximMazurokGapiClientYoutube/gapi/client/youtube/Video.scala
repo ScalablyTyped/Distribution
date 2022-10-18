@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +35,7 @@ trait Video extends StObject {
   
   /** The localizations object contains localized versions of the basic details about the video, such as its title and description. */
   var localizations: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.VideoLocalization}
-    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Video & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.VideoLocalization} */ js.Any
   ] = js.undefined
   
   /** The monetizationDetails object encapsulates information about the monetization status of the video. */
@@ -123,9 +120,7 @@ object Video {
     inline def setLiveStreamingDetailsUndefined: Self = StObject.set(x, "liveStreamingDetails", js.undefined)
     
     inline def setLocalizations(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.VideoLocalization}
-      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Video & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.VideoLocalization} */ js.Any
     ): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
     inline def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)

@@ -1,7 +1,7 @@
 package typings.azureMsalCommon.anon
 
-import typings.azureMsalCommon.loggerMod.ILoggerCallback
-import typings.azureMsalCommon.loggerMod.LogLevel
+import typings.azureMsalCommon.distLoggerLoggerMod.ILoggerCallback
+import typings.azureMsalCommon.distLoggerLoggerMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

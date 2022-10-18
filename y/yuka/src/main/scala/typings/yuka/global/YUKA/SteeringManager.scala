@@ -13,5 +13,5 @@ open class SteeringManager protected ()
     *
     * @param vehicle - The vehicle that owns this steering manager.
     */
-  def this(vehicle: typings.yuka.vehicleMod.Vehicle) = this()
+  def this(vehicle: typings.yuka.srcSteeringVehicleMod.Vehicle) = this()
 }

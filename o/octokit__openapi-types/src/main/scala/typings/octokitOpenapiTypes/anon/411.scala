@@ -6,25 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `411` extends StObject {
   
-  var sha: js.UndefOr[String] = js.undefined
-  
-  var url: js.UndefOr[String] = js.undefined
+  @JSName("application/json")
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['job'] */ js.Any
 }
 object `411` {
   
-  inline def apply(): `411` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['job'] */ js.Any
+  ): `411` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`411`]
   }
   
   extension [Self <: `411`](x: Self) {
     
-    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
-    
-    inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
-    
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    
-    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['job'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

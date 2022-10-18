@@ -1,8 +1,8 @@
 package typings.angularUiNotification
 
-import typings.angularUiNotification.mod.uiNotification.MessageType
-import typings.angularUiNotification.mod.uiNotification.XPosition
-import typings.angularUiNotification.mod.uiNotification.YPosition
+import typings.angularUiNotification.angularMod.uiNotification.MessageType
+import typings.angularUiNotification.angularMod.uiNotification.XPosition
+import typings.angularUiNotification.angularMod.uiNotification.YPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

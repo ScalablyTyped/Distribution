@@ -2,14 +2,14 @@ package typings.expoConstants
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.expoConfigTypes.anon.AndroidCollapsedTitle
-import typings.expoConfigTypes.anon.BackgroundColor
 import typings.expoConfigTypes.anon.BarStyle
 import typings.expoConfigTypes.anon.CheckAutomatically
-import typings.expoConfigTypes.anon.Dictk
+import typings.expoConfigTypes.anon.PluginHistory
 import typings.expoConfigTypes.anon.Policy
 import typings.expoConfigTypes.anon.PostExport
 import typings.expoConfigTypes.anon.SilentLaunch
 import typings.expoConfigTypes.anon.TurboModules
+import typings.expoConfigTypes.anon.Visible
 import typings.expoConfigTypes.mod.Android
 import typings.expoConfigTypes.mod.IOS
 import typings.expoConfigTypes.mod.Splash
@@ -61,19 +61,19 @@ object anon {
     /**
       * Internal properties for developer tools
       */
-    var _internal: js.UndefOr[Dictk] = js.undefined
+    var _internal: js.UndefOr[PluginHistory] = js.undefined
     
     var android: js.UndefOr[Android] = js.undefined
     
     /**
       * Configuration for the bottom navigation bar on Android. Can be used to configure the `expo-navigation-bar` module in EAS Build.
       */
-    var androidNavigationBar: js.UndefOr[BarStyle] = js.undefined
+    var androidNavigationBar: js.UndefOr[Visible] = js.undefined
     
     /**
       * Configuration for the status bar on Android. For more details please navigate to [Configuring StatusBar](https://docs.expo.dev/guides/configuring-statusbar/).
       */
-    var androidStatusBar: js.UndefOr[BackgroundColor] = js.undefined
+    var androidStatusBar: js.UndefOr[BarStyle] = js.undefined
     
     /**
       * @deprecated By default, Expo looks for the application registered with the AppRegistry as `main`. If you would like to change this, you can specify the name in this property.
@@ -296,11 +296,11 @@ object anon {
       
       inline def setAndroid(value: Android): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
-      inline def setAndroidNavigationBar(value: BarStyle): Self = StObject.set(x, "androidNavigationBar", value.asInstanceOf[js.Any])
+      inline def setAndroidNavigationBar(value: Visible): Self = StObject.set(x, "androidNavigationBar", value.asInstanceOf[js.Any])
       
       inline def setAndroidNavigationBarUndefined: Self = StObject.set(x, "androidNavigationBar", js.undefined)
       
-      inline def setAndroidStatusBar(value: BackgroundColor): Self = StObject.set(x, "androidStatusBar", value.asInstanceOf[js.Any])
+      inline def setAndroidStatusBar(value: BarStyle): Self = StObject.set(x, "androidStatusBar", value.asInstanceOf[js.Any])
       
       inline def setAndroidStatusBarUndefined: Self = StObject.set(x, "androidStatusBar", js.undefined)
       
@@ -480,7 +480,7 @@ object anon {
       
       inline def setWebUndefined: Self = StObject.set(x, "web", js.undefined)
       
-      inline def set_internal(value: Dictk): Self = StObject.set(x, "_internal", value.asInstanceOf[js.Any])
+      inline def set_internal(value: PluginHistory): Self = StObject.set(x, "_internal", value.asInstanceOf[js.Any])
       
       inline def set_internalUndefined: Self = StObject.set(x, "_internal", js.undefined)
     }

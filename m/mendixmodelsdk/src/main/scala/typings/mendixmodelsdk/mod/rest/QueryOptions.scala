@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.rest
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.restMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenRestMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "rest.QueryOptions")
 @js.native
 open class QueryOptions protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.rest.QueryOptions {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.rest.QueryOptions {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object QueryOptions {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.restMod.rest.QueryOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.QueryOptions]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenRestMod.rest.QueryOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.QueryOptions]
   
   /**
     * Creates and returns a new QueryOptions instance in the SDK and on the server.
@@ -50,7 +50,7 @@ object QueryOptions {
     *  9.17.0 and higher
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.restMod.rest.PublishedRestResource): typings.mendixmodelsdk.restMod.rest.QueryOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.QueryOptions]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenRestMod.rest.PublishedRestResource): typings.mendixmodelsdk.srcGenRestMod.rest.QueryOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.QueryOptions]
   
   /* static member */
   @JSImport("mendixmodelsdk", "rest.QueryOptions.structureTypeName")

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@libp2p/connection" : "4.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@libp2p/connection" : "4.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

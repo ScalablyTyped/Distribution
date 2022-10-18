@@ -12,6 +12,7 @@ import typings.inquirer.inquirerStrings.loading
 import typings.inquirer.inquirerStrings.pending
 import typings.inquirer.mod.inquirer.prompts.PromptCollection
 import typings.node.readlineMod.Interface
+import typings.rxjs.mod.Observable_
 import typings.std.Record
 import typings.through.mod.ThroughStream
 import org.scalablytyped.runtime.StObject
@@ -150,32 +151,25 @@ object inquirer {
       /**
         * An object representing an error.
         */
-      var error: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<FailedPromptStateData> */ Any
+      var error: Observable_[FailedPromptStateData]
       
       /**
         * A pipeline for successful inputs.
         */
-      var success: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<SuccessfulPromptStateData<T>> */ Any
+      var success: Observable_[SuccessfulPromptStateData[T]]
     }
     object PromptEventPipes {
       
-      inline def apply[T](
-        error: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<FailedPromptStateData> */ Any,
-        success: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<SuccessfulPromptStateData<T>> */ Any
-      ): PromptEventPipes[T] = {
+      inline def apply[T](error: Observable_[FailedPromptStateData], success: Observable_[SuccessfulPromptStateData[T]]): PromptEventPipes[T] = {
         val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
         __obj.asInstanceOf[PromptEventPipes[T]]
       }
       
       extension [Self <: PromptEventPipes[?], T](x: Self & PromptEventPipes[T]) {
         
-        inline def setError(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<FailedPromptStateData> */ Any
-        ): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: Observable_[FailedPromptStateData]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        inline def setSuccess(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<SuccessfulPromptStateData<T>> */ Any
-        ): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+        inline def setSuccess(value: Observable_[SuccessfulPromptStateData[T]]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       }
     }
     
@@ -262,7 +256,7 @@ object inquirer {
       */
     @js.native
     trait BottomBar
-      extends typings.inquirer.baseUIMod.default {
+      extends typings.inquirer.libUiBaseUIMod.default {
       
       /**
         * Cleans the bottom bar.
@@ -382,7 +376,7 @@ object inquirer {
       */
     @js.native
     trait Prompt[T /* <: Answers */]
-      extends typings.inquirer.baseUIMod.default {
+      extends typings.inquirer.libUiBaseUIMod.default {
       
       /**
         * Gets or sets the answers provided by the user.
@@ -398,7 +392,7 @@ object inquirer {
         * @returns
         * The answer to the question.
         */
-      /* protected */ def fetchAnswer(question: FetchedQuestion[T]): Any = js.native
+      /* protected */ def fetchAnswer(question: FetchedQuestion[T]): Observable_[FetchedAnswer] = js.native
       
       /**
         * Filters the question if it is runnable.
@@ -409,7 +403,7 @@ object inquirer {
         * @returns
         * Either the event-flow of the question if it is runnable or an empty event-flow.
         */
-      /* protected */ def filterIfRunnable(question: DistinctQuestion[T]): Any = js.native
+      /* protected */ def filterIfRunnable(question: DistinctQuestion[T]): Observable_[DistinctQuestion[T]] = js.native
       
       /**
         * Finishes the process.
@@ -419,7 +413,7 @@ object inquirer {
       /**
         * Gets or sets the event-flow of the process.
         */
-      var process: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<QuestionAnswer<T>> */ Any = js.native
+      var process: Observable_[QuestionAnswer[T]] = js.native
       
       /**
         * Processes a question.
@@ -430,7 +424,7 @@ object inquirer {
         * @returns
         * The answer to the question.
         */
-      /* protected */ def processQuestion(question: DistinctQuestion[T]): Any = js.native
+      /* protected */ def processQuestion(question: DistinctQuestion[T]): Observable_[FetchedAnswer] = js.native
       
       /**
         * Gets or sets the prompts of the ui.
@@ -457,7 +451,7 @@ object inquirer {
         * @returns
         * The processed question.
         */
-      /* protected */ def setDefaultType(question: DistinctQuestion[T]): Any = js.native
+      /* protected */ def setDefaultType(question: DistinctQuestion[T]): Observable_[DistinctQuestion[T]] = js.native
     }
   }
 }

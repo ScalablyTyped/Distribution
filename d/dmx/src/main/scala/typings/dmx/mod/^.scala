@@ -1,6 +1,5 @@
 package typings.dmx.mod
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Create a new DMX instance.
   */
-open class ^[TDevices /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ key in string ]:? dmx.dmx.Device}
-  */ typings.dmx.dmxStrings.^ & TopLevel[Any] */] ()
+open class ^[TDevices /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in string ]:? dmx.dmx.Device} */ js.Any */] ()
   extends StObject
      with DMX[TDevices] {
   def this(options: Options[TDevices]) = this()

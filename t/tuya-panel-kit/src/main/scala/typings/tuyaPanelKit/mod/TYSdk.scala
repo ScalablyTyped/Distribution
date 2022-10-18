@@ -1,12 +1,12 @@
 package typings.tuyaPanelKit.mod
 
 import typings.std.Record
+import typings.tuyaPanelKit.`@reactNavigationCoreTypesMod`.NavigationContainerRef
 import typings.tuyaPanelKit.anon.AddListener
 import typings.tuyaPanelKit.anon.Back
 import typings.tuyaPanelKit.anon.CheckDpExist
 import typings.tuyaPanelKit.anon.Dictkey
 import typings.tuyaPanelKit.anon.Emit
-import typings.tuyaPanelKit.typesMod.NavigationContainerRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

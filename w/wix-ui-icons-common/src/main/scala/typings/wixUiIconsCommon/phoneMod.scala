@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsPhoneMod.PhoneProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsPhoneMod.PhoneProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object phoneMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Phone", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Phone", JSImport.Default)
   @js.native
   val default: FC[PhoneProps] = js.native
   

@@ -1,6 +1,6 @@
 package typings.sentryTypes.anon
 
-import typings.sentryTypes.exceptionMod.Exception
+import typings.sentryTypes.typesExceptionMod.Exception
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

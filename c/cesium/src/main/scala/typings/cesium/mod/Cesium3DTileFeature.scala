@@ -48,15 +48,6 @@ open class Cesium3DTileFeature () extends StObject {
   def getPropertyIds(results: js.Array[String]): js.Array[String] = js.native
   
   /**
-    * Returns an array of property names for the feature. This includes properties from this feature's
-    * class and inherited classes when using a batch table hierarchy.
-    * @param [results] - An array into which to store the results.
-    * @returns The names of the feature's properties.
-    */
-  def getPropertyNames(): js.Array[String] = js.native
-  def getPropertyNames(results: js.Array[String]): js.Array[String] = js.native
-  
-  /**
     * Returns whether the feature contains this property. This includes properties from this feature's
     * class and inherited classes when using a batch table hierarchy.
     * @param name - The case-sensitive name of the property.

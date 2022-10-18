@@ -1,8 +1,8 @@
 package typings.testingLibraryDom
 
-import typings.testingLibraryDom.eventsMod.EventType
-import typings.testingLibraryDom.suggestionsMod.Method
-import typings.testingLibraryDom.suggestionsMod.Variant
+import typings.testingLibraryDom.typesEventsMod.EventType
+import typings.testingLibraryDom.typesSuggestionsMod.Method
+import typings.testingLibraryDom.typesSuggestionsMod.Variant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +14,6 @@ object testingLibraryDomStrings {
     extends StObject
        with Method
   inline def AltText: AltText = "AltText".asInstanceOf[AltText]
-  
-  @js.native
-  sealed trait BoundFunctions extends StObject
-  inline def BoundFunctions: BoundFunctions = "BoundFunctions".asInstanceOf[BoundFunctions]
   
   @js.native
   sealed trait DisplayValue

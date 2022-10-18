@@ -44,7 +44,7 @@ trait Dialog extends StObject {
     *
     * @remarks
     *
-    * **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.9), PowerPoint, Word
+    * **Applications**: Excel, Outlook (Minimum requirement set: Mailbox 1.9), PowerPoint, Word
     *
     * **Requirement sets**:
     *

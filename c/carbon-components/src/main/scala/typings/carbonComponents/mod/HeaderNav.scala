@@ -1,6 +1,6 @@
 package typings.carbonComponents.mod
 
-import typings.carbonComponents.headerNavMod.HeaderNavOptions
+import typings.carbonComponents.componentsUiShellHeaderNavMod.HeaderNavOptions
 import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "HeaderNav")
 @js.native
 open class HeaderNav protected ()
-  extends typings.carbonComponents.componentsMod.HeaderNav {
+  extends typings.carbonComponents.globalsJsComponentsMod.HeaderNav {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: HeaderNavOptions) = this()
 }

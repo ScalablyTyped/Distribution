@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AttrDevice extends StObject {
   
-  var attr: Transposeb
+  var attr: Tidx
   
   var device: Unit
   
-  var input: js.Array[String]
+  var input: Unit
   
   var name: String
   
@@ -18,20 +18,18 @@ trait AttrDevice extends StObject {
 }
 object AttrDevice {
   
-  inline def apply(attr: Transposeb, device: Unit, input: js.Array[String], name: String, op: String): AttrDevice = {
+  inline def apply(attr: Tidx, device: Unit, input: Unit, name: String, op: String): AttrDevice = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttrDevice]
   }
   
   extension [Self <: AttrDevice](x: Self) {
     
-    inline def setAttr(value: Transposeb): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: Tidx): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     inline def setDevice(value: Unit): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    inline def setInput(value: js.Array[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
-    
-    inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value*))
+    inline def setInput(value: Unit): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

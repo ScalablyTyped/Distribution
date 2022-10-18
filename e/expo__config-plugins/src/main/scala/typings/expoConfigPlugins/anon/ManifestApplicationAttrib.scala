@@ -1,6 +1,7 @@
 package typings.expoConfigPlugins.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.expoConfigPlugins.buildAndroidManifestMod.StringBoolean
 import typings.expoConfigPlugins.expoConfigPluginsStrings.DotMainApplication
 import typings.expoConfigPlugins.expoConfigPluginsStrings.adjustPan
 import typings.expoConfigPlugins.expoConfigPluginsStrings.adjustResize
@@ -11,7 +12,6 @@ import typings.expoConfigPlugins.expoConfigPluginsStrings.stateHidden
 import typings.expoConfigPlugins.expoConfigPluginsStrings.stateUnchanged
 import typings.expoConfigPlugins.expoConfigPluginsStrings.stateUnspecified
 import typings.expoConfigPlugins.expoConfigPluginsStrings.stateVisible
-import typings.expoConfigPlugins.manifestMod.StringBoolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

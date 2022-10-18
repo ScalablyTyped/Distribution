@@ -15,7 +15,7 @@ object mod {
   
   object Separator {
     
-    inline def ApostropheApostrophe: String = String.asInstanceOf[String]
+    inline def ApostropheApostrophe: /* '' */ String = "''".asInstanceOf[/* '' */ String]
     
     inline def Tilde: typings.urlSlugify.urlSlugifyStrings.Tilde = "~".asInstanceOf[typings.urlSlugify.urlSlugifyStrings.Tilde]
     
@@ -27,9 +27,9 @@ object mod {
     - typings.urlSlugify.urlSlugifyStrings.`-_`
     - typings.urlSlugify.urlSlugifyStrings._underscore
     - typings.urlSlugify.urlSlugifyStrings.Tilde
-    - java.lang.String
+    - / * '' * / java.lang.String
   */
-  type Separator = _Separator | String
+  type Separator = _Separator | (/* '' */ String)
   
   @js.native
   trait URLSlugify extends StObject {

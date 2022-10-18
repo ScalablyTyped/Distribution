@@ -1,7 +1,7 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.objectMergeMod.MergeDeep
-import typings.tsToolbelt.objectMergeMod.MergeFlat
+import typings.tsToolbelt.outObjectMergeMod.MergeDeep
+import typings.tsToolbelt.outObjectMergeMod.MergeFlat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +23,6 @@ object DeepMergeDeep {
     
     inline def setDeep(value: MergeDeep[O, O1, ignore, fill]): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     
-    inline def setDeepVarargs(value: Any*): Self = StObject.set(x, "deep", js.Array(value*))
-    
     inline def setFlat(value: MergeFlat[O, O1, ignore, fill]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
-    
-    inline def setFlatVarargs(value: Any*): Self = StObject.set(x, "flat", js.Array(value*))
   }
 }

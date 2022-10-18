@@ -1,7 +1,7 @@
 package typings.reactNativePaper.anon
 
 import typings.react.mod.ReactNode
-import typings.reactNative.anon.Start
+import typings.reactNative.anon.End
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -30,6 +30,9 @@ import typings.reactNative.mod.TextInputSelectionChangeEventData
 import typings.reactNative.mod.TextInputSubmitEditingEventData
 import typings.reactNative.mod.TextInputTextInputEventData
 import typings.reactNative.mod.TextStyle
+import typings.reactNativePaper.libTypescriptComponentsTextInputTextInputMod.TextInputHandles
+import typings.reactNativePaper.libTypescriptComponentsTextInputTypesMod.RenderProps
+import typings.reactNativePaper.libTypescriptComponentsTextInputTypesMod.TextInputLabelProp
 import typings.reactNativePaper.reactNativePaperStrings.URL
 import typings.reactNativePaper.reactNativePaperStrings.`birthdate-day`
 import typings.reactNativePaper.reactNativePaperStrings.`birthdate-full`
@@ -122,9 +125,6 @@ import typings.reactNativePaper.reactNativePaperStrings.username
 import typings.reactNativePaper.reactNativePaperStrings.words
 import typings.reactNativePaper.reactNativePaperStrings.yes
 import typings.reactNativePaper.reactNativePaperStrings.yesExcludeDescendants
-import typings.reactNativePaper.textInputMod.TextInputHandles
-import typings.reactNativePaper.typesMod.RenderProps
-import typings.reactNativePaper.typesMod.TextInputLabelProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -952,7 +952,7 @@ trait TextInputPropsRefAttribut extends StObject {
     * The start and end of the text input's selection. Set start and end to
     * the same value to position the cursor.
     */
-  var selection: js.UndefOr[Start] = js.undefined
+  var selection: js.UndefOr[End] = js.undefined
   
   /**
     * The highlight (and cursor on ios) color of the text input
@@ -1074,7 +1074,7 @@ trait TextInputPropsRefAttribut extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
@@ -1141,7 +1141,7 @@ object TextInputPropsRefAttribut {
     onFocus: (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]]) & (js.UndefOr[js.Function1[/* args */ Any, Unit]]),
     ref: js.UndefOr[typings.react.mod.Ref[TextInput]] & js.UndefOr[typings.react.mod.Ref[TextInputHandles]],
     selectionColor: js.UndefOr[ColorValue] & js.UndefOr[String],
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   ): TextInputPropsRefAttribut = {
     val __obj = js.Dynamic.literal(onBlur = onBlur.asInstanceOf[js.Any], onChangeText = onChangeText.asInstanceOf[js.Any], onFocus = onFocus.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], selectionColor = selectionColor.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputPropsRefAttribut]
@@ -1645,7 +1645,7 @@ object TextInputPropsRefAttribut {
     
     inline def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
     
-    inline def setSelection(value: Start): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: End): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     inline def setSelectionColor(value: js.UndefOr[ColorValue] & js.UndefOr[String]): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     
@@ -1695,7 +1695,7 @@ object TextInputPropsRefAttribut {
     
     inline def setTextContentTypeUndefined: Self = StObject.set(x, "textContentType", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     

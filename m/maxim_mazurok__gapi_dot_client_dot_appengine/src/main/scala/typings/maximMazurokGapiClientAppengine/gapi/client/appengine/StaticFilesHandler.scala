@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,7 @@ trait StaticFilesHandler extends StObject {
   
   /** HTTP headers to use for all responses from these URLs. */
   var httpHeaders: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.StaticFilesHandler & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** MIME type used to serve all files served by this handler.Defaults to file-specific MIME types, which are derived from each file's filename extension. */
@@ -53,9 +50,7 @@ object StaticFilesHandler {
     inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
     
     inline def setHttpHeaders(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.StaticFilesHandler & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
     
     inline def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)

@@ -16,7 +16,7 @@ import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.BackIconColor
-import typings.tuyaPanelKit.anon.`21`
+import typings.tuyaPanelKit.anon.`11`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.Fade
 import typings.tuyaPanelKit.tuyaPanelKitStrings.PullUp
 import typings.tuyaPanelKit.tuyaPanelKitStrings.ScaleFadeIn
@@ -283,7 +283,7 @@ trait PopupProps extends StObject {
     * @description Callback of back
     * @defaultValue () => {}
     */
-  var onBack: js.UndefOr[js.Function1[/* args */ `21`, Unit]] = js.undefined
+  var onBack: js.UndefOr[js.Function1[/* args */ `11`, Unit]] = js.undefined
   
   /**
     * @language zh-CN
@@ -307,7 +307,7 @@ trait PopupProps extends StObject {
     * @description Callback of clicking the confirm button
     * @defaultValue () => {}
     */
-  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `21`, Unit]] = js.undefined
+  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `11`, Unit]] = js.undefined
   
   var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -325,7 +325,7 @@ trait PopupProps extends StObject {
     * @description Mask layer Click
     * @defaultValue () => {}
     */
-  var onMaskPress: js.UndefOr[js.Function1[/* args */ `21`, Unit]] = js.undefined
+  var onMaskPress: js.UndefOr[js.Function1[/* args */ `11`, Unit]] = js.undefined
   
   var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
@@ -762,7 +762,7 @@ object PopupProps {
     
     inline def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
     
-    inline def setOnBack(value: /* args */ `21` => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
+    inline def setOnBack(value: /* args */ `11` => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
     
     inline def setOnBackUndefined: Self = StObject.set(x, "onBack", js.undefined)
     
@@ -770,7 +770,7 @@ object PopupProps {
     
     inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
     
-    inline def setOnConfirm(value: (/* data */ Any, /* args */ `21`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
+    inline def setOnConfirm(value: (/* data */ Any, /* args */ `11`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
     
     inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     
@@ -786,7 +786,7 @@ object PopupProps {
     
     inline def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
     
-    inline def setOnMaskPress(value: /* args */ `21` => Unit): Self = StObject.set(x, "onMaskPress", js.Any.fromFunction1(value))
+    inline def setOnMaskPress(value: /* args */ `11` => Unit): Self = StObject.set(x, "onMaskPress", js.Any.fromFunction1(value))
     
     inline def setOnMaskPressUndefined: Self = StObject.set(x, "onMaskPress", js.undefined)
     

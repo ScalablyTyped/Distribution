@@ -2,19 +2,19 @@ package typings.reactNativeSvg.anon
 
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.ColumnMajorTransformMatrix
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.FillRule
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.Linecap
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.Linejoin
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberArray
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.TransformObject
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.TransformProps
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.VectorEffect
 import typings.reactNativeSvg.reactNativeSvgStrings.`box-none`
 import typings.reactNativeSvg.reactNativeSvgStrings.`box-only`
 import typings.reactNativeSvg.reactNativeSvgStrings.auto
 import typings.reactNativeSvg.reactNativeSvgStrings.none
-import typings.reactNativeSvg.typesMod.ColumnMajorTransformMatrix
-import typings.reactNativeSvg.typesMod.FillRule
-import typings.reactNativeSvg.typesMod.Linecap
-import typings.reactNativeSvg.typesMod.Linejoin
-import typings.reactNativeSvg.typesMod.NumberArray
-import typings.reactNativeSvg.typesMod.NumberProp
-import typings.reactNativeSvg.typesMod.TransformObject
-import typings.reactNativeSvg.typesMod.TransformProps
-import typings.reactNativeSvg.typesMod.VectorEffect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

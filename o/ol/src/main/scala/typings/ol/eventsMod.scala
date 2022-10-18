@@ -1,7 +1,7 @@
 package typings.ol
 
-import typings.ol.eventMod.default
-import typings.ol.targetMod.EventTargetLike
+import typings.ol.eventsEventMod.default
+import typings.ol.eventsTargetMod.EventTargetLike
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

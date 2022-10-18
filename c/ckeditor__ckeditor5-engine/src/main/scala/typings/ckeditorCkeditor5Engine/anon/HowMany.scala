@@ -10,13 +10,13 @@ trait HowMany extends StObject {
   
   var howMany: Double
   
-  var sourcePosition: ReturnType[js.Function0[Root]]
+  var sourcePosition: ReturnType[js.Function0[Path]]
   
   var `type`: detach
 }
 object HowMany {
   
-  inline def apply(howMany: Double, sourcePosition: ReturnType[js.Function0[Root]]): HowMany = {
+  inline def apply(howMany: Double, sourcePosition: ReturnType[js.Function0[Path]]): HowMany = {
     val __obj = js.Dynamic.literal(howMany = howMany.asInstanceOf[js.Any], sourcePosition = sourcePosition.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("detach")
     __obj.asInstanceOf[HowMany]
@@ -26,7 +26,7 @@ object HowMany {
     
     inline def setHowMany(value: Double): Self = StObject.set(x, "howMany", value.asInstanceOf[js.Any])
     
-    inline def setSourcePosition(value: ReturnType[js.Function0[Root]]): Self = StObject.set(x, "sourcePosition", value.asInstanceOf[js.Any])
+    inline def setSourcePosition(value: ReturnType[js.Function0[Path]]): Self = StObject.set(x, "sourcePosition", value.asInstanceOf[js.Any])
     
     inline def setType(value: detach): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

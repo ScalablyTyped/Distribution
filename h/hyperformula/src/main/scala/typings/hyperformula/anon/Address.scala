@@ -1,8 +1,8 @@
 package typings.hyperformula.anon
 
-import typings.hyperformula.cellContentParserMod.RawCellContent
-import typings.hyperformula.cellMod.SimpleCellAddress_
-import typings.hyperformula.clipboardOperationsMod.ClipboardCell
+import typings.hyperformula.typingsCellContentParserMod.RawCellContent
+import typings.hyperformula.typingsCellMod.SimpleCellAddress_
+import typings.hyperformula.typingsClipboardOperationsMod.ClipboardCell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

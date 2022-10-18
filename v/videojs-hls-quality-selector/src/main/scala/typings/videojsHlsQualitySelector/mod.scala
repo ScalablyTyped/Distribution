@@ -1,6 +1,6 @@
 package typings.videojsHlsQualitySelector
 
-import typings.videojsHlsQualitySelector.concreteMenuItemMod.default
+import typings.videojsHlsQualitySelector.srcConcreteMenuItemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -155,6 +155,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object videoJsAugmentingMod {
     
     trait VideoJsPlayer extends StObject {

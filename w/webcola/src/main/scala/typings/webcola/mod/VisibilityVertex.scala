@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "VisibilityVertex")
 @js.native
 open class VisibilityVertex protected ()
-  extends typings.webcola.geomMod.VisibilityVertex {
-  def this(id: Double, polyid: Double, polyvertid: Double, p: typings.webcola.geomMod.TVGPoint) = this()
+  extends typings.webcola.distSrcGeomMod.VisibilityVertex {
+  def this(id: Double, polyid: Double, polyvertid: Double, p: typings.webcola.distSrcGeomMod.TVGPoint) = this()
 }

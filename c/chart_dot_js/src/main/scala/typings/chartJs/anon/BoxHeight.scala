@@ -1,12 +1,12 @@
 package typings.chartJs.anon
 
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.mod.ChartData
 import typings.chartJs.mod.ChartType
 import typings.chartJs.mod.LegendItem
 import typings.chartJs.mod.ScriptableAndScriptableOptions
 import typings.chartJs.mod.ScriptableChartContext
 import typings.chartJs.mod.TextAlign
+import typings.chartJs.typesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +35,7 @@ trait BoxHeight extends StObject {
     * Color of label
     * @see Defaults.color
     */
-  var color: typings.chartJs.colorMod.Color
+  var color: typings.chartJs.typesColorMod.Color
   
   /**
     * Filters legend items out of the legend. Receives 2 parameters, a Legend Item and the chart data
@@ -90,7 +90,7 @@ object BoxHeight {
     boxHeight: Double,
     boxPadding: Double,
     boxWidth: Double,
-    color: typings.chartJs.colorMod.Color,
+    color: typings.chartJs.typesColorMod.Color,
     filter: (LegendItem, ChartData[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]) => Boolean,
     font: ScriptableAndScriptableOptions[PartialFontSpec, ScriptableChartContext],
     generateLabels: typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any] => js.Array[LegendItem],
@@ -111,7 +111,7 @@ object BoxHeight {
     
     inline def setBoxWidth(value: Double): Self = StObject.set(x, "boxWidth", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: typings.chartJs.colorMod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.chartJs.typesColorMod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setFilter(
       value: (LegendItem, ChartData[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]) => Boolean

@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * information.
   */
 open class RichRepliesPreprocessor ()
-  extends typings.matrixBotSdk.richRepliesPreprocessorMod.RichRepliesPreprocessor {
+  extends typings.matrixBotSdk.libPreprocessorsRichRepliesPreprocessorMod.RichRepliesPreprocessor {
   def this(fetchRealEventContents: Boolean) = this()
 }

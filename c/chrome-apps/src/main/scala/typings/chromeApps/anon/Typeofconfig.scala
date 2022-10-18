@@ -5,7 +5,6 @@ import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.networking.config.NetworkInfo
 import typings.chromeApps.chrome.networking.config.NetworkInfoFilterHexSSID
 import typings.chromeApps.chrome.networking.config.NetworkInfoFilterSSID
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,10 +37,7 @@ trait Typeofconfig extends StObject {
     result: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof AuthenticationResult */ js.Any, 
       /* keyof typeof AuthenticationResult */ String, 
-      Exclude[
-        /* keyof typeof AuthenticationResult */ String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof AuthenticationResult[keyof typeof AuthenticationResult] */ js.Any
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof AuthenticationResult extends keyof typeof AuthenticationResult ? std.Exclude<keyof typeof AuthenticationResult, typeof AuthenticationResult[keyof typeof AuthenticationResult]> : never */ js.Any
     ]
   ): Unit = js.native
   def finishAuthentication(
@@ -49,10 +45,7 @@ trait Typeofconfig extends StObject {
     result: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof AuthenticationResult */ js.Any, 
       /* keyof typeof AuthenticationResult */ String, 
-      Exclude[
-        /* keyof typeof AuthenticationResult */ String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof AuthenticationResult[keyof typeof AuthenticationResult] */ js.Any
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof AuthenticationResult extends keyof typeof AuthenticationResult ? std.Exclude<keyof typeof AuthenticationResult, typeof AuthenticationResult[keyof typeof AuthenticationResult]> : never */ js.Any
     ],
     callback: js.Function0[Unit]
   ): Unit = js.native

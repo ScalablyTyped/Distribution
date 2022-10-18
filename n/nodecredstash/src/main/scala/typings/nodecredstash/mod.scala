@@ -1,11 +1,11 @@
 package typings.nodecredstash
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdk.documentClientMod.DocumentClient.DeleteItemOutput
-import typings.awsSdk.documentClientMod.DocumentClient.PutItemOutput
-import typings.awsSdk.dynamodbMod.AttributeMap
-import typings.awsSdk.kmsMod.ClientConfiguration
-import typings.awsSdk.kmsMod.DecryptResponse
+import typings.awsSdk.clientsDynamodbMod.AttributeMap
+import typings.awsSdk.clientsKmsMod.ClientConfiguration
+import typings.awsSdk.clientsKmsMod.DecryptResponse
+import typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.DeleteItemOutput
+import typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.PutItemOutput
 import typings.nodecredstash.anon.Context
 import typings.nodecredstash.anon.Key
 import typings.nodecredstash.anon.Name
@@ -56,7 +56,7 @@ object mod {
     
     var awsOpts: js.UndefOr[ClientConfiguration] = js.undefined
     
-    var dynamoOpts: js.UndefOr[typings.awsSdk.dynamodbMod.ClientConfiguration] = js.undefined
+    var dynamoOpts: js.UndefOr[typings.awsSdk.clientsDynamodbMod.ClientConfiguration] = js.undefined
     
     var kmsKey: js.UndefOr[String] = js.undefined
     
@@ -77,7 +77,7 @@ object mod {
       
       inline def setAwsOptsUndefined: Self = StObject.set(x, "awsOpts", js.undefined)
       
-      inline def setDynamoOpts(value: typings.awsSdk.dynamodbMod.ClientConfiguration): Self = StObject.set(x, "dynamoOpts", value.asInstanceOf[js.Any])
+      inline def setDynamoOpts(value: typings.awsSdk.clientsDynamodbMod.ClientConfiguration): Self = StObject.set(x, "dynamoOpts", value.asInstanceOf[js.Any])
       
       inline def setDynamoOptsUndefined: Self = StObject.set(x, "dynamoOpts", js.undefined)
       

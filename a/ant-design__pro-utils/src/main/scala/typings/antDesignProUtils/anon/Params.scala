@@ -1,6 +1,6 @@
 package typings.antDesignProUtils.anon
 
-import typings.antDesignProUtils.useFetchDataMod.ProRequestData
+import typings.antDesignProUtils.esHooksUseFetchDataMod.ProRequestData
 import typings.react.mod.Key
 import typings.std.Record
 import org.scalablytyped.runtime.StObject

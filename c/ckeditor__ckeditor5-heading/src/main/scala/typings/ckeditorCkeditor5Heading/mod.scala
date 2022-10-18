@@ -3,7 +3,7 @@ package typings.ckeditorCkeditor5Heading
 import typings.ckeditorCkeditor5Heading.anon.TypeofHeadingEditing
 import typings.ckeditorCkeditor5Heading.anon.TypeofHeadingUI
 import typings.ckeditorCkeditor5Heading.anon.TypeofParagraph
-import typings.ckeditorCkeditor5Heading.headingMod.default
+import typings.ckeditorCkeditor5Heading.srcHeadingMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,12 +28,12 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-heading", "HeadingButtonsUI")
   @js.native
   open class HeadingButtonsUI ()
-    extends typings.ckeditorCkeditor5Heading.headingbuttonsuiMod.default
+    extends typings.ckeditorCkeditor5Heading.srcHeadingbuttonsuiMod.default
   
   @JSImport("@ckeditor/ckeditor5-heading", "HeadingEditing")
   @js.native
   open class HeadingEditing ()
-    extends typings.ckeditorCkeditor5Heading.headingeditingMod.default
+    extends typings.ckeditorCkeditor5Heading.srcHeadingeditingMod.default
   /* static members */
   object HeadingEditing {
     
@@ -49,7 +49,7 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-heading", "HeadingUI")
   @js.native
   open class HeadingUI ()
-    extends typings.ckeditorCkeditor5Heading.headinguiMod.default
+    extends typings.ckeditorCkeditor5Heading.srcHeadinguiMod.default
   /* static members */
   object HeadingUI {
     
@@ -61,7 +61,7 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-heading", "Title")
   @js.native
   open class Title ()
-    extends typings.ckeditorCkeditor5Heading.titleMod.default
+    extends typings.ckeditorCkeditor5Heading.srcTitleMod.default
   /* static members */
   object Title {
     

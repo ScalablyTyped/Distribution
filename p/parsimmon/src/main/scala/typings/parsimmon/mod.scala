@@ -1,7 +1,6 @@
 package typings.parsimmon
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.parsimmon.parsimmonBooleans.`false`
 import typings.parsimmon.parsimmonBooleans.`true`
 import typings.parsimmon.parsimmonInts.`-1`
@@ -258,13 +257,9 @@ object mod {
     * it will be parsed but discarded from the returned value.
     */
   inline def bitSeqObj[Key /* <: String */](namedAlignments: js.Array[(js.Tuple2[Key, Double]) | Double]): Parser[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: number}
-    */ typings.parsimmon.parsimmonStrings.bitSeqObj & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: number} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bitSeqObj")(namedAlignments.asInstanceOf[js.Any]).asInstanceOf[Parser[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: number}
-    */ typings.parsimmon.parsimmonStrings.bitSeqObj & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: number} */ js.Any
   ]]
   
   /**
@@ -679,13 +674,9 @@ object mod {
       ]
     ]) | Parser[Any])*
   ): Parser[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: T[K]}
-    */ typings.parsimmon.parsimmonStrings.seqObj & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: T[K]} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("seqObj")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Parser[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: T[K]}
-    */ typings.parsimmon.parsimmonStrings.seqObj & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in Key ]: T[K]} */ js.Any
   ]]
   
   /**
@@ -961,13 +952,33 @@ object mod {
     }
   }
   
-  type TypedLanguage[TLanguageSpec] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof TLanguageSpec ]: parsimmon.parsimmon.Parser<TLanguageSpec[P]>}
-    */ typings.parsimmon.parsimmonStrings.TypedLanguage & TopLevel[TLanguageSpec]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof TLanguageSpec ]: parsimmon.parsimmon.Parser<TLanguageSpec[P]>}
+    }}}
+    */
+  @js.native
+  trait TypedLanguage[TLanguageSpec] extends StObject
   
-  type TypedRule[TLanguageSpec] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof TLanguageSpec ]: (r : parsimmon.parsimmon.TypedLanguage<TLanguageSpec>): parsimmon.parsimmon.Parser<TLanguageSpec[P]>}
-    */ typings.parsimmon.parsimmonStrings.TypedRule & TopLevel[TLanguageSpec]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof TLanguageSpec ]: (r : parsimmon.parsimmon.TypedLanguage<TLanguageSpec>): parsimmon.parsimmon.Parser<TLanguageSpec[P]>}
+    }}}
+    */
+  @js.native
+  trait TypedRule[TLanguageSpec] extends StObject
   
-  type UnParser[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends parsimmon.parsimmon.Parser<infer U> ? U : never
+    }}}
+    */
+  @js.native
+  trait UnParser[T] extends StObject
 }

@@ -1,8 +1,8 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.AutoHeight
-import typings.antDesignReactNative.textareaItemMod.TextareaItemProps
-import typings.antDesignReactNative.textareaItemMod.default
+import typings.antDesignReactNative.libTextareaItemMod.TextareaItemProps
+import typings.antDesignReactNative.libTextareaItemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

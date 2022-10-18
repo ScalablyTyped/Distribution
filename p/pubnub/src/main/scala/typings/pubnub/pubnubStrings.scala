@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object pubnubStrings {
   
   @js.native
-  sealed trait Nullable extends StObject
-  inline def Nullable: Nullable = "Nullable".asInstanceOf[Nullable]
-  
-  @js.native
   sealed trait channel extends StObject
   inline def channel: channel = "channel".asInstanceOf[channel]
   

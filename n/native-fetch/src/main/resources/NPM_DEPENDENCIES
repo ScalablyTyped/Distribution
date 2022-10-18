@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "native-fetch" : "4.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "native-fetch" : "4.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

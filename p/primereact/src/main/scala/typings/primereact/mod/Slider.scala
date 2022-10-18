@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.sliderMod.SliderProps
+import typings.primereact.sliderSliderMod.SliderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Slider")
 @js.native
 open class Slider protected ()
-  extends typings.primereact.sliderMod.Slider {
+  extends typings.primereact.sliderSliderMod.Slider {
   def this(props: SliderProps) = this()
   /**
     * @deprecated

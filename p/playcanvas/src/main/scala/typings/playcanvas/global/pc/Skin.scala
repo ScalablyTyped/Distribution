@@ -1,5 +1,6 @@
 package typings.playcanvas.global.pc
 
+import typings.playcanvas.mod.Mat4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ open class Skin protected ()
     */
   def this(
     graphicsDevice: typings.playcanvas.mod.GraphicsDevice,
-    ibp: js.Array[typings.playcanvas.mod.Mat4],
+    ibp: js.Array[Mat4],
     boneNames: js.Array[String]
   ) = this()
 }

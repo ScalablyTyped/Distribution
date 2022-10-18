@@ -1,6 +1,6 @@
 package typings.three.global.THREE
 
-import typings.three.meshDepthMaterialMod.MeshDepthMaterialParameters
+import typings.three.srcMaterialsMeshDepthMaterialMod.MeshDepthMaterialParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

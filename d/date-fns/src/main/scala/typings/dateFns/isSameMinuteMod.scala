@@ -1,21 +1,20 @@
 package typings.dateFns
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isSameMinuteMod {
   
-  object default extends Shortcut {
+  object default {
     
-    @JSImport("date-fns/esm/fp/isSameMinute", JSImport.Default)
+    inline def apply(dateLeft: js.Date, dateRight: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(dateLeft: js.Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(dateLeft: Double, dateRight: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @JSImport("date-fns/isSameMinute", JSImport.Default)
     @js.native
-    val ^ : CurriedFn2[js.Date | Double, js.Date | Double, Boolean] = js.native
-    
-    type _To = CurriedFn2[js.Date | Double, js.Date | Double, Boolean]
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn2[js.Date | Double, js.Date | Double, Boolean] = ^
+    val ^ : js.Any = js.native
   }
 }

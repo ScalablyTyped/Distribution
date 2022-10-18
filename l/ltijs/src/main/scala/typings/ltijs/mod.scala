@@ -1,8 +1,8 @@
 package typings.ltijs
 
 import typings.ltijs.anon.Context
-import typings.ltijs.databaseMod.DatabaseOptions
-import typings.ltijs.providerMod.ProviderOptions
+import typings.ltijs.libProviderProviderMod.ProviderOptions
+import typings.ltijs.libUtilsDatabaseMod.DatabaseOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,11 +13,12 @@ object mod {
   @JSImport("ltijs", "Provider")
   @js.native
   open class Provider protected ()
-    extends typings.ltijs.providerMod.Provider {
+    extends typings.ltijs.libProviderProviderMod.Provider {
     def this(encryptionKey: String, database: DatabaseOptions) = this()
     def this(encryptionKey: String, database: DatabaseOptions, options: ProviderOptions) = this()
   }
   
+  /* augmented module */
   object expressAugmentingMod {
     
     trait Response[ResBody, Locals /* <: Record[String, Any] */] extends StObject {

@@ -1,10 +1,10 @@
 package typings.level
 
-import typings.abstractLevel.interfacesMod.NodeCallback
 import typings.abstractLevel.mod.AbstractIterator
 import typings.abstractLevel.mod.AbstractKeyIterator
 import typings.abstractLevel.mod.AbstractLevel
 import typings.abstractLevel.mod.AbstractValueIterator
+import typings.abstractLevel.typesInterfacesMod.NodeCallback
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -106,7 +106,7 @@ object mod {
     extends typings.classicLevel.mod.ChainedBatch[TDatabase, K, V]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.abstractLevel.abstractLevelMod.AbstractDatabaseOptions because var conflicts: createIfMissing, errorIfExists, keyEncoding, valueEncoding. Inlined 
+  - typings.abstractLevel.typesAbstractLevelMod.AbstractDatabaseOptions because var conflicts: createIfMissing, errorIfExists, keyEncoding, valueEncoding. Inlined 
   - typings.browserLevel.mod.DatabaseOptions because var conflicts: createIfMissing, errorIfExists, keyEncoding, valueEncoding. Inlined prefix, version */ trait DatabaseOptions[K, V]
     extends StObject
        with typings.classicLevel.mod.DatabaseOptions[K, V] {

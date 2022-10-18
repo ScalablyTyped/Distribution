@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Code extends StObject {
   
-  var code: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 53 */ Any
+  var code: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 53, starting with typings.dashjs.dashjsInts.`10`, typings.dashjs.dashjsInts.`11`, typings.dashjs.dashjsInts.`12` */ Any
   
   var data: js.Object
   
@@ -15,7 +15,7 @@ trait Code extends StObject {
 object Code {
   
   inline def apply(
-    code: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 53 */ Any,
+    code: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 53, starting with typings.dashjs.dashjsInts.`10`, typings.dashjs.dashjsInts.`11`, typings.dashjs.dashjsInts.`12` */ Any,
     data: js.Object,
     message: String
   ): Code = {
@@ -25,7 +25,9 @@ object Code {
   
   extension [Self <: Code](x: Self) {
     
-    inline def setCode(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 53 */ Any): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 53, starting with typings.dashjs.dashjsInts.`10`, typings.dashjs.dashjsInts.`11`, typings.dashjs.dashjsInts.`12` */ Any
+    ): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

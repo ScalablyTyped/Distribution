@@ -2,7 +2,7 @@ package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.AntLocale
 import typings.antdMobileRn.anon.MinuteStep
-import typings.antdMobileRn.datePickerIndexNativeMod.default
+import typings.antdMobileRn.libDatePickerIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -12,7 +12,7 @@ open class MaterialPluginManager protected ()
     * Creates a new instance of the plugin manager
     * @param material material that this manager will manage the plugins for
     */
-  def this(material: typings.babylonjs.materialMod.Material) = this()
+  def this(material: typings.babylonjs.materialsMaterialMod.Material) = this()
 }
 /* static members */
 object MaterialPluginManager {

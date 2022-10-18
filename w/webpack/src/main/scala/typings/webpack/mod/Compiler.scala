@@ -145,5 +145,12 @@ open class Compiler protected () extends StObject {
   
   var watching: Watching = js.native
   
-  var webpack: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof exports */ Any = js.native
+  def webpack(options: js.Array[Configuration] & MultiCompilerOptions): MultiCompiler = js.native
+  def webpack(options: js.Array[Configuration] & MultiCompilerOptions, callback: CallbackWebpack[MultiStats]): MultiCompiler = js.native
+  @JSName("webpack")
+  var webpack_Original: js.Function2[
+    /* options */ js.Array[Configuration] & MultiCompilerOptions, 
+    /* callback */ js.UndefOr[CallbackWebpack[MultiStats]], 
+    MultiCompiler
+  ] = js.native
 }

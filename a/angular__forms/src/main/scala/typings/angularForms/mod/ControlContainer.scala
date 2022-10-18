@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/forms", "ControlContainer")
+/* note: abstract class */ @JSImport("@angular/forms", "ControlContainer")
 @js.native
-abstract class ControlContainer () extends AbstractControlDirective {
+open class ControlContainer () extends AbstractControlDirective {
   
   /**
     * @description

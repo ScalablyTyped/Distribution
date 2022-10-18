@@ -8,14 +8,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Disabled extends StObject {
   
+  /**
+    * Accessibility label for the button. This is read by the screen reader when the user taps the button.
+    */
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
+  /**
+    *  Custom color for back icon.
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * Whether the button is disabled. A disabled button is greyed out and `onPress` is not called on touch.
+    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Function to execute on press.
+    */
   var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  /**
+    * Optional icon size.
+    */
   var size: js.UndefOr[Double] = js.undefined
   
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined

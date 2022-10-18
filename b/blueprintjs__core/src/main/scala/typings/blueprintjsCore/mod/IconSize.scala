@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object IconSize extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.blueprintjsCore.iconMod.IconSize & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.blueprintjsCore.libEsmComponentsIconIconMod.IconSize & Double] = js.native
   
-  /* 20 */ val LARGE: typings.blueprintjsCore.iconMod.IconSize.LARGE & Double = js.native
+  /* 20 */ val LARGE: typings.blueprintjsCore.libEsmComponentsIconIconMod.IconSize.LARGE & Double = js.native
   
-  /* 16 */ val STANDARD: typings.blueprintjsCore.iconMod.IconSize.STANDARD & Double = js.native
+  /* 16 */ val STANDARD: typings.blueprintjsCore.libEsmComponentsIconIconMod.IconSize.STANDARD & Double = js.native
 }

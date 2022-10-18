@@ -6,20 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `506` extends StObject {
   
-  /** Page number of the results to fetch. */
-  var page: js.UndefOr[Double] = js.undefined
+  var path: OwnerRefRepo
 }
 object `506` {
   
-  inline def apply(): `506` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(path: OwnerRefRepo): `506` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`506`]
   }
   
   extension [Self <: `506`](x: Self) {
     
-    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
-    
-    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPath(value: OwnerRefRepo): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

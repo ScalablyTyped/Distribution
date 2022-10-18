@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object kefirStrings {
   
   @js.native
-  sealed trait FnCallObssObssPCombinator extends StObject
-  inline def FnCallObssObssPCombinator: FnCallObssObssPCombinator = "FnCallObssObssPCombinator".asInstanceOf[FnCallObssObssPCombinator]
-  
-  @js.native
-  sealed trait combine extends StObject
-  inline def combine: combine = "combine".asInstanceOf[combine]
-  
-  @js.native
   sealed trait end extends StObject
   inline def end: end = "end".asInstanceOf[end]
   

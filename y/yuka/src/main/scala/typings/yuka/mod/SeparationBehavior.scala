@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new separation behavior.
   */
 open class SeparationBehavior ()
-  extends typings.yuka.yukaMod.SeparationBehavior
+  extends typings.yuka.srcYukaMod.SeparationBehavior

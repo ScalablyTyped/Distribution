@@ -16,15 +16,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param internalTexture Define the internal texture associated with the texture
   */
 open class BaseTexture ()
-  extends typings.babylonjs.legacyMod.BaseTexture {
-  def this(sceneOrEngine: Nullable[typings.babylonjs.sceneMod.Scene | typings.babylonjs.thinEngineMod.ThinEngine]) = this()
+  extends typings.babylonjs.legacyLegacyMod.BaseTexture {
+  def this(sceneOrEngine: Nullable[
+        typings.babylonjs.sceneMod.Scene | typings.babylonjs.enginesThinEngineMod.ThinEngine
+      ]) = this()
   def this(
     sceneOrEngine: Unit,
-    internalTexture: Nullable[typings.babylonjs.internalTextureMod.InternalTexture]
+    internalTexture: Nullable[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]
   ) = this()
   def this(
-    sceneOrEngine: Nullable[typings.babylonjs.sceneMod.Scene | typings.babylonjs.thinEngineMod.ThinEngine],
-    internalTexture: Nullable[typings.babylonjs.internalTextureMod.InternalTexture]
+    sceneOrEngine: Nullable[
+        typings.babylonjs.sceneMod.Scene | typings.babylonjs.enginesThinEngineMod.ThinEngine
+      ],
+    internalTexture: Nullable[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]
   ) = this()
 }
 /* static members */
@@ -48,7 +52,10 @@ object BaseTexture {
     * @param textures Define the list of textures to wait for
     * @param callback Define the callback triggered once the entire list will be ready
     */
-  inline def WhenAllReady(textures: js.Array[typings.babylonjs.baseTextureMod.BaseTexture], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("WhenAllReady")(textures.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def WhenAllReady(
+    textures: js.Array[typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture],
+    callback: js.Function0[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("WhenAllReady")(textures.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("babylonjs", "BaseTexture._IsScene")
   @js.native

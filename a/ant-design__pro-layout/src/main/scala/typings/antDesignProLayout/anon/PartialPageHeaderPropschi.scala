@@ -1,8 +1,8 @@
 package typings.antDesignProLayout.anon
 
-import typings.antDesignProLayout.pageHeaderMod.PageHeaderProps
-import typings.antd.avatarAvatarMod.AvatarProps
-import typings.antd.breadcrumbBreadcrumbMod.BreadcrumbProps
+import typings.antDesignProLayout.esComponentsPageHeaderMod.PageHeaderProps
+import typings.antd.libAvatarAvatarMod.AvatarProps
+import typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent

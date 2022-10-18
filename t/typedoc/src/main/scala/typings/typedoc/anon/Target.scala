@@ -1,6 +1,6 @@
 package typings.typedoc.anon
 
-import typings.typedoc.schemaMod.CommentDisplayPart
+import typings.typedoc.distLibSerializationSchemaMod.CommentDisplayPart
 import typings.typedoc.typedocStrings.`inline-tag`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

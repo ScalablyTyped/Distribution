@@ -1,7 +1,7 @@
 package typings.reactNativeWindows.rntypesMod
 
 import typings.react.mod.ComponentType
-import typings.reactNativeWindows.anon.Index
+import typings.reactNativeWindows.anon.Length
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +51,7 @@ trait FlatListProps[ItemT]
     */
   @JSName("getItemLayout")
   var getItemLayout_FlatListProps: js.UndefOr[
-    js.Function2[/* data */ js.UndefOr[js.Array[ItemT] | Null], /* index */ Double, Index]
+    js.Function2[/* data */ js.UndefOr[js.Array[ItemT] | Null], /* index */ Double, Length]
   ] = js.undefined
   
   /**
@@ -94,7 +94,7 @@ object FlatListProps {
     
     inline def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value*))
     
-    inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[ItemT] | Null], /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
+    inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[ItemT] | Null], /* index */ Double) => Length): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
     
     inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
     

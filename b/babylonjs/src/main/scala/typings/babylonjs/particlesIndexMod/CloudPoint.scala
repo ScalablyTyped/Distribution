@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Particles/index", "CloudPoint")
 @js.native
 open class CloudPoint protected ()
-  extends typings.babylonjs.cloudPointMod.CloudPoint {
+  extends typings.babylonjs.particlesCloudPointMod.CloudPoint {
   /**
     * Creates a Point Cloud object.
     * Don't create particles manually, use instead the PCS internal tools like _addParticle()
@@ -19,9 +19,9 @@ open class CloudPoint protected ()
     */
   def this(
     particleIndex: Double,
-    group: typings.babylonjs.cloudPointMod.PointsGroup,
+    group: typings.babylonjs.particlesCloudPointMod.PointsGroup,
     groupId: Double,
     idxInGroup: Double,
-    pcs: typings.babylonjs.pointsCloudSystemMod.PointsCloudSystem
+    pcs: typings.babylonjs.particlesPointsCloudSystemMod.PointsCloudSystem
   ) = this()
 }

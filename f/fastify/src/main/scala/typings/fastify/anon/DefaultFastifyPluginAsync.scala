@@ -1,13 +1,13 @@
 package typings.fastify.anon
 
-import typings.fastify.instanceMod.FastifyInstance
-import typings.fastify.loggerMod.FastifyBaseLogger
-import typings.fastify.pluginMod.FastifyPluginAsync
-import typings.fastify.pluginMod.FastifyPluginOptions
-import typings.fastify.typeProviderMod.FastifyTypeProvider
-import typings.fastify.utilsMod.RawReplyDefaultExpression
-import typings.fastify.utilsMod.RawRequestDefaultExpression
-import typings.fastify.utilsMod.RawServerBase
+import typings.fastify.typesInstanceMod.FastifyInstance
+import typings.fastify.typesLoggerMod.FastifyBaseLogger
+import typings.fastify.typesPluginMod.FastifyPluginAsync
+import typings.fastify.typesPluginMod.FastifyPluginOptions
+import typings.fastify.typesTypeProviderMod.FastifyTypeProvider
+import typings.fastify.typesUtilsMod.RawReplyDefaultExpression
+import typings.fastify.typesUtilsMod.RawRequestDefaultExpression
+import typings.fastify.typesUtilsMod.RawServerBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

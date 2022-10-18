@@ -1,7 +1,7 @@
 
 # Scala.js typings for next-auth
 
-Typings are for version 3.1
+Typings are for version 4.14.0
 
 ## Library description:
 Authentication for Next.js
@@ -9,11 +9,11 @@ Authentication for Next.js
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | next-auth |
-| Keywords           | - |
-| # releases         | 188 |
-| # dependents       | 6 |
-| # downloads        | 426434 |
-| # stars            | 2 |
+| Keywords           | react, nodejs, oauth, jwt, oauth2, authentication, nextjs, csrf, oidc, nextauth |
+| # releases         | 423 |
+| # dependents       | 0.0 |
+| # downloads        | 995954.6666666666 |
+| # stars            | 11889.0 |
 
 ## Links
 - [Homepage](https://next-auth.js.org)
@@ -24,7 +24,7 @@ Authentication for Next.js
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

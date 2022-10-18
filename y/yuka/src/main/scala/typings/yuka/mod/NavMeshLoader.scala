@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "NavMeshLoader")
 @js.native
 open class NavMeshLoader ()
-  extends typings.yuka.yukaMod.NavMeshLoader
+  extends typings.yuka.srcYukaMod.NavMeshLoader

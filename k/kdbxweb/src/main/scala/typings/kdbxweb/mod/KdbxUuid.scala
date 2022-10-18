@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("kdbxweb", "KdbxUuid")
 @js.native
 open class KdbxUuid ()
-  extends typings.kdbxweb.kdbxUuidMod.KdbxUuid {
+  extends typings.kdbxweb.distTypesFormatKdbxUuidMod.KdbxUuid {
   def this(ab: String) = this()
   def this(ab: js.typedarray.ArrayBuffer) = this()
 }
@@ -18,5 +18,5 @@ object KdbxUuid {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def random(): typings.kdbxweb.kdbxUuidMod.KdbxUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.kdbxweb.kdbxUuidMod.KdbxUuid]
+  inline def random(): typings.kdbxweb.distTypesFormatKdbxUuidMod.KdbxUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.kdbxweb.distTypesFormatKdbxUuidMod.KdbxUuid]
 }

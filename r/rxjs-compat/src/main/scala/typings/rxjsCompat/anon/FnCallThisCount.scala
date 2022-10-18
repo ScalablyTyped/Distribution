@@ -1,5 +1,6 @@
 package typings.rxjsCompat.anon
 
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisCount extends StObject {
   
-  def apply[T](): Any = js.native
-  def apply[T](count: Double): Any = js.native
+  def apply[T](): Observable_[T] = js.native
+  def apply[T](count: Double): Observable_[T] = js.native
 }

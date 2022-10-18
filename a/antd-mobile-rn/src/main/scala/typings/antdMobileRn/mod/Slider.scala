@@ -1,7 +1,7 @@
 package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.DefaultValue
-import typings.antdMobileRn.sliderIndexNativeMod.default
+import typings.antdMobileRn.libSliderIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

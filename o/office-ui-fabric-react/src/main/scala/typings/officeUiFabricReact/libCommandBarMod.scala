@@ -1,9 +1,9 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.buttonTypesMod.IButtonStyles
-import typings.officeUiFabricReact.commandBarTypesMod.ICommandBarProps
-import typings.officeUiFabricReact.commandBarTypesMod.ICommandBarStyleProps
-import typings.officeUiFabricReact.commandBarTypesMod.ICommandBarStyles
+import typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.IButtonStyles
+import typings.officeUiFabricReact.libComponentsCommandBarCommandBarDottypesMod.ICommandBarProps
+import typings.officeUiFabricReact.libComponentsCommandBarCommandBarDottypesMod.ICommandBarStyleProps
+import typings.officeUiFabricReact.libComponentsCommandBarCommandBarDottypesMod.ICommandBarStyles
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,7 @@ object libCommandBarMod {
   @JSImport("office-ui-fabric-react/lib/CommandBar", "CommandBarBase")
   @js.native
   open class CommandBarBase protected ()
-    extends typings.officeUiFabricReact.commandBarMod.CommandBarBase {
+    extends typings.officeUiFabricReact.libComponentsCommandBarMod.CommandBarBase {
     def this(props: ICommandBarProps) = this()
   }
   /* static members */

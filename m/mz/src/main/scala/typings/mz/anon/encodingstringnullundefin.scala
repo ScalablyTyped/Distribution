@@ -1,9 +1,9 @@
 package typings.mz.anon
 
-import typings.node.nodeUrlMod.URL
+import typings.node.AbortSignal
+import typings.node.nodeColonurlMod.URL
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.Signals
-import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

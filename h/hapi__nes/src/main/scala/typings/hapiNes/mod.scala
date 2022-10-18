@@ -22,9 +22,10 @@ object mod extends Shortcut {
   @JSImport("@hapi/nes", "Client")
   @js.native
   open class ClientCls protected ()
-    extends typings.hapiNes.clientMod.Client {
+    extends StObject
+       with typings.hapiNes.libClientMod.Client {
     def this(url: String) = this()
-    def this(url: String, options: typings.hapiNes.clientMod.Client.ClientOptions) = this()
+    def this(url: String, options: typings.hapiNes.libClientMod.Client.ClientOptions) = this()
   }
   
   /**
@@ -38,17 +39,17 @@ object mod extends Shortcut {
     *          ClientOptions, ClientConnectOptions, ClientRequestOptions,
     *          ClientSubscribeFlags)
     */
-  type Client = typings.hapiNes.clientMod.Client
+  type Client = typings.hapiNes.libClientMod.Client
   
-  type ClientConnectOptions = typings.hapiNes.clientMod.Client.ClientConnectOptions
+  type ClientConnectOptions = typings.hapiNes.libClientMod.Client.ClientConnectOptions
   
-  type ClientOptions = typings.hapiNes.clientMod.Client.ClientOptions
+  type ClientOptions = typings.hapiNes.libClientMod.Client.ClientOptions
   
-  type ClientRequestOptions = typings.hapiNes.clientMod.Client.ClientRequestOptions
+  type ClientRequestOptions = typings.hapiNes.libClientMod.Client.ClientRequestOptions
   
-  type ClientSubscribeFlags = typings.hapiNes.clientMod.Client.ClientSubscribeFlags
+  type ClientSubscribeFlags = typings.hapiNes.libClientMod.Client.ClientSubscribeFlags
   
-  type Handler = typings.hapiNes.clientMod.Client.Handler
+  type Handler = typings.hapiNes.libClientMod.Client.Handler
   
   trait NesClassExports extends StObject {
     

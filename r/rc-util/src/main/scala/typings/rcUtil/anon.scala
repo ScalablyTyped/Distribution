@@ -1,5 +1,7 @@
 package typings.rcUtil
 
+import typings.rcUtil.libDomScrollLockerMod.default
+import typings.rcUtil.libReactRenderMod.ContainerType
 import typings.rcUtil.rcUtilStrings.`object`
 import typings.rcUtil.rcUtilStrings.`var`
 import typings.rcUtil.rcUtilStrings.a
@@ -174,8 +176,6 @@ import typings.rcUtil.rcUtilStrings.use
 import typings.rcUtil.rcUtilStrings.video
 import typings.rcUtil.rcUtilStrings.view
 import typings.rcUtil.rcUtilStrings.wbr
-import typings.rcUtil.renderMod.ContainerType
-import typings.rcUtil.scrollLockerMod.default
 import typings.react.mod.ReactNode
 import typings.std.AddEventListenerOptions
 import typings.std.Animation
@@ -3559,7 +3559,7 @@ object anon {
     
     var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var getContainer: js.UndefOr[typings.rcUtil.portalWrapperMod.GetContainer] = js.undefined
+    var getContainer: js.UndefOr[typings.rcUtil.libPortalWrapperMod.GetContainer] = js.undefined
     
     var visible: js.UndefOr[Boolean] = js.undefined
     
@@ -3582,7 +3582,7 @@ object anon {
       
       inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
-      inline def setGetContainer(value: typings.rcUtil.portalWrapperMod.GetContainer): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
+      inline def setGetContainer(value: typings.rcUtil.libPortalWrapperMod.GetContainer): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
       
       inline def setGetContainerFunction0(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       

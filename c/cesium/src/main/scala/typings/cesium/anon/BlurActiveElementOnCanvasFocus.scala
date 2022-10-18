@@ -9,7 +9,6 @@ import typings.cesium.mod.ShadowMode
 import typings.cesium.mod.SkyAtmosphere
 import typings.cesium.mod.SkyBox
 import typings.cesium.mod.TerrainProvider
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +21,9 @@ trait BlurActiveElementOnCanvasFocus extends StObject {
   
   var contextOptions: js.UndefOr[Any] = js.undefined
   
-  var creditContainer: js.UndefOr[Element | String] = js.undefined
+  var creditContainer: js.UndefOr[typings.std.Element | String] = js.undefined
   
-  var creditViewport: js.UndefOr[Element | String] = js.undefined
+  var creditViewport: js.UndefOr[typings.std.Element | String] = js.undefined
   
   var globe: js.UndefOr[typings.cesium.mod.Globe | `false`] = js.undefined
   
@@ -85,11 +84,11 @@ object BlurActiveElementOnCanvasFocus {
     
     inline def setContextOptionsUndefined: Self = StObject.set(x, "contextOptions", js.undefined)
     
-    inline def setCreditContainer(value: Element | String): Self = StObject.set(x, "creditContainer", value.asInstanceOf[js.Any])
+    inline def setCreditContainer(value: typings.std.Element | String): Self = StObject.set(x, "creditContainer", value.asInstanceOf[js.Any])
     
     inline def setCreditContainerUndefined: Self = StObject.set(x, "creditContainer", js.undefined)
     
-    inline def setCreditViewport(value: Element | String): Self = StObject.set(x, "creditViewport", value.asInstanceOf[js.Any])
+    inline def setCreditViewport(value: typings.std.Element | String): Self = StObject.set(x, "creditViewport", value.asInstanceOf[js.Any])
     
     inline def setCreditViewportUndefined: Self = StObject.set(x, "creditViewport", js.undefined)
     

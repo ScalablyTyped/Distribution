@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Name
   extends StObject
      with typings.maplibreGl.mod.InterpolationType
-     with typings.maplibreGl.styleSpecMod.InterpolationType {
+     with typings.maplibreGl.distStyleSpecMod.InterpolationType {
   
   var name: linear
 }

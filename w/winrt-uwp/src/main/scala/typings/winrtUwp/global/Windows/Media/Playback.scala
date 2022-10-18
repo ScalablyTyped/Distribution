@@ -24,9 +24,9 @@ object Playback {
   val ^ : js.Any = js.native
   
   /** Provides access to the media player while it is running in the background. */
-  @JSGlobal("Windows.Media.Playback.BackgroundMediaPlayer")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.BackgroundMediaPlayer")
   @js.native
-  abstract class BackgroundMediaPlayer ()
+  open class BackgroundMediaPlayer ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.BackgroundMediaPlayer
   object BackgroundMediaPlayer {
@@ -101,9 +101,9 @@ object Playback {
   }
   
   /** Provides data for the MediaPlaybackList::CurrentItemChanged event. */
-  @JSGlobal("Windows.Media.Playback.CurrentMediaPlaybackItemChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.CurrentMediaPlaybackItemChangedEventArgs")
   @js.native
-  abstract class CurrentMediaPlaybackItemChangedEventArgs ()
+  open class CurrentMediaPlaybackItemChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.CurrentMediaPlaybackItemChangedEventArgs {
     
@@ -117,9 +117,9 @@ object Playback {
   }
   
   /** Represents a read-only list of audio tracks, of which a single track can be selected at one time. */
-  @JSGlobal("Windows.Media.Playback.MediaPlaybackAudioTrackList")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.MediaPlaybackAudioTrackList")
   @js.native
-  abstract class MediaPlaybackAudioTrackList ()
+  open class MediaPlaybackAudioTrackList ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.MediaPlaybackAudioTrackList
   
@@ -150,9 +150,9 @@ object Playback {
   }
   
   /** Represents an error that occurred trying to resolve a MediaPlaybackItem . */
-  @JSGlobal("Windows.Media.Playback.MediaPlaybackItemError")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.MediaPlaybackItemError")
   @js.native
-  abstract class MediaPlaybackItemError ()
+  open class MediaPlaybackItemError ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.MediaPlaybackItemError {
     
@@ -187,9 +187,9 @@ object Playback {
   }
   
   /** Provides data for the MediaPlaybackList::ItemFailed event. */
-  @JSGlobal("Windows.Media.Playback.MediaPlaybackItemFailedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.MediaPlaybackItemFailedEventArgs")
   @js.native
-  abstract class MediaPlaybackItemFailedEventArgs ()
+  open class MediaPlaybackItemFailedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.MediaPlaybackItemFailedEventArgs {
     
@@ -203,9 +203,9 @@ object Playback {
   }
   
   /** Provides data for the MediaPlaybackList::ItemOpened event. */
-  @JSGlobal("Windows.Media.Playback.MediaPlaybackItemOpenedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.MediaPlaybackItemOpenedEventArgs")
   @js.native
-  abstract class MediaPlaybackItemOpenedEventArgs ()
+  open class MediaPlaybackItemOpenedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.MediaPlaybackItemOpenedEventArgs {
     
@@ -223,23 +223,23 @@ object Playback {
        with typings.winrtUwp.Windows.Media.Playback.MediaPlaybackList
   
   /** Represents a read-only list of timed metadata tracks. */
-  @JSGlobal("Windows.Media.Playback.MediaPlaybackTimedMetadataTrackList")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.MediaPlaybackTimedMetadataTrackList")
   @js.native
-  abstract class MediaPlaybackTimedMetadataTrackList ()
+  open class MediaPlaybackTimedMetadataTrackList ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.MediaPlaybackTimedMetadataTrackList
   
   /** Represents a read-only list of video tracks, of which a single track can be selected at one time. */
-  @JSGlobal("Windows.Media.Playback.MediaPlaybackVideoTrackList")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.MediaPlaybackVideoTrackList")
   @js.native
-  abstract class MediaPlaybackVideoTrackList ()
+  open class MediaPlaybackVideoTrackList ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.MediaPlaybackVideoTrackList
   
   /** Provides access to media playback functionality such as play, pause, fast-forward, rewind, and volume. */
-  @JSGlobal("Windows.Media.Playback.MediaPlayer")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.MediaPlayer")
   @js.native
-  abstract class MediaPlayer ()
+  open class MediaPlayer ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.MediaPlayer
   
@@ -288,9 +288,9 @@ object Playback {
   }
   
   /** Provides data for the MessageReceivedFromBackground and MessageReceivedFromForeground events. */
-  @JSGlobal("Windows.Media.Playback.MediaPlayerDataReceivedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.MediaPlayerDataReceivedEventArgs")
   @js.native
-  abstract class MediaPlayerDataReceivedEventArgs ()
+  open class MediaPlayerDataReceivedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.MediaPlayerDataReceivedEventArgs {
     
@@ -319,9 +319,9 @@ object Playback {
   }
   
   /** Provides the data for MediaFailed events. */
-  @JSGlobal("Windows.Media.Playback.MediaPlayerFailedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.MediaPlayerFailedEventArgs")
   @js.native
-  abstract class MediaPlayerFailedEventArgs ()
+  open class MediaPlayerFailedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.MediaPlayerFailedEventArgs {
     
@@ -339,9 +339,9 @@ object Playback {
   }
   
   /** Provides the data for MediaPlayerRateChanged events. */
-  @JSGlobal("Windows.Media.Playback.MediaPlayerRateChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.MediaPlayerRateChangedEventArgs")
   @js.native
-  abstract class MediaPlayerRateChangedEventArgs ()
+  open class MediaPlayerRateChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.MediaPlayerRateChangedEventArgs {
     
@@ -404,9 +404,9 @@ object Playback {
   }
   
   /** Provides data for PlaybackMediaMarkerReached events. */
-  @JSGlobal("Windows.Media.Playback.PlaybackMediaMarkerReachedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.PlaybackMediaMarkerReachedEventArgs")
   @js.native
-  abstract class PlaybackMediaMarkerReachedEventArgs ()
+  open class PlaybackMediaMarkerReachedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.PlaybackMediaMarkerReachedEventArgs {
     
@@ -447,9 +447,9 @@ object Playback {
   }
   
   /** Provides data for the MediaPlaybackTimedMetadataTrackList::PresentationModeChanged event. */
-  @JSGlobal("Windows.Media.Playback.TimedMetadataPresentationModeChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Playback.TimedMetadataPresentationModeChangedEventArgs")
   @js.native
-  abstract class TimedMetadataPresentationModeChangedEventArgs ()
+  open class TimedMetadataPresentationModeChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playback.TimedMetadataPresentationModeChangedEventArgs {
     

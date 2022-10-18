@@ -142,6 +142,17 @@ open class Model[T /* <: ObjectHash */, S, E] () extends StObject {
   
   def set(attributeName: Partial[T]): this.type = js.native
   def set(attributeName: Partial[T], options: S): this.type = js.native
+  def set[A /* <: StringKey[T] */](attributeName: A | Partial[T], value: S, options: S): this.type = js.native
+  def set[A /* <: StringKey[T] */](
+    attributeName: A | Partial[T],
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[A] */ js.Any
+  ): this.type = js.native
+  def set[A /* <: StringKey[T] */](
+    attributeName: A | Partial[T],
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[A] */ js.Any,
+    options: S
+  ): this.type = js.native
+  def set[A /* <: StringKey[T] */](attributeName: A | Partial[T], value: Unit, options: S): this.type = js.native
   /**
     * For strongly-typed assignment of attributes, use the `set` method only privately in public setter properties.
     * @example
@@ -149,34 +160,10 @@ open class Model[T /* <: ObjectHash */, S, E] () extends StObject {
     *    super.set("name", value);
     * }
     */
-  def set[A /* <: StringKey[T] */](attributeName: A): this.type = js.native
-  def set[A /* <: StringKey[T] */](attributeName: A, value: S): this.type = js.native
-  def set[A /* <: StringKey[T] */](attributeName: A, value: S, options: S): this.type = js.native
-  def set[A /* <: StringKey[T] */](
-    attributeName: A,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: T[A] */ js.Any
-  ): this.type = js.native
-  def set[A /* <: StringKey[T] */](
-    attributeName: A,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: T[A] */ js.Any,
-    options: S
-  ): this.type = js.native
-  def set[A /* <: StringKey[T] */](attributeName: A, value: Unit, options: S): this.type = js.native
-  def set[A /* <: StringKey[T] */](attributeName: Partial[T], value: S, options: S): this.type = js.native
-  def set[A /* <: StringKey[T] */](
-    attributeName: Partial[T],
-    value: /* import warning: importer.ImportType#apply Failed type conversion: T[A] */ js.Any
-  ): this.type = js.native
-  def set[A /* <: StringKey[T] */](
-    attributeName: Partial[T],
-    value: /* import warning: importer.ImportType#apply Failed type conversion: T[A] */ js.Any,
-    options: S
-  ): this.type = js.native
-  def set[A /* <: StringKey[T] */](attributeName: Partial[T], value: Unit, options: S): this.type = js.native
   @JSName("set")
-  def set_A[A /* <: StringKey[T] */](attributeName: Partial[T]): this.type = js.native
+  def set_A[A /* <: StringKey[T] */](attributeName: A | Partial[T]): this.type = js.native
   @JSName("set")
-  def set_A[A /* <: StringKey[T] */](attributeName: Partial[T], value: S): this.type = js.native
+  def set_A[A /* <: StringKey[T] */](attributeName: A | Partial[T], value: S): this.type = js.native
   
   def unset(attribute: StringKey[T]): this.type = js.native
   def unset(attribute: StringKey[T], options: Silenceable): this.type = js.native

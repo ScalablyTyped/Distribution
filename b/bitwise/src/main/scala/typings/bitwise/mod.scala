@@ -1,18 +1,18 @@
 package typings.bitwise
 
-import typings.bitwise.anon.CircularShiftLeft
-import typings.bitwise.anon.Modify
-import typings.bitwise.anon.ReadWrite
-import typings.bitwise.anon.SetBit
-import typings.bitwise.anon.`0`
-import typings.bitwise.anon.`1`
-import typings.bitwise.bitwiseTypesMod.Bit
-import typings.bitwise.bitwiseTypesMod.Bits
-import typings.bitwise.bitwiseTypesMod.BooleanBits
-import typings.bitwise.bitwiseTypesMod.Byte
-import typings.bitwise.bitwiseTypesMod.Nibble
-import typings.bitwise.bitwiseTypesMod.UInt4
-import typings.bitwise.bitwiseTypesMod.UInt8
+import typings.bitwise.anon.And
+import typings.bitwise.anon.Create
+import typings.bitwise.anon.GetBit
+import typings.bitwise.anon.Read
+import typings.bitwise.anon.ToBits
+import typings.bitwise.anon.Write
+import typings.bitwise.typesMod.Bit
+import typings.bitwise.typesMod.Bits
+import typings.bitwise.typesMod.BooleanBits
+import typings.bitwise.typesMod.Byte
+import typings.bitwise.typesMod.Nibble
+import typings.bitwise.typesMod.UInt4
+import typings.bitwise.typesMod.UInt8
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,33 +28,33 @@ object mod {
     
     @JSImport("bitwise", "default.bits")
     @js.native
-    def bits: CircularShiftLeft = js.native
-    inline def bits_=(x: CircularShiftLeft): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bits")(x.asInstanceOf[js.Any])
+    def bits: And = js.native
+    inline def bits_=(x: And): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bits")(x.asInstanceOf[js.Any])
     
     @JSImport("bitwise", "default.buffer")
     @js.native
-    def buffer: Modify = js.native
-    inline def buffer_=(x: Modify): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffer")(x.asInstanceOf[js.Any])
+    def buffer: Create = js.native
+    inline def buffer_=(x: Create): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffer")(x.asInstanceOf[js.Any])
     
     @JSImport("bitwise", "default.byte")
     @js.native
-    def byte: ReadWrite = js.native
-    inline def byte_=(x: ReadWrite): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("byte")(x.asInstanceOf[js.Any])
+    def byte: Read = js.native
+    inline def byte_=(x: Read): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("byte")(x.asInstanceOf[js.Any])
     
     @JSImport("bitwise", "default.integer")
     @js.native
-    def integer: SetBit = js.native
-    inline def integer_=(x: SetBit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("integer")(x.asInstanceOf[js.Any])
+    def integer: GetBit = js.native
+    inline def integer_=(x: GetBit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("integer")(x.asInstanceOf[js.Any])
     
     @JSImport("bitwise", "default.nibble")
     @js.native
-    def nibble: `0` = js.native
-    inline def nibble_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nibble")(x.asInstanceOf[js.Any])
+    def nibble: Write = js.native
+    inline def nibble_=(x: Write): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nibble")(x.asInstanceOf[js.Any])
     
     @JSImport("bitwise", "default.string")
     @js.native
-    def string: `1` = js.native
-    inline def string_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
+    def string: ToBits = js.native
+    inline def string_=(x: ToBits): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
   }
   
   object bits {

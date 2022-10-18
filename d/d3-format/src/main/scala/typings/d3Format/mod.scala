@@ -82,7 +82,7 @@ object mod {
       * ' ' (space) - a space for positive and a minus sign for negative.
       *
       */
-    var sign: `-_` | Plussign | String | Space = js.native
+    var sign: `-_` | Plussign | (/* ( */ String) | Space = js.native
     
     /**
       * The symbol can be:

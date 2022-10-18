@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs", "BaseCameraMouseWheelInput")
+/* note: abstract class */ @JSImport("babylonjs", "BaseCameraMouseWheelInput")
 @js.native
-abstract class BaseCameraMouseWheelInput ()
-  extends typings.babylonjs.legacyMod.BaseCameraMouseWheelInput
+open class BaseCameraMouseWheelInput ()
+  extends typings.babylonjs.legacyLegacyMod.BaseCameraMouseWheelInput

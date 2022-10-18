@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "ReflectionType")
 @js.native
 open class ReflectionType protected ()
-  extends typings.typedoc.modelsMod.ReflectionType {
-  def this(declaration: typings.typedoc.declarationMod.DeclarationReflection) = this()
+  extends typings.typedoc.distLibModelsMod.ReflectionType {
+  def this(declaration: typings.typedoc.distLibModelsReflectionsDeclarationMod.DeclarationReflection) = this()
 }

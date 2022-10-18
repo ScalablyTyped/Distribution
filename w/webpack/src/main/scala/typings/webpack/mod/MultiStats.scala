@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack", "MultiStats")
+/* note: abstract class */ @JSImport("webpack", "MultiStats")
 @js.native
-abstract class MultiStats () extends StObject {
+open class MultiStats () extends StObject {
   
   def hasErrors(): Boolean = js.native
   

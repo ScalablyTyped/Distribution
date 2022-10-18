@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs the buffer
   */
 open class DataBuffer ()
-  extends typings.babylonjs.legacyMod.DataBuffer
+  extends typings.babylonjs.legacyLegacyMod.DataBuffer
 /* static members */
 object DataBuffer {
   

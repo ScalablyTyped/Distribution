@@ -1,0 +1,149 @@
+package typings.grpcGrpcJs
+
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.InterceptingListener
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.MessageContext
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusObject
+import typings.grpcGrpcJs.buildSrcConstantsMod.Status
+import typings.grpcGrpcJs.buildSrcSubchannelMod.Subchannel
+import typings.grpcGrpcJs.buildSrcSubchannelMod.SubchannelCallStatsTracker
+import typings.node.bufferMod.global.Buffer
+import typings.node.http2Mod.ClientHttp2Stream
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object buildSrcSubchannelCallMod {
+  
+  @JSImport("@grpc/grpc-js/build/src/subchannel-call", "Http2SubchannelCall")
+  @js.native
+  open class Http2SubchannelCall protected ()
+    extends StObject
+       with SubchannelCall {
+    def this(
+      http2Stream: ClientHttp2Stream,
+      callStatsTracker: SubchannelCallStatsTracker,
+      listener: InterceptingListener,
+      subchannel: Subchannel,
+      callId: Double
+    ) = this()
+    
+    /* private */ val callId: Any = js.native
+    
+    /* private */ val callStatsTracker: Any = js.native
+    
+    /* private */ var canPush: Any = js.native
+    
+    /* CompleteClass */
+    override def cancelWithStatus(status: Status, details: String): Unit = js.native
+    
+    /* private */ var decoder: Any = js.native
+    
+    /* private */ var destroyHttp2Stream: Any = js.native
+    
+    /* private */ var disconnectListener: Any = js.native
+    
+    /**
+      * On first call, emits a 'status' event with the given StatusObject.
+      * Subsequent calls are no-ops.
+      * @param status The status of the call.
+      */
+    /* private */ var endCall: Any = js.native
+    
+    /* private */ var finalStatus: Any = js.native
+    
+    /* CompleteClass */
+    override def getCallNumber(): Double = js.native
+    
+    /* CompleteClass */
+    override def getPeer(): String = js.native
+    
+    def getStatus(): StatusObject | Null = js.native
+    
+    /* CompleteClass */
+    override def halfClose(): Unit = js.native
+    
+    /* private */ var handleTrailers: Any = js.native
+    
+    /* private */ val http2Stream: Any = js.native
+    
+    /* private */ var internalError: Any = js.native
+    
+    /* private */ var isReadFilterPending: Any = js.native
+    
+    /* private */ val listener: Any = js.native
+    
+    /* private */ var mappedStatusCode: Any = js.native
+    
+    /* private */ var maybeOutputStatus: Any = js.native
+    
+    /* private */ var outputStatus: Any = js.native
+    
+    /* private */ var push: Any = js.native
+    
+    /**
+      * Indicates that an 'end' event has come from the http2 stream, so there
+      * will be no more data events.
+      */
+    /* private */ var readsClosed: Any = js.native
+    
+    /* CompleteClass */
+    override def sendMessageWithContext(context: MessageContext, message: Buffer): Unit = js.native
+    
+    /* CompleteClass */
+    override def startRead(): Unit = js.native
+    
+    /* private */ var statusOutput: Any = js.native
+    
+    /* private */ val subchannel: Any = js.native
+    
+    /* private */ var trace: Any = js.native
+    
+    /* private */ var tryPush: Any = js.native
+    
+    /* private */ var unpushedReadMessages: Any = js.native
+  }
+  
+  trait SubchannelCall extends StObject {
+    
+    def cancelWithStatus(status: Status, details: String): Unit
+    
+    def getCallNumber(): Double
+    
+    def getPeer(): String
+    
+    def halfClose(): Unit
+    
+    def sendMessageWithContext(context: MessageContext, message: Buffer): Unit
+    
+    def startRead(): Unit
+  }
+  object SubchannelCall {
+    
+    inline def apply(
+      cancelWithStatus: (Status, String) => Unit,
+      getCallNumber: () => Double,
+      getPeer: () => String,
+      halfClose: () => Unit,
+      sendMessageWithContext: (MessageContext, Buffer) => Unit,
+      startRead: () => Unit
+    ): SubchannelCall = {
+      val __obj = js.Dynamic.literal(cancelWithStatus = js.Any.fromFunction2(cancelWithStatus), getCallNumber = js.Any.fromFunction0(getCallNumber), getPeer = js.Any.fromFunction0(getPeer), halfClose = js.Any.fromFunction0(halfClose), sendMessageWithContext = js.Any.fromFunction2(sendMessageWithContext), startRead = js.Any.fromFunction0(startRead))
+      __obj.asInstanceOf[SubchannelCall]
+    }
+    
+    extension [Self <: SubchannelCall](x: Self) {
+      
+      inline def setCancelWithStatus(value: (Status, String) => Unit): Self = StObject.set(x, "cancelWithStatus", js.Any.fromFunction2(value))
+      
+      inline def setGetCallNumber(value: () => Double): Self = StObject.set(x, "getCallNumber", js.Any.fromFunction0(value))
+      
+      inline def setGetPeer(value: () => String): Self = StObject.set(x, "getPeer", js.Any.fromFunction0(value))
+      
+      inline def setHalfClose(value: () => Unit): Self = StObject.set(x, "halfClose", js.Any.fromFunction0(value))
+      
+      inline def setSendMessageWithContext(value: (MessageContext, Buffer) => Unit): Self = StObject.set(x, "sendMessageWithContext", js.Any.fromFunction2(value))
+      
+      inline def setStartRead(value: () => Unit): Self = StObject.set(x, "startRead", js.Any.fromFunction0(value))
+    }
+  }
+}

@@ -1,7 +1,7 @@
 package typings.pusherJs
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.pusherJs.pusherMod.default
+import typings.pusherJs.typesSrcCorePusherMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

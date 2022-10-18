@@ -12,7 +12,7 @@ object FailureHandlingKind {
     */
   @JSImport("vscode-languageserver-protocol", "FailureHandlingKind.Abort")
   @js.native
-  val Abort: typings.vscodeLanguageserverProtocol.protocolMod.FailureHandlingKind = js.native
+  val Abort: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.FailureHandlingKind = js.native
   
   /**
     * If the workspace edit contains only textual file changes they are executed transactional.
@@ -21,7 +21,7 @@ object FailureHandlingKind {
     */
   @JSImport("vscode-languageserver-protocol", "FailureHandlingKind.TextOnlyTransactional")
   @js.native
-  val TextOnlyTransactional: typings.vscodeLanguageserverProtocol.protocolMod.FailureHandlingKind = js.native
+  val TextOnlyTransactional: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.FailureHandlingKind = js.native
   
   /**
     * All operations are executed transactional. That means they either all
@@ -29,7 +29,7 @@ object FailureHandlingKind {
     */
   @JSImport("vscode-languageserver-protocol", "FailureHandlingKind.Transactional")
   @js.native
-  val Transactional: typings.vscodeLanguageserverProtocol.protocolMod.FailureHandlingKind = js.native
+  val Transactional: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.FailureHandlingKind = js.native
   
   /**
     * The client tries to undo the operations already executed. But there is no
@@ -37,5 +37,5 @@ object FailureHandlingKind {
     */
   @JSImport("vscode-languageserver-protocol", "FailureHandlingKind.Undo")
   @js.native
-  val Undo: typings.vscodeLanguageserverProtocol.protocolMod.FailureHandlingKind = js.native
+  val Undo: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.FailureHandlingKind = js.native
 }

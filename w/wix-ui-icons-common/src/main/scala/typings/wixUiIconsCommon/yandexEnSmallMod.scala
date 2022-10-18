@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsYandexEnSmallMod.YandexEnSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yandexEnSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/YandexEnSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/YandexEnSmall", JSImport.Default)
   @js.native
   val default: FC[YandexEnSmallProps] = js.native
-  
-  trait YandexEnSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object YandexEnSmallProps {
-    
-    inline def apply(): YandexEnSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[YandexEnSmallProps]
-    }
-    
-    extension [Self <: YandexEnSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[YandexEnSmallProps]
   

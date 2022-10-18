@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "TorusKnotGeometry")
 @js.native
 open class TorusKnotGeometry protected ()
-  extends typings.three.threeMod.TorusKnotGeometry {
+  extends typings.three.srcThreeMod.TorusKnotGeometry {
   /**
     * @param [radius=1]
     * @param [tube=0.4]
@@ -32,5 +32,5 @@ object TorusKnotGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.torusKnotGeometryMod.TorusKnotGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.torusKnotGeometryMod.TorusKnotGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesTorusKnotGeometryMod.TorusKnotGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesTorusKnotGeometryMod.TorusKnotGeometry]
 }

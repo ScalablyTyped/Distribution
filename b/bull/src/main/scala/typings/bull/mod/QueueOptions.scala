@@ -3,9 +3,9 @@ package typings.bull.mod
 import typings.bull.bullStrings.bclient
 import typings.bull.bullStrings.client
 import typings.bull.bullStrings.subscriber
+import typings.ioredis.builtRedisRedisOptionsMod.RedisOptions
 import typings.ioredis.mod.Cluster
 import typings.ioredis.mod.Redis
-import typings.ioredis.redisOptionsMod.RedisOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

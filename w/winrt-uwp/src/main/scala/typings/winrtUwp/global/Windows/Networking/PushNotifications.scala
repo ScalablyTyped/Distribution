@@ -13,16 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PushNotifications {
   
   /** Represents a delivery vehicle and addressing mechanism for push notifications. The channel Uniform Resource Identifier (URI) represented by this interface is used by a third-party application server to communicate with the Windows Push Notification Services (WNS). The push notification channel is used by the client to intercept notifications. */
-  @JSGlobal("Windows.Networking.PushNotifications.PushNotificationChannel")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.PushNotifications.PushNotificationChannel")
   @js.native
-  abstract class PushNotificationChannel ()
+  open class PushNotificationChannel ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannel
   
   /** Creates objects that you use to retrieve push notification channels from the Windows Push Notification Services (WNS). These channels are bound to an app or secondary tile . */
-  @JSGlobal("Windows.Networking.PushNotifications.PushNotificationChannelManager")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.PushNotifications.PushNotificationChannelManager")
   @js.native
-  abstract class PushNotificationChannelManager ()
+  open class PushNotificationChannelManager ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationChannelManager
   object PushNotificationChannelManager {
@@ -55,9 +55,9 @@ object PushNotifications {
   }
   
   /** Encapsulates a push notification that has been received from the app server, identifying the type and supplying the content of the notification. Windows passes this information in the PushNotificationReceived event. */
-  @JSGlobal("Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs")
   @js.native
-  abstract class PushNotificationReceivedEventArgs ()
+  open class PushNotificationReceivedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs {
     
@@ -108,9 +108,9 @@ object PushNotifications {
   }
   
   /** Encapsulates the app-defined content of a raw notification (a push notification that does not involve UI). Its contents can be used in an app's background task, if the app has that capability, or otherwise consumed by the app and acted on as needed. */
-  @JSGlobal("Windows.Networking.PushNotifications.RawNotification")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.PushNotifications.RawNotification")
   @js.native
-  abstract class RawNotification ()
+  open class RawNotification ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.PushNotifications.RawNotification {
     

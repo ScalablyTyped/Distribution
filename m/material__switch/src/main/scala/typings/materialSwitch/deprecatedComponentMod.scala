@@ -3,7 +3,7 @@ package typings.materialSwitch
 import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialRipple.componentMod.MDCRipple
-import typings.materialSwitch.foundationMod.MDCSwitchFoundation
+import typings.materialSwitch.deprecatedFoundationMod.MDCSwitchFoundation
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

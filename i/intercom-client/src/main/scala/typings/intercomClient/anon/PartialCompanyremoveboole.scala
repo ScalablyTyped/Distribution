@@ -25,7 +25,7 @@ trait PartialCompanyremoveboole extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var plan: js.UndefOr[String | Name] = js.undefined
+  var plan: js.UndefOr[String | Id] = js.undefined
   
   var remote_created_at: js.UndefOr[Double] = js.undefined
   
@@ -84,7 +84,7 @@ object PartialCompanyremoveboole {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setPlan(value: String | Name): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+    inline def setPlan(value: String | Id): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
     inline def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
     

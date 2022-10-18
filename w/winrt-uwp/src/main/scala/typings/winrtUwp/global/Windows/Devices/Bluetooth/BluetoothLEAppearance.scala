@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality to determine the Bluetooth Low Energy (LE) Appearance information for a device. */
-@JSGlobal("Windows.Devices.Bluetooth.BluetoothLEAppearance")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.BluetoothLEAppearance")
 @js.native
-abstract class BluetoothLEAppearance ()
+open class BluetoothLEAppearance ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance {
   

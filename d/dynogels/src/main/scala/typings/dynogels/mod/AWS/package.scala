@@ -1,6 +1,6 @@
 package typings.dynogels.mod.AWS
 
-import typings.awsSdk.configMod.GlobalConfigInstance
+import typings.awsSdk.libConfigMod.GlobalConfigInstance
 import typings.dynogels.mod.AWS.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

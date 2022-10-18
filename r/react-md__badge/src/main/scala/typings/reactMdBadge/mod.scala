@@ -2,9 +2,9 @@ package typings.reactMdBadge
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdBadge.badgeContainerMod.BadgeContainerProps
-import typings.reactMdBadge.badgeMod.BadgeProps
-import typings.reactMdBadge.badgedButtonMod.BadgedButtonProps
+import typings.reactMdBadge.typesBadgeContainerMod.BadgeContainerProps
+import typings.reactMdBadge.typesBadgeMod.BadgeProps
+import typings.reactMdBadge.typesBadgedButtonMod.BadgedButtonProps
 import typings.std.HTMLButtonElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject

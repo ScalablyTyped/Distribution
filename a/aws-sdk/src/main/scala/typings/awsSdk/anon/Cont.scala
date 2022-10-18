@@ -1,10 +1,10 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.s3Mod.ContinuationEvent
-import typings.awsSdk.s3Mod.EndEvent
-import typings.awsSdk.s3Mod.ProgressEvent
-import typings.awsSdk.s3Mod.RecordsEvent
-import typings.awsSdk.s3Mod.StatsEvent
+import typings.awsSdk.clientsS3Mod.ContinuationEvent
+import typings.awsSdk.clientsS3Mod.EndEvent
+import typings.awsSdk.clientsS3Mod.ProgressEvent
+import typings.awsSdk.clientsS3Mod.RecordsEvent
+import typings.awsSdk.clientsS3Mod.StatsEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -9,13 +9,13 @@ trait Commiturl extends StObject {
   /** Format: uri */
   var commit_url: String
   
-  var repository: Branchesurl
+  var repository: Blobsurl
   
   var sha: String
   
   var state: String
   
-  var statuses: js.Array[Required]
+  var statuses: js.Array[Context]
   
   var total_count: Double
   
@@ -26,10 +26,10 @@ object Commiturl {
   
   inline def apply(
     commit_url: String,
-    repository: Branchesurl,
+    repository: Blobsurl,
     sha: String,
     state: String,
-    statuses: js.Array[Required],
+    statuses: js.Array[Context],
     total_count: Double,
     url: String
   ): Commiturl = {
@@ -41,15 +41,15 @@ object Commiturl {
     
     inline def setCommit_url(value: String): Self = StObject.set(x, "commit_url", value.asInstanceOf[js.Any])
     
-    inline def setRepository(value: Branchesurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Blobsurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setStatuses(value: js.Array[Required]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
+    inline def setStatuses(value: js.Array[Context]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
-    inline def setStatusesVarargs(value: Required*): Self = StObject.set(x, "statuses", js.Array(value*))
+    inline def setStatusesVarargs(value: Context*): Self = StObject.set(x, "statuses", js.Array(value*))
     
     inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     

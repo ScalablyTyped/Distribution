@@ -9,7 +9,7 @@ import typings.redux.mod.Dispatch
 import typings.redux.mod.Middleware
 import typings.reduxSagaCore.anon.Args
 import typings.reduxSagaCore.anon.Effect
-import typings.reduxSagaCore.effectsMod.ForkEffect
+import typings.reduxSagaCore.typesEffectsMod.ForkEffect
 import typings.std.Parameters
 import typings.std.Partial
 import typings.std.SharedArrayBuffer

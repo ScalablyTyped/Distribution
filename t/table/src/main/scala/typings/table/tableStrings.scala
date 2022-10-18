@@ -1,7 +1,7 @@
 package typings.table
 
-import typings.table.apiMod.Alignment
-import typings.table.apiMod.VerticalAlignment
+import typings.table.distSrcTypesApiMod.Alignment
+import typings.table.distSrcTypesApiMod.VerticalAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

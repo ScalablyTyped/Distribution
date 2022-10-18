@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "AutojoinRoomsMixin")
 @js.native
 open class AutojoinRoomsMixin ()
-  extends typings.matrixBotSdk.autojoinRoomsMixinMod.AutojoinRoomsMixin
+  extends typings.matrixBotSdk.libMixinsAutojoinRoomsMixinMod.AutojoinRoomsMixin
 /* static members */
 object AutojoinRoomsMixin {
   
@@ -15,11 +15,11 @@ object AutojoinRoomsMixin {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def setupOnAppservice(appservice: typings.matrixBotSdk.appserviceMod.Appservice): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupOnAppservice")(appservice.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setupOnAppservice(appservice: typings.matrixBotSdk.libAppserviceAppserviceMod.Appservice): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupOnAppservice")(appservice.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def setupOnAppservice(
-    appservice: typings.matrixBotSdk.appserviceMod.Appservice,
+    appservice: typings.matrixBotSdk.libAppserviceAppserviceMod.Appservice,
     conditional: js.Function1[/* inviteEvent */ Any, Boolean]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupOnAppservice")(appservice.asInstanceOf[js.Any], conditional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setupOnClient(client: typings.matrixBotSdk.matrixClientMod.MatrixClient): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupOnClient")(client.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setupOnClient(client: typings.matrixBotSdk.libMatrixClientMod.MatrixClient): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupOnClient")(client.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

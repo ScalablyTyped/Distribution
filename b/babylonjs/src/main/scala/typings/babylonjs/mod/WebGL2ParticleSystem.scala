@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebGL2ParticleSystem")
 @js.native
 open class WebGL2ParticleSystem protected ()
-  extends typings.babylonjs.legacyMod.WebGL2ParticleSystem {
+  extends typings.babylonjs.legacyLegacyMod.WebGL2ParticleSystem {
   def this(
-    parent: typings.babylonjs.gpuParticleSystemMod.GPUParticleSystem,
-    engine: typings.babylonjs.thinEngineMod.ThinEngine
+    parent: typings.babylonjs.particlesGpuParticleSystemMod.GPUParticleSystem,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine
   ) = this()
 }

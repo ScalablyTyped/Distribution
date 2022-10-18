@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "RoomTracker")
 @js.native
 open class RoomTracker protected ()
-  extends typings.matrixBotSdk.roomTrackerMod.RoomTracker {
-  def this(client: typings.matrixBotSdk.matrixClientMod.MatrixClient) = this()
+  extends typings.matrixBotSdk.libE2eeRoomTrackerMod.RoomTracker {
+  def this(client: typings.matrixBotSdk.libMatrixClientMod.MatrixClient) = this()
 }

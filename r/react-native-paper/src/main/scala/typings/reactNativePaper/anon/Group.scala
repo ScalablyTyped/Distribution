@@ -1,23 +1,24 @@
 package typings.reactNativePaper.anon
 
-import typings.callstackReactThemeProvider.hoistNonReactStaticsMod.NonReactStatics
+import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonReactStatics
 import typings.react.mod.ComponentType
+import typings.reactNativePaper.libTypescriptComponentsFabFabgroupMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Group extends StObject {
   
-  var Group: ComponentType[PickactionsArrayiconIconS] & (NonReactStatics[
-    ComponentType[BackdropColor] & CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColorDisplayNameString, 
+  var Group: ComponentType[PickPropsstylecoloronPresAccessibilityLabel] & (NonReactStatics[
+    ComponentType[Props] & CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColor, 
     js.Object
   ])
 }
 object Group {
   
   inline def apply(
-    Group: ComponentType[PickactionsArrayiconIconS] & (NonReactStatics[
-      ComponentType[BackdropColor] & CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColorDisplayNameString, 
+    Group: ComponentType[PickPropsstylecoloronPresAccessibilityLabel] & (NonReactStatics[
+      ComponentType[Props] & CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColor, 
       js.Object
     ])
   ): Group = {
@@ -28,8 +29,8 @@ object Group {
   extension [Self <: Group](x: Self) {
     
     inline def setGroup(
-      value: ComponentType[PickactionsArrayiconIconS] & (NonReactStatics[
-          ComponentType[BackdropColor] & CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColorDisplayNameString, 
+      value: ComponentType[PickPropsstylecoloronPresAccessibilityLabel] & (NonReactStatics[
+          ComponentType[Props] & CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColor, 
           js.Object
         ])
     ): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])

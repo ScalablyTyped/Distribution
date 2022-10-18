@@ -66,9 +66,6 @@ open class SurveyElement protected ()
   
   /* protected */ def getDefaultTitleActions(): js.Array[IAction] = js.native
   
-  def getElementsInDesign(): js.Array[IElement] = js.native
-  def getElementsInDesign(includeHidden: Boolean): js.Array[IElement] = js.native
-  
   /* protected */ def getIsErrorsModeTooltip(): Boolean = js.native
   
   /* InferMemberOverrides */

@@ -1,15 +1,15 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.interactjsAutoScrollPluginMod.AutoScrollOptions
-import typings.interactjsTypes.interactjsModifiersTypesMod.Modifier
+import typings.interactjsTypes.autoScrollPluginMod.AutoScrollOptions
+import typings.interactjsTypes.coreTypesMod.ActionName
+import typings.interactjsTypes.coreTypesMod.ActionProps
+import typings.interactjsTypes.coreTypesMod.CursorChecker
+import typings.interactjsTypes.coreTypesMod.ListenerMap
+import typings.interactjsTypes.coreTypesMod.ListenersArg
+import typings.interactjsTypes.coreTypesMod.Point
 import typings.interactjsTypes.interactjsTypesInts.`16`
 import typings.interactjsTypes.interactjsTypesInts.`8`
-import typings.interactjsTypes.typesMod.ActionName
-import typings.interactjsTypes.typesMod.ActionProps
-import typings.interactjsTypes.typesMod.CursorChecker
-import typings.interactjsTypes.typesMod.ListenerMap
-import typings.interactjsTypes.typesMod.ListenersArg
-import typings.interactjsTypes.typesMod.Point
+import typings.interactjsTypes.modifiersTypesMod.Modifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@interactjs/types.@interactjs/actions/gesture/plugin.GesturableOptions> */
 trait PartialGesturableOptions extends StObject {
   
-  var allowFrom: js.UndefOr[String | typings.interactjsTypes.typesMod.Element] = js.undefined
+  var allowFrom: js.UndefOr[String | typings.interactjsTypes.coreTypesMod.Element] = js.undefined
   
   var autoScroll: js.UndefOr[AutoScrollOptions] = js.undefined
   
@@ -29,11 +29,11 @@ trait PartialGesturableOptions extends StObject {
   
   var hold: js.UndefOr[Double] = js.undefined
   
-  var ignoreFrom: js.UndefOr[String | typings.interactjsTypes.typesMod.Element] = js.undefined
+  var ignoreFrom: js.UndefOr[String | typings.interactjsTypes.coreTypesMod.Element] = js.undefined
   
   var inertia: js.UndefOr[AllowResume] = js.undefined
   
-  var listeners: js.UndefOr[typings.interactjsTypes.typesMod.Listeners] = js.undefined
+  var listeners: js.UndefOr[typings.interactjsTypes.coreTypesMod.Listeners] = js.undefined
   
   var manualStart: js.UndefOr[Boolean] = js.undefined
   
@@ -53,7 +53,7 @@ trait PartialGesturableOptions extends StObject {
   
   var onstart: js.UndefOr[ListenersArg] = js.undefined
   
-  var origin: js.UndefOr[Point | String | typings.interactjsTypes.typesMod.Element] = js.undefined
+  var origin: js.UndefOr[Point | String | typings.interactjsTypes.coreTypesMod.Element] = js.undefined
 }
 object PartialGesturableOptions {
   
@@ -64,7 +64,7 @@ object PartialGesturableOptions {
   
   extension [Self <: PartialGesturableOptions](x: Self) {
     
-    inline def setAllowFrom(value: String | typings.interactjsTypes.typesMod.Element): Self = StObject.set(x, "allowFrom", value.asInstanceOf[js.Any])
+    inline def setAllowFrom(value: String | typings.interactjsTypes.coreTypesMod.Element): Self = StObject.set(x, "allowFrom", value.asInstanceOf[js.Any])
     
     inline def setAllowFromUndefined: Self = StObject.set(x, "allowFrom", js.undefined)
     
@@ -73,7 +73,7 @@ object PartialGesturableOptions {
     inline def setAutoScrollUndefined: Self = StObject.set(x, "autoScroll", js.undefined)
     
     inline def setCursorChecker(
-      value: (/* action */ ActionProps[ActionName], /* interactable */ InteractableActions, /* element */ typings.interactjsTypes.typesMod.Element, /* interacting */ Boolean) => String
+      value: (/* action */ ActionProps[ActionName], /* interactable */ InteractableActions, /* element */ typings.interactjsTypes.coreTypesMod.Element, /* interacting */ Boolean) => String
     ): Self = StObject.set(x, "cursorChecker", js.Any.fromFunction4(value))
     
     inline def setCursorCheckerUndefined: Self = StObject.set(x, "cursorChecker", js.undefined)
@@ -90,7 +90,7 @@ object PartialGesturableOptions {
     
     inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
     
-    inline def setIgnoreFrom(value: String | typings.interactjsTypes.typesMod.Element): Self = StObject.set(x, "ignoreFrom", value.asInstanceOf[js.Any])
+    inline def setIgnoreFrom(value: String | typings.interactjsTypes.coreTypesMod.Element): Self = StObject.set(x, "ignoreFrom", value.asInstanceOf[js.Any])
     
     inline def setIgnoreFromUndefined: Self = StObject.set(x, "ignoreFrom", js.undefined)
     
@@ -98,7 +98,7 @@ object PartialGesturableOptions {
     
     inline def setInertiaUndefined: Self = StObject.set(x, "inertia", js.undefined)
     
-    inline def setListeners(value: typings.interactjsTypes.typesMod.Listeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: typings.interactjsTypes.coreTypesMod.Listeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
     inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     
@@ -132,21 +132,21 @@ object PartialGesturableOptions {
     
     inline def setOnendUndefined: Self = StObject.set(x, "onend", js.undefined)
     
-    inline def setOnendVarargs(value: (typings.interactjsTypes.typesMod.Listener | ListenerMap)*): Self = StObject.set(x, "onend", js.Array(value*))
+    inline def setOnendVarargs(value: (typings.interactjsTypes.coreTypesMod.Listener | ListenerMap)*): Self = StObject.set(x, "onend", js.Array(value*))
     
     inline def setOnmove(value: ListenersArg): Self = StObject.set(x, "onmove", value.asInstanceOf[js.Any])
     
     inline def setOnmoveUndefined: Self = StObject.set(x, "onmove", js.undefined)
     
-    inline def setOnmoveVarargs(value: (typings.interactjsTypes.typesMod.Listener | ListenerMap)*): Self = StObject.set(x, "onmove", js.Array(value*))
+    inline def setOnmoveVarargs(value: (typings.interactjsTypes.coreTypesMod.Listener | ListenerMap)*): Self = StObject.set(x, "onmove", js.Array(value*))
     
     inline def setOnstart(value: ListenersArg): Self = StObject.set(x, "onstart", value.asInstanceOf[js.Any])
     
     inline def setOnstartUndefined: Self = StObject.set(x, "onstart", js.undefined)
     
-    inline def setOnstartVarargs(value: (typings.interactjsTypes.typesMod.Listener | ListenerMap)*): Self = StObject.set(x, "onstart", js.Array(value*))
+    inline def setOnstartVarargs(value: (typings.interactjsTypes.coreTypesMod.Listener | ListenerMap)*): Self = StObject.set(x, "onstart", js.Array(value*))
     
-    inline def setOrigin(value: Point | String | typings.interactjsTypes.typesMod.Element): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Point | String | typings.interactjsTypes.coreTypesMod.Element): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
   }

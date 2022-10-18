@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PushMaterial")
 @js.native
 open class PushMaterial protected ()
-  extends typings.babylonjs.legacyMod.PushMaterial {
+  extends typings.babylonjs.legacyLegacyMod.PushMaterial {
   def this(name: String) = this()
   def this(name: String, scene: typings.babylonjs.sceneMod.Scene) = this()
   def this(name: String, scene: Unit, storeEffectOnSubMeshes: Boolean) = this()

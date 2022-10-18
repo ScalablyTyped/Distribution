@@ -1,6 +1,6 @@
 package typings.utilityTypes
 
-import typings.utilityTypes.aliasesAndGuardsMod._Falsy
+import typings.utilityTypes.distAliasesAndGuardsMod._Falsy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.reactNativeElements.anon
 
 import typings.react.mod.ReactElement
-import typings.reactNativeElements.helpersMod.RneFunctionComponent
+import typings.reactNativeElements.distHelpersMod.RneFunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

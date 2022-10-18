@@ -1,7 +1,7 @@
 package typings.glidejsGlide.mod
 
 import typings.glidejsGlide.anon.ActiveNav
-import typings.glidejsGlide.anon.Before
+import typings.glidejsGlide.anon.After
 import typings.glidejsGlide.glidejsGlideBooleans.`false`
 import typings.glidejsGlide.glidejsGlideStrings.ltr
 import typings.glidejsGlide.glidejsGlideStrings.rtl
@@ -100,7 +100,7 @@ trait Options extends StObject {
     *
     * @default 0
     */
-  var peek: js.UndefOr[Double | Before] = js.undefined
+  var peek: js.UndefOr[Double | After] = js.undefined
   
   /**
     * A maximum number of slides moved per single swipe or drag
@@ -229,7 +229,7 @@ object Options {
     
     inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
-    inline def setPeek(value: Double | Before): Self = StObject.set(x, "peek", value.asInstanceOf[js.Any])
+    inline def setPeek(value: Double | After): Self = StObject.set(x, "peek", value.asInstanceOf[js.Any])
     
     inline def setPeekUndefined: Self = StObject.set(x, "peek", js.undefined)
     

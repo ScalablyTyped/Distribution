@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Reader[Type] protected ()
   extends StObject
-     with ReadableReader
-     with DataProcessor {
+     with Initializable
+     with ReadableReader {
   /**
     * Creates the `Reader` instance
     * 

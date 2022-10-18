@@ -1,17 +1,17 @@
 package typings.sqlFormatter
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.sqlFormatter.formatOptionsMod.CommaPosition
-import typings.sqlFormatter.formatOptionsMod.FormatOptions
-import typings.sqlFormatter.formatOptionsMod.IndentStyle
-import typings.sqlFormatter.formatOptionsMod.KeywordCase
-import typings.sqlFormatter.formatOptionsMod.LogicalOperatorNewline
-import typings.sqlFormatter.formatterMod.default
-import typings.sqlFormatter.grammarMod._NearleySymbol
-import typings.sqlFormatter.paramsMod.ParamItems
-import typings.sqlFormatter.srcSqlFormatterMod.SqlLanguage
-import typings.sqlFormatter.tokenMod.TokenType
-import typings.sqlFormatter.tokenizerOptionsMod.ParamTypes
+import typings.sqlFormatter.libSrcFormatOptionsMod.CommaPosition
+import typings.sqlFormatter.libSrcFormatOptionsMod.FormatOptions
+import typings.sqlFormatter.libSrcFormatOptionsMod.IndentStyle
+import typings.sqlFormatter.libSrcFormatOptionsMod.KeywordCase
+import typings.sqlFormatter.libSrcFormatOptionsMod.LogicalOperatorNewline
+import typings.sqlFormatter.libSrcFormatterFormatterMod.default
+import typings.sqlFormatter.libSrcFormatterParamsMod.ParamItems
+import typings.sqlFormatter.libSrcLexerTokenMod.TokenType
+import typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.ParamTypes
+import typings.sqlFormatter.libSrcParserGrammarMod._NearleySymbol
+import typings.sqlFormatter.libSrcSqlFormatterMod.SqlLanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import typings.babylonjs.XRInputSource
 import typings.babylonjs.anon.Filename
-import typings.babylonjs.webXRAbstractMotionControllerMod.IMotionControllerProfile
+import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.IMotionControllerProfile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXRProfiledMotionController")
 @js.native
 open class WebXRProfiledMotionController protected ()
-  extends typings.babylonjs.legacyMod.WebXRProfiledMotionController {
+  extends typings.babylonjs.legacyLegacyMod.WebXRProfiledMotionController {
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
     xrInput: XRInputSource,

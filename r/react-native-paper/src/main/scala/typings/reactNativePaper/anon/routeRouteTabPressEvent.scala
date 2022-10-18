@@ -11,14 +11,14 @@ trait routeRouteTabPressEvent extends StObject {
   
   def preventDefault(): Unit
   
-  var route: typings.reactNativePaper.bottomNavigationMod.Route
+  var route: typings.reactNativePaper.libTypescriptComponentsBottomNavigationBottomNavigationMod.Route
 }
 object routeRouteTabPressEvent {
   
   inline def apply(
     defaultPrevented: Boolean,
     preventDefault: () => Unit,
-    route: typings.reactNativePaper.bottomNavigationMod.Route
+    route: typings.reactNativePaper.libTypescriptComponentsBottomNavigationBottomNavigationMod.Route
   ): routeRouteTabPressEvent = {
     val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[routeRouteTabPressEvent]
@@ -30,6 +30,6 @@ object routeRouteTabPressEvent {
     
     inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
-    inline def setRoute(value: typings.reactNativePaper.bottomNavigationMod.Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: typings.reactNativePaper.libTypescriptComponentsBottomNavigationBottomNavigationMod.Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

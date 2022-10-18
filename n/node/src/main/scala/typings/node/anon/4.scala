@@ -1,23 +1,22 @@
 package typings.node.anon
 
-import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `4` extends StObject {
   
-  var encoding: BufferEncoding
+  var fd: typings.node.nodeInts.`2`
 }
 object `4` {
   
-  inline def apply(encoding: BufferEncoding): `4` = {
-    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+  inline def apply(): `4` = {
+    val __obj = js.Dynamic.literal(fd = 2)
     __obj.asInstanceOf[`4`]
   }
   
   extension [Self <: `4`](x: Self) {
     
-    inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setFd(value: typings.node.nodeInts.`2`): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,6 @@
 package typings.raml1Parser.mod.ds
 
-import typings.ramlDefinitionSystem.ramlDefinitionSystemMod.IParseResult
+import typings.ramlDefinitionSystem.mod.IParseResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("raml-1-parser", "ds.UserDefinedProp")
 @js.native
 open class UserDefinedProp protected ()
-  extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.UserDefinedProp {
+  extends typings.ramlDefinitionSystem.mod.UserDefinedProp {
   def this(name: String, source: IParseResult) = this()
 }
 /* static members */

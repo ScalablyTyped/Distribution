@@ -1,8 +1,8 @@
 package typings.cucumberMessages.mod.messages
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.IStepMatchArgument
-import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.IGroup
+import typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.IStepMatchArgument
+import typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.IGroup
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [properties] Properties to set
   */
 open class StepMatchArgument ()
-  extends typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument {
+  extends typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument {
   def this(properties: IStepMatchArgument) = this()
 }
 object StepMatchArgument {
@@ -42,7 +42,7 @@ object StepMatchArgument {
     * @param [properties] Properties to set
     */
   open class Group ()
-    extends typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group {
+    extends typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group {
     def this(properties: IGroup) = this()
   }
   object Group {
@@ -57,11 +57,11 @@ object StepMatchArgument {
       * @returns Group instance
       */
     /* static member */
-    inline def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
-    inline def create(properties: IGroup): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
+    inline def create(): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
+    inline def create(properties: IGroup): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
     
-    inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
-    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
+    inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
     /**
       * Decodes a Group message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -71,10 +71,10 @@ object StepMatchArgument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    inline def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
-    inline def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
+    inline def decode(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
+    inline def decode(reader: Reader, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
     
-    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
     /**
       * Decodes a Group message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -83,7 +83,7 @@ object StepMatchArgument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    inline def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
+    inline def decodeDelimited(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
     
     /**
       * Encodes the specified Group message. Does not implicitly {@link io.cucumber.messages.StepMatchArgument.Group.verify|verify} messages.
@@ -111,7 +111,7 @@ object StepMatchArgument {
       * @returns Group
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group]
     
     /**
       * Creates a plain object from a Group message. Also converts values to other types if specified.
@@ -120,9 +120,11 @@ object StepMatchArgument {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
-      message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group,
+      message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group
+    ): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(
+      message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument.Group,
       options: IConversionOptions
     ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
@@ -141,11 +143,11 @@ object StepMatchArgument {
     * @returns StepMatchArgument instance
     */
   /* static member */
-  inline def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
-  inline def create(properties: IStepMatchArgument): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
+  inline def create(): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
+  inline def create(properties: IStepMatchArgument): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
   
-  inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
-  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
+  inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
   /**
     * Decodes a StepMatchArgument message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -155,10 +157,10 @@ object StepMatchArgument {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  inline def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
-  inline def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
+  inline def decode(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
+  inline def decode(reader: Reader, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
   
-  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
   /**
     * Decodes a StepMatchArgument message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -167,7 +169,7 @@ object StepMatchArgument {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  inline def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
+  inline def decodeDelimited(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
   
   /**
     * Encodes the specified StepMatchArgument message. Does not implicitly {@link io.cucumber.messages.StepMatchArgument.verify|verify} messages.
@@ -195,7 +197,7 @@ object StepMatchArgument {
     * @returns StepMatchArgument
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
+  inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument]
   
   /**
     * Creates a plain object from a StepMatchArgument message. Also converts values to other types if specified.
@@ -204,9 +206,11 @@ object StepMatchArgument {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   inline def toObject(
-    message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument,
+    message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument
+  ): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(
+    message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.StepMatchArgument,
     options: IConversionOptions
   ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   

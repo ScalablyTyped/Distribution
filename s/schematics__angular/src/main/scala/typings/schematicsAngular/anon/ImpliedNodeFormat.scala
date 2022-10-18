@@ -1,7 +1,7 @@
 package typings.schematicsAngular.anon
 
-import typings.schematicsAngular.typescriptMod.ModuleKind.CommonJS
-import typings.schematicsAngular.typescriptMod.ModuleKind.ESNext
+import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModuleKind.CommonJS
+import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModuleKind.ESNext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

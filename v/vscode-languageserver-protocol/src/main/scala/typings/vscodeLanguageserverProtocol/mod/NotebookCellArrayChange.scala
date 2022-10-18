@@ -13,12 +13,14 @@ object NotebookCellArrayChange {
   inline def create(
     start: typings.vscodeLanguageserverTypes.mod.uinteger,
     deleteCount: typings.vscodeLanguageserverTypes.mod.uinteger
-  ): typings.vscodeLanguageserverProtocol.protocolNotebookMod.NotebookCellArrayChange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverProtocol.protocolNotebookMod.NotebookCellArrayChange]
+  ): typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.NotebookCellArrayChange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.NotebookCellArrayChange]
   inline def create(
     start: typings.vscodeLanguageserverTypes.mod.uinteger,
     deleteCount: typings.vscodeLanguageserverTypes.mod.uinteger,
-    cells: js.Array[typings.vscodeLanguageserverProtocol.protocolNotebookMod.NotebookCell]
-  ): typings.vscodeLanguageserverProtocol.protocolNotebookMod.NotebookCellArrayChange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any], cells.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverProtocol.protocolNotebookMod.NotebookCellArrayChange]
+    cells: js.Array[
+      typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.NotebookCell
+    ]
+  ): typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.NotebookCellArrayChange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any], cells.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.NotebookCellArrayChange]
   
   inline def is(value: Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.notebook.NotebookCellArrayChange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.notebook.NotebookCellArrayChange */ Boolean]
 }

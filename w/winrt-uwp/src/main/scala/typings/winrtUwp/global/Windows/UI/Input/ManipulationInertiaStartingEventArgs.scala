@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the GestureRecognizer.ManipulationInertiaStartingEvent . */
-@JSGlobal("Windows.UI.Input.ManipulationInertiaStartingEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.Input.ManipulationInertiaStartingEventArgs")
 @js.native
-abstract class ManipulationInertiaStartingEventArgs ()
+open class ManipulationInertiaStartingEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.ManipulationInertiaStartingEventArgs {
   

@@ -1,8 +1,8 @@
 package typings.awsGreengrassCoreSdk.streamManagerMod
 
-import typings.awsGreengrassCoreSdk.dataMod.ReadMessagesOptionsMap
-import typings.awsGreengrassCoreSdk.dataMod.TypesMap
-import typings.awsGreengrassCoreSdk.dataMod.ValidationsMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ReadMessagesOptionsMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.TypesMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ValidationsMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "ReadMessagesOptions")
 @js.native
 open class ReadMessagesOptions protected ()
-  extends typings.awsGreengrassCoreSdk.clientMod.ReadMessagesOptions {
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.ReadMessagesOptions {
   /**
     * @param desiredStartSequenceNumber The desired beginning sequence number to start reading from.
     * If the desired sequence number is less than the current minimum of the stream, then it will instead start reading from the current minimum.
@@ -44,7 +44,7 @@ object ReadMessagesOptions {
   def formatsMap: Record[String, scala.Nothing] = js.native
   inline def formatsMap_=(x: Record[String, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatsMap")(x.asInstanceOf[js.Any])
   
-  inline def fromMap(d: ReadMessagesOptionsMap): typings.awsGreengrassCoreSdk.dataMod.ReadMessagesOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.ReadMessagesOptions]
+  inline def fromMap(d: ReadMessagesOptionsMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.ReadMessagesOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.ReadMessagesOptions]
   
   @JSImport("aws-greengrass-core-sdk/stream-manager", "ReadMessagesOptions.typesMap")
   @js.native

@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.anon.PartialAnnotationsAlign
-import typings.plotlyJs.anon.PartialCamera
+import typings.plotlyJs.anon.PartialAnnotationsArrowcolor
+import typings.plotlyJs.anon.PartialCameraCenter
 import typings.plotlyJs.anon.PartialDomain
 import typings.plotlyJs.anon.PartialPoint
 import typings.plotlyJs.anon.PartialSceneAxisBackgroundcolor
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Scene extends StObject {
   
-  var annotations: PartialAnnotationsAlign | js.Array[PartialAnnotationsAlign]
+  var annotations: PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor]
   
   var aspectmode: auto | cube | data | manual
   
@@ -29,7 +29,7 @@ trait Scene extends StObject {
   
   var bgcolor: String
   
-  var camera: PartialCamera
+  var camera: PartialCameraCenter
   
   var captureevents: Boolean
   
@@ -48,11 +48,11 @@ trait Scene extends StObject {
 object Scene {
   
   inline def apply(
-    annotations: PartialAnnotationsAlign | js.Array[PartialAnnotationsAlign],
+    annotations: PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor],
     aspectmode: auto | cube | data | manual,
     aspectratio: PartialPoint,
     bgcolor: String,
-    camera: PartialCamera,
+    camera: PartialCameraCenter,
     captureevents: Boolean,
     domain: PartialDomain,
     dragmode: orbit | turntable | zoom | pan | `false`,
@@ -67,9 +67,9 @@ object Scene {
   
   extension [Self <: Scene](x: Self) {
     
-    inline def setAnnotations(value: PartialAnnotationsAlign | js.Array[PartialAnnotationsAlign]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    inline def setAnnotationsVarargs(value: PartialAnnotationsAlign*): Self = StObject.set(x, "annotations", js.Array(value*))
+    inline def setAnnotationsVarargs(value: PartialAnnotationsArrowcolor*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setAspectmode(value: auto | cube | data | manual): Self = StObject.set(x, "aspectmode", value.asInstanceOf[js.Any])
     
@@ -77,7 +77,7 @@ object Scene {
     
     inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
-    inline def setCamera(value: PartialCamera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: PartialCameraCenter): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     inline def setCaptureevents(value: Boolean): Self = StObject.set(x, "captureevents", value.asInstanceOf[js.Any])
     

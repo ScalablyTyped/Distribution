@@ -25,7 +25,7 @@ trait InstrumentOptionsObject extends StObject {
     * Options specific to oscillator instruments.
     */
   var oscillator: js.UndefOr[
-    typings.highcharts.sonificationMod.highchartsAugmentingMod.OscillatorOptionsObject
+    typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.OscillatorOptionsObject
   ] = js.undefined
   
   /**
@@ -60,7 +60,7 @@ object InstrumentOptionsObject {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setOscillator(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.OscillatorOptionsObject): Self = StObject.set(x, "oscillator", value.asInstanceOf[js.Any])
+    inline def setOscillator(value: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.OscillatorOptionsObject): Self = StObject.set(x, "oscillator", value.asInstanceOf[js.Any])
     
     inline def setOscillatorUndefined: Self = StObject.set(x, "oscillator", js.undefined)
     

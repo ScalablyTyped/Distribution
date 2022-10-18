@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCalculatorTwoToneMod.CalculatorTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calculatorTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CalculatorTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CalculatorTwoTone", JSImport.Default)
   @js.native
   val default: CalculatorTwoToneIconType = js.native
-  
-  @js.native
-  trait CalculatorTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CalculatorTwoToneIconType: String = js.native
-  }
   
   type _To = CalculatorTwoToneIconType
   

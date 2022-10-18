@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "Search")
 @js.native
 open class Search protected ()
-  extends typings.carbonComponents.componentsMod.Search {
+  extends typings.carbonComponents.globalsJsComponentsMod.Search {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialSearchOptions) = this()
 }

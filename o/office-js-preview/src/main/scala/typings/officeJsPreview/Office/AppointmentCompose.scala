@@ -92,7 +92,7 @@ trait AppointmentCompose
     *
     * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     *        `isInline`: If true, indicates that the attachment will be shown inline in the message body,
     *                    and should not be displayed in the attachment list.
@@ -188,7 +188,7 @@ trait AppointmentCompose
     *
     * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     *        `isInline`: If true, indicates that the attachment will be shown inline in the message body
     *                    and should not be displayed in the attachment list.
@@ -256,7 +256,7 @@ trait AppointmentCompose
     * @param eventType - The event that should invoke the handler.
     * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
     *                The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -333,7 +333,7 @@ trait AppointmentCompose
     *
     * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of
     *                             type `Office.AsyncResult`.
@@ -428,7 +428,7 @@ trait AppointmentCompose
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -525,7 +525,7 @@ trait AppointmentCompose
     * - `InvalidAttachmentId`: The attachment identifier does not exist.
     *
     * @param attachmentId - The identifier of the attachment you want to get.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain
@@ -564,7 +564,7 @@ trait AppointmentCompose
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
@@ -604,7 +604,7 @@ trait AppointmentCompose
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                             of type `Office.AsyncResult`.
@@ -633,7 +633,7 @@ trait AppointmentCompose
     *
     * **Errors**:
     *
-    * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
+    * - `ItemNotSaved`: The ID can't be retrieved until the item is saved.
     *
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                   of type `Office.AsyncResult`.
@@ -657,9 +657,9 @@ trait AppointmentCompose
     *
     * **Errors**:
     *
-    * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
+    * - `ItemNotSaved`: The ID can't be retrieved until the item is saved.
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                   of type `Office.AsyncResult`.
@@ -718,10 +718,10 @@ trait AppointmentCompose
     *
     * @param coercionType - Requests a format for the data. If `Text`, the method returns the plain text as a string, removing any HTML tags present.
     *                     If `HTML`, the method returns the selected text, whether it is plaintext or HTML.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
-    *                  of type `Office.AsyncResult`.
+    *                   of type `Office.AsyncResult`.
     */
   def getSelectedDataAsync(
     coercionType: CoercionType,
@@ -764,7 +764,7 @@ trait AppointmentCompose
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
@@ -823,7 +823,7 @@ trait AppointmentCompose
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                   type `Office.AsyncResult`.
@@ -991,7 +991,7 @@ trait AppointmentCompose
     *
     * @param attachmentId - The identifier of the attachment to remove. The maximum string length of the `attachmentId`
     *                       is 200 characters in Outlook on the web and on Windows.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                             type `Office.AsyncResult`.
@@ -1045,7 +1045,7 @@ trait AppointmentCompose
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     *
     * @param eventType - The event that should revoke the handler.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -1141,7 +1141,7 @@ trait AppointmentCompose
     *
     * - `InvalidAttachmentId`: The attachment identifier does not exist.
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                   type `Office.AsyncResult`.
@@ -1163,7 +1163,7 @@ trait AppointmentCompose
   var sensitivity: Sensitivity = js.native
   
   /**
-    * Gets the id of the series that an instance belongs to.
+    * Gets the ID of the series that an instance belongs to.
     *
     * In Outlook on the web and desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID of the parent (series) item
     * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
@@ -1244,7 +1244,7 @@ trait AppointmentCompose
     *
     * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters.
     *             If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     *        `coercionType`: If text, the current style is applied in Outlook on the web and Windows.
     *                      If the field is an HTML editor, only the text data is inserted, even if the data is HTML.

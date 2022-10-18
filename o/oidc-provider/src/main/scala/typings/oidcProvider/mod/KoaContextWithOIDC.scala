@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.accepts.mod.Accepts
 import typings.contentDisposition.mod.Options
 import typings.cookies.mod.Cookies
-import typings.koa.anon.Body
+import typings.koa.anon.BodyResponseBodyT
 import typings.koa.anon.FnCall
 import typings.koa.mod.Application
 import typings.koa.mod.DefaultContext
@@ -462,7 +462,7 @@ trait KoaContextWithOIDC
     */
   var respond: js.UndefOr[Boolean] = js.native
   
-  var response: Body[Any] & Response = js.native
+  var response: BodyResponseBodyT[Any] & Response = js.native
   
   /**
     * Get the search string. Same as the querystring

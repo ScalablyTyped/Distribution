@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// https://docs.couchdb.org/en/stable/api/server/common.html#api-server-root
+/** 
+  * Response to CouchDB root API call - cluster information.
+  * @see Docs: {@link https://docs.couchdb.org/en/stable/api/server/common.html#api-server-root} */
 trait InfoResponse extends StObject {
   
   var couchdb: String
@@ -40,7 +42,7 @@ object InfoResponse {
     
     inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setGit_sha(value: String): Self = StObject.set(x, "git_sha", value.asInstanceOf[js.Any])
     

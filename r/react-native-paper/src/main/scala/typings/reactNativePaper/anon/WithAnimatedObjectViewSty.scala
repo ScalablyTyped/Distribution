@@ -209,7 +209,7 @@ trait WithAnimatedObjectViewSty extends StObject {
   
   var shadowColor: js.UndefOr[WithAnimatedValue[js.UndefOr[ColorValue]]] = js.undefined
   
-  var shadowOffset: js.UndefOr[WithAnimatedValue[js.UndefOr[typings.reactNative.anon.Height]]] = js.undefined
+  var shadowOffset: js.UndefOr[WithAnimatedValue[js.UndefOr[typings.reactNative.anon.Width]]] = js.undefined
   
   var shadowOpacity: js.UndefOr[WithAnimatedValue[js.UndefOr[Double]]] = js.undefined
   
@@ -556,7 +556,7 @@ object WithAnimatedObjectViewSty {
     
     inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
-    inline def setShadowOffset(value: WithAnimatedValue[js.UndefOr[typings.reactNative.anon.Height]]): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
+    inline def setShadowOffset(value: WithAnimatedValue[js.UndefOr[typings.reactNative.anon.Width]]): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
     inline def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
     
@@ -594,13 +594,7 @@ object WithAnimatedObjectViewSty {
     
     inline def setTransformMatrixUndefined: Self = StObject.set(x, "transformMatrix", js.undefined)
     
-    inline def setTransformMatrixVarargs(value: Double*): Self = StObject.set(x, "transformMatrix", js.Array(value*))
-    
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
-    
-    inline def setTransformVarargs(
-      value: (PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform)*
-    ): Self = StObject.set(x, "transform", js.Array(value*))
     
     inline def setTranslateX(value: WithAnimatedValue[js.UndefOr[Double]]): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     

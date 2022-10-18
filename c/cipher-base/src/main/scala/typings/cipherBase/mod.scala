@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("cipher-base", JSImport.Namespace)
+  /* note: abstract class */ @JSImport("cipher-base", JSImport.Namespace)
   @js.native
-  abstract class ^ ()
+  open class ^ ()
     extends StObject
        with CipherBase {
     def this(hashMode: String) = this()

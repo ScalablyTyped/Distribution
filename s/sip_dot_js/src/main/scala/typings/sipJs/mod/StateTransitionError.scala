@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "StateTransitionError")
 @js.native
 open class StateTransitionError ()
-  extends typings.sipJs.apiMod.StateTransitionError {
+  extends typings.sipJs.libApiMod.StateTransitionError {
   def this(message: String) = this()
 }

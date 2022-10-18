@@ -1,7 +1,7 @@
 package typings.reachDropdown.anon
 
+import typings.reachDropdown.mod.DropdownAction
 import typings.reachDropdown.reachDropdownStrings.SET_BUTTON_ID
-import typings.reachDropdown.srcMod.DropdownAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

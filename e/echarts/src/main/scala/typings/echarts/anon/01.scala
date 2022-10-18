@@ -12,7 +12,7 @@ trait `01` extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.0
     */
-  var `0`: js.UndefOr[Symbol] = js.undefined
+  var `0`: js.UndefOr[LineStyle] = js.undefined
   
   /**
     * Data of the ending point.
@@ -20,7 +20,7 @@ trait `01` extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1
     */
-  var `1`: js.UndefOr[Symbol] = js.undefined
+  var `1`: js.UndefOr[LineStyle] = js.undefined
 }
 object `01` {
   
@@ -31,11 +31,11 @@ object `01` {
   
   extension [Self <: `01`](x: Self) {
     
-    inline def set0(value: Symbol): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def set0(value: LineStyle): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
     inline def set0Undefined: Self = StObject.set(x, "0", js.undefined)
     
-    inline def set1(value: Symbol): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: LineStyle): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
     inline def set1Undefined: Self = StObject.set(x, "1", js.undefined)
   }

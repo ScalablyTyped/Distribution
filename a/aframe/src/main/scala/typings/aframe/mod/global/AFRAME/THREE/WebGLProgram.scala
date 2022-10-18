@@ -9,5 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class WebGLProgram protected ()
   extends typings.three.mod.WebGLProgram {
-  def this(renderer: typings.three.webGLRendererMod.WebGLRenderer, cacheKey: String, parameters: js.Object) = this()
+  def this(
+    renderer: typings.three.srcRenderersWebGLRendererMod.WebGLRenderer,
+    cacheKey: String,
+    parameters: js.Object
+  ) = this()
 }

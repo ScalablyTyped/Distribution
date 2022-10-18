@@ -1,15 +1,15 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.atMod.At
-import typings.tsToolbelt.iterationMod.Iteration
-import typings.tsToolbelt.keyMod.Key
-import typings.tsToolbelt.nextMod.Next
-import typings.tsToolbelt.objectPathMod._Path
+import typings.tsToolbelt.outAnyAtMod.At
+import typings.tsToolbelt.outAnyKeyMod.Key
+import typings.tsToolbelt.outIterationIterationMod.Iteration
+import typings.tsToolbelt.outIterationNextMod.Next
+import typings.tsToolbelt.outObjectPathMod._Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0Path`[O, P /* <: typings.tsToolbelt.listMod.List[Key] */, I /* <: Iteration */] extends StObject {
+trait `0Path`[O, P /* <: typings.tsToolbelt.outListListMod.List[Key] */, I /* <: Iteration */] extends StObject {
   
   var `0`: _Path[
     At[
@@ -24,7 +24,7 @@ trait `0Path`[O, P /* <: typings.tsToolbelt.listMod.List[Key] */, I /* <: Iterat
 }
 object `0Path` {
   
-  inline def apply[O, P /* <: typings.tsToolbelt.listMod.List[Key] */, I /* <: Iteration */](
+  inline def apply[O, P /* <: typings.tsToolbelt.outListListMod.List[Key] */, I /* <: Iteration */](
     `0`: _Path[
       At[
         O, 
@@ -41,7 +41,7 @@ object `0Path` {
     __obj.asInstanceOf[`0Path`[O, P, I]]
   }
   
-  extension [Self <: `0Path`[?, ?, ?], O, P /* <: typings.tsToolbelt.listMod.List[Key] */, I /* <: Iteration */](x: Self & (`0Path`[O, P, I])) {
+  extension [Self <: `0Path`[?, ?, ?], O, P /* <: typings.tsToolbelt.outListListMod.List[Key] */, I /* <: Iteration */](x: Self & (`0Path`[O, P, I])) {
     
     inline def set0(
       value: _Path[

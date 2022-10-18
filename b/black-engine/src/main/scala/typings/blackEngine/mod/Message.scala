@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Message")
 @js.native
 open class Message ()
-  extends typings.blackEngine.messageMod.Message
+  extends typings.blackEngine.messagesMessageMod.Message

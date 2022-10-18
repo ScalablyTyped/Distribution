@@ -3,10 +3,10 @@ package typings.babylonjs.mod
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.OffscreenCanvas
 import typings.babylonjs.WebGL2RenderingContext
-import typings.babylonjs.iaudioengineMod.IAudioEngine
-import typings.babylonjs.iofflineproviderMod.IOfflineProvider
-import typings.babylonjs.loadingScreenMod.ILoadingScreen
-import typings.babylonjs.thinEngineMod.EngineOptions
+import typings.babylonjs.audioInterfacesIaudioengineMod.IAudioEngine
+import typings.babylonjs.enginesThinEngineMod.EngineOptions
+import typings.babylonjs.loadingLoadingScreenMod.ILoadingScreen
+import typings.babylonjs.offlineIofflineproviderMod.IOfflineProvider
 import typings.babylonjs.typesMod.Nullable
 import typings.std.AudioContext
 import typings.std.AudioDestinationNode
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Engine")
 @js.native
 open class Engine protected ()
-  extends typings.babylonjs.legacyMod.Engine {
+  extends typings.babylonjs.legacyLegacyMod.Engine {
   /**
     * Creates a new engine
     * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, Babylon.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when Babylon.js is used as a plugin on a system which already used the WebGL context
@@ -256,7 +256,10 @@ object Engine {
     * @param predicate defines a predicate used to filter which materials should be affected
     */
   inline def MarkAllMaterialsAsDirty(flag: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("MarkAllMaterialsAsDirty")(flag.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def MarkAllMaterialsAsDirty(flag: Double, predicate: js.Function1[/* mat */ typings.babylonjs.materialMod.Material, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("MarkAllMaterialsAsDirty")(flag.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def MarkAllMaterialsAsDirty(
+    flag: Double,
+    predicate: js.Function1[/* mat */ typings.babylonjs.materialsMaterialMod.Material, Boolean]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("MarkAllMaterialsAsDirty")(flag.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will never pass. i.e. Nothing will be drawn */
   @JSImport("babylonjs", "Engine.NEVER")
@@ -622,11 +625,11 @@ object Engine {
   @JSImport("babylonjs", "Engine._RescalePostProcessFactory")
   @js.native
   def _RescalePostProcessFactory: Nullable[
-    js.Function1[/* engine */ this.type, typings.babylonjs.postProcessMod.PostProcess]
+    js.Function1[/* engine */ this.type, typings.babylonjs.postProcessesPostProcessMod.PostProcess]
   ] = js.native
   inline def _RescalePostProcessFactory_=(
     x: Nullable[
-      js.Function1[/* engine */ this.type, typings.babylonjs.postProcessMod.PostProcess]
+      js.Function1[/* engine */ this.type, typings.babylonjs.postProcessesPostProcessMod.PostProcess]
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RescalePostProcessFactory")(x.asInstanceOf[js.Any])
   

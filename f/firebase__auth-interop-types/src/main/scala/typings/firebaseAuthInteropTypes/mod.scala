@@ -39,6 +39,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {

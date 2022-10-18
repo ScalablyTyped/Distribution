@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object scureBaseStrings {
   
   @js.native
-  sealed trait AsChain extends StObject
-  inline def AsChain: AsChain = "AsChain".asInstanceOf[AsChain]
-  
-  @js.native
   sealed trait base16
     extends StObject
        with CoderType

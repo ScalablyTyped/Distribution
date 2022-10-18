@@ -14,7 +14,8 @@ import typings.wordpressBlockEditor.anon.Index
 import typings.wordpressBlockEditor.anon.IsLocked
 import typings.wordpressBlockEditor.anon.OmitPropsname
 import typings.wordpressBlockEditor.anon.PartialBlockInstancekstri
-import typings.wordpressBlockEditor.blockControlsMod.BlockControls.Props
+import typings.wordpressBlockEditor.componentsBlockControlsMod.BlockControls.Props
+import typings.wordpressBlockEditor.componentsRichTextMod.RichText.ContentProps
 import typings.wordpressBlockEditor.mod.EditorBlockListSettings
 import typings.wordpressBlockEditor.mod.EditorBlockMode
 import typings.wordpressBlockEditor.mod.EditorColor
@@ -23,9 +24,8 @@ import typings.wordpressBlockEditor.mod.EditorImageSize
 import typings.wordpressBlockEditor.mod.EditorInserterItem
 import typings.wordpressBlockEditor.mod.EditorSettings
 import typings.wordpressBlockEditor.mod.EditorStyle
-import typings.wordpressBlockEditor.richTextMod.RichText.ContentProps
+import typings.wordpressBlocks.apiTemplatesMod.TemplateArray
 import typings.wordpressBlocks.mod.BlockInstance
-import typings.wordpressBlocks.templatesMod.TemplateArray
 import typings.wordpressCoreData.mod.Autosave
 import typings.wordpressCoreData.schemaMod.Schema.Decontextualize
 import typings.wordpressCoreData.schemaMod.Schema.PostOrPage
@@ -379,7 +379,7 @@ object anon {
   @js.native
   trait TypeofApply extends StObject {
     
-    def apply(props: typings.wordpressBlockEditor.blockFormatControlsMod.BlockFormatControls.Props): Element = js.native
+    def apply(props: typings.wordpressBlockEditor.componentsBlockFormatControlsMod.BlockFormatControls.Props): Element = js.native
     
     var Slot: FC[OmitPropsname] = js.native
   }
@@ -387,7 +387,7 @@ object anon {
   @js.native
   trait TypeofApplySlot extends StObject {
     
-    def apply(props: typings.wordpressBlockEditor.inspectorControlsMod.InspectorControls.Props): Element = js.native
+    def apply(props: typings.wordpressBlockEditor.componentsInspectorControlsMod.InspectorControls.Props): Element = js.native
     
     var Slot: FC[OmitPropsname] = js.native
   }
@@ -395,7 +395,7 @@ object anon {
   @js.native
   trait TypeofButtonBlockAppender extends StObject {
     
-    def apply(props: typings.wordpressBlockEditor.innerBlocksMod.InnerBlocks.Props): Element = js.native
+    def apply(props: typings.wordpressBlockEditor.componentsInnerBlocksMod.InnerBlocks.Props): Element = js.native
     
     /**
       * display a `+` (plus) icon button that, when clicked, displays the block picker menu. No
@@ -416,7 +416,7 @@ object anon {
   trait TypeofContent extends StObject {
     
     def apply(
-      props: typings.wordpressBlockEditor.richTextMod.RichText.Props[
+      props: typings.wordpressBlockEditor.componentsRichTextMod.RichText.Props[
           a | abbr | address | area | article | aside | audio | b | base | bdi | bdo | blockquote | body | br | button | canvas | caption | cite | code | col | colgroup | data | datalist | dd | del | details | dfn | dialog | div | dl | dt | em | embed | fieldset | figcaption | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | img | input | ins | kbd | label | legend | li | link | main | map | mark | menu | meta | meter | nav | noscript | `object` | ol | optgroup | option | output | p | picture | pre | progress | q | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | strong | style | sub | summary | sup | table | tbody | td | template | textarea | tfoot | th | thead | time | title | tr | track | u | ul | `var` | video | wbr
         ]
     ): Element = js.native
@@ -654,7 +654,9 @@ object anon {
   @js.native
   trait TypeofSlot extends StObject {
     
-    def apply(props: typings.wordpressBlockEditor.inspectorAdvancedControlsMod.InspectorAdvancedControls.Props): Element = js.native
+    def apply(
+      props: typings.wordpressBlockEditor.componentsInspectorAdvancedControlsMod.InspectorAdvancedControls.Props
+    ): Element = js.native
     
     var Slot: FC[OmitPropsname] = js.native
   }

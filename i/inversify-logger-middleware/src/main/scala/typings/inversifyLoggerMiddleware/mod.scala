@@ -1,8 +1,8 @@
 package typings.inversifyLoggerMiddleware
 
-import typings.inversify.interfacesMod.interfaces.Middleware
-import typings.inversifyLoggerMiddleware.interfacesMod.interfaces.LogEntry
-import typings.inversifyLoggerMiddleware.interfacesMod.interfaces.LoggerSettings
+import typings.inversify.libInterfacesInterfacesMod.interfaces.Middleware
+import typings.inversifyLoggerMiddleware.dtsInterfacesInterfacesMod.interfaces.LogEntry
+import typings.inversifyLoggerMiddleware.dtsInterfacesInterfacesMod.interfaces.LoggerSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

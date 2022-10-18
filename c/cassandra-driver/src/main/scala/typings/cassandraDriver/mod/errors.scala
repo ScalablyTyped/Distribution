@@ -25,9 +25,9 @@ object errors {
     def this(address: String, maxRequestsPerConnection: Double, connectionLength: Double) = this()
   }
   
-  @JSImport("cassandra-driver", "errors.DriverError")
+  /* note: abstract class */ @JSImport("cassandra-driver", "errors.DriverError")
   @js.native
-  abstract class DriverError protected ()
+  open class DriverError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()

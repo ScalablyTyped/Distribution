@@ -1,8 +1,8 @@
 package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.Direction
-import typings.antdMobileRn.stepsIndexNativeMod.StepsNativeProps
-import typings.antdMobileRn.stepsIndexNativeMod.default
+import typings.antdMobileRn.libStepsIndexDotnativeMod.StepsNativeProps
+import typings.antdMobileRn.libStepsIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

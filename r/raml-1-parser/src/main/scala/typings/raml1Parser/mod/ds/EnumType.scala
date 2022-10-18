@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("raml-1-parser", "ds.EnumType")
 @js.native
 open class EnumType ()
-  extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.EnumType
+  extends typings.ramlDefinitionSystem.mod.EnumType
 /* static members */
 object EnumType {
   

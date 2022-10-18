@@ -7,10 +7,10 @@ import typings.jsonSchema.mod.JSONSchema7Type
 import typings.memFs.mod.Store
 import typings.memFsEditor.memFsEditorBooleans.`false`
 import typings.memFsEditor.memFsEditorBooleans.`true`
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.std.Exclude
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -144,7 +144,7 @@ object mod {
   
   type ProcessingFunction = js.Function2[/* contents */ Buffer, /* path */ String, WriteContents]
   
-  type ReadRawContents = Exclude[Buffer | ReadableStream[Any] | Null, Null]
+  type ReadRawContents = Exclude[Buffer | ReadableStream | Null, Null]
   
   trait ReadRawOptions extends StObject {
     
@@ -162,8 +162,6 @@ object mod {
     extension [Self <: ReadRawOptions](x: Self) {
       
       inline def setDefaults(value: ReadRawContents): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultsNull: Self = StObject.set(x, "defaults", null)
       
       inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       

@@ -1,10 +1,10 @@
 package typings.server
 
-import typings.server.commonMod.Context
-import typings.server.commonMod.Middlewares
-import typings.server.optionsMod.Options
 import typings.server.replyMod.Reply
 import typings.server.routerMod.Router
+import typings.server.typingsCommonMod.Context
+import typings.server.typingsCommonMod.Middlewares
+import typings.server.typingsOptionsMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

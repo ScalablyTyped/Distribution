@@ -1187,10 +1187,6 @@ object babelCoreStrings {
   inline def exit: exit = "exit".asInstanceOf[exit]
   
   @js.native
-  sealed trait explode extends StObject
-  inline def explode: explode = "explode".asInstanceOf[explode]
-  
-  @js.native
   sealed trait function extends StObject
   inline def function: function = "function".asInstanceOf[function]
   

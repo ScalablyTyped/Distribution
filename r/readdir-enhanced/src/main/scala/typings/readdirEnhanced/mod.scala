@@ -2,9 +2,9 @@ package typings.readdirEnhanced
 
 import typings.jsdevtoolsReaddirEnhanced.anon.Optionsstatsfalseundefine
 import typings.jsdevtoolsReaddirEnhanced.anon.Optionsstatstrue
+import typings.jsdevtoolsReaddirEnhanced.libTypesPublicMod.Callback
+import typings.jsdevtoolsReaddirEnhanced.libTypesPublicMod.Stats
 import typings.jsdevtoolsReaddirEnhanced.mod.Readdir_
-import typings.jsdevtoolsReaddirEnhanced.typesPublicMod.Callback
-import typings.jsdevtoolsReaddirEnhanced.typesPublicMod.Stats
 import typings.node.streamMod.Readable
 import typings.std.AsyncIterableIterator
 import org.scalablytyped.runtime.StObject

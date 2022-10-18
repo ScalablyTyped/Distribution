@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a way to monitor and react to changes to contacts. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactChangeReader")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactChangeReader")
 @js.native
-abstract class ContactChangeReader ()
+open class ContactChangeReader ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChangeReader {
   

@@ -13,7 +13,7 @@ trait CallerId extends StObject {
   
   var callerId: js.UndefOr[String] = js.undefined
   
-  var channelId: String
+  var channelId: js.UndefOr[String] = js.undefined
   
   var context: js.UndefOr[String] = js.undefined
   
@@ -37,8 +37,8 @@ trait CallerId extends StObject {
 }
 object CallerId {
   
-  inline def apply(channelId: String, endpoint: String): CallerId = {
-    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any])
+  inline def apply(endpoint: String): CallerId = {
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallerId]
   }
   
@@ -57,6 +57,8 @@ object CallerId {
     inline def setCallerIdUndefined: Self = StObject.set(x, "callerId", js.undefined)
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

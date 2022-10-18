@@ -1,6 +1,6 @@
 package typings.rcProgress
 
-import typings.rcProgress.interfaceMod.ProgressProps
+import typings.rcProgress.esInterfaceMod.ProgressProps
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

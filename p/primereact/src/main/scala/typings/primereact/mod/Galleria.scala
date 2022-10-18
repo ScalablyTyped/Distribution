@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.galleriaMod.GalleriaProps
+import typings.primereact.galleriaGalleriaMod.GalleriaProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Galleria")
 @js.native
 open class Galleria protected ()
-  extends typings.primereact.galleriaMod.Galleria {
+  extends typings.primereact.galleriaGalleriaMod.Galleria {
   def this(props: GalleriaProps) = this()
   /**
     * @deprecated

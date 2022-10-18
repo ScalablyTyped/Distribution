@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsLockUnlockedMod.LockUnlockedProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsLockUnlockedMod.LockUnlockedProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lockUnlockedMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/LockUnlocked", JSImport.Default)
+  @JSImport("wix-ui-icons-common/LockUnlocked", JSImport.Default)
   @js.native
   val default: FC[LockUnlockedProps] = js.native
   

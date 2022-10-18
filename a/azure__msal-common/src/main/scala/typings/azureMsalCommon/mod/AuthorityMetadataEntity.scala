@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "AuthorityMetadataEntity")
 @js.native
 open class AuthorityMetadataEntity ()
-  extends typings.azureMsalCommon.authorityMetadataEntityMod.AuthorityMetadataEntity
+  extends typings.azureMsalCommon.distCacheEntitiesAuthorityMetadataEntityMod.AuthorityMetadataEntity
 /* static members */
 object AuthorityMetadataEntity {
   

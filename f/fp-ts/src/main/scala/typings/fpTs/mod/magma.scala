@@ -1,8 +1,8 @@
 package typings.fpTs.mod
 
-import typings.fpTs.endomorphismMod.Endomorphism
-import typings.fpTs.magmaMod.Magma
-import typings.fpTs.predicateMod.Predicate
+import typings.fpTs.libEndomorphismMod.Endomorphism
+import typings.fpTs.libMagmaMod.Magma
+import typings.fpTs.libPredicateMod.Predicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

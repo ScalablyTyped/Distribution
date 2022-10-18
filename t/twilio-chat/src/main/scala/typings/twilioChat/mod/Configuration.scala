@@ -1,6 +1,6 @@
 package typings.twilioChat.mod
 
-import typings.twilioChat.anon.CurrentUser
+import typings.twilioChat.anon.Conversations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ trait Configuration extends StObject {
   
   val httpCacheInterval: Double
   
-  val links: CurrentUser
+  val links: Conversations
   
   val myConversations: String
   
@@ -39,7 +39,7 @@ object Configuration {
     backoffConfiguration: BackoffConfiguration,
     consumptionReportInterval: Double,
     httpCacheInterval: Double,
-    links: CurrentUser,
+    links: Conversations,
     myConversations: String,
     reachabilityEnabled: Boolean,
     retryWhenThrottled: Boolean,
@@ -60,7 +60,7 @@ object Configuration {
     
     inline def setHttpCacheInterval(value: Double): Self = StObject.set(x, "httpCacheInterval", value.asInstanceOf[js.Any])
     
-    inline def setLinks(value: CurrentUser): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: Conversations): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     inline def setMyConversations(value: String): Self = StObject.set(x, "myConversations", value.asInstanceOf[js.Any])
     

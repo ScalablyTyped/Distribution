@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the Activated event when it occurs after a picker returns. */
-@JSGlobal("Windows.ApplicationModel.Activation.PickerReturnedActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Activation.PickerReturnedActivatedEventArgs")
 @js.native
-abstract class PickerReturnedActivatedEventArgs ()
+open class PickerReturnedActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Activation.PickerReturnedActivatedEventArgs {
   

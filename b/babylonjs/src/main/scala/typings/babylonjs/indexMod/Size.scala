@@ -29,11 +29,15 @@ object Size {
     * @param amount amount to lerp between the start and end values
     * @returns a new Size set at the linear interpolation "amount" between "start" and "end"
     */
-  inline def Lerp(start: typings.babylonjs.mathSizeMod.Size, end: typings.babylonjs.mathSizeMod.Size, amount: Double): typings.babylonjs.mathSizeMod.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathSizeMod.Size]
+  inline def Lerp(
+    start: typings.babylonjs.mathsMathDotsizeMod.Size,
+    end: typings.babylonjs.mathsMathDotsizeMod.Size,
+    amount: Double
+  ): typings.babylonjs.mathsMathDotsizeMod.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotsizeMod.Size]
   
   /**
     * Create a new size of zero
     * @returns a new Size set to (0.0, 0.0)
     */
-  inline def Zero(): typings.babylonjs.mathSizeMod.Size = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.mathSizeMod.Size]
+  inline def Zero(): typings.babylonjs.mathsMathDotsizeMod.Size = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.mathsMathDotsizeMod.Size]
 }

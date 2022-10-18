@@ -6,20 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `197` extends StObject {
   
-  /** The name of the commit/branch/tag. Default: the repository’s default branch (usually `master`) */
-  var ref: js.UndefOr[String] = js.undefined
+  var responses: `200ContentApplicationjsonKeyKeyid`
 }
 object `197` {
   
-  inline def apply(): `197` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(responses: `200ContentApplicationjsonKeyKeyid`): `197` = {
+    val __obj = js.Dynamic.literal(responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[`197`]
   }
   
   extension [Self <: `197`](x: Self) {
     
-    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-    
-    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setResponses(value: `200ContentApplicationjsonKeyKeyid`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

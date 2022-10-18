@@ -6,7 +6,7 @@ import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
 import typings.baseui.baseuiStrings.mini
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ComponentType
 import typings.react.mod.Ref

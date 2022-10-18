@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Serves as a base for dialog-related commands with a simple common command state.
   */
-@JSGlobal("CommandWithSimpleStateDialogBase")
+/* note: abstract class */ @JSGlobal("CommandWithSimpleStateDialogBase")
 @js.native
-abstract class CommandWithSimpleStateDialogBase ()
+open class CommandWithSimpleStateDialogBase ()
   extends StObject
      with typings.devexpressWeb.CommandWithSimpleStateDialogBase {
   

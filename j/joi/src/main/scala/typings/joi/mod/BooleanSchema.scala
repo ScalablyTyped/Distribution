@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BooleanSchema
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.joi.mod.Schema because Already inherited */ @js.native
+trait BooleanSchema[TSchema]
   extends StObject
-     with AnySchema[Any]
-     with _ObjectPropertiesSchema[Any]
-     with _Schema[Any] {
+     with AnySchema[TSchema] {
   
   /**
     * Allows for additional values to be considered valid booleans by converting them to false during validation.

@@ -7,9 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jspdf", "AcroFormField")
+/* note: abstract class */ @JSImport("jspdf", "AcroFormField")
 @js.native
-abstract class AcroFormField () extends StObject {
+open class AcroFormField () extends StObject {
   
   var color: String = js.native
   

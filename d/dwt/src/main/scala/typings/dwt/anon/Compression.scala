@@ -1,7 +1,7 @@
 package typings.dwt.anon
 
-import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType
-import typings.dwt.webTwainAcquireMod.TiffTag
+import typings.dwt.dynamsoftDotEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType
+import typings.dwt.webTwainDotAcquireMod.TiffTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

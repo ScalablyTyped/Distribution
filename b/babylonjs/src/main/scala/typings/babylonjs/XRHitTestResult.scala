@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XRHitTestResult extends StObject {
   
   // When anchor system is enabled
-  var createAnchor: js.UndefOr[js.Function1[/* pose */ XRRigidTransform, js.Promise[XRAnchor]]] = js.undefined
+  var createAnchor: js.UndefOr[js.Function1[/* pose */ XRRigidTransform, js.UndefOr[js.Promise[XRAnchor]]]] = js.undefined
   
   def getPose(baseSpace: XRSpace): js.UndefOr[XRPose]
 }
@@ -20,7 +20,7 @@ object XRHitTestResult {
   
   extension [Self <: XRHitTestResult](x: Self) {
     
-    inline def setCreateAnchor(value: /* pose */ XRRigidTransform => js.Promise[XRAnchor]): Self = StObject.set(x, "createAnchor", js.Any.fromFunction1(value))
+    inline def setCreateAnchor(value: /* pose */ XRRigidTransform => js.UndefOr[js.Promise[XRAnchor]]): Self = StObject.set(x, "createAnchor", js.Any.fromFunction1(value))
     
     inline def setCreateAnchorUndefined: Self = StObject.set(x, "createAnchor", js.undefined)
     

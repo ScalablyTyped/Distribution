@@ -1,8 +1,8 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.loggerMod.LogLevel
-import typings.angularCompilerCli.ngccOptionsMod.AsyncNgccOptions
-import typings.angularCompilerCli.ngccOptionsMod.SyncNgccOptions
+import typings.angularCompilerCli.ngccSrcNgccOptionsMod.AsyncNgccOptions
+import typings.angularCompilerCli.ngccSrcNgccOptionsMod.SyncNgccOptions
+import typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object ngccMod {
   @JSImport("@angular/compiler-cli/ngcc", "ConsoleLogger")
   @js.native
   open class ConsoleLogger protected ()
-    extends typings.angularCompilerCli.loggingMod.ConsoleLogger {
+    extends typings.angularCompilerCli.srcNgtscLoggingMod.ConsoleLogger {
     def this(level: LogLevel) = this()
   }
   
@@ -25,15 +25,15 @@ object ngccMod {
   object LogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularCompilerCli.loggerMod.LogLevel & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel & Double] = js.native
     
-    /* 0 */ val debug: typings.angularCompilerCli.loggerMod.LogLevel.debug & Double = js.native
+    /* 0 */ val debug: typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel.debug & Double = js.native
     
-    /* 3 */ val error: typings.angularCompilerCli.loggerMod.LogLevel.error & Double = js.native
+    /* 3 */ val error: typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel.error & Double = js.native
     
-    /* 1 */ val info: typings.angularCompilerCli.loggerMod.LogLevel.info & Double = js.native
+    /* 1 */ val info: typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel.info & Double = js.native
     
-    /* 2 */ val warn: typings.angularCompilerCli.loggerMod.LogLevel.warn & Double = js.native
+    /* 2 */ val warn: typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel.warn & Double = js.native
   }
   
   inline def clearTsConfigCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTsConfigCache")().asInstanceOf[Unit]
@@ -46,6 +46,6 @@ object ngccMod {
   @js.native
   val ngccMainFilePath: String = js.native
   
-  inline def process(options: AsyncNgccOptions): Unit | js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(options.asInstanceOf[js.Any]).asInstanceOf[Unit | js.Promise[Unit]]
-  inline def process(options: SyncNgccOptions): Unit | js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(options.asInstanceOf[js.Any]).asInstanceOf[Unit | js.Promise[Unit]]
+  inline def process(options: AsyncNgccOptions): /* import warning: importer.ImportType#apply Failed type conversion: @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.AsyncNgccOptions extends @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.AsyncNgccOptions ? std.Promise<void> : void */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(options.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.AsyncNgccOptions extends @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.AsyncNgccOptions ? std.Promise<void> : void */ js.Any]
+  inline def process(options: SyncNgccOptions): /* import warning: importer.ImportType#apply Failed type conversion: @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.SyncNgccOptions extends @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.AsyncNgccOptions ? std.Promise<void> : void */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(options.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.SyncNgccOptions extends @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.AsyncNgccOptions ? std.Promise<void> : void */ js.Any]
 }

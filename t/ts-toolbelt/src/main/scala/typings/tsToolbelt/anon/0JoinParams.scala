@@ -1,12 +1,12 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.curryMod._JoinParams
-import typings.tsToolbelt.tailMod.Tail
+import typings.tsToolbelt.outFunctionCurryMod._JoinParams
+import typings.tsToolbelt.outListTailMod.Tail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0JoinParams`[PSplit /* <: js.Array[typings.tsToolbelt.listMod.List[Any]] */, L /* <: typings.tsToolbelt.listMod.List[Any] */] extends StObject {
+trait `0JoinParams`[PSplit /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */, L /* <: typings.tsToolbelt.outListListMod.List[Any] */] extends StObject {
   
   var `0`: _JoinParams[
     Tail[PSplit], 
@@ -21,7 +21,7 @@ trait `0JoinParams`[PSplit /* <: js.Array[typings.tsToolbelt.listMod.List[Any]] 
 }
 object `0JoinParams` {
   
-  inline def apply[PSplit /* <: js.Array[typings.tsToolbelt.listMod.List[Any]] */, L /* <: typings.tsToolbelt.listMod.List[Any] */](
+  inline def apply[PSplit /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */, L /* <: typings.tsToolbelt.outListListMod.List[Any] */](
     `0`: _JoinParams[
       Tail[PSplit], 
       /* import warning: importer.ImportType#apply c repeated non-array type: L */ js.Array[L]
@@ -38,7 +38,7 @@ object `0JoinParams` {
     __obj.asInstanceOf[`0JoinParams`[PSplit, L]]
   }
   
-  extension [Self <: `0JoinParams`[?, ?], PSplit /* <: js.Array[typings.tsToolbelt.listMod.List[Any]] */, L /* <: typings.tsToolbelt.listMod.List[Any] */](x: Self & (`0JoinParams`[PSplit, L])) {
+  extension [Self <: `0JoinParams`[?, ?], PSplit /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */, L /* <: typings.tsToolbelt.outListListMod.List[Any] */](x: Self & (`0JoinParams`[PSplit, L])) {
     
     inline def set0(
       value: _JoinParams[

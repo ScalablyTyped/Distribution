@@ -27,16 +27,16 @@ object mod {
     *
     * @public
     */
-  inline def default(): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def default(uri: String): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def default(uri: String, opts: PartialManagerOptionsSock): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def default(uri: PartialManagerOptionsSock): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def default(uri: PartialManagerOptionsSock, opts: PartialManagerOptionsSock): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def default(): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def default(uri: String): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def default(uri: String, opts: PartialManagerOptionsSock): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def default(uri: PartialManagerOptionsSock): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def default(uri: PartialManagerOptionsSock, opts: PartialManagerOptionsSock): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
   
   @JSImport("socket.io-client", "Manager")
   @js.native
   open class Manager[ListenEvents /* <: EventsMap */, EmitEvents /* <: EventsMap */] ()
-    extends typings.socketIoClient.managerMod.Manager[ListenEvents, EmitEvents] {
+    extends typings.socketIoClient.buildEsmManagerMod.Manager[ListenEvents, EmitEvents] {
     /**
       * `Manager` constructor.
       *
@@ -54,15 +54,16 @@ object mod {
   @JSImport("socket.io-client", "Socket")
   @js.native
   open class Socket[ListenEvents /* <: EventsMap */, EmitEvents /* <: EventsMap */] protected ()
-    extends typings.socketIoClient.socketMod.Socket[ListenEvents, EmitEvents] {
+    extends typings.socketIoClient.buildEsmSocketMod.Socket[ListenEvents, EmitEvents] {
     /**
       * `Socket` constructor.
-      *
-      * @public
       */
-    def this(io: typings.socketIoClient.managerMod.Manager[DefaultEventsMap, DefaultEventsMap], nsp: String) = this()
     def this(
-      io: typings.socketIoClient.managerMod.Manager[DefaultEventsMap, DefaultEventsMap],
+      io: typings.socketIoClient.buildEsmManagerMod.Manager[DefaultEventsMap, DefaultEventsMap],
+      nsp: String
+    ) = this()
+    def this(
+      io: typings.socketIoClient.buildEsmManagerMod.Manager[DefaultEventsMap, DefaultEventsMap],
       nsp: String,
       opts: PartialSocketOptions
     ) = this()
@@ -80,11 +81,11 @@ object mod {
     *
     * @public
     */
-  inline def connect(): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def connect(uri: String): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def connect(uri: String, opts: PartialManagerOptionsSock): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def connect(uri: PartialManagerOptionsSock): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def connect(uri: PartialManagerOptionsSock, opts: PartialManagerOptionsSock): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def connect(): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def connect(uri: String): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def connect(uri: String, opts: PartialManagerOptionsSock): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def connect(uri: PartialManagerOptionsSock): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def connect(uri: PartialManagerOptionsSock, opts: PartialManagerOptionsSock): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
   
   /**
     * Looks up an existing `Manager` for multiplexing.
@@ -98,11 +99,11 @@ object mod {
     *
     * @public
     */
-  inline def io(): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("io")().asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def io(uri: String): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("io")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def io(uri: String, opts: PartialManagerOptionsSock): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("io")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def io(uri: PartialManagerOptionsSock): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("io")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def io(uri: PartialManagerOptionsSock, opts: PartialManagerOptionsSock): typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("io")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.socketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def io(): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("io")().asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def io(uri: String): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("io")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def io(uri: String, opts: PartialManagerOptionsSock): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("io")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def io(uri: PartialManagerOptionsSock): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("io")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
+  inline def io(uri: PartialManagerOptionsSock, opts: PartialManagerOptionsSock): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("io")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
   
   @JSImport("socket.io-client", "protocol")
   @js.native

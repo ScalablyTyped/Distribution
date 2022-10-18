@@ -10,9 +10,7 @@ import typings.mithril.mod.RequestOptions
 import typings.mithril.mod.Vnode
 import typings.mithril.mod.VnodeDOM
 import typings.mithril.mod._ComponentTypes
-import typings.std.Document
 import typings.std.Element
-import typings.std.XMLHttpRequestBodyInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,14 +108,6 @@ object anon {
   
   @js.native
   trait FnCall extends StObject {
-    
-    def apply(): Unit = js.native
-    def apply(body: Document): Unit = js.native
-    def apply(body: XMLHttpRequestBodyInit): Unit = js.native
-  }
-  
-  @js.native
-  trait FnCallElementComponent extends StObject {
     
     def apply(element: Element, component: Null): Unit = js.native
     def apply(element: Element, component: ComponentTypes[Any, Any]): Unit = js.native

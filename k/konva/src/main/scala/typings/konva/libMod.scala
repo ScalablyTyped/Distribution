@@ -11,19 +11,19 @@ import typings.konva.anon.TypeofImage
 import typings.konva.anon.TypeofNode
 import typings.konva.anon.TypeofPath
 import typings.konva.anon.TypeofTween
-import typings.konva.canvasMod.ICanvasConfig
-import typings.konva.imageMod.ImageConfig
-import typings.konva.layerMod.LayerConfig
-import typings.konva.lineMod.LineConfig
-import typings.konva.nodeMod.NodeConfig
-import typings.konva.pathMod.PathConfig
-import typings.konva.shapeMod.ShapeConfig
-import typings.konva.stageMod.StageConfig
-import typings.konva.textMod.TextConfig
-import typings.konva.textPathMod.TextPathConfig
-import typings.konva.transformerMod.TransformerConfig
-import typings.konva.tweenMod.TweenConfig
-import typings.konva.typesMod.AnimationFn
+import typings.konva.libCanvasMod.ICanvasConfig
+import typings.konva.libLayerMod.LayerConfig
+import typings.konva.libNodeMod.NodeConfig
+import typings.konva.libShapeMod.ShapeConfig
+import typings.konva.libShapesImageMod.ImageConfig
+import typings.konva.libShapesLineMod.LineConfig
+import typings.konva.libShapesPathMod.PathConfig
+import typings.konva.libShapesTextMod.TextConfig
+import typings.konva.libShapesTextPathMod.TextPathConfig
+import typings.konva.libShapesTransformerMod.TransformerConfig
+import typings.konva.libStageMod.StageConfig
+import typings.konva.libTweenMod.TweenConfig
+import typings.konva.libTypesMod.AnimationFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +40,7 @@ object libMod {
     @JSImport("konva/lib", "default.Animation")
     @js.native
     open class Animation protected ()
-      extends typings.konva.animationMod.Animation {
+      extends typings.konva.libAnimationMod.Animation {
       def this(func: AnimationFn) = this()
       def this(func: AnimationFn, layers: Any) = this()
     }
@@ -53,65 +53,79 @@ object libMod {
     @JSImport("konva/lib", "default.Arc")
     @js.native
     open class Arc ()
-      extends typings.konva.arcMod.Arc
+      extends typings.konva.libShapesArcMod.Arc
     @JSImport("konva/lib", "default.Arc")
     @js.native
-    def Arc: Instantiable0[typings.konva.arcMod.Arc] = js.native
-    inline def Arc_=(x: Instantiable0[typings.konva.arcMod.Arc]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arc")(x.asInstanceOf[js.Any])
+    def Arc: Instantiable0[typings.konva.libShapesArcMod.Arc] = js.native
+    inline def Arc_=(x: Instantiable0[typings.konva.libShapesArcMod.Arc]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arc")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Arrow")
     @js.native
     open class Arrow ()
-      extends typings.konva.arrowMod.Arrow
+      extends typings.konva.libShapesArrowMod.Arrow
     @JSImport("konva/lib", "default.Arrow")
     @js.native
-    def Arrow: Instantiable0[typings.konva.arrowMod.Arrow] = js.native
-    inline def Arrow_=(x: Instantiable0[typings.konva.arrowMod.Arrow]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arrow")(x.asInstanceOf[js.Any])
+    def Arrow: Instantiable0[typings.konva.libShapesArrowMod.Arrow] = js.native
+    inline def Arrow_=(x: Instantiable0[typings.konva.libShapesArrowMod.Arrow]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arrow")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Canvas")
     @js.native
     open class Canvas protected ()
-      extends typings.konva.canvasMod.Canvas {
+      extends typings.konva.libCanvasMod.Canvas {
       def this(config: ICanvasConfig) = this()
     }
     @JSImport("konva/lib", "default.Canvas")
     @js.native
-    def Canvas: Instantiable1[/* config */ ICanvasConfig, typings.konva.canvasMod.Canvas] = js.native
-    inline def Canvas_=(x: Instantiable1[/* config */ ICanvasConfig, typings.konva.canvasMod.Canvas]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Canvas")(x.asInstanceOf[js.Any])
+    def Canvas: Instantiable1[/* config */ ICanvasConfig, typings.konva.libCanvasMod.Canvas] = js.native
+    inline def Canvas_=(x: Instantiable1[/* config */ ICanvasConfig, typings.konva.libCanvasMod.Canvas]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Canvas")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Circle")
     @js.native
     open class Circle ()
-      extends typings.konva.circleMod.Circle
+      extends typings.konva.libShapesCircleMod.Circle
     @JSImport("konva/lib", "default.Circle")
     @js.native
-    def Circle: Instantiable0[typings.konva.circleMod.Circle] = js.native
-    inline def Circle_=(x: Instantiable0[typings.konva.circleMod.Circle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Circle")(x.asInstanceOf[js.Any])
+    def Circle: Instantiable0[typings.konva.libShapesCircleMod.Circle] = js.native
+    inline def Circle_=(x: Instantiable0[typings.konva.libShapesCircleMod.Circle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Circle")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Container")
     @js.native
-    open class Container[ChildType /* <: typings.konva.nodeMod.Node[NodeConfig] */] ()
-      extends typings.konva.containerMod.Container[ChildType]
+    open class Container[ChildType /* <: typings.konva.libNodeMod.Node[NodeConfig] */] ()
+      extends typings.konva.libContainerMod.Container[ChildType]
     @JSImport("konva/lib", "default.Container")
     @js.native
-    def Container: Instantiable0[typings.konva.containerMod.Container[typings.konva.nodeMod.Node[NodeConfig]]] = js.native
-    inline def Container_=(x: Instantiable0[typings.konva.containerMod.Container[typings.konva.nodeMod.Node[NodeConfig]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Container")(x.asInstanceOf[js.Any])
+    def Container: Instantiable0[
+        typings.konva.libContainerMod.Container[typings.konva.libNodeMod.Node[NodeConfig]]
+      ] = js.native
+    inline def Container_=(
+      x: Instantiable0[
+          typings.konva.libContainerMod.Container[typings.konva.libNodeMod.Node[NodeConfig]]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Container")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Context")
     @js.native
     open class Context protected ()
-      extends typings.konva.contextMod.Context {
-      def this(canvas: typings.konva.canvasMod.Canvas) = this()
+      extends typings.konva.libContextMod.Context {
+      def this(canvas: typings.konva.libCanvasMod.Canvas) = this()
     }
     @JSImport("konva/lib", "default.Context")
     @js.native
-    def Context: Instantiable1[/* canvas */ typings.konva.canvasMod.Canvas, typings.konva.contextMod.Context] = js.native
-    inline def Context_=(x: Instantiable1[/* canvas */ typings.konva.canvasMod.Canvas, typings.konva.contextMod.Context]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Context")(x.asInstanceOf[js.Any])
+    def Context: Instantiable1[
+        /* canvas */ typings.konva.libCanvasMod.Canvas, 
+        typings.konva.libContextMod.Context
+      ] = js.native
+    inline def Context_=(
+      x: Instantiable1[
+          /* canvas */ typings.konva.libCanvasMod.Canvas, 
+          typings.konva.libContextMod.Context
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Context")(x.asInstanceOf[js.Any])
     
     @JSImport("konva/lib", "default.DD")
     @js.native
@@ -127,23 +141,23 @@ object libMod {
     @JSImport("konva/lib", "default.Ellipse")
     @js.native
     open class Ellipse ()
-      extends typings.konva.ellipseMod.Ellipse
+      extends typings.konva.libShapesEllipseMod.Ellipse
     @JSImport("konva/lib", "default.Ellipse")
     @js.native
-    def Ellipse: Instantiable0[typings.konva.ellipseMod.Ellipse] = js.native
-    inline def Ellipse_=(x: Instantiable0[typings.konva.ellipseMod.Ellipse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ellipse")(x.asInstanceOf[js.Any])
+    def Ellipse: Instantiable0[typings.konva.libShapesEllipseMod.Ellipse] = js.native
+    inline def Ellipse_=(x: Instantiable0[typings.konva.libShapesEllipseMod.Ellipse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ellipse")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.FastLayer")
     @js.native
     open class FastLayer protected ()
-      extends typings.konva.fastLayerMod.FastLayer {
+      extends typings.konva.libFastLayerMod.FastLayer {
       def this(attrs: Any) = this()
     }
     @JSImport("konva/lib", "default.FastLayer")
     @js.native
-    def FastLayer: Instantiable1[/* attrs */ Any, typings.konva.fastLayerMod.FastLayer] = js.native
-    inline def FastLayer_=(x: Instantiable1[/* attrs */ Any, typings.konva.fastLayerMod.FastLayer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FastLayer")(x.asInstanceOf[js.Any])
+    def FastLayer: Instantiable1[/* attrs */ Any, typings.konva.libFastLayerMod.FastLayer] = js.native
+    inline def FastLayer_=(x: Instantiable1[/* attrs */ Any, typings.konva.libFastLayerMod.FastLayer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FastLayer")(x.asInstanceOf[js.Any])
     
     @JSImport("konva/lib", "default.Filters")
     @js.native
@@ -154,17 +168,17 @@ object libMod {
     @JSImport("konva/lib", "default.Group")
     @js.native
     open class Group ()
-      extends typings.konva.groupMod.Group
+      extends typings.konva.libGroupMod.Group
     @JSImport("konva/lib", "default.Group")
     @js.native
-    def Group: Instantiable0[typings.konva.groupMod.Group] = js.native
-    inline def Group_=(x: Instantiable0[typings.konva.groupMod.Group]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
+    def Group: Instantiable0[typings.konva.libGroupMod.Group] = js.native
+    inline def Group_=(x: Instantiable0[typings.konva.libGroupMod.Group]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Image")
     @js.native
     open class Image protected ()
-      extends typings.konva.imageMod.Image {
+      extends typings.konva.libShapesImageMod.Image {
       def this(attrs: ImageConfig) = this()
     }
     @JSImport("konva/lib", "default.Image")
@@ -176,43 +190,43 @@ object libMod {
     @JSImport("konva/lib", "default.Label")
     @js.native
     open class Label ()
-      extends typings.konva.labelMod.Label {
+      extends typings.konva.libShapesLabelMod.Label {
       def this(config: Any) = this()
     }
     @JSImport("konva/lib", "default.Label")
     @js.native
-    def Label: Instantiable1[/* config */ js.UndefOr[Any], typings.konva.labelMod.Label] = js.native
-    inline def Label_=(x: Instantiable1[/* config */ js.UndefOr[Any], typings.konva.labelMod.Label]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
+    def Label: Instantiable1[/* config */ js.UndefOr[Any], typings.konva.libShapesLabelMod.Label] = js.native
+    inline def Label_=(x: Instantiable1[/* config */ js.UndefOr[Any], typings.konva.libShapesLabelMod.Label]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Layer")
     @js.native
     open class Layer ()
-      extends typings.konva.layerMod.Layer {
+      extends typings.konva.libLayerMod.Layer {
       def this(config: LayerConfig) = this()
     }
     @JSImport("konva/lib", "default.Layer")
     @js.native
-    def Layer: Instantiable1[/* config */ js.UndefOr[LayerConfig], typings.konva.layerMod.Layer] = js.native
-    inline def Layer_=(x: Instantiable1[/* config */ js.UndefOr[LayerConfig], typings.konva.layerMod.Layer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Layer")(x.asInstanceOf[js.Any])
+    def Layer: Instantiable1[/* config */ js.UndefOr[LayerConfig], typings.konva.libLayerMod.Layer] = js.native
+    inline def Layer_=(x: Instantiable1[/* config */ js.UndefOr[LayerConfig], typings.konva.libLayerMod.Layer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Layer")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Line")
     @js.native
     open class Line[Config /* <: LineConfig */] ()
-      extends typings.konva.lineMod.Line[Config] {
+      extends typings.konva.libShapesLineMod.Line[Config] {
       def this(config: /* import warning: RewrittenClass.unapply cls was tparam Config */ Any) = this()
     }
     @JSImport("konva/lib", "default.Line")
     @js.native
     def Line: Instantiable1[
         /* config */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam Config */ Any], 
-        typings.konva.lineMod.Line[LineConfig]
+        typings.konva.libShapesLineMod.Line[LineConfig]
       ] = js.native
     inline def Line_=(
       x: Instantiable1[
           /* config */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam Config */ Any], 
-          typings.konva.lineMod.Line[LineConfig]
+          typings.konva.libShapesLineMod.Line[LineConfig]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Line")(x.asInstanceOf[js.Any])
     
@@ -220,7 +234,7 @@ object libMod {
     @JSImport("konva/lib", "default.Node")
     @js.native
     open class Node[Config /* <: NodeConfig */] ()
-      extends typings.konva.nodeMod.Node[Config] {
+      extends typings.konva.libNodeMod.Node[Config] {
       def this(config: /* import warning: RewrittenClass.unapply cls was tparam Config */ Any) = this()
     }
     @JSImport("konva/lib", "default.Node")
@@ -232,7 +246,7 @@ object libMod {
     @JSImport("konva/lib", "default.Path")
     @js.native
     open class Path ()
-      extends typings.konva.pathMod.Path {
+      extends typings.konva.libShapesPathMod.Path {
       def this(config: PathConfig) = this()
     }
     @JSImport("konva/lib", "default.Path")
@@ -244,49 +258,49 @@ object libMod {
     @JSImport("konva/lib", "default.Rect")
     @js.native
     open class Rect ()
-      extends typings.konva.rectMod.Rect
+      extends typings.konva.libShapesRectMod.Rect
     @JSImport("konva/lib", "default.Rect")
     @js.native
-    def Rect: Instantiable0[typings.konva.rectMod.Rect] = js.native
-    inline def Rect_=(x: Instantiable0[typings.konva.rectMod.Rect]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rect")(x.asInstanceOf[js.Any])
+    def Rect: Instantiable0[typings.konva.libShapesRectMod.Rect] = js.native
+    inline def Rect_=(x: Instantiable0[typings.konva.libShapesRectMod.Rect]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rect")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.RegularPolygon")
     @js.native
     open class RegularPolygon ()
-      extends typings.konva.regularPolygonMod.RegularPolygon
+      extends typings.konva.libShapesRegularPolygonMod.RegularPolygon
     @JSImport("konva/lib", "default.RegularPolygon")
     @js.native
-    def RegularPolygon: Instantiable0[typings.konva.regularPolygonMod.RegularPolygon] = js.native
-    inline def RegularPolygon_=(x: Instantiable0[typings.konva.regularPolygonMod.RegularPolygon]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RegularPolygon")(x.asInstanceOf[js.Any])
+    def RegularPolygon: Instantiable0[typings.konva.libShapesRegularPolygonMod.RegularPolygon] = js.native
+    inline def RegularPolygon_=(x: Instantiable0[typings.konva.libShapesRegularPolygonMod.RegularPolygon]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RegularPolygon")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Ring")
     @js.native
     open class Ring ()
-      extends typings.konva.ringMod.Ring
+      extends typings.konva.libShapesRingMod.Ring
     @JSImport("konva/lib", "default.Ring")
     @js.native
-    def Ring: Instantiable0[typings.konva.ringMod.Ring] = js.native
-    inline def Ring_=(x: Instantiable0[typings.konva.ringMod.Ring]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ring")(x.asInstanceOf[js.Any])
+    def Ring: Instantiable0[typings.konva.libShapesRingMod.Ring] = js.native
+    inline def Ring_=(x: Instantiable0[typings.konva.libShapesRingMod.Ring]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ring")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Shape")
     @js.native
     open class Shape[Config /* <: ShapeConfig */] ()
-      extends typings.konva.shapeMod.Shape[Config] {
+      extends typings.konva.libShapeMod.Shape[Config] {
       def this(config: /* import warning: RewrittenClass.unapply cls was tparam Config */ Any) = this()
     }
     @JSImport("konva/lib", "default.Shape")
     @js.native
     def Shape: Instantiable1[
         /* config */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam Config */ Any], 
-        typings.konva.shapeMod.Shape[ShapeConfig]
+        typings.konva.libShapeMod.Shape[ShapeConfig]
       ] = js.native
     inline def Shape_=(
       x: Instantiable1[
           /* config */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam Config */ Any], 
-          typings.konva.shapeMod.Shape[ShapeConfig]
+          typings.konva.libShapeMod.Shape[ShapeConfig]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Shape")(x.asInstanceOf[js.Any])
     
@@ -294,100 +308,108 @@ object libMod {
     @JSImport("konva/lib", "default.Sprite")
     @js.native
     open class Sprite protected ()
-      extends typings.konva.spriteMod.Sprite {
+      extends typings.konva.libShapesSpriteMod.Sprite {
       def this(config: Any) = this()
     }
     @JSImport("konva/lib", "default.Sprite")
     @js.native
-    def Sprite: Instantiable1[/* config */ Any, typings.konva.spriteMod.Sprite] = js.native
-    inline def Sprite_=(x: Instantiable1[/* config */ Any, typings.konva.spriteMod.Sprite]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sprite")(x.asInstanceOf[js.Any])
+    def Sprite: Instantiable1[/* config */ Any, typings.konva.libShapesSpriteMod.Sprite] = js.native
+    inline def Sprite_=(x: Instantiable1[/* config */ Any, typings.konva.libShapesSpriteMod.Sprite]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sprite")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Stage")
     @js.native
     open class Stage protected ()
-      extends typings.konva.stageMod.Stage {
+      extends typings.konva.libStageMod.Stage {
       def this(config: StageConfig) = this()
     }
     @JSImport("konva/lib", "default.Stage")
     @js.native
-    def Stage: Instantiable1[/* config */ StageConfig, typings.konva.stageMod.Stage] = js.native
-    inline def Stage_=(x: Instantiable1[/* config */ StageConfig, typings.konva.stageMod.Stage]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stage")(x.asInstanceOf[js.Any])
+    def Stage: Instantiable1[/* config */ StageConfig, typings.konva.libStageMod.Stage] = js.native
+    inline def Stage_=(x: Instantiable1[/* config */ StageConfig, typings.konva.libStageMod.Stage]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stage")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Star")
     @js.native
     open class Star ()
-      extends typings.konva.starMod.Star
+      extends typings.konva.libShapesStarMod.Star
     @JSImport("konva/lib", "default.Star")
     @js.native
-    def Star: Instantiable0[typings.konva.starMod.Star] = js.native
-    inline def Star_=(x: Instantiable0[typings.konva.starMod.Star]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Star")(x.asInstanceOf[js.Any])
+    def Star: Instantiable0[typings.konva.libShapesStarMod.Star] = js.native
+    inline def Star_=(x: Instantiable0[typings.konva.libShapesStarMod.Star]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Star")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Tag")
     @js.native
     open class Tag ()
-      extends typings.konva.labelMod.Tag
+      extends typings.konva.libShapesLabelMod.Tag
     @JSImport("konva/lib", "default.Tag")
     @js.native
-    def Tag: Instantiable0[typings.konva.labelMod.Tag] = js.native
-    inline def Tag_=(x: Instantiable0[typings.konva.labelMod.Tag]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tag")(x.asInstanceOf[js.Any])
+    def Tag: Instantiable0[typings.konva.libShapesLabelMod.Tag] = js.native
+    inline def Tag_=(x: Instantiable0[typings.konva.libShapesLabelMod.Tag]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tag")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Text")
     @js.native
     open class Text ()
-      extends typings.konva.textMod.Text {
+      extends typings.konva.libShapesTextMod.Text {
       def this(config: TextConfig) = this()
     }
     @JSImport("konva/lib", "default.Text")
     @js.native
-    def Text: Instantiable1[/* config */ js.UndefOr[TextConfig], typings.konva.textMod.Text] = js.native
+    def Text: Instantiable1[/* config */ js.UndefOr[TextConfig], typings.konva.libShapesTextMod.Text] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.TextPath")
     @js.native
     open class TextPath ()
-      extends typings.konva.textPathMod.TextPath {
+      extends typings.konva.libShapesTextPathMod.TextPath {
       def this(config: TextPathConfig) = this()
     }
     @JSImport("konva/lib", "default.TextPath")
     @js.native
-    def TextPath: Instantiable1[/* config */ js.UndefOr[TextPathConfig], typings.konva.textPathMod.TextPath] = js.native
-    inline def TextPath_=(x: Instantiable1[/* config */ js.UndefOr[TextPathConfig], typings.konva.textPathMod.TextPath]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextPath")(x.asInstanceOf[js.Any])
+    def TextPath: Instantiable1[
+        /* config */ js.UndefOr[TextPathConfig], 
+        typings.konva.libShapesTextPathMod.TextPath
+      ] = js.native
+    inline def TextPath_=(
+      x: Instantiable1[
+          /* config */ js.UndefOr[TextPathConfig], 
+          typings.konva.libShapesTextPathMod.TextPath
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextPath")(x.asInstanceOf[js.Any])
     
-    inline def Text_=(x: Instantiable1[/* config */ js.UndefOr[TextConfig], typings.konva.textMod.Text]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
+    inline def Text_=(x: Instantiable1[/* config */ js.UndefOr[TextConfig], typings.konva.libShapesTextMod.Text]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Transform")
     @js.native
     open class Transform ()
-      extends typings.konva.utilMod.Transform {
+      extends typings.konva.libUtilMod.Transform {
       def this(m: js.Array[Double]) = this()
     }
     @JSImport("konva/lib", "default.Transform")
     @js.native
-    def Transform: Instantiable1[/* m */ js.UndefOr[js.Array[Double]], typings.konva.utilMod.Transform] = js.native
-    inline def Transform_=(x: Instantiable1[/* m */ js.UndefOr[js.Array[Double]], typings.konva.utilMod.Transform]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transform")(x.asInstanceOf[js.Any])
+    def Transform: Instantiable1[/* m */ js.UndefOr[js.Array[Double]], typings.konva.libUtilMod.Transform] = js.native
+    inline def Transform_=(x: Instantiable1[/* m */ js.UndefOr[js.Array[Double]], typings.konva.libUtilMod.Transform]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transform")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Transformer")
     @js.native
     open class Transformer ()
-      extends typings.konva.transformerMod.Transformer {
+      extends typings.konva.libShapesTransformerMod.Transformer {
       def this(config: TransformerConfig) = this()
     }
     @JSImport("konva/lib", "default.Transformer")
     @js.native
     def Transformer: Instantiable1[
         /* config */ js.UndefOr[TransformerConfig], 
-        typings.konva.transformerMod.Transformer
+        typings.konva.libShapesTransformerMod.Transformer
       ] = js.native
     inline def Transformer_=(
       x: Instantiable1[
           /* config */ js.UndefOr[TransformerConfig], 
-          typings.konva.transformerMod.Transformer
+          typings.konva.libShapesTransformerMod.Transformer
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transformer")(x.asInstanceOf[js.Any])
     
@@ -395,7 +417,7 @@ object libMod {
     @JSImport("konva/lib", "default.Tween")
     @js.native
     open class Tween protected ()
-      extends typings.konva.tweenMod.Tween {
+      extends typings.konva.libTweenMod.Tween {
       def this(config: TweenConfig) = this()
     }
     @JSImport("konva/lib", "default.Tween")
@@ -412,11 +434,11 @@ object libMod {
     @JSImport("konva/lib", "default.Wedge")
     @js.native
     open class Wedge ()
-      extends typings.konva.wedgeMod.Wedge
+      extends typings.konva.libShapesWedgeMod.Wedge
     @JSImport("konva/lib", "default.Wedge")
     @js.native
-    def Wedge: Instantiable0[typings.konva.wedgeMod.Wedge] = js.native
-    inline def Wedge_=(x: Instantiable0[typings.konva.wedgeMod.Wedge]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Wedge")(x.asInstanceOf[js.Any])
+    def Wedge: Instantiable0[typings.konva.libShapesWedgeMod.Wedge] = js.native
+    inline def Wedge_=(x: Instantiable0[typings.konva.libShapesWedgeMod.Wedge]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Wedge")(x.asInstanceOf[js.Any])
     
     @JSImport("konva/lib", "default.angleDeg")
     @js.native
@@ -540,8 +562,8 @@ object libMod {
     
     @JSImport("konva/lib", "default.stages")
     @js.native
-    def stages: js.Array[typings.konva.stageMod.Stage] = js.native
-    inline def stages_=(x: js.Array[typings.konva.stageMod.Stage]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stages")(x.asInstanceOf[js.Any])
+    def stages: js.Array[typings.konva.libStageMod.Stage] = js.native
+    inline def stages_=(x: js.Array[typings.konva.libStageMod.Stage]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stages")(x.asInstanceOf[js.Any])
     
     @JSImport("konva/lib", "default._touchDblClickPointerId")
     @js.native

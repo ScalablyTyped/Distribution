@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Checked extends StObject {
   
-  var checked: js.Array[typings.rcTree.interfaceMod.Key]
+  var checked: js.Array[typings.rcTree.esInterfaceMod.Key]
   
-  var halfChecked: js.Array[typings.rcTree.interfaceMod.Key]
+  var halfChecked: js.Array[typings.rcTree.esInterfaceMod.Key]
 }
 object Checked {
   
   inline def apply(
-    checked: js.Array[typings.rcTree.interfaceMod.Key],
-    halfChecked: js.Array[typings.rcTree.interfaceMod.Key]
+    checked: js.Array[typings.rcTree.esInterfaceMod.Key],
+    halfChecked: js.Array[typings.rcTree.esInterfaceMod.Key]
   ): Checked = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], halfChecked = halfChecked.asInstanceOf[js.Any])
     __obj.asInstanceOf[Checked]
@@ -22,12 +22,12 @@ object Checked {
   
   extension [Self <: Checked](x: Self) {
     
-    inline def setChecked(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: js.Array[typings.rcTree.esInterfaceMod.Key]): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    inline def setCheckedVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "checked", js.Array(value*))
+    inline def setCheckedVarargs(value: typings.rcTree.esInterfaceMod.Key*): Self = StObject.set(x, "checked", js.Array(value*))
     
-    inline def setHalfChecked(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "halfChecked", value.asInstanceOf[js.Any])
+    inline def setHalfChecked(value: js.Array[typings.rcTree.esInterfaceMod.Key]): Self = StObject.set(x, "halfChecked", value.asInstanceOf[js.Any])
     
-    inline def setHalfCheckedVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "halfChecked", js.Array(value*))
+    inline def setHalfCheckedVarargs(value: typings.rcTree.esInterfaceMod.Key*): Self = StObject.set(x, "halfChecked", js.Array(value*))
   }
 }

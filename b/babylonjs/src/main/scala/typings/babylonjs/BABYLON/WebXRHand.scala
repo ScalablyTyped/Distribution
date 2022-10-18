@@ -52,7 +52,7 @@ trait WebXRHand
     * @param jointName The name of the joint.
     * @returns An AbstractMesh whose position corresponds with the joint position.
     */
-  def getJointMesh(jointName: XRHandJoint): AbstractMesh = js.native
+  def getJointMesh(jointName: WebXRHandJoint): AbstractMesh = js.native
   
   /**
     * Get the hand mesh.

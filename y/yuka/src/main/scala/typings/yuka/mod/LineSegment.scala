@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [to=Vector3(0,0,0)] - The end point of the line segment.
   */
 open class LineSegment ()
-  extends typings.yuka.yukaMod.LineSegment {
-  def this(from: typings.yuka.vector3Mod.Vector3) = this()
-  def this(from: Unit, to: typings.yuka.vector3Mod.Vector3) = this()
-  def this(from: typings.yuka.vector3Mod.Vector3, to: typings.yuka.vector3Mod.Vector3) = this()
+  extends typings.yuka.srcYukaMod.LineSegment {
+  def this(from: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(from: Unit, to: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(from: typings.yuka.srcMathVector3Mod.Vector3, to: typings.yuka.srcMathVector3Mod.Vector3) = this()
 }

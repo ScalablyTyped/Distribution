@@ -11,5 +11,5 @@ trait TypeofCapsuleGeometry
   extends StObject
      with Instantiable0[CapsuleGeometry] {
   
-  def fromJSON(data: Any): typings.three.capsuleGeometryMod.CapsuleGeometry = js.native
+  def fromJSON(data: Any): typings.three.srcGeometriesCapsuleGeometryMod.CapsuleGeometry = js.native
 }

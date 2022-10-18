@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DarkLight extends StObject {
   
-  var dark: js.UndefOr[Medium] = js.undefined
+  var dark: js.UndefOr[None] = js.undefined
   
-  var light: js.UndefOr[Medium] = js.undefined
+  var light: js.UndefOr[None] = js.undefined
 }
 object DarkLight {
   
@@ -19,11 +19,11 @@ object DarkLight {
   
   extension [Self <: DarkLight](x: Self) {
     
-    inline def setDark(value: Medium): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDark(value: None): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
     inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
     
-    inline def setLight(value: Medium): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: None): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
     inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
   }

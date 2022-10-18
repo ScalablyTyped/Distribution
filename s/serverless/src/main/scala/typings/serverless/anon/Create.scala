@@ -1,6 +1,6 @@
 package typings.serverless.anon
 
-import typings.serverless.pluginMod.Progress
+import typings.serverless.classesPluginMod.Progress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

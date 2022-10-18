@@ -1,6 +1,6 @@
 package typings.reactNativeCommunityCliPlatformAndroid.anon
 
-import typings.reactNativeCommunityCliPlatformAndroid.runAndroidMod.Flags
+import typings.reactNativeCommunityCliPlatformAndroid.buildCommandsRunAndroidMod.Flags
 import typings.reactNativeCommunityCliTypes.mod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

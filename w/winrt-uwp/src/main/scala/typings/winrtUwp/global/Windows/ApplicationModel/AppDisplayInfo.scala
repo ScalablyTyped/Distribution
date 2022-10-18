@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides an application's name, description, and logo. */
-@JSGlobal("Windows.ApplicationModel.AppDisplayInfo")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.AppDisplayInfo")
 @js.native
-abstract class AppDisplayInfo ()
+open class AppDisplayInfo ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.AppDisplayInfo {
   

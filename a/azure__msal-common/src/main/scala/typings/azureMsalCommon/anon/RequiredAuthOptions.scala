@@ -1,7 +1,7 @@
 package typings.azureMsalCommon.anon
 
-import typings.azureMsalCommon.authorityMod.Authority
-import typings.azureMsalCommon.clientConfigurationMod.AzureCloudOptions
+import typings.azureMsalCommon.distAuthorityAuthorityMod.Authority
+import typings.azureMsalCommon.distConfigClientConfigurationMod.AzureCloudOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

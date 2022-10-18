@@ -1,7 +1,6 @@
 package typings.conventionalCommitsParser
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.conventionalCommitsParser.mod.Commit.Field
 import typings.conventionalCommitsParser.mod.Commit.Note
 import typings.conventionalCommitsParser.mod.Commit.Reference
@@ -151,7 +150,7 @@ object mod {
       }
     }
   }
-  type Commit[Fields /* <: String | Double | js.Symbol */] = CommitBase & typings.conventionalCommitsParser.conventionalCommitsParserStrings.Commit & TopLevel[Any]
+  type Commit[Fields /* <: String | Double | js.Symbol */] = CommitBase & (/* import warning: importer.ImportType#apply Failed type conversion: {[ Field in std.Exclude<Fields, 'merge' | 'header' | 'body' | 'footer' | 'notes' | 'references' | 'mentions' | 'revert' | 'type' | 'scope' | 'subject'> ]:? conventional-commits-parser.conventional-commits-parser.Commit.Field} */ js.Any)
   
   trait CommitBase extends StObject {
     

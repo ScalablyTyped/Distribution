@@ -111,10 +111,6 @@ object fluentuiStyleUtilitiesStrings {
   inline def borderBottom: borderBottom = "borderBottom".asInstanceOf[borderBottom]
   
   @js.native
-  sealed trait buildClassMap extends StObject
-  inline def buildClassMap: buildClassMap = "buildClassMap".asInstanceOf[buildClassMap]
-  
-  @js.native
   sealed trait buttonBackground extends StObject
   inline def buttonBackground: buttonBackground = "buttonBackground".asInstanceOf[buttonBackground]
   

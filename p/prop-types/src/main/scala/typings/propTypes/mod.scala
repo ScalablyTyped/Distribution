@@ -3,7 +3,6 @@ package typings.propTypes
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Exclude
 import typings.std.NonNullable
 import typings.std.Partial
@@ -69,13 +68,9 @@ object mod {
   val `object`: Requireable[js.Object] = js.native
   
   inline def objectOf[T](`type`: Validator[T]): Requireable[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof any ]: T}
-    */ typings.propTypes.propTypesStrings.objectOf & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof any ]: T} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[Requireable[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof any ]: T}
-    */ typings.propTypes.propTypesStrings.objectOf & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof any ]: T} */ js.Any
   ]]
   
   inline def oneOf[T](types: js.Array[T]): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(types.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
@@ -96,16 +91,34 @@ object mod {
   
   type InferProps[V] = (InferPropsInner[Pick[V, RequiredKeys[V]]]) & (Partial[InferPropsInner[Pick[V, OptionalKeys[V]]]])
   
-  type InferPropsInner[V] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof V ]: -? prop-types.prop-types.InferType<V[K]>}
-    */ typings.propTypes.propTypesStrings.InferPropsInner & TopLevel[V]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof V ]: -? prop-types.prop-types.InferType<V[K]>}
+    }}}
+    */
+  @js.native
+  trait InferPropsInner[V] extends StObject
   
-  type InferType[V] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    V extends prop-types.prop-types.Validator<infer T> ? T : any
+    }}}
+    */
+  @js.native
+  trait InferType[V] extends StObject
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.propTypes.propTypesBooleans.`false`
-    - typings.propTypes.propTypesBooleans.`true`
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    undefined extends T ? true : false
+    }}}
+    */
+  @js.native
   trait IsOptional[T] extends StObject
   
   type OptionalKeys[V] = Exclude[/* keyof V */ String, RequiredKeys[V]]
@@ -162,11 +175,17 @@ object mod {
     var isRequired_Original: Validator[NonNullable[T]] = js.native
   }
   
-  type RequiredKeys[V] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: -? std.Exclude<V[K], undefined> extends prop-types.prop-types.Validator<infer T>? prop-types.prop-types.IsOptional<any> extends true? never : K : never}[keyof V] */ js.Any
+  type RequiredKeys[V] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: -? std.Exclude<V[K], undefined> extends prop-types.prop-types.Validator<infer T>? prop-types.prop-types.IsOptional<T> extends true? never : K : never}[keyof V] */ js.Any
   
-  type ValidationMap[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? prop-types.prop-types.Validator<T[K]>}
-    */ typings.propTypes.propTypesStrings.ValidationMap & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]:? prop-types.prop-types.Validator<T[K]>}
+    }}}
+    */
+  @js.native
+  trait ValidationMap[T] extends StObject
   
   @js.native
   trait Validator[T] extends StObject {

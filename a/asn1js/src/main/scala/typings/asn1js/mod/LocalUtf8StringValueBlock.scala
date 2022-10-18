@@ -5,4 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalUtf8StringValueBlock extends LocalSimpleStringBlock
+trait LocalUtf8StringValueBlock
+  extends StObject
+     with LocalSimpleStringBlock

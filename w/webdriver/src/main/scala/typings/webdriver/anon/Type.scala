@@ -1,7 +1,7 @@
 package typings.webdriver.anon
 
-import typings.wdioTypes.capabilitiesMod.DesiredCapabilities
-import typings.wdioTypes.capabilitiesMod.W3CCapabilities
+import typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities
+import typings.wdioTypes.buildCapabilitiesMod.W3CCapabilities
 import typings.webdriver.webdriverStrings.`object`
 import typings.webdriver.webdriverStrings.boolean
 import typings.webdriver.webdriverStrings.function

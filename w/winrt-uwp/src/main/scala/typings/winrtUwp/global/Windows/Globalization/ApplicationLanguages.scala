@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the language-related preferences that the app can use and maintain. */
-@JSGlobal("Windows.Globalization.ApplicationLanguages")
+/* note: abstract class */ @JSGlobal("Windows.Globalization.ApplicationLanguages")
 @js.native
-abstract class ApplicationLanguages ()
+open class ApplicationLanguages ()
   extends StObject
      with typings.winrtUwp.Windows.Globalization.ApplicationLanguages
 object ApplicationLanguages {

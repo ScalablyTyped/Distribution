@@ -5,8 +5,6 @@ import typings.redux.mod.Dispatch
 import typings.redux.mod.Middleware
 import typings.redux.mod.MiddlewareAPI
 import typings.reduxApiMiddleware.anon.FnCall
-import typings.reduxApiMiddleware.anon.MetaMeta
-import typings.reduxApiMiddleware.anon.PayloadPayload
 import typings.reduxApiMiddleware.reduxApiMiddlewareBooleans.`true`
 import typings.reduxApiMiddleware.reduxApiMiddlewareStrings.DELETE
 import typings.reduxApiMiddleware.reduxApiMiddlewareStrings.GET
@@ -490,7 +488,7 @@ object mod {
   
   type TypeOrResolver[Arg, Type] = Type | (js.Function1[/* arg */ Arg, Type | js.Promise[Type]])
   
-  type ValidAction[Payload, Meta] = typings.reduxApiMiddleware.anon.Error & (PayloadPayload[Payload] | js.Object) & (MetaMeta[Meta] | js.Object)
+  type ValidAction[Payload, Meta] = typings.reduxApiMiddleware.anon.Error & (/* import warning: importer.ImportType#apply Failed type conversion: [Payload] extends [never] ? {} : {  payload :Payload} */ js.Any)
   
   /**
     * Redux behaviour changed by middleware, so overloads here

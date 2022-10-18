@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import typings.bson.mod.ObjectId
 import typings.mongodb.mongodbStrings.LessthansignmonitorGreaterthansign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,5 +16,5 @@ open class ConnectionClosedEvent () extends ConnectionPoolMonitoringEvent {
   /** The reason the connection was closed */
   var reason: String = js.native
   
-  var serviceId: js.UndefOr[typings.bson.mod.ObjectId] = js.native
+  var serviceId: js.UndefOr[ObjectId] = js.native
 }

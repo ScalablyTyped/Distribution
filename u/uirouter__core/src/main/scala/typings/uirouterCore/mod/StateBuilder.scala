@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@uirouter/core", "StateBuilder")
 @js.native
 open class StateBuilder protected ()
-  extends typings.uirouterCore.stateMod.StateBuilder {
+  extends typings.uirouterCore.libStateMod.StateBuilder {
   def this(
-    matcher: typings.uirouterCore.stateMatcherMod.StateMatcher,
-    urlMatcherFactory: typings.uirouterCore.urlMatcherFactoryMod.UrlMatcherFactory
+    matcher: typings.uirouterCore.libStateStateMatcherMod.StateMatcher,
+    urlMatcherFactory: typings.uirouterCore.libUrlUrlMatcherFactoryMod.UrlMatcherFactory
   ) = this()
 }

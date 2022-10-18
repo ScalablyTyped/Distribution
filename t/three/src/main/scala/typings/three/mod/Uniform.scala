@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Uniform")
 @js.native
 open class Uniform protected ()
-  extends typings.three.threeMod.Uniform {
+  extends typings.three.srcThreeMod.Uniform {
   def this(value: Any) = this()
   /**
     * @deprecated

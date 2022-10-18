@@ -1,6 +1,7 @@
 package typings.gulpShell
 
 import typings.gulpShell.gulpShellBooleans.`true`
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(commands: String): Any = ^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def apply(commands: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def apply(commands: js.Array[String]): Any = ^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def apply(commands: js.Array[String], options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(commands: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(commands: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(commands: js.Array[String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(commands: js.Array[String], options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-shell", JSImport.Namespace)
   @js.native

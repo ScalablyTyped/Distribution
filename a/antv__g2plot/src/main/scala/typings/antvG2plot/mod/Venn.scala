@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialVennOptions
-import typings.antvG2plot.vennTypesMod.VennOptions
+import typings.antvG2plot.libPlotsVennTypesMod.VennOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Venn")
 @js.native
 open class Venn protected ()
-  extends typings.antvG2plot.vennMod.Venn {
+  extends typings.antvG2plot.libPlotsVennMod.Venn {
   def this(container: String, options: VennOptions) = this()
   def this(container: HTMLElement, options: VennOptions) = this()
 }

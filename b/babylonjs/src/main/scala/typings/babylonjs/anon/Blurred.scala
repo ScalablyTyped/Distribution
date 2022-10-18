@@ -1,6 +1,6 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.postProcessMod.PostProcess
+import typings.babylonjs.postProcessesPostProcessMod.PostProcess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

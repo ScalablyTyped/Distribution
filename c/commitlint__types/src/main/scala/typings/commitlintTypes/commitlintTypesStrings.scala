@@ -1,23 +1,15 @@
 package typings.commitlintTypes
 
-import typings.commitlintTypes.ensureMod.TargetCaseType
-import typings.commitlintTypes.promptMod.PromptName
-import typings.commitlintTypes.promptMod.RuleField
-import typings.commitlintTypes.rulesMod.RuleConfigCondition
-import typings.commitlintTypes.rulesMod.RuleType
+import typings.commitlintTypes.libEnsureMod.TargetCaseType
+import typings.commitlintTypes.libPromptMod.PromptName
+import typings.commitlintTypes.libPromptMod.RuleField
+import typings.commitlintTypes.libRulesMod.RuleConfigCondition
+import typings.commitlintTypes.libRulesMod.RuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commitlintTypesStrings {
-  
-  @js.native
-  sealed trait DeepPartial extends StObject
-  inline def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
-  
-  @js.native
-  sealed trait UserPromptConfig extends StObject
-  inline def UserPromptConfig: UserPromptConfig = "UserPromptConfig".asInstanceOf[UserPromptConfig]
   
   @js.native
   sealed trait always

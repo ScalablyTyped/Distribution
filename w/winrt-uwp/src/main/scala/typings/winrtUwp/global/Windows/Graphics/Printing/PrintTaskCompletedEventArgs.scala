@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reports the completion of the print task. */
-@JSGlobal("Windows.Graphics.Printing.PrintTaskCompletedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.PrintTaskCompletedEventArgs")
 @js.native
-abstract class PrintTaskCompletedEventArgs ()
+open class PrintTaskCompletedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Graphics.Printing.PrintTaskCompletedEventArgs {
   

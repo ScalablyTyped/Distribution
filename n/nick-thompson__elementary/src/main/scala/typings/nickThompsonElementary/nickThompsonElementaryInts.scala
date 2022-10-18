@@ -1,6 +1,6 @@
 package typings.nickThompsonElementary
 
-import typings.nickThompsonElementary.childrenMod.ChildrenArraySizeRange
+import typings.nickThompsonElementary.srcCoreChildrenMod.ChildrenArraySizeRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.tabviewMod.TabViewProps
+import typings.primereact.tabviewTabviewMod.TabViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "TabView")
 @js.native
 open class TabView protected ()
-  extends typings.primereact.tabviewMod.TabView {
+  extends typings.primereact.tabviewTabviewMod.TabView {
   def this(props: TabViewProps) = this()
   /**
     * @deprecated

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__extensionmanager-extension
 
-Typings are for version 2.2.6
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Extension Manager Extension
@@ -10,10 +10,10 @@ JupyterLab - Extension Manager Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/extensionmanager-extension |
 | Keywords           | - |
-| # releases         | 132 |
-| # dependents       | 1 |
-| # downloads        | 1447436 |
-| # stars            | 0 |
+| # releases         | 144 |
+| # dependents       | 0.0 |
+| # downloads        | 192359.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

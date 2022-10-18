@@ -1,12 +1,12 @@
 package typings.nodeFetch
 
-import typings.formdataPolyfill.mod.FormData
+import typings.formdataPolyfill.esmDotminMod.FormData
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.nodeFetch.nodeFetchStrings.abort
 import typings.std.Error
 import typings.std.IterableIterator
-import typings.std.ReadableStream
 import typings.std.Record
 import typings.std.URL
 import typings.std.URLSearchParams
@@ -139,7 +139,7 @@ object mod {
     override def blob(): js.Promise[typings.std.Blob] = js.native
     
     /* CompleteClass */
-    override val body: ReadableStream[Any] | Null = js.native
+    override val body: ReadableStream | Null = js.native
     
     /* CompleteClass */
     override val bodyUsed: Boolean = js.native
@@ -213,7 +213,7 @@ object mod {
     override def blob(): js.Promise[typings.std.Blob] = js.native
     
     /* CompleteClass */
-    override val body: ReadableStream[Any] | Null = js.native
+    override val body: ReadableStream | Null = js.native
     
     /* CompleteClass */
     override val bodyUsed: Boolean = js.native
@@ -317,7 +317,7 @@ object mod {
     @JSName("blob")
     var blob_Original: js.Function0[js.Promise[typings.std.Blob]]
     
-    var body: js.UndefOr[ReadableStream[Any] | Null] = js.undefined
+    var body: js.UndefOr[ReadableStream | Null] = js.undefined
     
     var bodyUsed: Boolean
     
@@ -361,7 +361,7 @@ object mod {
       
       inline def setBlob(value: () => js.Promise[typings.std.Blob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
       
-      inline def setBody(value: ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyNull: Self = StObject.set(x, "body", null)
       
@@ -381,7 +381,7 @@ object mod {
     }
   }
   
-  type BodyInit = typings.std.Blob | Buffer | URLSearchParams | FormData | ReadableStream[Any] | String
+  type BodyInit = typings.std.Blob | Buffer | URLSearchParams | FormData | ReadableStream | String
   
   trait BodyMixin extends StObject {
     
@@ -389,7 +389,7 @@ object mod {
     
     def blob(): js.Promise[typings.std.Blob]
     
-    val body: ReadableStream[Any] | Null
+    val body: ReadableStream | Null
     
     val bodyUsed: Boolean
     
@@ -426,7 +426,7 @@ object mod {
       
       inline def setBlob(value: () => js.Promise[typings.std.Blob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
       
-      inline def setBody(value: ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyNull: Self = StObject.set(x, "body", null)
       

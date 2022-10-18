@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.PartialTooltipProps
-import typings.blueprintjsCore.tooltipMod.TooltipProps
+import typings.blueprintjsCore.libEsmComponentsTooltipTooltipMod.TooltipProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Tooltip")
 @js.native
 open class Tooltip protected ()
-  extends typings.blueprintjsCore.componentsMod.Tooltip {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Tooltip {
   def this(props: TooltipProps) = this()
   def this(props: TooltipProps, context: Any) = this()
 }

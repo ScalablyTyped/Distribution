@@ -29,7 +29,7 @@ object anon {
   
   trait Scripts extends StObject {
     
-    var scripts: js.UndefOr[typings.typeFest.packageJsonMod.PackageJson.Scripts] = js.undefined
+    var scripts: js.UndefOr[typings.typeFest.sourcePackageJsonMod.PackageJson.Scripts] = js.undefined
   }
   object Scripts {
     
@@ -40,7 +40,7 @@ object anon {
     
     extension [Self <: Scripts](x: Self) {
       
-      inline def setScripts(value: typings.typeFest.packageJsonMod.PackageJson.Scripts): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+      inline def setScripts(value: typings.typeFest.sourcePackageJsonMod.PackageJson.Scripts): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
       inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
     }

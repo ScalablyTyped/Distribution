@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.rippleMod.RippleProps
+import typings.primereact.rippleRippleMod.RippleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Ripple")
 @js.native
 open class Ripple protected ()
-  extends typings.primereact.rippleMod.Ripple {
+  extends typings.primereact.rippleRippleMod.Ripple {
   def this(props: RippleProps) = this()
   /**
     * @deprecated

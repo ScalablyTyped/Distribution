@@ -1,8 +1,8 @@
 package typings.mobx.anon
 
+import typings.mobx.distTypesObservablesetMod.ISetWillChange
+import typings.mobx.distTypesObservablesetMod.ObservableSet
 import typings.mobx.mobxStrings.add
-import typings.mobx.observablesetMod.ISetWillChange
-import typings.mobx.observablesetMod.ObservableSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -8,8 +8,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalMixins.LoaderResource * / any */ @JSImport("pixi.js", "LoaderResource")
+@JSImport("pixi.js", "LoaderResource")
 @js.native
 open class LoaderResource protected ()
   extends typings.pixiLoaders.mod.LoaderResource {

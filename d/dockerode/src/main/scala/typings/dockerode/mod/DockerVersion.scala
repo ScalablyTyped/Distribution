@@ -1,7 +1,7 @@
 package typings.dockerode.mod
 
 import typings.dockerode.anon.Details
-import typings.dockerode.anon.NameString
+import typings.dockerode.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait DockerVersion extends StObject {
   
   var Os: String
   
-  var Platform: NameString
+  var Platform: Name
   
   var Version: String
 }
@@ -42,7 +42,7 @@ object DockerVersion {
     KernelVersion: String,
     MinAPIVersion: String,
     Os: String,
-    Platform: NameString,
+    Platform: Name,
     Version: String
   ): DockerVersion = {
     val __obj = js.Dynamic.literal(ApiVersion = ApiVersion.asInstanceOf[js.Any], Arch = Arch.asInstanceOf[js.Any], BuildTime = BuildTime.asInstanceOf[js.Any], Components = Components.asInstanceOf[js.Any], GitCommit = GitCommit.asInstanceOf[js.Any], GoVersion = GoVersion.asInstanceOf[js.Any], KernelVersion = KernelVersion.asInstanceOf[js.Any], MinAPIVersion = MinAPIVersion.asInstanceOf[js.Any], Os = Os.asInstanceOf[js.Any], Platform = Platform.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
@@ -71,7 +71,7 @@ object DockerVersion {
     
     inline def setOs(value: String): Self = StObject.set(x, "Os", value.asInstanceOf[js.Any])
     
-    inline def setPlatform(value: NameString): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: Name): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
     inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }

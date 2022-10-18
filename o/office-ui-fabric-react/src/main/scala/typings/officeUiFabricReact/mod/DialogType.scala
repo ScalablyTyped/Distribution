@@ -9,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DialogType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.dialogContentTypesMod.DialogType & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsDialogDialogContentDottypesMod.DialogType & Double
+  ] = js.native
   
-  /* 2 */ val close: typings.officeUiFabricReact.dialogContentTypesMod.DialogType.close & Double = js.native
+  /* 2 */ val close: typings.officeUiFabricReact.libComponentsDialogDialogContentDottypesMod.DialogType.close & Double = js.native
   
-  /* 1 */ val largeHeader: typings.officeUiFabricReact.dialogContentTypesMod.DialogType.largeHeader & Double = js.native
+  /* 1 */ val largeHeader: typings.officeUiFabricReact.libComponentsDialogDialogContentDottypesMod.DialogType.largeHeader & Double = js.native
   
-  /* 0 */ val normal: typings.officeUiFabricReact.dialogContentTypesMod.DialogType.normal & Double = js.native
+  /* 0 */ val normal: typings.officeUiFabricReact.libComponentsDialogDialogContentDottypesMod.DialogType.normal & Double = js.native
 }

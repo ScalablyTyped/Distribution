@@ -1,7 +1,7 @@
 package typings.reactSwipeable
 
-import typings.reactSwipeable.typesMod.SwipeableHandlers
-import typings.reactSwipeable.typesMod.SwipeableProps
+import typings.reactSwipeable.esTypesMod.SwipeableHandlers
+import typings.reactSwipeable.esTypesMod.SwipeableProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

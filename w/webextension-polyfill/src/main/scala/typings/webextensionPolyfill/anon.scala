@@ -2,10 +2,10 @@ package typings.webextensionPolyfill
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.webextensionPolyfill.declarativeContentMod.DeclarativeContent.PageStateMatcher
-import typings.webextensionPolyfill.declarativeContentMod.DeclarativeContent.RequestContentScript
-import typings.webextensionPolyfill.declarativeContentMod.DeclarativeContent.SetIcon
-import typings.webextensionPolyfill.declarativeContentMod.DeclarativeContent.ShowAction
+import typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.PageStateMatcher
+import typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.RequestContentScript
+import typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.SetIcon
+import typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.ShowAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

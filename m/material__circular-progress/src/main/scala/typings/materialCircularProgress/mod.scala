@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@material/circular-progress", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialCircularProgress.foundationMod.default {
+    def this(adapter: PartialMDCCircularProgres) = this()
+  }
+  
   @JSImport("@material/circular-progress", "MDCCircularProgress")
   @js.native
   open class MDCCircularProgress protected ()

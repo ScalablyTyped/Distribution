@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a 3x3 rotation matrix. */
-@JSGlobal("Windows.Devices.Sensors.SensorRotationMatrix")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.SensorRotationMatrix")
 @js.native
-abstract class SensorRotationMatrix ()
+open class SensorRotationMatrix ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.SensorRotationMatrix {
   

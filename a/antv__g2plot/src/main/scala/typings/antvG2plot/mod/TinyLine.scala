@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialTinyLineOptions
-import typings.antvG2plot.tinyLineTypesMod.TinyLineOptions
+import typings.antvG2plot.libPlotsTinyLineTypesMod.TinyLineOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "TinyLine")
 @js.native
 open class TinyLine protected ()
-  extends typings.antvG2plot.tinyLineMod.TinyLine {
+  extends typings.antvG2plot.libPlotsTinyLineMod.TinyLine {
   def this(container: String, options: TinyLineOptions) = this()
   def this(container: HTMLElement, options: TinyLineOptions) = this()
 }

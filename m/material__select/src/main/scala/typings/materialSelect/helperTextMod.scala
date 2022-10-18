@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object helperTextMod {
   
+  @JSImport("@material/select/helper-text", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialSelect.helperTextFoundationMod.default {
+    def this(adapter: PartialMDCSelectHelperTex) = this()
+  }
+  
   @JSImport("@material/select/helper-text", "MDCSelectHelperText")
   @js.native
   open class MDCSelectHelperText protected ()

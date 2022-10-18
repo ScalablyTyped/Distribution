@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SerialCommunication {
   
   /** Represents the object that is passed as a parameter to the event handler that is invoked when error occurs on the serial port. */
-  @JSGlobal("Windows.Devices.SerialCommunication.ErrorReceivedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.SerialCommunication.ErrorReceivedEventArgs")
   @js.native
-  abstract class ErrorReceivedEventArgs ()
+  open class ErrorReceivedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.SerialCommunication.ErrorReceivedEventArgs {
     
@@ -23,9 +23,9 @@ object SerialCommunication {
   }
   
   /** Represents the object that is passed as a parameter to the event handler that is invoked when the state of a signal line changes on the serial port. */
-  @JSGlobal("Windows.Devices.SerialCommunication.PinChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.SerialCommunication.PinChangedEventArgs")
   @js.native
-  abstract class PinChangedEventArgs ()
+  open class PinChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.SerialCommunication.PinChangedEventArgs {
     
@@ -35,9 +35,9 @@ object SerialCommunication {
   }
   
   /** Represents a serial port. The object provides methods and properties that an app can use to find the port (in the system). */
-  @JSGlobal("Windows.Devices.SerialCommunication.SerialDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.SerialCommunication.SerialDevice")
   @js.native
-  abstract class SerialDevice ()
+  open class SerialDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.SerialCommunication.SerialDevice
   object SerialDevice {

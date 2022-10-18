@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ProtocolMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.azureMsalCommon.protocolModeMod.ProtocolMode & String] = js.native
+  def apply(value: String): js.UndefOr[typings.azureMsalCommon.distAuthorityProtocolModeMod.ProtocolMode & String] = js.native
   
-  /* "AAD" */ val AAD: typings.azureMsalCommon.protocolModeMod.ProtocolMode.AAD & String = js.native
+  /* "AAD" */ val AAD: typings.azureMsalCommon.distAuthorityProtocolModeMod.ProtocolMode.AAD & String = js.native
   
-  /* "OIDC" */ val OIDC: typings.azureMsalCommon.protocolModeMod.ProtocolMode.OIDC & String = js.native
+  /* "OIDC" */ val OIDC: typings.azureMsalCommon.distAuthorityProtocolModeMod.ProtocolMode.OIDC & String = js.native
 }

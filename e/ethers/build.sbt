@@ -1,37 +1,35 @@
 organization := "org.scalablytyped"
 name := "ethers"
-version := "5.0.21-6e31fb"
-scalaVersion := "2.13.3"
+version := "5.7.1-96c323"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ethersproject__abi" % "5.0.0-beta.153-1ef250",
-  "org.scalablytyped" %%% "ethersproject__abstract-provider" % "5.0.6-6bc3d3",
-  "org.scalablytyped" %%% "ethersproject__abstract-signer" % "5.0.8-33e005",
-  "org.scalablytyped" %%% "ethersproject__address" % "5.0.7-abe3fc",
-  "org.scalablytyped" %%% "ethersproject__basex" % "5.0.5-452a2d",
-  "org.scalablytyped" %%% "ethersproject__bignumber" % "5.0.10-f7bd0b",
-  "org.scalablytyped" %%% "ethersproject__bytes" % "5.0.6-9cfdf9",
-  "org.scalablytyped" %%% "ethersproject__contracts" % "5.0.7-e49234",
-  "org.scalablytyped" %%% "ethersproject__hash" % "5.0.7-17f710",
-  "org.scalablytyped" %%% "ethersproject__hdnode" % "5.0.6-5213e7",
-  "org.scalablytyped" %%% "ethersproject__json-wallets" % "5.0.8-d506f7",
-  "org.scalablytyped" %%% "ethersproject__logger" % "5.0.7-b01371",
-  "org.scalablytyped" %%% "ethersproject__networks" % "5.0.5-f6d8ba",
-  "org.scalablytyped" %%% "ethersproject__properties" % "5.0.5-300415",
-  "org.scalablytyped" %%% "ethersproject__providers" % "5.0.15-f3f52d",
-  "org.scalablytyped" %%% "ethersproject__sha2" % "5.0.5-d39bac",
-  "org.scalablytyped" %%% "ethersproject__signing-key" % "5.0.6-6108db",
-  "org.scalablytyped" %%% "ethersproject__strings" % "5.0.6-7fa991",
-  "org.scalablytyped" %%% "ethersproject__transactions" % "5.0.7-edfae2",
-  "org.scalablytyped" %%% "ethersproject__wallet" % "5.0.8-c67be2",
-  "org.scalablytyped" %%% "ethersproject__web" % "5.0.10-099c66",
-  "org.scalablytyped" %%% "ethersproject__wordlists" % "5.0.6-a19038",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0",
-  "org.scalablytyped" %%% "ws" % "7.4-dt-20201109Z-fda7ce")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "ethersproject__abi" % "5.7.0-090b2f",
+  "org.scalablytyped" %%% "ethersproject__abstract-provider" % "5.7.0-e80aef",
+  "org.scalablytyped" %%% "ethersproject__abstract-signer" % "5.7.0-74de80",
+  "org.scalablytyped" %%% "ethersproject__address" % "5.7.0-40faf1",
+  "org.scalablytyped" %%% "ethersproject__basex" % "5.7.0-f99f5f",
+  "org.scalablytyped" %%% "ethersproject__bignumber" % "5.7.0-5ea9d0",
+  "org.scalablytyped" %%% "ethersproject__bytes" % "5.7.0-d84c52",
+  "org.scalablytyped" %%% "ethersproject__contracts" % "5.7.0-0fc9b7",
+  "org.scalablytyped" %%% "ethersproject__hash" % "5.7.0-320ad0",
+  "org.scalablytyped" %%% "ethersproject__hdnode" % "5.7.0-458de6",
+  "org.scalablytyped" %%% "ethersproject__json-wallets" % "5.7.0-c0d500",
+  "org.scalablytyped" %%% "ethersproject__logger" % "5.7.0-b7a9c9",
+  "org.scalablytyped" %%% "ethersproject__networks" % "5.7.1-afc521",
+  "org.scalablytyped" %%% "ethersproject__properties" % "5.7.0-acae2c",
+  "org.scalablytyped" %%% "ethersproject__providers" % "5.7.1-6a2925",
+  "org.scalablytyped" %%% "ethersproject__sha2" % "5.7.0-8a4bd6",
+  "org.scalablytyped" %%% "ethersproject__signing-key" % "5.7.0-3009de",
+  "org.scalablytyped" %%% "ethersproject__strings" % "5.7.0-505dce",
+  "org.scalablytyped" %%% "ethersproject__transactions" % "5.7.0-951005",
+  "org.scalablytyped" %%% "ethersproject__wallet" % "5.7.0-0325ab",
+  "org.scalablytyped" %%% "ethersproject__web" % "5.7.1-15dcb3",
+  "org.scalablytyped" %%% "ethersproject__wordlists" % "5.7.0-7cce3f",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-54fbe6")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

@@ -13,18 +13,18 @@ trait EarconInstrument extends StObject {
     * An instrument instance or the name of the instrument in the
     * Highcharts.sonification.instruments map.
     */
-  var instrument: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument
+  var instrument: String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Instrument
   
   /**
     * The options to pass to Instrument.play.
     */
-  var playOptions: typings.highcharts.sonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject
+  var playOptions: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject
 }
 object EarconInstrument {
   
   inline def apply(
-    instrument: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument,
-    playOptions: typings.highcharts.sonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject
+    instrument: String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Instrument,
+    playOptions: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject
   ): EarconInstrument = {
     val __obj = js.Dynamic.literal(instrument = instrument.asInstanceOf[js.Any], playOptions = playOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[EarconInstrument]
@@ -32,8 +32,10 @@ object EarconInstrument {
   
   extension [Self <: EarconInstrument](x: Self) {
     
-    inline def setInstrument(value: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
+    inline def setInstrument(value: String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Instrument): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
     
-    inline def setPlayOptions(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject): Self = StObject.set(x, "playOptions", value.asInstanceOf[js.Any])
+    inline def setPlayOptions(
+      value: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject
+    ): Self = StObject.set(x, "playOptions", value.asInstanceOf[js.Any])
   }
 }

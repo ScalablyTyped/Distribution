@@ -1,6 +1,6 @@
 package typings.redisBloom.anon
 
-import typings.redisBloom.cuckooReserveMod.ReserveOptions
+import typings.redisBloom.distCommandsCuckooReserveMod.ReserveOptions
 import typings.redisBloom.redisBloomStrings.OK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,10 +19,10 @@ trait FIRSTKEYINDEXISREADONLY extends StObject {
     key: String,
     errorRate: Double,
     capacity: Double,
-    options: typings.redisBloom.reserveMod.ReserveOptions
+    options: typings.redisBloom.distCommandsBloomReserveMod.ReserveOptions
   ): js.Array[String] = js.native
   def transformArguments(key: String, topK: Double): js.Array[String] = js.native
-  def transformArguments(key: String, topK: Double, options: typings.redisBloom.topKReserveMod.ReserveOptions): js.Array[String] = js.native
+  def transformArguments(key: String, topK: Double, options: typings.redisBloom.distCommandsTopKReserveMod.ReserveOptions): js.Array[String] = js.native
   
   def transformReply(): OK = js.native
 }

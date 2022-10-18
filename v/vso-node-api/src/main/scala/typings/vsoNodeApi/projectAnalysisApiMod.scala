@@ -1,12 +1,12 @@
 package typings.vsoNodeApi
 
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
-import typings.vsoNodeApi.projectAnalysisInterfacesMod.AggregationType
-import typings.vsoNodeApi.projectAnalysisInterfacesMod.ProjectActivityMetrics
-import typings.vsoNodeApi.projectAnalysisInterfacesMod.ProjectLanguageAnalytics
-import typings.vsoNodeApi.projectAnalysisInterfacesMod.RepositoryActivityMetrics
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesProjectAnalysisInterfacesMod.AggregationType
+import typings.vsoNodeApi.interfacesProjectAnalysisInterfacesMod.ProjectActivityMetrics
+import typings.vsoNodeApi.interfacesProjectAnalysisInterfacesMod.ProjectLanguageAnalytics
+import typings.vsoNodeApi.interfacesProjectAnalysisInterfacesMod.RepositoryActivityMetrics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

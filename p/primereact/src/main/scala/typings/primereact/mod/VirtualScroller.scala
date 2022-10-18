@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.virtualscrollerMod.VirtualScrollerProps
+import typings.primereact.virtualscrollerVirtualscrollerMod.VirtualScrollerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "VirtualScroller")
 @js.native
 open class VirtualScroller protected ()
-  extends typings.primereact.virtualscrollerMod.VirtualScroller {
+  extends typings.primereact.virtualscrollerVirtualscrollerMod.VirtualScroller {
   def this(props: VirtualScrollerProps) = this()
   /**
     * @deprecated

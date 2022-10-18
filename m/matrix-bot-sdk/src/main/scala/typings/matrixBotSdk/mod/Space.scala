@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "Space")
 @js.native
 open class Space protected ()
-  extends typings.matrixBotSdk.spacesMod.Space {
-  def this(roomId: String, client: typings.matrixBotSdk.matrixClientMod.MatrixClient) = this()
+  extends typings.matrixBotSdk.libModelsSpacesMod.Space {
+  def this(roomId: String, client: typings.matrixBotSdk.libMatrixClientMod.MatrixClient) = this()
 }

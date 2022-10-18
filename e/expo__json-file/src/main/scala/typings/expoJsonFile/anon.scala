@@ -1,7 +1,7 @@
 package typings.expoJsonFile
 
-import typings.expoJsonFile.mod.JSONObject
-import typings.expoJsonFile.mod.Options
+import typings.expoJsonFile.buildJsonFileMod.JSONObject
+import typings.expoJsonFile.buildJsonFileMod.Options
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

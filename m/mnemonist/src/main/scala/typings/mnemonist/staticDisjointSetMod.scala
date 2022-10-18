@@ -1,6 +1,6 @@
 package typings.mnemonist
 
-import typings.mnemonist.typesMod.ArrayLike
+import typings.mnemonist.utilsTypesMod.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

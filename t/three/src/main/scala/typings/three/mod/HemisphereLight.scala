@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.utilsMod.ColorRepresentation
+import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [intensity=1]
   */
 open class HemisphereLight ()
-  extends typings.three.threeMod.HemisphereLight {
+  extends typings.three.srcThreeMod.HemisphereLight {
   def this(skyColor: ColorRepresentation) = this()
   def this(skyColor: Unit, groundColor: ColorRepresentation) = this()
   def this(skyColor: ColorRepresentation, groundColor: ColorRepresentation) = this()

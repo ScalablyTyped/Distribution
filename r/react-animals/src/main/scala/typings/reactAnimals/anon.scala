@@ -19,7 +19,7 @@ object anon {
     var dance: js.UndefOr[Boolean] = js.undefined
     
     var name: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 72 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 72, starting with typings.reactAnimals.reactAnimalsStrings.alligator, typings.reactAnimals.reactAnimalsStrings.anteater, typings.reactAnimals.reactAnimalsStrings.armadillo */ Any
       ] = js.undefined
     
     var rounded: js.UndefOr[Boolean] = js.undefined
@@ -49,7 +49,9 @@ object anon {
       
       inline def setDanceUndefined: Self = StObject.set(x, "dance", js.undefined)
       
-      inline def setName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 72 */ Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 72, starting with typings.reactAnimals.reactAnimalsStrings.alligator, typings.reactAnimals.reactAnimalsStrings.anteater, typings.reactAnimals.reactAnimalsStrings.armadillo */ Any
+      ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       

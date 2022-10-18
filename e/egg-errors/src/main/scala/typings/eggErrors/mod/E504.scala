@@ -1,6 +1,6 @@
 package typings.eggErrors.mod
 
-import typings.eggErrors.`504Mod`.default
+import typings.eggErrors.libHttp504Mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

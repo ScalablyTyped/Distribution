@@ -1,10 +1,10 @@
 package typings.chartist
 
-import typings.chartist.coreTypesMod.AxisName
-import typings.chartist.pieChartTypesMod.AnchorPosition
-import typings.chartist.pieChartTypesMod.LabelDirection
-import typings.chartist.pieChartTypesMod.RadialLabelPosition
-import typings.chartist.svgListMod.SvgMethods
+import typings.chartist.distChartsPieChartPieChartDottypesMod.AnchorPosition
+import typings.chartist.distChartsPieChartPieChartDottypesMod.LabelDirection
+import typings.chartist.distChartsPieChartPieChartDottypesMod.RadialLabelPosition
+import typings.chartist.distCoreTypesMod.AxisName
+import typings.chartist.distSvgSvgListMod.SvgMethods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,14 +20,6 @@ object chartistStrings {
     extends StObject
        with SvgMethods
   inline def Easing: Easing = "Easing".asInstanceOf[Easing]
-  
-  @js.native
-  sealed trait FilterByKey extends StObject
-  inline def FilterByKey: FilterByKey = "FilterByKey".asInstanceOf[FilterByKey]
-  
-  @js.native
-  sealed trait RequiredKeys extends StObject
-  inline def RequiredKeys: RequiredKeys = "RequiredKeys".asInstanceOf[RequiredKeys]
   
   @js.native
   sealed trait _node

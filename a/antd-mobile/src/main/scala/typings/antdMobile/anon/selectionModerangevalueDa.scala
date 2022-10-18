@@ -43,8 +43,8 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.calendarCalendarMod.CalendarProps
-import typings.antdMobile.convertMod.Page
+import typings.antdMobile.esComponentsCalendarCalendarMod.CalendarProps
+import typings.antdMobile.esComponentsCalendarConvertMod.Page
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode

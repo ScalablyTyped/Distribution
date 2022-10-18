@@ -1,7 +1,7 @@
 package typings.typedoc.anon
 
-import typings.typedoc.schemaMod.ModelToObject
-import typings.typedoc.serializerMod.Serializer
+import typings.typedoc.distLibSerializationSchemaMod.ModelToObject
+import typings.typedoc.distLibSerializationSerializerMod.Serializer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

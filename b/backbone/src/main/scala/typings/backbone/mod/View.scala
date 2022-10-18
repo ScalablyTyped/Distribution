@@ -58,7 +58,7 @@ open class View[TModel /* <: js.UndefOr[Model[Any, ModelSetOptions, Any]] */, TE
   def initialize(options: ViewOptions[TModel, TElement]): Unit = js.native
   
   // A conditional type used here to prevent `TS2532: Object is possibly 'undefined'`
-  var model: js.UndefOr[TModel] = js.native
+  var model: /* import warning: importer.ImportType#apply Failed type conversion: TModel extends backbone.backbone.Model<any, backbone.backbone.ModelSetOptions, any> ? TModel : undefined */ js.Any = js.native
   
   /**
     * For use with views as ES classes. If you define a preinitialize

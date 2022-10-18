@@ -4,12 +4,12 @@ import typings.c3.anon.Arcs
 import typings.c3.anon.Auto
 import typings.c3.anon.Brighten
 import typings.c3.anon.Classname
-import typings.c3.anon.Colors
 import typings.c3.anon.Duration
 import typings.c3.anon.Expand
 import typings.c3.anon.Height
 import typings.c3.anon.Interpolation
 import typings.c3.anon.Label
+import typings.c3.anon.Lines
 import typings.c3.anon.Pattern
 import typings.c3.anon.Space
 import typings.c3.anon.Zerobased
@@ -102,7 +102,7 @@ trait ChartConfiguration extends StObject {
   
   var spline: js.UndefOr[Interpolation] = js.undefined
   
-  var stanford: js.UndefOr[Colors] = js.undefined
+  var stanford: js.UndefOr[Lines] = js.undefined
   
   var subchart: js.UndefOr[SubchartOptions] = js.undefined
   
@@ -227,7 +227,7 @@ object ChartConfiguration {
     
     inline def setSplineUndefined: Self = StObject.set(x, "spline", js.undefined)
     
-    inline def setStanford(value: Colors): Self = StObject.set(x, "stanford", value.asInstanceOf[js.Any])
+    inline def setStanford(value: Lines): Self = StObject.set(x, "stanford", value.asInstanceOf[js.Any])
     
     inline def setStanfordUndefined: Self = StObject.set(x, "stanford", js.undefined)
     

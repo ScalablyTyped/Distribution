@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Lets apps manage real-time updates to files. */
-@JSGlobal("Windows.Storage.CachedFileManager")
+/* note: abstract class */ @JSGlobal("Windows.Storage.CachedFileManager")
 @js.native
-abstract class CachedFileManager ()
+open class CachedFileManager ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.CachedFileManager
 object CachedFileManager {

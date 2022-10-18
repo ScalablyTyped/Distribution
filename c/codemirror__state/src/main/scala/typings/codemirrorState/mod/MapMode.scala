@@ -13,9 +13,6 @@ Distinguishes different ways in which positions can be mapped.
 @js.native
 object MapMode extends StObject {
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MapMode & Double] = js.native
-  
   /**
     Map a position to a valid new position, even when its context
     was deleted.
@@ -24,7 +21,6 @@ object MapMode extends StObject {
   sealed trait Simple
     extends StObject
        with MapMode
-  /* 0 */ val Simple: typings.codemirrorState.mod.MapMode.Simple & Double = js.native
   
   /**
     Return null if the character _after_ the position is deleted.
@@ -33,7 +29,6 @@ object MapMode extends StObject {
   sealed trait TrackAfter
     extends StObject
        with MapMode
-  /* 3 */ val TrackAfter: typings.codemirrorState.mod.MapMode.TrackAfter & Double = js.native
   
   /**
     Return null if the character _before_ the position is deleted.
@@ -42,7 +37,6 @@ object MapMode extends StObject {
   sealed trait TrackBefore
     extends StObject
        with MapMode
-  /* 2 */ val TrackBefore: typings.codemirrorState.mod.MapMode.TrackBefore & Double = js.native
   
   /**
     Return null if deletion happens across the position.
@@ -51,5 +45,4 @@ object MapMode extends StObject {
   sealed trait TrackDel
     extends StObject
        with MapMode
-  /* 1 */ val TrackDel: typings.codemirrorState.mod.MapMode.TrackDel & Double = js.native
 }

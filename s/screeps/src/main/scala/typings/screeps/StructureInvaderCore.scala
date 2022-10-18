@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StructureInvaderCore
   extends StObject
      with OwnedStructure[STRUCTURE_INVADER_CORE]
-     with AnyOwnedStructure
-     with ConcreteStructure[Any] {
+     with AnyOwnedStructure {
   
   /**
     * The level of the stronghold. The amount and quality of the loot depends on the level.
@@ -40,12 +39,13 @@ object StructureInvaderCore {
     level: Double,
     my: Boolean,
     notifyWhenAttacked: Boolean => ScreepsReturnCode,
+    owner: /* import warning: importer.ImportType#apply Failed type conversion: T extends screeps.STRUCTURE_CONTROLLER ? screeps.Owner | undefined : screeps.Owner */ js.Any,
     pos: RoomPosition,
     room: Room,
     structureType: STRUCTURE_INVADER_CORE,
     ticksToDeploy: Double
   ): StructureInvaderCore = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsMax = hitsMax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = js.Any.fromFunction0(isActive), level = level.asInstanceOf[js.Any], my = my.asInstanceOf[js.Any], notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), pos = pos.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], structureType = structureType.asInstanceOf[js.Any], ticksToDeploy = ticksToDeploy.asInstanceOf[js.Any], spawning = null)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsMax = hitsMax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = js.Any.fromFunction0(isActive), level = level.asInstanceOf[js.Any], my = my.asInstanceOf[js.Any], notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], structureType = structureType.asInstanceOf[js.Any], ticksToDeploy = ticksToDeploy.asInstanceOf[js.Any], spawning = null)
     __obj.asInstanceOf[StructureInvaderCore]
   }
   

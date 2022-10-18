@@ -1,9 +1,9 @@
 package typings.three.anon
 
-import typings.three.bokehShader2Mod.BokehShaderUniforms
-import typings.three.threeMod.OrthographicCamera
-import typings.three.threeMod.Scene
-import typings.three.threeMod.WebGLRenderTarget
+import typings.three.examplesJsmShadersBokehShader2Mod.BokehShaderUniforms
+import typings.three.srcThreeMod.OrthographicCamera
+import typings.three.srcThreeMod.Scene
+import typings.three.srcThreeMod.WebGLRenderTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

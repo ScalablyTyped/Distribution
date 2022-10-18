@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.webservices
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
-import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenWebservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "webservices.PartEncoding")
 @js.native
 open class PartEncoding protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.webservices.PartEncoding {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.webservices.PartEncoding {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object PartEncoding {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.PartEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.PartEncoding]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PartEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PartEncoding]
   
   /**
     * Creates and returns a new PartEncoding instance in the SDK and on the server.
@@ -44,7 +44,7 @@ object PartEncoding {
     * of the parent OperationInfo element passed as argument.
     */
   /* static member */
-  inline def createInOperationInfoUnderRequestBodyPartEncodings(container: typings.mendixmodelsdk.webservicesMod.webservices.OperationInfo): typings.mendixmodelsdk.webservicesMod.webservices.PartEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationInfoUnderRequestBodyPartEncodings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.PartEncoding]
+  inline def createInOperationInfoUnderRequestBodyPartEncodings(container: typings.mendixmodelsdk.srcGenWebservicesMod.webservices.OperationInfo): typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PartEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationInfoUnderRequestBodyPartEncodings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PartEncoding]
   
   /**
     * Creates and returns a new PartEncoding instance in the SDK and on the server.
@@ -52,7 +52,7 @@ object PartEncoding {
     * of the parent OperationInfo element passed as argument.
     */
   /* static member */
-  inline def createInOperationInfoUnderRequestHeaderPartEncoding(container: typings.mendixmodelsdk.webservicesMod.webservices.OperationInfo): typings.mendixmodelsdk.webservicesMod.webservices.PartEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationInfoUnderRequestHeaderPartEncoding")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.PartEncoding]
+  inline def createInOperationInfoUnderRequestHeaderPartEncoding(container: typings.mendixmodelsdk.srcGenWebservicesMod.webservices.OperationInfo): typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PartEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationInfoUnderRequestHeaderPartEncoding")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PartEncoding]
   
   /* static member */
   @JSImport("mendixmodelsdk", "webservices.PartEncoding.structureTypeName")

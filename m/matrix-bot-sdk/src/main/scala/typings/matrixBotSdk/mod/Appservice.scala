@@ -1,6 +1,6 @@
 package typings.matrixBotSdk.mod
 
-import typings.matrixBotSdk.appserviceMod.IAppserviceOptions
+import typings.matrixBotSdk.libAppserviceAppserviceMod.IAppserviceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "Appservice")
 @js.native
 open class Appservice protected ()
-  extends typings.matrixBotSdk.appserviceMod.Appservice {
+  extends typings.matrixBotSdk.libAppserviceAppserviceMod.Appservice {
   /**
     * Creates a new application service.
     * @param {IAppserviceOptions} options The options for the application service.

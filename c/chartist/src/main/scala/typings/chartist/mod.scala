@@ -10,10 +10,6 @@ import typings.chartist.anon.Len
 import typings.chartist.anon.PartialChartPadding
 import typings.chartist.anon.Value
 import typings.chartist.anon.X
-import typings.chartist.axisMod.AxisUnits_
-import typings.chartist.barChartTypesMod.BarChartData
-import typings.chartist.barChartTypesMod.BarChartOptions
-import typings.chartist.cardinalMod.CardinalInterpolationOptions
 import typings.chartist.chartistBooleans.`false`
 import typings.chartist.chartistBooleans.`true`
 import typings.chartist.chartistStrings.areaBase
@@ -34,42 +30,46 @@ import typings.chartist.chartistStrings.showGridBackground
 import typings.chartist.chartistStrings.showLine
 import typings.chartist.chartistStrings.showPoint
 import typings.chartist.chartistStrings.width
-import typings.chartist.coreTypesMod.AllSeriesTypes
-import typings.chartist.coreTypesMod.AxisName
-import typings.chartist.coreTypesMod.AxisOptions
-import typings.chartist.coreTypesMod.Bounds
-import typings.chartist.coreTypesMod.ChartRect
-import typings.chartist.coreTypesMod.Data
-import typings.chartist.coreTypesMod.FlatSeries
-import typings.chartist.coreTypesMod.FlatSeriesPrimitiveValue
-import typings.chartist.coreTypesMod.FlatSeriesValue
-import typings.chartist.coreTypesMod.Label
-import typings.chartist.coreTypesMod.Multi
-import typings.chartist.coreTypesMod.NormalizedData
-import typings.chartist.coreTypesMod.NormalizedFlatSeries
-import typings.chartist.coreTypesMod.NormalizedSeries
-import typings.chartist.coreTypesMod.Options
-import typings.chartist.coreTypesMod.ResponsiveOptions
-import typings.chartist.coreTypesMod.Segment
-import typings.chartist.coreTypesMod.SegmentData
-import typings.chartist.coreTypesMod.Series
-import typings.chartist.coreTypesMod.SeriesObject
-import typings.chartist.coreTypesMod.SeriesPrimitiveValue
-import typings.chartist.lineChartTypesMod.LineChartData
-import typings.chartist.lineChartTypesMod.LineChartOptions
-import typings.chartist.lineChartTypesMod.LineChartOptionsWithDefaults
-import typings.chartist.monotoneCubicMod.MonotoneCubicInterpolationOptions
-import typings.chartist.noneMod.NoneInterpolationOptions
-import typings.chartist.optionsProviderMod.OptionsProvider_
-import typings.chartist.pieChartTypesMod.AnchorPosition
-import typings.chartist.pieChartTypesMod.Dot
-import typings.chartist.pieChartTypesMod.LabelDirection
-import typings.chartist.pieChartTypesMod.PieChartData
-import typings.chartist.pieChartTypesMod.PieChartOptions
-import typings.chartist.simpleMod.SimpleInteractionOptions
-import typings.chartist.stepMod.StepInterpolationOptions
-import typings.chartist.svgTypesMod.Attributes
-import typings.chartist.svgTypesMod.SvgPathOptions
+import typings.chartist.distAxesAxisMod.AxisUnits_
+import typings.chartist.distChartsBarChartBarChartDottypesMod.BarChartData
+import typings.chartist.distChartsBarChartBarChartDottypesMod.BarChartOptions
+import typings.chartist.distChartsLineChartLineChartDottypesMod.LineChartData
+import typings.chartist.distChartsLineChartLineChartDottypesMod.LineChartOptions
+import typings.chartist.distChartsLineChartLineChartDottypesMod.LineChartOptionsWithDefaults
+import typings.chartist.distChartsPieChartPieChartDottypesMod.AnchorPosition
+import typings.chartist.distChartsPieChartPieChartDottypesMod.Dot
+import typings.chartist.distChartsPieChartPieChartDottypesMod.LabelDirection
+import typings.chartist.distChartsPieChartPieChartDottypesMod.PieChartData
+import typings.chartist.distChartsPieChartPieChartDottypesMod.PieChartOptions
+import typings.chartist.distCoreOptionsProviderMod.OptionsProvider_
+import typings.chartist.distCoreTypesMod.AllSeriesTypes
+import typings.chartist.distCoreTypesMod.AxisName
+import typings.chartist.distCoreTypesMod.AxisOptions
+import typings.chartist.distCoreTypesMod.Bounds
+import typings.chartist.distCoreTypesMod.ChartRect
+import typings.chartist.distCoreTypesMod.Data
+import typings.chartist.distCoreTypesMod.FlatSeries
+import typings.chartist.distCoreTypesMod.FlatSeriesPrimitiveValue
+import typings.chartist.distCoreTypesMod.FlatSeriesValue
+import typings.chartist.distCoreTypesMod.Label
+import typings.chartist.distCoreTypesMod.Multi
+import typings.chartist.distCoreTypesMod.NormalizedData
+import typings.chartist.distCoreTypesMod.NormalizedFlatSeries
+import typings.chartist.distCoreTypesMod.NormalizedSeries
+import typings.chartist.distCoreTypesMod.Options
+import typings.chartist.distCoreTypesMod.ResponsiveOptions
+import typings.chartist.distCoreTypesMod.Segment
+import typings.chartist.distCoreTypesMod.SegmentData
+import typings.chartist.distCoreTypesMod.Series
+import typings.chartist.distCoreTypesMod.SeriesObject
+import typings.chartist.distCoreTypesMod.SeriesPrimitiveValue
+import typings.chartist.distInterpolationCardinalMod.CardinalInterpolationOptions
+import typings.chartist.distInterpolationMonotoneCubicMod.MonotoneCubicInterpolationOptions
+import typings.chartist.distInterpolationNoneMod.NoneInterpolationOptions
+import typings.chartist.distInterpolationSimpleMod.SimpleInteractionOptions
+import typings.chartist.distInterpolationStepMod.StepInterpolationOptions
+import typings.chartist.distSvgTypesMod.Attributes
+import typings.chartist.distSvgTypesMod.SvgPathOptions
 import typings.std.ArrayLike
 import typings.std.Element
 import typings.std.Record
@@ -86,21 +86,21 @@ object mod {
   @JSImport("chartist", "AutoScaleAxis")
   @js.native
   open class AutoScaleAxis protected ()
-    extends typings.chartist.axesMod.AutoScaleAxis {
+    extends typings.chartist.distAxesMod.AutoScaleAxis {
     def this(axisUnit: AxisUnits_, data: js.Array[NormalizedSeries], chartRect: ChartRect, options: AxisOptions) = this()
   }
   
-  @JSImport("chartist", "Axis")
+  /* note: abstract class */ @JSImport("chartist", "Axis")
   @js.native
-  abstract class Axis protected ()
-    extends typings.chartist.axesMod.Axis {
+  open class Axis protected ()
+    extends typings.chartist.distAxesMod.Axis {
     def this(units: AxisUnits_, chartRect: ChartRect, ticks: js.Array[Label]) = this()
   }
   
   @JSImport("chartist", "BarChart")
   @js.native
   open class BarChart protected ()
-    extends typings.chartist.chartsMod.BarChart {
+    extends typings.chartist.distChartsMod.BarChart {
     /**
       * This method creates a new bar chart and returns API object that you can use for later changes.
       * @param query A selector query string or directly a DOM element
@@ -110,6 +110,7 @@ object mod {
       * @return An object which exposes the API for the created chart
       *
       * @example
+      * ```ts
       * // Create a simple bar chart
       * const data = {
       *   labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
@@ -120,8 +121,10 @@ object mod {
       *
       * // In the global name space Chartist we call the Bar function to initialize a bar chart. As a first parameter we pass in a selector where we would like to get our chart created and as a second parameter we pass our data object.
       * new BarChart('.ct-chart', data);
+      * ```
       *
       * @example
+      * ```ts
       * // This example creates a bipolar grouped bar chart where the boundaries are limitted to -10 and 10
       * new BarChart('.ct-chart', {
       *   labels: [1, 2, 3, 4, 5, 6, 7],
@@ -134,7 +137,7 @@ object mod {
       *   low: -10,
       *   high: 10
       * });
-      *
+      * ```
       */
     def this(query: String, data: BarChartData) = this()
     def this(query: Null, data: BarChartData) = this()
@@ -180,10 +183,10 @@ object mod {
     ) = this()
   }
   
-  @JSImport("chartist", "BaseChart")
+  /* note: abstract class */ @JSImport("chartist", "BaseChart")
   @js.native
-  abstract class BaseChart[TEventsTypes] protected ()
-    extends typings.chartist.chartsMod.BaseChart[TEventsTypes] {
+  open class BaseChart[TEventsTypes] protected ()
+    extends typings.chartist.distChartsMod.BaseChart[TEventsTypes] {
     def this(
       query: String,
       data: Data[AllSeriesTypes],
@@ -232,12 +235,12 @@ object mod {
   @JSImport("chartist", "EventEmitter")
   @js.native
   open class EventEmitter ()
-    extends typings.chartist.eventMod.EventEmitter
+    extends typings.chartist.distEventMod.EventEmitter
   
   @JSImport("chartist", "FixedScaleAxis")
   @js.native
   open class FixedScaleAxis protected ()
-    extends typings.chartist.axesMod.FixedScaleAxis {
+    extends typings.chartist.distAxesMod.FixedScaleAxis {
     def this(axisUnit: AxisUnits_, data: js.Array[NormalizedSeries], chartRect: ChartRect, options: AxisOptions) = this()
   }
   
@@ -250,103 +253,103 @@ object mod {
     inline def cardinal(): js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardinal")().asInstanceOf[js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ]]
     inline def cardinal(options: CardinalInterpolationOptions): js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardinal")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ]]
     
     inline def monotoneCubic(): js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("monotoneCubic")().asInstanceOf[js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ]]
     inline def monotoneCubic(options: MonotoneCubicInterpolationOptions): js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("monotoneCubic")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ]]
     
     inline def none(): js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("none")().asInstanceOf[js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ]]
     inline def none(options: NoneInterpolationOptions): js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("none")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ]]
     
     inline def simple(): js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")().asInstanceOf[js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ]]
     inline def simple(options: SimpleInteractionOptions): js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ]]
     
     inline def step(): js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("step")().asInstanceOf[js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ]]
     inline def step(options: StepInterpolationOptions): js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("step")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
         /* pathCoordinates */ js.Array[Double], 
         /* valueData */ js.Array[SegmentData], 
-        typings.chartist.svgMod.SvgPath
+        typings.chartist.distSvgMod.SvgPath
       ]]
   }
   
   @JSImport("chartist", "LineChart")
   @js.native
   open class LineChart protected ()
-    extends typings.chartist.chartsMod.LineChart {
+    extends typings.chartist.distChartsMod.LineChart {
     /**
       * This method creates a new line chart.
       * @param query A selector query string or directly a DOM element
@@ -356,6 +359,7 @@ object mod {
       * @return An object which exposes the API for the created chart
       *
       * @example
+      * ```ts
       * // Create a simple line chart
       * const data = {
       *   // A labels array that can contain any sort of values
@@ -374,8 +378,10 @@ object mod {
       *
       * // In the global name space Chartist we call the Line function to initialize a line chart. As a first parameter we pass in a selector where we would like to get our chart created. Second parameter is the actual data object and as a third parameter we pass in our options
       * new LineChart('.ct-chart', data, options);
+      * ```
       *
       * @example
+      * ```ts
       * // Use specific interpolation function with configuration from the Chartist.Interpolation module
       *
       * const chart = new LineChart('.ct-chart', {
@@ -388,8 +394,10 @@ object mod {
       *     tension: 0.2
       *   })
       * });
+      * ```
       *
       * @example
+      * ```ts
       * // Create a line chart with responsive options
       *
       * const data = {
@@ -424,7 +432,7 @@ object mod {
       * ];
       *
       * new LineChart('.ct-chart', data, null, responsiveOptions);
-      *
+      * ```
       */
     def this(query: String, data: LineChartData) = this()
     def this(query: Null, data: LineChartData) = this()
@@ -473,7 +481,7 @@ object mod {
   @JSImport("chartist", "PieChart")
   @js.native
   open class PieChart protected ()
-    extends typings.chartist.chartsMod.PieChart {
+    extends typings.chartist.distChartsMod.PieChart {
     /**
       * This method creates a new pie chart and returns an object that can be used to redraw the chart.
       * @param query A selector query string or directly a DOM element
@@ -482,20 +490,25 @@ object mod {
       * @param responsiveOptions Specify an array of responsive option arrays which are a media query and options object pair => [[mediaQueryString, optionsObject],[more...]]
       *
       * @example
+      * ```ts
       * // Simple pie chart example with four series
       * new PieChart('.ct-chart', {
       *   series: [10, 2, 4, 3]
       * });
+      * ```
       *
       * @example
+      * ```ts
       * // Drawing a donut chart
       * new PieChart('.ct-chart', {
       *   series: [10, 2, 4, 3]
       * }, {
       *   donut: true
       * });
+      * ```
       *
       * @example
+      * ```ts
       * // Using donut, startAngle and total to draw a gauge chart
       * new PieChart('.ct-chart', {
       *   series: [20, 10, 30, 40]
@@ -505,8 +518,10 @@ object mod {
       *   startAngle: 270,
       *   total: 200
       * });
+      * ```
       *
       * @example
+      * ```ts
       * // Drawing a pie chart with padding and labels that are outside the pie
       * new PieChart('.ct-chart', {
       *   series: [20, 10, 30, 40]
@@ -515,8 +530,10 @@ object mod {
       *   labelOffset: 50,
       *   labelDirection: 'explode'
       * });
+      * ```
       *
       * @example
+      * ```ts
       * // Overriding the class names for individual series as well as a name and meta data.
       * // The name will be written as ct:series-name attribute and the meta data will be serialized and written
       * // to a ct:meta attribute.
@@ -538,6 +555,7 @@ object mod {
       *     meta: 'Meta Three'
       *   }]
       * });
+      * ```
       */
     def this(query: String, data: PieChartData) = this()
     def this(query: Null, data: PieChartData) = this()
@@ -586,14 +604,14 @@ object mod {
   @JSImport("chartist", "StepAxis")
   @js.native
   open class StepAxis protected ()
-    extends typings.chartist.axesMod.StepAxis {
+    extends typings.chartist.distAxesMod.StepAxis {
     def this(axisUnit: AxisUnits_, _data: Any, chartRect: ChartRect, options: AxisOptions) = this()
   }
   
   @JSImport("chartist", "Svg")
   @js.native
   open class Svg protected ()
-    extends typings.chartist.svgMod.Svg {
+    extends typings.chartist.distSvgMod.Svg {
     /**
       * @param name The name of the SVG element to create or an SVG dom element which should be wrapped into Svg
       * @param attributes An object with properties that will be added as attributes to the SVG element that is created. Attributes with undefined values will not be added.
@@ -609,20 +627,30 @@ object mod {
     def this(name: String, attributes: Attributes, className: String) = this()
     def this(name: Element, attributes: Unit, className: String) = this()
     def this(name: Element, attributes: Attributes, className: String) = this()
-    def this(name: String, attributes: Unit, className: String, parent: typings.chartist.svgSvgMod.Svg) = this()
-    def this(name: String, attributes: Unit, className: Unit, parent: typings.chartist.svgSvgMod.Svg) = this()
-    def this(name: String, attributes: Attributes, className: String, parent: typings.chartist.svgSvgMod.Svg) = this()
-    def this(name: String, attributes: Attributes, className: Unit, parent: typings.chartist.svgSvgMod.Svg) = this()
-    def this(name: Element, attributes: Unit, className: String, parent: typings.chartist.svgSvgMod.Svg) = this()
-    def this(name: Element, attributes: Unit, className: Unit, parent: typings.chartist.svgSvgMod.Svg) = this()
-    def this(name: Element, attributes: Attributes, className: String, parent: typings.chartist.svgSvgMod.Svg) = this()
-    def this(name: Element, attributes: Attributes, className: Unit, parent: typings.chartist.svgSvgMod.Svg) = this()
+    def this(name: String, attributes: Unit, className: String, parent: typings.chartist.distSvgSvgMod.Svg) = this()
+    def this(name: String, attributes: Unit, className: Unit, parent: typings.chartist.distSvgSvgMod.Svg) = this()
+    def this(
+      name: String,
+      attributes: Attributes,
+      className: String,
+      parent: typings.chartist.distSvgSvgMod.Svg
+    ) = this()
+    def this(name: String, attributes: Attributes, className: Unit, parent: typings.chartist.distSvgSvgMod.Svg) = this()
+    def this(name: Element, attributes: Unit, className: String, parent: typings.chartist.distSvgSvgMod.Svg) = this()
+    def this(name: Element, attributes: Unit, className: Unit, parent: typings.chartist.distSvgSvgMod.Svg) = this()
+    def this(
+      name: Element,
+      attributes: Attributes,
+      className: String,
+      parent: typings.chartist.distSvgSvgMod.Svg
+    ) = this()
+    def this(name: Element, attributes: Attributes, className: Unit, parent: typings.chartist.distSvgSvgMod.Svg) = this()
     def this(name: String, attributes: Unit, className: String, parent: Unit, insertFirst: Boolean) = this()
     def this(
       name: String,
       attributes: Unit,
       className: String,
-      parent: typings.chartist.svgSvgMod.Svg,
+      parent: typings.chartist.distSvgSvgMod.Svg,
       insertFirst: Boolean
     ) = this()
     def this(name: String, attributes: Unit, className: Unit, parent: Unit, insertFirst: Boolean) = this()
@@ -630,7 +658,7 @@ object mod {
       name: String,
       attributes: Unit,
       className: Unit,
-      parent: typings.chartist.svgSvgMod.Svg,
+      parent: typings.chartist.distSvgSvgMod.Svg,
       insertFirst: Boolean
     ) = this()
     def this(name: String, attributes: Attributes, className: String, parent: Unit, insertFirst: Boolean) = this()
@@ -638,7 +666,7 @@ object mod {
       name: String,
       attributes: Attributes,
       className: String,
-      parent: typings.chartist.svgSvgMod.Svg,
+      parent: typings.chartist.distSvgSvgMod.Svg,
       insertFirst: Boolean
     ) = this()
     def this(name: String, attributes: Attributes, className: Unit, parent: Unit, insertFirst: Boolean) = this()
@@ -646,7 +674,7 @@ object mod {
       name: String,
       attributes: Attributes,
       className: Unit,
-      parent: typings.chartist.svgSvgMod.Svg,
+      parent: typings.chartist.distSvgSvgMod.Svg,
       insertFirst: Boolean
     ) = this()
     def this(name: Element, attributes: Unit, className: String, parent: Unit, insertFirst: Boolean) = this()
@@ -654,7 +682,7 @@ object mod {
       name: Element,
       attributes: Unit,
       className: String,
-      parent: typings.chartist.svgSvgMod.Svg,
+      parent: typings.chartist.distSvgSvgMod.Svg,
       insertFirst: Boolean
     ) = this()
     def this(name: Element, attributes: Unit, className: Unit, parent: Unit, insertFirst: Boolean) = this()
@@ -662,7 +690,7 @@ object mod {
       name: Element,
       attributes: Unit,
       className: Unit,
-      parent: typings.chartist.svgSvgMod.Svg,
+      parent: typings.chartist.distSvgSvgMod.Svg,
       insertFirst: Boolean
     ) = this()
     def this(name: Element, attributes: Attributes, className: String, parent: Unit, insertFirst: Boolean) = this()
@@ -670,7 +698,7 @@ object mod {
       name: Element,
       attributes: Attributes,
       className: String,
-      parent: typings.chartist.svgSvgMod.Svg,
+      parent: typings.chartist.distSvgSvgMod.Svg,
       insertFirst: Boolean
     ) = this()
     def this(name: Element, attributes: Attributes, className: Unit, parent: Unit, insertFirst: Boolean) = this()
@@ -678,7 +706,7 @@ object mod {
       name: Element,
       attributes: Attributes,
       className: Unit,
-      parent: typings.chartist.svgSvgMod.Svg,
+      parent: typings.chartist.distSvgSvgMod.Svg,
       insertFirst: Boolean
     ) = this()
   }
@@ -697,7 +725,7 @@ object mod {
   @JSImport("chartist", "SvgList")
   @js.native
   open class SvgList protected ()
-    extends typings.chartist.svgMod.SvgList {
+    extends typings.chartist.distSvgMod.SvgList {
     /**
       * @param nodeList An Array of SVG DOM nodes or a SVG DOM NodeList (as returned by document.querySelectorAll)
       */
@@ -712,7 +740,7 @@ object mod {
     * @param options Options object that overrides the default objects. See default options for more details.
     */
   open class SvgPath ()
-    extends typings.chartist.svgMod.SvgPath {
+    extends typings.chartist.distSvgMod.SvgPath {
     def this(close: Boolean) = this()
     def this(close: Boolean, options: SvgPathOptions) = this()
     def this(close: Unit, options: SvgPathOptions) = this()
@@ -730,10 +758,14 @@ object mod {
       * @param close If the newly created path should be a closed path
       * @param options Path options for the newly created path.
       */
-    inline def join(paths: js.Array[typings.chartist.svgPathMod.SvgPath]): typings.chartist.svgPathMod.SvgPath = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[typings.chartist.svgPathMod.SvgPath]
-    inline def join(paths: js.Array[typings.chartist.svgPathMod.SvgPath], close: Boolean): typings.chartist.svgPathMod.SvgPath = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any], close.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgPathMod.SvgPath]
-    inline def join(paths: js.Array[typings.chartist.svgPathMod.SvgPath], close: Boolean, options: SvgPathOptions): typings.chartist.svgPathMod.SvgPath = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any], close.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgPathMod.SvgPath]
-    inline def join(paths: js.Array[typings.chartist.svgPathMod.SvgPath], close: Unit, options: SvgPathOptions): typings.chartist.svgPathMod.SvgPath = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any], close.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgPathMod.SvgPath]
+    inline def join(paths: js.Array[typings.chartist.distSvgSvgPathMod.SvgPath]): typings.chartist.distSvgSvgPathMod.SvgPath = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[typings.chartist.distSvgSvgPathMod.SvgPath]
+    inline def join(paths: js.Array[typings.chartist.distSvgSvgPathMod.SvgPath], close: Boolean): typings.chartist.distSvgSvgPathMod.SvgPath = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any], close.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgPathMod.SvgPath]
+    inline def join(
+      paths: js.Array[typings.chartist.distSvgSvgPathMod.SvgPath],
+      close: Boolean,
+      options: SvgPathOptions
+    ): typings.chartist.distSvgSvgPathMod.SvgPath = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any], close.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgPathMod.SvgPath]
+    inline def join(paths: js.Array[typings.chartist.distSvgSvgPathMod.SvgPath], close: Unit, options: SvgPathOptions): typings.chartist.distSvgSvgPathMod.SvgPath = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any], close.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgPathMod.SvgPath]
   }
   
   inline def alphaNumerate(n: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("alphaNumerate")(n.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -749,24 +781,24 @@ object mod {
     val y: Len = js.native
   }
   
-  inline def createChartRect(svg: typings.chartist.svgSvgMod.Svg, options: Options[AxisOptions, AxisOptions]): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("createChartRect")(svg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Height]
+  inline def createChartRect(svg: typings.chartist.distSvgSvgMod.Svg, options: Options[AxisOptions, AxisOptions]): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("createChartRect")(svg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Height]
   
   inline def createGrid(
     position: Double,
     index: Double,
-    axis: typings.chartist.axesMod.Axis,
+    axis: typings.chartist.distAxesMod.Axis,
     offset: Double,
     length: Double,
-    group: typings.chartist.svgSvgMod.Svg,
+    group: typings.chartist.distSvgSvgMod.Svg,
     classes: js.Array[String],
-    eventEmitter: typings.chartist.eventMod.EventEmitter
+    eventEmitter: typings.chartist.distEventMod.EventEmitter
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createGrid")(position.asInstanceOf[js.Any], index.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], group.asInstanceOf[js.Any], classes.asInstanceOf[js.Any], eventEmitter.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def createGridBackground(
-    gridGroup: typings.chartist.svgSvgMod.Svg,
+    gridGroup: typings.chartist.distSvgSvgMod.Svg,
     chartRect: ChartRect,
     className: String,
-    eventEmitter: typings.chartist.eventMod.EventEmitter
+    eventEmitter: typings.chartist.distEventMod.EventEmitter
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createGridBackground")(gridGroup.asInstanceOf[js.Any], chartRect.asInstanceOf[js.Any], className.asInstanceOf[js.Any], eventEmitter.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def createLabel(
@@ -774,32 +806,32 @@ object mod {
     length: Double,
     index: Double,
     label: Label,
-    axis: typings.chartist.axesMod.Axis,
+    axis: typings.chartist.distAxesMod.Axis,
     axisOffset: Double,
     labelOffset: X,
-    group: typings.chartist.svgSvgMod.Svg,
+    group: typings.chartist.distSvgSvgMod.Svg,
     classes: js.Array[String],
-    eventEmitter: typings.chartist.eventMod.EventEmitter
+    eventEmitter: typings.chartist.distEventMod.EventEmitter
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createLabel")(position.asInstanceOf[js.Any], length.asInstanceOf[js.Any], index.asInstanceOf[js.Any], label.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], axisOffset.asInstanceOf[js.Any], labelOffset.asInstanceOf[js.Any], group.asInstanceOf[js.Any], classes.asInstanceOf[js.Any], eventEmitter.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def createSvg(container: Element): typings.chartist.svgSvgMod.Svg = ^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any]).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: String): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: String, height: String): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: String, height: String, className: String): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: String, height: Double): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: String, height: Double, className: String): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: String, height: Unit, className: String): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: Double): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: Double, height: String): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: Double, height: String, className: String): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: Double, height: Double): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: Double, height: Double, className: String): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: Double, height: Unit, className: String): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: Unit, height: String): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: Unit, height: String, className: String): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: Unit, height: Double): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: Unit, height: Double, className: String): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
-  inline def createSvg(container: Element, width: Unit, height: Unit, className: String): typings.chartist.svgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.svgSvgMod.Svg]
+  inline def createSvg(container: Element): typings.chartist.distSvgSvgMod.Svg = ^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any]).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: String): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: String, height: String): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: String, height: String, className: String): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: String, height: Double): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: String, height: Double, className: String): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: String, height: Unit, className: String): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: Double): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: Double, height: String): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: Double, height: String, className: String): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: Double, height: Double): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: Double, height: Double, className: String): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: Double, height: Unit, className: String): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: Unit, height: String): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: Unit, height: String, className: String): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: Unit, height: Double): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: Unit, height: Double, className: String): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
+  inline def createSvg(container: Element, width: Unit, height: Unit, className: String): typings.chartist.distSvgSvgMod.Svg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvg")(container.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.chartist.distSvgSvgMod.Svg]
   
   inline def deserialize[T /* <: js.Object | Double | String */](): js.UndefOr[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")().asInstanceOf[js.UndefOr[T | Null]]
   inline def deserialize[T /* <: js.Object | Double | String */](data: String): js.UndefOr[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T | Null]]
@@ -807,6 +839,16 @@ object mod {
   inline def deserialize_T_T[T /* <: js.Object | Double | String */](data: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def determineAnchorPosition(center: Dot, label: Dot, direction: LabelDirection): AnchorPosition = (^.asInstanceOf[js.Dynamic].applyDynamic("determineAnchorPosition")(center.asInstanceOf[js.Any], label.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[AnchorPosition]
+  
+  inline def each[T](
+    list: js.Array[T],
+    callback: js.Function3[/* item */ T, /* index */ Double, /* itemIndex */ Double, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def each[T](
+    list: js.Array[T],
+    callback: js.Function3[/* item */ T, /* index */ Double, /* itemIndex */ Double, Unit],
+    reverse: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object easings {
     
@@ -1077,11 +1119,11 @@ object mod {
   inline def normalizePadding(padding: Double): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePadding")(padding.asInstanceOf[js.Any]).asInstanceOf[Bottom]
   inline def normalizePadding(padding: PartialChartPadding): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePadding")(padding.asInstanceOf[js.Any]).asInstanceOf[Bottom]
   
-  inline def optionsProvider[T](options: T, responsiveOptions: Unit, eventEmitter: typings.chartist.eventMod.EventEmitter): OptionsProvider_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsProvider")(options.asInstanceOf[js.Any], responsiveOptions.asInstanceOf[js.Any], eventEmitter.asInstanceOf[js.Any])).asInstanceOf[OptionsProvider_[T]]
+  inline def optionsProvider[T](options: T, responsiveOptions: Unit, eventEmitter: typings.chartist.distEventMod.EventEmitter): OptionsProvider_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsProvider")(options.asInstanceOf[js.Any], responsiveOptions.asInstanceOf[js.Any], eventEmitter.asInstanceOf[js.Any])).asInstanceOf[OptionsProvider_[T]]
   inline def optionsProvider[T](
     options: T,
     responsiveOptions: ResponsiveOptions[T],
-    eventEmitter: typings.chartist.eventMod.EventEmitter
+    eventEmitter: typings.chartist.distEventMod.EventEmitter
   ): OptionsProvider_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsProvider")(options.asInstanceOf[js.Any], responsiveOptions.asInstanceOf[js.Any], eventEmitter.asInstanceOf[js.Any])).asInstanceOf[OptionsProvider_[T]]
   
   inline def orderOfMagnitude(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("orderOfMagnitude")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -1120,5 +1162,6 @@ object mod {
   
   inline def sum(previous: Double, current: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(previous.asInstanceOf[js.Any], current.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def times[T](length: Double): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("times")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def times(length: Double): js.Array[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("times")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[Unit]]
+  inline def times[T](length: Double, filler: js.Function1[/* index */ Double, T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("times")(length.asInstanceOf[js.Any], filler.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

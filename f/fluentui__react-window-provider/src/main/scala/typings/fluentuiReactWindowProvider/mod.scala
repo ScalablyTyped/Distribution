@@ -1,6 +1,6 @@
 package typings.fluentuiReactWindowProvider
 
-import typings.fluentuiReactWindowProvider.windowProviderMod.WindowProviderProps
+import typings.fluentuiReactWindowProvider.libWindowProviderMod.WindowProviderProps
 import typings.react.mod.Context
 import typings.react.mod.FunctionComponent
 import typings.std.Document

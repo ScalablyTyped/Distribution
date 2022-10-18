@@ -1,7 +1,7 @@
 package typings.contentstack
 
-import typings.contentstackUtils.embeddedObjectMod.EntryEmbedable
-import typings.contentstackUtils.optionsMod.RenderOption
+import typings.contentstackUtils.distTypesModelsEmbeddedObjectMod.EntryEmbedable
+import typings.contentstackUtils.distTypesOptionsMod.RenderOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

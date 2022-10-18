@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.deviceInputEventsMod.IMouseEvent
+import typings.babylonjs.eventsDeviceInputEventsMod.IMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PointerInfoPre")
 @js.native
 open class PointerInfoPre protected ()
-  extends typings.babylonjs.legacyMod.PointerInfoPre {
+  extends typings.babylonjs.legacyLegacyMod.PointerInfoPre {
   /**
     * Instantiates a PointerInfoPre to store pointer related info to the onPrePointerObservable event.
     * @param type Defines the type of event (PointerEventTypes)

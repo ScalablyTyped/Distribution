@@ -1,6 +1,6 @@
 package typings.screepsArena.gamePrototypesMod
 
-import typings.screepsArena.constantsMod.ResourceConstant
+import typings.screepsArena.gameConstantsMod.ResourceConstant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

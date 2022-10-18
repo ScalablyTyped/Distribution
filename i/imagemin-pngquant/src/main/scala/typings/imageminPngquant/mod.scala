@@ -1,7 +1,7 @@
 package typings.imageminPngquant
 
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,5 +93,5 @@ object mod {
     }
   }
   
-  type Plugin = js.Function1[/* input */ Buffer | ReadableStream[Any], js.Promise[Buffer]]
+  type Plugin = js.Function1[/* input */ Buffer | ReadableStream, js.Promise[Buffer]]
 }

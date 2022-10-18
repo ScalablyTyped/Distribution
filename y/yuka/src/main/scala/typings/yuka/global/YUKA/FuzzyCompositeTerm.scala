@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class FuzzyCompositeTerm ()
   extends typings.yuka.mod.FuzzyCompositeTerm {
-  def this(terms: js.Array[typings.yuka.fuzzyTermMod.FuzzyTerm]) = this()
+  def this(terms: js.Array[typings.yuka.srcFuzzyFuzzyTermMod.FuzzyTerm]) = this()
 }

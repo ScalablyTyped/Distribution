@@ -1,107 +1,158 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.action_required
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.cancelled
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.completed
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.failure
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.in_progress
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.neutral
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.queued_
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.skipped
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.success
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.timed_out
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait After extends StObject {
   
-  /** A cursor, as given in the [Link header](https://docs.github.com/rest/overview/resources-in-the-rest-api#link-header). If specified, the query only searches for events after this cursor. */
-  var after: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['audit-log-after'] */ js.Any
-  ] = js.undefined
+  /** @example d6fde92930d4715a2b49857d24b940956b26d2d3 */
+  var after: String | Null
   
-  /** A cursor, as given in the [Link header](https://docs.github.com/rest/overview/resources-in-the-rest-api#link-header). If specified, the query only searches for events before this cursor. */
-  var before: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['audit-log-before'] */ js.Any
-  ] = js.undefined
+  var app: Clientsecret | Null
   
-  /**
-    * The event types to include:
-    *
-    * - `web` - returns web (non-Git) events.
-    * - `git` - returns Git events.
-    * - `all` - returns both web and Git events.
-    *
-    * The default is `web`.
-    */
-  var include: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['audit-log-include'] */ js.Any
-  ] = js.undefined
+  /** @example 146e867f55c26428e5f9fade55a9bbf5e95a7912 */
+  var before: String | Null
+  
+  var check_runs_url: String
   
   /**
-    * The order of audit log events. To list newest events first, specify `desc`. To list oldest events first, specify `asc`.
-    *
-    * The default is `desc`.
+    * @example neutral
+    * @enum {string|null}
     */
-  var order: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['audit-log-order'] */ js.Any
-  ] = js.undefined
+  var conclusion: success | failure | neutral | cancelled | skipped | timed_out | action_required | Null
   
-  /** Page number of the results to fetch. */
-  var page: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
-  ] = js.undefined
+  /** Format: date-time */
+  var created_at: String | Null
   
-  /** The number of results per page (max 100). */
-  var per_page: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
-  ] = js.undefined
+  /** @example master */
+  var head_branch: String | Null
   
-  /** A search phrase. For more information, see [Searching the audit log](https://docs.github.com/github/setting-up-and-managing-organizations-and-teams/reviewing-the-audit-log-for-your-organization#searching-the-audit-log). */
-  var phrase: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['audit-log-phrase'] */ js.Any
-  ] = js.undefined
+  var head_commit: Committer
+  
+  /**
+    * @description The SHA of the head commit that is being checked.
+    * @example 009b8a3a9ccbb128af87f9b1c0f4c62e8a304f6d
+    */
+  var head_sha: String
+  
+  /** @example 5 */
+  var id: Double
+  
+  var latest_check_runs_count: Double
+  
+  /** @example MDEwOkNoZWNrU3VpdGU1 */
+  var node_id: String
+  
+  var pull_requests: js.Array[Base] | Null
+  
+  var repository: Blobsurl
+  
+  var rerequestable: js.UndefOr[Boolean] = js.undefined
+  
+  var runs_rerequestable: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * @example completed
+    * @enum {string|null}
+    */
+  var status: queued_ | in_progress | completed | Null
+  
+  /** Format: date-time */
+  var updated_at: String | Null
+  
+  /** @example https://api.github.com/repos/github/hello-world/check-suites/5 */
+  var url: String | Null
 }
 object After {
   
-  inline def apply(): After = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    check_runs_url: String,
+    head_commit: Committer,
+    head_sha: String,
+    id: Double,
+    latest_check_runs_count: Double,
+    node_id: String,
+    repository: Blobsurl
+  ): After = {
+    val __obj = js.Dynamic.literal(check_runs_url = check_runs_url.asInstanceOf[js.Any], head_commit = head_commit.asInstanceOf[js.Any], head_sha = head_sha.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], latest_check_runs_count = latest_check_runs_count.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], after = null, app = null, before = null, conclusion = null, created_at = null, head_branch = null, pull_requests = null, status = null, updated_at = null, url = null)
     __obj.asInstanceOf[After]
   }
   
   extension [Self <: After](x: Self) {
     
-    inline def setAfter(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['audit-log-after'] */ js.Any
-    ): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterNull: Self = StObject.set(x, "after", null)
     
-    inline def setBefore(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['audit-log-before'] */ js.Any
-    ): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setApp(value: Clientsecret): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setAppNull: Self = StObject.set(x, "app", null)
     
-    inline def setInclude(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['audit-log-include'] */ js.Any
-    ): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setBeforeNull: Self = StObject.set(x, "before", null)
     
-    inline def setOrder(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['audit-log-order'] */ js.Any
-    ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setCheck_runs_url(value: String): Self = StObject.set(x, "check_runs_url", value.asInstanceOf[js.Any])
     
-    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setConclusion(value: success | failure | neutral | cancelled | skipped | timed_out | action_required): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     
-    inline def setPage(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
-    ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setConclusionNull: Self = StObject.set(x, "conclusion", null)
     
-    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setPer_page(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
-    ): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setCreated_atNull: Self = StObject.set(x, "created_at", null)
     
-    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setHead_branch(value: String): Self = StObject.set(x, "head_branch", value.asInstanceOf[js.Any])
     
-    inline def setPhrase(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['audit-log-phrase'] */ js.Any
-    ): Self = StObject.set(x, "phrase", value.asInstanceOf[js.Any])
+    inline def setHead_branchNull: Self = StObject.set(x, "head_branch", null)
     
-    inline def setPhraseUndefined: Self = StObject.set(x, "phrase", js.undefined)
+    inline def setHead_commit(value: Committer): Self = StObject.set(x, "head_commit", value.asInstanceOf[js.Any])
+    
+    inline def setHead_sha(value: String): Self = StObject.set(x, "head_sha", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setLatest_check_runs_count(value: Double): Self = StObject.set(x, "latest_check_runs_count", value.asInstanceOf[js.Any])
+    
+    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    
+    inline def setPull_requests(value: js.Array[Base]): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
+    
+    inline def setPull_requestsNull: Self = StObject.set(x, "pull_requests", null)
+    
+    inline def setPull_requestsVarargs(value: Base*): Self = StObject.set(x, "pull_requests", js.Array(value*))
+    
+    inline def setRepository(value: Blobsurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    
+    inline def setRerequestable(value: Boolean): Self = StObject.set(x, "rerequestable", value.asInstanceOf[js.Any])
+    
+    inline def setRerequestableUndefined: Self = StObject.set(x, "rerequestable", js.undefined)
+    
+    inline def setRuns_rerequestable(value: Boolean): Self = StObject.set(x, "runs_rerequestable", value.asInstanceOf[js.Any])
+    
+    inline def setRuns_rerequestableUndefined: Self = StObject.set(x, "runs_rerequestable", js.undefined)
+    
+    inline def setStatus(value: queued_ | in_progress | completed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    
+    inline def setUpdated_atNull: Self = StObject.set(x, "updated_at", null)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
   }
 }

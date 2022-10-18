@@ -1,20 +1,20 @@
 package typings.luminoDatagrid
 
-import typings.luminoDatagrid.basicmousehandlerMod.ResizeHandle
-import typings.luminoDatagrid.celleditorMod.CellDataType
-import typings.luminoDatagrid.celleditorcontrollerMod._EditorOverrideIdentifier
-import typings.luminoDatagrid.datagridMod.DataGrid.ColumnFitType
-import typings.luminoDatagrid.datagridMod.DataGrid.HeaderVisibility
-import typings.luminoDatagrid.datamodelMod.DataModel.CellRegion
-import typings.luminoDatagrid.datamodelMod.DataModel.ColumnRegion
-import typings.luminoDatagrid.datamodelMod.DataModel.RowRegion
-import typings.luminoDatagrid.notificationMod.Notification.Placement
-import typings.luminoDatagrid.selectionmodelMod.SelectionModel.ClearMode
-import typings.luminoDatagrid.selectionmodelMod.SelectionModel.CursorMoveDirection
-import typings.luminoDatagrid.selectionmodelMod.SelectionModel.SelectionMode
-import typings.luminoDatagrid.textrendererMod.TextRenderer.ElideDirection
-import typings.luminoDatagrid.textrendererMod.TextRenderer.HorizontalAlignment
-import typings.luminoDatagrid.textrendererMod.TextRenderer.VerticalAlignment
+import typings.luminoDatagrid.typesBasicmousehandlerMod.ResizeHandle
+import typings.luminoDatagrid.typesCelleditorMod.CellDataType
+import typings.luminoDatagrid.typesCelleditorcontrollerMod._EditorOverrideIdentifier
+import typings.luminoDatagrid.typesDatagridMod.DataGrid.ColumnFitType
+import typings.luminoDatagrid.typesDatagridMod.DataGrid.HeaderVisibility
+import typings.luminoDatagrid.typesDatamodelMod.DataModel.CellRegion
+import typings.luminoDatagrid.typesDatamodelMod.DataModel.ColumnRegion
+import typings.luminoDatagrid.typesDatamodelMod.DataModel.RowRegion
+import typings.luminoDatagrid.typesNotificationMod.Notification.Placement
+import typings.luminoDatagrid.typesSelectionmodelMod.SelectionModel.ClearMode
+import typings.luminoDatagrid.typesSelectionmodelMod.SelectionModel.CursorMoveDirection
+import typings.luminoDatagrid.typesSelectionmodelMod.SelectionModel.SelectionMode
+import typings.luminoDatagrid.typesTextrendererMod.TextRenderer.ElideDirection
+import typings.luminoDatagrid.typesTextrendererMod.TextRenderer.HorizontalAlignment
+import typings.luminoDatagrid.typesTextrendererMod.TextRenderer.VerticalAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +56,7 @@ object luminoDatagridStrings {
        with Placement
        with ResizeHandle
        with VerticalAlignment
-       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.VerticalAlignment
+       with typings.luminoDatagrid.typesHyperlinkrendererMod.HyperlinkRenderer.VerticalAlignment
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
@@ -73,9 +73,9 @@ object luminoDatagridStrings {
   sealed trait center
     extends StObject
        with HorizontalAlignment
-       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.HorizontalAlignment
+       with typings.luminoDatagrid.typesHyperlinkrendererMod.HyperlinkRenderer.HorizontalAlignment
        with VerticalAlignment
-       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.VerticalAlignment
+       with typings.luminoDatagrid.typesHyperlinkrendererMod.HyperlinkRenderer.VerticalAlignment
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
@@ -173,9 +173,9 @@ object luminoDatagridStrings {
     extends StObject
        with CursorMoveDirection
        with ElideDirection
-       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.ElideDirection
+       with typings.luminoDatagrid.typesHyperlinkrendererMod.HyperlinkRenderer.ElideDirection
        with HorizontalAlignment
-       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.HorizontalAlignment
+       with typings.luminoDatagrid.typesHyperlinkrendererMod.HyperlinkRenderer.HorizontalAlignment
        with Placement
        with ResizeHandle
   inline def left: left = "left".asInstanceOf[left]
@@ -216,9 +216,9 @@ object luminoDatagridStrings {
     extends StObject
        with CursorMoveDirection
        with ElideDirection
-       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.ElideDirection
+       with typings.luminoDatagrid.typesHyperlinkrendererMod.HyperlinkRenderer.ElideDirection
        with HorizontalAlignment
-       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.HorizontalAlignment
+       with typings.luminoDatagrid.typesHyperlinkrendererMod.HyperlinkRenderer.HorizontalAlignment
        with Placement
        with ResizeHandle
   inline def right: right = "right".asInstanceOf[right]
@@ -282,7 +282,7 @@ object luminoDatagridStrings {
        with Placement
        with ResizeHandle
        with VerticalAlignment
-       with typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.VerticalAlignment
+       with typings.luminoDatagrid.typesHyperlinkrendererMod.HyperlinkRenderer.VerticalAlignment
   inline def top: top = "top".asInstanceOf[top]
   
   @js.native

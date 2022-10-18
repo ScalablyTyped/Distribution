@@ -1,8 +1,8 @@
 package typings.reactQuery
 
-import typings.reactQuery.typesMod.MutationStatus
-import typings.reactQuery.typesMod.QueryStatus
-import typings.reactQuery.utilsMod.QueryStatusFilter
+import typings.reactQuery.typesCoreTypesMod.MutationStatus
+import typings.reactQuery.typesCoreTypesMod.QueryStatus
+import typings.reactQuery.typesCoreUtilsMod.QueryStatusFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,10 +48,6 @@ object reactQueryStrings {
   @js.native
   sealed trait Numbersignfff extends StObject
   inline def Numbersignfff: Numbersignfff = "#fff".asInstanceOf[Numbersignfff]
-  
-  @js.native
-  sealed trait Override extends StObject
-  inline def Override: Override = "Override".asInstanceOf[Override]
   
   @js.native
   sealed trait a extends StObject

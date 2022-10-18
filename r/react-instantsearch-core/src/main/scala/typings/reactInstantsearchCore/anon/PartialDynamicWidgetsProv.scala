@@ -13,7 +13,7 @@ trait PartialDynamicWidgetsProv extends StObject {
   
   var children: js.UndefOr[ReactChild] = js.undefined
   
-  var fallbackComponent: js.UndefOr[ComponentType[AttributeString]] = js.undefined
+  var fallbackComponent: js.UndefOr[ComponentType[Attribute]] = js.undefined
 }
 object PartialDynamicWidgetsProv {
   
@@ -34,7 +34,7 @@ object PartialDynamicWidgetsProv {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setFallbackComponent(value: ComponentType[AttributeString]): Self = StObject.set(x, "fallbackComponent", value.asInstanceOf[js.Any])
+    inline def setFallbackComponent(value: ComponentType[Attribute]): Self = StObject.set(x, "fallbackComponent", value.asInstanceOf[js.Any])
     
     inline def setFallbackComponentUndefined: Self = StObject.set(x, "fallbackComponent", js.undefined)
   }

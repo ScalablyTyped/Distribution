@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines alternate shortcut keys for app capture. */
-@JSGlobal("Windows.Media.Capture.AppCaptureAlternateShortcutKeys")
+/* note: abstract class */ @JSGlobal("Windows.Media.Capture.AppCaptureAlternateShortcutKeys")
 @js.native
-abstract class AppCaptureAlternateShortcutKeys ()
+open class AppCaptureAlternateShortcutKeys ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.AppCaptureAlternateShortcutKeys {
   

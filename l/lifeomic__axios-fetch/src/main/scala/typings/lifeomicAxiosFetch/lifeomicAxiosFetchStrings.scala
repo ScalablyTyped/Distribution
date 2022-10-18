@@ -1,7 +1,7 @@
 package typings.lifeomicAxiosFetch
 
-import typings.lifeomicAxiosFetch.axiosTypesMod.Method
-import typings.lifeomicAxiosFetch.axiosTypesMod.ResponseType
+import typings.lifeomicAxiosFetch.srcAxiosTypesMod.Method
+import typings.lifeomicAxiosFetch.srcAxiosTypesMod.ResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

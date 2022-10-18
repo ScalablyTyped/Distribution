@@ -1,6 +1,6 @@
 package typings.mdxJsReact
 
-import typings.mdx.mod.MDXComponents
+import typings.mdx.typesMod.MDXComponents
 import typings.mdxJsReact.libMod.Components
 import typings.mdxJsReact.libMod.MergeComponents
 import typings.mdxJsReact.libMod.Props

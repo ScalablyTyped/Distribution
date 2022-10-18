@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides for iteration of the IPlayReadySecureStopServiceRequest interface. */
-@JSGlobal("Windows.Media.Protection.PlayReady.PlayReadySecureStopIterator")
+/* note: abstract class */ @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadySecureStopIterator")
 @js.native
-abstract class PlayReadySecureStopIterator ()
+open class PlayReadySecureStopIterator ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadySecureStopIterator {
   

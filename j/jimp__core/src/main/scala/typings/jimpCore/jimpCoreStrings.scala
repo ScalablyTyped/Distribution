@@ -1,7 +1,7 @@
 package typings.jimpCore
 
-import typings.jimpCore.etcMod.ChangeName
-import typings.jimpCore.etcMod.ListenableName
+import typings.jimpCore.typesEtcMod.ChangeName
+import typings.jimpCore.typesEtcMod.ListenableName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,9 +44,6 @@ object jimpCoreStrings {
   inline def `class`: `class` = "class".asInstanceOf[`class`]
   
   @js.native
-  sealed trait clone extends StObject
-  
-  @js.native
   sealed trait cloned
     extends StObject
        with ListenableName
@@ -55,10 +52,6 @@ object jimpCoreStrings {
   @js.native
   sealed trait constants extends StObject
   inline def constants: constants = "constants".asInstanceOf[constants]
-  
-  @js.native
-  sealed trait constructor extends StObject
-  inline def constructor: constructor = "constructor".asInstanceOf[constructor]
   
   @js.native
   sealed trait crop

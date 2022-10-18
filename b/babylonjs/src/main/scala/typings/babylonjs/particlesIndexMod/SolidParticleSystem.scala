@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Particles/index", "SolidParticleSystem")
 @js.native
 open class SolidParticleSystem protected ()
-  extends typings.babylonjs.solidParticleSystemMod.SolidParticleSystem {
+  extends typings.babylonjs.particlesSolidParticleSystemMod.SolidParticleSystem {
   /**
     * Creates a SPS (Solid Particle System) object.
     * @param name (String) is the SPS name, this will be the underlying mesh name.

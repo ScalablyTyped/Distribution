@@ -15,8 +15,8 @@ import typings.antDesignIconsAngular.antDesignIconsAngularStrings.`[antIcon]`
 import typings.antDesignIconsAngular.antDesignIconsAngularStrings.`type`
 import typings.antDesignIconsAngular.antDesignIconsAngularStrings.theme
 import typings.antDesignIconsAngular.antDesignIconsAngularStrings.twoToneColor
-import typings.antDesignIconsAngular.iconDirectiveMod.IconDirective
-import typings.antDesignIconsAngular.iconServiceMod.IconService
+import typings.antDesignIconsAngular.componentIconDotdirectiveMod.IconDirective
+import typings.antDesignIconsAngular.componentIconDotserviceMod.IconService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

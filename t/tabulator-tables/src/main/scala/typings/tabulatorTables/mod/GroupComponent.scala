@@ -35,6 +35,8 @@ trait GroupComponent extends StObject {
   /** The isVisible function returns a boolean to show if the group is visible, a value of true means it is visible. */
   def isVisible(): Boolean
   
+  def popup(contents: String, position: PopupPosition): Unit
+  
   /** The show function shows the group if it is hidden. */
   def show(): Unit
   
@@ -53,10 +55,11 @@ object GroupComponent {
     getTable: () => Tabulator,
     hide: () => Unit,
     isVisible: () => Boolean,
+    popup: (String, PopupPosition) => Unit,
     show: () => Unit,
     toggle: () => Unit
   ): GroupComponent = {
-    val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction0(getElement), getField = js.Any.fromFunction0(getField), getKey = js.Any.fromFunction0(getKey), getParentGroup = js.Any.fromFunction0(getParentGroup), getRows = js.Any.fromFunction0(getRows), getSubGroups = js.Any.fromFunction0(getSubGroups), getTable = js.Any.fromFunction0(getTable), hide = js.Any.fromFunction0(hide), isVisible = js.Any.fromFunction0(isVisible), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
+    val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction0(getElement), getField = js.Any.fromFunction0(getField), getKey = js.Any.fromFunction0(getKey), getParentGroup = js.Any.fromFunction0(getParentGroup), getRows = js.Any.fromFunction0(getRows), getSubGroups = js.Any.fromFunction0(getSubGroups), getTable = js.Any.fromFunction0(getTable), hide = js.Any.fromFunction0(hide), isVisible = js.Any.fromFunction0(isVisible), popup = js.Any.fromFunction2(popup), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
     __obj.asInstanceOf[GroupComponent]
   }
   
@@ -79,6 +82,8 @@ object GroupComponent {
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    
+    inline def setPopup(value: (String, PopupPosition) => Unit): Self = StObject.set(x, "popup", js.Any.fromFunction2(value))
     
     inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     

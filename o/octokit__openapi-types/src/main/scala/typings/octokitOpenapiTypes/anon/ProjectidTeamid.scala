@@ -7,29 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProjectidTeamid extends StObject {
   
   /** The unique identifier of the project. */
-  var project_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any
+  var project_id: Double
   
   /** The unique identifier of the team. */
-  var team_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
+  var team_id: Double
 }
 object ProjectidTeamid {
   
-  inline def apply(
-    project_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any,
-    team_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
-  ): ProjectidTeamid = {
+  inline def apply(project_id: Double, team_id: Double): ProjectidTeamid = {
     val __obj = js.Dynamic.literal(project_id = project_id.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectidTeamid]
   }
   
   extension [Self <: ProjectidTeamid](x: Self) {
     
-    inline def setProject_id(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any
-    ): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    inline def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
     
-    inline def setTeam_id(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
-    ): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

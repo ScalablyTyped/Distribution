@@ -9,7 +9,6 @@ import typings.graphqlReact.anon.FetchOptionsOverride
 import typings.graphqlReact.anon.LoadOnMount
 import typings.graphqlReact.anon.Locations
 import typings.graphqlReact.anon.Query
-import typings.graphqlReact.anon.Variables
 import typings.graphqlReact.graphqlReactStrings.cache
 import typings.graphqlReact.graphqlReactStrings.fetch
 import typings.graphqlReact.graphqlReactStrings.reset
@@ -145,7 +144,7 @@ object mod {
   
   type GraphQLFetchOptionsOverride = js.Function1[/* options */ GraphQLFetchOptions, Unit]
   
-  type GraphQLOperation[V] = Query & (Variables[V] | js.Object)
+  type GraphQLOperation[V] = Query & (/* import warning: importer.ImportType#apply Failed type conversion: V extends undefined ? {} : {  variables :V} */ js.Any)
   
   trait GraphQLOperationLoading[T] extends StObject {
     

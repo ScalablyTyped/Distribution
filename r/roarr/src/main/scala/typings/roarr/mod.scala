@@ -1,9 +1,9 @@
 package typings.roarr
 
-import typings.roarr.typesMod.JsonObject
-import typings.roarr.typesMod.LogLevelName
-import typings.roarr.typesMod.Logger
-import typings.roarr.typesMod.RoarrGlobalState
+import typings.roarr.distSrcTypesMod.JsonObject
+import typings.roarr.distSrcTypesMod.LogLevelName
+import typings.roarr.distSrcTypesMod.Logger
+import typings.roarr.distSrcTypesMod.RoarrGlobalState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

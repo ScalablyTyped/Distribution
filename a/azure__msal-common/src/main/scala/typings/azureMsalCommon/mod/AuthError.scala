@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "AuthError")
 @js.native
 open class AuthError ()
-  extends typings.azureMsalCommon.authErrorMod.AuthError {
+  extends typings.azureMsalCommon.distErrorAuthErrorMod.AuthError {
   def this(errorCode: String) = this()
   def this(errorCode: String, errorMessage: String) = this()
   def this(errorCode: Unit, errorMessage: String) = this()
@@ -28,11 +28,11 @@ object AuthError {
     * @param errDesc
     * @returns
     */
-  inline def createPostRequestFailed(errDesc: String): typings.azureMsalCommon.authErrorMod.AuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createPostRequestFailed")(errDesc.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.authErrorMod.AuthError]
+  inline def createPostRequestFailed(errDesc: String): typings.azureMsalCommon.distErrorAuthErrorMod.AuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createPostRequestFailed")(errDesc.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorAuthErrorMod.AuthError]
   
   /**
     * Creates an error that is thrown when something unexpected happens in the library.
     * @param errDesc
     */
-  inline def createUnexpectedError(errDesc: String): typings.azureMsalCommon.authErrorMod.AuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnexpectedError")(errDesc.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.authErrorMod.AuthError]
+  inline def createUnexpectedError(errDesc: String): typings.azureMsalCommon.distErrorAuthErrorMod.AuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnexpectedError")(errDesc.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorAuthErrorMod.AuthError]
 }

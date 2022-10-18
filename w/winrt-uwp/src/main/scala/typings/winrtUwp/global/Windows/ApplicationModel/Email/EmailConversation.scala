@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an email conversation. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailConversation")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Email.EmailConversation")
 @js.native
-abstract class EmailConversation ()
+open class EmailConversation ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailConversation

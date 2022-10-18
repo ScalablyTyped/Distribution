@@ -8,54 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object hasuraStrings {
   
   @js.native
-  sealed trait BaseAggregateResult extends StObject
-  inline def BaseAggregateResult: BaseAggregateResult = "BaseAggregateResult".asInstanceOf[BaseAggregateResult]
-  
-  @js.native
-  sealed trait BaseOrderByAggregate extends StObject
-  inline def BaseOrderByAggregate: BaseOrderByAggregate = "BaseOrderByAggregate".asInstanceOf[BaseOrderByAggregate]
-  
-  @js.native
-  sealed trait HasuraAggregateQueryResponse extends StObject
-  inline def HasuraAggregateQueryResponse: HasuraAggregateQueryResponse = "HasuraAggregateQueryResponse".asInstanceOf[HasuraAggregateQueryResponse]
-  
-  @js.native
-  sealed trait HasuraDeleteInput extends StObject
-  inline def HasuraDeleteInput: HasuraDeleteInput = "HasuraDeleteInput".asInstanceOf[HasuraDeleteInput]
-  
-  @js.native
-  sealed trait HasuraInsertInput extends StObject
-  inline def HasuraInsertInput: HasuraInsertInput = "HasuraInsertInput".asInstanceOf[HasuraInsertInput]
-  
-  @js.native
-  sealed trait HasuraInsertInputObject extends StObject
-  inline def HasuraInsertInputObject: HasuraInsertInputObject = "HasuraInsertInputObject".asInstanceOf[HasuraInsertInputObject]
-  
-  @js.native
-  sealed trait HasuraInsertInputSingle extends StObject
-  inline def HasuraInsertInputSingle: HasuraInsertInputSingle = "HasuraInsertInputSingle".asInstanceOf[HasuraInsertInputSingle]
-  
-  @js.native
-  sealed trait HasuraInsertOnConflict extends StObject
-  inline def HasuraInsertOnConflict: HasuraInsertOnConflict = "HasuraInsertOnConflict".asInstanceOf[HasuraInsertOnConflict]
-  
-  @js.native
-  sealed trait HasuraMultipleQueriesResponse extends StObject
-  inline def HasuraMultipleQueriesResponse: HasuraMultipleQueriesResponse = "HasuraMultipleQueriesResponse".asInstanceOf[HasuraMultipleQueriesResponse]
-  
-  @js.native
-  sealed trait HasuraQueryResponse extends StObject
-  inline def HasuraQueryResponse: HasuraQueryResponse = "HasuraQueryResponse".asInstanceOf[HasuraQueryResponse]
-  
-  @js.native
-  sealed trait NumberAggregateResult extends StObject
-  inline def NumberAggregateResult: NumberAggregateResult = "NumberAggregateResult".asInstanceOf[NumberAggregateResult]
-  
-  @js.native
-  sealed trait NumberOrderByAggregate extends StObject
-  inline def NumberOrderByAggregate: NumberOrderByAggregate = "NumberOrderByAggregate".asInstanceOf[NumberOrderByAggregate]
-  
-  @js.native
   sealed trait asc
     extends StObject
        with ScalarOrderBy

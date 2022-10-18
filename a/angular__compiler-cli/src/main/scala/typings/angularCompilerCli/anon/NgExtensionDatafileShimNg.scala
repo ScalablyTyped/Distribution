@@ -1,6 +1,6 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.expandoMod.NgFileShimData
+import typings.angularCompilerCli.srcNgtscShimsSrcExpandoMod.NgFileShimData
 import typings.typescript.mod.FileReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

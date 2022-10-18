@@ -1,6 +1,6 @@
 package typings.fpTs.mod
 
-import typings.fpTs.semiringMod.Semiring
+import typings.fpTs.libSemiringMod.Semiring
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

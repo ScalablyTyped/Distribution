@@ -14,7 +14,7 @@ trait `16` extends StObject {
   /**
     * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label
     */
-  var label: js.UndefOr[Rotate] = js.undefined
+  var label: js.UndefOr[Offset] = js.undefined
 }
 object `16` {
   
@@ -29,7 +29,7 @@ object `16` {
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    inline def setLabel(value: Rotate): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Offset): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }

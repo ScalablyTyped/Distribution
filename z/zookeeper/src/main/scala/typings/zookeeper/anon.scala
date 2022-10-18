@@ -1,7 +1,7 @@
 package typings.zookeeper
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.zookeeper.zookeeperMod.ZooKeeperPromise
+import typings.zookeeper.mod.ZooKeeperPromise
 import typings.zookeeper.zookeeperWithCallbacksMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

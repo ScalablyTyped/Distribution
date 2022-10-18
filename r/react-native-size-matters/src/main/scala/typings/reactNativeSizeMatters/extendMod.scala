@@ -1,6 +1,5 @@
 package typings.reactNativeSizeMatters
 
-import org.scalablytyped.runtime.TopLevel
 import typings.reactNativeSizeMatters.mod.NamedStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,11 +17,7 @@ object extendMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create[T /* <: NamedStyles[Any | T] */](stylesObject: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: react-native.react-native.RegisteredStyle<T[P] & std.Record<std.Extract<keyof T[P], 'fontSize' | 'letterSpacing' | 'lineHeight' | 'textShadowRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomWidth' | 'borderTopWidth' | 'borderRightWidth' | 'borderLeftWidth' | 'borderRadius' | 'shadowRadius' | 'borderWidth' | 'aspectRatio' | 'rotation' | 'scaleX' | 'scaleY' | 'translateX' | 'translateY'>, number>>}
-      */ typings.reactNativeSizeMatters.reactNativeSizeMattersStrings.create & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stylesObject.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: react-native.react-native.RegisteredStyle<T[P] & std.Record<std.Extract<keyof T[P], 'fontSize' | 'letterSpacing' | 'lineHeight' | 'textShadowRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomWidth' | 'borderTopWidth' | 'borderRightWidth' | 'borderLeftWidth' | 'borderRadius' | 'shadowRadius' | 'borderWidth' | 'aspectRatio' | 'rotation' | 'scaleX' | 'scaleY' | 'translateX' | 'translateY'>, number>>}
-      */ typings.reactNativeSizeMatters.reactNativeSizeMattersStrings.create & TopLevel[T]]
+    inline def create[T /* <: NamedStyles[Any | T] */](stylesObject: T): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: react-native.react-native.RegisteredStyle<T[P] & std.Record<std.Extract<keyof T[P], 'fontSize' | 'letterSpacing' | 'lineHeight' | 'textShadowRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomWidth' | 'borderTopWidth' | 'borderRightWidth' | 'borderLeftWidth' | 'borderRadius' | 'shadowRadius' | 'borderWidth' | 'aspectRatio' | 'rotation' | 'scaleX' | 'scaleY' | 'translateX' | 'translateY'>, number>>} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stylesObject.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: react-native.react-native.RegisteredStyle<T[P] & std.Record<std.Extract<keyof T[P], 'fontSize' | 'letterSpacing' | 'lineHeight' | 'textShadowRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomWidth' | 'borderTopWidth' | 'borderRightWidth' | 'borderLeftWidth' | 'borderRadius' | 'shadowRadius' | 'borderWidth' | 'aspectRatio' | 'rotation' | 'scaleX' | 'scaleY' | 'translateX' | 'translateY'>, number>>} */ js.Any]
   }
   
   inline def moderateScale(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("moderateScale")(size.asInstanceOf[js.Any]).asInstanceOf[Double]

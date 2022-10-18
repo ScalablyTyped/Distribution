@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.progressspinnerMod.ProgressSpinnerProps
+import typings.primereact.progressspinnerProgressspinnerMod.ProgressSpinnerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "ProgressSpinner")
 @js.native
 open class ProgressSpinner protected ()
-  extends typings.primereact.progressspinnerMod.ProgressSpinner {
+  extends typings.primereact.progressspinnerProgressspinnerMod.ProgressSpinner {
   def this(props: ProgressSpinnerProps) = this()
   /**
     * @deprecated

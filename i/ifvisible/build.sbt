@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ifvisible"
-version := "1.1-dt-20211202Z-515c34"
+version := "1.1-dt-20221003Z-515c34"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

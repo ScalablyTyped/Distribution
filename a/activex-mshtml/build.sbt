@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activex-mshtml"
-version := "4.0-dt-20220705Z-f6f3e3"
+version := "4.0-dt-20220705Z-c28fdf"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

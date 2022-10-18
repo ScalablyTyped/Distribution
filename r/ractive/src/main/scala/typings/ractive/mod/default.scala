@@ -40,8 +40,8 @@ object default {
   /** The parent constructor used to create this constructor. */
   @JSImport("ractive", "default.Parent")
   @js.native
-  def Parent: Static[Ractive[Ractive[Any]]] = js.native
-  inline def Parent_=(x: Static[Ractive[Ractive[Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parent")(x.asInstanceOf[js.Any])
+  def Parent: Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
+  inline def Parent_=(x: Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parent")(x.asInstanceOf[js.Any])
   
   /** The Ractive constructor used to create this constructor. */
   @JSImport("ractive", "default.Ractive")
@@ -79,14 +79,14 @@ object default {
   
   @JSImport("ractive", "default.decorators")
   @js.native
-  def decorators: Registry[Decorator[Ractive[Ractive[Any]]]] = js.native
-  inline def decorators_=(x: Registry[Decorator[Ractive[Ractive[Any]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
+  def decorators: Registry[Decorator[Ractive[/* ractive.ractive.Ractive<any> */ Any]]] = js.native
+  inline def decorators_=(x: Registry[Decorator[Ractive[/* ractive.ractive.Ractive<any> */ Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
   
   /** The registries that are inherited by all instance. */
   @JSImport("ractive", "default.defaults")
   @js.native
-  def defaults: Registries[Ractive[Ractive[Any]]] = js.native
-  inline def defaults_=(x: Registries[Ractive[Ractive[Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+  def defaults: Registries[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
+  inline def defaults_=(x: Registries[Ractive[/* ractive.ractive.Ractive<any> */ Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
   
   @JSImport("ractive", "default.easings")
   @js.native
@@ -98,15 +98,19 @@ object default {
   
   @JSImport("ractive", "default.events")
   @js.native
-  def events: Registry[EventPlugin[Ractive[Ractive[Any]]]] = js.native
-  inline def events_=(x: Registry[EventPlugin[Ractive[Ractive[Any]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
+  def events: Registry[EventPlugin[Ractive[/* ractive.ractive.Ractive<any> */ Any]]] = js.native
+  inline def events_=(x: Registry[EventPlugin[Ractive[/* ractive.ractive.Ractive<any> */ Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
   
   /** Create a new component with this constructor as a starting point. */
-  inline def extend(): Static[Ractive[Ractive[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[Static[Ractive[Ractive[Any]]]]
+  inline def extend(): Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]]]
   inline def extend[T /* <: ExtendOpts[Any] & ValueMap */, U /* <: ReadonlyArrayExtendOptsan */](
     opts: T,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param more because its type U is not an array type */ more: U
-  ): Static[Ractive[Ractive[Any]] & (Merge[T, U, ExtendOpts[Ractive[Ractive[Any]]]])] = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(opts.asInstanceOf[js.Any], more.asInstanceOf[js.Any])).asInstanceOf[Static[Ractive[Ractive[Any]] & (Merge[T, U, ExtendOpts[Ractive[Ractive[Any]]]])]]
+  ): Static[
+    (Ractive[/* ractive.ractive.Ractive<any> */ Any]) & (Merge[T, U, ExtendOpts[Ractive[/* ractive.ractive.Ractive<any> */ Any]]])
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(opts.asInstanceOf[js.Any], more.asInstanceOf[js.Any])).asInstanceOf[Static[
+    (Ractive[/* ractive.ractive.Ractive<any> */ Any]) & (Merge[T, U, ExtendOpts[Ractive[/* ractive.ractive.Ractive<any> */ Any]]])
+  ]]
   
   /** Create a new component with this constructor as a starting point using the given constructor. */
   inline def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V]): Static[Ractive[U] & U] = ^.asInstanceOf[js.Dynamic].applyDynamic("extendWith")(c.asInstanceOf[js.Any]).asInstanceOf[Static[Ractive[U] & U]]
@@ -203,5 +207,5 @@ object default {
   /** Unescape the given key e.g. 'foo\.bar' becomes 'foo.bar'.k */
   inline def unescapeKey(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeKey")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def use(args: Plugin*): Static[Ractive[Ractive[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Static[Ractive[Ractive[Any]]]]
+  inline def use(args: Plugin*): Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]]]
 }

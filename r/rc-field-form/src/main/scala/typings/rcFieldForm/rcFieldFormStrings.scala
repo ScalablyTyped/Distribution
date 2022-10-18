@@ -1,15 +1,11 @@
 package typings.rcFieldForm
 
-import typings.rcFieldForm.interfaceMod.RuleType
+import typings.rcFieldForm.esInterfaceMod.RuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcFieldFormStrings {
-  
-  @js.native
-  sealed trait RecursivePartial extends StObject
-  inline def RecursivePartial: RecursivePartial = "RecursivePartial".asInstanceOf[RecursivePartial]
   
   @js.native
   sealed trait additions extends StObject

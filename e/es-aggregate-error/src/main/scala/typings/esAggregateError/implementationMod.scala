@@ -1,6 +1,6 @@
 package typings.esAggregateError
 
-import typings.std.Error
+import typings.node.NodeJS.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,10 +31,9 @@ object implementationMod {
     override val name_AggregateError: typings.esAggregateError.esAggregateErrorStrings.AggregateError = js.native
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException * / any */ trait AggregateError
+  trait AggregateError
     extends StObject
-       with Error {
+       with ErrnoException {
     
     val errors: js.Array[Any]
     

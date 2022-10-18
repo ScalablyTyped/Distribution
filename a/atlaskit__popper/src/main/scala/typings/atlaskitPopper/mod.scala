@@ -2,8 +2,8 @@ package typings.atlaskitPopper
 
 import typings.atlaskitPopper.anon.ReadonlyManagerProps
 import typings.atlaskitPopper.anon.ReadonlyReferenceProps
-import typings.atlaskitPopper.popperMod.CustomPopperProps
-import typings.popperjsCore.enumsMod.Placement
+import typings.atlaskitPopper.distTypesPopperMod.CustomPopperProps
+import typings.popperjsCore.libEnumsMod.Placement
 import typings.react.mod.global.JSX.Element
 import typings.reactPopper.mod.ManagerProps
 import typings.reactPopper.mod.ReferenceProps

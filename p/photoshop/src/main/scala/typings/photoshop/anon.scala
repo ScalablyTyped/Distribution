@@ -1,23 +1,23 @@
 package typings.photoshop
 
-import typings.photoshop.colorTypesMod.ColorDescriptor
-import typings.photoshop.constantsMod.ResampleMethod
-import typings.photoshop.coreModulesMod.ActionDescriptor
-import typings.photoshop.coreModulesMod.BatchPlayCommandOptions
-import typings.photoshop.coreModulesMod.CPUInfo
-import typings.photoshop.coreModulesMod.ColorConversionModel
-import typings.photoshop.coreModulesMod.ExecuteAsModalOptions
-import typings.photoshop.coreModulesMod.ExecutionContext
-import typings.photoshop.coreModulesMod.GPUInfo
-import typings.photoshop.coreModulesMod.NotificationListener
-import typings.photoshop.coreModulesMod.Scheduling
-import typings.photoshop.objectsMod.BMPSaveOptions
-import typings.photoshop.objectsMod.GIFSaveOptions
-import typings.photoshop.objectsMod.JPEGSaveOptions
-import typings.photoshop.objectsMod.PNGSaveOptions
-import typings.photoshop.objectsMod.PhotoshopSaveOptions
+import typings.photoshop.domConstantsMod.ResampleMethod
+import typings.photoshop.domCoreModulesMod.ActionDescriptor
+import typings.photoshop.domCoreModulesMod.BatchPlayCommandOptions
+import typings.photoshop.domCoreModulesMod.CPUInfo
+import typings.photoshop.domCoreModulesMod.ColorConversionModel
+import typings.photoshop.domCoreModulesMod.ExecuteAsModalOptions
+import typings.photoshop.domCoreModulesMod.ExecutionContext
+import typings.photoshop.domCoreModulesMod.GPUInfo
+import typings.photoshop.domCoreModulesMod.NotificationListener
+import typings.photoshop.domCoreModulesMod.Scheduling
+import typings.photoshop.domObjectsMod.BMPSaveOptions
+import typings.photoshop.domObjectsMod.GIFSaveOptions
+import typings.photoshop.domObjectsMod.JPEGSaveOptions
+import typings.photoshop.domObjectsMod.PNGSaveOptions
+import typings.photoshop.domObjectsMod.PhotoshopSaveOptions
 import typings.photoshop.photoshopStrings.angleUnit
 import typings.photoshop.photoshopStrings.document
+import typings.photoshop.utilColorTypesMod.ColorDescriptor
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -193,18 +193,18 @@ object anon {
   
   trait HistoryStateInfo extends StObject {
     
-    var historyStateInfo: typings.photoshop.coreModulesMod.HistoryStateInfo
+    var historyStateInfo: typings.photoshop.domCoreModulesMod.HistoryStateInfo
   }
   object HistoryStateInfo {
     
-    inline def apply(historyStateInfo: typings.photoshop.coreModulesMod.HistoryStateInfo): HistoryStateInfo = {
+    inline def apply(historyStateInfo: typings.photoshop.domCoreModulesMod.HistoryStateInfo): HistoryStateInfo = {
       val __obj = js.Dynamic.literal(historyStateInfo = historyStateInfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[HistoryStateInfo]
     }
     
     extension [Self <: HistoryStateInfo](x: Self) {
       
-      inline def setHistoryStateInfo(value: typings.photoshop.coreModulesMod.HistoryStateInfo): Self = StObject.set(x, "historyStateInfo", value.asInstanceOf[js.Any])
+      inline def setHistoryStateInfo(value: typings.photoshop.domCoreModulesMod.HistoryStateInfo): Self = StObject.set(x, "historyStateInfo", value.asInstanceOf[js.Any])
     }
   }
   

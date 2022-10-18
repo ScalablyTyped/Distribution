@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Properties of a card layout relevant to most card layouts.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait CardLayoutSectionStandardProperties extends StObject {
   
@@ -17,8 +16,7 @@ trait CardLayoutSectionStandardProperties extends StObject {
     * Represents whether this section of the card is initially collapsed.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var collapsed: js.UndefOr[Boolean] = js.undefined
   
@@ -28,8 +26,7 @@ trait CardLayoutSectionStandardProperties extends StObject {
     * If the card section doesn't have a title, the default value is `false`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var collapsible: js.UndefOr[Boolean] = js.undefined
   
@@ -37,8 +34,7 @@ trait CardLayoutSectionStandardProperties extends StObject {
     * Represents the names of the properties in this section.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var properties: js.Array[String]
   
@@ -46,8 +42,7 @@ trait CardLayoutSectionStandardProperties extends StObject {
     * Represents the title of this section of the card.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var title: js.UndefOr[String] = js.undefined
 }

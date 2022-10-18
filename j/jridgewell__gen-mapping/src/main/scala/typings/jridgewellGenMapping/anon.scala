@@ -1,7 +1,7 @@
 package typings.jridgewellGenMapping
 
-import typings.jridgewellGenMapping.typesMod.Mapping
-import typings.jridgewellGenMapping.typesMod.Pos
+import typings.jridgewellGenMapping.distTypesTypesMod.Mapping
+import typings.jridgewellGenMapping.distTypesTypesMod.Pos
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

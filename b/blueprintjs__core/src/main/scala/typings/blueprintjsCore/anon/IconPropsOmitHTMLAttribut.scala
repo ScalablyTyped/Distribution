@@ -51,9 +51,9 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.tree
 import typings.blueprintjsCore.blueprintjsCoreStrings.url
 import typings.blueprintjsCore.blueprintjsCoreStrings.vertical
 import typings.blueprintjsCore.blueprintjsCoreStrings.yes
-import typings.blueprintjsCore.intentMod.Intent
-import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
+import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
+import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.AriaRole
@@ -490,7 +490,7 @@ trait IconPropsOmitHTMLAttribut extends StObject {
     * @default "span"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
   ] = js.undefined
   
   /**
@@ -1218,7 +1218,9 @@ object IconPropsOmitHTMLAttribut {
     
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
-    inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+    ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     

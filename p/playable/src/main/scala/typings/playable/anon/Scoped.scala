@@ -1,7 +1,7 @@
 package typings.playable.anon
 
-import typings.playable.lifetimeMod.Lifetime
-import typings.playable.typesMod.IOptions
+import typings.playable.distSrcCoreDependencyContainerConstantsLifetimeMod.Lifetime
+import typings.playable.distSrcCoreDependencyContainerTypesMod.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -42,8 +42,7 @@ trait QueryBuilderRoot extends StObject {
   
   def dropTypeIfExists(): QueryBuilder = js.native
   
-  def insert[T](values: T): InsertQueryBuilder = js.native
-  def insert[T](values: Partial[T]): InsertQueryBuilder = js.native
+  def insert[T](values: Partial[T] | T): InsertQueryBuilder = js.native
   
   def select[T](columns: (/* keyof T */ String)*): SelectQueryBuilder[T] = js.native
   def select[T](values: SelectAsClause[T]): SelectQueryBuilder[T] = js.native

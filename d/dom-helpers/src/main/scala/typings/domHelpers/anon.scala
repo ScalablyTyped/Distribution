@@ -1,10 +1,11 @@
 package typings.domHelpers
 
-import typings.domHelpers.addEventListenerMod.EventHandler
-import typings.domHelpers.addEventListenerMod.TaggedEventHandler
-import typings.domHelpers.animateMod.AnimateProperties
-import typings.domHelpers.animateMod.Cancel
-import typings.domHelpers.animateMod.Options
+import typings.domHelpers.cjsAddEventListenerMod.EventHandler
+import typings.domHelpers.cjsAddEventListenerMod.TaggedEventHandler
+import typings.domHelpers.cjsAnimateMod.AnimateProperties
+import typings.domHelpers.cjsAnimateMod.Cancel
+import typings.domHelpers.cjsAnimateMod.Options
+import typings.domHelpers.cjsTypesMod.HyphenProperty
 import typings.domHelpers.domHelpersStrings.abort
 import typings.domHelpers.domHelpersStrings.animationcancel
 import typings.domHelpers.domHelpersStrings.animationend
@@ -105,7 +106,6 @@ import typings.domHelpers.domHelpersStrings.webkitanimationiteration
 import typings.domHelpers.domHelpersStrings.webkitanimationstart
 import typings.domHelpers.domHelpersStrings.webkittransitionend
 import typings.domHelpers.domHelpersStrings.wheel
-import typings.domHelpers.typesMod.HyphenProperty
 import typings.std.AddEventListenerOptions
 import typings.std.Element
 import typings.std.EventListenerOptions

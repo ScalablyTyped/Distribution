@@ -1,7 +1,7 @@
 package typings.floatingUiCore.anon
 
-import typings.floatingUiCore.typesMod.Rect
-import typings.floatingUiCore.typesMod.Strategy
+import typings.floatingUiCore.srcTypesMod.Rect
+import typings.floatingUiCore.srcTypesMod.Strategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

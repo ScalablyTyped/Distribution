@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait Secret extends StObject {
     * Values can be at most 64 KB in size. There can be at most 100 secret values across all of a build's secrets.
     */
   var secretEnv: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Secret & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object Secret {
@@ -34,9 +31,7 @@ object Secret {
     inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
     
     inline def setSecretEnv(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Secret & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "secretEnv", value.asInstanceOf[js.Any])
     
     inline def setSecretEnvUndefined: Self = StObject.set(x, "secretEnv", js.undefined)

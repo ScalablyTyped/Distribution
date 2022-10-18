@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsFrownFilledMod.FrownFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object frownFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/FrownFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/FrownFilled", JSImport.Default)
   @js.native
   val default: FrownFilledIconType = js.native
-  
-  @js.native
-  trait FrownFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_FrownFilledIconType: String = js.native
-  }
   
   type _To = FrownFilledIconType
   

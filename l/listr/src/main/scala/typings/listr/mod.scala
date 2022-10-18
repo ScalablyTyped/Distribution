@@ -2,6 +2,7 @@ package typings.listr
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.node.streamMod.Readable
+import typings.rxjs.mod.Observable_
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -163,10 +164,7 @@ object mod {
   trait ListrTask[Ctx] extends StObject {
     
     var enabled: js.UndefOr[
-        js.Function1[
-          /* ctx */ Ctx, 
-          Boolean | js.Promise[Boolean] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean> */ Any)
-        ]
+        js.Function1[/* ctx */ Ctx, Boolean | js.Promise[Boolean] | Observable_[Boolean]]
       ] = js.undefined
     
     var skip: js.UndefOr[
@@ -189,9 +187,7 @@ object mod {
     
     extension [Self <: ListrTask[?], Ctx](x: Self & ListrTask[Ctx]) {
       
-      inline def setEnabled(
-        value: /* ctx */ Ctx => Boolean | js.Promise[Boolean] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean> */ Any)
-      ): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
+      inline def setEnabled(value: /* ctx */ Ctx => Boolean | js.Promise[Boolean] | Observable_[Boolean]): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
@@ -205,95 +201,39 @@ object mod {
     }
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<ListrEvent> * / any */ trait ListrTaskObject[Ctx] extends StObject {
+  @js.native
+  trait ListrTaskObject[Ctx] extends Observable_[ListrEvent] {
     
-    def check(ctx: Ctx): Unit
+    def check(ctx: Ctx): Unit = js.native
     
-    def hasFailed(): Boolean
+    def hasFailed(): Boolean = js.native
     
-    def hasSubtasks(): Boolean
+    def hasSubtasks(): Boolean = js.native
     
-    def isCompleted(): Boolean
+    def isCompleted(): Boolean = js.native
     
-    def isEnabled(): Boolean
+    def isEnabled(): Boolean = js.native
     
-    def isPending(): Boolean
+    def isPending(): Boolean = js.native
     
-    def isSkipped(): Boolean
+    def isSkipped(): Boolean = js.native
     
-    var output: js.UndefOr[String] = js.undefined
+    var output: js.UndefOr[String] = js.native
     
-    def run(ctx: Ctx, wrapper: ListrTaskWrapper[Ctx]): js.Promise[Unit]
+    def run(ctx: Ctx, wrapper: ListrTaskWrapper[Ctx]): js.Promise[Unit] = js.native
     
-    def skip(ctx: Ctx): Unit | Boolean | String | (js.Promise[js.UndefOr[Boolean | String]])
+    def skip(ctx: Ctx): Unit | Boolean | String | (js.Promise[js.UndefOr[Boolean | String]]) = js.native
     
-    var state: String
+    var state: String = js.native
     
-    var subtasks: js.Array[ListrTaskWrapper[Ctx]]
+    var subtasks: js.Array[ListrTaskWrapper[Ctx]] = js.native
     
-    def task(ctx: Ctx, task: ListrTaskWrapper[Ctx]): Unit | ListrTaskResult[Ctx]
+    def task(ctx: Ctx, task: ListrTaskWrapper[Ctx]): Unit | ListrTaskResult[Ctx] = js.native
     
-    var title: String
-  }
-  object ListrTaskObject {
-    
-    inline def apply[Ctx](
-      check: Ctx => Unit,
-      hasFailed: () => Boolean,
-      hasSubtasks: () => Boolean,
-      isCompleted: () => Boolean,
-      isEnabled: () => Boolean,
-      isPending: () => Boolean,
-      isSkipped: () => Boolean,
-      run: (Ctx, ListrTaskWrapper[Ctx]) => js.Promise[Unit],
-      skip: Ctx => Unit | Boolean | String | (js.Promise[js.UndefOr[Boolean | String]]),
-      state: String,
-      subtasks: js.Array[ListrTaskWrapper[Ctx]],
-      task: (Ctx, ListrTaskWrapper[Ctx]) => Unit | ListrTaskResult[Ctx],
-      title: String
-    ): ListrTaskObject[Ctx] = {
-      val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check), hasFailed = js.Any.fromFunction0(hasFailed), hasSubtasks = js.Any.fromFunction0(hasSubtasks), isCompleted = js.Any.fromFunction0(isCompleted), isEnabled = js.Any.fromFunction0(isEnabled), isPending = js.Any.fromFunction0(isPending), isSkipped = js.Any.fromFunction0(isSkipped), run = js.Any.fromFunction2(run), skip = js.Any.fromFunction1(skip), state = state.asInstanceOf[js.Any], subtasks = subtasks.asInstanceOf[js.Any], task = js.Any.fromFunction2(task), title = title.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ListrTaskObject[Ctx]]
-    }
-    
-    extension [Self <: ListrTaskObject[?], Ctx](x: Self & ListrTaskObject[Ctx]) {
-      
-      inline def setCheck(value: Ctx => Unit): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
-      
-      inline def setHasFailed(value: () => Boolean): Self = StObject.set(x, "hasFailed", js.Any.fromFunction0(value))
-      
-      inline def setHasSubtasks(value: () => Boolean): Self = StObject.set(x, "hasSubtasks", js.Any.fromFunction0(value))
-      
-      inline def setIsCompleted(value: () => Boolean): Self = StObject.set(x, "isCompleted", js.Any.fromFunction0(value))
-      
-      inline def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
-      
-      inline def setIsPending(value: () => Boolean): Self = StObject.set(x, "isPending", js.Any.fromFunction0(value))
-      
-      inline def setIsSkipped(value: () => Boolean): Self = StObject.set(x, "isSkipped", js.Any.fromFunction0(value))
-      
-      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
-      
-      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
-      
-      inline def setRun(value: (Ctx, ListrTaskWrapper[Ctx]) => js.Promise[Unit]): Self = StObject.set(x, "run", js.Any.fromFunction2(value))
-      
-      inline def setSkip(value: Ctx => Unit | Boolean | String | (js.Promise[js.UndefOr[Boolean | String]])): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
-      
-      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-      
-      inline def setSubtasks(value: js.Array[ListrTaskWrapper[Ctx]]): Self = StObject.set(x, "subtasks", value.asInstanceOf[js.Any])
-      
-      inline def setSubtasksVarargs(value: ListrTaskWrapper[Ctx]*): Self = StObject.set(x, "subtasks", js.Array(value*))
-      
-      inline def setTask(value: (Ctx, ListrTaskWrapper[Ctx]) => Unit | ListrTaskResult[Ctx]): Self = StObject.set(x, "task", js.Any.fromFunction2(value))
-      
-      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-    }
+    var title: String = js.native
   }
   
-  type ListrTaskResult[Ctx] = String | js.Promise[Any] | Listr[Ctx] | Readable | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any)
+  type ListrTaskResult[Ctx] = String | js.Promise[Any] | Listr[Ctx] | Readable | Observable_[Any]
   
   @js.native
   trait ListrTaskWrapper[Ctx] extends StObject {

@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     capabilities to initialize this instance from.
   */
 open class Capabilities ()
-  extends typings.seleniumWebdriver.capabilitiesMod.Capabilities {
+  extends typings.seleniumWebdriver.libCapabilitiesMod.Capabilities {
   def this(other: js.Object) = this()
-  def this(other: typings.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
+  def this(other: typings.seleniumWebdriver.libCapabilitiesMod.Capabilities) = this()
   def this(other: Map[String, Any]) = this()
 }
 /* static members */
@@ -30,26 +30,26 @@ object Capabilities {
   /**
     * @return {!Capabilities} A basic set of capabilities for Chrome.
     */
-  inline def chrome(): typings.seleniumWebdriver.capabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("chrome")().asInstanceOf[typings.seleniumWebdriver.capabilitiesMod.Capabilities]
+  inline def chrome(): typings.seleniumWebdriver.libCapabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("chrome")().asInstanceOf[typings.seleniumWebdriver.libCapabilitiesMod.Capabilities]
   
   /**
     * @return {!Capabilities} A basic set of capabilities for Microsoft Edge.
     */
-  inline def edge(): typings.seleniumWebdriver.capabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("edge")().asInstanceOf[typings.seleniumWebdriver.capabilitiesMod.Capabilities]
+  inline def edge(): typings.seleniumWebdriver.libCapabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("edge")().asInstanceOf[typings.seleniumWebdriver.libCapabilitiesMod.Capabilities]
   
   /**
     * @return {!Capabilities} A basic set of capabilities for Firefox.
     */
-  inline def firefox(): typings.seleniumWebdriver.capabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("firefox")().asInstanceOf[typings.seleniumWebdriver.capabilitiesMod.Capabilities]
+  inline def firefox(): typings.seleniumWebdriver.libCapabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("firefox")().asInstanceOf[typings.seleniumWebdriver.libCapabilitiesMod.Capabilities]
   
   /**
     * @return {!Capabilities} A basic set of capabilities for
     *     Internet Explorer.
     */
-  inline def ie(): typings.seleniumWebdriver.capabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("ie")().asInstanceOf[typings.seleniumWebdriver.capabilitiesMod.Capabilities]
+  inline def ie(): typings.seleniumWebdriver.libCapabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("ie")().asInstanceOf[typings.seleniumWebdriver.libCapabilitiesMod.Capabilities]
   
   /**
     * @return {!Capabilities} A basic set of capabilities for Safari.
     */
-  inline def safari(): typings.seleniumWebdriver.capabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("safari")().asInstanceOf[typings.seleniumWebdriver.capabilitiesMod.Capabilities]
+  inline def safari(): typings.seleniumWebdriver.libCapabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("safari")().asInstanceOf[typings.seleniumWebdriver.libCapabilitiesMod.Capabilities]
 }

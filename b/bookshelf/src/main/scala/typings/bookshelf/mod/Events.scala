@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bookshelf", "Events")
+/* note: abstract class */ @JSImport("bookshelf", "Events")
 @js.native
-abstract class Events[T] () extends StObject {
+open class Events[T] () extends StObject {
   
   def off(): Unit = js.native
   def off(event: String): Unit = js.native

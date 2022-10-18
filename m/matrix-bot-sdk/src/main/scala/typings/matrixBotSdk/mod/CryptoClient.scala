@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "CryptoClient")
 @js.native
 open class CryptoClient protected ()
-  extends typings.matrixBotSdk.cryptoClientMod.CryptoClient {
-  def this(client: typings.matrixBotSdk.matrixClientMod.MatrixClient) = this()
+  extends typings.matrixBotSdk.libE2eeCryptoClientMod.CryptoClient {
+  def this(client: typings.matrixBotSdk.libMatrixClientMod.MatrixClient) = this()
 }

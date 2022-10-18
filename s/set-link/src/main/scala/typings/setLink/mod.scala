@@ -37,6 +37,7 @@ object mod extends Shortcut {
     Record[String, Any]
   ]) & Attach = ^
   
+  /* augmented module */
   object expressServeStaticCoreAugmentingMod {
     
     trait Response extends StObject {

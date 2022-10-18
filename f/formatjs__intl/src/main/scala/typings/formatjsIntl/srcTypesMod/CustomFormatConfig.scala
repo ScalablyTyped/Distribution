@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomFormatConfig[Source] extends StObject {
   
   var format: js.UndefOr[
-    String | (/* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats[Source] */ js.Any)
+    /* import warning: importer.ImportType#apply Failed type conversion: Source extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats[Source] : string */ js.Any
   ] = js.undefined
 }
 object CustomFormatConfig {
@@ -20,7 +20,7 @@ object CustomFormatConfig {
   extension [Self <: CustomFormatConfig[?], Source](x: Self & CustomFormatConfig[Source]) {
     
     inline def setFormat(
-      value: String | (/* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats[Source] */ js.Any)
+      value: /* import warning: importer.ImportType#apply Failed type conversion: Source extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats[Source] : string */ js.Any
     ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)

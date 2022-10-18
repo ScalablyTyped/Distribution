@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__escape-html
 
-Typings are for version 2.18.0
+Typings are for version 2.19.0
 
 ## Library description:
 Escape HTML utils.

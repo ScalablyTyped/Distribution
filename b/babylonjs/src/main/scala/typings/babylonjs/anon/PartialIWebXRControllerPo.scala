@@ -1,10 +1,10 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.XRHandedness
-import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.webXRCameraMod.WebXRCamera
-import typings.babylonjs.webXRInputMod.WebXRInput
+import typings.babylonjs.xRWebXRCameraMod.WebXRCamera
+import typings.babylonjs.xRWebXRInputMod.WebXRInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait PartialIWebXRControllerPo extends StObject {
   
   var customLasterPointerMeshGenerator: js.UndefOr[js.Function0[AbstractMesh]] = js.undefined
   
-  var customSelectionMeshGenerator: js.UndefOr[js.Function0[typings.babylonjs.meshMod.Mesh]] = js.undefined
+  var customSelectionMeshGenerator: js.UndefOr[js.Function0[typings.babylonjs.meshesMeshMod.Mesh]] = js.undefined
   
   var customUtilityLayerScene: js.UndefOr[Scene] = js.undefined
   
@@ -59,7 +59,7 @@ object PartialIWebXRControllerPo {
     
     inline def setCustomLasterPointerMeshGeneratorUndefined: Self = StObject.set(x, "customLasterPointerMeshGenerator", js.undefined)
     
-    inline def setCustomSelectionMeshGenerator(value: () => typings.babylonjs.meshMod.Mesh): Self = StObject.set(x, "customSelectionMeshGenerator", js.Any.fromFunction0(value))
+    inline def setCustomSelectionMeshGenerator(value: () => typings.babylonjs.meshesMeshMod.Mesh): Self = StObject.set(x, "customSelectionMeshGenerator", js.Any.fromFunction0(value))
     
     inline def setCustomSelectionMeshGeneratorUndefined: Self = StObject.set(x, "customSelectionMeshGenerator", js.undefined)
     

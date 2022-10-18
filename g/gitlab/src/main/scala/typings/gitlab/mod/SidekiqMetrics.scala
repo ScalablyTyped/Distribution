@@ -1,6 +1,6 @@
 package typings.gitlab.mod
 
-import typings.gitlab.baseServiceMod.BaseServiceOptions
+import typings.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("gitlab", "SidekiqMetrics")
 @js.native
 open class SidekiqMetrics ()
-  extends typings.gitlab.servicesMod.SidekiqMetrics {
+  extends typings.gitlab.distTypesCoreServicesMod.SidekiqMetrics {
   def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
 }

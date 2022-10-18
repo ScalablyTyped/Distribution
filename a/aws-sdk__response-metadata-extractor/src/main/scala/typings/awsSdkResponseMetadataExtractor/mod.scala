@@ -1,7 +1,7 @@
 package typings.awsSdkResponseMetadataExtractor
 
-import typings.awsSdkTypes.httpMod.HttpResponse
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkTypes.distTypesHttpMod.HttpResponse
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

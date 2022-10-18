@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "CredentialEntity")
 @js.native
 open class CredentialEntity ()
-  extends typings.azureMsalCommon.credentialEntityMod.CredentialEntity
+  extends typings.azureMsalCommon.distCacheEntitiesCredentialEntityMod.CredentialEntity
 /* static members */
 object CredentialEntity {
   
@@ -40,20 +40,20 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: String
@@ -61,7 +61,7 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: String,
@@ -70,7 +70,7 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: String,
@@ -81,28 +81,28 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: String,
     familyId: String,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: String,
     familyId: String,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme,
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme,
     requestedClaimsHash: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any], requestedClaimsHash.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: String,
@@ -113,28 +113,28 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: String,
     familyId: Unit,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: String,
     familyId: Unit,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme,
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme,
     requestedClaimsHash: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any], requestedClaimsHash.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: Unit,
@@ -143,7 +143,7 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: Unit,
@@ -154,28 +154,28 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: Unit,
     familyId: String,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: Unit,
     familyId: String,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme,
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme,
     requestedClaimsHash: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any], requestedClaimsHash.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: Unit,
@@ -186,28 +186,28 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: Unit,
     familyId: Unit,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: String,
     target: Unit,
     familyId: Unit,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme,
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme,
     requestedClaimsHash: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any], requestedClaimsHash.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: String
@@ -215,7 +215,7 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: String,
@@ -224,7 +224,7 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: String,
@@ -235,28 +235,28 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: String,
     familyId: String,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: String,
     familyId: String,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme,
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme,
     requestedClaimsHash: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any], requestedClaimsHash.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: String,
@@ -267,28 +267,28 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: String,
     familyId: Unit,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: String,
     familyId: Unit,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme,
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme,
     requestedClaimsHash: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any], requestedClaimsHash.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: Unit,
@@ -297,7 +297,7 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: Unit,
@@ -308,28 +308,28 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: Unit,
     familyId: String,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: Unit,
     familyId: String,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme,
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme,
     requestedClaimsHash: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any], requestedClaimsHash.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: Unit,
@@ -340,22 +340,22 @@ object CredentialEntity {
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: Unit,
     familyId: Unit,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCredentialCacheKey(
     homeAccountId: String,
     environment: String,
-    credentialType: typings.azureMsalCommon.constantsMod.CredentialType,
+    credentialType: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType,
     clientId: String,
     realm: Unit,
     target: Unit,
     familyId: Unit,
-    tokenType: typings.azureMsalCommon.constantsMod.AuthenticationScheme,
+    tokenType: typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme,
     requestedClaimsHash: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCredentialCacheKey")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], credentialType.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], realm.asInstanceOf[js.Any], target.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], tokenType.asInstanceOf[js.Any], requestedClaimsHash.asInstanceOf[js.Any])).asInstanceOf[String]
   

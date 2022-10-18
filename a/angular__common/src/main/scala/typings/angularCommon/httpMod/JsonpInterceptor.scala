@@ -2,6 +2,7 @@ package typings.angularCommon.httpMod
 
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectableDeclaration
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ open class JsonpInterceptor protected () extends StObject {
     * if no interceptors remain in the chain.
     * @returns An observable of the event stream.
     */
-  def intercept(req: HttpRequest[Any], next: HttpHandler): Any = js.native
+  def intercept(req: HttpRequest[Any], next: HttpHandler): Observable_[HttpEvent[Any]] = js.native
   
   /* private */ var jsonp: Any = js.native
 }

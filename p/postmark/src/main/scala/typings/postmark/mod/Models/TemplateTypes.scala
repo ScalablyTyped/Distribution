@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TemplateTypes extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.postmark.templateMod.TemplateTypes & String] = js.native
+  def apply(value: String): js.UndefOr[typings.postmark.distClientModelsTemplatesTemplateMod.TemplateTypes & String] = js.native
   
-  /* "Layout" */ val Layout: typings.postmark.templateMod.TemplateTypes.Layout & String = js.native
+  /* "Layout" */ val Layout: typings.postmark.distClientModelsTemplatesTemplateMod.TemplateTypes.Layout & String = js.native
   
-  /* "Standard" */ val Standard: typings.postmark.templateMod.TemplateTypes.Standard & String = js.native
+  /* "Standard" */ val Standard: typings.postmark.distClientModelsTemplatesTemplateMod.TemplateTypes.Standard & String = js.native
 }

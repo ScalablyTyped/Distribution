@@ -1,10 +1,10 @@
 package typings.node.http2Mod
 
 import typings.node.anon.Origin
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
+import typings.node.nodeColontlsMod.TLSSocket
+import typings.node.nodeColonurlMod.URL
 import typings.node.nodeStrings.stream
-import typings.node.nodeTlsMod.TLSSocket
-import typings.node.nodeUrlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

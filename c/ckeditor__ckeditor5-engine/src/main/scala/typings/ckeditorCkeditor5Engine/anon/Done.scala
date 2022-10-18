@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine.anon
 
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineBooleans.`false`
-import typings.ckeditorCkeditor5Engine.treewalkerMod.TreeWalkerValue
+import typings.ckeditorCkeditor5Engine.srcModelTreewalkerMod.TreeWalkerValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -59,43 +59,43 @@ object anon {
   
   trait Name extends StObject {
     
-    var name: String
+    var name: MapperType
     
-    var version: String
+    var value: Mapper
   }
   object Name {
     
-    inline def apply(name: String, version: String): Name = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    inline def apply(name: MapperType, value: Mapper): Name = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
     extension [Self <: Name](x: Self) {
       
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Value extends StObject {
-    
-    var name: MapperType
-    
-    var value: Mapper
-  }
-  object Value {
-    
-    inline def apply(name: MapperType, value: Mapper): Value = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Value]
-    }
-    
-    extension [Self <: Value](x: Self) {
-      
       inline def setName(value: MapperType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setValue(value: Mapper): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Version extends StObject {
+    
+    var name: String
+    
+    var version: String
+  }
+  object Version {
+    
+    inline def apply(name: String, version: String): Version = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Version]
+    }
+    
+    extension [Self <: Version](x: Self) {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

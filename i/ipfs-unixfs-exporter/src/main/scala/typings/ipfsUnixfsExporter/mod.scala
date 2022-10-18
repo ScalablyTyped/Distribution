@@ -1,5 +1,7 @@
 package typings.ipfsUnixfsExporter
 
+import typings.multiformats.cidMod.CID
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.std.AsyncGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,57 +13,60 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def exporter(path: String, blockstore: Blockstore): js.Promise[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("exporter")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry]]
-  inline def exporter(path: String, blockstore: Blockstore, options: typings.ipfsUnixfsExporter.typesMod.ExporterOptions): js.Promise[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("exporter")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry]]
+  inline def exporter(path: String, blockstore: Blockstore): js.Promise[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("exporter")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry]]
   inline def exporter(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any,
-    blockstore: Blockstore
-  ): js.Promise[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("exporter")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry]]
+    path: String,
+    blockstore: Blockstore,
+    options: typings.ipfsUnixfsExporter.distSrcTypesMod.ExporterOptions
+  ): js.Promise[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("exporter")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry]]
+  inline def exporter(path: CID[Any, Double, Double, Version], blockstore: Blockstore): js.Promise[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("exporter")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry]]
   inline def exporter(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any,
+    path: CID[Any, Double, Double, Version],
     blockstore: Blockstore,
-    options: typings.ipfsUnixfsExporter.typesMod.ExporterOptions
-  ): js.Promise[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("exporter")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry]]
+    options: typings.ipfsUnixfsExporter.distSrcTypesMod.ExporterOptions
+  ): js.Promise[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("exporter")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry]]
   
-  inline def recursive(path: String, blockstore: Blockstore): AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any]]
-  inline def recursive(path: String, blockstore: Blockstore, options: typings.ipfsUnixfsExporter.typesMod.ExporterOptions): AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any]]
+  inline def recursive(path: String, blockstore: Blockstore): AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any]]
   inline def recursive(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any,
-    blockstore: Blockstore
-  ): AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any]]
-  inline def recursive(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any,
+    path: String,
     blockstore: Blockstore,
-    options: typings.ipfsUnixfsExporter.typesMod.ExporterOptions
-  ): AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any]]
+    options: typings.ipfsUnixfsExporter.distSrcTypesMod.ExporterOptions
+  ): AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any]]
+  inline def recursive(path: CID[Any, Double, Double, Version], blockstore: Blockstore): AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any]]
+  inline def recursive(
+    path: CID[Any, Double, Double, Version],
+    blockstore: Blockstore,
+    options: typings.ipfsUnixfsExporter.distSrcTypesMod.ExporterOptions
+  ): AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any]]
   
-  inline def walkPath(path: String, blockstore: Blockstore): AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkPath")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any]]
-  inline def walkPath(path: String, blockstore: Blockstore, options: typings.ipfsUnixfsExporter.typesMod.ExporterOptions): AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkPath")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any]]
+  inline def walkPath(path: String, blockstore: Blockstore): AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkPath")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any]]
   inline def walkPath(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any,
-    blockstore: Blockstore
-  ): AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkPath")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any]]
-  inline def walkPath(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any,
+    path: String,
     blockstore: Blockstore,
-    options: typings.ipfsUnixfsExporter.typesMod.ExporterOptions
-  ): AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkPath")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.typesMod.UnixFSEntry, Unit, Any]]
+    options: typings.ipfsUnixfsExporter.distSrcTypesMod.ExporterOptions
+  ): AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkPath")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any]]
+  inline def walkPath(path: CID[Any, Double, Double, Version], blockstore: Blockstore): AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkPath")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any]]
+  inline def walkPath(
+    path: CID[Any, Double, Double, Version],
+    blockstore: Blockstore,
+    options: typings.ipfsUnixfsExporter.distSrcTypesMod.ExporterOptions
+  ): AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkPath")(path.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry, Unit, Any]]
   
   type Blockstore = typings.interfaceBlockstore.mod.Blockstore
   
-  type ExporterOptions = typings.ipfsUnixfsExporter.typesMod.ExporterOptions
+  type ExporterOptions = typings.ipfsUnixfsExporter.distSrcTypesMod.ExporterOptions
   
-  type IdentityNode = typings.ipfsUnixfsExporter.typesMod.IdentityNode
+  type IdentityNode = typings.ipfsUnixfsExporter.distSrcTypesMod.IdentityNode
   
-  type ObjectNode = typings.ipfsUnixfsExporter.typesMod.ObjectNode
+  type ObjectNode = typings.ipfsUnixfsExporter.distSrcTypesMod.ObjectNode
   
-  type RawNode = typings.ipfsUnixfsExporter.typesMod.RawNode
+  type RawNode = typings.ipfsUnixfsExporter.distSrcTypesMod.RawNode
   
   type UnixFS = typings.ipfsUnixfs.mod.UnixFS
   
-  type UnixFSDirectory = typings.ipfsUnixfsExporter.typesMod.UnixFSDirectory
+  type UnixFSDirectory = typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSDirectory
   
-  type UnixFSEntry = typings.ipfsUnixfsExporter.typesMod.UnixFSEntry
+  type UnixFSEntry = typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSEntry
   
-  type UnixFSFile = typings.ipfsUnixfsExporter.typesMod.UnixFSFile
+  type UnixFSFile = typings.ipfsUnixfsExporter.distSrcTypesMod.UnixFSFile
 }

@@ -4,11 +4,11 @@ import typings.bcoeV8Coverage.anon.ReadonlyFunctionCov
 import typings.bcoeV8Coverage.anon.ReadonlyProcessCov
 import typings.bcoeV8Coverage.anon.ReadonlyRangeCov
 import typings.bcoeV8Coverage.anon.ReadonlyScriptCov
-import typings.bcoeV8Coverage.asciiMod.ReadonlyRangeTree
-import typings.bcoeV8Coverage.typesMod.FunctionCov
-import typings.bcoeV8Coverage.typesMod.ProcessCov
-import typings.bcoeV8Coverage.typesMod.RangeCov
-import typings.bcoeV8Coverage.typesMod.ScriptCov
+import typings.bcoeV8Coverage.distLibAsciiMod.ReadonlyRangeTree
+import typings.bcoeV8Coverage.distLibTypesMod.FunctionCov
+import typings.bcoeV8Coverage.distLibTypesMod.ProcessCov
+import typings.bcoeV8Coverage.distLibTypesMod.RangeCov
+import typings.bcoeV8Coverage.distLibTypesMod.ScriptCov
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,12 +23,12 @@ object mod {
   @JSImport("@bcoe/v8-coverage", "RangeTree")
   @js.native
   open class RangeTree protected ()
-    extends typings.bcoeV8Coverage.rangeTreeMod.RangeTree {
+    extends typings.bcoeV8Coverage.distLibRangeTreeMod.RangeTree {
     def this(
       start: Double,
       end: Double,
       delta: Double,
-      children: js.Array[typings.bcoeV8Coverage.rangeTreeMod.RangeTree]
+      children: js.Array[typings.bcoeV8Coverage.distLibRangeTreeMod.RangeTree]
     ) = this()
   }
   /* static members */
@@ -41,7 +41,7 @@ object mod {
     /**
       * @precodition `ranges` are well-formed and pre-order sorted
       */
-    inline def fromSortedRanges(ranges: js.Array[RangeCov]): js.UndefOr[typings.bcoeV8Coverage.rangeTreeMod.RangeTree] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSortedRanges")(ranges.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.bcoeV8Coverage.rangeTreeMod.RangeTree]]
+    inline def fromSortedRanges(ranges: js.Array[RangeCov]): js.UndefOr[typings.bcoeV8Coverage.distLibRangeTreeMod.RangeTree] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSortedRanges")(ranges.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.bcoeV8Coverage.distLibRangeTreeMod.RangeTree]]
   }
   
   inline def cloneFunctionCov(functionCov: ReadonlyFunctionCov): FunctionCov = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneFunctionCov")(functionCov.asInstanceOf[js.Any]).asInstanceOf[FunctionCov]

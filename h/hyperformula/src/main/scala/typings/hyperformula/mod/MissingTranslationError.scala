@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "MissingTranslationError")
 @js.native
 open class MissingTranslationError protected ()
-  extends typings.hyperformula.errorsMod.MissingTranslationError {
+  extends typings.hyperformula.typingsErrorsMod.MissingTranslationError {
   def this(key: String) = this()
 }

@@ -1,5 +1,6 @@
 package typings.gulpRename
 
+import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(obj: String): Any = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def apply(obj: String, options: PluginOptions): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def apply(obj: js.Function2[/* path */ ParsedPath, /* file */ File, ParsedPath | Unit]): Any = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(obj: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(obj: String, options: PluginOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(obj: js.Function2[/* path */ ParsedPath, /* file */ File, ParsedPath | Unit]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   inline def apply(
     obj: js.Function2[/* path */ ParsedPath, /* file */ File, ParsedPath | Unit],
     options: PluginOptions
-  ): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def apply(obj: Options): Any = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def apply(obj: Options, options: PluginOptions): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  ): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(obj: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(obj: Options, options: PluginOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-rename", JSImport.Namespace)
   @js.native

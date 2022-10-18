@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "MessageDispatcher")
 @js.native
 open class MessageDispatcher ()
-  extends typings.blackEngine.messageDispatcherMod.MessageDispatcher {
+  extends typings.blackEngine.messagesMessageDispatcherMod.MessageDispatcher {
   def this(checkForStage: Boolean) = this()
 }
 /* static members */

@@ -1,6 +1,11 @@
 package typings.bootbox
 
 import typings.bootbox.anon.Group
+import typings.jquery.JQuery
+import typings.std.DocumentFragment
+import typings.std.Element
+import typings.std.HTMLElement
+import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,6 +24,10 @@ trait BootboxPromptOptions
   var inputOptions: js.UndefOr[js.Array[Group]] = js.undefined
   
   var inputType: js.UndefOr[BootboxInputType] = js.undefined
+  
+  var message: js.UndefOr[
+    JQuery[HTMLElement] | js.Array[Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
+  ] = js.undefined
   
   @JSName("title")
   var title_BootboxPromptOptions: String
@@ -49,6 +58,16 @@ object BootboxPromptOptions {
     inline def setInputType(value: BootboxInputType): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
     
     inline def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
+    
+    inline def setMessage(
+      value: JQuery[HTMLElement] | js.Array[Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
+    ): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageFunction2(value: (/* index */ Double, /* html */ String) => String | Element | JQuery[HTMLElement]): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setMessageVarargs(value: Any*): Self = StObject.set(x, "message", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

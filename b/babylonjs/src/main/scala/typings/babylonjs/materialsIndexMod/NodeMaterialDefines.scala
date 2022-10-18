@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "NodeMaterialDefines")
 @js.native
 open class NodeMaterialDefines ()
-  extends typings.babylonjs.nodeIndexMod.NodeMaterialDefines
+  extends typings.babylonjs.materialsNodeIndexMod.NodeMaterialDefines

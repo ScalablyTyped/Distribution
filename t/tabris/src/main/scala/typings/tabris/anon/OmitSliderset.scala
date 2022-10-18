@@ -2,6 +2,7 @@ package typings.tabris.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tabris.mod.AnimationOptions
+import typings.tabris.mod.Bounds
 import typings.tabris.mod.BoxDimensions
 import typings.tabris.mod.ChangeListeners
 import typings.tabris.mod.ColorValue
@@ -223,7 +224,7 @@ trait OmitSliderset extends StObject {
   @JSName("_wasSet")
   var _wasSet_Original: js.Function1[/* propertyName */ String, Boolean]
   
-  var absoluteBounds: typings.tabris.mod.Bounds
+  var absoluteBounds: Bounds
   
   def animate(properties: Opacity, options: AnimationOptions): js.Promise[Unit]
   @JSName("animate")
@@ -239,7 +240,7 @@ trait OmitSliderset extends StObject {
   
   var bottom: ConstraintValue
   
-  var bounds: typings.tabris.mod.Bounds
+  var bounds: Bounds
   
   var centerX: typings.tabris.mod.Offset | auto | `true`
   
@@ -302,7 +303,7 @@ trait OmitSliderset extends StObject {
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[Slider, Omit[Slider, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children
+  var jsxAttributes: (JSXAttributes[Slider, Omit[Slider, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3`
   
   var layoutData: LayoutDataValue
   
@@ -528,12 +529,12 @@ object OmitSliderset {
     _trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean,
     _triggerChangeEvent: (/* propertyName */ String, /* newEncodedValue */ Any) => Unit,
     _wasSet: /* propertyName */ String => Boolean,
-    absoluteBounds: typings.tabris.mod.Bounds,
+    absoluteBounds: Bounds,
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     appendTo: /* parent */ Composite[Widget[Any]] => Slider,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
-    bounds: typings.tabris.mod.Bounds,
+    bounds: Bounds,
     centerX: typings.tabris.mod.Offset | auto | `true`,
     centerY: typings.tabris.mod.Offset | auto | `true`,
     cid: String,
@@ -553,7 +554,7 @@ object OmitSliderset {
     insertAfter: /* widget */ Widget[Any] => Slider,
     insertBefore: /* widget */ Widget[Any] => Slider,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[Slider, Omit[Slider, set | jsxAttributes]]) & Children,
+    jsxAttributes: (JSXAttributes[Slider, Omit[Slider, set | jsxAttributes]]) & `3`,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     maximum: Double,
@@ -640,7 +641,7 @@ object OmitSliderset {
     
     inline def set$trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "$trigger", js.Any.fromFunction2(value))
     
-    inline def setAbsoluteBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
+    inline def setAbsoluteBounds(value: Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
     
     inline def setAnimate(value: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit]): Self = StObject.set(x, "animate", js.Any.fromFunction2(value))
     
@@ -654,7 +655,7 @@ object OmitSliderset {
     
     inline def setBottom(value: ConstraintValue): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    inline def setBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     inline def setCenterX(value: typings.tabris.mod.Offset | auto | `true`): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
@@ -720,7 +721,7 @@ object OmitSliderset {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[Slider, Omit[Slider, set | jsxAttributes]]) & Children): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[Slider, Omit[Slider, set | jsxAttributes]]) & `3`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     

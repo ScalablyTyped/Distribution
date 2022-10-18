@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,9 +32,7 @@ trait CloudSqlSettings extends StObject {
   
   /** The database flags passed to the Cloud SQL instance at startup. An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }. */
   var databaseFlags: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The database engine type and version. */
@@ -67,9 +64,7 @@ trait CloudSqlSettings extends StObject {
     * Example: `{ "name": "wrench", "mass": "18kg", "count": "3" }`.
     */
   var userLabels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The Google Cloud Platform zone where your Cloud SQL datdabse instance is located. */
@@ -109,9 +104,7 @@ object CloudSqlSettings {
     inline def setDataDiskTypeUndefined: Self = StObject.set(x, "dataDiskType", js.undefined)
     
     inline def setDatabaseFlags(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "databaseFlags", value.asInstanceOf[js.Any])
     
     inline def setDatabaseFlagsUndefined: Self = StObject.set(x, "databaseFlags", js.undefined)
@@ -145,9 +138,7 @@ object CloudSqlSettings {
     inline def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
     
     inline def setUserLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)

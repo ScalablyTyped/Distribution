@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "NativeXRLayerRenderTargetTextureProvider")
 @js.native
 open class NativeXRLayerRenderTargetTextureProvider protected ()
-  extends typings.babylonjs.legacyMod.NativeXRLayerRenderTargetTextureProvider {
+  extends typings.babylonjs.legacyLegacyMod.NativeXRLayerRenderTargetTextureProvider {
   def this(
-    sessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
-    layerWrapper: typings.babylonjs.nativeXRRenderTargetMod.NativeXRLayerWrapper
+    sessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
+    layerWrapper: typings.babylonjs.xRNativeNativeXRRenderTargetMod.NativeXRLayerWrapper
   ) = this()
 }

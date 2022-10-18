@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsFolderMoveMod.FolderMoveProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object folderMoveMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/FolderMove", JSImport.Default)
+  @JSImport("wix-ui-icons-common/FolderMove", JSImport.Default)
   @js.native
   val default: FC[FolderMoveProps] = js.native
-  
-  trait FolderMoveProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object FolderMoveProps {
-    
-    inline def apply(): FolderMoveProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FolderMoveProps]
-    }
-    
-    extension [Self <: FolderMoveProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[FolderMoveProps]
   

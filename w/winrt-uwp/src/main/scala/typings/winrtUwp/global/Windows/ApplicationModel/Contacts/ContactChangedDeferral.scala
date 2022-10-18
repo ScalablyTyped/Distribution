@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The deferral object to use while asynchronously processing ContactChanged events. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactChangedDeferral")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactChangedDeferral")
 @js.native
-abstract class ContactChangedDeferral ()
+open class ContactChangedDeferral ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChangedDeferral {
   

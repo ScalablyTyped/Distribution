@@ -16,13 +16,13 @@ object mod {
   open class default () extends Slider
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @js.native
+  - Dropped new (args : ...any): react-native.react-native.NativeMethods */ @js.native
   trait Slider
     extends Component[SliderProps, js.Object, Any]
   
   /**
-  * A component used to select a single value from a range of values.
-  */
+    * A component used to select a single value from a range of values.
+    */
   type SliderComponent = Component[SliderProps, js.Object, Any]
   
   type SliderIOS = Slider

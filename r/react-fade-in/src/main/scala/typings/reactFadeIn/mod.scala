@@ -2,7 +2,7 @@ package typings.reactFadeIn
 
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.global.JSX.Element
-import typings.reactFadeIn.fadeInMod.Props
+import typings.reactFadeIn.libFadeInMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

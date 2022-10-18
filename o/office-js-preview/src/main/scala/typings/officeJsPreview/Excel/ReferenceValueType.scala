@@ -10,8 +10,7 @@ sealed trait ReferenceValueType extends StObject
   * Represents the types of the `ReferenceValue` object.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 @JSGlobal("Excel.ReferenceValueType")
 @js.native
@@ -21,8 +20,7 @@ object ReferenceValueType extends StObject {
     * Represents an `ArrayCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait array
@@ -33,8 +31,7 @@ object ReferenceValueType extends StObject {
     * Represents an `EntityCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait entity
@@ -45,8 +42,7 @@ object ReferenceValueType extends StObject {
     * Represents a `RootReferenceCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait root

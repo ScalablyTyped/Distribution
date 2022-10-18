@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The results object returned to the application when the provisioning operation has completed. */
-@JSGlobal("Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults")
 @js.native
-abstract class ProvisionFromXmlDocumentResults ()
+open class ProvisionFromXmlDocumentResults ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults {
   

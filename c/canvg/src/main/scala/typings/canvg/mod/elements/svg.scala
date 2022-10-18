@@ -1,8 +1,8 @@
 package typings.canvg.mod.elements
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.canvg.distDocumentSvgelementMod.SVGElement
 import typings.canvg.mod.elements.^
-import typings.canvg.svgelementMod.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -10,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def find(schema: typings.propertyInformation.findMod.Schema, value: String): typings.propertyInformation.infoMod.Info = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(schema.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.propertyInformation.infoMod.Info]
+  inline def find(schema: typings.propertyInformation.libFindMod.Schema, value: String): typings.propertyInformation.libUtilInfoMod.Info = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(schema.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.propertyInformation.libUtilInfoMod.Info]
   
   object hastToReact {
     
@@ -85,15 +85,15 @@ object mod {
   
   @JSImport("property-information", "html")
   @js.native
-  val html: typings.propertyInformation.schemaMod.Schema = js.native
+  val html: typings.propertyInformation.libUtilSchemaMod.Schema = js.native
   
   inline def normalize(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("property-information", "svg")
   @js.native
-  val svg: typings.propertyInformation.schemaMod.Schema = js.native
+  val svg: typings.propertyInformation.libUtilSchemaMod.Schema = js.native
   
-  type Info = typings.propertyInformation.infoMod.Info
+  type Info = typings.propertyInformation.libUtilInfoMod.Info
   
-  type Schema = typings.propertyInformation.schemaMod.Schema
+  type Schema = typings.propertyInformation.libUtilSchemaMod.Schema
 }

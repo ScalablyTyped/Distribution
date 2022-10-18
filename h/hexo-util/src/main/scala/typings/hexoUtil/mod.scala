@@ -13,7 +13,7 @@ import typings.node.bufferMod.global.BufferEncoding
 import typings.node.childProcessMod.IOType
 import typings.node.childProcessMod.SpawnOptions
 import typings.node.childProcessMod.StdioOptions
-import typings.node.nodeStreamMod.Stream
+import typings.node.nodeColonstreamMod.Stream
 import typings.node.nodeStrings.ipc
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions

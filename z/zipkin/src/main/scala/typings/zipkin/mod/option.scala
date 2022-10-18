@@ -16,9 +16,9 @@ object option {
   @js.native
   val None: INone[scala.Nothing] = js.native
   
-  @JSImport("zipkin", "option.Option")
+  /* note: abstract class */ @JSImport("zipkin", "option.Option")
   @js.native
-  abstract class Option[T] () extends StObject {
+  open class Option[T] () extends StObject {
     
     def equals(other: IOption[T]): Boolean = js.native
     

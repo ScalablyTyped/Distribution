@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "WebSocketTunnel")
 @js.native
 open class WebSocketTunnel protected ()
-  extends typings.guacamoleClient.webSocketTunnelMod.WebSocketTunnel {
+  extends typings.guacamoleClient.libWebSocketTunnelMod.WebSocketTunnel {
   /**
     * @param tunnelURL The URL of the WebSocket tunneling service.
     */

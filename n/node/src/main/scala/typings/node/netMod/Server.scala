@@ -2,6 +2,7 @@ package typings.node.netMod
 
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.connection
+import typings.node.nodeStrings.drop
 import typings.node.nodeStrings.error
 import typings.node.nodeStrings.listening
 import org.scalablytyped.runtime.StObject
@@ -26,12 +27,15 @@ open class Server () extends StObject {
     *   2. connection
     *   3. error
     *   4. listening
+    *   5. drop
     */
   def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+  @JSName("addListener")
+  def addListener_drop(event: drop, listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("addListener")
@@ -86,6 +90,10 @@ open class Server () extends StObject {
   def emit_close(event: close): Boolean = js.native
   @JSName("emit")
   def emit_connection(event: connection, socket: Socket): Boolean = js.native
+  @JSName("emit")
+  def emit_drop(event: drop): Boolean = js.native
+  @JSName("emit")
+  def emit_drop(event: drop, data: DropArgument): Boolean = js.native
   @JSName("emit")
   def emit_error(event: error, err: js.Error): Boolean = js.native
   @JSName("emit")
@@ -202,6 +210,8 @@ open class Server () extends StObject {
   @JSName("on")
   def on_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
   @JSName("on")
+  def on_drop(event: drop, listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
+  @JSName("on")
   def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("on")
   def on_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
@@ -211,6 +221,8 @@ open class Server () extends StObject {
   def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+  @JSName("once")
+  def once_drop(event: drop, listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
   @JSName("once")
   def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("once")
@@ -222,6 +234,8 @@ open class Server () extends StObject {
   @JSName("prependListener")
   def prependListener_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
   @JSName("prependListener")
+  def prependListener_drop(event: drop, listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
+  @JSName("prependListener")
   def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
@@ -231,6 +245,8 @@ open class Server () extends StObject {
   def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  def prependOnceListener_drop(event: drop, listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("prependOnceListener")

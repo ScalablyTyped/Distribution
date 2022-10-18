@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an event that occurs when the app is activated as the lock screen. */
-@JSGlobal("Windows.ApplicationModel.Activation.LockScreenActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Activation.LockScreenActivatedEventArgs")
 @js.native
-abstract class LockScreenActivatedEventArgs ()
+open class LockScreenActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Activation.LockScreenActivatedEventArgs {
   

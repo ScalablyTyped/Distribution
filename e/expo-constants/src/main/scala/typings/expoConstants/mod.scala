@@ -1,7 +1,7 @@
 package typings.expoConstants
 
 import org.scalablytyped.runtime.Shortcut
-import typings.expoConstants.constantsTypesMod.Constants
+import typings.expoConstants.buildConstantsDottypesMod.Constants
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,13 +17,13 @@ object mod extends Shortcut {
   object AppOwnership extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.expoConstants.constantsTypesMod.AppOwnership & String] = js.native
+    def apply(value: String): js.UndefOr[typings.expoConstants.buildConstantsDottypesMod.AppOwnership & String] = js.native
     
-    /* "expo" */ val Expo: typings.expoConstants.constantsTypesMod.AppOwnership.Expo & String = js.native
+    /* "expo" */ val Expo: typings.expoConstants.buildConstantsDottypesMod.AppOwnership.Expo & String = js.native
     
-    /* "guest" */ val Guest: typings.expoConstants.constantsTypesMod.AppOwnership.Guest & String = js.native
+    /* "guest" */ val Guest: typings.expoConstants.buildConstantsDottypesMod.AppOwnership.Guest & String = js.native
     
-    /* "standalone" */ val Standalone: typings.expoConstants.constantsTypesMod.AppOwnership.Standalone & String = js.native
+    /* "standalone" */ val Standalone: typings.expoConstants.buildConstantsDottypesMod.AppOwnership.Standalone & String = js.native
   }
   
   @JSImport("expo-constants", "ExecutionEnvironment")
@@ -31,13 +31,13 @@ object mod extends Shortcut {
   object ExecutionEnvironment extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.expoConstants.constantsTypesMod.ExecutionEnvironment & String] = js.native
+    def apply(value: String): js.UndefOr[typings.expoConstants.buildConstantsDottypesMod.ExecutionEnvironment & String] = js.native
     
-    /* "bare" */ val Bare: typings.expoConstants.constantsTypesMod.ExecutionEnvironment.Bare & String = js.native
+    /* "bare" */ val Bare: typings.expoConstants.buildConstantsDottypesMod.ExecutionEnvironment.Bare & String = js.native
     
-    /* "standalone" */ val Standalone: typings.expoConstants.constantsTypesMod.ExecutionEnvironment.Standalone & String = js.native
+    /* "standalone" */ val Standalone: typings.expoConstants.buildConstantsDottypesMod.ExecutionEnvironment.Standalone & String = js.native
     
-    /* "storeClient" */ val StoreClient: typings.expoConstants.constantsTypesMod.ExecutionEnvironment.StoreClient & String = js.native
+    /* "storeClient" */ val StoreClient: typings.expoConstants.buildConstantsDottypesMod.ExecutionEnvironment.StoreClient & String = js.native
   }
   
   @JSImport("expo-constants", "UserInterfaceIdiom")
@@ -45,13 +45,13 @@ object mod extends Shortcut {
   object UserInterfaceIdiom extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.expoConstants.constantsTypesMod.UserInterfaceIdiom & String] = js.native
+    def apply(value: String): js.UndefOr[typings.expoConstants.buildConstantsDottypesMod.UserInterfaceIdiom & String] = js.native
     
-    /* "handset" */ val Handset: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Handset & String = js.native
+    /* "handset" */ val Handset: typings.expoConstants.buildConstantsDottypesMod.UserInterfaceIdiom.Handset & String = js.native
     
-    /* "tablet" */ val Tablet: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Tablet & String = js.native
+    /* "tablet" */ val Tablet: typings.expoConstants.buildConstantsDottypesMod.UserInterfaceIdiom.Tablet & String = js.native
     
-    /* "unsupported" */ val Unsupported: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Unsupported & String = js.native
+    /* "unsupported" */ val Unsupported: typings.expoConstants.buildConstantsDottypesMod.UserInterfaceIdiom.Unsupported & String = js.native
   }
   
   type _To = Constants

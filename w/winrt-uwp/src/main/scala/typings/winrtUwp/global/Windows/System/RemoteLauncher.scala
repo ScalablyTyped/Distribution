@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Starts the default app associated with the specified URI on a remote device. */
-@JSGlobal("Windows.System.RemoteLauncher")
+/* note: abstract class */ @JSGlobal("Windows.System.RemoteLauncher")
 @js.native
-abstract class RemoteLauncher ()
+open class RemoteLauncher ()
   extends StObject
      with typings.winrtUwp.Windows.System.RemoteLauncher
 object RemoteLauncher {

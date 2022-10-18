@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * visibility of points and bounding spheres. Typically, you would not create a Frustum shape
   * directly, but instead query {@link CameraComponent#frustum}.
   */
-@JSImport("playcanvas", "Frustum")
-@js.native
-open class Frustum () extends StObject {
+trait Frustum extends StObject {
   
   /**
     * Tests whether a point is inside the frustum. Note that points lying in a frustum plane are
@@ -20,7 +18,7 @@ open class Frustum () extends StObject {
     * @param {Vec3} point - The point to test.
     * @returns {boolean} True if the point is inside the frustum, false otherwise.
     */
-  def containsPoint(point: Vec3): Boolean = js.native
+  def containsPoint(point: Vec3): Boolean
   
   /**
     * Tests whether a bounding sphere intersects the frustum. If the sphere is outside the
@@ -32,9 +30,9 @@ open class Frustum () extends StObject {
     * @returns {number} 0 if the bounding sphere is outside the frustum, 1 if it intersects the
     * frustum and 2 if it is contained by the frustum.
     */
-  def containsSphere(sphere: BoundingSphere): Double = js.native
+  def containsSphere(sphere: BoundingSphere): Double
   
-  var planes: js.Array[js.Array[Any]] = js.native
+  var planes: js.Array[js.Array[Any]]
   
   /**
     * Updates the frustum shape based on the supplied 4x4 matrix.
@@ -49,14 +47,30 @@ open class Frustum () extends StObject {
     * var frustum = new pc.Frustum();
     * frustum.setFromMat4(projMat);
     */
-  def setFromMat4(matrix: Mat4): Unit = js.native
+  def setFromMat4(matrix: Mat4): Unit
 }
 object Frustum {
   
-  @JSImport("playcanvas", "Frustum")
-  @js.native
-  val ^ : js.Any = js.native
+  inline def apply(
+    containsPoint: Vec3 => Boolean,
+    containsSphere: BoundingSphere => Double,
+    planes: js.Array[js.Array[Any]],
+    setFromMat4: Mat4 => Unit
+  ): Frustum = {
+    val __obj = js.Dynamic.literal(containsPoint = js.Any.fromFunction1(containsPoint), containsSphere = js.Any.fromFunction1(containsSphere), planes = planes.asInstanceOf[js.Any], setFromMat4 = js.Any.fromFunction1(setFromMat4))
+    __obj.asInstanceOf[Frustum]
+  }
   
-  /* static member */
-  inline def getPoints(camera: Any, near: Any, far: Any): js.Array[Vec3] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoints")(camera.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vec3]]
+  extension [Self <: Frustum](x: Self) {
+    
+    inline def setContainsPoint(value: Vec3 => Boolean): Self = StObject.set(x, "containsPoint", js.Any.fromFunction1(value))
+    
+    inline def setContainsSphere(value: BoundingSphere => Double): Self = StObject.set(x, "containsSphere", js.Any.fromFunction1(value))
+    
+    inline def setPlanes(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "planes", value.asInstanceOf[js.Any])
+    
+    inline def setPlanesVarargs(value: js.Array[Any]*): Self = StObject.set(x, "planes", js.Array(value*))
+    
+    inline def setSetFromMat4(value: Mat4 => Unit): Self = StObject.set(x, "setFromMat4", js.Any.fromFunction1(value))
+  }
 }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "KeyInfo")
 @js.native
 open class KeyInfo protected ()
-  extends typings.blackEngine.keyInfoMod.KeyInfo {
+  extends typings.blackEngine.inputKeyInfoMod.KeyInfo {
   def this(nativeEvent: KeyboardEvent) = this()
 }

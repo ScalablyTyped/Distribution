@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This type of error is used as a placeholder while the value of a cell is downloaded.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait PlaceholderErrorCellValue
   extends StObject
@@ -25,8 +24,7 @@ trait PlaceholderErrorCellValue
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: js.UndefOr[error | Error] = js.undefined
   
@@ -36,8 +34,7 @@ trait PlaceholderErrorCellValue
     * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: js.UndefOr[NumbersignBUSYExclamationmark | String] = js.undefined
   
@@ -45,8 +42,7 @@ trait PlaceholderErrorCellValue
     * Represents the type of `ErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var errorType: js.UndefOr[placeholder | Placeholder] = js.undefined
   
@@ -54,8 +50,7 @@ trait PlaceholderErrorCellValue
     * `PlaceholderErrorCellValue` is used during processing, while data is downloaded. The `target` property represents the data that is downloading, the data for which the `PlaceholderErrorCellValue` object is a placeholder.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var target: LinkedEntityCellValue | WebImageCellValue
   
@@ -63,8 +58,7 @@ trait PlaceholderErrorCellValue
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: typings.officeJsPreview.Excel.CellValueType.error | Error
 }

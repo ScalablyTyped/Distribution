@@ -8,9 +8,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack", "Resolver")
+/* note: abstract class */ @JSImport("webpack", "Resolver")
 @js.native
-abstract class Resolver () extends StObject {
+open class Resolver () extends StObject {
   
   def doResolve(): Any = js.native
   def doResolve(hook: Any): Any = js.native

@@ -2,6 +2,7 @@ package typings.newrelic
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.newrelic.anon.CollectPendingData
+import typings.newrelic.anon.HasToRemoveScriptWrapper
 import typings.newrelic.anon.ModuleName
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -37,6 +38,7 @@ object mod {
   inline def endTransaction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("endTransaction")().asInstanceOf[Unit]
   
   inline def getBrowserTimingHeader(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowserTimingHeader")().asInstanceOf[String]
+  inline def getBrowserTimingHeader(options: HasToRemoveScriptWrapper): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowserTimingHeader")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getLinkingMetadata(): LinkingMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getLinkingMetadata")().asInstanceOf[LinkingMetadata]
   inline def getLinkingMetadata(omitSupportability: Boolean): LinkingMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getLinkingMetadata")(omitSupportability.asInstanceOf[js.Any]).asInstanceOf[LinkingMetadata]

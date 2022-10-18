@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides string values for indexing names of common Windows file properties such as System.Title , and also references helper objects that provide indexing names for properties of specific file types (for example video files). */
-@JSGlobal("Windows.Storage.SystemProperties")
+/* note: abstract class */ @JSGlobal("Windows.Storage.SystemProperties")
 @js.native
-abstract class SystemProperties ()
+open class SystemProperties ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.SystemProperties
 object SystemProperties {

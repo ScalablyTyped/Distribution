@@ -1,6 +1,5 @@
 package typings.vueShared
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
 import typings.vueShared.vueSharedInts.`-1`
 import typings.vueShared.vueSharedInts.`-2`
@@ -176,11 +175,24 @@ object mod {
   
   inline def toTypeString(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTypeString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type IfAny[T, Y, N] = N | Y
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    0 extends 1 & T ? Y : N
+    }}}
+    */
+  @js.native
+  trait IfAny[T, Y, N] extends StObject
   
-  type LooseRequired[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string & keyof T ]: T[P]}
-    */ typings.vueShared.vueSharedStrings.LooseRequired & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * This translation is imprecise and ignores the effect of the type mapping. 
+    * TS definition: {{{
+    {[ P in string & keyof T ]: T[P]}
+    }}}
+    */
+  type LooseRequired[T] = T
   
   type NormalizedStyle = Record[String, String | Double]
   
@@ -378,5 +390,13 @@ object mod {
     inline def STABLE: `1` = 1.asInstanceOf[`1`]
   }
   
-  type UnionToIntersection[U] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    U extends any ? (k : U): void : never extends (k : infer I): void ? I : never
+    }}}
+    */
+  @js.native
+  trait UnionToIntersection[U] extends StObject
 }

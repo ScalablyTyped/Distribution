@@ -1,7 +1,7 @@
 package typings.cfcsCore
 
-import typings.cfcsCore.reactiveSubscribeMod.ReactiveSubscribe
-import typings.cfcsCore.reactiveTypesMod.ReactiveEventCallback
+import typings.cfcsCore.declarationReactiveReactiveSubscribeMod.ReactiveSubscribe
+import typings.cfcsCore.declarationReactiveTypesMod.ReactiveEventCallback
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

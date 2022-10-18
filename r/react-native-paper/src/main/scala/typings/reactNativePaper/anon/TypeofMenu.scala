@@ -1,9 +1,9 @@
 package typings.reactNativePaper.anon
 
-import typings.callstackReactThemeProvider.hoistNonReactStaticsMod.NonReactStatics
+import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonReactStatics
 import typings.react.mod.ComponentType
-import typings.reactNativePaper.menuMod.Props
-import typings.reactNativePaper.menuMod.State
+import typings.reactNativePaper.libTypescriptComponentsMenuMenuItemMod.Props
+import typings.reactNativePaper.libTypescriptComponentsMenuMenuMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofMenu extends StObject {
   
   /* static member */
-  var Item: ComponentType[PicktitleReactNodeiconIco] & (NonReactStatics[
-    ComponentType[AccessibilityLabelContentStyle] & CallHasIconTitleDisabledOnPressStyleContentStyleTestIDTitleStyleAccessibilityLabelTheme, 
+  var Item: ComponentType[PickPropsstyletitleonPres] & (NonReactStatics[
+    ComponentType[Props] & CallHasIconTitleDisabledOnPressStyleContentStyleTestIDTitleStyleAccessibilityLabelTheme, 
     js.Object
   ])
   
@@ -20,17 +20,17 @@ trait TypeofMenu extends StObject {
   var defaultProps: OverlayAccessibilityLabel
   
   /* static member */
-  def getDerivedStateFromProps(nextProps: Props, prevState: State): Rendered | Null
+  def getDerivedStateFromProps(nextProps: typings.reactNativePaper.libTypescriptComponentsMenuMenuMod.Props, prevState: State): Rendered | Null
 }
 object TypeofMenu {
   
   inline def apply(
-    Item: ComponentType[PicktitleReactNodeiconIco] & (NonReactStatics[
-      ComponentType[AccessibilityLabelContentStyle] & CallHasIconTitleDisabledOnPressStyleContentStyleTestIDTitleStyleAccessibilityLabelTheme, 
+    Item: ComponentType[PickPropsstyletitleonPres] & (NonReactStatics[
+      ComponentType[Props] & CallHasIconTitleDisabledOnPressStyleContentStyleTestIDTitleStyleAccessibilityLabelTheme, 
       js.Object
     ]),
     defaultProps: OverlayAccessibilityLabel,
-    getDerivedStateFromProps: (Props, State) => Rendered | Null
+    getDerivedStateFromProps: (typings.reactNativePaper.libTypescriptComponentsMenuMenuMod.Props, State) => Rendered | Null
   ): TypeofMenu = {
     val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any], defaultProps = defaultProps.asInstanceOf[js.Any], getDerivedStateFromProps = js.Any.fromFunction2(getDerivedStateFromProps))
     __obj.asInstanceOf[TypeofMenu]
@@ -40,11 +40,13 @@ object TypeofMenu {
     
     inline def setDefaultProps(value: OverlayAccessibilityLabel): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
-    inline def setGetDerivedStateFromProps(value: (Props, State) => Rendered | Null): Self = StObject.set(x, "getDerivedStateFromProps", js.Any.fromFunction2(value))
+    inline def setGetDerivedStateFromProps(
+      value: (typings.reactNativePaper.libTypescriptComponentsMenuMenuMod.Props, State) => Rendered | Null
+    ): Self = StObject.set(x, "getDerivedStateFromProps", js.Any.fromFunction2(value))
     
     inline def setItem(
-      value: ComponentType[PicktitleReactNodeiconIco] & (NonReactStatics[
-          ComponentType[AccessibilityLabelContentStyle] & CallHasIconTitleDisabledOnPressStyleContentStyleTestIDTitleStyleAccessibilityLabelTheme, 
+      value: ComponentType[PickPropsstyletitleonPres] & (NonReactStatics[
+          ComponentType[Props] & CallHasIconTitleDisabledOnPressStyleContentStyleTestIDTitleStyleAccessibilityLabelTheme, 
           js.Object
         ])
     ): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])

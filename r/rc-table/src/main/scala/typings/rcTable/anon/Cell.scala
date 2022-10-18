@@ -1,6 +1,6 @@
 package typings.rcTable.anon
 
-import typings.rcTable.interfaceMod.CustomizeComponent
+import typings.rcTable.libInterfaceMod.CustomizeComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

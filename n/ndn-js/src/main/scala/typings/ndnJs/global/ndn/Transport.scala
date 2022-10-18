@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ndn.Transport")
+/* note: abstract class */ @JSGlobal("ndn.Transport")
 @js.native
-abstract class Transport ()
+open class Transport ()
   extends typings.ndnJs.mod.Transport
 /* static members */
 object Transport {

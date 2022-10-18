@@ -390,7 +390,7 @@ object libMod {
   
   type ReporterSettings = Record[String, Any]
   
-  type URL = typings.vfile.minurlSharedMod.URL
+  type URL = typings.vfile.libMinurlDotsharedMod.URL
   
   trait VFileCoreOptions extends StObject {
     
@@ -406,7 +406,7 @@ object libMod {
     
     var history: js.UndefOr[js.Array[String]] = js.undefined
     
-    var path: js.UndefOr[String | typings.vfile.minurlSharedMod.URL] = js.undefined
+    var path: js.UndefOr[String | typings.vfile.libMinurlDotsharedMod.URL] = js.undefined
     
     var stem: js.UndefOr[String] = js.undefined
     
@@ -447,7 +447,7 @@ object libMod {
       
       inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value*))
       
-      inline def setPath(value: String | typings.vfile.minurlSharedMod.URL): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | typings.vfile.libMinurlDotsharedMod.URL): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       

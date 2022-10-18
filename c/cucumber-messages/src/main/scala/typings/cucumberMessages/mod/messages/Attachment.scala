@@ -1,7 +1,7 @@
 package typings.cucumberMessages.mod.messages
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.IAttachment
+import typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.IAttachment
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [properties] Properties to set
   */
 open class Attachment ()
-  extends typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment {
+  extends typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment {
   def this(properties: IAttachment) = this()
 }
 object Attachment {
@@ -42,11 +42,11 @@ object Attachment {
     * @returns Attachment instance
     */
   /* static member */
-  inline def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment]
-  inline def create(properties: IAttachment): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment]
+  inline def create(): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment]
+  inline def create(properties: IAttachment): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment]
   
-  inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment]
-  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment]
+  inline def decode(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment]
   /**
     * Decodes an Attachment message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -56,10 +56,10 @@ object Attachment {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  inline def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment]
-  inline def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment]
+  inline def decode(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment]
+  inline def decode(reader: Reader, length: Double): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment]
   
-  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment]
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment]
   /**
     * Decodes an Attachment message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -68,7 +68,7 @@ object Attachment {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  inline def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment]
+  inline def decodeDelimited(reader: Reader): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment]
   
   /**
     * Encodes the specified Attachment message. Does not implicitly {@link io.cucumber.messages.Attachment.verify|verify} messages.
@@ -96,7 +96,7 @@ object Attachment {
     * @returns Attachment
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment]
+  inline def fromObject(`object`: StringDictionary[Any]): typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment]
   
   /**
     * Creates a plain object from an Attachment message. Also converts values to other types if specified.
@@ -105,9 +105,9 @@ object Attachment {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   inline def toObject(
-    message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Attachment,
+    message: typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.Attachment,
     options: IConversionOptions
   ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   

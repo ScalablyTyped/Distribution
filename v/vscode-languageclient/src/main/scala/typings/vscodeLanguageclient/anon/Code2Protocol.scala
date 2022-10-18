@@ -1,7 +1,7 @@
 package typings.vscodeLanguageclient.anon
 
 import typings.vscode.mod.Uri
-import typings.vscodeLanguageclient.codeConverterMod.URIConverter
+import typings.vscodeLanguageclient.libCommonCodeConverterMod.URIConverter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait Code2Protocol extends StObject {
   
   def protocol2Code(value: String): Uri
   @JSName("protocol2Code")
-  var protocol2Code_Original: typings.vscodeLanguageclient.protocolConverterMod.URIConverter
+  var protocol2Code_Original: typings.vscodeLanguageclient.libCommonProtocolConverterMod.URIConverter
 }
 object Code2Protocol {
   

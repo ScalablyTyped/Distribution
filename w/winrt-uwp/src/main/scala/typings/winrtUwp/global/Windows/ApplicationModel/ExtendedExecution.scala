@@ -42,9 +42,9 @@ object ExtendedExecution {
   }
   
   /** Represents the object that is passed as a parameter to the event handler that is invoked when the system revokes background execution. */
-  @JSGlobal("Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedEventArgs")
   @js.native
-  abstract class ExtendedExecutionRevokedEventArgs ()
+  open class ExtendedExecutionRevokedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedEventArgs {
     
@@ -114,9 +114,9 @@ object ExtendedExecution {
     }
     
     /** Passed to the event handler that is invoked when the system revokes extended execution. */
-    @JSGlobal("Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedEventArgs")
     @js.native
-    abstract class ExtendedExecutionForegroundRevokedEventArgs ()
+    open class ExtendedExecutionForegroundRevokedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedEventArgs {
       

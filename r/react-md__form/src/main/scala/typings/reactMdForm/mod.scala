@@ -19,35 +19,6 @@ import typings.reactMdForm.anon.TextFieldHookOptionsdisabCounter
 import typings.reactMdForm.anon.TextFieldHookOptionsdisabDefaultValue
 import typings.reactMdForm.anon.TextFieldPropsmessageProp
 import typings.reactMdForm.anon.`0`
-import typings.reactMdForm.asyncSwitchMod.AsyncSwitchProps
-import typings.reactMdForm.checkboxMod.CheckboxProps
-import typings.reactMdForm.fieldsetMod.FieldsetProps
-import typings.reactMdForm.fileInputFileInputMod.FileInputProps
-import typings.reactMdForm.formMessageContainerMod.FormMessageContainerProps
-import typings.reactMdForm.formMessageCounterMod.FormMessageCounterProps
-import typings.reactMdForm.formMod.FormProps
-import typings.reactMdForm.formThemeProviderMod.FormThemeContext
-import typings.reactMdForm.formThemeProviderMod.FormThemeOptions
-import typings.reactMdForm.formThemeProviderMod.FormThemeProviderProps
-import typings.reactMdForm.getErrorIconMod.GetErrorIcon
-import typings.reactMdForm.getErrorMessageMod.GetErrorMessage
-import typings.reactMdForm.inputToggleIconMod.InputToggleIconProps
-import typings.reactMdForm.inputToggleMod.Props
-import typings.reactMdForm.isErroredMod.IsErrored
-import typings.reactMdForm.labelLabelMod.LabelProps
-import typings.reactMdForm.labelLabelMod.LabelStates
-import typings.reactMdForm.listboxMod.ListboxProps
-import typings.reactMdForm.menuItemCheckboxMod.MenuItemCheckboxProps
-import typings.reactMdForm.menuItemFileInputMod.MenuItemFileInputProps
-import typings.reactMdForm.menuItemInputToggleMod.BaseMenuItemInputToggleProps
-import typings.reactMdForm.menuItemInputToggleMod.StrictMenuItemInputToggleProps
-import typings.reactMdForm.menuItemSwitchMod.MenuItemSwitchProps
-import typings.reactMdForm.menuItemTextFieldMod.MenuItemTextFieldProps
-import typings.reactMdForm.nativeSelectMod.NativeSelectProps
-import typings.reactMdForm.optionMod.OptionProps
-import typings.reactMdForm.passwordMod.PasswordProps
-import typings.reactMdForm.radioMod.RadioProps
-import typings.reactMdForm.rangeSliderMod.RangeSliderProps
 import typings.reactMdForm.reactMdFormStrings.badInput
 import typings.reactMdForm.reactMdFormStrings.customError
 import typings.reactMdForm.reactMdFormStrings.max
@@ -62,50 +33,79 @@ import typings.reactMdForm.reactMdFormStrings.total
 import typings.reactMdForm.reactMdFormStrings.typeMismatch
 import typings.reactMdForm.reactMdFormStrings.valid
 import typings.reactMdForm.reactMdFormStrings.valueMissing
-import typings.reactMdForm.selectSelectMod.SelectProps
-import typings.reactMdForm.selectUtilsMod.ListboxOption
-import typings.reactMdForm.sliderContainerMod.SliderContainerProps
-import typings.reactMdForm.sliderSliderMod.SliderProps
-import typings.reactMdForm.sliderThumbMod.SliderThumbProps
-import typings.reactMdForm.sliderTrackMod.SliderTrackProps
-import typings.reactMdForm.switchMod.SwitchProps
-import typings.reactMdForm.switchTrackMod.SwitchTrackProps
-import typings.reactMdForm.textAreaMod.TextAreaProps
-import typings.reactMdForm.textFieldAddonMod.TextFieldAddonProps
-import typings.reactMdForm.textFieldContainerMod.TextFieldContainerProps
-import typings.reactMdForm.textFieldTextFieldMod.TextFieldProps
-import typings.reactMdForm.toggleContainerMod.ToggleContainerProps
-import typings.reactMdForm.typesMod.RangeSliderDefaultValue
-import typings.reactMdForm.typesMod.SliderDefaultValue
-import typings.reactMdForm.useCheckedMod.ChangeEventHandler
-import typings.reactMdForm.useCheckedMod.SetChecked
-import typings.reactMdForm.useChoiceMod.InputElement
-import typings.reactMdForm.useChoiceMod.SetValue
-import typings.reactMdForm.useFileUploadMod.FileUploadHookReturnValue
-import typings.reactMdForm.useFileUploadMod.FileUploadOptions
-import typings.reactMdForm.useIndeterminateCheckedMod.IndeterminateCheckedHookOptions
-import typings.reactMdForm.useIndeterminateCheckedMod.OnChangeReturnValue
-import typings.reactMdForm.useIndeterminateCheckedMod.OnCheckedChangeReturnValue
-import typings.reactMdForm.useNumberFieldMod.NumberFieldHookControls
-import typings.reactMdForm.useNumberFieldMod.ProvidedNumberFieldMessageProps
-import typings.reactMdForm.useNumberFieldMod.ProvidedNumberFieldProps
-import typings.reactMdForm.useRangeSliderMod.RangeSliderValueReturnType
-import typings.reactMdForm.useRangeSliderMod.UseRangeSliderOptions
-import typings.reactMdForm.useSelectStateMod.DefaultValue
-import typings.reactMdForm.useSelectStateMod.ReturnValue
-import typings.reactMdForm.useSliderMod.SliderValueReturnType
-import typings.reactMdForm.useSliderMod.UseSliderOptions
-import typings.reactMdForm.useTextFieldMod.ProvidedTextFieldMessageProps
-import typings.reactMdForm.useTextFieldMod.ProvidedTextFieldProps
-import typings.reactMdForm.useTextFieldMod.TextFieldHookControls
-import typings.reactMdForm.utilsMod.FileUploadStats
-import typings.reactMdForm.utilsMod.FileValidationError
-import typings.reactMdForm.utilsMod.FilesValidationOptions
-import typings.reactMdForm.utilsMod.GetFileParser_
-import typings.reactMdForm.utilsMod.IsValidFileName_
-import typings.reactMdForm.utilsMod.SplitFileUploads
-import typings.reactMdForm.utilsMod.ValidatedFilesResult
-import typings.reactMdList.listMod.ListElement
+import typings.reactMdForm.typesFieldsetMod.FieldsetProps
+import typings.reactMdForm.typesFileInputFileInputMod.FileInputProps
+import typings.reactMdForm.typesFileInputUseFileUploadMod.FileUploadHookReturnValue
+import typings.reactMdForm.typesFileInputUseFileUploadMod.FileUploadOptions
+import typings.reactMdForm.typesFileInputUtilsMod.FileUploadStats
+import typings.reactMdForm.typesFileInputUtilsMod.FileValidationError
+import typings.reactMdForm.typesFileInputUtilsMod.FilesValidationOptions
+import typings.reactMdForm.typesFileInputUtilsMod.GetFileParser_
+import typings.reactMdForm.typesFileInputUtilsMod.IsValidFileName_
+import typings.reactMdForm.typesFileInputUtilsMod.SplitFileUploads
+import typings.reactMdForm.typesFileInputUtilsMod.ValidatedFilesResult
+import typings.reactMdForm.typesFormMessageContainerMod.FormMessageContainerProps
+import typings.reactMdForm.typesFormMessageCounterMod.FormMessageCounterProps
+import typings.reactMdForm.typesFormMod.FormProps
+import typings.reactMdForm.typesFormThemeProviderMod.FormThemeContext
+import typings.reactMdForm.typesFormThemeProviderMod.FormThemeOptions
+import typings.reactMdForm.typesFormThemeProviderMod.FormThemeProviderProps
+import typings.reactMdForm.typesLabelLabelMod.LabelProps
+import typings.reactMdForm.typesLabelLabelMod.LabelStates
+import typings.reactMdForm.typesMenuMenuItemCheckboxMod.MenuItemCheckboxProps
+import typings.reactMdForm.typesMenuMenuItemFileInputMod.MenuItemFileInputProps
+import typings.reactMdForm.typesMenuMenuItemInputToggleMod.BaseMenuItemInputToggleProps
+import typings.reactMdForm.typesMenuMenuItemInputToggleMod.StrictMenuItemInputToggleProps
+import typings.reactMdForm.typesMenuMenuItemSwitchMod.MenuItemSwitchProps
+import typings.reactMdForm.typesMenuMenuItemTextFieldMod.MenuItemTextFieldProps
+import typings.reactMdForm.typesSelectListboxMod.ListboxProps
+import typings.reactMdForm.typesSelectNativeSelectMod.NativeSelectProps
+import typings.reactMdForm.typesSelectOptionMod.OptionProps
+import typings.reactMdForm.typesSelectSelectMod.SelectProps
+import typings.reactMdForm.typesSelectUtilsMod.ListboxOption
+import typings.reactMdForm.typesSliderRangeSliderMod.RangeSliderProps
+import typings.reactMdForm.typesSliderSliderContainerMod.SliderContainerProps
+import typings.reactMdForm.typesSliderSliderMod.SliderProps
+import typings.reactMdForm.typesSliderSliderThumbMod.SliderThumbProps
+import typings.reactMdForm.typesSliderSliderTrackMod.SliderTrackProps
+import typings.reactMdForm.typesSliderTypesMod.RangeSliderDefaultValue
+import typings.reactMdForm.typesSliderTypesMod.SliderDefaultValue
+import typings.reactMdForm.typesSliderUseRangeSliderMod.RangeSliderValueReturnType
+import typings.reactMdForm.typesSliderUseRangeSliderMod.UseRangeSliderOptions
+import typings.reactMdForm.typesSliderUseSliderMod.SliderValueReturnType
+import typings.reactMdForm.typesSliderUseSliderMod.UseSliderOptions
+import typings.reactMdForm.typesTextFieldGetErrorIconMod.GetErrorIcon
+import typings.reactMdForm.typesTextFieldGetErrorMessageMod.GetErrorMessage
+import typings.reactMdForm.typesTextFieldIsErroredMod.IsErrored
+import typings.reactMdForm.typesTextFieldPasswordMod.PasswordProps
+import typings.reactMdForm.typesTextFieldTextAreaMod.TextAreaProps
+import typings.reactMdForm.typesTextFieldTextFieldAddonMod.TextFieldAddonProps
+import typings.reactMdForm.typesTextFieldTextFieldContainerMod.TextFieldContainerProps
+import typings.reactMdForm.typesTextFieldTextFieldMod.TextFieldProps
+import typings.reactMdForm.typesTextFieldUseNumberFieldMod.NumberFieldHookControls
+import typings.reactMdForm.typesTextFieldUseNumberFieldMod.ProvidedNumberFieldMessageProps
+import typings.reactMdForm.typesTextFieldUseNumberFieldMod.ProvidedNumberFieldProps
+import typings.reactMdForm.typesTextFieldUseTextFieldMod.ProvidedTextFieldMessageProps
+import typings.reactMdForm.typesTextFieldUseTextFieldMod.ProvidedTextFieldProps
+import typings.reactMdForm.typesTextFieldUseTextFieldMod.TextFieldHookControls
+import typings.reactMdForm.typesToggleAsyncSwitchMod.AsyncSwitchProps
+import typings.reactMdForm.typesToggleCheckboxMod.CheckboxProps
+import typings.reactMdForm.typesToggleInputToggleIconMod.InputToggleIconProps
+import typings.reactMdForm.typesToggleInputToggleMod.Props
+import typings.reactMdForm.typesToggleRadioMod.RadioProps
+import typings.reactMdForm.typesToggleSwitchMod.SwitchProps
+import typings.reactMdForm.typesToggleSwitchTrackMod.SwitchTrackProps
+import typings.reactMdForm.typesToggleToggleContainerMod.ToggleContainerProps
+import typings.reactMdForm.typesToggleUseCheckedMod.ChangeEventHandler
+import typings.reactMdForm.typesToggleUseCheckedMod.SetChecked
+import typings.reactMdForm.typesUseChoiceMod.InputElement
+import typings.reactMdForm.typesUseChoiceMod.SetValue
+import typings.reactMdForm.typesUseIndeterminateCheckedMod.IndeterminateCheckedHookOptions
+import typings.reactMdForm.typesUseIndeterminateCheckedMod.OnChangeReturnValue
+import typings.reactMdForm.typesUseIndeterminateCheckedMod.OnCheckedChangeReturnValue
+import typings.reactMdForm.typesUseSelectStateMod.DefaultValue
+import typings.reactMdForm.typesUseSelectStateMod.ReturnValue
+import typings.reactMdList.typesListMod.ListElement
 import typings.std.File
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -170,14 +170,14 @@ object mod {
     * @param message - An optional message for the error.
     */
   open class FileAccessError ()
-    extends typings.reactMdForm.fileInputMod.FileAccessError {
+    extends typings.reactMdForm.typesFileInputMod.FileAccessError {
     def this(message: String) = this()
   }
   
   @JSImport("@react-md/form", "FileExtensionError")
   @js.native
   open class FileExtensionError protected ()
-    extends typings.reactMdForm.fileInputMod.FileExtensionError {
+    extends typings.reactMdForm.typesFileInputMod.FileExtensionError {
     /**
       *
       * @param files - The file that caused the error
@@ -193,7 +193,7 @@ object mod {
   @JSImport("@react-md/form", "FileSizeError")
   @js.native
   open class FileSizeError protected ()
-    extends typings.reactMdForm.fileInputMod.FileSizeError {
+    extends typings.reactMdForm.typesFileInputMod.FileSizeError {
     /**
       *
       * @param files - The list of files that have the file size error
@@ -222,7 +222,7 @@ object mod {
   @JSImport("@react-md/form", "GenericFileError")
   @js.native
   open class GenericFileError protected ()
-    extends typings.reactMdForm.fileInputMod.GenericFileError {
+    extends typings.reactMdForm.typesFileInputMod.GenericFileError {
     /**
       *
       * @param files - A list of files that caused the error.
@@ -375,7 +375,7 @@ object mod {
   @JSImport("@react-md/form", "TooManyFilesError")
   @js.native
   open class TooManyFilesError protected ()
-    extends typings.reactMdForm.fileInputMod.TooManyFilesError {
+    extends typings.reactMdForm.typesFileInputMod.TooManyFilesError {
     /**
       *
       * @param files - The list of files that could not be uploaded due to the file
@@ -437,30 +437,65 @@ object mod {
   inline def useChecked(defaultChecked: Boolean): js.Tuple3[Boolean, ChangeEventHandler, SetChecked] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChecked")(defaultChecked.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Boolean, ChangeEventHandler, SetChecked]]
   inline def useChecked(defaultChecked: Boolean, onChange: ChangeEventHandler): js.Tuple3[Boolean, ChangeEventHandler, SetChecked] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChecked")(defaultChecked.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Boolean, ChangeEventHandler, SetChecked]]
   
-  inline def useChoice[E /* <: InputElement */](defaultValue: String): js.Tuple3[String, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[String, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[String]]]
-  inline def useChoice[E /* <: InputElement */](defaultValue: String, onChange: typings.reactMdForm.useChoiceMod.ChangeEventHandler[E]): js.Tuple3[String, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[String, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[String]]]
+  inline def useChoice[E /* <: InputElement */](defaultValue: String): js.Tuple3[
+    String, 
+    typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], 
+    SetValue[String]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[
+    String, 
+    typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], 
+    SetValue[String]
+  ]]
+  inline def useChoice[E /* <: InputElement */](defaultValue: String, onChange: typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E]): js.Tuple3[
+    String, 
+    typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], 
+    SetValue[String]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[
+    String, 
+    typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], 
+    SetValue[String]
+  ]]
   inline def useChoice[E /* <: InputElement */](defaultValue: js.Array[String]): js.Tuple3[
     js.Array[String], 
-    typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], 
+    typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], 
     SetValue[js.Array[String]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[
     js.Array[String], 
-    typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], 
+    typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], 
     SetValue[js.Array[String]]
   ]]
-  inline def useChoice[E /* <: InputElement */](defaultValue: js.Array[String], onChange: typings.reactMdForm.useChoiceMod.ChangeEventHandler[E]): js.Tuple3[
+  inline def useChoice[E /* <: InputElement */](
+    defaultValue: js.Array[String],
+    onChange: typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E]
+  ): js.Tuple3[
     js.Array[String], 
-    typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], 
+    typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], 
     SetValue[js.Array[String]]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[
     js.Array[String], 
-    typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], 
+    typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], 
     SetValue[js.Array[String]]
   ]]
-  inline def useChoice[E /* <: InputElement */](defaultValue: Double): js.Tuple3[Double, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Double, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[Double]]]
-  inline def useChoice[E /* <: InputElement */](defaultValue: Double, onChange: typings.reactMdForm.useChoiceMod.ChangeEventHandler[E]): js.Tuple3[Double, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[Double]]]
-  inline def useChoice[T /* <: js.Function0[String | Double | js.Array[String]] */, E /* <: InputElement */](defaultValue: T): js.Tuple3[T, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[T, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[T]]]
-  inline def useChoice[T /* <: js.Function0[String | Double | js.Array[String]] */, E /* <: InputElement */](defaultValue: T, onChange: typings.reactMdForm.useChoiceMod.ChangeEventHandler[E]): js.Tuple3[T, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, typings.reactMdForm.useChoiceMod.ChangeEventHandler[E], SetValue[T]]]
+  inline def useChoice[E /* <: InputElement */](defaultValue: Double): js.Tuple3[
+    Double, 
+    typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], 
+    SetValue[Double]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[
+    Double, 
+    typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], 
+    SetValue[Double]
+  ]]
+  inline def useChoice[E /* <: InputElement */](defaultValue: Double, onChange: typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E]): js.Tuple3[
+    Double, 
+    typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], 
+    SetValue[Double]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[
+    Double, 
+    typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], 
+    SetValue[Double]
+  ]]
+  inline def useChoice[T /* <: js.Function0[String | Double | js.Array[String]] */, E /* <: InputElement */](defaultValue: T): js.Tuple3[T, typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], SetValue[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[T, typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], SetValue[T]]]
+  inline def useChoice[T /* <: js.Function0[String | Double | js.Array[String]] */, E /* <: InputElement */](defaultValue: T, onChange: typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E]): js.Tuple3[T, typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], SetValue[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChoice")(defaultValue.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, typings.reactMdForm.typesUseChoiceMod.ChangeEventHandler[E], SetValue[T]]]
   
   inline def useFileUpload[E /* <: HTMLElement */, CustomError](): FileUploadHookReturnValue[E, CustomError] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFileUpload")().asInstanceOf[FileUploadHookReturnValue[E, CustomError]]
   inline def useFileUpload[E /* <: HTMLElement */, CustomError](

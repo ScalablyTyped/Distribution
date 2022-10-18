@@ -2,9 +2,9 @@ package typings.materialChips
 
 import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
+import typings.materialChips.actionConstantsMod.MDCChipActionType
 import typings.materialChips.chipComponentMod.MDCChipFactory
 import typings.materialChips.chipSetFoundationMod.MDCChipSetFoundation
-import typings.materialChips.constantsMod.MDCChipActionType
 import typings.std.ReadonlySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

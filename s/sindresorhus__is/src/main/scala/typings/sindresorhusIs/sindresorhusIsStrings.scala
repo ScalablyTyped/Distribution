@@ -1,9 +1,9 @@
 package typings.sindresorhusIs
 
+import typings.sindresorhusIs.distTypesMod._Falsy
 import typings.sindresorhusIs.mod.AssertionTypeDescription
 import typings.sindresorhusIs.mod.ObjectTypeName
 import typings.sindresorhusIs.mod.PrimitiveTypeName
-import typings.sindresorhusIs.typesMod._Falsy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

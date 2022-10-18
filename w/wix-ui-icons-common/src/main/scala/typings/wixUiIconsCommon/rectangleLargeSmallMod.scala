@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsRectangleLargeSmallMod.RectangleLargeSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rectangleLargeSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/RectangleLargeSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/RectangleLargeSmall", JSImport.Default)
   @js.native
   val default: FC[RectangleLargeSmallProps] = js.native
-  
-  trait RectangleLargeSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object RectangleLargeSmallProps {
-    
-    inline def apply(): RectangleLargeSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[RectangleLargeSmallProps]
-    }
-    
-    extension [Self <: RectangleLargeSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[RectangleLargeSmallProps]
   

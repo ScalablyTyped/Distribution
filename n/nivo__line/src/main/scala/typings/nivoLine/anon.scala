@@ -101,27 +101,6 @@ object anon {
   
   trait X extends StObject {
     
-    var x: Double
-    
-    var y: Double
-  }
-  object X {
-    
-    inline def apply(x: Double, y: Double): X = {
-      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-      __obj.asInstanceOf[X]
-    }
-    
-    extension [Self <: X](x: Self) {
-      
-      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-      
-      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait XFormatted extends StObject {
-    
     var x: DatumValue
     
     var xFormatted: String | Double
@@ -132,14 +111,14 @@ object anon {
     
     var yStacked: js.UndefOr[Double] = js.undefined
   }
-  object XFormatted {
+  object X {
     
-    inline def apply(x: DatumValue, xFormatted: String | Double, y: DatumValue, yFormatted: String | Double): XFormatted = {
+    inline def apply(x: DatumValue, xFormatted: String | Double, y: DatumValue, yFormatted: String | Double): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], xFormatted = xFormatted.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yFormatted = yFormatted.asInstanceOf[js.Any])
-      __obj.asInstanceOf[XFormatted]
+      __obj.asInstanceOf[X]
     }
     
-    extension [Self <: XFormatted](x: Self) {
+    extension [Self <: X](x: Self) {
       
       inline def setX(value: DatumValue): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -152,6 +131,27 @@ object anon {
       inline def setYStacked(value: Double): Self = StObject.set(x, "yStacked", value.asInstanceOf[js.Any])
       
       inline def setYStackedUndefined: Self = StObject.set(x, "yStacked", js.undefined)
+    }
+  }
+  
+  trait Y extends StObject {
+    
+    var x: Double
+    
+    var y: Double
+  }
+  object Y {
+    
+    inline def apply(x: Double, y: Double): Y = {
+      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Y]
+    }
+    
+    extension [Self <: Y](x: Self) {
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

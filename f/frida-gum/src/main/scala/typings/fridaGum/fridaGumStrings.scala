@@ -271,10 +271,6 @@ object fridaGumStrings {
   inline def DotDotDot: DotDotDot = "...".asInstanceOf[DotDotDot]
   
   @js.native
-  sealed trait GetValue extends StObject
-  inline def GetValue: GetValue = "GetValue".asInstanceOf[GetValue]
-  
-  @js.native
   sealed trait V8
     extends StObject
        with ScriptRuntime

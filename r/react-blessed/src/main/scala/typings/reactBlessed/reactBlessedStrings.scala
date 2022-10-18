@@ -9,28 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactBlessedStrings {
   
   @js.native
-  sealed trait EventHandlerProp extends StObject
-  inline def EventHandlerProp: EventHandlerProp = "EventHandlerProp".asInstanceOf[EventHandlerProp]
-  
-  @js.native
-  sealed trait KnownKeys extends StObject
-  inline def KnownKeys: KnownKeys = "KnownKeys".asInstanceOf[KnownKeys]
-  
-  @js.native
   sealed trait Space extends StObject
   inline def Space: Space = (" ").asInstanceOf[Space]
   
   @js.native
   sealed trait bg extends StObject
   inline def bg: bg = "bg".asInstanceOf[bg]
-  
-  @js.native
-  sealed trait bottom extends StObject
-  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
-  
-  @js.native
-  sealed trait center extends StObject
-  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait children extends StObject
@@ -55,32 +39,12 @@ object reactBlessedStrings {
   inline def element: element = "element".asInstanceOf[element]
   
   @js.native
-  sealed trait grid extends StObject
-  inline def grid: grid = "grid".asInstanceOf[grid]
-  
-  @js.native
-  sealed trait `inline` extends StObject
-  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  
-  @js.native
-  sealed trait `inline-block` extends StObject
-  inline def `inline-block`: `inline-block` = "inline-block".asInstanceOf[`inline-block`]
-  
-  @js.native
   sealed trait keypress extends StObject
   inline def keypress: keypress = "keypress".asInstanceOf[keypress]
   
   @js.native
-  sealed trait left extends StObject
-  inline def left: left = "left".asInstanceOf[left]
-  
-  @js.native
   sealed trait line extends StObject
   inline def line: line = "line".asInstanceOf[line]
-  
-  @js.native
-  sealed trait middle extends StObject
-  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
   sealed trait mouseout
@@ -111,10 +75,6 @@ object reactBlessedStrings {
   inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait right extends StObject
-  inline def right: right = "right".asInstanceOf[right]
-  
-  @js.native
   sealed trait scroll extends StObject
   inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
@@ -127,10 +87,6 @@ object reactBlessedStrings {
   @js.native
   sealed trait style extends StObject
   inline def style: style = "style".asInstanceOf[style]
-  
-  @js.native
-  sealed trait top extends StObject
-  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait warning extends StObject

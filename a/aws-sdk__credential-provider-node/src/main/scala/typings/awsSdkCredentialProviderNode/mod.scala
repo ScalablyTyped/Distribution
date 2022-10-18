@@ -1,8 +1,8 @@
 package typings.awsSdkCredentialProviderNode
 
-import typings.awsSdkCredentialProviderNode.defaultProviderMod.DefaultProviderInit
-import typings.awsSdkTypes.credentialsMod.Credentials
-import typings.awsSdkTypes.utilMod.MemoizedProvider
+import typings.awsSdkCredentialProviderNode.distTypesDefaultProviderMod.DefaultProviderInit
+import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesUtilMod.MemoizedProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,7 +2,7 @@ package typings.angularPermission
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.mod.IPromise
-import typings.angularPermission.mod.permission.PermissionRedirectConfigation
+import typings.angularPermission.angularMod.permission.PermissionRedirectConfigation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

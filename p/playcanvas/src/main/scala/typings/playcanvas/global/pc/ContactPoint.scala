@@ -1,5 +1,6 @@
 package typings.playcanvas.global.pc
 
+import typings.playcanvas.mod.Vec3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,11 +29,11 @@ open class ContactPoint protected ()
     * @hideconstructor
     */
   def this(
-    localPoint: js.UndefOr[typings.playcanvas.mod.Vec3],
-    localPointOther: js.UndefOr[typings.playcanvas.mod.Vec3],
-    point: js.UndefOr[typings.playcanvas.mod.Vec3],
-    pointOther: js.UndefOr[typings.playcanvas.mod.Vec3],
-    normal: js.UndefOr[typings.playcanvas.mod.Vec3],
+    localPoint: js.UndefOr[Vec3],
+    localPointOther: js.UndefOr[Vec3],
+    point: js.UndefOr[Vec3],
+    pointOther: js.UndefOr[Vec3],
+    normal: js.UndefOr[Vec3],
     impulse: js.UndefOr[Double]
   ) = this()
 }

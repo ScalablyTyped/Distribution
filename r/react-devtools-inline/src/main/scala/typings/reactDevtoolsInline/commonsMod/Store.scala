@@ -2,7 +2,7 @@ package typings.reactDevtoolsInline.commonsMod
 
 import typings.reactDevtoolsInline.anon.BackendVersion
 import typings.reactDevtoolsInline.anon.ErrorCount
-import typings.reactDevtoolsInline.anon.Id
+import typings.reactDevtoolsInline.anon.Index
 import typings.reactDevtoolsInline.anon.IsSupported
 import typings.reactDevtoolsInline.frontendMod.Config
 import typings.std.Element
@@ -43,7 +43,7 @@ open class Store protected () extends EventEmitter[BackendVersion] {
   
   def getElementIDAtIndex(index: Double): Double | Null = js.native
   
-  def getElementsWithErrorsAndWarnings(): js.Array[Id] = js.native
+  def getElementsWithErrorsAndWarnings(): js.Array[Index] = js.native
   
   def getErrorAndWarningCountForElementID(id: Double): ErrorCount = js.native
   

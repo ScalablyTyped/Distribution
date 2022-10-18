@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AST = typings.parcelTypes.unsafeMod.AST
+type AST = typings.parcelTypes.libUnsafeMod.AST
 
 type Async[T] = T | js.Promise[T]
 
@@ -23,7 +23,7 @@ type Blob = String | Buffer | Readable
 */
 type BuildMode = _BuildMode | String
 
-type ConfigResult = typings.parcelTypes.unsafeMod.ConfigResult
+type ConfigResult = typings.parcelTypes.libUnsafeMod.ConfigResult
 
 type DependencySpecifier = String
 

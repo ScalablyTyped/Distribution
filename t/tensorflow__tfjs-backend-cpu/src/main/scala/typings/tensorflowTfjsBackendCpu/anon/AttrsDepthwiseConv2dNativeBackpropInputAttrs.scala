@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsBackendCpu.anon
 
-import typings.tensorflowTfjsBackendCpu.backendCpuMod.MathBackendCPU
-import typings.tensorflowTfjsCore.kernelNamesMod.DepthwiseConv2dNativeBackpropInputAttrs
-import typings.tensorflowTfjsCore.kernelNamesMod.DepthwiseConv2dNativeBackpropInputInputs
+import typings.tensorflowTfjsBackendCpu.distBackendCpuMod.MathBackendCPU
+import typings.tensorflowTfjsCore.distKernelNamesMod.DepthwiseConv2dNativeBackpropInputAttrs
+import typings.tensorflowTfjsCore.distKernelNamesMod.DepthwiseConv2dNativeBackpropInputInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

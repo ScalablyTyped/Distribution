@@ -4,7 +4,7 @@ import typings.reactNative.mod.ActivityIndicatorProps
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconNode
+import typings.reactNativeElements.distIconsIconMod.IconNode
 import typings.reactNativeElements.reactNativeElementsStrings.android
 import typings.reactNativeElements.reactNativeElementsStrings.default
 import typings.reactNativeElements.reactNativeElementsStrings.ios

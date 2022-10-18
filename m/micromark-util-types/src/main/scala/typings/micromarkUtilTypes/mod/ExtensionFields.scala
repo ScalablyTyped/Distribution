@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExtensionFields extends StObject {
   
-  var attentionMarkers: `1`
+  var attentionMarkers: `0`
   
   var contentInitial: ConstructRecord
   
@@ -21,7 +21,7 @@ trait ExtensionFields extends StObject {
   
   var flowInitial: ConstructRecord
   
-  var insideSpan: `0`
+  var insideSpan: `1`
   
   var string: ConstructRecord
   
@@ -30,13 +30,13 @@ trait ExtensionFields extends StObject {
 object ExtensionFields {
   
   inline def apply(
-    attentionMarkers: `1`,
+    attentionMarkers: `0`,
     contentInitial: ConstructRecord,
     disable: Null,
     document: ConstructRecord,
     flow: ConstructRecord,
     flowInitial: ConstructRecord,
-    insideSpan: `0`,
+    insideSpan: `1`,
     string: ConstructRecord,
     text: ConstructRecord
   ): ExtensionFields = {
@@ -46,7 +46,7 @@ object ExtensionFields {
   
   extension [Self <: ExtensionFields](x: Self) {
     
-    inline def setAttentionMarkers(value: `1`): Self = StObject.set(x, "attentionMarkers", value.asInstanceOf[js.Any])
+    inline def setAttentionMarkers(value: `0`): Self = StObject.set(x, "attentionMarkers", value.asInstanceOf[js.Any])
     
     inline def setContentInitial(value: ConstructRecord): Self = StObject.set(x, "contentInitial", value.asInstanceOf[js.Any])
     
@@ -58,7 +58,7 @@ object ExtensionFields {
     
     inline def setFlowInitial(value: ConstructRecord): Self = StObject.set(x, "flowInitial", value.asInstanceOf[js.Any])
     
-    inline def setInsideSpan(value: `0`): Self = StObject.set(x, "insideSpan", value.asInstanceOf[js.Any])
+    inline def setInsideSpan(value: `1`): Self = StObject.set(x, "insideSpan", value.asInstanceOf[js.Any])
     
     inline def setString(value: ConstructRecord): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     

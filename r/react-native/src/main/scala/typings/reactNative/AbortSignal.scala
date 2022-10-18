@@ -1,7 +1,7 @@
 package typings.reactNative
 
 import typings.reactNative.anon.Capture
-import typings.reactNative.anon.`2`
+import typings.reactNative.anon.`1`
 import typings.reactNative.reactNativeStrings.abort
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
@@ -47,6 +47,6 @@ trait AbortSignal
   def removeEventListener_abort(
     `type`: abort,
     listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any],
-    options: `2`
+    options: `1`
   ): Unit = js.native
 }

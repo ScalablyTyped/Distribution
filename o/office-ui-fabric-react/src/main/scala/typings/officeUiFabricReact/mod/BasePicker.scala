@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.Items
-import typings.officeUiFabricReact.basePickerTypesMod.IBasePickerProps
+import typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.IBasePickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

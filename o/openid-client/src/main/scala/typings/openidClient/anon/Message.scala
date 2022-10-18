@@ -15,7 +15,7 @@ trait Message
   
   var printf: js.UndefOr[Parameters[FnCallFormatParam]] = js.undefined
   
-  var response: js.UndefOr[Body & IncomingMessage] = js.undefined
+  var response: js.UndefOr[`1` & IncomingMessage] = js.undefined
 }
 object Message {
   
@@ -34,7 +34,7 @@ object Message {
     
     inline def setPrintfUndefined: Self = StObject.set(x, "printf", js.undefined)
     
-    inline def setResponse(value: Body & IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: `1` & IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }

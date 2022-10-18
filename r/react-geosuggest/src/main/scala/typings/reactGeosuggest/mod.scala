@@ -327,9 +327,9 @@ object mod {
   
   object QueryType {
     
-    inline def LeftparenthesiscitiesRightparenthesis: String = String.asInstanceOf[String]
+    inline def LeftparenthesiscitiesRightparenthesis: /* (cities) */ String = "(cities)".asInstanceOf[/* (cities) */ String]
     
-    inline def LeftparenthesisregionsRightparenthesis: String = String.asInstanceOf[String]
+    inline def LeftparenthesisregionsRightparenthesis: /* (regions) */ String = "(regions)".asInstanceOf[/* (regions) */ String]
     
     inline def address: typings.reactGeosuggest.reactGeosuggestStrings.address = "address".asInstanceOf[typings.reactGeosuggest.reactGeosuggestStrings.address]
     
@@ -341,9 +341,9 @@ object mod {
     - typings.reactGeosuggest.reactGeosuggestStrings.address
     - typings.reactGeosuggest.reactGeosuggestStrings.establishment
     - typings.reactGeosuggest.reactGeosuggestStrings.geocode
-    - java.lang.String
+    - / * (cities) * / java.lang.String
   */
-  type QueryType = _QueryType | String
+  type QueryType = _QueryType | (/* (cities) */ String)
   
   trait Styles extends StObject {
     

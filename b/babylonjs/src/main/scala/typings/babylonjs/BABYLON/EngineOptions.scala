@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.WebGLContextAttributes
+import typings.babylonjs.WebGLContextAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,6 +56,11 @@ trait EngineOptions
   var doNotHandleTouchAction: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Will prevent the system from falling back to software implementation if a hardware device cannot be created
+    */
+  var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * If sRGB Buffer support is not set during construction, use this value to force a specific state
     * This is added due to an issue when processing textures in chrome/edge/firefox
     * This will not influence NativeEngine and WebGPUEngine which set the behavior to true during construction.
@@ -89,11 +94,6 @@ trait EngineOptions
     * Make the matrix computations to be performed in 64 bits instead of 32 bits. False by default
     */
   var useHighPrecisionMatrix: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Make the canvas XR Compatible for XR sessions
-    */
-  var xrCompatible: js.UndefOr[Boolean] = js.undefined
 }
 object EngineOptions {
   
@@ -136,6 +136,10 @@ object EngineOptions {
     
     inline def setDoNotHandleTouchActionUndefined: Self = StObject.set(x, "doNotHandleTouchAction", js.undefined)
     
+    inline def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
+    
+    inline def setFailIfMajorPerformanceCaveatUndefined: Self = StObject.set(x, "failIfMajorPerformanceCaveat", js.undefined)
+    
     inline def setForceSRGBBufferSupportState(value: Boolean): Self = StObject.set(x, "forceSRGBBufferSupportState", value.asInstanceOf[js.Any])
     
     inline def setForceSRGBBufferSupportStateUndefined: Self = StObject.set(x, "forceSRGBBufferSupportState", js.undefined)
@@ -163,9 +167,5 @@ object EngineOptions {
     inline def setUseHighPrecisionMatrix(value: Boolean): Self = StObject.set(x, "useHighPrecisionMatrix", value.asInstanceOf[js.Any])
     
     inline def setUseHighPrecisionMatrixUndefined: Self = StObject.set(x, "useHighPrecisionMatrix", js.undefined)
-    
-    inline def setXrCompatible(value: Boolean): Self = StObject.set(x, "xrCompatible", value.asInstanceOf[js.Any])
-    
-    inline def setXrCompatibleUndefined: Self = StObject.set(x, "xrCompatible", js.undefined)
   }
 }

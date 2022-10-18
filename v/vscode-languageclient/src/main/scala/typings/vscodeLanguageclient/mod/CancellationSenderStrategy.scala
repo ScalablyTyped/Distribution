@@ -12,7 +12,7 @@ object CancellationSenderStrategy {
   
   @JSImport("vscode-languageclient", "CancellationSenderStrategy.Message")
   @js.native
-  val Message: typings.vscodeJsonrpc.connectionMod.CancellationSenderStrategy = js.native
+  val Message: typings.vscodeJsonrpc.libCommonConnectionMod.CancellationSenderStrategy = js.native
   
   inline def is(value: Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/common/connection.CancellationSenderStrategy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/common/connection.CancellationSenderStrategy */ Boolean]
 }

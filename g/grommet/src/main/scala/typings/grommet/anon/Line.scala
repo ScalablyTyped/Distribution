@@ -1,8 +1,8 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait Line extends StObject {
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var line: js.UndefOr[`4`] = js.undefined
+  var line: js.UndefOr[`7`] = js.undefined
 }
 object Line {
   
@@ -29,7 +29,7 @@ object Line {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setLine(value: `4`): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: `7`): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }

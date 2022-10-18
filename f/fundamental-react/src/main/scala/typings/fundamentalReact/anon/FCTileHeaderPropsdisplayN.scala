@@ -1,7 +1,7 @@
 package typings.fundamentalReact.anon
 
 import typings.fundamentalReact.fundamentalReactStrings.TileDotHeader
-import typings.fundamentalReact.tileMod.TileHeaderProps
+import typings.fundamentalReact.libTileTileMod.TileHeaderProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

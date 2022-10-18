@@ -1,8 +1,8 @@
 package typings.mendixmodelsdk.mod.settings
 
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.projectsMod.projects.IProject
-import typings.mendixmodelsdk.settingsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IProject
+import typings.mendixmodelsdk.srcGenSettingsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "settings.ProjectSettings")
 @js.native
 open class ProjectSettings protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.settings.ProjectSettings {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.settings.ProjectSettings {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -33,7 +33,7 @@ object ProjectSettings {
     * Expects one argument, the projects.IProject in which this unit is contained.
     */
   /* static member */
-  inline def createIn(container: IProject): typings.mendixmodelsdk.settingsMod.settings.ProjectSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.settingsMod.settings.ProjectSettings]
+  inline def createIn(container: IProject): typings.mendixmodelsdk.srcGenSettingsMod.settings.ProjectSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenSettingsMod.settings.ProjectSettings]
   
   /* static member */
   @JSImport("mendixmodelsdk", "settings.ProjectSettings.structureTypeName")

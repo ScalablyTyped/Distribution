@@ -1,10 +1,10 @@
 package typings.typescriptCollections
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.typescriptCollections.bstreeMod.default
-import typings.typescriptCollections.utilMod.ICompareFunction
-import typings.typescriptCollections.utilMod.IEqualsFunction
-import typings.typescriptCollections.utilMod.ILoopFunction
+import typings.typescriptCollections.distLibBstreeMod.default
+import typings.typescriptCollections.distLibUtilMod.ICompareFunction
+import typings.typescriptCollections.distLibUtilMod.IEqualsFunction
+import typings.typescriptCollections.distLibUtilMod.ILoopFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +53,7 @@ object mod {
     * or greater than the second.
     */
   open class BSTreeKV[K, V /* <: K */] ()
-    extends typings.typescriptCollections.bstreekvMod.default[K, V] {
+    extends typings.typescriptCollections.distLibBstreekvMod.default[K, V] {
     def this(compareFunction: ICompareFunction[K]) = this()
   }
   
@@ -79,14 +79,14 @@ object mod {
     * unique string must be provided.
     */
   open class Bag[T] ()
-    extends typings.typescriptCollections.bagMod.default[T] {
+    extends typings.typescriptCollections.distLibBagMod.default[T] {
     def this(toStrFunction: js.Function1[/* item */ T, String]) = this()
   }
   
   @JSImport("typescript-collections", "DefaultDictionary")
   @js.native
   open class DefaultDictionary[K, V] protected ()
-    extends typings.typescriptCollections.factoryDictionaryMod.default[K, V] {
+    extends typings.typescriptCollections.distLibFactoryDictionaryMod.default[K, V] {
     /**
       * Creates an empty dictionary.
       * @class <p>Dictionaries map keys to values; each key can map to at most one value.
@@ -140,14 +140,14 @@ object mod {
     * unique string must be provided.
     */
   open class Dictionary[K, V] ()
-    extends typings.typescriptCollections.dictionaryMod.default[K, V] {
+    extends typings.typescriptCollections.distLibDictionaryMod.default[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
   
   @JSImport("typescript-collections", "FactoryDictionary")
   @js.native
   open class FactoryDictionary[K, V] protected ()
-    extends typings.typescriptCollections.factoryDictionaryMod.default[K, V] {
+    extends typings.typescriptCollections.distLibFactoryDictionaryMod.default[K, V] {
     /**
       * Creates an empty dictionary.
       * @class <p>Dictionaries map keys to values; each key can map to at most one value.
@@ -226,14 +226,14 @@ object mod {
     * or greater than the second.
     */
   open class Heap[T] ()
-    extends typings.typescriptCollections.heapMod.default[T] {
+    extends typings.typescriptCollections.distLibHeapMod.default[T] {
     def this(compareFunction: ICompareFunction[T]) = this()
   }
   
   @JSImport("typescript-collections", "LinkedDictionary")
   @js.native
   open class LinkedDictionary[K, V] ()
-    extends typings.typescriptCollections.linkedDictionaryMod.default[K, V] {
+    extends typings.typescriptCollections.distLibLinkedDictionaryMod.default[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
   
@@ -246,7 +246,7 @@ object mod {
     * @constructor
     */
   open class LinkedList[T] ()
-    extends typings.typescriptCollections.linkedListMod.default[T]
+    extends typings.typescriptCollections.distLibLinkedListMod.default[T]
   
   @JSImport("typescript-collections", "MultiDictionary")
   @js.native
@@ -286,7 +286,7 @@ object mod {
     * @param allowDuplicateValues
     */
   open class MultiDictionary[K, V] ()
-    extends typings.typescriptCollections.multiDictionaryMod.default[K, V] {
+    extends typings.typescriptCollections.distLibMultiDictionaryMod.default[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
     def this(toStrFunction: js.Function1[/* key */ K, String], valuesEqualsFunction: IEqualsFunction[V]) = this()
     def this(toStrFunction: Unit, valuesEqualsFunction: IEqualsFunction[V]) = this()
@@ -307,7 +307,7 @@ object mod {
   @JSImport("typescript-collections", "MultiRootTree")
   @js.native
   open class MultiRootTree ()
-    extends typings.typescriptCollections.multiRootTreeMod.default {
+    extends typings.typescriptCollections.distLibMultiRootTreeMod.default {
     def this(rootIds: js.Array[String]) = this()
     def this(rootIds: js.Array[String], nodes: StringDictionary[js.Array[String]]) = this()
     def this(rootIds: Unit, nodes: StringDictionary[js.Array[String]]) = this()
@@ -340,7 +340,7 @@ object mod {
     * or greater than the second.
     */
   open class PriorityQueue[T] ()
-    extends typings.typescriptCollections.priorityQueueMod.default[T] {
+    extends typings.typescriptCollections.distLibPriorityQueueMod.default[T] {
     def this(compareFunction: ICompareFunction[T]) = this()
   }
   
@@ -354,7 +354,7 @@ object mod {
     * @constructor
     */
   open class Queue[T] ()
-    extends typings.typescriptCollections.queueMod.default[T]
+    extends typings.typescriptCollections.distLibQueueMod.default[T]
   
   @JSImport("typescript-collections", "Set")
   @js.native
@@ -377,7 +377,7 @@ object mod {
     * unique string must be provided.
     */
   open class Set[T] ()
-    extends typings.typescriptCollections.setMod.default[T] {
+    extends typings.typescriptCollections.distLibSetMod.default[T] {
     def this(toStringFunction: js.Function1[/* item */ T, String]) = this()
   }
   
@@ -391,7 +391,7 @@ object mod {
     * @constructor
     */
   open class Stack[T] ()
-    extends typings.typescriptCollections.stackMod.default[T]
+    extends typings.typescriptCollections.distLibStackMod.default[T]
   
   object arrays {
     

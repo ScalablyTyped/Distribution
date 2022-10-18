@@ -18,9 +18,9 @@ object Streaming {
   object Adaptive {
     
     /** Represents the source of adaptive streaming content. */
-    @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSource")
+    /* note: abstract class */ @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSource")
     @js.native
-    abstract class AdaptiveMediaSource ()
+    open class AdaptiveMediaSource ()
       extends StObject
          with typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSource
     object AdaptiveMediaSource {
@@ -90,9 +90,9 @@ object Streaming {
       inline def isContentTypeSupported(contentType: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContentTypeSupported")(contentType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     }
     
-    @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceAdvancedSettings")
+    /* note: abstract class */ @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceAdvancedSettings")
     @js.native
-    abstract class AdaptiveMediaSourceAdvancedSettings ()
+    open class AdaptiveMediaSourceAdvancedSettings ()
       extends StObject
          with typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceAdvancedSettings {
       
@@ -109,9 +109,9 @@ object Streaming {
     }
     
     /** Represents the result of the creation of a AdaptiveMediaSource object. */
-    @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationResult")
+    /* note: abstract class */ @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationResult")
     @js.native
-    abstract class AdaptiveMediaSourceCreationResult ()
+    open class AdaptiveMediaSourceCreationResult ()
       extends StObject
          with typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationResult {
       
@@ -154,9 +154,9 @@ object Streaming {
     }
     
     /** Provides data for the DownloadBitrateChanged event. */
-    @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadBitrateChangedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadBitrateChangedEventArgs")
     @js.native
-    abstract class AdaptiveMediaSourceDownloadBitrateChangedEventArgs ()
+    open class AdaptiveMediaSourceDownloadBitrateChangedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadBitrateChangedEventArgs {
       
@@ -170,9 +170,9 @@ object Streaming {
     }
     
     /** Provides data for the DownloadCompleted event. */
-    @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadCompletedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadCompletedEventArgs")
     @js.native
-    abstract class AdaptiveMediaSourceDownloadCompletedEventArgs ()
+    open class AdaptiveMediaSourceDownloadCompletedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadCompletedEventArgs {
       
@@ -198,9 +198,9 @@ object Streaming {
     }
     
     /** Provides data for the DownloadFailed event. */
-    @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadFailedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadFailedEventArgs")
     @js.native
-    abstract class AdaptiveMediaSourceDownloadFailedEventArgs ()
+    open class AdaptiveMediaSourceDownloadFailedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadFailedEventArgs {
       
@@ -226,9 +226,9 @@ object Streaming {
     }
     
     /** Represents a deferral that can be used to defer the completion of the DownloadRequested event so that the app can asynchronously download media content. */
-    @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadRequestedDeferral")
+    /* note: abstract class */ @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadRequestedDeferral")
     @js.native
-    abstract class AdaptiveMediaSourceDownloadRequestedDeferral ()
+    open class AdaptiveMediaSourceDownloadRequestedDeferral ()
       extends StObject
          with typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadRequestedDeferral {
       
@@ -238,9 +238,9 @@ object Streaming {
     }
     
     /** Provides data for the DownloadRequested event. */
-    @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadRequestedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadRequestedEventArgs")
     @js.native
-    abstract class AdaptiveMediaSourceDownloadRequestedEventArgs ()
+    open class AdaptiveMediaSourceDownloadRequestedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadRequestedEventArgs {
       
@@ -273,9 +273,9 @@ object Streaming {
     }
     
     /** Represents the results of a resource download operation. */
-    @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadResult")
+    /* note: abstract class */ @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadResult")
     @js.native
-    abstract class AdaptiveMediaSourceDownloadResult ()
+    open class AdaptiveMediaSourceDownloadResult ()
       extends StObject
          with typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadResult {
       
@@ -301,9 +301,9 @@ object Streaming {
     }
     
     /** Provides data for the PlaybackBitrateChanged event. */
-    @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourcePlaybackBitrateChangedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourcePlaybackBitrateChangedEventArgs")
     @js.native
-    abstract class AdaptiveMediaSourcePlaybackBitrateChangedEventArgs ()
+    open class AdaptiveMediaSourcePlaybackBitrateChangedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourcePlaybackBitrateChangedEventArgs {
       

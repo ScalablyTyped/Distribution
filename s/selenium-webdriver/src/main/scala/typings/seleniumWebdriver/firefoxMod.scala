@@ -114,7 +114,7 @@ object firefoxMod {
     */
   open class Options () extends Capabilities {
     def this(other: js.Object) = this()
-    def this(other: typings.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
+    def this(other: typings.seleniumWebdriver.libCapabilitiesMod.Capabilities) = this()
     def this(other: Map[String, Any]) = this()
     
     /**

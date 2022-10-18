@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains a Windows.Media.VideoFrame with the infrared frame data. */
-@JSGlobal("Windows.Devices.Perception.PerceptionInfraredFrame")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.PerceptionInfraredFrame")
 @js.native
-abstract class PerceptionInfraredFrame ()
+open class PerceptionInfraredFrame ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.PerceptionInfraredFrame {
   

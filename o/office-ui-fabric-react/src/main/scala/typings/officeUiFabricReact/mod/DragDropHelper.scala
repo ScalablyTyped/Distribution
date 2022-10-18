@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.dragDropHelperMod.IDragDropHelperParams
+import typings.officeUiFabricReact.libUtilitiesDragdropDragDropHelperMod.IDragDropHelperParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

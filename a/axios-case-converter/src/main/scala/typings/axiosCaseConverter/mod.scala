@@ -1,7 +1,7 @@
 package typings.axiosCaseConverter
 
 import org.scalablytyped.runtime.Shortcut
-import typings.axiosCaseConverter.typesMod.ApplyCaseMiddleware
+import typings.axiosCaseConverter.typingsTypesMod.ApplyCaseMiddleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

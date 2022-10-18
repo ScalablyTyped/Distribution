@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.soundTrackMod.ISoundTrackOptions
+import typings.babylonjs.audioSoundTrackMod.ISoundTrackOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options
   */
 open class SoundTrack ()
-  extends typings.babylonjs.legacyMod.SoundTrack {
+  extends typings.babylonjs.legacyLegacyMod.SoundTrack {
   def this(scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
   def this(scene: Unit, options: ISoundTrackOptions) = this()
   def this(scene: Nullable[typings.babylonjs.sceneMod.Scene], options: ISoundTrackOptions) = this()

@@ -866,10 +866,6 @@ object wordpressComponentsStrings {
   inline def dd: dd = "dd".asInstanceOf[dd]
   
   @js.native
-  sealed trait debouncedSpeak extends StObject
-  inline def debouncedSpeak: debouncedSpeak = "debouncedSpeak".asInstanceOf[debouncedSpeak]
-  
-  @js.native
   sealed trait decimal extends StObject
   inline def decimal: decimal = "decimal".asInstanceOf[decimal]
   
@@ -2102,18 +2098,6 @@ object wordpressComponentsStrings {
   inline def noscript: noscript = "noscript".asInstanceOf[noscript]
   
   @js.native
-  sealed trait noticeList extends StObject
-  inline def noticeList: noticeList = "noticeList".asInstanceOf[noticeList]
-  
-  @js.native
-  sealed trait noticeOperations extends StObject
-  inline def noticeOperations: noticeOperations = "noticeOperations".asInstanceOf[noticeOperations]
-  
-  @js.native
-  sealed trait noticeUI extends StObject
-  inline def noticeUI: noticeUI = "noticeUI".asInstanceOf[noticeUI]
-  
-  @js.native
   sealed trait numeric extends StObject
   inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
@@ -2552,10 +2536,6 @@ object wordpressComponentsStrings {
   @js.native
   sealed trait span extends StObject
   inline def span: span = "span".asInstanceOf[span]
-  
-  @js.native
-  sealed trait speak extends StObject
-  inline def speak: speak = "speak".asInstanceOf[speak]
   
   @js.native
   sealed trait spelling extends StObject

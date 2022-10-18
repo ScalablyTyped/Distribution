@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("egg", "Subscription")
 @js.native
-class Subscription protected () extends BaseContextClass {
-  def this(ctx: Context) = this()
+open class Subscription protected () extends BaseContextClass {
+  def this(ctx: Context[Any]) = this()
 }

@@ -1,6 +1,6 @@
 package typings.three.global.THREE
 
-import typings.three.shapeUtilsMod.Vec2
+import typings.three.srcExtrasShapeUtilsMod.Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

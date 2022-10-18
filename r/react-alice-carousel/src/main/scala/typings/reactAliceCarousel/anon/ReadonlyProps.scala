@@ -1,5 +1,14 @@
 package typings.reactAliceCarousel.anon
 
+import typings.reactAliceCarousel.libTypesMod.AnimationType
+import typings.reactAliceCarousel.libTypesMod.AutoPlayStrategy
+import typings.reactAliceCarousel.libTypesMod.AutoplayDirection
+import typings.reactAliceCarousel.libTypesMod.ControlsStrategy
+import typings.reactAliceCarousel.libTypesMod.DotsItem
+import typings.reactAliceCarousel.libTypesMod.EventObject
+import typings.reactAliceCarousel.libTypesMod.Responsive
+import typings.reactAliceCarousel.libTypesMod.RootElement
+import typings.reactAliceCarousel.libTypesMod.SlideInfo
 import typings.reactAliceCarousel.reactAliceCarouselStrings.action
 import typings.reactAliceCarousel.reactAliceCarouselStrings.all
 import typings.reactAliceCarousel.reactAliceCarouselStrings.alternate
@@ -10,15 +19,6 @@ import typings.reactAliceCarousel.reactAliceCarouselStrings.none
 import typings.reactAliceCarousel.reactAliceCarouselStrings.responsive
 import typings.reactAliceCarousel.reactAliceCarouselStrings.rtl
 import typings.reactAliceCarousel.reactAliceCarouselStrings.slide
-import typings.reactAliceCarousel.typesMod.AnimationType
-import typings.reactAliceCarousel.typesMod.AutoPlayStrategy
-import typings.reactAliceCarousel.typesMod.AutoplayDirection
-import typings.reactAliceCarousel.typesMod.ControlsStrategy
-import typings.reactAliceCarousel.typesMod.DotsItem
-import typings.reactAliceCarousel.typesMod.EventObject
-import typings.reactAliceCarousel.typesMod.Responsive
-import typings.reactAliceCarousel.typesMod.RootElement
-import typings.reactAliceCarousel.typesMod.SlideInfo
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

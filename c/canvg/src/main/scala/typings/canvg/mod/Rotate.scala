@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "Rotate")
 @js.native
 open class Rotate protected ()
-  extends typings.canvg.transformMod.Rotate {
+  extends typings.canvg.distTransformMod.Rotate {
   def this(
-    document: typings.canvg.documentMod.Document,
+    document: typings.canvg.distDocumentMod.Document,
     rotate: String,
     transformOrigin: js.Tuple2[
-        typings.canvg.propertyMod.Property[String], 
-        typings.canvg.propertyMod.Property[String]
+        typings.canvg.distPropertyMod.Property[String], 
+        typings.canvg.distPropertyMod.Property[String]
       ]
   ) = this()
 }

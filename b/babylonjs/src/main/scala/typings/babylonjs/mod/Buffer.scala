@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Buffer")
 @js.native
 open class Buffer protected ()
-  extends typings.babylonjs.legacyMod.Buffer {
+  extends typings.babylonjs.legacyLegacyMod.Buffer {
   /**
     * Constructor
     * @param engine the engine
@@ -22,7 +22,7 @@ open class Buffer protected ()
     */
   def this(
     engine: Any,
-    data: DataArray | typings.babylonjs.dataBufferMod.DataBuffer,
+    data: DataArray | typings.babylonjs.buffersDataBufferMod.DataBuffer,
     updatable: Boolean,
     stride: js.UndefOr[Double],
     postponeInternalCreation: js.UndefOr[Boolean],

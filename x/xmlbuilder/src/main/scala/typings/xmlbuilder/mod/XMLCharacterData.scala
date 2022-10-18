@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Represents the base class of character data nodes.
   */
-@JSImport("xmlbuilder", "XMLCharacterData")
+/* note: abstract class */ @JSImport("xmlbuilder", "XMLCharacterData")
 @js.native
-abstract class XMLCharacterData () extends XMLNode {
+open class XMLCharacterData () extends XMLNode {
   
   /**
     * Node value

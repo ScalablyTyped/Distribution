@@ -1,7 +1,7 @@
 
 # Scala.js typings for laravel-vapor
 
-Typings are for version 0.4
+Typings are for version 0.6
 
 ## Library description:
 JavaScript utilities for Laravel Vapor

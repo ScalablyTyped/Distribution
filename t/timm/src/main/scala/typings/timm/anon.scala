@@ -1,6 +1,5 @@
 package typings.timm
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Omit
 import typings.timm.mod.Key
 import org.scalablytyped.runtime.StObject
@@ -78,13 +77,9 @@ object anon {
     def apply[V](obj: js.Array[V], key: Double, `val`: V): js.Array[V] = js.native
     def apply[V](obj: Null, key: Double, `val`: V): js.Array[V] = js.native
     def apply[V](obj: Unit, key: Double, `val`: V): js.Array[V] = js.native
-    def apply[K /* <: String */, V](obj: Null, key: K, `val`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in K ]: V}
-      */ typings.timm.timmStrings.FnCallObjKeyVal & TopLevel[Any] = js.native
-    def apply[K /* <: String */, V](obj: Unit, key: K, `val`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in K ]: V}
-      */ typings.timm.timmStrings.FnCallObjKeyVal & TopLevel[Any] = js.native
-    def apply[T /* <: js.Object */, K /* <: String */, V](obj: T, key: K, `val`: V): (Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.FnCallObjKeyVal & TopLevel[Any] = js.native
+    def apply[K /* <: String */, V](obj: Null, key: K, `val`: V): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any = js.native
+    def apply[K /* <: String */, V](obj: Unit, key: K, `val`: V): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any = js.native
+    def apply[T /* <: js.Object */, K /* <: String */, V](obj: T, key: K, `val`: V): (Omit[T, /* keyof {[ P in K ]: any} */ String]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: V} */ js.Any) = js.native
   }
   
   @js.native

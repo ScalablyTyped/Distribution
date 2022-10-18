@@ -10,11 +10,15 @@ trait RequestBodyContentApplicationjsonAddevents extends StObject {
   
   var requestBody: ContentApplicationjsonAddevents
   
-  var responses: `200251404`
+  var responses: `200133404Content6`
 }
 object RequestBodyContentApplicationjsonAddevents {
   
-  inline def apply(parameters: PathHookidOwner, requestBody: ContentApplicationjsonAddevents, responses: `200251404`): RequestBodyContentApplicationjsonAddevents = {
+  inline def apply(
+    parameters: PathHookidOwner,
+    requestBody: ContentApplicationjsonAddevents,
+    responses: `200133404Content6`
+  ): RequestBodyContentApplicationjsonAddevents = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAddevents]
   }
@@ -25,6 +29,6 @@ object RequestBodyContentApplicationjsonAddevents {
     
     inline def setRequestBody(value: ContentApplicationjsonAddevents): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200251404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200133404Content6`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

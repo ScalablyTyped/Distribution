@@ -1,49 +1,49 @@
 package typings.vsoNodeApi
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
-import typings.vsoNodeApi.taskAgentInterfacesMod.AadLoginPromptOption
-import typings.vsoNodeApi.taskAgentInterfacesMod.AadOauthTokenRequest
-import typings.vsoNodeApi.taskAgentInterfacesMod.AadOauthTokenResult
-import typings.vsoNodeApi.taskAgentInterfacesMod.AzureSubscriptionQueryResult
-import typings.vsoNodeApi.taskAgentInterfacesMod.DataSourceBinding
-import typings.vsoNodeApi.taskAgentInterfacesMod.DeploymentGroup
-import typings.vsoNodeApi.taskAgentInterfacesMod.DeploymentGroupActionFilter
-import typings.vsoNodeApi.taskAgentInterfacesMod.DeploymentGroupExpands
-import typings.vsoNodeApi.taskAgentInterfacesMod.DeploymentMachine
-import typings.vsoNodeApi.taskAgentInterfacesMod.DeploymentMachineGroup
-import typings.vsoNodeApi.taskAgentInterfacesMod.InputValidationRequest
-import typings.vsoNodeApi.taskAgentInterfacesMod.MachineGroupActionFilter
-import typings.vsoNodeApi.taskAgentInterfacesMod.PackageMetadata
-import typings.vsoNodeApi.taskAgentInterfacesMod.SecureFile
-import typings.vsoNodeApi.taskAgentInterfacesMod.SecureFileActionFilter
-import typings.vsoNodeApi.taskAgentInterfacesMod.ServiceEndpoint
-import typings.vsoNodeApi.taskAgentInterfacesMod.ServiceEndpointRequest
-import typings.vsoNodeApi.taskAgentInterfacesMod.ServiceEndpointRequestResult
-import typings.vsoNodeApi.taskAgentInterfacesMod.ServiceEndpointType
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgent
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentJobRequest
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentMessage
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPool
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolActionFilter
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolMaintenanceDefinition
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolMaintenanceJob
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolType
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentQueue
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentQueueActionFilter
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentSession
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskDefinition
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskDefinitionEndpoint
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskGroup
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskGroupRevision
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskHubLicenseDetails
-import typings.vsoNodeApi.taskAgentInterfacesMod.TaskResult
-import typings.vsoNodeApi.taskAgentInterfacesMod.VariableGroup
-import typings.vsoNodeApi.taskAgentInterfacesMod.VariableGroupActionFilter
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
-import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonVssinterfacesMod.IdentityRef
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.AadLoginPromptOption
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.AadOauthTokenRequest
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.AadOauthTokenResult
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.AzureSubscriptionQueryResult
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.DataSourceBinding
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.DeploymentGroup
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.DeploymentGroupActionFilter
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.DeploymentGroupExpands
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.DeploymentMachine
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.DeploymentMachineGroup
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.InputValidationRequest
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.MachineGroupActionFilter
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.PackageMetadata
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.SecureFile
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.SecureFileActionFilter
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.ServiceEndpoint
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.ServiceEndpointRequest
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.ServiceEndpointRequestResult
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.ServiceEndpointType
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskAgent
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskAgentJobRequest
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskAgentMessage
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskAgentPool
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolActionFilter
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceDefinition
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceJob
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolType
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskAgentQueue
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskAgentQueueActionFilter
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskAgentSession
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskDefinition
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskDefinitionEndpoint
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskGroup
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskGroupRevision
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskHubLicenseDetails
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.TaskResult
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.VariableGroup
+import typings.vsoNodeApi.interfacesTaskAgentInterfacesMod.VariableGroupActionFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -121,8 +121,8 @@ object taskAgentApiBaseMod {
     
     def deleteVariableGroup(project: String, groupId: Double): js.Promise[Unit] = js.native
     
-    def downloadSecureFile(project: String, secureFileId: String, ticket: String): js.Promise[ReadableStream[Any]] = js.native
-    def downloadSecureFile(project: String, secureFileId: String, ticket: String, download: Boolean): js.Promise[ReadableStream[Any]] = js.native
+    def downloadSecureFile(project: String, secureFileId: String, ticket: String): js.Promise[ReadableStream] = js.native
+    def downloadSecureFile(project: String, secureFileId: String, ticket: String, download: Boolean): js.Promise[ReadableStream] = js.native
     
     def executeServiceEndpointRequest(serviceEndpointRequest: ServiceEndpointRequest, project: String, endpointId: String): js.Promise[ServiceEndpointRequestResult] = js.native
     
@@ -174,7 +174,7 @@ object taskAgentApiBaseMod {
     
     def getAgentPoolMaintenanceJob(poolId: Double, jobId: Double): js.Promise[TaskAgentPoolMaintenanceJob] = js.native
     
-    def getAgentPoolMaintenanceJobLogs(poolId: Double, jobId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getAgentPoolMaintenanceJobLogs(poolId: Double, jobId: Double): js.Promise[ReadableStream] = js.native
     
     def getAgentPoolMaintenanceJobs(poolId: Double): js.Promise[js.Array[TaskAgentPoolMaintenanceJob]] = js.native
     def getAgentPoolMaintenanceJobs(poolId: Double, definitionId: Double): js.Promise[js.Array[TaskAgentPoolMaintenanceJob]] = js.native
@@ -606,10 +606,10 @@ object taskAgentApiBaseMod {
     ): js.Promise[js.Array[ServiceEndpoint]] = js.native
     def getServiceEndpoints(project: String, `type`: Unit, authSchemes: Unit, endpointIds: Unit, includeFailed: Boolean): js.Promise[js.Array[ServiceEndpoint]] = js.native
     
-    def getTaskContentZip(taskId: String, versionString: String): js.Promise[ReadableStream[Any]] = js.native
-    def getTaskContentZip(taskId: String, versionString: String, visibility: js.Array[String]): js.Promise[ReadableStream[Any]] = js.native
-    def getTaskContentZip(taskId: String, versionString: String, visibility: js.Array[String], scopeLocal: Boolean): js.Promise[ReadableStream[Any]] = js.native
-    def getTaskContentZip(taskId: String, versionString: String, visibility: Unit, scopeLocal: Boolean): js.Promise[ReadableStream[Any]] = js.native
+    def getTaskContentZip(taskId: String, versionString: String): js.Promise[ReadableStream] = js.native
+    def getTaskContentZip(taskId: String, versionString: String, visibility: js.Array[String]): js.Promise[ReadableStream] = js.native
+    def getTaskContentZip(taskId: String, versionString: String, visibility: js.Array[String], scopeLocal: Boolean): js.Promise[ReadableStream] = js.native
+    def getTaskContentZip(taskId: String, versionString: String, visibility: Unit, scopeLocal: Boolean): js.Promise[ReadableStream] = js.native
     
     def getTaskDefinition(taskId: String, versionString: String): js.Promise[TaskDefinition] = js.native
     def getTaskDefinition(taskId: String, versionString: String, visibility: js.Array[String]): js.Promise[TaskDefinition] = js.native
@@ -627,7 +627,7 @@ object taskAgentApiBaseMod {
     
     def getTaskGroupHistory(project: String, taskGroupId: String): js.Promise[js.Array[TaskGroupRevision]] = js.native
     
-    def getTaskGroupRevision(project: String, taskGroupId: String, revision: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getTaskGroupRevision(project: String, taskGroupId: String, revision: Double): js.Promise[ReadableStream] = js.native
     
     def getTaskGroups(project: String): js.Promise[js.Array[TaskGroup]] = js.native
     def getTaskGroups(project: String, taskGroupId: String): js.Promise[js.Array[TaskGroup]] = js.native
@@ -705,7 +705,7 @@ object taskAgentApiBaseMod {
     
     def updateVariableGroup(group: VariableGroup, project: String, groupId: Double): js.Promise[VariableGroup] = js.native
     
-    def uploadSecureFile(customHeaders: Any, contentStream: ReadableStream[Any], project: String, name: String): js.Promise[SecureFile] = js.native
+    def uploadSecureFile(customHeaders: Any, contentStream: ReadableStream, project: String, name: String): js.Promise[SecureFile] = js.native
     
     def validateInputs(inputValidationRequest: InputValidationRequest): js.Promise[InputValidationRequest] = js.native
   }

@@ -1,24 +1,24 @@
 
 # Scala.js typings for vue__test-utils
 
-Typings are for version 1.1.1
+Typings are for version 2.1.0
 
 ## Library description:
-Utilities for testing Vue components.
+Component testing utils for Vue 3.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @vue/test-utils |
 | Keywords           | - |
-| # releases         | 39 |
-| # dependents       | 113 |
-| # downloads        | 35557434 |
-| # stars            | 1 |
+| # releases         | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 5277017.333333333 |
+| # stars            | 515.0 |
 
 ## Links
-- [Homepage](https://github.com/vuejs/vue-test-utils#readme)
-- [Bugs](https://github.com/vuejs/vue-test-utils/issues)
-- [Repository](https://github.com/vuejs/vue-test-utils)
+- [Homepage](https://github.com/vuejs/test-utils)
+- [Bugs](https://github.com/vuejs/test-utils/issues)
+- [Repository](https://github.com/vuejs/test-utils)
 - [Npm](https://www.npmjs.com/package/%40vue%2Ftest-utils)
     
 

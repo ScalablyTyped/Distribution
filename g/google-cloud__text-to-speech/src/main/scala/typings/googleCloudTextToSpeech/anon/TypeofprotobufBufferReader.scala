@@ -17,44 +17,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofprotobufBufferReader extends StObject {
   
-  var BufferReader: Instantiable1[/* buffer */ Buffer, typings.googleGax.mod.fallback.protobuf.BufferReader] = js.native
+  var BufferReader: Instantiable1[/* buffer */ Buffer, typings.googleGax.mod.protobuf.BufferReader] = js.native
   
-  var BufferWriter: TypeofBufferWriter = js.native
+  var BufferWriter: TypeofBufferWriterAlloc = js.native
   
-  var Enum: TypeofEnum = js.native
+  var Enum: TypeofEnumFromJSON = js.native
   
-  var Field: TypeofField = js.native
+  var Field: TypeofFieldD = js.native
   
   var FieldBase: Instantiable3[
     /* name */ String, 
     /* id */ Double, 
     /* type */ String, 
-    typings.googleGax.mod.fallback.protobuf.FieldBase
+    typings.googleGax.mod.protobuf.FieldBase
   ] = js.native
   
-  var MapField: TypeofMapField = js.native
+  var MapField: TypeofMapFieldD = js.native
   
-  var Message: TypeofMessage = js.native
+  var Message: TypeofMessageCreate = js.native
   
-  var Method: TypeofMethod = js.native
+  var Method: TypeofMethodFromJSON = js.native
   
-  var Namespace: TypeofNamespace = js.native
+  var Namespace: TypeofNamespaceArrayToJSON = js.native
   
-  var NamespaceBase: Instantiable0[typings.googleGax.mod.fallback.protobuf.NamespaceBase] = js.native
+  var NamespaceBase: Instantiable0[typings.googleGax.mod.protobuf.NamespaceBase] = js.native
   
-  var OneOf: TypeofOneOf = js.native
+  var OneOf: TypeofOneOfD = js.native
   
-  var Reader: TypeofReader = js.native
+  var Reader: TypeofReaderCreate = js.native
   
-  var ReflectionObject: Instantiable0[typings.googleGax.mod.fallback.protobuf.ReflectionObject] = js.native
+  var ReflectionObject: Instantiable0[typings.googleGax.mod.protobuf.ReflectionObject] = js.native
   
-  var Root: TypeofRoot = js.native
+  var Root: TypeofRootFromJSON = js.native
   
-  var Service: TypeofService = js.native
+  var Service: TypeofServiceFromJSON = js.native
   
-  var Type: TypeofType_ = js.native
+  var Type: TypeofTypeD = js.native
   
-  var Writer: TypeofWriter = js.native
+  var Writer: TypeofWriterAlloc = js.native
   
   val build: String = js.native
   
@@ -89,13 +89,13 @@ trait TypeofprotobufBufferReader extends StObject {
   
   val roots: Any = js.native
   
-  val rpc: Typeofrpc = js.native
+  val rpc: Typeofrpc0 = js.native
   
   val tokenize: Typeoftokenize = js.native
   
   val types: Typeoftypes = js.native
   
-  val util: Typeofutil = js.native
+  val util: TypeofutilAsPromise = js.native
   
   def verifier(mtype: Type): Codegen = js.native
   

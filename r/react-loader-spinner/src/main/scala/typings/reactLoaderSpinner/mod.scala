@@ -3,35 +3,35 @@ package typings.reactLoaderSpinner
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
-import typings.reactLoaderSpinner.loaderAudioMod.AudioProps
-import typings.reactLoaderSpinner.loaderBallTriangleMod.BallTriangleProps
-import typings.reactLoaderSpinner.loaderBarsMod.BarsProps
-import typings.reactLoaderSpinner.loaderBlocksMod.BlocksProps
-import typings.reactLoaderSpinner.loaderCirclesMod.CirclesProps
-import typings.reactLoaderSpinner.loaderCirclesWithBarMod.Props
-import typings.reactLoaderSpinner.loaderColorRingMod.ColorRingProps
-import typings.reactLoaderSpinner.loaderCommentMod.CommentProps
-import typings.reactLoaderSpinner.loaderDiscussMod.DiscussProps
-import typings.reactLoaderSpinner.loaderDnaMod.DNAProps
-import typings.reactLoaderSpinner.loaderFallingLinesMod.FallingLinesProps
-import typings.reactLoaderSpinner.loaderFidgetSpinnerMod.FidgetSpinnerProps
-import typings.reactLoaderSpinner.loaderGridMod.GridProps
-import typings.reactLoaderSpinner.loaderHeartsMod.HeartsProps
-import typings.reactLoaderSpinner.loaderMagnifyingGlassMod.MagnifyingGlassProps
-import typings.reactLoaderSpinner.loaderMutatingDotsMod.MutatingDotsProps
-import typings.reactLoaderSpinner.loaderOvalMod.OvalProps
-import typings.reactLoaderSpinner.loaderProgressBarMod.ProgressBarProps
-import typings.reactLoaderSpinner.loaderPuffMod.PuffProps
-import typings.reactLoaderSpinner.loaderRadioMod.RadioProps
-import typings.reactLoaderSpinner.loaderRevolvingDotMod.RevolvingDotProps
-import typings.reactLoaderSpinner.loaderRingsMod.RingsProps
-import typings.reactLoaderSpinner.loaderRotatingSquareMod.RotatingSquareProps
-import typings.reactLoaderSpinner.loaderRotatingTrianglesMod.RotatingTrianglesProps
-import typings.reactLoaderSpinner.loaderTailSpinMod.TailSpinProps
-import typings.reactLoaderSpinner.loaderThreeDotsMod.ThreeDotsProps
-import typings.reactLoaderSpinner.loaderTriangleMod.TriangleProps
-import typings.reactLoaderSpinner.loaderVortexMod.VortexProps
-import typings.reactLoaderSpinner.loaderWatchMod.WatchProps
+import typings.reactLoaderSpinner.distLoaderAudioMod.AudioProps
+import typings.reactLoaderSpinner.distLoaderBallTriangleMod.BallTriangleProps
+import typings.reactLoaderSpinner.distLoaderBarsMod.BarsProps
+import typings.reactLoaderSpinner.distLoaderBlocksMod.BlocksProps
+import typings.reactLoaderSpinner.distLoaderCirclesMod.CirclesProps
+import typings.reactLoaderSpinner.distLoaderCirclesWithBarMod.Props
+import typings.reactLoaderSpinner.distLoaderColorRingMod.ColorRingProps
+import typings.reactLoaderSpinner.distLoaderCommentMod.CommentProps
+import typings.reactLoaderSpinner.distLoaderDiscussMod.DiscussProps
+import typings.reactLoaderSpinner.distLoaderDnaMod.DNAProps
+import typings.reactLoaderSpinner.distLoaderFallingLinesMod.FallingLinesProps
+import typings.reactLoaderSpinner.distLoaderFidgetSpinnerMod.FidgetSpinnerProps
+import typings.reactLoaderSpinner.distLoaderGridMod.GridProps
+import typings.reactLoaderSpinner.distLoaderHeartsMod.HeartsProps
+import typings.reactLoaderSpinner.distLoaderMagnifyingGlassMod.MagnifyingGlassProps
+import typings.reactLoaderSpinner.distLoaderMutatingDotsMod.MutatingDotsProps
+import typings.reactLoaderSpinner.distLoaderOvalMod.OvalProps
+import typings.reactLoaderSpinner.distLoaderProgressBarMod.ProgressBarProps
+import typings.reactLoaderSpinner.distLoaderPuffMod.PuffProps
+import typings.reactLoaderSpinner.distLoaderRadioMod.RadioProps
+import typings.reactLoaderSpinner.distLoaderRevolvingDotMod.RevolvingDotProps
+import typings.reactLoaderSpinner.distLoaderRingsMod.RingsProps
+import typings.reactLoaderSpinner.distLoaderRotatingSquareMod.RotatingSquareProps
+import typings.reactLoaderSpinner.distLoaderRotatingTrianglesMod.RotatingTrianglesProps
+import typings.reactLoaderSpinner.distLoaderTailSpinMod.TailSpinProps
+import typings.reactLoaderSpinner.distLoaderThreeDotsMod.ThreeDotsProps
+import typings.reactLoaderSpinner.distLoaderTriangleMod.TriangleProps
+import typings.reactLoaderSpinner.distLoaderVortexMod.VortexProps
+import typings.reactLoaderSpinner.distLoaderWatchMod.WatchProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,11 +86,11 @@ object mod {
   @js.native
   val Hearts: FunctionComponent[HeartsProps] = js.native
   
-  inline def InfinitySpin(hasColorWidth: typings.reactLoaderSpinner.loaderInfinitySpinMod.Props): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("InfinitySpin")(hasColorWidth.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def InfinitySpin(hasColorWidth: typings.reactLoaderSpinner.distLoaderInfinitySpinMod.Props): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("InfinitySpin")(hasColorWidth.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("react-loader-spinner", "LineWave")
   @js.native
-  val LineWave: FunctionComponent[typings.reactLoaderSpinner.loaderLineWaveMod.Props] = js.native
+  val LineWave: FunctionComponent[typings.reactLoaderSpinner.distLoaderLineWaveMod.Props] = js.native
   
   inline def MagnifyingGlass(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelGlassColorColor: MagnifyingGlassProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MagnifyingGlass")(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelGlassColorColor.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
@@ -119,7 +119,7 @@ object mod {
   val Rings: FunctionComponent[RingsProps] = js.native
   
   inline def RotatingLines(
-    hasStrokeColorStrokeWidthAnimationDurationWidthVisibleAriaLabel: typings.reactLoaderSpinner.loaderRotatingLinesMod.Props
+    hasStrokeColorStrokeWidthAnimationDurationWidthVisibleAriaLabel: typings.reactLoaderSpinner.distLoaderRotatingLinesMod.Props
   ): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("RotatingLines")(hasStrokeColorStrokeWidthAnimationDurationWidthVisibleAriaLabel.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   @JSImport("react-loader-spinner", "RotatingSquare")
@@ -134,7 +134,7 @@ object mod {
   
   @JSImport("react-loader-spinner", "ThreeCircles")
   @js.native
-  val ThreeCircles: FunctionComponent[typings.reactLoaderSpinner.loaderThreeCirclesMod.Props] = js.native
+  val ThreeCircles: FunctionComponent[typings.reactLoaderSpinner.distLoaderThreeCirclesMod.Props] = js.native
   
   @JSImport("react-loader-spinner", "ThreeDots")
   @js.native

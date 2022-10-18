@@ -1,9 +1,9 @@
 package typings.firebaseRemoteConfig
 
 import typings.firebaseApp.mod.FirebaseApp
-import typings.firebaseRemoteConfig.srcPublicTypesMod.LogLevel
-import typings.firebaseRemoteConfig.srcPublicTypesMod.RemoteConfig
-import typings.firebaseRemoteConfig.srcPublicTypesMod.Value
+import typings.firebaseRemoteConfig.distSrcPublicTypesMod.LogLevel
+import typings.firebaseRemoteConfig.distSrcPublicTypesMod.RemoteConfig
+import typings.firebaseRemoteConfig.distSrcPublicTypesMod.Value
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,15 +40,16 @@ object distSrcMod {
   
   inline def setLogLevel(remoteConfig: RemoteConfig, logLevel: LogLevel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(remoteConfig.asInstanceOf[js.Any], logLevel.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {
       
-      var `remote-config`: typings.firebaseRemoteConfig.publicTypesMod.RemoteConfig
+      var `remote-config`: RemoteConfig
     }
     object NameServiceMapping {
       
-      inline def apply(`remote-config`: typings.firebaseRemoteConfig.publicTypesMod.RemoteConfig): NameServiceMapping = {
+      inline def apply(`remote-config`: RemoteConfig): NameServiceMapping = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("remote-config")(`remote-config`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
@@ -56,7 +57,7 @@ object distSrcMod {
       
       extension [Self <: NameServiceMapping](x: Self) {
         
-        inline def `setRemote-config`(value: typings.firebaseRemoteConfig.publicTypesMod.RemoteConfig): Self = StObject.set(x, "remote-config", value.asInstanceOf[js.Any])
+        inline def `setRemote-config`(value: RemoteConfig): Self = StObject.set(x, "remote-config", value.asInstanceOf[js.Any])
       }
     }
   }

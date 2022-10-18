@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait GoogleCloudDatalabelingV1alpha1LabelStats extends StObject {
     * annotation spec, the map will return a pair where the key is empty string and value is the total number of annotations.
     */
   var exampleCount: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1alpha1LabelStats & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object GoogleCloudDatalabelingV1alpha1LabelStats {
@@ -27,9 +24,7 @@ object GoogleCloudDatalabelingV1alpha1LabelStats {
   extension [Self <: GoogleCloudDatalabelingV1alpha1LabelStats](x: Self) {
     
     inline def setExampleCount(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1alpha1LabelStats & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "exampleCount", value.asInstanceOf[js.Any])
     
     inline def setExampleCountUndefined: Self = StObject.set(x, "exampleCount", js.undefined)

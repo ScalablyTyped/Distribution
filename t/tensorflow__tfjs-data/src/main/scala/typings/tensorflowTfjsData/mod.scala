@@ -3,16 +3,16 @@ package typings.tensorflowTfjsData
 import typings.std.HTMLVideoElement
 import typings.std.IteratorResult
 import typings.std.RequestInfo
-import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
-import typings.tensorflowTfjsData.datasetMod.DatasetContainer
-import typings.tensorflowTfjsData.datasourceMod.DataSource
-import typings.tensorflowTfjsData.fileChunkIteratorMod.FileChunkIteratorOptions
-import typings.tensorflowTfjsData.microphoneIteratorMod.MicrophoneIterator
-import typings.tensorflowTfjsData.typesMod.CSVConfig
-import typings.tensorflowTfjsData.typesMod.FileElement
-import typings.tensorflowTfjsData.typesMod.MicrophoneConfig
-import typings.tensorflowTfjsData.typesMod.WebcamConfig
-import typings.tensorflowTfjsData.webcamIteratorMod.WebcamIterator
+import typings.tensorflowTfjsCore.distTensorTypesMod.TensorContainer
+import typings.tensorflowTfjsData.distDatasetMod.DatasetContainer
+import typings.tensorflowTfjsData.distDatasourceMod.DataSource
+import typings.tensorflowTfjsData.distIteratorsFileChunkIteratorMod.FileChunkIteratorOptions
+import typings.tensorflowTfjsData.distIteratorsMicrophoneIteratorMod.MicrophoneIterator
+import typings.tensorflowTfjsData.distIteratorsWebcamIteratorMod.WebcamIterator
+import typings.tensorflowTfjsData.distTypesMod.CSVConfig
+import typings.tensorflowTfjsData.distTypesMod.FileElement
+import typings.tensorflowTfjsData.distTypesMod.MicrophoneConfig
+import typings.tensorflowTfjsData.distTypesMod.WebcamConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ object mod {
   @JSImport("@tensorflow/tfjs-data", "CSVDataset")
   @js.native
   open class CSVDataset protected ()
-    extends typings.tensorflowTfjsData.csvDatasetMod.CSVDataset {
+    extends typings.tensorflowTfjsData.distDatasetsCsvDatasetMod.CSVDataset {
     /**
       * Create a `CSVDataset`.
       *
@@ -63,10 +63,10 @@ object mod {
     def this(input: DataSource, csvConfig: CSVConfig) = this()
   }
   
-  @JSImport("@tensorflow/tfjs-data", "Dataset")
+  /* note: abstract class */ @JSImport("@tensorflow/tfjs-data", "Dataset")
   @js.native
-  abstract class Dataset[T /* <: TensorContainer */] ()
-    extends typings.tensorflowTfjsData.datasetMod.Dataset[T]
+  open class Dataset[T /* <: TensorContainer */] ()
+    extends typings.tensorflowTfjsData.distDatasetMod.Dataset[T]
   /* static members */
   object Dataset {
     
@@ -78,7 +78,7 @@ object mod {
   @JSImport("@tensorflow/tfjs-data", "FileDataSource")
   @js.native
   open class FileDataSource protected ()
-    extends typings.tensorflowTfjsData.fileDataSourceMod.FileDataSource {
+    extends typings.tensorflowTfjsData.distSourcesFileDataSourceMod.FileDataSource {
     def this(input: String) = this()
     /**
       * Create a `FileDataSource`.
@@ -96,7 +96,7 @@ object mod {
   @JSImport("@tensorflow/tfjs-data", "TextLineDataset")
   @js.native
   open class TextLineDataset protected ()
-    extends typings.tensorflowTfjsData.textLineDatasetMod.TextLineDataset {
+    extends typings.tensorflowTfjsData.distDatasetsTextLineDatasetMod.TextLineDataset {
     /**
       * Create a `TextLineDataset`.
       *
@@ -108,7 +108,7 @@ object mod {
   @JSImport("@tensorflow/tfjs-data", "URLDataSource")
   @js.native
   open class URLDataSource protected ()
-    extends typings.tensorflowTfjsData.urlDataSourceMod.URLDataSource {
+    extends typings.tensorflowTfjsData.distSourcesUrlDataSourceMod.URLDataSource {
     /**
       * Create a `URLDataSource`.
       *
@@ -120,26 +120,26 @@ object mod {
     def this(url: RequestInfo, fileOptions: FileChunkIteratorOptions) = this()
   }
   
-  inline def array[T /* <: TensorContainer */](items: js.Array[T]): typings.tensorflowTfjsData.datasetMod.Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(items.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.datasetMod.Dataset[T]]
+  inline def array[T /* <: TensorContainer */](items: js.Array[T]): typings.tensorflowTfjsData.distDatasetMod.Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(items.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.distDatasetMod.Dataset[T]]
   
-  inline def csv(source: RequestInfo): typings.tensorflowTfjsData.csvDatasetMod.CSVDataset = ^.asInstanceOf[js.Dynamic].applyDynamic("csv")(source.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.csvDatasetMod.CSVDataset]
-  inline def csv(source: RequestInfo, csvConfig: CSVConfig): typings.tensorflowTfjsData.csvDatasetMod.CSVDataset = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(source.asInstanceOf[js.Any], csvConfig.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsData.csvDatasetMod.CSVDataset]
+  inline def csv(source: RequestInfo): typings.tensorflowTfjsData.distDatasetsCsvDatasetMod.CSVDataset = ^.asInstanceOf[js.Dynamic].applyDynamic("csv")(source.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.distDatasetsCsvDatasetMod.CSVDataset]
+  inline def csv(source: RequestInfo, csvConfig: CSVConfig): typings.tensorflowTfjsData.distDatasetsCsvDatasetMod.CSVDataset = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(source.asInstanceOf[js.Any], csvConfig.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsData.distDatasetsCsvDatasetMod.CSVDataset]
   
-  inline def func[T /* <: TensorContainer */](f: js.Function0[(IteratorResult[T, Any]) | (js.Promise[IteratorResult[T, Any]])]): typings.tensorflowTfjsData.datasetMod.Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(f.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.datasetMod.Dataset[T]]
+  inline def func[T /* <: TensorContainer */](f: js.Function0[(IteratorResult[T, Any]) | (js.Promise[IteratorResult[T, Any]])]): typings.tensorflowTfjsData.distDatasetMod.Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(f.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.distDatasetMod.Dataset[T]]
   
-  inline def generator[T /* <: TensorContainer */](generator: js.Function0[js.Iterator[T] | js.Promise[js.Iterator[T]]]): typings.tensorflowTfjsData.datasetMod.Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generator")(generator.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.datasetMod.Dataset[T]]
+  inline def generator[T /* <: TensorContainer */](generator: js.Function0[js.Iterator[T] | js.Promise[js.Iterator[T]]]): typings.tensorflowTfjsData.distDatasetMod.Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generator")(generator.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.distDatasetMod.Dataset[T]]
   
   inline def microphone(): js.Promise[MicrophoneIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("microphone")().asInstanceOf[js.Promise[MicrophoneIterator]]
   inline def microphone(microphoneConfig: MicrophoneConfig): js.Promise[MicrophoneIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("microphone")(microphoneConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MicrophoneIterator]]
   
   @JSImport("@tensorflow/tfjs-data", "version_data")
   @js.native
-  val versionData: /* "3.20.0" */ String = js.native
+  val versionData: /* "4.0.0" */ String = js.native
   
   inline def webcam(): js.Promise[WebcamIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("webcam")().asInstanceOf[js.Promise[WebcamIterator]]
   inline def webcam(webcamVideoElement: Unit, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = (^.asInstanceOf[js.Dynamic].applyDynamic("webcam")(webcamVideoElement.asInstanceOf[js.Any], webcamConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebcamIterator]]
   inline def webcam(webcamVideoElement: HTMLVideoElement): js.Promise[WebcamIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("webcam")(webcamVideoElement.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WebcamIterator]]
   inline def webcam(webcamVideoElement: HTMLVideoElement, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = (^.asInstanceOf[js.Dynamic].applyDynamic("webcam")(webcamVideoElement.asInstanceOf[js.Any], webcamConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebcamIterator]]
   
-  inline def zip[O /* <: TensorContainer */](datasets: DatasetContainer): typings.tensorflowTfjsData.datasetMod.Dataset[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(datasets.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.datasetMod.Dataset[O]]
+  inline def zip[O /* <: TensorContainer */](datasets: DatasetContainer): typings.tensorflowTfjsData.distDatasetMod.Dataset[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(datasets.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.distDatasetMod.Dataset[O]]
 }

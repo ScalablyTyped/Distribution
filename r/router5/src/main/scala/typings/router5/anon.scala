@@ -1,10 +1,10 @@
 package typings.router5
 
-import typings.pathParser.encodingMod.URLParamsEncodingType
-import typings.routeNode.routeNodeMod.QueryParamsMode
-import typings.routeNode.routeNodeMod.TrailingSlashMode
-import typings.router5.baseMod.Params
-import typings.searchParams.encodeMod.IOptions
+import typings.pathParser.distEncodingMod.URLParamsEncodingType
+import typings.routeNode.distRouteNodeMod.QueryParamsMode
+import typings.routeNode.distRouteNodeMod.TrailingSlashMode
+import typings.router5.distTypesBaseMod.Params
+import typings.searchParams.distEncodeMod.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

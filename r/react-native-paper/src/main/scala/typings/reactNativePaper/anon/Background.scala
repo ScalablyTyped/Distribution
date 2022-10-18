@@ -10,31 +10,62 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Background extends StObject {
   
+  /**
+    * Type of background drawabale to display the feedback (Android).
+    * https://reactnative.dev/docs/touchablenativefeedback#background
+    */
   var background: js.UndefOr[js.Object] = js.undefined
   
+  /**
+    * Whether to render the ripple outside the view bounds.
+    */
   var borderless: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Whether to start the ripple at the center (Web).
+    */
   var centered: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Content of the `TouchableRipple`.
+    */
   var children: ReactNode
   
+  /**
+    * Whether to prevent interaction with the touchable.
+    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Function to execute on long press.
+    */
   var onLongPress: js.UndefOr[js.Function1[/* e */ GestureResponderEvent, Unit]] = js.undefined
   
+  /**
+    * Function to execute on press. If not set, will cause the touchable to be disabled.
+    */
   var onPress: js.UndefOr[js.Function1[/* e */ GestureResponderEvent, Unit]] = js.undefined
   
+  /**
+    * Color of the ripple effect (Android >= 5.0 and Web).
+    */
   var rippleColor: js.UndefOr[String] = js.undefined
   
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  /**
+    * @optional
+    */
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
+  /**
+    * Color of the underlay for the highlight effect (Android < 5.0 and iOS).
+    */
   var underlayColor: js.UndefOr[String] = js.undefined
 }
 object Background {
   
-  inline def apply(theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Background = {
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Background = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Background]
   }
@@ -79,7 +110,7 @@ object Background {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setUnderlayColor(value: String): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
     

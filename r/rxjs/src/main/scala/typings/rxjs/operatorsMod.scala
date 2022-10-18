@@ -1,44 +1,40 @@
 package typings.rxjs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.rxjs.anon.With
-import typings.rxjs.connectMod.ConnectConfig
-import typings.rxjs.connectableObservableMod.ConnectableObservable
-import typings.rxjs.groupByMod.BasicGroupByOptions
-import typings.rxjs.groupByMod.GroupByOptionsWithElement
-import typings.rxjs.groupByMod.GroupedObservable
-import typings.rxjs.internalObservableMod.Observable
-import typings.rxjs.internalTypesMod.Cons
-import typings.rxjs.internalTypesMod.InteropObservable
-import typings.rxjs.internalTypesMod.MonoTypeOperatorFunction
-import typings.rxjs.internalTypesMod.ObservableInput
-import typings.rxjs.internalTypesMod.ObservableNotification
-import typings.rxjs.internalTypesMod.ObservedValueOf
-import typings.rxjs.internalTypesMod.OperatorFunction
-import typings.rxjs.internalTypesMod.ReadableStreamLike
-import typings.rxjs.internalTypesMod.SchedulerLike
-import typings.rxjs.internalTypesMod.Timestamp
-import typings.rxjs.internalTypesMod.TimestampProvider
-import typings.rxjs.internalTypesMod.TruthyTypesOf
-import typings.rxjs.internalTypesMod.UnaryFunction
-import typings.rxjs.internalTypesMod.ValueFromArray
-import typings.rxjs.internalTypesMod.ValueFromNotification
-import typings.rxjs.notificationMod.Notification
-import typings.rxjs.repeatMod.RepeatConfig
-import typings.rxjs.retryMod.RetryConfig
+import typings.rxjs.distTypesInternalNotificationMod.Notification
+import typings.rxjs.distTypesInternalObservableConnectableObservableMod.ConnectableObservable
+import typings.rxjs.distTypesInternalObservableMod.Observable
+import typings.rxjs.distTypesInternalOperatorsConnectMod.ConnectConfig
+import typings.rxjs.distTypesInternalOperatorsGroupByMod.BasicGroupByOptions
+import typings.rxjs.distTypesInternalOperatorsGroupByMod.GroupByOptionsWithElement
+import typings.rxjs.distTypesInternalOperatorsGroupByMod.GroupedObservable
+import typings.rxjs.distTypesInternalOperatorsRepeatMod.RepeatConfig
+import typings.rxjs.distTypesInternalOperatorsRetryMod.RetryConfig
+import typings.rxjs.distTypesInternalOperatorsShareMod.ShareConfig
+import typings.rxjs.distTypesInternalOperatorsShareReplayMod.ShareReplayConfig
+import typings.rxjs.distTypesInternalOperatorsTapMod.TapObserver
+import typings.rxjs.distTypesInternalOperatorsThrottleMod.ThrottleConfig
+import typings.rxjs.distTypesInternalOperatorsTimeIntervalMod.TimeInterval_
+import typings.rxjs.distTypesInternalOperatorsTimeoutMod.TimeoutConfig
+import typings.rxjs.distTypesInternalSubjectMod.Subject
+import typings.rxjs.distTypesInternalTypesMod.Cons
+import typings.rxjs.distTypesInternalTypesMod.InteropObservable
+import typings.rxjs.distTypesInternalTypesMod.MonoTypeOperatorFunction
+import typings.rxjs.distTypesInternalTypesMod.ObservableInput
+import typings.rxjs.distTypesInternalTypesMod.ObservableNotification
+import typings.rxjs.distTypesInternalTypesMod.ObservedValueOf
+import typings.rxjs.distTypesInternalTypesMod.OperatorFunction
+import typings.rxjs.distTypesInternalTypesMod.ReadableStreamLike
+import typings.rxjs.distTypesInternalTypesMod.SchedulerLike
+import typings.rxjs.distTypesInternalTypesMod.Timestamp
+import typings.rxjs.distTypesInternalTypesMod.TimestampProvider
+import typings.rxjs.distTypesInternalTypesMod.TruthyTypesOf
+import typings.rxjs.distTypesInternalTypesMod.UnaryFunction
+import typings.rxjs.distTypesInternalTypesMod.ValueFromArray
+import typings.rxjs.distTypesInternalTypesMod.ValueFromNotification
 import typings.rxjs.rxjsBooleans.`false`
 import typings.rxjs.rxjsBooleans.`true`
-import typings.rxjs.rxjsInts.`-1`
 import typings.rxjs.rxjsStrings.`with`
-import typings.rxjs.rxjsStrings.withLatestFrom
-import typings.rxjs.rxjsStrings.zip
-import typings.rxjs.shareMod.ShareConfig
-import typings.rxjs.shareReplayMod.ShareReplayConfig
-import typings.rxjs.subjectMod.Subject
-import typings.rxjs.tapMod.TapObserver
-import typings.rxjs.throttleMod.ThrottleConfig
-import typings.rxjs.timeIntervalMod.TimeInterval_
-import typings.rxjs.timeoutMod.TimeoutConfig
 import typings.std.ArrayLike
 import typings.std.AsyncIterable
 import typings.std.BooleanConstructor
@@ -49,9 +45,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object operatorsMod {
   
-  @JSImport("rxjs/dist/types/operators", JSImport.Namespace)
+  @JSImport("rxjs/operators", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -105,13 +102,13 @@ object operatorsMod {
   inline def combineAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): OperatorFunction[ObservableInput[T], R] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAll")(project.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[ObservableInput[T], R]]
   
   inline def combineLatest[T, A /* <: js.Array[Any] */, R](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param sourcesAndProject because its type [...ObservableInputTuple<A>, (values : [T, ...A]): R] is not an array type */ sourcesAndProject: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[typings.rxjs.rxjsStrings.combineLatest & TopLevel[A]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param sourcesAndProject because its type [...ObservableInputTuple<A>, (values : [T, ...A]): R] is not an array type */ sourcesAndProject: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
+    ]
   ): OperatorFunction[T, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sourcesAndProject.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, R]]
   inline def combineLatest[T, A /* <: js.Array[Any] */, R](
     sources: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}
-    */ typings.rxjs.rxjsStrings.combineLatest & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
     ],
     project: js.Function1[
       /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* values */ js.Array[A], 
@@ -126,14 +123,14 @@ object operatorsMod {
   
   inline def combineLatestWith[T, A /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param otherSources because its type [...ObservableInputTuple<A>] is not an array type */ otherSources: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}
-    */ typings.rxjs.rxjsStrings.combineLatestWith & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
     ]
   ): OperatorFunction[T, Cons[T, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineLatestWith")(otherSources.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Cons[T, A]]]
   
   inline def concat[T, A /* <: js.Array[Any] */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param sourcesAndScheduler because its type [...ObservableInputTuple<A>, SchedulerLike] is not an array type */ sourcesAndScheduler: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[typings.rxjs.rxjsStrings.concat & TopLevel[A]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param sourcesAndScheduler because its type [...ObservableInputTuple<A>, SchedulerLike] is not an array type */ sourcesAndScheduler: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
+    ]
   ): OperatorFunction[
     T, 
     T | (/* import warning: importer.ImportType#apply Failed type conversion: A[number] */ js.Any)
@@ -244,9 +241,7 @@ object operatorsMod {
   
   inline def concatWith[T, A /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param otherSources because its type [...ObservableInputTuple<A>] is not an array type */ otherSources: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}
-    */ typings.rxjs.rxjsStrings.concatWith & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
     ]
   ): OperatorFunction[
     T, 
@@ -316,8 +311,20 @@ object operatorsMod {
   ): OperatorFunction[T, T | ValueFromArray[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("endWith")(valuesAndScheduler.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, T | ValueFromArray[A]]]
   
   inline def every[T](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Boolean]]
-  inline def every[T](predicate: BooleanConstructor): OperatorFunction[T, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Boolean]]
-  inline def every[T](predicate: BooleanConstructor, thisArg: Any): OperatorFunction[T, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, Boolean]]
+  inline def every[T](predicate: BooleanConstructor): OperatorFunction[
+    T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Exclude<T, rxjs.rxjs/dist/types/internal/types.Falsy> extends never ? false : boolean */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[
+    T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Exclude<T, rxjs.rxjs/dist/types/internal/types.Falsy> extends never ? false : boolean */ js.Any
+  ]]
+  inline def every[T](predicate: BooleanConstructor, thisArg: Any): OperatorFunction[
+    T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Exclude<T, rxjs.rxjs/dist/types/internal/types.Falsy> extends never ? false : boolean */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[
+    T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Exclude<T, rxjs.rxjs/dist/types/internal/types.Falsy> extends never ? false : boolean */ js.Any
+  ]]
   inline def every[T, A](
     predicate: js.ThisFunction3[/* this */ A, /* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
     thisArg: A
@@ -374,8 +381,20 @@ object operatorsMod {
   ): OperatorFunction[T, js.UndefOr[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.UndefOr[T]]]
   
   inline def findIndex[T](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Double]]
-  inline def findIndex[T](predicate: BooleanConstructor): OperatorFunction[T, Double | `-1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Double | `-1`]]
-  inline def findIndex[T](predicate: BooleanConstructor, thisArg: Any): OperatorFunction[T, Double | `-1`] = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, Double | `-1`]]
+  inline def findIndex[T](predicate: BooleanConstructor): OperatorFunction[
+    T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends rxjs.rxjs/dist/types/internal/types.Falsy ? -1 : number */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[
+    T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends rxjs.rxjs/dist/types/internal/types.Falsy ? -1 : number */ js.Any
+  ]]
+  inline def findIndex[T](predicate: BooleanConstructor, thisArg: Any): OperatorFunction[
+    T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends rxjs.rxjs/dist/types/internal/types.Falsy ? -1 : number */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[
+    T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends rxjs.rxjs/dist/types/internal/types.Falsy ? -1 : number */ js.Any
+  ]]
   inline def findIndex[T, A](
     predicate: js.ThisFunction3[/* this */ A, /* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
     thisArg: A
@@ -398,22 +417,22 @@ object operatorsMod {
   
   inline def first[T](predicate: BooleanConstructor): OperatorFunction[T, TruthyTypesOf[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, TruthyTypesOf[T]]]
   inline def first[T, D](): OperatorFunction[T, T | D] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[OperatorFunction[T, T | D]]
-  inline def first[T, D](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, T | D] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, T | D]]
-  inline def first[T, D](
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
-    defaultValue: D
-  ): OperatorFunction[T, T | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, T | D]]
+  inline def first[T, S /* <: T */](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean]
+  ): OperatorFunction[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, S]]
+  inline def first[T, S /* <: T */](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean],
+    defaultValue: S
+  ): OperatorFunction[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, S]]
   inline def first[T, D](predicate: Null, defaultValue: D): OperatorFunction[T, T | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, T | D]]
   inline def first[T, D](predicate: Unit, defaultValue: D): OperatorFunction[T, T | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, T | D]]
   inline def first[T, D](predicate: BooleanConstructor, defaultValue: D): OperatorFunction[T, TruthyTypesOf[T] | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, TruthyTypesOf[T] | D]]
   
-  inline def first_TS[T, S /* <: T */](
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean]
-  ): OperatorFunction[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, S]]
-  inline def first_TS[T, S /* <: T */](
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean],
-    defaultValue: S
-  ): OperatorFunction[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, S]]
+  inline def first_TD[T, D](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, T | D] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, T | D]]
+  inline def first_TD[T, D](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
+    defaultValue: D
+  ): OperatorFunction[T, T | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, T | D]]
   
   inline def first_TSD[T, S /* <: T */, D](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean],
@@ -501,22 +520,22 @@ object operatorsMod {
   
   inline def last[T](predicate: BooleanConstructor): OperatorFunction[T, TruthyTypesOf[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, TruthyTypesOf[T]]]
   inline def last[T, D](): OperatorFunction[T, T | D] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")().asInstanceOf[OperatorFunction[T, T | D]]
-  inline def last[T, D](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, T | D] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, T | D]]
-  inline def last[T, D](
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
-    defaultValue: D
-  ): OperatorFunction[T, T | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, T | D]]
+  inline def last[T, S /* <: T */](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean]
+  ): OperatorFunction[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, S]]
+  inline def last[T, S /* <: T */](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean],
+    defaultValue: S
+  ): OperatorFunction[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, S]]
   inline def last[T, D](predicate: Null, defaultValue: D): OperatorFunction[T, T | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, T | D]]
   inline def last[T, D](predicate: Unit, defaultValue: D): OperatorFunction[T, T | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, T | D]]
   inline def last[T, D](predicate: BooleanConstructor, defaultValue: D): OperatorFunction[T, TruthyTypesOf[T] | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, TruthyTypesOf[T] | D]]
   
-  inline def last_TS[T, S /* <: T */](
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean]
-  ): OperatorFunction[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, S]]
-  inline def last_TS[T, S /* <: T */](
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean],
-    defaultValue: S
-  ): OperatorFunction[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, S]]
+  inline def last_TD[T, D](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, T | D] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, T | D]]
+  inline def last_TD[T, D](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
+    defaultValue: D
+  ): OperatorFunction[T, T | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, T | D]]
   
   inline def map[T, R](project: js.Function2[/* value */ T, /* index */ Double, R]): OperatorFunction[T, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(project.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, R]]
   inline def map[T, R, A](project: js.ThisFunction2[/* this */ A, /* value */ T, /* index */ Double, R], thisArg: A): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(project.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
@@ -531,7 +550,9 @@ object operatorsMod {
   inline def max[T](comparer: js.Function2[/* x */ T, /* y */ T, Double]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(comparer.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
   
   inline def merge[T, A /* <: js.Array[Any] */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param sourcesAndConcurrencyAndScheduler because its type [...ObservableInputTuple<A>, number, SchedulerLike] is not an array type */ sourcesAndConcurrencyAndScheduler: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[typings.rxjs.rxjsStrings.merge & TopLevel[A]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param sourcesAndConcurrencyAndScheduler because its type [...ObservableInputTuple<A>, number, SchedulerLike] is not an array type */ sourcesAndConcurrencyAndScheduler: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
+    ]
   ): OperatorFunction[
     T, 
     T | (/* import warning: importer.ImportType#apply Failed type conversion: A[number] */ js.Any)
@@ -746,9 +767,7 @@ object operatorsMod {
   
   inline def mergeWith[T, A /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param otherSources because its type [...ObservableInputTuple<A>] is not an array type */ otherSources: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}
-    */ typings.rxjs.rxjsStrings.mergeWith & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
     ]
   ): OperatorFunction[
     T, 
@@ -771,9 +790,7 @@ object operatorsMod {
   
   inline def onErrorResumeNext[T, A /* <: js.Array[Any] */](
     sources: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}
-    */ typings.rxjs.rxjsStrings.onErrorResumeNext & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
     ]
   ): OperatorFunction[
     T, 
@@ -883,9 +900,7 @@ object operatorsMod {
   
   inline def race[T, A /* <: js.Array[Any] */](
     otherSources: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}
-    */ typings.rxjs.rxjsStrings.race & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
     ]
   ): OperatorFunction[
     T, 
@@ -897,9 +912,7 @@ object operatorsMod {
   
   inline def raceWith[T, A /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param otherSources because its type [...ObservableInputTuple<A>] is not an array type */ otherSources: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}
-    */ typings.rxjs.rxjsStrings.raceWith & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
     ]
   ): OperatorFunction[
     T, 
@@ -965,7 +978,13 @@ object operatorsMod {
   inline def skipUntil[T](notifier: Observable[Any]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("skipUntil")(notifier.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
   
   inline def skipWhile[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("skipWhile")(predicate.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
-  inline def skipWhile[T](predicate: BooleanConstructor): OperatorFunction[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("skipWhile")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, T]]
+  inline def skipWhile[T](predicate: BooleanConstructor): OperatorFunction[
+    T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<T, rxjs.rxjs/dist/types/internal/types.Falsy> extends never ? never : T */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("skipWhile")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[
+    T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<T, rxjs.rxjs/dist/types/internal/types.Falsy> extends never ? never : T */ js.Any
+  ]]
   
   inline def skipWhile_true[T](predicate: js.Function2[/* value */ T, /* index */ Double, `true`]): OperatorFunction[T, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("skipWhile")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, scala.Nothing]]
   
@@ -1192,9 +1211,7 @@ object operatorsMod {
   
   inline def withLatestFrom[T, O /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param inputs because its type [...ObservableInputTuple<O>] is not an array type */ inputs: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof O ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<O[K]>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof O ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<O[K]>}
-    */ typings.rxjs.rxjsStrings.withLatestFrom & TopLevel[O]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<O[K]>} */ js.Any
     ]
   ): OperatorFunction[
     T, 
@@ -1206,24 +1223,18 @@ object operatorsMod {
   
   inline def withLatestFrom_TOR[T, O /* <: js.Array[Any] */, R](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param inputs because its type [...ObservableInputTuple<O>, (value : [T, ...O]): R] is not an array type */ inputs: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof O ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<O[K]>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof O ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<O[K]>}
-    */ withLatestFrom & TopLevel[O]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<O[K]>} */ js.Any
     ]
   ): OperatorFunction[T, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(inputs.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, R]]
   
   inline def zip[T, A /* <: js.Array[Any] */](
     otherInputs: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}
-    */ typings.rxjs.rxjsStrings.zip & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
     ]
   ): OperatorFunction[T, Cons[T, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(otherInputs.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Cons[T, A]]]
   inline def zip[T, A /* <: js.Array[Any] */, R](
     otherInputsAndProject: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}
-    */ typings.rxjs.rxjsStrings.zip & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
     ],
     project: js.Function1[/* values */ Cons[T, A], R]
   ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(otherInputsAndProject.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
@@ -1235,17 +1246,13 @@ object operatorsMod {
   
   inline def zipWith[T, A /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param otherInputs because its type [...ObservableInputTuple<A>] is not an array type */ otherInputs: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}
-    */ typings.rxjs.rxjsStrings.zipWith & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
     ]
   ): OperatorFunction[T, Cons[T, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(otherInputs.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Cons[T, A]]]
   
   inline def zip_TAR[T, A /* <: js.Array[Any] */, R](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param otherInputsAndProject because its type [...ObservableInputTuple<A>, (values : Cons<T, A>): R] is not an array type */ otherInputsAndProject: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}
-    */ zip & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Any
     ]
   ): OperatorFunction[T, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(otherInputsAndProject.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, R]]
 }

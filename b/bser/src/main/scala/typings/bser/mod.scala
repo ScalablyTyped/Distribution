@@ -4,6 +4,7 @@ import typings.bser.bserBooleans.`false`
 import typings.bser.bserBooleans.`true`
 import typings.bser.bserInts.`0`
 import typings.bser.bserInts.`1`
+import typings.node.NodeJS.TypedArray
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.std.SharedArrayBuffer
@@ -111,7 +112,7 @@ object mod {
   
   type AnyWrapper = Boolean | IntWrapper | Null | String | js.Object
   
-  type InputWrapper = Buffer | String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView | js.typedarray.ArrayBuffer | SharedArrayBuffer
+  type InputWrapper = Buffer | String | TypedArray | js.typedarray.DataView | js.typedarray.ArrayBuffer | SharedArrayBuffer
   
   type IntWrapper = Double | typings.nodeInt64.mod.^
 }

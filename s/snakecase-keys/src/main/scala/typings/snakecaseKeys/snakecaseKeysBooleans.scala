@@ -1,6 +1,5 @@
 package typings.snakecaseKeys
 
-import typings.snakecaseKeys.mod._Includes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object snakecaseKeysBooleans {
   
   @js.native
-  sealed trait `false`
-    extends StObject
-       with _Includes[Any, Any]
-  inline def `false`: `false` = false.asInstanceOf[`false`]
-  
-  @js.native
-  sealed trait `true`
-    extends StObject
-       with _Includes[Any, Any]
+  sealed trait `true` extends StObject
   inline def `true`: `true` = true.asInstanceOf[`true`]
 }

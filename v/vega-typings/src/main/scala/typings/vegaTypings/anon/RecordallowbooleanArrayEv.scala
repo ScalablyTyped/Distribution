@@ -1,7 +1,7 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.configMod.DefaultsConfig
-import typings.vegaTypings.streamMod.EventType
+import typings.vegaTypings.typesSpecConfigMod.DefaultsConfig
+import typings.vegaTypings.typesSpecStreamMod.EventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

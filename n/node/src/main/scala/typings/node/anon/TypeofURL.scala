@@ -1,6 +1,6 @@
 package typings.node.anon
 
-import typings.node.nodeBufferMod.Blob
+import typings.node.nodeColonbufferMod.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

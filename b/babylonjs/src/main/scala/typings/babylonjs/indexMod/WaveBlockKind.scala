@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object WaveBlockKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.waveBlockMod.WaveBlockKind & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.materialsNodeBlocksWaveBlockMod.WaveBlockKind & Double] = js.native
   
-  /* 0 */ val SawTooth: typings.babylonjs.waveBlockMod.WaveBlockKind.SawTooth & Double = js.native
+  /* 0 */ val SawTooth: typings.babylonjs.materialsNodeBlocksWaveBlockMod.WaveBlockKind.SawTooth & Double = js.native
   
-  /* 1 */ val Square: typings.babylonjs.waveBlockMod.WaveBlockKind.Square & Double = js.native
+  /* 1 */ val Square: typings.babylonjs.materialsNodeBlocksWaveBlockMod.WaveBlockKind.Square & Double = js.native
   
-  /* 2 */ val Triangle: typings.babylonjs.waveBlockMod.WaveBlockKind.Triangle & Double = js.native
+  /* 2 */ val Triangle: typings.babylonjs.materialsNodeBlocksWaveBlockMod.WaveBlockKind.Triangle & Double = js.native
 }

@@ -6,7 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `3` extends StObject {
   
-  var style: js.UndefOr[`2`] = js.undefined
+  /** 分页导航器 文本 填充色，默认 #ccc */
+  var fill: js.UndefOr[String] = js.undefined
+  
+  /** 字体大小, 默认 12px */
+  var fontSize: js.UndefOr[Double] = js.undefined
 }
 object `3` {
   
@@ -17,8 +21,12 @@ object `3` {
   
   extension [Self <: `3`](x: Self) {
     
-    inline def setStyle(value: `2`): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
   }
 }

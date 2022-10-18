@@ -6,21 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `432` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[Fixedat]
+  /** Page number of the results to fetch. */
+  var page: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
+  ] = js.undefined
 }
 object `432` {
   
-  inline def apply(applicationSlashjson: js.Array[Fixedat]): `432` = {
+  inline def apply(): `432` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`432`]
   }
   
   extension [Self <: `432`](x: Self) {
     
-    inline def setApplicationSlashjson(value: js.Array[Fixedat]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setPage(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
+    ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: Fixedat*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }
 }

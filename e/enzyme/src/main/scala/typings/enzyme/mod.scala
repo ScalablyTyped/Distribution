@@ -2340,7 +2340,15 @@ object mod {
     }
   }
   
-  type Parameters[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends (args : infer A): any ? A : never
+    }}}
+    */
+  @js.native
+  trait Parameters[T] extends StObject
   
   trait ShallowRendererProps extends StObject {
     

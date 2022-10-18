@@ -1,6 +1,6 @@
 package typings.terraButton
 
-import typings.terraButton.buttonMod.OmittedKeys
+import typings.terraButton.libButtonMod.OmittedKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

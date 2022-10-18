@@ -8,13 +8,6 @@ object mod {
   
   object location {
     
-    inline def apply(): Location = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Location]
-    inline def apply(depth: Double): Location = ^.asInstanceOf[js.Dynamic].apply(depth.asInstanceOf[js.Any]).asInstanceOf[Location]
-    
-    @JSImport("@hapi/pinpoint", "location")
-    @js.native
-    val ^ : js.Any = js.native
-    
     trait Location extends StObject {
       
       /**

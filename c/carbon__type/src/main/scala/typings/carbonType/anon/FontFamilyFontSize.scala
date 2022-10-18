@@ -12,20 +12,12 @@ trait FontFamilyFontSize extends StObject {
   
   var fontWeight: Double
   
-  var letterSpacing: String
-  
-  var lineHeight: String
+  var letterSpacing: Double
 }
 object FontFamilyFontSize {
   
-  inline def apply(
-    fontFamily: String,
-    fontSize: String,
-    fontWeight: Double,
-    letterSpacing: String,
-    lineHeight: String
-  ): FontFamilyFontSize = {
-    val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
+  inline def apply(fontFamily: String, fontSize: String, fontWeight: Double, letterSpacing: Double): FontFamilyFontSize = {
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontFamilyFontSize]
   }
   
@@ -37,8 +29,6 @@ object FontFamilyFontSize {
     
     inline def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    inline def setLetterSpacing(value: String): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
-    
-    inline def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
   }
 }

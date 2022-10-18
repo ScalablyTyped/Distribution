@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "FuzzyOR")
 @js.native
 open class FuzzyOR protected ()
-  extends typings.yuka.yukaMod.FuzzyOR {
+  extends typings.yuka.srcYukaMod.FuzzyOR {
   /**
     * Constructs a new fuzzy AND operator with the given values.
     * The constructor accepts and arbitrary amount of fuzzy terms.
     */
-  def this(terms: typings.yuka.fuzzyTermMod.FuzzyTerm*) = this()
+  def this(terms: typings.yuka.srcFuzzyFuzzyTermMod.FuzzyTerm*) = this()
 }

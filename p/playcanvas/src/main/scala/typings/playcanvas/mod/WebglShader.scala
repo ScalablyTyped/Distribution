@@ -6,8 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./webgl-graphics-device.js').WebglGraphicsDevice} WebglGraphicsDevice */
-/** @typedef {import('../shader.js').Shader} Shader */
 /**
   * A WebGL implementation of the Shader.
   *

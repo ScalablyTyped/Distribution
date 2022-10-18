@@ -91,15 +91,15 @@ object mod extends Shortcut {
     
     val VERSION: String = js.native
     
-    def backgroundTimeout[T /* <: js.UndefOr[Double] */](): js.UndefOr[Double] = js.native
-    def backgroundTimeout[T /* <: js.UndefOr[Double] */](value: T): js.UndefOr[Double] = js.native
+    def backgroundTimeout[T /* <: js.UndefOr[Double] */](): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? undefined : number */ js.Any = js.native
+    def backgroundTimeout[T /* <: js.UndefOr[Double] */](value: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? undefined : number */ js.Any = js.native
     
     def extend(options: Record[String | Double, CustomError]): Unit = js.native
     
     def getAll(): Record[String | Double, CustomError] = js.native
     
-    def timeout[T /* <: js.UndefOr[Double] */](): js.UndefOr[Double] = js.native
-    def timeout[T /* <: js.UndefOr[Double] */](value: T): js.UndefOr[Double] = js.native
+    def timeout[T /* <: js.UndefOr[Double] */](): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? undefined : number */ js.Any = js.native
+    def timeout[T /* <: js.UndefOr[Double] */](value: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? undefined : number */ js.Any = js.native
   }
   
   type _To = VideoJSErrorsPlugin

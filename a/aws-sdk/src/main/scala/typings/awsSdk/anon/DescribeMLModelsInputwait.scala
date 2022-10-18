@@ -1,11 +1,11 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.machinelearningMod.ComparatorValue
-import typings.awsSdk.machinelearningMod.MLModelFilterVariable
-import typings.awsSdk.machinelearningMod.PageLimit
-import typings.awsSdk.machinelearningMod.SortOrder
-import typings.awsSdk.machinelearningMod.StringType
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsMachinelearningMod.ComparatorValue
+import typings.awsSdk.clientsMachinelearningMod.MLModelFilterVariable
+import typings.awsSdk.clientsMachinelearningMod.PageLimit
+import typings.awsSdk.clientsMachinelearningMod.SortOrder
+import typings.awsSdk.clientsMachinelearningMod.StringType
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,7 +69,7 @@ trait DescribeMLModelsInputwait extends StObject {
   /**
     * A two-value parameter that determines the sequence of the resulting list of MLModel.    asc - Arranges the list in ascending order (A-Z, 0-9).    dsc - Arranges the list in descending order (Z-A, 9-0).   Results are sorted by FilterVariable.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.machinelearningMod.SortOrder] = js.undefined
+  var SortOrder: js.UndefOr[typings.awsSdk.clientsMachinelearningMod.SortOrder] = js.undefined
 }
 object DescribeMLModelsInputwait {
   

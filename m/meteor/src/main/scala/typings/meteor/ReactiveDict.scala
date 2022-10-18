@@ -69,6 +69,23 @@ trait ReactiveDict[O] extends StObject {
     * `ReactiveDict.get` on this `key`.)
     */
   def set(`object`: Partial[O]): Unit = js.native
+  def set[P /* <: /* keyof O */ String */](key: P, value: /* import warning: importer.ImportType#apply Failed type conversion: O[P] */ js.Any): Unit = js.native
+  
+  /**
+    * Set a value for a key if it hasn't been set before.
+    * Otherwise works exactly the same as `ReactiveDict.set`.
+    */
+  def setDefault(`object`: Partial[O]): Unit = js.native
+  def setDefault[P /* <: /* keyof O */ String */](key: P, value: /* import warning: importer.ImportType#apply Failed type conversion: O[P] */ js.Any): Unit = js.native
+  /**
+    * Set a value for a key if it hasn't been set before.
+    * Otherwise works exactly the same as `ReactiveDict.set`.
+    * @param key The key to set, eg, `selectedItem`
+    * @param value The new value for `key`
+    */
+  @JSName("setDefault")
+  def setDefault_P[P /* <: /* keyof O */ String */](key: P): Unit = js.native
+  
   /**
     * Set a value for a key in the ReactiveDict. Notify any listeners
     * that the value has changed (eg: redraw templates, and rerun any
@@ -77,20 +94,6 @@ trait ReactiveDict[O] extends StObject {
     * @param key The key to set, eg, `selectedItem`
     * @param value The new value for `key`
     */
-  def set[P /* <: /* keyof O */ String */](key: P): Unit = js.native
-  def set[P /* <: /* keyof O */ String */](key: P, value: /* import warning: importer.ImportType#apply Failed type conversion: O[P] */ js.Any): Unit = js.native
-  
-  /**
-    * Set a value for a key if it hasn't been set before.
-    * Otherwise works exactly the same as `ReactiveDict.set`.
-    */
-  def setDefault(`object`: Partial[O]): Unit = js.native
-  /**
-    * Set a value for a key if it hasn't been set before.
-    * Otherwise works exactly the same as `ReactiveDict.set`.
-    * @param key The key to set, eg, `selectedItem`
-    * @param value The new value for `key`
-    */
-  def setDefault[P /* <: /* keyof O */ String */](key: P): Unit = js.native
-  def setDefault[P /* <: /* keyof O */ String */](key: P, value: /* import warning: importer.ImportType#apply Failed type conversion: O[P] */ js.Any): Unit = js.native
+  @JSName("set")
+  def set_P[P /* <: /* keyof O */ String */](key: P): Unit = js.native
 }

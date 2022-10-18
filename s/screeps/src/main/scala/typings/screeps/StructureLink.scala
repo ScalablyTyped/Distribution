@@ -13,8 +13,7 @@ trait StructureLink
   extends StObject
      with OwnedStructure[STRUCTURE_LINK]
      with AnyOwnedStructure
-     with AnyStoreStructure
-     with ConcreteStructure[Any] {
+     with AnyStoreStructure {
   
   /**
     * The amount of game ticks the link has to wait until the next transfer is possible.

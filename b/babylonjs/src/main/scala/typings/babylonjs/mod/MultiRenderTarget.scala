@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.multiRenderTargetMod.IMultiRenderTargetOptions
+import typings.babylonjs.materialsTexturesMultiRenderTargetMod.IMultiRenderTargetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "MultiRenderTarget")
 @js.native
 open class MultiRenderTarget protected ()
-  extends typings.babylonjs.legacyMod.MultiRenderTarget {
+  extends typings.babylonjs.legacyLegacyMod.MultiRenderTarget {
   /**
     * Instantiate a new multi render target texture.
     * A multi render target, like a render target provides the ability to render to a texture.

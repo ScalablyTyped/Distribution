@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param exponent Defines the exponent of the function
   */
 open class ExponentialEase ()
-  extends typings.babylonjs.legacyMod.ExponentialEase {
+  extends typings.babylonjs.legacyLegacyMod.ExponentialEase {
   def this(/** Defines the exponent of the function */
   exponent: Double) = this()
 }

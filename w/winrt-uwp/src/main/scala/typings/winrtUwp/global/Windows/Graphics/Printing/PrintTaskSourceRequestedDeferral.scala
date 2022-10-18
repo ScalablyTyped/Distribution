@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to defer the request for a print task source. */
-@JSGlobal("Windows.Graphics.Printing.PrintTaskSourceRequestedDeferral")
+/* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.PrintTaskSourceRequestedDeferral")
 @js.native
-abstract class PrintTaskSourceRequestedDeferral ()
+open class PrintTaskSourceRequestedDeferral ()
   extends StObject
      with typings.winrtUwp.Windows.Graphics.Printing.PrintTaskSourceRequestedDeferral {
   

@@ -1,6 +1,6 @@
 package typings.babylonjs
 
-import typings.babylonjs.engineMod.Engine
+import typings.babylonjs.enginesEngineMod.Engine
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object instrumentationIndexMod {
   @JSImport("babylonjs/Instrumentation/index", "EngineInstrumentation")
   @js.native
   open class EngineInstrumentation protected ()
-    extends typings.babylonjs.engineInstrumentationMod.EngineInstrumentation {
+    extends typings.babylonjs.instrumentationEngineInstrumentationMod.EngineInstrumentation {
     /**
       * Instantiates a new engine instrumentation.
       * This class can be used to get instrumentation data from a Babylon engine
@@ -27,7 +27,7 @@ object instrumentationIndexMod {
   @JSImport("babylonjs/Instrumentation/index", "SceneInstrumentation")
   @js.native
   open class SceneInstrumentation protected ()
-    extends typings.babylonjs.sceneInstrumentationMod.SceneInstrumentation {
+    extends typings.babylonjs.instrumentationSceneInstrumentationMod.SceneInstrumentation {
     /**
       * Instantiates a new scene instrumentation.
       * This class can be used to get instrumentation data from a Babylon engine
@@ -43,5 +43,5 @@ object instrumentationIndexMod {
   @JSImport("babylonjs/Instrumentation/index", "_TimeToken")
   @js.native
   open class TimeToken ()
-    extends typings.babylonjs.timeTokenMod.TimeToken
+    extends typings.babylonjs.instrumentationTimeTokenMod.TimeToken
 }

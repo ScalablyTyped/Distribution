@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "DiscreteInterpolant")
 @js.native
 open class DiscreteInterpolant protected ()
-  extends typings.three.threeMod.DiscreteInterpolant {
+  extends typings.three.srcThreeMod.DiscreteInterpolant {
   def this(parameterPositions: Any, samplesValues: Any, sampleSize: Double) = this()
   def this(parameterPositions: Any, samplesValues: Any, sampleSize: Double, resultBuffer: Any) = this()
 }

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "NothingToPasteError")
 @js.native
 open class NothingToPasteError ()
-  extends typings.hyperformula.errorsMod.NothingToPasteError
+  extends typings.hyperformula.typingsErrorsMod.NothingToPasteError

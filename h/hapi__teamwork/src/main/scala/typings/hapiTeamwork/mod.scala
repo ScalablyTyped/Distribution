@@ -83,7 +83,15 @@ object mod {
   }
   object Team {
     
-    type ElementOf[T] = T
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      T extends std.Array<infer E> ? E : T
+      }}}
+      */
+    @js.native
+    trait ElementOf[T] extends StObject
     
     trait Options extends StObject {
       

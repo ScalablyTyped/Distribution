@@ -135,9 +135,9 @@ object ojvalidationDatetimeMod {
     }
   }
   
-  @JSImport("@oracle/oraclejet/ojvalidation-datetime", "DateTimeConverter")
+  /* note: abstract class */ @JSImport("@oracle/oraclejet/ojvalidation-datetime", "DateTimeConverter")
   @js.native
-  abstract class DateTimeConverter ()
+  open class DateTimeConverter ()
     extends StObject
        with Converter[String] {
     

@@ -1,7 +1,7 @@
 package typings.carbonComponents.mod
 
 import typings.carbonComponents.anon.PartialFloatingMenuOption
-import typings.carbonComponents.floatingMenuMod.FloatingMenuOptions
+import typings.carbonComponents.componentsFloatingMenuFloatingMenuMod.FloatingMenuOptions
 import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "FloatingMenu")
 @js.native
 open class FloatingMenu protected ()
-  extends typings.carbonComponents.componentsMod.FloatingMenu {
+  extends typings.carbonComponents.globalsJsComponentsMod.FloatingMenu {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialFloatingMenuOption) = this()
 }

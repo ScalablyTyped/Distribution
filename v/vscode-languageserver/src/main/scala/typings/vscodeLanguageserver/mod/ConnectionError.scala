@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ConnectionError protected ()
   extends typings.vscodeLanguageserverProtocol.mod.ConnectionError {
-  def this(code: typings.vscodeJsonrpc.connectionMod.ConnectionErrors, message: String) = this()
+  def this(code: typings.vscodeJsonrpc.libCommonConnectionMod.ConnectionErrors, message: String) = this()
 }

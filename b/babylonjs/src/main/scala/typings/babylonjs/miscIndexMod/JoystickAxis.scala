@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object JoystickAxis extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.virtualJoystickMod.JoystickAxis & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.miscVirtualJoystickMod.JoystickAxis & Double] = js.native
   
-  /* 0 */ val X: typings.babylonjs.virtualJoystickMod.JoystickAxis.X & Double = js.native
+  /* 0 */ val X: typings.babylonjs.miscVirtualJoystickMod.JoystickAxis.X & Double = js.native
   
-  /* 1 */ val Y: typings.babylonjs.virtualJoystickMod.JoystickAxis.Y & Double = js.native
+  /* 1 */ val Y: typings.babylonjs.miscVirtualJoystickMod.JoystickAxis.Y & Double = js.native
   
-  /* 2 */ val Z: typings.babylonjs.virtualJoystickMod.JoystickAxis.Z & Double = js.native
+  /* 2 */ val Z: typings.babylonjs.miscVirtualJoystickMod.JoystickAxis.Z & Double = js.native
 }

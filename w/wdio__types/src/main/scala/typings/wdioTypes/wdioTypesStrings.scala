@@ -1,13 +1,13 @@
 package typings.wdioTypes
 
-import typings.wdioTypes.capabilitiesMod.FirefoxLogLevels
-import typings.wdioTypes.capabilitiesMod.LoggingPreferenceType
-import typings.wdioTypes.capabilitiesMod.MoonMobileDeviceOrientation
-import typings.wdioTypes.capabilitiesMod.PageLoadingStrategy
-import typings.wdioTypes.capabilitiesMod.ProxyTypes
-import typings.wdioTypes.optionsMod.SauceRegions
-import typings.wdioTypes.optionsMod.SupportedProtocols
-import typings.wdioTypes.optionsMod.WebDriverLogTypes
+import typings.wdioTypes.buildCapabilitiesMod.FirefoxLogLevels
+import typings.wdioTypes.buildCapabilitiesMod.LoggingPreferenceType
+import typings.wdioTypes.buildCapabilitiesMod.MoonMobileDeviceOrientation
+import typings.wdioTypes.buildCapabilitiesMod.PageLoadingStrategy
+import typings.wdioTypes.buildCapabilitiesMod.ProxyTypes
+import typings.wdioTypes.buildOptionsMod.SauceRegions
+import typings.wdioTypes.buildOptionsMod.SupportedProtocols
+import typings.wdioTypes.buildOptionsMod.WebDriverLogTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,10 +29,6 @@ object wdioTypesStrings {
     extends StObject
        with LoggingPreferenceType
   inline def CONFIG: CONFIG = "CONFIG".asInstanceOf[CONFIG]
-  
-  @js.native
-  sealed trait Definition extends StObject
-  inline def Definition: Definition = "Definition".asInstanceOf[Definition]
   
   @js.native
   sealed trait `DotSlashprotocol-stub`

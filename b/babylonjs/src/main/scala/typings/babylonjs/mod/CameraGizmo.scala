@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param gizmoLayer The utility layer the gizmo will be added to
   */
 open class CameraGizmo ()
-  extends typings.babylonjs.legacyMod.CameraGizmo {
-  def this(gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer) = this()
+  extends typings.babylonjs.legacyLegacyMod.CameraGizmo {
+  def this(gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer) = this()
 }
 /* static members */
 object CameraGizmo {

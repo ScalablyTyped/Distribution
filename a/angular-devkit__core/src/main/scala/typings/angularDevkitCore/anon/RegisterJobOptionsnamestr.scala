@@ -1,7 +1,7 @@
 package typings.angularDevkitCore.anon
 
-import typings.angularDevkitCore.jobsApiMod.JobName
-import typings.angularDevkitCore.schemaSchemaMod.JsonSchema
+import typings.angularDevkitCore.srcExperimentalJobsApiMod.JobName
+import typings.angularDevkitCore.srcJsonSchemaSchemaMod.JsonSchema
 import typings.angularDevkitCore.srcUtilsMod.DeepReadonly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

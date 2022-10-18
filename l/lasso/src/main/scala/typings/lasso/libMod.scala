@@ -1,10 +1,10 @@
 package typings.lasso
 
-import typings.lasso.lassoMod.LassoConfig
-import typings.lasso.lassoMod.LassoPage
-import typings.lasso.lassoMod.LassoResource
-import typings.lasso.lassoMod.default
-import typings.lasso.writersMod.Writer
+import typings.lasso.libLassoMod.LassoConfig
+import typings.lasso.libLassoMod.LassoPage
+import typings.lasso.libLassoMod.LassoResource
+import typings.lasso.libLassoMod.default
+import typings.lasso.libWritersMod.Writer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,7 +87,7 @@ object libMod {
     
     inline def createTransformer(
       unfilteredTransforms: js.Array[Any],
-      lassoContext: typings.lasso.lassoContextMod.default,
+      lassoContext: typings.lasso.libLassoContextMod.default,
       callback: js.Function2[/* err */ js.Error | Null, /* result */ js.UndefOr[Any], Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(unfilteredTransforms.asInstanceOf[js.Any], lassoContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }

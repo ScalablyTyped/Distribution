@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/hub-extension" : "2.2.6"
+      "@jupyterlab/hub-extension" : "3.4.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/hub-extension" : "2.2.6"
+      "@jupyterlab/hub-extension" : "3.4.8"
     }
   ],
   "compile-devDependencies" : [

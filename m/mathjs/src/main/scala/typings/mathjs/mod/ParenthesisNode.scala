@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ParenthesisNode[TContent /* <: MathNode */]
   extends StObject
-     with MathNodeCommon {
+     with MathNode {
   
   var content: TContent = js.native
   

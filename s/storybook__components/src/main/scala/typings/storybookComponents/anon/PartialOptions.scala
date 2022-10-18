@@ -1,10 +1,10 @@
 package typings.storybookComponents.anon
 
 import typings.std.Element
-import typings.storybookComponents.popperjsCoreLibEnumsMod.Boundary
-import typings.storybookComponents.popperjsCoreLibEnumsMod.Context
-import typings.storybookComponents.popperjsCoreLibEnumsMod.RootBoundary
-import typings.storybookComponents.popperjsCoreLibTypesMod.Padding
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Boundary
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Context
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.RootBoundary
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.Padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,9 @@ trait PartialOptions extends StObject {
   
   var padding: js.UndefOr[Padding] = js.undefined
   
-  var placement: js.UndefOr[typings.storybookComponents.popperjsCoreLibEnumsMod.Placement] = js.undefined
+  var placement: js.UndefOr[
+    typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement
+  ] = js.undefined
   
   var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
 }
@@ -51,7 +53,7 @@ object PartialOptions {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPlacement(value: typings.storybookComponents.popperjsCoreLibEnumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     

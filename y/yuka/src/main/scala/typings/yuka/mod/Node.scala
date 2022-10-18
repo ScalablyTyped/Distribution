@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [index=-1] - The unique index of this node.
   */
 open class Node ()
-  extends typings.yuka.yukaMod.Node {
+  extends typings.yuka.srcYukaMod.Node {
   def this(index: Double) = this()
 }

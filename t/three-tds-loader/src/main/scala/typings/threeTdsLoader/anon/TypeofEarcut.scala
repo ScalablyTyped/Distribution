@@ -1,6 +1,6 @@
 package typings.threeTdsLoader.anon
 
-import typings.three.threeMod.Triangle
+import typings.three.srcThreeMod.Triangle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

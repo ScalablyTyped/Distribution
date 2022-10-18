@@ -31,13 +31,13 @@ trait TrackedObjects extends StObject {
   
   /**
     * Release the memory associated with an object that was previously added to this collection.
-    * Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them.
+    * Having many tracked objects slows down the Office application, so please remember to free any objects you add, once you're done using them.
     * You will need to call `context.sync()` before the memory release takes effect.
     */
   def remove(objects: js.Array[ClientObject]): Unit = js.native
   /**
     * Release the memory associated with an object that was previously added to this collection.
-    * Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them.
+    * Having many tracked objects slows down the Office application, so please remember to free any objects you add, once you're done using them.
     * You will need to call `context.sync()` before the memory release takes effect.
     */
   def remove(`object`: ClientObject): Unit = js.native

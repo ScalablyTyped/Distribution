@@ -1,10 +1,10 @@
 package typings.reactRange
 
 import typings.react.mod.CSSProperties
-import typings.reactRange.rangeMod.default
-import typings.reactRange.typesMod.Direction
-import typings.reactRange.typesMod.IProps
-import typings.reactRange.typesMod.ITrackBackground
+import typings.reactRange.libRangeMod.default
+import typings.reactRange.libTypesMod.Direction
+import typings.reactRange.libTypesMod.IProps
+import typings.reactRange.libTypesMod.ITrackBackground
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,15 +20,15 @@ object mod {
   object Direction extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.reactRange.typesMod.Direction & String] = js.native
+    def apply(value: String): js.UndefOr[typings.reactRange.libTypesMod.Direction & String] = js.native
     
-    /* "to bottom" */ val Down: typings.reactRange.typesMod.Direction.Down & String = js.native
+    /* "to bottom" */ val Down: typings.reactRange.libTypesMod.Direction.Down & String = js.native
     
-    /* "to left" */ val Left: typings.reactRange.typesMod.Direction.Left & String = js.native
+    /* "to left" */ val Left: typings.reactRange.libTypesMod.Direction.Left & String = js.native
     
-    /* "to right" */ val Right: typings.reactRange.typesMod.Direction.Right & String = js.native
+    /* "to right" */ val Right: typings.reactRange.libTypesMod.Direction.Right & String = js.native
     
-    /* "to top" */ val Up: typings.reactRange.typesMod.Direction.Up & String = js.native
+    /* "to top" */ val Up: typings.reactRange.libTypesMod.Direction.Up & String = js.native
   }
   
   @JSImport("react-range", "Range")

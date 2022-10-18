@@ -15,35 +15,51 @@ open class QuestionDropdownModel protected () extends QuestionSelectBase {
   var allowClear: Boolean = js.native
   
   /*
-    * Dropdown auto complete
+    * An [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) attribute value for the underlying `<input>` element.
     */
   def autoComplete: String = js.native
   def autoComplete_=(`val`: String): Unit = js.native
   
   /*
-    * Use this and choicesMax property to automatically add choices. For example choicesMin = 1 and choicesMax = 10 will generate ten additional choices from 1 to 10.
+    * Use the `choicesMin`, `choicesMax`, and `choicesStep` properties to generate choice items automatically. For example, the configuration below generates three choice items: [10, 20, 30].
+    * 
+    * ```js
+    * "choicesMin": 10,
+    * "choicesMax": 30
+    * "choicesStep": 10
+    * ```
     */
   def choicesMax: Double = js.native
   def choicesMax_=(`val`: Double): Unit = js.native
   
   /*
-    * Use this and choicesMax property to automatically add choices. For example choicesMin = 1 and choicesMax = 10 will generate ten additional choices from 1 to 10.
+    * Use the `choicesMin`, `choicesMax`, and `choicesStep` properties to generate choice items automatically. For example, the configuration below generates three choice items: [10, 20, 30].
+    * 
+    * ```js
+    * "choicesMin": 10,
+    * "choicesMax": 30
+    * "choicesStep": 10
+    * ```
     */
   def choicesMin: Double = js.native
   def choicesMin_=(`val`: Double): Unit = js.native
   
   /*
-    * The default value is 1. It tells the value of the iterator between choicesMin and choicesMax properties.
-    * If choicesMin = 10, choicesMax = 30 and choicesStep = 10 then you will have only three additional choices: [10, 20, 30].
+    * Use the `choicesMin`, `choicesMax`, and `choicesStep` properties to generate choice items automatically. For example, the configuration below generates three choice items: [10, 20, 30].
+    * 
+    * ```js
+    * "choicesMin": 10,
+    * "choicesMax": 30
+    * "choicesStep": 10
+    * ```
+    * 
+    * The default value of the `choicesStep` property is 1.
     */
   def choicesStep: Double = js.native
   def choicesStep_=(`val`: Double): Unit = js.native
   
-  /*
-    * The clean files button caption.
-    */
-  def cleanButtonCaption: String = js.native
-  def cleanButtonCaption_=(`val`: String): Unit = js.native
+  def cleanCaption: String = js.native
+  def cleanCaption_=(`val`: String): Unit = js.native
   
   var dropdownListModel: DropdownListModel = js.native
   
@@ -51,14 +67,11 @@ open class QuestionDropdownModel protected () extends QuestionSelectBase {
   
   def getInputId(): String = js.native
   
+  def inputFieldComponentName: String = js.native
+  
   var inputHasValue: Boolean = js.native
   
-  /*
-    * The name of a component used to render drop-down menu items.
-    */
-  var itemComponent: String = js.native
-  
-  def locCleanButtonCaption: LocalizableString = js.native
+  def locCleanCaption: LocalizableString = js.native
   
   def locPlaceholder: LocalizableString = js.native
   
@@ -76,7 +89,7 @@ open class QuestionDropdownModel protected () extends QuestionSelectBase {
   def optionsCaption_=(`val`: String): Unit = js.native
   
   /*
-    * A text displayed in the input field when it doesn't have a value.
+    * A placeholder for the input field.
     */
   def placeholder: String = js.native
   def placeholder_=(`val`: String): Unit = js.native
@@ -94,8 +107,12 @@ open class QuestionDropdownModel protected () extends QuestionSelectBase {
   
   def selectedItemLocText: LocalizableString = js.native
   
+  def showInputFieldComponent: Boolean = js.native
+  
   def showOptionsCaption: Boolean = js.native
   def showOptionsCaption_=(`val`: Boolean): Unit = js.native
+  
+  def showSelectedItemLocText: Boolean = js.native
   
   def updateReadOnlyText(): Unit = js.native
 }

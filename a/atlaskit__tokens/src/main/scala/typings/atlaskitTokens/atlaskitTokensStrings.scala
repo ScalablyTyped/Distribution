@@ -1,13 +1,13 @@
 package typings.atlaskitTokens
 
-import typings.atlaskitTokens.palettesLegacyPaletteMod.PaletteValues
-import typings.atlaskitTokens.renameMappingMod._Token
-import typings.atlaskitTokens.typesInternalMod.InternalTokenIds
-import typings.atlaskitTokens.typesMod.ActiveTokens
-import typings.atlaskitTokens.typesTypesMod.Groups
-import typings.atlaskitTokens.typesTypesMod.PaletteCategory
-import typings.atlaskitTokens.typesTypesMod.Themes
-import typings.atlaskitTokens.typesTypesMod.ThemesLongName
+import typings.atlaskitTokens.distTypesArtifactsRenameMappingMod._Token
+import typings.atlaskitTokens.distTypesArtifactsTypesInternalMod.InternalTokenIds
+import typings.atlaskitTokens.distTypesArtifactsTypesMod.ActiveTokens
+import typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+import typings.atlaskitTokens.distTypesTypesMod.Groups
+import typings.atlaskitTokens.distTypesTypesMod.PaletteCategory
+import typings.atlaskitTokens.distTypesTypesMod.Themes
+import typings.atlaskitTokens.distTypesTypesMod.ThemesLongName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1202,332 +1202,332 @@ object atlaskitTokensStrings {
   sealed trait B100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def B100: B100 = "B100".asInstanceOf[B100]
   
   @js.native
   sealed trait B1000
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def B1000: B1000 = "B1000".asInstanceOf[B1000]
   
   @js.native
   sealed trait B200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def B200: B200 = "B200".asInstanceOf[B200]
   
   @js.native
   sealed trait B300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def B300: B300 = "B300".asInstanceOf[B300]
   
   @js.native
   sealed trait B400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def B400: B400 = "B400".asInstanceOf[B400]
   
   @js.native
   sealed trait B50
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def B50: B50 = "B50".asInstanceOf[B50]
   
   @js.native
   sealed trait B500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def B500: B500 = "B500".asInstanceOf[B500]
   
   @js.native
   sealed trait B600
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def B600: B600 = "B600".asInstanceOf[B600]
   
   @js.native
   sealed trait B700
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def B700: B700 = "B700".asInstanceOf[B700]
   
   @js.native
   sealed trait B75
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def B75: B75 = "B75".asInstanceOf[B75]
   
   @js.native
   sealed trait B800
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def B800: B800 = "B800".asInstanceOf[B800]
   
   @js.native
   sealed trait B900
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def B900: B900 = "B900".asInstanceOf[B900]
   
   @js.native
   sealed trait `DN-100`
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def `DN-100`: `DN-100` = "DN-100".asInstanceOf[`DN-100`]
   
   @js.native
   sealed trait `DN-100A`
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def `DN-100A`: `DN-100A` = "DN-100A".asInstanceOf[`DN-100A`]
   
   @js.native
   sealed trait DN0
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN0: DN0 = "DN0".asInstanceOf[DN0]
   
   @js.native
   sealed trait DN10
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN10: DN10 = "DN10".asInstanceOf[DN10]
   
   @js.native
   sealed trait DN100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN100: DN100 = "DN100".asInstanceOf[DN100]
   
   @js.native
   sealed trait DN1000
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN1000: DN1000 = "DN1000".asInstanceOf[DN1000]
   
   @js.native
   sealed trait DN100A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN100A: DN100A = "DN100A".asInstanceOf[DN100A]
   
   @js.native
   sealed trait DN10A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN10A: DN10A = "DN10A".asInstanceOf[DN10A]
   
   @js.native
   sealed trait DN1100
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN1100: DN1100 = "DN1100".asInstanceOf[DN1100]
   
   @js.native
   sealed trait DN20
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN20: DN20 = "DN20".asInstanceOf[DN20]
   
   @js.native
   sealed trait DN200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN200: DN200 = "DN200".asInstanceOf[DN200]
   
   @js.native
   sealed trait DN200A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN200A: DN200A = "DN200A".asInstanceOf[DN200A]
   
   @js.native
   sealed trait DN20A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN20A: DN20A = "DN20A".asInstanceOf[DN20A]
   
   @js.native
   sealed trait DN30
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN30: DN30 = "DN30".asInstanceOf[DN30]
   
   @js.native
   sealed trait DN300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN300: DN300 = "DN300".asInstanceOf[DN300]
   
   @js.native
   sealed trait DN300A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN300A: DN300A = "DN300A".asInstanceOf[DN300A]
   
   @js.native
   sealed trait DN30A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN30A: DN30A = "DN30A".asInstanceOf[DN30A]
   
   @js.native
   sealed trait DN40
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN40: DN40 = "DN40".asInstanceOf[DN40]
   
   @js.native
   sealed trait DN400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN400: DN400 = "DN400".asInstanceOf[DN400]
   
   @js.native
   sealed trait DN400A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN400A: DN400A = "DN400A".asInstanceOf[DN400A]
   
   @js.native
   sealed trait DN40A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN40A: DN40A = "DN40A".asInstanceOf[DN40A]
   
   @js.native
   sealed trait DN50
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN50: DN50 = "DN50".asInstanceOf[DN50]
   
   @js.native
   sealed trait DN500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN500: DN500 = "DN500".asInstanceOf[DN500]
   
   @js.native
   sealed trait DN500A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN500A: DN500A = "DN500A".asInstanceOf[DN500A]
   
   @js.native
   sealed trait DN50A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN50A: DN50A = "DN50A".asInstanceOf[DN50A]
   
   @js.native
   sealed trait DN60
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN60: DN60 = "DN60".asInstanceOf[DN60]
   
   @js.native
   sealed trait DN600
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN600: DN600 = "DN600".asInstanceOf[DN600]
   
   @js.native
   sealed trait DN600A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN600A: DN600A = "DN600A".asInstanceOf[DN600A]
   
   @js.native
   sealed trait DN60A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN60A: DN60A = "DN60A".asInstanceOf[DN60A]
   
   @js.native
   sealed trait DN70
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN70: DN70 = "DN70".asInstanceOf[DN70]
   
   @js.native
   sealed trait DN700
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN700: DN700 = "DN700".asInstanceOf[DN700]
   
   @js.native
   sealed trait DN700A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN700A: DN700A = "DN700A".asInstanceOf[DN700A]
   
   @js.native
   sealed trait DN70A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN70A: DN70A = "DN70A".asInstanceOf[DN70A]
   
   @js.native
   sealed trait DN80
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN80: DN80 = "DN80".asInstanceOf[DN80]
   
   @js.native
   sealed trait DN800
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN800: DN800 = "DN800".asInstanceOf[DN800]
   
   @js.native
   sealed trait DN800A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN800A: DN800A = "DN800A".asInstanceOf[DN800A]
   
   @js.native
   sealed trait DN80A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN80A: DN80A = "DN80A".asInstanceOf[DN80A]
   
   @js.native
   sealed trait DN90
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN90: DN90 = "DN90".asInstanceOf[DN90]
   
   @js.native
   sealed trait DN900
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN900: DN900 = "DN900".asInstanceOf[DN900]
   
   @js.native
   sealed trait DN90A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN90A: DN90A = "DN90A".asInstanceOf[DN90A]
   
   @js.native
@@ -1535,84 +1535,80 @@ object atlaskitTokensStrings {
   inline def DROP_SHADOW: DROP_SHADOW = "DROP_SHADOW".asInstanceOf[DROP_SHADOW]
   
   @js.native
-  sealed trait DeepOmit extends StObject
-  inline def DeepOmit: DeepOmit = "DeepOmit".asInstanceOf[DeepOmit]
-  
-  @js.native
   sealed trait G100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def G100: G100 = "G100".asInstanceOf[G100]
   
   @js.native
   sealed trait G1000
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def G1000: G1000 = "G1000".asInstanceOf[G1000]
   
   @js.native
   sealed trait G200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def G200: G200 = "G200".asInstanceOf[G200]
   
   @js.native
   sealed trait G300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def G300: G300 = "G300".asInstanceOf[G300]
   
   @js.native
   sealed trait G400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def G400: G400 = "G400".asInstanceOf[G400]
   
   @js.native
   sealed trait G50
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def G50: G50 = "G50".asInstanceOf[G50]
   
   @js.native
   sealed trait G500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def G500: G500 = "G500".asInstanceOf[G500]
   
   @js.native
   sealed trait G600
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def G600: G600 = "G600".asInstanceOf[G600]
   
   @js.native
   sealed trait G700
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def G700: G700 = "G700".asInstanceOf[G700]
   
   @js.native
   sealed trait G75
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def G75: G75 = "G75".asInstanceOf[G75]
   
   @js.native
   sealed trait G800
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def G800: G800 = "G800".asInstanceOf[G800]
   
   @js.native
   sealed trait G900
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def G900: G900 = "G900".asInstanceOf[G900]
   
   @js.native
@@ -1620,310 +1616,306 @@ object atlaskitTokensStrings {
   inline def INNER_SHADOW: INNER_SHADOW = "INNER_SHADOW".asInstanceOf[INNER_SHADOW]
   
   @js.native
-  sealed trait Id extends StObject
-  inline def Id: Id = "Id".asInstanceOf[Id]
-  
-  @js.native
   sealed trait M100
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def M100: M100 = "M100".asInstanceOf[M100]
   
   @js.native
   sealed trait M1000
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def M1000: M1000 = "M1000".asInstanceOf[M1000]
   
   @js.native
   sealed trait M200
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def M200: M200 = "M200".asInstanceOf[M200]
   
   @js.native
   sealed trait M300
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def M300: M300 = "M300".asInstanceOf[M300]
   
   @js.native
   sealed trait M400
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def M400: M400 = "M400".asInstanceOf[M400]
   
   @js.native
   sealed trait M500
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def M500: M500 = "M500".asInstanceOf[M500]
   
   @js.native
   sealed trait M600
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def M600: M600 = "M600".asInstanceOf[M600]
   
   @js.native
   sealed trait M700
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def M700: M700 = "M700".asInstanceOf[M700]
   
   @js.native
   sealed trait M800
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def M800: M800 = "M800".asInstanceOf[M800]
   
   @js.native
   sealed trait M900
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def M900: M900 = "M900".asInstanceOf[M900]
   
   @js.native
   sealed trait N0
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N0: N0 = "N0".asInstanceOf[N0]
   
   @js.native
   sealed trait N10
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N10: N10 = "N10".asInstanceOf[N10]
   
   @js.native
   sealed trait N100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N100: N100 = "N100".asInstanceOf[N100]
   
   @js.native
   sealed trait N1000
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def N1000: N1000 = "N1000".asInstanceOf[N1000]
   
   @js.native
   sealed trait N100A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N100A: N100A = "N100A".asInstanceOf[N100A]
   
   @js.native
   sealed trait N10A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N10A: N10A = "N10A".asInstanceOf[N10A]
   
   @js.native
   sealed trait N1100
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def N1100: N1100 = "N1100".asInstanceOf[N1100]
   
   @js.native
   sealed trait N20
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N20: N20 = "N20".asInstanceOf[N20]
   
   @js.native
   sealed trait N200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N200: N200 = "N200".asInstanceOf[N200]
   
   @js.native
   sealed trait N200A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N200A: N200A = "N200A".asInstanceOf[N200A]
   
   @js.native
   sealed trait N20A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N20A: N20A = "N20A".asInstanceOf[N20A]
   
   @js.native
   sealed trait N30
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N30: N30 = "N30".asInstanceOf[N30]
   
   @js.native
   sealed trait N300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N300: N300 = "N300".asInstanceOf[N300]
   
   @js.native
   sealed trait N300A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N300A: N300A = "N300A".asInstanceOf[N300A]
   
   @js.native
   sealed trait N30A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N30A: N30A = "N30A".asInstanceOf[N30A]
   
   @js.native
   sealed trait N40
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N40: N40 = "N40".asInstanceOf[N40]
   
   @js.native
   sealed trait N400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N400: N400 = "N400".asInstanceOf[N400]
   
   @js.native
   sealed trait N400A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N400A: N400A = "N400A".asInstanceOf[N400A]
   
   @js.native
   sealed trait N40A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N40A: N40A = "N40A".asInstanceOf[N40A]
   
   @js.native
   sealed trait N50
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N50: N50 = "N50".asInstanceOf[N50]
   
   @js.native
   sealed trait N500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N500: N500 = "N500".asInstanceOf[N500]
   
   @js.native
   sealed trait N500A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N500A: N500A = "N500A".asInstanceOf[N500A]
   
   @js.native
   sealed trait N50A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N50A: N50A = "N50A".asInstanceOf[N50A]
   
   @js.native
   sealed trait N60
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N60: N60 = "N60".asInstanceOf[N60]
   
   @js.native
   sealed trait N600
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N600: N600 = "N600".asInstanceOf[N600]
   
   @js.native
   sealed trait N600A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N600A: N600A = "N600A".asInstanceOf[N600A]
   
   @js.native
   sealed trait N60A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N60A: N60A = "N60A".asInstanceOf[N60A]
   
   @js.native
   sealed trait N70
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N70: N70 = "N70".asInstanceOf[N70]
   
   @js.native
   sealed trait N700
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N700: N700 = "N700".asInstanceOf[N700]
   
   @js.native
   sealed trait N700A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N700A: N700A = "N700A".asInstanceOf[N700A]
   
   @js.native
   sealed trait N70A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N70A: N70A = "N70A".asInstanceOf[N70A]
   
   @js.native
   sealed trait N80
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N80: N80 = "N80".asInstanceOf[N80]
   
   @js.native
   sealed trait N800
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N800: N800 = "N800".asInstanceOf[N800]
   
   @js.native
   sealed trait N800A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N800A: N800A = "N800A".asInstanceOf[N800A]
   
   @js.native
   sealed trait N80A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N80A: N80A = "N80A".asInstanceOf[N80A]
   
   @js.native
   sealed trait N90
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N90: N90 = "N90".asInstanceOf[N90]
   
   @js.native
   sealed trait N900
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N900: N900 = "N900".asInstanceOf[N900]
   
   @js.native
   sealed trait N90A
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N90A: N90A = "N90A".asInstanceOf[N90A]
   
   @js.native
@@ -2277,215 +2269,215 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait O100
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def O100: O100 = "O100".asInstanceOf[O100]
   
   @js.native
   sealed trait O1000
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def O1000: O1000 = "O1000".asInstanceOf[O1000]
   
   @js.native
   sealed trait O200
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def O200: O200 = "O200".asInstanceOf[O200]
   
   @js.native
   sealed trait O300
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def O300: O300 = "O300".asInstanceOf[O300]
   
   @js.native
   sealed trait O400
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def O400: O400 = "O400".asInstanceOf[O400]
   
   @js.native
   sealed trait O500
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def O500: O500 = "O500".asInstanceOf[O500]
   
   @js.native
   sealed trait O600
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def O600: O600 = "O600".asInstanceOf[O600]
   
   @js.native
   sealed trait O700
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def O700: O700 = "O700".asInstanceOf[O700]
   
   @js.native
   sealed trait O800
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def O800: O800 = "O800".asInstanceOf[O800]
   
   @js.native
   sealed trait O900
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def O900: O900 = "O900".asInstanceOf[O900]
   
   @js.native
   sealed trait P100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def P100: P100 = "P100".asInstanceOf[P100]
   
   @js.native
   sealed trait P1000
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def P1000: P1000 = "P1000".asInstanceOf[P1000]
   
   @js.native
   sealed trait P200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def P200: P200 = "P200".asInstanceOf[P200]
   
   @js.native
   sealed trait P300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def P300: P300 = "P300".asInstanceOf[P300]
   
   @js.native
   sealed trait P400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def P400: P400 = "P400".asInstanceOf[P400]
   
   @js.native
   sealed trait P50
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def P50: P50 = "P50".asInstanceOf[P50]
   
   @js.native
   sealed trait P500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def P500: P500 = "P500".asInstanceOf[P500]
   
   @js.native
   sealed trait P600
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def P600: P600 = "P600".asInstanceOf[P600]
   
   @js.native
   sealed trait P700
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def P700: P700 = "P700".asInstanceOf[P700]
   
   @js.native
   sealed trait P75
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def P75: P75 = "P75".asInstanceOf[P75]
   
   @js.native
   sealed trait P800
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def P800: P800 = "P800".asInstanceOf[P800]
   
   @js.native
   sealed trait P900
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def P900: P900 = "P900".asInstanceOf[P900]
   
   @js.native
   sealed trait R100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def R100: R100 = "R100".asInstanceOf[R100]
   
   @js.native
   sealed trait R1000
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def R1000: R1000 = "R1000".asInstanceOf[R1000]
   
   @js.native
   sealed trait R200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def R200: R200 = "R200".asInstanceOf[R200]
   
   @js.native
   sealed trait R300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def R300: R300 = "R300".asInstanceOf[R300]
   
   @js.native
   sealed trait R400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def R400: R400 = "R400".asInstanceOf[R400]
   
   @js.native
   sealed trait R50
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def R50: R50 = "R50".asInstanceOf[R50]
   
   @js.native
   sealed trait R500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def R500: R500 = "R500".asInstanceOf[R500]
   
   @js.native
   sealed trait R600
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def R600: R600 = "R600".asInstanceOf[R600]
   
   @js.native
   sealed trait R700
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def R700: R700 = "R700".asInstanceOf[R700]
   
   @js.native
   sealed trait R75
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def R75: R75 = "R75".asInstanceOf[R75]
   
   @js.native
   sealed trait R800
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def R800: R800 = "R800".asInstanceOf[R800]
   
   @js.native
   sealed trait R900
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def R900: R900 = "R900".asInstanceOf[R900]
   
   @js.native
@@ -2496,154 +2488,154 @@ object atlaskitTokensStrings {
   sealed trait T100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def T100: T100 = "T100".asInstanceOf[T100]
   
   @js.native
   sealed trait T1000
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def T1000: T1000 = "T1000".asInstanceOf[T1000]
   
   @js.native
   sealed trait T200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def T200: T200 = "T200".asInstanceOf[T200]
   
   @js.native
   sealed trait T300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def T300: T300 = "T300".asInstanceOf[T300]
   
   @js.native
   sealed trait T400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def T400: T400 = "T400".asInstanceOf[T400]
   
   @js.native
   sealed trait T50
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def T50: T50 = "T50".asInstanceOf[T50]
   
   @js.native
   sealed trait T500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def T500: T500 = "T500".asInstanceOf[T500]
   
   @js.native
   sealed trait T600
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def T600: T600 = "T600".asInstanceOf[T600]
   
   @js.native
   sealed trait T700
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def T700: T700 = "T700".asInstanceOf[T700]
   
   @js.native
   sealed trait T75
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def T75: T75 = "T75".asInstanceOf[T75]
   
   @js.native
   sealed trait T800
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def T800: T800 = "T800".asInstanceOf[T800]
   
   @js.native
   sealed trait T900
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def T900: T900 = "T900".asInstanceOf[T900]
   
   @js.native
   sealed trait Y100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def Y100: Y100 = "Y100".asInstanceOf[Y100]
   
   @js.native
   sealed trait Y1000
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def Y1000: Y1000 = "Y1000".asInstanceOf[Y1000]
   
   @js.native
   sealed trait Y200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def Y200: Y200 = "Y200".asInstanceOf[Y200]
   
   @js.native
   sealed trait Y300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def Y300: Y300 = "Y300".asInstanceOf[Y300]
   
   @js.native
   sealed trait Y400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def Y400: Y400 = "Y400".asInstanceOf[Y400]
   
   @js.native
   sealed trait Y50
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def Y50: Y50 = "Y50".asInstanceOf[Y50]
   
   @js.native
   sealed trait Y500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def Y500: Y500 = "Y500".asInstanceOf[Y500]
   
   @js.native
   sealed trait Y600
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def Y600: Y600 = "Y600".asInstanceOf[Y600]
   
   @js.native
   sealed trait Y700
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def Y700: Y700 = "Y700".asInstanceOf[Y700]
   
   @js.native
   sealed trait Y75
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def Y75: Y75 = "Y75".asInstanceOf[Y75]
   
   @js.native
   sealed trait Y800
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def Y800: Y800 = "Y800".asInstanceOf[Y800]
   
   @js.native
   sealed trait Y900
     extends StObject
-       with typings.atlaskitTokens.palettesPaletteMod.PaletteValues
+       with PaletteValues
   inline def Y900: Y900 = "Y900".asInstanceOf[Y900]
   
   @js.native
@@ -5179,7 +5171,7 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait transparent
     extends StObject
-       with PaletteValues
+       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def transparent: transparent = "transparent".asInstanceOf[transparent]
   
   @js.native

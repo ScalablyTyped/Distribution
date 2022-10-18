@@ -9,7 +9,7 @@ object fnReflectGetPrototypeOfMod {
   /* was `typeof core.Reflect.getPrototypeOf` */
   inline def apply(target: Any): Any = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  @JSImport("core-js/library/fn/reflect/get-prototype-of", JSImport.Namespace)
+  @JSImport("core-js/fn/reflect/get-prototype-of", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
 }

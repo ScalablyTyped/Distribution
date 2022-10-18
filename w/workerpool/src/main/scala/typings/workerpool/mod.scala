@@ -1,7 +1,6 @@
 package typings.workerpool
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.node.childProcessMod.ForkOptions
 import typings.std.Error
 import typings.std.Parameters
@@ -112,9 +111,15 @@ object mod {
   
   inline def workerEmit(payload: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("workerEmit")(payload.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type Proxy[T /* <: StringDictionary[js.Function1[/* repeated */ Any, Any]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ M in keyof T ]: (args : std.Parameters<T[M]>): workerpool.workerpool.Promise<std.ReturnType<T[M]>, std.Error>}
-    */ typings.workerpool.workerpoolStrings.Proxy & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ M in keyof T ]: (args : std.Parameters<T[M]>): workerpool.workerpool.Promise<std.ReturnType<T[M]>, std.Error>}
+    }}}
+    */
+  @js.native
+  trait Proxy[T /* <: StringDictionary[js.Function1[/* repeated */ Any, Any]] */] extends StObject
   
   @js.native
   trait WorkerPool extends StObject {

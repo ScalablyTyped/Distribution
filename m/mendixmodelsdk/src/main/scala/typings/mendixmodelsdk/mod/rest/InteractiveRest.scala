@@ -1,8 +1,8 @@
 package typings.mendixmodelsdk.mod.rest
 
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
-import typings.mendixmodelsdk.restMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenRestMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "rest.InteractiveRest")
 @js.native
 open class InteractiveRest protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.rest.InteractiveRest {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.rest.InteractiveRest {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object InteractiveRest {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  inline def createIn(container: IFolderBase): typings.mendixmodelsdk.restMod.rest.InteractiveRest = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.InteractiveRest]
+  inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenRestMod.rest.InteractiveRest = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.InteractiveRest]
   
   /* static member */
   @JSImport("mendixmodelsdk", "rest.InteractiveRest.structureTypeName")

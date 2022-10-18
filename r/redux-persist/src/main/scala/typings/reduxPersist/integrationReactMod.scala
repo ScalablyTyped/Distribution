@@ -2,7 +2,7 @@ package typings.reduxPersist
 
 import typings.react.mod.PureComponent
 import typings.react.mod.ReactNode
-import typings.reduxPersist.typesMod.Persistor
+import typings.reduxPersist.esTypesMod.Persistor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

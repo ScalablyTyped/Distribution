@@ -3,7 +3,7 @@ package typings.antvG2plot.anon
 import typings.antvG2plot.antvG2plotStrings.italic
 import typings.antvG2plot.antvG2plotStrings.normal
 import typings.antvG2plot.antvG2plotStrings.oblique
-import typings.antvG2plot.typesCommonMod.Datum
+import typings.antvG2plot.libTypesCommonMod.Datum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +33,7 @@ trait PartialTagxnumberynumber extends StObject {
   
   var value: js.UndefOr[Double] = js.undefined
   
-  var weight: js.UndefOr[typings.antvG2plot.wordCloudTypesMod.FontWeight] = js.undefined
+  var weight: js.UndefOr[typings.antvG2plot.libPlotsWordCloudTypesMod.FontWeight] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
   
@@ -94,7 +94,7 @@ object PartialTagxnumberynumber {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setWeight(value: typings.antvG2plot.wordCloudTypesMod.FontWeight): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: typings.antvG2plot.libPlotsWordCloudTypesMod.FontWeight): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     

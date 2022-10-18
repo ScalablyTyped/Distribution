@@ -1,7 +1,6 @@
 package typings.paypalCheckoutServerSdk.mod
 
-import typings.paypalCheckoutServerSdk.accessTokenMod.AccessTokenOptions
-import typings.paypalPaypalhttp.mod.Environment
+import typings.paypalCheckoutServerSdk.libCoreAccessTokenMod.AccessTokenOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +18,9 @@ object core {
   @js.native
   open class AccessTokenRequest protected ()
     extends typings.paypalCheckoutServerSdk.libLibMod.core.AccessTokenRequest {
-    def this(environment: typings.paypalCheckoutServerSdk.paypalEnvironmentMod.PayPalEnvironment) = this()
+    def this(environment: typings.paypalCheckoutServerSdk.libCorePaypalEnvironmentMod.PayPalEnvironment) = this()
     def this(
-      environment: typings.paypalCheckoutServerSdk.paypalEnvironmentMod.PayPalEnvironment,
+      environment: typings.paypalCheckoutServerSdk.libCorePaypalEnvironmentMod.PayPalEnvironment,
       refreshToken: String
     ) = this()
   }
@@ -54,9 +53,9 @@ object core {
       * @param environment - The environment for this client
       * @param refreshToken - The refreshToken to be used to generate the access Token.
       */
-    def this(environment: typings.paypalCheckoutServerSdk.paypalEnvironmentMod.PayPalEnvironment) = this()
+    def this(environment: typings.paypalCheckoutServerSdk.libCorePaypalEnvironmentMod.PayPalEnvironment) = this()
     def this(
-      environment: typings.paypalCheckoutServerSdk.paypalEnvironmentMod.PayPalEnvironment,
+      environment: typings.paypalCheckoutServerSdk.libCorePaypalEnvironmentMod.PayPalEnvironment,
       refreshToken: String
     ) = this()
   }
@@ -69,7 +68,10 @@ object core {
       * @param environment - The environment for this request (sandbox or live)
       * @param code - The authorization code provided at the end of the user consent OAuth flow.
       */
-    def this(environment: typings.paypalCheckoutServerSdk.paypalEnvironmentMod.PayPalEnvironment, code: String) = this()
+    def this(
+      environment: typings.paypalCheckoutServerSdk.libCorePaypalEnvironmentMod.PayPalEnvironment,
+      code: String
+    ) = this()
   }
   
   @JSImport("@paypal/checkout-server-sdk", "core.SandboxEnvironment")
@@ -77,20 +79,5 @@ object core {
   open class SandboxEnvironment protected ()
     extends typings.paypalCheckoutServerSdk.libLibMod.core.SandboxEnvironment {
     def this(clientId: String, clientSecret: String) = this()
-  }
-  
-  @JSImport("@paypal/checkout-server-sdk", "core.TokenCache")
-  @js.native
-  open class TokenCache ()
-    extends typings.paypalCheckoutServerSdk.libLibMod.core.TokenCache
-  object TokenCache {
-    
-    @JSImport("@paypal/checkout-server-sdk", "core.TokenCache")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    inline def cacheForEnvironment[T /* <: Environment */](environment: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cacheForEnvironment")(environment.asInstanceOf[js.Any]).asInstanceOf[T]
-    inline def cacheForEnvironment[T /* <: Environment */](environment: T, refreshToken: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cacheForEnvironment")(environment.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any])).asInstanceOf[T]
   }
 }

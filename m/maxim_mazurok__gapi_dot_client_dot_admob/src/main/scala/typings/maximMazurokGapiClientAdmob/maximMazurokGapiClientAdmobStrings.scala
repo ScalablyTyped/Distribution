@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientAdmobStrings {
   
   @js.native
-  sealed trait ReportRow extends StObject
-  inline def ReportRow: ReportRow = "ReportRow".asInstanceOf[ReportRow]
-  
-  @js.native
   sealed trait admob extends StObject
   inline def admob: admob = "admob".asInstanceOf[admob]
   

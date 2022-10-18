@@ -7,30 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientPubsubStrings {
   
   @js.native
-  sealed trait CreateSnapshotRequest extends StObject
-  inline def CreateSnapshotRequest: CreateSnapshotRequest = "CreateSnapshotRequest".asInstanceOf[CreateSnapshotRequest]
-  
-  @js.native
-  sealed trait PubsubMessage extends StObject
-  inline def PubsubMessage: PubsubMessage = "PubsubMessage".asInstanceOf[PubsubMessage]
-  
-  @js.native
-  sealed trait PushConfig extends StObject
-  inline def PushConfig: PushConfig = "PushConfig".asInstanceOf[PushConfig]
-  
-  @js.native
-  sealed trait Snapshot extends StObject
-  inline def Snapshot: Snapshot = "Snapshot".asInstanceOf[Snapshot]
-  
-  @js.native
-  sealed trait Subscription extends StObject
-  inline def Subscription: Subscription = "Subscription".asInstanceOf[Subscription]
-  
-  @js.native
-  sealed trait Topic extends StObject
-  inline def Topic: Topic = "Topic".asInstanceOf[Topic]
-  
-  @js.native
   sealed trait pubsub extends StObject
   inline def pubsub: pubsub = "pubsub".asInstanceOf[pubsub]
   

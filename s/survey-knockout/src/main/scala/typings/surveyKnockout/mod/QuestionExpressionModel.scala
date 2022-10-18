@@ -10,20 +10,33 @@ open class QuestionExpressionModel protected () extends Question {
   def this(name: String) = this()
   
   /*
-    * Use it to display the value in the currency differen from USD. The displayStype should be set to "currency".
+    * A three-letter currency code. Applies only if the `displayStyle` property is set to `"currency"`.
+    * 
+    * Default value: "USD".
     */
   def currency: String = js.native
   def currency_=(`val`: String): Unit = js.native
   
   /*
-    * You may set this property to "decimal", "currency", "percent" or "date". If you set it to "currency", you may use the currency property to display the value in currency different from USD.
+    * Specifies a display style for the question value.
+    * 
+    * Possible values:
+    * 
+    * - `"decimal"`
+    * - `"currency"`
+    * - `"percent"`
+    * - `"date"`
+    * - `"none"` (default)
+    * 
+    * If you use the `"currency"` display style, you can also set the `currency` property to specify a currency other than USD.
     */
   def displayStyle: String = js.native
   def displayStyle_=(`val`: String): Unit = js.native
   
   /*
-    * The Expression that used to calculate the question value. You may use standard operators like +, -, * and /, squares (). Here is the example of accessing the question value {questionname}.
-    * Example: "({quantity} * {price}) * (100 - {discount}) / 100"
+    * An expression used to calculate the question value.
+    * 
+    * Refer to the following help topic for more information: [Expressions](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#expressions).
     */
   def expression: String = js.native
   
@@ -34,7 +47,7 @@ open class QuestionExpressionModel protected () extends Question {
   def expression_=(`val`: String): Unit = js.native
   
   /*
-    * Use this property to display the value in your own format. Make sure you have "{0}" substring in your string, to display the actual value.
+    * A string that formats a question value. Use `{0}` to reference the question value in the format string.
     */
   def format: String = js.native
   def format_=(`val`: String): Unit = js.native
@@ -48,13 +61,17 @@ open class QuestionExpressionModel protected () extends Question {
   def locFormat: LocalizableString = js.native
   
   /*
-    * The maximum number of fraction digits to use if displayStyle is not "none". Possible values are from 0 to 20. The default value is -1 and it means that this property is not used.
+    * The maximum number of fraction digits. Applies only if the `displayStyle` property is not `"none"`. Accepts values in the range from -1 to 20, where -1 disables the property.
+    * 
+    * Default value: -1
     */
   def maximumFractionDigits: Double = js.native
   def maximumFractionDigits_=(`val`: Double): Unit = js.native
   
   /*
-    * The minimum number of fraction digits to use if displayStyle is not "none". Possible values are from 0 to 20. The default value is -1 and it means that this property is not used.
+    * The minimum number of fraction digits. Applies only if the `displayStyle` property is not `"none"`. Accepts values in the range from -1 to 20, where -1 disables the property.
+    * 
+    * Default value: -1
     */
   def minimumFractionDigits: Double = js.native
   def minimumFractionDigits_=(`val`: Double): Unit = js.native
@@ -70,7 +87,9 @@ open class QuestionExpressionModel protected () extends Question {
   /* protected */ def updateFormatedValue(): Unit = js.native
   
   /*
-    * Determines whether to display grouping separators. The default value is true.
+    * Specifies whether to use grouping separators in number representation. Separators depend on the selected [locale](https://surveyjs.io/form-library/documentation/surveymodel#locale).
+    * 
+    * Default value: `true`
     */
   def useGrouping: Boolean = js.native
   def useGrouping_=(`val`: Boolean): Unit = js.native

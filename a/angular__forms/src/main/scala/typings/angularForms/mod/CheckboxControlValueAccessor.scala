@@ -101,7 +101,7 @@ object CheckboxControlValueAccessor {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     CheckboxControlValueAccessor, 
-    String, 
+    /* input[type=checkbox][formControlName],input[type=checkbox][formControl],input[type=checkbox][ngModel] */ String, 
     scala.Nothing, 
     js.Object, 
     js.Object, 
@@ -112,7 +112,7 @@ object CheckboxControlValueAccessor {
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       CheckboxControlValueAccessor, 
-      String, 
+      /* input[type=checkbox][formControlName],input[type=checkbox][formControl],input[type=checkbox][ngModel] */ String, 
       scala.Nothing, 
       js.Object, 
       js.Object, 

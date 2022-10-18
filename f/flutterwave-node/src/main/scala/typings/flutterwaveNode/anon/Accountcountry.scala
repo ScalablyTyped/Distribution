@@ -83,7 +83,7 @@ trait Accountcountry extends StObject {
   
   var transaction_date: String
   
-  var transactions: InfoPageinfo
+  var transactions: Info
   
   var updated_at: String
 }
@@ -127,7 +127,7 @@ object Accountcountry {
     status: String,
     transaction_count: Double,
     transaction_date: String,
-    transactions: InfoPageinfo,
+    transactions: Info,
     updated_at: String
   ): Accountcountry = {
     val __obj = js.Dynamic.literal(appfees = appfees.asInstanceOf[js.Any], bankcode = bankcode.asInstanceOf[js.Any], chargeback = chargeback.asInstanceOf[js.Any], chargeback_meta = chargeback_meta.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], cron_status = cron_status.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], disburse_message = disburse_message.asInstanceOf[js.Any], disburse_ref = disburse_ref.asInstanceOf[js.Any], due_date = due_date.asInstanceOf[js.Any], flagmessage = flagmessage.asInstanceOf[js.Any], fxdata = fxdata.asInstanceOf[js.Any], gross_amount = gross_amount.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_batch = is_batch.asInstanceOf[js.Any], is_local = is_local.asInstanceOf[js.Any], merchant_email = merchant_email.asInstanceOf[js.Any], merchant_id = merchant_id.asInstanceOf[js.Any], merchant_name = merchant_name.asInstanceOf[js.Any], merchantfees = merchantfees.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], net_amount = net_amount.asInstanceOf[js.Any], parent_id = parent_id.asInstanceOf[js.Any], processed_date = processed_date.asInstanceOf[js.Any], processor_ref = processor_ref.asInstanceOf[js.Any], refund = refund.asInstanceOf[js.Any], refund_meta = refund_meta.asInstanceOf[js.Any], settlement_account = settlement_account.asInstanceOf[js.Any], settlement_cycle = settlement_cycle.asInstanceOf[js.Any], source_bankcode = source_bankcode.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], transaction_count = transaction_count.asInstanceOf[js.Any], transaction_date = transaction_date.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
@@ -213,7 +213,7 @@ object Accountcountry {
     
     inline def setTransaction_date(value: String): Self = StObject.set(x, "transaction_date", value.asInstanceOf[js.Any])
     
-    inline def setTransactions(value: InfoPageinfo): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
+    inline def setTransactions(value: Info): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
   }

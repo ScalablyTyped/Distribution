@@ -6,49 +6,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreatedAt extends StObject {
   
-  var createdAt: String
+  var AccountId: Double
+  
+  var createdAt: Double
+  
+  var customertoken: Any
   
   var deletedAt: Any
   
-  var getpaidTransactionId: Double
+  var email: Double
+  
+  var fullName: Double
   
   var id: Double
   
-  var metaname: String
+  var phone: Double
   
-  var metavalue: String
-  
-  var updatedAt: String
+  var updatedAt: Double
 }
 object CreatedAt {
   
   inline def apply(
-    createdAt: String,
+    AccountId: Double,
+    createdAt: Double,
+    customertoken: Any,
     deletedAt: Any,
-    getpaidTransactionId: Double,
+    email: Double,
+    fullName: Double,
     id: Double,
-    metaname: String,
-    metavalue: String,
-    updatedAt: String
+    phone: Double,
+    updatedAt: Double
   ): CreatedAt = {
-    val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], deletedAt = deletedAt.asInstanceOf[js.Any], getpaidTransactionId = getpaidTransactionId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metaname = metaname.asInstanceOf[js.Any], metavalue = metavalue.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], customertoken = customertoken.asInstanceOf[js.Any], deletedAt = deletedAt.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatedAt]
   }
   
   extension [Self <: CreatedAt](x: Self) {
     
-    inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: Double): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    
+    inline def setCustomertoken(value: Any): Self = StObject.set(x, "customertoken", value.asInstanceOf[js.Any])
     
     inline def setDeletedAt(value: Any): Self = StObject.set(x, "deletedAt", value.asInstanceOf[js.Any])
     
-    inline def setGetpaidTransactionId(value: Double): Self = StObject.set(x, "getpaidTransactionId", value.asInstanceOf[js.Any])
+    inline def setEmail(value: Double): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setFullName(value: Double): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setMetaname(value: String): Self = StObject.set(x, "metaname", value.asInstanceOf[js.Any])
+    inline def setPhone(value: Double): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    inline def setMetavalue(value: String): Self = StObject.set(x, "metavalue", value.asInstanceOf[js.Any])
-    
-    inline def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: Double): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

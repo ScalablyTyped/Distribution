@@ -22,7 +22,7 @@ object objectMod {
   @JSImport("ol/Object", "ObjectEvent")
   @js.native
   open class ObjectEvent protected ()
-    extends typings.ol.eventMod.default {
+    extends typings.ol.eventsEventMod.default {
     def this(`type`: String, key: String, oldValue: Any) = this()
     
     /**

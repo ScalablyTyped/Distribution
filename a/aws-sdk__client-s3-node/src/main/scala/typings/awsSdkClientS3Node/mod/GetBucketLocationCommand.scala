@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-node", "GetBucketLocationCommand")
 @js.native
 open class GetBucketLocationCommand protected ()
-  extends typings.awsSdkClientS3Node.getBucketLocationCommandMod.GetBucketLocationCommand {
+  extends typings.awsSdkClientS3Node.commandsGetBucketLocationCommandMod.GetBucketLocationCommand {
   def this(input: GetBucketLocationInput) = this()
 }

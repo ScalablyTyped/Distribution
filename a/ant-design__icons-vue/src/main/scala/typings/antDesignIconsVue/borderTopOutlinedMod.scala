@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsBorderTopOutlinedMod.BorderTopOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object borderTopOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/BorderTopOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/BorderTopOutlined", JSImport.Default)
   @js.native
   val default: BorderTopOutlinedIconType = js.native
-  
-  @js.native
-  trait BorderTopOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_BorderTopOutlinedIconType: String = js.native
-  }
   
   type _To = BorderTopOutlinedIconType
   

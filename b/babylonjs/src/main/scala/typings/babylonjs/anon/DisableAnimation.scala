@@ -24,7 +24,7 @@ trait DisableAnimation extends StObject {
   /**
     * Override the default material of the Landing Zone
     */
-  var teleportationCircleMaterial: js.UndefOr[typings.babylonjs.materialMod.Material] = js.undefined
+  var teleportationCircleMaterial: js.UndefOr[typings.babylonjs.materialsMaterialMod.Material] = js.undefined
   
   /**
     * Fill color of the teleportation area
@@ -34,7 +34,7 @@ trait DisableAnimation extends StObject {
   /**
     * Override the default material of the torus and arrow
     */
-  var torusArrowMaterial: js.UndefOr[typings.babylonjs.materialMod.Material] = js.undefined
+  var torusArrowMaterial: js.UndefOr[typings.babylonjs.materialsMaterialMod.Material] = js.undefined
 }
 object DisableAnimation {
   
@@ -57,7 +57,7 @@ object DisableAnimation {
     
     inline def setTeleportationBorderColorUndefined: Self = StObject.set(x, "teleportationBorderColor", js.undefined)
     
-    inline def setTeleportationCircleMaterial(value: typings.babylonjs.materialMod.Material): Self = StObject.set(x, "teleportationCircleMaterial", value.asInstanceOf[js.Any])
+    inline def setTeleportationCircleMaterial(value: typings.babylonjs.materialsMaterialMod.Material): Self = StObject.set(x, "teleportationCircleMaterial", value.asInstanceOf[js.Any])
     
     inline def setTeleportationCircleMaterialUndefined: Self = StObject.set(x, "teleportationCircleMaterial", js.undefined)
     
@@ -65,7 +65,7 @@ object DisableAnimation {
     
     inline def setTeleportationFillColorUndefined: Self = StObject.set(x, "teleportationFillColor", js.undefined)
     
-    inline def setTorusArrowMaterial(value: typings.babylonjs.materialMod.Material): Self = StObject.set(x, "torusArrowMaterial", value.asInstanceOf[js.Any])
+    inline def setTorusArrowMaterial(value: typings.babylonjs.materialsMaterialMod.Material): Self = StObject.set(x, "torusArrowMaterial", value.asInstanceOf[js.Any])
     
     inline def setTorusArrowMaterialUndefined: Self = StObject.set(x, "torusArrowMaterial", js.undefined)
   }

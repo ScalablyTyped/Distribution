@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to app capture settings. */
-@JSGlobal("Windows.Media.Capture.AppCaptureManager")
+/* note: abstract class */ @JSGlobal("Windows.Media.Capture.AppCaptureManager")
 @js.native
-abstract class AppCaptureManager ()
+open class AppCaptureManager ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.AppCaptureManager
 object AppCaptureManager {

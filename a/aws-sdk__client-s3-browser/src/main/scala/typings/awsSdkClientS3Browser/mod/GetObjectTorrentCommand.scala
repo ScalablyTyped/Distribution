@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-browser", "GetObjectTorrentCommand")
 @js.native
 open class GetObjectTorrentCommand protected ()
-  extends typings.awsSdkClientS3Browser.getObjectTorrentCommandMod.GetObjectTorrentCommand {
+  extends typings.awsSdkClientS3Browser.commandsGetObjectTorrentCommandMod.GetObjectTorrentCommand {
   def this(input: GetObjectTorrentInput) = this()
 }

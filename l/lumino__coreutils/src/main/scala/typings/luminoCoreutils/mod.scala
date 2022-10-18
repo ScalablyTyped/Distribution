@@ -1,12 +1,12 @@
 package typings.luminoCoreutils
 
-import typings.luminoCoreutils.jsonMod.JSONValue
-import typings.luminoCoreutils.jsonMod.PartialJSONValue
-import typings.luminoCoreutils.jsonMod.ReadonlyJSONArray
-import typings.luminoCoreutils.jsonMod.ReadonlyJSONObject
-import typings.luminoCoreutils.jsonMod.ReadonlyJSONValue
-import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
-import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
+import typings.luminoCoreutils.typesJsonMod.JSONValue
+import typings.luminoCoreutils.typesJsonMod.PartialJSONValue
+import typings.luminoCoreutils.typesJsonMod.ReadonlyJSONArray
+import typings.luminoCoreutils.typesJsonMod.ReadonlyJSONObject
+import typings.luminoCoreutils.typesJsonMod.ReadonlyJSONValue
+import typings.luminoCoreutils.typesJsonMod.ReadonlyPartialJSONObject
+import typings.luminoCoreutils.typesJsonMod.ReadonlyPartialJSONValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,7 +89,7 @@ object mod {
   @JSImport("@lumino/coreutils", "MimeData")
   @js.native
   open class MimeData ()
-    extends typings.luminoCoreutils.indexCommonMod.MimeData
+    extends typings.luminoCoreutils.typesIndexDotcommonMod.MimeData
   
   @JSImport("@lumino/coreutils", "PromiseDelegate")
   @js.native
@@ -97,7 +97,7 @@ object mod {
     * Construct a new promise delegate.
     */
   open class PromiseDelegate[T] ()
-    extends typings.luminoCoreutils.indexCommonMod.PromiseDelegate[T]
+    extends typings.luminoCoreutils.typesIndexDotcommonMod.PromiseDelegate[T]
   
   object Random {
     
@@ -112,7 +112,7 @@ object mod {
   @JSImport("@lumino/coreutils", "Token")
   @js.native
   open class Token[T] protected ()
-    extends typings.luminoCoreutils.indexCommonMod.Token[T] {
+    extends typings.luminoCoreutils.typesIndexDotcommonMod.Token[T] {
     /**
       * Construct a new token.
       *

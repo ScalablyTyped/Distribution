@@ -1,6 +1,6 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.srcModelDocumentMod.Document
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelDocumentMod.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ trait FromCache extends StObject {
   
   var added: js.UndefOr[js.Array[Document]] = js.undefined
   
-  var errorCode: js.UndefOr[typings.firebaseFirestore.srcUtilErrorMod.Code] = js.undefined
+  var errorCode: js.UndefOr[typings.firebaseFirestore.distLitePackagesFirestoreSrcUtilErrorMod.Code] = js.undefined
   
   var fromCache: js.UndefOr[Boolean] = js.undefined
   
@@ -36,7 +36,7 @@ object FromCache {
     
     inline def setAddedVarargs(value: Document*): Self = StObject.set(x, "added", js.Array(value*))
     
-    inline def setErrorCode(value: typings.firebaseFirestore.srcUtilErrorMod.Code): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: typings.firebaseFirestore.distLitePackagesFirestoreSrcUtilErrorMod.Code): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__vdom
 
-Typings are for version 2.2.6
+Typings are for version 3.4.8
 
 ## Library description:
 A viewer for VDOM documents.
@@ -10,10 +10,10 @@ A viewer for VDOM documents.
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/vdom |
 | Keywords           | - |
-| # releases         | 131 |
-| # dependents       | 2 |
-| # downloads        | 1416514 |
-| # stars            | 0 |
+| # releases         | 144 |
+| # dependents       | 0.0 |
+| # downloads        | 191965.66666666666 |
+| # stars            | 12379.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

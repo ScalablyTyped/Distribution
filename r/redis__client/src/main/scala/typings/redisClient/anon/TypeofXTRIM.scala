@@ -1,10 +1,10 @@
 package typings.redisClient.anon
 
-import typings.redisClient.libCommandsMod.RedisCommandArgument
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsXtrimMod.XTrimOptions
 import typings.redisClient.redisClientStrings.MAXLEN
 import typings.redisClient.redisClientStrings.MINID
-import typings.redisClient.xtrimMod.XTrimOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,5 @@
 package typings.slonik.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.node.streamMod.Readable
 import typings.slonik.anon.Format
 import typings.slonik.anon.StripComments
@@ -82,10 +81,6 @@ js.Promise[
 type QueryOneFunctionType = js.Function1[/* args */ QueryMethodParams[Any], js.Promise[Any]]
 
 type QueryResultRowColumnType = String | Double
-
-type QueryResultRowType[ColumnName /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ name in ColumnName ]: slonik.slonik.QueryResultRowColumnType}
-  */ typings.slonik.slonikStrings.QueryResultRowType & TopLevel[Any]
 
 type SerializableValueArray = js.Array[SerializableValueType]
 

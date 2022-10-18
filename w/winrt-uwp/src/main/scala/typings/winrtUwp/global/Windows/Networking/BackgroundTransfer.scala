@@ -114,9 +114,9 @@ object BackgroundTransfer {
   }
   
   /** Contains information about a BackgroundTransferCompletionGroup that can be only accessed from the Run method on the IBackgroundTask . */
-  @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferCompletionGroupTriggerDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferCompletionGroupTriggerDetails")
   @js.native
-  abstract class BackgroundTransferCompletionGroupTriggerDetails ()
+  open class BackgroundTransferCompletionGroupTriggerDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferCompletionGroupTriggerDetails {
     
@@ -189,9 +189,9 @@ object BackgroundTransfer {
   }
   
   /** Used to provide errors encountered during a transfer operation. */
-  @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferError")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferError")
   @js.native
-  abstract class BackgroundTransferError ()
+  open class BackgroundTransferError ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferError
   object BackgroundTransferError {
@@ -210,9 +210,9 @@ object BackgroundTransfer {
   }
   
   /** A named group used to associate multiple download or upload operations. This class makes it easy for your app to create these groups and to complete downloads and uploads simultaneously, in serial, or based on priority. */
-  @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferGroup")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferGroup")
   @js.native
-  abstract class BackgroundTransferGroup ()
+  open class BackgroundTransferGroup ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup {
     
@@ -338,9 +338,9 @@ object BackgroundTransfer {
   }
   
   /** Provides properties for specifying web resources to be prefetched. Windows will use heuristics to attempt to download the specified resources in advance of your app being launched by the user. */
-  @JSGlobal("Windows.Networking.BackgroundTransfer.ContentPrefetcher")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.BackgroundTransfer.ContentPrefetcher")
   @js.native
-  abstract class ContentPrefetcher ()
+  open class ContentPrefetcher ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.BackgroundTransfer.ContentPrefetcher
   object ContentPrefetcher {
@@ -372,9 +372,9 @@ object BackgroundTransfer {
   }
   
   /** Performs an asynchronous download operation. The Background Transfer sample demonstrates this functionality. For an overview of Background Transfer capabilities, see Transferring data in the background. Download the Background Transfer sample for examples in JavaScript, C#, and C++. */
-  @JSGlobal("Windows.Networking.BackgroundTransfer.DownloadOperation")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.BackgroundTransfer.DownloadOperation")
   @js.native
-  abstract class DownloadOperation ()
+  open class DownloadOperation ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.BackgroundTransfer.DownloadOperation {
     
@@ -459,9 +459,9 @@ object BackgroundTransfer {
   }
   
   /** Represents data that is returned by a server response. */
-  @JSGlobal("Windows.Networking.BackgroundTransfer.ResponseInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.BackgroundTransfer.ResponseInformation")
   @js.native
-  abstract class ResponseInformation ()
+  open class ResponseInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.BackgroundTransfer.ResponseInformation {
     
@@ -483,9 +483,9 @@ object BackgroundTransfer {
   }
   
   /** Represents the result a request for unconstrained transfers from a BackgroundDownloader or BackgroundUploader object. */
-  @JSGlobal("Windows.Networking.BackgroundTransfer.UnconstrainedTransferRequestResult")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.BackgroundTransfer.UnconstrainedTransferRequestResult")
   @js.native
-  abstract class UnconstrainedTransferRequestResult ()
+  open class UnconstrainedTransferRequestResult ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.BackgroundTransfer.UnconstrainedTransferRequestResult {
     
@@ -495,9 +495,9 @@ object BackgroundTransfer {
   }
   
   /** Performs an asynchronous upload operation. For an overview of Background Transfer capabilities, see Transferring data in the background. Download the Background Transfer sample for examples in JavaScript, C#, and C++. */
-  @JSGlobal("Windows.Networking.BackgroundTransfer.UploadOperation")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.BackgroundTransfer.UploadOperation")
   @js.native
-  abstract class UploadOperation ()
+  open class UploadOperation ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.BackgroundTransfer.UploadOperation {
     

@@ -19,6 +19,223 @@ object default extends Shortcut {
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("axios", "default.AxiosError")
+  @js.native
+  open class AxiosErrorCls[T, D] () extends AxiosError[T, D] {
+    def this(message: String) = this()
+    def this(message: String, code: String) = this()
+    def this(message: Unit, code: String) = this()
+    def this(
+      message: String,
+      code: String,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]
+    ) = this()
+    def this(
+      message: String,
+      code: Unit,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]
+    ) = this()
+    def this(
+      message: Unit,
+      code: String,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]
+    ) = this()
+    def this(
+      message: Unit,
+      code: Unit,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]
+    ) = this()
+    def this(message: String, code: String, config: Unit, request: Any) = this()
+    def this(
+      message: String,
+      code: String,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      request: Any
+    ) = this()
+    def this(message: String, code: Unit, config: Unit, request: Any) = this()
+    def this(
+      message: String,
+      code: Unit,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      request: Any
+    ) = this()
+    def this(message: Unit, code: String, config: Unit, request: Any) = this()
+    def this(
+      message: Unit,
+      code: String,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      request: Any
+    ) = this()
+    def this(message: Unit, code: Unit, config: Unit, request: Any) = this()
+    def this(
+      message: Unit,
+      code: Unit,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      request: Any
+    ) = this()
+    def this(
+      message: String,
+      code: String,
+      config: Unit,
+      request: Any,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: String,
+      code: String,
+      config: Unit,
+      request: Unit,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: String,
+      code: String,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      request: Any,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: String,
+      code: String,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      request: Unit,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: String,
+      code: Unit,
+      config: Unit,
+      request: Any,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: String,
+      code: Unit,
+      config: Unit,
+      request: Unit,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: String,
+      code: Unit,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      request: Any,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: String,
+      code: Unit,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      request: Unit,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: Unit,
+      code: String,
+      config: Unit,
+      request: Any,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: Unit,
+      code: String,
+      config: Unit,
+      request: Unit,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: Unit,
+      code: String,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      request: Any,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: Unit,
+      code: String,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      request: Unit,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: Unit,
+      code: Unit,
+      config: Unit,
+      request: Any,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: Unit,
+      code: Unit,
+      config: Unit,
+      request: Unit,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: Unit,
+      code: Unit,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      request: Any,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+    def this(
+      message: Unit,
+      code: Unit,
+      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      request: Unit,
+      response: AxiosResponse[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam D */ Any
+          ]
+    ) = this()
+  }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("axios", "default.Cancel")
   @js.native
   open class CancelCls ()

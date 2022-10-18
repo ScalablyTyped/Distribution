@@ -2,6 +2,7 @@ package typings.reduxOrm
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.reduxOrm.modelMod.AnyModel
+import typings.reduxOrm.modelMod.IdOrModelLike
 import typings.reduxOrm.modelMod.IdType
 import typings.reduxOrm.modelMod.Model
 import org.scalablytyped.runtime.StObject
@@ -10,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait GetId[M /* <: Model[Instantiable0[AnyModel], Any] */] extends StObject {
+  trait GetId[M /* <: Model[Instantiable0[AnyModel], Any] */]
+    extends StObject
+       with IdOrModelLike[M] {
     
     def getId(): IdType[M]
   }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-pinpoint-browser", "DeleteEmailChannelCommand")
 @js.native
 open class DeleteEmailChannelCommand protected ()
-  extends typings.awsSdkClientPinpointBrowser.deleteEmailChannelCommandMod.DeleteEmailChannelCommand {
+  extends typings.awsSdkClientPinpointBrowser.commandsDeleteEmailChannelCommandMod.DeleteEmailChannelCommand {
   def this(input: DeleteEmailChannelInput) = this()
 }

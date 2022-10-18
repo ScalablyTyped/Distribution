@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "RingGeometry")
 @js.native
 open class RingGeometry protected ()
-  extends typings.three.threeMod.RingGeometry {
+  extends typings.three.srcThreeMod.RingGeometry {
   /**
     * @param [innerRadius=0.5]
     * @param [outerRadius=1]
@@ -32,5 +32,5 @@ object RingGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.ringGeometryMod.RingGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.ringGeometryMod.RingGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesRingGeometryMod.RingGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesRingGeometryMod.RingGeometry]
 }

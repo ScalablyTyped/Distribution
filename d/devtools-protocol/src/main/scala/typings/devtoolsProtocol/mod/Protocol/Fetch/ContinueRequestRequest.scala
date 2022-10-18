@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContinueRequestRequest extends StObject {
   
   /**
-    * If set, overrides the request headers.
+    * If set, overrides the request headers. Note that the overrides do not
+    * extend to subsequent redirect hops, if a redirect happens. Another override
+    * may be applied to a different request produced by a redirect.
     */
   var headers: js.UndefOr[js.Array[HeaderEntry]] = js.undefined
   

@@ -1,6 +1,6 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.cameraMod.Camera
+import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

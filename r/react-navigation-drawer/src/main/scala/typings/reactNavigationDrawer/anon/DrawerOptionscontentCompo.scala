@@ -4,7 +4,8 @@ import typings.react.mod.ComponentProps
 import typings.react.mod.ComponentType
 import typings.react.mod.RefAttributes
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeGestureHandler.panGestureHandlerMod.PanGestureHandlerProps_
+import typings.reactNativeGestureHandler.libTypescriptHandlersPanGestureHandlerMod.PanGestureHandlerProps_
+import typings.reactNavigationDrawer.libTypescriptSrcTypesMod.DrawerContentComponentProps
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-closed`
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-open`
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`on-drag`
@@ -16,7 +17,6 @@ import typings.reactNavigationDrawer.reactNavigationDrawerStrings.none
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.right
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.slide
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.unlocked
-import typings.reactNavigationDrawer.typesMod.DrawerContentComponentProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

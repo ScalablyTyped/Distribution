@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.fileuploadMod.FileUploadProps
+import typings.primereact.fileuploadFileuploadMod.FileUploadProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "FileUpload")
 @js.native
 open class FileUpload protected ()
-  extends typings.primereact.fileuploadMod.FileUpload {
+  extends typings.primereact.fileuploadFileuploadMod.FileUpload {
   def this(props: FileUploadProps) = this()
   /**
     * @deprecated

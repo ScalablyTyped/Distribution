@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-sdk", "FileSystemCredentials")
 @js.native
 open class FileSystemCredentials protected ()
-  extends typings.awsSdk.coreMod.FileSystemCredentials {
+  extends typings.awsSdk.libCoreMod.FileSystemCredentials {
   /**
     * Creates a new FileSystemCredentials object from a filename.
     * @param {string} filename - The path on disk to the JSON file to load.

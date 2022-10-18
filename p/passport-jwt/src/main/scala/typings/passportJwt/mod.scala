@@ -3,6 +3,8 @@ package typings.passportJwt
 import typings.express.mod.Request_
 import typings.jsonwebtoken.mod.VerifyOptions
 import typings.node.bufferMod.global.Buffer
+import typings.passport.mod.global.Express.User
+import typings.passportJwt.passportJwtBooleans.`false`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -164,7 +166,12 @@ object mod {
     }
   }
   
-  type VerifiedCallback = js.Function3[/* error */ Any, /* user */ js.UndefOr[Any], /* info */ js.UndefOr[Any], Unit]
+  type VerifiedCallback = js.Function3[
+    /* error */ Any, 
+    /* user */ js.UndefOr[User | `false`], 
+    /* info */ js.UndefOr[Any], 
+    Unit
+  ]
   
   type VerifyCallback = js.Function2[/* payload */ Any, /* done */ VerifiedCallback, Unit]
   

@@ -21,6 +21,6 @@ object Grammars {
     
     inline def setGrammars(value: js.Array[Grammar]): Self = StObject.set(x, "grammars", value.asInstanceOf[js.Any])
     
-    inline def setGrammarsVarargs(value: Grammar*): Self = StObject.set(x, "grammars", js.Array(value :_*))
+    inline def setGrammarsVarargs(value: Grammar*): Self = StObject.set(x, "grammars", js.Array(value*))
   }
 }

@@ -8,17 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SizeZ extends StObject {
   
-  var backUVs: js.UndefOr[Vector4] = js.undefined
-  
   var custom: js.UndefOr[Any] = js.undefined
   
   var faceColors: js.UndefOr[js.Array[Color4]] = js.undefined
   
   var faceUV: js.UndefOr[js.Array[Vector4]] = js.undefined
-  
-  var flat: js.UndefOr[Boolean] = js.undefined
-  
-  var frontUVs: js.UndefOr[Vector4] = js.undefined
   
   var sideOrientation: js.UndefOr[Double] = js.undefined
   
@@ -43,10 +37,6 @@ object SizeZ {
   
   extension [Self <: SizeZ](x: Self) {
     
-    inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
-    
-    inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
-    
     inline def setCustom(value: Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
@@ -62,14 +52,6 @@ object SizeZ {
     inline def setFaceUVUndefined: Self = StObject.set(x, "faceUV", js.undefined)
     
     inline def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value*))
-    
-    inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
-    
-    inline def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
-    
-    inline def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
-    
-    inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
     
     inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     

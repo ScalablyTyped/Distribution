@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof core.Array` */
 object coreArrayMod {
   
-  @JSImport("core-js/library/core/array", JSImport.Namespace)
+  @JSImport("core-js/core/array", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

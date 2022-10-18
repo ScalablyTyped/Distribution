@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PivotTools")
 @js.native
 open class PivotTools ()
-  extends typings.babylonjs.legacyMod.PivotTools
+  extends typings.babylonjs.legacyLegacyMod.PivotTools
 /* static members */
 object PivotTools {
   
@@ -43,10 +43,10 @@ object PivotTools {
   /**
     * @internal
     */
-  inline def _RemoveAndStorePivotPoint(mesh: typings.babylonjs.transformNodeMod.TransformNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_RemoveAndStorePivotPoint")(mesh.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def _RemoveAndStorePivotPoint(mesh: typings.babylonjs.meshesTransformNodeMod.TransformNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_RemoveAndStorePivotPoint")(mesh.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * @internal
     */
-  inline def _RestorePivotPoint(mesh: typings.babylonjs.transformNodeMod.TransformNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_RestorePivotPoint")(mesh.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def _RestorePivotPoint(mesh: typings.babylonjs.meshesTransformNodeMod.TransformNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_RestorePivotPoint")(mesh.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -74,7 +74,7 @@ trait Bindings extends StObject {
     *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
-    * Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied id.
+    * Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied ID.
     * The method fails if the specified selection cannot be bound.
     *
     * @param bindingType Specifies the type of the binding object to create. Required.
@@ -114,7 +114,7 @@ trait Bindings extends StObject {
     *
     * Note In Excel, if you call the addFromSelectionAsync method passing in the Binding.id of an existing binding, the Binding.type of that
     * binding is used, and its type cannot be changed by specifying a different value for the bindingType parameter.
-    * If you need to use an existing id and change the bindingType, call the Bindings.releaseByIdAsync method first to release the binding, and
+    * If you need to use an existing ID and change the bindingType, call the Bindings.releaseByIdAsync method first to release the binding, and
     * then call the addFromSelectionAsync method to reestablish the binding with a new type.
     *
     * @param bindingType Specifies the type of the binding object to create. Required.
@@ -181,12 +181,12 @@ trait Bindings extends StObject {
     *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
     *
-    * Fails if the specified id does not exist.
+    * Fails if the specified ID does not exist.
     *
     * @param id Specifies the unique name of the binding object. Required.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
-    *                  The `value` property of the result is the Binding object specified by the id in the call.
+    *                  The `value` property of the result is the Binding object specified by the ID in the call.
     */
   def getByIdAsync(id: String): Unit = js.native
   def getByIdAsync(id: String, callback: js.Function1[/* result */ AsyncResult[Binding], Unit]): Unit = js.native
@@ -211,7 +211,7 @@ trait Bindings extends StObject {
     *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
     *
-    * Fails if the specified id does not exist.
+    * Fails if the specified ID does not exist.
     *
     * @param id Specifies the unique name to be used to identify the binding object. Required.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.

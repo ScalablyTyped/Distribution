@@ -1,9 +1,9 @@
 package typings.dirCompare
 
-import typings.dirCompare.typesMod.DifferenceState
-import typings.dirCompare.typesMod.DifferenceType
-import typings.dirCompare.typesMod.PermissionDeniedState
-import typings.dirCompare.typesMod._Reason
+import typings.dirCompare.buildSrcTypesMod.DifferenceState
+import typings.dirCompare.buildSrcTypesMod.DifferenceType
+import typings.dirCompare.buildSrcTypesMod.PermissionDeniedState
+import typings.dirCompare.buildSrcTypesMod._Reason
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,15 +1,15 @@
 package typings.expoWebBrowser
 
-import typings.expoWebBrowser.webBrowserTypesMod.AuthSessionOpenOptions
-import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserAuthSessionResult
-import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserCompleteAuthSessionOptions
-import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserCompleteAuthSessionResult
-import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserCoolDownResult
-import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserCustomTabsResults
-import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserMayInitWithUrlResult
-import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserOpenOptions
-import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResult
-import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserWarmUpResult
+import typings.expoWebBrowser.buildWebBrowserDottypesMod.AuthSessionOpenOptions
+import typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserAuthSessionResult
+import typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserCompleteAuthSessionOptions
+import typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserCompleteAuthSessionResult
+import typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserCoolDownResult
+import typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserCustomTabsResults
+import typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserMayInitWithUrlResult
+import typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserOpenOptions
+import typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserResult
+import typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserWarmUpResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,23 +25,25 @@ object mod {
   object WebBrowserPresentationStyle extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserPresentationStyle & String
+      ] = js.native
     
-    /* "automatic" */ val AUTOMATIC: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.AUTOMATIC & String = js.native
+    /* "automatic" */ val AUTOMATIC: typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserPresentationStyle.AUTOMATIC & String = js.native
     
-    /* "currentContext" */ val CURRENT_CONTEXT: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.CURRENT_CONTEXT & String = js.native
+    /* "currentContext" */ val CURRENT_CONTEXT: typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserPresentationStyle.CURRENT_CONTEXT & String = js.native
     
-    /* "formSheet" */ val FORM_SHEET: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.FORM_SHEET & String = js.native
+    /* "formSheet" */ val FORM_SHEET: typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserPresentationStyle.FORM_SHEET & String = js.native
     
-    /* "fullScreen" */ val FULL_SCREEN: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.FULL_SCREEN & String = js.native
+    /* "fullScreen" */ val FULL_SCREEN: typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserPresentationStyle.FULL_SCREEN & String = js.native
     
-    /* "overCurrentContext" */ val OVER_CURRENT_CONTEXT: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.OVER_CURRENT_CONTEXT & String = js.native
+    /* "overCurrentContext" */ val OVER_CURRENT_CONTEXT: typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserPresentationStyle.OVER_CURRENT_CONTEXT & String = js.native
     
-    /* "overFullScreen" */ val OVER_FULL_SCREEN: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.OVER_FULL_SCREEN & String = js.native
+    /* "overFullScreen" */ val OVER_FULL_SCREEN: typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserPresentationStyle.OVER_FULL_SCREEN & String = js.native
     
-    /* "pageSheet" */ val PAGE_SHEET: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.PAGE_SHEET & String = js.native
+    /* "pageSheet" */ val PAGE_SHEET: typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserPresentationStyle.PAGE_SHEET & String = js.native
     
-    /* "popover" */ val POPOVER: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserPresentationStyle.POPOVER & String = js.native
+    /* "popover" */ val POPOVER: typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserPresentationStyle.POPOVER & String = js.native
   }
   
   @JSImport("expo-web-browser", "WebBrowserResultType")
@@ -49,15 +51,15 @@ object mod {
   object WebBrowserResultType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResultType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserResultType & String] = js.native
     
-    /* "cancel" */ val CANCEL: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResultType.CANCEL & String = js.native
+    /* "cancel" */ val CANCEL: typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserResultType.CANCEL & String = js.native
     
-    /* "dismiss" */ val DISMISS: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResultType.DISMISS & String = js.native
+    /* "dismiss" */ val DISMISS: typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserResultType.DISMISS & String = js.native
     
-    /* "locked" */ val LOCKED: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResultType.LOCKED & String = js.native
+    /* "locked" */ val LOCKED: typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserResultType.LOCKED & String = js.native
     
-    /* "opened" */ val OPENED: typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResultType.OPENED & String = js.native
+    /* "opened" */ val OPENED: typings.expoWebBrowser.buildWebBrowserDottypesMod.WebBrowserResultType.OPENED & String = js.native
   }
   
   inline def coolDownAsync(): js.Promise[WebBrowserCoolDownResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("coolDownAsync")().asInstanceOf[js.Promise[WebBrowserCoolDownResult]]

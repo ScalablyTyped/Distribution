@@ -1,15 +1,15 @@
 package typings.hdrHistogramJs
 
-import typings.hdrHistogramJs.byteBufferMod.default
+import typings.hdrHistogramJs.distByteBufferMod.default
+import typings.hdrHistogramJs.distHistogramBuilderMod.BuildRequest
+import typings.hdrHistogramJs.distHistogramLogWriterMod.Writable
+import typings.hdrHistogramJs.distHistogramMod.BitBucketSize
+import typings.hdrHistogramJs.distHistogramMod.Histogram
 import typings.hdrHistogramJs.hdrHistogramJsInts.`16`
 import typings.hdrHistogramJs.hdrHistogramJsInts.`32`
 import typings.hdrHistogramJs.hdrHistogramJsInts.`64`
 import typings.hdrHistogramJs.hdrHistogramJsInts.`8`
 import typings.hdrHistogramJs.hdrHistogramJsStrings.packed
-import typings.hdrHistogramJs.histogramBuilderMod.BuildRequest
-import typings.hdrHistogramJs.histogramLogWriterMod.Writable
-import typings.hdrHistogramJs.histogramMod.BitBucketSize
-import typings.hdrHistogramJs.histogramMod.Histogram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,14 +32,14 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def allocate(): typings.hdrHistogramJs.byteBufferMod.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")().asInstanceOf[typings.hdrHistogramJs.byteBufferMod.ByteBuffer]
-    inline def allocate(size: Double): typings.hdrHistogramJs.byteBufferMod.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(size.asInstanceOf[js.Any]).asInstanceOf[typings.hdrHistogramJs.byteBufferMod.ByteBuffer]
+    inline def allocate(): typings.hdrHistogramJs.distByteBufferMod.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")().asInstanceOf[typings.hdrHistogramJs.distByteBufferMod.ByteBuffer]
+    inline def allocate(size: Double): typings.hdrHistogramJs.distByteBufferMod.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(size.asInstanceOf[js.Any]).asInstanceOf[typings.hdrHistogramJs.distByteBufferMod.ByteBuffer]
   }
   
   @JSImport("hdr-histogram-js", "Float64Histogram")
   @js.native
   open class Float64Histogram protected ()
-    extends typings.hdrHistogramJs.float64HistogramMod.default {
+    extends typings.hdrHistogramJs.distFloat64HistogramMod.default {
     def this(
       lowestDiscernibleValue: Double,
       highestTrackableValue: Double,
@@ -91,7 +91,7 @@ object mod {
   @JSImport("hdr-histogram-js", "HistogramLogReader")
   @js.native
   open class HistogramLogReader protected ()
-    extends typings.hdrHistogramJs.histogramLogReaderMod.default {
+    extends typings.hdrHistogramJs.distHistogramLogReaderMod.default {
     def this(logContent: String) = this()
     def this(logContent: String, bitBucketSize: BitBucketSize) = this()
     def this(logContent: String, bitBucketSize: Unit, useWebAssembly: Boolean) = this()
@@ -101,14 +101,14 @@ object mod {
   @JSImport("hdr-histogram-js", "HistogramLogWriter")
   @js.native
   open class HistogramLogWriter protected ()
-    extends typings.hdrHistogramJs.histogramLogWriterMod.default {
+    extends typings.hdrHistogramJs.distHistogramLogWriterMod.default {
     def this(log: Writable) = this()
   }
   
   @JSImport("hdr-histogram-js", "Int16Histogram")
   @js.native
   open class Int16Histogram protected ()
-    extends typings.hdrHistogramJs.int16HistogramMod.default {
+    extends typings.hdrHistogramJs.distInt16HistogramMod.default {
     def this(
       lowestDiscernibleValue: Double,
       highestTrackableValue: Double,
@@ -119,7 +119,7 @@ object mod {
   @JSImport("hdr-histogram-js", "Int32Histogram")
   @js.native
   open class Int32Histogram protected ()
-    extends typings.hdrHistogramJs.int32HistogramMod.default {
+    extends typings.hdrHistogramJs.distInt32HistogramMod.default {
     def this(
       lowestDiscernibleValue: Double,
       highestTrackableValue: Double,
@@ -130,7 +130,7 @@ object mod {
   @JSImport("hdr-histogram-js", "Int8Histogram")
   @js.native
   open class Int8Histogram protected ()
-    extends typings.hdrHistogramJs.int8HistogramMod.default {
+    extends typings.hdrHistogramJs.distInt8HistogramMod.default {
     def this(
       lowestDiscernibleValue: Double,
       highestTrackableValue: Double,
@@ -138,15 +138,19 @@ object mod {
     ) = this()
   }
   
-  @JSImport("hdr-histogram-js", "JsHistogram")
+  /* note: abstract class */ @JSImport("hdr-histogram-js", "JsHistogram")
   @js.native
-  abstract class JsHistogram protected ()
-    extends typings.hdrHistogramJs.jsHistogramMod.JsHistogram {
+  open class JsHistogram protected ()
+    extends StObject
+       with typings.hdrHistogramJs.distJsHistogramMod.JsHistogram {
     def this(
       lowestDiscernibleValue: Double,
       highestTrackableValue: Double,
       numberOfSignificantValueDigits: Double
     ) = this()
+    
+    /* CompleteClass */
+    var encodeIntoCompressedBase64: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof doEncodeIntoCompressedBase64 */ Any = js.native
   }
   /* static members */
   object JsHistogram {
@@ -199,7 +203,7 @@ object mod {
   @JSImport("hdr-histogram-js", "PackedHistogram")
   @js.native
   open class PackedHistogram protected ()
-    extends typings.hdrHistogramJs.packedHistogramMod.default {
+    extends typings.hdrHistogramJs.distPackedHistogramMod.default {
     def this(
       lowestDiscernibleValue: Double,
       highestTrackableValue: Double,
@@ -230,7 +234,7 @@ object mod {
     * @param clock (for testing purpose) an action that give current time in ms since 1970
     */
   open class Recorder ()
-    extends typings.hdrHistogramJs.recorderMod.default {
+    extends typings.hdrHistogramJs.distRecorderMod.default {
     def this(histogramBuildRequest: BuildRequest) = this()
     def this(histogramBuildRequest: Unit, clock: js.Function0[Double]) = this()
     def this(histogramBuildRequest: BuildRequest, clock: js.Function0[Double]) = this()
@@ -251,7 +255,7 @@ object mod {
   @JSImport("hdr-histogram-js", "WasmHistogram")
   @js.native
   open class WasmHistogram protected ()
-    extends typings.hdrHistogramJs.wasmMod.WasmHistogram {
+    extends typings.hdrHistogramJs.distWasmMod.WasmHistogram {
     def this(_wasmHistogram: Any, _remoteHistogramClass: String) = this()
   }
   /* static members */
@@ -261,8 +265,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def build(): typings.hdrHistogramJs.wasmMod.WasmHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("build")().asInstanceOf[typings.hdrHistogramJs.wasmMod.WasmHistogram]
-    inline def build(request: BuildRequest): typings.hdrHistogramJs.wasmMod.WasmHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(request.asInstanceOf[js.Any]).asInstanceOf[typings.hdrHistogramJs.wasmMod.WasmHistogram]
+    inline def build(): typings.hdrHistogramJs.distWasmMod.WasmHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("build")().asInstanceOf[typings.hdrHistogramJs.distWasmMod.WasmHistogram]
+    inline def build(request: BuildRequest): typings.hdrHistogramJs.distWasmMod.WasmHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(request.asInstanceOf[js.Any]).asInstanceOf[typings.hdrHistogramJs.distWasmMod.WasmHistogram]
     
     inline def decode(data: js.typedarray.Uint8Array): Histogram = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[Histogram]
     inline def decode(data: js.typedarray.Uint8Array, bitBucketSize: `8` | `16` | `32` | `64` | packed): Histogram = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any], bitBucketSize.asInstanceOf[js.Any])).asInstanceOf[Histogram]

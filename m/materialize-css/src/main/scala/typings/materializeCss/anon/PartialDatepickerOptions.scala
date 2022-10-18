@@ -2,7 +2,6 @@ package typings.materializeCss.anon
 
 import typings.materializeCss.M.Datepicker
 import typings.std.Element
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,11 +25,7 @@ trait PartialDatepickerOptions extends StObject {
   
   var format: js.UndefOr[String] = js.undefined
   
-  var i18n: js.UndefOr[
-    Partial[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
-    ]
-  ] = js.undefined
+  var i18n: js.UndefOr[PartialInternationalizati] = js.undefined
   
   var isRTL: js.UndefOr[Boolean] = js.undefined
   
@@ -109,11 +104,7 @@ object PartialDatepickerOptions {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setI18n(
-      value: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
-        ]
-    ): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+    inline def setI18n(value: PartialInternationalizati): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     inline def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
     

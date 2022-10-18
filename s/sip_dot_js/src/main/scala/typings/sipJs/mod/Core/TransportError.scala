@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Core.TransportError")
 @js.native
 open class TransportError ()
-  extends typings.sipJs.coreMod.TransportError {
+  extends typings.sipJs.libCoreMod.TransportError {
   def this(message: String) = this()
 }

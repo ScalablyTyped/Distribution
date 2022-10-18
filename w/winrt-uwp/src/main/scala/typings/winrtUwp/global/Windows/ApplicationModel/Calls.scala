@@ -40,9 +40,9 @@ object Calls {
     }
     
     /** Used to provide the details about a call that was just blocked. */
-    @JSGlobal("Windows.ApplicationModel.Calls.Background.PhoneCallBlockedTriggerDetails")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Calls.Background.PhoneCallBlockedTriggerDetails")
     @js.native
-    abstract class PhoneCallBlockedTriggerDetails ()
+    open class PhoneCallBlockedTriggerDetails ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneCallBlockedTriggerDetails {
       
@@ -60,9 +60,9 @@ object Calls {
     }
     
     /** Used to provide the origin details of the phone call. */
-    @JSGlobal("Windows.ApplicationModel.Calls.Background.PhoneCallOriginDataRequestTriggerDetails")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Calls.Background.PhoneCallOriginDataRequestTriggerDetails")
     @js.native
-    abstract class PhoneCallOriginDataRequestTriggerDetails ()
+    open class PhoneCallOriginDataRequestTriggerDetails ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneCallOriginDataRequestTriggerDetails {
       
@@ -93,9 +93,9 @@ object Calls {
     }
     
     /** Used to provide the details about a change to the properties of a phone line. */
-    @JSGlobal("Windows.ApplicationModel.Calls.Background.PhoneLineChangedTriggerDetails")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Calls.Background.PhoneLineChangedTriggerDetails")
     @js.native
-    abstract class PhoneLineChangedTriggerDetails ()
+    open class PhoneLineChangedTriggerDetails ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneLineChangedTriggerDetails {
       
@@ -148,9 +148,9 @@ object Calls {
     }
     
     /** Used to provide the details about a new voice mail message on a phone line. */
-    @JSGlobal("Windows.ApplicationModel.Calls.Background.PhoneNewVoicemailMessageTriggerDetails")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Calls.Background.PhoneNewVoicemailMessageTriggerDetails")
     @js.native
-    abstract class PhoneNewVoicemailMessageTriggerDetails ()
+    open class PhoneNewVoicemailMessageTriggerDetails ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneNewVoicemailMessageTriggerDetails {
       
@@ -192,9 +192,9 @@ object Calls {
   }
   
   /** The LockScreenCallEndCallDeferral object signals when the app no longer needs to defer the removal of itself from the lock screen. */
-  @JSGlobal("Windows.ApplicationModel.Calls.LockScreenCallEndCallDeferral")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Calls.LockScreenCallEndCallDeferral")
   @js.native
-  abstract class LockScreenCallEndCallDeferral ()
+  open class LockScreenCallEndCallDeferral ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Calls.LockScreenCallEndCallDeferral {
     
@@ -204,9 +204,9 @@ object Calls {
   }
   
   /** Controls the removal of an app from the lock screen. */
-  @JSGlobal("Windows.ApplicationModel.Calls.LockScreenCallEndRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Calls.LockScreenCallEndRequestedEventArgs")
   @js.native
-  abstract class LockScreenCallEndRequestedEventArgs ()
+  open class LockScreenCallEndRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Calls.LockScreenCallEndRequestedEventArgs {
     
@@ -223,9 +223,9 @@ object Calls {
   }
   
   /** Handles communication to and from the lock screen. */
-  @JSGlobal("Windows.ApplicationModel.Calls.LockScreenCallUI")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Calls.LockScreenCallUI")
   @js.native
-  abstract class LockScreenCallUI ()
+  open class LockScreenCallUI ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Calls.LockScreenCallUI
   
@@ -423,9 +423,9 @@ object Calls {
   }
   
   /** Enables the calling app to read through the phone call history entries. */
-  @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryEntryReader")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryEntryReader")
   @js.native
-  abstract class PhoneCallHistoryEntryReader ()
+  open class PhoneCallHistoryEntryReader ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryReader {
     
@@ -438,9 +438,9 @@ object Calls {
   }
   
   /** Provides APIs for the application to get access to the PhoneCallHistoryStore . */
-  @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryManager")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryManager")
   @js.native
-  abstract class PhoneCallHistoryManager ()
+  open class PhoneCallHistoryManager ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryManager
   object PhoneCallHistoryManager {
@@ -474,9 +474,9 @@ object Calls {
   }
   
   /** A collection of phone call history entries. */
-  @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryStore")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryStore")
   @js.native
-  abstract class PhoneCallHistoryStore ()
+  open class PhoneCallHistoryStore ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStore
   

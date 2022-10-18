@@ -4,9 +4,9 @@ import typings.reactNativeModalPopover.anon.ArrowSize
 import typings.reactNativeModalPopover.anon.Children
 import typings.reactNativeModalPopover.anon.OnPopoverDisplayed
 import typings.reactNativeModalPopover.anon.PartialPopoverProps
-import typings.reactNativeModalPopover.popoverControllerMod.Props
-import typings.reactNativeModalPopover.popoverMod.PopoverProps
-import typings.reactNativeModalPopover.usePopoverMod.UsePopoverHook
+import typings.reactNativeModalPopover.libPopoverControllerMod.Props
+import typings.reactNativeModalPopover.libPopoverMod.PopoverProps
+import typings.reactNativeModalPopover.libUsePopoverMod.UsePopoverHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ object mod {
   @JSImport("react-native-modal-popover", JSImport.Default)
   @js.native
   open class default protected ()
-    extends typings.reactNativeModalPopover.popoverMod.Popover {
+    extends typings.reactNativeModalPopover.libPopoverMod.Popover {
     def this(props: PopoverProps) = this()
   }
   /* static members */
@@ -49,7 +49,7 @@ object mod {
   @JSImport("react-native-modal-popover", "Popover")
   @js.native
   open class Popover protected ()
-    extends typings.reactNativeModalPopover.popoverMod.Popover {
+    extends typings.reactNativeModalPopover.libPopoverMod.Popover {
     def this(props: PopoverProps) = this()
   }
   /* static members */
@@ -78,7 +78,7 @@ object mod {
   @JSImport("react-native-modal-popover", "PopoverController")
   @js.native
   open class PopoverController protected ()
-    extends typings.reactNativeModalPopover.popoverControllerMod.PopoverController {
+    extends typings.reactNativeModalPopover.libPopoverControllerMod.PopoverController {
     def this(props: Props) = this()
     /**
       * @deprecated
@@ -102,8 +102,8 @@ object mod {
   @JSImport("react-native-modal-popover", "PopoverTouchable")
   @js.native
   open class PopoverTouchable protected ()
-    extends typings.reactNativeModalPopover.popoverTouchableMod.PopoverTouchable {
-    def this(props: typings.reactNativeModalPopover.popoverTouchableMod.Props) = this()
+    extends typings.reactNativeModalPopover.libPopoverTouchableMod.PopoverTouchable {
+    def this(props: typings.reactNativeModalPopover.libPopoverTouchableMod.Props) = this()
   }
   /* static members */
   object PopoverTouchable {

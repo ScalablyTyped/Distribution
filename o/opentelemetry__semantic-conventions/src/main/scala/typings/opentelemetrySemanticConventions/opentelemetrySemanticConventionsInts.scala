@@ -1,6 +1,6 @@
 package typings.opentelemetrySemanticConventions
 
-import typings.opentelemetrySemanticConventions.semanticAttributesMod.RpcGrpcStatusCodeValues
+import typings.opentelemetrySemanticConventions.buildSrcTraceSemanticAttributesMod.RpcGrpcStatusCodeValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

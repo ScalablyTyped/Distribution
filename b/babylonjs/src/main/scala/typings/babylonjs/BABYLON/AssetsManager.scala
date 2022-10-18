@@ -38,10 +38,13 @@ trait AssetsManager extends StObject {
     * @param meshesNames defines the name of meshes to load
     * @param rootUrl defines the root url to use to locate files
     * @param sceneFilename defines the filename of the scene file or the File itself
+    * @param extension defines the extension to use to load the file
     * @returns a new ContainerAssetTask object
     */
   def addContainerTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: String): ContainerAssetTask = js.native
+  def addContainerTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: String, `extension`: String): ContainerAssetTask = js.native
   def addContainerTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: File): ContainerAssetTask = js.native
+  def addContainerTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: File, `extension`: String): ContainerAssetTask = js.native
   
   /**
     * Add a CubeTextureAssetTask to the list of active tasks
@@ -282,10 +285,13 @@ trait AssetsManager extends StObject {
     * @param meshesNames defines the name of meshes to load
     * @param rootUrl defines the root url to use to locate files
     * @param sceneFilename defines the filename of the scene file or the File itself
+    * @param extension defines the extension to use to load the file
     * @returns a new MeshAssetTask object
     */
   def addMeshTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: String): MeshAssetTask = js.native
+  def addMeshTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: String, `extension`: String): MeshAssetTask = js.native
   def addMeshTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: File): MeshAssetTask = js.native
+  def addMeshTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: File, `extension`: String): MeshAssetTask = js.native
   
   /**
     * Add a TextFileAssetTask to the list of active tasks

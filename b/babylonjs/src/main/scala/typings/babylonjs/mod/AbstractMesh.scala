@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "AbstractMesh")
 @js.native
 open class AbstractMesh protected ()
-  extends typings.babylonjs.legacyMod.AbstractMesh {
+  extends typings.babylonjs.legacyLegacyMod.AbstractMesh {
   /**
     * Creates a new AbstractMesh
     * @param name defines the name of the mesh

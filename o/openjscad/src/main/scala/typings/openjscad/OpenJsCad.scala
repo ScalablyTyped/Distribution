@@ -278,8 +278,8 @@ object OpenJsCad {
     
     /* private */ var drawOptions: Any = js.native
     
-    def getUserMeshes(): js.Array[Object3D[typings.three.eventDispatcherMod.Event]] = js.native
-    def getUserMeshes(str: Any): js.Array[Object3D[typings.three.eventDispatcherMod.Event]] = js.native
+    def getUserMeshes(): js.Array[Object3D[typings.three.srcCoreEventDispatcherMod.Event]] = js.native
+    def getUserMeshes(str: Any): js.Array[Object3D[typings.three.srcCoreEventDispatcherMod.Event]] = js.native
     
     def handleResize(): Unit = js.native
     

@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Derivatives extends StObject {
   
-  var derivatives: js.UndefOr[Boolean] = js.undefined
+  var derivatives: Boolean
   
-  var drawBuffers: js.UndefOr[Boolean] = js.undefined
+  var drawBuffers: Boolean
   
-  var fragDepth: js.UndefOr[Boolean] = js.undefined
+  var fragDepth: Boolean
   
-  var shaderTextureLOD: js.UndefOr[Boolean] = js.undefined
+  var shaderTextureLOD: Boolean
 }
 object Derivatives {
   
-  inline def apply(): Derivatives = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(derivatives: Boolean, drawBuffers: Boolean, fragDepth: Boolean, shaderTextureLOD: Boolean): Derivatives = {
+    val __obj = js.Dynamic.literal(derivatives = derivatives.asInstanceOf[js.Any], drawBuffers = drawBuffers.asInstanceOf[js.Any], fragDepth = fragDepth.asInstanceOf[js.Any], shaderTextureLOD = shaderTextureLOD.asInstanceOf[js.Any])
     __obj.asInstanceOf[Derivatives]
   }
   
@@ -25,18 +25,10 @@ object Derivatives {
     
     inline def setDerivatives(value: Boolean): Self = StObject.set(x, "derivatives", value.asInstanceOf[js.Any])
     
-    inline def setDerivativesUndefined: Self = StObject.set(x, "derivatives", js.undefined)
-    
     inline def setDrawBuffers(value: Boolean): Self = StObject.set(x, "drawBuffers", value.asInstanceOf[js.Any])
-    
-    inline def setDrawBuffersUndefined: Self = StObject.set(x, "drawBuffers", js.undefined)
     
     inline def setFragDepth(value: Boolean): Self = StObject.set(x, "fragDepth", value.asInstanceOf[js.Any])
     
-    inline def setFragDepthUndefined: Self = StObject.set(x, "fragDepth", js.undefined)
-    
     inline def setShaderTextureLOD(value: Boolean): Self = StObject.set(x, "shaderTextureLOD", value.asInstanceOf[js.Any])
-    
-    inline def setShaderTextureLODUndefined: Self = StObject.set(x, "shaderTextureLOD", js.undefined)
   }
 }

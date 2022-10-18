@@ -2,7 +2,7 @@ package typings.reactMdAvatar
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdAvatar.avatarMod.AvatarProps
+import typings.reactMdAvatar.typesAvatarMod.AvatarProps
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

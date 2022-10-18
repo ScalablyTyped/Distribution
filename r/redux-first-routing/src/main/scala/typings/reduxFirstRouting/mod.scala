@@ -57,7 +57,7 @@ object mod {
   
   inline def goForward(): goForwardAction = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")().asInstanceOf[goForwardAction]
   
-  inline def locationChange[P /* <: Pathname */, S /* <: Search */, H /* <: Hash */](_underscore: typings.reduxFirstRouting.anon.Pathname[P, S, H]): locationChangeAction[P, S, H] = ^.asInstanceOf[js.Dynamic].applyDynamic("locationChange")(_underscore.asInstanceOf[js.Any]).asInstanceOf[locationChangeAction[P, S, H]]
+  inline def locationChange[P /* <: Pathname */, S /* <: Search */, H /* <: Hash */](_underscore: typings.reduxFirstRouting.anon.Hash[P, S, H]): locationChangeAction[P, S, H] = ^.asInstanceOf[js.Dynamic].applyDynamic("locationChange")(_underscore.asInstanceOf[js.Any]).asInstanceOf[locationChangeAction[P, S, H]]
   
   inline def push[T /* <: Path | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LocationDescriptorObject */ Any) */](href: T): pushAction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(href.asInstanceOf[js.Any]).asInstanceOf[pushAction[T]]
   
@@ -128,11 +128,11 @@ object mod {
     extends StObject
        with Action[ROUTERSlashLOCATION_CHANGE] {
     
-    var payload: typings.reduxFirstRouting.anon.Hash[P, S, H]
+    var payload: typings.reduxFirstRouting.anon.Pathname[P, S, H]
   }
   object locationChangeAction {
     
-    inline def apply[P /* <: Pathname */, S /* <: Search */, H /* <: Hash */](payload: typings.reduxFirstRouting.anon.Hash[P, S, H]): locationChangeAction[P, S, H] = {
+    inline def apply[P /* <: Pathname */, S /* <: Search */, H /* <: Hash */](payload: typings.reduxFirstRouting.anon.Pathname[P, S, H]): locationChangeAction[P, S, H] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("ROUTER/LOCATION_CHANGE")
       __obj.asInstanceOf[locationChangeAction[P, S, H]]
@@ -140,7 +140,7 @@ object mod {
     
     extension [Self <: locationChangeAction[?, ?, ?], P /* <: Pathname */, S /* <: Search */, H /* <: Hash */](x: Self & (locationChangeAction[P, S, H])) {
       
-      inline def setPayload(value: typings.reduxFirstRouting.anon.Hash[P, S, H]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: typings.reduxFirstRouting.anon.Pathname[P, S, H]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   

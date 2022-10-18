@@ -1,23 +1,35 @@
 package typings.cypress.anon
 
-import typings.cypress.Nullable
+import typings.cypress.Cypress.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OpenMode extends js.Object {
-  var openMode: Nullable[Double]
-  var runMode: Nullable[Double]
+trait OpenMode extends StObject {
+  
+  var openMode: js.UndefOr[Nullable[Double]] = js.undefined
+  
+  var runMode: js.UndefOr[Nullable[Double]] = js.undefined
 }
-
 object OpenMode {
-  @scala.inline
-  def apply(
-    openMode: Nullable[Double] = null.asInstanceOf[Nullable[Double]],
-    runMode: Nullable[Double] = null.asInstanceOf[Nullable[Double]]
-  ): OpenMode = {
-    val __obj = js.Dynamic.literal(openMode = openMode.asInstanceOf[js.Any], runMode = runMode.asInstanceOf[js.Any])
+  
+  inline def apply(): OpenMode = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenMode]
   }
+  
+  extension [Self <: OpenMode](x: Self) {
+    
+    inline def setOpenMode(value: Nullable[Double]): Self = StObject.set(x, "openMode", value.asInstanceOf[js.Any])
+    
+    inline def setOpenModeNull: Self = StObject.set(x, "openMode", null)
+    
+    inline def setOpenModeUndefined: Self = StObject.set(x, "openMode", js.undefined)
+    
+    inline def setRunMode(value: Nullable[Double]): Self = StObject.set(x, "runMode", value.asInstanceOf[js.Any])
+    
+    inline def setRunModeNull: Self = StObject.set(x, "runMode", null)
+    
+    inline def setRunModeUndefined: Self = StObject.set(x, "runMode", js.undefined)
+  }
 }
-

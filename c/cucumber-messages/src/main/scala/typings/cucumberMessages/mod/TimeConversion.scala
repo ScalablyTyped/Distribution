@@ -1,7 +1,7 @@
 package typings.cucumberMessages.mod
 
-import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.IDuration
-import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.ITimestamp
+import typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.IDuration
+import typings.cucumberMessages.distSrcCucumberMessagesMod.io.cucumber.messages.ITimestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

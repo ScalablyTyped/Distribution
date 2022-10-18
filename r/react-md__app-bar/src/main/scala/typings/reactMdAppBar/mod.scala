@@ -2,11 +2,11 @@ package typings.reactMdAppBar
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdAppBar.appBarActionMod.AppBarActionProps
-import typings.reactMdAppBar.appBarMod.AppBarProps
-import typings.reactMdAppBar.appBarNavMod.AppBarNavProps
-import typings.reactMdAppBar.appBarTitleMod.AppBarTitleProps
-import typings.reactMdAppBar.useActionClassNameMod.AppBarActionClassNameProps
+import typings.reactMdAppBar.typesAppBarActionMod.AppBarActionProps
+import typings.reactMdAppBar.typesAppBarMod.AppBarProps
+import typings.reactMdAppBar.typesAppBarNavMod.AppBarNavProps
+import typings.reactMdAppBar.typesAppBarTitleMod.AppBarTitleProps
+import typings.reactMdAppBar.typesUseActionClassNameMod.AppBarActionClassNameProps
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLHeadingElement

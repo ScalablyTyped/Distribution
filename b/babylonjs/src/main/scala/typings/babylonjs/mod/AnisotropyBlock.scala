@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "AnisotropyBlock")
 @js.native
 open class AnisotropyBlock protected ()
-  extends typings.babylonjs.legacyMod.AnisotropyBlock {
+  extends typings.babylonjs.legacyLegacyMod.AnisotropyBlock {
   /**
     * Create a new AnisotropyBlock
     * @param name defines the block name

@@ -1,8 +1,7 @@
 package typings.esfxCancelable
 
-import typings.esfxDisposable.disposableMod.Disposable
+import typings.esfxDisposable.distTypesDisposableMod.Disposable
 import typings.std.Error
-import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -182,5 +181,13 @@ object mod {
     extends StObject
        with CancelSignal
   
-  type ErrorOptions = NonNullable[Any]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    2 extends std.ConstructorParameters<std.ErrorConstructor>['length'] ? std.ConstructorParameters<std.ErrorConstructor> extends [message: string | undefined, options: infer O | undefined] ? std.NonNullable<O> : never : never
+    }}}
+    */
+  @js.native
+  trait ErrorOptions extends StObject
 }

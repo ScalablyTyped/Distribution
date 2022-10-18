@@ -1,6 +1,6 @@
 package typings.reactRemoveScrollBar
 
-import typings.reactRemoveScrollBar.utilsMod.GapMode
+import typings.reactRemoveScrollBar.distEs5UtilsMod.GapMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

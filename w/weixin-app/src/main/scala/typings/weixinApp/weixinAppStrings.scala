@@ -80,10 +80,6 @@ object weixinAppStrings {
   inline def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
   
   @js.native
-  sealed trait Component extends StObject
-  inline def Component: Component = "Component".asInstanceOf[Component]
-  
-  @js.native
   sealed trait DELETE extends StObject
   inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
@@ -126,10 +122,6 @@ object weixinAppStrings {
   @js.native
   sealed trait PUT extends StObject
   inline def PUT: PUT = "PUT".asInstanceOf[PUT]
-  
-  @js.native
-  sealed trait RecordPropsDefinition extends StObject
-  inline def RecordPropsDefinition: RecordPropsDefinition = "RecordPropsDefinition".asInstanceOf[RecordPropsDefinition]
   
   @js.native
   sealed trait TRACE extends StObject

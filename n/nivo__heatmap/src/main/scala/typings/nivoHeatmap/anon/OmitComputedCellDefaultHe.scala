@@ -1,14 +1,12 @@
 package typings.nivoHeatmap.anon
 
-import typings.nivoHeatmap.typesMod.DefaultHeatMapDatum
+import typings.nivoHeatmap.distTypesTypesMod.DefaultHeatMapDatum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Omit<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<@nivo/heatmap.@nivo/heatmap/dist/types/types.DefaultHeatMapDatum>, 'labelTextColor'> */
+/* Inlined std.Omit<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<@nivo/heatmap.@nivo/heatmap/dist/types/types.DefaultHeatMapDatum>, 'borderColor'> */
 trait OmitComputedCellDefaultHe extends StObject {
-  
-  var borderColor: String
   
   var color: String
   
@@ -21,6 +19,8 @@ trait OmitComputedCellDefaultHe extends StObject {
   var id: String
   
   var label: String
+  
+  var labelTextColor: String
   
   var opacity: Double
   
@@ -37,25 +37,23 @@ trait OmitComputedCellDefaultHe extends StObject {
 object OmitComputedCellDefaultHe {
   
   inline def apply(
-    borderColor: String,
     color: String,
     data: DefaultHeatMapDatum,
     height: Double,
     id: String,
     label: String,
+    labelTextColor: String,
     opacity: Double,
     serieId: String,
     width: Double,
     x: Double,
     y: Double
   ): OmitComputedCellDefaultHe = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], serieId = serieId.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelTextColor = labelTextColor.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], serieId = serieId.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitComputedCellDefaultHe]
   }
   
   extension [Self <: OmitComputedCellDefaultHe](x: Self) {
-    
-    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
@@ -72,6 +70,8 @@ object OmitComputedCellDefaultHe {
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelTextColor(value: String): Self = StObject.set(x, "labelTextColor", value.asInstanceOf[js.Any])
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

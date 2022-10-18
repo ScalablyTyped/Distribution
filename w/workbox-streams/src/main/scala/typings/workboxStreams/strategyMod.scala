@@ -1,9 +1,9 @@
 package typings.workboxStreams
 
 import typings.std.HeadersInit
-import typings.workboxRouting.routeHandlerMod.RouteHandlerCallback
-import typings.workboxRouting.routeHandlerMod.RouteHandlerCallbackContext
-import typings.workboxStreams.streamSourceMod.StreamSource
+import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerCallback
+import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerCallbackContext
+import typings.workboxStreams.typesStreamSourceMod.StreamSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

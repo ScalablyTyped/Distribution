@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Received by an application when it is launched by another application with the expectation that it will return results back to the caller. */
-@JSGlobal("Windows.ApplicationModel.Activation.ProtocolForResultsActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Activation.ProtocolForResultsActivatedEventArgs")
 @js.native
-abstract class ProtocolForResultsActivatedEventArgs ()
+open class ProtocolForResultsActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Activation.ProtocolForResultsActivatedEventArgs {
   

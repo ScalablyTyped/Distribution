@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "SoundInstance")
 @js.native
 open class SoundInstance protected ()
-  extends typings.blackEngine.soundInstanceMod.SoundInstance {
-  def this(sound: typings.blackEngine.soundClipMod.SoundClip) = this()
+  extends typings.blackEngine.audioSoundInstanceMod.SoundInstance {
+  def this(sound: typings.blackEngine.audioSoundClipMod.SoundClip) = this()
 }

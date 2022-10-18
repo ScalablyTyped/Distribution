@@ -1,13 +1,13 @@
 package typings.mendixmodelsdk.mod.domainmodels
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.securityMod.security.AccessRuleContainerBase
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenDomainmodelsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenSecurityMod.security.AccessRuleContainerBase
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "domainmodels.AccessRule")
 @js.native
 open class AccessRule protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.AccessRule {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.domainmodels.AccessRule {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -43,7 +43,7 @@ object AccessRule {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AccessRule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AccessRule]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AccessRule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AccessRule]
   
   /**
     * Creates and returns a new AccessRule instance in the SDK and on the server.
@@ -51,7 +51,7 @@ object AccessRule {
     * of the parent security.AccessRuleContainerBase element passed as argument.
     */
   /* static member */
-  inline def createInAccessRuleContainerBaseUnderAccessRules(container: AccessRuleContainerBase): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AccessRule = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAccessRuleContainerBaseUnderAccessRules")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AccessRule]
+  inline def createInAccessRuleContainerBaseUnderAccessRules(container: AccessRuleContainerBase): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AccessRule = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAccessRuleContainerBaseUnderAccessRules")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AccessRule]
   
   /**
     * Creates and returns a new AccessRule instance in the SDK and on the server.
@@ -59,7 +59,7 @@ object AccessRule {
     * of the parent Entity element passed as argument.
     */
   /* static member */
-  inline def createInEntityUnderAccessRules(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Entity): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AccessRule = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityUnderAccessRules")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AccessRule]
+  inline def createInEntityUnderAccessRules(container: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Entity): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AccessRule = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityUnderAccessRules")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AccessRule]
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.AccessRule.structureTypeName")

@@ -1,7 +1,7 @@
 package typings.typeormAuroraDataApiDriver
 
-import typings.typeormAuroraDataApiDriver.createConnectionMod.DbType
-import typings.typeormAuroraDataApiDriver.simpleEnumEntityMod.ArrayDefinedStringEnumType
+import typings.typeormAuroraDataApiDriver.distTypesTestFunctionalPgBasicEntitySimpleEnumEntityMod.ArrayDefinedStringEnumType
+import typings.typeormAuroraDataApiDriver.distTypesTestFunctionalUtilsCreateConnectionMod.DbType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

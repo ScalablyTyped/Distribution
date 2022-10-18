@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/core", "InvalidPathException")
 @js.native
 open class InvalidPathException protected ()
-  extends typings.angularDevkitCore.virtualFsMod.InvalidPathException {
+  extends typings.angularDevkitCore.srcVirtualFsMod.InvalidPathException {
   def this(path: String) = this()
 }

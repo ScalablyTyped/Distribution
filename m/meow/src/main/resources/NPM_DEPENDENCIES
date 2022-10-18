@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "meow" : "10.1.4"
+      "meow" : "11.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "meow" : "10.1.4"
+      "meow" : "11.0.0"
     }
   ],
   "compile-devDependencies" : [

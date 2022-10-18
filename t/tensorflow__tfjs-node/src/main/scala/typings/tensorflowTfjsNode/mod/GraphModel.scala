@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsNode.mod
 
 import typings.tensorflowTfjsConverter.anon.Typeofio
-import typings.tensorflowTfjsConverter.graphModelMod.Url
-import typings.tensorflowTfjsCore.typesMod.LoadOptions
+import typings.tensorflowTfjsConverter.distExecutorGraphModelMod.Url
+import typings.tensorflowTfjsCore.distIoTypesMod.LoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

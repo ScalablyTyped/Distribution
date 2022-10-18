@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "MathEx")
 @js.native
 open class MathEx ()
-  extends typings.blackEngine.mathExMod.MathEx
+  extends typings.blackEngine.mathMathExMod.MathEx
 /* static members */
 object MathEx {
   

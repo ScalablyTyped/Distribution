@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Projection")
 @js.native
 open class Projection ()
-  extends typings.blackEngine.projectionMod.Projection
+  extends typings.blackEngine.physicsArcadeHelpersProjectionMod.Projection
 /* static members */
 object Projection {
   

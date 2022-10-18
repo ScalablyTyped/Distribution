@@ -1,13 +1,13 @@
 package typings.grommet.anon
 
-import typings.grommet.textMod.TextProps
+import typings.grommet.componentsTextMod.TextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ColumnName extends StObject {
   
-  var column: js.UndefOr[`7`] = js.undefined
+  var column: js.UndefOr[`31`] = js.undefined
   
   var name: js.UndefOr[TextProps] = js.undefined
   
@@ -22,7 +22,7 @@ object ColumnName {
   
   extension [Self <: ColumnName](x: Self) {
     
-    inline def setColumn(value: `7`): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: `31`): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     

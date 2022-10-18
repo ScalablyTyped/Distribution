@@ -64,7 +64,7 @@ open class ^ protected ()
   def this(database: String, username: String, password: String) = this()
   def this(database: String, username: String, password: String, options: Options) = this()
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def AccessDeniedError(): js.Error = js.native
   /* CompleteClass */
@@ -77,7 +77,7 @@ open class ^ protected ()
   @JSName("AccessDeniedError")
   var AccessDeniedError_Original: AccessDeniedError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def ConnectionError(): js.Error = js.native
   /* CompleteClass */
@@ -90,7 +90,7 @@ open class ^ protected ()
   @JSName("ConnectionError")
   var ConnectionError_Original: ConnectionError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def ConnectionRefusedError(): js.Error = js.native
   /* CompleteClass */
@@ -103,7 +103,7 @@ open class ^ protected ()
   @JSName("ConnectionRefusedError")
   var ConnectionRefusedError_Original: ConnectionRefusedError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def ConnectionTimedOutError(): js.Error = js.native
   /* CompleteClass */
@@ -116,7 +116,7 @@ open class ^ protected ()
   @JSName("ConnectionTimedOutError")
   var ConnectionTimedOutError_Original: ConnectionTimedOutError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def DatabaseError(): js.Error = js.native
   /* CompleteClass */
@@ -129,7 +129,7 @@ open class ^ protected ()
   @JSName("DatabaseError")
   var DatabaseError_Original: DatabaseError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def EmptyResultError(): js.Error = js.native
   /* CompleteClass */
@@ -142,7 +142,7 @@ open class ^ protected ()
   @JSName("EmptyResultError")
   var EmptyResultError_Original: EmptyResultError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def Error(): js.Error = js.native
   /* CompleteClass */
@@ -155,7 +155,7 @@ open class ^ protected ()
   @JSName("Error")
   var Error_Original: BaseError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def ExclusionConstraintError(): js.Error = js.native
   /* CompleteClass */
@@ -168,7 +168,7 @@ open class ^ protected ()
   @JSName("ExclusionConstraintError")
   var ExclusionConstraintError_Original: ExclusionConstraintError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def ForeignKeyConstraintError(): js.Error = js.native
   /* CompleteClass */
@@ -181,7 +181,7 @@ open class ^ protected ()
   @JSName("ForeignKeyConstraintError")
   var ForeignKeyConstraintError_Original: ForeignKeyConstraintError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def HostNotFoundError(): js.Error = js.native
   /* CompleteClass */
@@ -194,7 +194,7 @@ open class ^ protected ()
   @JSName("HostNotFoundError")
   var HostNotFoundError_Original: HostNotFoundError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def HostNotReachableError(): js.Error = js.native
   /* CompleteClass */
@@ -207,7 +207,7 @@ open class ^ protected ()
   @JSName("HostNotReachableError")
   var HostNotReachableError_Original: HostNotReachableError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def InvalidConnectionError(): js.Error = js.native
   /* CompleteClass */
@@ -220,7 +220,7 @@ open class ^ protected ()
   @JSName("InvalidConnectionError")
   var InvalidConnectionError_Original: InvalidConnectionError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def TimeoutError(): js.Error = js.native
   /* CompleteClass */
@@ -233,7 +233,7 @@ open class ^ protected ()
   @JSName("TimeoutError")
   var TimeoutError_Original: TimeoutError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def UniqueConstraintError(): js.Error = js.native
   /* CompleteClass */
@@ -246,7 +246,7 @@ open class ^ protected ()
   @JSName("UniqueConstraintError")
   var UniqueConstraintError_Original: UniqueConstraintError = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def ValidationError(): js.Error = js.native
   /* CompleteClass */
@@ -256,7 +256,7 @@ open class ^ protected ()
   /* CompleteClass */
   override def ValidationError(message: Unit, options: ErrorOptions): js.Error = js.native
   
-  /* standard es2022.error */
+  /* standard es5 */
   /* CompleteClass */
   override def ValidationErrorItem(): js.Error = js.native
   /* CompleteClass */

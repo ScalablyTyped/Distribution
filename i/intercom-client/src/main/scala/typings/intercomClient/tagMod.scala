@@ -1,6 +1,6 @@
 package typings.intercomClient
 
-import typings.intercomClient.anon.Id
+import typings.intercomClient.anon.IdString
 import typings.intercomClient.anon.Next
 import typings.intercomClient.intercomClientStrings.tag
 import typings.intercomClient.intercomClientStrings.tagDotlist
@@ -76,11 +76,11 @@ object tagMod {
     
     var name: String
     
-    var users: js.Array[Id]
+    var users: js.Array[IdString]
   }
   object TagCompanies {
     
-    inline def apply(name: String, users: js.Array[Id]): TagCompanies = {
+    inline def apply(name: String, users: js.Array[IdString]): TagCompanies = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagCompanies]
     }
@@ -89,9 +89,9 @@ object tagMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setUsers(value: js.Array[Id]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[IdString]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      inline def setUsersVarargs(value: Id*): Self = StObject.set(x, "users", js.Array(value*))
+      inline def setUsersVarargs(value: IdString*): Self = StObject.set(x, "users", js.Array(value*))
     }
   }
   
@@ -119,7 +119,7 @@ object tagMod {
   trait TagOper extends StObject
   object TagOper {
     
-    inline def TagCompanies(name: String, users: js.Array[Id]): typings.intercomClient.tagMod.TagCompanies = {
+    inline def TagCompanies(name: String, users: js.Array[IdString]): typings.intercomClient.tagMod.TagCompanies = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.intercomClient.tagMod.TagCompanies]
     }

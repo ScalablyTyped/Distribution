@@ -1,13 +1,13 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.redshiftMod.BooleanOptional
-import typings.awsSdk.redshiftMod.IntegerOptional
-import typings.awsSdk.redshiftMod.SnapshotSortingEntity
-import typings.awsSdk.redshiftMod.SnapshotSortingEntityList
-import typings.awsSdk.redshiftMod.String
-import typings.awsSdk.redshiftMod.TagKeyList
-import typings.awsSdk.redshiftMod.TagValueList
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsRedshiftMod.BooleanOptional
+import typings.awsSdk.clientsRedshiftMod.IntegerOptional
+import typings.awsSdk.clientsRedshiftMod.SnapshotSortingEntity
+import typings.awsSdk.clientsRedshiftMod.SnapshotSortingEntityList
+import typings.awsSdk.clientsRedshiftMod.String
+import typings.awsSdk.clientsRedshiftMod.TagKeyList
+import typings.awsSdk.clientsRedshiftMod.TagValueList
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

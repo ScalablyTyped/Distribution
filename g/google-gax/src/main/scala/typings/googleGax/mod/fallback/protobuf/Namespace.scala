@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.protobuf.Namespace")
 @js.native
 open class Namespace protected ()
-  extends typings.googleGax.fallbackMod.protobuf.Namespace {
+  extends typings.googleGax.buildSrcFallbackMod.protobuf.Namespace {
   /**
     * Constructs a new namespace instance.
     * @param name Namespace name

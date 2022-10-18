@@ -1,13 +1,13 @@
 package typings.blueprintjsTable.mod
 
 import typings.blueprintjsTable.anon.Col
-import typings.blueprintjsTable.cellTypesMod.FocusedCellCoordinates
-import typings.blueprintjsTable.esmRegionsMod.CellCoordinate
-import typings.blueprintjsTable.esmRegionsMod.IRegion
-import typings.blueprintjsTable.esmRegionsMod.IStyledRegionGroup
-import typings.blueprintjsTable.esmRegionsMod.NonNullRegion
-import typings.blueprintjsTable.esmRegionsMod.Region
-import typings.blueprintjsTable.esmRegionsMod.StyledRegionGroup
+import typings.blueprintjsTable.libEsmCommonCellTypesMod.FocusedCellCoordinates
+import typings.blueprintjsTable.libEsmRegionsMod.CellCoordinate
+import typings.blueprintjsTable.libEsmRegionsMod.IRegion
+import typings.blueprintjsTable.libEsmRegionsMod.IStyledRegionGroup
+import typings.blueprintjsTable.libEsmRegionsMod.NonNullRegion
+import typings.blueprintjsTable.libEsmRegionsMod.Region
+import typings.blueprintjsTable.libEsmRegionsMod.StyledRegionGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "Regions")
 @js.native
 open class Regions ()
-  extends typings.blueprintjsTable.esmRegionsMod.Regions
+  extends typings.blueprintjsTable.libEsmRegionsMod.Regions
 /* static members */
 object Regions {
   
@@ -147,7 +147,7 @@ object Regions {
     *
     * In this case, this method would return `RegionCardinality.CELLS`.
     */
-  inline def getRegionCardinality(region: Region): typings.blueprintjsTable.esmRegionsMod.RegionCardinality = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegionCardinality")(region.asInstanceOf[js.Any]).asInstanceOf[typings.blueprintjsTable.esmRegionsMod.RegionCardinality]
+  inline def getRegionCardinality(region: Region): typings.blueprintjsTable.libEsmRegionsMod.RegionCardinality = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegionCardinality")(region.asInstanceOf[js.Any]).asInstanceOf[typings.blueprintjsTable.libEsmRegionsMod.RegionCardinality]
   
   /**
     * Returns true if the regions contain a region that has FULL_COLUMNS

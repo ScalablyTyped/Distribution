@@ -1,10 +1,10 @@
 package typings.globby
 
 import typings.fastGlob.anon.PartialFileSystemAdapter
-import typings.fastGlob.typesMod.Pattern
+import typings.fastGlob.outTypesMod.Pattern
 import typings.globby.globbyBooleans.`true`
 import typings.globby.mod.ExpandDirectoriesOption
-import typings.node.nodeUrlMod.URL
+import typings.node.nodeColonurlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

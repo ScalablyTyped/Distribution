@@ -81,7 +81,7 @@ trait sharedb extends EventEmitter {
   var extraDbs: StringDictionary[ExtraDB] = js.native
   
   def getOps(
-    agent: typings.sharedb.agentMod.^[Any],
+    agent: typings.sharedb.libAgentMod.^[Any],
     index: String,
     id: String,
     from: Double,
@@ -91,7 +91,7 @@ trait sharedb extends EventEmitter {
   ): Unit = js.native
   
   def getOpsBulk(
-    agent: typings.sharedb.agentMod.^[Any],
+    agent: typings.sharedb.libAgentMod.^[Any],
     index: String,
     id: String,
     fromMap: Record[String, Double],
@@ -109,8 +109,8 @@ trait sharedb extends EventEmitter {
     *   is passed to any "connect" middleware listeners, which can use it for inspecting cookies
     *   or session info.
     */
-  def listen(stream: Duplex): typings.sharedb.agentMod.^[Any] = js.native
-  def listen(stream: Duplex, request: Any): typings.sharedb.agentMod.^[Any] = js.native
+  def listen(stream: Duplex): typings.sharedb.libAgentMod.^[Any] = js.native
+  def listen(stream: Duplex, request: Any): typings.sharedb.libAgentMod.^[Any] = js.native
   
   var milestoneDb: js.UndefOr[MilestoneDB] = js.native
   

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [right=0] - Represents the right border of this fuzzy set.
   */
 open class LeftSCurveFuzzySet ()
-  extends typings.yuka.yukaMod.LeftSCurveFuzzySet {
+  extends typings.yuka.srcYukaMod.LeftSCurveFuzzySet {
   def this(left: Double) = this()
   def this(left: Double, midpoint: Double) = this()
   def this(left: Unit, midpoint: Double) = this()

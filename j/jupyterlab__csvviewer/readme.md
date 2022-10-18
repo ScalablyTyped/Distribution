@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__csvviewer
 
-Typings are for version 2.2.4
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - CSV Widget
@@ -10,10 +10,10 @@ JupyterLab - CSV Widget
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/csvviewer |
 | Keywords           | - |
-| # releases         | 128 |
-| # dependents       | 7 |
-| # downloads        | 1472612 |
-| # stars            | 0 |
+| # releases         | 142 |
+| # dependents       | 0.0 |
+| # downloads        | 193633.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

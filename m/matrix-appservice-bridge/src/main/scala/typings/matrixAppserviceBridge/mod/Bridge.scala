@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.bridgeMod.BridgeOpts
+import typings.matrixAppserviceBridge.libBridgeMod.BridgeOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "Bridge")
 @js.native
 open class Bridge protected ()
-  extends typings.matrixAppserviceBridge.bridgeMod.Bridge {
+  extends typings.matrixAppserviceBridge.libBridgeMod.Bridge {
   /**
     * @param opts Options to pass to the bridge
     * @param opts.roomUpgradeOpts Options to supply to

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param items The items to add.
   */
 /* private */ open class Stage[T /* <: js.Function */] ()
-  extends typings.babylonjs.legacyMod.Stage[T]
+  extends typings.babylonjs.legacyLegacyMod.Stage[T]
 /* static members */
 object Stage {
   

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class Plane ()
   extends typings.yuka.mod.Plane {
-  def this(normal: typings.yuka.vector3Mod.Vector3) = this()
+  def this(normal: typings.yuka.srcMathVector3Mod.Vector3) = this()
   def this(normal: Unit, constant: Double) = this()
-  def this(normal: typings.yuka.vector3Mod.Vector3, constant: Double) = this()
+  def this(normal: typings.yuka.srcMathVector3Mod.Vector3, constant: Double) = this()
 }

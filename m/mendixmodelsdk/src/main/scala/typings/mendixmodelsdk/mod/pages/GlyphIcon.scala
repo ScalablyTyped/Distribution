@@ -1,15 +1,15 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.menusMod.menus.MenuItem
-import typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.WidgetValue
+import typings.mendixmodelsdk.srcGenMenusMod.menus.MenuItem
+import typings.mendixmodelsdk.srcGenNativepagesMod.nativepages.BottomBarItem
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.GlyphIcon")
 @js.native
 open class GlyphIcon protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.GlyphIcon {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.GlyphIcon {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object GlyphIcon {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GlyphIcon]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GlyphIcon]
   
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
@@ -50,7 +50,7 @@ object GlyphIcon {
     *  8.0.0 and higher
     */
   /* static member */
-  inline def createInBottomBarItemUnderIcon(container: BottomBarItem): typings.mendixmodelsdk.pagesMod.pages.GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GlyphIcon]
+  inline def createInBottomBarItemUnderIcon(container: BottomBarItem): typings.mendixmodelsdk.srcGenPagesMod.pages.GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GlyphIcon]
   
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
@@ -58,7 +58,7 @@ object GlyphIcon {
     * of the parent Button element passed as argument.
     */
   /* static member */
-  inline def createInButtonUnderIcon(container: typings.mendixmodelsdk.pagesMod.pages.Button): typings.mendixmodelsdk.pagesMod.pages.GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInButtonUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GlyphIcon]
+  inline def createInButtonUnderIcon(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Button): typings.mendixmodelsdk.srcGenPagesMod.pages.GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInButtonUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GlyphIcon]
   
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
@@ -66,7 +66,7 @@ object GlyphIcon {
     * of the parent ControlBarButton element passed as argument.
     */
   /* static member */
-  inline def createInControlBarButtonUnderIcon(container: typings.mendixmodelsdk.pagesMod.pages.ControlBarButton): typings.mendixmodelsdk.pagesMod.pages.GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GlyphIcon]
+  inline def createInControlBarButtonUnderIcon(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ControlBarButton): typings.mendixmodelsdk.srcGenPagesMod.pages.GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GlyphIcon]
   
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
@@ -74,7 +74,7 @@ object GlyphIcon {
     * of the parent menus.MenuItem element passed as argument.
     */
   /* static member */
-  inline def createInMenuItemUnderIcon(container: MenuItem): typings.mendixmodelsdk.pagesMod.pages.GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GlyphIcon]
+  inline def createInMenuItemUnderIcon(container: MenuItem): typings.mendixmodelsdk.srcGenPagesMod.pages.GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GlyphIcon]
   
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
@@ -85,7 +85,7 @@ object GlyphIcon {
     *  8.0.0 and higher
     */
   /* static member */
-  inline def createInWidgetValueUnderIcon(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GlyphIcon]
+  inline def createInWidgetValueUnderIcon(container: WidgetValue): typings.mendixmodelsdk.srcGenPagesMod.pages.GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GlyphIcon]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.GlyphIcon.structureTypeName")

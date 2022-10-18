@@ -1,6 +1,6 @@
 package typings.storybookAddons
 
-import typings.storybookAddons.typesMod.StorySortMethod
+import typings.storybookAddons.distTs3Dot9TypesMod.StorySortMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

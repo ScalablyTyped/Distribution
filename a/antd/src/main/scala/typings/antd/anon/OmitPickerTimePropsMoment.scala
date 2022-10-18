@@ -42,19 +42,19 @@ import typings.antd.antdStrings.text_
 import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.vertical
-import typings.antd.configProviderSizeContextMod.SizeType
-import typings.antd.generatePickerMod.DataPickerPlacement
-import typings.antd.generatePickerMod.PickerLocale
-import typings.antd.statusUtilsMod.InputStatus
+import typings.antd.libConfigProviderSizeContextMod.SizeType
+import typings.antd.libDatePickerGeneratePickerMod.DataPickerPlacement
+import typings.antd.libDatePickerGeneratePickerMod.PickerLocale
+import typings.antd.libUtilStatusUtilsMod.InputStatus
 import typings.moment.mod.Moment
-import typings.rcPicker.dateBodyMod.DateRender
-import typings.rcPicker.interfaceMod.CustomFormat
-import typings.rcPicker.interfaceMod.DisabledTimes
-import typings.rcPicker.interfaceMod.OnPanelChange
-import typings.rcPicker.interfaceMod.PanelMode
-import typings.rcPicker.monthBodyMod.MonthCellRender
-import typings.rcPicker.pickerMod.PickerRefConfig
-import typings.rcTrigger.interfaceMod.AlignType
+import typings.rcPicker.esInterfaceMod.CustomFormat
+import typings.rcPicker.esInterfaceMod.DisabledTimes
+import typings.rcPicker.esInterfaceMod.OnPanelChange
+import typings.rcPicker.esInterfaceMod.PanelMode
+import typings.rcPicker.esPanelsDatePanelDateBodyMod.DateRender
+import typings.rcPicker.esPanelsMonthPanelMonthBodyMod.MonthCellRender
+import typings.rcPicker.esPickerMod.PickerRefConfig
+import typings.rcTrigger.esInterfaceMod.AlignType
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
@@ -652,7 +652,7 @@ object OmitPickerTimePropsMoment {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setMonthCellRender(value: (Moment, /* locale */ typings.rcPicker.interfaceMod.Locale) => ReactNode): Self = StObject.set(x, "monthCellRender", js.Any.fromFunction2(value))
+    inline def setMonthCellRender(value: (Moment, /* locale */ typings.rcPicker.esInterfaceMod.Locale) => ReactNode): Self = StObject.set(x, "monthCellRender", js.Any.fromFunction2(value))
     
     inline def setMonthCellRenderUndefined: Self = StObject.set(x, "monthCellRender", js.undefined)
     

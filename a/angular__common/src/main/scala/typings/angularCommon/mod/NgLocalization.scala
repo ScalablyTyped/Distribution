@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/common", "NgLocalization")
+/* note: abstract class */ @JSImport("@angular/common", "NgLocalization")
 @js.native
-abstract class NgLocalization () extends StObject {
+open class NgLocalization () extends StObject {
   
   def getPluralCategory(value: Any): String = js.native
   def getPluralCategory(value: Any, locale: String): String = js.native

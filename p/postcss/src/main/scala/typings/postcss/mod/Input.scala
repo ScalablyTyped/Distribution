@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postcss", "Input")
 @js.native
 open class Input protected ()
-  extends typings.postcss.inputMod.default {
+  extends typings.postcss.libInputMod.default {
   /**
     * @param css  Input CSS source.
     * @param opts Process options.

@@ -19,6 +19,13 @@ trait Settings
     */
   var credentials: js.UndefOr[Clientemail] = js.undefined
   
+  /**
+    * The database name. If omitted, the default database will be used.
+    *
+    * @internal
+    */
+  var databaseId: js.UndefOr[String] = js.undefined
+  
   /** The hostname to connect to. */
   var host: js.UndefOr[String] = js.undefined
   
@@ -93,6 +100,10 @@ object Settings {
     inline def setCredentials(value: Clientemail): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    
+    inline def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseIdUndefined: Self = StObject.set(x, "databaseId", js.undefined)
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

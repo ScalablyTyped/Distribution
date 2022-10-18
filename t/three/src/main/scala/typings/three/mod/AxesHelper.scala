@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [size=1]
   */
 open class AxesHelper ()
-  extends typings.three.threeMod.AxesHelper {
+  extends typings.three.srcThreeMod.AxesHelper {
   def this(size: Double) = this()
 }

@@ -1,14 +1,14 @@
 package typings.reactSelect.anon
 
-import typings.reactSelect.selectMod.Props
-import typings.reactSelect.typesMod.GroupBase
+import typings.reactSelect.distDeclarationsSrcSelectMod.Props
+import typings.reactSelect.distDeclarationsSrcTypesMod.GroupBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InputIsHidden extends StObject {
   
-  var ariaSelection: (typings.reactSelect.accessibilityMod.AriaSelection[Any, Boolean]) | Null
+  var ariaSelection: (typings.reactSelect.distDeclarationsSrcAccessibilityMod.AriaSelection[Any, Boolean]) | Null
   
   var inputIsHidden: Unit
   
@@ -32,7 +32,7 @@ object InputIsHidden {
   
   extension [Self <: InputIsHidden](x: Self) {
     
-    inline def setAriaSelection(value: typings.reactSelect.accessibilityMod.AriaSelection[Any, Boolean]): Self = StObject.set(x, "ariaSelection", value.asInstanceOf[js.Any])
+    inline def setAriaSelection(value: typings.reactSelect.distDeclarationsSrcAccessibilityMod.AriaSelection[Any, Boolean]): Self = StObject.set(x, "ariaSelection", value.asInstanceOf[js.Any])
     
     inline def setAriaSelectionNull: Self = StObject.set(x, "ariaSelection", null)
     

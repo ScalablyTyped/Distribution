@@ -1,11 +1,11 @@
 package typings.backlogJs
 
-import typings.backlogJs.errorMod.BacklogErrorNameType
-import typings.backlogJs.optionMod.Issue.SortKey
-import typings.backlogJs.optionMod.Order
-import typings.backlogJs.optionMod.Project.IssueTypeColor
-import typings.backlogJs.optionMod.Project.ProjectStatusColor
-import typings.backlogJs.optionMod.Project.TextFormattingRule
+import typings.backlogJs.distTypesErrorMod.BacklogErrorNameType
+import typings.backlogJs.distTypesOptionMod.Issue.SortKey
+import typings.backlogJs.distTypesOptionMod.Order
+import typings.backlogJs.distTypesOptionMod.Project.IssueTypeColor
+import typings.backlogJs.distTypesOptionMod.Project.ProjectStatusColor
+import typings.backlogJs.distTypesOptionMod.Project.TextFormattingRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

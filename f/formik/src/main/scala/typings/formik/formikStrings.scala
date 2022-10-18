@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object formikStrings {
   
   @js.native
-  sealed trait FormikErrors extends StObject
-  inline def FormikErrors: FormikErrors = "FormikErrors".asInstanceOf[FormikErrors]
-  
-  @js.native
-  sealed trait FormikTouched extends StObject
-  inline def FormikTouched: FormikTouched = "FormikTouched".asInstanceOf[FormikTouched]
-  
-  @js.native
   sealed trait additions extends StObject
   inline def additions: additions = "additions".asInstanceOf[additions]
   

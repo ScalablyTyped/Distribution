@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof core.Number` */
 object coreNumberMod {
   
-  @JSImport("core-js/library/core/number", JSImport.Namespace)
+  @JSImport("core-js/core/number", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("core-js/library/core/number", "EPSILON")
+  @JSImport("core-js/core/number", "EPSILON")
   @js.native
   def EPSILON: Double = js.native
   inline def EPSILON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPSILON")(x.asInstanceOf[js.Any])
   
-  @JSImport("core-js/library/core/number", "MAX_SAFE_INTEGER")
+  @JSImport("core-js/core/number", "MAX_SAFE_INTEGER")
   @js.native
   def MAX_SAFE_INTEGER: Double = js.native
   inline def MAX_SAFE_INTEGER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_SAFE_INTEGER")(x.asInstanceOf[js.Any])
   
-  @JSImport("core-js/library/core/number", "MIN_SAFE_INTEGER")
+  @JSImport("core-js/core/number", "MIN_SAFE_INTEGER")
   @js.native
   def MIN_SAFE_INTEGER: Double = js.native
   inline def MIN_SAFE_INTEGER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_SAFE_INTEGER")(x.asInstanceOf[js.Any])

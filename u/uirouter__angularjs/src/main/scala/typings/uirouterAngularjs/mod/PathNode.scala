@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class PathNode protected ()
   extends typings.uirouterCore.mod.PathNode {
   /** Creates a copy of a PathNode */
-  def this(node: typings.uirouterCore.pathNodeMod.PathNode) = this()
+  def this(node: typings.uirouterCore.libPathPathNodeMod.PathNode) = this()
   /** Creates a new (empty) PathNode for a State */
-  def this(state: typings.uirouterCore.stateObjectMod.StateObject) = this()
+  def this(state: typings.uirouterCore.libStateStateObjectMod.StateObject) = this()
 }
 /* static members */
 object PathNode {
@@ -24,5 +24,5 @@ object PathNode {
     * Returns a clone of the PathNode
     * @deprecated use instance method `node.clone()`
     */
-  inline def clone(node: typings.uirouterCore.pathNodeMod.PathNode): typings.uirouterCore.pathNodeMod.PathNode = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(node.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.pathNodeMod.PathNode]
+  inline def clone(node: typings.uirouterCore.libPathPathNodeMod.PathNode): typings.uirouterCore.libPathPathNodeMod.PathNode = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(node.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.libPathPathNodeMod.PathNode]
 }

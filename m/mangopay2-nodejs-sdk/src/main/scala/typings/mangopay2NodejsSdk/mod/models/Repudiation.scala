@@ -2,12 +2,12 @@ package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.PartialRepudiationData
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REPUDIATION
-import typings.mangopay2NodejsSdk.moneyMod.money.MoneyData
-import typings.mangopay2NodejsSdk.repudiationMod.repudiation.RepudiationData
-import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionNature
-import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionStatus
-import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionType
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
+import typings.mangopay2NodejsSdk.typingsModelsMoneyMod.money.MoneyData
+import typings.mangopay2NodejsSdk.typingsModelsRepudiationMod.repudiation.RepudiationData
+import typings.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionNature
+import typings.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionStatus
+import typings.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,7 +101,7 @@ open class Repudiation protected ()
     * Contains info about the reason for refund
     */
   /* CompleteClass */
-  var RefundReason: typings.mangopay2NodejsSdk.refundMod.refund.RefundReason = js.native
+  var RefundReason: typings.mangopay2NodejsSdk.typingsModelsRefundMod.refund.RefundReason = js.native
   
   /**
     * The result code

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.PartialIBaseButtonProps
-import typings.officeUiFabricReact.baseButtonMod.IBaseButtonProps
+import typings.officeUiFabricReact.libComponentsButtonBaseButtonMod.IBaseButtonProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

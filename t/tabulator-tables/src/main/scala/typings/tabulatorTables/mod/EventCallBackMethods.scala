@@ -24,6 +24,8 @@ trait EventCallBackMethods extends StObject {
   
   def cellEditing(cell: CellComponent): Unit
   
+  def cellMouseDown(event: UIEvent, cell: CellComponent): Unit
+  
   def cellMouseEnter(event: UIEvent, cell: CellComponent): Unit
   
   def cellMouseLeave(event: UIEvent, cell: CellComponent): Unit
@@ -33,6 +35,8 @@ trait EventCallBackMethods extends StObject {
   def cellMouseOut(event: UIEvent, cell: CellComponent): Unit
   
   def cellMouseOver(event: UIEvent, cell: CellComponent): Unit
+  
+  def cellMouseUp(event: UIEvent, cell: CellComponent): Unit
   
   def cellTap(event: UIEvent, cell: CellComponent): Unit
   
@@ -90,6 +94,10 @@ trait EventCallBackMethods extends StObject {
   
   def groupDblTap(event: UIEvent, group: GroupComponent): Unit
   
+  def groupMouseDown(event: UIEvent, group: GroupComponent): Unit
+  
+  def groupMouseUp(event: UIEvent, group: GroupComponent): Unit
+  
   def groupTap(event: UIEvent, group: GroupComponent): Unit
   
   def groupTapHold(event: UIEvent, group: GroupComponent): Unit
@@ -103,6 +111,10 @@ trait EventCallBackMethods extends StObject {
   def headerDblClick(event: UIEvent, column: ColumnComponent): Unit
   
   def headerDblTap(event: UIEvent, column: ColumnComponent): Unit
+  
+  def headerMouseDown(event: UIEvent, column: ColumnComponent): Unit
+  
+  def headerMouseUp(event: UIEvent, column: ColumnComponent): Unit
   
   def headerTap(event: UIEvent, column: ColumnComponent): Unit
   
@@ -156,6 +168,8 @@ trait EventCallBackMethods extends StObject {
   
   def rowDeselected(row: RowComponent): Unit
   
+  def rowMouseDown(event: UIEvent, row: RowComponent): Unit
+  
   def rowMouseEnter(event: UIEvent, row: RowComponent): Unit
   
   def rowMouseLeave(event: UIEvent, row: RowComponent): Unit
@@ -165,6 +179,8 @@ trait EventCallBackMethods extends StObject {
   def rowMouseOut(event: UIEvent, row: RowComponent): Unit
   
   def rowMouseOver(event: UIEvent, row: RowComponent): Unit
+  
+  def rowMouseUp(event: UIEvent, row: RowComponent): Unit
   
   def rowMoved(row: RowComponent): Unit
   
@@ -205,11 +221,13 @@ object EventCallBackMethods {
     cellEditCancelled: CellComponent => Unit,
     cellEdited: CellComponent => Unit,
     cellEditing: CellComponent => Unit,
+    cellMouseDown: (UIEvent, CellComponent) => Unit,
     cellMouseEnter: (UIEvent, CellComponent) => Unit,
     cellMouseLeave: (UIEvent, CellComponent) => Unit,
     cellMouseMove: (UIEvent, CellComponent) => Unit,
     cellMouseOut: (UIEvent, CellComponent) => Unit,
     cellMouseOver: (UIEvent, CellComponent) => Unit,
+    cellMouseUp: (UIEvent, CellComponent) => Unit,
     cellTap: (UIEvent, CellComponent) => Unit,
     cellTapHold: (UIEvent, CellComponent) => Unit,
     clipboardCopied: String => Unit,
@@ -238,6 +256,8 @@ object EventCallBackMethods {
     groupContext: (UIEvent, GroupComponent) => Unit,
     groupDblClick: (UIEvent, GroupComponent) => Unit,
     groupDblTap: (UIEvent, GroupComponent) => Unit,
+    groupMouseDown: (UIEvent, GroupComponent) => Unit,
+    groupMouseUp: (UIEvent, GroupComponent) => Unit,
     groupTap: (UIEvent, GroupComponent) => Unit,
     groupTapHold: (UIEvent, GroupComponent) => Unit,
     groupVisibilityChanged: (GroupComponent, Boolean) => Unit,
@@ -245,6 +265,8 @@ object EventCallBackMethods {
     headerContext: (UIEvent, ColumnComponent) => Unit,
     headerDblClick: (UIEvent, ColumnComponent) => Unit,
     headerDblTap: (UIEvent, ColumnComponent) => Unit,
+    headerMouseDown: (UIEvent, ColumnComponent) => Unit,
+    headerMouseUp: (UIEvent, ColumnComponent) => Unit,
     headerTap: (UIEvent, ColumnComponent) => Unit,
     headerTapHold: (UIEvent, ColumnComponent) => Unit,
     historyRedo: (HistoryAction, Any, js.Array[Any]) => Unit,
@@ -271,11 +293,13 @@ object EventCallBackMethods {
     rowDblTap: (UIEvent, RowComponent) => Unit,
     rowDeleted: RowComponent => Unit,
     rowDeselected: RowComponent => Unit,
+    rowMouseDown: (UIEvent, RowComponent) => Unit,
     rowMouseEnter: (UIEvent, RowComponent) => Unit,
     rowMouseLeave: (UIEvent, RowComponent) => Unit,
     rowMouseMove: (UIEvent, RowComponent) => Unit,
     rowMouseOut: (UIEvent, RowComponent) => Unit,
     rowMouseOver: (UIEvent, RowComponent) => Unit,
+    rowMouseUp: (UIEvent, RowComponent) => Unit,
     rowMoved: RowComponent => Unit,
     rowMoving: RowComponent => Unit,
     rowResized: RowComponent => Unit,
@@ -291,7 +315,7 @@ object EventCallBackMethods {
     tableDestroyed: () => Unit,
     validationFailed: (CellComponent, Any, js.Array[Validator]) => Unit
   ): EventCallBackMethods = {
-    val __obj = js.Dynamic.literal(ajaxError = js.Any.fromFunction0(ajaxError), cellClick = js.Any.fromFunction2(cellClick), cellContext = js.Any.fromFunction2(cellContext), cellDblClick = js.Any.fromFunction2(cellDblClick), cellDblTap = js.Any.fromFunction2(cellDblTap), cellEditCancelled = js.Any.fromFunction1(cellEditCancelled), cellEdited = js.Any.fromFunction1(cellEdited), cellEditing = js.Any.fromFunction1(cellEditing), cellMouseEnter = js.Any.fromFunction2(cellMouseEnter), cellMouseLeave = js.Any.fromFunction2(cellMouseLeave), cellMouseMove = js.Any.fromFunction2(cellMouseMove), cellMouseOut = js.Any.fromFunction2(cellMouseOut), cellMouseOver = js.Any.fromFunction2(cellMouseOver), cellTap = js.Any.fromFunction2(cellTap), cellTapHold = js.Any.fromFunction2(cellTapHold), clipboardCopied = js.Any.fromFunction1(clipboardCopied), clipboardPasteError = js.Any.fromFunction1(clipboardPasteError), clipboardPasted = js.Any.fromFunction3(clipboardPasted), columnMoved = js.Any.fromFunction2(columnMoved), columnResized = js.Any.fromFunction1(columnResized), columnTitleChanged = js.Any.fromFunction1(columnTitleChanged), columnVisibilityChanged = js.Any.fromFunction2(columnVisibilityChanged), dataChanged = js.Any.fromFunction1(dataChanged), dataFiltered = js.Any.fromFunction2(dataFiltered), dataFiltering = js.Any.fromFunction1(dataFiltering), dataGrouped = js.Any.fromFunction1(dataGrouped), dataGrouping = js.Any.fromFunction0(dataGrouping), dataLoadError = js.Any.fromFunction1(dataLoadError), dataLoaded = js.Any.fromFunction1(dataLoaded), dataLoading = js.Any.fromFunction1(dataLoading), dataProcessed = js.Any.fromFunction0(dataProcessed), dataProcessing = js.Any.fromFunction0(dataProcessing), dataSorted = js.Any.fromFunction2(dataSorted), dataSorting = js.Any.fromFunction1(dataSorting), dataTreeRowCollapsed = js.Any.fromFunction2(dataTreeRowCollapsed), dataTreeRowExpanded = js.Any.fromFunction2(dataTreeRowExpanded), downloadComplete = js.Any.fromFunction0(downloadComplete), groupClick = js.Any.fromFunction2(groupClick), groupContext = js.Any.fromFunction2(groupContext), groupDblClick = js.Any.fromFunction2(groupDblClick), groupDblTap = js.Any.fromFunction2(groupDblTap), groupTap = js.Any.fromFunction2(groupTap), groupTapHold = js.Any.fromFunction2(groupTapHold), groupVisibilityChanged = js.Any.fromFunction2(groupVisibilityChanged), headerClick = js.Any.fromFunction2(headerClick), headerContext = js.Any.fromFunction2(headerContext), headerDblClick = js.Any.fromFunction2(headerDblClick), headerDblTap = js.Any.fromFunction2(headerDblTap), headerTap = js.Any.fromFunction2(headerTap), headerTapHold = js.Any.fromFunction2(headerTapHold), historyRedo = js.Any.fromFunction3(historyRedo), historyUndo = js.Any.fromFunction3(historyUndo), htmlImported = js.Any.fromFunction0(htmlImported), htmlImporting = js.Any.fromFunction0(htmlImporting), localized = js.Any.fromFunction2(localized), movableRowsElementDrop = js.Any.fromFunction3(movableRowsElementDrop), movableRowsReceived = js.Any.fromFunction3(movableRowsReceived), movableRowsReceivedFailed = js.Any.fromFunction3(movableRowsReceivedFailed), movableRowsReceivingStart = js.Any.fromFunction2(movableRowsReceivingStart), movableRowsReceivingStop = js.Any.fromFunction1(movableRowsReceivingStop), movableRowsSendingStart = js.Any.fromFunction1(movableRowsSendingStart), movableRowsSendingStop = js.Any.fromFunction1(movableRowsSendingStop), movableRowsSent = js.Any.fromFunction3(movableRowsSent), movableRowsSentFailed = js.Any.fromFunction3(movableRowsSentFailed), pageLoaded = js.Any.fromFunction1(pageLoaded), renderComplete = js.Any.fromFunction0(renderComplete), renderStarted = js.Any.fromFunction0(renderStarted), rowAdded = js.Any.fromFunction1(rowAdded), rowClick = js.Any.fromFunction2(rowClick), rowContext = js.Any.fromFunction2(rowContext), rowDblClick = js.Any.fromFunction2(rowDblClick), rowDblTap = js.Any.fromFunction2(rowDblTap), rowDeleted = js.Any.fromFunction1(rowDeleted), rowDeselected = js.Any.fromFunction1(rowDeselected), rowMouseEnter = js.Any.fromFunction2(rowMouseEnter), rowMouseLeave = js.Any.fromFunction2(rowMouseLeave), rowMouseMove = js.Any.fromFunction2(rowMouseMove), rowMouseOut = js.Any.fromFunction2(rowMouseOut), rowMouseOver = js.Any.fromFunction2(rowMouseOver), rowMoved = js.Any.fromFunction1(rowMoved), rowMoving = js.Any.fromFunction1(rowMoving), rowResized = js.Any.fromFunction1(rowResized), rowSelected = js.Any.fromFunction1(rowSelected), rowSelectionChanged = js.Any.fromFunction0(rowSelectionChanged), rowTap = js.Any.fromFunction2(rowTap), rowTapHold = js.Any.fromFunction2(rowTapHold), rowUpdated = js.Any.fromFunction1(rowUpdated), scrollHorizontal = js.Any.fromFunction1(scrollHorizontal), scrollVertical = js.Any.fromFunction1(scrollVertical), tableBuilding = js.Any.fromFunction0(tableBuilding), tableBuilt = js.Any.fromFunction0(tableBuilt), tableDestroyed = js.Any.fromFunction0(tableDestroyed), validationFailed = js.Any.fromFunction3(validationFailed))
+    val __obj = js.Dynamic.literal(ajaxError = js.Any.fromFunction0(ajaxError), cellClick = js.Any.fromFunction2(cellClick), cellContext = js.Any.fromFunction2(cellContext), cellDblClick = js.Any.fromFunction2(cellDblClick), cellDblTap = js.Any.fromFunction2(cellDblTap), cellEditCancelled = js.Any.fromFunction1(cellEditCancelled), cellEdited = js.Any.fromFunction1(cellEdited), cellEditing = js.Any.fromFunction1(cellEditing), cellMouseDown = js.Any.fromFunction2(cellMouseDown), cellMouseEnter = js.Any.fromFunction2(cellMouseEnter), cellMouseLeave = js.Any.fromFunction2(cellMouseLeave), cellMouseMove = js.Any.fromFunction2(cellMouseMove), cellMouseOut = js.Any.fromFunction2(cellMouseOut), cellMouseOver = js.Any.fromFunction2(cellMouseOver), cellMouseUp = js.Any.fromFunction2(cellMouseUp), cellTap = js.Any.fromFunction2(cellTap), cellTapHold = js.Any.fromFunction2(cellTapHold), clipboardCopied = js.Any.fromFunction1(clipboardCopied), clipboardPasteError = js.Any.fromFunction1(clipboardPasteError), clipboardPasted = js.Any.fromFunction3(clipboardPasted), columnMoved = js.Any.fromFunction2(columnMoved), columnResized = js.Any.fromFunction1(columnResized), columnTitleChanged = js.Any.fromFunction1(columnTitleChanged), columnVisibilityChanged = js.Any.fromFunction2(columnVisibilityChanged), dataChanged = js.Any.fromFunction1(dataChanged), dataFiltered = js.Any.fromFunction2(dataFiltered), dataFiltering = js.Any.fromFunction1(dataFiltering), dataGrouped = js.Any.fromFunction1(dataGrouped), dataGrouping = js.Any.fromFunction0(dataGrouping), dataLoadError = js.Any.fromFunction1(dataLoadError), dataLoaded = js.Any.fromFunction1(dataLoaded), dataLoading = js.Any.fromFunction1(dataLoading), dataProcessed = js.Any.fromFunction0(dataProcessed), dataProcessing = js.Any.fromFunction0(dataProcessing), dataSorted = js.Any.fromFunction2(dataSorted), dataSorting = js.Any.fromFunction1(dataSorting), dataTreeRowCollapsed = js.Any.fromFunction2(dataTreeRowCollapsed), dataTreeRowExpanded = js.Any.fromFunction2(dataTreeRowExpanded), downloadComplete = js.Any.fromFunction0(downloadComplete), groupClick = js.Any.fromFunction2(groupClick), groupContext = js.Any.fromFunction2(groupContext), groupDblClick = js.Any.fromFunction2(groupDblClick), groupDblTap = js.Any.fromFunction2(groupDblTap), groupMouseDown = js.Any.fromFunction2(groupMouseDown), groupMouseUp = js.Any.fromFunction2(groupMouseUp), groupTap = js.Any.fromFunction2(groupTap), groupTapHold = js.Any.fromFunction2(groupTapHold), groupVisibilityChanged = js.Any.fromFunction2(groupVisibilityChanged), headerClick = js.Any.fromFunction2(headerClick), headerContext = js.Any.fromFunction2(headerContext), headerDblClick = js.Any.fromFunction2(headerDblClick), headerDblTap = js.Any.fromFunction2(headerDblTap), headerMouseDown = js.Any.fromFunction2(headerMouseDown), headerMouseUp = js.Any.fromFunction2(headerMouseUp), headerTap = js.Any.fromFunction2(headerTap), headerTapHold = js.Any.fromFunction2(headerTapHold), historyRedo = js.Any.fromFunction3(historyRedo), historyUndo = js.Any.fromFunction3(historyUndo), htmlImported = js.Any.fromFunction0(htmlImported), htmlImporting = js.Any.fromFunction0(htmlImporting), localized = js.Any.fromFunction2(localized), movableRowsElementDrop = js.Any.fromFunction3(movableRowsElementDrop), movableRowsReceived = js.Any.fromFunction3(movableRowsReceived), movableRowsReceivedFailed = js.Any.fromFunction3(movableRowsReceivedFailed), movableRowsReceivingStart = js.Any.fromFunction2(movableRowsReceivingStart), movableRowsReceivingStop = js.Any.fromFunction1(movableRowsReceivingStop), movableRowsSendingStart = js.Any.fromFunction1(movableRowsSendingStart), movableRowsSendingStop = js.Any.fromFunction1(movableRowsSendingStop), movableRowsSent = js.Any.fromFunction3(movableRowsSent), movableRowsSentFailed = js.Any.fromFunction3(movableRowsSentFailed), pageLoaded = js.Any.fromFunction1(pageLoaded), renderComplete = js.Any.fromFunction0(renderComplete), renderStarted = js.Any.fromFunction0(renderStarted), rowAdded = js.Any.fromFunction1(rowAdded), rowClick = js.Any.fromFunction2(rowClick), rowContext = js.Any.fromFunction2(rowContext), rowDblClick = js.Any.fromFunction2(rowDblClick), rowDblTap = js.Any.fromFunction2(rowDblTap), rowDeleted = js.Any.fromFunction1(rowDeleted), rowDeselected = js.Any.fromFunction1(rowDeselected), rowMouseDown = js.Any.fromFunction2(rowMouseDown), rowMouseEnter = js.Any.fromFunction2(rowMouseEnter), rowMouseLeave = js.Any.fromFunction2(rowMouseLeave), rowMouseMove = js.Any.fromFunction2(rowMouseMove), rowMouseOut = js.Any.fromFunction2(rowMouseOut), rowMouseOver = js.Any.fromFunction2(rowMouseOver), rowMouseUp = js.Any.fromFunction2(rowMouseUp), rowMoved = js.Any.fromFunction1(rowMoved), rowMoving = js.Any.fromFunction1(rowMoving), rowResized = js.Any.fromFunction1(rowResized), rowSelected = js.Any.fromFunction1(rowSelected), rowSelectionChanged = js.Any.fromFunction0(rowSelectionChanged), rowTap = js.Any.fromFunction2(rowTap), rowTapHold = js.Any.fromFunction2(rowTapHold), rowUpdated = js.Any.fromFunction1(rowUpdated), scrollHorizontal = js.Any.fromFunction1(scrollHorizontal), scrollVertical = js.Any.fromFunction1(scrollVertical), tableBuilding = js.Any.fromFunction0(tableBuilding), tableBuilt = js.Any.fromFunction0(tableBuilt), tableDestroyed = js.Any.fromFunction0(tableDestroyed), validationFailed = js.Any.fromFunction3(validationFailed))
     __obj.asInstanceOf[EventCallBackMethods]
   }
   
@@ -313,6 +337,8 @@ object EventCallBackMethods {
     
     inline def setCellEditing(value: CellComponent => Unit): Self = StObject.set(x, "cellEditing", js.Any.fromFunction1(value))
     
+    inline def setCellMouseDown(value: (UIEvent, CellComponent) => Unit): Self = StObject.set(x, "cellMouseDown", js.Any.fromFunction2(value))
+    
     inline def setCellMouseEnter(value: (UIEvent, CellComponent) => Unit): Self = StObject.set(x, "cellMouseEnter", js.Any.fromFunction2(value))
     
     inline def setCellMouseLeave(value: (UIEvent, CellComponent) => Unit): Self = StObject.set(x, "cellMouseLeave", js.Any.fromFunction2(value))
@@ -322,6 +348,8 @@ object EventCallBackMethods {
     inline def setCellMouseOut(value: (UIEvent, CellComponent) => Unit): Self = StObject.set(x, "cellMouseOut", js.Any.fromFunction2(value))
     
     inline def setCellMouseOver(value: (UIEvent, CellComponent) => Unit): Self = StObject.set(x, "cellMouseOver", js.Any.fromFunction2(value))
+    
+    inline def setCellMouseUp(value: (UIEvent, CellComponent) => Unit): Self = StObject.set(x, "cellMouseUp", js.Any.fromFunction2(value))
     
     inline def setCellTap(value: (UIEvent, CellComponent) => Unit): Self = StObject.set(x, "cellTap", js.Any.fromFunction2(value))
     
@@ -379,6 +407,10 @@ object EventCallBackMethods {
     
     inline def setGroupDblTap(value: (UIEvent, GroupComponent) => Unit): Self = StObject.set(x, "groupDblTap", js.Any.fromFunction2(value))
     
+    inline def setGroupMouseDown(value: (UIEvent, GroupComponent) => Unit): Self = StObject.set(x, "groupMouseDown", js.Any.fromFunction2(value))
+    
+    inline def setGroupMouseUp(value: (UIEvent, GroupComponent) => Unit): Self = StObject.set(x, "groupMouseUp", js.Any.fromFunction2(value))
+    
     inline def setGroupTap(value: (UIEvent, GroupComponent) => Unit): Self = StObject.set(x, "groupTap", js.Any.fromFunction2(value))
     
     inline def setGroupTapHold(value: (UIEvent, GroupComponent) => Unit): Self = StObject.set(x, "groupTapHold", js.Any.fromFunction2(value))
@@ -392,6 +424,10 @@ object EventCallBackMethods {
     inline def setHeaderDblClick(value: (UIEvent, ColumnComponent) => Unit): Self = StObject.set(x, "headerDblClick", js.Any.fromFunction2(value))
     
     inline def setHeaderDblTap(value: (UIEvent, ColumnComponent) => Unit): Self = StObject.set(x, "headerDblTap", js.Any.fromFunction2(value))
+    
+    inline def setHeaderMouseDown(value: (UIEvent, ColumnComponent) => Unit): Self = StObject.set(x, "headerMouseDown", js.Any.fromFunction2(value))
+    
+    inline def setHeaderMouseUp(value: (UIEvent, ColumnComponent) => Unit): Self = StObject.set(x, "headerMouseUp", js.Any.fromFunction2(value))
     
     inline def setHeaderTap(value: (UIEvent, ColumnComponent) => Unit): Self = StObject.set(x, "headerTap", js.Any.fromFunction2(value))
     
@@ -445,6 +481,8 @@ object EventCallBackMethods {
     
     inline def setRowDeselected(value: RowComponent => Unit): Self = StObject.set(x, "rowDeselected", js.Any.fromFunction1(value))
     
+    inline def setRowMouseDown(value: (UIEvent, RowComponent) => Unit): Self = StObject.set(x, "rowMouseDown", js.Any.fromFunction2(value))
+    
     inline def setRowMouseEnter(value: (UIEvent, RowComponent) => Unit): Self = StObject.set(x, "rowMouseEnter", js.Any.fromFunction2(value))
     
     inline def setRowMouseLeave(value: (UIEvent, RowComponent) => Unit): Self = StObject.set(x, "rowMouseLeave", js.Any.fromFunction2(value))
@@ -454,6 +492,8 @@ object EventCallBackMethods {
     inline def setRowMouseOut(value: (UIEvent, RowComponent) => Unit): Self = StObject.set(x, "rowMouseOut", js.Any.fromFunction2(value))
     
     inline def setRowMouseOver(value: (UIEvent, RowComponent) => Unit): Self = StObject.set(x, "rowMouseOver", js.Any.fromFunction2(value))
+    
+    inline def setRowMouseUp(value: (UIEvent, RowComponent) => Unit): Self = StObject.set(x, "rowMouseUp", js.Any.fromFunction2(value))
     
     inline def setRowMoved(value: RowComponent => Unit): Self = StObject.set(x, "rowMoved", js.Any.fromFunction1(value))
     

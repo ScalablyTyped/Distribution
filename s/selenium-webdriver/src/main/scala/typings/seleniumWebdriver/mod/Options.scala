@@ -1,6 +1,6 @@
 package typings.seleniumWebdriver.mod
 
-import typings.seleniumWebdriver.capabilitiesMod.ITimeouts
+import typings.seleniumWebdriver.libCapabilitiesMod.ITimeouts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

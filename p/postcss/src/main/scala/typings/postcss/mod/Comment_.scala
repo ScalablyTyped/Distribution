@@ -1,6 +1,6 @@
 package typings.postcss.mod
 
-import typings.postcss.commentMod.CommentProps
+import typings.postcss.libCommentMod.CommentProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postcss", "Comment")
 @js.native
 open class Comment_ ()
-  extends typings.postcss.commentMod.default {
+  extends typings.postcss.libCommentMod.default {
   def this(defaults: CommentProps) = this()
 }

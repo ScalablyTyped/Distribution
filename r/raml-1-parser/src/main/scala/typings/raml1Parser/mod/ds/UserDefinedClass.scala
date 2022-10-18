@@ -1,6 +1,6 @@
 package typings.raml1Parser.mod.ds
 
-import typings.ramlDefinitionSystem.ramlDefinitionSystemMod.IHighLevelNode
+import typings.ramlDefinitionSystem.mod.IHighLevelNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("raml-1-parser", "ds.UserDefinedClass")
 @js.native
 open class UserDefinedClass protected ()
-  extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.UserDefinedClass {
+  extends typings.ramlDefinitionSystem.mod.UserDefinedClass {
   def this(
     name: String,
-    universe: typings.ramlDefinitionSystem.ramlDefinitionSystemMod.Universe,
+    universe: typings.ramlDefinitionSystem.mod.Universe,
     hl: IHighLevelNode,
     path: String,
     description: String

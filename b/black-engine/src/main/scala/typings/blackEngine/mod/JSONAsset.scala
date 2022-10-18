@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "JSONAsset")
 @js.native
 open class JSONAsset protected ()
-  extends typings.blackEngine.jsonassetMod.JSONAsset {
+  extends typings.blackEngine.assetsJsonassetMod.JSONAsset {
   def this(name: String, url: String) = this()
 }

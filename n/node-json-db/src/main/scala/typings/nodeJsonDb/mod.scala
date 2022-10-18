@@ -1,6 +1,6 @@
 package typings.nodeJsonDb
 
-import typings.nodeJsonDb.jsonDBConfigMod.JsonDBConfig
+import typings.nodeJsonDb.distLibJsonDBConfigMod.JsonDBConfig
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object mod {
   @JSImport("node-json-db", "Config")
   @js.native
   open class Config protected ()
-    extends typings.nodeJsonDb.jsonDBConfigMod.Config {
+    extends typings.nodeJsonDb.distLibJsonDBConfigMod.Config {
     def this(filename: String) = this()
     def this(filename: String, saveOnPush: Boolean) = this()
     def this(filename: String, saveOnPush: Boolean, humanReadable: Boolean) = this()
@@ -45,7 +45,7 @@ object mod {
   @JSImport("node-json-db", "DataError")
   @js.native
   open class DataError protected ()
-    extends typings.nodeJsonDb.errorsMod.DataError {
+    extends typings.nodeJsonDb.distLibErrorsMod.DataError {
     def this(message: String, id: Number) = this()
     def this(message: String, id: Number, inner: js.Error) = this()
   }
@@ -53,7 +53,7 @@ object mod {
   @JSImport("node-json-db", "DatabaseError")
   @js.native
   open class DatabaseError protected ()
-    extends typings.nodeJsonDb.errorsMod.DatabaseError {
+    extends typings.nodeJsonDb.distLibErrorsMod.DatabaseError {
     def this(message: String, id: Number) = this()
     def this(message: String, id: Number, inner: js.Error) = this()
   }

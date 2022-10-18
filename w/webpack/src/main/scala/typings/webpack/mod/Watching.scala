@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack", "Watching")
+/* note: abstract class */ @JSImport("webpack", "Watching")
 @js.native
-abstract class Watching () extends StObject {
+open class Watching () extends StObject {
   
   var blocked: Boolean = js.native
   

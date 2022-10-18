@@ -1,6 +1,6 @@
 package typings.redisSearch.anon
 
-import typings.redisSearch.commandsMod.SearchDocumentValue
+import typings.redisSearch.distCommandsMod.SearchDocumentValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

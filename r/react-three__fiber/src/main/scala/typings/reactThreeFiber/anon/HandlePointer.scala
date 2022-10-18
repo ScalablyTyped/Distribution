@@ -1,6 +1,6 @@
 package typings.reactThreeFiber.anon
 
-import typings.reactThreeFiber.eventsMod.DomEvent
+import typings.reactThreeFiber.distDeclarationsSrcCoreEventsMod.DomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.matrixBotSdk.mod
 
-import typings.matrixBotSdk.presenceEventMod.PresenceEventContent
+import typings.matrixBotSdk.libModelsEventsPresenceEventMod.PresenceEventContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "Presence")
 @js.native
 open class Presence protected ()
-  extends typings.matrixBotSdk.presenceMod.Presence {
+  extends typings.matrixBotSdk.libModelsPresenceMod.Presence {
   def this(presence: PresenceEventContent) = this()
 }

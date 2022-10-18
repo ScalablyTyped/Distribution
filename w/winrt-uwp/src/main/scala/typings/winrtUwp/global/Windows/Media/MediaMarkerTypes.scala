@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a static list of media marker types. */
-@JSGlobal("Windows.Media.MediaMarkerTypes")
+/* note: abstract class */ @JSGlobal("Windows.Media.MediaMarkerTypes")
 @js.native
-abstract class MediaMarkerTypes ()
+open class MediaMarkerTypes ()
   extends StObject
      with typings.winrtUwp.Windows.Media.MediaMarkerTypes
 object MediaMarkerTypes {

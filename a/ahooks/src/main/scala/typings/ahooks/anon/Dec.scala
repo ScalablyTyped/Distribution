@@ -1,6 +1,6 @@
 package typings.ahooks.anon
 
-import typings.ahooks.useCounterMod.ValueParam
+import typings.ahooks.libUseCounterMod.ValueParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

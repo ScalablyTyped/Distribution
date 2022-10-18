@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Static class that provides known RUIM file paths. */
-@JSGlobal("Windows.Networking.NetworkOperators.KnownRuimFilePaths")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.KnownRuimFilePaths")
 @js.native
-abstract class KnownRuimFilePaths ()
+open class KnownRuimFilePaths ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.KnownRuimFilePaths
 object KnownRuimFilePaths {

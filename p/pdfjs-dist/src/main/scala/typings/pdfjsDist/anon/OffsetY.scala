@@ -8,17 +8,17 @@ trait OffsetY extends StObject {
   
   var canvas: Any
   
-  var offsetX: Any
+  var offsetX: Double
   
-  var offsetY: Any
+  var offsetY: Double
   
-  var scaleX: Any
+  var scaleX: Double
   
-  var scaleY: Any
+  var scaleY: Double
 }
 object OffsetY {
   
-  inline def apply(canvas: Any, offsetX: Any, offsetY: Any, scaleX: Any, scaleY: Any): OffsetY = {
+  inline def apply(canvas: Any, offsetX: Double, offsetY: Double, scaleX: Double, scaleY: Double): OffsetY = {
     val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], scaleX = scaleX.asInstanceOf[js.Any], scaleY = scaleY.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetY]
   }
@@ -27,12 +27,12 @@ object OffsetY {
     
     inline def setCanvas(value: Any): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    inline def setOffsetX(value: Any): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    inline def setOffsetY(value: Any): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    inline def setScaleX(value: Any): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
-    inline def setScaleY(value: Any): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
   }
 }

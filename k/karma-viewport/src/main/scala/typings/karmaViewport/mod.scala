@@ -1,7 +1,7 @@
 package typings.karmaViewport
 
 import typings.karmaViewport.anon.PartialViewportConfigurat
-import typings.karmaViewport.viewportMod.Viewport
+import typings.karmaViewport.distAdapterViewportMod.Viewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,6 +24,7 @@ object mod {
     * This is the exported configuration type for usage within Karma, because the
     * context selector and breakpoints are optional (merged with defaults).
     */
+  /* augmented module */
   object karmaAugmentingMod {
     
     trait ConfigOptions extends StObject {

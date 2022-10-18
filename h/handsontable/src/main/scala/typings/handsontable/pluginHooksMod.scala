@@ -1,21 +1,17 @@
 package typings.handsontable
 
 import org.scalablytyped.runtime.NumberDictionary
+import typings.handsontable.`3rdpartyWalkontableSrcCalculatorViewportColumnsMod`.ViewportColumnsCalculator
+import typings.handsontable.`3rdpartyWalkontableSrcCellRangeMod`.default
 import typings.handsontable.anon.SkipRender
 import typings.handsontable.anon.Value
 import typings.handsontable.anon.ValueAny
 import typings.handsontable.anon.ValueCellValue
-import typings.handsontable.columnSortingColumnSortingMod.Config
 import typings.handsontable.commonMod.CellChange
 import typings.handsontable.commonMod.CellValue
 import typings.handsontable.commonMod.ChangeSource
 import typings.handsontable.commonMod.RangeType
 import typings.handsontable.commonMod.RowObject
-import typings.handsontable.contextMenuContextMenuMod.MenuItemConfig
-import typings.handsontable.contextMenuContextMenuMod.PredefinedMenuItemKey
-import typings.handsontable.contextMenuMod.ContextMenu
-import typings.handsontable.dropdownMenuMod.DropdownMenu
-import typings.handsontable.filtersFiltersMod.ColumnConditions
 import typings.handsontable.handsontableInts.`-1`
 import typings.handsontable.handsontableInts.`0`
 import typings.handsontable.handsontableStrings.afterAddChild
@@ -215,13 +211,17 @@ import typings.handsontable.handsontableStrings.right
 import typings.handsontable.handsontableStrings.set
 import typings.handsontable.handsontableStrings.up
 import typings.handsontable.handsontableStrings.vertical
-import typings.handsontable.mergeCellsMergeCellsMod.Settings
-import typings.handsontable.rangeMod.default
+import typings.handsontable.pluginsColumnSortingColumnSortingMod.Config
+import typings.handsontable.pluginsContextMenuContextMenuMod.MenuItemConfig
+import typings.handsontable.pluginsContextMenuContextMenuMod.PredefinedMenuItemKey
+import typings.handsontable.pluginsContextMenuMod.ContextMenu
+import typings.handsontable.pluginsDropdownMenuMod.DropdownMenu
+import typings.handsontable.pluginsFiltersFiltersMod.ColumnConditions
+import typings.handsontable.pluginsMergeCellsMergeCellsMod.Settings
+import typings.handsontable.pluginsUndoRedoUndoRedoMod.Action
 import typings.handsontable.selectionMod.SelectionController
 import typings.handsontable.settingsMod.CellProperties
 import typings.handsontable.settingsMod.GridSettings
-import typings.handsontable.undoRedoUndoRedoMod.Action
-import typings.handsontable.viewportColumnsMod.ViewportColumnsCalculator
 import typings.std.HTMLTableCellElement
 import typings.std.HTMLTableHeaderCellElement
 import typings.std.KeyboardEvent
@@ -294,7 +294,7 @@ object pluginHooksMod {
       key: afterModifyTransformEnd,
       callback: js.UndefOr[
           js.Function3[
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* rowTransformDir */ `-1` | `0`, 
             /* colTransformDir */ `-1` | `0`, 
             Unit
@@ -305,7 +305,7 @@ object pluginHooksMod {
       key: afterModifyTransformEnd,
       callback: js.UndefOr[
           js.Function3[
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* rowTransformDir */ `-1` | `0`, 
             /* colTransformDir */ `-1` | `0`, 
             Unit
@@ -318,7 +318,7 @@ object pluginHooksMod {
       callback: js.Array[
           js.UndefOr[
             js.Function3[
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* rowTransformDir */ `-1` | `0`, 
               /* colTransformDir */ `-1` | `0`, 
               Unit
@@ -331,7 +331,7 @@ object pluginHooksMod {
       callback: js.Array[
           js.UndefOr[
             js.Function3[
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* rowTransformDir */ `-1` | `0`, 
               /* colTransformDir */ `-1` | `0`, 
               Unit
@@ -344,7 +344,7 @@ object pluginHooksMod {
       key: afterModifyTransformStart,
       callback: js.UndefOr[
           js.Function3[
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* rowTransformDir */ `-1` | `0`, 
             /* colTransformDir */ `-1` | `0`, 
             Unit
@@ -355,7 +355,7 @@ object pluginHooksMod {
       key: afterModifyTransformStart,
       callback: js.UndefOr[
           js.Function3[
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* rowTransformDir */ `-1` | `0`, 
             /* colTransformDir */ `-1` | `0`, 
             Unit
@@ -368,7 +368,7 @@ object pluginHooksMod {
       callback: js.Array[
           js.UndefOr[
             js.Function3[
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* rowTransformDir */ `-1` | `0`, 
               /* colTransformDir */ `-1` | `0`, 
               Unit
@@ -381,7 +381,7 @@ object pluginHooksMod {
       callback: js.Array[
           js.UndefOr[
             js.Function3[
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* rowTransformDir */ `-1` | `0`, 
               /* colTransformDir */ `-1` | `0`, 
               Unit
@@ -394,7 +394,7 @@ object pluginHooksMod {
       key: beforeAutofillInsidePopulate,
       callback: js.UndefOr[
           js.Function4[
-            /* index */ typings.handsontable.coordsMod.default, 
+            /* index */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* direction */ up | down | left | right, 
             /* input */ js.Array[js.Array[CellValue]], 
             /* deltas */ js.Array[Any], 
@@ -406,7 +406,7 @@ object pluginHooksMod {
       key: beforeAutofillInsidePopulate,
       callback: js.UndefOr[
           js.Function4[
-            /* index */ typings.handsontable.coordsMod.default, 
+            /* index */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* direction */ up | down | left | right, 
             /* input */ js.Array[js.Array[CellValue]], 
             /* deltas */ js.Array[Any], 
@@ -420,7 +420,7 @@ object pluginHooksMod {
       callback: js.Array[
           js.UndefOr[
             js.Function4[
-              /* index */ typings.handsontable.coordsMod.default, 
+              /* index */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* direction */ up | down | left | right, 
               /* input */ js.Array[js.Array[CellValue]], 
               /* deltas */ js.Array[Any], 
@@ -434,7 +434,7 @@ object pluginHooksMod {
       callback: js.Array[
           js.UndefOr[
             js.Function4[
-              /* index */ typings.handsontable.coordsMod.default, 
+              /* index */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* direction */ up | down | left | right, 
               /* input */ js.Array[js.Array[CellValue]], 
               /* deltas */ js.Array[Any], 
@@ -2146,7 +2146,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -2158,7 +2158,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -2172,7 +2172,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -2186,7 +2186,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -2238,7 +2238,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -2250,7 +2250,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -2264,7 +2264,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -2278,7 +2278,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -2292,7 +2292,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -2304,7 +2304,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -2318,7 +2318,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -2332,7 +2332,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -2346,7 +2346,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -2358,7 +2358,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -2372,7 +2372,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -2386,7 +2386,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -2400,7 +2400,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -2412,7 +2412,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -2426,7 +2426,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -2440,7 +2440,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -5075,7 +5075,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -5087,7 +5087,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -5101,7 +5101,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -5115,7 +5115,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -5129,7 +5129,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function4[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             /* controller */ SelectionController, 
             Unit
@@ -5142,7 +5142,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function4[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             /* controller */ SelectionController, 
             Unit
@@ -5157,7 +5157,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function4[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               /* controller */ SelectionController, 
               Unit
@@ -5172,7 +5172,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function4[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               /* controller */ SelectionController, 
               Unit
@@ -5187,7 +5187,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -5199,7 +5199,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -5213,7 +5213,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -5227,7 +5227,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -5241,7 +5241,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function4[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             /* controller */ SelectionController, 
             Unit
@@ -5254,7 +5254,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function4[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             /* controller */ SelectionController, 
             Unit
@@ -5269,7 +5269,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function4[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               /* controller */ SelectionController, 
               Unit
@@ -5284,7 +5284,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function4[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               /* controller */ SelectionController, 
               Unit
@@ -5299,7 +5299,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -5311,7 +5311,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -5325,7 +5325,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -5339,7 +5339,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -5869,78 +5869,138 @@ object pluginHooksMod {
     @JSName("add")
     def add_beforeSetRangeEnd(
       key: beforeSetRangeEnd,
-      callback: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+      callback: js.UndefOr[
+          js.Function1[
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ]
     ): Hooks = js.native
     @JSName("add")
     def add_beforeSetRangeEnd(
       key: beforeSetRangeEnd,
-      callback: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]],
+      callback: js.UndefOr[
+          js.Function1[
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
     @JSName("add")
     def add_beforeSetRangeEnd(
       key: beforeSetRangeEnd,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
     ): Hooks = js.native
     @JSName("add")
     def add_beforeSetRangeEnd(
       key: beforeSetRangeEnd,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
     @JSName("add")
     def add_beforeSetRangeStart(
       key: beforeSetRangeStart,
-      callback: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+      callback: js.UndefOr[
+          js.Function1[
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ]
     ): Hooks = js.native
     @JSName("add")
     def add_beforeSetRangeStart(
       key: beforeSetRangeStart,
-      callback: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]],
+      callback: js.UndefOr[
+          js.Function1[
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
     @JSName("add")
     def add_beforeSetRangeStart(
       key: beforeSetRangeStart,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
     ): Hooks = js.native
     @JSName("add")
     def add_beforeSetRangeStart(
       key: beforeSetRangeStart,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
     @JSName("add")
     def add_beforeSetRangeStartOnly(
       key: beforeSetRangeStartOnly,
-      callback: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+      callback: js.UndefOr[
+          js.Function1[
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ]
     ): Hooks = js.native
     @JSName("add")
     def add_beforeSetRangeStartOnly(
       key: beforeSetRangeStartOnly,
-      callback: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]],
+      callback: js.UndefOr[
+          js.Function1[
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
     @JSName("add")
     def add_beforeSetRangeStartOnly(
       key: beforeSetRangeStartOnly,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
     ): Hooks = js.native
     @JSName("add")
     def add_beforeSetRangeStartOnly(
       key: beforeSetRangeStartOnly,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
@@ -6776,52 +6836,92 @@ object pluginHooksMod {
     @JSName("add")
     def add_modifyTransformEnd(
       key: modifyTransformEnd,
-      callback: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+      callback: js.UndefOr[
+          js.Function1[
+            /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ]
     ): Hooks = js.native
     @JSName("add")
     def add_modifyTransformEnd(
       key: modifyTransformEnd,
-      callback: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]],
+      callback: js.UndefOr[
+          js.Function1[
+            /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
     @JSName("add")
     def add_modifyTransformEnd(
       key: modifyTransformEnd,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
     ): Hooks = js.native
     @JSName("add")
     def add_modifyTransformEnd(
       key: modifyTransformEnd,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
     @JSName("add")
     def add_modifyTransformStart(
       key: modifyTransformStart,
-      callback: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+      callback: js.UndefOr[
+          js.Function1[
+            /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ]
     ): Hooks = js.native
     @JSName("add")
     def add_modifyTransformStart(
       key: modifyTransformStart,
-      callback: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]],
+      callback: js.UndefOr[
+          js.Function1[
+            /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
     @JSName("add")
     def add_modifyTransformStart(
       key: modifyTransformStart,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
     ): Hooks = js.native
     @JSName("add")
     def add_modifyTransformStart(
       key: modifyTransformStart,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
@@ -6901,18 +7001,24 @@ object pluginHooksMod {
     def getBucket(context: typings.handsontable.coreMod.default): Bucket = js.native
     
     def getRegistered(): js.Array[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
       ] = js.native
     
-    def has(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any): Boolean = js.native
     def has(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
+    ): Boolean = js.native
+    def has(
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any,
       context: typings.handsontable.coreMod.default
     ): Boolean = js.native
     
-    def isDeprecated(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any): Boolean = js.native
+    def isDeprecated(
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
+    ): Boolean = js.native
     
-    def isRegistered(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any): Boolean = js.native
+    def isRegistered(
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
+    ): Boolean = js.native
     
     def once(
       key: afterAutofill,
@@ -6972,7 +7078,7 @@ object pluginHooksMod {
       key: afterModifyTransformEnd,
       callback: js.UndefOr[
           js.Function3[
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* rowTransformDir */ `-1` | `0`, 
             /* colTransformDir */ `-1` | `0`, 
             Unit
@@ -6983,7 +7089,7 @@ object pluginHooksMod {
       key: afterModifyTransformEnd,
       callback: js.UndefOr[
           js.Function3[
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* rowTransformDir */ `-1` | `0`, 
             /* colTransformDir */ `-1` | `0`, 
             Unit
@@ -6996,7 +7102,7 @@ object pluginHooksMod {
       callback: js.Array[
           js.UndefOr[
             js.Function3[
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* rowTransformDir */ `-1` | `0`, 
               /* colTransformDir */ `-1` | `0`, 
               Unit
@@ -7009,7 +7115,7 @@ object pluginHooksMod {
       callback: js.Array[
           js.UndefOr[
             js.Function3[
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* rowTransformDir */ `-1` | `0`, 
               /* colTransformDir */ `-1` | `0`, 
               Unit
@@ -7022,7 +7128,7 @@ object pluginHooksMod {
       key: afterModifyTransformStart,
       callback: js.UndefOr[
           js.Function3[
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* rowTransformDir */ `-1` | `0`, 
             /* colTransformDir */ `-1` | `0`, 
             Unit
@@ -7033,7 +7139,7 @@ object pluginHooksMod {
       key: afterModifyTransformStart,
       callback: js.UndefOr[
           js.Function3[
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* rowTransformDir */ `-1` | `0`, 
             /* colTransformDir */ `-1` | `0`, 
             Unit
@@ -7046,7 +7152,7 @@ object pluginHooksMod {
       callback: js.Array[
           js.UndefOr[
             js.Function3[
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* rowTransformDir */ `-1` | `0`, 
               /* colTransformDir */ `-1` | `0`, 
               Unit
@@ -7059,7 +7165,7 @@ object pluginHooksMod {
       callback: js.Array[
           js.UndefOr[
             js.Function3[
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* rowTransformDir */ `-1` | `0`, 
               /* colTransformDir */ `-1` | `0`, 
               Unit
@@ -7072,7 +7178,7 @@ object pluginHooksMod {
       key: beforeAutofillInsidePopulate,
       callback: js.UndefOr[
           js.Function4[
-            /* index */ typings.handsontable.coordsMod.default, 
+            /* index */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* direction */ up | down | left | right, 
             /* input */ js.Array[js.Array[CellValue]], 
             /* deltas */ js.Array[Any], 
@@ -7084,7 +7190,7 @@ object pluginHooksMod {
       key: beforeAutofillInsidePopulate,
       callback: js.UndefOr[
           js.Function4[
-            /* index */ typings.handsontable.coordsMod.default, 
+            /* index */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* direction */ up | down | left | right, 
             /* input */ js.Array[js.Array[CellValue]], 
             /* deltas */ js.Array[Any], 
@@ -7098,7 +7204,7 @@ object pluginHooksMod {
       callback: js.Array[
           js.UndefOr[
             js.Function4[
-              /* index */ typings.handsontable.coordsMod.default, 
+              /* index */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* direction */ up | down | left | right, 
               /* input */ js.Array[js.Array[CellValue]], 
               /* deltas */ js.Array[Any], 
@@ -7112,7 +7218,7 @@ object pluginHooksMod {
       callback: js.Array[
           js.UndefOr[
             js.Function4[
-              /* index */ typings.handsontable.coordsMod.default, 
+              /* index */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* direction */ up | down | left | right, 
               /* input */ js.Array[js.Array[CellValue]], 
               /* deltas */ js.Array[Any], 
@@ -8824,7 +8930,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -8836,7 +8942,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -8850,7 +8956,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -8864,7 +8970,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -8916,7 +9022,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -8928,7 +9034,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -8942,7 +9048,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -8956,7 +9062,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -8970,7 +9076,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -8982,7 +9088,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -8996,7 +9102,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -9010,7 +9116,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -9024,7 +9130,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -9036,7 +9142,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -9050,7 +9156,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -9064,7 +9170,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -9078,7 +9184,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -9090,7 +9196,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -9104,7 +9210,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -9118,7 +9224,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -11753,7 +11859,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -11765,7 +11871,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -11779,7 +11885,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -11793,7 +11899,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -11807,7 +11913,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function4[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             /* controller */ SelectionController, 
             Unit
@@ -11820,7 +11926,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function4[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             /* controller */ SelectionController, 
             Unit
@@ -11835,7 +11941,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function4[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               /* controller */ SelectionController, 
               Unit
@@ -11850,7 +11956,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function4[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               /* controller */ SelectionController, 
               Unit
@@ -11865,7 +11971,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -11877,7 +11983,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -11891,7 +11997,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -11905,7 +12011,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -11919,7 +12025,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function4[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             /* controller */ SelectionController, 
             Unit
@@ -11932,7 +12038,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function4[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             /* controller */ SelectionController, 
             Unit
@@ -11947,7 +12053,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function4[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               /* controller */ SelectionController, 
               Unit
@@ -11962,7 +12068,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function4[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               /* controller */ SelectionController, 
               Unit
@@ -11977,7 +12083,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -11989,7 +12095,7 @@ object pluginHooksMod {
       callback: js.UndefOr[
           js.Function3[
             /* event */ MouseEvent, 
-            /* coords */ typings.handsontable.coordsMod.default, 
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
             /* TD */ HTMLTableCellElement, 
             Unit
           ]
@@ -12003,7 +12109,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -12017,7 +12123,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -12547,78 +12653,138 @@ object pluginHooksMod {
     @JSName("once")
     def once_beforeSetRangeEnd(
       key: beforeSetRangeEnd,
-      callback: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+      callback: js.UndefOr[
+          js.Function1[
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ]
     ): Unit = js.native
     @JSName("once")
     def once_beforeSetRangeEnd(
       key: beforeSetRangeEnd,
-      callback: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]],
+      callback: js.UndefOr[
+          js.Function1[
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
     @JSName("once")
     def once_beforeSetRangeEnd(
       key: beforeSetRangeEnd,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
     ): Unit = js.native
     @JSName("once")
     def once_beforeSetRangeEnd(
       key: beforeSetRangeEnd,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
     @JSName("once")
     def once_beforeSetRangeStart(
       key: beforeSetRangeStart,
-      callback: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+      callback: js.UndefOr[
+          js.Function1[
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ]
     ): Unit = js.native
     @JSName("once")
     def once_beforeSetRangeStart(
       key: beforeSetRangeStart,
-      callback: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]],
+      callback: js.UndefOr[
+          js.Function1[
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
     @JSName("once")
     def once_beforeSetRangeStart(
       key: beforeSetRangeStart,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
     ): Unit = js.native
     @JSName("once")
     def once_beforeSetRangeStart(
       key: beforeSetRangeStart,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
     @JSName("once")
     def once_beforeSetRangeStartOnly(
       key: beforeSetRangeStartOnly,
-      callback: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+      callback: js.UndefOr[
+          js.Function1[
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ]
     ): Unit = js.native
     @JSName("once")
     def once_beforeSetRangeStartOnly(
       key: beforeSetRangeStartOnly,
-      callback: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]],
+      callback: js.UndefOr[
+          js.Function1[
+            /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
     @JSName("once")
     def once_beforeSetRangeStartOnly(
       key: beforeSetRangeStartOnly,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
     ): Unit = js.native
     @JSName("once")
     def once_beforeSetRangeStartOnly(
       key: beforeSetRangeStartOnly,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
@@ -13454,52 +13620,92 @@ object pluginHooksMod {
     @JSName("once")
     def once_modifyTransformEnd(
       key: modifyTransformEnd,
-      callback: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+      callback: js.UndefOr[
+          js.Function1[
+            /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ]
     ): Unit = js.native
     @JSName("once")
     def once_modifyTransformEnd(
       key: modifyTransformEnd,
-      callback: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]],
+      callback: js.UndefOr[
+          js.Function1[
+            /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
     @JSName("once")
     def once_modifyTransformEnd(
       key: modifyTransformEnd,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
     ): Unit = js.native
     @JSName("once")
     def once_modifyTransformEnd(
       key: modifyTransformEnd,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
     @JSName("once")
     def once_modifyTransformStart(
       key: modifyTransformStart,
-      callback: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+      callback: js.UndefOr[
+          js.Function1[
+            /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ]
     ): Unit = js.native
     @JSName("once")
     def once_modifyTransformStart(
       key: modifyTransformStart,
-      callback: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]],
+      callback: js.UndefOr[
+          js.Function1[
+            /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+            Unit
+          ]
+        ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
     @JSName("once")
     def once_modifyTransformStart(
       key: modifyTransformStart,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
     ): Unit = js.native
     @JSName("once")
     def once_modifyTransformStart(
       key: modifyTransformStart,
       callback: js.Array[
-          js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
@@ -13571,18 +13777,18 @@ object pluginHooksMod {
     def register(key: String): Unit = js.native
     
     def remove(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any,
       callback: js.Function0[Unit]
     ): Boolean = js.native
     def remove(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any,
       callback: js.Function0[Unit],
       context: typings.handsontable.coreMod.default
     ): Boolean = js.native
     
     def run(
       context: typings.handsontable.coreMod.default,
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any,
       p1: js.UndefOr[Any],
       p2: js.UndefOr[Any],
       p3: js.UndefOr[Any],
@@ -13900,7 +14106,7 @@ object pluginHooksMod {
         js.Array[
           js.UndefOr[
             js.Function3[
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* rowTransformDir */ `-1` | `0`, 
               /* colTransformDir */ `-1` | `0`, 
               Unit
@@ -13913,7 +14119,7 @@ object pluginHooksMod {
         js.Array[
           js.UndefOr[
             js.Function3[
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* rowTransformDir */ `-1` | `0`, 
               /* colTransformDir */ `-1` | `0`, 
               Unit
@@ -13945,7 +14151,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -13962,7 +14168,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -13975,7 +14181,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -13988,7 +14194,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -14001,7 +14207,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -14380,7 +14586,7 @@ object pluginHooksMod {
         js.Array[
           js.UndefOr[
             js.Function4[
-              /* index */ typings.handsontable.coordsMod.default, 
+              /* index */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* direction */ up | down | left | right, 
               /* input */ js.Array[js.Array[CellValue]], 
               /* deltas */ js.Array[Any], 
@@ -14649,7 +14855,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -14662,7 +14868,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function4[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               /* controller */ SelectionController, 
               Unit
@@ -14676,7 +14882,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -14689,7 +14895,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function4[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               /* controller */ SelectionController, 
               Unit
@@ -14703,7 +14909,7 @@ object pluginHooksMod {
           js.UndefOr[
             js.Function3[
               /* event */ MouseEvent, 
-              /* coords */ typings.handsontable.coordsMod.default, 
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
               /* TD */ HTMLTableCellElement, 
               Unit
             ]
@@ -14828,19 +15034,34 @@ object pluginHooksMod {
     
     var beforeSetRangeEnd: js.UndefOr[
         js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
       ] = js.undefined
     
     var beforeSetRangeStart: js.UndefOr[
         js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
       ] = js.undefined
     
     var beforeSetRangeStartOnly: js.UndefOr[
         js.Array[
-          js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
       ] = js.undefined
     
@@ -15049,13 +15270,23 @@ object pluginHooksMod {
     
     var modifyTransformEnd: js.UndefOr[
         js.Array[
-          js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
       ] = js.undefined
     
     var modifyTransformStart: js.UndefOr[
         js.Array[
-          js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+          js.UndefOr[
+            js.Function1[
+              /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+              Unit
+            ]
+          ]
         ]
       ] = js.undefined
     
@@ -15704,7 +15935,7 @@ object pluginHooksMod {
         value: js.Array[
               js.UndefOr[
                 js.Function3[
-                  /* coords */ typings.handsontable.coordsMod.default, 
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                   /* rowTransformDir */ `-1` | `0`, 
                   /* colTransformDir */ `-1` | `0`, 
                   Unit
@@ -15718,7 +15949,7 @@ object pluginHooksMod {
       inline def setAfterModifyTransformEndVarargs(
         value: (js.UndefOr[
               js.Function3[
-                /* coords */ typings.handsontable.coordsMod.default, 
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                 /* rowTransformDir */ `-1` | `0`, 
                 /* colTransformDir */ `-1` | `0`, 
                 Unit
@@ -15730,7 +15961,7 @@ object pluginHooksMod {
         value: js.Array[
               js.UndefOr[
                 js.Function3[
-                  /* coords */ typings.handsontable.coordsMod.default, 
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                   /* rowTransformDir */ `-1` | `0`, 
                   /* colTransformDir */ `-1` | `0`, 
                   Unit
@@ -15744,7 +15975,7 @@ object pluginHooksMod {
       inline def setAfterModifyTransformStartVarargs(
         value: (js.UndefOr[
               js.Function3[
-                /* coords */ typings.handsontable.coordsMod.default, 
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                 /* rowTransformDir */ `-1` | `0`, 
                 /* colTransformDir */ `-1` | `0`, 
                 Unit
@@ -15795,7 +16026,7 @@ object pluginHooksMod {
               js.UndefOr[
                 js.Function3[
                   /* event */ MouseEvent, 
-                  /* coords */ typings.handsontable.coordsMod.default, 
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                   /* TD */ HTMLTableCellElement, 
                   Unit
                 ]
@@ -15809,7 +16040,7 @@ object pluginHooksMod {
         value: (js.UndefOr[
               js.Function3[
                 /* event */ MouseEvent, 
-                /* coords */ typings.handsontable.coordsMod.default, 
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                 /* TD */ HTMLTableCellElement, 
                 Unit
               ]
@@ -15833,7 +16064,7 @@ object pluginHooksMod {
               js.UndefOr[
                 js.Function3[
                   /* event */ MouseEvent, 
-                  /* coords */ typings.handsontable.coordsMod.default, 
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                   /* TD */ HTMLTableCellElement, 
                   Unit
                 ]
@@ -15847,7 +16078,7 @@ object pluginHooksMod {
         value: (js.UndefOr[
               js.Function3[
                 /* event */ MouseEvent, 
-                /* coords */ typings.handsontable.coordsMod.default, 
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                 /* TD */ HTMLTableCellElement, 
                 Unit
               ]
@@ -15859,7 +16090,7 @@ object pluginHooksMod {
               js.UndefOr[
                 js.Function3[
                   /* event */ MouseEvent, 
-                  /* coords */ typings.handsontable.coordsMod.default, 
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                   /* TD */ HTMLTableCellElement, 
                   Unit
                 ]
@@ -15873,7 +16104,7 @@ object pluginHooksMod {
         value: (js.UndefOr[
               js.Function3[
                 /* event */ MouseEvent, 
-                /* coords */ typings.handsontable.coordsMod.default, 
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                 /* TD */ HTMLTableCellElement, 
                 Unit
               ]
@@ -15885,7 +16116,7 @@ object pluginHooksMod {
               js.UndefOr[
                 js.Function3[
                   /* event */ MouseEvent, 
-                  /* coords */ typings.handsontable.coordsMod.default, 
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                   /* TD */ HTMLTableCellElement, 
                   Unit
                 ]
@@ -15899,7 +16130,7 @@ object pluginHooksMod {
         value: (js.UndefOr[
               js.Function3[
                 /* event */ MouseEvent, 
-                /* coords */ typings.handsontable.coordsMod.default, 
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                 /* TD */ HTMLTableCellElement, 
                 Unit
               ]
@@ -15911,7 +16142,7 @@ object pluginHooksMod {
               js.UndefOr[
                 js.Function3[
                   /* event */ MouseEvent, 
-                  /* coords */ typings.handsontable.coordsMod.default, 
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                   /* TD */ HTMLTableCellElement, 
                   Unit
                 ]
@@ -15925,7 +16156,7 @@ object pluginHooksMod {
         value: (js.UndefOr[
               js.Function3[
                 /* event */ MouseEvent, 
-                /* coords */ typings.handsontable.coordsMod.default, 
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                 /* TD */ HTMLTableCellElement, 
                 Unit
               ]
@@ -16676,7 +16907,7 @@ object pluginHooksMod {
         value: js.Array[
               js.UndefOr[
                 js.Function4[
-                  /* index */ typings.handsontable.coordsMod.default, 
+                  /* index */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                   /* direction */ up | down | left | right, 
                   /* input */ js.Array[js.Array[CellValue]], 
                   /* deltas */ js.Array[Any], 
@@ -16691,7 +16922,7 @@ object pluginHooksMod {
       inline def setBeforeAutofillInsidePopulateVarargs(
         value: (js.UndefOr[
               js.Function4[
-                /* index */ typings.handsontable.coordsMod.default, 
+                /* index */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                 /* direction */ up | down | left | right, 
                 /* input */ js.Array[js.Array[CellValue]], 
                 /* deltas */ js.Array[Any], 
@@ -17231,7 +17462,7 @@ object pluginHooksMod {
               js.UndefOr[
                 js.Function3[
                   /* event */ MouseEvent, 
-                  /* coords */ typings.handsontable.coordsMod.default, 
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                   /* TD */ HTMLTableCellElement, 
                   Unit
                 ]
@@ -17245,7 +17476,7 @@ object pluginHooksMod {
         value: (js.UndefOr[
               js.Function3[
                 /* event */ MouseEvent, 
-                /* coords */ typings.handsontable.coordsMod.default, 
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                 /* TD */ HTMLTableCellElement, 
                 Unit
               ]
@@ -17257,7 +17488,7 @@ object pluginHooksMod {
               js.UndefOr[
                 js.Function4[
                   /* event */ MouseEvent, 
-                  /* coords */ typings.handsontable.coordsMod.default, 
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                   /* TD */ HTMLTableCellElement, 
                   /* controller */ SelectionController, 
                   Unit
@@ -17272,7 +17503,7 @@ object pluginHooksMod {
         value: (js.UndefOr[
               js.Function4[
                 /* event */ MouseEvent, 
-                /* coords */ typings.handsontable.coordsMod.default, 
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                 /* TD */ HTMLTableCellElement, 
                 /* controller */ SelectionController, 
                 Unit
@@ -17285,7 +17516,7 @@ object pluginHooksMod {
               js.UndefOr[
                 js.Function3[
                   /* event */ MouseEvent, 
-                  /* coords */ typings.handsontable.coordsMod.default, 
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                   /* TD */ HTMLTableCellElement, 
                   Unit
                 ]
@@ -17299,7 +17530,7 @@ object pluginHooksMod {
         value: (js.UndefOr[
               js.Function3[
                 /* event */ MouseEvent, 
-                /* coords */ typings.handsontable.coordsMod.default, 
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                 /* TD */ HTMLTableCellElement, 
                 Unit
               ]
@@ -17311,7 +17542,7 @@ object pluginHooksMod {
               js.UndefOr[
                 js.Function4[
                   /* event */ MouseEvent, 
-                  /* coords */ typings.handsontable.coordsMod.default, 
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                   /* TD */ HTMLTableCellElement, 
                   /* controller */ SelectionController, 
                   Unit
@@ -17326,7 +17557,7 @@ object pluginHooksMod {
         value: (js.UndefOr[
               js.Function4[
                 /* event */ MouseEvent, 
-                /* coords */ typings.handsontable.coordsMod.default, 
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                 /* TD */ HTMLTableCellElement, 
                 /* controller */ SelectionController, 
                 Unit
@@ -17339,7 +17570,7 @@ object pluginHooksMod {
               js.UndefOr[
                 js.Function3[
                   /* event */ MouseEvent, 
-                  /* coords */ typings.handsontable.coordsMod.default, 
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                   /* TD */ HTMLTableCellElement, 
                   Unit
                 ]
@@ -17353,7 +17584,7 @@ object pluginHooksMod {
         value: (js.UndefOr[
               js.Function3[
                 /* event */ MouseEvent, 
-                /* coords */ typings.handsontable.coordsMod.default, 
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
                 /* TD */ HTMLTableCellElement, 
                 Unit
               ]
@@ -17600,33 +17831,69 @@ object pluginHooksMod {
       
       inline def setBeforeSetRangeEnd(
         value: js.Array[
-              js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+              js.UndefOr[
+                js.Function1[
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+                  Unit
+                ]
+              ]
             ]
       ): Self = StObject.set(x, "beforeSetRangeEnd", value.asInstanceOf[js.Any])
       
       inline def setBeforeSetRangeEndUndefined: Self = StObject.set(x, "beforeSetRangeEnd", js.undefined)
       
-      inline def setBeforeSetRangeEndVarargs(value: (js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]])*): Self = StObject.set(x, "beforeSetRangeEnd", js.Array(value*))
+      inline def setBeforeSetRangeEndVarargs(
+        value: (js.UndefOr[
+              js.Function1[
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+                Unit
+              ]
+            ])*
+      ): Self = StObject.set(x, "beforeSetRangeEnd", js.Array(value*))
       
       inline def setBeforeSetRangeStart(
         value: js.Array[
-              js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+              js.UndefOr[
+                js.Function1[
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+                  Unit
+                ]
+              ]
             ]
       ): Self = StObject.set(x, "beforeSetRangeStart", value.asInstanceOf[js.Any])
       
       inline def setBeforeSetRangeStartOnly(
         value: js.Array[
-              js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]]
+              js.UndefOr[
+                js.Function1[
+                  /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+                  Unit
+                ]
+              ]
             ]
       ): Self = StObject.set(x, "beforeSetRangeStartOnly", value.asInstanceOf[js.Any])
       
       inline def setBeforeSetRangeStartOnlyUndefined: Self = StObject.set(x, "beforeSetRangeStartOnly", js.undefined)
       
-      inline def setBeforeSetRangeStartOnlyVarargs(value: (js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]])*): Self = StObject.set(x, "beforeSetRangeStartOnly", js.Array(value*))
+      inline def setBeforeSetRangeStartOnlyVarargs(
+        value: (js.UndefOr[
+              js.Function1[
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+                Unit
+              ]
+            ])*
+      ): Self = StObject.set(x, "beforeSetRangeStartOnly", js.Array(value*))
       
       inline def setBeforeSetRangeStartUndefined: Self = StObject.set(x, "beforeSetRangeStart", js.undefined)
       
-      inline def setBeforeSetRangeStartVarargs(value: (js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]])*): Self = StObject.set(x, "beforeSetRangeStart", js.Array(value*))
+      inline def setBeforeSetRangeStartVarargs(
+        value: (js.UndefOr[
+              js.Function1[
+                /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+                Unit
+              ]
+            ])*
+      ): Self = StObject.set(x, "beforeSetRangeStart", js.Array(value*))
       
       inline def setBeforeStretchingColumnWidth(
         value: js.Array[
@@ -18048,23 +18315,47 @@ object pluginHooksMod {
       
       inline def setModifyTransformEnd(
         value: js.Array[
-              js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+              js.UndefOr[
+                js.Function1[
+                  /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+                  Unit
+                ]
+              ]
             ]
       ): Self = StObject.set(x, "modifyTransformEnd", value.asInstanceOf[js.Any])
       
       inline def setModifyTransformEndUndefined: Self = StObject.set(x, "modifyTransformEnd", js.undefined)
       
-      inline def setModifyTransformEndVarargs(value: (js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]])*): Self = StObject.set(x, "modifyTransformEnd", js.Array(value*))
+      inline def setModifyTransformEndVarargs(
+        value: (js.UndefOr[
+              js.Function1[
+                /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+                Unit
+              ]
+            ])*
+      ): Self = StObject.set(x, "modifyTransformEnd", js.Array(value*))
       
       inline def setModifyTransformStart(
         value: js.Array[
-              js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
+              js.UndefOr[
+                js.Function1[
+                  /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+                  Unit
+                ]
+              ]
             ]
       ): Self = StObject.set(x, "modifyTransformStart", value.asInstanceOf[js.Any])
       
       inline def setModifyTransformStartUndefined: Self = StObject.set(x, "modifyTransformStart", js.undefined)
       
-      inline def setModifyTransformStartVarargs(value: (js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]])*): Self = StObject.set(x, "modifyTransformStart", js.Array(value*))
+      inline def setModifyTransformStartVarargs(
+        value: (js.UndefOr[
+              js.Function1[
+                /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+                Unit
+              ]
+            ])*
+      ): Self = StObject.set(x, "modifyTransformStart", js.Array(value*))
       
       inline def setPersistentStateLoad(
         value: js.Array[
@@ -18291,7 +18582,7 @@ object pluginHooksMod {
     
     var afterModifyTransformEnd: js.UndefOr[
         js.Function3[
-          /* coords */ typings.handsontable.coordsMod.default, 
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
           /* rowTransformDir */ `-1` | `0`, 
           /* colTransformDir */ `-1` | `0`, 
           Unit
@@ -18300,7 +18591,7 @@ object pluginHooksMod {
     
     var afterModifyTransformStart: js.UndefOr[
         js.Function3[
-          /* coords */ typings.handsontable.coordsMod.default, 
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
           /* rowTransformDir */ `-1` | `0`, 
           /* colTransformDir */ `-1` | `0`, 
           Unit
@@ -18320,7 +18611,7 @@ object pluginHooksMod {
     var afterOnCellContextMenu: js.UndefOr[
         js.Function3[
           /* event */ MouseEvent, 
-          /* coords */ typings.handsontable.coordsMod.default, 
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
           /* TD */ HTMLTableCellElement, 
           Unit
         ]
@@ -18333,7 +18624,7 @@ object pluginHooksMod {
     var afterOnCellMouseDown: js.UndefOr[
         js.Function3[
           /* event */ MouseEvent, 
-          /* coords */ typings.handsontable.coordsMod.default, 
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
           /* TD */ HTMLTableCellElement, 
           Unit
         ]
@@ -18342,7 +18633,7 @@ object pluginHooksMod {
     var afterOnCellMouseOut: js.UndefOr[
         js.Function3[
           /* event */ MouseEvent, 
-          /* coords */ typings.handsontable.coordsMod.default, 
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
           /* TD */ HTMLTableCellElement, 
           Unit
         ]
@@ -18351,7 +18642,7 @@ object pluginHooksMod {
     var afterOnCellMouseOver: js.UndefOr[
         js.Function3[
           /* event */ MouseEvent, 
-          /* coords */ typings.handsontable.coordsMod.default, 
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
           /* TD */ HTMLTableCellElement, 
           Unit
         ]
@@ -18360,7 +18651,7 @@ object pluginHooksMod {
     var afterOnCellMouseUp: js.UndefOr[
         js.Function3[
           /* event */ MouseEvent, 
-          /* coords */ typings.handsontable.coordsMod.default, 
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
           /* TD */ HTMLTableCellElement, 
           Unit
         ]
@@ -18621,7 +18912,7 @@ object pluginHooksMod {
     
     var beforeAutofillInsidePopulate: js.UndefOr[
         js.Function4[
-          /* index */ typings.handsontable.coordsMod.default, 
+          /* index */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
           /* direction */ up | down | left | right, 
           /* input */ js.Array[js.Array[CellValue]], 
           /* deltas */ js.Array[Any], 
@@ -18798,7 +19089,7 @@ object pluginHooksMod {
     var beforeOnCellContextMenu: js.UndefOr[
         js.Function3[
           /* event */ MouseEvent, 
-          /* coords */ typings.handsontable.coordsMod.default, 
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
           /* TD */ HTMLTableCellElement, 
           Unit
         ]
@@ -18807,7 +19098,7 @@ object pluginHooksMod {
     var beforeOnCellMouseDown: js.UndefOr[
         js.Function4[
           /* event */ MouseEvent, 
-          /* coords */ typings.handsontable.coordsMod.default, 
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
           /* TD */ HTMLTableCellElement, 
           /* controller */ SelectionController, 
           Unit
@@ -18817,7 +19108,7 @@ object pluginHooksMod {
     var beforeOnCellMouseOut: js.UndefOr[
         js.Function3[
           /* event */ MouseEvent, 
-          /* coords */ typings.handsontable.coordsMod.default, 
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
           /* TD */ HTMLTableCellElement, 
           Unit
         ]
@@ -18826,7 +19117,7 @@ object pluginHooksMod {
     var beforeOnCellMouseOver: js.UndefOr[
         js.Function4[
           /* event */ MouseEvent, 
-          /* coords */ typings.handsontable.coordsMod.default, 
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
           /* TD */ HTMLTableCellElement, 
           /* controller */ SelectionController, 
           Unit
@@ -18836,7 +19127,7 @@ object pluginHooksMod {
     var beforeOnCellMouseUp: js.UndefOr[
         js.Function3[
           /* event */ MouseEvent, 
-          /* coords */ typings.handsontable.coordsMod.default, 
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
           /* TD */ HTMLTableCellElement, 
           Unit
         ]
@@ -18921,11 +19212,26 @@ object pluginHooksMod {
         js.Function4[/* row */ Double, /* col */ Double, /* key */ String, /* value */ Any, Boolean | Unit]
       ] = js.undefined
     
-    var beforeSetRangeEnd: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]] = js.undefined
+    var beforeSetRangeEnd: js.UndefOr[
+        js.Function1[
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+          Unit
+        ]
+      ] = js.undefined
     
-    var beforeSetRangeStart: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]] = js.undefined
+    var beforeSetRangeStart: js.UndefOr[
+        js.Function1[
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+          Unit
+        ]
+      ] = js.undefined
     
-    var beforeSetRangeStartOnly: js.UndefOr[js.Function1[/* coords */ typings.handsontable.coordsMod.default, Unit]] = js.undefined
+    var beforeSetRangeStartOnly: js.UndefOr[
+        js.Function1[
+          /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+          Unit
+        ]
+      ] = js.undefined
     
     var beforeStretchingColumnWidth: js.UndefOr[js.Function2[/* stretchedWidth */ Double, /* column */ Double, Unit | Double]] = js.undefined
     
@@ -19064,9 +19370,19 @@ object pluginHooksMod {
         ]
       ] = js.undefined
     
-    var modifyTransformEnd: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]] = js.undefined
+    var modifyTransformEnd: js.UndefOr[
+        js.Function1[
+          /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+          Unit
+        ]
+      ] = js.undefined
     
-    var modifyTransformStart: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]] = js.undefined
+    var modifyTransformStart: js.UndefOr[
+        js.Function1[
+          /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, 
+          Unit
+        ]
+      ] = js.undefined
     
     var persistentStateLoad: js.UndefOr[js.Function2[/* key */ String, /* valuePlaceholder */ ValueAny, Unit]] = js.undefined
     
@@ -19274,13 +19590,13 @@ object pluginHooksMod {
       inline def setAfterMergeCellsUndefined: Self = StObject.set(x, "afterMergeCells", js.undefined)
       
       inline def setAfterModifyTransformEnd(
-        value: (/* coords */ typings.handsontable.coordsMod.default, /* rowTransformDir */ `-1` | `0`, /* colTransformDir */ `-1` | `0`) => Unit
+        value: (/* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, /* rowTransformDir */ `-1` | `0`, /* colTransformDir */ `-1` | `0`) => Unit
       ): Self = StObject.set(x, "afterModifyTransformEnd", js.Any.fromFunction3(value))
       
       inline def setAfterModifyTransformEndUndefined: Self = StObject.set(x, "afterModifyTransformEnd", js.undefined)
       
       inline def setAfterModifyTransformStart(
-        value: (/* coords */ typings.handsontable.coordsMod.default, /* rowTransformDir */ `-1` | `0`, /* colTransformDir */ `-1` | `0`) => Unit
+        value: (/* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, /* rowTransformDir */ `-1` | `0`, /* colTransformDir */ `-1` | `0`) => Unit
       ): Self = StObject.set(x, "afterModifyTransformStart", js.Any.fromFunction3(value))
       
       inline def setAfterModifyTransformStartUndefined: Self = StObject.set(x, "afterModifyTransformStart", js.undefined)
@@ -19298,7 +19614,7 @@ object pluginHooksMod {
       inline def setAfterNamedExpressionRemovedUndefined: Self = StObject.set(x, "afterNamedExpressionRemoved", js.undefined)
       
       inline def setAfterOnCellContextMenu(
-        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.coordsMod.default, /* TD */ HTMLTableCellElement) => Unit
+        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, /* TD */ HTMLTableCellElement) => Unit
       ): Self = StObject.set(x, "afterOnCellContextMenu", js.Any.fromFunction3(value))
       
       inline def setAfterOnCellContextMenuUndefined: Self = StObject.set(x, "afterOnCellContextMenu", js.undefined)
@@ -19312,25 +19628,25 @@ object pluginHooksMod {
       inline def setAfterOnCellCornerMouseDownUndefined: Self = StObject.set(x, "afterOnCellCornerMouseDown", js.undefined)
       
       inline def setAfterOnCellMouseDown(
-        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.coordsMod.default, /* TD */ HTMLTableCellElement) => Unit
+        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, /* TD */ HTMLTableCellElement) => Unit
       ): Self = StObject.set(x, "afterOnCellMouseDown", js.Any.fromFunction3(value))
       
       inline def setAfterOnCellMouseDownUndefined: Self = StObject.set(x, "afterOnCellMouseDown", js.undefined)
       
       inline def setAfterOnCellMouseOut(
-        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.coordsMod.default, /* TD */ HTMLTableCellElement) => Unit
+        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, /* TD */ HTMLTableCellElement) => Unit
       ): Self = StObject.set(x, "afterOnCellMouseOut", js.Any.fromFunction3(value))
       
       inline def setAfterOnCellMouseOutUndefined: Self = StObject.set(x, "afterOnCellMouseOut", js.undefined)
       
       inline def setAfterOnCellMouseOver(
-        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.coordsMod.default, /* TD */ HTMLTableCellElement) => Unit
+        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, /* TD */ HTMLTableCellElement) => Unit
       ): Self = StObject.set(x, "afterOnCellMouseOver", js.Any.fromFunction3(value))
       
       inline def setAfterOnCellMouseOverUndefined: Self = StObject.set(x, "afterOnCellMouseOver", js.undefined)
       
       inline def setAfterOnCellMouseUp(
-        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.coordsMod.default, /* TD */ HTMLTableCellElement) => Unit
+        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, /* TD */ HTMLTableCellElement) => Unit
       ): Self = StObject.set(x, "afterOnCellMouseUp", js.Any.fromFunction3(value))
       
       inline def setAfterOnCellMouseUpUndefined: Self = StObject.set(x, "afterOnCellMouseUp", js.undefined)
@@ -19534,7 +19850,7 @@ object pluginHooksMod {
       ): Self = StObject.set(x, "beforeAutofill", js.Any.fromFunction4(value))
       
       inline def setBeforeAutofillInsidePopulate(
-        value: (/* index */ typings.handsontable.coordsMod.default, /* direction */ up | down | left | right, /* input */ js.Array[js.Array[CellValue]], /* deltas */ js.Array[Any]) => Unit
+        value: (/* index */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, /* direction */ up | down | left | right, /* input */ js.Array[js.Array[CellValue]], /* deltas */ js.Array[Any]) => Unit
       ): Self = StObject.set(x, "beforeAutofillInsidePopulate", js.Any.fromFunction4(value))
       
       inline def setBeforeAutofillInsidePopulateUndefined: Self = StObject.set(x, "beforeAutofillInsidePopulate", js.undefined)
@@ -19690,31 +20006,31 @@ object pluginHooksMod {
       inline def setBeforeMergeCellsUndefined: Self = StObject.set(x, "beforeMergeCells", js.undefined)
       
       inline def setBeforeOnCellContextMenu(
-        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.coordsMod.default, /* TD */ HTMLTableCellElement) => Unit
+        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, /* TD */ HTMLTableCellElement) => Unit
       ): Self = StObject.set(x, "beforeOnCellContextMenu", js.Any.fromFunction3(value))
       
       inline def setBeforeOnCellContextMenuUndefined: Self = StObject.set(x, "beforeOnCellContextMenu", js.undefined)
       
       inline def setBeforeOnCellMouseDown(
-        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.coordsMod.default, /* TD */ HTMLTableCellElement, /* controller */ SelectionController) => Unit
+        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, /* TD */ HTMLTableCellElement, /* controller */ SelectionController) => Unit
       ): Self = StObject.set(x, "beforeOnCellMouseDown", js.Any.fromFunction4(value))
       
       inline def setBeforeOnCellMouseDownUndefined: Self = StObject.set(x, "beforeOnCellMouseDown", js.undefined)
       
       inline def setBeforeOnCellMouseOut(
-        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.coordsMod.default, /* TD */ HTMLTableCellElement) => Unit
+        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, /* TD */ HTMLTableCellElement) => Unit
       ): Self = StObject.set(x, "beforeOnCellMouseOut", js.Any.fromFunction3(value))
       
       inline def setBeforeOnCellMouseOutUndefined: Self = StObject.set(x, "beforeOnCellMouseOut", js.undefined)
       
       inline def setBeforeOnCellMouseOver(
-        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.coordsMod.default, /* TD */ HTMLTableCellElement, /* controller */ SelectionController) => Unit
+        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, /* TD */ HTMLTableCellElement, /* controller */ SelectionController) => Unit
       ): Self = StObject.set(x, "beforeOnCellMouseOver", js.Any.fromFunction4(value))
       
       inline def setBeforeOnCellMouseOverUndefined: Self = StObject.set(x, "beforeOnCellMouseOver", js.undefined)
       
       inline def setBeforeOnCellMouseUp(
-        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.coordsMod.default, /* TD */ HTMLTableCellElement) => Unit
+        value: (/* event */ MouseEvent, /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default, /* TD */ HTMLTableCellElement) => Unit
       ): Self = StObject.set(x, "beforeOnCellMouseUp", js.Any.fromFunction3(value))
       
       inline def setBeforeOnCellMouseUpUndefined: Self = StObject.set(x, "beforeOnCellMouseUp", js.undefined)
@@ -19783,13 +20099,13 @@ object pluginHooksMod {
       
       inline def setBeforeSetCellMetaUndefined: Self = StObject.set(x, "beforeSetCellMeta", js.undefined)
       
-      inline def setBeforeSetRangeEnd(value: /* coords */ typings.handsontable.coordsMod.default => Unit): Self = StObject.set(x, "beforeSetRangeEnd", js.Any.fromFunction1(value))
+      inline def setBeforeSetRangeEnd(value: /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default => Unit): Self = StObject.set(x, "beforeSetRangeEnd", js.Any.fromFunction1(value))
       
       inline def setBeforeSetRangeEndUndefined: Self = StObject.set(x, "beforeSetRangeEnd", js.undefined)
       
-      inline def setBeforeSetRangeStart(value: /* coords */ typings.handsontable.coordsMod.default => Unit): Self = StObject.set(x, "beforeSetRangeStart", js.Any.fromFunction1(value))
+      inline def setBeforeSetRangeStart(value: /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default => Unit): Self = StObject.set(x, "beforeSetRangeStart", js.Any.fromFunction1(value))
       
-      inline def setBeforeSetRangeStartOnly(value: /* coords */ typings.handsontable.coordsMod.default => Unit): Self = StObject.set(x, "beforeSetRangeStartOnly", js.Any.fromFunction1(value))
+      inline def setBeforeSetRangeStartOnly(value: /* coords */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default => Unit): Self = StObject.set(x, "beforeSetRangeStartOnly", js.Any.fromFunction1(value))
       
       inline def setBeforeSetRangeStartOnlyUndefined: Self = StObject.set(x, "beforeSetRangeStartOnly", js.undefined)
       
@@ -19929,11 +20245,11 @@ object pluginHooksMod {
       
       inline def setModifySourceDataUndefined: Self = StObject.set(x, "modifySourceData", js.undefined)
       
-      inline def setModifyTransformEnd(value: /* delta */ typings.handsontable.coordsMod.default => Unit): Self = StObject.set(x, "modifyTransformEnd", js.Any.fromFunction1(value))
+      inline def setModifyTransformEnd(value: /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default => Unit): Self = StObject.set(x, "modifyTransformEnd", js.Any.fromFunction1(value))
       
       inline def setModifyTransformEndUndefined: Self = StObject.set(x, "modifyTransformEnd", js.undefined)
       
-      inline def setModifyTransformStart(value: /* delta */ typings.handsontable.coordsMod.default => Unit): Self = StObject.set(x, "modifyTransformStart", js.Any.fromFunction1(value))
+      inline def setModifyTransformStart(value: /* delta */ typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default => Unit): Self = StObject.set(x, "modifyTransformStart", js.Any.fromFunction1(value))
       
       inline def setModifyTransformStartUndefined: Self = StObject.set(x, "modifyTransformStart", js.undefined)
       

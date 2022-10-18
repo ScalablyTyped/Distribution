@@ -3050,10 +3050,6 @@ object materialUiSystemStrings {
   inline def strokeWidth: strokeWidth = "strokeWidth".asInstanceOf[strokeWidth]
   
   @js.native
-  sealed trait style extends StObject
-  inline def style: style = "style".asInstanceOf[style]
-  
-  @js.native
   sealed trait tabSize extends StObject
   inline def tabSize: tabSize = "tabSize".asInstanceOf[tabSize]
   

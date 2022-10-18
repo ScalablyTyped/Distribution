@@ -1,8 +1,8 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
 import typings.grommet.utilsMod.BackgroundType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -15,11 +15,11 @@ trait Overlay extends StObject {
   
   var border: js.UndefOr[IntelligentRounding] = js.undefined
   
-  var container: js.UndefOr[Elevation] = js.undefined
+  var container: js.UndefOr[ElevationExtend] = js.undefined
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var overlay: js.UndefOr[`5`] = js.undefined
+  var overlay: js.UndefOr[`18`] = js.undefined
   
   var responsiveBreakpoint: js.UndefOr[String] = js.undefined
   
@@ -42,7 +42,7 @@ object Overlay {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setContainer(value: Elevation): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: ElevationExtend): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
@@ -52,7 +52,7 @@ object Overlay {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setOverlay(value: `5`): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: `18`): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     

@@ -1,8 +1,8 @@
 package typings.onfleetNodeOnfleet.anon
 
 import typings.onfleetNodeOnfleet.onfleetNodeOnfleetInts.`12`
-import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskDelayed
-import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerType
+import typings.onfleetNodeOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskDelayed
+import typings.onfleetNodeOnfleet.resourcesWebhooksMod.WebhookTriggerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

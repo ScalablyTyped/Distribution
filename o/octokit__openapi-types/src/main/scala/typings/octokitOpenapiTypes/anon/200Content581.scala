@@ -9,17 +9,17 @@ trait `200Content581` extends StObject {
   /** Response */
   var `200`: Content581
   
-  var `202`: Content47
-  
-  var `204`: Any
+  var `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
 }
 object `200Content581` {
   
-  inline def apply(`200`: Content581, `202`: Content47, `204`: Any): `200Content581` = {
+  inline def apply(
+    `200`: Content581,
+    `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
+  ): `200Content581` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("202")(`202`.asInstanceOf[js.Any])
-    __obj.updateDynamic("204")(`204`.asInstanceOf[js.Any])
+    __obj.updateDynamic("422")(`422`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content581`]
   }
   
@@ -27,8 +27,8 @@ object `200Content581` {
     
     inline def set200(value: Content581): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set202(value: Content47): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
-    
-    inline def set204(value: Any): Self = StObject.set(x, "204", value.asInstanceOf[js.Any])
+    inline def set422(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
+    ): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

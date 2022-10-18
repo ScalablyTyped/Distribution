@@ -15,7 +15,7 @@ trait BindHandlers extends StObject {
   /**
     * Render callback for the content region in the `browse` mode.
     */
-  def browseContent(contentRegion: typings.wordpressAdmin.mediaViewsMod.Region): Unit
+  def browseContent(contentRegion: typings.wordpressAdmin.componentsMediaViewsMod.Region): Unit
   
   /**
     * Render callback for the router region in the `browse` mode.
@@ -51,7 +51,7 @@ object BindHandlers {
   
   inline def apply(
     bindHandlers: () => Unit,
-    browseContent: typings.wordpressAdmin.mediaViewsMod.Region => Unit,
+    browseContent: typings.wordpressAdmin.componentsMediaViewsMod.Region => Unit,
     browseRouter: Any => Unit,
     createSelectToolbar: (Any, Any) => Unit,
     createSelection: () => Unit,
@@ -68,7 +68,7 @@ object BindHandlers {
     
     inline def setBindHandlers(value: () => Unit): Self = StObject.set(x, "bindHandlers", js.Any.fromFunction0(value))
     
-    inline def setBrowseContent(value: typings.wordpressAdmin.mediaViewsMod.Region => Unit): Self = StObject.set(x, "browseContent", js.Any.fromFunction1(value))
+    inline def setBrowseContent(value: typings.wordpressAdmin.componentsMediaViewsMod.Region => Unit): Self = StObject.set(x, "browseContent", js.Any.fromFunction1(value))
     
     inline def setBrowseRouter(value: Any => Unit): Self = StObject.set(x, "browseRouter", js.Any.fromFunction1(value))
     

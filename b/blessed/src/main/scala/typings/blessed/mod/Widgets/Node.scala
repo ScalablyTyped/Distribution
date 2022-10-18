@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("blessed", "Widgets.Node")
+/* note: abstract class */ @JSImport("blessed", "Widgets.Node")
 @js.native
-abstract class Node protected ()
+open class Node protected ()
   extends EventEmitter
      with IHasOptions[INodeOptions]
      with IDestroyable {

@@ -1,8 +1,8 @@
 package typings.awsSdkClientKinesisBrowser
 
-import typings.awsSdkClientKinesisBrowser.inputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientKinesisBrowser.typesInputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientKinesisBrowser.typesPutRecordsRequestEntryMod.PutRecordsRequestEntry
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

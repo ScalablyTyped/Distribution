@@ -4,8 +4,8 @@ import typings.screeps.anon.Algorithm
 import typings.screeps.anon.Filter
 import typings.screeps.anon.LookAtResultLookConstant
 import typings.screeps.anon.Pos
-import typings.screeps.anon.`14`
-import typings.screeps.anon.`15`
+import typings.screeps.anon.`0`
+import typings.screeps.anon.`1`
 import typings.screeps.screepsStrings.constructionSite
 import typings.screeps.screepsStrings.creep
 import typings.screeps.screepsStrings.deposit
@@ -117,7 +117,7 @@ trait RoomPosition extends StObject {
     * @param opts An object containing pathfinding options (see Room.findPath), or one of the following: filter, algorithm
     */
   def findClosestByRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T]): T | Null = js.native
-  def findClosestByRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: `14`): T | Null = js.native
+  def findClosestByRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: `0`): T | Null = js.native
   def findClosestByRange[S /* <: AnyStructure */](`type`: FIND_HOSTILE_STRUCTURES): S | Null = js.native
   def findClosestByRange[S /* <: AnyStructure */](`type`: FIND_HOSTILE_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES, S]): S | Null = js.native
   def findClosestByRange[S /* <: AnyStructure */](`type`: FIND_MY_STRUCTURES): S | Null = js.native
@@ -139,7 +139,7 @@ trait RoomPosition extends StObject {
     * @param opts See Room.find.
     */
   def findInRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], range: Double): js.Array[T] = js.native
-  def findInRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], range: Double, opts: `15`): js.Array[T] = js.native
+  def findInRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], range: Double, opts: `1`): js.Array[T] = js.native
   def findInRange[S /* <: AnyStructure */](`type`: FIND_HOSTILE_STRUCTURES, range: Double): js.Array[S] = js.native
   def findInRange[S /* <: AnyStructure */](`type`: FIND_HOSTILE_STRUCTURES, range: Double, opts: FilterOptions[FIND_STRUCTURES, S]): js.Array[S] = js.native
   def findInRange[S /* <: AnyStructure */](`type`: FIND_MY_STRUCTURES, range: Double): js.Array[S] = js.native

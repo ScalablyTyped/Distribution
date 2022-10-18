@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.fluentuiMergeStyles.irawstylebaseMod.IFontWeight
+import typings.fluentuiMergeStyles.libIrawstylebaseMod.IFontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

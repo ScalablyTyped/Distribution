@@ -3,10 +3,10 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.OffscreenCanvas
 import typings.babylonjs.WebGL2RenderingContext
-import typings.babylonjs.iaudioengineMod.IAudioEngine
-import typings.babylonjs.iofflineproviderMod.IOfflineProvider
-import typings.babylonjs.loadingScreenMod.ILoadingScreen
-import typings.babylonjs.thinEngineMod.EngineOptions
+import typings.babylonjs.audioInterfacesIaudioengineMod.IAudioEngine
+import typings.babylonjs.enginesThinEngineMod.EngineOptions
+import typings.babylonjs.loadingLoadingScreenMod.ILoadingScreen
+import typings.babylonjs.offlineIofflineproviderMod.IOfflineProvider
 import typings.babylonjs.typesMod.Nullable
 import typings.std.AudioContext
 import typings.std.AudioDestinationNode
@@ -256,7 +256,10 @@ object Engine {
     * @param predicate defines a predicate used to filter which materials should be affected
     */
   inline def MarkAllMaterialsAsDirty(flag: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("MarkAllMaterialsAsDirty")(flag.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def MarkAllMaterialsAsDirty(flag: Double, predicate: js.Function1[/* mat */ typings.babylonjs.materialMod.Material, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("MarkAllMaterialsAsDirty")(flag.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def MarkAllMaterialsAsDirty(
+    flag: Double,
+    predicate: js.Function1[/* mat */ typings.babylonjs.materialsMaterialMod.Material, Boolean]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("MarkAllMaterialsAsDirty")(flag.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will never pass. i.e. Nothing will be drawn */
   @JSImport("babylonjs/index", "Engine.NEVER")
@@ -622,11 +625,11 @@ object Engine {
   @JSImport("babylonjs/index", "Engine._RescalePostProcessFactory")
   @js.native
   def _RescalePostProcessFactory: Nullable[
-    js.Function1[/* engine */ this.type, typings.babylonjs.postProcessMod.PostProcess]
+    js.Function1[/* engine */ this.type, typings.babylonjs.postProcessesPostProcessMod.PostProcess]
   ] = js.native
   inline def _RescalePostProcessFactory_=(
     x: Nullable[
-      js.Function1[/* engine */ this.type, typings.babylonjs.postProcessMod.PostProcess]
+      js.Function1[/* engine */ this.type, typings.babylonjs.postProcessesPostProcessMod.PostProcess]
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RescalePostProcessFactory")(x.asInstanceOf[js.Any])
   

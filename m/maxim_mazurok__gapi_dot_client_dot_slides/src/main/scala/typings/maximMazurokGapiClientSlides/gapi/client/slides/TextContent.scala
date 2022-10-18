@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait TextContent extends StObject {
   
   /** The bulleted lists contained in this text, keyed by list ID. */
   var lists: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.List}
-    */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.TextContent & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.List} */ js.Any
   ] = js.undefined
   
   /** The text contents broken down into its component parts, including styling information. This property is read-only. */
@@ -27,9 +24,7 @@ object TextContent {
   extension [Self <: TextContent](x: Self) {
     
     inline def setLists(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.List}
-      */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.TextContent & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.List} */ js.Any
     ): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
     inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)

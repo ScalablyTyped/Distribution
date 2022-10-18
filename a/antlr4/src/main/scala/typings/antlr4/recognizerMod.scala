@@ -1,7 +1,7 @@
 package typings.antlr4
 
-import typings.antlr4.errorListenerMod.ErrorListener
-import typings.antlr4.errorListenerMod.ProxyErrorListener
+import typings.antlr4.errorErrorListenerMod.ErrorListener
+import typings.antlr4.errorErrorListenerMod.ProxyErrorListener
 import typings.antlr4.parserRuleContextMod.ParserRuleContext
 import typings.antlr4.tokenMod.Token
 import org.scalablytyped.runtime.StObject

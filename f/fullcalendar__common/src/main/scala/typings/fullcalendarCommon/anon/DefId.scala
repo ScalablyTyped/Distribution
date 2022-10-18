@@ -31,7 +31,7 @@ trait DefId extends StObject {
   
   var publicId: String
   
-  var recurringDef: TypeData
+  var recurringDef: TypeId
   
   var sourceId: String
   
@@ -56,7 +56,7 @@ object DefId {
     hasEnd: Boolean,
     id: String,
     publicId: String,
-    recurringDef: TypeData,
+    recurringDef: TypeId,
     sourceId: String,
     start: Double,
     title: String,
@@ -91,7 +91,7 @@ object DefId {
     
     inline def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
-    inline def setRecurringDef(value: TypeData): Self = StObject.set(x, "recurringDef", value.asInstanceOf[js.Any])
+    inline def setRecurringDef(value: TypeId): Self = StObject.set(x, "recurringDef", value.asInstanceOf[js.Any])
     
     inline def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     

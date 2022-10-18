@@ -30,9 +30,9 @@ object libBuildMod {
   @js.native
   val BUILD_SCRIPT: /* "ionic:build" */ String = js.native
   
-  @JSImport("ionic/lib/build", "BuildCLI")
+  /* note: abstract class */ @JSImport("ionic/lib/build", "BuildCLI")
   @js.native
-  abstract class BuildCLI[T /* <: js.Object */] protected () extends StObject {
+  open class BuildCLI[T /* <: js.Object */] protected () extends StObject {
     def this(e: BuildRunnerDeps) = this()
     
     /* private */ var _resolvedProgram: Any = js.native
@@ -90,9 +90,9 @@ object libBuildMod {
     val script: js.UndefOr[String] = js.native
   }
   
-  @JSImport("ionic/lib/build", "BuildRunner")
+  /* note: abstract class */ @JSImport("ionic/lib/build", "BuildRunner")
   @js.native
-  abstract class BuildRunner[T /* <: BuildOptions[Any] */] ()
+  open class BuildRunner[T /* <: BuildOptions[Any] */] ()
     extends StObject
        with Runner[T, Unit] {
     

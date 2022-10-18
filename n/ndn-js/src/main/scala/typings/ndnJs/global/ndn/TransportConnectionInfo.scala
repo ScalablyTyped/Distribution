@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ndn.TransportConnectionInfo")
+/* note: abstract class */ @JSGlobal("ndn.TransportConnectionInfo")
 @js.native
-abstract class TransportConnectionInfo ()
+open class TransportConnectionInfo ()
   extends typings.ndnJs.mod.TransportConnectionInfo

@@ -2,9 +2,9 @@ package typings.reactMdSheet
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdSheet.sheetMod.SheetProps
-import typings.reactMdTransition.typesMod.CSSTransitionClassNames
-import typings.reactMdTransition.typesMod.TransitionTimeout
+import typings.reactMdSheet.typesSheetMod.SheetProps
+import typings.reactMdTransition.typesTypesMod.CSSTransitionClassNames
+import typings.reactMdTransition.typesTypesMod.TransitionTimeout
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

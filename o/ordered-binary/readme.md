@@ -1,7 +1,7 @@
 
 # Scala.js typings for ordered-binary
 
-Typings are for version 1.3.0
+Typings are for version 1.4.0
 
 ## Library description:
 Conversion of JavaScript primitives to and from Buffer with binary order matching natural primitive order

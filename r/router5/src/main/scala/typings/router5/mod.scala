@@ -1,14 +1,14 @@
 package typings.router5
 
-import typings.routeNode.routeNodeMod.RouteNodeOptions
+import typings.routeNode.distRouteNodeMod.RouteNodeOptions
 import typings.router5.anon.PartialOptions
-import typings.router5.constantsMod.Constants_
-import typings.router5.constantsMod.ErrorCodes_
-import typings.router5.routerMod.DefaultDependencies
-import typings.router5.routerMod.Route
-import typings.router5.routerMod.Router
-import typings.router5TransitionPath.transitionPathMod.State
-import typings.router5TransitionPath.transitionPathMod.TransitionPath
+import typings.router5.distConstantsMod.Constants_
+import typings.router5.distConstantsMod.ErrorCodes_
+import typings.router5.distTypesRouterMod.DefaultDependencies
+import typings.router5.distTypesRouterMod.Route
+import typings.router5.distTypesRouterMod.Router
+import typings.router5TransitionPath.distTransitionPathMod.State
+import typings.router5TransitionPath.distTransitionPathMod.TransitionPath
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,35 +40,35 @@ object mod {
     def this(name: String) = this()
     def this(name: String, path: String) = this()
     def this(name: Unit, path: String) = this()
-    def this(name: String, path: String, childRoutes: js.Array[typings.routeNode.routeNodeMod.Route]) = this()
-    def this(name: String, path: Unit, childRoutes: js.Array[typings.routeNode.routeNodeMod.Route]) = this()
-    def this(name: Unit, path: String, childRoutes: js.Array[typings.routeNode.routeNodeMod.Route]) = this()
-    def this(name: Unit, path: Unit, childRoutes: js.Array[typings.routeNode.routeNodeMod.Route]) = this()
+    def this(name: String, path: String, childRoutes: js.Array[typings.routeNode.distRouteNodeMod.Route]) = this()
+    def this(name: String, path: Unit, childRoutes: js.Array[typings.routeNode.distRouteNodeMod.Route]) = this()
+    def this(name: Unit, path: String, childRoutes: js.Array[typings.routeNode.distRouteNodeMod.Route]) = this()
+    def this(name: Unit, path: Unit, childRoutes: js.Array[typings.routeNode.distRouteNodeMod.Route]) = this()
     def this(
       name: String,
       path: String,
-      childRoutes: js.Array[typings.routeNode.routeNodeMod.Route],
+      childRoutes: js.Array[typings.routeNode.distRouteNodeMod.Route],
       options: RouteNodeOptions
     ) = this()
     def this(name: String, path: String, childRoutes: Unit, options: RouteNodeOptions) = this()
     def this(
       name: String,
       path: Unit,
-      childRoutes: js.Array[typings.routeNode.routeNodeMod.Route],
+      childRoutes: js.Array[typings.routeNode.distRouteNodeMod.Route],
       options: RouteNodeOptions
     ) = this()
     def this(name: String, path: Unit, childRoutes: Unit, options: RouteNodeOptions) = this()
     def this(
       name: Unit,
       path: String,
-      childRoutes: js.Array[typings.routeNode.routeNodeMod.Route],
+      childRoutes: js.Array[typings.routeNode.distRouteNodeMod.Route],
       options: RouteNodeOptions
     ) = this()
     def this(name: Unit, path: String, childRoutes: Unit, options: RouteNodeOptions) = this()
     def this(
       name: Unit,
       path: Unit,
-      childRoutes: js.Array[typings.routeNode.routeNodeMod.Route],
+      childRoutes: js.Array[typings.routeNode.distRouteNodeMod.Route],
       options: RouteNodeOptions
     ) = this()
     def this(name: Unit, path: Unit, childRoutes: Unit, options: RouteNodeOptions) = this()

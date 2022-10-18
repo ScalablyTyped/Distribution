@@ -33,7 +33,7 @@ object TGATools {
   @JSImport("babylonjs/index", "TGATools.UploadContent")
   @js.native
   def UploadContent: js.Function2[
-    /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+    /* texture */ typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture, 
     /* data */ js.typedarray.Uint8Array, 
     Unit
   ] = js.native
@@ -41,10 +41,13 @@ object TGATools {
     * Uploads TGA content to a Babylon Texture
     * @internal
     */
-  inline def UploadContent(texture: typings.babylonjs.internalTextureMod.InternalTexture, data: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadContent")(texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def UploadContent(
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
+    data: js.typedarray.Uint8Array
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadContent")(texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def UploadContent_=(
     x: js.Function2[
-      /* texture */ typings.babylonjs.internalTextureMod.InternalTexture, 
+      /* texture */ typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture, 
       /* data */ js.typedarray.Uint8Array, 
       Unit
     ]

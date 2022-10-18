@@ -1,7 +1,8 @@
 package typings.tapeAsync
 
+import typings.node.NodeJS.ReadableStream
 import typings.std.PromiseLike
-import typings.std.ReadableStream
+import typings.tapeAsync.anon.FnCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,14 +21,14 @@ object mod {
   /**
     * Create a new test harness instance, which is a function like test(), but with a new pending stack and test state.
     */
-  inline def createHarness(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createHarness")().asInstanceOf[Any]
+  inline def createHarness(): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createHarness")().asInstanceOf[FnCall]
   
   /**
     * Create a stream of output, bypassing the default output stream that writes messages to console.log().
     * By default stream will be a text stream of TAP output, but you can get an object stream instead by setting opts.objectMode to true.
     */
-  inline def createStream(): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[ReadableStream[Any]]
-  inline def createStream(opts: StreamOptions): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
+  inline def createStream(): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[ReadableStream]
+  inline def createStream(opts: StreamOptions): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
   
   /**
     * The onFinish hook will get invoked when ALL tape tests have finished right before tape is about to print the test summary.

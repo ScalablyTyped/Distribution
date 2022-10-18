@@ -1,6 +1,6 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationCore.typesMod.NavigationHelpersCommon
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.NavigationHelpersCommon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

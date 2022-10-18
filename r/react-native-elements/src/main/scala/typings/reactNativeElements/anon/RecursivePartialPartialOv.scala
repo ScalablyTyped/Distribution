@@ -16,6 +16,7 @@ import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.ViewStyle
+import typings.reactNativeElements.distConfigThemeProviderMod.RecursivePartial
 import typings.reactNativeElements.reactNativeElementsStrings.ModalComponent
 import typings.reactNativeElements.reactNativeElementsStrings.`box-none`
 import typings.reactNativeElements.reactNativeElementsStrings.`box-only`
@@ -37,7 +38,6 @@ import typings.reactNativeElements.reactNativeElementsStrings.polite
 import typings.reactNativeElements.reactNativeElementsStrings.portrait
 import typings.reactNativeElements.reactNativeElementsStrings.slide
 import typings.reactNativeElements.reactNativeElementsStrings.yes
-import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

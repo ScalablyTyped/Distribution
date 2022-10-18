@@ -1,7 +1,7 @@
 
 # Scala.js typings for prompts
 
-Typings are for version 2.0
+Typings are for version 2.4
 
 ## Library description:
 Lightweight, beautiful and user-friendly prompts

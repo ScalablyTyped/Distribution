@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +19,7 @@ trait LogEntry extends StObject {
   
   /** The log entry payload, represented as a structure that is expressed as a JSON object. */
   var jsonPayload: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -32,9 +29,7 @@ trait LogEntry extends StObject {
     * entry being written. The truncation is indicated by an ellipsis at the end of the character string.
     */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -59,9 +54,7 @@ trait LogEntry extends StObject {
     * supported; user-defined types are not supported:"type.googleapis.com/google.cloud.audit.AuditLog" "type.googleapis.com/google.appengine.logging.v1.RequestLog"
     */
   var protoPayload: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Output only. The time the log entry was received by Logging. */
@@ -137,17 +130,13 @@ object LogEntry {
     inline def setInsertIdUndefined: Self = StObject.set(x, "insertId", js.undefined)
     
     inline def setJsonPayload(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "jsonPayload", value.asInstanceOf[js.Any])
     
     inline def setJsonPayloadUndefined: Self = StObject.set(x, "jsonPayload", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -165,9 +154,7 @@ object LogEntry {
     inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     inline def setProtoPayload(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "protoPayload", value.asInstanceOf[js.Any])
     
     inline def setProtoPayloadUndefined: Self = StObject.set(x, "protoPayload", js.undefined)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "BouncingBehavior")
 @js.native
 open class BouncingBehavior ()
-  extends typings.babylonjs.legacyMod.BouncingBehavior
+  extends typings.babylonjs.legacyLegacyMod.BouncingBehavior
 /* static members */
 object BouncingBehavior {
   
@@ -20,8 +20,8 @@ object BouncingBehavior {
     */
   @JSImport("babylonjs", "BouncingBehavior.EasingFunction")
   @js.native
-  def EasingFunction: typings.babylonjs.easingMod.BackEase = js.native
-  inline def EasingFunction_=(x: typings.babylonjs.easingMod.BackEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
+  def EasingFunction: typings.babylonjs.animationsEasingMod.BackEase = js.native
+  inline def EasingFunction_=(x: typings.babylonjs.animationsEasingMod.BackEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
   
   /**
     * The easing mode used by animations

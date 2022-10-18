@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.breadcrumbMod.BreadCrumbProps
+import typings.primereact.breadcrumbBreadcrumbMod.BreadCrumbProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "BreadCrumb")
 @js.native
 open class BreadCrumb protected ()
-  extends typings.primereact.breadcrumbMod.BreadCrumb {
+  extends typings.primereact.breadcrumbBreadcrumbMod.BreadCrumb {
   def this(props: BreadCrumbProps) = this()
   /**
     * @deprecated

@@ -1,9 +1,9 @@
 package typings.azureMsalCommon.mod
 
-import typings.azureMsalCommon.baseAuthRequestMod.BaseAuthRequest
-import typings.azureMsalCommon.networkManagerMod.NetworkResponse
-import typings.azureMsalCommon.requestThumbprintMod.RequestThumbprint
-import typings.azureMsalCommon.serverAuthorizationTokenResponseMod.ServerAuthorizationTokenResponse
+import typings.azureMsalCommon.distNetworkNetworkManagerMod.NetworkResponse
+import typings.azureMsalCommon.distNetworkRequestThumbprintMod.RequestThumbprint
+import typings.azureMsalCommon.distRequestBaseAuthRequestMod.BaseAuthRequest
+import typings.azureMsalCommon.distResponseServerAuthorizationTokenResponseMod.ServerAuthorizationTokenResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "ThrottlingUtils")
 @js.native
 open class ThrottlingUtils ()
-  extends typings.azureMsalCommon.throttlingUtilsMod.ThrottlingUtils
+  extends typings.azureMsalCommon.distNetworkThrottlingUtilsMod.ThrottlingUtils
 /* static members */
 object ThrottlingUtils {
   
@@ -50,7 +50,7 @@ object ThrottlingUtils {
     * @param response
     */
   inline def postProcess(
-    cacheManager: typings.azureMsalCommon.cacheManagerMod.CacheManager,
+    cacheManager: typings.azureMsalCommon.distCacheCacheManagerMod.CacheManager,
     thumbprint: RequestThumbprint,
     response: NetworkResponse[ServerAuthorizationTokenResponse]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postProcess")(cacheManager.asInstanceOf[js.Any], thumbprint.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -60,15 +60,18 @@ object ThrottlingUtils {
     * @param cacheManager
     * @param thumbprint
     */
-  inline def preProcess(cacheManager: typings.azureMsalCommon.cacheManagerMod.CacheManager, thumbprint: RequestThumbprint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("preProcess")(cacheManager.asInstanceOf[js.Any], thumbprint.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def preProcess(
+    cacheManager: typings.azureMsalCommon.distCacheCacheManagerMod.CacheManager,
+    thumbprint: RequestThumbprint
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("preProcess")(cacheManager.asInstanceOf[js.Any], thumbprint.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def removeThrottle(
-    cacheManager: typings.azureMsalCommon.cacheManagerMod.CacheManager,
+    cacheManager: typings.azureMsalCommon.distCacheCacheManagerMod.CacheManager,
     clientId: String,
     request: BaseAuthRequest
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("removeThrottle")(cacheManager.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def removeThrottle(
-    cacheManager: typings.azureMsalCommon.cacheManagerMod.CacheManager,
+    cacheManager: typings.azureMsalCommon.distCacheCacheManagerMod.CacheManager,
     clientId: String,
     request: BaseAuthRequest,
     homeAccountIdentifier: String

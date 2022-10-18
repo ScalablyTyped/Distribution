@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native-svg", "Circle")
 @js.native
 open class Circle ()
-  extends typings.reactNativeSvg.reactNativeSVGMod.Circle
+  extends typings.reactNativeSvg.libTypescriptReactNativeSVGMod.Circle
 /* static members */
 object Circle {
   

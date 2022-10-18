@@ -1,10 +1,10 @@
 package typings.awsSdkClientDynamodbNode
 
-import typings.awsSdkClientDynamodbNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbNode.typesAutoScalingSettingsUpdateMod.AutoScalingSettingsUpdate
 import typings.awsSdkClientDynamodbNode.typesGlobalTableGlobalSecondaryIndexSettingsUpdateMod.GlobalTableGlobalSecondaryIndexSettingsUpdate
+import typings.awsSdkClientDynamodbNode.typesInputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbNode.typesReplicaSettingsUpdateMod.ReplicaSettingsUpdate
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

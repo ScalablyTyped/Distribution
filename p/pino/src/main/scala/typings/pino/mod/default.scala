@@ -1,5 +1,6 @@
 package typings.pino.mod
 
+import typings.node.NodeJS.WritableStream
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.pinoStdSerializers.anon.Req
@@ -10,7 +11,6 @@ import typings.pinoStdSerializers.mod.CustomResponseSerializer
 import typings.sonicBoom.mod.SonicBoom
 import typings.sonicBoom.mod.SonicBoomOpts
 import typings.std.Record
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,9 +40,9 @@ object default {
   inline def destination(): SonicBoom = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")().asInstanceOf[SonicBoom]
   inline def destination(dest: String): SonicBoom = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[SonicBoom]
   inline def destination(dest: Double): SonicBoom = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[SonicBoom]
+  inline def destination(dest: WritableStream): SonicBoom = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[SonicBoom]
   inline def destination(dest: typings.pino.mod.pino.DestinationStream): SonicBoom = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[SonicBoom]
   inline def destination(dest: SonicBoomOpts): SonicBoom = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[SonicBoom]
-  inline def destination(dest: WritableStream[Any]): SonicBoom = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[SonicBoom]
   
   @JSImport("pino", "default.levels")
   @js.native

@@ -1,6 +1,6 @@
 package typings.redisClient.anon
 
-import typings.redisClient.clusterINFOMod.ClusterInfoReply
+import typings.redisClient.distLibCommandsClusterINFOMod.ClusterInfoReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

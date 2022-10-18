@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native-svg", "Path")
 @js.native
 open class Path ()
-  extends typings.reactNativeSvg.reactNativeSVGMod.Path
+  extends typings.reactNativeSvg.libTypescriptReactNativeSVGMod.Path
 /* static members */
 object Path {
   

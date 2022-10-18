@@ -9,7 +9,7 @@ trait PickOptionslegendcolorFie extends StObject {
   
   var colorField: js.UndefOr[String] = js.undefined
   
-  var legend: js.UndefOr[typings.antvG2plot.typesLegendMod.Legend] = js.undefined
+  var legend: js.UndefOr[typings.antvG2plot.libTypesLegendMod.Legend] = js.undefined
   
   var seriesField: js.UndefOr[String] = js.undefined
 }
@@ -26,7 +26,7 @@ object PickOptionslegendcolorFie {
     
     inline def setColorFieldUndefined: Self = StObject.set(x, "colorField", js.undefined)
     
-    inline def setLegend(value: typings.antvG2plot.typesLegendMod.Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: typings.antvG2plot.libTypesLegendMod.Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     

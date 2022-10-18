@@ -14,8 +14,6 @@ trait ExclusiveInvalidate extends StObject {
   var exclusive: js.UndefOr[Boolean] = js.undefined
   
   var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.undefined
-  
-  var reversed: js.UndefOr[Boolean] = js.undefined
 }
 object ExclusiveInvalidate {
   
@@ -33,9 +31,5 @@ object ExclusiveInvalidate {
     inline def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
     
     inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
-    
-    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
-    
-    inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
   }
 }

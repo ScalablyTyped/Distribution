@@ -1,6 +1,6 @@
 package typings.muicss.reactMod
 
-import typings.muicss.tabMod.default
+import typings.muicss.libReactTabMod.default
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

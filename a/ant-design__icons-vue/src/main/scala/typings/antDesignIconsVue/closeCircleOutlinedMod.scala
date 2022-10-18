@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCloseCircleOutlinedMod.CloseCircleOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object closeCircleOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CloseCircleOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CloseCircleOutlined", JSImport.Default)
   @js.native
   val default: CloseCircleOutlinedIconType = js.native
-  
-  @js.native
-  trait CloseCircleOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CloseCircleOutlinedIconType: String = js.native
-  }
   
   type _To = CloseCircleOutlinedIconType
   

@@ -1,7 +1,6 @@
 package typings.angularCore.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.angularCore.mod.ChangeDetectionStrategy
 import typings.angularCore.mod.ComponentDefFeature
 import typings.angularCore.mod.ComponentTemplate
@@ -178,9 +177,7 @@ trait ChangeDetection[T] extends StObject {
     *    API will be simplified to be consistent with `output`.
     */
   var inputs: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? string | [string, string]}
-    */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? string | [string, string]} */ js.Any
   ] = js.undefined
   
   /**
@@ -199,9 +196,7 @@ trait ChangeDetection[T] extends StObject {
     * of properties.
     */
   var outputs: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? string}
-    */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? string} */ js.Any
   ] = js.undefined
   
   /**
@@ -378,9 +373,7 @@ object ChangeDetection {
     inline def setHostVarsUndefined: Self = StObject.set(x, "hostVars", js.undefined)
     
     inline def setInputs(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]:? string | [string, string]}
-      */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? string | [string, string]} */ js.Any
     ): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
@@ -392,9 +385,7 @@ object ChangeDetection {
     inline def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value*))
     
     inline def setOutputs(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]:? string}
-      */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? string} */ js.Any
     ): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)

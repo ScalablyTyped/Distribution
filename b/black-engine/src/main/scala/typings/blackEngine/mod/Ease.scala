@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Ease")
 @js.native
 open class Ease ()
-  extends typings.blackEngine.easeMod.Ease
+  extends typings.blackEngine.animationEaseMod.Ease
 /* static members */
 object Ease {
   

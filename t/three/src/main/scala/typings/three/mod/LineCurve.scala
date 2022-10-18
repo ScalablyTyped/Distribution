@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "LineCurve")
 @js.native
 open class LineCurve protected ()
-  extends typings.three.threeMod.LineCurve {
-  def this(v1: typings.three.vector2Mod.Vector2, v2: typings.three.vector2Mod.Vector2) = this()
+  extends typings.three.srcThreeMod.LineCurve {
+  def this(v1: typings.three.srcMathVector2Mod.Vector2, v2: typings.three.srcMathVector2Mod.Vector2) = this()
 }

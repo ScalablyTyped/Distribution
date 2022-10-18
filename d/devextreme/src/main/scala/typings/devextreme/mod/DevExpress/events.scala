@@ -63,7 +63,15 @@ object events {
     }
   }
   
-  type DxEvent[TNativeEvent] = EventType | (EventObject & TNativeEvent)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {} extends devextreme.devextreme.DevExpress.events.EventType ? devextreme.devextreme.DevExpress.events.EventObject & TNativeEvent : devextreme.devextreme.DevExpress.events.EventType
+    }}}
+    */
+  @js.native
+  trait DxEvent[TNativeEvent] extends StObject
   
   trait EventInfo[TComponent] extends StObject {
     

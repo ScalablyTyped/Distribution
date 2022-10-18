@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "meteor-percolate-migrations"
-version := "1.0-dt-20220624Z-9417e5"
+version := "1.0-dt-20220624Z-c87970"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

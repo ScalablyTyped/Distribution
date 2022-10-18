@@ -1,7 +1,7 @@
 package typings.lodashDecorators
 
 import org.scalablytyped.runtime.Shortcut
-import typings.lodashDecorators.commonMod.BiTypedDecorator
+import typings.lodashDecorators.factoryCommonMod.BiTypedDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -9,16 +9,16 @@ trait `400` extends StObject {
   /** Response */
   var `200`: ContentApplicationjsonArray
   
-  var `400`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['bad_request'] */ js.Any
+  var `400`: ContentApplicationjsonApplicationscimjson
   
-  var `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
+  var `422`: Content8
 }
 object `400` {
   
   inline def apply(
     `200`: ContentApplicationjsonArray,
-    `400`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['bad_request'] */ js.Any,
-    `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
+    `400`: ContentApplicationjsonApplicationscimjson,
+    `422`: Content8
   ): `400` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -31,12 +31,8 @@ object `400` {
     
     inline def set200(value: ContentApplicationjsonArray): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set400(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['bad_request'] */ js.Any
-    ): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
+    inline def set400(value: ContentApplicationjsonApplicationscimjson): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
     
-    inline def set422(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
-    ): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content8): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

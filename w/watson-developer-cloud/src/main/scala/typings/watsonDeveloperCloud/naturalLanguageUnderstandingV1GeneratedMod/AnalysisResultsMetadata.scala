@@ -35,13 +35,13 @@ object AnalysisResultsMetadata {
     
     inline def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
     
-    inline def setAuthorsVarargs(value: Author*): Self = StObject.set(x, "authors", js.Array(value :_*))
+    inline def setAuthorsVarargs(value: Author*): Self = StObject.set(x, "authors", js.Array(value*))
     
     inline def setFeeds(value: js.Array[Feed]): Self = StObject.set(x, "feeds", value.asInstanceOf[js.Any])
     
     inline def setFeedsUndefined: Self = StObject.set(x, "feeds", js.undefined)
     
-    inline def setFeedsVarargs(value: Feed*): Self = StObject.set(x, "feeds", js.Array(value :_*))
+    inline def setFeedsVarargs(value: Feed*): Self = StObject.set(x, "feeds", js.Array(value*))
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

@@ -33,8 +33,8 @@ object NodeMaterial {
     * @param scene defines the hosting scene
     * @returns a new NodeMaterial
     */
-  inline def CreateDefault(name: String): typings.babylonjs.nodeMaterialMod.NodeMaterial = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.nodeMaterialMod.NodeMaterial]
-  inline def CreateDefault(name: String, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.nodeMaterialMod.NodeMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.nodeMaterialMod.NodeMaterial]
+  inline def CreateDefault(name: String): typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]
+  inline def CreateDefault(name: String, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefault")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]
   
   /** Define the Url to load node editor script */
   @JSImport("babylonjs/index", "NodeMaterial.EditorURL")
@@ -55,8 +55,8 @@ object NodeMaterial {
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
     * @returns a new node material
     */
-  inline def Parse(source: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.nodeMaterialMod.NodeMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.nodeMaterialMod.NodeMaterial]
-  inline def Parse(source: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.nodeMaterialMod.NodeMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.nodeMaterialMod.NodeMaterial]
+  inline def Parse(source: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]
+  inline def Parse(source: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]
   
   /**
     * Creates a node material from a snippet saved in a remote file
@@ -68,54 +68,54 @@ object NodeMaterial {
     * @param targetMaterial defines a material to use instead of creating a new one
     * @returns a promise that will resolve to the new node material
     */
-  inline def ParseFromFileAsync(name: String, url: String, scene: typings.babylonjs.sceneMod.Scene): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
-  inline def ParseFromFileAsync(name: String, url: String, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+  inline def ParseFromFileAsync(name: String, url: String, scene: typings.babylonjs.sceneMod.Scene): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
+  inline def ParseFromFileAsync(name: String, url: String, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromFileAsync(
     name: String,
     url: String,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
     skipBuild: Boolean
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromFileAsync(
     name: String,
     url: String,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
     skipBuild: Boolean,
-    targetMaterial: typings.babylonjs.nodeMaterialMod.NodeMaterial
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any], targetMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+    targetMaterial: typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any], targetMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromFileAsync(
     name: String,
     url: String,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
     skipBuild: Unit,
-    targetMaterial: typings.babylonjs.nodeMaterialMod.NodeMaterial
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any], targetMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+    targetMaterial: typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any], targetMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromFileAsync(
     name: String,
     url: String,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: Unit,
     skipBuild: Boolean
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromFileAsync(
     name: String,
     url: String,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: Unit,
     skipBuild: Boolean,
-    targetMaterial: typings.babylonjs.nodeMaterialMod.NodeMaterial
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any], targetMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+    targetMaterial: typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any], targetMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromFileAsync(
     name: String,
     url: String,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: Unit,
     skipBuild: Unit,
-    targetMaterial: typings.babylonjs.nodeMaterialMod.NodeMaterial
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any], targetMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+    targetMaterial: typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any], targetMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   
   /**
     * Creates a node material from a snippet saved by the node material editor
@@ -126,78 +126,78 @@ object NodeMaterial {
     * @param skipBuild defines whether to build the node material
     * @returns a promise that will resolve to the new node material
     */
-  inline def ParseFromSnippetAsync(snippetId: String): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
-  inline def ParseFromSnippetAsync(snippetId: String, scene: Unit, rootUrl: String): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
-  inline def ParseFromSnippetAsync(snippetId: String, scene: Unit, rootUrl: String, nodeMaterial: Unit, skipBuild: Boolean): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+  inline def ParseFromSnippetAsync(snippetId: String): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
+  inline def ParseFromSnippetAsync(snippetId: String, scene: Unit, rootUrl: String): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
+  inline def ParseFromSnippetAsync(snippetId: String, scene: Unit, rootUrl: String, nodeMaterial: Unit, skipBuild: Boolean): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromSnippetAsync(
     snippetId: String,
     scene: Unit,
     rootUrl: String,
-    nodeMaterial: typings.babylonjs.nodeMaterialMod.NodeMaterial
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+    nodeMaterial: typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromSnippetAsync(
     snippetId: String,
     scene: Unit,
     rootUrl: String,
-    nodeMaterial: typings.babylonjs.nodeMaterialMod.NodeMaterial,
+    nodeMaterial: typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial,
     skipBuild: Boolean
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
-  inline def ParseFromSnippetAsync(snippetId: String, scene: Unit, rootUrl: Unit, nodeMaterial: Unit, skipBuild: Boolean): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
+  inline def ParseFromSnippetAsync(snippetId: String, scene: Unit, rootUrl: Unit, nodeMaterial: Unit, skipBuild: Boolean): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromSnippetAsync(
     snippetId: String,
     scene: Unit,
     rootUrl: Unit,
-    nodeMaterial: typings.babylonjs.nodeMaterialMod.NodeMaterial
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+    nodeMaterial: typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromSnippetAsync(
     snippetId: String,
     scene: Unit,
     rootUrl: Unit,
-    nodeMaterial: typings.babylonjs.nodeMaterialMod.NodeMaterial,
+    nodeMaterial: typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial,
     skipBuild: Boolean
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
-  inline def ParseFromSnippetAsync(snippetId: String, scene: typings.babylonjs.sceneMod.Scene): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
-  inline def ParseFromSnippetAsync(snippetId: String, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
+  inline def ParseFromSnippetAsync(snippetId: String, scene: typings.babylonjs.sceneMod.Scene): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
+  inline def ParseFromSnippetAsync(snippetId: String, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromSnippetAsync(
     snippetId: String,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
     nodeMaterial: Unit,
     skipBuild: Boolean
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromSnippetAsync(
     snippetId: String,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
-    nodeMaterial: typings.babylonjs.nodeMaterialMod.NodeMaterial
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+    nodeMaterial: typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromSnippetAsync(
     snippetId: String,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String,
-    nodeMaterial: typings.babylonjs.nodeMaterialMod.NodeMaterial,
+    nodeMaterial: typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial,
     skipBuild: Boolean
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromSnippetAsync(
     snippetId: String,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: Unit,
     nodeMaterial: Unit,
     skipBuild: Boolean
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromSnippetAsync(
     snippetId: String,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: Unit,
-    nodeMaterial: typings.babylonjs.nodeMaterialMod.NodeMaterial
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+    nodeMaterial: typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   inline def ParseFromSnippetAsync(
     snippetId: String,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: Unit,
-    nodeMaterial: typings.babylonjs.nodeMaterialMod.NodeMaterial,
+    nodeMaterial: typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial,
     skipBuild: Boolean
-  ): js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.nodeMaterialMod.NodeMaterial]]
+  ): js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial]]
   
   /** Define the Url to load snippets */
   @JSImport("babylonjs/index", "NodeMaterial.SnippetUrl")

@@ -3,6 +3,7 @@ package typings.tabris.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.tabris.Blob
 import typings.tabris.mod.AnimationOptions
+import typings.tabris.mod.Bounds
 import typings.tabris.mod.BoxDimensions
 import typings.tabris.mod.CanvasContext
 import typings.tabris.mod.ChangeListeners
@@ -119,9 +120,9 @@ trait OmitCanvasset extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: Mode[Target], rules: RuleSet[Canvas]): Canvas
+  def _apply[Target](options: Trigger[Target], rules: RuleSet[Canvas]): Canvas
   @JSName("_apply")
-  var _apply_Original: js.Function2[/* options */ Mode[Canvas], /* rules */ RuleSet[Canvas], Canvas]
+  var _apply_Original: js.Function2[/* options */ Trigger[Canvas], /* rules */ RuleSet[Canvas], Canvas]
   
   def _checkDisposed(): Unit
   @JSName("_checkDisposed")
@@ -281,7 +282,7 @@ trait OmitCanvasset extends StObject {
   @JSName("_wasSet")
   var _wasSet_Original: js.Function1[/* propertyName */ String, Boolean]
   
-  var absoluteBounds: typings.tabris.mod.Bounds
+  var absoluteBounds: Bounds
   
   def animate(properties: Opacity, options: AnimationOptions): js.Promise[Unit]
   @JSName("animate")
@@ -297,9 +298,9 @@ trait OmitCanvasset extends StObject {
   var append_Original: js.Function1[/* repeated */ Widget[Any], Canvas]
   
   @JSName("apply")
-  def apply[Target](options: Mode[Target], rules: RuleSet[Canvas]): Canvas
+  def apply[Target](options: Trigger[Target], rules: RuleSet[Canvas]): Canvas
   @JSName("apply")
-  var apply_Original: js.Function2[/* options */ Mode[Canvas], /* rules */ RuleSet[Canvas], Canvas]
+  var apply_Original: js.Function2[/* options */ Trigger[Canvas], /* rules */ RuleSet[Canvas], Canvas]
   
   var background: LinearGradientValue | ColorValue | ImageValue
   
@@ -307,7 +308,7 @@ trait OmitCanvasset extends StObject {
   
   var bottom: ConstraintValue
   
-  var bounds: typings.tabris.mod.Bounds
+  var bounds: Bounds
   
   var centerX: typings.tabris.mod.Offset | auto | `true`
   
@@ -598,7 +599,7 @@ object OmitCanvasset {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ Mode[Canvas], /* rules */ RuleSet[Canvas]) => Canvas,
+    _apply: (/* options */ Trigger[Canvas], /* rules */ RuleSet[Canvas]) => Canvas,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -635,14 +636,14 @@ object OmitCanvasset {
     _trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean,
     _triggerChangeEvent: (/* propertyName */ String, /* newEncodedValue */ Any) => Unit,
     _wasSet: /* propertyName */ String => Boolean,
-    absoluteBounds: typings.tabris.mod.Bounds,
+    absoluteBounds: Bounds,
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => Canvas,
     appendTo: /* parent */ Composite[Widget[Any]] => Canvas,
-    apply: (/* options */ Mode[Canvas], /* rules */ RuleSet[Canvas]) => Canvas,
+    apply: (/* options */ Trigger[Canvas], /* rules */ RuleSet[Canvas]) => Canvas,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
-    bounds: typings.tabris.mod.Bounds,
+    bounds: Bounds,
     centerX: typings.tabris.mod.Offset | auto | `true`,
     centerY: typings.tabris.mod.Offset | auto | `true`,
     children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -753,7 +754,7 @@ object OmitCanvasset {
     
     inline def set$trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "$trigger", js.Any.fromFunction2(value))
     
-    inline def setAbsoluteBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
+    inline def setAbsoluteBounds(value: Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
     
     inline def setAnimate(value: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit]): Self = StObject.set(x, "animate", js.Any.fromFunction2(value))
     
@@ -761,7 +762,7 @@ object OmitCanvasset {
     
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => Canvas): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
-    inline def setApply(value: (/* options */ Mode[Canvas], /* rules */ RuleSet[Canvas]) => Canvas): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (/* options */ Trigger[Canvas], /* rules */ RuleSet[Canvas]) => Canvas): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
@@ -771,7 +772,7 @@ object OmitCanvasset {
     
     inline def setBottom(value: ConstraintValue): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    inline def setBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     inline def setCenterX(value: typings.tabris.mod.Offset | auto | `true`): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
@@ -997,7 +998,7 @@ object OmitCanvasset {
     
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
-    inline def set_apply(value: (/* options */ Mode[Canvas], /* rules */ RuleSet[Canvas]) => Canvas): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
+    inline def set_apply(value: (/* options */ Trigger[Canvas], /* rules */ RuleSet[Canvas]) => Canvas): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
     

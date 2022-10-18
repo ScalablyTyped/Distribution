@@ -64,9 +64,9 @@ object Services {
   object Store {
     
     /** Provides response data for a request to acquire a downloadable content (DLC) package license. */
-    @JSGlobal("Windows.Services.Store.StoreAcquireLicenseResult")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreAcquireLicenseResult")
     @js.native
-    abstract class StoreAcquireLicenseResult ()
+    open class StoreAcquireLicenseResult ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreAcquireLicenseResult {
       
@@ -80,9 +80,9 @@ object Services {
     }
     
     /** Provides license info for the current app, including licenses for products that are offered by the app. */
-    @JSGlobal("Windows.Services.Store.StoreAppLicense")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreAppLicense")
     @js.native
-    abstract class StoreAppLicense ()
+    open class StoreAppLicense ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreAppLicense {
       
@@ -124,16 +124,16 @@ object Services {
     }
     
     /** Represents a specific instance of a product SKU that can be purchased. */
-    @JSGlobal("Windows.Services.Store.StoreAvailability")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreAvailability")
     @js.native
-    abstract class StoreAvailability ()
+    open class StoreAvailability ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreAvailability
     
     /** Provides additional data for a product SKU that the user has an entitlement to use. */
-    @JSGlobal("Windows.Services.Store.StoreCollectionData")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreCollectionData")
     @js.native
-    abstract class StoreCollectionData ()
+    open class StoreCollectionData ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreCollectionData {
       
@@ -171,9 +171,9 @@ object Services {
     }
     
     /** Provides response data for a request that involves a consumable add-on for the current app. */
-    @JSGlobal("Windows.Services.Store.StoreConsumableResult")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreConsumableResult")
     @js.native
-    abstract class StoreConsumableResult ()
+    open class StoreConsumableResult ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreConsumableResult {
       
@@ -212,9 +212,9 @@ object Services {
     }
     
     /** Provides members you can use to access and manage Windows Store-related data for the current app. For example, you can use members of this class to get Windows Store listing and license info for the current app, purchase the current app or products that are offered by the app, or download and install package updates for the app. */
-    @JSGlobal("Windows.Services.Store.StoreContext")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreContext")
     @js.native
-    abstract class StoreContext ()
+    open class StoreContext ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreContext
     object StoreContext {
@@ -261,9 +261,9 @@ object Services {
     }
     
     /** Represents an image that is associated with a product listing in the Windows Store. */
-    @JSGlobal("Windows.Services.Store.StoreImage")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreImage")
     @js.native
-    abstract class StoreImage ()
+    open class StoreImage ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreImage {
       
@@ -289,9 +289,9 @@ object Services {
     }
     
     /** Provides license info for an add-on that is associated with the current app. */
-    @JSGlobal("Windows.Services.Store.StoreLicense")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreLicense")
     @js.native
-    abstract class StoreLicense ()
+    open class StoreLicense ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreLicense {
       
@@ -317,9 +317,9 @@ object Services {
     }
     
     /** Provides license info for a downloadable content (DLC) package for the current app. */
-    @JSGlobal("Windows.Services.Store.StorePackageLicense")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StorePackageLicense")
     @js.native
-    abstract class StorePackageLicense ()
+    open class StorePackageLicense ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StorePackageLicense {
       
@@ -350,9 +350,9 @@ object Services {
     }
     
     /** Provides info about a package for the current app that has an update available for download from the Windows Store. */
-    @JSGlobal("Windows.Services.Store.StorePackageUpdate")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StorePackageUpdate")
     @js.native
-    abstract class StorePackageUpdate ()
+    open class StorePackageUpdate ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StorePackageUpdate {
       
@@ -367,9 +367,9 @@ object Services {
     }
     
     /** Provides info about a completed package update request for the current app. */
-    @JSGlobal("Windows.Services.Store.StorePackageUpdateResult")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StorePackageUpdateResult")
     @js.native
-    abstract class StorePackageUpdateResult ()
+    open class StorePackageUpdateResult ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StorePackageUpdateResult {
       
@@ -410,9 +410,9 @@ object Services {
     }
     
     /** Contains pricing info for a product listing in the Windows Store. */
-    @JSGlobal("Windows.Services.Store.StorePrice")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StorePrice")
     @js.native
-    abstract class StorePrice ()
+    open class StorePrice ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StorePrice {
       
@@ -442,16 +442,16 @@ object Services {
     }
     
     /** Represents a product that is available in the Windows Store. */
-    @JSGlobal("Windows.Services.Store.StoreProduct")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreProduct")
     @js.native
-    abstract class StoreProduct ()
+    open class StoreProduct ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreProduct
     
     /** Provides response data for a paged request to retrieve details about products that can be purchased from within the current app. */
-    @JSGlobal("Windows.Services.Store.StoreProductPagedQueryResult")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreProductPagedQueryResult")
     @js.native
-    abstract class StoreProductPagedQueryResult ()
+    open class StoreProductPagedQueryResult ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreProductPagedQueryResult {
       
@@ -476,9 +476,9 @@ object Services {
     }
     
     /** Provides response data for a request to retrieve details about products that can be purchased from within the current app. */
-    @JSGlobal("Windows.Services.Store.StoreProductQueryResult")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreProductQueryResult")
     @js.native
-    abstract class StoreProductQueryResult ()
+    open class StoreProductQueryResult ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreProductQueryResult {
       
@@ -492,9 +492,9 @@ object Services {
     }
     
     /** Provides response data for a request to retrieve details about the current app. */
-    @JSGlobal("Windows.Services.Store.StoreProductResult")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreProductResult")
     @js.native
-    abstract class StoreProductResult ()
+    open class StoreProductResult ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreProductResult {
       
@@ -529,9 +529,9 @@ object Services {
     }
     
     /** Provides response data for a request to purchase an app or product that is offered by the app. */
-    @JSGlobal("Windows.Services.Store.StorePurchaseResult")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StorePurchaseResult")
     @js.native
-    abstract class StorePurchaseResult ()
+    open class StorePurchaseResult ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StorePurchaseResult {
       
@@ -564,9 +564,9 @@ object Services {
     }
     
     /** Provides a helper method that can be used to send requests to the Windows Store for operations that do not yet have a corresponding API available in the Windows SDK. */
-    @JSGlobal("Windows.Services.Store.StoreRequestHelper")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreRequestHelper")
     @js.native
-    abstract class StoreRequestHelper ()
+    open class StoreRequestHelper ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreRequestHelper
     object StoreRequestHelper {
@@ -591,9 +591,9 @@ object Services {
     }
     
     /** Provides response data for a request that is sent to the Windows Store. */
-    @JSGlobal("Windows.Services.Store.StoreSendRequestResult")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreSendRequestResult")
     @js.native
-    abstract class StoreSendRequestResult ()
+    open class StoreSendRequestResult ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreSendRequestResult {
       
@@ -611,16 +611,16 @@ object Services {
     }
     
     /** Provides info for a SKU of a product in the Windows Store. */
-    @JSGlobal("Windows.Services.Store.StoreSku")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreSku")
     @js.native
-    abstract class StoreSku ()
+    open class StoreSku ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreSku
     
     /** Provides subscription info for a product SKU that represents a subscription with recurring billing. */
-    @JSGlobal("Windows.Services.Store.StoreSubscriptionInfo")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreSubscriptionInfo")
     @js.native
-    abstract class StoreSubscriptionInfo ()
+    open class StoreSubscriptionInfo ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreSubscriptionInfo {
       
@@ -646,9 +646,9 @@ object Services {
     }
     
     /** Represents a video that is associated with a product listing in the Windows Store. */
-    @JSGlobal("Windows.Services.Store.StoreVideo")
+    /* note: abstract class */ @JSGlobal("Windows.Services.Store.StoreVideo")
     @js.native
-    abstract class StoreVideo ()
+    open class StoreVideo ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StoreVideo {
       

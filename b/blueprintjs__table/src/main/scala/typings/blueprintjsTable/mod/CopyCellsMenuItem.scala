@@ -1,6 +1,6 @@
 package typings.blueprintjsTable.mod
 
-import typings.blueprintjsTable.copyCellsMenuItemMod.ICopyCellsMenuItemProps
+import typings.blueprintjsTable.libEsmInteractionsMenusCopyCellsMenuItemMod.ICopyCellsMenuItemProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "CopyCellsMenuItem")
 @js.native
 open class CopyCellsMenuItem protected ()
-  extends typings.blueprintjsTable.menusMod.CopyCellsMenuItem {
+  extends typings.blueprintjsTable.libEsmInteractionsMenusMod.CopyCellsMenuItem {
   def this(props: ICopyCellsMenuItemProps) = this()
   /**
     * @deprecated

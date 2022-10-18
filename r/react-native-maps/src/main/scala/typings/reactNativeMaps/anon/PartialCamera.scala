@@ -1,11 +1,11 @@
 package typings.reactNativeMaps.anon
 
-import typings.reactNativeMaps.mod.LatLng
+import typings.reactNativeMaps.libSharedTypesMod.LatLng
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<react-native-maps.react-native-maps.Camera> */
+/* Inlined std.Partial<react-native-maps.react-native-maps/lib/MapView.types.Camera> */
 trait PartialCamera extends StObject {
   
   var altitude: js.UndefOr[Double] = js.undefined

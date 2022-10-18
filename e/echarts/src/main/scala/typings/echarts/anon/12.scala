@@ -9,7 +9,7 @@ trait `12` extends StObject {
   /**
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label
     */
-  var label: js.UndefOr[FontSize] = js.undefined
+  var label: js.UndefOr[FontFamily] = js.undefined
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.lineStyle
@@ -25,7 +25,7 @@ object `12` {
   
   extension [Self <: `12`](x: Self) {
     
-    inline def setLabel(value: FontSize): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

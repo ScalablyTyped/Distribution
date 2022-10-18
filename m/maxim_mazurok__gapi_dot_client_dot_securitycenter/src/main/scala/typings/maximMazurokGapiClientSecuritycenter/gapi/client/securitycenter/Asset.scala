@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,9 +29,7 @@ trait Asset extends StObject {
   
   /** Resource managed properties. These properties are managed and defined by the Google Cloud resource and cannot be modified by the user. */
   var resourceProperties: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.Asset & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Security Command Center managed properties. These properties are managed by Security Command Center and cannot be modified by the user. */
@@ -70,9 +67,7 @@ object Asset {
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setResourceProperties(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.Asset & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "resourceProperties", value.asInstanceOf[js.Any])
     
     inline def setResourcePropertiesUndefined: Self = StObject.set(x, "resourceProperties", js.undefined)

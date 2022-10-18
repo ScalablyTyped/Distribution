@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mergerinoStrings {
   
   @js.native
-  sealed trait ObjectPatch extends StObject
-  inline def ObjectPatch: ObjectPatch = "ObjectPatch".asInstanceOf[ObjectPatch]
-  
-  @js.native
   sealed trait _empty
     extends StObject
        with _Falsy

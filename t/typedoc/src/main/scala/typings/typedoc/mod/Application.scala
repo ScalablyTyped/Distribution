@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options An object containing the options that should be used.
   */
 open class Application ()
-  extends typings.typedoc.applicationMod.Application
+  extends typings.typedoc.distLibApplicationMod.Application
 /* static members */
 object Application {
   

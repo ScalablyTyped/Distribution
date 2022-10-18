@@ -1,7 +1,7 @@
 package typings.matrixAppserviceBridge.anon
 
-import typings.matrixAppserviceBridge.intentMod.IntentBackingStore
-import typings.matrixAppserviceBridge.intentMod.OnEventSentHook
+import typings.matrixAppserviceBridge.libComponentsIntentMod.IntentBackingStore
+import typings.matrixAppserviceBridge.libComponentsIntentMod.OnEventSentHook
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ trait BackingStore extends StObject {
   
   var backingStore: IntentBackingStore
   
-  var caching: Ttl
+  var caching: Size
   
   var dontCheckPowerLevel: js.UndefOr[Boolean] = js.undefined
   
@@ -27,7 +27,7 @@ trait BackingStore extends StObject {
 }
 object BackingStore {
   
-  inline def apply(backingStore: IntentBackingStore, caching: Ttl, enablePresence: Boolean): BackingStore = {
+  inline def apply(backingStore: IntentBackingStore, caching: Size, enablePresence: Boolean): BackingStore = {
     val __obj = js.Dynamic.literal(backingStore = backingStore.asInstanceOf[js.Any], caching = caching.asInstanceOf[js.Any], enablePresence = enablePresence.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackingStore]
   }
@@ -36,7 +36,7 @@ object BackingStore {
     
     inline def setBackingStore(value: IntentBackingStore): Self = StObject.set(x, "backingStore", value.asInstanceOf[js.Any])
     
-    inline def setCaching(value: Ttl): Self = StObject.set(x, "caching", value.asInstanceOf[js.Any])
+    inline def setCaching(value: Size): Self = StObject.set(x, "caching", value.asInstanceOf[js.Any])
     
     inline def setDontCheckPowerLevel(value: Boolean): Self = StObject.set(x, "dontCheckPowerLevel", value.asInstanceOf[js.Any])
     

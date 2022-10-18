@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JSONHydrator extends StObject {
   
-  def apply(data: js.Array[js.Object]): js.Array[typings.postcss.nodeMod.default] = js.native
-  def apply(data: js.Object): typings.postcss.nodeMod.default = js.native
+  def apply(data: js.Array[js.Object]): js.Array[typings.postcss.libNodeMod.default] = js.native
+  def apply(data: js.Object): typings.postcss.libNodeMod.default = js.native
 }

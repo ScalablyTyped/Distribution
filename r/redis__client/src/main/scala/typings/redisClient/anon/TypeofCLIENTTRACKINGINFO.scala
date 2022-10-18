@@ -1,8 +1,8 @@
 package typings.redisClient.anon
 
-import typings.redisClient.clientTRACKINGINFOMod.RawReply
-import typings.redisClient.clientTRACKINGINFOMod.Reply
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsClientTRACKINGINFOMod.RawReply
+import typings.redisClient.distLibCommandsClientTRACKINGINFOMod.Reply
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

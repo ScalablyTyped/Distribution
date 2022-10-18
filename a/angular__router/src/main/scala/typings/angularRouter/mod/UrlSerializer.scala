@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/router", "UrlSerializer")
+/* note: abstract class */ @JSImport("@angular/router", "UrlSerializer")
 @js.native
-abstract class UrlSerializer () extends StObject {
+open class UrlSerializer () extends StObject {
   
   /** Parse a url into a `UrlTree` */
   def parse(url: String): UrlTree = js.native

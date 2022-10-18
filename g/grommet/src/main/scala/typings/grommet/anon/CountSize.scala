@@ -1,7 +1,7 @@
 package typings.grommet.anon
 
-import typings.grommet.gridMod.GridSizeType
-import typings.grommet.gridMod._GridColumnsType
+import typings.grommet.componentsGridMod.GridSizeType
+import typings.grommet.componentsGridMod._GridColumnsType
 import typings.grommet.grommetStrings.fill
 import typings.grommet.grommetStrings.fit
 import org.scalablytyped.runtime.StObject

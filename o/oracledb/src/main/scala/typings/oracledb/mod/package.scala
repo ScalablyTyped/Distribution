@@ -1,11 +1,8 @@
 package typings.oracledb.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.node.bufferMod.global.Buffer
 import typings.oracledb.anon.Correlation
 import typings.oracledb.mod.^
-import typings.oracledb.oracledbStrings.DBObject_IN
-import typings.oracledb.oracledbStrings.DBObject_OUT
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -894,12 +891,12 @@ js.UndefOr[BindParameter | String | Double | js.Date | DBObjectIN[Any] | Buffer 
   * @see https://oracle.github.io/node-oracledb/doc/api.html#objects
   * @since 4.0
   */
-type DBObjectIN[T] = DBObject_IN & TopLevel[T] & BaseDBObject[T]
+type DBObjectIN[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P]} */ js.Any) & BaseDBObject[T]
 
 /**
   * @see https://oracle.github.io/node-oracledb/doc/api.html#objects
   * @since 4.0
   */
-type DBObjectOUT[T] = DBObject_OUT & TopLevel[T] & BaseDBObject[T]
+type DBObjectOUT[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: oracledb.oracledb.DBObject_OUT<T[P]>} */ js.Any) & BaseDBObject[T]
 
 type EnqueueMessage[T] = String | Buffer | DBObjectIN[T] | Correlation[T]

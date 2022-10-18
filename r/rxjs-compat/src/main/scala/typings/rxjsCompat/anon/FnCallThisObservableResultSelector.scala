@@ -1,5 +1,7 @@
 package typings.rxjsCompat.anon
 
+import typings.rxjs.distTypesInternalTypesMod.ObservableInput
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,11 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisObservableResultSelector extends StObject {
   
-  def apply[T, R](
-    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
-  ): Any = js.native
+  def apply[T, R](observable: ObservableInput[R]): Observable_[R] = js.native
   def apply[T, I, R](
-    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<I> */ Any,
+    observable: ObservableInput[I],
     resultSelector: js.Function4[
       /* outerValue */ T, 
       /* innerValue */ I, 
@@ -19,5 +19,5 @@ trait FnCallThisObservableResultSelector extends StObject {
       /* innerIndex */ Double, 
       R
     ]
-  ): Any = js.native
+  ): Observable_[R] = js.native
 }

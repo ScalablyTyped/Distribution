@@ -1,7 +1,7 @@
 package typings.awsLambda.anon
 
-import typings.awsLambda.commonMod.StringMap
-import typings.awsLambda.customEmailSenderMod.CustomEmailSenderAccountTakeOverNotificationUserAttributes
+import typings.awsLambda.triggerCognitoUserPoolTriggerCommonMod.StringMap
+import typings.awsLambda.triggerCognitoUserPoolTriggerCustomEmailSenderMod.CustomEmailSenderAccountTakeOverNotificationUserAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

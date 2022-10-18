@@ -1,15 +1,15 @@
 package typings.nodePgMigrate
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nodePgMigrate.generalTypesMod.DropOptions
-import typings.nodePgMigrate.migrationMod.CreateOptions
-import typings.nodePgMigrate.migrationMod.FilenameFormat
+import typings.nodePgMigrate.distMigrationMod.CreateOptions
+import typings.nodePgMigrate.distMigrationMod.FilenameFormat
+import typings.nodePgMigrate.distOperationsGeneralTypesMod.DropOptions
+import typings.nodePgMigrate.distOperationsTablesTypesMod.LikeOptions
+import typings.nodePgMigrate.distOperationsTriggersTypesMod.CreateTriggerFn
+import typings.nodePgMigrate.distOperationsTriggersTypesMod.TriggerOptions
 import typings.nodePgMigrate.nodePgMigrateStrings.js_
 import typings.nodePgMigrate.nodePgMigrateStrings.sql
 import typings.nodePgMigrate.nodePgMigrateStrings.ts
-import typings.nodePgMigrate.tablesTypesMod.LikeOptions
-import typings.nodePgMigrate.triggersTypesMod.CreateTriggerFn
-import typings.nodePgMigrate.triggersTypesMod.TriggerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -103,11 +103,11 @@ object anon {
     
     var options: js.UndefOr[LikeOptions] = js.undefined
     
-    var table: typings.nodePgMigrate.generalTypesMod.Name
+    var table: typings.nodePgMigrate.distOperationsGeneralTypesMod.Name
   }
   object Options {
     
-    inline def apply(table: typings.nodePgMigrate.generalTypesMod.Name): Options = {
+    inline def apply(table: typings.nodePgMigrate.distOperationsGeneralTypesMod.Name): Options = {
       val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
@@ -118,7 +118,7 @@ object anon {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setTable(value: typings.nodePgMigrate.generalTypesMod.Name): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: typings.nodePgMigrate.distOperationsGeneralTypesMod.Name): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,7 +182,7 @@ object anon {
       inline def setReverse(value: CreateTriggerFn): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
       inline def setReverseFunction3(
-        value: (/* tableName */ typings.nodePgMigrate.generalTypesMod.Name, /* triggerName */ String, /* triggerOptions */ TriggerOptions & DropOptions) => String | js.Array[String]
+        value: (/* tableName */ typings.nodePgMigrate.distOperationsGeneralTypesMod.Name, /* triggerName */ String, /* triggerOptions */ TriggerOptions & DropOptions) => String | js.Array[String]
       ): Self = StObject.set(x, "reverse", js.Any.fromFunction3(value))
     }
   }
@@ -213,7 +213,7 @@ object anon {
   /* Inlined {[name: string] : node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Type} & node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.DropOptions */
   trait namestringTypeDropOptions
     extends StObject
-       with /* name */ StringDictionary[typings.nodePgMigrate.generalTypesMod.Type] {
+       with /* name */ StringDictionary[typings.nodePgMigrate.distOperationsGeneralTypesMod.Type] {
     
     var cascade: js.UndefOr[Boolean] = js.undefined
     

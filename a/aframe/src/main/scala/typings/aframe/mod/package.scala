@@ -1,7 +1,6 @@
 package typings.aframe.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.aframe.anon.PartialANode
 import typings.aframe.anon.PartialComponentanySystem
 import typings.aframe.anon.PartialShader
@@ -82,15 +81,9 @@ type ComponentDefinition[T /* <: js.Object */] = T & PartialComponentanySystem &
 
 type GeometryDefinition[T /* <: js.Object */, U] = T & Partial[Geometry[U]]
 
-type MultiPropertySchema[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: aframe.aframe.SinglePropertySchema<T[P]> | T[P]}
-  */ typings.aframe.aframeStrings.MultiPropertySchema & TopLevel[Any]
-
 type NodeDefinition[T /* <: js.Object */] = T & PartialANode
 
 type ObjectMap[T] = StringDictionary[T]
-
-type Schema_[T /* <: js.Object */] = SinglePropertySchema[T] | MultiPropertySchema[T]
 
 type ShaderDefinition[T /* <: js.Object */] = T & PartialShader
 

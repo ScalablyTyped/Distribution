@@ -1,11 +1,11 @@
 package typings.mendixmodelsdk.mod.expressions
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.expressionsMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenExpressionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +23,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 9.8.0: deleted
   * In version 7.9.0: introduced
   */
-@JSImport("mendixmodelsdk", "expressions.Expression")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "expressions.Expression")
 @js.native
-abstract class Expression protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.expressions.Expression {
+open class Expression protected ()
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.expressions.Expression {
   def this(
     model: AbstractModel,
     structureTypeName: String,

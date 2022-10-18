@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.PageDescriptor")
 @js.native
 open class PageDescriptor protected ()
-  extends typings.googleGax.fallbackMod.PageDescriptor {
+  extends typings.googleGax.buildSrcFallbackMod.PageDescriptor {
   def this(requestPageTokenField: String, responsePageTokenField: String, resourceField: String) = this()
 }

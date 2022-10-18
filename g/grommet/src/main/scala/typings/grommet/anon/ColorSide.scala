@@ -1,8 +1,8 @@
 package typings.grommet.anon
 
-import typings.grommet.listMod.SideType
-import typings.grommet.listMod.SizeType
-import typings.grommet.listMod._BorderType
+import typings.grommet.componentsListMod.SideType
+import typings.grommet.componentsListMod.SizeType
+import typings.grommet.componentsListMod._BorderType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

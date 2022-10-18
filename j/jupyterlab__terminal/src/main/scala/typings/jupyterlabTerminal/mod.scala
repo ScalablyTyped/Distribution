@@ -1,9 +1,9 @@
 package typings.jupyterlabTerminal
 
-import typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection
+import typings.jupyterlabServices.libTerminalTerminalMod.ITerminalConnection
 import typings.jupyterlabTerminal.anon.PartialIOptions
-import typings.jupyterlabTerminal.tokensMod.ITerminal.IOptions
-import typings.jupyterlabTranslation.tokensMod.ITranslator
+import typings.jupyterlabTerminal.libTokensMod.ITerminal.IOptions
+import typings.jupyterlabTranslation.libTokensMod.ITranslator
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,12 +23,12 @@ object mod {
   
   @JSImport("@jupyterlab/terminal", "ITerminalTracker")
   @js.native
-  val ITerminalTracker: Token[typings.jupyterlabTerminal.tokensMod.ITerminalTracker] = js.native
+  val ITerminalTracker: Token[typings.jupyterlabTerminal.libTokensMod.ITerminalTracker] = js.native
   
   @JSImport("@jupyterlab/terminal", "Terminal")
   @js.native
   open class Terminal protected ()
-    extends typings.jupyterlabTerminal.widgetMod.Terminal {
+    extends typings.jupyterlabTerminal.libWidgetMod.Terminal {
     /**
       * Construct a new terminal widget.
       *

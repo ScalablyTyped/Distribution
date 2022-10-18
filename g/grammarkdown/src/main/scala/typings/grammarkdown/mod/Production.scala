@@ -1,52 +1,52 @@
 package typings.grammarkdown.mod
 
-import typings.grammarkdown.nodesMod.ProductionBody
-import typings.grammarkdown.tokensMod.ProductionSeperatorKind
+import typings.grammarkdown.distNodesMod.ProductionBody
+import typings.grammarkdown.distTokensMod.ProductionSeperatorKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Production")
 @js.native
-class Production protected ()
-  extends typings.grammarkdown.nodesMod.Production {
-  def this(name: typings.grammarkdown.nodesMod.Identifier) = this()
+open class Production protected ()
+  extends typings.grammarkdown.distNodesMod.Production {
+  def this(name: typings.grammarkdown.distNodesMod.Identifier) = this()
   def this(
-    name: typings.grammarkdown.nodesMod.Identifier,
-    parameterList: typings.grammarkdown.nodesMod.ParameterList
+    name: typings.grammarkdown.distNodesMod.Identifier,
+    parameterList: typings.grammarkdown.distNodesMod.ParameterList
   ) = this()
   def this(
-    name: typings.grammarkdown.nodesMod.Identifier,
+    name: typings.grammarkdown.distNodesMod.Identifier,
     parameterList: Unit,
-    colonToken: typings.grammarkdown.nodesMod.Token[ProductionSeperatorKind]
+    colonToken: typings.grammarkdown.distNodesMod.Token[ProductionSeperatorKind]
   ) = this()
   def this(
-    name: typings.grammarkdown.nodesMod.Identifier,
-    parameterList: typings.grammarkdown.nodesMod.ParameterList,
-    colonToken: typings.grammarkdown.nodesMod.Token[ProductionSeperatorKind]
+    name: typings.grammarkdown.distNodesMod.Identifier,
+    parameterList: typings.grammarkdown.distNodesMod.ParameterList,
+    colonToken: typings.grammarkdown.distNodesMod.Token[ProductionSeperatorKind]
   ) = this()
   def this(
-    name: typings.grammarkdown.nodesMod.Identifier,
+    name: typings.grammarkdown.distNodesMod.Identifier,
     parameterList: Unit,
     colonToken: Unit,
     body: ProductionBody
   ) = this()
   def this(
-    name: typings.grammarkdown.nodesMod.Identifier,
+    name: typings.grammarkdown.distNodesMod.Identifier,
     parameterList: Unit,
-    colonToken: typings.grammarkdown.nodesMod.Token[ProductionSeperatorKind],
+    colonToken: typings.grammarkdown.distNodesMod.Token[ProductionSeperatorKind],
     body: ProductionBody
   ) = this()
   def this(
-    name: typings.grammarkdown.nodesMod.Identifier,
-    parameterList: typings.grammarkdown.nodesMod.ParameterList,
+    name: typings.grammarkdown.distNodesMod.Identifier,
+    parameterList: typings.grammarkdown.distNodesMod.ParameterList,
     colonToken: Unit,
     body: ProductionBody
   ) = this()
   def this(
-    name: typings.grammarkdown.nodesMod.Identifier,
-    parameterList: typings.grammarkdown.nodesMod.ParameterList,
-    colonToken: typings.grammarkdown.nodesMod.Token[ProductionSeperatorKind],
+    name: typings.grammarkdown.distNodesMod.Identifier,
+    parameterList: typings.grammarkdown.distNodesMod.ParameterList,
+    colonToken: typings.grammarkdown.distNodesMod.Token[ProductionSeperatorKind],
     body: ProductionBody
   ) = this()
 }

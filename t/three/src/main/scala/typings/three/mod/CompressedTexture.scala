@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "CompressedTexture")
 @js.native
 open class CompressedTexture protected ()
-  extends typings.three.threeMod.CompressedTexture {
+  extends typings.three.srcThreeMod.CompressedTexture {
   /**
     * @param mipmaps
     * @param width

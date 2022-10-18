@@ -5,7 +5,7 @@ import typings.fundamentalReact.anon.FCTileFooterPropsdisplayN
 import typings.fundamentalReact.anon.FCTileHeaderPropsdisplayN
 import typings.fundamentalReact.anon.PartialTileProps
 import typings.fundamentalReact.anon.WeakValidationMapTileProp
-import typings.fundamentalReact.tileMod.TileProps
+import typings.fundamentalReact.libTileTileMod.TileProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

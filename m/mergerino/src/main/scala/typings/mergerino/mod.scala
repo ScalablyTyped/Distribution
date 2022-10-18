@@ -1,8 +1,6 @@
 package typings.mergerino
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.ReadonlyArray
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +13,17 @@ object mod {
   
   inline def default[S /* <: js.Object */](source: S, patches: MultipleTopLevelPatch[S]*): S = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(source.asInstanceOf[js.Any]).`++`(patches.asInstanceOf[Seq[js.Any]])*).asInstanceOf[S]
   
-  type ArrayPatch[T] = ObjectPatch[Record[Double, Any]]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<infer V> ? mergerino.mergerino.ObjectPatch<std.Record<number, V>> : never
+    }}}
+    */
+  @js.native
+  trait ArrayPatch[T]
+    extends StObject
+       with _TopLevelPatch[T]
   
   @js.native
   trait DeepArray[T]
@@ -33,7 +41,13 @@ object mod {
   */
   type Falsy = js.UndefOr[_Falsy | Null]
   
-  type FunctionPatch[T] = js.Function2[/* val */ T, /* merge */ Merge[T], T]
+  type FunctionPatch[T] = js.Function2[
+    /* val */ T, 
+    /* merge */ Merge[
+      /* import warning: importer.ImportType#apply Failed type conversion: T extends object ? T : never */ js.Any
+    ], 
+    T
+  ]
   
   @js.native
   trait Merge[S /* <: js.Object */] extends StObject {
@@ -43,13 +57,39 @@ object mod {
   
   type MultipleTopLevelPatch[S /* <: js.Object */] = TopLevelPatch[S] | Any
   
-  type NestedPatch[T] = ObjectPatch[T]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends object ? mergerino.mergerino.ObjectPatch<T> : never
+    }}}
+    */
+  @js.native
+  trait NestedPatch[T] extends StObject
   
-  type ObjectPatch[S /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof S ]:? S[K] | mergerino.mergerino.DeletePatch | mergerino.mergerino.FunctionPatch<S[K]> | mergerino.mergerino.NestedPatch<S[K]> | mergerino.mergerino.ArrayPatch<S[K]>}
-    */ typings.mergerino.mergerinoStrings.ObjectPatch & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof S ]:? S[K] | mergerino.mergerino.DeletePatch | mergerino.mergerino.FunctionPatch<S[K]> | mergerino.mergerino.NestedPatch<S[K]> | mergerino.mergerino.ArrayPatch<S[K]>}
+    }}}
+    */
+  @js.native
+  trait ObjectPatch[S /* <: js.Object */]
+    extends StObject
+       with _TopLevelPatch[S]
   
-  type TopLevelPatch[S /* <: js.Object */] = FunctionPatch[S] | ObjectPatch[S] | ArrayPatch[S] | Falsy
+  /* Rewritten from type alias, can be one of: 
+    - typings.mergerino.mod.FunctionPatch[S]
+    - typings.mergerino.mod.ObjectPatch[S]
+    - typings.mergerino.mod.ArrayPatch[S]
+    - typings.mergerino.mod.Falsy
+  */
+  type TopLevelPatch[S /* <: js.Object */] = js.UndefOr[_TopLevelPatch[S] | FunctionPatch[S] | Null]
   
-  trait _Falsy extends StObject
+  trait _Falsy
+    extends StObject
+       with _TopLevelPatch[Any]
+  
+  trait _TopLevelPatch[S /* <: js.Object */] extends StObject
 }

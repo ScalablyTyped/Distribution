@@ -4,6 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "IFrameElement")
+/* note: abstract class */ @JSImport("k6/html", "IFrameElement")
 @js.native
-abstract class IFrameElement () extends Element
+open class IFrameElement () extends Element

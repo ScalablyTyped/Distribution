@@ -3,7 +3,7 @@ package typings.materialLinearProgress
 import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialLinearProgress.foundationMod.MDCLinearProgressFoundation
-import typings.materialProgressIndicator.mod.MDCProgressIndicator
+import typings.materialProgressIndicator.componentMod.MDCProgressIndicator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

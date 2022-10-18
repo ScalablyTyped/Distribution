@@ -118,11 +118,7 @@ type ImpactValue = _ImpactValue | Null
 
 type PartialResults = js.Array[PartialResult | Null]
 
-type Responder = js.Function3[
-/* message */ Any | js.Error, 
-/* keepalive */ js.UndefOr[Boolean], 
-/* replyHandler */ js.UndefOr[ReplyHandler], 
-Unit]
+type ReplyHandler = js.Function3[/* message */ Any | js.Error, /* keepalive */ Boolean, /* responder */ Responder, Unit]
 
 type RuleLocale = StringDictionary[Description]
 

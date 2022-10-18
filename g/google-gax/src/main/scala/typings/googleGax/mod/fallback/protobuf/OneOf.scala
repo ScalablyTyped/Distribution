@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.protobuf.OneOf")
 @js.native
 open class OneOf protected ()
-  extends typings.googleGax.fallbackMod.protobuf.OneOf {
+  extends typings.googleGax.buildSrcFallbackMod.protobuf.OneOf {
   /**
     * Constructs a new oneof instance.
     * @param name Oneof name

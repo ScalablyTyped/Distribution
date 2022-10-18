@@ -32,13 +32,13 @@ object mod {
     
     inline def GreaterthansignGreaterthansign: typings.shellQuote.shellQuoteStrings.GreaterthansignGreaterthansign = ">>".asInstanceOf[typings.shellQuote.shellQuoteStrings.GreaterthansignGreaterthansign]
     
-    inline def Leftparenthesis: String = String.asInstanceOf[String]
+    inline def Leftparenthesis: /* ( */ String = "(".asInstanceOf[/* ( */ String]
     
     inline def Lessthansign: typings.shellQuote.shellQuoteStrings.Lessthansign = "<".asInstanceOf[typings.shellQuote.shellQuoteStrings.Lessthansign]
     
-    inline def LessthansignLeftparenthesis: String = String.asInstanceOf[String]
+    inline def LessthansignLeftparenthesis: /* <( */ String = "<(".asInstanceOf[/* <( */ String]
     
-    inline def Rightparenthesis: String = String.asInstanceOf[String]
+    inline def Rightparenthesis: /* ) */ String = ")".asInstanceOf[/* ) */ String]
     
     inline def Semicolon: typings.shellQuote.shellQuoteStrings.Semicolon = ";".asInstanceOf[typings.shellQuote.shellQuoteStrings.Semicolon]
     
@@ -55,7 +55,7 @@ object mod {
     - typings.shellQuote.shellQuoteStrings.AmpersandAmpersand
     - typings.shellQuote.shellQuoteStrings.SemicolonSemicolon
     - typings.shellQuote.shellQuoteStrings.VerticallineAmpersand
-    - java.lang.String
+    - / * <( * / java.lang.String
     - typings.shellQuote.shellQuoteStrings.GreaterthansignGreaterthansign
     - typings.shellQuote.shellQuoteStrings.GreaterthansignAmpersand
     - typings.shellQuote.shellQuoteStrings.Ampersand
@@ -64,7 +64,7 @@ object mod {
     - typings.shellQuote.shellQuoteStrings.Lessthansign
     - typings.shellQuote.shellQuoteStrings.Greaterthansign
   */
-  type ControlOperator = _ControlOperator | String
+  type ControlOperator = _ControlOperator | (/* <( */ String)
   
   /* Rewritten from type alias, can be one of: 
     - java.lang.String

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/credential-provider-imds" : "3.178.0"
+      "@aws-sdk/credential-provider-imds" : "3.190.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/credential-provider-imds" : "3.178.0"
+      "@aws-sdk/credential-provider-imds" : "3.190.0"
     }
   ],
   "compile-devDependencies" : [

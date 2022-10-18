@@ -1,6 +1,6 @@
 package typings.sinonjsCommons
 
-import typings.sinonjsCommons.calledInOrderMod.SinonProxy
+import typings.sinonjsCommons.typesCalledInOrderMod.SinonProxy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,8 +43,8 @@ object mod {
   @JSImport("@sinonjs/commons", "orderByFirstCall")
   @js.native
   val orderByFirstCall: js.Function1[
-    /* spies */ js.Array[typings.sinonjsCommons.orderByFirstCallMod.SinonProxy] | typings.sinonjsCommons.orderByFirstCallMod.SinonProxy, 
-    js.Array[typings.sinonjsCommons.orderByFirstCallMod.SinonProxy]
+    /* spies */ js.Array[typings.sinonjsCommons.typesOrderByFirstCallMod.SinonProxy] | typings.sinonjsCommons.typesOrderByFirstCallMod.SinonProxy, 
+    js.Array[typings.sinonjsCommons.typesOrderByFirstCallMod.SinonProxy]
   ] = js.native
   
   object prototypes {

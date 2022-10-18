@@ -1,7 +1,7 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.fresnelParametersMod.IFresnelParametersCreationOptions
-import typings.babylonjs.fresnelParametersMod.IFresnelParametersSerialized
+import typings.babylonjs.materialsFresnelParametersMod.IFresnelParametersCreationOptions
+import typings.babylonjs.materialsFresnelParametersMod.IFresnelParametersSerialized
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,5 +29,5 @@ object FresnelParameters {
     * @param parsedFresnelParameters Define the JSON representation
     * @returns the parsed parameters
     */
-  inline def Parse(parsedFresnelParameters: IFresnelParametersSerialized): typings.babylonjs.fresnelParametersMod.FresnelParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedFresnelParameters.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.fresnelParametersMod.FresnelParameters]
+  inline def Parse(parsedFresnelParameters: IFresnelParametersSerialized): typings.babylonjs.materialsFresnelParametersMod.FresnelParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedFresnelParameters.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.materialsFresnelParametersMod.FresnelParameters]
 }

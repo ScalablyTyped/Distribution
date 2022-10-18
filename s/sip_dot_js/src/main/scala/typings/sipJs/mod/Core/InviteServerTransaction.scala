@@ -1,7 +1,7 @@
 package typings.sipJs.mod.Core
 
-import typings.sipJs.coreTransportMod.Transport
-import typings.sipJs.transactionUserMod.ServerTransactionUser
+import typings.sipJs.libCoreTransactionsTransactionUserMod.ServerTransactionUser
+import typings.sipJs.libCoreTransportMod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Core.InviteServerTransaction")
 @js.native
 open class InviteServerTransaction protected ()
-  extends typings.sipJs.coreMod.InviteServerTransaction {
+  extends typings.sipJs.libCoreMod.InviteServerTransaction {
   /**
     * Constructor.
     * Upon construction, a "100 Trying" reply will be immediately sent.
@@ -21,7 +21,7 @@ open class InviteServerTransaction protected ()
     * @param user - The transaction user.
     */
   def this(
-    request: typings.sipJs.messagesMod.IncomingRequestMessage,
+    request: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage,
     transport: Transport,
     user: ServerTransactionUser
   ) = this()

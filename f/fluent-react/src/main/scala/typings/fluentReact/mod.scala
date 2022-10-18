@@ -1,7 +1,6 @@
 package typings.fluentReact
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.fluent.mod.FluentBundle
 import typings.fluentReact.fluentReactInts.`3`
 import typings.react.mod.Component
@@ -102,7 +101,15 @@ object mod {
     }
   }
   
-  type GetProps[C] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    C extends react.react.ComponentType<infer P> ? P : never
+    }}}
+    */
+  @js.native
+  trait GetProps[C] extends StObject
   
   type GetString = js.Function2[/* id */ String, /* args */ js.UndefOr[js.Object], String]
   
@@ -177,9 +184,15 @@ object mod {
   
   type MarkupParser = js.Function1[/* str */ String, js.Array[Node]]
   
-  type Matching[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
-    */ typings.fluentReact.fluentReactStrings.Matching & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
+    }}}
+    */
+  @js.native
+  trait Matching[InjectedProps, DecorationTargetProps] extends StObject
   
   trait Node extends StObject {
     
@@ -214,7 +227,13 @@ object mod {
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  type Shared[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : never}
-    */ typings.fluentReact.fluentReactStrings.Shared & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : never}
+    }}}
+    */
+  @js.native
+  trait Shared[InjectedProps, DecorationTargetProps] extends StObject
 }

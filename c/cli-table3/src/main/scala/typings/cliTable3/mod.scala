@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.cliTable3.anon.Border
-import typings.cliTable3.anon.Head
+import typings.cliTable3.anon.Compact
 import typings.cliTable3.anon.PartialRecordCharNamestri
 import typings.cliTable3.anon.RecordCharNamestring
 import typings.std.Array
@@ -43,7 +43,7 @@ object mod extends Shortcut {
     
     var rowSpan: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[Head] = js.undefined
+    var style: js.UndefOr[Border] = js.undefined
     
     var truncate: js.UndefOr[String] = js.undefined
     
@@ -80,7 +80,7 @@ object mod extends Shortcut {
       
       inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
       
-      inline def setStyle(value: Head): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Border): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
@@ -199,7 +199,7 @@ object mod extends Shortcut {
     
     var rowHeights: js.UndefOr[js.Array[Double | Null]] = js.undefined
     
-    var style: js.UndefOr[Partial[Border]] = js.undefined
+    var style: js.UndefOr[Partial[Compact]] = js.undefined
     
     var truncate: js.UndefOr[String] = js.undefined
     
@@ -250,7 +250,7 @@ object mod extends Shortcut {
       
       inline def setRowHeightsVarargs(value: (Double | Null)*): Self = StObject.set(x, "rowHeights", js.Array(value*))
       
-      inline def setStyle(value: Partial[Border]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Partial[Compact]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
@@ -274,7 +274,7 @@ object mod extends Shortcut {
     
     var chars: RecordCharNamestring
     
-    var style: Border
+    var style: Compact
   }
   object TableInstanceOptions {
     
@@ -285,7 +285,7 @@ object mod extends Shortcut {
       head: js.Array[String],
       rowAligns: js.Array[VerticalAlignment],
       rowHeights: js.Array[Double | Null],
-      style: Border,
+      style: Compact,
       truncate: String,
       wordWrap: Boolean,
       wrapOnWordBoundary: Boolean
@@ -298,7 +298,7 @@ object mod extends Shortcut {
       
       inline def setChars(value: RecordCharNamestring): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
-      inline def setStyle(value: Border): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Compact): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   

@@ -1,8 +1,8 @@
 package typings.ethersprojectContracts
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ethersprojectAbi.abstractCoderMod.Result
-import typings.ethersprojectAbi.fragmentsMod.JsonFragment
+import typings.ethersprojectAbi.libCodersAbstractCoderMod.Result
+import typings.ethersprojectAbi.libFragmentsMod.JsonFragment
 import typings.ethersprojectAbi.mod.Fragment
 import typings.ethersprojectAbi.mod.Interface
 import typings.ethersprojectAbstractProvider.mod.Block
@@ -14,7 +14,7 @@ import typings.ethersprojectAbstractProvider.mod.TransactionReceipt
 import typings.ethersprojectAbstractProvider.mod.TransactionRequest
 import typings.ethersprojectAbstractProvider.mod.TransactionResponse
 import typings.ethersprojectAbstractSigner.mod.Signer
-import typings.ethersprojectBignumber.bignumberMod.BigNumberish
+import typings.ethersprojectBignumber.libBignumberMod.BigNumberish
 import typings.ethersprojectBignumber.mod.BigNumber
 import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectContracts.anon.From

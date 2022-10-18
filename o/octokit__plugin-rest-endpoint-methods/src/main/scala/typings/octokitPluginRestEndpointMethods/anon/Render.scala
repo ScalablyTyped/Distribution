@@ -3,7 +3,7 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.requestParametersMod.RequestParameters
+import typings.octokitTypes.distTypesRequestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,22 +41,22 @@ trait Render extends StObject {
     * You must send Markdown as plain text (using a `Content-Type` header of `text/plain` or `text/x-markdown`) to this endpoint, rather than using JSON format. In raw mode, [GitHub Flavored Markdown](https://github.github.com/gfm/) is not supported and Markdown will be rendered in plain format like a README.md file. Markdown content must be 400 KB or less.
     */
   @JSName("renderRaw")
-  var renderRaw_Original: `340`
+  var renderRaw_Original: `354`
   
   @JSName("render")
-  var render_Original: `339`
+  var render_Original: `353`
 }
 object Render {
   
-  inline def apply(render: `339`, renderRaw: `340`): Render = {
+  inline def apply(render: `353`, renderRaw: `354`): Render = {
     val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any], renderRaw = renderRaw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Render]
   }
   
   extension [Self <: Render](x: Self) {
     
-    inline def setRender(value: `339`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: `353`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    inline def setRenderRaw(value: `340`): Self = StObject.set(x, "renderRaw", value.asInstanceOf[js.Any])
+    inline def setRenderRaw(value: `354`): Self = StObject.set(x, "renderRaw", value.asInstanceOf[js.Any])
   }
 }

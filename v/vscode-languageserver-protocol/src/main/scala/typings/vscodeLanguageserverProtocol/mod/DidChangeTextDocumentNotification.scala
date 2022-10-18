@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.DidChangeTextDocumentParams
-import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentChangeRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.DidChangeTextDocumentParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentChangeRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashdidChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object DidChangeTextDocumentNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidChangeTextDocumentNotification.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "DidChangeTextDocumentNotification.method")
   @js.native
@@ -19,5 +19,5 @@ object DidChangeTextDocumentNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidChangeTextDocumentNotification.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[DidChangeTextDocumentParams, TextDocumentChangeRegistrationOptions] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[DidChangeTextDocumentParams, TextDocumentChangeRegistrationOptions] = js.native
 }

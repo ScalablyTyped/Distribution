@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Engines/index", "PerformanceConfigurator")
 @js.native
 open class PerformanceConfigurator ()
-  extends typings.babylonjs.performanceConfiguratorMod.PerformanceConfigurator
+  extends typings.babylonjs.enginesPerformanceConfiguratorMod.PerformanceConfigurator
 /* static members */
 object PerformanceConfigurator {
   

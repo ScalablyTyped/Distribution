@@ -1,6 +1,6 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.meshMod.Mesh
+import typings.babylonjs.meshesMeshMod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "MeshExploder")
 @js.native
 open class MeshExploder protected ()
-  extends typings.babylonjs.meshExploderMod.MeshExploder {
+  extends typings.babylonjs.miscMeshExploderMod.MeshExploder {
   /**
     * Explodes meshes from a center mesh.
     * @param meshes The meshes to explode.

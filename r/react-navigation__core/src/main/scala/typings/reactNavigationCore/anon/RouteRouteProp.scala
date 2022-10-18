@@ -1,7 +1,7 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationCore.typesMod.RouteProp
-import typings.reactNavigationRouters.typesMod.ParamListBase
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.RouteProp
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

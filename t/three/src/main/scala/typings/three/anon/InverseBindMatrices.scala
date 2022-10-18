@@ -1,7 +1,7 @@
 package typings.three.anon
 
-import typings.three.threeMod.BufferAttribute
-import typings.three.threeMod.InterleavedBufferAttribute
+import typings.three.srcThreeMod.BufferAttribute
+import typings.three.srcThreeMod.InterleavedBufferAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

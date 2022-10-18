@@ -1,8 +1,8 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.AfterClose
-import typings.antDesignReactNative.tagMod.TagNativeProps
-import typings.antDesignReactNative.tagMod.default
+import typings.antDesignReactNative.libTagMod.TagNativeProps
+import typings.antDesignReactNative.libTagMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

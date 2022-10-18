@@ -1,8 +1,8 @@
 package typings.fileType
 
-import typings.node.nodeStreamMod.Readable
+import typings.node.nodeColonstreamMod.Readable
 import typings.std.ReadonlySet
-import typings.strtok3.typesMod.ITokenizer
+import typings.strtok3.libTypesMod.ITokenizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -517,11 +517,11 @@ object coreMod {
     
     inline def applicationSlashvndDotoasisDotopendocumentDottext: typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDottext = "application/vnd.oasis.opendocument.text".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDottext]
     
-    inline def `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`: String = String.asInstanceOf[String]
+    inline def `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`: /* application/vnd.openxmlformats-officedocument.presentationml.presentation */ String = "application/vnd.openxmlformats-officedocument.presentationml.presentation".asInstanceOf[/* application/vnd.openxmlformats-officedocument.presentationml.presentation */ String]
     
-    inline def `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`: String = String.asInstanceOf[String]
+    inline def `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`: /* application/vnd.openxmlformats-officedocument.spreadsheetml.sheet */ String = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet".asInstanceOf[/* application/vnd.openxmlformats-officedocument.spreadsheetml.sheet */ String]
     
-    inline def `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`: String = String.asInstanceOf[String]
+    inline def `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`: /* application/vnd.openxmlformats-officedocument.wordprocessingml.document */ String = "application/vnd.openxmlformats-officedocument.wordprocessingml.document".asInstanceOf[/* application/vnd.openxmlformats-officedocument.wordprocessingml.document */ String]
     
     inline def applicationSlashvndDotsketchupDotskp: typings.fileType.fileTypeStrings.applicationSlashvndDotsketchupDotskp = "application/vnd.sketchup.skp".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashvndDotsketchupDotskp]
     
@@ -771,7 +771,7 @@ object coreMod {
     - typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDottext
     - typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDotspreadsheet
     - typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDotpresentation
-    - java.lang.String
+    - / * application/vnd.openxmlformats-officedocument.wordprocessingml.document * / java.lang.String
     - typings.fileType.fileTypeStrings.applicationSlashzip
     - typings.fileType.fileTypeStrings.`applicationSlashx-tar`
     - typings.fileType.fileTypeStrings.`applicationSlashx-rar-compressed`
@@ -885,7 +885,7 @@ object coreMod {
     - typings.fileType.fileTypeStrings.imageSlashjxl
     - typings.fileType.fileTypeStrings.applicationSlashzstd
   */
-  type MimeType = _MimeType | String
+  type MimeType = _MimeType | (/* application/vnd.openxmlformats-officedocument.wordprocessingml.document */ String)
   
   @js.native
   trait ReadableStreamWithFileType extends Readable {

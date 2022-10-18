@@ -12,9 +12,9 @@ object global {
       
       object dataProvider {
         
-        @JSGlobal("Six.plugins.dataProvider.DataProvider")
+        /* note: abstract class */ @JSGlobal("Six.plugins.dataProvider.DataProvider")
         @js.native
-        abstract class DataProvider ()
+        open class DataProvider ()
           extends StObject
              with typings.sixRuntime.Six.plugins.dataProvider.DataProvider {
           

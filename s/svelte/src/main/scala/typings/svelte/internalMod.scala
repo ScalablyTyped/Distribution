@@ -84,20 +84,11 @@ import typings.std.Record
 import typings.std.SVGElement
 import typings.std.ShadowRoot
 import typings.std.Text
-import typings.svelte.animationsMod.AnimationFn
-import typings.svelte.animationsMod.PositionRect
 import typings.svelte.anon.Bubbles
 import typings.svelte.anon.End
+import typings.svelte.anon.Invalidate
 import typings.svelte.anon.Render
-import typings.svelte.anon.Run
 import typings.svelte.anon.`0`
-import typings.svelte.componentMod.Fragment
-import typings.svelte.devMod.ComponentConstructorOptions
-import typings.svelte.domMod.ChildNodeArray
-import typings.svelte.domMod.NodeEx
-import typings.svelte.lifecycleMod.DispatchOptions
-import typings.svelte.loopMod.Task
-import typings.svelte.loopMod.TaskCallback
 import typings.svelte.svelteInts.`-1`
 import typings.svelte.svelteInts.`1`
 import typings.svelte.svelteStrings.`object`
@@ -270,53 +261,64 @@ import typings.svelte.svelteStrings.use
 import typings.svelte.svelteStrings.video
 import typings.svelte.svelteStrings.view
 import typings.svelte.svelteStrings.wbr
-import typings.svelte.transitionsMod.TransitionFn
+import typings.svelte.typesRuntimeInternalAnimationsMod.AnimationFn
+import typings.svelte.typesRuntimeInternalAnimationsMod.PositionRect
+import typings.svelte.typesRuntimeInternalComponentMod.Fragment
+import typings.svelte.typesRuntimeInternalDevMod.ComponentConstructorOptions
+import typings.svelte.typesRuntimeInternalDomMod.ChildNodeArray
+import typings.svelte.typesRuntimeInternalDomMod.NodeEx
+import typings.svelte.typesRuntimeInternalLifecycleMod.DispatchOptions
+import typings.svelte.typesRuntimeInternalLoopMod.Task
+import typings.svelte.typesRuntimeInternalLoopMod.TaskCallback
+import typings.svelte.typesRuntimeInternalTransitionsMod.TransitionFn
+import typings.svelte.typesRuntimeStoreMod.Readable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object internalMod {
   
-  @JSImport("svelte/types/runtime/internal", JSImport.Namespace)
+  @JSImport("svelte/internal", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("svelte/types/runtime/internal", "HtmlTag")
+  @JSImport("svelte/internal", "HtmlTag")
   @js.native
   open class HtmlTag ()
-    extends typings.svelte.domMod.HtmlTag {
+    extends typings.svelte.typesRuntimeInternalMod.HtmlTag {
     def this(is_svg: Boolean) = this()
   }
   
-  @JSImport("svelte/types/runtime/internal", "HtmlTagHydration")
+  @JSImport("svelte/internal", "HtmlTagHydration")
   @js.native
   open class HtmlTagHydration ()
-    extends typings.svelte.domMod.HtmlTagHydration {
+    extends typings.svelte.typesRuntimeInternalMod.HtmlTagHydration {
     def this(claimed_nodes: js.Array[ChildNode]) = this()
     def this(claimed_nodes: js.Array[ChildNode], is_svg: Boolean) = this()
     def this(claimed_nodes: Unit, is_svg: Boolean) = this()
   }
   
-  @JSImport("svelte/types/runtime/internal", "SvelteComponent")
+  @JSImport("svelte/internal", "SvelteComponent")
   @js.native
   open class SvelteComponent ()
-    extends typings.svelte.componentMod.SvelteComponent
+    extends typings.svelte.typesRuntimeInternalMod.SvelteComponent
   
-  @JSImport("svelte/types/runtime/internal", "SvelteComponentDev")
+  @JSImport("svelte/internal", "SvelteComponentDev")
   @js.native
   open class SvelteComponentDev protected ()
-    extends typings.svelte.devMod.SvelteComponentDev {
+    extends typings.svelte.typesRuntimeInternalMod.SvelteComponentDev {
     def this(options: ComponentConstructorOptions[Record[String, Any]]) = this()
   }
   
-  @JSImport("svelte/types/runtime/internal", "SvelteComponentTyped")
+  @JSImport("svelte/internal", "SvelteComponentTyped")
   @js.native
   open class SvelteComponentTyped[Props /* <: Record[String, Any] */, Events /* <: Record[String, Any] */, Slots /* <: Record[String, Any] */] protected ()
-    extends typings.svelte.devMod.SvelteComponentTyped[Props, Events, Slots] {
+    extends typings.svelte.typesRuntimeInternalMod.SvelteComponentTyped[Props, Events, Slots] {
     def this(options: ComponentConstructorOptions[Props]) = this()
   }
   
-  @JSImport("svelte/types/runtime/internal", "SvelteElement")
+  @JSImport("svelte/internal", "SvelteElement")
   @js.native
   def SvelteElement: Any = js.native
   inline def SvelteElement_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SvelteElement")(x.asInstanceOf[js.Any])
@@ -367,7 +369,7 @@ object internalMod {
   
   inline def bind(component: Any, name: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(component.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("svelte/types/runtime/internal", "binding_callbacks")
+  @JSImport("svelte/internal", "binding_callbacks")
   @js.native
   val bindingCallbacks: js.Array[Any] = js.native
   
@@ -383,7 +385,7 @@ object internalMod {
   
   inline def claimElement(nodes: ChildNodeArray, name: String, attributes: StringDictionary[Boolean]): Element | SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("claim_element")(nodes.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Element | SVGElement]
   
-  inline def claimHtmlTag(nodes: Any, is_svg: Boolean): typings.svelte.domMod.HtmlTagHydration = (^.asInstanceOf[js.Dynamic].applyDynamic("claim_html_tag")(nodes.asInstanceOf[js.Any], is_svg.asInstanceOf[js.Any])).asInstanceOf[typings.svelte.domMod.HtmlTagHydration]
+  inline def claimHtmlTag(nodes: Any, is_svg: Boolean): typings.svelte.typesRuntimeInternalDomMod.HtmlTagHydration = (^.asInstanceOf[js.Dynamic].applyDynamic("claim_html_tag")(nodes.asInstanceOf[js.Any], is_svg.asInstanceOf[js.Any])).asInstanceOf[typings.svelte.typesRuntimeInternalDomMod.HtmlTagHydration]
   
   inline def claimSpace(nodes: Any): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("claim_space")(nodes.asInstanceOf[js.Any]).asInstanceOf[Text]
   
@@ -401,7 +403,7 @@ object internalMod {
   
   inline def createAnimation(node: Element & ElementCSSInlineStyle, from: PositionRect, fn: AnimationFn, params: Any): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("create_animation")(node.asInstanceOf[js.Any], from.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  inline def createBidirectionalTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any, intro: Boolean): Run = (^.asInstanceOf[js.Dynamic].applyDynamic("create_bidirectional_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any], intro.asInstanceOf[js.Any])).asInstanceOf[Run]
+  inline def createBidirectionalTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any, intro: Boolean): End = (^.asInstanceOf[js.Dynamic].applyDynamic("create_bidirectional_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any], intro.asInstanceOf[js.Any])).asInstanceOf[End]
   
   inline def createComponent(block: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create_component")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -421,7 +423,7 @@ object internalMod {
     Boolean
   ]]
   
-  inline def createInTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any): End = (^.asInstanceOf[js.Dynamic].applyDynamic("create_in_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[End]
+  inline def createInTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any): Invalidate = (^.asInstanceOf[js.Dynamic].applyDynamic("create_in_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Invalidate]
   
   inline def createOutTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any): `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("create_out_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[`0`]
   
@@ -429,7 +431,7 @@ object internalMod {
   
   inline def createSsrComponent(fn: Any): Render = ^.asInstanceOf[js.Dynamic].applyDynamic("create_ssr_component")(fn.asInstanceOf[js.Any]).asInstanceOf[Render]
   
-  @JSImport("svelte/types/runtime/internal", "current_component")
+  @JSImport("svelte/internal", "current_component")
   @js.native
   def currentComponent: Any = js.native
   
@@ -461,7 +463,7 @@ object internalMod {
   
   inline def detachDev(node: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach_dev")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("svelte/types/runtime/internal", "dirty_components")
+  @JSImport("svelte/internal", "dirty_components")
   @js.native
   val dirtyComponents: js.Array[Any] = js.native
   
@@ -955,11 +957,9 @@ object internalMod {
   
   inline def getSpreadUpdate(levels: Any, updates: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("get_spread_update")(levels.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  inline def getStoreValue[T](
-    store: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Readable<T> */ Any
-  ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("get_store_value")(store.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def getStoreValue[T](store: Readable_[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("get_store_value")(store.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("svelte/types/runtime/internal", "globals")
+  @JSImport("svelte/internal", "globals")
   @js.native
   val globals: /* globalThis */ Any = js.native
   
@@ -1007,21 +1007,21 @@ object internalMod {
   
   object intros {
     
-    @JSImport("svelte/types/runtime/internal", "intros")
+    @JSImport("svelte/internal", "intros")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("svelte/types/runtime/internal", "intros.enabled")
+    @JSImport("svelte/internal", "intros.enabled")
     @js.native
     def enabled: Boolean = js.native
     inline def enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("svelte/types/runtime/internal", "invalid_attribute_name_character")
+  @JSImport("svelte/internal", "invalid_attribute_name_character")
   @js.native
   val invalidAttributeNameCharacter: js.RegExp = js.native
   
-  @JSImport("svelte/types/runtime/internal", "is_client")
+  @JSImport("svelte/internal", "is_client")
   @js.native
   val isClient: Boolean = js.native
   
@@ -1032,8 +1032,6 @@ object internalMod {
   inline def isFunction(thing: Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is_function")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
   inline def isPromise[T](value: Any): /* is std.PromiseLike<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is_promise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PromiseLike<T> */ Boolean]
-  
-  inline def isVoid(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is_void")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def listen(node: EventTarget, event: String, handler: EventListenerOrEventListenerObject): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listen(node: EventTarget, event: String, handler: EventListenerOrEventListenerObject, options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
@@ -1165,7 +1163,7 @@ object internalMod {
   
   object missingComponent {
     
-    @JSImport("svelte/types/runtime/internal", "missing_component")
+    @JSImport("svelte/internal", "missing_component")
     @js.native
     val ^ : js.Any = js.native
     
@@ -1178,7 +1176,7 @@ object internalMod {
   
   inline def notEqual(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("not_equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("svelte/types/runtime/internal", "now")
+  @JSImport("svelte/internal", "now")
   @js.native
   def now: js.Function0[Double] = js.native
   inline def now_=(x: js.Function0[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("now")(x.asInstanceOf[js.Any])
@@ -1203,7 +1201,7 @@ object internalMod {
   inline def querySelectorAll(selector: String): ChildNodeArray = ^.asInstanceOf[js.Dynamic].applyDynamic("query_selector_all")(selector.asInstanceOf[js.Any]).asInstanceOf[ChildNodeArray]
   inline def querySelectorAll(selector: String, parent: HTMLElement): ChildNodeArray = (^.asInstanceOf[js.Dynamic].applyDynamic("query_selector_all")(selector.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[ChildNodeArray]
   
-  @JSImport("svelte/types/runtime/internal", "raf")
+  @JSImport("svelte/internal", "raf")
   @js.native
   def raf: js.Function0[Unit] | (js.Function1[/* cb */ Any, Double]) = js.native
   inline def raf_=(x: js.Function0[Unit] | (js.Function1[/* cb */ Any, Double])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("raf")(x.asInstanceOf[js.Any])

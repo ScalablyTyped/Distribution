@@ -1,8 +1,8 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.addressMod.address.AddressData
 import typings.mangopay2NodejsSdk.anon.PartialAddressData
-import typings.mangopay2NodejsSdk.typesMod.CountryISO
+import typings.mangopay2NodejsSdk.typingsModelsAddressMod.address.AddressData
+import typings.mangopay2NodejsSdk.typingsTypesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

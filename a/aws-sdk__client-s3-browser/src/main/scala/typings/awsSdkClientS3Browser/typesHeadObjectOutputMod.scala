@@ -12,9 +12,9 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.STANDARD
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.STANDARD_IA
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.awsColonkms
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.requester_
-import typings.awsSdkClientS3Browser.outputTypesUnionMod._OutputTypesUnion
-import typings.awsSdkTypes.responseMod.MetadataBearer
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkClientS3Browser.typesOutputTypesUnionMod._OutputTypesUnion
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

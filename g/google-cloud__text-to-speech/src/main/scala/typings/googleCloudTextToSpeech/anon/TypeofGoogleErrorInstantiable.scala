@@ -11,7 +11,7 @@ trait TypeofGoogleErrorInstantiable
   extends StObject
      with Instantiable0[GoogleError] {
   
-  def parseGRPCStatusDetails(err: typings.googleGax.googleErrorMod.GoogleError): typings.googleGax.googleErrorMod.GoogleError = js.native
+  def parseGRPCStatusDetails(err: typings.googleGax.buildSrcGoogleErrorMod.GoogleError): typings.googleGax.buildSrcGoogleErrorMod.GoogleError = js.native
   
-  def parseHttpError(json: Any): typings.googleGax.googleErrorMod.GoogleError = js.native
+  def parseHttpError(json: Any): typings.googleGax.buildSrcGoogleErrorMod.GoogleError = js.native
 }

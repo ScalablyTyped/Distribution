@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsPrinterOutlinedMod.PrinterOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object printerOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/PrinterOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/PrinterOutlined", JSImport.Default)
   @js.native
   val default: PrinterOutlinedIconType = js.native
-  
-  @js.native
-  trait PrinterOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_PrinterOutlinedIconType: String = js.native
-  }
   
   type _To = PrinterOutlinedIconType
   

@@ -1,6 +1,8 @@
 package typings.materializecssMaterialize.mod
 
 import typings.materializecssMaterialize.M.AutocompleteData
+import typings.materializecssMaterialize.M.AutocompleteOptions
+import typings.materializecssMaterialize.MElements
 import typings.materializecssMaterialize.anon.PartialAutocompleteOption
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -19,9 +21,6 @@ open class Autocomplete ()
   /* CompleteClass */
   var activeIndex: Double = js.native
   
-  /**
-    * Hide autocomplete.
-    */
   /* CompleteClass */
   override def close(): Unit = js.native
   
@@ -32,16 +31,28 @@ open class Autocomplete ()
   var count: Double = js.native
   
   /**
-    * If the autocomplete is open.
+    * Destroy plugin instance and teardown
     */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
+  
   /* CompleteClass */
   var isOpen: Boolean = js.native
   
-  /**
-    * Show autocomplete.
-    */
   /* CompleteClass */
   override def open(): Unit = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: AutocompleteOptions = js.native
   
   /**
     * Select a specific autocomplete options.
@@ -73,13 +84,8 @@ object Autocomplete {
     * Init autocompletes
     */
   /* static member */
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any
-  ): js.Array[typings.materializecssMaterialize.M.Autocomplete] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Autocomplete]]
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any,
-    options: PartialAutocompleteOption
-  ): js.Array[typings.materializecssMaterialize.M.Autocomplete] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Autocomplete]]
+  inline def init(els: MElements): js.Array[typings.materializecssMaterialize.M.Autocomplete] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Autocomplete]]
+  inline def init(els: MElements, options: PartialAutocompleteOption): js.Array[typings.materializecssMaterialize.M.Autocomplete] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Autocomplete]]
   /**
     * Init autocomplete
     */

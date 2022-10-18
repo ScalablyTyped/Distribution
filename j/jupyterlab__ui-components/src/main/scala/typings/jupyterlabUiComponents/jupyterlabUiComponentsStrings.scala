@@ -1,8 +1,8 @@
 package typings.jupyterlabUiComponents
 
-import typings.jupyterlabUiComponents.styleIconMod.LabIconStyle.IBuiltin
-import typings.jupyterlabUiComponents.styleIconMod.LabIconStyle.IPosition
-import typings.jupyterlabUiComponents.styleIconMod.LabIconStyle.ISize
+import typings.jupyterlabUiComponents.libStyleIconMod.LabIconStyle.IBuiltin
+import typings.jupyterlabUiComponents.libStyleIconMod.LabIconStyle.IPosition
+import typings.jupyterlabUiComponents.libStyleIconMod.LabIconStyle.ISize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

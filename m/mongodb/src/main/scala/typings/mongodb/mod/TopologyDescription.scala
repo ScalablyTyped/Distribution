@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import typings.bson.mod.ObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ open class TopologyDescription protected () extends StObject {
     serverDescriptions: js.UndefOr[(typings.std.Map[String, ServerDescription]) | Null],
     setName: js.UndefOr[String | Null],
     maxSetVersion: js.UndefOr[scala.Double | Null],
-    maxElectionId: js.UndefOr[typings.bson.mod.ObjectId | Null],
+    maxElectionId: js.UndefOr[ObjectId | Null],
     commonWireVersion: js.UndefOr[scala.Double | Null],
     options: js.UndefOr[TopologyDescriptionOptions | Null]
   ) = this()
@@ -46,7 +47,7 @@ open class TopologyDescription protected () extends StObject {
   
   var logicalSessionTimeoutMinutes: scala.Double | Null = js.native
   
-  var maxElectionId: typings.bson.mod.ObjectId | Null = js.native
+  var maxElectionId: ObjectId | Null = js.native
   
   var maxSetVersion: scala.Double | Null = js.native
   

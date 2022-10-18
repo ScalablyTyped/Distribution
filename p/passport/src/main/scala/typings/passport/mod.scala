@@ -1,7 +1,6 @@
 package typings.passport
 
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.TopLevel
 import typings.express.mod.Handler
 import typings.express.mod.Request_
 import typings.node.httpMod.IncomingMessage
@@ -382,9 +381,14 @@ object mod extends Shortcut {
     var name: js.UndefOr[String] = js.native
   }
   
-  type StrategyCreated[T, O] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof O ]: O[P]}
-    */ typings.passport.passportStrings.StrategyCreated & TopLevel[O]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * This translation is imprecise and ignores the effect of the type mapping. 
+    * TS definition: {{{
+    {[ P in keyof O ]: O[P]}
+    }}}
+    */
+  type StrategyCreated[T, O] = O
   
   @js.native
   trait StrategyCreatedStatic extends StObject {

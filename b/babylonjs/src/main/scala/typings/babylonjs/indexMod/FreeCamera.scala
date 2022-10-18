@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "FreeCamera")
 @js.native
 open class FreeCamera protected ()
-  extends typings.babylonjs.babylonjsMod.FreeCamera {
+  extends typings.babylonjs.camerasIndexMod.FreeCamera {
   /**
     * Instantiates a Free Camera.
     * This represents a free type of camera. It can be useful in First Person Shooter game for instance.
@@ -18,21 +18,21 @@ open class FreeCamera protected ()
     * @param scene Define the scene the camera belongs to
     * @param setActiveOnSceneIfNoneActive Defines whether the camera should be marked as active if not other active cameras have been defined
     */
-  def this(name: String, position: typings.babylonjs.mathVectorMod.Vector3) = this()
+  def this(name: String, position: typings.babylonjs.mathsMathDotvectorMod.Vector3) = this()
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: Unit,
     setActiveOnSceneIfNoneActive: Boolean
   ) = this()
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene,
     setActiveOnSceneIfNoneActive: Boolean
   ) = this()

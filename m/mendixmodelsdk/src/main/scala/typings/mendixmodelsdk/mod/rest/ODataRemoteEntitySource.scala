@@ -1,13 +1,13 @@
 package typings.mendixmodelsdk.mod.rest
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.domainmodelsMod.domainmodels.Entity
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.restMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Entity
+import typings.mendixmodelsdk.srcGenRestMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "rest.ODataRemoteEntitySource")
 @js.native
 open class ODataRemoteEntitySource protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.rest.ODataRemoteEntitySource {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.rest.ODataRemoteEntitySource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,7 +40,7 @@ object ODataRemoteEntitySource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenRestMod.rest.ODataRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.ODataRemoteEntitySource]
   
   /**
     * Creates and returns a new ODataRemoteEntitySource instance in the SDK and on the server.
@@ -51,7 +51,7 @@ object ODataRemoteEntitySource {
     *  8.10.0 and higher
     */
   /* static member */
-  inline def createIn(container: Entity): typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource]
+  inline def createIn(container: Entity): typings.mendixmodelsdk.srcGenRestMod.rest.ODataRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.ODataRemoteEntitySource]
   
   /* static member */
   @JSImport("mendixmodelsdk", "rest.ODataRemoteEntitySource.structureTypeName")

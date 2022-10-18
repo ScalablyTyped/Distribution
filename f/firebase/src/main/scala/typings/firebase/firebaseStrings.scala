@@ -1,17 +1,17 @@
 package typings.firebase
 
-import typings.firebase.firebaseMod.firebase.FirebaseSignInProvider
-import typings.firebase.firebaseMod.firebase.analytics.EventNameString
-import typings.firebase.firebaseMod.firebase.database.EventType
-import typings.firebase.firebaseMod.firebase.firestore.DocumentChangeType
-import typings.firebase.firebaseMod.firebase.firestore.FirestoreErrorCode
-import typings.firebase.firebaseMod.firebase.firestore.OrderByDirection
-import typings.firebase.firebaseMod.firebase.firestore.TaskState
-import typings.firebase.firebaseMod.firebase.firestore.WhereFilterOp
-import typings.firebase.firebaseMod.firebase.functions.FunctionsErrorCode
-import typings.firebase.firebaseMod.firebase.remoteConfig.FetchStatus
-import typings.firebase.firebaseMod.firebase.remoteConfig.LogLevel
-import typings.firebase.firebaseMod.firebase.remoteConfig.ValueSource
+import typings.firebase.compatMod.firebase.FirebaseSignInProvider
+import typings.firebase.compatMod.firebase.analytics.EventNameString
+import typings.firebase.compatMod.firebase.database.EventType
+import typings.firebase.compatMod.firebase.firestore.DocumentChangeType
+import typings.firebase.compatMod.firebase.firestore.FirestoreErrorCode
+import typings.firebase.compatMod.firebase.firestore.OrderByDirection
+import typings.firebase.compatMod.firebase.firestore.TaskState
+import typings.firebase.compatMod.firebase.firestore.WhereFilterOp
+import typings.firebase.compatMod.firebase.functions.FunctionsErrorCode
+import typings.firebase.compatMod.firebase.remoteConfig.FetchStatus
+import typings.firebase.compatMod.firebase.remoteConfig.LogLevel
+import typings.firebase.compatMod.firebase.remoteConfig.ValueSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,10 +61,6 @@ object firebaseStrings {
     extends StObject
        with WhereFilterOp
   inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
-  
-  @js.native
-  sealed trait Identities extends StObject
-  inline def Identities: Identities = "Identities".asInstanceOf[Identities]
   
   @js.native
   sealed trait Lessthansign
@@ -647,8 +643,8 @@ object firebaseStrings {
   sealed trait debug
     extends StObject
        with LogLevel
-       with typings.firebase.firebaseMod.firebase.LogLevel
-       with typings.firebase.firebaseMod.firebase.firestore.LogLevel
+       with typings.firebase.compatMod.firebase.LogLevel
+       with typings.firebase.compatMod.firebase.firestore.LogLevel
   inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
@@ -671,8 +667,8 @@ object firebaseStrings {
   sealed trait error_
     extends StObject
        with LogLevel
-       with typings.firebase.firebaseMod.firebase.LogLevel
-       with typings.firebase.firebaseMod.firebase.firestore.LogLevel
+       with typings.firebase.compatMod.firebase.LogLevel
+       with typings.firebase.compatMod.firebase.firestore.LogLevel
   inline def error_ : error_ = "error".asInstanceOf[error_]
   
   @js.native
@@ -731,7 +727,7 @@ object firebaseStrings {
   @js.native
   sealed trait info
     extends StObject
-       with typings.firebase.firebaseMod.firebase.LogLevel
+       with typings.firebase.compatMod.firebase.LogLevel
   inline def info: info = "info".asInstanceOf[info]
   
   @js.native
@@ -940,8 +936,8 @@ object firebaseStrings {
   sealed trait silent
     extends StObject
        with LogLevel
-       with typings.firebase.firebaseMod.firebase.LogLevel
-       with typings.firebase.firebaseMod.firebase.firestore.LogLevel
+       with typings.firebase.compatMod.firebase.LogLevel
+       with typings.firebase.compatMod.firebase.firestore.LogLevel
   inline def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
@@ -1011,7 +1007,7 @@ object firebaseStrings {
   @js.native
   sealed trait verbose
     extends StObject
-       with typings.firebase.firebaseMod.firebase.LogLevel
+       with typings.firebase.compatMod.firebase.LogLevel
   inline def verbose: verbose = "verbose".asInstanceOf[verbose]
   
   @js.native
@@ -1047,6 +1043,6 @@ object firebaseStrings {
   @js.native
   sealed trait warn
     extends StObject
-       with typings.firebase.firebaseMod.firebase.LogLevel
+       with typings.firebase.compatMod.firebase.LogLevel
   inline def warn: warn = "warn".asInstanceOf[warn]
 }

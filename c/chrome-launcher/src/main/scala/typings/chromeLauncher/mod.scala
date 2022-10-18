@@ -1,8 +1,8 @@
 package typings.chromeLauncher
 
-import typings.chromeLauncher.chromeLauncherMod.LaunchedChrome
-import typings.chromeLauncher.chromeLauncherMod.ModuleOverrides
-import typings.chromeLauncher.chromeLauncherMod.Options
+import typings.chromeLauncher.distChromeLauncherMod.LaunchedChrome
+import typings.chromeLauncher.distChromeLauncherMod.ModuleOverrides
+import typings.chromeLauncher.distChromeLauncherMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,17 +13,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("chrome-launcher", "Launcher")
+  @JSImport("chrome-launcher", JSImport.Default)
   @js.native
-  open class Launcher ()
-    extends typings.chromeLauncher.chromeLauncherMod.Launcher {
+  open class default ()
+    extends typings.chromeLauncher.distChromeLauncherMod.default {
     def this(opts: Options) = this()
     def this(opts: Unit, moduleOverrides: ModuleOverrides) = this()
     def this(opts: Options, moduleOverrides: ModuleOverrides) = this()
   }
-  object Launcher {
+  object default {
     
-    @JSImport("chrome-launcher", "Launcher")
+    @JSImport("chrome-launcher", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

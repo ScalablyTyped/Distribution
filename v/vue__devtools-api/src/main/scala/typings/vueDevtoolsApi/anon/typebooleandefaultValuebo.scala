@@ -1,6 +1,6 @@
 package typings.vueDevtoolsApi.anon
 
-import typings.vueDevtoolsApi.pluginMod.PluginSettingsItem
+import typings.vueDevtoolsApi.libEsmPluginMod.PluginSettingsItem
 import typings.vueDevtoolsApi.vueDevtoolsApiStrings.boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

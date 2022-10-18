@@ -1,54 +1,54 @@
 package typings.vsoNodeApi
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
-import typings.vsoNodeApi.formInputInterfacesMod.InputValuesQuery
-import typings.vsoNodeApi.releaseInterfacesMod.AgentArtifactDefinition
-import typings.vsoNodeApi.releaseInterfacesMod.ApprovalFilters
-import typings.vsoNodeApi.releaseInterfacesMod.ApprovalStatus
-import typings.vsoNodeApi.releaseInterfacesMod.ApprovalType
-import typings.vsoNodeApi.releaseInterfacesMod.Artifact
-import typings.vsoNodeApi.releaseInterfacesMod.ArtifactTypeDefinition
-import typings.vsoNodeApi.releaseInterfacesMod.ArtifactVersionQueryResult
-import typings.vsoNodeApi.releaseInterfacesMod.AutoTriggerIssue
-import typings.vsoNodeApi.releaseInterfacesMod.Change
-import typings.vsoNodeApi.releaseInterfacesMod.DefinitionEnvironmentReference
-import typings.vsoNodeApi.releaseInterfacesMod.Deployment
-import typings.vsoNodeApi.releaseInterfacesMod.DeploymentOperationStatus
-import typings.vsoNodeApi.releaseInterfacesMod.DeploymentQueryParameters
-import typings.vsoNodeApi.releaseInterfacesMod.DeploymentStatus
-import typings.vsoNodeApi.releaseInterfacesMod.FavoriteItem
-import typings.vsoNodeApi.releaseInterfacesMod.Folder
-import typings.vsoNodeApi.releaseInterfacesMod.FolderPathQueryOrder
-import typings.vsoNodeApi.releaseInterfacesMod.MailMessage
-import typings.vsoNodeApi.releaseInterfacesMod.ManualIntervention
-import typings.vsoNodeApi.releaseInterfacesMod.ManualInterventionUpdateMetadata
-import typings.vsoNodeApi.releaseInterfacesMod.Metric
-import typings.vsoNodeApi.releaseInterfacesMod.ProjectReference
-import typings.vsoNodeApi.releaseInterfacesMod.Release
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseApproval
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseDefinition
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseDefinitionEnvironmentTemplate
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseDefinitionExpands
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseDefinitionQueryOrder
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseDefinitionRevision
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseDefinitionSummary
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseDefinitionUndeleteParameter
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseEnvironment
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseEnvironmentUpdateMetadata
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseExpands
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseQueryOrder
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseRevision
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseSettings
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseStartMetadata
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseStatus
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseTask
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseTaskAttachment
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseUpdateMetadata
-import typings.vsoNodeApi.releaseInterfacesMod.ReleaseWorkItemRef
-import typings.vsoNodeApi.releaseInterfacesMod.SummaryMailSection
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonFormInputInterfacesMod.InputValuesQuery
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.AgentArtifactDefinition
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ApprovalFilters
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ApprovalStatus
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ApprovalType
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.Artifact
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ArtifactTypeDefinition
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ArtifactVersionQueryResult
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.AutoTriggerIssue
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.Change
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.DefinitionEnvironmentReference
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.Deployment
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.DeploymentOperationStatus
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.DeploymentQueryParameters
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.DeploymentStatus
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.FavoriteItem
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.Folder
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.FolderPathQueryOrder
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.MailMessage
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ManualIntervention
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ManualInterventionUpdateMetadata
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.Metric
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ProjectReference
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.Release
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseApproval
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseDefinition
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseDefinitionEnvironmentTemplate
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseDefinitionExpands
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseDefinitionQueryOrder
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseDefinitionRevision
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSummary
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseDefinitionUndeleteParameter
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseEnvironment
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseEnvironmentUpdateMetadata
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseExpands
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseQueryOrder
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseRevision
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseSettings
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseStartMetadata
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseStatus
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseTask
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseTaskAttachment
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseUpdateMetadata
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.ReleaseWorkItemRef
+import typings.vsoNodeApi.interfacesReleaseInterfacesMod.SummaryMailSection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -147,7 +147,7 @@ object releaseApiMod {
     def getDefinitionEnvironments(project: String, taskGroupId: String, propertyFilters: js.Array[String]): js.Promise[js.Array[DefinitionEnvironmentReference]] = js.native
     def getDefinitionEnvironments(project: String, taskGroupId: Unit, propertyFilters: js.Array[String]): js.Promise[js.Array[DefinitionEnvironmentReference]] = js.native
     
-    def getDefinitionRevision(project: String, definitionId: Double, revision: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getDefinitionRevision(project: String, definitionId: Double, revision: Double): js.Promise[ReadableStream] = js.native
     
     def getDefinitionTags(project: String, releaseDefinitionId: Double): js.Promise[js.Array[String]] = js.native
     
@@ -180,17 +180,17 @@ object releaseApiMod {
     def getFolders(project: String, path: String, queryOrder: FolderPathQueryOrder): js.Promise[js.Array[Folder]] = js.native
     def getFolders(project: String, path: Unit, queryOrder: FolderPathQueryOrder): js.Promise[js.Array[Folder]] = js.native
     
-    def getGateLog(project: String, releaseId: Double, environmentId: Double, gateId: Double, taskId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getGateLog(project: String, releaseId: Double, environmentId: Double, gateId: Double, taskId: Double): js.Promise[ReadableStream] = js.native
     
     def getInputValues(query: InputValuesQuery, project: String): js.Promise[InputValuesQuery] = js.native
     
     def getIssues(project: String, buildId: Double): js.Promise[js.Array[AutoTriggerIssue]] = js.native
     def getIssues(project: String, buildId: Double, sourceId: String): js.Promise[js.Array[AutoTriggerIssue]] = js.native
     
-    def getLog(project: String, releaseId: Double, environmentId: Double, taskId: Double): js.Promise[ReadableStream[Any]] = js.native
-    def getLog(project: String, releaseId: Double, environmentId: Double, taskId: Double, attemptId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getLog(project: String, releaseId: Double, environmentId: Double, taskId: Double): js.Promise[ReadableStream] = js.native
+    def getLog(project: String, releaseId: Double, environmentId: Double, taskId: Double, attemptId: Double): js.Promise[ReadableStream] = js.native
     
-    def getLogs(project: String, releaseId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getLogs(project: String, releaseId: Double): js.Promise[ReadableStream] = js.native
     
     def getManualIntervention(project: String, releaseId: Double, manualInterventionId: Double): js.Promise[ManualIntervention] = js.native
     
@@ -219,7 +219,7 @@ object releaseApiMod {
     
     def getReleaseDefinitionHistory(project: String, definitionId: Double): js.Promise[js.Array[ReleaseDefinitionRevision]] = js.native
     
-    def getReleaseDefinitionRevision(project: String, definitionId: Double, revision: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getReleaseDefinitionRevision(project: String, definitionId: Double, revision: Double): js.Promise[ReadableStream] = js.native
     
     def getReleaseDefinitionSummary(project: String, definitionId: Double, releaseCount: Double): js.Promise[ReleaseDefinitionSummary] = js.native
     def getReleaseDefinitionSummary(project: String, definitionId: Double, releaseCount: Double, includeArtifact: Boolean): js.Promise[ReleaseDefinitionSummary] = js.native
@@ -261,7 +261,7 @@ object releaseApiMod {
     
     def getReleaseProjects(artifactType: String, artifactSourceId: String): js.Promise[js.Array[ProjectReference]] = js.native
     
-    def getReleaseRevision(project: String, releaseId: Double, definitionSnapshotRevision: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getReleaseRevision(project: String, releaseId: Double, definitionSnapshotRevision: Double): js.Promise[ReadableStream] = js.native
     
     def getReleaseSettings(project: String): js.Promise[ReleaseSettings] = js.native
     
@@ -311,7 +311,7 @@ object releaseApiMod {
       recordId: String,
       `type`: String,
       name: String
-    ): js.Promise[ReadableStream[Any]] = js.native
+    ): js.Promise[ReadableStream] = js.native
     
     def getTaskAttachments(
       project: String,
@@ -328,7 +328,7 @@ object releaseApiMod {
       environmentId: Double,
       releaseDeployPhaseId: Double,
       taskId: Double
-    ): js.Promise[ReadableStream[Any]] = js.native
+    ): js.Promise[ReadableStream] = js.native
     def getTaskLog(
       project: String,
       releaseId: Double,
@@ -336,7 +336,7 @@ object releaseApiMod {
       releaseDeployPhaseId: Double,
       taskId: Double,
       startLine: Double
-    ): js.Promise[ReadableStream[Any]] = js.native
+    ): js.Promise[ReadableStream] = js.native
     def getTaskLog(
       project: String,
       releaseId: Double,
@@ -345,7 +345,7 @@ object releaseApiMod {
       taskId: Double,
       startLine: Double,
       endLine: Double
-    ): js.Promise[ReadableStream[Any]] = js.native
+    ): js.Promise[ReadableStream] = js.native
     def getTaskLog(
       project: String,
       releaseId: Double,
@@ -354,7 +354,7 @@ object releaseApiMod {
       taskId: Double,
       startLine: Unit,
       endLine: Double
-    ): js.Promise[ReadableStream[Any]] = js.native
+    ): js.Promise[ReadableStream] = js.native
     
     def getTaskLog2(
       project: String,
@@ -363,7 +363,7 @@ object releaseApiMod {
       attemptId: Double,
       timelineId: String,
       taskId: Double
-    ): js.Promise[ReadableStream[Any]] = js.native
+    ): js.Promise[ReadableStream] = js.native
     def getTaskLog2(
       project: String,
       releaseId: Double,
@@ -372,7 +372,7 @@ object releaseApiMod {
       timelineId: String,
       taskId: Double,
       startLine: Double
-    ): js.Promise[ReadableStream[Any]] = js.native
+    ): js.Promise[ReadableStream] = js.native
     def getTaskLog2(
       project: String,
       releaseId: Double,
@@ -382,7 +382,7 @@ object releaseApiMod {
       taskId: Double,
       startLine: Double,
       endLine: Double
-    ): js.Promise[ReadableStream[Any]] = js.native
+    ): js.Promise[ReadableStream] = js.native
     def getTaskLog2(
       project: String,
       releaseId: Double,
@@ -392,7 +392,7 @@ object releaseApiMod {
       taskId: Double,
       startLine: Unit,
       endLine: Double
-    ): js.Promise[ReadableStream[Any]] = js.native
+    ): js.Promise[ReadableStream] = js.native
     
     def getTasks(project: String, releaseId: Double, environmentId: Double): js.Promise[js.Array[ReleaseTask]] = js.native
     def getTasks(project: String, releaseId: Double, environmentId: Double, attemptId: Double): js.Promise[js.Array[ReleaseTask]] = js.native

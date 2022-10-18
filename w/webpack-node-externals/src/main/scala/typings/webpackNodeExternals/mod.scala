@@ -27,7 +27,15 @@ object mod {
   /** The webpack types don't export this so we have to derive it. */
   type ExternalItem = GetArrayInnerType[Externals]
   
-  type GetArrayInnerType[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<infer U> ? U : never
+    }}}
+    */
+  @js.native
+  trait GetArrayInnerType[T] extends StObject
   
   type ImportTypeCallback = js.Function1[/* moduleName */ String, String]
   

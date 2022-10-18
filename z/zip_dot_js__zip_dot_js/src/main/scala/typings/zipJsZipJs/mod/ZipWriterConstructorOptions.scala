@@ -16,6 +16,8 @@ trait ZipWriterConstructorOptions extends StObject {
   /**
     * `true` to write entry data in a buffer before appending it to the zip file.
     * 
+    * `bufferedWrite` is automatically set to `true` when compressing more than one entry in parallel.
+    * 
     * @defaultValue false
     */
   var bufferedWrite: js.UndefOr[Boolean] = js.undefined
@@ -23,12 +25,16 @@ trait ZipWriterConstructorOptions extends StObject {
   /**
     * The creation date.
     * 
+    * This option is ignored if the `extendedTimestamp` option is set to `false`.
+    * 
     * @defaultValue The current date.
     */
   var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * `true` to to add a data descriptor.
+    * 
+    * When set to `false`, the `bufferedWrite` option  will automatically be set to `true`.
     * 
     * @defaultValue true
     */
@@ -51,6 +57,8 @@ trait ZipWriterConstructorOptions extends StObject {
   /**
     * `true` to store extended timestamp extra fields.
     * 
+    * When set to `false`, the maximum last modification date cannot exceed November 31, 2107 and the maximum accuracy is 2 seconds.
+    * 
     * @defaultValue true
     */
   var extendedTimestamp: js.UndefOr[Boolean] = js.undefined
@@ -70,7 +78,10 @@ trait ZipWriterConstructorOptions extends StObject {
   var internalFileAttribute: js.UndefOr[Double] = js.undefined
   
   /**
-    * `true` to keep the order of the entry physically in the zip file.
+    * `true` to keep the order of the entry physically in the zip file. 
+    * 
+    * When set to `true`, the use of web workers will be improved. However, it also prevents files larger than 4GB from being created without setting the `zip54` option to `true` explicitly.
+    * Another solution to improve the use of web workers is to add entries from smallest to largest in uncompressed size.
     * 
     * @defaultValue true
     */
@@ -78,6 +89,8 @@ trait ZipWriterConstructorOptions extends StObject {
   
   /**
     * The last access date.
+    * 
+    * This option is ignored if the `extendedTimestamp` option is set to `false`.
     * 
     * @defaultValue The current date.
     */
@@ -91,14 +104,16 @@ trait ZipWriterConstructorOptions extends StObject {
   var lastModDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The level of compression.
+    * The level of compression. 
+    * 
+    * The minimum value is 0 and means that no compression is applied. The maximum value is 9.
     * 
     * @defaultValue 5
     */
   var level: js.UndefOr[Double] = js.undefined
   
   /**
-    * `true` to write `internalFileAttribute` and `externalFileAttribute` in MS-DOS format.
+    * `true` to write `externalFileAttribute` in MS-DOS format for folder entries.
     * 
     * @defaultValue true
     */
@@ -120,7 +135,16 @@ trait ZipWriterConstructorOptions extends StObject {
   var version: js.UndefOr[Double] = js.undefined
   
   /**
+    * The "Version made by" field.
+    * 
+    * @defaultValue 20
+    */
+  var versionMadeBy: js.UndefOr[Double] = js.undefined
+  
+  /**
     * `true` to use Zip64 to store the entry.
+    * 
+    * `zip64` is automatically set to `true` when necessary (e.g. compressed data larger than 4GB or with unknown size).
     * 
     * @defaultValue false
     */
@@ -128,6 +152,8 @@ trait ZipWriterConstructorOptions extends StObject {
   
   /**
     * `true` to use the ZipCrypto algorithm to encrypt the content of the entry.
+    * 
+    * It is not recommended to set `zipCrypto` to `true` because the ZipCrypto encryption can be easily broken.
     * 
     * @defaultValue false
     */
@@ -203,6 +229,10 @@ object ZipWriterConstructorOptions {
     inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionMadeBy(value: Double): Self = StObject.set(x, "versionMadeBy", value.asInstanceOf[js.Any])
+    
+    inline def setVersionMadeByUndefined: Self = StObject.set(x, "versionMadeBy", js.undefined)
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     

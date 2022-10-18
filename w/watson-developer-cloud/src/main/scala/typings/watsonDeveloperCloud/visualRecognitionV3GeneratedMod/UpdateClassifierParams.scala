@@ -1,8 +1,8 @@
 package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
-import typings.ibmCloudSdkCore.helperMod.FileObject
-import typings.node.Buffer
+import typings.ibmCloudSdkCore.esLibHelperMod.FileObject
 import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

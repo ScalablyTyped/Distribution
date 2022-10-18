@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object swiperStrings {
   
   @js.native
-  sealed trait EventsParams extends StObject
-  inline def EventsParams: EventsParams = "EventsParams".asInstanceOf[EventsParams]
-  
-  @js.native
   sealed trait `[slotEqualssigncontainer-end]` extends StObject
   inline def `[slotEqualssigncontainer-end]`: `[slotEqualssigncontainer-end]` = "[slot=container-end]".asInstanceOf[`[slotEqualssigncontainer-end]`]
   

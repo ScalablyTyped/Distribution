@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "ag-simple-broker"
-version := "5.0-dt-20220215Z-0b3e9e"
+version := "5.0-dt-20220215Z-06b5c1"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ag-channel" % "5.0-dt-20220215Z-a94ce9",
-  "org.scalablytyped" %%% "async-stream-emitter" % "4.0-dt-20220215Z-cf9b27",
-  "org.scalablytyped" %%% "consumable-stream" % "2.0-dt-20220215Z-d52362",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
-  "org.scalablytyped" %%% "stream-demux" % "8.0-dt-20220215Z-c2f347",
-  "org.scalablytyped" %%% "writable-consumable-stream" % "2.0-dt-20220215Z-7a96b8")
+  "org.scalablytyped" %%% "ag-channel" % "5.0-dt-20220215Z-79181f",
+  "org.scalablytyped" %%% "async-stream-emitter" % "4.0-dt-20220215Z-d105bf",
+  "org.scalablytyped" %%% "consumable-stream" % "2.0-dt-20220215Z-2f8fc2",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "stream-demux" % "8.0-dt-20220215Z-86ccce",
+  "org.scalablytyped" %%% "writable-consumable-stream" % "2.0-dt-20220215Z-7edd1b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

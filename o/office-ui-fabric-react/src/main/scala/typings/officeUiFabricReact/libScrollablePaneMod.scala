@@ -1,9 +1,9 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.libComponentsScrollablePaneScrollablePaneDottypesMod.IScrollablePaneContext
+import typings.officeUiFabricReact.libComponentsScrollablePaneScrollablePaneDottypesMod.IScrollablePaneProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings.always
 import typings.officeUiFabricReact.officeUiFabricReactStrings.auto
-import typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneContext
-import typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneProps
 import typings.react.mod.Context
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
@@ -19,7 +19,7 @@ object libScrollablePaneMod {
   @JSImport("office-ui-fabric-react/lib/ScrollablePane", "ScrollablePaneBase")
   @js.native
   open class ScrollablePaneBase protected ()
-    extends typings.officeUiFabricReact.scrollablePaneMod.ScrollablePaneBase {
+    extends typings.officeUiFabricReact.libComponentsScrollablePaneMod.ScrollablePaneBase {
     def this(props: IScrollablePaneProps) = this()
   }
   

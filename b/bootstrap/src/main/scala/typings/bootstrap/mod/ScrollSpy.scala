@@ -1,12 +1,12 @@
 package typings.bootstrap.mod
 
 import typings.bootstrap.anon.PartialOptionsMethod
-import typings.bootstrap.baseComponentMod.GetInstanceFactory
-import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.jsDistBaseComponentMod.GetInstanceFactory
+import typings.bootstrap.jsDistBaseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.jsDistScrollspyMod.ScrollSpy.Options
+import typings.bootstrap.jsDistScrollspyMod.ScrollSpy.jQueryInterface
+import typings.bootstrap.jsDistScrollspyMod.default
 import typings.bootstrap.mod.global.Element
-import typings.bootstrap.scrollspyMod.ScrollSpy.Options
-import typings.bootstrap.scrollspyMod.ScrollSpy.jQueryInterface
-import typings.bootstrap.scrollspyMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,9 +41,9 @@ object ScrollSpy {
   object Events extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.bootstrap.scrollspyMod.ScrollSpy.Events & String] = js.native
+    def apply(value: String): js.UndefOr[typings.bootstrap.jsDistScrollspyMod.ScrollSpy.Events & String] = js.native
     
-    /* "activate.bs.scrollspy" */ val activate: typings.bootstrap.scrollspyMod.ScrollSpy.Events.activate & String = js.native
+    /* "activate.bs.scrollspy" */ val activate: typings.bootstrap.jsDistScrollspyMod.ScrollSpy.Events.activate & String = js.native
   }
   
   /**
@@ -53,8 +53,8 @@ object ScrollSpy {
   /* static member */
   @JSImport("bootstrap", "ScrollSpy.getInstance")
   @js.native
-  def getInstance: GetInstanceFactory[typings.bootstrap.scrollspyMod.ScrollSpy] = js.native
-  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.scrollspyMod.ScrollSpy]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+  def getInstance: GetInstanceFactory[typings.bootstrap.jsDistScrollspyMod.ScrollSpy] = js.native
+  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistScrollspyMod.ScrollSpy]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
   
   /**
     * Static method which allows you to get the scrollspy instance associated with
@@ -63,12 +63,14 @@ object ScrollSpy {
   /* static member */
   @JSImport("bootstrap", "ScrollSpy.getOrCreateInstance")
   @js.native
-  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.scrollspyMod.ScrollSpy, PartialOptionsMethod] = js.native
-  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.scrollspyMod.ScrollSpy, PartialOptionsMethod]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistScrollspyMod.ScrollSpy, PartialOptionsMethod] = js.native
+  inline def getOrCreateInstance_=(
+    x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistScrollspyMod.ScrollSpy, PartialOptionsMethod]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("bootstrap", "ScrollSpy.jQueryInterface")
   @js.native
-  def jQueryInterface: typings.bootstrap.scrollspyMod.ScrollSpy.jQueryInterface = js.native
+  def jQueryInterface: typings.bootstrap.jsDistScrollspyMod.ScrollSpy.jQueryInterface = js.native
   inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
 }

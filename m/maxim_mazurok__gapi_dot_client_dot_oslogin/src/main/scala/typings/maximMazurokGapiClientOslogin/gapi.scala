@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientOslogin
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientOslogin.anon.Accesstoken
 import typings.maximMazurokGapiClientOslogin.anon.Alt
@@ -60,9 +59,7 @@ object gapi {
         
         /** A map from SSH public key fingerprint to the associated key object. */
         var sshPublicKeys: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: @maxim_mazurok/gapi.client.oslogin.gapi.client.oslogin.SshPublicKey}
-          */ typings.maximMazurokGapiClientOslogin.maximMazurokGapiClientOsloginStrings.LoginProfile & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.oslogin.gapi.client.oslogin.SshPublicKey} */ js.Any
               ] = js.undefined
       }
       object LoginProfile {
@@ -85,9 +82,7 @@ object gapi {
           inline def setPosixAccountsVarargs(value: PosixAccount*): Self = StObject.set(x, "posixAccounts", js.Array(value*))
           
           inline def setSshPublicKeys(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: @maxim_mazurok/gapi.client.oslogin.gapi.client.oslogin.SshPublicKey}
-            */ typings.maximMazurokGapiClientOslogin.maximMazurokGapiClientOsloginStrings.LoginProfile & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.oslogin.gapi.client.oslogin.SshPublicKey} */ js.Any
           ): Self = StObject.set(x, "sshPublicKeys", value.asInstanceOf[js.Any])
           
           inline def setSshPublicKeysUndefined: Self = StObject.set(x, "sshPublicKeys", js.undefined)

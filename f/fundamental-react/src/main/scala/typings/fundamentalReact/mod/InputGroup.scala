@@ -3,8 +3,8 @@ package typings.fundamentalReact.mod
 import typings.fundamentalReact.anon.PartialInputGroupAddonPro
 import typings.fundamentalReact.anon.WeakValidationMapInputGro
 import typings.fundamentalReact.fundamentalReactStrings.InputGroupDotAddon
-import typings.fundamentalReact.inputGroupMod.InputGroupAddonProps
-import typings.fundamentalReact.inputGroupMod.default
+import typings.fundamentalReact.libInputGroupInputGroupMod.InputGroupAddonProps
+import typings.fundamentalReact.libInputGroupInputGroupMod.default
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

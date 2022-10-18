@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the visual feedback settings for pointer input. */
-@JSGlobal("Windows.UI.Input.PointerVisualizationSettings")
+/* note: abstract class */ @JSGlobal("Windows.UI.Input.PointerVisualizationSettings")
 @js.native
-abstract class PointerVisualizationSettings ()
+open class PointerVisualizationSettings ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.PointerVisualizationSettings {
   

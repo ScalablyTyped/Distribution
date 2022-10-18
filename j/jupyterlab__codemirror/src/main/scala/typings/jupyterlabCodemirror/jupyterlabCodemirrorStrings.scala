@@ -23,6 +23,10 @@ object jupyterlabCodemirrorStrings {
   inline def coverGutterNextToScrollbar: coverGutterNextToScrollbar = "coverGutterNextToScrollbar".asInstanceOf[coverGutterNextToScrollbar]
   
   @js.native
+  sealed trait cursorBlinkRate extends StObject
+  inline def cursorBlinkRate: cursorBlinkRate = "cursorBlinkRate".asInstanceOf[cursorBlinkRate]
+  
+  @js.native
   sealed trait dragDrop extends StObject
   inline def dragDrop: dragDrop = "dragDrop".asInstanceOf[dragDrop]
   
@@ -133,6 +137,10 @@ object jupyterlabCodemirrorStrings {
   @js.native
   sealed trait showCursorWhenSelecting extends StObject
   inline def showCursorWhenSelecting: showCursorWhenSelecting = "showCursorWhenSelecting".asInstanceOf[showCursorWhenSelecting]
+  
+  @js.native
+  sealed trait showTrailingSpace extends StObject
+  inline def showTrailingSpace: showTrailingSpace = "showTrailingSpace".asInstanceOf[showTrailingSpace]
   
   @js.native
   sealed trait smartIndent extends StObject

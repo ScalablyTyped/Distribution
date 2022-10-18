@@ -9,7 +9,7 @@ import typings.maplibreGl.maplibreGlStrings.id
 import typings.maplibreGl.maplibreGlStrings.ln2
 import typings.maplibreGl.maplibreGlStrings.map
 import typings.maplibreGl.maplibreGlStrings.pi
-import typings.maplibreGl.maplibreGlStrings.properties_
+import typings.maplibreGl.maplibreGlStrings.properties
 import typings.maplibreGl.maplibreGlStrings.viewport
 import typings.maplibreGl.maplibreGlStrings.zoom
 import typings.maplibreGl.mod.ColorSpecification
@@ -54,7 +54,7 @@ object Fillantialias {
     inline def `setFill-colorUndefined`: Self = StObject.set(x, "fill-color", js.undefined)
     
     inline def `setFill-colorVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "fill-color", js.Array(value*))
     
     inline def `setFill-opacity`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "fill-opacity", value.asInstanceOf[js.Any])
@@ -62,7 +62,7 @@ object Fillantialias {
     inline def `setFill-opacityUndefined`: Self = StObject.set(x, "fill-opacity", js.undefined)
     
     inline def `setFill-opacityVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "fill-opacity", js.Array(value*))
     
     inline def `setFill-outline-color`(value: DataDrivenPropertyValueSpecification[ColorSpecification]): Self = StObject.set(x, "fill-outline-color", value.asInstanceOf[js.Any])
@@ -70,7 +70,7 @@ object Fillantialias {
     inline def `setFill-outline-colorUndefined`: Self = StObject.set(x, "fill-outline-color", js.undefined)
     
     inline def `setFill-outline-colorVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "fill-outline-color", js.Array(value*))
     
     inline def `setFill-pattern`(value: DataDrivenPropertyValueSpecification[ResolvedImageSpecification]): Self = StObject.set(x, "fill-pattern", value.asInstanceOf[js.Any])
@@ -78,7 +78,7 @@ object Fillantialias {
     inline def `setFill-patternUndefined`: Self = StObject.set(x, "fill-pattern", js.undefined)
     
     inline def `setFill-patternVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "fill-pattern", js.Array(value*))
     
     inline def `setFill-translate`(value: PropertyValueSpecification[js.Tuple2[Double, Double]]): Self = StObject.set(x, "fill-translate", value.asInstanceOf[js.Any])

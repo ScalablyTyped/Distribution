@@ -1,6 +1,6 @@
 package typings.reactOverlays.anon
 
-import typings.reactOverlays.modalManagerMod.ModalInstance
+import typings.reactOverlays.cjsModalManagerMod.ModalInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

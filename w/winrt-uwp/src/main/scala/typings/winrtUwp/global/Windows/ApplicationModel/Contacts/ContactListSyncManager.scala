@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for syncing contact information with the server. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactListSyncManager")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactListSyncManager")
 @js.native
-abstract class ContactListSyncManager ()
+open class ContactListSyncManager ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactListSyncManager

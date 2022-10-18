@@ -1,6 +1,6 @@
 package typings.jimpPluginResize
 
-import typings.jimpCore.etcMod.ImageCallback
+import typings.jimpCore.typesEtcMod.ImageCallback
 import typings.jimpPluginResize.anon.RESIZEBEZIER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

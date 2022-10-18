@@ -18,7 +18,7 @@ object srcListMod {
   inline def formatListToParts_1[T](
     opts: Locale,
     getListFormat: js.Function1[/* args */ ConstructorParameters[TypeofIntlListFormat], default],
-    values: js.Array[String],
+    values: js.Array[String | T],
     options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<@formatjs/intl.anon.FnCall>[1] */ js.Any
   ): js.Array[Part[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatListToParts")(opts.asInstanceOf[js.Any], getListFormat.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Part[String]]]
   

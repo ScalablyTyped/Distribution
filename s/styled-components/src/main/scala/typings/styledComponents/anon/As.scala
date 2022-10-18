@@ -1,7 +1,7 @@
 package typings.styledComponents.anon
 
-import typings.styledComponents.distTypesMod.AnyComponent
-import typings.styledComponents.distTypesMod.StyledTarget
+import typings.styledComponents.nativeDistDistTypesMod.AnyComponent
+import typings.styledComponents.nativeDistDistTypesMod.StyledTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -8,9 +8,9 @@ trait PrefixRegSymbol extends StObject {
   
   var prefix: FNotation
   
-  var regSymbol: String
+  var regSymbol: /* \( */ String
   
-  var symbol: String
+  var symbol: /* ( */ String
 }
 object PrefixRegSymbol {
   
@@ -23,8 +23,8 @@ object PrefixRegSymbol {
     
     inline def setPrefix(value: FNotation): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    inline def setRegSymbol(value: String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: /* \( */ String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: /* ( */ String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

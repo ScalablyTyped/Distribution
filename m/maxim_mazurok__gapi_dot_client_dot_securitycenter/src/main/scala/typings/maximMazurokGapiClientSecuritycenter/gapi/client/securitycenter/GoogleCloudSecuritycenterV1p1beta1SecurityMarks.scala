@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +19,7 @@ trait GoogleCloudSecuritycenterV1p1beta1SecurityMarks extends StObject {
     * characters (inclusive)
     */
   var marks: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.GoogleCloudSecuritycenterV1p1beta1SecurityMarks & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -45,9 +42,7 @@ object GoogleCloudSecuritycenterV1p1beta1SecurityMarks {
     inline def setCanonicalNameUndefined: Self = StObject.set(x, "canonicalName", js.undefined)
     
     inline def setMarks(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.GoogleCloudSecuritycenterV1p1beta1SecurityMarks & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
     inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)

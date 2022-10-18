@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the PairingRequested event. */
-@JSGlobal("Windows.Devices.Enumeration.DevicePairingRequestedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.DevicePairingRequestedEventArgs")
 @js.native
-abstract class DevicePairingRequestedEventArgs ()
+open class DevicePairingRequestedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DevicePairingRequestedEventArgs

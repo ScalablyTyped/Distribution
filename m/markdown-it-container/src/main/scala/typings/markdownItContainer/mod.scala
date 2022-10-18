@@ -23,11 +23,11 @@ object mod {
       
       var render: js.UndefOr[
             js.Function5[
-              /* tokens */ js.Array[typings.markdownIt.tokenMod.^], 
+              /* tokens */ js.Array[typings.markdownIt.libTokenMod.^], 
               /* index */ Double, 
               /* options */ Any, 
               /* env */ Any, 
-              /* self */ typings.markdownIt.rendererMod.^, 
+              /* self */ typings.markdownIt.libRendererMod.^, 
               String
             ]
           ] = js.undefined
@@ -48,7 +48,7 @@ object mod {
         inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
         
         inline def setRender(
-          value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* index */ Double, /* options */ Any, /* env */ Any, /* self */ typings.markdownIt.rendererMod.^) => String
+          value: (/* tokens */ js.Array[typings.markdownIt.libTokenMod.^], /* index */ Double, /* options */ Any, /* env */ Any, /* self */ typings.markdownIt.libRendererMod.^) => String
         ): Self = StObject.set(x, "render", js.Any.fromFunction5(value))
         
         inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)

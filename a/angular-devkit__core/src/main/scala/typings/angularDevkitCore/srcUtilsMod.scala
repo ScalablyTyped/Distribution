@@ -1,10 +1,8 @@
 package typings.angularDevkitCore
 
-import org.scalablytyped.runtime.TopLevel
-import typings.angularDevkitCore.literalsMod.TemplateTag
-import typings.angularDevkitCore.templateMod.TemplateAst
-import typings.angularDevkitCore.templateMod.TemplateOptions
-import typings.std.Array
+import typings.angularDevkitCore.srcUtilsLiteralsMod.TemplateTag
+import typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAst
+import typings.angularDevkitCore.srcUtilsTemplateMod.TemplateOptions
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,22 +17,22 @@ object srcUtilsMod {
   @JSImport("@angular-devkit/core/src/utils", "CircularDependencyFoundException")
   @js.native
   open class CircularDependencyFoundException ()
-    extends typings.angularDevkitCore.partiallyOrderedSetMod.CircularDependencyFoundException
+    extends typings.angularDevkitCore.srcUtilsPartiallyOrderedSetMod.CircularDependencyFoundException
   
   @JSImport("@angular-devkit/core/src/utils", "DependencyNotFoundException")
   @js.native
   open class DependencyNotFoundException ()
-    extends typings.angularDevkitCore.partiallyOrderedSetMod.DependencyNotFoundException
+    extends typings.angularDevkitCore.srcUtilsPartiallyOrderedSetMod.DependencyNotFoundException
   
   @JSImport("@angular-devkit/core/src/utils", "PartiallyOrderedSet")
   @js.native
   open class PartiallyOrderedSet[T] ()
-    extends typings.angularDevkitCore.partiallyOrderedSetMod.PartiallyOrderedSet[T]
+    extends typings.angularDevkitCore.srcUtilsPartiallyOrderedSetMod.PartiallyOrderedSet[T]
   
   @JSImport("@angular-devkit/core/src/utils", "PriorityQueue")
   @js.native
   open class PriorityQueue[T] protected ()
-    extends typings.angularDevkitCore.priorityQueueMod.PriorityQueue[T] {
+    extends typings.angularDevkitCore.srcUtilsPriorityQueueMod.PriorityQueue[T] {
     def this(_comparator: js.Function2[/* x */ T, /* y */ T, Double]) = this()
   }
   
@@ -85,18 +83,34 @@ object srcUtilsMod {
   
   inline def templateParser(sourceText: String, fileName: String): TemplateAst = (^.asInstanceOf[js.Dynamic].applyDynamic("templateParser")(sourceText.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[TemplateAst]
   
-  type DeepReadonly[T] = T | DeepReadonlyObject[T] | DeepReadonlyArray[Any]
-  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<infer R> ? @angular-devkit/core.@angular-devkit/core/src/utils.DeepReadonlyArray<R> : T extends std.Function ? T : T extends object ? @angular-devkit/core.@angular-devkit/core/src/utils.DeepReadonlyObject<T> : T
+    }}}
+    */
   @js.native
-  trait DeepReadonlyArray[T]
-    extends StObject
-       with Array[DeepReadonly[T]]
+  trait DeepReadonly[T] extends StObject
   
-  type DeepReadonlyObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ P in keyof T ]: @angular-devkit/core.@angular-devkit/core/src/utils.DeepReadonly<T[P]>}
-    */ typings.angularDevkitCore.angularDevkitCoreStrings.DeepReadonlyObject & TopLevel[T]
+  type DeepReadonlyArray[T] = js.Array[DeepReadonly[T]]
   
-  type Readwrite[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {-readonly [ P in keyof T ]: T[P]}
-    */ typings.angularDevkitCore.angularDevkitCoreStrings.Readwrite & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {readonly [ P in keyof T ]: @angular-devkit/core.@angular-devkit/core/src/utils.DeepReadonly<T[P]>}
+    }}}
+    */
+  @js.native
+  trait DeepReadonlyObject[T] extends StObject
+  
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * This translation is imprecise and ignores the effect of the type mapping. 
+    * TS definition: {{{
+    {-readonly [ P in keyof T ]: T[P]}
+    }}}
+    */
+  type Readwrite[T] = T
 }

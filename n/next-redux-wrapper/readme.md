@@ -1,7 +1,7 @@
 
 # Scala.js typings for next-redux-wrapper
 
-Typings are for version 6.0.2
+Typings are for version 8.0.0
 
 ## Library description:
 Redux wrapper for Next.js
@@ -10,10 +10,10 @@ Redux wrapper for Next.js
 | ------------------ | :-------------: |
 | Full name          | next-redux-wrapper |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 56 |
-| # downloads        | 4449160 |
-| # stars            | 2 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 864444.3333333334 |
+| # stars            | 2237.0 |
 
 ## Links
 - [Homepage](https://github.com/kirill-konshin/next-redux-wrapper)

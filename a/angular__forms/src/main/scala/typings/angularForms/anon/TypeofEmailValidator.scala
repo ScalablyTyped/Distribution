@@ -14,7 +14,16 @@ trait TypeofEmailValidator
   extends StObject
      with Instantiable0[EmailValidator] {
   
-  var ɵdir: ɵɵDirectiveDeclaration[EmailValidator, String, scala.Nothing, Email, js.Object, scala.Nothing, scala.Nothing, `false`] = js.native
+  var ɵdir: ɵɵDirectiveDeclaration[
+    EmailValidator, 
+    /* [email][formControlName],[email][formControl],[email][ngModel] */ String, 
+    scala.Nothing, 
+    Email, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[EmailValidator, scala.Nothing] = js.native
 }

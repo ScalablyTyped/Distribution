@@ -13,7 +13,7 @@ trait EggLoggerConfig extends StObject {
   
   var agentLogName: String
   
-  /** allow debug log at prod, defaults to true */
+  /** allow debug log at prod, defaults to `false` */
   var allowDebugAtProd: js.UndefOr[Boolean] = js.undefined
   
   var appLogName: String
@@ -33,6 +33,9 @@ trait EggLoggerConfig extends StObject {
   
   /** disable logger console after app ready. defaults to `false` on local and unittest env, others is `true`. */
   var disableConsoleAfterReady: js.UndefOr[Boolean] = js.undefined
+  
+  /** using performance.now() timer instead of Date.now() for more more precise milliseconds, defaults to `false`. e.g.: logger will set 1.456ms instead of 1ms. */
+  var enablePerformanceTimer: js.UndefOr[Boolean] = js.undefined
   
   var encoding: js.UndefOr[String] = js.undefined
   
@@ -86,6 +89,10 @@ object EggLoggerConfig {
     inline def setDisableConsoleAfterReady(value: Boolean): Self = StObject.set(x, "disableConsoleAfterReady", value.asInstanceOf[js.Any])
     
     inline def setDisableConsoleAfterReadyUndefined: Self = StObject.set(x, "disableConsoleAfterReady", js.undefined)
+    
+    inline def setEnablePerformanceTimer(value: Boolean): Self = StObject.set(x, "enablePerformanceTimer", value.asInstanceOf[js.Any])
+    
+    inline def setEnablePerformanceTimerUndefined: Self = StObject.set(x, "enablePerformanceTimer", js.undefined)
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

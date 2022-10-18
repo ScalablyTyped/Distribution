@@ -1,7 +1,7 @@
 package typings.infernoExtras
 
+import typings.inferno.distCoreTypesMod.VNode
 import typings.inferno.mod.Component
-import typings.inferno.typesMod.VNode
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

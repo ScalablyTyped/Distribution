@@ -36,6 +36,8 @@ trait Material
     */
   /* protected */ var _backFaceCulling: Boolean = js.native
   
+  /* private */ var _blockDirtyMechanism: Any = js.native
+  
   /**
     * Specifies if the color write state should be cached
     */
@@ -307,6 +309,14 @@ trait Material
   def alpha_=(value: Double): Unit = js.native
   
   /**
+    * This allows you to modify the material without marking it as dirty after every change.
+    * This function should be used if you need to make more than one dirty-enabling change to the material - adding a texture, setting a new fill mode and so on.
+    * The callback will pass the material as an argument, so you can make your changes to it.
+    * @param callback the callback to be executed that will update the material
+    */
+  def atomicMaterialsUpdate(callback: js.Function1[/* material */ this.type, Unit]): Unit = js.native
+  
+  /**
     * Gets the culling state
     */
   def backFaceCulling: Boolean = js.native
@@ -356,6 +366,13 @@ trait Material
     * @param effect defines the effect to bind the view projection and projection matrices to
     */
   def bindViewProjection(effect: Effect): Unit = js.native
+  
+  /**
+    * Block the dirty-mechanism for this specific material
+    * When set to false after being true the material will be marked as dirty.
+    */
+  def blockDirtyMechanism: Boolean = js.native
+  def blockDirtyMechanism_=(value: Boolean): Unit = js.native
   
   /**
     * Initializes the uniform buffer layout for the shader.

@@ -4,7 +4,7 @@ import typings.baseui.baseuiStrings.custom_
 import typings.baseui.baseuiStrings.large_
 import typings.baseui.baseuiStrings.medium_
 import typings.baseui.baseuiStrings.small_
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import typings.std.Event

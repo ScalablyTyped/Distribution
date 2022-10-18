@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "MultiMaterial")
 @js.native
 open class MultiMaterial protected ()
-  extends typings.babylonjs.multiMaterialMod.MultiMaterial {
+  extends typings.babylonjs.materialsMultiMaterialMod.MultiMaterial {
   /**
     * Instantiates a new Multi Material
     * A multi-material is used to apply different materials to different parts of the same object without the need of
@@ -33,5 +33,5 @@ object MultiMaterial {
     * @param scene defines the hosting scene
     * @returns a new MultiMaterial
     */
-  inline def ParseMultiMaterial(parsedMultiMaterial: Any, scene: Scene): typings.babylonjs.multiMaterialMod.MultiMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseMultiMaterial")(parsedMultiMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.multiMaterialMod.MultiMaterial]
+  inline def ParseMultiMaterial(parsedMultiMaterial: Any, scene: Scene): typings.babylonjs.materialsMultiMaterialMod.MultiMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseMultiMaterial")(parsedMultiMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsMultiMaterialMod.MultiMaterial]
 }

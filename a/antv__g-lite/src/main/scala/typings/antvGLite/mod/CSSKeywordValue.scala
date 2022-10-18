@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "CSSKeywordValue")
 @js.native
 open class CSSKeywordValue protected ()
-  extends typings.antvGLite.cssMod.CSSKeywordValue {
+  extends typings.antvGLite.distCssMod.CSSKeywordValue {
   def this(value: String) = this()
 }

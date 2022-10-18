@@ -1,7 +1,0 @@
-package typings.expressValidator.optionsMod
-
-import org.scalablytyped.runtime.StObject
-import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
-
-trait _URLProtocol extends StObject

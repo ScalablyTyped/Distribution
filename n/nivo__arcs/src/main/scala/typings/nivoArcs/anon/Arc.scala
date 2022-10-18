@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Arc extends StObject {
   
-  var arc: typings.nivoArcs.typesTypesMod.Arc
+  var arc: typings.nivoArcs.distTypesTypesMod.Arc
 }
 object Arc {
   
-  inline def apply(arc: typings.nivoArcs.typesTypesMod.Arc): Arc = {
+  inline def apply(arc: typings.nivoArcs.distTypesTypesMod.Arc): Arc = {
     val __obj = js.Dynamic.literal(arc = arc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arc]
   }
   
   extension [Self <: Arc](x: Self) {
     
-    inline def setArc(value: typings.nivoArcs.typesTypesMod.Arc): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
+    inline def setArc(value: typings.nivoArcs.distTypesTypesMod.Arc): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
   }
 }

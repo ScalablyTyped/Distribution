@@ -1,16 +1,16 @@
 package typings.awsSdkConfigResolver
 
-import typings.awsSdkConfigResolver.getRegionInfoMod.GetRegionInfoOptions
-import typings.awsSdkConfigResolver.resolveCustomEndpointsConfigMod.CustomEndpointsInputConfig
-import typings.awsSdkConfigResolver.resolveCustomEndpointsConfigMod.CustomEndpointsResolvedConfig
-import typings.awsSdkConfigResolver.resolveCustomEndpointsConfigMod.PreviouslyResolved
-import typings.awsSdkConfigResolver.resolveEndpointsConfigMod.EndpointsInputConfig
-import typings.awsSdkConfigResolver.resolveEndpointsConfigMod.EndpointsResolvedConfig
-import typings.awsSdkConfigResolver.resolveRegionConfigMod.RegionInputConfig
-import typings.awsSdkConfigResolver.resolveRegionConfigMod.RegionResolvedConfig
-import typings.awsSdkNodeConfigProvider.configLoaderMod.LoadedConfigSelectors
-import typings.awsSdkNodeConfigProvider.configLoaderMod.LocalConfigOptions
-import typings.awsSdkTypes.utilMod.RegionInfo
+import typings.awsSdkConfigResolver.distTypesEndpointsConfigResolveCustomEndpointsConfigMod.CustomEndpointsInputConfig
+import typings.awsSdkConfigResolver.distTypesEndpointsConfigResolveCustomEndpointsConfigMod.CustomEndpointsResolvedConfig
+import typings.awsSdkConfigResolver.distTypesEndpointsConfigResolveCustomEndpointsConfigMod.PreviouslyResolved
+import typings.awsSdkConfigResolver.distTypesEndpointsConfigResolveEndpointsConfigMod.EndpointsInputConfig
+import typings.awsSdkConfigResolver.distTypesEndpointsConfigResolveEndpointsConfigMod.EndpointsResolvedConfig
+import typings.awsSdkConfigResolver.distTypesRegionConfigResolveRegionConfigMod.RegionInputConfig
+import typings.awsSdkConfigResolver.distTypesRegionConfigResolveRegionConfigMod.RegionResolvedConfig
+import typings.awsSdkConfigResolver.distTypesRegionInfoGetRegionInfoMod.GetRegionInfoOptions
+import typings.awsSdkNodeConfigProvider.distTypesConfigLoaderMod.LoadedConfigSelectors
+import typings.awsSdkNodeConfigProvider.distTypesConfigLoaderMod.LocalConfigOptions
+import typings.awsSdkTypes.distTypesUtilMod.RegionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,10 +77,10 @@ object mod {
   inline def resolveCustomEndpointsConfig[T](input: T & CustomEndpointsInputConfig & PreviouslyResolved): T & CustomEndpointsResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveCustomEndpointsConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & CustomEndpointsResolvedConfig]
   
   inline def resolveEndpointsConfig[T](
-    input: T & EndpointsInputConfig & typings.awsSdkConfigResolver.resolveEndpointsConfigMod.PreviouslyResolved
+    input: T & EndpointsInputConfig & typings.awsSdkConfigResolver.distTypesEndpointsConfigResolveEndpointsConfigMod.PreviouslyResolved
   ): T & EndpointsResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveEndpointsConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & EndpointsResolvedConfig]
   
   inline def resolveRegionConfig[T](
-    input: T & RegionInputConfig & typings.awsSdkConfigResolver.resolveRegionConfigMod.PreviouslyResolved
+    input: T & RegionInputConfig & typings.awsSdkConfigResolver.distTypesRegionConfigResolveRegionConfigMod.PreviouslyResolved
   ): T & RegionResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRegionConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & RegionResolvedConfig]
 }

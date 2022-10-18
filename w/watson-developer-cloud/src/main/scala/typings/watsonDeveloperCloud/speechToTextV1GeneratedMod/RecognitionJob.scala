@@ -48,7 +48,7 @@ object RecognitionJob {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: SpeechRecognitionResults*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SpeechRecognitionResults*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
@@ -68,6 +68,6 @@ object RecognitionJob {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

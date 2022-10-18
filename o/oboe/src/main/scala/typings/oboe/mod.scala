@@ -2,9 +2,9 @@ package typings.oboe
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadableStream
 import typings.oboe.oboeStrings.data
 import typings.oboe.oboeStrings.end
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,7 +92,7 @@ object mod extends Shortcut {
     // simple fetch the url
     def apply(options: Options): Oboe = js.native
     // fetch with full parameters
-    def apply(stream: ReadableStream[Any]): Oboe = js.native
+    def apply(stream: ReadableStream): Oboe = js.native
     def apply(url: String): Oboe = js.native
     
     var drop: js.Object = js.native

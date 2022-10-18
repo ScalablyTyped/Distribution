@@ -1,7 +1,7 @@
 package typings.uifabricMergeStyles
 
-import typings.uifabricMergeStyles.irawstylebaseMod.IFontWeight
-import typings.uifabricMergeStyles.stylesheetMod.InjectionMode
+import typings.uifabricMergeStyles.libIrawstylebaseMod.IFontWeight
+import typings.uifabricMergeStyles.libStylesheetMod.InjectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

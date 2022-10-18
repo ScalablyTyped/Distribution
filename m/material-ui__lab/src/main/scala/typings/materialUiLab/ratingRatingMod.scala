@@ -583,7 +583,9 @@ object ratingRatingMod {
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    var ref: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLSpanElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
@@ -1320,11 +1322,9 @@ object ratingRatingMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
-      
-      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRef(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLSpanElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       

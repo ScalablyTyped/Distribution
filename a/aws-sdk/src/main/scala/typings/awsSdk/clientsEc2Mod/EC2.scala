@@ -1,0 +1,8842 @@
+package typings.awsSdk.clientsEc2Mod
+
+import typings.awsSdk.anon.DescribeBundleTasksReques
+import typings.awsSdk.anon.DescribeConversionTasksRe
+import typings.awsSdk.anon.DescribeCustomerGatewaysR
+import typings.awsSdk.anon.DescribeExportTasksReques
+import typings.awsSdk.anon.DescribeImagesRequestwait
+import typings.awsSdk.anon.DescribeInstanceStatusReq
+import typings.awsSdk.anon.DescribeInstancesRequestw
+import typings.awsSdk.anon.DescribeInternetGatewaysR
+import typings.awsSdk.anon.DescribeKeyPairsRequestwa
+import typings.awsSdk.anon.DescribeNatGatewaysReques
+import typings.awsSdk.anon.DescribeNetworkInterfaces
+import typings.awsSdk.anon.DescribeSecurityGroupsReq
+import typings.awsSdk.anon.DescribeSnapshotsRequestw
+import typings.awsSdk.anon.DescribeSpotInstanceReque
+import typings.awsSdk.anon.DescribeSubnetsRequestwai
+import typings.awsSdk.anon.DescribeVolumesRequestwai
+import typings.awsSdk.anon.DescribeVpcPeeringConnect
+import typings.awsSdk.anon.DescribeVpcsRequestwaiter
+import typings.awsSdk.anon.DescribeVpnConnectionsReq
+import typings.awsSdk.anon.GetPasswordDataRequestwai
+import typings.awsSdk.awsSdkStrings.bundleTaskComplete
+import typings.awsSdk.awsSdkStrings.conversionTaskCancelled
+import typings.awsSdk.awsSdkStrings.conversionTaskCompleted
+import typings.awsSdk.awsSdkStrings.conversionTaskDeleted
+import typings.awsSdk.awsSdkStrings.customerGatewayAvailable
+import typings.awsSdk.awsSdkStrings.exportTaskCancelled
+import typings.awsSdk.awsSdkStrings.exportTaskCompleted
+import typings.awsSdk.awsSdkStrings.imageAvailable
+import typings.awsSdk.awsSdkStrings.imageExists
+import typings.awsSdk.awsSdkStrings.instanceExists
+import typings.awsSdk.awsSdkStrings.instanceRunning
+import typings.awsSdk.awsSdkStrings.instanceStatusOk
+import typings.awsSdk.awsSdkStrings.instanceStopped
+import typings.awsSdk.awsSdkStrings.instanceTerminated
+import typings.awsSdk.awsSdkStrings.internetGatewayExists
+import typings.awsSdk.awsSdkStrings.keyPairExists
+import typings.awsSdk.awsSdkStrings.natGatewayAvailable
+import typings.awsSdk.awsSdkStrings.natGatewayDeleted
+import typings.awsSdk.awsSdkStrings.networkInterfaceAvailable
+import typings.awsSdk.awsSdkStrings.passwordDataAvailable
+import typings.awsSdk.awsSdkStrings.securityGroupExists
+import typings.awsSdk.awsSdkStrings.snapshotCompleted
+import typings.awsSdk.awsSdkStrings.spotInstanceRequestFulfilled
+import typings.awsSdk.awsSdkStrings.subnetAvailable
+import typings.awsSdk.awsSdkStrings.systemStatusOk
+import typings.awsSdk.awsSdkStrings.volumeAvailable
+import typings.awsSdk.awsSdkStrings.volumeDeleted
+import typings.awsSdk.awsSdkStrings.volumeInUse
+import typings.awsSdk.awsSdkStrings.vpcAvailable
+import typings.awsSdk.awsSdkStrings.vpcExists
+import typings.awsSdk.awsSdkStrings.vpcPeeringConnectionDeleted
+import typings.awsSdk.awsSdkStrings.vpcPeeringConnectionExists
+import typings.awsSdk.awsSdkStrings.vpnConnectionAvailable
+import typings.awsSdk.awsSdkStrings.vpnConnectionDeleted
+import typings.awsSdk.libConfigBaseMod.ConfigBase
+import typings.awsSdk.libErrorMod.AWSError
+import typings.awsSdk.libRequestMod.Request
+import typings.awsSdk.libServiceMod.Service
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait EC2 extends Service {
+  
+  /**
+    * Accepts the Convertible Reserved Instance exchange quote described in the GetReservedInstancesExchangeQuote call.
+    */
+  def acceptReservedInstancesExchangeQuote(): Request[AcceptReservedInstancesExchangeQuoteResult, AWSError] = js.native
+  def acceptReservedInstancesExchangeQuote(
+    callback: js.Function2[/* err */ AWSError, /* data */ AcceptReservedInstancesExchangeQuoteResult, Unit]
+  ): Request[AcceptReservedInstancesExchangeQuoteResult, AWSError] = js.native
+  /**
+    * Accepts the Convertible Reserved Instance exchange quote described in the GetReservedInstancesExchangeQuote call.
+    */
+  def acceptReservedInstancesExchangeQuote(params: AcceptReservedInstancesExchangeQuoteRequest): Request[AcceptReservedInstancesExchangeQuoteResult, AWSError] = js.native
+  def acceptReservedInstancesExchangeQuote(
+    params: AcceptReservedInstancesExchangeQuoteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AcceptReservedInstancesExchangeQuoteResult, Unit]
+  ): Request[AcceptReservedInstancesExchangeQuoteResult, AWSError] = js.native
+  
+  /**
+    * Accepts a request to associate subnets with a transit gateway multicast domain.
+    */
+  def acceptTransitGatewayMulticastDomainAssociations(): Request[AcceptTransitGatewayMulticastDomainAssociationsResult, AWSError] = js.native
+  def acceptTransitGatewayMulticastDomainAssociations(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ AcceptTransitGatewayMulticastDomainAssociationsResult, 
+      Unit
+    ]
+  ): Request[AcceptTransitGatewayMulticastDomainAssociationsResult, AWSError] = js.native
+  /**
+    * Accepts a request to associate subnets with a transit gateway multicast domain.
+    */
+  def acceptTransitGatewayMulticastDomainAssociations(params: AcceptTransitGatewayMulticastDomainAssociationsRequest): Request[AcceptTransitGatewayMulticastDomainAssociationsResult, AWSError] = js.native
+  def acceptTransitGatewayMulticastDomainAssociations(
+    params: AcceptTransitGatewayMulticastDomainAssociationsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ AcceptTransitGatewayMulticastDomainAssociationsResult, 
+      Unit
+    ]
+  ): Request[AcceptTransitGatewayMulticastDomainAssociationsResult, AWSError] = js.native
+  
+  /**
+    * Accepts a transit gateway peering attachment request. The peering attachment must be in the pendingAcceptance state.
+    */
+  def acceptTransitGatewayPeeringAttachment(): Request[AcceptTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  def acceptTransitGatewayPeeringAttachment(
+    callback: js.Function2[/* err */ AWSError, /* data */ AcceptTransitGatewayPeeringAttachmentResult, Unit]
+  ): Request[AcceptTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  /**
+    * Accepts a transit gateway peering attachment request. The peering attachment must be in the pendingAcceptance state.
+    */
+  def acceptTransitGatewayPeeringAttachment(params: AcceptTransitGatewayPeeringAttachmentRequest): Request[AcceptTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  def acceptTransitGatewayPeeringAttachment(
+    params: AcceptTransitGatewayPeeringAttachmentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AcceptTransitGatewayPeeringAttachmentResult, Unit]
+  ): Request[AcceptTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  
+  /**
+    * Accepts a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use RejectTransitGatewayVpcAttachment to reject a VPC attachment request.
+    */
+  def acceptTransitGatewayVpcAttachment(): Request[AcceptTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  def acceptTransitGatewayVpcAttachment(
+    callback: js.Function2[/* err */ AWSError, /* data */ AcceptTransitGatewayVpcAttachmentResult, Unit]
+  ): Request[AcceptTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  /**
+    * Accepts a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use RejectTransitGatewayVpcAttachment to reject a VPC attachment request.
+    */
+  def acceptTransitGatewayVpcAttachment(params: AcceptTransitGatewayVpcAttachmentRequest): Request[AcceptTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  def acceptTransitGatewayVpcAttachment(
+    params: AcceptTransitGatewayVpcAttachmentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AcceptTransitGatewayVpcAttachmentResult, Unit]
+  ): Request[AcceptTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  
+  /**
+    * Accepts one or more interface VPC endpoint connection requests to your VPC endpoint service.
+    */
+  def acceptVpcEndpointConnections(): Request[AcceptVpcEndpointConnectionsResult, AWSError] = js.native
+  def acceptVpcEndpointConnections(callback: js.Function2[/* err */ AWSError, /* data */ AcceptVpcEndpointConnectionsResult, Unit]): Request[AcceptVpcEndpointConnectionsResult, AWSError] = js.native
+  /**
+    * Accepts one or more interface VPC endpoint connection requests to your VPC endpoint service.
+    */
+  def acceptVpcEndpointConnections(params: AcceptVpcEndpointConnectionsRequest): Request[AcceptVpcEndpointConnectionsResult, AWSError] = js.native
+  def acceptVpcEndpointConnections(
+    params: AcceptVpcEndpointConnectionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AcceptVpcEndpointConnectionsResult, Unit]
+  ): Request[AcceptVpcEndpointConnectionsResult, AWSError] = js.native
+  
+  /**
+    * Accept a VPC peering connection request. To accept a request, the VPC peering connection must be in the pending-acceptance state, and you must be the owner of the peer VPC. Use DescribeVpcPeeringConnections to view your outstanding VPC peering connection requests. For an inter-Region VPC peering connection request, you must accept the VPC peering connection in the Region of the accepter VPC.
+    */
+  def acceptVpcPeeringConnection(): Request[AcceptVpcPeeringConnectionResult, AWSError] = js.native
+  def acceptVpcPeeringConnection(callback: js.Function2[/* err */ AWSError, /* data */ AcceptVpcPeeringConnectionResult, Unit]): Request[AcceptVpcPeeringConnectionResult, AWSError] = js.native
+  /**
+    * Accept a VPC peering connection request. To accept a request, the VPC peering connection must be in the pending-acceptance state, and you must be the owner of the peer VPC. Use DescribeVpcPeeringConnections to view your outstanding VPC peering connection requests. For an inter-Region VPC peering connection request, you must accept the VPC peering connection in the Region of the accepter VPC.
+    */
+  def acceptVpcPeeringConnection(params: AcceptVpcPeeringConnectionRequest): Request[AcceptVpcPeeringConnectionResult, AWSError] = js.native
+  def acceptVpcPeeringConnection(
+    params: AcceptVpcPeeringConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AcceptVpcPeeringConnectionResult, Unit]
+  ): Request[AcceptVpcPeeringConnectionResult, AWSError] = js.native
+  
+  /**
+    * Advertises an IPv4 or IPv6 address range that is provisioned for use with your Amazon Web Services resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from Amazon Web Services. To minimize down time, you can configure your Amazon Web Services resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through Amazon Web Services. It can take a few minutes before traffic to the specified addresses starts routing to Amazon Web Services because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
+    */
+  def advertiseByoipCidr(): Request[AdvertiseByoipCidrResult, AWSError] = js.native
+  def advertiseByoipCidr(callback: js.Function2[/* err */ AWSError, /* data */ AdvertiseByoipCidrResult, Unit]): Request[AdvertiseByoipCidrResult, AWSError] = js.native
+  /**
+    * Advertises an IPv4 or IPv6 address range that is provisioned for use with your Amazon Web Services resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from Amazon Web Services. To minimize down time, you can configure your Amazon Web Services resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through Amazon Web Services. It can take a few minutes before traffic to the specified addresses starts routing to Amazon Web Services because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
+    */
+  def advertiseByoipCidr(params: AdvertiseByoipCidrRequest): Request[AdvertiseByoipCidrResult, AWSError] = js.native
+  def advertiseByoipCidr(
+    params: AdvertiseByoipCidrRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AdvertiseByoipCidrResult, Unit]
+  ): Request[AdvertiseByoipCidrResult, AWSError] = js.native
+  
+  /**
+    * Allocates an Elastic IP address to your Amazon Web Services account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different Amazon Web Services account. You can allocate an Elastic IP address from an address pool owned by Amazon Web Services or from an address pool created from a public IPv4 address range that you have brought to Amazon Web Services for use with your Amazon Web Services resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another Amazon Web Services account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per Region and 5 Elastic IP addresses for EC2-VPC per Region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. You can allocate a carrier IP address which is a public IP address from a telecommunication carrier, to a network interface which resides in a subnet in a Wavelength Zone (for example an EC2 instance).   We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def allocateAddress(): Request[AllocateAddressResult, AWSError] = js.native
+  def allocateAddress(callback: js.Function2[/* err */ AWSError, /* data */ AllocateAddressResult, Unit]): Request[AllocateAddressResult, AWSError] = js.native
+  /**
+    * Allocates an Elastic IP address to your Amazon Web Services account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different Amazon Web Services account. You can allocate an Elastic IP address from an address pool owned by Amazon Web Services or from an address pool created from a public IPv4 address range that you have brought to Amazon Web Services for use with your Amazon Web Services resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another Amazon Web Services account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per Region and 5 Elastic IP addresses for EC2-VPC per Region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. You can allocate a carrier IP address which is a public IP address from a telecommunication carrier, to a network interface which resides in a subnet in a Wavelength Zone (for example an EC2 instance).   We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def allocateAddress(params: AllocateAddressRequest): Request[AllocateAddressResult, AWSError] = js.native
+  def allocateAddress(
+    params: AllocateAddressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AllocateAddressResult, Unit]
+  ): Request[AllocateAddressResult, AWSError] = js.native
+  
+  /**
+    * Allocates a Dedicated Host to your account. At a minimum, specify the supported instance type or instance family, the Availability Zone in which to allocate the host, and the number of hosts to allocate.
+    */
+  def allocateHosts(): Request[AllocateHostsResult, AWSError] = js.native
+  def allocateHosts(callback: js.Function2[/* err */ AWSError, /* data */ AllocateHostsResult, Unit]): Request[AllocateHostsResult, AWSError] = js.native
+  /**
+    * Allocates a Dedicated Host to your account. At a minimum, specify the supported instance type or instance family, the Availability Zone in which to allocate the host, and the number of hosts to allocate.
+    */
+  def allocateHosts(params: AllocateHostsRequest): Request[AllocateHostsResult, AWSError] = js.native
+  def allocateHosts(
+    params: AllocateHostsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AllocateHostsResult, Unit]
+  ): Request[AllocateHostsResult, AWSError] = js.native
+  
+  /**
+    * Allocate a CIDR from an IPAM pool. In IPAM, an allocation is a CIDR assignment from an IPAM pool to another resource or IPAM pool. For more information, see Allocate CIDRs in the Amazon VPC IPAM User Guide. 
+    */
+  def allocateIpamPoolCidr(): Request[AllocateIpamPoolCidrResult, AWSError] = js.native
+  def allocateIpamPoolCidr(callback: js.Function2[/* err */ AWSError, /* data */ AllocateIpamPoolCidrResult, Unit]): Request[AllocateIpamPoolCidrResult, AWSError] = js.native
+  /**
+    * Allocate a CIDR from an IPAM pool. In IPAM, an allocation is a CIDR assignment from an IPAM pool to another resource or IPAM pool. For more information, see Allocate CIDRs in the Amazon VPC IPAM User Guide. 
+    */
+  def allocateIpamPoolCidr(params: AllocateIpamPoolCidrRequest): Request[AllocateIpamPoolCidrResult, AWSError] = js.native
+  def allocateIpamPoolCidr(
+    params: AllocateIpamPoolCidrRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AllocateIpamPoolCidrResult, Unit]
+  ): Request[AllocateIpamPoolCidrResult, AWSError] = js.native
+  
+  /**
+    * Applies a security group to the association between the target network and the Client VPN endpoint. This action replaces the existing security groups with the specified security groups.
+    */
+  def applySecurityGroupsToClientVpnTargetNetwork(): Request[ApplySecurityGroupsToClientVpnTargetNetworkResult, AWSError] = js.native
+  def applySecurityGroupsToClientVpnTargetNetwork(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+      Unit
+    ]
+  ): Request[ApplySecurityGroupsToClientVpnTargetNetworkResult, AWSError] = js.native
+  /**
+    * Applies a security group to the association between the target network and the Client VPN endpoint. This action replaces the existing security groups with the specified security groups.
+    */
+  def applySecurityGroupsToClientVpnTargetNetwork(params: ApplySecurityGroupsToClientVpnTargetNetworkRequest): Request[ApplySecurityGroupsToClientVpnTargetNetworkResult, AWSError] = js.native
+  def applySecurityGroupsToClientVpnTargetNetwork(
+    params: ApplySecurityGroupsToClientVpnTargetNetworkRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+      Unit
+    ]
+  ): Request[ApplySecurityGroupsToClientVpnTargetNetworkResult, AWSError] = js.native
+  
+  /**
+    * Assigns one or more IPv6 addresses to the specified network interface. You can specify one or more specific IPv6 addresses, or you can specify the number of IPv6 addresses to be automatically assigned from within the subnet's IPv6 CIDR block range. You can assign as many IPv6 addresses to a network interface as you can assign private IPv4 addresses, and the limit varies per instance type. For information, see IP Addresses Per Network Interface Per Instance Type in the Amazon Elastic Compute Cloud User Guide. You must specify either the IPv6 addresses or the IPv6 address count in the request.  You can optionally use Prefix Delegation on the network interface. You must specify either the IPV6 Prefix Delegation prefixes, or the IPv6 Prefix Delegation count. For information, see  Assigning prefixes to Amazon EC2 network interfaces in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def assignIpv6Addresses(): Request[AssignIpv6AddressesResult, AWSError] = js.native
+  def assignIpv6Addresses(callback: js.Function2[/* err */ AWSError, /* data */ AssignIpv6AddressesResult, Unit]): Request[AssignIpv6AddressesResult, AWSError] = js.native
+  /**
+    * Assigns one or more IPv6 addresses to the specified network interface. You can specify one or more specific IPv6 addresses, or you can specify the number of IPv6 addresses to be automatically assigned from within the subnet's IPv6 CIDR block range. You can assign as many IPv6 addresses to a network interface as you can assign private IPv4 addresses, and the limit varies per instance type. For information, see IP Addresses Per Network Interface Per Instance Type in the Amazon Elastic Compute Cloud User Guide. You must specify either the IPv6 addresses or the IPv6 address count in the request.  You can optionally use Prefix Delegation on the network interface. You must specify either the IPV6 Prefix Delegation prefixes, or the IPv6 Prefix Delegation count. For information, see  Assigning prefixes to Amazon EC2 network interfaces in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def assignIpv6Addresses(params: AssignIpv6AddressesRequest): Request[AssignIpv6AddressesResult, AWSError] = js.native
+  def assignIpv6Addresses(
+    params: AssignIpv6AddressesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssignIpv6AddressesResult, Unit]
+  ): Request[AssignIpv6AddressesResult, AWSError] = js.native
+  
+  /**
+    * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete. You must specify either the IP addresses or the IP address count in the request. You can optionally use Prefix Delegation on the network interface. You must specify either the IPv4 Prefix Delegation prefixes, or the IPv4 Prefix Delegation count. For information, see  Assigning prefixes to Amazon EC2 network interfaces in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def assignPrivateIpAddresses(): Request[AssignPrivateIpAddressesResult, AWSError] = js.native
+  def assignPrivateIpAddresses(callback: js.Function2[/* err */ AWSError, /* data */ AssignPrivateIpAddressesResult, Unit]): Request[AssignPrivateIpAddressesResult, AWSError] = js.native
+  /**
+    * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete. You must specify either the IP addresses or the IP address count in the request. You can optionally use Prefix Delegation on the network interface. You must specify either the IPv4 Prefix Delegation prefixes, or the IPv4 Prefix Delegation count. For information, see  Assigning prefixes to Amazon EC2 network interfaces in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def assignPrivateIpAddresses(params: AssignPrivateIpAddressesRequest): Request[AssignPrivateIpAddressesResult, AWSError] = js.native
+  def assignPrivateIpAddresses(
+    params: AssignPrivateIpAddressesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssignPrivateIpAddressesResult, Unit]
+  ): Request[AssignPrivateIpAddressesResult, AWSError] = js.native
+  
+  /**
+    * Associates an Elastic IP address, or carrier IP address (for instances that are in subnets in Wavelength Zones) with an instance or a network interface. Before you can use an Elastic IP address, you must allocate it to your account. An Elastic IP address is for use in either the EC2-Classic platform or in a VPC. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. [EC2-Classic, VPC in an EC2-VPC-only account] If the Elastic IP address is already associated with a different instance, it is disassociated from that instance and associated with the specified instance. If you associate an Elastic IP address with an instance that has an existing Elastic IP address, the existing address is disassociated from the instance, but remains allocated to your account. [VPC in an EC2-Classic account] If you don't specify a private IP address, the Elastic IP address is associated with the primary IP address. If the Elastic IP address is already associated with a different instance or a network interface, you get an error unless you allow reassociation. You cannot associate an Elastic IP address with an instance or network interface that has an existing Elastic IP address. [Subnets in Wavelength Zones] You can associate an IP address from the telecommunication carrier to the instance or network interface.  You cannot associate an Elastic IP address with an interface in a different network border group.  This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error, and you may be charged for each time the Elastic IP address is remapped to the same instance. For more information, see the Elastic IP Addresses section of Amazon EC2 Pricing.   We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def associateAddress(): Request[AssociateAddressResult, AWSError] = js.native
+  def associateAddress(callback: js.Function2[/* err */ AWSError, /* data */ AssociateAddressResult, Unit]): Request[AssociateAddressResult, AWSError] = js.native
+  /**
+    * Associates an Elastic IP address, or carrier IP address (for instances that are in subnets in Wavelength Zones) with an instance or a network interface. Before you can use an Elastic IP address, you must allocate it to your account. An Elastic IP address is for use in either the EC2-Classic platform or in a VPC. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. [EC2-Classic, VPC in an EC2-VPC-only account] If the Elastic IP address is already associated with a different instance, it is disassociated from that instance and associated with the specified instance. If you associate an Elastic IP address with an instance that has an existing Elastic IP address, the existing address is disassociated from the instance, but remains allocated to your account. [VPC in an EC2-Classic account] If you don't specify a private IP address, the Elastic IP address is associated with the primary IP address. If the Elastic IP address is already associated with a different instance or a network interface, you get an error unless you allow reassociation. You cannot associate an Elastic IP address with an instance or network interface that has an existing Elastic IP address. [Subnets in Wavelength Zones] You can associate an IP address from the telecommunication carrier to the instance or network interface.  You cannot associate an Elastic IP address with an interface in a different network border group.  This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error, and you may be charged for each time the Elastic IP address is remapped to the same instance. For more information, see the Elastic IP Addresses section of Amazon EC2 Pricing.   We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def associateAddress(params: AssociateAddressRequest): Request[AssociateAddressResult, AWSError] = js.native
+  def associateAddress(
+    params: AssociateAddressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateAddressResult, Unit]
+  ): Request[AssociateAddressResult, AWSError] = js.native
+  
+  /**
+    * Associates a target network with a Client VPN endpoint. A target network is a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN endpoint. You can associate only one subnet in each Availability Zone. We recommend that you associate at least two subnets to provide Availability Zone redundancy. If you specified a VPC when you created the Client VPN endpoint or if you have previous subnet associations, the specified subnet must be in the same VPC. To specify a subnet that's in a different VPC, you must first modify the Client VPN endpoint (ModifyClientVpnEndpoint) and change the VPC that's associated with it.
+    */
+  def associateClientVpnTargetNetwork(): Request[AssociateClientVpnTargetNetworkResult, AWSError] = js.native
+  def associateClientVpnTargetNetwork(callback: js.Function2[/* err */ AWSError, /* data */ AssociateClientVpnTargetNetworkResult, Unit]): Request[AssociateClientVpnTargetNetworkResult, AWSError] = js.native
+  /**
+    * Associates a target network with a Client VPN endpoint. A target network is a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN endpoint. You can associate only one subnet in each Availability Zone. We recommend that you associate at least two subnets to provide Availability Zone redundancy. If you specified a VPC when you created the Client VPN endpoint or if you have previous subnet associations, the specified subnet must be in the same VPC. To specify a subnet that's in a different VPC, you must first modify the Client VPN endpoint (ModifyClientVpnEndpoint) and change the VPC that's associated with it.
+    */
+  def associateClientVpnTargetNetwork(params: AssociateClientVpnTargetNetworkRequest): Request[AssociateClientVpnTargetNetworkResult, AWSError] = js.native
+  def associateClientVpnTargetNetwork(
+    params: AssociateClientVpnTargetNetworkRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateClientVpnTargetNetworkResult, Unit]
+  ): Request[AssociateClientVpnTargetNetworkResult, AWSError] = js.native
+  
+  /**
+    * Associates a set of DHCP options (that you've previously created) with the specified VPC, or associates no DHCP options with the VPC. After you associate the options with the VPC, any existing instances and all new instances that you launch in that VPC use the options. You don't need to restart or relaunch the instances. They automatically pick up the changes within a few hours, depending on how frequently the instance renews its DHCP lease. You can explicitly renew the lease using the operating system on the instance. For more information, see DHCP options sets in the Amazon Virtual Private Cloud User Guide.
+    */
+  def associateDhcpOptions(): Request[js.Object, AWSError] = js.native
+  def associateDhcpOptions(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Associates a set of DHCP options (that you've previously created) with the specified VPC, or associates no DHCP options with the VPC. After you associate the options with the VPC, any existing instances and all new instances that you launch in that VPC use the options. You don't need to restart or relaunch the instances. They automatically pick up the changes within a few hours, depending on how frequently the instance renews its DHCP lease. You can explicitly renew the lease using the operating system on the instance. For more information, see DHCP options sets in the Amazon Virtual Private Cloud User Guide.
+    */
+  def associateDhcpOptions(params: AssociateDhcpOptionsRequest): Request[js.Object, AWSError] = js.native
+  def associateDhcpOptions(
+    params: AssociateDhcpOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Associates an Identity and Access Management (IAM) role with an Certificate Manager (ACM) certificate. This enables the certificate to be used by the ACM for Nitro Enclaves application inside an enclave. For more information, see Certificate Manager for Nitro Enclaves in the Amazon Web Services Nitro Enclaves User Guide. When the IAM role is associated with the ACM certificate, the certificate, certificate chain, and encrypted private key are placed in an Amazon S3 location that only the associated IAM role can access. The private key of the certificate is encrypted with an Amazon Web Services managed key that has an attached attestation-based key policy. To enable the IAM role to access the Amazon S3 object, you must grant it permission to call s3:GetObject on the Amazon S3 bucket returned by the command. To enable the IAM role to access the KMS key, you must grant it permission to call kms:Decrypt on the KMS key returned by the command. For more information, see  Grant the role permission to access the certificate and encryption key in the Amazon Web Services Nitro Enclaves User Guide.
+    */
+  def associateEnclaveCertificateIamRole(): Request[AssociateEnclaveCertificateIamRoleResult, AWSError] = js.native
+  def associateEnclaveCertificateIamRole(
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateEnclaveCertificateIamRoleResult, Unit]
+  ): Request[AssociateEnclaveCertificateIamRoleResult, AWSError] = js.native
+  /**
+    * Associates an Identity and Access Management (IAM) role with an Certificate Manager (ACM) certificate. This enables the certificate to be used by the ACM for Nitro Enclaves application inside an enclave. For more information, see Certificate Manager for Nitro Enclaves in the Amazon Web Services Nitro Enclaves User Guide. When the IAM role is associated with the ACM certificate, the certificate, certificate chain, and encrypted private key are placed in an Amazon S3 location that only the associated IAM role can access. The private key of the certificate is encrypted with an Amazon Web Services managed key that has an attached attestation-based key policy. To enable the IAM role to access the Amazon S3 object, you must grant it permission to call s3:GetObject on the Amazon S3 bucket returned by the command. To enable the IAM role to access the KMS key, you must grant it permission to call kms:Decrypt on the KMS key returned by the command. For more information, see  Grant the role permission to access the certificate and encryption key in the Amazon Web Services Nitro Enclaves User Guide.
+    */
+  def associateEnclaveCertificateIamRole(params: AssociateEnclaveCertificateIamRoleRequest): Request[AssociateEnclaveCertificateIamRoleResult, AWSError] = js.native
+  def associateEnclaveCertificateIamRole(
+    params: AssociateEnclaveCertificateIamRoleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateEnclaveCertificateIamRoleResult, Unit]
+  ): Request[AssociateEnclaveCertificateIamRoleResult, AWSError] = js.native
+  
+  /**
+    * Associates an IAM instance profile with a running or stopped instance. You cannot associate more than one IAM instance profile with an instance.
+    */
+  def associateIamInstanceProfile(): Request[AssociateIamInstanceProfileResult, AWSError] = js.native
+  def associateIamInstanceProfile(callback: js.Function2[/* err */ AWSError, /* data */ AssociateIamInstanceProfileResult, Unit]): Request[AssociateIamInstanceProfileResult, AWSError] = js.native
+  /**
+    * Associates an IAM instance profile with a running or stopped instance. You cannot associate more than one IAM instance profile with an instance.
+    */
+  def associateIamInstanceProfile(params: AssociateIamInstanceProfileRequest): Request[AssociateIamInstanceProfileResult, AWSError] = js.native
+  def associateIamInstanceProfile(
+    params: AssociateIamInstanceProfileRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateIamInstanceProfileResult, Unit]
+  ): Request[AssociateIamInstanceProfileResult, AWSError] = js.native
+  
+  /**
+    * Associates one or more targets with an event window. Only one type of target (instance IDs, Dedicated Host IDs, or tags) can be specified with an event window. For more information, see Define event windows for scheduled events in the Amazon EC2 User Guide.
+    */
+  def associateInstanceEventWindow(): Request[AssociateInstanceEventWindowResult, AWSError] = js.native
+  def associateInstanceEventWindow(callback: js.Function2[/* err */ AWSError, /* data */ AssociateInstanceEventWindowResult, Unit]): Request[AssociateInstanceEventWindowResult, AWSError] = js.native
+  /**
+    * Associates one or more targets with an event window. Only one type of target (instance IDs, Dedicated Host IDs, or tags) can be specified with an event window. For more information, see Define event windows for scheduled events in the Amazon EC2 User Guide.
+    */
+  def associateInstanceEventWindow(params: AssociateInstanceEventWindowRequest): Request[AssociateInstanceEventWindowResult, AWSError] = js.native
+  def associateInstanceEventWindow(
+    params: AssociateInstanceEventWindowRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateInstanceEventWindowResult, Unit]
+  ): Request[AssociateInstanceEventWindowResult, AWSError] = js.native
+  
+  /**
+    * Associates a subnet in your VPC or an internet gateway or virtual private gateway attached to your VPC with a route table in your VPC. This association causes traffic from the subnet or gateway to be routed according to the routes in the route table. The action returns an association ID, which you need in order to disassociate the route table later. A route table can be associated with multiple subnets. For more information, see Route tables in the Amazon Virtual Private Cloud User Guide.
+    */
+  def associateRouteTable(): Request[AssociateRouteTableResult, AWSError] = js.native
+  def associateRouteTable(callback: js.Function2[/* err */ AWSError, /* data */ AssociateRouteTableResult, Unit]): Request[AssociateRouteTableResult, AWSError] = js.native
+  /**
+    * Associates a subnet in your VPC or an internet gateway or virtual private gateway attached to your VPC with a route table in your VPC. This association causes traffic from the subnet or gateway to be routed according to the routes in the route table. The action returns an association ID, which you need in order to disassociate the route table later. A route table can be associated with multiple subnets. For more information, see Route tables in the Amazon Virtual Private Cloud User Guide.
+    */
+  def associateRouteTable(params: AssociateRouteTableRequest): Request[AssociateRouteTableResult, AWSError] = js.native
+  def associateRouteTable(
+    params: AssociateRouteTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateRouteTableResult, Unit]
+  ): Request[AssociateRouteTableResult, AWSError] = js.native
+  
+  /**
+    * Associates a CIDR block with your subnet. You can only associate a single IPv6 CIDR block with your subnet. An IPv6 CIDR block must have a prefix length of /64.
+    */
+  def associateSubnetCidrBlock(): Request[AssociateSubnetCidrBlockResult, AWSError] = js.native
+  def associateSubnetCidrBlock(callback: js.Function2[/* err */ AWSError, /* data */ AssociateSubnetCidrBlockResult, Unit]): Request[AssociateSubnetCidrBlockResult, AWSError] = js.native
+  /**
+    * Associates a CIDR block with your subnet. You can only associate a single IPv6 CIDR block with your subnet. An IPv6 CIDR block must have a prefix length of /64.
+    */
+  def associateSubnetCidrBlock(params: AssociateSubnetCidrBlockRequest): Request[AssociateSubnetCidrBlockResult, AWSError] = js.native
+  def associateSubnetCidrBlock(
+    params: AssociateSubnetCidrBlockRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateSubnetCidrBlockResult, Unit]
+  ): Request[AssociateSubnetCidrBlockResult, AWSError] = js.native
+  
+  /**
+    * Associates the specified subnets and transit gateway attachments with the specified transit gateway multicast domain. The transit gateway attachment must be in the available state before you can add a resource. Use DescribeTransitGatewayAttachments to see the state of the attachment.
+    */
+  def associateTransitGatewayMulticastDomain(): Request[AssociateTransitGatewayMulticastDomainResult, AWSError] = js.native
+  def associateTransitGatewayMulticastDomain(
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateTransitGatewayMulticastDomainResult, Unit]
+  ): Request[AssociateTransitGatewayMulticastDomainResult, AWSError] = js.native
+  /**
+    * Associates the specified subnets and transit gateway attachments with the specified transit gateway multicast domain. The transit gateway attachment must be in the available state before you can add a resource. Use DescribeTransitGatewayAttachments to see the state of the attachment.
+    */
+  def associateTransitGatewayMulticastDomain(params: AssociateTransitGatewayMulticastDomainRequest): Request[AssociateTransitGatewayMulticastDomainResult, AWSError] = js.native
+  def associateTransitGatewayMulticastDomain(
+    params: AssociateTransitGatewayMulticastDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateTransitGatewayMulticastDomainResult, Unit]
+  ): Request[AssociateTransitGatewayMulticastDomainResult, AWSError] = js.native
+  
+  /**
+    * Associates the specified transit gateway attachment with a transit gateway policy table.
+    */
+  def associateTransitGatewayPolicyTable(): Request[AssociateTransitGatewayPolicyTableResult, AWSError] = js.native
+  def associateTransitGatewayPolicyTable(
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateTransitGatewayPolicyTableResult, Unit]
+  ): Request[AssociateTransitGatewayPolicyTableResult, AWSError] = js.native
+  /**
+    * Associates the specified transit gateway attachment with a transit gateway policy table.
+    */
+  def associateTransitGatewayPolicyTable(params: AssociateTransitGatewayPolicyTableRequest): Request[AssociateTransitGatewayPolicyTableResult, AWSError] = js.native
+  def associateTransitGatewayPolicyTable(
+    params: AssociateTransitGatewayPolicyTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateTransitGatewayPolicyTableResult, Unit]
+  ): Request[AssociateTransitGatewayPolicyTableResult, AWSError] = js.native
+  
+  /**
+    * Associates the specified attachment with the specified transit gateway route table. You can associate only one route table with an attachment.
+    */
+  def associateTransitGatewayRouteTable(): Request[AssociateTransitGatewayRouteTableResult, AWSError] = js.native
+  def associateTransitGatewayRouteTable(
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateTransitGatewayRouteTableResult, Unit]
+  ): Request[AssociateTransitGatewayRouteTableResult, AWSError] = js.native
+  /**
+    * Associates the specified attachment with the specified transit gateway route table. You can associate only one route table with an attachment.
+    */
+  def associateTransitGatewayRouteTable(params: AssociateTransitGatewayRouteTableRequest): Request[AssociateTransitGatewayRouteTableResult, AWSError] = js.native
+  def associateTransitGatewayRouteTable(
+    params: AssociateTransitGatewayRouteTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateTransitGatewayRouteTableResult, Unit]
+  ): Request[AssociateTransitGatewayRouteTableResult, AWSError] = js.native
+  
+  /**
+    *  This API action is currently in limited preview only. If you are interested in using this feature, contact your account manager.  Associates a branch network interface with a trunk network interface. Before you create the association, run the create-network-interface command and set --interface-type to trunk. You must also create a network interface for each branch network interface that you want to associate with the trunk network interface.
+    */
+  def associateTrunkInterface(): Request[AssociateTrunkInterfaceResult, AWSError] = js.native
+  def associateTrunkInterface(callback: js.Function2[/* err */ AWSError, /* data */ AssociateTrunkInterfaceResult, Unit]): Request[AssociateTrunkInterfaceResult, AWSError] = js.native
+  /**
+    *  This API action is currently in limited preview only. If you are interested in using this feature, contact your account manager.  Associates a branch network interface with a trunk network interface. Before you create the association, run the create-network-interface command and set --interface-type to trunk. You must also create a network interface for each branch network interface that you want to associate with the trunk network interface.
+    */
+  def associateTrunkInterface(params: AssociateTrunkInterfaceRequest): Request[AssociateTrunkInterfaceResult, AWSError] = js.native
+  def associateTrunkInterface(
+    params: AssociateTrunkInterfaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateTrunkInterfaceResult, Unit]
+  ): Request[AssociateTrunkInterfaceResult, AWSError] = js.native
+  
+  /**
+    * Associates a CIDR block with your VPC. You can associate a secondary IPv4 CIDR block, an Amazon-provided IPv6 CIDR block, or an IPv6 CIDR block from an IPv6 address pool that you provisioned through bring your own IP addresses (BYOIP). The IPv6 CIDR block size is fixed at /56. You must specify one of the following in the request: an IPv4 CIDR block, an IPv6 pool, or an Amazon-provided IPv6 CIDR block. For more information about associating CIDR blocks with your VPC and applicable restrictions, see VPC and subnet sizing in the Amazon Virtual Private Cloud User Guide.
+    */
+  def associateVpcCidrBlock(): Request[AssociateVpcCidrBlockResult, AWSError] = js.native
+  def associateVpcCidrBlock(callback: js.Function2[/* err */ AWSError, /* data */ AssociateVpcCidrBlockResult, Unit]): Request[AssociateVpcCidrBlockResult, AWSError] = js.native
+  /**
+    * Associates a CIDR block with your VPC. You can associate a secondary IPv4 CIDR block, an Amazon-provided IPv6 CIDR block, or an IPv6 CIDR block from an IPv6 address pool that you provisioned through bring your own IP addresses (BYOIP). The IPv6 CIDR block size is fixed at /56. You must specify one of the following in the request: an IPv4 CIDR block, an IPv6 pool, or an Amazon-provided IPv6 CIDR block. For more information about associating CIDR blocks with your VPC and applicable restrictions, see VPC and subnet sizing in the Amazon Virtual Private Cloud User Guide.
+    */
+  def associateVpcCidrBlock(params: AssociateVpcCidrBlockRequest): Request[AssociateVpcCidrBlockResult, AWSError] = js.native
+  def associateVpcCidrBlock(
+    params: AssociateVpcCidrBlockRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateVpcCidrBlockResult, Unit]
+  ): Request[AssociateVpcCidrBlockResult, AWSError] = js.native
+  
+  /**
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Links an EC2-Classic instance to a ClassicLink-enabled VPC through one or more of the VPC's security groups. You cannot link an EC2-Classic instance to more than one VPC at a time. You can only link an instance that's in the running state. An instance is automatically unlinked from a VPC when it's stopped - you can link it to the VPC again when you restart it. After you've linked an instance, you cannot change the VPC security groups that are associated with it. To change the security groups, you must first unlink the instance, and then link it again. Linking your instance to a VPC is sometimes referred to as attaching your instance.
+    */
+  def attachClassicLinkVpc(): Request[AttachClassicLinkVpcResult, AWSError] = js.native
+  def attachClassicLinkVpc(callback: js.Function2[/* err */ AWSError, /* data */ AttachClassicLinkVpcResult, Unit]): Request[AttachClassicLinkVpcResult, AWSError] = js.native
+  /**
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Links an EC2-Classic instance to a ClassicLink-enabled VPC through one or more of the VPC's security groups. You cannot link an EC2-Classic instance to more than one VPC at a time. You can only link an instance that's in the running state. An instance is automatically unlinked from a VPC when it's stopped - you can link it to the VPC again when you restart it. After you've linked an instance, you cannot change the VPC security groups that are associated with it. To change the security groups, you must first unlink the instance, and then link it again. Linking your instance to a VPC is sometimes referred to as attaching your instance.
+    */
+  def attachClassicLinkVpc(params: AttachClassicLinkVpcRequest): Request[AttachClassicLinkVpcResult, AWSError] = js.native
+  def attachClassicLinkVpc(
+    params: AttachClassicLinkVpcRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AttachClassicLinkVpcResult, Unit]
+  ): Request[AttachClassicLinkVpcResult, AWSError] = js.native
+  
+  /**
+    * Attaches an internet gateway or a virtual private gateway to a VPC, enabling connectivity between the internet and the VPC. For more information about your VPC and internet gateway, see the Amazon Virtual Private Cloud User Guide.
+    */
+  def attachInternetGateway(): Request[js.Object, AWSError] = js.native
+  def attachInternetGateway(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Attaches an internet gateway or a virtual private gateway to a VPC, enabling connectivity between the internet and the VPC. For more information about your VPC and internet gateway, see the Amazon Virtual Private Cloud User Guide.
+    */
+  def attachInternetGateway(params: AttachInternetGatewayRequest): Request[js.Object, AWSError] = js.native
+  def attachInternetGateway(
+    params: AttachInternetGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Attaches a network interface to an instance.
+    */
+  def attachNetworkInterface(): Request[AttachNetworkInterfaceResult, AWSError] = js.native
+  def attachNetworkInterface(callback: js.Function2[/* err */ AWSError, /* data */ AttachNetworkInterfaceResult, Unit]): Request[AttachNetworkInterfaceResult, AWSError] = js.native
+  /**
+    * Attaches a network interface to an instance.
+    */
+  def attachNetworkInterface(params: AttachNetworkInterfaceRequest): Request[AttachNetworkInterfaceResult, AWSError] = js.native
+  def attachNetworkInterface(
+    params: AttachNetworkInterfaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AttachNetworkInterfaceResult, Unit]
+  ): Request[AttachNetworkInterfaceResult, AWSError] = js.native
+  
+  /**
+    * Attaches an EBS volume to a running or stopped instance and exposes it to the instance with the specified device name. Encrypted EBS volumes must be attached to instances that support Amazon EBS encryption. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide. After you attach an EBS volume, you must make it available. For more information, see Make an EBS volume available for use. If a volume has an Amazon Web Services Marketplace product code:   The volume can be attached only to a stopped instance.   Amazon Web Services Marketplace product codes are copied from the volume to the instance.   You must be subscribed to the product.   The instance type and operating system of the instance must support the product. For example, you can't detach a volume from a Windows instance and attach it to a Linux instance.   For more information, see Attach an Amazon EBS volume to an instance in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def attachVolume(): Request[VolumeAttachment, AWSError] = js.native
+  def attachVolume(callback: js.Function2[/* err */ AWSError, /* data */ VolumeAttachment, Unit]): Request[VolumeAttachment, AWSError] = js.native
+  /**
+    * Attaches an EBS volume to a running or stopped instance and exposes it to the instance with the specified device name. Encrypted EBS volumes must be attached to instances that support Amazon EBS encryption. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide. After you attach an EBS volume, you must make it available. For more information, see Make an EBS volume available for use. If a volume has an Amazon Web Services Marketplace product code:   The volume can be attached only to a stopped instance.   Amazon Web Services Marketplace product codes are copied from the volume to the instance.   You must be subscribed to the product.   The instance type and operating system of the instance must support the product. For example, you can't detach a volume from a Windows instance and attach it to a Linux instance.   For more information, see Attach an Amazon EBS volume to an instance in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def attachVolume(params: AttachVolumeRequest): Request[VolumeAttachment, AWSError] = js.native
+  def attachVolume(
+    params: AttachVolumeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ VolumeAttachment, Unit]
+  ): Request[VolumeAttachment, AWSError] = js.native
+  
+  /**
+    * Attaches a virtual private gateway to a VPC. You can attach one virtual private gateway to one VPC at a time. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def attachVpnGateway(): Request[AttachVpnGatewayResult, AWSError] = js.native
+  def attachVpnGateway(callback: js.Function2[/* err */ AWSError, /* data */ AttachVpnGatewayResult, Unit]): Request[AttachVpnGatewayResult, AWSError] = js.native
+  /**
+    * Attaches a virtual private gateway to a VPC. You can attach one virtual private gateway to one VPC at a time. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def attachVpnGateway(params: AttachVpnGatewayRequest): Request[AttachVpnGatewayResult, AWSError] = js.native
+  def attachVpnGateway(
+    params: AttachVpnGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AttachVpnGatewayResult, Unit]
+  ): Request[AttachVpnGatewayResult, AWSError] = js.native
+  
+  /**
+    * Adds an ingress authorization rule to a Client VPN endpoint. Ingress authorization rules act as firewall rules that grant access to networks. You must configure ingress authorization rules to enable clients to access resources in Amazon Web Services or on-premises networks.
+    */
+  def authorizeClientVpnIngress(): Request[AuthorizeClientVpnIngressResult, AWSError] = js.native
+  def authorizeClientVpnIngress(callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeClientVpnIngressResult, Unit]): Request[AuthorizeClientVpnIngressResult, AWSError] = js.native
+  /**
+    * Adds an ingress authorization rule to a Client VPN endpoint. Ingress authorization rules act as firewall rules that grant access to networks. You must configure ingress authorization rules to enable clients to access resources in Amazon Web Services or on-premises networks.
+    */
+  def authorizeClientVpnIngress(params: AuthorizeClientVpnIngressRequest): Request[AuthorizeClientVpnIngressResult, AWSError] = js.native
+  def authorizeClientVpnIngress(
+    params: AuthorizeClientVpnIngressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeClientVpnIngressResult, Unit]
+  ): Request[AuthorizeClientVpnIngressResult, AWSError] = js.native
+  
+  /**
+    * [VPC only] Adds the specified outbound (egress) rules to a security group for use with a VPC. An outbound rule permits instances to send traffic to the specified IPv4 or IPv6 CIDR address ranges, or to the instances that are associated with the specified source security groups. When specifying an outbound rule for your security group in a VPC, the IpPermissions must include a destination for the traffic. You specify a protocol for each rule (for example, TCP). For the TCP and UDP protocols, you must also specify the destination port or port range. For the ICMP protocol, you must also specify the ICMP type and code. You can use -1 for the type or code to mean all types or all codes. Rule changes are propagated to affected instances as quickly as possible. However, a small delay might occur. For information about VPC security group quotas, see Amazon VPC quotas.
+    */
+  def authorizeSecurityGroupEgress(): Request[AuthorizeSecurityGroupEgressResult, AWSError] = js.native
+  def authorizeSecurityGroupEgress(callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeSecurityGroupEgressResult, Unit]): Request[AuthorizeSecurityGroupEgressResult, AWSError] = js.native
+  /**
+    * [VPC only] Adds the specified outbound (egress) rules to a security group for use with a VPC. An outbound rule permits instances to send traffic to the specified IPv4 or IPv6 CIDR address ranges, or to the instances that are associated with the specified source security groups. When specifying an outbound rule for your security group in a VPC, the IpPermissions must include a destination for the traffic. You specify a protocol for each rule (for example, TCP). For the TCP and UDP protocols, you must also specify the destination port or port range. For the ICMP protocol, you must also specify the ICMP type and code. You can use -1 for the type or code to mean all types or all codes. Rule changes are propagated to affected instances as quickly as possible. However, a small delay might occur. For information about VPC security group quotas, see Amazon VPC quotas.
+    */
+  def authorizeSecurityGroupEgress(params: AuthorizeSecurityGroupEgressRequest): Request[AuthorizeSecurityGroupEgressResult, AWSError] = js.native
+  def authorizeSecurityGroupEgress(
+    params: AuthorizeSecurityGroupEgressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeSecurityGroupEgressResult, Unit]
+  ): Request[AuthorizeSecurityGroupEgressResult, AWSError] = js.native
+  
+  /**
+    * Adds the specified inbound (ingress) rules to a security group. An inbound rule permits instances to receive traffic from the specified IPv4 or IPv6 CIDR address range, or from the instances that are associated with the specified destination security groups. When specifying an inbound rule for your security group in a VPC, the IpPermissions must include a source for the traffic. You specify a protocol for each rule (for example, TCP). For TCP and UDP, you must also specify the destination port or port range. For ICMP/ICMPv6, you must also specify the ICMP/ICMPv6 type and code. You can use -1 to mean all types or all codes. Rule changes are propagated to instances within the security group as quickly as possible. However, a small delay might occur. For more information about VPC security group quotas, see Amazon VPC quotas.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def authorizeSecurityGroupIngress(): Request[AuthorizeSecurityGroupIngressResult, AWSError] = js.native
+  def authorizeSecurityGroupIngress(callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeSecurityGroupIngressResult, Unit]): Request[AuthorizeSecurityGroupIngressResult, AWSError] = js.native
+  /**
+    * Adds the specified inbound (ingress) rules to a security group. An inbound rule permits instances to receive traffic from the specified IPv4 or IPv6 CIDR address range, or from the instances that are associated with the specified destination security groups. When specifying an inbound rule for your security group in a VPC, the IpPermissions must include a source for the traffic. You specify a protocol for each rule (for example, TCP). For TCP and UDP, you must also specify the destination port or port range. For ICMP/ICMPv6, you must also specify the ICMP/ICMPv6 type and code. You can use -1 to mean all types or all codes. Rule changes are propagated to instances within the security group as quickly as possible. However, a small delay might occur. For more information about VPC security group quotas, see Amazon VPC quotas.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def authorizeSecurityGroupIngress(params: AuthorizeSecurityGroupIngressRequest): Request[AuthorizeSecurityGroupIngressResult, AWSError] = js.native
+  def authorizeSecurityGroupIngress(
+    params: AuthorizeSecurityGroupIngressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeSecurityGroupIngressResult, Unit]
+  ): Request[AuthorizeSecurityGroupIngressResult, AWSError] = js.native
+  
+  /**
+    * Bundles an Amazon instance store-backed Windows instance. During bundling, only the root device volume (C:\) is bundled. Data on other instance store volumes is not preserved.  This action is not applicable for Linux/Unix instances or Windows instances that are backed by Amazon EBS. 
+    */
+  def bundleInstance(): Request[BundleInstanceResult, AWSError] = js.native
+  def bundleInstance(callback: js.Function2[/* err */ AWSError, /* data */ BundleInstanceResult, Unit]): Request[BundleInstanceResult, AWSError] = js.native
+  /**
+    * Bundles an Amazon instance store-backed Windows instance. During bundling, only the root device volume (C:\) is bundled. Data on other instance store volumes is not preserved.  This action is not applicable for Linux/Unix instances or Windows instances that are backed by Amazon EBS. 
+    */
+  def bundleInstance(params: BundleInstanceRequest): Request[BundleInstanceResult, AWSError] = js.native
+  def bundleInstance(
+    params: BundleInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BundleInstanceResult, Unit]
+  ): Request[BundleInstanceResult, AWSError] = js.native
+  
+  /**
+    * Cancels a bundling operation for an instance store-backed Windows instance.
+    */
+  def cancelBundleTask(): Request[CancelBundleTaskResult, AWSError] = js.native
+  def cancelBundleTask(callback: js.Function2[/* err */ AWSError, /* data */ CancelBundleTaskResult, Unit]): Request[CancelBundleTaskResult, AWSError] = js.native
+  /**
+    * Cancels a bundling operation for an instance store-backed Windows instance.
+    */
+  def cancelBundleTask(params: CancelBundleTaskRequest): Request[CancelBundleTaskResult, AWSError] = js.native
+  def cancelBundleTask(
+    params: CancelBundleTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelBundleTaskResult, Unit]
+  ): Request[CancelBundleTaskResult, AWSError] = js.native
+  
+  /**
+    * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
+    */
+  def cancelCapacityReservation(): Request[CancelCapacityReservationResult, AWSError] = js.native
+  def cancelCapacityReservation(callback: js.Function2[/* err */ AWSError, /* data */ CancelCapacityReservationResult, Unit]): Request[CancelCapacityReservationResult, AWSError] = js.native
+  /**
+    * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
+    */
+  def cancelCapacityReservation(params: CancelCapacityReservationRequest): Request[CancelCapacityReservationResult, AWSError] = js.native
+  def cancelCapacityReservation(
+    params: CancelCapacityReservationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelCapacityReservationResult, Unit]
+  ): Request[CancelCapacityReservationResult, AWSError] = js.native
+  
+  /**
+    * Cancels one or more Capacity Reservation Fleets. When you cancel a Capacity Reservation Fleet, the following happens:   The Capacity Reservation Fleet's status changes to cancelled.   The individual Capacity Reservations in the Fleet are cancelled. Instances running in the Capacity Reservations at the time of cancelling the Fleet continue to run in shared capacity.   The Fleet stops creating new Capacity Reservations.  
+    */
+  def cancelCapacityReservationFleets(): Request[CancelCapacityReservationFleetsResult, AWSError] = js.native
+  def cancelCapacityReservationFleets(callback: js.Function2[/* err */ AWSError, /* data */ CancelCapacityReservationFleetsResult, Unit]): Request[CancelCapacityReservationFleetsResult, AWSError] = js.native
+  /**
+    * Cancels one or more Capacity Reservation Fleets. When you cancel a Capacity Reservation Fleet, the following happens:   The Capacity Reservation Fleet's status changes to cancelled.   The individual Capacity Reservations in the Fleet are cancelled. Instances running in the Capacity Reservations at the time of cancelling the Fleet continue to run in shared capacity.   The Fleet stops creating new Capacity Reservations.  
+    */
+  def cancelCapacityReservationFleets(params: CancelCapacityReservationFleetsRequest): Request[CancelCapacityReservationFleetsResult, AWSError] = js.native
+  def cancelCapacityReservationFleets(
+    params: CancelCapacityReservationFleetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelCapacityReservationFleetsResult, Unit]
+  ): Request[CancelCapacityReservationFleetsResult, AWSError] = js.native
+  
+  /**
+    * Cancels an active conversion task. The task can be the import of an instance or volume. The action removes all artifacts of the conversion, including a partially uploaded volume or instance. If the conversion is complete or is in the process of transferring the final disk image, the command fails and returns an exception. For more information, see Importing a Virtual Machine Using the Amazon EC2 CLI.
+    */
+  def cancelConversionTask(): Request[js.Object, AWSError] = js.native
+  def cancelConversionTask(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Cancels an active conversion task. The task can be the import of an instance or volume. The action removes all artifacts of the conversion, including a partially uploaded volume or instance. If the conversion is complete or is in the process of transferring the final disk image, the command fails and returns an exception. For more information, see Importing a Virtual Machine Using the Amazon EC2 CLI.
+    */
+  def cancelConversionTask(params: CancelConversionRequest): Request[js.Object, AWSError] = js.native
+  def cancelConversionTask(
+    params: CancelConversionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Cancels an active export task. The request removes all artifacts of the export, including any partially-created Amazon S3 objects. If the export task is complete or is in the process of transferring the final disk image, the command fails and returns an error.
+    */
+  def cancelExportTask(): Request[js.Object, AWSError] = js.native
+  def cancelExportTask(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Cancels an active export task. The request removes all artifacts of the export, including any partially-created Amazon S3 objects. If the export task is complete or is in the process of transferring the final disk image, the command fails and returns an error.
+    */
+  def cancelExportTask(params: CancelExportTaskRequest): Request[js.Object, AWSError] = js.native
+  def cancelExportTask(
+    params: CancelExportTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Cancels an in-process import virtual machine or import snapshot task.
+    */
+  def cancelImportTask(): Request[CancelImportTaskResult, AWSError] = js.native
+  def cancelImportTask(callback: js.Function2[/* err */ AWSError, /* data */ CancelImportTaskResult, Unit]): Request[CancelImportTaskResult, AWSError] = js.native
+  /**
+    * Cancels an in-process import virtual machine or import snapshot task.
+    */
+  def cancelImportTask(params: CancelImportTaskRequest): Request[CancelImportTaskResult, AWSError] = js.native
+  def cancelImportTask(
+    params: CancelImportTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelImportTaskResult, Unit]
+  ): Request[CancelImportTaskResult, AWSError] = js.native
+  
+  /**
+    * Cancels the specified Reserved Instance listing in the Reserved Instance Marketplace. For more information, see Reserved Instance Marketplace in the Amazon EC2 User Guide.
+    */
+  def cancelReservedInstancesListing(): Request[CancelReservedInstancesListingResult, AWSError] = js.native
+  def cancelReservedInstancesListing(callback: js.Function2[/* err */ AWSError, /* data */ CancelReservedInstancesListingResult, Unit]): Request[CancelReservedInstancesListingResult, AWSError] = js.native
+  /**
+    * Cancels the specified Reserved Instance listing in the Reserved Instance Marketplace. For more information, see Reserved Instance Marketplace in the Amazon EC2 User Guide.
+    */
+  def cancelReservedInstancesListing(params: CancelReservedInstancesListingRequest): Request[CancelReservedInstancesListingResult, AWSError] = js.native
+  def cancelReservedInstancesListing(
+    params: CancelReservedInstancesListingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelReservedInstancesListingResult, Unit]
+  ): Request[CancelReservedInstancesListingResult, AWSError] = js.native
+  
+  /**
+    * Cancels the specified Spot Fleet requests. After you cancel a Spot Fleet request, the Spot Fleet launches no new Spot Instances. You must specify whether the Spot Fleet should also terminate its Spot Instances. If you terminate the instances, the Spot Fleet request enters the cancelled_terminating state. Otherwise, the Spot Fleet request enters the cancelled_running state and the instances continue to run until they are interrupted or you terminate them manually.
+    */
+  def cancelSpotFleetRequests(): Request[CancelSpotFleetRequestsResponse, AWSError] = js.native
+  def cancelSpotFleetRequests(callback: js.Function2[/* err */ AWSError, /* data */ CancelSpotFleetRequestsResponse, Unit]): Request[CancelSpotFleetRequestsResponse, AWSError] = js.native
+  /**
+    * Cancels the specified Spot Fleet requests. After you cancel a Spot Fleet request, the Spot Fleet launches no new Spot Instances. You must specify whether the Spot Fleet should also terminate its Spot Instances. If you terminate the instances, the Spot Fleet request enters the cancelled_terminating state. Otherwise, the Spot Fleet request enters the cancelled_running state and the instances continue to run until they are interrupted or you terminate them manually.
+    */
+  def cancelSpotFleetRequests(params: CancelSpotFleetRequestsRequest): Request[CancelSpotFleetRequestsResponse, AWSError] = js.native
+  def cancelSpotFleetRequests(
+    params: CancelSpotFleetRequestsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelSpotFleetRequestsResponse, Unit]
+  ): Request[CancelSpotFleetRequestsResponse, AWSError] = js.native
+  
+  /**
+    * Cancels one or more Spot Instance requests.  Canceling a Spot Instance request does not terminate running Spot Instances associated with the request. 
+    */
+  def cancelSpotInstanceRequests(): Request[CancelSpotInstanceRequestsResult, AWSError] = js.native
+  def cancelSpotInstanceRequests(callback: js.Function2[/* err */ AWSError, /* data */ CancelSpotInstanceRequestsResult, Unit]): Request[CancelSpotInstanceRequestsResult, AWSError] = js.native
+  /**
+    * Cancels one or more Spot Instance requests.  Canceling a Spot Instance request does not terminate running Spot Instances associated with the request. 
+    */
+  def cancelSpotInstanceRequests(params: CancelSpotInstanceRequestsRequest): Request[CancelSpotInstanceRequestsResult, AWSError] = js.native
+  def cancelSpotInstanceRequests(
+    params: CancelSpotInstanceRequestsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelSpotInstanceRequestsResult, Unit]
+  ): Request[CancelSpotInstanceRequestsResult, AWSError] = js.native
+  
+  @JSName("config")
+  var config_EC2: ConfigBase & ClientConfiguration = js.native
+  
+  /**
+    * Determines whether a product code is associated with an instance. This action can only be used by the owner of the product code. It is useful when a product code owner must verify whether another user's instance is eligible for support.
+    */
+  def confirmProductInstance(): Request[ConfirmProductInstanceResult, AWSError] = js.native
+  def confirmProductInstance(callback: js.Function2[/* err */ AWSError, /* data */ ConfirmProductInstanceResult, Unit]): Request[ConfirmProductInstanceResult, AWSError] = js.native
+  /**
+    * Determines whether a product code is associated with an instance. This action can only be used by the owner of the product code. It is useful when a product code owner must verify whether another user's instance is eligible for support.
+    */
+  def confirmProductInstance(params: ConfirmProductInstanceRequest): Request[ConfirmProductInstanceResult, AWSError] = js.native
+  def confirmProductInstance(
+    params: ConfirmProductInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ConfirmProductInstanceResult, Unit]
+  ): Request[ConfirmProductInstanceResult, AWSError] = js.native
+  
+  /**
+    * Copies the specified Amazon FPGA Image (AFI) to the current Region.
+    */
+  def copyFpgaImage(): Request[CopyFpgaImageResult, AWSError] = js.native
+  def copyFpgaImage(callback: js.Function2[/* err */ AWSError, /* data */ CopyFpgaImageResult, Unit]): Request[CopyFpgaImageResult, AWSError] = js.native
+  /**
+    * Copies the specified Amazon FPGA Image (AFI) to the current Region.
+    */
+  def copyFpgaImage(params: CopyFpgaImageRequest): Request[CopyFpgaImageResult, AWSError] = js.native
+  def copyFpgaImage(
+    params: CopyFpgaImageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CopyFpgaImageResult, Unit]
+  ): Request[CopyFpgaImageResult, AWSError] = js.native
+  
+  /**
+    * Initiates the copy of an AMI. You can copy an AMI from one Region to another, or from a Region to an Outpost. You can't copy an AMI from an Outpost to a Region, from one Outpost to another, or within the same Outpost. To copy an AMI to another partition, see CreateStoreImageTask. To copy an AMI from one Region to another, specify the source Region using the SourceRegion parameter, and specify the destination Region using its endpoint. Copies of encrypted backing snapshots for the AMI are encrypted. Copies of unencrypted backing snapshots remain unencrypted, unless you set Encrypted during the copy operation. You cannot create an unencrypted copy of an encrypted backing snapshot. To copy an AMI from a Region to an Outpost, specify the source Region using the SourceRegion parameter, and specify the ARN of the destination Outpost using DestinationOutpostArn. Backing snapshots copied to an Outpost are encrypted by default using the default encryption key for the Region, or a different key that you specify in the request using KmsKeyId. Outposts do not support unencrypted snapshots. For more information,  Amazon EBS local snapshots on Outposts in the Amazon Elastic Compute Cloud User Guide. For more information about the prerequisites and limits when copying an AMI, see Copying an AMI in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def copyImage(): Request[CopyImageResult, AWSError] = js.native
+  def copyImage(callback: js.Function2[/* err */ AWSError, /* data */ CopyImageResult, Unit]): Request[CopyImageResult, AWSError] = js.native
+  /**
+    * Initiates the copy of an AMI. You can copy an AMI from one Region to another, or from a Region to an Outpost. You can't copy an AMI from an Outpost to a Region, from one Outpost to another, or within the same Outpost. To copy an AMI to another partition, see CreateStoreImageTask. To copy an AMI from one Region to another, specify the source Region using the SourceRegion parameter, and specify the destination Region using its endpoint. Copies of encrypted backing snapshots for the AMI are encrypted. Copies of unencrypted backing snapshots remain unencrypted, unless you set Encrypted during the copy operation. You cannot create an unencrypted copy of an encrypted backing snapshot. To copy an AMI from a Region to an Outpost, specify the source Region using the SourceRegion parameter, and specify the ARN of the destination Outpost using DestinationOutpostArn. Backing snapshots copied to an Outpost are encrypted by default using the default encryption key for the Region, or a different key that you specify in the request using KmsKeyId. Outposts do not support unencrypted snapshots. For more information,  Amazon EBS local snapshots on Outposts in the Amazon Elastic Compute Cloud User Guide. For more information about the prerequisites and limits when copying an AMI, see Copying an AMI in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def copyImage(params: CopyImageRequest): Request[CopyImageResult, AWSError] = js.native
+  def copyImage(
+    params: CopyImageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CopyImageResult, Unit]
+  ): Request[CopyImageResult, AWSError] = js.native
+  
+  /**
+    * Copies a point-in-time snapshot of an EBS volume and stores it in Amazon S3. You can copy a snapshot within the same Region, from one Region to another, or from a Region to an Outpost. You can't copy a snapshot from an Outpost to a Region, from one Outpost to another, or within the same Outpost. You can use the snapshot to create EBS volumes or Amazon Machine Images (AMIs). When copying snapshots to a Region, copies of encrypted EBS snapshots remain encrypted. Copies of unencrypted snapshots remain unencrypted, unless you enable encryption for the snapshot copy operation. By default, encrypted snapshot copies use the default Key Management Service (KMS) KMS key; however, you can specify a different KMS key. To copy an encrypted snapshot that has been shared from another account, you must have permissions for the KMS key used to encrypt the snapshot. Snapshots copied to an Outpost are encrypted by default using the default encryption key for the Region, or a different key that you specify in the request using KmsKeyId. Outposts do not support unencrypted snapshots. For more information,  Amazon EBS local snapshots on Outposts in the Amazon Elastic Compute Cloud User Guide. Snapshots created by copying another snapshot have an arbitrary volume ID that should not be used for any purpose. For more information, see Copy an Amazon EBS snapshot in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def copySnapshot(): Request[CopySnapshotResult, AWSError] = js.native
+  def copySnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CopySnapshotResult, Unit]): Request[CopySnapshotResult, AWSError] = js.native
+  /**
+    * Copies a point-in-time snapshot of an EBS volume and stores it in Amazon S3. You can copy a snapshot within the same Region, from one Region to another, or from a Region to an Outpost. You can't copy a snapshot from an Outpost to a Region, from one Outpost to another, or within the same Outpost. You can use the snapshot to create EBS volumes or Amazon Machine Images (AMIs). When copying snapshots to a Region, copies of encrypted EBS snapshots remain encrypted. Copies of unencrypted snapshots remain unencrypted, unless you enable encryption for the snapshot copy operation. By default, encrypted snapshot copies use the default Key Management Service (KMS) KMS key; however, you can specify a different KMS key. To copy an encrypted snapshot that has been shared from another account, you must have permissions for the KMS key used to encrypt the snapshot. Snapshots copied to an Outpost are encrypted by default using the default encryption key for the Region, or a different key that you specify in the request using KmsKeyId. Outposts do not support unencrypted snapshots. For more information,  Amazon EBS local snapshots on Outposts in the Amazon Elastic Compute Cloud User Guide. Snapshots created by copying another snapshot have an arbitrary volume ID that should not be used for any purpose. For more information, see Copy an Amazon EBS snapshot in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def copySnapshot(params: CopySnapshotRequest): Request[CopySnapshotResult, AWSError] = js.native
+  def copySnapshot(
+    params: CopySnapshotRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CopySnapshotResult, Unit]
+  ): Request[CopySnapshotResult, AWSError] = js.native
+  
+  /**
+    * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon EC2 User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Quotas in the Amazon EC2 User Guide.
+    */
+  def createCapacityReservation(): Request[CreateCapacityReservationResult, AWSError] = js.native
+  def createCapacityReservation(callback: js.Function2[/* err */ AWSError, /* data */ CreateCapacityReservationResult, Unit]): Request[CreateCapacityReservationResult, AWSError] = js.native
+  /**
+    * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon EC2 User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Quotas in the Amazon EC2 User Guide.
+    */
+  def createCapacityReservation(params: CreateCapacityReservationRequest): Request[CreateCapacityReservationResult, AWSError] = js.native
+  def createCapacityReservation(
+    params: CreateCapacityReservationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateCapacityReservationResult, Unit]
+  ): Request[CreateCapacityReservationResult, AWSError] = js.native
+  
+  /**
+    * Creates a Capacity Reservation Fleet. For more information, see Create a Capacity Reservation Fleet in the Amazon EC2 User Guide.
+    */
+  def createCapacityReservationFleet(): Request[CreateCapacityReservationFleetResult, AWSError] = js.native
+  def createCapacityReservationFleet(callback: js.Function2[/* err */ AWSError, /* data */ CreateCapacityReservationFleetResult, Unit]): Request[CreateCapacityReservationFleetResult, AWSError] = js.native
+  /**
+    * Creates a Capacity Reservation Fleet. For more information, see Create a Capacity Reservation Fleet in the Amazon EC2 User Guide.
+    */
+  def createCapacityReservationFleet(params: CreateCapacityReservationFleetRequest): Request[CreateCapacityReservationFleetResult, AWSError] = js.native
+  def createCapacityReservationFleet(
+    params: CreateCapacityReservationFleetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateCapacityReservationFleetResult, Unit]
+  ): Request[CreateCapacityReservationFleetResult, AWSError] = js.native
+  
+  /**
+    * Creates a carrier gateway. For more information about carrier gateways, see Carrier gateways in the Amazon Web Services Wavelength Developer Guide.
+    */
+  def createCarrierGateway(): Request[CreateCarrierGatewayResult, AWSError] = js.native
+  def createCarrierGateway(callback: js.Function2[/* err */ AWSError, /* data */ CreateCarrierGatewayResult, Unit]): Request[CreateCarrierGatewayResult, AWSError] = js.native
+  /**
+    * Creates a carrier gateway. For more information about carrier gateways, see Carrier gateways in the Amazon Web Services Wavelength Developer Guide.
+    */
+  def createCarrierGateway(params: CreateCarrierGatewayRequest): Request[CreateCarrierGatewayResult, AWSError] = js.native
+  def createCarrierGateway(
+    params: CreateCarrierGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateCarrierGatewayResult, Unit]
+  ): Request[CreateCarrierGatewayResult, AWSError] = js.native
+  
+  /**
+    * Creates a Client VPN endpoint. A Client VPN endpoint is the resource you create and configure to enable and manage client VPN sessions. It is the destination endpoint at which all client VPN sessions are terminated.
+    */
+  def createClientVpnEndpoint(): Request[CreateClientVpnEndpointResult, AWSError] = js.native
+  def createClientVpnEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ CreateClientVpnEndpointResult, Unit]): Request[CreateClientVpnEndpointResult, AWSError] = js.native
+  /**
+    * Creates a Client VPN endpoint. A Client VPN endpoint is the resource you create and configure to enable and manage client VPN sessions. It is the destination endpoint at which all client VPN sessions are terminated.
+    */
+  def createClientVpnEndpoint(params: CreateClientVpnEndpointRequest): Request[CreateClientVpnEndpointResult, AWSError] = js.native
+  def createClientVpnEndpoint(
+    params: CreateClientVpnEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateClientVpnEndpointResult, Unit]
+  ): Request[CreateClientVpnEndpointResult, AWSError] = js.native
+  
+  /**
+    * Adds a route to a network to a Client VPN endpoint. Each Client VPN endpoint has a route table that describes the available destination network routes. Each route in the route table specifies the path for traﬃc to speciﬁc resources or networks.
+    */
+  def createClientVpnRoute(): Request[CreateClientVpnRouteResult, AWSError] = js.native
+  def createClientVpnRoute(callback: js.Function2[/* err */ AWSError, /* data */ CreateClientVpnRouteResult, Unit]): Request[CreateClientVpnRouteResult, AWSError] = js.native
+  /**
+    * Adds a route to a network to a Client VPN endpoint. Each Client VPN endpoint has a route table that describes the available destination network routes. Each route in the route table specifies the path for traﬃc to speciﬁc resources or networks.
+    */
+  def createClientVpnRoute(params: CreateClientVpnRouteRequest): Request[CreateClientVpnRouteResult, AWSError] = js.native
+  def createClientVpnRoute(
+    params: CreateClientVpnRouteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateClientVpnRouteResult, Unit]
+  ): Request[CreateClientVpnRouteResult, AWSError] = js.native
+  
+  /**
+    *  Creates a range of customer-owned IP addresses. 
+    */
+  def createCoipCidr(): Request[CreateCoipCidrResult, AWSError] = js.native
+  def createCoipCidr(callback: js.Function2[/* err */ AWSError, /* data */ CreateCoipCidrResult, Unit]): Request[CreateCoipCidrResult, AWSError] = js.native
+  /**
+    *  Creates a range of customer-owned IP addresses. 
+    */
+  def createCoipCidr(params: CreateCoipCidrRequest): Request[CreateCoipCidrResult, AWSError] = js.native
+  def createCoipCidr(
+    params: CreateCoipCidrRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateCoipCidrResult, Unit]
+  ): Request[CreateCoipCidrResult, AWSError] = js.native
+  
+  /**
+    *  Creates a pool of customer-owned IP (CoIP) addresses. 
+    */
+  def createCoipPool(): Request[CreateCoipPoolResult, AWSError] = js.native
+  def createCoipPool(callback: js.Function2[/* err */ AWSError, /* data */ CreateCoipPoolResult, Unit]): Request[CreateCoipPoolResult, AWSError] = js.native
+  /**
+    *  Creates a pool of customer-owned IP (CoIP) addresses. 
+    */
+  def createCoipPool(params: CreateCoipPoolRequest): Request[CreateCoipPoolResult, AWSError] = js.native
+  def createCoipPool(
+    params: CreateCoipPoolRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateCoipPoolResult, Unit]
+  ): Request[CreateCoipPoolResult, AWSError] = js.native
+  
+  /**
+    * Provides information to Amazon Web Services about your customer gateway device. The customer gateway device is the appliance at your end of the VPN connection. You must provide the IP address of the customer gateway device’s external interface. The IP address must be static and can be behind a device performing network address translation (NAT). For devices that use Border Gateway Protocol (BGP), you can also provide the device's BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network. If you don't have an ASN already, you can use a private ASN. For more information, see Customer gateway options for your Site-to-Site VPN connection in the Amazon Web Services Site-to-Site VPN User Guide. To create more than one customer gateway with the same VPN type, IP address, and BGP ASN, specify a unique device name for each customer gateway. An identical request returns information about the existing customer gateway; it doesn't create a new customer gateway.
+    */
+  def createCustomerGateway(): Request[CreateCustomerGatewayResult, AWSError] = js.native
+  def createCustomerGateway(callback: js.Function2[/* err */ AWSError, /* data */ CreateCustomerGatewayResult, Unit]): Request[CreateCustomerGatewayResult, AWSError] = js.native
+  /**
+    * Provides information to Amazon Web Services about your customer gateway device. The customer gateway device is the appliance at your end of the VPN connection. You must provide the IP address of the customer gateway device’s external interface. The IP address must be static and can be behind a device performing network address translation (NAT). For devices that use Border Gateway Protocol (BGP), you can also provide the device's BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network. If you don't have an ASN already, you can use a private ASN. For more information, see Customer gateway options for your Site-to-Site VPN connection in the Amazon Web Services Site-to-Site VPN User Guide. To create more than one customer gateway with the same VPN type, IP address, and BGP ASN, specify a unique device name for each customer gateway. An identical request returns information about the existing customer gateway; it doesn't create a new customer gateway.
+    */
+  def createCustomerGateway(params: CreateCustomerGatewayRequest): Request[CreateCustomerGatewayResult, AWSError] = js.native
+  def createCustomerGateway(
+    params: CreateCustomerGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateCustomerGatewayResult, Unit]
+  ): Request[CreateCustomerGatewayResult, AWSError] = js.native
+  
+  /**
+    * Creates a default subnet with a size /20 IPv4 CIDR block in the specified Availability Zone in your default VPC. You can have only one default subnet per Availability Zone. For more information, see Creating a default subnet in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createDefaultSubnet(): Request[CreateDefaultSubnetResult, AWSError] = js.native
+  def createDefaultSubnet(callback: js.Function2[/* err */ AWSError, /* data */ CreateDefaultSubnetResult, Unit]): Request[CreateDefaultSubnetResult, AWSError] = js.native
+  /**
+    * Creates a default subnet with a size /20 IPv4 CIDR block in the specified Availability Zone in your default VPC. You can have only one default subnet per Availability Zone. For more information, see Creating a default subnet in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createDefaultSubnet(params: CreateDefaultSubnetRequest): Request[CreateDefaultSubnetResult, AWSError] = js.native
+  def createDefaultSubnet(
+    params: CreateDefaultSubnetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateDefaultSubnetResult, Unit]
+  ): Request[CreateDefaultSubnetResult, AWSError] = js.native
+  
+  /**
+    * Creates a default VPC with a size /16 IPv4 CIDR block and a default subnet in each Availability Zone. For more information about the components of a default VPC, see Default VPC and default subnets in the Amazon Virtual Private Cloud User Guide. You cannot specify the components of the default VPC yourself. If you deleted your previous default VPC, you can create a default VPC. You cannot have more than one default VPC per Region. If your account supports EC2-Classic, you cannot use this action to create a default VPC in a Region that supports EC2-Classic. If you want a default VPC in a Region that supports EC2-Classic, see "I really want a default VPC for my existing EC2 account. Is that possible?" in the Default VPCs FAQ.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def createDefaultVpc(): Request[CreateDefaultVpcResult, AWSError] = js.native
+  def createDefaultVpc(callback: js.Function2[/* err */ AWSError, /* data */ CreateDefaultVpcResult, Unit]): Request[CreateDefaultVpcResult, AWSError] = js.native
+  /**
+    * Creates a default VPC with a size /16 IPv4 CIDR block and a default subnet in each Availability Zone. For more information about the components of a default VPC, see Default VPC and default subnets in the Amazon Virtual Private Cloud User Guide. You cannot specify the components of the default VPC yourself. If you deleted your previous default VPC, you can create a default VPC. You cannot have more than one default VPC per Region. If your account supports EC2-Classic, you cannot use this action to create a default VPC in a Region that supports EC2-Classic. If you want a default VPC in a Region that supports EC2-Classic, see "I really want a default VPC for my existing EC2 account. Is that possible?" in the Default VPCs FAQ.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def createDefaultVpc(params: CreateDefaultVpcRequest): Request[CreateDefaultVpcResult, AWSError] = js.native
+  def createDefaultVpc(
+    params: CreateDefaultVpcRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateDefaultVpcResult, Unit]
+  ): Request[CreateDefaultVpcResult, AWSError] = js.native
+  
+  /**
+    * Creates a set of DHCP options for your VPC. After creating the set, you must associate it with the VPC, causing all existing and new instances that you launch in the VPC to use this set of DHCP options. The following are the individual DHCP options you can specify. For more information about the options, see RFC 2132.    domain-name-servers - The IP addresses of up to four domain name servers, or AmazonProvidedDNS. The default DHCP option set specifies AmazonProvidedDNS. If specifying more than one domain name server, specify the IP addresses in a single parameter, separated by commas. To have your instance receive a custom DNS hostname as specified in domain-name, you must set domain-name-servers to a custom DNS server.    domain-name - If you're using AmazonProvidedDNS in us-east-1, specify ec2.internal. If you're using AmazonProvidedDNS in another Region, specify region.compute.internal (for example, ap-northeast-1.compute.internal). Otherwise, specify a domain name (for example, ExampleCompany.com). This value is used to complete unqualified DNS hostnames. Important: Some Linux operating systems accept multiple domain names separated by spaces. However, Windows and other Linux operating systems treat the value as a single domain, which results in unexpected behavior. If your DHCP options set is associated with a VPC that has instances with multiple operating systems, specify only one domain name.    ntp-servers - The IP addresses of up to four Network Time Protocol (NTP) servers.    netbios-name-servers - The IP addresses of up to four NetBIOS name servers.    netbios-node-type - The NetBIOS node type (1, 2, 4, or 8). We recommend that you specify 2 (broadcast and multicast are not currently supported). For more information about these node types, see RFC 2132.   Your VPC automatically starts out with a set of DHCP options that includes only a DNS server that we provide (AmazonProvidedDNS). If you create a set of options, and if your VPC has an internet gateway, make sure to set the domain-name-servers option either to AmazonProvidedDNS or to a domain name server of your choice. For more information, see DHCP options sets in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createDhcpOptions(): Request[CreateDhcpOptionsResult, AWSError] = js.native
+  def createDhcpOptions(callback: js.Function2[/* err */ AWSError, /* data */ CreateDhcpOptionsResult, Unit]): Request[CreateDhcpOptionsResult, AWSError] = js.native
+  /**
+    * Creates a set of DHCP options for your VPC. After creating the set, you must associate it with the VPC, causing all existing and new instances that you launch in the VPC to use this set of DHCP options. The following are the individual DHCP options you can specify. For more information about the options, see RFC 2132.    domain-name-servers - The IP addresses of up to four domain name servers, or AmazonProvidedDNS. The default DHCP option set specifies AmazonProvidedDNS. If specifying more than one domain name server, specify the IP addresses in a single parameter, separated by commas. To have your instance receive a custom DNS hostname as specified in domain-name, you must set domain-name-servers to a custom DNS server.    domain-name - If you're using AmazonProvidedDNS in us-east-1, specify ec2.internal. If you're using AmazonProvidedDNS in another Region, specify region.compute.internal (for example, ap-northeast-1.compute.internal). Otherwise, specify a domain name (for example, ExampleCompany.com). This value is used to complete unqualified DNS hostnames. Important: Some Linux operating systems accept multiple domain names separated by spaces. However, Windows and other Linux operating systems treat the value as a single domain, which results in unexpected behavior. If your DHCP options set is associated with a VPC that has instances with multiple operating systems, specify only one domain name.    ntp-servers - The IP addresses of up to four Network Time Protocol (NTP) servers.    netbios-name-servers - The IP addresses of up to four NetBIOS name servers.    netbios-node-type - The NetBIOS node type (1, 2, 4, or 8). We recommend that you specify 2 (broadcast and multicast are not currently supported). For more information about these node types, see RFC 2132.   Your VPC automatically starts out with a set of DHCP options that includes only a DNS server that we provide (AmazonProvidedDNS). If you create a set of options, and if your VPC has an internet gateway, make sure to set the domain-name-servers option either to AmazonProvidedDNS or to a domain name server of your choice. For more information, see DHCP options sets in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createDhcpOptions(params: CreateDhcpOptionsRequest): Request[CreateDhcpOptionsResult, AWSError] = js.native
+  def createDhcpOptions(
+    params: CreateDhcpOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateDhcpOptionsResult, Unit]
+  ): Request[CreateDhcpOptionsResult, AWSError] = js.native
+  
+  /**
+    * [IPv6 only] Creates an egress-only internet gateway for your VPC. An egress-only internet gateway is used to enable outbound communication over IPv6 from instances in your VPC to the internet, and prevents hosts outside of your VPC from initiating an IPv6 connection with your instance.
+    */
+  def createEgressOnlyInternetGateway(): Request[CreateEgressOnlyInternetGatewayResult, AWSError] = js.native
+  def createEgressOnlyInternetGateway(callback: js.Function2[/* err */ AWSError, /* data */ CreateEgressOnlyInternetGatewayResult, Unit]): Request[CreateEgressOnlyInternetGatewayResult, AWSError] = js.native
+  /**
+    * [IPv6 only] Creates an egress-only internet gateway for your VPC. An egress-only internet gateway is used to enable outbound communication over IPv6 from instances in your VPC to the internet, and prevents hosts outside of your VPC from initiating an IPv6 connection with your instance.
+    */
+  def createEgressOnlyInternetGateway(params: CreateEgressOnlyInternetGatewayRequest): Request[CreateEgressOnlyInternetGatewayResult, AWSError] = js.native
+  def createEgressOnlyInternetGateway(
+    params: CreateEgressOnlyInternetGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateEgressOnlyInternetGatewayResult, Unit]
+  ): Request[CreateEgressOnlyInternetGatewayResult, AWSError] = js.native
+  
+  /**
+    * Launches an EC2 Fleet. You can create a single EC2 Fleet that includes multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet. For more information, see EC2 Fleet in the Amazon EC2 User Guide.
+    */
+  def createFleet(): Request[CreateFleetResult, AWSError] = js.native
+  def createFleet(callback: js.Function2[/* err */ AWSError, /* data */ CreateFleetResult, Unit]): Request[CreateFleetResult, AWSError] = js.native
+  /**
+    * Launches an EC2 Fleet. You can create a single EC2 Fleet that includes multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet. For more information, see EC2 Fleet in the Amazon EC2 User Guide.
+    */
+  def createFleet(params: CreateFleetRequest): Request[CreateFleetResult, AWSError] = js.native
+  def createFleet(
+    params: CreateFleetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateFleetResult, Unit]
+  ): Request[CreateFleetResult, AWSError] = js.native
+  
+  /**
+    * Creates one or more flow logs to capture information about IP traffic for a specific network interface, subnet, or VPC.  Flow log data for a monitored network interface is recorded as flow log records, which are log events consisting of fields that describe the traffic flow. For more information, see Flow log records in the Amazon Virtual Private Cloud User Guide. When publishing to CloudWatch Logs, flow log records are published to a log group, and each network interface has a unique log stream in the log group. When publishing to Amazon S3, flow log records for all of the monitored network interfaces are published to a single log file object that is stored in the specified bucket. For more information, see VPC Flow Logs in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createFlowLogs(): Request[CreateFlowLogsResult, AWSError] = js.native
+  def createFlowLogs(callback: js.Function2[/* err */ AWSError, /* data */ CreateFlowLogsResult, Unit]): Request[CreateFlowLogsResult, AWSError] = js.native
+  /**
+    * Creates one or more flow logs to capture information about IP traffic for a specific network interface, subnet, or VPC.  Flow log data for a monitored network interface is recorded as flow log records, which are log events consisting of fields that describe the traffic flow. For more information, see Flow log records in the Amazon Virtual Private Cloud User Guide. When publishing to CloudWatch Logs, flow log records are published to a log group, and each network interface has a unique log stream in the log group. When publishing to Amazon S3, flow log records for all of the monitored network interfaces are published to a single log file object that is stored in the specified bucket. For more information, see VPC Flow Logs in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createFlowLogs(params: CreateFlowLogsRequest): Request[CreateFlowLogsResult, AWSError] = js.native
+  def createFlowLogs(
+    params: CreateFlowLogsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateFlowLogsResult, Unit]
+  ): Request[CreateFlowLogsResult, AWSError] = js.native
+  
+  /**
+    * Creates an Amazon FPGA Image (AFI) from the specified design checkpoint (DCP). The create operation is asynchronous. To verify that the AFI is ready for use, check the output logs. An AFI contains the FPGA bitstream that is ready to download to an FPGA. You can securely deploy an AFI on multiple FPGA-accelerated instances. For more information, see the Amazon Web Services FPGA Hardware Development Kit.
+    */
+  def createFpgaImage(): Request[CreateFpgaImageResult, AWSError] = js.native
+  def createFpgaImage(callback: js.Function2[/* err */ AWSError, /* data */ CreateFpgaImageResult, Unit]): Request[CreateFpgaImageResult, AWSError] = js.native
+  /**
+    * Creates an Amazon FPGA Image (AFI) from the specified design checkpoint (DCP). The create operation is asynchronous. To verify that the AFI is ready for use, check the output logs. An AFI contains the FPGA bitstream that is ready to download to an FPGA. You can securely deploy an AFI on multiple FPGA-accelerated instances. For more information, see the Amazon Web Services FPGA Hardware Development Kit.
+    */
+  def createFpgaImage(params: CreateFpgaImageRequest): Request[CreateFpgaImageResult, AWSError] = js.native
+  def createFpgaImage(
+    params: CreateFpgaImageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateFpgaImageResult, Unit]
+  ): Request[CreateFpgaImageResult, AWSError] = js.native
+  
+  /**
+    * Creates an Amazon EBS-backed AMI from an Amazon EBS-backed instance that is either running or stopped. By default, when Amazon EC2 creates the new AMI, it reboots the instance so that it can take snapshots of the attached volumes while data is at rest, in order to ensure a consistent state. You can set the NoReboot parameter to true in the API request, or use the --no-reboot option in the CLI to prevent Amazon EC2 from shutting down and rebooting the instance.  If you choose to bypass the shutdown and reboot process by setting the NoReboot parameter to true in the API request, or by using the --no-reboot option in the CLI, we can't guarantee the file system integrity of the created image.  If you customized your instance with instance store volumes or Amazon EBS volumes in addition to the root device volume, the new AMI contains block device mapping information for those volumes. When you launch an instance from this new AMI, the instance automatically launches with those additional volumes. For more information, see Creating Amazon EBS-Backed Linux AMIs in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createImage(): Request[CreateImageResult, AWSError] = js.native
+  def createImage(callback: js.Function2[/* err */ AWSError, /* data */ CreateImageResult, Unit]): Request[CreateImageResult, AWSError] = js.native
+  /**
+    * Creates an Amazon EBS-backed AMI from an Amazon EBS-backed instance that is either running or stopped. By default, when Amazon EC2 creates the new AMI, it reboots the instance so that it can take snapshots of the attached volumes while data is at rest, in order to ensure a consistent state. You can set the NoReboot parameter to true in the API request, or use the --no-reboot option in the CLI to prevent Amazon EC2 from shutting down and rebooting the instance.  If you choose to bypass the shutdown and reboot process by setting the NoReboot parameter to true in the API request, or by using the --no-reboot option in the CLI, we can't guarantee the file system integrity of the created image.  If you customized your instance with instance store volumes or Amazon EBS volumes in addition to the root device volume, the new AMI contains block device mapping information for those volumes. When you launch an instance from this new AMI, the instance automatically launches with those additional volumes. For more information, see Creating Amazon EBS-Backed Linux AMIs in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createImage(params: CreateImageRequest): Request[CreateImageResult, AWSError] = js.native
+  def createImage(
+    params: CreateImageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateImageResult, Unit]
+  ): Request[CreateImageResult, AWSError] = js.native
+  
+  /**
+    * Creates an event window in which scheduled events for the associated Amazon EC2 instances can run. You can define either a set of time ranges or a cron expression when creating the event window, but not both. All event window times are in UTC. You can create up to 200 event windows per Amazon Web Services Region. When you create the event window, targets (instance IDs, Dedicated Host IDs, or tags) are not yet associated with it. To ensure that the event window can be used, you must associate one or more targets with it by using the AssociateInstanceEventWindow API.  Event windows are applicable only for scheduled events that stop, reboot, or terminate instances. Event windows are not applicable for:   Expedited scheduled events and network maintenance events.    Unscheduled maintenance such as AutoRecovery and unplanned reboots.    For more information, see Define event windows for scheduled events in the Amazon EC2 User Guide.
+    */
+  def createInstanceEventWindow(): Request[CreateInstanceEventWindowResult, AWSError] = js.native
+  def createInstanceEventWindow(callback: js.Function2[/* err */ AWSError, /* data */ CreateInstanceEventWindowResult, Unit]): Request[CreateInstanceEventWindowResult, AWSError] = js.native
+  /**
+    * Creates an event window in which scheduled events for the associated Amazon EC2 instances can run. You can define either a set of time ranges or a cron expression when creating the event window, but not both. All event window times are in UTC. You can create up to 200 event windows per Amazon Web Services Region. When you create the event window, targets (instance IDs, Dedicated Host IDs, or tags) are not yet associated with it. To ensure that the event window can be used, you must associate one or more targets with it by using the AssociateInstanceEventWindow API.  Event windows are applicable only for scheduled events that stop, reboot, or terminate instances. Event windows are not applicable for:   Expedited scheduled events and network maintenance events.    Unscheduled maintenance such as AutoRecovery and unplanned reboots.    For more information, see Define event windows for scheduled events in the Amazon EC2 User Guide.
+    */
+  def createInstanceEventWindow(params: CreateInstanceEventWindowRequest): Request[CreateInstanceEventWindowResult, AWSError] = js.native
+  def createInstanceEventWindow(
+    params: CreateInstanceEventWindowRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateInstanceEventWindowResult, Unit]
+  ): Request[CreateInstanceEventWindowResult, AWSError] = js.native
+  
+  /**
+    * Exports a running or stopped instance to an Amazon S3 bucket. For information about the supported operating systems, image formats, and known limitations for the types of instances you can export, see Exporting an instance as a VM Using VM Import/Export in the VM Import/Export User Guide.
+    */
+  def createInstanceExportTask(): Request[CreateInstanceExportTaskResult, AWSError] = js.native
+  def createInstanceExportTask(callback: js.Function2[/* err */ AWSError, /* data */ CreateInstanceExportTaskResult, Unit]): Request[CreateInstanceExportTaskResult, AWSError] = js.native
+  /**
+    * Exports a running or stopped instance to an Amazon S3 bucket. For information about the supported operating systems, image formats, and known limitations for the types of instances you can export, see Exporting an instance as a VM Using VM Import/Export in the VM Import/Export User Guide.
+    */
+  def createInstanceExportTask(params: CreateInstanceExportTaskRequest): Request[CreateInstanceExportTaskResult, AWSError] = js.native
+  def createInstanceExportTask(
+    params: CreateInstanceExportTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateInstanceExportTaskResult, Unit]
+  ): Request[CreateInstanceExportTaskResult, AWSError] = js.native
+  
+  /**
+    * Creates an internet gateway for use with a VPC. After creating the internet gateway, you attach it to a VPC using AttachInternetGateway. For more information about your VPC and internet gateway, see the Amazon Virtual Private Cloud User Guide.
+    */
+  def createInternetGateway(): Request[CreateInternetGatewayResult, AWSError] = js.native
+  def createInternetGateway(callback: js.Function2[/* err */ AWSError, /* data */ CreateInternetGatewayResult, Unit]): Request[CreateInternetGatewayResult, AWSError] = js.native
+  /**
+    * Creates an internet gateway for use with a VPC. After creating the internet gateway, you attach it to a VPC using AttachInternetGateway. For more information about your VPC and internet gateway, see the Amazon Virtual Private Cloud User Guide.
+    */
+  def createInternetGateway(params: CreateInternetGatewayRequest): Request[CreateInternetGatewayResult, AWSError] = js.native
+  def createInternetGateway(
+    params: CreateInternetGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateInternetGatewayResult, Unit]
+  ): Request[CreateInternetGatewayResult, AWSError] = js.native
+  
+  /**
+    * Create an IPAM. Amazon VPC IP Address Manager (IPAM) is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across Amazon Web Services Regions and accounts throughout your Amazon Web Services Organization. For more information, see Create an IPAM in the Amazon VPC IPAM User Guide. 
+    */
+  def createIpam(): Request[CreateIpamResult, AWSError] = js.native
+  def createIpam(callback: js.Function2[/* err */ AWSError, /* data */ CreateIpamResult, Unit]): Request[CreateIpamResult, AWSError] = js.native
+  /**
+    * Create an IPAM. Amazon VPC IP Address Manager (IPAM) is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across Amazon Web Services Regions and accounts throughout your Amazon Web Services Organization. For more information, see Create an IPAM in the Amazon VPC IPAM User Guide. 
+    */
+  def createIpam(params: CreateIpamRequest): Request[CreateIpamResult, AWSError] = js.native
+  def createIpam(
+    params: CreateIpamRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateIpamResult, Unit]
+  ): Request[CreateIpamResult, AWSError] = js.native
+  
+  /**
+    * Create an IP address pool for Amazon VPC IP Address Manager (IPAM). In IPAM, a pool is a collection of contiguous IP addresses CIDRs. Pools enable you to organize your IP addresses according to your routing and security needs. For example, if you have separate routing and security needs for development and production applications, you can create a pool for each. For more information, see Create a top-level pool in the Amazon VPC IPAM User Guide. 
+    */
+  def createIpamPool(): Request[CreateIpamPoolResult, AWSError] = js.native
+  def createIpamPool(callback: js.Function2[/* err */ AWSError, /* data */ CreateIpamPoolResult, Unit]): Request[CreateIpamPoolResult, AWSError] = js.native
+  /**
+    * Create an IP address pool for Amazon VPC IP Address Manager (IPAM). In IPAM, a pool is a collection of contiguous IP addresses CIDRs. Pools enable you to organize your IP addresses according to your routing and security needs. For example, if you have separate routing and security needs for development and production applications, you can create a pool for each. For more information, see Create a top-level pool in the Amazon VPC IPAM User Guide. 
+    */
+  def createIpamPool(params: CreateIpamPoolRequest): Request[CreateIpamPoolResult, AWSError] = js.native
+  def createIpamPool(
+    params: CreateIpamPoolRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateIpamPoolResult, Unit]
+  ): Request[CreateIpamPoolResult, AWSError] = js.native
+  
+  /**
+    * Create an IPAM scope. In IPAM, a scope is the highest-level container within IPAM. An IPAM contains two default scopes. Each scope represents the IP space for a single network. The private scope is intended for all private IP address space. The public scope is intended for all public IP address space. Scopes enable you to reuse IP addresses across multiple unconnected networks without causing IP address overlap or conflict. For more information, see Add a scope in the Amazon VPC IPAM User Guide.
+    */
+  def createIpamScope(): Request[CreateIpamScopeResult, AWSError] = js.native
+  def createIpamScope(callback: js.Function2[/* err */ AWSError, /* data */ CreateIpamScopeResult, Unit]): Request[CreateIpamScopeResult, AWSError] = js.native
+  /**
+    * Create an IPAM scope. In IPAM, a scope is the highest-level container within IPAM. An IPAM contains two default scopes. Each scope represents the IP space for a single network. The private scope is intended for all private IP address space. The public scope is intended for all public IP address space. Scopes enable you to reuse IP addresses across multiple unconnected networks without causing IP address overlap or conflict. For more information, see Add a scope in the Amazon VPC IPAM User Guide.
+    */
+  def createIpamScope(params: CreateIpamScopeRequest): Request[CreateIpamScopeResult, AWSError] = js.native
+  def createIpamScope(
+    params: CreateIpamScopeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateIpamScopeResult, Unit]
+  ): Request[CreateIpamScopeResult, AWSError] = js.native
+  
+  /**
+    * Creates an ED25519 or 2048-bit RSA key pair with the specified name and in the specified PEM or PPK format. Amazon EC2 stores the public key and displays the private key for you to save to a file. The private key is returned as an unencrypted PEM encoded PKCS#1 private key or an unencrypted PPK formatted private key for use with PuTTY. If a key with the specified name already exists, Amazon EC2 returns an error. The key pair returned to you is available only in the Amazon Web Services Region in which you create it. If you prefer, you can create your own key pair using a third-party tool and upload it to any Region using ImportKeyPair. You can have up to 5,000 key pairs per Amazon Web Services Region. For more information, see Amazon EC2 key pairs in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createKeyPair(): Request[KeyPair, AWSError] = js.native
+  def createKeyPair(callback: js.Function2[/* err */ AWSError, /* data */ KeyPair, Unit]): Request[KeyPair, AWSError] = js.native
+  /**
+    * Creates an ED25519 or 2048-bit RSA key pair with the specified name and in the specified PEM or PPK format. Amazon EC2 stores the public key and displays the private key for you to save to a file. The private key is returned as an unencrypted PEM encoded PKCS#1 private key or an unencrypted PPK formatted private key for use with PuTTY. If a key with the specified name already exists, Amazon EC2 returns an error. The key pair returned to you is available only in the Amazon Web Services Region in which you create it. If you prefer, you can create your own key pair using a third-party tool and upload it to any Region using ImportKeyPair. You can have up to 5,000 key pairs per Amazon Web Services Region. For more information, see Amazon EC2 key pairs in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createKeyPair(params: CreateKeyPairRequest): Request[KeyPair, AWSError] = js.native
+  def createKeyPair(params: CreateKeyPairRequest, callback: js.Function2[/* err */ AWSError, /* data */ KeyPair, Unit]): Request[KeyPair, AWSError] = js.native
+  
+  /**
+    * Creates a launch template. A launch template contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify a launch template instead of providing the launch parameters in the request. For more information, see Launch an instance from a launch template in the Amazon Elastic Compute Cloud User Guide. If you want to clone an existing launch template as the basis for creating a new launch template, you can use the Amazon EC2 console. The API, SDKs, and CLI do not support cloning a template. For more information, see Create a launch template from an existing launch template in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createLaunchTemplate(): Request[CreateLaunchTemplateResult, AWSError] = js.native
+  def createLaunchTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreateLaunchTemplateResult, Unit]): Request[CreateLaunchTemplateResult, AWSError] = js.native
+  /**
+    * Creates a launch template. A launch template contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify a launch template instead of providing the launch parameters in the request. For more information, see Launch an instance from a launch template in the Amazon Elastic Compute Cloud User Guide. If you want to clone an existing launch template as the basis for creating a new launch template, you can use the Amazon EC2 console. The API, SDKs, and CLI do not support cloning a template. For more information, see Create a launch template from an existing launch template in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createLaunchTemplate(params: CreateLaunchTemplateRequest): Request[CreateLaunchTemplateResult, AWSError] = js.native
+  def createLaunchTemplate(
+    params: CreateLaunchTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLaunchTemplateResult, Unit]
+  ): Request[CreateLaunchTemplateResult, AWSError] = js.native
+  
+  /**
+    * Creates a new version of a launch template. You can specify an existing version of launch template from which to base the new version. Launch template versions are numbered in the order in which they are created. You cannot specify, change, or replace the numbering of launch template versions. Launch templates are immutable; after you create a launch template, you can't modify it. Instead, you can create a new version of the launch template that includes any changes you require. For more information, see Modify a launch template (manage launch template versions) in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createLaunchTemplateVersion(): Request[CreateLaunchTemplateVersionResult, AWSError] = js.native
+  def createLaunchTemplateVersion(callback: js.Function2[/* err */ AWSError, /* data */ CreateLaunchTemplateVersionResult, Unit]): Request[CreateLaunchTemplateVersionResult, AWSError] = js.native
+  /**
+    * Creates a new version of a launch template. You can specify an existing version of launch template from which to base the new version. Launch template versions are numbered in the order in which they are created. You cannot specify, change, or replace the numbering of launch template versions. Launch templates are immutable; after you create a launch template, you can't modify it. Instead, you can create a new version of the launch template that includes any changes you require. For more information, see Modify a launch template (manage launch template versions) in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createLaunchTemplateVersion(params: CreateLaunchTemplateVersionRequest): Request[CreateLaunchTemplateVersionResult, AWSError] = js.native
+  def createLaunchTemplateVersion(
+    params: CreateLaunchTemplateVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLaunchTemplateVersionResult, Unit]
+  ): Request[CreateLaunchTemplateVersionResult, AWSError] = js.native
+  
+  /**
+    * Creates a static route for the specified local gateway route table. You must specify one of the following targets:     LocalGatewayVirtualInterfaceGroupId     NetworkInterfaceId   
+    */
+  def createLocalGatewayRoute(): Request[CreateLocalGatewayRouteResult, AWSError] = js.native
+  def createLocalGatewayRoute(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocalGatewayRouteResult, Unit]): Request[CreateLocalGatewayRouteResult, AWSError] = js.native
+  /**
+    * Creates a static route for the specified local gateway route table. You must specify one of the following targets:     LocalGatewayVirtualInterfaceGroupId     NetworkInterfaceId   
+    */
+  def createLocalGatewayRoute(params: CreateLocalGatewayRouteRequest): Request[CreateLocalGatewayRouteResult, AWSError] = js.native
+  def createLocalGatewayRoute(
+    params: CreateLocalGatewayRouteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLocalGatewayRouteResult, Unit]
+  ): Request[CreateLocalGatewayRouteResult, AWSError] = js.native
+  
+  /**
+    *  Creates a local gateway route table. 
+    */
+  def createLocalGatewayRouteTable(): Request[CreateLocalGatewayRouteTableResult, AWSError] = js.native
+  def createLocalGatewayRouteTable(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocalGatewayRouteTableResult, Unit]): Request[CreateLocalGatewayRouteTableResult, AWSError] = js.native
+  /**
+    *  Creates a local gateway route table. 
+    */
+  def createLocalGatewayRouteTable(params: CreateLocalGatewayRouteTableRequest): Request[CreateLocalGatewayRouteTableResult, AWSError] = js.native
+  def createLocalGatewayRouteTable(
+    params: CreateLocalGatewayRouteTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLocalGatewayRouteTableResult, Unit]
+  ): Request[CreateLocalGatewayRouteTableResult, AWSError] = js.native
+  
+  /**
+    *  Creates a local gateway route table virtual interface group association. 
+    */
+  def createLocalGatewayRouteTableVirtualInterfaceGroupAssociation(): Request[CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult, AWSError] = js.native
+  def createLocalGatewayRouteTableVirtualInterfaceGroupAssociation(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult, 
+      Unit
+    ]
+  ): Request[CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult, AWSError] = js.native
+  /**
+    *  Creates a local gateway route table virtual interface group association. 
+    */
+  def createLocalGatewayRouteTableVirtualInterfaceGroupAssociation(params: CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequest): Request[CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult, AWSError] = js.native
+  def createLocalGatewayRouteTableVirtualInterfaceGroupAssociation(
+    params: CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult, 
+      Unit
+    ]
+  ): Request[CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult, AWSError] = js.native
+  
+  /**
+    * Associates the specified VPC with the specified local gateway route table.
+    */
+  def createLocalGatewayRouteTableVpcAssociation(): Request[CreateLocalGatewayRouteTableVpcAssociationResult, AWSError] = js.native
+  def createLocalGatewayRouteTableVpcAssociation(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ CreateLocalGatewayRouteTableVpcAssociationResult, 
+      Unit
+    ]
+  ): Request[CreateLocalGatewayRouteTableVpcAssociationResult, AWSError] = js.native
+  /**
+    * Associates the specified VPC with the specified local gateway route table.
+    */
+  def createLocalGatewayRouteTableVpcAssociation(params: CreateLocalGatewayRouteTableVpcAssociationRequest): Request[CreateLocalGatewayRouteTableVpcAssociationResult, AWSError] = js.native
+  def createLocalGatewayRouteTableVpcAssociation(
+    params: CreateLocalGatewayRouteTableVpcAssociationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ CreateLocalGatewayRouteTableVpcAssociationResult, 
+      Unit
+    ]
+  ): Request[CreateLocalGatewayRouteTableVpcAssociationResult, AWSError] = js.native
+  
+  /**
+    * Creates a managed prefix list. You can specify one or more entries for the prefix list. Each entry consists of a CIDR block and an optional description.
+    */
+  def createManagedPrefixList(): Request[CreateManagedPrefixListResult, AWSError] = js.native
+  def createManagedPrefixList(callback: js.Function2[/* err */ AWSError, /* data */ CreateManagedPrefixListResult, Unit]): Request[CreateManagedPrefixListResult, AWSError] = js.native
+  /**
+    * Creates a managed prefix list. You can specify one or more entries for the prefix list. Each entry consists of a CIDR block and an optional description.
+    */
+  def createManagedPrefixList(params: CreateManagedPrefixListRequest): Request[CreateManagedPrefixListResult, AWSError] = js.native
+  def createManagedPrefixList(
+    params: CreateManagedPrefixListRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateManagedPrefixListResult, Unit]
+  ): Request[CreateManagedPrefixListResult, AWSError] = js.native
+  
+  /**
+    * Creates a NAT gateway in the specified subnet. This action creates a network interface in the specified subnet with a private IP address from the IP address range of the subnet. You can create either a public NAT gateway or a private NAT gateway. With a public NAT gateway, internet-bound traffic from a private subnet can be routed to the NAT gateway, so that instances in a private subnet can connect to the internet. With a private NAT gateway, private communication is routed across VPCs and on-premises networks through a transit gateway or virtual private gateway. Common use cases include running large workloads behind a small pool of allowlisted IPv4 addresses, preserving private IPv4 addresses, and communicating between overlapping networks. For more information, see NAT gateways in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createNatGateway(): Request[CreateNatGatewayResult, AWSError] = js.native
+  def createNatGateway(callback: js.Function2[/* err */ AWSError, /* data */ CreateNatGatewayResult, Unit]): Request[CreateNatGatewayResult, AWSError] = js.native
+  /**
+    * Creates a NAT gateway in the specified subnet. This action creates a network interface in the specified subnet with a private IP address from the IP address range of the subnet. You can create either a public NAT gateway or a private NAT gateway. With a public NAT gateway, internet-bound traffic from a private subnet can be routed to the NAT gateway, so that instances in a private subnet can connect to the internet. With a private NAT gateway, private communication is routed across VPCs and on-premises networks through a transit gateway or virtual private gateway. Common use cases include running large workloads behind a small pool of allowlisted IPv4 addresses, preserving private IPv4 addresses, and communicating between overlapping networks. For more information, see NAT gateways in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createNatGateway(params: CreateNatGatewayRequest): Request[CreateNatGatewayResult, AWSError] = js.native
+  def createNatGateway(
+    params: CreateNatGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateNatGatewayResult, Unit]
+  ): Request[CreateNatGatewayResult, AWSError] = js.native
+  
+  /**
+    * Creates a network ACL in a VPC. Network ACLs provide an optional layer of security (in addition to security groups) for the instances in your VPC. For more information, see Network ACLs in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createNetworkAcl(): Request[CreateNetworkAclResult, AWSError] = js.native
+  def createNetworkAcl(callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkAclResult, Unit]): Request[CreateNetworkAclResult, AWSError] = js.native
+  /**
+    * Creates a network ACL in a VPC. Network ACLs provide an optional layer of security (in addition to security groups) for the instances in your VPC. For more information, see Network ACLs in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createNetworkAcl(params: CreateNetworkAclRequest): Request[CreateNetworkAclResult, AWSError] = js.native
+  def createNetworkAcl(
+    params: CreateNetworkAclRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkAclResult, Unit]
+  ): Request[CreateNetworkAclResult, AWSError] = js.native
+  
+  /**
+    * Creates an entry (a rule) in a network ACL with the specified rule number. Each network ACL has a set of numbered ingress rules and a separate set of numbered egress rules. When determining whether a packet should be allowed in or out of a subnet associated with the ACL, we process the entries in the ACL according to the rule numbers, in ascending order. Each network ACL has a set of ingress rules and a separate set of egress rules. We recommend that you leave room between the rule numbers (for example, 100, 110, 120, ...), and not number them one right after the other (for example, 101, 102, 103, ...). This makes it easier to add a rule between existing ones without having to renumber the rules. After you add an entry, you can't modify it; you must either replace it, or create an entry and delete the old one. For more information about network ACLs, see Network ACLs in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createNetworkAclEntry(): Request[js.Object, AWSError] = js.native
+  def createNetworkAclEntry(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Creates an entry (a rule) in a network ACL with the specified rule number. Each network ACL has a set of numbered ingress rules and a separate set of numbered egress rules. When determining whether a packet should be allowed in or out of a subnet associated with the ACL, we process the entries in the ACL according to the rule numbers, in ascending order. Each network ACL has a set of ingress rules and a separate set of egress rules. We recommend that you leave room between the rule numbers (for example, 100, 110, 120, ...), and not number them one right after the other (for example, 101, 102, 103, ...). This makes it easier to add a rule between existing ones without having to renumber the rules. After you add an entry, you can't modify it; you must either replace it, or create an entry and delete the old one. For more information about network ACLs, see Network ACLs in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createNetworkAclEntry(params: CreateNetworkAclEntryRequest): Request[js.Object, AWSError] = js.native
+  def createNetworkAclEntry(
+    params: CreateNetworkAclEntryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Creates a Network Access Scope. Amazon Web Services Network Access Analyzer enables cloud networking and cloud operations teams to verify that their networks on Amazon Web Services conform to their network security and governance objectives. For more information, see the Amazon Web Services Network Access Analyzer Guide.
+    */
+  def createNetworkInsightsAccessScope(): Request[CreateNetworkInsightsAccessScopeResult, AWSError] = js.native
+  def createNetworkInsightsAccessScope(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkInsightsAccessScopeResult, Unit]
+  ): Request[CreateNetworkInsightsAccessScopeResult, AWSError] = js.native
+  /**
+    * Creates a Network Access Scope. Amazon Web Services Network Access Analyzer enables cloud networking and cloud operations teams to verify that their networks on Amazon Web Services conform to their network security and governance objectives. For more information, see the Amazon Web Services Network Access Analyzer Guide.
+    */
+  def createNetworkInsightsAccessScope(params: CreateNetworkInsightsAccessScopeRequest): Request[CreateNetworkInsightsAccessScopeResult, AWSError] = js.native
+  def createNetworkInsightsAccessScope(
+    params: CreateNetworkInsightsAccessScopeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkInsightsAccessScopeResult, Unit]
+  ): Request[CreateNetworkInsightsAccessScopeResult, AWSError] = js.native
+  
+  /**
+    * Creates a path to analyze for reachability. Reachability Analyzer enables you to analyze and debug network reachability between two resources in your virtual private cloud (VPC). For more information, see What is Reachability Analyzer.
+    */
+  def createNetworkInsightsPath(): Request[CreateNetworkInsightsPathResult, AWSError] = js.native
+  def createNetworkInsightsPath(callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkInsightsPathResult, Unit]): Request[CreateNetworkInsightsPathResult, AWSError] = js.native
+  /**
+    * Creates a path to analyze for reachability. Reachability Analyzer enables you to analyze and debug network reachability between two resources in your virtual private cloud (VPC). For more information, see What is Reachability Analyzer.
+    */
+  def createNetworkInsightsPath(params: CreateNetworkInsightsPathRequest): Request[CreateNetworkInsightsPathResult, AWSError] = js.native
+  def createNetworkInsightsPath(
+    params: CreateNetworkInsightsPathRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkInsightsPathResult, Unit]
+  ): Request[CreateNetworkInsightsPathResult, AWSError] = js.native
+  
+  /**
+    * Creates a network interface in the specified subnet. The number of IP addresses you can assign to a network interface varies by instance type. For more information, see IP Addresses Per ENI Per Instance Type in the Amazon Virtual Private Cloud User Guide. For more information about network interfaces, see Elastic network interfaces in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createNetworkInterface(): Request[CreateNetworkInterfaceResult, AWSError] = js.native
+  def createNetworkInterface(callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkInterfaceResult, Unit]): Request[CreateNetworkInterfaceResult, AWSError] = js.native
+  /**
+    * Creates a network interface in the specified subnet. The number of IP addresses you can assign to a network interface varies by instance type. For more information, see IP Addresses Per ENI Per Instance Type in the Amazon Virtual Private Cloud User Guide. For more information about network interfaces, see Elastic network interfaces in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createNetworkInterface(params: CreateNetworkInterfaceRequest): Request[CreateNetworkInterfaceResult, AWSError] = js.native
+  def createNetworkInterface(
+    params: CreateNetworkInterfaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkInterfaceResult, Unit]
+  ): Request[CreateNetworkInterfaceResult, AWSError] = js.native
+  
+  /**
+    * Grants an Amazon Web Services-authorized account permission to attach the specified network interface to an instance in their account. You can grant permission to a single Amazon Web Services account only, and only one account at a time.
+    */
+  def createNetworkInterfacePermission(): Request[CreateNetworkInterfacePermissionResult, AWSError] = js.native
+  def createNetworkInterfacePermission(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkInterfacePermissionResult, Unit]
+  ): Request[CreateNetworkInterfacePermissionResult, AWSError] = js.native
+  /**
+    * Grants an Amazon Web Services-authorized account permission to attach the specified network interface to an instance in their account. You can grant permission to a single Amazon Web Services account only, and only one account at a time.
+    */
+  def createNetworkInterfacePermission(params: CreateNetworkInterfacePermissionRequest): Request[CreateNetworkInterfacePermissionResult, AWSError] = js.native
+  def createNetworkInterfacePermission(
+    params: CreateNetworkInterfacePermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkInterfacePermissionResult, Unit]
+  ): Request[CreateNetworkInterfacePermissionResult, AWSError] = js.native
+  
+  /**
+    * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. A partition placement group places groups of instances in different partitions, where instances in one partition do not share the same hardware with instances in another partition. For more information, see Placement groups in the Amazon EC2 User Guide.
+    */
+  def createPlacementGroup(): Request[CreatePlacementGroupResult, AWSError] = js.native
+  def createPlacementGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreatePlacementGroupResult, Unit]): Request[CreatePlacementGroupResult, AWSError] = js.native
+  /**
+    * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. A partition placement group places groups of instances in different partitions, where instances in one partition do not share the same hardware with instances in another partition. For more information, see Placement groups in the Amazon EC2 User Guide.
+    */
+  def createPlacementGroup(params: CreatePlacementGroupRequest): Request[CreatePlacementGroupResult, AWSError] = js.native
+  def createPlacementGroup(
+    params: CreatePlacementGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreatePlacementGroupResult, Unit]
+  ): Request[CreatePlacementGroupResult, AWSError] = js.native
+  
+  /**
+    * Creates a public IPv4 address pool. A public IPv4 pool is an EC2 IP address pool required for the public IPv4 CIDRs that you own and bring to Amazon Web Services to manage with IPAM. IPv6 addresses you bring to Amazon Web Services, however, use IPAM pools only. To monitor the status of pool creation, use DescribePublicIpv4Pools.
+    */
+  def createPublicIpv4Pool(): Request[CreatePublicIpv4PoolResult, AWSError] = js.native
+  def createPublicIpv4Pool(callback: js.Function2[/* err */ AWSError, /* data */ CreatePublicIpv4PoolResult, Unit]): Request[CreatePublicIpv4PoolResult, AWSError] = js.native
+  /**
+    * Creates a public IPv4 address pool. A public IPv4 pool is an EC2 IP address pool required for the public IPv4 CIDRs that you own and bring to Amazon Web Services to manage with IPAM. IPv6 addresses you bring to Amazon Web Services, however, use IPAM pools only. To monitor the status of pool creation, use DescribePublicIpv4Pools.
+    */
+  def createPublicIpv4Pool(params: CreatePublicIpv4PoolRequest): Request[CreatePublicIpv4PoolResult, AWSError] = js.native
+  def createPublicIpv4Pool(
+    params: CreatePublicIpv4PoolRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreatePublicIpv4PoolResult, Unit]
+  ): Request[CreatePublicIpv4PoolResult, AWSError] = js.native
+  
+  /**
+    * Creates a root volume replacement task for an Amazon EC2 instance. The root volume can either be restored to its initial launch state, or it can be restored using a specific snapshot. For more information, see Replace a root volume in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createReplaceRootVolumeTask(): Request[CreateReplaceRootVolumeTaskResult, AWSError] = js.native
+  def createReplaceRootVolumeTask(callback: js.Function2[/* err */ AWSError, /* data */ CreateReplaceRootVolumeTaskResult, Unit]): Request[CreateReplaceRootVolumeTaskResult, AWSError] = js.native
+  /**
+    * Creates a root volume replacement task for an Amazon EC2 instance. The root volume can either be restored to its initial launch state, or it can be restored using a specific snapshot. For more information, see Replace a root volume in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createReplaceRootVolumeTask(params: CreateReplaceRootVolumeTaskRequest): Request[CreateReplaceRootVolumeTaskResult, AWSError] = js.native
+  def createReplaceRootVolumeTask(
+    params: CreateReplaceRootVolumeTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateReplaceRootVolumeTaskResult, Unit]
+  ): Request[CreateReplaceRootVolumeTaskResult, AWSError] = js.native
+  
+  /**
+    * Creates a listing for Amazon EC2 Standard Reserved Instances to be sold in the Reserved Instance Marketplace. You can submit one Standard Reserved Instance listing at a time. To get a list of your Standard Reserved Instances, you can use the DescribeReservedInstances operation.  Only Standard Reserved Instances can be sold in the Reserved Instance Marketplace. Convertible Reserved Instances cannot be sold.  The Reserved Instance Marketplace matches sellers who want to resell Standard Reserved Instance capacity that they no longer need with buyers who want to purchase additional capacity. Reserved Instances bought and sold through the Reserved Instance Marketplace work like any other Reserved Instances. To sell your Standard Reserved Instances, you must first register as a seller in the Reserved Instance Marketplace. After completing the registration process, you can create a Reserved Instance Marketplace listing of some or all of your Standard Reserved Instances, and specify the upfront price to receive for them. Your Standard Reserved Instance listings then become available for purchase. To view the details of your Standard Reserved Instance listing, you can use the DescribeReservedInstancesListings operation. For more information, see Reserved Instance Marketplace in the Amazon EC2 User Guide.
+    */
+  def createReservedInstancesListing(): Request[CreateReservedInstancesListingResult, AWSError] = js.native
+  def createReservedInstancesListing(callback: js.Function2[/* err */ AWSError, /* data */ CreateReservedInstancesListingResult, Unit]): Request[CreateReservedInstancesListingResult, AWSError] = js.native
+  /**
+    * Creates a listing for Amazon EC2 Standard Reserved Instances to be sold in the Reserved Instance Marketplace. You can submit one Standard Reserved Instance listing at a time. To get a list of your Standard Reserved Instances, you can use the DescribeReservedInstances operation.  Only Standard Reserved Instances can be sold in the Reserved Instance Marketplace. Convertible Reserved Instances cannot be sold.  The Reserved Instance Marketplace matches sellers who want to resell Standard Reserved Instance capacity that they no longer need with buyers who want to purchase additional capacity. Reserved Instances bought and sold through the Reserved Instance Marketplace work like any other Reserved Instances. To sell your Standard Reserved Instances, you must first register as a seller in the Reserved Instance Marketplace. After completing the registration process, you can create a Reserved Instance Marketplace listing of some or all of your Standard Reserved Instances, and specify the upfront price to receive for them. Your Standard Reserved Instance listings then become available for purchase. To view the details of your Standard Reserved Instance listing, you can use the DescribeReservedInstancesListings operation. For more information, see Reserved Instance Marketplace in the Amazon EC2 User Guide.
+    */
+  def createReservedInstancesListing(params: CreateReservedInstancesListingRequest): Request[CreateReservedInstancesListingResult, AWSError] = js.native
+  def createReservedInstancesListing(
+    params: CreateReservedInstancesListingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateReservedInstancesListingResult, Unit]
+  ): Request[CreateReservedInstancesListingResult, AWSError] = js.native
+  
+  /**
+    * Starts a task that restores an AMI from an Amazon S3 object that was previously created by using CreateStoreImageTask. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon Elastic Compute Cloud User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createRestoreImageTask(): Request[CreateRestoreImageTaskResult, AWSError] = js.native
+  def createRestoreImageTask(callback: js.Function2[/* err */ AWSError, /* data */ CreateRestoreImageTaskResult, Unit]): Request[CreateRestoreImageTaskResult, AWSError] = js.native
+  /**
+    * Starts a task that restores an AMI from an Amazon S3 object that was previously created by using CreateStoreImageTask. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon Elastic Compute Cloud User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createRestoreImageTask(params: CreateRestoreImageTaskRequest): Request[CreateRestoreImageTaskResult, AWSError] = js.native
+  def createRestoreImageTask(
+    params: CreateRestoreImageTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateRestoreImageTaskResult, Unit]
+  ): Request[CreateRestoreImageTaskResult, AWSError] = js.native
+  
+  /**
+    * Creates a route in a route table within a VPC. You must specify either a destination CIDR block or a prefix list ID. You must also specify exactly one of the resources from the parameter list. When determining how to route traffic, we use the route with the most specific match. For example, traffic is destined for the IPv4 address 192.0.2.3, and the route table includes the following two IPv4 routes:    192.0.2.0/24 (goes to some target A)    192.0.2.0/28 (goes to some target B)   Both routes apply to the traffic destined for 192.0.2.3. However, the second route in the list covers a smaller number of IP addresses and is therefore more specific, so we use that route to determine where to target the traffic. For more information about route tables, see Route tables in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createRoute(): Request[CreateRouteResult, AWSError] = js.native
+  def createRoute(callback: js.Function2[/* err */ AWSError, /* data */ CreateRouteResult, Unit]): Request[CreateRouteResult, AWSError] = js.native
+  /**
+    * Creates a route in a route table within a VPC. You must specify either a destination CIDR block or a prefix list ID. You must also specify exactly one of the resources from the parameter list. When determining how to route traffic, we use the route with the most specific match. For example, traffic is destined for the IPv4 address 192.0.2.3, and the route table includes the following two IPv4 routes:    192.0.2.0/24 (goes to some target A)    192.0.2.0/28 (goes to some target B)   Both routes apply to the traffic destined for 192.0.2.3. However, the second route in the list covers a smaller number of IP addresses and is therefore more specific, so we use that route to determine where to target the traffic. For more information about route tables, see Route tables in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createRoute(params: CreateRouteRequest): Request[CreateRouteResult, AWSError] = js.native
+  def createRoute(
+    params: CreateRouteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateRouteResult, Unit]
+  ): Request[CreateRouteResult, AWSError] = js.native
+  
+  /**
+    * Creates a route table for the specified VPC. After you create a route table, you can add routes and associate the table with a subnet. For more information, see Route tables in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createRouteTable(): Request[CreateRouteTableResult, AWSError] = js.native
+  def createRouteTable(callback: js.Function2[/* err */ AWSError, /* data */ CreateRouteTableResult, Unit]): Request[CreateRouteTableResult, AWSError] = js.native
+  /**
+    * Creates a route table for the specified VPC. After you create a route table, you can add routes and associate the table with a subnet. For more information, see Route tables in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createRouteTable(params: CreateRouteTableRequest): Request[CreateRouteTableResult, AWSError] = js.native
+  def createRouteTable(
+    params: CreateRouteTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateRouteTableResult, Unit]
+  ): Request[CreateRouteTableResult, AWSError] = js.native
+  
+  /**
+    * Creates a security group. A security group acts as a virtual firewall for your instance to control inbound and outbound traffic. For more information, see Amazon EC2 security groups in the Amazon Elastic Compute Cloud User Guide and Security groups for your VPC in the Amazon Virtual Private Cloud User Guide. When you create a security group, you specify a friendly name of your choice. You can have a security group for use in EC2-Classic with the same name as a security group for use in a VPC. However, you can't have two security groups for use in EC2-Classic with the same name or two security groups for use in a VPC with the same name. You have a default security group for use in EC2-Classic and a default security group for use in your VPC. If you don't specify a security group when you launch an instance, the instance is launched into the appropriate default security group. A default security group includes a default rule that grants instances unrestricted network access to each other. You can add or remove rules from your security groups using AuthorizeSecurityGroupIngress, AuthorizeSecurityGroupEgress, RevokeSecurityGroupIngress, and RevokeSecurityGroupEgress. For more information about VPC security group limits, see Amazon VPC Limits.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def createSecurityGroup(): Request[CreateSecurityGroupResult, AWSError] = js.native
+  def createSecurityGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateSecurityGroupResult, Unit]): Request[CreateSecurityGroupResult, AWSError] = js.native
+  /**
+    * Creates a security group. A security group acts as a virtual firewall for your instance to control inbound and outbound traffic. For more information, see Amazon EC2 security groups in the Amazon Elastic Compute Cloud User Guide and Security groups for your VPC in the Amazon Virtual Private Cloud User Guide. When you create a security group, you specify a friendly name of your choice. You can have a security group for use in EC2-Classic with the same name as a security group for use in a VPC. However, you can't have two security groups for use in EC2-Classic with the same name or two security groups for use in a VPC with the same name. You have a default security group for use in EC2-Classic and a default security group for use in your VPC. If you don't specify a security group when you launch an instance, the instance is launched into the appropriate default security group. A default security group includes a default rule that grants instances unrestricted network access to each other. You can add or remove rules from your security groups using AuthorizeSecurityGroupIngress, AuthorizeSecurityGroupEgress, RevokeSecurityGroupIngress, and RevokeSecurityGroupEgress. For more information about VPC security group limits, see Amazon VPC Limits.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def createSecurityGroup(params: CreateSecurityGroupRequest): Request[CreateSecurityGroupResult, AWSError] = js.native
+  def createSecurityGroup(
+    params: CreateSecurityGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateSecurityGroupResult, Unit]
+  ): Request[CreateSecurityGroupResult, AWSError] = js.native
+  
+  /**
+    * Creates a snapshot of an EBS volume and stores it in Amazon S3. You can use snapshots for backups, to make copies of EBS volumes, and to save data before shutting down an instance. You can create snapshots of volumes in a Region and volumes on an Outpost. If you create a snapshot of a volume in a Region, the snapshot must be stored in the same Region as the volume. If you create a snapshot of a volume on an Outpost, the snapshot can be stored on the same Outpost as the volume, or in the Region for that Outpost. When a snapshot is created, any Amazon Web Services Marketplace product codes that are associated with the source volume are propagated to the snapshot. You can take a snapshot of an attached volume that is in use. However, snapshots only capture data that has been written to your Amazon EBS volume at the time the snapshot command is issued; this might exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the volume long enough to take a snapshot, your snapshot should be complete. However, if you cannot pause all file writes to the volume, you should unmount the volume from within the instance, issue the snapshot command, and then remount the volume to ensure a consistent and complete snapshot. You may remount and use your volume while the snapshot status is pending. To create a snapshot for Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot. Snapshots that are taken from encrypted volumes are automatically encrypted. Volumes that are created from encrypted snapshots are also automatically encrypted. Your encrypted volumes and any associated snapshots always remain protected. You can tag your snapshots during creation. For more information, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide. For more information, see Amazon Elastic Block Store and Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createSnapshot(): Request[Snapshot, AWSError] = js.native
+  def createSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ Snapshot, Unit]): Request[Snapshot, AWSError] = js.native
+  /**
+    * Creates a snapshot of an EBS volume and stores it in Amazon S3. You can use snapshots for backups, to make copies of EBS volumes, and to save data before shutting down an instance. You can create snapshots of volumes in a Region and volumes on an Outpost. If you create a snapshot of a volume in a Region, the snapshot must be stored in the same Region as the volume. If you create a snapshot of a volume on an Outpost, the snapshot can be stored on the same Outpost as the volume, or in the Region for that Outpost. When a snapshot is created, any Amazon Web Services Marketplace product codes that are associated with the source volume are propagated to the snapshot. You can take a snapshot of an attached volume that is in use. However, snapshots only capture data that has been written to your Amazon EBS volume at the time the snapshot command is issued; this might exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the volume long enough to take a snapshot, your snapshot should be complete. However, if you cannot pause all file writes to the volume, you should unmount the volume from within the instance, issue the snapshot command, and then remount the volume to ensure a consistent and complete snapshot. You may remount and use your volume while the snapshot status is pending. To create a snapshot for Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot. Snapshots that are taken from encrypted volumes are automatically encrypted. Volumes that are created from encrypted snapshots are also automatically encrypted. Your encrypted volumes and any associated snapshots always remain protected. You can tag your snapshots during creation. For more information, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide. For more information, see Amazon Elastic Block Store and Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createSnapshot(params: CreateSnapshotRequest): Request[Snapshot, AWSError] = js.native
+  def createSnapshot(
+    params: CreateSnapshotRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ Snapshot, Unit]
+  ): Request[Snapshot, AWSError] = js.native
+  
+  /**
+    * Creates crash-consistent snapshots of multiple EBS volumes and stores the data in S3. Volumes are chosen by specifying an instance. Any attached volumes will produce one snapshot each that is crash-consistent across the instance. You can include all of the volumes currently attached to the instance, or you can exclude the root volume or specific data (non-root) volumes from the multi-volume snapshot set. You can create multi-volume snapshots of instances in a Region and instances on an Outpost. If you create snapshots from an instance in a Region, the snapshots must be stored in the same Region as the instance. If you create snapshots from an instance on an Outpost, the snapshots can be stored on the same Outpost as the instance, or in the Region for that Outpost.
+    */
+  def createSnapshots(): Request[CreateSnapshotsResult, AWSError] = js.native
+  def createSnapshots(callback: js.Function2[/* err */ AWSError, /* data */ CreateSnapshotsResult, Unit]): Request[CreateSnapshotsResult, AWSError] = js.native
+  /**
+    * Creates crash-consistent snapshots of multiple EBS volumes and stores the data in S3. Volumes are chosen by specifying an instance. Any attached volumes will produce one snapshot each that is crash-consistent across the instance. You can include all of the volumes currently attached to the instance, or you can exclude the root volume or specific data (non-root) volumes from the multi-volume snapshot set. You can create multi-volume snapshots of instances in a Region and instances on an Outpost. If you create snapshots from an instance in a Region, the snapshots must be stored in the same Region as the instance. If you create snapshots from an instance on an Outpost, the snapshots can be stored on the same Outpost as the instance, or in the Region for that Outpost.
+    */
+  def createSnapshots(params: CreateSnapshotsRequest): Request[CreateSnapshotsResult, AWSError] = js.native
+  def createSnapshots(
+    params: CreateSnapshotsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateSnapshotsResult, Unit]
+  ): Request[CreateSnapshotsResult, AWSError] = js.native
+  
+  /**
+    * Creates a data feed for Spot Instances, enabling you to view Spot Instance usage logs. You can create one data feed per Amazon Web Services account. For more information, see Spot Instance data feed in the Amazon EC2 User Guide for Linux Instances.
+    */
+  def createSpotDatafeedSubscription(): Request[CreateSpotDatafeedSubscriptionResult, AWSError] = js.native
+  def createSpotDatafeedSubscription(callback: js.Function2[/* err */ AWSError, /* data */ CreateSpotDatafeedSubscriptionResult, Unit]): Request[CreateSpotDatafeedSubscriptionResult, AWSError] = js.native
+  /**
+    * Creates a data feed for Spot Instances, enabling you to view Spot Instance usage logs. You can create one data feed per Amazon Web Services account. For more information, see Spot Instance data feed in the Amazon EC2 User Guide for Linux Instances.
+    */
+  def createSpotDatafeedSubscription(params: CreateSpotDatafeedSubscriptionRequest): Request[CreateSpotDatafeedSubscriptionResult, AWSError] = js.native
+  def createSpotDatafeedSubscription(
+    params: CreateSpotDatafeedSubscriptionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateSpotDatafeedSubscriptionResult, Unit]
+  ): Request[CreateSpotDatafeedSubscriptionResult, AWSError] = js.native
+  
+  /**
+    * Stores an AMI as a single object in an Amazon S3 bucket. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon Elastic Compute Cloud User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createStoreImageTask(): Request[CreateStoreImageTaskResult, AWSError] = js.native
+  def createStoreImageTask(callback: js.Function2[/* err */ AWSError, /* data */ CreateStoreImageTaskResult, Unit]): Request[CreateStoreImageTaskResult, AWSError] = js.native
+  /**
+    * Stores an AMI as a single object in an Amazon S3 bucket. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon Elastic Compute Cloud User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createStoreImageTask(params: CreateStoreImageTaskRequest): Request[CreateStoreImageTaskResult, AWSError] = js.native
+  def createStoreImageTask(
+    params: CreateStoreImageTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateStoreImageTaskResult, Unit]
+  ): Request[CreateStoreImageTaskResult, AWSError] = js.native
+  
+  /**
+    * Creates a subnet in a specified VPC. You must specify an IPv4 CIDR block for the subnet. After you create a subnet, you can't change its CIDR block. The allowed block size is between a /16 netmask (65,536 IP addresses) and /28 netmask (16 IP addresses). The CIDR block must not overlap with the CIDR block of an existing subnet in the VPC. If you've associated an IPv6 CIDR block with your VPC, you can create a subnet with an IPv6 CIDR block that uses a /64 prefix length.   Amazon Web Services reserves both the first four and the last IPv4 address in each subnet's CIDR block. They're not available for use.  If you add more than one subnet to a VPC, they're set up in a star topology with a logical router in the middle. When you stop an instance in a subnet, it retains its private IPv4 address. It's therefore possible to have a subnet with no running instances (they're all stopped), but no remaining IP addresses available. For more information about subnets, see Your VPC and subnets in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createSubnet(): Request[CreateSubnetResult, AWSError] = js.native
+  def createSubnet(callback: js.Function2[/* err */ AWSError, /* data */ CreateSubnetResult, Unit]): Request[CreateSubnetResult, AWSError] = js.native
+  /**
+    * Creates a subnet in a specified VPC. You must specify an IPv4 CIDR block for the subnet. After you create a subnet, you can't change its CIDR block. The allowed block size is between a /16 netmask (65,536 IP addresses) and /28 netmask (16 IP addresses). The CIDR block must not overlap with the CIDR block of an existing subnet in the VPC. If you've associated an IPv6 CIDR block with your VPC, you can create a subnet with an IPv6 CIDR block that uses a /64 prefix length.   Amazon Web Services reserves both the first four and the last IPv4 address in each subnet's CIDR block. They're not available for use.  If you add more than one subnet to a VPC, they're set up in a star topology with a logical router in the middle. When you stop an instance in a subnet, it retains its private IPv4 address. It's therefore possible to have a subnet with no running instances (they're all stopped), but no remaining IP addresses available. For more information about subnets, see Your VPC and subnets in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createSubnet(params: CreateSubnetRequest): Request[CreateSubnetResult, AWSError] = js.native
+  def createSubnet(
+    params: CreateSubnetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateSubnetResult, Unit]
+  ): Request[CreateSubnetResult, AWSError] = js.native
+  
+  /**
+    * Creates a subnet CIDR reservation. For information about subnet CIDR reservations, see Subnet CIDR reservations in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createSubnetCidrReservation(): Request[CreateSubnetCidrReservationResult, AWSError] = js.native
+  def createSubnetCidrReservation(callback: js.Function2[/* err */ AWSError, /* data */ CreateSubnetCidrReservationResult, Unit]): Request[CreateSubnetCidrReservationResult, AWSError] = js.native
+  /**
+    * Creates a subnet CIDR reservation. For information about subnet CIDR reservations, see Subnet CIDR reservations in the Amazon Virtual Private Cloud User Guide.
+    */
+  def createSubnetCidrReservation(params: CreateSubnetCidrReservationRequest): Request[CreateSubnetCidrReservationResult, AWSError] = js.native
+  def createSubnetCidrReservation(
+    params: CreateSubnetCidrReservationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateSubnetCidrReservationResult, Unit]
+  ): Request[CreateSubnetCidrReservationResult, AWSError] = js.native
+  
+  /**
+    * Adds or overwrites only the specified tags for the specified Amazon EC2 resource or resources. When you specify an existing tag key, the value is overwritten with the new value. Each resource can have a maximum of 50 tags. Each tag consists of a key and optional value. Tag keys must be unique per resource. For more information about tags, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide. For more information about creating IAM policies that control users' access to resources based on tags, see Supported resource-level permissions for Amazon EC2 API actions in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createTags(): Request[js.Object, AWSError] = js.native
+  def createTags(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Adds or overwrites only the specified tags for the specified Amazon EC2 resource or resources. When you specify an existing tag key, the value is overwritten with the new value. Each resource can have a maximum of 50 tags. Each tag consists of a key and optional value. Tag keys must be unique per resource. For more information about tags, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide. For more information about creating IAM policies that control users' access to resources based on tags, see Supported resource-level permissions for Amazon EC2 API actions in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createTags(params: CreateTagsRequest): Request[js.Object, AWSError] = js.native
+  def createTags(params: CreateTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Creates a Traffic Mirror filter. A Traffic Mirror filter is a set of rules that defines the traffic to mirror. By default, no traffic is mirrored. To mirror traffic, use CreateTrafficMirrorFilterRule to add Traffic Mirror rules to the filter. The rules you add define what traffic gets mirrored. You can also use ModifyTrafficMirrorFilterNetworkServices to mirror supported network services.
+    */
+  def createTrafficMirrorFilter(): Request[CreateTrafficMirrorFilterResult, AWSError] = js.native
+  def createTrafficMirrorFilter(callback: js.Function2[/* err */ AWSError, /* data */ CreateTrafficMirrorFilterResult, Unit]): Request[CreateTrafficMirrorFilterResult, AWSError] = js.native
+  /**
+    * Creates a Traffic Mirror filter. A Traffic Mirror filter is a set of rules that defines the traffic to mirror. By default, no traffic is mirrored. To mirror traffic, use CreateTrafficMirrorFilterRule to add Traffic Mirror rules to the filter. The rules you add define what traffic gets mirrored. You can also use ModifyTrafficMirrorFilterNetworkServices to mirror supported network services.
+    */
+  def createTrafficMirrorFilter(params: CreateTrafficMirrorFilterRequest): Request[CreateTrafficMirrorFilterResult, AWSError] = js.native
+  def createTrafficMirrorFilter(
+    params: CreateTrafficMirrorFilterRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTrafficMirrorFilterResult, Unit]
+  ): Request[CreateTrafficMirrorFilterResult, AWSError] = js.native
+  
+  /**
+    * Creates a Traffic Mirror filter rule. A Traffic Mirror rule defines the Traffic Mirror source traffic to mirror. You need the Traffic Mirror filter ID when you create the rule.
+    */
+  def createTrafficMirrorFilterRule(): Request[CreateTrafficMirrorFilterRuleResult, AWSError] = js.native
+  def createTrafficMirrorFilterRule(callback: js.Function2[/* err */ AWSError, /* data */ CreateTrafficMirrorFilterRuleResult, Unit]): Request[CreateTrafficMirrorFilterRuleResult, AWSError] = js.native
+  /**
+    * Creates a Traffic Mirror filter rule. A Traffic Mirror rule defines the Traffic Mirror source traffic to mirror. You need the Traffic Mirror filter ID when you create the rule.
+    */
+  def createTrafficMirrorFilterRule(params: CreateTrafficMirrorFilterRuleRequest): Request[CreateTrafficMirrorFilterRuleResult, AWSError] = js.native
+  def createTrafficMirrorFilterRule(
+    params: CreateTrafficMirrorFilterRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTrafficMirrorFilterRuleResult, Unit]
+  ): Request[CreateTrafficMirrorFilterRuleResult, AWSError] = js.native
+  
+  /**
+    * Creates a Traffic Mirror session. A Traffic Mirror session actively copies packets from a Traffic Mirror source to a Traffic Mirror target. Create a filter, and then assign it to the session to define a subset of the traffic to mirror, for example all TCP traffic. The Traffic Mirror source and the Traffic Mirror target (monitoring appliances) can be in the same VPC, or in a different VPC connected via VPC peering or a transit gateway.  By default, no traffic is mirrored. Use CreateTrafficMirrorFilter to create filter rules that specify the traffic to mirror.
+    */
+  def createTrafficMirrorSession(): Request[CreateTrafficMirrorSessionResult, AWSError] = js.native
+  def createTrafficMirrorSession(callback: js.Function2[/* err */ AWSError, /* data */ CreateTrafficMirrorSessionResult, Unit]): Request[CreateTrafficMirrorSessionResult, AWSError] = js.native
+  /**
+    * Creates a Traffic Mirror session. A Traffic Mirror session actively copies packets from a Traffic Mirror source to a Traffic Mirror target. Create a filter, and then assign it to the session to define a subset of the traffic to mirror, for example all TCP traffic. The Traffic Mirror source and the Traffic Mirror target (monitoring appliances) can be in the same VPC, or in a different VPC connected via VPC peering or a transit gateway.  By default, no traffic is mirrored. Use CreateTrafficMirrorFilter to create filter rules that specify the traffic to mirror.
+    */
+  def createTrafficMirrorSession(params: CreateTrafficMirrorSessionRequest): Request[CreateTrafficMirrorSessionResult, AWSError] = js.native
+  def createTrafficMirrorSession(
+    params: CreateTrafficMirrorSessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTrafficMirrorSessionResult, Unit]
+  ): Request[CreateTrafficMirrorSessionResult, AWSError] = js.native
+  
+  /**
+    * Creates a target for your Traffic Mirror session. A Traffic Mirror target is the destination for mirrored traffic. The Traffic Mirror source and the Traffic Mirror target (monitoring appliances) can be in the same VPC, or in different VPCs connected via VPC peering or a transit gateway. A Traffic Mirror target can be a network interface, a Network Load Balancer, or a Gateway Load Balancer endpoint. To use the target in a Traffic Mirror session, use CreateTrafficMirrorSession.
+    */
+  def createTrafficMirrorTarget(): Request[CreateTrafficMirrorTargetResult, AWSError] = js.native
+  def createTrafficMirrorTarget(callback: js.Function2[/* err */ AWSError, /* data */ CreateTrafficMirrorTargetResult, Unit]): Request[CreateTrafficMirrorTargetResult, AWSError] = js.native
+  /**
+    * Creates a target for your Traffic Mirror session. A Traffic Mirror target is the destination for mirrored traffic. The Traffic Mirror source and the Traffic Mirror target (monitoring appliances) can be in the same VPC, or in different VPCs connected via VPC peering or a transit gateway. A Traffic Mirror target can be a network interface, a Network Load Balancer, or a Gateway Load Balancer endpoint. To use the target in a Traffic Mirror session, use CreateTrafficMirrorSession.
+    */
+  def createTrafficMirrorTarget(params: CreateTrafficMirrorTargetRequest): Request[CreateTrafficMirrorTargetResult, AWSError] = js.native
+  def createTrafficMirrorTarget(
+    params: CreateTrafficMirrorTargetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTrafficMirrorTargetResult, Unit]
+  ): Request[CreateTrafficMirrorTargetResult, AWSError] = js.native
+  
+  /**
+    * Creates a transit gateway. You can use a transit gateway to interconnect your virtual private clouds (VPC) and on-premises networks. After the transit gateway enters the available state, you can attach your VPCs and VPN connections to the transit gateway. To attach your VPCs, use CreateTransitGatewayVpcAttachment. To attach a VPN connection, use CreateCustomerGateway to create a customer gateway and specify the ID of the customer gateway and the ID of the transit gateway in a call to CreateVpnConnection. When you create a transit gateway, we create a default transit gateway route table and use it as the default association route table and the default propagation route table. You can use CreateTransitGatewayRouteTable to create additional transit gateway route tables. If you disable automatic route propagation, we do not create a default transit gateway route table. You can use EnableTransitGatewayRouteTablePropagation to propagate routes from a resource attachment to a transit gateway route table. If you disable automatic associations, you can use AssociateTransitGatewayRouteTable to associate a resource attachment with a transit gateway route table.
+    */
+  def createTransitGateway(): Request[CreateTransitGatewayResult, AWSError] = js.native
+  def createTransitGateway(callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayResult, Unit]): Request[CreateTransitGatewayResult, AWSError] = js.native
+  /**
+    * Creates a transit gateway. You can use a transit gateway to interconnect your virtual private clouds (VPC) and on-premises networks. After the transit gateway enters the available state, you can attach your VPCs and VPN connections to the transit gateway. To attach your VPCs, use CreateTransitGatewayVpcAttachment. To attach a VPN connection, use CreateCustomerGateway to create a customer gateway and specify the ID of the customer gateway and the ID of the transit gateway in a call to CreateVpnConnection. When you create a transit gateway, we create a default transit gateway route table and use it as the default association route table and the default propagation route table. You can use CreateTransitGatewayRouteTable to create additional transit gateway route tables. If you disable automatic route propagation, we do not create a default transit gateway route table. You can use EnableTransitGatewayRouteTablePropagation to propagate routes from a resource attachment to a transit gateway route table. If you disable automatic associations, you can use AssociateTransitGatewayRouteTable to associate a resource attachment with a transit gateway route table.
+    */
+  def createTransitGateway(params: CreateTransitGatewayRequest): Request[CreateTransitGatewayResult, AWSError] = js.native
+  def createTransitGateway(
+    params: CreateTransitGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayResult, Unit]
+  ): Request[CreateTransitGatewayResult, AWSError] = js.native
+  
+  /**
+    * Creates a Connect attachment from a specified transit gateway attachment. A Connect attachment is a GRE-based tunnel attachment that you can use to establish a connection between a transit gateway and an appliance. A Connect attachment uses an existing VPC or Amazon Web Services Direct Connect attachment as the underlying transport mechanism.
+    */
+  def createTransitGatewayConnect(): Request[CreateTransitGatewayConnectResult, AWSError] = js.native
+  def createTransitGatewayConnect(callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayConnectResult, Unit]): Request[CreateTransitGatewayConnectResult, AWSError] = js.native
+  /**
+    * Creates a Connect attachment from a specified transit gateway attachment. A Connect attachment is a GRE-based tunnel attachment that you can use to establish a connection between a transit gateway and an appliance. A Connect attachment uses an existing VPC or Amazon Web Services Direct Connect attachment as the underlying transport mechanism.
+    */
+  def createTransitGatewayConnect(params: CreateTransitGatewayConnectRequest): Request[CreateTransitGatewayConnectResult, AWSError] = js.native
+  def createTransitGatewayConnect(
+    params: CreateTransitGatewayConnectRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayConnectResult, Unit]
+  ): Request[CreateTransitGatewayConnectResult, AWSError] = js.native
+  
+  /**
+    * Creates a Connect peer for a specified transit gateway Connect attachment between a transit gateway and an appliance. The peer address and transit gateway address must be the same IP address family (IPv4 or IPv6). For more information, see Connect peers in the Transit Gateways Guide.
+    */
+  def createTransitGatewayConnectPeer(): Request[CreateTransitGatewayConnectPeerResult, AWSError] = js.native
+  def createTransitGatewayConnectPeer(callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayConnectPeerResult, Unit]): Request[CreateTransitGatewayConnectPeerResult, AWSError] = js.native
+  /**
+    * Creates a Connect peer for a specified transit gateway Connect attachment between a transit gateway and an appliance. The peer address and transit gateway address must be the same IP address family (IPv4 or IPv6). For more information, see Connect peers in the Transit Gateways Guide.
+    */
+  def createTransitGatewayConnectPeer(params: CreateTransitGatewayConnectPeerRequest): Request[CreateTransitGatewayConnectPeerResult, AWSError] = js.native
+  def createTransitGatewayConnectPeer(
+    params: CreateTransitGatewayConnectPeerRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayConnectPeerResult, Unit]
+  ): Request[CreateTransitGatewayConnectPeerResult, AWSError] = js.native
+  
+  /**
+    * Creates a multicast domain using the specified transit gateway. The transit gateway must be in the available state before you create a domain. Use DescribeTransitGateways to see the state of transit gateway.
+    */
+  def createTransitGatewayMulticastDomain(): Request[CreateTransitGatewayMulticastDomainResult, AWSError] = js.native
+  def createTransitGatewayMulticastDomain(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayMulticastDomainResult, Unit]
+  ): Request[CreateTransitGatewayMulticastDomainResult, AWSError] = js.native
+  /**
+    * Creates a multicast domain using the specified transit gateway. The transit gateway must be in the available state before you create a domain. Use DescribeTransitGateways to see the state of transit gateway.
+    */
+  def createTransitGatewayMulticastDomain(params: CreateTransitGatewayMulticastDomainRequest): Request[CreateTransitGatewayMulticastDomainResult, AWSError] = js.native
+  def createTransitGatewayMulticastDomain(
+    params: CreateTransitGatewayMulticastDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayMulticastDomainResult, Unit]
+  ): Request[CreateTransitGatewayMulticastDomainResult, AWSError] = js.native
+  
+  /**
+    * Requests a transit gateway peering attachment between the specified transit gateway (requester) and a peer transit gateway (accepter). The peer transit gateway can be in your account or a different Amazon Web Services account. After you create the peering attachment, the owner of the accepter transit gateway must accept the attachment request.
+    */
+  def createTransitGatewayPeeringAttachment(): Request[CreateTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  def createTransitGatewayPeeringAttachment(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayPeeringAttachmentResult, Unit]
+  ): Request[CreateTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  /**
+    * Requests a transit gateway peering attachment between the specified transit gateway (requester) and a peer transit gateway (accepter). The peer transit gateway can be in your account or a different Amazon Web Services account. After you create the peering attachment, the owner of the accepter transit gateway must accept the attachment request.
+    */
+  def createTransitGatewayPeeringAttachment(params: CreateTransitGatewayPeeringAttachmentRequest): Request[CreateTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  def createTransitGatewayPeeringAttachment(
+    params: CreateTransitGatewayPeeringAttachmentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayPeeringAttachmentResult, Unit]
+  ): Request[CreateTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  
+  /**
+    * Creates a transit gateway policy table.
+    */
+  def createTransitGatewayPolicyTable(): Request[CreateTransitGatewayPolicyTableResult, AWSError] = js.native
+  def createTransitGatewayPolicyTable(callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayPolicyTableResult, Unit]): Request[CreateTransitGatewayPolicyTableResult, AWSError] = js.native
+  /**
+    * Creates a transit gateway policy table.
+    */
+  def createTransitGatewayPolicyTable(params: CreateTransitGatewayPolicyTableRequest): Request[CreateTransitGatewayPolicyTableResult, AWSError] = js.native
+  def createTransitGatewayPolicyTable(
+    params: CreateTransitGatewayPolicyTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayPolicyTableResult, Unit]
+  ): Request[CreateTransitGatewayPolicyTableResult, AWSError] = js.native
+  
+  /**
+    * Creates a reference (route) to a prefix list in a specified transit gateway route table.
+    */
+  def createTransitGatewayPrefixListReference(): Request[CreateTransitGatewayPrefixListReferenceResult, AWSError] = js.native
+  def createTransitGatewayPrefixListReference(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayPrefixListReferenceResult, Unit]
+  ): Request[CreateTransitGatewayPrefixListReferenceResult, AWSError] = js.native
+  /**
+    * Creates a reference (route) to a prefix list in a specified transit gateway route table.
+    */
+  def createTransitGatewayPrefixListReference(params: CreateTransitGatewayPrefixListReferenceRequest): Request[CreateTransitGatewayPrefixListReferenceResult, AWSError] = js.native
+  def createTransitGatewayPrefixListReference(
+    params: CreateTransitGatewayPrefixListReferenceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayPrefixListReferenceResult, Unit]
+  ): Request[CreateTransitGatewayPrefixListReferenceResult, AWSError] = js.native
+  
+  /**
+    * Creates a static route for the specified transit gateway route table.
+    */
+  def createTransitGatewayRoute(): Request[CreateTransitGatewayRouteResult, AWSError] = js.native
+  def createTransitGatewayRoute(callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayRouteResult, Unit]): Request[CreateTransitGatewayRouteResult, AWSError] = js.native
+  /**
+    * Creates a static route for the specified transit gateway route table.
+    */
+  def createTransitGatewayRoute(params: CreateTransitGatewayRouteRequest): Request[CreateTransitGatewayRouteResult, AWSError] = js.native
+  def createTransitGatewayRoute(
+    params: CreateTransitGatewayRouteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayRouteResult, Unit]
+  ): Request[CreateTransitGatewayRouteResult, AWSError] = js.native
+  
+  /**
+    * Creates a route table for the specified transit gateway.
+    */
+  def createTransitGatewayRouteTable(): Request[CreateTransitGatewayRouteTableResult, AWSError] = js.native
+  def createTransitGatewayRouteTable(callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayRouteTableResult, Unit]): Request[CreateTransitGatewayRouteTableResult, AWSError] = js.native
+  /**
+    * Creates a route table for the specified transit gateway.
+    */
+  def createTransitGatewayRouteTable(params: CreateTransitGatewayRouteTableRequest): Request[CreateTransitGatewayRouteTableResult, AWSError] = js.native
+  def createTransitGatewayRouteTable(
+    params: CreateTransitGatewayRouteTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayRouteTableResult, Unit]
+  ): Request[CreateTransitGatewayRouteTableResult, AWSError] = js.native
+  
+  /**
+    * Advertises a new transit gateway route table.
+    */
+  def createTransitGatewayRouteTableAnnouncement(): Request[CreateTransitGatewayRouteTableAnnouncementResult, AWSError] = js.native
+  def createTransitGatewayRouteTableAnnouncement(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ CreateTransitGatewayRouteTableAnnouncementResult, 
+      Unit
+    ]
+  ): Request[CreateTransitGatewayRouteTableAnnouncementResult, AWSError] = js.native
+  /**
+    * Advertises a new transit gateway route table.
+    */
+  def createTransitGatewayRouteTableAnnouncement(params: CreateTransitGatewayRouteTableAnnouncementRequest): Request[CreateTransitGatewayRouteTableAnnouncementResult, AWSError] = js.native
+  def createTransitGatewayRouteTableAnnouncement(
+    params: CreateTransitGatewayRouteTableAnnouncementRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ CreateTransitGatewayRouteTableAnnouncementResult, 
+      Unit
+    ]
+  ): Request[CreateTransitGatewayRouteTableAnnouncementResult, AWSError] = js.native
+  
+  /**
+    * Attaches the specified VPC to the specified transit gateway. If you attach a VPC with a CIDR range that overlaps the CIDR range of a VPC that is already attached, the new VPC CIDR range is not propagated to the default propagation route table. To send VPC traffic to an attached transit gateway, add a route to the VPC route table using CreateRoute.
+    */
+  def createTransitGatewayVpcAttachment(): Request[CreateTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  def createTransitGatewayVpcAttachment(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayVpcAttachmentResult, Unit]
+  ): Request[CreateTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  /**
+    * Attaches the specified VPC to the specified transit gateway. If you attach a VPC with a CIDR range that overlaps the CIDR range of a VPC that is already attached, the new VPC CIDR range is not propagated to the default propagation route table. To send VPC traffic to an attached transit gateway, add a route to the VPC route table using CreateRoute.
+    */
+  def createTransitGatewayVpcAttachment(params: CreateTransitGatewayVpcAttachmentRequest): Request[CreateTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  def createTransitGatewayVpcAttachment(
+    params: CreateTransitGatewayVpcAttachmentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTransitGatewayVpcAttachmentResult, Unit]
+  ): Request[CreateTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  
+  /**
+    * Creates an EBS volume that can be attached to an instance in the same Availability Zone. You can create a new empty volume or restore a volume from an EBS snapshot. Any Amazon Web Services Marketplace product codes from the snapshot are propagated to the volume. You can create encrypted volumes. Encrypted volumes must be attached to instances that support Amazon EBS encryption. Volumes that are created from encrypted snapshots are also automatically encrypted. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide. You can tag your volumes during creation. For more information, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide. For more information, see Create an Amazon EBS volume in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createVolume(): Request[Volume, AWSError] = js.native
+  def createVolume(callback: js.Function2[/* err */ AWSError, /* data */ Volume, Unit]): Request[Volume, AWSError] = js.native
+  /**
+    * Creates an EBS volume that can be attached to an instance in the same Availability Zone. You can create a new empty volume or restore a volume from an EBS snapshot. Any Amazon Web Services Marketplace product codes from the snapshot are propagated to the volume. You can create encrypted volumes. Encrypted volumes must be attached to instances that support Amazon EBS encryption. Volumes that are created from encrypted snapshots are also automatically encrypted. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide. You can tag your volumes during creation. For more information, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide. For more information, see Create an Amazon EBS volume in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createVolume(params: CreateVolumeRequest): Request[Volume, AWSError] = js.native
+  def createVolume(params: CreateVolumeRequest, callback: js.Function2[/* err */ AWSError, /* data */ Volume, Unit]): Request[Volume, AWSError] = js.native
+  
+  /**
+    * Creates a VPC with the specified IPv4 CIDR block. The smallest VPC you can create uses a /28 netmask (16 IPv4 addresses), and the largest uses a /16 netmask (65,536 IPv4 addresses). For more information about how large to make your VPC, see Your VPC and subnets in the Amazon Virtual Private Cloud User Guide. You can optionally request an IPv6 CIDR block for the VPC. You can request an Amazon-provided IPv6 CIDR block from Amazon's pool of IPv6 addresses, or an IPv6 CIDR block from an IPv6 address pool that you provisioned through bring your own IP addresses (BYOIP). By default, each instance you launch in the VPC has the default DHCP options, which include only a default DNS server that we provide (AmazonProvidedDNS). For more information, see DHCP options sets in the Amazon Virtual Private Cloud User Guide. You can specify the instance tenancy value for the VPC when you create it. You can't change this value for the VPC after you create it. For more information, see Dedicated Instances in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createVpc(): Request[CreateVpcResult, AWSError] = js.native
+  def createVpc(callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcResult, Unit]): Request[CreateVpcResult, AWSError] = js.native
+  /**
+    * Creates a VPC with the specified IPv4 CIDR block. The smallest VPC you can create uses a /28 netmask (16 IPv4 addresses), and the largest uses a /16 netmask (65,536 IPv4 addresses). For more information about how large to make your VPC, see Your VPC and subnets in the Amazon Virtual Private Cloud User Guide. You can optionally request an IPv6 CIDR block for the VPC. You can request an Amazon-provided IPv6 CIDR block from Amazon's pool of IPv6 addresses, or an IPv6 CIDR block from an IPv6 address pool that you provisioned through bring your own IP addresses (BYOIP). By default, each instance you launch in the VPC has the default DHCP options, which include only a default DNS server that we provide (AmazonProvidedDNS). For more information, see DHCP options sets in the Amazon Virtual Private Cloud User Guide. You can specify the instance tenancy value for the VPC when you create it. You can't change this value for the VPC after you create it. For more information, see Dedicated Instances in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def createVpc(params: CreateVpcRequest): Request[CreateVpcResult, AWSError] = js.native
+  def createVpc(
+    params: CreateVpcRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcResult, Unit]
+  ): Request[CreateVpcResult, AWSError] = js.native
+  
+  /**
+    * Creates a VPC endpoint for a specified service. An endpoint enables you to create a private connection between your VPC and the service. The service may be provided by Amazon Web Services, an Amazon Web Services Marketplace Partner, or another Amazon Web Services account. For more information, see the Amazon Web Services PrivateLink Guide.
+    */
+  def createVpcEndpoint(): Request[CreateVpcEndpointResult, AWSError] = js.native
+  def createVpcEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcEndpointResult, Unit]): Request[CreateVpcEndpointResult, AWSError] = js.native
+  /**
+    * Creates a VPC endpoint for a specified service. An endpoint enables you to create a private connection between your VPC and the service. The service may be provided by Amazon Web Services, an Amazon Web Services Marketplace Partner, or another Amazon Web Services account. For more information, see the Amazon Web Services PrivateLink Guide.
+    */
+  def createVpcEndpoint(params: CreateVpcEndpointRequest): Request[CreateVpcEndpointResult, AWSError] = js.native
+  def createVpcEndpoint(
+    params: CreateVpcEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcEndpointResult, Unit]
+  ): Request[CreateVpcEndpointResult, AWSError] = js.native
+  
+  /**
+    * Creates a connection notification for a specified VPC endpoint or VPC endpoint service. A connection notification notifies you of specific endpoint events. You must create an SNS topic to receive notifications. For more information, see Create a Topic in the Amazon Simple Notification Service Developer Guide. You can create a connection notification for interface endpoints only.
+    */
+  def createVpcEndpointConnectionNotification(): Request[CreateVpcEndpointConnectionNotificationResult, AWSError] = js.native
+  def createVpcEndpointConnectionNotification(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcEndpointConnectionNotificationResult, Unit]
+  ): Request[CreateVpcEndpointConnectionNotificationResult, AWSError] = js.native
+  /**
+    * Creates a connection notification for a specified VPC endpoint or VPC endpoint service. A connection notification notifies you of specific endpoint events. You must create an SNS topic to receive notifications. For more information, see Create a Topic in the Amazon Simple Notification Service Developer Guide. You can create a connection notification for interface endpoints only.
+    */
+  def createVpcEndpointConnectionNotification(params: CreateVpcEndpointConnectionNotificationRequest): Request[CreateVpcEndpointConnectionNotificationResult, AWSError] = js.native
+  def createVpcEndpointConnectionNotification(
+    params: CreateVpcEndpointConnectionNotificationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcEndpointConnectionNotificationResult, Unit]
+  ): Request[CreateVpcEndpointConnectionNotificationResult, AWSError] = js.native
+  
+  /**
+    * Creates a VPC endpoint service to which service consumers (Amazon Web Services accounts, IAM users, and IAM roles) can connect. Before you create an endpoint service, you must create one of the following for your service:   A Network Load Balancer. Service consumers connect to your service using an interface endpoint.   A Gateway Load Balancer. Service consumers connect to your service using a Gateway Load Balancer endpoint.   If you set the private DNS name, you must prove that you own the private DNS domain name. For more information, see the Amazon Web Services PrivateLink Guide.
+    */
+  def createVpcEndpointServiceConfiguration(): Request[CreateVpcEndpointServiceConfigurationResult, AWSError] = js.native
+  def createVpcEndpointServiceConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcEndpointServiceConfigurationResult, Unit]
+  ): Request[CreateVpcEndpointServiceConfigurationResult, AWSError] = js.native
+  /**
+    * Creates a VPC endpoint service to which service consumers (Amazon Web Services accounts, IAM users, and IAM roles) can connect. Before you create an endpoint service, you must create one of the following for your service:   A Network Load Balancer. Service consumers connect to your service using an interface endpoint.   A Gateway Load Balancer. Service consumers connect to your service using a Gateway Load Balancer endpoint.   If you set the private DNS name, you must prove that you own the private DNS domain name. For more information, see the Amazon Web Services PrivateLink Guide.
+    */
+  def createVpcEndpointServiceConfiguration(params: CreateVpcEndpointServiceConfigurationRequest): Request[CreateVpcEndpointServiceConfigurationResult, AWSError] = js.native
+  def createVpcEndpointServiceConfiguration(
+    params: CreateVpcEndpointServiceConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcEndpointServiceConfigurationResult, Unit]
+  ): Request[CreateVpcEndpointServiceConfigurationResult, AWSError] = js.native
+  
+  /**
+    * Requests a VPC peering connection between two VPCs: a requester VPC that you own and an accepter VPC with which to create the connection. The accepter VPC can belong to another Amazon Web Services account and can be in a different Region to the requester VPC. The requester VPC and accepter VPC cannot have overlapping CIDR blocks.  Limitations and rules apply to a VPC peering connection. For more information, see the limitations section in the VPC Peering Guide.  The owner of the accepter VPC must accept the peering request to activate the peering connection. The VPC peering connection request expires after 7 days, after which it cannot be accepted or rejected. If you create a VPC peering connection request between VPCs with overlapping CIDR blocks, the VPC peering connection has a status of failed.
+    */
+  def createVpcPeeringConnection(): Request[CreateVpcPeeringConnectionResult, AWSError] = js.native
+  def createVpcPeeringConnection(callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcPeeringConnectionResult, Unit]): Request[CreateVpcPeeringConnectionResult, AWSError] = js.native
+  /**
+    * Requests a VPC peering connection between two VPCs: a requester VPC that you own and an accepter VPC with which to create the connection. The accepter VPC can belong to another Amazon Web Services account and can be in a different Region to the requester VPC. The requester VPC and accepter VPC cannot have overlapping CIDR blocks.  Limitations and rules apply to a VPC peering connection. For more information, see the limitations section in the VPC Peering Guide.  The owner of the accepter VPC must accept the peering request to activate the peering connection. The VPC peering connection request expires after 7 days, after which it cannot be accepted or rejected. If you create a VPC peering connection request between VPCs with overlapping CIDR blocks, the VPC peering connection has a status of failed.
+    */
+  def createVpcPeeringConnection(params: CreateVpcPeeringConnectionRequest): Request[CreateVpcPeeringConnectionResult, AWSError] = js.native
+  def createVpcPeeringConnection(
+    params: CreateVpcPeeringConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcPeeringConnectionResult, Unit]
+  ): Request[CreateVpcPeeringConnectionResult, AWSError] = js.native
+  
+  /**
+    * Creates a VPN connection between an existing virtual private gateway or transit gateway and a customer gateway. The supported connection type is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway device.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def createVpnConnection(): Request[CreateVpnConnectionResult, AWSError] = js.native
+  def createVpnConnection(callback: js.Function2[/* err */ AWSError, /* data */ CreateVpnConnectionResult, Unit]): Request[CreateVpnConnectionResult, AWSError] = js.native
+  /**
+    * Creates a VPN connection between an existing virtual private gateway or transit gateway and a customer gateway. The supported connection type is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway device.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def createVpnConnection(params: CreateVpnConnectionRequest): Request[CreateVpnConnectionResult, AWSError] = js.native
+  def createVpnConnection(
+    params: CreateVpnConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpnConnectionResult, Unit]
+  ): Request[CreateVpnConnectionResult, AWSError] = js.native
+  
+  /**
+    * Creates a static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. The static route allows traffic to be routed from the virtual private gateway to the VPN customer gateway. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def createVpnConnectionRoute(): Request[js.Object, AWSError] = js.native
+  def createVpnConnectionRoute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Creates a static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. The static route allows traffic to be routed from the virtual private gateway to the VPN customer gateway. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def createVpnConnectionRoute(params: CreateVpnConnectionRouteRequest): Request[js.Object, AWSError] = js.native
+  def createVpnConnectionRoute(
+    params: CreateVpnConnectionRouteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Creates a virtual private gateway. A virtual private gateway is the endpoint on the VPC side of your VPN connection. You can create a virtual private gateway before creating the VPC itself. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def createVpnGateway(): Request[CreateVpnGatewayResult, AWSError] = js.native
+  def createVpnGateway(callback: js.Function2[/* err */ AWSError, /* data */ CreateVpnGatewayResult, Unit]): Request[CreateVpnGatewayResult, AWSError] = js.native
+  /**
+    * Creates a virtual private gateway. A virtual private gateway is the endpoint on the VPC side of your VPN connection. You can create a virtual private gateway before creating the VPC itself. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def createVpnGateway(params: CreateVpnGatewayRequest): Request[CreateVpnGatewayResult, AWSError] = js.native
+  def createVpnGateway(
+    params: CreateVpnGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpnGatewayResult, Unit]
+  ): Request[CreateVpnGatewayResult, AWSError] = js.native
+  
+  /**
+    * Deletes a carrier gateway.  If you do not delete the route that contains the carrier gateway as the Target, the route is a blackhole route. For information about how to delete a route, see DeleteRoute. 
+    */
+  def deleteCarrierGateway(): Request[DeleteCarrierGatewayResult, AWSError] = js.native
+  def deleteCarrierGateway(callback: js.Function2[/* err */ AWSError, /* data */ DeleteCarrierGatewayResult, Unit]): Request[DeleteCarrierGatewayResult, AWSError] = js.native
+  /**
+    * Deletes a carrier gateway.  If you do not delete the route that contains the carrier gateway as the Target, the route is a blackhole route. For information about how to delete a route, see DeleteRoute. 
+    */
+  def deleteCarrierGateway(params: DeleteCarrierGatewayRequest): Request[DeleteCarrierGatewayResult, AWSError] = js.native
+  def deleteCarrierGateway(
+    params: DeleteCarrierGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteCarrierGatewayResult, Unit]
+  ): Request[DeleteCarrierGatewayResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified Client VPN endpoint. You must disassociate all target networks before you can delete a Client VPN endpoint.
+    */
+  def deleteClientVpnEndpoint(): Request[DeleteClientVpnEndpointResult, AWSError] = js.native
+  def deleteClientVpnEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ DeleteClientVpnEndpointResult, Unit]): Request[DeleteClientVpnEndpointResult, AWSError] = js.native
+  /**
+    * Deletes the specified Client VPN endpoint. You must disassociate all target networks before you can delete a Client VPN endpoint.
+    */
+  def deleteClientVpnEndpoint(params: DeleteClientVpnEndpointRequest): Request[DeleteClientVpnEndpointResult, AWSError] = js.native
+  def deleteClientVpnEndpoint(
+    params: DeleteClientVpnEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteClientVpnEndpointResult, Unit]
+  ): Request[DeleteClientVpnEndpointResult, AWSError] = js.native
+  
+  /**
+    * Deletes a route from a Client VPN endpoint. You can only delete routes that you manually added using the CreateClientVpnRoute action. You cannot delete routes that were automatically added when associating a subnet. To remove routes that have been automatically added, disassociate the target subnet from the Client VPN endpoint.
+    */
+  def deleteClientVpnRoute(): Request[DeleteClientVpnRouteResult, AWSError] = js.native
+  def deleteClientVpnRoute(callback: js.Function2[/* err */ AWSError, /* data */ DeleteClientVpnRouteResult, Unit]): Request[DeleteClientVpnRouteResult, AWSError] = js.native
+  /**
+    * Deletes a route from a Client VPN endpoint. You can only delete routes that you manually added using the CreateClientVpnRoute action. You cannot delete routes that were automatically added when associating a subnet. To remove routes that have been automatically added, disassociate the target subnet from the Client VPN endpoint.
+    */
+  def deleteClientVpnRoute(params: DeleteClientVpnRouteRequest): Request[DeleteClientVpnRouteResult, AWSError] = js.native
+  def deleteClientVpnRoute(
+    params: DeleteClientVpnRouteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteClientVpnRouteResult, Unit]
+  ): Request[DeleteClientVpnRouteResult, AWSError] = js.native
+  
+  /**
+    *  Deletes a range of customer-owned IP addresses. 
+    */
+  def deleteCoipCidr(): Request[DeleteCoipCidrResult, AWSError] = js.native
+  def deleteCoipCidr(callback: js.Function2[/* err */ AWSError, /* data */ DeleteCoipCidrResult, Unit]): Request[DeleteCoipCidrResult, AWSError] = js.native
+  /**
+    *  Deletes a range of customer-owned IP addresses. 
+    */
+  def deleteCoipCidr(params: DeleteCoipCidrRequest): Request[DeleteCoipCidrResult, AWSError] = js.native
+  def deleteCoipCidr(
+    params: DeleteCoipCidrRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteCoipCidrResult, Unit]
+  ): Request[DeleteCoipCidrResult, AWSError] = js.native
+  
+  /**
+    * Deletes a pool of customer-owned IP (CoIP) addresses. 
+    */
+  def deleteCoipPool(): Request[DeleteCoipPoolResult, AWSError] = js.native
+  def deleteCoipPool(callback: js.Function2[/* err */ AWSError, /* data */ DeleteCoipPoolResult, Unit]): Request[DeleteCoipPoolResult, AWSError] = js.native
+  /**
+    * Deletes a pool of customer-owned IP (CoIP) addresses. 
+    */
+  def deleteCoipPool(params: DeleteCoipPoolRequest): Request[DeleteCoipPoolResult, AWSError] = js.native
+  def deleteCoipPool(
+    params: DeleteCoipPoolRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteCoipPoolResult, Unit]
+  ): Request[DeleteCoipPoolResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified customer gateway. You must delete the VPN connection before you can delete the customer gateway.
+    */
+  def deleteCustomerGateway(): Request[js.Object, AWSError] = js.native
+  def deleteCustomerGateway(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified customer gateway. You must delete the VPN connection before you can delete the customer gateway.
+    */
+  def deleteCustomerGateway(params: DeleteCustomerGatewayRequest): Request[js.Object, AWSError] = js.native
+  def deleteCustomerGateway(
+    params: DeleteCustomerGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the specified set of DHCP options. You must disassociate the set of DHCP options before you can delete it. You can disassociate the set of DHCP options by associating either a new set of options or the default set of options with the VPC.
+    */
+  def deleteDhcpOptions(): Request[js.Object, AWSError] = js.native
+  def deleteDhcpOptions(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified set of DHCP options. You must disassociate the set of DHCP options before you can delete it. You can disassociate the set of DHCP options by associating either a new set of options or the default set of options with the VPC.
+    */
+  def deleteDhcpOptions(params: DeleteDhcpOptionsRequest): Request[js.Object, AWSError] = js.native
+  def deleteDhcpOptions(
+    params: DeleteDhcpOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes an egress-only internet gateway.
+    */
+  def deleteEgressOnlyInternetGateway(): Request[DeleteEgressOnlyInternetGatewayResult, AWSError] = js.native
+  def deleteEgressOnlyInternetGateway(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEgressOnlyInternetGatewayResult, Unit]): Request[DeleteEgressOnlyInternetGatewayResult, AWSError] = js.native
+  /**
+    * Deletes an egress-only internet gateway.
+    */
+  def deleteEgressOnlyInternetGateway(params: DeleteEgressOnlyInternetGatewayRequest): Request[DeleteEgressOnlyInternetGatewayResult, AWSError] = js.native
+  def deleteEgressOnlyInternetGateway(
+    params: DeleteEgressOnlyInternetGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteEgressOnlyInternetGatewayResult, Unit]
+  ): Request[DeleteEgressOnlyInternetGatewayResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified EC2 Fleet. After you delete an EC2 Fleet, it launches no new instances. You must specify whether a deleted EC2 Fleet should also terminate its instances. If you choose to terminate the instances, the EC2 Fleet enters the deleted_terminating state. Otherwise, the EC2 Fleet enters the deleted_running state, and the instances continue to run until they are interrupted or you terminate them manually. For instant fleets, EC2 Fleet must terminate the instances when the fleet is deleted. A deleted instant fleet with running instances is not supported.  Restrictions    You can delete up to 25 instant fleets in a single request. If you exceed this number, no instant fleets are deleted and an error is returned. There is no restriction on the number of fleets of type maintain or request that can be deleted in a single request.   Up to 1000 instances can be terminated in a single request to delete instant fleets.   For more information, see Delete an EC2 Fleet in the Amazon EC2 User Guide.
+    */
+  def deleteFleets(): Request[DeleteFleetsResult, AWSError] = js.native
+  def deleteFleets(callback: js.Function2[/* err */ AWSError, /* data */ DeleteFleetsResult, Unit]): Request[DeleteFleetsResult, AWSError] = js.native
+  /**
+    * Deletes the specified EC2 Fleet. After you delete an EC2 Fleet, it launches no new instances. You must specify whether a deleted EC2 Fleet should also terminate its instances. If you choose to terminate the instances, the EC2 Fleet enters the deleted_terminating state. Otherwise, the EC2 Fleet enters the deleted_running state, and the instances continue to run until they are interrupted or you terminate them manually. For instant fleets, EC2 Fleet must terminate the instances when the fleet is deleted. A deleted instant fleet with running instances is not supported.  Restrictions    You can delete up to 25 instant fleets in a single request. If you exceed this number, no instant fleets are deleted and an error is returned. There is no restriction on the number of fleets of type maintain or request that can be deleted in a single request.   Up to 1000 instances can be terminated in a single request to delete instant fleets.   For more information, see Delete an EC2 Fleet in the Amazon EC2 User Guide.
+    */
+  def deleteFleets(params: DeleteFleetsRequest): Request[DeleteFleetsResult, AWSError] = js.native
+  def deleteFleets(
+    params: DeleteFleetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteFleetsResult, Unit]
+  ): Request[DeleteFleetsResult, AWSError] = js.native
+  
+  /**
+    * Deletes one or more flow logs.
+    */
+  def deleteFlowLogs(): Request[DeleteFlowLogsResult, AWSError] = js.native
+  def deleteFlowLogs(callback: js.Function2[/* err */ AWSError, /* data */ DeleteFlowLogsResult, Unit]): Request[DeleteFlowLogsResult, AWSError] = js.native
+  /**
+    * Deletes one or more flow logs.
+    */
+  def deleteFlowLogs(params: DeleteFlowLogsRequest): Request[DeleteFlowLogsResult, AWSError] = js.native
+  def deleteFlowLogs(
+    params: DeleteFlowLogsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteFlowLogsResult, Unit]
+  ): Request[DeleteFlowLogsResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified Amazon FPGA Image (AFI).
+    */
+  def deleteFpgaImage(): Request[DeleteFpgaImageResult, AWSError] = js.native
+  def deleteFpgaImage(callback: js.Function2[/* err */ AWSError, /* data */ DeleteFpgaImageResult, Unit]): Request[DeleteFpgaImageResult, AWSError] = js.native
+  /**
+    * Deletes the specified Amazon FPGA Image (AFI).
+    */
+  def deleteFpgaImage(params: DeleteFpgaImageRequest): Request[DeleteFpgaImageResult, AWSError] = js.native
+  def deleteFpgaImage(
+    params: DeleteFpgaImageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteFpgaImageResult, Unit]
+  ): Request[DeleteFpgaImageResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified event window. For more information, see Define event windows for scheduled events in the Amazon EC2 User Guide.
+    */
+  def deleteInstanceEventWindow(): Request[DeleteInstanceEventWindowResult, AWSError] = js.native
+  def deleteInstanceEventWindow(callback: js.Function2[/* err */ AWSError, /* data */ DeleteInstanceEventWindowResult, Unit]): Request[DeleteInstanceEventWindowResult, AWSError] = js.native
+  /**
+    * Deletes the specified event window. For more information, see Define event windows for scheduled events in the Amazon EC2 User Guide.
+    */
+  def deleteInstanceEventWindow(params: DeleteInstanceEventWindowRequest): Request[DeleteInstanceEventWindowResult, AWSError] = js.native
+  def deleteInstanceEventWindow(
+    params: DeleteInstanceEventWindowRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteInstanceEventWindowResult, Unit]
+  ): Request[DeleteInstanceEventWindowResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified internet gateway. You must detach the internet gateway from the VPC before you can delete it.
+    */
+  def deleteInternetGateway(): Request[js.Object, AWSError] = js.native
+  def deleteInternetGateway(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified internet gateway. You must detach the internet gateway from the VPC before you can delete it.
+    */
+  def deleteInternetGateway(params: DeleteInternetGatewayRequest): Request[js.Object, AWSError] = js.native
+  def deleteInternetGateway(
+    params: DeleteInternetGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Delete an IPAM. Deleting an IPAM removes all monitored data associated with the IPAM including the historical data for CIDRs. For more information, see Delete an IPAM in the Amazon VPC IPAM User Guide. 
+    */
+  def deleteIpam(): Request[DeleteIpamResult, AWSError] = js.native
+  def deleteIpam(callback: js.Function2[/* err */ AWSError, /* data */ DeleteIpamResult, Unit]): Request[DeleteIpamResult, AWSError] = js.native
+  /**
+    * Delete an IPAM. Deleting an IPAM removes all monitored data associated with the IPAM including the historical data for CIDRs. For more information, see Delete an IPAM in the Amazon VPC IPAM User Guide. 
+    */
+  def deleteIpam(params: DeleteIpamRequest): Request[DeleteIpamResult, AWSError] = js.native
+  def deleteIpam(
+    params: DeleteIpamRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteIpamResult, Unit]
+  ): Request[DeleteIpamResult, AWSError] = js.native
+  
+  /**
+    * Delete an IPAM pool.  You cannot delete an IPAM pool if there are allocations in it or CIDRs provisioned to it. To release allocations, see ReleaseIpamPoolAllocation. To deprovision pool CIDRs, see DeprovisionIpamPoolCidr.  For more information, see Delete a pool in the Amazon VPC IPAM User Guide. 
+    */
+  def deleteIpamPool(): Request[DeleteIpamPoolResult, AWSError] = js.native
+  def deleteIpamPool(callback: js.Function2[/* err */ AWSError, /* data */ DeleteIpamPoolResult, Unit]): Request[DeleteIpamPoolResult, AWSError] = js.native
+  /**
+    * Delete an IPAM pool.  You cannot delete an IPAM pool if there are allocations in it or CIDRs provisioned to it. To release allocations, see ReleaseIpamPoolAllocation. To deprovision pool CIDRs, see DeprovisionIpamPoolCidr.  For more information, see Delete a pool in the Amazon VPC IPAM User Guide. 
+    */
+  def deleteIpamPool(params: DeleteIpamPoolRequest): Request[DeleteIpamPoolResult, AWSError] = js.native
+  def deleteIpamPool(
+    params: DeleteIpamPoolRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteIpamPoolResult, Unit]
+  ): Request[DeleteIpamPoolResult, AWSError] = js.native
+  
+  /**
+    * Delete the scope for an IPAM. You cannot delete the default scopes. For more information, see Delete a scope in the Amazon VPC IPAM User Guide. 
+    */
+  def deleteIpamScope(): Request[DeleteIpamScopeResult, AWSError] = js.native
+  def deleteIpamScope(callback: js.Function2[/* err */ AWSError, /* data */ DeleteIpamScopeResult, Unit]): Request[DeleteIpamScopeResult, AWSError] = js.native
+  /**
+    * Delete the scope for an IPAM. You cannot delete the default scopes. For more information, see Delete a scope in the Amazon VPC IPAM User Guide. 
+    */
+  def deleteIpamScope(params: DeleteIpamScopeRequest): Request[DeleteIpamScopeResult, AWSError] = js.native
+  def deleteIpamScope(
+    params: DeleteIpamScopeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteIpamScopeResult, Unit]
+  ): Request[DeleteIpamScopeResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified key pair, by removing the public key from Amazon EC2.
+    */
+  def deleteKeyPair(): Request[js.Object, AWSError] = js.native
+  def deleteKeyPair(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified key pair, by removing the public key from Amazon EC2.
+    */
+  def deleteKeyPair(params: DeleteKeyPairRequest): Request[js.Object, AWSError] = js.native
+  def deleteKeyPair(
+    params: DeleteKeyPairRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes a launch template. Deleting a launch template deletes all of its versions.
+    */
+  def deleteLaunchTemplate(): Request[DeleteLaunchTemplateResult, AWSError] = js.native
+  def deleteLaunchTemplate(callback: js.Function2[/* err */ AWSError, /* data */ DeleteLaunchTemplateResult, Unit]): Request[DeleteLaunchTemplateResult, AWSError] = js.native
+  /**
+    * Deletes a launch template. Deleting a launch template deletes all of its versions.
+    */
+  def deleteLaunchTemplate(params: DeleteLaunchTemplateRequest): Request[DeleteLaunchTemplateResult, AWSError] = js.native
+  def deleteLaunchTemplate(
+    params: DeleteLaunchTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteLaunchTemplateResult, Unit]
+  ): Request[DeleteLaunchTemplateResult, AWSError] = js.native
+  
+  /**
+    * Deletes one or more versions of a launch template. You cannot delete the default version of a launch template; you must first assign a different version as the default. If the default version is the only version for the launch template, you must delete the entire launch template using DeleteLaunchTemplate.
+    */
+  def deleteLaunchTemplateVersions(): Request[DeleteLaunchTemplateVersionsResult, AWSError] = js.native
+  def deleteLaunchTemplateVersions(callback: js.Function2[/* err */ AWSError, /* data */ DeleteLaunchTemplateVersionsResult, Unit]): Request[DeleteLaunchTemplateVersionsResult, AWSError] = js.native
+  /**
+    * Deletes one or more versions of a launch template. You cannot delete the default version of a launch template; you must first assign a different version as the default. If the default version is the only version for the launch template, you must delete the entire launch template using DeleteLaunchTemplate.
+    */
+  def deleteLaunchTemplateVersions(params: DeleteLaunchTemplateVersionsRequest): Request[DeleteLaunchTemplateVersionsResult, AWSError] = js.native
+  def deleteLaunchTemplateVersions(
+    params: DeleteLaunchTemplateVersionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteLaunchTemplateVersionsResult, Unit]
+  ): Request[DeleteLaunchTemplateVersionsResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified route from the specified local gateway route table.
+    */
+  def deleteLocalGatewayRoute(): Request[DeleteLocalGatewayRouteResult, AWSError] = js.native
+  def deleteLocalGatewayRoute(callback: js.Function2[/* err */ AWSError, /* data */ DeleteLocalGatewayRouteResult, Unit]): Request[DeleteLocalGatewayRouteResult, AWSError] = js.native
+  /**
+    * Deletes the specified route from the specified local gateway route table.
+    */
+  def deleteLocalGatewayRoute(params: DeleteLocalGatewayRouteRequest): Request[DeleteLocalGatewayRouteResult, AWSError] = js.native
+  def deleteLocalGatewayRoute(
+    params: DeleteLocalGatewayRouteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteLocalGatewayRouteResult, Unit]
+  ): Request[DeleteLocalGatewayRouteResult, AWSError] = js.native
+  
+  /**
+    *  Deletes a local gateway route table. 
+    */
+  def deleteLocalGatewayRouteTable(): Request[DeleteLocalGatewayRouteTableResult, AWSError] = js.native
+  def deleteLocalGatewayRouteTable(callback: js.Function2[/* err */ AWSError, /* data */ DeleteLocalGatewayRouteTableResult, Unit]): Request[DeleteLocalGatewayRouteTableResult, AWSError] = js.native
+  /**
+    *  Deletes a local gateway route table. 
+    */
+  def deleteLocalGatewayRouteTable(params: DeleteLocalGatewayRouteTableRequest): Request[DeleteLocalGatewayRouteTableResult, AWSError] = js.native
+  def deleteLocalGatewayRouteTable(
+    params: DeleteLocalGatewayRouteTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteLocalGatewayRouteTableResult, Unit]
+  ): Request[DeleteLocalGatewayRouteTableResult, AWSError] = js.native
+  
+  /**
+    *  Deletes a local gateway route table virtual interface group association. 
+    */
+  def deleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation(): Request[DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult, AWSError] = js.native
+  def deleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult, 
+      Unit
+    ]
+  ): Request[DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult, AWSError] = js.native
+  /**
+    *  Deletes a local gateway route table virtual interface group association. 
+    */
+  def deleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation(params: DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequest): Request[DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult, AWSError] = js.native
+  def deleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation(
+    params: DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult, 
+      Unit
+    ]
+  ): Request[DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified association between a VPC and local gateway route table.
+    */
+  def deleteLocalGatewayRouteTableVpcAssociation(): Request[DeleteLocalGatewayRouteTableVpcAssociationResult, AWSError] = js.native
+  def deleteLocalGatewayRouteTableVpcAssociation(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeleteLocalGatewayRouteTableVpcAssociationResult, 
+      Unit
+    ]
+  ): Request[DeleteLocalGatewayRouteTableVpcAssociationResult, AWSError] = js.native
+  /**
+    * Deletes the specified association between a VPC and local gateway route table.
+    */
+  def deleteLocalGatewayRouteTableVpcAssociation(params: DeleteLocalGatewayRouteTableVpcAssociationRequest): Request[DeleteLocalGatewayRouteTableVpcAssociationResult, AWSError] = js.native
+  def deleteLocalGatewayRouteTableVpcAssociation(
+    params: DeleteLocalGatewayRouteTableVpcAssociationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeleteLocalGatewayRouteTableVpcAssociationResult, 
+      Unit
+    ]
+  ): Request[DeleteLocalGatewayRouteTableVpcAssociationResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified managed prefix list. You must first remove all references to the prefix list in your resources.
+    */
+  def deleteManagedPrefixList(): Request[DeleteManagedPrefixListResult, AWSError] = js.native
+  def deleteManagedPrefixList(callback: js.Function2[/* err */ AWSError, /* data */ DeleteManagedPrefixListResult, Unit]): Request[DeleteManagedPrefixListResult, AWSError] = js.native
+  /**
+    * Deletes the specified managed prefix list. You must first remove all references to the prefix list in your resources.
+    */
+  def deleteManagedPrefixList(params: DeleteManagedPrefixListRequest): Request[DeleteManagedPrefixListResult, AWSError] = js.native
+  def deleteManagedPrefixList(
+    params: DeleteManagedPrefixListRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteManagedPrefixListResult, Unit]
+  ): Request[DeleteManagedPrefixListResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified NAT gateway. Deleting a public NAT gateway disassociates its Elastic IP address, but does not release the address from your account. Deleting a NAT gateway does not delete any NAT gateway routes in your route tables.
+    */
+  def deleteNatGateway(): Request[DeleteNatGatewayResult, AWSError] = js.native
+  def deleteNatGateway(callback: js.Function2[/* err */ AWSError, /* data */ DeleteNatGatewayResult, Unit]): Request[DeleteNatGatewayResult, AWSError] = js.native
+  /**
+    * Deletes the specified NAT gateway. Deleting a public NAT gateway disassociates its Elastic IP address, but does not release the address from your account. Deleting a NAT gateway does not delete any NAT gateway routes in your route tables.
+    */
+  def deleteNatGateway(params: DeleteNatGatewayRequest): Request[DeleteNatGatewayResult, AWSError] = js.native
+  def deleteNatGateway(
+    params: DeleteNatGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteNatGatewayResult, Unit]
+  ): Request[DeleteNatGatewayResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified network ACL. You can't delete the ACL if it's associated with any subnets. You can't delete the default network ACL.
+    */
+  def deleteNetworkAcl(): Request[js.Object, AWSError] = js.native
+  def deleteNetworkAcl(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified network ACL. You can't delete the ACL if it's associated with any subnets. You can't delete the default network ACL.
+    */
+  def deleteNetworkAcl(params: DeleteNetworkAclRequest): Request[js.Object, AWSError] = js.native
+  def deleteNetworkAcl(
+    params: DeleteNetworkAclRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the specified ingress or egress entry (rule) from the specified network ACL.
+    */
+  def deleteNetworkAclEntry(): Request[js.Object, AWSError] = js.native
+  def deleteNetworkAclEntry(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified ingress or egress entry (rule) from the specified network ACL.
+    */
+  def deleteNetworkAclEntry(params: DeleteNetworkAclEntryRequest): Request[js.Object, AWSError] = js.native
+  def deleteNetworkAclEntry(
+    params: DeleteNetworkAclEntryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the specified Network Access Scope.
+    */
+  def deleteNetworkInsightsAccessScope(): Request[DeleteNetworkInsightsAccessScopeResult, AWSError] = js.native
+  def deleteNetworkInsightsAccessScope(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteNetworkInsightsAccessScopeResult, Unit]
+  ): Request[DeleteNetworkInsightsAccessScopeResult, AWSError] = js.native
+  /**
+    * Deletes the specified Network Access Scope.
+    */
+  def deleteNetworkInsightsAccessScope(params: DeleteNetworkInsightsAccessScopeRequest): Request[DeleteNetworkInsightsAccessScopeResult, AWSError] = js.native
+  def deleteNetworkInsightsAccessScope(
+    params: DeleteNetworkInsightsAccessScopeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteNetworkInsightsAccessScopeResult, Unit]
+  ): Request[DeleteNetworkInsightsAccessScopeResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified Network Access Scope analysis.
+    */
+  def deleteNetworkInsightsAccessScopeAnalysis(): Request[DeleteNetworkInsightsAccessScopeAnalysisResult, AWSError] = js.native
+  def deleteNetworkInsightsAccessScopeAnalysis(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteNetworkInsightsAccessScopeAnalysisResult, Unit]
+  ): Request[DeleteNetworkInsightsAccessScopeAnalysisResult, AWSError] = js.native
+  /**
+    * Deletes the specified Network Access Scope analysis.
+    */
+  def deleteNetworkInsightsAccessScopeAnalysis(params: DeleteNetworkInsightsAccessScopeAnalysisRequest): Request[DeleteNetworkInsightsAccessScopeAnalysisResult, AWSError] = js.native
+  def deleteNetworkInsightsAccessScopeAnalysis(
+    params: DeleteNetworkInsightsAccessScopeAnalysisRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteNetworkInsightsAccessScopeAnalysisResult, Unit]
+  ): Request[DeleteNetworkInsightsAccessScopeAnalysisResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified network insights analysis.
+    */
+  def deleteNetworkInsightsAnalysis(): Request[DeleteNetworkInsightsAnalysisResult, AWSError] = js.native
+  def deleteNetworkInsightsAnalysis(callback: js.Function2[/* err */ AWSError, /* data */ DeleteNetworkInsightsAnalysisResult, Unit]): Request[DeleteNetworkInsightsAnalysisResult, AWSError] = js.native
+  /**
+    * Deletes the specified network insights analysis.
+    */
+  def deleteNetworkInsightsAnalysis(params: DeleteNetworkInsightsAnalysisRequest): Request[DeleteNetworkInsightsAnalysisResult, AWSError] = js.native
+  def deleteNetworkInsightsAnalysis(
+    params: DeleteNetworkInsightsAnalysisRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteNetworkInsightsAnalysisResult, Unit]
+  ): Request[DeleteNetworkInsightsAnalysisResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified path.
+    */
+  def deleteNetworkInsightsPath(): Request[DeleteNetworkInsightsPathResult, AWSError] = js.native
+  def deleteNetworkInsightsPath(callback: js.Function2[/* err */ AWSError, /* data */ DeleteNetworkInsightsPathResult, Unit]): Request[DeleteNetworkInsightsPathResult, AWSError] = js.native
+  /**
+    * Deletes the specified path.
+    */
+  def deleteNetworkInsightsPath(params: DeleteNetworkInsightsPathRequest): Request[DeleteNetworkInsightsPathResult, AWSError] = js.native
+  def deleteNetworkInsightsPath(
+    params: DeleteNetworkInsightsPathRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteNetworkInsightsPathResult, Unit]
+  ): Request[DeleteNetworkInsightsPathResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified network interface. You must detach the network interface before you can delete it.
+    */
+  def deleteNetworkInterface(): Request[js.Object, AWSError] = js.native
+  def deleteNetworkInterface(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified network interface. You must detach the network interface before you can delete it.
+    */
+  def deleteNetworkInterface(params: DeleteNetworkInterfaceRequest): Request[js.Object, AWSError] = js.native
+  def deleteNetworkInterface(
+    params: DeleteNetworkInterfaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes a permission for a network interface. By default, you cannot delete the permission if the account for which you're removing the permission has attached the network interface to an instance. However, you can force delete the permission, regardless of any attachment.
+    */
+  def deleteNetworkInterfacePermission(): Request[DeleteNetworkInterfacePermissionResult, AWSError] = js.native
+  def deleteNetworkInterfacePermission(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteNetworkInterfacePermissionResult, Unit]
+  ): Request[DeleteNetworkInterfacePermissionResult, AWSError] = js.native
+  /**
+    * Deletes a permission for a network interface. By default, you cannot delete the permission if the account for which you're removing the permission has attached the network interface to an instance. However, you can force delete the permission, regardless of any attachment.
+    */
+  def deleteNetworkInterfacePermission(params: DeleteNetworkInterfacePermissionRequest): Request[DeleteNetworkInterfacePermissionResult, AWSError] = js.native
+  def deleteNetworkInterfacePermission(
+    params: DeleteNetworkInterfacePermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteNetworkInterfacePermissionResult, Unit]
+  ): Request[DeleteNetworkInterfacePermissionResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified placement group. You must terminate all instances in the placement group before you can delete the placement group. For more information, see Placement groups in the Amazon EC2 User Guide.
+    */
+  def deletePlacementGroup(): Request[js.Object, AWSError] = js.native
+  def deletePlacementGroup(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified placement group. You must terminate all instances in the placement group before you can delete the placement group. For more information, see Placement groups in the Amazon EC2 User Guide.
+    */
+  def deletePlacementGroup(params: DeletePlacementGroupRequest): Request[js.Object, AWSError] = js.native
+  def deletePlacementGroup(
+    params: DeletePlacementGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Delete a public IPv4 pool. A public IPv4 pool is an EC2 IP address pool required for the public IPv4 CIDRs that you own and bring to Amazon Web Services to manage with IPAM. IPv6 addresses you bring to Amazon Web Services, however, use IPAM pools only.
+    */
+  def deletePublicIpv4Pool(): Request[DeletePublicIpv4PoolResult, AWSError] = js.native
+  def deletePublicIpv4Pool(callback: js.Function2[/* err */ AWSError, /* data */ DeletePublicIpv4PoolResult, Unit]): Request[DeletePublicIpv4PoolResult, AWSError] = js.native
+  /**
+    * Delete a public IPv4 pool. A public IPv4 pool is an EC2 IP address pool required for the public IPv4 CIDRs that you own and bring to Amazon Web Services to manage with IPAM. IPv6 addresses you bring to Amazon Web Services, however, use IPAM pools only.
+    */
+  def deletePublicIpv4Pool(params: DeletePublicIpv4PoolRequest): Request[DeletePublicIpv4PoolResult, AWSError] = js.native
+  def deletePublicIpv4Pool(
+    params: DeletePublicIpv4PoolRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeletePublicIpv4PoolResult, Unit]
+  ): Request[DeletePublicIpv4PoolResult, AWSError] = js.native
+  
+  /**
+    * Deletes the queued purchases for the specified Reserved Instances.
+    */
+  def deleteQueuedReservedInstances(): Request[DeleteQueuedReservedInstancesResult, AWSError] = js.native
+  def deleteQueuedReservedInstances(callback: js.Function2[/* err */ AWSError, /* data */ DeleteQueuedReservedInstancesResult, Unit]): Request[DeleteQueuedReservedInstancesResult, AWSError] = js.native
+  /**
+    * Deletes the queued purchases for the specified Reserved Instances.
+    */
+  def deleteQueuedReservedInstances(params: DeleteQueuedReservedInstancesRequest): Request[DeleteQueuedReservedInstancesResult, AWSError] = js.native
+  def deleteQueuedReservedInstances(
+    params: DeleteQueuedReservedInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteQueuedReservedInstancesResult, Unit]
+  ): Request[DeleteQueuedReservedInstancesResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified route from the specified route table.
+    */
+  def deleteRoute(): Request[js.Object, AWSError] = js.native
+  def deleteRoute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified route from the specified route table.
+    */
+  def deleteRoute(params: DeleteRouteRequest): Request[js.Object, AWSError] = js.native
+  def deleteRoute(params: DeleteRouteRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the specified route table. You must disassociate the route table from any subnets before you can delete it. You can't delete the main route table.
+    */
+  def deleteRouteTable(): Request[js.Object, AWSError] = js.native
+  def deleteRouteTable(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified route table. You must disassociate the route table from any subnets before you can delete it. You can't delete the main route table.
+    */
+  def deleteRouteTable(params: DeleteRouteTableRequest): Request[js.Object, AWSError] = js.native
+  def deleteRouteTable(
+    params: DeleteRouteTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes a security group. If you attempt to delete a security group that is associated with an instance, or is referenced by another security group, the operation fails with InvalidGroup.InUse in EC2-Classic or DependencyViolation in EC2-VPC.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def deleteSecurityGroup(): Request[js.Object, AWSError] = js.native
+  def deleteSecurityGroup(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a security group. If you attempt to delete a security group that is associated with an instance, or is referenced by another security group, the operation fails with InvalidGroup.InUse in EC2-Classic or DependencyViolation in EC2-VPC.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def deleteSecurityGroup(params: DeleteSecurityGroupRequest): Request[js.Object, AWSError] = js.native
+  def deleteSecurityGroup(
+    params: DeleteSecurityGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the specified snapshot. When you make periodic snapshots of a volume, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the volume. You cannot delete a snapshot of the root device of an EBS volume used by a registered AMI. You must first de-register the AMI before you can delete the snapshot. For more information, see Delete an Amazon EBS snapshot in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def deleteSnapshot(): Request[js.Object, AWSError] = js.native
+  def deleteSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified snapshot. When you make periodic snapshots of a volume, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the volume. You cannot delete a snapshot of the root device of an EBS volume used by a registered AMI. You must first de-register the AMI before you can delete the snapshot. For more information, see Delete an Amazon EBS snapshot in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def deleteSnapshot(params: DeleteSnapshotRequest): Request[js.Object, AWSError] = js.native
+  def deleteSnapshot(
+    params: DeleteSnapshotRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the data feed for Spot Instances.
+    */
+  def deleteSpotDatafeedSubscription(): Request[js.Object, AWSError] = js.native
+  def deleteSpotDatafeedSubscription(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the data feed for Spot Instances.
+    */
+  def deleteSpotDatafeedSubscription(params: DeleteSpotDatafeedSubscriptionRequest): Request[js.Object, AWSError] = js.native
+  def deleteSpotDatafeedSubscription(
+    params: DeleteSpotDatafeedSubscriptionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the specified subnet. You must terminate all running instances in the subnet before you can delete the subnet.
+    */
+  def deleteSubnet(): Request[js.Object, AWSError] = js.native
+  def deleteSubnet(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified subnet. You must terminate all running instances in the subnet before you can delete the subnet.
+    */
+  def deleteSubnet(params: DeleteSubnetRequest): Request[js.Object, AWSError] = js.native
+  def deleteSubnet(
+    params: DeleteSubnetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes a subnet CIDR reservation.
+    */
+  def deleteSubnetCidrReservation(): Request[DeleteSubnetCidrReservationResult, AWSError] = js.native
+  def deleteSubnetCidrReservation(callback: js.Function2[/* err */ AWSError, /* data */ DeleteSubnetCidrReservationResult, Unit]): Request[DeleteSubnetCidrReservationResult, AWSError] = js.native
+  /**
+    * Deletes a subnet CIDR reservation.
+    */
+  def deleteSubnetCidrReservation(params: DeleteSubnetCidrReservationRequest): Request[DeleteSubnetCidrReservationResult, AWSError] = js.native
+  def deleteSubnetCidrReservation(
+    params: DeleteSubnetCidrReservationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteSubnetCidrReservationResult, Unit]
+  ): Request[DeleteSubnetCidrReservationResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified set of tags from the specified set of resources. To list the current tags, use DescribeTags. For more information about tags, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def deleteTags(): Request[js.Object, AWSError] = js.native
+  def deleteTags(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified set of tags from the specified set of resources. To list the current tags, use DescribeTags. For more information about tags, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def deleteTags(params: DeleteTagsRequest): Request[js.Object, AWSError] = js.native
+  def deleteTags(params: DeleteTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the specified Traffic Mirror filter. You cannot delete a Traffic Mirror filter that is in use by a Traffic Mirror session.
+    */
+  def deleteTrafficMirrorFilter(): Request[DeleteTrafficMirrorFilterResult, AWSError] = js.native
+  def deleteTrafficMirrorFilter(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrafficMirrorFilterResult, Unit]): Request[DeleteTrafficMirrorFilterResult, AWSError] = js.native
+  /**
+    * Deletes the specified Traffic Mirror filter. You cannot delete a Traffic Mirror filter that is in use by a Traffic Mirror session.
+    */
+  def deleteTrafficMirrorFilter(params: DeleteTrafficMirrorFilterRequest): Request[DeleteTrafficMirrorFilterResult, AWSError] = js.native
+  def deleteTrafficMirrorFilter(
+    params: DeleteTrafficMirrorFilterRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrafficMirrorFilterResult, Unit]
+  ): Request[DeleteTrafficMirrorFilterResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified Traffic Mirror rule.
+    */
+  def deleteTrafficMirrorFilterRule(): Request[DeleteTrafficMirrorFilterRuleResult, AWSError] = js.native
+  def deleteTrafficMirrorFilterRule(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrafficMirrorFilterRuleResult, Unit]): Request[DeleteTrafficMirrorFilterRuleResult, AWSError] = js.native
+  /**
+    * Deletes the specified Traffic Mirror rule.
+    */
+  def deleteTrafficMirrorFilterRule(params: DeleteTrafficMirrorFilterRuleRequest): Request[DeleteTrafficMirrorFilterRuleResult, AWSError] = js.native
+  def deleteTrafficMirrorFilterRule(
+    params: DeleteTrafficMirrorFilterRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrafficMirrorFilterRuleResult, Unit]
+  ): Request[DeleteTrafficMirrorFilterRuleResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified Traffic Mirror session.
+    */
+  def deleteTrafficMirrorSession(): Request[DeleteTrafficMirrorSessionResult, AWSError] = js.native
+  def deleteTrafficMirrorSession(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrafficMirrorSessionResult, Unit]): Request[DeleteTrafficMirrorSessionResult, AWSError] = js.native
+  /**
+    * Deletes the specified Traffic Mirror session.
+    */
+  def deleteTrafficMirrorSession(params: DeleteTrafficMirrorSessionRequest): Request[DeleteTrafficMirrorSessionResult, AWSError] = js.native
+  def deleteTrafficMirrorSession(
+    params: DeleteTrafficMirrorSessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrafficMirrorSessionResult, Unit]
+  ): Request[DeleteTrafficMirrorSessionResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified Traffic Mirror target. You cannot delete a Traffic Mirror target that is in use by a Traffic Mirror session.
+    */
+  def deleteTrafficMirrorTarget(): Request[DeleteTrafficMirrorTargetResult, AWSError] = js.native
+  def deleteTrafficMirrorTarget(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrafficMirrorTargetResult, Unit]): Request[DeleteTrafficMirrorTargetResult, AWSError] = js.native
+  /**
+    * Deletes the specified Traffic Mirror target. You cannot delete a Traffic Mirror target that is in use by a Traffic Mirror session.
+    */
+  def deleteTrafficMirrorTarget(params: DeleteTrafficMirrorTargetRequest): Request[DeleteTrafficMirrorTargetResult, AWSError] = js.native
+  def deleteTrafficMirrorTarget(
+    params: DeleteTrafficMirrorTargetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrafficMirrorTargetResult, Unit]
+  ): Request[DeleteTrafficMirrorTargetResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified transit gateway.
+    */
+  def deleteTransitGateway(): Request[DeleteTransitGatewayResult, AWSError] = js.native
+  def deleteTransitGateway(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayResult, Unit]): Request[DeleteTransitGatewayResult, AWSError] = js.native
+  /**
+    * Deletes the specified transit gateway.
+    */
+  def deleteTransitGateway(params: DeleteTransitGatewayRequest): Request[DeleteTransitGatewayResult, AWSError] = js.native
+  def deleteTransitGateway(
+    params: DeleteTransitGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayResult, Unit]
+  ): Request[DeleteTransitGatewayResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified Connect attachment. You must first delete any Connect peers for the attachment.
+    */
+  def deleteTransitGatewayConnect(): Request[DeleteTransitGatewayConnectResult, AWSError] = js.native
+  def deleteTransitGatewayConnect(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayConnectResult, Unit]): Request[DeleteTransitGatewayConnectResult, AWSError] = js.native
+  /**
+    * Deletes the specified Connect attachment. You must first delete any Connect peers for the attachment.
+    */
+  def deleteTransitGatewayConnect(params: DeleteTransitGatewayConnectRequest): Request[DeleteTransitGatewayConnectResult, AWSError] = js.native
+  def deleteTransitGatewayConnect(
+    params: DeleteTransitGatewayConnectRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayConnectResult, Unit]
+  ): Request[DeleteTransitGatewayConnectResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified Connect peer.
+    */
+  def deleteTransitGatewayConnectPeer(): Request[DeleteTransitGatewayConnectPeerResult, AWSError] = js.native
+  def deleteTransitGatewayConnectPeer(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayConnectPeerResult, Unit]): Request[DeleteTransitGatewayConnectPeerResult, AWSError] = js.native
+  /**
+    * Deletes the specified Connect peer.
+    */
+  def deleteTransitGatewayConnectPeer(params: DeleteTransitGatewayConnectPeerRequest): Request[DeleteTransitGatewayConnectPeerResult, AWSError] = js.native
+  def deleteTransitGatewayConnectPeer(
+    params: DeleteTransitGatewayConnectPeerRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayConnectPeerResult, Unit]
+  ): Request[DeleteTransitGatewayConnectPeerResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified transit gateway multicast domain.
+    */
+  def deleteTransitGatewayMulticastDomain(): Request[DeleteTransitGatewayMulticastDomainResult, AWSError] = js.native
+  def deleteTransitGatewayMulticastDomain(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayMulticastDomainResult, Unit]
+  ): Request[DeleteTransitGatewayMulticastDomainResult, AWSError] = js.native
+  /**
+    * Deletes the specified transit gateway multicast domain.
+    */
+  def deleteTransitGatewayMulticastDomain(params: DeleteTransitGatewayMulticastDomainRequest): Request[DeleteTransitGatewayMulticastDomainResult, AWSError] = js.native
+  def deleteTransitGatewayMulticastDomain(
+    params: DeleteTransitGatewayMulticastDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayMulticastDomainResult, Unit]
+  ): Request[DeleteTransitGatewayMulticastDomainResult, AWSError] = js.native
+  
+  /**
+    * Deletes a transit gateway peering attachment.
+    */
+  def deleteTransitGatewayPeeringAttachment(): Request[DeleteTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  def deleteTransitGatewayPeeringAttachment(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayPeeringAttachmentResult, Unit]
+  ): Request[DeleteTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  /**
+    * Deletes a transit gateway peering attachment.
+    */
+  def deleteTransitGatewayPeeringAttachment(params: DeleteTransitGatewayPeeringAttachmentRequest): Request[DeleteTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  def deleteTransitGatewayPeeringAttachment(
+    params: DeleteTransitGatewayPeeringAttachmentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayPeeringAttachmentResult, Unit]
+  ): Request[DeleteTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified transit gateway policy table.
+    */
+  def deleteTransitGatewayPolicyTable(): Request[DeleteTransitGatewayPolicyTableResult, AWSError] = js.native
+  def deleteTransitGatewayPolicyTable(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayPolicyTableResult, Unit]): Request[DeleteTransitGatewayPolicyTableResult, AWSError] = js.native
+  /**
+    * Deletes the specified transit gateway policy table.
+    */
+  def deleteTransitGatewayPolicyTable(params: DeleteTransitGatewayPolicyTableRequest): Request[DeleteTransitGatewayPolicyTableResult, AWSError] = js.native
+  def deleteTransitGatewayPolicyTable(
+    params: DeleteTransitGatewayPolicyTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayPolicyTableResult, Unit]
+  ): Request[DeleteTransitGatewayPolicyTableResult, AWSError] = js.native
+  
+  /**
+    * Deletes a reference (route) to a prefix list in a specified transit gateway route table.
+    */
+  def deleteTransitGatewayPrefixListReference(): Request[DeleteTransitGatewayPrefixListReferenceResult, AWSError] = js.native
+  def deleteTransitGatewayPrefixListReference(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayPrefixListReferenceResult, Unit]
+  ): Request[DeleteTransitGatewayPrefixListReferenceResult, AWSError] = js.native
+  /**
+    * Deletes a reference (route) to a prefix list in a specified transit gateway route table.
+    */
+  def deleteTransitGatewayPrefixListReference(params: DeleteTransitGatewayPrefixListReferenceRequest): Request[DeleteTransitGatewayPrefixListReferenceResult, AWSError] = js.native
+  def deleteTransitGatewayPrefixListReference(
+    params: DeleteTransitGatewayPrefixListReferenceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayPrefixListReferenceResult, Unit]
+  ): Request[DeleteTransitGatewayPrefixListReferenceResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified route from the specified transit gateway route table.
+    */
+  def deleteTransitGatewayRoute(): Request[DeleteTransitGatewayRouteResult, AWSError] = js.native
+  def deleteTransitGatewayRoute(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayRouteResult, Unit]): Request[DeleteTransitGatewayRouteResult, AWSError] = js.native
+  /**
+    * Deletes the specified route from the specified transit gateway route table.
+    */
+  def deleteTransitGatewayRoute(params: DeleteTransitGatewayRouteRequest): Request[DeleteTransitGatewayRouteResult, AWSError] = js.native
+  def deleteTransitGatewayRoute(
+    params: DeleteTransitGatewayRouteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayRouteResult, Unit]
+  ): Request[DeleteTransitGatewayRouteResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified transit gateway route table. You must disassociate the route table from any transit gateway route tables before you can delete it.
+    */
+  def deleteTransitGatewayRouteTable(): Request[DeleteTransitGatewayRouteTableResult, AWSError] = js.native
+  def deleteTransitGatewayRouteTable(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayRouteTableResult, Unit]): Request[DeleteTransitGatewayRouteTableResult, AWSError] = js.native
+  /**
+    * Deletes the specified transit gateway route table. You must disassociate the route table from any transit gateway route tables before you can delete it.
+    */
+  def deleteTransitGatewayRouteTable(params: DeleteTransitGatewayRouteTableRequest): Request[DeleteTransitGatewayRouteTableResult, AWSError] = js.native
+  def deleteTransitGatewayRouteTable(
+    params: DeleteTransitGatewayRouteTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayRouteTableResult, Unit]
+  ): Request[DeleteTransitGatewayRouteTableResult, AWSError] = js.native
+  
+  /**
+    * Advertises to the transit gateway that a transit gateway route table is deleted.
+    */
+  def deleteTransitGatewayRouteTableAnnouncement(): Request[DeleteTransitGatewayRouteTableAnnouncementResult, AWSError] = js.native
+  def deleteTransitGatewayRouteTableAnnouncement(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeleteTransitGatewayRouteTableAnnouncementResult, 
+      Unit
+    ]
+  ): Request[DeleteTransitGatewayRouteTableAnnouncementResult, AWSError] = js.native
+  /**
+    * Advertises to the transit gateway that a transit gateway route table is deleted.
+    */
+  def deleteTransitGatewayRouteTableAnnouncement(params: DeleteTransitGatewayRouteTableAnnouncementRequest): Request[DeleteTransitGatewayRouteTableAnnouncementResult, AWSError] = js.native
+  def deleteTransitGatewayRouteTableAnnouncement(
+    params: DeleteTransitGatewayRouteTableAnnouncementRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeleteTransitGatewayRouteTableAnnouncementResult, 
+      Unit
+    ]
+  ): Request[DeleteTransitGatewayRouteTableAnnouncementResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified VPC attachment.
+    */
+  def deleteTransitGatewayVpcAttachment(): Request[DeleteTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  def deleteTransitGatewayVpcAttachment(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayVpcAttachmentResult, Unit]
+  ): Request[DeleteTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  /**
+    * Deletes the specified VPC attachment.
+    */
+  def deleteTransitGatewayVpcAttachment(params: DeleteTransitGatewayVpcAttachmentRequest): Request[DeleteTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  def deleteTransitGatewayVpcAttachment(
+    params: DeleteTransitGatewayVpcAttachmentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTransitGatewayVpcAttachmentResult, Unit]
+  ): Request[DeleteTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified EBS volume. The volume must be in the available state (not attached to an instance). The volume can remain in the deleting state for several minutes. For more information, see Delete an Amazon EBS volume in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def deleteVolume(): Request[js.Object, AWSError] = js.native
+  def deleteVolume(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified EBS volume. The volume must be in the available state (not attached to an instance). The volume can remain in the deleting state for several minutes. For more information, see Delete an Amazon EBS volume in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def deleteVolume(params: DeleteVolumeRequest): Request[js.Object, AWSError] = js.native
+  def deleteVolume(
+    params: DeleteVolumeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the specified VPC. You must detach or delete all gateways and resources that are associated with the VPC before you can delete it. For example, you must terminate all instances running in the VPC, delete all security groups associated with the VPC (except the default one), delete all route tables associated with the VPC (except the default one), and so on.
+    */
+  def deleteVpc(): Request[js.Object, AWSError] = js.native
+  def deleteVpc(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified VPC. You must detach or delete all gateways and resources that are associated with the VPC before you can delete it. For example, you must terminate all instances running in the VPC, delete all security groups associated with the VPC (except the default one), delete all route tables associated with the VPC (except the default one), and so on.
+    */
+  def deleteVpc(params: DeleteVpcRequest): Request[js.Object, AWSError] = js.native
+  def deleteVpc(params: DeleteVpcRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes one or more VPC endpoint connection notifications.
+    */
+  def deleteVpcEndpointConnectionNotifications(): Request[DeleteVpcEndpointConnectionNotificationsResult, AWSError] = js.native
+  def deleteVpcEndpointConnectionNotifications(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcEndpointConnectionNotificationsResult, Unit]
+  ): Request[DeleteVpcEndpointConnectionNotificationsResult, AWSError] = js.native
+  /**
+    * Deletes one or more VPC endpoint connection notifications.
+    */
+  def deleteVpcEndpointConnectionNotifications(params: DeleteVpcEndpointConnectionNotificationsRequest): Request[DeleteVpcEndpointConnectionNotificationsResult, AWSError] = js.native
+  def deleteVpcEndpointConnectionNotifications(
+    params: DeleteVpcEndpointConnectionNotificationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcEndpointConnectionNotificationsResult, Unit]
+  ): Request[DeleteVpcEndpointConnectionNotificationsResult, AWSError] = js.native
+  
+  /**
+    * Deletes one or more VPC endpoint service configurations in your account. Before you delete the endpoint service configuration, you must reject any Available or PendingAcceptance interface endpoint connections that are attached to the service.
+    */
+  def deleteVpcEndpointServiceConfigurations(): Request[DeleteVpcEndpointServiceConfigurationsResult, AWSError] = js.native
+  def deleteVpcEndpointServiceConfigurations(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcEndpointServiceConfigurationsResult, Unit]
+  ): Request[DeleteVpcEndpointServiceConfigurationsResult, AWSError] = js.native
+  /**
+    * Deletes one or more VPC endpoint service configurations in your account. Before you delete the endpoint service configuration, you must reject any Available or PendingAcceptance interface endpoint connections that are attached to the service.
+    */
+  def deleteVpcEndpointServiceConfigurations(params: DeleteVpcEndpointServiceConfigurationsRequest): Request[DeleteVpcEndpointServiceConfigurationsResult, AWSError] = js.native
+  def deleteVpcEndpointServiceConfigurations(
+    params: DeleteVpcEndpointServiceConfigurationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcEndpointServiceConfigurationsResult, Unit]
+  ): Request[DeleteVpcEndpointServiceConfigurationsResult, AWSError] = js.native
+  
+  /**
+    * Deletes one or more specified VPC endpoints. You can delete any of the following types of VPC endpoints.    Gateway endpoint,   Gateway Load Balancer endpoint,   Interface endpoint   The following rules apply when you delete a VPC endpoint:   When you delete a gateway endpoint, we delete the endpoint routes in the route tables that are associated with the endpoint.   When you delete a Gateway Load Balancer endpoint, we delete the endpoint network interfaces.  You can only delete Gateway Load Balancer endpoints when the routes that are associated with the endpoint are deleted.   When you delete an interface endpoint, we delete the endpoint network interfaces.  
+    */
+  def deleteVpcEndpoints(): Request[DeleteVpcEndpointsResult, AWSError] = js.native
+  def deleteVpcEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcEndpointsResult, Unit]): Request[DeleteVpcEndpointsResult, AWSError] = js.native
+  /**
+    * Deletes one or more specified VPC endpoints. You can delete any of the following types of VPC endpoints.    Gateway endpoint,   Gateway Load Balancer endpoint,   Interface endpoint   The following rules apply when you delete a VPC endpoint:   When you delete a gateway endpoint, we delete the endpoint routes in the route tables that are associated with the endpoint.   When you delete a Gateway Load Balancer endpoint, we delete the endpoint network interfaces.  You can only delete Gateway Load Balancer endpoints when the routes that are associated with the endpoint are deleted.   When you delete an interface endpoint, we delete the endpoint network interfaces.  
+    */
+  def deleteVpcEndpoints(params: DeleteVpcEndpointsRequest): Request[DeleteVpcEndpointsResult, AWSError] = js.native
+  def deleteVpcEndpoints(
+    params: DeleteVpcEndpointsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcEndpointsResult, Unit]
+  ): Request[DeleteVpcEndpointsResult, AWSError] = js.native
+  
+  /**
+    * Deletes a VPC peering connection. Either the owner of the requester VPC or the owner of the accepter VPC can delete the VPC peering connection if it's in the active state. The owner of the requester VPC can delete a VPC peering connection in the pending-acceptance state. You cannot delete a VPC peering connection that's in the failed state.
+    */
+  def deleteVpcPeeringConnection(): Request[DeleteVpcPeeringConnectionResult, AWSError] = js.native
+  def deleteVpcPeeringConnection(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcPeeringConnectionResult, Unit]): Request[DeleteVpcPeeringConnectionResult, AWSError] = js.native
+  /**
+    * Deletes a VPC peering connection. Either the owner of the requester VPC or the owner of the accepter VPC can delete the VPC peering connection if it's in the active state. The owner of the requester VPC can delete a VPC peering connection in the pending-acceptance state. You cannot delete a VPC peering connection that's in the failed state.
+    */
+  def deleteVpcPeeringConnection(params: DeleteVpcPeeringConnectionRequest): Request[DeleteVpcPeeringConnectionResult, AWSError] = js.native
+  def deleteVpcPeeringConnection(
+    params: DeleteVpcPeeringConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcPeeringConnectionResult, Unit]
+  ): Request[DeleteVpcPeeringConnectionResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified VPN connection. If you're deleting the VPC and its associated components, we recommend that you detach the virtual private gateway from the VPC and delete the VPC before deleting the VPN connection. If you believe that the tunnel credentials for your VPN connection have been compromised, you can delete the VPN connection and create a new one that has new keys, without needing to delete the VPC or virtual private gateway. If you create a new VPN connection, you must reconfigure the customer gateway device using the new configuration information returned with the new VPN connection ID. For certificate-based authentication, delete all Certificate Manager (ACM) private certificates used for the Amazon Web Services-side tunnel endpoints for the VPN connection before deleting the VPN connection.
+    */
+  def deleteVpnConnection(): Request[js.Object, AWSError] = js.native
+  def deleteVpnConnection(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified VPN connection. If you're deleting the VPC and its associated components, we recommend that you detach the virtual private gateway from the VPC and delete the VPC before deleting the VPN connection. If you believe that the tunnel credentials for your VPN connection have been compromised, you can delete the VPN connection and create a new one that has new keys, without needing to delete the VPC or virtual private gateway. If you create a new VPN connection, you must reconfigure the customer gateway device using the new configuration information returned with the new VPN connection ID. For certificate-based authentication, delete all Certificate Manager (ACM) private certificates used for the Amazon Web Services-side tunnel endpoints for the VPN connection before deleting the VPN connection.
+    */
+  def deleteVpnConnection(params: DeleteVpnConnectionRequest): Request[js.Object, AWSError] = js.native
+  def deleteVpnConnection(
+    params: DeleteVpnConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the specified static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. The static route allows traffic to be routed from the virtual private gateway to the VPN customer gateway.
+    */
+  def deleteVpnConnectionRoute(): Request[js.Object, AWSError] = js.native
+  def deleteVpnConnectionRoute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. The static route allows traffic to be routed from the virtual private gateway to the VPN customer gateway.
+    */
+  def deleteVpnConnectionRoute(params: DeleteVpnConnectionRouteRequest): Request[js.Object, AWSError] = js.native
+  def deleteVpnConnectionRoute(
+    params: DeleteVpnConnectionRouteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the specified virtual private gateway. You must first detach the virtual private gateway from the VPC. Note that you don't need to delete the virtual private gateway if you plan to delete and recreate the VPN connection between your VPC and your network.
+    */
+  def deleteVpnGateway(): Request[js.Object, AWSError] = js.native
+  def deleteVpnGateway(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified virtual private gateway. You must first detach the virtual private gateway from the VPC. Note that you don't need to delete the virtual private gateway if you plan to delete and recreate the VPN connection between your VPC and your network.
+    */
+  def deleteVpnGateway(params: DeleteVpnGatewayRequest): Request[js.Object, AWSError] = js.native
+  def deleteVpnGateway(
+    params: DeleteVpnGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Releases the specified address range that you provisioned for use with your Amazon Web Services resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
+    */
+  def deprovisionByoipCidr(): Request[DeprovisionByoipCidrResult, AWSError] = js.native
+  def deprovisionByoipCidr(callback: js.Function2[/* err */ AWSError, /* data */ DeprovisionByoipCidrResult, Unit]): Request[DeprovisionByoipCidrResult, AWSError] = js.native
+  /**
+    * Releases the specified address range that you provisioned for use with your Amazon Web Services resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
+    */
+  def deprovisionByoipCidr(params: DeprovisionByoipCidrRequest): Request[DeprovisionByoipCidrResult, AWSError] = js.native
+  def deprovisionByoipCidr(
+    params: DeprovisionByoipCidrRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeprovisionByoipCidrResult, Unit]
+  ): Request[DeprovisionByoipCidrResult, AWSError] = js.native
+  
+  /**
+    * Deprovision a CIDR provisioned from an IPAM pool. If you deprovision a CIDR from a pool that has a source pool, the CIDR is recycled back into the source pool. For more information, see Deprovision pool CIDRs in the Amazon VPC IPAM User Guide.
+    */
+  def deprovisionIpamPoolCidr(): Request[DeprovisionIpamPoolCidrResult, AWSError] = js.native
+  def deprovisionIpamPoolCidr(callback: js.Function2[/* err */ AWSError, /* data */ DeprovisionIpamPoolCidrResult, Unit]): Request[DeprovisionIpamPoolCidrResult, AWSError] = js.native
+  /**
+    * Deprovision a CIDR provisioned from an IPAM pool. If you deprovision a CIDR from a pool that has a source pool, the CIDR is recycled back into the source pool. For more information, see Deprovision pool CIDRs in the Amazon VPC IPAM User Guide.
+    */
+  def deprovisionIpamPoolCidr(params: DeprovisionIpamPoolCidrRequest): Request[DeprovisionIpamPoolCidrResult, AWSError] = js.native
+  def deprovisionIpamPoolCidr(
+    params: DeprovisionIpamPoolCidrRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeprovisionIpamPoolCidrResult, Unit]
+  ): Request[DeprovisionIpamPoolCidrResult, AWSError] = js.native
+  
+  /**
+    * Deprovision a CIDR from a public IPv4 pool.
+    */
+  def deprovisionPublicIpv4PoolCidr(): Request[DeprovisionPublicIpv4PoolCidrResult, AWSError] = js.native
+  def deprovisionPublicIpv4PoolCidr(callback: js.Function2[/* err */ AWSError, /* data */ DeprovisionPublicIpv4PoolCidrResult, Unit]): Request[DeprovisionPublicIpv4PoolCidrResult, AWSError] = js.native
+  /**
+    * Deprovision a CIDR from a public IPv4 pool.
+    */
+  def deprovisionPublicIpv4PoolCidr(params: DeprovisionPublicIpv4PoolCidrRequest): Request[DeprovisionPublicIpv4PoolCidrResult, AWSError] = js.native
+  def deprovisionPublicIpv4PoolCidr(
+    params: DeprovisionPublicIpv4PoolCidrRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeprovisionPublicIpv4PoolCidrResult, Unit]
+  ): Request[DeprovisionPublicIpv4PoolCidrResult, AWSError] = js.native
+  
+  /**
+    * Deregisters the specified AMI. After you deregister an AMI, it can't be used to launch new instances. If you deregister an AMI that matches a Recycle Bin retention rule, the AMI is retained in the Recycle Bin for the specified retention period. For more information, see Recycle Bin in the Amazon Elastic Compute Cloud User Guide. When you deregister an AMI, it doesn't affect any instances that you've already launched from the AMI. You'll continue to incur usage costs for those instances until you terminate them. When you deregister an Amazon EBS-backed AMI, it doesn't affect the snapshot that was created for the root volume of the instance during the AMI creation process. When you deregister an instance store-backed AMI, it doesn't affect the files that you uploaded to Amazon S3 when you created the AMI.
+    */
+  def deregisterImage(): Request[js.Object, AWSError] = js.native
+  def deregisterImage(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deregisters the specified AMI. After you deregister an AMI, it can't be used to launch new instances. If you deregister an AMI that matches a Recycle Bin retention rule, the AMI is retained in the Recycle Bin for the specified retention period. For more information, see Recycle Bin in the Amazon Elastic Compute Cloud User Guide. When you deregister an AMI, it doesn't affect any instances that you've already launched from the AMI. You'll continue to incur usage costs for those instances until you terminate them. When you deregister an Amazon EBS-backed AMI, it doesn't affect the snapshot that was created for the root volume of the instance during the AMI creation process. When you deregister an instance store-backed AMI, it doesn't affect the files that you uploaded to Amazon S3 when you created the AMI.
+    */
+  def deregisterImage(params: DeregisterImageRequest): Request[js.Object, AWSError] = js.native
+  def deregisterImage(
+    params: DeregisterImageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deregisters tag keys to prevent tags that have the specified tag keys from being included in scheduled event notifications for resources in the Region.
+    */
+  def deregisterInstanceEventNotificationAttributes(): Request[DeregisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  def deregisterInstanceEventNotificationAttributes(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeregisterInstanceEventNotificationAttributesResult, 
+      Unit
+    ]
+  ): Request[DeregisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  /**
+    * Deregisters tag keys to prevent tags that have the specified tag keys from being included in scheduled event notifications for resources in the Region.
+    */
+  def deregisterInstanceEventNotificationAttributes(params: DeregisterInstanceEventNotificationAttributesRequest): Request[DeregisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  def deregisterInstanceEventNotificationAttributes(
+    params: DeregisterInstanceEventNotificationAttributesRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeregisterInstanceEventNotificationAttributesResult, 
+      Unit
+    ]
+  ): Request[DeregisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  
+  /**
+    * Deregisters the specified members (network interfaces) from the transit gateway multicast group.
+    */
+  def deregisterTransitGatewayMulticastGroupMembers(): Request[DeregisterTransitGatewayMulticastGroupMembersResult, AWSError] = js.native
+  def deregisterTransitGatewayMulticastGroupMembers(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeregisterTransitGatewayMulticastGroupMembersResult, 
+      Unit
+    ]
+  ): Request[DeregisterTransitGatewayMulticastGroupMembersResult, AWSError] = js.native
+  /**
+    * Deregisters the specified members (network interfaces) from the transit gateway multicast group.
+    */
+  def deregisterTransitGatewayMulticastGroupMembers(params: DeregisterTransitGatewayMulticastGroupMembersRequest): Request[DeregisterTransitGatewayMulticastGroupMembersResult, AWSError] = js.native
+  def deregisterTransitGatewayMulticastGroupMembers(
+    params: DeregisterTransitGatewayMulticastGroupMembersRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeregisterTransitGatewayMulticastGroupMembersResult, 
+      Unit
+    ]
+  ): Request[DeregisterTransitGatewayMulticastGroupMembersResult, AWSError] = js.native
+  
+  /**
+    * Deregisters the specified sources (network interfaces) from the transit gateway multicast group.
+    */
+  def deregisterTransitGatewayMulticastGroupSources(): Request[DeregisterTransitGatewayMulticastGroupSourcesResult, AWSError] = js.native
+  def deregisterTransitGatewayMulticastGroupSources(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeregisterTransitGatewayMulticastGroupSourcesResult, 
+      Unit
+    ]
+  ): Request[DeregisterTransitGatewayMulticastGroupSourcesResult, AWSError] = js.native
+  /**
+    * Deregisters the specified sources (network interfaces) from the transit gateway multicast group.
+    */
+  def deregisterTransitGatewayMulticastGroupSources(params: DeregisterTransitGatewayMulticastGroupSourcesRequest): Request[DeregisterTransitGatewayMulticastGroupSourcesResult, AWSError] = js.native
+  def deregisterTransitGatewayMulticastGroupSources(
+    params: DeregisterTransitGatewayMulticastGroupSourcesRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeregisterTransitGatewayMulticastGroupSourcesResult, 
+      Unit
+    ]
+  ): Request[DeregisterTransitGatewayMulticastGroupSourcesResult, AWSError] = js.native
+  
+  /**
+    * Describes attributes of your Amazon Web Services account. The following are the supported account attributes:    supported-platforms: Indicates whether your account can launch instances into EC2-Classic and EC2-VPC, or only into EC2-VPC.    default-vpc: The ID of the default VPC for your account, or none.    max-instances: This attribute is no longer supported. The returned value does not reflect your actual vCPU limit for running On-Demand Instances. For more information, see On-Demand Instance Limits in the Amazon Elastic Compute Cloud User Guide.    vpc-max-security-groups-per-interface: The maximum number of security groups that you can assign to a network interface.    max-elastic-ips: The maximum number of Elastic IP addresses that you can allocate for use with EC2-Classic.     vpc-max-elastic-ips: The maximum number of Elastic IP addresses that you can allocate for use with EC2-VPC.    We are retiring EC2-Classic on August 15, 2022. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon EC2 User Guide. 
+    */
+  def describeAccountAttributes(): Request[DescribeAccountAttributesResult, AWSError] = js.native
+  def describeAccountAttributes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountAttributesResult, Unit]): Request[DescribeAccountAttributesResult, AWSError] = js.native
+  /**
+    * Describes attributes of your Amazon Web Services account. The following are the supported account attributes:    supported-platforms: Indicates whether your account can launch instances into EC2-Classic and EC2-VPC, or only into EC2-VPC.    default-vpc: The ID of the default VPC for your account, or none.    max-instances: This attribute is no longer supported. The returned value does not reflect your actual vCPU limit for running On-Demand Instances. For more information, see On-Demand Instance Limits in the Amazon Elastic Compute Cloud User Guide.    vpc-max-security-groups-per-interface: The maximum number of security groups that you can assign to a network interface.    max-elastic-ips: The maximum number of Elastic IP addresses that you can allocate for use with EC2-Classic.     vpc-max-elastic-ips: The maximum number of Elastic IP addresses that you can allocate for use with EC2-VPC.    We are retiring EC2-Classic on August 15, 2022. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon EC2 User Guide. 
+    */
+  def describeAccountAttributes(params: DescribeAccountAttributesRequest): Request[DescribeAccountAttributesResult, AWSError] = js.native
+  def describeAccountAttributes(
+    params: DescribeAccountAttributesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountAttributesResult, Unit]
+  ): Request[DescribeAccountAttributesResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified Elastic IP addresses or all of your Elastic IP addresses. An Elastic IP address is for use in either the EC2-Classic platform or in a VPC. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def describeAddresses(): Request[DescribeAddressesResult, AWSError] = js.native
+  def describeAddresses(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAddressesResult, Unit]): Request[DescribeAddressesResult, AWSError] = js.native
+  /**
+    * Describes the specified Elastic IP addresses or all of your Elastic IP addresses. An Elastic IP address is for use in either the EC2-Classic platform or in a VPC. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def describeAddresses(params: DescribeAddressesRequest): Request[DescribeAddressesResult, AWSError] = js.native
+  def describeAddresses(
+    params: DescribeAddressesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAddressesResult, Unit]
+  ): Request[DescribeAddressesResult, AWSError] = js.native
+  
+  /**
+    * Describes the attributes of the specified Elastic IP addresses. For requirements, see Using reverse DNS for email applications.
+    */
+  def describeAddressesAttribute(): Request[DescribeAddressesAttributeResult, AWSError] = js.native
+  def describeAddressesAttribute(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAddressesAttributeResult, Unit]): Request[DescribeAddressesAttributeResult, AWSError] = js.native
+  /**
+    * Describes the attributes of the specified Elastic IP addresses. For requirements, see Using reverse DNS for email applications.
+    */
+  def describeAddressesAttribute(params: DescribeAddressesAttributeRequest): Request[DescribeAddressesAttributeResult, AWSError] = js.native
+  def describeAddressesAttribute(
+    params: DescribeAddressesAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAddressesAttributeResult, Unit]
+  ): Request[DescribeAddressesAttributeResult, AWSError] = js.native
+  
+  /**
+    * Describes the longer ID format settings for all resource types in a specific Region. This request is useful for performing a quick audit to determine whether a specific Region is fully opted in for longer IDs (17-character IDs). This request only returns information about resource types that support longer IDs. The following resource types support longer IDs: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | instance | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | reservation | route-table | route-table-association | security-group | snapshot | subnet | subnet-cidr-block-association | volume | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway.
+    */
+  def describeAggregateIdFormat(): Request[DescribeAggregateIdFormatResult, AWSError] = js.native
+  def describeAggregateIdFormat(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAggregateIdFormatResult, Unit]): Request[DescribeAggregateIdFormatResult, AWSError] = js.native
+  /**
+    * Describes the longer ID format settings for all resource types in a specific Region. This request is useful for performing a quick audit to determine whether a specific Region is fully opted in for longer IDs (17-character IDs). This request only returns information about resource types that support longer IDs. The following resource types support longer IDs: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | instance | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | reservation | route-table | route-table-association | security-group | snapshot | subnet | subnet-cidr-block-association | volume | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway.
+    */
+  def describeAggregateIdFormat(params: DescribeAggregateIdFormatRequest): Request[DescribeAggregateIdFormatResult, AWSError] = js.native
+  def describeAggregateIdFormat(
+    params: DescribeAggregateIdFormatRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAggregateIdFormatResult, Unit]
+  ): Request[DescribeAggregateIdFormatResult, AWSError] = js.native
+  
+  /**
+    * Describes the Availability Zones, Local Zones, and Wavelength Zones that are available to you. If there is an event impacting a zone, you can use this request to view the state and any provided messages for that zone. For more information about Availability Zones, Local Zones, and Wavelength Zones, see Regions and zones in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeAvailabilityZones(): Request[DescribeAvailabilityZonesResult, AWSError] = js.native
+  def describeAvailabilityZones(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAvailabilityZonesResult, Unit]): Request[DescribeAvailabilityZonesResult, AWSError] = js.native
+  /**
+    * Describes the Availability Zones, Local Zones, and Wavelength Zones that are available to you. If there is an event impacting a zone, you can use this request to view the state and any provided messages for that zone. For more information about Availability Zones, Local Zones, and Wavelength Zones, see Regions and zones in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeAvailabilityZones(params: DescribeAvailabilityZonesRequest): Request[DescribeAvailabilityZonesResult, AWSError] = js.native
+  def describeAvailabilityZones(
+    params: DescribeAvailabilityZonesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAvailabilityZonesResult, Unit]
+  ): Request[DescribeAvailabilityZonesResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified bundle tasks or all of your bundle tasks.  Completed bundle tasks are listed for only a limited time. If your bundle task is no longer in the list, you can still register an AMI from it. Just use RegisterImage with the Amazon S3 bucket name and image manifest name you provided to the bundle task. 
+    */
+  def describeBundleTasks(): Request[DescribeBundleTasksResult, AWSError] = js.native
+  def describeBundleTasks(callback: js.Function2[/* err */ AWSError, /* data */ DescribeBundleTasksResult, Unit]): Request[DescribeBundleTasksResult, AWSError] = js.native
+  /**
+    * Describes the specified bundle tasks or all of your bundle tasks.  Completed bundle tasks are listed for only a limited time. If your bundle task is no longer in the list, you can still register an AMI from it. Just use RegisterImage with the Amazon S3 bucket name and image manifest name you provided to the bundle task. 
+    */
+  def describeBundleTasks(params: DescribeBundleTasksRequest): Request[DescribeBundleTasksResult, AWSError] = js.native
+  def describeBundleTasks(
+    params: DescribeBundleTasksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBundleTasksResult, Unit]
+  ): Request[DescribeBundleTasksResult, AWSError] = js.native
+  
+  /**
+    * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools or DescribeIpv6Pools.
+    */
+  def describeByoipCidrs(): Request[DescribeByoipCidrsResult, AWSError] = js.native
+  def describeByoipCidrs(callback: js.Function2[/* err */ AWSError, /* data */ DescribeByoipCidrsResult, Unit]): Request[DescribeByoipCidrsResult, AWSError] = js.native
+  /**
+    * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools or DescribeIpv6Pools.
+    */
+  def describeByoipCidrs(params: DescribeByoipCidrsRequest): Request[DescribeByoipCidrsResult, AWSError] = js.native
+  def describeByoipCidrs(
+    params: DescribeByoipCidrsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeByoipCidrsResult, Unit]
+  ): Request[DescribeByoipCidrsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more Capacity Reservation Fleets.
+    */
+  def describeCapacityReservationFleets(): Request[DescribeCapacityReservationFleetsResult, AWSError] = js.native
+  def describeCapacityReservationFleets(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeCapacityReservationFleetsResult, Unit]
+  ): Request[DescribeCapacityReservationFleetsResult, AWSError] = js.native
+  /**
+    * Describes one or more Capacity Reservation Fleets.
+    */
+  def describeCapacityReservationFleets(params: DescribeCapacityReservationFleetsRequest): Request[DescribeCapacityReservationFleetsResult, AWSError] = js.native
+  def describeCapacityReservationFleets(
+    params: DescribeCapacityReservationFleetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeCapacityReservationFleetsResult, Unit]
+  ): Request[DescribeCapacityReservationFleetsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the Amazon Web Services Region that you're currently using.
+    */
+  def describeCapacityReservations(): Request[DescribeCapacityReservationsResult, AWSError] = js.native
+  def describeCapacityReservations(callback: js.Function2[/* err */ AWSError, /* data */ DescribeCapacityReservationsResult, Unit]): Request[DescribeCapacityReservationsResult, AWSError] = js.native
+  /**
+    * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the Amazon Web Services Region that you're currently using.
+    */
+  def describeCapacityReservations(params: DescribeCapacityReservationsRequest): Request[DescribeCapacityReservationsResult, AWSError] = js.native
+  def describeCapacityReservations(
+    params: DescribeCapacityReservationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeCapacityReservationsResult, Unit]
+  ): Request[DescribeCapacityReservationsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your carrier gateways.
+    */
+  def describeCarrierGateways(): Request[DescribeCarrierGatewaysResult, AWSError] = js.native
+  def describeCarrierGateways(callback: js.Function2[/* err */ AWSError, /* data */ DescribeCarrierGatewaysResult, Unit]): Request[DescribeCarrierGatewaysResult, AWSError] = js.native
+  /**
+    * Describes one or more of your carrier gateways.
+    */
+  def describeCarrierGateways(params: DescribeCarrierGatewaysRequest): Request[DescribeCarrierGatewaysResult, AWSError] = js.native
+  def describeCarrierGateways(
+    params: DescribeCarrierGatewaysRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeCarrierGatewaysResult, Unit]
+  ): Request[DescribeCarrierGatewaysResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your linked EC2-Classic instances. This request only returns information about EC2-Classic instances linked to a VPC through ClassicLink. You cannot use this request to return information about other instances.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def describeClassicLinkInstances(): Request[DescribeClassicLinkInstancesResult, AWSError] = js.native
+  def describeClassicLinkInstances(callback: js.Function2[/* err */ AWSError, /* data */ DescribeClassicLinkInstancesResult, Unit]): Request[DescribeClassicLinkInstancesResult, AWSError] = js.native
+  /**
+    * Describes one or more of your linked EC2-Classic instances. This request only returns information about EC2-Classic instances linked to a VPC through ClassicLink. You cannot use this request to return information about other instances.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def describeClassicLinkInstances(params: DescribeClassicLinkInstancesRequest): Request[DescribeClassicLinkInstancesResult, AWSError] = js.native
+  def describeClassicLinkInstances(
+    params: DescribeClassicLinkInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeClassicLinkInstancesResult, Unit]
+  ): Request[DescribeClassicLinkInstancesResult, AWSError] = js.native
+  
+  /**
+    * Describes the authorization rules for a specified Client VPN endpoint.
+    */
+  def describeClientVpnAuthorizationRules(): Request[DescribeClientVpnAuthorizationRulesResult, AWSError] = js.native
+  def describeClientVpnAuthorizationRules(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeClientVpnAuthorizationRulesResult, Unit]
+  ): Request[DescribeClientVpnAuthorizationRulesResult, AWSError] = js.native
+  /**
+    * Describes the authorization rules for a specified Client VPN endpoint.
+    */
+  def describeClientVpnAuthorizationRules(params: DescribeClientVpnAuthorizationRulesRequest): Request[DescribeClientVpnAuthorizationRulesResult, AWSError] = js.native
+  def describeClientVpnAuthorizationRules(
+    params: DescribeClientVpnAuthorizationRulesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeClientVpnAuthorizationRulesResult, Unit]
+  ): Request[DescribeClientVpnAuthorizationRulesResult, AWSError] = js.native
+  
+  /**
+    * Describes active client connections and connections that have been terminated within the last 60 minutes for the specified Client VPN endpoint.
+    */
+  def describeClientVpnConnections(): Request[DescribeClientVpnConnectionsResult, AWSError] = js.native
+  def describeClientVpnConnections(callback: js.Function2[/* err */ AWSError, /* data */ DescribeClientVpnConnectionsResult, Unit]): Request[DescribeClientVpnConnectionsResult, AWSError] = js.native
+  /**
+    * Describes active client connections and connections that have been terminated within the last 60 minutes for the specified Client VPN endpoint.
+    */
+  def describeClientVpnConnections(params: DescribeClientVpnConnectionsRequest): Request[DescribeClientVpnConnectionsResult, AWSError] = js.native
+  def describeClientVpnConnections(
+    params: DescribeClientVpnConnectionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeClientVpnConnectionsResult, Unit]
+  ): Request[DescribeClientVpnConnectionsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more Client VPN endpoints in the account.
+    */
+  def describeClientVpnEndpoints(): Request[DescribeClientVpnEndpointsResult, AWSError] = js.native
+  def describeClientVpnEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ DescribeClientVpnEndpointsResult, Unit]): Request[DescribeClientVpnEndpointsResult, AWSError] = js.native
+  /**
+    * Describes one or more Client VPN endpoints in the account.
+    */
+  def describeClientVpnEndpoints(params: DescribeClientVpnEndpointsRequest): Request[DescribeClientVpnEndpointsResult, AWSError] = js.native
+  def describeClientVpnEndpoints(
+    params: DescribeClientVpnEndpointsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeClientVpnEndpointsResult, Unit]
+  ): Request[DescribeClientVpnEndpointsResult, AWSError] = js.native
+  
+  /**
+    * Describes the routes for the specified Client VPN endpoint.
+    */
+  def describeClientVpnRoutes(): Request[DescribeClientVpnRoutesResult, AWSError] = js.native
+  def describeClientVpnRoutes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeClientVpnRoutesResult, Unit]): Request[DescribeClientVpnRoutesResult, AWSError] = js.native
+  /**
+    * Describes the routes for the specified Client VPN endpoint.
+    */
+  def describeClientVpnRoutes(params: DescribeClientVpnRoutesRequest): Request[DescribeClientVpnRoutesResult, AWSError] = js.native
+  def describeClientVpnRoutes(
+    params: DescribeClientVpnRoutesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeClientVpnRoutesResult, Unit]
+  ): Request[DescribeClientVpnRoutesResult, AWSError] = js.native
+  
+  /**
+    * Describes the target networks associated with the specified Client VPN endpoint.
+    */
+  def describeClientVpnTargetNetworks(): Request[DescribeClientVpnTargetNetworksResult, AWSError] = js.native
+  def describeClientVpnTargetNetworks(callback: js.Function2[/* err */ AWSError, /* data */ DescribeClientVpnTargetNetworksResult, Unit]): Request[DescribeClientVpnTargetNetworksResult, AWSError] = js.native
+  /**
+    * Describes the target networks associated with the specified Client VPN endpoint.
+    */
+  def describeClientVpnTargetNetworks(params: DescribeClientVpnTargetNetworksRequest): Request[DescribeClientVpnTargetNetworksResult, AWSError] = js.native
+  def describeClientVpnTargetNetworks(
+    params: DescribeClientVpnTargetNetworksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeClientVpnTargetNetworksResult, Unit]
+  ): Request[DescribeClientVpnTargetNetworksResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified customer-owned address pools or all of your customer-owned address pools.
+    */
+  def describeCoipPools(): Request[DescribeCoipPoolsResult, AWSError] = js.native
+  def describeCoipPools(callback: js.Function2[/* err */ AWSError, /* data */ DescribeCoipPoolsResult, Unit]): Request[DescribeCoipPoolsResult, AWSError] = js.native
+  /**
+    * Describes the specified customer-owned address pools or all of your customer-owned address pools.
+    */
+  def describeCoipPools(params: DescribeCoipPoolsRequest): Request[DescribeCoipPoolsResult, AWSError] = js.native
+  def describeCoipPools(
+    params: DescribeCoipPoolsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeCoipPoolsResult, Unit]
+  ): Request[DescribeCoipPoolsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified conversion tasks or all your conversion tasks. For more information, see the VM Import/Export User Guide. For information about the import manifest referenced by this API action, see VM Import Manifest.
+    */
+  def describeConversionTasks(): Request[DescribeConversionTasksResult, AWSError] = js.native
+  def describeConversionTasks(callback: js.Function2[/* err */ AWSError, /* data */ DescribeConversionTasksResult, Unit]): Request[DescribeConversionTasksResult, AWSError] = js.native
+  /**
+    * Describes the specified conversion tasks or all your conversion tasks. For more information, see the VM Import/Export User Guide. For information about the import manifest referenced by this API action, see VM Import Manifest.
+    */
+  def describeConversionTasks(params: DescribeConversionTasksRequest): Request[DescribeConversionTasksResult, AWSError] = js.native
+  def describeConversionTasks(
+    params: DescribeConversionTasksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeConversionTasksResult, Unit]
+  ): Request[DescribeConversionTasksResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your VPN customer gateways. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def describeCustomerGateways(): Request[DescribeCustomerGatewaysResult, AWSError] = js.native
+  def describeCustomerGateways(callback: js.Function2[/* err */ AWSError, /* data */ DescribeCustomerGatewaysResult, Unit]): Request[DescribeCustomerGatewaysResult, AWSError] = js.native
+  /**
+    * Describes one or more of your VPN customer gateways. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def describeCustomerGateways(params: DescribeCustomerGatewaysRequest): Request[DescribeCustomerGatewaysResult, AWSError] = js.native
+  def describeCustomerGateways(
+    params: DescribeCustomerGatewaysRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeCustomerGatewaysResult, Unit]
+  ): Request[DescribeCustomerGatewaysResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your DHCP options sets. For more information, see DHCP options sets in the Amazon Virtual Private Cloud User Guide.
+    */
+  def describeDhcpOptions(): Request[DescribeDhcpOptionsResult, AWSError] = js.native
+  def describeDhcpOptions(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDhcpOptionsResult, Unit]): Request[DescribeDhcpOptionsResult, AWSError] = js.native
+  /**
+    * Describes one or more of your DHCP options sets. For more information, see DHCP options sets in the Amazon Virtual Private Cloud User Guide.
+    */
+  def describeDhcpOptions(params: DescribeDhcpOptionsRequest): Request[DescribeDhcpOptionsResult, AWSError] = js.native
+  def describeDhcpOptions(
+    params: DescribeDhcpOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDhcpOptionsResult, Unit]
+  ): Request[DescribeDhcpOptionsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your egress-only internet gateways.
+    */
+  def describeEgressOnlyInternetGateways(): Request[DescribeEgressOnlyInternetGatewaysResult, AWSError] = js.native
+  def describeEgressOnlyInternetGateways(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeEgressOnlyInternetGatewaysResult, Unit]
+  ): Request[DescribeEgressOnlyInternetGatewaysResult, AWSError] = js.native
+  /**
+    * Describes one or more of your egress-only internet gateways.
+    */
+  def describeEgressOnlyInternetGateways(params: DescribeEgressOnlyInternetGatewaysRequest): Request[DescribeEgressOnlyInternetGatewaysResult, AWSError] = js.native
+  def describeEgressOnlyInternetGateways(
+    params: DescribeEgressOnlyInternetGatewaysRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeEgressOnlyInternetGatewaysResult, Unit]
+  ): Request[DescribeEgressOnlyInternetGatewaysResult, AWSError] = js.native
+  
+  /**
+    * Describes the Elastic Graphics accelerator associated with your instances. For more information about Elastic Graphics, see Amazon Elastic Graphics.
+    */
+  def describeElasticGpus(): Request[DescribeElasticGpusResult, AWSError] = js.native
+  def describeElasticGpus(callback: js.Function2[/* err */ AWSError, /* data */ DescribeElasticGpusResult, Unit]): Request[DescribeElasticGpusResult, AWSError] = js.native
+  /**
+    * Describes the Elastic Graphics accelerator associated with your instances. For more information about Elastic Graphics, see Amazon Elastic Graphics.
+    */
+  def describeElasticGpus(params: DescribeElasticGpusRequest): Request[DescribeElasticGpusResult, AWSError] = js.native
+  def describeElasticGpus(
+    params: DescribeElasticGpusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeElasticGpusResult, Unit]
+  ): Request[DescribeElasticGpusResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified export image tasks or all of your export image tasks.
+    */
+  def describeExportImageTasks(): Request[DescribeExportImageTasksResult, AWSError] = js.native
+  def describeExportImageTasks(callback: js.Function2[/* err */ AWSError, /* data */ DescribeExportImageTasksResult, Unit]): Request[DescribeExportImageTasksResult, AWSError] = js.native
+  /**
+    * Describes the specified export image tasks or all of your export image tasks.
+    */
+  def describeExportImageTasks(params: DescribeExportImageTasksRequest): Request[DescribeExportImageTasksResult, AWSError] = js.native
+  def describeExportImageTasks(
+    params: DescribeExportImageTasksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeExportImageTasksResult, Unit]
+  ): Request[DescribeExportImageTasksResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified export instance tasks or all of your export instance tasks.
+    */
+  def describeExportTasks(): Request[DescribeExportTasksResult, AWSError] = js.native
+  def describeExportTasks(callback: js.Function2[/* err */ AWSError, /* data */ DescribeExportTasksResult, Unit]): Request[DescribeExportTasksResult, AWSError] = js.native
+  /**
+    * Describes the specified export instance tasks or all of your export instance tasks.
+    */
+  def describeExportTasks(params: DescribeExportTasksRequest): Request[DescribeExportTasksResult, AWSError] = js.native
+  def describeExportTasks(
+    params: DescribeExportTasksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeExportTasksResult, Unit]
+  ): Request[DescribeExportTasksResult, AWSError] = js.native
+  
+  /**
+    * Describe details for Windows AMIs that are configured for faster launching.
+    */
+  def describeFastLaunchImages(): Request[DescribeFastLaunchImagesResult, AWSError] = js.native
+  def describeFastLaunchImages(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFastLaunchImagesResult, Unit]): Request[DescribeFastLaunchImagesResult, AWSError] = js.native
+  /**
+    * Describe details for Windows AMIs that are configured for faster launching.
+    */
+  def describeFastLaunchImages(params: DescribeFastLaunchImagesRequest): Request[DescribeFastLaunchImagesResult, AWSError] = js.native
+  def describeFastLaunchImages(
+    params: DescribeFastLaunchImagesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFastLaunchImagesResult, Unit]
+  ): Request[DescribeFastLaunchImagesResult, AWSError] = js.native
+  
+  /**
+    * Describes the state of fast snapshot restores for your snapshots.
+    */
+  def describeFastSnapshotRestores(): Request[DescribeFastSnapshotRestoresResult, AWSError] = js.native
+  def describeFastSnapshotRestores(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFastSnapshotRestoresResult, Unit]): Request[DescribeFastSnapshotRestoresResult, AWSError] = js.native
+  /**
+    * Describes the state of fast snapshot restores for your snapshots.
+    */
+  def describeFastSnapshotRestores(params: DescribeFastSnapshotRestoresRequest): Request[DescribeFastSnapshotRestoresResult, AWSError] = js.native
+  def describeFastSnapshotRestores(
+    params: DescribeFastSnapshotRestoresRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFastSnapshotRestoresResult, Unit]
+  ): Request[DescribeFastSnapshotRestoresResult, AWSError] = js.native
+  
+  /**
+    * Describes the events for the specified EC2 Fleet during the specified time. EC2 Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. EC2 Fleet events are available for 48 hours. For more information, see Monitor fleet events using Amazon EventBridge in the Amazon EC2 User Guide.
+    */
+  def describeFleetHistory(): Request[DescribeFleetHistoryResult, AWSError] = js.native
+  def describeFleetHistory(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetHistoryResult, Unit]): Request[DescribeFleetHistoryResult, AWSError] = js.native
+  /**
+    * Describes the events for the specified EC2 Fleet during the specified time. EC2 Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. EC2 Fleet events are available for 48 hours. For more information, see Monitor fleet events using Amazon EventBridge in the Amazon EC2 User Guide.
+    */
+  def describeFleetHistory(params: DescribeFleetHistoryRequest): Request[DescribeFleetHistoryResult, AWSError] = js.native
+  def describeFleetHistory(
+    params: DescribeFleetHistoryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetHistoryResult, Unit]
+  ): Request[DescribeFleetHistoryResult, AWSError] = js.native
+  
+  /**
+    * Describes the running instances for the specified EC2 Fleet. For more information, see Monitor your EC2 Fleet in the Amazon EC2 User Guide.
+    */
+  def describeFleetInstances(): Request[DescribeFleetInstancesResult, AWSError] = js.native
+  def describeFleetInstances(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetInstancesResult, Unit]): Request[DescribeFleetInstancesResult, AWSError] = js.native
+  /**
+    * Describes the running instances for the specified EC2 Fleet. For more information, see Monitor your EC2 Fleet in the Amazon EC2 User Guide.
+    */
+  def describeFleetInstances(params: DescribeFleetInstancesRequest): Request[DescribeFleetInstancesResult, AWSError] = js.native
+  def describeFleetInstances(
+    params: DescribeFleetInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetInstancesResult, Unit]
+  ): Request[DescribeFleetInstancesResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified EC2 Fleets or all of your EC2 Fleets. For more information, see Monitor your EC2 Fleet in the Amazon EC2 User Guide.
+    */
+  def describeFleets(): Request[DescribeFleetsResult, AWSError] = js.native
+  def describeFleets(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetsResult, Unit]): Request[DescribeFleetsResult, AWSError] = js.native
+  /**
+    * Describes the specified EC2 Fleets or all of your EC2 Fleets. For more information, see Monitor your EC2 Fleet in the Amazon EC2 User Guide.
+    */
+  def describeFleets(params: DescribeFleetsRequest): Request[DescribeFleetsResult, AWSError] = js.native
+  def describeFleets(
+    params: DescribeFleetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetsResult, Unit]
+  ): Request[DescribeFleetsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more flow logs. To view the published flow log records, you must view the log destination. For example, the CloudWatch Logs log group, the Amazon S3 bucket, or the Kinesis Data Firehose delivery stream.
+    */
+  def describeFlowLogs(): Request[DescribeFlowLogsResult, AWSError] = js.native
+  def describeFlowLogs(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlowLogsResult, Unit]): Request[DescribeFlowLogsResult, AWSError] = js.native
+  /**
+    * Describes one or more flow logs. To view the published flow log records, you must view the log destination. For example, the CloudWatch Logs log group, the Amazon S3 bucket, or the Kinesis Data Firehose delivery stream.
+    */
+  def describeFlowLogs(params: DescribeFlowLogsRequest): Request[DescribeFlowLogsResult, AWSError] = js.native
+  def describeFlowLogs(
+    params: DescribeFlowLogsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlowLogsResult, Unit]
+  ): Request[DescribeFlowLogsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified attribute of the specified Amazon FPGA Image (AFI).
+    */
+  def describeFpgaImageAttribute(): Request[DescribeFpgaImageAttributeResult, AWSError] = js.native
+  def describeFpgaImageAttribute(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFpgaImageAttributeResult, Unit]): Request[DescribeFpgaImageAttributeResult, AWSError] = js.native
+  /**
+    * Describes the specified attribute of the specified Amazon FPGA Image (AFI).
+    */
+  def describeFpgaImageAttribute(params: DescribeFpgaImageAttributeRequest): Request[DescribeFpgaImageAttributeResult, AWSError] = js.native
+  def describeFpgaImageAttribute(
+    params: DescribeFpgaImageAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFpgaImageAttributeResult, Unit]
+  ): Request[DescribeFpgaImageAttributeResult, AWSError] = js.native
+  
+  /**
+    * Describes the Amazon FPGA Images (AFIs) available to you. These include public AFIs, private AFIs that you own, and AFIs owned by other Amazon Web Services accounts for which you have load permissions.
+    */
+  def describeFpgaImages(): Request[DescribeFpgaImagesResult, AWSError] = js.native
+  def describeFpgaImages(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFpgaImagesResult, Unit]): Request[DescribeFpgaImagesResult, AWSError] = js.native
+  /**
+    * Describes the Amazon FPGA Images (AFIs) available to you. These include public AFIs, private AFIs that you own, and AFIs owned by other Amazon Web Services accounts for which you have load permissions.
+    */
+  def describeFpgaImages(params: DescribeFpgaImagesRequest): Request[DescribeFpgaImagesResult, AWSError] = js.native
+  def describeFpgaImages(
+    params: DescribeFpgaImagesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFpgaImagesResult, Unit]
+  ): Request[DescribeFpgaImagesResult, AWSError] = js.native
+  
+  /**
+    * Describes the Dedicated Host reservations that are available to purchase. The results describe all of the Dedicated Host reservation offerings, including offerings that might not match the instance family and Region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts in the Amazon EC2 User Guide. 
+    */
+  def describeHostReservationOfferings(): Request[DescribeHostReservationOfferingsResult, AWSError] = js.native
+  def describeHostReservationOfferings(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeHostReservationOfferingsResult, Unit]
+  ): Request[DescribeHostReservationOfferingsResult, AWSError] = js.native
+  /**
+    * Describes the Dedicated Host reservations that are available to purchase. The results describe all of the Dedicated Host reservation offerings, including offerings that might not match the instance family and Region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts in the Amazon EC2 User Guide. 
+    */
+  def describeHostReservationOfferings(params: DescribeHostReservationOfferingsRequest): Request[DescribeHostReservationOfferingsResult, AWSError] = js.native
+  def describeHostReservationOfferings(
+    params: DescribeHostReservationOfferingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeHostReservationOfferingsResult, Unit]
+  ): Request[DescribeHostReservationOfferingsResult, AWSError] = js.native
+  
+  /**
+    * Describes reservations that are associated with Dedicated Hosts in your account.
+    */
+  def describeHostReservations(): Request[DescribeHostReservationsResult, AWSError] = js.native
+  def describeHostReservations(callback: js.Function2[/* err */ AWSError, /* data */ DescribeHostReservationsResult, Unit]): Request[DescribeHostReservationsResult, AWSError] = js.native
+  /**
+    * Describes reservations that are associated with Dedicated Hosts in your account.
+    */
+  def describeHostReservations(params: DescribeHostReservationsRequest): Request[DescribeHostReservationsResult, AWSError] = js.native
+  def describeHostReservations(
+    params: DescribeHostReservationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeHostReservationsResult, Unit]
+  ): Request[DescribeHostReservationsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified Dedicated Hosts or all your Dedicated Hosts. The results describe only the Dedicated Hosts in the Region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
+    */
+  def describeHosts(): Request[DescribeHostsResult, AWSError] = js.native
+  def describeHosts(callback: js.Function2[/* err */ AWSError, /* data */ DescribeHostsResult, Unit]): Request[DescribeHostsResult, AWSError] = js.native
+  /**
+    * Describes the specified Dedicated Hosts or all your Dedicated Hosts. The results describe only the Dedicated Hosts in the Region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
+    */
+  def describeHosts(params: DescribeHostsRequest): Request[DescribeHostsResult, AWSError] = js.native
+  def describeHosts(
+    params: DescribeHostsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeHostsResult, Unit]
+  ): Request[DescribeHostsResult, AWSError] = js.native
+  
+  /**
+    * Describes your IAM instance profile associations.
+    */
+  def describeIamInstanceProfileAssociations(): Request[DescribeIamInstanceProfileAssociationsResult, AWSError] = js.native
+  def describeIamInstanceProfileAssociations(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeIamInstanceProfileAssociationsResult, Unit]
+  ): Request[DescribeIamInstanceProfileAssociationsResult, AWSError] = js.native
+  /**
+    * Describes your IAM instance profile associations.
+    */
+  def describeIamInstanceProfileAssociations(params: DescribeIamInstanceProfileAssociationsRequest): Request[DescribeIamInstanceProfileAssociationsResult, AWSError] = js.native
+  def describeIamInstanceProfileAssociations(
+    params: DescribeIamInstanceProfileAssociationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeIamInstanceProfileAssociationsResult, Unit]
+  ): Request[DescribeIamInstanceProfileAssociationsResult, AWSError] = js.native
+  
+  /**
+    * Describes the ID format settings for your resources on a per-Region basis, for example, to view which resource types are enabled for longer IDs. This request only returns information about resource types whose ID formats can be modified; it does not return information about other resource types. The following resource types support longer IDs: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | instance | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | reservation | route-table | route-table-association | security-group | snapshot | subnet | subnet-cidr-block-association | volume | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway.  These settings apply to the IAM user who makes the request; they do not apply to the entire Amazon Web Services account. By default, an IAM user defaults to the same settings as the root user, unless they explicitly override the settings by running the ModifyIdFormat command. Resources created with longer IDs are visible to all IAM users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+    */
+  def describeIdFormat(): Request[DescribeIdFormatResult, AWSError] = js.native
+  def describeIdFormat(callback: js.Function2[/* err */ AWSError, /* data */ DescribeIdFormatResult, Unit]): Request[DescribeIdFormatResult, AWSError] = js.native
+  /**
+    * Describes the ID format settings for your resources on a per-Region basis, for example, to view which resource types are enabled for longer IDs. This request only returns information about resource types whose ID formats can be modified; it does not return information about other resource types. The following resource types support longer IDs: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | instance | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | reservation | route-table | route-table-association | security-group | snapshot | subnet | subnet-cidr-block-association | volume | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway.  These settings apply to the IAM user who makes the request; they do not apply to the entire Amazon Web Services account. By default, an IAM user defaults to the same settings as the root user, unless they explicitly override the settings by running the ModifyIdFormat command. Resources created with longer IDs are visible to all IAM users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+    */
+  def describeIdFormat(params: DescribeIdFormatRequest): Request[DescribeIdFormatResult, AWSError] = js.native
+  def describeIdFormat(
+    params: DescribeIdFormatRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeIdFormatResult, Unit]
+  ): Request[DescribeIdFormatResult, AWSError] = js.native
+  
+  /**
+    * Describes the ID format settings for resources for the specified IAM user, IAM role, or root user. For example, you can view the resource types that are enabled for longer IDs. This request only returns information about resource types whose ID formats can be modified; it does not return information about other resource types. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide.  The following resource types support longer IDs: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | instance | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | reservation | route-table | route-table-association | security-group | snapshot | subnet | subnet-cidr-block-association | volume | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway.  These settings apply to the principal specified in the request. They do not apply to the principal that makes the request.
+    */
+  def describeIdentityIdFormat(): Request[DescribeIdentityIdFormatResult, AWSError] = js.native
+  def describeIdentityIdFormat(callback: js.Function2[/* err */ AWSError, /* data */ DescribeIdentityIdFormatResult, Unit]): Request[DescribeIdentityIdFormatResult, AWSError] = js.native
+  /**
+    * Describes the ID format settings for resources for the specified IAM user, IAM role, or root user. For example, you can view the resource types that are enabled for longer IDs. This request only returns information about resource types whose ID formats can be modified; it does not return information about other resource types. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide.  The following resource types support longer IDs: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | instance | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | reservation | route-table | route-table-association | security-group | snapshot | subnet | subnet-cidr-block-association | volume | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway.  These settings apply to the principal specified in the request. They do not apply to the principal that makes the request.
+    */
+  def describeIdentityIdFormat(params: DescribeIdentityIdFormatRequest): Request[DescribeIdentityIdFormatResult, AWSError] = js.native
+  def describeIdentityIdFormat(
+    params: DescribeIdentityIdFormatRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeIdentityIdFormatResult, Unit]
+  ): Request[DescribeIdentityIdFormatResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified attribute of the specified AMI. You can specify only one attribute at a time.
+    */
+  def describeImageAttribute(): Request[ImageAttribute, AWSError] = js.native
+  def describeImageAttribute(callback: js.Function2[/* err */ AWSError, /* data */ ImageAttribute, Unit]): Request[ImageAttribute, AWSError] = js.native
+  /**
+    * Describes the specified attribute of the specified AMI. You can specify only one attribute at a time.
+    */
+  def describeImageAttribute(params: DescribeImageAttributeRequest): Request[ImageAttribute, AWSError] = js.native
+  def describeImageAttribute(
+    params: DescribeImageAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ImageAttribute, Unit]
+  ): Request[ImageAttribute, AWSError] = js.native
+  
+  /**
+    * Describes the specified images (AMIs, AKIs, and ARIs) available to you or all of the images available to you. The images available to you include public images, private images that you own, and private images owned by other Amazon Web Services accounts for which you have explicit launch permissions. Recently deregistered images appear in the returned results for a short interval and then return empty results. After all instances that reference a deregistered AMI are terminated, specifying the ID of the image will eventually return an error indicating that the AMI ID cannot be found.
+    */
+  def describeImages(): Request[DescribeImagesResult, AWSError] = js.native
+  def describeImages(callback: js.Function2[/* err */ AWSError, /* data */ DescribeImagesResult, Unit]): Request[DescribeImagesResult, AWSError] = js.native
+  /**
+    * Describes the specified images (AMIs, AKIs, and ARIs) available to you or all of the images available to you. The images available to you include public images, private images that you own, and private images owned by other Amazon Web Services accounts for which you have explicit launch permissions. Recently deregistered images appear in the returned results for a short interval and then return empty results. After all instances that reference a deregistered AMI are terminated, specifying the ID of the image will eventually return an error indicating that the AMI ID cannot be found.
+    */
+  def describeImages(params: DescribeImagesRequest): Request[DescribeImagesResult, AWSError] = js.native
+  def describeImages(
+    params: DescribeImagesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImagesResult, Unit]
+  ): Request[DescribeImagesResult, AWSError] = js.native
+  
+  /**
+    * Displays details about an import virtual machine or import snapshot tasks that are already created.
+    */
+  def describeImportImageTasks(): Request[DescribeImportImageTasksResult, AWSError] = js.native
+  def describeImportImageTasks(callback: js.Function2[/* err */ AWSError, /* data */ DescribeImportImageTasksResult, Unit]): Request[DescribeImportImageTasksResult, AWSError] = js.native
+  /**
+    * Displays details about an import virtual machine or import snapshot tasks that are already created.
+    */
+  def describeImportImageTasks(params: DescribeImportImageTasksRequest): Request[DescribeImportImageTasksResult, AWSError] = js.native
+  def describeImportImageTasks(
+    params: DescribeImportImageTasksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImportImageTasksResult, Unit]
+  ): Request[DescribeImportImageTasksResult, AWSError] = js.native
+  
+  /**
+    * Describes your import snapshot tasks.
+    */
+  def describeImportSnapshotTasks(): Request[DescribeImportSnapshotTasksResult, AWSError] = js.native
+  def describeImportSnapshotTasks(callback: js.Function2[/* err */ AWSError, /* data */ DescribeImportSnapshotTasksResult, Unit]): Request[DescribeImportSnapshotTasksResult, AWSError] = js.native
+  /**
+    * Describes your import snapshot tasks.
+    */
+  def describeImportSnapshotTasks(params: DescribeImportSnapshotTasksRequest): Request[DescribeImportSnapshotTasksResult, AWSError] = js.native
+  def describeImportSnapshotTasks(
+    params: DescribeImportSnapshotTasksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImportSnapshotTasksResult, Unit]
+  ): Request[DescribeImportSnapshotTasksResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified attribute of the specified instance. You can specify only one attribute at a time. Valid attribute values are: instanceType | kernel | ramdisk | userData | disableApiTermination | instanceInitiatedShutdownBehavior | rootDeviceName | blockDeviceMapping | productCodes | sourceDestCheck | groupSet | ebsOptimized | sriovNetSupport 
+    */
+  def describeInstanceAttribute(): Request[InstanceAttribute, AWSError] = js.native
+  def describeInstanceAttribute(callback: js.Function2[/* err */ AWSError, /* data */ InstanceAttribute, Unit]): Request[InstanceAttribute, AWSError] = js.native
+  /**
+    * Describes the specified attribute of the specified instance. You can specify only one attribute at a time. Valid attribute values are: instanceType | kernel | ramdisk | userData | disableApiTermination | instanceInitiatedShutdownBehavior | rootDeviceName | blockDeviceMapping | productCodes | sourceDestCheck | groupSet | ebsOptimized | sriovNetSupport 
+    */
+  def describeInstanceAttribute(params: DescribeInstanceAttributeRequest): Request[InstanceAttribute, AWSError] = js.native
+  def describeInstanceAttribute(
+    params: DescribeInstanceAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ InstanceAttribute, Unit]
+  ): Request[InstanceAttribute, AWSError] = js.native
+  
+  /**
+    * Describes the credit option for CPU usage of the specified burstable performance instances. The credit options are standard and unlimited. If you do not specify an instance ID, Amazon EC2 returns burstable performance instances with the unlimited credit option, as well as instances that were previously configured as T2, T3, and T3a with the unlimited credit option. For example, if you resize a T2 instance, while it is configured as unlimited, to an M4 instance, Amazon EC2 returns the M4 instance. If you specify one or more instance IDs, Amazon EC2 returns the credit option (standard or unlimited) of those instances. If you specify an instance ID that is not valid, such as an instance that is not a burstable performance instance, an error is returned. Recently terminated instances might appear in the returned results. This interval is usually less than one hour. If an Availability Zone is experiencing a service disruption and you specify instance IDs in the affected zone, or do not specify any instance IDs at all, the call fails. If you specify only instance IDs in an unaffected zone, the call works normally. For more information, see Burstable performance instances in the Amazon EC2 User Guide.
+    */
+  def describeInstanceCreditSpecifications(): Request[DescribeInstanceCreditSpecificationsResult, AWSError] = js.native
+  def describeInstanceCreditSpecifications(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceCreditSpecificationsResult, Unit]
+  ): Request[DescribeInstanceCreditSpecificationsResult, AWSError] = js.native
+  /**
+    * Describes the credit option for CPU usage of the specified burstable performance instances. The credit options are standard and unlimited. If you do not specify an instance ID, Amazon EC2 returns burstable performance instances with the unlimited credit option, as well as instances that were previously configured as T2, T3, and T3a with the unlimited credit option. For example, if you resize a T2 instance, while it is configured as unlimited, to an M4 instance, Amazon EC2 returns the M4 instance. If you specify one or more instance IDs, Amazon EC2 returns the credit option (standard or unlimited) of those instances. If you specify an instance ID that is not valid, such as an instance that is not a burstable performance instance, an error is returned. Recently terminated instances might appear in the returned results. This interval is usually less than one hour. If an Availability Zone is experiencing a service disruption and you specify instance IDs in the affected zone, or do not specify any instance IDs at all, the call fails. If you specify only instance IDs in an unaffected zone, the call works normally. For more information, see Burstable performance instances in the Amazon EC2 User Guide.
+    */
+  def describeInstanceCreditSpecifications(params: DescribeInstanceCreditSpecificationsRequest): Request[DescribeInstanceCreditSpecificationsResult, AWSError] = js.native
+  def describeInstanceCreditSpecifications(
+    params: DescribeInstanceCreditSpecificationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceCreditSpecificationsResult, Unit]
+  ): Request[DescribeInstanceCreditSpecificationsResult, AWSError] = js.native
+  
+  /**
+    * Describes the tag keys that are registered to appear in scheduled event notifications for resources in the current Region.
+    */
+  def describeInstanceEventNotificationAttributes(): Request[DescribeInstanceEventNotificationAttributesResult, AWSError] = js.native
+  def describeInstanceEventNotificationAttributes(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeInstanceEventNotificationAttributesResult, 
+      Unit
+    ]
+  ): Request[DescribeInstanceEventNotificationAttributesResult, AWSError] = js.native
+  /**
+    * Describes the tag keys that are registered to appear in scheduled event notifications for resources in the current Region.
+    */
+  def describeInstanceEventNotificationAttributes(params: DescribeInstanceEventNotificationAttributesRequest): Request[DescribeInstanceEventNotificationAttributesResult, AWSError] = js.native
+  def describeInstanceEventNotificationAttributes(
+    params: DescribeInstanceEventNotificationAttributesRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeInstanceEventNotificationAttributesResult, 
+      Unit
+    ]
+  ): Request[DescribeInstanceEventNotificationAttributesResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified event windows or all event windows. If you specify event window IDs, the output includes information for only the specified event windows. If you specify filters, the output includes information for only those event windows that meet the filter criteria. If you do not specify event windows IDs or filters, the output includes information for all event windows, which can affect performance. We recommend that you use pagination to ensure that the operation returns quickly and successfully.  For more information, see Define event windows for scheduled events in the Amazon EC2 User Guide.
+    */
+  def describeInstanceEventWindows(): Request[DescribeInstanceEventWindowsResult, AWSError] = js.native
+  def describeInstanceEventWindows(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceEventWindowsResult, Unit]): Request[DescribeInstanceEventWindowsResult, AWSError] = js.native
+  /**
+    * Describes the specified event windows or all event windows. If you specify event window IDs, the output includes information for only the specified event windows. If you specify filters, the output includes information for only those event windows that meet the filter criteria. If you do not specify event windows IDs or filters, the output includes information for all event windows, which can affect performance. We recommend that you use pagination to ensure that the operation returns quickly and successfully.  For more information, see Define event windows for scheduled events in the Amazon EC2 User Guide.
+    */
+  def describeInstanceEventWindows(params: DescribeInstanceEventWindowsRequest): Request[DescribeInstanceEventWindowsResult, AWSError] = js.native
+  def describeInstanceEventWindows(
+    params: DescribeInstanceEventWindowsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceEventWindowsResult, Unit]
+  ): Request[DescribeInstanceEventWindowsResult, AWSError] = js.native
+  
+  /**
+    * Describes the status of the specified instances or all of your instances. By default, only running instances are described, unless you specifically indicate to return the status of all instances. Instance status includes the following components:    Status checks - Amazon EC2 performs status checks on running EC2 instances to identify hardware and software issues. For more information, see Status checks for your instances and Troubleshoot instances with failed status checks in the Amazon EC2 User Guide.    Scheduled events - Amazon EC2 can schedule events (such as reboot, stop, or terminate) for your instances related to hardware issues, software updates, or system maintenance. For more information, see Scheduled events for your instances in the Amazon EC2 User Guide.    Instance state - You can manage your instances from the moment you launch them through their termination. For more information, see Instance lifecycle in the Amazon EC2 User Guide.  
+    */
+  def describeInstanceStatus(): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  def describeInstanceStatus(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceStatusResult, Unit]): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  /**
+    * Describes the status of the specified instances or all of your instances. By default, only running instances are described, unless you specifically indicate to return the status of all instances. Instance status includes the following components:    Status checks - Amazon EC2 performs status checks on running EC2 instances to identify hardware and software issues. For more information, see Status checks for your instances and Troubleshoot instances with failed status checks in the Amazon EC2 User Guide.    Scheduled events - Amazon EC2 can schedule events (such as reboot, stop, or terminate) for your instances related to hardware issues, software updates, or system maintenance. For more information, see Scheduled events for your instances in the Amazon EC2 User Guide.    Instance state - You can manage your instances from the moment you launch them through their termination. For more information, see Instance lifecycle in the Amazon EC2 User Guide.  
+    */
+  def describeInstanceStatus(params: DescribeInstanceStatusRequest): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  def describeInstanceStatus(
+    params: DescribeInstanceStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceStatusResult, Unit]
+  ): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  
+  /**
+    * Returns a list of all instance types offered. The results can be filtered by location (Region or Availability Zone). If no location is specified, the instance types offered in the current Region are returned.
+    */
+  def describeInstanceTypeOfferings(): Request[DescribeInstanceTypeOfferingsResult, AWSError] = js.native
+  def describeInstanceTypeOfferings(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceTypeOfferingsResult, Unit]): Request[DescribeInstanceTypeOfferingsResult, AWSError] = js.native
+  /**
+    * Returns a list of all instance types offered. The results can be filtered by location (Region or Availability Zone). If no location is specified, the instance types offered in the current Region are returned.
+    */
+  def describeInstanceTypeOfferings(params: DescribeInstanceTypeOfferingsRequest): Request[DescribeInstanceTypeOfferingsResult, AWSError] = js.native
+  def describeInstanceTypeOfferings(
+    params: DescribeInstanceTypeOfferingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceTypeOfferingsResult, Unit]
+  ): Request[DescribeInstanceTypeOfferingsResult, AWSError] = js.native
+  
+  /**
+    * Describes the details of the instance types that are offered in a location. The results can be filtered by the attributes of the instance types.
+    */
+  def describeInstanceTypes(): Request[DescribeInstanceTypesResult, AWSError] = js.native
+  def describeInstanceTypes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceTypesResult, Unit]): Request[DescribeInstanceTypesResult, AWSError] = js.native
+  /**
+    * Describes the details of the instance types that are offered in a location. The results can be filtered by the attributes of the instance types.
+    */
+  def describeInstanceTypes(params: DescribeInstanceTypesRequest): Request[DescribeInstanceTypesResult, AWSError] = js.native
+  def describeInstanceTypes(
+    params: DescribeInstanceTypesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceTypesResult, Unit]
+  ): Request[DescribeInstanceTypesResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified instances or all instances. If you specify instance IDs, the output includes information for only the specified instances. If you specify filters, the output includes information for only those instances that meet the filter criteria. If you do not specify instance IDs or filters, the output includes information for all instances, which can affect performance. We recommend that you use pagination to ensure that the operation returns quickly and successfully. If you specify an instance ID that is not valid, an error is returned. If you specify an instance that you do not own, it is not included in the output. Recently terminated instances might appear in the returned results. This interval is usually less than one hour. If you describe instances in the rare case where an Availability Zone is experiencing a service disruption and you specify instance IDs that are in the affected zone, or do not specify any instance IDs at all, the call fails. If you describe instances and specify only instance IDs that are in an unaffected zone, the call works normally.
+    */
+  def describeInstances(): Request[DescribeInstancesResult, AWSError] = js.native
+  def describeInstances(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]): Request[DescribeInstancesResult, AWSError] = js.native
+  /**
+    * Describes the specified instances or all instances. If you specify instance IDs, the output includes information for only the specified instances. If you specify filters, the output includes information for only those instances that meet the filter criteria. If you do not specify instance IDs or filters, the output includes information for all instances, which can affect performance. We recommend that you use pagination to ensure that the operation returns quickly and successfully. If you specify an instance ID that is not valid, an error is returned. If you specify an instance that you do not own, it is not included in the output. Recently terminated instances might appear in the returned results. This interval is usually less than one hour. If you describe instances in the rare case where an Availability Zone is experiencing a service disruption and you specify instance IDs that are in the affected zone, or do not specify any instance IDs at all, the call fails. If you describe instances and specify only instance IDs that are in an unaffected zone, the call works normally.
+    */
+  def describeInstances(params: DescribeInstancesRequest): Request[DescribeInstancesResult, AWSError] = js.native
+  def describeInstances(
+    params: DescribeInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
+  ): Request[DescribeInstancesResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your internet gateways.
+    */
+  def describeInternetGateways(): Request[DescribeInternetGatewaysResult, AWSError] = js.native
+  def describeInternetGateways(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInternetGatewaysResult, Unit]): Request[DescribeInternetGatewaysResult, AWSError] = js.native
+  /**
+    * Describes one or more of your internet gateways.
+    */
+  def describeInternetGateways(params: DescribeInternetGatewaysRequest): Request[DescribeInternetGatewaysResult, AWSError] = js.native
+  def describeInternetGateways(
+    params: DescribeInternetGatewaysRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInternetGatewaysResult, Unit]
+  ): Request[DescribeInternetGatewaysResult, AWSError] = js.native
+  
+  /**
+    * Get information about your IPAM pools.
+    */
+  def describeIpamPools(): Request[DescribeIpamPoolsResult, AWSError] = js.native
+  def describeIpamPools(callback: js.Function2[/* err */ AWSError, /* data */ DescribeIpamPoolsResult, Unit]): Request[DescribeIpamPoolsResult, AWSError] = js.native
+  /**
+    * Get information about your IPAM pools.
+    */
+  def describeIpamPools(params: DescribeIpamPoolsRequest): Request[DescribeIpamPoolsResult, AWSError] = js.native
+  def describeIpamPools(
+    params: DescribeIpamPoolsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeIpamPoolsResult, Unit]
+  ): Request[DescribeIpamPoolsResult, AWSError] = js.native
+  
+  /**
+    * Get information about your IPAM scopes.
+    */
+  def describeIpamScopes(): Request[DescribeIpamScopesResult, AWSError] = js.native
+  def describeIpamScopes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeIpamScopesResult, Unit]): Request[DescribeIpamScopesResult, AWSError] = js.native
+  /**
+    * Get information about your IPAM scopes.
+    */
+  def describeIpamScopes(params: DescribeIpamScopesRequest): Request[DescribeIpamScopesResult, AWSError] = js.native
+  def describeIpamScopes(
+    params: DescribeIpamScopesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeIpamScopesResult, Unit]
+  ): Request[DescribeIpamScopesResult, AWSError] = js.native
+  
+  /**
+    * Get information about your IPAM pools. For more information, see What is IPAM? in the Amazon VPC IPAM User Guide. 
+    */
+  def describeIpams(): Request[DescribeIpamsResult, AWSError] = js.native
+  def describeIpams(callback: js.Function2[/* err */ AWSError, /* data */ DescribeIpamsResult, Unit]): Request[DescribeIpamsResult, AWSError] = js.native
+  /**
+    * Get information about your IPAM pools. For more information, see What is IPAM? in the Amazon VPC IPAM User Guide. 
+    */
+  def describeIpams(params: DescribeIpamsRequest): Request[DescribeIpamsResult, AWSError] = js.native
+  def describeIpams(
+    params: DescribeIpamsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeIpamsResult, Unit]
+  ): Request[DescribeIpamsResult, AWSError] = js.native
+  
+  /**
+    * Describes your IPv6 address pools.
+    */
+  def describeIpv6Pools(): Request[DescribeIpv6PoolsResult, AWSError] = js.native
+  def describeIpv6Pools(callback: js.Function2[/* err */ AWSError, /* data */ DescribeIpv6PoolsResult, Unit]): Request[DescribeIpv6PoolsResult, AWSError] = js.native
+  /**
+    * Describes your IPv6 address pools.
+    */
+  def describeIpv6Pools(params: DescribeIpv6PoolsRequest): Request[DescribeIpv6PoolsResult, AWSError] = js.native
+  def describeIpv6Pools(
+    params: DescribeIpv6PoolsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeIpv6PoolsResult, Unit]
+  ): Request[DescribeIpv6PoolsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified key pairs or all of your key pairs. For more information about key pairs, see Amazon EC2 key pairs in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeKeyPairs(): Request[DescribeKeyPairsResult, AWSError] = js.native
+  def describeKeyPairs(callback: js.Function2[/* err */ AWSError, /* data */ DescribeKeyPairsResult, Unit]): Request[DescribeKeyPairsResult, AWSError] = js.native
+  /**
+    * Describes the specified key pairs or all of your key pairs. For more information about key pairs, see Amazon EC2 key pairs in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeKeyPairs(params: DescribeKeyPairsRequest): Request[DescribeKeyPairsResult, AWSError] = js.native
+  def describeKeyPairs(
+    params: DescribeKeyPairsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeKeyPairsResult, Unit]
+  ): Request[DescribeKeyPairsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more versions of a specified launch template. You can describe all versions, individual versions, or a range of versions. You can also describe all the latest versions or all the default versions of all the launch templates in your account.
+    */
+  def describeLaunchTemplateVersions(): Request[DescribeLaunchTemplateVersionsResult, AWSError] = js.native
+  def describeLaunchTemplateVersions(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLaunchTemplateVersionsResult, Unit]): Request[DescribeLaunchTemplateVersionsResult, AWSError] = js.native
+  /**
+    * Describes one or more versions of a specified launch template. You can describe all versions, individual versions, or a range of versions. You can also describe all the latest versions or all the default versions of all the launch templates in your account.
+    */
+  def describeLaunchTemplateVersions(params: DescribeLaunchTemplateVersionsRequest): Request[DescribeLaunchTemplateVersionsResult, AWSError] = js.native
+  def describeLaunchTemplateVersions(
+    params: DescribeLaunchTemplateVersionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeLaunchTemplateVersionsResult, Unit]
+  ): Request[DescribeLaunchTemplateVersionsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more launch templates.
+    */
+  def describeLaunchTemplates(): Request[DescribeLaunchTemplatesResult, AWSError] = js.native
+  def describeLaunchTemplates(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLaunchTemplatesResult, Unit]): Request[DescribeLaunchTemplatesResult, AWSError] = js.native
+  /**
+    * Describes one or more launch templates.
+    */
+  def describeLaunchTemplates(params: DescribeLaunchTemplatesRequest): Request[DescribeLaunchTemplatesResult, AWSError] = js.native
+  def describeLaunchTemplates(
+    params: DescribeLaunchTemplatesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeLaunchTemplatesResult, Unit]
+  ): Request[DescribeLaunchTemplatesResult, AWSError] = js.native
+  
+  /**
+    * Describes the associations between virtual interface groups and local gateway route tables.
+    */
+  def describeLocalGatewayRouteTableVirtualInterfaceGroupAssociations(): Request[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult, AWSError] = js.native
+  def describeLocalGatewayRouteTableVirtualInterfaceGroupAssociations(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult, 
+      Unit
+    ]
+  ): Request[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult, AWSError] = js.native
+  /**
+    * Describes the associations between virtual interface groups and local gateway route tables.
+    */
+  def describeLocalGatewayRouteTableVirtualInterfaceGroupAssociations(params: DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequest): Request[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult, AWSError] = js.native
+  def describeLocalGatewayRouteTableVirtualInterfaceGroupAssociations(
+    params: DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult, 
+      Unit
+    ]
+  ): Request[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified associations between VPCs and local gateway route tables.
+    */
+  def describeLocalGatewayRouteTableVpcAssociations(): Request[DescribeLocalGatewayRouteTableVpcAssociationsResult, AWSError] = js.native
+  def describeLocalGatewayRouteTableVpcAssociations(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeLocalGatewayRouteTableVpcAssociationsResult, 
+      Unit
+    ]
+  ): Request[DescribeLocalGatewayRouteTableVpcAssociationsResult, AWSError] = js.native
+  /**
+    * Describes the specified associations between VPCs and local gateway route tables.
+    */
+  def describeLocalGatewayRouteTableVpcAssociations(params: DescribeLocalGatewayRouteTableVpcAssociationsRequest): Request[DescribeLocalGatewayRouteTableVpcAssociationsResult, AWSError] = js.native
+  def describeLocalGatewayRouteTableVpcAssociations(
+    params: DescribeLocalGatewayRouteTableVpcAssociationsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeLocalGatewayRouteTableVpcAssociationsResult, 
+      Unit
+    ]
+  ): Request[DescribeLocalGatewayRouteTableVpcAssociationsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more local gateway route tables. By default, all local gateway route tables are described. Alternatively, you can filter the results.
+    */
+  def describeLocalGatewayRouteTables(): Request[DescribeLocalGatewayRouteTablesResult, AWSError] = js.native
+  def describeLocalGatewayRouteTables(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocalGatewayRouteTablesResult, Unit]): Request[DescribeLocalGatewayRouteTablesResult, AWSError] = js.native
+  /**
+    * Describes one or more local gateway route tables. By default, all local gateway route tables are described. Alternatively, you can filter the results.
+    */
+  def describeLocalGatewayRouteTables(params: DescribeLocalGatewayRouteTablesRequest): Request[DescribeLocalGatewayRouteTablesResult, AWSError] = js.native
+  def describeLocalGatewayRouteTables(
+    params: DescribeLocalGatewayRouteTablesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocalGatewayRouteTablesResult, Unit]
+  ): Request[DescribeLocalGatewayRouteTablesResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified local gateway virtual interface groups.
+    */
+  def describeLocalGatewayVirtualInterfaceGroups(): Request[DescribeLocalGatewayVirtualInterfaceGroupsResult, AWSError] = js.native
+  def describeLocalGatewayVirtualInterfaceGroups(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeLocalGatewayVirtualInterfaceGroupsResult, 
+      Unit
+    ]
+  ): Request[DescribeLocalGatewayVirtualInterfaceGroupsResult, AWSError] = js.native
+  /**
+    * Describes the specified local gateway virtual interface groups.
+    */
+  def describeLocalGatewayVirtualInterfaceGroups(params: DescribeLocalGatewayVirtualInterfaceGroupsRequest): Request[DescribeLocalGatewayVirtualInterfaceGroupsResult, AWSError] = js.native
+  def describeLocalGatewayVirtualInterfaceGroups(
+    params: DescribeLocalGatewayVirtualInterfaceGroupsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeLocalGatewayVirtualInterfaceGroupsResult, 
+      Unit
+    ]
+  ): Request[DescribeLocalGatewayVirtualInterfaceGroupsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified local gateway virtual interfaces.
+    */
+  def describeLocalGatewayVirtualInterfaces(): Request[DescribeLocalGatewayVirtualInterfacesResult, AWSError] = js.native
+  def describeLocalGatewayVirtualInterfaces(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocalGatewayVirtualInterfacesResult, Unit]
+  ): Request[DescribeLocalGatewayVirtualInterfacesResult, AWSError] = js.native
+  /**
+    * Describes the specified local gateway virtual interfaces.
+    */
+  def describeLocalGatewayVirtualInterfaces(params: DescribeLocalGatewayVirtualInterfacesRequest): Request[DescribeLocalGatewayVirtualInterfacesResult, AWSError] = js.native
+  def describeLocalGatewayVirtualInterfaces(
+    params: DescribeLocalGatewayVirtualInterfacesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocalGatewayVirtualInterfacesResult, Unit]
+  ): Request[DescribeLocalGatewayVirtualInterfacesResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more local gateways. By default, all local gateways are described. Alternatively, you can filter the results.
+    */
+  def describeLocalGateways(): Request[DescribeLocalGatewaysResult, AWSError] = js.native
+  def describeLocalGateways(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocalGatewaysResult, Unit]): Request[DescribeLocalGatewaysResult, AWSError] = js.native
+  /**
+    * Describes one or more local gateways. By default, all local gateways are described. Alternatively, you can filter the results.
+    */
+  def describeLocalGateways(params: DescribeLocalGatewaysRequest): Request[DescribeLocalGatewaysResult, AWSError] = js.native
+  def describeLocalGateways(
+    params: DescribeLocalGatewaysRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocalGatewaysResult, Unit]
+  ): Request[DescribeLocalGatewaysResult, AWSError] = js.native
+  
+  /**
+    * Describes your managed prefix lists and any Amazon Web Services-managed prefix lists. To view the entries for your prefix list, use GetManagedPrefixListEntries.
+    */
+  def describeManagedPrefixLists(): Request[DescribeManagedPrefixListsResult, AWSError] = js.native
+  def describeManagedPrefixLists(callback: js.Function2[/* err */ AWSError, /* data */ DescribeManagedPrefixListsResult, Unit]): Request[DescribeManagedPrefixListsResult, AWSError] = js.native
+  /**
+    * Describes your managed prefix lists and any Amazon Web Services-managed prefix lists. To view the entries for your prefix list, use GetManagedPrefixListEntries.
+    */
+  def describeManagedPrefixLists(params: DescribeManagedPrefixListsRequest): Request[DescribeManagedPrefixListsResult, AWSError] = js.native
+  def describeManagedPrefixLists(
+    params: DescribeManagedPrefixListsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeManagedPrefixListsResult, Unit]
+  ): Request[DescribeManagedPrefixListsResult, AWSError] = js.native
+  
+  /**
+    * Describes your Elastic IP addresses that are being moved to the EC2-VPC platform, or that are being restored to the EC2-Classic platform. This request does not return information about any other Elastic IP addresses in your account.
+    */
+  def describeMovingAddresses(): Request[DescribeMovingAddressesResult, AWSError] = js.native
+  def describeMovingAddresses(callback: js.Function2[/* err */ AWSError, /* data */ DescribeMovingAddressesResult, Unit]): Request[DescribeMovingAddressesResult, AWSError] = js.native
+  /**
+    * Describes your Elastic IP addresses that are being moved to the EC2-VPC platform, or that are being restored to the EC2-Classic platform. This request does not return information about any other Elastic IP addresses in your account.
+    */
+  def describeMovingAddresses(params: DescribeMovingAddressesRequest): Request[DescribeMovingAddressesResult, AWSError] = js.native
+  def describeMovingAddresses(
+    params: DescribeMovingAddressesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMovingAddressesResult, Unit]
+  ): Request[DescribeMovingAddressesResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your NAT gateways.
+    */
+  def describeNatGateways(): Request[DescribeNatGatewaysResult, AWSError] = js.native
+  def describeNatGateways(callback: js.Function2[/* err */ AWSError, /* data */ DescribeNatGatewaysResult, Unit]): Request[DescribeNatGatewaysResult, AWSError] = js.native
+  /**
+    * Describes one or more of your NAT gateways.
+    */
+  def describeNatGateways(params: DescribeNatGatewaysRequest): Request[DescribeNatGatewaysResult, AWSError] = js.native
+  def describeNatGateways(
+    params: DescribeNatGatewaysRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNatGatewaysResult, Unit]
+  ): Request[DescribeNatGatewaysResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your network ACLs. For more information, see Network ACLs in the Amazon Virtual Private Cloud User Guide.
+    */
+  def describeNetworkAcls(): Request[DescribeNetworkAclsResult, AWSError] = js.native
+  def describeNetworkAcls(callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkAclsResult, Unit]): Request[DescribeNetworkAclsResult, AWSError] = js.native
+  /**
+    * Describes one or more of your network ACLs. For more information, see Network ACLs in the Amazon Virtual Private Cloud User Guide.
+    */
+  def describeNetworkAcls(params: DescribeNetworkAclsRequest): Request[DescribeNetworkAclsResult, AWSError] = js.native
+  def describeNetworkAcls(
+    params: DescribeNetworkAclsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkAclsResult, Unit]
+  ): Request[DescribeNetworkAclsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified Network Access Scope analyses.
+    */
+  def describeNetworkInsightsAccessScopeAnalyses(): Request[DescribeNetworkInsightsAccessScopeAnalysesResult, AWSError] = js.native
+  def describeNetworkInsightsAccessScopeAnalyses(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeNetworkInsightsAccessScopeAnalysesResult, 
+      Unit
+    ]
+  ): Request[DescribeNetworkInsightsAccessScopeAnalysesResult, AWSError] = js.native
+  /**
+    * Describes the specified Network Access Scope analyses.
+    */
+  def describeNetworkInsightsAccessScopeAnalyses(params: DescribeNetworkInsightsAccessScopeAnalysesRequest): Request[DescribeNetworkInsightsAccessScopeAnalysesResult, AWSError] = js.native
+  def describeNetworkInsightsAccessScopeAnalyses(
+    params: DescribeNetworkInsightsAccessScopeAnalysesRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeNetworkInsightsAccessScopeAnalysesResult, 
+      Unit
+    ]
+  ): Request[DescribeNetworkInsightsAccessScopeAnalysesResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified Network Access Scopes.
+    */
+  def describeNetworkInsightsAccessScopes(): Request[DescribeNetworkInsightsAccessScopesResult, AWSError] = js.native
+  def describeNetworkInsightsAccessScopes(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInsightsAccessScopesResult, Unit]
+  ): Request[DescribeNetworkInsightsAccessScopesResult, AWSError] = js.native
+  /**
+    * Describes the specified Network Access Scopes.
+    */
+  def describeNetworkInsightsAccessScopes(params: DescribeNetworkInsightsAccessScopesRequest): Request[DescribeNetworkInsightsAccessScopesResult, AWSError] = js.native
+  def describeNetworkInsightsAccessScopes(
+    params: DescribeNetworkInsightsAccessScopesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInsightsAccessScopesResult, Unit]
+  ): Request[DescribeNetworkInsightsAccessScopesResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your network insights analyses.
+    */
+  def describeNetworkInsightsAnalyses(): Request[DescribeNetworkInsightsAnalysesResult, AWSError] = js.native
+  def describeNetworkInsightsAnalyses(callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInsightsAnalysesResult, Unit]): Request[DescribeNetworkInsightsAnalysesResult, AWSError] = js.native
+  /**
+    * Describes one or more of your network insights analyses.
+    */
+  def describeNetworkInsightsAnalyses(params: DescribeNetworkInsightsAnalysesRequest): Request[DescribeNetworkInsightsAnalysesResult, AWSError] = js.native
+  def describeNetworkInsightsAnalyses(
+    params: DescribeNetworkInsightsAnalysesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInsightsAnalysesResult, Unit]
+  ): Request[DescribeNetworkInsightsAnalysesResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your paths.
+    */
+  def describeNetworkInsightsPaths(): Request[DescribeNetworkInsightsPathsResult, AWSError] = js.native
+  def describeNetworkInsightsPaths(callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInsightsPathsResult, Unit]): Request[DescribeNetworkInsightsPathsResult, AWSError] = js.native
+  /**
+    * Describes one or more of your paths.
+    */
+  def describeNetworkInsightsPaths(params: DescribeNetworkInsightsPathsRequest): Request[DescribeNetworkInsightsPathsResult, AWSError] = js.native
+  def describeNetworkInsightsPaths(
+    params: DescribeNetworkInsightsPathsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInsightsPathsResult, Unit]
+  ): Request[DescribeNetworkInsightsPathsResult, AWSError] = js.native
+  
+  /**
+    * Describes a network interface attribute. You can specify only one attribute at a time.
+    */
+  def describeNetworkInterfaceAttribute(): Request[DescribeNetworkInterfaceAttributeResult, AWSError] = js.native
+  def describeNetworkInterfaceAttribute(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInterfaceAttributeResult, Unit]
+  ): Request[DescribeNetworkInterfaceAttributeResult, AWSError] = js.native
+  /**
+    * Describes a network interface attribute. You can specify only one attribute at a time.
+    */
+  def describeNetworkInterfaceAttribute(params: DescribeNetworkInterfaceAttributeRequest): Request[DescribeNetworkInterfaceAttributeResult, AWSError] = js.native
+  def describeNetworkInterfaceAttribute(
+    params: DescribeNetworkInterfaceAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInterfaceAttributeResult, Unit]
+  ): Request[DescribeNetworkInterfaceAttributeResult, AWSError] = js.native
+  
+  /**
+    * Describes the permissions for your network interfaces. 
+    */
+  def describeNetworkInterfacePermissions(): Request[DescribeNetworkInterfacePermissionsResult, AWSError] = js.native
+  def describeNetworkInterfacePermissions(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInterfacePermissionsResult, Unit]
+  ): Request[DescribeNetworkInterfacePermissionsResult, AWSError] = js.native
+  /**
+    * Describes the permissions for your network interfaces. 
+    */
+  def describeNetworkInterfacePermissions(params: DescribeNetworkInterfacePermissionsRequest): Request[DescribeNetworkInterfacePermissionsResult, AWSError] = js.native
+  def describeNetworkInterfacePermissions(
+    params: DescribeNetworkInterfacePermissionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInterfacePermissionsResult, Unit]
+  ): Request[DescribeNetworkInterfacePermissionsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your network interfaces.
+    */
+  def describeNetworkInterfaces(): Request[DescribeNetworkInterfacesResult, AWSError] = js.native
+  def describeNetworkInterfaces(callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInterfacesResult, Unit]): Request[DescribeNetworkInterfacesResult, AWSError] = js.native
+  /**
+    * Describes one or more of your network interfaces.
+    */
+  def describeNetworkInterfaces(params: DescribeNetworkInterfacesRequest): Request[DescribeNetworkInterfacesResult, AWSError] = js.native
+  def describeNetworkInterfaces(
+    params: DescribeNetworkInterfacesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInterfacesResult, Unit]
+  ): Request[DescribeNetworkInterfacesResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified placement groups or all of your placement groups. For more information, see Placement groups in the Amazon EC2 User Guide.
+    */
+  def describePlacementGroups(): Request[DescribePlacementGroupsResult, AWSError] = js.native
+  def describePlacementGroups(callback: js.Function2[/* err */ AWSError, /* data */ DescribePlacementGroupsResult, Unit]): Request[DescribePlacementGroupsResult, AWSError] = js.native
+  /**
+    * Describes the specified placement groups or all of your placement groups. For more information, see Placement groups in the Amazon EC2 User Guide.
+    */
+  def describePlacementGroups(params: DescribePlacementGroupsRequest): Request[DescribePlacementGroupsResult, AWSError] = js.native
+  def describePlacementGroups(
+    params: DescribePlacementGroupsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribePlacementGroupsResult, Unit]
+  ): Request[DescribePlacementGroupsResult, AWSError] = js.native
+  
+  /**
+    * Describes available Amazon Web Services services in a prefix list format, which includes the prefix list name and prefix list ID of the service and the IP address range for the service. We recommend that you use DescribeManagedPrefixLists instead.
+    */
+  def describePrefixLists(): Request[DescribePrefixListsResult, AWSError] = js.native
+  def describePrefixLists(callback: js.Function2[/* err */ AWSError, /* data */ DescribePrefixListsResult, Unit]): Request[DescribePrefixListsResult, AWSError] = js.native
+  /**
+    * Describes available Amazon Web Services services in a prefix list format, which includes the prefix list name and prefix list ID of the service and the IP address range for the service. We recommend that you use DescribeManagedPrefixLists instead.
+    */
+  def describePrefixLists(params: DescribePrefixListsRequest): Request[DescribePrefixListsResult, AWSError] = js.native
+  def describePrefixLists(
+    params: DescribePrefixListsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribePrefixListsResult, Unit]
+  ): Request[DescribePrefixListsResult, AWSError] = js.native
+  
+  /**
+    * Describes the ID format settings for the root user and all IAM roles and IAM users that have explicitly specified a longer ID (17-character ID) preference.  By default, all IAM roles and IAM users default to the same ID settings as the root user, unless they explicitly override the settings. This request is useful for identifying those IAM users and IAM roles that have overridden the default ID settings. The following resource types support longer IDs: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | instance | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | reservation | route-table | route-table-association | security-group | snapshot | subnet | subnet-cidr-block-association | volume | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. 
+    */
+  def describePrincipalIdFormat(): Request[DescribePrincipalIdFormatResult, AWSError] = js.native
+  def describePrincipalIdFormat(callback: js.Function2[/* err */ AWSError, /* data */ DescribePrincipalIdFormatResult, Unit]): Request[DescribePrincipalIdFormatResult, AWSError] = js.native
+  /**
+    * Describes the ID format settings for the root user and all IAM roles and IAM users that have explicitly specified a longer ID (17-character ID) preference.  By default, all IAM roles and IAM users default to the same ID settings as the root user, unless they explicitly override the settings. This request is useful for identifying those IAM users and IAM roles that have overridden the default ID settings. The following resource types support longer IDs: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | instance | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | reservation | route-table | route-table-association | security-group | snapshot | subnet | subnet-cidr-block-association | volume | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. 
+    */
+  def describePrincipalIdFormat(params: DescribePrincipalIdFormatRequest): Request[DescribePrincipalIdFormatResult, AWSError] = js.native
+  def describePrincipalIdFormat(
+    params: DescribePrincipalIdFormatRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribePrincipalIdFormatResult, Unit]
+  ): Request[DescribePrincipalIdFormatResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified IPv4 address pools.
+    */
+  def describePublicIpv4Pools(): Request[DescribePublicIpv4PoolsResult, AWSError] = js.native
+  def describePublicIpv4Pools(callback: js.Function2[/* err */ AWSError, /* data */ DescribePublicIpv4PoolsResult, Unit]): Request[DescribePublicIpv4PoolsResult, AWSError] = js.native
+  /**
+    * Describes the specified IPv4 address pools.
+    */
+  def describePublicIpv4Pools(params: DescribePublicIpv4PoolsRequest): Request[DescribePublicIpv4PoolsResult, AWSError] = js.native
+  def describePublicIpv4Pools(
+    params: DescribePublicIpv4PoolsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribePublicIpv4PoolsResult, Unit]
+  ): Request[DescribePublicIpv4PoolsResult, AWSError] = js.native
+  
+  /**
+    * Describes the Regions that are enabled for your account, or all Regions. For a list of the Regions supported by Amazon EC2, see  Amazon Elastic Compute Cloud endpoints and quotas. For information about enabling and disabling Regions for your account, see Managing Amazon Web Services Regions in the Amazon Web Services General Reference.
+    */
+  def describeRegions(): Request[DescribeRegionsResult, AWSError] = js.native
+  def describeRegions(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRegionsResult, Unit]): Request[DescribeRegionsResult, AWSError] = js.native
+  /**
+    * Describes the Regions that are enabled for your account, or all Regions. For a list of the Regions supported by Amazon EC2, see  Amazon Elastic Compute Cloud endpoints and quotas. For information about enabling and disabling Regions for your account, see Managing Amazon Web Services Regions in the Amazon Web Services General Reference.
+    */
+  def describeRegions(params: DescribeRegionsRequest): Request[DescribeRegionsResult, AWSError] = js.native
+  def describeRegions(
+    params: DescribeRegionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeRegionsResult, Unit]
+  ): Request[DescribeRegionsResult, AWSError] = js.native
+  
+  /**
+    * Describes a root volume replacement task. For more information, see Replace a root volume in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeReplaceRootVolumeTasks(): Request[DescribeReplaceRootVolumeTasksResult, AWSError] = js.native
+  def describeReplaceRootVolumeTasks(callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplaceRootVolumeTasksResult, Unit]): Request[DescribeReplaceRootVolumeTasksResult, AWSError] = js.native
+  /**
+    * Describes a root volume replacement task. For more information, see Replace a root volume in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeReplaceRootVolumeTasks(params: DescribeReplaceRootVolumeTasksRequest): Request[DescribeReplaceRootVolumeTasksResult, AWSError] = js.native
+  def describeReplaceRootVolumeTasks(
+    params: DescribeReplaceRootVolumeTasksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplaceRootVolumeTasksResult, Unit]
+  ): Request[DescribeReplaceRootVolumeTasksResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of the Reserved Instances that you purchased. For more information about Reserved Instances, see Reserved Instances in the Amazon EC2 User Guide.
+    */
+  def describeReservedInstances(): Request[DescribeReservedInstancesResult, AWSError] = js.native
+  def describeReservedInstances(callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedInstancesResult, Unit]): Request[DescribeReservedInstancesResult, AWSError] = js.native
+  /**
+    * Describes one or more of the Reserved Instances that you purchased. For more information about Reserved Instances, see Reserved Instances in the Amazon EC2 User Guide.
+    */
+  def describeReservedInstances(params: DescribeReservedInstancesRequest): Request[DescribeReservedInstancesResult, AWSError] = js.native
+  def describeReservedInstances(
+    params: DescribeReservedInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedInstancesResult, Unit]
+  ): Request[DescribeReservedInstancesResult, AWSError] = js.native
+  
+  /**
+    * Describes your account's Reserved Instance listings in the Reserved Instance Marketplace. The Reserved Instance Marketplace matches sellers who want to resell Reserved Instance capacity that they no longer need with buyers who want to purchase additional capacity. Reserved Instances bought and sold through the Reserved Instance Marketplace work like any other Reserved Instances. As a seller, you choose to list some or all of your Reserved Instances, and you specify the upfront price to receive for them. Your Reserved Instances are then listed in the Reserved Instance Marketplace and are available for purchase. As a buyer, you specify the configuration of the Reserved Instance to purchase, and the Marketplace matches what you're searching for with what's available. The Marketplace first sells the lowest priced Reserved Instances to you, and continues to sell available Reserved Instance listings to you until your demand is met. You are charged based on the total price of all of the listings that you purchase. For more information, see Reserved Instance Marketplace in the Amazon EC2 User Guide.
+    */
+  def describeReservedInstancesListings(): Request[DescribeReservedInstancesListingsResult, AWSError] = js.native
+  def describeReservedInstancesListings(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedInstancesListingsResult, Unit]
+  ): Request[DescribeReservedInstancesListingsResult, AWSError] = js.native
+  /**
+    * Describes your account's Reserved Instance listings in the Reserved Instance Marketplace. The Reserved Instance Marketplace matches sellers who want to resell Reserved Instance capacity that they no longer need with buyers who want to purchase additional capacity. Reserved Instances bought and sold through the Reserved Instance Marketplace work like any other Reserved Instances. As a seller, you choose to list some or all of your Reserved Instances, and you specify the upfront price to receive for them. Your Reserved Instances are then listed in the Reserved Instance Marketplace and are available for purchase. As a buyer, you specify the configuration of the Reserved Instance to purchase, and the Marketplace matches what you're searching for with what's available. The Marketplace first sells the lowest priced Reserved Instances to you, and continues to sell available Reserved Instance listings to you until your demand is met. You are charged based on the total price of all of the listings that you purchase. For more information, see Reserved Instance Marketplace in the Amazon EC2 User Guide.
+    */
+  def describeReservedInstancesListings(params: DescribeReservedInstancesListingsRequest): Request[DescribeReservedInstancesListingsResult, AWSError] = js.native
+  def describeReservedInstancesListings(
+    params: DescribeReservedInstancesListingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedInstancesListingsResult, Unit]
+  ): Request[DescribeReservedInstancesListingsResult, AWSError] = js.native
+  
+  /**
+    * Describes the modifications made to your Reserved Instances. If no parameter is specified, information about all your Reserved Instances modification requests is returned. If a modification ID is specified, only information about the specific modification is returned. For more information, see Modifying Reserved Instances in the Amazon EC2 User Guide.
+    */
+  def describeReservedInstancesModifications(): Request[DescribeReservedInstancesModificationsResult, AWSError] = js.native
+  def describeReservedInstancesModifications(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedInstancesModificationsResult, Unit]
+  ): Request[DescribeReservedInstancesModificationsResult, AWSError] = js.native
+  /**
+    * Describes the modifications made to your Reserved Instances. If no parameter is specified, information about all your Reserved Instances modification requests is returned. If a modification ID is specified, only information about the specific modification is returned. For more information, see Modifying Reserved Instances in the Amazon EC2 User Guide.
+    */
+  def describeReservedInstancesModifications(params: DescribeReservedInstancesModificationsRequest): Request[DescribeReservedInstancesModificationsResult, AWSError] = js.native
+  def describeReservedInstancesModifications(
+    params: DescribeReservedInstancesModificationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedInstancesModificationsResult, Unit]
+  ): Request[DescribeReservedInstancesModificationsResult, AWSError] = js.native
+  
+  /**
+    * Describes Reserved Instance offerings that are available for purchase. With Reserved Instances, you purchase the right to launch instances for a period of time. During that time period, you do not receive insufficient capacity errors, and you pay a lower usage rate than the rate charged for On-Demand instances for the actual time used. If you have listed your own Reserved Instances for sale in the Reserved Instance Marketplace, they will be excluded from these results. This is to ensure that you do not purchase your own Reserved Instances. For more information, see Reserved Instance Marketplace in the Amazon EC2 User Guide.
+    */
+  def describeReservedInstancesOfferings(): Request[DescribeReservedInstancesOfferingsResult, AWSError] = js.native
+  def describeReservedInstancesOfferings(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedInstancesOfferingsResult, Unit]
+  ): Request[DescribeReservedInstancesOfferingsResult, AWSError] = js.native
+  /**
+    * Describes Reserved Instance offerings that are available for purchase. With Reserved Instances, you purchase the right to launch instances for a period of time. During that time period, you do not receive insufficient capacity errors, and you pay a lower usage rate than the rate charged for On-Demand instances for the actual time used. If you have listed your own Reserved Instances for sale in the Reserved Instance Marketplace, they will be excluded from these results. This is to ensure that you do not purchase your own Reserved Instances. For more information, see Reserved Instance Marketplace in the Amazon EC2 User Guide.
+    */
+  def describeReservedInstancesOfferings(params: DescribeReservedInstancesOfferingsRequest): Request[DescribeReservedInstancesOfferingsResult, AWSError] = js.native
+  def describeReservedInstancesOfferings(
+    params: DescribeReservedInstancesOfferingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedInstancesOfferingsResult, Unit]
+  ): Request[DescribeReservedInstancesOfferingsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your route tables. Each subnet in your VPC must be associated with a route table. If a subnet is not explicitly associated with any route table, it is implicitly associated with the main route table. This command does not return the subnet ID for implicit associations. For more information, see Route tables in the Amazon Virtual Private Cloud User Guide.
+    */
+  def describeRouteTables(): Request[DescribeRouteTablesResult, AWSError] = js.native
+  def describeRouteTables(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRouteTablesResult, Unit]): Request[DescribeRouteTablesResult, AWSError] = js.native
+  /**
+    * Describes one or more of your route tables. Each subnet in your VPC must be associated with a route table. If a subnet is not explicitly associated with any route table, it is implicitly associated with the main route table. This command does not return the subnet ID for implicit associations. For more information, see Route tables in the Amazon Virtual Private Cloud User Guide.
+    */
+  def describeRouteTables(params: DescribeRouteTablesRequest): Request[DescribeRouteTablesResult, AWSError] = js.native
+  def describeRouteTables(
+    params: DescribeRouteTablesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeRouteTablesResult, Unit]
+  ): Request[DescribeRouteTablesResult, AWSError] = js.native
+  
+  /**
+    * Finds available schedules that meet the specified criteria. You can search for an available schedule no more than 3 months in advance. You must meet the minimum required duration of 1,200 hours per year. For example, the minimum daily schedule is 4 hours, the minimum weekly schedule is 24 hours, and the minimum monthly schedule is 100 hours. After you find a schedule that meets your needs, call PurchaseScheduledInstances to purchase Scheduled Instances with that schedule.
+    */
+  def describeScheduledInstanceAvailability(): Request[DescribeScheduledInstanceAvailabilityResult, AWSError] = js.native
+  def describeScheduledInstanceAvailability(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeScheduledInstanceAvailabilityResult, Unit]
+  ): Request[DescribeScheduledInstanceAvailabilityResult, AWSError] = js.native
+  /**
+    * Finds available schedules that meet the specified criteria. You can search for an available schedule no more than 3 months in advance. You must meet the minimum required duration of 1,200 hours per year. For example, the minimum daily schedule is 4 hours, the minimum weekly schedule is 24 hours, and the minimum monthly schedule is 100 hours. After you find a schedule that meets your needs, call PurchaseScheduledInstances to purchase Scheduled Instances with that schedule.
+    */
+  def describeScheduledInstanceAvailability(params: DescribeScheduledInstanceAvailabilityRequest): Request[DescribeScheduledInstanceAvailabilityResult, AWSError] = js.native
+  def describeScheduledInstanceAvailability(
+    params: DescribeScheduledInstanceAvailabilityRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeScheduledInstanceAvailabilityResult, Unit]
+  ): Request[DescribeScheduledInstanceAvailabilityResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified Scheduled Instances or all your Scheduled Instances.
+    */
+  def describeScheduledInstances(): Request[DescribeScheduledInstancesResult, AWSError] = js.native
+  def describeScheduledInstances(callback: js.Function2[/* err */ AWSError, /* data */ DescribeScheduledInstancesResult, Unit]): Request[DescribeScheduledInstancesResult, AWSError] = js.native
+  /**
+    * Describes the specified Scheduled Instances or all your Scheduled Instances.
+    */
+  def describeScheduledInstances(params: DescribeScheduledInstancesRequest): Request[DescribeScheduledInstancesResult, AWSError] = js.native
+  def describeScheduledInstances(
+    params: DescribeScheduledInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeScheduledInstancesResult, Unit]
+  ): Request[DescribeScheduledInstancesResult, AWSError] = js.native
+  
+  /**
+    * [VPC only] Describes the VPCs on the other side of a VPC peering connection that are referencing the security groups you've specified in this request.
+    */
+  def describeSecurityGroupReferences(): Request[DescribeSecurityGroupReferencesResult, AWSError] = js.native
+  def describeSecurityGroupReferences(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSecurityGroupReferencesResult, Unit]): Request[DescribeSecurityGroupReferencesResult, AWSError] = js.native
+  /**
+    * [VPC only] Describes the VPCs on the other side of a VPC peering connection that are referencing the security groups you've specified in this request.
+    */
+  def describeSecurityGroupReferences(params: DescribeSecurityGroupReferencesRequest): Request[DescribeSecurityGroupReferencesResult, AWSError] = js.native
+  def describeSecurityGroupReferences(
+    params: DescribeSecurityGroupReferencesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSecurityGroupReferencesResult, Unit]
+  ): Request[DescribeSecurityGroupReferencesResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your security group rules.
+    */
+  def describeSecurityGroupRules(): Request[DescribeSecurityGroupRulesResult, AWSError] = js.native
+  def describeSecurityGroupRules(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSecurityGroupRulesResult, Unit]): Request[DescribeSecurityGroupRulesResult, AWSError] = js.native
+  /**
+    * Describes one or more of your security group rules.
+    */
+  def describeSecurityGroupRules(params: DescribeSecurityGroupRulesRequest): Request[DescribeSecurityGroupRulesResult, AWSError] = js.native
+  def describeSecurityGroupRules(
+    params: DescribeSecurityGroupRulesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSecurityGroupRulesResult, Unit]
+  ): Request[DescribeSecurityGroupRulesResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified security groups or all of your security groups. A security group is for use with instances either in the EC2-Classic platform or in a specific VPC. For more information, see Amazon EC2 security groups in the Amazon Elastic Compute Cloud User Guide and Security groups for your VPC in the Amazon Virtual Private Cloud User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def describeSecurityGroups(): Request[DescribeSecurityGroupsResult, AWSError] = js.native
+  def describeSecurityGroups(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSecurityGroupsResult, Unit]): Request[DescribeSecurityGroupsResult, AWSError] = js.native
+  /**
+    * Describes the specified security groups or all of your security groups. A security group is for use with instances either in the EC2-Classic platform or in a specific VPC. For more information, see Amazon EC2 security groups in the Amazon Elastic Compute Cloud User Guide and Security groups for your VPC in the Amazon Virtual Private Cloud User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def describeSecurityGroups(params: DescribeSecurityGroupsRequest): Request[DescribeSecurityGroupsResult, AWSError] = js.native
+  def describeSecurityGroups(
+    params: DescribeSecurityGroupsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSecurityGroupsResult, Unit]
+  ): Request[DescribeSecurityGroupsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified attribute of the specified snapshot. You can specify only one attribute at a time. For more information about EBS snapshots, see Amazon EBS snapshots in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeSnapshotAttribute(): Request[DescribeSnapshotAttributeResult, AWSError] = js.native
+  def describeSnapshotAttribute(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotAttributeResult, Unit]): Request[DescribeSnapshotAttributeResult, AWSError] = js.native
+  /**
+    * Describes the specified attribute of the specified snapshot. You can specify only one attribute at a time. For more information about EBS snapshots, see Amazon EBS snapshots in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeSnapshotAttribute(params: DescribeSnapshotAttributeRequest): Request[DescribeSnapshotAttributeResult, AWSError] = js.native
+  def describeSnapshotAttribute(
+    params: DescribeSnapshotAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotAttributeResult, Unit]
+  ): Request[DescribeSnapshotAttributeResult, AWSError] = js.native
+  
+  /**
+    * Describes the storage tier status of one or more Amazon EBS snapshots.
+    */
+  def describeSnapshotTierStatus(): Request[DescribeSnapshotTierStatusResult, AWSError] = js.native
+  def describeSnapshotTierStatus(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotTierStatusResult, Unit]): Request[DescribeSnapshotTierStatusResult, AWSError] = js.native
+  /**
+    * Describes the storage tier status of one or more Amazon EBS snapshots.
+    */
+  def describeSnapshotTierStatus(params: DescribeSnapshotTierStatusRequest): Request[DescribeSnapshotTierStatusResult, AWSError] = js.native
+  def describeSnapshotTierStatus(
+    params: DescribeSnapshotTierStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotTierStatusResult, Unit]
+  ): Request[DescribeSnapshotTierStatusResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified EBS snapshots available to you or all of the EBS snapshots available to you. The snapshots available to you include public snapshots, private snapshots that you own, and private snapshots owned by other Amazon Web Services accounts for which you have explicit create volume permissions. The create volume permissions fall into the following categories:    public: The owner of the snapshot granted create volume permissions for the snapshot to the all group. All Amazon Web Services accounts have create volume permissions for these snapshots.    explicit: The owner of the snapshot granted create volume permissions to a specific Amazon Web Services account.    implicit: An Amazon Web Services account has implicit create volume permissions for all snapshots it owns.   The list of snapshots returned can be filtered by specifying snapshot IDs, snapshot owners, or Amazon Web Services accounts with create volume permissions. If no options are specified, Amazon EC2 returns all snapshots for which you have create volume permissions. If you specify one or more snapshot IDs, only snapshots that have the specified IDs are returned. If you specify an invalid snapshot ID, an error is returned. If you specify a snapshot ID for which you do not have access, it is not included in the returned results. If you specify one or more snapshot owners using the OwnerIds option, only snapshots from the specified owners and for which you have access are returned. The results can include the Amazon Web Services account IDs of the specified owners, amazon for snapshots owned by Amazon, or self for snapshots that you own. If you specify a list of restorable users, only snapshots with create snapshot permissions for those users are returned. You can specify Amazon Web Services account IDs (if you own the snapshots), self for snapshots for which you own or have explicit permissions, or all for public snapshots. If you are describing a long list of snapshots, we recommend that you paginate the output to make the list more manageable. The MaxResults parameter sets the maximum number of results returned in a single page. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeSnapshots request to retrieve the remaining results. To get the state of fast snapshot restores for a snapshot, use DescribeFastSnapshotRestores. For more information about EBS snapshots, see Amazon EBS snapshots in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeSnapshots(): Request[DescribeSnapshotsResult, AWSError] = js.native
+  def describeSnapshots(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotsResult, Unit]): Request[DescribeSnapshotsResult, AWSError] = js.native
+  /**
+    * Describes the specified EBS snapshots available to you or all of the EBS snapshots available to you. The snapshots available to you include public snapshots, private snapshots that you own, and private snapshots owned by other Amazon Web Services accounts for which you have explicit create volume permissions. The create volume permissions fall into the following categories:    public: The owner of the snapshot granted create volume permissions for the snapshot to the all group. All Amazon Web Services accounts have create volume permissions for these snapshots.    explicit: The owner of the snapshot granted create volume permissions to a specific Amazon Web Services account.    implicit: An Amazon Web Services account has implicit create volume permissions for all snapshots it owns.   The list of snapshots returned can be filtered by specifying snapshot IDs, snapshot owners, or Amazon Web Services accounts with create volume permissions. If no options are specified, Amazon EC2 returns all snapshots for which you have create volume permissions. If you specify one or more snapshot IDs, only snapshots that have the specified IDs are returned. If you specify an invalid snapshot ID, an error is returned. If you specify a snapshot ID for which you do not have access, it is not included in the returned results. If you specify one or more snapshot owners using the OwnerIds option, only snapshots from the specified owners and for which you have access are returned. The results can include the Amazon Web Services account IDs of the specified owners, amazon for snapshots owned by Amazon, or self for snapshots that you own. If you specify a list of restorable users, only snapshots with create snapshot permissions for those users are returned. You can specify Amazon Web Services account IDs (if you own the snapshots), self for snapshots for which you own or have explicit permissions, or all for public snapshots. If you are describing a long list of snapshots, we recommend that you paginate the output to make the list more manageable. The MaxResults parameter sets the maximum number of results returned in a single page. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeSnapshots request to retrieve the remaining results. To get the state of fast snapshot restores for a snapshot, use DescribeFastSnapshotRestores. For more information about EBS snapshots, see Amazon EBS snapshots in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeSnapshots(params: DescribeSnapshotsRequest): Request[DescribeSnapshotsResult, AWSError] = js.native
+  def describeSnapshots(
+    params: DescribeSnapshotsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotsResult, Unit]
+  ): Request[DescribeSnapshotsResult, AWSError] = js.native
+  
+  /**
+    * Describes the data feed for Spot Instances. For more information, see Spot Instance data feed in the Amazon EC2 User Guide for Linux Instances.
+    */
+  def describeSpotDatafeedSubscription(): Request[DescribeSpotDatafeedSubscriptionResult, AWSError] = js.native
+  def describeSpotDatafeedSubscription(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotDatafeedSubscriptionResult, Unit]
+  ): Request[DescribeSpotDatafeedSubscriptionResult, AWSError] = js.native
+  /**
+    * Describes the data feed for Spot Instances. For more information, see Spot Instance data feed in the Amazon EC2 User Guide for Linux Instances.
+    */
+  def describeSpotDatafeedSubscription(params: DescribeSpotDatafeedSubscriptionRequest): Request[DescribeSpotDatafeedSubscriptionResult, AWSError] = js.native
+  def describeSpotDatafeedSubscription(
+    params: DescribeSpotDatafeedSubscriptionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotDatafeedSubscriptionResult, Unit]
+  ): Request[DescribeSpotDatafeedSubscriptionResult, AWSError] = js.native
+  
+  /**
+    * Describes the running instances for the specified Spot Fleet.
+    */
+  def describeSpotFleetInstances(): Request[DescribeSpotFleetInstancesResponse, AWSError] = js.native
+  def describeSpotFleetInstances(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotFleetInstancesResponse, Unit]): Request[DescribeSpotFleetInstancesResponse, AWSError] = js.native
+  /**
+    * Describes the running instances for the specified Spot Fleet.
+    */
+  def describeSpotFleetInstances(params: DescribeSpotFleetInstancesRequest): Request[DescribeSpotFleetInstancesResponse, AWSError] = js.native
+  def describeSpotFleetInstances(
+    params: DescribeSpotFleetInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotFleetInstancesResponse, Unit]
+  ): Request[DescribeSpotFleetInstancesResponse, AWSError] = js.native
+  
+  /**
+    * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours. For more information, see Monitor fleet events using Amazon EventBridge in the Amazon EC2 User Guide for Linux Instances.
+    */
+  def describeSpotFleetRequestHistory(): Request[DescribeSpotFleetRequestHistoryResponse, AWSError] = js.native
+  def describeSpotFleetRequestHistory(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotFleetRequestHistoryResponse, Unit]
+  ): Request[DescribeSpotFleetRequestHistoryResponse, AWSError] = js.native
+  /**
+    * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours. For more information, see Monitor fleet events using Amazon EventBridge in the Amazon EC2 User Guide for Linux Instances.
+    */
+  def describeSpotFleetRequestHistory(params: DescribeSpotFleetRequestHistoryRequest): Request[DescribeSpotFleetRequestHistoryResponse, AWSError] = js.native
+  def describeSpotFleetRequestHistory(
+    params: DescribeSpotFleetRequestHistoryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotFleetRequestHistoryResponse, Unit]
+  ): Request[DescribeSpotFleetRequestHistoryResponse, AWSError] = js.native
+  
+  /**
+    * Describes your Spot Fleet requests. Spot Fleet requests are deleted 48 hours after they are canceled and their instances are terminated.
+    */
+  def describeSpotFleetRequests(): Request[DescribeSpotFleetRequestsResponse, AWSError] = js.native
+  def describeSpotFleetRequests(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotFleetRequestsResponse, Unit]): Request[DescribeSpotFleetRequestsResponse, AWSError] = js.native
+  /**
+    * Describes your Spot Fleet requests. Spot Fleet requests are deleted 48 hours after they are canceled and their instances are terminated.
+    */
+  def describeSpotFleetRequests(params: DescribeSpotFleetRequestsRequest): Request[DescribeSpotFleetRequestsResponse, AWSError] = js.native
+  def describeSpotFleetRequests(
+    params: DescribeSpotFleetRequestsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotFleetRequestsResponse, Unit]
+  ): Request[DescribeSpotFleetRequestsResponse, AWSError] = js.native
+  
+  /**
+    * Describes the specified Spot Instance requests. You can use DescribeSpotInstanceRequests to find a running Spot Instance by examining the response. If the status of the Spot Instance is fulfilled, the instance ID appears in the response and contains the identifier of the instance. Alternatively, you can use DescribeInstances with a filter to look for instances where the instance lifecycle is spot. We recommend that you set MaxResults to a value between 5 and 1000 to limit the number of results returned. This paginates the output, which makes the list more manageable and returns the results faster. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeSpotInstanceRequests request to retrieve the remaining results. Spot Instance requests are deleted four hours after they are canceled and their instances are terminated.
+    */
+  def describeSpotInstanceRequests(): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
+  def describeSpotInstanceRequests(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotInstanceRequestsResult, Unit]): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
+  /**
+    * Describes the specified Spot Instance requests. You can use DescribeSpotInstanceRequests to find a running Spot Instance by examining the response. If the status of the Spot Instance is fulfilled, the instance ID appears in the response and contains the identifier of the instance. Alternatively, you can use DescribeInstances with a filter to look for instances where the instance lifecycle is spot. We recommend that you set MaxResults to a value between 5 and 1000 to limit the number of results returned. This paginates the output, which makes the list more manageable and returns the results faster. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeSpotInstanceRequests request to retrieve the remaining results. Spot Instance requests are deleted four hours after they are canceled and their instances are terminated.
+    */
+  def describeSpotInstanceRequests(params: DescribeSpotInstanceRequestsRequest): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
+  def describeSpotInstanceRequests(
+    params: DescribeSpotInstanceRequestsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotInstanceRequestsResult, Unit]
+  ): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
+  
+  /**
+    * Describes the Spot price history. For more information, see Spot Instance pricing history in the Amazon EC2 User Guide for Linux Instances. When you specify a start and end time, the operation returns the prices of the instance types within that time range. It also returns the last price change before the start time, which is the effective price as of the start time.
+    */
+  def describeSpotPriceHistory(): Request[DescribeSpotPriceHistoryResult, AWSError] = js.native
+  def describeSpotPriceHistory(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotPriceHistoryResult, Unit]): Request[DescribeSpotPriceHistoryResult, AWSError] = js.native
+  /**
+    * Describes the Spot price history. For more information, see Spot Instance pricing history in the Amazon EC2 User Guide for Linux Instances. When you specify a start and end time, the operation returns the prices of the instance types within that time range. It also returns the last price change before the start time, which is the effective price as of the start time.
+    */
+  def describeSpotPriceHistory(params: DescribeSpotPriceHistoryRequest): Request[DescribeSpotPriceHistoryResult, AWSError] = js.native
+  def describeSpotPriceHistory(
+    params: DescribeSpotPriceHistoryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotPriceHistoryResult, Unit]
+  ): Request[DescribeSpotPriceHistoryResult, AWSError] = js.native
+  
+  /**
+    * [VPC only] Describes the stale security group rules for security groups in a specified VPC. Rules are stale when they reference a deleted security group in the same VPC or in a peer VPC, or if they reference a security group in a peer VPC for which the VPC peering connection has been deleted.
+    */
+  def describeStaleSecurityGroups(): Request[DescribeStaleSecurityGroupsResult, AWSError] = js.native
+  def describeStaleSecurityGroups(callback: js.Function2[/* err */ AWSError, /* data */ DescribeStaleSecurityGroupsResult, Unit]): Request[DescribeStaleSecurityGroupsResult, AWSError] = js.native
+  /**
+    * [VPC only] Describes the stale security group rules for security groups in a specified VPC. Rules are stale when they reference a deleted security group in the same VPC or in a peer VPC, or if they reference a security group in a peer VPC for which the VPC peering connection has been deleted.
+    */
+  def describeStaleSecurityGroups(params: DescribeStaleSecurityGroupsRequest): Request[DescribeStaleSecurityGroupsResult, AWSError] = js.native
+  def describeStaleSecurityGroups(
+    params: DescribeStaleSecurityGroupsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeStaleSecurityGroupsResult, Unit]
+  ): Request[DescribeStaleSecurityGroupsResult, AWSError] = js.native
+  
+  /**
+    * Describes the progress of the AMI store tasks. You can describe the store tasks for specified AMIs. If you don't specify the AMIs, you get a paginated list of store tasks from the last 31 days. For each AMI task, the response indicates if the task is InProgress, Completed, or Failed. For tasks InProgress, the response shows the estimated progress as a percentage. Tasks are listed in reverse chronological order. Currently, only tasks from the past 31 days can be viewed. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon Elastic Compute Cloud User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeStoreImageTasks(): Request[DescribeStoreImageTasksResult, AWSError] = js.native
+  def describeStoreImageTasks(callback: js.Function2[/* err */ AWSError, /* data */ DescribeStoreImageTasksResult, Unit]): Request[DescribeStoreImageTasksResult, AWSError] = js.native
+  /**
+    * Describes the progress of the AMI store tasks. You can describe the store tasks for specified AMIs. If you don't specify the AMIs, you get a paginated list of store tasks from the last 31 days. For each AMI task, the response indicates if the task is InProgress, Completed, or Failed. For tasks InProgress, the response shows the estimated progress as a percentage. Tasks are listed in reverse chronological order. Currently, only tasks from the past 31 days can be viewed. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon Elastic Compute Cloud User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeStoreImageTasks(params: DescribeStoreImageTasksRequest): Request[DescribeStoreImageTasksResult, AWSError] = js.native
+  def describeStoreImageTasks(
+    params: DescribeStoreImageTasksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeStoreImageTasksResult, Unit]
+  ): Request[DescribeStoreImageTasksResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your subnets. For more information, see Your VPC and subnets in the Amazon Virtual Private Cloud User Guide.
+    */
+  def describeSubnets(): Request[DescribeSubnetsResult, AWSError] = js.native
+  def describeSubnets(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSubnetsResult, Unit]): Request[DescribeSubnetsResult, AWSError] = js.native
+  /**
+    * Describes one or more of your subnets. For more information, see Your VPC and subnets in the Amazon Virtual Private Cloud User Guide.
+    */
+  def describeSubnets(params: DescribeSubnetsRequest): Request[DescribeSubnetsResult, AWSError] = js.native
+  def describeSubnets(
+    params: DescribeSubnetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSubnetsResult, Unit]
+  ): Request[DescribeSubnetsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified tags for your EC2 resources. For more information about tags, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeTags(): Request[DescribeTagsResult, AWSError] = js.native
+  def describeTags(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTagsResult, Unit]): Request[DescribeTagsResult, AWSError] = js.native
+  /**
+    * Describes the specified tags for your EC2 resources. For more information about tags, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeTags(params: DescribeTagsRequest): Request[DescribeTagsResult, AWSError] = js.native
+  def describeTags(
+    params: DescribeTagsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTagsResult, Unit]
+  ): Request[DescribeTagsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more Traffic Mirror filters.
+    */
+  def describeTrafficMirrorFilters(): Request[DescribeTrafficMirrorFiltersResult, AWSError] = js.native
+  def describeTrafficMirrorFilters(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTrafficMirrorFiltersResult, Unit]): Request[DescribeTrafficMirrorFiltersResult, AWSError] = js.native
+  /**
+    * Describes one or more Traffic Mirror filters.
+    */
+  def describeTrafficMirrorFilters(params: DescribeTrafficMirrorFiltersRequest): Request[DescribeTrafficMirrorFiltersResult, AWSError] = js.native
+  def describeTrafficMirrorFilters(
+    params: DescribeTrafficMirrorFiltersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTrafficMirrorFiltersResult, Unit]
+  ): Request[DescribeTrafficMirrorFiltersResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more Traffic Mirror sessions. By default, all Traffic Mirror sessions are described. Alternatively, you can filter the results.
+    */
+  def describeTrafficMirrorSessions(): Request[DescribeTrafficMirrorSessionsResult, AWSError] = js.native
+  def describeTrafficMirrorSessions(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTrafficMirrorSessionsResult, Unit]): Request[DescribeTrafficMirrorSessionsResult, AWSError] = js.native
+  /**
+    * Describes one or more Traffic Mirror sessions. By default, all Traffic Mirror sessions are described. Alternatively, you can filter the results.
+    */
+  def describeTrafficMirrorSessions(params: DescribeTrafficMirrorSessionsRequest): Request[DescribeTrafficMirrorSessionsResult, AWSError] = js.native
+  def describeTrafficMirrorSessions(
+    params: DescribeTrafficMirrorSessionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTrafficMirrorSessionsResult, Unit]
+  ): Request[DescribeTrafficMirrorSessionsResult, AWSError] = js.native
+  
+  /**
+    * Information about one or more Traffic Mirror targets.
+    */
+  def describeTrafficMirrorTargets(): Request[DescribeTrafficMirrorTargetsResult, AWSError] = js.native
+  def describeTrafficMirrorTargets(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTrafficMirrorTargetsResult, Unit]): Request[DescribeTrafficMirrorTargetsResult, AWSError] = js.native
+  /**
+    * Information about one or more Traffic Mirror targets.
+    */
+  def describeTrafficMirrorTargets(params: DescribeTrafficMirrorTargetsRequest): Request[DescribeTrafficMirrorTargetsResult, AWSError] = js.native
+  def describeTrafficMirrorTargets(
+    params: DescribeTrafficMirrorTargetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTrafficMirrorTargetsResult, Unit]
+  ): Request[DescribeTrafficMirrorTargetsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more attachments between resources and transit gateways. By default, all attachments are described. Alternatively, you can filter the results by attachment ID, attachment state, resource ID, or resource owner.
+    */
+  def describeTransitGatewayAttachments(): Request[DescribeTransitGatewayAttachmentsResult, AWSError] = js.native
+  def describeTransitGatewayAttachments(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayAttachmentsResult, Unit]
+  ): Request[DescribeTransitGatewayAttachmentsResult, AWSError] = js.native
+  /**
+    * Describes one or more attachments between resources and transit gateways. By default, all attachments are described. Alternatively, you can filter the results by attachment ID, attachment state, resource ID, or resource owner.
+    */
+  def describeTransitGatewayAttachments(params: DescribeTransitGatewayAttachmentsRequest): Request[DescribeTransitGatewayAttachmentsResult, AWSError] = js.native
+  def describeTransitGatewayAttachments(
+    params: DescribeTransitGatewayAttachmentsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayAttachmentsResult, Unit]
+  ): Request[DescribeTransitGatewayAttachmentsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more Connect peers.
+    */
+  def describeTransitGatewayConnectPeers(): Request[DescribeTransitGatewayConnectPeersResult, AWSError] = js.native
+  def describeTransitGatewayConnectPeers(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayConnectPeersResult, Unit]
+  ): Request[DescribeTransitGatewayConnectPeersResult, AWSError] = js.native
+  /**
+    * Describes one or more Connect peers.
+    */
+  def describeTransitGatewayConnectPeers(params: DescribeTransitGatewayConnectPeersRequest): Request[DescribeTransitGatewayConnectPeersResult, AWSError] = js.native
+  def describeTransitGatewayConnectPeers(
+    params: DescribeTransitGatewayConnectPeersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayConnectPeersResult, Unit]
+  ): Request[DescribeTransitGatewayConnectPeersResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more Connect attachments.
+    */
+  def describeTransitGatewayConnects(): Request[DescribeTransitGatewayConnectsResult, AWSError] = js.native
+  def describeTransitGatewayConnects(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayConnectsResult, Unit]): Request[DescribeTransitGatewayConnectsResult, AWSError] = js.native
+  /**
+    * Describes one or more Connect attachments.
+    */
+  def describeTransitGatewayConnects(params: DescribeTransitGatewayConnectsRequest): Request[DescribeTransitGatewayConnectsResult, AWSError] = js.native
+  def describeTransitGatewayConnects(
+    params: DescribeTransitGatewayConnectsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayConnectsResult, Unit]
+  ): Request[DescribeTransitGatewayConnectsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more transit gateway multicast domains.
+    */
+  def describeTransitGatewayMulticastDomains(): Request[DescribeTransitGatewayMulticastDomainsResult, AWSError] = js.native
+  def describeTransitGatewayMulticastDomains(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayMulticastDomainsResult, Unit]
+  ): Request[DescribeTransitGatewayMulticastDomainsResult, AWSError] = js.native
+  /**
+    * Describes one or more transit gateway multicast domains.
+    */
+  def describeTransitGatewayMulticastDomains(params: DescribeTransitGatewayMulticastDomainsRequest): Request[DescribeTransitGatewayMulticastDomainsResult, AWSError] = js.native
+  def describeTransitGatewayMulticastDomains(
+    params: DescribeTransitGatewayMulticastDomainsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayMulticastDomainsResult, Unit]
+  ): Request[DescribeTransitGatewayMulticastDomainsResult, AWSError] = js.native
+  
+  /**
+    * Describes your transit gateway peering attachments.
+    */
+  def describeTransitGatewayPeeringAttachments(): Request[DescribeTransitGatewayPeeringAttachmentsResult, AWSError] = js.native
+  def describeTransitGatewayPeeringAttachments(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayPeeringAttachmentsResult, Unit]
+  ): Request[DescribeTransitGatewayPeeringAttachmentsResult, AWSError] = js.native
+  /**
+    * Describes your transit gateway peering attachments.
+    */
+  def describeTransitGatewayPeeringAttachments(params: DescribeTransitGatewayPeeringAttachmentsRequest): Request[DescribeTransitGatewayPeeringAttachmentsResult, AWSError] = js.native
+  def describeTransitGatewayPeeringAttachments(
+    params: DescribeTransitGatewayPeeringAttachmentsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayPeeringAttachmentsResult, Unit]
+  ): Request[DescribeTransitGatewayPeeringAttachmentsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more transit gateway route policy tables. 
+    */
+  def describeTransitGatewayPolicyTables(): Request[DescribeTransitGatewayPolicyTablesResult, AWSError] = js.native
+  def describeTransitGatewayPolicyTables(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayPolicyTablesResult, Unit]
+  ): Request[DescribeTransitGatewayPolicyTablesResult, AWSError] = js.native
+  /**
+    * Describes one or more transit gateway route policy tables. 
+    */
+  def describeTransitGatewayPolicyTables(params: DescribeTransitGatewayPolicyTablesRequest): Request[DescribeTransitGatewayPolicyTablesResult, AWSError] = js.native
+  def describeTransitGatewayPolicyTables(
+    params: DescribeTransitGatewayPolicyTablesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayPolicyTablesResult, Unit]
+  ): Request[DescribeTransitGatewayPolicyTablesResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more transit gateway route table advertisements.
+    */
+  def describeTransitGatewayRouteTableAnnouncements(): Request[DescribeTransitGatewayRouteTableAnnouncementsResult, AWSError] = js.native
+  def describeTransitGatewayRouteTableAnnouncements(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeTransitGatewayRouteTableAnnouncementsResult, 
+      Unit
+    ]
+  ): Request[DescribeTransitGatewayRouteTableAnnouncementsResult, AWSError] = js.native
+  /**
+    * Describes one or more transit gateway route table advertisements.
+    */
+  def describeTransitGatewayRouteTableAnnouncements(params: DescribeTransitGatewayRouteTableAnnouncementsRequest): Request[DescribeTransitGatewayRouteTableAnnouncementsResult, AWSError] = js.native
+  def describeTransitGatewayRouteTableAnnouncements(
+    params: DescribeTransitGatewayRouteTableAnnouncementsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeTransitGatewayRouteTableAnnouncementsResult, 
+      Unit
+    ]
+  ): Request[DescribeTransitGatewayRouteTableAnnouncementsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more transit gateway route tables. By default, all transit gateway route tables are described. Alternatively, you can filter the results.
+    */
+  def describeTransitGatewayRouteTables(): Request[DescribeTransitGatewayRouteTablesResult, AWSError] = js.native
+  def describeTransitGatewayRouteTables(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayRouteTablesResult, Unit]
+  ): Request[DescribeTransitGatewayRouteTablesResult, AWSError] = js.native
+  /**
+    * Describes one or more transit gateway route tables. By default, all transit gateway route tables are described. Alternatively, you can filter the results.
+    */
+  def describeTransitGatewayRouteTables(params: DescribeTransitGatewayRouteTablesRequest): Request[DescribeTransitGatewayRouteTablesResult, AWSError] = js.native
+  def describeTransitGatewayRouteTables(
+    params: DescribeTransitGatewayRouteTablesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayRouteTablesResult, Unit]
+  ): Request[DescribeTransitGatewayRouteTablesResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more VPC attachments. By default, all VPC attachments are described. Alternatively, you can filter the results.
+    */
+  def describeTransitGatewayVpcAttachments(): Request[DescribeTransitGatewayVpcAttachmentsResult, AWSError] = js.native
+  def describeTransitGatewayVpcAttachments(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayVpcAttachmentsResult, Unit]
+  ): Request[DescribeTransitGatewayVpcAttachmentsResult, AWSError] = js.native
+  /**
+    * Describes one or more VPC attachments. By default, all VPC attachments are described. Alternatively, you can filter the results.
+    */
+  def describeTransitGatewayVpcAttachments(params: DescribeTransitGatewayVpcAttachmentsRequest): Request[DescribeTransitGatewayVpcAttachmentsResult, AWSError] = js.native
+  def describeTransitGatewayVpcAttachments(
+    params: DescribeTransitGatewayVpcAttachmentsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewayVpcAttachmentsResult, Unit]
+  ): Request[DescribeTransitGatewayVpcAttachmentsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more transit gateways. By default, all transit gateways are described. Alternatively, you can filter the results.
+    */
+  def describeTransitGateways(): Request[DescribeTransitGatewaysResult, AWSError] = js.native
+  def describeTransitGateways(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewaysResult, Unit]): Request[DescribeTransitGatewaysResult, AWSError] = js.native
+  /**
+    * Describes one or more transit gateways. By default, all transit gateways are described. Alternatively, you can filter the results.
+    */
+  def describeTransitGateways(params: DescribeTransitGatewaysRequest): Request[DescribeTransitGatewaysResult, AWSError] = js.native
+  def describeTransitGateways(
+    params: DescribeTransitGatewaysRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTransitGatewaysResult, Unit]
+  ): Request[DescribeTransitGatewaysResult, AWSError] = js.native
+  
+  /**
+    *  This API action is currently in limited preview only. If you are interested in using this feature, contact your account manager.  Describes one or more network interface trunk associations.
+    */
+  def describeTrunkInterfaceAssociations(): Request[DescribeTrunkInterfaceAssociationsResult, AWSError] = js.native
+  def describeTrunkInterfaceAssociations(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTrunkInterfaceAssociationsResult, Unit]
+  ): Request[DescribeTrunkInterfaceAssociationsResult, AWSError] = js.native
+  /**
+    *  This API action is currently in limited preview only. If you are interested in using this feature, contact your account manager.  Describes one or more network interface trunk associations.
+    */
+  def describeTrunkInterfaceAssociations(params: DescribeTrunkInterfaceAssociationsRequest): Request[DescribeTrunkInterfaceAssociationsResult, AWSError] = js.native
+  def describeTrunkInterfaceAssociations(
+    params: DescribeTrunkInterfaceAssociationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTrunkInterfaceAssociationsResult, Unit]
+  ): Request[DescribeTrunkInterfaceAssociationsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified attribute of the specified volume. You can specify only one attribute at a time. For more information about EBS volumes, see Amazon EBS volumes in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeVolumeAttribute(): Request[DescribeVolumeAttributeResult, AWSError] = js.native
+  def describeVolumeAttribute(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumeAttributeResult, Unit]): Request[DescribeVolumeAttributeResult, AWSError] = js.native
+  /**
+    * Describes the specified attribute of the specified volume. You can specify only one attribute at a time. For more information about EBS volumes, see Amazon EBS volumes in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeVolumeAttribute(params: DescribeVolumeAttributeRequest): Request[DescribeVolumeAttributeResult, AWSError] = js.native
+  def describeVolumeAttribute(
+    params: DescribeVolumeAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumeAttributeResult, Unit]
+  ): Request[DescribeVolumeAttributeResult, AWSError] = js.native
+  
+  /**
+    * Describes the status of the specified volumes. Volume status provides the result of the checks performed on your volumes to determine events that can impair the performance of your volumes. The performance of a volume can be affected if an issue occurs on the volume's underlying host. If the volume's underlying host experiences a power outage or system issue, after the system is restored, there could be data inconsistencies on the volume. Volume events notify you if this occurs. Volume actions notify you if any action needs to be taken in response to the event. The DescribeVolumeStatus operation provides the following information about the specified volumes:  Status: Reflects the current status of the volume. The possible values are ok, impaired , warning, or insufficient-data. If all checks pass, the overall status of the volume is ok. If the check fails, the overall status is impaired. If the status is insufficient-data, then the checks might still be taking place on your volume at the time. We recommend that you retry the request. For more information about volume status, see Monitor the status of your volumes in the Amazon Elastic Compute Cloud User Guide.  Events: Reflect the cause of a volume status and might require you to take action. For example, if your volume returns an impaired status, then the volume event might be potential-data-inconsistency. This means that your volume has been affected by an issue with the underlying host, has all I/O operations disabled, and might have inconsistent data.  Actions: Reflect the actions you might have to take in response to an event. For example, if the status of the volume is impaired and the volume event shows potential-data-inconsistency, then the action shows enable-volume-io. This means that you may want to enable the I/O operations for the volume by calling the EnableVolumeIO action and then check the volume for data consistency. Volume status is based on the volume status checks, and does not reflect the volume state. Therefore, volume status does not indicate volumes in the error state (for example, when a volume is incapable of accepting I/O.)
+    */
+  def describeVolumeStatus(): Request[DescribeVolumeStatusResult, AWSError] = js.native
+  def describeVolumeStatus(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumeStatusResult, Unit]): Request[DescribeVolumeStatusResult, AWSError] = js.native
+  /**
+    * Describes the status of the specified volumes. Volume status provides the result of the checks performed on your volumes to determine events that can impair the performance of your volumes. The performance of a volume can be affected if an issue occurs on the volume's underlying host. If the volume's underlying host experiences a power outage or system issue, after the system is restored, there could be data inconsistencies on the volume. Volume events notify you if this occurs. Volume actions notify you if any action needs to be taken in response to the event. The DescribeVolumeStatus operation provides the following information about the specified volumes:  Status: Reflects the current status of the volume. The possible values are ok, impaired , warning, or insufficient-data. If all checks pass, the overall status of the volume is ok. If the check fails, the overall status is impaired. If the status is insufficient-data, then the checks might still be taking place on your volume at the time. We recommend that you retry the request. For more information about volume status, see Monitor the status of your volumes in the Amazon Elastic Compute Cloud User Guide.  Events: Reflect the cause of a volume status and might require you to take action. For example, if your volume returns an impaired status, then the volume event might be potential-data-inconsistency. This means that your volume has been affected by an issue with the underlying host, has all I/O operations disabled, and might have inconsistent data.  Actions: Reflect the actions you might have to take in response to an event. For example, if the status of the volume is impaired and the volume event shows potential-data-inconsistency, then the action shows enable-volume-io. This means that you may want to enable the I/O operations for the volume by calling the EnableVolumeIO action and then check the volume for data consistency. Volume status is based on the volume status checks, and does not reflect the volume state. Therefore, volume status does not indicate volumes in the error state (for example, when a volume is incapable of accepting I/O.)
+    */
+  def describeVolumeStatus(params: DescribeVolumeStatusRequest): Request[DescribeVolumeStatusResult, AWSError] = js.native
+  def describeVolumeStatus(
+    params: DescribeVolumeStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumeStatusResult, Unit]
+  ): Request[DescribeVolumeStatusResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified EBS volumes or all of your EBS volumes. If you are describing a long list of volumes, we recommend that you paginate the output to make the list more manageable. The MaxResults parameter sets the maximum number of results returned in a single page. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeVolumes request to retrieve the remaining results. For more information about EBS volumes, see Amazon EBS volumes in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeVolumes(): Request[DescribeVolumesResult, AWSError] = js.native
+  def describeVolumes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesResult, Unit]): Request[DescribeVolumesResult, AWSError] = js.native
+  /**
+    * Describes the specified EBS volumes or all of your EBS volumes. If you are describing a long list of volumes, we recommend that you paginate the output to make the list more manageable. The MaxResults parameter sets the maximum number of results returned in a single page. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeVolumes request to retrieve the remaining results. For more information about EBS volumes, see Amazon EBS volumes in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeVolumes(params: DescribeVolumesRequest): Request[DescribeVolumesResult, AWSError] = js.native
+  def describeVolumes(
+    params: DescribeVolumesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesResult, Unit]
+  ): Request[DescribeVolumesResult, AWSError] = js.native
+  
+  /**
+    * Describes the most recent volume modification request for the specified EBS volumes. If a volume has never been modified, some information in the output will be null. If a volume has been modified more than once, the output includes only the most recent modification request. You can also use CloudWatch Events to check the status of a modification to an EBS volume. For information about CloudWatch Events, see the Amazon CloudWatch Events User Guide. For more information, see Monitor the progress of volume modifications in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeVolumesModifications(): Request[DescribeVolumesModificationsResult, AWSError] = js.native
+  def describeVolumesModifications(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesModificationsResult, Unit]): Request[DescribeVolumesModificationsResult, AWSError] = js.native
+  /**
+    * Describes the most recent volume modification request for the specified EBS volumes. If a volume has never been modified, some information in the output will be null. If a volume has been modified more than once, the output includes only the most recent modification request. You can also use CloudWatch Events to check the status of a modification to an EBS volume. For information about CloudWatch Events, see the Amazon CloudWatch Events User Guide. For more information, see Monitor the progress of volume modifications in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeVolumesModifications(params: DescribeVolumesModificationsRequest): Request[DescribeVolumesModificationsResult, AWSError] = js.native
+  def describeVolumesModifications(
+    params: DescribeVolumesModificationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesModificationsResult, Unit]
+  ): Request[DescribeVolumesModificationsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified attribute of the specified VPC. You can specify only one attribute at a time.
+    */
+  def describeVpcAttribute(): Request[DescribeVpcAttributeResult, AWSError] = js.native
+  def describeVpcAttribute(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcAttributeResult, Unit]): Request[DescribeVpcAttributeResult, AWSError] = js.native
+  /**
+    * Describes the specified attribute of the specified VPC. You can specify only one attribute at a time.
+    */
+  def describeVpcAttribute(params: DescribeVpcAttributeRequest): Request[DescribeVpcAttributeResult, AWSError] = js.native
+  def describeVpcAttribute(
+    params: DescribeVpcAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcAttributeResult, Unit]
+  ): Request[DescribeVpcAttributeResult, AWSError] = js.native
+  
+  /**
+    * Describes the ClassicLink status of one or more VPCs.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def describeVpcClassicLink(): Request[DescribeVpcClassicLinkResult, AWSError] = js.native
+  def describeVpcClassicLink(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcClassicLinkResult, Unit]): Request[DescribeVpcClassicLinkResult, AWSError] = js.native
+  /**
+    * Describes the ClassicLink status of one or more VPCs.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def describeVpcClassicLink(params: DescribeVpcClassicLinkRequest): Request[DescribeVpcClassicLinkResult, AWSError] = js.native
+  def describeVpcClassicLink(
+    params: DescribeVpcClassicLinkRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcClassicLinkResult, Unit]
+  ): Request[DescribeVpcClassicLinkResult, AWSError] = js.native
+  
+  /**
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Describes the ClassicLink DNS support status of one or more VPCs. If enabled, the DNS hostname of a linked EC2-Classic instance resolves to its private IP address when addressed from an instance in the VPC to which it's linked. Similarly, the DNS hostname of an instance in a VPC resolves to its private IP address when addressed from a linked EC2-Classic instance. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeVpcClassicLinkDnsSupport(): Request[DescribeVpcClassicLinkDnsSupportResult, AWSError] = js.native
+  def describeVpcClassicLinkDnsSupport(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcClassicLinkDnsSupportResult, Unit]
+  ): Request[DescribeVpcClassicLinkDnsSupportResult, AWSError] = js.native
+  /**
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Describes the ClassicLink DNS support status of one or more VPCs. If enabled, the DNS hostname of a linked EC2-Classic instance resolves to its private IP address when addressed from an instance in the VPC to which it's linked. Similarly, the DNS hostname of an instance in a VPC resolves to its private IP address when addressed from a linked EC2-Classic instance. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def describeVpcClassicLinkDnsSupport(params: DescribeVpcClassicLinkDnsSupportRequest): Request[DescribeVpcClassicLinkDnsSupportResult, AWSError] = js.native
+  def describeVpcClassicLinkDnsSupport(
+    params: DescribeVpcClassicLinkDnsSupportRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcClassicLinkDnsSupportResult, Unit]
+  ): Request[DescribeVpcClassicLinkDnsSupportResult, AWSError] = js.native
+  
+  /**
+    * Describes the connection notifications for VPC endpoints and VPC endpoint services.
+    */
+  def describeVpcEndpointConnectionNotifications(): Request[DescribeVpcEndpointConnectionNotificationsResult, AWSError] = js.native
+  def describeVpcEndpointConnectionNotifications(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeVpcEndpointConnectionNotificationsResult, 
+      Unit
+    ]
+  ): Request[DescribeVpcEndpointConnectionNotificationsResult, AWSError] = js.native
+  /**
+    * Describes the connection notifications for VPC endpoints and VPC endpoint services.
+    */
+  def describeVpcEndpointConnectionNotifications(params: DescribeVpcEndpointConnectionNotificationsRequest): Request[DescribeVpcEndpointConnectionNotificationsResult, AWSError] = js.native
+  def describeVpcEndpointConnectionNotifications(
+    params: DescribeVpcEndpointConnectionNotificationsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeVpcEndpointConnectionNotificationsResult, 
+      Unit
+    ]
+  ): Request[DescribeVpcEndpointConnectionNotificationsResult, AWSError] = js.native
+  
+  /**
+    * Describes the VPC endpoint connections to your VPC endpoint services, including any endpoints that are pending your acceptance.
+    */
+  def describeVpcEndpointConnections(): Request[DescribeVpcEndpointConnectionsResult, AWSError] = js.native
+  def describeVpcEndpointConnections(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointConnectionsResult, Unit]): Request[DescribeVpcEndpointConnectionsResult, AWSError] = js.native
+  /**
+    * Describes the VPC endpoint connections to your VPC endpoint services, including any endpoints that are pending your acceptance.
+    */
+  def describeVpcEndpointConnections(params: DescribeVpcEndpointConnectionsRequest): Request[DescribeVpcEndpointConnectionsResult, AWSError] = js.native
+  def describeVpcEndpointConnections(
+    params: DescribeVpcEndpointConnectionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointConnectionsResult, Unit]
+  ): Request[DescribeVpcEndpointConnectionsResult, AWSError] = js.native
+  
+  /**
+    * Describes the VPC endpoint service configurations in your account (your services).
+    */
+  def describeVpcEndpointServiceConfigurations(): Request[DescribeVpcEndpointServiceConfigurationsResult, AWSError] = js.native
+  def describeVpcEndpointServiceConfigurations(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointServiceConfigurationsResult, Unit]
+  ): Request[DescribeVpcEndpointServiceConfigurationsResult, AWSError] = js.native
+  /**
+    * Describes the VPC endpoint service configurations in your account (your services).
+    */
+  def describeVpcEndpointServiceConfigurations(params: DescribeVpcEndpointServiceConfigurationsRequest): Request[DescribeVpcEndpointServiceConfigurationsResult, AWSError] = js.native
+  def describeVpcEndpointServiceConfigurations(
+    params: DescribeVpcEndpointServiceConfigurationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointServiceConfigurationsResult, Unit]
+  ): Request[DescribeVpcEndpointServiceConfigurationsResult, AWSError] = js.native
+  
+  /**
+    * Describes the principals (service consumers) that are permitted to discover your VPC endpoint service.
+    */
+  def describeVpcEndpointServicePermissions(): Request[DescribeVpcEndpointServicePermissionsResult, AWSError] = js.native
+  def describeVpcEndpointServicePermissions(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointServicePermissionsResult, Unit]
+  ): Request[DescribeVpcEndpointServicePermissionsResult, AWSError] = js.native
+  /**
+    * Describes the principals (service consumers) that are permitted to discover your VPC endpoint service.
+    */
+  def describeVpcEndpointServicePermissions(params: DescribeVpcEndpointServicePermissionsRequest): Request[DescribeVpcEndpointServicePermissionsResult, AWSError] = js.native
+  def describeVpcEndpointServicePermissions(
+    params: DescribeVpcEndpointServicePermissionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointServicePermissionsResult, Unit]
+  ): Request[DescribeVpcEndpointServicePermissionsResult, AWSError] = js.native
+  
+  /**
+    * Describes available services to which you can create a VPC endpoint. When the service provider and the consumer have different accounts in multiple Availability Zones, and the consumer views the VPC endpoint service information, the response only includes the common Availability Zones. For example, when the service provider account uses us-east-1a and us-east-1c and the consumer uses us-east-1a and us-east-1b, the response includes the VPC endpoint services in the common Availability Zone, us-east-1a.
+    */
+  def describeVpcEndpointServices(): Request[DescribeVpcEndpointServicesResult, AWSError] = js.native
+  def describeVpcEndpointServices(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointServicesResult, Unit]): Request[DescribeVpcEndpointServicesResult, AWSError] = js.native
+  /**
+    * Describes available services to which you can create a VPC endpoint. When the service provider and the consumer have different accounts in multiple Availability Zones, and the consumer views the VPC endpoint service information, the response only includes the common Availability Zones. For example, when the service provider account uses us-east-1a and us-east-1c and the consumer uses us-east-1a and us-east-1b, the response includes the VPC endpoint services in the common Availability Zone, us-east-1a.
+    */
+  def describeVpcEndpointServices(params: DescribeVpcEndpointServicesRequest): Request[DescribeVpcEndpointServicesResult, AWSError] = js.native
+  def describeVpcEndpointServices(
+    params: DescribeVpcEndpointServicesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointServicesResult, Unit]
+  ): Request[DescribeVpcEndpointServicesResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your VPC endpoints.
+    */
+  def describeVpcEndpoints(): Request[DescribeVpcEndpointsResult, AWSError] = js.native
+  def describeVpcEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointsResult, Unit]): Request[DescribeVpcEndpointsResult, AWSError] = js.native
+  /**
+    * Describes one or more of your VPC endpoints.
+    */
+  def describeVpcEndpoints(params: DescribeVpcEndpointsRequest): Request[DescribeVpcEndpointsResult, AWSError] = js.native
+  def describeVpcEndpoints(
+    params: DescribeVpcEndpointsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointsResult, Unit]
+  ): Request[DescribeVpcEndpointsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your VPC peering connections.
+    */
+  def describeVpcPeeringConnections(): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  def describeVpcPeeringConnections(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcPeeringConnectionsResult, Unit]): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  /**
+    * Describes one or more of your VPC peering connections.
+    */
+  def describeVpcPeeringConnections(params: DescribeVpcPeeringConnectionsRequest): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  def describeVpcPeeringConnections(
+    params: DescribeVpcPeeringConnectionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcPeeringConnectionsResult, Unit]
+  ): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your VPCs.
+    */
+  def describeVpcs(): Request[DescribeVpcsResult, AWSError] = js.native
+  def describeVpcs(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcsResult, Unit]): Request[DescribeVpcsResult, AWSError] = js.native
+  /**
+    * Describes one or more of your VPCs.
+    */
+  def describeVpcs(params: DescribeVpcsRequest): Request[DescribeVpcsResult, AWSError] = js.native
+  def describeVpcs(
+    params: DescribeVpcsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcsResult, Unit]
+  ): Request[DescribeVpcsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your VPN connections. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def describeVpnConnections(): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  def describeVpnConnections(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpnConnectionsResult, Unit]): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  /**
+    * Describes one or more of your VPN connections. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def describeVpnConnections(params: DescribeVpnConnectionsRequest): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  def describeVpnConnections(
+    params: DescribeVpnConnectionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpnConnectionsResult, Unit]
+  ): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  
+  /**
+    * Describes one or more of your virtual private gateways. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def describeVpnGateways(): Request[DescribeVpnGatewaysResult, AWSError] = js.native
+  def describeVpnGateways(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpnGatewaysResult, Unit]): Request[DescribeVpnGatewaysResult, AWSError] = js.native
+  /**
+    * Describes one or more of your virtual private gateways. For more information, see Amazon Web Services Site-to-Site VPN in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def describeVpnGateways(params: DescribeVpnGatewaysRequest): Request[DescribeVpnGatewaysResult, AWSError] = js.native
+  def describeVpnGateways(
+    params: DescribeVpnGatewaysRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpnGatewaysResult, Unit]
+  ): Request[DescribeVpnGatewaysResult, AWSError] = js.native
+  
+  /**
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Unlinks (detaches) a linked EC2-Classic instance from a VPC. After the instance has been unlinked, the VPC security groups are no longer associated with it. An instance is automatically unlinked from a VPC when it's stopped.
+    */
+  def detachClassicLinkVpc(): Request[DetachClassicLinkVpcResult, AWSError] = js.native
+  def detachClassicLinkVpc(callback: js.Function2[/* err */ AWSError, /* data */ DetachClassicLinkVpcResult, Unit]): Request[DetachClassicLinkVpcResult, AWSError] = js.native
+  /**
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Unlinks (detaches) a linked EC2-Classic instance from a VPC. After the instance has been unlinked, the VPC security groups are no longer associated with it. An instance is automatically unlinked from a VPC when it's stopped.
+    */
+  def detachClassicLinkVpc(params: DetachClassicLinkVpcRequest): Request[DetachClassicLinkVpcResult, AWSError] = js.native
+  def detachClassicLinkVpc(
+    params: DetachClassicLinkVpcRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DetachClassicLinkVpcResult, Unit]
+  ): Request[DetachClassicLinkVpcResult, AWSError] = js.native
+  
+  /**
+    * Detaches an internet gateway from a VPC, disabling connectivity between the internet and the VPC. The VPC must not contain any running instances with Elastic IP addresses or public IPv4 addresses.
+    */
+  def detachInternetGateway(): Request[js.Object, AWSError] = js.native
+  def detachInternetGateway(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Detaches an internet gateway from a VPC, disabling connectivity between the internet and the VPC. The VPC must not contain any running instances with Elastic IP addresses or public IPv4 addresses.
+    */
+  def detachInternetGateway(params: DetachInternetGatewayRequest): Request[js.Object, AWSError] = js.native
+  def detachInternetGateway(
+    params: DetachInternetGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Detaches a network interface from an instance.
+    */
+  def detachNetworkInterface(): Request[js.Object, AWSError] = js.native
+  def detachNetworkInterface(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Detaches a network interface from an instance.
+    */
+  def detachNetworkInterface(params: DetachNetworkInterfaceRequest): Request[js.Object, AWSError] = js.native
+  def detachNetworkInterface(
+    params: DetachNetworkInterfaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Detaches an EBS volume from an instance. Make sure to unmount any file systems on the device within your operating system before detaching the volume. Failure to do so can result in the volume becoming stuck in the busy state while detaching. If this happens, detachment can be delayed indefinitely until you unmount the volume, force detachment, reboot the instance, or all three. If an EBS volume is the root device of an instance, it can't be detached while the instance is running. To detach the root volume, stop the instance first. When a volume with an Amazon Web Services Marketplace product code is detached from an instance, the product code is no longer associated with the instance. For more information, see Detach an Amazon EBS volume in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def detachVolume(): Request[VolumeAttachment, AWSError] = js.native
+  def detachVolume(callback: js.Function2[/* err */ AWSError, /* data */ VolumeAttachment, Unit]): Request[VolumeAttachment, AWSError] = js.native
+  /**
+    * Detaches an EBS volume from an instance. Make sure to unmount any file systems on the device within your operating system before detaching the volume. Failure to do so can result in the volume becoming stuck in the busy state while detaching. If this happens, detachment can be delayed indefinitely until you unmount the volume, force detachment, reboot the instance, or all three. If an EBS volume is the root device of an instance, it can't be detached while the instance is running. To detach the root volume, stop the instance first. When a volume with an Amazon Web Services Marketplace product code is detached from an instance, the product code is no longer associated with the instance. For more information, see Detach an Amazon EBS volume in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def detachVolume(params: DetachVolumeRequest): Request[VolumeAttachment, AWSError] = js.native
+  def detachVolume(
+    params: DetachVolumeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ VolumeAttachment, Unit]
+  ): Request[VolumeAttachment, AWSError] = js.native
+  
+  /**
+    * Detaches a virtual private gateway from a VPC. You do this if you're planning to turn off the VPC and not use it anymore. You can confirm a virtual private gateway has been completely detached from a VPC by describing the virtual private gateway (any attachments to the virtual private gateway are also described). You must wait for the attachment's state to switch to detached before you can delete the VPC or attach a different VPC to the virtual private gateway.
+    */
+  def detachVpnGateway(): Request[js.Object, AWSError] = js.native
+  def detachVpnGateway(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Detaches a virtual private gateway from a VPC. You do this if you're planning to turn off the VPC and not use it anymore. You can confirm a virtual private gateway has been completely detached from a VPC by describing the virtual private gateway (any attachments to the virtual private gateway are also described). You must wait for the attachment's state to switch to detached before you can delete the VPC or attach a different VPC to the virtual private gateway.
+    */
+  def detachVpnGateway(params: DetachVpnGatewayRequest): Request[js.Object, AWSError] = js.native
+  def detachVpnGateway(
+    params: DetachVpnGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Disables EBS encryption by default for your account in the current Region. After you disable encryption by default, you can still create encrypted volumes by enabling encryption when you create each volume. Disabling encryption by default does not change the encryption status of your existing volumes. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def disableEbsEncryptionByDefault(): Request[DisableEbsEncryptionByDefaultResult, AWSError] = js.native
+  def disableEbsEncryptionByDefault(callback: js.Function2[/* err */ AWSError, /* data */ DisableEbsEncryptionByDefaultResult, Unit]): Request[DisableEbsEncryptionByDefaultResult, AWSError] = js.native
+  /**
+    * Disables EBS encryption by default for your account in the current Region. After you disable encryption by default, you can still create encrypted volumes by enabling encryption when you create each volume. Disabling encryption by default does not change the encryption status of your existing volumes. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def disableEbsEncryptionByDefault(params: DisableEbsEncryptionByDefaultRequest): Request[DisableEbsEncryptionByDefaultResult, AWSError] = js.native
+  def disableEbsEncryptionByDefault(
+    params: DisableEbsEncryptionByDefaultRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableEbsEncryptionByDefaultResult, Unit]
+  ): Request[DisableEbsEncryptionByDefaultResult, AWSError] = js.native
+  
+  /**
+    * Discontinue faster launching for a Windows AMI, and clean up existing pre-provisioned snapshots. When you disable faster launching, the AMI uses the standard launch process for each instance. All pre-provisioned snapshots must be removed before you can enable faster launching again.  To change these settings, you must own the AMI. 
+    */
+  def disableFastLaunch(): Request[DisableFastLaunchResult, AWSError] = js.native
+  def disableFastLaunch(callback: js.Function2[/* err */ AWSError, /* data */ DisableFastLaunchResult, Unit]): Request[DisableFastLaunchResult, AWSError] = js.native
+  /**
+    * Discontinue faster launching for a Windows AMI, and clean up existing pre-provisioned snapshots. When you disable faster launching, the AMI uses the standard launch process for each instance. All pre-provisioned snapshots must be removed before you can enable faster launching again.  To change these settings, you must own the AMI. 
+    */
+  def disableFastLaunch(params: DisableFastLaunchRequest): Request[DisableFastLaunchResult, AWSError] = js.native
+  def disableFastLaunch(
+    params: DisableFastLaunchRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableFastLaunchResult, Unit]
+  ): Request[DisableFastLaunchResult, AWSError] = js.native
+  
+  /**
+    * Disables fast snapshot restores for the specified snapshots in the specified Availability Zones.
+    */
+  def disableFastSnapshotRestores(): Request[DisableFastSnapshotRestoresResult, AWSError] = js.native
+  def disableFastSnapshotRestores(callback: js.Function2[/* err */ AWSError, /* data */ DisableFastSnapshotRestoresResult, Unit]): Request[DisableFastSnapshotRestoresResult, AWSError] = js.native
+  /**
+    * Disables fast snapshot restores for the specified snapshots in the specified Availability Zones.
+    */
+  def disableFastSnapshotRestores(params: DisableFastSnapshotRestoresRequest): Request[DisableFastSnapshotRestoresResult, AWSError] = js.native
+  def disableFastSnapshotRestores(
+    params: DisableFastSnapshotRestoresRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableFastSnapshotRestoresResult, Unit]
+  ): Request[DisableFastSnapshotRestoresResult, AWSError] = js.native
+  
+  /**
+    * Cancels the deprecation of the specified AMI. For more information, see Deprecate an AMI in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def disableImageDeprecation(): Request[DisableImageDeprecationResult, AWSError] = js.native
+  def disableImageDeprecation(callback: js.Function2[/* err */ AWSError, /* data */ DisableImageDeprecationResult, Unit]): Request[DisableImageDeprecationResult, AWSError] = js.native
+  /**
+    * Cancels the deprecation of the specified AMI. For more information, see Deprecate an AMI in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def disableImageDeprecation(params: DisableImageDeprecationRequest): Request[DisableImageDeprecationResult, AWSError] = js.native
+  def disableImageDeprecation(
+    params: DisableImageDeprecationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableImageDeprecationResult, Unit]
+  ): Request[DisableImageDeprecationResult, AWSError] = js.native
+  
+  /**
+    * Disable the IPAM account. For more information, see Enable integration with Organizations in the Amazon VPC IPAM User Guide. 
+    */
+  def disableIpamOrganizationAdminAccount(): Request[DisableIpamOrganizationAdminAccountResult, AWSError] = js.native
+  def disableIpamOrganizationAdminAccount(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableIpamOrganizationAdminAccountResult, Unit]
+  ): Request[DisableIpamOrganizationAdminAccountResult, AWSError] = js.native
+  /**
+    * Disable the IPAM account. For more information, see Enable integration with Organizations in the Amazon VPC IPAM User Guide. 
+    */
+  def disableIpamOrganizationAdminAccount(params: DisableIpamOrganizationAdminAccountRequest): Request[DisableIpamOrganizationAdminAccountResult, AWSError] = js.native
+  def disableIpamOrganizationAdminAccount(
+    params: DisableIpamOrganizationAdminAccountRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableIpamOrganizationAdminAccountResult, Unit]
+  ): Request[DisableIpamOrganizationAdminAccountResult, AWSError] = js.native
+  
+  /**
+    * Disables access to the EC2 serial console of all instances for your account. By default, access to the EC2 serial console is disabled for your account. For more information, see Manage account access to the EC2 serial console in the Amazon EC2 User Guide.
+    */
+  def disableSerialConsoleAccess(): Request[DisableSerialConsoleAccessResult, AWSError] = js.native
+  def disableSerialConsoleAccess(callback: js.Function2[/* err */ AWSError, /* data */ DisableSerialConsoleAccessResult, Unit]): Request[DisableSerialConsoleAccessResult, AWSError] = js.native
+  /**
+    * Disables access to the EC2 serial console of all instances for your account. By default, access to the EC2 serial console is disabled for your account. For more information, see Manage account access to the EC2 serial console in the Amazon EC2 User Guide.
+    */
+  def disableSerialConsoleAccess(params: DisableSerialConsoleAccessRequest): Request[DisableSerialConsoleAccessResult, AWSError] = js.native
+  def disableSerialConsoleAccess(
+    params: DisableSerialConsoleAccessRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableSerialConsoleAccessResult, Unit]
+  ): Request[DisableSerialConsoleAccessResult, AWSError] = js.native
+  
+  /**
+    * Disables the specified resource attachment from propagating routes to the specified propagation route table.
+    */
+  def disableTransitGatewayRouteTablePropagation(): Request[DisableTransitGatewayRouteTablePropagationResult, AWSError] = js.native
+  def disableTransitGatewayRouteTablePropagation(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DisableTransitGatewayRouteTablePropagationResult, 
+      Unit
+    ]
+  ): Request[DisableTransitGatewayRouteTablePropagationResult, AWSError] = js.native
+  /**
+    * Disables the specified resource attachment from propagating routes to the specified propagation route table.
+    */
+  def disableTransitGatewayRouteTablePropagation(params: DisableTransitGatewayRouteTablePropagationRequest): Request[DisableTransitGatewayRouteTablePropagationResult, AWSError] = js.native
+  def disableTransitGatewayRouteTablePropagation(
+    params: DisableTransitGatewayRouteTablePropagationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DisableTransitGatewayRouteTablePropagationResult, 
+      Unit
+    ]
+  ): Request[DisableTransitGatewayRouteTablePropagationResult, AWSError] = js.native
+  
+  /**
+    * Disables a virtual private gateway (VGW) from propagating routes to a specified route table of a VPC.
+    */
+  def disableVgwRoutePropagation(): Request[js.Object, AWSError] = js.native
+  def disableVgwRoutePropagation(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Disables a virtual private gateway (VGW) from propagating routes to a specified route table of a VPC.
+    */
+  def disableVgwRoutePropagation(params: DisableVgwRoutePropagationRequest): Request[js.Object, AWSError] = js.native
+  def disableVgwRoutePropagation(
+    params: DisableVgwRoutePropagationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Disables ClassicLink for a VPC. You cannot disable ClassicLink for a VPC that has EC2-Classic instances linked to it.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def disableVpcClassicLink(): Request[DisableVpcClassicLinkResult, AWSError] = js.native
+  def disableVpcClassicLink(callback: js.Function2[/* err */ AWSError, /* data */ DisableVpcClassicLinkResult, Unit]): Request[DisableVpcClassicLinkResult, AWSError] = js.native
+  /**
+    * Disables ClassicLink for a VPC. You cannot disable ClassicLink for a VPC that has EC2-Classic instances linked to it.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def disableVpcClassicLink(params: DisableVpcClassicLinkRequest): Request[DisableVpcClassicLinkResult, AWSError] = js.native
+  def disableVpcClassicLink(
+    params: DisableVpcClassicLinkRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableVpcClassicLinkResult, Unit]
+  ): Request[DisableVpcClassicLinkResult, AWSError] = js.native
+  
+  /**
+    * Disables ClassicLink DNS support for a VPC. If disabled, DNS hostnames resolve to public IP addresses when addressed between a linked EC2-Classic instance and instances in the VPC to which it's linked. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide. You must specify a VPC ID in the request.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def disableVpcClassicLinkDnsSupport(): Request[DisableVpcClassicLinkDnsSupportResult, AWSError] = js.native
+  def disableVpcClassicLinkDnsSupport(callback: js.Function2[/* err */ AWSError, /* data */ DisableVpcClassicLinkDnsSupportResult, Unit]): Request[DisableVpcClassicLinkDnsSupportResult, AWSError] = js.native
+  /**
+    * Disables ClassicLink DNS support for a VPC. If disabled, DNS hostnames resolve to public IP addresses when addressed between a linked EC2-Classic instance and instances in the VPC to which it's linked. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide. You must specify a VPC ID in the request.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def disableVpcClassicLinkDnsSupport(params: DisableVpcClassicLinkDnsSupportRequest): Request[DisableVpcClassicLinkDnsSupportResult, AWSError] = js.native
+  def disableVpcClassicLinkDnsSupport(
+    params: DisableVpcClassicLinkDnsSupportRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableVpcClassicLinkDnsSupportResult, Unit]
+  ): Request[DisableVpcClassicLinkDnsSupportResult, AWSError] = js.native
+  
+  /**
+    * Disassociates an Elastic IP address from the instance or network interface it's associated with. An Elastic IP address is for use in either the EC2-Classic platform or in a VPC. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error.
+    */
+  def disassociateAddress(): Request[js.Object, AWSError] = js.native
+  def disassociateAddress(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Disassociates an Elastic IP address from the instance or network interface it's associated with. An Elastic IP address is for use in either the EC2-Classic platform or in a VPC. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error.
+    */
+  def disassociateAddress(params: DisassociateAddressRequest): Request[js.Object, AWSError] = js.native
+  def disassociateAddress(
+    params: DisassociateAddressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Disassociates a target network from the specified Client VPN endpoint. When you disassociate the last target network from a Client VPN, the following happens:   The route that was automatically added for the VPC is deleted   All active client connections are terminated   New client connections are disallowed   The Client VPN endpoint's status changes to pending-associate   
+    */
+  def disassociateClientVpnTargetNetwork(): Request[DisassociateClientVpnTargetNetworkResult, AWSError] = js.native
+  def disassociateClientVpnTargetNetwork(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateClientVpnTargetNetworkResult, Unit]
+  ): Request[DisassociateClientVpnTargetNetworkResult, AWSError] = js.native
+  /**
+    * Disassociates a target network from the specified Client VPN endpoint. When you disassociate the last target network from a Client VPN, the following happens:   The route that was automatically added for the VPC is deleted   All active client connections are terminated   New client connections are disallowed   The Client VPN endpoint's status changes to pending-associate   
+    */
+  def disassociateClientVpnTargetNetwork(params: DisassociateClientVpnTargetNetworkRequest): Request[DisassociateClientVpnTargetNetworkResult, AWSError] = js.native
+  def disassociateClientVpnTargetNetwork(
+    params: DisassociateClientVpnTargetNetworkRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateClientVpnTargetNetworkResult, Unit]
+  ): Request[DisassociateClientVpnTargetNetworkResult, AWSError] = js.native
+  
+  /**
+    * Disassociates an IAM role from an Certificate Manager (ACM) certificate. Disassociating an IAM role from an ACM certificate removes the Amazon S3 object that contains the certificate, certificate chain, and encrypted private key from the Amazon S3 bucket. It also revokes the IAM role's permission to use the KMS key used to encrypt the private key. This effectively revokes the role's permission to use the certificate.
+    */
+  def disassociateEnclaveCertificateIamRole(): Request[DisassociateEnclaveCertificateIamRoleResult, AWSError] = js.native
+  def disassociateEnclaveCertificateIamRole(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateEnclaveCertificateIamRoleResult, Unit]
+  ): Request[DisassociateEnclaveCertificateIamRoleResult, AWSError] = js.native
+  /**
+    * Disassociates an IAM role from an Certificate Manager (ACM) certificate. Disassociating an IAM role from an ACM certificate removes the Amazon S3 object that contains the certificate, certificate chain, and encrypted private key from the Amazon S3 bucket. It also revokes the IAM role's permission to use the KMS key used to encrypt the private key. This effectively revokes the role's permission to use the certificate.
+    */
+  def disassociateEnclaveCertificateIamRole(params: DisassociateEnclaveCertificateIamRoleRequest): Request[DisassociateEnclaveCertificateIamRoleResult, AWSError] = js.native
+  def disassociateEnclaveCertificateIamRole(
+    params: DisassociateEnclaveCertificateIamRoleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateEnclaveCertificateIamRoleResult, Unit]
+  ): Request[DisassociateEnclaveCertificateIamRoleResult, AWSError] = js.native
+  
+  /**
+    * Disassociates an IAM instance profile from a running or stopped instance. Use DescribeIamInstanceProfileAssociations to get the association ID.
+    */
+  def disassociateIamInstanceProfile(): Request[DisassociateIamInstanceProfileResult, AWSError] = js.native
+  def disassociateIamInstanceProfile(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateIamInstanceProfileResult, Unit]): Request[DisassociateIamInstanceProfileResult, AWSError] = js.native
+  /**
+    * Disassociates an IAM instance profile from a running or stopped instance. Use DescribeIamInstanceProfileAssociations to get the association ID.
+    */
+  def disassociateIamInstanceProfile(params: DisassociateIamInstanceProfileRequest): Request[DisassociateIamInstanceProfileResult, AWSError] = js.native
+  def disassociateIamInstanceProfile(
+    params: DisassociateIamInstanceProfileRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateIamInstanceProfileResult, Unit]
+  ): Request[DisassociateIamInstanceProfileResult, AWSError] = js.native
+  
+  /**
+    * Disassociates one or more targets from an event window. For more information, see Define event windows for scheduled events in the Amazon EC2 User Guide.
+    */
+  def disassociateInstanceEventWindow(): Request[DisassociateInstanceEventWindowResult, AWSError] = js.native
+  def disassociateInstanceEventWindow(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateInstanceEventWindowResult, Unit]): Request[DisassociateInstanceEventWindowResult, AWSError] = js.native
+  /**
+    * Disassociates one or more targets from an event window. For more information, see Define event windows for scheduled events in the Amazon EC2 User Guide.
+    */
+  def disassociateInstanceEventWindow(params: DisassociateInstanceEventWindowRequest): Request[DisassociateInstanceEventWindowResult, AWSError] = js.native
+  def disassociateInstanceEventWindow(
+    params: DisassociateInstanceEventWindowRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateInstanceEventWindowResult, Unit]
+  ): Request[DisassociateInstanceEventWindowResult, AWSError] = js.native
+  
+  /**
+    * Disassociates a subnet or gateway from a route table. After you perform this action, the subnet no longer uses the routes in the route table. Instead, it uses the routes in the VPC's main route table. For more information about route tables, see Route tables in the Amazon Virtual Private Cloud User Guide.
+    */
+  def disassociateRouteTable(): Request[js.Object, AWSError] = js.native
+  def disassociateRouteTable(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Disassociates a subnet or gateway from a route table. After you perform this action, the subnet no longer uses the routes in the route table. Instead, it uses the routes in the VPC's main route table. For more information about route tables, see Route tables in the Amazon Virtual Private Cloud User Guide.
+    */
+  def disassociateRouteTable(params: DisassociateRouteTableRequest): Request[js.Object, AWSError] = js.native
+  def disassociateRouteTable(
+    params: DisassociateRouteTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Disassociates a CIDR block from a subnet. Currently, you can disassociate an IPv6 CIDR block only. You must detach or delete all gateways and resources that are associated with the CIDR block before you can disassociate it. 
+    */
+  def disassociateSubnetCidrBlock(): Request[DisassociateSubnetCidrBlockResult, AWSError] = js.native
+  def disassociateSubnetCidrBlock(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateSubnetCidrBlockResult, Unit]): Request[DisassociateSubnetCidrBlockResult, AWSError] = js.native
+  /**
+    * Disassociates a CIDR block from a subnet. Currently, you can disassociate an IPv6 CIDR block only. You must detach or delete all gateways and resources that are associated with the CIDR block before you can disassociate it. 
+    */
+  def disassociateSubnetCidrBlock(params: DisassociateSubnetCidrBlockRequest): Request[DisassociateSubnetCidrBlockResult, AWSError] = js.native
+  def disassociateSubnetCidrBlock(
+    params: DisassociateSubnetCidrBlockRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateSubnetCidrBlockResult, Unit]
+  ): Request[DisassociateSubnetCidrBlockResult, AWSError] = js.native
+  
+  /**
+    * Disassociates the specified subnets from the transit gateway multicast domain. 
+    */
+  def disassociateTransitGatewayMulticastDomain(): Request[DisassociateTransitGatewayMulticastDomainResult, AWSError] = js.native
+  def disassociateTransitGatewayMulticastDomain(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateTransitGatewayMulticastDomainResult, Unit]
+  ): Request[DisassociateTransitGatewayMulticastDomainResult, AWSError] = js.native
+  /**
+    * Disassociates the specified subnets from the transit gateway multicast domain. 
+    */
+  def disassociateTransitGatewayMulticastDomain(params: DisassociateTransitGatewayMulticastDomainRequest): Request[DisassociateTransitGatewayMulticastDomainResult, AWSError] = js.native
+  def disassociateTransitGatewayMulticastDomain(
+    params: DisassociateTransitGatewayMulticastDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateTransitGatewayMulticastDomainResult, Unit]
+  ): Request[DisassociateTransitGatewayMulticastDomainResult, AWSError] = js.native
+  
+  /**
+    * Removes the association between an an attachment and a policy table.
+    */
+  def disassociateTransitGatewayPolicyTable(): Request[DisassociateTransitGatewayPolicyTableResult, AWSError] = js.native
+  def disassociateTransitGatewayPolicyTable(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateTransitGatewayPolicyTableResult, Unit]
+  ): Request[DisassociateTransitGatewayPolicyTableResult, AWSError] = js.native
+  /**
+    * Removes the association between an an attachment and a policy table.
+    */
+  def disassociateTransitGatewayPolicyTable(params: DisassociateTransitGatewayPolicyTableRequest): Request[DisassociateTransitGatewayPolicyTableResult, AWSError] = js.native
+  def disassociateTransitGatewayPolicyTable(
+    params: DisassociateTransitGatewayPolicyTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateTransitGatewayPolicyTableResult, Unit]
+  ): Request[DisassociateTransitGatewayPolicyTableResult, AWSError] = js.native
+  
+  /**
+    * Disassociates a resource attachment from a transit gateway route table.
+    */
+  def disassociateTransitGatewayRouteTable(): Request[DisassociateTransitGatewayRouteTableResult, AWSError] = js.native
+  def disassociateTransitGatewayRouteTable(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateTransitGatewayRouteTableResult, Unit]
+  ): Request[DisassociateTransitGatewayRouteTableResult, AWSError] = js.native
+  /**
+    * Disassociates a resource attachment from a transit gateway route table.
+    */
+  def disassociateTransitGatewayRouteTable(params: DisassociateTransitGatewayRouteTableRequest): Request[DisassociateTransitGatewayRouteTableResult, AWSError] = js.native
+  def disassociateTransitGatewayRouteTable(
+    params: DisassociateTransitGatewayRouteTableRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateTransitGatewayRouteTableResult, Unit]
+  ): Request[DisassociateTransitGatewayRouteTableResult, AWSError] = js.native
+  
+  /**
+    *  This API action is currently in limited preview only. If you are interested in using this feature, contact your account manager.  Removes an association between a branch network interface with a trunk network interface.
+    */
+  def disassociateTrunkInterface(): Request[DisassociateTrunkInterfaceResult, AWSError] = js.native
+  def disassociateTrunkInterface(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateTrunkInterfaceResult, Unit]): Request[DisassociateTrunkInterfaceResult, AWSError] = js.native
+  /**
+    *  This API action is currently in limited preview only. If you are interested in using this feature, contact your account manager.  Removes an association between a branch network interface with a trunk network interface.
+    */
+  def disassociateTrunkInterface(params: DisassociateTrunkInterfaceRequest): Request[DisassociateTrunkInterfaceResult, AWSError] = js.native
+  def disassociateTrunkInterface(
+    params: DisassociateTrunkInterfaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateTrunkInterfaceResult, Unit]
+  ): Request[DisassociateTrunkInterfaceResult, AWSError] = js.native
+  
+  /**
+    * Disassociates a CIDR block from a VPC. To disassociate the CIDR block, you must specify its association ID. You can get the association ID by using DescribeVpcs. You must detach or delete all gateways and resources that are associated with the CIDR block before you can disassociate it.  You cannot disassociate the CIDR block with which you originally created the VPC (the primary CIDR block).
+    */
+  def disassociateVpcCidrBlock(): Request[DisassociateVpcCidrBlockResult, AWSError] = js.native
+  def disassociateVpcCidrBlock(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateVpcCidrBlockResult, Unit]): Request[DisassociateVpcCidrBlockResult, AWSError] = js.native
+  /**
+    * Disassociates a CIDR block from a VPC. To disassociate the CIDR block, you must specify its association ID. You can get the association ID by using DescribeVpcs. You must detach or delete all gateways and resources that are associated with the CIDR block before you can disassociate it.  You cannot disassociate the CIDR block with which you originally created the VPC (the primary CIDR block).
+    */
+  def disassociateVpcCidrBlock(params: DisassociateVpcCidrBlockRequest): Request[DisassociateVpcCidrBlockResult, AWSError] = js.native
+  def disassociateVpcCidrBlock(
+    params: DisassociateVpcCidrBlockRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateVpcCidrBlockResult, Unit]
+  ): Request[DisassociateVpcCidrBlockResult, AWSError] = js.native
+  
+  /**
+    * Enables EBS encryption by default for your account in the current Region. After you enable encryption by default, the EBS volumes that you create are always encrypted, either using the default KMS key or the KMS key that you specified when you created each volume. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide. You can specify the default KMS key for encryption by default using ModifyEbsDefaultKmsKeyId or ResetEbsDefaultKmsKeyId. Enabling encryption by default has no effect on the encryption status of your existing volumes. After you enable encryption by default, you can no longer launch instances using instance types that do not support encryption. For more information, see Supported instance types.
+    */
+  def enableEbsEncryptionByDefault(): Request[EnableEbsEncryptionByDefaultResult, AWSError] = js.native
+  def enableEbsEncryptionByDefault(callback: js.Function2[/* err */ AWSError, /* data */ EnableEbsEncryptionByDefaultResult, Unit]): Request[EnableEbsEncryptionByDefaultResult, AWSError] = js.native
+  /**
+    * Enables EBS encryption by default for your account in the current Region. After you enable encryption by default, the EBS volumes that you create are always encrypted, either using the default KMS key or the KMS key that you specified when you created each volume. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide. You can specify the default KMS key for encryption by default using ModifyEbsDefaultKmsKeyId or ResetEbsDefaultKmsKeyId. Enabling encryption by default has no effect on the encryption status of your existing volumes. After you enable encryption by default, you can no longer launch instances using instance types that do not support encryption. For more information, see Supported instance types.
+    */
+  def enableEbsEncryptionByDefault(params: EnableEbsEncryptionByDefaultRequest): Request[EnableEbsEncryptionByDefaultResult, AWSError] = js.native
+  def enableEbsEncryptionByDefault(
+    params: EnableEbsEncryptionByDefaultRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableEbsEncryptionByDefaultResult, Unit]
+  ): Request[EnableEbsEncryptionByDefaultResult, AWSError] = js.native
+  
+  /**
+    * When you enable faster launching for a Windows AMI, images are pre-provisioned, using snapshots to launch instances up to 65% faster. To create the optimized Windows image, Amazon EC2 launches an instance and runs through Sysprep steps, rebooting as required. Then it creates a set of reserved snapshots that are used for subsequent launches. The reserved snapshots are automatically replenished as they are used, depending on your settings for launch frequency.  To change these settings, you must own the AMI. 
+    */
+  def enableFastLaunch(): Request[EnableFastLaunchResult, AWSError] = js.native
+  def enableFastLaunch(callback: js.Function2[/* err */ AWSError, /* data */ EnableFastLaunchResult, Unit]): Request[EnableFastLaunchResult, AWSError] = js.native
+  /**
+    * When you enable faster launching for a Windows AMI, images are pre-provisioned, using snapshots to launch instances up to 65% faster. To create the optimized Windows image, Amazon EC2 launches an instance and runs through Sysprep steps, rebooting as required. Then it creates a set of reserved snapshots that are used for subsequent launches. The reserved snapshots are automatically replenished as they are used, depending on your settings for launch frequency.  To change these settings, you must own the AMI. 
+    */
+  def enableFastLaunch(params: EnableFastLaunchRequest): Request[EnableFastLaunchResult, AWSError] = js.native
+  def enableFastLaunch(
+    params: EnableFastLaunchRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableFastLaunchResult, Unit]
+  ): Request[EnableFastLaunchResult, AWSError] = js.native
+  
+  /**
+    * Enables fast snapshot restores for the specified snapshots in the specified Availability Zones. You get the full benefit of fast snapshot restores after they enter the enabled state. To get the current state of fast snapshot restores, use DescribeFastSnapshotRestores. To disable fast snapshot restores, use DisableFastSnapshotRestores. For more information, see Amazon EBS fast snapshot restore in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def enableFastSnapshotRestores(): Request[EnableFastSnapshotRestoresResult, AWSError] = js.native
+  def enableFastSnapshotRestores(callback: js.Function2[/* err */ AWSError, /* data */ EnableFastSnapshotRestoresResult, Unit]): Request[EnableFastSnapshotRestoresResult, AWSError] = js.native
+  /**
+    * Enables fast snapshot restores for the specified snapshots in the specified Availability Zones. You get the full benefit of fast snapshot restores after they enter the enabled state. To get the current state of fast snapshot restores, use DescribeFastSnapshotRestores. To disable fast snapshot restores, use DisableFastSnapshotRestores. For more information, see Amazon EBS fast snapshot restore in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def enableFastSnapshotRestores(params: EnableFastSnapshotRestoresRequest): Request[EnableFastSnapshotRestoresResult, AWSError] = js.native
+  def enableFastSnapshotRestores(
+    params: EnableFastSnapshotRestoresRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableFastSnapshotRestoresResult, Unit]
+  ): Request[EnableFastSnapshotRestoresResult, AWSError] = js.native
+  
+  /**
+    * Enables deprecation of the specified AMI at the specified date and time. For more information, see Deprecate an AMI in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def enableImageDeprecation(): Request[EnableImageDeprecationResult, AWSError] = js.native
+  def enableImageDeprecation(callback: js.Function2[/* err */ AWSError, /* data */ EnableImageDeprecationResult, Unit]): Request[EnableImageDeprecationResult, AWSError] = js.native
+  /**
+    * Enables deprecation of the specified AMI at the specified date and time. For more information, see Deprecate an AMI in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def enableImageDeprecation(params: EnableImageDeprecationRequest): Request[EnableImageDeprecationResult, AWSError] = js.native
+  def enableImageDeprecation(
+    params: EnableImageDeprecationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableImageDeprecationResult, Unit]
+  ): Request[EnableImageDeprecationResult, AWSError] = js.native
+  
+  /**
+    * Enable an Organizations member account as the IPAM admin account. You cannot select the Organizations management account as the IPAM admin account. For more information, see Enable integration with Organizations in the Amazon VPC IPAM User Guide. 
+    */
+  def enableIpamOrganizationAdminAccount(): Request[EnableIpamOrganizationAdminAccountResult, AWSError] = js.native
+  def enableIpamOrganizationAdminAccount(
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableIpamOrganizationAdminAccountResult, Unit]
+  ): Request[EnableIpamOrganizationAdminAccountResult, AWSError] = js.native
+  /**
+    * Enable an Organizations member account as the IPAM admin account. You cannot select the Organizations management account as the IPAM admin account. For more information, see Enable integration with Organizations in the Amazon VPC IPAM User Guide. 
+    */
+  def enableIpamOrganizationAdminAccount(params: EnableIpamOrganizationAdminAccountRequest): Request[EnableIpamOrganizationAdminAccountResult, AWSError] = js.native
+  def enableIpamOrganizationAdminAccount(
+    params: EnableIpamOrganizationAdminAccountRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableIpamOrganizationAdminAccountResult, Unit]
+  ): Request[EnableIpamOrganizationAdminAccountResult, AWSError] = js.native
+  
+  /**
+    * Enables access to the EC2 serial console of all instances for your account. By default, access to the EC2 serial console is disabled for your account. For more information, see Manage account access to the EC2 serial console in the Amazon EC2 User Guide.
+    */
+  def enableSerialConsoleAccess(): Request[EnableSerialConsoleAccessResult, AWSError] = js.native
+  def enableSerialConsoleAccess(callback: js.Function2[/* err */ AWSError, /* data */ EnableSerialConsoleAccessResult, Unit]): Request[EnableSerialConsoleAccessResult, AWSError] = js.native
+  /**
+    * Enables access to the EC2 serial console of all instances for your account. By default, access to the EC2 serial console is disabled for your account. For more information, see Manage account access to the EC2 serial console in the Amazon EC2 User Guide.
+    */
+  def enableSerialConsoleAccess(params: EnableSerialConsoleAccessRequest): Request[EnableSerialConsoleAccessResult, AWSError] = js.native
+  def enableSerialConsoleAccess(
+    params: EnableSerialConsoleAccessRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableSerialConsoleAccessResult, Unit]
+  ): Request[EnableSerialConsoleAccessResult, AWSError] = js.native
+  
+  /**
+    * Enables the specified attachment to propagate routes to the specified propagation route table.
+    */
+  def enableTransitGatewayRouteTablePropagation(): Request[EnableTransitGatewayRouteTablePropagationResult, AWSError] = js.native
+  def enableTransitGatewayRouteTablePropagation(
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableTransitGatewayRouteTablePropagationResult, Unit]
+  ): Request[EnableTransitGatewayRouteTablePropagationResult, AWSError] = js.native
+  /**
+    * Enables the specified attachment to propagate routes to the specified propagation route table.
+    */
+  def enableTransitGatewayRouteTablePropagation(params: EnableTransitGatewayRouteTablePropagationRequest): Request[EnableTransitGatewayRouteTablePropagationResult, AWSError] = js.native
+  def enableTransitGatewayRouteTablePropagation(
+    params: EnableTransitGatewayRouteTablePropagationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableTransitGatewayRouteTablePropagationResult, Unit]
+  ): Request[EnableTransitGatewayRouteTablePropagationResult, AWSError] = js.native
+  
+  /**
+    * Enables a virtual private gateway (VGW) to propagate routes to the specified route table of a VPC.
+    */
+  def enableVgwRoutePropagation(): Request[js.Object, AWSError] = js.native
+  def enableVgwRoutePropagation(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Enables a virtual private gateway (VGW) to propagate routes to the specified route table of a VPC.
+    */
+  def enableVgwRoutePropagation(params: EnableVgwRoutePropagationRequest): Request[js.Object, AWSError] = js.native
+  def enableVgwRoutePropagation(
+    params: EnableVgwRoutePropagationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Enables I/O operations for a volume that had I/O operations disabled because the data on the volume was potentially inconsistent.
+    */
+  def enableVolumeIO(): Request[js.Object, AWSError] = js.native
+  def enableVolumeIO(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Enables I/O operations for a volume that had I/O operations disabled because the data on the volume was potentially inconsistent.
+    */
+  def enableVolumeIO(params: EnableVolumeIORequest): Request[js.Object, AWSError] = js.native
+  def enableVolumeIO(
+    params: EnableVolumeIORequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Enables a VPC for ClassicLink. You can then link EC2-Classic instances to your ClassicLink-enabled VPC to allow communication over private IP addresses. You cannot enable your VPC for ClassicLink if any of your VPC route tables have existing routes for address ranges within the 10.0.0.0/8 IP address range, excluding local routes for VPCs in the 10.0.0.0/16 and 10.1.0.0/16 IP address ranges. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def enableVpcClassicLink(): Request[EnableVpcClassicLinkResult, AWSError] = js.native
+  def enableVpcClassicLink(callback: js.Function2[/* err */ AWSError, /* data */ EnableVpcClassicLinkResult, Unit]): Request[EnableVpcClassicLinkResult, AWSError] = js.native
+  /**
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Enables a VPC for ClassicLink. You can then link EC2-Classic instances to your ClassicLink-enabled VPC to allow communication over private IP addresses. You cannot enable your VPC for ClassicLink if any of your VPC route tables have existing routes for address ranges within the 10.0.0.0/8 IP address range, excluding local routes for VPCs in the 10.0.0.0/16 and 10.1.0.0/16 IP address ranges. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def enableVpcClassicLink(params: EnableVpcClassicLinkRequest): Request[EnableVpcClassicLinkResult, AWSError] = js.native
+  def enableVpcClassicLink(
+    params: EnableVpcClassicLinkRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableVpcClassicLinkResult, Unit]
+  ): Request[EnableVpcClassicLinkResult, AWSError] = js.native
+  
+  /**
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Enables a VPC to support DNS hostname resolution for ClassicLink. If enabled, the DNS hostname of a linked EC2-Classic instance resolves to its private IP address when addressed from an instance in the VPC to which it's linked. Similarly, the DNS hostname of an instance in a VPC resolves to its private IP address when addressed from a linked EC2-Classic instance. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide. You must specify a VPC ID in the request.
+    */
+  def enableVpcClassicLinkDnsSupport(): Request[EnableVpcClassicLinkDnsSupportResult, AWSError] = js.native
+  def enableVpcClassicLinkDnsSupport(callback: js.Function2[/* err */ AWSError, /* data */ EnableVpcClassicLinkDnsSupportResult, Unit]): Request[EnableVpcClassicLinkDnsSupportResult, AWSError] = js.native
+  /**
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Enables a VPC to support DNS hostname resolution for ClassicLink. If enabled, the DNS hostname of a linked EC2-Classic instance resolves to its private IP address when addressed from an instance in the VPC to which it's linked. Similarly, the DNS hostname of an instance in a VPC resolves to its private IP address when addressed from a linked EC2-Classic instance. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide. You must specify a VPC ID in the request.
+    */
+  def enableVpcClassicLinkDnsSupport(params: EnableVpcClassicLinkDnsSupportRequest): Request[EnableVpcClassicLinkDnsSupportResult, AWSError] = js.native
+  def enableVpcClassicLinkDnsSupport(
+    params: EnableVpcClassicLinkDnsSupportRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableVpcClassicLinkDnsSupportResult, Unit]
+  ): Request[EnableVpcClassicLinkDnsSupportResult, AWSError] = js.native
+  
+  /**
+    * Downloads the client certificate revocation list for the specified Client VPN endpoint.
+    */
+  def exportClientVpnClientCertificateRevocationList(): Request[ExportClientVpnClientCertificateRevocationListResult, AWSError] = js.native
+  def exportClientVpnClientCertificateRevocationList(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ExportClientVpnClientCertificateRevocationListResult, 
+      Unit
+    ]
+  ): Request[ExportClientVpnClientCertificateRevocationListResult, AWSError] = js.native
+  /**
+    * Downloads the client certificate revocation list for the specified Client VPN endpoint.
+    */
+  def exportClientVpnClientCertificateRevocationList(params: ExportClientVpnClientCertificateRevocationListRequest): Request[ExportClientVpnClientCertificateRevocationListResult, AWSError] = js.native
+  def exportClientVpnClientCertificateRevocationList(
+    params: ExportClientVpnClientCertificateRevocationListRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ExportClientVpnClientCertificateRevocationListResult, 
+      Unit
+    ]
+  ): Request[ExportClientVpnClientCertificateRevocationListResult, AWSError] = js.native
+  
+  /**
+    * Downloads the contents of the Client VPN endpoint configuration file for the specified Client VPN endpoint. The Client VPN endpoint configuration file includes the Client VPN endpoint and certificate information clients need to establish a connection with the Client VPN endpoint.
+    */
+  def exportClientVpnClientConfiguration(): Request[ExportClientVpnClientConfigurationResult, AWSError] = js.native
+  def exportClientVpnClientConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ ExportClientVpnClientConfigurationResult, Unit]
+  ): Request[ExportClientVpnClientConfigurationResult, AWSError] = js.native
+  /**
+    * Downloads the contents of the Client VPN endpoint configuration file for the specified Client VPN endpoint. The Client VPN endpoint configuration file includes the Client VPN endpoint and certificate information clients need to establish a connection with the Client VPN endpoint.
+    */
+  def exportClientVpnClientConfiguration(params: ExportClientVpnClientConfigurationRequest): Request[ExportClientVpnClientConfigurationResult, AWSError] = js.native
+  def exportClientVpnClientConfiguration(
+    params: ExportClientVpnClientConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ExportClientVpnClientConfigurationResult, Unit]
+  ): Request[ExportClientVpnClientConfigurationResult, AWSError] = js.native
+  
+  /**
+    * Exports an Amazon Machine Image (AMI) to a VM file. For more information, see Exporting a VM directly from an Amazon Machine Image (AMI) in the VM Import/Export User Guide.
+    */
+  def exportImage(): Request[ExportImageResult, AWSError] = js.native
+  def exportImage(callback: js.Function2[/* err */ AWSError, /* data */ ExportImageResult, Unit]): Request[ExportImageResult, AWSError] = js.native
+  /**
+    * Exports an Amazon Machine Image (AMI) to a VM file. For more information, see Exporting a VM directly from an Amazon Machine Image (AMI) in the VM Import/Export User Guide.
+    */
+  def exportImage(params: ExportImageRequest): Request[ExportImageResult, AWSError] = js.native
+  def exportImage(
+    params: ExportImageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ExportImageResult, Unit]
+  ): Request[ExportImageResult, AWSError] = js.native
+  
+  /**
+    * Exports routes from the specified transit gateway route table to the specified S3 bucket. By default, all routes are exported. Alternatively, you can filter by CIDR range. The routes are saved to the specified bucket in a JSON file. For more information, see Export Route Tables to Amazon S3 in Transit Gateways.
+    */
+  def exportTransitGatewayRoutes(): Request[ExportTransitGatewayRoutesResult, AWSError] = js.native
+  def exportTransitGatewayRoutes(callback: js.Function2[/* err */ AWSError, /* data */ ExportTransitGatewayRoutesResult, Unit]): Request[ExportTransitGatewayRoutesResult, AWSError] = js.native
+  /**
+    * Exports routes from the specified transit gateway route table to the specified S3 bucket. By default, all routes are exported. Alternatively, you can filter by CIDR range. The routes are saved to the specified bucket in a JSON file. For more information, see Export Route Tables to Amazon S3 in Transit Gateways.
+    */
+  def exportTransitGatewayRoutes(params: ExportTransitGatewayRoutesRequest): Request[ExportTransitGatewayRoutesResult, AWSError] = js.native
+  def exportTransitGatewayRoutes(
+    params: ExportTransitGatewayRoutesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ExportTransitGatewayRoutesResult, Unit]
+  ): Request[ExportTransitGatewayRoutesResult, AWSError] = js.native
+  
+  /**
+    * Returns the IAM roles that are associated with the specified ACM (ACM) certificate. It also returns the name of the Amazon S3 bucket and the Amazon S3 object key where the certificate, certificate chain, and encrypted private key bundle are stored, and the ARN of the KMS key that's used to encrypt the private key.
+    */
+  def getAssociatedEnclaveCertificateIamRoles(): Request[GetAssociatedEnclaveCertificateIamRolesResult, AWSError] = js.native
+  def getAssociatedEnclaveCertificateIamRoles(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAssociatedEnclaveCertificateIamRolesResult, Unit]
+  ): Request[GetAssociatedEnclaveCertificateIamRolesResult, AWSError] = js.native
+  /**
+    * Returns the IAM roles that are associated with the specified ACM (ACM) certificate. It also returns the name of the Amazon S3 bucket and the Amazon S3 object key where the certificate, certificate chain, and encrypted private key bundle are stored, and the ARN of the KMS key that's used to encrypt the private key.
+    */
+  def getAssociatedEnclaveCertificateIamRoles(params: GetAssociatedEnclaveCertificateIamRolesRequest): Request[GetAssociatedEnclaveCertificateIamRolesResult, AWSError] = js.native
+  def getAssociatedEnclaveCertificateIamRoles(
+    params: GetAssociatedEnclaveCertificateIamRolesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAssociatedEnclaveCertificateIamRolesResult, Unit]
+  ): Request[GetAssociatedEnclaveCertificateIamRolesResult, AWSError] = js.native
+  
+  /**
+    * Gets information about the IPv6 CIDR block associations for a specified IPv6 address pool.
+    */
+  def getAssociatedIpv6PoolCidrs(): Request[GetAssociatedIpv6PoolCidrsResult, AWSError] = js.native
+  def getAssociatedIpv6PoolCidrs(callback: js.Function2[/* err */ AWSError, /* data */ GetAssociatedIpv6PoolCidrsResult, Unit]): Request[GetAssociatedIpv6PoolCidrsResult, AWSError] = js.native
+  /**
+    * Gets information about the IPv6 CIDR block associations for a specified IPv6 address pool.
+    */
+  def getAssociatedIpv6PoolCidrs(params: GetAssociatedIpv6PoolCidrsRequest): Request[GetAssociatedIpv6PoolCidrsResult, AWSError] = js.native
+  def getAssociatedIpv6PoolCidrs(
+    params: GetAssociatedIpv6PoolCidrsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAssociatedIpv6PoolCidrsResult, Unit]
+  ): Request[GetAssociatedIpv6PoolCidrsResult, AWSError] = js.native
+  
+  /**
+    * Gets usage information about a Capacity Reservation. If the Capacity Reservation is shared, it shows usage information for the Capacity Reservation owner and each Amazon Web Services account that is currently using the shared capacity. If the Capacity Reservation is not shared, it shows only the Capacity Reservation owner's usage.
+    */
+  def getCapacityReservationUsage(): Request[GetCapacityReservationUsageResult, AWSError] = js.native
+  def getCapacityReservationUsage(callback: js.Function2[/* err */ AWSError, /* data */ GetCapacityReservationUsageResult, Unit]): Request[GetCapacityReservationUsageResult, AWSError] = js.native
+  /**
+    * Gets usage information about a Capacity Reservation. If the Capacity Reservation is shared, it shows usage information for the Capacity Reservation owner and each Amazon Web Services account that is currently using the shared capacity. If the Capacity Reservation is not shared, it shows only the Capacity Reservation owner's usage.
+    */
+  def getCapacityReservationUsage(params: GetCapacityReservationUsageRequest): Request[GetCapacityReservationUsageResult, AWSError] = js.native
+  def getCapacityReservationUsage(
+    params: GetCapacityReservationUsageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCapacityReservationUsageResult, Unit]
+  ): Request[GetCapacityReservationUsageResult, AWSError] = js.native
+  
+  /**
+    * Describes the allocations from the specified customer-owned address pool.
+    */
+  def getCoipPoolUsage(): Request[GetCoipPoolUsageResult, AWSError] = js.native
+  def getCoipPoolUsage(callback: js.Function2[/* err */ AWSError, /* data */ GetCoipPoolUsageResult, Unit]): Request[GetCoipPoolUsageResult, AWSError] = js.native
+  /**
+    * Describes the allocations from the specified customer-owned address pool.
+    */
+  def getCoipPoolUsage(params: GetCoipPoolUsageRequest): Request[GetCoipPoolUsageResult, AWSError] = js.native
+  def getCoipPoolUsage(
+    params: GetCoipPoolUsageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCoipPoolUsageResult, Unit]
+  ): Request[GetCoipPoolUsageResult, AWSError] = js.native
+  
+  /**
+    * Gets the console output for the specified instance. For Linux instances, the instance console output displays the exact console output that would normally be displayed on a physical monitor attached to a computer. For Windows instances, the instance console output includes the last three system event log errors. By default, the console output returns buffered information that was posted shortly after an instance transition state (start, stop, reboot, or terminate). This information is available for at least one hour after the most recent post. Only the most recent 64 KB of console output is available. You can optionally retrieve the latest serial console output at any time during the instance lifecycle. This option is supported on instance types that use the Nitro hypervisor. For more information, see Instance console output in the Amazon EC2 User Guide.
+    */
+  def getConsoleOutput(): Request[GetConsoleOutputResult, AWSError] = js.native
+  def getConsoleOutput(callback: js.Function2[/* err */ AWSError, /* data */ GetConsoleOutputResult, Unit]): Request[GetConsoleOutputResult, AWSError] = js.native
+  /**
+    * Gets the console output for the specified instance. For Linux instances, the instance console output displays the exact console output that would normally be displayed on a physical monitor attached to a computer. For Windows instances, the instance console output includes the last three system event log errors. By default, the console output returns buffered information that was posted shortly after an instance transition state (start, stop, reboot, or terminate). This information is available for at least one hour after the most recent post. Only the most recent 64 KB of console output is available. You can optionally retrieve the latest serial console output at any time during the instance lifecycle. This option is supported on instance types that use the Nitro hypervisor. For more information, see Instance console output in the Amazon EC2 User Guide.
+    */
+  def getConsoleOutput(params: GetConsoleOutputRequest): Request[GetConsoleOutputResult, AWSError] = js.native
+  def getConsoleOutput(
+    params: GetConsoleOutputRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetConsoleOutputResult, Unit]
+  ): Request[GetConsoleOutputResult, AWSError] = js.native
+  
+  /**
+    * Retrieve a JPG-format screenshot of a running instance to help with troubleshooting. The returned content is Base64-encoded.
+    */
+  def getConsoleScreenshot(): Request[GetConsoleScreenshotResult, AWSError] = js.native
+  def getConsoleScreenshot(callback: js.Function2[/* err */ AWSError, /* data */ GetConsoleScreenshotResult, Unit]): Request[GetConsoleScreenshotResult, AWSError] = js.native
+  /**
+    * Retrieve a JPG-format screenshot of a running instance to help with troubleshooting. The returned content is Base64-encoded.
+    */
+  def getConsoleScreenshot(params: GetConsoleScreenshotRequest): Request[GetConsoleScreenshotResult, AWSError] = js.native
+  def getConsoleScreenshot(
+    params: GetConsoleScreenshotRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetConsoleScreenshotResult, Unit]
+  ): Request[GetConsoleScreenshotResult, AWSError] = js.native
+  
+  /**
+    * Describes the default credit option for CPU usage of a burstable performance instance family. For more information, see Burstable performance instances in the Amazon EC2 User Guide.
+    */
+  def getDefaultCreditSpecification(): Request[GetDefaultCreditSpecificationResult, AWSError] = js.native
+  def getDefaultCreditSpecification(callback: js.Function2[/* err */ AWSError, /* data */ GetDefaultCreditSpecificationResult, Unit]): Request[GetDefaultCreditSpecificationResult, AWSError] = js.native
+  /**
+    * Describes the default credit option for CPU usage of a burstable performance instance family. For more information, see Burstable performance instances in the Amazon EC2 User Guide.
+    */
+  def getDefaultCreditSpecification(params: GetDefaultCreditSpecificationRequest): Request[GetDefaultCreditSpecificationResult, AWSError] = js.native
+  def getDefaultCreditSpecification(
+    params: GetDefaultCreditSpecificationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDefaultCreditSpecificationResult, Unit]
+  ): Request[GetDefaultCreditSpecificationResult, AWSError] = js.native
+  
+  /**
+    * Describes the default KMS key for EBS encryption by default for your account in this Region. You can change the default KMS key for encryption by default using ModifyEbsDefaultKmsKeyId or ResetEbsDefaultKmsKeyId. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def getEbsDefaultKmsKeyId(): Request[GetEbsDefaultKmsKeyIdResult, AWSError] = js.native
+  def getEbsDefaultKmsKeyId(callback: js.Function2[/* err */ AWSError, /* data */ GetEbsDefaultKmsKeyIdResult, Unit]): Request[GetEbsDefaultKmsKeyIdResult, AWSError] = js.native
+  /**
+    * Describes the default KMS key for EBS encryption by default for your account in this Region. You can change the default KMS key for encryption by default using ModifyEbsDefaultKmsKeyId or ResetEbsDefaultKmsKeyId. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def getEbsDefaultKmsKeyId(params: GetEbsDefaultKmsKeyIdRequest): Request[GetEbsDefaultKmsKeyIdResult, AWSError] = js.native
+  def getEbsDefaultKmsKeyId(
+    params: GetEbsDefaultKmsKeyIdRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetEbsDefaultKmsKeyIdResult, Unit]
+  ): Request[GetEbsDefaultKmsKeyIdResult, AWSError] = js.native
+  
+  /**
+    * Describes whether EBS encryption by default is enabled for your account in the current Region. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def getEbsEncryptionByDefault(): Request[GetEbsEncryptionByDefaultResult, AWSError] = js.native
+  def getEbsEncryptionByDefault(callback: js.Function2[/* err */ AWSError, /* data */ GetEbsEncryptionByDefaultResult, Unit]): Request[GetEbsEncryptionByDefaultResult, AWSError] = js.native
+  /**
+    * Describes whether EBS encryption by default is enabled for your account in the current Region. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def getEbsEncryptionByDefault(params: GetEbsEncryptionByDefaultRequest): Request[GetEbsEncryptionByDefaultResult, AWSError] = js.native
+  def getEbsEncryptionByDefault(
+    params: GetEbsEncryptionByDefaultRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetEbsEncryptionByDefaultResult, Unit]
+  ): Request[GetEbsEncryptionByDefaultResult, AWSError] = js.native
+  
+  /**
+    * Generates a CloudFormation template that streamlines and automates the integration of VPC flow logs with Amazon Athena. This make it easier for you to query and gain insights from VPC flow logs data. Based on the information that you provide, we configure resources in the template to do the following:   Create a table in Athena that maps fields to a custom log format   Create a Lambda function that updates the table with new partitions on a daily, weekly, or monthly basis   Create a table partitioned between two timestamps in the past   Create a set of named queries in Athena that you can use to get started quickly  
+    */
+  def getFlowLogsIntegrationTemplate(): Request[GetFlowLogsIntegrationTemplateResult, AWSError] = js.native
+  def getFlowLogsIntegrationTemplate(callback: js.Function2[/* err */ AWSError, /* data */ GetFlowLogsIntegrationTemplateResult, Unit]): Request[GetFlowLogsIntegrationTemplateResult, AWSError] = js.native
+  /**
+    * Generates a CloudFormation template that streamlines and automates the integration of VPC flow logs with Amazon Athena. This make it easier for you to query and gain insights from VPC flow logs data. Based on the information that you provide, we configure resources in the template to do the following:   Create a table in Athena that maps fields to a custom log format   Create a Lambda function that updates the table with new partitions on a daily, weekly, or monthly basis   Create a table partitioned between two timestamps in the past   Create a set of named queries in Athena that you can use to get started quickly  
+    */
+  def getFlowLogsIntegrationTemplate(params: GetFlowLogsIntegrationTemplateRequest): Request[GetFlowLogsIntegrationTemplateResult, AWSError] = js.native
+  def getFlowLogsIntegrationTemplate(
+    params: GetFlowLogsIntegrationTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetFlowLogsIntegrationTemplateResult, Unit]
+  ): Request[GetFlowLogsIntegrationTemplateResult, AWSError] = js.native
+  
+  /**
+    * Lists the resource groups to which a Capacity Reservation has been added.
+    */
+  def getGroupsForCapacityReservation(): Request[GetGroupsForCapacityReservationResult, AWSError] = js.native
+  def getGroupsForCapacityReservation(callback: js.Function2[/* err */ AWSError, /* data */ GetGroupsForCapacityReservationResult, Unit]): Request[GetGroupsForCapacityReservationResult, AWSError] = js.native
+  /**
+    * Lists the resource groups to which a Capacity Reservation has been added.
+    */
+  def getGroupsForCapacityReservation(params: GetGroupsForCapacityReservationRequest): Request[GetGroupsForCapacityReservationResult, AWSError] = js.native
+  def getGroupsForCapacityReservation(
+    params: GetGroupsForCapacityReservationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetGroupsForCapacityReservationResult, Unit]
+  ): Request[GetGroupsForCapacityReservationResult, AWSError] = js.native
+  
+  /**
+    * Preview a reservation purchase with configurations that match those of your Dedicated Host. You must have active Dedicated Hosts in your account before you purchase a reservation. This is a preview of the PurchaseHostReservation action and does not result in the offering being purchased.
+    */
+  def getHostReservationPurchasePreview(): Request[GetHostReservationPurchasePreviewResult, AWSError] = js.native
+  def getHostReservationPurchasePreview(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetHostReservationPurchasePreviewResult, Unit]
+  ): Request[GetHostReservationPurchasePreviewResult, AWSError] = js.native
+  /**
+    * Preview a reservation purchase with configurations that match those of your Dedicated Host. You must have active Dedicated Hosts in your account before you purchase a reservation. This is a preview of the PurchaseHostReservation action and does not result in the offering being purchased.
+    */
+  def getHostReservationPurchasePreview(params: GetHostReservationPurchasePreviewRequest): Request[GetHostReservationPurchasePreviewResult, AWSError] = js.native
+  def getHostReservationPurchasePreview(
+    params: GetHostReservationPurchasePreviewRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetHostReservationPurchasePreviewResult, Unit]
+  ): Request[GetHostReservationPurchasePreviewResult, AWSError] = js.native
+  
+  /**
+    * Returns a list of instance types with the specified instance attributes. You can use the response to preview the instance types without launching instances. Note that the response does not consider capacity. When you specify multiple parameters, you get instance types that satisfy all of the specified parameters. If you specify multiple values for a parameter, you get instance types that satisfy any of the specified values. For more information, see Preview instance types with specified attributes, Attribute-based instance type selection for EC2 Fleet, Attribute-based instance type selection for Spot Fleet, and Spot placement score in the Amazon EC2 User Guide, and Creating an Auto Scaling group using attribute-based instance type selection in the Amazon EC2 Auto Scaling User Guide.
+    */
+  def getInstanceTypesFromInstanceRequirements(): Request[GetInstanceTypesFromInstanceRequirementsResult, AWSError] = js.native
+  def getInstanceTypesFromInstanceRequirements(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceTypesFromInstanceRequirementsResult, Unit]
+  ): Request[GetInstanceTypesFromInstanceRequirementsResult, AWSError] = js.native
+  /**
+    * Returns a list of instance types with the specified instance attributes. You can use the response to preview the instance types without launching instances. Note that the response does not consider capacity. When you specify multiple parameters, you get instance types that satisfy all of the specified parameters. If you specify multiple values for a parameter, you get instance types that satisfy any of the specified values. For more information, see Preview instance types with specified attributes, Attribute-based instance type selection for EC2 Fleet, Attribute-based instance type selection for Spot Fleet, and Spot placement score in the Amazon EC2 User Guide, and Creating an Auto Scaling group using attribute-based instance type selection in the Amazon EC2 Auto Scaling User Guide.
+    */
+  def getInstanceTypesFromInstanceRequirements(params: GetInstanceTypesFromInstanceRequirementsRequest): Request[GetInstanceTypesFromInstanceRequirementsResult, AWSError] = js.native
+  def getInstanceTypesFromInstanceRequirements(
+    params: GetInstanceTypesFromInstanceRequirementsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceTypesFromInstanceRequirementsResult, Unit]
+  ): Request[GetInstanceTypesFromInstanceRequirementsResult, AWSError] = js.native
+  
+  /**
+    * A binary representation of the UEFI variable store. Only non-volatile variables are stored. This is a base64 encoded and zlib compressed binary value that must be properly encoded. When you use register-image to create an AMI, you can create an exact copy of your variable store by passing the UEFI data in the UefiData parameter. You can modify the UEFI data by using the python-uefivars tool on GitHub. You can use the tool to convert the UEFI data into a human-readable format (JSON), which you can inspect and modify, and then convert back into the binary format to use with register-image. For more information, see UEFI Secure Boot in the Amazon EC2 User Guide.
+    */
+  def getInstanceUefiData(): Request[GetInstanceUefiDataResult, AWSError] = js.native
+  def getInstanceUefiData(callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceUefiDataResult, Unit]): Request[GetInstanceUefiDataResult, AWSError] = js.native
+  /**
+    * A binary representation of the UEFI variable store. Only non-volatile variables are stored. This is a base64 encoded and zlib compressed binary value that must be properly encoded. When you use register-image to create an AMI, you can create an exact copy of your variable store by passing the UEFI data in the UefiData parameter. You can modify the UEFI data by using the python-uefivars tool on GitHub. You can use the tool to convert the UEFI data into a human-readable format (JSON), which you can inspect and modify, and then convert back into the binary format to use with register-image. For more information, see UEFI Secure Boot in the Amazon EC2 User Guide.
+    */
+  def getInstanceUefiData(params: GetInstanceUefiDataRequest): Request[GetInstanceUefiDataResult, AWSError] = js.native
+  def getInstanceUefiData(
+    params: GetInstanceUefiDataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceUefiDataResult, Unit]
+  ): Request[GetInstanceUefiDataResult, AWSError] = js.native
+  
+  /**
+    * Retrieve historical information about a CIDR within an IPAM scope. For more information, see View the history of IP addresses in the Amazon VPC IPAM User Guide.
+    */
+  def getIpamAddressHistory(): Request[GetIpamAddressHistoryResult, AWSError] = js.native
+  def getIpamAddressHistory(callback: js.Function2[/* err */ AWSError, /* data */ GetIpamAddressHistoryResult, Unit]): Request[GetIpamAddressHistoryResult, AWSError] = js.native
+  /**
+    * Retrieve historical information about a CIDR within an IPAM scope. For more information, see View the history of IP addresses in the Amazon VPC IPAM User Guide.
+    */
+  def getIpamAddressHistory(params: GetIpamAddressHistoryRequest): Request[GetIpamAddressHistoryResult, AWSError] = js.native
+  def getIpamAddressHistory(
+    params: GetIpamAddressHistoryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetIpamAddressHistoryResult, Unit]
+  ): Request[GetIpamAddressHistoryResult, AWSError] = js.native
+  
+  /**
+    * Get a list of all the CIDR allocations in an IPAM pool.
+    */
+  def getIpamPoolAllocations(): Request[GetIpamPoolAllocationsResult, AWSError] = js.native
+  def getIpamPoolAllocations(callback: js.Function2[/* err */ AWSError, /* data */ GetIpamPoolAllocationsResult, Unit]): Request[GetIpamPoolAllocationsResult, AWSError] = js.native
+  /**
+    * Get a list of all the CIDR allocations in an IPAM pool.
+    */
+  def getIpamPoolAllocations(params: GetIpamPoolAllocationsRequest): Request[GetIpamPoolAllocationsResult, AWSError] = js.native
+  def getIpamPoolAllocations(
+    params: GetIpamPoolAllocationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetIpamPoolAllocationsResult, Unit]
+  ): Request[GetIpamPoolAllocationsResult, AWSError] = js.native
+  
+  /**
+    * Get the CIDRs provisioned to an IPAM pool.
+    */
+  def getIpamPoolCidrs(): Request[GetIpamPoolCidrsResult, AWSError] = js.native
+  def getIpamPoolCidrs(callback: js.Function2[/* err */ AWSError, /* data */ GetIpamPoolCidrsResult, Unit]): Request[GetIpamPoolCidrsResult, AWSError] = js.native
+  /**
+    * Get the CIDRs provisioned to an IPAM pool.
+    */
+  def getIpamPoolCidrs(params: GetIpamPoolCidrsRequest): Request[GetIpamPoolCidrsResult, AWSError] = js.native
+  def getIpamPoolCidrs(
+    params: GetIpamPoolCidrsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetIpamPoolCidrsResult, Unit]
+  ): Request[GetIpamPoolCidrsResult, AWSError] = js.native
+  
+  /**
+    * Get information about the resources in a scope.
+    */
+  def getIpamResourceCidrs(): Request[GetIpamResourceCidrsResult, AWSError] = js.native
+  def getIpamResourceCidrs(callback: js.Function2[/* err */ AWSError, /* data */ GetIpamResourceCidrsResult, Unit]): Request[GetIpamResourceCidrsResult, AWSError] = js.native
+  /**
+    * Get information about the resources in a scope.
+    */
+  def getIpamResourceCidrs(params: GetIpamResourceCidrsRequest): Request[GetIpamResourceCidrsResult, AWSError] = js.native
+  def getIpamResourceCidrs(
+    params: GetIpamResourceCidrsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetIpamResourceCidrsResult, Unit]
+  ): Request[GetIpamResourceCidrsResult, AWSError] = js.native
+  
+  /**
+    * Retrieves the configuration data of the specified instance. You can use this data to create a launch template.  This action calls on other describe actions to get instance information. Depending on your instance configuration, you may need to allow the following actions in your IAM policy: DescribeSpotInstanceRequests, DescribeInstanceCreditSpecifications, DescribeVolumes, DescribeInstanceAttribute, and DescribeElasticGpus. Or, you can allow describe* depending on your instance requirements.
+    */
+  def getLaunchTemplateData(): Request[GetLaunchTemplateDataResult, AWSError] = js.native
+  def getLaunchTemplateData(callback: js.Function2[/* err */ AWSError, /* data */ GetLaunchTemplateDataResult, Unit]): Request[GetLaunchTemplateDataResult, AWSError] = js.native
+  /**
+    * Retrieves the configuration data of the specified instance. You can use this data to create a launch template.  This action calls on other describe actions to get instance information. Depending on your instance configuration, you may need to allow the following actions in your IAM policy: DescribeSpotInstanceRequests, DescribeInstanceCreditSpecifications, DescribeVolumes, DescribeInstanceAttribute, and DescribeElasticGpus. Or, you can allow describe* depending on your instance requirements.
+    */
+  def getLaunchTemplateData(params: GetLaunchTemplateDataRequest): Request[GetLaunchTemplateDataResult, AWSError] = js.native
+  def getLaunchTemplateData(
+    params: GetLaunchTemplateDataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetLaunchTemplateDataResult, Unit]
+  ): Request[GetLaunchTemplateDataResult, AWSError] = js.native
+  
+  /**
+    * Gets information about the resources that are associated with the specified managed prefix list.
+    */
+  def getManagedPrefixListAssociations(): Request[GetManagedPrefixListAssociationsResult, AWSError] = js.native
+  def getManagedPrefixListAssociations(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetManagedPrefixListAssociationsResult, Unit]
+  ): Request[GetManagedPrefixListAssociationsResult, AWSError] = js.native
+  /**
+    * Gets information about the resources that are associated with the specified managed prefix list.
+    */
+  def getManagedPrefixListAssociations(params: GetManagedPrefixListAssociationsRequest): Request[GetManagedPrefixListAssociationsResult, AWSError] = js.native
+  def getManagedPrefixListAssociations(
+    params: GetManagedPrefixListAssociationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetManagedPrefixListAssociationsResult, Unit]
+  ): Request[GetManagedPrefixListAssociationsResult, AWSError] = js.native
+  
+  /**
+    * Gets information about the entries for a specified managed prefix list.
+    */
+  def getManagedPrefixListEntries(): Request[GetManagedPrefixListEntriesResult, AWSError] = js.native
+  def getManagedPrefixListEntries(callback: js.Function2[/* err */ AWSError, /* data */ GetManagedPrefixListEntriesResult, Unit]): Request[GetManagedPrefixListEntriesResult, AWSError] = js.native
+  /**
+    * Gets information about the entries for a specified managed prefix list.
+    */
+  def getManagedPrefixListEntries(params: GetManagedPrefixListEntriesRequest): Request[GetManagedPrefixListEntriesResult, AWSError] = js.native
+  def getManagedPrefixListEntries(
+    params: GetManagedPrefixListEntriesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetManagedPrefixListEntriesResult, Unit]
+  ): Request[GetManagedPrefixListEntriesResult, AWSError] = js.native
+  
+  /**
+    * Gets the findings for the specified Network Access Scope analysis.
+    */
+  def getNetworkInsightsAccessScopeAnalysisFindings(): Request[GetNetworkInsightsAccessScopeAnalysisFindingsResult, AWSError] = js.native
+  def getNetworkInsightsAccessScopeAnalysisFindings(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetNetworkInsightsAccessScopeAnalysisFindingsResult, 
+      Unit
+    ]
+  ): Request[GetNetworkInsightsAccessScopeAnalysisFindingsResult, AWSError] = js.native
+  /**
+    * Gets the findings for the specified Network Access Scope analysis.
+    */
+  def getNetworkInsightsAccessScopeAnalysisFindings(params: GetNetworkInsightsAccessScopeAnalysisFindingsRequest): Request[GetNetworkInsightsAccessScopeAnalysisFindingsResult, AWSError] = js.native
+  def getNetworkInsightsAccessScopeAnalysisFindings(
+    params: GetNetworkInsightsAccessScopeAnalysisFindingsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetNetworkInsightsAccessScopeAnalysisFindingsResult, 
+      Unit
+    ]
+  ): Request[GetNetworkInsightsAccessScopeAnalysisFindingsResult, AWSError] = js.native
+  
+  /**
+    * Gets the content for the specified Network Access Scope.
+    */
+  def getNetworkInsightsAccessScopeContent(): Request[GetNetworkInsightsAccessScopeContentResult, AWSError] = js.native
+  def getNetworkInsightsAccessScopeContent(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetNetworkInsightsAccessScopeContentResult, Unit]
+  ): Request[GetNetworkInsightsAccessScopeContentResult, AWSError] = js.native
+  /**
+    * Gets the content for the specified Network Access Scope.
+    */
+  def getNetworkInsightsAccessScopeContent(params: GetNetworkInsightsAccessScopeContentRequest): Request[GetNetworkInsightsAccessScopeContentResult, AWSError] = js.native
+  def getNetworkInsightsAccessScopeContent(
+    params: GetNetworkInsightsAccessScopeContentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetNetworkInsightsAccessScopeContentResult, Unit]
+  ): Request[GetNetworkInsightsAccessScopeContentResult, AWSError] = js.native
+  
+  /**
+    * Retrieves the encrypted administrator password for a running Windows instance. The Windows password is generated at boot by the EC2Config service or EC2Launch scripts (Windows Server 2016 and later). This usually only happens the first time an instance is launched. For more information, see EC2Config and EC2Launch in the Amazon EC2 User Guide. For the EC2Config service, the password is not generated for rebundled AMIs unless Ec2SetPassword is enabled before bundling. The password is encrypted using the key pair that you specified when you launched the instance. You must provide the corresponding key pair file. When you launch an instance, password generation and encryption may take a few minutes. If you try to retrieve the password before it's available, the output returns an empty string. We recommend that you wait up to 15 minutes after launching an instance before trying to retrieve the generated password.
+    */
+  def getPasswordData(): Request[GetPasswordDataResult, AWSError] = js.native
+  def getPasswordData(callback: js.Function2[/* err */ AWSError, /* data */ GetPasswordDataResult, Unit]): Request[GetPasswordDataResult, AWSError] = js.native
+  /**
+    * Retrieves the encrypted administrator password for a running Windows instance. The Windows password is generated at boot by the EC2Config service or EC2Launch scripts (Windows Server 2016 and later). This usually only happens the first time an instance is launched. For more information, see EC2Config and EC2Launch in the Amazon EC2 User Guide. For the EC2Config service, the password is not generated for rebundled AMIs unless Ec2SetPassword is enabled before bundling. The password is encrypted using the key pair that you specified when you launched the instance. You must provide the corresponding key pair file. When you launch an instance, password generation and encryption may take a few minutes. If you try to retrieve the password before it's available, the output returns an empty string. We recommend that you wait up to 15 minutes after launching an instance before trying to retrieve the generated password.
+    */
+  def getPasswordData(params: GetPasswordDataRequest): Request[GetPasswordDataResult, AWSError] = js.native
+  def getPasswordData(
+    params: GetPasswordDataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPasswordDataResult, Unit]
+  ): Request[GetPasswordDataResult, AWSError] = js.native
+  
+  /**
+    * Returns a quote and exchange information for exchanging one or more specified Convertible Reserved Instances for a new Convertible Reserved Instance. If the exchange cannot be performed, the reason is returned in the response. Use AcceptReservedInstancesExchangeQuote to perform the exchange.
+    */
+  def getReservedInstancesExchangeQuote(): Request[GetReservedInstancesExchangeQuoteResult, AWSError] = js.native
+  def getReservedInstancesExchangeQuote(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetReservedInstancesExchangeQuoteResult, Unit]
+  ): Request[GetReservedInstancesExchangeQuoteResult, AWSError] = js.native
+  /**
+    * Returns a quote and exchange information for exchanging one or more specified Convertible Reserved Instances for a new Convertible Reserved Instance. If the exchange cannot be performed, the reason is returned in the response. Use AcceptReservedInstancesExchangeQuote to perform the exchange.
+    */
+  def getReservedInstancesExchangeQuote(params: GetReservedInstancesExchangeQuoteRequest): Request[GetReservedInstancesExchangeQuoteResult, AWSError] = js.native
+  def getReservedInstancesExchangeQuote(
+    params: GetReservedInstancesExchangeQuoteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetReservedInstancesExchangeQuoteResult, Unit]
+  ): Request[GetReservedInstancesExchangeQuoteResult, AWSError] = js.native
+  
+  /**
+    * Retrieves the access status of your account to the EC2 serial console of all instances. By default, access to the EC2 serial console is disabled for your account. For more information, see Manage account access to the EC2 serial console in the Amazon EC2 User Guide.
+    */
+  def getSerialConsoleAccessStatus(): Request[GetSerialConsoleAccessStatusResult, AWSError] = js.native
+  def getSerialConsoleAccessStatus(callback: js.Function2[/* err */ AWSError, /* data */ GetSerialConsoleAccessStatusResult, Unit]): Request[GetSerialConsoleAccessStatusResult, AWSError] = js.native
+  /**
+    * Retrieves the access status of your account to the EC2 serial console of all instances. By default, access to the EC2 serial console is disabled for your account. For more information, see Manage account access to the EC2 serial console in the Amazon EC2 User Guide.
+    */
+  def getSerialConsoleAccessStatus(params: GetSerialConsoleAccessStatusRequest): Request[GetSerialConsoleAccessStatusResult, AWSError] = js.native
+  def getSerialConsoleAccessStatus(
+    params: GetSerialConsoleAccessStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetSerialConsoleAccessStatusResult, Unit]
+  ): Request[GetSerialConsoleAccessStatusResult, AWSError] = js.native
+  
+  /**
+    * Calculates the Spot placement score for a Region or Availability Zone based on the specified target capacity and compute requirements. You can specify your compute requirements either by using InstanceRequirementsWithMetadata and letting Amazon EC2 choose the optimal instance types to fulfill your Spot request, or you can specify the instance types by using InstanceTypes. For more information, see Spot placement score in the Amazon EC2 User Guide.
+    */
+  def getSpotPlacementScores(): Request[GetSpotPlacementScoresResult, AWSError] = js.native
+  def getSpotPlacementScores(callback: js.Function2[/* err */ AWSError, /* data */ GetSpotPlacementScoresResult, Unit]): Request[GetSpotPlacementScoresResult, AWSError] = js.native
+  /**
+    * Calculates the Spot placement score for a Region or Availability Zone based on the specified target capacity and compute requirements. You can specify your compute requirements either by using InstanceRequirementsWithMetadata and letting Amazon EC2 choose the optimal instance types to fulfill your Spot request, or you can specify the instance types by using InstanceTypes. For more information, see Spot placement score in the Amazon EC2 User Guide.
+    */
+  def getSpotPlacementScores(params: GetSpotPlacementScoresRequest): Request[GetSpotPlacementScoresResult, AWSError] = js.native
+  def getSpotPlacementScores(
+    params: GetSpotPlacementScoresRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetSpotPlacementScoresResult, Unit]
+  ): Request[GetSpotPlacementScoresResult, AWSError] = js.native
+  
+  /**
+    * Gets information about the subnet CIDR reservations.
+    */
+  def getSubnetCidrReservations(): Request[GetSubnetCidrReservationsResult, AWSError] = js.native
+  def getSubnetCidrReservations(callback: js.Function2[/* err */ AWSError, /* data */ GetSubnetCidrReservationsResult, Unit]): Request[GetSubnetCidrReservationsResult, AWSError] = js.native
+  /**
+    * Gets information about the subnet CIDR reservations.
+    */
+  def getSubnetCidrReservations(params: GetSubnetCidrReservationsRequest): Request[GetSubnetCidrReservationsResult, AWSError] = js.native
+  def getSubnetCidrReservations(
+    params: GetSubnetCidrReservationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetSubnetCidrReservationsResult, Unit]
+  ): Request[GetSubnetCidrReservationsResult, AWSError] = js.native
+  
+  /**
+    * Lists the route tables to which the specified resource attachment propagates routes.
+    */
+  def getTransitGatewayAttachmentPropagations(): Request[GetTransitGatewayAttachmentPropagationsResult, AWSError] = js.native
+  def getTransitGatewayAttachmentPropagations(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTransitGatewayAttachmentPropagationsResult, Unit]
+  ): Request[GetTransitGatewayAttachmentPropagationsResult, AWSError] = js.native
+  /**
+    * Lists the route tables to which the specified resource attachment propagates routes.
+    */
+  def getTransitGatewayAttachmentPropagations(params: GetTransitGatewayAttachmentPropagationsRequest): Request[GetTransitGatewayAttachmentPropagationsResult, AWSError] = js.native
+  def getTransitGatewayAttachmentPropagations(
+    params: GetTransitGatewayAttachmentPropagationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTransitGatewayAttachmentPropagationsResult, Unit]
+  ): Request[GetTransitGatewayAttachmentPropagationsResult, AWSError] = js.native
+  
+  /**
+    * Gets information about the associations for the transit gateway multicast domain.
+    */
+  def getTransitGatewayMulticastDomainAssociations(): Request[GetTransitGatewayMulticastDomainAssociationsResult, AWSError] = js.native
+  def getTransitGatewayMulticastDomainAssociations(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetTransitGatewayMulticastDomainAssociationsResult, 
+      Unit
+    ]
+  ): Request[GetTransitGatewayMulticastDomainAssociationsResult, AWSError] = js.native
+  /**
+    * Gets information about the associations for the transit gateway multicast domain.
+    */
+  def getTransitGatewayMulticastDomainAssociations(params: GetTransitGatewayMulticastDomainAssociationsRequest): Request[GetTransitGatewayMulticastDomainAssociationsResult, AWSError] = js.native
+  def getTransitGatewayMulticastDomainAssociations(
+    params: GetTransitGatewayMulticastDomainAssociationsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetTransitGatewayMulticastDomainAssociationsResult, 
+      Unit
+    ]
+  ): Request[GetTransitGatewayMulticastDomainAssociationsResult, AWSError] = js.native
+  
+  /**
+    * Gets a list of the transit gateway policy table associations.
+    */
+  def getTransitGatewayPolicyTableAssociations(): Request[GetTransitGatewayPolicyTableAssociationsResult, AWSError] = js.native
+  def getTransitGatewayPolicyTableAssociations(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTransitGatewayPolicyTableAssociationsResult, Unit]
+  ): Request[GetTransitGatewayPolicyTableAssociationsResult, AWSError] = js.native
+  /**
+    * Gets a list of the transit gateway policy table associations.
+    */
+  def getTransitGatewayPolicyTableAssociations(params: GetTransitGatewayPolicyTableAssociationsRequest): Request[GetTransitGatewayPolicyTableAssociationsResult, AWSError] = js.native
+  def getTransitGatewayPolicyTableAssociations(
+    params: GetTransitGatewayPolicyTableAssociationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTransitGatewayPolicyTableAssociationsResult, Unit]
+  ): Request[GetTransitGatewayPolicyTableAssociationsResult, AWSError] = js.native
+  
+  /**
+    * Returns a list of transit gateway policy table entries.
+    */
+  def getTransitGatewayPolicyTableEntries(): Request[GetTransitGatewayPolicyTableEntriesResult, AWSError] = js.native
+  def getTransitGatewayPolicyTableEntries(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTransitGatewayPolicyTableEntriesResult, Unit]
+  ): Request[GetTransitGatewayPolicyTableEntriesResult, AWSError] = js.native
+  /**
+    * Returns a list of transit gateway policy table entries.
+    */
+  def getTransitGatewayPolicyTableEntries(params: GetTransitGatewayPolicyTableEntriesRequest): Request[GetTransitGatewayPolicyTableEntriesResult, AWSError] = js.native
+  def getTransitGatewayPolicyTableEntries(
+    params: GetTransitGatewayPolicyTableEntriesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTransitGatewayPolicyTableEntriesResult, Unit]
+  ): Request[GetTransitGatewayPolicyTableEntriesResult, AWSError] = js.native
+  
+  /**
+    * Gets information about the prefix list references in a specified transit gateway route table.
+    */
+  def getTransitGatewayPrefixListReferences(): Request[GetTransitGatewayPrefixListReferencesResult, AWSError] = js.native
+  def getTransitGatewayPrefixListReferences(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTransitGatewayPrefixListReferencesResult, Unit]
+  ): Request[GetTransitGatewayPrefixListReferencesResult, AWSError] = js.native
+  /**
+    * Gets information about the prefix list references in a specified transit gateway route table.
+    */
+  def getTransitGatewayPrefixListReferences(params: GetTransitGatewayPrefixListReferencesRequest): Request[GetTransitGatewayPrefixListReferencesResult, AWSError] = js.native
+  def getTransitGatewayPrefixListReferences(
+    params: GetTransitGatewayPrefixListReferencesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTransitGatewayPrefixListReferencesResult, Unit]
+  ): Request[GetTransitGatewayPrefixListReferencesResult, AWSError] = js.native
+  
+  /**
+    * Gets information about the associations for the specified transit gateway route table.
+    */
+  def getTransitGatewayRouteTableAssociations(): Request[GetTransitGatewayRouteTableAssociationsResult, AWSError] = js.native
+  def getTransitGatewayRouteTableAssociations(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTransitGatewayRouteTableAssociationsResult, Unit]
+  ): Request[GetTransitGatewayRouteTableAssociationsResult, AWSError] = js.native
+  /**
+    * Gets information about the associations for the specified transit gateway route table.
+    */
+  def getTransitGatewayRouteTableAssociations(params: GetTransitGatewayRouteTableAssociationsRequest): Request[GetTransitGatewayRouteTableAssociationsResult, AWSError] = js.native
+  def getTransitGatewayRouteTableAssociations(
+    params: GetTransitGatewayRouteTableAssociationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTransitGatewayRouteTableAssociationsResult, Unit]
+  ): Request[GetTransitGatewayRouteTableAssociationsResult, AWSError] = js.native
+  
+  /**
+    * Gets information about the route table propagations for the specified transit gateway route table.
+    */
+  def getTransitGatewayRouteTablePropagations(): Request[GetTransitGatewayRouteTablePropagationsResult, AWSError] = js.native
+  def getTransitGatewayRouteTablePropagations(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTransitGatewayRouteTablePropagationsResult, Unit]
+  ): Request[GetTransitGatewayRouteTablePropagationsResult, AWSError] = js.native
+  /**
+    * Gets information about the route table propagations for the specified transit gateway route table.
+    */
+  def getTransitGatewayRouteTablePropagations(params: GetTransitGatewayRouteTablePropagationsRequest): Request[GetTransitGatewayRouteTablePropagationsResult, AWSError] = js.native
+  def getTransitGatewayRouteTablePropagations(
+    params: GetTransitGatewayRouteTablePropagationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTransitGatewayRouteTablePropagationsResult, Unit]
+  ): Request[GetTransitGatewayRouteTablePropagationsResult, AWSError] = js.native
+  
+  /**
+    * Download an Amazon Web Services-provided sample configuration file to be used with the customer gateway device specified for your Site-to-Site VPN connection.
+    */
+  def getVpnConnectionDeviceSampleConfiguration(): Request[GetVpnConnectionDeviceSampleConfigurationResult, AWSError] = js.native
+  def getVpnConnectionDeviceSampleConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVpnConnectionDeviceSampleConfigurationResult, Unit]
+  ): Request[GetVpnConnectionDeviceSampleConfigurationResult, AWSError] = js.native
+  /**
+    * Download an Amazon Web Services-provided sample configuration file to be used with the customer gateway device specified for your Site-to-Site VPN connection.
+    */
+  def getVpnConnectionDeviceSampleConfiguration(params: GetVpnConnectionDeviceSampleConfigurationRequest): Request[GetVpnConnectionDeviceSampleConfigurationResult, AWSError] = js.native
+  def getVpnConnectionDeviceSampleConfiguration(
+    params: GetVpnConnectionDeviceSampleConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVpnConnectionDeviceSampleConfigurationResult, Unit]
+  ): Request[GetVpnConnectionDeviceSampleConfigurationResult, AWSError] = js.native
+  
+  /**
+    * Obtain a list of customer gateway devices for which sample configuration files can be provided. The request has no additional parameters. You can also see the list of device types with sample configuration files available under Your customer gateway device in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def getVpnConnectionDeviceTypes(): Request[GetVpnConnectionDeviceTypesResult, AWSError] = js.native
+  def getVpnConnectionDeviceTypes(callback: js.Function2[/* err */ AWSError, /* data */ GetVpnConnectionDeviceTypesResult, Unit]): Request[GetVpnConnectionDeviceTypesResult, AWSError] = js.native
+  /**
+    * Obtain a list of customer gateway devices for which sample configuration files can be provided. The request has no additional parameters. You can also see the list of device types with sample configuration files available under Your customer gateway device in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def getVpnConnectionDeviceTypes(params: GetVpnConnectionDeviceTypesRequest): Request[GetVpnConnectionDeviceTypesResult, AWSError] = js.native
+  def getVpnConnectionDeviceTypes(
+    params: GetVpnConnectionDeviceTypesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVpnConnectionDeviceTypesResult, Unit]
+  ): Request[GetVpnConnectionDeviceTypesResult, AWSError] = js.native
+  
+  /**
+    * Uploads a client certificate revocation list to the specified Client VPN endpoint. Uploading a client certificate revocation list overwrites the existing client certificate revocation list. Uploading a client certificate revocation list resets existing client connections.
+    */
+  def importClientVpnClientCertificateRevocationList(): Request[ImportClientVpnClientCertificateRevocationListResult, AWSError] = js.native
+  def importClientVpnClientCertificateRevocationList(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ImportClientVpnClientCertificateRevocationListResult, 
+      Unit
+    ]
+  ): Request[ImportClientVpnClientCertificateRevocationListResult, AWSError] = js.native
+  /**
+    * Uploads a client certificate revocation list to the specified Client VPN endpoint. Uploading a client certificate revocation list overwrites the existing client certificate revocation list. Uploading a client certificate revocation list resets existing client connections.
+    */
+  def importClientVpnClientCertificateRevocationList(params: ImportClientVpnClientCertificateRevocationListRequest): Request[ImportClientVpnClientCertificateRevocationListResult, AWSError] = js.native
+  def importClientVpnClientCertificateRevocationList(
+    params: ImportClientVpnClientCertificateRevocationListRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ImportClientVpnClientCertificateRevocationListResult, 
+      Unit
+    ]
+  ): Request[ImportClientVpnClientCertificateRevocationListResult, AWSError] = js.native
+  
+  /**
+    * Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI).  Amazon Web Services VM Import/Export strongly recommends specifying a value for either the --license-type or --usage-operation parameter when you create a new VM Import task. This ensures your operating system is licensed appropriately and your billing is optimized.  For more information, see Importing a VM as an image using VM Import/Export in the VM Import/Export User Guide.
+    */
+  def importImage(): Request[ImportImageResult, AWSError] = js.native
+  def importImage(callback: js.Function2[/* err */ AWSError, /* data */ ImportImageResult, Unit]): Request[ImportImageResult, AWSError] = js.native
+  /**
+    * Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI).  Amazon Web Services VM Import/Export strongly recommends specifying a value for either the --license-type or --usage-operation parameter when you create a new VM Import task. This ensures your operating system is licensed appropriately and your billing is optimized.  For more information, see Importing a VM as an image using VM Import/Export in the VM Import/Export User Guide.
+    */
+  def importImage(params: ImportImageRequest): Request[ImportImageResult, AWSError] = js.native
+  def importImage(
+    params: ImportImageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ImportImageResult, Unit]
+  ): Request[ImportImageResult, AWSError] = js.native
+  
+  /**
+    * Creates an import instance task using metadata from the specified disk image. This API action supports only single-volume VMs. To import multi-volume VMs, use ImportImage instead. This API action is not supported by the Command Line Interface (CLI). For information about using the Amazon EC2 CLI, which is deprecated, see Importing a VM to Amazon EC2 in the Amazon EC2 CLI Reference PDF file. For information about the import manifest referenced by this API action, see VM Import Manifest.
+    */
+  def importInstance(): Request[ImportInstanceResult, AWSError] = js.native
+  def importInstance(callback: js.Function2[/* err */ AWSError, /* data */ ImportInstanceResult, Unit]): Request[ImportInstanceResult, AWSError] = js.native
+  /**
+    * Creates an import instance task using metadata from the specified disk image. This API action supports only single-volume VMs. To import multi-volume VMs, use ImportImage instead. This API action is not supported by the Command Line Interface (CLI). For information about using the Amazon EC2 CLI, which is deprecated, see Importing a VM to Amazon EC2 in the Amazon EC2 CLI Reference PDF file. For information about the import manifest referenced by this API action, see VM Import Manifest.
+    */
+  def importInstance(params: ImportInstanceRequest): Request[ImportInstanceResult, AWSError] = js.native
+  def importInstance(
+    params: ImportInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ImportInstanceResult, Unit]
+  ): Request[ImportInstanceResult, AWSError] = js.native
+  
+  /**
+    * Imports the public key from an RSA or ED25519 key pair that you created with a third-party tool. Compare this with CreateKeyPair, in which Amazon Web Services creates the key pair and gives the keys to you (Amazon Web Services keeps a copy of the public key). With ImportKeyPair, you create the key pair and give Amazon Web Services just the public key. The private key is never transferred between you and Amazon Web Services. For more information about key pairs, see Amazon EC2 key pairs in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def importKeyPair(): Request[ImportKeyPairResult, AWSError] = js.native
+  def importKeyPair(callback: js.Function2[/* err */ AWSError, /* data */ ImportKeyPairResult, Unit]): Request[ImportKeyPairResult, AWSError] = js.native
+  /**
+    * Imports the public key from an RSA or ED25519 key pair that you created with a third-party tool. Compare this with CreateKeyPair, in which Amazon Web Services creates the key pair and gives the keys to you (Amazon Web Services keeps a copy of the public key). With ImportKeyPair, you create the key pair and give Amazon Web Services just the public key. The private key is never transferred between you and Amazon Web Services. For more information about key pairs, see Amazon EC2 key pairs in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def importKeyPair(params: ImportKeyPairRequest): Request[ImportKeyPairResult, AWSError] = js.native
+  def importKeyPair(
+    params: ImportKeyPairRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ImportKeyPairResult, Unit]
+  ): Request[ImportKeyPairResult, AWSError] = js.native
+  
+  /**
+    * Imports a disk into an EBS snapshot. For more information, see Importing a disk as a snapshot using VM Import/Export in the VM Import/Export User Guide.
+    */
+  def importSnapshot(): Request[ImportSnapshotResult, AWSError] = js.native
+  def importSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ ImportSnapshotResult, Unit]): Request[ImportSnapshotResult, AWSError] = js.native
+  /**
+    * Imports a disk into an EBS snapshot. For more information, see Importing a disk as a snapshot using VM Import/Export in the VM Import/Export User Guide.
+    */
+  def importSnapshot(params: ImportSnapshotRequest): Request[ImportSnapshotResult, AWSError] = js.native
+  def importSnapshot(
+    params: ImportSnapshotRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ImportSnapshotResult, Unit]
+  ): Request[ImportSnapshotResult, AWSError] = js.native
+  
+  /**
+    * Creates an import volume task using metadata from the specified disk image. This API action supports only single-volume VMs. To import multi-volume VMs, use ImportImage instead. To import a disk to a snapshot, use ImportSnapshot instead. This API action is not supported by the Command Line Interface (CLI). For information about using the Amazon EC2 CLI, which is deprecated, see Importing Disks to Amazon EBS in the Amazon EC2 CLI Reference PDF file. For information about the import manifest referenced by this API action, see VM Import Manifest.
+    */
+  def importVolume(): Request[ImportVolumeResult, AWSError] = js.native
+  def importVolume(callback: js.Function2[/* err */ AWSError, /* data */ ImportVolumeResult, Unit]): Request[ImportVolumeResult, AWSError] = js.native
+  /**
+    * Creates an import volume task using metadata from the specified disk image. This API action supports only single-volume VMs. To import multi-volume VMs, use ImportImage instead. To import a disk to a snapshot, use ImportSnapshot instead. This API action is not supported by the Command Line Interface (CLI). For information about using the Amazon EC2 CLI, which is deprecated, see Importing Disks to Amazon EBS in the Amazon EC2 CLI Reference PDF file. For information about the import manifest referenced by this API action, see VM Import Manifest.
+    */
+  def importVolume(params: ImportVolumeRequest): Request[ImportVolumeResult, AWSError] = js.native
+  def importVolume(
+    params: ImportVolumeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ImportVolumeResult, Unit]
+  ): Request[ImportVolumeResult, AWSError] = js.native
+  
+  /**
+    * Lists one or more AMIs that are currently in the Recycle Bin. For more information, see Recycle Bin in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def listImagesInRecycleBin(): Request[ListImagesInRecycleBinResult, AWSError] = js.native
+  def listImagesInRecycleBin(callback: js.Function2[/* err */ AWSError, /* data */ ListImagesInRecycleBinResult, Unit]): Request[ListImagesInRecycleBinResult, AWSError] = js.native
+  /**
+    * Lists one or more AMIs that are currently in the Recycle Bin. For more information, see Recycle Bin in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def listImagesInRecycleBin(params: ListImagesInRecycleBinRequest): Request[ListImagesInRecycleBinResult, AWSError] = js.native
+  def listImagesInRecycleBin(
+    params: ListImagesInRecycleBinRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListImagesInRecycleBinResult, Unit]
+  ): Request[ListImagesInRecycleBinResult, AWSError] = js.native
+  
+  /**
+    * Lists one or more snapshots that are currently in the Recycle Bin.
+    */
+  def listSnapshotsInRecycleBin(): Request[ListSnapshotsInRecycleBinResult, AWSError] = js.native
+  def listSnapshotsInRecycleBin(callback: js.Function2[/* err */ AWSError, /* data */ ListSnapshotsInRecycleBinResult, Unit]): Request[ListSnapshotsInRecycleBinResult, AWSError] = js.native
+  /**
+    * Lists one or more snapshots that are currently in the Recycle Bin.
+    */
+  def listSnapshotsInRecycleBin(params: ListSnapshotsInRecycleBinRequest): Request[ListSnapshotsInRecycleBinResult, AWSError] = js.native
+  def listSnapshotsInRecycleBin(
+    params: ListSnapshotsInRecycleBinRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListSnapshotsInRecycleBinResult, Unit]
+  ): Request[ListSnapshotsInRecycleBinResult, AWSError] = js.native
+  
+  /**
+    * Modifies an attribute of the specified Elastic IP address. For requirements, see Using reverse DNS for email applications.
+    */
+  def modifyAddressAttribute(): Request[ModifyAddressAttributeResult, AWSError] = js.native
+  def modifyAddressAttribute(callback: js.Function2[/* err */ AWSError, /* data */ ModifyAddressAttributeResult, Unit]): Request[ModifyAddressAttributeResult, AWSError] = js.native
+  /**
+    * Modifies an attribute of the specified Elastic IP address. For requirements, see Using reverse DNS for email applications.
+    */
+  def modifyAddressAttribute(params: ModifyAddressAttributeRequest): Request[ModifyAddressAttributeResult, AWSError] = js.native
+  def modifyAddressAttribute(
+    params: ModifyAddressAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyAddressAttributeResult, Unit]
+  ): Request[ModifyAddressAttributeResult, AWSError] = js.native
+  
+  /**
+    * Changes the opt-in status of the Local Zone and Wavelength Zone group for your account. Use  DescribeAvailabilityZones to view the value for GroupName.
+    */
+  def modifyAvailabilityZoneGroup(): Request[ModifyAvailabilityZoneGroupResult, AWSError] = js.native
+  def modifyAvailabilityZoneGroup(callback: js.Function2[/* err */ AWSError, /* data */ ModifyAvailabilityZoneGroupResult, Unit]): Request[ModifyAvailabilityZoneGroupResult, AWSError] = js.native
+  /**
+    * Changes the opt-in status of the Local Zone and Wavelength Zone group for your account. Use  DescribeAvailabilityZones to view the value for GroupName.
+    */
+  def modifyAvailabilityZoneGroup(params: ModifyAvailabilityZoneGroupRequest): Request[ModifyAvailabilityZoneGroupResult, AWSError] = js.native
+  def modifyAvailabilityZoneGroup(
+    params: ModifyAvailabilityZoneGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyAvailabilityZoneGroupResult, Unit]
+  ): Request[ModifyAvailabilityZoneGroupResult, AWSError] = js.native
+  
+  /**
+    * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
+    */
+  def modifyCapacityReservation(): Request[ModifyCapacityReservationResult, AWSError] = js.native
+  def modifyCapacityReservation(callback: js.Function2[/* err */ AWSError, /* data */ ModifyCapacityReservationResult, Unit]): Request[ModifyCapacityReservationResult, AWSError] = js.native
+  /**
+    * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
+    */
+  def modifyCapacityReservation(params: ModifyCapacityReservationRequest): Request[ModifyCapacityReservationResult, AWSError] = js.native
+  def modifyCapacityReservation(
+    params: ModifyCapacityReservationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyCapacityReservationResult, Unit]
+  ): Request[ModifyCapacityReservationResult, AWSError] = js.native
+  
+  /**
+    * Modifies a Capacity Reservation Fleet. When you modify the total target capacity of a Capacity Reservation Fleet, the Fleet automatically creates new Capacity Reservations, or modifies or cancels existing Capacity Reservations in the Fleet to meet the new total target capacity. When you modify the end date for the Fleet, the end dates for all of the individual Capacity Reservations in the Fleet are updated accordingly.
+    */
+  def modifyCapacityReservationFleet(): Request[ModifyCapacityReservationFleetResult, AWSError] = js.native
+  def modifyCapacityReservationFleet(callback: js.Function2[/* err */ AWSError, /* data */ ModifyCapacityReservationFleetResult, Unit]): Request[ModifyCapacityReservationFleetResult, AWSError] = js.native
+  /**
+    * Modifies a Capacity Reservation Fleet. When you modify the total target capacity of a Capacity Reservation Fleet, the Fleet automatically creates new Capacity Reservations, or modifies or cancels existing Capacity Reservations in the Fleet to meet the new total target capacity. When you modify the end date for the Fleet, the end dates for all of the individual Capacity Reservations in the Fleet are updated accordingly.
+    */
+  def modifyCapacityReservationFleet(params: ModifyCapacityReservationFleetRequest): Request[ModifyCapacityReservationFleetResult, AWSError] = js.native
+  def modifyCapacityReservationFleet(
+    params: ModifyCapacityReservationFleetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyCapacityReservationFleetResult, Unit]
+  ): Request[ModifyCapacityReservationFleetResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified Client VPN endpoint. Modifying the DNS server resets existing client connections.
+    */
+  def modifyClientVpnEndpoint(): Request[ModifyClientVpnEndpointResult, AWSError] = js.native
+  def modifyClientVpnEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ ModifyClientVpnEndpointResult, Unit]): Request[ModifyClientVpnEndpointResult, AWSError] = js.native
+  /**
+    * Modifies the specified Client VPN endpoint. Modifying the DNS server resets existing client connections.
+    */
+  def modifyClientVpnEndpoint(params: ModifyClientVpnEndpointRequest): Request[ModifyClientVpnEndpointResult, AWSError] = js.native
+  def modifyClientVpnEndpoint(
+    params: ModifyClientVpnEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyClientVpnEndpointResult, Unit]
+  ): Request[ModifyClientVpnEndpointResult, AWSError] = js.native
+  
+  /**
+    * Modifies the default credit option for CPU usage of burstable performance instances. The default credit option is set at the account level per Amazon Web Services Region, and is specified per instance family. All new burstable performance instances in the account launch using the default credit option.  ModifyDefaultCreditSpecification is an asynchronous operation, which works at an Amazon Web Services Region level and modifies the credit option for each Availability Zone. All zones in a Region are updated within five minutes. But if instances are launched during this operation, they might not get the new credit option until the zone is updated. To verify whether the update has occurred, you can call GetDefaultCreditSpecification and check DefaultCreditSpecification for updates. For more information, see Burstable performance instances in the Amazon EC2 User Guide.
+    */
+  def modifyDefaultCreditSpecification(): Request[ModifyDefaultCreditSpecificationResult, AWSError] = js.native
+  def modifyDefaultCreditSpecification(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyDefaultCreditSpecificationResult, Unit]
+  ): Request[ModifyDefaultCreditSpecificationResult, AWSError] = js.native
+  /**
+    * Modifies the default credit option for CPU usage of burstable performance instances. The default credit option is set at the account level per Amazon Web Services Region, and is specified per instance family. All new burstable performance instances in the account launch using the default credit option.  ModifyDefaultCreditSpecification is an asynchronous operation, which works at an Amazon Web Services Region level and modifies the credit option for each Availability Zone. All zones in a Region are updated within five minutes. But if instances are launched during this operation, they might not get the new credit option until the zone is updated. To verify whether the update has occurred, you can call GetDefaultCreditSpecification and check DefaultCreditSpecification for updates. For more information, see Burstable performance instances in the Amazon EC2 User Guide.
+    */
+  def modifyDefaultCreditSpecification(params: ModifyDefaultCreditSpecificationRequest): Request[ModifyDefaultCreditSpecificationResult, AWSError] = js.native
+  def modifyDefaultCreditSpecification(
+    params: ModifyDefaultCreditSpecificationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyDefaultCreditSpecificationResult, Unit]
+  ): Request[ModifyDefaultCreditSpecificationResult, AWSError] = js.native
+  
+  /**
+    * Changes the default KMS key for EBS encryption by default for your account in this Region. Amazon Web Services creates a unique Amazon Web Services managed KMS key in each Region for use with encryption by default. If you change the default KMS key to a symmetric customer managed KMS key, it is used instead of the Amazon Web Services managed KMS key. To reset the default KMS key to the Amazon Web Services managed KMS key for EBS, use ResetEbsDefaultKmsKeyId. Amazon EBS does not support asymmetric KMS keys. If you delete or disable the customer managed KMS key that you specified for use with encryption by default, your instances will fail to launch. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def modifyEbsDefaultKmsKeyId(): Request[ModifyEbsDefaultKmsKeyIdResult, AWSError] = js.native
+  def modifyEbsDefaultKmsKeyId(callback: js.Function2[/* err */ AWSError, /* data */ ModifyEbsDefaultKmsKeyIdResult, Unit]): Request[ModifyEbsDefaultKmsKeyIdResult, AWSError] = js.native
+  /**
+    * Changes the default KMS key for EBS encryption by default for your account in this Region. Amazon Web Services creates a unique Amazon Web Services managed KMS key in each Region for use with encryption by default. If you change the default KMS key to a symmetric customer managed KMS key, it is used instead of the Amazon Web Services managed KMS key. To reset the default KMS key to the Amazon Web Services managed KMS key for EBS, use ResetEbsDefaultKmsKeyId. Amazon EBS does not support asymmetric KMS keys. If you delete or disable the customer managed KMS key that you specified for use with encryption by default, your instances will fail to launch. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def modifyEbsDefaultKmsKeyId(params: ModifyEbsDefaultKmsKeyIdRequest): Request[ModifyEbsDefaultKmsKeyIdResult, AWSError] = js.native
+  def modifyEbsDefaultKmsKeyId(
+    params: ModifyEbsDefaultKmsKeyIdRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyEbsDefaultKmsKeyIdResult, Unit]
+  ): Request[ModifyEbsDefaultKmsKeyIdResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified EC2 Fleet. You can only modify an EC2 Fleet request of type maintain. While the EC2 Fleet is being modified, it is in the modifying state. To scale up your EC2 Fleet, increase its target capacity. The EC2 Fleet launches the additional Spot Instances according to the allocation strategy for the EC2 Fleet request. If the allocation strategy is lowest-price, the EC2 Fleet launches instances using the Spot Instance pool with the lowest price. If the allocation strategy is diversified, the EC2 Fleet distributes the instances across the Spot Instance pools. If the allocation strategy is capacity-optimized, EC2 Fleet launches instances from Spot Instance pools with optimal capacity for the number of instances that are launching. To scale down your EC2 Fleet, decrease its target capacity. First, the EC2 Fleet cancels any open requests that exceed the new target capacity. You can request that the EC2 Fleet terminate Spot Instances until the size of the fleet no longer exceeds the new target capacity. If the allocation strategy is lowest-price, the EC2 Fleet terminates the instances with the highest price per unit. If the allocation strategy is capacity-optimized, the EC2 Fleet terminates the instances in the Spot Instance pools that have the least available Spot Instance capacity. If the allocation strategy is diversified, the EC2 Fleet terminates instances across the Spot Instance pools. Alternatively, you can request that the EC2 Fleet keep the fleet at its current size, but not replace any Spot Instances that are interrupted or that you terminate manually. If you are finished with your EC2 Fleet for now, but will use it again later, you can set the target capacity to 0.
+    */
+  def modifyFleet(): Request[ModifyFleetResult, AWSError] = js.native
+  def modifyFleet(callback: js.Function2[/* err */ AWSError, /* data */ ModifyFleetResult, Unit]): Request[ModifyFleetResult, AWSError] = js.native
+  /**
+    * Modifies the specified EC2 Fleet. You can only modify an EC2 Fleet request of type maintain. While the EC2 Fleet is being modified, it is in the modifying state. To scale up your EC2 Fleet, increase its target capacity. The EC2 Fleet launches the additional Spot Instances according to the allocation strategy for the EC2 Fleet request. If the allocation strategy is lowest-price, the EC2 Fleet launches instances using the Spot Instance pool with the lowest price. If the allocation strategy is diversified, the EC2 Fleet distributes the instances across the Spot Instance pools. If the allocation strategy is capacity-optimized, EC2 Fleet launches instances from Spot Instance pools with optimal capacity for the number of instances that are launching. To scale down your EC2 Fleet, decrease its target capacity. First, the EC2 Fleet cancels any open requests that exceed the new target capacity. You can request that the EC2 Fleet terminate Spot Instances until the size of the fleet no longer exceeds the new target capacity. If the allocation strategy is lowest-price, the EC2 Fleet terminates the instances with the highest price per unit. If the allocation strategy is capacity-optimized, the EC2 Fleet terminates the instances in the Spot Instance pools that have the least available Spot Instance capacity. If the allocation strategy is diversified, the EC2 Fleet terminates instances across the Spot Instance pools. Alternatively, you can request that the EC2 Fleet keep the fleet at its current size, but not replace any Spot Instances that are interrupted or that you terminate manually. If you are finished with your EC2 Fleet for now, but will use it again later, you can set the target capacity to 0.
+    */
+  def modifyFleet(params: ModifyFleetRequest): Request[ModifyFleetResult, AWSError] = js.native
+  def modifyFleet(
+    params: ModifyFleetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyFleetResult, Unit]
+  ): Request[ModifyFleetResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified attribute of the specified Amazon FPGA Image (AFI).
+    */
+  def modifyFpgaImageAttribute(): Request[ModifyFpgaImageAttributeResult, AWSError] = js.native
+  def modifyFpgaImageAttribute(callback: js.Function2[/* err */ AWSError, /* data */ ModifyFpgaImageAttributeResult, Unit]): Request[ModifyFpgaImageAttributeResult, AWSError] = js.native
+  /**
+    * Modifies the specified attribute of the specified Amazon FPGA Image (AFI).
+    */
+  def modifyFpgaImageAttribute(params: ModifyFpgaImageAttributeRequest): Request[ModifyFpgaImageAttributeResult, AWSError] = js.native
+  def modifyFpgaImageAttribute(
+    params: ModifyFpgaImageAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyFpgaImageAttributeResult, Unit]
+  ): Request[ModifyFpgaImageAttributeResult, AWSError] = js.native
+  
+  /**
+    * Modify the auto-placement setting of a Dedicated Host. When auto-placement is enabled, any instances that you launch with a tenancy of host but without a specific host ID are placed onto any available Dedicated Host in your account that has auto-placement enabled. When auto-placement is disabled, you need to provide a host ID to have the instance launch onto a specific host. If no host ID is provided, the instance is launched onto a suitable host with auto-placement enabled. You can also use this API action to modify a Dedicated Host to support either multiple instance types in an instance family, or to support a specific instance type only.
+    */
+  def modifyHosts(): Request[ModifyHostsResult, AWSError] = js.native
+  def modifyHosts(callback: js.Function2[/* err */ AWSError, /* data */ ModifyHostsResult, Unit]): Request[ModifyHostsResult, AWSError] = js.native
+  /**
+    * Modify the auto-placement setting of a Dedicated Host. When auto-placement is enabled, any instances that you launch with a tenancy of host but without a specific host ID are placed onto any available Dedicated Host in your account that has auto-placement enabled. When auto-placement is disabled, you need to provide a host ID to have the instance launch onto a specific host. If no host ID is provided, the instance is launched onto a suitable host with auto-placement enabled. You can also use this API action to modify a Dedicated Host to support either multiple instance types in an instance family, or to support a specific instance type only.
+    */
+  def modifyHosts(params: ModifyHostsRequest): Request[ModifyHostsResult, AWSError] = js.native
+  def modifyHosts(
+    params: ModifyHostsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyHostsResult, Unit]
+  ): Request[ModifyHostsResult, AWSError] = js.native
+  
+  /**
+    * Modifies the ID format for the specified resource on a per-Region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire Amazon Web Services account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide. Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+    */
+  def modifyIdFormat(): Request[js.Object, AWSError] = js.native
+  def modifyIdFormat(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Modifies the ID format for the specified resource on a per-Region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire Amazon Web Services account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide. Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+    */
+  def modifyIdFormat(params: ModifyIdFormatRequest): Request[js.Object, AWSError] = js.native
+  def modifyIdFormat(
+    params: ModifyIdFormatRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Modifies the ID format of a resource for a specified IAM user, IAM role, or the root user for an account; or all IAM users, IAM roles, and the root user for an account. You can specify that resources should receive longer IDs (17-character IDs) when they are created.  This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway.  For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide.  This setting applies to the principal specified in the request; it does not apply to the principal that makes the request.  Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+    */
+  def modifyIdentityIdFormat(): Request[js.Object, AWSError] = js.native
+  def modifyIdentityIdFormat(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Modifies the ID format of a resource for a specified IAM user, IAM role, or the root user for an account; or all IAM users, IAM roles, and the root user for an account. You can specify that resources should receive longer IDs (17-character IDs) when they are created.  This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway.  For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide.  This setting applies to the principal specified in the request; it does not apply to the principal that makes the request.  Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+    */
+  def modifyIdentityIdFormat(params: ModifyIdentityIdFormatRequest): Request[js.Object, AWSError] = js.native
+  def modifyIdentityIdFormat(
+    params: ModifyIdentityIdFormatRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Modifies the specified attribute of the specified AMI. You can specify only one attribute at a time. You can use the Attribute parameter to specify the attribute or one of the following parameters: Description or LaunchPermission. Images with an Amazon Web Services Marketplace product code cannot be made public. To enable the SriovNetSupport enhanced networking attribute of an image, enable SriovNetSupport on an instance and create an AMI from the instance.
+    */
+  def modifyImageAttribute(): Request[js.Object, AWSError] = js.native
+  def modifyImageAttribute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Modifies the specified attribute of the specified AMI. You can specify only one attribute at a time. You can use the Attribute parameter to specify the attribute or one of the following parameters: Description or LaunchPermission. Images with an Amazon Web Services Marketplace product code cannot be made public. To enable the SriovNetSupport enhanced networking attribute of an image, enable SriovNetSupport on an instance and create an AMI from the instance.
+    */
+  def modifyImageAttribute(params: ModifyImageAttributeRequest): Request[js.Object, AWSError] = js.native
+  def modifyImageAttribute(
+    params: ModifyImageAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Modifies the specified attribute of the specified instance. You can specify only one attribute at a time.  Note: Using this action to change the security groups associated with an elastic network interface (ENI) attached to an instance in a VPC can result in an error if the instance has more than one ENI. To change the security groups associated with an ENI attached to an instance that has multiple ENIs, we recommend that you use the ModifyNetworkInterfaceAttribute action. To modify some attributes, the instance must be stopped. For more information, see Modify a stopped instance in the Amazon EC2 User Guide.
+    */
+  def modifyInstanceAttribute(): Request[js.Object, AWSError] = js.native
+  def modifyInstanceAttribute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Modifies the specified attribute of the specified instance. You can specify only one attribute at a time.  Note: Using this action to change the security groups associated with an elastic network interface (ENI) attached to an instance in a VPC can result in an error if the instance has more than one ENI. To change the security groups associated with an ENI attached to an instance that has multiple ENIs, we recommend that you use the ModifyNetworkInterfaceAttribute action. To modify some attributes, the instance must be stopped. For more information, see Modify a stopped instance in the Amazon EC2 User Guide.
+    */
+  def modifyInstanceAttribute(params: ModifyInstanceAttributeRequest): Request[js.Object, AWSError] = js.native
+  def modifyInstanceAttribute(
+    params: ModifyInstanceAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
+    */
+  def modifyInstanceCapacityReservationAttributes(): Request[ModifyInstanceCapacityReservationAttributesResult, AWSError] = js.native
+  def modifyInstanceCapacityReservationAttributes(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ModifyInstanceCapacityReservationAttributesResult, 
+      Unit
+    ]
+  ): Request[ModifyInstanceCapacityReservationAttributesResult, AWSError] = js.native
+  /**
+    * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
+    */
+  def modifyInstanceCapacityReservationAttributes(params: ModifyInstanceCapacityReservationAttributesRequest): Request[ModifyInstanceCapacityReservationAttributesResult, AWSError] = js.native
+  def modifyInstanceCapacityReservationAttributes(
+    params: ModifyInstanceCapacityReservationAttributesRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ModifyInstanceCapacityReservationAttributesResult, 
+      Unit
+    ]
+  ): Request[ModifyInstanceCapacityReservationAttributesResult, AWSError] = js.native
+  
+  /**
+    * Modifies the credit option for CPU usage on a running or stopped burstable performance instance. The credit options are standard and unlimited. For more information, see Burstable performance instances in the Amazon EC2 User Guide.
+    */
+  def modifyInstanceCreditSpecification(): Request[ModifyInstanceCreditSpecificationResult, AWSError] = js.native
+  def modifyInstanceCreditSpecification(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyInstanceCreditSpecificationResult, Unit]
+  ): Request[ModifyInstanceCreditSpecificationResult, AWSError] = js.native
+  /**
+    * Modifies the credit option for CPU usage on a running or stopped burstable performance instance. The credit options are standard and unlimited. For more information, see Burstable performance instances in the Amazon EC2 User Guide.
+    */
+  def modifyInstanceCreditSpecification(params: ModifyInstanceCreditSpecificationRequest): Request[ModifyInstanceCreditSpecificationResult, AWSError] = js.native
+  def modifyInstanceCreditSpecification(
+    params: ModifyInstanceCreditSpecificationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyInstanceCreditSpecificationResult, Unit]
+  ): Request[ModifyInstanceCreditSpecificationResult, AWSError] = js.native
+  
+  /**
+    * Modifies the start time for a scheduled Amazon EC2 instance event.
+    */
+  def modifyInstanceEventStartTime(): Request[ModifyInstanceEventStartTimeResult, AWSError] = js.native
+  def modifyInstanceEventStartTime(callback: js.Function2[/* err */ AWSError, /* data */ ModifyInstanceEventStartTimeResult, Unit]): Request[ModifyInstanceEventStartTimeResult, AWSError] = js.native
+  /**
+    * Modifies the start time for a scheduled Amazon EC2 instance event.
+    */
+  def modifyInstanceEventStartTime(params: ModifyInstanceEventStartTimeRequest): Request[ModifyInstanceEventStartTimeResult, AWSError] = js.native
+  def modifyInstanceEventStartTime(
+    params: ModifyInstanceEventStartTimeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyInstanceEventStartTimeResult, Unit]
+  ): Request[ModifyInstanceEventStartTimeResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified event window. You can define either a set of time ranges or a cron expression when modifying the event window, but not both. To modify the targets associated with the event window, use the AssociateInstanceEventWindow and DisassociateInstanceEventWindow API. If Amazon Web Services has already scheduled an event, modifying an event window won't change the time of the scheduled event. For more information, see Define event windows for scheduled events in the Amazon EC2 User Guide.
+    */
+  def modifyInstanceEventWindow(): Request[ModifyInstanceEventWindowResult, AWSError] = js.native
+  def modifyInstanceEventWindow(callback: js.Function2[/* err */ AWSError, /* data */ ModifyInstanceEventWindowResult, Unit]): Request[ModifyInstanceEventWindowResult, AWSError] = js.native
+  /**
+    * Modifies the specified event window. You can define either a set of time ranges or a cron expression when modifying the event window, but not both. To modify the targets associated with the event window, use the AssociateInstanceEventWindow and DisassociateInstanceEventWindow API. If Amazon Web Services has already scheduled an event, modifying an event window won't change the time of the scheduled event. For more information, see Define event windows for scheduled events in the Amazon EC2 User Guide.
+    */
+  def modifyInstanceEventWindow(params: ModifyInstanceEventWindowRequest): Request[ModifyInstanceEventWindowResult, AWSError] = js.native
+  def modifyInstanceEventWindow(
+    params: ModifyInstanceEventWindowRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyInstanceEventWindowResult, Unit]
+  ): Request[ModifyInstanceEventWindowResult, AWSError] = js.native
+  
+  /**
+    * Modifies the recovery behavior of your instance to disable simplified automatic recovery or set the recovery behavior to default. The default configuration will not enable simplified automatic recovery for an unsupported instance type. For more information, see Simplified automatic recovery.
+    */
+  def modifyInstanceMaintenanceOptions(): Request[ModifyInstanceMaintenanceOptionsResult, AWSError] = js.native
+  def modifyInstanceMaintenanceOptions(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyInstanceMaintenanceOptionsResult, Unit]
+  ): Request[ModifyInstanceMaintenanceOptionsResult, AWSError] = js.native
+  /**
+    * Modifies the recovery behavior of your instance to disable simplified automatic recovery or set the recovery behavior to default. The default configuration will not enable simplified automatic recovery for an unsupported instance type. For more information, see Simplified automatic recovery.
+    */
+  def modifyInstanceMaintenanceOptions(params: ModifyInstanceMaintenanceOptionsRequest): Request[ModifyInstanceMaintenanceOptionsResult, AWSError] = js.native
+  def modifyInstanceMaintenanceOptions(
+    params: ModifyInstanceMaintenanceOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyInstanceMaintenanceOptionsResult, Unit]
+  ): Request[ModifyInstanceMaintenanceOptionsResult, AWSError] = js.native
+  
+  /**
+    * Modify the instance metadata parameters on a running or stopped instance. When you modify the parameters on a stopped instance, they are applied when the instance is started. When you modify the parameters on a running instance, the API responds with a state of “pending”. After the parameter modifications are successfully applied to the instance, the state of the modifications changes from “pending” to “applied” in subsequent describe-instances API calls. For more information, see Instance metadata and user data in the Amazon EC2 User Guide.
+    */
+  def modifyInstanceMetadataOptions(): Request[ModifyInstanceMetadataOptionsResult, AWSError] = js.native
+  def modifyInstanceMetadataOptions(callback: js.Function2[/* err */ AWSError, /* data */ ModifyInstanceMetadataOptionsResult, Unit]): Request[ModifyInstanceMetadataOptionsResult, AWSError] = js.native
+  /**
+    * Modify the instance metadata parameters on a running or stopped instance. When you modify the parameters on a stopped instance, they are applied when the instance is started. When you modify the parameters on a running instance, the API responds with a state of “pending”. After the parameter modifications are successfully applied to the instance, the state of the modifications changes from “pending” to “applied” in subsequent describe-instances API calls. For more information, see Instance metadata and user data in the Amazon EC2 User Guide.
+    */
+  def modifyInstanceMetadataOptions(params: ModifyInstanceMetadataOptionsRequest): Request[ModifyInstanceMetadataOptionsResult, AWSError] = js.native
+  def modifyInstanceMetadataOptions(
+    params: ModifyInstanceMetadataOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyInstanceMetadataOptionsResult, Unit]
+  ): Request[ModifyInstanceMetadataOptionsResult, AWSError] = js.native
+  
+  /**
+    * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, placement group, or partition for an instance, the instance must be in the stopped state.
+    */
+  def modifyInstancePlacement(): Request[ModifyInstancePlacementResult, AWSError] = js.native
+  def modifyInstancePlacement(callback: js.Function2[/* err */ AWSError, /* data */ ModifyInstancePlacementResult, Unit]): Request[ModifyInstancePlacementResult, AWSError] = js.native
+  /**
+    * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, placement group, or partition for an instance, the instance must be in the stopped state.
+    */
+  def modifyInstancePlacement(params: ModifyInstancePlacementRequest): Request[ModifyInstancePlacementResult, AWSError] = js.native
+  def modifyInstancePlacement(
+    params: ModifyInstancePlacementRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyInstancePlacementResult, Unit]
+  ): Request[ModifyInstancePlacementResult, AWSError] = js.native
+  
+  /**
+    * Modify the configurations of an IPAM. 
+    */
+  def modifyIpam(): Request[ModifyIpamResult, AWSError] = js.native
+  def modifyIpam(callback: js.Function2[/* err */ AWSError, /* data */ ModifyIpamResult, Unit]): Request[ModifyIpamResult, AWSError] = js.native
+  /**
+    * Modify the configurations of an IPAM. 
+    */
+  def modifyIpam(params: ModifyIpamRequest): Request[ModifyIpamResult, AWSError] = js.native
+  def modifyIpam(
+    params: ModifyIpamRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyIpamResult, Unit]
+  ): Request[ModifyIpamResult, AWSError] = js.native
+  
+  /**
+    * Modify the configurations of an IPAM pool. For more information, see Modify a pool in the Amazon VPC IPAM User Guide. 
+    */
+  def modifyIpamPool(): Request[ModifyIpamPoolResult, AWSError] = js.native
+  def modifyIpamPool(callback: js.Function2[/* err */ AWSError, /* data */ ModifyIpamPoolResult, Unit]): Request[ModifyIpamPoolResult, AWSError] = js.native
+  /**
+    * Modify the configurations of an IPAM pool. For more information, see Modify a pool in the Amazon VPC IPAM User Guide. 
+    */
+  def modifyIpamPool(params: ModifyIpamPoolRequest): Request[ModifyIpamPoolResult, AWSError] = js.native
+  def modifyIpamPool(
+    params: ModifyIpamPoolRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyIpamPoolResult, Unit]
+  ): Request[ModifyIpamPoolResult, AWSError] = js.native
+  
+  /**
+    * Modify a resource CIDR. You can use this action to transfer resource CIDRs between scopes and ignore resource CIDRs that you do not want to manage. If set to false, the resource will not be tracked for overlap, it cannot be auto-imported into a pool, and it will be removed from any pool it has an allocation in. For more information, see Move resource CIDRs between scopes and Change the monitoring state of resource CIDRs in the Amazon VPC IPAM User Guide.
+    */
+  def modifyIpamResourceCidr(): Request[ModifyIpamResourceCidrResult, AWSError] = js.native
+  def modifyIpamResourceCidr(callback: js.Function2[/* err */ AWSError, /* data */ ModifyIpamResourceCidrResult, Unit]): Request[ModifyIpamResourceCidrResult, AWSError] = js.native
+  /**
+    * Modify a resource CIDR. You can use this action to transfer resource CIDRs between scopes and ignore resource CIDRs that you do not want to manage. If set to false, the resource will not be tracked for overlap, it cannot be auto-imported into a pool, and it will be removed from any pool it has an allocation in. For more information, see Move resource CIDRs between scopes and Change the monitoring state of resource CIDRs in the Amazon VPC IPAM User Guide.
+    */
+  def modifyIpamResourceCidr(params: ModifyIpamResourceCidrRequest): Request[ModifyIpamResourceCidrResult, AWSError] = js.native
+  def modifyIpamResourceCidr(
+    params: ModifyIpamResourceCidrRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyIpamResourceCidrResult, Unit]
+  ): Request[ModifyIpamResourceCidrResult, AWSError] = js.native
+  
+  /**
+    * Modify an IPAM scope.
+    */
+  def modifyIpamScope(): Request[ModifyIpamScopeResult, AWSError] = js.native
+  def modifyIpamScope(callback: js.Function2[/* err */ AWSError, /* data */ ModifyIpamScopeResult, Unit]): Request[ModifyIpamScopeResult, AWSError] = js.native
+  /**
+    * Modify an IPAM scope.
+    */
+  def modifyIpamScope(params: ModifyIpamScopeRequest): Request[ModifyIpamScopeResult, AWSError] = js.native
+  def modifyIpamScope(
+    params: ModifyIpamScopeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyIpamScopeResult, Unit]
+  ): Request[ModifyIpamScopeResult, AWSError] = js.native
+  
+  /**
+    * Modifies a launch template. You can specify which version of the launch template to set as the default version. When launching an instance, the default version applies when a launch template version is not specified.
+    */
+  def modifyLaunchTemplate(): Request[ModifyLaunchTemplateResult, AWSError] = js.native
+  def modifyLaunchTemplate(callback: js.Function2[/* err */ AWSError, /* data */ ModifyLaunchTemplateResult, Unit]): Request[ModifyLaunchTemplateResult, AWSError] = js.native
+  /**
+    * Modifies a launch template. You can specify which version of the launch template to set as the default version. When launching an instance, the default version applies when a launch template version is not specified.
+    */
+  def modifyLaunchTemplate(params: ModifyLaunchTemplateRequest): Request[ModifyLaunchTemplateResult, AWSError] = js.native
+  def modifyLaunchTemplate(
+    params: ModifyLaunchTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyLaunchTemplateResult, Unit]
+  ): Request[ModifyLaunchTemplateResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified local gateway route.
+    */
+  def modifyLocalGatewayRoute(): Request[ModifyLocalGatewayRouteResult, AWSError] = js.native
+  def modifyLocalGatewayRoute(callback: js.Function2[/* err */ AWSError, /* data */ ModifyLocalGatewayRouteResult, Unit]): Request[ModifyLocalGatewayRouteResult, AWSError] = js.native
+  /**
+    * Modifies the specified local gateway route.
+    */
+  def modifyLocalGatewayRoute(params: ModifyLocalGatewayRouteRequest): Request[ModifyLocalGatewayRouteResult, AWSError] = js.native
+  def modifyLocalGatewayRoute(
+    params: ModifyLocalGatewayRouteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyLocalGatewayRouteResult, Unit]
+  ): Request[ModifyLocalGatewayRouteResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified managed prefix list. Adding or removing entries in a prefix list creates a new version of the prefix list. Changing the name of the prefix list does not affect the version. If you specify a current version number that does not match the true current version number, the request fails.
+    */
+  def modifyManagedPrefixList(): Request[ModifyManagedPrefixListResult, AWSError] = js.native
+  def modifyManagedPrefixList(callback: js.Function2[/* err */ AWSError, /* data */ ModifyManagedPrefixListResult, Unit]): Request[ModifyManagedPrefixListResult, AWSError] = js.native
+  /**
+    * Modifies the specified managed prefix list. Adding or removing entries in a prefix list creates a new version of the prefix list. Changing the name of the prefix list does not affect the version. If you specify a current version number that does not match the true current version number, the request fails.
+    */
+  def modifyManagedPrefixList(params: ModifyManagedPrefixListRequest): Request[ModifyManagedPrefixListResult, AWSError] = js.native
+  def modifyManagedPrefixList(
+    params: ModifyManagedPrefixListRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyManagedPrefixListResult, Unit]
+  ): Request[ModifyManagedPrefixListResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified network interface attribute. You can specify only one attribute at a time. You can use this action to attach and detach security groups from an existing EC2 instance.
+    */
+  def modifyNetworkInterfaceAttribute(): Request[js.Object, AWSError] = js.native
+  def modifyNetworkInterfaceAttribute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Modifies the specified network interface attribute. You can specify only one attribute at a time. You can use this action to attach and detach security groups from an existing EC2 instance.
+    */
+  def modifyNetworkInterfaceAttribute(params: ModifyNetworkInterfaceAttributeRequest): Request[js.Object, AWSError] = js.native
+  def modifyNetworkInterfaceAttribute(
+    params: ModifyNetworkInterfaceAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Modifies the options for instance hostnames for the specified instance.
+    */
+  def modifyPrivateDnsNameOptions(): Request[ModifyPrivateDnsNameOptionsResult, AWSError] = js.native
+  def modifyPrivateDnsNameOptions(callback: js.Function2[/* err */ AWSError, /* data */ ModifyPrivateDnsNameOptionsResult, Unit]): Request[ModifyPrivateDnsNameOptionsResult, AWSError] = js.native
+  /**
+    * Modifies the options for instance hostnames for the specified instance.
+    */
+  def modifyPrivateDnsNameOptions(params: ModifyPrivateDnsNameOptionsRequest): Request[ModifyPrivateDnsNameOptionsResult, AWSError] = js.native
+  def modifyPrivateDnsNameOptions(
+    params: ModifyPrivateDnsNameOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyPrivateDnsNameOptionsResult, Unit]
+  ): Request[ModifyPrivateDnsNameOptionsResult, AWSError] = js.native
+  
+  /**
+    * Modifies the configuration of your Reserved Instances, such as the Availability Zone, instance count, or instance type. The Reserved Instances to be modified must be identical, except for Availability Zone, network platform, and instance type. For more information, see Modifying Reserved Instances in the Amazon EC2 User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def modifyReservedInstances(): Request[ModifyReservedInstancesResult, AWSError] = js.native
+  def modifyReservedInstances(callback: js.Function2[/* err */ AWSError, /* data */ ModifyReservedInstancesResult, Unit]): Request[ModifyReservedInstancesResult, AWSError] = js.native
+  /**
+    * Modifies the configuration of your Reserved Instances, such as the Availability Zone, instance count, or instance type. The Reserved Instances to be modified must be identical, except for Availability Zone, network platform, and instance type. For more information, see Modifying Reserved Instances in the Amazon EC2 User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def modifyReservedInstances(params: ModifyReservedInstancesRequest): Request[ModifyReservedInstancesResult, AWSError] = js.native
+  def modifyReservedInstances(
+    params: ModifyReservedInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyReservedInstancesResult, Unit]
+  ): Request[ModifyReservedInstancesResult, AWSError] = js.native
+  
+  /**
+    * Modifies the rules of a security group.
+    */
+  def modifySecurityGroupRules(): Request[ModifySecurityGroupRulesResult, AWSError] = js.native
+  def modifySecurityGroupRules(callback: js.Function2[/* err */ AWSError, /* data */ ModifySecurityGroupRulesResult, Unit]): Request[ModifySecurityGroupRulesResult, AWSError] = js.native
+  /**
+    * Modifies the rules of a security group.
+    */
+  def modifySecurityGroupRules(params: ModifySecurityGroupRulesRequest): Request[ModifySecurityGroupRulesResult, AWSError] = js.native
+  def modifySecurityGroupRules(
+    params: ModifySecurityGroupRulesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifySecurityGroupRulesResult, Unit]
+  ): Request[ModifySecurityGroupRulesResult, AWSError] = js.native
+  
+  /**
+    * Adds or removes permission settings for the specified snapshot. You may add or remove specified Amazon Web Services account IDs from a snapshot's list of create volume permissions, but you cannot do both in a single operation. If you need to both add and remove account IDs for a snapshot, you must use multiple operations. You can make up to 500 modifications to a snapshot in a single operation. Encrypted snapshots and snapshots with Amazon Web Services Marketplace product codes cannot be made public. Snapshots encrypted with your default KMS key cannot be shared with other accounts. For more information about modifying snapshot permissions, see Share a snapshot in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def modifySnapshotAttribute(): Request[js.Object, AWSError] = js.native
+  def modifySnapshotAttribute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Adds or removes permission settings for the specified snapshot. You may add or remove specified Amazon Web Services account IDs from a snapshot's list of create volume permissions, but you cannot do both in a single operation. If you need to both add and remove account IDs for a snapshot, you must use multiple operations. You can make up to 500 modifications to a snapshot in a single operation. Encrypted snapshots and snapshots with Amazon Web Services Marketplace product codes cannot be made public. Snapshots encrypted with your default KMS key cannot be shared with other accounts. For more information about modifying snapshot permissions, see Share a snapshot in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def modifySnapshotAttribute(params: ModifySnapshotAttributeRequest): Request[js.Object, AWSError] = js.native
+  def modifySnapshotAttribute(
+    params: ModifySnapshotAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Archives an Amazon EBS snapshot. When you archive a snapshot, it is converted to a full snapshot that includes all of the blocks of data that were written to the volume at the time the snapshot was created, and moved from the standard tier to the archive tier. For more information, see Archive Amazon EBS snapshots in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def modifySnapshotTier(): Request[ModifySnapshotTierResult, AWSError] = js.native
+  def modifySnapshotTier(callback: js.Function2[/* err */ AWSError, /* data */ ModifySnapshotTierResult, Unit]): Request[ModifySnapshotTierResult, AWSError] = js.native
+  /**
+    * Archives an Amazon EBS snapshot. When you archive a snapshot, it is converted to a full snapshot that includes all of the blocks of data that were written to the volume at the time the snapshot was created, and moved from the standard tier to the archive tier. For more information, see Archive Amazon EBS snapshots in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def modifySnapshotTier(params: ModifySnapshotTierRequest): Request[ModifySnapshotTierResult, AWSError] = js.native
+  def modifySnapshotTier(
+    params: ModifySnapshotTierRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifySnapshotTierResult, Unit]
+  ): Request[ModifySnapshotTierResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified Spot Fleet request. You can only modify a Spot Fleet request of type maintain. While the Spot Fleet request is being modified, it is in the modifying state. To scale up your Spot Fleet, increase its target capacity. The Spot Fleet launches the additional Spot Instances according to the allocation strategy for the Spot Fleet request. If the allocation strategy is lowestPrice, the Spot Fleet launches instances using the Spot Instance pool with the lowest price. If the allocation strategy is diversified, the Spot Fleet distributes the instances across the Spot Instance pools. If the allocation strategy is capacityOptimized, Spot Fleet launches instances from Spot Instance pools with optimal capacity for the number of instances that are launching. To scale down your Spot Fleet, decrease its target capacity. First, the Spot Fleet cancels any open requests that exceed the new target capacity. You can request that the Spot Fleet terminate Spot Instances until the size of the fleet no longer exceeds the new target capacity. If the allocation strategy is lowestPrice, the Spot Fleet terminates the instances with the highest price per unit. If the allocation strategy is capacityOptimized, the Spot Fleet terminates the instances in the Spot Instance pools that have the least available Spot Instance capacity. If the allocation strategy is diversified, the Spot Fleet terminates instances across the Spot Instance pools. Alternatively, you can request that the Spot Fleet keep the fleet at its current size, but not replace any Spot Instances that are interrupted or that you terminate manually. If you are finished with your Spot Fleet for now, but will use it again later, you can set the target capacity to 0.
+    */
+  def modifySpotFleetRequest(): Request[ModifySpotFleetRequestResponse, AWSError] = js.native
+  def modifySpotFleetRequest(callback: js.Function2[/* err */ AWSError, /* data */ ModifySpotFleetRequestResponse, Unit]): Request[ModifySpotFleetRequestResponse, AWSError] = js.native
+  /**
+    * Modifies the specified Spot Fleet request. You can only modify a Spot Fleet request of type maintain. While the Spot Fleet request is being modified, it is in the modifying state. To scale up your Spot Fleet, increase its target capacity. The Spot Fleet launches the additional Spot Instances according to the allocation strategy for the Spot Fleet request. If the allocation strategy is lowestPrice, the Spot Fleet launches instances using the Spot Instance pool with the lowest price. If the allocation strategy is diversified, the Spot Fleet distributes the instances across the Spot Instance pools. If the allocation strategy is capacityOptimized, Spot Fleet launches instances from Spot Instance pools with optimal capacity for the number of instances that are launching. To scale down your Spot Fleet, decrease its target capacity. First, the Spot Fleet cancels any open requests that exceed the new target capacity. You can request that the Spot Fleet terminate Spot Instances until the size of the fleet no longer exceeds the new target capacity. If the allocation strategy is lowestPrice, the Spot Fleet terminates the instances with the highest price per unit. If the allocation strategy is capacityOptimized, the Spot Fleet terminates the instances in the Spot Instance pools that have the least available Spot Instance capacity. If the allocation strategy is diversified, the Spot Fleet terminates instances across the Spot Instance pools. Alternatively, you can request that the Spot Fleet keep the fleet at its current size, but not replace any Spot Instances that are interrupted or that you terminate manually. If you are finished with your Spot Fleet for now, but will use it again later, you can set the target capacity to 0.
+    */
+  def modifySpotFleetRequest(params: ModifySpotFleetRequestRequest): Request[ModifySpotFleetRequestResponse, AWSError] = js.native
+  def modifySpotFleetRequest(
+    params: ModifySpotFleetRequestRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifySpotFleetRequestResponse, Unit]
+  ): Request[ModifySpotFleetRequestResponse, AWSError] = js.native
+  
+  /**
+    * Modifies a subnet attribute. You can only modify one attribute at a time. Use this action to modify subnets on Amazon Web Services Outposts.   To modify a subnet on an Outpost rack, set both MapCustomerOwnedIpOnLaunch and CustomerOwnedIpv4Pool. These two parameters act as a single attribute.   To modify a subnet on an Outpost server, set either EnableLniAtDeviceIndex or DisableLniAtDeviceIndex.   For more information about Amazon Web Services Outposts, see the following:    Outpost servers     Outpost racks   
+    */
+  def modifySubnetAttribute(): Request[js.Object, AWSError] = js.native
+  def modifySubnetAttribute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Modifies a subnet attribute. You can only modify one attribute at a time. Use this action to modify subnets on Amazon Web Services Outposts.   To modify a subnet on an Outpost rack, set both MapCustomerOwnedIpOnLaunch and CustomerOwnedIpv4Pool. These two parameters act as a single attribute.   To modify a subnet on an Outpost server, set either EnableLniAtDeviceIndex or DisableLniAtDeviceIndex.   For more information about Amazon Web Services Outposts, see the following:    Outpost servers     Outpost racks   
+    */
+  def modifySubnetAttribute(params: ModifySubnetAttributeRequest): Request[js.Object, AWSError] = js.native
+  def modifySubnetAttribute(
+    params: ModifySubnetAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Allows or restricts mirroring network services.  By default, Amazon DNS network services are not eligible for Traffic Mirror. Use AddNetworkServices to add network services to a Traffic Mirror filter. When a network service is added to the Traffic Mirror filter, all traffic related to that network service will be mirrored. When you no longer want to mirror network services, use RemoveNetworkServices to remove the network services from the Traffic Mirror filter. 
+    */
+  def modifyTrafficMirrorFilterNetworkServices(): Request[ModifyTrafficMirrorFilterNetworkServicesResult, AWSError] = js.native
+  def modifyTrafficMirrorFilterNetworkServices(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyTrafficMirrorFilterNetworkServicesResult, Unit]
+  ): Request[ModifyTrafficMirrorFilterNetworkServicesResult, AWSError] = js.native
+  /**
+    * Allows or restricts mirroring network services.  By default, Amazon DNS network services are not eligible for Traffic Mirror. Use AddNetworkServices to add network services to a Traffic Mirror filter. When a network service is added to the Traffic Mirror filter, all traffic related to that network service will be mirrored. When you no longer want to mirror network services, use RemoveNetworkServices to remove the network services from the Traffic Mirror filter. 
+    */
+  def modifyTrafficMirrorFilterNetworkServices(params: ModifyTrafficMirrorFilterNetworkServicesRequest): Request[ModifyTrafficMirrorFilterNetworkServicesResult, AWSError] = js.native
+  def modifyTrafficMirrorFilterNetworkServices(
+    params: ModifyTrafficMirrorFilterNetworkServicesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyTrafficMirrorFilterNetworkServicesResult, Unit]
+  ): Request[ModifyTrafficMirrorFilterNetworkServicesResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified Traffic Mirror rule.  DestinationCidrBlock and SourceCidrBlock must both be an IPv4 range or an IPv6 range.
+    */
+  def modifyTrafficMirrorFilterRule(): Request[ModifyTrafficMirrorFilterRuleResult, AWSError] = js.native
+  def modifyTrafficMirrorFilterRule(callback: js.Function2[/* err */ AWSError, /* data */ ModifyTrafficMirrorFilterRuleResult, Unit]): Request[ModifyTrafficMirrorFilterRuleResult, AWSError] = js.native
+  /**
+    * Modifies the specified Traffic Mirror rule.  DestinationCidrBlock and SourceCidrBlock must both be an IPv4 range or an IPv6 range.
+    */
+  def modifyTrafficMirrorFilterRule(params: ModifyTrafficMirrorFilterRuleRequest): Request[ModifyTrafficMirrorFilterRuleResult, AWSError] = js.native
+  def modifyTrafficMirrorFilterRule(
+    params: ModifyTrafficMirrorFilterRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyTrafficMirrorFilterRuleResult, Unit]
+  ): Request[ModifyTrafficMirrorFilterRuleResult, AWSError] = js.native
+  
+  /**
+    * Modifies a Traffic Mirror session.
+    */
+  def modifyTrafficMirrorSession(): Request[ModifyTrafficMirrorSessionResult, AWSError] = js.native
+  def modifyTrafficMirrorSession(callback: js.Function2[/* err */ AWSError, /* data */ ModifyTrafficMirrorSessionResult, Unit]): Request[ModifyTrafficMirrorSessionResult, AWSError] = js.native
+  /**
+    * Modifies a Traffic Mirror session.
+    */
+  def modifyTrafficMirrorSession(params: ModifyTrafficMirrorSessionRequest): Request[ModifyTrafficMirrorSessionResult, AWSError] = js.native
+  def modifyTrafficMirrorSession(
+    params: ModifyTrafficMirrorSessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyTrafficMirrorSessionResult, Unit]
+  ): Request[ModifyTrafficMirrorSessionResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified transit gateway. When you modify a transit gateway, the modified options are applied to new transit gateway attachments only. Your existing transit gateway attachments are not modified.
+    */
+  def modifyTransitGateway(): Request[ModifyTransitGatewayResult, AWSError] = js.native
+  def modifyTransitGateway(callback: js.Function2[/* err */ AWSError, /* data */ ModifyTransitGatewayResult, Unit]): Request[ModifyTransitGatewayResult, AWSError] = js.native
+  /**
+    * Modifies the specified transit gateway. When you modify a transit gateway, the modified options are applied to new transit gateway attachments only. Your existing transit gateway attachments are not modified.
+    */
+  def modifyTransitGateway(params: ModifyTransitGatewayRequest): Request[ModifyTransitGatewayResult, AWSError] = js.native
+  def modifyTransitGateway(
+    params: ModifyTransitGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyTransitGatewayResult, Unit]
+  ): Request[ModifyTransitGatewayResult, AWSError] = js.native
+  
+  /**
+    * Modifies a reference (route) to a prefix list in a specified transit gateway route table.
+    */
+  def modifyTransitGatewayPrefixListReference(): Request[ModifyTransitGatewayPrefixListReferenceResult, AWSError] = js.native
+  def modifyTransitGatewayPrefixListReference(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyTransitGatewayPrefixListReferenceResult, Unit]
+  ): Request[ModifyTransitGatewayPrefixListReferenceResult, AWSError] = js.native
+  /**
+    * Modifies a reference (route) to a prefix list in a specified transit gateway route table.
+    */
+  def modifyTransitGatewayPrefixListReference(params: ModifyTransitGatewayPrefixListReferenceRequest): Request[ModifyTransitGatewayPrefixListReferenceResult, AWSError] = js.native
+  def modifyTransitGatewayPrefixListReference(
+    params: ModifyTransitGatewayPrefixListReferenceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyTransitGatewayPrefixListReferenceResult, Unit]
+  ): Request[ModifyTransitGatewayPrefixListReferenceResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified VPC attachment.
+    */
+  def modifyTransitGatewayVpcAttachment(): Request[ModifyTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  def modifyTransitGatewayVpcAttachment(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyTransitGatewayVpcAttachmentResult, Unit]
+  ): Request[ModifyTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  /**
+    * Modifies the specified VPC attachment.
+    */
+  def modifyTransitGatewayVpcAttachment(params: ModifyTransitGatewayVpcAttachmentRequest): Request[ModifyTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  def modifyTransitGatewayVpcAttachment(
+    params: ModifyTransitGatewayVpcAttachmentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyTransitGatewayVpcAttachmentResult, Unit]
+  ): Request[ModifyTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  
+  /**
+    * You can modify several parameters of an existing EBS volume, including volume size, volume type, and IOPS capacity. If your EBS volume is attached to a current-generation EC2 instance type, you might be able to apply these changes without stopping the instance or detaching the volume from it. For more information about modifying EBS volumes, see Amazon EBS Elastic Volumes (Linux instances) or Amazon EBS Elastic Volumes (Windows instances). When you complete a resize operation on your volume, you need to extend the volume's file-system size to take advantage of the new storage capacity. For more information, see Extend a Linux file system or Extend a Windows file system.  You can use CloudWatch Events to check the status of a modification to an EBS volume. For information about CloudWatch Events, see the Amazon CloudWatch Events User Guide. You can also track the status of a modification using DescribeVolumesModifications. For information about tracking status changes using either method, see Monitor the progress of volume modifications. With previous-generation instance types, resizing an EBS volume might require detaching and reattaching the volume or stopping and restarting the instance. After modifying a volume, you must wait at least six hours and ensure that the volume is in the in-use or available state before you can modify the same volume. This is sometimes referred to as a cooldown period.
+    */
+  def modifyVolume(): Request[ModifyVolumeResult, AWSError] = js.native
+  def modifyVolume(callback: js.Function2[/* err */ AWSError, /* data */ ModifyVolumeResult, Unit]): Request[ModifyVolumeResult, AWSError] = js.native
+  /**
+    * You can modify several parameters of an existing EBS volume, including volume size, volume type, and IOPS capacity. If your EBS volume is attached to a current-generation EC2 instance type, you might be able to apply these changes without stopping the instance or detaching the volume from it. For more information about modifying EBS volumes, see Amazon EBS Elastic Volumes (Linux instances) or Amazon EBS Elastic Volumes (Windows instances). When you complete a resize operation on your volume, you need to extend the volume's file-system size to take advantage of the new storage capacity. For more information, see Extend a Linux file system or Extend a Windows file system.  You can use CloudWatch Events to check the status of a modification to an EBS volume. For information about CloudWatch Events, see the Amazon CloudWatch Events User Guide. You can also track the status of a modification using DescribeVolumesModifications. For information about tracking status changes using either method, see Monitor the progress of volume modifications. With previous-generation instance types, resizing an EBS volume might require detaching and reattaching the volume or stopping and restarting the instance. After modifying a volume, you must wait at least six hours and ensure that the volume is in the in-use or available state before you can modify the same volume. This is sometimes referred to as a cooldown period.
+    */
+  def modifyVolume(params: ModifyVolumeRequest): Request[ModifyVolumeResult, AWSError] = js.native
+  def modifyVolume(
+    params: ModifyVolumeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVolumeResult, Unit]
+  ): Request[ModifyVolumeResult, AWSError] = js.native
+  
+  /**
+    * Modifies a volume attribute. By default, all I/O operations for the volume are suspended when the data on the volume is determined to be potentially inconsistent, to prevent undetectable, latent data corruption. The I/O access to the volume can be resumed by first enabling I/O access and then checking the data consistency on your volume. You can change the default behavior to resume I/O operations. We recommend that you change this only for boot volumes or for volumes that are stateless or disposable.
+    */
+  def modifyVolumeAttribute(): Request[js.Object, AWSError] = js.native
+  def modifyVolumeAttribute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Modifies a volume attribute. By default, all I/O operations for the volume are suspended when the data on the volume is determined to be potentially inconsistent, to prevent undetectable, latent data corruption. The I/O access to the volume can be resumed by first enabling I/O access and then checking the data consistency on your volume. You can change the default behavior to resume I/O operations. We recommend that you change this only for boot volumes or for volumes that are stateless or disposable.
+    */
+  def modifyVolumeAttribute(params: ModifyVolumeAttributeRequest): Request[js.Object, AWSError] = js.native
+  def modifyVolumeAttribute(
+    params: ModifyVolumeAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Modifies the specified attribute of the specified VPC.
+    */
+  def modifyVpcAttribute(): Request[js.Object, AWSError] = js.native
+  def modifyVpcAttribute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Modifies the specified attribute of the specified VPC.
+    */
+  def modifyVpcAttribute(params: ModifyVpcAttributeRequest): Request[js.Object, AWSError] = js.native
+  def modifyVpcAttribute(
+    params: ModifyVpcAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Modifies attributes of a specified VPC endpoint. The attributes that you can modify depend on the type of VPC endpoint (interface, gateway, or Gateway Load Balancer). For more information, see the Amazon Web Services PrivateLink Guide.
+    */
+  def modifyVpcEndpoint(): Request[ModifyVpcEndpointResult, AWSError] = js.native
+  def modifyVpcEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcEndpointResult, Unit]): Request[ModifyVpcEndpointResult, AWSError] = js.native
+  /**
+    * Modifies attributes of a specified VPC endpoint. The attributes that you can modify depend on the type of VPC endpoint (interface, gateway, or Gateway Load Balancer). For more information, see the Amazon Web Services PrivateLink Guide.
+    */
+  def modifyVpcEndpoint(params: ModifyVpcEndpointRequest): Request[ModifyVpcEndpointResult, AWSError] = js.native
+  def modifyVpcEndpoint(
+    params: ModifyVpcEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcEndpointResult, Unit]
+  ): Request[ModifyVpcEndpointResult, AWSError] = js.native
+  
+  /**
+    * Modifies a connection notification for VPC endpoint or VPC endpoint service. You can change the SNS topic for the notification, or the events for which to be notified. 
+    */
+  def modifyVpcEndpointConnectionNotification(): Request[ModifyVpcEndpointConnectionNotificationResult, AWSError] = js.native
+  def modifyVpcEndpointConnectionNotification(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcEndpointConnectionNotificationResult, Unit]
+  ): Request[ModifyVpcEndpointConnectionNotificationResult, AWSError] = js.native
+  /**
+    * Modifies a connection notification for VPC endpoint or VPC endpoint service. You can change the SNS topic for the notification, or the events for which to be notified. 
+    */
+  def modifyVpcEndpointConnectionNotification(params: ModifyVpcEndpointConnectionNotificationRequest): Request[ModifyVpcEndpointConnectionNotificationResult, AWSError] = js.native
+  def modifyVpcEndpointConnectionNotification(
+    params: ModifyVpcEndpointConnectionNotificationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcEndpointConnectionNotificationResult, Unit]
+  ): Request[ModifyVpcEndpointConnectionNotificationResult, AWSError] = js.native
+  
+  /**
+    * Modifies the attributes of your VPC endpoint service configuration. You can change the Network Load Balancers or Gateway Load Balancers for your service, and you can specify whether acceptance is required for requests to connect to your endpoint service through an interface VPC endpoint. If you set or modify the private DNS name, you must prove that you own the private DNS domain name.
+    */
+  def modifyVpcEndpointServiceConfiguration(): Request[ModifyVpcEndpointServiceConfigurationResult, AWSError] = js.native
+  def modifyVpcEndpointServiceConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcEndpointServiceConfigurationResult, Unit]
+  ): Request[ModifyVpcEndpointServiceConfigurationResult, AWSError] = js.native
+  /**
+    * Modifies the attributes of your VPC endpoint service configuration. You can change the Network Load Balancers or Gateway Load Balancers for your service, and you can specify whether acceptance is required for requests to connect to your endpoint service through an interface VPC endpoint. If you set or modify the private DNS name, you must prove that you own the private DNS domain name.
+    */
+  def modifyVpcEndpointServiceConfiguration(params: ModifyVpcEndpointServiceConfigurationRequest): Request[ModifyVpcEndpointServiceConfigurationResult, AWSError] = js.native
+  def modifyVpcEndpointServiceConfiguration(
+    params: ModifyVpcEndpointServiceConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcEndpointServiceConfigurationResult, Unit]
+  ): Request[ModifyVpcEndpointServiceConfigurationResult, AWSError] = js.native
+  
+  /**
+    * Modifies the payer responsibility for your VPC endpoint service.
+    */
+  def modifyVpcEndpointServicePayerResponsibility(): Request[ModifyVpcEndpointServicePayerResponsibilityResult, AWSError] = js.native
+  def modifyVpcEndpointServicePayerResponsibility(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ModifyVpcEndpointServicePayerResponsibilityResult, 
+      Unit
+    ]
+  ): Request[ModifyVpcEndpointServicePayerResponsibilityResult, AWSError] = js.native
+  /**
+    * Modifies the payer responsibility for your VPC endpoint service.
+    */
+  def modifyVpcEndpointServicePayerResponsibility(params: ModifyVpcEndpointServicePayerResponsibilityRequest): Request[ModifyVpcEndpointServicePayerResponsibilityResult, AWSError] = js.native
+  def modifyVpcEndpointServicePayerResponsibility(
+    params: ModifyVpcEndpointServicePayerResponsibilityRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ModifyVpcEndpointServicePayerResponsibilityResult, 
+      Unit
+    ]
+  ): Request[ModifyVpcEndpointServicePayerResponsibilityResult, AWSError] = js.native
+  
+  /**
+    * Modifies the permissions for your VPC endpoint service. You can add or remove permissions for service consumers (IAM users, IAM roles, and Amazon Web Services accounts) to connect to your endpoint service. If you grant permissions to all principals, the service is public. Any users who know the name of a public service can send a request to attach an endpoint. If the service does not require manual approval, attachments are automatically approved.
+    */
+  def modifyVpcEndpointServicePermissions(): Request[ModifyVpcEndpointServicePermissionsResult, AWSError] = js.native
+  def modifyVpcEndpointServicePermissions(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcEndpointServicePermissionsResult, Unit]
+  ): Request[ModifyVpcEndpointServicePermissionsResult, AWSError] = js.native
+  /**
+    * Modifies the permissions for your VPC endpoint service. You can add or remove permissions for service consumers (IAM users, IAM roles, and Amazon Web Services accounts) to connect to your endpoint service. If you grant permissions to all principals, the service is public. Any users who know the name of a public service can send a request to attach an endpoint. If the service does not require manual approval, attachments are automatically approved.
+    */
+  def modifyVpcEndpointServicePermissions(params: ModifyVpcEndpointServicePermissionsRequest): Request[ModifyVpcEndpointServicePermissionsResult, AWSError] = js.native
+  def modifyVpcEndpointServicePermissions(
+    params: ModifyVpcEndpointServicePermissionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcEndpointServicePermissionsResult, Unit]
+  ): Request[ModifyVpcEndpointServicePermissionsResult, AWSError] = js.native
+  
+  /**
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same Amazon Web Services account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different different Amazon Web Services accounts or different Regions. For peered VPCs in different Amazon Web Services accounts, each Amazon Web Services account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the Region for the requester VPC to modify the requester VPC peering options and the Region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
+    */
+  def modifyVpcPeeringConnectionOptions(): Request[ModifyVpcPeeringConnectionOptionsResult, AWSError] = js.native
+  def modifyVpcPeeringConnectionOptions(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcPeeringConnectionOptionsResult, Unit]
+  ): Request[ModifyVpcPeeringConnectionOptionsResult, AWSError] = js.native
+  /**
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same Amazon Web Services account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different different Amazon Web Services accounts or different Regions. For peered VPCs in different Amazon Web Services accounts, each Amazon Web Services account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the Region for the requester VPC to modify the requester VPC peering options and the Region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
+    */
+  def modifyVpcPeeringConnectionOptions(params: ModifyVpcPeeringConnectionOptionsRequest): Request[ModifyVpcPeeringConnectionOptionsResult, AWSError] = js.native
+  def modifyVpcPeeringConnectionOptions(
+    params: ModifyVpcPeeringConnectionOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcPeeringConnectionOptionsResult, Unit]
+  ): Request[ModifyVpcPeeringConnectionOptionsResult, AWSError] = js.native
+  
+  /**
+    * Modifies the instance tenancy attribute of the specified VPC. You can change the instance tenancy attribute of a VPC to default only. You cannot change the instance tenancy attribute to dedicated. After you modify the tenancy of the VPC, any new instances that you launch into the VPC have a tenancy of default, unless you specify otherwise during launch. The tenancy of any existing instances in the VPC is not affected. For more information, see Dedicated Instances in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def modifyVpcTenancy(): Request[ModifyVpcTenancyResult, AWSError] = js.native
+  def modifyVpcTenancy(callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcTenancyResult, Unit]): Request[ModifyVpcTenancyResult, AWSError] = js.native
+  /**
+    * Modifies the instance tenancy attribute of the specified VPC. You can change the instance tenancy attribute of a VPC to default only. You cannot change the instance tenancy attribute to dedicated. After you modify the tenancy of the VPC, any new instances that you launch into the VPC have a tenancy of default, unless you specify otherwise during launch. The tenancy of any existing instances in the VPC is not affected. For more information, see Dedicated Instances in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def modifyVpcTenancy(params: ModifyVpcTenancyRequest): Request[ModifyVpcTenancyResult, AWSError] = js.native
+  def modifyVpcTenancy(
+    params: ModifyVpcTenancyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcTenancyResult, Unit]
+  ): Request[ModifyVpcTenancyResult, AWSError] = js.native
+  
+  /**
+    * Modifies the customer gateway or the target gateway of an Amazon Web Services Site-to-Site VPN connection. To modify the target gateway, the following migration options are available:   An existing virtual private gateway to a new virtual private gateway   An existing virtual private gateway to a transit gateway   An existing transit gateway to a new transit gateway   An existing transit gateway to a virtual private gateway   Before you perform the migration to the new gateway, you must configure the new gateway. Use CreateVpnGateway to create a virtual private gateway, or CreateTransitGateway to create a transit gateway. This step is required when you migrate from a virtual private gateway with static routes to a transit gateway.  You must delete the static routes before you migrate to the new gateway. Keep a copy of the static route before you delete it. You will need to add back these routes to the transit gateway after the VPN connection migration is complete. After you migrate to the new gateway, you might need to modify your VPC route table. Use CreateRoute and DeleteRoute to make the changes described in Update VPC route tables in the Amazon Web Services Site-to-Site VPN User Guide. When the new gateway is a transit gateway, modify the transit gateway route table to allow traffic between the VPC and the Amazon Web Services Site-to-Site VPN connection. Use CreateTransitGatewayRoute to add the routes.  If you deleted VPN static routes, you must add the static routes to the transit gateway route table. After you perform this operation, the VPN endpoint's IP addresses on the Amazon Web Services side and the tunnel options remain intact. Your Amazon Web Services Site-to-Site VPN connection will be temporarily unavailable for a brief period while we provision the new endpoints.
+    */
+  def modifyVpnConnection(): Request[ModifyVpnConnectionResult, AWSError] = js.native
+  def modifyVpnConnection(callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpnConnectionResult, Unit]): Request[ModifyVpnConnectionResult, AWSError] = js.native
+  /**
+    * Modifies the customer gateway or the target gateway of an Amazon Web Services Site-to-Site VPN connection. To modify the target gateway, the following migration options are available:   An existing virtual private gateway to a new virtual private gateway   An existing virtual private gateway to a transit gateway   An existing transit gateway to a new transit gateway   An existing transit gateway to a virtual private gateway   Before you perform the migration to the new gateway, you must configure the new gateway. Use CreateVpnGateway to create a virtual private gateway, or CreateTransitGateway to create a transit gateway. This step is required when you migrate from a virtual private gateway with static routes to a transit gateway.  You must delete the static routes before you migrate to the new gateway. Keep a copy of the static route before you delete it. You will need to add back these routes to the transit gateway after the VPN connection migration is complete. After you migrate to the new gateway, you might need to modify your VPC route table. Use CreateRoute and DeleteRoute to make the changes described in Update VPC route tables in the Amazon Web Services Site-to-Site VPN User Guide. When the new gateway is a transit gateway, modify the transit gateway route table to allow traffic between the VPC and the Amazon Web Services Site-to-Site VPN connection. Use CreateTransitGatewayRoute to add the routes.  If you deleted VPN static routes, you must add the static routes to the transit gateway route table. After you perform this operation, the VPN endpoint's IP addresses on the Amazon Web Services side and the tunnel options remain intact. Your Amazon Web Services Site-to-Site VPN connection will be temporarily unavailable for a brief period while we provision the new endpoints.
+    */
+  def modifyVpnConnection(params: ModifyVpnConnectionRequest): Request[ModifyVpnConnectionResult, AWSError] = js.native
+  def modifyVpnConnection(
+    params: ModifyVpnConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpnConnectionResult, Unit]
+  ): Request[ModifyVpnConnectionResult, AWSError] = js.native
+  
+  /**
+    * Modifies the connection options for your Site-to-Site VPN connection. When you modify the VPN connection options, the VPN endpoint IP addresses on the Amazon Web Services side do not change, and the tunnel options do not change. Your VPN connection will be temporarily unavailable for a brief period while the VPN connection is updated.
+    */
+  def modifyVpnConnectionOptions(): Request[ModifyVpnConnectionOptionsResult, AWSError] = js.native
+  def modifyVpnConnectionOptions(callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpnConnectionOptionsResult, Unit]): Request[ModifyVpnConnectionOptionsResult, AWSError] = js.native
+  /**
+    * Modifies the connection options for your Site-to-Site VPN connection. When you modify the VPN connection options, the VPN endpoint IP addresses on the Amazon Web Services side do not change, and the tunnel options do not change. Your VPN connection will be temporarily unavailable for a brief period while the VPN connection is updated.
+    */
+  def modifyVpnConnectionOptions(params: ModifyVpnConnectionOptionsRequest): Request[ModifyVpnConnectionOptionsResult, AWSError] = js.native
+  def modifyVpnConnectionOptions(
+    params: ModifyVpnConnectionOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpnConnectionOptionsResult, Unit]
+  ): Request[ModifyVpnConnectionOptionsResult, AWSError] = js.native
+  
+  /**
+    * Modifies the VPN tunnel endpoint certificate.
+    */
+  def modifyVpnTunnelCertificate(): Request[ModifyVpnTunnelCertificateResult, AWSError] = js.native
+  def modifyVpnTunnelCertificate(callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpnTunnelCertificateResult, Unit]): Request[ModifyVpnTunnelCertificateResult, AWSError] = js.native
+  /**
+    * Modifies the VPN tunnel endpoint certificate.
+    */
+  def modifyVpnTunnelCertificate(params: ModifyVpnTunnelCertificateRequest): Request[ModifyVpnTunnelCertificateResult, AWSError] = js.native
+  def modifyVpnTunnelCertificate(
+    params: ModifyVpnTunnelCertificateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpnTunnelCertificateResult, Unit]
+  ): Request[ModifyVpnTunnelCertificateResult, AWSError] = js.native
+  
+  /**
+    * Modifies the options for a VPN tunnel in an Amazon Web Services Site-to-Site VPN connection. You can modify multiple options for a tunnel in a single request, but you can only modify one tunnel at a time. For more information, see Site-to-Site VPN tunnel options for your Site-to-Site VPN connection in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def modifyVpnTunnelOptions(): Request[ModifyVpnTunnelOptionsResult, AWSError] = js.native
+  def modifyVpnTunnelOptions(callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpnTunnelOptionsResult, Unit]): Request[ModifyVpnTunnelOptionsResult, AWSError] = js.native
+  /**
+    * Modifies the options for a VPN tunnel in an Amazon Web Services Site-to-Site VPN connection. You can modify multiple options for a tunnel in a single request, but you can only modify one tunnel at a time. For more information, see Site-to-Site VPN tunnel options for your Site-to-Site VPN connection in the Amazon Web Services Site-to-Site VPN User Guide.
+    */
+  def modifyVpnTunnelOptions(params: ModifyVpnTunnelOptionsRequest): Request[ModifyVpnTunnelOptionsResult, AWSError] = js.native
+  def modifyVpnTunnelOptions(
+    params: ModifyVpnTunnelOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpnTunnelOptionsResult, Unit]
+  ): Request[ModifyVpnTunnelOptionsResult, AWSError] = js.native
+  
+  /**
+    * Enables detailed monitoring for a running instance. Otherwise, basic monitoring is enabled. For more information, see Monitor your instances using CloudWatch in the Amazon EC2 User Guide. To disable detailed monitoring, see UnmonitorInstances.
+    */
+  def monitorInstances(): Request[MonitorInstancesResult, AWSError] = js.native
+  def monitorInstances(callback: js.Function2[/* err */ AWSError, /* data */ MonitorInstancesResult, Unit]): Request[MonitorInstancesResult, AWSError] = js.native
+  /**
+    * Enables detailed monitoring for a running instance. Otherwise, basic monitoring is enabled. For more information, see Monitor your instances using CloudWatch in the Amazon EC2 User Guide. To disable detailed monitoring, see UnmonitorInstances.
+    */
+  def monitorInstances(params: MonitorInstancesRequest): Request[MonitorInstancesResult, AWSError] = js.native
+  def monitorInstances(
+    params: MonitorInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ MonitorInstancesResult, Unit]
+  ): Request[MonitorInstancesResult, AWSError] = js.native
+  
+  /**
+    * Moves an Elastic IP address from the EC2-Classic platform to the EC2-VPC platform. The Elastic IP address must be allocated to your account for more than 24 hours, and it must not be associated with an instance. After the Elastic IP address is moved, it is no longer available for use in the EC2-Classic platform, unless you move it back using the RestoreAddressToClassic request. You cannot move an Elastic IP address that was originally allocated for use in the EC2-VPC platform to the EC2-Classic platform.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def moveAddressToVpc(): Request[MoveAddressToVpcResult, AWSError] = js.native
+  def moveAddressToVpc(callback: js.Function2[/* err */ AWSError, /* data */ MoveAddressToVpcResult, Unit]): Request[MoveAddressToVpcResult, AWSError] = js.native
+  /**
+    * Moves an Elastic IP address from the EC2-Classic platform to the EC2-VPC platform. The Elastic IP address must be allocated to your account for more than 24 hours, and it must not be associated with an instance. After the Elastic IP address is moved, it is no longer available for use in the EC2-Classic platform, unless you move it back using the RestoreAddressToClassic request. You cannot move an Elastic IP address that was originally allocated for use in the EC2-VPC platform to the EC2-Classic platform.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def moveAddressToVpc(params: MoveAddressToVpcRequest): Request[MoveAddressToVpcResult, AWSError] = js.native
+  def moveAddressToVpc(
+    params: MoveAddressToVpcRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ MoveAddressToVpcResult, Unit]
+  ): Request[MoveAddressToVpcResult, AWSError] = js.native
+  
+  /**
+    * Move an BYOIP IPv4 CIDR to IPAM from a public IPv4 pool. If you already have an IPv4 BYOIP CIDR with Amazon Web Services, you can move the CIDR to IPAM from a public IPv4 pool. You cannot move an IPv6 CIDR to IPAM. If you are bringing a new IP address to Amazon Web Services for the first time, complete the steps in Tutorial: BYOIP address CIDRs to IPAM.
+    */
+  def moveByoipCidrToIpam(): Request[MoveByoipCidrToIpamResult, AWSError] = js.native
+  def moveByoipCidrToIpam(callback: js.Function2[/* err */ AWSError, /* data */ MoveByoipCidrToIpamResult, Unit]): Request[MoveByoipCidrToIpamResult, AWSError] = js.native
+  /**
+    * Move an BYOIP IPv4 CIDR to IPAM from a public IPv4 pool. If you already have an IPv4 BYOIP CIDR with Amazon Web Services, you can move the CIDR to IPAM from a public IPv4 pool. You cannot move an IPv6 CIDR to IPAM. If you are bringing a new IP address to Amazon Web Services for the first time, complete the steps in Tutorial: BYOIP address CIDRs to IPAM.
+    */
+  def moveByoipCidrToIpam(params: MoveByoipCidrToIpamRequest): Request[MoveByoipCidrToIpamResult, AWSError] = js.native
+  def moveByoipCidrToIpam(
+    params: MoveByoipCidrToIpamRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ MoveByoipCidrToIpamResult, Unit]
+  ): Request[MoveByoipCidrToIpamResult, AWSError] = js.native
+  
+  /**
+    * Provisions an IPv4 or IPv6 address range for use with your Amazon Web Services resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. Amazon Web Services verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring your own IP addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your IPv4 address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
+    */
+  def provisionByoipCidr(): Request[ProvisionByoipCidrResult, AWSError] = js.native
+  def provisionByoipCidr(callback: js.Function2[/* err */ AWSError, /* data */ ProvisionByoipCidrResult, Unit]): Request[ProvisionByoipCidrResult, AWSError] = js.native
+  /**
+    * Provisions an IPv4 or IPv6 address range for use with your Amazon Web Services resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. Amazon Web Services verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring your own IP addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your IPv4 address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
+    */
+  def provisionByoipCidr(params: ProvisionByoipCidrRequest): Request[ProvisionByoipCidrResult, AWSError] = js.native
+  def provisionByoipCidr(
+    params: ProvisionByoipCidrRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ProvisionByoipCidrResult, Unit]
+  ): Request[ProvisionByoipCidrResult, AWSError] = js.native
+  
+  /**
+    * Provision a CIDR to an IPAM pool. You can use this action to provision new CIDRs to a top-level pool or to transfer a CIDR from a top-level pool to a pool within it. For more information, see Provision CIDRs to pools in the Amazon VPC IPAM User Guide. 
+    */
+  def provisionIpamPoolCidr(): Request[ProvisionIpamPoolCidrResult, AWSError] = js.native
+  def provisionIpamPoolCidr(callback: js.Function2[/* err */ AWSError, /* data */ ProvisionIpamPoolCidrResult, Unit]): Request[ProvisionIpamPoolCidrResult, AWSError] = js.native
+  /**
+    * Provision a CIDR to an IPAM pool. You can use this action to provision new CIDRs to a top-level pool or to transfer a CIDR from a top-level pool to a pool within it. For more information, see Provision CIDRs to pools in the Amazon VPC IPAM User Guide. 
+    */
+  def provisionIpamPoolCidr(params: ProvisionIpamPoolCidrRequest): Request[ProvisionIpamPoolCidrResult, AWSError] = js.native
+  def provisionIpamPoolCidr(
+    params: ProvisionIpamPoolCidrRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ProvisionIpamPoolCidrResult, Unit]
+  ): Request[ProvisionIpamPoolCidrResult, AWSError] = js.native
+  
+  /**
+    * Provision a CIDR to a public IPv4 pool. For more information about IPAM, see What is IPAM? in the Amazon VPC IPAM User Guide.
+    */
+  def provisionPublicIpv4PoolCidr(): Request[ProvisionPublicIpv4PoolCidrResult, AWSError] = js.native
+  def provisionPublicIpv4PoolCidr(callback: js.Function2[/* err */ AWSError, /* data */ ProvisionPublicIpv4PoolCidrResult, Unit]): Request[ProvisionPublicIpv4PoolCidrResult, AWSError] = js.native
+  /**
+    * Provision a CIDR to a public IPv4 pool. For more information about IPAM, see What is IPAM? in the Amazon VPC IPAM User Guide.
+    */
+  def provisionPublicIpv4PoolCidr(params: ProvisionPublicIpv4PoolCidrRequest): Request[ProvisionPublicIpv4PoolCidrResult, AWSError] = js.native
+  def provisionPublicIpv4PoolCidr(
+    params: ProvisionPublicIpv4PoolCidrRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ProvisionPublicIpv4PoolCidrResult, Unit]
+  ): Request[ProvisionPublicIpv4PoolCidrResult, AWSError] = js.native
+  
+  /**
+    * Purchase a reservation with configurations that match those of your Dedicated Host. You must have active Dedicated Hosts in your account before you purchase a reservation. This action results in the specified reservation being purchased and charged to your account.
+    */
+  def purchaseHostReservation(): Request[PurchaseHostReservationResult, AWSError] = js.native
+  def purchaseHostReservation(callback: js.Function2[/* err */ AWSError, /* data */ PurchaseHostReservationResult, Unit]): Request[PurchaseHostReservationResult, AWSError] = js.native
+  /**
+    * Purchase a reservation with configurations that match those of your Dedicated Host. You must have active Dedicated Hosts in your account before you purchase a reservation. This action results in the specified reservation being purchased and charged to your account.
+    */
+  def purchaseHostReservation(params: PurchaseHostReservationRequest): Request[PurchaseHostReservationResult, AWSError] = js.native
+  def purchaseHostReservation(
+    params: PurchaseHostReservationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PurchaseHostReservationResult, Unit]
+  ): Request[PurchaseHostReservationResult, AWSError] = js.native
+  
+  /**
+    * Purchases a Reserved Instance for use with your account. With Reserved Instances, you pay a lower hourly rate compared to On-Demand instance pricing. Use DescribeReservedInstancesOfferings to get a list of Reserved Instance offerings that match your specifications. After you've purchased a Reserved Instance, you can check for your new Reserved Instance with DescribeReservedInstances. To queue a purchase for a future date and time, specify a purchase time. If you do not specify a purchase time, the default is the current time. For more information, see Reserved Instances and Reserved Instance Marketplace in the Amazon EC2 User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def purchaseReservedInstancesOffering(): Request[PurchaseReservedInstancesOfferingResult, AWSError] = js.native
+  def purchaseReservedInstancesOffering(
+    callback: js.Function2[/* err */ AWSError, /* data */ PurchaseReservedInstancesOfferingResult, Unit]
+  ): Request[PurchaseReservedInstancesOfferingResult, AWSError] = js.native
+  /**
+    * Purchases a Reserved Instance for use with your account. With Reserved Instances, you pay a lower hourly rate compared to On-Demand instance pricing. Use DescribeReservedInstancesOfferings to get a list of Reserved Instance offerings that match your specifications. After you've purchased a Reserved Instance, you can check for your new Reserved Instance with DescribeReservedInstances. To queue a purchase for a future date and time, specify a purchase time. If you do not specify a purchase time, the default is the current time. For more information, see Reserved Instances and Reserved Instance Marketplace in the Amazon EC2 User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def purchaseReservedInstancesOffering(params: PurchaseReservedInstancesOfferingRequest): Request[PurchaseReservedInstancesOfferingResult, AWSError] = js.native
+  def purchaseReservedInstancesOffering(
+    params: PurchaseReservedInstancesOfferingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PurchaseReservedInstancesOfferingResult, Unit]
+  ): Request[PurchaseReservedInstancesOfferingResult, AWSError] = js.native
+  
+  /**
+    *  You can no longer purchase Scheduled Instances.  Purchases the Scheduled Instances with the specified schedule. Scheduled Instances enable you to purchase Amazon EC2 compute capacity by the hour for a one-year term. Before you can purchase a Scheduled Instance, you must call DescribeScheduledInstanceAvailability to check for available schedules and obtain a purchase token. After you purchase a Scheduled Instance, you must call RunScheduledInstances during each scheduled time period. After you purchase a Scheduled Instance, you can't cancel, modify, or resell your purchase.
+    */
+  def purchaseScheduledInstances(): Request[PurchaseScheduledInstancesResult, AWSError] = js.native
+  def purchaseScheduledInstances(callback: js.Function2[/* err */ AWSError, /* data */ PurchaseScheduledInstancesResult, Unit]): Request[PurchaseScheduledInstancesResult, AWSError] = js.native
+  /**
+    *  You can no longer purchase Scheduled Instances.  Purchases the Scheduled Instances with the specified schedule. Scheduled Instances enable you to purchase Amazon EC2 compute capacity by the hour for a one-year term. Before you can purchase a Scheduled Instance, you must call DescribeScheduledInstanceAvailability to check for available schedules and obtain a purchase token. After you purchase a Scheduled Instance, you must call RunScheduledInstances during each scheduled time period. After you purchase a Scheduled Instance, you can't cancel, modify, or resell your purchase.
+    */
+  def purchaseScheduledInstances(params: PurchaseScheduledInstancesRequest): Request[PurchaseScheduledInstancesResult, AWSError] = js.native
+  def purchaseScheduledInstances(
+    params: PurchaseScheduledInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PurchaseScheduledInstancesResult, Unit]
+  ): Request[PurchaseScheduledInstancesResult, AWSError] = js.native
+  
+  /**
+    * Requests a reboot of the specified instances. This operation is asynchronous; it only queues a request to reboot the specified instances. The operation succeeds if the instances are valid and belong to you. Requests to reboot terminated instances are ignored. If an instance does not cleanly shut down within a few minutes, Amazon EC2 performs a hard reboot. For more information about troubleshooting, see Troubleshoot an unreachable instance in the Amazon EC2 User Guide.
+    */
+  def rebootInstances(): Request[js.Object, AWSError] = js.native
+  def rebootInstances(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Requests a reboot of the specified instances. This operation is asynchronous; it only queues a request to reboot the specified instances. The operation succeeds if the instances are valid and belong to you. Requests to reboot terminated instances are ignored. If an instance does not cleanly shut down within a few minutes, Amazon EC2 performs a hard reboot. For more information about troubleshooting, see Troubleshoot an unreachable instance in the Amazon EC2 User Guide.
+    */
+  def rebootInstances(params: RebootInstancesRequest): Request[js.Object, AWSError] = js.native
+  def rebootInstances(
+    params: RebootInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Registers an AMI. When you're creating an AMI, this is the final step you must complete before you can launch an instance from the AMI. For more information about creating AMIs, see Creating your own AMIs in the Amazon Elastic Compute Cloud User Guide.  For Amazon EBS-backed instances, CreateImage creates and registers the AMI in a single request, so you don't have to register the AMI yourself. We recommend that you always use CreateImage unless you have a specific reason to use RegisterImage.  If needed, you can deregister an AMI at any time. Any modifications you make to an AMI backed by an instance store volume invalidates its registration. If you make changes to an image, deregister the previous image and register the new image.  Register a snapshot of a root device volume  You can use RegisterImage to create an Amazon EBS-backed Linux AMI from a snapshot of a root device volume. You specify the snapshot using a block device mapping. You can't set the encryption state of the volume using the block device mapping. If the snapshot is encrypted, or encryption by default is enabled, the root volume of an instance launched from the AMI is encrypted. For more information, see Create a Linux AMI from a snapshot and Use encryption with Amazon EBS-backed AMIs in the Amazon Elastic Compute Cloud User Guide.  Amazon Web Services Marketplace product codes  If any snapshots have Amazon Web Services Marketplace product codes, they are copied to the new AMI. Windows and some Linux distributions, such as Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES), use the Amazon EC2 billing product code associated with an AMI to verify the subscription status for package updates. To create a new AMI for operating systems that require a billing product code, instead of registering the AMI, do the following to preserve the billing product code association:   Launch an instance from an existing AMI with that billing product code.   Customize the instance.   Create an AMI from the instance using CreateImage.   If you purchase a Reserved Instance to apply to an On-Demand Instance that was launched from an AMI with a billing product code, make sure that the Reserved Instance has the matching billing product code. If you purchase a Reserved Instance without the matching billing product code, the Reserved Instance will not be applied to the On-Demand Instance. For information about how to obtain the platform details and billing information of an AMI, see Understanding AMI billing in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def registerImage(): Request[RegisterImageResult, AWSError] = js.native
+  def registerImage(callback: js.Function2[/* err */ AWSError, /* data */ RegisterImageResult, Unit]): Request[RegisterImageResult, AWSError] = js.native
+  /**
+    * Registers an AMI. When you're creating an AMI, this is the final step you must complete before you can launch an instance from the AMI. For more information about creating AMIs, see Creating your own AMIs in the Amazon Elastic Compute Cloud User Guide.  For Amazon EBS-backed instances, CreateImage creates and registers the AMI in a single request, so you don't have to register the AMI yourself. We recommend that you always use CreateImage unless you have a specific reason to use RegisterImage.  If needed, you can deregister an AMI at any time. Any modifications you make to an AMI backed by an instance store volume invalidates its registration. If you make changes to an image, deregister the previous image and register the new image.  Register a snapshot of a root device volume  You can use RegisterImage to create an Amazon EBS-backed Linux AMI from a snapshot of a root device volume. You specify the snapshot using a block device mapping. You can't set the encryption state of the volume using the block device mapping. If the snapshot is encrypted, or encryption by default is enabled, the root volume of an instance launched from the AMI is encrypted. For more information, see Create a Linux AMI from a snapshot and Use encryption with Amazon EBS-backed AMIs in the Amazon Elastic Compute Cloud User Guide.  Amazon Web Services Marketplace product codes  If any snapshots have Amazon Web Services Marketplace product codes, they are copied to the new AMI. Windows and some Linux distributions, such as Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES), use the Amazon EC2 billing product code associated with an AMI to verify the subscription status for package updates. To create a new AMI for operating systems that require a billing product code, instead of registering the AMI, do the following to preserve the billing product code association:   Launch an instance from an existing AMI with that billing product code.   Customize the instance.   Create an AMI from the instance using CreateImage.   If you purchase a Reserved Instance to apply to an On-Demand Instance that was launched from an AMI with a billing product code, make sure that the Reserved Instance has the matching billing product code. If you purchase a Reserved Instance without the matching billing product code, the Reserved Instance will not be applied to the On-Demand Instance. For information about how to obtain the platform details and billing information of an AMI, see Understanding AMI billing in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def registerImage(params: RegisterImageRequest): Request[RegisterImageResult, AWSError] = js.native
+  def registerImage(
+    params: RegisterImageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RegisterImageResult, Unit]
+  ): Request[RegisterImageResult, AWSError] = js.native
+  
+  /**
+    * Registers a set of tag keys to include in scheduled event notifications for your resources.  To remove tags, use DeregisterInstanceEventNotificationAttributes.
+    */
+  def registerInstanceEventNotificationAttributes(): Request[RegisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  def registerInstanceEventNotificationAttributes(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ RegisterInstanceEventNotificationAttributesResult, 
+      Unit
+    ]
+  ): Request[RegisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  /**
+    * Registers a set of tag keys to include in scheduled event notifications for your resources.  To remove tags, use DeregisterInstanceEventNotificationAttributes.
+    */
+  def registerInstanceEventNotificationAttributes(params: RegisterInstanceEventNotificationAttributesRequest): Request[RegisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  def registerInstanceEventNotificationAttributes(
+    params: RegisterInstanceEventNotificationAttributesRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ RegisterInstanceEventNotificationAttributesResult, 
+      Unit
+    ]
+  ): Request[RegisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  
+  /**
+    * Registers members (network interfaces) with the transit gateway multicast group. A member is a network interface associated with a supported EC2 instance that receives multicast traffic. For information about supported instances, see Multicast Consideration in Amazon VPC Transit Gateways. After you add the members, use SearchTransitGatewayMulticastGroups to verify that the members were added to the transit gateway multicast group.
+    */
+  def registerTransitGatewayMulticastGroupMembers(): Request[RegisterTransitGatewayMulticastGroupMembersResult, AWSError] = js.native
+  def registerTransitGatewayMulticastGroupMembers(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ RegisterTransitGatewayMulticastGroupMembersResult, 
+      Unit
+    ]
+  ): Request[RegisterTransitGatewayMulticastGroupMembersResult, AWSError] = js.native
+  /**
+    * Registers members (network interfaces) with the transit gateway multicast group. A member is a network interface associated with a supported EC2 instance that receives multicast traffic. For information about supported instances, see Multicast Consideration in Amazon VPC Transit Gateways. After you add the members, use SearchTransitGatewayMulticastGroups to verify that the members were added to the transit gateway multicast group.
+    */
+  def registerTransitGatewayMulticastGroupMembers(params: RegisterTransitGatewayMulticastGroupMembersRequest): Request[RegisterTransitGatewayMulticastGroupMembersResult, AWSError] = js.native
+  def registerTransitGatewayMulticastGroupMembers(
+    params: RegisterTransitGatewayMulticastGroupMembersRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ RegisterTransitGatewayMulticastGroupMembersResult, 
+      Unit
+    ]
+  ): Request[RegisterTransitGatewayMulticastGroupMembersResult, AWSError] = js.native
+  
+  /**
+    * Registers sources (network interfaces) with the specified transit gateway multicast group. A multicast source is a network interface attached to a supported instance that sends multicast traffic. For information about supported instances, see Multicast Considerations in Amazon VPC Transit Gateways. After you add the source, use SearchTransitGatewayMulticastGroups to verify that the source was added to the multicast group.
+    */
+  def registerTransitGatewayMulticastGroupSources(): Request[RegisterTransitGatewayMulticastGroupSourcesResult, AWSError] = js.native
+  def registerTransitGatewayMulticastGroupSources(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ RegisterTransitGatewayMulticastGroupSourcesResult, 
+      Unit
+    ]
+  ): Request[RegisterTransitGatewayMulticastGroupSourcesResult, AWSError] = js.native
+  /**
+    * Registers sources (network interfaces) with the specified transit gateway multicast group. A multicast source is a network interface attached to a supported instance that sends multicast traffic. For information about supported instances, see Multicast Considerations in Amazon VPC Transit Gateways. After you add the source, use SearchTransitGatewayMulticastGroups to verify that the source was added to the multicast group.
+    */
+  def registerTransitGatewayMulticastGroupSources(params: RegisterTransitGatewayMulticastGroupSourcesRequest): Request[RegisterTransitGatewayMulticastGroupSourcesResult, AWSError] = js.native
+  def registerTransitGatewayMulticastGroupSources(
+    params: RegisterTransitGatewayMulticastGroupSourcesRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ RegisterTransitGatewayMulticastGroupSourcesResult, 
+      Unit
+    ]
+  ): Request[RegisterTransitGatewayMulticastGroupSourcesResult, AWSError] = js.native
+  
+  /**
+    * Rejects a request to associate cross-account subnets with a transit gateway multicast domain.
+    */
+  def rejectTransitGatewayMulticastDomainAssociations(): Request[RejectTransitGatewayMulticastDomainAssociationsResult, AWSError] = js.native
+  def rejectTransitGatewayMulticastDomainAssociations(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ RejectTransitGatewayMulticastDomainAssociationsResult, 
+      Unit
+    ]
+  ): Request[RejectTransitGatewayMulticastDomainAssociationsResult, AWSError] = js.native
+  /**
+    * Rejects a request to associate cross-account subnets with a transit gateway multicast domain.
+    */
+  def rejectTransitGatewayMulticastDomainAssociations(params: RejectTransitGatewayMulticastDomainAssociationsRequest): Request[RejectTransitGatewayMulticastDomainAssociationsResult, AWSError] = js.native
+  def rejectTransitGatewayMulticastDomainAssociations(
+    params: RejectTransitGatewayMulticastDomainAssociationsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ RejectTransitGatewayMulticastDomainAssociationsResult, 
+      Unit
+    ]
+  ): Request[RejectTransitGatewayMulticastDomainAssociationsResult, AWSError] = js.native
+  
+  /**
+    * Rejects a transit gateway peering attachment request.
+    */
+  def rejectTransitGatewayPeeringAttachment(): Request[RejectTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  def rejectTransitGatewayPeeringAttachment(
+    callback: js.Function2[/* err */ AWSError, /* data */ RejectTransitGatewayPeeringAttachmentResult, Unit]
+  ): Request[RejectTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  /**
+    * Rejects a transit gateway peering attachment request.
+    */
+  def rejectTransitGatewayPeeringAttachment(params: RejectTransitGatewayPeeringAttachmentRequest): Request[RejectTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  def rejectTransitGatewayPeeringAttachment(
+    params: RejectTransitGatewayPeeringAttachmentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RejectTransitGatewayPeeringAttachmentResult, Unit]
+  ): Request[RejectTransitGatewayPeeringAttachmentResult, AWSError] = js.native
+  
+  /**
+    * Rejects a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use AcceptTransitGatewayVpcAttachment to accept a VPC attachment request.
+    */
+  def rejectTransitGatewayVpcAttachment(): Request[RejectTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  def rejectTransitGatewayVpcAttachment(
+    callback: js.Function2[/* err */ AWSError, /* data */ RejectTransitGatewayVpcAttachmentResult, Unit]
+  ): Request[RejectTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  /**
+    * Rejects a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use AcceptTransitGatewayVpcAttachment to accept a VPC attachment request.
+    */
+  def rejectTransitGatewayVpcAttachment(params: RejectTransitGatewayVpcAttachmentRequest): Request[RejectTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  def rejectTransitGatewayVpcAttachment(
+    params: RejectTransitGatewayVpcAttachmentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RejectTransitGatewayVpcAttachmentResult, Unit]
+  ): Request[RejectTransitGatewayVpcAttachmentResult, AWSError] = js.native
+  
+  /**
+    * Rejects one or more VPC endpoint connection requests to your VPC endpoint service.
+    */
+  def rejectVpcEndpointConnections(): Request[RejectVpcEndpointConnectionsResult, AWSError] = js.native
+  def rejectVpcEndpointConnections(callback: js.Function2[/* err */ AWSError, /* data */ RejectVpcEndpointConnectionsResult, Unit]): Request[RejectVpcEndpointConnectionsResult, AWSError] = js.native
+  /**
+    * Rejects one or more VPC endpoint connection requests to your VPC endpoint service.
+    */
+  def rejectVpcEndpointConnections(params: RejectVpcEndpointConnectionsRequest): Request[RejectVpcEndpointConnectionsResult, AWSError] = js.native
+  def rejectVpcEndpointConnections(
+    params: RejectVpcEndpointConnectionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RejectVpcEndpointConnectionsResult, Unit]
+  ): Request[RejectVpcEndpointConnectionsResult, AWSError] = js.native
+  
+  /**
+    * Rejects a VPC peering connection request. The VPC peering connection must be in the pending-acceptance state. Use the DescribeVpcPeeringConnections request to view your outstanding VPC peering connection requests. To delete an active VPC peering connection, or to delete a VPC peering connection request that you initiated, use DeleteVpcPeeringConnection.
+    */
+  def rejectVpcPeeringConnection(): Request[RejectVpcPeeringConnectionResult, AWSError] = js.native
+  def rejectVpcPeeringConnection(callback: js.Function2[/* err */ AWSError, /* data */ RejectVpcPeeringConnectionResult, Unit]): Request[RejectVpcPeeringConnectionResult, AWSError] = js.native
+  /**
+    * Rejects a VPC peering connection request. The VPC peering connection must be in the pending-acceptance state. Use the DescribeVpcPeeringConnections request to view your outstanding VPC peering connection requests. To delete an active VPC peering connection, or to delete a VPC peering connection request that you initiated, use DeleteVpcPeeringConnection.
+    */
+  def rejectVpcPeeringConnection(params: RejectVpcPeeringConnectionRequest): Request[RejectVpcPeeringConnectionResult, AWSError] = js.native
+  def rejectVpcPeeringConnection(
+    params: RejectVpcPeeringConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RejectVpcPeeringConnectionResult, Unit]
+  ): Request[RejectVpcPeeringConnectionResult, AWSError] = js.native
+  
+  /**
+    * Releases the specified Elastic IP address. [EC2-Classic, default VPC] Releasing an Elastic IP address automatically disassociates it from any instance that it's associated with. To disassociate an Elastic IP address without releasing it, use DisassociateAddress.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  [Nondefault VPC] You must use DisassociateAddress to disassociate the Elastic IP address before you can release it. Otherwise, Amazon EC2 returns an error (InvalidIPAddress.InUse). After releasing an Elastic IP address, it is released to the IP address pool. Be sure to update your DNS records and any servers or devices that communicate with the address. If you attempt to release an Elastic IP address that you already released, you'll get an AuthFailure error if the address is already allocated to another Amazon Web Services account. [EC2-VPC] After you release an Elastic IP address for use in a VPC, you might be able to recover it. For more information, see AllocateAddress. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def releaseAddress(): Request[js.Object, AWSError] = js.native
+  def releaseAddress(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Releases the specified Elastic IP address. [EC2-Classic, default VPC] Releasing an Elastic IP address automatically disassociates it from any instance that it's associated with. To disassociate an Elastic IP address without releasing it, use DisassociateAddress.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  [Nondefault VPC] You must use DisassociateAddress to disassociate the Elastic IP address before you can release it. Otherwise, Amazon EC2 returns an error (InvalidIPAddress.InUse). After releasing an Elastic IP address, it is released to the IP address pool. Be sure to update your DNS records and any servers or devices that communicate with the address. If you attempt to release an Elastic IP address that you already released, you'll get an AuthFailure error if the address is already allocated to another Amazon Web Services account. [EC2-VPC] After you release an Elastic IP address for use in a VPC, you might be able to recover it. For more information, see AllocateAddress. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def releaseAddress(params: ReleaseAddressRequest): Request[js.Object, AWSError] = js.native
+  def releaseAddress(
+    params: ReleaseAddressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * When you no longer want to use an On-Demand Dedicated Host it can be released. On-Demand billing is stopped and the host goes into released state. The host ID of Dedicated Hosts that have been released can no longer be specified in another request, for example, to modify the host. You must stop or terminate all instances on a host before it can be released. When Dedicated Hosts are released, it may take some time for them to stop counting toward your limit and you may receive capacity errors when trying to allocate new Dedicated Hosts. Wait a few minutes and then try again. Released hosts still appear in a DescribeHosts response.
+    */
+  def releaseHosts(): Request[ReleaseHostsResult, AWSError] = js.native
+  def releaseHosts(callback: js.Function2[/* err */ AWSError, /* data */ ReleaseHostsResult, Unit]): Request[ReleaseHostsResult, AWSError] = js.native
+  /**
+    * When you no longer want to use an On-Demand Dedicated Host it can be released. On-Demand billing is stopped and the host goes into released state. The host ID of Dedicated Hosts that have been released can no longer be specified in another request, for example, to modify the host. You must stop or terminate all instances on a host before it can be released. When Dedicated Hosts are released, it may take some time for them to stop counting toward your limit and you may receive capacity errors when trying to allocate new Dedicated Hosts. Wait a few minutes and then try again. Released hosts still appear in a DescribeHosts response.
+    */
+  def releaseHosts(params: ReleaseHostsRequest): Request[ReleaseHostsResult, AWSError] = js.native
+  def releaseHosts(
+    params: ReleaseHostsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ReleaseHostsResult, Unit]
+  ): Request[ReleaseHostsResult, AWSError] = js.native
+  
+  /**
+    * Release an allocation within an IPAM pool. You can only use this action to release manual allocations. To remove an allocation for a resource without deleting the resource, set its monitored state to false using ModifyIpamResourceCidr. For more information, see Release an allocation in the Amazon VPC IPAM User Guide. 
+    */
+  def releaseIpamPoolAllocation(): Request[ReleaseIpamPoolAllocationResult, AWSError] = js.native
+  def releaseIpamPoolAllocation(callback: js.Function2[/* err */ AWSError, /* data */ ReleaseIpamPoolAllocationResult, Unit]): Request[ReleaseIpamPoolAllocationResult, AWSError] = js.native
+  /**
+    * Release an allocation within an IPAM pool. You can only use this action to release manual allocations. To remove an allocation for a resource without deleting the resource, set its monitored state to false using ModifyIpamResourceCidr. For more information, see Release an allocation in the Amazon VPC IPAM User Guide. 
+    */
+  def releaseIpamPoolAllocation(params: ReleaseIpamPoolAllocationRequest): Request[ReleaseIpamPoolAllocationResult, AWSError] = js.native
+  def releaseIpamPoolAllocation(
+    params: ReleaseIpamPoolAllocationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ReleaseIpamPoolAllocationResult, Unit]
+  ): Request[ReleaseIpamPoolAllocationResult, AWSError] = js.native
+  
+  /**
+    * Replaces an IAM instance profile for the specified running instance. You can use this action to change the IAM instance profile that's associated with an instance without having to disassociate the existing IAM instance profile first. Use DescribeIamInstanceProfileAssociations to get the association ID.
+    */
+  def replaceIamInstanceProfileAssociation(): Request[ReplaceIamInstanceProfileAssociationResult, AWSError] = js.native
+  def replaceIamInstanceProfileAssociation(
+    callback: js.Function2[/* err */ AWSError, /* data */ ReplaceIamInstanceProfileAssociationResult, Unit]
+  ): Request[ReplaceIamInstanceProfileAssociationResult, AWSError] = js.native
+  /**
+    * Replaces an IAM instance profile for the specified running instance. You can use this action to change the IAM instance profile that's associated with an instance without having to disassociate the existing IAM instance profile first. Use DescribeIamInstanceProfileAssociations to get the association ID.
+    */
+  def replaceIamInstanceProfileAssociation(params: ReplaceIamInstanceProfileAssociationRequest): Request[ReplaceIamInstanceProfileAssociationResult, AWSError] = js.native
+  def replaceIamInstanceProfileAssociation(
+    params: ReplaceIamInstanceProfileAssociationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ReplaceIamInstanceProfileAssociationResult, Unit]
+  ): Request[ReplaceIamInstanceProfileAssociationResult, AWSError] = js.native
+  
+  /**
+    * Changes which network ACL a subnet is associated with. By default when you create a subnet, it's automatically associated with the default network ACL. For more information, see Network ACLs in the Amazon Virtual Private Cloud User Guide. This is an idempotent operation.
+    */
+  def replaceNetworkAclAssociation(): Request[ReplaceNetworkAclAssociationResult, AWSError] = js.native
+  def replaceNetworkAclAssociation(callback: js.Function2[/* err */ AWSError, /* data */ ReplaceNetworkAclAssociationResult, Unit]): Request[ReplaceNetworkAclAssociationResult, AWSError] = js.native
+  /**
+    * Changes which network ACL a subnet is associated with. By default when you create a subnet, it's automatically associated with the default network ACL. For more information, see Network ACLs in the Amazon Virtual Private Cloud User Guide. This is an idempotent operation.
+    */
+  def replaceNetworkAclAssociation(params: ReplaceNetworkAclAssociationRequest): Request[ReplaceNetworkAclAssociationResult, AWSError] = js.native
+  def replaceNetworkAclAssociation(
+    params: ReplaceNetworkAclAssociationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ReplaceNetworkAclAssociationResult, Unit]
+  ): Request[ReplaceNetworkAclAssociationResult, AWSError] = js.native
+  
+  /**
+    * Replaces an entry (rule) in a network ACL. For more information, see Network ACLs in the Amazon Virtual Private Cloud User Guide.
+    */
+  def replaceNetworkAclEntry(): Request[js.Object, AWSError] = js.native
+  def replaceNetworkAclEntry(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Replaces an entry (rule) in a network ACL. For more information, see Network ACLs in the Amazon Virtual Private Cloud User Guide.
+    */
+  def replaceNetworkAclEntry(params: ReplaceNetworkAclEntryRequest): Request[js.Object, AWSError] = js.native
+  def replaceNetworkAclEntry(
+    params: ReplaceNetworkAclEntryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Replaces an existing route within a route table in a VPC. You must specify either a destination CIDR block or a prefix list ID. You must also specify exactly one of the resources from the parameter list, or reset the local route to its default target. For more information, see Route tables in the Amazon Virtual Private Cloud User Guide.
+    */
+  def replaceRoute(): Request[js.Object, AWSError] = js.native
+  def replaceRoute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Replaces an existing route within a route table in a VPC. You must specify either a destination CIDR block or a prefix list ID. You must also specify exactly one of the resources from the parameter list, or reset the local route to its default target. For more information, see Route tables in the Amazon Virtual Private Cloud User Guide.
+    */
+  def replaceRoute(params: ReplaceRouteRequest): Request[js.Object, AWSError] = js.native
+  def replaceRoute(
+    params: ReplaceRouteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Changes the route table associated with a given subnet, internet gateway, or virtual private gateway in a VPC. After the operation completes, the subnet or gateway uses the routes in the new route table. For more information about route tables, see Route tables in the Amazon Virtual Private Cloud User Guide. You can also use this operation to change which table is the main route table in the VPC. Specify the main route table's association ID and the route table ID of the new main route table.
+    */
+  def replaceRouteTableAssociation(): Request[ReplaceRouteTableAssociationResult, AWSError] = js.native
+  def replaceRouteTableAssociation(callback: js.Function2[/* err */ AWSError, /* data */ ReplaceRouteTableAssociationResult, Unit]): Request[ReplaceRouteTableAssociationResult, AWSError] = js.native
+  /**
+    * Changes the route table associated with a given subnet, internet gateway, or virtual private gateway in a VPC. After the operation completes, the subnet or gateway uses the routes in the new route table. For more information about route tables, see Route tables in the Amazon Virtual Private Cloud User Guide. You can also use this operation to change which table is the main route table in the VPC. Specify the main route table's association ID and the route table ID of the new main route table.
+    */
+  def replaceRouteTableAssociation(params: ReplaceRouteTableAssociationRequest): Request[ReplaceRouteTableAssociationResult, AWSError] = js.native
+  def replaceRouteTableAssociation(
+    params: ReplaceRouteTableAssociationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ReplaceRouteTableAssociationResult, Unit]
+  ): Request[ReplaceRouteTableAssociationResult, AWSError] = js.native
+  
+  /**
+    * Replaces the specified route in the specified transit gateway route table.
+    */
+  def replaceTransitGatewayRoute(): Request[ReplaceTransitGatewayRouteResult, AWSError] = js.native
+  def replaceTransitGatewayRoute(callback: js.Function2[/* err */ AWSError, /* data */ ReplaceTransitGatewayRouteResult, Unit]): Request[ReplaceTransitGatewayRouteResult, AWSError] = js.native
+  /**
+    * Replaces the specified route in the specified transit gateway route table.
+    */
+  def replaceTransitGatewayRoute(params: ReplaceTransitGatewayRouteRequest): Request[ReplaceTransitGatewayRouteResult, AWSError] = js.native
+  def replaceTransitGatewayRoute(
+    params: ReplaceTransitGatewayRouteRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ReplaceTransitGatewayRouteResult, Unit]
+  ): Request[ReplaceTransitGatewayRouteResult, AWSError] = js.native
+  
+  /**
+    * Submits feedback about the status of an instance. The instance must be in the running state. If your experience with the instance differs from the instance status returned by DescribeInstanceStatus, use ReportInstanceStatus to report your experience with the instance. Amazon EC2 collects this information to improve the accuracy of status checks. Use of this action does not change the value returned by DescribeInstanceStatus.
+    */
+  def reportInstanceStatus(): Request[js.Object, AWSError] = js.native
+  def reportInstanceStatus(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Submits feedback about the status of an instance. The instance must be in the running state. If your experience with the instance differs from the instance status returned by DescribeInstanceStatus, use ReportInstanceStatus to report your experience with the instance. Amazon EC2 collects this information to improve the accuracy of status checks. Use of this action does not change the value returned by DescribeInstanceStatus.
+    */
+  def reportInstanceStatus(params: ReportInstanceStatusRequest): Request[js.Object, AWSError] = js.native
+  def reportInstanceStatus(
+    params: ReportInstanceStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Creates a Spot Fleet request. The Spot Fleet request specifies the total target capacity and the On-Demand target capacity. Amazon EC2 calculates the difference between the total capacity and On-Demand capacity, and launches the difference as Spot capacity. You can submit a single request that includes multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet. By default, the Spot Fleet requests Spot Instances in the Spot Instance pool where the price per unit is the lowest. Each launch specification can include its own instance weighting that reflects the value of the instance type to your application workload. Alternatively, you can specify that the Spot Fleet distribute the target capacity across the Spot pools included in its launch specifications. By ensuring that the Spot Instances in your Spot Fleet are in different Spot pools, you can improve the availability of your fleet. You can specify tags for the Spot Fleet request and instances launched by the fleet. You cannot tag other resource types in a Spot Fleet request because only the spot-fleet-request and instance resource types are supported. For more information, see Spot Fleet requests in the Amazon EC2 User Guide for Linux Instances.  We strongly discourage using the RequestSpotFleet API because it is a legacy API with no planned investment. For options for requesting Spot Instances, see Which is the best Spot request method to use? in the Amazon EC2 User Guide for Linux Instances. 
+    */
+  def requestSpotFleet(): Request[RequestSpotFleetResponse, AWSError] = js.native
+  def requestSpotFleet(callback: js.Function2[/* err */ AWSError, /* data */ RequestSpotFleetResponse, Unit]): Request[RequestSpotFleetResponse, AWSError] = js.native
+  /**
+    * Creates a Spot Fleet request. The Spot Fleet request specifies the total target capacity and the On-Demand target capacity. Amazon EC2 calculates the difference between the total capacity and On-Demand capacity, and launches the difference as Spot capacity. You can submit a single request that includes multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet. By default, the Spot Fleet requests Spot Instances in the Spot Instance pool where the price per unit is the lowest. Each launch specification can include its own instance weighting that reflects the value of the instance type to your application workload. Alternatively, you can specify that the Spot Fleet distribute the target capacity across the Spot pools included in its launch specifications. By ensuring that the Spot Instances in your Spot Fleet are in different Spot pools, you can improve the availability of your fleet. You can specify tags for the Spot Fleet request and instances launched by the fleet. You cannot tag other resource types in a Spot Fleet request because only the spot-fleet-request and instance resource types are supported. For more information, see Spot Fleet requests in the Amazon EC2 User Guide for Linux Instances.  We strongly discourage using the RequestSpotFleet API because it is a legacy API with no planned investment. For options for requesting Spot Instances, see Which is the best Spot request method to use? in the Amazon EC2 User Guide for Linux Instances. 
+    */
+  def requestSpotFleet(params: RequestSpotFleetRequest): Request[RequestSpotFleetResponse, AWSError] = js.native
+  def requestSpotFleet(
+    params: RequestSpotFleetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RequestSpotFleetResponse, Unit]
+  ): Request[RequestSpotFleetResponse, AWSError] = js.native
+  
+  /**
+    * Creates a Spot Instance request. For more information, see Spot Instance requests in the Amazon EC2 User Guide for Linux Instances.  We strongly discourage using the RequestSpotInstances API because it is a legacy API with no planned investment. For options for requesting Spot Instances, see Which is the best Spot request method to use? in the Amazon EC2 User Guide for Linux Instances.   We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon EC2 User Guide for Linux Instances. 
+    */
+  def requestSpotInstances(): Request[RequestSpotInstancesResult, AWSError] = js.native
+  def requestSpotInstances(callback: js.Function2[/* err */ AWSError, /* data */ RequestSpotInstancesResult, Unit]): Request[RequestSpotInstancesResult, AWSError] = js.native
+  /**
+    * Creates a Spot Instance request. For more information, see Spot Instance requests in the Amazon EC2 User Guide for Linux Instances.  We strongly discourage using the RequestSpotInstances API because it is a legacy API with no planned investment. For options for requesting Spot Instances, see Which is the best Spot request method to use? in the Amazon EC2 User Guide for Linux Instances.   We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon EC2 User Guide for Linux Instances. 
+    */
+  def requestSpotInstances(params: RequestSpotInstancesRequest): Request[RequestSpotInstancesResult, AWSError] = js.native
+  def requestSpotInstances(
+    params: RequestSpotInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RequestSpotInstancesResult, Unit]
+  ): Request[RequestSpotInstancesResult, AWSError] = js.native
+  
+  /**
+    * Resets the attribute of the specified IP address. For requirements, see Using reverse DNS for email applications.
+    */
+  def resetAddressAttribute(): Request[ResetAddressAttributeResult, AWSError] = js.native
+  def resetAddressAttribute(callback: js.Function2[/* err */ AWSError, /* data */ ResetAddressAttributeResult, Unit]): Request[ResetAddressAttributeResult, AWSError] = js.native
+  /**
+    * Resets the attribute of the specified IP address. For requirements, see Using reverse DNS for email applications.
+    */
+  def resetAddressAttribute(params: ResetAddressAttributeRequest): Request[ResetAddressAttributeResult, AWSError] = js.native
+  def resetAddressAttribute(
+    params: ResetAddressAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ResetAddressAttributeResult, Unit]
+  ): Request[ResetAddressAttributeResult, AWSError] = js.native
+  
+  /**
+    * Resets the default KMS key for EBS encryption for your account in this Region to the Amazon Web Services managed KMS key for EBS. After resetting the default KMS key to the Amazon Web Services managed KMS key, you can continue to encrypt by a customer managed KMS key by specifying it when you create the volume. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def resetEbsDefaultKmsKeyId(): Request[ResetEbsDefaultKmsKeyIdResult, AWSError] = js.native
+  def resetEbsDefaultKmsKeyId(callback: js.Function2[/* err */ AWSError, /* data */ ResetEbsDefaultKmsKeyIdResult, Unit]): Request[ResetEbsDefaultKmsKeyIdResult, AWSError] = js.native
+  /**
+    * Resets the default KMS key for EBS encryption for your account in this Region to the Amazon Web Services managed KMS key for EBS. After resetting the default KMS key to the Amazon Web Services managed KMS key, you can continue to encrypt by a customer managed KMS key by specifying it when you create the volume. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def resetEbsDefaultKmsKeyId(params: ResetEbsDefaultKmsKeyIdRequest): Request[ResetEbsDefaultKmsKeyIdResult, AWSError] = js.native
+  def resetEbsDefaultKmsKeyId(
+    params: ResetEbsDefaultKmsKeyIdRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ResetEbsDefaultKmsKeyIdResult, Unit]
+  ): Request[ResetEbsDefaultKmsKeyIdResult, AWSError] = js.native
+  
+  /**
+    * Resets the specified attribute of the specified Amazon FPGA Image (AFI) to its default value. You can only reset the load permission attribute.
+    */
+  def resetFpgaImageAttribute(): Request[ResetFpgaImageAttributeResult, AWSError] = js.native
+  def resetFpgaImageAttribute(callback: js.Function2[/* err */ AWSError, /* data */ ResetFpgaImageAttributeResult, Unit]): Request[ResetFpgaImageAttributeResult, AWSError] = js.native
+  /**
+    * Resets the specified attribute of the specified Amazon FPGA Image (AFI) to its default value. You can only reset the load permission attribute.
+    */
+  def resetFpgaImageAttribute(params: ResetFpgaImageAttributeRequest): Request[ResetFpgaImageAttributeResult, AWSError] = js.native
+  def resetFpgaImageAttribute(
+    params: ResetFpgaImageAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ResetFpgaImageAttributeResult, Unit]
+  ): Request[ResetFpgaImageAttributeResult, AWSError] = js.native
+  
+  /**
+    * Resets an attribute of an AMI to its default value.
+    */
+  def resetImageAttribute(): Request[js.Object, AWSError] = js.native
+  def resetImageAttribute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Resets an attribute of an AMI to its default value.
+    */
+  def resetImageAttribute(params: ResetImageAttributeRequest): Request[js.Object, AWSError] = js.native
+  def resetImageAttribute(
+    params: ResetImageAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Resets an attribute of an instance to its default value. To reset the kernel or ramdisk, the instance must be in a stopped state. To reset the sourceDestCheck, the instance can be either running or stopped. The sourceDestCheck attribute controls whether source/destination checking is enabled. The default value is true, which means checking is enabled. This value must be false for a NAT instance to perform NAT. For more information, see NAT Instances in the Amazon VPC User Guide.
+    */
+  def resetInstanceAttribute(): Request[js.Object, AWSError] = js.native
+  def resetInstanceAttribute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Resets an attribute of an instance to its default value. To reset the kernel or ramdisk, the instance must be in a stopped state. To reset the sourceDestCheck, the instance can be either running or stopped. The sourceDestCheck attribute controls whether source/destination checking is enabled. The default value is true, which means checking is enabled. This value must be false for a NAT instance to perform NAT. For more information, see NAT Instances in the Amazon VPC User Guide.
+    */
+  def resetInstanceAttribute(params: ResetInstanceAttributeRequest): Request[js.Object, AWSError] = js.native
+  def resetInstanceAttribute(
+    params: ResetInstanceAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Resets a network interface attribute. You can specify only one attribute at a time.
+    */
+  def resetNetworkInterfaceAttribute(): Request[js.Object, AWSError] = js.native
+  def resetNetworkInterfaceAttribute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Resets a network interface attribute. You can specify only one attribute at a time.
+    */
+  def resetNetworkInterfaceAttribute(params: ResetNetworkInterfaceAttributeRequest): Request[js.Object, AWSError] = js.native
+  def resetNetworkInterfaceAttribute(
+    params: ResetNetworkInterfaceAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Resets permission settings for the specified snapshot. For more information about modifying snapshot permissions, see Share a snapshot in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def resetSnapshotAttribute(): Request[js.Object, AWSError] = js.native
+  def resetSnapshotAttribute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Resets permission settings for the specified snapshot. For more information about modifying snapshot permissions, see Share a snapshot in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def resetSnapshotAttribute(params: ResetSnapshotAttributeRequest): Request[js.Object, AWSError] = js.native
+  def resetSnapshotAttribute(
+    params: ResetSnapshotAttributeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Restores an Elastic IP address that was previously moved to the EC2-VPC platform back to the EC2-Classic platform. You cannot move an Elastic IP address that was originally allocated for use in EC2-VPC. The Elastic IP address must not be associated with an instance or network interface.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def restoreAddressToClassic(): Request[RestoreAddressToClassicResult, AWSError] = js.native
+  def restoreAddressToClassic(callback: js.Function2[/* err */ AWSError, /* data */ RestoreAddressToClassicResult, Unit]): Request[RestoreAddressToClassicResult, AWSError] = js.native
+  /**
+    * Restores an Elastic IP address that was previously moved to the EC2-VPC platform back to the EC2-Classic platform. You cannot move an Elastic IP address that was originally allocated for use in EC2-VPC. The Elastic IP address must not be associated with an instance or network interface.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def restoreAddressToClassic(params: RestoreAddressToClassicRequest): Request[RestoreAddressToClassicResult, AWSError] = js.native
+  def restoreAddressToClassic(
+    params: RestoreAddressToClassicRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RestoreAddressToClassicResult, Unit]
+  ): Request[RestoreAddressToClassicResult, AWSError] = js.native
+  
+  /**
+    * Restores an AMI from the Recycle Bin. For more information, see Recycle Bin in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def restoreImageFromRecycleBin(): Request[RestoreImageFromRecycleBinResult, AWSError] = js.native
+  def restoreImageFromRecycleBin(callback: js.Function2[/* err */ AWSError, /* data */ RestoreImageFromRecycleBinResult, Unit]): Request[RestoreImageFromRecycleBinResult, AWSError] = js.native
+  /**
+    * Restores an AMI from the Recycle Bin. For more information, see Recycle Bin in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def restoreImageFromRecycleBin(params: RestoreImageFromRecycleBinRequest): Request[RestoreImageFromRecycleBinResult, AWSError] = js.native
+  def restoreImageFromRecycleBin(
+    params: RestoreImageFromRecycleBinRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RestoreImageFromRecycleBinResult, Unit]
+  ): Request[RestoreImageFromRecycleBinResult, AWSError] = js.native
+  
+  /**
+    * Restores the entries from a previous version of a managed prefix list to a new version of the prefix list.
+    */
+  def restoreManagedPrefixListVersion(): Request[RestoreManagedPrefixListVersionResult, AWSError] = js.native
+  def restoreManagedPrefixListVersion(callback: js.Function2[/* err */ AWSError, /* data */ RestoreManagedPrefixListVersionResult, Unit]): Request[RestoreManagedPrefixListVersionResult, AWSError] = js.native
+  /**
+    * Restores the entries from a previous version of a managed prefix list to a new version of the prefix list.
+    */
+  def restoreManagedPrefixListVersion(params: RestoreManagedPrefixListVersionRequest): Request[RestoreManagedPrefixListVersionResult, AWSError] = js.native
+  def restoreManagedPrefixListVersion(
+    params: RestoreManagedPrefixListVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RestoreManagedPrefixListVersionResult, Unit]
+  ): Request[RestoreManagedPrefixListVersionResult, AWSError] = js.native
+  
+  /**
+    * Restores a snapshot from the Recycle Bin. For more information, see Restore snapshots from the Recycle Bin in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def restoreSnapshotFromRecycleBin(): Request[RestoreSnapshotFromRecycleBinResult, AWSError] = js.native
+  def restoreSnapshotFromRecycleBin(callback: js.Function2[/* err */ AWSError, /* data */ RestoreSnapshotFromRecycleBinResult, Unit]): Request[RestoreSnapshotFromRecycleBinResult, AWSError] = js.native
+  /**
+    * Restores a snapshot from the Recycle Bin. For more information, see Restore snapshots from the Recycle Bin in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def restoreSnapshotFromRecycleBin(params: RestoreSnapshotFromRecycleBinRequest): Request[RestoreSnapshotFromRecycleBinResult, AWSError] = js.native
+  def restoreSnapshotFromRecycleBin(
+    params: RestoreSnapshotFromRecycleBinRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RestoreSnapshotFromRecycleBinResult, Unit]
+  ): Request[RestoreSnapshotFromRecycleBinResult, AWSError] = js.native
+  
+  /**
+    * Restores an archived Amazon EBS snapshot for use temporarily or permanently, or modifies the restore period or restore type for a snapshot that was previously temporarily restored. For more information see  Restore an archived snapshot and  modify the restore period or restore type for a temporarily restored snapshot in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def restoreSnapshotTier(): Request[RestoreSnapshotTierResult, AWSError] = js.native
+  def restoreSnapshotTier(callback: js.Function2[/* err */ AWSError, /* data */ RestoreSnapshotTierResult, Unit]): Request[RestoreSnapshotTierResult, AWSError] = js.native
+  /**
+    * Restores an archived Amazon EBS snapshot for use temporarily or permanently, or modifies the restore period or restore type for a snapshot that was previously temporarily restored. For more information see  Restore an archived snapshot and  modify the restore period or restore type for a temporarily restored snapshot in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def restoreSnapshotTier(params: RestoreSnapshotTierRequest): Request[RestoreSnapshotTierResult, AWSError] = js.native
+  def restoreSnapshotTier(
+    params: RestoreSnapshotTierRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RestoreSnapshotTierResult, Unit]
+  ): Request[RestoreSnapshotTierResult, AWSError] = js.native
+  
+  /**
+    * Removes an ingress authorization rule from a Client VPN endpoint. 
+    */
+  def revokeClientVpnIngress(): Request[RevokeClientVpnIngressResult, AWSError] = js.native
+  def revokeClientVpnIngress(callback: js.Function2[/* err */ AWSError, /* data */ RevokeClientVpnIngressResult, Unit]): Request[RevokeClientVpnIngressResult, AWSError] = js.native
+  /**
+    * Removes an ingress authorization rule from a Client VPN endpoint. 
+    */
+  def revokeClientVpnIngress(params: RevokeClientVpnIngressRequest): Request[RevokeClientVpnIngressResult, AWSError] = js.native
+  def revokeClientVpnIngress(
+    params: RevokeClientVpnIngressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RevokeClientVpnIngressResult, Unit]
+  ): Request[RevokeClientVpnIngressResult, AWSError] = js.native
+  
+  /**
+    * [VPC only] Removes the specified outbound (egress) rules from a security group for EC2-VPC. This action does not apply to security groups for use in EC2-Classic. You can specify rules using either rule IDs or security group rule properties. If you use rule properties, the values that you specify (for example, ports) must match the existing rule's values exactly. Each rule has a protocol, from and to ports, and destination (CIDR range, security group, or prefix list). For the TCP and UDP protocols, you must also specify the destination port or range of ports. For the ICMP protocol, you must also specify the ICMP type and code. If the security group rule has a description, you do not need to specify the description to revoke the rule. [Default VPC] If the values you specify do not match the existing rule's values, no error is returned, and the output describes the security group rules that were not revoked. Amazon Web Services recommends that you describe the security group to verify that the rules were removed. Rule changes are propagated to instances within the security group as quickly as possible. However, a small delay might occur.
+    */
+  def revokeSecurityGroupEgress(): Request[RevokeSecurityGroupEgressResult, AWSError] = js.native
+  def revokeSecurityGroupEgress(callback: js.Function2[/* err */ AWSError, /* data */ RevokeSecurityGroupEgressResult, Unit]): Request[RevokeSecurityGroupEgressResult, AWSError] = js.native
+  /**
+    * [VPC only] Removes the specified outbound (egress) rules from a security group for EC2-VPC. This action does not apply to security groups for use in EC2-Classic. You can specify rules using either rule IDs or security group rule properties. If you use rule properties, the values that you specify (for example, ports) must match the existing rule's values exactly. Each rule has a protocol, from and to ports, and destination (CIDR range, security group, or prefix list). For the TCP and UDP protocols, you must also specify the destination port or range of ports. For the ICMP protocol, you must also specify the ICMP type and code. If the security group rule has a description, you do not need to specify the description to revoke the rule. [Default VPC] If the values you specify do not match the existing rule's values, no error is returned, and the output describes the security group rules that were not revoked. Amazon Web Services recommends that you describe the security group to verify that the rules were removed. Rule changes are propagated to instances within the security group as quickly as possible. However, a small delay might occur.
+    */
+  def revokeSecurityGroupEgress(params: RevokeSecurityGroupEgressRequest): Request[RevokeSecurityGroupEgressResult, AWSError] = js.native
+  def revokeSecurityGroupEgress(
+    params: RevokeSecurityGroupEgressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RevokeSecurityGroupEgressResult, Unit]
+  ): Request[RevokeSecurityGroupEgressResult, AWSError] = js.native
+  
+  /**
+    * Removes the specified inbound (ingress) rules from a security group. You can specify rules using either rule IDs or security group rule properties. If you use rule properties, the values that you specify (for example, ports) must match the existing rule's values exactly. Each rule has a protocol, from and to ports, and source (CIDR range, security group, or prefix list). For the TCP and UDP protocols, you must also specify the destination port or range of ports. For the ICMP protocol, you must also specify the ICMP type and code. If the security group rule has a description, you do not need to specify the description to revoke the rule. [EC2-Classic, default VPC] If the values you specify do not match the existing rule's values, no error is returned, and the output describes the security group rules that were not revoked. Amazon Web Services recommends that you describe the security group to verify that the rules were removed. Rule changes are propagated to instances within the security group as quickly as possible. However, a small delay might occur.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def revokeSecurityGroupIngress(): Request[RevokeSecurityGroupIngressResult, AWSError] = js.native
+  def revokeSecurityGroupIngress(callback: js.Function2[/* err */ AWSError, /* data */ RevokeSecurityGroupIngressResult, Unit]): Request[RevokeSecurityGroupIngressResult, AWSError] = js.native
+  /**
+    * Removes the specified inbound (ingress) rules from a security group. You can specify rules using either rule IDs or security group rule properties. If you use rule properties, the values that you specify (for example, ports) must match the existing rule's values exactly. Each rule has a protocol, from and to ports, and source (CIDR range, security group, or prefix list). For the TCP and UDP protocols, you must also specify the destination port or range of ports. For the ICMP protocol, you must also specify the ICMP type and code. If the security group rule has a description, you do not need to specify the description to revoke the rule. [EC2-Classic, default VPC] If the values you specify do not match the existing rule's values, no error is returned, and the output describes the security group rules that were not revoked. Amazon Web Services recommends that you describe the security group to verify that the rules were removed. Rule changes are propagated to instances within the security group as quickly as possible. However, a small delay might occur.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    */
+  def revokeSecurityGroupIngress(params: RevokeSecurityGroupIngressRequest): Request[RevokeSecurityGroupIngressResult, AWSError] = js.native
+  def revokeSecurityGroupIngress(
+    params: RevokeSecurityGroupIngressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RevokeSecurityGroupIngressResult, Unit]
+  ): Request[RevokeSecurityGroupIngressResult, AWSError] = js.native
+  
+  /**
+    * Launches the specified number of instances using an AMI for which you have permissions. You can specify a number of options, or leave the default options. The following rules apply:   [EC2-VPC] If you don't specify a subnet ID, we choose a default subnet from your default VPC for you. If you don't have a default VPC, you must specify a subnet ID in the request.   [EC2-Classic] If don't specify an Availability Zone, we choose one for you.   Some instance types must be launched into a VPC. If you do not have a default VPC, or if you do not specify a subnet ID, the request fails. For more information, see Instance types available only in a VPC.   [EC2-VPC] All instances have a network interface with a primary private IPv4 address. If you don't specify this address, we choose one from the IPv4 range of your subnet.   Not all instance types support IPv6 addresses. For more information, see Instance types.   If you don't specify a security group ID, we use the default security group. For more information, see Security groups.   If any of the AMIs have a product code attached for which the user has not subscribed, the request fails.   You can create a launch template, which is a resource that contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify the launch template instead of specifying the launch parameters. To ensure faster instance launches, break up large requests into smaller batches. For example, create five separate launch requests for 100 instances each instead of one launch request for 500 instances. An instance is ready for you to use when it's in the running state. You can check the state of your instance using DescribeInstances. You can tag instances and EBS volumes during launch, after launch, or both. For more information, see CreateTags and Tagging your Amazon EC2 resources. Linux instances have access to the public key of the key pair at boot. You can use this key to provide secure access to the instance. Amazon EC2 public images use this feature to provide secure access without passwords. For more information, see Key pairs. For troubleshooting, see What to do if an instance immediately terminates, and Troubleshooting connecting to your instance.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon EC2 User Guide. 
+    */
+  def runInstances(): Request[Reservation, AWSError] = js.native
+  def runInstances(callback: js.Function2[/* err */ AWSError, /* data */ Reservation, Unit]): Request[Reservation, AWSError] = js.native
+  /**
+    * Launches the specified number of instances using an AMI for which you have permissions. You can specify a number of options, or leave the default options. The following rules apply:   [EC2-VPC] If you don't specify a subnet ID, we choose a default subnet from your default VPC for you. If you don't have a default VPC, you must specify a subnet ID in the request.   [EC2-Classic] If don't specify an Availability Zone, we choose one for you.   Some instance types must be launched into a VPC. If you do not have a default VPC, or if you do not specify a subnet ID, the request fails. For more information, see Instance types available only in a VPC.   [EC2-VPC] All instances have a network interface with a primary private IPv4 address. If you don't specify this address, we choose one from the IPv4 range of your subnet.   Not all instance types support IPv6 addresses. For more information, see Instance types.   If you don't specify a security group ID, we use the default security group. For more information, see Security groups.   If any of the AMIs have a product code attached for which the user has not subscribed, the request fails.   You can create a launch template, which is a resource that contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify the launch template instead of specifying the launch parameters. To ensure faster instance launches, break up large requests into smaller batches. For example, create five separate launch requests for 100 instances each instead of one launch request for 500 instances. An instance is ready for you to use when it's in the running state. You can check the state of your instance using DescribeInstances. You can tag instances and EBS volumes during launch, after launch, or both. For more information, see CreateTags and Tagging your Amazon EC2 resources. Linux instances have access to the public key of the key pair at boot. You can use this key to provide secure access to the instance. Amazon EC2 public images use this feature to provide secure access without passwords. For more information, see Key pairs. For troubleshooting, see What to do if an instance immediately terminates, and Troubleshooting connecting to your instance.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon EC2 User Guide. 
+    */
+  def runInstances(params: RunInstancesRequest): Request[Reservation, AWSError] = js.native
+  def runInstances(
+    params: RunInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ Reservation, Unit]
+  ): Request[Reservation, AWSError] = js.native
+  
+  /**
+    * Launches the specified Scheduled Instances. Before you can launch a Scheduled Instance, you must purchase it and obtain an identifier using PurchaseScheduledInstances. You must launch a Scheduled Instance during its scheduled time period. You can't stop or reboot a Scheduled Instance, but you can terminate it as needed. If you terminate a Scheduled Instance before the current scheduled time period ends, you can launch it again after a few minutes. For more information, see Scheduled Instances in the Amazon EC2 User Guide.
+    */
+  def runScheduledInstances(): Request[RunScheduledInstancesResult, AWSError] = js.native
+  def runScheduledInstances(callback: js.Function2[/* err */ AWSError, /* data */ RunScheduledInstancesResult, Unit]): Request[RunScheduledInstancesResult, AWSError] = js.native
+  /**
+    * Launches the specified Scheduled Instances. Before you can launch a Scheduled Instance, you must purchase it and obtain an identifier using PurchaseScheduledInstances. You must launch a Scheduled Instance during its scheduled time period. You can't stop or reboot a Scheduled Instance, but you can terminate it as needed. If you terminate a Scheduled Instance before the current scheduled time period ends, you can launch it again after a few minutes. For more information, see Scheduled Instances in the Amazon EC2 User Guide.
+    */
+  def runScheduledInstances(params: RunScheduledInstancesRequest): Request[RunScheduledInstancesResult, AWSError] = js.native
+  def runScheduledInstances(
+    params: RunScheduledInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RunScheduledInstancesResult, Unit]
+  ): Request[RunScheduledInstancesResult, AWSError] = js.native
+  
+  /**
+    * Searches for routes in the specified local gateway route table.
+    */
+  def searchLocalGatewayRoutes(): Request[SearchLocalGatewayRoutesResult, AWSError] = js.native
+  def searchLocalGatewayRoutes(callback: js.Function2[/* err */ AWSError, /* data */ SearchLocalGatewayRoutesResult, Unit]): Request[SearchLocalGatewayRoutesResult, AWSError] = js.native
+  /**
+    * Searches for routes in the specified local gateway route table.
+    */
+  def searchLocalGatewayRoutes(params: SearchLocalGatewayRoutesRequest): Request[SearchLocalGatewayRoutesResult, AWSError] = js.native
+  def searchLocalGatewayRoutes(
+    params: SearchLocalGatewayRoutesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SearchLocalGatewayRoutesResult, Unit]
+  ): Request[SearchLocalGatewayRoutesResult, AWSError] = js.native
+  
+  /**
+    * Searches one or more transit gateway multicast groups and returns the group membership information.
+    */
+  def searchTransitGatewayMulticastGroups(): Request[SearchTransitGatewayMulticastGroupsResult, AWSError] = js.native
+  def searchTransitGatewayMulticastGroups(
+    callback: js.Function2[/* err */ AWSError, /* data */ SearchTransitGatewayMulticastGroupsResult, Unit]
+  ): Request[SearchTransitGatewayMulticastGroupsResult, AWSError] = js.native
+  /**
+    * Searches one or more transit gateway multicast groups and returns the group membership information.
+    */
+  def searchTransitGatewayMulticastGroups(params: SearchTransitGatewayMulticastGroupsRequest): Request[SearchTransitGatewayMulticastGroupsResult, AWSError] = js.native
+  def searchTransitGatewayMulticastGroups(
+    params: SearchTransitGatewayMulticastGroupsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SearchTransitGatewayMulticastGroupsResult, Unit]
+  ): Request[SearchTransitGatewayMulticastGroupsResult, AWSError] = js.native
+  
+  /**
+    * Searches for routes in the specified transit gateway route table.
+    */
+  def searchTransitGatewayRoutes(): Request[SearchTransitGatewayRoutesResult, AWSError] = js.native
+  def searchTransitGatewayRoutes(callback: js.Function2[/* err */ AWSError, /* data */ SearchTransitGatewayRoutesResult, Unit]): Request[SearchTransitGatewayRoutesResult, AWSError] = js.native
+  /**
+    * Searches for routes in the specified transit gateway route table.
+    */
+  def searchTransitGatewayRoutes(params: SearchTransitGatewayRoutesRequest): Request[SearchTransitGatewayRoutesResult, AWSError] = js.native
+  def searchTransitGatewayRoutes(
+    params: SearchTransitGatewayRoutesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SearchTransitGatewayRoutesResult, Unit]
+  ): Request[SearchTransitGatewayRoutesResult, AWSError] = js.native
+  
+  /**
+    * Sends a diagnostic interrupt to the specified Amazon EC2 instance to trigger a kernel panic (on Linux instances), or a blue screen/stop error (on Windows instances). For instances based on Intel and AMD processors, the interrupt is received as a non-maskable interrupt (NMI). In general, the operating system crashes and reboots when a kernel panic or stop error is triggered. The operating system can also be configured to perform diagnostic tasks, such as generating a memory dump file, loading a secondary kernel, or obtaining a call trace. Before sending a diagnostic interrupt to your instance, ensure that its operating system is configured to perform the required diagnostic tasks. For more information about configuring your operating system to generate a crash dump when a kernel panic or stop error occurs, see Send a diagnostic interrupt (for advanced users) (Linux instances) or Send a diagnostic interrupt (for advanced users) (Windows instances).
+    */
+  def sendDiagnosticInterrupt(): Request[js.Object, AWSError] = js.native
+  def sendDiagnosticInterrupt(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Sends a diagnostic interrupt to the specified Amazon EC2 instance to trigger a kernel panic (on Linux instances), or a blue screen/stop error (on Windows instances). For instances based on Intel and AMD processors, the interrupt is received as a non-maskable interrupt (NMI). In general, the operating system crashes and reboots when a kernel panic or stop error is triggered. The operating system can also be configured to perform diagnostic tasks, such as generating a memory dump file, loading a secondary kernel, or obtaining a call trace. Before sending a diagnostic interrupt to your instance, ensure that its operating system is configured to perform the required diagnostic tasks. For more information about configuring your operating system to generate a crash dump when a kernel panic or stop error occurs, see Send a diagnostic interrupt (for advanced users) (Linux instances) or Send a diagnostic interrupt (for advanced users) (Windows instances).
+    */
+  def sendDiagnosticInterrupt(params: SendDiagnosticInterruptRequest): Request[js.Object, AWSError] = js.native
+  def sendDiagnosticInterrupt(
+    params: SendDiagnosticInterruptRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Starts an Amazon EBS-backed instance that you've previously stopped. Instances that use Amazon EBS volumes as their root devices can be quickly stopped and started. When an instance is stopped, the compute resources are released and you are not billed for instance usage. However, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. You can restart your instance at any time. Every time you start your instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. Before stopping an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM. Performing this operation on an instance that uses an instance store as its root device returns an error. If you attempt to start a T3 instance with host tenancy and the unlimted CPU credit option, the request fails. The unlimited CPU credit option is not supported on Dedicated Hosts. Before you start the instance, either change its CPU credit option to standard, or change its tenancy to default or dedicated. For more information, see Stop and start your instance in the Amazon EC2 User Guide.
+    */
+  def startInstances(): Request[StartInstancesResult, AWSError] = js.native
+  def startInstances(callback: js.Function2[/* err */ AWSError, /* data */ StartInstancesResult, Unit]): Request[StartInstancesResult, AWSError] = js.native
+  /**
+    * Starts an Amazon EBS-backed instance that you've previously stopped. Instances that use Amazon EBS volumes as their root devices can be quickly stopped and started. When an instance is stopped, the compute resources are released and you are not billed for instance usage. However, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. You can restart your instance at any time. Every time you start your instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. Before stopping an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM. Performing this operation on an instance that uses an instance store as its root device returns an error. If you attempt to start a T3 instance with host tenancy and the unlimted CPU credit option, the request fails. The unlimited CPU credit option is not supported on Dedicated Hosts. Before you start the instance, either change its CPU credit option to standard, or change its tenancy to default or dedicated. For more information, see Stop and start your instance in the Amazon EC2 User Guide.
+    */
+  def startInstances(params: StartInstancesRequest): Request[StartInstancesResult, AWSError] = js.native
+  def startInstances(
+    params: StartInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartInstancesResult, Unit]
+  ): Request[StartInstancesResult, AWSError] = js.native
+  
+  /**
+    * Starts analyzing the specified Network Access Scope.
+    */
+  def startNetworkInsightsAccessScopeAnalysis(): Request[StartNetworkInsightsAccessScopeAnalysisResult, AWSError] = js.native
+  def startNetworkInsightsAccessScopeAnalysis(
+    callback: js.Function2[/* err */ AWSError, /* data */ StartNetworkInsightsAccessScopeAnalysisResult, Unit]
+  ): Request[StartNetworkInsightsAccessScopeAnalysisResult, AWSError] = js.native
+  /**
+    * Starts analyzing the specified Network Access Scope.
+    */
+  def startNetworkInsightsAccessScopeAnalysis(params: StartNetworkInsightsAccessScopeAnalysisRequest): Request[StartNetworkInsightsAccessScopeAnalysisResult, AWSError] = js.native
+  def startNetworkInsightsAccessScopeAnalysis(
+    params: StartNetworkInsightsAccessScopeAnalysisRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartNetworkInsightsAccessScopeAnalysisResult, Unit]
+  ): Request[StartNetworkInsightsAccessScopeAnalysisResult, AWSError] = js.native
+  
+  /**
+    * Starts analyzing the specified path. If the path is reachable, the operation returns the shortest feasible path.
+    */
+  def startNetworkInsightsAnalysis(): Request[StartNetworkInsightsAnalysisResult, AWSError] = js.native
+  def startNetworkInsightsAnalysis(callback: js.Function2[/* err */ AWSError, /* data */ StartNetworkInsightsAnalysisResult, Unit]): Request[StartNetworkInsightsAnalysisResult, AWSError] = js.native
+  /**
+    * Starts analyzing the specified path. If the path is reachable, the operation returns the shortest feasible path.
+    */
+  def startNetworkInsightsAnalysis(params: StartNetworkInsightsAnalysisRequest): Request[StartNetworkInsightsAnalysisResult, AWSError] = js.native
+  def startNetworkInsightsAnalysis(
+    params: StartNetworkInsightsAnalysisRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartNetworkInsightsAnalysisResult, Unit]
+  ): Request[StartNetworkInsightsAnalysisResult, AWSError] = js.native
+  
+  /**
+    * Initiates the verification process to prove that the service provider owns the private DNS name domain for the endpoint service. The service provider must successfully perform the verification before the consumer can use the name to access the service. Before the service provider runs this command, they must add a record to the DNS server.
+    */
+  def startVpcEndpointServicePrivateDnsVerification(): Request[StartVpcEndpointServicePrivateDnsVerificationResult, AWSError] = js.native
+  def startVpcEndpointServicePrivateDnsVerification(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ StartVpcEndpointServicePrivateDnsVerificationResult, 
+      Unit
+    ]
+  ): Request[StartVpcEndpointServicePrivateDnsVerificationResult, AWSError] = js.native
+  /**
+    * Initiates the verification process to prove that the service provider owns the private DNS name domain for the endpoint service. The service provider must successfully perform the verification before the consumer can use the name to access the service. Before the service provider runs this command, they must add a record to the DNS server.
+    */
+  def startVpcEndpointServicePrivateDnsVerification(params: StartVpcEndpointServicePrivateDnsVerificationRequest): Request[StartVpcEndpointServicePrivateDnsVerificationResult, AWSError] = js.native
+  def startVpcEndpointServicePrivateDnsVerification(
+    params: StartVpcEndpointServicePrivateDnsVerificationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ StartVpcEndpointServicePrivateDnsVerificationResult, 
+      Unit
+    ]
+  ): Request[StartVpcEndpointServicePrivateDnsVerificationResult, AWSError] = js.native
+  
+  /**
+    * Stops an Amazon EBS-backed instance. For more information, see Stop and start your instance in the Amazon EC2 User Guide. You can use the Stop action to hibernate an instance if the instance is enabled for hibernation and it meets the hibernation prerequisites. For more information, see Hibernate your instance in the Amazon EC2 User Guide. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't stop or hibernate instance store-backed instances. You can't use the Stop action to hibernate Spot Instances, but you can specify that Amazon EC2 should hibernate Spot Instances when they are interrupted. For more information, see Hibernating interrupted Spot Instances in the Amazon EC2 User Guide. When you stop or hibernate an instance, we shut it down. You can restart your instance at any time. Before stopping or hibernating an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM, but hibernating an instance does preserve data stored in RAM. If an instance cannot hibernate successfully, a normal shutdown occurs. Stopping and hibernating an instance is different to rebooting or terminating it. For example, when you stop or hibernate an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, hibernating, and terminating instances, see Instance lifecycle in the Amazon EC2 User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshoot stopping your instance in the Amazon EC2 User Guide.
+    */
+  def stopInstances(): Request[StopInstancesResult, AWSError] = js.native
+  def stopInstances(callback: js.Function2[/* err */ AWSError, /* data */ StopInstancesResult, Unit]): Request[StopInstancesResult, AWSError] = js.native
+  /**
+    * Stops an Amazon EBS-backed instance. For more information, see Stop and start your instance in the Amazon EC2 User Guide. You can use the Stop action to hibernate an instance if the instance is enabled for hibernation and it meets the hibernation prerequisites. For more information, see Hibernate your instance in the Amazon EC2 User Guide. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't stop or hibernate instance store-backed instances. You can't use the Stop action to hibernate Spot Instances, but you can specify that Amazon EC2 should hibernate Spot Instances when they are interrupted. For more information, see Hibernating interrupted Spot Instances in the Amazon EC2 User Guide. When you stop or hibernate an instance, we shut it down. You can restart your instance at any time. Before stopping or hibernating an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM, but hibernating an instance does preserve data stored in RAM. If an instance cannot hibernate successfully, a normal shutdown occurs. Stopping and hibernating an instance is different to rebooting or terminating it. For example, when you stop or hibernate an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, hibernating, and terminating instances, see Instance lifecycle in the Amazon EC2 User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshoot stopping your instance in the Amazon EC2 User Guide.
+    */
+  def stopInstances(params: StopInstancesRequest): Request[StopInstancesResult, AWSError] = js.native
+  def stopInstances(
+    params: StopInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopInstancesResult, Unit]
+  ): Request[StopInstancesResult, AWSError] = js.native
+  
+  /**
+    * Terminates active Client VPN endpoint connections. This action can be used to terminate a specific client connection, or up to five connections established by a specific user.
+    */
+  def terminateClientVpnConnections(): Request[TerminateClientVpnConnectionsResult, AWSError] = js.native
+  def terminateClientVpnConnections(callback: js.Function2[/* err */ AWSError, /* data */ TerminateClientVpnConnectionsResult, Unit]): Request[TerminateClientVpnConnectionsResult, AWSError] = js.native
+  /**
+    * Terminates active Client VPN endpoint connections. This action can be used to terminate a specific client connection, or up to five connections established by a specific user.
+    */
+  def terminateClientVpnConnections(params: TerminateClientVpnConnectionsRequest): Request[TerminateClientVpnConnectionsResult, AWSError] = js.native
+  def terminateClientVpnConnections(
+    params: TerminateClientVpnConnectionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TerminateClientVpnConnectionsResult, Unit]
+  ): Request[TerminateClientVpnConnectionsResult, AWSError] = js.native
+  
+  /**
+    * Shuts down the specified instances. This operation is idempotent; if you terminate an instance more than once, each call succeeds.  If you specify multiple instances and the request fails (for example, because of a single incorrect instance ID), none of the instances are terminated. If you terminate multiple instances across multiple Availability Zones, and one or more of the specified instances are enabled for termination protection, the request fails with the following results:   The specified instances that are in the same Availability Zone as the protected instance are not terminated.   The specified instances that are in different Availability Zones, where no other specified instances are protected, are successfully terminated.   For example, say you have the following instances:   Instance A: us-east-1a; Not protected   Instance B: us-east-1a; Not protected   Instance C: us-east-1b; Protected   Instance D: us-east-1b; not protected   If you attempt to terminate all of these instances in the same request, the request reports failure with the following results:   Instance A and Instance B are successfully terminated because none of the specified instances in us-east-1a are enabled for termination protection.   Instance C and Instance D fail to terminate because at least one of the specified instances in us-east-1b (Instance C) is enabled for termination protection.   Terminated instances remain visible after termination (for approximately one hour). By default, Amazon EC2 deletes all EBS volumes that were attached when the instance launched. Volumes attached after instance launch continue running. You can stop, start, and terminate EBS-backed instances. You can only terminate instance store-backed instances. What happens to an instance differs if you stop it or terminate it. For example, when you stop an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, any attached EBS volumes with the DeleteOnTermination block device mapping parameter set to true are automatically deleted. For more information about the differences between stopping and terminating instances, see Instance lifecycle in the Amazon EC2 User Guide. For more information about troubleshooting, see Troubleshooting terminating your instance in the Amazon EC2 User Guide.
+    */
+  def terminateInstances(): Request[TerminateInstancesResult, AWSError] = js.native
+  def terminateInstances(callback: js.Function2[/* err */ AWSError, /* data */ TerminateInstancesResult, Unit]): Request[TerminateInstancesResult, AWSError] = js.native
+  /**
+    * Shuts down the specified instances. This operation is idempotent; if you terminate an instance more than once, each call succeeds.  If you specify multiple instances and the request fails (for example, because of a single incorrect instance ID), none of the instances are terminated. If you terminate multiple instances across multiple Availability Zones, and one or more of the specified instances are enabled for termination protection, the request fails with the following results:   The specified instances that are in the same Availability Zone as the protected instance are not terminated.   The specified instances that are in different Availability Zones, where no other specified instances are protected, are successfully terminated.   For example, say you have the following instances:   Instance A: us-east-1a; Not protected   Instance B: us-east-1a; Not protected   Instance C: us-east-1b; Protected   Instance D: us-east-1b; not protected   If you attempt to terminate all of these instances in the same request, the request reports failure with the following results:   Instance A and Instance B are successfully terminated because none of the specified instances in us-east-1a are enabled for termination protection.   Instance C and Instance D fail to terminate because at least one of the specified instances in us-east-1b (Instance C) is enabled for termination protection.   Terminated instances remain visible after termination (for approximately one hour). By default, Amazon EC2 deletes all EBS volumes that were attached when the instance launched. Volumes attached after instance launch continue running. You can stop, start, and terminate EBS-backed instances. You can only terminate instance store-backed instances. What happens to an instance differs if you stop it or terminate it. For example, when you stop an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, any attached EBS volumes with the DeleteOnTermination block device mapping parameter set to true are automatically deleted. For more information about the differences between stopping and terminating instances, see Instance lifecycle in the Amazon EC2 User Guide. For more information about troubleshooting, see Troubleshooting terminating your instance in the Amazon EC2 User Guide.
+    */
+  def terminateInstances(params: TerminateInstancesRequest): Request[TerminateInstancesResult, AWSError] = js.native
+  def terminateInstances(
+    params: TerminateInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TerminateInstancesResult, Unit]
+  ): Request[TerminateInstancesResult, AWSError] = js.native
+  
+  /**
+    * Unassigns one or more IPv6 addresses IPv4 Prefix Delegation prefixes from a network interface.
+    */
+  def unassignIpv6Addresses(): Request[UnassignIpv6AddressesResult, AWSError] = js.native
+  def unassignIpv6Addresses(callback: js.Function2[/* err */ AWSError, /* data */ UnassignIpv6AddressesResult, Unit]): Request[UnassignIpv6AddressesResult, AWSError] = js.native
+  /**
+    * Unassigns one or more IPv6 addresses IPv4 Prefix Delegation prefixes from a network interface.
+    */
+  def unassignIpv6Addresses(params: UnassignIpv6AddressesRequest): Request[UnassignIpv6AddressesResult, AWSError] = js.native
+  def unassignIpv6Addresses(
+    params: UnassignIpv6AddressesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UnassignIpv6AddressesResult, Unit]
+  ): Request[UnassignIpv6AddressesResult, AWSError] = js.native
+  
+  /**
+    * Unassigns one or more secondary private IP addresses, or IPv4 Prefix Delegation prefixes from a network interface.
+    */
+  def unassignPrivateIpAddresses(): Request[js.Object, AWSError] = js.native
+  def unassignPrivateIpAddresses(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Unassigns one or more secondary private IP addresses, or IPv4 Prefix Delegation prefixes from a network interface.
+    */
+  def unassignPrivateIpAddresses(params: UnassignPrivateIpAddressesRequest): Request[js.Object, AWSError] = js.native
+  def unassignPrivateIpAddresses(
+    params: UnassignPrivateIpAddressesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Disables detailed monitoring for a running instance. For more information, see Monitoring your instances and volumes in the Amazon EC2 User Guide.
+    */
+  def unmonitorInstances(): Request[UnmonitorInstancesResult, AWSError] = js.native
+  def unmonitorInstances(callback: js.Function2[/* err */ AWSError, /* data */ UnmonitorInstancesResult, Unit]): Request[UnmonitorInstancesResult, AWSError] = js.native
+  /**
+    * Disables detailed monitoring for a running instance. For more information, see Monitoring your instances and volumes in the Amazon EC2 User Guide.
+    */
+  def unmonitorInstances(params: UnmonitorInstancesRequest): Request[UnmonitorInstancesResult, AWSError] = js.native
+  def unmonitorInstances(
+    params: UnmonitorInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UnmonitorInstancesResult, Unit]
+  ): Request[UnmonitorInstancesResult, AWSError] = js.native
+  
+  /**
+    * [VPC only] Updates the description of an egress (outbound) security group rule. You can replace an existing description, or add a description to a rule that did not have one previously. You can remove a description for a security group rule by omitting the description parameter in the request.
+    */
+  def updateSecurityGroupRuleDescriptionsEgress(): Request[UpdateSecurityGroupRuleDescriptionsEgressResult, AWSError] = js.native
+  def updateSecurityGroupRuleDescriptionsEgress(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateSecurityGroupRuleDescriptionsEgressResult, Unit]
+  ): Request[UpdateSecurityGroupRuleDescriptionsEgressResult, AWSError] = js.native
+  /**
+    * [VPC only] Updates the description of an egress (outbound) security group rule. You can replace an existing description, or add a description to a rule that did not have one previously. You can remove a description for a security group rule by omitting the description parameter in the request.
+    */
+  def updateSecurityGroupRuleDescriptionsEgress(params: UpdateSecurityGroupRuleDescriptionsEgressRequest): Request[UpdateSecurityGroupRuleDescriptionsEgressResult, AWSError] = js.native
+  def updateSecurityGroupRuleDescriptionsEgress(
+    params: UpdateSecurityGroupRuleDescriptionsEgressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateSecurityGroupRuleDescriptionsEgressResult, Unit]
+  ): Request[UpdateSecurityGroupRuleDescriptionsEgressResult, AWSError] = js.native
+  
+  /**
+    * Updates the description of an ingress (inbound) security group rule. You can replace an existing description, or add a description to a rule that did not have one previously. You can remove a description for a security group rule by omitting the description parameter in the request.
+    */
+  def updateSecurityGroupRuleDescriptionsIngress(): Request[UpdateSecurityGroupRuleDescriptionsIngressResult, AWSError] = js.native
+  def updateSecurityGroupRuleDescriptionsIngress(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ UpdateSecurityGroupRuleDescriptionsIngressResult, 
+      Unit
+    ]
+  ): Request[UpdateSecurityGroupRuleDescriptionsIngressResult, AWSError] = js.native
+  /**
+    * Updates the description of an ingress (inbound) security group rule. You can replace an existing description, or add a description to a rule that did not have one previously. You can remove a description for a security group rule by omitting the description parameter in the request.
+    */
+  def updateSecurityGroupRuleDescriptionsIngress(params: UpdateSecurityGroupRuleDescriptionsIngressRequest): Request[UpdateSecurityGroupRuleDescriptionsIngressResult, AWSError] = js.native
+  def updateSecurityGroupRuleDescriptionsIngress(
+    params: UpdateSecurityGroupRuleDescriptionsIngressRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ UpdateSecurityGroupRuleDescriptionsIngressResult, 
+      Unit
+    ]
+  ): Request[UpdateSecurityGroupRuleDescriptionsIngressResult, AWSError] = js.native
+  
+  /**
+    * Waits for the bundleTaskComplete state by periodically calling the underlying EC2.describeBundleTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_bundleTaskComplete(state: bundleTaskComplete): Request[DescribeBundleTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_bundleTaskComplete(
+    state: bundleTaskComplete,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBundleTasksResult, Unit]
+  ): Request[DescribeBundleTasksResult, AWSError] = js.native
+  /**
+    * Waits for the bundleTaskComplete state by periodically calling the underlying EC2.describeBundleTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_bundleTaskComplete(state: bundleTaskComplete, params: DescribeBundleTasksReques): Request[DescribeBundleTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_bundleTaskComplete(
+    state: bundleTaskComplete,
+    params: DescribeBundleTasksReques,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBundleTasksResult, Unit]
+  ): Request[DescribeBundleTasksResult, AWSError] = js.native
+  /**
+    * Waits for the conversionTaskCancelled state by periodically calling the underlying EC2.describeConversionTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_conversionTaskCancelled(state: conversionTaskCancelled): Request[DescribeConversionTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_conversionTaskCancelled(
+    state: conversionTaskCancelled,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeConversionTasksResult, Unit]
+  ): Request[DescribeConversionTasksResult, AWSError] = js.native
+  /**
+    * Waits for the conversionTaskCancelled state by periodically calling the underlying EC2.describeConversionTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_conversionTaskCancelled(state: conversionTaskCancelled, params: DescribeConversionTasksRe): Request[DescribeConversionTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_conversionTaskCancelled(
+    state: conversionTaskCancelled,
+    params: DescribeConversionTasksRe,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeConversionTasksResult, Unit]
+  ): Request[DescribeConversionTasksResult, AWSError] = js.native
+  /**
+    * Waits for the conversionTaskCompleted state by periodically calling the underlying EC2.describeConversionTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_conversionTaskCompleted(state: conversionTaskCompleted): Request[DescribeConversionTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_conversionTaskCompleted(
+    state: conversionTaskCompleted,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeConversionTasksResult, Unit]
+  ): Request[DescribeConversionTasksResult, AWSError] = js.native
+  /**
+    * Waits for the conversionTaskCompleted state by periodically calling the underlying EC2.describeConversionTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_conversionTaskCompleted(state: conversionTaskCompleted, params: DescribeConversionTasksRe): Request[DescribeConversionTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_conversionTaskCompleted(
+    state: conversionTaskCompleted,
+    params: DescribeConversionTasksRe,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeConversionTasksResult, Unit]
+  ): Request[DescribeConversionTasksResult, AWSError] = js.native
+  /**
+    * Waits for the conversionTaskDeleted state by periodically calling the underlying EC2.describeConversionTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_conversionTaskDeleted(state: conversionTaskDeleted): Request[DescribeConversionTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_conversionTaskDeleted(
+    state: conversionTaskDeleted,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeConversionTasksResult, Unit]
+  ): Request[DescribeConversionTasksResult, AWSError] = js.native
+  /**
+    * Waits for the conversionTaskDeleted state by periodically calling the underlying EC2.describeConversionTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_conversionTaskDeleted(state: conversionTaskDeleted, params: DescribeConversionTasksRe): Request[DescribeConversionTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_conversionTaskDeleted(
+    state: conversionTaskDeleted,
+    params: DescribeConversionTasksRe,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeConversionTasksResult, Unit]
+  ): Request[DescribeConversionTasksResult, AWSError] = js.native
+  /**
+    * Waits for the customerGatewayAvailable state by periodically calling the underlying EC2.describeCustomerGatewaysoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_customerGatewayAvailable(state: customerGatewayAvailable): Request[DescribeCustomerGatewaysResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_customerGatewayAvailable(
+    state: customerGatewayAvailable,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeCustomerGatewaysResult, Unit]
+  ): Request[DescribeCustomerGatewaysResult, AWSError] = js.native
+  /**
+    * Waits for the customerGatewayAvailable state by periodically calling the underlying EC2.describeCustomerGatewaysoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_customerGatewayAvailable(state: customerGatewayAvailable, params: DescribeCustomerGatewaysR): Request[DescribeCustomerGatewaysResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_customerGatewayAvailable(
+    state: customerGatewayAvailable,
+    params: DescribeCustomerGatewaysR,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeCustomerGatewaysResult, Unit]
+  ): Request[DescribeCustomerGatewaysResult, AWSError] = js.native
+  /**
+    * Waits for the exportTaskCancelled state by periodically calling the underlying EC2.describeExportTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_exportTaskCancelled(state: exportTaskCancelled): Request[DescribeExportTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_exportTaskCancelled(
+    state: exportTaskCancelled,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeExportTasksResult, Unit]
+  ): Request[DescribeExportTasksResult, AWSError] = js.native
+  /**
+    * Waits for the exportTaskCancelled state by periodically calling the underlying EC2.describeExportTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_exportTaskCancelled(state: exportTaskCancelled, params: DescribeExportTasksReques): Request[DescribeExportTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_exportTaskCancelled(
+    state: exportTaskCancelled,
+    params: DescribeExportTasksReques,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeExportTasksResult, Unit]
+  ): Request[DescribeExportTasksResult, AWSError] = js.native
+  /**
+    * Waits for the exportTaskCompleted state by periodically calling the underlying EC2.describeExportTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_exportTaskCompleted(state: exportTaskCompleted): Request[DescribeExportTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_exportTaskCompleted(
+    state: exportTaskCompleted,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeExportTasksResult, Unit]
+  ): Request[DescribeExportTasksResult, AWSError] = js.native
+  /**
+    * Waits for the exportTaskCompleted state by periodically calling the underlying EC2.describeExportTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_exportTaskCompleted(state: exportTaskCompleted, params: DescribeExportTasksReques): Request[DescribeExportTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_exportTaskCompleted(
+    state: exportTaskCompleted,
+    params: DescribeExportTasksReques,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeExportTasksResult, Unit]
+  ): Request[DescribeExportTasksResult, AWSError] = js.native
+  /**
+    * Waits for the imageAvailable state by periodically calling the underlying EC2.describeImagesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_imageAvailable(state: imageAvailable): Request[DescribeImagesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_imageAvailable(
+    state: imageAvailable,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImagesResult, Unit]
+  ): Request[DescribeImagesResult, AWSError] = js.native
+  /**
+    * Waits for the imageAvailable state by periodically calling the underlying EC2.describeImagesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_imageAvailable(state: imageAvailable, params: DescribeImagesRequestwait): Request[DescribeImagesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_imageAvailable(
+    state: imageAvailable,
+    params: DescribeImagesRequestwait,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImagesResult, Unit]
+  ): Request[DescribeImagesResult, AWSError] = js.native
+  /**
+    * Waits for the imageExists state by periodically calling the underlying EC2.describeImagesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_imageExists(state: imageExists): Request[DescribeImagesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_imageExists(
+    state: imageExists,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImagesResult, Unit]
+  ): Request[DescribeImagesResult, AWSError] = js.native
+  /**
+    * Waits for the imageExists state by periodically calling the underlying EC2.describeImagesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_imageExists(state: imageExists, params: DescribeImagesRequestwait): Request[DescribeImagesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_imageExists(
+    state: imageExists,
+    params: DescribeImagesRequestwait,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImagesResult, Unit]
+  ): Request[DescribeImagesResult, AWSError] = js.native
+  /**
+    * Waits for the instanceExists state by periodically calling the underlying EC2.describeInstancesoperation every 5 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_instanceExists(state: instanceExists): Request[DescribeInstancesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_instanceExists(
+    state: instanceExists,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
+  ): Request[DescribeInstancesResult, AWSError] = js.native
+  /**
+    * Waits for the instanceExists state by periodically calling the underlying EC2.describeInstancesoperation every 5 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_instanceExists(state: instanceExists, params: DescribeInstancesRequestw): Request[DescribeInstancesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_instanceExists(
+    state: instanceExists,
+    params: DescribeInstancesRequestw,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
+  ): Request[DescribeInstancesResult, AWSError] = js.native
+  /**
+    * Waits for the instanceRunning state by periodically calling the underlying EC2.describeInstancesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_instanceRunning(state: instanceRunning): Request[DescribeInstancesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_instanceRunning(
+    state: instanceRunning,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
+  ): Request[DescribeInstancesResult, AWSError] = js.native
+  /**
+    * Waits for the instanceRunning state by periodically calling the underlying EC2.describeInstancesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_instanceRunning(state: instanceRunning, params: DescribeInstancesRequestw): Request[DescribeInstancesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_instanceRunning(
+    state: instanceRunning,
+    params: DescribeInstancesRequestw,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
+  ): Request[DescribeInstancesResult, AWSError] = js.native
+  /**
+    * Waits for the instanceStatusOk state by periodically calling the underlying EC2.describeInstanceStatusoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_instanceStatusOk(state: instanceStatusOk): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_instanceStatusOk(
+    state: instanceStatusOk,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceStatusResult, Unit]
+  ): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  /**
+    * Waits for the instanceStatusOk state by periodically calling the underlying EC2.describeInstanceStatusoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_instanceStatusOk(state: instanceStatusOk, params: DescribeInstanceStatusReq): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_instanceStatusOk(
+    state: instanceStatusOk,
+    params: DescribeInstanceStatusReq,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceStatusResult, Unit]
+  ): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  /**
+    * Waits for the instanceStopped state by periodically calling the underlying EC2.describeInstancesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_instanceStopped(state: instanceStopped): Request[DescribeInstancesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_instanceStopped(
+    state: instanceStopped,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
+  ): Request[DescribeInstancesResult, AWSError] = js.native
+  /**
+    * Waits for the instanceStopped state by periodically calling the underlying EC2.describeInstancesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_instanceStopped(state: instanceStopped, params: DescribeInstancesRequestw): Request[DescribeInstancesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_instanceStopped(
+    state: instanceStopped,
+    params: DescribeInstancesRequestw,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
+  ): Request[DescribeInstancesResult, AWSError] = js.native
+  /**
+    * Waits for the instanceTerminated state by periodically calling the underlying EC2.describeInstancesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_instanceTerminated(state: instanceTerminated): Request[DescribeInstancesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_instanceTerminated(
+    state: instanceTerminated,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
+  ): Request[DescribeInstancesResult, AWSError] = js.native
+  /**
+    * Waits for the instanceTerminated state by periodically calling the underlying EC2.describeInstancesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_instanceTerminated(state: instanceTerminated, params: DescribeInstancesRequestw): Request[DescribeInstancesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_instanceTerminated(
+    state: instanceTerminated,
+    params: DescribeInstancesRequestw,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesResult, Unit]
+  ): Request[DescribeInstancesResult, AWSError] = js.native
+  /**
+    * Waits for the internetGatewayExists state by periodically calling the underlying EC2.describeInternetGatewaysoperation every 5 seconds (at most 6 times).
+    */
+  @JSName("waitFor")
+  def waitFor_internetGatewayExists(state: internetGatewayExists): Request[DescribeInternetGatewaysResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_internetGatewayExists(
+    state: internetGatewayExists,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInternetGatewaysResult, Unit]
+  ): Request[DescribeInternetGatewaysResult, AWSError] = js.native
+  /**
+    * Waits for the internetGatewayExists state by periodically calling the underlying EC2.describeInternetGatewaysoperation every 5 seconds (at most 6 times).
+    */
+  @JSName("waitFor")
+  def waitFor_internetGatewayExists(state: internetGatewayExists, params: DescribeInternetGatewaysR): Request[DescribeInternetGatewaysResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_internetGatewayExists(
+    state: internetGatewayExists,
+    params: DescribeInternetGatewaysR,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInternetGatewaysResult, Unit]
+  ): Request[DescribeInternetGatewaysResult, AWSError] = js.native
+  /**
+    * Waits for the keyPairExists state by periodically calling the underlying EC2.describeKeyPairsoperation every 5 seconds (at most 6 times).
+    */
+  @JSName("waitFor")
+  def waitFor_keyPairExists(state: keyPairExists): Request[DescribeKeyPairsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_keyPairExists(
+    state: keyPairExists,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeKeyPairsResult, Unit]
+  ): Request[DescribeKeyPairsResult, AWSError] = js.native
+  /**
+    * Waits for the keyPairExists state by periodically calling the underlying EC2.describeKeyPairsoperation every 5 seconds (at most 6 times).
+    */
+  @JSName("waitFor")
+  def waitFor_keyPairExists(state: keyPairExists, params: DescribeKeyPairsRequestwa): Request[DescribeKeyPairsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_keyPairExists(
+    state: keyPairExists,
+    params: DescribeKeyPairsRequestwa,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeKeyPairsResult, Unit]
+  ): Request[DescribeKeyPairsResult, AWSError] = js.native
+  /**
+    * Waits for the natGatewayAvailable state by periodically calling the underlying EC2.describeNatGatewaysoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_natGatewayAvailable(state: natGatewayAvailable): Request[DescribeNatGatewaysResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_natGatewayAvailable(
+    state: natGatewayAvailable,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNatGatewaysResult, Unit]
+  ): Request[DescribeNatGatewaysResult, AWSError] = js.native
+  /**
+    * Waits for the natGatewayAvailable state by periodically calling the underlying EC2.describeNatGatewaysoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_natGatewayAvailable(state: natGatewayAvailable, params: DescribeNatGatewaysReques): Request[DescribeNatGatewaysResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_natGatewayAvailable(
+    state: natGatewayAvailable,
+    params: DescribeNatGatewaysReques,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNatGatewaysResult, Unit]
+  ): Request[DescribeNatGatewaysResult, AWSError] = js.native
+  /**
+    * Waits for the natGatewayDeleted state by periodically calling the underlying EC2.describeNatGatewaysoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_natGatewayDeleted(state: natGatewayDeleted): Request[DescribeNatGatewaysResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_natGatewayDeleted(
+    state: natGatewayDeleted,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNatGatewaysResult, Unit]
+  ): Request[DescribeNatGatewaysResult, AWSError] = js.native
+  /**
+    * Waits for the natGatewayDeleted state by periodically calling the underlying EC2.describeNatGatewaysoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_natGatewayDeleted(state: natGatewayDeleted, params: DescribeNatGatewaysReques): Request[DescribeNatGatewaysResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_natGatewayDeleted(
+    state: natGatewayDeleted,
+    params: DescribeNatGatewaysReques,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNatGatewaysResult, Unit]
+  ): Request[DescribeNatGatewaysResult, AWSError] = js.native
+  /**
+    * Waits for the networkInterfaceAvailable state by periodically calling the underlying EC2.describeNetworkInterfacesoperation every 20 seconds (at most 10 times).
+    */
+  @JSName("waitFor")
+  def waitFor_networkInterfaceAvailable(state: networkInterfaceAvailable): Request[DescribeNetworkInterfacesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_networkInterfaceAvailable(
+    state: networkInterfaceAvailable,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInterfacesResult, Unit]
+  ): Request[DescribeNetworkInterfacesResult, AWSError] = js.native
+  /**
+    * Waits for the networkInterfaceAvailable state by periodically calling the underlying EC2.describeNetworkInterfacesoperation every 20 seconds (at most 10 times).
+    */
+  @JSName("waitFor")
+  def waitFor_networkInterfaceAvailable(state: networkInterfaceAvailable, params: DescribeNetworkInterfaces): Request[DescribeNetworkInterfacesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_networkInterfaceAvailable(
+    state: networkInterfaceAvailable,
+    params: DescribeNetworkInterfaces,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNetworkInterfacesResult, Unit]
+  ): Request[DescribeNetworkInterfacesResult, AWSError] = js.native
+  /**
+    * Waits for the passwordDataAvailable state by periodically calling the underlying EC2.getPasswordDataoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_passwordDataAvailable(state: passwordDataAvailable): Request[GetPasswordDataResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_passwordDataAvailable(
+    state: passwordDataAvailable,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPasswordDataResult, Unit]
+  ): Request[GetPasswordDataResult, AWSError] = js.native
+  /**
+    * Waits for the passwordDataAvailable state by periodically calling the underlying EC2.getPasswordDataoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_passwordDataAvailable(state: passwordDataAvailable, params: GetPasswordDataRequestwai): Request[GetPasswordDataResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_passwordDataAvailable(
+    state: passwordDataAvailable,
+    params: GetPasswordDataRequestwai,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPasswordDataResult, Unit]
+  ): Request[GetPasswordDataResult, AWSError] = js.native
+  /**
+    * Waits for the securityGroupExists state by periodically calling the underlying EC2.describeSecurityGroupsoperation every 5 seconds (at most 6 times).
+    */
+  @JSName("waitFor")
+  def waitFor_securityGroupExists(state: securityGroupExists): Request[DescribeSecurityGroupsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_securityGroupExists(
+    state: securityGroupExists,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSecurityGroupsResult, Unit]
+  ): Request[DescribeSecurityGroupsResult, AWSError] = js.native
+  /**
+    * Waits for the securityGroupExists state by periodically calling the underlying EC2.describeSecurityGroupsoperation every 5 seconds (at most 6 times).
+    */
+  @JSName("waitFor")
+  def waitFor_securityGroupExists(state: securityGroupExists, params: DescribeSecurityGroupsReq): Request[DescribeSecurityGroupsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_securityGroupExists(
+    state: securityGroupExists,
+    params: DescribeSecurityGroupsReq,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSecurityGroupsResult, Unit]
+  ): Request[DescribeSecurityGroupsResult, AWSError] = js.native
+  /**
+    * Waits for the snapshotCompleted state by periodically calling the underlying EC2.describeSnapshotsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_snapshotCompleted(state: snapshotCompleted): Request[DescribeSnapshotsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_snapshotCompleted(
+    state: snapshotCompleted,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotsResult, Unit]
+  ): Request[DescribeSnapshotsResult, AWSError] = js.native
+  /**
+    * Waits for the snapshotCompleted state by periodically calling the underlying EC2.describeSnapshotsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_snapshotCompleted(state: snapshotCompleted, params: DescribeSnapshotsRequestw): Request[DescribeSnapshotsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_snapshotCompleted(
+    state: snapshotCompleted,
+    params: DescribeSnapshotsRequestw,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotsResult, Unit]
+  ): Request[DescribeSnapshotsResult, AWSError] = js.native
+  /**
+    * Waits for the spotInstanceRequestFulfilled state by periodically calling the underlying EC2.describeSpotInstanceRequestsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_spotInstanceRequestFulfilled(state: spotInstanceRequestFulfilled): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_spotInstanceRequestFulfilled(
+    state: spotInstanceRequestFulfilled,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotInstanceRequestsResult, Unit]
+  ): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
+  /**
+    * Waits for the spotInstanceRequestFulfilled state by periodically calling the underlying EC2.describeSpotInstanceRequestsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_spotInstanceRequestFulfilled(state: spotInstanceRequestFulfilled, params: DescribeSpotInstanceReque): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_spotInstanceRequestFulfilled(
+    state: spotInstanceRequestFulfilled,
+    params: DescribeSpotInstanceReque,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotInstanceRequestsResult, Unit]
+  ): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
+  /**
+    * Waits for the subnetAvailable state by periodically calling the underlying EC2.describeSubnetsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_subnetAvailable(state: subnetAvailable): Request[DescribeSubnetsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_subnetAvailable(
+    state: subnetAvailable,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSubnetsResult, Unit]
+  ): Request[DescribeSubnetsResult, AWSError] = js.native
+  /**
+    * Waits for the subnetAvailable state by periodically calling the underlying EC2.describeSubnetsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_subnetAvailable(state: subnetAvailable, params: DescribeSubnetsRequestwai): Request[DescribeSubnetsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_subnetAvailable(
+    state: subnetAvailable,
+    params: DescribeSubnetsRequestwai,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSubnetsResult, Unit]
+  ): Request[DescribeSubnetsResult, AWSError] = js.native
+  /**
+    * Waits for the systemStatusOk state by periodically calling the underlying EC2.describeInstanceStatusoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_systemStatusOk(state: systemStatusOk): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_systemStatusOk(
+    state: systemStatusOk,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceStatusResult, Unit]
+  ): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  /**
+    * Waits for the systemStatusOk state by periodically calling the underlying EC2.describeInstanceStatusoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_systemStatusOk(state: systemStatusOk, params: DescribeInstanceStatusReq): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_systemStatusOk(
+    state: systemStatusOk,
+    params: DescribeInstanceStatusReq,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceStatusResult, Unit]
+  ): Request[DescribeInstanceStatusResult, AWSError] = js.native
+  /**
+    * Waits for the volumeAvailable state by periodically calling the underlying EC2.describeVolumesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_volumeAvailable(state: volumeAvailable): Request[DescribeVolumesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_volumeAvailable(
+    state: volumeAvailable,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesResult, Unit]
+  ): Request[DescribeVolumesResult, AWSError] = js.native
+  /**
+    * Waits for the volumeAvailable state by periodically calling the underlying EC2.describeVolumesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_volumeAvailable(state: volumeAvailable, params: DescribeVolumesRequestwai): Request[DescribeVolumesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_volumeAvailable(
+    state: volumeAvailable,
+    params: DescribeVolumesRequestwai,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesResult, Unit]
+  ): Request[DescribeVolumesResult, AWSError] = js.native
+  /**
+    * Waits for the volumeDeleted state by periodically calling the underlying EC2.describeVolumesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_volumeDeleted(state: volumeDeleted): Request[DescribeVolumesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_volumeDeleted(
+    state: volumeDeleted,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesResult, Unit]
+  ): Request[DescribeVolumesResult, AWSError] = js.native
+  /**
+    * Waits for the volumeDeleted state by periodically calling the underlying EC2.describeVolumesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_volumeDeleted(state: volumeDeleted, params: DescribeVolumesRequestwai): Request[DescribeVolumesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_volumeDeleted(
+    state: volumeDeleted,
+    params: DescribeVolumesRequestwai,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesResult, Unit]
+  ): Request[DescribeVolumesResult, AWSError] = js.native
+  /**
+    * Waits for the volumeInUse state by periodically calling the underlying EC2.describeVolumesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_volumeInUse(state: volumeInUse): Request[DescribeVolumesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_volumeInUse(
+    state: volumeInUse,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesResult, Unit]
+  ): Request[DescribeVolumesResult, AWSError] = js.native
+  /**
+    * Waits for the volumeInUse state by periodically calling the underlying EC2.describeVolumesoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_volumeInUse(state: volumeInUse, params: DescribeVolumesRequestwai): Request[DescribeVolumesResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_volumeInUse(
+    state: volumeInUse,
+    params: DescribeVolumesRequestwai,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesResult, Unit]
+  ): Request[DescribeVolumesResult, AWSError] = js.native
+  /**
+    * Waits for the vpcAvailable state by periodically calling the underlying EC2.describeVpcsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_vpcAvailable(state: vpcAvailable): Request[DescribeVpcsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_vpcAvailable(
+    state: vpcAvailable,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcsResult, Unit]
+  ): Request[DescribeVpcsResult, AWSError] = js.native
+  /**
+    * Waits for the vpcAvailable state by periodically calling the underlying EC2.describeVpcsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_vpcAvailable(state: vpcAvailable, params: DescribeVpcsRequestwaiter): Request[DescribeVpcsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_vpcAvailable(
+    state: vpcAvailable,
+    params: DescribeVpcsRequestwaiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcsResult, Unit]
+  ): Request[DescribeVpcsResult, AWSError] = js.native
+  /**
+    * Waits for the vpcExists state by periodically calling the underlying EC2.describeVpcsoperation every 1 seconds (at most 5 times).
+    */
+  @JSName("waitFor")
+  def waitFor_vpcExists(state: vpcExists): Request[DescribeVpcsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_vpcExists(state: vpcExists, callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcsResult, Unit]): Request[DescribeVpcsResult, AWSError] = js.native
+  /**
+    * Waits for the vpcExists state by periodically calling the underlying EC2.describeVpcsoperation every 1 seconds (at most 5 times).
+    */
+  @JSName("waitFor")
+  def waitFor_vpcExists(state: vpcExists, params: DescribeVpcsRequestwaiter): Request[DescribeVpcsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_vpcExists(
+    state: vpcExists,
+    params: DescribeVpcsRequestwaiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcsResult, Unit]
+  ): Request[DescribeVpcsResult, AWSError] = js.native
+  /**
+    * Waits for the vpcPeeringConnectionDeleted state by periodically calling the underlying EC2.describeVpcPeeringConnectionsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_vpcPeeringConnectionDeleted(state: vpcPeeringConnectionDeleted): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_vpcPeeringConnectionDeleted(
+    state: vpcPeeringConnectionDeleted,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcPeeringConnectionsResult, Unit]
+  ): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  /**
+    * Waits for the vpcPeeringConnectionDeleted state by periodically calling the underlying EC2.describeVpcPeeringConnectionsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_vpcPeeringConnectionDeleted(state: vpcPeeringConnectionDeleted, params: DescribeVpcPeeringConnect): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_vpcPeeringConnectionDeleted(
+    state: vpcPeeringConnectionDeleted,
+    params: DescribeVpcPeeringConnect,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcPeeringConnectionsResult, Unit]
+  ): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  /**
+    * Waits for the vpcPeeringConnectionExists state by periodically calling the underlying EC2.describeVpcPeeringConnectionsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_vpcPeeringConnectionExists(state: vpcPeeringConnectionExists): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_vpcPeeringConnectionExists(
+    state: vpcPeeringConnectionExists,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcPeeringConnectionsResult, Unit]
+  ): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  /**
+    * Waits for the vpcPeeringConnectionExists state by periodically calling the underlying EC2.describeVpcPeeringConnectionsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_vpcPeeringConnectionExists(state: vpcPeeringConnectionExists, params: DescribeVpcPeeringConnect): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_vpcPeeringConnectionExists(
+    state: vpcPeeringConnectionExists,
+    params: DescribeVpcPeeringConnect,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcPeeringConnectionsResult, Unit]
+  ): Request[DescribeVpcPeeringConnectionsResult, AWSError] = js.native
+  /**
+    * Waits for the vpnConnectionAvailable state by periodically calling the underlying EC2.describeVpnConnectionsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_vpnConnectionAvailable(state: vpnConnectionAvailable): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_vpnConnectionAvailable(
+    state: vpnConnectionAvailable,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpnConnectionsResult, Unit]
+  ): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  /**
+    * Waits for the vpnConnectionAvailable state by periodically calling the underlying EC2.describeVpnConnectionsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_vpnConnectionAvailable(state: vpnConnectionAvailable, params: DescribeVpnConnectionsReq): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_vpnConnectionAvailable(
+    state: vpnConnectionAvailable,
+    params: DescribeVpnConnectionsReq,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpnConnectionsResult, Unit]
+  ): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  /**
+    * Waits for the vpnConnectionDeleted state by periodically calling the underlying EC2.describeVpnConnectionsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_vpnConnectionDeleted(state: vpnConnectionDeleted): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_vpnConnectionDeleted(
+    state: vpnConnectionDeleted,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpnConnectionsResult, Unit]
+  ): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  /**
+    * Waits for the vpnConnectionDeleted state by periodically calling the underlying EC2.describeVpnConnectionsoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_vpnConnectionDeleted(state: vpnConnectionDeleted, params: DescribeVpnConnectionsReq): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_vpnConnectionDeleted(
+    state: vpnConnectionDeleted,
+    params: DescribeVpnConnectionsReq,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpnConnectionsResult, Unit]
+  ): Request[DescribeVpnConnectionsResult, AWSError] = js.native
+  
+  /**
+    * Stops advertising an address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to Amazon Web Services because of BGP propagation delays.
+    */
+  def withdrawByoipCidr(): Request[WithdrawByoipCidrResult, AWSError] = js.native
+  def withdrawByoipCidr(callback: js.Function2[/* err */ AWSError, /* data */ WithdrawByoipCidrResult, Unit]): Request[WithdrawByoipCidrResult, AWSError] = js.native
+  /**
+    * Stops advertising an address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to Amazon Web Services because of BGP propagation delays.
+    */
+  def withdrawByoipCidr(params: WithdrawByoipCidrRequest): Request[WithdrawByoipCidrResult, AWSError] = js.native
+  def withdrawByoipCidr(
+    params: WithdrawByoipCidrRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ WithdrawByoipCidrResult, Unit]
+  ): Request[WithdrawByoipCidrResult, AWSError] = js.native
+}

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "ParserBase")
 @js.native
 open class ParserBase ()
-  extends typings.blackEngine.parserBaseMod.ParserBase
+  extends typings.blackEngine.parsersParserBaseMod.ParserBase

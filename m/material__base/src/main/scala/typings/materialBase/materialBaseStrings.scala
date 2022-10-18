@@ -15,10 +15,6 @@ object materialBaseStrings {
   inline def DOMContentLoaded: DOMContentLoaded = "DOMContentLoaded".asInstanceOf[DOMContentLoaded]
   
   @js.native
-  sealed trait ObserverRecord extends StObject
-  inline def ObserverRecord: ObserverRecord = "ObserverRecord".asInstanceOf[ObserverRecord]
-  
-  @js.native
   sealed trait abort
     extends StObject
        with EventType

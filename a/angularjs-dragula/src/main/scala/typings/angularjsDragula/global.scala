@@ -21,7 +21,7 @@ object global {
     val ^ : js.Any = js.native
     
     /* augmented module */
-    object mod {
+    object angularMod {
       
       object dragula {
         

@@ -55,7 +55,7 @@ object BodyCells {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setCell_id(value: String): Self = StObject.set(x, "cell_id", value.asInstanceOf[js.Any])
     
@@ -65,19 +65,19 @@ object BodyCells {
     
     inline def setColumn_header_idsUndefined: Self = StObject.set(x, "column_header_ids", js.undefined)
     
-    inline def setColumn_header_idsVarargs(value: ColumnHeaderIds*): Self = StObject.set(x, "column_header_ids", js.Array(value :_*))
+    inline def setColumn_header_idsVarargs(value: ColumnHeaderIds*): Self = StObject.set(x, "column_header_ids", js.Array(value*))
     
     inline def setColumn_header_texts(value: js.Array[ColumnHeaderTexts]): Self = StObject.set(x, "column_header_texts", value.asInstanceOf[js.Any])
     
     inline def setColumn_header_textsUndefined: Self = StObject.set(x, "column_header_texts", js.undefined)
     
-    inline def setColumn_header_textsVarargs(value: ColumnHeaderTexts*): Self = StObject.set(x, "column_header_texts", js.Array(value :_*))
+    inline def setColumn_header_textsVarargs(value: ColumnHeaderTexts*): Self = StObject.set(x, "column_header_texts", js.Array(value*))
     
     inline def setColumn_header_texts_normalized(value: js.Array[ColumnHeaderTextsNormalized]): Self = StObject.set(x, "column_header_texts_normalized", value.asInstanceOf[js.Any])
     
     inline def setColumn_header_texts_normalizedUndefined: Self = StObject.set(x, "column_header_texts_normalized", js.undefined)
     
-    inline def setColumn_header_texts_normalizedVarargs(value: ColumnHeaderTextsNormalized*): Self = StObject.set(x, "column_header_texts_normalized", js.Array(value :_*))
+    inline def setColumn_header_texts_normalizedVarargs(value: ColumnHeaderTextsNormalized*): Self = StObject.set(x, "column_header_texts_normalized", js.Array(value*))
     
     inline def setColumn_index_begin(value: Double): Self = StObject.set(x, "column_index_begin", value.asInstanceOf[js.Any])
     
@@ -95,19 +95,19 @@ object BodyCells {
     
     inline def setRow_header_idsUndefined: Self = StObject.set(x, "row_header_ids", js.undefined)
     
-    inline def setRow_header_idsVarargs(value: RowHeaderIds*): Self = StObject.set(x, "row_header_ids", js.Array(value :_*))
+    inline def setRow_header_idsVarargs(value: RowHeaderIds*): Self = StObject.set(x, "row_header_ids", js.Array(value*))
     
     inline def setRow_header_texts(value: js.Array[RowHeaderTexts]): Self = StObject.set(x, "row_header_texts", value.asInstanceOf[js.Any])
     
     inline def setRow_header_textsUndefined: Self = StObject.set(x, "row_header_texts", js.undefined)
     
-    inline def setRow_header_textsVarargs(value: RowHeaderTexts*): Self = StObject.set(x, "row_header_texts", js.Array(value :_*))
+    inline def setRow_header_textsVarargs(value: RowHeaderTexts*): Self = StObject.set(x, "row_header_texts", js.Array(value*))
     
     inline def setRow_header_texts_normalized(value: js.Array[RowHeaderTextsNormalized]): Self = StObject.set(x, "row_header_texts_normalized", value.asInstanceOf[js.Any])
     
     inline def setRow_header_texts_normalizedUndefined: Self = StObject.set(x, "row_header_texts_normalized", js.undefined)
     
-    inline def setRow_header_texts_normalizedVarargs(value: RowHeaderTextsNormalized*): Self = StObject.set(x, "row_header_texts_normalized", js.Array(value :_*))
+    inline def setRow_header_texts_normalizedVarargs(value: RowHeaderTextsNormalized*): Self = StObject.set(x, "row_header_texts_normalized", js.Array(value*))
     
     inline def setRow_index_begin(value: Double): Self = StObject.set(x, "row_index_begin", value.asInstanceOf[js.Any])
     

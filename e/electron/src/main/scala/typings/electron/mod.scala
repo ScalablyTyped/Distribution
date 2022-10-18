@@ -544,6 +544,13 @@ object mod {
     inline def fromDevToolsTargetId(targetId: String): WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDevToolsTargetId")(targetId.asInstanceOf[js.Any]).asInstanceOf[WebContents_]
     
     /**
+      * | undefined - A WebContents instance with the given WebFrameMain, or `undefined`
+      * if there is no WebContents associated with the given WebFrameMain.
+      */
+    /* static member */
+    inline def fromFrame(frame: WebFrameMain_): WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[WebContents_]
+    
+    /**
       * | undefined - A WebContents instance with the given ID, or `undefined` if there
       * is no WebContents associated with the given ID.
       */

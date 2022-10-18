@@ -1,8 +1,8 @@
 package typings.rmcPicker
 
 import typings.rmcPicker.anon.ComponentDidUpdate
-import typings.rmcPicker.pickerMixinMod.IItemProps
-import typings.rmcPicker.pickerTypesMod.IPickerProps
+import typings.rmcPicker.libPickerMixinMod.IItemProps
+import typings.rmcPicker.libPickerTypesMod.IPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

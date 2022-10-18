@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "MinBlock")
 @js.native
 open class MinBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.MinBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.MinBlock {
   /**
     * Creates a new MinBlock
     * @param name defines the block name

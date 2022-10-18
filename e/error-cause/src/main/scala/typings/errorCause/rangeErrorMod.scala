@@ -1,39 +1,28 @@
 package typings.errorCause
 
-import org.scalablytyped.runtime.Shortcut
-import typings.std.ErrorOptions
+import typings.errorCause.anon.Cause
 import typings.std.RangeErrorConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object rangeErrorMod extends Shortcut {
+object rangeErrorMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("error-cause/base/RangeError", JSImport.Default)
+  @JSImport("error-cause/RangeError", JSImport.Default)
   @js.native
-  /* standard es2022.error */
   open class default ()
     extends StObject
-       with typings.std.Error {
-    def this(message: String) = this()
-    def this(message: String, options: ErrorOptions) = this()
-    def this(message: Unit, options: ErrorOptions) = this()
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var message: String = js.native
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var name: String = js.native
+       with RangeError {
+    def this(reason: String) = this()
+    def this(reason: String, options: Cause) = this()
+    def this(reason: Unit, options: Cause) = this()
   }
-  @JSImport("error-cause/base/RangeError", JSImport.Default)
+  
   @js.native
-  val default: RangeErrorConstructor = js.native
-  
-  type _To = RangeErrorConstructor
-  
-  /* This means you don't have to write `default`, but can instead just say `rangeErrorMod.foo` */
-  override def _to: RangeErrorConstructor = default
+  trait RangeError
+    extends StObject
+       with RangeErrorConstructor {
+    
+    var cause: Any = js.native
+  }
 }

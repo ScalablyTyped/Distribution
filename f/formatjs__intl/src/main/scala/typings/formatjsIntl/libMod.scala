@@ -3,7 +3,7 @@ package typings.formatjsIntl
 import typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptions
 import typings.formatjsEcma402Abstract.typesPluralRulesMod.LDMLPluralRule
-import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
+import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
 import typings.formatjsIntl.anon.FormatsLocale
 import typings.formatjsIntl.anon.LocaleOnError
 import typings.formatjsIntl.anon.TimeZone
@@ -12,22 +12,22 @@ import typings.formatjsIntl.anon.TypeofDisplayNames
 import typings.formatjsIntl.anon.TypeofIntlListFormat
 import typings.formatjsIntl.anon.TypeofPluralRules
 import typings.formatjsIntl.anon.TypeofRelativeTimeFormat
-import typings.formatjsIntl.errorMod.IntlErrorCode
 import typings.formatjsIntl.formatjsIntlStrings.date
 import typings.formatjsIntl.formatjsIntlStrings.number
 import typings.formatjsIntl.formatjsIntlStrings.relative
 import typings.formatjsIntl.formatjsIntlStrings.time
-import typings.formatjsIntl.messageMod.FormatMessageFn
-import typings.formatjsIntl.typesMod.CustomFormats
-import typings.formatjsIntl.typesMod.FormatDateOptions
-import typings.formatjsIntl.typesMod.Formatters
-import typings.formatjsIntl.typesMod.IntlCache
-import typings.formatjsIntl.typesMod.IntlConfig
-import typings.formatjsIntl.typesMod.IntlShape
-import typings.formatjsIntl.typesMod.MessageDescriptor
-import typings.formatjsIntl.typesMod.MessageIds
-import typings.formatjsIntl.typesMod.OnErrorFn
-import typings.formatjsIntl.typesMod.OnWarnFn
+import typings.formatjsIntl.libSrcErrorMod.IntlErrorCode
+import typings.formatjsIntl.libSrcMessageMod.FormatMessageFn
+import typings.formatjsIntl.libSrcTypesMod.CustomFormats
+import typings.formatjsIntl.libSrcTypesMod.FormatDateOptions
+import typings.formatjsIntl.libSrcTypesMod.Formatters
+import typings.formatjsIntl.libSrcTypesMod.IntlCache
+import typings.formatjsIntl.libSrcTypesMod.IntlConfig
+import typings.formatjsIntl.libSrcTypesMod.IntlShape
+import typings.formatjsIntl.libSrcTypesMod.MessageDescriptor
+import typings.formatjsIntl.libSrcTypesMod.MessageIds
+import typings.formatjsIntl.libSrcTypesMod.OnErrorFn
+import typings.formatjsIntl.libSrcTypesMod.OnWarnFn
 import typings.formatjsIntlDisplaynames.mod.DisplayNames
 import typings.formatjsIntlListformat.mod.default
 import typings.intlMessageformat.mod.FormatError
@@ -88,11 +88,11 @@ object libMod {
     @JSImport("@formatjs/intl/lib", "DEFAULT_INTL_CONFIG.onError")
     @js.native
     def onError: OnErrorFn = js.native
-    inline def onError(err: typings.formatjsIntl.errorMod.InvalidConfigError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def onError(err: typings.formatjsIntl.errorMod.MessageFormatError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def onError(err: typings.formatjsIntl.errorMod.MissingDataError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def onError(err: typings.formatjsIntl.errorMod.MissingTranslationError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def onError(err: typings.formatjsIntl.errorMod.UnsupportedFormatterError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onError(err: typings.formatjsIntl.libSrcErrorMod.InvalidConfigError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onError(err: typings.formatjsIntl.libSrcErrorMod.MessageFormatError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onError(err: typings.formatjsIntl.libSrcErrorMod.MissingDataError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onError(err: typings.formatjsIntl.libSrcErrorMod.MissingTranslationError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onError(err: typings.formatjsIntl.libSrcErrorMod.UnsupportedFormatterError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def onError(err: FormatError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def onError_=(x: OnErrorFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onError")(x.asInstanceOf[js.Any])
     
@@ -110,7 +110,7 @@ object libMod {
   @JSImport("@formatjs/intl/lib", "IntlError")
   @js.native
   open class IntlError[T /* <: IntlErrorCode */] protected ()
-    extends typings.formatjsIntl.errorMod.IntlError[T] {
+    extends typings.formatjsIntl.libSrcErrorMod.IntlError[T] {
     def this(code: T, message: String) = this()
     def this(code: T, message: String, exception: js.Error) = this()
     def this(code: T, message: String, exception: Any) = this()
@@ -121,23 +121,23 @@ object libMod {
   object IntlErrorCode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.formatjsIntl.errorMod.IntlErrorCode & String] = js.native
+    def apply(value: String): js.UndefOr[typings.formatjsIntl.libSrcErrorMod.IntlErrorCode & String] = js.native
     
-    /* "FORMAT_ERROR" */ val FORMAT_ERROR: typings.formatjsIntl.errorMod.IntlErrorCode.FORMAT_ERROR & String = js.native
+    /* "FORMAT_ERROR" */ val FORMAT_ERROR: typings.formatjsIntl.libSrcErrorMod.IntlErrorCode.FORMAT_ERROR & String = js.native
     
-    /* "INVALID_CONFIG" */ val INVALID_CONFIG: typings.formatjsIntl.errorMod.IntlErrorCode.INVALID_CONFIG & String = js.native
+    /* "INVALID_CONFIG" */ val INVALID_CONFIG: typings.formatjsIntl.libSrcErrorMod.IntlErrorCode.INVALID_CONFIG & String = js.native
     
-    /* "MISSING_DATA" */ val MISSING_DATA: typings.formatjsIntl.errorMod.IntlErrorCode.MISSING_DATA & String = js.native
+    /* "MISSING_DATA" */ val MISSING_DATA: typings.formatjsIntl.libSrcErrorMod.IntlErrorCode.MISSING_DATA & String = js.native
     
-    /* "MISSING_TRANSLATION" */ val MISSING_TRANSLATION: typings.formatjsIntl.errorMod.IntlErrorCode.MISSING_TRANSLATION & String = js.native
+    /* "MISSING_TRANSLATION" */ val MISSING_TRANSLATION: typings.formatjsIntl.libSrcErrorMod.IntlErrorCode.MISSING_TRANSLATION & String = js.native
     
-    /* "UNSUPPORTED_FORMATTER" */ val UNSUPPORTED_FORMATTER: typings.formatjsIntl.errorMod.IntlErrorCode.UNSUPPORTED_FORMATTER & String = js.native
+    /* "UNSUPPORTED_FORMATTER" */ val UNSUPPORTED_FORMATTER: typings.formatjsIntl.libSrcErrorMod.IntlErrorCode.UNSUPPORTED_FORMATTER & String = js.native
   }
   
   @JSImport("@formatjs/intl/lib", "IntlFormatError")
   @js.native
   open class IntlFormatError protected ()
-    extends typings.formatjsIntl.errorMod.IntlFormatError {
+    extends typings.formatjsIntl.libSrcErrorMod.IntlFormatError {
     def this(message: String, locale: String) = this()
     def this(message: String, locale: String, exception: js.Error) = this()
     def this(message: String, locale: String, exception: Any) = this()
@@ -146,7 +146,7 @@ object libMod {
   @JSImport("@formatjs/intl/lib", "InvalidConfigError")
   @js.native
   open class InvalidConfigError protected ()
-    extends typings.formatjsIntl.errorMod.InvalidConfigError {
+    extends typings.formatjsIntl.libSrcErrorMod.InvalidConfigError {
     def this(message: String) = this()
     def this(message: String, exception: js.Error) = this()
     def this(message: String, exception: Any) = this()
@@ -155,7 +155,7 @@ object libMod {
   @JSImport("@formatjs/intl/lib", "MessageFormatError")
   @js.native
   open class MessageFormatError protected ()
-    extends typings.formatjsIntl.errorMod.MessageFormatError {
+    extends typings.formatjsIntl.libSrcErrorMod.MessageFormatError {
     def this(message: String, locale: String) = this()
     def this(message: String, locale: String, descriptor: MessageDescriptor) = this()
     def this(message: String, locale: String, descriptor: Unit, exception: js.Error) = this()
@@ -167,7 +167,7 @@ object libMod {
   @JSImport("@formatjs/intl/lib", "MissingDataError")
   @js.native
   open class MissingDataError protected ()
-    extends typings.formatjsIntl.errorMod.MissingDataError {
+    extends typings.formatjsIntl.libSrcErrorMod.MissingDataError {
     def this(message: String) = this()
     def this(message: String, exception: js.Error) = this()
     def this(message: String, exception: Any) = this()
@@ -176,14 +176,14 @@ object libMod {
   @JSImport("@formatjs/intl/lib", "MissingTranslationError")
   @js.native
   open class MissingTranslationError protected ()
-    extends typings.formatjsIntl.errorMod.MissingTranslationError {
+    extends typings.formatjsIntl.libSrcErrorMod.MissingTranslationError {
     def this(descriptor: MessageDescriptor, locale: String) = this()
   }
   
   @JSImport("@formatjs/intl/lib", "UnsupportedFormatterError")
   @js.native
   open class UnsupportedFormatterError protected ()
-    extends typings.formatjsIntl.errorMod.UnsupportedFormatterError {
+    extends typings.formatjsIntl.libSrcErrorMod.UnsupportedFormatterError {
     def this(message: String) = this()
     def this(message: String, exception: js.Error) = this()
     def this(message: String, exception: Any) = this()

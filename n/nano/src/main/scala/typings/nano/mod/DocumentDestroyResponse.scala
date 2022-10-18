@@ -4,16 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/document/common.html#delete--db-docid
+/** Document delete response.
+  * @see Docs: {@link http://docs.couchdb.org/en/latest/api/document/common.html#delete--db-docid} */
 trait DocumentDestroyResponse extends StObject {
   
-  // Document ID
+  /** Document ID */
   var id: String
   
-  // Operation status
+  /** Operation status */
   var ok: Boolean
   
-  // Revision MVCC token
+  /** Revision MVCC token */
   var rev: String
 }
 object DocumentDestroyResponse {

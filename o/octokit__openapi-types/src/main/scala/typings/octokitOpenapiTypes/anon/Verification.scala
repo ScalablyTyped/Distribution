@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Verification extends StObject {
   
-  var author: js.UndefOr[DateEmailName] = js.undefined
+  var author: js.UndefOr[DateEmail] = js.undefined
   
-  var committer: js.UndefOr[DateEmailName] = js.undefined
+  var committer: js.UndefOr[DateEmail] = js.undefined
   
   var html_url: js.UndefOr[String] = js.undefined
   
@@ -20,11 +20,11 @@ trait Verification extends StObject {
   
   var sha: js.UndefOr[String] = js.undefined
   
-  var tree: js.UndefOr[`411`] = js.undefined
+  var tree: js.UndefOr[ShaUrl] = js.undefined
   
   var url: js.UndefOr[String] = js.undefined
   
-  var verification: js.UndefOr[Verified] = js.undefined
+  var verification: js.UndefOr[Signature] = js.undefined
 }
 object Verification {
   
@@ -35,11 +35,11 @@ object Verification {
   
   extension [Self <: Verification](x: Self) {
     
-    inline def setAuthor(value: DateEmailName): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: DateEmail): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    inline def setCommitter(value: DateEmailName): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    inline def setCommitter(value: DateEmail): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
     inline def setCommitterUndefined: Self = StObject.set(x, "committer", js.undefined)
     
@@ -65,7 +65,7 @@ object Verification {
     
     inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
     
-    inline def setTree(value: `411`): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: ShaUrl): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
     inline def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
     
@@ -73,7 +73,7 @@ object Verification {
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setVerification(value: Verified): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+    inline def setVerification(value: Signature): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
     
     inline def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
   }

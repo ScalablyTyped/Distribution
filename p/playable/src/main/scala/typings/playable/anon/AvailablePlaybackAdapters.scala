@@ -1,8 +1,8 @@
 package typings.playable.anon
 
-import typings.playable.adaptersTypesMod.IPlaybackAdapterClass
-import typings.playable.configMod.IPlayerConfig
-import typings.playable.eventEmitterTypesMod.IEventEmitter
+import typings.playable.distSrcCoreConfigMod.IPlayerConfig
+import typings.playable.distSrcModulesEventEmitterTypesMod.IEventEmitter
+import typings.playable.distSrcModulesPlaybackEngineOutputNativeAdaptersTypesMod.IPlaybackAdapterClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

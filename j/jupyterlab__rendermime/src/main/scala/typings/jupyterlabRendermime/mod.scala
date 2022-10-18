@@ -3,13 +3,13 @@ package typings.jupyterlabRendermime
 import typings.jupyterlabNbformat.mod.IMimeBundle
 import typings.jupyterlabNbformat.mod.IOutput
 import typings.jupyterlabRendermime.anon.Math
-import typings.jupyterlabRendermime.attachmentmodelMod.IAttachmentModel.IOptions
-import typings.jupyterlabRendermime.registryMod.RenderMimeRegistry.IUrlResolverOptions
-import typings.jupyterlabRendermime.renderersMod.renderImage.IRenderOptions
+import typings.jupyterlabRendermime.libAttachmentmodelMod.IAttachmentModel.IOptions
+import typings.jupyterlabRendermime.libRegistryMod.RenderMimeRegistry.IUrlResolverOptions
+import typings.jupyterlabRendermime.libRenderersMod.renderImage.IRenderOptions
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererFactory
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererOptions
-import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import typings.luminoCoreutils.mod.Token
+import typings.luminoCoreutils.typesJsonMod.PartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,8 +22,8 @@ object mod {
   
   @JSImport("@jupyterlab/rendermime", "AttachmentModel")
   @js.native
-  class AttachmentModel protected ()
-    extends typings.jupyterlabRendermime.attachmentmodelMod.AttachmentModel {
+  open class AttachmentModel protected ()
+    extends typings.jupyterlabRendermime.libAttachmentmodelMod.AttachmentModel {
     /**
       * Construct a new attachment model.
       */
@@ -51,26 +51,26 @@ object mod {
   
   @JSImport("@jupyterlab/rendermime", "IRenderMimeRegistry")
   @js.native
-  val IRenderMimeRegistry: Token[typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry] = js.native
+  val IRenderMimeRegistry: Token[typings.jupyterlabRendermime.libTokensMod.IRenderMimeRegistry] = js.native
   
   @JSImport("@jupyterlab/rendermime", "MimeModel")
   @js.native
   /**
     * Construct a new mime model.
     */
-  class MimeModel ()
-    extends typings.jupyterlabRendermime.mimemodelMod.MimeModel {
-    def this(options: typings.jupyterlabRendermime.mimemodelMod.MimeModel.IOptions) = this()
+  open class MimeModel ()
+    extends typings.jupyterlabRendermime.libMimemodelMod.MimeModel {
+    def this(options: typings.jupyterlabRendermime.libMimemodelMod.MimeModel.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/rendermime", "OutputModel")
   @js.native
-  class OutputModel protected ()
-    extends typings.jupyterlabRendermime.outputmodelMod.OutputModel {
+  open class OutputModel protected ()
+    extends typings.jupyterlabRendermime.libOutputmodelMod.OutputModel {
     /**
       * Construct a new output model.
       */
-    def this(options: typings.jupyterlabRendermime.outputmodelMod.IOutputModel.IOptions) = this()
+    def this(options: typings.jupyterlabRendermime.libOutputmodelMod.IOutputModel.IOptions) = this()
   }
   object OutputModel {
     
@@ -104,9 +104,9 @@ object mod {
     *
     * @param options - The options for initializing the instance.
     */
-  class RenderMimeRegistry ()
-    extends typings.jupyterlabRendermime.registryMod.RenderMimeRegistry {
-    def this(options: typings.jupyterlabRendermime.registryMod.RenderMimeRegistry.IOptions) = this()
+  open class RenderMimeRegistry ()
+    extends typings.jupyterlabRendermime.libRegistryMod.RenderMimeRegistry {
+    def this(options: typings.jupyterlabRendermime.libRegistryMod.RenderMimeRegistry.IOptions) = this()
   }
   object RenderMimeRegistry {
     
@@ -115,8 +115,8 @@ object mod {
       */
     @JSImport("@jupyterlab/rendermime", "RenderMimeRegistry.UrlResolver")
     @js.native
-    class UrlResolver protected ()
-      extends typings.jupyterlabRendermime.registryMod.RenderMimeRegistry.UrlResolver {
+    open class UrlResolver protected ()
+      extends typings.jupyterlabRendermime.libRegistryMod.RenderMimeRegistry.UrlResolver {
       /**
         * Create a new url resolver.
         */
@@ -124,10 +124,10 @@ object mod {
     }
   }
   
-  @JSImport("@jupyterlab/rendermime", "RenderedCommon")
+  /* note: abstract class */ @JSImport("@jupyterlab/rendermime", "RenderedCommon")
   @js.native
-  abstract class RenderedCommon protected ()
-    extends typings.jupyterlabRendermime.widgetsMod.RenderedCommon {
+  open class RenderedCommon protected ()
+    extends typings.jupyterlabRendermime.libWidgetsMod.RenderedCommon {
     /**
       * Construct a new rendered common widget.
       *
@@ -138,8 +138,8 @@ object mod {
   
   @JSImport("@jupyterlab/rendermime", "RenderedHTML")
   @js.native
-  class RenderedHTML protected ()
-    extends typings.jupyterlabRendermime.widgetsMod.RenderedHTML {
+  open class RenderedHTML protected ()
+    extends typings.jupyterlabRendermime.libWidgetsMod.RenderedHTML {
     /**
       * Construct a new rendered HTML widget.
       *
@@ -148,10 +148,10 @@ object mod {
     def this(options: IRendererOptions) = this()
   }
   
-  @JSImport("@jupyterlab/rendermime", "RenderedHTMLCommon")
+  /* note: abstract class */ @JSImport("@jupyterlab/rendermime", "RenderedHTMLCommon")
   @js.native
-  abstract class RenderedHTMLCommon protected ()
-    extends typings.jupyterlabRendermime.widgetsMod.RenderedHTMLCommon {
+  open class RenderedHTMLCommon protected ()
+    extends typings.jupyterlabRendermime.libWidgetsMod.RenderedHTMLCommon {
     /**
       * Construct a new rendered HTML common widget.
       *
@@ -162,8 +162,8 @@ object mod {
   
   @JSImport("@jupyterlab/rendermime", "RenderedImage")
   @js.native
-  class RenderedImage protected ()
-    extends typings.jupyterlabRendermime.widgetsMod.RenderedImage {
+  open class RenderedImage protected ()
+    extends typings.jupyterlabRendermime.libWidgetsMod.RenderedImage {
     /**
       * Construct a new rendered image widget.
       *
@@ -174,8 +174,8 @@ object mod {
   
   @JSImport("@jupyterlab/rendermime", "RenderedJavaScript")
   @js.native
-  class RenderedJavaScript protected ()
-    extends typings.jupyterlabRendermime.widgetsMod.RenderedJavaScript {
+  open class RenderedJavaScript protected ()
+    extends typings.jupyterlabRendermime.libWidgetsMod.RenderedJavaScript {
     /**
       * Construct a new rendered text widget.
       *
@@ -186,8 +186,8 @@ object mod {
   
   @JSImport("@jupyterlab/rendermime", "RenderedLatex")
   @js.native
-  class RenderedLatex protected ()
-    extends typings.jupyterlabRendermime.widgetsMod.RenderedLatex {
+  open class RenderedLatex protected ()
+    extends typings.jupyterlabRendermime.libWidgetsMod.RenderedLatex {
     /**
       * Construct a new rendered LaTeX widget.
       *
@@ -198,8 +198,8 @@ object mod {
   
   @JSImport("@jupyterlab/rendermime", "RenderedMarkdown")
   @js.native
-  class RenderedMarkdown protected ()
-    extends typings.jupyterlabRendermime.widgetsMod.RenderedMarkdown {
+  open class RenderedMarkdown protected ()
+    extends typings.jupyterlabRendermime.libWidgetsMod.RenderedMarkdown {
     /**
       * Construct a new rendered markdown widget.
       *
@@ -210,8 +210,8 @@ object mod {
   
   @JSImport("@jupyterlab/rendermime", "RenderedSVG")
   @js.native
-  class RenderedSVG protected ()
-    extends typings.jupyterlabRendermime.widgetsMod.RenderedSVG {
+  open class RenderedSVG protected ()
+    extends typings.jupyterlabRendermime.libWidgetsMod.RenderedSVG {
     /**
       * Construct a new rendered SVG widget.
       *
@@ -222,8 +222,8 @@ object mod {
   
   @JSImport("@jupyterlab/rendermime", "RenderedText")
   @js.native
-  class RenderedText protected ()
-    extends typings.jupyterlabRendermime.widgetsMod.RenderedText {
+  open class RenderedText protected ()
+    extends typings.jupyterlabRendermime.libWidgetsMod.RenderedText {
     /**
       * Construct a new rendered text widget.
       *
@@ -254,17 +254,17 @@ object mod {
   
   inline def removeMath(text: String): Math = ^.asInstanceOf[js.Dynamic].applyDynamic("removeMath")(text.asInstanceOf[js.Any]).asInstanceOf[Math]
   
-  inline def renderHTML(options: typings.jupyterlabRendermime.renderersMod.renderHTML.IOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderHTML")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def renderHTML(options: typings.jupyterlabRendermime.libRenderersMod.renderHTML.IOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderHTML")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def renderImage(options: IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderImage")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def renderLatex(options: typings.jupyterlabRendermime.renderersMod.renderLatex.IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderLatex")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def renderLatex(options: typings.jupyterlabRendermime.libRenderersMod.renderLatex.IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderLatex")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def renderMarkdown(options: typings.jupyterlabRendermime.renderersMod.renderMarkdown.IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderMarkdown")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def renderMarkdown(options: typings.jupyterlabRendermime.libRenderersMod.renderMarkdown.IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderMarkdown")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def renderSVG(options: typings.jupyterlabRendermime.renderersMod.renderSVG.IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSVG")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def renderSVG(options: typings.jupyterlabRendermime.libRenderersMod.renderSVG.IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSVG")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def renderText(options: typings.jupyterlabRendermime.renderersMod.renderText.IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderText")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def renderText(options: typings.jupyterlabRendermime.libRenderersMod.renderText.IRenderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderText")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def replaceMath(text: String, math: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceMath")(text.asInstanceOf[js.Any], math.asInstanceOf[js.Any])).asInstanceOf[String]
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "Logger")
 @js.native
 open class Logger ()
-  extends typings.babylonjs.loggerMod.Logger
+  extends typings.babylonjs.miscLoggerMod.Logger
 /* static members */
 object Logger {
   

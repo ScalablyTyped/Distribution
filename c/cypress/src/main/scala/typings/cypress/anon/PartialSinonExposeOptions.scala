@@ -1,22 +1,31 @@
 package typings.cypress.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<cypress.cypress/types/sinon.SinonExposeOptions> */
-trait PartialSinonExposeOptions extends js.Object {
+trait PartialSinonExposeOptions extends StObject {
+  
   var includeFail: js.UndefOr[Boolean] = js.undefined
+  
   var prefix: js.UndefOr[String] = js.undefined
 }
-
 object PartialSinonExposeOptions {
-  @scala.inline
-  def apply(includeFail: js.UndefOr[Boolean] = js.undefined, prefix: String = null): PartialSinonExposeOptions = {
+  
+  inline def apply(): PartialSinonExposeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeFail)) __obj.updateDynamic("includeFail")(includeFail.get.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialSinonExposeOptions]
   }
+  
+  extension [Self <: PartialSinonExposeOptions](x: Self) {
+    
+    inline def setIncludeFail(value: Boolean): Self = StObject.set(x, "includeFail", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeFailUndefined: Self = StObject.set(x, "includeFail", js.undefined)
+    
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+  }
 }
-

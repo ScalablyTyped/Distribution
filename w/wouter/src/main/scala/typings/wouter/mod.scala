@@ -10,14 +10,6 @@ import typings.wouter.anon.Href
 import typings.wouter.anon.OmitAnchorHTMLAttributesH
 import typings.wouter.anon.PartialRouterPropschildre
 import typings.wouter.anon.To
-import typings.wouter.matcherMod.DefaultParams
-import typings.wouter.matcherMod.Match
-import typings.wouter.matcherMod.MatcherFn
-import typings.wouter.matcherMod.Params
-import typings.wouter.useLocationMod.BaseLocationHook
-import typings.wouter.useLocationMod.HookNavigationOptions
-import typings.wouter.useLocationMod.HookReturnValue
-import typings.wouter.useLocationMod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,13 +20,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Link[H /* <: BaseLocationHook */](props: PropsWithChildren[LinkProps[H]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def Link[H /* <: BaseLocationHook */](props: PropsWithChildren[LinkProps[H]], context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Link")(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def Link[H /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any */](props: PropsWithChildren[LinkProps[H]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Link[H /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any */](props: PropsWithChildren[LinkProps[H]], context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Link")(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
   
-  inline def Redirect[H /* <: BaseLocationHook */](props: PropsWithChildren[RedirectProps[H]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Redirect")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def Redirect[H /* <: BaseLocationHook */](props: PropsWithChildren[RedirectProps[H]], context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Redirect")(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def Redirect[H /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any */](props: PropsWithChildren[RedirectProps[H]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Redirect")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Redirect[H /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any */](props: PropsWithChildren[RedirectProps[H]], context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Redirect")(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
   
-  inline def Route[T /* <: DefaultParams */](props: RouteProps[T]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Route[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultParams */ Any */](props: RouteProps[T]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   @JSImport("wouter", "Router")
   @js.native
@@ -44,55 +36,71 @@ object mod {
   @js.native
   val Switch: FunctionComponent[SwitchProps] = js.native
   
-  inline def useLocation[H /* <: BaseLocationHook */](): HookReturnValue[H] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocation")().asInstanceOf[HookReturnValue[H]]
+  inline def useLocation[H /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any */](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocation")().asInstanceOf[Any]
   
-  inline def useRoute[T /* <: DefaultParams */](pattern: Path): Match[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoute")(pattern.asInstanceOf[js.Any]).asInstanceOf[Match[T]]
+  inline def useRoute[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultParams */ Any */](
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoute")(pattern.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def useRouter(): RouterProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouter")().asInstanceOf[RouterProps]
   
-  type LinkProps[H /* <: BaseLocationHook */] = OmitAnchorHTMLAttributesH & NavigationalProps[H]
+  type LinkProps[H /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any */] = OmitAnchorHTMLAttributesH & NavigationalProps[H]
   
-  type NavigationalProps[H /* <: BaseLocationHook */] = (Href & HookNavigationOptions[H]) | (To & HookNavigationOptions[H])
+  type NavigationalProps[H /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any */] = (Href & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HookNavigationOptions<H> */ Any)) | (To & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HookNavigationOptions<H> */ Any))
   
-  type RedirectProps[H /* <: BaseLocationHook */] = NavigationalProps[H] & Children
+  type RedirectProps[H /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any */] = NavigationalProps[H] & Children
   
-  trait RouteComponentProps[T /* <: DefaultParams */] extends StObject {
+  trait RouteComponentProps[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultParams */ Any */] extends StObject {
     
     var params: T
   }
   object RouteComponentProps {
     
-    inline def apply[T /* <: DefaultParams */](params: T): RouteComponentProps[T] = {
+    inline def apply[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultParams */ Any */](params: T): RouteComponentProps[T] = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteComponentProps[T]]
     }
     
-    extension [Self <: RouteComponentProps[?], T /* <: DefaultParams */](x: Self & RouteComponentProps[T]) {
+    extension [Self <: RouteComponentProps[?], T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultParams */ Any */](x: Self & RouteComponentProps[T]) {
       
       inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   
-  trait RouteProps[T /* <: DefaultParams */] extends StObject {
+  trait RouteProps[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultParams */ Any */] extends StObject {
     
-    var children: js.UndefOr[(js.Function1[/* params */ Params[T], ReactNode]) | ReactNode] = js.undefined
+    var children: js.UndefOr[
+        (js.Function1[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Params<T> */ /* params */ Any, 
+          ReactNode
+        ]) | ReactNode
+      ] = js.undefined
     
     var component: js.UndefOr[ComponentType[RouteComponentProps[T]]] = js.undefined
     
-    var path: js.UndefOr[Path] = js.undefined
+    var path: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = js.undefined
   }
   object RouteProps {
     
-    inline def apply[T /* <: DefaultParams */](): RouteProps[T] = {
+    inline def apply[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultParams */ Any */](): RouteProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouteProps[T]]
     }
     
-    extension [Self <: RouteProps[?], T /* <: DefaultParams */](x: Self & RouteProps[T]) {
+    extension [Self <: RouteProps[?], T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultParams */ Any */](x: Self & RouteProps[T]) {
       
-      inline def setChildren(value: (js.Function1[/* params */ Params[T], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(
+        value: (js.Function1[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Params<T> */ /* params */ Any, 
+              ReactNode
+            ]) | ReactNode
+      ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenFunction1(value: /* params */ Params[T] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Params<T> */ /* params */ Any => ReactNode
+      ): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -100,7 +108,9 @@ object mod {
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
@@ -108,30 +118,36 @@ object mod {
   
   trait RouterProps extends StObject {
     
-    var base: Path
+    var base: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
     
-    var hook: BaseLocationHook
+    var hook: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any
     
-    var matcher: MatcherFn
+    var matcher: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatcherFn */ Any
   }
   object RouterProps {
     
     inline def apply(
-      base: Path,
-      hook: BaseLocationHook,
-      matcher: (/* pattern */ Path, /* path */ Path) => Match[DefaultParams]
+      base: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any,
+      hook: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any,
+      matcher: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatcherFn */ Any
     ): RouterProps = {
-      val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], hook = hook.asInstanceOf[js.Any], matcher = js.Any.fromFunction2(matcher))
+      val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], hook = hook.asInstanceOf[js.Any], matcher = matcher.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouterProps]
     }
     
     extension [Self <: RouterProps](x: Self) {
       
-      inline def setBase(value: Path): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      inline def setHook(value: BaseLocationHook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+      inline def setHook(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any
+      ): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
       
-      inline def setMatcher(value: (/* pattern */ Path, /* path */ Path) => Match[DefaultParams]): Self = StObject.set(x, "matcher", js.Any.fromFunction2(value))
+      inline def setMatcher(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatcherFn */ Any
+      ): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
     }
   }
   

@@ -1,6 +1,6 @@
 package typings.carbonElements.mod
 
-import typings.carbonElements.anon.MdXlg
+import typings.carbonElements.anon.LgMaxMd
 import typings.carbonElements.carbonElementsDoubles.`1.25`
 import typings.carbonElements.carbonElementsInts.`0`
 import typings.carbonElements.carbonElementsInts.`300`
@@ -17,13 +17,13 @@ object quotation02 {
   
   @JSImport("@carbon/elements", "quotation02.breakpoints")
   @js.native
-  def breakpoints: MdXlg = js.native
-  inline def breakpoints_=(x: MdXlg): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("breakpoints")(x.asInstanceOf[js.Any])
+  def breakpoints: LgMaxMd = js.native
+  inline def breakpoints_=(x: LgMaxMd): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("breakpoints")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "quotation02.fontFamily")
   @js.native
-  def fontFamily: String = js.native
-  inline def fontFamily_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontFamily")(x.asInstanceOf[js.Any])
+  def fontFamily: /* 'IBM Plex Serif', 'Georgia', Times, serif */ String = js.native
+  inline def fontFamily_=(x: /* 'IBM Plex Serif', 'Georgia', Times, serif */ String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontFamily")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "quotation02.fontSize")
   @js.native

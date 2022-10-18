@@ -1,6 +1,6 @@
 package typings.formatjsIcuMessageformatParser
 
-import typings.formatjsIcuMessageformatParser.libErrorMod.ParserError
+import typings.formatjsIcuMessageformatParser.errorMod.ParserError
 import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
 import typings.std.Intl.Locale
 import org.scalablytyped.runtime.StObject
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object parserMod {
   
-  @JSImport("@formatjs/icu-messageformat-parser/lib/parser", "Parser")
+  @JSImport("@formatjs/icu-messageformat-parser/parser", "Parser")
   @js.native
   open class Parser protected () extends StObject {
     def this(message: String) = this()

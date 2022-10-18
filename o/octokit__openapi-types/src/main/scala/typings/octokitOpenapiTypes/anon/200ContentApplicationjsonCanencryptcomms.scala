@@ -11,20 +11,20 @@ trait `200ContentApplicationjsonCanencryptcomms` extends StObject {
   
   var `304`: Any
   
-  var `401`: Content55
+  var `401`: Content6
   
-  var `403`: Content55
+  var `403`: Content6
   
-  var `404`: Content55
+  var `404`: Content6
 }
 object `200ContentApplicationjsonCanencryptcomms` {
   
   inline def apply(
     `200`: ContentApplicationjsonCanencryptcomms,
     `304`: Any,
-    `401`: Content55,
-    `403`: Content55,
-    `404`: Content55
+    `401`: Content6,
+    `403`: Content6,
+    `404`: Content6
   ): `200ContentApplicationjsonCanencryptcomms` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -41,10 +41,10 @@ object `200ContentApplicationjsonCanencryptcomms` {
     
     inline def set304(value: Any): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
     
-    inline def set401(value: Content55): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
+    inline def set401(value: Content6): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content55): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content6): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content55): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content6): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

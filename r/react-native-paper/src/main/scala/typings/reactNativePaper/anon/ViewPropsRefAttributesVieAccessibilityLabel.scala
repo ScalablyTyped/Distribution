@@ -11,6 +11,7 @@ import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
+import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativePaper.reactNativePaperStrings.`box-none`
@@ -26,7 +27,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  children :react.react.ReactNode,   index :number | undefined,   total :number | undefined,   siblings :std.Array<string> | undefined,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined} */
+/* Inlined react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  title :react.react.ReactNode,   titleStyle :react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined,   titleNumberOfLines :number | undefined,   subtitle :react.react.ReactNode | undefined,   subtitleStyle :react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined,   subtitleNumberOfLines :number | undefined,   left :(props : {  size :number}): react.react.ReactNode | undefined,   leftStyle :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   right :(props : {  size :number}): react.react.ReactNode | undefined,   rightStyle :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   index :number | undefined,   total :number | undefined,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme} */
 trait ViewPropsRefAttributesVieAccessibilityLabel extends StObject {
   
   /**
@@ -108,7 +109,7 @@ trait ViewPropsRefAttributesVieAccessibilityLabel extends StObject {
     */
   var accessible: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] & ReactNode
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * Views that are only used to layout their children or otherwise don't draw anything
@@ -165,6 +166,10 @@ trait ViewPropsRefAttributesVieAccessibilityLabel extends StObject {
   var isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
   var key: js.UndefOr[typings.react.mod.Key | Null] = js.undefined
+  
+  var left: js.UndefOr[js.Function1[/* props */ SizeNumber, ReactNode]] = js.undefined
+  
+  var leftStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Used to reference react managed views from native code.
@@ -383,6 +388,10 @@ trait ViewPropsRefAttributesVieAccessibilityLabel extends StObject {
     */
   var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
   
+  var right: js.UndefOr[js.Function1[/* props */ SizeNumber, ReactNode]] = js.undefined
+  
+  var rightStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  
   /**
     * Whether this view should be rendered as a bitmap before compositing.
     *
@@ -395,14 +404,26 @@ trait ViewPropsRefAttributesVieAccessibilityLabel extends StObject {
     */
   var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
   
-  var siblings: js.UndefOr[js.Array[String]] = js.undefined
-  
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  
+  var subtitle: js.UndefOr[ReactNode] = js.undefined
+  
+  var subtitleNumberOfLines: js.UndefOr[Double] = js.undefined
+  
+  var subtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Used to locate this view in end-to-end tests.
     */
   var testID: js.UndefOr[String] = js.undefined
+  
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
+  
+  var title: ReactNode
+  
+  var titleNumberOfLines: js.UndefOr[Double] = js.undefined
+  
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   var total: js.UndefOr[Double] = js.undefined
   
@@ -443,8 +464,8 @@ trait ViewPropsRefAttributesVieAccessibilityLabel extends StObject {
 }
 object ViewPropsRefAttributesVieAccessibilityLabel {
   
-  inline def apply(): ViewPropsRefAttributesVieAccessibilityLabel = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): ViewPropsRefAttributesVieAccessibilityLabel = {
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsRefAttributesVieAccessibilityLabel]
   }
   
@@ -506,7 +527,7 @@ object ViewPropsRefAttributesVieAccessibilityLabel {
     
     inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
-    inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -543,6 +564,16 @@ object ViewPropsRefAttributesVieAccessibilityLabel {
     inline def setKeyNull: Self = StObject.set(x, "key", null)
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setLeft(value: /* props */ SizeNumber => ReactNode): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
+    
+    inline def setLeftStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "leftStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLeftStyleNull: Self = StObject.set(x, "leftStyle", null)
+    
+    inline def setLeftStyleUndefined: Self = StObject.set(x, "leftStyle", js.undefined)
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     inline def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
     
@@ -708,15 +739,19 @@ object ViewPropsRefAttributesVieAccessibilityLabel {
     
     inline def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
     
+    inline def setRight(value: /* props */ SizeNumber => ReactNode): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
+    
+    inline def setRightStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "rightStyle", value.asInstanceOf[js.Any])
+    
+    inline def setRightStyleNull: Self = StObject.set(x, "rightStyle", null)
+    
+    inline def setRightStyleUndefined: Self = StObject.set(x, "rightStyle", js.undefined)
+    
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    
     inline def setShouldRasterizeIOS(value: Boolean): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
     
     inline def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
-    
-    inline def setSiblings(value: js.Array[String]): Self = StObject.set(x, "siblings", value.asInstanceOf[js.Any])
-    
-    inline def setSiblingsUndefined: Self = StObject.set(x, "siblings", js.undefined)
-    
-    inline def setSiblingsVarargs(value: String*): Self = StObject.set(x, "siblings", js.Array(value*))
     
     inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
@@ -724,9 +759,39 @@ object ViewPropsRefAttributesVieAccessibilityLabel {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
+    inline def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    
+    inline def setSubtitleNumberOfLines(value: Double): Self = StObject.set(x, "subtitleNumberOfLines", value.asInstanceOf[js.Any])
+    
+    inline def setSubtitleNumberOfLinesUndefined: Self = StObject.set(x, "subtitleNumberOfLines", js.undefined)
+    
+    inline def setSubtitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "subtitleStyle", value.asInstanceOf[js.Any])
+    
+    inline def setSubtitleStyleNull: Self = StObject.set(x, "subtitleStyle", null)
+    
+    inline def setSubtitleStyleUndefined: Self = StObject.set(x, "subtitleStyle", js.undefined)
+    
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    
     inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+    
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNumberOfLines(value: Double): Self = StObject.set(x, "titleNumberOfLines", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNumberOfLinesUndefined: Self = StObject.set(x, "titleNumberOfLines", js.undefined)
+    
+    inline def setTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTitleStyleNull: Self = StObject.set(x, "titleStyle", null)
+    
+    inline def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     

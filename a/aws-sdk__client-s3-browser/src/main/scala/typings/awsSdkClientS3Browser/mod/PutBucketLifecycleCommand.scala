@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-browser", "PutBucketLifecycleCommand")
 @js.native
 open class PutBucketLifecycleCommand protected ()
-  extends typings.awsSdkClientS3Browser.putBucketLifecycleCommandMod.PutBucketLifecycleCommand {
+  extends typings.awsSdkClientS3Browser.commandsPutBucketLifecycleCommandMod.PutBucketLifecycleCommand {
   def this(input: PutBucketLifecycleInput) = this()
 }

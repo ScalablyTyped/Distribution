@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.radiobuttonMod.RadioButtonProps
+import typings.primereact.radiobuttonRadiobuttonMod.RadioButtonProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "RadioButton")
 @js.native
 open class RadioButton protected ()
-  extends typings.primereact.radiobuttonMod.RadioButton {
+  extends typings.primereact.radiobuttonRadiobuttonMod.RadioButton {
   def this(props: RadioButtonProps) = this()
   /**
     * @deprecated

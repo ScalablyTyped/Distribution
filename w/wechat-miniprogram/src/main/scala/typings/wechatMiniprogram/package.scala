@@ -1,7 +1,6 @@
 package typings.wechatMiniprogram
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Exclude
 import typings.std.Pick
 import typings.std.Required
@@ -24,8 +23,13 @@ type ICloudServices = StringDictionary[ICloudService]
 
 type OQ[T /* <: OptionalRecordcompletesuc */] = (RQ[T] & (Required[Pick[T, success]])) | (RQ[T] & (Required[Pick[T, fail]])) | (RQ[T] & (Required[Pick[T, complete]])) | (RQ[T] & (Required[Pick[T, success | fail]])) | (RQ[T] & (Required[Pick[T, success | complete]])) | (RQ[T] & (Required[Pick[T, fail | complete]])) | (RQ[T] & (Required[Pick[T, fail | complete | success]]))
 
-type Optional[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? T[K]}
-  */ typings.wechatMiniprogram.wechatMiniprogramStrings.Optional & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ K in keyof T ]:? T[K]}
+  }}}
+  */
+type Optional[T] = T
 
 type RQ[T /* <: OptionalRecordcompletesuc */] = Pick[T, Exclude[/* keyof T */ String, complete | success | fail]]

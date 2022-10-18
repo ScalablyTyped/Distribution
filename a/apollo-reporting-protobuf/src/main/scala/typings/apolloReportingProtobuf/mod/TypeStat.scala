@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apolloProtobufjs.mod.IConversionOptions
 import typings.apolloProtobufjs.mod.Reader
 import typings.apolloProtobufjs.mod.Writer
-import typings.apolloReportingProtobuf.protobufMod.ITypeStat
+import typings.apolloReportingProtobuf.generatedProtobufMod.ITypeStat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [properties] Properties to set
   */
 open class TypeStat ()
-  extends typings.apolloReportingProtobuf.protobufMod.TypeStat {
+  extends typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat {
   def this(properties: ITypeStat) = this()
 }
 /* static members */
@@ -31,11 +31,11 @@ object TypeStat {
     * @param [properties] Properties to set
     * @returns TypeStat instance
     */
-  inline def create(): typings.apolloReportingProtobuf.protobufMod.TypeStat = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TypeStat]
-  inline def create(properties: ITypeStat): typings.apolloReportingProtobuf.protobufMod.TypeStat = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TypeStat]
+  inline def create(): typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat]
+  inline def create(properties: ITypeStat): typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat]
   
-  inline def decode(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.protobufMod.TypeStat = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TypeStat]
-  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.apolloReportingProtobuf.protobufMod.TypeStat = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TypeStat]
+  inline def decode(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat]
   /**
     * Decodes a TypeStat message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -44,10 +44,10 @@ object TypeStat {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  inline def decode(reader: Reader): typings.apolloReportingProtobuf.protobufMod.TypeStat = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TypeStat]
-  inline def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.protobufMod.TypeStat = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TypeStat]
+  inline def decode(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat]
+  inline def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat]
   
-  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.protobufMod.TypeStat = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TypeStat]
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat]
   /**
     * Decodes a TypeStat message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -55,7 +55,7 @@ object TypeStat {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  inline def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.protobufMod.TypeStat = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.protobufMod.TypeStat]
+  inline def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat]
   
   /**
     * Encodes the specified TypeStat message. Does not implicitly {@link TypeStat.verify|verify} messages.
@@ -81,8 +81,11 @@ object TypeStat {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: typings.apolloReportingProtobuf.protobufMod.TypeStat): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
-  inline def toObject(message: typings.apolloReportingProtobuf.protobufMod.TypeStat, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(
+    message: typings.apolloReportingProtobuf.generatedProtobufMod.TypeStat,
+    options: IConversionOptions
+  ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a TypeStat message.

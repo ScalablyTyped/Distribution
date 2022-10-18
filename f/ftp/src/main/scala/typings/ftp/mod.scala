@@ -5,10 +5,10 @@ import typings.ftp.ftpStrings.end
 import typings.ftp.ftpStrings.error
 import typings.ftp.ftpStrings.greeting
 import typings.ftp.ftpStrings.ready
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.tlsMod.ConnectionOptions
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,14 +59,7 @@ object mod {
       useCompression: Boolean,
       callback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = js.native
-    def append(input: Buffer, destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
-    def append(
-      input: Buffer,
-      destPath: String,
-      useCompression: Boolean,
-      callback: js.Function1[/* error */ js.Error, Unit]
-    ): Unit = js.native
-    def append(input: ReadableStream[Any], destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
+    def append(input: ReadableStream, destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     /**
       * Same as put(), except if destPath already exists, it will be appended to instead of overwritten.
       * @param input can be a ReadableStream, a Buffer, or a path to a local file.
@@ -74,7 +67,14 @@ object mod {
       * @param useCompression defaults to false.
       */
     def append(
-      input: ReadableStream[Any],
+      input: ReadableStream,
+      destPath: String,
+      useCompression: Boolean,
+      callback: js.Function1[/* error */ js.Error, Unit]
+    ): Unit = js.native
+    def append(input: Buffer, destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
+    def append(
+      input: Buffer,
       destPath: String,
       useCompression: Boolean,
       callback: js.Function1[/* error */ js.Error, Unit]
@@ -129,11 +129,11 @@ object mod {
     /**
       * Retrieves a file at path from the server. useCompression defaults to false
       */
-    def get(path: String, callback: js.Function2[/* error */ js.Error, /* stream */ ReadableStream[Any], Unit]): Unit = js.native
+    def get(path: String, callback: js.Function2[/* error */ js.Error, /* stream */ ReadableStream, Unit]): Unit = js.native
     def get(
       path: String,
       useCompression: Boolean,
-      callback: js.Function2[/* error */ js.Error, /* stream */ ReadableStream[Any], Unit]
+      callback: js.Function2[/* error */ js.Error, /* stream */ ReadableStream, Unit]
     ): Unit = js.native
     
     /**
@@ -214,14 +214,7 @@ object mod {
       useCompression: Boolean,
       callback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = js.native
-    def put(input: Buffer, destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
-    def put(
-      input: Buffer,
-      destPath: String,
-      useCompression: Boolean,
-      callback: js.Function1[/* error */ js.Error, Unit]
-    ): Unit = js.native
-    def put(input: ReadableStream[Any], destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
+    def put(input: ReadableStream, destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     /**
       * Sends data to the server to be stored as destPath.
       * @param input can be a ReadableStream, a Buffer, or a path to a local file.
@@ -229,7 +222,14 @@ object mod {
       * @param useCompression defaults to false.
       */
     def put(
-      input: ReadableStream[Any],
+      input: ReadableStream,
+      destPath: String,
+      useCompression: Boolean,
+      callback: js.Function1[/* error */ js.Error, Unit]
+    ): Unit = js.native
+    def put(input: Buffer, destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
+    def put(
+      input: Buffer,
       destPath: String,
       useCompression: Boolean,
       callback: js.Function1[/* error */ js.Error, Unit]

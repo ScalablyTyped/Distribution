@@ -1,8 +1,8 @@
 package typings.consumerDataStandards.energySdhMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.consumerDataStandards.anon.DictkReads
 import typings.consumerDataStandards.anon.First
-import typings.consumerDataStandards.anon.Reads
 import typings.consumerDataStandards.anon.TotalPages
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait EnergyUsageListResponse
   extends StObject
      with /* k */ StringDictionary[Any] {
   
-  var data: Reads
+  var data: DictkReads
   
   var links: First
   
@@ -20,14 +20,14 @@ trait EnergyUsageListResponse
 }
 object EnergyUsageListResponse {
   
-  inline def apply(data: Reads, links: First, meta: TotalPages): EnergyUsageListResponse = {
+  inline def apply(data: DictkReads, links: First, meta: TotalPages): EnergyUsageListResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnergyUsageListResponse]
   }
   
   extension [Self <: EnergyUsageListResponse](x: Self) {
     
-    inline def setData(value: Reads): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: DictkReads): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setLinks(value: First): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     

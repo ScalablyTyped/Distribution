@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Reflector")
 @js.native
 open class Reflector protected ()
-  extends typings.babylonjs.legacyMod.Reflector {
+  extends typings.babylonjs.legacyLegacyMod.Reflector {
   /**
     * Constructs a reflector object.
     * @param scene The scene to use

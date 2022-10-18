@@ -1,6 +1,7 @@
 package typings.consumerDataStandards.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.consumerDataStandards.energyMod.EnergyUsageRead
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,21 +11,21 @@ trait Reads
      with /* k */ StringDictionary[Any] {
   
   /**
-    * Array of meter reads
+    * Array of meter reads sorted by NMI in ascending order followed by readStartDate in descending order
     */
-  var reads: js.Array[BasicRead]
+  var reads: js.Array[EnergyUsageRead]
 }
 object Reads {
   
-  inline def apply(reads: js.Array[BasicRead]): Reads = {
+  inline def apply(reads: js.Array[EnergyUsageRead]): Reads = {
     val __obj = js.Dynamic.literal(reads = reads.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reads]
   }
   
   extension [Self <: Reads](x: Self) {
     
-    inline def setReads(value: js.Array[BasicRead]): Self = StObject.set(x, "reads", value.asInstanceOf[js.Any])
+    inline def setReads(value: js.Array[EnergyUsageRead]): Self = StObject.set(x, "reads", value.asInstanceOf[js.Any])
     
-    inline def setReadsVarargs(value: BasicRead*): Self = StObject.set(x, "reads", js.Array(value*))
+    inline def setReadsVarargs(value: EnergyUsageRead*): Self = StObject.set(x, "reads", js.Array(value*))
   }
 }

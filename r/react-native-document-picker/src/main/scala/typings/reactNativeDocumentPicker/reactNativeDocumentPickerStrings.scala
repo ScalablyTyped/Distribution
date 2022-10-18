@@ -1,6 +1,6 @@
 package typings.reactNativeDocumentPicker
 
-import typings.reactNativeDocumentPicker.fileTypesMod.SupportedPlatforms
+import typings.reactNativeDocumentPicker.libTypescriptFileTypesMod.SupportedPlatforms
 import typings.reactNativeDocumentPicker.mod.TransitionStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

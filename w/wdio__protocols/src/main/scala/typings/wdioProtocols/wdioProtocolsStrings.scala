@@ -1,9 +1,9 @@
 package typings.wdioProtocols
 
-import typings.wdioProtocols.typesMod.CommandMethod
-import typings.wdioProtocols.typesMod.Environments
-import typings.wdioProtocols.typesMod.Platform
-import typings.wdioProtocols.typesMod.SameSiteOptions
+import typings.wdioProtocols.buildTypesMod.CommandMethod
+import typings.wdioProtocols.buildTypesMod.Environments
+import typings.wdioProtocols.buildTypesMod.Platform
+import typings.wdioProtocols.buildTypesMod.SameSiteOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

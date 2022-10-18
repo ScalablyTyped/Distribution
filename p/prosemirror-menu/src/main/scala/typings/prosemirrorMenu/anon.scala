@@ -42,11 +42,11 @@ object anon {
     
     var dom: Node
     
-    def update(p: EditorState): Boolean
+    def update(p: EditorState): Unit
   }
   object Dom {
     
-    inline def apply(dom: Node, update: EditorState => Boolean): Dom = {
+    inline def apply(dom: Node, update: EditorState => Unit): Dom = {
       val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
       __obj.asInstanceOf[Dom]
     }
@@ -55,7 +55,7 @@ object anon {
       
       inline def setDom(value: Node): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
-      inline def setUpdate(value: EditorState => Boolean): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: EditorState => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -84,11 +84,11 @@ object anon {
     
     var dom: Node
     
-    def update(p: EditorState): Unit
+    def update(p: EditorState): Boolean
   }
   object Update {
     
-    inline def apply(dom: Node, update: EditorState => Unit): Update = {
+    inline def apply(dom: Node, update: EditorState => Boolean): Update = {
       val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
       __obj.asInstanceOf[Update]
     }
@@ -97,7 +97,7 @@ object anon {
       
       inline def setDom(value: Node): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
-      inline def setUpdate(value: EditorState => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: EditorState => Boolean): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
 }

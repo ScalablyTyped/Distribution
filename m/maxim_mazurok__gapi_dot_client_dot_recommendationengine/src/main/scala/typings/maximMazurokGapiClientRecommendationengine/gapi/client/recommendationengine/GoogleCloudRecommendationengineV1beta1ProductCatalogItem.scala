@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,7 @@ trait GoogleCloudRecommendationengineV1beta1ProductCatalogItem extends StObject 
     * provided, profit = displayPrice - sum(costs) * If 'priceRange' is provided, profit = minPrice - sum(costs)
     */
   var costs: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1ProductCatalogItem & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any
   ] = js.undefined
   
   /** Optional. Only required if the price is set. Currency code for price/costs. Use three-character ISO-4217 code. */
@@ -56,9 +53,7 @@ object GoogleCloudRecommendationengineV1beta1ProductCatalogItem {
     inline def setCanonicalProductUriUndefined: Self = StObject.set(x, "canonicalProductUri", js.undefined)
     
     inline def setCosts(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1ProductCatalogItem & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any
     ): Self = StObject.set(x, "costs", value.asInstanceOf[js.Any])
     
     inline def setCostsUndefined: Self = StObject.set(x, "costs", js.undefined)

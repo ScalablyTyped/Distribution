@@ -1,8 +1,8 @@
 package typings.awsGreengrassCoreSdk.mod.StreamManager
 
-import typings.awsGreengrassCoreSdk.dataMod.MessageStreamDefinitionMap
-import typings.awsGreengrassCoreSdk.dataMod.TypesMap
-import typings.awsGreengrassCoreSdk.dataMod.ValidationsMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.MessageStreamDefinitionMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.TypesMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ValidationsMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,10 +34,10 @@ open class MessageStreamDefinition protected ()
     maxSize: js.UndefOr[Double | Null],
     streamSegmentSize: js.UndefOr[Double | Null],
     timeToLiveMillis: js.UndefOr[Double | Null],
-    strategyOnFull: js.UndefOr[typings.awsGreengrassCoreSdk.dataMod.StrategyOnFull | Null],
-    persistence: js.UndefOr[typings.awsGreengrassCoreSdk.dataMod.Persistence | Null],
+    strategyOnFull: js.UndefOr[typings.awsGreengrassCoreSdk.streamManagerDataMod.StrategyOnFull | Null],
+    persistence: js.UndefOr[typings.awsGreengrassCoreSdk.streamManagerDataMod.Persistence | Null],
     flushOnWrite: js.UndefOr[Boolean | Null],
-    exportDefinition: js.UndefOr[typings.awsGreengrassCoreSdk.dataMod.ExportDefinition | Null]
+    exportDefinition: js.UndefOr[typings.awsGreengrassCoreSdk.streamManagerDataMod.ExportDefinition | Null]
   ) = this()
 }
 /* static members */
@@ -52,7 +52,7 @@ object MessageStreamDefinition {
   def formatsMap: Record[String, scala.Nothing] = js.native
   inline def formatsMap_=(x: Record[String, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatsMap")(x.asInstanceOf[js.Any])
   
-  inline def fromMap(d: MessageStreamDefinitionMap): typings.awsGreengrassCoreSdk.dataMod.MessageStreamDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.MessageStreamDefinition]
+  inline def fromMap(d: MessageStreamDefinitionMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.MessageStreamDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.MessageStreamDefinition]
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.MessageStreamDefinition.typesMap")
   @js.native

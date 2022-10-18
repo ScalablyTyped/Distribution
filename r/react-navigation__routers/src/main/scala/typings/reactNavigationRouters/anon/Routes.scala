@@ -1,10 +1,10 @@
 package typings.reactNavigationRouters.anon
 
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.NavigationState
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.PartialRoute
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route
 import typings.reactNavigationRouters.reactNavigationRoutersBooleans.`true`
-import typings.reactNavigationRouters.typesMod.NavigationState
-import typings.reactNavigationRouters.typesMod.ParamListBase
-import typings.reactNavigationRouters.typesMod.PartialRoute
-import typings.reactNavigationRouters.typesMod.Route
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

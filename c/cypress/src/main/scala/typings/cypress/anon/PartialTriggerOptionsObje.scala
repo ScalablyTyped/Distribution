@@ -1,34 +1,74 @@
 package typings.cypress.anon
 
+import typings.cypress.Cypress.scrollBehaviorOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<cypress.Cypress.TriggerOptions & cypress.Cypress.ObjectLike> */
-trait PartialTriggerOptionsObje extends js.Object {
+trait PartialTriggerOptionsObje extends StObject {
+  
+  var animationDistanceThreshold: js.UndefOr[Double] = js.undefined
+  
   var bubbles: js.UndefOr[Boolean] = js.undefined
+  
   var cancelable: js.UndefOr[Boolean] = js.undefined
+  
+  var eventConstructor: js.UndefOr[String] = js.undefined
+  
   var force: js.UndefOr[Boolean] = js.undefined
+  
   var log: js.UndefOr[Boolean] = js.undefined
+  
+  var scrollBehavior: js.UndefOr[scrollBehaviorOptions] = js.undefined
+  
   var timeout: js.UndefOr[Double] = js.undefined
+  
+  var waitForAnimations: js.UndefOr[Boolean] = js.undefined
 }
-
 object PartialTriggerOptionsObje {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[Boolean] = js.undefined,
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    force: js.UndefOr[Boolean] = js.undefined,
-    log: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): PartialTriggerOptionsObje = {
+  
+  inline def apply(): PartialTriggerOptionsObje = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialTriggerOptionsObje]
   }
+  
+  extension [Self <: PartialTriggerOptionsObje](x: Self) {
+    
+    inline def setAnimationDistanceThreshold(value: Double): Self = StObject.set(x, "animationDistanceThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationDistanceThresholdUndefined: Self = StObject.set(x, "animationDistanceThreshold", js.undefined)
+    
+    inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+    
+    inline def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
+    
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    
+    inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+    
+    inline def setEventConstructor(value: String): Self = StObject.set(x, "eventConstructor", value.asInstanceOf[js.Any])
+    
+    inline def setEventConstructorUndefined: Self = StObject.set(x, "eventConstructor", js.undefined)
+    
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    
+    inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    
+    inline def setScrollBehavior(value: scrollBehaviorOptions): Self = StObject.set(x, "scrollBehavior", value.asInstanceOf[js.Any])
+    
+    inline def setScrollBehaviorUndefined: Self = StObject.set(x, "scrollBehavior", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setWaitForAnimations(value: Boolean): Self = StObject.set(x, "waitForAnimations", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForAnimationsUndefined: Self = StObject.set(x, "waitForAnimations", js.undefined)
+  }
 }
-

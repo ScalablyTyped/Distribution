@@ -1,7 +1,7 @@
 package typings.puppeteerCore.anon
 
-import typings.puppeteerCore.utilDeferredPromiseMod.DeferredPromise
-import typings.puppeteerCore.utilDeferredPromiseMod.DeferredPromiseOptions
+import typings.puppeteerCore.libEsmPuppeteerUtilDeferredPromiseMod.DeferredPromise
+import typings.puppeteerCore.libEsmPuppeteerUtilDeferredPromiseMod.DeferredPromiseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

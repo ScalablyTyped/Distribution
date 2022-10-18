@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Debug")
 @js.native
 open class Debug ()
-  extends typings.blackEngine.debugMod.Debug
+  extends typings.blackEngine.coreDebugMod.Debug
 /* static members */
 object Debug {
   

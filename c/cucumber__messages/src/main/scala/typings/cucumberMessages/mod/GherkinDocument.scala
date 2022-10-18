@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@cucumber/messages", "GherkinDocument")
 @js.native
 open class GherkinDocument ()
-  extends typings.cucumberMessages.messagesMod.GherkinDocument
+  extends typings.cucumberMessages.distCjsSrcMessagesMod.GherkinDocument

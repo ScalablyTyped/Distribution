@@ -2,8 +2,8 @@ package typings.parcelTypes.mod
 
 import typings.parcelTypes.anon.IncludeInline
 import typings.parcelTypes.anon.Recursive
-import typings.parcelTypes.anon.TypeValue
-import typings.parcelTypes.anon.ValueAsset
+import typings.parcelTypes.anon.Type
+import typings.parcelTypes.anon.Value
 import typings.std.ReadonlySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -117,8 +117,8 @@ trait BundleGraph[TBundle /* <: Bundle */] extends StObject {
     * Returns undefined if the specified dependency was excluded or wasn't async \
     * and otherwise the BundleGroup or Asset that the dependency resolves to.
     */
-  def resolveAsyncDependency(dependency: Dependency): js.UndefOr[TypeValue | ValueAsset | Null] = js.native
-  def resolveAsyncDependency(dependency: Dependency, bundle: Bundle): js.UndefOr[TypeValue | ValueAsset | Null] = js.native
+  def resolveAsyncDependency(dependency: Dependency): js.UndefOr[Type | Value | Null] = js.native
+  def resolveAsyncDependency(dependency: Dependency, bundle: Bundle): js.UndefOr[Type | Value | Null] = js.native
   
   /** Traverses the assets and dependencies in the bundle graph, in depth first order. */
   def traverse[TContext](visit: GraphVisitor[BundleGraphTraversable, TContext]): js.UndefOr[TContext | Null] = js.native

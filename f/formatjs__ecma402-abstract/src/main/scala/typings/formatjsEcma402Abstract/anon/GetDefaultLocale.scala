@@ -1,7 +1,7 @@
 package typings.formatjsEcma402Abstract.anon
 
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatInternal
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatLocaleInternalData
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatInternal
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatLocaleInternalData
 import typings.std.Intl.NumberFormat
 import typings.std.Record
 import typings.std.Set

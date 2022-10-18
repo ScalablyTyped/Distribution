@@ -1,6 +1,6 @@
 package typings.awsGreengrassCoreSdk.mod.StreamManager
 
-import typings.awsGreengrassCoreSdk.dataMod.KinesisConfigMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.KinesisConfigMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,5 +45,5 @@ object KinesisConfig {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromMap(d: KinesisConfigMap): typings.awsGreengrassCoreSdk.dataMod.KinesisConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.KinesisConfig]
+  inline def fromMap(d: KinesisConfigMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.KinesisConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.KinesisConfig]
 }

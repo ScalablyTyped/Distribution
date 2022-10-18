@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,7 @@ trait Channel extends StObject {
   
   /** Additional parameters controlling delivery channel behavior. Optional. */
   var params: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.Channel & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** A Boolean value to indicate whether payload is wanted. Optional. */
@@ -67,9 +64,7 @@ object Channel {
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setParams(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.Channel & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

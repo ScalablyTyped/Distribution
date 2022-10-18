@@ -23,9 +23,6 @@ trait DayPickerContextValue
   @JSName("classNames")
   var classNames_DayPickerContextValue: RequiredClassNames
   
-  @JSName("components")
-  var components_DayPickerContextValue: Components
-  
   @JSName("formatters")
   var formatters_DayPickerContextValue: Formatters
   
@@ -65,7 +62,6 @@ object DayPickerContextValue {
   inline def apply(
     captionLayout: CaptionLayout,
     classNames: RequiredClassNames,
-    components: Components,
     formatters: Formatters,
     labels: Labels,
     locale: Locale,
@@ -76,7 +72,7 @@ object DayPickerContextValue {
     styles: Styles,
     today: js.Date
   ): DayPickerContextValue = {
-    val __obj = js.Dynamic.literal(captionLayout = captionLayout.asInstanceOf[js.Any], classNames = classNames.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], formatters = formatters.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], modifiersClassNames = modifiersClassNames.asInstanceOf[js.Any], numberOfMonths = numberOfMonths.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(captionLayout = captionLayout.asInstanceOf[js.Any], classNames = classNames.asInstanceOf[js.Any], formatters = formatters.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], modifiersClassNames = modifiersClassNames.asInstanceOf[js.Any], numberOfMonths = numberOfMonths.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any])
     __obj.asInstanceOf[DayPickerContextValue]
   }
   
@@ -85,8 +81,6 @@ object DayPickerContextValue {
     inline def setCaptionLayout(value: CaptionLayout): Self = StObject.set(x, "captionLayout", value.asInstanceOf[js.Any])
     
     inline def setClassNames(value: RequiredClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
-    
-    inline def setComponents(value: Components): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     inline def setFormatters(value: Formatters): Self = StObject.set(x, "formatters", value.asInstanceOf[js.Any])
     

@@ -35,10 +35,10 @@ trait ShapeCollection
     * @returns The newly inserted shape.
     */
   def addGeometricShape(
-    geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+    geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.officeJs.officeJsStrings.LineInverse, typings.officeJs.officeJsStrings.Triangle, typings.officeJs.officeJsStrings.RightTriangle */ Any
   ): Shape = js.native
   def addGeometricShape(
-    geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any,
+    geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.officeJs.officeJsStrings.LineInverse, typings.officeJs.officeJsStrings.Triangle, typings.officeJs.officeJsStrings.RightTriangle */ Any,
     options: ShapeAddOptions
   ): Shape = js.native
   /**

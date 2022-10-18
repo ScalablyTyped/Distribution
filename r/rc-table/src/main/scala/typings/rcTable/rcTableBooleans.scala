@@ -1,6 +1,6 @@
 package typings.rcTable
 
-import typings.rcTable.interfaceMod.ExpandableType
+import typings.rcTable.libInterfaceMod.ExpandableType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

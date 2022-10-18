@@ -1,11 +1,11 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsBooleans.`false`
-import typings.chartJs.elementMod.Element
-import typings.chartJs.geometricMod.ChartArea
-import typings.chartJs.geometricMod.Point
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesElementMod.Element
+import typings.chartJs.typesGeometricMod.ChartArea
+import typings.chartJs.typesGeometricMod.Point
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -14,33 +14,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class LatheGeometry ()
   extends typings.three.mod.LatheGeometry {
-  def this(points: js.Array[typings.three.vector2Mod.Vector2]) = this()
-  def this(points: js.Array[typings.three.vector2Mod.Vector2], segments: Double) = this()
+  def this(points: js.Array[typings.three.srcMathVector2Mod.Vector2]) = this()
+  def this(points: js.Array[typings.three.srcMathVector2Mod.Vector2], segments: Double) = this()
   def this(points: Unit, segments: Double) = this()
-  def this(points: js.Array[typings.three.vector2Mod.Vector2], segments: Double, phiStart: Double) = this()
-  def this(points: js.Array[typings.three.vector2Mod.Vector2], segments: Unit, phiStart: Double) = this()
+  def this(points: js.Array[typings.three.srcMathVector2Mod.Vector2], segments: Double, phiStart: Double) = this()
+  def this(points: js.Array[typings.three.srcMathVector2Mod.Vector2], segments: Unit, phiStart: Double) = this()
   def this(points: Unit, segments: Double, phiStart: Double) = this()
   def this(points: Unit, segments: Unit, phiStart: Double) = this()
   def this(
-    points: js.Array[typings.three.vector2Mod.Vector2],
+    points: js.Array[typings.three.srcMathVector2Mod.Vector2],
     segments: Double,
     phiStart: Double,
     phiLength: Double
   ) = this()
   def this(
-    points: js.Array[typings.three.vector2Mod.Vector2],
+    points: js.Array[typings.three.srcMathVector2Mod.Vector2],
     segments: Double,
     phiStart: Unit,
     phiLength: Double
   ) = this()
   def this(
-    points: js.Array[typings.three.vector2Mod.Vector2],
+    points: js.Array[typings.three.srcMathVector2Mod.Vector2],
     segments: Unit,
     phiStart: Double,
     phiLength: Double
   ) = this()
   def this(
-    points: js.Array[typings.three.vector2Mod.Vector2],
+    points: js.Array[typings.three.srcMathVector2Mod.Vector2],
     segments: Unit,
     phiStart: Unit,
     phiLength: Double
@@ -57,5 +57,5 @@ object LatheGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.latheGeometryMod.LatheGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.latheGeometryMod.LatheGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesLatheGeometryMod.LatheGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesLatheGeometryMod.LatheGeometry]
 }

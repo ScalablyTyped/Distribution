@@ -1,15 +1,15 @@
 package typings.antvG2plot.mod
 
-import typings.antvG2plot.plotMod.PickOptions
+import typings.antvG2plot.libCorePlotMod.PickOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/g2plot", "Plot")
+/* note: abstract class */ @JSImport("@antv/g2plot", "Plot")
 @js.native
-abstract class Plot[O /* <: PickOptions */] protected ()
-  extends typings.antvG2plot.plotMod.Plot[O] {
+open class Plot[O /* <: PickOptions */] protected ()
+  extends typings.antvG2plot.libCorePlotMod.Plot[O] {
   def this(container: String, options: O) = this()
   def this(container: HTMLElement, options: O) = this()
 }

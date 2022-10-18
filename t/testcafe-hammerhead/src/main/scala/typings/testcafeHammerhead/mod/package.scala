@@ -1,7 +1,7 @@
 package typings.testcafeHammerhead.mod
 
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
-import typings.std.ReadableStream
 import typings.testcafeHammerhead.RequestFilterRulePredicate
 import typings.testcafeHammerhead.anon.PartialRequestFilterRuleO
 import typings.testcafeHammerhead.mod.^
@@ -34,8 +34,8 @@ inline def processScript(src: String, withHeader: Unit, wrapLastExprWithProcessH
 inline def processScript(src: String, withHeader: Unit, wrapLastExprWithProcessHtml: Boolean, resolver: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("processScript")(src.asInstanceOf[js.Any], withHeader.asInstanceOf[js.Any], wrapLastExprWithProcessHtml.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[String]
 inline def processScript(src: String, withHeader: Unit, wrapLastExprWithProcessHtml: Unit, resolver: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("processScript")(src.asInstanceOf[js.Any], withHeader.asInstanceOf[js.Any], wrapLastExprWithProcessHtml.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def promisifyStream(s: ReadableStream[Any]): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyStream")(s.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
-inline def promisifyStream(s: ReadableStream[Any], contentLength: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyStream")(s.asInstanceOf[js.Any], contentLength.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+inline def promisifyStream(s: ReadableStream): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyStream")(s.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+inline def promisifyStream(s: ReadableStream, contentLength: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyStream")(s.asInstanceOf[js.Any], contentLength.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
 
 inline def responseMockSetBodyMethod: ResponseMockSetBodyMethod_ = ^.asInstanceOf[js.Dynamic].selectDynamic("responseMockSetBodyMethod").asInstanceOf[ResponseMockSetBodyMethod_]
 

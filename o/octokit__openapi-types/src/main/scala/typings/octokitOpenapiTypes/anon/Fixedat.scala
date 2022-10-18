@@ -30,9 +30,7 @@ trait Fixedat extends StObject {
   
   var number: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['alert-number'] */ js.Any
   
-  var repository: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-repository'] */ js.Any
-  
-  var rule: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-alert-rule'] */ js.Any
+  var rule: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-alert-rule-summary'] */ js.Any
   
   var state: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-alert-state'] */ js.Any
   
@@ -55,13 +53,12 @@ object Fixedat {
     instances_url: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['alert-instances-url'] */ js.Any,
     most_recent_instance: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-alert-instance'] */ js.Any,
     number: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['alert-number'] */ js.Any,
-    repository: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-repository'] */ js.Any,
-    rule: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-alert-rule'] */ js.Any,
+    rule: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-alert-rule-summary'] */ js.Any,
     state: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-alert-state'] */ js.Any,
     tool: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-tool'] */ js.Any,
     url: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['alert-url'] */ js.Any
   ): Fixedat = {
-    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], dismissed_at = dismissed_at.asInstanceOf[js.Any], dismissed_by = dismissed_by.asInstanceOf[js.Any], dismissed_reason = dismissed_reason.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], instances_url = instances_url.asInstanceOf[js.Any], most_recent_instance = most_recent_instance.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], dismissed_at = dismissed_at.asInstanceOf[js.Any], dismissed_by = dismissed_by.asInstanceOf[js.Any], dismissed_reason = dismissed_reason.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], instances_url = instances_url.asInstanceOf[js.Any], most_recent_instance = most_recent_instance.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fixedat]
   }
   
@@ -111,12 +108,8 @@ object Fixedat {
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['alert-number'] */ js.Any
     ): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    inline def setRepository(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-repository'] */ js.Any
-    ): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
-    
     inline def setRule(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-alert-rule'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-alert-rule-summary'] */ js.Any
     ): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     inline def setState(

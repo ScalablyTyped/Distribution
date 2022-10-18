@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Checksuite extends StObject {
   
-  var app: Externalurl | Null
+  var app: Clientsecret | Null
   
   var check_suite: IdNumber | Null
   
@@ -32,7 +32,7 @@ trait Checksuite extends StObject {
     */
   var conclusion: success | failure | neutral | cancelled | skipped | timed_out | action_required | Null
   
-  var deployment: js.UndefOr[Productionenvironment] = js.undefined
+  var deployment: js.UndefOr[Performedviagithubapp] = js.undefined
   
   /** @example https://example.com */
   var details_url: String | Null
@@ -66,7 +66,7 @@ trait Checksuite extends StObject {
   
   var output: Annotationscount
   
-  var pull_requests: js.Array[HeadId]
+  var pull_requests: js.Array[Base]
   
   /**
     * Format: date-time
@@ -92,7 +92,7 @@ object Checksuite {
     name: String,
     node_id: String,
     output: Annotationscount,
-    pull_requests: js.Array[HeadId],
+    pull_requests: js.Array[Base],
     status: queued_ | in_progress | completed,
     url: String
   ): Checksuite = {
@@ -102,7 +102,7 @@ object Checksuite {
   
   extension [Self <: Checksuite](x: Self) {
     
-    inline def setApp(value: Externalurl): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: Clientsecret): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     inline def setAppNull: Self = StObject.set(x, "app", null)
     
@@ -118,7 +118,7 @@ object Checksuite {
     
     inline def setConclusionNull: Self = StObject.set(x, "conclusion", null)
     
-    inline def setDeployment(value: Productionenvironment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: Performedviagithubapp): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
     inline def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
     
@@ -144,9 +144,9 @@ object Checksuite {
     
     inline def setOutput(value: Annotationscount): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    inline def setPull_requests(value: js.Array[HeadId]): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
+    inline def setPull_requests(value: js.Array[Base]): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
     
-    inline def setPull_requestsVarargs(value: HeadId*): Self = StObject.set(x, "pull_requests", js.Array(value*))
+    inline def setPull_requestsVarargs(value: Base*): Self = StObject.set(x, "pull_requests", js.Array(value*))
     
     inline def setStarted_at(value: String): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
     

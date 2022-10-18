@@ -1,5 +1,6 @@
 package typings.playcanvas.global.pc
 
+import typings.playcanvas.mod.AppBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,5 +20,5 @@ open class MaterialHandler protected ()
     * @param {AppBase} app - The running {@link AppBase}.
     * @hideconstructor
     */
-  def this(app: typings.playcanvas.mod.AppBase) = this()
+  def this(app: AppBase) = this()
 }

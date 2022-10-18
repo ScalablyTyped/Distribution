@@ -15,7 +15,7 @@ trait ReplyFormData extends StObject {
   var attachments: js.UndefOr[js.Array[ReplyFormAttachment]] = js.undefined
   
   /**
-    * When the reply display call completes, the function passed in the callback parameter is called with a single parameter, 
+    * When the reply display call completes, the function passed in the callback parameter is called with a single parameter,
     * `asyncResult`, which is an `Office.AsyncResult` object.
     */
   var callback: js.UndefOr[js.Function1[/* asyncResult */ AsyncResult[Any], Unit]] = js.undefined
@@ -26,7 +26,7 @@ trait ReplyFormData extends StObject {
   var htmlBody: js.UndefOr[String] = js.undefined
   
   /**
-    * An object literal that contains the following property.
+    * An object literal that contains the following property:-
     * `asyncContext`: Developers can provide any object they wish to access in the callback function.
     */
   var options: js.UndefOr[AsyncContextOptions] = js.undefined

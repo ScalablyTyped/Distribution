@@ -15,15 +15,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class EvadeBehavior ()
   extends typings.yuka.mod.EvadeBehavior {
-  def this(pursuer: typings.yuka.movingEntityMod.MovingEntity) = this()
+  def this(pursuer: typings.yuka.srcCoreMovingEntityMod.MovingEntity) = this()
   def this(pursuer: Unit, panicDistance: Double) = this()
-  def this(pursuer: typings.yuka.movingEntityMod.MovingEntity, panicDistance: Double) = this()
+  def this(pursuer: typings.yuka.srcCoreMovingEntityMod.MovingEntity, panicDistance: Double) = this()
   def this(pursuer: Unit, panicDistance: Double, predictionFactor: Double) = this()
   def this(pursuer: Unit, panicDistance: Unit, predictionFactor: Double) = this()
   def this(
-    pursuer: typings.yuka.movingEntityMod.MovingEntity,
+    pursuer: typings.yuka.srcCoreMovingEntityMod.MovingEntity,
     panicDistance: Double,
     predictionFactor: Double
   ) = this()
-  def this(pursuer: typings.yuka.movingEntityMod.MovingEntity, panicDistance: Unit, predictionFactor: Double) = this()
+  def this(
+    pursuer: typings.yuka.srcCoreMovingEntityMod.MovingEntity,
+    panicDistance: Unit,
+    predictionFactor: Double
+  ) = this()
 }

@@ -1,8 +1,8 @@
 package typings.octokitTypes
 
-import typings.octokitTypes.endpointsMod.EmptyResponseStatuses
-import typings.octokitTypes.endpointsMod.RedirectStatuses
-import typings.octokitTypes.endpointsMod.SuccessStatuses
+import typings.octokitTypes.distTypesGeneratedEndpointsMod.EmptyResponseStatuses
+import typings.octokitTypes.distTypesGeneratedEndpointsMod.RedirectStatuses
+import typings.octokitTypes.distTypesGeneratedEndpointsMod.SuccessStatuses
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

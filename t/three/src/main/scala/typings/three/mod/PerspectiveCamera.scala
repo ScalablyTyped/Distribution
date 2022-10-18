@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [far=2000] Camera frustum far plane. Default value is 2000.
   */
 open class PerspectiveCamera ()
-  extends typings.three.threeMod.PerspectiveCamera {
+  extends typings.three.srcThreeMod.PerspectiveCamera {
   def this(fov: Double) = this()
   def this(fov: Double, aspect: Double) = this()
   def this(fov: Unit, aspect: Double) = this()

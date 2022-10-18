@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "leaflet-rotate"
-version := "0.1-dt-20220502Z-7dd517"
+version := "0.1-dt-20220502Z-bab59e"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

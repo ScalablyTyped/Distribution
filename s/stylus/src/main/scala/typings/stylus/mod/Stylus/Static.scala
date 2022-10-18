@@ -1,9 +1,9 @@
 package typings.stylus.mod.Stylus
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.stylus.libRendererMod.^
 import typings.stylus.mod.RenderCallback
 import typings.stylus.mod.RenderOptions
-import typings.stylus.rendererMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "FxaaPostProcess")
 @js.native
 open class FxaaPostProcess protected ()
-  extends typings.babylonjs.legacyMod.FxaaPostProcess {
+  extends typings.babylonjs.legacyLegacyMod.FxaaPostProcess {
   def this(
     name: String,
     options: Double | PostProcessOptions,
-    camera: js.UndefOr[Nullable[typings.babylonjs.cameraMod.Camera]],
+    camera: js.UndefOr[Nullable[typings.babylonjs.camerasCameraMod.Camera]],
     samplingMode: js.UndefOr[Double],
-    engine: js.UndefOr[typings.babylonjs.engineMod.Engine],
+    engine: js.UndefOr[typings.babylonjs.enginesEngineMod.Engine],
     reusable: js.UndefOr[Boolean],
     textureType: js.UndefOr[Double]
   ) = this()
@@ -32,8 +32,8 @@ object FxaaPostProcess {
     */
   inline def _Parse(
     parsedPostProcess: Any,
-    targetCamera: typings.babylonjs.cameraMod.Camera,
+    targetCamera: typings.babylonjs.camerasCameraMod.Camera,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String
-  ): typings.babylonjs.fxaaPostProcessMod.FxaaPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.fxaaPostProcessMod.FxaaPostProcess]
+  ): typings.babylonjs.postProcessesFxaaPostProcessMod.FxaaPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.postProcessesFxaaPostProcessMod.FxaaPostProcess]
 }

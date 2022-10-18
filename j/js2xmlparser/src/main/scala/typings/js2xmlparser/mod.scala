@@ -1,6 +1,6 @@
 package typings.js2xmlparser
 
-import typings.js2xmlparser.optionsMod.IOptions
+import typings.js2xmlparser.libOptionsMod.IOptions
 import typings.xmlcreate.mod.XmlElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

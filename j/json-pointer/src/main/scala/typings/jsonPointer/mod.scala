@@ -437,7 +437,15 @@ object mod extends Shortcut {
     def apply(pointer: js.Array[String], value: Any): BoundApi = js.native
   }
   
-  type DropFirst[T /* <: js.Array[Any] */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends [any, ...infer U] ? U : never
+    }}}
+    */
+  @js.native
+  trait DropFirst[T /* <: js.Array[Any] */] extends StObject
   
   type JsonObject = (Record[String | Double, Any]) | js.Array[Any]
   

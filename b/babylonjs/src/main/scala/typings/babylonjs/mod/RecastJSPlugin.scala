@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param recastInjection can be used to inject your own recast reference
   */
 open class RecastJSPlugin ()
-  extends typings.babylonjs.legacyMod.RecastJSPlugin {
+  extends typings.babylonjs.legacyLegacyMod.RecastJSPlugin {
   def this(recastInjection: Any) = this()
 }

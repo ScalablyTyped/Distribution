@@ -16,9 +16,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pkijs", "AbstractCryptoEngine")
+/* note: abstract class */ @JSImport("pkijs", "AbstractCryptoEngine")
 @js.native
-abstract class AbstractCryptoEngine protected ()
+open class AbstractCryptoEngine protected ()
   extends StObject
      with ICryptoEngine {
   /**

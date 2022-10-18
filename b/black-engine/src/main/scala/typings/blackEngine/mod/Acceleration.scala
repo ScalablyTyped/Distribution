@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Acceleration")
 @js.native
 open class Acceleration protected ()
-  extends typings.blackEngine.accelerationMod.Acceleration {
-  def this(values: (Double | typings.blackEngine.vectorScatterBaseMod.VectorScatterBase)*) = this()
+  extends typings.blackEngine.particlesModsAccelerationMod.Acceleration {
+  def this(values: (Double | typings.blackEngine.scattersVectorScatterBaseMod.VectorScatterBase)*) = this()
 }

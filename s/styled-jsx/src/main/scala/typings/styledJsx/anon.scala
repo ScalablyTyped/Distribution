@@ -2,7 +2,7 @@ package typings.styledJsx
 
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.styledJsx.styledJsxMod.StyledJsxStyleRegistry
+import typings.styledJsx.mod.StyledJsxStyleRegistry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

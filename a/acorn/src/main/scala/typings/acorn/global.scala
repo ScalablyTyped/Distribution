@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import typings.acorn.anon.Arrow
 import typings.acorn.anon.Bexpr
-import typings.acorn.anon.Call
+import typings.acorn.anon.GetToken
 import typings.acorn.anon.TypeofParser
 import typings.acorn.mod.Options
 import typings.acorn.mod.Position
@@ -223,7 +223,7 @@ object global {
         @js.native
         val tokTypes: Arrow = js.native
         
-        inline def tokenizer(input: String, options: Options): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Call]
+        inline def tokenizer(input: String, options: Options): GetToken = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GetToken]
         
         @JSGlobal("acorn.Parser.acorn.version")
         @js.native
@@ -266,7 +266,7 @@ object global {
       inline def parseExpressionAt(input: String, pos: Double, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
       
       /* static member */
-      inline def tokenizer(input: String, options: Options): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Call]
+      inline def tokenizer(input: String, options: Options): GetToken = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GetToken]
     }
     
     @JSGlobal("acorn.SourceLocation")
@@ -780,7 +780,7 @@ object global {
       val `with`: typings.acorn.mod.TokenType = js.native
     }
     
-    inline def tokenizer(input: String, options: Options): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Call]
+    inline def tokenizer(input: String, options: Options): GetToken = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GetToken]
     
     @JSGlobal("acorn.version")
     @js.native

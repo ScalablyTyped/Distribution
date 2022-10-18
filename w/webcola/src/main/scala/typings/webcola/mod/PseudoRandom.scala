@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "PseudoRandom")
 @js.native
 open class PseudoRandom ()
-  extends typings.webcola.descentMod.PseudoRandom {
+  extends typings.webcola.distSrcDescentMod.PseudoRandom {
   def this(seed: Double) = this()
 }

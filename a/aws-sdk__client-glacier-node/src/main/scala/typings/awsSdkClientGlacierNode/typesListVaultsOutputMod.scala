@@ -1,8 +1,8 @@
 package typings.awsSdkClientGlacierNode
 
-import typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeMod.UnmarshalledDescribeVaultOutput
-import typings.awsSdkClientGlacierNode.outputTypesUnionMod._OutputTypesUnion
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkClientGlacierNode.typesDescribeVaultOutputMod_.UnmarshalledDescribeVaultOutput
+import typings.awsSdkClientGlacierNode.typesOutputTypesUnionMod._OutputTypesUnion
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

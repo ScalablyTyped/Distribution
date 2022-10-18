@@ -1,6 +1,6 @@
 package typings.babylonjs
 
-import typings.babylonjs.dataBufferMod.DataBuffer
+import typings.babylonjs.buffersDataBufferMod.DataBuffer
 import typings.babylonjs.typesMod.DataArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object meshesBufferMod {
   @JSImport("babylonjs/Meshes/buffer", "Buffer")
   @js.native
   open class Buffer protected ()
-    extends typings.babylonjs.bufferMod.Buffer {
+    extends typings.babylonjs.buffersBufferMod.Buffer {
     /**
       * Constructor
       * @param engine the engine
@@ -38,7 +38,7 @@ object meshesBufferMod {
   @JSImport("babylonjs/Meshes/buffer", "VertexBuffer")
   @js.native
   open class VertexBuffer protected ()
-    extends typings.babylonjs.bufferMod.VertexBuffer {
+    extends typings.babylonjs.buffersBufferMod.VertexBuffer {
     /**
       * Constructor
       * @param engine the engine
@@ -58,7 +58,7 @@ object meshesBufferMod {
       */
     def this(
       engine: Any,
-      data: DataArray | typings.babylonjs.bufferMod.Buffer | DataBuffer,
+      data: DataArray | typings.babylonjs.buffersBufferMod.Buffer | DataBuffer,
       kind: String,
       updatable: Boolean,
       postponeInternalCreation: js.UndefOr[Boolean],

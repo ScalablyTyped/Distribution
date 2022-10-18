@@ -1,8 +1,8 @@
 package typings.mssql.mod
 
 import typings.events.mod.EventEmitter
+import typings.node.NodeJS.WritableStream
 import typings.std.TemplateStringsArray
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,7 +71,7 @@ open class Request () extends EventEmitter {
   
   def pause(): Boolean = js.native
   
-  def pipe(stream: WritableStream[Any]): WritableStream[Any] = js.native
+  def pipe(stream: WritableStream): WritableStream = js.native
   
   var pstatement: PreparedStatement = js.native
   

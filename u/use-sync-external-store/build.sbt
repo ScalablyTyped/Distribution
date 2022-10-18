@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "use-sync-external-store"
-version := "0.0-dt-20220624Z-cd3c79"
+version := "0.0-dt-20220624Z-5d9da2"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

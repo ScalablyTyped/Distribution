@@ -6,20 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChannelId extends StObject {
   
-  var bridgeId: String
-  
   var channelId: String
 }
 object ChannelId {
   
-  inline def apply(bridgeId: String, channelId: String): ChannelId = {
-    val __obj = js.Dynamic.literal(bridgeId = bridgeId.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any])
+  inline def apply(channelId: String): ChannelId = {
+    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelId]
   }
   
   extension [Self <: ChannelId](x: Self) {
-    
-    inline def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
   }

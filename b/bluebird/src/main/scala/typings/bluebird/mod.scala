@@ -1,7 +1,6 @@
 package typings.bluebird
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import typings.bluebird.anon.AsyncHooks
 import typings.bluebird.anon.FnCall
 import typings.bluebird.bluebirdStrings.Object
@@ -10,7 +9,6 @@ import typings.std.Error
 import typings.std.IterableIterator
 import typings.std.Map
 import typings.std.PromiseLike
-import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1236,9 +1234,7 @@ object mod {
       * </code>
       */
     def call[U /* <: /* keyof Q */ String */, Q](propertyName: U, args: Any*): Bluebird[
-        ReturnType[
-          /* import warning: importer.ImportType#apply Failed type conversion: Q[U] */ js.Any
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: Q[U] extends (args : ...any): any ? std.ReturnType<Q[U]> : never */ js.Any
       ] = js.native
     
     /**
@@ -3797,12 +3793,25 @@ object mod {
     }
   }
   
-  type ExtractAsyncMethod[T] = PromiseMethod[
-    Any, 
-    /* import warning: importer.ImportType#apply Failed type conversion: bluebird.bluebird.ExtractCallbackValueType<bluebird.bluebird.Last<std.Required<any>>>[0] */ js.Any
-  ]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends (args : infer A): any ? bluebird.bluebird.PromiseMethod<A, bluebird.bluebird.ExtractCallbackValueType<bluebird.bluebird.Last<std.Required<A>>>[0]> : never
+    }}}
+    */
+  @js.native
+  trait ExtractAsyncMethod[T] extends StObject
   
-  type ExtractCallbackValueType[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends (error : any, data : infer D): any ? D : never
+    }}}
+    */
+  @js.native
+  trait ExtractCallbackValueType[T] extends StObject
   
   trait FromNodeOptions extends StObject {
     
@@ -3891,19 +3900,55 @@ object mod {
   
   type IterateFunction[T, R] = js.Function3[/* item */ T, /* index */ Double, /* arrayLength */ Double, Resolvable[R]]
   
-  type Last[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends [...std.Array<any>, infer L] ? L : never
+    }}}
+    */
+  @js.native
+  trait Last[T] extends StObject
   
-  type NonNeverValues[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T as T[K] extends never? never : K ]: T[K]}
-    */ typings.bluebird.bluebirdStrings.NonNeverValues & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T as T[K] extends never? never : K ]: T[K]}
+    }}}
+    */
+  @js.native
+  trait NonNeverValues[T] extends StObject
   
-  type PromiseMethod[TArgs, TReturn] = js.Function1[/* args */ WithoutLast[TArgs], js.Promise[TReturn]]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TReturn extends never ? never : (args : bluebird.bluebird.WithoutLast<TArgs>): std.Promise<TReturn>
+    }}}
+    */
+  @js.native
+  trait PromiseMethod[TArgs, TReturn] extends StObject
   
-  type PromisifyAllItems[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T as bluebird.bluebird.PromisifyAllKeys<K> ]: bluebird.bluebird.ExtractAsyncMethod<T[K]>}
-    */ typings.bluebird.bluebirdStrings.PromisifyAllItems & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T as bluebird.bluebird.PromisifyAllKeys<K> ]: bluebird.bluebird.ExtractAsyncMethod<T[K]>}
+    }}}
+    */
+  @js.native
+  trait PromisifyAllItems[T] extends StObject
   
-  type PromisifyAllKeys[T] = /* template literal string: ${T}Async */ String
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends string ? / * template literal string: ${T}Async * / string : never
+    }}}
+    */
+  @js.native
+  trait PromisifyAllKeys[T] extends StObject
   
   trait PromisifyAllOptions[T]
     extends StObject
@@ -3993,7 +4038,7 @@ object mod {
   
   type Resolvable[R] = R | PromiseLike[R]
   
-  type ResolvableProps[T] = js.Object & typings.bluebird.bluebirdStrings.ResolvableProps & TopLevel[T]
+  type ResolvableProps[T] = js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: bluebird.bluebird.Resolvable<T[K]>} */ js.Any)
   
   @js.native
   trait Resolver[R] extends StObject {
@@ -4044,5 +4089,13 @@ object mod {
   /** @deprecated Use PromiseLike<T> directly. */
   type Thenable[T] = PromiseLike[T]
   
-  type WithoutLast[T] = js.Array[Any]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends [...infer A, any] ? A : []
+    }}}
+    */
+  @js.native
+  trait WithoutLast[T] extends StObject
 }

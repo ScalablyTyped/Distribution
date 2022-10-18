@@ -1,6 +1,6 @@
 package typings.uifabricIcons
 
-import typings.uifabricIcons.iconNamesMod.IconNames
+import typings.uifabricIcons.libIconNamesMod.IconNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,5 @@
 package typings.marv
 
-import org.scalablytyped.runtime.TopLevel
 import typings.marv.anon.Quiet
 import typings.node.fsMod.PathLike
 import typings.std.Record
@@ -125,9 +124,15 @@ object mod {
     }
   }
   
-  type EmptyObject = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in any ]: never}
-    */ typings.marv.marvStrings.EmptyObject & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in any ]: never}
+    }}}
+    */
+  @js.native
+  trait EmptyObject extends StObject
   
   type ErrorOnlyCallback = js.Function1[/* error */ js.UndefOr[js.Error], Unit]
   

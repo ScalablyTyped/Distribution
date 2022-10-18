@@ -1,11 +1,11 @@
 package typings.awsSdkMiddlewareLogger
 
-import typings.awsSdkTypes.middlewareMod.AbsoluteLocation
-import typings.awsSdkTypes.middlewareMod.HandlerExecutionContext
-import typings.awsSdkTypes.middlewareMod.InitializeHandler
-import typings.awsSdkTypes.middlewareMod.InitializeHandlerOptions
-import typings.awsSdkTypes.middlewareMod.Pluggable
-import typings.awsSdkTypes.responseMod.MetadataBearer
+import typings.awsSdkTypes.distTypesMiddlewareMod.AbsoluteLocation
+import typings.awsSdkTypes.distTypesMiddlewareMod.HandlerExecutionContext
+import typings.awsSdkTypes.distTypesMiddlewareMod.InitializeHandler
+import typings.awsSdkTypes.distTypesMiddlewareMod.InitializeHandlerOptions
+import typings.awsSdkTypes.distTypesMiddlewareMod.Pluggable
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

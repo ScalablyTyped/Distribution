@@ -649,10 +649,6 @@ object shippoStrings {
   inline def GY: GY = "GY".asInstanceOf[GY]
   
   @js.native
-  sealed trait GetRequired extends StObject
-  inline def GetRequired: GetRequired = "GetRequired".asInstanceOf[GetRequired]
-  
-  @js.native
   sealed trait HK
     extends StObject
        with _Country

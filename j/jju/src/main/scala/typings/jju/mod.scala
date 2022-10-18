@@ -205,7 +205,7 @@ object mod {
       * - If `mode` is 'json', default is "
       * - Otherwise, default is '
       */
-    var quote: js.UndefOr[Quotationmark | String] = js.undefined
+    var quote: js.UndefOr[Quotationmark | (/* ' */ String)] = js.undefined
     
     /**
       * Whether keys quoting in objects is required or not.
@@ -258,7 +258,7 @@ object mod {
       
       inline def setNo_trailing_commaUndefined: Self = StObject.set(x, "no_trailing_comma", js.undefined)
       
-      inline def setQuote(value: Quotationmark | String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      inline def setQuote(value: Quotationmark | (/* ' */ String)): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
       inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
       

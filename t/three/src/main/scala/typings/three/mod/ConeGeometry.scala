@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "ConeGeometry")
 @js.native
 open class ConeGeometry protected ()
-  extends typings.three.threeMod.ConeGeometry {
+  extends typings.three.srcThreeMod.ConeGeometry {
   /**
     * @param [radius=1] — Radius of the cone base.
     * @param [height=1] — Height of the cone.
@@ -34,5 +34,5 @@ object ConeGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.coneGeometryMod.ConeGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.coneGeometryMod.ConeGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesConeGeometryMod.ConeGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesConeGeometryMod.ConeGeometry]
 }

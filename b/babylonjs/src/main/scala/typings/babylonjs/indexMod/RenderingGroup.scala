@@ -23,8 +23,8 @@ open class RenderingGroup protected ()
     scene: typings.babylonjs.sceneMod.Scene,
     opaqueSortCompareFn: Nullable[
         js.Function2[
-          /* a */ typings.babylonjs.subMeshMod.SubMesh, 
-          /* b */ typings.babylonjs.subMeshMod.SubMesh, 
+          /* a */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
+          /* b */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
           Double
         ]
       ]
@@ -35,8 +35,8 @@ open class RenderingGroup protected ()
     opaqueSortCompareFn: Unit,
     alphaTestSortCompareFn: Nullable[
         js.Function2[
-          /* a */ typings.babylonjs.subMeshMod.SubMesh, 
-          /* b */ typings.babylonjs.subMeshMod.SubMesh, 
+          /* a */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
+          /* b */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
           Double
         ]
       ]
@@ -46,15 +46,15 @@ open class RenderingGroup protected ()
     scene: typings.babylonjs.sceneMod.Scene,
     opaqueSortCompareFn: Nullable[
         js.Function2[
-          /* a */ typings.babylonjs.subMeshMod.SubMesh, 
-          /* b */ typings.babylonjs.subMeshMod.SubMesh, 
+          /* a */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
+          /* b */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
           Double
         ]
       ],
     alphaTestSortCompareFn: Nullable[
         js.Function2[
-          /* a */ typings.babylonjs.subMeshMod.SubMesh, 
-          /* b */ typings.babylonjs.subMeshMod.SubMesh, 
+          /* a */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
+          /* b */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
           Double
         ]
       ]
@@ -66,8 +66,8 @@ open class RenderingGroup protected ()
     alphaTestSortCompareFn: Unit,
     transparentSortCompareFn: Nullable[
         js.Function2[
-          /* a */ typings.babylonjs.subMeshMod.SubMesh, 
-          /* b */ typings.babylonjs.subMeshMod.SubMesh, 
+          /* a */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
+          /* b */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
           Double
         ]
       ]
@@ -78,15 +78,15 @@ open class RenderingGroup protected ()
     opaqueSortCompareFn: Unit,
     alphaTestSortCompareFn: Nullable[
         js.Function2[
-          /* a */ typings.babylonjs.subMeshMod.SubMesh, 
-          /* b */ typings.babylonjs.subMeshMod.SubMesh, 
+          /* a */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
+          /* b */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
           Double
         ]
       ],
     transparentSortCompareFn: Nullable[
         js.Function2[
-          /* a */ typings.babylonjs.subMeshMod.SubMesh, 
-          /* b */ typings.babylonjs.subMeshMod.SubMesh, 
+          /* a */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
+          /* b */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
           Double
         ]
       ]
@@ -96,16 +96,16 @@ open class RenderingGroup protected ()
     scene: typings.babylonjs.sceneMod.Scene,
     opaqueSortCompareFn: Nullable[
         js.Function2[
-          /* a */ typings.babylonjs.subMeshMod.SubMesh, 
-          /* b */ typings.babylonjs.subMeshMod.SubMesh, 
+          /* a */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
+          /* b */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
           Double
         ]
       ],
     alphaTestSortCompareFn: Unit,
     transparentSortCompareFn: Nullable[
         js.Function2[
-          /* a */ typings.babylonjs.subMeshMod.SubMesh, 
-          /* b */ typings.babylonjs.subMeshMod.SubMesh, 
+          /* a */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
+          /* b */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
           Double
         ]
       ]
@@ -115,22 +115,22 @@ open class RenderingGroup protected ()
     scene: typings.babylonjs.sceneMod.Scene,
     opaqueSortCompareFn: Nullable[
         js.Function2[
-          /* a */ typings.babylonjs.subMeshMod.SubMesh, 
-          /* b */ typings.babylonjs.subMeshMod.SubMesh, 
+          /* a */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
+          /* b */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
           Double
         ]
       ],
     alphaTestSortCompareFn: Nullable[
         js.Function2[
-          /* a */ typings.babylonjs.subMeshMod.SubMesh, 
-          /* b */ typings.babylonjs.subMeshMod.SubMesh, 
+          /* a */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
+          /* b */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
           Double
         ]
       ],
     transparentSortCompareFn: Nullable[
         js.Function2[
-          /* a */ typings.babylonjs.subMeshMod.SubMesh, 
-          /* b */ typings.babylonjs.subMeshMod.SubMesh, 
+          /* a */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
+          /* b */ typings.babylonjs.meshesSubMeshMod.SubMesh, 
           Double
         ]
       ]
@@ -151,7 +151,7 @@ object RenderingGroup {
     * @param b The second submesh
     * @returns The result of the comparison
     */
-  inline def PainterSortCompare(a: typings.babylonjs.subMeshMod.SubMesh, b: typings.babylonjs.subMeshMod.SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("PainterSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def PainterSortCompare(a: typings.babylonjs.meshesSubMeshMod.SubMesh, b: typings.babylonjs.meshesSubMeshMod.SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("PainterSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Renders the submeshes in a specified order.
@@ -178,7 +178,7 @@ object RenderingGroup {
     * @param b The second submesh
     * @returns The result of the comparison
     */
-  inline def backToFrontSortCompare(a: typings.babylonjs.subMeshMod.SubMesh, b: typings.babylonjs.subMeshMod.SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("backToFrontSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def backToFrontSortCompare(a: typings.babylonjs.meshesSubMeshMod.SubMesh, b: typings.babylonjs.meshesSubMeshMod.SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("backToFrontSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Build in function which can be applied to ensure meshes of a special queue (opaque, alpha test, transparent)
@@ -188,7 +188,7 @@ object RenderingGroup {
     * @param b The second submesh
     * @returns The result of the comparison
     */
-  inline def defaultTransparentSortCompare(a: typings.babylonjs.subMeshMod.SubMesh, b: typings.babylonjs.subMeshMod.SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultTransparentSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def defaultTransparentSortCompare(a: typings.babylonjs.meshesSubMeshMod.SubMesh, b: typings.babylonjs.meshesSubMeshMod.SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultTransparentSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Build in function which can be applied to ensure meshes of a special queue (opaque, alpha test, transparent)
@@ -198,5 +198,5 @@ object RenderingGroup {
     * @param b The second submesh
     * @returns The result of the comparison
     */
-  inline def frontToBackSortCompare(a: typings.babylonjs.subMeshMod.SubMesh, b: typings.babylonjs.subMeshMod.SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("frontToBackSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def frontToBackSortCompare(a: typings.babylonjs.meshesSubMeshMod.SubMesh, b: typings.babylonjs.meshesSubMeshMod.SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("frontToBackSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

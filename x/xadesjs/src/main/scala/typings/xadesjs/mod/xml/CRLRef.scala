@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.CRLRef")
 @js.native
 open class CRLRef ()
-  extends typings.xadesjs.typesXmlMod.CRLRef {
+  extends typings.xadesjs.buildTypesXmlMod.CRLRef {
   def this(properties: js.Object) = this()
 }

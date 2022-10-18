@@ -1,14 +1,14 @@
 package typings.baseui
 
 import typings.baseui.baseuiStrings.div
+import typings.baseui.sliderStatefulSliderContainerMod.default
 import typings.baseui.sliderTypesMod.SliderProps
 import typings.baseui.sliderTypesMod.StateReducer
 import typings.baseui.sliderTypesMod.StatefulContainerProps
 import typings.baseui.sliderTypesMod.StatefulSliderProps
 import typings.baseui.sliderTypesMod.StyleProps
-import typings.baseui.statefulSliderContainerMod.default
 import typings.react.mod.global.JSX.Element
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

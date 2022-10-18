@@ -29,7 +29,7 @@ object UpdatedLabelsOut {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: Category*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: Category*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setModification(value: String): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
     
@@ -39,6 +39,6 @@ object UpdatedLabelsOut {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: TypeLabel*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: TypeLabel*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

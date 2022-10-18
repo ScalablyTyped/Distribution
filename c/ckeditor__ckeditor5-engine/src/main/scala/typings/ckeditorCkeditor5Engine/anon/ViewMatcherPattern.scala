@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.matcherMod.MatcherPattern
-import typings.ckeditorCkeditor5Engine.viewElementMod.default
+import typings.ckeditorCkeditor5Engine.srcViewElementMod.default
+import typings.ckeditorCkeditor5Engine.srcViewMatcherMod.MatcherPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +12,13 @@ trait ViewMatcherPattern extends StObject {
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any) | Double
   ] = js.undefined
   
-  var model: String | KeyString
+  var model: String | KeyStringValue
   
   var view: MatcherPattern
 }
 object ViewMatcherPattern {
   
-  inline def apply(model: String | KeyString, view: MatcherPattern): ViewMatcherPattern = {
+  inline def apply(model: String | KeyStringValue, view: MatcherPattern): ViewMatcherPattern = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewMatcherPattern]
   }
@@ -31,7 +31,7 @@ object ViewMatcherPattern {
     
     inline def setConverterPriorityUndefined: Self = StObject.set(x, "converterPriority", js.undefined)
     
-    inline def setModel(value: String | KeyString): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String | KeyStringValue): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     inline def setView(value: MatcherPattern): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

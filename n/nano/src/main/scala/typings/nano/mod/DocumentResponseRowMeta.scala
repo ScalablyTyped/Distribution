@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // -------------------------------------
 // Document scope request and response
 // -------------------------------------
+/** Bulk API per-document response. */
 trait DocumentResponseRowMeta extends StObject {
   
   var error: js.UndefOr[String] = js.undefined

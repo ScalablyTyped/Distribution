@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object vueClickawayStrings {
   
   @js.native
-  sealed trait TypeofVue extends StObject
-  inline def TypeofVue: TypeofVue = "TypeofVue".asInstanceOf[TypeofVue]
-  
-  @js.native
-  sealed trait TypeofdefineSSRCustomElem extends StObject
-  inline def TypeofdefineSSRCustomElem: TypeofdefineSSRCustomElem = "TypeofdefineSSRCustomElem".asInstanceOf[TypeofdefineSSRCustomElem]
-  
-  @js.native
   sealed trait at extends StObject
   inline def at: at = "at".asInstanceOf[at]
   

@@ -6,8 +6,8 @@ import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.NgZone
 import typings.angularCore.mod.ɵɵComponentDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.swiper.angularAngularSrcSwiperDotcomponentMod.SwiperComponent
 import typings.swiper.swiperBooleans.`false`
-import typings.swiper.swiperComponentMod.SwiperComponent
 import typings.swiper.swiperStrings.`[slotEqualssigncontainer-end]`
 import typings.swiper.swiperStrings.`[slotEqualssigncontainer-start]`
 import typings.swiper.swiperStrings.`[slotEqualssignwrapper-end]`

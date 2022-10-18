@@ -1,21 +1,25 @@
 package typings.dateFns
 
-import org.scalablytyped.runtime.Shortcut
+import typings.dateFns.anon.Numeric
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intlFormatDistanceMod {
   
-  object default extends Shortcut {
+  object default {
     
-    @JSImport("date-fns/esm/fp/intlFormatDistance", JSImport.Default)
+    inline def apply(date: js.Date, baseDate: js.Date): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: js.Date, baseDate: js.Date, options: Numeric): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: js.Date, baseDate: Double): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: js.Date, baseDate: Double, options: Numeric): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, baseDate: js.Date): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, baseDate: js.Date, options: Numeric): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, baseDate: Double): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, baseDate: Double, options: Numeric): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @JSImport("date-fns/intlFormatDistance", JSImport.Default)
     @js.native
-    val ^ : CurriedFn2[js.Date | Double, js.Date | Double, String] = js.native
-    
-    type _To = CurriedFn2[js.Date | Double, js.Date | Double, String]
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn2[js.Date | Double, js.Date | Double, String] = ^
+    val ^ : js.Any = js.native
   }
 }

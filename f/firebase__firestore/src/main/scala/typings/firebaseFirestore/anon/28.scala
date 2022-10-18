@@ -1,30 +1,23 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.privateMod.FieldPath
-import typings.firebaseFirestore.privateMod.SetOptions
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcApiMod.AggregateField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `28`
-  extends StObject
-     with SetOptions {
+trait `28` extends StObject {
   
-  val mergeFields: js.UndefOr[js.Array[String | FieldPath]] = js.undefined
+  var count: AggregateField[Double]
 }
 object `28` {
   
-  inline def apply(): `28` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(count: AggregateField[Double]): `28` = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     __obj.asInstanceOf[`28`]
   }
   
   extension [Self <: `28`](x: Self) {
     
-    inline def setMergeFields(value: js.Array[String | FieldPath]): Self = StObject.set(x, "mergeFields", value.asInstanceOf[js.Any])
-    
-    inline def setMergeFieldsUndefined: Self = StObject.set(x, "mergeFields", js.undefined)
-    
-    inline def setMergeFieldsVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "mergeFields", js.Array(value*))
+    inline def setCount(value: AggregateField[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }
 }

@@ -5,7 +5,6 @@ import typings.regeneratorRuntime.mod.InnerFunction
 import typings.regeneratorRuntime.mod.ResolvablePromiseConstructorLike
 import typings.regeneratorRuntime.mod.TryLocationsList
 import typings.std.ArrayLike
-import typings.std.Exclude
 import typings.std.Generator
 import typings.std.GeneratorFunction
 import typings.std.IteratorResult
@@ -36,18 +35,30 @@ object global {
       ) = this()
     }
     
-    inline def async[T, TReturn](innerFn: InnerFunction[T, Any, TReturn, Any]): js.Promise[TReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TReturn]]
+    inline def async[T, TReturn](innerFn: InnerFunction[T, Any, TReturn, Any]): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
     outerFn: js.Function
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
     outerFn: js.Function,
       self: T
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
@@ -55,14 +66,22 @@ object global {
       self: T,
       tryLocsList: Unit,
       PromiseImpl: ResolvablePromiseConstructorLike
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
     outerFn: js.Function,
       self: T,
       tryLocsList: TryLocationsList
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
@@ -70,7 +89,11 @@ object global {
       self: T,
       tryLocsList: TryLocationsList,
       PromiseImpl: ResolvablePromiseConstructorLike
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
@@ -78,14 +101,22 @@ object global {
       self: Unit,
       tryLocsList: Unit,
       PromiseImpl: ResolvablePromiseConstructorLike
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
     outerFn: js.Function,
       self: Unit,
       tryLocsList: TryLocationsList
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
@@ -93,13 +124,21 @@ object global {
       self: Unit,
       tryLocsList: TryLocationsList,
       PromiseImpl: ResolvablePromiseConstructorLike
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
     outerFn: Null,
       self: T
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
@@ -107,14 +146,22 @@ object global {
       self: T,
       tryLocsList: Unit,
       PromiseImpl: ResolvablePromiseConstructorLike
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
     outerFn: Null,
       self: T,
       tryLocsList: TryLocationsList
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
@@ -122,7 +169,11 @@ object global {
       self: T,
       tryLocsList: TryLocationsList,
       PromiseImpl: ResolvablePromiseConstructorLike
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
@@ -130,14 +181,22 @@ object global {
       self: Unit,
       tryLocsList: Unit,
       PromiseImpl: ResolvablePromiseConstructorLike
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
     outerFn: Null,
       self: Unit,
       tryLocsList: TryLocationsList
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
@@ -145,13 +204,21 @@ object global {
       self: Unit,
       tryLocsList: TryLocationsList,
       PromiseImpl: ResolvablePromiseConstructorLike
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
     outerFn: Unit,
       self: T
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
@@ -159,14 +226,22 @@ object global {
       self: T,
       tryLocsList: Unit,
       PromiseImpl: ResolvablePromiseConstructorLike
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
     outerFn: Unit,
       self: T,
       tryLocsList: TryLocationsList
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
@@ -174,7 +249,11 @@ object global {
       self: T,
       tryLocsList: TryLocationsList,
       PromiseImpl: ResolvablePromiseConstructorLike
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
@@ -182,14 +261,22 @@ object global {
       self: Unit,
       tryLocsList: Unit,
       PromiseImpl: ResolvablePromiseConstructorLike
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
     outerFn: Unit,
       self: Unit,
       tryLocsList: TryLocationsList
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TReturn](
       innerFn: InnerFunction[T, Any, TReturn, Any],
       // tslint:disable-next-line: ban-types
@@ -197,23 +284,27 @@ object global {
       self: Unit,
       tryLocsList: TryLocationsList,
       PromiseImpl: ResolvablePromiseConstructorLike
-    ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+      ]]
     inline def async[T, TYield, TReturn](innerFn: InnerFunction[T, TYield, TReturn, Any], outerFn: GeneratorFunction): typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ]]
     inline def async[T, TYield, TReturn](innerFn: InnerFunction[T, TYield, TReturn, Any], outerFn: GeneratorFunction, self: T): typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ]]
     inline def async[T, TYield, TReturn](
@@ -223,12 +314,12 @@ object global {
       tryLocsList: Unit,
       PromiseImpl: ResolvablePromiseConstructorLike
     ): typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ]]
     inline def async[T, TYield, TReturn](
@@ -237,12 +328,12 @@ object global {
       self: T,
       tryLocsList: TryLocationsList
     ): typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ]]
     inline def async[T, TYield, TReturn](
@@ -252,12 +343,12 @@ object global {
       tryLocsList: TryLocationsList,
       PromiseImpl: ResolvablePromiseConstructorLike
     ): typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ]]
     inline def async[T, TYield, TReturn](
@@ -267,12 +358,12 @@ object global {
       tryLocsList: Unit,
       PromiseImpl: ResolvablePromiseConstructorLike
     ): typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ]]
     inline def async[T, TYield, TReturn](
@@ -281,12 +372,12 @@ object global {
       self: Unit,
       tryLocsList: TryLocationsList
     ): typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ]]
     inline def async[T, TYield, TReturn](
@@ -296,12 +387,12 @@ object global {
       tryLocsList: TryLocationsList,
       PromiseImpl: ResolvablePromiseConstructorLike
     ): typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-        Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-        Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
         Any
       ]]
     
@@ -341,18 +432,30 @@ object global {
           ) = this()
         }
         
-        inline def async[T, TReturn](innerFn: InnerFunction[T, Any, TReturn, Any]): js.Promise[TReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TReturn]]
+        inline def async[T, TReturn](innerFn: InnerFunction[T, Any, TReturn, Any]): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
         outerFn: js.Function
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
         outerFn: js.Function,
           self: T
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
@@ -360,14 +463,22 @@ object global {
           self: T,
           tryLocsList: Unit,
           PromiseImpl: ResolvablePromiseConstructorLike
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
         outerFn: js.Function,
           self: T,
           tryLocsList: TryLocationsList
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
@@ -375,7 +486,11 @@ object global {
           self: T,
           tryLocsList: TryLocationsList,
           PromiseImpl: ResolvablePromiseConstructorLike
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
@@ -383,14 +498,22 @@ object global {
           self: Unit,
           tryLocsList: Unit,
           PromiseImpl: ResolvablePromiseConstructorLike
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
         outerFn: js.Function,
           self: Unit,
           tryLocsList: TryLocationsList
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
@@ -398,13 +521,21 @@ object global {
           self: Unit,
           tryLocsList: TryLocationsList,
           PromiseImpl: ResolvablePromiseConstructorLike
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
         outerFn: Null,
           self: T
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
@@ -412,14 +543,22 @@ object global {
           self: T,
           tryLocsList: Unit,
           PromiseImpl: ResolvablePromiseConstructorLike
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
         outerFn: Null,
           self: T,
           tryLocsList: TryLocationsList
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
@@ -427,7 +566,11 @@ object global {
           self: T,
           tryLocsList: TryLocationsList,
           PromiseImpl: ResolvablePromiseConstructorLike
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
@@ -435,14 +578,22 @@ object global {
           self: Unit,
           tryLocsList: Unit,
           PromiseImpl: ResolvablePromiseConstructorLike
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
         outerFn: Null,
           self: Unit,
           tryLocsList: TryLocationsList
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
@@ -450,13 +601,21 @@ object global {
           self: Unit,
           tryLocsList: TryLocationsList,
           PromiseImpl: ResolvablePromiseConstructorLike
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
         outerFn: Unit,
           self: T
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
@@ -464,14 +623,22 @@ object global {
           self: T,
           tryLocsList: Unit,
           PromiseImpl: ResolvablePromiseConstructorLike
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
         outerFn: Unit,
           self: T,
           tryLocsList: TryLocationsList
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
@@ -479,7 +646,11 @@ object global {
           self: T,
           tryLocsList: TryLocationsList,
           PromiseImpl: ResolvablePromiseConstructorLike
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
@@ -487,14 +658,22 @@ object global {
           self: Unit,
           tryLocsList: Unit,
           PromiseImpl: ResolvablePromiseConstructorLike
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
         outerFn: Unit,
           self: Unit,
           tryLocsList: TryLocationsList
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TReturn](
           innerFn: InnerFunction[T, Any, TReturn, Any],
           // tslint:disable-next-line: ban-types
@@ -502,23 +681,27 @@ object global {
           self: Unit,
           tryLocsList: TryLocationsList,
           PromiseImpl: ResolvablePromiseConstructorLike
-        ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+        ): js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : TReturn */ js.Any
+              ]]
         inline def async[T, TYield, TReturn](innerFn: InnerFunction[T, TYield, TReturn, Any], outerFn: GeneratorFunction): typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ]]
         inline def async[T, TYield, TReturn](innerFn: InnerFunction[T, TYield, TReturn, Any], outerFn: GeneratorFunction, self: T): typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ]]
         inline def async[T, TYield, TReturn](
@@ -528,12 +711,12 @@ object global {
           tryLocsList: Unit,
           PromiseImpl: ResolvablePromiseConstructorLike
         ): typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ]]
         inline def async[T, TYield, TReturn](
@@ -542,12 +725,12 @@ object global {
           self: T,
           tryLocsList: TryLocationsList
         ): typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ]]
         inline def async[T, TYield, TReturn](
@@ -557,12 +740,12 @@ object global {
           tryLocsList: TryLocationsList,
           PromiseImpl: ResolvablePromiseConstructorLike
         ): typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ]]
         inline def async[T, TYield, TReturn](
@@ -572,12 +755,12 @@ object global {
           tryLocsList: Unit,
           PromiseImpl: ResolvablePromiseConstructorLike
         ): typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ]]
         inline def async[T, TYield, TReturn](
@@ -586,12 +769,12 @@ object global {
           self: Unit,
           tryLocsList: TryLocationsList
         ): typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ]]
         inline def async[T, TYield, TReturn](
@@ -601,12 +784,12 @@ object global {
           tryLocsList: TryLocationsList,
           PromiseImpl: ResolvablePromiseConstructorLike
         ): typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
-                Exclude[TYield, typings.regeneratorRuntime.mod.awrap[Any]], 
-                Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[Any]], 
+                /* import warning: importer.ImportType#apply Failed type conversion: TYield extends std.PromiseLike<infer Await> ? Await : std.Exclude<TYield, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
+                /* import warning: importer.ImportType#apply Failed type conversion: TReturn extends std.PromiseLike<infer Await> ? Await : std.Exclude<TReturn, regenerator-runtime.regenerator-runtime.awrap<unknown>> */ js.Any, 
                 Any
               ]]
         

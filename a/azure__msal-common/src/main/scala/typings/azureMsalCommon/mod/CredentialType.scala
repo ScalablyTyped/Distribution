@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CredentialType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.azureMsalCommon.constantsMod.CredentialType & String] = js.native
+  def apply(value: String): js.UndefOr[typings.azureMsalCommon.distUtilsConstantsMod.CredentialType & String] = js.native
   
-  /* "AccessToken" */ val ACCESS_TOKEN: typings.azureMsalCommon.constantsMod.CredentialType.ACCESS_TOKEN & String = js.native
+  /* "AccessToken" */ val ACCESS_TOKEN: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType.ACCESS_TOKEN & String = js.native
   
-  /* "AccessToken_With_AuthScheme" */ val ACCESS_TOKEN_WITH_AUTH_SCHEME: typings.azureMsalCommon.constantsMod.CredentialType.ACCESS_TOKEN_WITH_AUTH_SCHEME & String = js.native
+  /* "AccessToken_With_AuthScheme" */ val ACCESS_TOKEN_WITH_AUTH_SCHEME: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType.ACCESS_TOKEN_WITH_AUTH_SCHEME & String = js.native
   
-  /* "IdToken" */ val ID_TOKEN: typings.azureMsalCommon.constantsMod.CredentialType.ID_TOKEN & String = js.native
+  /* "IdToken" */ val ID_TOKEN: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType.ID_TOKEN & String = js.native
   
-  /* "RefreshToken" */ val REFRESH_TOKEN: typings.azureMsalCommon.constantsMod.CredentialType.REFRESH_TOKEN & String = js.native
+  /* "RefreshToken" */ val REFRESH_TOKEN: typings.azureMsalCommon.distUtilsConstantsMod.CredentialType.REFRESH_TOKEN & String = js.native
 }

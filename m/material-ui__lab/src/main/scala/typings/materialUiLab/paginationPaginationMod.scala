@@ -66,7 +66,7 @@ import typings.materialUiLab.materialUiLabStrings.tree
 import typings.materialUiLab.materialUiLabStrings.url
 import typings.materialUiLab.materialUiLabStrings.vertical
 import typings.materialUiLab.materialUiLabStrings.yes
-import typings.materialUiLab.usePaginationMod.UsePaginationItem
+import typings.materialUiLab.paginationUsePaginationMod.UsePaginationItem
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -532,7 +532,9 @@ object paginationPaginationMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
-    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    var ref: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ] = js.undefined
     
     /**
       * Render the item.
@@ -1296,11 +1298,9 @@ object paginationPaginationMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
-      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
-      
-      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRef(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       

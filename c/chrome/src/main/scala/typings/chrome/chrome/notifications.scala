@@ -1,8 +1,6 @@
 package typings.chrome.chrome
 
 import typings.chrome.anon.AppIconMaskUrl
-import typings.chrome.anon.IconUrl
-import typings.chrome.anon.Message
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -71,7 +69,7 @@ object notifications {
   
   type NotificationClosedEvent = Event[js.Function2[/* notificationId */ String, /* byUser */ Boolean, Unit]]
   
-  type NotificationOptions[T /* <: Boolean */] = AppIconMaskUrl & (Message | IconUrl)
+  type NotificationOptions[T /* <: Boolean */] = AppIconMaskUrl & (/* import warning: importer.ImportType#apply Failed type conversion: T extends true ? {  iconUrl :string,   message :string,   type :chrome.chrome.notifications.TemplateType,   title :string} : {  iconUrl :string | undefined,   message :string | undefined,   type :chrome.chrome.notifications.TemplateType | undefined,   title :string | undefined} */ js.Any)
   
   type NotificationPermissionLevelChangedEvent = Event[js.Function1[/* level */ String, Unit]]
   

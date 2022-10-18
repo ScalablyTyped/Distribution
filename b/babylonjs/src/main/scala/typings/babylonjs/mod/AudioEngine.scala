@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param audioDestination defines the audio destination node to be used by audio engine
   */
 open class AudioEngine ()
-  extends typings.babylonjs.legacyMod.AudioEngine {
+  extends typings.babylonjs.legacyLegacyMod.AudioEngine {
   def this(hostElement: Nullable[HTMLElement]) = this()
   def this(hostElement: Unit, audioContext: Nullable[AudioContext]) = this()
   def this(hostElement: Nullable[HTMLElement], audioContext: Nullable[AudioContext]) = this()

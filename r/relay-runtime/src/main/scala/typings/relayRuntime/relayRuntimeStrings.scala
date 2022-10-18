@@ -1,13 +1,13 @@
 package typings.relayRuntime
 
-import typings.relayRuntime.getPaginationVariablesMod.Direction
-import typings.relayRuntime.readerNodeMod.RequiredFieldAction
-import typings.relayRuntime.relayDeclarativeMutationConfigMod.MutationTypes
-import typings.relayRuntime.relayDeclarativeMutationConfigMod.RangeOperations
-import typings.relayRuntime.relayModernQueryExecutorMod.ActiveState
-import typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy
-import typings.relayRuntime.relayRuntimeTypesMod.FetchQueryFetchPolicy
-import typings.relayRuntime.relayRuntimeTypesMod.RenderPolicy
+import typings.relayRuntime.libMutationsRelayDeclarativeMutationConfigMod.MutationTypes
+import typings.relayRuntime.libMutationsRelayDeclarativeMutationConfigMod.RangeOperations
+import typings.relayRuntime.libStoreRelayModernQueryExecutorMod.ActiveState
+import typings.relayRuntime.libUtilGetPaginationVariablesMod.Direction
+import typings.relayRuntime.libUtilReaderNodeMod.RequiredFieldAction
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.FetchPolicy
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.FetchQueryFetchPolicy
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.RenderPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,10 +69,6 @@ object relayRuntimeStrings {
   @js.native
   sealed trait Fragment extends StObject
   inline def Fragment: Fragment = "Fragment".asInstanceOf[Fragment]
-  
-  @js.native
-  sealed trait FragmentRefs extends StObject
-  inline def FragmentRefs: FragmentRefs = "FragmentRefs".asInstanceOf[FragmentRefs]
   
   @js.native
   sealed trait FragmentSpread extends StObject

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "FogBlock")
 @js.native
 open class FogBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.FogBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.FogBlock {
   /**
     * Create a new FogBlock
     * @param name defines the block name

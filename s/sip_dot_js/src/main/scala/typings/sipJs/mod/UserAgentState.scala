@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object UserAgentState extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.sipJs.userAgentStateMod.UserAgentState & String] = js.native
+  def apply(value: String): js.UndefOr[typings.sipJs.libApiUserAgentStateMod.UserAgentState & String] = js.native
   
-  /* "Started" */ val Started: typings.sipJs.userAgentStateMod.UserAgentState.Started & String = js.native
+  /* "Started" */ val Started: typings.sipJs.libApiUserAgentStateMod.UserAgentState.Started & String = js.native
   
-  /* "Stopped" */ val Stopped: typings.sipJs.userAgentStateMod.UserAgentState.Stopped & String = js.native
+  /* "Stopped" */ val Stopped: typings.sipJs.libApiUserAgentStateMod.UserAgentState.Stopped & String = js.native
 }

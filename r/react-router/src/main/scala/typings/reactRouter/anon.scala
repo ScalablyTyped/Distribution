@@ -1,9 +1,10 @@
 package typings.reactRouter
 
-import typings.reactRouter.contextMod.RelativeRoutingType
-import typings.remixRunRouter.routerMod.HydrationState
-import typings.remixRunRouter.routerMod.RevalidationState
-import typings.remixRunRouter.utilsMod.Params
+import typings.reactRouter.distLibContextMod.DataRouteObject
+import typings.reactRouter.distLibContextMod.RelativeRoutingType
+import typings.remixRunRouter.distRouterMod.HydrationState
+import typings.remixRunRouter.distRouterMod.RevalidationState
+import typings.remixRunRouter.distUtilsMod.Params
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,6 +47,31 @@ object anon {
       inline def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
       
       inline def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
+    }
+  }
+  
+  trait Children extends StObject {
+    
+    var children: js.UndefOr[js.Array[DataRouteObject]] = js.undefined
+    
+    var id: String
+  }
+  object Children {
+    
+    inline def apply(id: String): Children = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Children]
+    }
+    
+    extension [Self <: Children](x: Self) {
+      
+      inline def setChildren(value: js.Array[DataRouteObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setChildrenVarargs(value: DataRouteObject*): Self = StObject.set(x, "children", js.Array(value*))
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,11 +129,11 @@ object anon {
     
     var error: Any
     
-    var location: typings.remixRunRouter.historyMod.Location
+    var location: typings.remixRunRouter.distHistoryMod.Location
   }
   object Location {
     
-    inline def apply(error: Any, location: typings.remixRunRouter.historyMod.Location): Location = {
+    inline def apply(error: Any, location: typings.remixRunRouter.distHistoryMod.Location): Location = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.asInstanceOf[Location]
     }
@@ -116,7 +142,7 @@ object anon {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setLocation(value: typings.remixRunRouter.historyMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: typings.remixRunRouter.distHistoryMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }
   }
   

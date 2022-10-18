@@ -8,8 +8,6 @@ trait DetailButton extends StObject {
   
   var actionsCell: String
   
-  var cell: String
-  
   var detailButton: String
   
   var detailButtonExpanded: String
@@ -28,6 +26,8 @@ trait DetailButton extends StObject {
   
   var headerCell: String
   
+  var itemValue: String
+  
   var root: String
   
   var row: String
@@ -38,7 +38,6 @@ object DetailButton {
   
   inline def apply(
     actionsCell: String,
-    cell: String,
     detailButton: String,
     detailButtonExpanded: String,
     detailCell: String,
@@ -48,19 +47,18 @@ object DetailButton {
     detailRow: String,
     detailRowText: String,
     headerCell: String,
+    itemValue: String,
     root: String,
     row: String,
     rowAdditional: String
   ): DetailButton = {
-    val __obj = js.Dynamic.literal(actionsCell = actionsCell.asInstanceOf[js.Any], cell = cell.asInstanceOf[js.Any], detailButton = detailButton.asInstanceOf[js.Any], detailButtonExpanded = detailButtonExpanded.asInstanceOf[js.Any], detailCell = detailCell.asInstanceOf[js.Any], detailIcon = detailIcon.asInstanceOf[js.Any], detailIconExpanded = detailIconExpanded.asInstanceOf[js.Any], detailPanelCell = detailPanelCell.asInstanceOf[js.Any], detailRow = detailRow.asInstanceOf[js.Any], detailRowText = detailRowText.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowAdditional = rowAdditional.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actionsCell = actionsCell.asInstanceOf[js.Any], detailButton = detailButton.asInstanceOf[js.Any], detailButtonExpanded = detailButtonExpanded.asInstanceOf[js.Any], detailCell = detailCell.asInstanceOf[js.Any], detailIcon = detailIcon.asInstanceOf[js.Any], detailIconExpanded = detailIconExpanded.asInstanceOf[js.Any], detailPanelCell = detailPanelCell.asInstanceOf[js.Any], detailRow = detailRow.asInstanceOf[js.Any], detailRowText = detailRowText.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], itemValue = itemValue.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowAdditional = rowAdditional.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailButton]
   }
   
   extension [Self <: DetailButton](x: Self) {
     
     inline def setActionsCell(value: String): Self = StObject.set(x, "actionsCell", value.asInstanceOf[js.Any])
-    
-    inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
     inline def setDetailButton(value: String): Self = StObject.set(x, "detailButton", value.asInstanceOf[js.Any])
     
@@ -79,6 +77,8 @@ object DetailButton {
     inline def setDetailRowText(value: String): Self = StObject.set(x, "detailRowText", value.asInstanceOf[js.Any])
     
     inline def setHeaderCell(value: String): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
+    
+    inline def setItemValue(value: String): Self = StObject.set(x, "itemValue", value.asInstanceOf[js.Any])
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

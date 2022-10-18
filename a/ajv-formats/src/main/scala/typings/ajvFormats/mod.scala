@@ -1,10 +1,10 @@
 package typings.ajvFormats
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.coreMod.Plugin
+import typings.ajv.distCoreMod.Plugin
 import typings.ajv.distTypesMod.Format
-import typings.ajvFormats.formatsMod.FormatMode
-import typings.ajvFormats.formatsMod.FormatName
+import typings.ajvFormats.distFormatsMod.FormatMode
+import typings.ajvFormats.distFormatsMod.FormatName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

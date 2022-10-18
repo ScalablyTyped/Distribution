@@ -1,5 +1,10 @@
 package typings.nivoBar.anon
 
+import typings.nivoBar.distTypesTypesMod.BarDatum
+import typings.nivoBar.distTypesTypesMod.BarLegendProps
+import typings.nivoBar.distTypesTypesMod.ComputedBarDatumWithValue
+import typings.nivoBar.distTypesTypesMod.ComputedDatum
+import typings.nivoBar.distTypesTypesMod.LegendLabelDatum
 import typings.nivoBar.nivoBarStrings.auto
 import typings.nivoBar.nivoBarStrings.grouped
 import typings.nivoBar.nivoBarStrings.horizontal
@@ -7,18 +12,13 @@ import typings.nivoBar.nivoBarStrings.id
 import typings.nivoBar.nivoBarStrings.indexValue
 import typings.nivoBar.nivoBarStrings.stacked
 import typings.nivoBar.nivoBarStrings.vertical
-import typings.nivoBar.typesMod.BarDatum
-import typings.nivoBar.typesMod.BarLegendProps
-import typings.nivoBar.typesMod.ComputedBarDatumWithValue
-import typings.nivoBar.typesMod.ComputedDatum
-import typings.nivoBar.typesMod.LegendLabelDatum
-import typings.nivoColors.inheritedColorMod.InheritedColorConfig
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.mod.Margin
 import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoCore.mod.ValueFormat
-import typings.nivoScales.typesMod.ScaleBandSpec
-import typings.nivoScales.typesMod.ScaleSpec
+import typings.nivoScales.distTypesTypesMod.ScaleBandSpec
+import typings.nivoScales.distTypesTypesMod.ScaleSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -205,10 +205,6 @@ object BorderColor {
     inline def setTooltipLabelUndefined: Self = StObject.set(x, "tooltipLabel", js.undefined)
     
     inline def setValueFormat(value: ValueFormat[Double, Unit]): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
-    
-    inline def setValueFormatFunction1(value: Double => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction1(value))
-    
-    inline def setValueFormatFunction2(value: (Double, Unit) => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction2(value))
     
     inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
     

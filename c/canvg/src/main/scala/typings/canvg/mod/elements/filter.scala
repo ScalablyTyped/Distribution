@@ -1,7 +1,7 @@
 package typings.canvg.mod.elements
 
 import typings.canvg.anon.TypeofFilterElement
-import typings.canvg.filterElementMod.FilterElement
+import typings.canvg.distDocumentFilterElementMod.FilterElement
 import typings.canvg.mod.elements.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

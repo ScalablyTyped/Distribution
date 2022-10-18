@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-jsonrpc", "CancellationTokenSource")
 @js.native
 open class CancellationTokenSource ()
-  extends typings.vscodeJsonrpc.cancellationMod.CancellationTokenSource
+  extends typings.vscodeJsonrpc.libCommonCancellationMod.CancellationTokenSource

@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Gpio {
   
   /** Represents the default general-purpose I/O (GPIO) controller for the system. */
-  @JSGlobal("Windows.Devices.Gpio.GpioController")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Gpio.GpioController")
   @js.native
-  abstract class GpioController ()
+  open class GpioController ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Gpio.GpioController
   object GpioController {
@@ -62,9 +62,9 @@ object Gpio {
   }
   
   /** Represents a general-purpose I/O (GPIO) pin. */
-  @JSGlobal("Windows.Devices.Gpio.GpioPin")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Gpio.GpioPin")
   @js.native
-  abstract class GpioPin ()
+  open class GpioPin ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Gpio.GpioPin
   
@@ -120,9 +120,9 @@ object Gpio {
   }
   
   /** Provides data about the GpioPin.ValueChanged event that occurs when the value of the general-purpose I/O (GPIO) pin changes, either because of an external stimulus when the pin is configured as an input, or when a value is written to the pin when the pin in configured as an output. */
-  @JSGlobal("Windows.Devices.Gpio.GpioPinValueChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Gpio.GpioPinValueChangedEventArgs")
   @js.native
-  abstract class GpioPinValueChangedEventArgs ()
+  open class GpioPinValueChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Gpio.GpioPinValueChangedEventArgs {
     
@@ -147,9 +147,9 @@ object Gpio {
   /** This API exposes a Provider interface and associated classes for the user to implement for a specific controller. The GPIO API needs a GPIO Provider implementation to talk to the GPIO controller. */
   object Provider {
     
-    @JSGlobal("Windows.Devices.Gpio.Provider.GpioPinProviderValueChangedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.Gpio.Provider.GpioPinProviderValueChangedEventArgs")
     @js.native
-    abstract class GpioPinProviderValueChangedEventArgs ()
+    open class GpioPinProviderValueChangedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.Gpio.Provider.GpioPinProviderValueChangedEventArgs {
       

@@ -1,8 +1,8 @@
 package typings.antDesignReactNative.mod
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignReactNative.radioItemMod.default
-import typings.antDesignReactNative.radioMod.CompoundedComponent
+import typings.antDesignReactNative.libRadioMod.CompoundedComponent
+import typings.antDesignReactNative.libRadioRadioItemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

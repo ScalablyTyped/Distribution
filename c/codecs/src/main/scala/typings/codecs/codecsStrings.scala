@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object codecsStrings {
   
   @js.native
-  sealed trait JsonObject extends StObject
-  inline def JsonObject: JsonObject = "JsonObject".asInstanceOf[JsonObject]
-  
-  @js.native
   sealed trait ascii
     extends StObject
        with CodecNames

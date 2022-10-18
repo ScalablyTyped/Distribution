@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Captions extends StObject {
   
-  var captions: js.UndefOr[`5`] = js.undefined
+  var captions: js.UndefOr[`18`] = js.undefined
   
-  var controls: js.UndefOr[`5`] = js.undefined
+  var controls: js.UndefOr[`18`] = js.undefined
   
   var icons: js.UndefOr[ClosedCaption] = js.undefined
   
@@ -23,11 +23,11 @@ object Captions {
   
   extension [Self <: Captions](x: Self) {
     
-    inline def setCaptions(value: `5`): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
+    inline def setCaptions(value: `18`): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
     
     inline def setCaptionsUndefined: Self = StObject.set(x, "captions", js.undefined)
     
-    inline def setControls(value: `5`): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: `18`): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     

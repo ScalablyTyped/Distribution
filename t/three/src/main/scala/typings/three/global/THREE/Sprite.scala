@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Sprite ()
   extends typings.three.mod.Sprite {
-  def this(material: typings.three.materialsMaterialsMod.SpriteMaterial) = this()
+  def this(material: typings.three.srcMaterialsMaterialsMod.SpriteMaterial) = this()
 }

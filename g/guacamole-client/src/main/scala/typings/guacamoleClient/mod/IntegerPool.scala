@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "IntegerPool")
 @js.native
 open class IntegerPool ()
-  extends typings.guacamoleClient.integerPoolMod.IntegerPool
+  extends typings.guacamoleClient.libIntegerPoolMod.IntegerPool

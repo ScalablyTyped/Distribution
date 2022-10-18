@@ -12,11 +12,11 @@ trait RecommendationsObject extends StObject {
   
   var seeds: js.Array[RecommendationsSeedObject]
   
-  var tracks: js.Array[TrackObjectSimplified]
+  var tracks: js.Array[RecommendationTrackObject]
 }
 object RecommendationsObject {
   
-  inline def apply(seeds: js.Array[RecommendationsSeedObject], tracks: js.Array[TrackObjectSimplified]): RecommendationsObject = {
+  inline def apply(seeds: js.Array[RecommendationsSeedObject], tracks: js.Array[RecommendationTrackObject]): RecommendationsObject = {
     val __obj = js.Dynamic.literal(seeds = seeds.asInstanceOf[js.Any], tracks = tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommendationsObject]
   }
@@ -27,8 +27,8 @@ object RecommendationsObject {
     
     inline def setSeedsVarargs(value: RecommendationsSeedObject*): Self = StObject.set(x, "seeds", js.Array(value*))
     
-    inline def setTracks(value: js.Array[TrackObjectSimplified]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: js.Array[RecommendationTrackObject]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    inline def setTracksVarargs(value: TrackObjectSimplified*): Self = StObject.set(x, "tracks", js.Array(value*))
+    inline def setTracksVarargs(value: RecommendationTrackObject*): Self = StObject.set(x, "tracks", js.Array(value*))
   }
 }

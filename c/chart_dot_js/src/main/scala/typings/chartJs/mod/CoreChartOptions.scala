@@ -6,12 +6,12 @@ import typings.chartJs.anon.Height
 import typings.chartJs.anon.OnComplete
 import typings.chartJs.anon.PartialFontSpec
 import typings.chartJs.anon.keyinChartTypeChartTypeReBar
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsBooleans.`false`
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
-import typings.chartJs.colorMod.Color
-import typings.chartJs.geometricMod.ChartArea
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesColorMod.Color
+import typings.chartJs.typesGeometricMod.ChartArea
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -64,7 +64,7 @@ trait CoreChartOptions[TType /* <: ChartType */]
     * @default ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove']
     */
   var events: js.Array[
-    /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ Any
+    /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any
   ]
   
   /**
@@ -145,7 +145,7 @@ object CoreChartOptions {
     datasets: keyinChartTypeChartTypeReBar,
     devicePixelRatio: Double,
     events: js.Array[
-      /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ Any
+      /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any
     ],
     font: PartialFontSpec,
     hover: CoreInteractionOptions,
@@ -191,12 +191,12 @@ object CoreChartOptions {
     
     inline def setEvents(
       value: js.Array[
-          /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ Any
+          /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any
         ]
     ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsVarargs(
-      value: (/* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ Any)*
+      value: (/* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any)*
     ): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setFont(value: PartialFontSpec): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])

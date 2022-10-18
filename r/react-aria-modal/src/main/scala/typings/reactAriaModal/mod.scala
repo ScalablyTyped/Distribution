@@ -1,6 +1,5 @@
 package typings.reactAriaModal
 
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.CSSProperties
 import typings.react.mod.ElementType
 import typings.react.mod.KeyboardEvent
@@ -333,5 +332,5 @@ object mod {
     }
   }
   
-  type RequiredAriaTypes[T, U] = (typings.reactAriaModal.reactAriaModalStrings.RequiredAriaTypes & TopLevel[T] & TopLevel[Any]) | (typings.reactAriaModal.reactAriaModalStrings.RequiredAriaTypes & TopLevel[Any] & TopLevel[U])
+  type RequiredAriaTypes[T, U] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: -? T[K]} */ js.Any
 }

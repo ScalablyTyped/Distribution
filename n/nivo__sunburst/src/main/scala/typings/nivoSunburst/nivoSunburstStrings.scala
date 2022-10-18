@@ -1,6 +1,6 @@
 package typings.nivoSunburst
 
-import typings.nivoSunburst.typesMod.SunburstLayerId
+import typings.nivoSunburst.distTypesTypesMod.SunburstLayerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

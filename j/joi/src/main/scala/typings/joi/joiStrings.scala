@@ -34,14 +34,6 @@ object joiStrings {
   inline def NFKD: NFKD = "NFKD".asInstanceOf[NFKD]
   
   @js.native
-  sealed trait PartialSchemaMap extends StObject
-  inline def PartialSchemaMap: PartialSchemaMap = "PartialSchemaMap".asInstanceOf[PartialSchemaMap]
-  
-  @js.native
-  sealed trait StrictSchemaMap extends StObject
-  inline def StrictSchemaMap: StrictSchemaMap = "StrictSchemaMap".asInstanceOf[StrictSchemaMap]
-  
-  @js.native
   sealed trait ValidationError extends StObject
   inline def ValidationError: ValidationError = "ValidationError".asInstanceOf[ValidationError]
   

@@ -9,8 +9,8 @@ import typings.angularDevkitCore.angularDevkitCoreStrings.read
 import typings.angularDevkitCore.angularDevkitCoreStrings.stat
 import typings.angularDevkitCore.angularDevkitCoreStrings.watch
 import typings.angularDevkitCore.angularDevkitCoreStrings.write
-import typings.angularDevkitCore.pathMod.Path_
-import typings.angularDevkitCore.testMod.test.TestLogRecord
+import typings.angularDevkitCore.srcVirtualFsHostTestMod.test.TestLogRecord
+import typings.angularDevkitCore.srcVirtualFsPathMod.Path_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

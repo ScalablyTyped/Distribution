@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "DeveloperUserAlreadyRegisteredException")
 @js.native
 open class DeveloperUserAlreadyRegisteredException protected ()
-  extends typings.awsSdkClientCognitoIdentity.modelsMod.DeveloperUserAlreadyRegisteredException {
+  extends typings.awsSdkClientCognitoIdentity.distTypesModelsMod.DeveloperUserAlreadyRegisteredException {
   /**
     * @internal
     */

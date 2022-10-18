@@ -1,7 +1,7 @@
 package typings.markdownIt
 
 import typings.markdownIt.libMod.PresetName
-import typings.markdownIt.stateBlockMod.ParentType
+import typings.markdownIt.libRulesBlockStateBlockMod.ParentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

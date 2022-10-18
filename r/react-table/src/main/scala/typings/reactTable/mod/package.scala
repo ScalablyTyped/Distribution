@@ -1,6 +1,5 @@
 package typings.reactTable.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.react.mod.DependencyList
 import typings.react.mod.EffectCallback
@@ -94,9 +93,7 @@ type ColumnInterface[D /* <: js.Object */] = UseTableColumnOptions[D]
 type ColumnWithLooseAccessor[D /* <: js.Object */] = (Header & ColumnInterface[D] & (ColumnInterfaceBasedOnValue[D, Any]) & `0`[D]) | (IdIdType[D] & ColumnInterface[D] & (ColumnInterfaceBasedOnValue[D, Any]) & `0`[D]) | (`1`[D] & ColumnInterface[D] & (ColumnInterfaceBasedOnValue[D, Any]) & `0`[D])
 
 type ColumnWithStrictAccessor[D /* <: js.Object */] = ColumnInterface[D] & (ValueOf[
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof D ]: {  accessor :K} & react-table.react-table.ColumnInterfaceBasedOnValue<D, D[K]>}
-  */ typings.reactTable.reactTableStrings.ColumnWithStrictAccessor & TopLevel[D]])
+/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof D ]: {  accessor :K} & react-table.react-table.ColumnInterfaceBasedOnValue<D, D[K]>} */ js.Any])
 
 type FilterProps[D /* <: js.Object */] = HeaderProps[D]
 
@@ -117,8 +114,6 @@ type HeaderPropGetter[D /* <: js.Object */] = PropGetter[D, TableHeaderProps, ty
 type Hooks[D /* <: js.Object */] = UseTableHooks[D]
 
 type IdType[D] = StringKey[D] | String
-
-type Meta[D /* <: js.Object */, Extension, M] = (M & Extension) | M
 
 type OrderByFn[D /* <: js.Object */] = js.Function2[/* rowA */ Row[D], /* rowB */ Row[D], Double]
 

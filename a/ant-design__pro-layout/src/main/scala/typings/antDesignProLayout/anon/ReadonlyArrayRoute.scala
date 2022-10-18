@@ -1,7 +1,7 @@
 package typings.antDesignProLayout.anon
 
 import typings.antDesignProLayout.antDesignProLayoutInts.`1`
-import typings.antDesignProLayout.typingsMod.Route
+import typings.antDesignProLayout.esTypingsMod.Route
 import typings.std.FlatArray
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject

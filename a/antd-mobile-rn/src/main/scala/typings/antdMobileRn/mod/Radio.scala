@@ -1,8 +1,8 @@
 package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.Styles
-import typings.antdMobileRn.radioIndexNativeMod.default
-import typings.antdMobileRn.radioNativeMod.RadioNativeProps
+import typings.antdMobileRn.libRadioIndexDotnativeMod.default
+import typings.antdMobileRn.libRadioRadioDotnativeMod.RadioNativeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

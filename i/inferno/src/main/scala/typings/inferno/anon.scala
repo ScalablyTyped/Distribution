@@ -1,6 +1,6 @@
 package typings.inferno
 
-import typings.inferno.typesMod.Inferno.InfernoNode
+import typings.inferno.distCoreTypesMod.Inferno.InfernoNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,25 +25,6 @@ object anon {
       inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-    }
-  }
-  
-  trait DefaultProps extends StObject {
-    
-    var defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any
-  }
-  object DefaultProps {
-    
-    inline def apply(
-      defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any
-    ): DefaultProps = {
-      val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DefaultProps]
-    }
-    
-    extension [Self <: DefaultProps](x: Self) {
-      
-      inline def setDefaultProps(value: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     }
   }
   

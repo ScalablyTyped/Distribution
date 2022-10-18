@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsFastBackwardOutlinedMod.FastBackwardOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fastBackwardOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/FastBackwardOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/FastBackwardOutlined", JSImport.Default)
   @js.native
   val default: FastBackwardOutlinedIconType = js.native
-  
-  @js.native
-  trait FastBackwardOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_FastBackwardOutlinedIconType: String = js.native
-  }
   
   type _To = FastBackwardOutlinedIconType
   

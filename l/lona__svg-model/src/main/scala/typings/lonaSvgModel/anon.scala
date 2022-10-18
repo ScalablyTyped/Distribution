@@ -1,36 +1,18 @@
 package typings.lonaSvgModel
 
+import typings.lonaSvgModel.libPrimitivesMod.Point_
+import typings.lonaSvgModel.libPrimitivesMod.Rect_
 import typings.lonaSvgModel.lonaSvgModelBooleans.`true`
 import typings.lonaSvgModel.lonaSvgModelStrings.close
 import typings.lonaSvgModel.lonaSvgModelStrings.cubicCurve
 import typings.lonaSvgModel.lonaSvgModelStrings.line
 import typings.lonaSvgModel.lonaSvgModelStrings.move
 import typings.lonaSvgModel.lonaSvgModelStrings.quadCurve
-import typings.lonaSvgModel.primitivesMod.Point_
-import typings.lonaSvgModel.primitivesMod.Rect_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait `0` extends StObject {
-    
-    val `type`: close
-  }
-  object `0` {
-    
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("close")
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setType(value: close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
   
   trait ControlPoint extends StObject {
     
@@ -195,17 +177,39 @@ object anon {
     
     val to: Point_
     
-    val `type`: move
+    val `type`: line
   }
   object To {
     
     inline def apply(to: Point_): To = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("move")
+      __obj.updateDynamic("type")("line")
       __obj.asInstanceOf[To]
     }
     
     extension [Self <: To](x: Self) {
+      
+      inline def setTo(value: Point_): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ToType extends StObject {
+    
+    val to: Point_
+    
+    val `type`: move
+  }
+  object ToType {
+    
+    inline def apply(to: Point_): ToType = {
+      val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("move")
+      __obj.asInstanceOf[ToType]
+    }
+    
+    extension [Self <: ToType](x: Self) {
       
       inline def setTo(value: Point_): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
@@ -215,23 +219,19 @@ object anon {
   
   trait Type extends StObject {
     
-    val to: Point_
-    
-    val `type`: line
+    val `type`: close
   }
   object Type {
     
-    inline def apply(to: Point_): Type = {
-      val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("line")
+    inline def apply(): Type = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")("close")
       __obj.asInstanceOf[Type]
     }
     
     extension [Self <: Type](x: Self) {
       
-      inline def setTo(value: Point_): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

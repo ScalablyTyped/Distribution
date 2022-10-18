@@ -1,5 +1,6 @@
 package typings.openseadragon.mod
 
+import typings.std.HTMLImageElement
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +12,7 @@ trait TileLoadedEvent
   
   def getCompletionCallback(): js.Function0[Unit]
   
-  var image: Any
+  var image: HTMLImageElement
   
   var tileRequest: XMLHttpRequest
 }
@@ -20,7 +21,7 @@ object TileLoadedEvent {
   inline def apply(
     eventSource: Viewer,
     getCompletionCallback: () => js.Function0[Unit],
-    image: Any,
+    image: HTMLImageElement,
     tile: Tile,
     tileRequest: XMLHttpRequest,
     tiledImage: TiledImage,
@@ -34,7 +35,7 @@ object TileLoadedEvent {
     
     inline def setGetCompletionCallback(value: () => js.Function0[Unit]): Self = StObject.set(x, "getCompletionCallback", js.Any.fromFunction0(value))
     
-    inline def setImage(value: Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     inline def setTileRequest(value: XMLHttpRequest): Self = StObject.set(x, "tileRequest", value.asInstanceOf[js.Any])
   }

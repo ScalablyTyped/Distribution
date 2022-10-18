@@ -14,12 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [userData] - Custom user data connected to this node.
   */
 open class NavNode ()
-  extends typings.yuka.yukaMod.NavNode {
+  extends typings.yuka.srcYukaMod.NavNode {
   def this(index: Double) = this()
-  def this(index: Double, position: typings.yuka.vector3Mod.Vector3) = this()
-  def this(index: Unit, position: typings.yuka.vector3Mod.Vector3) = this()
+  def this(index: Double, position: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(index: Unit, position: typings.yuka.srcMathVector3Mod.Vector3) = this()
   def this(index: Double, position: Unit, userData: js.Object) = this()
-  def this(index: Double, position: typings.yuka.vector3Mod.Vector3, userData: js.Object) = this()
+  def this(index: Double, position: typings.yuka.srcMathVector3Mod.Vector3, userData: js.Object) = this()
   def this(index: Unit, position: Unit, userData: js.Object) = this()
-  def this(index: Unit, position: typings.yuka.vector3Mod.Vector3, userData: js.Object) = this()
+  def this(index: Unit, position: typings.yuka.srcMathVector3Mod.Vector3, userData: js.Object) = this()
 }

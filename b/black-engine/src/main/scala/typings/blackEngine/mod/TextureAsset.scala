@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "TextureAsset")
 @js.native
 open class TextureAsset protected ()
-  extends typings.blackEngine.textureAssetMod.TextureAsset {
+  extends typings.blackEngine.assetsTextureAssetMod.TextureAsset {
   def this(name: String, url: String) = this()
 }

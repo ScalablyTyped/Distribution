@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.settings
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.settingsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenSettingsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "settings.CustomSetting")
 @js.native
 open class CustomSetting protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.settings.CustomSetting {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.settings.CustomSetting {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object CustomSetting {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.settingsMod.settings.CustomSetting = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.settingsMod.settings.CustomSetting]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenSettingsMod.settings.CustomSetting = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenSettingsMod.settings.CustomSetting]
   
   /**
     * Creates and returns a new CustomSetting instance in the SDK and on the server.
@@ -44,7 +44,7 @@ object CustomSetting {
     * of the parent Configuration element passed as argument.
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.settingsMod.settings.Configuration): typings.mendixmodelsdk.settingsMod.settings.CustomSetting = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.settingsMod.settings.CustomSetting]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenSettingsMod.settings.Configuration): typings.mendixmodelsdk.srcGenSettingsMod.settings.CustomSetting = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenSettingsMod.settings.CustomSetting]
   
   /* static member */
   @JSImport("mendixmodelsdk", "settings.CustomSetting.structureTypeName")

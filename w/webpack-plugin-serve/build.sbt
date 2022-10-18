@@ -1,29 +1,29 @@
 organization := "org.scalablytyped"
 name := "webpack-plugin-serve"
-version := "1.4-dt-20211223Z-29b4c5"
+version := "1.4-dt-20211223Z-db314a"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20211202Z-845f81",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-92678d",
-  "org.scalablytyped" %%% "connect-history-api-fallback" % "1.3-dt-20211202Z-7c4700",
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20211202Z-a1c931",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-897197",
+  "org.scalablytyped" %%% "connect-history-api-fallback" % "1.3-dt-20211202Z-9710d1",
   "org.scalablytyped" %%% "content-disposition" % "0.5-dt-20220505Z-3b4e14",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20211202Z-d0d067",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-646db4",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-53b851",
-  "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20220503Z-7ddf6d",
-  "org.scalablytyped" %%% "http-proxy-middleware" % "2.0.6-132d88",
-  "org.scalablytyped" %%% "keygrip" % "1.0-dt-20211202Z-4d94ef",
-  "org.scalablytyped" %%% "koa" % "2.13.1-dt-20220818Z-4961f9",
-  "org.scalablytyped" %%% "koa-compress" % "v4.x-dt-20220818Z-b9bcd7",
-  "org.scalablytyped" %%% "koa-send" % "4.1-dt-20211202Z-dd6327",
-  "org.scalablytyped" %%% "koa-static" % "4.0-dt-20211202Z-7eb05d",
-  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-fb8f3f",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-4e85dc",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-170623",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20211202Z-da09f3",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-d74acb",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-06d29e",
+  "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20220503Z-133af7",
+  "org.scalablytyped" %%% "http-proxy-middleware" % "2.0.6-59e937",
+  "org.scalablytyped" %%% "keygrip" % "1.0-dt-20211202Z-fc3ebd",
+  "org.scalablytyped" %%% "koa" % "2.13.1-dt-20220818Z-a63c65",
+  "org.scalablytyped" %%% "koa-compress" % "v4.x-dt-20220818Z-6887ca",
+  "org.scalablytyped" %%% "koa-send" % "4.1-dt-20211202Z-032f80",
+  "org.scalablytyped" %%% "koa-static" % "4.0-dt-20211202Z-9c9855",
+  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-9884c6",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-76627f",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-696f82",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

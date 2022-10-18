@@ -1,7 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
+import typings.babylonjs.materialsShadowDepthWrapperMod.IIOptionShadowDepthMaterial
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.shadowDepthWrapperMod.IIOptionShadowDepthMaterial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "ShadowDepthWrapper")
 @js.native
 open class ShadowDepthWrapper protected ()
-  extends typings.babylonjs.shadowDepthWrapperMod.ShadowDepthWrapper {
+  extends typings.babylonjs.materialsShadowDepthWrapperMod.ShadowDepthWrapper {
   /**
     * Instantiate a new shadow depth wrapper.
     * It works by injecting some specific code in the vertex/fragment shaders of the base material and is used by a shadow generator to
@@ -19,15 +19,15 @@ open class ShadowDepthWrapper protected ()
     * @param scene Define the scene the material belongs to
     * @param options Options used to create the wrapper
     */
-  def this(baseMaterial: typings.babylonjs.materialMod.Material) = this()
-  def this(baseMaterial: typings.babylonjs.materialMod.Material, scene: Scene) = this()
+  def this(baseMaterial: typings.babylonjs.materialsMaterialMod.Material) = this()
+  def this(baseMaterial: typings.babylonjs.materialsMaterialMod.Material, scene: Scene) = this()
   def this(
-    baseMaterial: typings.babylonjs.materialMod.Material,
+    baseMaterial: typings.babylonjs.materialsMaterialMod.Material,
     scene: Unit,
     options: IIOptionShadowDepthMaterial
   ) = this()
   def this(
-    baseMaterial: typings.babylonjs.materialMod.Material,
+    baseMaterial: typings.babylonjs.materialsMaterialMod.Material,
     scene: Scene,
     options: IIOptionShadowDepthMaterial
   ) = this()

@@ -8,14 +8,14 @@ trait BucketItemWithMetadata
   extends StObject
      with BucketItem {
   
-  var metadata: ItemBucketMetadata
+  var metadata: ItemBucketMetadata | ItemBucketMetadataList
 }
 object BucketItemWithMetadata {
   
   inline def apply(
     etag: String,
     lastModified: js.Date,
-    metadata: ItemBucketMetadata,
+    metadata: ItemBucketMetadata | ItemBucketMetadataList,
     name: String,
     prefix: String,
     size: Double
@@ -26,6 +26,6 @@ object BucketItemWithMetadata {
   
   extension [Self <: BucketItemWithMetadata](x: Self) {
     
-    inline def setMetadata(value: ItemBucketMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ItemBucketMetadata | ItemBucketMetadataList): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

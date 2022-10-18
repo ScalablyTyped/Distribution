@@ -5,8 +5,11 @@ import typings.firebaseFirestore.anon.CompleteError
 import typings.firebaseFirestore.anon.CompleteErrorNext
 import typings.firebaseFirestore.anon.ErrorNext
 import typings.firebaseFirestore.anon.MockUserToken
+import typings.firebaseFirestore.anon.`5`
+import typings.firebaseFirestore.mod.AggregateSpec
 import typings.firebaseFirestore.mod.DocumentData
 import typings.firebaseFirestore.mod.FirestoreSettings
+import typings.firebaseFirestore.mod.IndexConfiguration
 import typings.firebaseFirestore.mod.OrderByDirection
 import typings.firebaseFirestore.mod.PartialWithFieldValue
 import typings.firebaseFirestore.mod.PersistenceSettings
@@ -17,7 +20,7 @@ import typings.firebaseFirestore.mod.Unsubscribe
 import typings.firebaseFirestore.mod.UpdateData
 import typings.firebaseFirestore.mod.WhereFilterOp
 import typings.firebaseFirestore.mod.WithFieldValue
-import typings.firebaseLogger.srcLoggerMod.LogLevelString
+import typings.firebaseLogger.distSrcLoggerMod.LogLevelString
 import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,6 +31,16 @@ object compatAuthDistFirestoreMod {
   @JSImport("firebase/compat/auth/dist/firestore", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("firebase/compat/auth/dist/firestore", "AggregateField")
+  @js.native
+  open class AggregateField[T] ()
+    extends typings.firebaseFirestore.mod.AggregateField[T]
+  
+  @JSImport("firebase/compat/auth/dist/firestore", "AggregateQuerySnapshot")
+  @js.native
+  /* private */ open class AggregateQuerySnapshot[T /* <: AggregateSpec */] ()
+    extends typings.firebaseFirestore.mod.AggregateQuerySnapshot[T]
   
   @JSImport("firebase/compat/auth/dist/firestore", "Bytes")
   @js.native
@@ -88,9 +101,9 @@ object compatAuthDistFirestoreMod {
     def this(fieldNames: String*) = this()
   }
   
-  @JSImport("firebase/compat/auth/dist/firestore", "FieldValue")
+  /* note: abstract class */ @JSImport("firebase/compat/auth/dist/firestore", "FieldValue")
   @js.native
-  /* private */ abstract class FieldValue ()
+  /* private */ open class FieldValue ()
     extends typings.firebaseFirestore.mod.FieldValue
   
   @JSImport("firebase/compat/auth/dist/firestore", "Firestore")
@@ -121,9 +134,9 @@ object compatAuthDistFirestoreMod {
   open class LoadBundleTask ()
     extends typings.firebaseFirestore.mod.LoadBundleTask
   
-  @JSImport("firebase/compat/auth/dist/firestore", "QueryConstraint")
+  /* note: abstract class */ @JSImport("firebase/compat/auth/dist/firestore", "QueryConstraint")
   @js.native
-  abstract class QueryConstraint ()
+  open class QueryConstraint ()
     extends typings.firebaseFirestore.mod.QueryConstraint
   
   @JSImport("firebase/compat/auth/dist/firestore", "QueryDocumentSnapshot")
@@ -218,6 +231,11 @@ object compatAuthDistFirestoreMod {
   
   inline def addDoc[T](reference: typings.firebaseFirestore.mod.CollectionReference[T], data: WithFieldValue[T]): js.Promise[typings.firebaseFirestore.mod.DocumentReference[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("addDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.firebaseFirestore.mod.DocumentReference[T]]]
   
+  inline def aggregateQuerySnapshotEqual[T /* <: AggregateSpec */](
+    left: typings.firebaseFirestore.mod.AggregateQuerySnapshot[T],
+    right: typings.firebaseFirestore.mod.AggregateQuerySnapshot[T]
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aggregateQuerySnapshotEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   inline def arrayRemove(elements: Any*): typings.firebaseFirestore.mod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.mod.FieldValue]
   
   inline def arrayUnion(elements: Any*): typings.firebaseFirestore.mod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.mod.FieldValue]
@@ -279,6 +297,8 @@ object compatAuthDistFirestoreMod {
   
   inline def endBefore(fieldValues: Any*): typings.firebaseFirestore.mod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.mod.QueryConstraint]
   inline def endBefore(snapshot: typings.firebaseFirestore.mod.DocumentSnapshot[Any]): typings.firebaseFirestore.mod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.mod.QueryConstraint]
+  
+  inline def getCountFromServer(query: typings.firebaseFirestore.mod.Query_[Any]): js.Promise[typings.firebaseFirestore.mod.AggregateQuerySnapshot[`5`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountFromServer")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.firebaseFirestore.mod.AggregateQuerySnapshot[`5`]]]
   
   inline def getDoc[T](reference: typings.firebaseFirestore.mod.DocumentReference[T]): js.Promise[typings.firebaseFirestore.mod.DocumentSnapshot[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDoc")(reference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.firebaseFirestore.mod.DocumentSnapshot[T]]]
   
@@ -468,6 +488,9 @@ object compatAuthDistFirestoreMod {
     options: SetOptions
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def setDoc[T](reference: typings.firebaseFirestore.mod.DocumentReference[T], data: WithFieldValue[T]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def setIndexConfiguration(firestore: typings.firebaseFirestore.mod.Firestore, configuration: IndexConfiguration): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setIndexConfiguration")(firestore.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def setIndexConfiguration(firestore: typings.firebaseFirestore.mod.Firestore, json: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setIndexConfiguration")(firestore.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def setLogLevel(logLevel: LogLevelString): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(logLevel.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

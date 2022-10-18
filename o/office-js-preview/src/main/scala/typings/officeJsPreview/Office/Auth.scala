@@ -20,7 +20,7 @@ trait Auth extends StObject {
     *
     * @remarks
     *
-    * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+    * **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
     * 
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}
     * 
@@ -28,12 +28,10 @@ trait Auth extends StObject {
     * 
     * **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from Version 2111 (Build 14701.20000).
     * To retrieve an access token in older builds, use 
-    * {@link https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js-preview#office-runtime-officeruntime-auth-getaccesstoken-member(1) | 
+    * {@link https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js-preview#office-runtime-officeruntime-auth-getaccesstoken-member(1) |
     * OfficeRuntime.auth.getAccessToken} instead. For more information, see 
     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation | Enable single sign-on (SSO) in Outlook add-ins that use event-based activation}.
     *
-    * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
-    * 
     * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.
     * @returns Promise to the access token.
     */
@@ -53,7 +51,7 @@ trait Auth extends StObject {
     *
     * @remarks
     *
-    * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+    * **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
     *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}
     *

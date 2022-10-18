@@ -1,14 +1,14 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractSceneMod.AbstractScene
-import typings.babylonjs.animatableMod.Animatable
-import typings.babylonjs.animationGroupMod.AnimationGroup
+import typings.babylonjs.animationsAnimatableMod.Animatable
+import typings.babylonjs.animationsAnimationGroupMod.AnimationGroup
 import typings.babylonjs.anon.DoNotInstantiate
-import typings.babylonjs.meshMod.Mesh
+import typings.babylonjs.bonesSkeletonMod.Skeleton
+import typings.babylonjs.meshesMeshMod.Mesh
+import typings.babylonjs.meshesTransformNodeMod.TransformNode
 import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.skeletonMod.Skeleton
-import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

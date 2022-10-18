@@ -2,8 +2,8 @@ package typings.getUri
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.getUri.fileMod.FileReadable
-import typings.getUri.httpMod.HttpOrHttpsModule
+import typings.getUri.distFileMod.FileReadable
+import typings.getUri.distHttpMod.HttpOrHttpsModule
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.ReadStream
@@ -16,8 +16,8 @@ import typings.node.httpMod.RequestOptions
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerOptions
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
-import typings.node.nodeUrlMod.URL
+import typings.node.nodeColonnetMod.Socket
+import typings.node.nodeColonurlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -488,6 +488,25 @@ object anon {
     def request(url: String, options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
     def request(url: URL, options: RequestOptions): ClientRequest = js.native
     def request(url: URL, options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
+    
+    /**
+      * Performs the low-level validations on the provided name that are done when `res.setHeader(name, value)` is called.
+      * Passing illegal value as name will result in a TypeError being thrown, identified by `code: 'ERR_INVALID_HTTP_TOKEN'`.
+      * @param name Header name
+      * @since v14.3.0
+      */
+    def validateHeaderName(name: String): Unit = js.native
+    
+    /**
+      * Performs the low-level validations on the provided value that are done when `res.setHeader(name, value)` is called.
+      * Passing illegal value as value will result in a TypeError being thrown.
+      * - Undefined value error is identified by `code: 'ERR_HTTP_INVALID_HEADER_VALUE'`.
+      * - Invalid value character error is identified by `code: 'ERR_INVALID_CHAR'`.
+      * @param name Header name
+      * @param value Header value
+      * @since v14.3.0
+      */
+    def validateHeaderValue(name: String, value: String): Unit = js.native
   }
   
   @js.native
@@ -507,10 +526,10 @@ object anon {
       */
     var Server: Instantiable0[
         typings.node.httpsMod.Server[
-          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
           Instantiable1[
             /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+            typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
           ]
         ]
       ] = js.native
@@ -552,28 +571,31 @@ object anon {
       * @param options Accepts `options` from `createServer`, `createSecureContext` and `createServer`.
       * @param requestListener A listener to be added to the `'request'` event.
       */
-    def createServer[Request /* <: Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage] */, Response /* <: Instantiable1[
+    def createServer[Request /* <: Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage] */, Response /* <: Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ] */](): typings.node.httpsMod.Server[Request, Response] = js.native
-    def createServer[Request /* <: Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage] */, Response /* <: Instantiable1[
+    def createServer[Request /* <: Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage] */, Response /* <: Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ] */](options: typings.node.httpsMod.ServerOptions[Request, Response]): typings.node.httpsMod.Server[Request, Response] = js.native
-    def createServer[Request /* <: Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage] */, Response /* <: Instantiable1[
+    def createServer[Request /* <: Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage] */, Response /* <: Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ] */](
       options: typings.node.httpsMod.ServerOptions[Request, Response],
       requestListener: RequestListener[Request, Response]
     ): typings.node.httpsMod.Server[Request, Response] = js.native
-    def createServer[Request /* <: Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage] */, Response /* <: Instantiable1[
+    def createServer[Request /* <: Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage] */, Response /* <: Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ] */](requestListener: RequestListener[Request, Response]): typings.node.httpsMod.Server[Request, Response] = js.native
     
-    def get(options: String): typings.node.nodeHttpMod.ClientRequest = js.native
-    def get(options: String, callback: js.Function1[/* res */ typings.node.nodeHttpMod.IncomingMessage, Unit]): typings.node.nodeHttpMod.ClientRequest = js.native
+    def get(options: String): typings.node.nodeColonhttpMod.ClientRequest = js.native
+    def get(
+      options: String,
+      callback: js.Function1[/* res */ typings.node.nodeColonhttpMod.IncomingMessage, Unit]
+    ): typings.node.nodeColonhttpMod.ClientRequest = js.native
     /**
       * Like `http.get()` but for HTTPS.
       *
@@ -598,30 +620,36 @@ object anon {
       * @since v0.3.6
       * @param options Accepts the same `options` as {@link request}, with the `method` always set to `GET`.
       */
-    def get(options: typings.node.httpsMod.RequestOptions): typings.node.nodeHttpMod.ClientRequest = js.native
+    def get(options: typings.node.httpsMod.RequestOptions): typings.node.nodeColonhttpMod.ClientRequest = js.native
     def get(
       options: typings.node.httpsMod.RequestOptions,
-      callback: js.Function1[/* res */ typings.node.nodeHttpMod.IncomingMessage, Unit]
-    ): typings.node.nodeHttpMod.ClientRequest = js.native
-    def get(options: URL): typings.node.nodeHttpMod.ClientRequest = js.native
-    def get(options: URL, callback: js.Function1[/* res */ typings.node.nodeHttpMod.IncomingMessage, Unit]): typings.node.nodeHttpMod.ClientRequest = js.native
-    def get(url: String, options: typings.node.httpsMod.RequestOptions): typings.node.nodeHttpMod.ClientRequest = js.native
+      callback: js.Function1[/* res */ typings.node.nodeColonhttpMod.IncomingMessage, Unit]
+    ): typings.node.nodeColonhttpMod.ClientRequest = js.native
+    def get(options: URL): typings.node.nodeColonhttpMod.ClientRequest = js.native
+    def get(
+      options: URL,
+      callback: js.Function1[/* res */ typings.node.nodeColonhttpMod.IncomingMessage, Unit]
+    ): typings.node.nodeColonhttpMod.ClientRequest = js.native
+    def get(url: String, options: typings.node.httpsMod.RequestOptions): typings.node.nodeColonhttpMod.ClientRequest = js.native
     def get(
       url: String,
       options: typings.node.httpsMod.RequestOptions,
-      callback: js.Function1[/* res */ typings.node.nodeHttpMod.IncomingMessage, Unit]
-    ): typings.node.nodeHttpMod.ClientRequest = js.native
-    def get(url: URL, options: typings.node.httpsMod.RequestOptions): typings.node.nodeHttpMod.ClientRequest = js.native
+      callback: js.Function1[/* res */ typings.node.nodeColonhttpMod.IncomingMessage, Unit]
+    ): typings.node.nodeColonhttpMod.ClientRequest = js.native
+    def get(url: URL, options: typings.node.httpsMod.RequestOptions): typings.node.nodeColonhttpMod.ClientRequest = js.native
     def get(
       url: URL,
       options: typings.node.httpsMod.RequestOptions,
-      callback: js.Function1[/* res */ typings.node.nodeHttpMod.IncomingMessage, Unit]
-    ): typings.node.nodeHttpMod.ClientRequest = js.native
+      callback: js.Function1[/* res */ typings.node.nodeColonhttpMod.IncomingMessage, Unit]
+    ): typings.node.nodeColonhttpMod.ClientRequest = js.native
     
     var globalAgent: typings.node.httpsMod.Agent = js.native
     
-    def request(options: String): typings.node.nodeHttpMod.ClientRequest = js.native
-    def request(options: String, callback: js.Function1[/* res */ typings.node.nodeHttpMod.IncomingMessage, Unit]): typings.node.nodeHttpMod.ClientRequest = js.native
+    def request(options: String): typings.node.nodeColonhttpMod.ClientRequest = js.native
+    def request(
+      options: String,
+      callback: js.Function1[/* res */ typings.node.nodeColonhttpMod.IncomingMessage, Unit]
+    ): typings.node.nodeColonhttpMod.ClientRequest = js.native
     /**
       * Makes a request to a secure web server.
       *
@@ -802,24 +830,27 @@ object anon {
       * @since v0.3.6
       * @param options Accepts all `options` from `request`, with some differences in default values:
       */
-    def request(options: typings.node.httpsMod.RequestOptions): typings.node.nodeHttpMod.ClientRequest = js.native
+    def request(options: typings.node.httpsMod.RequestOptions): typings.node.nodeColonhttpMod.ClientRequest = js.native
     def request(
       options: typings.node.httpsMod.RequestOptions,
-      callback: js.Function1[/* res */ typings.node.nodeHttpMod.IncomingMessage, Unit]
-    ): typings.node.nodeHttpMod.ClientRequest = js.native
-    def request(options: URL): typings.node.nodeHttpMod.ClientRequest = js.native
-    def request(options: URL, callback: js.Function1[/* res */ typings.node.nodeHttpMod.IncomingMessage, Unit]): typings.node.nodeHttpMod.ClientRequest = js.native
-    def request(url: String, options: typings.node.httpsMod.RequestOptions): typings.node.nodeHttpMod.ClientRequest = js.native
+      callback: js.Function1[/* res */ typings.node.nodeColonhttpMod.IncomingMessage, Unit]
+    ): typings.node.nodeColonhttpMod.ClientRequest = js.native
+    def request(options: URL): typings.node.nodeColonhttpMod.ClientRequest = js.native
+    def request(
+      options: URL,
+      callback: js.Function1[/* res */ typings.node.nodeColonhttpMod.IncomingMessage, Unit]
+    ): typings.node.nodeColonhttpMod.ClientRequest = js.native
+    def request(url: String, options: typings.node.httpsMod.RequestOptions): typings.node.nodeColonhttpMod.ClientRequest = js.native
     def request(
       url: String,
       options: typings.node.httpsMod.RequestOptions,
-      callback: js.Function1[/* res */ typings.node.nodeHttpMod.IncomingMessage, Unit]
-    ): typings.node.nodeHttpMod.ClientRequest = js.native
-    def request(url: URL, options: typings.node.httpsMod.RequestOptions): typings.node.nodeHttpMod.ClientRequest = js.native
+      callback: js.Function1[/* res */ typings.node.nodeColonhttpMod.IncomingMessage, Unit]
+    ): typings.node.nodeColonhttpMod.ClientRequest = js.native
+    def request(url: URL, options: typings.node.httpsMod.RequestOptions): typings.node.nodeColonhttpMod.ClientRequest = js.native
     def request(
       url: URL,
       options: typings.node.httpsMod.RequestOptions,
-      callback: js.Function1[/* res */ typings.node.nodeHttpMod.IncomingMessage, Unit]
-    ): typings.node.nodeHttpMod.ClientRequest = js.native
+      callback: js.Function1[/* res */ typings.node.nodeColonhttpMod.IncomingMessage, Unit]
+    ): typings.node.nodeColonhttpMod.ClientRequest = js.native
   }
 }

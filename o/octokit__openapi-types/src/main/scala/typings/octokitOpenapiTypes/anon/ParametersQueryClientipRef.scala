@@ -8,11 +8,11 @@ trait ParametersQueryClientipRef extends StObject {
   
   var parameters: QueryClientipRef
   
-  var responses: `200ContentApplicationjsonBillableowner`
+  var responses: `200ContentApplicationjsonDefaults`
 }
 object ParametersQueryClientipRef {
   
-  inline def apply(parameters: QueryClientipRef, responses: `200ContentApplicationjsonBillableowner`): ParametersQueryClientipRef = {
+  inline def apply(parameters: QueryClientipRef, responses: `200ContentApplicationjsonDefaults`): ParametersQueryClientipRef = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryClientipRef]
   }
@@ -21,6 +21,6 @@ object ParametersQueryClientipRef {
     
     inline def setParameters(value: QueryClientipRef): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjsonBillableowner`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonDefaults`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ipfs-utils" : "9.0.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ipfs-utils" : "9.0.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

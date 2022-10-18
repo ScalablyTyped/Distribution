@@ -1,10 +1,10 @@
 package typings.reactBulmaComponents
 
-import typings.reactBulmaComponents.columnsMod.ColumnSize
-import typings.reactBulmaComponents.componentsMod.DisplayModifier
-import typings.reactBulmaComponents.componentsMod._Breakpoint
-import typings.reactBulmaComponents.componentsMod._Color
-import typings.reactBulmaComponents.componentsMod._Size
+import typings.reactBulmaComponents.srcComponentsColumnsMod.ColumnSize
+import typings.reactBulmaComponents.srcComponentsMod.DisplayModifier
+import typings.reactBulmaComponents.srcComponentsMod._Breakpoint
+import typings.reactBulmaComponents.srcComponentsMod._Color
+import typings.reactBulmaComponents.srcComponentsMod._Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

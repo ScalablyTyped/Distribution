@@ -1,6 +1,5 @@
 package typings.raphael.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.raphael.anon.Error
 import typings.raphael.anon.PartialRaphaelAttributes
 import typings.raphael.raphaelStrings.A
@@ -133,10 +132,6 @@ type RaphaelPaperPluginMethod[TTechnology /* <: RaphaelTechnology */, TArgs /* <
   */
 js.ThisFunction1[/* this */ RaphaelPaper[TTechnology], /* args */ TArgs, TRetVal]
 
-type RaphaelPaperPluginRegistry[TTechnology /* <: RaphaelTechnology */, T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: T[P] extends (args : any): any? raphael.raphael.RaphaelPaperPluginMethod<TTechnology, std.Parameters<T[P]>, std.ReturnType<T[P]>> : raphael.raphael.RaphaelPaperPluginRegistry<TTechnology, T[P]>}
-  */ typings.raphael.raphaelStrings.RaphaelPaperPluginRegistry & TopLevel[Any]
-
 type RaphaelPathSegment = (js.Tuple3[M | m_ | L | l_ | T | t_ | R | r_, Double, Double]) | (js.Tuple2[H | h_ | V | v_, Double]) | (js.Tuple5[Q | q_ | S | s_, Double, Double, Double, Double]) | (js.Tuple7[C | c_, Double, Double, Double, Double, Double, Double]) | (js.Tuple8[A | a_, Double, Double, Double, Double, Double, Double, Double]) | (js.Array[Z | z_])
 
 type RaphaelPotentialFailure[T /* <: js.Object */] = T & Error
@@ -150,10 +145,6 @@ type RaphaelSetPluginMethod[TTechnology /* <: RaphaelTechnology */, TArgs /* <: 
 js.ThisFunction1[/* this */ RaphaelSet[TTechnology], /* args */ TArgs, TRetVal]
 
 type RaphaelTransformSegment = (js.Tuple3[t_ | s_, Double, Double]) | (js.Tuple5[s_, Double, Double, Double, Double]) | (js.Tuple4[r_, Double, Double, Double]) | (js.Tuple2[r_, Double]) | (js.Tuple7[m_, Double, Double, Double, Double, Double, Double])
-
-type RaphaelUnwrapElement[TTechnology /* <: RaphaelTechnology */, TBase /* <: RaphaelBaseElement[TTechnology] */] = TBase | (RaphaelElement[
-TTechnology, 
-/* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any])
 
 type VMLCircleElement = VMLElement
 

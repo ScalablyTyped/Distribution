@@ -3,6 +3,7 @@ package typings.angularForms.mod
 import typings.angularForms.angularFormsStrings.blur
 import typings.angularForms.angularFormsStrings.change
 import typings.angularForms.angularFormsStrings.submit
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +40,7 @@ object AbstractControlOptions {
     inline def setAsyncValidators(value: AsyncValidatorFn | js.Array[AsyncValidatorFn]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     
     inline def setAsyncValidatorsFunction1(
-      value: /* control */ AbstractControl[Any, Any] => (js.Promise[ValidationErrors | Null]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<ValidationErrors | null> */ Any)
+      value: /* control */ AbstractControl[Any, Any] => (js.Promise[ValidationErrors | Null]) | (Observable_[ValidationErrors | Null])
     ): Self = StObject.set(x, "asyncValidators", js.Any.fromFunction1(value))
     
     inline def setAsyncValidatorsNull: Self = StObject.set(x, "asyncValidators", null)

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Type[T]
   extends StObject
      with CameraFunctionSpecification[T]
-     with typings.maplibreGl.styleSpecMod.CameraFunctionSpecification[T] {
+     with typings.maplibreGl.distStyleSpecMod.CameraFunctionSpecification[T] {
   
   var stops: js.Array[js.Tuple2[Double, T]]
   

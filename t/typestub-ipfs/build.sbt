@@ -1,12 +1,13 @@
 organization := "org.scalablytyped"
 name := "typestub-ipfs"
-version := "0.23.14-6f3966"
-scalaVersion := "3.0.1"
+version := "0.23.14-15409c"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "events" % "3.0-dt-20211202Z-2d4ac7",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

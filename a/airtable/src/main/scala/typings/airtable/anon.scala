@@ -1,14 +1,14 @@
 package typings.airtable
 
-import typings.airtable.airtableBaseMod.AirtableBase
 import typings.airtable.airtableBooleans.`false`
 import typings.airtable.airtableBooleans.`true`
 import typings.airtable.airtableStrings.asc
 import typings.airtable.airtableStrings.desc
-import typings.airtable.fieldSetMod.FieldSet
+import typings.airtable.libAirtableBaseMod.AirtableBase
+import typings.airtable.libFieldSetMod.FieldSet
+import typings.airtable.libQueryParamsMod.QueryParams
+import typings.airtable.libThumbnailMod.Thumbnail
 import typings.airtable.mod.^
-import typings.airtable.queryParamsMod.QueryParams
-import typings.airtable.thumbnailMod.Thumbnail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

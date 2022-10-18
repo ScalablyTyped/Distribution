@@ -2,7 +2,7 @@ package typings.grayMatter
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.grayMatter.anon.Content
-import typings.grayMatter.anon.ContentI
+import typings.grayMatter.anon.ContentString
 import typings.grayMatter.anon.Name
 import typings.grayMatter.anon.Parse
 import typings.node.bufferMod.global.Buffer
@@ -14,8 +14,8 @@ object mod {
   
   inline def apply[I /* <: Input */, O /* <: GrayMatterOption[I, O] */](input: I): GrayMatterFile[I] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[GrayMatterFile[I]]
   inline def apply[I /* <: Input */, O /* <: GrayMatterOption[I, O] */](input: I, options: O): GrayMatterFile[I] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GrayMatterFile[I]]
-  inline def apply[I /* <: Input */, O /* <: GrayMatterOption[I, O] */](input: ContentI[I]): GrayMatterFile[I] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[GrayMatterFile[I]]
-  inline def apply[I /* <: Input */, O /* <: GrayMatterOption[I, O] */](input: ContentI[I], options: O): GrayMatterFile[I] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GrayMatterFile[I]]
+  inline def apply[I /* <: Input */, O /* <: GrayMatterOption[I, O] */](input: Content[I]): GrayMatterFile[I] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[GrayMatterFile[I]]
+  inline def apply[I /* <: Input */, O /* <: GrayMatterOption[I, O] */](input: Content[I], options: O): GrayMatterFile[I] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GrayMatterFile[I]]
   
   @JSImport("gray-matter", JSImport.Namespace)
   @js.native
@@ -29,8 +29,8 @@ object mod {
   
   inline def stringify[O /* <: GrayMatterOption[String, O] */](file: String, data: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify[O /* <: GrayMatterOption[String, O] */](file: String, data: js.Object, options: GrayMatterOption[String, O]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify[O /* <: GrayMatterOption[String, O] */](file: Content, data: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify[O /* <: GrayMatterOption[String, O] */](file: Content, data: js.Object, options: GrayMatterOption[String, O]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify[O /* <: GrayMatterOption[String, O] */](file: ContentString, data: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify[O /* <: GrayMatterOption[String, O] */](file: ContentString, data: js.Object, options: GrayMatterOption[String, O]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def test[O /* <: GrayMatterOption[String, O] */](str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def test[O /* <: GrayMatterOption[String, O] */](str: String, options: GrayMatterOption[String, O]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]

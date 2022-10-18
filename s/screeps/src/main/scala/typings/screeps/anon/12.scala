@@ -1,23 +1,23 @@
 package typings.screeps.anon
 
-import typings.screeps.screepsDoubles.`0.5`
+import typings.screeps.screepsStrings.XKH2O
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `12` extends StObject {
   
-  var damage: `0.5`
+  var X: XKH2O
 }
 object `12` {
   
   inline def apply(): `12` = {
-    val __obj = js.Dynamic.literal(damage = 0.5d)
+    val __obj = js.Dynamic.literal(X = "XKH2O")
     __obj.asInstanceOf[`12`]
   }
   
   extension [Self <: `12`](x: Self) {
     
-    inline def setDamage(value: `0.5`): Self = StObject.set(x, "damage", value.asInstanceOf[js.Any])
+    inline def setX(value: XKH2O): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
   }
 }

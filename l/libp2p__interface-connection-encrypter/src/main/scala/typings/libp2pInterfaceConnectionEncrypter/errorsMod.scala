@@ -1,63 +1,30 @@
 package typings.libp2pInterfaceConnectionEncrypter
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object errorsMod {
   
-  @JSImport("@libp2p/interface-connection-encrypter/dist/src/errors", "InvalidCryptoExchangeError")
+  @JSImport("@libp2p/interface-connection-encrypter/errors", "InvalidCryptoExchangeError")
   @js.native
   open class InvalidCryptoExchangeError ()
-    extends StObject
-       with Error {
+    extends typings.libp2pInterfaceConnectionEncrypter.distSrcErrorsMod.InvalidCryptoExchangeError {
     def this(message: String) = this()
-    
-    var code: String = js.native
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var message: String = js.native
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var name: String = js.native
   }
   
-  @JSImport("@libp2p/interface-connection-encrypter/dist/src/errors", "InvalidCryptoTransmissionError")
+  @JSImport("@libp2p/interface-connection-encrypter/errors", "InvalidCryptoTransmissionError")
   @js.native
   open class InvalidCryptoTransmissionError ()
-    extends StObject
-       with Error {
+    extends typings.libp2pInterfaceConnectionEncrypter.distSrcErrorsMod.InvalidCryptoTransmissionError {
     def this(message: String) = this()
-    
-    var code: String = js.native
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var message: String = js.native
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var name: String = js.native
   }
   
-  @JSImport("@libp2p/interface-connection-encrypter/dist/src/errors", "UnexpectedPeerError")
+  @JSImport("@libp2p/interface-connection-encrypter/errors", "UnexpectedPeerError")
   @js.native
   open class UnexpectedPeerError ()
-    extends StObject
-       with Error {
+    extends typings.libp2pInterfaceConnectionEncrypter.distSrcErrorsMod.UnexpectedPeerError {
     def this(message: String) = this()
-    
-    var code: String = js.native
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var message: String = js.native
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var name: String = js.native
   }
 }

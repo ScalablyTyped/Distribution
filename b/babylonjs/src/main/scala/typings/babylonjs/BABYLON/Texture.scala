@@ -17,11 +17,21 @@ trait Texture
     String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
   ] = js.native
   
-  /* private */ var _cachedCoordinatesMode: Any = js.native
-  
   /* private */ var _cachedHomogeneousRotationInUVTransform: Any = js.native
   
-  /* private */ var _cachedProjectionMatrixId: Any = js.native
+  /* private */ var _cachedReflectionCoordinatesMode: Any = js.native
+  
+  /* private */ var _cachedReflectionProjectionMatrixId: Any = js.native
+  
+  /* private */ var _cachedReflectionTextureMatrix: Any = js.native
+  
+  /* private */ var _cachedReflectionUOffset: Any = js.native
+  
+  /* private */ var _cachedReflectionUScale: Any = js.native
+  
+  /* private */ var _cachedReflectionVOffset: Any = js.native
+  
+  /* private */ var _cachedReflectionVScale: Any = js.native
   
   /* private */ var _cachedTextureMatrix: Any = js.native
   

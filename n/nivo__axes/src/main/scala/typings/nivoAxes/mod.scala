@@ -9,13 +9,13 @@ import typings.nivoAxes.anon.Left
 import typings.nivoAxes.anon.Length
 import typings.nivoAxes.anon.Lines
 import typings.nivoAxes.anon.Width
+import typings.nivoAxes.distTypesTypesMod.AxisProps
+import typings.nivoAxes.distTypesTypesMod.AxisTickProps
 import typings.nivoAxes.nivoAxesStrings.bottom
 import typings.nivoAxes.nivoAxesStrings.left
 import typings.nivoAxes.nivoAxesStrings.right
 import typings.nivoAxes.nivoAxesStrings.top
-import typings.nivoAxes.typesMod.AxisProps
-import typings.nivoAxes.typesMod.AxisTickProps
-import typings.nivoScales.typesMod.ScaleValue
+import typings.nivoScales.distTypesTypesMod.ScaleValue
 import typings.propTypes.mod.InferProps
 import typings.propTypes.mod.ReactNodeLike
 import typings.propTypes.mod.Requireable

@@ -8,11 +8,11 @@ trait ParametersQueryUntil extends StObject {
   
   var parameters: QueryUntil
   
-  var responses: `409500`
+  var responses: `400404`
 }
 object ParametersQueryUntil {
   
-  inline def apply(parameters: QueryUntil, responses: `409500`): ParametersQueryUntil = {
+  inline def apply(parameters: QueryUntil, responses: `400404`): ParametersQueryUntil = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryUntil]
   }
@@ -21,6 +21,6 @@ object ParametersQueryUntil {
     
     inline def setParameters(value: QueryUntil): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `409500`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `400404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

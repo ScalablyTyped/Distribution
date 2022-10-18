@@ -1,6 +1,5 @@
 package typings.reduxDefine
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +16,25 @@ object mod {
   
   inline def defineAction_OwnActionSubActionSubActions[OwnAction /* <: String */, SubAction /* <: String */, SubActions /* <: js.Array[SubAction] */](actionType: OwnAction, subactions: SubActions): Action[OwnAction, SubAction, Unit, SubActions] = (^.asInstanceOf[js.Dynamic].applyDynamic("defineAction")(actionType.asInstanceOf[js.Any], subactions.asInstanceOf[js.Any])).asInstanceOf[Action[OwnAction, SubAction, Unit, SubActions]]
   
-  type Action[OwnAction /* <: String */, SubAction /* <: js.UndefOr[String] */, Namespace /* <: js.UndefOr[String] */, SubActions /* <: js.Array[SubAction] */] = (PlainAction[OwnAction, Namespace]) | ((PlainAction[OwnAction, Namespace]) & (SubActionProps[SubAction, SubActions, Namespace, OwnAction]))
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    SubAction extends string ? redux-define.redux-define.PlainAction<OwnAction, Namespace> & redux-define.redux-define.SubActionProps<SubAction, SubActions, Namespace, OwnAction> : redux-define.redux-define.PlainAction<OwnAction, Namespace>
+    }}}
+    */
+  @js.native
+  trait Action[OwnAction /* <: String */, SubAction /* <: js.UndefOr[String] */, Namespace /* <: js.UndefOr[String] */, SubActions /* <: js.Array[SubAction] */] extends StObject
   
-  type NamespaceString[Namespace /* <: (Action[String, Unit, Unit, js.Array[Unit]]) | String */] = Namespace | (/* import warning: importer.ImportType#apply Failed type conversion: Namespace['ACTION'] */ js.Any)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Namespace extends redux-define.redux-define.Action<string, undefined, undefined, std.Array<undefined>> ? Namespace['ACTION'] : Namespace
+    }}}
+    */
+  @js.native
+  trait NamespaceString[Namespace /* <: (Action[String, Unit, Unit, js.Array[Unit]]) | String */] extends StObject
   
   trait PlainAction[OwnAction /* <: String */, Namespace /* <: js.UndefOr[String] */] extends StObject {
     
@@ -78,12 +93,26 @@ object mod {
     }
   }
   
-  type SubActionProps[SubAction /* <: String */, // This is necessary to force narrowing of the subaction type, as described here https://github.com/microsoft/TypeScript/issues/30680
-  SubActions /* <: js.Array[SubAction] */, Namespace /* <: js.UndefOr[String] */, OwnAction /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in SubActions[number] ]: / * template literal string: ${Namespaceextendsstring?${Namespace}/:}${OwnAction}_${k} * / string}
-    */ typings.reduxDefine.reduxDefineStrings.SubActionProps & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ k in SubActions[number] ]: / * template literal string: ${Namespaceextendsstring?${Namespace}/:}${OwnAction}_${k} * / string}
+    }}}
+    */
+  @js.native
+  trait SubActionProps[SubAction /* <: String */, // This is necessary to force narrowing of the subaction type, as described here https://github.com/microsoft/TypeScript/issues/30680
+  SubActions /* <: js.Array[SubAction] */, Namespace /* <: js.UndefOr[String] */, OwnAction /* <: String */] extends StObject
   
-  type WithNamespace[OwnAction /* <: String */, Namespace /* <: js.UndefOr[String] */] = OwnAction | (/* template literal string: ${Namespace}/${OwnAction} */ String)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Namespace extends string ? / * template literal string: ${Namespace}/${OwnAction} * / string : OwnAction
+    }}}
+    */
+  @js.native
+  trait WithNamespace[OwnAction /* <: String */, Namespace /* <: js.UndefOr[String] */] extends StObject
   
   type defineChildAction = js.ThisFunction1[
     /* this */ Action[String, Unit, Unit, js.Array[Unit]], 

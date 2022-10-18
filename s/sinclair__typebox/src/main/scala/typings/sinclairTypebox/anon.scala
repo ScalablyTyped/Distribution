@@ -8,28 +8,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  @js.native
-  trait `0` extends StObject
-  
-  @js.native
-  trait `1` extends StObject
-  
-  trait `2` extends StObject {
+  trait `0` extends StObject {
     
     var const: typings.sinclairTypebox.sinclairTypeboxInts.`1`
   }
-  object `2` {
+  object `0` {
     
-    inline def apply(): `2` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(const = 1)
-      __obj.asInstanceOf[`2`]
+      __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `2`](x: Self) {
+    extension [Self <: `0`](x: Self) {
       
       inline def setConst(value: typings.sinclairTypebox.sinclairTypeboxInts.`1`): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
     }
   }
+  
+  @js.native
+  trait `1` extends StObject
+  
+  @js.native
+  trait `2` extends StObject
   
   trait Const extends StObject {
     

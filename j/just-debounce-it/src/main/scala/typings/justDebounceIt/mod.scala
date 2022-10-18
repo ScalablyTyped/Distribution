@@ -24,7 +24,15 @@ object mod {
   
   inline def default_true[T /* <: js.Function */](fn: T, wait: Double, callFirst: `true`): T & MethodTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], callFirst.asInstanceOf[js.Any])).asInstanceOf[T & MethodTypes]
   
-  type ArgumentTypes[F /* <: js.Function */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    F extends (args : infer A): any ? A : never
+    }}}
+    */
+  @js.native
+  trait ArgumentTypes[F /* <: js.Function */] extends StObject
   
   trait MethodTypes extends StObject {
     

@@ -12,7 +12,7 @@ trait DismissedcommentDismissedreason extends StObject {
   
   var dismissed_comment: js.UndefOr[String | Null] = js.undefined
   
-  var dismissed_reason: js.UndefOr[Null | (`false positive`) | String | (`used in tests`)] = js.undefined
+  var dismissed_reason: js.UndefOr[Null | (`false positive`) | (/* won't fix */ String) | (`used in tests`)] = js.undefined
   
   var state: open | dismissed
 }
@@ -31,7 +31,7 @@ object DismissedcommentDismissedreason {
     
     inline def setDismissed_commentUndefined: Self = StObject.set(x, "dismissed_comment", js.undefined)
     
-    inline def setDismissed_reason(value: (`false positive`) | String | (`used in tests`)): Self = StObject.set(x, "dismissed_reason", value.asInstanceOf[js.Any])
+    inline def setDismissed_reason(value: (`false positive`) | (/* won't fix */ String) | (`used in tests`)): Self = StObject.set(x, "dismissed_reason", value.asInstanceOf[js.Any])
     
     inline def setDismissed_reasonNull: Self = StObject.set(x, "dismissed_reason", null)
     

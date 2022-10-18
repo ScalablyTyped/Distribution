@@ -1,6 +1,6 @@
 package typings.reachRect
 
-import typings.reachRect.srcMod.PRect
+import typings.reachRect.mod.PRect
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

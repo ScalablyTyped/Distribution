@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCompassFilledMod.CompassFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compassFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CompassFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CompassFilled", JSImport.Default)
   @js.native
   val default: CompassFilledIconType = js.native
-  
-  @js.native
-  trait CompassFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CompassFilledIconType: String = js.native
-  }
   
   type _To = CompassFilledIconType
   

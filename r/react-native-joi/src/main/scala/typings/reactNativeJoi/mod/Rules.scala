@@ -1,6 +1,5 @@
 package typings.reactNativeJoi.mod
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait Rules[P /* <: js.Object */] extends StObject {
   var name: String
   
   var params: js.UndefOr[
-    ObjectSchema | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof P ]: react-native-joi.react-native-joi.SchemaLike}
-    */ typings.reactNativeJoi.reactNativeJoiStrings.Rules & TopLevel[Any])
+    ObjectSchema | (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof P ]: react-native-joi.react-native-joi.SchemaLike} */ js.Any)
   ] = js.undefined
   
   var setup: js.UndefOr[js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ P, Schema | Unit]] = js.undefined
@@ -48,9 +45,7 @@ object Rules {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setParams(
-      value: ObjectSchema | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof P ]: react-native-joi.react-native-joi.SchemaLike}
-      */ typings.reactNativeJoi.reactNativeJoiStrings.Rules & TopLevel[Any])
+      value: ObjectSchema | (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof P ]: react-native-joi.react-native-joi.SchemaLike} */ js.Any)
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

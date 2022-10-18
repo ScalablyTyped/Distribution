@@ -5,9 +5,9 @@ import typings.fileType.coreMod.FileTypeResult
 import typings.fileType.coreMod.MimeType
 import typings.fileType.coreMod.ReadableStreamWithFileType
 import typings.fileType.coreMod.StreamOptions
-import typings.node.nodeStreamMod.Readable
+import typings.node.nodeColonstreamMod.Readable
 import typings.std.ReadonlySet
-import typings.strtok3.typesMod.ITokenizer
+import typings.strtok3.libTypesMod.ITokenizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

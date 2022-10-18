@@ -7,7 +7,6 @@ import typings.react.mod.PropsWithChildren
 import typings.react.mod.PropsWithRef
 import typings.react.mod.ReactElement
 import typings.reactErrorBoundary.anon.ComponentStack
-import typings.reactErrorBoundary.anon.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,15 +17,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-error-boundary", "ErrorBoundary")
+  inline def useErrorHandler(): js.Function1[/* error */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useErrorHandler")().asInstanceOf[js.Function1[/* error */ Any, Unit]]
+  inline def useErrorHandler(givenError: Any): js.Function1[/* error */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useErrorHandler")(givenError.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* error */ Any, Unit]]
+  
+  inline def withErrorBoundary[P](Component: ComponentType[P], errorBoundaryProps: ErrorBoundaryProps): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("withErrorBoundary")(Component.asInstanceOf[js.Any], errorBoundaryProps.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
+  
   @js.native
-  open class ErrorBoundary protected () extends Component[PropsWithRef[PropsWithChildren[ErrorBoundaryProps]], ErrorBoundaryState, Any] {
-    def this(props: PropsWithRef[PropsWithChildren[ErrorBoundaryProps]]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: PropsWithRef[PropsWithChildren[ErrorBoundaryProps]], context: Any) = this()
+  trait ErrorBoundary extends Component[PropsWithRef[PropsWithChildren[ErrorBoundaryProps]], ErrorBoundaryState, Any] {
     
     @JSName("componentDidCatch")
     def componentDidCatch_MErrorBoundary(error: js.Error, info: ErrorInfo): Unit = js.native
@@ -38,20 +35,6 @@ object mod {
     
     def resetErrorBoundary(args: Any*): Unit = js.native
   }
-  object ErrorBoundary {
-    
-    @JSImport("react-error-boundary", "ErrorBoundary")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    inline def getDerivedStateFromError(error: js.Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[Error]
-  }
-  
-  inline def useErrorHandler(): js.Function1[/* error */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useErrorHandler")().asInstanceOf[js.Function1[/* error */ Any, Unit]]
-  inline def useErrorHandler(givenError: Any): js.Function1[/* error */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useErrorHandler")(givenError.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* error */ Any, Unit]]
-  
-  inline def withErrorBoundary[P](Component: ComponentType[P], errorBoundaryProps: ErrorBoundaryProps): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("withErrorBoundary")(Component.asInstanceOf[js.Any], errorBoundaryProps.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactErrorBoundary.mod.ErrorBoundaryPropsWithFallback

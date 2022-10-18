@@ -1,8 +1,8 @@
 package typings.checCommerceJs
 
-import typings.checCommerceJs.currencyMod.Currency
-import typings.checCommerceJs.lineItemMod.LineItem
-import typings.checCommerceJs.priceMod.Price
+import typings.checCommerceJs.typesCurrencyMod.Currency
+import typings.checCommerceJs.typesLineItemMod.LineItem
+import typings.checCommerceJs.typesPriceMod.Price
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

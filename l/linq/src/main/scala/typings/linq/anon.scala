@@ -7,39 +7,58 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Dictx[T]
+  trait Dictx[TOther]
     extends StObject
-       with /* x */ NumberDictionary[T] {
+       with /* x */ NumberDictionary[TOther] {
     
     var length: Double
   }
   object Dictx {
     
-    inline def apply[T](length: Double): Dictx[T] = {
+    inline def apply[TOther](length: Double): Dictx[TOther] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Dictx[T]]
+      __obj.asInstanceOf[Dictx[TOther]]
     }
     
-    extension [Self <: Dictx[?], T](x: Self & Dictx[T]) {
+    extension [Self <: Dictx[?], TOther](x: Self & Dictx[TOther]) {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
-  trait DictxLength[TCollection]
+  trait DictxLength[U]
     extends StObject
-       with /* x */ NumberDictionary[TCollection] {
+       with /* x */ NumberDictionary[U] {
     
     var length: Double
   }
   object DictxLength {
     
-    inline def apply[TCollection](length: Double): DictxLength[TCollection] = {
+    inline def apply[U](length: Double): DictxLength[U] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DictxLength[TCollection]]
+      __obj.asInstanceOf[DictxLength[U]]
     }
     
-    extension [Self <: DictxLength[?], TCollection](x: Self & DictxLength[TCollection]) {
+    extension [Self <: DictxLength[?], U](x: Self & DictxLength[U]) {
+      
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DictxNumberT[T]
+    extends StObject
+       with /* x */ NumberDictionary[T] {
+    
+    var length: Double
+  }
+  object DictxNumberT {
+    
+    inline def apply[T](length: Double): DictxNumberT[T] = {
+      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DictxNumberT[T]]
+    }
+    
+    extension [Self <: DictxNumberT[?], T](x: Self & DictxNumberT[T]) {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -83,83 +102,64 @@ object anon {
     }
   }
   
-  trait DictxNumberU[U]
-    extends StObject
-       with /* x */ NumberDictionary[U] {
-    
-    var length: Double
-  }
-  object DictxNumberU {
-    
-    inline def apply[U](length: Double): DictxNumberU[U] = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DictxNumberU[U]]
-    }
-    
-    extension [Self <: DictxNumberU[?], U](x: Self & DictxNumberU[U]) {
-      
-      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Key[T] extends StObject {
-    
-    var key: String
-    
-    var value: T
-  }
-  object Key {
-    
-    inline def apply[T](key: String, value: T): Key[T] = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Key[T]]
-    }
-    
-    extension [Self <: Key[?], T](x: Self & Key[T]) {
-      
-      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Length[TOther]
-    extends StObject
-       with /* x */ NumberDictionary[TOther] {
-    
-    var length: Double
-  }
-  object Length {
-    
-    inline def apply[TOther](length: Double): Length[TOther] = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Length[TOther]]
-    }
-    
-    extension [Self <: Length[?], TOther](x: Self & Length[TOther]) {
-      
-      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Value[TKey, TValue] extends StObject {
+  trait Key[TKey, TValue] extends StObject {
     
     var key: TKey
     
     var value: TValue
   }
-  object Value {
+  object Key {
     
-    inline def apply[TKey, TValue](key: TKey, value: TValue): Value[TKey, TValue] = {
+    inline def apply[TKey, TValue](key: TKey, value: TValue): Key[TKey, TValue] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Value[TKey, TValue]]
+      __obj.asInstanceOf[Key[TKey, TValue]]
     }
     
-    extension [Self <: Value[?, ?], TKey, TValue](x: Self & (Value[TKey, TValue])) {
+    extension [Self <: Key[?, ?], TKey, TValue](x: Self & (Key[TKey, TValue])) {
       
       inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Length[TCollection]
+    extends StObject
+       with /* x */ NumberDictionary[TCollection] {
+    
+    var length: Double
+  }
+  object Length {
+    
+    inline def apply[TCollection](length: Double): Length[TCollection] = {
+      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Length[TCollection]]
+    }
+    
+    extension [Self <: Length[?], TCollection](x: Self & Length[TCollection]) {
+      
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Value[T] extends StObject {
+    
+    var key: String
+    
+    var value: T
+  }
+  object Value {
+    
+    inline def apply[T](key: String, value: T): Value[T] = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Value[T]]
+    }
+    
+    extension [Self <: Value[?], T](x: Self & Value[T]) {
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

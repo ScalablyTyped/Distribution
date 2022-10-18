@@ -1,6 +1,7 @@
 package typings.gulpIf
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,15 +25,12 @@ object mod extends Shortcut {
       * @param stream the stream to pipe to if condition is true
       * @param elseStream (optional) the stream to pipe to if condition is false 
       */
+    def apply(condition: js.Function1[/* fs */ File, Boolean], stream: ReadWriteStream): ReadWriteStream = js.native
     def apply(
       condition: js.Function1[/* fs */ File, Boolean],
-      stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-    ): Any = js.native
-    def apply(
-      condition: js.Function1[/* fs */ File, Boolean],
-      stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any,
-      elseStream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-    ): Any = js.native
+      stream: ReadWriteStream,
+      elseStream: ReadWriteStream
+    ): ReadWriteStream = js.native
     /** 
       * gulp-if will pipe data to stream whenever condition is truthy.
       * If condition is falsey and elseStream is passed, data will pipe to elseStream
@@ -42,15 +40,8 @@ object mod extends Shortcut {
       * @param stream the stream to pipe to if condition is true
       * @param elseStream (optional) the stream to pipe to if condition is false 
       */
-    def apply(
-      condition: js.RegExp,
-      stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-    ): Any = js.native
-    def apply(
-      condition: js.RegExp,
-      stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any,
-      elseStream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-    ): Any = js.native
+    def apply(condition: js.RegExp, stream: ReadWriteStream): ReadWriteStream = js.native
+    def apply(condition: js.RegExp, stream: ReadWriteStream, elseStream: ReadWriteStream): ReadWriteStream = js.native
     /** 
       * gulp-if will pipe data to stream whenever condition is truthy.
       * If condition is falsey and elseStream is passed, data will pipe to elseStream
@@ -60,15 +51,8 @@ object mod extends Shortcut {
       * @param stream the stream to pipe to if condition is true
       * @param elseStream (optional) the stream to pipe to if condition is false 
       */
-    def apply(
-      condition: Boolean,
-      stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-    ): Any = js.native
-    def apply(
-      condition: Boolean,
-      stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any,
-      elseStream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-    ): Any = js.native
+    def apply(condition: Boolean, stream: ReadWriteStream): ReadWriteStream = js.native
+    def apply(condition: Boolean, stream: ReadWriteStream, elseStream: ReadWriteStream): ReadWriteStream = js.native
     /** 
       * gulp-if will pipe data to stream whenever condition is truthy.
       * If condition is falsey and elseStream is passed, data will pipe to elseStream
@@ -78,15 +62,8 @@ object mod extends Shortcut {
       * @param stream the stream to pipe to if condition is true
       * @param elseStream (optional) the stream to pipe to if condition is false 
       */
-    def apply(
-      condition: StatFilterCondition,
-      stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-    ): Any = js.native
-    def apply(
-      condition: StatFilterCondition,
-      stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any,
-      elseStream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-    ): Any = js.native
+    def apply(condition: StatFilterCondition, stream: ReadWriteStream): ReadWriteStream = js.native
+    def apply(condition: StatFilterCondition, stream: ReadWriteStream, elseStream: ReadWriteStream): ReadWriteStream = js.native
   }
   
   trait StatFilterCondition extends StObject {

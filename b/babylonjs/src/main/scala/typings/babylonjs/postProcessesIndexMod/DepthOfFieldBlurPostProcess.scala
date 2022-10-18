@@ -1,9 +1,9 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.mathVectorMod.Vector2
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.mathsMathDotvectorMod.Vector2
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "DepthOfFieldBlurPostProcess")
 @js.native
 open class DepthOfFieldBlurPostProcess protected ()
-  extends typings.babylonjs.depthOfFieldBlurPostProcessMod.DepthOfFieldBlurPostProcess {
+  extends typings.babylonjs.postProcessesDepthOfFieldBlurPostProcessMod.DepthOfFieldBlurPostProcess {
   /**
     * Creates a new instance DepthOfFieldBlurPostProcess
     * @param name The name of the effect.
@@ -37,8 +37,8 @@ open class DepthOfFieldBlurPostProcess protected ()
     kernel: Double,
     options: Double | PostProcessOptions,
     camera: Nullable[Camera],
-    circleOfConfusion: typings.babylonjs.postProcessMod.PostProcess,
-    imageToBlur: js.UndefOr[Nullable[typings.babylonjs.postProcessMod.PostProcess]],
+    circleOfConfusion: typings.babylonjs.postProcessesPostProcessMod.PostProcess,
+    imageToBlur: js.UndefOr[Nullable[typings.babylonjs.postProcessesPostProcessMod.PostProcess]],
     samplingMode: js.UndefOr[Double],
     engine: js.UndefOr[Engine],
     reusable: js.UndefOr[Boolean],

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Eventcategory
   extends StObject
-     with /* key */ StringDictionary[Any] {
+     with /** Custom claims set by the developer */
+/* claim */ StringDictionary[Any] {
   
   var event_category: js.UndefOr[String] = js.undefined
   

@@ -3,9 +3,9 @@ package typings.semanticUiReact.mod
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.transitionGroupMod.TransitionGroupProps
-import typings.semanticUiReact.transitionTransitionMod.TransitionComponent
-import typings.semanticUiReact.transitionTransitionMod.TransitionProps
+import typings.semanticUiReact.distCommonjsModulesTransitionTransitionGroupMod.TransitionGroupProps
+import typings.semanticUiReact.distCommonjsModulesTransitionTransitionMod.TransitionComponent
+import typings.semanticUiReact.distCommonjsModulesTransitionTransitionMod.TransitionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

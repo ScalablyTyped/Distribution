@@ -21,8 +21,6 @@ type CustomHttpOptionsProvider = js.Function2[/* url */ URL_, /* options */ Omit
 
 type DPoPInput = KeyObject | (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<openid-client.anon.FnCall>[0] */ js.Any)
 
-type KnownKeys[T] = Any
-
 type Override[T1, T2] = (Omit[
 T1, 
 /* keyof std.Omit<T2, keyof openid-client.openid-client.KnownKeys<T2>> */ String]) & T2

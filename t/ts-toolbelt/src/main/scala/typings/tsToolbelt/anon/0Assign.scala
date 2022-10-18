@@ -1,15 +1,15 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.iterationMod.Iteration
-import typings.tsToolbelt.nextMod.Next
-import typings.tsToolbelt.objectAssignMod.__Assign
-import typings.tsToolbelt.objectInternalMod.Depth
-import typings.tsToolbelt.objectMergeMod.Merge
+import typings.tsToolbelt.outIterationIterationMod.Iteration
+import typings.tsToolbelt.outIterationNextMod.Next
+import typings.tsToolbelt.outObjectAssignMod.__Assign
+import typings.tsToolbelt.outObjectInternalMod.Depth
+import typings.tsToolbelt.outObjectMergeMod.Merge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0Assign`[Os /* <: typings.tsToolbelt.listMod.List[js.Object] */, I /* <: Iteration */, O /* <: js.Object */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */] extends StObject {
+trait `0Assign`[Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, O /* <: js.Object */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */] extends StObject {
   
   var `0`: __Assign[
     Merge[
@@ -30,7 +30,7 @@ trait `0Assign`[Os /* <: typings.tsToolbelt.listMod.List[js.Object] */, I /* <: 
 }
 object `0Assign` {
   
-  inline def apply[Os /* <: typings.tsToolbelt.listMod.List[js.Object] */, I /* <: Iteration */, O /* <: js.Object */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](
+  inline def apply[Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, O /* <: js.Object */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](
     `0`: __Assign[
       Merge[
         /* import warning: importer.ImportType#apply Failed type conversion: Os[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] */ js.Any, 
@@ -53,7 +53,7 @@ object `0Assign` {
     __obj.asInstanceOf[`0Assign`[Os, I, O, depth, ignore, fill]]
   }
   
-  extension [Self <: `0Assign`[?, ?, ?, ?, ?, ?], Os /* <: typings.tsToolbelt.listMod.List[js.Object] */, I /* <: Iteration */, O /* <: js.Object */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](x: Self & (`0Assign`[Os, I, O, depth, ignore, fill])) {
+  extension [Self <: `0Assign`[?, ?, ?, ?, ?, ?], Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, O /* <: js.Object */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](x: Self & (`0Assign`[Os, I, O, depth, ignore, fill])) {
     
     inline def set0(
       value: __Assign[

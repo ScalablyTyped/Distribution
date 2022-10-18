@@ -1,6 +1,6 @@
 package typings.bip174.anon
 
-import typings.bip174.interfacesMod.KeyValue
+import typings.bip174.srcLibInterfacesMod.KeyValue
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

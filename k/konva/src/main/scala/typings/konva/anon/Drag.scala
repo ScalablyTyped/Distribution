@@ -1,6 +1,6 @@
 package typings.konva.anon
 
-import typings.konva.nodeMod.NodeConfig
+import typings.konva.libNodeMod.NodeConfig
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,5 +22,5 @@ trait Drag extends StObject {
   
   var justDragged: Boolean = js.native
   
-  val node: typings.konva.nodeMod.Node[NodeConfig] = js.native
+  val node: typings.konva.libNodeMod.Node[NodeConfig] = js.native
 }

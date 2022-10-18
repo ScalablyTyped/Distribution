@@ -1,9 +1,7 @@
 package typings.wordpressComponents
 
 import typings.react.mod.ComponentType
-import typings.react.mod.SVGProps
 import typings.react.mod.global.JSX.Element
-import typings.std.SVGSVGElement
 import typings.wordpressComponents.iconMod.Icon.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +22,15 @@ object iconMod {
   object Icon {
     
     // prettier-ignore
-    type AdditionalProps[T] = js.Object | SVGProps[SVGSVGElement]
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      T extends react.react.ComponentType<infer U> ? U : T extends @wordpress/components.@wordpress/components/dashicon.Dashicon.Icon ? react.react.SVGProps<std.SVGSVGElement> : {}
+      }}}
+      */
+    @js.native
+    trait AdditionalProps[T] extends StObject
     
     trait BaseProps[P] extends StObject {
       

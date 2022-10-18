@@ -1,11 +1,11 @@
 package typings.mangopay2NodejsSdk.anon
 
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SETTLEMENT
-import typings.mangopay2NodejsSdk.moneyMod.money.MoneyData
-import typings.mangopay2NodejsSdk.refundMod.refund.RefundReason
-import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionStatus
-import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionType
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
+import typings.mangopay2NodejsSdk.typingsModelsMoneyMod.money.MoneyData
+import typings.mangopay2NodejsSdk.typingsModelsRefundMod.refund.RefundReason
+import typings.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionStatus
+import typings.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ trait PartialSettlementTransfer extends StObject {
   
   var Nature: js.UndefOr[SETTLEMENT] = js.undefined
   
-  var RefundReason: js.UndefOr[typings.mangopay2NodejsSdk.refundMod.refund.RefundReason] = js.undefined
+  var RefundReason: js.UndefOr[typings.mangopay2NodejsSdk.typingsModelsRefundMod.refund.RefundReason] = js.undefined
   
   var RepudiationId: js.UndefOr[String] = js.undefined
   

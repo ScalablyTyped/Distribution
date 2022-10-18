@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native-svg", "LinearGradient")
 @js.native
 open class LinearGradient ()
-  extends typings.reactNativeSvg.reactNativeSVGMod.LinearGradient
+  extends typings.reactNativeSvg.libTypescriptReactNativeSVGMod.LinearGradient
 /* static members */
 object LinearGradient {
   

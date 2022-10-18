@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides options for how to get the data in a binding.
   *
   * @remarks
-  * 
+  *
   * If the rows option is used, the value must be "thisRow".
   */
 trait GetBindingDataOptions extends StObject {
@@ -29,7 +29,7 @@ trait GetBindingDataOptions extends StObject {
   var columnCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering data. 
+    * Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering data.
     * Use Office.FilterType or text value.
     */
   var filterType: js.UndefOr[FilterType | String] = js.undefined
@@ -41,7 +41,7 @@ trait GetBindingDataOptions extends StObject {
   
   /**
     * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
-    * 
+    *
     * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
     * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
     * to build no-code business solutions for web and mobile devices.
@@ -59,7 +59,7 @@ trait GetBindingDataOptions extends StObject {
   var startRow: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use Office.ValueFormat or text value. 
+    * Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use Office.ValueFormat or text value.
     * Default: Unformatted data.
     */
   var valueFormat: js.UndefOr[ValueFormat | String] = js.undefined

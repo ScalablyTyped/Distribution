@@ -17,5 +17,5 @@ trait TypeofMetadata
     * object.
     * @param headers An IncomingHttpHeaders object.
     */
-  def fromHttp2Headers(headers: IncomingHttpHeaders): typings.grpcGrpcJs.metadataMod.Metadata = js.native
+  def fromHttp2Headers(headers: IncomingHttpHeaders): typings.grpcGrpcJs.buildSrcMetadataMod.Metadata = js.native
 }

@@ -6,13 +6,13 @@ import typings.popperjsCore.anon.Dictkey
 import typings.popperjsCore.anon.PartialCSSStyleDeclaratio
 import typings.popperjsCore.anon.PartialModifieranyany
 import typings.popperjsCore.anon.Popper
-import typings.popperjsCore.enumsMod.Placement
-import typings.popperjsCore.typesMod.Instance
-import typings.popperjsCore.typesMod.OptionsGeneric
-import typings.popperjsCore.typesMod.PositioningStrategy
-import typings.popperjsCore.typesMod.State
-import typings.popperjsCore.typesMod.StateRects
-import typings.popperjsCore.typesMod.VirtualElement
+import typings.popperjsCore.libEnumsMod.Placement
+import typings.popperjsCore.libTypesMod.Instance
+import typings.popperjsCore.libTypesMod.OptionsGeneric
+import typings.popperjsCore.libTypesMod.PositioningStrategy
+import typings.popperjsCore.libTypesMod.State
+import typings.popperjsCore.libTypesMod.StateRects
+import typings.popperjsCore.libTypesMod.VirtualElement
 import typings.react.mod.CSSProperties
 import typings.reactPopper.mod.Modifier
 import typings.std.Element
@@ -145,7 +145,7 @@ object anon {
     
     var options: js.UndefOr[OptionsGeneric[Any]] = js.undefined
     
-    var orderedModifiers: js.UndefOr[js.Array[typings.popperjsCore.typesMod.Modifier[Any, Any]]] = js.undefined
+    var orderedModifiers: js.UndefOr[js.Array[typings.popperjsCore.libTypesMod.Modifier[Any, Any]]] = js.undefined
     
     var placement: js.UndefOr[Placement] = js.undefined
     
@@ -184,11 +184,11 @@ object anon {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOrderedModifiers(value: js.Array[typings.popperjsCore.typesMod.Modifier[Any, Any]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
+      inline def setOrderedModifiers(value: js.Array[typings.popperjsCore.libTypesMod.Modifier[Any, Any]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
       
       inline def setOrderedModifiersUndefined: Self = StObject.set(x, "orderedModifiers", js.undefined)
       
-      inline def setOrderedModifiersVarargs(value: (typings.popperjsCore.typesMod.Modifier[Any, Any])*): Self = StObject.set(x, "orderedModifiers", js.Array(value*))
+      inline def setOrderedModifiersVarargs(value: (typings.popperjsCore.libTypesMod.Modifier[Any, Any])*): Self = StObject.set(x, "orderedModifiers", js.Array(value*))
       
       inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       

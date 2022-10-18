@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait Event extends StObject {
   
   /** Optional. Event details. This field is used to pass event information. */
   var details: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Event & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Event report time. */
@@ -30,9 +27,7 @@ object Event {
   extension [Self <: Event](x: Self) {
     
     inline def setDetails(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Event & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)

@@ -1,6 +1,7 @@
 package typings.xRay
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ErrnoException
 import typings.node.processMod.global.NodeJS.ReadStream
 import typings.std.Array
 import typings.std.PromiseLike
@@ -54,14 +55,8 @@ object mod {
     def `then`[U](): typings.bluebird.mod.^[U] = js.native
     def `then`[U](fn: js.Function1[/* value */ Any, U | PromiseLike[U]]): typings.bluebird.mod.^[U] = js.native
     
-    def write(): js.Function1[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-        Unit
-      ] = js.native
-    def write(path: String): js.Function1[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-        Unit
-      ] = js.native
+    def write(): js.Function1[/* err */ ErrnoException, Unit] = js.native
+    def write(path: String): js.Function1[/* err */ ErrnoException, Unit] = js.native
   }
   
   trait Options extends StObject {

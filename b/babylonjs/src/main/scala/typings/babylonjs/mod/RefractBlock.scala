@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "RefractBlock")
 @js.native
 open class RefractBlock protected ()
-  extends typings.babylonjs.legacyMod.RefractBlock {
+  extends typings.babylonjs.legacyLegacyMod.RefractBlock {
   /**
     * Creates a new RefractBlock
     * @param name defines the block name

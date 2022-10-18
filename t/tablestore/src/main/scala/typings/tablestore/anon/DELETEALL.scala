@@ -13,6 +13,8 @@ trait DELETEALL extends StObject {
   
   var DELETE_ALL: js.UndefOr[js.Array[String]] = js.undefined
   
+  var INCREMENT: js.UndefOr[js.Array[StringDictionary[int64]]] = js.undefined
+  
   var PUT: js.UndefOr[AttributesInput] = js.undefined
 }
 object DELETEALL {
@@ -35,6 +37,12 @@ object DELETEALL {
     inline def setDELETE_ALLUndefined: Self = StObject.set(x, "DELETE_ALL", js.undefined)
     
     inline def setDELETE_ALLVarargs(value: String*): Self = StObject.set(x, "DELETE_ALL", js.Array(value*))
+    
+    inline def setINCREMENT(value: js.Array[StringDictionary[int64]]): Self = StObject.set(x, "INCREMENT", value.asInstanceOf[js.Any])
+    
+    inline def setINCREMENTUndefined: Self = StObject.set(x, "INCREMENT", js.undefined)
+    
+    inline def setINCREMENTVarargs(value: StringDictionary[int64]*): Self = StObject.set(x, "INCREMENT", js.Array(value*))
     
     inline def setPUT(value: AttributesInput): Self = StObject.set(x, "PUT", value.asInstanceOf[js.Any])
     

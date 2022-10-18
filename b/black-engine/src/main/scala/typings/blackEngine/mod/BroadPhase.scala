@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "BroadPhase")
 @js.native
 open class BroadPhase ()
-  extends typings.blackEngine.broadPhaseMod.BroadPhase
+  extends typings.blackEngine.physicsArcadePhasesBroadPhaseMod.BroadPhase

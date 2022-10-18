@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsFieldBinaryOutlinedMod.FieldBinaryOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldBinaryOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/FieldBinaryOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/FieldBinaryOutlined", JSImport.Default)
   @js.native
   val default: FieldBinaryOutlinedIconType = js.native
-  
-  @js.native
-  trait FieldBinaryOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_FieldBinaryOutlinedIconType: String = js.native
-  }
   
   type _To = FieldBinaryOutlinedIconType
   

@@ -39,6 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.auth0.auth0Strings.oauth1
   - typings.auth0.auth0Strings.oauth2
   - typings.auth0.auth0Strings.office365
+  - typings.auth0.auth0Strings.oidc
   - typings.auth0.auth0Strings.paypal
   - typings.auth0.auth0Strings.`paypal-sandbox`
   - typings.auth0.auth0Strings.pingfederate
@@ -136,6 +137,8 @@ object Strategy {
   inline def oauth2: typings.auth0.auth0Strings.oauth2 = "oauth2".asInstanceOf[typings.auth0.auth0Strings.oauth2]
   
   inline def office365: typings.auth0.auth0Strings.office365 = "office365".asInstanceOf[typings.auth0.auth0Strings.office365]
+  
+  inline def oidc: typings.auth0.auth0Strings.oidc = "oidc".asInstanceOf[typings.auth0.auth0Strings.oidc]
   
   inline def paypal: typings.auth0.auth0Strings.paypal = "paypal".asInstanceOf[typings.auth0.auth0Strings.paypal]
   

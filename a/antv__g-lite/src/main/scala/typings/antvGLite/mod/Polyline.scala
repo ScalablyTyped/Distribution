@@ -1,7 +1,7 @@
 package typings.antvGLite.mod
 
-import typings.antvGLite.domInterfacesMod.DisplayObjectConfig
-import typings.antvGLite.polylineMod.PolylineStyleProps
+import typings.antvGLite.distDisplayObjectsPolylineMod.PolylineStyleProps
+import typings.antvGLite.distDomInterfacesMod.DisplayObjectConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "Polyline")
 @js.native
 open class Polyline ()
-  extends typings.antvGLite.displayObjectsMod.Polyline {
+  extends typings.antvGLite.distDisplayObjectsMod.Polyline {
   def this(hasStyleRest: DisplayObjectConfig[PolylineStyleProps]) = this()
 }

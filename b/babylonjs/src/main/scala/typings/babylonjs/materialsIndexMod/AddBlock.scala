@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "AddBlock")
 @js.native
 open class AddBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.AddBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.AddBlock {
   /**
     * Creates a new AddBlock
     * @param name defines the block name

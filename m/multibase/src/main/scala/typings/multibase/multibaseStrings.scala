@@ -1,8 +1,8 @@
 package typings.multibase
 
-import typings.multibase.typesMod.BaseCode
-import typings.multibase.typesMod.BaseName
-import typings.multibase.typesMod.BaseNameOrCode
+import typings.multibase.distSrcTypesMod.BaseCode
+import typings.multibase.distSrcTypesMod.BaseName
+import typings.multibase.distSrcTypesMod.BaseNameOrCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

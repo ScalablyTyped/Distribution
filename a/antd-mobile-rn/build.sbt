@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "antd-mobile-rn"
-version := "2.3.3-b5435a"
+version := "2.3.3-2f5697"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-0912f8",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-975e63",
-  "org.scalablytyped" %%% "rc-gesture" % "0.0.22-604bf7",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-fc8273",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20220927Z-e8ccda",
-  "org.scalablytyped" %%% "react-native-drawer-layout" % "1.3-dt-20211202Z-2cd33f",
-  "org.scalablytyped" %%% "rmc-cascader" % "5.0.3-c85dcb",
-  "org.scalablytyped" %%% "rmc-input-number" % "1.0.5-00b7b5",
-  "org.scalablytyped" %%% "rmc-picker" % "5.0.10-5a72ba",
-  "org.scalablytyped" %%% "rmc-tabs" % "1.2.29-a89254",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-3fbb8c",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
+  "org.scalablytyped" %%% "rc-gesture" % "0.0.22-11cbce",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221016Z-c1c8c7",
+  "org.scalablytyped" %%% "react-native-drawer-layout" % "1.3-dt-20211202Z-f23b51",
+  "org.scalablytyped" %%% "rmc-cascader" % "5.0.3-78a897",
+  "org.scalablytyped" %%% "rmc-input-number" % "1.0.5-91b20e",
+  "org.scalablytyped" %%% "rmc-picker" % "5.0.10-7982db",
+  "org.scalablytyped" %%% "rmc-tabs" % "1.2.29-3dea8a",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

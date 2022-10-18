@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data to the RemoteParticipantComposingChanged event. */
-@JSGlobal("Windows.ApplicationModel.Chat.RemoteParticipantComposingChangedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.RemoteParticipantComposingChangedEventArgs")
 @js.native
-abstract class RemoteParticipantComposingChangedEventArgs ()
+open class RemoteParticipantComposingChangedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.RemoteParticipantComposingChangedEventArgs {
   

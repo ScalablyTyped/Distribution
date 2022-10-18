@@ -1,6 +1,6 @@
 package typings.grommet.anon
 
-import typings.grommet.themeContextMod.ThemeValue
+import typings.grommet.contextsThemeContextMod.ThemeValue
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

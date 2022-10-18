@@ -1,6 +1,5 @@
 package typings.stylelint.anon
 
-import org.scalablytyped.runtime.TopLevel
 import typings.postcss.mod.Warning
 import typings.stylelint.mod.PostcssResult
 import typings.stylelint.mod.Problem
@@ -37,9 +36,7 @@ trait CheckAgainstRule extends StObject {
   				 * that provides the same messages postfixed with the rule
   				 * that has been violated.
   				 */
-  def ruleMessages[T /* <: RuleMessages */, R /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K]}
-    */ typings.stylelint.stylelintStrings.CheckAgainstRule & TopLevel[T] */](ruleName: String, messages: T): R
+  def ruleMessages[T /* <: RuleMessages */, R /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K]} */ js.Any */](ruleName: String, messages: T): R
   
   /**
   				 * Validate a rule's options.

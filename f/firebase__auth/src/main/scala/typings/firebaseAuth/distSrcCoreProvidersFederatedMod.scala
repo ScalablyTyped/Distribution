@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcCoreProvidersFederatedMod {
   
-  @JSImport("@firebase/auth/dist/src/core/providers/federated", "FederatedAuthProvider")
+  /* note: abstract class */ @JSImport("@firebase/auth/dist/src/core/providers/federated", "FederatedAuthProvider")
   @js.native
-  abstract class FederatedAuthProvider protected ()
+  open class FederatedAuthProvider protected ()
     extends StObject
        with AuthProvider {
     /**

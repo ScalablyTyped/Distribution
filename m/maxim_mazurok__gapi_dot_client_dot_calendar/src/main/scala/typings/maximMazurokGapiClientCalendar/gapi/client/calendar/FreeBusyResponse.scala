@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,16 +8,12 @@ trait FreeBusyResponse extends StObject {
   
   /** List of free/busy information for calendars. */
   var calendars: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyCalendar}
-    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyCalendar} */ js.Any
   ] = js.undefined
   
   /** Expansion of groups. */
   var groups: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyGroup}
-    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyGroup} */ js.Any
   ] = js.undefined
   
   /** Type of the resource ("calendar#freeBusy"). */
@@ -40,17 +35,13 @@ object FreeBusyResponse {
   extension [Self <: FreeBusyResponse](x: Self) {
     
     inline def setCalendars(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyCalendar}
-      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyCalendar} */ js.Any
     ): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
     inline def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
     inline def setGroups(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyGroup}
-      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyGroup} */ js.Any
     ): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)

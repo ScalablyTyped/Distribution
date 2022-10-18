@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.anon
 
-import typings.blueprintjsCore.collapseMod.AnimationStates
+import typings.blueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

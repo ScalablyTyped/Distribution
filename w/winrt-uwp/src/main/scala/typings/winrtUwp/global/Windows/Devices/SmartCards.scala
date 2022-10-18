@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SmartCards {
   
   /** Provides data for the CardAdded event. */
-  @JSGlobal("Windows.Devices.SmartCards.CardAddedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.SmartCards.CardAddedEventArgs")
   @js.native
-  abstract class CardAddedEventArgs ()
+  open class CardAddedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.SmartCards.CardAddedEventArgs {
     
@@ -26,9 +26,9 @@ object SmartCards {
   }
   
   /** Provides data for the CardRemoved event. */
-  @JSGlobal("Windows.Devices.SmartCards.CardRemovedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.SmartCards.CardRemovedEventArgs")
   @js.native
-  abstract class CardRemovedEventArgs ()
+  open class CardRemovedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.SmartCards.CardRemovedEventArgs {
     
@@ -38,9 +38,9 @@ object SmartCards {
   }
   
   /** Represents info about a smart card. */
-  @JSGlobal("Windows.Devices.SmartCards.SmartCard")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.SmartCards.SmartCard")
   @js.native
-  abstract class SmartCard ()
+  open class SmartCard ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.SmartCards.SmartCard {
     
@@ -71,16 +71,16 @@ object SmartCards {
   }
   
   /** Represents a smart card authentication challenge/response operation. */
-  @JSGlobal("Windows.Devices.SmartCards.SmartCardChallengeContext")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.SmartCards.SmartCardChallengeContext")
   @js.native
-  abstract class SmartCardChallengeContext ()
+  open class SmartCardChallengeContext ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.SmartCards.SmartCardChallengeContext
   
   /** Represents a connection to a smart card. */
-  @JSGlobal("Windows.Devices.SmartCards.SmartCardConnection")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.SmartCards.SmartCardConnection")
   @js.native
-  abstract class SmartCardConnection ()
+  open class SmartCardConnection ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.SmartCards.SmartCardConnection {
     
@@ -148,9 +148,9 @@ object SmartCards {
   }
   
   /** Represents a wait time for a requested smart card personal identification number (PIN) reset. */
-  @JSGlobal("Windows.Devices.SmartCards.SmartCardPinResetDeferral")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.SmartCards.SmartCardPinResetDeferral")
   @js.native
-  abstract class SmartCardPinResetDeferral ()
+  open class SmartCardPinResetDeferral ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinResetDeferral {
     
@@ -160,9 +160,9 @@ object SmartCards {
   }
   
   /** Represents a smart card personal identification number (PIN) reset request. */
-  @JSGlobal("Windows.Devices.SmartCards.SmartCardPinResetRequest")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.SmartCards.SmartCardPinResetRequest")
   @js.native
-  abstract class SmartCardPinResetRequest ()
+  open class SmartCardPinResetRequest ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinResetRequest {
     
@@ -190,9 +190,9 @@ object SmartCards {
   }
   
   /** Represents info about, and operations for, configuring smart cards. */
-  @JSGlobal("Windows.Devices.SmartCards.SmartCardProvisioning")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.SmartCards.SmartCardProvisioning")
   @js.native
-  abstract class SmartCardProvisioning ()
+  open class SmartCardProvisioning ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.SmartCards.SmartCardProvisioning {
     
@@ -300,9 +300,9 @@ object SmartCards {
   }
   
   /** Represents info about a smart card reader. */
-  @JSGlobal("Windows.Devices.SmartCards.SmartCardReader")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.SmartCards.SmartCardReader")
   @js.native
-  abstract class SmartCardReader ()
+  open class SmartCardReader ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReader
   object SmartCardReader {

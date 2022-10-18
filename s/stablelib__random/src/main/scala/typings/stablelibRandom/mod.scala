@@ -1,7 +1,7 @@
 package typings.stablelibRandom
 
-import typings.stablelibRandom.sourceMod.RandomSource
-import typings.stablelibRandom.systemMod.SystemRandomSource
+import typings.stablelibRandom.libSourceMod.RandomSource
+import typings.stablelibRandom.libSourceSystemMod.SystemRandomSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

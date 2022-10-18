@@ -1,7 +1,7 @@
 package typings.selderee
 
-import typings.selderee.typesMod.BuilderFunction
-import typings.selderee.typesMod.MatcherFunction
+import typings.selderee.libTypesMod.BuilderFunction
+import typings.selderee.libTypesMod.MatcherFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ object mod {
   @JSImport("selderee", "DecisionTree")
   @js.native
   open class DecisionTree[V] protected ()
-    extends typings.selderee.decisionTreeMod.DecisionTree[V] {
+    extends typings.selderee.libDecisionTreeMod.DecisionTree[V] {
     /**
       * Create new DecisionTree object.
       *
@@ -26,7 +26,7 @@ object mod {
   @JSImport("selderee", "Picker")
   @js.native
   open class Picker[L, V] protected ()
-    extends typings.selderee.pickerMod.Picker[L, V] {
+    extends typings.selderee.libPickerMod.Picker[L, V] {
     /**
       * Create new Picker object.
       *

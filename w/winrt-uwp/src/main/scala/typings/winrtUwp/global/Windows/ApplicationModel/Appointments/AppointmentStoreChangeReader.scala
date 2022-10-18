@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables the calling app to read through the changes to appointments in its appointment store. */
-@JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStoreChangeReader")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStoreChangeReader")
 @js.native
-abstract class AppointmentStoreChangeReader ()
+open class AppointmentStoreChangeReader ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentStoreChangeReader {
   

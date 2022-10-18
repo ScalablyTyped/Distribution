@@ -1,7 +1,7 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.logicalMod.LogicalComposition
-import typings.vegaLite.srcPredicateMod.Predicate
+import typings.vegaLite.buildSrcLogicalMod.LogicalComposition
+import typings.vegaLite.buildSrcPredicateMod.Predicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

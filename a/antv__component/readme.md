@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__component
 
-Typings are for version 0.8.32
+Typings are for version 0.8.28
 
 ## Library description:
 The component module for antv

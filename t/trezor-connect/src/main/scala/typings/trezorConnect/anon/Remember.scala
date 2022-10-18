@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Remember extends StObject {
   
-  var device: typings.trezorConnect.deviceMod.Device
+  var device: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device
   
   var remember: Boolean
 }
 object Remember {
   
-  inline def apply(device: typings.trezorConnect.deviceMod.Device, remember: Boolean): Remember = {
+  inline def apply(device: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device, remember: Boolean): Remember = {
     val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], remember = remember.asInstanceOf[js.Any])
     __obj.asInstanceOf[Remember]
   }
   
   extension [Self <: Remember](x: Self) {
     
-    inline def setDevice(value: typings.trezorConnect.deviceMod.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     inline def setRemember(value: Boolean): Self = StObject.set(x, "remember", value.asInstanceOf[js.Any])
   }

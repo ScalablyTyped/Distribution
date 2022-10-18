@@ -1,6 +1,6 @@
 package typings.awsSdk.mod
 
-import typings.awsSdk.sharedIniFileCredentialsMod.SharedIniFileCredentialsOptions
+import typings.awsSdk.libCredentialsSharedIniFileCredentialsMod.SharedIniFileCredentialsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new SharedIniFileCredentials object.
   */
 open class SharedIniFileCredentials ()
-  extends typings.awsSdk.coreMod.SharedIniFileCredentials {
+  extends typings.awsSdk.libCoreMod.SharedIniFileCredentials {
   def this(options: SharedIniFileCredentialsOptions) = this()
 }

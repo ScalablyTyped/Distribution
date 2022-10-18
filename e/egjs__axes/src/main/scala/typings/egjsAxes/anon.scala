@@ -1,9 +1,9 @@
 package typings.egjsAxes
 
-import typings.egjsAxes.axesMod.AxesOption
-import typings.egjsAxes.axisManagerMod.Axis
-import typings.egjsAxes.eventManagerMod.EventManager
-import typings.egjsAxes.interruptManagerMod.InterruptManager
+import typings.egjsAxes.declarationAxesMod.AxesOption
+import typings.egjsAxes.declarationAxisManagerMod.Axis
+import typings.egjsAxes.declarationEventManagerMod.EventManager
+import typings.egjsAxes.declarationInterruptManagerMod.InterruptManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +12,9 @@ object anon {
   
   trait AnimationManager extends StObject {
     
-    var animationManager: typings.egjsAxes.animationManagerMod.AnimationManager
+    var animationManager: typings.egjsAxes.declarationAnimationAnimationManagerMod.AnimationManager
     
-    var axisManager: typings.egjsAxes.axisManagerMod.AxisManager
+    var axisManager: typings.egjsAxes.declarationAxisManagerMod.AxisManager
     
     var eventManager: EventManager
     
@@ -25,8 +25,8 @@ object anon {
   object AnimationManager {
     
     inline def apply(
-      animationManager: typings.egjsAxes.animationManagerMod.AnimationManager,
-      axisManager: typings.egjsAxes.axisManagerMod.AxisManager,
+      animationManager: typings.egjsAxes.declarationAnimationAnimationManagerMod.AnimationManager,
+      axisManager: typings.egjsAxes.declarationAxisManagerMod.AxisManager,
       eventManager: EventManager,
       interruptManager: InterruptManager,
       options: AxesOption
@@ -37,9 +37,9 @@ object anon {
     
     extension [Self <: AnimationManager](x: Self) {
       
-      inline def setAnimationManager(value: typings.egjsAxes.animationManagerMod.AnimationManager): Self = StObject.set(x, "animationManager", value.asInstanceOf[js.Any])
+      inline def setAnimationManager(value: typings.egjsAxes.declarationAnimationAnimationManagerMod.AnimationManager): Self = StObject.set(x, "animationManager", value.asInstanceOf[js.Any])
       
-      inline def setAxisManager(value: typings.egjsAxes.axisManagerMod.AxisManager): Self = StObject.set(x, "axisManager", value.asInstanceOf[js.Any])
+      inline def setAxisManager(value: typings.egjsAxes.declarationAxisManagerMod.AxisManager): Self = StObject.set(x, "axisManager", value.asInstanceOf[js.Any])
       
       inline def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
       
@@ -51,7 +51,7 @@ object anon {
   
   trait AxisManager extends StObject {
     
-    var axisManager: typings.egjsAxes.axisManagerMod.AxisManager
+    var axisManager: typings.egjsAxes.declarationAxisManagerMod.AxisManager
     
     var eventManager: EventManager
     
@@ -62,7 +62,7 @@ object anon {
   object AxisManager {
     
     inline def apply(
-      axisManager: typings.egjsAxes.axisManagerMod.AxisManager,
+      axisManager: typings.egjsAxes.declarationAxisManagerMod.AxisManager,
       eventManager: EventManager,
       interruptManager: InterruptManager,
       options: AxesOption
@@ -73,7 +73,7 @@ object anon {
     
     extension [Self <: AxisManager](x: Self) {
       
-      inline def setAxisManager(value: typings.egjsAxes.axisManagerMod.AxisManager): Self = StObject.set(x, "axisManager", value.asInstanceOf[js.Any])
+      inline def setAxisManager(value: typings.egjsAxes.declarationAxisManagerMod.AxisManager): Self = StObject.set(x, "axisManager", value.asInstanceOf[js.Any])
       
       inline def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
       

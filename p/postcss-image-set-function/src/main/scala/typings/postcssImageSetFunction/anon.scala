@@ -1,10 +1,10 @@
 package typings.postcssImageSetFunction
 
+import typings.postcss.libProcessorMod.default
 import typings.postcss.mod.AcceptedPlugin
 import typings.postcss.mod.Declaration
 import typings.postcss.mod.Postcss
 import typings.postcss.mod.Result
-import typings.postcss.processorMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

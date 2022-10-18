@@ -5,17 +5,13 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.reactRouter.componentsMod.IndexRouteProps
-import typings.reactRouter.componentsMod.LayoutRouteProps
-import typings.reactRouter.componentsMod.MemoryRouterProps
-import typings.reactRouter.componentsMod.PathRouteProps
-import typings.reactRouter.componentsMod.RouterProps
-import typings.remixRunRouter.historyMod.Location
-import typings.remixRunRouter.utilsMod.ParamParseKey
-import typings.remixRunRouter.utilsMod.Params
-import typings.remixRunRouter.utilsMod.PathMatch
-import typings.remixRunRouter.utilsMod.PathPattern
-import typings.std.Partial
+import typings.reactRouter.distLibComponentsMod.MemoryRouterProps
+import typings.reactRouter.distLibComponentsMod.RouteProps
+import typings.reactRouter.distLibComponentsMod.RouterProps
+import typings.remixRunRouter.distHistoryMod.Location
+import typings.remixRunRouter.distUtilsMod.ParamParseKey
+import typings.remixRunRouter.distUtilsMod.PathMatch
+import typings.remixRunRouter.distUtilsMod.PathPattern
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -89,9 +85,7 @@ object mod {
     def this(props: NativeRouterProps, context: Any) = this()
   }
   
-  inline def Route(_props: IndexRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def Route(_props: LayoutRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def Route(_props: PathRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Route(_props: RouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   inline def Router(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp: RouterProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
@@ -100,7 +94,7 @@ object mod {
   
   inline def useLocation(): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocation")().asInstanceOf[Location]
   
-  inline def useParams[ParamsOrKey /* <: String | (Record[String, js.UndefOr[String]]) */](): Partial[ParamsOrKey] | Params[ParamsOrKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[Partial[ParamsOrKey] | Params[ParamsOrKey]]
+  inline def useParams[ParamsOrKey /* <: String | (Record[String, js.UndefOr[String]]) */](): /* import warning: importer.ImportType#apply Failed type conversion: [ParamsOrKey] extends [string] ? @remix-run/router.@remix-run/router/dist/utils.Params<ParamsOrKey> : std.Partial<ParamsOrKey> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: [ParamsOrKey] extends [string] ? @remix-run/router.@remix-run/router/dist/utils.Params<ParamsOrKey> : std.Partial<ParamsOrKey> */ js.Any]
   
   trait BackButtonProps extends StObject {
     

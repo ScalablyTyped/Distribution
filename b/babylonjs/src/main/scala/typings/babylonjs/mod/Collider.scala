@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Collider")
 @js.native
 open class Collider ()
-  extends typings.babylonjs.legacyMod.Collider
+  extends typings.babylonjs.legacyLegacyMod.Collider
 /* static members */
 object Collider {
   

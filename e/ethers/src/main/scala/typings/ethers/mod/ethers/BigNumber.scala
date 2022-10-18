@@ -1,21 +1,23 @@
 package typings.ethers.mod.ethers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ethers", "ethers.BigNumber")
 @js.native
-class BigNumber protected ()
-  extends typings.ethers.ethersMod.BigNumber {
-  def this(constructorGuard: js.Any, hex: String) = this()
+open class BigNumber protected ()
+  extends typings.ethers.libEthersMod.BigNumber {
+  def this(constructorGuard: Any, hex: String) = this()
 }
 /* static members */
-@JSImport("ethers", "ethers.BigNumber")
-@js.native
-object BigNumber extends js.Object {
+object BigNumber {
   
-  def from(value: js.Any): typings.ethersprojectBignumber.bignumberMod.BigNumber = js.native
+  @JSImport("ethers", "ethers.BigNumber")
+  @js.native
+  val ^ : js.Any = js.native
   
-  def isBigNumber(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean = js.native
+  inline def from(value: Any): typings.ethersprojectBignumber.libBignumberMod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.libBignumberMod.BigNumber]
+  
+  inline def isBigNumber(value: Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean]
 }

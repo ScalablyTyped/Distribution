@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WarningOptions
   extends StObject
-     with typings.postcss.warningMod.WarningOptions {
+     with typings.postcss.libWarningMod.WarningOptions {
   
   var rule: js.UndefOr[String] = js.undefined
   

@@ -5,9 +5,9 @@ import typings.paypalPaypalJs.paypalPaypalJsStrings.MOBILE_APP
 import typings.paypalPaypalJs.paypalPaypalJsStrings.MOBILE_WEB
 import typings.paypalPaypalJs.paypalPaypalJsStrings.PAY_WITH_CRYPTO
 import typings.paypalPaypalJs.paypalPaypalJsStrings.WEB
-import typings.paypalPaypalJs.subscriptionsCommonsMod.Payment
-import typings.paypalPaypalJs.subscriptionsCommonsMod.ProductFlow
-import typings.paypalPaypalJs.subscriptionsCommonsMod.UserExperienceFlow
+import typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod.Payment
+import typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod.ProductFlow
+import typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod.UserExperienceFlow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

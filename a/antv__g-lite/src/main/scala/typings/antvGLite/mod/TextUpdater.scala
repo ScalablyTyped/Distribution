@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "TextUpdater")
 @js.native
 open class TextUpdater protected ()
-  extends typings.antvGLite.servicesMod.TextUpdater {
-  def this(textService: typings.antvGLite.textServiceMod.TextService) = this()
+  extends typings.antvGLite.distServicesMod.TextUpdater {
+  def this(textService: typings.antvGLite.distServicesTextServiceMod.TextService) = this()
 }

@@ -1,8 +1,8 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.boneMod.Bone
-import typings.babylonjs.mathVectorMod.Vector3
-import typings.babylonjs.transformNodeMod.TransformNode
+import typings.babylonjs.bonesBoneMod.Bone
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
+import typings.babylonjs.meshesTransformNodeMod.TransformNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientWebfontsStrings {
   
   @js.native
-  sealed trait Webfont extends StObject
-  inline def Webfont: Webfont = "Webfont".asInstanceOf[Webfont]
-  
-  @js.native
   sealed trait v1 extends StObject
   inline def v1: v1 = "v1".asInstanceOf[v1]
   

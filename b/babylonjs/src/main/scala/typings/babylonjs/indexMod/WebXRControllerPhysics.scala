@@ -14,8 +14,8 @@ open class WebXRControllerPhysics protected ()
     * @param _options options to create this feature with
     */
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
-    _options: typings.babylonjs.webXRControllerPhysicsMod.IWebXRControllerPhysicsOptions
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
+    _options: typings.babylonjs.xRFeaturesWebXRControllerPhysicsMod.IWebXRControllerPhysicsOptions
   ) = this()
 }
 /* static members */

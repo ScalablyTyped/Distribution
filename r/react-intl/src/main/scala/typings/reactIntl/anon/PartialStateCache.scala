@@ -1,8 +1,8 @@
 package typings.reactIntl.anon
 
 import typings.formatjsIntl.srcTypesMod.IntlCache
-import typings.reactIntl.typesMod.IntlConfig
-import typings.reactIntl.typesMod.IntlShape
+import typings.reactIntl.libSrcTypesMod.IntlConfig
+import typings.reactIntl.libSrcTypesMod.IntlShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

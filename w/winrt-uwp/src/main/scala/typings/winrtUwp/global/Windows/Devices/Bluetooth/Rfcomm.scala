@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Rfcomm {
   
   /** Represents an instance of a service on a Bluetooth BR device. */
-  @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService")
   @js.native
-  abstract class RfcommDeviceService ()
+  open class RfcommDeviceService ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService
   object RfcommDeviceService {
@@ -38,9 +38,9 @@ object Rfcomm {
   }
   
   /** Represents an RFCOMM service ID. */
-  @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId")
   @js.native
-  abstract class RfcommServiceId ()
+  open class RfcommServiceId ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId {
     
@@ -128,9 +128,9 @@ object Rfcomm {
   }
   
   /** Represents an instance of a local RFCOMM service. */
-  @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider")
   @js.native
-  abstract class RfcommServiceProvider ()
+  open class RfcommServiceProvider ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider
   object RfcommServiceProvider {

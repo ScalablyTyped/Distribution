@@ -42,6 +42,7 @@ object mod {
   
   type MessagingInternalComponentName = `messaging-internal`
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {

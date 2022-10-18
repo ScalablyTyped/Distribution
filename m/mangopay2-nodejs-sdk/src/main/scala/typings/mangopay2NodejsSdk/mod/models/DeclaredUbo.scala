@@ -1,7 +1,7 @@
 package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.PartialUboDeclarationData
-import typings.mangopay2NodejsSdk.uboDeclarationMod.uboDeclaration.UboDeclarationData
+import typings.mangopay2NodejsSdk.typingsModelsUboDeclarationMod.uboDeclaration.UboDeclarationData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,11 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.libTracesPieMod.PieFont
+import typings.plotlyJs.libTracesPieMod.PieHoverInfo
+import typings.plotlyJs.libTracesPieMod.PieInsideTextOrientation
+import typings.plotlyJs.libTracesPieMod.PieTextPosition
 import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.Datum
-import typings.plotlyJs.pieMod.PieFont
-import typings.plotlyJs.pieMod.PieHoverInfo
-import typings.plotlyJs.pieMod.PieInsideTextOrientation
-import typings.plotlyJs.pieMod.PieTextPosition
 import typings.plotlyJs.plotlyJsStrings.clockwise
 import typings.plotlyJs.plotlyJsStrings.counterclockwise
 import typings.plotlyJs.plotlyJsStrings.label

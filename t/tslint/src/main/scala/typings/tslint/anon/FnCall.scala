@@ -1,6 +1,6 @@
 package typings.tslint.anon
 
-import typings.tslint.configurationMod.IConfigurationLoadResult
+import typings.tslint.libConfigurationMod.IConfigurationLoadResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

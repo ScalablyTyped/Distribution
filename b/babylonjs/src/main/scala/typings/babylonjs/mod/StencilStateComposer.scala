@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "StencilStateComposer")
 @js.native
 open class StencilStateComposer ()
-  extends typings.babylonjs.legacyMod.StencilStateComposer {
+  extends typings.babylonjs.legacyLegacyMod.StencilStateComposer {
   def this(reset: Boolean) = this()
 }

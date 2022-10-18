@@ -1,6 +1,6 @@
 package typings.grommet.anon
 
-import typings.grommet.paragraphMod.ParagraphProps
+import typings.grommet.componentsParagraphMod.ParagraphProps
 import typings.grommet.utilsMod.PadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

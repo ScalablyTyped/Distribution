@@ -4,12 +4,12 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.reactScroll.anon.Smooth
-import typings.reactScroll.buttonMod.default
-import typings.reactScroll.scrollElementMod.ScrollElementProps
-import typings.reactScroll.scrollEventsMod.Events.ScrollEvent
-import typings.reactScroll.scrollLinkMod.ScrollLinkProps
-import typings.reactScroll.scrollSpyMod.ScrollSpy
-import typings.reactScroll.scrollerMod.Scroller
+import typings.reactScroll.modulesComponentsButtonMod.default
+import typings.reactScroll.modulesMixinsScrollElementMod.ScrollElementProps
+import typings.reactScroll.modulesMixinsScrollEventsMod.Events.ScrollEvent
+import typings.reactScroll.modulesMixinsScrollLinkMod.ScrollLinkProps
+import typings.reactScroll.modulesMixinsScrollSpyMod.ScrollSpy
+import typings.reactScroll.modulesMixinsScrollerMod.Scroller
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object modulesMod {
   @JSImport("react-scroll/modules", "Element")
   @js.native
   open class Element ()
-    extends typings.reactScroll.elementMod.default
+    extends typings.reactScroll.modulesComponentsElementMod.default
   
   object Events {
     
@@ -51,7 +51,7 @@ object modulesMod {
   @JSImport("react-scroll/modules", "Link")
   @js.native
   open class Link ()
-    extends typings.reactScroll.linkMod.default
+    extends typings.reactScroll.modulesComponentsLinkMod.default
   
   inline def ScrollElement[P](component: ComponentType[P]): ComponentClass[ScrollElementProps[P], ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("ScrollElement")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[ScrollElementProps[P], ComponentState]]
   

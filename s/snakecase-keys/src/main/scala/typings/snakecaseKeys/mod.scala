@@ -1,6 +1,5 @@
 package typings.snakecaseKeys
 
-import org.scalablytyped.runtime.TopLevel
 import typings.snakecaseKeys.snakecaseKeysBooleans.`true`
 import typings.snakecaseKeys.snakecaseKeysStrings._empty
 import typings.std.Record
@@ -71,7 +70,15 @@ object mod {
   @template S - Base path.
   @template Last - Additional path.
   */
-  type AppendPath[S /* <: String */, Last /* <: String */] = (/* template literal string: ${S}.${Last} */ String) | Last
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S extends '' ? Last : / * template literal string: ${S}.${Last} * / string
+    }}}
+    */
+  @js.native
+  trait AppendPath[S /* <: String */, Last /* <: String */] extends StObject
   
   // eslint-disable-next-line @typescript-eslint/ban-types
   type EmptyTuple = js.Array[Any]
@@ -81,12 +88,15 @@ object mod {
   @template List - List of values.
   @template Target - Target to search.
   */
-  /* Rewritten from type alias, can be one of: 
-    - scala.Boolean
-    - typings.snakecaseKeys.snakecaseKeysBooleans.`true`
-    - typings.snakecaseKeys.snakecaseKeysBooleans.`false`
-  */
-  type Includes[List /* <: js.Array[Any] */, Target] = (_Includes[List, Target]) | Boolean
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    List extends undefined ? false : List extends std.Readonly<snakecase-keys.snakecase-keys.EmptyTuple> ? false : List extends [infer First, ...infer Rest] ? First extends Target ? true : snakecase-keys.snakecase-keys.Includes<Rest, Target> : boolean
+    }}}
+    */
+  @js.native
+  trait Includes[List /* <: js.Array[Any] */, Target] extends StObject
   
   trait Options extends StObject {
     
@@ -133,18 +143,31 @@ object mod {
     }
   }
   
-  type SnakeCaseKeys[T /* <: (Record[String, Any]) | js.Array[Any] */, Deep /* <: Boolean */, Exclude /* <: js.Array[Any] */, Path /* <: String */] = (// Return anything else as-is.
-  T) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  // Handle objects.
-  {[ P in keyof T as [snakecase-keys.snakecase-keys.Includes<Exclude, P>] extends [true]? P : type-fest.type-fest/source/snake-case.SnakeCase<P> ]: [Deep] extends [true]? T[P] extends std.Record<string, any> | undefined? snakecase-keys.snakecase-keys.SnakeCaseKeys<T[P], Deep, Exclude, snakecase-keys.snakecase-keys.AppendPath<Path, P & string>> : T[P] : T[P]}
-    */ typings.snakecaseKeys.snakecaseKeysStrings.SnakeCaseKeys & TopLevel[Any])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<any> ? // Handle arrays or tuples.
+  {[ P in keyof T ]: T[P] extends std.Record<string, any> | std.Array<any>? snakecase-keys.snakecase-keys.SnakeCaseKeys<T[P], Deep, Exclude, ''> : T[P]} : T extends std.Record<string, any> ? // Handle objects.
+  {[ P in keyof T as [snakecase-keys.snakecase-keys.Includes<Exclude, P>] extends [true]? P : type-fest.type-fest/source/snake-case.SnakeCase<P> ]: [Deep] extends [true]? T[P] extends std.Record<string, any> | undefined? snakecase-keys.snakecase-keys.SnakeCaseKeys<T[P], Deep, Exclude, snakecase-keys.snakecase-keys.AppendPath<Path, P & string>> : T[P] : T[P]} : // Return anything else as-is.
+  T
+    }}}
+    */
+  @js.native
+  trait SnakeCaseKeys[T /* <: (Record[String, Any]) | js.Array[Any] */, Deep /* <: Boolean */, Exclude /* <: js.Array[Any] */, Path /* <: String */] extends StObject
   
   /**
   Return a default type if input type is nil.
   @template T - Input type.
   @template U - Default type.
   */
-  type WithDefault[T, U /* <: T */] = T | U
-  
-  trait _Includes[List /* <: js.Array[Any] */, Target] extends StObject
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends undefined | void | null ? U : T
+    }}}
+    */
+  @js.native
+  trait WithDefault[T, U /* <: T */] extends StObject
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-screens" : "3.17.0"
+      "react-native-screens" : "3.18.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-screens" : "3.17.0"
+      "react-native-screens" : "3.18.2"
     }
   ],
   "compile-devDependencies" : [

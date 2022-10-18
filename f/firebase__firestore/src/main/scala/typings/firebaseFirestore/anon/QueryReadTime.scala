@@ -1,13 +1,13 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.testUtilHelpersMod.TestSnapshotVersion
+import typings.firebaseFirestore.distLiteFirestoreTestUtilHelpersMod.TestSnapshotVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait QueryReadTime extends StObject {
   
-  var query: typings.firebaseFirestore.coreQueryMod.Query
+  var query: typings.firebaseFirestore.distLiteFirestoreSrcCoreQueryMod.Query
   
   var readTime: js.UndefOr[TestSnapshotVersion] = js.undefined
   
@@ -15,14 +15,14 @@ trait QueryReadTime extends StObject {
 }
 object QueryReadTime {
   
-  inline def apply(query: typings.firebaseFirestore.coreQueryMod.Query): QueryReadTime = {
+  inline def apply(query: typings.firebaseFirestore.distLiteFirestoreSrcCoreQueryMod.Query): QueryReadTime = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryReadTime]
   }
   
   extension [Self <: QueryReadTime](x: Self) {
     
-    inline def setQuery(value: typings.firebaseFirestore.coreQueryMod.Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: typings.firebaseFirestore.distLiteFirestoreSrcCoreQueryMod.Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setReadTime(value: TestSnapshotVersion): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     

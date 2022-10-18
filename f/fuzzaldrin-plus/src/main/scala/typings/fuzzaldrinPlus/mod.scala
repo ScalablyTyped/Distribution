@@ -39,7 +39,9 @@ object mod {
     extends StObject
        with IOptions {
     
-    var key: js.UndefOr[/* keyof T */ String] = js.undefined
+    var key: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? never : keyof T | undefined */ js.Any
+      ] = js.undefined
     
     var maxInners: js.UndefOr[Double] = js.undefined
     
@@ -54,7 +56,9 @@ object mod {
     
     extension [Self <: IFilterOptions[?], T](x: Self & IFilterOptions[T]) {
       
-      inline def setKey(value: /* keyof T */ String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? never : keyof T | undefined */ js.Any
+      ): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
@@ -74,7 +78,7 @@ object mod {
     
     var optCharRegEx: js.UndefOr[js.RegExp] = js.undefined
     
-    var pathSeparator: js.UndefOr[Slash | String] = js.undefined
+    var pathSeparator: js.UndefOr[Slash | (/* \ */ String)] = js.undefined
     
     var preparedQuery: js.UndefOr[Query] = js.undefined
     
@@ -101,7 +105,7 @@ object mod {
       
       inline def setOptCharRegExUndefined: Self = StObject.set(x, "optCharRegEx", js.undefined)
       
-      inline def setPathSeparator(value: Slash | String): Self = StObject.set(x, "pathSeparator", value.asInstanceOf[js.Any])
+      inline def setPathSeparator(value: Slash | (/* \ */ String)): Self = StObject.set(x, "pathSeparator", value.asInstanceOf[js.Any])
       
       inline def setPathSeparatorUndefined: Self = StObject.set(x, "pathSeparator", js.undefined)
       

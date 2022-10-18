@@ -2,34 +2,34 @@ package typings.konva
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.konva.animationMod.Animation
 import typings.konva.anon.A
 import typings.konva.anon.X
 import typings.konva.anon.XY
-import typings.konva.canvasMod.Canvas
-import typings.konva.imageMod.Image
-import typings.konva.imageMod.ImageConfig
 import typings.konva.konvaInts.`-1`
 import typings.konva.konvaInts.`1`
-import typings.konva.layerMod.LayerConfig
-import typings.konva.lineMod.LineConfig
-import typings.konva.nodeMod.Filter
-import typings.konva.nodeMod.Node
-import typings.konva.nodeMod.NodeConfig
-import typings.konva.pathMod.Path
-import typings.konva.pathMod.PathConfig
-import typings.konva.shapeMod.ShapeConfig
-import typings.konva.stageMod.StageConfig
-import typings.konva.textMod.TextConfig
-import typings.konva.textPathMod.TextPathConfig
-import typings.konva.transformerMod.TransformerConfig
-import typings.konva.tweenMod.Tween
-import typings.konva.tweenMod.TweenConfig
-import typings.konva.typesMod.AnimationFn
-import typings.konva.typesMod.IRect
-import typings.konva.typesMod.RGB
-import typings.konva.typesMod.RGBA
-import typings.konva.typesMod.Vector2d
+import typings.konva.libAnimationMod.Animation
+import typings.konva.libCanvasMod.Canvas
+import typings.konva.libLayerMod.LayerConfig
+import typings.konva.libNodeMod.Filter
+import typings.konva.libNodeMod.Node
+import typings.konva.libNodeMod.NodeConfig
+import typings.konva.libShapeMod.ShapeConfig
+import typings.konva.libShapesImageMod.Image
+import typings.konva.libShapesImageMod.ImageConfig
+import typings.konva.libShapesLineMod.LineConfig
+import typings.konva.libShapesPathMod.Path
+import typings.konva.libShapesPathMod.PathConfig
+import typings.konva.libShapesTextMod.TextConfig
+import typings.konva.libShapesTextPathMod.TextPathConfig
+import typings.konva.libShapesTransformerMod.TransformerConfig
+import typings.konva.libStageMod.StageConfig
+import typings.konva.libTweenMod.Tween
+import typings.konva.libTweenMod.TweenConfig
+import typings.konva.libTypesMod.AnimationFn
+import typings.konva.libTypesMod.IRect
+import typings.konva.libTypesMod.RGB
+import typings.konva.libTypesMod.RGBA
+import typings.konva.libTypesMod.Vector2d
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.ImageData
@@ -88,53 +88,53 @@ object mod {
     
     @JSImport("konva", "default.Arc")
     @js.native
-    val Arc: Instantiable0[typings.konva.arcMod.Arc] = js.native
+    val Arc: Instantiable0[typings.konva.libShapesArcMod.Arc] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Arc")
     @js.native
     open class ArcCls ()
-      extends typings.konva.arcMod.Arc
+      extends typings.konva.libShapesArcMod.Arc
     
     @JSImport("konva", "default.Arrow")
     @js.native
-    val Arrow: Instantiable0[typings.konva.arrowMod.Arrow] = js.native
+    val Arrow: Instantiable0[typings.konva.libShapesArrowMod.Arrow] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Arrow")
     @js.native
     open class ArrowCls ()
-      extends typings.konva.arrowMod.Arrow
+      extends typings.konva.libShapesArrowMod.Arrow
     
     @JSImport("konva", "default.Circle")
     @js.native
-    val Circle: Instantiable0[typings.konva.circleMod.Circle] = js.native
+    val Circle: Instantiable0[typings.konva.libShapesCircleMod.Circle] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Circle")
     @js.native
     open class CircleCls ()
-      extends typings.konva.circleMod.Circle
+      extends typings.konva.libShapesCircleMod.Circle
     
     @JSImport("konva", "default.Container")
     @js.native
-    val Container: Instantiable0[typings.konva.containerMod.Container[Node[NodeConfig]]] = js.native
+    val Container: Instantiable0[typings.konva.libContainerMod.Container[Node[NodeConfig]]] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Container")
     @js.native
     open class ContainerCls[ChildType /* <: Node[NodeConfig] */] ()
-      extends typings.konva.containerMod.Container[ChildType]
+      extends typings.konva.libContainerMod.Container[ChildType]
     
     @JSImport("konva", "default.Context")
     @js.native
-    val Context: Instantiable1[/* canvas */ Canvas, typings.konva.contextMod.Context] = js.native
+    val Context: Instantiable1[/* canvas */ Canvas, typings.konva.libContextMod.Context] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Context")
     @js.native
     open class ContextCls protected ()
-      extends typings.konva.contextMod.Context {
+      extends typings.konva.libContextMod.Context {
       def this(canvas: Canvas) = this()
     }
     
@@ -212,23 +212,23 @@ object mod {
     
     @JSImport("konva", "default.Ellipse")
     @js.native
-    val Ellipse: Instantiable0[typings.konva.ellipseMod.Ellipse] = js.native
+    val Ellipse: Instantiable0[typings.konva.libShapesEllipseMod.Ellipse] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Ellipse")
     @js.native
     open class EllipseCls ()
-      extends typings.konva.ellipseMod.Ellipse
+      extends typings.konva.libShapesEllipseMod.Ellipse
     
     @JSImport("konva", "default.FastLayer")
     @js.native
-    val FastLayer: Instantiable1[/* attrs */ Any, typings.konva.fastLayerMod.FastLayer] = js.native
+    val FastLayer: Instantiable1[/* attrs */ Any, typings.konva.libFastLayerMod.FastLayer] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.FastLayer")
     @js.native
     open class FastLayerCls protected ()
-      extends typings.konva.fastLayerMod.FastLayer {
+      extends typings.konva.libFastLayerMod.FastLayer {
       def this(attrs: Any) = this()
     }
     
@@ -356,13 +356,13 @@ object mod {
     
     @JSImport("konva", "default.Group")
     @js.native
-    val Group: Instantiable0[typings.konva.groupMod.Group] = js.native
+    val Group: Instantiable0[typings.konva.libGroupMod.Group] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Group")
     @js.native
     open class GroupCls ()
-      extends typings.konva.groupMod.Group
+      extends typings.konva.libGroupMod.Group
     
     object Image {
       
@@ -383,25 +383,25 @@ object mod {
     
     @JSImport("konva", "default.Label")
     @js.native
-    val Label: Instantiable1[/* config */ js.UndefOr[Any], typings.konva.labelMod.Label] = js.native
+    val Label: Instantiable1[/* config */ js.UndefOr[Any], typings.konva.libShapesLabelMod.Label] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Label")
     @js.native
     open class LabelCls ()
-      extends typings.konva.labelMod.Label {
+      extends typings.konva.libShapesLabelMod.Label {
       def this(config: Any) = this()
     }
     
     @JSImport("konva", "default.Layer")
     @js.native
-    val Layer: Instantiable1[/* config */ js.UndefOr[LayerConfig], typings.konva.layerMod.Layer] = js.native
+    val Layer: Instantiable1[/* config */ js.UndefOr[LayerConfig], typings.konva.libLayerMod.Layer] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Layer")
     @js.native
     open class LayerCls ()
-      extends typings.konva.layerMod.Layer {
+      extends typings.konva.libLayerMod.Layer {
       def this(config: LayerConfig) = this()
     }
     
@@ -409,14 +409,14 @@ object mod {
     @js.native
     val Line: Instantiable1[
         /* config */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam Config */ Any], 
-        typings.konva.lineMod.Line[LineConfig]
+        typings.konva.libShapesLineMod.Line[LineConfig]
       ] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Line")
     @js.native
     open class LineCls[Config /* <: LineConfig */] ()
-      extends typings.konva.lineMod.Line[Config] {
+      extends typings.konva.libShapesLineMod.Line[Config] {
       def this(config: /* import warning: RewrittenClass.unapply cls was tparam Config */ Any) = this()
     }
     
@@ -475,126 +475,129 @@ object mod {
     
     @JSImport("konva", "default.Rect")
     @js.native
-    val Rect: Instantiable0[typings.konva.rectMod.Rect] = js.native
+    val Rect: Instantiable0[typings.konva.libShapesRectMod.Rect] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Rect")
     @js.native
     open class RectCls ()
-      extends typings.konva.rectMod.Rect
+      extends typings.konva.libShapesRectMod.Rect
     
     @JSImport("konva", "default.RegularPolygon")
     @js.native
-    val RegularPolygon: Instantiable0[typings.konva.regularPolygonMod.RegularPolygon] = js.native
+    val RegularPolygon: Instantiable0[typings.konva.libShapesRegularPolygonMod.RegularPolygon] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.RegularPolygon")
     @js.native
     open class RegularPolygonCls ()
-      extends typings.konva.regularPolygonMod.RegularPolygon
+      extends typings.konva.libShapesRegularPolygonMod.RegularPolygon
     
     @JSImport("konva", "default.Ring")
     @js.native
-    val Ring: Instantiable0[typings.konva.ringMod.Ring] = js.native
+    val Ring: Instantiable0[typings.konva.libShapesRingMod.Ring] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Ring")
     @js.native
     open class RingCls ()
-      extends typings.konva.ringMod.Ring
+      extends typings.konva.libShapesRingMod.Ring
     
     @JSImport("konva", "default.Shape")
     @js.native
     val Shape: Instantiable1[
         /* config */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam Config */ Any], 
-        typings.konva.shapeMod.Shape[ShapeConfig]
+        typings.konva.libShapeMod.Shape[ShapeConfig]
       ] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Shape")
     @js.native
     open class ShapeCls[Config /* <: ShapeConfig */] ()
-      extends typings.konva.shapeMod.Shape[Config] {
+      extends typings.konva.libShapeMod.Shape[Config] {
       def this(config: /* import warning: RewrittenClass.unapply cls was tparam Config */ Any) = this()
     }
     
     @JSImport("konva", "default.Sprite")
     @js.native
-    val Sprite: Instantiable1[/* config */ Any, typings.konva.spriteMod.Sprite] = js.native
+    val Sprite: Instantiable1[/* config */ Any, typings.konva.libShapesSpriteMod.Sprite] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Sprite")
     @js.native
     open class SpriteCls protected ()
-      extends typings.konva.spriteMod.Sprite {
+      extends typings.konva.libShapesSpriteMod.Sprite {
       def this(config: Any) = this()
     }
     
     @JSImport("konva", "default.Stage")
     @js.native
-    val Stage: Instantiable1[/* config */ StageConfig, typings.konva.stageMod.Stage] = js.native
+    val Stage: Instantiable1[/* config */ StageConfig, typings.konva.libStageMod.Stage] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Stage")
     @js.native
     open class StageCls protected ()
-      extends typings.konva.stageMod.Stage {
+      extends typings.konva.libStageMod.Stage {
       def this(config: StageConfig) = this()
     }
     
     @JSImport("konva", "default.Star")
     @js.native
-    val Star: Instantiable0[typings.konva.starMod.Star] = js.native
+    val Star: Instantiable0[typings.konva.libShapesStarMod.Star] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Star")
     @js.native
     open class StarCls ()
-      extends typings.konva.starMod.Star
+      extends typings.konva.libShapesStarMod.Star
     
     @JSImport("konva", "default.Tag")
     @js.native
-    val Tag: Instantiable0[typings.konva.labelMod.Tag] = js.native
+    val Tag: Instantiable0[typings.konva.libShapesLabelMod.Tag] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Tag")
     @js.native
     open class TagCls ()
-      extends typings.konva.labelMod.Tag
+      extends typings.konva.libShapesLabelMod.Tag
     
     @JSImport("konva", "default.Text")
     @js.native
-    val Text: Instantiable1[/* config */ js.UndefOr[TextConfig], typings.konva.textMod.Text] = js.native
+    val Text: Instantiable1[/* config */ js.UndefOr[TextConfig], typings.konva.libShapesTextMod.Text] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Text")
     @js.native
     open class TextCls ()
-      extends typings.konva.textMod.Text {
+      extends typings.konva.libShapesTextMod.Text {
       def this(config: TextConfig) = this()
     }
     
     @JSImport("konva", "default.TextPath")
     @js.native
-    val TextPath: Instantiable1[/* config */ js.UndefOr[TextPathConfig], typings.konva.textPathMod.TextPath] = js.native
+    val TextPath: Instantiable1[
+        /* config */ js.UndefOr[TextPathConfig], 
+        typings.konva.libShapesTextPathMod.TextPath
+      ] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.TextPath")
     @js.native
     open class TextPathCls ()
-      extends typings.konva.textPathMod.TextPath {
+      extends typings.konva.libShapesTextPathMod.TextPath {
       def this(config: TextPathConfig) = this()
     }
     
     @JSImport("konva", "default.Transform")
     @js.native
-    val Transform: Instantiable1[/* m */ js.UndefOr[js.Array[Double]], typings.konva.utilMod.Transform] = js.native
+    val Transform: Instantiable1[/* m */ js.UndefOr[js.Array[Double]], typings.konva.libUtilMod.Transform] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Transform")
     @js.native
     open class TransformCls ()
-      extends typings.konva.utilMod.Transform {
+      extends typings.konva.libUtilMod.Transform {
       def this(m: js.Array[Double]) = this()
     }
     
@@ -602,14 +605,14 @@ object mod {
     @js.native
     val Transformer: Instantiable1[
         /* config */ js.UndefOr[TransformerConfig], 
-        typings.konva.transformerMod.Transformer
+        typings.konva.libShapesTransformerMod.Transformer
       ] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Transformer")
     @js.native
     open class TransformerCls ()
-      extends typings.konva.transformerMod.Transformer {
+      extends typings.konva.libShapesTransformerMod.Transformer {
       def this(config: TransformerConfig) = this()
     }
     
@@ -721,13 +724,13 @@ object mod {
     
     @JSImport("konva", "default.Wedge")
     @js.native
-    val Wedge: Instantiable0[typings.konva.wedgeMod.Wedge] = js.native
+    val Wedge: Instantiable0[typings.konva.libShapesWedgeMod.Wedge] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Wedge")
     @js.native
     open class WedgeCls ()
-      extends typings.konva.wedgeMod.Wedge
+      extends typings.konva.libShapesWedgeMod.Wedge
     
     @JSImport("konva", "default.angleDeg")
     @js.native
@@ -780,125 +783,125 @@ object mod {
     
     @JSImport("konva", "default.stages")
     @js.native
-    val stages: js.Array[typings.konva.stageMod.Stage] = js.native
+    val stages: js.Array[typings.konva.libStageMod.Stage] = js.native
   }
   
   object Konva {
     
-    type Animation = typings.konva.animationMod.Animation
+    type Animation = typings.konva.libAnimationMod.Animation
     
-    type Arc = typings.konva.arcMod.Arc
+    type Arc = typings.konva.libShapesArcMod.Arc
     
-    type ArcConfig = typings.konva.arcMod.ArcConfig
+    type ArcConfig = typings.konva.libShapesArcMod.ArcConfig
     
-    type Arrow = typings.konva.arrowMod.Arrow
+    type Arrow = typings.konva.libShapesArrowMod.Arrow
     
-    type ArrowConfig = typings.konva.arrowMod.ArrowConfig
+    type ArrowConfig = typings.konva.libShapesArrowMod.ArrowConfig
     
-    type Circle = typings.konva.circleMod.Circle
+    type Circle = typings.konva.libShapesCircleMod.Circle
     
-    type CircleConfig = typings.konva.circleMod.CircleConfig
+    type CircleConfig = typings.konva.libShapesCircleMod.CircleConfig
     
-    type Container = typings.konva.containerMod.Container[typings.konva.mod.Konva.Node]
+    type Container = typings.konva.libContainerMod.Container[typings.konva.mod.Konva.Node]
     
-    type ContainerConfig = typings.konva.containerMod.ContainerConfig
+    type ContainerConfig = typings.konva.libContainerMod.ContainerConfig
     
-    type Context = typings.konva.contextMod.Context
+    type Context = typings.konva.libContextMod.Context
     
-    type Ellipse = typings.konva.ellipseMod.Ellipse
+    type Ellipse = typings.konva.libShapesEllipseMod.Ellipse
     
-    type EllipseConfig = typings.konva.ellipseMod.EllipseConfig
+    type EllipseConfig = typings.konva.libShapesEllipseMod.EllipseConfig
     
-    type FastLayer = typings.konva.fastLayerMod.FastLayer
+    type FastLayer = typings.konva.libFastLayerMod.FastLayer
     
-    type Group = typings.konva.groupMod.Group
+    type Group = typings.konva.libGroupMod.Group
     
-    type GroupConfig = typings.konva.groupMod.GroupConfig
+    type GroupConfig = typings.konva.libGroupMod.GroupConfig
     
-    type Image = typings.konva.imageMod.Image
+    type Image = typings.konva.libShapesImageMod.Image
     
-    type ImageConfig = typings.konva.imageMod.ImageConfig
+    type ImageConfig = typings.konva.libShapesImageMod.ImageConfig
     
-    type KonvaEventListener[This, EventType] = typings.konva.nodeMod.KonvaEventListener[This, EventType]
+    type KonvaEventListener[This, EventType] = typings.konva.libNodeMod.KonvaEventListener[This, EventType]
     
-    type KonvaEventObject[EventType] = typings.konva.nodeMod.KonvaEventObject[EventType]
+    type KonvaEventObject[EventType] = typings.konva.libNodeMod.KonvaEventObject[EventType]
     
-    type KonvaPointerEvent = typings.konva.pointerEventsMod.KonvaPointerEvent
+    type KonvaPointerEvent = typings.konva.libPointerEventsMod.KonvaPointerEvent
     
-    type Label = typings.konva.labelMod.Label
+    type Label = typings.konva.libShapesLabelMod.Label
     
-    type LabelConfig = typings.konva.labelMod.LabelConfig
+    type LabelConfig = typings.konva.libShapesLabelMod.LabelConfig
     
-    type Layer = typings.konva.layerMod.Layer
+    type Layer = typings.konva.libLayerMod.Layer
     
-    type LayerConfig = typings.konva.layerMod.LayerConfig
+    type LayerConfig = typings.konva.libLayerMod.LayerConfig
     
-    type Line = typings.konva.lineMod.Line[typings.konva.lineMod.LineConfig]
+    type Line = typings.konva.libShapesLineMod.Line[typings.konva.libShapesLineMod.LineConfig]
     
-    type LineConfig = typings.konva.lineMod.LineConfig
+    type LineConfig = typings.konva.libShapesLineMod.LineConfig
     
-    type Node = typings.konva.nodeMod.Node[typings.konva.nodeMod.NodeConfig]
+    type Node = typings.konva.libNodeMod.Node[typings.konva.libNodeMod.NodeConfig]
     
-    type NodeConfig = typings.konva.nodeMod.NodeConfig
+    type NodeConfig = typings.konva.libNodeMod.NodeConfig
     
-    type Path = typings.konva.pathMod.Path
+    type Path = typings.konva.libShapesPathMod.Path
     
-    type PathConfig = typings.konva.pathMod.PathConfig
+    type PathConfig = typings.konva.libShapesPathMod.PathConfig
     
-    type Rect = typings.konva.rectMod.Rect
+    type Rect = typings.konva.libShapesRectMod.Rect
     
-    type RectConfig = typings.konva.rectMod.RectConfig
+    type RectConfig = typings.konva.libShapesRectMod.RectConfig
     
-    type RegularPolygon = typings.konva.regularPolygonMod.RegularPolygon
+    type RegularPolygon = typings.konva.libShapesRegularPolygonMod.RegularPolygon
     
-    type RegularPolygonConfig = typings.konva.regularPolygonMod.RegularPolygonConfig
+    type RegularPolygonConfig = typings.konva.libShapesRegularPolygonMod.RegularPolygonConfig
     
-    type Ring = typings.konva.ringMod.Ring
+    type Ring = typings.konva.libShapesRingMod.Ring
     
-    type RingConfig = typings.konva.ringMod.RingConfig
+    type RingConfig = typings.konva.libShapesRingMod.RingConfig
     
-    type Shape = typings.konva.shapeMod.Shape[typings.konva.shapeMod.ShapeConfig]
+    type Shape = typings.konva.libShapeMod.Shape[typings.konva.libShapeMod.ShapeConfig]
     
-    type ShapeConfig = typings.konva.shapeMod.ShapeConfig
+    type ShapeConfig = typings.konva.libShapeMod.ShapeConfig
     
-    type Sprite = typings.konva.spriteMod.Sprite
+    type Sprite = typings.konva.libShapesSpriteMod.Sprite
     
-    type SpriteConfig = typings.konva.spriteMod.SpriteConfig
+    type SpriteConfig = typings.konva.libShapesSpriteMod.SpriteConfig
     
-    type Stage = typings.konva.stageMod.Stage
+    type Stage = typings.konva.libStageMod.Stage
     
-    type StageConfig = typings.konva.stageMod.StageConfig
+    type StageConfig = typings.konva.libStageMod.StageConfig
     
-    type Star = typings.konva.starMod.Star
+    type Star = typings.konva.libShapesStarMod.Star
     
-    type StarConfig = typings.konva.starMod.StarConfig
+    type StarConfig = typings.konva.libShapesStarMod.StarConfig
     
-    type Tag = typings.konva.labelMod.Tag
+    type Tag = typings.konva.libShapesLabelMod.Tag
     
-    type TagConfig = typings.konva.labelMod.TagConfig
+    type TagConfig = typings.konva.libShapesLabelMod.TagConfig
     
-    type Text = typings.konva.textMod.Text
+    type Text = typings.konva.libShapesTextMod.Text
     
-    type TextConfig = typings.konva.textMod.TextConfig
+    type TextConfig = typings.konva.libShapesTextMod.TextConfig
     
-    type TextPath = typings.konva.textPathMod.TextPath
+    type TextPath = typings.konva.libShapesTextPathMod.TextPath
     
-    type TextPathConfig = typings.konva.textPathMod.TextPathConfig
+    type TextPathConfig = typings.konva.libShapesTextPathMod.TextPathConfig
     
-    type Transform = typings.konva.utilMod.Transform
+    type Transform = typings.konva.libUtilMod.Transform
     
-    type Transformer = typings.konva.transformerMod.Transformer
+    type Transformer = typings.konva.libShapesTransformerMod.Transformer
     
-    type TransformerConfig = typings.konva.transformerMod.TransformerConfig
+    type TransformerConfig = typings.konva.libShapesTransformerMod.TransformerConfig
     
-    type Tween = typings.konva.tweenMod.Tween
+    type Tween = typings.konva.libTweenMod.Tween
     
-    type TweenConfig = typings.konva.tweenMod.TweenConfig
+    type TweenConfig = typings.konva.libTweenMod.TweenConfig
     
-    type Vector2d = typings.konva.typesMod.Vector2d
+    type Vector2d = typings.konva.libTypesMod.Vector2d
     
-    type Wedge = typings.konva.wedgeMod.Wedge
+    type Wedge = typings.konva.libShapesWedgeMod.Wedge
     
-    type WedgeConfig = typings.konva.wedgeMod.WedgeConfig
+    type WedgeConfig = typings.konva.libShapesWedgeMod.WedgeConfig
   }
 }

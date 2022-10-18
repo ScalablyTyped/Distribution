@@ -1,16 +1,14 @@
 package typings.antd.anon
 
-import typings.react.mod.ReactNode
-import typings.std.HTMLDivElement
+import typings.rcTree.esInterfaceMod.DataNode
+import typings.rcTree.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `4` extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.undefined
-  
-  var ref: js.UndefOr[typings.react.mod.Ref[HTMLDivElement]] = js.undefined
+  var ref: js.UndefOr[typings.react.mod.Ref[default[DataNode]]] = js.undefined
 }
 object `4` {
   
@@ -21,13 +19,9 @@ object `4` {
   
   extension [Self <: `4`](x: Self) {
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setRef(value: typings.react.mod.Ref[default[DataNode]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-    
-    inline def setRef(value: typings.react.mod.Ref[HTMLDivElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-    
-    inline def setRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRefFunction1(value: /* instance */ default[DataNode] | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     inline def setRefNull: Self = StObject.set(x, "ref", null)
     

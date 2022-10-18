@@ -1,8 +1,8 @@
 package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.Disabled
-import typings.antdMobileRn.buttonIndexNativeMod.ButtonProps
-import typings.antdMobileRn.buttonIndexNativeMod.default
+import typings.antdMobileRn.libButtonIndexDotnativeMod.ButtonProps
+import typings.antdMobileRn.libButtonIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

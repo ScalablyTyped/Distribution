@@ -1,5 +1,6 @@
 package typings.puppeteerCore.anon
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.BufferEncodingOption
 import typings.node.fsMod.EncodingOption
@@ -13,47 +14,27 @@ trait Typeofrealpath extends StObject {
   
   def apply(
     path: PathLike,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* resolvedPath */ String, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     options: BufferEncodingOption,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* resolvedPath */ Buffer, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     options: EncodingOption,
-    callback: js.Function2[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      Buffer | (/* resolvedPath */ String), 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
   ): Unit = js.native
   
   def native(
     path: PathLike,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* resolvedPath */ String, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
   ): Unit = js.native
   def native(
     path: PathLike,
     options: BufferEncodingOption,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* resolvedPath */ Buffer, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
   ): Unit = js.native
   /**
     * Asynchronous [`realpath(3)`](http://man7.org/linux/man-pages/man3/realpath.3.html).
@@ -75,10 +56,6 @@ trait Typeofrealpath extends StObject {
   def native(
     path: PathLike,
     options: EncodingOption,
-    callback: js.Function2[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      Buffer | (/* resolvedPath */ String), 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
   ): Unit = js.native
 }

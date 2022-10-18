@@ -1,6 +1,6 @@
 package typings.pubnub.mod
 
-import typings.pubnub.anon.IdString
+import typings.pubnub.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +15,11 @@ trait UUIDMembershipObject[MembershipCustom /* <: ObjectCustom */, UUIDCustom /*
   
   var updated: String
   
-  var uuid: UUIDMetadataObject[UUIDCustom] | IdString
+  var uuid: UUIDMetadataObject[UUIDCustom] | Id
 }
 object UUIDMembershipObject {
   
-  inline def apply[MembershipCustom /* <: ObjectCustom */, UUIDCustom /* <: ObjectCustom */](eTag: String, updated: String, uuid: UUIDMetadataObject[UUIDCustom] | IdString): UUIDMembershipObject[MembershipCustom, UUIDCustom] = {
+  inline def apply[MembershipCustom /* <: ObjectCustom */, UUIDCustom /* <: ObjectCustom */](eTag: String, updated: String, uuid: UUIDMetadataObject[UUIDCustom] | Id): UUIDMembershipObject[MembershipCustom, UUIDCustom] = {
     val __obj = js.Dynamic.literal(eTag = eTag.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[UUIDMembershipObject[MembershipCustom, UUIDCustom]]
   }
@@ -36,6 +36,6 @@ object UUIDMembershipObject {
     
     inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    inline def setUuid(value: UUIDMetadataObject[UUIDCustom] | IdString): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: UUIDMetadataObject[UUIDCustom] | Id): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

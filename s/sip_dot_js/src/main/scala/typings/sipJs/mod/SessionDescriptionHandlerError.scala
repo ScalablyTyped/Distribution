@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "SessionDescriptionHandlerError")
 @js.native
 open class SessionDescriptionHandlerError ()
-  extends typings.sipJs.apiMod.SessionDescriptionHandlerError {
+  extends typings.sipJs.libApiMod.SessionDescriptionHandlerError {
   def this(message: String) = this()
 }

@@ -1,11 +1,11 @@
 package typings.atomically
 
 import typings.atomically.anon.ReadOptionsencodingstring
-import typings.atomically.typesMod.Callback
-import typings.atomically.typesMod.Data
-import typings.atomically.typesMod.Path
-import typings.atomically.typesMod.ReadOptions
-import typings.atomically.typesMod.WriteOptions
+import typings.atomically.distTypesMod.Callback
+import typings.atomically.distTypesMod.Data
+import typings.atomically.distTypesMod.Path
+import typings.atomically.distTypesMod.ReadOptions
+import typings.atomically.distTypesMod.WriteOptions
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

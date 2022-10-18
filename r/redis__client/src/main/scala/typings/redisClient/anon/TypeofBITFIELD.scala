@@ -1,6 +1,6 @@
 package typings.redisClient.anon
 
-import typings.redisClient.bitfieldMod.BitFieldOperations
+import typings.redisClient.distLibCommandsBitfieldMod.BitFieldOperations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

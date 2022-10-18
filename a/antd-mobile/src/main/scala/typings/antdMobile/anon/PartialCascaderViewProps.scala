@@ -40,9 +40,9 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.cascaderViewCascaderViewMod.CascaderOption
-import typings.antdMobile.cascaderViewCascaderViewMod.CascaderValue
-import typings.antdMobile.cascaderViewCascaderViewMod.CascaderValueExtend
+import typings.antdMobile.esComponentsCascaderViewCascaderViewMod.CascaderOption
+import typings.antdMobile.esComponentsCascaderViewCascaderViewMod.CascaderValue
+import typings.antdMobile.esComponentsCascaderViewCascaderViewMod.CascaderValueExtend
 import typings.react.mod.Booleanish
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject

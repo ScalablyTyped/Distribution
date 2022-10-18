@@ -1,6 +1,6 @@
 package typings.baseui
 
-import typings.baseui.columnAnchorMod.Options
+import typings.baseui.dataTableColumnAnchorMod.Options
 import typings.baseui.dataTableTypesMod.BatchAction
 import typings.baseui.dataTableTypesMod.ColumnOptions
 import typings.baseui.dataTableTypesMod.DataTableProps
@@ -21,9 +21,9 @@ object dataTableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def AnchorColumn(options: Options): typings.baseui.columnAnchorMod.AnchorColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("AnchorColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.columnAnchorMod.AnchorColumn]
+  inline def AnchorColumn(options: Options): typings.baseui.dataTableColumnAnchorMod.AnchorColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("AnchorColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.dataTableColumnAnchorMod.AnchorColumn]
   
-  inline def BooleanColumn(options: typings.baseui.columnBooleanMod.Options): typings.baseui.columnBooleanMod.BooleanColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("BooleanColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.columnBooleanMod.BooleanColumn]
+  inline def BooleanColumn(options: typings.baseui.dataTableColumnBooleanMod.Options): typings.baseui.dataTableColumnBooleanMod.BooleanColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("BooleanColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.dataTableColumnBooleanMod.BooleanColumn]
   
   /* Inlined std.Readonly<{ readonly ANCHOR :'ANCHOR',  readonly BOOLEAN :'BOOLEAN',  readonly CATEGORICAL :'CATEGORICAL',  readonly CUSTOM :'CUSTOM',  readonly DATETIME :'DATETIME',  readonly NUMERICAL :'NUMERICAL',  readonly ROW_INDEX :'ROW_INDEX',  readonly STRING :'STRING'}> */
   object COLUMNS {
@@ -61,9 +61,9 @@ object dataTableMod {
     val STRING: typings.baseui.baseuiStrings.STRING = js.native
   }
   
-  inline def CategoricalColumn(options: typings.baseui.columnCategoricalMod.Options): typings.baseui.columnCategoricalMod.CategoricalColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("CategoricalColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.columnCategoricalMod.CategoricalColumn]
+  inline def CategoricalColumn(options: typings.baseui.dataTableColumnCategoricalMod.Options): typings.baseui.dataTableColumnCategoricalMod.CategoricalColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("CategoricalColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.dataTableColumnCategoricalMod.CategoricalColumn]
   
-  inline def CustomColumn[Value, FilterParams](options: typings.baseui.columnCustomMod.Options[Value, FilterParams]): ColumnOptions[Value, FilterParams] = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomColumn")(options.asInstanceOf[js.Any]).asInstanceOf[ColumnOptions[Value, FilterParams]]
+  inline def CustomColumn[Value, FilterParams](options: typings.baseui.dataTableColumnCustomMod.Options[Value, FilterParams]): ColumnOptions[Value, FilterParams] = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomColumn")(options.asInstanceOf[js.Any]).asInstanceOf[ColumnOptions[Value, FilterParams]]
   
   /* Inlined std.Readonly<{ readonly RANGE_DATETIME :'RANGE_DATETIME',  readonly RANGE_DATE :'RANGE_DATE',  readonly RANGE_TIME :'RANGE_TIME',  readonly WEEKDAY :'WEEKDAY',  readonly MONTH :'MONTH',  readonly QUARTER :'QUARTER',  readonly HALF :'HALF',  readonly YEAR :'YEAR'}> */
   object DATETIME_OPERATIONS {
@@ -105,7 +105,7 @@ object dataTableMod {
     hasBatchActionsColumnsFiltersEmptyMessageLoadingLoadingMessageOnIncludedRowsChangeOnRowHighlightChangeOnSelectManyOnSelectNoneOnSelectOneOnSortResizableColumnWidthsAllRowsRowActionsRowHeightRowHighlightIndexControlledSelectedRowIdsSortIndexSortDirectionTextQueryControlRef: DataTableProps
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DataTable")(hasBatchActionsColumnsFiltersEmptyMessageLoadingLoadingMessageOnIncludedRowsChangeOnRowHighlightChangeOnSelectManyOnSelectNoneOnSelectOneOnSortResizableColumnWidthsAllRowsRowActionsRowHeightRowHighlightIndexControlledSelectedRowIdsSortIndexSortDirectionTextQueryControlRef.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def DatetimeColumn(options: typings.baseui.columnDatetimeMod.Options): typings.baseui.columnDatetimeMod.DatetimeColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("DatetimeColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.columnDatetimeMod.DatetimeColumn]
+  inline def DatetimeColumn(options: typings.baseui.dataTableColumnDatetimeMod.Options): typings.baseui.dataTableColumnDatetimeMod.DatetimeColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("DatetimeColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.dataTableColumnDatetimeMod.DatetimeColumn]
   
   /* Inlined std.Readonly<{ readonly DEFAULT :'DEFAULT',  readonly ACCOUNTING :'ACCOUNTING',  readonly PERCENTAGE :'PERCENTAGE'}> */
   object NUMERICAL_FORMATS {
@@ -123,9 +123,9 @@ object dataTableMod {
     val PERCENTAGE: typings.baseui.baseuiStrings.PERCENTAGE = js.native
   }
   
-  inline def NumericalColumn(options: typings.baseui.columnNumericalMod.Options): typings.baseui.columnNumericalMod.NumericalColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("NumericalColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.columnNumericalMod.NumericalColumn]
+  inline def NumericalColumn(options: typings.baseui.dataTableColumnNumericalMod.Options): typings.baseui.dataTableColumnNumericalMod.NumericalColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("NumericalColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.dataTableColumnNumericalMod.NumericalColumn]
   
-  inline def RowIndexColumn(): typings.baseui.columnRowIndexMod.RowIndexColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("RowIndexColumn")().asInstanceOf[typings.baseui.columnRowIndexMod.RowIndexColumn]
+  inline def RowIndexColumn(): typings.baseui.dataTableColumnRowIndexMod.RowIndexColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("RowIndexColumn")().asInstanceOf[typings.baseui.dataTableColumnRowIndexMod.RowIndexColumn]
   
   /* Inlined std.Readonly<{ readonly ASC :'ASC',  readonly DESC :'DESC'}> */
   object SORT_DIRECTIONS {
@@ -145,7 +145,7 @@ object dataTableMod {
   
   inline def StatefulDataTable(props: StatefulDataTableProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StatefulDataTable")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def StringColumn(options: typings.baseui.columnStringMod.Options): typings.baseui.columnStringMod.StringColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("StringColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.columnStringMod.StringColumn]
+  inline def StringColumn(options: typings.baseui.dataTableColumnStringMod.Options): typings.baseui.dataTableColumnStringMod.StringColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("StringColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.dataTableColumnStringMod.StringColumn]
   
   inline def UnstableDataTable(
     hasBatchActionsColumnsFiltersEmptyMessageLoadingLoadingMessageOnIncludedRowsChangeOnRowHighlightChangeOnSelectManyOnSelectNoneOnSelectOneOnSortResizableColumnWidthsAllRowsRowActionsRowHeightRowHighlightIndexControlledSelectedRowIdsSortIndexSortDirectionTextQueryControlRef: DataTableProps

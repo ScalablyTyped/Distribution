@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FaceAnalysis {
   
   /** Represents a face that was detected in a SoftwareBitmap or a VideoFrame . */
-  @JSGlobal("Windows.Media.FaceAnalysis.DetectedFace")
+  /* note: abstract class */ @JSGlobal("Windows.Media.FaceAnalysis.DetectedFace")
   @js.native
-  abstract class DetectedFace ()
+  open class DetectedFace ()
     extends StObject
        with typings.winrtUwp.Windows.Media.FaceAnalysis.DetectedFace {
     
@@ -26,9 +26,9 @@ object FaceAnalysis {
   }
   
   /** Detects faces in a SoftwareBitmap . */
-  @JSGlobal("Windows.Media.FaceAnalysis.FaceDetector")
+  /* note: abstract class */ @JSGlobal("Windows.Media.FaceAnalysis.FaceDetector")
   @js.native
-  abstract class FaceDetector ()
+  open class FaceDetector ()
     extends StObject
        with typings.winrtUwp.Windows.Media.FaceAnalysis.FaceDetector
   object FaceDetector {
@@ -68,9 +68,9 @@ object FaceAnalysis {
   }
   
   /** Detects faces in VideoFrame objects and tracks faces across subsequent video frames. */
-  @JSGlobal("Windows.Media.FaceAnalysis.FaceTracker")
+  /* note: abstract class */ @JSGlobal("Windows.Media.FaceAnalysis.FaceTracker")
   @js.native
-  abstract class FaceTracker ()
+  open class FaceTracker ()
     extends StObject
        with typings.winrtUwp.Windows.Media.FaceAnalysis.FaceTracker {
     

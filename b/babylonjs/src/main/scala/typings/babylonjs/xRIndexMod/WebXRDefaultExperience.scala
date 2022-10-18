@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXRDefaultExperience")
 @js.native
 /* private */ open class WebXRDefaultExperience ()
-  extends typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience
+  extends typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperience
 /* static members */
 object WebXRDefaultExperience {
   
@@ -22,6 +22,6 @@ object WebXRDefaultExperience {
     * @param options options for basic configuration
     * @returns resulting WebXRDefaultExperience
     */
-  inline def CreateAsync(scene: Scene): js.Promise[typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience]]
-  inline def CreateAsync(scene: Scene, options: typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperienceOptions): js.Promise[typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience]]
+  inline def CreateAsync(scene: Scene): js.Promise[typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperience] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperience]]
+  inline def CreateAsync(scene: Scene, options: typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperienceOptions): js.Promise[typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperience] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperience]]
 }

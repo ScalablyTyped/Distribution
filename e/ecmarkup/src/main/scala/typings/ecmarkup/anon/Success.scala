@@ -1,7 +1,7 @@
 package typings.ecmarkup.anon
 
-import typings.ecmarkup.collectNodesMod.CollectNodesReturnType
 import typings.ecmarkup.ecmarkupBooleans.`false`
+import typings.ecmarkup.libLintCollectNodesMod.CollectNodesReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

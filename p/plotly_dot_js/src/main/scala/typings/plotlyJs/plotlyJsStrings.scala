@@ -1,18 +1,18 @@
 package typings.plotlyJs
 
+import typings.plotlyJs.libTracesOhclMod.HoverInfo
+import typings.plotlyJs.libTracesOhclMod.XCalendar
+import typings.plotlyJs.libTracesPieMod.PieHoverInfo
+import typings.plotlyJs.libTracesPieMod.PieInsideTextOrientation
+import typings.plotlyJs.libTracesPieMod.PieTextPosition
 import typings.plotlyJs.mod.AxisName
 import typings.plotlyJs.mod.AxisType
 import typings.plotlyJs.mod.Calendar
+import typings.plotlyJs.mod.Dash
 import typings.plotlyJs.mod.ModeBarDefaultButtons
 import typings.plotlyJs.mod.PlotType
 import typings.plotlyJs.mod.XAxisName
 import typings.plotlyJs.mod.YAxisName
-import typings.plotlyJs.ohclMod.Dash
-import typings.plotlyJs.ohclMod.HoverInfo
-import typings.plotlyJs.ohclMod.XCalendar
-import typings.plotlyJs.pieMod.PieHoverInfo
-import typings.plotlyJs.pieMod.PieInsideTextOrientation
-import typings.plotlyJs.pieMod.PieTextPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -413,14 +413,14 @@ object plotlyJsStrings {
   sealed trait dash
     extends StObject
        with Dash
-       with typings.plotlyJs.mod.Dash
+       with typings.plotlyJs.libTracesOhclMod.Dash
   inline def dash: dash = "dash".asInstanceOf[dash]
   
   @js.native
   sealed trait dashdot
     extends StObject
        with Dash
-       with typings.plotlyJs.mod.Dash
+       with typings.plotlyJs.libTracesOhclMod.Dash
   inline def dashdot: dashdot = "dashdot".asInstanceOf[dashdot]
   
   @js.native
@@ -470,7 +470,7 @@ object plotlyJsStrings {
   sealed trait dot_
     extends StObject
        with Dash
-       with typings.plotlyJs.mod.Dash
+       with typings.plotlyJs.libTracesOhclMod.Dash
   inline def dot_ : dot_ = "dot".asInstanceOf[dot_]
   
   @js.native
@@ -959,14 +959,14 @@ object plotlyJsStrings {
   sealed trait longdash
     extends StObject
        with Dash
-       with typings.plotlyJs.mod.Dash
+       with typings.plotlyJs.libTracesOhclMod.Dash
   inline def longdash: longdash = "longdash".asInstanceOf[longdash]
   
   @js.native
   sealed trait longdashdot
     extends StObject
        with Dash
-       with typings.plotlyJs.mod.Dash
+       with typings.plotlyJs.libTracesOhclMod.Dash
   inline def longdashdot: longdashdot = "longdashdot".asInstanceOf[longdashdot]
   
   @js.native
@@ -1617,7 +1617,7 @@ object plotlyJsStrings {
   sealed trait solid
     extends StObject
        with Dash
-       with typings.plotlyJs.mod.Dash
+       with typings.plotlyJs.libTracesOhclMod.Dash
   inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native

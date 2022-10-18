@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.PartialNonIdealStateProps
-import typings.blueprintjsCore.nonIdealStateMod.NonIdealStateProps
+import typings.blueprintjsCore.libEsmComponentsNonIdealStateNonIdealStateMod.NonIdealStateProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "NonIdealState")
 @js.native
 open class NonIdealState protected ()
-  extends typings.blueprintjsCore.componentsMod.NonIdealState {
+  extends typings.blueprintjsCore.libEsmComponentsMod.NonIdealState {
   def this(props: NonIdealStateProps) = this()
   def this(props: NonIdealStateProps, context: Any) = this()
 }

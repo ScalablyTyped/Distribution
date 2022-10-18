@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "JSONReader")
 @js.native
 open class JSONReader protected ()
-  extends typings.guacamoleClient.jsonreaderMod.JSONReader {
+  extends typings.guacamoleClient.libJsonreaderMod.JSONReader {
   /**
     * @param stream The stream that JSON will be read from.
     */
-  def this(stream: typings.guacamoleClient.inputStreamMod.InputStream) = this()
+  def this(stream: typings.guacamoleClient.libInputStreamMod.InputStream) = this()
 }

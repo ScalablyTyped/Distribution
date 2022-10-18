@@ -1,7 +1,7 @@
 package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.Cols
-import typings.antdMobileRn.pickerViewIndexNativeMod.default
+import typings.antdMobileRn.libPickerViewIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.cheerio
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cheerio.libLoadMod.CheerioAPI
-import typings.cheerio.libOptionsMod.CheerioOptions
+import typings.cheerio.libEsmLoadMod.CheerioAPI
+import typings.cheerio.libEsmOptionsMod.CheerioOptions
 import typings.cheerio.libOptionsMod.InternalOptions
 import typings.domelementtype.mod.ElementType.Script
 import typings.domelementtype.mod.ElementType.Style
@@ -21,14 +21,14 @@ object libSlimMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("cheerio/lib/slim", "Cheerio")
+  /* note: abstract class */ @JSImport("cheerio/lib/slim", "Cheerio")
   @js.native
-  abstract class Cheerio[T] protected ()
-    extends typings.cheerio.cheerioMod.Cheerio[T] {
+  open class Cheerio[T] protected ()
+    extends typings.cheerio.libCheerioMod.Cheerio[T] {
     def this(elements: Unit, root: Null, options: InternalOptions) = this()
     def this(
       elements: Unit,
-      root: typings.cheerio.cheerioMod.Cheerio[typings.domhandler.mod.Document],
+      root: typings.cheerio.libCheerioMod.Cheerio[typings.domhandler.mod.Document],
       options: InternalOptions
     ) = this()
     def this(elements: ArrayLike[T], root: Null, options: InternalOptions) = this()
@@ -43,7 +43,7 @@ object libSlimMod {
       */
     def this(
       elements: ArrayLike[T],
-      root: typings.cheerio.cheerioMod.Cheerio[typings.domhandler.mod.Document],
+      root: typings.cheerio.libCheerioMod.Cheerio[typings.domhandler.mod.Document],
       options: InternalOptions
     ) = this()
   }
@@ -77,9 +77,9 @@ object libSlimMod {
     def this(name: String, attribs: StringDictionary[String], children: Unit, `type`: Tag) = this()
   }
   
-  @JSImport("cheerio/lib/slim", "Node")
+  /* note: abstract class */ @JSImport("cheerio/lib/slim", "Node")
   @js.native
-  abstract class Node ()
+  open class Node ()
     extends typings.cheerio.mod.Node
   
   inline def load(content: String): CheerioAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(content.asInstanceOf[js.Any]).asInstanceOf[CheerioAPI]

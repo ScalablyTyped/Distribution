@@ -1,6 +1,6 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
-import typings.awsSdkClientCognitoIdentity.lookupDeveloperIdentityCommandMod.LookupDeveloperIdentityCommandInput
+import typings.awsSdkClientCognitoIdentity.distTypesCommandsLookupDeveloperIdentityCommandMod.LookupDeveloperIdentityCommandInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "LookupDeveloperIdentityCommand")
 @js.native
 open class LookupDeveloperIdentityCommand protected ()
-  extends typings.awsSdkClientCognitoIdentity.commandsMod.LookupDeveloperIdentityCommand {
+  extends typings.awsSdkClientCognitoIdentity.distTypesCommandsMod.LookupDeveloperIdentityCommand {
   def this(input: LookupDeveloperIdentityCommandInput) = this()
 }

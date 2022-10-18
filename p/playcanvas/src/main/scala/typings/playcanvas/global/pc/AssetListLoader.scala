@@ -1,5 +1,6 @@
 package typings.playcanvas.global.pc
 
+import typings.playcanvas.mod.Asset_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,8 +38,5 @@ open class AssetListLoader protected ()
     *     new pc.Asset("texture2", "texture", { url: 'http://example.com/my/assets/here/texture2.png') })
     * ], pc.app.assets);
     */
-  def this(
-    assetList: js.Array[typings.playcanvas.mod.Asset_ | Double],
-    assetRegistry: typings.playcanvas.mod.AssetRegistry
-  ) = this()
+  def this(assetList: js.Array[Asset_ | Double], assetRegistry: typings.playcanvas.mod.AssetRegistry) = this()
 }

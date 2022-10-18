@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a new graph.
   */
-open class Graph[TNode /* <: typings.yuka.nodeMod.Node */, TEdge /* <: typings.yuka.edgeMod.Edge */] ()
+open class Graph[TNode /* <: typings.yuka.srcGraphCoreNodeMod.Node */, TEdge /* <: typings.yuka.srcGraphCoreEdgeMod.Edge */] ()
   extends typings.yuka.mod.Graph[TNode, TEdge]

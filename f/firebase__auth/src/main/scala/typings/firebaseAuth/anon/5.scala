@@ -1,6 +1,6 @@
 package typings.firebaseAuth.anon
 
-import typings.firebaseAuth.apiAuthenticationMfaMod.IdTokenMfaResponse
+import typings.firebaseAuth.distEsm2017SrcApiAuthenticationMfaMod.IdTokenMfaResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.weighted
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.weighted.weightedMod.RandomFunc
+import typings.weighted.libWeightedMod.RandomFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,5 +22,5 @@ object mod {
   
   @JSImport("weighted", "select")
   @js.native
-  val select: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof weighted */ Any = js.native
+  val select: js.Function2[/* obj */ StringDictionary[Double], /* rand */ js.UndefOr[RandomFunc], String] = js.native
 }

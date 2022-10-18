@@ -1,9 +1,9 @@
 package typings.blueprintjsTable.anon
 
-import typings.blueprintjsTable.cellTypesMod.FocusedCellCoordinates
-import typings.blueprintjsTable.dragTypesMod.ICoordinateData
-import typings.blueprintjsTable.esmRegionsMod.Region
-import typings.blueprintjsTable.selectableMod.ISelectedRegionTransform
+import typings.blueprintjsTable.libEsmCommonCellTypesMod.FocusedCellCoordinates
+import typings.blueprintjsTable.libEsmInteractionsDragTypesMod.ICoordinateData
+import typings.blueprintjsTable.libEsmInteractionsSelectableMod.ISelectedRegionTransform
+import typings.blueprintjsTable.libEsmRegionsMod.Region
 import typings.react.mod.ReactNode
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent

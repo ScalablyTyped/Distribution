@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.overflowSetTypesMod.IOverflowSetProps
+import typings.officeUiFabricReact.libComponentsOverflowSetOverflowSetDottypesMod.IOverflowSetProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object libOverflowSetMod {
   @JSImport("office-ui-fabric-react/lib/OverflowSet", "OverflowSetBase")
   @js.native
   open class OverflowSetBase protected ()
-    extends typings.officeUiFabricReact.overflowSetMod.OverflowSetBase {
+    extends typings.officeUiFabricReact.libComponentsOverflowSetMod.OverflowSetBase {
     def this(props: IOverflowSetProps) = this()
   }
 }

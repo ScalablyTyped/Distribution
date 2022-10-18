@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.GoogleError")
 @js.native
 open class GoogleError ()
-  extends typings.googleGax.fallbackMod.GoogleError
+  extends typings.googleGax.buildSrcFallbackMod.GoogleError
 /* static members */
 object GoogleError {
   
@@ -15,7 +15,7 @@ object GoogleError {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parseGRPCStatusDetails(err: typings.googleGax.googleErrorMod.GoogleError): typings.googleGax.googleErrorMod.GoogleError = ^.asInstanceOf[js.Dynamic].applyDynamic("parseGRPCStatusDetails")(err.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.googleErrorMod.GoogleError]
+  inline def parseGRPCStatusDetails(err: typings.googleGax.buildSrcGoogleErrorMod.GoogleError): typings.googleGax.buildSrcGoogleErrorMod.GoogleError = ^.asInstanceOf[js.Dynamic].applyDynamic("parseGRPCStatusDetails")(err.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.buildSrcGoogleErrorMod.GoogleError]
   
-  inline def parseHttpError(json: Any): typings.googleGax.googleErrorMod.GoogleError = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHttpError")(json.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.googleErrorMod.GoogleError]
+  inline def parseHttpError(json: Any): typings.googleGax.buildSrcGoogleErrorMod.GoogleError = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHttpError")(json.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.buildSrcGoogleErrorMod.GoogleError]
 }

@@ -6,17 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Uniques extends StObject {
   
+  /** @example 3542 */
   var count: Double
   
-  /** Format: date-time */
-  var timestamp: String
+  /** @example /github/hubot */
+  var path: String
   
+  /** @example github/hubot: A customizable life embetterment robot. */
+  var title: String
+  
+  /** @example 2225 */
   var uniques: Double
 }
 object Uniques {
   
-  inline def apply(count: Double, timestamp: String, uniques: Double): Uniques = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], uniques = uniques.asInstanceOf[js.Any])
+  inline def apply(count: Double, path: String, title: String, uniques: Double): Uniques = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], uniques = uniques.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uniques]
   }
   
@@ -24,7 +29,9 @@ object Uniques {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setUniques(value: Double): Self = StObject.set(x, "uniques", value.asInstanceOf[js.Any])
   }

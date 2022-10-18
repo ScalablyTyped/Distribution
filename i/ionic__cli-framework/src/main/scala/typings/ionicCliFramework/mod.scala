@@ -4,9 +4,6 @@ import typings.ionicCliFramework.anon.Argv
 import typings.ionicCliFramework.anon.CaseSensitive
 import typings.ionicCliFramework.anon.IncludeSeparated
 import typings.ionicCliFramework.anon.RequiredCommandMetadataCo
-import typings.ionicCliFramework.colorsMod.Colors
-import typings.ionicCliFramework.completionMod.CompletionFormatterDeps
-import typings.ionicCliFramework.configMod.BaseConfigOptions
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import typings.ionicCliFramework.definitionsMod.CommandMetadata
 import typings.ionicCliFramework.definitionsMod.CommandMetadataInput
@@ -19,15 +16,18 @@ import typings.ionicCliFramework.definitionsMod.INamespace
 import typings.ionicCliFramework.definitionsMod.ValidationError
 import typings.ionicCliFramework.definitionsMod.Validator
 import typings.ionicCliFramework.definitionsMod.Validators
-import typings.ionicCliFramework.executorMod.BaseExecutorDeps
-import typings.ionicCliFramework.executorMod.ExecutorOperations
-import typings.ionicCliFramework.helpMod.CommandHelpFormatterDeps
-import typings.ionicCliFramework.helpMod.CommandHelpSchema
-import typings.ionicCliFramework.helpMod.NamespaceHelpFormatterDeps
-import typings.ionicCliFramework.optionsMod.FormatOptionNameOptions
-import typings.ionicCliFramework.optionsMod.HydratedOptionSpec
-import typings.ionicCliFramework.optionsMod.OptionPredicate
-import typings.ionicCliFramework.optionsMod.UnparseArgsOptions
+import typings.ionicCliFramework.libColorsMod.Colors
+import typings.ionicCliFramework.libCompletionMod.CompletionFormatterDeps
+import typings.ionicCliFramework.libConfigMod.BaseConfigOptions
+import typings.ionicCliFramework.libExecutorMod.BaseExecutorDeps
+import typings.ionicCliFramework.libExecutorMod.ExecutorOperations
+import typings.ionicCliFramework.libHelpMod.CommandHelpFormatterDeps
+import typings.ionicCliFramework.libHelpMod.CommandHelpSchema
+import typings.ionicCliFramework.libHelpMod.NamespaceHelpFormatterDeps
+import typings.ionicCliFramework.libOptionsMod.FormatOptionNameOptions
+import typings.ionicCliFramework.libOptionsMod.HydratedOptionSpec
+import typings.ionicCliFramework.libOptionsMod.OptionPredicate
+import typings.ionicCliFramework.libOptionsMod.UnparseArgsOptions
 import typings.minimist.mod.Opts
 import typings.minimist.mod.ParsedArgs
 import typings.node.eventsMod.EventEmitterOptions
@@ -42,16 +42,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@ionic/cli-framework", "AbstractExecutor")
+  /* note: abstract class */ @JSImport("@ionic/cli-framework", "AbstractExecutor")
   @js.native
-  abstract class AbstractExecutor[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] ()
+  open class AbstractExecutor[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] ()
     extends typings.ionicCliFramework.libMod.AbstractExecutor[C, N, M, I, O] {
     def this(options: EventEmitterOptions) = this()
   }
   
-  @JSImport("@ionic/cli-framework", "BaseCommand")
+  /* note: abstract class */ @JSImport("@ionic/cli-framework", "BaseCommand")
   @js.native
-  abstract class BaseCommand[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
+  open class BaseCommand[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
     extends typings.ionicCliFramework.libMod.BaseCommand[C, N, M, I, O] {
     def this(namespace: N) = this()
   }
@@ -61,17 +61,17 @@ object mod {
   open class BaseCommandMap[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] ()
     extends typings.ionicCliFramework.libMod.BaseCommandMap[C, N, M, I, O]
   
-  @JSImport("@ionic/cli-framework", "BaseConfig")
+  /* note: abstract class */ @JSImport("@ionic/cli-framework", "BaseConfig")
   @js.native
-  abstract class BaseConfig[T /* <: js.Object */] protected ()
+  open class BaseConfig[T /* <: js.Object */] protected ()
     extends typings.ionicCliFramework.libMod.BaseConfig[T] {
     def this(p: String) = this()
     def this(p: String, hasSpacesPathPrefix: BaseConfigOptions) = this()
   }
   
-  @JSImport("@ionic/cli-framework", "BaseError")
+  /* note: abstract class */ @JSImport("@ionic/cli-framework", "BaseError")
   @js.native
-  abstract class BaseError protected ()
+  open class BaseError protected ()
     extends typings.ionicCliFramework.errorsMod.BaseError {
     def this(message: String) = this()
   }
@@ -83,9 +83,9 @@ object mod {
     def this(hasNamespaceStdoutStderrColors: BaseExecutorDeps[C, N, M, I, O]) = this()
   }
   
-  @JSImport("@ionic/cli-framework", "BaseNamespace")
+  /* note: abstract class */ @JSImport("@ionic/cli-framework", "BaseNamespace")
   @js.native
-  abstract class BaseNamespace[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] ()
+  open class BaseNamespace[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] ()
     extends typings.ionicCliFramework.libMod.BaseNamespace[C, N, M, I, O] {
     def this(parent: N) = this()
   }
@@ -95,16 +95,16 @@ object mod {
   open class BaseNamespaceMap[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] ()
     extends typings.ionicCliFramework.libMod.BaseNamespaceMap[C, N, M, I, O]
   
-  @JSImport("@ionic/cli-framework", "Command")
+  /* note: abstract class */ @JSImport("@ionic/cli-framework", "Command")
   @js.native
-  abstract class Command protected ()
+  open class Command protected ()
     extends typings.ionicCliFramework.libMod.Command {
-    def this(namespace: typings.ionicCliFramework.commandMod.Namespace) = this()
+    def this(namespace: typings.ionicCliFramework.libCommandMod.Namespace) = this()
   }
   
-  @JSImport("@ionic/cli-framework", "CommandHelpFormatter")
+  /* note: abstract class */ @JSImport("@ionic/cli-framework", "CommandHelpFormatter")
   @js.native
-  abstract class CommandHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
+  open class CommandHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
     extends typings.ionicCliFramework.libMod.CommandHelpFormatter[C, N, M, I, O] {
     def this(hasLocationCommandMetadataColors: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
   }
@@ -139,9 +139,9 @@ object mod {
     def this(hasLocationCommandMetadataColors: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
   }
   
-  @JSImport("@ionic/cli-framework", "CompletionFormatter")
+  /* note: abstract class */ @JSImport("@ionic/cli-framework", "CompletionFormatter")
   @js.native
-  abstract class CompletionFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
+  open class CompletionFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
     extends typings.ionicCliFramework.libMod.CompletionFormatter[C, N, M, I, O] {
     def this(hasNamespace: CompletionFormatterDeps[C, N, M, I, O]) = this()
   }
@@ -175,8 +175,8 @@ object mod {
   open class Executor protected ()
     extends typings.ionicCliFramework.libMod.Executor {
     def this(hasNamespaceStdoutStderrColors: BaseExecutorDeps[
-            typings.ionicCliFramework.commandMod.Command, 
-            typings.ionicCliFramework.commandMod.Namespace, 
+            typings.ionicCliFramework.libCommandMod.Command, 
+            typings.ionicCliFramework.libCommandMod.Namespace, 
             CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
             CommandMetadataInput, 
             CommandMetadataOption
@@ -187,9 +187,9 @@ object mod {
   @js.native
   val HELP_FLAGS: js.Array[String] = js.native
   
-  @JSImport("@ionic/cli-framework", "HelpFormatter")
+  /* note: abstract class */ @JSImport("@ionic/cli-framework", "HelpFormatter")
   @js.native
-  abstract class HelpFormatter protected ()
+  open class HelpFormatter protected ()
     extends typings.ionicCliFramework.libMod.HelpFormatter {
     def this(hasColors: typings.ionicCliFramework.anon.Colors) = this()
   }
@@ -212,16 +212,16 @@ object mod {
   @js.native
   val NO_COLORS: Colors = js.native
   
-  @JSImport("@ionic/cli-framework", "Namespace")
+  /* note: abstract class */ @JSImport("@ionic/cli-framework", "Namespace")
   @js.native
-  abstract class Namespace ()
+  open class Namespace ()
     extends typings.ionicCliFramework.libMod.Namespace {
-    def this(parent: typings.ionicCliFramework.commandMod.Namespace) = this()
+    def this(parent: typings.ionicCliFramework.libCommandMod.Namespace) = this()
   }
   
-  @JSImport("@ionic/cli-framework", "NamespaceHelpFormatter")
+  /* note: abstract class */ @JSImport("@ionic/cli-framework", "NamespaceHelpFormatter")
   @js.native
-  abstract class NamespaceHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
+  open class NamespaceHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
     extends typings.ionicCliFramework.libMod.NamespaceHelpFormatter[C, N, M, I, O] {
     def this(hasLocationNamespaceColors: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
   }

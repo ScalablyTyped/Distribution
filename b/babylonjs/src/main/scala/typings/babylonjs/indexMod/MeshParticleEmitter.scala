@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class MeshParticleEmitter ()
   extends typings.babylonjs.particlesIndexMod.MeshParticleEmitter {
-  def this(mesh: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh]) = this()
+  def this(mesh: Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh]) = this()
 }

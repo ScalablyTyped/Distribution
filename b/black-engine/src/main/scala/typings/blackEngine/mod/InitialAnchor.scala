@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "InitialAnchor")
 @js.native
 open class InitialAnchor protected ()
-  extends typings.blackEngine.initialAnchorMod.InitialAnchor {
-  def this(values: (Double | typings.blackEngine.vectorScatterBaseMod.VectorScatterBase)*) = this()
+  extends typings.blackEngine.particlesModsInitialAnchorMod.InitialAnchor {
+  def this(values: (Double | typings.blackEngine.scattersVectorScatterBaseMod.VectorScatterBase)*) = this()
 }

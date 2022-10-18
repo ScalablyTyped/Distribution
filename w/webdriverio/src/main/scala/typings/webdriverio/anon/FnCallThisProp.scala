@@ -1,6 +1,6 @@
 package typings.webdriverio.anon
 
-import typings.webdriverio.getLocationMod.Location
+import typings.webdriverio.buildCommandsElementGetLocationMod.Location
 import typings.webdriverio.webdriverioStrings.x
 import typings.webdriverio.webdriverioStrings.y
 import org.scalablytyped.runtime.StObject

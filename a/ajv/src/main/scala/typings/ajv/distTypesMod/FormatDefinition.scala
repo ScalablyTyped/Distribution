@@ -1,8 +1,6 @@
 package typings.ajv.distTypesMod
 
 import typings.ajv.ajvBooleans.`false`
-import typings.ajv.ajvStrings.number
-import typings.ajv.ajvStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +11,17 @@ trait FormatDefinition[T /* <: String | Double */] extends StObject {
   
   var compare: js.UndefOr[FormatCompare[T]] = js.undefined
   
-  var `type`: js.UndefOr[number | string] = js.undefined
+  var `type`: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? 'string' | undefined : 'number' */ js.Any
+  ] = js.undefined
   
-  var validate: FormatValidator[T] | String | js.RegExp
+  var validate: FormatValidator[T] | (/* import warning: importer.ImportType#apply Failed type conversion: T extends string ? string | std.RegExp : never */ js.Any)
 }
 object FormatDefinition {
   
-  inline def apply[T /* <: String | Double */](validate: FormatValidator[T] | String | js.RegExp): FormatDefinition[T] = {
+  inline def apply[T /* <: String | Double */](
+    validate: FormatValidator[T] | (/* import warning: importer.ImportType#apply Failed type conversion: T extends string ? string | std.RegExp : never */ js.Any)
+  ): FormatDefinition[T] = {
     val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatDefinition[T]]
   }
@@ -34,11 +36,15 @@ object FormatDefinition {
     
     inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
-    inline def setType(value: number | string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? 'string' | undefined : 'number' */ js.Any
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValidate(value: FormatValidator[T] | String | js.RegExp): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(
+      value: FormatValidator[T] | (/* import warning: importer.ImportType#apply Failed type conversion: T extends string ? string | std.RegExp : never */ js.Any)
+    ): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     inline def setValidateFunction1(value: T => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
   }

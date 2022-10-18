@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the value of a cell containing an #EXTERNAL! error.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait ExternalErrorCellValue
   extends StObject
@@ -25,8 +24,7 @@ trait ExternalErrorCellValue
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: js.UndefOr[error | Error] = js.undefined
   
@@ -36,8 +34,7 @@ trait ExternalErrorCellValue
     * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: js.UndefOr[NumbersignEXTERNALExclamationmark | String] = js.undefined
   
@@ -45,8 +42,7 @@ trait ExternalErrorCellValue
     * Represents the type of `ExternalErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var errorSubType: js.UndefOr[ExternalErrorCellValueSubType | Unknown_] = js.undefined
   
@@ -54,8 +50,7 @@ trait ExternalErrorCellValue
     * Represents the type of `ErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var errorType: js.UndefOr[external | External] = js.undefined
   
@@ -63,8 +58,7 @@ trait ExternalErrorCellValue
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: typings.officeJsPreview.Excel.CellValueType.error | Error
 }

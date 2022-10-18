@@ -1,5 +1,6 @@
 package typings.node.cryptoMod
 
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.Buffer
 import typings.node.nodeStrings.base64
 import typings.node.nodeStrings.base64url
@@ -65,8 +66,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param inputEncoding The `encoding` of the `otherPublicKey` string.
     * @param outputEncoding The `encoding` of the return value.
     */
-  def computeSecret(otherPublicKey: js.typedarray.ArrayBufferView): Buffer = js.native
-  def computeSecret(otherPublicKey: js.typedarray.ArrayBufferView, outputEncoding: BinaryToTextEncoding): String = js.native
+  def computeSecret(otherPublicKey: ArrayBufferView): Buffer = js.native
+  def computeSecret(otherPublicKey: ArrayBufferView, outputEncoding: BinaryToTextEncoding): String = js.native
   
   /**
     * Generates private and public EC Diffie-Hellman key values, and returns
@@ -122,7 +123,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @since v0.11.14
     * @param encoding The `encoding` of the `privateKey` string.
     */
-  def setPrivateKey(privateKey: js.typedarray.ArrayBufferView): Unit = js.native
+  def setPrivateKey(privateKey: ArrayBufferView): Unit = js.native
 }
 object ECDH {
   

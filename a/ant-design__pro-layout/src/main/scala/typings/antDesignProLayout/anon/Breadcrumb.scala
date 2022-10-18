@@ -1,6 +1,6 @@
 package typings.antDesignProLayout.anon
 
-import typings.antDesignProLayout.typingsMod.MenuDataItem
+import typings.antDesignProLayout.esTypingsMod.MenuDataItem
 import typings.std.Map
 import typings.std.Record
 import org.scalablytyped.runtime.StObject

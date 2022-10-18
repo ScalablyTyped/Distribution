@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class OffsetPursuitBehavior ()
   extends typings.yuka.mod.OffsetPursuitBehavior {
-  def this(leader: typings.yuka.vehicleMod.Vehicle) = this()
-  def this(leader: Unit, offset: typings.yuka.vector3Mod.Vector3) = this()
-  def this(leader: typings.yuka.vehicleMod.Vehicle, offset: typings.yuka.vector3Mod.Vector3) = this()
+  def this(leader: typings.yuka.srcSteeringVehicleMod.Vehicle) = this()
+  def this(leader: Unit, offset: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(leader: typings.yuka.srcSteeringVehicleMod.Vehicle, offset: typings.yuka.srcMathVector3Mod.Vector3) = this()
 }

@@ -1,7 +1,7 @@
 package typings.geolib.anon
 
-import typings.geolib.typesMod.GeolibAltitudeInputValue
-import typings.geolib.typesMod.GeolibInputAltitude
+import typings.geolib.esTypesMod.GeolibAltitudeInputValue
+import typings.geolib.esTypesMod.GeolibInputAltitude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,9 +1,9 @@
 package typings.tensorflowTfjs.mod
 
 import typings.tensorflowTfjsCore.distTypesMod.DataType
+import typings.tensorflowTfjsLayers.distEngineTopologyMod.Layer
+import typings.tensorflowTfjsLayers.distKerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.distTypesMod.Kwargs
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
-import typings.tensorflowTfjsLayers.topologyMod.Layer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,14 +29,14 @@ open class SymbolicTensor protected ()
     dtype: DataType,
     shape: Shape,
     sourceLayer: Layer,
-    inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
+    inputs: js.Array[typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor],
     callArgs: Kwargs
   ) = this()
   def this(
     dtype: DataType,
     shape: Shape,
     sourceLayer: Layer,
-    inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
+    inputs: js.Array[typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor],
     callArgs: Kwargs,
     name: String
   ) = this()
@@ -44,7 +44,7 @@ open class SymbolicTensor protected ()
     dtype: DataType,
     shape: Shape,
     sourceLayer: Layer,
-    inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
+    inputs: js.Array[typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor],
     callArgs: Kwargs,
     name: String,
     outputTensorIndex: Double
@@ -53,7 +53,7 @@ open class SymbolicTensor protected ()
     dtype: DataType,
     shape: Shape,
     sourceLayer: Layer,
-    inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
+    inputs: js.Array[typings.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor],
     callArgs: Kwargs,
     name: Unit,
     outputTensorIndex: Double

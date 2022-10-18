@@ -6,18 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Type extends StObject {
   
+  var bridgeId: String
+  
   var name: js.UndefOr[String] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
 }
 object Type {
   
-  inline def apply(): Type = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(bridgeId: String): Type = {
+    val __obj = js.Dynamic.literal(bridgeId = bridgeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
   
   extension [Self <: Type](x: Self) {
+    
+    inline def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

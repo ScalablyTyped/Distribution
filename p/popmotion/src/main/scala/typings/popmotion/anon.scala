@@ -1,8 +1,8 @@
 package typings.popmotion
 
-import typings.popmotion.typesMod.Animation
-import typings.popmotion.typesMod.KeyframeOptions
-import typings.popmotion.typesMod.SpringOptions
+import typings.popmotion.libAnimationsTypesMod.Animation
+import typings.popmotion.libAnimationsTypesMod.KeyframeOptions
+import typings.popmotion.libAnimationsTypesMod.SpringOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

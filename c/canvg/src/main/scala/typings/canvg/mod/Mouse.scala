@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "Mouse")
 @js.native
 open class Mouse protected ()
-  extends typings.canvg.mouseMod.Mouse {
-  def this(screen: typings.canvg.screenMod.Screen) = this()
+  extends typings.canvg.distMouseMod.Mouse {
+  def this(screen: typings.canvg.distScreenMod.Screen) = this()
 }

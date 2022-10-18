@@ -1,8 +1,8 @@
 package typings.sass
 
-import typings.sass.listMod._ListSeparator
 import typings.sass.typesOptionsMod.OutputStyle
 import typings.sass.typesOptionsMod.Syntax
+import typings.sass.typesValueListMod._ListSeparator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

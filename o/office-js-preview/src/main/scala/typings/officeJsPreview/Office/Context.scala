@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @remarks
   *
-  * **Hosts**: Excel, Outlook, PowerPoint, Project, Word
+  * **Applications**: Excel, Outlook, PowerPoint, Project, Word
   */
 trait Context extends StObject {
   
@@ -26,7 +26,7 @@ trait Context extends StObject {
     *
     * @remarks
     *
-    * **Hosts**: Excel, Word
+    * **Applications**: Excel, Word
     *
     * `commerceAllowed` is only supported in Office on iPad.
     *
@@ -41,18 +41,18 @@ trait Context extends StObject {
     *
     * @remarks
     *
-    * The `contentLanguage` value reflects the **Editing Language** setting specified with **File \> Options \> Language** in the Office host
+    * The `contentLanguage` value reflects the **Editing Language** setting specified with **File** \> **Options** \> **Language** in the Office
     * application.
     *
     * **Support details**
     *
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application.
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
+    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office application.
+    * An empty cell indicates that the Office application doesn't support this property.
     *
-    * For more information about Office host application and server requirements, see
+    * For more information about Office application and server requirements, see
     * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
     *
-    * *Supported hosts, by platform*
+    * *Supported applications, by platform*
     *  <table>
     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
@@ -68,7 +68,7 @@ trait Context extends StObject {
     * Gets information about the environment in which the add-in is running.
     * 
     * @remarks
-    * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5.  
+    * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5.
     * For all Mailbox requirement sets, you can use the 
     * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
     * property to get similar information.
@@ -76,26 +76,26 @@ trait Context extends StObject {
   var diagnostics: ContextInformation
   
   /**
-    * Gets the locale (language) specified by the user for the UI of the Office host application.
+    * Gets the locale (language) specified by the user for the UI of the Office application.
     *
     * @remarks
     *
     * The returned value is a string in the RFC 1766 Language tag format, such as en-US.
     *
-    * The `displayLanguage` value reflects the current **Display Language** setting specified with **File \> Options \> Language** in the Office
-    * host application.
+    * The `displayLanguage` value reflects the current **Display Language** setting specified with **File** \> **Options** \> **Language** in the Office
+    * application.
     *
     * When using in Outlook, the applicable modes are Compose or Read.
     *
     * **Support details**
     *
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application.
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
+    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office application.
+    * An empty cell indicates that the Office application doesn't support this property.
     *
-    * For more information about Office host application and server requirements, see
+    * For more information about Office application and server requirements, see
     * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
     *
-    * *Supported hosts, by platform*
+    * *Supported applications, by platform*
     *  <table>
     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
@@ -113,11 +113,11 @@ trait Context extends StObject {
   var document: Document
   
   /**
-    * Contains the Office application host in which the add-in is running.
+    * Contains the Office application in which the add-in is running.
     *
     * @remarks
     * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
-    * `Office.context.diagnostics` property to get the host starting with requirement set 1.5. For all
+    * `Office.context.diagnostics` property to get the application starting with requirement set 1.5. For all
     * Mailbox requirement sets, you can use the 
     * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
     * property to get similar information.
@@ -166,7 +166,7 @@ trait Context extends StObject {
   var platform: PlatformType
   
   /**
-    * Provides a method for determining what requirement sets are supported on the current host and platform.
+    * Provides a method for determining what requirement sets are supported on the current Office application and platform.
     */
   var requirements: RequirementSetSupport
   
@@ -174,7 +174,7 @@ trait Context extends StObject {
     * Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
     *
     * The `RoamingSettings` object lets you store and access data for a mail add-in that is stored in a user's mailbox, so it's available to
-    * that add-in when it is running from any host client application used to access that mailbox.
+    * that add-in when it is running from any client application used to access that mailbox.
     *
     * @remarks
     *
@@ -190,7 +190,7 @@ trait Context extends StObject {
     *
     * @remarks
     *
-    * **Hosts**: Excel, PowerPoint, Word
+    * **Applications**: Excel, PowerPoint, Word
     *
     * `touchEnabled` is only supported in Office on iPad.
     *

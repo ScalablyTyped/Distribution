@@ -12,10 +12,10 @@ object mod extends Shortcut {
   
   @JSImport("void-elements", JSImport.Namespace)
   @js.native
-  val ^ : Partial[Record[String, `true`]] = js.native
+  val ^ : js.Object & (Partial[Record[String, `true`]]) = js.native
   
-  type _To = Partial[Record[String, `true`]]
+  type _To = js.Object & (Partial[Record[String, `true`]])
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Partial[Record[String, `true`]] = ^
+  override def _to: js.Object & (Partial[Record[String, `true`]]) = ^
 }

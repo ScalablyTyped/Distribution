@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PowBlock")
 @js.native
 open class PowBlock protected ()
-  extends typings.babylonjs.legacyMod.PowBlock {
+  extends typings.babylonjs.legacyLegacyMod.PowBlock {
   /**
     * Creates a new PowBlock
     * @param name defines the block name

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.GenericTimeStamp")
 @js.native
 open class GenericTimeStamp ()
-  extends typings.xadesjs.typesXmlMod.GenericTimeStamp {
+  extends typings.xadesjs.buildTypesXmlMod.GenericTimeStamp {
   def this(properties: js.Object) = this()
 }

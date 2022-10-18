@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsDesktopMod.DesktopProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsDesktopMod.DesktopProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object desktopMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Desktop", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Desktop", JSImport.Default)
   @js.native
   val default: FC[DesktopProps] = js.native
   

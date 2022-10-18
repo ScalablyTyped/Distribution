@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ConstrainMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.detailsListTypesMod.ConstrainMode & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ConstrainMode & Double
+  ] = js.native
   
-  /* 1 */ val horizontalConstrained: typings.officeUiFabricReact.detailsListTypesMod.ConstrainMode.horizontalConstrained & Double = js.native
+  /* 1 */ val horizontalConstrained: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ConstrainMode.horizontalConstrained & Double = js.native
   
-  /* 0 */ val unconstrained: typings.officeUiFabricReact.detailsListTypesMod.ConstrainMode.unconstrained & Double = js.native
+  /* 0 */ val unconstrained: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ConstrainMode.unconstrained & Double = js.native
 }

@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @remarks
   * **Important**: In Outlook, this object is available from Mailbox requirement set 1.5. 
   * For all Mailbox requirement sets, you can use the 
-  * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
+  * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics}
   * property to get similar information.
   */
 trait ContextInformation extends StObject {
   
   /**
-    * Gets the Office application host in which the add-in is running.
+    * Gets the Office application in which the add-in is running.
     */
   var host: HostType
   

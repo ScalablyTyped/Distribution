@@ -1,7 +1,8 @@
 package typings.node
 
+import typings.node.NodeJS.TypedArray
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeStreamMod.Readable
+import typings.node.nodeColonstreamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ object v8Mod {
   @JSImport("v8", "DefaultDeserializer")
   @js.native
   open class DefaultDeserializer protected () extends Deserializer {
-    def this(data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) = this()
+    def this(data: TypedArray) = this()
   }
   
   /**
@@ -37,7 +38,7 @@ object v8Mod {
   @JSImport("v8", "Deserializer")
   @js.native
   open class Deserializer protected () extends StObject {
-    def this(data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) = this()
+    def this(data: TypedArray) = this()
     
     /**
       * Reads the underlying wire format version. Likely mostly to be useful to
@@ -130,9 +131,7 @@ object v8Mod {
       * will require a way to compute the length of the buffer.
       * For use inside of a custom `serializer._writeHostObject()`.
       */
-    def writeRawBytes(
-      buffer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any
-    ): Unit = js.native
+    def writeRawBytes(buffer: TypedArray): Unit = js.native
     
     /**
       * Write a raw 32-bit unsigned integer.
@@ -179,9 +178,7 @@ object v8Mod {
     * @since v8.0.0
     * @param buffer A buffer returned by {@link serialize}.
     */
-  inline def deserialize(
-    buffer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any
-  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def deserialize(buffer: TypedArray): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Returns an object with the following properties:

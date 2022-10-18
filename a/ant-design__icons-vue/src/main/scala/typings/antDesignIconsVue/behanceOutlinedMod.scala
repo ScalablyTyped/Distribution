@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsBehanceOutlinedMod.BehanceOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object behanceOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/BehanceOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/BehanceOutlined", JSImport.Default)
   @js.native
   val default: BehanceOutlinedIconType = js.native
-  
-  @js.native
-  trait BehanceOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_BehanceOutlinedIconType: String = js.native
-  }
   
   type _To = BehanceOutlinedIconType
   

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "BVGParser")
 @js.native
 open class BVGParser ()
-  extends typings.blackEngine.bvgparserMod.BVGParser
+  extends typings.blackEngine.parsersBvgparserMod.BVGParser

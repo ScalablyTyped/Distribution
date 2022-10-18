@@ -1,37 +1,33 @@
 package typings.fpTs.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.altMod.Alt3
-import typings.fpTs.altMod.Alt3C
-import typings.fpTs.applicativeMod.Applicative3
-import typings.fpTs.applicativeMod.Applicative3C
-import typings.fpTs.applyMod.Apply3
-import typings.fpTs.bifunctorMod.Bifunctor3
-import typings.fpTs.chainMod.Chain3
-import typings.fpTs.compactableMod.Compactable3C
-import typings.fpTs.eitherMod.Either_
-import typings.fpTs.filterableMod.Filterable3C
 import typings.fpTs.fpTsStrings.ReaderEither
-import typings.fpTs.fromEitherMod.FromEither3
-import typings.fpTs.fromReaderMod.FromReader3
-import typings.fpTs.functionMod.Lazy
-import typings.fpTs.functorMod.Functor3
-import typings.fpTs.monadMod.Monad3
-import typings.fpTs.monadMod.Monad3C
-import typings.fpTs.monadThrowMod.MonadThrow3
-import typings.fpTs.monadThrowMod.MonadThrow3C
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.naturalTransformationMod.NaturalTransformation13C
-import typings.fpTs.naturalTransformationMod.NaturalTransformation23
-import typings.fpTs.naturalTransformationMod.NaturalTransformation23R
-import typings.fpTs.optionMod.Option_
-import typings.fpTs.pointedMod.Pointed3
-import typings.fpTs.predicateMod.Predicate
-import typings.fpTs.readerEitherMod.ReaderEither_
-import typings.fpTs.readerMod.Reader_
-import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
-import typings.fpTs.refinementMod.Refinement
-import typings.fpTs.semigroupMod.Semigroup
+import typings.fpTs.libAltMod.Alt3
+import typings.fpTs.libAltMod.Alt3C
+import typings.fpTs.libApplicativeMod.Applicative3
+import typings.fpTs.libApplicativeMod.Applicative3C
+import typings.fpTs.libApplyMod.Apply3
+import typings.fpTs.libBifunctorMod.Bifunctor3
+import typings.fpTs.libChainMod.Chain3
+import typings.fpTs.libCompactableMod.Compactable3C
+import typings.fpTs.libEitherMod.Either_
+import typings.fpTs.libFilterableMod.Filterable3C
+import typings.fpTs.libFromEitherMod.FromEither3
+import typings.fpTs.libFromReaderMod.FromReader3
+import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctorMod.Functor3
+import typings.fpTs.libMonadMod.Monad3
+import typings.fpTs.libMonadMod.Monad3C
+import typings.fpTs.libMonadThrowMod.MonadThrow3
+import typings.fpTs.libMonadThrowMod.MonadThrow3C
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libOptionMod.Option_
+import typings.fpTs.libPointedMod.Pointed3
+import typings.fpTs.libPredicateMod.Predicate
+import typings.fpTs.libReaderEitherMod.ReaderEither_
+import typings.fpTs.libReaderMod.Reader_
+import typings.fpTs.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
+import typings.fpTs.libRefinementMod.Refinement
+import typings.fpTs.libSemigroupMod.Semigroup
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,7 +41,7 @@ object readerEither {
   
   @JSImport("fp-ts", "readerEither.Alt")
   @js.native
-  val Alt_ : Alt3[typings.fpTs.readerEitherMod.URI] = js.native
+  val Alt_ : Alt3[typings.fpTs.libReaderEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerEither.ApT")
   @js.native
@@ -53,19 +49,19 @@ object readerEither {
   
   @JSImport("fp-ts", "readerEither.Applicative")
   @js.native
-  val Applicative: Applicative3[typings.fpTs.readerEitherMod.URI] = js.native
+  val Applicative: Applicative3[typings.fpTs.libReaderEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerEither.Apply")
   @js.native
-  val Apply: Apply3[typings.fpTs.readerEitherMod.URI] = js.native
+  val Apply: Apply3[typings.fpTs.libReaderEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerEither.Bifunctor")
   @js.native
-  val Bifunctor: Bifunctor3[typings.fpTs.readerEitherMod.URI] = js.native
+  val Bifunctor: Bifunctor3[typings.fpTs.libReaderEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerEither.Chain")
   @js.native
-  val Chain_ : Chain3[typings.fpTs.readerEitherMod.URI] = js.native
+  val Chain_ : Chain3[typings.fpTs.libReaderEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerEither.Do")
   @js.native
@@ -73,27 +69,27 @@ object readerEither {
   
   @JSImport("fp-ts", "readerEither.FromEither")
   @js.native
-  val FromEither_ : FromEither3[typings.fpTs.readerEitherMod.URI] = js.native
+  val FromEither_ : FromEither3[typings.fpTs.libReaderEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerEither.FromReader")
   @js.native
-  val FromReader_ : FromReader3[typings.fpTs.readerEitherMod.URI] = js.native
+  val FromReader_ : FromReader3[typings.fpTs.libReaderEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerEither.Functor")
   @js.native
-  val Functor: Functor3[typings.fpTs.readerEitherMod.URI] = js.native
+  val Functor: Functor3[typings.fpTs.libReaderEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerEither.Monad")
   @js.native
-  val Monad: Monad3[typings.fpTs.readerEitherMod.URI] = js.native
+  val Monad: Monad3[typings.fpTs.libReaderEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerEither.MonadThrow")
   @js.native
-  val MonadThrow: MonadThrow3[typings.fpTs.readerEitherMod.URI] = js.native
+  val MonadThrow: MonadThrow3[typings.fpTs.libReaderEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerEither.Pointed")
   @js.native
-  val Pointed: Pointed3[typings.fpTs.readerEitherMod.URI] = js.native
+  val Pointed: Pointed3[typings.fpTs.libReaderEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerEither.URI")
   @js.native
@@ -120,18 +116,14 @@ object readerEither {
     ReaderEither_[
       R, 
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apS")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ ReaderEither_[R, E, A], 
     ReaderEither_[
       R, 
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -140,18 +132,14 @@ object readerEither {
     ReaderEither_[
       Any & R2, 
       Any | E2, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apSW & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apSW")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ ReaderEither_[Any, Any, A], 
     ReaderEither_[
       Any & R2, 
       Any | E2, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apSW & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -182,18 +170,14 @@ object readerEither {
     ReaderEither_[
       R, 
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* ma */ ReaderEither_[R, E, A], 
     ReaderEither_[
       R, 
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -202,18 +186,14 @@ object readerEither {
     ReaderEither_[
       Any, 
       Any, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindTo")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* fa */ ReaderEither_[Any, Any, Any], 
     ReaderEither_[
       Any, 
       Any, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ]]
   
@@ -222,18 +202,14 @@ object readerEither {
     ReaderEither_[
       Any & R2, 
       Any | E2, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bindW & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindW")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ ReaderEither_[Any, Any, A], 
     ReaderEither_[
       Any & R2, 
       Any | E2, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bindW & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -249,15 +225,9 @@ object readerEither {
   
   inline def chainFirstEitherKW[A, E2, B](f: js.Function1[/* a */ A, Either_[E2, B]]): js.Function1[/* ma */ ReaderEither_[Any, Any, A], ReaderEither_[Any, Any | E2, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstEitherKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderEither_[Any, Any, A], ReaderEither_[Any, Any | E2, A]]]
   
-  inline def chainFirstReaderK[A, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* ma */ ReaderEither_[R, scala.Nothing, A], ReaderEither_[R, scala.Nothing, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderEither_[R, scala.Nothing, A], ReaderEither_[R, scala.Nothing, A]]]
+  inline def chainFirstReaderK[A, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* ma */ ReaderEither_[R, Any, A], ReaderEither_[R, Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderEither_[R, Any, A], ReaderEither_[R, Any, A]]]
   
-  inline def chainFirstReaderKW[A, R1, B](f: js.Function1[/* a */ A, Reader_[R1, B]]): js.Function1[
-    /* ma */ ReaderEither_[Any, scala.Nothing, A], 
-    ReaderEither_[R1 & Any, scala.Nothing, A]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* ma */ ReaderEither_[Any, scala.Nothing, A], 
-    ReaderEither_[R1 & Any, scala.Nothing, A]
-  ]]
+  inline def chainFirstReaderKW[A, R1, B](f: js.Function1[/* a */ A, Reader_[R1, B]]): js.Function1[/* ma */ ReaderEither_[Any, Any, A], ReaderEither_[R1 & Any, Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderEither_[Any, Any, A], ReaderEither_[R1 & Any, Any, A]]]
   
   inline def chainFirstW[R2, E2, A, B](f: js.Function1[/* a */ A, ReaderEither_[R2, E2, B]]): js.Function1[/* ma */ ReaderEither_[Any, Any, A], ReaderEither_[Any & R2, Any | E2, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderEither_[Any, Any, A], ReaderEither_[Any & R2, Any | E2, A]]]
   
@@ -269,15 +239,9 @@ object readerEither {
     js.Function1[/* ma */ ReaderEither_[Any, E, Any], ReaderEither_[Any, E, Any]]
   ]]
   
-  inline def chainReaderK[A, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* ma */ ReaderEither_[R, scala.Nothing, A], ReaderEither_[R, scala.Nothing, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderEither_[R, scala.Nothing, A], ReaderEither_[R, scala.Nothing, B]]]
+  inline def chainReaderK[A, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* ma */ ReaderEither_[R, Any, A], ReaderEither_[R, Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderEither_[R, Any, A], ReaderEither_[R, Any, B]]]
   
-  inline def chainReaderKW[A, R2, B](f: js.Function1[/* a */ A, Reader_[R2, B]]): js.Function1[
-    /* ma */ ReaderEither_[Any, scala.Nothing, A], 
-    ReaderEither_[Any & R2, scala.Nothing, B]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* ma */ ReaderEither_[Any, scala.Nothing, A], 
-    ReaderEither_[Any & R2, scala.Nothing, B]
-  ]]
+  inline def chainReaderKW[A, R2, B](f: js.Function1[/* a */ A, Reader_[R2, B]]): js.Function1[/* ma */ ReaderEither_[Any, Any, A], ReaderEither_[Any & R2, Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderEither_[Any, Any, A], ReaderEither_[Any & R2, Any, B]]]
   
   inline def chainW[R2, E2, A, B](f: js.Function1[/* a */ A, ReaderEither_[R2, E2, B]]): js.Function1[/* ma */ ReaderEither_[Any, Any, A], ReaderEither_[Any & R2, Any | E2, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderEither_[Any, Any, A], ReaderEither_[Any & R2, Any | E2, B]]]
   
@@ -305,13 +269,11 @@ object readerEither {
   
   inline def foldW[E, R2, B, A, R3, C](onLeft: js.Function1[/* e */ E, Reader_[R2, B]], onRight: js.Function1[/* a */ A, Reader_[R3, C]]): js.Function1[/* ma */ ReaderEither_[Any, E, A], Reader_[Any & R2 & R3, B | C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldW")(onLeft.asInstanceOf[js.Any], onRight.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ ReaderEither_[Any, E, A], Reader_[Any & R2 & R3, B | C]]]
   
-  @JSImport("fp-ts", "readerEither.fromEither")
-  @js.native
-  val fromEither: NaturalTransformation23[typings.fpTs.eitherMod.URI, typings.fpTs.readerEitherMod.URI] = js.native
+  inline def fromEither[E, A, R](fa: Either_[E, A]): ReaderEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEither")(fa.asInstanceOf[js.Any]).asInstanceOf[ReaderEither_[R, E, A]]
   
   inline def fromEitherK[E, A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[/* a */ A, ReaderEither_[Any, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, ReaderEither_[Any, E, B]]]
   
-  inline def fromOption[E](onNone: Lazy[E]): NaturalTransformation13C[typings.fpTs.optionMod.URI, typings.fpTs.readerEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[NaturalTransformation13C[typings.fpTs.optionMod.URI, typings.fpTs.readerEitherMod.URI, E]]
+  inline def fromOption[E](onNone: Lazy[E]): js.Function1[/* fa */ Option_[Any], ReaderEither_[Any, E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[Any], ReaderEither_[Any, E, Any]]]
   
   inline def fromOptionK[E](onNone: Lazy[E]): js.Function1[
     /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
@@ -325,15 +287,13 @@ object readerEither {
   
   inline def fromPredicate_EAB[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, ReaderEither_[Any, E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, ReaderEither_[Any, E, B]]]
   
-  @JSImport("fp-ts", "readerEither.fromReader")
-  @js.native
-  val fromReader: NaturalTransformation23R[typings.fpTs.readerMod.URI, typings.fpTs.readerEitherMod.URI] = js.native
+  inline def fromReader[R, A, E](fa: Reader_[R, A]): ReaderEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReader")(fa.asInstanceOf[js.Any]).asInstanceOf[ReaderEither_[R, E, A]]
   
   inline def fromReaderK[A /* <: js.Array[Any] */, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* a */ A, ReaderEither_[R, scala.Nothing, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReaderK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, ReaderEither_[R, scala.Nothing, B]]]
   
-  inline def getAltReaderValidation[E](S: Semigroup[E]): Alt3C[typings.fpTs.readerEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAltReaderValidation")(S.asInstanceOf[js.Any]).asInstanceOf[Alt3C[typings.fpTs.readerEitherMod.URI, E]]
+  inline def getAltReaderValidation[E](S: Semigroup[E]): Alt3C[typings.fpTs.libReaderEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAltReaderValidation")(S.asInstanceOf[js.Any]).asInstanceOf[Alt3C[typings.fpTs.libReaderEitherMod.URI, E]]
   
-  inline def getApplicativeReaderValidation[E](S: Semigroup[E]): Applicative3C[typings.fpTs.readerEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicativeReaderValidation")(S.asInstanceOf[js.Any]).asInstanceOf[Applicative3C[typings.fpTs.readerEitherMod.URI, E]]
+  inline def getApplicativeReaderValidation[E](S: Semigroup[E]): Applicative3C[typings.fpTs.libReaderEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicativeReaderValidation")(S.asInstanceOf[js.Any]).asInstanceOf[Applicative3C[typings.fpTs.libReaderEitherMod.URI, E]]
   
   inline def getApplyMonoid[R, E, A](M: Monoid[A]): Monoid[ReaderEither_[R, E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplyMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[Monoid[ReaderEither_[R, E, A]]]
   
@@ -341,19 +301,35 @@ object readerEither {
   
   inline def getCompactable[E](M: Monoid[E]): Compactable3C[ReaderEither, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompactable")(M.asInstanceOf[js.Any]).asInstanceOf[Compactable3C[ReaderEither, E]]
   
-  inline def getFilterable[E](M: Monoid[E]): Filterable3C[typings.fpTs.readerEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterable")(M.asInstanceOf[js.Any]).asInstanceOf[Filterable3C[typings.fpTs.readerEitherMod.URI, E]]
+  inline def getFilterable[E](M: Monoid[E]): Filterable3C[typings.fpTs.libReaderEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterable")(M.asInstanceOf[js.Any]).asInstanceOf[Filterable3C[typings.fpTs.libReaderEitherMod.URI, E]]
   
   inline def getOrElse[E, R, A](onLeft: js.Function1[/* e */ E, Reader_[R, A]]): js.Function1[/* ma */ ReaderEither_[R, E, A], Reader_[R, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(onLeft.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderEither_[R, E, A], Reader_[R, A]]]
   
   inline def getOrElseW[R2, E, B](onLeft: js.Function1[/* e */ E, Reader_[R2, B]]): js.Function1[/* ma */ ReaderEither_[Any, E, Any], Reader_[Any & R2, Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElseW")(onLeft.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderEither_[Any, E, Any], Reader_[Any & R2, Any | B]]]
   
-  inline def getReaderValidation[E](SE: Semigroup[E]): (Monad3C[typings.fpTs.readerEitherMod.URI, E]) & Bifunctor3[typings.fpTs.readerEitherMod.URI] & (Alt3C[typings.fpTs.readerEitherMod.URI, E]) & (MonadThrow3C[typings.fpTs.readerEitherMod.URI, E]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderValidation")(SE.asInstanceOf[js.Any]).asInstanceOf[(Monad3C[typings.fpTs.readerEitherMod.URI, E]) & Bifunctor3[typings.fpTs.readerEitherMod.URI] & (Alt3C[typings.fpTs.readerEitherMod.URI, E]) & (MonadThrow3C[typings.fpTs.readerEitherMod.URI, E])]
+  inline def getReaderValidation[E](SE: Semigroup[E]): (Monad3C[typings.fpTs.libReaderEitherMod.URI, E]) & Bifunctor3[typings.fpTs.libReaderEitherMod.URI] & (Alt3C[typings.fpTs.libReaderEitherMod.URI, E]) & (MonadThrow3C[typings.fpTs.libReaderEitherMod.URI, E]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderValidation")(SE.asInstanceOf[js.Any]).asInstanceOf[(Monad3C[typings.fpTs.libReaderEitherMod.URI, E]) & Bifunctor3[typings.fpTs.libReaderEitherMod.URI] & (Alt3C[typings.fpTs.libReaderEitherMod.URI, E]) & (MonadThrow3C[typings.fpTs.libReaderEitherMod.URI, E])]
   
   inline def getSemigroup[R, E, A](S: Semigroup[A]): Semigroup[ReaderEither_[R, E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[Semigroup[ReaderEither_[R, E, A]]]
   
   inline def left[R, E, A](e: E): ReaderEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(e.asInstanceOf[js.Any]).asInstanceOf[ReaderEither_[R, E, A]]
   
   inline def leftReader[R, E, A](me: Reader_[R, E]): ReaderEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftReader")(me.asInstanceOf[js.Any]).asInstanceOf[ReaderEither_[R, E, A]]
+  
+  inline def let[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, B]): js.Function1[
+    /* fa */ ReaderEither_[Any, Any, A], 
+    ReaderEither_[
+      Any, 
+      Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("let")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* fa */ ReaderEither_[Any, Any, A], 
+    ReaderEither_[
+      Any, 
+      Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ]]
   
   inline def local[R2, R1](f: js.Function1[/* r2 */ R2, R1]): js.Function1[/* ma */ ReaderEither_[R1, Any, Any], ReaderEither_[R2, Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("local")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderEither_[R1, Any, Any], ReaderEither_[R2, Any, Any]]]
   
@@ -383,7 +359,7 @@ object readerEither {
   
   @JSImport("fp-ts", "readerEither.readerEither")
   @js.native
-  val readerEither: Monad3[typings.fpTs.readerEitherMod.URI] & Bifunctor3[typings.fpTs.readerEitherMod.URI] & Alt3[typings.fpTs.readerEitherMod.URI] & MonadThrow3[typings.fpTs.readerEitherMod.URI] = js.native
+  val readerEither: Monad3[typings.fpTs.libReaderEitherMod.URI] & Bifunctor3[typings.fpTs.libReaderEitherMod.URI] & Alt3[typings.fpTs.libReaderEitherMod.URI] & MonadThrow3[typings.fpTs.libReaderEitherMod.URI] = js.native
   
   inline def right[R, E, A](a: A): ReaderEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(a.asInstanceOf[js.Any]).asInstanceOf[ReaderEither_[R, E, A]]
   
@@ -410,9 +386,10 @@ object readerEither {
   
   inline def traverseReadonlyNonEmptyArrayWithIndex[A, R, E, B](f: js.Function2[/* index */ Double, /* a */ A, ReaderEither_[R, E, B]]): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], ReaderEither_[R, E, ReadonlyNonEmptyArray_[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseReadonlyNonEmptyArrayWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], ReaderEither_[R, E, ReadonlyNonEmptyArray_[B]]]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native
-    trait URItoKind[A] extends StObject
+    trait URItoKind3[R, E, A] extends StObject
   }
 }

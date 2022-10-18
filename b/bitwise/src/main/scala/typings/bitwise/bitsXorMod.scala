@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bitsXorMod {
   
-  @JSImport("bitwise/esm/bits/xor", JSImport.Namespace)
+  @JSImport("bitwise/bits/xor", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

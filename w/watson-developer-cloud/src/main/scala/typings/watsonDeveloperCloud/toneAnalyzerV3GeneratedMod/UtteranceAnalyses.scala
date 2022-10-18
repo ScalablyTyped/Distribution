@@ -24,7 +24,7 @@ object UtteranceAnalyses {
     
     inline def setUtterances_tone(value: js.Array[UtteranceAnalysis]): Self = StObject.set(x, "utterances_tone", value.asInstanceOf[js.Any])
     
-    inline def setUtterances_toneVarargs(value: UtteranceAnalysis*): Self = StObject.set(x, "utterances_tone", js.Array(value :_*))
+    inline def setUtterances_toneVarargs(value: UtteranceAnalysis*): Self = StObject.set(x, "utterances_tone", js.Array(value*))
     
     inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

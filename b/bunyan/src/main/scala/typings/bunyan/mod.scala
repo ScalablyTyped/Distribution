@@ -1,8 +1,8 @@
 package typings.bunyan
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -358,7 +358,7 @@ object mod {
     
     var src: js.UndefOr[Boolean] = js.undefined
     
-    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
     var streams: js.UndefOr[js.Array[Stream]] = js.undefined
   }
@@ -385,7 +385,7 @@ object mod {
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
@@ -498,7 +498,7 @@ object mod {
     
     var reemitErrorEvents: js.UndefOr[Boolean] = js.undefined
     
-    var stream: js.UndefOr[WritableStream[Any] | WriteFn] = js.undefined
+    var stream: js.UndefOr[WritableStream | WriteFn] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
   }
@@ -539,7 +539,7 @@ object mod {
       
       inline def setReemitErrorEventsUndefined: Self = StObject.set(x, "reemitErrorEvents", js.undefined)
       
-      inline def setStream(value: WritableStream[Any] | WriteFn): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream | WriteFn): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       

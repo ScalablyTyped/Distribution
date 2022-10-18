@@ -47,8 +47,6 @@ trait BluetoothDevice
   
   val name: js.UndefOr[String] = js.native
   
-  def unwatchAdvertisements(): Unit = js.native
-  
   def watchAdvertisements(): js.Promise[Unit] = js.native
   def watchAdvertisements(options: WatchAdvertisementsOptions): js.Promise[Unit] = js.native
   

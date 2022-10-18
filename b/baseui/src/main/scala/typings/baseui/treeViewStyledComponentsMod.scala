@@ -6,7 +6,7 @@ import typings.baseui.anon.IsLeafNode
 import typings.baseui.baseuiStrings.div
 import typings.baseui.baseuiStrings.li_
 import typings.baseui.baseuiStrings.ul
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__theme-light-extension
 
-Typings are for version 2.2.6
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Default Light Theme
@@ -10,10 +10,10 @@ JupyterLab - Default Light Theme
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/theme-light-extension |
 | Keywords           | - |
-| # releases         | 130 |
-| # dependents       | 3 |
-| # downloads        | 1539516 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 218152.33333333334 |
+| # stars            | 12379.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

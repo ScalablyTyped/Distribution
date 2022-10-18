@@ -1,6 +1,6 @@
 package typings.anydbSql.mod
 
-import typings.anydbSql.anon.RTRIM
+import typings.anydbSql.anon.LOWER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ trait AnydbSql
   
   def dialect(): String = js.native
   
-  var functions: RTRIM = js.native
+  var functions: LOWER = js.native
   
   def getPool(): AnyDBPool = js.native
   

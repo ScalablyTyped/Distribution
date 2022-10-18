@@ -1,10 +1,5 @@
 package typings.trezorConnect
 
-import typings.trezorConnect.accountMod.AccountInfo
-import typings.trezorConnect.accountMod.ComposeParams
-import typings.trezorConnect.accountMod.GetAccountInfo
-import typings.trezorConnect.accountMod.PrecomposeParams
-import typings.trezorConnect.accountMod.PrecomposedTransaction
 import typings.trezorConnect.anon.CustomCancelButton
 import typings.trezorConnect.anon.DeviceEventeventstring
 import typings.trezorConnect.anon.DeviceProgress
@@ -16,111 +11,116 @@ import typings.trezorConnect.anon.Permissions
 import typings.trezorConnect.anon.Progress
 import typings.trezorConnect.anon.Type
 import typings.trezorConnect.anon.manifestManifestPartialCo
-import typings.trezorConnect.binanceMod.BinanceAddress
-import typings.trezorConnect.binanceMod.BinanceGetAddress
-import typings.trezorConnect.binanceMod.BinanceGetPublicKey
-import typings.trezorConnect.binanceMod.BinancePublicKey
-import typings.trezorConnect.binanceMod.BinanceSignTransaction
-import typings.trezorConnect.bitcoinMod.Address
-import typings.trezorConnect.bitcoinMod.GetAddress
-import typings.trezorConnect.bitcoinMod.GetPublicKey
-import typings.trezorConnect.bitcoinMod.HDNodeResponse
-import typings.trezorConnect.bitcoinMod.PushTransaction
-import typings.trezorConnect.bitcoinMod.PushedTransaction
-import typings.trezorConnect.bitcoinMod.SignMessage
-import typings.trezorConnect.bitcoinMod.SignTransaction
-import typings.trezorConnect.bitcoinMod.SignedTransaction
-import typings.trezorConnect.bitcoinMod.VerifyMessage
-import typings.trezorConnect.blockchainMod.BlockchainAccountBalanceHistory
-import typings.trezorConnect.blockchainMod.BlockchainDisconnect
-import typings.trezorConnect.blockchainMod.BlockchainDisconnected
-import typings.trezorConnect.blockchainMod.BlockchainEstimateFee
-import typings.trezorConnect.blockchainMod.BlockchainEstimatedFee
-import typings.trezorConnect.blockchainMod.BlockchainEvent
-import typings.trezorConnect.blockchainMod.BlockchainFiatRatesForTimestamps
-import typings.trezorConnect.blockchainMod.BlockchainGetAccountBalanceHistory
-import typings.trezorConnect.blockchainMod.BlockchainGetCurrentFiatRates
-import typings.trezorConnect.blockchainMod.BlockchainGetFiatRatesForTimestamps
-import typings.trezorConnect.blockchainMod.BlockchainGetTransactions
-import typings.trezorConnect.blockchainMod.BlockchainSetCustomBackend
-import typings.trezorConnect.blockchainMod.BlockchainSubscribe
-import typings.trezorConnect.blockchainMod.BlockchainSubscribeFiatRates
-import typings.trezorConnect.blockchainMod.BlockchainSubscribed
-import typings.trezorConnect.blockchainMod.BlockchainTimestampedFiatRates
-import typings.trezorConnect.blockchainMod.BlockchainTransactions
-import typings.trezorConnect.cardanoMod.CardanoAddress
-import typings.trezorConnect.cardanoMod.CardanoGetAddress
-import typings.trezorConnect.cardanoMod.CardanoGetNativeScriptHash
-import typings.trezorConnect.cardanoMod.CardanoGetPublicKey
-import typings.trezorConnect.cardanoMod.CardanoNativeScriptHash
-import typings.trezorConnect.cardanoMod.CardanoPublicKey
-import typings.trezorConnect.cardanoMod.CardanoSignTransaction
-import typings.trezorConnect.cardanoMod.CardanoSignedTxData
-import typings.trezorConnect.coinInfoMod.CoinInfo
-import typings.trezorConnect.coinInfoMod.GetCoinInfo
-import typings.trezorConnect.deviceMod.Device
-import typings.trezorConnect.deviceMod.DeviceStateResponse
-import typings.trezorConnect.eosMod.EosGetPublicKey
-import typings.trezorConnect.eosMod.EosPublicKey
-import typings.trezorConnect.eosMod.EosSignTransaction
-import typings.trezorConnect.ethereumMod.EthereumAddress
-import typings.trezorConnect.ethereumMod.EthereumGetAddress
-import typings.trezorConnect.ethereumMod.EthereumGetPublicKey
-import typings.trezorConnect.ethereumMod.EthereumSignMessage
-import typings.trezorConnect.ethereumMod.EthereumSignTransaction
-import typings.trezorConnect.ethereumMod.EthereumSignTypedData
-import typings.trezorConnect.ethereumMod.EthereumSignTypedDataTypes
-import typings.trezorConnect.ethereumMod.EthereumSignTypedHashAndData
-import typings.trezorConnect.ethereumMod.EthereumSignedTx
-import typings.trezorConnect.ethereumMod.EthereumVerifyMessage
-import typings.trezorConnect.eventsMod.ButtonRequestData
-import typings.trezorConnect.eventsMod.TransportEvent
-import typings.trezorConnect.eventsMod.UiEvent
-import typings.trezorConnect.eventsMod.UiResponse
-import typings.trezorConnect.managementMod.ApplyFlags
-import typings.trezorConnect.managementMod.ChangePin
-import typings.trezorConnect.managementMod.FirmwareUpdate
-import typings.trezorConnect.managementMod.FirmwareUpdateBinary
-import typings.trezorConnect.managementMod.RecoveryDevice
-import typings.trezorConnect.managementMod.ResetDevice
-import typings.trezorConnect.miscMod.CipherKeyValue
-import typings.trezorConnect.miscMod.CipheredValue
-import typings.trezorConnect.miscMod.CustomMessage
-import typings.trezorConnect.miscMod.Login
-import typings.trezorConnect.miscMod.LoginChallenge
-import typings.trezorConnect.miscMod.RequestLoginAsync
-import typings.trezorConnect.miscMod.SetProxy
-import typings.trezorConnect.nemMod.NEMAddress
-import typings.trezorConnect.nemMod.NEMGetAddress
-import typings.trezorConnect.nemMod.NEMSignTransaction
-import typings.trezorConnect.paramsMod.Bundle
-import typings.trezorConnect.paramsMod.CommonParams
-import typings.trezorConnect.paramsMod.ConnectSettings
-import typings.trezorConnect.paramsMod.DefaultMessage
-import typings.trezorConnect.paramsMod.Manifest
-import typings.trezorConnect.paramsMod.Success
-import typings.trezorConnect.paramsMod.Unsuccessful
-import typings.trezorConnect.protobufMod.ApplySettings
-import typings.trezorConnect.protobufMod.BinanceSignedTx
-import typings.trezorConnect.protobufMod.EosSignedTx
-import typings.trezorConnect.protobufMod.EthereumTypedDataSignature
-import typings.trezorConnect.protobufMod.Features
-import typings.trezorConnect.protobufMod.MessageSignature
-import typings.trezorConnect.protobufMod.NEMSignedTx
-import typings.trezorConnect.protobufMod.TezosSignedTx
-import typings.trezorConnect.rippleMod.RippleAddress
-import typings.trezorConnect.rippleMod.RippleGetAddress
-import typings.trezorConnect.rippleMod.RippleSignTransaction
-import typings.trezorConnect.rippleMod.RippleSignedTx
-import typings.trezorConnect.stellarMod.StellarAddress
-import typings.trezorConnect.stellarMod.StellarGetAddress
-import typings.trezorConnect.stellarMod.StellarSignTransaction
-import typings.trezorConnect.stellarMod.StellarSignedTx
-import typings.trezorConnect.tezosMod.TezosAddress
-import typings.trezorConnect.tezosMod.TezosGetAddress
-import typings.trezorConnect.tezosMod.TezosGetPublicKey
-import typings.trezorConnect.tezosMod.TezosPublicKey
-import typings.trezorConnect.tezosMod.TezosSignTransaction
+import typings.trezorConnect.libTypescriptAccountMod.AccountInfo
+import typings.trezorConnect.libTypescriptAccountMod.ComposeParams
+import typings.trezorConnect.libTypescriptAccountMod.GetAccountInfo
+import typings.trezorConnect.libTypescriptAccountMod.PrecomposeParams
+import typings.trezorConnect.libTypescriptAccountMod.PrecomposedTransaction
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainAccountBalanceHistory
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainDisconnect
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainDisconnected
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainEstimateFee
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainEstimatedFee
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainEvent
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainFiatRatesForTimestamps
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainGetAccountBalanceHistory
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainGetCurrentFiatRates
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainGetFiatRatesForTimestamps
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainGetTransactions
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainSetCustomBackend
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainSubscribe
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainSubscribeFiatRates
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainSubscribed
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainTimestampedFiatRates
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainTransactions
+import typings.trezorConnect.libTypescriptEventsMod.ButtonRequestData
+import typings.trezorConnect.libTypescriptEventsMod.TransportEvent
+import typings.trezorConnect.libTypescriptEventsMod.UiEvent
+import typings.trezorConnect.libTypescriptEventsMod.UiResponse
+import typings.trezorConnect.libTypescriptMiscMod.CipherKeyValue
+import typings.trezorConnect.libTypescriptMiscMod.CipheredValue
+import typings.trezorConnect.libTypescriptMiscMod.CustomMessage
+import typings.trezorConnect.libTypescriptMiscMod.Login
+import typings.trezorConnect.libTypescriptMiscMod.LoginChallenge
+import typings.trezorConnect.libTypescriptMiscMod.RequestLoginAsync
+import typings.trezorConnect.libTypescriptMiscMod.SetProxy
+import typings.trezorConnect.libTypescriptNetworksBinanceMod.BinanceAddress
+import typings.trezorConnect.libTypescriptNetworksBinanceMod.BinanceGetAddress
+import typings.trezorConnect.libTypescriptNetworksBinanceMod.BinanceGetPublicKey
+import typings.trezorConnect.libTypescriptNetworksBinanceMod.BinancePublicKey
+import typings.trezorConnect.libTypescriptNetworksBinanceMod.BinanceSignTransaction
+import typings.trezorConnect.libTypescriptNetworksBitcoinMod.Address
+import typings.trezorConnect.libTypescriptNetworksBitcoinMod.GetAddress
+import typings.trezorConnect.libTypescriptNetworksBitcoinMod.GetPublicKey
+import typings.trezorConnect.libTypescriptNetworksBitcoinMod.HDNodeResponse
+import typings.trezorConnect.libTypescriptNetworksBitcoinMod.PushTransaction
+import typings.trezorConnect.libTypescriptNetworksBitcoinMod.PushedTransaction
+import typings.trezorConnect.libTypescriptNetworksBitcoinMod.SignMessage
+import typings.trezorConnect.libTypescriptNetworksBitcoinMod.SignTransaction
+import typings.trezorConnect.libTypescriptNetworksBitcoinMod.SignedTransaction
+import typings.trezorConnect.libTypescriptNetworksBitcoinMod.VerifyMessage
+import typings.trezorConnect.libTypescriptNetworksCardanoMod.CardanoAddress
+import typings.trezorConnect.libTypescriptNetworksCardanoMod.CardanoGetAddress
+import typings.trezorConnect.libTypescriptNetworksCardanoMod.CardanoGetNativeScriptHash
+import typings.trezorConnect.libTypescriptNetworksCardanoMod.CardanoGetPublicKey
+import typings.trezorConnect.libTypescriptNetworksCardanoMod.CardanoNativeScriptHash
+import typings.trezorConnect.libTypescriptNetworksCardanoMod.CardanoPublicKey
+import typings.trezorConnect.libTypescriptNetworksCardanoMod.CardanoSignTransaction
+import typings.trezorConnect.libTypescriptNetworksCardanoMod.CardanoSignedTxData
+import typings.trezorConnect.libTypescriptNetworksCoinInfoMod.CoinInfo
+import typings.trezorConnect.libTypescriptNetworksCoinInfoMod.GetCoinInfo
+import typings.trezorConnect.libTypescriptNetworksEosMod.EosGetPublicKey
+import typings.trezorConnect.libTypescriptNetworksEosMod.EosPublicKey
+import typings.trezorConnect.libTypescriptNetworksEosMod.EosSignTransaction
+import typings.trezorConnect.libTypescriptNetworksEthereumMod.EthereumAddress
+import typings.trezorConnect.libTypescriptNetworksEthereumMod.EthereumGetAddress
+import typings.trezorConnect.libTypescriptNetworksEthereumMod.EthereumGetPublicKey
+import typings.trezorConnect.libTypescriptNetworksEthereumMod.EthereumSignMessage
+import typings.trezorConnect.libTypescriptNetworksEthereumMod.EthereumSignTransaction
+import typings.trezorConnect.libTypescriptNetworksEthereumMod.EthereumSignTypedData
+import typings.trezorConnect.libTypescriptNetworksEthereumMod.EthereumSignTypedDataTypes
+import typings.trezorConnect.libTypescriptNetworksEthereumMod.EthereumSignTypedHashAndData
+import typings.trezorConnect.libTypescriptNetworksEthereumMod.EthereumSignedTx
+import typings.trezorConnect.libTypescriptNetworksEthereumMod.EthereumVerifyMessage
+import typings.trezorConnect.libTypescriptNetworksNemMod.NEMAddress
+import typings.trezorConnect.libTypescriptNetworksNemMod.NEMGetAddress
+import typings.trezorConnect.libTypescriptNetworksNemMod.NEMSignTransaction
+import typings.trezorConnect.libTypescriptNetworksRippleMod.RippleAddress
+import typings.trezorConnect.libTypescriptNetworksRippleMod.RippleGetAddress
+import typings.trezorConnect.libTypescriptNetworksRippleMod.RippleSignTransaction
+import typings.trezorConnect.libTypescriptNetworksRippleMod.RippleSignedTx
+import typings.trezorConnect.libTypescriptNetworksStellarMod.StellarAddress
+import typings.trezorConnect.libTypescriptNetworksStellarMod.StellarGetAddress
+import typings.trezorConnect.libTypescriptNetworksStellarMod.StellarSignTransaction
+import typings.trezorConnect.libTypescriptNetworksStellarMod.StellarSignedTx
+import typings.trezorConnect.libTypescriptNetworksTezosMod.TezosAddress
+import typings.trezorConnect.libTypescriptNetworksTezosMod.TezosGetAddress
+import typings.trezorConnect.libTypescriptNetworksTezosMod.TezosGetPublicKey
+import typings.trezorConnect.libTypescriptNetworksTezosMod.TezosPublicKey
+import typings.trezorConnect.libTypescriptNetworksTezosMod.TezosSignTransaction
+import typings.trezorConnect.libTypescriptParamsMod.Bundle
+import typings.trezorConnect.libTypescriptParamsMod.CommonParams
+import typings.trezorConnect.libTypescriptParamsMod.ConnectSettings
+import typings.trezorConnect.libTypescriptParamsMod.DefaultMessage
+import typings.trezorConnect.libTypescriptParamsMod.Manifest
+import typings.trezorConnect.libTypescriptParamsMod.Success
+import typings.trezorConnect.libTypescriptParamsMod.Unsuccessful
+import typings.trezorConnect.libTypescriptTrezorDeviceMod.Device
+import typings.trezorConnect.libTypescriptTrezorDeviceMod.DeviceStateResponse
+import typings.trezorConnect.libTypescriptTrezorManagementMod.ApplyFlags
+import typings.trezorConnect.libTypescriptTrezorManagementMod.ChangePin
+import typings.trezorConnect.libTypescriptTrezorManagementMod.FirmwareUpdate
+import typings.trezorConnect.libTypescriptTrezorManagementMod.FirmwareUpdateBinary
+import typings.trezorConnect.libTypescriptTrezorManagementMod.RecoveryDevice
+import typings.trezorConnect.libTypescriptTrezorManagementMod.ResetDevice
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.ApplySettings
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.BinanceSignedTx
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.EosSignedTx
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.EthereumTypedDataSignature
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.Features
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.MessageSignature
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.NEMSignedTx
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.TezosSignedTx
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -153,8 +153,8 @@ object mod {
     inline def binanceGetAddress(params: CommonParams & BinanceGetAddress): js.Promise[Success[BinanceAddress] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BinanceAddress] | Unsuccessful]]
     inline def binanceGetAddress(params: CommonParams & Bundle[BinanceGetAddress]): js.Promise[Success[js.Array[BinanceAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[BinanceAddress]] | Unsuccessful]]
     
-    inline def binanceGetPublicKey(params: CommonParams & BinanceGetPublicKey): js.Promise[Success[BinancePublicKey] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BinancePublicKey] | Unsuccessful]]
     inline def binanceGetPublicKey(params: CommonParams & Bundle[BinanceGetPublicKey]): js.Promise[Success[js.Array[BinancePublicKey]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[BinancePublicKey]] | Unsuccessful]]
+    inline def binanceGetPublicKey(params: CommonParams & BinanceGetPublicKey): js.Promise[Success[BinancePublicKey] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BinancePublicKey] | Unsuccessful]]
     
     inline def binanceSignTransaction(params: CommonParams & BinanceSignTransaction): js.Promise[Success[BinanceSignedTx] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BinanceSignedTx] | Unsuccessful]]
     
@@ -192,8 +192,8 @@ object mod {
     
     inline def cardanoGetNativeScriptHash(params: CommonParams & CardanoGetNativeScriptHash): js.Promise[Success[CardanoNativeScriptHash] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetNativeScriptHash")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[CardanoNativeScriptHash] | Unsuccessful]]
     
-    inline def cardanoGetPublicKey(params: CommonParams & Bundle[CardanoGetPublicKey]): js.Promise[Success[js.Array[CardanoPublicKey]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[CardanoPublicKey]] | Unsuccessful]]
     inline def cardanoGetPublicKey(params: CommonParams & CardanoGetPublicKey): js.Promise[Success[CardanoPublicKey] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[CardanoPublicKey] | Unsuccessful]]
+    inline def cardanoGetPublicKey(params: CommonParams & Bundle[CardanoGetPublicKey]): js.Promise[Success[js.Array[CardanoPublicKey]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[CardanoPublicKey]] | Unsuccessful]]
     
     inline def cardanoSignTransaction(params: CommonParams & CardanoSignTransaction): js.Promise[Success[CardanoSignedTxData] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[CardanoSignedTxData] | Unsuccessful]]
     
@@ -202,12 +202,12 @@ object mod {
       */
     inline def changePin(params: CommonParams & ChangePin): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("changePin")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
+    inline def cipherKeyValue(params: CommonParams & Bundle[CipherKeyValue]): js.Promise[Success[js.Array[CipheredValue]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cipherKeyValue")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[CipheredValue]] | Unsuccessful]]
     /**
       * Asks device to encrypt value using the private key derived by given BIP32
       * path and the given key. IV is always computed automatically.
       */
     inline def cipherKeyValue(params: CommonParams & CipherKeyValue): js.Promise[Success[CipheredValue] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cipherKeyValue")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[CipheredValue] | Unsuccessful]]
-    inline def cipherKeyValue(params: CommonParams & Bundle[CipherKeyValue]): js.Promise[Success[js.Array[CipheredValue]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cipherKeyValue")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[CipheredValue]] | Unsuccessful]]
     
     /**
       * Bitcoin and Bitcoin-like
@@ -228,15 +228,15 @@ object mod {
     
     inline def dispose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")().asInstanceOf[Unit]
     
-    inline def eosGetPublicKey(params: CommonParams & Bundle[EosGetPublicKey]): js.Promise[Success[js.Array[EosPublicKey]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("eosGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[EosPublicKey]] | Unsuccessful]]
     // EOS
     inline def eosGetPublicKey(params: CommonParams & EosGetPublicKey): js.Promise[Success[EosPublicKey] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("eosGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[EosPublicKey] | Unsuccessful]]
+    inline def eosGetPublicKey(params: CommonParams & Bundle[EosGetPublicKey]): js.Promise[Success[js.Array[EosPublicKey]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("eosGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[EosPublicKey]] | Unsuccessful]]
     
     inline def eosSignTransaction(params: CommonParams & EosSignTransaction): js.Promise[Success[EosSignedTx] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("eosSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[EosSignedTx] | Unsuccessful]]
     
-    inline def ethereumGetAddress(params: CommonParams & Bundle[EthereumGetAddress]): js.Promise[Success[js.Array[EthereumAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[EthereumAddress]] | Unsuccessful]]
     // Ethereum and Ethereum-like
     inline def ethereumGetAddress(params: CommonParams & EthereumGetAddress): js.Promise[Success[EthereumAddress] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[EthereumAddress] | Unsuccessful]]
+    inline def ethereumGetAddress(params: CommonParams & Bundle[EthereumGetAddress]): js.Promise[Success[js.Array[EthereumAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[EthereumAddress]] | Unsuccessful]]
     
     inline def ethereumGetPublicKey(params: CommonParams & Bundle[EthereumGetPublicKey]): js.Promise[Success[js.Array[HDNodeResponse]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[HDNodeResponse]] | Unsuccessful]]
     inline def ethereumGetPublicKey(params: CommonParams & EthereumGetPublicKey): js.Promise[Success[HDNodeResponse] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[HDNodeResponse] | Unsuccessful]]
@@ -246,21 +246,20 @@ object mod {
     inline def ethereumSignTransaction(params: CommonParams & Bundle[EthereumSignTransaction]): js.Promise[Success[js.Array[EthereumSignedTx]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[EthereumSignedTx]] | Unsuccessful]]
     inline def ethereumSignTransaction(params: CommonParams & EthereumSignTransaction): js.Promise[Success[EthereumSignedTx] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[EthereumSignedTx] | Unsuccessful]]
     
+    inline def ethereumSignTypedData[T /* <: EthereumSignTypedDataTypes */](params: EthereumSignTypedHashAndData[T] & CommonParams): js.Promise[Success[EthereumTypedDataSignature] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignTypedData")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[EthereumTypedDataSignature] | Unsuccessful]]
     /**
       * @param params Passing:
       * - {@link Ethereum.EthereumSignTypedData} is required for Trezor T
       * - {@link Ethereum.EthereumSignTypedHash} is required for Trezor 1 compatability
       */
     inline def ethereumSignTypedData[T /* <: EthereumSignTypedDataTypes */](params: EthereumSignTypedData[T] & CommonParams): js.Promise[Success[EthereumTypedDataSignature] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignTypedData")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[EthereumTypedDataSignature] | Unsuccessful]]
-    inline def ethereumSignTypedData[T /* <: EthereumSignTypedDataTypes */](params: EthereumSignTypedHashAndData[T] & CommonParams): js.Promise[Success[EthereumTypedDataSignature] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignTypedData")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[EthereumTypedDataSignature] | Unsuccessful]]
     
     inline def ethereumVerifyMessage(params: CommonParams & EthereumVerifyMessage): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumVerifyMessage")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
     /**
       * Sends FirmwareErase message followed by FirmwareUpdate message
       */
-    inline def firmwareUpdate(params: CommonParams & FirmwareUpdate): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("firmwareUpdate")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
-    inline def firmwareUpdate(params: CommonParams & FirmwareUpdateBinary): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("firmwareUpdate")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
+    inline def firmwareUpdate(params: CommonParams & FirmwareUpdate & FirmwareUpdateBinary): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("firmwareUpdate")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
     /**
       * Bitcoin, Bitcoin-like, Ethereum-like, Ripple
@@ -364,7 +363,6 @@ object mod {
     
     inline def renderWebUSBButton(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderWebUSBButton")().asInstanceOf[Unit]
     
-    inline def requestLogin(params: LoginChallenge & CommonParams): js.Promise[Success[Login] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogin")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[Login] | Unsuccessful]]
     /**
       * Challenge-response authentication via Trezor.
       * To protect against replay attacks you should use a server-side generated
@@ -372,22 +370,27 @@ object mod {
       * visual challenge that will be shown on the device.
       */
     inline def requestLogin(params: RequestLoginAsync & CommonParams): js.Promise[Success[Login] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogin")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[Login] | Unsuccessful]]
+    inline def requestLogin(params: LoginChallenge & CommonParams): js.Promise[Success[Login] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogin")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[Login] | Unsuccessful]]
     
     /**
       * Performs device setup and generates a new seed.
       */
     inline def resetDevice(params: CommonParams & ResetDevice): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("resetDevice")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
+    inline def rippleGetAddress(params: CommonParams & Bundle[RippleGetAddress]): js.Promise[Success[js.Array[RippleAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("rippleGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[RippleAddress]] | Unsuccessful]]
     // Ripple
     inline def rippleGetAddress(params: CommonParams & RippleGetAddress): js.Promise[Success[RippleAddress] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("rippleGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[RippleAddress] | Unsuccessful]]
-    inline def rippleGetAddress(params: CommonParams & Bundle[RippleGetAddress]): js.Promise[Success[js.Array[RippleAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("rippleGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[RippleAddress]] | Unsuccessful]]
     
     inline def rippleSignTransaction(params: CommonParams & RippleSignTransaction): js.Promise[Success[RippleSignedTx] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("rippleSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[RippleSignedTx] | Unsuccessful]]
     
     /**
       * Set tor proxy for @trezor/blockchain-link connections
       */
-    inline def setProxy(params: SetProxy): js.Promise[Success[typings.trezorConnect.protobufMod.Success] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("setProxy")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[typings.trezorConnect.protobufMod.Success] | Unsuccessful]]
+    inline def setProxy(params: SetProxy): js.Promise[
+        Success[typings.trezorConnect.libTypescriptTrezorProtobufMod.Success] | Unsuccessful
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setProxy")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+        Success[typings.trezorConnect.libTypescriptTrezorProtobufMod.Success] | Unsuccessful
+      ]]
     
     /**
       * Bitcoin and Bitcoin-like
@@ -403,9 +406,9 @@ object mod {
       */
     inline def signTransaction(params: CommonParams & SignTransaction): js.Promise[Success[SignedTransaction] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("signTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[SignedTransaction] | Unsuccessful]]
     
+    inline def stellarGetAddress(params: CommonParams & Bundle[StellarGetAddress]): js.Promise[Success[js.Array[StellarAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("stellarGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[StellarAddress]] | Unsuccessful]]
     // Stellar
     inline def stellarGetAddress(params: CommonParams & StellarGetAddress): js.Promise[Success[StellarAddress] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("stellarGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[StellarAddress] | Unsuccessful]]
-    inline def stellarGetAddress(params: CommonParams & Bundle[StellarGetAddress]): js.Promise[Success[js.Array[StellarAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("stellarGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[StellarAddress]] | Unsuccessful]]
     
     inline def stellarSignTransaction(params: CommonParams & StellarSignTransaction): js.Promise[Success[StellarSignedTx] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("stellarSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[StellarSignedTx] | Unsuccessful]]
     
@@ -467,17 +470,17 @@ object mod {
     object ADDRESS_TYPE extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.trezorConnect.constantsMod.CARDANO.ADDRESS_TYPE & Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.trezorConnect.libTypescriptConstantsMod.CARDANO.ADDRESS_TYPE & Double] = js.native
       
-      /* 0 */ val Base: typings.trezorConnect.constantsMod.CARDANO.ADDRESS_TYPE.Base & Double = js.native
+      /* 0 */ val Base: typings.trezorConnect.libTypescriptConstantsMod.CARDANO.ADDRESS_TYPE.Base & Double = js.native
       
-      /* 8 */ val Byron: typings.trezorConnect.constantsMod.CARDANO.ADDRESS_TYPE.Byron & Double = js.native
+      /* 8 */ val Byron: typings.trezorConnect.libTypescriptConstantsMod.CARDANO.ADDRESS_TYPE.Byron & Double = js.native
       
-      /* 6 */ val Enterprise: typings.trezorConnect.constantsMod.CARDANO.ADDRESS_TYPE.Enterprise & Double = js.native
+      /* 6 */ val Enterprise: typings.trezorConnect.libTypescriptConstantsMod.CARDANO.ADDRESS_TYPE.Enterprise & Double = js.native
       
-      /* 4 */ val Pointer: typings.trezorConnect.constantsMod.CARDANO.ADDRESS_TYPE.Pointer & Double = js.native
+      /* 4 */ val Pointer: typings.trezorConnect.libTypescriptConstantsMod.CARDANO.ADDRESS_TYPE.Pointer & Double = js.native
       
-      /* 14 */ val Reward: typings.trezorConnect.constantsMod.CARDANO.ADDRESS_TYPE.Reward & Double = js.native
+      /* 14 */ val Reward: typings.trezorConnect.libTypescriptConstantsMod.CARDANO.ADDRESS_TYPE.Reward & Double = js.native
     }
     
     @JSImport("trezor-connect", "CARDANO.CERTIFICATE_TYPE")
@@ -485,15 +488,17 @@ object mod {
     object CERTIFICATE_TYPE extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.trezorConnect.constantsMod.CARDANO.CERTIFICATE_TYPE & Double] = js.native
+      def apply(value: Double): js.UndefOr[
+            typings.trezorConnect.libTypescriptConstantsMod.CARDANO.CERTIFICATE_TYPE & Double
+          ] = js.native
       
-      /* 2 */ val StakeDelegation: typings.trezorConnect.constantsMod.CARDANO.CERTIFICATE_TYPE.StakeDelegation & Double = js.native
+      /* 2 */ val StakeDelegation: typings.trezorConnect.libTypescriptConstantsMod.CARDANO.CERTIFICATE_TYPE.StakeDelegation & Double = js.native
       
-      /* 1 */ val StakeDeregistration: typings.trezorConnect.constantsMod.CARDANO.CERTIFICATE_TYPE.StakeDeregistration & Double = js.native
+      /* 1 */ val StakeDeregistration: typings.trezorConnect.libTypescriptConstantsMod.CARDANO.CERTIFICATE_TYPE.StakeDeregistration & Double = js.native
       
-      /* 3 */ val StakePoolRegistration: typings.trezorConnect.constantsMod.CARDANO.CERTIFICATE_TYPE.StakePoolRegistration & Double = js.native
+      /* 3 */ val StakePoolRegistration: typings.trezorConnect.libTypescriptConstantsMod.CARDANO.CERTIFICATE_TYPE.StakePoolRegistration & Double = js.native
       
-      /* 0 */ val StakeRegistration: typings.trezorConnect.constantsMod.CARDANO.CERTIFICATE_TYPE.StakeRegistration & Double = js.native
+      /* 0 */ val StakeRegistration: typings.trezorConnect.libTypescriptConstantsMod.CARDANO.CERTIFICATE_TYPE.StakeRegistration & Double = js.native
     }
     
     @JSImport("trezor-connect", "CARDANO.NETWORK_IDS")
@@ -501,11 +506,11 @@ object mod {
     object NETWORK_IDS extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.trezorConnect.constantsMod.CARDANO.NETWORK_IDS & Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.trezorConnect.libTypescriptConstantsMod.CARDANO.NETWORK_IDS & Double] = js.native
       
-      /* 1 */ val mainnet: typings.trezorConnect.constantsMod.CARDANO.NETWORK_IDS.mainnet & Double = js.native
+      /* 1 */ val mainnet: typings.trezorConnect.libTypescriptConstantsMod.CARDANO.NETWORK_IDS.mainnet & Double = js.native
       
-      /* 0 */ val testnet: typings.trezorConnect.constantsMod.CARDANO.NETWORK_IDS.testnet & Double = js.native
+      /* 0 */ val testnet: typings.trezorConnect.libTypescriptConstantsMod.CARDANO.NETWORK_IDS.testnet & Double = js.native
     }
     
     @JSImport("trezor-connect", "CARDANO.PROTOCOL_MAGICS")
@@ -513,11 +518,11 @@ object mod {
     object PROTOCOL_MAGICS extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.trezorConnect.constantsMod.CARDANO.PROTOCOL_MAGICS & Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.trezorConnect.libTypescriptConstantsMod.CARDANO.PROTOCOL_MAGICS & Double] = js.native
       
-      /* 764824073 */ val mainnet: typings.trezorConnect.constantsMod.CARDANO.PROTOCOL_MAGICS.mainnet & Double = js.native
+      /* 764824073 */ val mainnet: typings.trezorConnect.libTypescriptConstantsMod.CARDANO.PROTOCOL_MAGICS.mainnet & Double = js.native
       
-      /* 1097911063 */ val testnet: typings.trezorConnect.constantsMod.CARDANO.PROTOCOL_MAGICS.testnet & Double = js.native
+      /* 1097911063 */ val testnet: typings.trezorConnect.libTypescriptConstantsMod.CARDANO.PROTOCOL_MAGICS.testnet & Double = js.native
     }
   }
   
@@ -530,29 +535,29 @@ object mod {
   object CardanoAddressType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.trezorConnect.protobufMod.CardanoAddressType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoAddressType & Double] = js.native
     
-    /* 0 */ val BASE: typings.trezorConnect.protobufMod.CardanoAddressType.BASE & Double = js.native
+    /* 0 */ val BASE: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoAddressType.BASE & Double = js.native
     
-    /* 2 */ val BASE_KEY_SCRIPT: typings.trezorConnect.protobufMod.CardanoAddressType.BASE_KEY_SCRIPT & Double = js.native
+    /* 2 */ val BASE_KEY_SCRIPT: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoAddressType.BASE_KEY_SCRIPT & Double = js.native
     
-    /* 1 */ val BASE_SCRIPT_KEY: typings.trezorConnect.protobufMod.CardanoAddressType.BASE_SCRIPT_KEY & Double = js.native
+    /* 1 */ val BASE_SCRIPT_KEY: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoAddressType.BASE_SCRIPT_KEY & Double = js.native
     
-    /* 3 */ val BASE_SCRIPT_SCRIPT: typings.trezorConnect.protobufMod.CardanoAddressType.BASE_SCRIPT_SCRIPT & Double = js.native
+    /* 3 */ val BASE_SCRIPT_SCRIPT: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoAddressType.BASE_SCRIPT_SCRIPT & Double = js.native
     
-    /* 8 */ val BYRON: typings.trezorConnect.protobufMod.CardanoAddressType.BYRON & Double = js.native
+    /* 8 */ val BYRON: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoAddressType.BYRON & Double = js.native
     
-    /* 6 */ val ENTERPRISE: typings.trezorConnect.protobufMod.CardanoAddressType.ENTERPRISE & Double = js.native
+    /* 6 */ val ENTERPRISE: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoAddressType.ENTERPRISE & Double = js.native
     
-    /* 7 */ val ENTERPRISE_SCRIPT: typings.trezorConnect.protobufMod.CardanoAddressType.ENTERPRISE_SCRIPT & Double = js.native
+    /* 7 */ val ENTERPRISE_SCRIPT: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoAddressType.ENTERPRISE_SCRIPT & Double = js.native
     
-    /* 4 */ val POINTER: typings.trezorConnect.protobufMod.CardanoAddressType.POINTER & Double = js.native
+    /* 4 */ val POINTER: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoAddressType.POINTER & Double = js.native
     
-    /* 5 */ val POINTER_SCRIPT: typings.trezorConnect.protobufMod.CardanoAddressType.POINTER_SCRIPT & Double = js.native
+    /* 5 */ val POINTER_SCRIPT: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoAddressType.POINTER_SCRIPT & Double = js.native
     
-    /* 14 */ val REWARD: typings.trezorConnect.protobufMod.CardanoAddressType.REWARD & Double = js.native
+    /* 14 */ val REWARD: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoAddressType.REWARD & Double = js.native
     
-    /* 15 */ val REWARD_SCRIPT: typings.trezorConnect.protobufMod.CardanoAddressType.REWARD_SCRIPT & Double = js.native
+    /* 15 */ val REWARD_SCRIPT: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoAddressType.REWARD_SCRIPT & Double = js.native
   }
   
   @JSImport("trezor-connect", "CardanoCertificateType")
@@ -560,15 +565,17 @@ object mod {
   object CardanoCertificateType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.trezorConnect.protobufMod.CardanoCertificateType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoCertificateType & Double
+      ] = js.native
     
-    /* 2 */ val STAKE_DELEGATION: typings.trezorConnect.protobufMod.CardanoCertificateType.STAKE_DELEGATION & Double = js.native
+    /* 2 */ val STAKE_DELEGATION: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoCertificateType.STAKE_DELEGATION & Double = js.native
     
-    /* 1 */ val STAKE_DEREGISTRATION: typings.trezorConnect.protobufMod.CardanoCertificateType.STAKE_DEREGISTRATION & Double = js.native
+    /* 1 */ val STAKE_DEREGISTRATION: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoCertificateType.STAKE_DEREGISTRATION & Double = js.native
     
-    /* 3 */ val STAKE_POOL_REGISTRATION: typings.trezorConnect.protobufMod.CardanoCertificateType.STAKE_POOL_REGISTRATION & Double = js.native
+    /* 3 */ val STAKE_POOL_REGISTRATION: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoCertificateType.STAKE_POOL_REGISTRATION & Double = js.native
     
-    /* 0 */ val STAKE_REGISTRATION: typings.trezorConnect.protobufMod.CardanoCertificateType.STAKE_REGISTRATION & Double = js.native
+    /* 0 */ val STAKE_REGISTRATION: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoCertificateType.STAKE_REGISTRATION & Double = js.native
   }
   
   @JSImport("trezor-connect", "CardanoNativeScriptHashDisplayFormat")
@@ -576,13 +583,15 @@ object mod {
   object CardanoNativeScriptHashDisplayFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.trezorConnect.protobufMod.CardanoNativeScriptHashDisplayFormat & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoNativeScriptHashDisplayFormat & Double
+      ] = js.native
     
-    /* 1 */ val BECH32: typings.trezorConnect.protobufMod.CardanoNativeScriptHashDisplayFormat.BECH32 & Double = js.native
+    /* 1 */ val BECH32: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoNativeScriptHashDisplayFormat.BECH32 & Double = js.native
     
-    /* 0 */ val HIDE: typings.trezorConnect.protobufMod.CardanoNativeScriptHashDisplayFormat.HIDE & Double = js.native
+    /* 0 */ val HIDE: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoNativeScriptHashDisplayFormat.HIDE & Double = js.native
     
-    /* 2 */ val POLICY_ID: typings.trezorConnect.protobufMod.CardanoNativeScriptHashDisplayFormat.POLICY_ID & Double = js.native
+    /* 2 */ val POLICY_ID: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoNativeScriptHashDisplayFormat.POLICY_ID & Double = js.native
   }
   
   @JSImport("trezor-connect", "CardanoNativeScriptType")
@@ -590,19 +599,21 @@ object mod {
   object CardanoNativeScriptType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.trezorConnect.protobufMod.CardanoNativeScriptType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoNativeScriptType & Double
+      ] = js.native
     
-    /* 1 */ val ALL: typings.trezorConnect.protobufMod.CardanoNativeScriptType.ALL & Double = js.native
+    /* 1 */ val ALL: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoNativeScriptType.ALL & Double = js.native
     
-    /* 2 */ val ANY: typings.trezorConnect.protobufMod.CardanoNativeScriptType.ANY & Double = js.native
+    /* 2 */ val ANY: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoNativeScriptType.ANY & Double = js.native
     
-    /* 4 */ val INVALID_BEFORE: typings.trezorConnect.protobufMod.CardanoNativeScriptType.INVALID_BEFORE & Double = js.native
+    /* 4 */ val INVALID_BEFORE: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoNativeScriptType.INVALID_BEFORE & Double = js.native
     
-    /* 5 */ val INVALID_HEREAFTER: typings.trezorConnect.protobufMod.CardanoNativeScriptType.INVALID_HEREAFTER & Double = js.native
+    /* 5 */ val INVALID_HEREAFTER: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoNativeScriptType.INVALID_HEREAFTER & Double = js.native
     
-    /* 3 */ val N_OF_K: typings.trezorConnect.protobufMod.CardanoNativeScriptType.N_OF_K & Double = js.native
+    /* 3 */ val N_OF_K: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoNativeScriptType.N_OF_K & Double = js.native
     
-    /* 0 */ val PUB_KEY: typings.trezorConnect.protobufMod.CardanoNativeScriptType.PUB_KEY & Double = js.native
+    /* 0 */ val PUB_KEY: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoNativeScriptType.PUB_KEY & Double = js.native
   }
   
   @JSImport("trezor-connect", "CardanoPoolRelayType")
@@ -610,13 +621,15 @@ object mod {
   object CardanoPoolRelayType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.trezorConnect.protobufMod.CardanoPoolRelayType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoPoolRelayType & Double
+      ] = js.native
     
-    /* 2 */ val MULTIPLE_HOST_NAME: typings.trezorConnect.protobufMod.CardanoPoolRelayType.MULTIPLE_HOST_NAME & Double = js.native
+    /* 2 */ val MULTIPLE_HOST_NAME: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoPoolRelayType.MULTIPLE_HOST_NAME & Double = js.native
     
-    /* 0 */ val SINGLE_HOST_IP: typings.trezorConnect.protobufMod.CardanoPoolRelayType.SINGLE_HOST_IP & Double = js.native
+    /* 0 */ val SINGLE_HOST_IP: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoPoolRelayType.SINGLE_HOST_IP & Double = js.native
     
-    /* 1 */ val SINGLE_HOST_NAME: typings.trezorConnect.protobufMod.CardanoPoolRelayType.SINGLE_HOST_NAME & Double = js.native
+    /* 1 */ val SINGLE_HOST_NAME: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoPoolRelayType.SINGLE_HOST_NAME & Double = js.native
   }
   
   @JSImport("trezor-connect", "CardanoTxSigningMode")
@@ -624,15 +637,17 @@ object mod {
   object CardanoTxSigningMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.trezorConnect.protobufMod.CardanoTxSigningMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoTxSigningMode & Double
+      ] = js.native
     
-    /* 2 */ val MULTISIG_TRANSACTION: typings.trezorConnect.protobufMod.CardanoTxSigningMode.MULTISIG_TRANSACTION & Double = js.native
+    /* 2 */ val MULTISIG_TRANSACTION: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoTxSigningMode.MULTISIG_TRANSACTION & Double = js.native
     
-    /* 0 */ val ORDINARY_TRANSACTION: typings.trezorConnect.protobufMod.CardanoTxSigningMode.ORDINARY_TRANSACTION & Double = js.native
+    /* 0 */ val ORDINARY_TRANSACTION: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoTxSigningMode.ORDINARY_TRANSACTION & Double = js.native
     
-    /* 3 */ val PLUTUS_TRANSACTION: typings.trezorConnect.protobufMod.CardanoTxSigningMode.PLUTUS_TRANSACTION & Double = js.native
+    /* 3 */ val PLUTUS_TRANSACTION: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoTxSigningMode.PLUTUS_TRANSACTION & Double = js.native
     
-    /* 1 */ val POOL_REGISTRATION_AS_OWNER: typings.trezorConnect.protobufMod.CardanoTxSigningMode.POOL_REGISTRATION_AS_OWNER & Double = js.native
+    /* 1 */ val POOL_REGISTRATION_AS_OWNER: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoTxSigningMode.POOL_REGISTRATION_AS_OWNER & Double = js.native
   }
   
   @JSImport("trezor-connect", "CardanoTxWitnessType")
@@ -640,11 +655,13 @@ object mod {
   object CardanoTxWitnessType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.trezorConnect.protobufMod.CardanoTxWitnessType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoTxWitnessType & Double
+      ] = js.native
     
-    /* 0 */ val BYRON_WITNESS: typings.trezorConnect.protobufMod.CardanoTxWitnessType.BYRON_WITNESS & Double = js.native
+    /* 0 */ val BYRON_WITNESS: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoTxWitnessType.BYRON_WITNESS & Double = js.native
     
-    /* 1 */ val SHELLEY_WITNESS: typings.trezorConnect.protobufMod.CardanoTxWitnessType.SHELLEY_WITNESS & Double = js.native
+    /* 1 */ val SHELLEY_WITNESS: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoTxWitnessType.SHELLEY_WITNESS & Double = js.native
   }
   
   object DEVICE {

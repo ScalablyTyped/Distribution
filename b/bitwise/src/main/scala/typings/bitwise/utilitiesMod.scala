@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object utilitiesMod {
   
-  @JSImport("bitwise/esm/utilities", "p2")
+  @JSImport("bitwise/utilities", "p2")
   @js.native
   val p2: js.Array[Double] = js.native
 }

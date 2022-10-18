@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "_OcclusionDataStorage")
 @js.native
 open class OcclusionDataStorage ()
-  extends typings.babylonjs.legacyMod.OcclusionDataStorage
+  extends typings.babylonjs.legacyLegacyMod.OcclusionDataStorage

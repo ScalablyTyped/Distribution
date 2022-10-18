@@ -1,6 +1,6 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.transformersApiMod.CompilerOptions
+import typings.angularCompilerCli.srcTransformersApiMod.CompilerOptions
 import typings.typescript.mod.CompilerHost
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,17 +1,18 @@
 package typings.rxjs
 
-import typings.rxjs.subscriptionLogMod.SubscriptionLog
-import typings.rxjs.testMessageMod.TestMessage
+import typings.rxjs.distTypesInternalTestingSubscriptionLogMod.SubscriptionLog
+import typings.rxjs.distTypesInternalTestingTestMessageMod.TestMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object testingMod {
   
-  @JSImport("rxjs/dist/types/testing", "TestScheduler")
+  @JSImport("rxjs/testing", "TestScheduler")
   @js.native
   open class TestScheduler protected ()
-    extends typings.rxjs.testSchedulerMod.TestScheduler {
+    extends typings.rxjs.distTypesTestingMod.TestScheduler {
     /**
       *
       * @param assertDeepEqual A function to set up your assertion for your test harness
@@ -21,7 +22,7 @@ object testingMod {
   /* static members */
   object TestScheduler {
     
-    @JSImport("rxjs/dist/types/testing", "TestScheduler")
+    @JSImport("rxjs/testing", "TestScheduler")
     @js.native
     val ^ : js.Any = js.native
     
@@ -31,7 +32,7 @@ object testingMod {
       * set to `1` for the duration of the `run` block, then set back to whatever value it was.
       * @nocollapse
       */
-    @JSImport("rxjs/dist/types/testing", "TestScheduler.frameTimeFactor")
+    @JSImport("rxjs/testing", "TestScheduler.frameTimeFactor")
     @js.native
     def frameTimeFactor: Double = js.native
     inline def frameTimeFactor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameTimeFactor")(x.asInstanceOf[js.Any])

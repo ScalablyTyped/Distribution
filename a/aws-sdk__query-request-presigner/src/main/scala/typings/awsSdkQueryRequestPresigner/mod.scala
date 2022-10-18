@@ -1,8 +1,8 @@
 package typings.awsSdkQueryRequestPresigner
 
-import typings.awsSdkTypes.credentialsMod.Credentials
-import typings.awsSdkTypes.cryptoMod.HashConstructor
-import typings.awsSdkTypes.httpMod.HttpRequest
+import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
+import typings.awsSdkTypes.distTypesHttpMod.HttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

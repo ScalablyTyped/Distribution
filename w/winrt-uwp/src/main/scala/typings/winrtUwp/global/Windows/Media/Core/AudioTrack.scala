@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an audio track. */
-@JSGlobal("Windows.Media.Core.AudioTrack")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.AudioTrack")
 @js.native
-abstract class AudioTrack ()
+open class AudioTrack ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.AudioTrack {
   

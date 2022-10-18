@@ -1,6 +1,5 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`private`
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.all
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.selected
 import org.scalablytyped.runtime.StObject
@@ -16,7 +15,7 @@ trait Selectedworkflows extends StObject {
   var allows_public_repositories: js.UndefOr[Boolean] = js.undefined
   
   /** @description Name of the runner group. */
-  var name: String
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * @description If `true`, the runner group will be restricted to running only the workflows specified in the `selected_workflows` array.
@@ -28,15 +27,16 @@ trait Selectedworkflows extends StObject {
   var selected_workflows: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * @description Visibility of a runner group. You can select all repositories, select individual repositories, or all private repositories.
+    * @description Visibility of a runner group. You can select all organizations or select individual organizations.
+    * @default all
     * @enum {string}
     */
-  var visibility: js.UndefOr[selected | all | `private`] = js.undefined
+  var visibility: js.UndefOr[selected | all] = js.undefined
 }
 object Selectedworkflows {
   
-  inline def apply(name: String): Selectedworkflows = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(): Selectedworkflows = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Selectedworkflows]
   }
   
@@ -48,6 +48,8 @@ object Selectedworkflows {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
     inline def setRestricted_to_workflows(value: Boolean): Self = StObject.set(x, "restricted_to_workflows", value.asInstanceOf[js.Any])
     
     inline def setRestricted_to_workflowsUndefined: Self = StObject.set(x, "restricted_to_workflows", js.undefined)
@@ -58,7 +60,7 @@ object Selectedworkflows {
     
     inline def setSelected_workflowsVarargs(value: String*): Self = StObject.set(x, "selected_workflows", js.Array(value*))
     
-    inline def setVisibility(value: selected | all | `private`): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: selected | all): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }

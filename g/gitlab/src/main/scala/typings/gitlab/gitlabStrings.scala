@@ -1,11 +1,11 @@
 package typings.gitlab
 
-import typings.gitlab.deploymentsMod.DeploymentStatus
-import typings.gitlab.jobsMod.JobScope
-import typings.gitlab.notificationSettingsMod.NotificationSettingLevel
-import typings.gitlab.servicesServicesMod.SupportedService
-import typings.gitlab.snippetsMod.SnippetVisibility
-import typings.gitlab.userImpersonationTokensMod.ImpersonationTokenScope
+import typings.gitlab.distTypesCoreServicesDeploymentsMod.DeploymentStatus
+import typings.gitlab.distTypesCoreServicesJobsMod.JobScope
+import typings.gitlab.distTypesCoreServicesNotificationSettingsMod.NotificationSettingLevel
+import typings.gitlab.distTypesCoreServicesServicesMod.SupportedService
+import typings.gitlab.distTypesCoreServicesSnippetsMod.SnippetVisibility
+import typings.gitlab.distTypesCoreServicesUserImpersonationTokensMod.ImpersonationTokenScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -167,10 +167,6 @@ object gitlabStrings {
   @js.native
   sealed trait Lint extends StObject
   inline def Lint: Lint = "Lint".asInstanceOf[Lint]
-  
-  @js.native
-  sealed trait Mapper extends StObject
-  inline def Mapper: Mapper = "Mapper".asInstanceOf[Mapper]
   
   @js.native
   sealed trait Markdown extends StObject

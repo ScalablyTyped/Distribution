@@ -1,8 +1,8 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.baseTextureMod.BaseTexture
-import typings.babylonjs.panoramaToCubemapMod.CubeMapInfo
-import typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial
+import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
+import typings.babylonjs.mathsSphericalPolynomialMod.SphericalPolynomial
+import typings.babylonjs.miscHighDynamicRangePanoramaToCubemapMod.CubeMapInfo
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "CubeMapToSphericalPolynomialTools")
 @js.native
 open class CubeMapToSphericalPolynomialTools ()
-  extends typings.babylonjs.highDynamicRangeIndexMod.CubeMapToSphericalPolynomialTools
+  extends typings.babylonjs.miscHighDynamicRangeIndexMod.CubeMapToSphericalPolynomialTools
 /* static members */
 object CubeMapToSphericalPolynomialTools {
   

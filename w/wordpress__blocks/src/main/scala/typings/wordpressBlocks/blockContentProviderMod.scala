@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
-import typings.std.Omit
 import typings.wordpressBlocks.blockContentProviderMod.BlockContentProvider.Props
 import typings.wordpressBlocks.mod.BlockInstance
-import typings.wordpressBlocks.wordpressBlocksStrings.BlockContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +28,7 @@ object blockContentProviderMod {
     override def _to: ComponentType[Props] = ^
   }
   
-  inline def withBlockContentContext[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Omit[Any, BlockContent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withBlockContentContext")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[Any, BlockContent]]]
+  inline def withBlockContentContext[T /* <: ComponentType[Any] */](wrapped: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'BlockContent'>> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withBlockContentContext")(wrapped.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'BlockContent'>> : never */ js.Any]
   
   object BlockContentProvider {
     

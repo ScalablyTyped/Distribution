@@ -1,36 +1,21 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.common.ExportFormat
-import typings.devextreme.mod.DevExpress.common.VerticalAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FileName extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.undefined
-  
+  /**
+    * Specifies the name of the file to which the diagram is exported.
+    */
   var fileName: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[ExportFormat] = js.undefined
-  
-  var gridLayout: js.UndefOr[Boolean] = js.undefined
-  
-  var horizontalAlignment: js.UndefOr[typings.devextreme.mod.DevExpress.common.HorizontalAlignment] = js.undefined
-  
-  var margin: js.UndefOr[Double] = js.undefined
-  
-  var onExported: js.UndefOr[js.Function] = js.undefined
-  
-  var onExporting: js.UndefOr[js.Function] = js.undefined
-  
-  var onFileSaving: js.UndefOr[js.Function] = js.undefined
-  
+  /**
+    * Specifies the URL of the server-side proxy that streams the resulting file and enables export in Safari.
+    * @deprecated Since v10, Safari browser supports API for saving files, and this property is no longer required.
+    */
   var proxyUrl: js.UndefOr[String] = js.undefined
-  
-  var svgToCanvas: js.UndefOr[js.Function] = js.undefined
-  
-  var verticalAlignment: js.UndefOr[VerticalAlignment] = js.undefined
 }
 object FileName {
   
@@ -41,52 +26,12 @@ object FileName {
   
   extension [Self <: FileName](x: Self) {
     
-    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
-    
-    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
-    
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    inline def setFormat(value: ExportFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-    
-    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
-    
-    inline def setGridLayout(value: Boolean): Self = StObject.set(x, "gridLayout", value.asInstanceOf[js.Any])
-    
-    inline def setGridLayoutUndefined: Self = StObject.set(x, "gridLayout", js.undefined)
-    
-    inline def setHorizontalAlignment(value: typings.devextreme.mod.DevExpress.common.HorizontalAlignment): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
-    
-    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
-    
-    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
-    
-    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
-    
-    inline def setOnExported(value: js.Function): Self = StObject.set(x, "onExported", value.asInstanceOf[js.Any])
-    
-    inline def setOnExportedUndefined: Self = StObject.set(x, "onExported", js.undefined)
-    
-    inline def setOnExporting(value: js.Function): Self = StObject.set(x, "onExporting", value.asInstanceOf[js.Any])
-    
-    inline def setOnExportingUndefined: Self = StObject.set(x, "onExporting", js.undefined)
-    
-    inline def setOnFileSaving(value: js.Function): Self = StObject.set(x, "onFileSaving", value.asInstanceOf[js.Any])
-    
-    inline def setOnFileSavingUndefined: Self = StObject.set(x, "onFileSaving", js.undefined)
-    
     inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
     
     inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
-    
-    inline def setSvgToCanvas(value: js.Function): Self = StObject.set(x, "svgToCanvas", value.asInstanceOf[js.Any])
-    
-    inline def setSvgToCanvasUndefined: Self = StObject.set(x, "svgToCanvas", js.undefined)
-    
-    inline def setVerticalAlignment(value: VerticalAlignment): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
-    
-    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
   }
 }

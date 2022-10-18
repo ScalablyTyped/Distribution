@@ -9,7 +9,7 @@ object mod {
   @JSImport("number-allocator", "NumberAllocator")
   @js.native
   open class NumberAllocator protected ()
-    extends typings.numberAllocator.numberAllocatorMod.NumberAllocator {
+    extends typings.numberAllocator.typesLibNumberAllocatorMod.NumberAllocator {
     /**
       * NumberAllocator constructor.
       * The all numbers are set to vacant status.

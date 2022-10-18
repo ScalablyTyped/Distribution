@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SwitchBooleanAction")
 @js.native
 open class SwitchBooleanAction protected ()
-  extends typings.babylonjs.legacyMod.SwitchBooleanAction {
+  extends typings.babylonjs.legacyLegacyMod.SwitchBooleanAction {
   /**
     * Instantiate the action
     * @param triggerOptions defines the trigger options
@@ -20,6 +20,6 @@ open class SwitchBooleanAction protected ()
     triggerOptions: Any,
     target: Any,
     propertyPath: String,
-    condition: typings.babylonjs.conditionMod.Condition
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
 }

@@ -1,12 +1,12 @@
 package typings.raml1Parser.mod
 
-import typings.raml1Parser.parserCoreApiMod.AbstractWrapperNode
-import typings.raml1Parser.raml10parserapiMod.DocumentationItem
-import typings.raml1Parser.raml10parserapiMod.ExampleSpec
-import typings.raml1Parser.raml10parserapiMod.FragmentDeclaration
-import typings.raml1Parser.raml10parserapiMod.ResourceType
-import typings.raml1Parser.raml10parserapiMod.Trait
-import typings.raml1Parser.raml10parserapiMod.TypeDeclaration
+import typings.raml1Parser.distParserArtifactsRaml10parserapiMod.DocumentationItem
+import typings.raml1Parser.distParserArtifactsRaml10parserapiMod.ExampleSpec
+import typings.raml1Parser.distParserArtifactsRaml10parserapiMod.FragmentDeclaration
+import typings.raml1Parser.distParserArtifactsRaml10parserapiMod.ResourceType
+import typings.raml1Parser.distParserArtifactsRaml10parserapiMod.Trait
+import typings.raml1Parser.distParserArtifactsRaml10parserapiMod.TypeDeclaration
+import typings.raml1Parser.distParserWrappedAstParserCoreApiMod.AbstractWrapperNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

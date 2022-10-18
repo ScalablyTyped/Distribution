@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "GeodesicData")
 @js.native
 open class GeodesicData protected ()
-  extends typings.babylonjs.legacyMod.GeodesicData {
+  extends typings.babylonjs.legacyLegacyMod.GeodesicData {
   def this(
     name: String,
     category: String,
@@ -26,5 +26,5 @@ object GeodesicData {
     * @param primTri the primary triangle
     * @internal
     */
-  inline def BuildGeodesicData(primTri: typings.babylonjs.geodesicMeshMod.PrimaryIsoTriangle): typings.babylonjs.geodesicMeshMod.GeodesicData = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildGeodesicData")(primTri.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.geodesicMeshMod.GeodesicData]
+  inline def BuildGeodesicData(primTri: typings.babylonjs.meshesGeodesicMeshMod.PrimaryIsoTriangle): typings.babylonjs.meshesGeodesicMeshMod.GeodesicData = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildGeodesicData")(primTri.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesGeodesicMeshMod.GeodesicData]
 }

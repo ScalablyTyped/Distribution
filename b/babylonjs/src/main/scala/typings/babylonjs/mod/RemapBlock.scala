@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "RemapBlock")
 @js.native
 open class RemapBlock protected ()
-  extends typings.babylonjs.legacyMod.RemapBlock {
+  extends typings.babylonjs.legacyLegacyMod.RemapBlock {
   /**
     * Creates a new RemapBlock
     * @param name defines the block name

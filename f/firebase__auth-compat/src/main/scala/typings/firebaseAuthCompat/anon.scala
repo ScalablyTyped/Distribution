@@ -2,7 +2,7 @@ package typings.firebaseAuthCompat
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.firebaseAuthCompat.mod.FirebaseApp
+import typings.firebaseAuthCompat.appCompatMod.FirebaseApp
 import typings.firebaseAuthTypes.mod.AuthCredential
 import typings.firebaseAuthTypes.mod.EmailAuthProvider
 import typings.firebaseAuthTypes.mod.EmailAuthProviderInstance

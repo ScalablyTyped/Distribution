@@ -1,6 +1,6 @@
 package typings.parcelFs
 
-import typings.parcelFs.typesMod.FileSystem
+import typings.parcelFs.libTypesMod.FileSystem
 import typings.parcelWorkers.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -2,7 +2,7 @@ package typings.storybookApi.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Parameters
-import typings.storybookApi.storiesMod.StoriesRaw
+import typings.storybookApi.distTs3Dot9LibStoriesMod.StoriesRaw
 import typings.storybookApi.storybookApiInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

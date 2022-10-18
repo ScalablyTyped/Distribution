@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a deferred asynchronous change request. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageChangedDeferral")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageChangedDeferral")
 @js.native
-abstract class ChatMessageChangedDeferral ()
+open class ChatMessageChangedDeferral ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageChangedDeferral {
   

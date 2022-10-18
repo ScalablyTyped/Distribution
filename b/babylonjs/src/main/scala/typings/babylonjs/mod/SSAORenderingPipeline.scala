@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SSAORenderingPipeline")
 @js.native
 open class SSAORenderingPipeline protected ()
-  extends typings.babylonjs.legacyMod.SSAORenderingPipeline {
+  extends typings.babylonjs.legacyLegacyMod.SSAORenderingPipeline {
   /**
     * @constructor
     * @param name - The rendering pipeline name
@@ -20,6 +20,6 @@ open class SSAORenderingPipeline protected ()
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
     ratio: Any,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera]
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
 }

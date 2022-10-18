@@ -1,6 +1,6 @@
 package typings.angularDevkitCore.anon
 
-import typings.angularDevkitCore.utilsMod.JsonValue
+import typings.angularDevkitCore.srcJsonUtilsMod.JsonValue
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

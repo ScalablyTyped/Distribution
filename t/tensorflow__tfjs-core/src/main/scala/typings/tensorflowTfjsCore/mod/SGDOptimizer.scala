@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsCore.mod
 
-import typings.tensorflowTfjsCore.serializationMod.ConfigDict
-import typings.tensorflowTfjsCore.serializationMod.Serializable
-import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
+import typings.tensorflowTfjsCore.distSerializationMod.ConfigDict
+import typings.tensorflowTfjsCore.distSerializationMod.Serializable
+import typings.tensorflowTfjsCore.distSerializationMod.SerializableConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@tensorflow/tfjs-core", "SGDOptimizer")
 @js.native
 open class SGDOptimizer protected ()
-  extends typings.tensorflowTfjsCore.baseMod.SGDOptimizer {
+  extends typings.tensorflowTfjsCore.distBaseMod.SGDOptimizer {
   def this(learningRate: Double) = this()
 }
 /* static members */

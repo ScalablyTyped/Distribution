@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bitsToBooleanMod {
   
-  @JSImport("bitwise/esm/bits/to-boolean", JSImport.Namespace)
+  @JSImport("bitwise/bits/to-boolean", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

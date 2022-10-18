@@ -51,9 +51,9 @@ object Sms {
   }
   
   /** Enables start, track, and end an asynchronous message delete operation for a single message. */
-  @JSGlobal("Windows.Devices.Sms.DeleteSmsMessageOperation")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.DeleteSmsMessageOperation")
   @js.native
-  abstract class DeleteSmsMessageOperation ()
+  open class DeleteSmsMessageOperation ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.DeleteSmsMessageOperation {
     
@@ -91,9 +91,9 @@ object Sms {
   }
   
   /** Enables start, track, and end asynchronous SMS message delete operations for multiple messages. */
-  @JSGlobal("Windows.Devices.Sms.DeleteSmsMessagesOperation")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.DeleteSmsMessagesOperation")
   @js.native
-  abstract class DeleteSmsMessagesOperation ()
+  open class DeleteSmsMessagesOperation ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.DeleteSmsMessagesOperation {
     
@@ -131,9 +131,9 @@ object Sms {
   }
   
   /** Retrieves an SmsDevice object asynchronously. */
-  @JSGlobal("Windows.Devices.Sms.GetSmsDeviceOperation")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.GetSmsDeviceOperation")
   @js.native
-  abstract class GetSmsDeviceOperation ()
+  open class GetSmsDeviceOperation ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.GetSmsDeviceOperation {
     
@@ -177,9 +177,9 @@ object Sms {
   }
   
   /** Supports the retrieval of a message from the SMS message store. */
-  @JSGlobal("Windows.Devices.Sms.GetSmsMessageOperation")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.GetSmsMessageOperation")
   @js.native
-  abstract class GetSmsMessageOperation ()
+  open class GetSmsMessageOperation ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.GetSmsMessageOperation {
     
@@ -220,9 +220,9 @@ object Sms {
   }
   
   /** Supports the retrieval of messages. */
-  @JSGlobal("Windows.Devices.Sms.GetSmsMessagesOperation")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.GetSmsMessagesOperation")
   @js.native
-  abstract class GetSmsMessagesOperation ()
+  open class GetSmsMessagesOperation ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.GetSmsMessagesOperation {
     
@@ -271,9 +271,9 @@ object Sms {
   }
   
   /** Enables the sending of a message. */
-  @JSGlobal("Windows.Devices.Sms.SendSmsMessageOperation")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.SendSmsMessageOperation")
   @js.native
-  abstract class SendSmsMessageOperation ()
+  open class SendSmsMessageOperation ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SendSmsMessageOperation {
     
@@ -423,9 +423,9 @@ object Sms {
   }
   
   /** Represents a broadcast SMS message. */
-  @JSGlobal("Windows.Devices.Sms.SmsBroadcastMessage")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.SmsBroadcastMessage")
   @js.native
-  abstract class SmsBroadcastMessage ()
+  open class SmsBroadcastMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsBroadcastMessage {
     
@@ -549,9 +549,9 @@ object Sms {
   }
   
   /** Supports the operation of a mobile broadband SMS device. */
-  @JSGlobal("Windows.Devices.Sms.SmsDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.SmsDevice")
   @js.native
-  abstract class SmsDevice ()
+  open class SmsDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsDevice
   object SmsDevice {
@@ -592,9 +592,9 @@ object Sms {
   }
   
   /** Extends the SmsDevice class, and supports the operation of a mobile broadband SMS device. */
-  @JSGlobal("Windows.Devices.Sms.SmsDevice2")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.SmsDevice2")
   @js.native
-  abstract class SmsDevice2 ()
+  open class SmsDevice2 ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsDevice2
   object SmsDevice2 {
@@ -635,9 +635,9 @@ object Sms {
   }
   
   /** Provides access to the messages stored on an SMS Device and information about the message store. */
-  @JSGlobal("Windows.Devices.Sms.SmsDeviceMessageStore")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.SmsDeviceMessageStore")
   @js.native
-  abstract class SmsDeviceMessageStore ()
+  open class SmsDeviceMessageStore ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsDeviceMessageStore {
     
@@ -895,9 +895,9 @@ object Sms {
   }
   
   /** Provides data for ISmsBinaryMessage event handlers. */
-  @JSGlobal("Windows.Devices.Sms.SmsMessageReceivedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.SmsMessageReceivedEventArgs")
   @js.native
-  abstract class SmsMessageReceivedEventArgs ()
+  open class SmsMessageReceivedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsMessageReceivedEventArgs {
     
@@ -911,9 +911,9 @@ object Sms {
   }
   
   /** Contains event details for the event raised when an SMS message is received. */
-  @JSGlobal("Windows.Devices.Sms.SmsMessageReceivedTriggerDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.SmsMessageReceivedTriggerDetails")
   @js.native
-  abstract class SmsMessageReceivedTriggerDetails ()
+  open class SmsMessageReceivedTriggerDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsMessageReceivedTriggerDetails {
     
@@ -955,9 +955,9 @@ object Sms {
   }
   
   /** Class used to represent registered message filters. */
-  @JSGlobal("Windows.Devices.Sms.SmsMessageRegistration")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.SmsMessageRegistration")
   @js.native
-  abstract class SmsMessageRegistration ()
+  open class SmsMessageRegistration ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsMessageRegistration
   object SmsMessageRegistration {
@@ -1040,9 +1040,9 @@ object Sms {
   }
   
   /** Presents the details of SMS message events to the background work item that handles messages while your app is suspended. */
-  @JSGlobal("Windows.Devices.Sms.SmsReceivedEventDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.SmsReceivedEventDetails")
   @js.native
-  abstract class SmsReceivedEventDetails ()
+  open class SmsReceivedEventDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsReceivedEventDetails {
     
@@ -1064,9 +1064,9 @@ object Sms {
   }
   
   /** Encapsulates the results of calling SmsDevice2.SendMessageAndGetResultAsync . */
-  @JSGlobal("Windows.Devices.Sms.SmsSendMessageResult")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.SmsSendMessageResult")
   @js.native
-  abstract class SmsSendMessageResult ()
+  open class SmsSendMessageResult ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsSendMessageResult {
     
@@ -1100,9 +1100,9 @@ object Sms {
   }
   
   /** Encapsulates an SMS status message. */
-  @JSGlobal("Windows.Devices.Sms.SmsStatusMessage")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.SmsStatusMessage")
   @js.native
-  abstract class SmsStatusMessage ()
+  open class SmsStatusMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsStatusMessage {
     
@@ -1305,9 +1305,9 @@ object Sms {
   }
   
   /** Encapsulates an SMS voicemail message. */
-  @JSGlobal("Windows.Devices.Sms.SmsVoicemailMessage")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.SmsVoicemailMessage")
   @js.native
-  abstract class SmsVoicemailMessage ()
+  open class SmsVoicemailMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsVoicemailMessage {
     
@@ -1349,9 +1349,9 @@ object Sms {
   }
   
   /** Represents an SMS WAP push message. */
-  @JSGlobal("Windows.Devices.Sms.SmsWapMessage")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sms.SmsWapMessage")
   @js.native
-  abstract class SmsWapMessage ()
+  open class SmsWapMessage ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sms.SmsWapMessage {
     

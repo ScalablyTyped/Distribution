@@ -1,10 +1,10 @@
 package typings.officeUiFabricReact
 
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.activityItemClassNamesMod.IActivityItemClassNames
-import typings.officeUiFabricReact.activityItemTypesMod.IActivityItemProps
-import typings.officeUiFabricReact.activityItemTypesMod.IActivityItemStyles
-import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsActivityItemActivityItemDotclassNamesMod.IActivityItemClassNames
+import typings.officeUiFabricReact.libComponentsActivityItemActivityItemDottypesMod.IActivityItemProps
+import typings.officeUiFabricReact.libComponentsActivityItemActivityItemDottypesMod.IActivityItemStyles
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.IPersonaProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object libActivityItemMod {
   @JSImport("office-ui-fabric-react/lib/ActivityItem", "ActivityItem")
   @js.native
   open class ActivityItem protected ()
-    extends typings.officeUiFabricReact.activityItemMod.ActivityItem {
+    extends typings.officeUiFabricReact.libComponentsActivityItemMod.ActivityItem {
     def this(props: IActivityItemProps) = this()
   }
   

@@ -10,8 +10,7 @@ sealed trait CellValueType extends StObject
   * Represents the types of the `CellValue` object.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 @JSGlobal("Excel.CellValueType")
 @js.native
@@ -21,8 +20,7 @@ object CellValueType extends StObject {
     * Represents an `ArrayCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait array
@@ -33,8 +31,7 @@ object CellValueType extends StObject {
     * Represents a `BooleanCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait boolean
@@ -45,8 +42,7 @@ object CellValueType extends StObject {
     * Represents a `DoubleCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait double
@@ -57,8 +53,7 @@ object CellValueType extends StObject {
     * Represents an `EmptyCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait empty
@@ -69,8 +64,7 @@ object CellValueType extends StObject {
     * Represents an `EntityCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait entity
@@ -81,8 +75,7 @@ object CellValueType extends StObject {
     * Represents an `ErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait error
@@ -93,8 +86,7 @@ object CellValueType extends StObject {
     * Represents a `FormattedNumberCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait formattedNumber
@@ -105,8 +97,7 @@ object CellValueType extends StObject {
     * Represents a `LinkedEntityCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait linkedEntity
@@ -117,8 +108,7 @@ object CellValueType extends StObject {
     * Represents a `ValueTypeNotAvailableCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait notAvailable
@@ -129,8 +119,7 @@ object CellValueType extends StObject {
     * Represents a `ReferenceCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait reference
@@ -141,8 +130,7 @@ object CellValueType extends StObject {
     * Represents a `StringCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait string
@@ -153,8 +141,7 @@ object CellValueType extends StObject {
     * Represents a `WebImageCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait webImage

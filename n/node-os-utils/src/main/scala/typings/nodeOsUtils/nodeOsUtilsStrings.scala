@@ -1,6 +1,6 @@
 package typings.nodeOsUtils
 
-import typings.nodeOsUtils.osMod.Platform
+import typings.nodeOsUtils.libOsMod.Platform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

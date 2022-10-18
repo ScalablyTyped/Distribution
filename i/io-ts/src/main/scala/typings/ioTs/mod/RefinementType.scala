@@ -1,6 +1,6 @@
 package typings.ioTs.mod
 
-import typings.fpTs.functionMod.Predicate
+import typings.fpTs.libFunctionMod.Predicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

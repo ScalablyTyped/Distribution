@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object codemirrorStateStrings {
   
   @js.native
-  sealed trait combineConfig extends StObject
-  inline def combineConfig: combineConfig = "combineConfig".asInstanceOf[combineConfig]
-  
-  @js.native
   sealed trait cover extends StObject
   inline def cover: cover = "cover".asInstanceOf[cover]
   

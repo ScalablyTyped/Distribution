@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -157,7 +158,7 @@ open class ApplicationRef () extends StObject {
     *
     * @see  [Usage notes](#is-stable-examples) for examples and caveats when using this API.
     */
-  val isStable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean> */ Any = js.native
+  val isStable: Observable_[Boolean] = js.native
   
   /**
     * Invoke this method to explicitly process change detection and its side-effects.

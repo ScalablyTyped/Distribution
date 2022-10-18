@@ -1,10 +1,10 @@
 package typings.jupyterlabOutputarea
 
-import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
-import typings.jupyterlabOutputarea.widgetMod.OutputArea.IOptions
-import typings.jupyterlabServices.messagesMod.IExecuteReplyMsg
-import typings.luminoCoreutils.jsonMod.JSONObject
-import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
+import typings.jupyterlabApputils.libSessioncontextMod.ISessionContext
+import typings.jupyterlabOutputarea.libWidgetMod.OutputArea.IOptions
+import typings.jupyterlabServices.libKernelMessagesMod.IExecuteReplyMsg
+import typings.luminoCoreutils.typesJsonMod.JSONObject
+import typings.luminoCoreutils.typesJsonMod.ReadonlyPartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +13,8 @@ object mod {
   
   @JSImport("@jupyterlab/outputarea", "OutputArea")
   @js.native
-  class OutputArea protected ()
-    extends typings.jupyterlabOutputarea.widgetMod.OutputArea {
+  open class OutputArea protected ()
+    extends typings.jupyterlabOutputarea.libWidgetMod.OutputArea {
     /**
       * Construct an output area widget.
       */
@@ -31,27 +31,27 @@ object mod {
       */
     @JSImport("@jupyterlab/outputarea", "OutputArea.ContentFactory")
     @js.native
-    class ContentFactory ()
-      extends typings.jupyterlabOutputarea.widgetMod.OutputArea.ContentFactory
+    open class ContentFactory ()
+      extends typings.jupyterlabOutputarea.libWidgetMod.OutputArea.ContentFactory
     
     /**
       * The default `ContentFactory` instance.
       */
     @JSImport("@jupyterlab/outputarea", "OutputArea.defaultContentFactory")
     @js.native
-    val defaultContentFactory: typings.jupyterlabOutputarea.widgetMod.OutputArea.ContentFactory = js.native
+    val defaultContentFactory: typings.jupyterlabOutputarea.libWidgetMod.OutputArea.ContentFactory = js.native
     
     /**
       * Execute code on an output area.
       */
     inline def execute(
       code: String,
-      output: typings.jupyterlabOutputarea.widgetMod.OutputArea,
+      output: typings.jupyterlabOutputarea.libWidgetMod.OutputArea,
       sessionContext: ISessionContext
     ): js.Promise[js.UndefOr[IExecuteReplyMsg]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], output.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[IExecuteReplyMsg]]]
     inline def execute(
       code: String,
-      output: typings.jupyterlabOutputarea.widgetMod.OutputArea,
+      output: typings.jupyterlabOutputarea.libWidgetMod.OutputArea,
       sessionContext: ISessionContext,
       metadata: JSONObject
     ): js.Promise[js.UndefOr[IExecuteReplyMsg]] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], output.asInstanceOf[js.Any], sessionContext.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[IExecuteReplyMsg]]]
@@ -64,9 +64,9 @@ object mod {
   /**
     * Construct a new observable outputs instance.
     */
-  class OutputAreaModel ()
-    extends typings.jupyterlabOutputarea.modelMod.OutputAreaModel {
-    def this(options: typings.jupyterlabOutputarea.modelMod.IOutputAreaModel.IOptions) = this()
+  open class OutputAreaModel ()
+    extends typings.jupyterlabOutputarea.libModelMod.OutputAreaModel {
+    def this(options: typings.jupyterlabOutputarea.libModelMod.IOutputAreaModel.IOptions) = this()
   }
   object OutputAreaModel {
     
@@ -75,26 +75,26 @@ object mod {
       */
     @JSImport("@jupyterlab/outputarea", "OutputAreaModel.ContentFactory")
     @js.native
-    class ContentFactory ()
-      extends typings.jupyterlabOutputarea.modelMod.OutputAreaModel.ContentFactory
+    open class ContentFactory ()
+      extends typings.jupyterlabOutputarea.libModelMod.OutputAreaModel.ContentFactory
     
     /**
       * The default output model factory.
       */
     @JSImport("@jupyterlab/outputarea", "OutputAreaModel.defaultContentFactory")
     @js.native
-    val defaultContentFactory: typings.jupyterlabOutputarea.modelMod.OutputAreaModel.ContentFactory = js.native
+    val defaultContentFactory: typings.jupyterlabOutputarea.libModelMod.OutputAreaModel.ContentFactory = js.native
   }
   
   @JSImport("@jupyterlab/outputarea", "OutputPrompt")
   @js.native
-  class OutputPrompt ()
-    extends typings.jupyterlabOutputarea.widgetMod.OutputPrompt
+  open class OutputPrompt ()
+    extends typings.jupyterlabOutputarea.libWidgetMod.OutputPrompt
   
   @JSImport("@jupyterlab/outputarea", "SimplifiedOutputArea")
   @js.native
-  class SimplifiedOutputArea protected ()
-    extends typings.jupyterlabOutputarea.widgetMod.SimplifiedOutputArea {
+  open class SimplifiedOutputArea protected ()
+    extends typings.jupyterlabOutputarea.libWidgetMod.SimplifiedOutputArea {
     /**
       * Construct an output area widget.
       */
@@ -103,11 +103,11 @@ object mod {
   
   @JSImport("@jupyterlab/outputarea", "Stdin")
   @js.native
-  class Stdin protected ()
-    extends typings.jupyterlabOutputarea.widgetMod.Stdin {
+  open class Stdin protected ()
+    extends typings.jupyterlabOutputarea.libWidgetMod.Stdin {
     /**
       * Construct a new input widget.
       */
-    def this(options: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions) = this()
+    def this(options: typings.jupyterlabOutputarea.libWidgetMod.Stdin.IOptions) = this()
   }
 }

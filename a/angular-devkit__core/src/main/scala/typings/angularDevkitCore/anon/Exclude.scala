@@ -1,6 +1,6 @@
 package typings.angularDevkitCore.anon
 
-import typings.angularDevkitCore.utilitiesMod.ChangeListener
+import typings.angularDevkitCore.srcWorkspaceJsonUtilitiesMod.ChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

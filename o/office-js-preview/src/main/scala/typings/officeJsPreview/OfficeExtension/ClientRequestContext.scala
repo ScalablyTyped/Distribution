@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * An abstract RequestContext object that facilitates requests to the host Office application.
+  * An abstract RequestContext object that facilitates requests to the Office application.
   * The `Excel.run` and `Word.run` methods provide a request context.
   */
 @js.native

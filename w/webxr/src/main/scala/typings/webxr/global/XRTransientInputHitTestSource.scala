@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("XRTransientInputHitTestSource")
+/* note: abstract class */ @JSGlobal("XRTransientInputHitTestSource")
 @js.native
-abstract class XRTransientInputHitTestSource ()
+open class XRTransientInputHitTestSource ()
   extends StObject
      with typings.webxr.XRTransientInputHitTestSource {
   

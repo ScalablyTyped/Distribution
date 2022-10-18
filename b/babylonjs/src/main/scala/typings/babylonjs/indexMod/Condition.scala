@@ -12,5 +12,5 @@ open class Condition protected ()
     * Creates a new Condition
     * @param actionManager the manager of the action the condition is applied to
     */
-  def this(actionManager: typings.babylonjs.actionManagerMod.ActionManager) = this()
+  def this(actionManager: typings.babylonjs.actionsActionManagerMod.ActionManager) = this()
 }

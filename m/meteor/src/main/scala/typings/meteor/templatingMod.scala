@@ -1,6 +1,5 @@
 package typings.meteor
 
-import org.scalablytyped.runtime.TopLevel
 import typings.jquery.JQueryStatic
 import typings.meteor.Blaze.EventsMap
 import typings.meteor.Blaze.HelpersMap
@@ -128,5 +127,5 @@ object templatingMod {
     * @template D Data
     * @template T Template interface with custom properties and methods that extends the template instance
     */
-  type TemplateStaticTyped[N /* <: String */, D /* <: Any */, T /* <: Record[String, Any] */] = (typings.meteor.templatingMod.TemplateStatic[D, T & TemplateInstance[D]]) & typings.meteor.meteorStrings.TemplateStaticTyped & TopLevel[Any]
+  type TemplateStaticTyped[N /* <: String */, D /* <: Any */, T /* <: Record[String, Any] */] = (typings.meteor.templatingMod.TemplateStatic[D, T & TemplateInstance[D]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in N ]: meteor.Blaze.Template<D, T & meteor.Blaze.TemplateInstance<D>>} */ js.Any)
 }

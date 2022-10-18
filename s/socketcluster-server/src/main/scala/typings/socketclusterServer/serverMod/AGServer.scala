@@ -111,7 +111,7 @@ trait AGServer
   def hasMiddleware(`type`: Middlewares): Boolean = js.native
   
   var httpServer: Server[
-    Instantiable1[/* socket */ typings.node.nodeNetMod.Socket, IncomingMessage], 
+    Instantiable1[/* socket */ typings.node.nodeColonnetMod.Socket, IncomingMessage], 
     Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
       ServerResponse[IncomingMessage]

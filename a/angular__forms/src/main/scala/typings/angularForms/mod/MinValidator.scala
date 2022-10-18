@@ -73,9 +73,27 @@ object MinValidator {
   
   @JSImport("@angular/forms", "MinValidator.\u0275dir")
   @js.native
-  def ɵdir: ɵɵDirectiveDeclaration[MinValidator, String, scala.Nothing, Min, js.Object, scala.Nothing, scala.Nothing, `false`] = js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    MinValidator, 
+    /* input[type=number][min][formControlName],input[type=number][min][formControl],input[type=number][min][ngModel] */ String, 
+    scala.Nothing, 
+    Min, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
   inline def ɵdir_=(
-    x: ɵɵDirectiveDeclaration[MinValidator, String, scala.Nothing, Min, js.Object, scala.Nothing, scala.Nothing, `false`]
+    x: ɵɵDirectiveDeclaration[
+      MinValidator, 
+      /* input[type=number][min][formControlName],input[type=number][min][formControl],input[type=number][min][ngModel] */ String, 
+      scala.Nothing, 
+      Min, 
+      js.Object, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `false`
+    ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/forms", "MinValidator.\u0275fac")

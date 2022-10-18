@@ -14,10 +14,6 @@ object reactTableStrings {
   inline def Cell: Cell = "Cell".asInstanceOf[Cell]
   
   @js.native
-  sealed trait ColumnWithStrictAccessor extends StObject
-  inline def ColumnWithStrictAccessor: ColumnWithStrictAccessor = "ColumnWithStrictAccessor".asInstanceOf[ColumnWithStrictAccessor]
-  
-  @js.native
   sealed trait Footer extends StObject
   inline def Footer: Footer = "Footer".asInstanceOf[Footer]
   

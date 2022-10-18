@@ -1,6 +1,6 @@
 package typings.awsSdk.mod
 
-import typings.awsSdk.temporaryCredentialsMod.TemporaryCredentials.TemporaryCredentialsOptions
+import typings.awsSdk.libCredentialsTemporaryCredentialsMod.TemporaryCredentials.TemporaryCredentialsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {Object} options - a map of options that are passed to the AWS.STS.assumeRole() or AWS.STS.getSessionToken() operations. If a RoleArn parameter is passed in, credentials will be based on the IAM role.
   */
 open class TemporaryCredentials ()
-  extends typings.awsSdk.coreMod.TemporaryCredentials {
+  extends typings.awsSdk.libCoreMod.TemporaryCredentials {
   /**
     * Creates a new temporary credentials object.
     * @param {Object} options - a map of options that are passed to the AWS.STS.assumeRole() or AWS.STS.getSessionToken() operations. If a RoleArn parameter is passed in, credentials will be based on the IAM role.
     * @param {Object} masterCredentials - The master (non-temporary) credentials used to get and refresh credentials from AWS STS.
     */
   def this(options: TemporaryCredentialsOptions) = this()
-  def this(options: TemporaryCredentialsOptions, masterCredentials: typings.awsSdk.credentialsMod.Credentials) = this()
+  def this(
+    options: TemporaryCredentialsOptions,
+    masterCredentials: typings.awsSdk.libCredentialsMod.Credentials
+  ) = this()
 }

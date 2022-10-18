@@ -1,8 +1,8 @@
 package typings.ramlTypesystem.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.ramlTypesystem.distSrcNominalTypesMod.ITypeDefinition
 import typings.ramlTypesystem.mod.^
-import typings.ramlTypesystem.nominalTypesMod.ITypeDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -178,7 +178,7 @@ inline def setPropertyConstructor(c: Any): Unit = ^.asInstanceOf[js.Dynamic].app
 
 inline def toNominal(t: IParsedType, bt: js.Function1[/* name */ String, ITypeDefinition]): ITypeDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("toNominal")(t.asInstanceOf[js.Any], bt.asInstanceOf[js.Any])).asInstanceOf[ITypeDefinition]
 
-inline def toValidationPath(p: String): typings.ramlTypesystem.typesystemInterfacesMod.IValidationPath = ^.asInstanceOf[js.Dynamic].applyDynamic("toValidationPath")(p.asInstanceOf[js.Any]).asInstanceOf[typings.ramlTypesystem.typesystemInterfacesMod.IValidationPath]
+inline def toValidationPath(p: String): typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IValidationPath = ^.asInstanceOf[js.Dynamic].applyDynamic("toValidationPath")(p.asInstanceOf[js.Any]).asInstanceOf[typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IValidationPath]
 
 inline def unify(name: String, types: IParsedType*): IParsedType = ^.asInstanceOf[js.Dynamic].applyDynamic("unify")(scala.List(name.asInstanceOf[js.Any]).`++`(types.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IParsedType]
 
@@ -187,29 +187,29 @@ inline def validate(i: Any, t: IParsedType, autoClose: Boolean): IStatus = (^.as
 
 inline def validateTypeDefinition(t: IParsedType, collection: IParsedTypeCollection): IStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("validateTypeDefinition")(t.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[IStatus]
 
-type ElementSourceInfo = typings.ramlTypesystem.typesystemInterfacesMod.IHasExtra
+type ElementSourceInfo = typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IHasExtra
 
-type IAnnotation = typings.ramlTypesystem.typesystemInterfacesMod.IAnnotation
+type IAnnotation = typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IAnnotation
 
-type IConstraint = typings.ramlTypesystem.typesystemInterfacesMod.IConstraint
+type IConstraint = typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IConstraint
 
-type IExample = typings.ramlTypesystem.typesystemInterfacesMod.IExample
+type IExample = typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IExample
 
-type IHasExtra = typings.ramlTypesystem.typesystemInterfacesMod.IHasExtra
+type IHasExtra = typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IHasExtra
 
-type IParsedType = typings.ramlTypesystem.typesystemInterfacesMod.IParsedType
+type IParsedType = typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IParsedType
 
-type IParsedTypeCollection = typings.ramlTypesystem.typesystemInterfacesMod.IParsedTypeCollection
+type IParsedTypeCollection = typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IParsedTypeCollection
 
-type IPropertyInfo = typings.ramlTypesystem.typesystemInterfacesMod.IPropertyInfo
+type IPropertyInfo = typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IPropertyInfo
 
-type IStatus = typings.ramlTypesystem.typesystemInterfacesMod.IStatus
+type IStatus = typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IStatus
 
-type ITypeFacet = typings.ramlTypesystem.typesystemInterfacesMod.ITypeFacet
+type ITypeFacet = typings.ramlTypesystem.distSrcTypesystemInterfacesMod.ITypeFacet
 
-type ITypeRegistry = typings.ramlTypesystem.typesystemInterfacesMod.ITypeRegistry
+type ITypeRegistry = typings.ramlTypesystem.distSrcTypesystemInterfacesMod.ITypeRegistry
 
-type IValidationPath = typings.ramlTypesystem.typesystemInterfacesMod.IValidationPath
+type IValidationPath = typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IValidationPath
 
 type Open = /**
   * this index signature is here to specify that IType can contain unknown user defined facets and annotations

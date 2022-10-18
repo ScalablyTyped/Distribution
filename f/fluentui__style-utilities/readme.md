@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__style-utilities
 
-Typings are for version 8.7.12
+Typings are for version 8.8.0
 
 ## Library description:
 Styling helpers for Fluent UI React.

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXREnterExitUIButton")
 @js.native
 open class WebXREnterExitUIButton protected ()
-  extends typings.babylonjs.legacyMod.WebXREnterExitUIButton {
+  extends typings.babylonjs.legacyLegacyMod.WebXREnterExitUIButton {
   /**
     * Creates a WebXREnterExitUIButton
     * @param element button element

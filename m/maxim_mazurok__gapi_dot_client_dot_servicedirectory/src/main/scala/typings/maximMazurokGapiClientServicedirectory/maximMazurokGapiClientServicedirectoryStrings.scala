@@ -7,22 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientServicedirectoryStrings {
   
   @js.native
-  sealed trait Endpoint extends StObject
-  inline def Endpoint: Endpoint = "Endpoint".asInstanceOf[Endpoint]
-  
-  @js.native
-  sealed trait Location extends StObject
-  inline def Location: Location = "Location".asInstanceOf[Location]
-  
-  @js.native
-  sealed trait Namespace extends StObject
-  inline def Namespace: Namespace = "Namespace".asInstanceOf[Namespace]
-  
-  @js.native
-  sealed trait Service extends StObject
-  inline def Service: Service = "Service".asInstanceOf[Service]
-  
-  @js.native
   sealed trait servicedirectory extends StObject
   inline def servicedirectory: servicedirectory = "servicedirectory".asInstanceOf[servicedirectory]
   

@@ -1,9 +1,9 @@
 package typings.awsSdkHttpSerialization
 
-import typings.awsSdkTypes.httpMod.HeaderBag
-import typings.awsSdkTypes.httpMod.HttpRequest
-import typings.awsSdkTypes.httpMod.HttpResponse
-import typings.awsSdkTypes.httpMod.QueryParameterBag
+import typings.awsSdkTypes.distTypesHttpMod.HeaderBag
+import typings.awsSdkTypes.distTypesHttpMod.HttpRequest
+import typings.awsSdkTypes.distTypesHttpMod.HttpResponse
+import typings.awsSdkTypes.distTypesHttpMod.QueryParameterBag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

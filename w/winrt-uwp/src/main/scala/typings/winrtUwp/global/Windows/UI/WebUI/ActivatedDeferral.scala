@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages delayed activation for an app. */
-@JSGlobal("Windows.UI.WebUI.ActivatedDeferral")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.ActivatedDeferral")
 @js.native
-abstract class ActivatedDeferral ()
+open class ActivatedDeferral ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.ActivatedDeferral {
   

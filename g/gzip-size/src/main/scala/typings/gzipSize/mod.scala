@@ -2,7 +2,7 @@ package typings.gzipSize
 
 import typings.gzipSize.gzipSizeStrings.`gzip-size`
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeStreamMod.PassThrough
+import typings.node.nodeColonstreamMod.PassThrough
 import typings.node.zlibMod.ZlibOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

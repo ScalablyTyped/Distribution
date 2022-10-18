@@ -1,6 +1,6 @@
 package typings.reactNativeSvg.anon
 
-import typings.reactNativeSvg.typesMod.NumberProp
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

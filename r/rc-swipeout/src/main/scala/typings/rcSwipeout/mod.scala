@@ -10,7 +10,7 @@ object mod {
   @JSImport("rc-swipeout", JSImport.Default)
   @js.native
   open class default protected ()
-    extends typings.rcSwipeout.swipeoutMod.default {
+    extends typings.rcSwipeout.libSwipeoutMod.default {
     def this(props: Any) = this()
   }
   /* static members */

@@ -60,6 +60,8 @@ trait ColumnComponent
   /** You can move a column component next to another column using the move function. */
   def move(toColumn: ColumnLookup, after: Boolean): Unit = js.native
   
+  def popup(contents: String, position: PopupPosition): Unit = js.native
+  
   /** The reloadHeaderFilter function rebuilds the header filter element, updating any params passed into the editor used to generate the filter. */
   def reloadHeaderFilter(): Unit = js.native
   

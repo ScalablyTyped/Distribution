@@ -1,7 +1,7 @@
 package typings.relayRuntime.anon
 
+import typings.relayRuntime.libStoreRelayStoreTypesMod.LogEvent
 import typings.relayRuntime.relayRuntimeStrings.networkDoterror
-import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

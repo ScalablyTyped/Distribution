@@ -12,6 +12,10 @@ trait Default extends StObject {
   
   var id: Double
   
+  var inherited: Boolean
+  
+  var inherited_allows_public_repositories: js.UndefOr[Boolean] = js.undefined
+  
   var name: String
   
   /**
@@ -22,7 +26,8 @@ trait Default extends StObject {
   
   var runners_url: String
   
-  var selected_organizations_url: js.UndefOr[String] = js.undefined
+  /** @description Link to the selected repositories resource for this runner group. Not present unless visibility was set to `selected` */
+  var selected_repositories_url: js.UndefOr[String] = js.undefined
   
   /** @description List of workflows the runner group should be allowed to run. This setting will be ignored unless `restricted_to_workflows` is set to `true`. */
   var selected_workflows: js.UndefOr[js.Array[String]] = js.undefined
@@ -41,11 +46,12 @@ object Default {
     allows_public_repositories: Boolean,
     default: Boolean,
     id: Double,
+    inherited: Boolean,
     name: String,
     runners_url: String,
     visibility: String
   ): Default = {
-    val __obj = js.Dynamic.literal(allows_public_repositories = allows_public_repositories.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], runners_url = runners_url.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allows_public_repositories = allows_public_repositories.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inherited = inherited.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], runners_url = runners_url.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Default]
   }
   
@@ -57,6 +63,12 @@ object Default {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
+    
+    inline def setInherited_allows_public_repositories(value: Boolean): Self = StObject.set(x, "inherited_allows_public_repositories", value.asInstanceOf[js.Any])
+    
+    inline def setInherited_allows_public_repositoriesUndefined: Self = StObject.set(x, "inherited_allows_public_repositories", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setRestricted_to_workflows(value: Boolean): Self = StObject.set(x, "restricted_to_workflows", value.asInstanceOf[js.Any])
@@ -65,9 +77,9 @@ object Default {
     
     inline def setRunners_url(value: String): Self = StObject.set(x, "runners_url", value.asInstanceOf[js.Any])
     
-    inline def setSelected_organizations_url(value: String): Self = StObject.set(x, "selected_organizations_url", value.asInstanceOf[js.Any])
+    inline def setSelected_repositories_url(value: String): Self = StObject.set(x, "selected_repositories_url", value.asInstanceOf[js.Any])
     
-    inline def setSelected_organizations_urlUndefined: Self = StObject.set(x, "selected_organizations_url", js.undefined)
+    inline def setSelected_repositories_urlUndefined: Self = StObject.set(x, "selected_repositories_url", js.undefined)
     
     inline def setSelected_workflows(value: js.Array[String]): Self = StObject.set(x, "selected_workflows", value.asInstanceOf[js.Any])
     

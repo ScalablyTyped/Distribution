@@ -1,6 +1,6 @@
 package typings.rcFieldForm.anon
 
-import typings.rcFieldForm.fieldMod.FieldProps
+import typings.rcFieldForm.esFieldMod.FieldProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

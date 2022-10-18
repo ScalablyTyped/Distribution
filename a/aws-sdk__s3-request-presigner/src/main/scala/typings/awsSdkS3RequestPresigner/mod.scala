@@ -1,10 +1,10 @@
 package typings.awsSdkS3RequestPresigner
 
-import typings.awsSdkS3RequestPresigner.presignerMod.S3RequestPresignerOptions
+import typings.awsSdkS3RequestPresigner.distTypesPresignerMod.S3RequestPresignerOptions
 import typings.awsSdkSmithyClient.mod.Client
 import typings.awsSdkSmithyClient.mod.Command
-import typings.awsSdkTypes.responseMod.MetadataBearer
-import typings.awsSdkTypes.signatureMod.RequestPresigningArguments
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typings.awsSdkTypes.distTypesSignatureMod.RequestPresigningArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object mod {
   @JSImport("@aws-sdk/s3-request-presigner", "S3RequestPresigner")
   @js.native
   open class S3RequestPresigner protected ()
-    extends typings.awsSdkS3RequestPresigner.presignerMod.S3RequestPresigner {
+    extends typings.awsSdkS3RequestPresigner.distTypesPresignerMod.S3RequestPresigner {
     def this(options: S3RequestPresignerOptions) = this()
   }
   

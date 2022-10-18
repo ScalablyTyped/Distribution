@@ -34,5 +34,5 @@ object MorphTargetManager {
     * @param scene defines the hosting scene
     * @returns the new MorphTargetManager
     */
-  inline def Parse(serializationObject: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.morphTargetManagerMod.MorphTargetManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.morphTargetManagerMod.MorphTargetManager]
+  inline def Parse(serializationObject: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.morphMorphTargetManagerMod.MorphTargetManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.morphMorphTargetManagerMod.MorphTargetManager]
 }

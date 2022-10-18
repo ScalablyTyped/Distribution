@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-node", "HeadObjectCommand")
 @js.native
 open class HeadObjectCommand protected ()
-  extends typings.awsSdkClientS3Node.headObjectCommandMod.HeadObjectCommand {
+  extends typings.awsSdkClientS3Node.commandsHeadObjectCommandMod.HeadObjectCommand {
   def this(input: HeadObjectInput) = this()
 }

@@ -9,7 +9,7 @@ trait Infix extends StObject {
   
   var infix: ArgCount
   
-  var regSymbol: String
+  var regSymbol: /* \* */ String
   
   var symbol: Asterisk
 }
@@ -24,7 +24,7 @@ object Infix {
     
     inline def setInfix(value: ArgCount): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     
-    inline def setRegSymbol(value: String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: /* \* */ String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
     inline def setSymbol(value: Asterisk): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }

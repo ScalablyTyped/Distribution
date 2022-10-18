@@ -2,8 +2,8 @@ package typings.uirouterCore.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.uirouterCore.coreservicesMod.LocationServices
-import typings.uirouterCore.routerMod.UIRouter
+import typings.uirouterCore.libCommonCoreservicesMod.LocationServices
+import typings.uirouterCore.libRouterMod.UIRouter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

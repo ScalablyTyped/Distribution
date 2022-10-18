@@ -1,6 +1,5 @@
 package typings.hapiLab
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.hapiLab.anon.OmitTestOptionsplan
 import typings.std.Record
@@ -11,13 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   object script {
-    
-    inline def apply(): Script = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Script]
-    inline def apply(options: Options): Script = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Script]
-    
-    @JSImport("@hapi/lab", "script")
-    @js.native
-    val ^ : js.Any = js.native
     
     @js.native
     trait Action extends StObject {
@@ -781,11 +773,7 @@ object mod {
     }
   }
   
-  object types extends Shortcut {
-    
-    @JSImport("@hapi/lab", "types")
-    @js.native
-    val ^ : Types = js.native
+  object types {
     
     trait Expect extends StObject {
       
@@ -835,10 +823,5 @@ object mod {
         inline def setExpect(value: Expect): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
       }
     }
-    
-    type _To = Types
-    
-    /* This means you don't have to write `^`, but can instead just say `types.foo` */
-    override def _to: Types = ^
   }
 }

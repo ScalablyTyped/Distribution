@@ -117,6 +117,12 @@ type koa = HttpServer
 
 /**
   * This plugin automatically instruments the
+  * [mariadb](https://github.com/mariadb-corporation/mariadb-connector-nodejs) module.
+  */
+type mariadb = mysql
+
+/**
+  * This plugin automatically instruments the
   * [memcached](https://github.com/3rd-Eden/memcached) module.
   */
 type memcached = Instrumentation

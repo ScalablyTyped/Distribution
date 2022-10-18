@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientGenomics.gapi.client.genomics
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,9 +36,7 @@ trait Action extends StObject {
     * engine authors to determine whether an individual action has succeeded or failed.
     */
   var environment: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Action & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The set of flags to apply to this action. */
@@ -59,9 +56,7 @@ trait Action extends StObject {
     * as localization or debugging). They are returned in the operation metadata, but are otherwise ignored.
     */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Action & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -89,9 +84,7 @@ trait Action extends StObject {
     * must be less than 65536. If it is zero, an unused random port is assigned. To determine the resulting port number, consult the `ContainerStartedEvent` in the operation metadata.
     */
   var portMappings: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Action & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any
   ] = js.undefined
   
   /**
@@ -128,9 +121,7 @@ object Action {
     inline def setEntrypointUndefined: Self = StObject.set(x, "entrypoint", js.undefined)
     
     inline def setEnvironment(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Action & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
@@ -146,9 +137,7 @@ object Action {
     inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Action & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -168,9 +157,7 @@ object Action {
     inline def setPidNamespaceUndefined: Self = StObject.set(x, "pidNamespace", js.undefined)
     
     inline def setPortMappings(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Action & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any
     ): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
     
     inline def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)

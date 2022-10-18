@@ -7,22 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object uifabricFoundationStrings {
   
   @js.native
-  sealed trait IComponentStyles extends StObject
-  inline def IComponentStyles: IComponentStyles = "IComponentStyles".asInstanceOf[IComponentStyles]
-  
-  @js.native
-  sealed trait ISlotDefinition extends StObject
-  inline def ISlotDefinition: ISlotDefinition = "ISlotDefinition".asInstanceOf[ISlotDefinition]
-  
-  @js.native
-  sealed trait ISlots extends StObject
-  inline def ISlots: ISlots = "ISlots".asInstanceOf[ISlots]
-  
-  @js.native
-  sealed trait Slots extends StObject
-  inline def Slots: Slots = "Slots".asInstanceOf[Slots]
-  
-  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   

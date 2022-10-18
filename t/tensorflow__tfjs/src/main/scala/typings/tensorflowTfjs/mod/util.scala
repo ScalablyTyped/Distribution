@@ -15,6 +15,7 @@ import typings.tensorflowTfjsCore.distTypesMod.NumericDataType
 import typings.tensorflowTfjsCore.distTypesMod.RecursiveArray
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
+import typings.tensorflowTfjsCore.distTypesMod.WebGLData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,6 +133,7 @@ object util {
   inline def indexToLoc(index: Double, rank: Double, strides: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexToLoc")(index.asInstanceOf[js.Any], rank.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   inline def inferDtype(values: TensorLike): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("inferDtype")(values.asInstanceOf[js.Any]).asInstanceOf[DataType]
+  inline def inferDtype(values: WebGLData): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("inferDtype")(values.asInstanceOf[js.Any]).asInstanceOf[DataType]
   
   inline def inferFromImplicitShape(shape: js.Array[Double], size: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("inferFromImplicitShape")(shape.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
@@ -203,7 +205,31 @@ object util {
     delayFn: js.Function1[/* counter */ Double, Double],
     maxCounter: Double
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeatedTry")(checkFn.asInstanceOf[js.Any], delayFn.asInstanceOf[js.Any], maxCounter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def repeatedTry(
+    checkFn: js.Function0[Boolean],
+    delayFn: js.Function1[/* counter */ Double, Double],
+    maxCounter: Double,
+    scheduleFn: js.Function2[/* functionRef */ js.Function, /* delay */ Double, Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeatedTry")(checkFn.asInstanceOf[js.Any], delayFn.asInstanceOf[js.Any], maxCounter.asInstanceOf[js.Any], scheduleFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def repeatedTry(
+    checkFn: js.Function0[Boolean],
+    delayFn: js.Function1[/* counter */ Double, Double],
+    maxCounter: Unit,
+    scheduleFn: js.Function2[/* functionRef */ js.Function, /* delay */ Double, Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeatedTry")(checkFn.asInstanceOf[js.Any], delayFn.asInstanceOf[js.Any], maxCounter.asInstanceOf[js.Any], scheduleFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def repeatedTry(checkFn: js.Function0[Boolean], delayFn: Unit, maxCounter: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeatedTry")(checkFn.asInstanceOf[js.Any], delayFn.asInstanceOf[js.Any], maxCounter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def repeatedTry(
+    checkFn: js.Function0[Boolean],
+    delayFn: Unit,
+    maxCounter: Double,
+    scheduleFn: js.Function2[/* functionRef */ js.Function, /* delay */ Double, Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeatedTry")(checkFn.asInstanceOf[js.Any], delayFn.asInstanceOf[js.Any], maxCounter.asInstanceOf[js.Any], scheduleFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def repeatedTry(
+    checkFn: js.Function0[Boolean],
+    delayFn: Unit,
+    maxCounter: Unit,
+    scheduleFn: js.Function2[/* functionRef */ js.Function, /* delay */ Double, Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeatedTry")(checkFn.asInstanceOf[js.Any], delayFn.asInstanceOf[js.Any], maxCounter.asInstanceOf[js.Any], scheduleFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def rightPad(a: String, size: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rightPad")(a.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
   

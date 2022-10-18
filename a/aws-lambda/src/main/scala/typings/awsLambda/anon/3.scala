@@ -1,7 +1,7 @@
 package typings.awsLambda.anon
 
 import typings.awsLambda.awsLambdaStrings.Delegate
-import typings.awsLambda.lexV2Mod.LevV2DialogActionWithoutSlot
+import typings.awsLambda.triggerLexV2Mod.LevV2DialogActionWithoutSlot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

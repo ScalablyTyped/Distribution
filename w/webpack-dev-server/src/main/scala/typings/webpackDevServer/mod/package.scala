@@ -6,7 +6,7 @@ import typings.connectHistoryApiFallback.mod.Options
 import typings.express.mod.ErrorRequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.httpProxyMiddleware.typesMod.Filter
+import typings.httpProxyMiddleware.distTypesMod.Filter
 import typings.node.httpMod.ServerResponse
 import typings.std.Record
 import typings.webpackDevMiddleware.mod.Context
@@ -84,7 +84,7 @@ Any]
 
 type ClientConnection = (WebSocket & IsAlive) | ConnectionsendWebSocketse
 
-type Compiler = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ Any
+type Compiler = typings.webpack.mod.Compiler
 
 type ConnectHistoryApiFallbackOptions = Options
 
@@ -121,7 +121,7 @@ type Headers = js.Array[Key] | (Record[String, String | js.Array[String]])
 */
 type Host = _Host | String
 
-type HttpProxyMiddlewareOptions = typings.httpProxyMiddleware.typesMod.Options
+type HttpProxyMiddlewareOptions = typings.httpProxyMiddleware.distTypesMod.Options
 
 type HttpProxyMiddlewareOptionsFilter = Filter
 
@@ -133,9 +133,9 @@ type IncomingMessage = typings.node.httpMod.IncomingMessage
 
 type Middleware = typings.webpackDevServer.anon.Middleware | ExpressRequestHandler | ExpressErrorRequestHandler
 
-type MultiCompiler = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.MultiCompiler */ Any
+type MultiCompiler = typings.webpack.mod.MultiCompiler
 
-type MultiStats = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.MultiStats */ Any
+type MultiStats = typings.webpack.mod.MultiStats
 
 type NetworkInterfaceInfo = typings.node.osMod.NetworkInterfaceInfo
 
@@ -162,11 +162,11 @@ Any,
 /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
 Record[String, Any]]
 
-type RequestHandler = typings.httpProxyMiddleware.typesMod.RequestHandler
+type RequestHandler = typings.httpProxyMiddleware.distTypesMod.RequestHandler
 
 type Response = Response_[Any, Record[String, Any]]
 
-type Schema = typings.schemaUtils.validateMod.Schema
+type Schema = typings.schemaUtils.declarationsValidateMod.Schema
 
 type ServeIndexOptions = typings.serveIndex.mod.Options
 
@@ -174,14 +174,14 @@ type ServeStaticOptions = typings.serveStatic.mod.ServeStaticOptions[ServerRespo
 
 type Socket = typings.node.netMod.Socket
 
-type Stats = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Stats */ Any
+type Stats = typings.webpack.mod.Stats
 
-type StatsCompilation = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.StatsCompilation */ Any
+type StatsCompilation = typings.webpack.mod.StatsCompilation
 
-type StatsOptions = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.StatsOptions */ Any
+type StatsOptions = typings.webpack.mod.StatsOptions
 
 type WatchOptions = typings.chokidar.mod.WatchOptions
 
 type WebSocketServer = typings.ws.mod.WebSocketServer | ServercloseWebSocketServe
 
-type WebpackConfiguration = typings.webpackDevServer.mod.webpackAugmentingMod.Configuration
+type WebpackConfiguration = typings.webpack.mod.Configuration

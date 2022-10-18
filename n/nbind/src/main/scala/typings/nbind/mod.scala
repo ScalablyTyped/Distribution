@@ -3,7 +3,7 @@ package typings.nbind
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.nbind.anon.Bindvalue
-import typings.nbind.commonMod.SignatureType
+import typings.nbind.distCommonMod.SignatureType
 import typings.nbind.nbindStrings.emcc
 import typings.nbind.nbindStrings.node
 import org.scalablytyped.runtime.StObject

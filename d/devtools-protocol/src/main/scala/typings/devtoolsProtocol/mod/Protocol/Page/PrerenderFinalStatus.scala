@@ -43,6 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ActivatedBeforeStarted
   - typings.devtoolsProtocol.devtoolsProtocolStrings.InactivePageRestriction
   - typings.devtoolsProtocol.devtoolsProtocolStrings.StartFailed
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.TimeoutBackgrounded
 */
 trait PrerenderFinalStatus extends StObject
 object PrerenderFinalStatus {
@@ -116,6 +117,8 @@ object PrerenderFinalStatus {
   inline def StartFailed: typings.devtoolsProtocol.devtoolsProtocolStrings.StartFailed = "StartFailed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.StartFailed]
   
   inline def Stop: typings.devtoolsProtocol.devtoolsProtocolStrings.Stop = "Stop".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Stop]
+  
+  inline def TimeoutBackgrounded: typings.devtoolsProtocol.devtoolsProtocolStrings.TimeoutBackgrounded = "TimeoutBackgrounded".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.TimeoutBackgrounded]
   
   inline def TriggerBackgrounded: typings.devtoolsProtocol.devtoolsProtocolStrings.TriggerBackgrounded = "TriggerBackgrounded".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.TriggerBackgrounded]
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "TimeUtils")
 @js.native
 open class TimeUtils ()
-  extends typings.azureMsalCommon.timeUtilsMod.TimeUtils
+  extends typings.azureMsalCommon.distUtilsTimeUtilsMod.TimeUtils
 /* static members */
 object TimeUtils {
   

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("js-joda", "TemporalAccessor")
+/* note: abstract class */ @JSImport("js-joda", "TemporalAccessor")
 @js.native
-abstract class TemporalAccessor () extends StObject {
+open class TemporalAccessor () extends StObject {
   
   def get(field: TemporalField): Double = js.native
   

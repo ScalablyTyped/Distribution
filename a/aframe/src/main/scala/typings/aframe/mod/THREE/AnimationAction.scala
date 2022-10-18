@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class AnimationAction protected ()
   extends typings.three.mod.AnimationAction {
   def this(
-    mixer: typings.three.animationMixerMod.AnimationMixer,
-    clip: typings.three.animationClipMod.AnimationClip
+    mixer: typings.three.srcAnimationAnimationMixerMod.AnimationMixer,
+    clip: typings.three.srcAnimationAnimationClipMod.AnimationClip
   ) = this()
 }

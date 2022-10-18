@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@esfx/canceltoken" : "1.0.0-pre.41"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@esfx/canceltoken" : "1.0.0-pre.41"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

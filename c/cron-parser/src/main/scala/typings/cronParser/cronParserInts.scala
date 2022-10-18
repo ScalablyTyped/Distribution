@@ -23,8 +23,16 @@ object cronParserInts {
   inline def `24`: `24` = 24.asInstanceOf[`24`]
   
   @js.native
+  sealed trait `30` extends StObject
+  inline def `30`: `30` = 30.asInstanceOf[`30`]
+  
+  @js.native
   sealed trait `32` extends StObject
   inline def `32`: `32` = 32.asInstanceOf[`32`]
+  
+  @js.native
+  sealed trait `60` extends StObject
+  inline def `60`: `60` = 60.asInstanceOf[`60`]
   
   @js.native
   sealed trait `8` extends StObject

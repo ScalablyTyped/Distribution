@@ -36,9 +36,9 @@ object Text {
   }
   
   /** Identifies an alternate form of the word represented by a WordSegment object.. For example, this may contain a number in a normalized format. */
-  @JSGlobal("Windows.Data.Text.AlternateWordForm")
+  /* note: abstract class */ @JSGlobal("Windows.Data.Text.AlternateWordForm")
   @js.native
-  abstract class AlternateWordForm ()
+  open class AlternateWordForm ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Text.AlternateWordForm {
     
@@ -56,9 +56,9 @@ object Text {
   }
   
   /** Represents a segment from your provided text that includes a word and any trailing whitespace and/or punctuation after this word. */
-  @JSGlobal("Windows.Data.Text.SelectableWordSegment")
+  /* note: abstract class */ @JSGlobal("Windows.Data.Text.SelectableWordSegment")
   @js.native
-  abstract class SelectableWordSegment ()
+  open class SelectableWordSegment ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Text.SelectableWordSegment {
     
@@ -206,9 +206,9 @@ object Text {
   }
   
   /** Provides a way for apps to get information about Unicode characters. */
-  @JSGlobal("Windows.Data.Text.UnicodeCharacters")
+  /* note: abstract class */ @JSGlobal("Windows.Data.Text.UnicodeCharacters")
   @js.native
-  abstract class UnicodeCharacters ()
+  open class UnicodeCharacters ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Text.UnicodeCharacters
   object UnicodeCharacters {
@@ -441,9 +441,9 @@ object Text {
   }
   
   /** Represents a word from your provided text. */
-  @JSGlobal("Windows.Data.Text.WordSegment")
+  /* note: abstract class */ @JSGlobal("Windows.Data.Text.WordSegment")
   @js.native
-  abstract class WordSegment ()
+  open class WordSegment ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Text.WordSegment {
     

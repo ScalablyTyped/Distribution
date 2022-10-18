@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__hub-extension
 
-Typings are for version 2.2.6
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab integration for JupyterHub
@@ -10,10 +10,10 @@ JupyterLab integration for JupyterHub
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/hub-extension |
 | Keywords           | - |
-| # releases         | 125 |
-| # dependents       | 3 |
-| # downloads        | 1433697 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 192973.33333333334 |
+| # stars            | 12379.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

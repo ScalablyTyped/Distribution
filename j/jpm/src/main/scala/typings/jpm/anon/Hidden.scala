@@ -1,7 +1,7 @@
 package typings.jpm.anon
 
-import typings.jpm.toolbarMod.Toolbar
-import typings.jpm.toolbarMod.ToolbarItem
+import typings.jpm.sdkUiToolbarMod.Toolbar
+import typings.jpm.sdkUiToolbarMod.ToolbarItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

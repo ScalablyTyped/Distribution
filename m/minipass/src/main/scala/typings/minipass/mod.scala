@@ -16,7 +16,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Stream
 import typings.std.ArrayBufferLike
 import typings.std.AsyncIterable
-import typings.std.AsyncIterator
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,7 +28,7 @@ object mod {
   open class default[RType /* <: Any */, WType /* <: Any */] protected () extends Minipass[RType, WType] {
     // setEncoding(encoding: Encoding): void
     // Options required if not reading buffers
-    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RType extends Buffer ? [] | [Options<RType>] : [Options<RType>] is not an array type */ args: js.Array[Any | Options[RType]]) = this()
+    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RType extends Buffer ? [] | [Options<RType>] : [Options<RType>] is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: RType extends node.buffer.<global>.Buffer ? [] | [minipass.minipass.Options<RType>] : [minipass.minipass.Options<RType>] */ js.Any) = this()
   }
   /* static members */
   object default {
@@ -41,9 +40,7 @@ object mod {
     inline def isStream(stream: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStream")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
-  trait BufferOptions
-    extends StObject
-       with Options[Any] {
+  trait BufferOptions extends StObject {
     
     var async: js.UndefOr[Boolean] = js.undefined
     
@@ -93,8 +90,6 @@ object mod {
     extends Stream
        with DualIterable[RType] {
     
-    def apply(): /* import warning: importer.ImportType#apply Failed type conversion: std.Iterator<RType, any, undefined>[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.asyncIterator * / any] */ js.Any = js.native
-    
     /**
       * alias for on()
       */
@@ -111,7 +106,7 @@ object mod {
     
     def collect(): js.Promise[js.Array[RType]] = js.native
     
-    def concat(): js.Promise[RType] = js.native
+    def concat(): /* import warning: importer.ImportType#apply Failed type conversion: RType extends minipass.minipass.BufferOrString ? std.Promise<RType> : never */ js.Any = js.native
     
     def destroy(): Unit = js.native
     def destroy(er: Any): Unit = js.native
@@ -154,7 +149,7 @@ object mod {
     def on(
       event: typings.minipass.minipassStrings.readable | drain | resume | end | prefinish | finish | close,
       listener: js.Function0[Any]
-    ): /* import warning: importer.ImportType#apply Failed type conversion: this[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.iterator * / any] */ js.Any = js.native
+    ): this.type = js.native
     def on(event: String, listener: js.Function1[/* repeated */ Any, Any]): this.type = js.native
     @JSName("on")
     def on_data(event: data, listener: js.Function1[/* chunk */ RType, Any]): this.type = js.native
@@ -190,9 +185,7 @@ object mod {
     def write(chunk: WType, encoding: Encoding, cb: js.Function0[Unit]): Boolean = js.native
   }
   
-  trait ObjectModeOptions
-    extends StObject
-       with Options[Any] {
+  trait ObjectModeOptions extends StObject {
     
     var async: js.UndefOr[Boolean] = js.undefined
     
@@ -215,29 +208,15 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.minipass.mod.ObjectModeOptions
-    - typings.minipass.mod.BufferOptions
-    - typings.minipass.mod.StringOptions
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends string ? minipass.minipass.StringOptions : T extends node.buffer.<global>.Buffer ? minipass.minipass.BufferOptions : minipass.minipass.ObjectModeOptions
+    }}}
+    */
+  @js.native
   trait Options[T] extends StObject
-  object Options {
-    
-    inline def BufferOptions(): typings.minipass.mod.BufferOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.minipass.mod.BufferOptions]
-    }
-    
-    inline def ObjectModeOptions(): typings.minipass.mod.ObjectModeOptions = {
-      val __obj = js.Dynamic.literal(objectMode = true)
-      __obj.asInstanceOf[typings.minipass.mod.ObjectModeOptions]
-    }
-    
-    inline def StringOptions(encoding: BufferEncoding): typings.minipass.mod.StringOptions = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.minipass.mod.StringOptions]
-    }
-  }
   
   trait Pipe[R, W] extends StObject {
     
@@ -245,11 +224,7 @@ object mod {
     
     var opts: PipeOptions
     
-    def src(): /* import warning: importer.ImportType#apply Failed type conversion: std.Iterator<R, any, undefined>[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.asyncIterator * / any] */ js.Any
-    @JSName("src")
-    def src_AsyncIterator(): AsyncIterator[R, Any, Unit]
-    @JSName("src")
-    var src_Original: Minipass[R, W]
+    var src: Minipass[R, W]
   }
   object Pipe {
     
@@ -303,9 +278,7 @@ object mod {
     def resume(): Any = js.native
   }
   
-  trait StringOptions
-    extends StObject
-       with Options[Any] {
+  trait StringOptions extends StObject {
     
     var async: js.UndefOr[Boolean] = js.undefined
     

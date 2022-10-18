@@ -1,11 +1,11 @@
 package typings.babylonjs.materialsIndexMod
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.anon.LightmapMode
-import typings.babylonjs.effectMod.IEffectCreationOptions
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.lightMod.Light
-import typings.babylonjs.prePassConfigurationMod.PrePassConfiguration
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.lightsLightMod.Light
+import typings.babylonjs.materialsEffectMod.IEffectCreationOptions
+import typings.babylonjs.materialsPrePassConfigurationMod.PrePassConfiguration
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "MaterialHelper")
 @js.native
 open class MaterialHelper ()
-  extends typings.babylonjs.materialHelperMod.MaterialHelper
+  extends typings.babylonjs.materialsMaterialHelperMod.MaterialHelper
 /* static members */
 object MaterialHelper {
   
@@ -31,14 +31,18 @@ object MaterialHelper {
     */
   inline def BindBonesParameters(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("BindBonesParameters")().asInstanceOf[Unit]
   inline def BindBonesParameters(mesh: Unit, effect: Unit, prePassConfiguration: PrePassConfiguration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindBonesParameters")(mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], prePassConfiguration.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def BindBonesParameters(mesh: Unit, effect: typings.babylonjs.effectMod.Effect): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindBonesParameters")(mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def BindBonesParameters(mesh: Unit, effect: typings.babylonjs.effectMod.Effect, prePassConfiguration: PrePassConfiguration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindBonesParameters")(mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], prePassConfiguration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def BindBonesParameters(mesh: Unit, effect: typings.babylonjs.materialsEffectMod.Effect): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindBonesParameters")(mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def BindBonesParameters(
+    mesh: Unit,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
+    prePassConfiguration: PrePassConfiguration
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindBonesParameters")(mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], prePassConfiguration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def BindBonesParameters(mesh: AbstractMesh): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("BindBonesParameters")(mesh.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def BindBonesParameters(mesh: AbstractMesh, effect: Unit, prePassConfiguration: PrePassConfiguration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindBonesParameters")(mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], prePassConfiguration.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def BindBonesParameters(mesh: AbstractMesh, effect: typings.babylonjs.effectMod.Effect): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindBonesParameters")(mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def BindBonesParameters(mesh: AbstractMesh, effect: typings.babylonjs.materialsEffectMod.Effect): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindBonesParameters")(mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def BindBonesParameters(
     mesh: AbstractMesh,
-    effect: typings.babylonjs.effectMod.Effect,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
     prePassConfiguration: PrePassConfiguration
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindBonesParameters")(mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], prePassConfiguration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -47,7 +51,7 @@ object MaterialHelper {
     * @param effect The effect we are binding the data to
     * @param scene The scene the clip plane information are extracted from
     */
-  inline def BindClipPlane(effect: typings.babylonjs.effectMod.Effect, scene: Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindClipPlane")(effect.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def BindClipPlane(effect: typings.babylonjs.materialsEffectMod.Effect, scene: Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindClipPlane")(effect.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Binds the fog information from the scene to the effect for the given mesh.
@@ -56,8 +60,13 @@ object MaterialHelper {
     * @param effect The effect we are binding the data to
     * @param linearSpace Defines if the fog effect is applied in linear space
     */
-  inline def BindFogParameters(scene: Scene, mesh: AbstractMesh, effect: typings.babylonjs.effectMod.Effect): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindFogParameters")(scene.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def BindFogParameters(scene: Scene, mesh: AbstractMesh, effect: typings.babylonjs.effectMod.Effect, linearSpace: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindFogParameters")(scene.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], linearSpace.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def BindFogParameters(scene: Scene, mesh: AbstractMesh, effect: typings.babylonjs.materialsEffectMod.Effect): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindFogParameters")(scene.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def BindFogParameters(
+    scene: Scene,
+    mesh: AbstractMesh,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
+    linearSpace: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindFogParameters")(scene.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], linearSpace.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Binds the lights information from the scene to the effect for the given mesh.
@@ -72,14 +81,14 @@ object MaterialHelper {
     light: Light,
     lightIndex: Double,
     scene: Scene,
-    effect: typings.babylonjs.effectMod.Effect,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
     useSpecular: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindLight")(light.asInstanceOf[js.Any], lightIndex.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], useSpecular.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def BindLight(
     light: Light,
     lightIndex: Double,
     scene: Scene,
-    effect: typings.babylonjs.effectMod.Effect,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
     useSpecular: Boolean,
     receiveShadows: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindLight")(light.asInstanceOf[js.Any], lightIndex.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], useSpecular.asInstanceOf[js.Any], receiveShadows.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -90,7 +99,7 @@ object MaterialHelper {
     * @param effect The effect we are binding the data to
     * @param lightIndex The light index in the effect used to render
     */
-  inline def BindLightProperties(light: Light, effect: typings.babylonjs.effectMod.Effect, lightIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindLightProperties")(light.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], lightIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def BindLightProperties(light: Light, effect: typings.babylonjs.materialsEffectMod.Effect, lightIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindLightProperties")(light.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], lightIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Binds the lights information from the scene to the effect for the given mesh.
@@ -100,11 +109,16 @@ object MaterialHelper {
     * @param defines The generated defines for the effect
     * @param maxSimultaneousLights The maximum number of light that can be bound to the effect
     */
-  inline def BindLights(scene: Scene, mesh: AbstractMesh, effect: typings.babylonjs.effectMod.Effect, defines: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindLights")(scene.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], defines.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def BindLights(
     scene: Scene,
     mesh: AbstractMesh,
-    effect: typings.babylonjs.effectMod.Effect,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
+    defines: Any
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindLights")(scene.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], defines.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def BindLights(
+    scene: Scene,
+    mesh: AbstractMesh,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
     defines: Any,
     maxSimultaneousLights: Double
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindLights")(scene.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], defines.asInstanceOf[js.Any], maxSimultaneousLights.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -115,14 +129,14 @@ object MaterialHelper {
     * @param effect The effect we are binding the data to
     * @param scene The scene we are willing to render with logarithmic scale for
     */
-  inline def BindLogDepth(defines: Any, effect: typings.babylonjs.effectMod.Effect, scene: Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindLogDepth")(defines.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def BindLogDepth(defines: Any, effect: typings.babylonjs.materialsEffectMod.Effect, scene: Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindLogDepth")(defines.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Binds the morph targets information from the mesh to the effect.
     * @param abstractMesh The mesh we are binding the information to render
     * @param effect The effect we are binding the data to
     */
-  inline def BindMorphTargetParameters(abstractMesh: AbstractMesh, effect: typings.babylonjs.effectMod.Effect): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindMorphTargetParameters")(abstractMesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def BindMorphTargetParameters(abstractMesh: AbstractMesh, effect: typings.babylonjs.materialsEffectMod.Effect): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindMorphTargetParameters")(abstractMesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Binds the scene's uniform buffer to the effect.
@@ -130,8 +144,8 @@ object MaterialHelper {
     * @param sceneUbo defines the uniform buffer storing scene data
     */
   inline def BindSceneUniformBuffer(
-    effect: typings.babylonjs.effectMod.Effect,
-    sceneUbo: typings.babylonjs.uniformBufferMod.UniformBuffer
+    effect: typings.babylonjs.materialsEffectMod.Effect,
+    sceneUbo: typings.babylonjs.materialsUniformBufferMod.UniformBuffer
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindSceneUniformBuffer")(effect.asInstanceOf[js.Any], sceneUbo.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -141,8 +155,8 @@ object MaterialHelper {
     * @param key The channel key "diffuse", "specular"... used in the shader
     */
   inline def BindTextureMatrix(
-    texture: typings.babylonjs.baseTextureMod.BaseTexture,
-    uniformBuffer: typings.babylonjs.uniformBufferMod.UniformBuffer,
+    texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
+    uniformBuffer: typings.babylonjs.materialsUniformBufferMod.UniformBuffer,
     key: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindTextureMatrix")(texture.asInstanceOf[js.Any], uniformBuffer.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -162,21 +176,21 @@ object MaterialHelper {
     * @param rank the current rank of the Effect
     * @returns The newly affected rank
     */
-  inline def HandleFallbacksForShadows(defines: Any, fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HandleFallbacksForShadows")(defines.asInstanceOf[js.Any], fallbacks.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def HandleFallbacksForShadows(defines: Any, fallbacks: typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HandleFallbacksForShadows")(defines.asInstanceOf[js.Any], fallbacks.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def HandleFallbacksForShadows(
     defines: Any,
-    fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
+    fallbacks: typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks,
     maxSimultaneousLights: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HandleFallbacksForShadows")(defines.asInstanceOf[js.Any], fallbacks.asInstanceOf[js.Any], maxSimultaneousLights.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def HandleFallbacksForShadows(
     defines: Any,
-    fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
+    fallbacks: typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks,
     maxSimultaneousLights: Double,
     rank: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HandleFallbacksForShadows")(defines.asInstanceOf[js.Any], fallbacks.asInstanceOf[js.Any], maxSimultaneousLights.asInstanceOf[js.Any], rank.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def HandleFallbacksForShadows(
     defines: Any,
-    fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
+    fallbacks: typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks,
     maxSimultaneousLights: Unit,
     rank: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HandleFallbacksForShadows")(defines.asInstanceOf[js.Any], fallbacks.asInstanceOf[js.Any], maxSimultaneousLights.asInstanceOf[js.Any], rank.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -200,7 +214,7 @@ object MaterialHelper {
     attribs: js.Array[String],
     mesh: AbstractMesh,
     defines: Any,
-    fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks
+    fallbacks: typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareAttributesForBones")(attribs.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], defines.asInstanceOf[js.Any], fallbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -208,7 +222,7 @@ object MaterialHelper {
     * @param attribs The current list of supported attribs
     * @param defines The current MaterialDefines of the effect
     */
-  inline def PrepareAttributesForInstances(attribs: js.Array[String], defines: typings.babylonjs.materialDefinesMod.MaterialDefines): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareAttributesForInstances")(attribs.asInstanceOf[js.Any], defines.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PrepareAttributesForInstances(attribs: js.Array[String], defines: typings.babylonjs.materialsMaterialDefinesMod.MaterialDefines): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareAttributesForInstances")(attribs.asInstanceOf[js.Any], defines.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Prepares the list of attributes required for morph targets according to the effect defines.
@@ -407,7 +421,7 @@ object MaterialHelper {
     * @param defines The defines to update
     * @param key The channel key "diffuse", "specular"... used in the shader
     */
-  inline def PrepareDefinesForMergedUV(texture: typings.babylonjs.baseTextureMod.BaseTexture, defines: Any, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareDefinesForMergedUV")(texture.asInstanceOf[js.Any], defines.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PrepareDefinesForMergedUV(texture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, defines: Any, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareDefinesForMergedUV")(texture.asInstanceOf[js.Any], defines.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Helper used to prepare the list of defines associated with misc. values for shader compilation

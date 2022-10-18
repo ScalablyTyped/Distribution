@@ -1,23 +1,27 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationCore.reactNavigationCoreBooleans.`true`
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `3` extends StObject {
+trait `3`[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends StObject {
   
-  var canPreventDefault: `true`
+  var params: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
 }
 object `3` {
   
-  inline def apply(): `3` = {
-    val __obj = js.Dynamic.literal(canPreventDefault = true)
-    __obj.asInstanceOf[`3`]
+  inline def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](
+    params: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
+  ): `3`[ParamList, RouteName] = {
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`3`[ParamList, RouteName]]
   }
   
-  extension [Self <: `3`](x: Self) {
+  extension [Self <: `3`[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (`3`[ParamList, RouteName])) {
     
-    inline def setCanPreventDefault(value: `true`): Self = StObject.set(x, "canPreventDefault", value.asInstanceOf[js.Any])
+    inline def setParams(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
+    ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

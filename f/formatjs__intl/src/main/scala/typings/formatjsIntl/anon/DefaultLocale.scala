@@ -1,6 +1,6 @@
 package typings.formatjsIntl.anon
 
-import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
+import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
 import typings.formatjsIntl.srcErrorMod.InvalidConfigError
 import typings.formatjsIntl.srcErrorMod.MessageFormatError
 import typings.formatjsIntl.srcErrorMod.MissingDataError

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Actions extends StObject {
   
-  var actions: js.UndefOr[js.Array[TypeDeclarativeWebRequestActionsList]] = js.undefined
+  var actions: js.UndefOr[js.Array[Type]] = js.undefined
   
   var conditions: js.UndefOr[js.Array[Dictkey]] = js.undefined
   
@@ -23,11 +23,11 @@ object Actions {
   
   extension [Self <: Actions](x: Self) {
     
-    inline def setActions(value: js.Array[TypeDeclarativeWebRequestActionsList]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[Type]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: TypeDeclarativeWebRequestActionsList*): Self = StObject.set(x, "actions", js.Array(value*))
+    inline def setActionsVarargs(value: Type*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setConditions(value: js.Array[Dictkey]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     

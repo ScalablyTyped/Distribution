@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsAppleOutlinedMod.AppleOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appleOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/AppleOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/AppleOutlined", JSImport.Default)
   @js.native
   val default: AppleOutlinedIconType = js.native
-  
-  @js.native
-  trait AppleOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_AppleOutlinedIconType: String = js.native
-  }
   
   type _To = AppleOutlinedIconType
   

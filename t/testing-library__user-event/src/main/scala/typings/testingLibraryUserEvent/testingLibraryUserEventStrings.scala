@@ -1,9 +1,9 @@
 package typings.testingLibraryUserEvent
 
-import typings.testingLibraryUserEvent.buttonsMod._MouseButton
-import typings.testingLibraryUserEvent.isElementTypeMod.tag
-import typings.testingLibraryUserEvent.readNextDescriptorMod.Context
-import typings.testingLibraryUserEvent.typesMod.EventType
+import typings.testingLibraryUserEvent.distTypesEventTypesMod.EventType
+import typings.testingLibraryUserEvent.distTypesSystemPointerButtonsMod._MouseButton
+import typings.testingLibraryUserEvent.distTypesUtilsKeyDefReadNextDescriptorMod.Context
+import typings.testingLibraryUserEvent.distTypesUtilsMiscIsElementTypeMod.tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

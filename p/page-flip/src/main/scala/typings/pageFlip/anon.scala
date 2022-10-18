@@ -1,6 +1,6 @@
 package typings.pageFlip
 
-import typings.pageFlip.settingsMod.SizeType
+import typings.pageFlip.distSettingsMod.SizeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

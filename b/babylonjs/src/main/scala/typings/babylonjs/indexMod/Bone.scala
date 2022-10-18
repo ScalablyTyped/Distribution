@@ -19,267 +19,174 @@ open class Bone protected ()
     * @param baseMatrix defines the base matrix
     * @param index defines index of the bone in the hierarchy
     */
-  def this(/**
-    * defines the bone name
-    */
-  name: String, skeleton: typings.babylonjs.skeletonMod.Skeleton) = this()
   def this(
     /**
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone]
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton
   ) = this()
   def this(
     /**
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone]
+  ) = this()
+  def this(
+    /**
+    * defines the bone name
+    */
+  name: String,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
     parentBone: Unit,
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix]
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   ) = this()
   def this(
     /**
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix]
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   ) = this()
   def this(
     /**
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Unit,
-    localMatrix: Unit,
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix]
-  ) = this()
-  def this(
-    /**
-    * defines the bone name
-    */
-  name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Unit,
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix]
-  ) = this()
-  def this(
-    /**
-    * defines the bone name
-    */
-  name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Unit,
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix]
-  ) = this()
-  def this(
-    /**
-    * defines the bone name
-    */
-  name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix]
-  ) = this()
-  def this(
-    /**
-    * defines the bone name
-    */
-  name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
     parentBone: Unit,
     localMatrix: Unit,
-    restPose: Unit,
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix]
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   ) = this()
   def this(
     /**
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
     parentBone: Unit,
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
+  ) = this()
+  def this(
+    /**
+    * defines the bone name
+    */
+  name: String,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
     localMatrix: Unit,
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix]
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   ) = this()
   def this(
     /**
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Unit,
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    restPose: Unit,
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix]
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   ) = this()
   def this(
     /**
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Unit,
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix]
-  ) = this()
-  def this(
-    /**
-    * defines the bone name
-    */
-  name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Unit,
-    restPose: Unit,
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix]
-  ) = this()
-  def this(
-    /**
-    * defines the bone name
-    */
-  name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Unit,
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix]
-  ) = this()
-  def this(
-    /**
-    * defines the bone name
-    */
-  name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    restPose: Unit,
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix]
-  ) = this()
-  def this(
-    /**
-    * defines the bone name
-    */
-  name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix]
-  ) = this()
-  def this(
-    /**
-    * defines the bone name
-    */
-  name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
     parentBone: Unit,
     localMatrix: Unit,
     restPose: Unit,
-    baseMatrix: Unit,
-    index: Nullable[Double]
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   ) = this()
   def this(
     /**
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
     parentBone: Unit,
     localMatrix: Unit,
-    restPose: Unit,
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    index: Nullable[Double]
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   ) = this()
   def this(
     /**
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
     parentBone: Unit,
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    restPose: Unit,
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
+  ) = this()
+  def this(
+    /**
+    * defines the bone name
+    */
+  name: String,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Unit,
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
+  ) = this()
+  def this(
+    /**
+    * defines the bone name
+    */
+  name: String,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
     localMatrix: Unit,
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    baseMatrix: Unit,
-    index: Nullable[Double]
+    restPose: Unit,
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   ) = this()
   def this(
     /**
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Unit,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
     localMatrix: Unit,
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    index: Nullable[Double]
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   ) = this()
   def this(
     /**
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Unit,
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     restPose: Unit,
-    baseMatrix: Unit,
-    index: Nullable[Double]
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   ) = this()
   def this(
     /**
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
+  ) = this()
+  def this(
+    /**
+    * defines the bone name
+    */
+  name: String,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
     parentBone: Unit,
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    restPose: Unit,
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    index: Nullable[Double]
-  ) = this()
-  def this(
-    /**
-    * defines the bone name
-    */
-  name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Unit,
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    baseMatrix: Unit,
-    index: Nullable[Double]
-  ) = this()
-  def this(
-    /**
-    * defines the bone name
-    */
-  name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Unit,
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    index: Nullable[Double]
-  ) = this()
-  def this(
-    /**
-    * defines the bone name
-    */
-  name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
     localMatrix: Unit,
     restPose: Unit,
     baseMatrix: Unit,
@@ -290,11 +197,11 @@ open class Bone protected ()
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Unit,
     localMatrix: Unit,
     restPose: Unit,
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     index: Nullable[Double]
   ) = this()
   def this(
@@ -302,10 +209,10 @@ open class Bone protected ()
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Unit,
     localMatrix: Unit,
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     baseMatrix: Unit,
     index: Nullable[Double]
   ) = this()
@@ -314,11 +221,11 @@ open class Bone protected ()
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Unit,
     localMatrix: Unit,
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     index: Nullable[Double]
   ) = this()
   def this(
@@ -326,9 +233,9 @@ open class Bone protected ()
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Unit,
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     restPose: Unit,
     baseMatrix: Unit,
     index: Nullable[Double]
@@ -338,11 +245,11 @@ open class Bone protected ()
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Unit,
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     restPose: Unit,
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     index: Nullable[Double]
   ) = this()
   def this(
@@ -350,10 +257,10 @@ open class Bone protected ()
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Unit,
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     baseMatrix: Unit,
     index: Nullable[Double]
   ) = this()
@@ -362,11 +269,107 @@ open class Bone protected ()
     * defines the bone name
     */
   name: String,
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
-    parentBone: Nullable[typings.babylonjs.boneMod.Bone],
-    localMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    restPose: Nullable[typings.babylonjs.mathVectorMod.Matrix],
-    baseMatrix: Nullable[typings.babylonjs.mathVectorMod.Matrix],
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Unit,
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    index: Nullable[Double]
+  ) = this()
+  def this(
+    /**
+    * defines the bone name
+    */
+  name: String,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
+    localMatrix: Unit,
+    restPose: Unit,
+    baseMatrix: Unit,
+    index: Nullable[Double]
+  ) = this()
+  def this(
+    /**
+    * defines the bone name
+    */
+  name: String,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
+    localMatrix: Unit,
+    restPose: Unit,
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    index: Nullable[Double]
+  ) = this()
+  def this(
+    /**
+    * defines the bone name
+    */
+  name: String,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
+    localMatrix: Unit,
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    baseMatrix: Unit,
+    index: Nullable[Double]
+  ) = this()
+  def this(
+    /**
+    * defines the bone name
+    */
+  name: String,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
+    localMatrix: Unit,
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    index: Nullable[Double]
+  ) = this()
+  def this(
+    /**
+    * defines the bone name
+    */
+  name: String,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    restPose: Unit,
+    baseMatrix: Unit,
+    index: Nullable[Double]
+  ) = this()
+  def this(
+    /**
+    * defines the bone name
+    */
+  name: String,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    restPose: Unit,
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    index: Nullable[Double]
+  ) = this()
+  def this(
+    /**
+    * defines the bone name
+    */
+  name: String,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    baseMatrix: Unit,
+    index: Nullable[Double]
+  ) = this()
+  def this(
+    /**
+    * defines the bone name
+    */
+  name: String,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
+    parentBone: Nullable[typings.babylonjs.bonesBoneMod.Bone],
+    localMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    restPose: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    baseMatrix: Nullable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
     index: Nullable[Double]
   ) = this()
 }

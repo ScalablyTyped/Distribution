@@ -2,7 +2,6 @@ package typings.meteor
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.meteor.checkMod.Match.Matcher
 import typings.meteor.checkMod.Match.Pattern
 import typings.std.BooleanConstructor
@@ -132,9 +131,15 @@ object checkMod {
         StringConstructor | NumberConstructor | BooleanConstructor | ObjectConstructor | FunctionConstructor | (Instantiable1[/* args (repeated) */ Any, Any]) | Null | String | Double | Boolean | js.Array[Any] | StringDictionary[Any] | Matcher[Any]
       ]
     
-    type PatternMatch[T /* <: Pattern */] = Any | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]: any}
-      */ typings.meteor.meteorStrings.PatternMatch & TopLevel[Any]) | js.Array[Any] | T | js.Function | Boolean | Double | String
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      T extends meteor.meteor/check.Match.Matcher<infer U> ? U : T extends std.StringConstructor ? string : T extends std.NumberConstructor ? number : T extends std.BooleanConstructor ? boolean : T extends std.ObjectConstructor ? object : T extends std.FunctionConstructor ? std.Function : T extends undefined | null | string | number | boolean ? T : T extends new (args : ...any): infer U ? U : T extends [meteor.meteor/check.Match.Pattern] ? std.Array<meteor.meteor/check.Match.PatternMatch<T[0]>> : T extends {[key: string] : meteor.meteor/check.Match.Pattern} ? {[ K in keyof T ]: meteor.meteor/check.Match.PatternMatch<T[K]>} : unknown
+      }}}
+      */
+    @js.native
+    trait PatternMatch[T /* <: Pattern */] extends StObject
   }
   
   inline def check(value: Any, pattern: String): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(meteor), TsIdentModule(None,List(meteor, check)), TsIdentSimple(Match), TsIdentSimple(PatternMatch))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(string))),IArray())))*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(meteor), TsIdentModule(None,List(meteor, check)), TsIdentSimple(Match), TsIdentSimple(PatternMatch))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(string))),IArray())))*/ Boolean]

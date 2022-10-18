@@ -3,7 +3,7 @@ package typings.officeUiFabricReact.mod
 import typings.officeUiFabricReact.anon.PartialIToggleState
 import typings.officeUiFabricReact.anon.ReadonlyIToggleProps
 import typings.officeUiFabricReact.anon.ReadonlyIToggleState
-import typings.officeUiFabricReact.toggleTypesMod.IToggleProps
+import typings.officeUiFabricReact.libComponentsToggleToggleDottypesMod.IToggleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

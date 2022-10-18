@@ -1,7 +1,7 @@
 package typings.parchment
 
-import typings.parchment.blotMod.BlotConstructor
-import typings.parchment.scopeMod.Scope
+import typings.parchment.distTypingsBlotAbstractBlotMod.BlotConstructor
+import typings.parchment.distTypingsScopeMod.Scope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

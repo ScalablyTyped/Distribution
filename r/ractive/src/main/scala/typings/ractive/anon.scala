@@ -34,7 +34,6 @@ import typings.ractive.ractiveStrings.slow
 import typings.std.FlatArray
 import typings.std.HTMLElement
 import typings.std.IterableIterator
-import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,11 +44,14 @@ object anon {
     
     var `0`: T
     
-    var `1`: Merge[(Omit[T, /* keyof any */ String]) & Any, Any, X]
+    var `1`: /* import warning: importer.ImportType#apply Failed type conversion: (t : U): any extends (head : infer Head, tail : infer Tail): any ? ractive.ractive.Merge<std.Omit<T, keyof Head & keyof X> & Head, Tail, X> : never */ js.Any
   }
   object `0` {
     
-    inline def apply[T, U /* <: js.Array[Any] */, X](`0`: T, `1`: Merge[(Omit[T, /* keyof any */ String]) & Any, Any, X]): `0`[T, U, X] = {
+    inline def apply[T, U /* <: js.Array[Any] */, X](
+      `0`: T,
+      `1`: /* import warning: importer.ImportType#apply Failed type conversion: (t : U): any extends (head : infer Head, tail : infer Tail): any ? ractive.ractive.Merge<std.Omit<T, keyof Head & keyof X> & Head, Tail, X> : never */ js.Any
+    ): `0`[T, U, X] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
       __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
@@ -60,7 +62,9 @@ object anon {
       
       inline def set0(value: T): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
-      inline def set1(value: Merge[(Omit[T, /* keyof any */ String]) & Any, Any, X]): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+      inline def set1(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: (t : U): any extends (head : infer Head, tail : infer Tail): any ? ractive.ractive.Merge<std.Omit<T, keyof Head & keyof X> & Head, Tail, X> : never */ js.Any
+      ): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,7 +85,7 @@ object anon {
     var DEBUG_PROMISES: Boolean = js.native
     
     /** The parent constructor used to create this constructor. */
-    var Parent: Static[Ractive[Ractive[Any]]] = js.native
+    var Parent: Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
     
     /** The build version of Ractive. */
     val VERSION: String = js.native
@@ -100,24 +104,26 @@ object anon {
     
     var components: Registry[Component] = js.native
     
-    var decorators: Registry[Decorator[Ractive[Ractive[Any]]]] = js.native
+    var decorators: Registry[Decorator[Ractive[/* ractive.ractive.Ractive<any> */ Any]]] = js.native
     
     /** The registries that are inherited by all instance. */
-    var defaults: Registries[Ractive[Ractive[Any]]] = js.native
+    var defaults: Registries[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
     
     var easings: Registry[Easing] = js.native
     
     /** Escape the given key, so that it can be safely used in a keypath e.g. 'foo.bar' becomes 'foo\.bar' */
     def escapeKey(key: String): String = js.native
     
-    var events: Registry[EventPlugin[Ractive[Ractive[Any]]]] = js.native
+    var events: Registry[EventPlugin[Ractive[/* ractive.ractive.Ractive<any> */ Any]]] = js.native
     
     /** Create a new component with this constructor as a starting point. */
-    def extend(): Static[Ractive[Ractive[Any]]] = js.native
+    def extend(): Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
     def extend[T /* <: ExtendOpts[Any] & ValueMap */, U /* <: ReadonlyArrayExtendOptsan */](
       opts: T,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param more because its type U is not an array type */ more: U
-    ): Static[Ractive[Ractive[Any]] & (Merge[T, U, ExtendOpts[Ractive[Ractive[Any]]]])] = js.native
+    ): Static[
+        (Ractive[/* ractive.ractive.Ractive<any> */ Any]) & (Merge[T, U, ExtendOpts[Ractive[/* ractive.ractive.Ractive<any> */ Any]]])
+      ] = js.native
     
     /** Create a new component with this constructor as a starting point using the given constructor. */
     def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V]): Static[Ractive[U] & U] = js.native
@@ -195,7 +201,7 @@ object anon {
     /** Unescape the given key e.g. 'foo\.bar' becomes 'foo.bar'.k */
     def unescapeKey(key: String): String = js.native
     
-    def use(args: Plugin*): Static[Ractive[Ractive[Any]]] = js.native
+    def use(args: Plugin*): Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
   }
   
   trait Optional extends StObject {

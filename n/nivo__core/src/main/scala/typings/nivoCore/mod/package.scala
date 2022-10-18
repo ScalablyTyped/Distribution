@@ -80,8 +80,8 @@ inline def getPropertyAccessor[Datum, Value](accessor: PropertyAccessor[Datum, V
 
 inline def getRelativeCursor(element: typings.std.Element, event: MouseEvent[typings.std.Element, NativeMouseEvent]): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeCursor")(element.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
 
-inline def getValueFormatter[Value, Context](): (js.Function2[/* value */ Value, /* context */ Context, String]) | (js.Function1[/* value */ Value, String]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFormatter")().asInstanceOf[(js.Function2[/* value */ Value, /* context */ Context, String]) | (js.Function1[/* value */ Value, String])]
-inline def getValueFormatter[Value, Context](format: ValueFormat[Value, Context]): (js.Function2[/* value */ Value, /* context */ Context, String]) | (js.Function1[/* value */ Value, String]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFormatter")(format.asInstanceOf[js.Any]).asInstanceOf[(js.Function2[/* value */ Value, /* context */ Context, String]) | (js.Function1[/* value */ Value, String])]
+inline def getValueFormatter[Value, Context](): /* import warning: importer.ImportType#apply Failed type conversion: Context extends void ? (value : Value): string : (value : Value, context : Context): string */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFormatter")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: Context extends void ? (value : Value): string : (value : Value, context : Context): string */ js.Any]
+inline def getValueFormatter[Value, Context](format: ValueFormat[Value, Context]): /* import warning: importer.ImportType#apply Failed type conversion: Context extends void ? (value : Value): string : (value : Value, context : Context): string */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFormatter")(format.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: Context extends void ? (value : Value): string : (value : Value, context : Context): string */ js.Any]
 
 inline def isCursorInRect(x: Double, y: Double, width: Double, height: Double, cursorX: Double, cursorY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCursorInRect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], cursorX.asInstanceOf[js.Any], cursorY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
@@ -123,10 +123,8 @@ inline def usePropertyAccessor[Datum, Value](accessor: PropertyAccessor[Datum, V
 
 inline def useTheme(): CompleteTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[CompleteTheme]
 
-inline def useValueFormatter[Value, Context](): (js.Function2[/* value */ Value, /* context */ Context, String]) | (js.Function1[/* value */ Value, String]) = ^.asInstanceOf[js.Dynamic].applyDynamic("useValueFormatter")().asInstanceOf[(js.Function2[/* value */ Value, /* context */ Context, String]) | (js.Function1[/* value */ Value, String])]
-inline def useValueFormatter[Value, Context](format: ValueFormat[Value, Context]): (js.Function2[/* value */ Value, /* context */ Context, String]) | (js.Function1[/* value */ Value, String]) = ^.asInstanceOf[js.Dynamic].applyDynamic("useValueFormatter")(format.asInstanceOf[js.Any]).asInstanceOf[(js.Function2[/* value */ Value, /* context */ Context, String]) | (js.Function1[/* value */ Value, String])]
-
-type Accessor[T /* <: /* keyof U */ String */, U] = /* import warning: importer.ImportType#apply Failed type conversion: U[T] */ js.Any
+inline def useValueFormatter[Value, Context](): /* import warning: importer.ImportType#apply Failed type conversion: Context extends void ? (value : Value): string : (value : Value, context : Context): string */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useValueFormatter")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: Context extends void ? (value : Value): string : (value : Value, context : Context): string */ js.Any]
+inline def useValueFormatter[Value, Context](format: ValueFormat[Value, Context]): /* import warning: importer.ImportType#apply Failed type conversion: Context extends void ? (value : Value): string : (value : Value, context : Context): string */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useValueFormatter")(format.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: Context extends void ? (value : Value): string : (value : Value, context : Context): string */ js.Any]
 
 type CartesianMarkersType = js.Function1[/* props */ CartesianMarkersProps[DatumValue, DatumValue], Element]
 
@@ -140,8 +138,6 @@ type DatumValue = String | Double | js.Date
 
 type DotsItemSymbolComponent = FunctionComponent[DotsItemSymbolProps]
 
-type ExtractProps[TComponent] = Any
-
 type GetColor[T] = js.Function1[/* datum */ T, String]
 
 type PropertyAccessor[Datum, Value] = String | (js.Function1[/* datum */ Datum, Value])
@@ -154,4 +150,4 @@ type SvgWrapperType = js.Function1[/* props */ PropsWithChildrenwidthnum, Elemen
 
 type ThemeProviderType = js.Function1[/* props */ PropsWithChildren[ThemeProviderProps], Element]
 
-type ValueFormat[Value, Context] = String | (js.Function2[/* value */ Value, /* context */ Context, String]) | (js.Function1[/* value */ Value, String])
+type ValueFormat[Value, Context] = String | (/* import warning: importer.ImportType#apply Failed type conversion: Context extends void ? (value : Value): string : (value : Value, context : Context): string */ js.Any)

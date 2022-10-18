@@ -1,6 +1,6 @@
 package typings.ajvPack
 
-import typings.ajv.coreMod.Ajv
+import typings.ajv.distCoreMod.Ajv
 import typings.ajv.distTypesMod.AnySchema
 import typings.ajv.distTypesMod.KeywordDefinition
 import typings.ajvPack.ajvPackStrings.log

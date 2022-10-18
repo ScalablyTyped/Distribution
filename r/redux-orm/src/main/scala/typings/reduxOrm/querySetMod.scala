@@ -1,7 +1,7 @@
 package typings.reduxOrm
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.reduxOrm.databaseMod.QueryClause
+import typings.reduxOrm.dbDatabaseMod.QueryClause
 import typings.reduxOrm.modelMod.AnyModel
 import typings.reduxOrm.modelMod.IdType
 import typings.reduxOrm.modelMod.ModelClass

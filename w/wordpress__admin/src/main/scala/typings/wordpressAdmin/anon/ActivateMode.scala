@@ -13,12 +13,12 @@ trait ActivateMode extends StObject {
   /**
     * Activate a mode on the frame.
     */
-  def activateMode(mode: String): typings.wordpressAdmin.mediaViewsMod.Frame
+  def activateMode(mode: String): typings.wordpressAdmin.componentsMediaViewsMod.Frame
   
   /**
     * Deactivate a mode on the frame.
     */
-  def deactivateMode(mode: String): typings.wordpressAdmin.mediaViewsMod.Frame
+  def deactivateMode(mode: String): typings.wordpressAdmin.componentsMediaViewsMod.Frame
   
   def initialize(): Unit
   
@@ -30,7 +30,7 @@ trait ActivateMode extends StObject {
   /**
     * Reset all states on the frame to their defaults.
     */
-  def reset(): typings.wordpressAdmin.mediaViewsMod.Frame
+  def reset(): typings.wordpressAdmin.componentsMediaViewsMod.Frame
   
   def triggerModeEvents(
     model: Model[Any, ModelSetOptions, Any],
@@ -41,11 +41,11 @@ trait ActivateMode extends StObject {
 object ActivateMode {
   
   inline def apply(
-    activateMode: String => typings.wordpressAdmin.mediaViewsMod.Frame,
-    deactivateMode: String => typings.wordpressAdmin.mediaViewsMod.Frame,
+    activateMode: String => typings.wordpressAdmin.componentsMediaViewsMod.Frame,
+    deactivateMode: String => typings.wordpressAdmin.componentsMediaViewsMod.Frame,
     initialize: () => Unit,
     isModeActive: String => Boolean,
-    reset: () => typings.wordpressAdmin.mediaViewsMod.Frame,
+    reset: () => typings.wordpressAdmin.componentsMediaViewsMod.Frame,
     triggerModeEvents: (Model[Any, ModelSetOptions, Any], Collection[Model[Any, ModelSetOptions, Any]], StringDictionary[String]) => Unit
   ): ActivateMode = {
     val __obj = js.Dynamic.literal(activateMode = js.Any.fromFunction1(activateMode), deactivateMode = js.Any.fromFunction1(deactivateMode), initialize = js.Any.fromFunction0(initialize), isModeActive = js.Any.fromFunction1(isModeActive), reset = js.Any.fromFunction0(reset), triggerModeEvents = js.Any.fromFunction3(triggerModeEvents))
@@ -54,15 +54,15 @@ object ActivateMode {
   
   extension [Self <: ActivateMode](x: Self) {
     
-    inline def setActivateMode(value: String => typings.wordpressAdmin.mediaViewsMod.Frame): Self = StObject.set(x, "activateMode", js.Any.fromFunction1(value))
+    inline def setActivateMode(value: String => typings.wordpressAdmin.componentsMediaViewsMod.Frame): Self = StObject.set(x, "activateMode", js.Any.fromFunction1(value))
     
-    inline def setDeactivateMode(value: String => typings.wordpressAdmin.mediaViewsMod.Frame): Self = StObject.set(x, "deactivateMode", js.Any.fromFunction1(value))
+    inline def setDeactivateMode(value: String => typings.wordpressAdmin.componentsMediaViewsMod.Frame): Self = StObject.set(x, "deactivateMode", js.Any.fromFunction1(value))
     
     inline def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
     
     inline def setIsModeActive(value: String => Boolean): Self = StObject.set(x, "isModeActive", js.Any.fromFunction1(value))
     
-    inline def setReset(value: () => typings.wordpressAdmin.mediaViewsMod.Frame): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => typings.wordpressAdmin.componentsMediaViewsMod.Frame): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     inline def setTriggerModeEvents(
       value: (Model[Any, ModelSetOptions, Any], Collection[Model[Any, ModelSetOptions, Any]], StringDictionary[String]) => Unit

@@ -1,7 +1,7 @@
 package typings.babylonjs.renderingIndexMod
 
+import typings.babylonjs.meshesSubMeshMod.SubMesh
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Rendering/index", "RenderingGroup")
 @js.native
 open class RenderingGroup protected ()
-  extends typings.babylonjs.renderingGroupMod.RenderingGroup {
+  extends typings.babylonjs.renderingRenderingGroupMod.RenderingGroup {
   /**
     * Creates a new rendering group.
     * @param index The rendering group index

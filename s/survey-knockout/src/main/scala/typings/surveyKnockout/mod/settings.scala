@@ -330,6 +330,14 @@ object settings {
   def showModal: Any = js.native
   inline def showModal_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showModal")(x.asInstanceOf[js.Any])
   
+  /*
+    * By default we do not store a value for a locale if it equals to "default" locale value
+    */
+  @JSImport("survey-knockout", "settings.storeDuplicatedTranslations")
+  @js.native
+  def storeDuplicatedTranslations: Boolean = js.native
+  inline def storeDuplicatedTranslations_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storeDuplicatedTranslations")(x.asInstanceOf[js.Any])
+  
   @JSImport("survey-knockout", "settings.supportCreatorV2")
   @js.native
   def supportCreatorV2: Boolean = js.native

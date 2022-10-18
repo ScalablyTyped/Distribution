@@ -2013,7 +2013,7 @@ object mod extends Shortcut {
   
   type Omitted = Omit[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any, 
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.asyncRedis.asyncRedisStrings.client_, typings.asyncRedis.asyncRedisStrings.CLIENT, typings.asyncRedis.asyncRedisStrings.hmset_ */ Any
   ]
   
   type OverloadedCommand[T, U] = js.Function1[/* repeated */ T, js.Promise[U]]

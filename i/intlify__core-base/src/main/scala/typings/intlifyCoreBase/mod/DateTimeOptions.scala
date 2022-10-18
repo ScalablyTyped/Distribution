@@ -42,7 +42,7 @@ trait DateTimeOptions[Key, Locales]
 }
 object DateTimeOptions {
   
-  inline def apply[Key, Locales](formatMatcher: (js.UndefOr[basic | (`best fit`)]) & (js.UndefOr[(`best fit`) | basic])): DateTimeOptions[Key, Locales] = {
+  inline def apply[Key, Locales](formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])): DateTimeOptions[Key, Locales] = {
     val __obj = js.Dynamic.literal(formatMatcher = formatMatcher.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeOptions[Key, Locales]]
   }

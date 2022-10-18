@@ -17,7 +17,7 @@ open class WebXREnterExitUI protected ()
   def this(
     _scene: typings.babylonjs.sceneMod.Scene,
     /** version of the options passed to this UI */
-  options: typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUIOptions
+  options: typings.babylonjs.xRWebXREnterExitUIMod.WebXREnterExitUIOptions
   ) = this()
 }
 /* static members */
@@ -36,7 +36,7 @@ object WebXREnterExitUI {
     */
   inline def CreateAsync(
     scene: typings.babylonjs.sceneMod.Scene,
-    helper: typings.babylonjs.webXRExperienceHelperMod.WebXRExperienceHelper,
-    options: typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUIOptions
-  ): js.Promise[typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUI] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any], helper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUI]]
+    helper: typings.babylonjs.xRWebXRExperienceHelperMod.WebXRExperienceHelper,
+    options: typings.babylonjs.xRWebXREnterExitUIMod.WebXREnterExitUIOptions
+  ): js.Promise[typings.babylonjs.xRWebXREnterExitUIMod.WebXREnterExitUI] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any], helper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.xRWebXREnterExitUIMod.WebXREnterExitUI]]
 }

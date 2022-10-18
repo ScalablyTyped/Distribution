@@ -11,17 +11,17 @@ import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.Window
-import typings.uifabricReactHooks.useBooleanMod.IUseBooleanCallbacks
-import typings.uifabricReactHooks.useControllableValueMod.ChangeCallback
-import typings.uifabricReactHooks.useMergedRefsMod.RefObjectFunction
-import typings.uifabricReactHooks.useRefEffectMod.RefCallback
-import typings.uifabricReactHooks.useSetIntervalMod.UseSetIntervalReturnType
-import typings.uifabricReactHooks.useSetTimeoutMod.UseSetTimeoutReturnType
-import typings.uifabricReactHooks.useTargetMod.Target
-import typings.uifabricReactHooks.useWarningsMod.IWarningOptions
+import typings.uifabricReactHooks.libUseBooleanMod.IUseBooleanCallbacks
+import typings.uifabricReactHooks.libUseControllableValueMod.ChangeCallback
+import typings.uifabricReactHooks.libUseMergedRefsMod.RefObjectFunction
+import typings.uifabricReactHooks.libUseRefEffectMod.RefCallback
+import typings.uifabricReactHooks.libUseSetIntervalMod.UseSetIntervalReturnType
+import typings.uifabricReactHooks.libUseSetTimeoutMod.UseSetTimeoutReturnType
+import typings.uifabricReactHooks.libUseTargetMod.Target
+import typings.uifabricReactHooks.libUseWarningsMod.IWarningOptions
+import typings.uifabricUtilities.libPointMod.Point
 import typings.uifabricUtilities.mod.Async
 import typings.uifabricUtilities.mod.Rectangle
-import typings.uifabricUtilities.pointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

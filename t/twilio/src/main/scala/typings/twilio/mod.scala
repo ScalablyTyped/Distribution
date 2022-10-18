@@ -5,29 +5,29 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Shortcut
 import typings.std.Record
-import typings.twilio.accessTokenMod.AccessTokenOptions
 import typings.twilio.anon.TaskRouterCapability
 import typings.twilio.anon.TypeofAccessToken
 import typings.twilio.anon.TypeofClientCapability
-import typings.twilio.clientCapabilityMod.ClientCapabilityOptions
-import typings.twilio.twilioMod.TwilioClientOptions
-import typings.twilio.webhooksMod.Request
-import typings.twilio.webhooksMod.RequestValidatorOptions
-import typings.twilio.webhooksMod.WebhookOptions
+import typings.twilio.libJwtAccessTokenMod.AccessTokenOptions
+import typings.twilio.libJwtClientCapabilityMod.ClientCapabilityOptions
+import typings.twilio.libRestTwilioMod.TwilioClientOptions
+import typings.twilio.libWebhooksWebhooksMod.Request
+import typings.twilio.libWebhooksWebhooksMod.RequestValidatorOptions
+import typings.twilio.libWebhooksWebhooksMod.WebhookOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): typings.twilio.twilioMod.^ = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.twilio.twilioMod.^]
-  inline def apply(accountSid: String): typings.twilio.twilioMod.^ = ^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any]).asInstanceOf[typings.twilio.twilioMod.^]
-  inline def apply(accountSid: String, authToken: String): typings.twilio.twilioMod.^ = (^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.twilioMod.^]
-  inline def apply(accountSid: String, authToken: String, opts: TwilioClientOptions): typings.twilio.twilioMod.^ = (^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.twilioMod.^]
-  inline def apply(accountSid: String, authToken: Unit, opts: TwilioClientOptions): typings.twilio.twilioMod.^ = (^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.twilioMod.^]
-  inline def apply(accountSid: Unit, authToken: String): typings.twilio.twilioMod.^ = (^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.twilioMod.^]
-  inline def apply(accountSid: Unit, authToken: String, opts: TwilioClientOptions): typings.twilio.twilioMod.^ = (^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.twilioMod.^]
-  inline def apply(accountSid: Unit, authToken: Unit, opts: TwilioClientOptions): typings.twilio.twilioMod.^ = (^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.twilioMod.^]
+  inline def apply(): typings.twilio.libRestTwilioMod.^ = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.twilio.libRestTwilioMod.^]
+  inline def apply(accountSid: String): typings.twilio.libRestTwilioMod.^ = ^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any]).asInstanceOf[typings.twilio.libRestTwilioMod.^]
+  inline def apply(accountSid: String, authToken: String): typings.twilio.libRestTwilioMod.^ = (^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.libRestTwilioMod.^]
+  inline def apply(accountSid: String, authToken: String, opts: TwilioClientOptions): typings.twilio.libRestTwilioMod.^ = (^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.libRestTwilioMod.^]
+  inline def apply(accountSid: String, authToken: Unit, opts: TwilioClientOptions): typings.twilio.libRestTwilioMod.^ = (^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.libRestTwilioMod.^]
+  inline def apply(accountSid: Unit, authToken: String): typings.twilio.libRestTwilioMod.^ = (^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.libRestTwilioMod.^]
+  inline def apply(accountSid: Unit, authToken: String, opts: TwilioClientOptions): typings.twilio.libRestTwilioMod.^ = (^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.libRestTwilioMod.^]
+  inline def apply(accountSid: Unit, authToken: Unit, opts: TwilioClientOptions): typings.twilio.libRestTwilioMod.^ = (^.asInstanceOf[js.Dynamic].apply(accountSid.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.libRestTwilioMod.^]
   
   @JSImport("twilio", JSImport.Namespace)
   @js.native
@@ -35,12 +35,12 @@ object mod {
   
   @JSImport("twilio", "RequestClient")
   @js.native
-  val RequestClient: typings.twilio.requestClientMod.^ = js.native
+  val RequestClient: typings.twilio.libBaseRequestClientMod.^ = js.native
   
   @JSImport("twilio", "Twilio")
   @js.native
   open class Twilio protected ()
-    extends typings.twilio.twilioMod.^ {
+    extends typings.twilio.libRestTwilioMod.^ {
     /**
       * Twilio Client to interact with the Rest API
       *
@@ -62,7 +62,7 @@ object mod {
     @JSImport("twilio", "jwt.AccessToken")
     @js.native
     open class AccessToken protected ()
-      extends typings.twilio.accessTokenMod.^ {
+      extends typings.twilio.libJwtAccessTokenMod.^ {
       /**
         * Creates new AccessToken instance
         *
@@ -79,7 +79,7 @@ object mod {
     @JSImport("twilio", "jwt.ClientCapability")
     @js.native
     open class ClientCapability protected ()
-      extends typings.twilio.clientCapabilityMod.^ {
+      extends typings.twilio.libJwtClientCapabilityMod.^ {
       def this(options: ClientCapabilityOptions) = this()
     }
     
@@ -99,19 +99,19 @@ object mod {
     @JSImport("twilio", "twiml.FaxResponse")
     @js.native
     open class FaxResponse ()
-      extends typings.twilio.faxResponseMod.^
+      extends typings.twilio.libTwimlFaxResponseMod.^
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("twilio", "twiml.MessagingResponse")
     @js.native
     open class MessagingResponse ()
-      extends typings.twilio.messagingResponseMod.^
+      extends typings.twilio.libTwimlMessagingResponseMod.^
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("twilio", "twiml.VoiceResponse")
     @js.native
     open class VoiceResponse ()
-      extends typings.twilio.voiceResponseMod.^
+      extends typings.twilio.libTwimlVoiceResponseMod.^
     
     type _To = TwimlInterface
     
@@ -160,10 +160,10 @@ object mod {
         /* keySid */ String, 
         /* secret */ String, 
         /* options */ js.UndefOr[AccessTokenOptions], 
-        typings.twilio.accessTokenMod.^
+        typings.twilio.libJwtAccessTokenMod.^
       ])
     
-    var ClientCapability: TypeofClientCapability & (Instantiable1[/* options */ ClientCapabilityOptions, typings.twilio.clientCapabilityMod.^])
+    var ClientCapability: TypeofClientCapability & (Instantiable1[/* options */ ClientCapabilityOptions, typings.twilio.libJwtClientCapabilityMod.^])
     
     var taskrouter: TaskRouterCapability
   }
@@ -175,9 +175,9 @@ object mod {
           /* keySid */ String, 
           /* secret */ String, 
           /* options */ js.UndefOr[AccessTokenOptions], 
-          typings.twilio.accessTokenMod.^
+          typings.twilio.libJwtAccessTokenMod.^
         ]),
-      ClientCapability: TypeofClientCapability & (Instantiable1[/* options */ ClientCapabilityOptions, typings.twilio.clientCapabilityMod.^]),
+      ClientCapability: TypeofClientCapability & (Instantiable1[/* options */ ClientCapabilityOptions, typings.twilio.libJwtClientCapabilityMod.^]),
       taskrouter: TaskRouterCapability
     ): JwtInterface = {
       val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any], ClientCapability = ClientCapability.asInstanceOf[js.Any], taskrouter = taskrouter.asInstanceOf[js.Any])
@@ -192,12 +192,12 @@ object mod {
               /* keySid */ String, 
               /* secret */ String, 
               /* options */ js.UndefOr[AccessTokenOptions], 
-              typings.twilio.accessTokenMod.^
+              typings.twilio.libJwtAccessTokenMod.^
             ])
       ): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
       
       inline def setClientCapability(
-        value: TypeofClientCapability & (Instantiable1[/* options */ ClientCapabilityOptions, typings.twilio.clientCapabilityMod.^])
+        value: TypeofClientCapability & (Instantiable1[/* options */ ClientCapabilityOptions, typings.twilio.libJwtClientCapabilityMod.^])
       ): Self = StObject.set(x, "ClientCapability", value.asInstanceOf[js.Any])
       
       inline def setTaskrouter(value: TaskRouterCapability): Self = StObject.set(x, "taskrouter", value.asInstanceOf[js.Any])
@@ -211,18 +211,18 @@ object mod {
   
   trait TwimlInterface extends StObject {
     
-    var FaxResponse: TwimlConstructor[typings.twilio.faxResponseMod.^]
+    var FaxResponse: TwimlConstructor[typings.twilio.libTwimlFaxResponseMod.^]
     
-    var MessagingResponse: TwimlConstructor[typings.twilio.messagingResponseMod.^]
+    var MessagingResponse: TwimlConstructor[typings.twilio.libTwimlMessagingResponseMod.^]
     
-    var VoiceResponse: TwimlConstructor[typings.twilio.voiceResponseMod.^]
+    var VoiceResponse: TwimlConstructor[typings.twilio.libTwimlVoiceResponseMod.^]
   }
   object TwimlInterface {
     
     inline def apply(
-      FaxResponse: TwimlConstructor[typings.twilio.faxResponseMod.^],
-      MessagingResponse: TwimlConstructor[typings.twilio.messagingResponseMod.^],
-      VoiceResponse: TwimlConstructor[typings.twilio.voiceResponseMod.^]
+      FaxResponse: TwimlConstructor[typings.twilio.libTwimlFaxResponseMod.^],
+      MessagingResponse: TwimlConstructor[typings.twilio.libTwimlMessagingResponseMod.^],
+      VoiceResponse: TwimlConstructor[typings.twilio.libTwimlVoiceResponseMod.^]
     ): TwimlInterface = {
       val __obj = js.Dynamic.literal(FaxResponse = FaxResponse.asInstanceOf[js.Any], MessagingResponse = MessagingResponse.asInstanceOf[js.Any], VoiceResponse = VoiceResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[TwimlInterface]
@@ -230,11 +230,11 @@ object mod {
     
     extension [Self <: TwimlInterface](x: Self) {
       
-      inline def setFaxResponse(value: TwimlConstructor[typings.twilio.faxResponseMod.^]): Self = StObject.set(x, "FaxResponse", value.asInstanceOf[js.Any])
+      inline def setFaxResponse(value: TwimlConstructor[typings.twilio.libTwimlFaxResponseMod.^]): Self = StObject.set(x, "FaxResponse", value.asInstanceOf[js.Any])
       
-      inline def setMessagingResponse(value: TwimlConstructor[typings.twilio.messagingResponseMod.^]): Self = StObject.set(x, "MessagingResponse", value.asInstanceOf[js.Any])
+      inline def setMessagingResponse(value: TwimlConstructor[typings.twilio.libTwimlMessagingResponseMod.^]): Self = StObject.set(x, "MessagingResponse", value.asInstanceOf[js.Any])
       
-      inline def setVoiceResponse(value: TwimlConstructor[typings.twilio.voiceResponseMod.^]): Self = StObject.set(x, "VoiceResponse", value.asInstanceOf[js.Any])
+      inline def setVoiceResponse(value: TwimlConstructor[typings.twilio.libTwimlVoiceResponseMod.^]): Self = StObject.set(x, "VoiceResponse", value.asInstanceOf[js.Any])
     }
   }
 }

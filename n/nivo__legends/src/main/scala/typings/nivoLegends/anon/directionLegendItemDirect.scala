@@ -1,6 +1,6 @@
 package typings.nivoLegends.anon
 
-import typings.nivoLegends.typesTypesMod.LegendItemDirection
+import typings.nivoLegends.distTypesTypesMod.LegendItemDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

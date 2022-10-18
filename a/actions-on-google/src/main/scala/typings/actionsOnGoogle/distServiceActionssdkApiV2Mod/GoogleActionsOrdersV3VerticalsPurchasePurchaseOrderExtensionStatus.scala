@@ -1,0 +1,47 @@
+package typings.actionsOnGoogle.distServiceActionssdkApiV2Mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_UNSPECIFIED
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.READY_FOR_PICKUP
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.SHIPPED
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERED
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.OUT_OF_STOCK
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.IN_PREPARATION
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.CREATED
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.CONFIRMED
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.REJECTED
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.RETURNED
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED
+  - typings.actionsOnGoogle.actionsOnGoogleStrings.CHANGE_REQUESTED
+*/
+trait GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionStatus extends StObject
+object GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionStatus {
+  
+  inline def CANCELLED: typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED = "CANCELLED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED]
+  
+  inline def CHANGE_REQUESTED: typings.actionsOnGoogle.actionsOnGoogleStrings.CHANGE_REQUESTED = "CHANGE_REQUESTED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CHANGE_REQUESTED]
+  
+  inline def CONFIRMED: typings.actionsOnGoogle.actionsOnGoogleStrings.CONFIRMED = "CONFIRMED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CONFIRMED]
+  
+  inline def CREATED: typings.actionsOnGoogle.actionsOnGoogleStrings.CREATED = "CREATED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CREATED]
+  
+  inline def DELIVERED: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERED = "DELIVERED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERED]
+  
+  inline def IN_PREPARATION: typings.actionsOnGoogle.actionsOnGoogleStrings.IN_PREPARATION = "IN_PREPARATION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.IN_PREPARATION]
+  
+  inline def OUT_OF_STOCK: typings.actionsOnGoogle.actionsOnGoogleStrings.OUT_OF_STOCK = "OUT_OF_STOCK".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.OUT_OF_STOCK]
+  
+  inline def PURCHASE_STATUS_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_UNSPECIFIED = "PURCHASE_STATUS_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_UNSPECIFIED]
+  
+  inline def READY_FOR_PICKUP: typings.actionsOnGoogle.actionsOnGoogleStrings.READY_FOR_PICKUP = "READY_FOR_PICKUP".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.READY_FOR_PICKUP]
+  
+  inline def REJECTED: typings.actionsOnGoogle.actionsOnGoogleStrings.REJECTED = "REJECTED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REJECTED]
+  
+  inline def RETURNED: typings.actionsOnGoogle.actionsOnGoogleStrings.RETURNED = "RETURNED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RETURNED]
+  
+  inline def SHIPPED: typings.actionsOnGoogle.actionsOnGoogleStrings.SHIPPED = "SHIPPED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SHIPPED]
+}

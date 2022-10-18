@@ -10,7 +10,7 @@ object DatabaseType {
   
   inline def `Jet 3Dotx`: typings.activexAccess.activexAccessStrings.`Jet 3Dotx` = ("Jet 3.x").asInstanceOf[typings.activexAccess.activexAccessStrings.`Jet 3Dotx`]
   
-  inline def `Microsoft Access LeftparenthesisdefaultRightparenthesis`: String = String.asInstanceOf[String]
+  inline def `Microsoft Access LeftparenthesisdefaultRightparenthesis`: /* Microsoft Access (default) */ String = ("Microsoft Access (default)").asInstanceOf[/* Microsoft Access (default) */ String]
   
   inline def `ODBC Database`: typings.activexAccess.activexAccessStrings.`ODBC Database` = ("ODBC Database").asInstanceOf[typings.activexAccess.activexAccessStrings.`ODBC Database`]
   

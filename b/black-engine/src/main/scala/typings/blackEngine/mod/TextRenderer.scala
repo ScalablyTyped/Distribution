@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "TextRenderer")
 @js.native
 open class TextRenderer ()
-  extends typings.blackEngine.textRendererMod.TextRenderer
+  extends typings.blackEngine.driversTextRendererMod.TextRenderer

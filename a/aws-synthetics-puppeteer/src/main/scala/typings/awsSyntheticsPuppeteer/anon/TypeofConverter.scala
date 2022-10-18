@@ -2,9 +2,9 @@ package typings.awsSyntheticsPuppeteer.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdk.converterMod.Converter.ConverterOptions
-import typings.awsSdk.dynamodbMod.AttributeMap
-import typings.awsSdk.dynamodbMod.AttributeValue
+import typings.awsSdk.clientsDynamodbMod.AttributeMap
+import typings.awsSdk.clientsDynamodbMod.AttributeValue
+import typings.awsSdk.libDynamodbConverterMod.Converter.ConverterOptions
 import typings.awsSdk.mod.DynamoDB.Converter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

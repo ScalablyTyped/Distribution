@@ -17,68 +17,58 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number[]} [layers] Layer ID array. Default is [{@link LAYERID_WORLD}]. The whole
   * batch group will belong to these layers. Layers of source models will be ignored.
   */
-@JSImport("playcanvas", "BatchGroup")
-@js.native
-open class BatchGroup protected () extends StObject {
-  /**
-    * Create a new BatchGroup instance.
-    *
-    * @param {number} id - Unique id. Can be assigned to model and element components.
-    * @param {string} name - The name of the group.
-    * @param {boolean} dynamic - Whether objects within this batch group should support
-    * transforming at runtime.
-    * @param {number} maxAabbSize - Maximum size of any dimension of a bounding box around batched
-    * objects. {@link BatchManager#prepare} will split objects into local groups based on this
-    * size.
-    * @param {number[]} [layers] - Layer ID array. Default is [{@link LAYERID_WORLD}]. The whole
-    * batch group will belong to these layers. Layers of source models will be ignored.
-    */
-  def this(id: Double, name: String, dynamic: Boolean, maxAabbSize: Double) = this()
-  def this(id: Double, name: String, dynamic: Boolean, maxAabbSize: Double, layers: js.Array[Double]) = this()
+trait BatchGroup extends StObject {
   
-  var _obj: Element = js.native
+  var _obj: Element
   
-  var _sprite: Boolean = js.native
+  var _sprite: Boolean
   
-  var _ui: Boolean = js.native
+  var _ui: Boolean
   
-  var dynamic: Boolean = js.native
+  var dynamic: Boolean
   
-  var id: Double = js.native
+  var id: Double
   
-  var layers: js.Array[Double] = js.native
+  var layers: js.Array[Double]
   
-  var maxAabbSize: Double = js.native
+  var maxAabbSize: Double
   
-  var name: String = js.native
+  var name: String
 }
 object BatchGroup {
   
-  @JSImport("playcanvas", "BatchGroup")
-  @js.native
-  val ^ : js.Any = js.native
+  inline def apply(
+    _obj: Element,
+    _sprite: Boolean,
+    _ui: Boolean,
+    dynamic: Boolean,
+    id: Double,
+    layers: js.Array[Double],
+    maxAabbSize: Double,
+    name: String
+  ): BatchGroup = {
+    val __obj = js.Dynamic.literal(_obj = _obj.asInstanceOf[js.Any], _sprite = _sprite.asInstanceOf[js.Any], _ui = _ui.asInstanceOf[js.Any], dynamic = dynamic.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any], maxAabbSize = maxAabbSize.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BatchGroup]
+  }
   
-  /* static member */
-  @JSImport("playcanvas", "BatchGroup.ELEMENT")
-  @js.native
-  def ELEMENT: String = js.native
-  inline def ELEMENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ELEMENT")(x.asInstanceOf[js.Any])
-  
-  /* static member */
-  @JSImport("playcanvas", "BatchGroup.MODEL")
-  @js.native
-  def MODEL: String = js.native
-  inline def MODEL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL")(x.asInstanceOf[js.Any])
-  
-  /* static member */
-  @JSImport("playcanvas", "BatchGroup.RENDER")
-  @js.native
-  def RENDER: String = js.native
-  inline def RENDER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RENDER")(x.asInstanceOf[js.Any])
-  
-  /* static member */
-  @JSImport("playcanvas", "BatchGroup.SPRITE")
-  @js.native
-  def SPRITE: String = js.native
-  inline def SPRITE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPRITE")(x.asInstanceOf[js.Any])
+  extension [Self <: BatchGroup](x: Self) {
+    
+    inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setLayers(value: js.Array[Double]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    
+    inline def setLayersVarargs(value: Double*): Self = StObject.set(x, "layers", js.Array(value*))
+    
+    inline def setMaxAabbSize(value: Double): Self = StObject.set(x, "maxAabbSize", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def set_obj(value: Element): Self = StObject.set(x, "_obj", value.asInstanceOf[js.Any])
+    
+    inline def set_sprite(value: Boolean): Self = StObject.set(x, "_sprite", value.asInstanceOf[js.Any])
+    
+    inline def set_ui(value: Boolean): Self = StObject.set(x, "_ui", value.asInstanceOf[js.Any])
+  }
 }

@@ -6,29 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Address extends StObject {
   
-  var address: String
+  var address: js.UndefOr[String] = js.undefined
   
-  var ipVer: Double
+  var ipVer: js.UndefOr[Double] = js.undefined
   
-  var netType: String
+  var netType: js.UndefOr[String] = js.undefined
   
-  var sessionId: String | Double
-  
-  var sessionVersion: Double
-  
-  var username: String
+  var port: Double
 }
 object Address {
   
-  inline def apply(
-    address: String,
-    ipVer: Double,
-    netType: String,
-    sessionId: String | Double,
-    sessionVersion: Double,
-    username: String
-  ): Address = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ipVer = ipVer.asInstanceOf[js.Any], netType = netType.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], sessionVersion = sessionVersion.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+  inline def apply(port: Double): Address = {
+    val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
   
@@ -36,14 +25,16 @@ object Address {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
     inline def setIpVer(value: Double): Self = StObject.set(x, "ipVer", value.asInstanceOf[js.Any])
+    
+    inline def setIpVerUndefined: Self = StObject.set(x, "ipVer", js.undefined)
     
     inline def setNetType(value: String): Self = StObject.set(x, "netType", value.asInstanceOf[js.Any])
     
-    inline def setSessionId(value: String | Double): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setNetTypeUndefined: Self = StObject.set(x, "netType", js.undefined)
     
-    inline def setSessionVersion(value: Double): Self = StObject.set(x, "sessionVersion", value.asInstanceOf[js.Any])
-    
-    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

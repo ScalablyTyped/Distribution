@@ -26,7 +26,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  children :react.react.ReactNode,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined} */
+/* Inlined react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  children :react.react.ReactNode,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme} */
 trait ViewPropsRefAttributesVieAccessibilityLabelledBy extends StObject {
   
   /**
@@ -400,6 +400,8 @@ trait ViewPropsRefAttributesVieAccessibilityLabelledBy extends StObject {
     */
   var testID: js.UndefOr[String] = js.undefined
   
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
+  
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
     *
@@ -437,8 +439,8 @@ trait ViewPropsRefAttributesVieAccessibilityLabelledBy extends StObject {
 }
 object ViewPropsRefAttributesVieAccessibilityLabelledBy {
   
-  inline def apply(): ViewPropsRefAttributesVieAccessibilityLabelledBy = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): ViewPropsRefAttributesVieAccessibilityLabelledBy = {
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsRefAttributesVieAccessibilityLabelledBy]
   }
   
@@ -711,6 +713,8 @@ object ViewPropsRefAttributesVieAccessibilityLabelledBy {
     inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+    
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     

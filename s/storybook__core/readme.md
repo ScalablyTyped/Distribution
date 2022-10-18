@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__core
 
-Typings are for version 6.1.2
+Typings are for version 6.5.12
 
 ## Library description:
 Storybook framework-agnostic API
@@ -10,13 +10,13 @@ Storybook framework-agnostic API
 | ------------------ | :-------------: |
 | Full name          | @storybook/core |
 | Keywords           | storybook |
-| # releases         | 549 |
-| # dependents       | 71 |
-| # downloads        | 95269767 |
-| # stars            | 0 |
+| # releases         | 439 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6977650666666668E7 |
+| # stars            | 74176.0 |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/lib/core)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/core)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Fcore)

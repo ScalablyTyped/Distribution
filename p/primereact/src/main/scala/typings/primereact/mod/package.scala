@@ -3,18 +3,19 @@ package typings.primereact.mod
 import typings.primereact.anon.BindEvents
 import typings.primereact.anon.Emit
 import typings.primereact.anon.Locale
-import typings.primereact.apiMod.PrimeIconsOptions
-import typings.primereact.confirmdialogMod.ConfirmDialogProps
-import typings.primereact.confirmdialogMod.ConfirmDialogReturn
-import typings.primereact.confirmpopupMod.ConfirmPopupProps
-import typings.primereact.confirmpopupMod.ConfirmPopupReturn
-import typings.primereact.hooksMod.EventOptions
-import typings.primereact.hooksMod.OverlayEventOptions
-import typings.primereact.hooksMod.ResizeEventOptions
-import typings.primereact.hooksMod.StorageType
+import typings.primereact.apiApiMod.APIOptions
+import typings.primereact.apiApiMod.PrimeIconsOptions
+import typings.primereact.confirmdialogConfirmdialogMod.ConfirmDialogProps
+import typings.primereact.confirmdialogConfirmdialogMod.ConfirmDialogReturn
+import typings.primereact.confirmpopupConfirmpopupMod.ConfirmPopupProps
+import typings.primereact.confirmpopupConfirmpopupMod.ConfirmPopupReturn
+import typings.primereact.hooksHooksMod.EventOptions
+import typings.primereact.hooksHooksMod.OverlayEventOptions
+import typings.primereact.hooksHooksMod.ResizeEventOptions
+import typings.primereact.hooksHooksMod.StorageType
 import typings.primereact.mod.^
-import typings.primereact.overlayserviceMod.OverlayServiceOptions
-import typings.primereact.terminalserviceMod.TerminalServiceOptions
+import typings.primereact.overlayserviceOverlayserviceMod.OverlayServiceOptions
+import typings.primereact.terminalserviceTerminalserviceMod.TerminalServiceOptions
 import typings.react.mod.DependencyList
 import typings.react.mod.Dispatch
 import typings.react.mod.EffectCallback
@@ -24,6 +25,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+
+inline def default: APIOptions = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[APIOptions]
 
 inline def EventBus(): Emit = ^.asInstanceOf[js.Dynamic].applyDynamic("EventBus")().asInstanceOf[Emit]
 

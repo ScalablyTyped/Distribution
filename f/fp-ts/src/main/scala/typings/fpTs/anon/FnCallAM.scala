@@ -8,11 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FnCallAM[A] extends StObject {
   
   def apply(a: A): js.Function1[/* m */ typings.std.Map[Any, A], Boolean] = js.native
-  def apply(
-    a: A,
-    m: typings.std.Map[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify K */ Any, 
-      A
-    ]
-  ): Boolean = js.native
+  def apply[K](a: A, m: typings.std.Map[K, A]): Boolean = js.native
 }

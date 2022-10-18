@@ -48,28 +48,14 @@ object rpc {
       method: Method,
       requestCtor: Constructor[TReq],
       responseCtor: Constructor[TRes],
-      request: TReq,
-      callback: ServiceMethodCallback[TRes]
-    ): Unit = js.native
-    def rpcCall[TReq /* <: Message[TReq] */, TRes /* <: Message[TRes] */](
-      method: Method,
-      requestCtor: Constructor[TReq],
-      responseCtor: Constructor[TRes],
-      request: Properties[TReq],
+      request: Properties[TReq] | TReq,
       callback: ServiceMethodCallback[TRes]
     ): Unit = js.native
     def rpcCall[TReq /* <: Message[TReq] */, TRes /* <: Message[TRes] */](
       method: ServiceMethod[TReq, TRes],
       requestCtor: Constructor[TReq],
       responseCtor: Constructor[TRes],
-      request: TReq,
-      callback: ServiceMethodCallback[TRes]
-    ): Unit = js.native
-    def rpcCall[TReq /* <: Message[TReq] */, TRes /* <: Message[TRes] */](
-      method: ServiceMethod[TReq, TRes],
-      requestCtor: Constructor[TReq],
-      responseCtor: Constructor[TRes],
-      request: Properties[TReq],
+      request: Properties[TReq] | TReq,
       callback: ServiceMethodCallback[TRes]
     ): Unit = js.native
     

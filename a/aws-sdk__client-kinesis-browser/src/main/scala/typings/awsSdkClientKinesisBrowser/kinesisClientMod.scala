@@ -1,10 +1,10 @@
 package typings.awsSdkClientKinesisBrowser
 
-import typings.awsSdkClientKinesisBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientKinesisBrowser.kinesisConfigurationMod.KinesisConfiguration
 import typings.awsSdkClientKinesisBrowser.kinesisConfigurationMod.KinesisResolvedConfiguration
-import typings.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
-import typings.awsSdkTypes.commandMod.Command
+import typings.awsSdkClientKinesisBrowser.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientKinesisBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesCommandMod.Command
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

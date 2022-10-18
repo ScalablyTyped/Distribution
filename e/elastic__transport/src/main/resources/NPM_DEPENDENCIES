@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@elastic/transport" : "8.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@elastic/transport" : "8.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

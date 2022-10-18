@@ -36,7 +36,7 @@ object LeadingContextLines {
     
     inline def setLeadingContextLines(value: js.Array[String]): Self = StObject.set(x, "leadingContextLines", value.asInstanceOf[js.Any])
     
-    inline def setLeadingContextLinesVarargs(value: String*): Self = StObject.set(x, "leadingContextLines", js.Array(value :_*))
+    inline def setLeadingContextLinesVarargs(value: String*): Self = StObject.set(x, "leadingContextLines", js.Array(value*))
     
     inline def setLineText(value: String): Self = StObject.set(x, "lineText", value.asInstanceOf[js.Any])
     
@@ -48,6 +48,6 @@ object LeadingContextLines {
     
     inline def setTrailingContextLines(value: js.Array[String]): Self = StObject.set(x, "trailingContextLines", value.asInstanceOf[js.Any])
     
-    inline def setTrailingContextLinesVarargs(value: String*): Self = StObject.set(x, "trailingContextLines", js.Array(value :_*))
+    inline def setTrailingContextLinesVarargs(value: String*): Self = StObject.set(x, "trailingContextLines", js.Array(value*))
   }
 }

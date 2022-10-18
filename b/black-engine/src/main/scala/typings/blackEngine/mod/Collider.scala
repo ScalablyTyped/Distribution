@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Collider")
 @js.native
 open class Collider ()
-  extends typings.blackEngine.colliderMod.Collider
+  extends typings.blackEngine.collidersColliderMod.Collider

@@ -2,22 +2,15 @@ package typings.rax.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
-import typings.propTypes.mod.InferProps
-import typings.rax.anon.`1`
 import typings.rax.mod.^
 import typings.rax.raxStrings.input
-import typings.rax.raxStrings.ref
 import typings.std.Element
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.Exclude
-import typings.std.Extract
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
-import typings.std.InstanceType
 import typings.std.Partial
-import typings.std.Pick
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,17 +49,17 @@ inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], pro
 inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: RaxNode*): RaxElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RaxElement[P, String | JSXElementConstructor[Any]]]
 inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: RaxNode*): RaxElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RaxElement[P, String | JSXElementConstructor[Any]]]
 inline def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.rax.raxStrings.animate, typings.rax.raxStrings.circle, typings.rax.raxStrings.clipPath */ Any,
   props: ClassAttributes[T] & P,
   children: RaxNode*
 ): RaxSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RaxSVGElement]
 inline def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.rax.raxStrings.animate, typings.rax.raxStrings.circle, typings.rax.raxStrings.clipPath */ Any,
   props: Null,
   children: RaxNode*
 ): RaxSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RaxSVGElement]
 inline def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.rax.raxStrings.animate, typings.rax.raxStrings.circle, typings.rax.raxStrings.clipPath */ Any,
   props: Unit,
   children: RaxNode*
 ): RaxSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RaxSVGElement]
@@ -80,17 +73,17 @@ inline def createElement_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Elem
 inline def createElement_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: RaxNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
 
 inline def createElement_PT_DetailedRaxHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114, starting with typings.rax.raxStrings.a_, typings.rax.raxStrings.abbr, typings.rax.raxStrings.address */ Any,
   props: ClassAttributes[T] & P,
   children: RaxNode*
 ): DetailedRaxHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedRaxHTMLElement[P, T]]
 inline def createElement_PT_DetailedRaxHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114, starting with typings.rax.raxStrings.a_, typings.rax.raxStrings.abbr, typings.rax.raxStrings.address */ Any,
   props: Null,
   children: RaxNode*
 ): DetailedRaxHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedRaxHTMLElement[P, T]]
 inline def createElement_PT_DetailedRaxHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114, starting with typings.rax.raxStrings.a_, typings.rax.raxStrings.abbr, typings.rax.raxStrings.address */ Any,
   props: Unit,
   children: RaxNode*
 ): DetailedRaxHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedRaxHTMLElement[P, T]]
@@ -309,17 +302,7 @@ type ClassicFactory[P] = CFactory[P, ClassicComponent[P, ComponentState]]
 
 type ClipboardEventHandler[T] = EventHandler[ClipboardEvent[T]]
 
-/**
-  * NOTE: prefer ComponentPropsWithRef, if the ref is forwarded,
-  * or ComponentPropsWithoutRef when refs are not supported.
-  */
-type ComponentProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 217 */ Any */] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: rax.rax.<global>.JSX.IntrinsicElements[T] */ js.Any)
-
-type ComponentPropsWithRef[T /* <: ElementType[Any] */] = PropsWithRef[ComponentProps[T]] | (PropsWithoutRef[Any] & RefAttributes[InstanceType[T]])
-
 type ComponentPropsWithoutRef[T /* <: ElementType[Any] */] = PropsWithoutRef[ComponentProps[T]]
-
-type ComponentRef[T /* <: ElementType[Any] */] = Any
 
 type ComponentState = Any
 
@@ -328,14 +311,6 @@ type ComponentType[P] = (ComponentClass[P, ComponentState]) | FunctionComponent[
 type CompositionEventHandler[T] = EventHandler[CompositionEvent[T]]
 
 type Consumer[T] = ExoticComponent[ConsumerProps[T]]
-
-type ContextType[C /* <: Context[Any] */] = Any
-
-// Any prop that has a default prop becomes optional, but its type is unchanged
-// Undeclared default props are augmented into the resulting allowable attributes
-// If declared props have indexed properties, ignore default props entirely as keyof gets widened
-// Wrap in an outer-level conditional type to allow distribution over props that are unions
-type Defaultize[P, D] = ((Pick[P, Exclude[/* keyof P */ String, /* keyof D */ String]]) & (Partial[Pick[P, Extract[/* keyof P */ String, /* keyof D */ String]]]) & (Partial[Pick[D, Exclude[/* keyof D */ String, /* keyof P */ String]]])) | P
 
 // The identity check is done with the SameValue algorithm (Object.is), which is stricter than ===
 // TODO (TypeScript 3.0): ReadonlyArray<unknown>
@@ -352,22 +327,6 @@ type DragEventHandler[T] = EventHandler[DragEvent[T]]
 // NOTE: callbacks are _only_ allowed to return either void, or a destructor.
 // The destructor is itself only allowed to return void.
 type EffectCallback = js.Function0[Unit | js.Function0[js.UndefOr[Unit]]]
-
-/**
-  * Gets the instance type for a Rax element. The instance will be different for various component types:
-  *
-  * - Rax class components will be the class instance. So if you had `class Foo extends Component<{}> {}`
-  *   and used `ElementRef<typeof Foo>` then the type would be the instance of `Foo`.
-  * - Rax stateless functional components do not have a backing instance and so `ElementRef<typeof Bar>`
-  *   (when `Bar` is `function Bar() {}`) will give you the `undefined` type.
-  * - JSX intrinsics like `div` will give you their DOM instance. For `ElementRef<'div'>` that would be
-  *   `HTMLDivElement`. For `ElementRef<'input'>` that would be `HTMLInputElement`.
-  * - Rax stateless functional components that forward a `ref` will give you the `ElementRef` of the forwarded
-  *   to component.
-  *
-  * `C` must be the type _of_ a Rax component so you need to use typeof as in `ElementRef<typeof MyComponent>`.
-  */
-type ElementRef[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 219 */ Any */] = Any
 
 /**
   * ======================================================================
@@ -418,11 +377,6 @@ type KeyboardEventHandler[T] = EventHandler[KeyboardEvent[T]]
 
 type LegacyRef[T] = String | Ref[T]
 
-// Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
-type MergePropTypes[P, T] = ((Pick[P, NotExactlyAnyPropertyKeys[P]]) & (// For props which are exactly any, use the type inferred from propTypes if present
-Pick[T, Exclude[/* keyof T */ String, NotExactlyAnyPropertyKeys[P]]]) & (// Keep leftover props not specified in propTypes
-Pick[P, Exclude[/* keyof P */ String, /* keyof T */ String]])) | P | T
-
 type MouseEventHandler[T] = EventHandler[MouseEvent[T, NativeMouseEvent]]
 
 type NativeAnimationEvent = typings.std.AnimationEvent
@@ -455,17 +409,11 @@ type PointerEventHandler[T] = EventHandler[PointerEvent[T]]
 
 type PropsWithChildren[P] = P & typings.rax.anon.Children
 
-/** Ensures that the props do not include string ref, which cannot be forwarded */
-type PropsWithRef[P] = P | (PropsWithoutRef[P] & `1`)
-
-/** Ensures that the props do not include ref at all */
-type PropsWithoutRef[P] = P | (Pick[P, Exclude[/* keyof P */ String, ref]])
-
 type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
 
 type RaxChild = (RaxElement[Any, String | Any]) | RaxText
 
-type RaxComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 217 */ Any */, P] = RaxElement[P, T]
+type RaxComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 217, starting with typings.rax.raxStrings.a_, typings.rax.raxStrings.abbr, typings.rax.raxStrings.address */ Any */, P] = RaxElement[P, T]
 
 type RaxEventHandler[T] = EventHandler[SyntheticEvent[T, Event]]
 
@@ -481,8 +429,6 @@ type RaxHTMLElement[T /* <: HTMLElement */] = DetailedRaxHTMLElement[AllHTMLAttr
   */
 type RaxInstance = (Component[Any, js.Object, Any]) | Element
 
-type RaxManagedAttributes[C, P] = P | (Defaultize[(MergePropTypes[P, InferProps[Any]]) | P, Any]) | (MergePropTypes[P, InferProps[Any]])
-
 type RaxNode = js.UndefOr[Any | RaxFragment | RaxPortal | Boolean | Null]
 
 /**
@@ -494,12 +440,6 @@ type RaxText = String | Double
 
 // Unlike redux, the actions _can_ be anything
 type Reducer[S, A] = js.Function2[/* prevState */ S, /* action */ A, S]
-
-type ReducerAction[R /* <: Reducer[Any, Any] */] = Any
-
-// types used to try and prevent the compiler from reducing S
-// to a supertype common with the second argument to useReducer()
-type ReducerState[R /* <: Reducer[Any, Any] */] = Any
 
 type Ref[T] = (js.Function1[/* instance */ T | Null, Unit]) | RefObject[T] | Null
 
@@ -540,9 +480,5 @@ type ValidationMap[T] = typings.propTypes.mod.ValidationMap[T]
 // Rax.PropTypes
 // ----------------------------------------------------------------------
 type Validator[T] = typings.propTypes.mod.Validator[T]
-
-type WeakValidationMap[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? null extends T[K]? rax.rax.Validator<T[K] | null | undefined> : undefined extends T[K]? rax.rax.Validator<T[K] | null | undefined> : rax.rax.Validator<T[K]>}
-  */ typings.rax.raxStrings.WeakValidationMap & TopLevel[Any]
 
 type WheelEventHandler[T] = EventHandler[WheelEvent[T]]

@@ -1,8 +1,8 @@
 package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
-import typings.ibmCloudSdkCore.helperMod.FileObject
-import typings.node.Buffer
+import typings.ibmCloudSdkCore.esLibHelperMod.FileObject
 import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.AddAudioConstants.ContainedContentType
 import typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.AddAudioConstants.ContentType
 import org.scalablytyped.runtime.StObject

@@ -1,6 +1,6 @@
 package typings.chartist.anon
 
-import typings.chartist.coreTypesMod.NormalizedMulti
+import typings.chartist.distCoreTypesMod.NormalizedMulti
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

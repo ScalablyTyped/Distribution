@@ -12,32 +12,25 @@ object constantsMod {
   @js.native
   object DefaultFocusState extends StObject {
     
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[DefaultFocusState & Double] = js.native
-    
     @js.native
     sealed trait FIRST_ITEM
       extends StObject
          with DefaultFocusState
-    /* 2 */ val FIRST_ITEM: typings.materialMenu.constantsMod.DefaultFocusState.FIRST_ITEM & Double = js.native
     
     @js.native
     sealed trait LAST_ITEM
       extends StObject
          with DefaultFocusState
-    /* 3 */ val LAST_ITEM: typings.materialMenu.constantsMod.DefaultFocusState.LAST_ITEM & Double = js.native
     
     @js.native
     sealed trait LIST_ROOT
       extends StObject
          with DefaultFocusState
-    /* 1 */ val LIST_ROOT: typings.materialMenu.constantsMod.DefaultFocusState.LIST_ROOT & Double = js.native
     
     @js.native
     sealed trait NONE
       extends StObject
          with DefaultFocusState
-    /* 0 */ val NONE: typings.materialMenu.constantsMod.DefaultFocusState.NONE & Double = js.native
   }
   
   object cssClasses {

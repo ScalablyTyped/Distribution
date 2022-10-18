@@ -1,9 +1,9 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.enumsMod.enums.IUboDeclarationRefusedReasonType
-import typings.mangopay2NodejsSdk.enumsMod.enums.IUboDeclarationStatus
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
-import typings.mangopay2NodejsSdk.typesMod.ValueOf
+import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IUboDeclarationRefusedReasonType
+import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IUboDeclarationStatus
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
+import typings.mangopay2NodejsSdk.typingsTypesMod.ValueOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,6 +26,8 @@ trait PartialUboDeclarationData extends StObject {
   var Tag: js.UndefOr[String] = js.undefined
   
   var Ubos: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var UserId: js.UndefOr[String] = js.undefined
 }
 object PartialUboDeclarationData {
   
@@ -69,5 +71,9 @@ object PartialUboDeclarationData {
     inline def setUbosUndefined: Self = StObject.set(x, "Ubos", js.undefined)
     
     inline def setUbosVarargs(value: Any*): Self = StObject.set(x, "Ubos", js.Array(value*))
+    
+    inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    
+    inline def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

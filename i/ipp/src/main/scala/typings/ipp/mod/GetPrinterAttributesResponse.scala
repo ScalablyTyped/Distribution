@@ -1,6 +1,6 @@
 package typings.ipp.mod
 
-import typings.ipp.anon.Attributesnaturallanguage
+import typings.ipp.anon.Detailedstatusmessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ trait GetPrinterAttributesResponse extends StObject {
   
   var id: Double
   
-  var `operation-attributes-tag`: Attributesnaturallanguage
+  var `operation-attributes-tag`: Detailedstatusmessage
   
   var `printer-attributes-tag`: js.Object
   
@@ -23,7 +23,7 @@ object GetPrinterAttributesResponse {
   
   inline def apply(
     id: Double,
-    `operation-attributes-tag`: Attributesnaturallanguage,
+    `operation-attributes-tag`: Detailedstatusmessage,
     `printer-attributes-tag`: js.Object,
     statusCode: StatusCode,
     version: IPPVersion
@@ -38,7 +38,7 @@ object GetPrinterAttributesResponse {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def `setOperation-attributes-tag`(value: Attributesnaturallanguage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: Detailedstatusmessage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
     
     inline def `setPrinter-attributes-tag`(value: js.Object): Self = StObject.set(x, "printer-attributes-tag", value.asInstanceOf[js.Any])
     

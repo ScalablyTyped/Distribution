@@ -1,19 +1,11 @@
 package typings.popmotionPose
 
-import typings.popmotionPose.typesMod._Draggable
+import typings.popmotionPose.libTypesMod._Draggable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popmotionPoseStrings {
-  
-  @js.native
-  sealed trait BoundingBox extends StObject
-  inline def BoundingBox: BoundingBox = "BoundingBox".asInstanceOf[BoundingBox]
-  
-  @js.native
-  sealed trait DragBounds extends StObject
-  inline def DragBounds: DragBounds = "DragBounds".asInstanceOf[DragBounds]
   
   @js.native
   sealed trait anticipate extends StObject

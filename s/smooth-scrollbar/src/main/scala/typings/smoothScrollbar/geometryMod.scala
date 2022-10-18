@@ -1,7 +1,7 @@
 package typings.smoothScrollbar
 
-import typings.smoothScrollbar.scrollbarMod.Scrollbar
-import typings.smoothScrollbar.scrollbarMod.ScrollbarSize
+import typings.smoothScrollbar.interfacesScrollbarMod.Scrollbar
+import typings.smoothScrollbar.interfacesScrollbarMod.ScrollbarSize
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * https://github.com/DefinitelyTyped/DefinitelyTyped/pull/16025#issuecomment-295784660
-  */
 object mod {
   
   inline def apply(key: String): String = ^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -14,13 +11,13 @@ object mod {
   inline def apply(keys: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].apply(keys.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def apply(keys: js.Array[String], fallback: String): String = (^.asInstanceOf[js.Dynamic].apply(keys.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("cookiejs", JSImport.Namespace)
+  @JSImport("cookie_js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def all(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[Any]
   
-  @JSImport("cookiejs", "defaults")
+  @JSImport("cookie_js", "defaults")
   @js.native
   def defaults: Options = js.native
   inline def defaults_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
@@ -48,7 +45,7 @@ object mod {
   inline def set(obj: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def set(obj: Any, options: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("cookiejs", "utils")
+  @JSImport("cookie_js", "utils")
   @js.native
   def utils: UtilStatic = js.native
   inline def utils_=(x: UtilStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utils")(x.asInstanceOf[js.Any])

@@ -27,7 +27,7 @@ open class InterpolateValueAction protected ()
     propertyPath: String,
     value: Any,
     duration: Double,
-    condition: typings.babylonjs.conditionMod.Condition
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
   def this(
     triggerOptions: Any,
@@ -35,7 +35,7 @@ open class InterpolateValueAction protected ()
     propertyPath: String,
     value: Any,
     duration: Unit,
-    condition: typings.babylonjs.conditionMod.Condition
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
   def this(
     triggerOptions: Any,
@@ -52,7 +52,7 @@ open class InterpolateValueAction protected ()
     propertyPath: String,
     value: Any,
     duration: Double,
-    condition: typings.babylonjs.conditionMod.Condition,
+    condition: typings.babylonjs.actionsConditionMod.Condition,
     stopOtherAnimations: Boolean
   ) = this()
   def this(
@@ -70,7 +70,7 @@ open class InterpolateValueAction protected ()
     propertyPath: String,
     value: Any,
     duration: Unit,
-    condition: typings.babylonjs.conditionMod.Condition,
+    condition: typings.babylonjs.actionsConditionMod.Condition,
     stopOtherAnimations: Boolean
   ) = this()
   def this(
@@ -99,7 +99,7 @@ open class InterpolateValueAction protected ()
     propertyPath: String,
     value: Any,
     duration: Double,
-    condition: typings.babylonjs.conditionMod.Condition,
+    condition: typings.babylonjs.actionsConditionMod.Condition,
     stopOtherAnimations: Boolean,
     onInterpolationDone: js.Function0[Unit]
   ) = this()
@@ -109,7 +109,7 @@ open class InterpolateValueAction protected ()
     propertyPath: String,
     value: Any,
     duration: Double,
-    condition: typings.babylonjs.conditionMod.Condition,
+    condition: typings.babylonjs.actionsConditionMod.Condition,
     stopOtherAnimations: Unit,
     onInterpolationDone: js.Function0[Unit]
   ) = this()
@@ -139,7 +139,7 @@ open class InterpolateValueAction protected ()
     propertyPath: String,
     value: Any,
     duration: Unit,
-    condition: typings.babylonjs.conditionMod.Condition,
+    condition: typings.babylonjs.actionsConditionMod.Condition,
     stopOtherAnimations: Boolean,
     onInterpolationDone: js.Function0[Unit]
   ) = this()
@@ -149,7 +149,7 @@ open class InterpolateValueAction protected ()
     propertyPath: String,
     value: Any,
     duration: Unit,
-    condition: typings.babylonjs.conditionMod.Condition,
+    condition: typings.babylonjs.actionsConditionMod.Condition,
     stopOtherAnimations: Unit,
     onInterpolationDone: js.Function0[Unit]
   ) = this()

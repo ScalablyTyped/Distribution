@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides APIs to interact with the user’s Appointments provider app (for example, the Calendar app). Call static methods to display provider-specific UI so that the user can perform tasks. */
-@JSGlobal("Windows.ApplicationModel.Appointments.AppointmentManager")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentManager")
 @js.native
-abstract class AppointmentManager ()
+open class AppointmentManager ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentManager
 object AppointmentManager {

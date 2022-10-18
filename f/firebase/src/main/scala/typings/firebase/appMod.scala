@@ -3,24 +3,25 @@ package typings.firebase
 import typings.firebaseApp.mod.FirebaseApp
 import typings.firebaseApp.mod.FirebaseAppSettings
 import typings.firebaseApp.mod.FirebaseOptions
-import typings.firebaseLogger.srcLoggerMod.LogCallback
-import typings.firebaseLogger.srcLoggerMod.LogLevelString
-import typings.firebaseLogger.srcLoggerMod.LogOptions
+import typings.firebaseLogger.distSrcLoggerMod.LogCallback
+import typings.firebaseLogger.distSrcLoggerMod.LogLevelString
+import typings.firebaseLogger.distSrcLoggerMod.LogOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object appMod {
   
-  @JSImport("firebase/analytics/dist/app", JSImport.Namespace)
+  @JSImport("firebase/app", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("firebase/analytics/dist/app", "FirebaseError")
+  @JSImport("firebase/app", "FirebaseError")
   @js.native
   open class FirebaseError protected ()
-    extends typings.firebaseApp.mod.FirebaseError {
+    extends typings.firebase.appDistAppMod.FirebaseError {
     def this(/** The error code for this error. */
     code: String, message: String) = this()
     def this(
@@ -32,7 +33,7 @@ object appMod {
     ) = this()
   }
   
-  @JSImport("firebase/analytics/dist/app", "SDK_VERSION")
+  @JSImport("firebase/app", "SDK_VERSION")
   @js.native
   val SDK_VERSION: String = js.native
   
@@ -43,6 +44,7 @@ object appMod {
   
   inline def getApps(): js.Array[FirebaseApp] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApps")().asInstanceOf[js.Array[FirebaseApp]]
   
+  inline def initializeApp(): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")().asInstanceOf[FirebaseApp]
   inline def initializeApp(options: FirebaseOptions): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any]).asInstanceOf[FirebaseApp]
   inline def initializeApp(options: FirebaseOptions, config: FirebaseAppSettings): FirebaseApp = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[FirebaseApp]
   inline def initializeApp(options: FirebaseOptions, name: String): FirebaseApp = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[FirebaseApp]

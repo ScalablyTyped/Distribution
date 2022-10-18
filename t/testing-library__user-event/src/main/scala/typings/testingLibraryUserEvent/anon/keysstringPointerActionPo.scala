@@ -1,8 +1,8 @@
 package typings.testingLibraryUserEvent.anon
 
-import typings.testingLibraryUserEvent.cssPointerEventsMod.global.Element
-import typings.testingLibraryUserEvent.pointerMod._PointerActionInput
-import typings.testingLibraryUserEvent.typesMod.PointerCoords
+import typings.testingLibraryUserEvent.distTypesEventTypesMod.PointerCoords
+import typings.testingLibraryUserEvent.distTypesPointerMod._PointerActionInput
+import typings.testingLibraryUserEvent.distTypesUtilsPointerCssPointerEventsMod.global.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait keysstringPointerActionPo
   
   var keys: String
   
-  var node: js.UndefOr[typings.testingLibraryUserEvent.prepareDocumentMod.global.Node] = js.undefined
+  var node: js.UndefOr[typings.testingLibraryUserEvent.distTypesDocumentPrepareDocumentMod.global.Node] = js.undefined
   
   /**
     * If `node` is set, this is the DOM offset.
@@ -41,7 +41,7 @@ object keysstringPointerActionPo {
     
     inline def setKeys(value: String): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    inline def setNode(value: typings.testingLibraryUserEvent.prepareDocumentMod.global.Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: typings.testingLibraryUserEvent.distTypesDocumentPrepareDocumentMod.global.Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     

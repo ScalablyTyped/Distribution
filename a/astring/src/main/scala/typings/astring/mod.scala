@@ -1,6 +1,5 @@
 package typings.astring
 
-import org.scalablytyped.runtime.TopLevel
 import typings.node.streamMod.Writable
 import typings.sourceMap.mod.Mapping
 import typings.sourceMap.mod.SourceMapGenerator
@@ -28,9 +27,15 @@ object mod {
   inline def generate_Writable(node: Node): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(node.asInstanceOf[js.Any]).asInstanceOf[Writable]
   inline def generate_Writable(node: Node, options: Options[Writable]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Writable]
   
-  type Generator = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ T in estree.estree.Node['type'] ]: (node : estree.estree.Node & {  type :T}, state : astring.astring.State): void}
-    */ typings.astring.astringStrings.Generator & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ T in estree.estree.Node['type'] ]: (node : estree.estree.Node & {  type :T}, state : astring.astring.State): void}
+    }}}
+    */
+  @js.native
+  trait Generator extends StObject
   
   /**
     * Core Estree Node type to accommodate derived node types from parsers.

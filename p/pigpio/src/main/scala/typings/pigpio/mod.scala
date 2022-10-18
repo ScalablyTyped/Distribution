@@ -1,5 +1,6 @@
 package typings.pigpio
 
+import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.EventEmitter
 import typings.pigpio.anon.Alert
 import typings.pigpio.anon.Bits
@@ -11,7 +12,6 @@ import typings.pigpio.pigpioInts.`4`
 import typings.pigpio.pigpioInts.`8`
 import typings.pigpio.pigpioStrings.alert
 import typings.pigpio.pigpioStrings.interrupt
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -750,7 +750,7 @@ object mod {
     /**
       * Returns the notification stream which is a Readable stream.
       */
-    def stream(): ReadableStream[Any] = js.native
+    def stream(): ReadableStream = js.native
   }
   /* static members */
   object Notifier {

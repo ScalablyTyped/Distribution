@@ -7,7 +7,7 @@ import typings.reactNativeDocumentPicker.anon.FnCallOpts
 import typings.reactNativeDocumentPicker.anon.ReadonlyreadonlyallFilesp
 import typings.reactNativeDocumentPicker.anon.ReadonlyreadonlyallFilesr
 import typings.reactNativeDocumentPicker.anon.ReadonlyreadonlyallFilesrAllFiles
-import typings.reactNativeDocumentPicker.fileTypesMod.SupportedPlatforms
+import typings.reactNativeDocumentPicker.libTypescriptFileTypesMod.SupportedPlatforms
 import typings.reactNativeDocumentPicker.reactNativeDocumentPickerStrings.`import`
 import typings.reactNativeDocumentPicker.reactNativeDocumentPickerStrings.cachesDirectory
 import typings.reactNativeDocumentPicker.reactNativeDocumentPickerStrings.documentDirectory
@@ -185,7 +185,7 @@ object mod {
     
     var fileCopyUri: String | Null
     
-    var name: String
+    var name: String | Null
     
     var size: Double | Null
     
@@ -195,8 +195,8 @@ object mod {
   }
   object DocumentPickerResponse {
     
-    inline def apply(name: String, uri: String): DocumentPickerResponse = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], fileCopyUri = null, size = null)
+    inline def apply(uri: String): DocumentPickerResponse = {
+      val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any], fileCopyUri = null, name = null, size = null)
       __obj.updateDynamic("type")(null)
       __obj.asInstanceOf[DocumentPickerResponse]
     }
@@ -212,6 +212,8 @@ object mod {
       inline def setFileCopyUriNull: Self = StObject.set(x, "fileCopyUri", null)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,6 @@
 package typings.mdastUtilToMarkdown
 
-import typings.mdastUtilToMarkdown.trackMod.Point
+import typings.mdastUtilToMarkdown.libUtilTrackMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,11 +50,16 @@ object anon {
     
     var lineShift: Double
     
-    var now: typings.mdastUtilToMarkdown.typesMod.Point
+    var now: typings.mdastUtilToMarkdown.libTypesMod.Point
   }
   object SafeOptionsencodeArraystr {
     
-    inline def apply(after: String, before: String, lineShift: Double, now: typings.mdastUtilToMarkdown.typesMod.Point): SafeOptionsencodeArraystr = {
+    inline def apply(
+      after: String,
+      before: String,
+      lineShift: Double,
+      now: typings.mdastUtilToMarkdown.libTypesMod.Point
+    ): SafeOptionsencodeArraystr = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], lineShift = lineShift.asInstanceOf[js.Any], now = now.asInstanceOf[js.Any])
       __obj.asInstanceOf[SafeOptionsencodeArraystr]
     }
@@ -73,7 +78,7 @@ object anon {
       
       inline def setLineShift(value: Double): Self = StObject.set(x, "lineShift", value.asInstanceOf[js.Any])
       
-      inline def setNow(value: typings.mdastUtilToMarkdown.typesMod.Point): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: typings.mdastUtilToMarkdown.libTypesMod.Point): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,7 +18,11 @@ trait NumberFormatDigitInternalSlots extends StObject {
   
   var notation: js.UndefOr[NumberFormatNotation] = js.undefined
   
+  var roundingIncrement: js.UndefOr[Double] = js.undefined
+  
   var roundingType: NumberFormatRoundingType
+  
+  var trailingZeroDisplay: js.UndefOr[TrailingZeroDisplay] = js.undefined
 }
 object NumberFormatDigitInternalSlots {
   
@@ -51,6 +55,14 @@ object NumberFormatDigitInternalSlots {
     
     inline def setNotationUndefined: Self = StObject.set(x, "notation", js.undefined)
     
+    inline def setRoundingIncrement(value: Double): Self = StObject.set(x, "roundingIncrement", value.asInstanceOf[js.Any])
+    
+    inline def setRoundingIncrementUndefined: Self = StObject.set(x, "roundingIncrement", js.undefined)
+    
     inline def setRoundingType(value: NumberFormatRoundingType): Self = StObject.set(x, "roundingType", value.asInstanceOf[js.Any])
+    
+    inline def setTrailingZeroDisplay(value: TrailingZeroDisplay): Self = StObject.set(x, "trailingZeroDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setTrailingZeroDisplayUndefined: Self = StObject.set(x, "trailingZeroDisplay", js.undefined)
   }
 }

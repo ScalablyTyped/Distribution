@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SymbolsData extends StObject {
   
+  var approximatelySign: String
+  
   var decimal: String
   
   var exponential: String
@@ -33,6 +35,7 @@ trait SymbolsData extends StObject {
 object SymbolsData {
   
   inline def apply(
+    approximatelySign: String,
     decimal: String,
     exponential: String,
     group: String,
@@ -46,11 +49,13 @@ object SymbolsData {
     superscriptingExponent: String,
     timeSeparator: String
   ): SymbolsData = {
-    val __obj = js.Dynamic.literal(decimal = decimal.asInstanceOf[js.Any], exponential = exponential.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], infinity = infinity.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], minusSign = minusSign.asInstanceOf[js.Any], nan = nan.asInstanceOf[js.Any], perMille = perMille.asInstanceOf[js.Any], percentSign = percentSign.asInstanceOf[js.Any], plusSign = plusSign.asInstanceOf[js.Any], superscriptingExponent = superscriptingExponent.asInstanceOf[js.Any], timeSeparator = timeSeparator.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(approximatelySign = approximatelySign.asInstanceOf[js.Any], decimal = decimal.asInstanceOf[js.Any], exponential = exponential.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], infinity = infinity.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], minusSign = minusSign.asInstanceOf[js.Any], nan = nan.asInstanceOf[js.Any], perMille = perMille.asInstanceOf[js.Any], percentSign = percentSign.asInstanceOf[js.Any], plusSign = plusSign.asInstanceOf[js.Any], superscriptingExponent = superscriptingExponent.asInstanceOf[js.Any], timeSeparator = timeSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolsData]
   }
   
   extension [Self <: SymbolsData](x: Self) {
+    
+    inline def setApproximatelySign(value: String): Self = StObject.set(x, "approximatelySign", value.asInstanceOf[js.Any])
     
     inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     

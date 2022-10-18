@@ -1,19 +1,19 @@
 package typings.vegaLite.anon
 
-import typings.vegaTypings.encodeMod.Text
-import typings.vegaTypings.encodeMod.TextEncodeEntry
-import typings.vegaTypings.signalMod.SignalRef
-import typings.vegaTypings.titleMod.TitleEncode
-import typings.vegaTypings.titleMod.TitleFrame
-import typings.vegaTypings.titleMod.TitleOrient
-import typings.vegaTypings.valuesMod.AlignValue
-import typings.vegaTypings.valuesMod.AnchorValue
-import typings.vegaTypings.valuesMod.ColorValue
-import typings.vegaTypings.valuesMod.FontStyleValue
-import typings.vegaTypings.valuesMod.FontWeightValue
-import typings.vegaTypings.valuesMod.NumberValue
-import typings.vegaTypings.valuesMod.StringValue
-import typings.vegaTypings.valuesMod.TextBaselineValue
+import typings.vegaTypings.typesSpecEncodeMod.Text
+import typings.vegaTypings.typesSpecEncodeMod.TextEncodeEntry
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
+import typings.vegaTypings.typesSpecTitleMod.TitleEncode
+import typings.vegaTypings.typesSpecTitleMod.TitleFrame
+import typings.vegaTypings.typesSpecTitleMod.TitleOrient
+import typings.vegaTypings.typesSpecValuesMod.AlignValue
+import typings.vegaTypings.typesSpecValuesMod.AnchorValue
+import typings.vegaTypings.typesSpecValuesMod.ColorValue
+import typings.vegaTypings.typesSpecValuesMod.FontStyleValue
+import typings.vegaTypings.typesSpecValuesMod.FontWeightValue
+import typings.vegaTypings.typesSpecValuesMod.NumberValue
+import typings.vegaTypings.typesSpecValuesMod.StringValue
+import typings.vegaTypings.typesSpecValuesMod.TextBaselineValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +37,7 @@ trait PartialVgTitle extends StObject {
   
   var dy: js.UndefOr[NumberValue] = js.undefined
   
-  var encode: js.UndefOr[TitleEncode | typings.vegaTypings.encodeMod.Encode[TextEncodeEntry]] = js.undefined
+  var encode: js.UndefOr[TitleEncode | typings.vegaTypings.typesSpecEncodeMod.Encode[TextEncodeEntry]] = js.undefined
   
   var font: js.UndefOr[StringValue] = js.undefined
   
@@ -128,7 +128,7 @@ object PartialVgTitle {
     
     inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
-    inline def setEncode(value: TitleEncode | typings.vegaTypings.encodeMod.Encode[TextEncodeEntry]): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+    inline def setEncode(value: TitleEncode | typings.vegaTypings.typesSpecEncodeMod.Encode[TextEncodeEntry]): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     
     inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
     

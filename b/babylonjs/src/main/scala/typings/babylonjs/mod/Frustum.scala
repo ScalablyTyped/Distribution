@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Frustum")
 @js.native
 open class Frustum ()
-  extends typings.babylonjs.legacyMod.Frustum
+  extends typings.babylonjs.legacyLegacyMod.Frustum
 /* static members */
 object Frustum {
   
@@ -22,8 +22,8 @@ object Frustum {
     * @param frustumPlane the resulting frustum plane
     */
   inline def GetBottomPlaneToRef(
-    transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    frustumPlane: typings.babylonjs.mathPlaneMod.Plane
+    transform: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    frustumPlane: typings.babylonjs.mathsMathDotplaneMod.Plane
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GetBottomPlaneToRef")(transform.asInstanceOf[js.Any], frustumPlane.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -32,8 +32,8 @@ object Frustum {
     * @param frustumPlane the resulting frustum plane
     */
   inline def GetFarPlaneToRef(
-    transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    frustumPlane: typings.babylonjs.mathPlaneMod.Plane
+    transform: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    frustumPlane: typings.babylonjs.mathsMathDotplaneMod.Plane
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFarPlaneToRef")(transform.asInstanceOf[js.Any], frustumPlane.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -42,8 +42,8 @@ object Frustum {
     * @param frustumPlane the resulting frustum plane
     */
   inline def GetLeftPlaneToRef(
-    transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    frustumPlane: typings.babylonjs.mathPlaneMod.Plane
+    transform: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    frustumPlane: typings.babylonjs.mathsMathDotplaneMod.Plane
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLeftPlaneToRef")(transform.asInstanceOf[js.Any], frustumPlane.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -52,8 +52,8 @@ object Frustum {
     * @param frustumPlane the resulting frustum plane
     */
   inline def GetNearPlaneToRef(
-    transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    frustumPlane: typings.babylonjs.mathPlaneMod.Plane
+    transform: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    frustumPlane: typings.babylonjs.mathsMathDotplaneMod.Plane
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNearPlaneToRef")(transform.asInstanceOf[js.Any], frustumPlane.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -61,7 +61,7 @@ object Frustum {
     * @param transform matrix to be applied to the returned planes
     * @returns a new array of 6 Frustum planes computed by the given transformation matrix.
     */
-  inline def GetPlanes(transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): js.Array[typings.babylonjs.mathPlaneMod.Plane] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetPlanes")(transform.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.babylonjs.mathPlaneMod.Plane]]
+  inline def GetPlanes(transform: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix]): js.Array[typings.babylonjs.mathsMathDotplaneMod.Plane] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetPlanes")(transform.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.babylonjs.mathsMathDotplaneMod.Plane]]
   
   /**
     * Sets the given array "frustumPlanes" with the 6 Frustum planes computed by the given transformation matrix.
@@ -69,8 +69,8 @@ object Frustum {
     * @param frustumPlanes the resulting frustum planes
     */
   inline def GetPlanesToRef(
-    transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    frustumPlanes: js.Array[typings.babylonjs.mathPlaneMod.Plane]
+    transform: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    frustumPlanes: js.Array[typings.babylonjs.mathsMathDotplaneMod.Plane]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPlanesToRef")(transform.asInstanceOf[js.Any], frustumPlanes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -79,8 +79,8 @@ object Frustum {
     * @param frustumPlane the resulting frustum plane
     */
   inline def GetRightPlaneToRef(
-    transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    frustumPlane: typings.babylonjs.mathPlaneMod.Plane
+    transform: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    frustumPlane: typings.babylonjs.mathsMathDotplaneMod.Plane
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRightPlaneToRef")(transform.asInstanceOf[js.Any], frustumPlane.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -89,7 +89,7 @@ object Frustum {
     * @param frustumPlane the resulting frustum plane
     */
   inline def GetTopPlaneToRef(
-    transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
-    frustumPlane: typings.babylonjs.mathPlaneMod.Plane
+    transform: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix],
+    frustumPlane: typings.babylonjs.mathsMathDotplaneMod.Plane
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTopPlaneToRef")(transform.asInstanceOf[js.Any], frustumPlane.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

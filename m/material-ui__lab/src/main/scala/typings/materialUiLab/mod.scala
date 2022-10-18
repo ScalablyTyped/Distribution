@@ -13,6 +13,8 @@ import typings.materialUiLab.materialUiLabStrings.div
 import typings.materialUiLab.materialUiLabStrings.span
 import typings.materialUiLab.paginationItemPaginationItemMod.PaginationItemTypeMap
 import typings.materialUiLab.paginationPaginationMod.PaginationProps
+import typings.materialUiLab.paginationUsePaginationMod.UsePaginationProps
+import typings.materialUiLab.paginationUsePaginationMod.UsePaginationResult
 import typings.materialUiLab.ratingRatingMod.RatingProps
 import typings.materialUiLab.skeletonSkeletonMod.SkeletonTypeMap
 import typings.materialUiLab.speedDialActionSpeedDialActionMod.SpeedDialActionProps
@@ -36,8 +38,6 @@ import typings.materialUiLab.treeViewTreeViewMod.TreeViewProps
 import typings.materialUiLab.useAutocompleteUseAutocompleteMod.CreateFilterOptionsConfig
 import typings.materialUiLab.useAutocompleteUseAutocompleteMod.FilterOptionsState
 import typings.materialUiLab.useAutocompleteUseAutocompleteMod.UseAutocompleteProps
-import typings.materialUiLab.usePaginationMod.UsePaginationProps
-import typings.materialUiLab.usePaginationMod.UsePaginationResult
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -49,6 +49,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](props: UseAutocompleteProps[T, Multiple, DisableClearable, FreeSolo]): AnchorEl[T, Multiple, DisableClearable, FreeSolo] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[AnchorEl[T, Multiple, DisableClearable, FreeSolo]]
+  
   inline def Alert(props: AlertProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Alert")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def AlertTitle(props: AlertTitleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AlertTitle")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -58,6 +60,7 @@ object mod {
   inline def AvatarGroup(props: AvatarGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AvatarGroup")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def Pagination(props: PaginationProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Pagination")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Pagination(props: UsePaginationProps): UsePaginationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("Pagination")(props.asInstanceOf[js.Any]).asInstanceOf[UsePaginationResult]
   
   /**
     *

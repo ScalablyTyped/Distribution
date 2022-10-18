@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__imageviewer
 
-Typings are for version 2.2.4
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Image Widget
@@ -10,10 +10,10 @@ JupyterLab - Image Widget
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/imageviewer |
 | Keywords           | - |
-| # releases         | 128 |
-| # dependents       | 3 |
-| # downloads        | 1459747 |
-| # stars            | 0 |
+| # releases         | 142 |
+| # dependents       | 0.0 |
+| # downloads        | 192956.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

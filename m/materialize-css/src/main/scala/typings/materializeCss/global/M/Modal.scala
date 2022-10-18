@@ -1,5 +1,7 @@
 package typings.materializeCss.global.M
 
+import typings.materializeCss.M.ModalOptions
+import typings.materializeCss.MElements
 import typings.materializeCss.anon.PartialModalOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -12,11 +14,20 @@ open class Modal ()
   extends StObject
      with typings.materializeCss.M.Modal {
   
-  /**
-    * Close modal
-    */
   /* CompleteClass */
   override def close(): Unit = js.native
+  
+  /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
   
   /**
     * ID of the modal element
@@ -24,17 +35,17 @@ open class Modal ()
   /* CompleteClass */
   var id: String = js.native
   
-  /**
-    * If the modal is open.
-    */
   /* CompleteClass */
   var isOpen: Boolean = js.native
   
-  /**
-    * Open modal
-    */
   /* CompleteClass */
   override def open(): Unit = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: ModalOptions = js.native
 }
 object Modal {
   
@@ -52,13 +63,8 @@ object Modal {
     * Init Modals
     */
   /* static member */
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any
-  ): js.Array[typings.materializeCss.M.Modal] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Modal]]
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any,
-    options: PartialModalOptions
-  ): js.Array[typings.materializeCss.M.Modal] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Modal]]
+  inline def init(els: MElements): js.Array[typings.materializeCss.M.Modal] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Modal]]
+  inline def init(els: MElements, options: PartialModalOptions): js.Array[typings.materializeCss.M.Modal] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Modal]]
   /**
     * Init Modal
     */

@@ -139,17 +139,17 @@ trait Entity[C]
   
   def getDOMAttribute(attr: String): Any = js.native
   
-  def getObject3D(`type`: String): Object3D[typings.three.eventDispatcherMod.Event] = js.native
+  def getObject3D(`type`: String): Object3D[typings.three.srcCoreEventDispatcherMod.Event] = js.native
   
-  def getOrCreateObject3D(`type`: String, construct: Any): Object3D[typings.three.eventDispatcherMod.Event] = js.native
+  def getOrCreateObject3D(`type`: String, construct: Any): Object3D[typings.three.srcCoreEventDispatcherMod.Event] = js.native
   
   def is(stateName: String): Boolean = js.native
   
   var isPlaying: Boolean = js.native
   
-  var object3D: Object3D[typings.three.eventDispatcherMod.Event] = js.native
+  var object3D: Object3D[typings.three.srcCoreEventDispatcherMod.Event] = js.native
   
-  var object3DMap: ObjectMap[Object3D[typings.three.eventDispatcherMod.Event]] = js.native
+  var object3DMap: ObjectMap[Object3D[typings.three.srcCoreEventDispatcherMod.Event]] = js.native
   
   def pause(): Unit = js.native
   
@@ -166,5 +166,5 @@ trait Entity[C]
   def setAttribute(attr: String, property: String, componentAttrValue: Any): Unit = js.native
   def setAttribute(`type`: position | rotation | scale, value: Coordinate): Unit = js.native
   
-  def setObject3D(`type`: String, obj: Object3D[typings.three.eventDispatcherMod.Event]): Unit = js.native
+  def setObject3D(`type`: String, obj: Object3D[typings.three.srcCoreEventDispatcherMod.Event]): Unit = js.native
 }

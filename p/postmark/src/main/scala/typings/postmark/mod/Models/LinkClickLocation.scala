@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object LinkClickLocation extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.postmark.messageSupportingTypesMod.LinkClickLocation & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.postmark.distClientModelsMessageSupportingTypesMod.LinkClickLocation & String
+  ] = js.native
   
-  /* "HTML" */ val HTML: typings.postmark.messageSupportingTypesMod.LinkClickLocation.HTML & String = js.native
+  /* "HTML" */ val HTML: typings.postmark.distClientModelsMessageSupportingTypesMod.LinkClickLocation.HTML & String = js.native
   
-  /* "Text" */ val Text: typings.postmark.messageSupportingTypesMod.LinkClickLocation.Text & String = js.native
+  /* "Text" */ val Text: typings.postmark.distClientModelsMessageSupportingTypesMod.LinkClickLocation.Text & String = js.native
 }

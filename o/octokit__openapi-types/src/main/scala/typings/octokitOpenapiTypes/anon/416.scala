@@ -6,19 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `416` extends StObject {
   
-  var contexts: js.Array[Octicon]
+  /** If `true` pull requests are omitted from the response (empty array). */
+  var exclude_pull_requests: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['exclude-pull-requests'] */ js.Any
+  ] = js.undefined
 }
 object `416` {
   
-  inline def apply(contexts: js.Array[Octicon]): `416` = {
-    val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any])
+  inline def apply(): `416` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`416`]
   }
   
   extension [Self <: `416`](x: Self) {
     
-    inline def setContexts(value: js.Array[Octicon]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+    inline def setExclude_pull_requests(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['exclude-pull-requests'] */ js.Any
+    ): Self = StObject.set(x, "exclude_pull_requests", value.asInstanceOf[js.Any])
     
-    inline def setContextsVarargs(value: Octicon*): Self = StObject.set(x, "contexts", js.Array(value*))
+    inline def setExclude_pull_requestsUndefined: Self = StObject.set(x, "exclude_pull_requests", js.undefined)
   }
 }

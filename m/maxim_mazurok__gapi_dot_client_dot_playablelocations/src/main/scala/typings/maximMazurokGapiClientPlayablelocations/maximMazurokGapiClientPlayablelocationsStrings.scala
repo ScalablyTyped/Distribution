@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientPlayablelocationsStrings {
   
   @js.native
-  sealed trait GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse extends StObject
-  inline def GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse: GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse = "GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse".asInstanceOf[GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse]
-  
-  @js.native
   sealed trait playablelocations extends StObject
   inline def playablelocations: playablelocations = "playablelocations".asInstanceOf[playablelocations]
   

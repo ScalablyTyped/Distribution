@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "XRHandSpace")
 @js.native
 open class XRHandSpace ()
-  extends typings.three.threeMod.XRHandSpace
+  extends typings.three.srcThreeMod.XRHandSpace

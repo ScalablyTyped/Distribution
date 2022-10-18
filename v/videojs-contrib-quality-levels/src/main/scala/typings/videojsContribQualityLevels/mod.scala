@@ -1,7 +1,7 @@
 package typings.videojsContribQualityLevels
 
 import typings.videojsContribQualityLevels.anon.Call
-import typings.videojsContribQualityLevels.qualityLevelMod.default
+import typings.videojsContribQualityLevels.srcQualityLevelMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,7 @@ object mod {
   @JSImport("videojs-contrib-quality-levels", "QualityLevelList")
   @js.native
   open class QualityLevelList ()
-    extends typings.videojsContribQualityLevels.qualityLevelListMod.default
+    extends typings.videojsContribQualityLevels.srcQualityLevelListMod.default
   
   @js.native
   trait Representation extends StObject {
@@ -54,7 +54,7 @@ object mod {
     
     trait VideoJsPlayer extends StObject {
       
-      def qualityLevels(): typings.videojsContribQualityLevels.qualityLevelListMod.default
+      def qualityLevels(): typings.videojsContribQualityLevels.srcQualityLevelListMod.default
       @JSName("qualityLevels")
       var qualityLevels_Original: Call
     }

@@ -19,9 +19,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the object that applications register with, to receive media focus and transport control notifications. */
-@JSGlobal("Windows.Media.MediaControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.MediaControl")
 @js.native
-abstract class MediaControl ()
+open class MediaControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.MediaControl
 object MediaControl {

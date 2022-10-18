@@ -1,6 +1,6 @@
 package typings.elasticApmNode
 
-import typings.elasticApmNode.connectMod.Connect.ErrorHandleFunction
+import typings.elasticApmNode.typesConnectMod.Connect.ErrorHandleFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,7 +89,7 @@ object anon {
     }
   }
   
-  trait SpanidTraceid extends StObject {
+  trait Traceid extends StObject {
     
     @JSName("span.id")
     var spanDotid: String
@@ -97,16 +97,16 @@ object anon {
     @JSName("trace.id")
     var traceDotid: String
   }
-  object SpanidTraceid {
+  object Traceid {
     
-    inline def apply(spanDotid: String, traceDotid: String): SpanidTraceid = {
+    inline def apply(spanDotid: String, traceDotid: String): Traceid = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("span.id")(spanDotid.asInstanceOf[js.Any])
       __obj.updateDynamic("trace.id")(traceDotid.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SpanidTraceid]
+      __obj.asInstanceOf[Traceid]
     }
     
-    extension [Self <: SpanidTraceid](x: Self) {
+    extension [Self <: Traceid](x: Self) {
       
       inline def setSpanDotid(value: String): Self = StObject.set(x, "span.id", value.asInstanceOf[js.Any])
       
@@ -114,7 +114,7 @@ object anon {
     }
   }
   
-  trait Traceid extends StObject {
+  trait Transactionid extends StObject {
     
     @JSName("trace.id")
     var traceDotid: String
@@ -122,16 +122,16 @@ object anon {
     @JSName("transaction.id")
     var transactionDotid: String
   }
-  object Traceid {
+  object Transactionid {
     
-    inline def apply(traceDotid: String, transactionDotid: String): Traceid = {
+    inline def apply(traceDotid: String, transactionDotid: String): Transactionid = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("trace.id")(traceDotid.asInstanceOf[js.Any])
       __obj.updateDynamic("transaction.id")(transactionDotid.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Traceid]
+      __obj.asInstanceOf[Transactionid]
     }
     
-    extension [Self <: Traceid](x: Self) {
+    extension [Self <: Transactionid](x: Self) {
       
       inline def setTraceDotid(value: String): Self = StObject.set(x, "trace.id", value.asInstanceOf[js.Any])
       

@@ -1,10 +1,7 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.abstractButtonMod.ButtonProps
-import typings.react.mod.AnchorHTMLAttributes
-import typings.react.mod.ButtonHTMLAttributes
+import typings.blueprintjsCore.libEsmComponentsButtonAbstractButtonMod.ButtonProps
 import typings.std.HTMLAnchorElement
-import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "AnchorButton")
 @js.native
 open class AnchorButton protected ()
-  extends typings.blueprintjsCore.componentsMod.AnchorButton {
-  def this(props: ButtonProps[HTMLAnchorElement] & (AnchorHTMLAttributes[HTMLAnchorElement] | ButtonHTMLAttributes[HTMLButtonElement])) = this()
+  extends typings.blueprintjsCore.libEsmComponentsMod.AnchorButton {
+  def this(props: ButtonProps[HTMLAnchorElement] & (/* import warning: importer.ImportType#apply Failed type conversion: std.HTMLAnchorElement extends std.HTMLButtonElement ? react.react.ButtonHTMLAttributes<std.HTMLButtonElement> : react.react.AnchorHTMLAttributes<std.HTMLAnchorElement> */ js.Any)) = this()
   def this(
-    props: ButtonProps[HTMLAnchorElement] & (AnchorHTMLAttributes[HTMLAnchorElement] | ButtonHTMLAttributes[HTMLButtonElement]),
+    props: ButtonProps[HTMLAnchorElement] & (/* import warning: importer.ImportType#apply Failed type conversion: std.HTMLAnchorElement extends std.HTMLButtonElement ? react.react.ButtonHTMLAttributes<std.HTMLButtonElement> : react.react.AnchorHTMLAttributes<std.HTMLAnchorElement> */ js.Any),
     context: Any
   ) = this()
 }

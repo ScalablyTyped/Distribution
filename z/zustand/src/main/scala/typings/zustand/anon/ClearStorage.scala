@@ -1,8 +1,8 @@
 package typings.zustand.anon
 
 import typings.std.Partial
-import typings.zustand.persistMod.PersistListener
-import typings.zustand.persistMod.PersistOptions
+import typings.zustand.esmMiddlewarePersistMod.PersistListener
+import typings.zustand.esmMiddlewarePersistMod.PersistOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

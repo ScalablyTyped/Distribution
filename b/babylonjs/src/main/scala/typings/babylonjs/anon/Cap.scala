@@ -1,7 +1,7 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathColorMod.Color4
-import typings.babylonjs.mathVectorMod.Vector4
+import typings.babylonjs.mathsMathDotcolorMod.Color4
+import typings.babylonjs.mathsMathDotvectorMod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,8 +37,6 @@ trait Cap extends StObject {
   var subdivisions: js.UndefOr[Double] = js.undefined
   
   var tessellation: js.UndefOr[Double] = js.undefined
-  
-  var updatable: js.UndefOr[Boolean] = js.undefined
 }
 object Cap {
   
@@ -112,9 +110,5 @@ object Cap {
     inline def setTessellation(value: Double): Self = StObject.set(x, "tessellation", value.asInstanceOf[js.Any])
     
     inline def setTessellationUndefined: Self = StObject.set(x, "tessellation", js.undefined)
-    
-    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
-    
-    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
   }
 }

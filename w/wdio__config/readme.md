@@ -1,7 +1,7 @@
 
 # Scala.js typings for wdio__config
 
-Typings are for version 7.25.0
+Typings are for version 7.25.1
 
 ## Library description:
 A helper utility to parse and validate WebdriverIO options

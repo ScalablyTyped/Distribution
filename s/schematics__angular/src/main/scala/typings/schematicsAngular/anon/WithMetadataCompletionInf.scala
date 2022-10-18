@@ -1,9 +1,9 @@
 package typings.schematicsAngular.anon
 
 import typings.schematicsAngular.schematicsAngularBooleans.`true`
-import typings.schematicsAngular.typescriptMod.CompletionEntry
-import typings.schematicsAngular.typescriptMod.CompletionInfoFlags
-import typings.schematicsAngular.typescriptMod.TextSpan
+import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.CompletionEntry
+import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.CompletionInfoFlags
+import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.TextSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,9 +1,9 @@
 package typings.awsGreengrassCoreSdk.streamManagerMod
 
-import typings.awsGreengrassCoreSdk.dataMod.PersistenceMap
-import typings.awsGreengrassCoreSdk.dataMod.PersistenceOptions
-import typings.awsGreengrassCoreSdk.dataMod.PersistenceOptionsFlipped
-import typings.awsGreengrassCoreSdk.dataMod.PersistenceValue
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.PersistenceMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.PersistenceOptions
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.PersistenceOptionsFlipped
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.PersistenceValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "Persistence")
 @js.native
 open class Persistence ()
-  extends typings.awsGreengrassCoreSdk.clientMod.Persistence {
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.Persistence {
   def this(value: PersistenceValue) = this()
 }
 /* static members */
@@ -23,15 +23,15 @@ object Persistence {
   
   @JSImport("aws-greengrass-core-sdk/stream-manager", "Persistence.File")
   @js.native
-  def File: typings.awsGreengrassCoreSdk.dataMod.Persistence = js.native
-  inline def File_=(x: typings.awsGreengrassCoreSdk.dataMod.Persistence): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("File")(x.asInstanceOf[js.Any])
+  def File: typings.awsGreengrassCoreSdk.streamManagerDataMod.Persistence = js.native
+  inline def File_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.Persistence): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("File")(x.asInstanceOf[js.Any])
   
   @JSImport("aws-greengrass-core-sdk/stream-manager", "Persistence.Memory")
   @js.native
-  def Memory: typings.awsGreengrassCoreSdk.dataMod.Persistence = js.native
-  inline def Memory_=(x: typings.awsGreengrassCoreSdk.dataMod.Persistence): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Memory")(x.asInstanceOf[js.Any])
+  def Memory: typings.awsGreengrassCoreSdk.streamManagerDataMod.Persistence = js.native
+  inline def Memory_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.Persistence): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Memory")(x.asInstanceOf[js.Any])
   
-  inline def fromMap(d: PersistenceMap): typings.awsGreengrassCoreSdk.dataMod.Persistence = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.Persistence]
+  inline def fromMap(d: PersistenceMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.Persistence = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.Persistence]
   
   @JSImport("aws-greengrass-core-sdk/stream-manager", "Persistence.options")
   @js.native

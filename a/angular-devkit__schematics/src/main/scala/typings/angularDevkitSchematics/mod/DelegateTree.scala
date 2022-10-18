@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "DelegateTree")
 @js.native
 open class DelegateTree protected ()
-  extends typings.angularDevkitSchematics.delegateMod.DelegateTree {
-  def this(_other: typings.angularDevkitSchematics.treeInterfaceMod.Tree) = this()
+  extends typings.angularDevkitSchematics.srcTreeDelegateMod.DelegateTree {
+  def this(_other: typings.angularDevkitSchematics.srcTreeInterfaceMod.Tree) = this()
 }

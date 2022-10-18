@@ -6,7 +6,7 @@ import typings.materialRipple.componentMod.MDCRipple
 import typings.materialRipple.foundationMod.MDCRippleFoundation
 import typings.materialSwitch.adapterMod.MDCSwitchRenderAdapter
 import typings.materialSwitch.adapterMod.MDCSwitchState
-import typings.materialSwitch.materialSwitchMod.MDCSwitchRenderFoundation
+import typings.materialSwitch.foundationMod.MDCSwitchRenderFoundation
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

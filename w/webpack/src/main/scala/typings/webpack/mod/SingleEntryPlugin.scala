@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webpack", "SingleEntryPlugin")
 @js.native
-open class SingleEntryPlugin protected () extends EntryPlugin {
+open class SingleEntryPlugin protected ()
+  extends StObject
+     with EntryPlugin {
   /**
   	 * An entry plugin which will handle
   	 * creation of the EntryDependency
@@ -14,6 +16,22 @@ open class SingleEntryPlugin protected () extends EntryPlugin {
   def this(context: String, entry: String) = this()
   def this(context: String, entry: String, options: String) = this()
   def this(context: String, entry: String, options: EntryOptions) = this()
+  
+  /**
+  	 * Apply the plugin
+  	 */
+  /* CompleteClass */
+  @JSName("apply")
+  override def apply(compiler: Compiler): Unit = js.native
+  
+  /* CompleteClass */
+  var context: String = js.native
+  
+  /* CompleteClass */
+  var entry: String = js.native
+  
+  /* CompleteClass */
+  var options: String | EntryOptions = js.native
 }
 object SingleEntryPlugin {
   

@@ -1,6 +1,6 @@
 package typings.postmark.mod
 
-import typings.postmark.messageSupportingTypesMod.LinkTrackingOptions
+import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postmark", "TemplatedMessage")
 @js.native
 open class TemplatedMessage protected ()
-  extends typings.postmark.modelsMod.TemplatedMessage {
+  extends typings.postmark.distClientModelsMod.TemplatedMessage {
   def this(
     from: String,
     templateIdOrAlias: Double | String,
@@ -20,7 +20,7 @@ open class TemplatedMessage protected ()
     tag: js.UndefOr[String],
     trackOpens: js.UndefOr[Boolean],
     trackLinks: js.UndefOr[LinkTrackingOptions],
-    headers: js.UndefOr[js.Array[typings.postmark.messageSupportingTypesMod.Header]],
-    attachments: js.UndefOr[js.Array[typings.postmark.messageSupportingTypesMod.Attachment]]
+    headers: js.UndefOr[js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]],
+    attachments: js.UndefOr[js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Attachment]]
   ) = this()
 }

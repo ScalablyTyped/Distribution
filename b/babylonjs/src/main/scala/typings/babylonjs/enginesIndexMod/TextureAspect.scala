@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TextureAspect extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.TextureAspect & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureAspect & String] = js.native
   
-  /* "all" */ val All: typings.babylonjs.webgpuConstantsMod.TextureAspect.All & String = js.native
+  /* "all" */ val All: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureAspect.All & String = js.native
   
-  /* "depth-only" */ val DepthOnly: typings.babylonjs.webgpuConstantsMod.TextureAspect.DepthOnly & String = js.native
+  /* "depth-only" */ val DepthOnly: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureAspect.DepthOnly & String = js.native
   
-  /* "stencil-only" */ val StencilOnly: typings.babylonjs.webgpuConstantsMod.TextureAspect.StencilOnly & String = js.native
+  /* "stencil-only" */ val StencilOnly: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureAspect.StencilOnly & String = js.native
 }

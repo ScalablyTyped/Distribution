@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait StragglerSummary extends StObject {
   
   /** Aggregated counts of straggler causes, keyed by the string representation of the StragglerCause enum. */
   var stragglerCauseCount: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StragglerSummary & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The total count of stragglers. */
@@ -27,9 +24,7 @@ object StragglerSummary {
   extension [Self <: StragglerSummary](x: Self) {
     
     inline def setStragglerCauseCount(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StragglerSummary & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "stragglerCauseCount", value.asInstanceOf[js.Any])
     
     inline def setStragglerCauseCountUndefined: Self = StObject.set(x, "stragglerCauseCount", js.undefined)

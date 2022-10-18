@@ -1,8 +1,8 @@
 package typings.expressRouters
 
 import typings.express.mod.Router
-import typings.expressRouters.expressRoutersMod.RouteConfig
-import typings.expressRouters.expressRoutersMod.RouteConfigAlternative
+import typings.expressRouters.distExpressRoutersMod.RouteConfig
+import typings.expressRouters.distExpressRoutersMod.RouteConfigAlternative
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

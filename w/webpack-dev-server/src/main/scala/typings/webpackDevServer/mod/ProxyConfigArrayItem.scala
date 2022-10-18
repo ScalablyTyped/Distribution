@@ -1,6 +1,6 @@
 package typings.webpackDevServer.mod
 
-import typings.httpProxyMiddleware.typesMod.Options
+import typings.httpProxyMiddleware.distTypesMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,9 @@ object ProxyConfigArrayItem {
     
     inline def setContext(value: HttpProxyMiddlewareOptionsFilter): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    inline def setContextFunction2(value: (/* pathname */ String, /* req */ typings.httpProxyMiddleware.typesMod.Request) => Boolean): Self = StObject.set(x, "context", js.Any.fromFunction2(value))
+    inline def setContextFunction2(
+      value: (/* pathname */ String, /* req */ typings.httpProxyMiddleware.distTypesMod.Request) => Boolean
+    ): Self = StObject.set(x, "context", js.Any.fromFunction2(value))
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
@@ -40,7 +42,9 @@ object ProxyConfigArrayItem {
     
     inline def setPath(value: HttpProxyMiddlewareOptionsFilter): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathFunction2(value: (/* pathname */ String, /* req */ typings.httpProxyMiddleware.typesMod.Request) => Boolean): Self = StObject.set(x, "path", js.Any.fromFunction2(value))
+    inline def setPathFunction2(
+      value: (/* pathname */ String, /* req */ typings.httpProxyMiddleware.distTypesMod.Request) => Boolean
+    ): Self = StObject.set(x, "path", js.Any.fromFunction2(value))
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     

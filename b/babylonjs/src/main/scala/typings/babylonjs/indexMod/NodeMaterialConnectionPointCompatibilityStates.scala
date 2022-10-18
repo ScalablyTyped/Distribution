@@ -10,14 +10,14 @@ object NodeMaterialConnectionPointCompatibilityStates extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates & Double
+    typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates & Double
   ] = js.native
   
-  /* 0 */ val Compatible: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates.Compatible & Double = js.native
+  /* 0 */ val Compatible: typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates.Compatible & Double = js.native
   
-  /* 3 */ val HierarchyIssue: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates.HierarchyIssue & Double = js.native
+  /* 3 */ val HierarchyIssue: typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates.HierarchyIssue & Double = js.native
   
-  /* 2 */ val TargetIncompatible: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates.TargetIncompatible & Double = js.native
+  /* 2 */ val TargetIncompatible: typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates.TargetIncompatible & Double = js.native
   
-  /* 1 */ val TypeIncompatible: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates.TypeIncompatible & Double = js.native
+  /* 1 */ val TypeIncompatible: typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates.TypeIncompatible & Double = js.native
 }

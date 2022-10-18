@@ -1,11 +1,9 @@
 package typings.wordpressBlocks.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactChild
 import typings.react.mod.global.JSX.Element
-import typings.std.Omit
 import typings.std.Partial
 import typings.std.Record
 import typings.wordpressBlocks.anon.Attributetypeboolean
@@ -14,20 +12,19 @@ import typings.wordpressBlocks.anon.Icon
 import typings.wordpressBlocks.anon.Mode
 import typings.wordpressBlocks.anon.PartialCategory
 import typings.wordpressBlocks.anon.`0`
-import typings.wordpressBlocks.categoriesMod.Category
+import typings.wordpressBlocks.apiCategoriesMod.Category
+import typings.wordpressBlocks.apiParserMod.Schema.Attribute
+import typings.wordpressBlocks.apiParserMod.Schema.Children
+import typings.wordpressBlocks.apiParserMod.Schema.HTML
+import typings.wordpressBlocks.apiParserMod.Schema.Node
+import typings.wordpressBlocks.apiParserMod.Schema.Query
+import typings.wordpressBlocks.apiParserMod.Schema.Tag
+import typings.wordpressBlocks.apiParserMod.Schema.Text
+import typings.wordpressBlocks.apiParserMod.Source
+import typings.wordpressBlocks.apiRawHandlingMod.PhrasingContentSchema
+import typings.wordpressBlocks.apiRawHandlingMod.pasteHandler.Options
+import typings.wordpressBlocks.apiTemplatesMod.TemplateArray
 import typings.wordpressBlocks.mod.^
-import typings.wordpressBlocks.parserMod.Schema.Attribute
-import typings.wordpressBlocks.parserMod.Schema.Children
-import typings.wordpressBlocks.parserMod.Schema.HTML
-import typings.wordpressBlocks.parserMod.Schema.Node
-import typings.wordpressBlocks.parserMod.Schema.Query
-import typings.wordpressBlocks.parserMod.Schema.Tag
-import typings.wordpressBlocks.parserMod.Schema.Text
-import typings.wordpressBlocks.parserMod.Source
-import typings.wordpressBlocks.rawHandlingMod.PhrasingContentSchema
-import typings.wordpressBlocks.rawHandlingMod.pasteHandler.Options
-import typings.wordpressBlocks.templatesMod.TemplateArray
-import typings.wordpressBlocks.wordpressBlocksStrings.BlockContent
 import typings.wordpressBlocks.wordpressBlocksStrings.align
 import typings.wordpressBlocks.wordpressBlocksStrings.alignWide
 import typings.wordpressBlocks.wordpressBlocksStrings.anchor
@@ -75,8 +72,8 @@ inline def findTransform[T /* <: Transform[Record[String, Any]] */, U /* <: Reco
 
 inline def getBlockAttributes(blockTypeOrName: String, innerHTML: String): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
 inline def getBlockAttributes(blockTypeOrName: String, innerHTML: String, attributes: Record[String, Any]): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
-inline def getBlockAttributes[T /* <: Block[Any] */](blockTypeOrName: T, innerHTML: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[Any]
-inline def getBlockAttributes[T /* <: Block[Any] */](blockTypeOrName: T, innerHTML: String, attributes: Record[String, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def getBlockAttributes[T /* <: Block[Any] */](blockTypeOrName: T, innerHTML: String): /* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/blocks.@wordpress/blocks.Block<infer U> ? U : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/blocks.@wordpress/blocks.Block<infer U> ? U : never */ js.Any]
+inline def getBlockAttributes[T /* <: Block[Any] */](blockTypeOrName: T, innerHTML: String, attributes: Record[String, Any]): /* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/blocks.@wordpress/blocks.Block<infer U> ? U : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/blocks.@wordpress/blocks.Block<infer U> ? U : never */ js.Any]
 
 inline def getBlockContent(block: BlockInstance[StringDictionary[Any]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockContent")(block.asInstanceOf[js.Any]).asInstanceOf[String]
 
@@ -96,12 +93,12 @@ inline def getBlockSupport[T](
   nameOrType: String,
   feature: align | alignWide | anchor | color | customClassName | className | html | inserter | multiple | reusable | spacing | lock | typography,
   defaultSupports: T
-): T | Boolean | Double | String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | Boolean | Double | String]
+): /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? string : T extends number ? number : T extends boolean ? boolean : T */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends string ? string : T extends number ? number : T extends boolean ? boolean : T */ js.Any]
 inline def getBlockSupport[T](
   nameOrType: Block[Any],
   feature: align | alignWide | anchor | color | customClassName | className | html | inserter | multiple | reusable | spacing | lock | typography,
   defaultSupports: T
-): T | Boolean | Double | String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | Boolean | Double | String]
+): /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? string : T extends number ? number : T extends boolean ? boolean : T */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends string ? string : T extends number ? number : T extends boolean ? boolean : T */ js.Any]
 
 inline def getBlockTransforms[T /* <: Record[String, Any] */](direction: to | from): js.Array[Transform[T] & BlockName] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockTransforms")(direction.asInstanceOf[js.Any]).asInstanceOf[js.Array[Transform[T] & BlockName]]
 inline def getBlockTransforms[T /* <: Record[String, Any] */](direction: to | from, blockTypeOrName: String): js.Array[Transform[T] & BlockName] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockTransforms")(direction.asInstanceOf[js.Any], blockTypeOrName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Transform[T] & BlockName]]
@@ -201,14 +198,10 @@ inline def parseWithAttributeSchema(innerHTML: String, schema: Children): js.Arr
 inline def parseWithAttributeSchema(innerHTML: String, schema: HTML): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
 inline def parseWithAttributeSchema(innerHTML: String, schema: Node): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
 inline def parseWithAttributeSchema(innerHTML: String, schema: Tag): js.UndefOr[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171 */ Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.wordpressBlocks.wordpressBlocksStrings.a, typings.wordpressBlocks.wordpressBlocksStrings.abbr, typings.wordpressBlocks.wordpressBlocksStrings.address */ Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.wordpressBlocks.wordpressBlocksStrings.a, typings.wordpressBlocks.wordpressBlocksStrings.abbr, typings.wordpressBlocks.wordpressBlocksStrings.address */ Any]]
 inline def parseWithAttributeSchema(innerHTML: String, schema: Text): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-inline def parseWithAttributeSchema[T /* <: Record[String, Source[Any]] */](innerHTML: String, schema: Query[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>}
-  */ typings.wordpressBlocks.wordpressBlocksStrings.parseWithAttributeSchema & TopLevel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>}
-  */ typings.wordpressBlocks.wordpressBlocksStrings.parseWithAttributeSchema & TopLevel[T]]
+inline def parseWithAttributeSchema[T /* <: Record[String, Source[Any]] */](innerHTML: String, schema: Query[T]): /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>} */ js.Any]
 
 inline def pasteHandler(options: Options & `0`): js.Array[BlockInstance[StringDictionary[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pasteHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
 inline def pasteHandler(options: Options & Mode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pasteHandler")(options.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -256,7 +249,7 @@ inline def unregisterBlockVariation(blockName: String, variationName: js.Array[S
 
 inline def updateCategory(slug: String, category: PartialCategory): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCategory")(slug.asInstanceOf[js.Any], category.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def withBlockContentContext[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Omit[Any, BlockContent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withBlockContentContext")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[Any, BlockContent]]]
+inline def withBlockContentContext[T /* <: ComponentType[Any] */](wrapped: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'BlockContent'>> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withBlockContentContext")(wrapped.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'BlockContent'>> : never */ js.Any]
 
 type BlockAttributes = Record[String, Any]
 

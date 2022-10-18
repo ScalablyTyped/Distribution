@@ -1,7 +1,7 @@
 package typings.orbitUiReactComponents.anon
 
-import typings.orbitUiReactComponents.sharedMod.DomScope
-import typings.orbitUiReactComponents.sharedMod.FocusManager
+import typings.orbitUiReactComponents.distSharedMod.DomScope
+import typings.orbitUiReactComponents.distSharedMod.FocusManager
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
 import typings.std.Event

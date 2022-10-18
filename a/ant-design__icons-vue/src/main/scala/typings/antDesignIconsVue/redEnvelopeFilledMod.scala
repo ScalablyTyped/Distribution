@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsRedEnvelopeFilledMod.RedEnvelopeFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redEnvelopeFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/RedEnvelopeFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/RedEnvelopeFilled", JSImport.Default)
   @js.native
   val default: RedEnvelopeFilledIconType = js.native
-  
-  @js.native
-  trait RedEnvelopeFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_RedEnvelopeFilledIconType: String = js.native
-  }
   
   type _To = RedEnvelopeFilledIconType
   

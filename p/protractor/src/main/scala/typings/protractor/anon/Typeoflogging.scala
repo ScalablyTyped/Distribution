@@ -3,9 +3,9 @@ package typings.protractor.anon
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.seleniumWebdriver.loggingMod.IType
-import typings.seleniumWebdriver.loggingMod.Level
-import typings.seleniumWebdriver.loggingMod.Logger
+import typings.seleniumWebdriver.libLoggingMod.IType
+import typings.seleniumWebdriver.libLoggingMod.Level
+import typings.seleniumWebdriver.libLoggingMod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

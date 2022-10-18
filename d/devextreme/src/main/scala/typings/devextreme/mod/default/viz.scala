@@ -1,8 +1,8 @@
 package typings.devextreme.mod.default
 
-import typings.devextreme.anon.BackgroundColor
 import typings.devextreme.anon.BaseColorSet
-import typings.devextreme.anon.FileName
+import typings.devextreme.anon.GridLayout
+import typings.devextreme.anon.OnExported
 import typings.devextreme.mod.DevExpress.common.charts.Palette
 import typings.devextreme.mod.DevExpress.core.DefaultOptionsRule
 import typings.devextreme.mod.DevExpress.viz.VectorMapProjection
@@ -143,12 +143,12 @@ object viz {
     extends StObject
        with typings.devextreme.mod.DevExpress.viz.dxVectorMap
   
-  inline def exportFromMarkup(markup: String, options: BackgroundColor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exportFromMarkup")(markup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def exportFromMarkup(markup: String, options: OnExported): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exportFromMarkup")(markup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def exportWidgets(widgetInstances: js.Array[js.Array[VizWidget] | VizWidget]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exportWidgets")(widgetInstances.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def exportWidgets(widgetInstances: js.Array[js.Array[VizWidget] | VizWidget], options: FileName): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exportWidgets")(widgetInstances.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def exportWidgets(widgetInstances: js.Array[js.Array[VizWidget] | VizWidget], options: GridLayout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exportWidgets")(widgetInstances.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def exportWidgets(widgetInstances: VizWidget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exportWidgets")(widgetInstances.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def exportWidgets(widgetInstances: VizWidget, options: FileName): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exportWidgets")(widgetInstances.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def exportWidgets(widgetInstances: VizWidget, options: GridLayout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exportWidgets")(widgetInstances.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def generateColors(palette: js.Array[String], count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   inline def generateColors(palette: Palette, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]

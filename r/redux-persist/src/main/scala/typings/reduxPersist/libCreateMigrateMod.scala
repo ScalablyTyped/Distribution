@@ -1,8 +1,8 @@
 package typings.reduxPersist
 
-import typings.reduxPersist.createMigrateMod.MigrationConfig
-import typings.reduxPersist.typesMod.MigrationManifest
-import typings.reduxPersist.typesMod.PersistMigrate
+import typings.reduxPersist.esCreateMigrateMod.MigrationConfig
+import typings.reduxPersist.esTypesMod.MigrationManifest
+import typings.reduxPersist.esTypesMod.PersistMigrate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

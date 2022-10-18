@@ -1,6 +1,6 @@
 package typings.nickThompsonElementary
 
-import typings.nickThompsonElementary.typesMod.NativeNodeType
+import typings.nickThompsonElementary.srcCoreTypesMod.NativeNodeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

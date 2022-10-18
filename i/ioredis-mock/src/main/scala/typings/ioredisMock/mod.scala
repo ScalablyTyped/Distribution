@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.ioredis.anon.PartialSentinelAddress
 import typings.ioredis.anon.TypeofRedis
 import typings.ioredis.anon.keyinkeyofCommandNameFlag
-import typings.ioredis.commandMod.ArgumentTransformer
-import typings.ioredis.commandMod.ArgumentType
-import typings.ioredis.commandMod.CommandOptions
-import typings.ioredis.commandMod.ReplyTransformer
-import typings.ioredis.scanStreamMod.Options
-import typings.ioredis.sentinelConnectorMod.SentinelConnectionOptions
+import typings.ioredis.builtCommandMod.ArgumentTransformer
+import typings.ioredis.builtCommandMod.ArgumentType
+import typings.ioredis.builtCommandMod.CommandOptions
+import typings.ioredis.builtCommandMod.ReplyTransformer
+import typings.ioredis.builtConnectorsSentinelConnectorMod.SentinelConnectionOptions
+import typings.ioredis.builtScanStreamMod.Options
 import typings.ioredisMock.ioredisMockStrings.ENTER_SUBSCRIBER_MODE
 import typings.ioredisMock.ioredisMockStrings.EXIT_SUBSCRIBER_MODE
 import typings.ioredisMock.ioredisMockStrings.VALID_IN_MONITOR_MODE
@@ -49,13 +49,13 @@ object mod {
     @js.native
     open class default ()
       extends typings.ioredis.mod.default {
-      def this(options: typings.ioredis.redisOptionsMod.RedisOptions) = this()
+      def this(options: typings.ioredis.builtRedisRedisOptionsMod.RedisOptions) = this()
       def this(path: String) = this()
       def this(port: Double) = this()
-      def this(path: String, options: typings.ioredis.redisOptionsMod.RedisOptions) = this()
+      def this(path: String, options: typings.ioredis.builtRedisRedisOptionsMod.RedisOptions) = this()
       def this(port: Double, host: String) = this()
-      def this(port: Double, options: typings.ioredis.redisOptionsMod.RedisOptions) = this()
-      def this(port: Double, host: String, options: typings.ioredis.redisOptionsMod.RedisOptions) = this()
+      def this(port: Double, options: typings.ioredis.builtRedisRedisOptionsMod.RedisOptions) = this()
+      def this(port: Double, host: String, options: typings.ioredis.builtRedisRedisOptionsMod.RedisOptions) = this()
     }
     object default {
       
@@ -67,14 +67,14 @@ object mod {
       @JSImport("ioredis-mock", "default.default.Cluster")
       @js.native
       open class Cluster protected ()
-        extends typings.ioredis.clusterMod.default {
+        extends typings.ioredis.builtClusterMod.default {
         /**
           * Creates an instance of Cluster.
           */
-        def this(startupNodes: js.Array[typings.ioredis.clusterMod.ClusterNode]) = this()
+        def this(startupNodes: js.Array[typings.ioredis.builtClusterMod.ClusterNode]) = this()
         def this(
-          startupNodes: js.Array[typings.ioredis.clusterMod.ClusterNode],
-          options: typings.ioredis.clusterOptionsMod.ClusterOptions
+          startupNodes: js.Array[typings.ioredis.builtClusterMod.ClusterNode],
+          options: typings.ioredis.builtClusterClusterOptionsMod.ClusterOptions
         ) = this()
       }
       /* static member */
@@ -82,15 +82,15 @@ object mod {
       @JSImport("ioredis-mock", "default.default.Cluster")
       @js.native
       def Cluster: Instantiable2[
-            /* startupNodes */ js.Array[typings.ioredis.clusterMod.ClusterNode], 
-            /* options */ js.UndefOr[typings.ioredis.clusterOptionsMod.ClusterOptions], 
-            typings.ioredis.clusterMod.default
+            /* startupNodes */ js.Array[typings.ioredis.builtClusterMod.ClusterNode], 
+            /* options */ js.UndefOr[typings.ioredis.builtClusterClusterOptionsMod.ClusterOptions], 
+            typings.ioredis.builtClusterMod.default
           ] = js.native
       inline def Cluster_=(
         x: Instantiable2[
-              /* startupNodes */ js.Array[typings.ioredis.clusterMod.ClusterNode], 
-              /* options */ js.UndefOr[typings.ioredis.clusterOptionsMod.ClusterOptions], 
-              typings.ioredis.clusterMod.default
+              /* startupNodes */ js.Array[typings.ioredis.builtClusterMod.ClusterNode], 
+              /* options */ js.UndefOr[typings.ioredis.builtClusterClusterOptionsMod.ClusterOptions], 
+              typings.ioredis.builtClusterMod.default
             ]
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cluster")(x.asInstanceOf[js.Any])
       
@@ -151,11 +151,11 @@ object mod {
               TypeofRedis & (Instantiable3[
                 /* port */ Double, 
                 /* host */ String, 
-                /* options */ typings.ioredis.redisOptionsMod.RedisOptions, 
-                typings.ioredis.redisMod.Redis
+                /* options */ typings.ioredis.builtRedisRedisOptionsMod.RedisOptions, 
+                typings.ioredis.builtRedisMod.Redis
               ])
             ]
-      ): typings.ioredis.redisMod.Redis = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(args.asInstanceOf[js.Any]).asInstanceOf[typings.ioredis.redisMod.Redis]
+      ): typings.ioredis.builtRedisMod.Redis = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(args.asInstanceOf[js.Any]).asInstanceOf[typings.ioredis.builtRedisMod.Redis]
       
       /**
         * Default options
@@ -167,9 +167,9 @@ object mod {
       inline def defaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("ioredis-mock", "default.AbstractConnector")
+    /* note: abstract class */ @JSImport("ioredis-mock", "default.AbstractConnector")
     @js.native
-    abstract class AbstractConnector protected ()
+    open class AbstractConnector protected ()
       extends typings.ioredis.mod.AbstractConnector {
       def this(disconnectTimeout: Double) = this()
     }
@@ -184,10 +184,10 @@ object mod {
       /**
         * Creates an instance of Cluster.
         */
-      def this(startupNodes: js.Array[typings.ioredis.clusterMod.ClusterNode]) = this()
+      def this(startupNodes: js.Array[typings.ioredis.builtClusterMod.ClusterNode]) = this()
       def this(
-        startupNodes: js.Array[typings.ioredis.clusterMod.ClusterNode],
-        options: typings.ioredis.clusterOptionsMod.ClusterOptions
+        startupNodes: js.Array[typings.ioredis.builtClusterMod.ClusterNode],
+        options: typings.ioredis.builtClusterClusterOptionsMod.ClusterOptions
       ) = this()
     }
     
@@ -276,8 +276,8 @@ object mod {
     @js.native
     open class Pipeline protected ()
       extends typings.ioredis.mod.Pipeline {
-      def this(redis: typings.ioredis.clusterMod.default) = this()
-      def this(redis: typings.ioredis.redisMod.default) = this()
+      def this(redis: typings.ioredis.builtClusterMod.default) = this()
+      def this(redis: typings.ioredis.builtRedisMod.default) = this()
     }
     
     /**
@@ -301,13 +301,13 @@ object mod {
     @js.native
     open class Redis ()
       extends typings.ioredis.mod.Redis {
-      def this(options: typings.ioredis.redisOptionsMod.RedisOptions) = this()
+      def this(options: typings.ioredis.builtRedisRedisOptionsMod.RedisOptions) = this()
       def this(path: String) = this()
       def this(port: Double) = this()
-      def this(path: String, options: typings.ioredis.redisOptionsMod.RedisOptions) = this()
+      def this(path: String, options: typings.ioredis.builtRedisRedisOptionsMod.RedisOptions) = this()
       def this(port: Double, host: String) = this()
-      def this(port: Double, options: typings.ioredis.redisOptionsMod.RedisOptions) = this()
-      def this(port: Double, host: String, options: typings.ioredis.redisOptionsMod.RedisOptions) = this()
+      def this(port: Double, options: typings.ioredis.builtRedisRedisOptionsMod.RedisOptions) = this()
+      def this(port: Double, host: String, options: typings.ioredis.builtRedisRedisOptionsMod.RedisOptions) = this()
     }
     object Redis {
       
@@ -319,14 +319,14 @@ object mod {
       @JSImport("ioredis-mock", "default.Redis.Cluster")
       @js.native
       open class Cluster protected ()
-        extends typings.ioredis.clusterMod.default {
+        extends typings.ioredis.builtClusterMod.default {
         /**
           * Creates an instance of Cluster.
           */
-        def this(startupNodes: js.Array[typings.ioredis.clusterMod.ClusterNode]) = this()
+        def this(startupNodes: js.Array[typings.ioredis.builtClusterMod.ClusterNode]) = this()
         def this(
-          startupNodes: js.Array[typings.ioredis.clusterMod.ClusterNode],
-          options: typings.ioredis.clusterOptionsMod.ClusterOptions
+          startupNodes: js.Array[typings.ioredis.builtClusterMod.ClusterNode],
+          options: typings.ioredis.builtClusterClusterOptionsMod.ClusterOptions
         ) = this()
       }
       /* static member */
@@ -334,15 +334,15 @@ object mod {
       @JSImport("ioredis-mock", "default.Redis.Cluster")
       @js.native
       def Cluster: Instantiable2[
-            /* startupNodes */ js.Array[typings.ioredis.clusterMod.ClusterNode], 
-            /* options */ js.UndefOr[typings.ioredis.clusterOptionsMod.ClusterOptions], 
-            typings.ioredis.clusterMod.default
+            /* startupNodes */ js.Array[typings.ioredis.builtClusterMod.ClusterNode], 
+            /* options */ js.UndefOr[typings.ioredis.builtClusterClusterOptionsMod.ClusterOptions], 
+            typings.ioredis.builtClusterMod.default
           ] = js.native
       inline def Cluster_=(
         x: Instantiable2[
-              /* startupNodes */ js.Array[typings.ioredis.clusterMod.ClusterNode], 
-              /* options */ js.UndefOr[typings.ioredis.clusterOptionsMod.ClusterOptions], 
-              typings.ioredis.clusterMod.default
+              /* startupNodes */ js.Array[typings.ioredis.builtClusterMod.ClusterNode], 
+              /* options */ js.UndefOr[typings.ioredis.builtClusterClusterOptionsMod.ClusterOptions], 
+              typings.ioredis.builtClusterMod.default
             ]
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cluster")(x.asInstanceOf[js.Any])
       
@@ -403,11 +403,11 @@ object mod {
               TypeofRedis & (Instantiable3[
                 /* port */ Double, 
                 /* host */ String, 
-                /* options */ typings.ioredis.redisOptionsMod.RedisOptions, 
-                typings.ioredis.redisMod.Redis
+                /* options */ typings.ioredis.builtRedisRedisOptionsMod.RedisOptions, 
+                typings.ioredis.builtRedisMod.Redis
               ])
             ]
-      ): typings.ioredis.redisMod.Redis = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(args.asInstanceOf[js.Any]).asInstanceOf[typings.ioredis.redisMod.Redis]
+      ): typings.ioredis.builtRedisMod.Redis = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(args.asInstanceOf[js.Any]).asInstanceOf[typings.ioredis.builtRedisMod.Redis]
       
       /**
         * Default options
@@ -460,9 +460,9 @@ object mod {
   
   type Cluster = typings.ioredis.mod.Cluster
   
-  type ClusterNode = typings.ioredis.clusterMod.ClusterNode
+  type ClusterNode = typings.ioredis.builtClusterMod.ClusterNode
   
-  type ClusterOptions = typings.ioredis.clusterOptionsMod.ClusterOptions
+  type ClusterOptions = typings.ioredis.builtClusterClusterOptionsMod.ClusterOptions
   
   type ClusterStatic = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RealIORedis.ClusterStatic */ Any
   
@@ -470,17 +470,17 @@ object mod {
   
   type Commands = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RealIORedis.Commands */ Any
   
-  type DNSLookupFunction = typings.ioredis.clusterOptionsMod.DNSLookupFunction
+  type DNSLookupFunction = typings.ioredis.builtClusterClusterOptionsMod.DNSLookupFunction
   
   type KeyType = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RealIORedis.KeyType */ Any
   
   type MultiOptions = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RealIORedis.MultiOptions */ Any
   
-  type NatMap = typings.ioredis.clusterOptionsMod.NatMap
+  type NatMap = typings.ioredis.builtClusterClusterOptionsMod.NatMap
   
   type NodeConfiguration = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RealIORedis.NodeConfiguration */ Any
   
-  type NodeRole = typings.ioredis.utilMod.NodeRole
+  type NodeRole = typings.ioredis.builtClusterUtilMod.NodeRole
   
   type Ok = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RealIORedis.Ok */ Any
   
@@ -508,7 +508,7 @@ object mod {
   
   type Redis = typings.ioredis.mod.Redis
   
-  type RedisOptions = typings.ioredis.redisOptionsMod.RedisOptions
+  type RedisOptions = typings.ioredis.builtRedisRedisOptionsMod.RedisOptions
   
   type ScanStreamOption = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RealIORedis.ScanStreamOption */ Any
   

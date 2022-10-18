@@ -1,8 +1,8 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "ChromaticAberrationPostProcess")
 @js.native
 open class ChromaticAberrationPostProcess protected ()
-  extends typings.babylonjs.chromaticAberrationPostProcessMod.ChromaticAberrationPostProcess {
+  extends typings.babylonjs.postProcessesChromaticAberrationPostProcessMod.ChromaticAberrationPostProcess {
   /**
     * Creates a new instance ChromaticAberrationPostProcess
     * @param name The name of the effect.
@@ -50,8 +50,8 @@ object ChromaticAberrationPostProcess {
     * @internal
     */
   inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[
-    typings.babylonjs.chromaticAberrationPostProcessMod.ChromaticAberrationPostProcess
+    typings.babylonjs.postProcessesChromaticAberrationPostProcessMod.ChromaticAberrationPostProcess
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[
-    typings.babylonjs.chromaticAberrationPostProcessMod.ChromaticAberrationPostProcess
+    typings.babylonjs.postProcessesChromaticAberrationPostProcessMod.ChromaticAberrationPostProcess
   ]]
 }

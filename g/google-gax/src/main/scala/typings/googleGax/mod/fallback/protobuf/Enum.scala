@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.protobuf.Enum")
 @js.native
 open class Enum protected ()
-  extends typings.googleGax.fallbackMod.protobuf.Enum {
+  extends typings.googleGax.buildSrcFallbackMod.protobuf.Enum {
   /**
     * Constructs a new enum instance.
     * @param name Unique name within its namespace

@@ -58,6 +58,26 @@ trait TableColumnLoadOptions extends StObject {
     * [Api set: ExcelApi 1.1]
     */
   var values: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * A JSON representation of the values in the cells in this table column.
+    Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  var valuesAsJson: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * A JSON representation of the values in the cells in this table column.
+    Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  var valuesAsJsonLocal: js.UndefOr[Boolean] = js.undefined
 }
 object TableColumnLoadOptions {
   
@@ -89,6 +109,14 @@ object TableColumnLoadOptions {
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesAsJson(value: Boolean): Self = StObject.set(x, "valuesAsJson", value.asInstanceOf[js.Any])
+    
+    inline def setValuesAsJsonLocal(value: Boolean): Self = StObject.set(x, "valuesAsJsonLocal", value.asInstanceOf[js.Any])
+    
+    inline def setValuesAsJsonLocalUndefined: Self = StObject.set(x, "valuesAsJsonLocal", js.undefined)
+    
+    inline def setValuesAsJsonUndefined: Self = StObject.set(x, "valuesAsJson", js.undefined)
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }

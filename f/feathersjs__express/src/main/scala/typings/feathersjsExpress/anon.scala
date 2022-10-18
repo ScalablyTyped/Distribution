@@ -1,15 +1,10 @@
 package typings.feathersjsExpress
 
-import typings.bodyParser.mod.OptionsJson
-import typings.bodyParser.mod.OptionsUrlencoded
-import typings.connect.mod.NextHandleFunction
 import typings.express.mod.ErrorRequestHandler
 import typings.express.mod.RequestHandler
 import typings.express.mod.Response_
 import typings.express.mod.RouterOptions
 import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.feathersjsFeathers.mod.Application
@@ -19,9 +14,9 @@ import typings.feathersjsFeathers.mod.Paginated
 import typings.serveStatic.mod.RequestHandlerConstructor
 import typings.serveStatic.mod.ServeStaticOptions
 import typings.std.Partial
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -30,163 +25,138 @@ object anon {
   trait Call extends StObject {
     
     def apply(): js.Function0[Unit] = js.native
-    def apply(handler: RequestHandler[ParamsDictionary, _, _, Query]): js.Function0[Unit] = js.native
+    def apply(
+      handler: RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): js.Function0[Unit] = js.native
     
-    def formatter(req: Request[ParamsDictionary, _, _, Query], res: Response[_, Double], next: NextFunction): js.Any = js.native
+    def formatter(req: Request, res: Response): Any = js.native
+    def formatter(req: Request, res: Response, next: NextFunction): Any = js.native
     @JSName("formatter")
-    var formatter_Original: RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    var formatter_Original: RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
   }
   object Error {
     
-    @scala.inline
-    def apply(): Error = {
+    inline def apply(): Error = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: /* msg */ String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* msg */ String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     }
   }
   
-  @js.native
   trait Html extends StObject {
     
-    var html: js.UndefOr[js.Any] = js.native
+    var html: js.UndefOr[Any] = js.undefined
     
-    var json: js.UndefOr[js.Any] = js.native
+    var json: js.UndefOr[Any] = js.undefined
     
-    var logger: js.UndefOr[Error] = js.native
+    var logger: js.UndefOr[Error] = js.undefined
     
-    var public: js.UndefOr[String] = js.native
+    var public: js.UndefOr[String] = js.undefined
   }
   object Html {
     
-    @scala.inline
-    def apply(): Html = {
+    inline def apply(): Html = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Html]
     }
     
-    @scala.inline
-    implicit class HtmlMutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
+    extension [Self <: Html](x: Self) {
       
-      @scala.inline
-      def setHtml(value: js.Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Error): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Error): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
     }
   }
   
   /* Inlined std.Partial<@feathersjs/feathers.@feathersjs/feathers.ServiceMethods<any> & @feathersjs/feathers.@feathersjs/feathers.SetupMethod> */
-  @js.native
   trait PartialServiceMethodsanyS extends StObject {
     
-    var create: js.UndefOr[js.Function1[/* data */ Partial[_], js.Promise[_ | js.Array[_]]]] = js.native
+    var create: js.UndefOr[js.Function1[/* data */ Partial[Any], js.Promise[Any | js.Array[Any]]]] = js.undefined
     
-    var find: js.UndefOr[js.Function0[js.Promise[_ | js.Array[_] | Paginated[_]]]] = js.native
+    var find: js.UndefOr[js.Function0[js.Promise[Any | js.Array[Any] | Paginated[Any]]]] = js.undefined
     
-    var get: js.UndefOr[js.Function1[/* id */ Id, js.Promise[_]]] = js.native
+    var get: js.UndefOr[js.Function1[/* id */ Id, js.Promise[Any]]] = js.undefined
     
-    var patch: js.UndefOr[js.Function2[/* id */ NullableId, /* data */ Partial[_], js.Promise[_]]] = js.native
+    var patch: js.UndefOr[js.Function2[/* id */ NullableId, /* data */ Partial[Any], js.Promise[Any]]] = js.undefined
     
-    var remove: js.UndefOr[js.Function1[/* id */ NullableId, js.Promise[_]]] = js.native
+    var remove: js.UndefOr[js.Function1[/* id */ NullableId, js.Promise[Any]]] = js.undefined
     
-    var setup: js.UndefOr[js.Function2[/* app */ Application[_], /* path */ String, Unit]] = js.native
+    var setup: js.UndefOr[js.Function2[/* app */ Application[Any], /* path */ String, Unit]] = js.undefined
     
-    var update: js.UndefOr[js.Function2[/* id */ NullableId, /* data */ js.Any, js.Promise[_]]] = js.native
+    var update: js.UndefOr[js.Function2[/* id */ NullableId, /* data */ Any, js.Promise[Any]]] = js.undefined
   }
   object PartialServiceMethodsanyS {
     
-    @scala.inline
-    def apply(): PartialServiceMethodsanyS = {
+    inline def apply(): PartialServiceMethodsanyS = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialServiceMethodsanyS]
     }
     
-    @scala.inline
-    implicit class PartialServiceMethodsanySMutableBuilder[Self <: PartialServiceMethodsanyS] (val x: Self) extends AnyVal {
+    extension [Self <: PartialServiceMethodsanyS](x: Self) {
       
-      @scala.inline
-      def setCreate(value: /* data */ Partial[_] => js.Promise[_ | js.Array[_]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: /* data */ Partial[Any] => js.Promise[Any | js.Array[Any]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      @scala.inline
-      def setFind(value: () => js.Promise[_ | js.Array[_] | Paginated[_]]): Self = StObject.set(x, "find", js.Any.fromFunction0(value))
+      inline def setFind(value: () => js.Promise[Any | js.Array[Any] | Paginated[Any]]): Self = StObject.set(x, "find", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
+      inline def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
       
-      @scala.inline
-      def setGet(value: /* id */ Id => js.Promise[_]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: /* id */ Id => js.Promise[Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+      inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
       
-      @scala.inline
-      def setPatch(value: (/* id */ NullableId, /* data */ Partial[_]) => js.Promise[_]): Self = StObject.set(x, "patch", js.Any.fromFunction2(value))
+      inline def setPatch(value: (/* id */ NullableId, /* data */ Partial[Any]) => js.Promise[Any]): Self = StObject.set(x, "patch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+      inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
       
-      @scala.inline
-      def setRemove(value: /* id */ NullableId => js.Promise[_]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: /* id */ NullableId => js.Promise[Any]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setSetup(value: (/* app */ Application[_], /* path */ String) => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction2(value))
+      inline def setSetup(value: (/* app */ Application[Any], /* path */ String) => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
+      inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: (/* id */ NullableId, /* data */ js.Any) => js.Promise[_]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (/* id */ NullableId, /* data */ Any) => js.Promise[Any]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
-  }
-  
-  @js.native
-  trait Typeofjson extends StObject {
-    
-    def apply(): NextHandleFunction = js.native
-    def apply(options: OptionsJson): NextHandleFunction = js.native
   }
   
   @js.native
@@ -197,47 +167,66 @@ object anon {
     def Router(): typings.expressServeStaticCore.mod.Router = js.native
     def Router(options: RouterOptions): typings.expressServeStaticCore.mod.Router = js.native
     
-    def errorHandler(): ErrorRequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def errorHandler(options: Html): ErrorRequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def errorHandler(): ErrorRequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def errorHandler(options: Html): ErrorRequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
     /**
       * This is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
       * @since 4.16.0
       */
-    val json: Typeofjson = js.native
+    var json: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof bodyParser.json */ Any = js.native
     
-    def notFound(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def notFound(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
     def rest(): js.Function0[Unit] = js.native
-    def rest(handler: RequestHandler[ParamsDictionary, _, _, Query]): js.Function0[Unit] = js.native
+    def rest(
+      handler: RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): js.Function0[Unit] = js.native
     @JSName("rest")
     val rest_Original: Call = js.native
     
     /**
       * This is a built-in middleware function in Express. It serves static files and is based on serve-static.
       */
-    def static(root: String): typings.serveStatic.mod.RequestHandler[Response_[_]] = js.native
+    def static(root: String): typings.serveStatic.mod.RequestHandler[Response_[Any, Record[String, Any]]] = js.native
     /**
       * This is a built-in middleware function in Express. It serves static files and is based on serve-static.
       */
-    def static(root: String, options: ServeStaticOptions[Response_[_]]): typings.serveStatic.mod.RequestHandler[Response_[_]] = js.native
+    def static(root: String, options: ServeStaticOptions[Response_[Any, Record[String, Any]]]): typings.serveStatic.mod.RequestHandler[Response_[Any, Record[String, Any]]] = js.native
     /**
       * This is a built-in middleware function in Express. It serves static files and is based on serve-static.
       */
     @JSName("static")
-    var static_Original: RequestHandlerConstructor[Response_[_]] = js.native
+    var static_Original: RequestHandlerConstructor[Response_[Any, Record[String, Any]]] = js.native
     
     /**
       * This is a built-in middleware function in Express. It parses incoming requests with urlencoded payloads and is based on body-parser.
       * @since 4.16.0
       */
-    val urlencoded: Typeofurlencoded = js.native
-  }
-  
-  @js.native
-  trait Typeofurlencoded extends StObject {
-    
-    def apply(): NextHandleFunction = js.native
-    def apply(options: OptionsUrlencoded): NextHandleFunction = js.native
+    var urlencoded: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof bodyParser.urlencoded */ Any = js.native
   }
 }

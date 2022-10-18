@@ -4,8 +4,8 @@ import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PULL
 import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PULL_REQUEST_MERGE_STATE_CHANGED
 import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PULL_REQUEST_SOURCE_REFERENCE_UPDATED
 import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PULL_REQUEST_STATUS_CHANGED
-import typings.awsSdkClientCodecommitNode.inputTypesUnionMod.InputTypesUnion
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientCodecommitNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

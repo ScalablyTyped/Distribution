@@ -1,8 +1,8 @@
 package typings.mendixmodelsdk.mod.documenttemplates
 
-import typings.mendixmodelsdk.documenttemplatesMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenDocumenttemplatesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "documenttemplates.DocumentTemplate")
 @js.native
 open class DocumentTemplate protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.DocumentTemplate {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.documenttemplates.DocumentTemplate {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -33,7 +33,7 @@ object DocumentTemplate {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  inline def createIn(container: IFolderBase): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DocumentTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DocumentTemplate]
+  inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DocumentTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DocumentTemplate]
   
   /* static member */
   @JSImport("mendixmodelsdk", "documenttemplates.DocumentTemplate.structureTypeName")

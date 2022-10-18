@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "MediaElement")
+/* note: abstract class */ @JSImport("k6/html", "MediaElement")
 @js.native
-abstract class MediaElement () extends Element {
+open class MediaElement () extends Element {
   
   /** Contained <track> elements. */
   def textTracks(): js.Array[TrackElement] = js.native

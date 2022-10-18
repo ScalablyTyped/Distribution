@@ -11,6 +11,8 @@ object anon {
     var data: js.Array[js.Array[Any]]
     
     var name: String
+    
+    var options: js.UndefOr[js.Object] = js.undefined
   }
   object Data {
     
@@ -26,6 +28,10 @@ object anon {
       inline def setDataVarargs(value: js.Array[Any]*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -34,8 +40,6 @@ object anon {
     var data: js.Array[js.Array[Any]]
     
     var name: String
-    
-    var options: js.UndefOr[js.Object] = js.undefined
   }
   object Name {
     
@@ -51,10 +55,6 @@ object anon {
       inline def setDataVarargs(value: js.Array[Any]*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-      
-      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

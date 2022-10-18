@@ -1,7 +1,7 @@
 package typings.ol
 
-import typings.ol.olTileMod.LoadFunction
-import typings.ol.olTileMod.Options
+import typings.ol.tileMod.LoadFunction
+import typings.ol.tileMod.Options
 import typings.ol.tileStateMod.TileState
 import typings.ol.tilecoordMod.TileCoord
 import typings.std.HTMLCanvasElement
@@ -35,7 +35,7 @@ object imageTileMod {
   
   @js.native
   trait ImageTile
-    extends typings.ol.olTileMod.default {
+    extends typings.ol.tileMod.default {
     
     /**
       * Get the HTML image element for this tile (may be a Canvas, Image, or Video).

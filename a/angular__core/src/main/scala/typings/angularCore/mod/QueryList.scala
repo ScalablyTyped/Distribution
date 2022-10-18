@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import typings.rxjs.mod.Observable_
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +29,7 @@ open class QueryList[T] ()
   /**
     * Returns `Observable` of `QueryList` notifying the subscriber of changes.
     */
-  def changes: Any = js.native
+  def changes: Observable_[Any] = js.native
   
   /** internal */
   def destroy(): Unit = js.native

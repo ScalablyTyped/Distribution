@@ -1,7 +1,7 @@
 package typings.awsSdkPropertyProvider
 
-import typings.awsSdkPropertyProvider.memoizeMod.MemoizeOverload
-import typings.awsSdkTypes.utilMod.Provider
+import typings.awsSdkPropertyProvider.distTypesMemoizeMod.MemoizeOverload
+import typings.awsSdkTypes.distTypesUtilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object mod {
   @JSImport("@aws-sdk/property-provider", "CredentialsProviderError")
   @js.native
   open class CredentialsProviderError protected ()
-    extends typings.awsSdkPropertyProvider.credentialsProviderErrorMod.CredentialsProviderError {
+    extends typings.awsSdkPropertyProvider.distTypesCredentialsProviderErrorMod.CredentialsProviderError {
     def this(message: String) = this()
     def this(message: String, tryNextLink: Boolean) = this()
   }
@@ -23,7 +23,7 @@ object mod {
   @JSImport("@aws-sdk/property-provider", "ProviderError")
   @js.native
   open class ProviderError protected ()
-    extends typings.awsSdkPropertyProvider.providerErrorMod.ProviderError {
+    extends typings.awsSdkPropertyProvider.distTypesProviderErrorMod.ProviderError {
     def this(message: String) = this()
     def this(message: String, tryNextLink: Boolean) = this()
   }
@@ -34,14 +34,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def from(error: js.Error): typings.awsSdkPropertyProvider.providerErrorMod.ProviderError = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(error.asInstanceOf[js.Any]).asInstanceOf[typings.awsSdkPropertyProvider.providerErrorMod.ProviderError]
-    inline def from(error: js.Error, tryNextLink: Boolean): typings.awsSdkPropertyProvider.providerErrorMod.ProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(error.asInstanceOf[js.Any], tryNextLink.asInstanceOf[js.Any])).asInstanceOf[typings.awsSdkPropertyProvider.providerErrorMod.ProviderError]
+    inline def from(error: js.Error): typings.awsSdkPropertyProvider.distTypesProviderErrorMod.ProviderError = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(error.asInstanceOf[js.Any]).asInstanceOf[typings.awsSdkPropertyProvider.distTypesProviderErrorMod.ProviderError]
+    inline def from(error: js.Error, tryNextLink: Boolean): typings.awsSdkPropertyProvider.distTypesProviderErrorMod.ProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(error.asInstanceOf[js.Any], tryNextLink.asInstanceOf[js.Any])).asInstanceOf[typings.awsSdkPropertyProvider.distTypesProviderErrorMod.ProviderError]
   }
   
   @JSImport("@aws-sdk/property-provider", "TokenProviderError")
   @js.native
   open class TokenProviderError protected ()
-    extends typings.awsSdkPropertyProvider.tokenProviderErrorMod.TokenProviderError {
+    extends typings.awsSdkPropertyProvider.distTypesTokenProviderErrorMod.TokenProviderError {
     def this(message: String) = this()
     def this(message: String, tryNextLink: Boolean) = this()
   }

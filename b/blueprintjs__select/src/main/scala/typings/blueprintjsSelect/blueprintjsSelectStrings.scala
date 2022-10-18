@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object blueprintjsSelectStrings {
   
   @js.native
-  sealed trait PartialOmitPopover2PropsH extends StObject
-  inline def PartialOmitPopover2PropsH: PartialOmitPopover2PropsH = "PartialOmitPopover2PropsH".asInstanceOf[PartialOmitPopover2PropsH]
-  
-  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   
@@ -543,6 +539,10 @@ object blueprintjsSelectStrings {
   inline def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
   
   @js.native
+  sealed trait rank extends StObject
+  inline def rank: rank = "rank".asInstanceOf[rank]
+  
+  @js.native
   sealed trait rect extends StObject
   inline def rect: rect = "rect".asInstanceOf[rect]
   
@@ -721,4 +721,8 @@ object blueprintjsSelectStrings {
   @js.native
   sealed trait webview extends StObject
   inline def webview: webview = "webview".asInstanceOf[webview]
+  
+  @js.native
+  sealed trait year extends StObject
+  inline def year: year = "year".asInstanceOf[year]
 }

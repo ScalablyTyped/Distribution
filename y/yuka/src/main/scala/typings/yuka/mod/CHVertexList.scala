@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "CHVertexList")
 @js.native
 open class CHVertexList ()
-  extends typings.yuka.yukaMod.CHVertexList
+  extends typings.yuka.srcYukaMod.CHVertexList

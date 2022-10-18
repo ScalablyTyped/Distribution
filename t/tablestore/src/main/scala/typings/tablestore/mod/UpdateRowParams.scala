@@ -1,7 +1,7 @@
 package typings.tablestore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.tablestore.anon.DELETE
+import typings.tablestore.anon.DELETEALL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ trait UpdateRowParams extends StObject {
   
   var transactionId: js.UndefOr[String] = js.undefined
   
-  var updateOfAttributeColumns: js.Array[DELETE]
+  var updateOfAttributeColumns: js.Array[DELETEALL]
 }
 object UpdateRowParams {
   
@@ -27,7 +27,7 @@ object UpdateRowParams {
     condition: Condition,
     primaryKey: PrimaryKeyInput,
     tableName: String,
-    updateOfAttributeColumns: js.Array[DELETE]
+    updateOfAttributeColumns: js.Array[DELETEALL]
   ): UpdateRowParams = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], primaryKey = primaryKey.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any], updateOfAttributeColumns = updateOfAttributeColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRowParams]
@@ -51,8 +51,8 @@ object UpdateRowParams {
     
     inline def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
     
-    inline def setUpdateOfAttributeColumns(value: js.Array[DELETE]): Self = StObject.set(x, "updateOfAttributeColumns", value.asInstanceOf[js.Any])
+    inline def setUpdateOfAttributeColumns(value: js.Array[DELETEALL]): Self = StObject.set(x, "updateOfAttributeColumns", value.asInstanceOf[js.Any])
     
-    inline def setUpdateOfAttributeColumnsVarargs(value: DELETE*): Self = StObject.set(x, "updateOfAttributeColumns", js.Array(value*))
+    inline def setUpdateOfAttributeColumnsVarargs(value: DELETEALL*): Self = StObject.set(x, "updateOfAttributeColumns", js.Array(value*))
   }
 }

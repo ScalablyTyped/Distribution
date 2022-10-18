@@ -219,9 +219,9 @@ object global {
       /* 3 */ val REAL_TRAFFIC: typings.amapJsSdk.AMap.DrivingPolicy.REAL_TRAFFIC & Double = js.native
     }
     
-    @JSGlobal("AMap.EventBindable")
+    /* note: abstract class */ @JSGlobal("AMap.EventBindable")
     @js.native
-    abstract class EventBindable ()
+    open class EventBindable ()
       extends StObject
          with typings.amapJsSdk.AMap.EventBindable {
       
@@ -344,9 +344,9 @@ object global {
       override def on(eventName: String, callback: EventCallback): Unit = js.native
     }
     
-    @JSGlobal("AMap.Layer")
+    /* note: abstract class */ @JSGlobal("AMap.Layer")
     @js.native
-    abstract class Layer ()
+    open class Layer ()
       extends StObject
          with typings.amapJsSdk.AMap.Layer {
       
@@ -839,9 +839,9 @@ object global {
     }
     object TileLayer {
       
-      @JSGlobal("AMap.TileLayer.MapTypeLayer")
+      /* note: abstract class */ @JSGlobal("AMap.TileLayer.MapTypeLayer")
       @js.native
-      abstract class MapTypeLayer ()
+      open class MapTypeLayer ()
         extends StObject
            with typings.amapJsSdk.AMap.Layer {
         def this(options: typings.amapJsSdk.anon.Map) = this()

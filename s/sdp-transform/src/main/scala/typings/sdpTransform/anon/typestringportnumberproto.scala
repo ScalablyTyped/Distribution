@@ -15,7 +15,7 @@ trait typestringportnumberproto extends StObject {
   var bandwidth: js.UndefOr[js.Array[Limit]] = js.undefined
   
   // a=candidate
-  var candidates: js.UndefOr[js.Array[Foundation]] = js.undefined
+  var candidates: js.UndefOr[js.Array[Component]] = js.undefined
   
   // c=IN IP4 10.47.197.26
   var connection: js.UndefOr[Ip] = js.undefined
@@ -81,7 +81,7 @@ trait typestringportnumberproto extends StObject {
   // a=rid
   var rids: js.UndefOr[js.Array[Direction]] = js.undefined
   
-  var rtcp: js.UndefOr[IpVer] = js.undefined
+  var rtcp: js.UndefOr[Address] = js.undefined
   
   // a=rtcp-fb:98 nack rpsi
   var rtcpFb: js.UndefOr[js.Array[Payload]] = js.undefined
@@ -137,11 +137,11 @@ object typestringportnumberproto {
     
     inline def setBandwidthVarargs(value: Limit*): Self = StObject.set(x, "bandwidth", js.Array(value*))
     
-    inline def setCandidates(value: js.Array[Foundation]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
+    inline def setCandidates(value: js.Array[Component]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     
     inline def setCandidatesUndefined: Self = StObject.set(x, "candidates", js.undefined)
     
-    inline def setCandidatesVarargs(value: Foundation*): Self = StObject.set(x, "candidates", js.Array(value*))
+    inline def setCandidatesVarargs(value: Component*): Self = StObject.set(x, "candidates", js.Array(value*))
     
     inline def setConnection(value: Ip): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
@@ -239,7 +239,7 @@ object typestringportnumberproto {
     
     inline def setRidsVarargs(value: Direction*): Self = StObject.set(x, "rids", js.Array(value*))
     
-    inline def setRtcp(value: IpVer): Self = StObject.set(x, "rtcp", value.asInstanceOf[js.Any])
+    inline def setRtcp(value: Address): Self = StObject.set(x, "rtcp", value.asInstanceOf[js.Any])
     
     inline def setRtcpFb(value: js.Array[Payload]): Self = StObject.set(x, "rtcpFb", value.asInstanceOf[js.Any])
     

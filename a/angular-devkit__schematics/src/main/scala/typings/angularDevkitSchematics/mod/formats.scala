@@ -1,6 +1,6 @@
 package typings.angularDevkitSchematics.mod
 
-import typings.angularDevkitCore.interfaceMod.SchemaFormat
+import typings.angularDevkitCore.srcJsonSchemaInterfaceMod.SchemaFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

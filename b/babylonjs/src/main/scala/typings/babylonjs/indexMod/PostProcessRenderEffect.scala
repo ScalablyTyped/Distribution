@@ -18,20 +18,20 @@ open class PostProcessRenderEffect protected ()
     * @param singleInstance False if this post process can be run on multiple cameras. (default: true)
     */
   def this(
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     name: String,
     getPostProcesses: js.Function0[
         Nullable[
-          typings.babylonjs.postProcessMod.PostProcess | js.Array[typings.babylonjs.postProcessMod.PostProcess]
+          typings.babylonjs.postProcessesPostProcessMod.PostProcess | js.Array[typings.babylonjs.postProcessesPostProcessMod.PostProcess]
         ]
       ]
   ) = this()
   def this(
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     name: String,
     getPostProcesses: js.Function0[
         Nullable[
-          typings.babylonjs.postProcessMod.PostProcess | js.Array[typings.babylonjs.postProcessMod.PostProcess]
+          typings.babylonjs.postProcessesPostProcessMod.PostProcess | js.Array[typings.babylonjs.postProcessesPostProcessMod.PostProcess]
         ]
       ],
     singleInstance: Boolean

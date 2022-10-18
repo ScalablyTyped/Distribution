@@ -9,13 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ImageLoadState extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.imageTypesMod.ImageLoadState & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageLoadState & Double
+  ] = js.native
   
-  /* 2 */ val error: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.error & Double = js.native
+  /* 2 */ val error: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageLoadState.error & Double = js.native
   
-  /* 3 */ val errorLoaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.errorLoaded & Double = js.native
+  /* 3 */ val errorLoaded: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageLoadState.errorLoaded & Double = js.native
   
-  /* 1 */ val loaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.loaded & Double = js.native
+  /* 1 */ val loaded: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageLoadState.loaded & Double = js.native
   
-  /* 0 */ val notLoaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.notLoaded & Double = js.native
+  /* 0 */ val notLoaded: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageLoadState.notLoaded & Double = js.native
 }

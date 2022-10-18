@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new cohesion behavior.
   */
 open class CohesionBehavior ()
-  extends typings.yuka.yukaMod.CohesionBehavior
+  extends typings.yuka.srcYukaMod.CohesionBehavior

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,9 +75,7 @@ trait UptimeCheckConfig extends StObject {
     * Unicode characters or 128 bytes, whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must begin with a letter.
     */
   var userLabels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.UptimeCheckConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object UptimeCheckConfig {
@@ -149,9 +146,7 @@ object UptimeCheckConfig {
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     inline def setUserLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.UptimeCheckConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)

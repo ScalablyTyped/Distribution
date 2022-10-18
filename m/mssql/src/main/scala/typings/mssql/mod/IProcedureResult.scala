@@ -1,7 +1,6 @@
 package typings.mssql.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +16,9 @@ object IProcedureResult {
   inline def apply[T](
     output: StringDictionary[Any],
     recordset: IRecordSet[
-      T | (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any)
+      /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<any> ? T[0] : T */ js.Any
     ],
-    recordsets: js.Array[IRecordSet[T]] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: mssql.mssql.IRecordSet<T[P]>}
-    */ typings.mssql.mssqlStrings.IResult & TopLevel[T]),
+    recordsets: /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<any> ? {[ P in keyof T ]: mssql.mssql.IRecordSet<T[P]>} : std.Array<mssql.mssql.IRecordSet<T>> */ js.Any,
     returnValue: Any,
     rowsAffected: js.Array[Double]
   ): IProcedureResult[T] = {

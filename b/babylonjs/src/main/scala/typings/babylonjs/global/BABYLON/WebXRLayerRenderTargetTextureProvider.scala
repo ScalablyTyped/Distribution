@@ -7,9 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BABYLON.WebXRLayerRenderTargetTextureProvider")
+/* note: abstract class */ @JSGlobal("BABYLON.WebXRLayerRenderTargetTextureProvider")
 @js.native
-abstract class WebXRLayerRenderTargetTextureProvider protected ()
+open class WebXRLayerRenderTargetTextureProvider protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRLayerRenderTargetTextureProvider {
   def this(_scene: typings.babylonjs.BABYLON.Scene, layerWrapper: typings.babylonjs.BABYLON.WebXRLayerWrapper) = this()

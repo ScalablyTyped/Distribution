@@ -2,7 +2,7 @@ package typings.optimism
 
 import typings.optimism.anon.DirtyKey
 import typings.optimism.anon.Subscribe
-import typings.optimism.depMod.OptimisticDependencyFunction
+import typings.optimism.libDepMod.OptimisticDependencyFunction
 import typings.std.Generator
 import typings.wryTrie.mod.Trie
 import org.scalablytyped.runtime.StObject

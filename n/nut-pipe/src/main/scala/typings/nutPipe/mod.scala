@@ -1,8 +1,8 @@
 package typings.nutPipe
 
-import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyEventV2
-import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyStructuredResultV2
 import typings.awsLambda.handlerMod.Context
+import typings.awsLambda.triggerApiGatewayProxyMod.APIGatewayProxyEventV2
+import typings.awsLambda.triggerApiGatewayProxyMod.APIGatewayProxyStructuredResultV2
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,14 +21,25 @@ object mod {
   
   type AsyncBasicHandler[TContext, TResult] = js.Function1[/* context */ TContext, js.Promise[TResult | js.Error]]
   
-  type AsyncBasicMiddleware[T /* <: AsyncBasicHandler[Any, Any] */] = js.Function2[/* context */ Any, /* next */ AsyncBasicHandler[Any, Any], js.Promise[Any]]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends nut-pipe.nut-pipe.AsyncBasicHandler<infer TContext, infer TResult> ? (context : TContext, next : nut-pipe.nut-pipe.AsyncBasicHandler<TContext, TResult>): std.Promise<TResult> : never
+    }}}
+    */
+  @js.native
+  trait AsyncBasicMiddleware[T /* <: AsyncBasicHandler[Any, Any] */] extends StObject
   
-  type AsyncBasicMiddlewareWithServices[T /* <: AsyncBasicHandler[Any, Any] */] = js.Function3[
-    /* context */ Any, 
-    /* services */ Record[String, Any], 
-    /* next */ AsyncBasicHandler[Any, Any], 
-    js.Promise[Any | js.Error]
-  ]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends nut-pipe.nut-pipe.AsyncBasicHandler<infer TContext, infer TResult> ? (context : TContext, services : std.Record<string, any>, next : nut-pipe.nut-pipe.AsyncBasicHandler<TContext, TResult>): std.Promise<TResult | std.Error> : never
+    }}}
+    */
+  @js.native
+  trait AsyncBasicMiddlewareWithServices[T /* <: AsyncBasicHandler[Any, Any] */] extends StObject
   
   @js.native
   trait AsyncHandler
@@ -43,15 +54,25 @@ object mod {
   
   type AsyncLambdaHandler[TEvent, TContext, TResult] = js.Function2[/* event */ TEvent, /* context */ TContext, js.Promise[TResult | js.Error]]
   
-  type AsyncLambdaMiddleware[T /* <: AsyncLambdaHandler[APIGatewayProxyEventV2, Context, APIGatewayProxyStructuredResultV2] */] = js.Function3[/* event */ Any, /* context */ Any, /* next */ T, js.Promise[Any | js.Error]]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends nut-pipe.nut-pipe.AsyncLambdaHandler<infer TEvent, infer TContext, infer TResult> ? (event : TEvent, context : TContext, next : T): std.Promise<TResult | std.Error> : never
+    }}}
+    */
+  @js.native
+  trait AsyncLambdaMiddleware[T /* <: AsyncLambdaHandler[APIGatewayProxyEventV2, Context, APIGatewayProxyStructuredResultV2] */] extends StObject
   
-  type AsyncLambdaMiddlewareWithServices[T /* <: AsyncLambdaHandler[APIGatewayProxyEventV2, Context, APIGatewayProxyStructuredResultV2] */] = js.Function4[
-    /* event */ Any, 
-    /* context */ Any, 
-    /* services */ Record[String, Any], 
-    /* next */ T, 
-    js.Promise[Any | js.Error]
-  ]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends nut-pipe.nut-pipe.AsyncLambdaHandler<infer TEvent, infer TContext, infer TResult> ? (event : TEvent, context : TContext, services : std.Record<string, any>, next : T): std.Promise<TResult | std.Error> : never
+    }}}
+    */
+  @js.native
+  trait AsyncLambdaMiddlewareWithServices[T /* <: AsyncLambdaHandler[APIGatewayProxyEventV2, Context, APIGatewayProxyStructuredResultV2] */] extends StObject
   
   type AsyncMiddleware[T] = (AsyncBasicMiddleware[AsyncBasicHandler[Any, Any]]) | (AsyncBasicMiddlewareWithServices[AsyncBasicHandler[Any, Any]]) | (AsyncLambdaMiddleware[
     AsyncLambdaHandler[APIGatewayProxyEventV2, Context, APIGatewayProxyStructuredResultV2]

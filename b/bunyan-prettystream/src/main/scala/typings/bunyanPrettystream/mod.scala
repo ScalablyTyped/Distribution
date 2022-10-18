@@ -2,8 +2,8 @@ package typings.bunyanPrettystream
 
 import typings.bunyanPrettystream.anon.End
 import typings.bunyanPrettystream.anon.Mode
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Writable
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +33,7 @@ object mod {
       *                    stream when this stream emits `end`, defaults to `true`.
       * @return The `destination` stream.
       */
-    def pipe[T /* <: WritableStream[Any] */](destination: T): T = js.native
-    def pipe[T /* <: WritableStream[Any] */](destination: T, options: End): T = js.native
+    def pipe[T /* <: WritableStream */](destination: T): T = js.native
+    def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.protobuf.BufferReader")
 @js.native
 open class BufferReader protected ()
-  extends typings.googleGax.fallbackMod.protobuf.BufferReader {
+  extends typings.googleGax.buildSrcFallbackMod.protobuf.BufferReader {
   /**
     * Constructs a new buffer reader instance.
     * @param buffer Buffer to read from

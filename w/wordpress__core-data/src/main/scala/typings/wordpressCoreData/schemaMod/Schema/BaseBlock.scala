@@ -1,10 +1,8 @@
 package typings.wordpressCoreData.schemaMod.Schema
 
 import typings.std.Record
-import typings.wordpressCoreData.anon.Blockversion
 import typings.wordpressCoreData.anon.Dictk
-import typings.wordpressCoreData.anon.ProtectedRaw
-import typings.wordpressCoreData.anon.RawString
+import typings.wordpressCoreData.anon.Raw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +11,7 @@ trait BaseBlock[T /* <: Context */]
   extends StObject
      with BaseResponse {
   
-  var content: ProtectedRaw & (js.Object | Blockversion)
+  var content: Raw & (/* import warning: importer.ImportType#apply Failed type conversion: T extends 'edit' ? {  block_version :number} : {} */ js.Any)
   
   var date: String
   
@@ -37,7 +35,7 @@ trait BaseBlock[T /* <: Context */]
   
   var template: String
   
-  var title: RawString | js.Array[Any]
+  var title: /* import warning: importer.ImportType#apply Failed type conversion: T extends 'embed' ? [] : {  raw :string} */ js.Any
   
   var `type`: String
 }
@@ -45,7 +43,7 @@ object BaseBlock {
   
   inline def apply[T /* <: Context */](
     _links: Record[String, js.Array[Dictk]],
-    content: ProtectedRaw & (js.Object | Blockversion),
+    content: Raw & (/* import warning: importer.ImportType#apply Failed type conversion: T extends 'edit' ? {  block_version :number} : {} */ js.Any),
     date: String,
     date_gmt: String,
     guid: Contextual[T, js.Object, js.Object],
@@ -57,7 +55,7 @@ object BaseBlock {
     slug: String,
     status: PostStatus,
     template: String,
-    title: RawString | js.Array[Any],
+    title: /* import warning: importer.ImportType#apply Failed type conversion: T extends 'embed' ? [] : {  raw :string} */ js.Any,
     `type`: String
   ): BaseBlock[T] = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], date_gmt = date_gmt.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], modified_gmt = modified_gmt.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
@@ -67,7 +65,9 @@ object BaseBlock {
   
   extension [Self <: BaseBlock[?], T /* <: Context */](x: Self & BaseBlock[T]) {
     
-    inline def setContent(value: ProtectedRaw & (js.Object | Blockversion)): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(
+      value: Raw & (/* import warning: importer.ImportType#apply Failed type conversion: T extends 'edit' ? {  block_version :number} : {} */ js.Any)
+    ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
@@ -91,9 +91,9 @@ object BaseBlock {
     
     inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    inline def setTitle(value: RawString | js.Array[Any]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-    
-    inline def setTitleVarargs(value: Any*): Self = StObject.set(x, "title", js.Array(value*))
+    inline def setTitle(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: T extends 'embed' ? [] : {  raw :string} */ js.Any
+    ): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

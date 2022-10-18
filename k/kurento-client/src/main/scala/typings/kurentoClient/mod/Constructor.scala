@@ -1,5 +1,6 @@
 package typings.kurentoClient.mod
 
+import typings.node.NodeRequire
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,9 +21,5 @@ trait Constructor extends StObject {
   var on: Unit = js.native
   
   def register(module: String): Unit = js.native
-  def register(
-    module: ReturnType[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any
-    ]
-  ): Unit = js.native
+  def register(module: ReturnType[NodeRequire]): Unit = js.native
 }

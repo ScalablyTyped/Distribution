@@ -9,12 +9,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.puppeteerCore.mod._HandleOr because Already inherited */ @JSImport("puppeteer-core", "JSHandle")
+@JSImport("puppeteer-core", "JSHandle")
 @js.native
 open class JSHandle[T] ()
   extends StObject
-     with HandleFor[T] {
+     with _HandleOr[T] {
   
   /**
     * @returns Either `null` or the handle itself if the handle is an

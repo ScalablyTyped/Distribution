@@ -1,14 +1,12 @@
 package typings.yaml.anon
 
-import typings.std.Map
-import typings.std.Record
 import typings.std.ReturnType
-import typings.std.Set
-import typings.yaml.cstMod.CollectionItem
-import typings.yaml.pairMod.Pair
-import typings.yaml.schemaSchemaMod.Schema
-import typings.yaml.stringifyMod.StringifyContext
-import typings.yaml.toJSMod.ToJSContext
+import typings.yaml.distNodesPairMod.Pair
+import typings.yaml.distNodesToJSMod.ToJSContext
+import typings.yaml.distNodesYamlmapMod.MapLike
+import typings.yaml.distParseCstMod.CollectionItem
+import typings.yaml.distSchemaSchemaMod.Schema
+import typings.yaml.distStringifyStringifyMod.StringifyContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,33 +24,33 @@ trait ReadonlyPairunknownunknow extends StObject {
   def toJSON(): ReturnType[
     js.Function3[
       /* ctx */ js.UndefOr[ToJSContext], 
-      /* map */ (Map[Any, Any]) | Set[Any] | (Record[String | Double | js.Symbol, Any]), 
+      /* map */ MapLike, 
       /* hasKeyValue */ Pair[Any, Any], 
-      (Map[Any, Any]) | Set[Any] | (Record[String | Double | js.Symbol, Any])
+      MapLike
     ]
   ] = js.native
   def toJSON(_underscore: Any): ReturnType[
     js.Function3[
       /* ctx */ js.UndefOr[ToJSContext], 
-      /* map */ (Map[Any, Any]) | Set[Any] | (Record[String | Double | js.Symbol, Any]), 
+      /* map */ MapLike, 
       /* hasKeyValue */ Pair[Any, Any], 
-      (Map[Any, Any]) | Set[Any] | (Record[String | Double | js.Symbol, Any])
+      MapLike
     ]
   ] = js.native
   def toJSON(_underscore: Any, ctx: ToJSContext): ReturnType[
     js.Function3[
       /* ctx */ js.UndefOr[ToJSContext], 
-      /* map */ (Map[Any, Any]) | Set[Any] | (Record[String | Double | js.Symbol, Any]), 
+      /* map */ MapLike, 
       /* hasKeyValue */ Pair[Any, Any], 
-      (Map[Any, Any]) | Set[Any] | (Record[String | Double | js.Symbol, Any])
+      MapLike
     ]
   ] = js.native
   def toJSON(_underscore: Unit, ctx: ToJSContext): ReturnType[
     js.Function3[
       /* ctx */ js.UndefOr[ToJSContext], 
-      /* map */ (Map[Any, Any]) | Set[Any] | (Record[String | Double | js.Symbol, Any]), 
+      /* map */ MapLike, 
       /* hasKeyValue */ Pair[Any, Any], 
-      (Map[Any, Any]) | Set[Any] | (Record[String | Double | js.Symbol, Any])
+      MapLike
     ]
   ] = js.native
   

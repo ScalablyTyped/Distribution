@@ -45,7 +45,9 @@ object mod {
     
     def apply[T](actual: T): (JestMatchers[Unit, T]) & (Inverse[JestMatchers[Unit, T]]) & PromiseMatchers[T] = js.native
     
-    var addSnapshotSerializer: js.Function1[/* plugin */ Plugin2, Unit] = js.native
+    def addSnapshotSerializer(plugin: Plugin2): Unit = js.native
+    @JSName("addSnapshotSerializer")
+    var addSnapshotSerializer_Original: js.Function1[/* plugin */ Plugin2, Unit] = js.native
   }
   
   @js.native

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait GoogleCloudRecommenderV1RecommendationContent extends StObject {
   
   /** Condensed overview information about the recommendation. */
   var overview: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1RecommendationContent & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object GoogleCloudRecommenderV1RecommendationContent {
@@ -33,9 +30,7 @@ object GoogleCloudRecommenderV1RecommendationContent {
     inline def setOperationGroupsVarargs(value: GoogleCloudRecommenderV1OperationGroup*): Self = StObject.set(x, "operationGroups", js.Array(value*))
     
     inline def setOverview(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1RecommendationContent & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
     
     inline def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)

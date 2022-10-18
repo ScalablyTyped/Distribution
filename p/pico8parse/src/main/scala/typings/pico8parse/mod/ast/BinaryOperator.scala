@@ -13,7 +13,7 @@ object BinaryOperator {
   
   inline def Asterisk: typings.pico8parse.pico8parseStrings.Asterisk = "*".asInstanceOf[typings.pico8parse.pico8parseStrings.Asterisk]
   
-  inline def Backslash: String = String.asInstanceOf[String]
+  inline def Backslash: /* \ */ String = "\\".asInstanceOf[/* \ */ String]
   
   inline def DotDot: typings.pico8parse.pico8parseStrings.DotDot = "..".asInstanceOf[typings.pico8parse.pico8parseStrings.DotDot]
   

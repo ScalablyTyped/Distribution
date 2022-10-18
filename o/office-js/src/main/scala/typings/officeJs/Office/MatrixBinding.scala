@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a binding in two dimensions of rows and columns.
   *
   * @remarks
-  * 
-  * The MatrixBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from the Binding object.
+  *
+  * The MatrixBinding object inherits the `id` property, type property, getDataAsync method, and setDataAsync method from the Binding object.
   */
 @js.native
 trait MatrixBinding

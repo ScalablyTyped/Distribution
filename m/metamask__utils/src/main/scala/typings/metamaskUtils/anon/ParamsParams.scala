@@ -1,6 +1,6 @@
 package typings.metamaskUtils.anon
 
-import typings.metamaskUtils.jsonMod.JsonRpcParams
+import typings.metamaskUtils.distJsonMod.JsonRpcParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

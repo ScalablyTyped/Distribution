@@ -271,6 +271,7 @@ object mod {
     inline def static: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.static = "static".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.static]
   }
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {

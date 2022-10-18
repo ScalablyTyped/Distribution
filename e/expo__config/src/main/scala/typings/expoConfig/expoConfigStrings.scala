@@ -1,10 +1,10 @@
 package typings.expoConfig
 
-import typings.expoConfig.configTypesMod.ConfigErrorCode
-import typings.expoConfig.configTypesMod.HookType
-import typings.expoConfig.configTypesMod.Platform
-import typings.expoConfig.configTypesMod.ProjectTarget
-import typings.expoConfig.getUserStateMod.ConnectionType
+import typings.expoConfig.buildConfigDottypesMod.ConfigErrorCode
+import typings.expoConfig.buildConfigDottypesMod.HookType
+import typings.expoConfig.buildConfigDottypesMod.Platform
+import typings.expoConfig.buildConfigDottypesMod.ProjectTarget
+import typings.expoConfig.buildGetUserStateMod.ConnectionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

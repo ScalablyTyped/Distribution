@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods for reading and accepting message change revisions. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageChangeReader")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageChangeReader")
 @js.native
-abstract class ChatMessageChangeReader ()
+open class ChatMessageChangeReader ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageChangeReader {
   

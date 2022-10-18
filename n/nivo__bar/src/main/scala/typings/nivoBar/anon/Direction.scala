@@ -1,12 +1,12 @@
 package typings.nivoBar.anon
 
+import typings.nivoBar.distTypesTypesMod.BarDatum
+import typings.nivoBar.distTypesTypesMod.BarsWithHidden
+import typings.nivoBar.distTypesTypesMod.LegendLabelDatum
 import typings.nivoBar.nivoBarStrings.indexes
 import typings.nivoBar.nivoBarStrings.keys
-import typings.nivoBar.typesMod.BarDatum
-import typings.nivoBar.typesMod.BarsWithHidden
-import typings.nivoBar.typesMod.LegendLabelDatum
 import typings.nivoCore.mod.PropertyAccessor
-import typings.nivoLegends.typesTypesMod.LegendDirection
+import typings.nivoLegends.distTypesTypesMod.LegendDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,7 @@ object Direction {
     
     inline def setBars(value: BarsWithHidden[RawDatum]): Self = StObject.set(x, "bars", value.asInstanceOf[js.Any])
     
-    inline def setBarsVarargs(value: (Partialkeystringxnumberyn & Data[RawDatum])*): Self = StObject.set(x, "bars", js.Array(value*))
+    inline def setBarsVarargs(value: (Partialkeystringxnumberyn & `0`[RawDatum])*): Self = StObject.set(x, "bars", js.Array(value*))
     
     inline def setDirection(value: LegendDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

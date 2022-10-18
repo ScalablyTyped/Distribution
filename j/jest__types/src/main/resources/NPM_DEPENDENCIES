@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jest/types" : "29.1.2"
+      "@jest/types" : "29.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jest/types" : "29.1.2"
+      "@jest/types" : "29.2.0"
     }
   ],
   "compile-devDependencies" : [

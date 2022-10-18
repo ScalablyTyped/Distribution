@@ -8,11 +8,11 @@ trait Code extends StObject {
   
   var code: String
   
-  var componentInstance: typings.vueDevtoolsApi.componentMod.ComponentInstance
+  var componentInstance: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance
 }
 object Code {
   
-  inline def apply(code: String, componentInstance: typings.vueDevtoolsApi.componentMod.ComponentInstance): Code = {
+  inline def apply(code: String, componentInstance: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance): Code = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], componentInstance = componentInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[Code]
   }
@@ -21,6 +21,6 @@ object Code {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setComponentInstance(value: typings.vueDevtoolsApi.componentMod.ComponentInstance): Self = StObject.set(x, "componentInstance", value.asInstanceOf[js.Any])
+    inline def setComponentInstance(value: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance): Self = StObject.set(x, "componentInstance", value.asInstanceOf[js.Any])
   }
 }

@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsTwitterOutlinedMod.TwitterOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object twitterOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/TwitterOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/TwitterOutlined", JSImport.Default)
   @js.native
   val default: TwitterOutlinedIconType = js.native
-  
-  @js.native
-  trait TwitterOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_TwitterOutlinedIconType: String = js.native
-  }
   
   type _To = TwitterOutlinedIconType
   

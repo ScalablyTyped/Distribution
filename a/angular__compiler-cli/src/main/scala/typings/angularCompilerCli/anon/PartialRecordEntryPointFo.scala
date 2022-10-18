@@ -1,6 +1,6 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.dependencyHostMod.DependencyHost
+import typings.angularCompilerCli.ngccSrcDependenciesDependencyHostMod.DependencyHost
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

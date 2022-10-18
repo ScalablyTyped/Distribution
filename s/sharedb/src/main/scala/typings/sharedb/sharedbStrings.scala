@@ -1,20 +1,16 @@
 package typings.sharedb
 
+import typings.sharedb.libSharedbMod.ConnectionState
+import typings.sharedb.libSharedbMod.DocEvent
+import typings.sharedb.libSharedbMod.OTType
+import typings.sharedb.libSharedbMod.QueryEvent
+import typings.sharedb.libSharedbMod.RequestAction
 import typings.sharedb.mod.middleware.SnapshotType
-import typings.sharedb.sharedbMod.ConnectionState
-import typings.sharedb.sharedbMod.DocEvent
-import typings.sharedb.sharedbMod.OTType
-import typings.sharedb.sharedbMod.QueryEvent
-import typings.sharedb.sharedbMod.RequestAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharedbStrings {
-  
-  @js.native
-  sealed trait ListenerSignature extends StObject
-  inline def ListenerSignature: ListenerSignature = "ListenerSignature".asInstanceOf[ListenerSignature]
   
   @js.native
   sealed trait afterSubmit extends StObject

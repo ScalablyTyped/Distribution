@@ -1,16 +1,16 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.structuresMod.IStructureClass
-import typings.mendixmodelsdk.structuresMod.aliases.IContainer
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.IStructureClass
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.IContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "PartProperty")
 @js.native
-open class PartProperty[T /* <: typings.mendixmodelsdk.elementsMod.Element[IAbstractModel] */] protected ()
-  extends typings.mendixmodelsdk.propertiesMod.PartProperty[T] {
+open class PartProperty[T /* <: typings.mendixmodelsdk.srcSdkInternalElementsMod.Element[IAbstractModel] */] protected ()
+  extends typings.mendixmodelsdk.srcSdkInternalPropertiesMod.PartProperty[T] {
   /**
     * parent is the structure that the value of this property attaches to,
     * so e.g. for all values `item` of Part(List)Property we (should) have the invariant:
@@ -21,14 +21,14 @@ open class PartProperty[T /* <: typings.mendixmodelsdk.elementsMod.Element[IAbst
     */
   def this(
     declaredOn: IStructureClass,
-    parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
+    parent: typings.mendixmodelsdk.srcSdkInternalStructuresMod.Structure[IAbstractModel, IContainer | Null],
     name: String,
     initialValue: T,
     moreArgs: Any*
   ) = this()
   def this(
     declaredOn: IStructureClass,
-    parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
+    parent: typings.mendixmodelsdk.srcSdkInternalStructuresMod.Structure[IAbstractModel, IContainer | Null],
     name: String,
     initialValue: Null,
     moreArgs: Any*

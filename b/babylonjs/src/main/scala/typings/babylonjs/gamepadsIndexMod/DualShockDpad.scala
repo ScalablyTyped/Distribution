@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DualShockDpad extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.dualShockGamepadMod.DualShockDpad & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.gamepadsDualShockGamepadMod.DualShockDpad & Double] = js.native
   
-  /* 13 */ val Down: typings.babylonjs.dualShockGamepadMod.DualShockDpad.Down & Double = js.native
+  /* 13 */ val Down: typings.babylonjs.gamepadsDualShockGamepadMod.DualShockDpad.Down & Double = js.native
   
-  /* 14 */ val Left: typings.babylonjs.dualShockGamepadMod.DualShockDpad.Left & Double = js.native
+  /* 14 */ val Left: typings.babylonjs.gamepadsDualShockGamepadMod.DualShockDpad.Left & Double = js.native
   
-  /* 15 */ val Right: typings.babylonjs.dualShockGamepadMod.DualShockDpad.Right & Double = js.native
+  /* 15 */ val Right: typings.babylonjs.gamepadsDualShockGamepadMod.DualShockDpad.Right & Double = js.native
   
-  /* 12 */ val Up: typings.babylonjs.dualShockGamepadMod.DualShockDpad.Up & Double = js.native
+  /* 12 */ val Up: typings.babylonjs.gamepadsDualShockGamepadMod.DualShockDpad.Up & Double = js.native
 }

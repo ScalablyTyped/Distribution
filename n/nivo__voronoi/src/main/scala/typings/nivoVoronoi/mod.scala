@@ -8,11 +8,11 @@ import typings.nivoVoronoi.anon.Delaunay
 import typings.nivoVoronoi.anon.Height
 import typings.nivoVoronoi.anon.PartialOmitVoronoiSvgProp
 import typings.nivoVoronoi.anon.Points
-import typings.nivoVoronoi.meshMod.MeshProps
-import typings.nivoVoronoi.responsiveVoronoiMod.ResponsiveVoronoiProps
-import typings.nivoVoronoi.typesMod.VoronoiCustomLayerProps
-import typings.nivoVoronoi.typesMod.VoronoiDomain
-import typings.nivoVoronoi.typesMod.VoronoiLayer
+import typings.nivoVoronoi.distTypesMeshMod.MeshProps
+import typings.nivoVoronoi.distTypesResponsiveVoronoiMod.ResponsiveVoronoiProps
+import typings.nivoVoronoi.distTypesTypesMod.VoronoiCustomLayerProps
+import typings.nivoVoronoi.distTypesTypesMod.VoronoiDomain
+import typings.nivoVoronoi.distTypesTypesMod.VoronoiLayer
 import typings.react.mod.global.JSX.Element
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject

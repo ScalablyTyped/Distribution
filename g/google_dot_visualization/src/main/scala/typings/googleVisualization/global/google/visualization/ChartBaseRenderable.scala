@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("google.visualization.ChartBaseRenderable")
+/* note: abstract class */ @JSGlobal("google.visualization.ChartBaseRenderable")
 @js.native
-abstract class ChartBaseRenderable ()
+open class ChartBaseRenderable ()
   extends StObject
      with typings.googleVisualization.google.visualization.ChartBaseRenderable

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
-import typings.std.ReadableStream
 import typings.zapierPlatformCore.mod.HttpMethod
 import typings.zapierPlatformCore.zapierPlatformCoreBooleans.`true`
 import typings.zapierPlatformCore.zapierPlatformCoreStrings.error
@@ -168,7 +168,7 @@ object anon {
     
     var agent: js.UndefOr[Agent] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | ReadableStream[Any] | js.Object] = js.undefined
+    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.undefined
     
     var compress: js.UndefOr[Boolean] = js.undefined
     
@@ -211,7 +211,7 @@ object anon {
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      inline def setBody(value: String | Buffer | ReadableStream[Any] | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Buffer | ReadableStream | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -278,7 +278,7 @@ object anon {
     
     var agent: js.UndefOr[Agent] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | ReadableStream[Any] | js.Object] = js.undefined
+    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.undefined
     
     var compress: js.UndefOr[Boolean] = js.undefined
     
@@ -321,7 +321,7 @@ object anon {
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      inline def setBody(value: String | Buffer | ReadableStream[Any] | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Buffer | ReadableStream | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -386,7 +386,7 @@ object anon {
     
     var agent: js.UndefOr[Agent] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | ReadableStream[Any] | js.Object] = js.undefined
+    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.undefined
     
     var compress: js.UndefOr[Boolean] = js.undefined
     
@@ -429,7 +429,7 @@ object anon {
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      inline def setBody(value: String | Buffer | ReadableStream[Any] | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Buffer | ReadableStream | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       

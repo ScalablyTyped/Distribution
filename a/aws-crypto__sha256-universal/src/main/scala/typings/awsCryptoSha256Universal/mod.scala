@@ -1,7 +1,7 @@
 package typings.awsCryptoSha256Universal
 
-import typings.awsSdkTypes.cryptoMod.Hash
-import typings.awsSdkTypes.cryptoMod.SourceData
+import typings.awsSdkTypes.distTypesCryptoMod.Hash
+import typings.awsSdkTypes.distTypesCryptoMod.SourceData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

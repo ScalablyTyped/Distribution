@@ -1,8 +1,8 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.actionBarMod.ActionBarProps
 import typings.fundamentalReact.anon.PartialActionBarProps
 import typings.fundamentalReact.anon.WeakValidationMapActionBa
+import typings.fundamentalReact.libActionBarActionBarMod.ActionBarProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

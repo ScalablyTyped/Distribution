@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.hellosignSdk.anon.Filetype
-  - typings.hellosignSdk.anon.`0`
+  - typings.hellosignSdk.anon.`1`
 */
 trait FilesOptions extends StObject
 object FilesOptions {
   
-  inline def `0`(): typings.hellosignSdk.anon.`0` = {
+  inline def `1`(): typings.hellosignSdk.anon.`1` = {
     val __obj = js.Dynamic.literal(file_type = "zip")
-    __obj.asInstanceOf[typings.hellosignSdk.anon.`0`]
+    __obj.asInstanceOf[typings.hellosignSdk.anon.`1`]
   }
   
   inline def Filetype(): typings.hellosignSdk.anon.Filetype = {

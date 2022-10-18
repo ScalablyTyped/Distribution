@@ -4,7 +4,7 @@ import typings.react.mod.FunctionComponentElement
 import typings.react.mod.ProviderProps
 import typings.zustand.esmContextMod.UseContextStore
 import typings.zustand.esmContextMod.WithoutCallSignature
-import typings.zustand.zustandVanillaMod.StoreApi
+import typings.zustand.vanillaMod.StoreApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Program extends StObject {
   
-  var program: js.UndefOr[typings.angularCompilerCli.transformersApiMod.Program] = js.undefined
+  var program: js.UndefOr[typings.angularCompilerCli.srcTransformersApiMod.Program] = js.undefined
 }
 object Program {
   
@@ -17,7 +17,7 @@ object Program {
   
   extension [Self <: Program](x: Self) {
     
-    inline def setProgram(value: typings.angularCompilerCli.transformersApiMod.Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+    inline def setProgram(value: typings.angularCompilerCli.srcTransformersApiMod.Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
     inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
   }

@@ -2,7 +2,7 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Avatar
-import typings.materialUiCore.anon.`2`
+import typings.materialUiCore.anon.Component
 import typings.materialUiCore.materialUiCoreStrings.div
 import typings.materialUiCore.materialUiCoreStrings.span
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
@@ -57,7 +57,7 @@ object cardHeaderCardHeaderMod extends Shortcut {
     DefaultComponent
   ]
   
-  type CardHeaderPropsWithComponent[DefaultComponent /* <: ElementType[Any] */, Props, TitleTypographyComponent /* <: ElementType[Any] */, SubheaderTypographyComponent /* <: ElementType[Any] */] = `2`[DefaultComponent] & (CardHeaderProps[DefaultComponent, Props, TitleTypographyComponent, SubheaderTypographyComponent])
+  type CardHeaderPropsWithComponent[DefaultComponent /* <: ElementType[Any] */, Props, TitleTypographyComponent /* <: ElementType[Any] */, SubheaderTypographyComponent /* <: ElementType[Any] */] = Component[DefaultComponent] & (CardHeaderProps[DefaultComponent, Props, TitleTypographyComponent, SubheaderTypographyComponent])
   
   trait CardHeaderTypeMap[Props, DefaultComponent /* <: ElementType[Any] */, TitleTypographyComponent /* <: ElementType[Any] */, SubheaderTypographyComponent /* <: ElementType[Any] */] extends StObject {
     

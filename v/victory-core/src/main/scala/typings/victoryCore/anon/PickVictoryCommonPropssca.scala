@@ -1,7 +1,7 @@
 package typings.victoryCore.anon
 
-import typings.victoryCore.propTypesMod.D3Scale
-import typings.victoryCore.propTypesMod.ScalePropType
+import typings.victoryCore.libTypesPropTypesMod.D3Scale
+import typings.victoryCore.libTypesPropTypesMod.ScalePropType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ trait PickVictoryCommonPropssca extends StObject {
   
   var horizontal: js.UndefOr[Boolean] = js.undefined
   
-  var scale: js.UndefOr[ScalePropType | D3Scale[Any] | Y] = js.undefined
+  var scale: js.UndefOr[ScalePropType | D3Scale[Any] | XY] = js.undefined
 }
 object PickVictoryCommonPropssca {
   
@@ -26,7 +26,7 @@ object PickVictoryCommonPropssca {
     
     inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    inline def setScale(value: ScalePropType | D3Scale[Any] | Y): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: ScalePropType | D3Scale[Any] | XY): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }

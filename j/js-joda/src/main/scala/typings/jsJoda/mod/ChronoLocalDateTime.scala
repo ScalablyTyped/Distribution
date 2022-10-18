@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("js-joda", "ChronoLocalDateTime")
+/* note: abstract class */ @JSImport("js-joda", "ChronoLocalDateTime")
 @js.native
-abstract class ChronoLocalDateTime () extends Temporal {
+open class ChronoLocalDateTime () extends Temporal {
   
   def adjustInto(temporal: Any): Any = js.native
   

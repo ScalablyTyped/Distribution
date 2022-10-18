@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@uirouter/core", "UIRouterGlobals")
 @js.native
 open class UIRouterGlobals ()
-  extends typings.uirouterCore.globalsMod.UIRouterGlobals
+  extends typings.uirouterCore.libGlobalsMod.UIRouterGlobals

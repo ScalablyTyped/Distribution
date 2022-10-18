@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TextureUsage extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.webgpuConstantsMod.TextureUsage & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureUsage & Double] = js.native
   
-  /* 2 */ val CopyDst: typings.babylonjs.webgpuConstantsMod.TextureUsage.CopyDst & Double = js.native
+  /* 2 */ val CopyDst: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureUsage.CopyDst & Double = js.native
   
-  /* 1 */ val CopySrc: typings.babylonjs.webgpuConstantsMod.TextureUsage.CopySrc & Double = js.native
+  /* 1 */ val CopySrc: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureUsage.CopySrc & Double = js.native
   
-  /* 16 */ val RenderAttachment: typings.babylonjs.webgpuConstantsMod.TextureUsage.RenderAttachment & Double = js.native
+  /* 16 */ val RenderAttachment: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureUsage.RenderAttachment & Double = js.native
   
-  /* 8 */ val StorageBinding: typings.babylonjs.webgpuConstantsMod.TextureUsage.StorageBinding & Double = js.native
+  /* 8 */ val StorageBinding: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureUsage.StorageBinding & Double = js.native
   
-  /* 4 */ val TextureBinding: typings.babylonjs.webgpuConstantsMod.TextureUsage.TextureBinding & Double = js.native
+  /* 4 */ val TextureBinding: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureUsage.TextureBinding & Double = js.native
 }

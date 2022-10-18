@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `5` extends StObject {
   
-  var max: js.UndefOr[Double] = js.undefined
-  
-  var min: js.UndefOr[Double] = js.undefined
+  var x: js.UndefOr[ShowBoolean] = js.undefined
 }
 object `5` {
   
@@ -19,12 +17,8 @@ object `5` {
   
   extension [Self <: `5`](x: Self) {
     
-    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setX(value: ShowBoolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
-    
-    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
-    
-    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

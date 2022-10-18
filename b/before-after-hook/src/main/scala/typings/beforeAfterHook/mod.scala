@@ -1,12 +1,8 @@
 package typings.beforeAfterHook
 
 import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Shortcut
-import typings.beforeAfterHook.beforeAfterHookStrings.E
 import typings.beforeAfterHook.beforeAfterHookStrings.Error
-import typings.beforeAfterHook.beforeAfterHookStrings.O
 import typings.beforeAfterHook.beforeAfterHookStrings.Options
-import typings.beforeAfterHook.beforeAfterHookStrings.R
 import typings.beforeAfterHook.beforeAfterHookStrings.Result
 import typings.beforeAfterHook.beforeAfterHookStrings.after
 import typings.beforeAfterHook.beforeAfterHookStrings.before
@@ -21,11 +17,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  object default extends Shortcut {
+  object default {
     
     @JSImport("before-after-hook", JSImport.Default)
     @js.native
-    val ^ : Hook = js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Creates a collection of hooks
+      */
+    @JSImport("before-after-hook", "default.Collection")
+    @js.native
+    def Collection: typings.beforeAfterHook.mod.Collection = js.native
     
     /**
       * Creates a collection of hooks
@@ -37,6 +40,15 @@ object mod {
       extends StObject
          with HookCollection[HooksType, /* keyof HooksType */ String]
     
+    inline def Collection_=(x: Collection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Collection")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Creates a nameless hook that supports strict typings
+      */
+    @JSImport("before-after-hook", "default.Singular")
+    @js.native
+    def Singular: typings.beforeAfterHook.mod.Singular = js.native
+    
     /**
       * Creates a nameless hook that supports strict typings
       */
@@ -47,106 +59,8 @@ object mod {
       extends StObject
          with HookSingular[Options, Result, Error]
     
-    type _To = Hook
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: Hook = ^
+    inline def Singular_=(x: Singular): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Singular")(x.asInstanceOf[js.Any])
   }
-  
-  @JSImport("before-after-hook", "Collection")
-  @js.native
-  val Collection: typings.beforeAfterHook.mod.Collection = js.native
-  type Collection = Instantiable0[
-    HookCollection[
-      Record[String, TypeStore], 
-      /* keyof std.Record<string, before-after-hook.before-after-hook.TypeStore> */ String
-    ]
-  ]
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("before-after-hook", "Collection")
-  @js.native
-  open class CollectionCls[HooksType /* <: Record[String, TypeStore] */] ()
-    extends StObject
-       with HookCollection[HooksType, /* keyof HooksType */ String]
-  
-  @js.native
-  trait Hook
-    extends StObject
-       with Instantiable0[
-          HookCollection[
-            Record[String, TypeStore], 
-            /* keyof std.Record<string, before-after-hook.before-after-hook.TypeStore> */ String
-          ]
-        ] {
-    
-    /**
-      * Creates a collection of hooks
-      */
-    var Collection: typings.beforeAfterHook.mod.Collection = js.native
-    
-    /**
-      * Creates a nameless hook that supports strict typings
-      */
-    var Singular: typings.beforeAfterHook.mod.Singular = js.native
-  }
-  object Hook extends Shortcut {
-    
-    @JSImport("before-after-hook", "Hook")
-    @js.native
-    val ^ : Hook = js.native
-    
-    /**
-      * Creates a collection of hooks
-      */
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("before-after-hook", "Hook.Collection")
-    @js.native
-    open class CollectionCls[HooksType /* <: Record[String, TypeStore] */] ()
-      extends StObject
-         with HookCollection[HooksType, /* keyof HooksType */ String]
-    
-    /**
-      * Creates a nameless hook that supports strict typings
-      */
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("before-after-hook", "Hook.Singular")
-    @js.native
-    open class SingularCls[Options, Result, Error] ()
-      extends StObject
-         with HookSingular[Options, Result, Error]
-    
-    type _To = Hook
-    
-    /* This means you don't have to write `^`, but can instead just say `Hook.foo` */
-    override def _to: Hook = ^
-  }
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("before-after-hook", "Hook")
-  @js.native
-  open class HookCls[HooksType /* <: Record[String, TypeStore] */] ()
-    extends StObject
-       with HookCollection[HooksType, /* keyof HooksType */ String]
-  
-  @JSImport("before-after-hook", "Singular")
-  @js.native
-  val Singular: typings.beforeAfterHook.mod.Singular = js.native
-  type Singular = Instantiable0[HookSingular[js.Object, js.Object, js.Object]]
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("before-after-hook", "Singular")
-  @js.native
-  open class SingularCls[Options, Result, Error] ()
-    extends StObject
-       with HookSingular[Options, Result, Error]
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("before-after-hook", JSImport.Default)
-  @js.native
-  open class defaultCls[HooksType /* <: Record[String, TypeStore] */] ()
-    extends StObject
-       with HookCollection[HooksType, /* keyof HooksType */ String]
   
   type AfterHook[Options, Result] = js.Function2[/* result */ Result, /* options */ Options, Unit | js.Promise[Unit]]
   
@@ -154,9 +68,51 @@ object mod {
   
   type BeforeHook[Options] = js.Function1[/* options */ Options, Unit | js.Promise[Unit]]
   
-  type ErrorHook[Options, Error] = js.Function2[/* error */ Error, /* options */ Options, Unit | js.Promise[Unit]]
+  type Collection = Instantiable0[
+    HookCollection[
+      Record[String, TypeStore], 
+      /* keyof std.Record<string, before-after-hook.before-after-hook.TypeStore> */ String
+    ]
+  ]
   
-  type GetType[Store /* <: TypeStore */, LongKey /* <: TypeStoreKeyLong */, ShortKey /* <: TypeStoreKeyShort */] = /* import warning: importer.ImportType#apply Failed type conversion: Store[ShortKey] */ js.Any
+  type ErrorHook[Options, Error] = js.Function2[/* error */ Error, /* options */ Options, Any | js.Promise[Any]]
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TKey extends keyof TStore ? TStore[TKey] : any
+    }}}
+    */
+  @js.native
+  trait GetType[TStore /* <: TypeStore */, TKey /* <: TypeStoreKey */] extends StObject
+  
+  trait Hook extends StObject {
+    
+    /**
+      * Creates a collection of hooks
+      */
+    var Collection: typings.beforeAfterHook.mod.Collection
+    
+    /**
+      * Creates a nameless hook that supports strict typings
+      */
+    var Singular: typings.beforeAfterHook.mod.Singular
+  }
+  object Hook {
+    
+    inline def apply(Collection: Collection, Singular: Singular): Hook = {
+      val __obj = js.Dynamic.literal(Collection = Collection.asInstanceOf[js.Any], Singular = Singular.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Hook]
+    }
+    
+    extension [Self <: Hook](x: Self) {
+      
+      inline def setCollection(value: Collection): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
+      
+      inline def setSingular(value: Singular): Self = StObject.set(x, "Singular", value.asInstanceOf[js.Any])
+    }
+  }
   
   @js.native
   trait HookCollection[HooksType /* <: Record[String, TypeStore] */, HookName /* <: /* keyof HooksType */ String */] extends StObject {
@@ -169,20 +125,17 @@ object mod {
       hookMethod: HookMethod[
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Options, 
-            O
+            Options
           ], 
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Result, 
-            R
+            Result
           ]
         ]
     ): js.Promise[
         GetType[
           /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-          Result, 
-          R
+          Result
         ]
       ] = js.native
     def apply[Name /* <: HookName */](
@@ -190,25 +143,21 @@ object mod {
       hookMethod: HookMethod[
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Options, 
-            O
+            Options
           ], 
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Result, 
-            R
+            Result
           ]
         ],
       options: GetType[
           /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-          Options, 
-          O
+          Options
         ]
     ): js.Promise[
         GetType[
           /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-          Result, 
-          R
+          Result
         ]
       ] = js.native
     def apply[Name /* <: HookName */](
@@ -216,20 +165,17 @@ object mod {
       hookMethod: HookMethod[
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Options, 
-            O
+            Options
           ], 
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Result, 
-            R
+            Result
           ]
         ]
     ): js.Promise[
         GetType[
           /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-          Result, 
-          R
+          Result
         ]
       ] = js.native
     def apply[Name /* <: HookName */](
@@ -237,25 +183,21 @@ object mod {
       hookMethod: HookMethod[
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Options, 
-            O
+            Options
           ], 
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Result, 
-            R
+            Result
           ]
         ],
       options: GetType[
           /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-          Options, 
-          O
+          Options
         ]
     ): js.Promise[
         GetType[
           /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-          Result, 
-          R
+          Result
         ]
       ] = js.native
     
@@ -267,13 +209,11 @@ object mod {
       afterHook: AfterHook[
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Options, 
-            O
+            Options
           ], 
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Result, 
-            R
+            Result
           ]
         ]
     ): Unit = js.native
@@ -289,13 +229,13 @@ object mod {
     /**
       * Add `before` hook for given `name`
       */
-    def before[Name /* <: HookName */](
+    @JSName("before")
+    def before_Options[Name /* <: HookName */](
       name: Name,
       beforeHook: BeforeHook[
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Options, 
-            O
+            Options
           ]
         ]
     ): Unit = js.native
@@ -308,13 +248,11 @@ object mod {
       errorHook: ErrorHook[
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Options, 
-            O
+            Options
           ], 
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Error, 
-            E
+            Error
           ]
         ]
     ): Unit = js.native
@@ -327,18 +265,15 @@ object mod {
       hook: AnyHook[
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Options, 
-            O
+            Options
           ], 
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Result, 
-            R
+            Result
           ], 
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Error, 
-            E
+            Error
           ]
         ]
     ): Unit = js.native
@@ -351,13 +286,11 @@ object mod {
       wrapHook: WrapHook[
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Options, 
-            O
+            Options
           ], 
           GetType[
             /* import warning: importer.ImportType#apply Failed type conversion: HooksType[Name] */ js.Any, 
-            Result, 
-            R
+            Result
           ]
         ]
     ): Unit = js.native
@@ -405,21 +338,37 @@ object mod {
     def wrap(wrapHook: WrapHook[Options, Result]): Unit = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.beforeAfterHook.anon.keyinTypeStoreKeyLonganyk
-    - typings.beforeAfterHook.anon.keyinTypeStoreKeyLongneve
-  */
-  trait TypeStore extends StObject
+  type Singular = Instantiable0[HookSingular[js.Object, js.Object, js.Object]]
+  
+  /* Inlined {[ key in before-after-hook.before-after-hook.TypeStoreKey ]:? any} */
+  trait TypeStore extends StObject {
+    
+    var Error: js.UndefOr[Any] = js.undefined
+    
+    var Options: js.UndefOr[Any] = js.undefined
+    
+    var Result: js.UndefOr[Any] = js.undefined
+  }
   object TypeStore {
     
-    inline def keyinTypeStoreKeyLonganyk(): typings.beforeAfterHook.anon.keyinTypeStoreKeyLonganyk = {
+    inline def apply(): TypeStore = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.beforeAfterHook.anon.keyinTypeStoreKeyLonganyk]
+      __obj.asInstanceOf[TypeStore]
     }
     
-    inline def keyinTypeStoreKeyLongneve(): typings.beforeAfterHook.anon.keyinTypeStoreKeyLongneve = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.beforeAfterHook.anon.keyinTypeStoreKeyLongneve]
+    extension [Self <: TypeStore](x: Self) {
+      
+      inline def setError(value: Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+      
+      inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+      
+      inline def setOptions(value: Any): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+      
+      inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
+      
+      inline def setResult(value: Any): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+      
+      inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
     }
   }
   
@@ -428,29 +377,14 @@ object mod {
     - typings.beforeAfterHook.beforeAfterHookStrings.Result
     - typings.beforeAfterHook.beforeAfterHookStrings.Error
   */
-  trait TypeStoreKeyLong extends StObject
-  object TypeStoreKeyLong {
+  trait TypeStoreKey extends StObject
+  object TypeStoreKey {
     
     inline def Error: typings.beforeAfterHook.beforeAfterHookStrings.Error = "Error".asInstanceOf[typings.beforeAfterHook.beforeAfterHookStrings.Error]
     
     inline def Options: typings.beforeAfterHook.beforeAfterHookStrings.Options = "Options".asInstanceOf[typings.beforeAfterHook.beforeAfterHookStrings.Options]
     
     inline def Result: typings.beforeAfterHook.beforeAfterHookStrings.Result = "Result".asInstanceOf[typings.beforeAfterHook.beforeAfterHookStrings.Result]
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.beforeAfterHook.beforeAfterHookStrings.O
-    - typings.beforeAfterHook.beforeAfterHookStrings.R
-    - typings.beforeAfterHook.beforeAfterHookStrings.E
-  */
-  trait TypeStoreKeyShort extends StObject
-  object TypeStoreKeyShort {
-    
-    inline def E: typings.beforeAfterHook.beforeAfterHookStrings.E = "E".asInstanceOf[typings.beforeAfterHook.beforeAfterHookStrings.E]
-    
-    inline def O: typings.beforeAfterHook.beforeAfterHookStrings.O = "O".asInstanceOf[typings.beforeAfterHook.beforeAfterHookStrings.O]
-    
-    inline def R: typings.beforeAfterHook.beforeAfterHookStrings.R = "R".asInstanceOf[typings.beforeAfterHook.beforeAfterHookStrings.R]
   }
   
   type WrapHook[Options, Result] = js.Function2[

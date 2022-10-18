@@ -5,8 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.vueCompilerCore.mod.InferCodegenNodeType because Already inherited */ trait RenderSlotCall
+trait RenderSlotCall
   extends StObject
      with CallExpression
      with BlockCodegenNode {

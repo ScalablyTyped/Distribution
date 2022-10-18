@@ -1,8 +1,8 @@
 package typings.chartJs.anon
 
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.mod.Scriptable
 import typings.chartJs.mod.ScriptableScaleContext
+import typings.chartJs.typesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +25,7 @@ trait BorderDash extends StObject {
     * Color of angled lines.
     * @default 'rgba(0, 0, 0, 0.1)'
     */
-  var color: Scriptable[typings.chartJs.colorMod.Color, ScriptableScaleContext]
+  var color: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScaleContext]
   
   /**
     * if true, angle lines are shown.
@@ -44,7 +44,7 @@ object BorderDash {
   inline def apply(
     borderDash: Scriptable[js.Array[Double], ScriptableScaleContext],
     borderDashOffset: Scriptable[Double, ScriptableScaleContext],
-    color: Scriptable[typings.chartJs.colorMod.Color, ScriptableScaleContext],
+    color: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScaleContext],
     display: Boolean,
     lineWidth: Scriptable[Double, ScriptableScaleContext]
   ): BorderDash = {
@@ -64,10 +64,10 @@ object BorderDash {
     
     inline def setBorderDashVarargs(value: Double*): Self = StObject.set(x, "borderDash", js.Array(value*))
     
-    inline def setColor(value: Scriptable[typings.chartJs.colorMod.Color, ScriptableScaleContext]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScaleContext]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorFunction2(
-      value: (ScriptableScaleContext, /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableScaleContext, /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "color", js.Any.fromFunction2(value))
     
     inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])

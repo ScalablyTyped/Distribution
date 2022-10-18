@@ -1,8 +1,8 @@
 package typings.awsSdkMiddlewareOperationLogging
 
-import typings.awsSdkTypes.middlewareMod.Handler
-import typings.awsSdkTypes.middlewareMod.HandlerExecutionContext
-import typings.awsSdkTypes.responseMod.MetadataBearer
+import typings.awsSdkTypes.distTypesMiddlewareMod.Handler
+import typings.awsSdkTypes.distTypesMiddlewareMod.HandlerExecutionContext
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

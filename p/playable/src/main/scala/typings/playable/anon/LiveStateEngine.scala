@@ -1,12 +1,12 @@
 package typings.playable.anon
 
-import typings.playable.eventEmitterTypesMod.IEventEmitter
-import typings.playable.playbackEngineTypesMod.IPlaybackEngine
-import typings.playable.previewFullSizeTypesMod.IPreviewFullSize
-import typings.playable.previewThumbnailTypesMod.IPreviewThumbnail
-import typings.playable.textMapTypesMod.ITextMap
-import typings.playable.themeTypesMod.IThemeService
-import typings.playable.tooltipTypesMod.ITooltipService
+import typings.playable.distSrcModulesEventEmitterTypesMod.IEventEmitter
+import typings.playable.distSrcModulesPlaybackEngineTypesMod.IPlaybackEngine
+import typings.playable.distSrcModulesTextMapTypesMod.ITextMap
+import typings.playable.distSrcModulesUiCoreThemeTypesMod.IThemeService
+import typings.playable.distSrcModulesUiCoreTooltipTypesMod.ITooltipService
+import typings.playable.distSrcModulesUiPreviewFullSizeTypesMod.IPreviewFullSize
+import typings.playable.distSrcModulesUiPreviewThumbnailTypesMod.IPreviewThumbnail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

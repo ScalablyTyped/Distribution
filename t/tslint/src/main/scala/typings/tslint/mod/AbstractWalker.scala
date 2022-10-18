@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint", "AbstractWalker")
+/* note: abstract class */ @JSImport("tslint", "AbstractWalker")
 @js.native
-abstract class AbstractWalker[T] protected ()
-  extends typings.tslint.walkerMod.AbstractWalker[T] {
+open class AbstractWalker[T] protected ()
+  extends typings.tslint.libLanguageWalkerMod.AbstractWalker[T] {
   def this(sourceFile: SourceFile, ruleName: String, options: T) = this()
 }

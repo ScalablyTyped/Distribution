@@ -1,6 +1,6 @@
 package typings.carbonComponents.mod
 
-import typings.carbonComponents.tileMod.TileOptions
+import typings.carbonComponents.componentsTileTileMod.TileOptions
 import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "Tile")
 @js.native
 open class Tile protected ()
-  extends typings.carbonComponents.componentsMod.Tile {
+  extends typings.carbonComponents.globalsJsComponentsMod.Tile {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: TileOptions) = this()
 }

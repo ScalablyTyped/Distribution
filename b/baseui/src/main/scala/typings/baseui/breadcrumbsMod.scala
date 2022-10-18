@@ -6,7 +6,7 @@ import typings.baseui.baseuiStrings.nav
 import typings.baseui.baseuiStrings.ol
 import typings.baseui.breadcrumbsTypesMod.BreadcrumbsProps
 import typings.react.mod.global.JSX.Element
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

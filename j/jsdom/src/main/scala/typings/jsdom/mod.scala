@@ -1,12 +1,9 @@
 package typings.jsdom
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.jsdom.anon.Instantiable
 import typings.jsdom.anon.TypeofCSSRule
 import typings.jsdom.anon.TypeofDOMException
-import typings.jsdom.anon.TypeofEvent
 import typings.jsdom.anon.TypeofFileReader
 import typings.jsdom.anon.TypeofHTMLMediaElement
 import typings.jsdom.anon.TypeofHTMLScriptElement
@@ -45,13 +42,12 @@ import typings.jsdom.jsdomStrings.timeStamp
 import typings.jsdom.jsdomStrings.trace
 import typings.jsdom.jsdomStrings.usable
 import typings.jsdom.jsdomStrings.warn
-import typings.node.anon.TypeofURL
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
-import typings.node.urlMod.URL_
 import typings.node.vmMod.Context
-import typings.parse5.commonTokenMod.Location
+import typings.parse5.distCommonTokenMod.Location
 import typings.std.AnimationEvent
 import typings.std.ArrayBufferConstructor
 import typings.std.ArrayBufferLike
@@ -122,7 +118,6 @@ import typings.std.PromiseConstructor
 import typings.std.PromiseRejectionEvent
 import typings.std.ProxyConstructor
 import typings.std.RangeErrorConstructor
-import typings.std.Record
 import typings.std.ReferenceErrorConstructor
 import typings.std.RegExpConstructor
 import typings.std.RequestInfo
@@ -354,9 +349,9 @@ object mod {
       val STRICT: String = js.native
     }
     
-    @JSImport("jsdom", "toughCookie.Store")
+    /* note: abstract class */ @JSImport("jsdom", "toughCookie.Store")
     @js.native
-    abstract class Store ()
+    open class Store ()
       extends typings.toughCookie.mod.Store
     
     inline def canonicalDomain(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("canonicalDomain")(str.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -494,7 +489,7 @@ object mod {
     }
   }
   
-  type BinaryData = ArrayBufferLike | js.typedarray.ArrayBufferView
+  type BinaryData = ArrayBufferLike | ArrayBufferView
   
   trait ConstructorOptions
     extends StObject
@@ -591,7 +586,7 @@ object mod {
     
     var BigUint64Array: BigUint64ArrayConstructor = js.native
     
-    var Blob: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Blob */ Any = js.native
+    var Blob: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   Blob :infer T} ? T : new (sources : std.Array<node.crypto.BinaryLike | node.buffer.Blob>, options : node.buffer.BlobOptions | undefined): node.buffer.Blob */ js.Any = js.native
     
     /* standard es5 */
     def Boolean[T](): scala.Boolean = js.native
@@ -651,7 +646,7 @@ object mod {
     
     var Element: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Element */ Any = js.native
     
-    /* standard es2022.error */
+    /* standard es5 */
     def Error(): js.Error = js.native
     def Error(message: String): js.Error = js.native
     def Error(message: String, options: ErrorOptions): js.Error = js.native
@@ -662,12 +657,12 @@ object mod {
     @JSName("Error")
     var Error_Original: ErrorConstructor = js.native
     
-    /* standard es2022.error */
+    /* standard es5 */
     def EvalError(): js.Error = js.native
     def EvalError(message: String): js.Error = js.native
     def EvalError(message: String, options: ErrorOptions): js.Error = js.native
     def EvalError(message: Unit, options: ErrorOptions): js.Error = js.native
-    /* standard es2022.error */
+    /* standard es5 */
     @JSName("EvalError")
     def EvalError_EvalError(): js.EvalError = js.native
     @JSName("EvalError")
@@ -679,9 +674,9 @@ object mod {
     @JSName("EvalError")
     var EvalError_Original: EvalErrorConstructor = js.native
     
-    var Event: TypeofEvent = js.native
+    var Event: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   Event :infer T} ? T : {new (type : string): node.node/dom-events.__Event, new (type : string, eventInitDict : node.node/dom-events.EventInit): node.node/dom-events.__Event} */ js.Any = js.native
     
-    var EventTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EventTarget */ Any = js.native
+    var EventTarget: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   EventTarget :infer T} ? T : {new (): node.node/dom-events.__EventTarget} */ js.Any = js.native
     
     var External: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof External */ Any = js.native
     
@@ -943,12 +938,12 @@ object mod {
     
     var Range: TypeofRange = js.native
     
-    /* standard es2022.error */
+    /* standard es5 */
     def RangeError(): js.RangeError = js.native
     def RangeError(message: String): js.RangeError = js.native
     def RangeError(message: String, options: ErrorOptions): js.RangeError = js.native
     def RangeError(message: Unit, options: ErrorOptions): js.RangeError = js.native
-    /* standard es2022.error */
+    /* standard es5 */
     @JSName("RangeError")
     def RangeError_Error(): js.Error = js.native
     @JSName("RangeError")
@@ -960,14 +955,14 @@ object mod {
     @JSName("RangeError")
     var RangeError_Original: RangeErrorConstructor = js.native
     
-    /* standard es2022.error */
+    /* standard es5 */
     def ReferenceError(): js.Error = js.native
     def ReferenceError(message: String): js.Error = js.native
     def ReferenceError(message: String, options: ErrorOptions): js.Error = js.native
     def ReferenceError(message: Unit, options: ErrorOptions): js.Error = js.native
     @JSName("ReferenceError")
     var ReferenceError_Original: ReferenceErrorConstructor = js.native
-    /* standard es2022.error */
+    /* standard es5 */
     @JSName("ReferenceError")
     def ReferenceError_ReferenceError(): js.ReferenceError = js.native
     @JSName("ReferenceError")
@@ -981,7 +976,7 @@ object mod {
     
     def RegExp(pattern: String): js.RegExp = js.native
     def RegExp(pattern: String, flags: String): js.RegExp = js.native
-    /* standard es2015.core */
+    /* standard es5 */
     def RegExp(pattern: js.RegExp): js.RegExp = js.native
     def RegExp(pattern: js.RegExp, flags: String): js.RegExp = js.native
     @JSName("RegExp")
@@ -1039,12 +1034,12 @@ object mod {
     @JSName("Symbol")
     var Symbol_Original: SymbolConstructor = js.native
     
-    /* standard es2022.error */
+    /* standard es5 */
     def SyntaxError(): js.SyntaxError = js.native
     def SyntaxError(message: String): js.SyntaxError = js.native
     def SyntaxError(message: String, options: ErrorOptions): js.SyntaxError = js.native
     def SyntaxError(message: Unit, options: ErrorOptions): js.SyntaxError = js.native
-    /* standard es2022.error */
+    /* standard es5 */
     @JSName("SyntaxError")
     def SyntaxError_Error(): js.Error = js.native
     @JSName("SyntaxError")
@@ -1062,14 +1057,14 @@ object mod {
     
     var TreeWalker: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TreeWalker */ Any = js.native
     
-    /* standard es2022.error */
+    /* standard es5 */
     def TypeError(): js.Error = js.native
     def TypeError(message: String): js.Error = js.native
     def TypeError(message: String, options: ErrorOptions): js.Error = js.native
     def TypeError(message: Unit, options: ErrorOptions): js.Error = js.native
     @JSName("TypeError")
     var TypeError_Original: TypeErrorConstructor = js.native
-    /* standard es2022.error */
+    /* standard es5 */
     @JSName("TypeError")
     def TypeError_TypeError(): js.TypeError = js.native
     @JSName("TypeError")
@@ -1081,12 +1076,12 @@ object mod {
     
     var UIEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof UIEvent */ Any = js.native
     
-    /* standard es2022.error */
+    /* standard es5 */
     def URIError(): js.URIError = js.native
     def URIError(message: String): js.URIError = js.native
     def URIError(message: String, options: ErrorOptions): js.URIError = js.native
     def URIError(message: Unit, options: ErrorOptions): js.URIError = js.native
-    /* standard es2022.error */
+    /* standard es5 */
     @JSName("URIError")
     def URIError_Error(): js.Error = js.native
     @JSName("URIError")
@@ -1098,14 +1093,9 @@ object mod {
     @JSName("URIError")
     var URIError_Original: URIErrorConstructor = js.native
     
-    var URL: TypeofURL & (Instantiable2[/* input */ String, /* base */ js.UndefOr[String | URL_], URL_]) = js.native
+    var URL: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   URL :infer T} ? T : {readonly createObjectURL (blob : node.node:buffer.Blob): string, readonly revokeObjectURL (objectUrl : string): void} & new (input : string, base : string | node.url.URL | undefined): node.url.URL */ js.Any = js.native
     
-    var URLSearchParams: Instantiable1[
-        /* init */ js.UndefOr[
-          typings.node.urlMod.URLSearchParams | String | (Record[String, String | js.Array[String]]) | (js.Iterable[js.Tuple2[String, String]]) | (js.Array[js.Tuple2[String, String]])
-        ], 
-        typings.node.urlMod.URLSearchParams
-      ] = js.native
+    var URLSearchParams: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   URLSearchParams :infer T} ? T : new (init : node.url.URLSearchParams | string | std.Record<string, string | std.ReadonlyArray<string>> | std.Iterable<[string, string]> | std.ReadonlyArray<[string, string]> | undefined): node.url.URLSearchParams */ js.Any = js.native
     
     var Uint16Array: Uint16ArrayConstructor = js.native
     

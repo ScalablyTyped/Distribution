@@ -11,7 +11,7 @@ object libSyntaxMod {
   val ^ : js.Any = js.native
   
   inline def frontmatter(): Extension = ^.asInstanceOf[js.Dynamic].applyDynamic("frontmatter")().asInstanceOf[Extension]
-  inline def frontmatter(options: typings.micromarkExtensionFrontmatter.micromarkExtensionFrontmatterMod.Options): Extension = ^.asInstanceOf[js.Dynamic].applyDynamic("frontmatter")(options.asInstanceOf[js.Any]).asInstanceOf[Extension]
+  inline def frontmatter(options: typings.micromarkExtensionFrontmatter.devMattersMod.Options): Extension = ^.asInstanceOf[js.Dynamic].applyDynamic("frontmatter")(options.asInstanceOf[js.Any]).asInstanceOf[Extension]
   
   type Construct = typings.micromarkUtilTypes.mod.Construct
   
@@ -19,11 +19,11 @@ object libSyntaxMod {
   
   type Extension = typings.micromarkUtilTypes.mod.Extension
   
-  type Info = typings.micromarkExtensionFrontmatter.micromarkExtensionFrontmatterMod.Info
+  type Info = typings.micromarkExtensionFrontmatter.devMattersMod.Info
   
-  type Matter = typings.micromarkExtensionFrontmatter.micromarkExtensionFrontmatterMod.Matter
+  type Matter = typings.micromarkExtensionFrontmatter.devMattersMod.Matter
   
-  type Options = typings.micromarkExtensionFrontmatter.micromarkExtensionFrontmatterMod.Options
+  type Options = typings.micromarkExtensionFrontmatter.devMattersMod.Options
   
   type State = typings.micromarkUtilTypes.mod.State
   

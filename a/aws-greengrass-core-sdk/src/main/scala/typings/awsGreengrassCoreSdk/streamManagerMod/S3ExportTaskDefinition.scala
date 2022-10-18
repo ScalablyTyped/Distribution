@@ -1,6 +1,6 @@
 package typings.awsGreengrassCoreSdk.streamManagerMod
 
-import typings.awsGreengrassCoreSdk.dataMod.S3ExportTaskDefinitionMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.S3ExportTaskDefinitionMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "S3ExportTaskDefinition")
 @js.native
 open class S3ExportTaskDefinition protected ()
-  extends typings.awsGreengrassCoreSdk.clientMod.S3ExportTaskDefinition {
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.S3ExportTaskDefinition {
   /**
     * @param inputUrl The URL of the file that contains the data to upload. The file should be local on the disk.
     * @param bucket The name of the S3 bucket that this file should be uploaded to.
@@ -35,5 +35,5 @@ object S3ExportTaskDefinition {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromMap(d: S3ExportTaskDefinitionMap): typings.awsGreengrassCoreSdk.dataMod.S3ExportTaskDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.S3ExportTaskDefinition]
+  inline def fromMap(d: S3ExportTaskDefinitionMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.S3ExportTaskDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.S3ExportTaskDefinition]
 }

@@ -168,9 +168,27 @@ object RouterLink {
   
   @JSImport("@angular/router", "RouterLink.\u0275dir")
   @js.native
-  def ɵdir: ɵɵDirectiveDeclaration[RouterLink, String, scala.Nothing, Fragment, js.Object, scala.Nothing, scala.Nothing, `true`] = js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    RouterLink, 
+    /* :not(a):not(area)[routerLink] */ String, 
+    scala.Nothing, 
+    Fragment, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `true`
+  ] = js.native
   inline def ɵdir_=(
-    x: ɵɵDirectiveDeclaration[RouterLink, String, scala.Nothing, Fragment, js.Object, scala.Nothing, scala.Nothing, `true`]
+    x: ɵɵDirectiveDeclaration[
+      RouterLink, 
+      /* :not(a):not(area)[routerLink] */ String, 
+      scala.Nothing, 
+      Fragment, 
+      js.Object, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `true`
+    ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/router", "RouterLink.\u0275fac")

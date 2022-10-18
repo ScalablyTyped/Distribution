@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class InterleavedBufferAttribute protected ()
   extends typings.three.mod.InterleavedBufferAttribute {
   def this(
-    interleavedBuffer: typings.three.interleavedBufferMod.InterleavedBuffer,
+    interleavedBuffer: typings.three.srcCoreInterleavedBufferMod.InterleavedBuffer,
     itemSize: Double,
     offset: Double
   ) = this()
   def this(
-    interleavedBuffer: typings.three.interleavedBufferMod.InterleavedBuffer,
+    interleavedBuffer: typings.three.srcCoreInterleavedBufferMod.InterleavedBuffer,
     itemSize: Double,
     offset: Double,
     normalized: Boolean

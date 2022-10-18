@@ -14,17 +14,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class PositionNormalVertex ()
   extends typings.babylonjs.mathsIndexMod.PositionNormalVertex {
   def this(/** the position of the vertex (defaut: 0,0,0) */
-  position: typings.babylonjs.mathVectorMod.Vector3) = this()
+  position: typings.babylonjs.mathsMathDotvectorMod.Vector3) = this()
   def this(
     /** the position of the vertex (defaut: 0,0,0) */
   position: Unit,
     /** the normal of the vertex (defaut: 0,1,0) */
-  normal: typings.babylonjs.mathVectorMod.Vector3
+  normal: typings.babylonjs.mathsMathDotvectorMod.Vector3
   ) = this()
   def this(
     /** the position of the vertex (defaut: 0,0,0) */
-  position: typings.babylonjs.mathVectorMod.Vector3,
+  position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     /** the normal of the vertex (defaut: 0,1,0) */
-  normal: typings.babylonjs.mathVectorMod.Vector3
+  normal: typings.babylonjs.mathsMathDotvectorMod.Vector3
   ) = this()
 }

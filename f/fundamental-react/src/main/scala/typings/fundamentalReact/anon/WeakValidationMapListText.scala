@@ -1,7 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.react.mod.ReactNode
-import typings.react.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/List/List.ListTextProps> */
 trait WeakValidationMapListText extends StObject {
   
-  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
+  var children: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactNode | undefined ? react.react.Validator<react.react.ReactNode | undefined | null | undefined> : undefined extends react.react.ReactNode | undefined ? react.react.Validator<react.react.ReactNode | undefined | null | undefined> : react.react.Validator<react.react.ReactNode | undefined> */ js.Any
+  ] = js.undefined
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var className: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+  ] = js.undefined
   
-  var noWrap: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var noWrap: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
+  ] = js.undefined
   
-  var secondary: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var secondary: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
+  ] = js.undefined
 }
 object WeakValidationMapListText {
   
@@ -26,19 +32,27 @@ object WeakValidationMapListText {
   
   extension [Self <: WeakValidationMapListText](x: Self) {
     
-    inline def setChildren(value: Validator[js.UndefOr[Null | ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactNode | undefined ? react.react.Validator<react.react.ReactNode | undefined | null | undefined> : undefined extends react.react.ReactNode | undefined ? react.react.Validator<react.react.ReactNode | undefined | null | undefined> : react.react.Validator<react.react.ReactNode | undefined> */ js.Any
+    ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    ): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setNoWrap(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
+    inline def setNoWrap(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
+    ): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
     
     inline def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
     
-    inline def setSecondary(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
+    ): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
     inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
   }

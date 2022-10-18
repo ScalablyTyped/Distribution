@@ -10,7 +10,7 @@ object pluginsBaseMod {
   @JSImport("handsontable/plugins/base", "BasePlugin")
   @js.native
   open class BasePlugin protected ()
-    extends typings.handsontable.baseBaseMod.BasePlugin {
+    extends typings.handsontable.pluginsBaseBaseMod.BasePlugin {
     def this(hotInstance: default) = this()
   }
 }

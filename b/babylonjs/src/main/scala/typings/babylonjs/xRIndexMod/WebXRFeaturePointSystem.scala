@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXRFeaturePointSystem")
 @js.native
 open class WebXRFeaturePointSystem protected ()
-  extends typings.babylonjs.featuresIndexMod.WebXRFeaturePointSystem {
+  extends typings.babylonjs.xRFeaturesIndexMod.WebXRFeaturePointSystem {
   /**
     * construct the feature point system
     * @param _xrSessionManager an instance of xr Session manager
     */
-  def this(_xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager) = this()
+  def this(_xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager) = this()
 }
 /* static members */
 object WebXRFeaturePointSystem {

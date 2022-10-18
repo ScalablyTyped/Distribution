@@ -1,6 +1,6 @@
 package typings.useGestureCore.anon
 
-import typings.useGestureCore.utilsMod.Vector2
+import typings.useGestureCore.distDeclarationsSrcTypesUtilsMod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.GridSortBar")
 @js.native
 open class GridSortBar protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.GridSortBar {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.GridSortBar {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object GridSortBar {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.GridSortBar = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSortBar]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.GridSortBar = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GridSortBar]
   
   /**
     * Creates and returns a new GridSortBar instance in the SDK and on the server.
@@ -47,7 +47,7 @@ object GridSortBar {
     * of the parent DropDownSearchField element passed as argument.
     */
   /* static member */
-  inline def createInDropDownSearchFieldUnderSortBar(container: typings.mendixmodelsdk.pagesMod.pages.DropDownSearchField): typings.mendixmodelsdk.pagesMod.pages.GridSortBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropDownSearchFieldUnderSortBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSortBar]
+  inline def createInDropDownSearchFieldUnderSortBar(container: typings.mendixmodelsdk.srcGenPagesMod.pages.DropDownSearchField): typings.mendixmodelsdk.srcGenPagesMod.pages.GridSortBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropDownSearchFieldUnderSortBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GridSortBar]
   
   /**
     * Creates and returns a new GridSortBar instance in the SDK and on the server.
@@ -58,7 +58,7 @@ object GridSortBar {
     *  6.2.0 and higher
     */
   /* static member */
-  inline def createInSelectorDatabaseSourceUnderSortBar(container: typings.mendixmodelsdk.pagesMod.pages.SelectorDatabaseSource): typings.mendixmodelsdk.pagesMod.pages.GridSortBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSelectorDatabaseSourceUnderSortBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSortBar]
+  inline def createInSelectorDatabaseSourceUnderSortBar(container: typings.mendixmodelsdk.srcGenPagesMod.pages.SelectorDatabaseSource): typings.mendixmodelsdk.srcGenPagesMod.pages.GridSortBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSelectorDatabaseSourceUnderSortBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GridSortBar]
   
   /**
     * Creates and returns a new GridSortBar instance in the SDK and on the server.
@@ -66,7 +66,7 @@ object GridSortBar {
     * of the parent SelectorXPathSource element passed as argument.
     */
   /* static member */
-  inline def createInSelectorXPathSourceUnderSortBar(container: typings.mendixmodelsdk.pagesMod.pages.SelectorXPathSource): typings.mendixmodelsdk.pagesMod.pages.GridSortBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSelectorXPathSourceUnderSortBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSortBar]
+  inline def createInSelectorXPathSourceUnderSortBar(container: typings.mendixmodelsdk.srcGenPagesMod.pages.SelectorXPathSource): typings.mendixmodelsdk.srcGenPagesMod.pages.GridSortBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSelectorXPathSourceUnderSortBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GridSortBar]
   
   /**
     * Creates and returns a new GridSortBar instance in the SDK and on the server.
@@ -74,7 +74,7 @@ object GridSortBar {
     * of the parent SortableEntityPathSource element passed as argument.
     */
   /* static member */
-  inline def createInSortableEntityPathSourceUnderSortBar(container: typings.mendixmodelsdk.pagesMod.pages.SortableEntityPathSource): typings.mendixmodelsdk.pagesMod.pages.GridSortBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSortableEntityPathSourceUnderSortBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSortBar]
+  inline def createInSortableEntityPathSourceUnderSortBar(container: typings.mendixmodelsdk.srcGenPagesMod.pages.SortableEntityPathSource): typings.mendixmodelsdk.srcGenPagesMod.pages.GridSortBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSortableEntityPathSourceUnderSortBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GridSortBar]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.GridSortBar.structureTypeName")

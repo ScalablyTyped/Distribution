@@ -1,13 +1,13 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsBooleans.`false`
 import typings.chartJs.chartJsStrings.bubble
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
-import typings.chartJs.colorMod.Color
-import typings.chartJs.geometricMod.ChartArea
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesColorMod.Color
+import typings.chartJs.typesGeometricMod.ChartArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

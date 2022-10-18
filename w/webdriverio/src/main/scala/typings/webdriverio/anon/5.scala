@@ -1,8 +1,8 @@
 package typings.webdriverio.anon
 
 import typings.std.NonNullable
-import typings.wdioTypes.anon.OmitTestrunnercapabilitie
-import typings.wdioTypes.capabilitiesMod.RemoteCapabilities
+import typings.wdioTypes.anon.OmitTestrunnercapabilitieAfter
+import typings.wdioTypes.buildCapabilitiesMod.RemoteCapabilities
 import typings.webdriverio.webdriverioStrings.`object`
 import typings.webdriverio.webdriverioStrings.boolean
 import typings.webdriverio.webdriverioStrings.function
@@ -17,7 +17,7 @@ trait `5` extends StObject {
   var default: js.UndefOr[
     (js.Function4[
       /* exitCode */ Double, 
-      /* config */ OmitTestrunnercapabilitie, 
+      /* config */ OmitTestrunnercapabilitieAfter, 
       /* capabilities */ RemoteCapabilities, 
       /* results */ Any, 
       Unit
@@ -26,7 +26,7 @@ trait `5` extends StObject {
         js.UndefOr[
           js.Function4[
             /* exitCode */ Double, 
-            /* config */ OmitTestrunnercapabilitie, 
+            /* config */ OmitTestrunnercapabilitieAfter, 
             /* capabilities */ RemoteCapabilities, 
             /* results */ Any, 
             Unit
@@ -47,7 +47,7 @@ trait `5` extends StObject {
       /* option */ js.UndefOr[
         (js.Function4[
           /* exitCode */ Double, 
-          /* config */ OmitTestrunnercapabilitie, 
+          /* config */ OmitTestrunnercapabilitieAfter, 
           /* capabilities */ RemoteCapabilities, 
           /* results */ Any, 
           Unit
@@ -56,7 +56,7 @@ trait `5` extends StObject {
             js.UndefOr[
               js.Function4[
                 /* exitCode */ Double, 
-                /* config */ OmitTestrunnercapabilitie, 
+                /* config */ OmitTestrunnercapabilitieAfter, 
                 /* capabilities */ RemoteCapabilities, 
                 /* results */ Any, 
                 Unit
@@ -82,7 +82,7 @@ object `5` {
     inline def setDefault(
       value: (js.Function4[
           /* exitCode */ Double, 
-          /* config */ OmitTestrunnercapabilitie, 
+          /* config */ OmitTestrunnercapabilitieAfter, 
           /* capabilities */ RemoteCapabilities, 
           /* results */ Any, 
           Unit
@@ -91,7 +91,7 @@ object `5` {
             js.UndefOr[
               js.Function4[
                 /* exitCode */ Double, 
-                /* config */ OmitTestrunnercapabilitie, 
+                /* config */ OmitTestrunnercapabilitieAfter, 
                 /* capabilities */ RemoteCapabilities, 
                 /* results */ Any, 
                 Unit
@@ -102,7 +102,7 @@ object `5` {
     ): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultFunction4(
-      value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitie, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
+      value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
     ): Self = StObject.set(x, "default", js.Any.fromFunction4(value))
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
@@ -112,7 +112,7 @@ object `5` {
           js.UndefOr[
             js.Function4[
               /* exitCode */ Double, 
-              /* config */ OmitTestrunnercapabilitie, 
+              /* config */ OmitTestrunnercapabilitieAfter, 
               /* capabilities */ RemoteCapabilities, 
               /* results */ Any, 
               Unit
@@ -135,7 +135,7 @@ object `5` {
       value: /* option */ js.UndefOr[
           (js.Function4[
             /* exitCode */ Double, 
-            /* config */ OmitTestrunnercapabilitie, 
+            /* config */ OmitTestrunnercapabilitieAfter, 
             /* capabilities */ RemoteCapabilities, 
             /* results */ Any, 
             Unit
@@ -144,7 +144,7 @@ object `5` {
               js.UndefOr[
                 js.Function4[
                   /* exitCode */ Double, 
-                  /* config */ OmitTestrunnercapabilitie, 
+                  /* config */ OmitTestrunnercapabilitieAfter, 
                   /* capabilities */ RemoteCapabilities, 
                   /* results */ Any, 
                   Unit

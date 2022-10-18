@@ -1,9 +1,9 @@
 package typings.reactWidgets.anon
 
 import typings.react.mod.SyntheticEvent
+import typings.reactWidgets.cjsTypesMod.Value
 import typings.reactWidgets.reactWidgetsStrings.input
 import typings.reactWidgets.reactWidgetsStrings.listbox
-import typings.reactWidgets.typesMod.Value
 import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject

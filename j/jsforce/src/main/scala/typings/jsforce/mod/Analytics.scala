@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("jsforce", "Analytics")
 @js.native
 open class Analytics ()
-  extends typings.jsforce.analyticsMod.Analytics
+  extends typings.jsforce.apiAnalyticsMod.Analytics

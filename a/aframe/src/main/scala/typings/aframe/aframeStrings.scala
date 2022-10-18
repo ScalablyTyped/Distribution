@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object aframeStrings {
   
   @js.native
-  sealed trait MultiPropertySchema extends StObject
-  inline def MultiPropertySchema: MultiPropertySchema = "MultiPropertySchema".asInstanceOf[MultiPropertySchema]
-  
-  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   

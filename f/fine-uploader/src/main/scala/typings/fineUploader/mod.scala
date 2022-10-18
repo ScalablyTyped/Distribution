@@ -1,16 +1,16 @@
 package typings.fineUploader
 
-import typings.fineUploader.coreMod.CoreOptions
-import typings.fineUploader.coreMod.CustomResizerCallBack
-import typings.fineUploader.coreMod.DeleteFileOptions
-import typings.fineUploader.coreMod.FineUploaderBasic
-import typings.fineUploader.coreMod.Messages
-import typings.fineUploader.coreMod.PasteOptions
-import typings.fineUploader.coreMod.PromiseOptions
-import typings.fineUploader.coreMod.ResizeInfo
-import typings.fineUploader.coreMod.RetryOptions
-import typings.fineUploader.coreMod.ScalingOptions
-import typings.fineUploader.coreMod.TextOptions
+import typings.fineUploader.libCoreMod.CoreOptions
+import typings.fineUploader.libCoreMod.CustomResizerCallBack
+import typings.fineUploader.libCoreMod.DeleteFileOptions
+import typings.fineUploader.libCoreMod.FineUploaderBasic
+import typings.fineUploader.libCoreMod.Messages
+import typings.fineUploader.libCoreMod.PasteOptions
+import typings.fineUploader.libCoreMod.PromiseOptions
+import typings.fineUploader.libCoreMod.ResizeInfo
+import typings.fineUploader.libCoreMod.RetryOptions
+import typings.fineUploader.libCoreMod.ScalingOptions
+import typings.fineUploader.libCoreMod.TextOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

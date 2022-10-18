@@ -46,7 +46,7 @@ type ComponentChildren = js.Array[typings.preact.mod.ComponentChild] | typings.p
 
 type ComponentType[P] = (ComponentClass[P, js.Object]) | FunctionComponent[P]
 
-type Ref[T] = typings.preact.mod.RefObject[T] | RefCallback[T]
+type Ref[T] = typings.preact.mod.RefObject[T] | RefCallback[T] | Null
 
 type VNode = typings.preact.mod.VNode[Any]
 

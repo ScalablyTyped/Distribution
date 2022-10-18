@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ParameterHint extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterHint & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterHint & Double] = js.native
   
-  /* 1 */ val Directory: typings.typedoc.optionsDeclarationMod.ParameterHint.Directory & Double = js.native
+  /* 1 */ val Directory: typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterHint.Directory & Double = js.native
   
-  /* 0 */ val File: typings.typedoc.optionsDeclarationMod.ParameterHint.File & Double = js.native
+  /* 0 */ val File: typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterHint.File & Double = js.native
 }

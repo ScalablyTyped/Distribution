@@ -1,10 +1,10 @@
 package typings.esbuildWasm.anon
 
-import typings.esbuildWasm.browserMod.BuildInvalidate
-import typings.esbuildWasm.browserMod.Message
-import typings.esbuildWasm.browserMod.Metafile
-import typings.esbuildWasm.browserMod.OutputFile
 import typings.esbuildWasm.esbuildWasmBooleans.`false`
+import typings.esbuildWasm.libBrowserMod.BuildInvalidate
+import typings.esbuildWasm.libBrowserMod.Message
+import typings.esbuildWasm.libBrowserMod.Metafile
+import typings.esbuildWasm.libBrowserMod.OutputFile
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.inversifyInjectDecorators
 
-import typings.inversify.interfacesMod.interfaces.Container
+import typings.inversify.libInterfacesInterfacesMod.interfaces.Container
 import typings.inversifyInjectDecorators.anon.LazyInject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

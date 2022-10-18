@@ -19,7 +19,7 @@ trait Enable extends StObject {
     * Enable and disable zooming.
     * @param enabled If enabled is `true`, the feature of zooming will be enabled. If `false` is given, it will be disabled.
     */
-  def enable(enabled: Boolean): Unit = js.native
+  def enable(enabled: Boolean): scala.Unit = js.native
   
   /**
     * Set or get the maximum x value of the chart for zooming.
@@ -28,7 +28,7 @@ trait Enable extends StObject {
     *
     */
   def max(): Double = js.native
-  def max(max: Double): Unit = js.native
+  def max(max: Double): scala.Unit = js.native
   
   /**
     * Set or get the minimum x value of the chart for zooming.
@@ -37,13 +37,13 @@ trait Enable extends StObject {
     *
     */
   def min(): Double = js.native
-  def min(min: Double): Unit = js.native
+  def min(min: Double): scala.Unit = js.native
   
   /**
     * Set or get both the max and min zoom values at the same time.
     * @param range An object with max and/or min values.
     * @returns If `range` is _not_ given, returns an object with current max and min zoom values.
     */
-  def range(): MinNumber = js.native
-  def range(range: `5`): Unit = js.native
+  def range(): MaxMin = js.native
+  def range(range: `0`): scala.Unit = js.native
 }

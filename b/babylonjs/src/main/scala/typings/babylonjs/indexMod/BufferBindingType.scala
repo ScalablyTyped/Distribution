@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object BufferBindingType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.BufferBindingType & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.BufferBindingType & String] = js.native
   
-  /* "read-only-storage" */ val ReadOnlyStorage: typings.babylonjs.webgpuConstantsMod.BufferBindingType.ReadOnlyStorage & String = js.native
+  /* "read-only-storage" */ val ReadOnlyStorage: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.BufferBindingType.ReadOnlyStorage & String = js.native
   
-  /* "storage" */ val Storage: typings.babylonjs.webgpuConstantsMod.BufferBindingType.Storage & String = js.native
+  /* "storage" */ val Storage: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.BufferBindingType.Storage & String = js.native
   
-  /* "uniform" */ val Uniform: typings.babylonjs.webgpuConstantsMod.BufferBindingType.Uniform & String = js.native
+  /* "uniform" */ val Uniform: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.BufferBindingType.Uniform & String = js.native
 }

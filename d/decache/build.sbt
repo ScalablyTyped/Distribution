@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "decache"
-version := "4.6.1-bbaab5"
+version := "4.6.1-11a52e"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

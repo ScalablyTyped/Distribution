@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +21,7 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings extends
     * MaintenancePolicy.name.
     */
   var maintenancePolicies: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.memcache.gapi.client.memcache.MaintenancePolicy}
-    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.memcache.gapi.client.memcache.MaintenancePolicy} */ js.Any
   ] = js.undefined
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings {
@@ -45,9 +42,7 @@ object GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings {
     inline def setIsRollbackUndefined: Self = StObject.set(x, "isRollback", js.undefined)
     
     inline def setMaintenancePolicies(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.memcache.gapi.client.memcache.MaintenancePolicy}
-      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.memcache.gapi.client.memcache.MaintenancePolicy} */ js.Any
     ): Self = StObject.set(x, "maintenancePolicies", value.asInstanceOf[js.Any])
     
     inline def setMaintenancePoliciesUndefined: Self = StObject.set(x, "maintenancePolicies", js.undefined)

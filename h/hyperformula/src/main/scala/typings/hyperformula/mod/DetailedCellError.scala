@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "DetailedCellError")
 @js.native
 open class DetailedCellError protected ()
-  extends typings.hyperformula.cellValueMod.DetailedCellError {
-  def this(error: typings.hyperformula.cellMod.CellError, value: String) = this()
-  def this(error: typings.hyperformula.cellMod.CellError, value: String, address: String) = this()
+  extends typings.hyperformula.typingsCellValueMod.DetailedCellError {
+  def this(error: typings.hyperformula.typingsCellMod.CellError, value: String) = this()
+  def this(error: typings.hyperformula.typingsCellMod.CellError, value: String, address: String) = this()
 }

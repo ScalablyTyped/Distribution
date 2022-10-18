@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param scene Defines the scene to register the component in
   */
 open class AudioSceneComponent ()
-  extends typings.babylonjs.legacyMod.AudioSceneComponent {
+  extends typings.babylonjs.legacyLegacyMod.AudioSceneComponent {
   def this(scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
 }
 /* static members */

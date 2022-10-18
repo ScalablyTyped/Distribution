@@ -1,7 +1,5 @@
 package typings.scriptableIos.global
 
-import typings.scriptableIos.anon.Result
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,5 +54,7 @@ open class CallbackURL[T /* <: String */] protected ()
     * @see https://docs.scriptable.app/callbackurl/#-open
     */
   /* CompleteClass */
-  override def open(): js.Promise[(Record[String, String | Double | Boolean | Null]) | Result] = js.native
+  override def open(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: shortcuts://x-callback-url/${string} * / string ? {  result :string | number | boolean | null} : std.Record<string, string | number | boolean | null> */ js.Any
+  ] = js.native
 }

@@ -1,8 +1,8 @@
 package typings.uirouterCore.mod
 
-import typings.uirouterCore.transitionInterfaceMod.HookFn
-import typings.uirouterCore.transitionInterfaceMod.HookMatchCriteria
-import typings.uirouterCore.transitionInterfaceMod.HookRegOptions
+import typings.uirouterCore.libTransitionInterfaceMod.HookFn
+import typings.uirouterCore.libTransitionInterfaceMod.HookMatchCriteria
+import typings.uirouterCore.libTransitionInterfaceMod.HookRegOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,20 +10,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@uirouter/core", "RegisteredHook")
 @js.native
 open class RegisteredHook protected ()
-  extends typings.uirouterCore.transitionMod.RegisteredHook {
+  extends typings.uirouterCore.libTransitionMod.RegisteredHook {
   def this(
-    tranSvc: typings.uirouterCore.transitionServiceMod.TransitionService,
-    eventType: typings.uirouterCore.transitionEventTypeMod.TransitionEventType,
+    tranSvc: typings.uirouterCore.libTransitionTransitionServiceMod.TransitionService,
+    eventType: typings.uirouterCore.libTransitionTransitionEventTypeMod.TransitionEventType,
     callback: HookFn,
     matchCriteria: HookMatchCriteria,
-    removeHookFromRegistry: js.Function1[/* hook */ typings.uirouterCore.hookRegistryMod.RegisteredHook, Unit]
+    removeHookFromRegistry: js.Function1[/* hook */ typings.uirouterCore.libTransitionHookRegistryMod.RegisteredHook, Unit]
   ) = this()
   def this(
-    tranSvc: typings.uirouterCore.transitionServiceMod.TransitionService,
-    eventType: typings.uirouterCore.transitionEventTypeMod.TransitionEventType,
+    tranSvc: typings.uirouterCore.libTransitionTransitionServiceMod.TransitionService,
+    eventType: typings.uirouterCore.libTransitionTransitionEventTypeMod.TransitionEventType,
     callback: HookFn,
     matchCriteria: HookMatchCriteria,
-    removeHookFromRegistry: js.Function1[/* hook */ typings.uirouterCore.hookRegistryMod.RegisteredHook, Unit],
+    removeHookFromRegistry: js.Function1[/* hook */ typings.uirouterCore.libTransitionHookRegistryMod.RegisteredHook, Unit],
     options: HookRegOptions
   ) = this()
 }

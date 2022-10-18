@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "EventRedactedError")
 @js.native
 open class EventRedactedError ()
-  extends typings.matrixBotSdk.invalidEventErrorMod.EventRedactedError {
+  extends typings.matrixBotSdk.libModelsEventsInvalidEventErrorMod.EventRedactedError {
   def this(message: String) = this()
 }

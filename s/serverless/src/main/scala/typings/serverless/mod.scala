@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.serverless.anon.DefineCustomProperties
 import typings.serverless.anon.Log
 import typings.serverless.anon.PopulateService
-import typings.serverless.awsProviderMod.Resources
+import typings.serverless.pluginsAwsProviderAwsProviderMod.Resources
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +28,7 @@ object mod {
     var configSchemaHandler: DefineCustomProperties = js.native
     
     /* CompleteClass */
-    override def getProvider(name: String): typings.serverless.awsProviderMod.^ = js.native
+    override def getProvider(name: String): typings.serverless.pluginsAwsProviderAwsProviderMod.^ = js.native
     
     /* CompleteClass */
     override def getVersion(): String = js.native
@@ -37,7 +37,7 @@ object mod {
     override def init(): js.Promise[Any] = js.native
     
     /* CompleteClass */
-    var pluginManager: typings.serverless.pluginManagerMod.^ = js.native
+    var pluginManager: typings.serverless.classesPluginManagerMod.^ = js.native
     
     /* CompleteClass */
     var resources: Resources = js.native
@@ -49,13 +49,13 @@ object mod {
     var serverlessDirPath: String = js.native
     
     /* CompleteClass */
-    var service: typings.serverless.serviceMod.^ = js.native
+    var service: typings.serverless.classesServiceMod.^ = js.native
     
     /* CompleteClass */
-    override def setProvider(name: String, provider: typings.serverless.awsProviderMod.^): Null = js.native
+    override def setProvider(name: String, provider: typings.serverless.pluginsAwsProviderAwsProviderMod.^): Null = js.native
     
     /* CompleteClass */
-    var utils: typings.serverless.utilsMod.^ = js.native
+    var utils: typings.serverless.classesUtilsMod.^ = js.native
     
     /* CompleteClass */
     var variables: PopulateService = js.native
@@ -64,7 +64,7 @@ object mod {
     var version: String = js.native
     
     /* CompleteClass */
-    var yamlParser: typings.serverless.yamlParserMod.^ = js.native
+    var yamlParser: typings.serverless.classesYamlParserMod.^ = js.native
   }
   
   trait Config extends StObject {
@@ -84,7 +84,7 @@ object mod {
     }
   }
   
-  type Event = typings.serverless.awsProviderMod.Event | js.Object
+  type Event = typings.serverless.pluginsAwsProviderAwsProviderMod.Event | js.Object
   
   trait FunctionDefinition extends StObject {
     
@@ -93,7 +93,7 @@ object mod {
     
     var environment: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var events: js.Array[typings.serverless.awsProviderMod.Event]
+    var events: js.Array[typings.serverless.pluginsAwsProviderAwsProviderMod.Event]
     
     var memorySize: js.UndefOr[Double] = js.undefined
     
@@ -109,7 +109,7 @@ object mod {
   }
   object FunctionDefinition {
     
-    inline def apply(events: js.Array[typings.serverless.awsProviderMod.Event]): FunctionDefinition = {
+    inline def apply(events: js.Array[typings.serverless.pluginsAwsProviderAwsProviderMod.Event]): FunctionDefinition = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionDefinition]
     }
@@ -120,9 +120,9 @@ object mod {
       
       inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      inline def setEvents(value: js.Array[typings.serverless.awsProviderMod.Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[typings.serverless.pluginsAwsProviderAwsProviderMod.Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setEventsVarargs(value: typings.serverless.awsProviderMod.Event*): Self = StObject.set(x, "events", js.Array(value*))
+      inline def setEventsVarargs(value: typings.serverless.pluginsAwsProviderAwsProviderMod.Event*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setMemorySize(value: Double): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
       
@@ -162,7 +162,7 @@ object mod {
   }
   object FunctionDefinitionHandler {
     
-    inline def apply(events: js.Array[typings.serverless.awsProviderMod.Event], handler: String): FunctionDefinitionHandler = {
+    inline def apply(events: js.Array[typings.serverless.pluginsAwsProviderAwsProviderMod.Event], handler: String): FunctionDefinitionHandler = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionDefinitionHandler]
     }
@@ -181,7 +181,7 @@ object mod {
   }
   object FunctionDefinitionImage {
     
-    inline def apply(events: js.Array[typings.serverless.awsProviderMod.Event], image: String): FunctionDefinitionImage = {
+    inline def apply(events: js.Array[typings.serverless.pluginsAwsProviderAwsProviderMod.Event], image: String): FunctionDefinitionImage = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionDefinitionImage]
     }
@@ -343,13 +343,13 @@ object mod {
     
     var configSchemaHandler: DefineCustomProperties
     
-    def getProvider(name: String): typings.serverless.awsProviderMod.^
+    def getProvider(name: String): typings.serverless.pluginsAwsProviderAwsProviderMod.^
     
     def getVersion(): String
     
     def init(): js.Promise[Any]
     
-    var pluginManager: typings.serverless.pluginManagerMod.^
+    var pluginManager: typings.serverless.classesPluginManagerMod.^
     
     var resources: Resources
     
@@ -357,17 +357,17 @@ object mod {
     
     var serverlessDirPath: String
     
-    var service: typings.serverless.serviceMod.^
+    var service: typings.serverless.classesServiceMod.^
     
-    def setProvider(name: String, provider: typings.serverless.awsProviderMod.^): Null
+    def setProvider(name: String, provider: typings.serverless.pluginsAwsProviderAwsProviderMod.^): Null
     
-    var utils: typings.serverless.utilsMod.^
+    var utils: typings.serverless.classesUtilsMod.^
     
     var variables: PopulateService
     
     var version: String
     
-    var yamlParser: typings.serverless.yamlParserMod.^
+    var yamlParser: typings.serverless.classesYamlParserMod.^
   }
   object Serverless {
     
@@ -375,19 +375,19 @@ object mod {
       cli: Log,
       config: Config,
       configSchemaHandler: DefineCustomProperties,
-      getProvider: String => typings.serverless.awsProviderMod.^,
+      getProvider: String => typings.serverless.pluginsAwsProviderAwsProviderMod.^,
       getVersion: () => String,
       init: () => js.Promise[Any],
-      pluginManager: typings.serverless.pluginManagerMod.^,
+      pluginManager: typings.serverless.classesPluginManagerMod.^,
       resources: Resources,
       run: () => js.Promise[Any],
       serverlessDirPath: String,
-      service: typings.serverless.serviceMod.^,
-      setProvider: (String, typings.serverless.awsProviderMod.^) => Null,
-      utils: typings.serverless.utilsMod.^,
+      service: typings.serverless.classesServiceMod.^,
+      setProvider: (String, typings.serverless.pluginsAwsProviderAwsProviderMod.^) => Null,
+      utils: typings.serverless.classesUtilsMod.^,
       variables: PopulateService,
       version: String,
-      yamlParser: typings.serverless.yamlParserMod.^
+      yamlParser: typings.serverless.classesYamlParserMod.^
     ): Serverless = {
       val __obj = js.Dynamic.literal(cli = cli.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configSchemaHandler = configSchemaHandler.asInstanceOf[js.Any], getProvider = js.Any.fromFunction1(getProvider), getVersion = js.Any.fromFunction0(getVersion), init = js.Any.fromFunction0(init), pluginManager = pluginManager.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], run = js.Any.fromFunction0(run), serverlessDirPath = serverlessDirPath.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], setProvider = js.Any.fromFunction2(setProvider), utils = utils.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], yamlParser = yamlParser.asInstanceOf[js.Any])
       __obj.asInstanceOf[Serverless]
@@ -401,13 +401,13 @@ object mod {
       
       inline def setConfigSchemaHandler(value: DefineCustomProperties): Self = StObject.set(x, "configSchemaHandler", value.asInstanceOf[js.Any])
       
-      inline def setGetProvider(value: String => typings.serverless.awsProviderMod.^): Self = StObject.set(x, "getProvider", js.Any.fromFunction1(value))
+      inline def setGetProvider(value: String => typings.serverless.pluginsAwsProviderAwsProviderMod.^): Self = StObject.set(x, "getProvider", js.Any.fromFunction1(value))
       
       inline def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
       
       inline def setInit(value: () => js.Promise[Any]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
-      inline def setPluginManager(value: typings.serverless.pluginManagerMod.^): Self = StObject.set(x, "pluginManager", value.asInstanceOf[js.Any])
+      inline def setPluginManager(value: typings.serverless.classesPluginManagerMod.^): Self = StObject.set(x, "pluginManager", value.asInstanceOf[js.Any])
       
       inline def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
@@ -415,17 +415,17 @@ object mod {
       
       inline def setServerlessDirPath(value: String): Self = StObject.set(x, "serverlessDirPath", value.asInstanceOf[js.Any])
       
-      inline def setService(value: typings.serverless.serviceMod.^): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: typings.serverless.classesServiceMod.^): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      inline def setSetProvider(value: (String, typings.serverless.awsProviderMod.^) => Null): Self = StObject.set(x, "setProvider", js.Any.fromFunction2(value))
+      inline def setSetProvider(value: (String, typings.serverless.pluginsAwsProviderAwsProviderMod.^) => Null): Self = StObject.set(x, "setProvider", js.Any.fromFunction2(value))
       
-      inline def setUtils(value: typings.serverless.utilsMod.^): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+      inline def setUtils(value: typings.serverless.classesUtilsMod.^): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
       
       inline def setVariables(value: PopulateService): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      inline def setYamlParser(value: typings.serverless.yamlParserMod.^): Self = StObject.set(x, "yamlParser", value.asInstanceOf[js.Any])
+      inline def setYamlParser(value: typings.serverless.classesYamlParserMod.^): Self = StObject.set(x, "yamlParser", value.asInstanceOf[js.Any])
     }
   }
 }

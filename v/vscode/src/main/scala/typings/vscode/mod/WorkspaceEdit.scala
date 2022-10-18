@@ -1,5 +1,6 @@
 package typings.vscode.mod
 
+import typings.vscode.anon.Contents
 import typings.vscode.anon.IgnoreIfExists
 import typings.vscode.anon.IgnoreIfNotExists
 import org.scalablytyped.runtime.StObject
@@ -13,17 +14,18 @@ open class WorkspaceEdit () extends StObject {
   /**
     * Create a regular file.
     *
-    * @param uri Uri of the new file..
+    * @param uri Uri of the new file.
     * @param options Defines if an existing file should be overwritten or be
-    * ignored. When overwrite and ignoreIfExists are both set overwrite wins.
+    * ignored. When `overwrite` and `ignoreIfExists` are both set `overwrite` wins.
     * When both are unset and when the file already exists then the edit cannot
-    * be applied successfully.
+    * be applied successfully. The `content`-property allows to set the initial contents
+    * the file is being created with.
     * @param metadata Optional metadata for the entry.
     */
   def createFile(uri: Uri): Unit = js.native
   def createFile(uri: Uri, options: Unit, metadata: WorkspaceEditEntryMetadata): Unit = js.native
-  def createFile(uri: Uri, options: IgnoreIfExists): Unit = js.native
-  def createFile(uri: Uri, options: IgnoreIfExists, metadata: WorkspaceEditEntryMetadata): Unit = js.native
+  def createFile(uri: Uri, options: Contents): Unit = js.native
+  def createFile(uri: Uri, options: Contents, metadata: WorkspaceEditEntryMetadata): Unit = js.native
   
   /**
     * Delete the text at the given range.
@@ -106,12 +108,35 @@ open class WorkspaceEdit () extends StObject {
   def replace(uri: Uri, range: Range, newText: String, metadata: WorkspaceEditEntryMetadata): Unit = js.native
   
   /**
-    * Set (and replace) text edits for a resource.
+    * Set (and replace) notebook edits for a resource.
     *
     * @param uri A resource identifier.
-    * @param edits An array of text edits.
+    * @param edits An array of edits.
     */
-  def set(uri: Uri, edits: js.Array[TextEdit]): Unit = js.native
+  /**
+    * Set (and replace) notebook edits with metadata for a resource.
+    *
+    * @param uri A resource identifier.
+    * @param edits An array of edits.
+    */
+  /**
+    * Set (and replace) text edits or snippet edits for a resource.
+    *
+    * @param uri A resource identifier.
+    * @param edits An array of edits.
+    */
+  /**
+    * Set (and replace) text edits or snippet edits with metadata for a resource.
+    *
+    * @param uri A resource identifier.
+    * @param edits An array of edits.
+    */
+  def set(
+    uri: Uri,
+    edits: js.Array[
+      NotebookEdit | SnippetTextEdit | TextEdit | (js.Tuple2[NotebookEdit | SnippetTextEdit | TextEdit, WorkspaceEditEntryMetadata])
+    ]
+  ): Unit = js.native
   
   /**
     * The number of affected resources of textual or resource changes.

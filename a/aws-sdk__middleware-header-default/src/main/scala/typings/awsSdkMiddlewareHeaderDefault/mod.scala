@@ -1,6 +1,6 @@
 package typings.awsSdkMiddlewareHeaderDefault
 
-import typings.awsSdkTypes.middlewareMod.BuildMiddleware
+import typings.awsSdkTypes.distTypesMiddlewareMod.BuildMiddleware
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

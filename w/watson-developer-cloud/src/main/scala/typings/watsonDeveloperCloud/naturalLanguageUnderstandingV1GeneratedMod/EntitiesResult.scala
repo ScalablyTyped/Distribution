@@ -56,7 +56,7 @@ object EntitiesResult {
     
     inline def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
-    inline def setMentionsVarargs(value: EntityMention*): Self = StObject.set(x, "mentions", js.Array(value :_*))
+    inline def setMentionsVarargs(value: EntityMention*): Self = StObject.set(x, "mentions", js.Array(value*))
     
     inline def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
     

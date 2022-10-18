@@ -1,8 +1,8 @@
 package typings.grommet.anon
 
-import typings.grommet.diagramMod.DiagramAnimationType
-import typings.grommet.diagramMod.DiagramConnectionAnchor
-import typings.grommet.diagramMod.DiagramConnectionType
+import typings.grommet.componentsDiagramMod.DiagramAnimationType
+import typings.grommet.componentsDiagramMod.DiagramConnectionAnchor
+import typings.grommet.componentsDiagramMod.DiagramConnectionType
 import typings.grommet.grommetStrings.hair
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium

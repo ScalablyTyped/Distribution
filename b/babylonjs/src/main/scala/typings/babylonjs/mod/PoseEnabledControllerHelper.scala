@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.poseEnabledControllerMod.GamePadFactory
+import typings.babylonjs.gamepadsControllersPoseEnabledControllerMod.GamePadFactory
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PoseEnabledControllerHelper")
 @js.native
 open class PoseEnabledControllerHelper ()
-  extends typings.babylonjs.legacyMod.PoseEnabledControllerHelper
+  extends typings.babylonjs.legacyLegacyMod.PoseEnabledControllerHelper
 /* static members */
 object PoseEnabledControllerHelper {
   
@@ -22,7 +22,7 @@ object PoseEnabledControllerHelper {
     * @param vrGamepad the gamepad to initialized
     * @returns a vr controller of the type the gamepad identified as
     */
-  inline def InitiateController(vrGamepad: Any): typings.babylonjs.gamepadMod.Gamepad = ^.asInstanceOf[js.Dynamic].applyDynamic("InitiateController")(vrGamepad.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.gamepadMod.Gamepad]
+  inline def InitiateController(vrGamepad: Any): typings.babylonjs.gamepadsGamepadMod.Gamepad = ^.asInstanceOf[js.Dynamic].applyDynamic("InitiateController")(vrGamepad.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.gamepadsGamepadMod.Gamepad]
   
   /** @internal */
   @JSImport("babylonjs", "PoseEnabledControllerHelper._ControllerFactories")
@@ -33,6 +33,12 @@ object PoseEnabledControllerHelper {
   /** @internal */
   @JSImport("babylonjs", "PoseEnabledControllerHelper._DefaultControllerFactory")
   @js.native
-  def _DefaultControllerFactory: Nullable[js.Function1[/* gamepadInfo */ Any, typings.babylonjs.gamepadMod.Gamepad]] = js.native
-  inline def _DefaultControllerFactory_=(x: Nullable[js.Function1[/* gamepadInfo */ Any, typings.babylonjs.gamepadMod.Gamepad]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultControllerFactory")(x.asInstanceOf[js.Any])
+  def _DefaultControllerFactory: Nullable[
+    js.Function1[/* gamepadInfo */ Any, typings.babylonjs.gamepadsGamepadMod.Gamepad]
+  ] = js.native
+  inline def _DefaultControllerFactory_=(
+    x: Nullable[
+      js.Function1[/* gamepadInfo */ Any, typings.babylonjs.gamepadsGamepadMod.Gamepad]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultControllerFactory")(x.asInstanceOf[js.Any])
 }

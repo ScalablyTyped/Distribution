@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.accordionMod.AccordionTabProps
+import typings.primereact.accordionAccordionMod.AccordionTabProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "AccordionTab")
 @js.native
 open class AccordionTab protected ()
-  extends typings.primereact.accordionMod.AccordionTab {
+  extends typings.primereact.accordionAccordionMod.AccordionTab {
   def this(props: AccordionTabProps) = this()
   /**
     * @deprecated

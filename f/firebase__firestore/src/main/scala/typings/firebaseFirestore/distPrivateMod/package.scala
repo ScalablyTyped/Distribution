@@ -1,16 +1,16 @@
 package typings.firebaseFirestore.distPrivateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.firebaseApp.mod.FirebaseApp
 import typings.firebaseFirestore.anon.MockUserToken
 import typings.firebaseFirestore.anon.Seconds
-import typings.firebaseFirestore.anon.`41`
-import typings.firebaseFirestore.anon.`42`
-import typings.firebaseFirestore.anon.`43`
+import typings.firebaseFirestore.anon.`54`
+import typings.firebaseFirestore.anon.`55`
+import typings.firebaseFirestore.anon.`56`
+import typings.firebaseFirestore.anon.`57`
 import typings.firebaseFirestore.distPrivateMod.^
 import typings.firebaseFirestore.firebaseFirestoreStrings.NULL_VALUE
-import typings.firebaseLogger.srcLoggerMod.LogLevelString
+import typings.firebaseLogger.distSrcLoggerMod.LogLevelString
 import typings.std.Partial
 import typings.std.ReadableStream
 import typings.std.Record
@@ -22,6 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 inline def CACHE_SIZE_UNLIMITED: /* -1 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("CACHE_SIZE_UNLIMITED").asInstanceOf[/* -1 */ Double]
 
 inline def addDoc[T](reference: CollectionReference[T], data: WithFieldValue[T]): js.Promise[DocumentReference[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("addDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DocumentReference[T]]]
+
+inline def aggregateQuerySnapshotEqual[T /* <: AggregateSpec */](left: AggregateQuerySnapshot[T], right: AggregateQuerySnapshot[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aggregateQuerySnapshotEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def arrayRemove(elements: Any*): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FieldValue]
 
@@ -64,6 +66,8 @@ inline def endAt(snapshot: DocumentSnapshot2[Any]): QueryConstraint = ^.asInstan
 inline def endBefore(fieldValues: Any*): QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[QueryConstraint]
 inline def endBefore(snapshot: DocumentSnapshot2[Any]): QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(snapshot.asInstanceOf[js.Any]).asInstanceOf[QueryConstraint]
 
+inline def getCountFromServer(query: Query_[Any]): js.Promise[AggregateQuerySnapshot[`54`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountFromServer")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AggregateQuerySnapshot[`54`]]]
+
 inline def getDoc[T](reference: DocumentReference[T]): js.Promise[DocumentSnapshot[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDoc")(reference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DocumentSnapshot[T]]]
 
 inline def getDocFromCache[T](reference: DocumentReference[T]): js.Promise[DocumentSnapshot[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocFromCache")(reference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DocumentSnapshot[T]]]
@@ -94,7 +98,7 @@ inline def loadBundle(firestore: Firestore, bundleData: ReadableStream[js.typeda
 
 inline def namedQuery(firestore: Firestore, name: String): js.Promise[Query_[DocumentData] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("namedQuery")(firestore.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Query_[DocumentData] | Null]]
 
-inline def onSnapshot[T](query: Query_[T], observer: `42`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
+inline def onSnapshot[T](query: Query_[T], observer: `56`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshot[T](query: Query_[T], onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshot[T](
   query: Query_[T],
@@ -113,7 +117,7 @@ inline def onSnapshot[T](
   onError: Unit,
   onCompletion: js.Function0[Unit]
 ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompletion.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
-inline def onSnapshot[T](query: Query_[T], options: SnapshotListenOptions, observer: `42`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
+inline def onSnapshot[T](query: Query_[T], options: SnapshotListenOptions, observer: `56`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshot[T](
   query: Query_[T],
   options: SnapshotListenOptions,
@@ -139,7 +143,7 @@ inline def onSnapshot[T](
   onError: Unit,
   onCompletion: js.Function0[Unit]
 ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompletion.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
-inline def onSnapshot[T](reference: DocumentReference[T], observer: `41`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
+inline def onSnapshot[T](reference: DocumentReference[T], observer: `55`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshot[T](reference: DocumentReference[T], onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshot[T](
   reference: DocumentReference[T],
@@ -158,7 +162,7 @@ inline def onSnapshot[T](
   onError: Unit,
   onCompletion: js.Function0[Unit]
 ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompletion.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
-inline def onSnapshot[T](reference: DocumentReference[T], options: SnapshotListenOptions, observer: `41`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], options.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
+inline def onSnapshot[T](reference: DocumentReference[T], options: SnapshotListenOptions, observer: `55`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], options.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshot[T](
   reference: DocumentReference[T],
   options: SnapshotListenOptions,
@@ -185,7 +189,7 @@ inline def onSnapshot[T](
   onCompletion: js.Function0[Unit]
 ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompletion.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 
-inline def onSnapshotsInSync(firestore: Firestore, observer: `43`): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshotsInSync")(firestore.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
+inline def onSnapshotsInSync(firestore: Firestore, observer: `57`): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshotsInSync")(firestore.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshotsInSync(firestore: Firestore, onSync: js.Function0[Unit]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshotsInSync")(firestore.asInstanceOf[js.Any], onSync.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 
 inline def orderBy(fieldPath: String): QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any]).asInstanceOf[QueryConstraint]
@@ -213,6 +217,9 @@ inline def serverTimestamp(): FieldValue = ^.asInstanceOf[js.Dynamic].applyDynam
 
 inline def setDoc[T](reference: DocumentReference[T], data: PartialWithFieldValue[T], options: SetOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def setDoc[T](reference: DocumentReference[T], data: WithFieldValue[T]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+
+inline def setIndexConfiguration(firestore: Firestore, configuration: IndexConfiguration): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setIndexConfiguration")(firestore.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def setIndexConfiguration(firestore: Firestore, json: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setIndexConfiguration")(firestore.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
 inline def setLogLevel(logLevel: LogLevelString): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(logLevel.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
@@ -247,9 +254,9 @@ inline def writeBatch(firestore: Firestore): WriteBatch_ = ^.asInstanceOf[js.Dyn
   */
 type ActiveTargets = SortedMap[TargetId, Any]
 
-type AddPrefixToKeys[Prefix /* <: String */, T /* <: Record[String, Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T & string as / * template literal string: ${Prefix}.${K} * / string ]:? T[K]}
-  */ typings.firebaseFirestore.firebaseFirestoreStrings.AddPrefixToKeys & TopLevel[T]
+type AggregateFieldType = AggregateField[Double]
+
+type AggregateSpec = StringDictionary[AggregateFieldType]
 
 type ApiClientObjectMap[T] = StringDictionary[T]
 
@@ -276,8 +283,6 @@ type AuthTokenFactory = js.Function0[String]
   * applied.
   */
 type BatchId = Double
-
-type ChildUpdateFields[K /* <: String */, V] = AddPrefixToKeys[K, UpdateData[V]]
 
 /**
   * A randomly-generated key assigned to each Firestore instance at startup.
@@ -366,9 +371,7 @@ type OverlayMap = DocumentKeyMap[Overlay]
 
 type OverlayedDocumentMap = DocumentKeyMap[OverlayedDocument]
 
-type PartialWithFieldValue[T] = Partial[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? @firebase/firestore.@firebase/firestore/dist/private.PartialWithFieldValue<T[K]> | @firebase/firestore.@firebase/firestore/dist/private.FieldValue}
-  */ typings.firebaseFirestore.firebaseFirestoreStrings.PartialWithFieldValue & TopLevel[T]) | T
+type PartialWithFieldValue[T] = Partial[T] | (/* import warning: importer.ImportType#apply Failed type conversion: T extends @firebase/firestore.@firebase/firestore/dist/private.Primitive ? T : T extends {} ? {[ K in keyof T ]:? @firebase/firestore.@firebase/firestore/dist/private.PartialWithFieldValue<T[K]> | @firebase/firestore.@firebase/firestore/dist/private.FieldValue} : never */ js.Any)
 
 type Primitive = js.UndefOr[String | Double | Boolean | Null]
 
@@ -388,17 +391,11 @@ type TargetId = Double
 
 type Timestamp2 = String | Seconds
 
-type UnionToIntersection[U] = Any
-
 type Unsubscribe = js.Function0[Unit]
-
-type UpdateData[T] = Partial[T] | (typings.firebaseFirestore.firebaseFirestoreStrings.UpdateData & TopLevel[T] & NestedUpdateFields[T]) | T
 
 /* Excluded from this release type: _validateIsNotUsedTogether */
 type Value = typings.firebaseFirestore.distPrivateMod.firestoreV1ApiClientInterfaces.Value
 
 type ValueNullValue = NULL_VALUE
 
-type WithFieldValue[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: @firebase/firestore.@firebase/firestore/dist/private.WithFieldValue<T[K]> | @firebase/firestore.@firebase/firestore/dist/private.FieldValue}
-  */ typings.firebaseFirestore.firebaseFirestoreStrings.WithFieldValue & TopLevel[T])
+type WithFieldValue[T] = T | (/* import warning: importer.ImportType#apply Failed type conversion: T extends @firebase/firestore.@firebase/firestore/dist/private.Primitive ? T : T extends {} ? {[ K in keyof T ]: @firebase/firestore.@firebase/firestore/dist/private.WithFieldValue<T[K]> | @firebase/firestore.@firebase/firestore/dist/private.FieldValue} : never */ js.Any)

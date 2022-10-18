@@ -1,9 +1,9 @@
 package typings.rcPicker
 
-import typings.rcPicker.interfaceMod.PanelMode
-import typings.rcPicker.interfaceMod.PickerMode
-import typings.rcPicker.pickerTriggerMod.Placement
-import typings.rcPicker.rangePickerMod.RangeType
+import typings.rcPicker.esInterfaceMod.PanelMode
+import typings.rcPicker.esInterfaceMod.PickerMode
+import typings.rcPicker.esPickerTriggerMod.Placement
+import typings.rcPicker.esRangePickerMod.RangeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,9 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("OVR_multiview2")
+/* note: abstract class */ @JSGlobal("OVR_multiview2")
 @js.native
-abstract class OVRMultiview2 ()
+open class OVRMultiview2 ()
   extends StObject
      with typings.webxr.OVRMultiview2 {
   

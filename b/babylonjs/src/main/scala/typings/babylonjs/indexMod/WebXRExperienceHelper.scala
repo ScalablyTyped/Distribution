@@ -24,5 +24,5 @@ object WebXRExperienceHelper {
     * @param scene the scene to attach the experience helper to
     * @returns a promise for the experience helper
     */
-  inline def CreateAsync(scene: typings.babylonjs.sceneMod.Scene): js.Promise[typings.babylonjs.webXRExperienceHelperMod.WebXRExperienceHelper] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.babylonjs.webXRExperienceHelperMod.WebXRExperienceHelper]]
+  inline def CreateAsync(scene: typings.babylonjs.sceneMod.Scene): js.Promise[typings.babylonjs.xRWebXRExperienceHelperMod.WebXRExperienceHelper] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateAsync")(scene.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.babylonjs.xRWebXRExperienceHelperMod.WebXRExperienceHelper]]
 }

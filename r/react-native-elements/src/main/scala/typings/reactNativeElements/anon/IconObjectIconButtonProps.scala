@@ -19,7 +19,8 @@ import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextLayoutEventData
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconType
+import typings.reactNativeElements.distIconsIconMod.IconProps
+import typings.reactNativeElements.distIconsIconMod.IconType
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.all
 import typings.reactNativeElements.reactNativeElementsStrings.assertive
@@ -41,12 +42,11 @@ import typings.reactNativeElements.reactNativeElementsStrings.polite
 import typings.reactNativeElements.reactNativeElementsStrings.simple
 import typings.reactNativeElements.reactNativeElementsStrings.tail
 import typings.reactNativeElements.reactNativeElementsStrings.yes
-import typings.reactNativeVectorIcons.iconMod.IconProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements/dist/icons/Icon.IconObject & react-native-vector-icons.react-native-vector-icons/Icon.IconButtonProps & {  type :string | undefined,   Component :{  contextType :react.react.Context<any> | undefined} & new <P = {}, S = {}, SS = any>(props : std.Readonly</ * import warning: RewrittenClass.unapply cls was tparam P * / any>): react.react.Component<'icon', S, SS> | undefined,   reverse :boolean | undefined,   raised :boolean | undefined,   containerStyle :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   iconProps :react-native-vector-icons.react-native-vector-icons/Icon.IconProps | undefined,   reverseColor :string | undefined,   disabled :boolean | undefined,   disabledStyle :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   solid :boolean | undefined,   brand :boolean | undefined} */
+/* Inlined react-native-elements.react-native-elements/dist/icons/Icon.IconObject & react-native-vector-icons.react-native-vector-icons/Icon.IconButtonProps & {  type :string | undefined,   Component :{  contextType :react.react.Context<any> | undefined} & new <P = {}, S = {}, SS = any>(props : std.Readonly</ * import warning: RewrittenClass.unapply cls was tparam P * / any>): react.react.Component<'icon', S, SS> | undefined,   reverse :boolean | undefined,   raised :boolean | undefined,   containerStyle :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   iconProps :react-native-elements.react-native-elements/dist/icons/Icon.IconProps | undefined,   reverseColor :string | undefined,   disabled :boolean | undefined,   disabledStyle :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   solid :boolean | undefined,   brand :boolean | undefined} */
 trait IconObjectIconButtonProps extends StObject {
   
   var Component: js.UndefOr[

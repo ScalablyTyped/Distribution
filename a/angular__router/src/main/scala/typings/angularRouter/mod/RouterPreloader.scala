@@ -5,6 +5,7 @@ import typings.angularCore.mod.EnvironmentInjector
 import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectableDeclaration
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +34,7 @@ open class RouterPreloader protected ()
   /* CompleteClass */
   override def ngOnDestroy(): Unit = js.native
   
-  def preload(): Any = js.native
+  def preload(): Observable_[Any] = js.native
   
   /* private */ var preloadConfig: Any = js.native
   

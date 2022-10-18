@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object `262Mod` {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/262", JSImport.Namespace)
+  @JSImport("@formatjs/ecma402-abstract/262", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -66,7 +66,7 @@ object `262Mod` {
   
   inline def ToNumber(`val`: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ToNumber")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def ToObject[T](arg: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ToObject")(arg.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def ToObject[T](arg: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends null ? never : T extends undefined ? never : T */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ToObject")(arg.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends null ? never : T extends undefined ? never : T */ js.Any]
   
   inline def ToString(o: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(o.asInstanceOf[js.Any]).asInstanceOf[String]
   

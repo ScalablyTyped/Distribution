@@ -1,14 +1,14 @@
 package typings.reactToastify
 
-import typings.reactToastify.constantMod.Default
-import typings.reactToastify.constantMod.Direction
-import typings.reactToastify.constantMod.KeyOfPosition
-import typings.reactToastify.constantMod.KeyOfType
-import typings.reactToastify.typesMod.DraggableDirection
-import typings.reactToastify.typesMod.Theme
-import typings.reactToastify.typesMod.ToastItemStatus
-import typings.reactToastify.typesMod.ToastPosition
-import typings.reactToastify.typesMod.TypeOptions
+import typings.reactToastify.distTypesMod.DraggableDirection
+import typings.reactToastify.distTypesMod.Theme
+import typings.reactToastify.distTypesMod.ToastItemStatus
+import typings.reactToastify.distTypesMod.ToastPosition
+import typings.reactToastify.distTypesMod.TypeOptions
+import typings.reactToastify.distUtilsConstantMod.Default
+import typings.reactToastify.distUtilsConstantMod.Direction
+import typings.reactToastify.distUtilsConstantMod.KeyOfPosition
+import typings.reactToastify.distUtilsConstantMod.KeyOfType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,10 +50,6 @@ object reactToastifyStrings {
     extends StObject
        with KeyOfType
   inline def INFO: INFO = "INFO".asInstanceOf[INFO]
-  
-  @js.native
-  sealed trait Nullable extends StObject
-  inline def Nullable: Nullable = "Nullable".asInstanceOf[Nullable]
   
   @js.native
   sealed trait SUCCESS

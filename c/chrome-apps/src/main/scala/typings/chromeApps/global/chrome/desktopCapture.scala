@@ -10,7 +10,6 @@ import typings.chromeApps.chromeAppsStrings.audio_
 import typings.chromeApps.chromeAppsStrings.screen_
 import typings.chromeApps.chromeAppsStrings.tab_
 import typings.chromeApps.chromeAppsStrings.window_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,10 +76,7 @@ object desktopCapture {
       ToStringLiteral[
         AUDIO, 
         /* keyof chrome-apps.anon.AUDIO */ SCREEN | WINDOW | TAB | typings.chromeApps.chromeAppsStrings.AUDIO, 
-        Exclude[
-          /* keyof chrome-apps.anon.AUDIO */ SCREEN | WINDOW | TAB | typings.chromeApps.chromeAppsStrings.AUDIO, 
-          screen_ | window_ | tab_ | audio_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  SCREEN :'screen',   WINDOW :'window',   TAB :'tab',   AUDIO :'audio'} extends keyof {  SCREEN :'screen',   WINDOW :'window',   TAB :'tab',   AUDIO :'audio'} ? std.Exclude<keyof {  SCREEN :'screen',   WINDOW :'window',   TAB :'tab',   AUDIO :'audio'}, 'screen' | 'window' | 'tab' | 'audio'> : never */ js.Any
       ]
     ],
     callback: js.Function1[/* streamId */ String, Unit]

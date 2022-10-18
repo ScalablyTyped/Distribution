@@ -2,6 +2,7 @@ package typings.rsocketFlowable
 
 import typings.rsocketFlowable.flowableMod.Source
 import typings.rsocketFlowable.flowableMod.default
+import typings.rsocketTypes.reactiveStreamTypesMod.IPublisher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,11 +37,8 @@ object mod {
   @js.native
   open class FlowableProcessor[T, R] protected ()
     extends typings.rsocketFlowable.flowableProcessorMod.default[T, R] {
-    def this(source: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPublisher<T> */ Any) = this()
-    def this(
-      source: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPublisher<T> */ Any,
-      fn: js.Function1[/* a */ T, R]
-    ) = this()
+    def this(source: IPublisher[T]) = this()
+    def this(source: IPublisher[T], fn: js.Function1[/* a */ T, R]) = this()
   }
   
   @JSImport("rsocket-flowable", "Single")

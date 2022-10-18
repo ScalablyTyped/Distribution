@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.inplaceMod.InplaceProps
+import typings.primereact.inplaceInplaceMod.InplaceProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Inplace")
 @js.native
 open class Inplace protected ()
-  extends typings.primereact.inplaceMod.Inplace {
+  extends typings.primereact.inplaceInplaceMod.Inplace {
   def this(props: InplaceProps) = this()
   /**
     * @deprecated

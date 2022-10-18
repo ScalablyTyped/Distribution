@@ -18,7 +18,7 @@ object mod {
   @JSImport("abortable-iterator", "AbortError")
   @js.native
   open class AbortError ()
-    extends typings.abortableIterator.abortErrorMod.AbortError {
+    extends typings.abortableIterator.distSrcAbortErrorMod.AbortError {
     def this(message: String) = this()
     def this(message: String, code: String) = this()
     def this(message: Unit, code: String) = this()

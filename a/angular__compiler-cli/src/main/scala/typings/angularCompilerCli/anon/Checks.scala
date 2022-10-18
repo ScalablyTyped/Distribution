@@ -1,7 +1,6 @@
 package typings.angularCompilerCli.anon
 
-import org.scalablytyped.runtime.TopLevel
-import typings.angularCompilerCli.publicOptionsMod.DiagnosticCategoryLabel
+import typings.angularCompilerCli.srcNgtscCoreApiSrcPublicOptionsMod.DiagnosticCategoryLabel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +13,7 @@ trait Checks extends StObject {
     * extended template diagnostics system.
     */
   var checks: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ Name in @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/diagnostics/src/extended_template_diagnostic_name.ExtendedTemplateDiagnosticName ]:? @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/core/api/src/public_options.DiagnosticCategoryLabel}
-    */ typings.angularCompilerCli.angularCompilerCliStrings.Checks & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ Name in @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/diagnostics/src/extended_template_diagnostic_name.ExtendedTemplateDiagnosticName ]:? @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/core/api/src/public_options.DiagnosticCategoryLabel} */ js.Any
   ] = js.undefined
   
   /**
@@ -35,9 +32,7 @@ object Checks {
   extension [Self <: Checks](x: Self) {
     
     inline def setChecks(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Name in @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/diagnostics/src/extended_template_diagnostic_name.ExtendedTemplateDiagnosticName ]:? @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/core/api/src/public_options.DiagnosticCategoryLabel}
-      */ typings.angularCompilerCli.angularCompilerCliStrings.Checks & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ Name in @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/diagnostics/src/extended_template_diagnostic_name.ExtendedTemplateDiagnosticName ]:? @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/core/api/src/public_options.DiagnosticCategoryLabel} */ js.Any
     ): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
     
     inline def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)

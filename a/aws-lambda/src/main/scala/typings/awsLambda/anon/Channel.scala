@@ -1,10 +1,10 @@
 package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsLambda.connectContactFlowMod.ConnectContactFlowChannel
-import typings.awsLambda.connectContactFlowMod.ConnectContactFlowEndpoint
-import typings.awsLambda.connectContactFlowMod.ConnectContactFlowInitiationMethod
-import typings.awsLambda.connectContactFlowMod.ConnectContactFlowQueue
+import typings.awsLambda.triggerConnectContactFlowMod.ConnectContactFlowChannel
+import typings.awsLambda.triggerConnectContactFlowMod.ConnectContactFlowEndpoint
+import typings.awsLambda.triggerConnectContactFlowMod.ConnectContactFlowInitiationMethod
+import typings.awsLambda.triggerConnectContactFlowMod.ConnectContactFlowQueue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

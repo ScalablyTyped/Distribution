@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postmark", "Models.CreateDomainRequest")
 @js.native
 open class CreateDomainRequest protected ()
-  extends typings.postmark.modelsMod.CreateDomainRequest {
+  extends typings.postmark.distClientModelsMod.CreateDomainRequest {
   def this(Name: String) = this()
   def this(Name: String, ReturnPathDomain: String) = this()
 }

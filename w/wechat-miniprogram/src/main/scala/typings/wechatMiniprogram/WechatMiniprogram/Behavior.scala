@@ -3,7 +3,6 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
 import typings.wechatMiniprogram.WechatMiniprogram.Component.RelationOption
-import typings.wechatMiniprogram.anon.PartialILifetime
 import typings.wechatMiniprogram.anon.PartialPageLifetimes
 import typings.wechatMiniprogram.anon.Partialcreatedvoidattache
 import typings.wechatMiniprogram.wechatMiniprogramBooleans.`false`
@@ -57,7 +56,10 @@ object Behavior {
     
     var lifetimes: js.UndefOr[Partialcreatedvoidattache] = js.undefined
     
-    var methods: js.UndefOr[TMethod & (js.Object | PartialILifetime)] = js.undefined
+    var methods: js.UndefOr[
+        TMethod & (/* import warning: importer.ImportType#apply Failed type conversion: false extends true ? / * Inlined std.Partial<wechat-miniprogram.WechatMiniprogram.Page.ILifetime> * /
+    {  onHide :(): void | std.Promise<void> | undefined,   onPullDownRefresh :(): void | std.Promise<void> | undefined,   onShareTimeline :(): wechat-miniprogram.WechatMiniprogram.Page.ICustomTimelineContent | void | undefined,   onReady :(): void | std.Promise<void> | undefined,   onShareAppMessage :(options : wechat-miniprogram.WechatMiniprogram.Page.IShareAppMessageOption): wechat-miniprogram.WechatMiniprogram.Page.ICustomShareContent | void | undefined,   onLoad :(query : std.Record<string, string | undefined>): void | std.Promise<void> | undefined,   onReachBottom :(): void | std.Promise<void> | undefined,   onUnload :(): void | std.Promise<void> | undefined,   onShow :(): void | std.Promise<void> | undefined,   onPageScroll :(options : wechat-miniprogram.WechatMiniprogram.Page.IPageScrollOption): void | std.Promise<void> | undefined,   onTabItemTap :(options : wechat-miniprogram.WechatMiniprogram.Page.ITabItemTapOption): void | std.Promise<void> | undefined,   onResize :(options : wechat-miniprogram.WechatMiniprogram.Page.IResizeOption): void | std.Promise<void> | undefined,   onAddToFavorites :(options : wechat-miniprogram.WechatMiniprogram.Page.IAddToFavoritesOption): wechat-miniprogram.WechatMiniprogram.Page.IAddToFavoritesContent | undefined} : {} */ js.Any)
+      ] = js.undefined
     
     var moved: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -124,7 +126,10 @@ object Behavior {
       
       inline def setLifetimesUndefined: Self = StObject.set(x, "lifetimes", js.undefined)
       
-      inline def setMethods(value: TMethod & (js.Object | PartialILifetime)): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(
+        value: TMethod & (/* import warning: importer.ImportType#apply Failed type conversion: false extends true ? / * Inlined std.Partial<wechat-miniprogram.WechatMiniprogram.Page.ILifetime> * /
+      {  onHide :(): void | std.Promise<void> | undefined,   onPullDownRefresh :(): void | std.Promise<void> | undefined,   onShareTimeline :(): wechat-miniprogram.WechatMiniprogram.Page.ICustomTimelineContent | void | undefined,   onReady :(): void | std.Promise<void> | undefined,   onShareAppMessage :(options : wechat-miniprogram.WechatMiniprogram.Page.IShareAppMessageOption): wechat-miniprogram.WechatMiniprogram.Page.ICustomShareContent | void | undefined,   onLoad :(query : std.Record<string, string | undefined>): void | std.Promise<void> | undefined,   onReachBottom :(): void | std.Promise<void> | undefined,   onUnload :(): void | std.Promise<void> | undefined,   onShow :(): void | std.Promise<void> | undefined,   onPageScroll :(options : wechat-miniprogram.WechatMiniprogram.Page.IPageScrollOption): void | std.Promise<void> | undefined,   onTabItemTap :(options : wechat-miniprogram.WechatMiniprogram.Page.ITabItemTapOption): void | std.Promise<void> | undefined,   onResize :(options : wechat-miniprogram.WechatMiniprogram.Page.IResizeOption): void | std.Promise<void> | undefined,   onAddToFavorites :(options : wechat-miniprogram.WechatMiniprogram.Page.IAddToFavoritesOption): wechat-miniprogram.WechatMiniprogram.Page.IAddToFavoritesContent | undefined} : {} */ js.Any)
+      ): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
@@ -243,7 +248,10 @@ object Behavior {
     
     var lifetimes: js.UndefOr[Partialcreatedvoidattache] = js.undefined
     
-    var methods: js.UndefOr[IAnyObject & (js.Object | PartialILifetime)] = js.undefined
+    var methods: js.UndefOr[
+        IAnyObject & (/* import warning: importer.ImportType#apply Failed type conversion: false extends true ? / * Inlined std.Partial<wechat-miniprogram.WechatMiniprogram.Page.ILifetime> * /
+    {  onHide :(): void | std.Promise<void> | undefined,   onPullDownRefresh :(): void | std.Promise<void> | undefined,   onShareTimeline :(): wechat-miniprogram.WechatMiniprogram.Page.ICustomTimelineContent | void | undefined,   onReady :(): void | std.Promise<void> | undefined,   onShareAppMessage :(options : wechat-miniprogram.WechatMiniprogram.Page.IShareAppMessageOption): wechat-miniprogram.WechatMiniprogram.Page.ICustomShareContent | void | undefined,   onLoad :(query : std.Record<string, string | undefined>): void | std.Promise<void> | undefined,   onReachBottom :(): void | std.Promise<void> | undefined,   onUnload :(): void | std.Promise<void> | undefined,   onShow :(): void | std.Promise<void> | undefined,   onPageScroll :(options : wechat-miniprogram.WechatMiniprogram.Page.IPageScrollOption): void | std.Promise<void> | undefined,   onTabItemTap :(options : wechat-miniprogram.WechatMiniprogram.Page.ITabItemTapOption): void | std.Promise<void> | undefined,   onResize :(options : wechat-miniprogram.WechatMiniprogram.Page.IResizeOption): void | std.Promise<void> | undefined,   onAddToFavorites :(options : wechat-miniprogram.WechatMiniprogram.Page.IAddToFavoritesOption): wechat-miniprogram.WechatMiniprogram.Page.IAddToFavoritesContent | undefined} : {} */ js.Any)
+      ] = js.undefined
     
     var moved: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -310,7 +318,10 @@ object Behavior {
       
       inline def setLifetimesUndefined: Self = StObject.set(x, "lifetimes", js.undefined)
       
-      inline def setMethods(value: IAnyObject & (js.Object | PartialILifetime)): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(
+        value: IAnyObject & (/* import warning: importer.ImportType#apply Failed type conversion: false extends true ? / * Inlined std.Partial<wechat-miniprogram.WechatMiniprogram.Page.ILifetime> * /
+      {  onHide :(): void | std.Promise<void> | undefined,   onPullDownRefresh :(): void | std.Promise<void> | undefined,   onShareTimeline :(): wechat-miniprogram.WechatMiniprogram.Page.ICustomTimelineContent | void | undefined,   onReady :(): void | std.Promise<void> | undefined,   onShareAppMessage :(options : wechat-miniprogram.WechatMiniprogram.Page.IShareAppMessageOption): wechat-miniprogram.WechatMiniprogram.Page.ICustomShareContent | void | undefined,   onLoad :(query : std.Record<string, string | undefined>): void | std.Promise<void> | undefined,   onReachBottom :(): void | std.Promise<void> | undefined,   onUnload :(): void | std.Promise<void> | undefined,   onShow :(): void | std.Promise<void> | undefined,   onPageScroll :(options : wechat-miniprogram.WechatMiniprogram.Page.IPageScrollOption): void | std.Promise<void> | undefined,   onTabItemTap :(options : wechat-miniprogram.WechatMiniprogram.Page.ITabItemTapOption): void | std.Promise<void> | undefined,   onResize :(options : wechat-miniprogram.WechatMiniprogram.Page.IResizeOption): void | std.Promise<void> | undefined,   onAddToFavorites :(options : wechat-miniprogram.WechatMiniprogram.Page.IAddToFavoritesOption): wechat-miniprogram.WechatMiniprogram.Page.IAddToFavoritesContent | undefined} : {} */ js.Any)
+      ): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       

@@ -1,6 +1,6 @@
 package typings.typedoc.mod
 
-import typings.typedoc.modelsTypesMod.SomeType
+import typings.typedoc.distLibModelsTypesMod.SomeType
 import typings.typedoc.typedocStrings.Plussign
 import typings.typedoc.typedocStrings.`-_`
 import org.scalablytyped.runtime.StObject
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "MappedType")
 @js.native
 open class MappedType protected ()
-  extends typings.typedoc.modelsMod.MappedType {
+  extends typings.typedoc.distLibModelsMod.MappedType {
   def this(parameter: String, parameterType: SomeType, templateType: SomeType) = this()
   def this(
     parameter: String,

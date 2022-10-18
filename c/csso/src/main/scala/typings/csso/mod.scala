@@ -13,6 +13,9 @@ import typings.cssTree.mod.Property_
 import typings.cssTree.mod.WalkOptions
 import typings.csso.anon.Ast
 import typings.csso.anon.Classes
+import typings.csso.anon.Typeofident
+import typings.csso.anon.Typeofstring
+import typings.csso.anon.Typeofurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +32,7 @@ object mod {
   inline def minifyBlock(source: String): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("minifyBlock")(source.asInstanceOf[js.Any]).asInstanceOf[Result]
   inline def minifyBlock(source: String, options: MinifyOptions & CompressOptions): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("minifyBlock")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
-  /* Inlined {readonly findAll (ast : css-tree.css-tree.CssNode, fn : css-tree.css-tree.FindFn): std.Array<css-tree.css-tree.CssNode>, readonly clone (node : css-tree.css-tree.CssNode): css-tree.css-tree.CssNode, readonly walk (ast : css-tree.css-tree.CssNode, options : css-tree.css-tree.EnterOrLeaveFn<css-tree.css-tree.CssNode>): void, readonly walk (ast : css-tree.css-tree.CssNode, options : css-tree.css-tree.WalkOptions): void, readonly find (ast : css-tree.css-tree.CssNode, fn : css-tree.css-tree.FindFn): css-tree.css-tree.CssNode, readonly findLast (ast : css-tree.css-tree.CssNode, fn : css-tree.css-tree.FindFn): css-tree.css-tree.CssNode,   List :new <TData>(): css-tree.css-tree.List<TData>, readonly keyword (value : string): css-tree.css-tree.Keyword, readonly generate (ast : css-tree.css-tree.CssNode): string, readonly generate (ast : css-tree.css-tree.CssNode, options : css-tree.css-tree.GenerateOptions): string,  readonly definitionSyntax :css-tree.css-tree.DefinitionSyntax, readonly property (value : string): css-tree.css-tree.Property, readonly fromPlainObject (node : css-tree.css-tree.CssNodePlain): css-tree.css-tree.CssNode, readonly toPlainObject (node : css-tree.css-tree.CssNode): css-tree.css-tree.CssNodePlain, readonly parse (text : string): css-tree.css-tree.CssNode, readonly parse (text : string, options : css-tree.css-tree.ParseOptions): css-tree.css-tree.CssNode} & {compress (ast : css-tree.css-tree.CssNode, options : csso.csso.CompressOptions | undefined): {  ast :css-tree.css-tree.CssNode}} */
+  /* Inlined {readonly findAll (ast : css-tree.css-tree.CssNode, fn : css-tree.css-tree.FindFn): std.Array<css-tree.css-tree.CssNode>,  readonly url :{readonly decode (input : string): string, readonly encode (input : string): string},  readonly ident :{readonly decode (input : string): string, readonly encode (input : string): string}, readonly clone (node : css-tree.css-tree.CssNode): css-tree.css-tree.CssNode, readonly walk (ast : css-tree.css-tree.CssNode, options : css-tree.css-tree.EnterOrLeaveFn<css-tree.css-tree.CssNode>): void, readonly walk (ast : css-tree.css-tree.CssNode, options : css-tree.css-tree.WalkOptions): void,  readonly string :{readonly encode (input : string): string, readonly encode (input : string, apostrophe : boolean): string, readonly decode (input : string): string}, readonly find (ast : css-tree.css-tree.CssNode, fn : css-tree.css-tree.FindFn): css-tree.css-tree.CssNode, readonly findLast (ast : css-tree.css-tree.CssNode, fn : css-tree.css-tree.FindFn): css-tree.css-tree.CssNode,   List :new <TData>(): css-tree.css-tree.List<TData>, readonly keyword (value : string): css-tree.css-tree.Keyword, readonly generate (ast : css-tree.css-tree.CssNode): string, readonly generate (ast : css-tree.css-tree.CssNode, options : css-tree.css-tree.GenerateOptions): string,  readonly definitionSyntax :css-tree.css-tree.DefinitionSyntax, readonly property (value : string): css-tree.css-tree.Property, readonly fromPlainObject (node : css-tree.css-tree.CssNodePlain): css-tree.css-tree.CssNode, readonly toPlainObject (node : css-tree.css-tree.CssNode): css-tree.css-tree.CssNodePlain, readonly parse (text : string): css-tree.css-tree.CssNode, readonly parse (text : string, options : css-tree.css-tree.ParseOptions): css-tree.css-tree.CssNode} & {compress (ast : css-tree.css-tree.CssNode, options : csso.csso.CompressOptions | undefined): {  ast :css-tree.css-tree.CssNode}} */
   object syntax {
     
     @JSImport("csso", "syntax")
@@ -69,6 +72,10 @@ object mod {
     inline def generate(ast: CssNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def generate(ast: CssNode, options: GenerateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
+    @JSImport("csso", "syntax.ident")
+    @js.native
+    val ident: Typeofident = js.native
+    
     inline def keyword(value: String): Keyword_ = ^.asInstanceOf[js.Dynamic].applyDynamic("keyword")(value.asInstanceOf[js.Any]).asInstanceOf[Keyword_]
     
     inline def parse(text: String): CssNode = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[CssNode]
@@ -76,7 +83,15 @@ object mod {
     
     inline def property(value: String): Property_ = ^.asInstanceOf[js.Dynamic].applyDynamic("property")(value.asInstanceOf[js.Any]).asInstanceOf[Property_]
     
+    @JSImport("csso", "syntax.string")
+    @js.native
+    val string: Typeofstring = js.native
+    
     inline def toPlainObject(node: CssNode): CssNodePlain = ^.asInstanceOf[js.Dynamic].applyDynamic("toPlainObject")(node.asInstanceOf[js.Any]).asInstanceOf[CssNodePlain]
+    
+    @JSImport("csso", "syntax.url")
+    @js.native
+    val url: Typeofurl = js.native
     
     inline def walk(ast: CssNode, options: EnterOrLeaveFn[CssNode]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def walk(ast: CssNode, options: WalkOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]

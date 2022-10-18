@@ -1,8 +1,8 @@
 package typings.markerAnimateUnobtrusive
 
 import typings.googleMaps.google.maps.LatLng
-import typings.googleMaps.google.maps.Marker
 import typings.googleMaps.google.maps.MarkerOptions
+import typings.googleMaps.google.maps.Marker_
 import typings.markerAnimateUnobtrusive.jQuery.easing.IEasingType
 import typings.markerAnimateUnobtrusive.markerAnimateUnobtrusiveStrings.linear
 import org.scalablytyped.runtime.StObject
@@ -15,7 +15,7 @@ trait SlidingMarkerOptions
   
   var animateFunctionAdapter: js.UndefOr[
     js.Function4[
-      /* marker */ Marker, 
+      /* marker */ Marker_, 
       /* destPoint */ LatLng, 
       /* easing */ linear | IEasingType, 
       /* duration */ Double, 
@@ -37,7 +37,7 @@ object SlidingMarkerOptions {
   extension [Self <: SlidingMarkerOptions](x: Self) {
     
     inline def setAnimateFunctionAdapter(
-      value: (/* marker */ Marker, /* destPoint */ LatLng, /* easing */ linear | IEasingType, /* duration */ Double) => Unit
+      value: (/* marker */ Marker_, /* destPoint */ LatLng, /* easing */ linear | IEasingType, /* duration */ Double) => Unit
     ): Self = StObject.set(x, "animateFunctionAdapter", js.Any.fromFunction4(value))
     
     inline def setAnimateFunctionAdapterUndefined: Self = StObject.set(x, "animateFunctionAdapter", js.undefined)

@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebviewView extends StObject {
   
   /**
+    * The badge to display for this webview view.
+    * To remove the badge, set to undefined.
+    */
+  var badge: js.UndefOr[ViewBadge] = js.native
+  
+  /**
     * Human-readable string which is rendered less prominently in the title.
     */
   var description: js.UndefOr[String] = js.native

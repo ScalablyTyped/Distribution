@@ -1,12 +1,12 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.anon.Style
+import typings.materialUiCore.anon.Ref
+import typings.materialUiCore.internalSwitchBaseMod.SwitchBaseProps
 import typings.materialUiCore.materialUiCoreStrings.default
 import typings.materialUiCore.materialUiCoreStrings.medium
 import typings.materialUiCore.materialUiCoreStrings.primary
 import typings.materialUiCore.materialUiCoreStrings.secondary
 import typings.materialUiCore.materialUiCoreStrings.small
-import typings.materialUiCore.switchBaseMod.SwitchBaseProps
 import typings.materialUiStyles.withStylesWithStylesMod.StyledComponentProps
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -62,7 +62,7 @@ object switchSwitchMod {
   - Dropped @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseProps extends any ? std.Pick<@material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseProps, std.Exclude<keyof @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseProps, 'classes' | 'checkedIcon' | 'color' | 'icon'>> : never */ trait SwitchProps
     extends StObject
        with StyledComponentProps[SwitchClassKey]
-       with Style[SwitchBaseProps] {
+       with Ref[SwitchBaseProps] {
     
     /**
       * The icon to display when the component is checked.

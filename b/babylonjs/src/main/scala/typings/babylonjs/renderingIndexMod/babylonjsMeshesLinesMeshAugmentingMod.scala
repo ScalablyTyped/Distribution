@@ -1,6 +1,6 @@
 package typings.babylonjs.renderingIndexMod
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,10 +19,10 @@ object babylonjsMeshesLinesMeshAugmentingMod {
       * @returns the current InstancedLinesMesh
       * @see https://www.babylonjs-playground.com/#19O9TU#0
       */
-    def enableEdgesRendering(): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
-    def enableEdgesRendering(epsilon: Double): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
-    def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
-    def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.edgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
+    def enableEdgesRendering(): typings.babylonjs.renderingEdgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
+    def enableEdgesRendering(epsilon: Double): typings.babylonjs.renderingEdgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
+    def enableEdgesRendering(epsilon: Double, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.renderingEdgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
+    def enableEdgesRendering(epsilon: Unit, checkVerticesInsteadOfIndices: Boolean): typings.babylonjs.renderingEdgesRendererMod.babylonjsMeshesLinesMeshAugmentingMod.InstancedLinesMesh = js.native
   }
   
   @js.native

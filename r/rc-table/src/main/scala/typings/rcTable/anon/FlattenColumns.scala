@@ -1,14 +1,14 @@
 package typings.rcTable.anon
 
-import typings.rcTable.interfaceMod.ColumnType
-import typings.rcTable.interfaceMod.StickyOffsets
+import typings.rcTable.libInterfaceMod.ColumnType
+import typings.rcTable.libInterfaceMod.StickyOffsets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FlattenColumns extends StObject {
   
-  var flattenColumns: js.UndefOr[typings.rcTable.summaryContextMod.FlattenColumns[Any]] = js.undefined
+  var flattenColumns: js.UndefOr[typings.rcTable.libFooterSummaryContextMod.FlattenColumns[Any]] = js.undefined
   
   var scrollColumnIndex: js.UndefOr[Double] = js.undefined
   
@@ -23,7 +23,7 @@ object FlattenColumns {
   
   extension [Self <: FlattenColumns](x: Self) {
     
-    inline def setFlattenColumns(value: typings.rcTable.summaryContextMod.FlattenColumns[Any]): Self = StObject.set(x, "flattenColumns", value.asInstanceOf[js.Any])
+    inline def setFlattenColumns(value: typings.rcTable.libFooterSummaryContextMod.FlattenColumns[Any]): Self = StObject.set(x, "flattenColumns", value.asInstanceOf[js.Any])
     
     inline def setFlattenColumnsUndefined: Self = StObject.set(x, "flattenColumns", js.undefined)
     

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.CalloutProps
-import typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
+import typings.officeUiFabricReact.libComponentsTeachingBubbleTeachingBubbleDottypesMod.ITeachingBubbleProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object libTeachingBubbleMod {
   @JSImport("office-ui-fabric-react/lib/TeachingBubble", "TeachingBubbleBase")
   @js.native
   open class TeachingBubbleBase protected ()
-    extends typings.officeUiFabricReact.teachingBubbleMod.TeachingBubbleBase {
+    extends typings.officeUiFabricReact.libComponentsTeachingBubbleMod.TeachingBubbleBase {
     def this(props: ITeachingBubbleProps) = this()
   }
   /* static members */
@@ -39,7 +39,7 @@ object libTeachingBubbleMod {
   @JSImport("office-ui-fabric-react/lib/TeachingBubble", "TeachingBubbleContentBase")
   @js.native
   open class TeachingBubbleContentBase protected ()
-    extends typings.officeUiFabricReact.teachingBubbleMod.TeachingBubbleContentBase {
+    extends typings.officeUiFabricReact.libComponentsTeachingBubbleMod.TeachingBubbleContentBase {
     def this(props: ITeachingBubbleProps) = this()
   }
 }

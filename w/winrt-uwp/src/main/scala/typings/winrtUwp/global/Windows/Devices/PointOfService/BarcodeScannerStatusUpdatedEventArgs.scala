@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an operation status change. */
-@JSGlobal("Windows.Devices.PointOfService.BarcodeScannerStatusUpdatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.BarcodeScannerStatusUpdatedEventArgs")
 @js.native
-abstract class BarcodeScannerStatusUpdatedEventArgs ()
+open class BarcodeScannerStatusUpdatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.BarcodeScannerStatusUpdatedEventArgs {
   

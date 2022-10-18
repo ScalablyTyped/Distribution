@@ -1,10 +1,10 @@
 package typings.parseley
 
-import typings.parseley.astMod.CompoundSelector
-import typings.parseley.astMod.ListSelector
-import typings.parseley.astMod.Selector
-import typings.parseley.astMod.SimpleSelector
-import typings.parseley.astMod.Specificity
+import typings.parseley.libAstMod.CompoundSelector
+import typings.parseley.libAstMod.ListSelector
+import typings.parseley.libAstMod.Selector
+import typings.parseley.libAstMod.SimpleSelector
+import typings.parseley.libAstMod.Specificity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

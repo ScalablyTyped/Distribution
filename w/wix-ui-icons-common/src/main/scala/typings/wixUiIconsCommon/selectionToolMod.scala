@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsSelectionToolMod.SelectionToolProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectionToolMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/SelectionTool", JSImport.Default)
+  @JSImport("wix-ui-icons-common/SelectionTool", JSImport.Default)
   @js.native
   val default: FC[SelectionToolProps] = js.native
-  
-  trait SelectionToolProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object SelectionToolProps {
-    
-    inline def apply(): SelectionToolProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SelectionToolProps]
-    }
-    
-    extension [Self <: SelectionToolProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[SelectionToolProps]
   

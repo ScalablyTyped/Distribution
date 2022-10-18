@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Particle")
 @js.native
 open class Particle ()
-  extends typings.blackEngine.particleMod.Particle
+  extends typings.blackEngine.particlesParticleMod.Particle

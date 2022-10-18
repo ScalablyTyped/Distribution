@@ -1,10 +1,10 @@
 package typings.terminalKit
 
 import typings.terminalKit.anon.Attr
-import typings.terminalKit.anon.AttrChar
 import typings.terminalKit.anon.Char
 import typings.terminalKit.anon.Dst
 import typings.terminalKit.anon.Shrink
+import typings.terminalKit.anon.TransparencyChar
 import typings.terminalKit.anon.X
 import typings.terminalKit.screenBufferHDMod.IsBlending
 import typings.terminalKit.terminalKitStrings.down
@@ -36,7 +36,7 @@ object screenBufferMod {
   inline def create(options: Options): ScreenBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[ScreenBuffer]
   
   /* static member */
-  inline def createFromString(options: Attr, str: String): ScreenBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromString")(options.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[ScreenBuffer]
+  inline def createFromString(options: TransparencyChar, str: String): ScreenBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromString")(options.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[ScreenBuffer]
   
   /* static member */
   inline def loadImage(
@@ -367,10 +367,10 @@ object screenBufferMod {
     def dumpChars(): String = js.native
     
     def fill(): Unit = js.native
-    def fill(options: Char): Unit = js.native
+    def fill(options: Attr): Unit = js.native
     
-    def get(): AttrChar = js.native
-    def get(options: X): AttrChar = js.native
+    def get(): Char = js.native
+    def get(options: X): Char = js.native
     
     val height: Double = js.native
     

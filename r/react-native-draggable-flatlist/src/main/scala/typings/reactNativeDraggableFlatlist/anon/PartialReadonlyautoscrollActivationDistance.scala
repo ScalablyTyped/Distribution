@@ -1,6 +1,6 @@
 package typings.reactNativeDraggableFlatlist.anon
 
-import typings.reactNativeGestureHandler.gestureHandlerCommonMod.HitSlop
+import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HitSlop
 import typings.reactNativeReanimated.mod.WithSpringConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -2,9 +2,9 @@ package typings.storybookReadme
 
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.storybookAddons.typesMod.DecoratorFunction
-import typings.storybookAddons.typesMod.StoryFn
-import typings.storybookReact.typesMod.StoryFnReactReturnType
+import typings.storybookAddons.distTs3Dot9TypesMod.DecoratorFunction
+import typings.storybookAddons.distTs3Dot9TypesMod.StoryFn
+import typings.storybookReact.distTs3Dot9ClientPreviewTypesMod.StoryFnReactReturnType
 import typings.storybookReadme.anon.Children
 import typings.storybookReadme.anon.ChildrenElement
 import org.scalablytyped.runtime.StObject
@@ -126,7 +126,7 @@ object mod {
   @js.native
   trait MakeDecoratorResult extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
   }
   
   type Readme = String | js.Array[String]

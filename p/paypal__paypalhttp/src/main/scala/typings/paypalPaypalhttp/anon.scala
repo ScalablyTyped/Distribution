@@ -1,7 +1,7 @@
 package typings.paypalPaypalhttp
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.paypalPaypalhttp.multipartMod.Multipart
+import typings.paypalPaypalhttp.libPaypalhttpSerializerMultipartMod.Multipart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

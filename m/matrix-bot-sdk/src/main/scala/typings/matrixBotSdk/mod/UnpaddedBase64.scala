@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "UnpaddedBase64")
 @js.native
 /* private */ open class UnpaddedBase64 ()
-  extends typings.matrixBotSdk.unpaddedBase64Mod.UnpaddedBase64
+  extends typings.matrixBotSdk.libHelpersUnpaddedBase64Mod.UnpaddedBase64
 /* static members */
 object UnpaddedBase64 {
   

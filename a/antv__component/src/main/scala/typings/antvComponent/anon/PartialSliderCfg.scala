@@ -1,8 +1,8 @@
 package typings.antvComponent.anon
 
-import typings.antvComponent.sliderSliderMod.HandlerStyle
-import typings.antvComponent.sliderSliderMod.TrendCfg
-import typings.antvGBase.interfacesMod.IGroup
+import typings.antvComponent.libSliderSliderMod.HandlerStyle
+import typings.antvComponent.libSliderSliderMod.TrendCfg
+import typings.antvGBase.libInterfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait PartialSliderCfg extends StObject {
   
   var animate: js.UndefOr[Boolean] = js.undefined
   
-  var animateOption: js.UndefOr[typings.antvComponent.typesMod.AnimateOption] = js.undefined
+  var animateOption: js.UndefOr[typings.antvComponent.libTypesMod.AnimateOption] = js.undefined
   
   var backgroundStyle: js.UndefOr[Any] = js.undefined
   
@@ -79,7 +79,7 @@ object PartialSliderCfg {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    inline def setAnimateOption(value: typings.antvComponent.typesMod.AnimateOption): Self = StObject.set(x, "animateOption", value.asInstanceOf[js.Any])
+    inline def setAnimateOption(value: typings.antvComponent.libTypesMod.AnimateOption): Self = StObject.set(x, "animateOption", value.asInstanceOf[js.Any])
     
     inline def setAnimateOptionUndefined: Self = StObject.set(x, "animateOption", js.undefined)
     

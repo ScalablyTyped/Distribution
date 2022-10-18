@@ -48,27 +48,27 @@ object global {
     /**
       * The ApplePayPaymentAuthorizedEvent class defines the attributes contained by the ApplePaySession.onpaymentauthorized callback function.
       */
-    @JSGlobal("ApplePayJS.ApplePayPaymentAuthorizedEvent")
+    /* note: abstract class */ @JSGlobal("ApplePayJS.ApplePayPaymentAuthorizedEvent")
     @js.native
-    abstract class ApplePayPaymentAuthorizedEvent ()
+    open class ApplePayPaymentAuthorizedEvent ()
       extends StObject
          with typings.applepayjs.ApplePayJS.ApplePayPaymentAuthorizedEvent
     
     /**
       * The ApplePayPaymentMethodSelectedEvent class defines the attributes contained by the ApplePaySession.onpaymentmethodselected callback function.
       */
-    @JSGlobal("ApplePayJS.ApplePayPaymentMethodSelectedEvent")
+    /* note: abstract class */ @JSGlobal("ApplePayJS.ApplePayPaymentMethodSelectedEvent")
     @js.native
-    abstract class ApplePayPaymentMethodSelectedEvent ()
+    open class ApplePayPaymentMethodSelectedEvent ()
       extends StObject
          with typings.applepayjs.ApplePayJS.ApplePayPaymentMethodSelectedEvent
     
     /**
       * Encapsulates the attributes contained by the onshippingcontactselected callback function.
       */
-    @JSGlobal("ApplePayJS.ApplePayShippingContactSelectedEvent")
+    /* note: abstract class */ @JSGlobal("ApplePayJS.ApplePayShippingContactSelectedEvent")
     @js.native
-    abstract class ApplePayShippingContactSelectedEvent ()
+    open class ApplePayShippingContactSelectedEvent ()
       extends StObject
          with typings.applepayjs.ApplePayJS.ApplePayShippingContactSelectedEvent
     
@@ -91,24 +91,24 @@ object global {
     /**
       * The ApplePayShippingMethodSelectedEvent class defines the attribute contained by the ApplePaySession.onshippingmethodselected callback function.
       */
-    @JSGlobal("ApplePayJS.ApplePayShippingMethodSelectedEvent")
+    /* note: abstract class */ @JSGlobal("ApplePayJS.ApplePayShippingMethodSelectedEvent")
     @js.native
-    abstract class ApplePayShippingMethodSelectedEvent ()
+    open class ApplePayShippingMethodSelectedEvent ()
       extends StObject
          with typings.applepayjs.ApplePayJS.ApplePayShippingMethodSelectedEvent
     
     /**
       * The attributes contained by the onvalidatemerchant callback function.
       */
-    @JSGlobal("ApplePayJS.ApplePayValidateMerchantEvent")
+    /* note: abstract class */ @JSGlobal("ApplePayJS.ApplePayValidateMerchantEvent")
     @js.native
-    abstract class ApplePayValidateMerchantEvent ()
+    open class ApplePayValidateMerchantEvent ()
       extends StObject
          with typings.applepayjs.ApplePayJS.ApplePayValidateMerchantEvent
     
-    @JSGlobal("ApplePayJS.Event")
+    /* note: abstract class */ @JSGlobal("ApplePayJS.Event")
     @js.native
-    abstract class Event ()
+    open class Event ()
       extends StObject
          with typings.applepayjs.ApplePayJS.Event
     object Event {

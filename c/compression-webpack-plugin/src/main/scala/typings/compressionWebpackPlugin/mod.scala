@@ -136,7 +136,7 @@ object mod {
     /* options */ CompressionOptions[T], 
     /* callback */ js.Function2[
       /* error */ js.UndefOr[js.Error | Null], 
-      /* result */ String | js.typedarray.ArrayBuffer | SharedArrayBuffer | js.typedarray.Uint8Array | js.Array[Double] | `0` | `1` | `2` | ToPrimitive, 
+      /* result */ String | js.typedarray.ArrayBuffer | SharedArrayBuffer | js.typedarray.Uint8Array | js.Array[Double] | ValueOf | `0` | `1` | ToPrimitive, 
       Unit
     ], 
     Any
@@ -338,29 +338,29 @@ object mod {
   
   type CustomOptions = StringDictionary[Any]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.compressionWebpackPlugin.anon.CompressionOptions[T]
-    - typings.compressionWebpackPlugin.anon.Algorithm[T]
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends compression-webpack-plugin.compression-webpack-plugin.ZlibOptions ? {  algorithm :string | compression-webpack-plugin.compression-webpack-plugin.AlgorithmFunction<T> | undefined,   compressionOptions :compression-webpack-plugin.compression-webpack-plugin.CompressionOptions<T> | undefined} : {  algorithm :string | compression-webpack-plugin.compression-webpack-plugin.AlgorithmFunction<T>,   compressionOptions :compression-webpack-plugin.compression-webpack-plugin.CompressionOptions<T> | undefined}
+    }}}
+    */
+  @js.native
   trait DefinedDefaultAlgorithmAndOptions[T] extends StObject
-  object DefinedDefaultAlgorithmAndOptions {
-    
-    inline def Algorithm[T](): typings.compressionWebpackPlugin.anon.Algorithm[T] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.compressionWebpackPlugin.anon.Algorithm[T]]
-    }
-    
-    inline def CompressionOptions[T](algorithm: String | AlgorithmFunction[T]): typings.compressionWebpackPlugin.anon.CompressionOptions[T] = {
-      val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.compressionWebpackPlugin.anon.CompressionOptions[T]]
-    }
-  }
   
   type DeleteOriginalAssets = Boolean | `keep-source-map`
   
   type Filename = String | (js.Function1[/* fileData */ PathData, String])
   
-  type InferDefaultType[T] = CustomOptions
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends infer U ? U : compression-webpack-plugin.compression-webpack-plugin.CustomOptions
+    }}}
+    */
+  @js.native
+  trait InferDefaultType[T] extends StObject
   
   trait InternalPluginOptions[T]
     extends StObject
@@ -403,7 +403,7 @@ object mod {
       inline def setAlgorithmFunction3(
         value: (/* input */ Buffer, /* options */ CompressionOptions[T], /* callback */ js.Function2[
               /* error */ js.UndefOr[js.Error | Null], 
-              /* result */ String | js.typedarray.ArrayBuffer | SharedArrayBuffer | js.typedarray.Uint8Array | js.Array[Double] | `0` | `1` | `2` | ToPrimitive, 
+              /* result */ String | js.typedarray.ArrayBuffer | SharedArrayBuffer | js.typedarray.Uint8Array | js.Array[Double] | ValueOf | `0` | `1` | ToPrimitive, 
               Unit
             ]) => Any
       ): Self = StObject.set(x, "algorithm", js.Any.fromFunction3(value))
@@ -428,7 +428,7 @@ object mod {
   
   type Rules = js.Array[Rule] | Rule
   
-  type Schema = typings.schemaUtils.validateMod.Schema
+  type Schema = typings.schemaUtils.declarationsValidateMod.Schema
   
   type Source = typings.webpack.mod.Source
   
@@ -436,7 +436,7 @@ object mod {
   
   type WebpackPluginInstance = typings.webpack.mod.WebpackPluginInstance
   
-  type WithImplicitCoercion[T] = T | ValueOf[T]
+  type WithImplicitCoercion[T] = T | `2`[T]
   
   type ZlibOptions = typings.node.zlibMod.ZlibOptions
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-router" : "6.4.1"
+      "react-router" : "6.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-router" : "6.4.1"
+      "react-router" : "6.4.2"
     }
   ],
   "compile-devDependencies" : [

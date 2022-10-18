@@ -1,6 +1,6 @@
 package typings.baseui
 
-import typings.baseui.anon.`3`
+import typings.baseui.anon.`0`
 import typings.baseui.anon.onClickClickHandlerselect
 import typings.baseui.baseuiStrings.change_
 import typings.baseui.baseuiStrings.checkbox
@@ -16,7 +16,7 @@ import typings.baseui.baseuiStrings.round_
 import typings.baseui.baseuiStrings.secondary
 import typings.baseui.baseuiStrings.square
 import typings.baseui.baseuiStrings.tertiary
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
@@ -181,7 +181,7 @@ object buttonGroupTypesMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var initialState: js.UndefOr[`3`] = js.undefined
+    var initialState: js.UndefOr[`0`] = js.undefined
     
     var kind: js.UndefOr[primary | secondary | tertiary] = js.undefined
     
@@ -222,7 +222,7 @@ object buttonGroupTypesMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setInitialState(value: `3`): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: `0`): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
       inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
@@ -267,7 +267,7 @@ object buttonGroupTypesMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var initialState: js.UndefOr[`3`] = js.undefined
+    var initialState: js.UndefOr[`0`] = js.undefined
     
     var kind: js.UndefOr[primary | secondary | tertiary] = js.undefined
     
@@ -306,7 +306,7 @@ object buttonGroupTypesMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setInitialState(value: `3`): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: `0`): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
       inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       

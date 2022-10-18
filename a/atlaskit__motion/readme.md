@@ -1,7 +1,7 @@
 
 # Scala.js typings for atlaskit__motion
 
-Typings are for version 1.2.2
+Typings are for version 1.2.3
 
 ## Library description:
 Atlassian motion variables, components and more.

@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides properties associated with the button wheel of a mouse device. */
-@JSGlobal("Windows.UI.Input.MouseWheelParameters")
+/* note: abstract class */ @JSGlobal("Windows.UI.Input.MouseWheelParameters")
 @js.native
-abstract class MouseWheelParameters ()
+open class MouseWheelParameters ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.MouseWheelParameters {
   

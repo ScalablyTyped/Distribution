@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200ContentHeaders` extends StObject {
   
-  /** Response */
+  /** The permissions the installation has are included under the `permissions` key. */
   var `200`: ContentHeaders
 }
 object `200ContentHeaders` {

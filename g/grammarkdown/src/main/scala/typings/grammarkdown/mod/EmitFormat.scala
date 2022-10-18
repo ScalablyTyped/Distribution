@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object EmitFormat extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.grammarkdown.optionsMod.EmitFormat & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.grammarkdown.distOptionsMod.EmitFormat & Double] = js.native
   
-  /* 2 */ val ecmarkup: typings.grammarkdown.optionsMod.EmitFormat.ecmarkup & Double = js.native
+  /* 2 */ val ecmarkup: typings.grammarkdown.distOptionsMod.EmitFormat.ecmarkup & Double = js.native
   
-  /* 1 */ val html: typings.grammarkdown.optionsMod.EmitFormat.html & Double = js.native
+  /* 1 */ val html: typings.grammarkdown.distOptionsMod.EmitFormat.html & Double = js.native
   
-  /* 0 */ val markdown: typings.grammarkdown.optionsMod.EmitFormat.markdown & Double = js.native
+  /* 0 */ val markdown: typings.grammarkdown.distOptionsMod.EmitFormat.markdown & Double = js.native
 }

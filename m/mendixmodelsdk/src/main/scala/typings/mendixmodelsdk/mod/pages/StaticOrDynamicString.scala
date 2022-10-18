@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.StaticOrDynamicString")
 @js.native
 open class StaticOrDynamicString protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.StaticOrDynamicString {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.StaticOrDynamicString {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object StaticOrDynamicString {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.StaticOrDynamicString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.StaticOrDynamicString]
   
   /**
     * Creates and returns a new StaticOrDynamicString instance in the SDK and on the server.
@@ -47,7 +47,7 @@ object StaticOrDynamicString {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  inline def createInLinkButtonUnderAddress(container: typings.mendixmodelsdk.pagesMod.pages.LinkButton): typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLinkButtonUnderAddress")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString]
+  inline def createInLinkButtonUnderAddress(container: typings.mendixmodelsdk.srcGenPagesMod.pages.LinkButton): typings.mendixmodelsdk.srcGenPagesMod.pages.StaticOrDynamicString = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLinkButtonUnderAddress")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.StaticOrDynamicString]
   
   /**
     * Creates and returns a new StaticOrDynamicString instance in the SDK and on the server.
@@ -58,7 +58,7 @@ object StaticOrDynamicString {
     *  7.3.0 and higher
     */
   /* static member */
-  inline def createInOpenLinkClientActionUnderAddress(container: typings.mendixmodelsdk.pagesMod.pages.OpenLinkClientAction): typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOpenLinkClientActionUnderAddress")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString]
+  inline def createInOpenLinkClientActionUnderAddress(container: typings.mendixmodelsdk.srcGenPagesMod.pages.OpenLinkClientAction): typings.mendixmodelsdk.srcGenPagesMod.pages.StaticOrDynamicString = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOpenLinkClientActionUnderAddress")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.StaticOrDynamicString]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.StaticOrDynamicString.structureTypeName")

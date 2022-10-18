@@ -25,6 +25,8 @@ trait PartialRecordLanguagesstr extends StObject {
   
   var ru: js.UndefOr[String | js.Array[String]] = js.undefined
   
+  var uk: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var `zh-cn`: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object PartialRecordLanguagesstr {
@@ -89,6 +91,12 @@ object PartialRecordLanguagesstr {
     inline def setRuUndefined: Self = StObject.set(x, "ru", js.undefined)
     
     inline def setRuVarargs(value: String*): Self = StObject.set(x, "ru", js.Array(value*))
+    
+    inline def setUk(value: String | js.Array[String]): Self = StObject.set(x, "uk", value.asInstanceOf[js.Any])
+    
+    inline def setUkUndefined: Self = StObject.set(x, "uk", js.undefined)
+    
+    inline def setUkVarargs(value: String*): Self = StObject.set(x, "uk", js.Array(value*))
     
     inline def `setZh-cn`(value: String | js.Array[String]): Self = StObject.set(x, "zh-cn", value.asInstanceOf[js.Any])
     

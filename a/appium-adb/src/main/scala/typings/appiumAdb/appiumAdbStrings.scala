@@ -1,12 +1,12 @@
 package typings.appiumAdb
 
-import typings.appiumAdb.adbEmuCommandsMod.GSM_CALL_ACTIONS
-import typings.appiumAdb.adbEmuCommandsMod.GSM_VOICE_STATES
-import typings.appiumAdb.adbEmuCommandsMod.NETWORK_SPEED
-import typings.appiumAdb.adbEmuCommandsMod.POWER_AC_STATES
-import typings.appiumAdb.adbEmuCommandsMod.SENSORS
-import typings.appiumAdb.apkUtilsMod.APP_INSTALL_STATE
-import typings.appiumAdb.systemCallsMod.BinaryName
+import typings.appiumAdb.libToolsAdbEmuCommandsMod.GSM_CALL_ACTIONS
+import typings.appiumAdb.libToolsAdbEmuCommandsMod.GSM_VOICE_STATES
+import typings.appiumAdb.libToolsAdbEmuCommandsMod.NETWORK_SPEED
+import typings.appiumAdb.libToolsAdbEmuCommandsMod.POWER_AC_STATES
+import typings.appiumAdb.libToolsAdbEmuCommandsMod.SENSORS
+import typings.appiumAdb.libToolsApkUtilsMod.APP_INSTALL_STATE
+import typings.appiumAdb.libToolsSystemCallsMod.BinaryName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

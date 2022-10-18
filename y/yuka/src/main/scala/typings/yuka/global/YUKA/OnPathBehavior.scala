@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class OnPathBehavior ()
   extends typings.yuka.mod.OnPathBehavior {
-  def this(path: typings.yuka.pathMod.Path) = this()
+  def this(path: typings.yuka.srcSteeringPathMod.Path) = this()
   def this(path: Unit, radius: Double) = this()
-  def this(path: typings.yuka.pathMod.Path, radius: Double) = this()
+  def this(path: typings.yuka.srcSteeringPathMod.Path, radius: Double) = this()
   def this(path: Unit, radius: Double, predictionFactor: Double) = this()
   def this(path: Unit, radius: Unit, predictionFactor: Double) = this()
-  def this(path: typings.yuka.pathMod.Path, radius: Double, predictionFactor: Double) = this()
-  def this(path: typings.yuka.pathMod.Path, radius: Unit, predictionFactor: Double) = this()
+  def this(path: typings.yuka.srcSteeringPathMod.Path, radius: Double, predictionFactor: Double) = this()
+  def this(path: typings.yuka.srcSteeringPathMod.Path, radius: Unit, predictionFactor: Double) = this()
 }

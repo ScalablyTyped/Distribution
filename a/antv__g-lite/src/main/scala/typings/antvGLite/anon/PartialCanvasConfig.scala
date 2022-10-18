@@ -1,6 +1,6 @@
 package typings.antvGLite.anon
 
-import typings.antvGLite.abstractRendererMod.IRenderer
+import typings.antvGLite.distAbstractRendererMod.IRenderer
 import typings.antvGLite.distTypesMod.CanvasLike
 import typings.antvGLite.distTypesMod.ColorType
 import typings.antvGLite.distTypesMod.Cursor

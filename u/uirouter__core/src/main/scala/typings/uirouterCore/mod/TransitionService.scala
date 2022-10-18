@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@uirouter/core", "TransitionService")
 @js.native
 open class TransitionService protected ()
-  extends typings.uirouterCore.transitionMod.TransitionService {
+  extends typings.uirouterCore.libTransitionMod.TransitionService {
   /** @internal */
-  def this(_router: typings.uirouterCore.routerMod.UIRouter) = this()
+  def this(_router: typings.uirouterCore.libRouterMod.UIRouter) = this()
 }

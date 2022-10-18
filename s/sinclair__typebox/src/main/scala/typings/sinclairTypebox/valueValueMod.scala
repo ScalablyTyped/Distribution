@@ -1,9 +1,9 @@
 package typings.sinclairTypebox
 
-import typings.sinclairTypebox.deltaMod.Edit
 import typings.sinclairTypebox.errorsErrorsMod.ValueError
 import typings.sinclairTypebox.mod.Static
 import typings.sinclairTypebox.mod.TSchema
+import typings.sinclairTypebox.valueDeltaMod.Edit
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

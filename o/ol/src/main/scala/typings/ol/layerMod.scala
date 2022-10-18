@@ -1,7 +1,7 @@
 package typings.ol
 
-import typings.ol.graticuleMod.Options
-import typings.ol.graticuleMod.default
+import typings.ol.layerGraticuleMod.Options
+import typings.ol.layerGraticuleMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,22 +17,22 @@ object layerMod {
   @JSImport("ol/layer", "Group")
   @js.native
   open class Group ()
-    extends typings.ol.groupMod.default {
-    def this(opt_options: typings.ol.groupMod.Options) = this()
+    extends typings.ol.layerGroupMod.default {
+    def this(opt_options: typings.ol.layerGroupMod.Options) = this()
   }
   
   @JSImport("ol/layer", "Heatmap")
   @js.native
   open class Heatmap ()
-    extends typings.ol.heatmapMod.default {
-    def this(opt_options: typings.ol.heatmapMod.Options) = this()
+    extends typings.ol.layerHeatmapMod.default {
+    def this(opt_options: typings.ol.layerHeatmapMod.Options) = this()
   }
   
   @JSImport("ol/layer", "Image")
   @js.native
   open class Image ()
-    extends typings.ol.imageMod.default {
-    def this(opt_options: typings.ol.baseImageMod.Options) = this()
+    extends typings.ol.layerImageMod.default {
+    def this(opt_options: typings.ol.layerBaseImageMod.Options) = this()
   }
   
   @JSImport("ol/layer", "Layer")
@@ -45,42 +45,42 @@ object layerMod {
   @JSImport("ol/layer", "MapboxVector")
   @js.native
   open class MapboxVector protected ()
-    extends typings.ol.mapboxVectorMod.default {
-    def this(options: typings.ol.mapboxVectorMod.Options) = this()
+    extends typings.ol.layerMapboxVectorMod.default {
+    def this(options: typings.ol.layerMapboxVectorMod.Options) = this()
   }
   
   @JSImport("ol/layer", "Tile")
   @js.native
   open class Tile ()
-    extends typings.ol.tileMod.default {
-    def this(opt_options: typings.ol.baseTileMod.Options) = this()
+    extends typings.ol.layerTileMod.default {
+    def this(opt_options: typings.ol.layerBaseTileMod.Options) = this()
   }
   
   @JSImport("ol/layer", "Vector")
   @js.native
   open class Vector ()
-    extends typings.ol.vectorMod.default {
-    def this(opt_options: typings.ol.baseVectorMod.Options) = this()
+    extends typings.ol.layerVectorMod.default {
+    def this(opt_options: typings.ol.layerBaseVectorMod.Options) = this()
   }
   
   @JSImport("ol/layer", "VectorImage")
   @js.native
   open class VectorImage ()
-    extends typings.ol.vectorImageMod.default {
-    def this(opt_options: typings.ol.vectorImageMod.Options) = this()
+    extends typings.ol.layerVectorImageMod.default {
+    def this(opt_options: typings.ol.layerVectorImageMod.Options) = this()
   }
   
   @JSImport("ol/layer", "VectorTile")
   @js.native
   open class VectorTile ()
-    extends typings.ol.vectorTileMod.default {
-    def this(opt_options: typings.ol.vectorTileMod.Options) = this()
+    extends typings.ol.layerVectorTileMod.default {
+    def this(opt_options: typings.ol.layerVectorTileMod.Options) = this()
   }
   
   @JSImport("ol/layer", "WebGLPoints")
   @js.native
   open class WebGLPoints protected ()
-    extends typings.ol.webGLPointsMod.default {
-    def this(options: typings.ol.webGLPointsMod.Options) = this()
+    extends typings.ol.layerWebGLPointsMod.default {
+    def this(options: typings.ol.layerWebGLPointsMod.Options) = this()
   }
 }

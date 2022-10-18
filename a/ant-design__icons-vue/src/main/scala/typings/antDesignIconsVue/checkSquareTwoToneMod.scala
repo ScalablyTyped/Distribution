@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCheckSquareTwoToneMod.CheckSquareTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkSquareTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CheckSquareTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CheckSquareTwoTone", JSImport.Default)
   @js.native
   val default: CheckSquareTwoToneIconType = js.native
-  
-  @js.native
-  trait CheckSquareTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CheckSquareTwoToneIconType: String = js.native
-  }
   
   type _To = CheckSquareTwoToneIconType
   

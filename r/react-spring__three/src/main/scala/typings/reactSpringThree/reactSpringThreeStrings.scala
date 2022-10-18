@@ -1,23 +1,11 @@
 package typings.reactSpringThree
 
-import typings.reactSpringThree.primitivesMod.Primitives_
+import typings.reactSpringThree.distDeclarationsSrcPrimitivesMod.Primitives_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactSpringThreeStrings {
-  
-  @js.native
-  sealed trait AnimatedProps extends StObject
-  inline def AnimatedProps: AnimatedProps = "AnimatedProps".asInstanceOf[AnimatedProps]
-  
-  @js.native
-  sealed trait AnimatedStyle extends StObject
-  inline def AnimatedStyle: AnimatedStyle = "AnimatedStyle".asInstanceOf[AnimatedStyle]
-  
-  @js.native
-  sealed trait AnimatedStyles extends StObject
-  inline def AnimatedStyles: AnimatedStyles = "AnimatedStyles".asInstanceOf[AnimatedStyles]
   
   @js.native
   sealed trait a

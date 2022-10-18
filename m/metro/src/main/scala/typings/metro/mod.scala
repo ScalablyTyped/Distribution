@@ -2,14 +2,16 @@ package typings.metro
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.metro.anon.Errorcodestringundefined
-import typings.metro.serverMod.DefaultBundleOptions
-import typings.metro.serverMod.DefaultGraphOptions
+import typings.metro.assetMod.AssetData
+import typings.metro.sharedTypesMod.BundleOptions
+import typings.metro.srcServerMod.DefaultBundleOptions
+import typings.metro.srcServerMod.DefaultGraphOptions
+import typings.metro.srcServerMod.ServerOptions
 import typings.metroConfig.configTypesMod.ConfigT
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.RequestListener
-import typings.node.httpMod.ServerOptions
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,6 +23,31 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("metro", JSImport.Default)
+  @js.native
+  open class default protected ()
+    extends typings.metro.serverMod.default {
+    def this(config: ConfigT) = this()
+    def this(config: ConfigT, options: ServerOptions) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("metro", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("metro", "default.DEFAULT_BUNDLE_OPTIONS")
+    @js.native
+    def DEFAULT_BUNDLE_OPTIONS: DefaultBundleOptions = js.native
+    inline def DEFAULT_BUNDLE_OPTIONS_=(x: DefaultBundleOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_BUNDLE_OPTIONS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("metro", "default.DEFAULT_GRAPH_OPTIONS")
+    @js.native
+    def DEFAULT_GRAPH_OPTIONS: DefaultGraphOptions = js.native
+    inline def DEFAULT_GRAPH_OPTIONS_=(x: DefaultGraphOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_GRAPH_OPTIONS")(x.asInstanceOf[js.Any])
+  }
+  
   /**
     * @since v0.1.17
     */
@@ -31,9 +58,12 @@ object mod {
     ServerResponse[IncomingMessage]
   ] */] ()
     extends typings.node.httpMod.Server[Request, Response] {
-    def this(options: ServerOptions[Request, Response]) = this()
+    def this(options: typings.node.httpMod.ServerOptions[Request, Response]) = this()
     def this(requestListener: RequestListener[Request, Response]) = this()
-    def this(options: ServerOptions[Request, Response], requestListener: RequestListener[Request, Response]) = this()
+    def this(
+      options: typings.node.httpMod.ServerOptions[Request, Response],
+      requestListener: RequestListener[Request, Response]
+    ) = this()
   }
   
   /**
@@ -42,9 +72,9 @@ object mod {
     */
   @JSImport("metro", "HttpsServer")
   @js.native
-  open class HttpsServer[Request /* <: Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage] */, Response /* <: Instantiable1[
+  open class HttpsServer[Request /* <: Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage] */, Response /* <: Instantiable1[
     /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-    typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+    typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
   ] */] ()
     extends typings.node.httpsMod.Server[Request, Response] {
     def this(options: typings.node.httpsMod.ServerOptions[Request, Response]) = this()
@@ -58,9 +88,16 @@ object mod {
   @JSImport("metro", "Server")
   @js.native
   open class Server protected ()
-    extends typings.metro.metroMod.Server {
+    extends StObject
+       with typings.metro.srcServerMod.Server {
     def this(config: ConfigT) = this()
-    def this(config: ConfigT, options: typings.metro.serverMod.ServerOptions) = this()
+    def this(config: ConfigT, options: ServerOptions) = this()
+    
+    /* CompleteClass */
+    override def end(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getAssets(options: BundleOptions): js.Promise[js.Array[AssetData]] = js.native
   }
   /* static members */
   object Server {
@@ -88,10 +125,10 @@ object mod {
         ServerResponse[IncomingMessage]
       ]
     ]) | (typings.node.httpsMod.Server[
-      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
       Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ]
     ])
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("runServer")(config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
@@ -102,10 +139,10 @@ object mod {
         ServerResponse[IncomingMessage]
       ]
     ]) | (typings.node.httpsMod.Server[
-      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
       Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ]
     ])
   ]]
@@ -127,10 +164,10 @@ object mod {
               ServerResponse[IncomingMessage]
             ]
           ]) | (typings.node.httpsMod.Server[
-            Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+            Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
             Instantiable1[
               /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-              typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+              typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
             ]
           ]), 
           Unit
@@ -179,10 +216,10 @@ object mod {
                 ServerResponse[IncomingMessage]
               ]
             ]) | (typings.node.httpsMod.Server[
-              Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+              Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
               Instantiable1[
                 /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-                typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+                typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
               ]
             ]) => Unit
       ): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))

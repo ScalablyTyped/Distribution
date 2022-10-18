@@ -31,6 +31,8 @@ trait langinLanguagesstringsmar extends StObject {
   /** Which kind of device this is */
   var smartType: js.UndefOr[String | Null] = js.undefined
   
+  var uk: js.UndefOr[String] = js.undefined
+  
   var `zh-cn`: js.UndefOr[String] = js.undefined
 }
 object langinLanguagesstringsmar {
@@ -89,6 +91,10 @@ object langinLanguagesstringsmar {
     inline def setSmartTypeNull: Self = StObject.set(x, "smartType", null)
     
     inline def setSmartTypeUndefined: Self = StObject.set(x, "smartType", js.undefined)
+    
+    inline def setUk(value: String): Self = StObject.set(x, "uk", value.asInstanceOf[js.Any])
+    
+    inline def setUkUndefined: Self = StObject.set(x, "uk", js.undefined)
     
     inline def `setZh-cn`(value: String): Self = StObject.set(x, "zh-cn", value.asInstanceOf[js.Any])
     

@@ -12,5 +12,5 @@ open class MinMaxReducer protected ()
     * Creates a min/max reducer
     * @param camera The camera to use for the post processes
     */
-  def this(camera: typings.babylonjs.cameraMod.Camera) = this()
+  def this(camera: typings.babylonjs.camerasCameraMod.Camera) = this()
 }

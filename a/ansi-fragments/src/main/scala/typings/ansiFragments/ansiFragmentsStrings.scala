@@ -1,8 +1,8 @@
 package typings.ansiFragments
 
-import typings.ansiFragments.colorMod.AnsiColor
-import typings.ansiFragments.fixedMod.Bias
-import typings.ansiFragments.modifierMod.AnsiModifier
+import typings.ansiFragments.buildFragmentsColorMod.AnsiColor
+import typings.ansiFragments.buildFragmentsFixedMod.Bias
+import typings.ansiFragments.buildFragmentsModifierMod.AnsiModifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

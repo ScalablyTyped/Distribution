@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Pickers {
   
   /** Represents a random-access collection of file name extensions. */
-  @JSGlobal("Windows.Storage.Pickers.FileExtensionVector")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Pickers.FileExtensionVector")
   @js.native
-  abstract class FileExtensionVector ()
+  open class FileExtensionVector ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Pickers.FileExtensionVector
   
@@ -46,9 +46,9 @@ object Pickers {
   }
   
   /** Represents a collection of display names mapped to the associated file types (extensions). Each element in this collection maps a display name to a corresponding collection of file name extensions. The key is a single string, the value is a list/vector of strings representing one or more extension choices. */
-  @JSGlobal("Windows.Storage.Pickers.FilePickerFileTypesOrderedMap")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Pickers.FilePickerFileTypesOrderedMap")
   @js.native
-  abstract class FilePickerFileTypesOrderedMap ()
+  open class FilePickerFileTypesOrderedMap ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Pickers.FilePickerFileTypesOrderedMap {
     
@@ -108,9 +108,9 @@ object Pickers {
   }
   
   /** Represents a collection of storage files that the user has selected by using a file picker. */
-  @JSGlobal("Windows.Storage.Pickers.FilePickerSelectedFilesArray")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Pickers.FilePickerSelectedFilesArray")
   @js.native
-  abstract class FilePickerSelectedFilesArray ()
+  open class FilePickerSelectedFilesArray ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Pickers.FilePickerSelectedFilesArray
   
@@ -277,16 +277,16 @@ object Pickers {
     }
     
     /** Used to interact with the file picker if your app provides files with the File Open Picker contract. */
-    @JSGlobal("Windows.Storage.Pickers.Provider.FileOpenPickerUI")
+    /* note: abstract class */ @JSGlobal("Windows.Storage.Pickers.Provider.FileOpenPickerUI")
     @js.native
-    abstract class FileOpenPickerUI ()
+    open class FileOpenPickerUI ()
       extends StObject
          with typings.winrtUwp.Windows.Storage.Pickers.Provider.FileOpenPickerUI
     
     /** Provides information about a fileremoved event. */
-    @JSGlobal("Windows.Storage.Pickers.Provider.FileRemovedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Storage.Pickers.Provider.FileRemovedEventArgs")
     @js.native
-    abstract class FileRemovedEventArgs ()
+    open class FileRemovedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Storage.Pickers.Provider.FileRemovedEventArgs {
       
@@ -296,9 +296,9 @@ object Pickers {
     }
     
     /** Used to interact with the file picker when your app provides a save location with the File Save Picker contract. */
-    @JSGlobal("Windows.Storage.Pickers.Provider.FileSavePickerUI")
+    /* note: abstract class */ @JSGlobal("Windows.Storage.Pickers.Provider.FileSavePickerUI")
     @js.native
-    abstract class FileSavePickerUI ()
+    open class FileSavePickerUI ()
       extends StObject
          with typings.winrtUwp.Windows.Storage.Pickers.Provider.FileSavePickerUI
     
@@ -316,9 +316,9 @@ object Pickers {
     }
     
     /** Use by an app that provides files to indicate asynchronously that the app is finished responding to a closing event. */
-    @JSGlobal("Windows.Storage.Pickers.Provider.PickerClosingDeferral")
+    /* note: abstract class */ @JSGlobal("Windows.Storage.Pickers.Provider.PickerClosingDeferral")
     @js.native
-    abstract class PickerClosingDeferral ()
+    open class PickerClosingDeferral ()
       extends StObject
          with typings.winrtUwp.Windows.Storage.Pickers.Provider.PickerClosingDeferral {
       
@@ -328,9 +328,9 @@ object Pickers {
     }
     
     /** Provides information about a closing event. */
-    @JSGlobal("Windows.Storage.Pickers.Provider.PickerClosingEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Storage.Pickers.Provider.PickerClosingEventArgs")
     @js.native
-    abstract class PickerClosingEventArgs ()
+    open class PickerClosingEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Storage.Pickers.Provider.PickerClosingEventArgs {
       
@@ -344,9 +344,9 @@ object Pickers {
     }
     
     /** Lets an app that provides files get the deadline for responding to a closing event and get a deferral so the app can respond to the event asynchronously. */
-    @JSGlobal("Windows.Storage.Pickers.Provider.PickerClosingOperation")
+    /* note: abstract class */ @JSGlobal("Windows.Storage.Pickers.Provider.PickerClosingOperation")
     @js.native
-    abstract class PickerClosingOperation ()
+    open class PickerClosingOperation ()
       extends StObject
          with typings.winrtUwp.Windows.Storage.Pickers.Provider.PickerClosingOperation {
       
@@ -378,9 +378,9 @@ object Pickers {
     }
     
     /** Lets an app that provides a save location specify the storageFile that represents the file to save and get a deferral so the app can respond asynchronously to a targetFileRequested event. */
-    @JSGlobal("Windows.Storage.Pickers.Provider.TargetFileRequest")
+    /* note: abstract class */ @JSGlobal("Windows.Storage.Pickers.Provider.TargetFileRequest")
     @js.native
-    abstract class TargetFileRequest ()
+    open class TargetFileRequest ()
       extends StObject
          with typings.winrtUwp.Windows.Storage.Pickers.Provider.TargetFileRequest {
       
@@ -397,9 +397,9 @@ object Pickers {
     }
     
     /** Used by an app that provides a save location to indicate asynchronously that the app is finished responding to a targetfilerequested event. */
-    @JSGlobal("Windows.Storage.Pickers.Provider.TargetFileRequestDeferral")
+    /* note: abstract class */ @JSGlobal("Windows.Storage.Pickers.Provider.TargetFileRequestDeferral")
     @js.native
-    abstract class TargetFileRequestDeferral ()
+    open class TargetFileRequestDeferral ()
       extends StObject
          with typings.winrtUwp.Windows.Storage.Pickers.Provider.TargetFileRequestDeferral {
       
@@ -409,9 +409,9 @@ object Pickers {
     }
     
     /** Provides information about a targetfilerequested event. */
-    @JSGlobal("Windows.Storage.Pickers.Provider.TargetFileRequestedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Storage.Pickers.Provider.TargetFileRequestedEventArgs")
     @js.native
-    abstract class TargetFileRequestedEventArgs ()
+    open class TargetFileRequestedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Storage.Pickers.Provider.TargetFileRequestedEventArgs {
       

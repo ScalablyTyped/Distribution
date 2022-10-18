@@ -1,6 +1,7 @@
 package typings.plotlyJs.anon
 
 import typings.plotlyJs.mod.MarkerSymbol
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ trait PartialBoxPlotMarkerColor extends StObject {
   
   var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var line: js.UndefOr[PartialcolorColorwidthnum] = js.undefined
+  var line: js.UndefOr[Partial[Outliercolor]] = js.undefined
   
   var opacity: js.UndefOr[Double] = js.undefined
   
@@ -35,7 +36,7 @@ object PartialBoxPlotMarkerColor {
     
     inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value*))
     
-    inline def setLine(value: PartialcolorColorwidthnum): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Partial[Outliercolor]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     

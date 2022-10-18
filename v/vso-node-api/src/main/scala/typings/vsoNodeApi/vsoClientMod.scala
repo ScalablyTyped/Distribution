@@ -2,7 +2,7 @@ package typings.vsoNodeApi
 
 import typings.std.Error
 import typings.typedRestClient.restClientMod.RestClient
-import typings.vsoNodeApi.vsoBaseInterfacesMod.ApiResourceLocation
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.ApiResourceLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

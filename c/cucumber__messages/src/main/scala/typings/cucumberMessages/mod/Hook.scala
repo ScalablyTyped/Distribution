@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@cucumber/messages", "Hook")
 @js.native
 open class Hook ()
-  extends typings.cucumberMessages.messagesMod.Hook
+  extends typings.cucumberMessages.distCjsSrcMessagesMod.Hook

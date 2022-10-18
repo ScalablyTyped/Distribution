@@ -8,6 +8,7 @@ import typings.reResizable.anon.NewHeight
 import typings.reResizable.anon.Width
 import typings.reResizable.anon.X
 import typings.reResizable.anon.Y
+import typings.reResizable.libResizerMod.Direction
 import typings.reResizable.mod.global.Window
 import typings.reResizable.reResizableStrings.column
 import typings.reResizable.reResizableStrings.height
@@ -15,7 +16,6 @@ import typings.reResizable.reResizableStrings.parent
 import typings.reResizable.reResizableStrings.row
 import typings.reResizable.reResizableStrings.width
 import typings.reResizable.reResizableStrings.window
-import typings.reResizable.resizerMod.Direction
 import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
 import typings.react.mod.NativeMouseEvent

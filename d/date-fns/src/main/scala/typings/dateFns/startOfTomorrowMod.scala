@@ -10,7 +10,7 @@ object startOfTomorrowMod {
     
     inline def apply(): js.Date = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Date]
     
-    @JSImport("date-fns/esm/startOfTomorrow", JSImport.Default)
+    @JSImport("date-fns/startOfTomorrow", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
   }

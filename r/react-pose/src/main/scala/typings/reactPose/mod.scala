@@ -3,9 +3,9 @@ package typings.reactPose
 import org.scalablytyped.runtime.Shortcut
 import typings.reactPose.anon.FlipMove
 import typings.reactPose.anon.PartialState
-import typings.reactPose.posedMod.Posed
-import typings.reactPose.transitionTypesMod.Props
-import typings.reactPose.transitionTypesMod.State
+import typings.reactPose.libComponentsTransitionTypesMod.Props
+import typings.reactPose.libComponentsTransitionTypesMod.State
+import typings.reactPose.libPosedMod.Posed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ object mod extends Shortcut {
   @JSImport("react-pose", "PoseGroup")
   @js.native
   open class PoseGroup ()
-    extends typings.reactPose.poseGroupMod.default
+    extends typings.reactPose.libComponentsTransitionPoseGroupMod.default
   /* static members */
   object PoseGroup {
     
@@ -36,7 +36,7 @@ object mod extends Shortcut {
   @JSImport("react-pose", "Transition")
   @js.native
   open class Transition ()
-    extends typings.reactPose.transitionMod.default
+    extends typings.reactPose.libComponentsTransitionMod.default
   object Transition {
     
     @JSImport("react-pose", "Transition")

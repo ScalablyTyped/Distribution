@@ -26,16 +26,16 @@ object Resources {
   object Core {
     
     /** Represents a single logical, named resource, such as a string resource named 'Header1'. */
-    @JSGlobal("Windows.ApplicationModel.Resources.Core.NamedResource")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Resources.Core.NamedResource")
     @js.native
-    abstract class NamedResource ()
+    open class NamedResource ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.NamedResource
     
     /** Represents a single possible value for a given NamedResource , the qualifiers associated with that resource, and how well those qualifiers match the context against which it was resolved. */
-    @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceCandidate")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceCandidate")
     @js.native
-    abstract class ResourceCandidate ()
+    open class ResourceCandidate ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceCandidate {
       
@@ -83,9 +83,9 @@ object Resources {
     }
     
     /** Represents a collection of ResourceCandidate objects. */
-    @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceCandidateVectorView")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceCandidateVectorView")
     @js.native
-    abstract class ResourceCandidateVectorView ()
+    open class ResourceCandidateVectorView ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceCandidateVectorView
     
@@ -152,16 +152,16 @@ object Resources {
     }
     
     /** Represents a collection of ResourceContext language qualifiers. */
-    @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceContextLanguagesVectorView")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceContextLanguagesVectorView")
     @js.native
-    abstract class ResourceContextLanguagesVectorView ()
+    open class ResourceContextLanguagesVectorView ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContextLanguagesVectorView
     
     /** Provides access to application resource maps and more advanced resource functionality. */
-    @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceManager")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceManager")
     @js.native
-    abstract class ResourceManager ()
+    open class ResourceManager ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceManager {
       
@@ -232,16 +232,16 @@ object Resources {
     }
     
     /** A collection of related resources, typically either for a particular app package, or a resource file for a particular package. */
-    @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMap")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMap")
     @js.native
-    abstract class ResourceMap ()
+    open class ResourceMap ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceMap
     
     /** Supports iteration over a ResourceMap . */
-    @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMapIterator")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMapIterator")
     @js.native
-    abstract class ResourceMapIterator ()
+    open class ResourceMapIterator ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceMapIterator {
       
@@ -268,9 +268,9 @@ object Resources {
     }
     
     /** An unchangeable view into a map of ResourceMap objects. */
-    @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMapMapView")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMapMapView")
     @js.native
-    abstract class ResourceMapMapView ()
+    open class ResourceMapMapView ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceMapMapView {
       
@@ -309,9 +309,9 @@ object Resources {
     }
     
     /** Supports iteration over a ResourceMapMapView object. */
-    @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMapMapViewIterator")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMapMapViewIterator")
     @js.native
-    abstract class ResourceMapMapViewIterator ()
+    open class ResourceMapMapViewIterator ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceMapMapViewIterator {
       
@@ -338,9 +338,9 @@ object Resources {
     }
     
     /** Defines the qualifiers associated with a ResourceCandidate . */
-    @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifier")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifier")
     @js.native
-    abstract class ResourceQualifier ()
+    open class ResourceQualifier ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceQualifier {
       
@@ -366,9 +366,9 @@ object Resources {
     }
     
     /** An unchangeable view into a map of ResourceQualifier objects. */
-    @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifierMapView")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifierMapView")
     @js.native
-    abstract class ResourceQualifierMapView ()
+    open class ResourceQualifierMapView ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceQualifierMapView {
       
@@ -407,9 +407,9 @@ object Resources {
     }
     
     /** Notifies listeners of dynamic changes to a map of ResourceQualifier objects, such as when items get added or removed, and allows qualifier values to change. */
-    @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifierObservableMap")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifierObservableMap")
     @js.native
-    abstract class ResourceQualifierObservableMap ()
+    open class ResourceQualifierObservableMap ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceQualifierObservableMap
     
@@ -429,9 +429,9 @@ object Resources {
     }
     
     /** An unchangeable view into a vector of ResourceQualifier objects. */
-    @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifierVectorView")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifierVectorView")
     @js.native
-    abstract class ResourceQualifierVectorView ()
+    open class ResourceQualifierVectorView ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceQualifierVectorView
   }

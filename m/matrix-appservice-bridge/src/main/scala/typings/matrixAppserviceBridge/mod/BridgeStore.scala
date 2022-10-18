@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "BridgeStore")
 @js.native
 open class BridgeStore protected ()
-  extends typings.matrixAppserviceBridge.bridgeStoreMod.BridgeStore {
+  extends typings.matrixAppserviceBridge.libComponentsBridgeStoreMod.BridgeStore {
   def this(db: typings.nedb.mod.^[Any]) = this()
 }

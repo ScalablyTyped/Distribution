@@ -6,8 +6,8 @@ import typings.react.mod.RefObject
 import typings.reactTestRenderer.mod.ReactTestRenderer
 import typings.reactTestRenderer.mod.TestRendererOptions
 import typings.std.HTMLElement
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricUtilities.customizationsMod.ICustomizations
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricUtilities.libCustomizationsCustomizationsMod.ICustomizations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object anon {
   trait AsyncPlaceholder extends StObject {
     
     var asyncPlaceholder: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.uifabricUtilities.uifabricUtilitiesStrings.symbol, typings.uifabricUtilities.uifabricUtilitiesStrings.`object`, typings.uifabricUtilities.uifabricUtilitiesStrings.text */ Any
       ] = js.undefined
   }
   object AsyncPlaceholder {
@@ -29,7 +29,9 @@ object anon {
     
     extension [Self <: AsyncPlaceholder](x: Self) {
       
-      inline def setAsyncPlaceholder(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "asyncPlaceholder", value.asInstanceOf[js.Any])
+      inline def setAsyncPlaceholder(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.uifabricUtilities.uifabricUtilitiesStrings.symbol, typings.uifabricUtilities.uifabricUtilitiesStrings.`object`, typings.uifabricUtilities.uifabricUtilitiesStrings.text */ Any
+      ): Self = StObject.set(x, "asyncPlaceholder", value.asInstanceOf[js.Any])
       
       inline def setAsyncPlaceholderUndefined: Self = StObject.set(x, "asyncPlaceholder", js.undefined)
     }

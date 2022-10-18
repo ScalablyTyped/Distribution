@@ -1,7 +1,9 @@
 package typings.handleCliError
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.chalkString.mod.Styles
 import typings.handleCliError.anon.OmitOptionsclasses
+import typings.handleCliError.handleCliErrorStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,13 +31,23 @@ object mod {
       * @example
       * ```js
       * handleCliError(error, {
-      *   InputError: { exitCode: 1, short: true },
-      *   DatabaseError: { exitCode: 2, short: true },
+      *   InputError: { exitCode: 1, stack: false },
+      *   DatabaseError: { exitCode: 2, stack: false },
       *   default: { exitCode: 3 },
       * })
       * ```
       */
     val classes: js.UndefOr[StringDictionary[OmitOptionsclasses]] = js.undefined
+    
+    /**
+      * Whether to colorize the error's message, stack trace and additional properties.
+      *
+      * Quoted strings in the error's message are printed in bold (for `"..."` and
+      * `'...'`) and in italic (for `` `...` ``).
+      *
+      * @default `true` in terminals, `false` otherwise
+      */
+    val colors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Process [exit code](https://en.wikipedia.org/wiki/Exit_status).
@@ -47,23 +59,46 @@ object mod {
     val exitCode: js.UndefOr[Double] = js.undefined
     
     /**
-      * When `true`, only the `error` message is logged, not its stack trace.
+      * Color/style of the error's icon and name. The available values are listed
+      * [here](https://github.com/ehmicky/chalk-string#available-styles).
+      * Several styles can be specified by using spaces.
+      * Can be disabled by passing an empty string.
       *
-      * This is useful when the error was caused by the user (as opposed to being
-      * an internal bug), in which cause the stack trace is not relevant to the
-      * user.
-      *
-      * @default false
+      * @default 'red bold'
       */
-    val short: js.UndefOr[Boolean] = js.undefined
+    val header: js.UndefOr[Styles | _empty] = js.undefined
     
     /**
-      * When `true`, the `error` is not logged. The process still exits with a
-      * specific exit code.
+      * Icon prepended to the error's name. The available values are listed
+      * [here](https://github.com/sindresorhus/figures/blob/main/readme.md#figures-1).
+      * Can be disabled by passing an empty string.
+      *
+      * @default 'cross'
+      */
+    val icon: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 230, starting with typings.handleCliError.handleCliErrorStrings.tick, typings.handleCliError.handleCliErrorStrings.info, typings.handleCliError.handleCliErrorStrings.warning */ Any
+      ] = js.undefined
+    
+    /**
+      * Whether to log the error's additional properties.
+      *
+      * @default true
+      */
+    val props: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Exits the process without logging anything on the console.
       *
       * @default false
       */
     val silent: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether to log the `error` stack trace.
+      *
+      * @default true
+      */
+    val stack: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The process exits gracefully: it waits for any ongoing tasks (callbacks,
@@ -91,17 +126,35 @@ object mod {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
+      inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      
       inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
       
       inline def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
       
-      inline def setShort(value: Boolean): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Styles | _empty): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      inline def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      
+      inline def setIcon(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 230, starting with typings.handleCliError.handleCliErrorStrings.tick, typings.handleCliError.handleCliErrorStrings.info, typings.handleCliError.handleCliErrorStrings.warning */ Any
+      ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setProps(value: Boolean): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
       inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      
+      inline def setStack(value: Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

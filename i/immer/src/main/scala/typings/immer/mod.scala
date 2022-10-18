@@ -1,14 +1,14 @@
 package typings.immer
 
 import typings.immer.anon.AutoFreeze
-import typings.immer.envMod.Nothing
-import typings.immer.typesExternalMod.Draft
-import typings.immer.typesExternalMod.IProduce
-import typings.immer.typesExternalMod.IProduceWithPatches
-import typings.immer.typesExternalMod.Immutable
-import typings.immer.typesExternalMod.Patch
-import typings.immer.typesExternalMod.PatchListener
-import typings.immer.typesInternalMod.Objectish
+import typings.immer.distTypesTypesExternalMod.Draft
+import typings.immer.distTypesTypesExternalMod.IProduce
+import typings.immer.distTypesTypesExternalMod.IProduceWithPatches
+import typings.immer.distTypesTypesExternalMod.Immutable
+import typings.immer.distTypesTypesExternalMod.Patch
+import typings.immer.distTypesTypesExternalMod.PatchListener
+import typings.immer.distTypesTypesInternalMod.Objectish
+import typings.immer.distUtilsEnvMod.Nothing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ object mod {
   @JSImport("immer", "Immer")
   @js.native
   open class Immer ()
-    extends typings.immer.internalMod.Immer {
+    extends typings.immer.distInternalMod.Immer {
     def this(config: AutoFreeze) = this()
   }
   
@@ -48,8 +48,8 @@ object mod {
   
   inline def enablePatches(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enablePatches")().asInstanceOf[Unit]
   
-  inline def finishDraft[D /* <: Any */](draft: D): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("finishDraft")(draft.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def finishDraft[D /* <: Any */](draft: D, patchListener: PatchListener): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("finishDraft")(draft.asInstanceOf[js.Any], patchListener.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def finishDraft[D /* <: Any */](draft: D): /* import warning: importer.ImportType#apply Failed type conversion: D extends immer.immer/dist/types/types-external.Draft<infer T> ? T : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("finishDraft")(draft.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: D extends immer.immer/dist/types/types-external.Draft<infer T> ? T : never */ js.Any]
+  inline def finishDraft[D /* <: Any */](draft: D, patchListener: PatchListener): /* import warning: importer.ImportType#apply Failed type conversion: D extends immer.immer/dist/types/types-external.Draft<infer T> ? T : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("finishDraft")(draft.asInstanceOf[js.Any], patchListener.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: D extends immer.immer/dist/types/types-external.Draft<infer T> ? T : never */ js.Any]
   
   inline def freeze[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("freeze")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def freeze[T](obj: T, deep: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("freeze")(obj.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[T]

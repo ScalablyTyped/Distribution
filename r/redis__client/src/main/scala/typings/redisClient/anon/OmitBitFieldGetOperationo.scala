@@ -1,6 +1,6 @@
 package typings.redisClient.anon
 
-import typings.redisClient.bitfieldMod.BitFieldEncoding
+import typings.redisClient.distLibCommandsBitfieldMod.BitFieldEncoding
 import typings.redisClient.redisClientStrings.GET
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

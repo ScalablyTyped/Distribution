@@ -1,7 +1,7 @@
 package typings.stylelint.anon
 
-import typings.postcss.nodeMod.default
-import typings.postcss.warningMod.WarningOptions
+import typings.postcss.libNodeMod.default
+import typings.postcss.libWarningMod.WarningOptions
 import typings.stylelint.stylelintStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -4,8 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.storybookTheming.mod.CreateStyledComponentBaseThemed[InnerProps, ExtraProps, StyledInstanceTheme]
-  - typings.storybookTheming.mod.CreateStyledComponentBaseThemeless[InnerProps, ExtraProps]
-*/
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * You'll have to cast your way around this structure, unfortunately. 
+  * TS definition: {{{
+  object extends StyledInstanceTheme ? @storybook/theming.@storybook/theming.CreateStyledComponentBaseThemeless<InnerProps, ExtraProps> : @storybook/theming.@storybook/theming.CreateStyledComponentBaseThemed<InnerProps, ExtraProps, StyledInstanceTheme>
+  }}}
+  */
+@js.native
 trait CreateStyledComponentBase[InnerProps, ExtraProps, StyledInstanceTheme /* <: js.Object */] extends StObject

@@ -1,7 +1,7 @@
 
 # Scala.js typings for skia-canvas
 
-Typings are for version 1.0.0
+Typings are for version 1.0.1
 
 ## Library description:
 A GPU-accelerated Canvas Graphics API for Node

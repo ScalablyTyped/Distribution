@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialTreemapOptions
-import typings.antvG2plot.treemapTypesMod.TreemapOptions
+import typings.antvG2plot.libPlotsTreemapTypesMod.TreemapOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Treemap")
 @js.native
 open class Treemap protected ()
-  extends typings.antvG2plot.treemapMod.Treemap {
+  extends typings.antvG2plot.libPlotsTreemapMod.Treemap {
   def this(container: String, options: TreemapOptions) = this()
   def this(container: HTMLElement, options: TreemapOptions) = this()
 }

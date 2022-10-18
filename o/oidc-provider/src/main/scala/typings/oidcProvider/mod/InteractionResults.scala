@@ -1,7 +1,7 @@
 package typings.oidcProvider.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oidcProvider.anon.Acr
+import typings.oidcProvider.anon.Amr
 import typings.oidcProvider.anon.GrantId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,7 @@ trait InteractionResults
   
   var consent: js.UndefOr[GrantId] = js.undefined
   
-  var login: js.UndefOr[Acr] = js.undefined
+  var login: js.UndefOr[Amr] = js.undefined
 }
 object InteractionResults {
   
@@ -28,7 +28,7 @@ object InteractionResults {
     
     inline def setConsentUndefined: Self = StObject.set(x, "consent", js.undefined)
     
-    inline def setLogin(value: Acr): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+    inline def setLogin(value: Amr): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
     inline def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
   }

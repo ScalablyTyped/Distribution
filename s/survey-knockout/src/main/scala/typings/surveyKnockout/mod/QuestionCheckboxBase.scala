@@ -10,7 +10,9 @@ open class QuestionCheckboxBase protected () extends QuestionSelectBase {
   def this(name: String) = this()
   
   /*
-    * The number of columns for radiogroup and checkbox questions. Items are rendred in one line if the value is 0.
+    * Get or sets the number of columns used to arrange choice items.
+    * 
+    * Set this property to 0 if you want to display all items in one line. The default value depends on the available width.
     */
   def colCount: Double = js.native
   

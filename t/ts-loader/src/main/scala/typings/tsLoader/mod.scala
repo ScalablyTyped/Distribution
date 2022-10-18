@@ -1,6 +1,6 @@
 package typings.tsLoader
 
-import typings.tsLoader.interfacesMod.LoaderOptions
+import typings.tsLoader.distInterfacesMod.LoaderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

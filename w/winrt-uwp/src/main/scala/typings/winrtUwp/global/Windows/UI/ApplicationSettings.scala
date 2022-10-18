@@ -20,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ApplicationSettings {
   
   /** Provides methods to show the accounts pane and also to enable the app to register callbacks when the accounts flyout is about to be displayed. */
-  @JSGlobal("Windows.UI.ApplicationSettings.AccountsSettingsPane")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ApplicationSettings.AccountsSettingsPane")
   @js.native
-  abstract class AccountsSettingsPane ()
+  open class AccountsSettingsPane ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ApplicationSettings.AccountsSettingsPane
   object AccountsSettingsPane {
@@ -44,9 +44,9 @@ object ApplicationSettings {
   }
   
   /** Provides data for the AccountCommandsRequested event. */
-  @JSGlobal("Windows.UI.ApplicationSettings.AccountsSettingsPaneCommandsRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ApplicationSettings.AccountsSettingsPaneCommandsRequestedEventArgs")
   @js.native
-  abstract class AccountsSettingsPaneCommandsRequestedEventArgs ()
+  open class AccountsSettingsPaneCommandsRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ApplicationSettings.AccountsSettingsPaneCommandsRequestedEventArgs {
     
@@ -79,9 +79,9 @@ object ApplicationSettings {
   }
   
   /** Enables the app to signal when it has finished populating command collections while handling the AccountCommandsRequested event. */
-  @JSGlobal("Windows.UI.ApplicationSettings.AccountsSettingsPaneEventDeferral")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ApplicationSettings.AccountsSettingsPaneEventDeferral")
   @js.native
-  abstract class AccountsSettingsPaneEventDeferral ()
+  open class AccountsSettingsPaneEventDeferral ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ApplicationSettings.AccountsSettingsPaneEventDeferral {
     
@@ -179,9 +179,9 @@ object ApplicationSettings {
   }
   
   /** A static class that enables the app to control the Settings Charm pane. The app can add or remove commands, receive a notification when the user opens the pane, or open the pane programmatically. */
-  @JSGlobal("Windows.UI.ApplicationSettings.SettingsPane")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ApplicationSettings.SettingsPane")
   @js.native
-  abstract class SettingsPane ()
+  open class SettingsPane ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsPane
   object SettingsPane {
@@ -210,9 +210,9 @@ object ApplicationSettings {
   }
   
   /** Contains properties that are only available during the CommandsRequested event. */
-  @JSGlobal("Windows.UI.ApplicationSettings.SettingsPaneCommandsRequest")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ApplicationSettings.SettingsPaneCommandsRequest")
   @js.native
-  abstract class SettingsPaneCommandsRequest ()
+  open class SettingsPaneCommandsRequest ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsPaneCommandsRequest {
     
@@ -222,9 +222,9 @@ object ApplicationSettings {
   }
   
   /** Contains arguments that are available from the event object during the CommandsRequested event. */
-  @JSGlobal("Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs")
   @js.native
-  abstract class SettingsPaneCommandsRequestedEventArgs ()
+  open class SettingsPaneCommandsRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs {
     
@@ -314,9 +314,9 @@ object ApplicationSettings {
   }
   
   /** Provides data for the WebAccountCommandInvokedHandler delegate. */
-  @JSGlobal("Windows.UI.ApplicationSettings.WebAccountInvokedArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ApplicationSettings.WebAccountInvokedArgs")
   @js.native
-  abstract class WebAccountInvokedArgs ()
+  open class WebAccountInvokedArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ApplicationSettings.WebAccountInvokedArgs {
     

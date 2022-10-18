@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("js-joda", "TemporalAdjuster")
+/* note: abstract class */ @JSImport("js-joda", "TemporalAdjuster")
 @js.native
-abstract class TemporalAdjuster () extends StObject {
+open class TemporalAdjuster () extends StObject {
   
   def adjustInto(temporal: Temporal): Temporal = js.native
 }

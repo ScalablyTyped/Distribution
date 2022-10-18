@@ -91,10 +91,6 @@ object wordpressEditorStrings {
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
-  sealed trait colors extends StObject
-  inline def colors: colors = "colors".asInstanceOf[colors]
-  
-  @js.native
   sealed trait coreSlasheditor extends StObject
   inline def coreSlasheditor: coreSlasheditor = "core/editor".asInstanceOf[coreSlasheditor]
   
@@ -125,10 +121,6 @@ object wordpressEditorStrings {
   @js.native
   sealed trait dialog extends StObject
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
-  
-  @js.native
-  sealed trait disableCustomColors extends StObject
-  inline def disableCustomColors: disableCustomColors = "disableCustomColors".asInstanceOf[disableCustomColors]
   
   @js.native
   sealed trait div extends StObject
@@ -197,10 +189,6 @@ object wordpressEditorStrings {
   @js.native
   sealed trait h6 extends StObject
   inline def h6: h6 = "h6".asInstanceOf[h6]
-  
-  @js.native
-  sealed trait hasColorsToChoose extends StObject
-  inline def hasColorsToChoose: hasColorsToChoose = "hasColorsToChoose".asInstanceOf[hasColorsToChoose]
   
   @js.native
   sealed trait head extends StObject

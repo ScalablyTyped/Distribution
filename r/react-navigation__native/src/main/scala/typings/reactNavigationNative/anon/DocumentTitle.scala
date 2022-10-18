@@ -2,10 +2,10 @@ package typings.reactNavigationNative.anon
 
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.reactNavigationCore.typesMod.NavigationContainerRef
-import typings.reactNavigationNative.typesMod.DocumentTitleOptions
-import typings.reactNavigationNative.typesMod.LinkingOptions
-import typings.reactNavigationNative.typesMod.Theme
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.NavigationContainerRef
+import typings.reactNavigationNative.libTypescriptSrcTypesMod.DocumentTitleOptions
+import typings.reactNavigationNative.libTypescriptSrcTypesMod.LinkingOptions
+import typings.reactNavigationNative.libTypescriptSrcTypesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,5 @@
 package typings.koaRouter
 
-import org.scalablytyped.runtime.TopLevel
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Next
@@ -110,18 +109,10 @@ object mod {
     /**
       * Returns map of URL parameters for given `path` and `paramNames`.
       */
-    def params[ParamT /* <: String */](path: String, captures: js.Array[ParamT]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in ParamT ]:? string}
-      */ typings.koaRouter.koaRouterStrings.Layer & TopLevel[Any] = js.native
-    def params[ParamT /* <: String */](path: String, captures: js.Array[ParamT], params: Record[String, Any]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in ParamT ]:? string}
-      */ typings.koaRouter.koaRouterStrings.Layer & TopLevel[Any] = js.native
-    def params[ParamT /* <: String */](path: js.RegExp, captures: js.Array[ParamT]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in ParamT ]:? string}
-      */ typings.koaRouter.koaRouterStrings.Layer & TopLevel[Any] = js.native
-    def params[ParamT /* <: String */](path: js.RegExp, captures: js.Array[ParamT], params: Record[String, Any]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in ParamT ]:? string}
-      */ typings.koaRouter.koaRouterStrings.Layer & TopLevel[Any] = js.native
+    def params[ParamT /* <: String */](path: String, captures: js.Array[ParamT]): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in ParamT ]:? string} */ js.Any = js.native
+    def params[ParamT /* <: String */](path: String, captures: js.Array[ParamT], params: Record[String, Any]): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in ParamT ]:? string} */ js.Any = js.native
+    def params[ParamT /* <: String */](path: js.RegExp, captures: js.Array[ParamT]): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in ParamT ]:? string} */ js.Any = js.native
+    def params[ParamT /* <: String */](path: js.RegExp, captures: js.Array[ParamT], params: Record[String, Any]): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in ParamT ]:? string} */ js.Any = js.native
     
     var path: String = js.native
     

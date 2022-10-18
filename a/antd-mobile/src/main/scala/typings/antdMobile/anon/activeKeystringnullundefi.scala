@@ -40,7 +40,7 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.dropdownDropdownMod.DropdownRef
+import typings.antdMobile.esComponentsDropdownDropdownMod.DropdownRef
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key

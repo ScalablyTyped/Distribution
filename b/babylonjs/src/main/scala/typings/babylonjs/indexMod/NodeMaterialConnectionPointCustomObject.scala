@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "NodeMaterialConnectionPointCustomObject")
 @js.native
-open class NodeMaterialConnectionPointCustomObject[T /* <: typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock */] protected ()
+open class NodeMaterialConnectionPointCustomObject[T /* <: typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock */] protected ()
   extends typings.babylonjs.materialsIndexMod.NodeMaterialConnectionPointCustomObject[T] {
   /**
     * Creates a new connection point
@@ -20,15 +20,15 @@ open class NodeMaterialConnectionPointCustomObject[T /* <: typings.babylonjs.nod
     */
   def this(
     name: String,
-    ownerBlock: typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock,
-    direction: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection,
+    ownerBlock: typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock,
+    direction: typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection,
     _blockType: Instantiable1[/* args (repeated) */ Any, T],
     _blockName: String
   ) = this()
   def this(
     name: String,
-    ownerBlock: typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock,
-    direction: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection,
+    ownerBlock: typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock,
+    direction: typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection,
     _blockType: Instantiable1[/* args (repeated) */ Any, T],
     _blockName: String,
     _nameForCheking: String

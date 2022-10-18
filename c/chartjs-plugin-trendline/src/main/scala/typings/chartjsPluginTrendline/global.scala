@@ -1,9 +1,9 @@
 package typings.chartjsPluginTrendline
 
 import org.scalablytyped.runtime.Shortcut
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.mod.ChartType
 import typings.chartJs.mod.Plugin
+import typings.chartJs.typesBasicMod.AnyObject
 import typings.chartjsPluginTrendline.mod.TrendlineLinearOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +23,7 @@ object global {
     override def _to: Plugin[ChartType, AnyObject] = ^
     
     /* augmented module */
-    object mod {
+    object chartDotjsMod {
       
       trait ChartDatasetProperties[TType /* <: ChartType */, TData] extends StObject {
         

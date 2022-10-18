@@ -1,9 +1,9 @@
 package typings.workboxBackgroundSync
 
 import typings.workboxBackgroundSync.queueMod.QueueOptions
-import typings.workboxCore.workboxPluginMod.FetchDidFailCallback
-import typings.workboxCore.workboxPluginMod.FetchDidFailCallbackParam
-import typings.workboxCore.workboxPluginMod.WorkboxPlugin
+import typings.workboxCore.typesWorkboxPluginMod.FetchDidFailCallback
+import typings.workboxCore.typesWorkboxPluginMod.FetchDidFailCallbackParam
+import typings.workboxCore.typesWorkboxPluginMod.WorkboxPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

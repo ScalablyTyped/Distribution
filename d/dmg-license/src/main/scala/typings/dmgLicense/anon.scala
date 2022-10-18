@@ -4,8 +4,6 @@ import typings.dmgLicense.dmgLicenseBooleans.`false`
 import typings.dmgLicense.dmgLicenseBooleans.`true`
 import typings.dmgLicense.dmgLicenseStrings.TEXT
 import typings.dmgLicense.dmgLicenseStrings.`RTF `
-import typings.dmgLicense.languageMod.Language
-import typings.dmgLicense.languageMod.Localization
 import typings.node.bufferMod.global.Buffer
 import typings.plist.mod.PlistObject
 import org.scalablytyped.runtime.StObject
@@ -45,23 +43,6 @@ object anon {
     extension [Self <: `1`[?], U](x: Self & `1`[U]) {
       
       inline def setOnNoLanguageName(value: () => U): Self = StObject.set(x, "onNoLanguageName", js.Any.fromFunction0(value))
-    }
-  }
-  
-  trait `2`[T /* <: Localization */, U] extends StObject {
-    
-    def map(`object`: T, lang: Language): U
-  }
-  object `2` {
-    
-    inline def apply[T /* <: Localization */, U](map: (T, Language) => U): `2`[T, U] = {
-      val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map))
-      __obj.asInstanceOf[`2`[T, U]]
-    }
-    
-    extension [Self <: `2`[?, ?], T /* <: Localization */, U](x: Self & (`2`[T, U])) {
-      
-      inline def setMap(value: (T, Language) => U): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     }
   }
   
@@ -121,11 +102,6 @@ object anon {
       
       inline def setType(value: (`RTF `) | TEXT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
-  }
-  
-  trait Map extends StObject {
-    
-    var map: js.UndefOr[scala.Nothing] = js.undefined
   }
   
   trait OnNoLanguageName extends StObject {

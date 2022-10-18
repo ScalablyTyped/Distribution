@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new fuzzy linguistic variable.
   */
 open class FuzzyVariable ()
-  extends typings.yuka.yukaMod.FuzzyVariable
+  extends typings.yuka.srcYukaMod.FuzzyVariable

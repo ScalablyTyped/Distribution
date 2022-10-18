@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.Size
-import typings.antDesignReactNative.iconMod.default
+import typings.antDesignReactNative.libIconMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

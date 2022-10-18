@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [updateFrequency=0] - The amount of updates per second.
   */
 open class Regulator ()
-  extends typings.yuka.yukaMod.Regulator {
+  extends typings.yuka.srcYukaMod.Regulator {
   def this(updateFrequency: Double) = this()
 }

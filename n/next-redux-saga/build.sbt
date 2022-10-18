@@ -1,14 +1,15 @@
 organization := "org.scalablytyped"
 name := "next-redux-saga"
-version := "3.0-dt-20191118Z-2f0c28"
-scalaVersion := "3.0.1"
+version := "3.0-dt-20211202Z-6e60df"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-dc2f99",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-3fbed9",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-4ff700",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

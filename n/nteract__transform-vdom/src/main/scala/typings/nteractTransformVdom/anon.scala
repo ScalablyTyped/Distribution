@@ -1,8 +1,8 @@
 package typings.nteractTransformVdom
 
-import typings.nteractTransformVdom.eventToObjectMod.SerializedEvent
+import typings.nteractTransformVdom.libEventToObjectMod.SerializedEvent
+import typings.nteractTransformVdom.libObjectToReactMod.VDOMEl
 import typings.nteractTransformVdom.nteractTransformVdomStrings.applicationSlashvdomDotv1Plussignjson
-import typings.nteractTransformVdom.objectToReactMod.VDOMEl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

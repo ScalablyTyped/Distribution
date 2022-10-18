@@ -1,7 +1,7 @@
 package typings.storybookAddonKnobs.anon
 
-import typings.storybookAddonKnobs.filesMod.DateTypeKnobValue
-import typings.storybookAddonKnobs.filesMod.FileTypeKnob
+import typings.storybookAddonKnobs.distComponentsTypesFilesMod.DateTypeKnobValue
+import typings.storybookAddonKnobs.distComponentsTypesFilesMod.FileTypeKnob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

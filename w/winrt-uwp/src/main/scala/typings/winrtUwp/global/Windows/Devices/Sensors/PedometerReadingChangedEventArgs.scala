@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the pedometer reading–changed event. */
-@JSGlobal("Windows.Devices.Sensors.PedometerReadingChangedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.PedometerReadingChangedEventArgs")
 @js.native
-abstract class PedometerReadingChangedEventArgs ()
+open class PedometerReadingChangedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.PedometerReadingChangedEventArgs {
   

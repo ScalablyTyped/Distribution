@@ -1,15 +1,15 @@
 package typings.overlayscrollbars.anon
 
-import typings.overlayscrollbars.mod.BlockBehavior
+import typings.overlayscrollbars.mod.ScrollBehavior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait XY extends StObject {
   
-  var x: js.UndefOr[BlockBehavior] = js.undefined
+  var x: js.UndefOr[ScrollBehavior] = js.undefined
   
-  var y: js.UndefOr[BlockBehavior] = js.undefined
+  var y: js.UndefOr[ScrollBehavior] = js.undefined
 }
 object XY {
   
@@ -20,11 +20,11 @@ object XY {
   
   extension [Self <: XY](x: Self) {
     
-    inline def setX(value: BlockBehavior): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: ScrollBehavior): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    inline def setY(value: BlockBehavior): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: ScrollBehavior): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }

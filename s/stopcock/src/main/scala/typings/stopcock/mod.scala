@@ -1,7 +1,6 @@
 package typings.stopcock
 
 import typings.std.Parameters
-import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,7 +60,7 @@ object mod {
     
     def apply(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<TFn> is not an array type */ args: Parameters[TFn]
-    ): js.Promise[Any | ReturnType[TFn]] = js.native
+    ): /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<TFn> extends std.PromiseLike<infer TRetVal> ? std.Promise<TRetVal> : std.Promise<std.ReturnType<TFn>> */ js.Any = js.native
     
     /**
       * The internal queue size.

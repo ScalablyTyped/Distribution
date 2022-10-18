@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.webXRLayersMod.IWebXRLayersOptions
+import typings.babylonjs.xRFeaturesWebXRLayersMod.IWebXRLayersOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXRLayers")
 @js.native
 open class WebXRLayers protected ()
-  extends typings.babylonjs.legacyMod.WebXRLayers {
-  def this(_xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager) = this()
+  extends typings.babylonjs.legacyLegacyMod.WebXRLayers {
+  def this(_xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager) = this()
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     _options: IWebXRLayersOptions
   ) = this()
 }

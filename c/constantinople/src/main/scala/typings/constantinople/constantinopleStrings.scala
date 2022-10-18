@@ -1,6 +1,6 @@
 package typings.constantinople
 
-import typings.constantinople.binaryOperationMod.Operator
+import typings.constantinople.libBinaryOperationMod.Operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

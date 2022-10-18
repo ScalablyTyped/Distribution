@@ -3,38 +3,38 @@ package typings.grpcGcp
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable7
-import typings.grpcGcp.gcpChannelFactoryMod.GcpChannelFactoryConstructor
-import typings.grpcGcp.gcpChannelFactoryMod.GcpChannelFactoryInterface
+import typings.grpcGcp.buildSrcGcpChannelFactoryMod.GcpChannelFactoryConstructor
+import typings.grpcGcp.buildSrcGcpChannelFactoryMod.GcpChannelFactoryInterface
+import typings.grpcGcp.buildSrcGeneratedGrpcGcpMod.grpc.gcp.ApiConfig
 import typings.grpcGcp.grpcGcpBooleans.`true`
-import typings.grpcGcp.grpcGcpMod.grpc.gcp.ApiConfig
-import typings.grpcGrpcJs.adminMod.GetHandlers
-import typings.grpcGrpcJs.adminMod.GetServiceDefinition
 import typings.grpcGrpcJs.anon.PartialChannelControlHelp
 import typings.grpcGrpcJs.anon.PartialFailurePercentageE
 import typings.grpcGrpcJs.anon.PartialSuccessRateEjectio
-import typings.grpcGrpcJs.callCredentialsMod.CallMetadataGenerator
-import typings.grpcGrpcJs.callCredentialsMod.OAuth2Client
-import typings.grpcGrpcJs.channelCredentialsMod.VerifyOptions
-import typings.grpcGrpcJs.clientMod.CallProperties
-import typings.grpcGrpcJs.constantsMod.LogVerbosity
-import typings.grpcGrpcJs.durationMod.Duration
-import typings.grpcGrpcJs.filterMod.Filter
-import typings.grpcGrpcJs.filterMod.FilterFactory
-import typings.grpcGrpcJs.loadBalancerMod.ChannelControlHelper
-import typings.grpcGrpcJs.loadBalancerMod.LoadBalancer
-import typings.grpcGrpcJs.loadBalancerMod.LoadBalancerConstructor
-import typings.grpcGrpcJs.loadBalancerMod.LoadBalancingConfig
-import typings.grpcGrpcJs.loadBalancerMod.LoadBalancingConfigConstructor
+import typings.grpcGrpcJs.buildSrcAdminMod.GetHandlers
+import typings.grpcGrpcJs.buildSrcAdminMod.GetServiceDefinition
+import typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallMetadataGenerator
+import typings.grpcGrpcJs.buildSrcCallCredentialsMod.OAuth2Client
+import typings.grpcGrpcJs.buildSrcChannelCredentialsMod.VerifyOptions
+import typings.grpcGrpcJs.buildSrcClientMod.CallProperties
+import typings.grpcGrpcJs.buildSrcConstantsMod.LogVerbosity
+import typings.grpcGrpcJs.buildSrcDurationMod.Duration
+import typings.grpcGrpcJs.buildSrcFilterMod.Filter
+import typings.grpcGrpcJs.buildSrcFilterMod.FilterFactory
+import typings.grpcGrpcJs.buildSrcLoadBalancerMod.ChannelControlHelper
+import typings.grpcGrpcJs.buildSrcLoadBalancerMod.LoadBalancer
+import typings.grpcGrpcJs.buildSrcLoadBalancerMod.LoadBalancerConstructor
+import typings.grpcGrpcJs.buildSrcLoadBalancerMod.LoadBalancingConfig
+import typings.grpcGrpcJs.buildSrcLoadBalancerMod.LoadBalancingConfigConstructor
+import typings.grpcGrpcJs.buildSrcResolverMod.ResolverConstructor
+import typings.grpcGrpcJs.buildSrcServerCredentialsMod.KeyCertPair
+import typings.grpcGrpcJs.buildSrcSubchannelAddressMod.SubchannelAddress
+import typings.grpcGrpcJs.buildSrcSubchannelInterfaceMod.SubchannelInterface
+import typings.grpcGrpcJs.buildSrcUriParserMod.GrpcUri
 import typings.grpcGrpcJs.mod.CallCredentials
 import typings.grpcGrpcJs.mod.ChannelCredentials
 import typings.grpcGrpcJs.mod.Metadata
 import typings.grpcGrpcJs.mod.ServerCredentials
 import typings.grpcGrpcJs.mod.experimental.OutlierDetectionLoadBalancingConfig
-import typings.grpcGrpcJs.resolverMod.ResolverConstructor
-import typings.grpcGrpcJs.serverCredentialsMod.KeyCertPair
-import typings.grpcGrpcJs.subchannelAddressMod.SubchannelAddress
-import typings.grpcGrpcJs.subchannelInterfaceMod.SubchannelInterface
-import typings.grpcGrpcJs.uriParserMod.GrpcUri
 import typings.node.bufferMod.global.Buffer
 import typings.node.http2Mod.IncomingHttpHeaders
 import typings.node.tlsMod.SecureContext
@@ -83,14 +83,14 @@ object anon {
     extends StObject
        with Instantiable0[CallCredentials] {
     
-    def createEmpty(): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = js.native
+    def createEmpty(): typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials = js.native
     
     /**
       * Create a gRPC credential from a Google credential object.
       * @param googleCredentials The authentication client to use.
       * @return The resulting CallCredentials object.
       */
-    def createFromGoogleCredential(googleCredentials: OAuth2Client): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = js.native
+    def createFromGoogleCredential(googleCredentials: OAuth2Client): typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials = js.native
     
     /**
       * Creates a new CallCredentials object from a given function that generates
@@ -99,7 +99,7 @@ object anon {
       * generates a Metadata object based on these options, which is passed back
       * to the caller via a supplied (err, metadata) callback.
       */
-    def createFromMetadataGenerator(metadataGenerator: CallMetadataGenerator): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = js.native
+    def createFromMetadataGenerator(metadataGenerator: CallMetadataGenerator): typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials = js.native
   }
   
   @js.native
@@ -117,13 +117,13 @@ object anon {
       * @param secureContext The return value of tls.createSecureContext()
       * @param verifyOptions Additional options to modify certificate verification
       */
-    def createFromSecureContext(secureContext: SecureContext): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-    def createFromSecureContext(secureContext: SecureContext, verifyOptions: VerifyOptions): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
+    def createFromSecureContext(secureContext: SecureContext): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials = js.native
+    def createFromSecureContext(secureContext: SecureContext, verifyOptions: VerifyOptions): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials = js.native
     
     /**
       * Return a new ChannelCredentials instance with no credentials.
       */
-    def createInsecure(): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
+    def createInsecure(): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials = js.native
     
     /**
       * Return a new ChannelCredentials instance with a given set of credentials.
@@ -139,7 +139,7 @@ object anon {
       privateKey: js.UndefOr[Buffer | Null],
       certChain: js.UndefOr[Buffer | Null],
       verifyOptions: js.UndefOr[VerifyOptions]
-    ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
+    ): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials = js.native
   }
   
   @js.native
@@ -152,7 +152,7 @@ object anon {
       * object.
       * @param headers An IncomingHttpHeaders object.
       */
-    def fromHttp2Headers(headers: IncomingHttpHeaders): typings.grpcGrpcJs.metadataMod.Metadata = js.native
+    def fromHttp2Headers(headers: IncomingHttpHeaders): typings.grpcGrpcJs.buildSrcMetadataMod.Metadata = js.native
   }
   
   @js.native
@@ -169,7 +169,7 @@ object anon {
           OutlierDetectionLoadBalancingConfig
         ] {
     
-    def createFromJson(obj: Any): typings.grpcGrpcJs.loadBalancerOutlierDetectionMod.OutlierDetectionLoadBalancingConfig = js.native
+    def createFromJson(obj: Any): typings.grpcGrpcJs.buildSrcLoadBalancerOutlierDetectionMod.OutlierDetectionLoadBalancingConfig = js.native
   }
   
   @js.native
@@ -177,12 +177,12 @@ object anon {
     extends StObject
        with Instantiable0[ServerCredentials] {
     
-    def createInsecure(): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = js.native
+    def createInsecure(): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = js.native
     
-    def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = js.native
-    def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = js.native
-    def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = js.native
-    def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = js.native
+    def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = js.native
+    def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = js.native
+    def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = js.native
+    def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = js.native
   }
   
   trait Typeofcredentials extends StObject {
@@ -195,9 +195,9 @@ object anon {
       * @return The resulting CallCredentials object.
       */
     def combineCallCredentials(
-      first: typings.grpcGrpcJs.callCredentialsMod.CallCredentials,
-      additional: typings.grpcGrpcJs.callCredentialsMod.CallCredentials*
-    ): typings.grpcGrpcJs.callCredentialsMod.CallCredentials
+      first: typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials,
+      additional: typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials*
+    ): typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials
     
     /**
       * Combine a ChannelCredentials with any number of CallCredentials into a
@@ -207,9 +207,9 @@ object anon {
       * @return The resulting ChannelCredentials object.
       */
     def combineChannelCredentials(
-      channelCredentials: typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials,
-      callCredentials: typings.grpcGrpcJs.callCredentialsMod.CallCredentials*
-    ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
+      channelCredentials: typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials,
+      callCredentials: typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials*
+    ): typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials
     
     var createEmpty: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createEmpty */ Any
     
@@ -226,8 +226,8 @@ object anon {
   object Typeofcredentials {
     
     inline def apply(
-      combineCallCredentials: (typings.grpcGrpcJs.callCredentialsMod.CallCredentials, /* repeated */ typings.grpcGrpcJs.callCredentialsMod.CallCredentials) => typings.grpcGrpcJs.callCredentialsMod.CallCredentials,
-      combineChannelCredentials: (typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials, /* repeated */ typings.grpcGrpcJs.callCredentialsMod.CallCredentials) => typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials,
+      combineCallCredentials: (typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials, /* repeated */ typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials) => typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials,
+      combineChannelCredentials: (typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials, /* repeated */ typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials) => typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials,
       createEmpty: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createEmpty */ Any,
       createFromGoogleCredential: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromGoogleCredential */ Any,
       createFromMetadataGenerator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromMetadataGenerator */ Any,
@@ -242,11 +242,11 @@ object anon {
     extension [Self <: Typeofcredentials](x: Self) {
       
       inline def setCombineCallCredentials(
-        value: (typings.grpcGrpcJs.callCredentialsMod.CallCredentials, /* repeated */ typings.grpcGrpcJs.callCredentialsMod.CallCredentials) => typings.grpcGrpcJs.callCredentialsMod.CallCredentials
+        value: (typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials, /* repeated */ typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials) => typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials
       ): Self = StObject.set(x, "combineCallCredentials", js.Any.fromFunction2(value))
       
       inline def setCombineChannelCredentials(
-        value: (typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials, /* repeated */ typings.grpcGrpcJs.callCredentialsMod.CallCredentials) => typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
+        value: (typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials, /* repeated */ typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials) => typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials
       ): Self = StObject.set(x, "combineChannelCredentials", js.Any.fromFunction2(value))
       
       inline def setCreateEmpty(

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object printerMod {
   
-  @JSImport("@formatjs/icu-messageformat-parser/lib/printer", JSImport.Namespace)
+  @JSImport("@formatjs/icu-messageformat-parser/printer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

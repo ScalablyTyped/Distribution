@@ -2,7 +2,7 @@ package typings.globalizeCompiler
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.estree.mod.Program
-import typings.globalize.globalizeMod.Static
+import typings.globalize.distGlobalizeMod.Static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

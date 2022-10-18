@@ -6,27 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Calendar extends StObject {
-    
-    var calendar: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
-      ] = js.undefined
-  }
-  object Calendar {
-    
-    inline def apply(): Calendar = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Calendar]
-    }
-    
-    extension [Self <: Calendar](x: Self) {
-      
-      inline def setCalendar(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
-      
-      inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
-    }
-  }
-  
   trait Floor extends StObject {
     
     var floor: js.UndefOr[Boolean] = js.undefined
@@ -91,27 +70,6 @@ object anon {
     }
   }
   
-  trait NumberingSystem extends StObject {
-    
-    var numberingSystem: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
-      ] = js.undefined
-  }
-  object NumberingSystem {
-    
-    inline def apply(): NumberingSystem = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[NumberingSystem]
-    }
-    
-    extension [Self <: NumberingSystem](x: Self) {
-      
-      inline def setNumberingSystem(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
-      
-      inline def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
-    }
-  }
-  
   trait Separator extends StObject {
     
     var separator: js.UndefOr[String] = js.undefined
@@ -133,7 +91,7 @@ object anon {
   
   trait Zone extends StObject {
     
-    var zone: js.UndefOr[String | typings.luxon.zoneMod.Zone] = js.undefined
+    var zone: js.UndefOr[String | typings.luxon.srcZoneMod.Zone] = js.undefined
   }
   object Zone {
     
@@ -144,7 +102,7 @@ object anon {
     
     extension [Self <: Zone](x: Self) {
       
-      inline def setZone(value: String | typings.luxon.zoneMod.Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+      inline def setZone(value: String | typings.luxon.srcZoneMod.Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
       
       inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
     }

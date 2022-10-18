@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object dvaStrings {
   
   @js.native
-  sealed trait generatePath extends StObject
-  inline def generatePath: generatePath = "generatePath".asInstanceOf[generatePath]
-  
-  @js.native
   sealed trait takeEvery
     extends StObject
        with EffectType

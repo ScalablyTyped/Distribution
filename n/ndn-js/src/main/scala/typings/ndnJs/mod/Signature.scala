@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ndn-js", "Signature")
+/* note: abstract class */ @JSImport("ndn-js", "Signature")
 @js.native
-abstract class Signature ()
+open class Signature ()
   extends typings.ndnJs.signatureMod.Signature

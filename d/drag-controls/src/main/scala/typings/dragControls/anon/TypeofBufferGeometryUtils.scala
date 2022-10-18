@@ -1,7 +1,7 @@
 package typings.dragControls.anon
 
-import typings.three.bufferAttributeMod.BufferAttribute
-import typings.three.bufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferAttributeMod.BufferAttribute
+import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

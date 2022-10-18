@@ -1,6 +1,6 @@
 package typings.braintreeWeb.anon
 
-import typings.braintreeWeb.googlePaymentMod.GooglePaymentTokenizeValues
+import typings.braintreeWeb.modulesGooglePaymentMod.GooglePaymentTokenizeValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

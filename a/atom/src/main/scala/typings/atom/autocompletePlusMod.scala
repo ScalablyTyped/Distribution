@@ -1,8 +1,8 @@
 package typings.atom
 
 import typings.atom.mod.Point
-import typings.atom.mod.ScopeDescriptor
 import typings.atom.mod.TextEditor
+import typings.atom.srcScopeDescriptorMod.ScopeDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,6 +40,9 @@ object autocompletePlusMod {
     
     /** Will not use lower priority providers when this provider is used. */
     var excludeLowerPriority: js.UndefOr[Boolean] = js.undefined
+    
+    /** Let autocomplete+ filter and sort the suggestions you provide. */
+    var filterSuggestions: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  (experimental) Is called when a suggestion is selected by the user for
@@ -111,6 +114,10 @@ object autocompletePlusMod {
       
       inline def setExcludeLowerPriorityUndefined: Self = StObject.set(x, "excludeLowerPriority", js.undefined)
       
+      inline def setFilterSuggestions(value: Boolean): Self = StObject.set(x, "filterSuggestions", value.asInstanceOf[js.Any])
+      
+      inline def setFilterSuggestionsUndefined: Self = StObject.set(x, "filterSuggestions", js.undefined)
+      
       inline def setGetSuggestionDetailsOnSelect(value: /* suggestion */ AnySuggestion => (js.Promise[AnySuggestion | Null]) | AnySuggestion | Null): Self = StObject.set(x, "getSuggestionDetailsOnSelect", js.Any.fromFunction1(value))
       
       inline def setGetSuggestionDetailsOnSelectUndefined: Self = StObject.set(x, "getSuggestionDetailsOnSelect", js.undefined)
@@ -156,6 +163,8 @@ object autocompletePlusMod {
       inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     }
   }
+  
+  type Suggestion = AnySuggestion
   
   trait SuggestionBase extends StObject {
     

@@ -9,7 +9,7 @@ object InlayHintResolveRequest {
   
   @JSImport("vscode-languageclient", "InlayHintResolveRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageclient", "InlayHintResolveRequest.method")
   @js.native
@@ -17,7 +17,7 @@ object InlayHintResolveRequest {
   
   @JSImport("vscode-languageclient", "InlayHintResolveRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     typings.vscodeLanguageserverTypes.mod.InlayHint, 
     typings.vscodeLanguageserverTypes.mod.InlayHint, 
     scala.Nothing, 

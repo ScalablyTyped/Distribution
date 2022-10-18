@@ -1,6 +1,6 @@
 package typings.floatingUiDom.anon
 
-import typings.floatingUiCore.typesMod.Padding
+import typings.floatingUiCore.srcTypesMod.Padding
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

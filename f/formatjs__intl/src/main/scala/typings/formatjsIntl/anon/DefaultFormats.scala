@@ -1,13 +1,13 @@
 package typings.formatjsIntl.anon
 
-import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
-import typings.formatjsIntl.errorMod.InvalidConfigError
-import typings.formatjsIntl.errorMod.MessageFormatError
-import typings.formatjsIntl.errorMod.MissingDataError
-import typings.formatjsIntl.errorMod.MissingTranslationError
-import typings.formatjsIntl.errorMod.UnsupportedFormatterError
-import typings.formatjsIntl.typesMod.CustomFormats
-import typings.formatjsIntl.typesMod.OnErrorFn
+import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
+import typings.formatjsIntl.libSrcErrorMod.InvalidConfigError
+import typings.formatjsIntl.libSrcErrorMod.MessageFormatError
+import typings.formatjsIntl.libSrcErrorMod.MissingDataError
+import typings.formatjsIntl.libSrcErrorMod.MissingTranslationError
+import typings.formatjsIntl.libSrcErrorMod.UnsupportedFormatterError
+import typings.formatjsIntl.libSrcTypesMod.CustomFormats
+import typings.formatjsIntl.libSrcTypesMod.OnErrorFn
 import typings.intlMessageformat.mod.FormatError
 import typings.intlMessageformat.srcFormattersMod.FormatXMLElementFn
 import typings.std.Record

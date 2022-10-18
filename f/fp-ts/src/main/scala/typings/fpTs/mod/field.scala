@@ -1,7 +1,7 @@
 package typings.fpTs.mod
 
-import typings.fpTs.eqMod.Eq
-import typings.fpTs.fieldMod.Field
+import typings.fpTs.libEqMod.Eq
+import typings.fpTs.libFieldMod.Field
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

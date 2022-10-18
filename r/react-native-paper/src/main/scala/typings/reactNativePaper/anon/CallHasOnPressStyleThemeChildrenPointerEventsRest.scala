@@ -1,9 +1,7 @@
 package typings.reactNativePaper.anon
 
-import typings.callstackReactThemeProvider.hoistNonReactStaticsMod.NonReactStatics
-import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
-import typings.reactNativePaper.typescriptTypesMod.RemoveChildren
+import typings.reactNativePaper.libTypescriptComponentsDataTableDataTableRowMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CallHasOnPressStyleThemeChildrenPointerEventsRest extends StObject {
   
-  def apply(
-    hasOnPressStyleThemeChildrenPointerEventsRest: (RemoveChildren[
-      ComponentType[PickTouchableWithoutFeedbAccessibilityElementsHidden] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & CallSupported, js.Object])
-    ]) & PointerEvents
-  ): Element = js.native
+  def apply(hasOnPressStyleThemeChildrenPointerEventsRest: Props): Element = js.native
   
   var displayName: String = js.native
 }

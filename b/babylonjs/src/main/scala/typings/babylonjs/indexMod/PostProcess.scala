@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,9 +34,9 @@ open class PostProcess protected ()
     parameters: Nullable[js.Array[String]],
     samplers: Nullable[js.Array[String]],
     options: Double | PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: js.UndefOr[Double],
-    engine: js.UndefOr[typings.babylonjs.engineMod.Engine],
+    engine: js.UndefOr[typings.babylonjs.enginesEngineMod.Engine],
     reusable: js.UndefOr[Boolean],
     defines: js.UndefOr[Nullable[String]],
     textureType: js.UndefOr[Double],
@@ -60,15 +60,15 @@ object PostProcess {
     * @param rootUrl defines the root URL to use to load textures
     * @returns a new post process
     */
-  inline def Parse(parsedPostProcess: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.postProcessMod.PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedPostProcess.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.postProcessMod.PostProcess]]
+  inline def Parse(parsedPostProcess: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.postProcessesPostProcessMod.PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedPostProcess.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.postProcessesPostProcessMod.PostProcess]]
   
   /**
     * @internal
     */
   inline def _Parse(
     parsedPostProcess: Any,
-    targetCamera: typings.babylonjs.cameraMod.Camera,
+    targetCamera: typings.babylonjs.camerasCameraMod.Camera,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String
-  ): Nullable[typings.babylonjs.postProcessMod.PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.postProcessMod.PostProcess]]
+  ): Nullable[typings.babylonjs.postProcessesPostProcessMod.PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.postProcessesPostProcessMod.PostProcess]]
 }

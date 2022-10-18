@@ -1,9 +1,9 @@
 package typings.zustand
 
 import typings.zustand.anon.WithReactStoreApiunknown
-import typings.zustand.reactMod.Create
-import typings.zustand.reactMod.ExtractState
-import typings.zustand.vanillaMod.CreateStore
+import typings.zustand.esmReactMod.Create
+import typings.zustand.esmReactMod.ExtractState
+import typings.zustand.esmVanillaMod.CreateStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

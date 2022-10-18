@@ -84,8 +84,8 @@ import typings.reactMdMenu.reactMdMenuStrings.tree
 import typings.reactMdMenu.reactMdMenuStrings.url
 import typings.reactMdMenu.reactMdMenuStrings.vertical
 import typings.reactMdMenu.reactMdMenuStrings.yes
-import typings.reactMdUtils.useKeyboardFocusMod.KeyboardFocusArg
-import typings.reactMdUtils.useKeyboardFocusMod.KeyboardFocusHandler
+import typings.reactMdUtils.typesKeyboardMovementUseKeyboardFocusMod.KeyboardFocusArg
+import typings.reactMdUtils.typesKeyboardMovementUseKeyboardFocusMod.KeyboardFocusHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement

@@ -1,6 +1,6 @@
 package typings.waterline.mod
 
-import typings.std.WritableStream
+import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +53,7 @@ trait Model
   def query(sqlQuery: String, cb: Callback[Any]): Unit = js.native
   def query(sqlQuery: String, data: Any, cb: Callback[Any]): Unit = js.native
   
-  def stream(criteria: Any, writeEnd: Any): WritableStream[Any] | js.Error = js.native
+  def stream(criteria: Any, writeEnd: Any): WritableStream | js.Error = js.native
   
   def update(criteria: Any): UpdateBuilder[Any] = js.native
   def update(criteria: Any, changes: js.Array[Any]): UpdateBuilder[js.Array[Any]] = js.native

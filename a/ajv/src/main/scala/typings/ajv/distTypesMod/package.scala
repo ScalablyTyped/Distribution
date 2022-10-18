@@ -1,10 +1,9 @@
 package typings.ajv.distTypesMod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.ajv.ajvBooleans.`true`
 import typings.ajv.anon.SchemaType
-import typings.ajv.compileMod.SchemaCxt
-import typings.ajv.compileMod.SchemaObjCxt
+import typings.ajv.distCompileMod.SchemaCxt
+import typings.ajv.distCompileMod.SchemaObjCxt
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,9 +28,7 @@ type ErrorNoParams[K /* <: String */, S] = ErrorObject[K, Record[String, scala.N
 
 type EvaluatedItems = Double | `true`
 
-type EvaluatedProperties = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in string ]:? true}
-  */ typings.ajv.ajvStrings.EvaluatedProperties & TopLevel[Any]) | `true`
+type EvaluatedProperties = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in string ]:? true} */ js.Any) | `true`
 
 type Format = AddedFormat | String
 
@@ -39,16 +36,8 @@ type FormatCompare[T /* <: String | Double */] = js.Function2[/* data1 */ T, /* 
 
 type FormatValidator[T /* <: String | Double */] = js.Function1[/* data */ T, Boolean]
 
-type KeywordCxtParams = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in string ]:? ajv.ajv/dist/compile/codegen/code.Code | string | number}
-  */ typings.ajv.ajvStrings.KeywordCxtParams & TopLevel[Any]
-
 type MacroKeywordFunc = js.Function3[/* schema */ Any, /* parentSchema */ AnySchemaObject, /* it */ SchemaCxt, AnySchema]
 
 type Schema = SchemaObject | Boolean
-
-type SchemaMap = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ Key in string ]:? ajv.ajv/dist/types.AnySchema}
-  */ typings.ajv.ajvStrings.SchemaMap & TopLevel[Any]
 
 type Vocabulary = js.Array[KeywordDefinition | String]

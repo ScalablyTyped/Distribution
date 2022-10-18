@@ -3,10 +3,10 @@ package typings.angularCompilerCli
 import typings.angularCompilerCli.anon.Close
 import typings.angularCompilerCli.anon.ExitCode
 import typings.angularCompilerCli.anon.Program
-import typings.angularCompilerCli.performCompileMod.ParsedConfiguration
-import typings.angularCompilerCli.transformersApiMod.CompilerOptions
-import typings.angularCompilerCli.transformersApiMod.CustomTransformers
-import typings.angularCompilerCli.transformersApiMod.EmitFlags
+import typings.angularCompilerCli.srcPerformCompileMod.ParsedConfiguration
+import typings.angularCompilerCli.srcTransformersApiMod.CompilerOptions
+import typings.angularCompilerCli.srcTransformersApiMod.CustomTransformers
+import typings.angularCompilerCli.srcTransformersApiMod.EmitFlags
 import typings.std.Set
 import typings.typescript.mod.Diagnostic
 import org.scalablytyped.runtime.StObject

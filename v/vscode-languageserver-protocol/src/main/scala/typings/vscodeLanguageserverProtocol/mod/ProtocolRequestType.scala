@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-languageserver-protocol", "ProtocolRequestType")
 @js.native
 open class ProtocolRequestType[P, R, PR, E, RO] protected ()
-  extends typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[P, R, PR, E, RO] {
+  extends typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[P, R, PR, E, RO] {
   def this(method: String) = this()
 }

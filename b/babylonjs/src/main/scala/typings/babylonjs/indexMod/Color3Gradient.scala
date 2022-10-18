@@ -21,6 +21,6 @@ open class Color3Gradient protected ()
     /**
     * Gets or sets the associated color
     */
-  color: typings.babylonjs.mathColorMod.Color3
+  color: typings.babylonjs.mathsMathDotcolorMod.Color3
   ) = this()
 }

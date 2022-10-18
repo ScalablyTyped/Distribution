@@ -1,11 +1,11 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.keytipDataTypesMod.IKeytipDataProps
-import typings.officeUiFabricReact.keytipDataTypesMod.KeytipDataOptions
+import typings.officeUiFabricReact.libComponentsKeytipDataKeytipDataDottypesMod.IKeytipDataProps
+import typings.officeUiFabricReact.libComponentsKeytipDataKeytipDataDottypesMod.KeytipDataOptions
 import typings.react.mod.FunctionComponent
 import typings.react.mod.Ref
 import typings.std.HTMLElement
-import typings.uifabricUtilities.irendercomponentMod.IRenderComponent
+import typings.uifabricUtilities.libIrendercomponentMod.IRenderComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.nivoColors.anon
 
-import typings.nivoColors.allMod.ColorSchemeId
+import typings.nivoColors.distTypesSchemesAllMod.ColorSchemeId
 import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
 import org.scalablytyped.runtime.StObject

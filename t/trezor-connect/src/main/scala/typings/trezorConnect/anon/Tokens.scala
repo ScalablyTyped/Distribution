@@ -1,6 +1,6 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.accountMod.AccountTransaction
+import typings.trezorConnect.libTypescriptAccountMod.AccountTransaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

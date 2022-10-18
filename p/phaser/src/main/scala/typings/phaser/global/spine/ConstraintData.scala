@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.ConstraintData")
+/* note: abstract class */ @JSGlobal("spine.ConstraintData")
 @js.native
-abstract class ConstraintData protected ()
+open class ConstraintData protected ()
   extends StObject
      with typings.phaser.spine.ConstraintData {
   def this(name: String, order: Double, skinRequired: Boolean) = this()

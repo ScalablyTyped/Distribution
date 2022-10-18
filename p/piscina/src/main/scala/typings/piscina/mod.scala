@@ -2,8 +2,8 @@ package typings.piscina
 
 import typings.node.workerThreadsMod.MessagePort
 import typings.node.workerThreadsMod.Worker
-import typings.piscina.commonMod.TaskQueue
-import typings.piscina.commonMod.Transferable
+import typings.piscina.distSrcCommonMod.TaskQueue
+import typings.piscina.distSrcCommonMod.Transferable
 import typings.piscina.piscinaStrings.abort
 import typings.piscina.piscinaStrings.auto
 import org.scalablytyped.runtime.StObject
@@ -92,7 +92,15 @@ object mod {
     }
   }
   
-  type EnvSpecifier = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    new (filename : string): node.worker_threads.Worker extends {new (filename : never): std.Worker, new (filename : never, options : {  env :infer T}): std.Worker} ? T : never
+    }}}
+    */
+  @js.native
+  trait EnvSpecifier extends StObject
   
   trait FilledOptions
     extends StObject
@@ -329,7 +337,15 @@ object mod {
     def waitTime: Any = js.native
   }
   
-  type ResourceLimits = js.Object
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    std.Worker extends {  resourceLimits :infer T | undefined} ? T : {}
+    }}}
+    */
+  @js.native
+  trait ResourceLimits extends StObject
   
   trait RunOptions extends StObject {
     
@@ -374,7 +390,23 @@ object mod {
     }
   }
   
-  type TransferList = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    std.MessagePort extends {postMessage (value : any, transferList : infer T): any} ? T : never
+    }}}
+    */
+  @js.native
+  trait TransferList extends StObject
   
-  type TransferListItem = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    piscina.piscina.TransferList extends std.Array<infer T> ? T : never
+    }}}
+    */
+  @js.native
+  trait TransferListItem extends StObject
 }

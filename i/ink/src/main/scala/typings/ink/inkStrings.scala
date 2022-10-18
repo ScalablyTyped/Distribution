@@ -1,7 +1,7 @@
 package typings.ink
 
-import typings.ink.colorizeMod.ColorType
-import typings.ink.domMod.ElementNames
+import typings.ink.buildColorizeMod.ColorType
+import typings.ink.buildDomMod.ElementNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

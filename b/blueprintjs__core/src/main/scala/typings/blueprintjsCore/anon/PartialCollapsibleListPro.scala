@@ -1,8 +1,8 @@
 package typings.blueprintjsCore.anon
 
-import typings.blueprintjsCore.boundaryMod.Boundary
-import typings.blueprintjsCore.menuItemMod.MenuItemProps
-import typings.blueprintjsCore.popoverMod.IPopoverProps
+import typings.blueprintjsCore.libEsmCommonBoundaryMod.Boundary
+import typings.blueprintjsCore.libEsmComponentsMenuMenuItemMod.MenuItemProps
+import typings.blueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

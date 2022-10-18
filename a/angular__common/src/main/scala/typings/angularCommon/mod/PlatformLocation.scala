@@ -7,9 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/common", "PlatformLocation")
+/* note: abstract class */ @JSImport("@angular/common", "PlatformLocation")
 @js.native
-abstract class PlatformLocation () extends StObject {
+open class PlatformLocation () extends StObject {
   
   def back(): Unit = js.native
   

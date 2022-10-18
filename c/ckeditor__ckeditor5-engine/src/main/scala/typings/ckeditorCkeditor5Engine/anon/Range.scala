@@ -1,27 +1,35 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.textproxyMod.default
+import typings.ckeditorCkeditor5Engine.srcModelRangeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Range extends StObject {
   
-  var item: default
+  var affectsData: js.UndefOr[Boolean] = js.undefined
   
-  var range: typings.ckeditorCkeditor5Engine.rangeMod.default
+  var range: default
+  
+  var usingOperation: js.UndefOr[Boolean] = js.undefined
 }
 object Range {
   
-  inline def apply(item: default, range: typings.ckeditorCkeditor5Engine.rangeMod.default): Range = {
-    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
+  inline def apply(range: default): Range = {
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[Range]
   }
   
   extension [Self <: Range](x: Self) {
     
-    inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setAffectsData(value: Boolean): Self = StObject.set(x, "affectsData", value.asInstanceOf[js.Any])
     
-    inline def setRange(value: typings.ckeditorCkeditor5Engine.rangeMod.default): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setAffectsDataUndefined: Self = StObject.set(x, "affectsData", js.undefined)
+    
+    inline def setRange(value: default): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setUsingOperation(value: Boolean): Self = StObject.set(x, "usingOperation", value.asInstanceOf[js.Any])
+    
+    inline def setUsingOperationUndefined: Self = StObject.set(x, "usingOperation", js.undefined)
   }
 }

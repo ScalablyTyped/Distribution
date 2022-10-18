@@ -1,23 +1,22 @@
 package typings.screeps.anon
 
-import typings.screeps.screepsStrings.XLHO2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `30` extends StObject {
   
-  var X: XLHO2
+  var capacity: typings.screeps.screepsInts.`4`
 }
 object `30` {
   
   inline def apply(): `30` = {
-    val __obj = js.Dynamic.literal(X = "XLHO2")
+    val __obj = js.Dynamic.literal(capacity = 4)
     __obj.asInstanceOf[`30`]
   }
   
   extension [Self <: `30`](x: Self) {
     
-    inline def setX(value: XLHO2): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: typings.screeps.screepsInts.`4`): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
   }
 }

@@ -1,10 +1,7 @@
 package typings.uint8arrays
 
 import typings.std.ArrayLike
-import typings.uint8arrays.basesMod.SupportedEncodings
-import typings.uint8arrays.uint8arraysInts.`-1`
-import typings.uint8arrays.uint8arraysInts.`0`
-import typings.uint8arrays.uint8arraysInts.`1`
+import typings.uint8arrays.distSrcUtilBasesMod.SupportedEncodings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def compare(a: js.typedarray.Uint8Array, b: js.typedarray.Uint8Array): `0` | `1` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`0` | `1` | `-1`]
+  inline def compare(a: js.typedarray.Uint8Array, b: js.typedarray.Uint8Array): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def concat(arrays: js.Array[ArrayLike[Double]]): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(arrays.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   inline def concat(arrays: js.Array[ArrayLike[Double]], length: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(arrays.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]

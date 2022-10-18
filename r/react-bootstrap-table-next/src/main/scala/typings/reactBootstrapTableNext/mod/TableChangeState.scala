@@ -2,7 +2,7 @@ package typings.reactBootstrapTableNext.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactBootstrapTableNext.anon.Comparator
-import typings.reactBootstrapTableNext.anon.DataField
+import typings.reactBootstrapTableNext.anon.NewValue
 import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.asc
 import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.desc
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TableChangeState[T] extends StObject {
   
-  var cellEdit: DataField
+  var cellEdit: NewValue
   
   var data: js.Array[T]
   
@@ -28,7 +28,7 @@ trait TableChangeState[T] extends StObject {
 object TableChangeState {
   
   inline def apply[T](
-    cellEdit: DataField,
+    cellEdit: NewValue,
     data: js.Array[T],
     filters: StringDictionary[Comparator],
     page: Double,
@@ -42,7 +42,7 @@ object TableChangeState {
   
   extension [Self <: TableChangeState[?], T](x: Self & TableChangeState[T]) {
     
-    inline def setCellEdit(value: DataField): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
+    inline def setCellEdit(value: NewValue): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

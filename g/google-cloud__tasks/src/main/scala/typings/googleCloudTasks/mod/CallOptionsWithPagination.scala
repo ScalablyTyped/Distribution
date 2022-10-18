@@ -1,7 +1,7 @@
 package typings.googleCloudTasks.mod
 
 import typings.googleCloudTasks.googleCloudTasksBooleans.`false`
-import typings.googleGax.gaxMod.CallOptions
+import typings.googleGax.buildSrcGaxMod.CallOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

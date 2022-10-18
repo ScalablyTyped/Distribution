@@ -1,46 +1,76 @@
 package typings.baseui
 
+import org.scalablytyped.runtime.Shortcut
+import typings.baseui.anon.PartialLocale
+import typings.baseui.localeTypesMod.Locale
+import typings.react.mod.Context
+import typings.react.mod.FC
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object localeMod {
+object localeMod extends Shortcut {
   
-  object default {
-    
-    @JSImport("baseui/accordion/locale", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("baseui/accordion/locale", "default.collapse")
-    @js.native
-    def collapse: String = js.native
-    inline def collapse_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collapse")(x.asInstanceOf[js.Any])
-    
-    @JSImport("baseui/accordion/locale", "default.expand")
-    @js.native
-    def expand: String = js.native
-    inline def expand_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expand")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("baseui/locale", JSImport.Default)
+  @js.native
+  val default: FC[LocaleProviderProps] = js.native
   
-  trait AccordionLocale extends StObject {
+  @JSImport("baseui/locale", "LocaleContext")
+  @js.native
+  val LocaleContext: Context[Locale] = js.native
+  
+  type AccordionLocale = typings.baseui.accordionLocaleMod.AccordionLocale
+  
+  type BreadcrumbLocale = typings.baseui.breadcrumbsLocaleMod.BreadcrumbLocale
+  
+  type ButtonGroupLocale = typings.baseui.buttonGroupLocaleMod.ButtonGroupLocale
+  
+  type DataTableLocale = typings.baseui.dataTableLocaleMod.DataTableLocale
+  
+  type DatepickerLocale = typings.baseui.datepickerLocaleMod.DatepickerLocale
+  
+  type DrawerLocale = typings.baseui.drawerLocaleMod.DrawerLocale
+  
+  type FileUploaderLocale = typings.baseui.fileUploaderLocaleMod.FileUploaderLocale
+  
+  trait LocaleProviderProps extends StObject {
     
-    var collapse: String
+    var children: js.UndefOr[ReactNode | Null] = js.undefined
     
-    var expand: String
+    var locale: PartialLocale
   }
-  object AccordionLocale {
+  object LocaleProviderProps {
     
-    inline def apply(collapse: String, expand: String): AccordionLocale = {
-      val __obj = js.Dynamic.literal(collapse = collapse.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AccordionLocale]
+    inline def apply(locale: PartialLocale): LocaleProviderProps = {
+      val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LocaleProviderProps]
     }
     
-    extension [Self <: AccordionLocale](x: Self) {
+    extension [Self <: LocaleProviderProps](x: Self) {
       
-      inline def setCollapse(value: String): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setExpand(value: String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setLocale(value: PartialLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }
   }
+  
+  type MenuLocale = typings.baseui.menuLocaleMod.MenuLocale
+  
+  type ModalLocale = typings.baseui.modalLocaleMod.ModalLocale
+  
+  type PaginationLocale = typings.baseui.paginationLocaleMod.PaginationLocale
+  
+  type SelectLocale = typings.baseui.selectLocaleMod.SelectLocale
+  
+  type ToastLocale = typings.baseui.toastLocaleMod.ToastLocale
+  
+  type _To = FC[LocaleProviderProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `localeMod.foo` */
+  override def _to: FC[LocaleProviderProps] = default
 }

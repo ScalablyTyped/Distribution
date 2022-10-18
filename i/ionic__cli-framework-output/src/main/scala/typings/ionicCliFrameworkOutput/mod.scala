@@ -1,21 +1,21 @@
 package typings.ionicCliFrameworkOutput
 
-import typings.ionicCliFrameworkOutput.colorsMod.ColorFunction
-import typings.ionicCliFrameworkOutput.colorsMod.Colors
-import typings.ionicCliFrameworkOutput.loggerMod.CreateTaggedFormatterOptions
-import typings.ionicCliFrameworkOutput.loggerMod.LoggerFormatter
-import typings.ionicCliFrameworkOutput.loggerMod.LoggerHandler
-import typings.ionicCliFrameworkOutput.loggerMod.LoggerLevel
-import typings.ionicCliFrameworkOutput.loggerMod.LoggerLevelWeight
-import typings.ionicCliFrameworkOutput.loggerMod.LoggerOptions
-import typings.ionicCliFrameworkOutput.loggerMod.StreamHandlerOptions
-import typings.ionicCliFrameworkOutput.outputMod.OutputStrategy
-import typings.ionicCliFrameworkOutput.outputMod.StreamOutputStrategyOptions
-import typings.ionicCliFrameworkOutput.outputMod.TTYOutputRedrawerOptions
-import typings.ionicCliFrameworkOutput.outputMod.TTYOutputStrategyOptions
-import typings.ionicCliFrameworkOutput.tasksMod.TaskChainOptions
-import typings.ionicCliFrameworkOutput.tasksMod.TaskOptions
-import typings.ionicUtilsTerminal.formatMod.WordWrapOptions
+import typings.ionicCliFrameworkOutput.distColorsMod.ColorFunction
+import typings.ionicCliFrameworkOutput.distColorsMod.Colors
+import typings.ionicCliFrameworkOutput.distLoggerMod.CreateTaggedFormatterOptions
+import typings.ionicCliFrameworkOutput.distLoggerMod.LoggerFormatter
+import typings.ionicCliFrameworkOutput.distLoggerMod.LoggerHandler
+import typings.ionicCliFrameworkOutput.distLoggerMod.LoggerLevel
+import typings.ionicCliFrameworkOutput.distLoggerMod.LoggerLevelWeight
+import typings.ionicCliFrameworkOutput.distLoggerMod.LoggerOptions
+import typings.ionicCliFrameworkOutput.distLoggerMod.StreamHandlerOptions
+import typings.ionicCliFrameworkOutput.distOutputMod.OutputStrategy
+import typings.ionicCliFrameworkOutput.distOutputMod.StreamOutputStrategyOptions
+import typings.ionicCliFrameworkOutput.distOutputMod.TTYOutputRedrawerOptions
+import typings.ionicCliFrameworkOutput.distOutputMod.TTYOutputStrategyOptions
+import typings.ionicCliFrameworkOutput.distTasksMod.TaskChainOptions
+import typings.ionicCliFrameworkOutput.distTasksMod.TaskOptions
+import typings.ionicUtilsTerminal.distFormatMod.WordWrapOptions
 import typings.std.ReadonlyMap
 import typings.std.ReadonlySet
 import typings.std.Set
@@ -32,7 +32,7 @@ object mod {
   
   @JSImport("@ionic/cli-framework-output", "DEFAULT_LOGGER_HANDLERS")
   @js.native
-  val DEFAULT_LOGGER_HANDLERS: ReadonlySet[typings.ionicCliFrameworkOutput.loggerMod.StreamHandler] = js.native
+  val DEFAULT_LOGGER_HANDLERS: ReadonlySet[typings.ionicCliFrameworkOutput.distLoggerMod.StreamHandler] = js.native
   
   @JSImport("@ionic/cli-framework-output", "ICON_FAILURE")
   @js.native
@@ -69,7 +69,7 @@ object mod {
   @JSImport("@ionic/cli-framework-output", "Logger")
   @js.native
   open class Logger ()
-    extends typings.ionicCliFrameworkOutput.loggerMod.Logger {
+    extends typings.ionicCliFrameworkOutput.distLoggerMod.Logger {
     def this(hasLevelHandlers: LoggerOptions) = this()
   }
   /* static members */
@@ -89,35 +89,35 @@ object mod {
   @JSImport("@ionic/cli-framework-output", "Spinner")
   @js.native
   open class Spinner ()
-    extends typings.ionicCliFrameworkOutput.tasksMod.Spinner {
+    extends typings.ionicCliFrameworkOutput.distTasksMod.Spinner {
     def this(frames: js.Array[String]) = this()
   }
   
   @JSImport("@ionic/cli-framework-output", "StreamHandler")
   @js.native
   open class StreamHandler protected ()
-    extends typings.ionicCliFrameworkOutput.loggerMod.StreamHandler {
+    extends typings.ionicCliFrameworkOutput.distLoggerMod.StreamHandler {
     def this(hasStreamFilterFormatter: StreamHandlerOptions) = this()
   }
   
   @JSImport("@ionic/cli-framework-output", "StreamOutputStrategy")
   @js.native
   open class StreamOutputStrategy protected ()
-    extends typings.ionicCliFrameworkOutput.outputMod.StreamOutputStrategy {
+    extends typings.ionicCliFrameworkOutput.distOutputMod.StreamOutputStrategy {
     def this(hasStreamColors: StreamOutputStrategyOptions) = this()
   }
   
   @JSImport("@ionic/cli-framework-output", "TTYOutputRedrawer")
   @js.native
   open class TTYOutputRedrawer protected ()
-    extends typings.ionicCliFrameworkOutput.outputMod.TTYOutputRedrawer {
+    extends typings.ionicCliFrameworkOutput.distOutputMod.TTYOutputRedrawer {
     def this(hasStream: TTYOutputRedrawerOptions) = this()
   }
   
   @JSImport("@ionic/cli-framework-output", "TTYOutputStrategy")
   @js.native
   open class TTYOutputStrategy ()
-    extends typings.ionicCliFrameworkOutput.outputMod.TTYOutputStrategy {
+    extends typings.ionicCliFrameworkOutput.distOutputMod.TTYOutputStrategy {
     def this(hasStreamColors: TTYOutputStrategyOptions) = this()
   }
   
@@ -128,19 +128,19 @@ object mod {
   @JSImport("@ionic/cli-framework-output", "Task")
   @js.native
   open class Task ()
-    extends typings.ionicCliFrameworkOutput.tasksMod.Task {
+    extends typings.ionicCliFrameworkOutput.distTasksMod.Task {
     def this(hasMsgTickInterval: TaskOptions) = this()
   }
   
   @JSImport("@ionic/cli-framework-output", "TaskChain")
   @js.native
   open class TaskChain ()
-    extends typings.ionicCliFrameworkOutput.tasksMod.TaskChain {
+    extends typings.ionicCliFrameworkOutput.distTasksMod.TaskChain {
     def this(hasTaskOptions: TaskChainOptions) = this()
   }
   
-  inline def createDefaultLogger(): typings.ionicCliFrameworkOutput.loggerMod.Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultLogger")().asInstanceOf[typings.ionicCliFrameworkOutput.loggerMod.Logger]
-  inline def createDefaultLogger(hasOutputFormatterOptions: CreateDefaultLoggerOptions): typings.ionicCliFrameworkOutput.loggerMod.Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultLogger")(hasOutputFormatterOptions.asInstanceOf[js.Any]).asInstanceOf[typings.ionicCliFrameworkOutput.loggerMod.Logger]
+  inline def createDefaultLogger(): typings.ionicCliFrameworkOutput.distLoggerMod.Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultLogger")().asInstanceOf[typings.ionicCliFrameworkOutput.distLoggerMod.Logger]
+  inline def createDefaultLogger(hasOutputFormatterOptions: CreateDefaultLoggerOptions): typings.ionicCliFrameworkOutput.distLoggerMod.Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultLogger")(hasOutputFormatterOptions.asInstanceOf[js.Any]).asInstanceOf[typings.ionicCliFrameworkOutput.distLoggerMod.Logger]
   
   inline def createPrefixedFormatter(prefix: String): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedFormatter")(prefix.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   inline def createPrefixedFormatter(prefix: js.Function0[String]): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedFormatter")(prefix.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]

@@ -5,11 +5,11 @@ import typings.cors.mod.CorsOptions
 import typings.cors.mod.CorsOptionsDelegate
 import typings.cors.mod.CorsRequest
 import typings.engineIo.anon.CookieSerializeOptionsnam
-import typings.engineIo.serverMod.Transport
+import typings.engineIo.buildServerMod.Transport
 import typings.node.httpMod.IncomingMessage
+import typings.socketIo.distNamespaceMod.Namespace
+import typings.socketIo.distTypedEventsMod.DefaultEventsMap
 import typings.socketIo.mod.AdapterConstructor
-import typings.socketIo.namespaceMod.Namespace
-import typings.socketIo.typedEventsMod.DefaultEventsMap
 import typings.socketIoAdapter.mod.Adapter
 import typings.socketIoParser.mod.Decoder
 import typings.socketIoParser.mod.Encoder

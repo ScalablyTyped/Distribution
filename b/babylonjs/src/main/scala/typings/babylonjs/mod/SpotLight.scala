@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SpotLight")
 @js.native
 open class SpotLight protected ()
-  extends typings.babylonjs.legacyMod.SpotLight {
+  extends typings.babylonjs.legacyLegacyMod.SpotLight {
   /**
     * Creates a SpotLight object in the scene. A spot light is a simply light oriented cone.
     * It can cast shadows.
@@ -21,8 +21,8 @@ open class SpotLight protected ()
     */
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
-    direction: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    direction: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     angle: Double,
     exponent: Double,
     scene: typings.babylonjs.sceneMod.Scene

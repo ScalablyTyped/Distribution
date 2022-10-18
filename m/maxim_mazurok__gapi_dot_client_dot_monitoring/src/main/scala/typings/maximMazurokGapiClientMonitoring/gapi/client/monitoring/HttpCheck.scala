@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +35,7 @@ trait HttpCheck extends StObject {
     * a Create call will cause the first to be overwritten by the second. The maximum number of headers allowed is 100.
     */
   var headers: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.HttpCheck & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -100,9 +97,7 @@ object HttpCheck {
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     inline def setHeaders(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.HttpCheck & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)

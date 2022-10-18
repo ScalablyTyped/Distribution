@@ -137,17 +137,17 @@ object mod {
       def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = js.native
       def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = js.native
       def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-        `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+        `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.markdownToJsx.markdownToJsxStrings.a, typings.markdownToJsx.markdownToJsxStrings.abbr, typings.markdownToJsx.markdownToJsxStrings.address */ Any,
         props: ClassAttributes[T] & P,
         children: ReactNode*
       ): DetailedReactHTMLElement[P, T] = js.native
       def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-        `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+        `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.markdownToJsx.markdownToJsxStrings.a, typings.markdownToJsx.markdownToJsxStrings.abbr, typings.markdownToJsx.markdownToJsxStrings.address */ Any,
         props: Null,
         children: ReactNode*
       ): DetailedReactHTMLElement[P, T] = js.native
       def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-        `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+        `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.markdownToJsx.markdownToJsxStrings.a, typings.markdownToJsx.markdownToJsxStrings.abbr, typings.markdownToJsx.markdownToJsxStrings.address */ Any,
         props: Unit,
         children: ReactNode*
       ): DetailedReactHTMLElement[P, T] = js.native

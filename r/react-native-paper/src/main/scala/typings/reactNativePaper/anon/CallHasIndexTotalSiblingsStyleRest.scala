@@ -1,6 +1,7 @@
 package typings.reactNativePaper.anon
 
 import typings.react.mod.global.JSX.Element
+import typings.reactNativePaper.libTypescriptComponentsCardCardContentMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CallHasIndexTotalSiblingsStyleRest extends StObject {
   
-  def apply(hasIndexTotalSiblingsStyleRest: ViewPropsRefAttributesVieAccessibilityLabel): Element = js.native
+  def apply(hasIndexTotalSiblingsStyleRest: Props): Element = js.native
   
   var displayName: String = js.native
 }

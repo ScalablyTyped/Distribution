@@ -1,6 +1,6 @@
 package typings.universalCookie
 
-import typings.universalCookie.typesMod.CookieParseOptions
+import typings.universalCookie.cjsTypesMod.CookieParseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object cjsMod {
   @JSImport("universal-cookie/cjs", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.universalCookie.cookiesMod.default {
+    extends typings.universalCookie.cjsCookiesMod.default {
     def this(cookies: String) = this()
     def this(cookies: js.Object) = this()
     def this(cookies: String, options: CookieParseOptions) = this()

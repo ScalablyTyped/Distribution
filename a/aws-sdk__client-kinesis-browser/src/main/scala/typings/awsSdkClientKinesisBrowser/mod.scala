@@ -37,98 +37,98 @@ object mod {
   @JSImport("@aws-sdk/client-kinesis-browser", "AddTagsToStreamCommand")
   @js.native
   open class AddTagsToStreamCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.addTagsToStreamCommandMod.AddTagsToStreamCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsAddTagsToStreamCommandMod.AddTagsToStreamCommand {
     def this(input: AddTagsToStreamInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "CreateStreamCommand")
   @js.native
   open class CreateStreamCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.createStreamCommandMod.CreateStreamCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsCreateStreamCommandMod.CreateStreamCommand {
     def this(input: CreateStreamInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "DecreaseStreamRetentionPeriodCommand")
   @js.native
   open class DecreaseStreamRetentionPeriodCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.decreaseStreamRetentionPeriodCommandMod.DecreaseStreamRetentionPeriodCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsDecreaseStreamRetentionPeriodCommandMod.DecreaseStreamRetentionPeriodCommand {
     def this(input: DecreaseStreamRetentionPeriodInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "DeleteStreamCommand")
   @js.native
   open class DeleteStreamCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.deleteStreamCommandMod.DeleteStreamCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsDeleteStreamCommandMod.DeleteStreamCommand {
     def this(input: DeleteStreamInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "DeregisterStreamConsumerCommand")
   @js.native
   open class DeregisterStreamConsumerCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.deregisterStreamConsumerCommandMod.DeregisterStreamConsumerCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsDeregisterStreamConsumerCommandMod.DeregisterStreamConsumerCommand {
     def this(input: DeregisterStreamConsumerInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "DescribeLimitsCommand")
   @js.native
   open class DescribeLimitsCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.describeLimitsCommandMod.DescribeLimitsCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsDescribeLimitsCommandMod.DescribeLimitsCommand {
     def this(input: DescribeLimitsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "DescribeStreamCommand")
   @js.native
   open class DescribeStreamCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.describeStreamCommandMod.DescribeStreamCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsDescribeStreamCommandMod.DescribeStreamCommand {
     def this(input: DescribeStreamInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "DescribeStreamConsumerCommand")
   @js.native
   open class DescribeStreamConsumerCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.describeStreamConsumerCommandMod.DescribeStreamConsumerCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsDescribeStreamConsumerCommandMod.DescribeStreamConsumerCommand {
     def this(input: DescribeStreamConsumerInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "DescribeStreamSummaryCommand")
   @js.native
   open class DescribeStreamSummaryCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.describeStreamSummaryCommandMod.DescribeStreamSummaryCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsDescribeStreamSummaryCommandMod.DescribeStreamSummaryCommand {
     def this(input: DescribeStreamSummaryInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "DisableEnhancedMonitoringCommand")
   @js.native
   open class DisableEnhancedMonitoringCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.disableEnhancedMonitoringCommandMod.DisableEnhancedMonitoringCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsDisableEnhancedMonitoringCommandMod.DisableEnhancedMonitoringCommand {
     def this(input: DisableEnhancedMonitoringInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "EnableEnhancedMonitoringCommand")
   @js.native
   open class EnableEnhancedMonitoringCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.enableEnhancedMonitoringCommandMod.EnableEnhancedMonitoringCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsEnableEnhancedMonitoringCommandMod.EnableEnhancedMonitoringCommand {
     def this(input: EnableEnhancedMonitoringInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "GetRecordsCommand")
   @js.native
   open class GetRecordsCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.getRecordsCommandMod.GetRecordsCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsGetRecordsCommandMod.GetRecordsCommand {
     def this(input: GetRecordsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "GetShardIteratorCommand")
   @js.native
   open class GetShardIteratorCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.getShardIteratorCommandMod.GetShardIteratorCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsGetShardIteratorCommandMod.GetShardIteratorCommand {
     def this(input: GetShardIteratorInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "IncreaseStreamRetentionPeriodCommand")
   @js.native
   open class IncreaseStreamRetentionPeriodCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.increaseStreamRetentionPeriodCommandMod.IncreaseStreamRetentionPeriodCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsIncreaseStreamRetentionPeriodCommandMod.IncreaseStreamRetentionPeriodCommand {
     def this(input: IncreaseStreamRetentionPeriodInput) = this()
   }
   
@@ -149,91 +149,91 @@ object mod {
   @JSImport("@aws-sdk/client-kinesis-browser", "ListShardsCommand")
   @js.native
   open class ListShardsCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.listShardsCommandMod.ListShardsCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsListShardsCommandMod.ListShardsCommand {
     def this(input: ListShardsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "ListStreamConsumersCommand")
   @js.native
   open class ListStreamConsumersCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.listStreamConsumersCommandMod.ListStreamConsumersCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsListStreamConsumersCommandMod.ListStreamConsumersCommand {
     def this(input: ListStreamConsumersInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "ListStreamsCommand")
   @js.native
   open class ListStreamsCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.listStreamsCommandMod.ListStreamsCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsListStreamsCommandMod.ListStreamsCommand {
     def this(input: ListStreamsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "ListTagsForStreamCommand")
   @js.native
   open class ListTagsForStreamCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.listTagsForStreamCommandMod.ListTagsForStreamCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsListTagsForStreamCommandMod.ListTagsForStreamCommand {
     def this(input: ListTagsForStreamInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "MergeShardsCommand")
   @js.native
   open class MergeShardsCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.mergeShardsCommandMod.MergeShardsCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsMergeShardsCommandMod.MergeShardsCommand {
     def this(input: MergeShardsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "PutRecordCommand")
   @js.native
   open class PutRecordCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.putRecordCommandMod.PutRecordCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsPutRecordCommandMod.PutRecordCommand {
     def this(input: PutRecordInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "PutRecordsCommand")
   @js.native
   open class PutRecordsCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.putRecordsCommandMod.PutRecordsCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsPutRecordsCommandMod.PutRecordsCommand {
     def this(input: PutRecordsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "RegisterStreamConsumerCommand")
   @js.native
   open class RegisterStreamConsumerCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.registerStreamConsumerCommandMod.RegisterStreamConsumerCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsRegisterStreamConsumerCommandMod.RegisterStreamConsumerCommand {
     def this(input: RegisterStreamConsumerInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "RemoveTagsFromStreamCommand")
   @js.native
   open class RemoveTagsFromStreamCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.removeTagsFromStreamCommandMod.RemoveTagsFromStreamCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsRemoveTagsFromStreamCommandMod.RemoveTagsFromStreamCommand {
     def this(input: RemoveTagsFromStreamInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "SplitShardCommand")
   @js.native
   open class SplitShardCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.splitShardCommandMod.SplitShardCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsSplitShardCommandMod.SplitShardCommand {
     def this(input: SplitShardInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "StartStreamEncryptionCommand")
   @js.native
   open class StartStreamEncryptionCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.startStreamEncryptionCommandMod.StartStreamEncryptionCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsStartStreamEncryptionCommandMod.StartStreamEncryptionCommand {
     def this(input: StartStreamEncryptionInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "StopStreamEncryptionCommand")
   @js.native
   open class StopStreamEncryptionCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.stopStreamEncryptionCommandMod.StopStreamEncryptionCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsStopStreamEncryptionCommandMod.StopStreamEncryptionCommand {
     def this(input: StopStreamEncryptionInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kinesis-browser", "UpdateShardCountCommand")
   @js.native
   open class UpdateShardCountCommand protected ()
-    extends typings.awsSdkClientKinesisBrowser.updateShardCountCommandMod.UpdateShardCountCommand {
+    extends typings.awsSdkClientKinesisBrowser.commandsUpdateShardCountCommandMod.UpdateShardCountCommand {
     def this(input: UpdateShardCountInput) = this()
   }
   

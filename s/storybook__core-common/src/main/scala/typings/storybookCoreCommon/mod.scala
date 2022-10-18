@@ -14,20 +14,20 @@ import typings.storybookCoreCommon.anon.NormalizeOptionsdirectory
 import typings.storybookCoreCommon.anon.Production
 import typings.storybookCoreCommon.anon.Raw
 import typings.storybookCoreCommon.anon.Version
-import typings.storybookCoreCommon.checkAddonOrderMod.Options
-import typings.storybookCoreCommon.fileCacheMod.FileSystemCache
-import typings.storybookCoreCommon.getStorybookInfoMod.StorybookInfo
-import typings.storybookCoreCommon.normalizeStoriesMod.NormalizeOptions
-import typings.storybookCoreCommon.presetsMod.InterPresetOptions
-import typings.storybookCoreCommon.presetsMod.ResolvedAddonPreset
-import typings.storybookCoreCommon.presetsMod.ResolvedAddonVirtual
-import typings.storybookCoreCommon.typesMod.LoadedPreset
-import typings.storybookCoreCommon.typesMod.NormalizedStoriesSpecifier
-import typings.storybookCoreCommon.typesMod.PackageJson
-import typings.storybookCoreCommon.typesMod.PresetConfig
-import typings.storybookCoreCommon.typesMod.Presets
-import typings.storybookCoreCommon.typesMod.StoriesEntry
-import typings.storybookCoreCommon.typesMod.StorybookConfig
+import typings.storybookCoreCommon.distTs3Dot9PresetsMod.InterPresetOptions
+import typings.storybookCoreCommon.distTs3Dot9PresetsMod.ResolvedAddonPreset
+import typings.storybookCoreCommon.distTs3Dot9PresetsMod.ResolvedAddonVirtual
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.LoadedPreset
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.NormalizedStoriesSpecifier
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.PackageJson
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.PresetConfig
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.Presets
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.StoriesEntry
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.StorybookConfig
+import typings.storybookCoreCommon.distTs3Dot9UtilsCheckAddonOrderMod.Options
+import typings.storybookCoreCommon.distTs3Dot9UtilsFileCacheMod.FileSystemCache
+import typings.storybookCoreCommon.distTs3Dot9UtilsGetStorybookInfoMod.StorybookInfo
+import typings.storybookCoreCommon.distTs3Dot9UtilsNormalizeStoriesMod.NormalizeOptions
 import typings.webpack.mod.Configuration
 import typings.webpack.mod.RuleSetRule
 import org.scalablytyped.runtime.StObject
@@ -52,7 +52,7 @@ object mod {
   
   inline def checkWebpackVersion(webpack: Version, specifier: String, caption: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkWebpackVersion")(webpack.asInstanceOf[js.Any], specifier.asInstanceOf[js.Any], caption.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def createFileSystemCache(options: typings.storybookCoreCommon.fileCacheMod.Options): FileSystemCache = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileSystemCache")(options.asInstanceOf[js.Any]).asInstanceOf[FileSystemCache]
+  inline def createFileSystemCache(options: typings.storybookCoreCommon.distTs3Dot9UtilsFileCacheMod.Options): FileSystemCache = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileSystemCache")(options.asInstanceOf[js.Any]).asInstanceOf[FileSystemCache]
   
   inline def es6Transpiler(): RuleSetRule = ^.asInstanceOf[js.Dynamic].applyDynamic("es6Transpiler")().asInstanceOf[RuleSetRule]
   

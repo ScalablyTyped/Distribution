@@ -1,6 +1,6 @@
 package typings.angularCli.anon
 
-import typings.angularCli.workspaceSchemaMod.Environment
+import typings.angularCli.libConfigWorkspaceSchemaMod.Environment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

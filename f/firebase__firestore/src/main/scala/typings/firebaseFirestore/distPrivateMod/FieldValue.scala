@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/private", "FieldValue")
+/* note: abstract class */ @JSImport("@firebase/firestore/dist/private", "FieldValue")
 @js.native
-abstract class FieldValue protected () extends StObject {
+open class FieldValue protected () extends StObject {
   /**
     * @param _methodName - The public API endpoint that returns this class.
     * @hideconstructor

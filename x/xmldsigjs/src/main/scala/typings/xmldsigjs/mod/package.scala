@@ -3,8 +3,8 @@ package typings.xmldsigjs.mod
 import typings.std.Document
 import typings.std.Element
 import typings.std.Node
-import typings.xmlCore.typesMod.AssocArray
-import typings.xmlCore.utilsMod.SelectNodes
+import typings.xmlCore.distTypesTypesMod.AssocArray
+import typings.xmlCore.distTypesUtilsMod.SelectNodes
 import typings.xmldsigjs.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

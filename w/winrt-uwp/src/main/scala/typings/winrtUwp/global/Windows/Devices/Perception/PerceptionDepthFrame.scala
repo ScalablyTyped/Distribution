@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains a Windows.Media.VideoFrame with the depth frame data. */
-@JSGlobal("Windows.Devices.Perception.PerceptionDepthFrame")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.PerceptionDepthFrame")
 @js.native
-abstract class PerceptionDepthFrame ()
+open class PerceptionDepthFrame ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.PerceptionDepthFrame {
   

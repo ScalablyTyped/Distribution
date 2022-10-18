@@ -3,7 +3,7 @@ package typings.reactNativePaper.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
-import typings.reactNativePaper.bottomNavigationMod.Props
+import typings.reactNativePaper.libTypescriptComponentsBottomNavigationBottomNavigationMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

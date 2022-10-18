@@ -19,5 +19,5 @@ object mod {
   
   inline def resolve(specifier: String, parent: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(specifier.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  type ErrnoException = typings.importMetaResolve.errorsMod.ErrnoException
+  type ErrnoException = typings.importMetaResolve.libErrorsMod.ErrnoException
 }

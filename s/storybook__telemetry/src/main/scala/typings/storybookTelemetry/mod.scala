@@ -3,9 +3,9 @@ package typings.storybookTelemetry
 import typings.std.Record
 import typings.storybookTelemetry.anon.MainConfig
 import typings.storybookTelemetry.anon.PartialOptions
-import typings.storybookTelemetry.typesMod.EventType
-import typings.storybookTelemetry.typesMod.Payload
-import typings.storybookTelemetry.typesMod.StorybookMetadata
+import typings.storybookTelemetry.distTs3Dot9TypesMod.EventType
+import typings.storybookTelemetry.distTs3Dot9TypesMod.Payload
+import typings.storybookTelemetry.distTs3Dot9TypesMod.StorybookMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

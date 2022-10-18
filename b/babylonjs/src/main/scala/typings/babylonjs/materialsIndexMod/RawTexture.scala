@@ -1,7 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "RawTexture")
 @js.native
 open class RawTexture protected ()
-  extends typings.babylonjs.texturesIndexMod.RawTexture {
+  extends typings.babylonjs.materialsTexturesIndexMod.RawTexture {
   /**
     * Instantiates a new RawTexture.
     * Raw texture can help creating a texture directly from an array of data.
@@ -68,14 +68,14 @@ object RawTexture {
     width: Double,
     height: Double,
     sceneOrEngine: Nullable[Scene | ThinEngine]
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
     height: Double,
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -83,7 +83,7 @@ object RawTexture {
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Boolean,
     invertY: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -92,7 +92,7 @@ object RawTexture {
     generateMipMaps: Boolean,
     invertY: Boolean,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -101,7 +101,7 @@ object RawTexture {
     generateMipMaps: Boolean,
     invertY: Unit,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -109,7 +109,7 @@ object RawTexture {
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Unit,
     invertY: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -118,7 +118,7 @@ object RawTexture {
     generateMipMaps: Unit,
     invertY: Boolean,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -127,7 +127,7 @@ object RawTexture {
     generateMipMaps: Unit,
     invertY: Unit,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   
   /**
     * Creates a luminance alpha texture from some data.
@@ -145,14 +145,14 @@ object RawTexture {
     width: Double,
     height: Double,
     sceneOrEngine: Nullable[Scene | ThinEngine]
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
     height: Double,
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -160,7 +160,7 @@ object RawTexture {
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Boolean,
     invertY: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -169,7 +169,7 @@ object RawTexture {
     generateMipMaps: Boolean,
     invertY: Boolean,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -178,7 +178,7 @@ object RawTexture {
     generateMipMaps: Boolean,
     invertY: Unit,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -186,7 +186,7 @@ object RawTexture {
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Unit,
     invertY: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -195,7 +195,7 @@ object RawTexture {
     generateMipMaps: Unit,
     invertY: Boolean,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceAlphaTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -204,7 +204,7 @@ object RawTexture {
     generateMipMaps: Unit,
     invertY: Unit,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceAlphaTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   
   /**
     * Creates a luminance texture from some data.
@@ -222,14 +222,14 @@ object RawTexture {
     width: Double,
     height: Double,
     sceneOrEngine: Nullable[Scene | ThinEngine]
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
     height: Double,
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -237,7 +237,7 @@ object RawTexture {
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Boolean,
     invertY: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -246,7 +246,7 @@ object RawTexture {
     generateMipMaps: Boolean,
     invertY: Boolean,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -255,7 +255,7 @@ object RawTexture {
     generateMipMaps: Boolean,
     invertY: Unit,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -263,7 +263,7 @@ object RawTexture {
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Unit,
     invertY: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -272,7 +272,7 @@ object RawTexture {
     generateMipMaps: Unit,
     invertY: Boolean,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateLuminanceTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -281,7 +281,7 @@ object RawTexture {
     generateMipMaps: Unit,
     invertY: Unit,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLuminanceTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   
   /**
     * Creates a RGBA storage texture from some data.
@@ -301,14 +301,14 @@ object RawTexture {
     width: Double,
     height: Double,
     sceneOrEngine: Nullable[Scene | ThinEngine]
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
     height: Double,
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -316,7 +316,7 @@ object RawTexture {
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Boolean,
     invertY: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -325,7 +325,7 @@ object RawTexture {
     generateMipMaps: Boolean,
     invertY: Boolean,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -335,7 +335,7 @@ object RawTexture {
     invertY: Boolean,
     samplingMode: Double,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -346,7 +346,7 @@ object RawTexture {
     samplingMode: Double,
     `type`: Double,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -357,7 +357,7 @@ object RawTexture {
     samplingMode: Double,
     `type`: Unit,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -367,7 +367,7 @@ object RawTexture {
     invertY: Boolean,
     samplingMode: Unit,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -378,7 +378,7 @@ object RawTexture {
     samplingMode: Unit,
     `type`: Double,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -389,7 +389,7 @@ object RawTexture {
     samplingMode: Unit,
     `type`: Unit,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -398,7 +398,7 @@ object RawTexture {
     generateMipMaps: Boolean,
     invertY: Unit,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -408,7 +408,7 @@ object RawTexture {
     invertY: Unit,
     samplingMode: Double,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -419,7 +419,7 @@ object RawTexture {
     samplingMode: Double,
     `type`: Double,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -430,7 +430,7 @@ object RawTexture {
     samplingMode: Double,
     `type`: Unit,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -440,7 +440,7 @@ object RawTexture {
     invertY: Unit,
     samplingMode: Unit,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -451,7 +451,7 @@ object RawTexture {
     samplingMode: Unit,
     `type`: Double,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -462,7 +462,7 @@ object RawTexture {
     samplingMode: Unit,
     `type`: Unit,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -470,7 +470,7 @@ object RawTexture {
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Unit,
     invertY: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -479,7 +479,7 @@ object RawTexture {
     generateMipMaps: Unit,
     invertY: Boolean,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -489,7 +489,7 @@ object RawTexture {
     invertY: Boolean,
     samplingMode: Double,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -500,7 +500,7 @@ object RawTexture {
     samplingMode: Double,
     `type`: Double,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -511,7 +511,7 @@ object RawTexture {
     samplingMode: Double,
     `type`: Unit,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -521,7 +521,7 @@ object RawTexture {
     invertY: Boolean,
     samplingMode: Unit,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -532,7 +532,7 @@ object RawTexture {
     samplingMode: Unit,
     `type`: Double,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -543,7 +543,7 @@ object RawTexture {
     samplingMode: Unit,
     `type`: Unit,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -552,7 +552,7 @@ object RawTexture {
     generateMipMaps: Unit,
     invertY: Unit,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -562,7 +562,7 @@ object RawTexture {
     invertY: Unit,
     samplingMode: Double,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -573,7 +573,7 @@ object RawTexture {
     samplingMode: Double,
     `type`: Double,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -584,7 +584,7 @@ object RawTexture {
     samplingMode: Double,
     `type`: Unit,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -594,7 +594,7 @@ object RawTexture {
     invertY: Unit,
     samplingMode: Unit,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -605,7 +605,7 @@ object RawTexture {
     samplingMode: Unit,
     `type`: Double,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRGBAStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -616,7 +616,7 @@ object RawTexture {
     samplingMode: Unit,
     `type`: Unit,
     useSRGBBuffer: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBAStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   
   /**
     * Creates a RGBA texture from some data.
@@ -643,7 +643,7 @@ object RawTexture {
     `type`: js.UndefOr[Double],
     creationFlags: js.UndefOr[Double],
     useSRGBBuffer: js.UndefOr[Boolean]
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBATexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBATexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   
   /**
     * Creates a RGB texture from some data.
@@ -670,7 +670,7 @@ object RawTexture {
     `type`: js.UndefOr[Double],
     creationFlags: js.UndefOr[Double],
     useSRGBBuffer: js.UndefOr[Boolean]
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRGBTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any], useSRGBBuffer.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   
   /**
     * Creates a R storage texture from some data.
@@ -689,14 +689,14 @@ object RawTexture {
     width: Double,
     height: Double,
     sceneOrEngine: Nullable[Scene | ThinEngine]
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
     height: Double,
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -704,7 +704,7 @@ object RawTexture {
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Boolean,
     invertY: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -713,7 +713,7 @@ object RawTexture {
     generateMipMaps: Boolean,
     invertY: Boolean,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -723,7 +723,7 @@ object RawTexture {
     invertY: Boolean,
     samplingMode: Double,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -733,7 +733,7 @@ object RawTexture {
     invertY: Boolean,
     samplingMode: Unit,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -742,7 +742,7 @@ object RawTexture {
     generateMipMaps: Boolean,
     invertY: Unit,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -752,7 +752,7 @@ object RawTexture {
     invertY: Unit,
     samplingMode: Double,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -762,7 +762,7 @@ object RawTexture {
     invertY: Unit,
     samplingMode: Unit,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -770,7 +770,7 @@ object RawTexture {
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Unit,
     invertY: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -779,7 +779,7 @@ object RawTexture {
     generateMipMaps: Unit,
     invertY: Boolean,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -789,7 +789,7 @@ object RawTexture {
     invertY: Boolean,
     samplingMode: Double,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -799,7 +799,7 @@ object RawTexture {
     invertY: Boolean,
     samplingMode: Unit,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -808,7 +808,7 @@ object RawTexture {
     generateMipMaps: Unit,
     invertY: Unit,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -818,7 +818,7 @@ object RawTexture {
     invertY: Unit,
     samplingMode: Double,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRStorageTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -828,7 +828,7 @@ object RawTexture {
     invertY: Unit,
     samplingMode: Unit,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRStorageTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   
   /**
     * Creates a R texture from some data.
@@ -847,14 +847,14 @@ object RawTexture {
     width: Double,
     height: Double,
     sceneOrEngine: Nullable[Scene | ThinEngine]
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
     height: Double,
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -862,7 +862,7 @@ object RawTexture {
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Boolean,
     invertY: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -871,7 +871,7 @@ object RawTexture {
     generateMipMaps: Boolean,
     invertY: Boolean,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -881,7 +881,7 @@ object RawTexture {
     invertY: Boolean,
     samplingMode: Double,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -891,7 +891,7 @@ object RawTexture {
     invertY: Boolean,
     samplingMode: Unit,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -900,7 +900,7 @@ object RawTexture {
     generateMipMaps: Boolean,
     invertY: Unit,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -910,7 +910,7 @@ object RawTexture {
     invertY: Unit,
     samplingMode: Double,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -920,7 +920,7 @@ object RawTexture {
     invertY: Unit,
     samplingMode: Unit,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -928,7 +928,7 @@ object RawTexture {
     sceneOrEngine: Nullable[Scene | ThinEngine],
     generateMipMaps: Unit,
     invertY: Boolean
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -937,7 +937,7 @@ object RawTexture {
     generateMipMaps: Unit,
     invertY: Boolean,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -947,7 +947,7 @@ object RawTexture {
     invertY: Boolean,
     samplingMode: Double,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -957,7 +957,7 @@ object RawTexture {
     invertY: Boolean,
     samplingMode: Unit,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -966,7 +966,7 @@ object RawTexture {
     generateMipMaps: Unit,
     invertY: Unit,
     samplingMode: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -976,7 +976,7 @@ object RawTexture {
     invertY: Unit,
     samplingMode: Double,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
   inline def CreateRTexture(
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
@@ -986,5 +986,5 @@ object RawTexture {
     invertY: Unit,
     samplingMode: Unit,
     `type`: Double
-  ): typings.babylonjs.rawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rawTextureMod.RawTexture]
+  ): typings.babylonjs.materialsTexturesRawTextureMod.RawTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRTexture")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRawTextureMod.RawTexture]
 }

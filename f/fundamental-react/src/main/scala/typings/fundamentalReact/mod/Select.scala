@@ -2,7 +2,7 @@ package typings.fundamentalReact.mod
 
 import typings.fundamentalReact.anon.PartialSelectProps
 import typings.fundamentalReact.anon.WeakValidationMapSelectPr
-import typings.fundamentalReact.selectMod.SelectProps
+import typings.fundamentalReact.libSelectSelectMod.SelectProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

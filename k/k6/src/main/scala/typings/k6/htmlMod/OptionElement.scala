@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "OptionElement")
+/* note: abstract class */ @JSImport("k6/html", "OptionElement")
 @js.native
-abstract class OptionElement () extends Element {
+open class OptionElement () extends Element {
   
   /** Whether disabled. */
   def disabled(): Boolean = js.native

@@ -5,50 +5,50 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// ECMAScript Module FP Functions
+// FP Functions
 object fpMod {
   
-  @JSImport("date-fns-tz/esm/fp", "format")
+  @JSImport("date-fns-tz/fp", "format")
   @js.native
   val format: CurriedFn2[String, js.Date | String | Double, String] = js.native
   
-  @JSImport("date-fns-tz/esm/fp", "formatInTimeZone")
+  @JSImport("date-fns-tz/fp", "formatInTimeZone")
   @js.native
   val formatInTimeZone: CurriedFn3[String, String, js.Date | String | Double, String] = js.native
   
-  @JSImport("date-fns-tz/esm/fp", "formatInTimeZoneWithOptions")
+  @JSImport("date-fns-tz/fp", "formatInTimeZoneWithOptions")
   @js.native
   val formatInTimeZoneWithOptions: CurriedFn4[OptionsWithTZ, String, String, js.Date | String | Double, String] = js.native
   
-  @JSImport("date-fns-tz/esm/fp", "formatWithOptions")
+  @JSImport("date-fns-tz/fp", "formatWithOptions")
   @js.native
   val formatWithOptions: CurriedFn3[OptionsWithTZ, String, js.Date | String | Double, String] = js.native
   
-  @JSImport("date-fns-tz/esm/fp", "getTimezoneOffset")
+  @JSImport("date-fns-tz/fp", "getTimezoneOffset")
   @js.native
   val getTimezoneOffset: CurriedFn2[js.Date | Double, String, Double] = js.native
   
-  @JSImport("date-fns-tz/esm/fp", "toDate")
+  @JSImport("date-fns-tz/fp", "toDate")
   @js.native
   val toDate: CurriedFn1[js.Date | String | Double, js.Date] = js.native
   
-  @JSImport("date-fns-tz/esm/fp", "toDateWithOptions")
+  @JSImport("date-fns-tz/fp", "toDateWithOptions")
   @js.native
   val toDateWithOptions: CurriedFn2[OptionsWithTZ, js.Date | String | Double, js.Date] = js.native
   
-  @JSImport("date-fns-tz/esm/fp", "utcToZonedTime")
+  @JSImport("date-fns-tz/fp", "utcToZonedTime")
   @js.native
   val utcToZonedTime: CurriedFn2[String, js.Date | String | Double, js.Date] = js.native
   
-  @JSImport("date-fns-tz/esm/fp", "utcToZonedTimeWithOptions")
+  @JSImport("date-fns-tz/fp", "utcToZonedTimeWithOptions")
   @js.native
   val utcToZonedTimeWithOptions: CurriedFn3[OptionsWithTZ, String, js.Date | String | Double, js.Date] = js.native
   
-  @JSImport("date-fns-tz/esm/fp", "zonedTimeToUtc")
+  @JSImport("date-fns-tz/fp", "zonedTimeToUtc")
   @js.native
   val zonedTimeToUtc: CurriedFn2[String, js.Date | String | Double, js.Date] = js.native
   
-  @JSImport("date-fns-tz/esm/fp", "zonedTimeToUtcWithOptions")
+  @JSImport("date-fns-tz/fp", "zonedTimeToUtcWithOptions")
   @js.native
   val zonedTimeToUtcWithOptions: CurriedFn3[OptionsWithTZ, String, js.Date | String | Double, js.Date] = js.native
 }

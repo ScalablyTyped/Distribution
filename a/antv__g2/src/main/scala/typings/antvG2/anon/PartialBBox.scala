@@ -1,8 +1,8 @@
 package typings.antvG2.anon
 
-import typings.antvG2.bboxMod.BBox
-import typings.antvG2.constantMod.DIRECTION
+import typings.antvG2.libConstantMod.DIRECTION
 import typings.antvG2.libInterfaceMod.Point
+import typings.antvG2.libUtilBboxMod.BBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

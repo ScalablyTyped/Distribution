@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.uifabricUtilities.fabricPerformanceMod.IPerfSummary
+import typings.uifabricUtilities.libFabricPerformanceMod.IPerfSummary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("office-ui-fabric-react", "FabricPerformance")
 @js.native
 open class FabricPerformance ()
-  extends typings.officeUiFabricReact.utilitiesMod.FabricPerformance
+  extends typings.officeUiFabricReact.libUtilitiesMod.FabricPerformance
 /* static members */
 object FabricPerformance {
   

@@ -21,6 +21,6 @@ object Classifiers {
     
     inline def setClassifiers(value: js.Array[Classifier]): Self = StObject.set(x, "classifiers", value.asInstanceOf[js.Any])
     
-    inline def setClassifiersVarargs(value: Classifier*): Self = StObject.set(x, "classifiers", js.Array(value :_*))
+    inline def setClassifiersVarargs(value: Classifier*): Self = StObject.set(x, "classifiers", js.Array(value*))
   }
 }

@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.menuMod.MenuProps
+import typings.blueprintjsCore.libEsmComponentsMenuMenuMod.MenuProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Menu")
 @js.native
 open class Menu protected ()
-  extends typings.blueprintjsCore.componentsMod.Menu {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Menu {
   def this(props: MenuProps) = this()
   def this(props: MenuProps, context: Any) = this()
 }

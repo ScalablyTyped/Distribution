@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait MaintenanceWindow extends StObject {
   
   /** Exceptions to maintenance window. Non-emergency maintenance should not occur in these windows. */
   var maintenanceExclusions: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.container.gapi.client.container.TimeWindow}
-    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.MaintenanceWindow & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.container.gapi.client.container.TimeWindow} */ js.Any
   ] = js.undefined
   
   /**
@@ -37,9 +34,7 @@ object MaintenanceWindow {
     inline def setDailyMaintenanceWindowUndefined: Self = StObject.set(x, "dailyMaintenanceWindow", js.undefined)
     
     inline def setMaintenanceExclusions(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.container.gapi.client.container.TimeWindow}
-      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.MaintenanceWindow & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.container.gapi.client.container.TimeWindow} */ js.Any
     ): Self = StObject.set(x, "maintenanceExclusions", value.asInstanceOf[js.Any])
     
     inline def setMaintenanceExclusionsUndefined: Self = StObject.set(x, "maintenanceExclusions", js.undefined)

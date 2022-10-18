@@ -1,12 +1,12 @@
 package typings.remixRunRouter
 
+import typings.remixRunRouter.distRouterMod.RouterFetchOptions
+import typings.remixRunRouter.distUtilsMod.DataResult
+import typings.remixRunRouter.distUtilsMod.Params
 import typings.remixRunRouter.remixRunRouterStrings.get
 import typings.remixRunRouter.remixRunRouterStrings.idle
 import typings.remixRunRouter.remixRunRouterStrings.loading
 import typings.remixRunRouter.remixRunRouterStrings.submitting
-import typings.remixRunRouter.routerMod.RouterFetchOptions
-import typings.remixRunRouter.utilsMod.DataResult
-import typings.remixRunRouter.utilsMod.Params
 import typings.std.Exclude
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
@@ -29,9 +29,9 @@ object anon {
     
     var formData: js.UndefOr[typings.std.FormData] = js.undefined
     
-    var formEncType: js.UndefOr[typings.remixRunRouter.utilsMod.FormEncType] = js.undefined
+    var formEncType: js.UndefOr[typings.remixRunRouter.distUtilsMod.FormEncType] = js.undefined
     
-    var formMethod: js.UndefOr[Exclude[typings.remixRunRouter.utilsMod.FormMethod, get]] = js.undefined
+    var formMethod: js.UndefOr[Exclude[typings.remixRunRouter.distUtilsMod.FormMethod, get]] = js.undefined
     
     var nextParams: Params[String]
     
@@ -70,11 +70,11 @@ object anon {
       
       inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
       
-      inline def setFormEncType(value: typings.remixRunRouter.utilsMod.FormEncType): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
+      inline def setFormEncType(value: typings.remixRunRouter.distUtilsMod.FormEncType): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
       
       inline def setFormEncTypeUndefined: Self = StObject.set(x, "formEncType", js.undefined)
       
-      inline def setFormMethod(value: Exclude[typings.remixRunRouter.utilsMod.FormMethod, get]): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
+      inline def setFormMethod(value: Exclude[typings.remixRunRouter.distUtilsMod.FormMethod, get]): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
       
       inline def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
       
@@ -131,9 +131,9 @@ object anon {
     
     var formData: js.UndefOr[typings.std.FormData] = js.undefined
     
-    var formEncType: js.UndefOr[typings.remixRunRouter.utilsMod.FormEncType] = js.undefined
+    var formEncType: js.UndefOr[typings.remixRunRouter.distUtilsMod.FormEncType] = js.undefined
     
-    var formMethod: js.UndefOr[typings.remixRunRouter.utilsMod.FormMethod] = js.undefined
+    var formMethod: js.UndefOr[typings.remixRunRouter.distUtilsMod.FormMethod] = js.undefined
     
     var state: loading
   }
@@ -158,11 +158,11 @@ object anon {
       
       inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
       
-      inline def setFormEncType(value: typings.remixRunRouter.utilsMod.FormEncType): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
+      inline def setFormEncType(value: typings.remixRunRouter.distUtilsMod.FormEncType): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
       
       inline def setFormEncTypeUndefined: Self = StObject.set(x, "formEncType", js.undefined)
       
-      inline def setFormMethod(value: typings.remixRunRouter.utilsMod.FormMethod): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
+      inline def setFormMethod(value: typings.remixRunRouter.distUtilsMod.FormMethod): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
       
       inline def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
       
@@ -178,9 +178,9 @@ object anon {
     
     var formData: typings.std.FormData
     
-    var formEncType: typings.remixRunRouter.utilsMod.FormEncType
+    var formEncType: typings.remixRunRouter.distUtilsMod.FormEncType
     
-    var formMethod: typings.remixRunRouter.utilsMod.FormMethod
+    var formMethod: typings.remixRunRouter.distUtilsMod.FormMethod
     
     var state: submitting
   }
@@ -189,8 +189,8 @@ object anon {
     inline def apply[TData](
       formAction: String,
       formData: typings.std.FormData,
-      formEncType: typings.remixRunRouter.utilsMod.FormEncType,
-      formMethod: typings.remixRunRouter.utilsMod.FormMethod
+      formEncType: typings.remixRunRouter.distUtilsMod.FormEncType,
+      formMethod: typings.remixRunRouter.distUtilsMod.FormMethod
     ): FormData[TData] = {
       val __obj = js.Dynamic.literal(formAction = formAction.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], formEncType = formEncType.asInstanceOf[js.Any], formMethod = formMethod.asInstanceOf[js.Any], state = "submitting")
       __obj.asInstanceOf[FormData[TData]]
@@ -206,9 +206,9 @@ object anon {
       
       inline def setFormData(value: typings.std.FormData): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
-      inline def setFormEncType(value: typings.remixRunRouter.utilsMod.FormEncType): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
+      inline def setFormEncType(value: typings.remixRunRouter.distUtilsMod.FormEncType): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
       
-      inline def setFormMethod(value: typings.remixRunRouter.utilsMod.FormMethod): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
+      inline def setFormMethod(value: typings.remixRunRouter.distUtilsMod.FormMethod): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
       
       inline def setState(value: submitting): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
@@ -257,17 +257,17 @@ object anon {
     
     var formData: js.UndefOr[typings.std.FormData] = js.undefined
     
-    var formEncType: js.UndefOr[typings.remixRunRouter.utilsMod.FormEncType] = js.undefined
+    var formEncType: js.UndefOr[typings.remixRunRouter.distUtilsMod.FormEncType] = js.undefined
     
-    var formMethod: js.UndefOr[typings.remixRunRouter.utilsMod.FormMethod] = js.undefined
+    var formMethod: js.UndefOr[typings.remixRunRouter.distUtilsMod.FormMethod] = js.undefined
     
-    var location: typings.remixRunRouter.historyMod.Location
+    var location: typings.remixRunRouter.distHistoryMod.Location
     
     var state: loading
   }
   object FormMethod {
     
-    inline def apply(location: typings.remixRunRouter.historyMod.Location): FormMethod = {
+    inline def apply(location: typings.remixRunRouter.distHistoryMod.Location): FormMethod = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], state = "loading")
       __obj.asInstanceOf[FormMethod]
     }
@@ -282,15 +282,15 @@ object anon {
       
       inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
       
-      inline def setFormEncType(value: typings.remixRunRouter.utilsMod.FormEncType): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
+      inline def setFormEncType(value: typings.remixRunRouter.distUtilsMod.FormEncType): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
       
       inline def setFormEncTypeUndefined: Self = StObject.set(x, "formEncType", js.undefined)
       
-      inline def setFormMethod(value: typings.remixRunRouter.utilsMod.FormMethod): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
+      inline def setFormMethod(value: typings.remixRunRouter.distUtilsMod.FormMethod): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
       
       inline def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
       
-      inline def setLocation(value: typings.remixRunRouter.historyMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: typings.remixRunRouter.distHistoryMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       inline def setState(value: loading): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
@@ -302,11 +302,11 @@ object anon {
     
     var formData: typings.std.FormData
     
-    var formEncType: typings.remixRunRouter.utilsMod.FormEncType
+    var formEncType: typings.remixRunRouter.distUtilsMod.FormEncType
     
-    var formMethod: typings.remixRunRouter.utilsMod.FormMethod
+    var formMethod: typings.remixRunRouter.distUtilsMod.FormMethod
     
-    var location: typings.remixRunRouter.historyMod.Location
+    var location: typings.remixRunRouter.distHistoryMod.Location
     
     var state: submitting
   }
@@ -315,9 +315,9 @@ object anon {
     inline def apply(
       formAction: String,
       formData: typings.std.FormData,
-      formEncType: typings.remixRunRouter.utilsMod.FormEncType,
-      formMethod: typings.remixRunRouter.utilsMod.FormMethod,
-      location: typings.remixRunRouter.historyMod.Location
+      formEncType: typings.remixRunRouter.distUtilsMod.FormEncType,
+      formMethod: typings.remixRunRouter.distUtilsMod.FormMethod,
+      location: typings.remixRunRouter.distHistoryMod.Location
     ): Location = {
       val __obj = js.Dynamic.literal(formAction = formAction.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], formEncType = formEncType.asInstanceOf[js.Any], formMethod = formMethod.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], state = "submitting")
       __obj.asInstanceOf[Location]
@@ -329,11 +329,11 @@ object anon {
       
       inline def setFormData(value: typings.std.FormData): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
-      inline def setFormEncType(value: typings.remixRunRouter.utilsMod.FormEncType): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
+      inline def setFormEncType(value: typings.remixRunRouter.distUtilsMod.FormEncType): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
       
-      inline def setFormMethod(value: typings.remixRunRouter.utilsMod.FormMethod): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
+      inline def setFormMethod(value: typings.remixRunRouter.distUtilsMod.FormMethod): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
       
-      inline def setLocation(value: typings.remixRunRouter.historyMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: typings.remixRunRouter.distHistoryMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       inline def setState(value: submitting): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
@@ -374,9 +374,9 @@ object anon {
     
     var formData: typings.std.FormData
     
-    var formEncType: js.UndefOr[typings.remixRunRouter.utilsMod.FormEncType] = js.undefined
+    var formEncType: js.UndefOr[typings.remixRunRouter.distUtilsMod.FormEncType] = js.undefined
     
-    var formMethod: js.UndefOr[typings.remixRunRouter.utilsMod.FormMethod] = js.undefined
+    var formMethod: js.UndefOr[typings.remixRunRouter.distUtilsMod.FormMethod] = js.undefined
     
     var state: js.UndefOr[Any] = js.undefined
   }
@@ -391,11 +391,11 @@ object anon {
       
       inline def setFormData(value: typings.std.FormData): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
-      inline def setFormEncType(value: typings.remixRunRouter.utilsMod.FormEncType): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
+      inline def setFormEncType(value: typings.remixRunRouter.distUtilsMod.FormEncType): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
       
       inline def setFormEncTypeUndefined: Self = StObject.set(x, "formEncType", js.undefined)
       
-      inline def setFormMethod(value: typings.remixRunRouter.utilsMod.FormMethod): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
+      inline def setFormMethod(value: typings.remixRunRouter.distUtilsMod.FormMethod): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
       
       inline def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
       

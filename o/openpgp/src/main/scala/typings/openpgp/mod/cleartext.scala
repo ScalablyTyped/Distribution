@@ -1,6 +1,6 @@
 package typings.openpgp.mod
 
-import typings.openpgp.anon.Keyid
+import typings.openpgp.anon.Valid
 import typings.openpgp.mod.signature.Signature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -69,7 +69,7 @@ object cleartext {
       * @param date (optional) Verify the signature against the given date, i.e. check signature creation time < date < expiration time
       * @returns list of signer's keyid and validity of signature
       */
-    def verify(keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Keyid]] = js.native
+    def verify(keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Valid]] = js.native
     
     /**
       * Verify signatures of cleartext signed message
@@ -77,7 +77,7 @@ object cleartext {
       * @param date (optional) Verify the signature against the given date, i.e. check signature creation time < date < expiration time
       * @returns list of signer's keyid and validity of signature
       */
-    def verifyDetached(keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Keyid]] = js.native
+    def verifyDetached(keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Valid]] = js.native
   }
   
   /**

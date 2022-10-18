@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [heightSegments=1] — Number of segmented faces along the height of the sides.
   */
 open class PlaneGeometry ()
-  extends typings.three.threeMod.PlaneGeometry {
+  extends typings.three.srcThreeMod.PlaneGeometry {
   def this(width: Double) = this()
   def this(width: Double, height: Double) = this()
   def this(width: Unit, height: Double) = this()
@@ -37,5 +37,5 @@ object PlaneGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.planeGeometryMod.PlaneGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.planeGeometryMod.PlaneGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesPlaneGeometryMod.PlaneGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesPlaneGeometryMod.PlaneGeometry]
 }

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Background {
   
   /** Used to provide the DeviceInformation.ID , expected duration, and arguments given by the app that triggered the background servicing task. */
-  @JSGlobal("Windows.Devices.Background.DeviceServicingDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Background.DeviceServicingDetails")
   @js.native
-  abstract class DeviceServicingDetails ()
+  open class DeviceServicingDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Background.DeviceServicingDetails {
     
@@ -28,9 +28,9 @@ object Background {
   }
   
   /** Used to provide the DeviceInformation.ID and arguments given by the app that triggered the background sync task. */
-  @JSGlobal("Windows.Devices.Background.DeviceUseDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Background.DeviceUseDetails")
   @js.native
-  abstract class DeviceUseDetails ()
+  open class DeviceUseDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Background.DeviceUseDetails {
     

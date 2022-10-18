@@ -8,11 +8,11 @@ trait ParametersPathRepoSecretname extends StObject {
   
   var parameters: PathRepoSecretname
   
-  var responses: `200Content164`
+  var responses: `200ContentApplicationjsonCreatedatName`
 }
 object ParametersPathRepoSecretname {
   
-  inline def apply(parameters: PathRepoSecretname, responses: `200Content164`): ParametersPathRepoSecretname = {
+  inline def apply(parameters: PathRepoSecretname, responses: `200ContentApplicationjsonCreatedatName`): ParametersPathRepoSecretname = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathRepoSecretname]
   }
@@ -21,6 +21,6 @@ object ParametersPathRepoSecretname {
     
     inline def setParameters(value: PathRepoSecretname): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content164`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonCreatedatName`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

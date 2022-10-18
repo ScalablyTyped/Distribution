@@ -1,5 +1,6 @@
 package typings.node
 
+import typings.node.NodeJS.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +50,7 @@ object wasiMod {
       * of a [`WebAssembly.Instance`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance).
       * @since v13.3.0, v12.16.0
       */
-    val wasiImport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<any> */ Any = js.native
+    val wasiImport: Dict[Any] = js.native
   }
   
   trait WASIOptions extends StObject {
@@ -73,9 +74,7 @@ object wasiMod {
       * directories within the sandbox. The corresponding values in `preopens` are
       * the real paths to those directories on the host machine.
       */
-    var preopens: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any
-      ] = js.undefined
+    var preopens: js.UndefOr[Dict[String]] = js.undefined
     
     /**
       * By default, WASI applications terminate the Node.js
@@ -123,9 +122,7 @@ object wasiMod {
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      inline def setPreopens(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any
-      ): Self = StObject.set(x, "preopens", value.asInstanceOf[js.Any])
+      inline def setPreopens(value: Dict[String]): Self = StObject.set(x, "preopens", value.asInstanceOf[js.Any])
       
       inline def setPreopensUndefined: Self = StObject.set(x, "preopens", js.undefined)
       

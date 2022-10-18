@@ -147,9 +147,9 @@ inline def whileStatement(condition: Expression, body: js.Array[Statement]): Whi
   - typings.pico8parse.pico8parseStrings.LessthansignLessthansignGreaterthansign
   - typings.pico8parse.pico8parseStrings.GreaterthansignGreaterthansignLessthansign
   - typings.pico8parse.pico8parseStrings.`^^`
-  - java.lang.String
+  - / * \ * / java.lang.String
 */
-type BinaryOperator = _BinaryOperator | String
+type BinaryOperator = _BinaryOperator | (/* \ */ String)
 
 type BreakStatement_ = Base[BreakStatement]
 

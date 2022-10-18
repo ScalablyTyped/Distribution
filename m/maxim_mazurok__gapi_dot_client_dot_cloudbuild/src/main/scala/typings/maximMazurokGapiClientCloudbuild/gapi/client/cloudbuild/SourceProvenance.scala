@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +12,7 @@ trait SourceProvenance extends StObject {
     * build source came in a single package such as a gzipped tarfile (`.tar.gz`), the `FileHash` will be for the single path to that file.
     */
   var fileHashes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.cloudbuild.gapi.client.cloudbuild.FileHashes}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.SourceProvenance & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.cloudbuild.gapi.client.cloudbuild.FileHashes} */ js.Any
   ] = js.undefined
   
   /** A copy of the build's `source.repo_source`, if exists, with any revisions resolved. */
@@ -37,9 +34,7 @@ object SourceProvenance {
   extension [Self <: SourceProvenance](x: Self) {
     
     inline def setFileHashes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.cloudbuild.gapi.client.cloudbuild.FileHashes}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.SourceProvenance & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.cloudbuild.gapi.client.cloudbuild.FileHashes} */ js.Any
     ): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
     
     inline def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)

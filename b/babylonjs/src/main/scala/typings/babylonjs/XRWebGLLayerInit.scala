@@ -14,7 +14,7 @@ trait XRWebGLLayerInit extends StObject {
   
   var framebufferScaleFactor: js.UndefOr[Double] = js.undefined
   
-  var multiview: js.UndefOr[Boolean] = js.undefined
+  var ignoreDepthValues: js.UndefOr[Boolean] = js.undefined
   
   var stencil: js.UndefOr[Boolean] = js.undefined
 }
@@ -43,9 +43,9 @@ object XRWebGLLayerInit {
     
     inline def setFramebufferScaleFactorUndefined: Self = StObject.set(x, "framebufferScaleFactor", js.undefined)
     
-    inline def setMultiview(value: Boolean): Self = StObject.set(x, "multiview", value.asInstanceOf[js.Any])
+    inline def setIgnoreDepthValues(value: Boolean): Self = StObject.set(x, "ignoreDepthValues", value.asInstanceOf[js.Any])
     
-    inline def setMultiviewUndefined: Self = StObject.set(x, "multiview", js.undefined)
+    inline def setIgnoreDepthValuesUndefined: Self = StObject.set(x, "ignoreDepthValues", js.undefined)
     
     inline def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
     

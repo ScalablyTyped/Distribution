@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "RenderSession")
 @js.native
 open class RenderSession ()
-  extends typings.blackEngine.renderSessionMod.RenderSession
+  extends typings.blackEngine.driversRenderSessionMod.RenderSession

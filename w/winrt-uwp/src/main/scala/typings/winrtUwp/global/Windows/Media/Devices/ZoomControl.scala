@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the zoom settings on a capture device. */
-@JSGlobal("Windows.Media.Devices.ZoomControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.ZoomControl")
 @js.native
-abstract class ZoomControl ()
+open class ZoomControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.ZoomControl {
   

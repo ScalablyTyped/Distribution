@@ -1,7 +1,7 @@
 
 # Scala.js typings for nginstack__engine
 
-Typings are for version 64.0
+Typings are for version 65.0
 
 ## Library description:
 Native JavaScript library from nginstack Engine. See the [nginstack site](nginstack.com) for  more information.

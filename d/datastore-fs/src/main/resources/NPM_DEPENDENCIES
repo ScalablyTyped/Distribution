@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "datastore-fs" : "8.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "datastore-fs" : "8.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

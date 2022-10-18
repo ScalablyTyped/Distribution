@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Rendering/index", "OutlineRenderer")
 @js.native
 open class OutlineRenderer protected ()
-  extends typings.babylonjs.outlineRendererMod.OutlineRenderer {
+  extends typings.babylonjs.renderingOutlineRendererMod.OutlineRenderer {
   /**
     * Instantiates a new outline renderer. (There could be only one per scene).
     * @param scene Defines the scene it belongs to

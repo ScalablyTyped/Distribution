@@ -21,19 +21,19 @@ open class Path3D protected ()
   def this(/**
     * an array of Vector3, the curve axis of the Path3D
     */
-  path: js.Array[typings.babylonjs.mathVectorMod.Vector3]) = this()
+  path: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3]) = this()
   def this(
     /**
     * an array of Vector3, the curve axis of the Path3D
     */
-  path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    firstNormal: Nullable[typings.babylonjs.mathVectorMod.Vector3]
+  path: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    firstNormal: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector3]
   ) = this()
   def this(
     /**
     * an array of Vector3, the curve axis of the Path3D
     */
-  path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+  path: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3],
     firstNormal: Unit,
     raw: Boolean
   ) = this()
@@ -41,15 +41,15 @@ open class Path3D protected ()
     /**
     * an array of Vector3, the curve axis of the Path3D
     */
-  path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    firstNormal: Nullable[typings.babylonjs.mathVectorMod.Vector3],
+  path: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    firstNormal: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
     raw: Boolean
   ) = this()
   def this(
     /**
     * an array of Vector3, the curve axis of the Path3D
     */
-  path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+  path: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3],
     firstNormal: Unit,
     raw: Boolean,
     alignTangentsWithPath: Boolean
@@ -58,7 +58,7 @@ open class Path3D protected ()
     /**
     * an array of Vector3, the curve axis of the Path3D
     */
-  path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+  path: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3],
     firstNormal: Unit,
     raw: Unit,
     alignTangentsWithPath: Boolean
@@ -67,8 +67,8 @@ open class Path3D protected ()
     /**
     * an array of Vector3, the curve axis of the Path3D
     */
-  path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    firstNormal: Nullable[typings.babylonjs.mathVectorMod.Vector3],
+  path: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    firstNormal: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
     raw: Boolean,
     alignTangentsWithPath: Boolean
   ) = this()
@@ -76,8 +76,8 @@ open class Path3D protected ()
     /**
     * an array of Vector3, the curve axis of the Path3D
     */
-  path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
-    firstNormal: Nullable[typings.babylonjs.mathVectorMod.Vector3],
+  path: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    firstNormal: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
     raw: Unit,
     alignTangentsWithPath: Boolean
   ) = this()

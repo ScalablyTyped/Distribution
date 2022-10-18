@@ -23,9 +23,9 @@ object ojkeysetMod {
     def values(): Set[K] = js.native
   }
   
-  @JSImport("@oracle/oraclejet/ojkeyset", "KeySet")
+  /* note: abstract class */ @JSImport("@oracle/oraclejet/ojkeyset", "KeySet")
   @js.native
-  abstract class KeySet[K] () extends StObject {
+  open class KeySet[K] () extends StObject {
     
     def add(keys: js.Array[K]): KeySet[K] = js.native
     def add(keys: Set[K]): KeySet[K] = js.native

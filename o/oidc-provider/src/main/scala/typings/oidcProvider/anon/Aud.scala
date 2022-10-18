@@ -2,7 +2,6 @@ package typings.oidcProvider.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.oidcProvider.mod.ClaimsParameter
-import typings.oidcProvider.mod.ResourceServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ trait Aud
   
   var jkt: js.UndefOr[String] = js.undefined
   
-  var resourceServer: js.UndefOr[ResourceServer] = js.undefined
+  var resourceServer: js.UndefOr[typings.oidcProvider.mod.ResourceServer] = js.undefined
   
   var scope: String
   
@@ -79,7 +78,7 @@ object Aud {
     
     inline def setJktUndefined: Self = StObject.set(x, "jkt", js.undefined)
     
-    inline def setResourceServer(value: ResourceServer): Self = StObject.set(x, "resourceServer", value.asInstanceOf[js.Any])
+    inline def setResourceServer(value: typings.oidcProvider.mod.ResourceServer): Self = StObject.set(x, "resourceServer", value.asInstanceOf[js.Any])
     
     inline def setResourceServerUndefined: Self = StObject.set(x, "resourceServer", js.undefined)
     

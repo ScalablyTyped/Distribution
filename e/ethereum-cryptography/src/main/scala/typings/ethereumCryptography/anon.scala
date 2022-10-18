@@ -8,27 +8,6 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: Unit
-    
-    var noncefn: Unit
-  }
-  object Data {
-    
-    inline def apply(data: Unit, noncefn: Unit): Data = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], noncefn = noncefn.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Data]
-    }
-    
-    extension [Self <: Data](x: Self) {
-      
-      inline def setData(value: Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setNoncefn(value: Unit): Self = StObject.set(x, "noncefn", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Hashfn extends StObject {
-    
     var data: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
     
     var hashfn: js.UndefOr[
@@ -44,14 +23,14 @@ object anon {
     
     var ybuf: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
   }
-  object Hashfn {
+  object Data {
     
-    inline def apply(): Hashfn = {
+    inline def apply(): Data = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Hashfn]
+      __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Hashfn](x: Self) {
+    extension [Self <: Data](x: Self) {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -70,6 +49,27 @@ object anon {
       inline def setYbuf(value: js.typedarray.Uint8Array): Self = StObject.set(x, "ybuf", value.asInstanceOf[js.Any])
       
       inline def setYbufUndefined: Self = StObject.set(x, "ybuf", js.undefined)
+    }
+  }
+  
+  trait Noncefn extends StObject {
+    
+    var data: Unit
+    
+    var noncefn: Unit
+  }
+  object Noncefn {
+    
+    inline def apply(data: Unit, noncefn: Unit): Noncefn = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], noncefn = noncefn.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Noncefn]
+    }
+    
+    extension [Self <: Noncefn](x: Self) {
+      
+      inline def setData(value: Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setNoncefn(value: Unit): Self = StObject.set(x, "noncefn", value.asInstanceOf[js.Any])
     }
   }
 }

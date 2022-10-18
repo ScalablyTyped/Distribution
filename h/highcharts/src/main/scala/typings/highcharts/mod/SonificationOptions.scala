@@ -38,14 +38,18 @@ trait SonificationOptions extends StObject {
     * series using `seriesOptions`.
     */
   var earcons: js.UndefOr[
-    js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.EarconConfiguration]
+    js.Array[
+      typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconConfiguration
+    ]
   ] = js.undefined
   
   /**
     * The instrument definitions for the points in this chart.
     */
   var instruments: js.UndefOr[
-    js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject]
+    js.Array[
+      typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject
+    ]
   ] = js.undefined
   
   /**
@@ -76,7 +80,9 @@ trait SonificationOptions extends StObject {
     * the elements in an array.
     */
   var order: String | (js.Array[
-    String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon | (js.Array[String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon])
+    String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon | (js.Array[
+      String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon
+    ])
   ])
   
   /**
@@ -104,7 +110,9 @@ object SonificationOptions {
   inline def apply(
     duration: Double,
     order: String | (js.Array[
-      String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon | (js.Array[String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon])
+      String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon | (js.Array[
+        String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon
+      ])
     ]),
     pointPlayTime: String | js.Function
   ): SonificationOptions = {
@@ -124,17 +132,25 @@ object SonificationOptions {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setEarcons(value: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.EarconConfiguration]): Self = StObject.set(x, "earcons", value.asInstanceOf[js.Any])
+    inline def setEarcons(
+      value: js.Array[
+          typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconConfiguration
+        ]
+    ): Self = StObject.set(x, "earcons", value.asInstanceOf[js.Any])
     
     inline def setEarconsUndefined: Self = StObject.set(x, "earcons", js.undefined)
     
-    inline def setEarconsVarargs(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.EarconConfiguration*): Self = StObject.set(x, "earcons", js.Array(value*))
+    inline def setEarconsVarargs(value: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconConfiguration*): Self = StObject.set(x, "earcons", js.Array(value*))
     
-    inline def setInstruments(value: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject]): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
+    inline def setInstruments(
+      value: js.Array[
+          typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject
+        ]
+    ): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
     
     inline def setInstrumentsUndefined: Self = StObject.set(x, "instruments", js.undefined)
     
-    inline def setInstrumentsVarargs(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject*): Self = StObject.set(x, "instruments", js.Array(value*))
+    inline def setInstrumentsVarargs(value: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject*): Self = StObject.set(x, "instruments", js.Array(value*))
     
     inline def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     
@@ -150,12 +166,16 @@ object SonificationOptions {
     
     inline def setOrder(
       value: String | (js.Array[
-          String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon | (js.Array[String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon])
+          String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon | (js.Array[
+            String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon
+          ])
         ])
     ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     inline def setOrderVarargs(
-      value: (String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon | (js.Array[String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon]))*
+      value: (String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon | (js.Array[
+          String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon
+        ]))*
     ): Self = StObject.set(x, "order", js.Array(value*))
     
     inline def setPointPlayTime(value: String | js.Function): Self = StObject.set(x, "pointPlayTime", value.asInstanceOf[js.Any])

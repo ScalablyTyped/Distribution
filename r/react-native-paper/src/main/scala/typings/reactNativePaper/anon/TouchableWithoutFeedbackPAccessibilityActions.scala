@@ -231,69 +231,6 @@ trait TouchableWithoutFeedbackPAccessibilityActions extends StObject {
   /**
     * //FIXME: not in doc but available in examples
     */
-  /**
-    * Data tables allow displaying sets of data.
-    *
-    * <div class="screenshots">
-    *   <figure>
-    *     <img class="large" src="screenshots/data-table.png" />
-    *     <figcaption>Data table</figcaption>
-    *   </figure>
-    * </div>
-    *
-    * ## Usage
-    * ```js
-    * import * as React from 'react';
-    * import { DataTable } from 'react-native-paper';
-    *
-    * const optionsPerPage = [2, 3, 4];
-    *
-    * const MyComponent = () => {
-    *   const [page, setPage] = React.useState<number>(0);
-    *   const [itemsPerPage, setItemsPerPage] = React.useState(optionsPerPage[0]);
-    *
-    *   React.useEffect(() => {
-    *     setPage(0);
-    *   }, [itemsPerPage]);
-    *
-    *   return (
-    *     <DataTable>
-    *       <DataTable.Header>
-    *         <DataTable.Title>Dessert</DataTable.Title>
-    *         <DataTable.Title numeric>Calories</DataTable.Title>
-    *         <DataTable.Title numeric>Fat</DataTable.Title>
-    *       </DataTable.Header>
-    *
-    *       <DataTable.Row>
-    *         <DataTable.Cell>Frozen yogurt</DataTable.Cell>
-    *         <DataTable.Cell numeric>159</DataTable.Cell>
-    *         <DataTable.Cell numeric>6.0</DataTable.Cell>
-    *       </DataTable.Row>
-    *
-    *       <DataTable.Row>
-    *         <DataTable.Cell>Ice cream sandwich</DataTable.Cell>
-    *         <DataTable.Cell numeric>237</DataTable.Cell>
-    *         <DataTable.Cell numeric>8.0</DataTable.Cell>
-    *       </DataTable.Row>
-    *
-    *       <DataTable.Pagination
-    *         page={page}
-    *         numberOfPages={3}
-    *         onPageChange={(page) => setPage(page)}
-    *         label="1-2 of 6"
-    *         optionsPerPage={optionsPerPage}
-    *         itemsPerPage={itemsPerPage}
-    *         setItemsPerPage={setItemsPerPage}
-    *         showFastPagination
-    *         optionsLabel={'Rows per page'}
-    *       />
-    *     </DataTable>
-    *   );
-    *}
-    *
-    * export default MyComponent;
-    * ```
-    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
@@ -303,7 +240,7 @@ trait TouchableWithoutFeedbackPAccessibilityActions extends StObject {
   
   var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * If true, doesn't play a system sound on touch.
@@ -316,7 +253,7 @@ object TouchableWithoutFeedbackPAccessibilityActions {
   
   inline def apply(
     onPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]],
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   ): TouchableWithoutFeedbackPAccessibilityActions = {
     val __obj = js.Dynamic.literal(onPress = onPress.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchableWithoutFeedbackPAccessibilityActions]
@@ -498,7 +435,7 @@ object TouchableWithoutFeedbackPAccessibilityActions {
     
     inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
     

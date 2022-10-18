@@ -15,5 +15,5 @@ object BRDFTextureTools {
     * @param scene defines the hosting scene
     * @returns the environment BRDF texture
     */
-  inline def GetEnvironmentBRDFTexture(scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.baseTextureMod.BaseTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEnvironmentBRDFTexture")(scene.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.baseTextureMod.BaseTexture]
+  inline def GetEnvironmentBRDFTexture(scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEnvironmentBRDFTexture")(scene.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture]
 }

@@ -1,21 +1,17 @@
 package typings.formatjsEcma402Abstract.typesNumberMod
 
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.auto
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.compact
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.engineering
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.lessPrecision
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.long
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.morePrecision
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.narrow
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.scientific
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.short
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.standard
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.stripIfInteger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Omit<std.Intl.NumberFormatOptions, 'signDisplay'> & @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatDigitOptions & {  localeMatcher :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsLocaleMatcher | undefined,   style :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsStyle | undefined,   compactDisplay :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsCompactDisplay | undefined,   currencyDisplay :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsCurrencyDisplay | undefined,   currencySign :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsCurrencySign | undefined,   notation :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsNotation | undefined,   signDisplay :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsSignDisplay | undefined,   unit :string | undefined,   unitDisplay :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsUnitDisplay | undefined,   numberingSystem :string | undefined,   trailingZeroDisplay :'auto' | 'stripIfInteger' | undefined,   roundingPriority :'auto' | 'morePrecision' | 'lessPrecision' | undefined} */
+/* Inlined std.Omit<std.Intl.NumberFormatOptions, 'signDisplay' | 'useGrouping'> & @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatDigitOptions & {  localeMatcher :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsLocaleMatcher | undefined,   style :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsStyle | undefined,   compactDisplay :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsCompactDisplay | undefined,   currencyDisplay :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsCurrencyDisplay | undefined,   currencySign :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsCurrencySign | undefined,   notation :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsNotation | undefined,   signDisplay :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsSignDisplay | undefined,   unit :string | undefined,   unitDisplay :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.NumberFormatOptionsUnitDisplay | undefined,   numberingSystem :string | undefined,   trailingZeroDisplay :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.TrailingZeroDisplay | undefined,   roundingPriority :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.RoundingPriorityType | undefined,   roundingIncrement :number | undefined,   roundingMode :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.RoundingModeType | undefined,   useGrouping :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/number.UseGroupingType | undefined} */
 trait NumberFormatOptions extends StObject {
   
   var compactDisplay: (js.UndefOr[short | long]) & js.UndefOr[NumberFormatOptionsCompactDisplay]
@@ -42,19 +38,23 @@ trait NumberFormatOptions extends StObject {
   
   var numberingSystem: js.UndefOr[String] = js.undefined
   
-  var roundingPriority: js.UndefOr[auto | morePrecision | lessPrecision] = js.undefined
+  var roundingIncrement: js.UndefOr[Double] = js.undefined
+  
+  var roundingMode: js.UndefOr[RoundingModeType] = js.undefined
+  
+  var roundingPriority: js.UndefOr[RoundingPriorityType] = js.undefined
   
   var signDisplay: js.UndefOr[NumberFormatOptionsSignDisplay] = js.undefined
   
   var style: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsStyle]
   
-  var trailingZeroDisplay: js.UndefOr[auto | stripIfInteger] = js.undefined
+  var trailingZeroDisplay: js.UndefOr[TrailingZeroDisplay] = js.undefined
   
   var unit: js.UndefOr[String] = js.undefined
   
   var unitDisplay: (js.UndefOr[short | long | narrow]) & js.UndefOr[NumberFormatOptionsUnitDisplay]
   
-  var useGrouping: js.UndefOr[Boolean] = js.undefined
+  var useGrouping: js.UndefOr[UseGroupingType] = js.undefined
 }
 object NumberFormatOptions {
   
@@ -113,7 +113,15 @@ object NumberFormatOptions {
     
     inline def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
     
-    inline def setRoundingPriority(value: auto | morePrecision | lessPrecision): Self = StObject.set(x, "roundingPriority", value.asInstanceOf[js.Any])
+    inline def setRoundingIncrement(value: Double): Self = StObject.set(x, "roundingIncrement", value.asInstanceOf[js.Any])
+    
+    inline def setRoundingIncrementUndefined: Self = StObject.set(x, "roundingIncrement", js.undefined)
+    
+    inline def setRoundingMode(value: RoundingModeType): Self = StObject.set(x, "roundingMode", value.asInstanceOf[js.Any])
+    
+    inline def setRoundingModeUndefined: Self = StObject.set(x, "roundingMode", js.undefined)
+    
+    inline def setRoundingPriority(value: RoundingPriorityType): Self = StObject.set(x, "roundingPriority", value.asInstanceOf[js.Any])
     
     inline def setRoundingPriorityUndefined: Self = StObject.set(x, "roundingPriority", js.undefined)
     
@@ -123,7 +131,7 @@ object NumberFormatOptions {
     
     inline def setStyle(value: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    inline def setTrailingZeroDisplay(value: auto | stripIfInteger): Self = StObject.set(x, "trailingZeroDisplay", value.asInstanceOf[js.Any])
+    inline def setTrailingZeroDisplay(value: TrailingZeroDisplay): Self = StObject.set(x, "trailingZeroDisplay", value.asInstanceOf[js.Any])
     
     inline def setTrailingZeroDisplayUndefined: Self = StObject.set(x, "trailingZeroDisplay", js.undefined)
     
@@ -133,7 +141,7 @@ object NumberFormatOptions {
     
     inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    inline def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+    inline def setUseGrouping(value: UseGroupingType): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
     
     inline def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
   }

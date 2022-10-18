@@ -1,10 +1,10 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvComponent.typesMod.AxisLabelCfg
-import typings.antvComponent.typesMod.AxisLineCfg
-import typings.antvComponent.typesMod.AxisSubTickLineCfg
-import typings.antvComponent.typesMod.AxisTickLineCfg
-import typings.antvComponent.typesMod.AxisTitleCfg
+import typings.antvComponent.libTypesMod.AxisLabelCfg
+import typings.antvComponent.libTypesMod.AxisLineCfg
+import typings.antvComponent.libTypesMod.AxisSubTickLineCfg
+import typings.antvComponent.libTypesMod.AxisTickLineCfg
+import typings.antvComponent.libTypesMod.AxisTitleCfg
 import typings.antvG2.antvG2Strings.bottom
 import typings.antvG2.antvG2Strings.left
 import typings.antvG2.antvG2Strings.right

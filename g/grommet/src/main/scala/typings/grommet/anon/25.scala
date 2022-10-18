@@ -1,12 +1,18 @@
 package typings.grommet.anon
 
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `25` extends StObject {
   
-  var hover: js.UndefOr[BackgroundExtend] = js.undefined
+  var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
+  
+  var size: js.UndefOr[DictxLarge] = js.undefined
 }
 object `25` {
   
@@ -17,8 +23,14 @@ object `25` {
   
   extension [Self <: `25`](x: Self) {
     
-    inline def setHover(value: BackgroundExtend): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, Any]] => ExtendValue[Record[String, Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    
+    inline def setSize(value: DictxLarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.AllowInInput
-import typings.blueprintjsCore.hotkeyMod.IHotkeyProps
+import typings.blueprintjsCore.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Hotkey")
 @js.native
 open class Hotkey protected ()
-  extends typings.blueprintjsCore.componentsMod.Hotkey {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Hotkey {
   def this(props: IHotkeyProps) = this()
   def this(props: IHotkeyProps, context: Any) = this()
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PredefinedColorSpace extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.PredefinedColorSpace & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.PredefinedColorSpace & String] = js.native
   
-  /* "srgb" */ val SRGB: typings.babylonjs.webgpuConstantsMod.PredefinedColorSpace.SRGB & String = js.native
+  /* "srgb" */ val SRGB: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.PredefinedColorSpace.SRGB & String = js.native
 }

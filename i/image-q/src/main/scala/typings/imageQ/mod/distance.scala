@@ -6,35 +6,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distance {
   
-  @JSImport("image-q", "distance.AbstractDistanceCalculator")
+  /* note: abstract class */ @JSImport("image-q", "distance.AbstractDistanceCalculator")
   @js.native
-  abstract class AbstractDistanceCalculator ()
-    extends typings.imageQ.distanceMod.AbstractDistanceCalculator
+  open class AbstractDistanceCalculator ()
+    extends typings.imageQ.distTypesSrcDistanceMod.AbstractDistanceCalculator
   
-  @JSImport("image-q", "distance.AbstractEuclidean")
+  /* note: abstract class */ @JSImport("image-q", "distance.AbstractEuclidean")
   @js.native
-  abstract class AbstractEuclidean ()
-    extends typings.imageQ.distanceMod.AbstractEuclidean
+  open class AbstractEuclidean ()
+    extends typings.imageQ.distTypesSrcDistanceMod.AbstractEuclidean
   
-  @JSImport("image-q", "distance.AbstractManhattan")
+  /* note: abstract class */ @JSImport("image-q", "distance.AbstractManhattan")
   @js.native
-  abstract class AbstractManhattan ()
-    extends typings.imageQ.distanceMod.AbstractManhattan
+  open class AbstractManhattan ()
+    extends typings.imageQ.distTypesSrcDistanceMod.AbstractManhattan
   
   @JSImport("image-q", "distance.CIE94GraphicArts")
   @js.native
   open class CIE94GraphicArts ()
-    extends typings.imageQ.distanceMod.CIE94GraphicArts
+    extends typings.imageQ.distTypesSrcDistanceMod.CIE94GraphicArts
   
   @JSImport("image-q", "distance.CIE94Textiles")
   @js.native
   open class CIE94Textiles ()
-    extends typings.imageQ.distanceMod.CIE94Textiles
+    extends typings.imageQ.distTypesSrcDistanceMod.CIE94Textiles
   
   @JSImport("image-q", "distance.CIEDE2000")
   @js.native
   open class CIEDE2000 ()
-    extends typings.imageQ.distanceMod.CIEDE2000
+    extends typings.imageQ.distTypesSrcDistanceMod.CIEDE2000
   /* static members */
   object CIEDE2000 {
     
@@ -112,40 +112,40 @@ object distance {
   @JSImport("image-q", "distance.CMetric")
   @js.native
   open class CMetric ()
-    extends typings.imageQ.distanceMod.CMetric
+    extends typings.imageQ.distTypesSrcDistanceMod.CMetric
   
   @JSImport("image-q", "distance.Euclidean")
   @js.native
   open class Euclidean ()
-    extends typings.imageQ.distanceMod.Euclidean
+    extends typings.imageQ.distTypesSrcDistanceMod.Euclidean
   
   @JSImport("image-q", "distance.EuclideanBT709")
   @js.native
   open class EuclideanBT709 ()
-    extends typings.imageQ.distanceMod.EuclideanBT709
+    extends typings.imageQ.distTypesSrcDistanceMod.EuclideanBT709
   
   @JSImport("image-q", "distance.EuclideanBT709NoAlpha")
   @js.native
   open class EuclideanBT709NoAlpha ()
-    extends typings.imageQ.distanceMod.EuclideanBT709NoAlpha
+    extends typings.imageQ.distTypesSrcDistanceMod.EuclideanBT709NoAlpha
   
   @JSImport("image-q", "distance.Manhattan")
   @js.native
   open class Manhattan ()
-    extends typings.imageQ.distanceMod.Manhattan
+    extends typings.imageQ.distTypesSrcDistanceMod.Manhattan
   
   @JSImport("image-q", "distance.ManhattanBT709")
   @js.native
   open class ManhattanBT709 ()
-    extends typings.imageQ.distanceMod.ManhattanBT709
+    extends typings.imageQ.distTypesSrcDistanceMod.ManhattanBT709
   
   @JSImport("image-q", "distance.ManhattanNommyde")
   @js.native
   open class ManhattanNommyde ()
-    extends typings.imageQ.distanceMod.ManhattanNommyde
+    extends typings.imageQ.distTypesSrcDistanceMod.ManhattanNommyde
   
   @JSImport("image-q", "distance.PNGQuant")
   @js.native
   open class PNGQuant ()
-    extends typings.imageQ.distanceMod.PNGQuant
+    extends typings.imageQ.distTypesSrcDistanceMod.PNGQuant
 }

@@ -104,10 +104,6 @@ object vueRuntimeCoreStrings {
   inline def CUSTOM_DIR: CUSTOM_DIR = "CUSTOM_DIR".asInstanceOf[CUSTOM_DIR]
   
   @js.native
-  sealed trait ComponentObjectPropsOptions extends StObject
-  inline def ComponentObjectPropsOptions: ComponentObjectPropsOptions = "ComponentObjectPropsOptions".asInstanceOf[ComponentObjectPropsOptions]
-  
-  @js.native
   sealed trait D
     extends StObject
        with OptionTypesKeys
@@ -118,18 +114,6 @@ object vueRuntimeCoreStrings {
     extends StObject
        with OptionTypesKeys
   inline def Defaults: Defaults = "Defaults".asInstanceOf[Defaults]
-  
-  @js.native
-  sealed trait EmitsToProps extends StObject
-  inline def EmitsToProps: EmitsToProps = "EmitsToProps".asInstanceOf[EmitsToProps]
-  
-  @js.native
-  sealed trait ExtractComputedReturns extends StObject
-  inline def ExtractComputedReturns: ExtractComputedReturns = "ExtractComputedReturns".asInstanceOf[ExtractComputedReturns]
-  
-  @js.native
-  sealed trait ExtractDefaultPropTypes extends StObject
-  inline def ExtractDefaultPropTypes: ExtractDefaultPropTypes = "ExtractDefaultPropTypes".asInstanceOf[ExtractDefaultPropTypes]
   
   @js.native
   sealed trait FILTERS
@@ -240,18 +224,10 @@ object vueRuntimeCoreStrings {
   inline def INSTANCE_SET: INSTANCE_SET = "INSTANCE_SET".asInstanceOf[INSTANCE_SET]
   
   @js.native
-  sealed trait InferDefaults extends StObject
-  inline def InferDefaults: InferDefaults = "InferDefaults".asInstanceOf[InferDefaults]
-  
-  @js.native
   sealed trait M
     extends StObject
        with OptionTypesKeys
   inline def M: M = "M".asInstanceOf[M]
-  
-  @js.native
-  sealed trait MapSources extends StObject
-  inline def MapSources: MapSources = "MapSources".asInstanceOf[MapSources]
   
   @js.native
   sealed trait OPTIONS_BEFORE_DESTROY
@@ -296,10 +272,6 @@ object vueRuntimeCoreStrings {
   inline def PROPS_DEFAULT_THIS: PROPS_DEFAULT_THIS = "PROPS_DEFAULT_THIS".asInstanceOf[PROPS_DEFAULT_THIS]
   
   @js.native
-  sealed trait PropsWithDefaults extends StObject
-  inline def PropsWithDefaults: PropsWithDefaults = "PropsWithDefaults".asInstanceOf[PropsWithDefaults]
-  
-  @js.native
   sealed trait RENDER_FUNCTION
     extends StObject
        with DeprecationTypes
@@ -328,10 +300,6 @@ object vueRuntimeCoreStrings {
     extends StObject
        with DeprecationTypes
   inline def WATCH_ARRAY: WATCH_ARRAY = "WATCH_ARRAY".asInstanceOf[WATCH_ARRAY]
-  
-  @js.native
-  sealed trait _defineProps extends StObject
-  inline def _defineProps: _defineProps = "_defineProps".asInstanceOf[_defineProps]
   
   @js.native
   sealed trait a
@@ -502,14 +470,6 @@ object vueRuntimeCoreStrings {
   @js.native
   sealed trait dd extends StObject
   inline def dd: dd = "dd".asInstanceOf[dd]
-  
-  @js.native
-  sealed trait defineComponent extends StObject
-  inline def defineComponent: defineComponent = "defineComponent".asInstanceOf[defineComponent]
-  
-  @js.native
-  sealed trait defineProps extends StObject
-  inline def defineProps: defineProps = "defineProps".asInstanceOf[defineProps]
   
   @js.native
   sealed trait defs extends StObject

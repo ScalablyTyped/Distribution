@@ -11,8 +11,8 @@ object router {
   open class Editor ()
     extends typings.yandexMaps.mod.router.Editor
   
-  @JSGlobal("ymaps.router.Route")
+  /* note: abstract class */ @JSGlobal("ymaps.router.Route")
   @js.native
-  abstract class Route ()
+  open class Route ()
     extends typings.yandexMaps.mod.router.Route
 }

@@ -1,6 +1,5 @@
 package typings.emotionStyledBase
 
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,57 +22,6 @@ object anon {
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
-    }
-  }
-  
-  trait Theme extends StObject {
-    
-    var theme: /* import warning: importer.ImportType#apply Failed type conversion: infer Theme */ js.Any
-  }
-  object Theme {
-    
-    inline def apply(theme: /* import warning: importer.ImportType#apply Failed type conversion: infer Theme */ js.Any): Theme = {
-      val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Theme]
-    }
-    
-    extension [Self <: Theme](x: Self) {
-      
-      inline def setTheme(value: /* import warning: importer.ImportType#apply Failed type conversion: infer Theme */ js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ThemeExclude extends StObject {
-    
-    var theme: Exclude[Any, Unit]
-  }
-  object ThemeExclude {
-    
-    inline def apply(theme: Exclude[Any, Unit]): ThemeExclude = {
-      val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ThemeExclude]
-    }
-    
-    extension [Self <: ThemeExclude](x: Self) {
-      
-      inline def setTheme(value: Exclude[Any, Unit]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ThemeT[T] extends StObject {
-    
-    var theme: T
-  }
-  object ThemeT {
-    
-    inline def apply[T](theme: T): ThemeT[T] = {
-      val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ThemeT[T]]
-    }
-    
-    extension [Self <: ThemeT[?], T](x: Self & ThemeT[T]) {
-      
-      inline def setTheme(value: T): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,6 +1,6 @@
 package typings.playable.anon
 
-import typings.playable.themeTypesMod.IThemeConfig
+import typings.playable.distSrcModulesUiCoreThemeTypesMod.IThemeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

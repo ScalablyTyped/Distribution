@@ -1,11 +1,11 @@
 package typings.opentelemetrySdkTraceBase
 
-import typings.opentelemetryApi.diagTypesMod.DiagLogLevel
+import typings.opentelemetryApi.buildSrcDiagTypesMod.DiagLogLevel
 import typings.opentelemetryResources.mod.Resource
-import typings.opentelemetrySdkTraceBase.idGeneratorMod.IdGenerator
-import typings.opentelemetrySdkTraceBase.samplerMod.Sampler
-import typings.opentelemetrySdkTraceBase.typesMod.GeneralLimits
-import typings.opentelemetrySdkTraceBase.typesMod.SpanLimits
+import typings.opentelemetrySdkTraceBase.buildSrcIdGeneratorMod.IdGenerator
+import typings.opentelemetrySdkTraceBase.buildSrcSamplerMod.Sampler
+import typings.opentelemetrySdkTraceBase.buildSrcTypesMod.GeneralLimits
+import typings.opentelemetrySdkTraceBase.buildSrcTypesMod.SpanLimits
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

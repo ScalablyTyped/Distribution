@@ -7,10 +7,10 @@ import typings.builderUtilRuntime.builderUtilRuntimeStrings.DELETE
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.GET
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.POST
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.PUT
-import typings.builderUtilRuntime.httpExecutorMod.Request
-import typings.builderUtilRuntime.progressCallbackTransformMod.ProgressInfo
-import typings.builderUtilRuntime.publishOptionsMod.GithubOptions
-import typings.builderUtilRuntime.publishOptionsMod.PublishConfiguration
+import typings.builderUtilRuntime.outHttpExecutorMod.Request
+import typings.builderUtilRuntime.outProgressCallbackTransformMod.ProgressInfo
+import typings.builderUtilRuntime.outPublishOptionsMod.GithubOptions
+import typings.builderUtilRuntime.outPublishOptionsMod.PublishConfiguration
 import typings.node.bufferMod.global.Buffer
 import typings.node.cryptoMod.BinaryToTextEncoding
 import typings.node.httpMod.IncomingMessage
@@ -39,19 +39,19 @@ object mod {
   @JSImport("builder-util-runtime", "CancellationError")
   @js.native
   open class CancellationError ()
-    extends typings.builderUtilRuntime.cancellationTokenMod.CancellationError
+    extends typings.builderUtilRuntime.outCancellationTokenMod.CancellationError
   
   @JSImport("builder-util-runtime", "CancellationToken")
   @js.native
   open class CancellationToken ()
-    extends typings.builderUtilRuntime.cancellationTokenMod.CancellationToken {
-    def this(parent: typings.builderUtilRuntime.cancellationTokenMod.CancellationToken) = this()
+    extends typings.builderUtilRuntime.outCancellationTokenMod.CancellationToken {
+    def this(parent: typings.builderUtilRuntime.outCancellationTokenMod.CancellationToken) = this()
   }
   
   @JSImport("builder-util-runtime", "DigestTransform")
   @js.native
   open class DigestTransform protected ()
-    extends typings.builderUtilRuntime.httpExecutorMod.DigestTransform {
+    extends typings.builderUtilRuntime.outHttpExecutorMod.DigestTransform {
     def this(expected: String) = this()
     def this(expected: String, algorithm: String) = this()
     def this(expected: String, algorithm: String, encoding: BinaryToTextEncoding) = this()
@@ -61,17 +61,17 @@ object mod {
   @JSImport("builder-util-runtime", "HttpError")
   @js.native
   open class HttpError protected ()
-    extends typings.builderUtilRuntime.httpExecutorMod.HttpError {
+    extends typings.builderUtilRuntime.outHttpExecutorMod.HttpError {
     def this(statusCode: Double) = this()
     def this(statusCode: Double, message: String) = this()
     def this(statusCode: Double, message: String, description: Any) = this()
     def this(statusCode: Double, message: Unit, description: Any) = this()
   }
   
-  @JSImport("builder-util-runtime", "HttpExecutor")
+  /* note: abstract class */ @JSImport("builder-util-runtime", "HttpExecutor")
   @js.native
-  abstract class HttpExecutor[T /* <: Request */] ()
-    extends typings.builderUtilRuntime.httpExecutorMod.HttpExecutor[T]
+  open class HttpExecutor[T /* <: Request */] ()
+    extends typings.builderUtilRuntime.outHttpExecutorMod.HttpExecutor[T]
   /* static members */
   object HttpExecutor {
     
@@ -88,10 +88,10 @@ object mod {
   @JSImport("builder-util-runtime", "ProgressCallbackTransform")
   @js.native
   open class ProgressCallbackTransform protected ()
-    extends typings.builderUtilRuntime.progressCallbackTransformMod.ProgressCallbackTransform {
+    extends typings.builderUtilRuntime.outProgressCallbackTransformMod.ProgressCallbackTransform {
     def this(
       total: Double,
-      cancellationToken: typings.builderUtilRuntime.cancellationTokenMod.CancellationToken,
+      cancellationToken: typings.builderUtilRuntime.outCancellationTokenMod.CancellationToken,
       onProgress: js.Function1[/* info */ ProgressInfo, Any]
     ) = this()
   }
@@ -99,7 +99,7 @@ object mod {
   @JSImport("builder-util-runtime", "UUID")
   @js.native
   open class UUID protected ()
-    extends typings.builderUtilRuntime.uuidMod.UUID {
+    extends typings.builderUtilRuntime.outUuidMod.UUID {
     def this(uuid: String) = this()
     def this(uuid: Buffer) = this()
   }
@@ -128,7 +128,7 @@ object mod {
   @JSImport("builder-util-runtime", "XElement")
   @js.native
   open class XElement protected ()
-    extends typings.builderUtilRuntime.xmlMod.XElement {
+    extends typings.builderUtilRuntime.outXmlMod.XElement {
     def this(name: String) = this()
   }
   
@@ -146,8 +146,8 @@ object mod {
   
   inline def configureRequestUrl(url: URL_, options: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def createHttpError(response: IncomingMessage): typings.builderUtilRuntime.httpExecutorMod.HttpError = ^.asInstanceOf[js.Dynamic].applyDynamic("createHttpError")(response.asInstanceOf[js.Any]).asInstanceOf[typings.builderUtilRuntime.httpExecutorMod.HttpError]
-  inline def createHttpError(response: IncomingMessage, description: Any): typings.builderUtilRuntime.httpExecutorMod.HttpError = (^.asInstanceOf[js.Dynamic].applyDynamic("createHttpError")(response.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[typings.builderUtilRuntime.httpExecutorMod.HttpError]
+  inline def createHttpError(response: IncomingMessage): typings.builderUtilRuntime.outHttpExecutorMod.HttpError = ^.asInstanceOf[js.Dynamic].applyDynamic("createHttpError")(response.asInstanceOf[js.Any]).asInstanceOf[typings.builderUtilRuntime.outHttpExecutorMod.HttpError]
+  inline def createHttpError(response: IncomingMessage, description: Any): typings.builderUtilRuntime.outHttpExecutorMod.HttpError = (^.asInstanceOf[js.Dynamic].applyDynamic("createHttpError")(response.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[typings.builderUtilRuntime.outHttpExecutorMod.HttpError]
   
   inline def getS3LikeProviderBaseUrl(configuration: PublishConfiguration): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getS3LikeProviderBaseUrl")(configuration.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -160,7 +160,7 @@ object mod {
   
   inline def parseJson(result: js.Promise[String | Null]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJson")(result.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
-  inline def parseXml(data: String): typings.builderUtilRuntime.xmlMod.XElement = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(data.asInstanceOf[js.Any]).asInstanceOf[typings.builderUtilRuntime.xmlMod.XElement]
+  inline def parseXml(data: String): typings.builderUtilRuntime.outXmlMod.XElement = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(data.asInstanceOf[js.Any]).asInstanceOf[typings.builderUtilRuntime.outXmlMod.XElement]
   
   inline def safeGetHeader(response: Any, headerKey: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("safeGetHeader")(response.asInstanceOf[js.Any], headerKey.asInstanceOf[js.Any])).asInstanceOf[Any]
   

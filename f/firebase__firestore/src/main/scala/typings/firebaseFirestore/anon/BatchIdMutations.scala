@@ -8,11 +8,11 @@ trait BatchIdMutations extends StObject {
   
   var batchId: Double
   
-  var mutations: js.Array[`22`]
+  var mutations: js.Array[`30`]
 }
 object BatchIdMutations {
   
-  inline def apply(batchId: Double, mutations: js.Array[`22`]): BatchIdMutations = {
+  inline def apply(batchId: Double, mutations: js.Array[`30`]): BatchIdMutations = {
     val __obj = js.Dynamic.literal(batchId = batchId.asInstanceOf[js.Any], mutations = mutations.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchIdMutations]
   }
@@ -21,8 +21,8 @@ object BatchIdMutations {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    inline def setMutations(value: js.Array[`22`]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
+    inline def setMutations(value: js.Array[`30`]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
     
-    inline def setMutationsVarargs(value: `22`*): Self = StObject.set(x, "mutations", js.Array(value*))
+    inline def setMutationsVarargs(value: `30`*): Self = StObject.set(x, "mutations", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 package typings.from
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,8 +15,8 @@ object mod extends Shortcut {
   @js.native
   trait From extends StObject {
     
-    def apply(chunks: js.Array[Any]): ReadableStream[Any] = js.native
-    def apply(getChunk: js.Function2[/* count */ Double, /* next */ js.Function0[Any], Any]): ReadableStream[Any] = js.native
+    def apply(chunks: js.Array[Any]): ReadableStream = js.native
+    def apply(getChunk: js.Function2[/* count */ Double, /* next */ js.Function0[Any], Any]): ReadableStream = js.native
     
     def emit(`type`: String, data: Any): Unit = js.native
   }

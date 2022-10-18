@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native-svg", "Ellipse")
 @js.native
 open class Ellipse ()
-  extends typings.reactNativeSvg.reactNativeSVGMod.Ellipse
+  extends typings.reactNativeSvg.libTypescriptReactNativeSVGMod.Ellipse
 /* static members */
 object Ellipse {
   

@@ -1,8 +1,19 @@
 package typings.officeUiFabricReact.anon
 
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.basePickerTypesMod.ValidationState
-import typings.officeUiFabricReact.imageTypesMod.ImageLoadState
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageLoadState
+import typings.officeUiFabricReact.libComponentsPersonaPersonaCoinPersonaCoinDotbaseMod.PersonaCoinBase
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDotbaseMod.PersonaBase
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.IPersona
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.IPersonaCoinProps
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.IPersonaProps
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.IPersonaSharedProps
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.IPersonaStyleProps
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.IPersonaStyles
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.PersonaInitialsColor
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.PersonaPresence
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.PersonaSize
+import typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.ValidationState
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions removals`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions text`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`inline`
@@ -53,17 +64,6 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.tree
 import typings.officeUiFabricReact.officeUiFabricReactStrings.url
 import typings.officeUiFabricReact.officeUiFabricReactStrings.vertical
 import typings.officeUiFabricReact.officeUiFabricReactStrings.yes
-import typings.officeUiFabricReact.personaBaseMod.PersonaBase
-import typings.officeUiFabricReact.personaCoinBaseMod.PersonaCoinBase
-import typings.officeUiFabricReact.personaTypesMod.IPersona
-import typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps
-import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
-import typings.officeUiFabricReact.personaTypesMod.IPersonaSharedProps
-import typings.officeUiFabricReact.personaTypesMod.IPersonaStyleProps
-import typings.officeUiFabricReact.personaTypesMod.IPersonaStyles
-import typings.officeUiFabricReact.personaTypesMod.PersonaInitialsColor
-import typings.officeUiFabricReact.personaTypesMod.PersonaPresence
-import typings.officeUiFabricReact.personaTypesMod.PersonaSize
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -102,10 +102,10 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
-import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricUtilities.createRefMod.IRefObject
-import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
+import typings.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricUtilities.libCreateRefMod.IRefObject
+import typings.uifabricUtilities.libIrenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,7 +113,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined office-ui-fabric-react.office-ui-fabric-react/lib/Persona.IPersonaProps & {  ValidationState :office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/BasePicker.types.ValidationState} */
 trait IPersonaPropsValidationSt extends StObject {
   
-  var ValidationState: typings.officeUiFabricReact.basePickerTypesMod.ValidationState
+  var ValidationState: typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.ValidationState
   
   // RDFa Attributes
   var about: js.UndefOr[String] = js.undefined

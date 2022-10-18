@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AnimationKeyInterpolation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.animationKeyMod.AnimationKeyInterpolation & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.animationsAnimationKeyMod.AnimationKeyInterpolation & Double] = js.native
   
-  /* 0 */ val NONE: typings.babylonjs.animationKeyMod.AnimationKeyInterpolation.NONE & Double = js.native
+  /* 0 */ val NONE: typings.babylonjs.animationsAnimationKeyMod.AnimationKeyInterpolation.NONE & Double = js.native
   
-  /* 1 */ val STEP: typings.babylonjs.animationKeyMod.AnimationKeyInterpolation.STEP & Double = js.native
+  /* 1 */ val STEP: typings.babylonjs.animationsAnimationKeyMod.AnimationKeyInterpolation.STEP & Double = js.native
 }

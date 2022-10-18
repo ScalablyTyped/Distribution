@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "CircleCollider")
 @js.native
 open class CircleCollider protected ()
-  extends typings.blackEngine.circleColliderMod.CircleCollider {
+  extends typings.blackEngine.collidersCircleColliderMod.CircleCollider {
   def this(x: Double, y: Double, radius: Double) = this()
 }

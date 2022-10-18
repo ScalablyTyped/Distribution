@@ -1,6 +1,6 @@
 package typings.victoryCore.anon
 
-import typings.victoryCore.timerMod.default
+import typings.victoryCore.libVictoryUtilTimerMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel.ISetDataOptions
-import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
+import typings.luminoCoreutils.typesJsonMod.ReadonlyPartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

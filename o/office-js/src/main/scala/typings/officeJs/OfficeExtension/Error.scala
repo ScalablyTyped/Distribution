@@ -16,7 +16,7 @@ trait Error extends StObject {
   /** Inner error, if applicable. */
   var innerError: Error
   
-  /** The error message passed through from the host Office application. */
+  /** The error message passed through from the Office application. */
   var message: String
   
   /** Error name: "OfficeExtension.Error".*/
@@ -26,8 +26,8 @@ trait Error extends StObject {
   var stack: String
   
   /**
-    * Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`. 
-    * If there was an error, this contains all trace messages that were executed before the error occurred. 
+    * Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`.
+    * If there was an error, this contains all trace messages that were executed before the error occurred.
     * These messages can help you monitor the program execution sequence and detect the case of the error.
     */
   var traceMessages: js.Array[String]

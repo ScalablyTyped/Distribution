@@ -1,7 +1,7 @@
 package typings.blueprintjsIcons
 
-import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
-import typings.blueprintjsIcons.pascalCaseMod.PascalCase
+import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmTypeUtilsPascalCaseMod.PascalCase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -136,6 +136,11 @@ object mod {
     def alignmentVerticalCenter: String = js.native
     
     inline def alignmentVerticalCenter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignment-vertical-center")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconCodepoints.anchor")
+    @js.native
+    def anchor: String = js.native
+    inline def anchor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("anchor")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconCodepoints.annotation")
     @js.native
@@ -2299,6 +2304,11 @@ object mod {
     def refresh: String = js.native
     inline def refresh_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refresh")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconCodepoints.regex")
+    @js.native
+    def regex: String = js.native
+    inline def regex_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regex")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconCodepoints.regression-chart")
     @js.native
     def regressionChart: String = js.native
@@ -3271,6 +3281,12 @@ object mod {
     def ALIGN_RIGHT: BlueprintIcons16Id = js.native
     inline def ALIGN_RIGHT_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_RIGHT")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.ANCHOR")
+    @js.native
+    def ANCHOR_ : BlueprintIcons16Id = js.native
+    
+    inline def ANCHOR__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANCHOR")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.ANNOTATION")
     @js.native
     def ANNOTATION_ : BlueprintIcons16Id = js.native
@@ -3508,6 +3524,11 @@ object mod {
     @js.native
     def AlignmentVerticalCenter: BlueprintIcons16Id = js.native
     inline def AlignmentVerticalCenter_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentVerticalCenter")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.Anchor")
+    @js.native
+    def Anchor: BlueprintIcons16Id = js.native
+    inline def Anchor_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Anchor")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.Annotation")
     @js.native
@@ -7389,6 +7410,12 @@ object mod {
     
     inline def REFRESH__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REFRESH")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.REGEX")
+    @js.native
+    def REGEX_ : BlueprintIcons16Id = js.native
+    
+    inline def REGEX__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REGEX")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.REGRESSION_CHART")
     @js.native
     def REGRESSION_CHART: BlueprintIcons16Id = js.native
@@ -7526,6 +7553,11 @@ object mod {
     @js.native
     def Refresh: BlueprintIcons16Id = js.native
     inline def Refresh_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Refresh")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.Regex")
+    @js.native
+    def Regex: BlueprintIcons16Id = js.native
+    inline def Regex_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Regex")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.RegressionChart")
     @js.native
@@ -9117,6 +9149,10 @@ object mod {
     @js.native
     val AlignmentVerticalCenter: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.Anchor")
+    @js.native
+    val Anchor: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.Annotation")
     @js.native
     val Annotation: js.Array[String] = js.native
@@ -10657,6 +10693,10 @@ object mod {
     @js.native
     val Refresh: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.Regex")
+    @js.native
+    val Regex: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.RegressionChart")
     @js.native
     val RegressionChart: js.Array[String] = js.native
@@ -11351,6 +11391,10 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.AlignmentVerticalCenter")
     @js.native
     val AlignmentVerticalCenter: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.Anchor")
+    @js.native
+    val Anchor: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.Annotation")
     @js.native
@@ -12891,6 +12935,10 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.Refresh")
     @js.native
     val Refresh: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.Regex")
+    @js.native
+    val Regex: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.RegressionChart")
     @js.native

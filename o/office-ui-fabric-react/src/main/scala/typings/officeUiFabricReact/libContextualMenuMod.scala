@@ -1,13 +1,13 @@
 package typings.officeUiFabricReact
 
-import typings.fluentuiTheme.ithemeMod.ITheme
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
 import typings.officeUiFabricReact.anon.Target
-import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemProps
-import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemStyleProps
-import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemStyles
-import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem
-import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps
-import typings.officeUiFabricReact.contextualMenuTypesMod.IMenuItemStyles
+import typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.IContextualMenuItem
+import typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.IContextualMenuProps
+import typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.IMenuItemStyles
+import typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuItemDottypesMod.IContextualMenuItemProps
+import typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuItemDottypesMod.IContextualMenuItemStyleProps
+import typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuItemDottypesMod.IContextualMenuItemStyles
 import typings.officeUiFabricReact.officeUiFabricReactInts.`0`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`10`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`11`
@@ -40,7 +40,7 @@ object libContextualMenuMod {
   @JSImport("office-ui-fabric-react/lib/ContextualMenu", "ContextualMenuBase")
   @js.native
   open class ContextualMenuBase protected ()
-    extends typings.officeUiFabricReact.contextualMenuMod.ContextualMenuBase {
+    extends typings.officeUiFabricReact.libComponentsContextualMenuMod.ContextualMenuBase {
     def this(props: IContextualMenuProps) = this()
   }
   /* static members */
@@ -63,7 +63,7 @@ object libContextualMenuMod {
   @JSImport("office-ui-fabric-react/lib/ContextualMenu", "ContextualMenuItemBase")
   @js.native
   open class ContextualMenuItemBase protected ()
-    extends typings.officeUiFabricReact.contextualMenuMod.ContextualMenuItemBase {
+    extends typings.officeUiFabricReact.libComponentsContextualMenuMod.ContextualMenuItemBase {
     def this(props: IContextualMenuItemProps) = this()
   }
   
@@ -73,16 +73,16 @@ object libContextualMenuMod {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType & Double
+        typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.ContextualMenuItemType & Double
       ] = js.native
     
-    /* 1 */ val Divider: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Divider & Double = js.native
+    /* 1 */ val Divider: typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.ContextualMenuItemType.Divider & Double = js.native
     
-    /* 2 */ val Header: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Header & Double = js.native
+    /* 2 */ val Header: typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.ContextualMenuItemType.Header & Double = js.native
     
-    /* 0 */ val Normal: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Normal & Double = js.native
+    /* 0 */ val Normal: typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.ContextualMenuItemType.Normal & Double = js.native
     
-    /* 3 */ val Section: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Section & Double = js.native
+    /* 3 */ val Section: typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.ContextualMenuItemType.Section & Double = js.native
   }
   
   object DirectionalHint {

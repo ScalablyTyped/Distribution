@@ -1,6 +1,6 @@
 package typings.parcelTypes.mod
 
-import typings.parcelTypes.anon.IsWeak
+import typings.parcelTypes.anon.Local
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MutableDependencySymbols
   extends StObject
-     with Iterable[js.Tuple2[Symbol, IsWeak]] {
+     with Iterable[js.Tuple2[Symbol, Local]] {
   
   def delete(exportSymbol: Symbol): Unit = js.native
   
@@ -20,7 +20,7 @@ trait MutableDependencySymbols
   
   def exportSymbols(): js.Iterable[Symbol] = js.native
   
-  def get(exportSymbol: Symbol): js.UndefOr[IsWeak | Null] = js.native
+  def get(exportSymbol: Symbol): js.UndefOr[Local | Null] = js.native
   
   def hasExportSymbol(exportSymbol: Symbol): Boolean = js.native
   

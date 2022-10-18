@@ -51,10 +51,6 @@ object nodeNetstatStrings {
   inline def LISTEN: LISTEN = "LISTEN".asInstanceOf[LISTEN]
   
   @js.native
-  sealed trait RecursivePartial extends StObject
-  inline def RecursivePartial: RecursivePartial = "RecursivePartial".asInstanceOf[RecursivePartial]
-  
-  @js.native
   sealed trait SYN_RECEIVED
     extends StObject
        with State

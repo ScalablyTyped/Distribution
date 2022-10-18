@@ -26,6 +26,8 @@ trait Slice extends StObject {
   var sideOrientation: js.UndefOr[Double] = js.undefined
   
   var slice: js.UndefOr[Double] = js.undefined
+  
+  var updatable: js.UndefOr[Boolean] = js.undefined
 }
 object Slice {
   
@@ -75,5 +77,9 @@ object Slice {
     inline def setSlice(value: Double): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     
     inline def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
+    
+    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
   }
 }

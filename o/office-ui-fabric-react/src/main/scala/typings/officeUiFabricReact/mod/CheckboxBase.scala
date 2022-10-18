@@ -2,8 +2,8 @@ package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.ReadonlyICheckboxProps
 import typings.officeUiFabricReact.anon.ReadonlyICheckboxState
-import typings.officeUiFabricReact.checkboxBaseMod.ICheckboxState
-import typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps
+import typings.officeUiFabricReact.libComponentsCheckboxCheckboxDotbaseMod.ICheckboxState
+import typings.officeUiFabricReact.libComponentsCheckboxCheckboxDottypesMod.ICheckboxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

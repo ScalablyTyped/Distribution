@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a delayed data loader for a contact card. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactCardDelayedDataLoader")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactCardDelayedDataLoader")
 @js.native
-abstract class ContactCardDelayedDataLoader ()
+open class ContactCardDelayedDataLoader ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactCardDelayedDataLoader {
   

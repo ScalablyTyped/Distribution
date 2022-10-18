@@ -1,15 +1,15 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.iterationMod.Iteration
-import typings.tsToolbelt.prependMod.Prepend
-import typings.tsToolbelt.prevMod.Prev
+import typings.tsToolbelt.outIterationIterationMod.Iteration
+import typings.tsToolbelt.outIterationPrevMod.Prev
+import typings.tsToolbelt.outListPrependMod.Prepend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0TakeForth`[L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.listMod.List[Any] */] extends StObject {
+trait `0TakeForth`[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */] extends StObject {
   
-  var `0`: typings.tsToolbelt.takeMod.TakeForth[
+  var `0`: typings.tsToolbelt.outListTakeMod.TakeForth[
     L, 
     N, 
     Prev[I], 
@@ -23,8 +23,8 @@ trait `0TakeForth`[L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Iter
 }
 object `0TakeForth` {
   
-  inline def apply[L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.listMod.List[Any] */](
-    `0`: typings.tsToolbelt.takeMod.TakeForth[
+  inline def apply[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */](
+    `0`: typings.tsToolbelt.outListTakeMod.TakeForth[
       L, 
       N, 
       Prev[I], 
@@ -41,10 +41,10 @@ object `0TakeForth` {
     __obj.asInstanceOf[`0TakeForth`[L, N, I, LN]]
   }
   
-  extension [Self <: `0TakeForth`[?, ?, ?, ?], L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.listMod.List[Any] */](x: Self & (`0TakeForth`[L, N, I, LN])) {
+  extension [Self <: `0TakeForth`[?, ?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */](x: Self & (`0TakeForth`[L, N, I, LN])) {
     
     inline def set0(
-      value: typings.tsToolbelt.takeMod.TakeForth[
+      value: typings.tsToolbelt.outListTakeMod.TakeForth[
           L, 
           N, 
           Prev[I], 

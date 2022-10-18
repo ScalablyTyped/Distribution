@@ -14,7 +14,7 @@ object formatRFC3339Mod {
     inline def apply(date: Double): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def apply(date: Double, options: FractionDigits): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("date-fns/esm/formatRFC3339", JSImport.Default)
+    @JSImport("date-fns/formatRFC3339", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
   }

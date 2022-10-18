@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an auto-reply message set on a mailbox. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailMailboxAutoReply")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxAutoReply")
 @js.native
-abstract class EmailMailboxAutoReply ()
+open class EmailMailboxAutoReply ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailMailboxAutoReply {
   

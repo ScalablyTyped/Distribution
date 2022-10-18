@@ -5,8 +5,8 @@ import typings.devtools.devtoolsStrings.boolean
 import typings.devtools.devtoolsStrings.function
 import typings.devtools.devtoolsStrings.number
 import typings.devtools.devtoolsStrings.string
-import typings.wdioTypes.capabilitiesMod.DesiredCapabilities
-import typings.wdioTypes.capabilitiesMod.W3CCapabilities
+import typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities
+import typings.wdioTypes.buildCapabilitiesMod.W3CCapabilities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

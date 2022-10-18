@@ -948,13 +948,13 @@ object Classes {
   val VERTICAL: String = js.native
   
   inline def alignmentClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alignmentClass")().asInstanceOf[js.UndefOr[String]]
-  inline def alignmentClass(alignment: typings.blueprintjsCore.alignmentMod.Alignment): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alignmentClass")(alignment.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def alignmentClass(alignment: typings.blueprintjsCore.libEsmCommonAlignmentMod.Alignment): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alignmentClass")(alignment.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   inline def elevationClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")().asInstanceOf[js.UndefOr[String]]
   inline def elevationClass(elevation: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def elevationClass(elevation: typings.blueprintjsCore.elevationMod.Elevation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def elevationClass(elevation: typings.blueprintjsCore.libEsmCommonElevationMod.Elevation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def elevationClass_Union(elevation: typings.blueprintjsCore.elevationMod.Elevation): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def elevationClass_Union(elevation: typings.blueprintjsCore.libEsmCommonElevationMod.Elevation): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   inline def getClassNamespace(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getClassNamespace")().asInstanceOf[String]
   
@@ -964,10 +964,10 @@ object Classes {
   
   inline def iconClass_Union(iconName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("iconClass")(iconName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  inline def intentClass(): js.UndefOr[typings.blueprintjsCore.intentMod.Intent] = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")().asInstanceOf[js.UndefOr[typings.blueprintjsCore.intentMod.Intent]]
-  inline def intentClass(intent: typings.blueprintjsCore.intentMod.Intent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")(intent.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def intentClass(): js.UndefOr[typings.blueprintjsCore.libEsmCommonIntentMod.Intent] = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")().asInstanceOf[js.UndefOr[typings.blueprintjsCore.libEsmCommonIntentMod.Intent]]
+  inline def intentClass(intent: typings.blueprintjsCore.libEsmCommonIntentMod.Intent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")(intent.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def intentClass_Union(intent: typings.blueprintjsCore.intentMod.Intent): js.UndefOr[typings.blueprintjsCore.intentMod.Intent] = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")(intent.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.blueprintjsCore.intentMod.Intent]]
+  inline def intentClass_Union(intent: typings.blueprintjsCore.libEsmCommonIntentMod.Intent): js.UndefOr[typings.blueprintjsCore.libEsmCommonIntentMod.Intent] = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")(intent.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.blueprintjsCore.libEsmCommonIntentMod.Intent]]
   
   inline def intentClass_Unit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")().asInstanceOf[Unit]
   
@@ -975,7 +975,7 @@ object Classes {
   
   inline def positionClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")().asInstanceOf[js.UndefOr[String]]
   inline def positionClass(position: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def positionClass(position: typings.blueprintjsCore.positionMod.Position): String = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def positionClass(position: typings.blueprintjsCore.libEsmCommonPositionMod.Position): String = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def positionClass_Union(position: typings.blueprintjsCore.positionMod.Position): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def positionClass_Union(position: typings.blueprintjsCore.libEsmCommonPositionMod.Position): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

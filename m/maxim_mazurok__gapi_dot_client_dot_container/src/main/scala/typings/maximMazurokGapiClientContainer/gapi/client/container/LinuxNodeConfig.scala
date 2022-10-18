@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +12,7 @@ trait LinuxNodeConfig extends StObject {
     * net.ipv4.tcp_tw_reuse
     */
   var sysctls: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.LinuxNodeConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object LinuxNodeConfig {
@@ -28,9 +25,7 @@ object LinuxNodeConfig {
   extension [Self <: LinuxNodeConfig](x: Self) {
     
     inline def setSysctls(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.LinuxNodeConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "sysctls", value.asInstanceOf[js.Any])
     
     inline def setSysctlsUndefined: Self = StObject.set(x, "sysctls", js.undefined)

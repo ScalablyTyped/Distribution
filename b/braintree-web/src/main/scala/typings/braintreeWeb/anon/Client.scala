@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Client extends StObject {
   
-  var client: typings.braintreeWeb.clientMod.Client
+  var client: typings.braintreeWeb.modulesClientMod.Client
 }
 object Client {
   
-  inline def apply(client: typings.braintreeWeb.clientMod.Client): Client = {
+  inline def apply(client: typings.braintreeWeb.modulesClientMod.Client): Client = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
     __obj.asInstanceOf[Client]
   }
   
   extension [Self <: Client](x: Self) {
     
-    inline def setClient(value: typings.braintreeWeb.clientMod.Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: typings.braintreeWeb.modulesClientMod.Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
   }
 }

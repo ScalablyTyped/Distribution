@@ -16,7 +16,7 @@ trait ReplyFormAttachment extends StObject {
   var inLine: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
+    * Only used if type is set to item. The EWS item ID of the attachment. This is a string up to 100 characters.
     */
   var itemId: js.UndefOr[String] = js.undefined
   

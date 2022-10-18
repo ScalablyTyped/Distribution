@@ -1,8 +1,8 @@
 package typings.chartJs.mod
 
-import typings.chartJs.basicMod.AnyObject
-import typings.chartJs.elementMod.Element
-import typings.chartJs.layoutMod.LayoutItem
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesElementMod.Element
+import typings.chartJs.typesLayoutMod.LayoutItem
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

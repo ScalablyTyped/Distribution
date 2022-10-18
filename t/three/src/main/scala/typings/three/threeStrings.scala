@@ -1,16 +1,16 @@
 package typings.three
 
-import typings.three.arcballControlsMod.ArcballControlsMouseActionMouse
-import typings.three.constantsMod.NodeShaderStageOption
-import typings.three.constantsMod.NodeTypeOption
-import typings.three.constantsMod.NodeUpdateTypeOption
-import typings.three.gltfloaderMod.GLTFReferenceType
-import typings.three.nodeBuilderMod.BuildStageOption
-import typings.three.operatorNodeMod.OperatorNodeOp
+import typings.three.examplesJsmControlsArcballControlsMod.ArcballControlsMouseActionMouse
+import typings.three.examplesJsmLoadersGltfloaderMod.GLTFReferenceType
+import typings.three.examplesJsmNodesCoreConstantsMod.NodeShaderStageOption
+import typings.three.examplesJsmNodesCoreConstantsMod.NodeTypeOption
+import typings.three.examplesJsmNodesCoreConstantsMod.NodeUpdateTypeOption
+import typings.three.examplesJsmNodesCoreNodeBuilderMod.BuildStageOption
+import typings.three.examplesJsmNodesMathOperatorNodeMod.OperatorNodeOp
+import typings.three.examplesJsmWebxrXrhandmodelfactoryMod.XRHandModelHandedness
 import typings.three.srcConstantsMod.BuiltinShaderAttributeName
 import typings.three.srcConstantsMod.PixelFormatGPU
-import typings.three.webXRControllerMod._XRControllerEventType
-import typings.three.xrhandmodelfactoryMod.XRHandModelHandedness
+import typings.three.srcRenderersWebxrWebXRControllerMod._XRControllerEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -196,14 +196,6 @@ object threeStrings {
   inline def MeshGouraudMaterial: MeshGouraudMaterial = "MeshGouraudMaterial".asInstanceOf[MeshGouraudMaterial]
   
   @js.native
-  sealed trait NodeArray extends StObject
-  inline def NodeArray: NodeArray = "NodeArray".asInstanceOf[NodeArray]
-  
-  @js.native
-  sealed trait NodeObjects extends StObject
-  inline def NodeObjects: NodeObjects = "NodeObjects".asInstanceOf[NodeObjects]
-  
-  @js.native
   sealed trait OctreeHelper extends StObject
   inline def OctreeHelper: OctreeHelper = "OctreeHelper".asInstanceOf[OctreeHelper]
   
@@ -230,14 +222,6 @@ object threeStrings {
   @js.native
   sealed trait Points extends StObject
   inline def Points: Points = "Points".asInstanceOf[Points]
-  
-  @js.native
-  sealed trait ProxiedObject extends StObject
-  inline def ProxiedObject: ProxiedObject = "ProxiedObject".asInstanceOf[ProxiedObject]
-  
-  @js.native
-  sealed trait ProxiedTuple extends StObject
-  inline def ProxiedTuple: ProxiedTuple = "ProxiedTuple".asInstanceOf[ProxiedTuple]
   
   @js.native
   sealed trait R11F_G11F_B10F
@@ -568,10 +552,6 @@ object threeStrings {
   inline def Scene: Scene = "Scene".asInstanceOf[Scene]
   
   @js.native
-  sealed trait ShaderNode extends StObject
-  inline def ShaderNode: ShaderNode = "ShaderNode".asInstanceOf[ShaderNode]
-  
-  @js.native
   sealed trait Slash
     extends StObject
        with OperatorNodeOp
@@ -584,10 +564,6 @@ object threeStrings {
   @js.native
   sealed trait StereoCamera extends StObject
   inline def StereoCamera: StereoCamera = "StereoCamera".asInstanceOf[StereoCamera]
-  
-  @js.native
-  sealed trait Swizzable extends StObject
-  inline def Swizzable: Swizzable = "Swizzable".asInstanceOf[Swizzable]
   
   @js.native
   sealed trait TransformControlsGizmo extends StObject
@@ -1081,10 +1057,6 @@ object threeStrings {
   @js.native
   sealed trait negate extends StObject
   inline def negate: negate = "negate".asInstanceOf[negate]
-  
-  @js.native
-  sealed trait nodeObject extends StObject
-  inline def nodeObject: nodeObject = "nodeObject".asInstanceOf[nodeObject]
   
   @js.native
   sealed trait nodes

@@ -1,12 +1,12 @@
 package typings.browserfs.anon
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.browserfs.fileSystemMod.BFSCallback
-import typings.browserfs.fileSystemMod.FileSystem
-import typings.browserfs.fileSystemMod.FileSystemOptions
-import typings.browserfs.folderAdapterMod.FolderAdapter
-import typings.browserfs.folderAdapterMod.FolderAdapterOptions
-import typings.browserfs.folderAdapterMod.default
+import typings.browserfs.distNodeBackendFolderAdapterMod.FolderAdapter
+import typings.browserfs.distNodeBackendFolderAdapterMod.FolderAdapterOptions
+import typings.browserfs.distNodeBackendFolderAdapterMod.default
+import typings.browserfs.distNodeCoreFileSystemMod.BFSCallback
+import typings.browserfs.distNodeCoreFileSystemMod.FileSystem
+import typings.browserfs.distNodeCoreFileSystemMod.FileSystemOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

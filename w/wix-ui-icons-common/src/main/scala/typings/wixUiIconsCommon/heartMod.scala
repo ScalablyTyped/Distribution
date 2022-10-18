@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsHeartMod.HeartProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsHeartMod.HeartProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object heartMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Heart", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Heart", JSImport.Default)
   @js.native
   val default: FC[HeartProps] = js.native
   

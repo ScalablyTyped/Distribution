@@ -11,9 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("css-generator", "Generator")
+  /* note: abstract class */ @JSImport("css-generator", "Generator")
   @js.native
-  abstract class Generator () extends StObject {
+  open class Generator () extends StObject {
     
     def addRaw(input: String): Unit = js.native
     

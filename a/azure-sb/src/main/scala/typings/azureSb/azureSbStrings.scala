@@ -1,7 +1,7 @@
 package typings.azureSb
 
-import typings.azureSb.wnsserviceMod.badges
-import typings.azureSb.wnsserviceMod.types
+import typings.azureSb.libWnsserviceMod.badges
+import typings.azureSb.libWnsserviceMod.types
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

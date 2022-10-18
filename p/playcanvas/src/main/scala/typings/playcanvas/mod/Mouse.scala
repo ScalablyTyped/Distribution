@@ -16,15 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @augments EventHandler
   */
-@JSImport("playcanvas", "Mouse")
 @js.native
-/**
-  * Create a new Mouse instance.
-  *
-  * @param {Element} [element] - The Element that the mouse events are attached to.
-  */
-open class Mouse () extends EventHandler {
-  def this(element: Element) = this()
+trait Mouse extends EventHandler {
   
   var _attached: Boolean = js.native
   
@@ -151,42 +144,4 @@ open class Mouse () extends EventHandler {
     * @returns {boolean} True if the mouse button was released since the last update.
     */
   def wasReleased(button: Double): Boolean = js.native
-}
-object Mouse {
-  
-  @JSImport("playcanvas", "Mouse")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    * Fired when the mouse is moved.
-    *
-    * @event Mouse#mousemove
-    * @param {MouseEvent} event - The MouseEvent object.
-    */
-  /**
-    * Fired when a mouse button is pressed.
-    *
-    * @event Mouse#mousedown
-    * @param {MouseEvent} event - The MouseEvent object.
-    */
-  /**
-    * Fired when a mouse button is released.
-    *
-    * @event Mouse#mouseup
-    * @param {MouseEvent} event - The MouseEvent object.
-    */
-  /**
-    * Fired when a mouse wheel is moved.
-    *
-    * @event Mouse#mousewheel
-    * @param {MouseEvent} event - The MouseEvent object.
-    */
-  /**
-    * Check if the mouse pointer has been locked, using {@link Mouse#enabledPointerLock}.
-    *
-    * @returns {boolean} True if locked.
-    */
-  /* static member */
-  inline def isPointerLocked(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPointerLocked")().asInstanceOf[Boolean]
 }

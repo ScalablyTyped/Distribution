@@ -7,7 +7,7 @@ import typings.reactNativeAdManager.anon.Remove
 import typings.reactNativeAdManager.helperTypesMod.AdFailedToLoadEvent
 import typings.reactNativeAdManager.helperTypesMod.InterstialEventType
 import typings.reactNativeAdManager.helperTypesMod.Targeting
-import typings.reactNativeAdManager.withNativeAdMod.NativeAdWrapperProps
+import typings.reactNativeAdManager.srcNativeAdsWithNativeAdMod.NativeAdWrapperProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +24,7 @@ object mod {
   @JSImport("react-native-ad-manager", "Banner")
   @js.native
   open class Banner ()
-    extends typings.reactNativeAdManager.ctkadmanagerbannerMod.^
+    extends typings.reactNativeAdManager.srcCtkadmanagerbannerMod.^
   object Banner {
     
     @JSImport("react-native-ad-manager", "Banner.simulatorId")
@@ -64,7 +64,7 @@ object mod {
   @JSImport("react-native-ad-manager", "NativeAdsManager")
   @js.native
   open class NativeAdsManager protected ()
-    extends typings.reactNativeAdManager.nativeAdsManagerMod.^ {
+    extends typings.reactNativeAdManager.srcNativeAdsNativeAdsManagerMod.^ {
     def this(adUnitID: String, testDevices: js.Array[String]) = this()
   }
   object NativeAdsManager {
@@ -80,7 +80,7 @@ object mod {
   @JSImport("react-native-ad-manager", "TriggerableView")
   @js.native
   open class TriggerableView ()
-    extends typings.reactNativeAdManager.triggerableViewManagerMod.^
+    extends typings.reactNativeAdManager.srcNativeAdsTriggerableViewManagerMod.^
   
   inline def withNativeAd[P](Component: ComponentType[P]): ComponentClass[P & NativeAdWrapperProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNativeAd")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & NativeAdWrapperProps, ComponentState]]
 }

@@ -1,7 +1,7 @@
 package typings.watsonDeveloperCloud.sdkMod
 
-import typings.watsonDeveloperCloud.v3GeneratedMod.Options
-import typings.watsonDeveloperCloud.v3GeneratedMod.^
+import typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.Options
+import typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("watson-developer-cloud/sdk", "PersonalityInsightsV3")
 @js.native
-class PersonalityInsightsV3 protected () extends ^ {
+open class PersonalityInsightsV3 protected () extends ^ {
   /**
     * Construct a PersonalityInsightsV3 object.
     *
@@ -48,30 +48,30 @@ object PersonalityInsightsV3 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage & String
+            typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage & String
           ] = js.native
       
-      /* "ar" */ val AR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.AR & String = js.native
+      /* "ar" */ val AR: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.AR & String = js.native
       
-      /* "de" */ val DE: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.DE & String = js.native
+      /* "de" */ val DE: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.DE & String = js.native
       
-      /* "en" */ val EN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.EN & String = js.native
+      /* "en" */ val EN: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.EN & String = js.native
       
-      /* "es" */ val ES: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.ES & String = js.native
+      /* "es" */ val ES: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.ES & String = js.native
       
-      /* "fr" */ val FR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.FR & String = js.native
+      /* "fr" */ val FR: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.FR & String = js.native
       
-      /* "it" */ val IT: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.IT & String = js.native
+      /* "it" */ val IT: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.IT & String = js.native
       
-      /* "ja" */ val JA: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.JA & String = js.native
+      /* "ja" */ val JA: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.JA & String = js.native
       
-      /* "ko" */ val KO: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.KO & String = js.native
+      /* "ko" */ val KO: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.KO & String = js.native
       
-      /* "pt-br" */ val PT_BR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.PT_BR & String = js.native
+      /* "pt-br" */ val PT_BR: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.PT_BR & String = js.native
       
-      /* "zh-cn" */ val ZH_CN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.ZH_CN & String = js.native
+      /* "zh-cn" */ val ZH_CN: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.ZH_CN & String = js.native
       
-      /* "zh-tw" */ val ZH_TW: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.ZH_TW & String = js.native
+      /* "zh-tw" */ val ZH_TW: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.AcceptLanguage.ZH_TW & String = js.native
     }
     
     /** The language of the input text for the request: Arabic, English, Japanese, Korean, or Spanish. Regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. The effect of the **Content-Language** parameter depends on the **Content-Type** parameter. When **Content-Type** is `text/plain` or `text/html`, **Content-Language** is the only way to specify the language. When **Content-Type** is `application/json`, **Content-Language** overrides a language specified with the `language` parameter of a `ContentItem` object, and content items that specify a different language are ignored; omit this parameter to base the language on the specification of the content items. You can specify any combination of languages for **Content-Language** and **Accept-Language**. */
@@ -81,18 +81,18 @@ object PersonalityInsightsV3 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.ContentLanguage & String
+            typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.ContentLanguage & String
           ] = js.native
       
-      /* "ar" */ val AR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.ContentLanguage.AR & String = js.native
+      /* "ar" */ val AR: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.ContentLanguage.AR & String = js.native
       
-      /* "en" */ val EN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.ContentLanguage.EN & String = js.native
+      /* "en" */ val EN: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.ContentLanguage.EN & String = js.native
       
-      /* "es" */ val ES: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.ContentLanguage.ES & String = js.native
+      /* "es" */ val ES: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.ContentLanguage.ES & String = js.native
       
-      /* "ja" */ val JA: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.ContentLanguage.JA & String = js.native
+      /* "ja" */ val JA: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.ContentLanguage.JA & String = js.native
       
-      /* "ko" */ val KO: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.ContentLanguage.KO & String = js.native
+      /* "ko" */ val KO: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.ContentLanguage.KO & String = js.native
     }
     
     /** The type of the input. For more information, see **Content types** in the method description. Default: `text/plain`. */
@@ -102,14 +102,14 @@ object PersonalityInsightsV3 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.ContentType & String
+            typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.ContentType & String
           ] = js.native
       
-      /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.ContentType.APPLICATION_JSON & String = js.native
+      /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.ContentType.APPLICATION_JSON & String = js.native
       
-      /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.ContentType.TEXT_HTML & String = js.native
+      /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.ContentType.TEXT_HTML & String = js.native
       
-      /* "text/plain" */ val TEXT_PLAIN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileAsCsvConstants.ContentType.TEXT_PLAIN & String = js.native
+      /* "text/plain" */ val TEXT_PLAIN: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileAsCsvConstants.ContentType.TEXT_PLAIN & String = js.native
     }
   }
   
@@ -123,30 +123,30 @@ object PersonalityInsightsV3 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage & String
+            typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.AcceptLanguage & String
           ] = js.native
       
-      /* "ar" */ val AR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.AR & String = js.native
+      /* "ar" */ val AR: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.AcceptLanguage.AR & String = js.native
       
-      /* "de" */ val DE: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.DE & String = js.native
+      /* "de" */ val DE: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.AcceptLanguage.DE & String = js.native
       
-      /* "en" */ val EN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.EN & String = js.native
+      /* "en" */ val EN: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.AcceptLanguage.EN & String = js.native
       
-      /* "es" */ val ES: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.ES & String = js.native
+      /* "es" */ val ES: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.AcceptLanguage.ES & String = js.native
       
-      /* "fr" */ val FR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.FR & String = js.native
+      /* "fr" */ val FR: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.AcceptLanguage.FR & String = js.native
       
-      /* "it" */ val IT: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.IT & String = js.native
+      /* "it" */ val IT: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.AcceptLanguage.IT & String = js.native
       
-      /* "ja" */ val JA: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.JA & String = js.native
+      /* "ja" */ val JA: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.AcceptLanguage.JA & String = js.native
       
-      /* "ko" */ val KO: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.KO & String = js.native
+      /* "ko" */ val KO: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.AcceptLanguage.KO & String = js.native
       
-      /* "pt-br" */ val PT_BR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.PT_BR & String = js.native
+      /* "pt-br" */ val PT_BR: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.AcceptLanguage.PT_BR & String = js.native
       
-      /* "zh-cn" */ val ZH_CN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.ZH_CN & String = js.native
+      /* "zh-cn" */ val ZH_CN: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.AcceptLanguage.ZH_CN & String = js.native
       
-      /* "zh-tw" */ val ZH_TW: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage.ZH_TW & String = js.native
+      /* "zh-tw" */ val ZH_TW: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.AcceptLanguage.ZH_TW & String = js.native
     }
     
     /** The language of the input text for the request: Arabic, English, Japanese, Korean, or Spanish. Regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. The effect of the **Content-Language** parameter depends on the **Content-Type** parameter. When **Content-Type** is `text/plain` or `text/html`, **Content-Language** is the only way to specify the language. When **Content-Type** is `application/json`, **Content-Language** overrides a language specified with the `language` parameter of a `ContentItem` object, and content items that specify a different language are ignored; omit this parameter to base the language on the specification of the content items. You can specify any combination of languages for **Content-Language** and **Accept-Language**. */
@@ -156,18 +156,18 @@ object PersonalityInsightsV3 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage & String
+            typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.ContentLanguage & String
           ] = js.native
       
-      /* "ar" */ val AR: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.AR & String = js.native
+      /* "ar" */ val AR: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.ContentLanguage.AR & String = js.native
       
-      /* "en" */ val EN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.EN & String = js.native
+      /* "en" */ val EN: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.ContentLanguage.EN & String = js.native
       
-      /* "es" */ val ES: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.ES & String = js.native
+      /* "es" */ val ES: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.ContentLanguage.ES & String = js.native
       
-      /* "ja" */ val JA: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.JA & String = js.native
+      /* "ja" */ val JA: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.ContentLanguage.JA & String = js.native
       
-      /* "ko" */ val KO: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage.KO & String = js.native
+      /* "ko" */ val KO: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.ContentLanguage.KO & String = js.native
     }
     
     /** The type of the input. For more information, see **Content types** in the method description. Default: `text/plain`. */
@@ -177,14 +177,14 @@ object PersonalityInsightsV3 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentType & String
+            typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.ContentType & String
           ] = js.native
       
-      /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentType.APPLICATION_JSON & String = js.native
+      /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.ContentType.APPLICATION_JSON & String = js.native
       
-      /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentType.TEXT_HTML & String = js.native
+      /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.ContentType.TEXT_HTML & String = js.native
       
-      /* "text/plain" */ val TEXT_PLAIN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentType.TEXT_PLAIN & String = js.native
+      /* "text/plain" */ val TEXT_PLAIN: typings.watsonDeveloperCloud.personalityInsightsV3GeneratedMod.ProfileConstants.ContentType.TEXT_PLAIN & String = js.native
     }
   }
   

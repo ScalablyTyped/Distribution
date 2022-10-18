@@ -1,8 +1,8 @@
 package typings.orbitUiReactComponents.anon
 
+import typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.CollectionNode
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.invalid
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.valid
-import typings.orbitUiReactComponents.useCollectionMod.CollectionNode
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
 import typings.std.Event

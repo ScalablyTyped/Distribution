@@ -26,7 +26,7 @@ object mod {
   
   @js.native
   trait InputNumber
-    extends typings.rmcInputNumber.baseMod.default[PropsType, StateType] {
+    extends typings.rmcInputNumber.libBaseMod.default[PropsType, StateType] {
     
     @JSName("componentDidMount")
     def componentDidMount_MInputNumber(): Unit = js.native
@@ -54,7 +54,7 @@ object mod {
   
   trait PropsType
     extends StObject
-       with typings.rmcInputNumber.baseMod.PropsType {
+       with typings.rmcInputNumber.libBaseMod.PropsType {
     
     var className: js.UndefOr[Any] = js.undefined
     
@@ -109,5 +109,5 @@ object mod {
     }
   }
   
-  type StateType = typings.rmcInputNumber.baseMod.StateType
+  type StateType = typings.rmcInputNumber.libBaseMod.StateType
 }

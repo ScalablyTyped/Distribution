@@ -7,8 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "Solver")
 @js.native
 open class Solver protected ()
-  extends typings.webcola.vpscMod.Solver {
-  def this(vs: js.Array[typings.webcola.vpscMod.Variable], cs: js.Array[typings.webcola.vpscMod.Constraint]) = this()
+  extends typings.webcola.distSrcVpscMod.Solver {
+  def this(
+    vs: js.Array[typings.webcola.distSrcVpscMod.Variable],
+    cs: js.Array[typings.webcola.distSrcVpscMod.Constraint]
+  ) = this()
 }
 /* static members */
 object Solver {

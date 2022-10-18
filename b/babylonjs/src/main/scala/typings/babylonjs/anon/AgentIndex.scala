@@ -1,6 +1,6 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathMod.Vector3
+import typings.babylonjs.mathsMathMod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

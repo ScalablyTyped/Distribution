@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "Point")
 @js.native
 open class Point protected ()
-  extends typings.canvg.pointMod.Point {
+  extends typings.canvg.distPointMod.Point {
   def this(x: Double, y: Double) = this()
 }
 /* static members */
@@ -17,11 +17,11 @@ object Point {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parse(point: String): typings.canvg.pointMod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(point.asInstanceOf[js.Any]).asInstanceOf[typings.canvg.pointMod.Point]
-  inline def parse(point: String, defaultValue: Double): typings.canvg.pointMod.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(point.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.pointMod.Point]
+  inline def parse(point: String): typings.canvg.distPointMod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(point.asInstanceOf[js.Any]).asInstanceOf[typings.canvg.distPointMod.Point]
+  inline def parse(point: String, defaultValue: Double): typings.canvg.distPointMod.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(point.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.distPointMod.Point]
   
-  inline def parsePath(path: String): js.Array[typings.canvg.pointMod.Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.canvg.pointMod.Point]]
+  inline def parsePath(path: String): js.Array[typings.canvg.distPointMod.Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.canvg.distPointMod.Point]]
   
-  inline def parseScale(scale: String): typings.canvg.pointMod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScale")(scale.asInstanceOf[js.Any]).asInstanceOf[typings.canvg.pointMod.Point]
-  inline def parseScale(scale: String, defaultValue: Double): typings.canvg.pointMod.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScale")(scale.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.pointMod.Point]
+  inline def parseScale(scale: String): typings.canvg.distPointMod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScale")(scale.asInstanceOf[js.Any]).asInstanceOf[typings.canvg.distPointMod.Point]
+  inline def parseScale(scale: String, defaultValue: Double): typings.canvg.distPointMod.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScale")(scale.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.distPointMod.Point]
 }

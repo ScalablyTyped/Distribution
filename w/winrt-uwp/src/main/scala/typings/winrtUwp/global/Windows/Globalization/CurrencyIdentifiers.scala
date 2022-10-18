@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the currency identifiers for the supported currencies, as static properties. */
-@JSGlobal("Windows.Globalization.CurrencyIdentifiers")
+/* note: abstract class */ @JSGlobal("Windows.Globalization.CurrencyIdentifiers")
 @js.native
-abstract class CurrencyIdentifiers ()
+open class CurrencyIdentifiers ()
   extends StObject
      with typings.winrtUwp.Windows.Globalization.CurrencyIdentifiers
 object CurrencyIdentifiers {

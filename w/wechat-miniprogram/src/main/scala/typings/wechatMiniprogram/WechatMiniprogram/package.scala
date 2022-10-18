@@ -1,7 +1,6 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
 import typings.wechatMiniprogram.anon.Buffered
 import typings.wechatMiniprogram.anon.Code
@@ -2141,12 +2140,6 @@ type OpenVideoEditorFailCallback = js.Function1[/* res */ GeneralCallbackResult,
 /** 接口调用成功的回调函数 */
 type OpenVideoEditorSuccessCallback = js.Function1[/* result */ OpenVideoEditorSuccessCallbackResult, Unit]
 
-type Optional[F] = F | (js.Function1[/* arg */ js.UndefOr[Any], Any])
-
-type OptionalInterface[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: wechat-miniprogram.WechatMiniprogram.Optional<T[K]>}
-  */ typings.wechatMiniprogram.wechatMiniprogramStrings.OptionalInterface & TopLevel[T]
-
 /** 接口调用结束的回调函数（调用成功、失败都会执行） */
 type PageScrollToCompleteCallback = js.Function1[/* res */ GeneralCallbackResult, Unit]
 
@@ -2294,9 +2287,6 @@ type PreviewMediaSuccessCallback = js.Function1[/* res */ GeneralCallbackResult,
   * 最低基础库 2.4.1
   */
 type ProgressActiveEnd[Mark /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] = CustomEvent[CurPercent, Mark, TargetDataset, TargetDataset]
-
-type PromisifySuccessResult[P, T /* <: AsyncMethodOptionLike */] = (js.Promise[
-/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<std.Exclude<T['success'], undefined>>[0] */ js.Any]) | Unit
 
 /** radio-group 切换事件 */
 type RadioGroupChange[Mark /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] = CustomEvent[ValueString, Mark, TargetDataset, TargetDataset]

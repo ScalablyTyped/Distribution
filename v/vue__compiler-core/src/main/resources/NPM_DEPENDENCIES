@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@vue/compiler-core" : "3.2.40"
+      "@vue/compiler-core" : "3.2.41"
     }
   ],
   "test-dependencies" : [
     {
-      "@vue/compiler-core" : "3.2.40"
+      "@vue/compiler-core" : "3.2.41"
     }
   ],
   "compile-devDependencies" : [

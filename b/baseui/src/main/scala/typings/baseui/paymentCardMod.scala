@@ -9,7 +9,7 @@ import typings.baseui.paymentCardPaymentCardMod.default
 import typings.baseui.paymentCardTypesMod.PaymentCardProps
 import typings.baseui.paymentCardTypesMod.StatefulPaymentCardProps
 import typings.react.mod.global.JSX.Element
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

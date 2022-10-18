@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientCloudkmsStrings {
   
   @js.native
-  sealed trait CryptoKey extends StObject
-  inline def CryptoKey: CryptoKey = "CryptoKey".asInstanceOf[CryptoKey]
-  
-  @js.native
-  sealed trait Location extends StObject
-  inline def Location: Location = "Location".asInstanceOf[Location]
-  
-  @js.native
   sealed trait cloudkms extends StObject
   inline def cloudkms: cloudkms = "cloudkms".asInstanceOf[cloudkms]
   

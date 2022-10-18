@@ -57,12 +57,12 @@ object Stat {
     
     inline def setPeers(value: js.Array[String]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
     
-    inline def setPeersVarargs(value: String*): Self = StObject.set(x, "peers", js.Array(value :_*))
+    inline def setPeersVarargs(value: String*): Self = StObject.set(x, "peers", js.Array(value*))
     
     inline def setProvideBufLen(value: Double): Self = StObject.set(x, "provideBufLen", value.asInstanceOf[js.Any])
     
     inline def setWantlist(value: js.Array[WantListItem]): Self = StObject.set(x, "wantlist", value.asInstanceOf[js.Any])
     
-    inline def setWantlistVarargs(value: WantListItem*): Self = StObject.set(x, "wantlist", js.Array(value :_*))
+    inline def setWantlistVarargs(value: WantListItem*): Self = StObject.set(x, "wantlist", js.Array(value*))
   }
 }

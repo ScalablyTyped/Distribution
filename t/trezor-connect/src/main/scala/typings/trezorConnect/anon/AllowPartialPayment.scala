@@ -1,7 +1,7 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.transactionsMod.RippleLibAdjustment
-import typings.trezorConnect.transactionsMod.RippleLibMemo
+import typings.trezorConnect.libTypescriptBackendTransactionsMod.RippleLibAdjustment
+import typings.trezorConnect.libTypescriptBackendTransactionsMod.RippleLibMemo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

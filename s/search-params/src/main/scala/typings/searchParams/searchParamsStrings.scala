@@ -1,8 +1,8 @@
 package typings.searchParams
 
-import typings.searchParams.encodeMod.arrayFormat
-import typings.searchParams.encodeMod.booleanFormat
-import typings.searchParams.encodeMod.nullFormat
+import typings.searchParams.distEncodeMod.arrayFormat
+import typings.searchParams.distEncodeMod.booleanFormat
+import typings.searchParams.distEncodeMod.nullFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

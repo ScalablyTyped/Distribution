@@ -1,7 +1,7 @@
 package typings.awsSdkClientGlacierNode
 
-import typings.awsSdkClientGlacierNode.uploadArchiveExceptionsUnionMod.UploadArchiveExceptionsUnion
-import typings.awsSdkClientGlacierNode.uploadMultipartPartExceptionsUnionMod.UploadMultipartPartExceptionsUnion
+import typings.awsSdkClientGlacierNode.typesUploadArchiveExceptionsUnionMod.UploadArchiveExceptionsUnion
+import typings.awsSdkClientGlacierNode.typesUploadMultipartPartExceptionsUnionMod.UploadMultipartPartExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

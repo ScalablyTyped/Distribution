@@ -1,7 +1,7 @@
 package typings.victoryCore.anon
 
-import typings.victoryCore.callbacksMod.CallbackArgs
-import typings.victoryCore.callbacksMod.StringOrNumberOrCallback
+import typings.victoryCore.libTypesCallbacksMod.CallbackArgs
+import typings.victoryCore.libTypesCallbacksMod.StringOrNumberOrCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

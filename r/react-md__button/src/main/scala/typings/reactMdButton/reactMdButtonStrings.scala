@@ -1,9 +1,9 @@
 package typings.reactMdButton
 
-import typings.reactMdButton.buttonThemeClassNamesMod.ButtonTheme
-import typings.reactMdButton.buttonThemeClassNamesMod.ButtonThemeType
-import typings.reactMdButton.buttonThemeClassNamesMod.ButtonType
-import typings.reactMdButton.fabMod._FABPosition
+import typings.reactMdButton.typesButtonThemeClassNamesMod.ButtonTheme
+import typings.reactMdButton.typesButtonThemeClassNamesMod.ButtonThemeType
+import typings.reactMdButton.typesButtonThemeClassNamesMod.ButtonType
+import typings.reactMdButton.typesFabMod._FABPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -10,7 +10,7 @@ import typings.createTestServer.createTestServerStrings.listen
 import typings.express.mod.Express
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -92,10 +92,10 @@ object mod {
       * The underlying HTTPS server instance.
       */
     var https: typings.node.httpsMod.Server[
-        Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+        Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
         Instantiable1[
           /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-          typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
         ]
       ]
     
@@ -158,10 +158,10 @@ object mod {
           ]
         ],
       https: typings.node.httpsMod.Server[
-          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
           Instantiable1[
             /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+            typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
           ]
         ],
       listen: () => js.Promise[Unit]
@@ -188,10 +188,10 @@ object mod {
       
       inline def setHttps(
         value: typings.node.httpsMod.Server[
-              Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+              Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
               Instantiable1[
                 /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-                typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+                typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
               ]
             ]
       ): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])

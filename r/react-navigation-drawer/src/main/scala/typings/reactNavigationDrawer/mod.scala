@@ -15,13 +15,13 @@ import typings.reactNavigationDrawer.anon.GetActionCreators
 import typings.reactNavigationDrawer.anon.InitialRouteName
 import typings.reactNavigationDrawer.anon.Lazy
 import typings.reactNavigationDrawer.anon.Loaded
-import typings.reactNavigationDrawer.drawerNavigatorItemsMod.default
-import typings.reactNavigationDrawer.drawerViewMod.Props
-import typings.reactNavigationDrawer.drawerViewMod.State
-import typings.reactNavigationDrawer.typesMod.NavigationDrawerConfig
-import typings.reactNavigationDrawer.typesMod.NavigationDrawerOptions
-import typings.reactNavigationDrawer.typesMod.NavigationDrawerProp
-import typings.reactNavigationDrawer.typesMod.NavigationDrawerRouterConfig
+import typings.reactNavigationDrawer.libTypescriptSrcTypesMod.NavigationDrawerConfig
+import typings.reactNavigationDrawer.libTypescriptSrcTypesMod.NavigationDrawerOptions
+import typings.reactNavigationDrawer.libTypescriptSrcTypesMod.NavigationDrawerProp
+import typings.reactNavigationDrawer.libTypescriptSrcTypesMod.NavigationDrawerRouterConfig
+import typings.reactNavigationDrawer.libTypescriptSrcViewsDrawerNavigatorItemsMod.default
+import typings.reactNavigationDrawer.libTypescriptSrcViewsDrawerViewMod.Props
+import typings.reactNavigationDrawer.libTypescriptSrcViewsDrawerViewMod.State
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -140,12 +140,12 @@ object mod {
   @JSImport("react-navigation-drawer", "DrawerSidebar")
   @js.native
   open class DrawerSidebar ()
-    extends typings.reactNavigationDrawer.drawerSidebarMod.default
+    extends typings.reactNavigationDrawer.libTypescriptSrcViewsDrawerSidebarMod.default
   
   @JSImport("react-navigation-drawer", "DrawerView")
   @js.native
   open class DrawerView ()
-    extends typings.reactNavigationDrawer.drawerViewMod.default
+    extends typings.reactNavigationDrawer.libTypescriptSrcViewsDrawerViewMod.default
   /* static members */
   object DrawerView {
     

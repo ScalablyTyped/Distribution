@@ -50,7 +50,7 @@ trait Memberscount extends StObject {
   /** @example MDQ6VGVhbTE= */
   var node_id: String
   
-  var organization: Company
+  var organization: Billingemail
   
   var parent: js.UndefOr[Ldapdn | Null] = js.undefined
   
@@ -102,7 +102,7 @@ object Memberscount {
     members_url: String,
     name: String,
     node_id: String,
-    organization: Company,
+    organization: Billingemail,
     permission: String,
     repos_count: Double,
     repositories_url: String,
@@ -138,7 +138,7 @@ object Memberscount {
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setOrganization(value: Company): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: Billingemail): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     inline def setParent(value: Ldapdn): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

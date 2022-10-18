@@ -1,8 +1,8 @@
 package typings.tar
 
+import typings.node.NodeJS.WritableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.zlibMod.ZlibOptions
-import typings.std.WritableStream
 import typings.tar.mod.FileStat
 import typings.tar.mod.ReadEntry
 import typings.tar.mod.RequiredFileOptions
@@ -374,9 +374,7 @@ object anon {
       * falsey value is provided, then the entry is written to disk as normal.
       * (To exclude items from extraction, use the filter option described above.)
       */
-    var transform: js.UndefOr[
-        js.Function1[/* entry */ ReadEntry, js.UndefOr[WritableStream[Any] | `false` | Null]]
-      ] = js.undefined
+    var transform: js.UndefOr[js.Function1[/* entry */ ReadEntry, js.UndefOr[WritableStream | `false` | Null]]] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
     
@@ -519,7 +517,7 @@ object anon {
       
       inline def setSync(value: `true`): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      inline def setTransform(value: /* entry */ ReadEntry => js.UndefOr[WritableStream[Any] | `false` | Null]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* entry */ ReadEntry => js.UndefOr[WritableStream | `false` | Null]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       

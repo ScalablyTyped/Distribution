@@ -1,6 +1,6 @@
 package typings.samchonFramework.mod.templates
 
-import typings.samchon.invokeMod.Invoke
+import typings.samchon.protocolInvokeInvokeMod.Invoke
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,32 +35,32 @@ object slave {
       */
     def this(
       invoke: Invoke,
-      history: typings.samchon.invokeHistoryMod.InvokeHistory,
-      slaveSystem: typings.samchon.slaveSystemMod.SlaveSystem
+      history: typings.samchon.templatesSlaveInvokeHistoryMod.InvokeHistory,
+      slaveSystem: typings.samchon.templatesSlaveSlaveSystemMod.SlaveSystem
     ) = this()
   }
   
-  @JSImport("samchon-framework", "templates.slave.SlaveClient")
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.slave.SlaveClient")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class SlaveClient ()
+  open class SlaveClient ()
     extends typings.samchon.mod.templates.slave.SlaveClient
   
-  @JSImport("samchon-framework", "templates.slave.SlaveServer")
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.slave.SlaveServer")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class SlaveServer ()
+  open class SlaveServer ()
     extends typings.samchon.mod.templates.slave.SlaveServer
   
-  @JSImport("samchon-framework", "templates.slave.SlaveSystem")
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.slave.SlaveSystem")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class SlaveSystem ()
+  open class SlaveSystem ()
     extends typings.samchon.mod.templates.slave.SlaveSystem
 }

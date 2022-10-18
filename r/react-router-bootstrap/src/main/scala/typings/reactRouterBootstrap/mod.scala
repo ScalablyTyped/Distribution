@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("react-router-bootstrap", "IndexLinkContainer")
   @js.native
-  val IndexLinkContainer: typings.reactRouterBootstrap.indexLinkContainerMod.IndexLinkContainer = js.native
+  val IndexLinkContainer: typings.reactRouterBootstrap.libIndexLinkContainerMod.IndexLinkContainer = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-router-bootstrap", "IndexLinkContainer")
@@ -23,7 +23,7 @@ object mod {
   
   @JSImport("react-router-bootstrap", "LinkContainer")
   @js.native
-  val LinkContainer: typings.reactRouterBootstrap.linkContainerMod.LinkContainer = js.native
+  val LinkContainer: typings.reactRouterBootstrap.libLinkContainerMod.LinkContainer = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-router-bootstrap", "LinkContainer")

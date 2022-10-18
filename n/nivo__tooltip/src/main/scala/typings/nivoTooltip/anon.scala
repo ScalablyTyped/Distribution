@@ -1,7 +1,7 @@
 package typings.nivoTooltip
 
-import typings.nivoTooltip.contextMod.TooltipActionsContextData
-import typings.nivoTooltip.contextMod.TooltipStateContextData
+import typings.nivoTooltip.distTypesContextMod.TooltipActionsContextData
+import typings.nivoTooltip.distTypesContextMod.TooltipStateContextData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

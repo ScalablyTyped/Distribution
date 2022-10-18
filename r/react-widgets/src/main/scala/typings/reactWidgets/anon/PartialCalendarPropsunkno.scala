@@ -26,10 +26,11 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactWidgets.calendarMod.SlideDirection
-import typings.reactWidgets.calendarMod.View
-import typings.reactWidgets.localizationMod.DateFormats
-import typings.reactWidgets.monthMod.RenderDayProp
+import typings.reactWidgets.cjsCalendarMod.SlideDirection
+import typings.reactWidgets.cjsCalendarMod.View
+import typings.reactWidgets.cjsLocalizationMod.DateFormats
+import typings.reactWidgets.cjsMonthMod.RenderDayProp
+import typings.reactWidgets.cjsSharedMod.InferFormat
 import typings.reactWidgets.reactWidgetsStrings.`additions removals`
 import typings.reactWidgets.reactWidgetsStrings.`additions text`
 import typings.reactWidgets.reactWidgetsStrings.`inline`
@@ -70,7 +71,6 @@ import typings.reactWidgets.reactWidgetsStrings.text
 import typings.reactWidgets.reactWidgetsStrings.time
 import typings.reactWidgets.reactWidgetsStrings.tree
 import typings.reactWidgets.reactWidgetsStrings.vertical
-import typings.reactWidgets.sharedMod.InferFormat
 import typings.std.Element
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject

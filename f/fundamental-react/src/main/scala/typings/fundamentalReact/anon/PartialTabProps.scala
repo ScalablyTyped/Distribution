@@ -1,6 +1,6 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.iconMod.IconGlyph
+import typings.fundamentalReact.libIconIconMod.IconGlyph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

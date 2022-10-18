@@ -24,7 +24,7 @@ object global {
     inline def VERSION_=(x: `4Dot0Dot0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
     
     /* augmented module */
-    object mod {
+    object videoDotjsMod {
       
       trait VideoJsPlayer extends StObject {
         

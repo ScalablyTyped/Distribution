@@ -1,483 +1,240 @@
 package typings.nextAuth
 
-import org.scalablytyped.runtime.Shortcut
-import typings.nextAuth.anon.ModelMapping
-import typings.nextAuth.anon.Models
-import typings.nextAuth.anon.`0`
-import typings.nextAuth.clientMod.SessionProvider
-import typings.nextAuth.mod.AppOptions
-import typings.nextAuth.mod.User
-import typings.std.Date
-import typings.typeorm.connectionConnectionOptionsMod.ConnectionOptions
-import typings.typeorm.entitySchemaEntitySchemaOptionsMod.EntitySchemaOptions
+import typings.nextAuth.anon.Expires
+import typings.nextAuth.anon.Identifier
+import typings.nextAuth.anon.OmitAdapterUserid
+import typings.nextAuth.anon.PartialAdapterSessionPick
+import typings.nextAuth.anon.PartialAdapterUser
+import typings.nextAuth.anon.PickAdapterAccountprovide
+import typings.nextAuth.anon.Session
+import typings.nextAuth.coreTypesMod.Account
+import typings.nextAuth.coreTypesMod.Awaitable
+import typings.nextAuth.coreTypesMod.DefaultUser
+import typings.nextAuth.providersMod.ProviderType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object adaptersMod extends Shortcut {
+object adaptersMod {
   
-  @JSImport("next-auth/adapters", JSImport.Default)
-  @js.native
-  val default: Adapters = js.native
+  type Adapter[WithVerificationToken] = DefaultAdapter & (/* import warning: importer.ImportType#apply Failed type conversion: WithVerificationToken extends true ? {createVerificationToken (verificationToken : next-auth.next-auth/adapters.VerificationToken): next-auth.next-auth/core/types.Awaitable<next-auth.next-auth/adapters.VerificationToken | null | undefined>, useVerificationToken (params : {  identifier :string,   token :string}): next-auth.next-auth/core/types.Awaitable<next-auth.next-auth/adapters.VerificationToken | null>} : {} */ js.Any)
   
-  trait Adapters extends StObject {
-    
-    var Default: js.Function2[
-        /* typeOrmConfig */ ConnectionOptions, 
-        /* options */ js.UndefOr[Models], 
-        Adapter[js.Any, Profile, js.Any, js.Any]
-      ]
-    
-    var Prisma: PrismaAdapter
-    
-    var TypeORM: TypeORMAdapter[js.Any, js.Any, js.Any, js.Any]
-  }
-  object Adapters {
-    
-    @JSImport("next-auth/adapters", "Adapters")
-    @js.native
-    val ^ : Adapters = js.native
-    
-    extension [Self <: Adapters](x: Self) {
-      
-      inline def setDefault(
-        value: (/* typeOrmConfig */ ConnectionOptions, /* options */ js.UndefOr[Models]) => Adapter[js.Any, Profile, js.Any, js.Any]
-      ): Self = StObject.set(x, "Default", js.Any.fromFunction2(value))
-      
-      inline def setPrisma(value: PrismaAdapter): Self = StObject.set(x, "Prisma", value.asInstanceOf[js.Any])
-      
-      inline def setTypeORM(value: TypeORMAdapter[js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "TypeORM", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  @JSImport("next-auth/adapters", "TypeORMAccountModel")
-  @js.native
-  class TypeORMAccountModel protected () extends StObject {
-    def this(userId: Double, providerId: String, providerType: String, providerAccountId: String) = this()
-    def this(
-      userId: Double,
-      providerId: String,
-      providerType: String,
-      providerAccountId: String,
-      refreshToken: String
-    ) = this()
-    def this(
-      userId: Double,
-      providerId: String,
-      providerType: String,
-      providerAccountId: String,
-      refreshToken: String,
-      accessToken: String
-    ) = this()
-    def this(
-      userId: Double,
-      providerId: String,
-      providerType: String,
-      providerAccountId: String,
-      refreshToken: Unit,
-      accessToken: String
-    ) = this()
-    def this(
-      userId: Double,
-      providerId: String,
-      providerType: String,
-      providerAccountId: String,
-      refreshToken: String,
-      accessToken: String,
-      accessTokenExpires: Date
-    ) = this()
-    def this(
-      userId: Double,
-      providerId: String,
-      providerType: String,
-      providerAccountId: String,
-      refreshToken: String,
-      accessToken: Unit,
-      accessTokenExpires: Date
-    ) = this()
-    def this(
-      userId: Double,
-      providerId: String,
-      providerType: String,
-      providerAccountId: String,
-      refreshToken: Unit,
-      accessToken: String,
-      accessTokenExpires: Date
-    ) = this()
-    def this(
-      userId: Double,
-      providerId: String,
-      providerType: String,
-      providerAccountId: String,
-      refreshToken: Unit,
-      accessToken: Unit,
-      accessTokenExpires: Date
-    ) = this()
-    
-    var accessToken: js.UndefOr[String] = js.native
-    
-    var accessTokenExpires: js.UndefOr[Date] = js.native
-    
-    var compoundId: String = js.native
-    
-    var providerAccountId: String = js.native
-    
-    var providerId: String = js.native
-    
-    var providerType: String = js.native
-    
-    var refreshToken: js.UndefOr[String] = js.native
-    
-    var userId: Double = js.native
-  }
-  
-  @JSImport("next-auth/adapters", "TypeORMSessionModel")
-  @js.native
-  class TypeORMSessionModel protected ()
+  trait AdapterAccount
     extends StObject
-       with Session {
-    def this(userId: Double, expires: Date) = this()
-    def this(userId: Double, expires: Date, sessionToken: String) = this()
-    def this(userId: Double, expires: Date, sessionToken: String, accessToken: String) = this()
-    def this(userId: Double, expires: Date, sessionToken: Unit, accessToken: String) = this()
+       with Account {
     
-    /* CompleteClass */
-    var accessToken: String = js.native
-    
-    /* CompleteClass */
-    var expires: Date = js.native
-    
-    /* CompleteClass */
-    var sessionToken: String = js.native
-    
-    /* CompleteClass */
-    var userId: String | Double | js.Object = js.native
     @JSName("userId")
-    var userId_TypeORMSessionModel: Double = js.native
+    var userId_AdapterAccount: String
   }
-  
-  @JSImport("next-auth/adapters", "TypeORMUserModel")
-  @js.native
-  class TypeORMUserModel ()
-    extends StObject
-       with User {
-    def this(name: String) = this()
-    def this(name: String, email: String) = this()
-    def this(name: Unit, email: String) = this()
-    def this(name: String, email: String, image: String) = this()
-    def this(name: String, email: Unit, image: String) = this()
-    def this(name: Unit, email: String, image: String) = this()
-    def this(name: Unit, email: Unit, image: String) = this()
-    def this(name: String, email: String, image: String, emailVerified: Date) = this()
-    def this(name: String, email: String, image: Unit, emailVerified: Date) = this()
-    def this(name: String, email: Unit, image: String, emailVerified: Date) = this()
-    def this(name: String, email: Unit, image: Unit, emailVerified: Date) = this()
-    def this(name: Unit, email: String, image: String, emailVerified: Date) = this()
-    def this(name: Unit, email: String, image: Unit, emailVerified: Date) = this()
-    def this(name: Unit, email: Unit, image: String, emailVerified: Date) = this()
-    def this(name: Unit, email: Unit, image: Unit, emailVerified: Date) = this()
+  object AdapterAccount {
     
-    var emailVerified: js.UndefOr[Date] = js.native
-    
-    @JSName("email")
-    var email_TypeORMUserModel: js.UndefOr[String] = js.native
-    
-    @JSName("image")
-    var image_TypeORMUserModel: js.UndefOr[String] = js.native
-    
-    @JSName("name")
-    var name_TypeORMUserModel: js.UndefOr[String] = js.native
-  }
-  
-  @JSImport("next-auth/adapters", "TypeORMVerificationRequestModel")
-  @js.native
-  class TypeORMVerificationRequestModel protected ()
-    extends StObject
-       with VerificationRequest {
-    def this(identifier: String, token: String, expires: Date) = this()
-    
-    /* CompleteClass */
-    var expires: Date = js.native
-    
-    /* CompleteClass */
-    var identifier: String = js.native
-    
-    /* CompleteClass */
-    var token: String = js.native
-  }
-  
-  trait Adapter[TUser /* <: User */, TProfile /* <: Profile */, TSession /* <: Session */, TVerificationRequest /* <: VerificationRequest */] extends StObject {
-    
-    def getAdapter(appOptions: AppOptions): js.Promise[AdapterInstance[TUser, TProfile, TSession, TVerificationRequest]]
-  }
-  object Adapter {
-    
-    inline def apply[TUser /* <: User */, TProfile /* <: Profile */, TSession /* <: Session */, TVerificationRequest /* <: VerificationRequest */](
-      getAdapter: AppOptions => js.Promise[AdapterInstance[TUser, TProfile, TSession, TVerificationRequest]]
-    ): Adapter[TUser, TProfile, TSession, TVerificationRequest] = {
-      val __obj = js.Dynamic.literal(getAdapter = js.Any.fromFunction1(getAdapter))
-      __obj.asInstanceOf[Adapter[TUser, TProfile, TSession, TVerificationRequest]]
-    }
-    
-    extension [Self <: Adapter[?, ?, ?, ?], TUser /* <: User */, TProfile /* <: Profile */, TSession /* <: Session */, TVerificationRequest /* <: VerificationRequest */](x: Self & (Adapter[TUser, TProfile, TSession, TVerificationRequest])) {
-      
-      inline def setGetAdapter(value: AppOptions => js.Promise[AdapterInstance[TUser, TProfile, TSession, TVerificationRequest]]): Self = StObject.set(x, "getAdapter", js.Any.fromFunction1(value))
-    }
-  }
-  
-  @js.native
-  trait AdapterInstance[TUser, TProfile, TSession, TVerificationRequest] extends StObject {
-    
-    def createSession(user: TUser): js.Promise[TSession] = js.native
-    
-    def createUser(profile: TProfile): js.Promise[TUser] = js.native
-    
-    var createVerificationRequest: js.UndefOr[
-        js.Function6[
-          /* email */ String, 
-          /* url */ String, 
-          /* token */ String, 
-          /* secret */ String, 
-          /* provider */ EmailSessionProvider, 
-          /* options */ AppOptions, 
-          js.Promise[TVerificationRequest]
-        ]
-      ] = js.native
-    
-    def deleteSession(sessionToken: String): js.Promise[Unit] = js.native
-    
-    var deleteVerificationRequest: js.UndefOr[
-        js.Function4[
-          /* email */ String, 
-          /* verificationToken */ String, 
-          /* secret */ String, 
-          /* provider */ SessionProvider, 
-          js.Promise[Unit]
-        ]
-      ] = js.native
-    
-    def getSession(sessionToken: String): js.Promise[TSession | Null] = js.native
-    
-    def getUser(id: String): js.Promise[TUser | Null] = js.native
-    
-    def getUserByEmail(email: String): js.Promise[TUser | Null] = js.native
-    
-    def getUserByProviderAccountId(providerId: String, providerAccountId: String): js.Promise[TUser | Null] = js.native
-    
-    var getVerificationRequest: js.UndefOr[
-        js.Function4[
-          /* email */ String, 
-          /* verificationToken */ String, 
-          /* secret */ String, 
-          /* provider */ SessionProvider, 
-          js.Promise[TVerificationRequest | Null]
-        ]
-      ] = js.native
-    
-    def linkAccount(
-      userId: String,
-      providerId: String,
-      providerType: String,
-      providerAccountId: String,
-      refreshToken: String,
-      accessToken: String,
-      accessTokenExpires: Double
-    ): js.Promise[Unit] = js.native
-    
-    def updateSession(session: TSession): js.Promise[TSession] = js.native
-    def updateSession(session: TSession, force: Boolean): js.Promise[TSession] = js.native
-    
-    def updateUser(user: TUser): js.Promise[TUser] = js.native
-  }
-  
-  trait EmailSessionProvider
-    extends StObject
-       with SessionProvider {
-    
-    var maxAge: js.UndefOr[Double] = js.undefined
-    
-    def sendVerificationRequest(params: SendVerificationRequestParams): js.Promise[Unit]
-  }
-  object EmailSessionProvider {
-    
-    inline def apply(
-      callbackUrl: String,
-      id: String,
-      name: String,
-      sendVerificationRequest: SendVerificationRequestParams => js.Promise[Unit],
-      signinUrl: String,
-      `type`: String
-    ): EmailSessionProvider = {
-      val __obj = js.Dynamic.literal(callbackUrl = callbackUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sendVerificationRequest = js.Any.fromFunction1(sendVerificationRequest), signinUrl = signinUrl.asInstanceOf[js.Any])
+    inline def apply(provider: String, providerAccountId: String, `type`: ProviderType, userId: String): AdapterAccount = {
+      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], providerAccountId = providerAccountId.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[EmailSessionProvider]
+      __obj.asInstanceOf[AdapterAccount]
     }
     
-    extension [Self <: EmailSessionProvider](x: Self) {
+    extension [Self <: AdapterAccount](x: Self) {
       
-      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
-      
-      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
-      
-      inline def setSendVerificationRequest(value: SendVerificationRequestParams => js.Promise[Unit]): Self = StObject.set(x, "sendVerificationRequest", js.Any.fromFunction1(value))
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   
-  trait PrismaAdapter extends StObject {
+  trait AdapterSession extends StObject {
     
-    def Adapter(config: ModelMapping): typings.nextAuth.adaptersMod.Adapter[js.Any, js.Any, js.Any, js.Any]
-  }
-  object PrismaAdapter {
+    var expires: js.Date
     
-    inline def apply(Adapter: ModelMapping => Adapter[js.Any, js.Any, js.Any, js.Any]): PrismaAdapter = {
-      val __obj = js.Dynamic.literal(Adapter = js.Any.fromFunction1(Adapter))
-      __obj.asInstanceOf[PrismaAdapter]
-    }
-    
-    extension [Self <: PrismaAdapter](x: Self) {
-      
-      inline def setAdapter(value: ModelMapping => Adapter[js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "Adapter", js.Any.fromFunction1(value))
-    }
-  }
-  
-  trait Profile extends StObject {
-    
-    var email: String | Null
-    
-    var id: String
-    
-    var image: js.UndefOr[String | Null] = js.undefined
-    
-    var name: String
-  }
-  object Profile {
-    
-    inline def apply(id: String, name: String): Profile = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], email = null)
-      __obj.asInstanceOf[Profile]
-    }
-    
-    extension [Self <: Profile](x: Self) {
-      
-      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
-      
-      inline def setEmailNull: Self = StObject.set(x, "email", null)
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
-      
-      inline def setImageNull: Self = StObject.set(x, "image", null)
-      
-      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type Schema[T] = EntitySchemaOptions[T]
-  
-  trait SendVerificationRequestParams extends StObject {
-    
-    var baseUrl: String
-    
-    var identifier: String
-    
-    var provider: SessionProvider
-    
-    var token: String
-    
-    var url: String
-  }
-  object SendVerificationRequestParams {
-    
-    inline def apply(baseUrl: String, identifier: String, provider: SessionProvider, token: String, url: String): SendVerificationRequestParams = {
-      val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SendVerificationRequestParams]
-    }
-    
-    extension [Self <: SendVerificationRequestParams](x: Self) {
-      
-      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
-      
-      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
-      
-      inline def setProvider(value: SessionProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
-      
-      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
-      
-      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Session extends StObject {
-    
-    var accessToken: String
-    
-    var expires: Date
-    
+    /** A randomly generated value that is used to get hold of the session. */
     var sessionToken: String
     
-    var userId: String | Double | js.Object
+    /** Used to connect the session to a particular user */
+    var userId: String
   }
-  object Session {
+  object AdapterSession {
     
-    inline def apply(accessToken: String, expires: Date, sessionToken: String, userId: String | Double | js.Object): Session = {
-      val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], sessionToken = sessionToken.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Session]
+    inline def apply(expires: js.Date, sessionToken: String, userId: String): AdapterSession = {
+      val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], sessionToken = sessionToken.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AdapterSession]
     }
     
-    extension [Self <: Session](x: Self) {
+    extension [Self <: AdapterSession](x: Self) {
       
-      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
-      
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
       
-      inline def setUserId(value: String | Double | js.Object): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   
-  /**
-    * TODO: fix auto-type schema
-    */
-  @js.native
-  trait TypeORMAdapter[A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */] extends StObject {
+  trait AdapterUser
+    extends StObject
+       with DefaultUser {
     
-    def Adapter(typeOrmConfig: ConnectionOptions): typings.nextAuth.adaptersMod.Adapter[U, Profile, S, VR] = js.native
-    def Adapter(typeOrmConfig: ConnectionOptions, options: `0`[A, U, S, VR]): typings.nextAuth.adaptersMod.Adapter[U, Profile, S, VR] = js.native
+    var emailVerified: js.Date | Null
     
-    var Models: typings.nextAuth.anon.User = js.native
+    @JSName("email")
+    var email_AdapterUser: String
+  }
+  object AdapterUser {
+    
+    inline def apply(email: String, id: String): AdapterUser = {
+      val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], emailVerified = null)
+      __obj.asInstanceOf[AdapterUser]
+    }
+    
+    extension [Self <: AdapterUser](x: Self) {
+      
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      
+      inline def setEmailVerified(value: js.Date): Self = StObject.set(x, "emailVerified", value.asInstanceOf[js.Any])
+      
+      inline def setEmailVerifiedNull: Self = StObject.set(x, "emailVerified", null)
+    }
   }
   
-  trait VerificationRequest extends StObject {
+  trait DefaultAdapter extends StObject {
     
-    var expires: Date
+    /** Creates a session for the user and returns it. */
+    def createSession(session: Expires): Awaitable[AdapterSession]
+    
+    def createUser(user: OmitAdapterUserid): Awaitable[AdapterUser]
+    
+    var createVerificationToken: js.UndefOr[
+        js.Function1[
+          /* verificationToken */ VerificationToken, 
+          Awaitable[js.UndefOr[VerificationToken | Null]]
+        ]
+      ] = js.undefined
+    
+    /**
+      * Deletes a session from the database.
+      * It is preferred that this method also returns the session
+      * that is being deleted for logging purposes.
+      */
+    def deleteSession(sessionToken: String): js.Promise[Unit] | (Awaitable[js.UndefOr[AdapterSession | Null]])
+    
+    /** @todo Implement */
+    var deleteUser: js.UndefOr[
+        js.Function1[
+          /* userId */ String, 
+          js.Promise[Unit] | (Awaitable[js.UndefOr[AdapterUser | Null]])
+        ]
+      ] = js.undefined
+    
+    def getSessionAndUser(sessionToken: String): Awaitable[Session | Null]
+    
+    def getUser(id: String): Awaitable[AdapterUser | Null]
+    
+    /** Using the provider id and the id of the user for a specific account, get the user. */
+    def getUserByAccount(providerAccountId: PickAdapterAccountprovide): Awaitable[AdapterUser | Null]
+    
+    def getUserByEmail(email: String): Awaitable[AdapterUser | Null]
+    
+    def linkAccount(account: AdapterAccount): js.Promise[Unit] | (Awaitable[js.UndefOr[AdapterAccount | Null]])
+    
+    /** @todo Implement */
+    var unlinkAccount: js.UndefOr[
+        js.Function1[
+          /* providerAccountId */ PickAdapterAccountprovide, 
+          js.Promise[Unit] | Awaitable[js.UndefOr[AdapterAccount]]
+        ]
+      ] = js.undefined
+    
+    def updateSession(session: PartialAdapterSessionPick): Awaitable[js.UndefOr[AdapterSession | Null]]
+    
+    def updateUser(user: PartialAdapterUser): Awaitable[AdapterUser]
+    
+    /**
+      * Return verification token from the database
+      * and delete it so it cannot be used again.
+      */
+    var useVerificationToken: js.UndefOr[js.Function1[/* params */ Identifier, Awaitable[VerificationToken | Null]]] = js.undefined
+  }
+  object DefaultAdapter {
+    
+    inline def apply(
+      createSession: Expires => Awaitable[AdapterSession],
+      createUser: OmitAdapterUserid => Awaitable[AdapterUser],
+      deleteSession: String => js.Promise[Unit] | (Awaitable[js.UndefOr[AdapterSession | Null]]),
+      getSessionAndUser: String => Awaitable[Session | Null],
+      getUser: String => Awaitable[AdapterUser | Null],
+      getUserByAccount: PickAdapterAccountprovide => Awaitable[AdapterUser | Null],
+      getUserByEmail: String => Awaitable[AdapterUser | Null],
+      linkAccount: AdapterAccount => js.Promise[Unit] | (Awaitable[js.UndefOr[AdapterAccount | Null]]),
+      updateSession: PartialAdapterSessionPick => Awaitable[js.UndefOr[AdapterSession | Null]],
+      updateUser: PartialAdapterUser => Awaitable[AdapterUser]
+    ): DefaultAdapter = {
+      val __obj = js.Dynamic.literal(createSession = js.Any.fromFunction1(createSession), createUser = js.Any.fromFunction1(createUser), deleteSession = js.Any.fromFunction1(deleteSession), getSessionAndUser = js.Any.fromFunction1(getSessionAndUser), getUser = js.Any.fromFunction1(getUser), getUserByAccount = js.Any.fromFunction1(getUserByAccount), getUserByEmail = js.Any.fromFunction1(getUserByEmail), linkAccount = js.Any.fromFunction1(linkAccount), updateSession = js.Any.fromFunction1(updateSession), updateUser = js.Any.fromFunction1(updateUser))
+      __obj.asInstanceOf[DefaultAdapter]
+    }
+    
+    extension [Self <: DefaultAdapter](x: Self) {
+      
+      inline def setCreateSession(value: Expires => Awaitable[AdapterSession]): Self = StObject.set(x, "createSession", js.Any.fromFunction1(value))
+      
+      inline def setCreateUser(value: OmitAdapterUserid => Awaitable[AdapterUser]): Self = StObject.set(x, "createUser", js.Any.fromFunction1(value))
+      
+      inline def setCreateVerificationToken(
+        value: /* verificationToken */ VerificationToken => Awaitable[js.UndefOr[VerificationToken | Null]]
+      ): Self = StObject.set(x, "createVerificationToken", js.Any.fromFunction1(value))
+      
+      inline def setCreateVerificationTokenUndefined: Self = StObject.set(x, "createVerificationToken", js.undefined)
+      
+      inline def setDeleteSession(value: String => js.Promise[Unit] | (Awaitable[js.UndefOr[AdapterSession | Null]])): Self = StObject.set(x, "deleteSession", js.Any.fromFunction1(value))
+      
+      inline def setDeleteUser(value: /* userId */ String => js.Promise[Unit] | (Awaitable[js.UndefOr[AdapterUser | Null]])): Self = StObject.set(x, "deleteUser", js.Any.fromFunction1(value))
+      
+      inline def setDeleteUserUndefined: Self = StObject.set(x, "deleteUser", js.undefined)
+      
+      inline def setGetSessionAndUser(value: String => Awaitable[Session | Null]): Self = StObject.set(x, "getSessionAndUser", js.Any.fromFunction1(value))
+      
+      inline def setGetUser(value: String => Awaitable[AdapterUser | Null]): Self = StObject.set(x, "getUser", js.Any.fromFunction1(value))
+      
+      inline def setGetUserByAccount(value: PickAdapterAccountprovide => Awaitable[AdapterUser | Null]): Self = StObject.set(x, "getUserByAccount", js.Any.fromFunction1(value))
+      
+      inline def setGetUserByEmail(value: String => Awaitable[AdapterUser | Null]): Self = StObject.set(x, "getUserByEmail", js.Any.fromFunction1(value))
+      
+      inline def setLinkAccount(value: AdapterAccount => js.Promise[Unit] | (Awaitable[js.UndefOr[AdapterAccount | Null]])): Self = StObject.set(x, "linkAccount", js.Any.fromFunction1(value))
+      
+      inline def setUnlinkAccount(
+        value: /* providerAccountId */ PickAdapterAccountprovide => js.Promise[Unit] | Awaitable[js.UndefOr[AdapterAccount]]
+      ): Self = StObject.set(x, "unlinkAccount", js.Any.fromFunction1(value))
+      
+      inline def setUnlinkAccountUndefined: Self = StObject.set(x, "unlinkAccount", js.undefined)
+      
+      inline def setUpdateSession(value: PartialAdapterSessionPick => Awaitable[js.UndefOr[AdapterSession | Null]]): Self = StObject.set(x, "updateSession", js.Any.fromFunction1(value))
+      
+      inline def setUpdateUser(value: PartialAdapterUser => Awaitable[AdapterUser]): Self = StObject.set(x, "updateUser", js.Any.fromFunction1(value))
+      
+      inline def setUseVerificationToken(value: /* params */ Identifier => Awaitable[VerificationToken | Null]): Self = StObject.set(x, "useVerificationToken", js.Any.fromFunction1(value))
+      
+      inline def setUseVerificationTokenUndefined: Self = StObject.set(x, "useVerificationToken", js.undefined)
+    }
+  }
+  
+  trait VerificationToken extends StObject {
+    
+    var expires: js.Date
     
     var identifier: String
     
     var token: String
   }
-  object VerificationRequest {
+  object VerificationToken {
     
-    inline def apply(expires: Date, identifier: String, token: String): VerificationRequest = {
+    inline def apply(expires: js.Date, identifier: String, token: String): VerificationToken = {
       val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-      __obj.asInstanceOf[VerificationRequest]
+      __obj.asInstanceOf[VerificationToken]
     }
     
-    extension [Self <: VerificationRequest](x: Self) {
+    extension [Self <: VerificationToken](x: Self) {
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
-  
-  type _To = Adapters
-  
-  /* This means you don't have to write `default`, but can instead just say `adaptersMod.foo` */
-  override def _to: Adapters = default
 }

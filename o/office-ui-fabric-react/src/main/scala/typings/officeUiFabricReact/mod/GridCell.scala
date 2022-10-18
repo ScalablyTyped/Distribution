@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.Disabled
-import typings.officeUiFabricReact.buttonGridCellTypesMod.IButtonGridCellProps
+import typings.officeUiFabricReact.libUtilitiesButtonGridButtonGridCellDottypesMod.IButtonGridCellProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("office-ui-fabric-react", "GridCell")
 @js.native
 open class GridCell[T, P /* <: IButtonGridCellProps[/* import warning: RewrittenClass.unapply cls was tparam T */ Any] */] ()
-  extends typings.officeUiFabricReact.buttonGridCellMod.ButtonGridCell[T, P]
+  extends typings.officeUiFabricReact.libUtilitiesButtonGridButtonGridCellMod.ButtonGridCell[T, P]
 object GridCell {
   
   @JSImport("office-ui-fabric-react", "GridCell")

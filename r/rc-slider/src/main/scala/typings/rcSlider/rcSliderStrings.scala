@@ -1,7 +1,7 @@
 package typings.rcSlider
 
-import typings.rcSlider.interfaceMod.Direction
-import typings.rcSlider.useOffsetMod.OffsetMode
+import typings.rcSlider.libHooksUseOffsetMod.OffsetMode
+import typings.rcSlider.libInterfaceMod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

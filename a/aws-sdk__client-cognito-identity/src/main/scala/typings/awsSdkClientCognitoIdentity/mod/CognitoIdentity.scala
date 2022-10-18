@@ -1,6 +1,6 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
-import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.CognitoIdentityClientConfig
+import typings.awsSdkClientCognitoIdentity.distTypesCognitoIdentityClientMod.CognitoIdentityClientConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "CognitoIdentity")
 @js.native
 open class CognitoIdentity protected ()
-  extends typings.awsSdkClientCognitoIdentity.cognitoIdentityMod.CognitoIdentity {
+  extends typings.awsSdkClientCognitoIdentity.distTypesCognitoIdentityMod.CognitoIdentity {
   def this(configuration: CognitoIdentityClientConfig) = this()
 }

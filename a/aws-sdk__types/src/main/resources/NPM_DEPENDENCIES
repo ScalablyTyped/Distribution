@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/types" : "3.178.0"
+      "@aws-sdk/types" : "3.190.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/types" : "3.178.0"
+      "@aws-sdk/types" : "3.190.0"
     }
   ],
   "compile-devDependencies" : [

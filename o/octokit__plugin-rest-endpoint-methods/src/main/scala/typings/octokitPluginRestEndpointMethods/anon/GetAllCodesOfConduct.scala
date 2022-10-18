@@ -3,7 +3,7 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.requestParametersMod.RequestParameters
+import typings.octokitTypes.distTypesRequestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +23,7 @@ trait GetAllCodesOfConduct extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /codes_of_conduct']['response'] */ js.Any
   ]
   @JSName("getAllCodesOfConduct")
-  var getAllCodesOfConduct_Original: `187`
+  var getAllCodesOfConduct_Original: `189`
   
   def getConductCode(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /codes_of_conduct/{key}']['response'] */ js.Any
@@ -37,19 +37,19 @@ trait GetAllCodesOfConduct extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /codes_of_conduct/{key}']['response'] */ js.Any
   ]
   @JSName("getConductCode")
-  var getConductCode_Original: `188`
+  var getConductCode_Original: `190`
 }
 object GetAllCodesOfConduct {
   
-  inline def apply(getAllCodesOfConduct: `187`, getConductCode: `188`): GetAllCodesOfConduct = {
+  inline def apply(getAllCodesOfConduct: `189`, getConductCode: `190`): GetAllCodesOfConduct = {
     val __obj = js.Dynamic.literal(getAllCodesOfConduct = getAllCodesOfConduct.asInstanceOf[js.Any], getConductCode = getConductCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAllCodesOfConduct]
   }
   
   extension [Self <: GetAllCodesOfConduct](x: Self) {
     
-    inline def setGetAllCodesOfConduct(value: `187`): Self = StObject.set(x, "getAllCodesOfConduct", value.asInstanceOf[js.Any])
+    inline def setGetAllCodesOfConduct(value: `189`): Self = StObject.set(x, "getAllCodesOfConduct", value.asInstanceOf[js.Any])
     
-    inline def setGetConductCode(value: `188`): Self = StObject.set(x, "getConductCode", value.asInstanceOf[js.Any])
+    inline def setGetConductCode(value: `190`): Self = StObject.set(x, "getConductCode", value.asInstanceOf[js.Any])
   }
 }

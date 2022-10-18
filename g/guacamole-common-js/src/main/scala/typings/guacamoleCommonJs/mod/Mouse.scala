@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-common-js", "Mouse")
 @js.native
 open class Mouse protected ()
-  extends typings.guacamoleCommonJs.mouseMod.Mouse {
+  extends typings.guacamoleCommonJs.libMouseMod.Mouse {
   /**
     * @param element The Element to use to provide mouse events.
     */
@@ -21,7 +21,7 @@ object Mouse {
   @JSImport("guacamole-common-js", "Mouse.GuacTouchDevice")
   @js.native
   open class GuacTouchDevice protected ()
-    extends typings.guacamoleCommonJs.mouseMod.Mouse.GuacTouchDevice {
+    extends typings.guacamoleCommonJs.libMouseMod.Mouse.GuacTouchDevice {
     /**
       * @param element The Element to use to provide touch events.
       */
@@ -31,7 +31,7 @@ object Mouse {
   @JSImport("guacamole-common-js", "Mouse.State")
   @js.native
   open class State protected ()
-    extends typings.guacamoleCommonJs.mouseMod.Mouse.State {
+    extends typings.guacamoleCommonJs.libMouseMod.Mouse.State {
     /**
       * @param x The X position of the mouse pointer in pixels.
       * @param y The Y position of the mouse pointer in pixels.
@@ -47,7 +47,7 @@ object Mouse {
   @JSImport("guacamole-common-js", "Mouse.Touchpad")
   @js.native
   open class Touchpad protected ()
-    extends typings.guacamoleCommonJs.mouseMod.Mouse.Touchpad {
+    extends typings.guacamoleCommonJs.libMouseMod.Mouse.Touchpad {
     /**
       * @param element The Element to use to provide touch events.
       */
@@ -57,7 +57,7 @@ object Mouse {
   @JSImport("guacamole-common-js", "Mouse.Touchscreen")
   @js.native
   open class Touchscreen protected ()
-    extends typings.guacamoleCommonJs.mouseMod.Mouse.Touchscreen {
+    extends typings.guacamoleCommonJs.libMouseMod.Mouse.Touchscreen {
     /**
       * @param element The Element to use to provide touch events.
       */

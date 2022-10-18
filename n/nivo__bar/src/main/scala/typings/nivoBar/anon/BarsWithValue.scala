@@ -1,21 +1,21 @@
 package typings.nivoBar.anon
 
 import typings.d3Scale.mod.NumberValue
-import typings.nivoBar.typesMod.BarDatum
-import typings.nivoBar.typesMod.BarLegendProps
-import typings.nivoBar.typesMod.ComputedBarDatum
-import typings.nivoBar.typesMod.ComputedBarDatumWithValue
-import typings.nivoBar.typesMod.ComputedDatum
-import typings.nivoBar.typesMod.LegendData
-import typings.nivoColors.inheritedColorMod.InheritedColorConfigCustomFunction
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScale
-import typings.nivoScales.typesMod.ScaleBand
-import typings.nivoScales.typesMod.ScaleLinear
-import typings.nivoScales.typesMod.ScaleLog
-import typings.nivoScales.typesMod.ScalePoint
-import typings.nivoScales.typesMod.ScaleSymlog
-import typings.nivoScales.typesMod.ScaleTime
-import typings.nivoScales.typesMod.ScaleValue
+import typings.nivoBar.distTypesTypesMod.BarDatum
+import typings.nivoBar.distTypesTypesMod.BarLegendProps
+import typings.nivoBar.distTypesTypesMod.ComputedBarDatum
+import typings.nivoBar.distTypesTypesMod.ComputedBarDatumWithValue
+import typings.nivoBar.distTypesTypesMod.ComputedDatum
+import typings.nivoBar.distTypesTypesMod.LegendData
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfigCustomFunction
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScale
+import typings.nivoScales.distTypesTypesMod.ScaleBand
+import typings.nivoScales.distTypesTypesMod.ScaleLinear
+import typings.nivoScales.distTypesTypesMod.ScaleLog
+import typings.nivoScales.distTypesTypesMod.ScalePoint
+import typings.nivoScales.distTypesTypesMod.ScaleSymlog
+import typings.nivoScales.distTypesTypesMod.ScaleTime
+import typings.nivoScales.distTypesTypesMod.ScaleValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

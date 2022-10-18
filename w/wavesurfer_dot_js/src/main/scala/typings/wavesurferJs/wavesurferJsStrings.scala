@@ -1,6 +1,6 @@
 package typings.wavesurferJs
 
-import typings.wavesurferJs.spectrogramMod.WindowFunction
+import typings.wavesurferJs.srcPluginSpectrogramMod.WindowFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

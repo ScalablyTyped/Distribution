@@ -2,11 +2,11 @@ package typings.karmaCoverage
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.istanbul.mod.Store
-import typings.karmaCoverage.mod.CheckTresholds
-import typings.karmaCoverage.mod.KarmaCoverageReporter
-import typings.karmaCoverage.mod.Reporter
-import typings.karmaCoverage.mod.ReporterType
-import typings.karmaCoverage.mod.Watermarks
+import typings.karmaCoverage.karmaMod.CheckTresholds
+import typings.karmaCoverage.karmaMod.KarmaCoverageReporter
+import typings.karmaCoverage.karmaMod.Reporter
+import typings.karmaCoverage.karmaMod.ReporterType
+import typings.karmaCoverage.karmaMod.Watermarks
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

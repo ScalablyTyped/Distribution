@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details about one network registration state change. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandNetworkRegistrationStateChange")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandNetworkRegistrationStateChange")
 @js.native
-abstract class MobileBroadbandNetworkRegistrationStateChange ()
+open class MobileBroadbandNetworkRegistrationStateChange ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandNetworkRegistrationStateChange {
   

@@ -1,7 +1,7 @@
 package typings.algoliasearch
 
-import typings.algoliasearch.algoliasearchLiteMod.AlgoliaSearchOptions
-import typings.algoliasearch.algoliasearchLiteMod.SearchClient
+import typings.algoliasearch.distAlgoliasearchLiteMod.AlgoliaSearchOptions
+import typings.algoliasearch.distAlgoliasearchLiteMod.SearchClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

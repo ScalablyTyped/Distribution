@@ -1,13 +1,13 @@
 package typings.ethereumjsUtil
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ethereumjsUtil.accountMod.AccountData
-import typings.ethereumjsUtil.bytesMod.ToBufferInputTypes
-import typings.ethereumjsUtil.signatureMod.ECDSASignature
-import typings.ethereumjsUtil.typesMod.BigIntLike
-import typings.ethereumjsUtil.typesMod.NestedBufferArray
-import typings.ethereumjsUtil.typesMod.NestedUint8Array
-import typings.ethereumjsUtil.typesMod.TypeOutput
+import typings.ethereumjsUtil.distAccountMod.AccountData
+import typings.ethereumjsUtil.distBytesMod.ToBufferInputTypes
+import typings.ethereumjsUtil.distSignatureMod.ECDSASignature
+import typings.ethereumjsUtil.distTypesMod.BigIntLike
+import typings.ethereumjsUtil.distTypesMod.NestedBufferArray
+import typings.ethereumjsUtil.distTypesMod.NestedUint8Array
+import typings.ethereumjsUtil.distTypesMod.TypeOutput
 import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -27,7 +27,7 @@ object mod {
     * Use the static factory methods to assist in creating an Account from varying data types.
     */
   open class Account ()
-    extends typings.ethereumjsUtil.accountMod.Account {
+    extends typings.ethereumjsUtil.distAccountMod.Account {
     def this(nonce: js.BigInt) = this()
     def this(nonce: js.BigInt, balance: js.BigInt) = this()
     def this(nonce: Unit, balance: js.BigInt) = this()
@@ -51,17 +51,17 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromAccountData(accountData: AccountData): typings.ethereumjsUtil.accountMod.Account = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAccountData")(accountData.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsUtil.accountMod.Account]
+    inline def fromAccountData(accountData: AccountData): typings.ethereumjsUtil.distAccountMod.Account = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAccountData")(accountData.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsUtil.distAccountMod.Account]
     
-    inline def fromRlpSerializedAccount(serialized: Buffer): typings.ethereumjsUtil.accountMod.Account = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRlpSerializedAccount")(serialized.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsUtil.accountMod.Account]
+    inline def fromRlpSerializedAccount(serialized: Buffer): typings.ethereumjsUtil.distAccountMod.Account = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRlpSerializedAccount")(serialized.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsUtil.distAccountMod.Account]
     
-    inline def fromValuesArray(values: js.Array[Buffer]): typings.ethereumjsUtil.accountMod.Account = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsUtil.accountMod.Account]
+    inline def fromValuesArray(values: js.Array[Buffer]): typings.ethereumjsUtil.distAccountMod.Account = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsUtil.distAccountMod.Account]
   }
   
   @JSImport("@ethereumjs/util", "Address")
   @js.native
   open class Address protected ()
-    extends typings.ethereumjsUtil.addressMod.Address {
+    extends typings.ethereumjsUtil.distAddressMod.Address {
     def this(buf: Buffer) = this()
   }
   /* static members */
@@ -75,26 +75,26 @@ object mod {
       * Returns an address for a given private key.
       * @param privateKey A private key must be 256 bits wide
       */
-    inline def fromPrivateKey(privateKey: Buffer): typings.ethereumjsUtil.addressMod.Address = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsUtil.addressMod.Address]
+    inline def fromPrivateKey(privateKey: Buffer): typings.ethereumjsUtil.distAddressMod.Address = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsUtil.distAddressMod.Address]
     
     /**
       * Returns an address for a given public key.
       * @param pubKey The two points of an uncompressed key
       */
-    inline def fromPublicKey(pubKey: Buffer): typings.ethereumjsUtil.addressMod.Address = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(pubKey.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsUtil.addressMod.Address]
+    inline def fromPublicKey(pubKey: Buffer): typings.ethereumjsUtil.distAddressMod.Address = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(pubKey.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsUtil.distAddressMod.Address]
     
     /**
       * Returns an Address object from a hex-encoded string.
       * @param str - Hex-encoded address
       */
-    inline def fromString(str: String): typings.ethereumjsUtil.addressMod.Address = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsUtil.addressMod.Address]
+    inline def fromString(str: String): typings.ethereumjsUtil.distAddressMod.Address = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsUtil.distAddressMod.Address]
     
     /**
       * Generates an address for a newly created contract.
       * @param from The address which is creating this new address
       * @param nonce The nonce of the from account
       */
-    inline def generate(from: typings.ethereumjsUtil.addressMod.Address, nonce: js.BigInt): typings.ethereumjsUtil.addressMod.Address = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(from.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsUtil.addressMod.Address]
+    inline def generate(from: typings.ethereumjsUtil.distAddressMod.Address, nonce: js.BigInt): typings.ethereumjsUtil.distAddressMod.Address = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(from.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsUtil.distAddressMod.Address]
     
     /**
       * Generates an address for a contract created using CREATE2.
@@ -102,12 +102,12 @@ object mod {
       * @param salt A salt
       * @param initCode The init code of the contract being created
       */
-    inline def generate2(from: typings.ethereumjsUtil.addressMod.Address, salt: Buffer, initCode: Buffer): typings.ethereumjsUtil.addressMod.Address = (^.asInstanceOf[js.Dynamic].applyDynamic("generate2")(from.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], initCode.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsUtil.addressMod.Address]
+    inline def generate2(from: typings.ethereumjsUtil.distAddressMod.Address, salt: Buffer, initCode: Buffer): typings.ethereumjsUtil.distAddressMod.Address = (^.asInstanceOf[js.Dynamic].applyDynamic("generate2")(from.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], initCode.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsUtil.distAddressMod.Address]
     
     /**
       * Returns the zero address.
       */
-    inline def zero(): typings.ethereumjsUtil.addressMod.Address = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[typings.ethereumjsUtil.addressMod.Address]
+    inline def zero(): typings.ethereumjsUtil.distAddressMod.Address = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[typings.ethereumjsUtil.distAddressMod.Address]
   }
   
   @JSImport("@ethereumjs/util", "KECCAK256_NULL")
@@ -167,25 +167,25 @@ object mod {
   object TypeOutput extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ethereumjsUtil.typesMod.TypeOutput & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ethereumjsUtil.distTypesMod.TypeOutput & Double] = js.native
     
-    /* 1 */ val BigInt: typings.ethereumjsUtil.typesMod.TypeOutput.BigInt & Double = js.native
+    /* 1 */ val BigInt: typings.ethereumjsUtil.distTypesMod.TypeOutput.BigInt & Double = js.native
     
-    /* 2 */ val Buffer: typings.ethereumjsUtil.typesMod.TypeOutput.Buffer & Double = js.native
+    /* 2 */ val Buffer: typings.ethereumjsUtil.distTypesMod.TypeOutput.Buffer & Double = js.native
     
-    /* 0 */ val Number: typings.ethereumjsUtil.typesMod.TypeOutput.Number & Double = js.native
+    /* 0 */ val Number: typings.ethereumjsUtil.distTypesMod.TypeOutput.Number & Double = js.native
     
-    /* 3 */ val PrefixedHexString: typings.ethereumjsUtil.typesMod.TypeOutput.PrefixedHexString & Double = js.native
+    /* 3 */ val PrefixedHexString: typings.ethereumjsUtil.distTypesMod.TypeOutput.PrefixedHexString & Double = js.native
   }
   
   inline def addHexPrefix(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addHexPrefix")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def arrToBufArr(arr: js.typedarray.Uint8Array): Buffer | NestedBufferArray = ^.asInstanceOf[js.Dynamic].applyDynamic("arrToBufArr")(arr.asInstanceOf[js.Any]).asInstanceOf[Buffer | NestedBufferArray]
-  inline def arrToBufArr(arr: NestedUint8Array): Buffer | NestedBufferArray = ^.asInstanceOf[js.Dynamic].applyDynamic("arrToBufArr")(arr.asInstanceOf[js.Any]).asInstanceOf[Buffer | NestedBufferArray]
+  inline def arrToBufArr(arr: NestedUint8Array): NestedBufferArray = ^.asInstanceOf[js.Dynamic].applyDynamic("arrToBufArr")(arr.asInstanceOf[js.Any]).asInstanceOf[NestedBufferArray]
   
   inline def arrToBufArr_Buffer(arr: js.typedarray.Uint8Array): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("arrToBufArr")(arr.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  inline def arrToBufArr_NestedBufferArray(arr: NestedUint8Array): NestedBufferArray = ^.asInstanceOf[js.Dynamic].applyDynamic("arrToBufArr")(arr.asInstanceOf[js.Any]).asInstanceOf[NestedBufferArray]
+  inline def arrToBufArr_Union(arr: NestedUint8Array): Buffer | NestedBufferArray = ^.asInstanceOf[js.Dynamic].applyDynamic("arrToBufArr")(arr.asInstanceOf[js.Any]).asInstanceOf[Buffer | NestedBufferArray]
   
   inline def arrayContainsArray(superset: js.Array[Any], subset: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayContainsArray")(superset.asInstanceOf[js.Any], subset.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def arrayContainsArray(superset: js.Array[Any], subset: js.Array[Any], some: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayContainsArray")(superset.asInstanceOf[js.Any], subset.asInstanceOf[js.Any], some.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -198,10 +198,11 @@ object mod {
   
   inline def bigIntToUnpaddedBuffer(value: js.BigInt): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bigIntToUnpaddedBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  inline def bufArrToArr(arr: NestedBufferArray): NestedUint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("bufArrToArr")(arr.asInstanceOf[js.Any]).asInstanceOf[NestedUint8Array]
+  inline def bufArrToArr(arr: NestedBufferArray): js.typedarray.Uint8Array | NestedUint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("bufArrToArr")(arr.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array | NestedUint8Array]
   inline def bufArrToArr(arr: Buffer): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("bufArrToArr")(arr.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def bufArrToArr_Union(arr: NestedBufferArray): js.typedarray.Uint8Array | NestedUint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("bufArrToArr")(arr.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array | NestedUint8Array]
+  inline def bufArrToArr_NestedUint8Array(arr: NestedBufferArray): NestedUint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("bufArrToArr")(arr.asInstanceOf[js.Any]).asInstanceOf[NestedUint8Array]
+  
   inline def bufArrToArr_Union(arr: Buffer): js.typedarray.Uint8Array | NestedUint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("bufArrToArr")(arr.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array | NestedUint8Array]
   
   inline def bufferToBigInt(buf: Buffer): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferToBigInt")(buf.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]

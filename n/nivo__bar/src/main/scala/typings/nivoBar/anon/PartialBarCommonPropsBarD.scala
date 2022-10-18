@@ -1,8 +1,18 @@
 package typings.nivoBar.anon
 
-import typings.nivoAnnotations.typesMod.AnnotationMatcher
-import typings.nivoAxes.typesMod.CanvasAxisProps
-import typings.nivoAxes.typesMod.GridValues
+import typings.nivoAnnotations.distTypesTypesMod.AnnotationMatcher
+import typings.nivoAxes.distTypesTypesMod.CanvasAxisProps
+import typings.nivoAxes.distTypesTypesMod.GridValues
+import typings.nivoBar.distTypesTypesMod.BarCanvasLayer
+import typings.nivoBar.distTypesTypesMod.BarDatum
+import typings.nivoBar.distTypesTypesMod.BarLegendProps
+import typings.nivoBar.distTypesTypesMod.BarTooltipProps
+import typings.nivoBar.distTypesTypesMod.ComputedBarDatum
+import typings.nivoBar.distTypesTypesMod.ComputedBarDatumWithValue
+import typings.nivoBar.distTypesTypesMod.ComputedDatum
+import typings.nivoBar.distTypesTypesMod.LabelFormatter
+import typings.nivoBar.distTypesTypesMod.LegendLabelDatum
+import typings.nivoBar.distTypesTypesMod.RenderBarProps
 import typings.nivoBar.nivoBarStrings.auto
 import typings.nivoBar.nivoBarStrings.grouped
 import typings.nivoBar.nivoBarStrings.horizontal
@@ -10,24 +20,14 @@ import typings.nivoBar.nivoBarStrings.id
 import typings.nivoBar.nivoBarStrings.indexValue
 import typings.nivoBar.nivoBarStrings.stacked
 import typings.nivoBar.nivoBarStrings.vertical
-import typings.nivoBar.typesMod.BarCanvasLayer
-import typings.nivoBar.typesMod.BarDatum
-import typings.nivoBar.typesMod.BarLegendProps
-import typings.nivoBar.typesMod.BarTooltipProps
-import typings.nivoBar.typesMod.ComputedBarDatum
-import typings.nivoBar.typesMod.ComputedBarDatumWithValue
-import typings.nivoBar.typesMod.ComputedDatum
-import typings.nivoBar.typesMod.LabelFormatter
-import typings.nivoBar.typesMod.LegendLabelDatum
-import typings.nivoBar.typesMod.RenderBarProps
-import typings.nivoColors.inheritedColorMod.InheritedColorConfig
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoCore.mod.Theme
 import typings.nivoCore.mod.ValueFormat
-import typings.nivoScales.typesMod.ScaleBandSpec
-import typings.nivoScales.typesMod.ScaleSpec
+import typings.nivoScales.distTypesTypesMod.ScaleBandSpec
+import typings.nivoScales.distTypesTypesMod.ScaleSpec
 import typings.react.mod.FC
 import typings.react.mod.Key
 import typings.react.mod.MouseEvent
@@ -249,13 +249,9 @@ object PartialBarCommonPropsBarD {
     
     inline def setGridXValuesUndefined: Self = StObject.set(x, "gridXValues", js.undefined)
     
-    inline def setGridXValuesVarargs(value: (js.Date | Double | String)*): Self = StObject.set(x, "gridXValues", js.Array(value*))
-    
     inline def setGridYValues(value: GridValues[String | Double]): Self = StObject.set(x, "gridYValues", value.asInstanceOf[js.Any])
     
     inline def setGridYValuesUndefined: Self = StObject.set(x, "gridYValues", js.undefined)
-    
-    inline def setGridYValuesVarargs(value: (js.Date | Double | String)*): Self = StObject.set(x, "gridYValues", js.Array(value*))
     
     inline def setGroupMode(value: grouped | stacked): Self = StObject.set(x, "groupMode", value.asInstanceOf[js.Any])
     
@@ -418,10 +414,6 @@ object PartialBarCommonPropsBarD {
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     inline def setValueFormat(value: ValueFormat[Double, Unit]): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
-    
-    inline def setValueFormatFunction1(value: Double => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction1(value))
-    
-    inline def setValueFormatFunction2(value: (Double, Unit) => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction2(value))
     
     inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
     

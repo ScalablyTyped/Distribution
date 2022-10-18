@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "NodeMaterialDefines")
 @js.native
 open class NodeMaterialDefines ()
-  extends typings.babylonjs.legacyMod.NodeMaterialDefines
+  extends typings.babylonjs.legacyLegacyMod.NodeMaterialDefines

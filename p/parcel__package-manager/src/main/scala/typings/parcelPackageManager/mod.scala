@@ -1,8 +1,8 @@
 package typings.parcelPackageManager
 
-import typings.parcelPackageManager.typesMod.InstallerOptions
-import typings.parcelPackageManager.typesMod.PackageInstaller
-import typings.parcelPackageManager.typesMod.PackageManager
+import typings.parcelPackageManager.libTypesMod.InstallerOptions
+import typings.parcelPackageManager.libTypesMod.PackageInstaller
+import typings.parcelPackageManager.libTypesMod.PackageManager
 import typings.std.FileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

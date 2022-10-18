@@ -13,7 +13,7 @@ trait DataDateFormatObject extends StObject {
   
   def parser(`match`: js.Array[Double]): Double
   @JSName("parser")
-  var parser_Original: typings.highcharts.dataMod.highchartsAugmentingMod.DataDateFormatCallbackFunction
+  var parser_Original: typings.highcharts.modulesDataMod.highchartsAugmentingMod.DataDateFormatCallbackFunction
   
   var regex: js.RegExp
 }

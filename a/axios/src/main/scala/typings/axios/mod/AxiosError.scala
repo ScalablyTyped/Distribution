@@ -90,9 +90,12 @@ open class AxiosError[T, D] ()
     response: AxiosResponse[T, D]
   ) = this()
   
+  @JSName("cause")
+  var cause_AxiosError: js.UndefOr[js.Error] = js.native
+  
   var code: js.UndefOr[String] = js.native
   
-  var config: AxiosRequestConfig[D] = js.native
+  var config: js.UndefOr[AxiosRequestConfig[D]] = js.native
   
   var isAxiosError: Boolean = js.native
   
@@ -108,7 +111,7 @@ open class AxiosError[T, D] ()
   
   var response: js.UndefOr[AxiosResponse[T, D]] = js.native
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[Double] = js.native
   
   def toJSON(): js.Object = js.native
 }
@@ -147,9 +150,17 @@ object AxiosError {
   @js.native
   val ERR_FR_TOO_MANY_REDIRECTS: /* "ERR_FR_TOO_MANY_REDIRECTS" */ String = js.native
   
+  @JSImport("axios", "AxiosError.ERR_INVALID_URL")
+  @js.native
+  val ERR_INVALID_URL: /* "ERR_INVALID_URL" */ String = js.native
+  
   @JSImport("axios", "AxiosError.ERR_NETWORK")
   @js.native
   val ERR_NETWORK: /* "ERR_NETWORK" */ String = js.native
+  
+  @JSImport("axios", "AxiosError.ERR_NOT_SUPPORT")
+  @js.native
+  val ERR_NOT_SUPPORT: /* "ERR_NOT_SUPPORT" */ String = js.native
   
   @JSImport("axios", "AxiosError.ETIMEDOUT")
   @js.native

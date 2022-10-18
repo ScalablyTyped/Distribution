@@ -22,40 +22,15 @@ object anon {
   trait I18n extends StObject {
     
     var i18n: typings.i18next.mod.i18n
-    
-    var ready: Boolean
-    
-    var t: TFunction
   }
   object I18n {
     
-    inline def apply(i18n: i18n, ready: Boolean, t: TFunction): I18n = {
-      val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
+    inline def apply(i18n: i18n): I18n = {
+      val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any])
       __obj.asInstanceOf[I18n]
     }
     
     extension [Self <: I18n](x: Self) {
-      
-      inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
-      
-      inline def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
-      
-      inline def setT(value: TFunction): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait I18nI18n extends StObject {
-    
-    var i18n: typings.i18next.mod.i18n
-  }
-  object I18nI18n {
-    
-    inline def apply(i18n: i18n): I18nI18n = {
-      val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any])
-      __obj.asInstanceOf[I18nI18n]
-    }
-    
-    extension [Self <: I18nI18n](x: Self) {
       
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     }
@@ -121,6 +96,31 @@ object anon {
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
       inline def setLng(value: String): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Ready extends StObject {
+    
+    var i18n: typings.i18next.mod.i18n
+    
+    var ready: Boolean
+    
+    var t: TFunction
+  }
+  object Ready {
+    
+    inline def apply(i18n: i18n, ready: Boolean, t: TFunction): Ready = {
+      val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Ready]
+    }
+    
+    extension [Self <: Ready](x: Self) {
+      
+      inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      
+      inline def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+      
+      inline def setT(value: TFunction): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
   }
   

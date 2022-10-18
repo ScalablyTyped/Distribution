@@ -67,6 +67,12 @@ open class StructureStorage protected ()
   override def notifyWhenAttacked(enabled: Boolean): ScreepsReturnCode = js.native
   
   /**
+    * An object with the structure’s owner info (if present) containing the following properties: username
+    */
+  /* CompleteClass */
+  var owner: /* import warning: importer.ImportType#apply Failed type conversion: T extends screeps.STRUCTURE_CONTROLLER ? screeps.Owner | undefined : screeps.Owner */ js.Any = js.native
+  
+  /**
     * An object representing the position of this object in the room.
     */
   /* CompleteClass */

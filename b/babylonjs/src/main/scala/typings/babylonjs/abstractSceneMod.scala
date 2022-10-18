@@ -1,33 +1,33 @@
 package typings.babylonjs
 
-import typings.babylonjs.abstractActionManagerMod.AbstractActionManager
-import typings.babylonjs.abstractMeshMod.AbstractMesh
-import typings.babylonjs.animationGroupMod.AnimationGroup
-import typings.babylonjs.animationMod.Animation
+import typings.babylonjs.actionsAbstractActionManagerMod.AbstractActionManager
+import typings.babylonjs.animationsAnimationGroupMod.AnimationGroup
+import typings.babylonjs.animationsAnimationMod.Animation
 import typings.babylonjs.assetContainerMod.AssetContainer
-import typings.babylonjs.baseTextureMod.BaseTexture
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.effectLayerMod.EffectLayer
-import typings.babylonjs.geometryMod.Geometry
-import typings.babylonjs.glowLayerMod.GlowLayer
-import typings.babylonjs.highlightLayerMod.HighlightLayer
-import typings.babylonjs.iparticlesystemMod.IParticleSystem
-import typings.babylonjs.layerMod.Layer
-import typings.babylonjs.lensFlareSystemMod.LensFlareSystem
-import typings.babylonjs.lightMod.Light
-import typings.babylonjs.materialMod.Material
-import typings.babylonjs.morphTargetManagerMod.MorphTargetManager
-import typings.babylonjs.multiMaterialMod.MultiMaterial
+import typings.babylonjs.audioSoundMod.Sound
+import typings.babylonjs.bonesSkeletonMod.Skeleton
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.layersEffectLayerMod.EffectLayer
+import typings.babylonjs.layersGlowLayerMod.GlowLayer
+import typings.babylonjs.layersHighlightLayerMod.HighlightLayer
+import typings.babylonjs.layersLayerMod.Layer
+import typings.babylonjs.lensFlaresLensFlareSystemMod.LensFlareSystem
+import typings.babylonjs.lightsLightMod.Light
+import typings.babylonjs.materialsMaterialMod.Material
+import typings.babylonjs.materialsMultiMaterialMod.MultiMaterial
+import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
+import typings.babylonjs.materialsTexturesProceduralsProceduralTextureMod.ProceduralTexture
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
+import typings.babylonjs.meshesGeometryMod.Geometry
+import typings.babylonjs.meshesTransformNodeMod.TransformNode
+import typings.babylonjs.morphMorphTargetManagerMod.MorphTargetManager
 import typings.babylonjs.nodeMod.Node
-import typings.babylonjs.postProcessMod.PostProcess
-import typings.babylonjs.prePassRendererMod.PrePassRenderer
-import typings.babylonjs.proceduralTextureMod.ProceduralTexture
-import typings.babylonjs.reflectionProbeMod.ReflectionProbe
+import typings.babylonjs.particlesIparticlesystemMod.IParticleSystem
+import typings.babylonjs.postProcessesPostProcessMod.PostProcess
+import typings.babylonjs.probesReflectionProbeMod.ReflectionProbe
+import typings.babylonjs.renderingPrePassRendererMod.PrePassRenderer
+import typings.babylonjs.renderingSubSurfaceConfigurationMod.SubSurfaceConfiguration
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.skeletonMod.Skeleton
-import typings.babylonjs.soundMod.Sound
-import typings.babylonjs.subSurfaceConfigurationMod.SubSurfaceConfiguration
-import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,9 +35,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object abstractSceneMod {
   
-  @JSImport("babylonjs/abstractScene", "AbstractScene")
+  /* note: abstract class */ @JSImport("babylonjs/abstractScene", "AbstractScene")
   @js.native
-  abstract class AbstractScene () extends StObject {
+  open class AbstractScene () extends StObject {
     
     /** @internal */
     /* protected */ var _environmentTexture: Nullable[BaseTexture] = js.native

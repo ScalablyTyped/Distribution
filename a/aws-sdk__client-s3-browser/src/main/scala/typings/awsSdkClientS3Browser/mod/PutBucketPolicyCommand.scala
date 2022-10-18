@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-browser", "PutBucketPolicyCommand")
 @js.native
 open class PutBucketPolicyCommand protected ()
-  extends typings.awsSdkClientS3Browser.putBucketPolicyCommandMod.PutBucketPolicyCommand {
+  extends typings.awsSdkClientS3Browser.commandsPutBucketPolicyCommandMod.PutBucketPolicyCommand {
   def this(input: PutBucketPolicyInput) = this()
 }

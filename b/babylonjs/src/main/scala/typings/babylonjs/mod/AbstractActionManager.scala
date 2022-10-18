@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs", "AbstractActionManager")
+/* note: abstract class */ @JSImport("babylonjs", "AbstractActionManager")
 @js.native
-abstract class AbstractActionManager ()
-  extends typings.babylonjs.legacyMod.AbstractActionManager
+open class AbstractActionManager ()
+  extends typings.babylonjs.legacyLegacyMod.AbstractActionManager
 /* static members */
 object AbstractActionManager {
   

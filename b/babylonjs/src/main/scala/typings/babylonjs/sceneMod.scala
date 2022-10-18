@@ -1,81 +1,95 @@
 package typings.babylonjs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babylonjs.abstractActionManagerMod.AbstractActionManager
-import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.abstractSceneMod.AbstractScene
-import typings.babylonjs.animatableMod.Animatable
-import typings.babylonjs.animationGroupMod.AnimationGroup
-import typings.babylonjs.animationMod.Animation
-import typings.babylonjs.animationPropertiesOverrideMod.AnimationPropertiesOverride
+import typings.babylonjs.actionsAbstractActionManagerMod.AbstractActionManager
+import typings.babylonjs.animationsAnimatableMod.Animatable
+import typings.babylonjs.animationsAnimationGroupMod.AnimationGroup
+import typings.babylonjs.animationsAnimationMod.Animation
+import typings.babylonjs.animationsAnimationPropertiesOverrideMod.AnimationPropertiesOverride
+import typings.babylonjs.animationsRuntimeAnimationMod.RuntimeAnimation
 import typings.babylonjs.anon.AdditiveAnimations
 import typings.babylonjs.anon.Animations
-import typings.babylonjs.anon.Max
+import typings.babylonjs.anon.MaxMin
 import typings.babylonjs.anon.PartialIEnvironmentHelper
-import typings.babylonjs.baseTextureMod.BaseTexture
-import typings.babylonjs.boneMod.Bone
-import typings.babylonjs.boundingBoxRendererMod.BoundingBoxRenderer
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.colliderMod.Collider
-import typings.babylonjs.collisionCoordinatorMod.ICollisionCoordinator
-import typings.babylonjs.computePressureMod.IComputePressureData
-import typings.babylonjs.debugLayerMod.DebugLayer
-import typings.babylonjs.depthPeelingRendererMod.DepthPeelingRenderer
-import typings.babylonjs.depthRendererMod.DepthRenderer
-import typings.babylonjs.deviceInputEventsMod.IPointerEvent
-import typings.babylonjs.effectMod.Effect
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.environmentHelperMod.EnvironmentHelper
-import typings.babylonjs.fileRequestMod.IFileRequest
-import typings.babylonjs.fileToolsMod.LoadFileError
-import typings.babylonjs.fileToolsMod.ReadFileError
-import typings.babylonjs.fileToolsMod.RequestFileError
-import typings.babylonjs.gamepadManagerMod.GamepadManager
-import typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer
-import typings.babylonjs.geometryMod.Geometry
-import typings.babylonjs.iClipPlanesHolderMod.IClipPlanesHolder
-import typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration
-import typings.babylonjs.iofflineproviderMod.IOfflineProvider
-import typings.babylonjs.iparticlesystemMod.IParticleSystem
-import typings.babylonjs.iphysicsengineMod.IPhysicsEngine
-import typings.babylonjs.iphysicsengineMod.IPhysicsEnginePlugin
-import typings.babylonjs.keyboardEventsMod.KeyboardInfo
-import typings.babylonjs.keyboardEventsMod.KeyboardInfoPre
-import typings.babylonjs.lightMod.Light
-import typings.babylonjs.materialMod.Material
-import typings.babylonjs.mathColorMod.Color3
-import typings.babylonjs.mathColorMod.Color4
-import typings.babylonjs.mathPlaneMod.Plane
-import typings.babylonjs.mathVectorMod.Matrix
-import typings.babylonjs.mathVectorMod.Quaternion
-import typings.babylonjs.mathVectorMod.Vector2
-import typings.babylonjs.mathVectorMod.Vector3
-import typings.babylonjs.mathVectorMod.Vector4
-import typings.babylonjs.meshMod.Mesh
-import typings.babylonjs.meshSimplificationMod.SimplificationQueue
-import typings.babylonjs.morphTargetManagerMod.MorphTargetManager
-import typings.babylonjs.morphTargetMod.MorphTarget
-import typings.babylonjs.multiMaterialMod.MultiMaterial
+import typings.babylonjs.audioSoundMod.Sound
+import typings.babylonjs.audioSoundTrackMod.SoundTrack
+import typings.babylonjs.bonesBoneMod.Bone
+import typings.babylonjs.bonesSkeletonMod.Skeleton
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.camerasVRVrExperienceHelperMod.VRExperienceHelper
+import typings.babylonjs.camerasVRVrExperienceHelperMod.VRExperienceHelperOptions
+import typings.babylonjs.collisionsColliderMod.Collider
+import typings.babylonjs.collisionsCollisionCoordinatorMod.ICollisionCoordinator
+import typings.babylonjs.collisionsPickingInfoMod.PickingInfo
+import typings.babylonjs.cullingOctreesOctreeMod.Octree
+import typings.babylonjs.cullingRayMod.Ray
+import typings.babylonjs.cullingRayMod.TrianglePickingPredicate
+import typings.babylonjs.debugDebugLayerMod.DebugLayer
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.eventsDeviceInputEventsMod.IPointerEvent
+import typings.babylonjs.eventsKeyboardEventsMod.KeyboardInfo
+import typings.babylonjs.eventsKeyboardEventsMod.KeyboardInfoPre
+import typings.babylonjs.eventsPointerEventsMod.PointerEventTypes
+import typings.babylonjs.eventsPointerEventsMod.PointerInfo
+import typings.babylonjs.eventsPointerEventsMod.PointerInfoPre
+import typings.babylonjs.gamepadsGamepadManagerMod.GamepadManager
+import typings.babylonjs.helpersEnvironmentHelperMod.EnvironmentHelper
+import typings.babylonjs.inputsSceneDotinputManagerMod.InputManager
+import typings.babylonjs.lightsLightMod.Light
+import typings.babylonjs.materialsEffectMod.Effect
+import typings.babylonjs.materialsImageProcessingConfigurationMod.ImageProcessingConfiguration
+import typings.babylonjs.materialsMaterialMod.Material
+import typings.babylonjs.materialsMultiMaterialMod.MultiMaterial
+import typings.babylonjs.materialsShaderMaterialMod.ShaderMaterial
+import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
+import typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture
+import typings.babylonjs.materialsUniformBufferMod.UniformBuffer
+import typings.babylonjs.mathsMathDotcolorMod.Color3
+import typings.babylonjs.mathsMathDotcolorMod.Color4
+import typings.babylonjs.mathsMathDotplaneMod.Plane
+import typings.babylonjs.mathsMathDotvectorMod.Matrix
+import typings.babylonjs.mathsMathDotvectorMod.Quaternion
+import typings.babylonjs.mathsMathDotvectorMod.Vector2
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
+import typings.babylonjs.mathsMathDotvectorMod.Vector4
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
+import typings.babylonjs.meshesGeometryMod.Geometry
+import typings.babylonjs.meshesMeshMod.Mesh
+import typings.babylonjs.meshesMeshSimplificationMod.SimplificationQueue
+import typings.babylonjs.meshesSubMeshMod.SubMesh
+import typings.babylonjs.meshesTransformNodeMod.TransformNode
+import typings.babylonjs.miscComputePressureMod.IComputePressureData
+import typings.babylonjs.miscFileRequestMod.IFileRequest
+import typings.babylonjs.miscFileToolsMod.LoadFileError
+import typings.babylonjs.miscFileToolsMod.ReadFileError
+import typings.babylonjs.miscFileToolsMod.RequestFileError
+import typings.babylonjs.miscInterfacesIClipPlanesHolderMod.IClipPlanesHolder
+import typings.babylonjs.miscObservableMod.Observable
+import typings.babylonjs.miscPerfCounterMod.PerfCounter
+import typings.babylonjs.miscPerformanceViewerPerformanceViewerCollectorMod.PerformanceViewerCollector
+import typings.babylonjs.miscSmartArrayMod.ISmartArrayLike
+import typings.babylonjs.miscSmartArrayMod.SmartArray
+import typings.babylonjs.miscSmartArrayMod.SmartArrayNoDuplicate
+import typings.babylonjs.miscWebRequestMod.WebRequest
+import typings.babylonjs.morphMorphTargetManagerMod.MorphTargetManager
+import typings.babylonjs.morphMorphTargetMod.MorphTarget
 import typings.babylonjs.nodeMod.Node
-import typings.babylonjs.observableMod.Observable
-import typings.babylonjs.octreeMod.Octree
-import typings.babylonjs.outlineRendererMod.OutlineRenderer
-import typings.babylonjs.perfCounterMod.PerfCounter
-import typings.babylonjs.performanceViewerCollectorMod.PerformanceViewerCollector
-import typings.babylonjs.pickingInfoMod.PickingInfo
-import typings.babylonjs.pointerEventsMod.PointerEventTypes
-import typings.babylonjs.pointerEventsMod.PointerInfo
-import typings.babylonjs.pointerEventsMod.PointerInfoPre
-import typings.babylonjs.postProcessManagerMod.PostProcessManager
-import typings.babylonjs.postProcessMod.PostProcess
-import typings.babylonjs.postProcessRenderPipelineManagerMod.PostProcessRenderPipelineManager
-import typings.babylonjs.rayMod.Ray
-import typings.babylonjs.rayMod.TrianglePickingPredicate
-import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
-import typings.babylonjs.renderingManagerMod.IRenderingManagerAutoClearSetup
-import typings.babylonjs.renderingManagerMod.RenderingGroupInfo
-import typings.babylonjs.renderingManagerMod.RenderingManager
-import typings.babylonjs.runtimeAnimationMod.RuntimeAnimation
+import typings.babylonjs.offlineIofflineproviderMod.IOfflineProvider
+import typings.babylonjs.particlesIparticlesystemMod.IParticleSystem
+import typings.babylonjs.physicsIphysicsengineMod.IPhysicsEngine
+import typings.babylonjs.physicsIphysicsengineMod.IPhysicsEnginePlugin
+import typings.babylonjs.postProcessesPostProcessManagerMod.PostProcessManager
+import typings.babylonjs.postProcessesPostProcessMod.PostProcess
+import typings.babylonjs.postProcessesRenderPipelinePostProcessRenderPipelineManagerMod.PostProcessRenderPipelineManager
+import typings.babylonjs.renderingBoundingBoxRendererMod.BoundingBoxRenderer
+import typings.babylonjs.renderingDepthPeelingRendererMod.DepthPeelingRenderer
+import typings.babylonjs.renderingDepthRendererMod.DepthRenderer
+import typings.babylonjs.renderingGeometryBufferRendererMod.GeometryBufferRenderer
+import typings.babylonjs.renderingOutlineRendererMod.OutlineRenderer
+import typings.babylonjs.renderingRenderingManagerMod.IRenderingManagerAutoClearSetup
+import typings.babylonjs.renderingRenderingManagerMod.RenderingGroupInfo
+import typings.babylonjs.renderingRenderingManagerMod.RenderingManager
 import typings.babylonjs.sceneComponentMod.CameraStageAction
 import typings.babylonjs.sceneComponentMod.CameraStageFrameBufferAction
 import typings.babylonjs.sceneComponentMod.EvaluateSubMeshStageAction
@@ -91,25 +105,11 @@ import typings.babylonjs.sceneComponentMod.RenderingGroupStageAction
 import typings.babylonjs.sceneComponentMod.RenderingMeshStageAction
 import typings.babylonjs.sceneComponentMod.SimpleStageAction
 import typings.babylonjs.sceneComponentMod.Stage
-import typings.babylonjs.sceneInputManagerMod.InputManager
-import typings.babylonjs.shaderMaterialMod.ShaderMaterial
-import typings.babylonjs.skeletonMod.Skeleton
-import typings.babylonjs.smartArrayMod.ISmartArrayLike
-import typings.babylonjs.smartArrayMod.SmartArray
-import typings.babylonjs.smartArrayMod.SmartArrayNoDuplicate
-import typings.babylonjs.soundMod.Sound
-import typings.babylonjs.soundTrackMod.SoundTrack
-import typings.babylonjs.spriteManagerMod.ISpriteManager
-import typings.babylonjs.spriteMod.Sprite
-import typings.babylonjs.subMeshMod.SubMesh
-import typings.babylonjs.transformNodeMod.TransformNode
+import typings.babylonjs.spritesSpriteManagerMod.ISpriteManager
+import typings.babylonjs.spritesSpriteMod.Sprite
 import typings.babylonjs.typesMod.Nullable
-import typings.babylonjs.uniformBufferMod.UniformBuffer
-import typings.babylonjs.vrExperienceHelperMod.VRExperienceHelper
-import typings.babylonjs.vrExperienceHelperMod.VRExperienceHelperOptions
-import typings.babylonjs.webRequestMod.WebRequest
-import typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience
-import typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperienceOptions
+import typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperience
+import typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperienceOptions
 import typings.std.EventTarget
 import typings.std.File
 import typings.std.PointerEventInit
@@ -121,7 +121,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sceneMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.babylonjs.animatableInterfaceMod.IAnimatable because var conflicts: animations. Inlined  */ @JSImport("babylonjs/scene", "Scene")
+  - typings.babylonjs.animationsAnimatableDotinterfaceMod.IAnimatable because var conflicts: animations. Inlined  */ @JSImport("babylonjs/scene", "Scene")
   @js.native
   open class Scene protected ()
     extends AbstractScene
@@ -2720,13 +2720,13 @@ object sceneMod {
       * Gets or sets the active clipplane 1
       */
     /* CompleteClass */
-    var clipPlane: Nullable[typings.babylonjs.mathMod.Plane] = js.native
+    var clipPlane: Nullable[typings.babylonjs.mathsMathMod.Plane] = js.native
     
     /**
       * Gets or sets the active clipplane 2
       */
     /* CompleteClass */
-    var clipPlane2: Nullable[typings.babylonjs.mathMod.Plane] = js.native
+    var clipPlane2: Nullable[typings.babylonjs.mathsMathMod.Plane] = js.native
     /**
       * Gets or sets the active clipplane 2
       */
@@ -2737,7 +2737,7 @@ object sceneMod {
       * Gets or sets the active clipplane 3
       */
     /* CompleteClass */
-    var clipPlane3: Nullable[typings.babylonjs.mathMod.Plane] = js.native
+    var clipPlane3: Nullable[typings.babylonjs.mathsMathMod.Plane] = js.native
     /**
       * Gets or sets the active clipplane 3
       */
@@ -2748,7 +2748,7 @@ object sceneMod {
       * Gets or sets the active clipplane 4
       */
     /* CompleteClass */
-    var clipPlane4: Nullable[typings.babylonjs.mathMod.Plane] = js.native
+    var clipPlane4: Nullable[typings.babylonjs.mathsMathMod.Plane] = js.native
     /**
       * Gets or sets the active clipplane 4
       */
@@ -2759,7 +2759,7 @@ object sceneMod {
       * Gets or sets the active clipplane 5
       */
     /* CompleteClass */
-    var clipPlane5: Nullable[typings.babylonjs.mathMod.Plane] = js.native
+    var clipPlane5: Nullable[typings.babylonjs.mathsMathMod.Plane] = js.native
     /**
       * Gets or sets the active clipplane 5
       */
@@ -2770,7 +2770,7 @@ object sceneMod {
       * Gets or sets the active clipplane 6
       */
     /* CompleteClass */
-    var clipPlane6: Nullable[typings.babylonjs.mathMod.Plane] = js.native
+    var clipPlane6: Nullable[typings.babylonjs.mathsMathMod.Plane] = js.native
     /**
       * Gets or sets the active clipplane 6
       */
@@ -3056,7 +3056,7 @@ object sceneMod {
     
     /**
       * Gets the debug layer (aka Inspector) associated with the scene
-      * @see https://doc.babylonjs.com/features/playground_debuglayer
+      * @see https://doc.babylonjs.com/toolsAndResources/inspector
       */
     var debugLayer: DebugLayer = js.native
     
@@ -4207,8 +4207,8 @@ object sceneMod {
       * @param filterPredicate the predicate - which meshes should be included when calculating the world size
       * @returns {{ min: Vector3; max: Vector3 }} min and max vectors
       */
-    def getWorldExtends(): Max = js.native
-    def getWorldExtends(filterPredicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): Max = js.native
+    def getWorldExtends(): MaxMin = js.native
+    def getWorldExtends(filterPredicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): MaxMin = js.native
     
     /**
       * Defines the gravity applied to this scene (used only for collisions)
@@ -4455,7 +4455,9 @@ object sceneMod {
     /**
       * An event triggered when physic simulation has been done
       */
-    var onAfterPhysicsObservable: Observable[typings.babylonjs.physicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene] = js.native
+    var onAfterPhysicsObservable: Observable[
+        typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene
+      ] = js.native
     
     /**
       * An event triggered after rendering the scene for an active camera (When scene.render is called this will be called after each camera)
@@ -4485,7 +4487,9 @@ object sceneMod {
       * An event triggered when sprites rendering is done
       * Note: This event can be trigger more than once per frame (because sprites can be rendered by render target textures as well)
       */
-    var onAfterSpritesRenderingObservable: Observable[typings.babylonjs.spriteSceneComponentMod.babylonjsSceneAugmentingMod.Scene] = js.native
+    var onAfterSpritesRenderingObservable: Observable[
+        typings.babylonjs.spritesSpriteSceneComponentMod.babylonjsSceneAugmentingMod.Scene
+      ] = js.native
     
     /**
       * An event triggered after calculating deterministic simulation step
@@ -4526,7 +4530,9 @@ object sceneMod {
     /**
       * An event triggered when physic simulation is about to be run
       */
-    var onBeforePhysicsObservable: Observable[typings.babylonjs.physicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene] = js.native
+    var onBeforePhysicsObservable: Observable[
+        typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene
+      ] = js.native
     
     /**
       * An event triggered before rendering the scene (right after animations and physics)
@@ -4550,7 +4556,9 @@ object sceneMod {
       * An event triggered when sprites rendering is about to start
       * Note: This event can be trigger more than once per frame (because sprites can be rendered by render target textures as well)
       */
-    var onBeforeSpritesRenderingObservable: Observable[typings.babylonjs.spriteSceneComponentMod.babylonjsSceneAugmentingMod.Scene] = js.native
+    var onBeforeSpritesRenderingObservable: Observable[
+        typings.babylonjs.spritesSpriteSceneComponentMod.babylonjsSceneAugmentingMod.Scene
+      ] = js.native
     
     /**
       * An event triggered before calculating deterministic simulation step

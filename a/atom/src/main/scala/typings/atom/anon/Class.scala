@@ -4,7 +4,7 @@ import typings.atom.atomStrings.click
 import typings.atom.atomStrings.focus
 import typings.atom.atomStrings.hover
 import typings.atom.atomStrings.manual
-import typings.atom.mod.TooltipPlacement
+import typings.atom.srcTooltipManagerMod.TooltipPlacement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

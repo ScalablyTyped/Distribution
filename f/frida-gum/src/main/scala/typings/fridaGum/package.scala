@@ -1,7 +1,6 @@
 package typings.fridaGum
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.fridaGum.fridaGumBooleans.`true`
 import typings.fridaGum.fridaGumStrings.DotDotDot
 import typings.fridaGum.fridaGumStrings.`apsr-nzcvq`
@@ -76,10 +75,6 @@ T]
 
 type GetNativeFunctionReturnValue[T /* <: NativeFunctionReturnType */] = GetValue[NativeFunctionReturnTypeMap, NativeFunctionReturnValue, NativeFunctionReturnType, T]
 
-type GetValue[Map, Value, Type, T /* <: Type */] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: T[P] extends Type? frida-gum.GetValue<Map, Value, Type, T[P]> : never}
-  */ typings.fridaGum.fridaGumStrings.GetValue & TopLevel[Any]) | (/* import warning: importer.ImportType#apply Failed type conversion: Map[T] */ js.Any) | Value
-
 /**
   * Opaque ID returned by `setImmediate()`. Pass it to `clearImmediate()` to cancel a pending `setImmediate()`.
   */
@@ -145,9 +140,6 @@ type PageProtection = String
 type RecursiveKeysOf[T] = (/* keyof T */ String) | js.Array[Any]
 
 type RecursiveValuesOf[T] = (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any) | js.Array[Any]
-
-type ResolveVariadic[List /* <: js.Array[Any] */] = js.Array[Any] | (Array[
-/* import warning: importer.ImportType#apply Failed type conversion: any[0] */ js.Any])
 
 type RpcExports = StringDictionary[AnyFunction]
 

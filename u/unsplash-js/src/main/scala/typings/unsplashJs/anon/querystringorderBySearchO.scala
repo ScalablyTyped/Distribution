@@ -1,10 +1,10 @@
 package typings.unsplashJs.anon
 
+import typings.unsplashJs.distMethodsSearchTypesRequestMod.ColorId
+import typings.unsplashJs.distMethodsSearchTypesRequestMod.ContentFilter
+import typings.unsplashJs.distMethodsSearchTypesRequestMod.Language
+import typings.unsplashJs.distMethodsSearchTypesRequestMod.SearchOrderBy
 import typings.unsplashJs.distTypesRequestMod.Orientation
-import typings.unsplashJs.typesRequestMod.ColorId
-import typings.unsplashJs.typesRequestMod.ContentFilter
-import typings.unsplashJs.typesRequestMod.Language
-import typings.unsplashJs.typesRequestMod.SearchOrderBy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

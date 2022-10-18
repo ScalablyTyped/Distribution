@@ -1,7 +1,7 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvComponent.typesMod.CrosshairLineCfg
-import typings.antvComponent.typesMod.CrosshairTextBackgroundCfg
+import typings.antvComponent.libTypesMod.CrosshairLineCfg
+import typings.antvComponent.libTypesMod.CrosshairTextBackgroundCfg
 import typings.antvG2.antvG2Strings.x
 import typings.antvG2.antvG2Strings.xy
 import typings.antvG2.antvG2Strings.y

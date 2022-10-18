@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Scatter")
 @js.native
 open class Scatter ()
-  extends typings.blackEngine.scatterMod.Scatter
+  extends typings.blackEngine.scattersScatterMod.Scatter

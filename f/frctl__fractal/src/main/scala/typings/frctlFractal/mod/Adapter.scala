@@ -8,9 +8,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@frctl/fractal", "Adapter")
+/* note: abstract class */ @JSImport("@frctl/fractal", "Adapter")
 @js.native
-abstract class Adapter[TEngine] protected () extends EventEmitter {
+open class Adapter[TEngine] protected () extends EventEmitter {
   def this(engine: TEngine, source: EntitySource[Any, Any]) = this()
   
   /* protected */ def _resolve[T](value: T): js.Promise[T] = js.native

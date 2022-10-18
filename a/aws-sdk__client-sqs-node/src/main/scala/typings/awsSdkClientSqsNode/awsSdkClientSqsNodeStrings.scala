@@ -43,10 +43,6 @@ object awsSdkClientSqsNodeStrings {
   inline def ContentBasedDeduplication: ContentBasedDeduplication = "ContentBasedDeduplication".asInstanceOf[ContentBasedDeduplication]
   
   @js.native
-  sealed trait CreateQueueInput extends StObject
-  inline def CreateQueueInput: CreateQueueInput = "CreateQueueInput".asInstanceOf[CreateQueueInput]
-  
-  @js.native
   sealed trait CreatedTimestamp extends StObject
   inline def CreatedTimestamp: CreatedTimestamp = "CreatedTimestamp".asInstanceOf[CreatedTimestamp]
   
@@ -61,10 +57,6 @@ object awsSdkClientSqsNodeStrings {
   @js.native
   sealed trait FifoQueue extends StObject
   inline def FifoQueue: FifoQueue = "FifoQueue".asInstanceOf[FifoQueue]
-  
-  @js.native
-  sealed trait GetQueueAttributesOutput extends StObject
-  inline def GetQueueAttributesOutput: GetQueueAttributesOutput = "GetQueueAttributesOutput".asInstanceOf[GetQueueAttributesOutput]
   
   @js.native
   sealed trait InvalidAttributeName extends StObject
@@ -167,10 +159,6 @@ object awsSdkClientSqsNodeStrings {
   inline def SequenceNumber: SequenceNumber = "SequenceNumber".asInstanceOf[SequenceNumber]
   
   @js.native
-  sealed trait SetQueueAttributesInput extends StObject
-  inline def SetQueueAttributesInput: SetQueueAttributesInput = "SetQueueAttributesInput".asInstanceOf[SetQueueAttributesInput]
-  
-  @js.native
   sealed trait TooManyEntriesInBatchRequest extends StObject
   inline def TooManyEntriesInBatchRequest: TooManyEntriesInBatchRequest = "TooManyEntriesInBatchRequest".asInstanceOf[TooManyEntriesInBatchRequest]
   
@@ -181,12 +169,4 @@ object awsSdkClientSqsNodeStrings {
   @js.native
   sealed trait VisibilityTimeout extends StObject
   inline def VisibilityTimeout: VisibilityTimeout = "VisibilityTimeout".asInstanceOf[VisibilityTimeout]
-  
-  @js.native
-  sealed trait _Message extends StObject
-  inline def _Message: _Message = "_Message".asInstanceOf[_Message]
-  
-  @js.native
-  sealed trait _UnmarshalledMessage extends StObject
-  inline def _UnmarshalledMessage: _UnmarshalledMessage = "_UnmarshalledMessage".asInstanceOf[_UnmarshalledMessage]
 }

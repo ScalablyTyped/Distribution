@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Maths/index", "Scalar")
 @js.native
 open class Scalar ()
-  extends typings.babylonjs.mathScalarMod.Scalar
+  extends typings.babylonjs.mathsMathDotscalarMod.Scalar
 /* static members */
 object Scalar {
   

@@ -1,9 +1,9 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
-import typings.grommet.baseMod.FormFieldLabelType
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
+import typings.grommet.themesBaseMod.FormFieldLabelType
 import typings.grommet.utilsMod.BorderType
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.RoundType
@@ -16,17 +16,17 @@ trait CheckBox extends StObject {
   
   var border: js.UndefOr[BorderType & Error] = js.undefined
   
-  var checkBox: js.UndefOr[`8`] = js.undefined
+  var checkBox: js.UndefOr[`23`] = js.undefined
   
   var content: js.UndefOr[Margin] = js.undefined
   
-  var disabled: js.UndefOr[BackgroundBorder] = js.undefined
+  var disabled: js.UndefOr[BorderLabel] = js.undefined
   
   var error: js.UndefOr[BorderColor] = js.undefined
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var focus: js.UndefOr[`9`] = js.undefined
+  var focus: js.UndefOr[`24`] = js.undefined
   
   var help: js.UndefOr[ColorMargin] = js.undefined
   
@@ -51,7 +51,7 @@ object CheckBox {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setCheckBox(value: `8`): Self = StObject.set(x, "checkBox", value.asInstanceOf[js.Any])
+    inline def setCheckBox(value: `23`): Self = StObject.set(x, "checkBox", value.asInstanceOf[js.Any])
     
     inline def setCheckBoxUndefined: Self = StObject.set(x, "checkBox", js.undefined)
     
@@ -59,7 +59,7 @@ object CheckBox {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setDisabled(value: BackgroundBorder): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: BorderLabel): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
@@ -73,7 +73,7 @@ object CheckBox {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setFocus(value: `9`): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: `24`): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     

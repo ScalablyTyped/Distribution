@@ -1,6 +1,6 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.utilMod.Dict
+import typings.vegaLite.buildSrcUtilMod.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait IsUTCScale extends StObject {
   
   var rawTimeFormat: js.UndefOr[String] = js.undefined
   
-  var timeUnit: js.UndefOr[typings.vegaLite.srcTimeunitMod.TimeUnit] = js.undefined
+  var timeUnit: js.UndefOr[typings.vegaLite.buildSrcTimeunitMod.TimeUnit] = js.undefined
 }
 object IsUTCScale {
   
@@ -46,7 +46,7 @@ object IsUTCScale {
     
     inline def setRawTimeFormatUndefined: Self = StObject.set(x, "rawTimeFormat", js.undefined)
     
-    inline def setTimeUnit(value: typings.vegaLite.srcTimeunitMod.TimeUnit): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: typings.vegaLite.buildSrcTimeunitMod.TimeUnit): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     
     inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
   }

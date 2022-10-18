@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TraverseProperty extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.typedoc.abstractMod.TraverseProperty & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty & Double] = js.native
   
-  /* 0 */ val Children: typings.typedoc.abstractMod.TraverseProperty.Children & Double = js.native
+  /* 0 */ val Children: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.Children & Double = js.native
   
-  /* 6 */ val GetSignature: typings.typedoc.abstractMod.TraverseProperty.GetSignature & Double = js.native
+  /* 6 */ val GetSignature: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.GetSignature & Double = js.native
   
-  /* 5 */ val IndexSignature: typings.typedoc.abstractMod.TraverseProperty.IndexSignature & Double = js.native
+  /* 5 */ val IndexSignature: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.IndexSignature & Double = js.native
   
-  /* 1 */ val Parameters: typings.typedoc.abstractMod.TraverseProperty.Parameters & Double = js.native
+  /* 1 */ val Parameters: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.Parameters & Double = js.native
   
-  /* 7 */ val SetSignature: typings.typedoc.abstractMod.TraverseProperty.SetSignature & Double = js.native
+  /* 7 */ val SetSignature: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.SetSignature & Double = js.native
   
-  /* 4 */ val Signatures: typings.typedoc.abstractMod.TraverseProperty.Signatures & Double = js.native
+  /* 4 */ val Signatures: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.Signatures & Double = js.native
   
-  /* 2 */ val TypeLiteral: typings.typedoc.abstractMod.TraverseProperty.TypeLiteral & Double = js.native
+  /* 2 */ val TypeLiteral: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.TypeLiteral & Double = js.native
   
-  /* 3 */ val TypeParameter: typings.typedoc.abstractMod.TraverseProperty.TypeParameter & Double = js.native
+  /* 3 */ val TypeParameter: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.TypeParameter & Double = js.native
 }

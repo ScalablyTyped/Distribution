@@ -1,6 +1,6 @@
 package typings.sipJs
 
-import typings.sipJs.userAgentOptionsMod.LogLevel
+import typings.sipJs.libApiUserAgentOptionsMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

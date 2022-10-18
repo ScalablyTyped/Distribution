@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsVideoCameraDisabledMod.VideoCameraDisabledProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object videoCameraDisabledMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/VideoCameraDisabled", JSImport.Default)
+  @JSImport("wix-ui-icons-common/VideoCameraDisabled", JSImport.Default)
   @js.native
   val default: FC[VideoCameraDisabledProps] = js.native
-  
-  trait VideoCameraDisabledProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object VideoCameraDisabledProps {
-    
-    inline def apply(): VideoCameraDisabledProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[VideoCameraDisabledProps]
-    }
-    
-    extension [Self <: VideoCameraDisabledProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[VideoCameraDisabledProps]
   

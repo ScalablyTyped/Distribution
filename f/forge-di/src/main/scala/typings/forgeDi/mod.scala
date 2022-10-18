@@ -2,8 +2,8 @@ package typings.forgeDi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.forgeDi.anon.Partialdefault
-import typings.forgeDi.configMod.Config
-import typings.forgeDi.constructorMod.Constructor
+import typings.forgeDi.distFrameworkConfigMod.Config
+import typings.forgeDi.distFrameworkConstructorMod.Constructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,43 +17,43 @@ object mod {
   @JSImport("forge-di", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.forgeDi.forgeMod.default {
+    extends typings.forgeDi.distForgeMod.default {
     def this(config: Config) = this()
   }
   
   @JSImport("forge-di", "Binding")
   @js.native
   open class Binding protected ()
-    extends typings.forgeDi.bindingMod.default {
-    def this(forge: typings.forgeDi.forgeMod.default, name: String) = this()
+    extends typings.forgeDi.distFrameworkBindingMod.default {
+    def this(forge: typings.forgeDi.distForgeMod.default, name: String) = this()
   }
   
   @JSImport("forge-di", "ConfigurationError")
   @js.native
   open class ConfigurationError protected ()
-    extends typings.forgeDi.configurationErrorMod.default {
+    extends typings.forgeDi.distErrorsConfigurationErrorMod.default {
     def this(name: String, message: String) = this()
   }
   
   @JSImport("forge-di", "Context")
   @js.native
   open class Context ()
-    extends typings.forgeDi.contextMod.default
+    extends typings.forgeDi.distFrameworkContextMod.default
   
   @JSImport("forge-di", "Forge")
   @js.native
   open class Forge ()
-    extends typings.forgeDi.forgeMod.default {
+    extends typings.forgeDi.distForgeMod.default {
     def this(config: Config) = this()
   }
   
   @JSImport("forge-di", "FunctionResolver")
   @js.native
   open class FunctionResolver protected ()
-    extends typings.forgeDi.functionResolverMod.default {
+    extends typings.forgeDi.distResolversFunctionResolverMod.default {
     def this(
-      forge: typings.forgeDi.forgeMod.default,
-      binding: typings.forgeDi.bindingMod.default,
+      forge: typings.forgeDi.distForgeMod.default,
+      binding: typings.forgeDi.distFrameworkBindingMod.default,
       func: js.Function
     ) = this()
   }
@@ -61,10 +61,10 @@ object mod {
   @JSImport("forge-di", "InstanceResolver")
   @js.native
   open class InstanceResolver protected ()
-    extends typings.forgeDi.instanceResolverMod.default {
+    extends typings.forgeDi.distResolversInstanceResolverMod.default {
     def this(
-      forge: typings.forgeDi.forgeMod.default,
-      binding: typings.forgeDi.bindingMod.default,
+      forge: typings.forgeDi.distForgeMod.default,
+      binding: typings.forgeDi.distFrameworkBindingMod.default,
       instance: Any
     ) = this()
   }
@@ -74,51 +74,54 @@ object mod {
   object Mode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.forgeDi.modeMod.Mode & String] = js.native
+    def apply(value: String): js.UndefOr[typings.forgeDi.distFrameworkModeMod.Mode & String] = js.native
     
-    /* "All" */ val All: typings.forgeDi.modeMod.Mode.All & String = js.native
+    /* "All" */ val All: typings.forgeDi.distFrameworkModeMod.Mode.All & String = js.native
     
-    /* "AtLeastOne" */ val AtLeastOne: typings.forgeDi.modeMod.Mode.AtLeastOne & String = js.native
+    /* "AtLeastOne" */ val AtLeastOne: typings.forgeDi.distFrameworkModeMod.Mode.AtLeastOne & String = js.native
     
-    /* "AtMostOne" */ val AtMostOne: typings.forgeDi.modeMod.Mode.AtMostOne & String = js.native
+    /* "AtMostOne" */ val AtMostOne: typings.forgeDi.distFrameworkModeMod.Mode.AtMostOne & String = js.native
   }
   
   @JSImport("forge-di", "RegexInspector")
   @js.native
   open class RegexInspector ()
-    extends typings.forgeDi.regexInspectorMod.default
+    extends typings.forgeDi.distInspectorsRegexInspectorMod.default
   
   @JSImport("forge-di", "ResolutionError")
   @js.native
   open class ResolutionError protected ()
-    extends typings.forgeDi.resolutionErrorMod.default {
-    def this(name: String, hint: Any, context: typings.forgeDi.contextMod.default, message: String) = this()
+    extends typings.forgeDi.distErrorsResolutionErrorMod.default {
+    def this(name: String, hint: Any, context: typings.forgeDi.distFrameworkContextMod.default, message: String) = this()
   }
   
-  @JSImport("forge-di", "Resolver")
+  /* note: abstract class */ @JSImport("forge-di", "Resolver")
   @js.native
-  abstract class Resolver protected ()
-    extends typings.forgeDi.resolverMod.default {
-    def this(forge: typings.forgeDi.forgeMod.default, binding: typings.forgeDi.bindingMod.default) = this()
+  open class Resolver protected ()
+    extends typings.forgeDi.distResolversResolverMod.default {
+    def this(
+      forge: typings.forgeDi.distForgeMod.default,
+      binding: typings.forgeDi.distFrameworkBindingMod.default
+    ) = this()
   }
   
   @JSImport("forge-di", "SingletonLifecycle")
   @js.native
   open class SingletonLifecycle ()
-    extends typings.forgeDi.singletonLifecycleMod.default
+    extends typings.forgeDi.distLifecyclesSingletonLifecycleMod.default
   
   @JSImport("forge-di", "TransientLifecycle")
   @js.native
   open class TransientLifecycle ()
-    extends typings.forgeDi.transientLifecycleMod.default
+    extends typings.forgeDi.distLifecyclesTransientLifecycleMod.default
   
   @JSImport("forge-di", "TypeResolver")
   @js.native
   open class TypeResolver protected ()
-    extends typings.forgeDi.typeResolverMod.default {
+    extends typings.forgeDi.distResolversTypeResolverMod.default {
     def this(
-      forge: typings.forgeDi.forgeMod.default,
-      binding: typings.forgeDi.bindingMod.default,
+      forge: typings.forgeDi.distForgeMod.default,
+      binding: typings.forgeDi.distFrameworkBindingMod.default,
       `type`: Constructor
     ) = this()
   }

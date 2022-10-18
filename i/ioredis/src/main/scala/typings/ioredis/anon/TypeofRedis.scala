@@ -16,7 +16,7 @@ trait TypeofRedis extends StObject {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof Redis> is not an array type */ args: ConstructorParameters[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof Redis */ js.Any
     ]
-  ): typings.ioredis.redisMod.Redis
+  ): typings.ioredis.builtRedisMod.Redis
   
   /**
     * Default options
@@ -29,7 +29,7 @@ object TypeofRedis {
   inline def apply(
     createClient: ConstructorParameters[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof Redis */ js.Any
-    ] => typings.ioredis.redisMod.Redis,
+    ] => typings.ioredis.builtRedisMod.Redis,
     defaultOptions: Any
   ): TypeofRedis = {
     val __obj = js.Dynamic.literal(createClient = js.Any.fromFunction1(createClient), defaultOptions = defaultOptions.asInstanceOf[js.Any])
@@ -41,7 +41,7 @@ object TypeofRedis {
     inline def setCreateClient(
       value: ConstructorParameters[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof Redis */ js.Any
-        ] => typings.ioredis.redisMod.Redis
+        ] => typings.ioredis.builtRedisMod.Redis
     ): Self = StObject.set(x, "createClient", js.Any.fromFunction1(value))
     
     inline def setDefaultOptions(value: Any): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])

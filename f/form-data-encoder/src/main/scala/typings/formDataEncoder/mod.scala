@@ -1,7 +1,7 @@
 package typings.formDataEncoder
 
-import typings.formDataEncoder.formDataEncoderMod.FormDataEncoderOptions
-import typings.formDataEncoder.formDataLikeMod.FormDataLike
+import typings.formDataEncoder.`@typeFormDataEncoderMod`.FormDataEncoderOptions
+import typings.formDataEncoder.`@typeFormDataLikeMod`.FormDataLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object mod {
   @JSImport("form-data-encoder", "FormDataEncoder")
   @js.native
   open class FormDataEncoder protected ()
-    extends typings.formDataEncoder.formDataEncoderMod.FormDataEncoder {
+    extends typings.formDataEncoder.`@typeFormDataEncoderMod`.FormDataEncoder {
     /**
       * Creates a multipart/form-data encoder.
       *

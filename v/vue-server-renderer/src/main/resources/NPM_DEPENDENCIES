@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vue-server-renderer" : "2.7.10"
+      "vue-server-renderer" : "2.7.13"
     }
   ],
   "test-dependencies" : [
     {
-      "vue-server-renderer" : "2.7.10"
+      "vue-server-renderer" : "2.7.13"
     }
   ],
   "compile-devDependencies" : [

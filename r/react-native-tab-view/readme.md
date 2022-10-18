@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-tab-view
 
-Typings are for version 3.1.1
+Typings are for version 3.3.0
 
 ## Library description:
 Tab view component for React Native

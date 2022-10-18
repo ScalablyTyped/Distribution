@@ -13,7 +13,9 @@ object mod {
     */
   @JSImport("webpackbar", JSImport.Namespace)
   @js.native
-  open class ^ () extends WebpackBar {
+  open class ^ ()
+    extends StObject
+       with WebpackBar {
     def this(options: Options) = this()
   }
   
@@ -269,7 +271,9 @@ object mod {
     * Elegant ProgressBar and Profiler for Webpack
     */
   @js.native
-  trait WebpackBar extends ProgressPlugin {
+  trait WebpackBar
+    extends StObject
+       with ProgressPlugin {
     
     val state: Status = js.native
   }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "url-slugify"
-version := "1.0-dt-20211202Z-ee0884"
+version := "1.0-dt-20211202Z-0d35d3"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

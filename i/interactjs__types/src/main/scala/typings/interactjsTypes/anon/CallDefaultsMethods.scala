@@ -1,8 +1,8 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.interactjsModifiersTypesMod.Modifier
 import typings.interactjsTypes.interactjsTypesStrings.restrictRect
-import typings.interactjsTypes.pointerMod.RestrictState
+import typings.interactjsTypes.modifiersRestrictPointerMod.RestrictState
+import typings.interactjsTypes.modifiersTypesMod.Modifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

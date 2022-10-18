@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object es6SetMod extends Shortcut {
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("core-js/library/es6/set", JSImport.Namespace)
+  @JSImport("core-js/es6/set", JSImport.Namespace)
   @js.native
   /* standard es2015.collection */
   open class ^[T] ()
@@ -17,7 +17,7 @@ object es6SetMod extends Shortcut {
        with typings.std.Set[T] {
     def this(values: js.Array[T]) = this()
   }
-  @JSImport("core-js/library/es6/set", JSImport.Namespace)
+  @JSImport("core-js/es6/set", JSImport.Namespace)
   @js.native
   val ^ : js.Object & SetConstructor = js.native
   

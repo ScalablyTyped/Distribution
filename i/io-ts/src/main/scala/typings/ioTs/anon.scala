@@ -1,83 +1,13 @@
 package typings.ioTs
 
-import typings.ioTs.decodeErrorMod.DecodeError
-import typings.ioTs.decodeErrorMod.Kind
-import typings.ioTs.freeSemigroupMod.FreeSemigroup
-import typings.ioTs.ioTsInts.`4`
-import typings.ioTs.ioTsInts.`5`
+import typings.ioTs.libDecodeErrorMod.DecodeError
+import typings.ioTs.libDecodeErrorMod.Kind
+import typings.ioTs.libFreeSemigroupMod.FreeSemigroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait `0` extends StObject {
-    
-    var length: typings.ioTs.ioTsInts.`3`
-  }
-  object `0` {
-    
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal(length = 3)
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setLength(value: typings.ioTs.ioTsInts.`3`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait `1` extends StObject {
-    
-    var length: `4`
-  }
-  object `1` {
-    
-    inline def apply(): `1` = {
-      val __obj = js.Dynamic.literal(length = 4)
-      __obj.asInstanceOf[`1`]
-    }
-    
-    extension [Self <: `1`](x: Self) {
-      
-      inline def setLength(value: `4`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait `2` extends StObject {
-    
-    var length: `5`
-  }
-  object `2` {
-    
-    inline def apply(): `2` = {
-      val __obj = js.Dynamic.literal(length = 5)
-      __obj.asInstanceOf[`2`]
-    }
-    
-    extension [Self <: `2`](x: Self) {
-      
-      inline def setLength(value: `5`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait `3` extends StObject {
-    
-    var length: typings.ioTs.ioTsInts.`1`
-  }
-  object `3` {
-    
-    inline def apply(): `3` = {
-      val __obj = js.Dynamic.literal(length = 1)
-      __obj.asInstanceOf[`3`]
-    }
-    
-    extension [Self <: `3`](x: Self) {
-      
-      inline def setLength(value: typings.ioTs.ioTsInts.`1`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
-    }
-  }
   
   trait Index[E, R] extends StObject {
     
@@ -120,23 +50,6 @@ object anon {
       inline def setMember(value: (Double, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Member", js.Any.fromFunction2(value))
       
       inline def setWrap(value: (E, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Wrap", js.Any.fromFunction2(value))
-    }
-  }
-  
-  trait Length extends StObject {
-    
-    var length: typings.ioTs.ioTsInts.`2`
-  }
-  object Length {
-    
-    inline def apply(): Length = {
-      val __obj = js.Dynamic.literal(length = 2)
-      __obj.asInstanceOf[Length]
-    }
-    
-    extension [Self <: Length](x: Self) {
-      
-      inline def setLength(value: typings.ioTs.ioTsInts.`2`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the capabilities associated with an email mailbox. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailMailboxCapabilities")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxCapabilities")
 @js.native
-abstract class EmailMailboxCapabilities ()
+open class EmailMailboxCapabilities ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailMailboxCapabilities {
   

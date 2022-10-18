@@ -13,9 +13,9 @@ trait ReadonlyRequiredOmitToStr extends StObject {
   
   def commentString(comment: String): String
   
-  val defaultKeyType: typings.yaml.scalarMod.Scalar.Type
+  val defaultKeyType: typings.yaml.distNodesScalarMod.Scalar.Type
   
-  val defaultStringType: typings.yaml.scalarMod.Scalar.Type
+  val defaultStringType: typings.yaml.distNodesScalarMod.Scalar.Type
   
   val directives: Boolean
   
@@ -46,8 +46,8 @@ object ReadonlyRequiredOmitToStr {
   inline def apply(
     blockQuote: Boolean | folded | literal,
     commentString: String => String,
-    defaultKeyType: typings.yaml.scalarMod.Scalar.Type,
-    defaultStringType: typings.yaml.scalarMod.Scalar.Type,
+    defaultKeyType: typings.yaml.distNodesScalarMod.Scalar.Type,
+    defaultStringType: typings.yaml.distNodesScalarMod.Scalar.Type,
     directives: Boolean,
     doubleQuotedAsJSON: Boolean,
     doubleQuotedMinMultiLineLength: Double,
@@ -71,9 +71,9 @@ object ReadonlyRequiredOmitToStr {
     
     inline def setCommentString(value: String => String): Self = StObject.set(x, "commentString", js.Any.fromFunction1(value))
     
-    inline def setDefaultKeyType(value: typings.yaml.scalarMod.Scalar.Type): Self = StObject.set(x, "defaultKeyType", value.asInstanceOf[js.Any])
+    inline def setDefaultKeyType(value: typings.yaml.distNodesScalarMod.Scalar.Type): Self = StObject.set(x, "defaultKeyType", value.asInstanceOf[js.Any])
     
-    inline def setDefaultStringType(value: typings.yaml.scalarMod.Scalar.Type): Self = StObject.set(x, "defaultStringType", value.asInstanceOf[js.Any])
+    inline def setDefaultStringType(value: typings.yaml.distNodesScalarMod.Scalar.Type): Self = StObject.set(x, "defaultStringType", value.asInstanceOf[js.Any])
     
     inline def setDirectives(value: Boolean): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     

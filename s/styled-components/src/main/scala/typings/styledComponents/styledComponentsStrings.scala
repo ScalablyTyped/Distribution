@@ -1,6 +1,6 @@
 package typings.styledComponents
 
-import typings.styledComponents.distTypesMod._KnownWebTarget
+import typings.styledComponents.nativeDistDistTypesMod._KnownWebTarget
 import typings.styledComponents.nativeDistTypesMod.Runtime
 import typings.styledComponents.nativeDistTypesMod._KnownTarget
 import org.scalablytyped.runtime.StObject
@@ -16,14 +16,6 @@ object styledComponentsStrings {
   @js.native
   sealed trait $as extends StObject
   inline def $as: $as = "$as".asInstanceOf[$as]
-  
-  @js.native
-  sealed trait NonReactStatics extends StObject
-  inline def NonReactStatics: NonReactStatics = "NonReactStatics".asInstanceOf[NonReactStatics]
-  
-  @js.native
-  sealed trait OmitNever extends StObject
-  inline def OmitNever: OmitNever = "OmitNever".asInstanceOf[OmitNever]
   
   @js.native
   sealed trait a
@@ -1461,10 +1453,6 @@ object styledComponentsStrings {
   @js.native
   sealed trait white extends StObject
   inline def white: white = "white".asInstanceOf[white]
-  
-  @js.native
-  sealed trait withTheme extends StObject
-  inline def withTheme: withTheme = "withTheme".asInstanceOf[withTheme]
   
   @js.native
   sealed trait yes extends StObject

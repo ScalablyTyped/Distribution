@@ -1,7 +1,7 @@
 package typings.ariClient.mod
 
 import typings.ariClient.anon.Body
-import typings.ariClient.anon.Variables
+import typings.ariClient.anon.From
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,7 +77,7 @@ trait Endpoint
     * @param [params.variables] - The "variables" key in the body object holds technology specific key/value pairs to append to the message. These can be interpreted and used by the various
     * resource types; for example, pjsip and sip resource types will add the key/value pairs as SIP headers.
     */
-  def sendMessageToEndpoint(params: Variables): js.Promise[Unit] = js.native
+  def sendMessageToEndpoint(params: From): js.Promise[Unit] = js.native
   /**
     * Send a message to some endpoint in a technology.
     *
@@ -86,7 +86,7 @@ trait Endpoint
     * @param [params.variables] - The "variables" key in the body object holds technology specific key/value pairs to append to the message. These can be interpreted and used by the various
     * resource types; for example, pjsip and sip resource types will add the key/value pairs as SIP headers.
     */
-  def sendMessageToEndpoint(params: Variables, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def sendMessageToEndpoint(params: From, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Endpoints state.

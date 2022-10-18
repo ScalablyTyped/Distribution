@@ -1,9 +1,9 @@
 package typings.dmgBuilder
 
-import typings.appBuilderLib.macOptionsMod.DmgOptions
-import typings.appBuilderLib.macPackagerMod.default
 import typings.appBuilderLib.mod.Target
-import typings.builderUtil.archMod.Arch
+import typings.appBuilderLib.outMacPackagerMod.default
+import typings.appBuilderLib.outOptionsMacOptionsMod.DmgOptions
+import typings.builderUtil.outArchMod.Arch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

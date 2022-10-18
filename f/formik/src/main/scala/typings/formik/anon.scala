@@ -1,5 +1,14 @@
 package typings.formik
 
+import typings.formik.distTypesMod.FieldHelperProps
+import typings.formik.distTypesMod.FieldInputProps
+import typings.formik.distTypesMod.FieldMetaProps
+import typings.formik.distTypesMod.FieldValidator
+import typings.formik.distTypesMod.FormikContextType
+import typings.formik.distTypesMod.FormikErrors
+import typings.formik.distTypesMod.FormikState
+import typings.formik.distTypesMod.FormikTouched
+import typings.formik.distTypesMod.FormikValues
 import typings.formik.formikStrings.`additions removals`
 import typings.formik.formikStrings.`additions text`
 import typings.formik.formikStrings.`inline`
@@ -50,15 +59,6 @@ import typings.formik.formikStrings.tree
 import typings.formik.formikStrings.url
 import typings.formik.formikStrings.vertical
 import typings.formik.formikStrings.yes
-import typings.formik.typesMod.FieldHelperProps
-import typings.formik.typesMod.FieldInputProps
-import typings.formik.typesMod.FieldMetaProps
-import typings.formik.typesMod.FieldValidator
-import typings.formik.typesMod.FormikContextType
-import typings.formik.typesMod.FormikErrors
-import typings.formik.typesMod.FormikState
-import typings.formik.typesMod.FormikTouched
-import typings.formik.typesMod.FormikValues
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -122,10 +122,10 @@ object anon {
     def getFieldProps(nameOrOptions: Any): FieldInputProps[Any] = js.native
     
     def handleBlur(e: FocusEvent[Any, Element]): Unit = js.native
-    def handleBlur[T](fieldOrEvent: T): Unit | (js.Function1[/* e */ Any, Unit]) = js.native
+    def handleBlur[T](fieldOrEvent: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? (e : any): void : void */ js.Any = js.native
     
     def handleChange(e: ChangeEvent[Any]): Unit = js.native
-    def handleChange[T_1](field: T_1): (js.Function1[/* e */ String | ChangeEvent[Any], Unit]) | Unit = js.native
+    def handleChange[T_1](field: T_1): /* import warning: importer.ImportType#apply Failed type conversion: T_1 extends react.react.ChangeEvent<any> ? void : (e : string | react.react.ChangeEvent<any>): void */ js.Any = js.native
     
     def handleReset(e: Any): Unit = js.native
     
@@ -205,14 +205,14 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(e: ChangeEvent[Any]): Unit = js.native
-    def apply[T](field: T): (js.Function1[/* e */ String | ChangeEvent[Any], Unit]) | Unit = js.native
+    def apply[T](field: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ChangeEvent<any> ? void : (e : string | react.react.ChangeEvent<any>): void */ js.Any = js.native
   }
   
   @js.native
   trait FnCallE extends StObject {
     
     def apply(e: FocusEvent[Any, Element]): Unit = js.native
-    def apply[T](fieldOrEvent: T): Unit | (js.Function1[/* e */ Any, Unit]) = js.native
+    def apply[T](fieldOrEvent: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? (e : any): void : void */ js.Any = js.native
   }
   
   trait Formik[Values] extends StObject {

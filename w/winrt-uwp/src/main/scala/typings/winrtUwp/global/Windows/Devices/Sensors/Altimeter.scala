@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides an interface for an altimetric sensor to measure the relative altitude. */
-@JSGlobal("Windows.Devices.Sensors.Altimeter")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.Altimeter")
 @js.native
-abstract class Altimeter ()
+open class Altimeter ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.Altimeter
 object Altimeter {

@@ -4,7 +4,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import typings.reactRouterDom.mod.NavLinkProps
-import typings.remixRunRouter.historyMod.To
+import typings.remixRunRouter.distHistoryMod.To
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

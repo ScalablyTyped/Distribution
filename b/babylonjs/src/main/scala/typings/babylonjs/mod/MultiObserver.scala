@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "MultiObserver")
 @js.native
 open class MultiObserver[T] ()
-  extends typings.babylonjs.legacyMod.MultiObserver[T]
+  extends typings.babylonjs.legacyLegacyMod.MultiObserver[T]
 /* static members */
 object MultiObserver {
   
@@ -24,24 +24,40 @@ object MultiObserver {
     * @returns the new MultiObserver
     */
   inline def Watch[T](
-    observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
-    callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit]
-  ): typings.babylonjs.observableExtensionsMod.MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.observableExtensionsMod.MultiObserver[T]]
+    observables: js.Array[typings.babylonjs.miscObservableMod.Observable[T]],
+    callback: js.Function2[
+      /* eventData */ T, 
+      /* eventState */ typings.babylonjs.miscObservableMod.EventState, 
+      Unit
+    ]
+  ): typings.babylonjs.miscObservableDotextensionsMod.MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.miscObservableDotextensionsMod.MultiObserver[T]]
   inline def Watch[T](
-    observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
-    callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit],
+    observables: js.Array[typings.babylonjs.miscObservableMod.Observable[T]],
+    callback: js.Function2[
+      /* eventData */ T, 
+      /* eventState */ typings.babylonjs.miscObservableMod.EventState, 
+      Unit
+    ],
     mask: Double
-  ): typings.babylonjs.observableExtensionsMod.MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.observableExtensionsMod.MultiObserver[T]]
+  ): typings.babylonjs.miscObservableDotextensionsMod.MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.miscObservableDotextensionsMod.MultiObserver[T]]
   inline def Watch[T](
-    observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
-    callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit],
+    observables: js.Array[typings.babylonjs.miscObservableMod.Observable[T]],
+    callback: js.Function2[
+      /* eventData */ T, 
+      /* eventState */ typings.babylonjs.miscObservableMod.EventState, 
+      Unit
+    ],
     mask: Double,
     scope: Any
-  ): typings.babylonjs.observableExtensionsMod.MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.observableExtensionsMod.MultiObserver[T]]
+  ): typings.babylonjs.miscObservableDotextensionsMod.MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.miscObservableDotextensionsMod.MultiObserver[T]]
   inline def Watch[T](
-    observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
-    callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit],
+    observables: js.Array[typings.babylonjs.miscObservableMod.Observable[T]],
+    callback: js.Function2[
+      /* eventData */ T, 
+      /* eventState */ typings.babylonjs.miscObservableMod.EventState, 
+      Unit
+    ],
     mask: Unit,
     scope: Any
-  ): typings.babylonjs.observableExtensionsMod.MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.observableExtensionsMod.MultiObserver[T]]
+  ): typings.babylonjs.miscObservableDotextensionsMod.MultiObserver[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Watch")(observables.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.miscObservableDotextensionsMod.MultiObserver[T]]
 }

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "prettier-package-json"
-version := "2.7.0-f19b1b"
+version := "2.7.0-52eae0"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "parse-author" % "2.0-dt-20211202Z-f3825e",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
-  "org.scalablytyped" %%% "type-fest" % "3.0.0-e72bbe")
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "type-fest" % "3.1.0-f509c8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

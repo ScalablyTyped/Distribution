@@ -1,14 +1,14 @@
 package typings.reactThreeFiber.anon
 
 import typings.three.anon.Y
-import typings.three.cameraMod.Camera
-import typings.three.eventDispatcherMod.Event
-import typings.three.layersMod.Layers
-import typings.three.object3DMod.Object3D
-import typings.three.rayMod.Ray
-import typings.three.raycasterMod.Intersection
-import typings.three.raycasterMod.RaycasterParameters
-import typings.three.vector3Mod.Vector3
+import typings.three.srcCamerasCameraMod.Camera
+import typings.three.srcCoreEventDispatcherMod.Event
+import typings.three.srcCoreLayersMod.Layers
+import typings.three.srcCoreObject3DMod.Object3D
+import typings.three.srcCoreRaycasterMod.Intersection
+import typings.three.srcCoreRaycasterMod.RaycasterParameters
+import typings.three.srcMathRayMod.Ray
+import typings.three.srcMathVector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

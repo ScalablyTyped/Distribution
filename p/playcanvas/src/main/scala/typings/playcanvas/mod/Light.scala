@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @ignore
   */
-@JSImport("playcanvas", "Light")
 @js.native
-open class Light protected () extends StObject {
-  def this(graphicsDevice: Any) = this()
+trait Light extends StObject {
   
   var _atlasViewport: Vec4 = js.native
   

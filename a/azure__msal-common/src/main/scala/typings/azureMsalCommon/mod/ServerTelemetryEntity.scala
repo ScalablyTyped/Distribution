@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "ServerTelemetryEntity")
 @js.native
 open class ServerTelemetryEntity ()
-  extends typings.azureMsalCommon.serverTelemetryEntityMod.ServerTelemetryEntity
+  extends typings.azureMsalCommon.distCacheEntitiesServerTelemetryEntityMod.ServerTelemetryEntity
 /* static members */
 object ServerTelemetryEntity {
   

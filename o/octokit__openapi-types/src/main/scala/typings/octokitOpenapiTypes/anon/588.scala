@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `588` extends StObject {
   
   /** Response */
-  var `201`: ContentApplicationjsonAllowupdatebranch
+  var `200`: Content587
 }
 object `588` {
   
-  inline def apply(`201`: ContentApplicationjsonAllowupdatebranch): `588` = {
+  inline def apply(`200`: Content587): `588` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`588`]
   }
   
   extension [Self <: `588`](x: Self) {
     
-    inline def set201(value: ContentApplicationjsonAllowupdatebranch): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
+    inline def set200(value: Content587): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
   }
 }

@@ -1,8 +1,8 @@
 package typings.azureCoreHttp
 
-import typings.azureCoreHttp.urlMod.URLTokenType
-import typings.azureCoreHttp.urlMod.URLTokenizerState
-import typings.azureCoreHttp.webResourceMod.HttpMethods
+import typings.azureCoreHttp.typesLatestSrcUrlMod.URLTokenType
+import typings.azureCoreHttp.typesLatestSrcUrlMod.URLTokenizerState
+import typings.azureCoreHttp.typesLatestSrcWebResourceMod.HttpMethods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

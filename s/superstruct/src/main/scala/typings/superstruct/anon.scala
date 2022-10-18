@@ -1,11 +1,11 @@
 package typings.superstruct
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.superstruct.structMod.Context
-import typings.superstruct.structMod.Refiner
-import typings.superstruct.structMod.Result
-import typings.superstruct.structMod.Struct
-import typings.superstruct.structMod.Validator
+import typings.superstruct.libStructMod.Context
+import typings.superstruct.libStructMod.Refiner
+import typings.superstruct.libStructMod.Result
+import typings.superstruct.libStructMod.Struct
+import typings.superstruct.libStructMod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,7 +99,7 @@ object anon {
   
   trait Coercer[S, T] extends StObject {
     
-    var coercer: js.UndefOr[typings.superstruct.structMod.Coercer[Any]] = js.undefined
+    var coercer: js.UndefOr[typings.superstruct.libStructMod.Coercer[Any]] = js.undefined
     
     var entries: js.UndefOr[
         js.Function2[

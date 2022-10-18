@@ -515,7 +515,7 @@ type StoryProps = InlineStoryProps | IFrameStoryProps
 /* Rewritten from type alias, can be one of: 
   - scala.Boolean
   - typings.storybookComponents.storybookComponentsStrings.dedent
-  - typings.storybookComponents.typesPrettierIndexMod.BuiltInParserName
+  - typings.storybookComponents.`distTs3Dot9Modules@typesPrettierIndexMod`.BuiltInParserName
 */
 type SyntaxHighlighterFormatTypes = _SyntaxHighlighterFormatTypes | Boolean
 

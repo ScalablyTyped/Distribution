@@ -2,7 +2,7 @@ package typings.pgPromise.mod
 
 import typings.pgMinify.mod.IMinifyOptions
 import typings.pgPromise.mod.^
-import typings.pgPromise.pgSubsetMod.IClient
+import typings.pgPromise.typescriptPgSubsetMod.IClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

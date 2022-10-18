@@ -1,6 +1,6 @@
 package typings.postmark.mod.Models
 
-import typings.postmark.messageStreamMod.SubscriptionManagementConfiguration
+import typings.postmark.distClientModelsStreamsMessageStreamMod.SubscriptionManagementConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postmark", "Models.UpdateMessageStreamRequest")
 @js.native
 open class UpdateMessageStreamRequest ()
-  extends typings.postmark.modelsMod.UpdateMessageStreamRequest {
+  extends typings.postmark.distClientModelsMod.UpdateMessageStreamRequest {
   def this(name: String) = this()
   def this(name: String, description: String) = this()
   def this(name: Unit, description: String) = this()

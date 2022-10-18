@@ -127,7 +127,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
     * @see _.defaultTo
     */
   @JSName("defaultTo")
-  def defaultTo_TDefault_Union[TDefault](defaultValue: TDefault): TValue | TDefault = js.native
+  def defaultTo_TDefault_Any[TDefault](defaultValue: TDefault): /* import warning: importer.ImportType#apply Failed type conversion: TValue extends null | undefined ? TDefault : TValue | TDefault */ js.Any = js.native
   
   /**
     * @see _.defer
@@ -825,12 +825,22 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.toPairs
     */
-  def toPairs(): Collection[js.Tuple2[java.lang.String, Any]] = js.native
+  def toPairs(): Collection[
+    js.Tuple2[
+      java.lang.String, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TValue extends lodash.lodash.Dictionary<infer U> ? U : TValue extends lodash.lodash.NumericDictionary<infer V> ? V : any */ js.Any
+    ]
+  ] = js.native
   
   /**
     * @see _.toPairsIn
     */
-  def toPairsIn(): Collection[js.Tuple2[java.lang.String, Any]] = js.native
+  def toPairsIn(): Collection[
+    js.Tuple2[
+      java.lang.String, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TValue extends lodash.lodash.Dictionary<infer U> ? U : TValue extends lodash.lodash.NumericDictionary<infer V> ? V : any */ js.Any
+    ]
+  ] = js.native
   
   /**
     * @see _.toPath

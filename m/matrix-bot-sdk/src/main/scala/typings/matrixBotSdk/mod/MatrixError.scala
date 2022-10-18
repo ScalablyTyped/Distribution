@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "MatrixError")
 @js.native
 open class MatrixError protected ()
-  extends typings.matrixBotSdk.matrixErrorMod.MatrixError {
+  extends typings.matrixBotSdk.libModelsMatrixErrorMod.MatrixError {
   /**
     * Creates a new Matrix Error
     * @param body The error body.

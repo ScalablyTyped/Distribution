@@ -2,8 +2,8 @@ package typings.reactMdOverlay
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdOverlay.overlayMod.OverlayProps
-import typings.reactMdTransition.typesMod.TransitionTimeout
+import typings.reactMdOverlay.typesOverlayMod.OverlayProps
+import typings.reactMdTransition.typesTypesMod.TransitionTimeout
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

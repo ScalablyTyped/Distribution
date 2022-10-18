@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Eventable extends StObject {
   
-  var eventable: typings.interactjsTypes.eventableMod.Eventable
+  var eventable: typings.interactjsTypes.coreEventableMod.Eventable
   
   var node: typings.std.Node
   
@@ -16,7 +16,7 @@ trait Eventable extends StObject {
 object Eventable {
   
   inline def apply(
-    eventable: typings.interactjsTypes.eventableMod.Eventable,
+    eventable: typings.interactjsTypes.coreEventableMod.Eventable,
     node: typings.std.Node,
     props: StringDictionary[Any]
   ): Eventable = {
@@ -26,7 +26,7 @@ object Eventable {
   
   extension [Self <: Eventable](x: Self) {
     
-    inline def setEventable(value: typings.interactjsTypes.eventableMod.Eventable): Self = StObject.set(x, "eventable", value.asInstanceOf[js.Any])
+    inline def setEventable(value: typings.interactjsTypes.coreEventableMod.Eventable): Self = StObject.set(x, "eventable", value.asInstanceOf[js.Any])
     
     inline def setNode(value: typings.std.Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

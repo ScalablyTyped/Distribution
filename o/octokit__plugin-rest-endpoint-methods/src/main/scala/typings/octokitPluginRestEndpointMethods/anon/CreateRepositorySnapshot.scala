@@ -3,7 +3,7 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.requestParametersMod.RequestParameters
+import typings.octokitTypes.distTypesRequestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,7 +29,7 @@ trait CreateRepositorySnapshot extends StObject {
     * Create a new snapshot of a repository's dependencies. You must authenticate using an access token with the `repo` scope to use this endpoint for a repository that the requesting user has access to.
     */
   @JSName("createRepositorySnapshot")
-  var createRepositorySnapshot_Original: `236`
+  var createRepositorySnapshot_Original: `250`
   
   /**
     * Gets the diff of the dependency changes between two commits of a repository, based on the changes to the dependency manifests made in those commits.
@@ -49,19 +49,19 @@ trait CreateRepositorySnapshot extends StObject {
     * Gets the diff of the dependency changes between two commits of a repository, based on the changes to the dependency manifests made in those commits.
     */
   @JSName("diffRange")
-  var diffRange_Original: `237`
+  var diffRange_Original: `251`
 }
 object CreateRepositorySnapshot {
   
-  inline def apply(createRepositorySnapshot: `236`, diffRange: `237`): CreateRepositorySnapshot = {
+  inline def apply(createRepositorySnapshot: `250`, diffRange: `251`): CreateRepositorySnapshot = {
     val __obj = js.Dynamic.literal(createRepositorySnapshot = createRepositorySnapshot.asInstanceOf[js.Any], diffRange = diffRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRepositorySnapshot]
   }
   
   extension [Self <: CreateRepositorySnapshot](x: Self) {
     
-    inline def setCreateRepositorySnapshot(value: `236`): Self = StObject.set(x, "createRepositorySnapshot", value.asInstanceOf[js.Any])
+    inline def setCreateRepositorySnapshot(value: `250`): Self = StObject.set(x, "createRepositorySnapshot", value.asInstanceOf[js.Any])
     
-    inline def setDiffRange(value: `237`): Self = StObject.set(x, "diffRange", value.asInstanceOf[js.Any])
+    inline def setDiffRange(value: `251`): Self = StObject.set(x, "diffRange", value.asInstanceOf[js.Any])
   }
 }

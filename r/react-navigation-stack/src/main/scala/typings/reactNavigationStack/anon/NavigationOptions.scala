@@ -5,8 +5,8 @@ import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigation.mod.NavigationScreenConfig
 import typings.reactNavigation.mod.NavigationScreenConfigProps
-import typings.reactNavigationStack.vendorTypesMod.StackNavigationOptions
-import typings.reactNavigationStack.vendorTypesMod.StackNavigationProp
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackNavigationOptions
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackNavigationProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

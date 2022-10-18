@@ -1,12 +1,12 @@
 package typings.expoImageUtils
 
+import typings.expoImageUtils.buildImageDottypesMod.ResizeMode
+import typings.expoImageUtils.buildSharpDottypesMod.Position
 import typings.expoImageUtils.expoImageUtilsStrings.cubic
 import typings.expoImageUtils.expoImageUtilsStrings.lanczos2
 import typings.expoImageUtils.expoImageUtilsStrings.lanczos3
 import typings.expoImageUtils.expoImageUtilsStrings.mitchell
 import typings.expoImageUtils.expoImageUtilsStrings.nearest
-import typings.expoImageUtils.imageTypesMod.ResizeMode
-import typings.expoImageUtils.sharpTypesMod.Position
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

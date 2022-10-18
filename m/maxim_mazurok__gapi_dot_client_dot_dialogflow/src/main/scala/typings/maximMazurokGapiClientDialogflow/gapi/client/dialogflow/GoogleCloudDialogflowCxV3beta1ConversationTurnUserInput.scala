@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait GoogleCloudDialogflowCxV3beta1ConversationTurnUserInput extends StObject {
   
   /** Parameters that need to be injected into the conversation during intent detection. */
   var injectedParameters: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1ConversationTurnUserInput & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Supports text input, event input, dtmf input in the test case. */
@@ -37,9 +34,7 @@ object GoogleCloudDialogflowCxV3beta1ConversationTurnUserInput {
     inline def setEnableSentimentAnalysisUndefined: Self = StObject.set(x, "enableSentimentAnalysis", js.undefined)
     
     inline def setInjectedParameters(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1ConversationTurnUserInput & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "injectedParameters", value.asInstanceOf[js.Any])
     
     inline def setInjectedParametersUndefined: Self = StObject.set(x, "injectedParameters", js.undefined)

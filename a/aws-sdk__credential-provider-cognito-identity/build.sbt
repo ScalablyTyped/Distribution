@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__credential-provider-cognito-identity"
-version := "3.181.0-22c1b0"
+version := "3.190.0-6d1bd8"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__client-cognito-identity" % "3.181.0-de0ae2",
-  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.178.0-606942",
-  "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.178.0-9f80cd",
-  "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.178.0-9e83c7",
-  "org.scalablytyped" %%% "aws-sdk__signature-v4" % "3.178.0-f2ef9c",
-  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.180.0-0e55ef",
-  "org.scalablytyped" %%% "aws-sdk__types" % "3.178.0-507e2a",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
+  "org.scalablytyped" %%% "aws-sdk__client-cognito-identity" % "3.190.0-9aa3af",
+  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.190.0-893e15",
+  "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.190.0-36cb98",
+  "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.190.0-57f098",
+  "org.scalablytyped" %%% "aws-sdk__signature-v4" % "3.190.0-7ce92c",
+  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.190.0-28a167",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.190.0-49d0ee",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

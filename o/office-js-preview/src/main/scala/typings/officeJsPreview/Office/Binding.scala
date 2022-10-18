@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The Binding object is never called directly. It is the abstract parent class of the objects that represent each type of binding:
   * {@link Office.MatrixBinding}, {@link Office.TableBinding}, or {@link Office.TextBinding}. All three of these objects inherit the getDataAsync
-  * and setDataAsync methods from the Binding object that enable to you interact with the data in the binding. They also inherit the id and type
+  * and setDataAsync methods from the Binding object that enable to you interact with the data in the binding. They also inherit the ID and type
   * properties for querying those property values. Additionally, the MatrixBinding and TableBinding objects expose additional methods for matrix-
   * and table-specific features, such as counting the number of rows and columns.
   *
   * @remarks
   *
-  * **Hosts**: Word, Excel (deprecated, use {@link https://learn.microsoft.com/javascript/api/excel/excel.binding?view=excel-js-preview | Excel.Binding} instead)
+  * **Applications**: Word, Excel (deprecated, use {@link https://learn.microsoft.com/javascript/api/excel/excel.binding?view=excel-js-preview | Excel.Binding} instead)
   *
   * **Requirement sets**:
   *
@@ -167,7 +167,7 @@ trait Binding extends StObject {
     *
     * <table>
     *   <tr>
-    *     <th>`data` value</th>
+    *     <th><code>data</code> value</th>
     *     <th>Data written</th>
     *   </tr>
     *   <tr>
@@ -176,20 +176,20 @@ trait Binding extends StObject {
     *   </tr>
     *   <tr>
     *     <td>An array of arrays ("matrix")</td>
-    *     <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can pass an array like this: `[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`. To write a single column of three rows, pass an array like this: `[["R1C1"], ["R2C1"], ["R3C1"]]`.</td>
+    *     <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can pass an array like this: <code>[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]</code>. To write a single column of three rows, pass an array like this: <code>[["R1C1"], ["R2C1"], ["R3C1"]]</code>.</td>
     *   </tr>
     *    <tr>
-    *     <td>A `TableData` object</td>
+    *     <td>A <code>TableData</code> object</td>
     *     <td>A table with headers will be written.</td>
     *   </tr>
     * </table>
     *
     * Additionally, these application-specific actions apply when writing data to a binding. For Word, the specified data is written to the
-    * binding as follows:
+    * binding as follows.
     *
     * <table>
     *   <tr>
-    *     <th>`data` value</th>
+    *     <th><code>data</code> value</th>
     *     <th>Data written</th>
     *   </tr>
     *   <tr>
@@ -197,7 +197,7 @@ trait Binding extends StObject {
     *     <td>The specified text is written.</td>
     *   </tr>
     *   <tr>
-    *     <td>An array of arrays ("matrix") or a `TableData` object</td>
+    *     <td>An array of arrays ("matrix") or a <code>TableData</code> object</td>
     *     <td>A Word table is written.</td>
     *   </tr>
     *   <tr>
@@ -210,24 +210,24 @@ trait Binding extends StObject {
     *   </tr>
     * </table>
     *
-    * For Excel, the specified data is written to the binding as follows:
+    * For Excel, the specified data is written to the binding as follows.
     *
     * <table>
     *   <tr>
-    *     <th>`data` value</th>
+    *     <th><code>data</code> value</th>
     *     <th>Data written</th>
     *   </tr>
     *   <tr>
     *     <td>A string</td>
-    *     <td>The specified text is inserted as the value of the first bound cell.You can also specify a valid formula to add that formula to the bound cell. For example, setting  data to `"=SUM(A1:A5)"` will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the Binding.getDataAsync method on the bound cell to read its data, the method can return only the data displayed in the cell (the formula's result).</td>
+    *     <td>The specified text is inserted as the value of the first bound cell. You can also specify a valid formula to add that formula to the bound cell. For example, setting data to <code>"=SUM(A1:A5)"</code> will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the <code>Binding.getDataAsync</code> method on the bound cell to read its data, the method can return only the data displayed in the cell (the formula's result).</td>
     *   </tr>
     *   <tr>
     *     <td>An array of arrays ("matrix"), and the shape exactly matches the shape of the binding specified</td>
-    *     <td>The set of rows and columns are written.You can also specify an array of arrays that contain valid formulas to add them to the bound cells. For example, setting  data to `[["=SUM(A1:A5)","=AVERAGE(A1:A5)"]]` will add those two formulas to a binding that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas (or any pre-existing formulas) from the binding with the `Binding.getDataAsync` method - it returns only the data displayed in the bound cells.</td>
+    *     <td>The set of rows and columns are written.You can also specify an array of arrays that contain valid formulas to add them to the bound cells. For example, setting data to <code>[["=SUM(A1:A5)","=AVERAGE(A1:A5)"]]</code> will add those two formulas to a binding that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas (or any pre-existing formulas) from the binding with the <code>Binding.getDataAsync</code> method - it returns only the data displayed in the bound cells.</td>
     *   </tr>
     *   <tr>
-    *     <td>A `TableData` object, and the shape of the table matches the bound table.</td>
-    *     <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the TableData object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
+    *     <td>A <code>TableData</code> object, and the shape of the table matches the bound table</td>
+    *     <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the <code>TableData</code> object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a <code>TableData</code> object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
     *   </tr>
     * </table>
     *
@@ -249,27 +249,27 @@ trait Binding extends StObject {
     * <table>
     *   <tr>
     *     <th>Property</th>
-    *     <th>Use to...</th>
+    *     <th>Use</th>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.value</td>
-    *     <td>Always returns undefined because there is no object or data to retrieve.</td>
+    *     <td><code>AsyncResult.value</code></td>
+    *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.status</td>
-    *     <td>Determine the success or failure of the operation.</td>
+    *     <td><code>AsyncResult.status</code></td>
+    *     <td>Determine the success or failure of the operation</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.error</td>
-    *     <td>Access an Error object that provides error information if the operation failed.</td>
+    *     <td><code>AsyncResult.error</code></td>
+    *     <td>Access an Error object that provides error information if the operation failed</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.asyncContext</td>
-    *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+    *     <td><code>AsyncResult.asyncContext</code></td>
+    *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
     *   </tr>
     * </table>
     *
-    * @param data The data to be set in the current selection. Possible data types by host:
+    * @param data The data to be set in the current selection. Possible data types by Office application:
     *
     *        string: Excel on the web and Windows, and Word on the web and Windows only
     *

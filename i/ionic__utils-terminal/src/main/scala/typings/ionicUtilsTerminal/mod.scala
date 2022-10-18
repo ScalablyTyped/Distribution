@@ -1,8 +1,8 @@
 package typings.ionicUtilsTerminal
 
-import typings.ionicUtilsTerminal.formatMod.ColumnarOptions
-import typings.ionicUtilsTerminal.formatMod.WordWrapOptions
-import typings.ionicUtilsTerminal.infoMod.TerminalInfo
+import typings.ionicUtilsTerminal.distFormatMod.ColumnarOptions
+import typings.ionicUtilsTerminal.distFormatMod.WordWrapOptions
+import typings.ionicUtilsTerminal.distInfoMod.TerminalInfo
 import typings.node.processMod.global.NodeJS.WriteStream
 import typings.stringWidth.mod.Options
 import org.scalablytyped.runtime.StObject
@@ -26,7 +26,7 @@ object mod {
   @JSImport("@ionic/utils-terminal", "Cursor")
   @js.native
   open class Cursor ()
-    extends typings.ionicUtilsTerminal.cursorMod.Cursor
+    extends typings.ionicUtilsTerminal.distCursorMod.Cursor
   /* static members */
   object Cursor {
     
@@ -59,7 +59,7 @@ object mod {
   @JSImport("@ionic/utils-terminal", "EscapeCode")
   @js.native
   open class EscapeCode ()
-    extends typings.ionicUtilsTerminal.ansiMod.EscapeCode
+    extends typings.ionicUtilsTerminal.distAnsiMod.EscapeCode
   /* static members */
   object EscapeCode {
     

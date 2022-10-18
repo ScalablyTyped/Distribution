@@ -1,6 +1,6 @@
 package typings.testingLibraryUserEvent.anon
 
-import typings.testingLibraryUserEvent.isClickableInputMod.clickableInputTypes
+import typings.testingLibraryUserEvent.distTypesUtilsClickIsClickableInputMod.clickableInputTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

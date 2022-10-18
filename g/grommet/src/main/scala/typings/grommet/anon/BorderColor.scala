@@ -1,6 +1,6 @@
 package typings.grommet.anon
 
-import typings.grommet.boxMod.BoxProps
+import typings.grommet.componentsBoxMod.BoxProps
 import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.BorderType
 import typings.grommet.utilsMod.ColorType

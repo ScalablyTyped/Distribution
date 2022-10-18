@@ -1,8 +1,9 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.textTypesMod.ITextProps
-import typings.officeUiFabricReact.textTypesMod.ITextStyles
-import typings.officeUiFabricReact.textTypesMod.ITextTokens
+import org.scalablytyped.runtime.Shortcut
+import typings.officeUiFabricReact.libComponentsTextTextDottypesMod.ITextProps
+import typings.officeUiFabricReact.libComponentsTextTextDottypesMod.ITextStyles
+import typings.officeUiFabricReact.libComponentsTextTextDottypesMod.ITextTokens
 import typings.react.mod.FunctionComponent
 import typings.uifabricFoundation.libIcomponentMod.IStylesFunctionOrObject
 import typings.uifabricFoundation.libIcomponentMod.IViewComponent
@@ -10,7 +11,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object libTextMod {
+object libTextMod extends Shortcut {
+  
+  @JSImport("office-ui-fabric-react/lib/Text", JSImport.Default)
+  @js.native
+  val default: FunctionComponent[ITextProps] = js.native
   
   @JSImport("office-ui-fabric-react/lib/Text", "Text")
   @js.native
@@ -23,4 +28,9 @@ object libTextMod {
   @JSImport("office-ui-fabric-react/lib/Text", "TextView")
   @js.native
   val TextView: IViewComponent[ITextProps] = js.native
+  
+  type _To = FunctionComponent[ITextProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `libTextMod.foo` */
+  override def _to: FunctionComponent[ITextProps] = default
 }

@@ -2,7 +2,7 @@ package typings.neatCsv
 
 import typings.csvParser.mod.Options
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeStreamMod.Readable
+import typings.node.nodeColonstreamMod.Readable
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

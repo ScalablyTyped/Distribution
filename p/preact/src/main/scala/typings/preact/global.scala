@@ -1,8 +1,5 @@
 package typings.preact
 
-import typings.preact.jsxMod.JSXInternal.DOMAttributes
-import typings.preact.jsxMod.JSXInternal.HTMLAttributes
-import typings.preact.jsxMod.JSXInternal.SVGAttributes
 import typings.preact.mod.Attributes
 import typings.preact.mod.ClassAttributes
 import typings.preact.mod.ComponentChild
@@ -14,6 +11,9 @@ import typings.preact.mod.Options_
 import typings.preact.mod.RefObject
 import typings.preact.mod.VNode
 import typings.preact.preactStrings.input
+import typings.preact.srcJsxMod.JSXInternal.DOMAttributes
+import typings.preact.srcJsxMod.JSXInternal.HTMLAttributes
+import typings.preact.srcJsxMod.JSXInternal.SVGAttributes
 import typings.std.Document
 import typings.std.DocumentFragment
 import typings.std.Element
@@ -35,9 +35,9 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSGlobal("preact.Component")
+    /* note: abstract class */ @JSGlobal("preact.Component")
     @js.native
-    abstract class Component[P, S] ()
+    open class Component[P, S] ()
       extends typings.preact.mod.Component[P, S] {
       def this(props: P) = this()
       def this(props: P, context: Any) = this()
@@ -109,12 +109,12 @@ object global {
     inline def createElement[P](`type`: ComponentType[P], props: Attributes & P, children: ComponentChildren*): VNode[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]
     inline def createElement[P](`type`: ComponentType[P], props: Null, children: ComponentChildren*): VNode[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]
     inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165, starting with typings.preact.preactStrings.a, typings.preact.preactStrings.abbr, typings.preact.preactStrings.address */ Any,
       props: ClassAttributes[T] & P,
       children: ComponentChildren*
     ): VNode[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]
     inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165, starting with typings.preact.preactStrings.a, typings.preact.preactStrings.abbr, typings.preact.preactStrings.address */ Any,
       props: Null,
       children: ComponentChildren*
     ): VNode[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]
@@ -136,12 +136,12 @@ object global {
     inline def h[P](`type`: ComponentType[P], props: Attributes & P, children: ComponentChildren*): VNode[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]
     inline def h[P](`type`: ComponentType[P], props: Null, children: ComponentChildren*): VNode[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]
     inline def h[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165, starting with typings.preact.preactStrings.a, typings.preact.preactStrings.abbr, typings.preact.preactStrings.address */ Any,
       props: ClassAttributes[T] & P,
       children: ComponentChildren*
     ): VNode[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]
     inline def h[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165, starting with typings.preact.preactStrings.a, typings.preact.preactStrings.abbr, typings.preact.preactStrings.address */ Any,
       props: Null,
       children: ComponentChildren*
     ): VNode[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]

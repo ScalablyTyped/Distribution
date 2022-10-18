@@ -1,13 +1,13 @@
 package typings.rcSelect
 
 import typings.rcSelect.anon.Children
-import typings.rcSelect.baseSelectMod.BaseSelectProps
-import typings.rcSelect.baseSelectMod.BaseSelectRef
-import typings.rcSelect.optGroupMod.OptionGroupFC
-import typings.rcSelect.optionMod.OptionFC
-import typings.rcSelect.selectMod.DefaultOptionType
-import typings.rcSelect.selectMod.SelectProps
-import typings.rcSelect.useBasePropsMod.BaseSelectContextProps
+import typings.rcSelect.libBaseSelectMod.BaseSelectProps
+import typings.rcSelect.libBaseSelectMod.BaseSelectRef
+import typings.rcSelect.libHooksUseBasePropsMod.BaseSelectContextProps
+import typings.rcSelect.libOptGroupMod.OptionGroupFC
+import typings.rcSelect.libOptionMod.OptionFC
+import typings.rcSelect.libSelectMod.DefaultOptionType
+import typings.rcSelect.libSelectMod.SelectProps
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes

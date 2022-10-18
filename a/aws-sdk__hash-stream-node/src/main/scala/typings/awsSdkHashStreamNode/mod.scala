@@ -1,6 +1,6 @@
 package typings.awsSdkHashStreamNode
 
-import typings.awsSdkTypes.cryptoMod.StreamHasher
+import typings.awsSdkTypes.distTypesCryptoMod.StreamHasher
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

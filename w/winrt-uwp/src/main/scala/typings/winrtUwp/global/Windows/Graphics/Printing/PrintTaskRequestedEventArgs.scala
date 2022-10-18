@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Event arguments associated with the PrintTaskRequest . */
-@JSGlobal("Windows.Graphics.Printing.PrintTaskRequestedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.PrintTaskRequestedEventArgs")
 @js.native
-abstract class PrintTaskRequestedEventArgs ()
+open class PrintTaskRequestedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Graphics.Printing.PrintTaskRequestedEventArgs {
   

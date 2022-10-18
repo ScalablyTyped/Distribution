@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "ConfigValueTooSmallError")
 @js.native
 open class ConfigValueTooSmallError protected ()
-  extends typings.hyperformula.errorsMod.ConfigValueTooSmallError {
+  extends typings.hyperformula.typingsErrorsMod.ConfigValueTooSmallError {
   def this(paramName: String, minimum: Double) = this()
 }

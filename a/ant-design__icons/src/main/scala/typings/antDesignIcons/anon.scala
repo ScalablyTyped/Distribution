@@ -52,8 +52,8 @@ import typings.antDesignIcons.antDesignIconsStrings.url
 import typings.antDesignIcons.antDesignIconsStrings.user
 import typings.antDesignIcons.antDesignIconsStrings.vertical
 import typings.antDesignIcons.antDesignIconsStrings.yes
-import typings.antDesignIcons.componentsIconMod.CustomIconComponentProps
-import typings.antDesignIcons.twoTonePrimaryColorMod.TwoToneColor
+import typings.antDesignIcons.distComponentsTwoTonePrimaryColorMod.TwoToneColor
+import typings.antDesignIcons.libComponentsIconMod.CustomIconComponentProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -3048,7 +3048,7 @@ object anon {
     
     var translate: js.UndefOr[yes | no] = js.undefined
     
-    var twoToneColor: js.UndefOr[typings.antDesignIcons.componentsTwoTonePrimaryColorMod.TwoToneColor] = js.undefined
+    var twoToneColor: js.UndefOr[typings.antDesignIcons.libComponentsTwoTonePrimaryColorMod.TwoToneColor] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
     
@@ -4503,7 +4503,7 @@ object anon {
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setTwoToneColor(value: typings.antDesignIcons.componentsTwoTonePrimaryColorMod.TwoToneColor): Self = StObject.set(x, "twoToneColor", value.asInstanceOf[js.Any])
+      inline def setTwoToneColor(value: typings.antDesignIcons.libComponentsTwoTonePrimaryColorMod.TwoToneColor): Self = StObject.set(x, "twoToneColor", value.asInstanceOf[js.Any])
       
       inline def setTwoToneColorUndefined: Self = StObject.set(x, "twoToneColor", js.undefined)
       
@@ -6940,8 +6940,8 @@ object anon {
     
     var component: js.UndefOr[
         (ComponentType[
-          typings.antDesignIcons.iconMod.CustomIconComponentProps | SVGProps[SVGSVGElement]
-        ]) | ForwardRefExoticComponent[typings.antDesignIcons.iconMod.CustomIconComponentProps]
+          typings.antDesignIcons.distComponentsIconMod.CustomIconComponentProps | SVGProps[SVGSVGElement]
+        ]) | ForwardRefExoticComponent[typings.antDesignIcons.distComponentsIconMod.CustomIconComponentProps]
       ] = js.undefined
     
     var content: js.UndefOr[String] = js.undefined
@@ -7841,8 +7841,8 @@ object anon {
       
       inline def setComponent(
         value: (ComponentType[
-              typings.antDesignIcons.iconMod.CustomIconComponentProps | SVGProps[SVGSVGElement]
-            ]) | ForwardRefExoticComponent[typings.antDesignIcons.iconMod.CustomIconComponentProps]
+              typings.antDesignIcons.distComponentsIconMod.CustomIconComponentProps | SVGProps[SVGSVGElement]
+            ]) | ForwardRefExoticComponent[typings.antDesignIcons.distComponentsIconMod.CustomIconComponentProps]
       ): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)

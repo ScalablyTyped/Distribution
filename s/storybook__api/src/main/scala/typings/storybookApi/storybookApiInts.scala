@@ -1,6 +1,6 @@
 package typings.storybookApi
 
-import typings.storybookApi.modulesStoriesMod.Direction
+import typings.storybookApi.distTs3Dot9ModulesStoriesMod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

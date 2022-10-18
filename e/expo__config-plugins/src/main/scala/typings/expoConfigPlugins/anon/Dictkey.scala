@@ -9,34 +9,33 @@ trait Dictkey
   extends StObject
      with /* key */ StringDictionary[js.UndefOr[String]] {
   
-  @JSName("android:host")
-  var androidColonhost: js.UndefOr[String] = js.undefined
+  @JSName("package")
+  var _package: js.UndefOr[String] = js.undefined
   
-  @JSName("android:pathPrefix")
-  var androidColonpathPrefix: js.UndefOr[String] = js.undefined
+  @JSName("xmlns:android")
+  var xmlnsColonandroid: String
   
-  @JSName("android:scheme")
-  var androidColonscheme: js.UndefOr[String] = js.undefined
+  @JSName("xmlns:tools")
+  var xmlnsColontools: js.UndefOr[String] = js.undefined
 }
 object Dictkey {
   
-  inline def apply(): Dictkey = {
+  inline def apply(xmlnsColonandroid: String): Dictkey = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("xmlns:android")(xmlnsColonandroid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictkey]
   }
   
   extension [Self <: Dictkey](x: Self) {
     
-    inline def setAndroidColonhost(value: String): Self = StObject.set(x, "android:host", value.asInstanceOf[js.Any])
+    inline def setXmlnsColonandroid(value: String): Self = StObject.set(x, "xmlns:android", value.asInstanceOf[js.Any])
     
-    inline def setAndroidColonhostUndefined: Self = StObject.set(x, "android:host", js.undefined)
+    inline def setXmlnsColontools(value: String): Self = StObject.set(x, "xmlns:tools", value.asInstanceOf[js.Any])
     
-    inline def setAndroidColonpathPrefix(value: String): Self = StObject.set(x, "android:pathPrefix", value.asInstanceOf[js.Any])
+    inline def setXmlnsColontoolsUndefined: Self = StObject.set(x, "xmlns:tools", js.undefined)
     
-    inline def setAndroidColonpathPrefixUndefined: Self = StObject.set(x, "android:pathPrefix", js.undefined)
+    inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
-    inline def setAndroidColonscheme(value: String): Self = StObject.set(x, "android:scheme", value.asInstanceOf[js.Any])
-    
-    inline def setAndroidColonschemeUndefined: Self = StObject.set(x, "android:scheme", js.undefined)
+    inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

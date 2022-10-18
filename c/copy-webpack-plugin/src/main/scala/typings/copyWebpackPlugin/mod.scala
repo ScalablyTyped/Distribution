@@ -3,7 +3,6 @@ package typings.copyWebpackPlugin
 import org.scalablytyped.runtime.StringDictionary
 import typings.copyWebpackPlugin.anon.AbsoluteFilename
 import typings.copyWebpackPlugin.anon.Data
-import typings.copyWebpackPlugin.anon.Filename
 import typings.copyWebpackPlugin.anon.FnCall
 import typings.globby.mod.Options
 import typings.node.bufferMod.global.Buffer
@@ -437,7 +436,7 @@ object mod {
   
   type GlobbyOptions = Options
   
-  type Info = (Record[String, Any]) | (js.Function1[/* item */ Filename, Record[String, Any]])
+  type Info = (Record[String, Any]) | (js.Function1[/* item */ AbsoluteFilename, Record[String, Any]])
   
   type NoErrorOnMissing = Boolean
   
@@ -496,7 +495,7 @@ object mod {
       
       inline def setInfo(value: Info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      inline def setInfoFunction1(value: /* item */ Filename => Record[String, Any]): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfoFunction1(value: /* item */ AbsoluteFilename => Record[String, Any]): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
       inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
@@ -510,7 +509,7 @@ object mod {
       
       inline def setTo(value: To): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      inline def setToFunction1(value: /* pathData */ AbsoluteFilename => String | js.Promise[String]): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
+      inline def setToFunction1(value: /* pathData */ typings.copyWebpackPlugin.anon.Context => String | js.Promise[String]): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
       
       inline def setToType(value: ToType): Self = StObject.set(x, "toType", value.asInstanceOf[js.Any])
       
@@ -559,7 +558,7 @@ object mod {
     }
   }
   
-  type Schema = typings.schemaUtils.validateMod.Schema
+  type Schema = typings.schemaUtils.declarationsValidateMod.Schema
   
   type Snapshot = ReturnType[
     js.Function2[
@@ -573,7 +572,7 @@ object mod {
   
   type To = String | ToFunction
   
-  type ToFunction = js.Function1[/* pathData */ AbsoluteFilename, String | js.Promise[String]]
+  type ToFunction = js.Function1[/* pathData */ typings.copyWebpackPlugin.anon.Context, String | js.Promise[String]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.copyWebpackPlugin.copyWebpackPluginStrings.dir

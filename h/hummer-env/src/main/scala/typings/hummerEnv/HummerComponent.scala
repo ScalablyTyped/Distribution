@@ -7,15 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HummerComponent extends StObject {
   
+  def addAnimation(animation: BasicAnimation[Any], key: String): Unit = js.native
   /**
     * @summary 为组件添加动画
     * @param animation : 添加的动画, 通过 KeyframeAnimation | BasicAnimation 生成的实例;
     * @param key: 动画对应的唯一key, 之后可以通过 removeAnimationForKey 删除对应的动画
     */
-  def addAnimation(
-    animation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KeyframeAnimation */ Any,
-    key: String
-  ): Unit = js.native
+  def addAnimation(animation: KeyframeAnimation[Any], key: String): Unit = js.native
   
   /**
     * @summary 为组件绑定事件

@@ -67,6 +67,7 @@ import typings.react.mod.FormEventHandler
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
+import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.NativeUIEvent
@@ -86,7 +87,6 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
-import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -147,7 +147,7 @@ trait AccessKey extends StObject {
   
   var `aria-level`: js.UndefOr[Double] = js.undefined
   
-  var `aria-live`: js.UndefOr[polite | assertive | off] = js.undefined
+  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
   
   var `aria-modal`: js.UndefOr[Boolean] = js.undefined
   
@@ -212,12 +212,6 @@ trait AccessKey extends StObject {
   var contextMenu: js.UndefOr[String] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
-  
-  var `data-disabled`: js.UndefOr[String] = js.undefined
-  
-  var `data-selected`: js.UndefOr[String] = js.undefined
-  
-  var `data-valuetext`: String
   
   var datatype: js.UndefOr[String] = js.undefined
   
@@ -293,7 +287,7 @@ trait AccessKey extends StObject {
   
   var onChangeCapture: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   
-  def onClick(event: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent]): Any
+  var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
   var onClickCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
@@ -349,7 +343,7 @@ trait AccessKey extends StObject {
   
   var onDragOverCapture: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   
-  def onDragStart(event: DragEvent[HTMLDivElement]): Any
+  var onDragStart: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   
   var onDragStartCapture: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   
@@ -377,7 +371,7 @@ trait AccessKey extends StObject {
   
   var onErrorCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  def onFocus(event: FocusEvent[HTMLDivElement, Element]): Any
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
   
   var onFocusCapture: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
   
@@ -393,7 +387,7 @@ trait AccessKey extends StObject {
   
   var onInvalidCapture: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
+  def onKeyDown(event: KeyboardEvent[HTMLDivElement]): Any
   
   var onKeyDownCapture: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   
@@ -425,15 +419,15 @@ trait AccessKey extends StObject {
   
   var onLostPointerCaptureCapture: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   
-  def onMouseDown(event: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent]): Any
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
   var onMouseDownCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  def onMouseEnter(event: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent]): Any
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  def onMouseLeave(event: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent]): Any
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  def onMouseMove(event: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent]): Any
+  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
   var onMouseMoveCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
@@ -445,7 +439,7 @@ trait AccessKey extends StObject {
   
   var onMouseOverCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  def onMouseUp(event: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent]): Any
+  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
   var onMouseUpCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
@@ -520,6 +514,8 @@ trait AccessKey extends StObject {
   var onSeeking: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
   var onSeekingCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  
+  var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
   var onSelectCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
@@ -613,21 +609,8 @@ trait AccessKey extends StObject {
 }
 object AccessKey {
   
-  inline def apply(
-    `data-valuetext`: String,
-    onClick: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Any,
-    onDragStart: DragEvent[HTMLDivElement] => Any,
-    onFocus: FocusEvent[HTMLDivElement, Element] => Any,
-    onMouseDown: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Any,
-    onMouseEnter: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Any,
-    onMouseLeave: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Any,
-    onMouseMove: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Any,
-    onMouseUp: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Any,
-    ref: Any => Unit,
-    tabIndex: Double
-  ): AccessKey = {
-    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), onDragStart = js.Any.fromFunction1(onDragStart), onFocus = js.Any.fromFunction1(onFocus), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseEnter = js.Any.fromFunction1(onMouseEnter), onMouseLeave = js.Any.fromFunction1(onMouseLeave), onMouseMove = js.Any.fromFunction1(onMouseMove), onMouseUp = js.Any.fromFunction1(onMouseUp), ref = js.Any.fromFunction1(ref), tabIndex = tabIndex.asInstanceOf[js.Any])
-    __obj.updateDynamic("data-valuetext")(`data-valuetext`.asInstanceOf[js.Any])
+  inline def apply(onKeyDown: KeyboardEvent[HTMLDivElement] => Any, ref: Any => Unit, tabIndex: Double): AccessKey = {
+    val __obj = js.Dynamic.literal(onKeyDown = js.Any.fromFunction1(onKeyDown), ref = js.Any.fromFunction1(ref), tabIndex = tabIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessKey]
   }
   
@@ -741,7 +724,7 @@ object AccessKey {
     
     inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
     
-    inline def `setAria-live`(value: polite | assertive | off): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+    inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
@@ -871,16 +854,6 @@ object AccessKey {
     
     inline def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
     
-    inline def `setData-disabled`(value: String): Self = StObject.set(x, "data-disabled", value.asInstanceOf[js.Any])
-    
-    inline def `setData-disabledUndefined`: Self = StObject.set(x, "data-disabled", js.undefined)
-    
-    inline def `setData-selected`(value: String): Self = StObject.set(x, "data-selected", value.asInstanceOf[js.Any])
-    
-    inline def `setData-selectedUndefined`: Self = StObject.set(x, "data-selected", js.undefined)
-    
-    inline def `setData-valuetext`(value: String): Self = StObject.set(x, "data-valuetext", value.asInstanceOf[js.Any])
-    
     inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
     
     inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
@@ -985,9 +958,9 @@ object AccessKey {
     
     inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
     
-    inline def setOnAuxClick(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
+    inline def setOnAuxClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
     
-    inline def setOnAuxClickCapture(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClickCapture", js.Any.fromFunction1(value))
+    inline def setOnAuxClickCapture(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClickCapture", js.Any.fromFunction1(value))
     
     inline def setOnAuxClickCaptureUndefined: Self = StObject.set(x, "onAuxClickCapture", js.undefined)
     
@@ -1033,11 +1006,13 @@ object AccessKey {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnClick(value: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    inline def setOnClickCapture(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClickCapture", js.Any.fromFunction1(value))
+    inline def setOnClickCapture(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClickCapture", js.Any.fromFunction1(value))
     
     inline def setOnClickCaptureUndefined: Self = StObject.set(x, "onClickCapture", js.undefined)
+    
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     inline def setOnCompositionEnd(value: CompositionEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
     
@@ -1063,9 +1038,9 @@ object AccessKey {
     
     inline def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
     
-    inline def setOnContextMenu(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+    inline def setOnContextMenu(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
     
-    inline def setOnContextMenuCapture(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenuCapture", js.Any.fromFunction1(value))
+    inline def setOnContextMenuCapture(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenuCapture", js.Any.fromFunction1(value))
     
     inline def setOnContextMenuCaptureUndefined: Self = StObject.set(x, "onContextMenuCapture", js.undefined)
     
@@ -1087,9 +1062,9 @@ object AccessKey {
     
     inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
     
-    inline def setOnDoubleClick(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+    inline def setOnDoubleClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
     
-    inline def setOnDoubleClickCapture(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClickCapture", js.Any.fromFunction1(value))
+    inline def setOnDoubleClickCapture(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClickCapture", js.Any.fromFunction1(value))
     
     inline def setOnDoubleClickCaptureUndefined: Self = StObject.set(x, "onDoubleClickCapture", js.undefined)
     
@@ -1141,11 +1116,13 @@ object AccessKey {
     
     inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
     
-    inline def setOnDragStart(value: DragEvent[HTMLDivElement] => Any): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+    inline def setOnDragStart(value: DragEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     inline def setOnDragStartCapture(value: DragEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onDragStartCapture", js.Any.fromFunction1(value))
     
     inline def setOnDragStartCaptureUndefined: Self = StObject.set(x, "onDragStartCapture", js.undefined)
+    
+    inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
@@ -1197,11 +1174,13 @@ object AccessKey {
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnFocus(value: FocusEvent[HTMLDivElement, Element] => Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusCapture(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onFocusCapture", js.Any.fromFunction1(value))
     
     inline def setOnFocusCaptureUndefined: Self = StObject.set(x, "onFocusCapture", js.undefined)
+    
+    inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     inline def setOnGotPointerCapture(value: PointerEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onGotPointerCapture", js.Any.fromFunction1(value))
     
@@ -1227,13 +1206,11 @@ object AccessKey {
     
     inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
     
-    inline def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     inline def setOnKeyDownCapture(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDownCapture", js.Any.fromFunction1(value))
     
     inline def setOnKeyDownCaptureUndefined: Self = StObject.set(x, "onKeyDownCapture", js.undefined)
-    
-    inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     
     inline def setOnKeyPress(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
     
@@ -1291,43 +1268,53 @@ object AccessKey {
     
     inline def setOnLostPointerCaptureUndefined: Self = StObject.set(x, "onLostPointerCapture", js.undefined)
     
-    inline def setOnMouseDown(value: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Any): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+    inline def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
-    inline def setOnMouseDownCapture(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDownCapture", js.Any.fromFunction1(value))
+    inline def setOnMouseDownCapture(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDownCapture", js.Any.fromFunction1(value))
     
     inline def setOnMouseDownCaptureUndefined: Self = StObject.set(x, "onMouseDownCapture", js.undefined)
     
-    inline def setOnMouseEnter(value: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Any): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+    inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
-    inline def setOnMouseLeave(value: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Any): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    inline def setOnMouseEnter(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
-    inline def setOnMouseMove(value: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Any): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
-    inline def setOnMouseMoveCapture(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMoveCapture", js.Any.fromFunction1(value))
+    inline def setOnMouseLeave(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    
+    inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+    
+    inline def setOnMouseMove(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    
+    inline def setOnMouseMoveCapture(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMoveCapture", js.Any.fromFunction1(value))
     
     inline def setOnMouseMoveCaptureUndefined: Self = StObject.set(x, "onMouseMoveCapture", js.undefined)
     
-    inline def setOnMouseOut(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
+    inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
-    inline def setOnMouseOutCapture(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOutCapture", js.Any.fromFunction1(value))
+    inline def setOnMouseOut(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
+    
+    inline def setOnMouseOutCapture(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOutCapture", js.Any.fromFunction1(value))
     
     inline def setOnMouseOutCaptureUndefined: Self = StObject.set(x, "onMouseOutCapture", js.undefined)
     
     inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
     
-    inline def setOnMouseOver(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+    inline def setOnMouseOver(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
     
-    inline def setOnMouseOverCapture(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOverCapture", js.Any.fromFunction1(value))
+    inline def setOnMouseOverCapture(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOverCapture", js.Any.fromFunction1(value))
     
     inline def setOnMouseOverCaptureUndefined: Self = StObject.set(x, "onMouseOverCapture", js.undefined)
     
     inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
     
-    inline def setOnMouseUp(value: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Any): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+    inline def setOnMouseUp(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
     
-    inline def setOnMouseUpCapture(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUpCapture", js.Any.fromFunction1(value))
+    inline def setOnMouseUpCapture(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUpCapture", js.Any.fromFunction1(value))
     
     inline def setOnMouseUpCaptureUndefined: Self = StObject.set(x, "onMouseUpCapture", js.undefined)
+    
+    inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
     inline def setOnPaste(value: ClipboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
     
@@ -1473,9 +1460,13 @@ object AccessKey {
     
     inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
     
+    inline def setOnSelect(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    
     inline def setOnSelectCapture(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onSelectCapture", js.Any.fromFunction1(value))
     
     inline def setOnSelectCaptureUndefined: Self = StObject.set(x, "onSelectCapture", js.undefined)
+    
+    inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     inline def setOnStalled(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
     

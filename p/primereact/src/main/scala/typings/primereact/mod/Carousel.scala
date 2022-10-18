@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.carouselMod.CarouselProps
+import typings.primereact.carouselCarouselMod.CarouselProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Carousel")
 @js.native
 open class Carousel protected ()
-  extends typings.primereact.carouselMod.Carousel {
+  extends typings.primereact.carouselCarouselMod.Carousel {
   def this(props: CarouselProps) = this()
   /**
     * @deprecated

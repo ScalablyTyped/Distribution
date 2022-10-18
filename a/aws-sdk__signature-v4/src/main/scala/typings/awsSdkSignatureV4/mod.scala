@@ -2,12 +2,12 @@ package typings.awsSdkSignatureV4
 
 import typings.awsSdkSignatureV4.anon.HttpRequestqueryQueryPara
 import typings.awsSdkSignatureV4.anon.UnhoistableHeaders
-import typings.awsSdkSignatureV4.signatureV4Mod.SignatureV4CryptoInit
-import typings.awsSdkSignatureV4.signatureV4Mod.SignatureV4Init
-import typings.awsSdkTypes.credentialsMod.Credentials
-import typings.awsSdkTypes.cryptoMod.HashConstructor
-import typings.awsSdkTypes.httpMod.HeaderBag
-import typings.awsSdkTypes.httpMod.HttpRequest
+import typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4CryptoInit
+import typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4Init
+import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
+import typings.awsSdkTypes.distTypesHttpMod.HeaderBag
+import typings.awsSdkTypes.distTypesHttpMod.HttpRequest
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,7 @@ object mod {
   @JSImport("@aws-sdk/signature-v4", "SignatureV4")
   @js.native
   open class SignatureV4 protected ()
-    extends typings.awsSdkSignatureV4.signatureV4Mod.SignatureV4 {
+    extends typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4 {
     def this(hasApplyChecksumCredentialsRegionServiceSha256UriEscapePath: SignatureV4Init & SignatureV4CryptoInit) = this()
   }
   

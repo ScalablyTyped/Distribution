@@ -1,9 +1,9 @@
 package typings.vscodeLanguageserver.anon
 
-import typings.vscodeJsonrpc.connectionMod.RequestHandler
-import typings.vscodeJsonrpc.disposableMod.Disposable
-import typings.vscodeLanguageserver.serverMod.ServerRequestHandler
-import typings.vscodeLanguageserverProtocol.protocolInlayHintMod.InlayHintParams
+import typings.vscodeJsonrpc.libCommonConnectionMod.RequestHandler
+import typings.vscodeJsonrpc.libCommonDisposableMod.Disposable
+import typings.vscodeLanguageserver.libCommonServerMod.ServerRequestHandler
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotinlayHintMod.InlayHintParams
 import typings.vscodeLanguageserverTypes.mod.InlayHint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -6,7 +6,7 @@ import typings.koa.mod.DefaultState
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpsMod.ServerOptions
 import typings.node.netMod.Server
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.webpack.mod.Configuration
 import typings.webpackDevMiddleware.mod.ServerResponse
 import typings.webpackServe.anon.Compiler
@@ -236,10 +236,10 @@ object mod {
     /** Configuration object for the server to use HTTPS */
     var https: js.UndefOr[
         ServerOptions[
-          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
           Instantiable1[
             /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+            typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
           ]
         ]
       ] = js.undefined
@@ -308,10 +308,10 @@ object mod {
       
       inline def setHttps(
         value: ServerOptions[
-              Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+              Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
               Instantiable1[
                 /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-                typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+                typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
               ]
             ]
       ): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])

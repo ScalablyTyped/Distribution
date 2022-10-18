@@ -1,7 +1,6 @@
 package typings.flashpointLauncher.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,9 +131,7 @@ trait AppPreferencesData
   var showDeveloperTab: Boolean
   
   /** Levels to show/hide in the log page. */
-  var showLogLevel: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in flashpoint-launcher.flashpoint-launcher.LogLevel ]: boolean}
-    */ typings.flashpointLauncher.flashpointLauncherStrings.AppPreferencesData & TopLevel[Any]
+  var showLogLevel: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in flashpoint-launcher.flashpoint-launcher.LogLevel ]: boolean} */ js.Any
   
   /** Sources to show/hide in the log page. */
   var showLogSource: StringDictionary[Boolean]
@@ -191,9 +188,7 @@ object AppPreferencesData {
     saveImportedCurations: Boolean,
     showBrokenGames: Boolean,
     showDeveloperTab: Boolean,
-    showLogLevel: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in flashpoint-launcher.flashpoint-launcher.LogLevel ]: boolean}
-    */ typings.flashpointLauncher.flashpointLauncherStrings.AppPreferencesData & TopLevel[Any],
+    showLogLevel: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in flashpoint-launcher.flashpoint-launcher.LogLevel ]: boolean} */ js.Any,
     showLogSource: StringDictionary[Boolean],
     symlinkCurationContent: Boolean,
     tagFilters: js.Array[TagFilterGroup],
@@ -295,9 +290,7 @@ object AppPreferencesData {
     inline def setShowDeveloperTab(value: Boolean): Self = StObject.set(x, "showDeveloperTab", value.asInstanceOf[js.Any])
     
     inline def setShowLogLevel(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in flashpoint-launcher.flashpoint-launcher.LogLevel ]: boolean}
-      */ typings.flashpointLauncher.flashpointLauncherStrings.AppPreferencesData & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in flashpoint-launcher.flashpoint-launcher.LogLevel ]: boolean} */ js.Any
     ): Self = StObject.set(x, "showLogLevel", value.asInstanceOf[js.Any])
     
     inline def setShowLogSource(value: StringDictionary[Boolean]): Self = StObject.set(x, "showLogSource", value.asInstanceOf[js.Any])

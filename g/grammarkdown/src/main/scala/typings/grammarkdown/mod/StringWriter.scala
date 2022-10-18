@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grammarkdown", "StringWriter")
 @js.native
-class StringWriter ()
-  extends typings.grammarkdown.stringwriterMod.StringWriter {
+open class StringWriter ()
+  extends typings.grammarkdown.distStringwriterMod.StringWriter {
   def this(eol: String) = this()
 }

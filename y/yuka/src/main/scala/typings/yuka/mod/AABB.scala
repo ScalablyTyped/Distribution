@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [max=Vector(0,0,0)] - The maximum bounds of the AABB.
   */
 open class AABB ()
-  extends typings.yuka.yukaMod.AABB {
-  def this(min: typings.yuka.vector3Mod.Vector3) = this()
-  def this(min: Unit, max: typings.yuka.vector3Mod.Vector3) = this()
-  def this(min: typings.yuka.vector3Mod.Vector3, max: typings.yuka.vector3Mod.Vector3) = this()
+  extends typings.yuka.srcYukaMod.AABB {
+  def this(min: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(min: Unit, max: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(min: typings.yuka.srcMathVector3Mod.Vector3, max: typings.yuka.srcMathVector3Mod.Vector3) = this()
 }

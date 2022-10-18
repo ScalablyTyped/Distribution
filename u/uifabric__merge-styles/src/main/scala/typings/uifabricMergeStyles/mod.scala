@@ -1,18 +1,18 @@
 package typings.uifabricMergeStyles
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
-import typings.uifabricMergeStyles.ikeyframesMod.IKeyframes
-import typings.uifabricMergeStyles.irawstylebaseMod.IFontFace
-import typings.uifabricMergeStyles.istyleMod.IStyle
-import typings.uifabricMergeStyles.istyleMod.IStyleBaseArray
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricMergeStyles.istyleoptionsMod.IStyleOptions
-import typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet
-import typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet
-import typings.uifabricMergeStyles.istylesetMod.IStyleSet
-import typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly
-import typings.uifabricMergeStyles.stylesheetMod.IStyleSheetConfig
+import typings.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.libIkeyframesMod.IKeyframes
+import typings.uifabricMergeStyles.libIrawstylebaseMod.IFontFace
+import typings.uifabricMergeStyles.libIstyleMod.IStyle
+import typings.uifabricMergeStyles.libIstyleMod.IStyleBaseArray
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricMergeStyles.libIstyleoptionsMod.IStyleOptions
+import typings.uifabricMergeStyles.libIstylesetMod.IConcatenatedStyleSet
+import typings.uifabricMergeStyles.libIstylesetMod.IProcessedStyleSet
+import typings.uifabricMergeStyles.libIstylesetMod.IStyleSet
+import typings.uifabricMergeStyles.libObjectOnlyMod.ObjectOnly
+import typings.uifabricMergeStyles.libStylesheetMod.IStyleSheetConfig
 import typings.uifabricMergeStyles.uifabricMergeStylesBooleans.`false`
 import typings.uifabricMergeStyles.uifabricMergeStylesInts.`0`
 import typings.uifabricMergeStyles.uifabricMergeStylesInts.`1`
@@ -61,7 +61,7 @@ object mod {
   @JSImport("@uifabric/merge-styles", "Stylesheet")
   @js.native
   open class Stylesheet ()
-    extends typings.uifabricMergeStyles.stylesheetMod.Stylesheet {
+    extends typings.uifabricMergeStyles.libStylesheetMod.Stylesheet {
     def this(config: IStyleSheetConfig) = this()
   }
   /* static members */
@@ -74,7 +74,7 @@ object mod {
     /**
       * Gets the singleton instance.
       */
-    inline def getInstance(): typings.uifabricMergeStyles.stylesheetMod.Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.uifabricMergeStyles.stylesheetMod.Stylesheet]
+    inline def getInstance(): typings.uifabricMergeStyles.libStylesheetMod.Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.uifabricMergeStyles.libStylesheetMod.Stylesheet]
   }
   
   inline def concatStyleSets[TStyleSet](): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")().asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet]]]

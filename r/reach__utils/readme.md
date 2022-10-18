@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__utils
 
-Typings are for version 0.2
+Typings are for version 0.18.0
 
 ## Library description:
 Internal, shared utilities for Reach UI.
@@ -10,10 +10,10 @@ Internal, shared utilities for Reach UI.
 | ------------------ | :-------------: |
 | Full name          | @reach/utils |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 36 |
-| # downloads        | 15115024 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 4458097.333333333 |
+| # stars            | 5390.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)
@@ -24,7 +24,7 @@ Internal, shared utilities for Reach UI.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

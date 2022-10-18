@@ -1,10 +1,9 @@
 package typings.reduxOrm
 
-import org.scalablytyped.runtime.TopLevel
-import typings.reduxOrm.databaseMod.Database
-import typings.reduxOrm.databaseMod.QueryResult
-import typings.reduxOrm.databaseMod.QuerySpec
-import typings.reduxOrm.databaseMod.UpdateSpec
+import typings.reduxOrm.dbDatabaseMod.Database
+import typings.reduxOrm.dbDatabaseMod.QueryResult
+import typings.reduxOrm.dbDatabaseMod.QuerySpec
+import typings.reduxOrm.dbDatabaseMod.UpdateSpec
 import typings.reduxOrm.helpersMod.Assign
 import typings.reduxOrm.helpersMod.Diff
 import typings.reduxOrm.helpersMod.Intersection
@@ -46,9 +45,7 @@ object sessionMod {
       schema: ORM[I, /* keyof I */ String],
       db: Database[
             I, 
-            /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.default & TopLevel[I]
+            /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>} */ js.Any
           ],
       state: OrmState[I]
     ) = this()
@@ -56,9 +53,7 @@ object sessionMod {
       schema: ORM[I, /* keyof I */ String],
       db: Database[
             I, 
-            /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.default & TopLevel[I]
+            /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>} */ js.Any
           ],
       state: OrmState[I],
       withMutations: Boolean
@@ -67,9 +62,7 @@ object sessionMod {
       schema: ORM[I, /* keyof I */ String],
       db: Database[
             I, 
-            /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.default & TopLevel[I]
+            /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>} */ js.Any
           ],
       state: OrmState[I],
       withMutations: Boolean,
@@ -79,9 +72,7 @@ object sessionMod {
       schema: ORM[I, /* keyof I */ String],
       db: Database[
             I, 
-            /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.default & TopLevel[I]
+            /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>} */ js.Any
           ],
       state: OrmState[I],
       withMutations: Unit,
@@ -149,23 +140,15 @@ object sessionMod {
     ]
   ] */] = Assign[
     Session[I], 
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof I ]: redux-orm.redux-orm/Model.ModelType<std.InstanceType<I[K]>>}
-    */ typings.reduxOrm.reduxOrmStrings.OrmSession & TopLevel[I], 
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof I ]: redux-orm.redux-orm/Model.ModelType<std.InstanceType<I[K]>>} */ js.Any, 
     (Diff[
       Session[I], 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof I ]: redux-orm.redux-orm/Model.ModelType<std.InstanceType<I[K]>>}
-    */ typings.reduxOrm.reduxOrmStrings.OrmSession & TopLevel[I]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof I ]: redux-orm.redux-orm/Model.ModelType<std.InstanceType<I[K]>>} */ js.Any
     ]) & (Intersection[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof I ]: redux-orm.redux-orm/Model.ModelType<std.InstanceType<I[K]>>}
-    */ typings.reduxOrm.reduxOrmStrings.OrmSession & TopLevel[I], 
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof I ]: redux-orm.redux-orm/Model.ModelType<std.InstanceType<I[K]>>} */ js.Any, 
       Session[I]
     ]) & (Diff[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof I ]: redux-orm.redux-orm/Model.ModelType<std.InstanceType<I[K]>>}
-    */ typings.reduxOrm.reduxOrmStrings.OrmSession & TopLevel[I], 
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof I ]: redux-orm.redux-orm/Model.ModelType<std.InstanceType<I[K]>>} */ js.Any, 
       Session[I]
     ])
   ]

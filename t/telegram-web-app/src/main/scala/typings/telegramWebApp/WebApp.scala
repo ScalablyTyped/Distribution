@@ -1,5 +1,6 @@
 package typings.telegramWebApp
 
+import typings.telegramWebApp.anon.Buttonid
 import typings.telegramWebApp.anon.IsStateStable
 import typings.telegramWebApp.telegramWebAppStrings.backButtonClicked
 import typings.telegramWebApp.telegramWebAppStrings.bg_color
@@ -106,9 +107,11 @@ trait WebApp extends StObject {
   
   /** A method that deletes a previously set event handler. */
   def offEvent(
-    eventType: themeChanged | mainButtonClicked | backButtonClicked | settingsButtonClicked | popupClosed,
+    eventType: themeChanged | mainButtonClicked | backButtonClicked | settingsButtonClicked,
     eventHandler: js.Function0[Unit]
   ): Unit = js.native
+  @JSName("offEvent")
+  def offEvent_popupClosed(eventType: popupClosed, eventHandler: js.Function1[/* eventData */ Buttonid, Unit]): Unit = js.native
   @JSName("offEvent")
   def offEvent_viewportChanged(eventType: viewportChanged, eventHandler: js.Function1[/* eventData */ IsStateStable, Unit]): Unit = js.native
   
@@ -117,9 +120,11 @@ trait WebApp extends StObject {
     * events.
     */
   def onEvent(
-    eventType: themeChanged | mainButtonClicked | backButtonClicked | settingsButtonClicked | popupClosed,
+    eventType: themeChanged | mainButtonClicked | backButtonClicked | settingsButtonClicked,
     eventHandler: js.Function0[Unit]
   ): Unit = js.native
+  @JSName("onEvent")
+  def onEvent_popupClosed(eventType: popupClosed, eventHandler: js.Function1[/* eventData */ Buttonid, Unit]): Unit = js.native
   @JSName("onEvent")
   def onEvent_viewportChanged(eventType: viewportChanged, eventHandler: js.Function1[/* eventData */ IsStateStable, Unit]): Unit = js.native
   

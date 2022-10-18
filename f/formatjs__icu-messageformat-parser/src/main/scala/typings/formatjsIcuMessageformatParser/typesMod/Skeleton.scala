@@ -2,7 +2,7 @@ package typings.formatjsIcuMessageformatParser.typesMod
 
 import typings.formatjsIcuMessageformatParser.typesMod.SKELETON_TYPE.dateTime
 import typings.formatjsIcuMessageformatParser.typesMod.SKELETON_TYPE.number
-import typings.formatjsIcuSkeletonParser.formatjsIcuSkeletonParserMod.NumberSkeletonToken
+import typings.formatjsIcuSkeletonParser.numberMod.NumberSkeletonToken
 import typings.std.Intl.DateTimeFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

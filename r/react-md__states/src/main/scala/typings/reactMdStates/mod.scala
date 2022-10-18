@@ -2,12 +2,12 @@ package typings.reactMdStates
 
 import typings.react.mod.Context
 import typings.react.mod.ReactElement
-import typings.reactMdStates.statesConfigMod.StatesConfigContextType
-import typings.reactMdStates.statesConfigMod.StatesConfigProps
-import typings.reactMdStates.useInteractionStatesMod.InteractionStatesOptions
-import typings.reactMdStates.useInteractionStatesMod.ReturnValue
-import typings.reactMdTransition.typesMod.CSSTransitionClassNames
-import typings.reactMdTransition.typesMod.TransitionTimeout
+import typings.reactMdStates.typesStatesConfigMod.StatesConfigContextType
+import typings.reactMdStates.typesStatesConfigMod.StatesConfigProps
+import typings.reactMdStates.typesUseInteractionStatesMod.InteractionStatesOptions
+import typings.reactMdStates.typesUseInteractionStatesMod.ReturnValue
+import typings.reactMdTransition.typesTypesMod.CSSTransitionClassNames
+import typings.reactMdTransition.typesTypesMod.TransitionTimeout
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

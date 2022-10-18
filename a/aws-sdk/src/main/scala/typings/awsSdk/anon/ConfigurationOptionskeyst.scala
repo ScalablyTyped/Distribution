@@ -6,15 +6,15 @@ import typings.awsSdk.awsSdkStrings.regional_
 import typings.awsSdk.awsSdkStrings.v2_
 import typings.awsSdk.awsSdkStrings.v3
 import typings.awsSdk.awsSdkStrings.v4
-import typings.awsSdk.configBaseMod.HTTPOptions
-import typings.awsSdk.configBaseMod.Logger
-import typings.awsSdk.configBaseMod.ParamValidation
-import typings.awsSdk.configBaseMod.RetryDelayOptions
-import typings.awsSdk.credentialProviderChainMod.CredentialProviderChain
-import typings.awsSdk.credentialsMod.Credentials
-import typings.awsSdk.credentialsMod.CredentialsOptions
-import typings.awsSdk.tokenMod.Token
-import typings.awsSdk.tokenProviderChainMod.TokenProviderChain
+import typings.awsSdk.libConfigBaseMod.HTTPOptions
+import typings.awsSdk.libConfigBaseMod.Logger
+import typings.awsSdk.libConfigBaseMod.ParamValidation
+import typings.awsSdk.libConfigBaseMod.RetryDelayOptions
+import typings.awsSdk.libCredentialsCredentialProviderChainMod.CredentialProviderChain
+import typings.awsSdk.libCredentialsMod.Credentials
+import typings.awsSdk.libCredentialsMod.CredentialsOptions
+import typings.awsSdk.libTokenMod.Token
+import typings.awsSdk.libTokenTokenProviderChainMod.TokenProviderChain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

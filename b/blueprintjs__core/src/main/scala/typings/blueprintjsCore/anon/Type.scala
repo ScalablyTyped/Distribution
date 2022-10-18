@@ -2,7 +2,7 @@ package typings.blueprintjsCore.anon
 
 import typings.blueprintjsCore.blueprintjsCoreStrings.CLOSE_DIALOG
 import typings.blueprintjsCore.blueprintjsCoreStrings.OPEN_DIALOG
-import typings.blueprintjsCore.hotkeysProviderMod.HotkeysAction
+import typings.blueprintjsCore.libEsmContextHotkeysHotkeysProviderMod.HotkeysAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

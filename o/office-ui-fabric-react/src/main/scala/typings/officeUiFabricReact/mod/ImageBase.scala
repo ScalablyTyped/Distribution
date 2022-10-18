@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.ShouldFadeIn
-import typings.officeUiFabricReact.imageTypesMod.IImageProps
+import typings.officeUiFabricReact.libComponentsImageImageDottypesMod.IImageProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

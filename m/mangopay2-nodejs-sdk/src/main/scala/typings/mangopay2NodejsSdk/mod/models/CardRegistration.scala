@@ -1,10 +1,10 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.cardMod.card.CardStatus
-import typings.mangopay2NodejsSdk.cardRegistrationMod.cardRegistration.CardRegistrationData
-import typings.mangopay2NodejsSdk.cardRegistrationMod.cardRegistration.CreateCardRegistration
-import typings.mangopay2NodejsSdk.cardRegistrationMod.cardRegistration.UpdateCardRegistration
-import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
+import typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardStatus
+import typings.mangopay2NodejsSdk.typingsModelsCardRegistrationMod.cardRegistration.CardRegistrationData
+import typings.mangopay2NodejsSdk.typingsModelsCardRegistrationMod.cardRegistration.CreateCardRegistration
+import typings.mangopay2NodejsSdk.typingsModelsCardRegistrationMod.cardRegistration.UpdateCardRegistration
+import typings.mangopay2NodejsSdk.typingsTypesMod.CurrencyISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ open class CardRegistration protected ()
     * The type of card
     */
   /* CompleteClass */
-  var CardType: typings.mangopay2NodejsSdk.cardMod.card.CardType = js.native
+  var CardType: typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardType = js.native
   
   /* CompleteClass */
   var CreationDate: Double = js.native

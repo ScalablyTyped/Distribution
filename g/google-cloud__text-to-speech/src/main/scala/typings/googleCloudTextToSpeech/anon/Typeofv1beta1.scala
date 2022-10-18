@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Typeofv1beta1 extends StObject {
   
-  var TextToSpeechClient: TypeofTextToSpeechClientInstantiable
+  var TextToSpeechClient: TypeofTextToSpeechClient
 }
 object Typeofv1beta1 {
   
-  inline def apply(TextToSpeechClient: TypeofTextToSpeechClientInstantiable): Typeofv1beta1 = {
+  inline def apply(TextToSpeechClient: TypeofTextToSpeechClient): Typeofv1beta1 = {
     val __obj = js.Dynamic.literal(TextToSpeechClient = TextToSpeechClient.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofv1beta1]
   }
   
   extension [Self <: Typeofv1beta1](x: Self) {
     
-    inline def setTextToSpeechClient(value: TypeofTextToSpeechClientInstantiable): Self = StObject.set(x, "TextToSpeechClient", value.asInstanceOf[js.Any])
+    inline def setTextToSpeechClient(value: TypeofTextToSpeechClient): Self = StObject.set(x, "TextToSpeechClient", value.asInstanceOf[js.Any])
   }
 }

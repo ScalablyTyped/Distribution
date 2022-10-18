@@ -1,8 +1,8 @@
 package typings.poseCore
 
-import typings.poseCore.typesMod.PoseFactoryConfig
-import typings.poseCore.typesMod.Poser
-import typings.poseCore.typesMod.PoserConfig
+import typings.poseCore.libTypesMod.PoseFactoryConfig
+import typings.poseCore.libTypesMod.Poser
+import typings.poseCore.libTypesMod.PoserConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

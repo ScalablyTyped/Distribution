@@ -1,8 +1,8 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.eosMod.EosTxAction
-import typings.trezorConnect.protobufMod.EosActionBuyRamBytes
-import typings.trezorConnect.protobufMod.EosPermissionLevel
+import typings.trezorConnect.libTypescriptNetworksEosMod.EosTxAction
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.EosActionBuyRamBytes
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.EosPermissionLevel
 import typings.trezorConnect.trezorConnectStrings.buyrambytes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

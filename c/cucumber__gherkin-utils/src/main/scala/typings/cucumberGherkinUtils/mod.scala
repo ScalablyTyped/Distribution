@@ -1,10 +1,10 @@
 package typings.cucumberGherkinUtils
 
-import typings.cucumberGherkinUtils.gherkinDocumentHandlersMod.GherkinDocumentHandlers
-import typings.cucumberGherkinUtils.gherkinDocumentWalkerMod.IFilters
-import typings.cucumberGherkinUtils.gherkinDocumentWalkerMod.IHandlers
-import typings.cucumberGherkinUtils.gherkinDocumentWalkerMod.default
-import typings.cucumberGherkinUtils.prettyMod.Syntax
+import typings.cucumberGherkinUtils.distSrcGherkinDocumentHandlersMod.GherkinDocumentHandlers
+import typings.cucumberGherkinUtils.distSrcGherkinDocumentWalkerMod.IFilters
+import typings.cucumberGherkinUtils.distSrcGherkinDocumentWalkerMod.IHandlers
+import typings.cucumberGherkinUtils.distSrcGherkinDocumentWalkerMod.default
+import typings.cucumberGherkinUtils.distSrcPrettyMod.Syntax
 import typings.cucumberMessages.mod.GherkinDocument
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -28,7 +28,7 @@ object mod {
   @JSImport("@cucumber/gherkin-utils", "Query")
   @js.native
   open class Query ()
-    extends typings.cucumberGherkinUtils.queryMod.default
+    extends typings.cucumberGherkinUtils.distSrcQueryMod.default
   
   inline def pretty(gherkinDocument: GherkinDocument): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(gherkinDocument.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def pretty(gherkinDocument: GherkinDocument, syntax: Syntax): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(gherkinDocument.asInstanceOf[js.Any], syntax.asInstanceOf[js.Any])).asInstanceOf[String]

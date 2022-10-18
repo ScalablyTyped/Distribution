@@ -65,8 +65,7 @@ trait TableColumnLoadOptions extends StObject {
     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var valuesAsJson: js.UndefOr[Boolean] = js.undefined
   
@@ -76,8 +75,7 @@ trait TableColumnLoadOptions extends StObject {
     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var valuesAsJsonLocal: js.UndefOr[Boolean] = js.undefined
 }

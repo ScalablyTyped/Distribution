@@ -1,10 +1,10 @@
 package typings.yaml
 
-import typings.yaml.cstMod.TokenType_
-import typings.yaml.errorsMod.ErrorCode
-import typings.yaml.foldFlowLinesMod.FoldMode
-import typings.yaml.logMod.LogLevelId
-import typings.yaml.tagsMod.TagId
+import typings.yaml.distErrorsMod.ErrorCode
+import typings.yaml.distLogMod.LogLevelId
+import typings.yaml.distParseCstMod.TokenType_
+import typings.yaml.distSchemaTagsMod.TagId
+import typings.yaml.distStringifyFoldFlowLinesMod.FoldMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.importMetaResolve
 
-import typings.importMetaResolve.resolveMod.Format
-import typings.importMetaResolve.resolveMod.PackageType
+import typings.importMetaResolve.libResolveMod.Format
+import typings.importMetaResolve.libResolveMod.PackageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

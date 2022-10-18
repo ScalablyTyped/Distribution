@@ -4,17 +4,18 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/database/common.html#post--db
-// http://docs.couchdb.org/en/latest/api/document/common.html#put--db-docid
+/** Document insert response: 
+  * @see POST docs: {@link http://docs.couchdb.org/en/latest/api/database/common.html#post--db}
+  * @see PUT docs: {@link http://docs.couchdb.org/en/latest/api/document/common.html#put--db-docid} */
 trait DocumentInsertResponse extends StObject {
   
-  // Document ID
+  /** Document ID */
   var id: String
   
-  // Operation status
+  /** Operation status */
   var ok: Boolean
   
-  // Revision MVCC token
+  /** Revision MVCC token */
   var rev: String
 }
 object DocumentInsertResponse {

@@ -1,6 +1,6 @@
 package typings.imageQ.mod
 
-import typings.imageQ.pointContainerMod.PointContainer
+import typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

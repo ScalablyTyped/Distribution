@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Action")
 @js.native
 open class Action protected ()
-  extends typings.babylonjs.legacyMod.Action {
+  extends typings.babylonjs.legacyLegacyMod.Action {
   /**
     * Creates a new Action
     * @param triggerOptions the trigger, with or without parameters, for the action
@@ -19,7 +19,7 @@ open class Action protected ()
   def this(
     /** the trigger, with or without parameters, for the action */
   triggerOptions: Any,
-    condition: typings.babylonjs.conditionMod.Condition
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
 }
 /* static members */

@@ -1,8 +1,8 @@
 package typings.expressCluster
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.WritableStream
 import typings.node.clusterMod.Worker
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +24,7 @@ object mod extends Shortcut {
     
     var count: js.UndefOr[Double] = js.undefined
     
-    var outputStream: js.UndefOr[WritableStream[Any]] = js.undefined
+    var outputStream: js.UndefOr[WritableStream] = js.undefined
     
     var respawn: js.UndefOr[Boolean] = js.undefined
     
@@ -45,7 +45,7 @@ object mod extends Shortcut {
       
       inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      inline def setOutputStream(value: WritableStream[Any]): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
+      inline def setOutputStream(value: WritableStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
       
       inline def setOutputStreamUndefined: Self = StObject.set(x, "outputStream", js.undefined)
       

@@ -3,10 +3,10 @@ package typings.sinclairTypebox
 import typings.sinclairTypebox.conditionalConditionalMod.TExclude
 import typings.sinclairTypebox.conditionalConditionalMod.TExtends
 import typings.sinclairTypebox.conditionalConditionalMod.TExtract
+import typings.sinclairTypebox.conditionalStructuralMod.StructuralResult
 import typings.sinclairTypebox.mod.SchemaOptions
 import typings.sinclairTypebox.mod.TSchema
 import typings.sinclairTypebox.mod.TUnion
-import typings.sinclairTypebox.structuralMod.StructuralResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,12 +46,12 @@ object conditionalMod {
   object StructuralResult extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sinclairTypebox.structuralMod.StructuralResult & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sinclairTypebox.conditionalStructuralMod.StructuralResult & Double] = js.native
     
-    /* 2 */ val False: typings.sinclairTypebox.structuralMod.StructuralResult.False & Double = js.native
+    /* 2 */ val False: typings.sinclairTypebox.conditionalStructuralMod.StructuralResult.False & Double = js.native
     
-    /* 1 */ val True: typings.sinclairTypebox.structuralMod.StructuralResult.True & Double = js.native
+    /* 1 */ val True: typings.sinclairTypebox.conditionalStructuralMod.StructuralResult.True & Double = js.native
     
-    /* 0 */ val Union: typings.sinclairTypebox.structuralMod.StructuralResult.Union & Double = js.native
+    /* 0 */ val Union: typings.sinclairTypebox.conditionalStructuralMod.StructuralResult.Union & Double = js.native
   }
 }

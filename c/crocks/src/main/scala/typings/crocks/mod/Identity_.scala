@@ -10,7 +10,7 @@ object Identity_ {
   @JSImport("crocks", "Identity.default")
   @js.native
   open class default ()
-    extends typings.crocks.crocksIdentityMod.default
+    extends typings.crocks.identityMod.default
   object default {
     
     inline def apply(`val`: scala.Any): Identity = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[Identity]

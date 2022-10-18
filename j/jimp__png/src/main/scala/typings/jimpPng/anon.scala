@@ -1,9 +1,9 @@
 package typings.jimpPng
 
-import typings.jimpCore.etcMod.Bitmap
-import typings.jimpCore.etcMod.DecoderFn
-import typings.jimpCore.etcMod.EncoderFn
-import typings.jimpCore.etcMod.Image
+import typings.jimpCore.typesEtcMod.Bitmap
+import typings.jimpCore.typesEtcMod.DecoderFn
+import typings.jimpCore.typesEtcMod.EncoderFn
+import typings.jimpCore.typesEtcMod.Image
 import typings.jimpPng.jimpPngBooleans.`true`
 import typings.jimpPng.jimpPngInts.`-1`
 import typings.jimpPng.jimpPngInts.`1`

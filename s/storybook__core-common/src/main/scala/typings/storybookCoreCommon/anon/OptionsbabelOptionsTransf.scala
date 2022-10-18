@@ -5,17 +5,17 @@ import typings.babelCore.mod.TransformOptions
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.std.Record
-import typings.storybookCoreCommon.fileCacheMod.FileSystemCache
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.LoadedPreset
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.PackageJson
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.Presets
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.Ref
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.ReleaseNotesData
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.VersionCheck
+import typings.storybookCoreCommon.distTs3Dot9UtilsFileCacheMod.FileSystemCache
 import typings.storybookCoreCommon.storybookCoreCommonStrings.DEVELOPMENT
 import typings.storybookCoreCommon.storybookCoreCommonStrings.PRODUCTION
-import typings.storybookCoreCommon.typesMod.LoadedPreset
-import typings.storybookCoreCommon.typesMod.PackageJson
-import typings.storybookCoreCommon.typesMod.Presets
-import typings.storybookCoreCommon.typesMod.Ref
-import typings.storybookCoreCommon.typesMod.ReleaseNotesData
-import typings.storybookCoreCommon.typesMod.VersionCheck
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

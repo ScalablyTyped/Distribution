@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneContext
-import typings.officeUiFabricReact.stickyTypesMod.IStickyProps
+import typings.officeUiFabricReact.libComponentsScrollablePaneScrollablePaneDottypesMod.IScrollablePaneContext
+import typings.officeUiFabricReact.libComponentsStickyStickyDottypesMod.IStickyProps
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ object libStickyMod {
   @JSImport("office-ui-fabric-react/lib/Sticky", "Sticky")
   @js.native
   open class Sticky protected ()
-    extends typings.officeUiFabricReact.stickyMod.Sticky {
+    extends typings.officeUiFabricReact.libComponentsStickyMod.Sticky {
     def this(props: IStickyProps) = this()
   }
   /* static members */
@@ -38,12 +38,14 @@ object libStickyMod {
   object StickyPositionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.stickyTypesMod.StickyPositionType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsStickyStickyDottypesMod.StickyPositionType & Double
+      ] = js.native
     
-    /* 0 */ val Both: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Both & Double = js.native
+    /* 0 */ val Both: typings.officeUiFabricReact.libComponentsStickyStickyDottypesMod.StickyPositionType.Both & Double = js.native
     
-    /* 2 */ val Footer: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Footer & Double = js.native
+    /* 2 */ val Footer: typings.officeUiFabricReact.libComponentsStickyStickyDottypesMod.StickyPositionType.Footer & Double = js.native
     
-    /* 1 */ val Header: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Header & Double = js.native
+    /* 1 */ val Header: typings.officeUiFabricReact.libComponentsStickyStickyDottypesMod.StickyPositionType.Header & Double = js.native
   }
 }

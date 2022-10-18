@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "BoxGeometry")
 @js.native
 open class BoxGeometry protected ()
-  extends typings.three.threeMod.BoxGeometry {
+  extends typings.three.srcThreeMod.BoxGeometry {
   /**
     * @param [width=1] — Width of the sides on the X axis.
     * @param [height=1] — Height of the sides on the Y axis.
@@ -32,5 +32,5 @@ object BoxGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.boxGeometryMod.BoxGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.boxGeometryMod.BoxGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesBoxGeometryMod.BoxGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesBoxGeometryMod.BoxGeometry]
 }

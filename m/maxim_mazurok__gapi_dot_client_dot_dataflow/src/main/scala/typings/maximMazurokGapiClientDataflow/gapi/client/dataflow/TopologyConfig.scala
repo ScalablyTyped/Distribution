@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,7 @@ trait TopologyConfig extends StObject {
   
   /** Maps user stage names to stable computation names. */
   var userStageToComputationNameMap: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.TopologyConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object TopologyConfig {
@@ -56,9 +53,7 @@ object TopologyConfig {
     inline def setPersistentStateVersionUndefined: Self = StObject.set(x, "persistentStateVersion", js.undefined)
     
     inline def setUserStageToComputationNameMap(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.TopologyConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "userStageToComputationNameMap", value.asInstanceOf[js.Any])
     
     inline def setUserStageToComputationNameMapUndefined: Self = StObject.set(x, "userStageToComputationNameMap", js.undefined)

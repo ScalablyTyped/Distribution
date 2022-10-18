@@ -5,7 +5,7 @@ import typings.react.mod.ValidationMap
 import typings.terraSpacer.anon.PartialSpacerProps
 import typings.terraSpacer.anon.Sizes
 import typings.terraSpacer.anon.WeakValidationMapSpacerPr
-import typings.terraSpacer.spacerMod.SpacerProps
+import typings.terraSpacer.libSpacerMod.SpacerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

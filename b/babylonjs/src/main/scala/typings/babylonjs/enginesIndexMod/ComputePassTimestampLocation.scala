@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ComputePassTimestampLocation extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.ComputePassTimestampLocation & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ComputePassTimestampLocation & String
+  ] = js.native
   
-  /* "beginning" */ val Beginning: typings.babylonjs.webgpuConstantsMod.ComputePassTimestampLocation.Beginning & String = js.native
+  /* "beginning" */ val Beginning: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ComputePassTimestampLocation.Beginning & String = js.native
   
-  /* "end" */ val End: typings.babylonjs.webgpuConstantsMod.ComputePassTimestampLocation.End & String = js.native
+  /* "end" */ val End: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ComputePassTimestampLocation.End & String = js.native
 }

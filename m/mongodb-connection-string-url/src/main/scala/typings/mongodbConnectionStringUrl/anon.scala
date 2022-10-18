@@ -1,9 +1,9 @@
 package typings.mongodbConnectionStringUrl
 
-import typings.mongodbConnectionStringUrl.mod.ConnectionString
-import typings.mongodbConnectionStringUrl.mod.ConnectionStringParsingOptions
+import typings.mongodbConnectionStringUrl.libMod.ConnectionString
+import typings.mongodbConnectionStringUrl.libMod.ConnectionStringParsingOptions
+import typings.mongodbConnectionStringUrl.libRedactMod.ConnectionStringRedactionOptions
 import typings.mongodbConnectionStringUrl.mongodbConnectionStringUrlStrings.URLSearchParams
-import typings.mongodbConnectionStringUrl.redactMod.ConnectionStringRedactionOptions
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HintProps extends StObject {
   
   // default: {}
-  var align: js.UndefOr[Vertical] = js.undefined
+  var align: js.UndefOr[Horizontal] = js.undefined
   
   var format: js.UndefOr[js.Function1[/* x */ Any, js.Array[Title]]] = js.undefined
   
@@ -48,7 +48,7 @@ object HintProps {
   
   extension [Self <: HintProps](x: Self) {
     
-    inline def setAlign(value: Vertical): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: Horizontal): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
@@ -56,7 +56,7 @@ object HintProps {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setGetAlignStyle(value: (/* align */ Horizontal, /* x */ Double, /* y */ Double) => CSSProperties): Self = StObject.set(x, "getAlignStyle", js.Any.fromFunction3(value))
+    inline def setGetAlignStyle(value: (/* align */ Vertical, /* x */ Double, /* y */ Double) => CSSProperties): Self = StObject.set(x, "getAlignStyle", js.Any.fromFunction3(value))
     
     inline def setGetAlignStyleUndefined: Self = StObject.set(x, "getAlignStyle", js.undefined)
     

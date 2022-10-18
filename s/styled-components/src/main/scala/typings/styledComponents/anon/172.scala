@@ -1,25 +1,25 @@
 package typings.styledComponents.anon
 
-import typings.styledComponents.distTypesMod.StyledTarget
+import typings.styledComponents.nativeDistTypesMod.IStyledComponent
+import typings.styledComponents.nativeDistTypesMod.Interpolation
+import typings.styledComponents.nativeDistTypesMod.StyledOptions
+import typings.styledComponents.nativeDistTypesMod.Styles
+import typings.styledComponents.nativeDistTypesMod.WebTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `172`[ActualComponent /* <: StyledTarget */] extends StObject {
+@js.native
+trait `172`[Target /* <: WebTarget */] extends StObject {
   
-  var as: js.UndefOr[ActualComponent] = js.undefined
-}
-object `172` {
+  def apply[Props, Statics](initialStyles: Styles[Props], interpolations: Interpolation[Props]*): (IStyledComponent[Target, Props, js.Object]) & Statics = js.native
   
-  inline def apply[ActualComponent /* <: StyledTarget */](): `172`[ActualComponent] = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`172`[ActualComponent]]
-  }
+  def attrs(attrs: typings.styledComponents.nativeDistTypesMod.Attrs[Any]): Any = js.native
   
-  extension [Self <: `172`[?], ActualComponent /* <: StyledTarget */](x: Self & `172`[ActualComponent]) {
-    
-    inline def setAs(value: ActualComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
-    
-    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
-  }
+  def withConfig(
+    config: StyledOptions[
+      Any, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Props */ Any
+    ]
+  ): Any = js.native
 }

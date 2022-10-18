@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "MoveItemsAction")
 @js.native
 open class MoveItemsAction protected ()
-  extends typings.stormReactDiagrams.moveItemsActionMod.MoveItemsAction {
+  extends typings.stormReactDiagrams.distSrcActionsMoveItemsActionMod.MoveItemsAction {
   def this(
     mouseX: Double,
     mouseY: Double,
-    diagramEngine: typings.stormReactDiagrams.diagramEngineMod.DiagramEngine
+    diagramEngine: typings.stormReactDiagrams.distSrcDiagramEngineMod.DiagramEngine
   ) = this()
 }

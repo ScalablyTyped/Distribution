@@ -10,6 +10,7 @@ import typings.fsMock.anon.Flags
 import typings.fsMock.anon.Interval
 import typings.fsMock.anon.Mode
 import typings.fsMock.anon.Persistent
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.FSWatcher
 import typings.node.fsMod.ReadStream
@@ -34,61 +35,25 @@ object mod {
   trait FS extends StObject {
     
     def appendFile(filename: String, data: Any): Unit = js.native
-    def appendFile(
-      filename: String,
-      data: Any,
-      callback: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          Unit
-        ]
-    ): Unit = js.native
+    def appendFile(filename: String, data: Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
     def appendFile(filename: String, data: Any, options: EncodingFlag): Unit = js.native
     def appendFile(
       filename: String,
       data: Any,
       options: EncodingFlag,
-      callback: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          Unit
-        ]
+      callback: js.Function1[/* err */ ErrnoException, Unit]
     ): Unit = js.native
     def appendFile(filename: String, data: Any, options: Mode): Unit = js.native
-    def appendFile(
-      filename: String,
-      data: Any,
-      options: Mode,
-      callback: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          Unit
-        ]
-    ): Unit = js.native
+    def appendFile(filename: String, data: Any, options: Mode, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
     
     def appendFileSync(filename: String, data: Any): Unit = js.native
     def appendFileSync(filename: String, data: Any, options: EncodingFlag): Unit = js.native
     def appendFileSync(filename: String, data: Any, options: Mode): Unit = js.native
     
     def chmod(path: String, mode: String): Unit = js.native
-    def chmod(
-      path: String,
-      mode: String,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def chmod(path: String, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     def chmod(path: String, mode: Double): Unit = js.native
-    def chmod(
-      path: String,
-      mode: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def chmod(path: String, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     
     def chmodSync(path: String, mode: String): Unit = js.native
     def chmodSync(path: String, mode: Double): Unit = js.native
@@ -98,26 +63,13 @@ object mod {
       path: String,
       uid: Double,
       gid: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
+      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
     ): Unit = js.native
     
     def chownSync(path: String, uid: Double, gid: Double): Unit = js.native
     
     def close(fd: Double): Unit = js.native
-    def close(
-      fd: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def close(fd: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     
     def closeSync(fd: Double): Unit = js.native
     
@@ -134,27 +86,9 @@ object mod {
     def existsSync(path: String): Boolean = js.native
     
     def fchmod(fd: Double, mode: String): Unit = js.native
-    def fchmod(
-      fd: Double,
-      mode: String,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def fchmod(fd: Double, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     def fchmod(fd: Double, mode: Double): Unit = js.native
-    def fchmod(
-      fd: Double,
-      mode: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def fchmod(fd: Double, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     
     def fchmodSync(fd: Double, mode: String): Unit = js.native
     def fchmodSync(fd: Double, mode: Double): Unit = js.native
@@ -164,62 +98,25 @@ object mod {
       fd: Double,
       uid: Double,
       gid: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
+      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
     ): Unit = js.native
     
     def fchownSync(fd: Double, uid: Double, gid: Double): Unit = js.native
     
     def fstat(fd: Double): Unit = js.native
-    def fstat(
-      fd: Double,
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* stats */ Stats, 
-          Any
-        ]
-    ): Unit = js.native
+    def fstat(fd: Double, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, Any]): Unit = js.native
     
     def fstatSync(fd: Double): Stats = js.native
     
     def fsync(fd: Double): Unit = js.native
-    def fsync(
-      fd: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def fsync(fd: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     
     def fsyncSync(fd: Double): Unit = js.native
     
     def ftruncate(fd: Double): Unit = js.native
-    def ftruncate(
-      fd: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def ftruncate(fd: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     def ftruncate(fd: Double, len: Double): Unit = js.native
-    def ftruncate(
-      fd: Double,
-      len: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def ftruncate(fd: Double, len: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     
     def ftruncateSync(fd: Double): Unit = js.native
     def ftruncateSync(fd: Double, len: Double): Unit = js.native
@@ -229,51 +126,23 @@ object mod {
       fd: Double,
       atime: js.Date,
       mtime: js.Date,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
+      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
     ): Unit = js.native
     def futimes(fd: Double, atime: Double, mtime: Double): Unit = js.native
     def futimes(
       fd: Double,
       atime: Double,
       mtime: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
+      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
     ): Unit = js.native
     
     def futimesSync(fd: Double, atime: js.Date, mtime: js.Date): Unit = js.native
     def futimesSync(fd: Double, atime: Double, mtime: Double): Unit = js.native
     
     def lchmod(path: String, mode: String): Unit = js.native
-    def lchmod(
-      path: String,
-      mode: String,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def lchmod(path: String, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     def lchmod(path: String, mode: Double): Unit = js.native
-    def lchmod(
-      path: String,
-      mode: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def lchmod(path: String, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     
     def lchmodSync(path: String, mode: String): Unit = js.native
     def lchmodSync(path: String, mode: Double): Unit = js.native
@@ -283,12 +152,7 @@ object mod {
       path: String,
       uid: Double,
       gid: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
+      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
     ): Unit = js.native
     
     def lchownSync(path: String, uid: Double, gid: Double): Unit = js.native
@@ -297,60 +161,22 @@ object mod {
     def link(
       srcpath: String,
       dstpath: String,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
+      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
     ): Unit = js.native
     
     def linkSync(srcpath: String, dstpath: String): Unit = js.native
     
     def lstat(path: String): Unit = js.native
-    def lstat(
-      path: String,
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* stats */ Stats, 
-          Any
-        ]
-    ): Unit = js.native
+    def lstat(path: String, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, Any]): Unit = js.native
     
     def lstatSync(path: String): Stats = js.native
     
     def mkdir(path: String): Unit = js.native
-    def mkdir(
-      path: String,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def mkdir(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     def mkdir(path: String, mode: String): Unit = js.native
-    def mkdir(
-      path: String,
-      mode: String,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def mkdir(path: String, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     def mkdir(path: String, mode: Double): Unit = js.native
-    def mkdir(
-      path: String,
-      mode: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def mkdir(path: String, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     
     def mkdirSync(path: String): Unit = js.native
     def mkdirSync(path: String, mode: String): Unit = js.native
@@ -360,33 +186,21 @@ object mod {
     def open(
       path: String,
       flags: String,
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* fd */ Double, 
-          Any
-        ]
+      callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, Any]
     ): Unit = js.native
     def open(path: String, flags: String, mode: String): Unit = js.native
     def open(
       path: String,
       flags: String,
       mode: String,
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* fd */ Double, 
-          Any
-        ]
+      callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, Any]
     ): Unit = js.native
     def open(path: String, flags: String, mode: Double): Unit = js.native
     def open(
       path: String,
       flags: String,
       mode: Double,
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* fd */ Double, 
-          Any
-        ]
+      callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, Any]
     ): Unit = js.native
     
     def openSync(path: String, flags: String): Double = js.native
@@ -400,48 +214,24 @@ object mod {
       offset: Double,
       length: Double,
       position: Double,
-      callback: js.Function3[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* bytesRead */ Double, 
-          /* buffer */ Buffer, 
-          Unit
-        ]
+      callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Buffer, Unit]
     ): Unit = js.native
     
-    def readFile(
-      filename: String,
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* data */ Buffer, 
-          Unit
-        ]
-    ): Unit = js.native
+    def readFile(filename: String, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = js.native
     def readFile(
       filename: String,
       encoding: String,
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* data */ String, 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
     ): Unit = js.native
     def readFile(
       filename: String,
       options: Encoding,
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* data */ String, 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
     ): Unit = js.native
     def readFile(
       filename: String,
       options: Flag,
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* data */ Buffer, 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
     ): Unit = js.native
     
     def readFileSync(filename: String): Buffer = js.native
@@ -452,26 +242,12 @@ object mod {
     def readSync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
     
     def readdir(path: String): Unit = js.native
-    def readdir(
-      path: String,
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* files */ js.Array[String], 
-          Unit
-        ]
-    ): Unit = js.native
+    def readdir(path: String, callback: js.Function2[/* err */ ErrnoException, /* files */ js.Array[String], Unit]): Unit = js.native
     
     def readdirSync(path: String): js.Array[String] = js.native
     
     def readlink(path: String): Unit = js.native
-    def readlink(
-      path: String,
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* linkString */ String, 
-          Any
-        ]
-    ): Unit = js.native
+    def readlink(path: String, callback: js.Function2[/* err */ ErrnoException, /* linkString */ String, Any]): Unit = js.native
     
     def readlinkSync(path: String): String = js.native
     
@@ -479,20 +255,9 @@ object mod {
     def realpath(
       path: String,
       cache: StringDictionary[String],
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* resolvedPath */ String, 
-          Any
-        ]
+      callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, Any]
     ): Unit = js.native
-    def realpath(
-      path: String,
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* resolvedPath */ String, 
-          Any
-        ]
-    ): Unit = js.native
+    def realpath(path: String, callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, Any]): Unit = js.native
     
     def realpathSync(path: String): String = js.native
     def realpathSync(path: String, cache: StringDictionary[String]): String = js.native
@@ -501,38 +266,18 @@ object mod {
     def rename(
       oldPath: String,
       newPath: String,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
+      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
     ): Unit = js.native
     
     def renameSync(oldPath: String, newPath: String): Unit = js.native
     
     def rmdir(path: String): Unit = js.native
-    def rmdir(
-      path: String,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def rmdir(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     
     def rmdirSync(path: String): Unit = js.native
     
     def stat(path: String): Unit = js.native
-    def stat(
-      path: String,
-      callback: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* stats */ Stats, 
-          Any
-        ]
-    ): Unit = js.native
+    def stat(path: String, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, Any]): Unit = js.native
     
     def statSync(path: String): Stats = js.native
     
@@ -542,63 +287,28 @@ object mod {
       srcpath: String,
       dstpath: String,
       `type`: String,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
+      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
     ): Unit = js.native
     def symlink(
       srcpath: String,
       dstpath: String,
       `type`: Unit,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
+      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
     ): Unit = js.native
     
     def symlinkSync(srcpath: String, dstpath: String): Unit = js.native
     def symlinkSync(srcpath: String, dstpath: String, `type`: String): Unit = js.native
     
     def truncate(path: String): Unit = js.native
-    def truncate(
-      path: String,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def truncate(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     def truncate(path: String, len: Double): Unit = js.native
-    def truncate(
-      path: String,
-      len: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def truncate(path: String, len: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     
     def truncateSync(path: String): Unit = js.native
     def truncateSync(path: String, len: Double): Unit = js.native
     
     def unlink(path: String): Unit = js.native
-    def unlink(
-      path: String,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
-    ): Unit = js.native
+    def unlink(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
     
     def unlinkSync(path: String): Unit = js.native
     
@@ -610,24 +320,14 @@ object mod {
       path: String,
       atime: js.Date,
       mtime: js.Date,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
+      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
     ): Unit = js.native
     def utimes(path: String, atime: Double, mtime: Double): Unit = js.native
     def utimes(
       path: String,
       atime: Double,
       mtime: Double,
-      callback: js.Function1[
-          /* err */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-          ], 
-          Unit
-        ]
+      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
     ): Unit = js.native
     
     def utimesSync(path: String, atime: js.Date, mtime: js.Date): Unit = js.native
@@ -656,43 +356,20 @@ object mod {
       offset: Double,
       length: Double,
       position: Double,
-      callback: js.Function3[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          /* written */ Double, 
-          /* buffer */ Buffer, 
-          Unit
-        ]
+      callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Buffer, Unit]
     ): Unit = js.native
     
     def writeFile(filename: String, data: Any): Unit = js.native
-    def writeFile(
-      filename: String,
-      data: Any,
-      callback: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          Unit
-        ]
-    ): Unit = js.native
+    def writeFile(filename: String, data: Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
     def writeFile(filename: String, data: Any, options: EncodingFlag): Unit = js.native
     def writeFile(
       filename: String,
       data: Any,
       options: EncodingFlag,
-      callback: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          Unit
-        ]
+      callback: js.Function1[/* err */ ErrnoException, Unit]
     ): Unit = js.native
     def writeFile(filename: String, data: Any, options: Mode): Unit = js.native
-    def writeFile(
-      filename: String,
-      data: Any,
-      options: Mode,
-      callback: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-          Unit
-        ]
-    ): Unit = js.native
+    def writeFile(filename: String, data: Any, options: Mode, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
     
     def writeFileSync(filename: String, data: Any): Unit = js.native
     def writeFileSync(filename: String, data: Any, options: EncodingFlag): Unit = js.native

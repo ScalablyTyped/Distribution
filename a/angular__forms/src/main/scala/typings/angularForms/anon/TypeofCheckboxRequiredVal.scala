@@ -16,7 +16,7 @@ trait TypeofCheckboxRequiredVal
   
   var ɵdir: ɵɵDirectiveDeclaration[
     CheckboxRequiredValidator, 
-    String, 
+    /* input[type=checkbox][required][formControlName],input[type=checkbox][required][formControl],input[type=checkbox][required][ngModel] */ String, 
     scala.Nothing, 
     js.Object, 
     js.Object, 

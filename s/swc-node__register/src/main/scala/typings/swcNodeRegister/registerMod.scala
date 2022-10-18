@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object registerMod {
   
-  @JSImport("@swc-node/register/lib/register", JSImport.Namespace)
+  @JSImport("@swc-node/register/register", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

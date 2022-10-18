@@ -1,6 +1,6 @@
 package typings.angularMeteor
 
-import typings.angularMeteor.mod.meteor.IScope
+import typings.angularMeteor.angularMod.meteor.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -11,11 +11,11 @@ import typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.SIZE
 import typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.TOTAL
 import typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.UPDATED_NEW
 import typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.UPDATED_OLD
-import typings.awsSdkClientDynamodbNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbNode.typesAttributeValueMod.AttributeValue
 import typings.awsSdkClientDynamodbNode.typesAttributeValueUpdateMod.AttributeValueUpdate
 import typings.awsSdkClientDynamodbNode.typesExpectedAttributeValueMod.ExpectedAttributeValue
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientDynamodbNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Transposea extends StObject {
   
-  var N: I
+  var N: Unit
   
-  var T: Type
+  var T: Unit
   
-  var Tidx: Type
+  var Tidx: Unit
   
-  var dtype: Unit
+  var dtype: Type
   
-  var shape: Unit
+  var shape: Shape
   
   var transpose_a: Unit
   
@@ -25,11 +25,11 @@ trait Transposea extends StObject {
 object Transposea {
   
   inline def apply(
-    N: I,
-    T: Type,
-    Tidx: Type,
-    dtype: Unit,
-    shape: Unit,
+    N: Unit,
+    T: Unit,
+    Tidx: Unit,
+    dtype: Type,
+    shape: Shape,
     transpose_a: Unit,
     transpose_b: Unit,
     value: Unit
@@ -40,15 +40,15 @@ object Transposea {
   
   extension [Self <: Transposea](x: Self) {
     
-    inline def setDtype(value: Unit): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+    inline def setDtype(value: Type): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     
-    inline def setN(value: I): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+    inline def setN(value: Unit): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
-    inline def setShape(value: Unit): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    inline def setT(value: Type): Self = StObject.set(x, "T", value.asInstanceOf[js.Any])
+    inline def setT(value: Unit): Self = StObject.set(x, "T", value.asInstanceOf[js.Any])
     
-    inline def setTidx(value: Type): Self = StObject.set(x, "Tidx", value.asInstanceOf[js.Any])
+    inline def setTidx(value: Unit): Self = StObject.set(x, "Tidx", value.asInstanceOf[js.Any])
     
     inline def setTranspose_a(value: Unit): Self = StObject.set(x, "transpose_a", value.asInstanceOf[js.Any])
     

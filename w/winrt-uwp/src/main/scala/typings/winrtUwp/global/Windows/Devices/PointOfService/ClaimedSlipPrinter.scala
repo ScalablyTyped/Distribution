@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a slip printer station that has been claimed for use. */
-@JSGlobal("Windows.Devices.PointOfService.ClaimedSlipPrinter")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.ClaimedSlipPrinter")
 @js.native
-abstract class ClaimedSlipPrinter ()
+open class ClaimedSlipPrinter ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.ClaimedSlipPrinter {
   

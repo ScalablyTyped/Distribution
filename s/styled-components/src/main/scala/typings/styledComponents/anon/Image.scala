@@ -6,7 +6,7 @@ import typings.reactNative.mod.ImageProps
 import typings.reactNative.mod.TextProps
 import typings.reactNative.mod.TouchableOpacityProps
 import typings.reactNative.mod.ViewProps
-import typings.styledComponents.constructorsConstructWithOptionsMod.NativeStyled
+import typings.styledComponents.nativeDistDistConstructorsConstructWithOptionsMod.NativeStyled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,6 @@
 package typings.loaderUtils
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.loaderUtils.loaderUtilsBooleans.`false`
 import typings.loaderUtils.loaderUtilsBooleans.`true`
 import typings.node.bufferMod.global.Buffer
@@ -141,7 +140,12 @@ object mod {
   
   type OptionObject = StringDictionary[Null | `false` | `true` | String]
   
-  type Readonly[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ P in keyof T ]: T[P]}
-    */ typings.loaderUtils.loaderUtilsStrings.Readonly & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * This translation is imprecise and ignores the effect of the type mapping. 
+    * TS definition: {{{
+    {readonly [ P in keyof T ]: T[P]}
+    }}}
+    */
+  type Readonly[T] = T
 }

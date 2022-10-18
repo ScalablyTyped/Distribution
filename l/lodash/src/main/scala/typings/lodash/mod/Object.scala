@@ -1,6 +1,5 @@
 package typings.lodash.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.lodash.lodashStrings.asc
 import typings.lodash.lodashStrings.desc
 import typings.std.Exclude
@@ -13,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Object[T]
   extends StObject
-     with LoDashImplicitWrapper[T]
-     with _ImpChain[T] {
+     with LoDashImplicitWrapper[T] {
   
   /**
     * @see _.assign
@@ -571,17 +569,13 @@ trait Object[T]
     * @see _.mapValues
     */
   def mapValues(iteratee: java.lang.String): Object[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: any}
-    */ typings.lodash.lodashStrings.Object & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: any} */ js.Any
   ] = js.native
   /**
     * @see _.mapValues
     */
   def mapValues(iteratee: js.Object): Object[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: boolean}
-    */ typings.lodash.lodashStrings.Object & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: boolean} */ js.Any
   ] = js.native
   /**
     * @see _.mapValues
@@ -592,9 +586,7 @@ trait Object[T]
       TResult
     ]) | (ObjectIterator[T, TResult])
   ): Object[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: TResult}
-    */ typings.lodash.lodashStrings.Object & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: TResult} */ js.Any
   ] = js.native
   /**
     * @see _.mapValues
@@ -724,22 +716,14 @@ trait Object[T]
     * @see _.pickBy
     */
   def pickBy(): Object[
-    PartialObject[T] | (NumericDictionary[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]) | (Dictionary[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ])
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Dictionary<unknown> ? lodash.lodash.Dictionary<T[keyof T]> : T extends lodash.lodash.NumericDictionary<unknown> ? lodash.lodash.NumericDictionary<T[keyof T]> : lodash.lodash.PartialObject<T> */ js.Any
   ] = js.native
   def pickBy(
     predicate: ValueKeyIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ): Object[
-    PartialObject[T] | (NumericDictionary[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]) | (Dictionary[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ])
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Dictionary<unknown> ? lodash.lodash.Dictionary<T[keyof T]> : T extends lodash.lodash.NumericDictionary<unknown> ? lodash.lodash.NumericDictionary<T[keyof T]> : lodash.lodash.PartialObject<T> */ js.Any
   ] = js.native
   /**
     * @see _.pickBy
@@ -749,7 +733,9 @@ trait Object[T]
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ]
-  ): Object[Dictionary[S] | NumericDictionary[S]] = js.native
+  ): Object[
+    /* import warning: importer.ImportType#apply Failed type conversion: lodash.lodash.NumericDictionary<unknown> extends T ? lodash.lodash.NumericDictionary<S> : lodash.lodash.Dictionary<S> */ js.Any
+  ] = js.native
   
   /**
     * @see _.pick
@@ -862,7 +848,9 @@ trait Object[T]
   /**
     * @see _.transform
     */
-  def transform(): ImpChain[T | Dictionary[Any]] = js.native
+  def transform(): ImpChain[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends lodash.lodash.Dictionary<unknown> ? lodash.lodash.Dictionary<any> : T */ js.Any
+  ] = js.native
   /**
     * @see _.transform
     */

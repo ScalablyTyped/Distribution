@@ -1,14 +1,7 @@
 package typings.tsToolbelt
 
-import typings.tsToolbelt.booleanInternalMod.Boolean
-import typings.tsToolbelt.containsMod.Contains
-import typings.tsToolbelt.equalsMod.Equals
-import typings.tsToolbelt.extendsMod.Extends
-import typings.tsToolbelt.isLiteralMod.IsNumberLiteral
-import typings.tsToolbelt.isLiteralMod.IsStringLiteral
-import typings.tsToolbelt.objectIncludesMod.Includes
-import typings.tsToolbelt.objectInternalMod.MergeStyle
-import typings.tsToolbelt.unionHasMod.Has
+import typings.tsToolbelt.outBooleanInternalMod.Boolean
+import typings.tsToolbelt.outObjectInternalMod.MergeStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -419,13 +412,6 @@ object tsToolbeltInts {
   sealed trait `0`
     extends StObject
        with Boolean
-       with Contains[Any, Any]
-       with Equals[Any, Any]
-       with Extends[Any, Any]
-       with Has[Any, Any]
-       with Includes[Any, Any, Any]
-       with IsNumberLiteral[Any]
-       with IsStringLiteral[Any]
        with MergeStyle
   inline def `0`: `0` = 0.asInstanceOf[`0`]
   
@@ -433,13 +419,6 @@ object tsToolbeltInts {
   sealed trait `1`
     extends StObject
        with Boolean
-       with Contains[Any, Any]
-       with Equals[Any, Any]
-       with Extends[Any, Any]
-       with Has[Any, Any]
-       with Includes[Any, Any, Any]
-       with IsNumberLiteral[Any]
-       with IsStringLiteral[Any]
        with MergeStyle
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "CircularCollectionException")
 @js.native
 open class CircularCollectionException protected ()
-  extends typings.angularDevkitSchematics.engineMod.CircularCollectionException {
+  extends typings.angularDevkitSchematics.srcEngineMod.CircularCollectionException {
   def this(name: String) = this()
 }

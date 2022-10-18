@@ -106,7 +106,11 @@ object mod {
   ): AbortablePromise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[AbortablePromise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]]]
   
   /* static member */
-  inline def race[T](values: js.Array[T]): AbortablePromise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[AbortablePromise[T]]
+  inline def race[T](values: js.Array[T]): AbortablePromise[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends std.PromiseLike<infer U> ? U : T */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[AbortablePromise[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends std.PromiseLike<infer U> ? U : T */ js.Any
+  ]]
   
   trait AbortSignal extends StObject {
     

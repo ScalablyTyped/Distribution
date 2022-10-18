@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [target] - The target vector.
   */
 open class SeekBehavior ()
-  extends typings.yuka.yukaMod.SeekBehavior {
-  def this(target: typings.yuka.vector3Mod.Vector3) = this()
+  extends typings.yuka.srcYukaMod.SeekBehavior {
+  def this(target: typings.yuka.srcMathVector3Mod.Vector3) = this()
 }

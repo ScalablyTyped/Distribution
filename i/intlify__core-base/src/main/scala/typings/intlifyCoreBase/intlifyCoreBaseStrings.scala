@@ -20,46 +20,6 @@ object intlifyCoreBaseStrings {
   inline def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
   
   @js.native
-  sealed trait CoreDateTimeContext extends StObject
-  inline def CoreDateTimeContext: CoreDateTimeContext = "CoreDateTimeContext".asInstanceOf[CoreDateTimeContext]
-  
-  @js.native
-  sealed trait CoreNumberContext extends StObject
-  inline def CoreNumberContext: CoreNumberContext = "CoreNumberContext".asInstanceOf[CoreNumberContext]
-  
-  @js.native
-  sealed trait CoreOptions extends StObject
-  inline def CoreOptions: CoreOptions = "CoreOptions".asInstanceOf[CoreOptions]
-  
-  @js.native
-  sealed trait CoreTranslationContext extends StObject
-  inline def CoreTranslationContext: CoreTranslationContext = "CoreTranslationContext".asInstanceOf[CoreTranslationContext]
-  
-  @js.native
-  sealed trait FallbackLocale extends StObject
-  inline def FallbackLocale: FallbackLocale = "FallbackLocale".asInstanceOf[FallbackLocale]
-  
-  @js.native
-  sealed trait FallbackLocales extends StObject
-  inline def FallbackLocales: FallbackLocales = "FallbackLocales".asInstanceOf[FallbackLocales]
-  
-  @js.native
-  sealed trait LocaleMessageDictionary extends StObject
-  inline def LocaleMessageDictionary: LocaleMessageDictionary = "LocaleMessageDictionary".asInstanceOf[LocaleMessageDictionary]
-  
-  @js.native
-  sealed trait LocaleMessageType extends StObject
-  inline def LocaleMessageType: LocaleMessageType = "LocaleMessageType".asInstanceOf[LocaleMessageType]
-  
-  @js.native
-  sealed trait LocaleRecord extends StObject
-  inline def LocaleRecord: LocaleRecord = "LocaleRecord".asInstanceOf[LocaleRecord]
-  
-  @js.native
-  sealed trait RemoveIndexSignature extends StObject
-  inline def RemoveIndexSignature: RemoveIndexSignature = "RemoveIndexSignature".asInstanceOf[RemoveIndexSignature]
-  
-  @js.native
   sealed trait basic
     extends StObject
        with FormatMatcher

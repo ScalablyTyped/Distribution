@@ -1,7 +1,7 @@
 package typings.antDesignProUtils.anon
 
-import typings.antDesignProUtils.useEditableArrayMod.ActionTypeText
-import typings.antDesignProUtils.useEditableArrayMod.RecordKey
+import typings.antDesignProUtils.esUseEditableArrayMod.ActionTypeText
+import typings.antDesignProUtils.esUseEditableArrayMod.RecordKey
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element

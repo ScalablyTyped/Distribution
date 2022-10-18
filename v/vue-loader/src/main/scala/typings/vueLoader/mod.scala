@@ -1,6 +1,6 @@
 package typings.vueLoader
 
-import typings.vueLoader.pluginMod.default
+import typings.vueLoader.distPluginMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

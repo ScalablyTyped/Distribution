@@ -1,9 +1,9 @@
 package typings.redisSearch.anon
 
-import typings.redisClient.libCommandsMod.RedisCommandArgument
-import typings.redisClient.libCommandsMod.RedisCommandArguments
-import typings.redisSearch.aggregateWITHCURSORMod.AggregateWithCursorRawReply
-import typings.redisSearch.aggregateWITHCURSORMod.AggregateWithCursorReply
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisSearch.distCommandsAggregateWITHCURSORMod.AggregateWithCursorRawReply
+import typings.redisSearch.distCommandsAggregateWITHCURSORMod.AggregateWithCursorReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

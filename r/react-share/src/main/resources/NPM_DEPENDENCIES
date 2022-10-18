@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-share" : "4.4.0"
+      "react-share" : "4.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-share" : "4.4.0"
+      "react-share" : "4.4.1"
     }
   ],
   "compile-devDependencies" : [

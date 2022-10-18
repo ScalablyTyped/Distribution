@@ -1,8 +1,8 @@
 package typings.xstate.anon
 
 import typings.std.Record
-import typings.xstate.typesMod.BaseActionObject
-import typings.xstate.typesMod.EventObject
+import typings.xstate.libTypesMod.BaseActionObject
+import typings.xstate.libTypesMod.EventObject
 import typings.xstate.xstateBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

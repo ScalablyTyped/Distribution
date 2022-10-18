@@ -1,6 +1,6 @@
 package typings.awsSdkClientSqsNode
 
-import typings.awsSdkClientSqsNode.createQueueExceptionsUnionMod.CreateQueueExceptionsUnion
+import typings.awsSdkClientSqsNode.typesCreateQueueExceptionsUnionMod.CreateQueueExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

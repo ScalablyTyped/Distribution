@@ -1,6 +1,6 @@
 package typings.reactDndHtml5Backend
 
-import typings.dndCore.interfacesMod.BackendFactory
+import typings.dndCore.distInterfacesMod.BackendFactory
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AuthorityType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.azureMsalCommon.authorityTypeMod.AuthorityType & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.azureMsalCommon.distAuthorityAuthorityTypeMod.AuthorityType & Double] = js.native
   
-  /* 1 */ val Adfs: typings.azureMsalCommon.authorityTypeMod.AuthorityType.Adfs & Double = js.native
+  /* 1 */ val Adfs: typings.azureMsalCommon.distAuthorityAuthorityTypeMod.AuthorityType.Adfs & Double = js.native
   
-  /* 0 */ val Default: typings.azureMsalCommon.authorityTypeMod.AuthorityType.Default & Double = js.native
+  /* 0 */ val Default: typings.azureMsalCommon.distAuthorityAuthorityTypeMod.AuthorityType.Default & Double = js.native
 }

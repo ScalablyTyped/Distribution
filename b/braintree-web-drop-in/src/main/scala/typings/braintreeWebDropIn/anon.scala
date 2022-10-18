@@ -1,15 +1,15 @@
 package typings.braintreeWebDropIn
 
 import typings.applepayjs.ApplePayJS.ApplePayPayment
-import typings.braintreeWeb.hostedFieldsMod.HostedFieldsField
+import typings.braintreeWeb.modulesHostedFieldsMod.HostedFieldsField
 import typings.braintreeWebDropIn.mod.Address
 import typings.braintreeWebDropIn.mod.Dropin
 import typings.braintreeWebDropIn.mod.Options
 import typings.googlepay.google.payments.api.PaymentData
-import typings.paypalCheckoutComponents.configurationMod.ButtonColorOption
-import typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption
-import typings.paypalCheckoutComponents.configurationMod.ButtonShapeOption
-import typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption
+import typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption
+import typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonLabelOption
+import typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonShapeOption
+import typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonSizeOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

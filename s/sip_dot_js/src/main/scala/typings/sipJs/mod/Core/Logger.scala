@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Core.Logger")
 @js.native
 open class Logger protected ()
-  extends typings.sipJs.coreMod.Logger {
-  def this(logger: typings.sipJs.loggerFactoryMod.LoggerFactory, category: String) = this()
-  def this(logger: typings.sipJs.loggerFactoryMod.LoggerFactory, category: String, label: String) = this()
+  extends typings.sipJs.libCoreMod.Logger {
+  def this(logger: typings.sipJs.libCoreLogLoggerFactoryMod.LoggerFactory, category: String) = this()
+  def this(logger: typings.sipJs.libCoreLogLoggerFactoryMod.LoggerFactory, category: String, label: String) = this()
 }

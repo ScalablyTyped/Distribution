@@ -1,7 +1,7 @@
 package typings.ava
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ava.testFnMod.TestFn
+import typings.ava.typesTestFnMod.TestFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

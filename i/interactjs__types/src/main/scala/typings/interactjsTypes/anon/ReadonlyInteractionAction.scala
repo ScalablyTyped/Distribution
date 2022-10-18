@@ -1,25 +1,25 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.dropPluginMod.DropState
-import typings.interactjsTypes.interactEventMod.EventPhase
-import typings.interactjsTypes.interactEventMod.InteractEvent
-import typings.interactjsTypes.interactionMod.InteractionProxy
-import typings.interactjsTypes.interactjsInertiaPluginMod.InertiaState
+import typings.interactjsTypes.actionsDropPluginMod.DropState
+import typings.interactjsTypes.coreInteractEventMod.EventPhase
+import typings.interactjsTypes.coreInteractEventMod.InteractEvent
+import typings.interactjsTypes.coreInteractionMod.InteractionProxy
+import typings.interactjsTypes.corePointerInfoMod.PointerInfo
+import typings.interactjsTypes.coreScopeMod.ListenerName
+import typings.interactjsTypes.coreTypesMod.ActionName
+import typings.interactjsTypes.coreTypesMod.ActionProps
+import typings.interactjsTypes.coreTypesMod.CoordsSet
+import typings.interactjsTypes.coreTypesMod.EdgeOptions
+import typings.interactjsTypes.coreTypesMod.FullRect
+import typings.interactjsTypes.coreTypesMod.PointerEventType
+import typings.interactjsTypes.inertiaPluginMod.InertiaState
 import typings.interactjsTypes.interactjsTypesBooleans.`false`
 import typings.interactjsTypes.interactjsTypesStrings._createPreparedEvent
 import typings.interactjsTypes.interactjsTypesStrings._fireEvent
 import typings.interactjsTypes.interactjsTypesStrings.x
 import typings.interactjsTypes.interactjsTypesStrings.xy
 import typings.interactjsTypes.interactjsTypesStrings.y
-import typings.interactjsTypes.modificationMod.default
-import typings.interactjsTypes.pointerInfoMod.PointerInfo
-import typings.interactjsTypes.scopeMod.ListenerName
-import typings.interactjsTypes.typesMod.ActionName
-import typings.interactjsTypes.typesMod.ActionProps
-import typings.interactjsTypes.typesMod.CoordsSet
-import typings.interactjsTypes.typesMod.EdgeOptions
-import typings.interactjsTypes.typesMod.FullRect
-import typings.interactjsTypes.typesMod.PointerEventType
+import typings.interactjsTypes.modifiersModificationMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,7 +68,7 @@ trait ReadonlyInteractionAction extends StObject {
   val _stopped: Boolean = js.native
   
   def _updateLatestPointer(
-    pointer: typings.interactjsTypes.typesMod.PointerType,
+    pointer: typings.interactjsTypes.coreTypesMod.PointerType,
     event: PointerEventType,
     eventTarget: typings.std.Node
   ): Unit = js.native
@@ -91,13 +91,13 @@ trait ReadonlyInteractionAction extends StObject {
   
   val downEvent: js.UndefOr[PointerEventType | Null] = js.native
   
-  val downPointer: typings.interactjsTypes.typesMod.PointerType = js.native
+  val downPointer: typings.interactjsTypes.coreTypesMod.PointerType = js.native
   
   val dropState: js.UndefOr[DropState] = js.native
   
   val edges: js.UndefOr[EdgeOptions | Null] = js.native
   
-  val element: js.UndefOr[typings.interactjsTypes.typesMod.Element | Null] = js.native
+  val element: js.UndefOr[typings.interactjsTypes.coreTypesMod.Element | Null] = js.native
   
   def end(): Unit = js.native
   def end(event: PointerEventType): Unit = js.native
@@ -128,7 +128,7 @@ trait ReadonlyInteractionAction extends StObject {
   ] = js.native
   
   def pointerDown(
-    pointer: typings.interactjsTypes.typesMod.PointerType,
+    pointer: typings.interactjsTypes.coreTypesMod.PointerType,
     event: PointerEventType,
     eventTarget: typings.std.Node
   ): Unit = js.native
@@ -136,7 +136,7 @@ trait ReadonlyInteractionAction extends StObject {
   val pointerIsDown: Boolean = js.native
   
   def pointerMove(
-    pointer: typings.interactjsTypes.typesMod.PointerType,
+    pointer: typings.interactjsTypes.coreTypesMod.PointerType,
     event: PointerEventType,
     eventTarget: typings.std.Node
   ): Unit = js.native
@@ -144,7 +144,7 @@ trait ReadonlyInteractionAction extends StObject {
   val pointerType: String = js.native
   
   def pointerUp(
-    pointer: typings.interactjsTypes.typesMod.PointerType,
+    pointer: typings.interactjsTypes.coreTypesMod.PointerType,
     event: PointerEventType,
     eventTarget: typings.std.Node,
     curEventTarget: typings.std.EventTarget
@@ -162,7 +162,7 @@ trait ReadonlyInteractionAction extends StObject {
   
   val rect: js.UndefOr[FullRect | Null] = js.native
   
-  def removePointer(pointer: typings.interactjsTypes.typesMod.PointerType, event: PointerEventType): Unit = js.native
+  def removePointer(pointer: typings.interactjsTypes.coreTypesMod.PointerType, event: PointerEventType): Unit = js.native
   
   val resizeAxes: x | y | xy = js.native
   
@@ -173,7 +173,7 @@ trait ReadonlyInteractionAction extends StObject {
   def start[A /* <: ActionName */](
     action: ActionProps[A],
     interactable: InteractableAllowFrom,
-    element: typings.interactjsTypes.typesMod.Element
+    element: typings.interactjsTypes.coreTypesMod.Element
   ): Boolean = js.native
   
   def stop(): Unit = js.native
@@ -181,12 +181,12 @@ trait ReadonlyInteractionAction extends StObject {
   val tapTime: js.UndefOr[Double] = js.native
   
   def updatePointer(
-    pointer: typings.interactjsTypes.typesMod.PointerType,
+    pointer: typings.interactjsTypes.coreTypesMod.PointerType,
     event: PointerEventType,
     eventTarget: typings.std.Node
   ): Double = js.native
   def updatePointer(
-    pointer: typings.interactjsTypes.typesMod.PointerType,
+    pointer: typings.interactjsTypes.coreTypesMod.PointerType,
     event: PointerEventType,
     eventTarget: typings.std.Node,
     down: Boolean

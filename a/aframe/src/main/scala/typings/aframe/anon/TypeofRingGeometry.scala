@@ -19,5 +19,5 @@ trait TypeofRingGeometry
       RingGeometry
     ] {
   
-  def fromJSON(data: Any): typings.three.ringGeometryMod.RingGeometry = js.native
+  def fromJSON(data: Any): typings.three.srcGeometriesRingGeometryMod.RingGeometry = js.native
 }

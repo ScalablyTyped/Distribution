@@ -16,7 +16,7 @@ import typings.baseui.drawerTypesMod.SizeProp
 import typings.react.mod.ReactNode
 import typings.std.Event
 import typings.std.HTMLElement
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

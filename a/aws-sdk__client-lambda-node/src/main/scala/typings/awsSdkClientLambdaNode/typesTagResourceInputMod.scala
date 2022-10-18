@@ -1,8 +1,8 @@
 package typings.awsSdkClientLambdaNode
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdkClientLambdaNode.inputTypesUnionMod._InputTypesUnion
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientLambdaNode.typesInputTypesUnionMod._InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

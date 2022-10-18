@@ -1,6 +1,5 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typings.materialUiCore.materialUiCoreStrings.className
 import typings.materialUiCore.materialUiCoreStrings.classes
 import typings.materialUiCore.materialUiCoreStrings.innerRef
@@ -90,7 +89,13 @@ object overridableComponentMod {
   
   type SimplifiedPropsOf[C /* <: ElementType[Any] */] = Simplify[ComponentProps[C]]
   
-  type Simplify[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K]}
-    */ typings.materialUiCore.materialUiCoreStrings.Simplify & TopLevel[T]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends any ? {[ K in keyof T ]: T[K]} : never
+    }}}
+    */
+  @js.native
+  trait Simplify[T] extends StObject
 }

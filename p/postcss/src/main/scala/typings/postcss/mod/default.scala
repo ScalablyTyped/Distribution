@@ -1,14 +1,14 @@
 package typings.postcss.mod
 
 import org.scalablytyped.runtime.Shortcut
-import typings.postcss.atRuleMod.AtRuleProps
-import typings.postcss.commentMod.CommentProps
-import typings.postcss.cssSyntaxErrorMod.RangePosition
-import typings.postcss.declarationMod.DeclarationProps
-import typings.postcss.resultMod.ResultOptions
-import typings.postcss.rootMod.RootProps
-import typings.postcss.ruleMod.RuleProps
-import typings.postcss.warningMod.WarningOptions
+import typings.postcss.libAtRuleMod.AtRuleProps
+import typings.postcss.libCommentMod.CommentProps
+import typings.postcss.libCssSyntaxErrorMod.RangePosition
+import typings.postcss.libDeclarationMod.DeclarationProps
+import typings.postcss.libResultMod.ResultOptions
+import typings.postcss.libRootMod.RootProps
+import typings.postcss.libRuleMod.RuleProps
+import typings.postcss.libWarningMod.WarningOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ object default extends Shortcut {
   @JSImport("postcss", "default.AtRule")
   @js.native
   open class AtRuleCls ()
-    extends typings.postcss.atRuleMod.default {
+    extends typings.postcss.libAtRuleMod.default {
     def this(defaults: AtRuleProps) = this()
   }
   
@@ -31,21 +31,21 @@ object default extends Shortcut {
   @JSImport("postcss", "default.Comment")
   @js.native
   open class CommentCls ()
-    extends typings.postcss.commentMod.default {
+    extends typings.postcss.libCommentMod.default {
     def this(defaults: CommentProps) = this()
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("postcss", "default.Container")
   @js.native
-  open class ContainerCls[Child /* <: typings.postcss.nodeMod.default */] ()
-    extends typings.postcss.containerMod.default[Child]
+  open class ContainerCls[Child /* <: typings.postcss.libNodeMod.default */] ()
+    extends typings.postcss.libContainerMod.default[Child]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("postcss", "default.CssSyntaxError")
   @js.native
   open class CssSyntaxErrorCls protected ()
-    extends typings.postcss.cssSyntaxErrorMod.default {
+    extends typings.postcss.libCssSyntaxErrorMod.default {
     /**
       * Instantiates a CSS syntax error. Can be instantiated for a single position
       * or for a range.
@@ -72,7 +72,7 @@ object default extends Shortcut {
   @JSImport("postcss", "default.Declaration")
   @js.native
   open class DeclarationCls ()
-    extends typings.postcss.declarationMod.default {
+    extends typings.postcss.libDeclarationMod.default {
     def this(defaults: DeclarationProps) = this()
   }
   
@@ -80,7 +80,7 @@ object default extends Shortcut {
   @JSImport("postcss", "default.Input")
   @js.native
   open class InputCls protected ()
-    extends typings.postcss.inputMod.default {
+    extends typings.postcss.libInputMod.default {
     /**
       * @param css  Input CSS source.
       * @param opts Process options.
@@ -96,7 +96,7 @@ object default extends Shortcut {
     * @param defaults Value for node properties.
     */
   open class NodeCls ()
-    extends typings.postcss.nodeMod.default {
+    extends typings.postcss.libNodeMod.default {
     def this(defaults: js.Object) = this()
   }
   
@@ -104,21 +104,21 @@ object default extends Shortcut {
   @JSImport("postcss", "default.Result")
   @js.native
   open class ResultCls protected ()
-    extends typings.postcss.resultMod.default {
-    def this(processor: typings.postcss.processorMod.default, root: Document, opts: ResultOptions) = this()
+    extends typings.postcss.libResultMod.default {
+    def this(processor: typings.postcss.libProcessorMod.default, root: Document, opts: ResultOptions) = this()
     /**
       * @param processor Processor used for this transformation.
       * @param root      Root node after all transformations.
       * @param opts      Options from the `Processor#process` or `Root#toResult`.
       */
-    def this(processor: typings.postcss.processorMod.default, root: Root_, opts: ResultOptions) = this()
+    def this(processor: typings.postcss.libProcessorMod.default, root: Root_, opts: ResultOptions) = this()
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("postcss", "default.Root")
   @js.native
   open class RootCls ()
-    extends typings.postcss.rootMod.default {
+    extends typings.postcss.libRootMod.default {
     def this(defaults: RootProps) = this()
   }
   
@@ -126,7 +126,7 @@ object default extends Shortcut {
   @JSImport("postcss", "default.Rule")
   @js.native
   open class RuleCls ()
-    extends typings.postcss.ruleMod.default {
+    extends typings.postcss.libRuleMod.default {
     def this(defaults: RuleProps) = this()
   }
   
@@ -134,7 +134,7 @@ object default extends Shortcut {
   @JSImport("postcss", "default.Warning")
   @js.native
   open class WarningCls protected ()
-    extends typings.postcss.warningMod.default {
+    extends typings.postcss.libWarningMod.default {
     /**
       * @param text Warning message.
       * @param opts Warning options.

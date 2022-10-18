@@ -1,7 +1,6 @@
 package typings.jestEach
 
 import typings.jestEach.anon.Describe
-import typings.jestTypes.mod.BlockNameLike
 import typings.jestTypes.mod.ConcurrentTestFn
 import typings.jestTypes.mod.EachTable
 import typings.jestTypes.mod.EachTestFn
@@ -37,49 +36,16 @@ object mod {
     inline def withGlobal(g: Global): js.Function2[/* table */ EachTable, /* data */ TemplateData, Describe] = ^.asInstanceOf[js.Dynamic].applyDynamic("withGlobal")(g.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* table */ EachTable, /* data */ TemplateData, Describe]]
   }
   
-  inline def bind[EachCallback /* <: TestCallback */](cb: GlobalCallback): js.Function2[
-    /* table */ EachTable, 
-    /* taggedTemplateData */ TemplateData, 
-    js.Function3[
-      /* title */ BlockNameLike, 
-      /* test */ EachTestFn[EachCallback], 
-      /* timeout */ js.UndefOr[Double], 
-      Unit
-    ]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* table */ EachTable, 
-    /* taggedTemplateData */ TemplateData, 
-    js.Function3[
-      /* title */ BlockNameLike, 
-      /* test */ EachTestFn[EachCallback], 
-      /* timeout */ js.UndefOr[Double], 
-      Unit
-    ]
-  ]]
-  inline def bind[EachCallback /* <: TestCallback */](cb: GlobalCallback, supportsDone: Boolean): js.Function2[
-    /* table */ EachTable, 
-    /* taggedTemplateData */ TemplateData, 
-    js.Function3[
-      /* title */ BlockNameLike, 
-      /* test */ EachTestFn[EachCallback], 
-      /* timeout */ js.UndefOr[Double], 
-      Unit
-    ]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(cb.asInstanceOf[js.Any], supportsDone.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* table */ EachTable, 
-    /* taggedTemplateData */ TemplateData, 
-    js.Function3[
-      /* title */ BlockNameLike, 
-      /* test */ EachTestFn[EachCallback], 
-      /* timeout */ js.UndefOr[Double], 
-      Unit
-    ]
-  ]]
+  inline def bind[EachCallback /* <: TestCallback */](cb: GlobalCallback): EachTestFn[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(cb.asInstanceOf[js.Any]).asInstanceOf[EachTestFn[Any]]
+  inline def bind[EachCallback /* <: TestCallback */](cb: GlobalCallback, supportsDone: Boolean): EachTestFn[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(cb.asInstanceOf[js.Any], supportsDone.asInstanceOf[js.Any])).asInstanceOf[EachTestFn[Any]]
+  inline def bind[EachCallback /* <: TestCallback */](cb: GlobalCallback, supportsDone: Boolean, needsEachError: Boolean): EachTestFn[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(cb.asInstanceOf[js.Any], supportsDone.asInstanceOf[js.Any], needsEachError.asInstanceOf[js.Any])).asInstanceOf[EachTestFn[Any]]
+  inline def bind[EachCallback /* <: TestCallback */](cb: GlobalCallback, supportsDone: Unit, needsEachError: Boolean): EachTestFn[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(cb.asInstanceOf[js.Any], supportsDone.asInstanceOf[js.Any], needsEachError.asInstanceOf[js.Any])).asInstanceOf[EachTestFn[Any]]
   
-  type GlobalCallback = js.Function3[
+  type GlobalCallback = js.Function4[
     /* testName */ String, 
     /* fn */ ConcurrentTestFn, 
     /* timeout */ js.UndefOr[Double], 
+    /* eachError */ js.UndefOr[js.Error], 
     Unit
   ]
 }

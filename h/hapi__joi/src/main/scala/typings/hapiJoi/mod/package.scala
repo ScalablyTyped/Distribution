@@ -1,6 +1,5 @@
 package typings.hapiJoi.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -42,9 +41,5 @@ type Schema = _Schema | ObjectSchema[Any]
 type SchemaFunction = js.Function1[/* schema */ Schema, Schema]
 
 type SchemaLike = String | Double | Boolean | js.Object | Null | Schema | SchemaMap[Any]
-
-type SchemaMap[TSchema] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ key in keyof TSchema ]:? @hapi/joi.@hapi/joi.SchemaLike | std.Array<@hapi/joi.@hapi/joi.SchemaLike>}
-  */ typings.hapiJoi.hapiJoiStrings.SchemaMap & TopLevel[Any]
 
 type ValidationErrorFunction = js.Function1[/* errors */ js.Array[ErrorReport], String | ValidationErrorItem | js.Error]

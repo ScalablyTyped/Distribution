@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object smoochStrings {
   
   @js.native
-  sealed trait Nullable extends StObject
-  inline def Nullable: Nullable = "Nullable".asInstanceOf[Nullable]
-  
-  @js.native
   sealed trait business extends StObject
   inline def business: business = "business".asInstanceOf[business]
   

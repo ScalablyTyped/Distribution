@@ -1,6 +1,6 @@
 package typings.nivoAnnotations.anon
 
-import typings.nivoAnnotations.typesMod.BoundAnnotation
+import typings.nivoAnnotations.distTypesTypesMod.BoundAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

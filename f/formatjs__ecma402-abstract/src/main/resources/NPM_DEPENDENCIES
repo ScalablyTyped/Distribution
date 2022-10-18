@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@formatjs/ecma402-abstract" : "1.12.0"
+      "@formatjs/ecma402-abstract" : "1.13.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@formatjs/ecma402-abstract" : "1.12.0"
+      "@formatjs/ecma402-abstract" : "1.13.0"
     }
   ],
   "compile-devDependencies" : [

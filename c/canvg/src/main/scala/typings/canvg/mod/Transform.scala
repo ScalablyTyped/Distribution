@@ -1,6 +1,6 @@
 package typings.canvg.mod
 
-import typings.canvg.transformTransformMod.ITransformConstructor
+import typings.canvg.distTransformTransformMod.ITransformConstructor
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "Transform")
 @js.native
 open class Transform protected ()
-  extends typings.canvg.transformMod.Transform {
+  extends typings.canvg.distTransformMod.Transform {
   def this(
-    document: typings.canvg.documentMod.Document,
+    document: typings.canvg.distDocumentMod.Document,
     transform: String,
     transformOrigin: js.Tuple2[
-        typings.canvg.propertyMod.Property[String], 
-        typings.canvg.propertyMod.Property[String]
+        typings.canvg.distPropertyMod.Property[String], 
+        typings.canvg.distPropertyMod.Property[String]
       ]
   ) = this()
 }
@@ -26,7 +26,7 @@ object Transform {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromElement(document: typings.canvg.documentMod.Document, element: typings.canvg.documentMod.Element): typings.canvg.transformTransformMod.Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(document.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.transformTransformMod.Transform]
+  inline def fromElement(document: typings.canvg.distDocumentMod.Document, element: typings.canvg.distDocumentMod.Element): typings.canvg.distTransformTransformMod.Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(document.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.distTransformTransformMod.Transform]
   
   @JSImport("canvg", "Transform.transformTypes")
   @js.native

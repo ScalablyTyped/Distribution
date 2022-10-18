@@ -21,9 +21,9 @@ object Gaming {
   object Input {
     
     /** Represents a game controller. */
-    @JSGlobal("Windows.Gaming.Input.Gamepad")
+    /* note: abstract class */ @JSGlobal("Windows.Gaming.Input.Gamepad")
     @js.native
-    abstract class Gamepad ()
+    open class Gamepad ()
       extends StObject
          with typings.winrtUwp.Windows.Gaming.Input.Gamepad
     object Gamepad {
@@ -112,9 +112,9 @@ object Gaming {
     }
     
     /** Contains information about an audio headset attached to a gamepad. */
-    @JSGlobal("Windows.Gaming.Input.Headset")
+    /* note: abstract class */ @JSGlobal("Windows.Gaming.Input.Headset")
     @js.native
-    abstract class Headset ()
+    open class Headset ()
       extends StObject
          with typings.winrtUwp.Windows.Gaming.Input.Headset {
       
@@ -132,9 +132,9 @@ object Gaming {
     
     object GamesEnumeration {
       
-      @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList")
+      /* note: abstract class */ @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList")
       @js.native
-      abstract class GameList ()
+      open class GameList ()
         extends StObject
            with typings.winrtUwp.Windows.Gaming.Preview.GamesEnumeration.GameList
       object GameList {
@@ -209,9 +209,9 @@ object Gaming {
         inline def confirmedByUser_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirmedByUser")(x.asInstanceOf[js.Any])
       }
       
-      @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameListEntry")
+      /* note: abstract class */ @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameListEntry")
       @js.native
-      abstract class GameListEntry ()
+      open class GameListEntry ()
         extends StObject
            with typings.winrtUwp.Windows.Gaming.Preview.GamesEnumeration.GameListEntry {
         
@@ -239,9 +239,9 @@ object Gaming {
   
   object UI {
     
-    @JSGlobal("Windows.Gaming.UI.GameBar")
+    /* note: abstract class */ @JSGlobal("Windows.Gaming.UI.GameBar")
     @js.native
-    abstract class GameBar ()
+    open class GameBar ()
       extends StObject
          with typings.winrtUwp.Windows.Gaming.UI.GameBar
     object GameBar {
@@ -299,9 +299,9 @@ object Gaming {
     object Storage {
       
       /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-      @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult")
+      /* note: abstract class */ @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult")
       @js.native
-      abstract class GameSaveBlobGetResult ()
+      open class GameSaveBlobGetResult ()
         extends StObject
            with typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult {
         
@@ -315,9 +315,9 @@ object Gaming {
       }
       
       /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-      @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo")
+      /* note: abstract class */ @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo")
       @js.native
-      abstract class GameSaveBlobInfo ()
+      open class GameSaveBlobInfo ()
         extends StObject
            with typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo {
         
@@ -331,9 +331,9 @@ object Gaming {
       }
       
       /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-      @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult")
+      /* note: abstract class */ @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult")
       @js.native
-      abstract class GameSaveBlobInfoGetResult ()
+      open class GameSaveBlobInfoGetResult ()
         extends StObject
            with typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult {
         
@@ -347,16 +347,16 @@ object Gaming {
       }
       
       /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-      @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery")
+      /* note: abstract class */ @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery")
       @js.native
-      abstract class GameSaveBlobInfoQuery ()
+      open class GameSaveBlobInfoQuery ()
         extends StObject
            with typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery
       
       /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-      @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveContainer")
+      /* note: abstract class */ @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveContainer")
       @js.native
-      abstract class GameSaveContainer ()
+      open class GameSaveContainer ()
         extends StObject
            with typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveContainer {
         
@@ -414,9 +414,9 @@ object Gaming {
       }
       
       /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-      @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo")
+      /* note: abstract class */ @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo")
       @js.native
-      abstract class GameSaveContainerInfo ()
+      open class GameSaveContainerInfo ()
         extends StObject
            with typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo {
         
@@ -442,9 +442,9 @@ object Gaming {
       }
       
       /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-      @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult")
+      /* note: abstract class */ @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult")
       @js.native
-      abstract class GameSaveContainerInfoGetResult ()
+      open class GameSaveContainerInfoGetResult ()
         extends StObject
            with typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult {
         
@@ -458,9 +458,9 @@ object Gaming {
       }
       
       /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-      @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery")
+      /* note: abstract class */ @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery")
       @js.native
-      abstract class GameSaveContainerInfoQuery ()
+      open class GameSaveContainerInfoQuery ()
         extends StObject
            with typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery
       
@@ -504,9 +504,9 @@ object Gaming {
       }
       
       /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-      @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveOperationResult")
+      /* note: abstract class */ @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveOperationResult")
       @js.native
-      abstract class GameSaveOperationResult ()
+      open class GameSaveOperationResult ()
         extends StObject
            with typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveOperationResult {
         
@@ -516,9 +516,9 @@ object Gaming {
       }
       
       /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-      @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveProvider")
+      /* note: abstract class */ @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveProvider")
       @js.native
-      abstract class GameSaveProvider ()
+      open class GameSaveProvider ()
         extends StObject
            with typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveProvider
       object GameSaveProvider {
@@ -547,9 +547,9 @@ object Gaming {
       }
       
       /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-      @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult")
+      /* note: abstract class */ @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult")
       @js.native
-      abstract class GameSaveProviderGetResult ()
+      open class GameSaveProviderGetResult ()
         extends StObject
            with typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult {
         

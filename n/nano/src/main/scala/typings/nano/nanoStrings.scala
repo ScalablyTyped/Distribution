@@ -128,8 +128,20 @@ object nanoStrings {
   inline def $type: $type = "$type".asInstanceOf[$type]
   
   @js.native
-  sealed trait MangoSelector extends StObject
-  inline def MangoSelector: MangoSelector = "MangoSelector".asInstanceOf[MangoSelector]
+  sealed trait DELETE extends StObject
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @js.native
+  sealed trait GET extends StObject
+  inline def GET: GET = "GET".asInstanceOf[GET]
+  
+  @js.native
+  sealed trait POST extends StObject
+  inline def POST: POST = "POST".asInstanceOf[POST]
+  
+  @js.native
+  sealed trait PUT extends StObject
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
   sealed trait asc extends StObject
@@ -138,6 +150,10 @@ object nanoStrings {
   @js.native
   sealed trait continuous extends StObject
   inline def continuous: continuous = "continuous".asInstanceOf[continuous]
+  
+  @js.native
+  sealed trait couch extends StObject
+  inline def couch: couch = "couch".asInstanceOf[couch]
   
   @js.native
   sealed trait desc extends StObject
@@ -156,12 +172,24 @@ object nanoStrings {
   inline def longpoll: longpoll = "longpoll".asInstanceOf[longpoll]
   
   @js.native
+  sealed trait non_200 extends StObject
+  inline def non_200: non_200 = "non_200".asInstanceOf[non_200]
+  
+  @js.native
   sealed trait normal extends StObject
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait ok extends StObject
   inline def ok: ok = "ok".asInstanceOf[ok]
+  
+  @js.native
+  sealed trait request extends StObject
+  inline def request: request = "request".asInstanceOf[request]
+  
+  @js.native
+  sealed trait socket extends StObject
+  inline def socket: socket = "socket".asInstanceOf[socket]
   
   @js.native
   sealed trait text extends StObject

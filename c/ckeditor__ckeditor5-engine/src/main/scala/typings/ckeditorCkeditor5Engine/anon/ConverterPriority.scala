@@ -12,13 +12,13 @@ trait ConverterPriority extends StObject {
   
   var model: String | Values
   
-  var view: String | Value | (js.Function1[/* modelAttributeValue */ Any, KeyValue])
+  var view: String | KeyValue | (js.Function1[/* modelAttributeValue */ Any, KeyString])
 }
 object ConverterPriority {
   
   inline def apply(
     model: String | Values,
-    view: String | Value | (js.Function1[/* modelAttributeValue */ Any, KeyValue])
+    view: String | KeyValue | (js.Function1[/* modelAttributeValue */ Any, KeyString])
   ): ConverterPriority = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConverterPriority]
@@ -34,8 +34,8 @@ object ConverterPriority {
     
     inline def setModel(value: String | Values): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    inline def setView(value: String | Value | (js.Function1[/* modelAttributeValue */ Any, KeyValue])): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String | KeyValue | (js.Function1[/* modelAttributeValue */ Any, KeyString])): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    inline def setViewFunction1(value: /* modelAttributeValue */ Any => KeyValue): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
+    inline def setViewFunction1(value: /* modelAttributeValue */ Any => KeyString): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
   }
 }

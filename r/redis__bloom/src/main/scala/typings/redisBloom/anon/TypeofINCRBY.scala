@@ -1,6 +1,6 @@
 package typings.redisBloom.anon
 
-import typings.redisBloom.incrbyMod.IncrByItem
+import typings.redisBloom.distCommandsCountMinSketchIncrbyMod.IncrByItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

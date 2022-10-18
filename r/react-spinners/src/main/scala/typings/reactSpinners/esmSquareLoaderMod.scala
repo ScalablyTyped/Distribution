@@ -1,7 +1,7 @@
 package typings.reactSpinners
 
 import typings.react.mod.global.JSX.Element
-import typings.reactSpinners.helpersPropsMod.LoaderSizeProps
+import typings.reactSpinners.esmHelpersPropsMod.LoaderSizeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

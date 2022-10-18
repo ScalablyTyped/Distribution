@@ -72,8 +72,8 @@ object anon {
     var enabled: `false`
     
     var exclude: js.Tuple3[
-        String, 
-        String, 
+        /* ldaps?://ForestDnsZones\..* /.* */ String, 
+        /* ldaps?://DomainDnsZones\..* /.* */ String, 
         ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk
       ]
   }
@@ -81,8 +81,8 @@ object anon {
     
     inline def apply(
       exclude: js.Tuple3[
-          String, 
-          String, 
+          /* ldaps?://ForestDnsZones\..* /.* */ String, 
+          /* ldaps?://DomainDnsZones\..* /.* */ String, 
           ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk
         ]
     ): Enabled = {
@@ -96,8 +96,8 @@ object anon {
       
       inline def setExclude(
         value: js.Tuple3[
-              String, 
-              String, 
+              /* ldaps?://ForestDnsZones\..* /.* */ String, 
+              /* ldaps?://DomainDnsZones\..* /.* */ String, 
               ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk
             ]
       ): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])

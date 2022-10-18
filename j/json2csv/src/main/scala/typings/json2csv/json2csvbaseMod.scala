@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object json2csvbaseMod {
   
-  @JSImport("json2csv/JSON2CSVBase", JSImport.Namespace)
+  /* note: abstract class */ @JSImport("json2csv/JSON2CSVBase", JSImport.Namespace)
   @js.native
-  abstract class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with JSON2CSVBase[T] {
     def this(opts: Options[T]) = this()

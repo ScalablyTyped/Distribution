@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler", "Statement")
+/* note: abstract class */ @JSImport("@angular/compiler", "Statement")
 @js.native
-abstract class Statement () extends StObject {
+open class Statement () extends StObject {
   def this(modifiers: StmtModifier) = this()
   def this(modifiers: Unit, sourceSpan: ParseSourceSpan) = this()
   def this(modifiers: StmtModifier, sourceSpan: ParseSourceSpan) = this()

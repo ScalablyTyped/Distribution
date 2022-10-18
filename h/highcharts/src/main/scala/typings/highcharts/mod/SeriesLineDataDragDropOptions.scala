@@ -74,7 +74,7 @@ trait SeriesLineDataDragDropOptions extends StObject {
     * box has one state by default, the `default` state.
     */
   var guideBox: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52, starting with typings.highcharts.mod.SeriesAreaDataDragDropGuideBoxOptions, typings.highcharts.mod.SeriesArearangeDataDragDropGuideBoxOptions, typings.highcharts.mod.SeriesAreasplineDataDragDropGuideBoxOptions */ Any
   ] = js.undefined
   
   /**
@@ -132,7 +132,9 @@ object SeriesLineDataDragDropOptions {
     
     inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
     
-    inline def setGuideBox(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52 */ Any): Self = StObject.set(x, "guideBox", value.asInstanceOf[js.Any])
+    inline def setGuideBox(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52, starting with typings.highcharts.mod.SeriesAreaDataDragDropGuideBoxOptions, typings.highcharts.mod.SeriesArearangeDataDragDropGuideBoxOptions, typings.highcharts.mod.SeriesAreasplineDataDragDropGuideBoxOptions */ Any
+    ): Self = StObject.set(x, "guideBox", value.asInstanceOf[js.Any])
     
     inline def setGuideBoxUndefined: Self = StObject.set(x, "guideBox", js.undefined)
     

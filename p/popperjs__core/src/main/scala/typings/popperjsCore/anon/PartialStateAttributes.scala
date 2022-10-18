@@ -1,10 +1,10 @@
 package typings.popperjsCore.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.popperjsCore.typesMod.Modifier
-import typings.popperjsCore.typesMod.OptionsGeneric
-import typings.popperjsCore.typesMod.PositioningStrategy
-import typings.popperjsCore.typesMod.StateRects
+import typings.popperjsCore.libTypesMod.Modifier
+import typings.popperjsCore.libTypesMod.OptionsGeneric
+import typings.popperjsCore.libTypesMod.PositioningStrategy
+import typings.popperjsCore.libTypesMod.StateRects
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ trait PartialStateAttributes extends StObject {
   
   var orderedModifiers: js.UndefOr[js.Array[Modifier[Any, Any]]] = js.undefined
   
-  var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.undefined
+  var placement: js.UndefOr[typings.popperjsCore.libEnumsMod.Placement] = js.undefined
   
   var rects: js.UndefOr[StateRects] = js.undefined
   
@@ -65,7 +65,7 @@ object PartialStateAttributes {
     
     inline def setOrderedModifiersVarargs(value: (Modifier[Any, Any])*): Self = StObject.set(x, "orderedModifiers", js.Array(value*))
     
-    inline def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: typings.popperjsCore.libEnumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     

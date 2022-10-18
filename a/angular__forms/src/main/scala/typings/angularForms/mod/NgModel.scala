@@ -153,9 +153,27 @@ object NgModel {
   
   @JSImport("@angular/forms", "NgModel.\u0275dir")
   @js.native
-  def ɵdir: ɵɵDirectiveDeclaration[NgModel, String, js.Array[ngModel], Model, Update, scala.Nothing, scala.Nothing, `false`] = js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    NgModel, 
+    /* [ngModel]:not([formControlName]):not([formControl]) */ String, 
+    js.Array[ngModel], 
+    Model, 
+    Update, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
   inline def ɵdir_=(
-    x: ɵɵDirectiveDeclaration[NgModel, String, js.Array[ngModel], Model, Update, scala.Nothing, scala.Nothing, `false`]
+    x: ɵɵDirectiveDeclaration[
+      NgModel, 
+      /* [ngModel]:not([formControlName]):not([formControl]) */ String, 
+      js.Array[ngModel], 
+      Model, 
+      Update, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `false`
+    ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/forms", "NgModel.\u0275fac")

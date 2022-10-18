@@ -7,22 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `200301` extends StObject {
   
   /** Response */
-  var `200`: Content145
+  var `200`: ContentApplicationjsonAllowupdatebranch
   
-  var `301`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any
+  var `301`: Content6
   
-  var `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any
+  var `403`: Content6
   
-  var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+  var `404`: Content6
 }
 object `200301` {
   
-  inline def apply(
-    `200`: Content145,
-    `301`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any,
-    `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any,
-    `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
-  ): `200301` = {
+  inline def apply(`200`: ContentApplicationjsonAllowupdatebranch, `301`: Content6, `403`: Content6, `404`: Content6): `200301` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("301")(`301`.asInstanceOf[js.Any])
@@ -33,18 +28,12 @@ object `200301` {
   
   extension [Self <: `200301`](x: Self) {
     
-    inline def set200(value: Content145): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: ContentApplicationjsonAllowupdatebranch): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set301(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any
-    ): Self = StObject.set(x, "301", value.asInstanceOf[js.Any])
+    inline def set301(value: Content6): Self = StObject.set(x, "301", value.asInstanceOf[js.Any])
     
-    inline def set403(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any
-    ): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content6): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
-    ): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content6): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

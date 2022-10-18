@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsUnorderedListOutlinedMod.UnorderedListOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unorderedListOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/UnorderedListOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/UnorderedListOutlined", JSImport.Default)
   @js.native
   val default: UnorderedListOutlinedIconType = js.native
-  
-  @js.native
-  trait UnorderedListOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_UnorderedListOutlinedIconType: String = js.native
-  }
   
   type _To = UnorderedListOutlinedIconType
   

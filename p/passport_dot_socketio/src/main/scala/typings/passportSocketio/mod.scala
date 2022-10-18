@@ -1,14 +1,11 @@
 package typings.passportSocketio
 
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
 import typings.expressSession.mod.Store
 import typings.passport.mod.PassportStatic
+import typings.socketIo.distTypedEventsMod.DefaultEventsMap
 import typings.socketIo.mod.Server
 import typings.socketIo.mod.Socket
-import typings.socketIo.typedEventsMod.DefaultEventsMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -100,7 +97,15 @@ object mod {
     
     extension [Self <: PassportSocketIoOptions](x: Self) {
       
-      inline def setCookieParser(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "cookieParser", js.Any.fromFunction3(value))
+      inline def setCookieParser(
+        value: RequestHandler[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ]
+      ): Self = StObject.set(x, "cookieParser", value.asInstanceOf[js.Any])
       
       inline def setCookieParserUndefined: Self = StObject.set(x, "cookieParser", js.undefined)
       

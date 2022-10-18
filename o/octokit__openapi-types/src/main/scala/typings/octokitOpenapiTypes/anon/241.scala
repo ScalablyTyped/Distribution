@@ -6,17 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `241` extends StObject {
   
-  var path: OwnerRef
+  var app_slug: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['app-slug'] */ js.Any
 }
 object `241` {
   
-  inline def apply(path: OwnerRef): `241` = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+  inline def apply(
+    app_slug: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['app-slug'] */ js.Any
+  ): `241` = {
+    val __obj = js.Dynamic.literal(app_slug = app_slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[`241`]
   }
   
   extension [Self <: `241`](x: Self) {
     
-    inline def setPath(value: OwnerRef): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setApp_slug(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['app-slug'] */ js.Any
+    ): Self = StObject.set(x, "app_slug", value.asInstanceOf[js.Any])
   }
 }

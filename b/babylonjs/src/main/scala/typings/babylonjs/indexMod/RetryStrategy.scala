@@ -23,45 +23,45 @@ object RetryStrategy {
     */
   inline def ExponentialBackoff(): js.Function3[
     /* url */ String, 
-    /* request */ typings.babylonjs.webRequestMod.WebRequest, 
+    /* request */ typings.babylonjs.miscWebRequestMod.WebRequest, 
     /* retryIndex */ Double, 
     Double
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ExponentialBackoff")().asInstanceOf[js.Function3[
     /* url */ String, 
-    /* request */ typings.babylonjs.webRequestMod.WebRequest, 
+    /* request */ typings.babylonjs.miscWebRequestMod.WebRequest, 
     /* retryIndex */ Double, 
     Double
   ]]
   inline def ExponentialBackoff(maxRetries: Double): js.Function3[
     /* url */ String, 
-    /* request */ typings.babylonjs.webRequestMod.WebRequest, 
+    /* request */ typings.babylonjs.miscWebRequestMod.WebRequest, 
     /* retryIndex */ Double, 
     Double
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ExponentialBackoff")(maxRetries.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
     /* url */ String, 
-    /* request */ typings.babylonjs.webRequestMod.WebRequest, 
+    /* request */ typings.babylonjs.miscWebRequestMod.WebRequest, 
     /* retryIndex */ Double, 
     Double
   ]]
   inline def ExponentialBackoff(maxRetries: Double, baseInterval: Double): js.Function3[
     /* url */ String, 
-    /* request */ typings.babylonjs.webRequestMod.WebRequest, 
+    /* request */ typings.babylonjs.miscWebRequestMod.WebRequest, 
     /* retryIndex */ Double, 
     Double
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ExponentialBackoff")(maxRetries.asInstanceOf[js.Any], baseInterval.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
     /* url */ String, 
-    /* request */ typings.babylonjs.webRequestMod.WebRequest, 
+    /* request */ typings.babylonjs.miscWebRequestMod.WebRequest, 
     /* retryIndex */ Double, 
     Double
   ]]
   inline def ExponentialBackoff(maxRetries: Unit, baseInterval: Double): js.Function3[
     /* url */ String, 
-    /* request */ typings.babylonjs.webRequestMod.WebRequest, 
+    /* request */ typings.babylonjs.miscWebRequestMod.WebRequest, 
     /* retryIndex */ Double, 
     Double
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("ExponentialBackoff")(maxRetries.asInstanceOf[js.Any], baseInterval.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
     /* url */ String, 
-    /* request */ typings.babylonjs.webRequestMod.WebRequest, 
+    /* request */ typings.babylonjs.miscWebRequestMod.WebRequest, 
     /* retryIndex */ Double, 
     Double
   ]]

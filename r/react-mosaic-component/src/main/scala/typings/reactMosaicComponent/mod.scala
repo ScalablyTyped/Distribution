@@ -10,20 +10,20 @@ import typings.react.mod.global.JSX.Element
 import typings.reactMosaicComponent.anon.BlueprintNamespace
 import typings.reactMosaicComponent.anon.ClassName
 import typings.reactMosaicComponent.anon.PartialMosaicStateMosaicK
-import typings.reactMosaicComponent.internalTypesMod.MosaicDropTargetPosition
-import typings.reactMosaicComponent.mosaicButtonMod.MosaicButtonProps
-import typings.reactMosaicComponent.mosaicMod.MosaicProps
-import typings.reactMosaicComponent.mosaicMod.MosaicState
-import typings.reactMosaicComponent.mosaicUtilitiesMod.Corner
-import typings.reactMosaicComponent.mosaicWindowMod.MosaicWindowProps
-import typings.reactMosaicComponent.mosaicZeroStateMod.MosaicZeroStateProps
-import typings.reactMosaicComponent.typesMod.MosaicBranch
-import typings.reactMosaicComponent.typesMod.MosaicDirection
-import typings.reactMosaicComponent.typesMod.MosaicKey
-import typings.reactMosaicComponent.typesMod.MosaicNode
-import typings.reactMosaicComponent.typesMod.MosaicPath
-import typings.reactMosaicComponent.typesMod.MosaicUpdate
-import typings.reactMosaicComponent.typesMod.MosaicUpdateSpec
+import typings.reactMosaicComponent.libButtonsMosaicButtonMod.MosaicButtonProps
+import typings.reactMosaicComponent.libInternalTypesMod.MosaicDropTargetPosition
+import typings.reactMosaicComponent.libMosaicMod.MosaicProps
+import typings.reactMosaicComponent.libMosaicMod.MosaicState
+import typings.reactMosaicComponent.libMosaicWindowMod.MosaicWindowProps
+import typings.reactMosaicComponent.libMosaicZeroStateMod.MosaicZeroStateProps
+import typings.reactMosaicComponent.libTypesMod.MosaicBranch
+import typings.reactMosaicComponent.libTypesMod.MosaicDirection
+import typings.reactMosaicComponent.libTypesMod.MosaicKey
+import typings.reactMosaicComponent.libTypesMod.MosaicNode
+import typings.reactMosaicComponent.libTypesMod.MosaicPath
+import typings.reactMosaicComponent.libTypesMod.MosaicUpdate
+import typings.reactMosaicComponent.libTypesMod.MosaicUpdateSpec
+import typings.reactMosaicComponent.libUtilMosaicUtilitiesMod.Corner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,15 +39,15 @@ object mod {
   object Corner extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.reactMosaicComponent.mosaicUtilitiesMod.Corner & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.reactMosaicComponent.libUtilMosaicUtilitiesMod.Corner & Double] = js.native
     
-    /* 3 */ val BOTTOM_LEFT: typings.reactMosaicComponent.mosaicUtilitiesMod.Corner.BOTTOM_LEFT & Double = js.native
+    /* 3 */ val BOTTOM_LEFT: typings.reactMosaicComponent.libUtilMosaicUtilitiesMod.Corner.BOTTOM_LEFT & Double = js.native
     
-    /* 4 */ val BOTTOM_RIGHT: typings.reactMosaicComponent.mosaicUtilitiesMod.Corner.BOTTOM_RIGHT & Double = js.native
+    /* 4 */ val BOTTOM_RIGHT: typings.reactMosaicComponent.libUtilMosaicUtilitiesMod.Corner.BOTTOM_RIGHT & Double = js.native
     
-    /* 1 */ val TOP_LEFT: typings.reactMosaicComponent.mosaicUtilitiesMod.Corner.TOP_LEFT & Double = js.native
+    /* 1 */ val TOP_LEFT: typings.reactMosaicComponent.libUtilMosaicUtilitiesMod.Corner.TOP_LEFT & Double = js.native
     
-    /* 2 */ val TOP_RIGHT: typings.reactMosaicComponent.mosaicUtilitiesMod.Corner.TOP_RIGHT & Double = js.native
+    /* 2 */ val TOP_RIGHT: typings.reactMosaicComponent.libUtilMosaicUtilitiesMod.Corner.TOP_RIGHT & Double = js.native
   }
   
   @JSImport("react-mosaic-component", "DEFAULT_CONTROLS_WITHOUT_CREATION")
@@ -63,7 +63,7 @@ object mod {
   @JSImport("react-mosaic-component", "ExpandButton")
   @js.native
   open class ExpandButton protected ()
-    extends typings.reactMosaicComponent.expandButtonMod.ExpandButton {
+    extends typings.reactMosaicComponent.libButtonsExpandButtonMod.ExpandButton {
     def this(props: MosaicButtonProps) = this()
     /**
       * @deprecated
@@ -80,14 +80,14 @@ object mod {
     
     @JSImport("react-mosaic-component", "ExpandButton.contextType")
     @js.native
-    def contextType: Context[typings.reactMosaicComponent.contextTypesMod.MosaicWindowContext] = js.native
-    inline def contextType_=(x: Context[typings.reactMosaicComponent.contextTypesMod.MosaicWindowContext]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    def contextType: Context[typings.reactMosaicComponent.libContextTypesMod.MosaicWindowContext] = js.native
+    inline def contextType_=(x: Context[typings.reactMosaicComponent.libContextTypesMod.MosaicWindowContext]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-mosaic-component", "Mosaic")
   @js.native
   open class Mosaic[T /* <: MosaicKey */] protected ()
-    extends typings.reactMosaicComponent.mosaicMod.Mosaic[T] {
+    extends typings.reactMosaicComponent.libMosaicMod.Mosaic[T] {
     def this(props: MosaicProps[T]) = this()
     /**
       * @deprecated
@@ -98,7 +98,7 @@ object mod {
   
   @JSImport("react-mosaic-component", "MosaicContext")
   @js.native
-  val MosaicContext: Context[typings.reactMosaicComponent.contextTypesMod.MosaicContext[MosaicKey]] = js.native
+  val MosaicContext: Context[typings.reactMosaicComponent.libContextTypesMod.MosaicContext[MosaicKey]] = js.native
   
   object MosaicDragType {
     
@@ -115,7 +115,7 @@ object mod {
   @JSImport("react-mosaic-component", "MosaicWindow")
   @js.native
   open class MosaicWindow[T /* <: MosaicKey */] protected ()
-    extends typings.reactMosaicComponent.mosaicWindowMod.MosaicWindow[T] {
+    extends typings.reactMosaicComponent.libMosaicWindowMod.MosaicWindow[T] {
     def this(props: MosaicWindowProps[T]) = this()
     /**
       * @deprecated
@@ -126,12 +126,12 @@ object mod {
   
   @JSImport("react-mosaic-component", "MosaicWindowContext")
   @js.native
-  val MosaicWindowContext: Context[typings.reactMosaicComponent.contextTypesMod.MosaicWindowContext] = js.native
+  val MosaicWindowContext: Context[typings.reactMosaicComponent.libContextTypesMod.MosaicWindowContext] = js.native
   
   @JSImport("react-mosaic-component", "MosaicWithoutDragDropContext")
   @js.native
   open class MosaicWithoutDragDropContext[T /* <: MosaicKey */] protected ()
-    extends typings.reactMosaicComponent.mosaicMod.MosaicWithoutDragDropContext[T] {
+    extends typings.reactMosaicComponent.libMosaicMod.MosaicWithoutDragDropContext[T] {
     def this(props: MosaicProps[T]) = this()
     /**
       * @deprecated
@@ -157,7 +157,7 @@ object mod {
   @JSImport("react-mosaic-component", "MosaicZeroState")
   @js.native
   open class MosaicZeroState[T /* <: MosaicKey */] protected ()
-    extends typings.reactMosaicComponent.mosaicZeroStateMod.MosaicZeroState[T] {
+    extends typings.reactMosaicComponent.libMosaicZeroStateMod.MosaicZeroState[T] {
     def this(props: MosaicZeroStateProps[T]) = this()
     /**
       * @deprecated
@@ -174,14 +174,14 @@ object mod {
     
     @JSImport("react-mosaic-component", "MosaicZeroState.contextType")
     @js.native
-    def contextType: Context[typings.reactMosaicComponent.contextTypesMod.MosaicContext[MosaicKey]] = js.native
-    inline def contextType_=(x: Context[typings.reactMosaicComponent.contextTypesMod.MosaicContext[MosaicKey]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    def contextType: Context[typings.reactMosaicComponent.libContextTypesMod.MosaicContext[MosaicKey]] = js.native
+    inline def contextType_=(x: Context[typings.reactMosaicComponent.libContextTypesMod.MosaicContext[MosaicKey]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-mosaic-component", "RemoveButton")
   @js.native
   open class RemoveButton protected ()
-    extends typings.reactMosaicComponent.removeButtonMod.RemoveButton {
+    extends typings.reactMosaicComponent.libButtonsRemoveButtonMod.RemoveButton {
     def this(props: MosaicButtonProps) = this()
     /**
       * @deprecated
@@ -198,14 +198,14 @@ object mod {
     
     @JSImport("react-mosaic-component", "RemoveButton.contextType")
     @js.native
-    def contextType: Context[typings.reactMosaicComponent.contextTypesMod.MosaicWindowContext] = js.native
-    inline def contextType_=(x: Context[typings.reactMosaicComponent.contextTypesMod.MosaicWindowContext]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    def contextType: Context[typings.reactMosaicComponent.libContextTypesMod.MosaicWindowContext] = js.native
+    inline def contextType_=(x: Context[typings.reactMosaicComponent.libContextTypesMod.MosaicWindowContext]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-mosaic-component", "ReplaceButton")
   @js.native
   open class ReplaceButton protected ()
-    extends typings.reactMosaicComponent.replaceButtonMod.ReplaceButton {
+    extends typings.reactMosaicComponent.libButtonsReplaceButtonMod.ReplaceButton {
     def this(props: MosaicButtonProps) = this()
     /**
       * @deprecated
@@ -222,14 +222,14 @@ object mod {
     
     @JSImport("react-mosaic-component", "ReplaceButton.contextType")
     @js.native
-    def contextType: Context[typings.reactMosaicComponent.contextTypesMod.MosaicWindowContext] = js.native
-    inline def contextType_=(x: Context[typings.reactMosaicComponent.contextTypesMod.MosaicWindowContext]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    def contextType: Context[typings.reactMosaicComponent.libContextTypesMod.MosaicWindowContext] = js.native
+    inline def contextType_=(x: Context[typings.reactMosaicComponent.libContextTypesMod.MosaicWindowContext]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-mosaic-component", "Separator")
   @js.native
   open class Separator protected ()
-    extends typings.reactMosaicComponent.separatorMod.Separator {
+    extends typings.reactMosaicComponent.libButtonsSeparatorMod.Separator {
     def this(props: js.Object) = this()
     /**
       * @deprecated
@@ -241,7 +241,7 @@ object mod {
   @JSImport("react-mosaic-component", "SplitButton")
   @js.native
   open class SplitButton protected ()
-    extends typings.reactMosaicComponent.splitButtonMod.SplitButton {
+    extends typings.reactMosaicComponent.libButtonsSplitButtonMod.SplitButton {
     def this(props: MosaicButtonProps) = this()
     /**
       * @deprecated
@@ -258,8 +258,8 @@ object mod {
     
     @JSImport("react-mosaic-component", "SplitButton.contextType")
     @js.native
-    def contextType: Context[typings.reactMosaicComponent.contextTypesMod.MosaicWindowContext] = js.native
-    inline def contextType_=(x: Context[typings.reactMosaicComponent.contextTypesMod.MosaicWindowContext]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    def contextType: Context[typings.reactMosaicComponent.libContextTypesMod.MosaicWindowContext] = js.native
+    inline def contextType_=(x: Context[typings.reactMosaicComponent.libContextTypesMod.MosaicWindowContext]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   }
   
   inline def buildSpecFromUpdate[T /* <: MosaicKey */](mosaicUpdate: MosaicUpdate[T]): MosaicUpdateSpec[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildSpecFromUpdate")(mosaicUpdate.asInstanceOf[js.Any]).asInstanceOf[MosaicUpdateSpec[T]]

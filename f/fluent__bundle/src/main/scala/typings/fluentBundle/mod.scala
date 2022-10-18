@@ -12,7 +12,7 @@ object mod {
   @JSImport("@fluent/bundle", "FluentBundle")
   @js.native
   open class FluentBundle protected ()
-    extends typings.fluentBundle.bundleMod.FluentBundle {
+    extends typings.fluentBundle.esmBundleMod.FluentBundle {
     /**
       * Create an instance of `FluentBundle`.
       *
@@ -51,7 +51,7 @@ object mod {
   @JSImport("@fluent/bundle", "FluentDateTime")
   @js.native
   open class FluentDateTime protected ()
-    extends typings.fluentBundle.typesMod.FluentDateTime {
+    extends typings.fluentBundle.esmTypesMod.FluentDateTime {
     /**
       * Create an instance of `FluentDateTime` with options to the
       * `Intl.DateTimeFormat` constructor.
@@ -70,14 +70,14 @@ object mod {
     * @param value The fallback value of this `FluentNone`.
     */
   open class FluentNone ()
-    extends typings.fluentBundle.typesMod.FluentNone {
+    extends typings.fluentBundle.esmTypesMod.FluentNone {
     def this(value: String) = this()
   }
   
   @JSImport("@fluent/bundle", "FluentNumber")
   @js.native
   open class FluentNumber protected ()
-    extends typings.fluentBundle.typesMod.FluentNumber {
+    extends typings.fluentBundle.esmTypesMod.FluentNumber {
     /**
       * Create an instance of `FluentNumber` with options to the
       * `Intl.NumberFormat` constructor.
@@ -92,14 +92,14 @@ object mod {
   @JSImport("@fluent/bundle", "FluentResource")
   @js.native
   open class FluentResource protected ()
-    extends typings.fluentBundle.resourceMod.FluentResource {
+    extends typings.fluentBundle.esmResourceMod.FluentResource {
     def this(source: String) = this()
   }
   
-  @JSImport("@fluent/bundle", "FluentType")
+  /* note: abstract class */ @JSImport("@fluent/bundle", "FluentType")
   @js.native
-  abstract class FluentType[T] protected ()
-    extends typings.fluentBundle.typesMod.FluentType[T] {
+  open class FluentType[T] protected ()
+    extends typings.fluentBundle.esmTypesMod.FluentType[T] {
     /**
       * Create a `FluentType` instance.
       *

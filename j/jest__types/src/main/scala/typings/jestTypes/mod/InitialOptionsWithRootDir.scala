@@ -147,6 +147,8 @@ trait InitialOptionsWithRootDir extends StObject {
   
   var setupFilesAfterEnv: js.UndefOr[js.Array[String]] = js.undefined
   
+  var showSeed: js.UndefOr[Boolean] = js.undefined
+  
   var silent: js.UndefOr[Boolean] = js.undefined
   
   var skipFilter: js.UndefOr[Boolean] = js.undefined
@@ -529,6 +531,10 @@ object InitialOptionsWithRootDir {
     inline def setSetupFilesUndefined: Self = StObject.set(x, "setupFiles", js.undefined)
     
     inline def setSetupFilesVarargs(value: String*): Self = StObject.set(x, "setupFiles", js.Array(value*))
+    
+    inline def setShowSeed(value: Boolean): Self = StObject.set(x, "showSeed", value.asInstanceOf[js.Any])
+    
+    inline def setShowSeedUndefined: Self = StObject.set(x, "showSeed", js.undefined)
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

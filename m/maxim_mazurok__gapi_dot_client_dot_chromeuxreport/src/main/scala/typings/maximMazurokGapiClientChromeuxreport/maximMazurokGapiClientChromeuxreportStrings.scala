@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientChromeuxreportStrings {
   
   @js.native
-  sealed trait Record extends StObject
-  inline def Record: Record = "Record".asInstanceOf[Record]
-  
-  @js.native
   sealed trait chromeuxreport extends StObject
   inline def chromeuxreport: chromeuxreport = "chromeuxreport".asInstanceOf[chromeuxreport]
   

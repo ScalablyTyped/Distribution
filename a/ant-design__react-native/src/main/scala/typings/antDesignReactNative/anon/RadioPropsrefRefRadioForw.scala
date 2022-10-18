@@ -1,8 +1,8 @@
 package typings.antDesignReactNative.anon
 
-import typings.antDesignReactNative.checkboxPropsTypeMod.OnChangeParams
-import typings.antDesignReactNative.radioPropsTypeMod.RadioForwardedRef
-import typings.antDesignReactNative.radioPropsTypeMod.RadioValue
+import typings.antDesignReactNative.libCheckboxPropsTypeMod.OnChangeParams
+import typings.antDesignReactNative.libRadioPropsTypeMod.RadioForwardedRef
+import typings.antDesignReactNative.libRadioPropsTypeMod.RadioValue
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.reactNative.mod.StyleProp

@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialSunburstOptions
-import typings.antvG2plot.sunburstTypesMod.SunburstOptions
+import typings.antvG2plot.libPlotsSunburstTypesMod.SunburstOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Sunburst")
 @js.native
 open class Sunburst protected ()
-  extends typings.antvG2plot.sunburstMod.Sunburst {
+  extends typings.antvG2plot.libPlotsSunburstMod.Sunburst {
   def this(container: String, options: SunburstOptions) = this()
   def this(container: HTMLElement, options: SunburstOptions) = this()
 }

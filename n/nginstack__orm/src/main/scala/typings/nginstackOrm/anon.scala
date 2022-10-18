@@ -1,6 +1,6 @@
 package typings.nginstackOrm
 
-import typings.nginstackOrm.entityMod.Field
+import typings.nginstackOrm.libEntityMod.Field
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,14 +59,14 @@ object anon {
   
   trait UserKey extends StObject {
     
-    var fields: js.Array[String] | (js.Function1[/* arg0 */ typings.nginstackOrm.entitySetMod.Field, Boolean])
+    var fields: js.Array[String] | (js.Function1[/* arg0 */ typings.nginstackOrm.libEntitySetMod.Field, Boolean])
     
     var userKey: Double
   }
   object UserKey {
     
     inline def apply(
-      fields: js.Array[String] | (js.Function1[/* arg0 */ typings.nginstackOrm.entitySetMod.Field, Boolean]),
+      fields: js.Array[String] | (js.Function1[/* arg0 */ typings.nginstackOrm.libEntitySetMod.Field, Boolean]),
       userKey: Double
     ): UserKey = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], userKey = userKey.asInstanceOf[js.Any])
@@ -76,10 +76,10 @@ object anon {
     extension [Self <: UserKey](x: Self) {
       
       inline def setFields(
-        value: js.Array[String] | (js.Function1[/* arg0 */ typings.nginstackOrm.entitySetMod.Field, Boolean])
+        value: js.Array[String] | (js.Function1[/* arg0 */ typings.nginstackOrm.libEntitySetMod.Field, Boolean])
       ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      inline def setFieldsFunction1(value: /* arg0 */ typings.nginstackOrm.entitySetMod.Field => Boolean): Self = StObject.set(x, "fields", js.Any.fromFunction1(value))
+      inline def setFieldsFunction1(value: /* arg0 */ typings.nginstackOrm.libEntitySetMod.Field => Boolean): Self = StObject.set(x, "fields", js.Any.fromFunction1(value))
       
       inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
       

@@ -8,11 +8,11 @@ import typings.ionic.definitionsMod.IProject
 import typings.ionic.definitionsMod.IShell
 import typings.ionic.definitionsMod.IntegrationName
 import typings.ionic.definitionsMod.ProjectIntegration
-import typings.ionic.integrationsCapacitorMod.Integration
 import typings.ionic.ionicStrings.capacitor
 import typings.ionic.ionicStrings.cordova
 import typings.ionic.ionicStrings.enterprise
-import typings.ionicCliFramework.configMod.BaseConfigOptions
+import typings.ionic.libIntegrationsCapacitorMod.Integration
+import typings.ionicCliFramework.libConfigMod.BaseConfigOptions
 import typings.ionicCliFramework.mod.BaseConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libIntegrationsMod {
   
-  @JSImport("ionic/lib/integrations", "BaseIntegration")
+  /* note: abstract class */ @JSImport("ionic/lib/integrations", "BaseIntegration")
   @js.native
-  abstract class BaseIntegration[T /* <: ProjectIntegration */] protected ()
+  open class BaseIntegration[T /* <: ProjectIntegration */] protected ()
     extends StObject
        with IIntegration[T] {
     def this(e: IntegrationDeps) = this()
@@ -42,9 +42,9 @@ object libIntegrationsMod {
     
     inline def createFromName_capacitor(deps: IntegrationDeps, name: capacitor): js.Promise[Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Integration]]
     
-    inline def createFromName_cordova(deps: IntegrationDeps, name: cordova): js.Promise[typings.ionic.integrationsCordovaMod.Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ionic.integrationsCordovaMod.Integration]]
+    inline def createFromName_cordova(deps: IntegrationDeps, name: cordova): js.Promise[typings.ionic.libIntegrationsCordovaMod.Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ionic.libIntegrationsCordovaMod.Integration]]
     
-    inline def createFromName_enterprise(deps: IntegrationDeps, name: enterprise): js.Promise[typings.ionic.integrationsEnterpriseMod.Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ionic.integrationsEnterpriseMod.Integration]]
+    inline def createFromName_enterprise(deps: IntegrationDeps, name: enterprise): js.Promise[typings.ionic.libIntegrationsEnterpriseMod.Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ionic.libIntegrationsEnterpriseMod.Integration]]
   }
   
   @JSImport("ionic/lib/integrations", "INTEGRATION_NAMES")
@@ -61,9 +61,9 @@ object libIntegrationsMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.ionic.integrationsCapacitorMod.Integration
-    - typings.ionic.integrationsCordovaMod.Integration
-    - typings.ionic.integrationsEnterpriseMod.Integration
+    - typings.ionic.libIntegrationsCapacitorMod.Integration
+    - typings.ionic.libIntegrationsCordovaMod.Integration
+    - typings.ionic.libIntegrationsEnterpriseMod.Integration
   */
   trait IntegationUnion extends StObject
   

@@ -2,6 +2,7 @@ package typings.officeJs.global.Excel
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.officeJs.OfficeExtension.ClientRequestContext
+import typings.officeJs.OfficeExtension.ClientResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +37,16 @@ open class ChartFill ()
   var context_ChartFill: typings.officeJs.Excel.RequestContext = js.native
   
   /**
-    *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+    * Gets the uniform color fill formatting of a chart element.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  /* CompleteClass */
+  override def getSolidColor(): ClientResult[String] = js.native
+  
+  /**
+    *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
     * isNullObject property.
     */
   /* CompleteClass */

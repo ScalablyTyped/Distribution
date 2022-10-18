@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.baseMod.base.DependsObject
+import typings.mangopay2NodejsSdk.typingsBaseMod.base.DependsObject
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

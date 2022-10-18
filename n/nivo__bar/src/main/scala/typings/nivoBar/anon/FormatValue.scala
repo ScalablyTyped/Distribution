@@ -1,8 +1,8 @@
 package typings.nivoBar.anon
 
-import typings.nivoBar.typesMod.BarDatum
-import typings.nivoBar.typesMod.ComputedDatum
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScale
+import typings.nivoBar.distTypesTypesMod.BarDatum
+import typings.nivoBar.distTypesTypesMod.ComputedDatum
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScale
 import typings.nivoCore.mod.Margin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

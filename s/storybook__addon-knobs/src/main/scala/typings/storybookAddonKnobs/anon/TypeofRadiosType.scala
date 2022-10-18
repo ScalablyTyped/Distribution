@@ -1,7 +1,7 @@
 package typings.storybookAddonKnobs.anon
 
-import typings.storybookAddonKnobs.radioMod.RadiosTypeKnobValue
-import typings.storybookAddonKnobs.radioMod.RadiosTypeProps
+import typings.storybookAddonKnobs.distComponentsTypesRadioMod.RadiosTypeKnobValue
+import typings.storybookAddonKnobs.distComponentsTypesRadioMod.RadiosTypeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

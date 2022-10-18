@@ -11,6 +11,11 @@ trait MeshAssetTask
      with AbstractAssetTask {
   
   /**
+    * Defines the extension to use to load the scene (if not defined, ".babylon" will be used)
+    */
+  var `extension`: js.UndefOr[String] = js.native
+  
+  /**
     * Gets the list of loaded animation groups
     */
   var loadedAnimationGroups: js.Array[AnimationGroup] = js.native

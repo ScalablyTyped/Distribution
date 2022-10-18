@@ -1,0 +1,27 @@
+package typings.victoryCore.libMod
+
+import typings.react.mod.ReactElement
+import typings.victoryCore.anon.LineComponent
+import typings.victoryCore.libVictoryPrimitivesLineSegmentMod.LineSegmentProps
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object LineSegment {
+  
+  inline def apply(props: LineSegmentProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
+  @JSImport("victory-core/lib", "LineSegment")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("victory-core/lib", "LineSegment.defaultProps")
+  @js.native
+  def defaultProps: LineComponent = js.native
+  inline def defaultProps_=(x: LineComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("victory-core/lib", "LineSegment.propTypes")
+  @js.native
+  def propTypes: typings.victoryCore.anon.ClipPath = js.native
+  inline def propTypes_=(x: typings.victoryCore.anon.ClipPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+}

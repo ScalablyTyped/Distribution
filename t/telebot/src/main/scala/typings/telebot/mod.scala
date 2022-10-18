@@ -1,7 +1,7 @@
 package typings.telebot
 
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
-import typings.std.ReadableStream
 import typings.telebot.anon.CacheTime
 import typings.telebot.anon.Caption
 import typings.telebot.anon.Cert
@@ -339,18 +339,18 @@ object mod {
     def sendAudio(chat_id: String, file: String, opt: Duration): js.Promise[Any] = js.native
     def sendAudio(chat_id: String, file: Any): js.Promise[Any] = js.native
     def sendAudio(chat_id: String, file: Any, opt: Duration): js.Promise[Any] = js.native
+    def sendAudio(chat_id: String, file: ReadableStream): js.Promise[Any] = js.native
+    def sendAudio(chat_id: String, file: ReadableStream, opt: Duration): js.Promise[Any] = js.native
     def sendAudio(chat_id: String, file: Buffer): js.Promise[Any] = js.native
     def sendAudio(chat_id: String, file: Buffer, opt: Duration): js.Promise[Any] = js.native
-    def sendAudio(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendAudio(chat_id: String, file: ReadableStream[Any], opt: Duration): js.Promise[Any] = js.native
     def sendAudio(chat_id: Double, file: String): js.Promise[Any] = js.native
     def sendAudio(chat_id: Double, file: String, opt: Duration): js.Promise[Any] = js.native
     def sendAudio(chat_id: Double, file: Any): js.Promise[Any] = js.native
     def sendAudio(chat_id: Double, file: Any, opt: Duration): js.Promise[Any] = js.native
+    def sendAudio(chat_id: Double, file: ReadableStream): js.Promise[Any] = js.native
+    def sendAudio(chat_id: Double, file: ReadableStream, opt: Duration): js.Promise[Any] = js.native
     def sendAudio(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
     def sendAudio(chat_id: Double, file: Buffer, opt: Duration): js.Promise[Any] = js.native
-    def sendAudio(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendAudio(chat_id: Double, file: ReadableStream[Any], opt: Duration): js.Promise[Any] = js.native
     
     def sendContact(chat_id: String, number: String, firstName: String): js.Promise[Any] = js.native
     def sendContact(chat_id: String, number: String, firstName: String, lastName: String): js.Promise[Any] = js.native
@@ -365,18 +365,18 @@ object mod {
     def sendDocument(chat_id: String, file: String, opt: Caption): js.Promise[Any] = js.native
     def sendDocument(chat_id: String, file: Any): js.Promise[Any] = js.native
     def sendDocument(chat_id: String, file: Any, opt: Caption): js.Promise[Any] = js.native
+    def sendDocument(chat_id: String, file: ReadableStream): js.Promise[Any] = js.native
+    def sendDocument(chat_id: String, file: ReadableStream, opt: Caption): js.Promise[Any] = js.native
     def sendDocument(chat_id: String, file: Buffer): js.Promise[Any] = js.native
     def sendDocument(chat_id: String, file: Buffer, opt: Caption): js.Promise[Any] = js.native
-    def sendDocument(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendDocument(chat_id: String, file: ReadableStream[Any], opt: Caption): js.Promise[Any] = js.native
     def sendDocument(chat_id: Double, file: String): js.Promise[Any] = js.native
     def sendDocument(chat_id: Double, file: String, opt: Caption): js.Promise[Any] = js.native
     def sendDocument(chat_id: Double, file: Any): js.Promise[Any] = js.native
     def sendDocument(chat_id: Double, file: Any, opt: Caption): js.Promise[Any] = js.native
+    def sendDocument(chat_id: Double, file: ReadableStream): js.Promise[Any] = js.native
+    def sendDocument(chat_id: Double, file: ReadableStream, opt: Caption): js.Promise[Any] = js.native
     def sendDocument(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
     def sendDocument(chat_id: Double, file: Buffer, opt: Caption): js.Promise[Any] = js.native
-    def sendDocument(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendDocument(chat_id: Double, file: ReadableStream[Any], opt: Caption): js.Promise[Any] = js.native
     
     def sendGame(chat_id: String, game_short_name: String): js.Promise[Any] = js.native
     def sendGame(chat_id: String, game_short_name: String, opt: NotificationReplyMarkup): js.Promise[Any] = js.native
@@ -400,35 +400,35 @@ object mod {
     def sendPhoto(chat_id: String, file: String, opt: Caption): js.Promise[Any] = js.native
     def sendPhoto(chat_id: String, file: Any): js.Promise[Any] = js.native
     def sendPhoto(chat_id: String, file: Any, opt: Caption): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: String, file: ReadableStream): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: String, file: ReadableStream, opt: Caption): js.Promise[Any] = js.native
     def sendPhoto(chat_id: String, file: Buffer): js.Promise[Any] = js.native
     def sendPhoto(chat_id: String, file: Buffer, opt: Caption): js.Promise[Any] = js.native
-    def sendPhoto(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendPhoto(chat_id: String, file: ReadableStream[Any], opt: Caption): js.Promise[Any] = js.native
     def sendPhoto(chat_id: Double, file: String): js.Promise[Any] = js.native
     def sendPhoto(chat_id: Double, file: String, opt: Caption): js.Promise[Any] = js.native
     def sendPhoto(chat_id: Double, file: Any): js.Promise[Any] = js.native
     def sendPhoto(chat_id: Double, file: Any, opt: Caption): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: Double, file: ReadableStream): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: Double, file: ReadableStream, opt: Caption): js.Promise[Any] = js.native
     def sendPhoto(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
     def sendPhoto(chat_id: Double, file: Buffer, opt: Caption): js.Promise[Any] = js.native
-    def sendPhoto(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendPhoto(chat_id: Double, file: ReadableStream[Any], opt: Caption): js.Promise[Any] = js.native
     
     def sendSticker(chat_id: String, file: String): js.Promise[Any] = js.native
     def sendSticker(chat_id: String, file: String, opt: FileName): js.Promise[Any] = js.native
     def sendSticker(chat_id: String, file: Any): js.Promise[Any] = js.native
     def sendSticker(chat_id: String, file: Any, opt: FileName): js.Promise[Any] = js.native
+    def sendSticker(chat_id: String, file: ReadableStream): js.Promise[Any] = js.native
+    def sendSticker(chat_id: String, file: ReadableStream, opt: FileName): js.Promise[Any] = js.native
     def sendSticker(chat_id: String, file: Buffer): js.Promise[Any] = js.native
     def sendSticker(chat_id: String, file: Buffer, opt: FileName): js.Promise[Any] = js.native
-    def sendSticker(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendSticker(chat_id: String, file: ReadableStream[Any], opt: FileName): js.Promise[Any] = js.native
     def sendSticker(chat_id: Double, file: String): js.Promise[Any] = js.native
     def sendSticker(chat_id: Double, file: String, opt: FileName): js.Promise[Any] = js.native
     def sendSticker(chat_id: Double, file: Any): js.Promise[Any] = js.native
     def sendSticker(chat_id: Double, file: Any, opt: FileName): js.Promise[Any] = js.native
+    def sendSticker(chat_id: Double, file: ReadableStream): js.Promise[Any] = js.native
+    def sendSticker(chat_id: Double, file: ReadableStream, opt: FileName): js.Promise[Any] = js.native
     def sendSticker(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
     def sendSticker(chat_id: Double, file: Buffer, opt: FileName): js.Promise[Any] = js.native
-    def sendSticker(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendSticker(chat_id: Double, file: ReadableStream[Any], opt: FileName): js.Promise[Any] = js.native
     
     def sendVenue(chat_id: String, coords: js.Tuple2[Double, Double], title: String, address: String): js.Promise[Any] = js.native
     def sendVenue(
@@ -451,52 +451,52 @@ object mod {
     def sendVideo(chat_id: String, file: String, opt: Height): js.Promise[Any] = js.native
     def sendVideo(chat_id: String, file: Any): js.Promise[Any] = js.native
     def sendVideo(chat_id: String, file: Any, opt: Height): js.Promise[Any] = js.native
+    def sendVideo(chat_id: String, file: ReadableStream): js.Promise[Any] = js.native
+    def sendVideo(chat_id: String, file: ReadableStream, opt: Height): js.Promise[Any] = js.native
     def sendVideo(chat_id: String, file: Buffer): js.Promise[Any] = js.native
     def sendVideo(chat_id: String, file: Buffer, opt: Height): js.Promise[Any] = js.native
-    def sendVideo(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendVideo(chat_id: String, file: ReadableStream[Any], opt: Height): js.Promise[Any] = js.native
     def sendVideo(chat_id: Double, file: String): js.Promise[Any] = js.native
     def sendVideo(chat_id: Double, file: String, opt: Height): js.Promise[Any] = js.native
     def sendVideo(chat_id: Double, file: Any): js.Promise[Any] = js.native
     def sendVideo(chat_id: Double, file: Any, opt: Height): js.Promise[Any] = js.native
+    def sendVideo(chat_id: Double, file: ReadableStream): js.Promise[Any] = js.native
+    def sendVideo(chat_id: Double, file: ReadableStream, opt: Height): js.Promise[Any] = js.native
     def sendVideo(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
     def sendVideo(chat_id: Double, file: Buffer, opt: Height): js.Promise[Any] = js.native
-    def sendVideo(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendVideo(chat_id: Double, file: ReadableStream[Any], opt: Height): js.Promise[Any] = js.native
     
     def sendVideoNote(chat_id: String, file: String): js.Promise[Any] = js.native
     def sendVideoNote(chat_id: String, file: String, opt: ReplyMarkup): js.Promise[Any] = js.native
     def sendVideoNote(chat_id: String, file: Any): js.Promise[Any] = js.native
     def sendVideoNote(chat_id: String, file: Any, opt: ReplyMarkup): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: String, file: ReadableStream): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: String, file: ReadableStream, opt: ReplyMarkup): js.Promise[Any] = js.native
     def sendVideoNote(chat_id: String, file: Buffer): js.Promise[Any] = js.native
     def sendVideoNote(chat_id: String, file: Buffer, opt: ReplyMarkup): js.Promise[Any] = js.native
-    def sendVideoNote(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendVideoNote(chat_id: String, file: ReadableStream[Any], opt: ReplyMarkup): js.Promise[Any] = js.native
     def sendVideoNote(chat_id: Double, file: String): js.Promise[Any] = js.native
     def sendVideoNote(chat_id: Double, file: String, opt: ReplyMarkup): js.Promise[Any] = js.native
     def sendVideoNote(chat_id: Double, file: Any): js.Promise[Any] = js.native
     def sendVideoNote(chat_id: Double, file: Any, opt: ReplyMarkup): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: Double, file: ReadableStream): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: Double, file: ReadableStream, opt: ReplyMarkup): js.Promise[Any] = js.native
     def sendVideoNote(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
     def sendVideoNote(chat_id: Double, file: Buffer, opt: ReplyMarkup): js.Promise[Any] = js.native
-    def sendVideoNote(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendVideoNote(chat_id: Double, file: ReadableStream[Any], opt: ReplyMarkup): js.Promise[Any] = js.native
     
     def sendVoice(chat_id: String, file: String): js.Promise[Any] = js.native
     def sendVoice(chat_id: String, file: String, opt: ReplyToMessage): js.Promise[Any] = js.native
     def sendVoice(chat_id: String, file: Any): js.Promise[Any] = js.native
     def sendVoice(chat_id: String, file: Any, opt: ReplyToMessage): js.Promise[Any] = js.native
+    def sendVoice(chat_id: String, file: ReadableStream): js.Promise[Any] = js.native
+    def sendVoice(chat_id: String, file: ReadableStream, opt: ReplyToMessage): js.Promise[Any] = js.native
     def sendVoice(chat_id: String, file: Buffer): js.Promise[Any] = js.native
     def sendVoice(chat_id: String, file: Buffer, opt: ReplyToMessage): js.Promise[Any] = js.native
-    def sendVoice(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendVoice(chat_id: String, file: ReadableStream[Any], opt: ReplyToMessage): js.Promise[Any] = js.native
     def sendVoice(chat_id: Double, file: String): js.Promise[Any] = js.native
     def sendVoice(chat_id: Double, file: String, opt: ReplyToMessage): js.Promise[Any] = js.native
     def sendVoice(chat_id: Double, file: Any): js.Promise[Any] = js.native
     def sendVoice(chat_id: Double, file: Any, opt: ReplyToMessage): js.Promise[Any] = js.native
+    def sendVoice(chat_id: Double, file: ReadableStream): js.Promise[Any] = js.native
+    def sendVoice(chat_id: Double, file: ReadableStream, opt: ReplyToMessage): js.Promise[Any] = js.native
     def sendVoice(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
     def sendVoice(chat_id: Double, file: Buffer, opt: ReplyToMessage): js.Promise[Any] = js.native
-    def sendVoice(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
-    def sendVoice(chat_id: Double, file: ReadableStream[Any], opt: ReplyToMessage): js.Promise[Any] = js.native
     
     def setGameScore(user_id: Double, score: Double): js.Promise[Boolean | js.Error | Any] = js.native
     def setGameScore(user_id: Double, score: Double, opt: ChatId): js.Promise[Boolean | js.Error | Any] = js.native

@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [constant=0] - The distance of the plane from the origin.
   */
 open class Plane ()
-  extends typings.yuka.yukaMod.Plane {
-  def this(normal: typings.yuka.vector3Mod.Vector3) = this()
+  extends typings.yuka.srcYukaMod.Plane {
+  def this(normal: typings.yuka.srcMathVector3Mod.Vector3) = this()
   def this(normal: Unit, constant: Double) = this()
-  def this(normal: typings.yuka.vector3Mod.Vector3, constant: Double) = this()
+  def this(normal: typings.yuka.srcMathVector3Mod.Vector3, constant: Double) = this()
 }

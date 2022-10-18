@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xmldsigjs", "DigestMethod")
 @js.native
 open class DigestMethod ()
-  extends typings.xmldsigjs.xmlMod.DigestMethod {
+  extends typings.xmldsigjs.buildTypesXmlMod.DigestMethod {
   def this(hashNamespace: String) = this()
 }

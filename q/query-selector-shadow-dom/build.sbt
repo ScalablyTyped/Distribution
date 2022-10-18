@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "query-selector-shadow-dom"
-version := "1.0.0-4d3a41"
+version := "1.0.0-db8d85"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

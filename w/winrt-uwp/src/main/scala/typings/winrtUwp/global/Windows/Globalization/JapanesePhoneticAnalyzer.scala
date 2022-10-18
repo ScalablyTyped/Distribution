@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reads a Japanese string that is a combination of Kanji characters and Hiragana characters, and returns a collection of proper readings from the string with word breaks. */
-@JSGlobal("Windows.Globalization.JapanesePhoneticAnalyzer")
+/* note: abstract class */ @JSGlobal("Windows.Globalization.JapanesePhoneticAnalyzer")
 @js.native
-abstract class JapanesePhoneticAnalyzer ()
+open class JapanesePhoneticAnalyzer ()
   extends StObject
      with typings.winrtUwp.Windows.Globalization.JapanesePhoneticAnalyzer
 object JapanesePhoneticAnalyzer {

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AutocompleteData = StringDictionary[String | Null]
 
-type CharacterCounter = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<undefined> */ Any
+type CharacterCounter = Component[Unit]
 
-type Parallax = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<ParallaxOptions> */ Any
+type Parallax = Component[ParallaxOptions]
 
-type Range = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<undefined> */ Any
+type Range = Component[Unit]
 
-type ScrollSpy = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<ScrollSpyOptions> */ Any
+type ScrollSpy = Component[ScrollSpyOptions]

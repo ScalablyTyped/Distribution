@@ -15,7 +15,7 @@ trait Local extends StObject {
   
   var local: Symbol
   
-  var meta: js.UndefOr[Meta] = js.undefined
+  var meta: js.UndefOr[Meta | Null] = js.undefined
 }
 object Local {
   
@@ -37,6 +37,8 @@ object Local {
     inline def setLocal(value: Symbol): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    inline def setMetaNull: Self = StObject.set(x, "meta", null)
     
     inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
   }

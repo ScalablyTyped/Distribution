@@ -1,16 +1,16 @@
 package typings.slate
 
-import typings.slate.editorMod.NodeMatch
-import typings.slate.editorMod.PropsCompare
-import typings.slate.editorMod.PropsMerge
-import typings.slate.locationMod.Location
-import typings.slate.nodeMod.Node
-import typings.slate.operationMod.BaseSetSelectionOperation
-import typings.slate.pathMod.Path
-import typings.slate.rangeMod.Range
+import typings.slate.distInterfacesEditorMod.NodeMatch
+import typings.slate.distInterfacesEditorMod.PropsCompare
+import typings.slate.distInterfacesEditorMod.PropsMerge
+import typings.slate.distInterfacesLocationMod.Location
+import typings.slate.distInterfacesNodeMod.Node
+import typings.slate.distInterfacesOperationMod.BaseSetSelectionOperation
+import typings.slate.distInterfacesPathMod.Path
+import typings.slate.distInterfacesRangeMod.Range
+import typings.slate.distInterfacesTypesMod.MaximizeMode
+import typings.slate.distInterfacesTypesMod.RangeMode
 import typings.slate.slateStrings.set_selection
-import typings.slate.typesMod.MaximizeMode
-import typings.slate.typesMod.RangeMode
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

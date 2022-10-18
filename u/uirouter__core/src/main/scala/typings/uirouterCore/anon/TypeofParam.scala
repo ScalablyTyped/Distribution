@@ -1,12 +1,12 @@
 package typings.uirouterCore.anon
 
 import org.scalablytyped.runtime.Instantiable5
+import typings.uirouterCore.libParamsInterfaceMod.RawParams
+import typings.uirouterCore.libParamsMod.Param
+import typings.uirouterCore.libParamsParamMod.DefType
+import typings.uirouterCore.libParamsParamTypeMod.ParamType
+import typings.uirouterCore.libStateInterfaceMod.StateDeclaration
 import typings.uirouterCore.libUrlMod.UrlConfig
-import typings.uirouterCore.paramMod.DefType
-import typings.uirouterCore.paramTypeMod.ParamType
-import typings.uirouterCore.paramsInterfaceMod.RawParams
-import typings.uirouterCore.paramsMod.Param
-import typings.uirouterCore.stateInterfaceMod.StateDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,10 +34,14 @@ trait TypeofParam
     *
     * @returns any Param objects whose values were different between values1 and values2
     */
-  def changed(params: js.Array[typings.uirouterCore.paramMod.Param]): js.Array[typings.uirouterCore.paramMod.Param] = js.native
-  def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: Unit, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
-  def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
-  def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
+  def changed(params: js.Array[typings.uirouterCore.libParamsParamMod.Param]): js.Array[typings.uirouterCore.libParamsParamMod.Param] = js.native
+  def changed(params: js.Array[typings.uirouterCore.libParamsParamMod.Param], values1: Unit, values2: RawParams): js.Array[typings.uirouterCore.libParamsParamMod.Param] = js.native
+  def changed(params: js.Array[typings.uirouterCore.libParamsParamMod.Param], values1: RawParams): js.Array[typings.uirouterCore.libParamsParamMod.Param] = js.native
+  def changed(
+    params: js.Array[typings.uirouterCore.libParamsParamMod.Param],
+    values1: RawParams,
+    values2: RawParams
+  ): js.Array[typings.uirouterCore.libParamsParamMod.Param] = js.native
   
   /**
     * Checks if two param value objects are equal (for a set of [[Param]] objects)
@@ -48,15 +52,19 @@ trait TypeofParam
     *
     * @returns true if the param values in values1 and values2 are equal
     */
-  def equals(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = js.native
-  def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object): Boolean = js.native
-  def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object, values2: js.Object): Boolean = js.native
-  def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: Unit, values2: js.Object): Boolean = js.native
+  def equals(params: js.Array[typings.uirouterCore.libParamsParamMod.Param]): Boolean = js.native
+  def equals(params: js.Array[typings.uirouterCore.libParamsParamMod.Param], values1: js.Object): Boolean = js.native
+  def equals(
+    params: js.Array[typings.uirouterCore.libParamsParamMod.Param],
+    values1: js.Object,
+    values2: js.Object
+  ): Boolean = js.native
+  def equals(params: js.Array[typings.uirouterCore.libParamsParamMod.Param], values1: Unit, values2: js.Object): Boolean = js.native
   
   /** Returns true if a the parameter values are valid, according to the Param definitions */
-  def validates(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = js.native
-  def validates(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): Boolean = js.native
+  def validates(params: js.Array[typings.uirouterCore.libParamsParamMod.Param]): Boolean = js.native
+  def validates(params: js.Array[typings.uirouterCore.libParamsParamMod.Param], values: RawParams): Boolean = js.native
   
-  def values(params: js.Array[typings.uirouterCore.paramMod.Param]): RawParams = js.native
-  def values(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): RawParams = js.native
+  def values(params: js.Array[typings.uirouterCore.libParamsParamMod.Param]): RawParams = js.native
+  def values(params: js.Array[typings.uirouterCore.libParamsParamMod.Param], values: RawParams): RawParams = js.native
 }

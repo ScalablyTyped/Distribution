@@ -9,15 +9,15 @@ import typings.baseui.baseuiStrings.change_
 import typings.baseui.baseuiStrings.div
 import typings.baseui.baseuiStrings.li_
 import typings.baseui.baseuiStrings.ul
+import typings.baseui.dndListListMod.default
 import typings.baseui.dndListTypesMod.ListOverrides
 import typings.baseui.dndListTypesMod.SharedStylePropsArg
 import typings.baseui.dndListTypesMod.State
 import typings.baseui.dndListTypesMod.StateReducer
 import typings.baseui.dndListTypesMod.StatefulListProps
-import typings.baseui.listMod.default
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -105,7 +105,7 @@ object dndListMod {
   @JSImport("baseui/dnd-list", "StatefulListContainer")
   @js.native
   open class StatefulListContainer ()
-    extends typings.baseui.statefulListContainerMod.default
+    extends typings.baseui.dndListStatefulListContainerMod.default
   object StatefulListContainer {
     
     /* static member */

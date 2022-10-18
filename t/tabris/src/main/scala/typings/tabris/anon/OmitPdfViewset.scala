@@ -3,6 +3,7 @@ package typings.tabris.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.tabris.Blob
 import typings.tabris.mod.AnimationOptions
+import typings.tabris.mod.Bounds
 import typings.tabris.mod.BoxDimensions
 import typings.tabris.mod.ChangeListeners
 import typings.tabris.mod.ColorValue
@@ -225,7 +226,7 @@ trait OmitPdfViewset extends StObject {
   @JSName("_wasSet")
   var _wasSet_Original: js.Function1[/* propertyName */ String, Boolean]
   
-  var absoluteBounds: typings.tabris.mod.Bounds
+  var absoluteBounds: Bounds
   
   def animate(properties: Opacity, options: AnimationOptions): js.Promise[Unit]
   @JSName("animate")
@@ -241,7 +242,7 @@ trait OmitPdfViewset extends StObject {
   
   var bottom: ConstraintValue
   
-  var bounds: typings.tabris.mod.Bounds
+  var bounds: Bounds
   
   var centerX: typings.tabris.mod.Offset | auto | `true`
   
@@ -304,7 +305,7 @@ trait OmitPdfViewset extends StObject {
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[PdfView, Omit[PdfView, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `4`
+  var jsxAttributes: (JSXAttributes[PdfView, Omit[PdfView, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `11`
   
   var layoutData: LayoutDataValue
   
@@ -534,12 +535,12 @@ object OmitPdfViewset {
     _trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean,
     _triggerChangeEvent: (/* propertyName */ String, /* newEncodedValue */ Any) => Unit,
     _wasSet: /* propertyName */ String => Boolean,
-    absoluteBounds: typings.tabris.mod.Bounds,
+    absoluteBounds: Bounds,
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     appendTo: /* parent */ Composite[Widget[Any]] => PdfView,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
-    bounds: typings.tabris.mod.Bounds,
+    bounds: Bounds,
     centerX: typings.tabris.mod.Offset | auto | `true`,
     centerY: typings.tabris.mod.Offset | auto | `true`,
     cid: String,
@@ -559,7 +560,7 @@ object OmitPdfViewset {
     insertAfter: /* widget */ Widget[Any] => PdfView,
     insertBefore: /* widget */ Widget[Any] => PdfView,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[PdfView, Omit[PdfView, set | jsxAttributes]]) & `4`,
+    jsxAttributes: (JSXAttributes[PdfView, Omit[PdfView, set | jsxAttributes]]) & `11`,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => PdfView,
@@ -647,7 +648,7 @@ object OmitPdfViewset {
     
     inline def set$trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "$trigger", js.Any.fromFunction2(value))
     
-    inline def setAbsoluteBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
+    inline def setAbsoluteBounds(value: Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
     
     inline def setAnimate(value: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit]): Self = StObject.set(x, "animate", js.Any.fromFunction2(value))
     
@@ -661,7 +662,7 @@ object OmitPdfViewset {
     
     inline def setBottom(value: ConstraintValue): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    inline def setBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     inline def setCenterX(value: typings.tabris.mod.Offset | auto | `true`): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
@@ -727,7 +728,7 @@ object OmitPdfViewset {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[PdfView, Omit[PdfView, set | jsxAttributes]]) & `4`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[PdfView, Omit[PdfView, set | jsxAttributes]]) & `11`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     

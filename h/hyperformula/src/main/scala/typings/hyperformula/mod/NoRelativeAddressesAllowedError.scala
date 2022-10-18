@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "NoRelativeAddressesAllowedError")
 @js.native
 open class NoRelativeAddressesAllowedError ()
-  extends typings.hyperformula.errorsMod.NoRelativeAddressesAllowedError
+  extends typings.hyperformula.typingsErrorsMod.NoRelativeAddressesAllowedError

@@ -1,7 +1,7 @@
 package typings.novncNovnc
 
-import typings.novncNovnc.rfbMod.NoVncEvent
-import typings.novncNovnc.rfbMod.NoVncEventType
+import typings.novncNovnc.coreRfbMod.NoVncEvent
+import typings.novncNovnc.coreRfbMod.NoVncEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

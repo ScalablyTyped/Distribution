@@ -1,30 +1,25 @@
 package typings.tuyaPanelKit.anon
 
-import typings.std.Extract
-import typings.tuyaPanelKit.typesMod.EventMapBase
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.InitialState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `7`[EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */] extends StObject {
+trait `7` extends StObject {
   
-  var data: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
-  ] = js.undefined
+  var state: js.UndefOr[InitialState] = js.undefined
 }
 object `7` {
   
-  inline def apply[EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */](): `7`[EventMap, EventName] = {
+  inline def apply(): `7` = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`7`[EventMap, EventName]]
+    __obj.asInstanceOf[`7`]
   }
   
-  extension [Self <: `7`[?, ?], EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */](x: Self & (`7`[EventMap, EventName])) {
+  extension [Self <: `7`](x: Self) {
     
-    inline def setData(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
-    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setState(value: InitialState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

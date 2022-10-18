@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object StoreOp extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.StoreOp & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.StoreOp & String] = js.native
   
-  /* "discard" */ val Discard: typings.babylonjs.webgpuConstantsMod.StoreOp.Discard & String = js.native
+  /* "discard" */ val Discard: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.StoreOp.Discard & String = js.native
   
-  /* "store" */ val Store: typings.babylonjs.webgpuConstantsMod.StoreOp.Store & String = js.native
+  /* "store" */ val Store: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.StoreOp.Store & String = js.native
 }

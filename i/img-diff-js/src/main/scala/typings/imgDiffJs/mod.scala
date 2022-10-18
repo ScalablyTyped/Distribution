@@ -1,8 +1,8 @@
 package typings.imgDiffJs
 
-import typings.imgDiffJs.typesMod.Decorder
-import typings.imgDiffJs.typesMod.ImgDiffOptions
-import typings.imgDiffJs.typesMod.ImgDiffResult
+import typings.imgDiffJs.libTypesMod.Decorder
+import typings.imgDiffJs.libTypesMod.ImgDiffOptions
+import typings.imgDiffJs.libTypesMod.ImgDiffResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CommitidCommiturl extends StObject {
   
-  var actor: Avatarurl
+  var actor: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
   
   var commit_id: String | Null
   
@@ -18,32 +18,35 @@ trait CommitidCommiturl extends StObject {
   
   var id: Double
   
-  var milestone: TitleString
+  var label: ColorString
   
   var node_id: String
   
-  var performed_via_github_app: Externalurl | Null
+  var performed_via_github_app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
   
   var url: String
 }
 object CommitidCommiturl {
   
   inline def apply(
-    actor: Avatarurl,
+    actor: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any,
     created_at: String,
     event: String,
     id: Double,
-    milestone: TitleString,
+    label: ColorString,
     node_id: String,
+    performed_via_github_app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any,
     url: String
   ): CommitidCommiturl = {
-    val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], milestone = milestone.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], commit_id = null, commit_url = null, performed_via_github_app = null)
+    val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], performed_via_github_app = performed_via_github_app.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], commit_id = null, commit_url = null)
     __obj.asInstanceOf[CommitidCommiturl]
   }
   
   extension [Self <: CommitidCommiturl](x: Self) {
     
-    inline def setActor(value: Avatarurl): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
+    inline def setActor(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
+    ): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
     inline def setCommit_id(value: String): Self = StObject.set(x, "commit_id", value.asInstanceOf[js.Any])
     
@@ -59,13 +62,13 @@ object CommitidCommiturl {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setMilestone(value: TitleString): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+    inline def setLabel(value: ColorString): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setPerformed_via_github_app(value: Externalurl): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
-    
-    inline def setPerformed_via_github_appNull: Self = StObject.set(x, "performed_via_github_app", null)
+    inline def setPerformed_via_github_app(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
+    ): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

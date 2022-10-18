@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,7 @@ trait Playlist extends StObject {
   
   /** Localizations for different languages */
   var localizations: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.PlaylistLocalization}
-    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Playlist & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.PlaylistLocalization} */ js.Any
   ] = js.undefined
   
   /** The player object contains information that you would use to play the playlist in an embedded player. */
@@ -61,9 +58,7 @@ object Playlist {
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLocalizations(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.PlaylistLocalization}
-      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Playlist & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.PlaylistLocalization} */ js.Any
     ): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
     inline def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)

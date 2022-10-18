@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ChromaticAberrationPostProcess")
 @js.native
 open class ChromaticAberrationPostProcess protected ()
-  extends typings.babylonjs.legacyMod.ChromaticAberrationPostProcess {
+  extends typings.babylonjs.legacyLegacyMod.ChromaticAberrationPostProcess {
   /**
     * Creates a new instance ChromaticAberrationPostProcess
     * @param name The name of the effect.
@@ -28,9 +28,9 @@ open class ChromaticAberrationPostProcess protected ()
     screenWidth: Double,
     screenHeight: Double,
     options: Double | PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: js.UndefOr[Double],
-    engine: js.UndefOr[typings.babylonjs.engineMod.Engine],
+    engine: js.UndefOr[typings.babylonjs.enginesEngineMod.Engine],
     reusable: js.UndefOr[Boolean],
     textureType: js.UndefOr[Double],
     blockCompilation: js.UndefOr[Boolean]
@@ -48,12 +48,12 @@ object ChromaticAberrationPostProcess {
     */
   inline def _Parse(
     parsedPostProcess: Any,
-    targetCamera: typings.babylonjs.cameraMod.Camera,
+    targetCamera: typings.babylonjs.camerasCameraMod.Camera,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String
   ): Nullable[
-    typings.babylonjs.chromaticAberrationPostProcessMod.ChromaticAberrationPostProcess
+    typings.babylonjs.postProcessesChromaticAberrationPostProcessMod.ChromaticAberrationPostProcess
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[
-    typings.babylonjs.chromaticAberrationPostProcessMod.ChromaticAberrationPostProcess
+    typings.babylonjs.postProcessesChromaticAberrationPostProcessMod.ChromaticAberrationPostProcess
   ]]
 }

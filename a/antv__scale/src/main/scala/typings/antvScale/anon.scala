@@ -1,10 +1,10 @@
 package typings.antvScale
 
-import typings.antvScale.timeIntervalMod.TimeTransform
-import typings.antvScale.typesMod.Interpolate
-import typings.antvScale.typesMod.Interpolates
-import typings.antvScale.typesMod.Interpolator
-import typings.antvScale.typesMod.TickMethod
+import typings.antvScale.libTypesMod.Interpolate
+import typings.antvScale.libTypesMod.Interpolates
+import typings.antvScale.libTypesMod.Interpolator
+import typings.antvScale.libTypesMod.TickMethod
+import typings.antvScale.libUtilsTimeIntervalMod.TimeTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.detailsRowBaseMod.IDetailsRowState
-import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowDotbaseMod.IDetailsRowState
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowDottypesMod.IDetailsRowBaseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "PathUpdater")
 @js.native
 open class PathUpdater ()
-  extends typings.antvGLite.servicesMod.PathUpdater
+  extends typings.antvGLite.distServicesMod.PathUpdater

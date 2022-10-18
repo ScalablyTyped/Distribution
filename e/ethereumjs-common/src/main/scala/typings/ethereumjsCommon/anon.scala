@@ -1,8 +1,8 @@
 package typings.ethereumjsCommon
 
-import typings.ethereumjsCommon.typesMod.BootstrapNode
-import typings.ethereumjsCommon.typesMod.GenesisBlock
-import typings.ethereumjsCommon.typesMod.Hardfork
+import typings.ethereumjsCommon.distTypesMod.BootstrapNode
+import typings.ethereumjsCommon.distTypesMod.GenesisBlock
+import typings.ethereumjsCommon.distTypesMod.Hardfork
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

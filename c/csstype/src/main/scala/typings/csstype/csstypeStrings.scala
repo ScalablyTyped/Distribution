@@ -1986,10 +1986,6 @@ object csstypeStrings {
   inline def Colonwhere: Colonwhere = ":where".asInstanceOf[Colonwhere]
   
   @js.native
-  sealed trait Fallback extends StObject
-  inline def Fallback: Fallback = "Fallback".asInstanceOf[Fallback]
-  
-  @js.native
   sealed trait GrayText
     extends StObject
        with DeprecatedSystemColor
@@ -6159,10 +6155,10 @@ object csstypeStrings {
   inline def `extra-expanded`: `extra-expanded` = "extra-expanded".asInstanceOf[`extra-expanded`]
   
   @js.native
-  sealed trait fallback_
+  sealed trait fallback
     extends StObject
        with FontDisplay
-  inline def fallback_ : fallback_ = "fallback".asInstanceOf[fallback_]
+  inline def fallback: fallback = "fallback".asInstanceOf[fallback]
   
   @js.native
   sealed trait `false`

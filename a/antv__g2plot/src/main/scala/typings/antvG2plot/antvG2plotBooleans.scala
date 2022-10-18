@@ -1,7 +1,7 @@
 package typings.antvG2plot
 
-import typings.antvG2plot.tooltipMod.Tooltip
-import typings.antvG2plot.typesLabelMod.Label
+import typings.antvG2plot.libTypesLabelMod.Label
+import typings.antvG2plot.libTypesTooltipMod.Tooltip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

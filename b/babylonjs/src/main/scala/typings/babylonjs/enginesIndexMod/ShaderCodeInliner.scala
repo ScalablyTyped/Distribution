@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Engines/index", "ShaderCodeInliner")
 @js.native
 open class ShaderCodeInliner protected ()
-  extends typings.babylonjs.shaderCodeInlinerMod.ShaderCodeInliner {
+  extends typings.babylonjs.enginesProcessorsShaderCodeInlinerMod.ShaderCodeInliner {
   /**
     * Initializes the inliner
     * @param sourceCode shader code source to inline

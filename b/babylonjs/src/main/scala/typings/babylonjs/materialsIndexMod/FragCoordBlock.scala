@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "FragCoordBlock")
 @js.native
 open class FragCoordBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.FragCoordBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.FragCoordBlock {
   /**
     * Creates a new FragCoordBlock
     * @param name defines the block name

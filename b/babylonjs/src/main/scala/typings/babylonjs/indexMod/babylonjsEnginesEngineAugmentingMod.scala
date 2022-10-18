@@ -2,13 +2,13 @@ package typings.babylonjs.indexMod
 
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.WebGLProgram
-import typings.babylonjs.engineMod.IDisplayChangedEventArgs
-import typings.babylonjs.engineQueryMod.OcclusionQuery
-import typings.babylonjs.engineWebVRMod.IVRPresentationAttributes
-import typings.babylonjs.iparticlesystemMod.IParticleSystem
+import typings.babylonjs.camerasVRWebVRCameraMod.WebVROptions
+import typings.babylonjs.enginesEngineMod.IDisplayChangedEventArgs
+import typings.babylonjs.enginesExtensionsEngineDotqueryMod.OcclusionQuery
+import typings.babylonjs.enginesExtensionsEngineDotwebVRMod.IVRPresentationAttributes
+import typings.babylonjs.particlesIparticlesystemMod.IParticleSystem
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.typesMod.int
-import typings.babylonjs.webVRCameraMod.WebVROptions
 import typings.std.HTMLElement
 import typings.std.WebGLQuery
 import typings.std.WebGLTransformFeedback
@@ -29,7 +29,7 @@ object babylonjsEnginesEngineAugmentingMod {
     def _createTimeQuery(): WebGLQuery = js.native
     
     /** @internal */
-    var _currentNonTimestampToken: Nullable[typings.babylonjs.timeTokenMod.TimeToken] = js.native
+    var _currentNonTimestampToken: Nullable[typings.babylonjs.instrumentationTimeTokenMod.TimeToken] = js.native
     
     /** @internal */
     def _deleteTimeQuery(query: WebGLQuery): Unit = js.native
@@ -50,10 +50,10 @@ object babylonjsEnginesEngineAugmentingMod {
     def _getVRDisplaysAsync(): js.Promise[IDisplayChangedEventArgs] = js.native
     
     /** @internal */
-    var _gpuFrameTime: typings.babylonjs.perfCounterMod.PerfCounter = js.native
+    var _gpuFrameTime: typings.babylonjs.miscPerfCounterMod.PerfCounter = js.native
     
     /** @internal */
-    var _gpuFrameTimeToken: Nullable[typings.babylonjs.timeTokenMod.TimeToken] = js.native
+    var _gpuFrameTimeToken: Nullable[typings.babylonjs.instrumentationTimeTokenMod.TimeToken] = js.native
     
     /** @internal */
     var _inputElement: Nullable[HTMLElement] = js.native
@@ -62,16 +62,20 @@ object babylonjsEnginesEngineAugmentingMod {
     var _oldHardwareScaleFactor: Double = js.native
     
     /** @internal */
-    var _oldSize: typings.babylonjs.mathSizeMod.Size = js.native
+    var _oldSize: typings.babylonjs.mathsMathDotsizeMod.Size = js.native
     
     /** @internal */
     var _onBeginFrameObserver: Nullable[
-        typings.babylonjs.observableMod.Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
+        typings.babylonjs.miscObservableMod.Observer[
+          typings.babylonjs.enginesExtensionsEngineDotqueryMod.babylonjsEnginesEngineAugmentingMod.Engine
+        ]
       ] = js.native
     
     /** @internal */
     var _onEndFrameObserver: Nullable[
-        typings.babylonjs.observableMod.Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
+        typings.babylonjs.miscObservableMod.Observer[
+          typings.babylonjs.enginesExtensionsEngineDotqueryMod.babylonjsEnginesEngineAugmentingMod.Engine
+        ]
       ] = js.native
     
     /**
@@ -117,7 +121,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * Gets the current engine view
       * @see https://doc.babylonjs.com/how_to/multi_canvases
       */
-    var activeView: Nullable[typings.babylonjs.engineViewsMod.EngineView] = js.native
+    var activeView: Nullable[typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView] = js.native
     
     /**
       * Initiates an occlusion query
@@ -138,7 +142,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * Binds a multiview render target wrapper to be drawn to
       * @param multiviewTexture render target wrapper to bind
       */
-    def bindMultiviewFramebuffer(multiviewTexture: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper): Unit = js.native
+    def bindMultiviewFramebuffer(multiviewTexture: typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper): Unit = js.native
     
     /**
       * Bind a webGL transform feedback object to the webgl context
@@ -150,7 +154,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * Bind a webGL buffer for a transform feedback operation
       * @param value defines the webGL buffer to bind
       */
-    def bindTransformFeedbackBuffer(value: Nullable[typings.babylonjs.dataBufferMod.DataBuffer]): Unit = js.native
+    def bindTransformFeedbackBuffer(value: Nullable[typings.babylonjs.buffersDataBufferMod.DataBuffer]): Unit = js.native
     
     /**
       * Enable or disable the GPU frame time capture
@@ -172,44 +176,44 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param particleSystem the particle system you want to create the effect for
       * @returns the new Effect
       */
-    def createEffectForParticles(fragmentName: String, uniformsNames: js.Array[String], samplers: js.Array[String], defines: String): typings.babylonjs.effectMod.Effect = js.native
+    def createEffectForParticles(fragmentName: String, uniformsNames: js.Array[String], samplers: js.Array[String], defines: String): typings.babylonjs.materialsEffectMod.Effect = js.native
     def createEffectForParticles(
       fragmentName: String,
       uniformsNames: js.Array[String],
       samplers: js.Array[String],
       defines: String,
       fallbacks: Unit,
-      onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit]
-    ): typings.babylonjs.effectMod.Effect = js.native
+      onCompiled: js.Function1[/* effect */ typings.babylonjs.materialsEffectMod.Effect, Unit]
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
     def createEffectForParticles(
       fragmentName: String,
       uniformsNames: js.Array[String],
       samplers: js.Array[String],
       defines: String,
       fallbacks: Unit,
-      onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
-      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
-    ): typings.babylonjs.effectMod.Effect = js.native
+      onCompiled: js.Function1[/* effect */ typings.babylonjs.materialsEffectMod.Effect, Unit],
+      onError: js.Function2[/* effect */ typings.babylonjs.materialsEffectMod.Effect, /* errors */ String, Unit]
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
     def createEffectForParticles(
       fragmentName: String,
       uniformsNames: js.Array[String],
       samplers: js.Array[String],
       defines: String,
       fallbacks: Unit,
-      onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
-      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit],
+      onCompiled: js.Function1[/* effect */ typings.babylonjs.materialsEffectMod.Effect, Unit],
+      onError: js.Function2[/* effect */ typings.babylonjs.materialsEffectMod.Effect, /* errors */ String, Unit],
       particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
     def createEffectForParticles(
       fragmentName: String,
       uniformsNames: js.Array[String],
       samplers: js.Array[String],
       defines: String,
       fallbacks: Unit,
-      onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
+      onCompiled: js.Function1[/* effect */ typings.babylonjs.materialsEffectMod.Effect, Unit],
       onError: Unit,
       particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
     def createEffectForParticles(
       fragmentName: String,
       uniformsNames: js.Array[String],
@@ -217,8 +221,8 @@ object babylonjsEnginesEngineAugmentingMod {
       defines: String,
       fallbacks: Unit,
       onCompiled: Unit,
-      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
-    ): typings.babylonjs.effectMod.Effect = js.native
+      onError: js.Function2[/* effect */ typings.babylonjs.materialsEffectMod.Effect, /* errors */ String, Unit]
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
     def createEffectForParticles(
       fragmentName: String,
       uniformsNames: js.Array[String],
@@ -226,92 +230,92 @@ object babylonjsEnginesEngineAugmentingMod {
       defines: String,
       fallbacks: Unit,
       onCompiled: Unit,
-      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit],
+      onError: js.Function2[/* effect */ typings.babylonjs.materialsEffectMod.Effect, /* errors */ String, Unit],
       particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
     def createEffectForParticles(
       fragmentName: String,
       uniformsNames: js.Array[String],
       samplers: js.Array[String],
       defines: String,
       fallbacks: Unit,
-      onCompiled: Unit,
-      onError: Unit,
-      particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
-      onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit]
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
-      onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
-      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
-      onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
-      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit],
-      particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
-      onCompiled: js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit],
-      onError: Unit,
-      particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
-      onCompiled: Unit,
-      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
-      onCompiled: Unit,
-      onError: js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit],
-      particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
-    def createEffectForParticles(
-      fragmentName: String,
-      uniformsNames: js.Array[String],
-      samplers: js.Array[String],
-      defines: String,
-      fallbacks: typings.babylonjs.effectFallbacksMod.EffectFallbacks,
       onCompiled: Unit,
       onError: Unit,
       particleSystem: IParticleSystem
-    ): typings.babylonjs.effectMod.Effect = js.native
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks,
+      onCompiled: js.Function1[/* effect */ typings.babylonjs.materialsEffectMod.Effect, Unit]
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks,
+      onCompiled: js.Function1[/* effect */ typings.babylonjs.materialsEffectMod.Effect, Unit],
+      onError: js.Function2[/* effect */ typings.babylonjs.materialsEffectMod.Effect, /* errors */ String, Unit]
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks,
+      onCompiled: js.Function1[/* effect */ typings.babylonjs.materialsEffectMod.Effect, Unit],
+      onError: js.Function2[/* effect */ typings.babylonjs.materialsEffectMod.Effect, /* errors */ String, Unit],
+      particleSystem: IParticleSystem
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks,
+      onCompiled: js.Function1[/* effect */ typings.babylonjs.materialsEffectMod.Effect, Unit],
+      onError: Unit,
+      particleSystem: IParticleSystem
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks,
+      onCompiled: Unit,
+      onError: js.Function2[/* effect */ typings.babylonjs.materialsEffectMod.Effect, /* errors */ String, Unit]
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks,
+      onCompiled: Unit,
+      onError: js.Function2[/* effect */ typings.babylonjs.materialsEffectMod.Effect, /* errors */ String, Unit],
+      particleSystem: IParticleSystem
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
+    def createEffectForParticles(
+      fragmentName: String,
+      uniformsNames: js.Array[String],
+      samplers: js.Array[String],
+      defines: String,
+      fallbacks: typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks,
+      onCompiled: Unit,
+      onError: Unit,
+      particleSystem: IParticleSystem
+    ): typings.babylonjs.materialsEffectMod.Effect = js.native
     
     /**
       * Creates a new multiview render target
@@ -319,7 +323,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param height defines the height of the texture
       * @returns the created multiview render target wrapper
       */
-    def createMultiviewRenderTargetTexture(width: Double, height: Double): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
+    def createMultiviewRenderTargetTexture(width: Double, height: Double): typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper = js.native
     
     /**
       * Create a new webGL query (you must be sure that queries are supported by checking getCaps() function)
@@ -339,7 +343,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param query defines the query to delete
       * @returns the current engine
       */
-    def deleteQuery(query: OcclusionQuery): typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
+    def deleteQuery(query: OcclusionQuery): typings.babylonjs.enginesExtensionsEngineDotqueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
     
     /**
       * Delete a webGL transform feedback object
@@ -361,14 +365,14 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param algorithmType defines the algorithm to use
       * @returns the current engine
       */
-    def endOcclusionQuery(algorithmType: Double): typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
+    def endOcclusionQuery(algorithmType: Double): typings.babylonjs.enginesExtensionsEngineDotqueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
     
     /**
       * Ends a time query
       * @param token defines the token used to measure the time span
       * @returns the time spent (in ns)
       */
-    def endTimeQuery(token: typings.babylonjs.timeTokenMod.TimeToken): int = js.native
+    def endTimeQuery(token: typings.babylonjs.instrumentationTimeTokenMod.TimeToken): int = js.native
     
     /**
       * Ends a transform feedback operation
@@ -379,7 +383,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * Get the performance counter associated with the frame time computation
       * @returns the perf counter
       */
-    def getGPUFrameTimeCounter(): typings.babylonjs.perfCounterMod.PerfCounter = js.native
+    def getGPUFrameTimeCounter(): typings.babylonjs.miscPerfCounterMod.PerfCounter = js.native
     
     /**
       * Gets the value of a given query
@@ -428,27 +432,29 @@ object babylonjsEnginesEngineAugmentingMod {
     /**
       * Will be triggered after the view rendered
       */
-    val onAfterViewRenderObservable: typings.babylonjs.observableMod.Observable[typings.babylonjs.engineViewsMod.EngineView] = js.native
+    val onAfterViewRenderObservable: typings.babylonjs.miscObservableMod.Observable[typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView] = js.native
     
     /**
       * Will be triggered before the view renders
       */
-    val onBeforeViewRenderObservable: typings.babylonjs.observableMod.Observable[typings.babylonjs.engineViewsMod.EngineView] = js.native
+    val onBeforeViewRenderObservable: typings.babylonjs.miscObservableMod.Observable[typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView] = js.native
     
     /**
       * Observable signaled when VR display mode changes
       */
-    var onVRDisplayChangedObservable: typings.babylonjs.observableMod.Observable[IDisplayChangedEventArgs] = js.native
+    var onVRDisplayChangedObservable: typings.babylonjs.miscObservableMod.Observable[IDisplayChangedEventArgs] = js.native
     
     /**
       * Observable signaled when VR request present is complete
       */
-    var onVRRequestPresentComplete: typings.babylonjs.observableMod.Observable[Boolean] = js.native
+    var onVRRequestPresentComplete: typings.babylonjs.miscObservableMod.Observable[Boolean] = js.native
     
     /**
       * Observable signaled when VR request present starts
       */
-    var onVRRequestPresentStart: typings.babylonjs.observableMod.Observable[typings.babylonjs.engineWebVRMod.babylonjsEnginesEngineAugmentingMod.Engine] = js.native
+    var onVRRequestPresentStart: typings.babylonjs.miscObservableMod.Observable[
+        typings.babylonjs.enginesExtensionsEngineDotwebVRMod.babylonjsEnginesEngineAugmentingMod.Engine
+      ] = js.native
     
     /**
       * Register a new child canvas
@@ -457,10 +463,14 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param clearBeforeCopy Indicates if the destination view canvas should be cleared before copying the parent canvas. Can help if the scene clear color has alpha < 1
       * @returns the associated view
       */
-    def registerView(canvas: HTMLCanvasElement): typings.babylonjs.engineViewsMod.EngineView = js.native
-    def registerView(canvas: HTMLCanvasElement, camera: Unit, clearBeforeCopy: Boolean): typings.babylonjs.engineViewsMod.EngineView = js.native
-    def registerView(canvas: HTMLCanvasElement, camera: typings.babylonjs.cameraMod.Camera): typings.babylonjs.engineViewsMod.EngineView = js.native
-    def registerView(canvas: HTMLCanvasElement, camera: typings.babylonjs.cameraMod.Camera, clearBeforeCopy: Boolean): typings.babylonjs.engineViewsMod.EngineView = js.native
+    def registerView(canvas: HTMLCanvasElement): typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView = js.native
+    def registerView(canvas: HTMLCanvasElement, camera: Unit, clearBeforeCopy: Boolean): typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView = js.native
+    def registerView(canvas: HTMLCanvasElement, camera: typings.babylonjs.camerasCameraMod.Camera): typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView = js.native
+    def registerView(
+      canvas: HTMLCanvasElement,
+      camera: typings.babylonjs.camerasCameraMod.Camera,
+      clearBeforeCopy: Boolean
+    ): typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView = js.native
     
     /**
       * Set the compressed texture extensions or file names to skip.
@@ -504,7 +514,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * Please note that only one query can be issued at a time
       * @returns a time token used to track the time span
       */
-    def startTimeQuery(): Nullable[typings.babylonjs.timeTokenMod.TimeToken] = js.native
+    def startTimeQuery(): Nullable[typings.babylonjs.instrumentationTimeTokenMod.TimeToken] = js.native
     
     /**
       * Gets the texture format in use
@@ -521,10 +531,10 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param canvas defines the canvas to remove
       * @returns the current engine
       */
-    def unRegisterView(canvas: HTMLCanvasElement): typings.babylonjs.engineViewsMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
+    def unRegisterView(canvas: HTMLCanvasElement): typings.babylonjs.enginesExtensionsEngineDotviewsMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
     
     /** Gets or sets the list of views */
-    var views: js.Array[typings.babylonjs.engineViewsMod.EngineView] = js.native
+    var views: js.Array[typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView] = js.native
     
     /**
       * Gets or sets the presentation attributes used to configure VR rendering

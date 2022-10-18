@@ -215,7 +215,15 @@ object mod {
   
   type JetElementCustomEvent[V] = CustomEvent[PreviousValue[V]]
   
-  type JetSetPropertyType[K, U /* <: JetSettableProperties */] = /* import warning: importer.ImportType#apply Failed type conversion: U[K] */ js.Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    K extends keyof U ? U[K] : any
+    }}}
+    */
+  @js.native
+  trait JetSetPropertyType[K, U /* <: JetSettableProperties */] extends StObject
   
   trait JetSettableProperties extends StObject
   

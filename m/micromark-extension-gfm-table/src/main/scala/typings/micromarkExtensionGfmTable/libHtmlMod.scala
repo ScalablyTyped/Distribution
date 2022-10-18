@@ -10,7 +10,7 @@ object libHtmlMod {
   @js.native
   val gfmTableHtml: HtmlExtension = js.native
   
-  type Align = typings.micromarkExtensionGfmTable.libSyntaxMod.Align
+  type Align = typings.micromarkExtensionGfmTable.devLibSyntaxMod.Align
   
   type HtmlExtension = typings.micromarkUtilTypes.mod.HtmlExtension
 }

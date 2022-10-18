@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @remarks
   *
-  * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.
+  * **`BindingDataChanged` and `BindingSelectionChanged` applications**: Excel, Word.
   *
   */
 @JSGlobal("Office.EventType")
@@ -62,9 +62,11 @@ object EventType extends StObject {
   
   /* 18 */ val ResourceSelectionChanged: typings.officeJsPreview.Office.EventType.ResourceSelectionChanged & Double = js.native
   
-  /* 19 */ val SettingsChanged: typings.officeJsPreview.Office.EventType.SettingsChanged & Double = js.native
+  /* 19 */ val SelectedItemsChanged: typings.officeJsPreview.Office.EventType.SelectedItemsChanged & Double = js.native
   
-  /* 20 */ val TaskSelectionChanged: typings.officeJsPreview.Office.EventType.TaskSelectionChanged & Double = js.native
+  /* 20 */ val SettingsChanged: typings.officeJsPreview.Office.EventType.SettingsChanged & Double = js.native
   
-  /* 21 */ val ViewSelectionChanged: typings.officeJsPreview.Office.EventType.ViewSelectionChanged & Double = js.native
+  /* 21 */ val TaskSelectionChanged: typings.officeJsPreview.Office.EventType.TaskSelectionChanged & Double = js.native
+  
+  /* 22 */ val ViewSelectionChanged: typings.officeJsPreview.Office.EventType.ViewSelectionChanged & Double = js.native
 }

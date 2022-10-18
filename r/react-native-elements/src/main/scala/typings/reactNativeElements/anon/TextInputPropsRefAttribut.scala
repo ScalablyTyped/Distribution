@@ -5,7 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.reactNative.anon.Start
+import typings.reactNative.anon.End
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -36,8 +36,8 @@ import typings.reactNative.mod.TextInputSubmitEditingEventData
 import typings.reactNative.mod.TextInputTextInputEventData
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconNode
-import typings.reactNativeElements.inputMod.InputProps
+import typings.reactNativeElements.distIconsIconMod.IconNode
+import typings.reactNativeElements.distInputInputMod.InputProps
 import typings.reactNativeElements.reactNativeElementsStrings.URL
 import typings.reactNativeElements.reactNativeElementsStrings.`birthdate-day`
 import typings.reactNativeElements.reactNativeElementsStrings.`birthdate-full`
@@ -905,7 +905,7 @@ trait TextInputPropsRefAttribut extends StObject {
     * The start and end of the text input's selection. Set start and end to
     * the same value to position the cursor.
     */
-  var selection: js.UndefOr[Start] = js.undefined
+  var selection: js.UndefOr[End] = js.undefined
   
   /**
     * The highlight (and cursor on ios) color of the text input
@@ -1014,7 +1014,7 @@ trait TextInputPropsRefAttribut extends StObject {
     none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode
   ] = js.undefined
   
-  var theme: js.UndefOr[typings.reactNativeElements.themeMod.Theme[InputProps]] = js.undefined
+  var theme: js.UndefOr[typings.reactNativeElements.distConfigThemeMod.Theme[InputProps]] = js.undefined
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
@@ -1627,7 +1627,7 @@ object TextInputPropsRefAttribut {
     
     inline def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
     
-    inline def setSelection(value: Start): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: End): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     inline def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     
@@ -1679,7 +1679,7 @@ object TextInputPropsRefAttribut {
     
     inline def setTextContentTypeUndefined: Self = StObject.set(x, "textContentType", js.undefined)
     
-    inline def setTheme(value: typings.reactNativeElements.themeMod.Theme[InputProps]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativeElements.distConfigThemeMod.Theme[InputProps]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     

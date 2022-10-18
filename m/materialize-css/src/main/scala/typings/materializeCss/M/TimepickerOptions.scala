@@ -1,7 +1,7 @@
 package typings.materializeCss.M
 
+import typings.materializeCss.anon.PartialInternationalizati
 import typings.std.Element
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,9 +40,7 @@ trait TimepickerOptions extends StObject {
   /**
     * Internationalization options
     */
-  var i18n: Partial[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
-  ]
+  var i18n: PartialInternationalizati
   
   /**
     * Callback function called after modal is closed
@@ -100,9 +98,7 @@ object TimepickerOptions {
     defaultTime: String,
     duration: Double,
     fromNow: Double,
-    i18n: Partial[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
-    ],
+    i18n: PartialInternationalizati,
     onCloseEnd: Element => Unit,
     onCloseStart: Element => Unit,
     onOpenEnd: Element => Unit,
@@ -128,11 +124,7 @@ object TimepickerOptions {
     
     inline def setFromNow(value: Double): Self = StObject.set(x, "fromNow", value.asInstanceOf[js.Any])
     
-    inline def setI18n(
-      value: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
-        ]
-    ): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+    inline def setI18n(value: PartialInternationalizati): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     inline def setOnCloseEnd(value: Element => Unit): Self = StObject.set(x, "onCloseEnd", js.Any.fromFunction1(value))
     

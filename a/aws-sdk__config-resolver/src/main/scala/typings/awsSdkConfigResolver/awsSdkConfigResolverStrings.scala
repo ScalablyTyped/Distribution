@@ -1,6 +1,6 @@
 package typings.awsSdkConfigResolver
 
-import typings.awsSdkConfigResolver.endpointVariantTagMod.EndpointVariantTag
+import typings.awsSdkConfigResolver.distTypesRegionInfoEndpointVariantTagMod.EndpointVariantTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.broccoliPersistentFilter
 
-import typings.fsTreeDiff.entryMod.BaseEntry
-import typings.fsTreeDiff.entryMod.DefaultEntry
+import typings.fsTreeDiff.libEntryMod.BaseEntry
+import typings.fsTreeDiff.libEntryMod.DefaultEntry
 import typings.fsTreeDiff.mod.Entry
 import typings.fsTreeDiff.mod.FSTree
 import typings.fsTreeDiff.mod.Patch

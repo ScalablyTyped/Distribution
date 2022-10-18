@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pixi.js", "BlobResource")
+/* note: abstract class */ @JSImport("pixi.js", "BlobResource")
 @js.native
-abstract class BlobResource protected ()
+open class BlobResource protected ()
   extends typings.pixiCompressedTextures.mod.BlobResource {
   /**
     * @param {string} source - the URL of the texture file

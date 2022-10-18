@@ -1,9 +1,9 @@
 package typings.awsGreengrassCoreSdk.mod.StreamManager
 
-import typings.awsGreengrassCoreSdk.dataMod.ExportFormatMap
-import typings.awsGreengrassCoreSdk.dataMod.ExportFormatOptions
-import typings.awsGreengrassCoreSdk.dataMod.ExportFormatOptionsFlipped
-import typings.awsGreengrassCoreSdk.dataMod.ExportFormatValue
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ExportFormatMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ExportFormatOptions
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ExportFormatOptionsFlipped
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ExportFormatValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,15 +23,15 @@ object ExportFormat {
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.ExportFormat.JSON_BATCHED")
   @js.native
-  def JSON_BATCHED: typings.awsGreengrassCoreSdk.dataMod.ExportFormat = js.native
-  inline def JSON_BATCHED_=(x: typings.awsGreengrassCoreSdk.dataMod.ExportFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSON_BATCHED")(x.asInstanceOf[js.Any])
+  def JSON_BATCHED: typings.awsGreengrassCoreSdk.streamManagerDataMod.ExportFormat = js.native
+  inline def JSON_BATCHED_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.ExportFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSON_BATCHED")(x.asInstanceOf[js.Any])
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.ExportFormat.RAW_NOT_BATCHED")
   @js.native
-  def RAW_NOT_BATCHED: typings.awsGreengrassCoreSdk.dataMod.ExportFormat = js.native
-  inline def RAW_NOT_BATCHED_=(x: typings.awsGreengrassCoreSdk.dataMod.ExportFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RAW_NOT_BATCHED")(x.asInstanceOf[js.Any])
+  def RAW_NOT_BATCHED: typings.awsGreengrassCoreSdk.streamManagerDataMod.ExportFormat = js.native
+  inline def RAW_NOT_BATCHED_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.ExportFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RAW_NOT_BATCHED")(x.asInstanceOf[js.Any])
   
-  inline def fromMap(d: ExportFormatMap): typings.awsGreengrassCoreSdk.dataMod.ExportFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.ExportFormat]
+  inline def fromMap(d: ExportFormatMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.ExportFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.ExportFormat]
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.ExportFormat.options")
   @js.native

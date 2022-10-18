@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param directionRandomizer defines how much to randomize the particle direction [0-1] (default is 0)
   */
 open class ConeParticleEmitter ()
-  extends typings.babylonjs.emitterTypesIndexMod.ConeParticleEmitter {
+  extends typings.babylonjs.particlesEmitterTypesIndexMod.ConeParticleEmitter {
   def this(radius: Double) = this()
   def this(radius: Double, angle: Double) = this()
   def this(radius: Unit, angle: Double) = this()

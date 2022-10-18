@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientIam.gapi.client.iam
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,9 +36,7 @@ trait WorkloadIdentityPoolProvider extends StObject {
     * attribute. For example, the following maps the `sub` claim of the incoming credential to the `subject` attribute on a Google token: ``` {"google.subject": "assertion.sub"} ```
     */
   var attributeMapping: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientIam.maximMazurokGapiClientIamStrings.WorkloadIdentityPoolProvider & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** An Amazon Web Services identity provider. */
@@ -80,9 +77,7 @@ object WorkloadIdentityPoolProvider {
     inline def setAttributeConditionUndefined: Self = StObject.set(x, "attributeCondition", js.undefined)
     
     inline def setAttributeMapping(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientIam.maximMazurokGapiClientIamStrings.WorkloadIdentityPoolProvider & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "attributeMapping", value.asInstanceOf[js.Any])
     
     inline def setAttributeMappingUndefined: Self = StObject.set(x, "attributeMapping", js.undefined)

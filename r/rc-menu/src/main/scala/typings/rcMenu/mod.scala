@@ -1,11 +1,11 @@
 package typings.rcMenu
 
-import typings.rcMenu.dividerMod.DividerProps
-import typings.rcMenu.interfaceMod.MenuRef
-import typings.rcMenu.menuItemGroupMod.MenuItemGroupProps
-import typings.rcMenu.menuItemMod.MenuItemProps
-import typings.rcMenu.menuMod.MenuProps
-import typings.rcMenu.subMenuMod.SubMenuProps
+import typings.rcMenu.esDividerMod.DividerProps
+import typings.rcMenu.esInterfaceMod.MenuRef
+import typings.rcMenu.esMenuItemGroupMod.MenuItemGroupProps
+import typings.rcMenu.esMenuItemMod.MenuItemProps
+import typings.rcMenu.esMenuMod.MenuProps
+import typings.rcMenu.esSubMenuMod.SubMenuProps
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes

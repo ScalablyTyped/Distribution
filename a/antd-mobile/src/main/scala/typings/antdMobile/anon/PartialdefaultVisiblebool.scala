@@ -43,10 +43,10 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.popoverMod.DeprecatedPlacement
-import typings.antdMobile.popoverMod.Placement
-import typings.antdMobile.popoverPopoverMod.PopoverRef
-import typings.antdMobile.renderToContainerMod.GetContainer
+import typings.antdMobile.esComponentsPopoverMod.DeprecatedPlacement
+import typings.antdMobile.esComponentsPopoverMod.Placement
+import typings.antdMobile.esComponentsPopoverPopoverMod.PopoverRef
+import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
 import typings.react.mod.Booleanish
 import typings.react.mod.Key
 import typings.react.mod.ReactElement

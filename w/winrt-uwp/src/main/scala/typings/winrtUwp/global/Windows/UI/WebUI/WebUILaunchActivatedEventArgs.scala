@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides event information when an app is launched. */
-@JSGlobal("Windows.UI.WebUI.WebUILaunchActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUILaunchActivatedEventArgs")
 @js.native
-abstract class WebUILaunchActivatedEventArgs ()
+open class WebUILaunchActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUILaunchActivatedEventArgs {
   

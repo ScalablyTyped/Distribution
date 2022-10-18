@@ -1,14 +1,13 @@
 package typings.azureCoreHttp
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.azureAbortController.abortSignalMod.AbortSignalLike
+import typings.azureAbortController.typesSrcAbortSignalMod.AbortSignalLike
 import typings.azureCoreAuth.mod.TokenCredential
 import typings.azureCoreHttp.anon.AUTHORIZATION
 import typings.azureCoreHttp.anon.AbortErrorMsg
 import typings.azureCoreHttp.anon.CustomNoProxyList
 import typings.azureCoreHttp.anon.HttpVerbs
 import typings.azureCoreHttp.anon.Span
-import typings.azureCoreHttp.apiKeyCredentialsMod.ApiKeyCredentialOptions
 import typings.azureCoreHttp.azureCoreHttpStrings.Base64Url
 import typings.azureCoreHttp.azureCoreHttpStrings.Boolean
 import typings.azureCoreHttp.azureCoreHttpStrings.ByteArray
@@ -24,32 +23,33 @@ import typings.azureCoreHttp.azureCoreHttpStrings.Sequence
 import typings.azureCoreHttp.azureCoreHttpStrings.Stream
 import typings.azureCoreHttp.azureCoreHttpStrings.TimeSpan
 import typings.azureCoreHttp.azureCoreHttpStrings.UnixTime
-import typings.azureCoreHttp.createSpanLegacyMod.SpanConfig
-import typings.azureCoreHttp.deserializationPolicyMod.DeserializationContentTypes
-import typings.azureCoreHttp.httpHeadersMod.HttpHeadersLike
-import typings.azureCoreHttp.httpHeadersMod.RawHttpHeaders
-import typings.azureCoreHttp.httpOperationResponseMod.HttpOperationResponse
-import typings.azureCoreHttp.httpOperationResponseMod.RestResponse
-import typings.azureCoreHttp.httpPipelineLoggerMod.HttpPipelineLogger
-import typings.azureCoreHttp.keepAlivePolicyMod.KeepAliveOptions
-import typings.azureCoreHttp.logPolicyMod.LogPolicyOptions
-import typings.azureCoreHttp.operationOptionsMod.OperationOptions
-import typings.azureCoreHttp.operationResponseMod.OperationResponse
-import typings.azureCoreHttp.pipelineOptionsMod.InternalPipelineOptions
-import typings.azureCoreHttp.requestPolicyMod.RequestPolicy
-import typings.azureCoreHttp.requestPolicyMod.RequestPolicyFactory
-import typings.azureCoreHttp.requestPolicyMod.RequestPolicyOptionsLike
-import typings.azureCoreHttp.serializerCommonMod.SerializerOptions
-import typings.azureCoreHttp.serviceClientCredentialsMod.ServiceClientCredentials
-import typings.azureCoreHttp.serviceClientMod.ProxySettings
-import typings.azureCoreHttp.serviceClientMod.ServiceClientOptions
-import typings.azureCoreHttp.tracingPolicyMod.TracingPolicyOptions
-import typings.azureCoreHttp.userAgentPolicyMod.TelemetryInfo
-import typings.azureCoreHttp.utilsMod.ServiceCallback
-import typings.azureCoreHttp.webResourceMod.HttpMethods
-import typings.azureCoreHttp.webResourceMod.RequestOptionsBase
-import typings.azureCoreHttp.webResourceMod.TransferProgressEvent
-import typings.azureCoreHttp.webResourceMod.WebResourceLike
+import typings.azureCoreHttp.typesLatestSrcCreateSpanLegacyMod.SpanConfig
+import typings.azureCoreHttp.typesLatestSrcCredentialsApiKeyCredentialsMod.ApiKeyCredentialOptions
+import typings.azureCoreHttp.typesLatestSrcCredentialsServiceClientCredentialsMod.ServiceClientCredentials
+import typings.azureCoreHttp.typesLatestSrcHttpHeadersMod.HttpHeadersLike
+import typings.azureCoreHttp.typesLatestSrcHttpHeadersMod.RawHttpHeaders
+import typings.azureCoreHttp.typesLatestSrcHttpOperationResponseMod.HttpOperationResponse
+import typings.azureCoreHttp.typesLatestSrcHttpOperationResponseMod.RestResponse
+import typings.azureCoreHttp.typesLatestSrcHttpPipelineLoggerMod.HttpPipelineLogger
+import typings.azureCoreHttp.typesLatestSrcOperationOptionsMod.OperationOptions
+import typings.azureCoreHttp.typesLatestSrcOperationResponseMod.OperationResponse
+import typings.azureCoreHttp.typesLatestSrcPipelineOptionsMod.InternalPipelineOptions
+import typings.azureCoreHttp.typesLatestSrcPoliciesDeserializationPolicyMod.DeserializationContentTypes
+import typings.azureCoreHttp.typesLatestSrcPoliciesKeepAlivePolicyMod.KeepAliveOptions
+import typings.azureCoreHttp.typesLatestSrcPoliciesLogPolicyMod.LogPolicyOptions
+import typings.azureCoreHttp.typesLatestSrcPoliciesRequestPolicyMod.RequestPolicy
+import typings.azureCoreHttp.typesLatestSrcPoliciesRequestPolicyMod.RequestPolicyFactory
+import typings.azureCoreHttp.typesLatestSrcPoliciesRequestPolicyMod.RequestPolicyOptionsLike
+import typings.azureCoreHttp.typesLatestSrcPoliciesTracingPolicyMod.TracingPolicyOptions
+import typings.azureCoreHttp.typesLatestSrcPoliciesUserAgentPolicyMod.TelemetryInfo
+import typings.azureCoreHttp.typesLatestSrcServiceClientMod.ProxySettings
+import typings.azureCoreHttp.typesLatestSrcServiceClientMod.ServiceClientOptions
+import typings.azureCoreHttp.typesLatestSrcUtilSerializerDotcommonMod.SerializerOptions
+import typings.azureCoreHttp.typesLatestSrcUtilUtilsMod.ServiceCallback
+import typings.azureCoreHttp.typesLatestSrcWebResourceMod.HttpMethods
+import typings.azureCoreHttp.typesLatestSrcWebResourceMod.RequestOptionsBase
+import typings.azureCoreHttp.typesLatestSrcWebResourceMod.TransferProgressEvent
+import typings.azureCoreHttp.typesLatestSrcWebResourceMod.WebResourceLike
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -64,7 +64,7 @@ object mod {
   @JSImport("@azure/core-http", "AccessTokenRefresher")
   @js.native
   open class AccessTokenRefresher protected ()
-    extends typings.azureCoreHttp.accessTokenRefresherMod.AccessTokenRefresher {
+    extends typings.azureCoreHttp.typesLatestSrcCredentialsAccessTokenRefresherMod.AccessTokenRefresher {
     def this(credential: TokenCredential, scopes: String) = this()
     def this(credential: TokenCredential, scopes: js.Array[String]) = this()
     def this(credential: TokenCredential, scopes: String, requiredMillisecondsBeforeNewRefresh: Double) = this()
@@ -78,17 +78,17 @@ object mod {
   @JSImport("@azure/core-http", "ApiKeyCredentials")
   @js.native
   open class ApiKeyCredentials protected ()
-    extends typings.azureCoreHttp.apiKeyCredentialsMod.ApiKeyCredentials {
+    extends typings.azureCoreHttp.typesLatestSrcCredentialsApiKeyCredentialsMod.ApiKeyCredentials {
     /**
       * @param options - Specifies the options to be provided for auth. Either header or query needs to be provided.
       */
     def this(options: ApiKeyCredentialOptions) = this()
   }
   
-  @JSImport("@azure/core-http", "BaseRequestPolicy")
+  /* note: abstract class */ @JSImport("@azure/core-http", "BaseRequestPolicy")
   @js.native
-  abstract class BaseRequestPolicy protected ()
-    extends typings.azureCoreHttp.requestPolicyMod.BaseRequestPolicy {
+  open class BaseRequestPolicy protected ()
+    extends typings.azureCoreHttp.typesLatestSrcPoliciesRequestPolicyMod.BaseRequestPolicy {
     /**
       * The main method to implement that manipulates a request/response.
       */
@@ -107,7 +107,7 @@ object mod {
   @JSImport("@azure/core-http", "BasicAuthenticationCredentials")
   @js.native
   open class BasicAuthenticationCredentials protected ()
-    extends typings.azureCoreHttp.basicAuthenticationCredentialsMod.BasicAuthenticationCredentials {
+    extends typings.azureCoreHttp.typesLatestSrcCredentialsBasicAuthenticationCredentialsMod.BasicAuthenticationCredentials {
     /**
       * Creates a new BasicAuthenticationCredentials object.
       *
@@ -203,14 +203,14 @@ object mod {
     * an optional expiration buffer time.
     */
   open class ExpiringAccessTokenCache ()
-    extends typings.azureCoreHttp.accessTokenCacheMod.ExpiringAccessTokenCache {
+    extends typings.azureCoreHttp.typesLatestSrcCredentialsAccessTokenCacheMod.ExpiringAccessTokenCache {
     def this(tokenRefreshBufferMs: Double) = this()
   }
   
   @JSImport("@azure/core-http", "HttpHeaders")
   @js.native
   open class HttpHeaders ()
-    extends typings.azureCoreHttp.httpHeadersMod.HttpHeaders {
+    extends typings.azureCoreHttp.typesLatestSrcHttpHeadersMod.HttpHeaders {
     def this(rawHeaders: RawHttpHeaders) = this()
   }
   
@@ -219,15 +219,17 @@ object mod {
   object HttpPipelineLogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.azureCoreHttp.httpPipelineLogLevelMod.HttpPipelineLogLevel & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.azureCoreHttp.typesLatestSrcHttpPipelineLogLevelMod.HttpPipelineLogLevel & Double
+      ] = js.native
     
-    /* 1 */ val ERROR: typings.azureCoreHttp.httpPipelineLogLevelMod.HttpPipelineLogLevel.ERROR & Double = js.native
+    /* 1 */ val ERROR: typings.azureCoreHttp.typesLatestSrcHttpPipelineLogLevelMod.HttpPipelineLogLevel.ERROR & Double = js.native
     
-    /* 3 */ val INFO: typings.azureCoreHttp.httpPipelineLogLevelMod.HttpPipelineLogLevel.INFO & Double = js.native
+    /* 3 */ val INFO: typings.azureCoreHttp.typesLatestSrcHttpPipelineLogLevelMod.HttpPipelineLogLevel.INFO & Double = js.native
     
-    /* 0 */ val OFF: typings.azureCoreHttp.httpPipelineLogLevelMod.HttpPipelineLogLevel.OFF & Double = js.native
+    /* 0 */ val OFF: typings.azureCoreHttp.typesLatestSrcHttpPipelineLogLevelMod.HttpPipelineLogLevel.OFF & Double = js.native
     
-    /* 2 */ val WARNING: typings.azureCoreHttp.httpPipelineLogLevelMod.HttpPipelineLogLevel.WARNING & Double = js.native
+    /* 2 */ val WARNING: typings.azureCoreHttp.typesLatestSrcHttpPipelineLogLevelMod.HttpPipelineLogLevel.WARNING & Double = js.native
   }
   
   object MapperType {
@@ -324,30 +326,32 @@ object mod {
   object QueryCollectionFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.azureCoreHttp.queryCollectionFormatMod.QueryCollectionFormat & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.azureCoreHttp.typesLatestSrcQueryCollectionFormatMod.QueryCollectionFormat & String
+      ] = js.native
     
-    /* "," */ val Csv: typings.azureCoreHttp.queryCollectionFormatMod.QueryCollectionFormat.Csv & String = js.native
+    /* "," */ val Csv: typings.azureCoreHttp.typesLatestSrcQueryCollectionFormatMod.QueryCollectionFormat.Csv & String = js.native
     
-    /* "Multi" */ val Multi: typings.azureCoreHttp.queryCollectionFormatMod.QueryCollectionFormat.Multi & String = js.native
+    /* "Multi" */ val Multi: typings.azureCoreHttp.typesLatestSrcQueryCollectionFormatMod.QueryCollectionFormat.Multi & String = js.native
     
-    /* "|" */ val Pipes: typings.azureCoreHttp.queryCollectionFormatMod.QueryCollectionFormat.Pipes & String = js.native
+    /* "|" */ val Pipes: typings.azureCoreHttp.typesLatestSrcQueryCollectionFormatMod.QueryCollectionFormat.Pipes & String = js.native
     
-    /* " " */ val Ssv: typings.azureCoreHttp.queryCollectionFormatMod.QueryCollectionFormat.Ssv & String = js.native
+    /* " " */ val Ssv: typings.azureCoreHttp.typesLatestSrcQueryCollectionFormatMod.QueryCollectionFormat.Ssv & String = js.native
     
-    /* "\t" */ val Tsv: typings.azureCoreHttp.queryCollectionFormatMod.QueryCollectionFormat.Tsv & String = js.native
+    /* "\t" */ val Tsv: typings.azureCoreHttp.typesLatestSrcQueryCollectionFormatMod.QueryCollectionFormat.Tsv & String = js.native
   }
   
   @JSImport("@azure/core-http", "RequestPolicyOptions")
   @js.native
   open class RequestPolicyOptions ()
-    extends typings.azureCoreHttp.requestPolicyMod.RequestPolicyOptions {
+    extends typings.azureCoreHttp.typesLatestSrcPoliciesRequestPolicyMod.RequestPolicyOptions {
     def this(_logger: HttpPipelineLogger) = this()
   }
   
   @JSImport("@azure/core-http", "RestError")
   @js.native
   open class RestError protected ()
-    extends typings.azureCoreHttp.restErrorMod.RestError {
+    extends typings.azureCoreHttp.typesLatestSrcRestErrorMod.RestError {
     def this(message: String) = this()
     def this(message: String, code: String) = this()
     def this(message: String, code: String, statusCode: Double) = this()
@@ -412,15 +416,17 @@ object mod {
   object RetryMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.azureCoreHttp.exponentialRetryPolicyMod.RetryMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.azureCoreHttp.typesLatestSrcPoliciesExponentialRetryPolicyMod.RetryMode & Double
+      ] = js.native
     
-    /* 0 */ val Exponential: typings.azureCoreHttp.exponentialRetryPolicyMod.RetryMode.Exponential & Double = js.native
+    /* 0 */ val Exponential: typings.azureCoreHttp.typesLatestSrcPoliciesExponentialRetryPolicyMod.RetryMode.Exponential & Double = js.native
   }
   
   @JSImport("@azure/core-http", "Serializer")
   @js.native
   open class Serializer ()
-    extends typings.azureCoreHttp.serializerMod.Serializer {
+    extends typings.azureCoreHttp.typesLatestSrcSerializerMod.Serializer {
     def this(/**
       * The provided model mapper.
       */
@@ -455,7 +461,7 @@ object mod {
     * @param options - The service client options that govern the behavior of the client.
     */
   open class ServiceClient ()
-    extends typings.azureCoreHttp.serviceClientMod.ServiceClient {
+    extends typings.azureCoreHttp.typesLatestSrcServiceClientMod.ServiceClient {
     def this(credentials: TokenCredential) = this()
     def this(credentials: ServiceClientCredentials) = this()
     def this(credentials: Unit, options: ServiceClientOptions) = this()
@@ -466,7 +472,7 @@ object mod {
   @JSImport("@azure/core-http", "TopicCredentials")
   @js.native
   open class TopicCredentials protected ()
-    extends typings.azureCoreHttp.topicCredentialsMod.TopicCredentials {
+    extends typings.azureCoreHttp.typesLatestSrcCredentialsTopicCredentialsMod.TopicCredentials {
     /**
       * Creates a new EventGrid TopicCredentials object.
       *
@@ -478,7 +484,7 @@ object mod {
   @JSImport("@azure/core-http", "URLBuilder")
   @js.native
   open class URLBuilder ()
-    extends typings.azureCoreHttp.urlMod.URLBuilder
+    extends typings.azureCoreHttp.typesLatestSrcUrlMod.URLBuilder
   /* static members */
   object URLBuilder {
     
@@ -489,13 +495,13 @@ object mod {
     /**
       * Parses a given string URL into a new {@link URLBuilder}.
       */
-    inline def parse(text: String): typings.azureCoreHttp.urlMod.URLBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[typings.azureCoreHttp.urlMod.URLBuilder]
+    inline def parse(text: String): typings.azureCoreHttp.typesLatestSrcUrlMod.URLBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[typings.azureCoreHttp.typesLatestSrcUrlMod.URLBuilder]
   }
   
   @JSImport("@azure/core-http", "URLQuery")
   @js.native
   open class URLQuery ()
-    extends typings.azureCoreHttp.urlMod.URLQuery
+    extends typings.azureCoreHttp.typesLatestSrcUrlMod.URLQuery
   /* static members */
   object URLQuery {
     
@@ -506,13 +512,13 @@ object mod {
     /**
       * Parse a URLQuery from the provided text.
       */
-    inline def parse(text: String): typings.azureCoreHttp.urlMod.URLQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[typings.azureCoreHttp.urlMod.URLQuery]
+    inline def parse(text: String): typings.azureCoreHttp.typesLatestSrcUrlMod.URLQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[typings.azureCoreHttp.typesLatestSrcUrlMod.URLQuery]
   }
   
   @JSImport("@azure/core-http", "WebResource")
   @js.native
   open class WebResource protected ()
-    extends typings.azureCoreHttp.webResourceMod.WebResource {
+    extends typings.azureCoreHttp.typesLatestSrcWebResourceMod.WebResource {
     def this(
       url: js.UndefOr[String],
       method: js.UndefOr[HttpMethods],

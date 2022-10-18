@@ -2,6 +2,7 @@ package typings.baidumapWebSdk.BMap
 
 import typings.baidumapWebSdk.anon.Spots
 import typings.baidumapWebSdk.anon.Target
+import typings.baidumapWebSdk.anon.Type
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -122,7 +123,7 @@ trait Map extends StObject {
   
   def onhotspotover(event: Spots): Unit = js.native
   
-  def onload(event: typings.baidumapWebSdk.anon.Point): Unit = js.native
+  def onload(event: Type): Unit = js.native
   
   def onlongpress(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
   

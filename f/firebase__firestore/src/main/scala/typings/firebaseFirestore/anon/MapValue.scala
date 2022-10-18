@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MapValue extends StObject {
   
-  var mapValue: typings.firebaseFirestore.firestoreProtoApiMod.MapValue
+  var mapValue: typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.MapValue
 }
 object MapValue {
   
-  inline def apply(mapValue: typings.firebaseFirestore.firestoreProtoApiMod.MapValue): MapValue = {
+  inline def apply(mapValue: typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.MapValue): MapValue = {
     val __obj = js.Dynamic.literal(mapValue = mapValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapValue]
   }
   
   extension [Self <: MapValue](x: Self) {
     
-    inline def setMapValue(value: typings.firebaseFirestore.firestoreProtoApiMod.MapValue): Self = StObject.set(x, "mapValue", value.asInstanceOf[js.Any])
+    inline def setMapValue(value: typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.MapValue): Self = StObject.set(x, "mapValue", value.asInstanceOf[js.Any])
   }
 }

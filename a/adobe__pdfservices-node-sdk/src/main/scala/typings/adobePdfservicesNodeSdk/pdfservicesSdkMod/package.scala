@@ -6,4 +6,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def Fragments: typings.adobePdfservicesNodeSdk.fragmentsMod.Fragments = ^.asInstanceOf[js.Dynamic].selectDynamic("Fragments").asInstanceOf[typings.adobePdfservicesNodeSdk.fragmentsMod.Fragments]
+inline def Fragments: typings.adobePdfservicesNodeSdk.operationOptionDocumentmergeFragmentsMod.Fragments = ^.asInstanceOf[js.Dynamic].selectDynamic("Fragments").asInstanceOf[typings.adobePdfservicesNodeSdk.operationOptionDocumentmergeFragmentsMod.Fragments]

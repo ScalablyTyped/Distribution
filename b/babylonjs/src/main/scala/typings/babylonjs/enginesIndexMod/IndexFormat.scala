@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object IndexFormat extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.IndexFormat & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.IndexFormat & String] = js.native
   
-  /* "uint16" */ val Uint16: typings.babylonjs.webgpuConstantsMod.IndexFormat.Uint16 & String = js.native
+  /* "uint16" */ val Uint16: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.IndexFormat.Uint16 & String = js.native
   
-  /* "uint32" */ val Uint32: typings.babylonjs.webgpuConstantsMod.IndexFormat.Uint32 & String = js.native
+  /* "uint32" */ val Uint32: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.IndexFormat.Uint32 & String = js.native
 }

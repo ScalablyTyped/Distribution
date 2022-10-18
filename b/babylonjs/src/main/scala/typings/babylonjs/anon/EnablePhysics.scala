@@ -1,8 +1,8 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.XRHandedness
-import typings.babylonjs.abstractMeshMod.AbstractMesh
-import typings.babylonjs.instancedMeshMod.InstancedMesh
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
+import typings.babylonjs.meshesInstancedMeshMod.InstancedMesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +56,7 @@ trait EnablePhysics extends StObject {
     * This mesh will be the source for all other (25) meshes.
     * It should have the general size of a single unit, as the instances will be scaled according to the provided radius.
     */
-  var sourceMesh: js.UndefOr[typings.babylonjs.meshMod.Mesh] = js.undefined
+  var sourceMesh: js.UndefOr[typings.babylonjs.meshesMeshMod.Mesh] = js.undefined
 }
 object EnablePhysics {
   
@@ -93,7 +93,7 @@ object EnablePhysics {
     
     inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
     
-    inline def setSourceMesh(value: typings.babylonjs.meshMod.Mesh): Self = StObject.set(x, "sourceMesh", value.asInstanceOf[js.Any])
+    inline def setSourceMesh(value: typings.babylonjs.meshesMeshMod.Mesh): Self = StObject.set(x, "sourceMesh", value.asInstanceOf[js.Any])
     
     inline def setSourceMeshUndefined: Self = StObject.set(x, "sourceMesh", js.undefined)
   }

@@ -1,8 +1,8 @@
 package typings.victoryPie
 
-import typings.victoryPie.mod.VictorySliceLabelPlacementType
-import typings.victoryPie.mod.VictorySliceLabelPositionType
-import typings.victoryPie.mod.VictorySliceTTargetType
+import typings.victoryPie.libMod.VictorySliceLabelPlacementType
+import typings.victoryPie.libMod.VictorySliceLabelPositionType
+import typings.victoryPie.libMod.VictorySliceTTargetType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

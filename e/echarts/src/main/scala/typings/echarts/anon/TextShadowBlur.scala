@@ -8,37 +8,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextShadowBlur extends StObject {
   
   /**
+    * Horizontal alignment of text, automatic by default.
+    *
+    * Options are:
+    *
+    * + `'left'`
+    * + `'center'`
+    * + `'right'`
+    *
+    * If `align` is not set in `rich`, `align` in parent
+    * level will be used. For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.breadcrumb.emphasis.itemStyle.textStyle)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.align
+    */
+  var align: js.UndefOr[String] = js.undefined
+  
+  /**
     * Background color of the text fregment.
     *
-    * Can be color string, like `'#123234'`, `'red'`, `rgba(0,23,11,0.3)'`.
+    * Can be color string, like `'#123234'`, `'red'`,
+    * `rgba(0,23,11,0.3)'`.
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.breadcrumb.emphasis.itemStyle.textStyle)
     *
-    * `width` or `height` can be specified when using background
-    * image, or auto adapted by default.
-    *
-    * If set as `'auto'`, the color will assigned as visual
-    * color, such as series color.
+    * `width` or `height` can be specified when using
+    * background image, or auto adapted by default.
     *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.backgroundColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   
   /**
     * Border color of the text fregment.
     *
-    * If set as `'auto'`, the color will assigned as visual
-    * color, such as series color.
-    *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   
@@ -46,7 +60,7 @@ trait TextShadowBlur extends StObject {
     * Border radius of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.borderRadius
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   
@@ -54,37 +68,19 @@ trait TextShadowBlur extends StObject {
     * Border width of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * text color.
     *
-    * If set as `'auto'`, the color will assigned as visual
-    * color, such as series color.
-    *
     *
     * @default
-    * '#000'
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.color
+    * "#fff"
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.color
     */
   var color: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Distance to the host graphic element.
-    * Works when position is string value (like `'top'`、`'insideRight'`).
-    *
-    * See:
-    * [label position](https://echarts.apache.org/examples/en/editor.html?c=doc-example/label-position)
-    * .
-    *
-    *
-    * @default
-    * 5
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.distance
-    */
-  var distance: js.UndefOr[Double] = js.undefined
   
   /**
     * font family
@@ -94,7 +90,7 @@ trait TextShadowBlur extends StObject {
     *
     * @default
     * "sans-serif"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.fontFamily
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   
@@ -103,8 +99,8 @@ trait TextShadowBlur extends StObject {
     *
     *
     * @default
-    * 11
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.fontSize
+    * 12
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   
@@ -120,7 +116,7 @@ trait TextShadowBlur extends StObject {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.fontStyle
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   
@@ -138,142 +134,83 @@ trait TextShadowBlur extends StObject {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.fontWeight
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.fontWeight
     */
   var fontWeight: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Height of the text block.
     * It is the width of the text by default.
-    * You may want to use it in some cases like using background
-    * image (see `backgroundColor`).
+    * You may want to use it in some cases like using
+    * background image (see `backgroundColor`).
     *
-    * Notice, `width` and `height` specifies the width and
-    * height of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width
+    * and height of the content, without `padding`.
     *
-    * Notice, `width` and `height` only work when `rich` specified.
+    * Notice, `width` and `height` only work when `rich`
+    * specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.height
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Line height of the text fregment.
     *
-    * If `lineHeight` is not set in `rich`, `lineHeight` in
-    * parent level will be used. For example:
+    * If `lineHeight` is not set in `rich`, `lineHeight`
+    * in parent level will be used. For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.breadcrumb.emphasis.itemStyle.textStyle)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.lineHeight
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
   
   /**
-    * Whether to move text slightly.
-    * For example: `[30, 40]` means move `30` horizontally
-    * and move `40` vertically.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.offset
-    */
-  var offset: js.UndefOr[js.Array[Any]] = js.undefined
-  
-  /**
     * Padding of the text fregment, for example:
     *
-    * + `padding: [3, 4, 5, 6]`: represents padding of `[top,
-    * right, bottom, left]`.
-    * + `padding: 4`: represents `padding: [4, 4, 4, 4]`.
-    * + `padding: [3, 4]`: represents `padding: [3, 4, 3, 4]`.
+    * + `padding: [3, 4, 5, 6]`: represents padding
+    * of `[top, right, bottom, left]`.
+    * + `padding: 4`: represents `padding: [4, 4, 4,
+    * 4]`.
+    * + `padding: [3, 4]`: represents `padding: [3,
+    * 4, 3, 4]`.
     *
-    * Notice, `width` and `height` specifies the width and
-    * height of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width
+    * and height of the content, without `padding`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.padding
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.padding
     */
   var padding: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
   /**
-    * Label position.
+    * "Rich text styles" can be defined in this `rich`
+    * property. For example:
     *
-    * **Followings are the options:**
-    *
-    * + \[x, y\]
-    *
-    * Use relative percentage, or absolute pixel values to
-    * represent position of label relative to top-left corner
-    * of bounding box. For example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.emphasis.label)
-    *
-    * + 'top'
-    *
-    * + 'left'
-    * + 'right'
-    * + 'bottom'
-    * + 'inside'
-    * + 'insideLeft'
-    * + 'insideRight'
-    * + 'insideTop'
-    * + 'insideBottom'
-    * + 'insideTopLeft'
-    * + 'insideBottomLeft'
-    * + 'insideTopRight'
-    * + 'insideBottomRight'
-    *
-    * See:
-    * [label position](https://echarts.apache.org/examples/en/view.html?c=doc-example/label-position)
-    * .
-    *
-    *
-    * @default
-    * "left"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.position
-    */
-  var position: js.UndefOr[js.Array[Any] | String] = js.undefined
-  
-  /**
-    * "Rich text styles" can be defined in this `rich` property.
-    * For example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.breadcrumb.emphasis.itemStyle.textStyle)
     *
     * For more details, see
     * [Rich Text](https://echarts.apache.org/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.rich
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.rich
     */
   var rich: js.UndefOr[
     /**
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Align]
   ] = js.undefined
   
   /**
-    * Rotate label, from -90 degree to 90, positive value represents
-    * rotate anti-clockwise.
-    *
-    * See:
-    * [label rotation](https://echarts.apache.org/examples/en/editor.html?c=bar-label-rotation)
-    * .
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.rotate
-    */
-  var rotate: js.UndefOr[Double] = js.undefined
-  
-  /**
     * Show blur of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -283,7 +220,7 @@ trait TextShadowBlur extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   
@@ -291,7 +228,7 @@ trait TextShadowBlur extends StObject {
     * Shadow X offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -299,28 +236,17 @@ trait TextShadowBlur extends StObject {
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * Whether to show label.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.show
-    */
-  var show: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * Storke color of the text.
-    *
-    * If set as `'auto'`, the color will assigned as visual
-    * color, such as series color.
     *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   
@@ -328,7 +254,7 @@ trait TextShadowBlur extends StObject {
     * Storke line width of the text.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   
@@ -336,7 +262,7 @@ trait TextShadowBlur extends StObject {
     * Shadow blue of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textShadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -346,7 +272,7 @@ trait TextShadowBlur extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textShadowColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   
@@ -354,7 +280,7 @@ trait TextShadowBlur extends StObject {
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textShadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -362,32 +288,53 @@ trait TextShadowBlur extends StObject {
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textShadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Vertical alignment of text, automatic by default.
+    *
+    * Options are:
+    *
+    * + `'top'`
+    * + `'middle'`
+    * + `'bottom'`
+    *
+    * If `verticalAlign` is not set in `rich`, `verticalAlign`
+    * in parent level will be used. For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.breadcrumb.emphasis.itemStyle.textStyle)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.verticalAlign
+    */
+  var verticalAlign: js.UndefOr[String] = js.undefined
   
   /**
     * Width of the text block.
     * It is the width of the text by default.
     * In most cases, there is no need to specify it.
-    * You may want to use it in some cases like make simple
-    * table or using background image (see `backgroundColor`).
+    * You may want to use it in some cases like make
+    * simple table or using background image (see `backgroundColor`).
     *
-    * Notice, `width` and `height` specifies the width and
-    * height of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width
+    * and height of the content, without `padding`.
     *
-    * `width` can also be percent string, like `'100%'`, which
-    * represents the percent of `contentWidth` (that is, the
-    * width without `padding`) of its container box.
-    * It is based on `contentWidth` because that each text
-    * fregment is layout based on the `content box`, where
-    * it makes no sense that calculating width based on `outerWith`
-    * in prectice.
+    * `width` can also be percent string, like `'100%'`,
+    * which represents the percent of `contentWidth`
+    * (that is, the width without `padding`) of its
+    * container box.
+    * It is based on `contentWidth` because that each
+    * text fregment is layout based on the `content
+    * box`, where it makes no sense that calculating
+    * width based on `outerWith` in prectice.
     *
-    * Notice, `width` and `height` only work when `rich` specified.
+    * Notice, `width` and `height` only work when `rich`
+    * specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.width
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -399,6 +346,10 @@ object TextShadowBlur {
   }
   
   extension [Self <: TextShadowBlur](x: Self) {
+    
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     inline def setBackgroundColor(value: js.Object | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
@@ -419,10 +370,6 @@ object TextShadowBlur {
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-    
-    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
-    
-    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
@@ -448,36 +395,20 @@ object TextShadowBlur {
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    inline def setOffset(value: js.Array[Any]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
-    
-    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
-    
-    inline def setOffsetVarargs(value: Any*): Self = StObject.set(x, "offset", js.Array(value*))
-    
     inline def setPadding(value: js.Array[Any] | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     inline def setPaddingVarargs(value: Any*): Self = StObject.set(x, "padding", js.Array(value*))
     
-    inline def setPosition(value: js.Array[Any] | String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
-    
-    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
-    
-    inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
-    
     inline def setRich(
       value: /**
-      * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
+      * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle.rich.%3Cuser%20defined%20style%20name%3E
       */
     StringDictionary[Align]
     ): Self = StObject.set(x, "rich", value.asInstanceOf[js.Any])
     
     inline def setRichUndefined: Self = StObject.set(x, "rich", js.undefined)
-    
-    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
-    
-    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     inline def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     
@@ -494,10 +425,6 @@ object TextShadowBlur {
     inline def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
     
     inline def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
-    
-    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
-    
-    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     inline def setTextBorderColor(value: String): Self = StObject.set(x, "textBorderColor", value.asInstanceOf[js.Any])
     
@@ -522,6 +449,10 @@ object TextShadowBlur {
     inline def setTextShadowOffsetY(value: Double): Self = StObject.set(x, "textShadowOffsetY", value.asInstanceOf[js.Any])
     
     inline def setTextShadowOffsetYUndefined: Self = StObject.set(x, "textShadowOffsetY", js.undefined)
+    
+    inline def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

@@ -1,9 +1,9 @@
 package typings.matrixAppserviceBridge.anon
 
-import typings.matrixAppserviceBridge.bridgeMod.PossiblePromise
-import typings.matrixAppserviceBridge.thirdpartyMod.ThirdpartyLocationResponse
-import typings.matrixAppserviceBridge.thirdpartyMod.ThirdpartyProtocolResponse
-import typings.matrixAppserviceBridge.thirdpartyMod.ThirdpartyUserResponse
+import typings.matrixAppserviceBridge.libBridgeMod.PossiblePromise
+import typings.matrixAppserviceBridge.libThirdpartyMod.ThirdpartyLocationResponse
+import typings.matrixAppserviceBridge.libThirdpartyMod.ThirdpartyProtocolResponse
+import typings.matrixAppserviceBridge.libThirdpartyMod.ThirdpartyUserResponse
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

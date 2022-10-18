@@ -59,7 +59,7 @@ trait DailySupplyCharges
   /**
     * Array of objects representing time of use rates.  Required if rateBlockUType is timeOfUseRates
     */
-  var timeOfUseRates: js.UndefOr[js.Array[Rates]] = js.undefined
+  var timeOfUseRates: js.UndefOr[js.Array[TimeOfUse]] = js.undefined
   
   /**
     * Specifies the charge specific time zone for calculation of the time of use thresholds. If absent, timezone value in EnergyPlanContract is assumed.
@@ -107,11 +107,11 @@ object DailySupplyCharges {
     
     inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    inline def setTimeOfUseRates(value: js.Array[Rates]): Self = StObject.set(x, "timeOfUseRates", value.asInstanceOf[js.Any])
+    inline def setTimeOfUseRates(value: js.Array[TimeOfUse]): Self = StObject.set(x, "timeOfUseRates", value.asInstanceOf[js.Any])
     
     inline def setTimeOfUseRatesUndefined: Self = StObject.set(x, "timeOfUseRates", js.undefined)
     
-    inline def setTimeOfUseRatesVarargs(value: Rates*): Self = StObject.set(x, "timeOfUseRates", js.Array(value*))
+    inline def setTimeOfUseRatesVarargs(value: TimeOfUse*): Self = StObject.set(x, "timeOfUseRates", js.Array(value*))
     
     inline def setTimeZone(value: LOCAL | AEST): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     

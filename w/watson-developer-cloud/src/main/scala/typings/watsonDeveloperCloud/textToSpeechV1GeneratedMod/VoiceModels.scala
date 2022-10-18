@@ -21,6 +21,6 @@ object VoiceModels {
     
     inline def setCustomizations(value: js.Array[VoiceModel]): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
     
-    inline def setCustomizationsVarargs(value: VoiceModel*): Self = StObject.set(x, "customizations", js.Array(value :_*))
+    inline def setCustomizationsVarargs(value: VoiceModel*): Self = StObject.set(x, "customizations", js.Array(value*))
   }
 }

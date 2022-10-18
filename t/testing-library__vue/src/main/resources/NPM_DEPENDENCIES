@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@testing-library/vue" : "6.6.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@testing-library/vue" : "6.6.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

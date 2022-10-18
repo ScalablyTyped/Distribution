@@ -1,11 +1,13 @@
 package typings.materializecssMaterialize.M
 
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TabsOptions> * / any */ trait Tabs extends StObject {
+trait Tabs
+  extends StObject
+     with Component[TabsOptions] {
   
   /**
     * The index of tab that is currently shown
@@ -25,8 +27,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Tabs {
   
-  inline def apply(index: Double, select: String => Unit, updateTabIndicator: () => Unit): Tabs = {
-    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], select = js.Any.fromFunction1(select), updateTabIndicator = js.Any.fromFunction0(updateTabIndicator))
+  inline def apply(
+    destroy: () => Unit,
+    el: Element,
+    index: Double,
+    options: TabsOptions,
+    select: String => Unit,
+    updateTabIndicator: () => Unit
+  ): Tabs = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], select = js.Any.fromFunction1(select), updateTabIndicator = js.Any.fromFunction0(updateTabIndicator))
     __obj.asInstanceOf[Tabs]
   }
   

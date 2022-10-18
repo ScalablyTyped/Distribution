@@ -19,7 +19,7 @@ trait Label extends StObject {
   /**
     * Configures the label that belongs to the vertical crosshair line.
     */
-  var label: js.UndefOr[BackgroundColorCustomizeText] = js.undefined
+  var label: js.UndefOr[BackgroundColor] = js.undefined
   
   /**
     * Specifies how transparent the vertical crosshair line should be.
@@ -53,7 +53,7 @@ object Label {
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
-    inline def setLabel(value: BackgroundColorCustomizeText): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: BackgroundColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

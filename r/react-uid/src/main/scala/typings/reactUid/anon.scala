@@ -1,6 +1,6 @@
 package typings.reactUid
 
-import typings.reactUid.contextMod.IdSourceType
+import typings.reactUid.distEs5ContextMod.IdSourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

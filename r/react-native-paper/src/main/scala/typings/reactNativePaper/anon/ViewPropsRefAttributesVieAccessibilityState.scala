@@ -6,15 +6,14 @@ import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.GestureResponderEvent
-import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
+import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.iconMod.IconSource
 import typings.reactNativePaper.reactNativePaperStrings.`box-none`
 import typings.reactNativePaper.reactNativePaperStrings.`box-only`
 import typings.reactNativePaper.reactNativePaperStrings.`no-hide-descendants`
@@ -28,7 +27,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  label :string,   icon :react-native-paper.react-native-paper/lib/typescript/components/Icon.IconSource | undefined,   active :boolean | undefined,   onPress :(): void | undefined,   accessibilityLabel :string | undefined,   right :(props : {  color :string}): react.react.ReactNode | undefined,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme} */
+/* Inlined react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  title :string | undefined,   children :react.react.ReactNode,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme,   titleStyle :react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined} */
 trait ViewPropsRefAttributesVieAccessibilityState extends StObject {
   
   /**
@@ -57,9 +56,6 @@ trait ViewPropsRefAttributesVieAccessibilityState extends StObject {
   /**
     * Overrides the text that's read by the screen reader when the user interacts with the element. By default, the
     * label is constructed by traversing all the children and accumulating all the Text nodes separated by space.
-    */
-  /**
-    * Accessibility label for the button. This is read by the screen reader when the user taps the button.
     */
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
@@ -114,11 +110,9 @@ trait ViewPropsRefAttributesVieAccessibilityState extends StObject {
   var accessible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether to highlight the drawer item as active.
+    * Content of the section.
     */
-  var active: js.UndefOr[Boolean] = js.undefined
-  
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[ReactNode] & ReactNode
   
   /**
     * Views that are only used to layout their children or otherwise don't draw anything
@@ -152,11 +146,6 @@ trait ViewPropsRefAttributesVieAccessibilityState extends StObject {
   var hitSlop: js.UndefOr[Insets] = js.undefined
   
   /**
-    * Icon to display for the `DrawerItem`.
-    */
-  var icon: js.UndefOr[IconSource] = js.undefined
-  
-  /**
     * Controls how view is important for accessibility which is if it fires accessibility events
     * and if it is reported to accessibility services that query the screen.
     * Works for Android only. See http://developer.android.com/reference/android/R.attr.html#importantForAccessibility for references.
@@ -178,11 +167,6 @@ trait ViewPropsRefAttributesVieAccessibilityState extends StObject {
   var isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
   var key: js.UndefOr[typings.react.mod.Key | Null] = js.undefined
-  
-  /**
-    * The label text of the item.
-    */
-  var label: String
   
   /**
     * Used to reference react managed views from native code.
@@ -278,11 +262,6 @@ trait ViewPropsRefAttributesVieAccessibilityState extends StObject {
   var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
   var onPointerUpCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  
-  /**
-    * Function to execute on press.
-    */
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * If the View returns true and attempts to become the responder, one of the following will happen:
@@ -407,11 +386,6 @@ trait ViewPropsRefAttributesVieAccessibilityState extends StObject {
   var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Callback which returns a React element to display on the right side. For instance a Badge.
-    */
-  var right: js.UndefOr[js.Function1[/* props */ ColorString, ReactNode]] = js.undefined
-  
-  /**
     * Whether this view should be rendered as a bitmap before compositing.
     *
     * On iOS, this is useful for animations and interactions that do not modify this component's dimensions nor its children;
@@ -433,7 +407,17 @@ trait ViewPropsRefAttributesVieAccessibilityState extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
+  
+  /**
+    * Title text for the section.
+    */
+  var title: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Style that is passed to Title element.
+    */
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
@@ -472,8 +456,8 @@ trait ViewPropsRefAttributesVieAccessibilityState extends StObject {
 }
 object ViewPropsRefAttributesVieAccessibilityState {
   
-  inline def apply(label: String, theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): ViewPropsRefAttributesVieAccessibilityState = {
-    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): ViewPropsRefAttributesVieAccessibilityState = {
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsRefAttributesVieAccessibilityState]
   }
   
@@ -535,11 +519,7 @@ object ViewPropsRefAttributesVieAccessibilityState {
     
     inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
-    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
-    
-    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
-    
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -559,14 +539,6 @@ object ViewPropsRefAttributesVieAccessibilityState {
     
     inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
     
-    inline def setIcon(value: IconSource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
-    
-    inline def setIconFunction1(value: /* props */ IconPropscolorstring => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
-    
-    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
-    
-    inline def setIconVarargs(value: ImageURISource*): Self = StObject.set(x, "icon", js.Array(value*))
-    
     inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
@@ -580,8 +552,6 @@ object ViewPropsRefAttributesVieAccessibilityState {
     inline def setKeyNull: Self = StObject.set(x, "key", null)
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-    
-    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
     
@@ -667,10 +637,6 @@ object ViewPropsRefAttributesVieAccessibilityState {
     
     inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
     
-    inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
-    
-    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
-    
     inline def setOnResponderEnd(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderEnd", js.Any.fromFunction1(value))
     
     inline def setOnResponderEndUndefined: Self = StObject.set(x, "onResponderEnd", js.undefined)
@@ -751,10 +717,6 @@ object ViewPropsRefAttributesVieAccessibilityState {
     
     inline def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
     
-    inline def setRight(value: /* props */ ColorString => ReactNode): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
-    
-    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
-    
     inline def setShouldRasterizeIOS(value: Boolean): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
     
     inline def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
@@ -769,7 +731,17 @@ object ViewPropsRefAttributesVieAccessibilityState {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTitleStyleNull: Self = StObject.set(x, "titleStyle", null)
+    
+    inline def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     

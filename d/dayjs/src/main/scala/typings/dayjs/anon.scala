@@ -1,5 +1,8 @@
 package typings.dayjs
 
+import typings.dayjs.esmMod.ConfigType
+import typings.dayjs.esmMod.Dayjs
+import typings.dayjs.esmMod.OptionType
 import typings.dayjs.mod._ConfigType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -157,6 +160,66 @@ object anon {
       
       inline def setYearsUndefined: Self = StObject.set(x, "years", js.undefined)
     }
+  }
+  
+  @js.native
+  trait FnCall extends StObject {
+    
+    def apply(): Dayjs = js.native
+    def apply(date: Unit, format: Unit, locale: String): Dayjs = js.native
+    def apply(date: Unit, format: Unit, locale: String, strict: Boolean): Dayjs = js.native
+    def apply(date: Unit, format: Unit, locale: Unit, strict: Boolean): Dayjs = js.native
+    def apply(date: Unit, format: Unit, strict: Boolean): Dayjs = js.native
+    def apply(date: Unit, format: OptionType): Dayjs = js.native
+    def apply(date: Unit, format: OptionType, locale: String): Dayjs = js.native
+    def apply(date: Unit, format: OptionType, locale: String, strict: Boolean): Dayjs = js.native
+    def apply(date: Unit, format: OptionType, locale: Unit, strict: Boolean): Dayjs = js.native
+    def apply(date: Unit, format: OptionType, strict: Boolean): Dayjs = js.native
+    def apply(date: ConfigType): Dayjs = js.native
+    def apply(date: ConfigType, format: Unit, locale: String): Dayjs = js.native
+    def apply(date: ConfigType, format: Unit, locale: String, strict: Boolean): Dayjs = js.native
+    def apply(date: ConfigType, format: Unit, locale: Unit, strict: Boolean): Dayjs = js.native
+    def apply(date: ConfigType, format: Unit, strict: Boolean): Dayjs = js.native
+    def apply(date: ConfigType, format: OptionType): Dayjs = js.native
+    def apply(date: ConfigType, format: OptionType, locale: String): Dayjs = js.native
+    def apply(date: ConfigType, format: OptionType, locale: String, strict: Boolean): Dayjs = js.native
+    def apply(date: ConfigType, format: OptionType, locale: Unit, strict: Boolean): Dayjs = js.native
+    def apply(date: ConfigType, format: OptionType, strict: Boolean): Dayjs = js.native
+  }
+  
+  @js.native
+  trait FnCallDateFormatLocaleStrict extends StObject {
+    
+    def apply(): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: Unit, format: Unit, locale: String): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: Unit, format: Unit, locale: String, strict: Boolean): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: Unit, format: Unit, locale: Unit, strict: Boolean): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: Unit, format: Unit, strict: Boolean): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: Unit, format: typings.dayjs.mod.OptionType): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: Unit, format: typings.dayjs.mod.OptionType, locale: String): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: Unit, format: typings.dayjs.mod.OptionType, locale: String, strict: Boolean): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: Unit, format: typings.dayjs.mod.OptionType, locale: Unit, strict: Boolean): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: Unit, format: typings.dayjs.mod.OptionType, strict: Boolean): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: typings.dayjs.mod.ConfigType): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: typings.dayjs.mod.ConfigType, format: Unit, locale: String): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: typings.dayjs.mod.ConfigType, format: Unit, locale: String, strict: Boolean): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: typings.dayjs.mod.ConfigType, format: Unit, locale: Unit, strict: Boolean): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: typings.dayjs.mod.ConfigType, format: Unit, strict: Boolean): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: typings.dayjs.mod.ConfigType, format: typings.dayjs.mod.OptionType): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: typings.dayjs.mod.ConfigType, format: typings.dayjs.mod.OptionType, locale: String): typings.dayjs.mod.Dayjs = js.native
+    def apply(
+      date: typings.dayjs.mod.ConfigType,
+      format: typings.dayjs.mod.OptionType,
+      locale: String,
+      strict: Boolean
+    ): typings.dayjs.mod.Dayjs = js.native
+    def apply(
+      date: typings.dayjs.mod.ConfigType,
+      format: typings.dayjs.mod.OptionType,
+      locale: Unit,
+      strict: Boolean
+    ): typings.dayjs.mod.Dayjs = js.native
+    def apply(date: typings.dayjs.mod.ConfigType, format: typings.dayjs.mod.OptionType, strict: Boolean): typings.dayjs.mod.Dayjs = js.native
   }
   
   /* Inlined std.Partial<dayjs.ILocale> */

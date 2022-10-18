@@ -1,6 +1,6 @@
 package typings.redisClient
 
-import typings.redisClient.genericTransformersMod.BitValue
+import typings.redisClient.distLibCommandsGenericTransformersMod.BitValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

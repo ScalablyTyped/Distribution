@@ -1,9 +1,9 @@
 package typings.storybookReactRouter
 
 import typings.react.mod.ComponentType
-import typings.reactRouter.mod.MemoryRouterProps
-import typings.storybookAddons.typesMod.DecoratorFunction
-import typings.storybookReact.typesMod.StoryFnReactReturnType
+import typings.reactRouter.distLibComponentsMod.MemoryRouterProps
+import typings.storybookAddons.distTs3Dot9TypesMod.DecoratorFunction
+import typings.storybookReact.distTs3Dot9ClientPreviewTypesMod.StoryFnReactReturnType
 import typings.storybookReactRouter.anon.Links
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,8 +1,8 @@
 package typings.youtubePlayer
 
 import typings.std.HTMLElement
-import typings.youtubePlayer.typesMod.Options
-import typings.youtubePlayer.typesMod.YouTubePlayer
+import typings.youtubePlayer.distTypesMod.Options
+import typings.youtubePlayer.distTypesMod.YouTubePlayer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

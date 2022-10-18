@@ -89,10 +89,6 @@ object zinggridStrings {
   inline def K: K = "K".asInstanceOf[K]
   
   @js.native
-  sealed trait KebabKeys extends StObject
-  inline def KebabKeys: KebabKeys = "KebabKeys".asInstanceOf[KebabKeys]
-  
-  @js.native
   sealed trait L
     extends StObject
        with Upper

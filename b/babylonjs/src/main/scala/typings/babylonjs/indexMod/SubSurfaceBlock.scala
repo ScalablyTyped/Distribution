@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
+import typings.babylonjs.materialsNodeNodeMaterialBuildStateMod.NodeMaterialBuildState
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,8 +33,8 @@ object SubSurfaceBlock {
     */
   inline def GetCode(
     state: NodeMaterialBuildState,
-    ssBlock: Nullable[typings.babylonjs.subSurfaceBlockMod.SubSurfaceBlock],
-    reflectionBlock: Nullable[typings.babylonjs.reflectionBlockMod.ReflectionBlock],
+    ssBlock: Nullable[typings.babylonjs.materialsNodeBlocksPbrSubSurfaceBlockMod.SubSurfaceBlock],
+    reflectionBlock: Nullable[typings.babylonjs.materialsNodeBlocksPbrReflectionBlockMod.ReflectionBlock],
     worldPosVarName: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCode")(state.asInstanceOf[js.Any], ssBlock.asInstanceOf[js.Any], reflectionBlock.asInstanceOf[js.Any], worldPosVarName.asInstanceOf[js.Any])).asInstanceOf[String]
 }

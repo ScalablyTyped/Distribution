@@ -1,7 +1,7 @@
 package typings.pgPromise.mod
 
 import typings.pgMinify.mod.SQLParsingError
-import typings.pgPromise.pgSubsetMod.IResult
+import typings.pgPromise.typescriptPgSubsetMod.IResult
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

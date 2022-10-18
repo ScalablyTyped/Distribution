@@ -3,9 +3,9 @@ package typings.semanticUiReact.mod
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.modalActionsMod.ModalActionsProps
-import typings.semanticUiReact.modalModalMod.ModalComponent
-import typings.semanticUiReact.modalModalMod.ModalProps
+import typings.semanticUiReact.distCommonjsModulesModalModalActionsMod.ModalActionsProps
+import typings.semanticUiReact.distCommonjsModulesModalModalMod.ModalComponent
+import typings.semanticUiReact.distCommonjsModulesModalModalMod.ModalProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

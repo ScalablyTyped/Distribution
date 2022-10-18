@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xmldsigjs", "Application")
 @js.native
 open class Application ()
-  extends typings.xmldsigjs.applicationMod.Application
+  extends typings.xmldsigjs.buildTypesApplicationMod.Application
 /* static members */
 object Application {
   

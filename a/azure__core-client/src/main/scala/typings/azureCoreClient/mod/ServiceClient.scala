@@ -1,8 +1,8 @@
 package typings.azureCoreClient.mod
 
-import typings.azureCoreRestPipeline.coreRestPipelineMod.Pipeline
-import typings.azureCoreRestPipeline.coreRestPipelineMod.PipelineRequest
-import typings.azureCoreRestPipeline.coreRestPipelineMod.PipelineResponse
+import typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.Pipeline
+import typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.PipelineRequest
+import typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.PipelineResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

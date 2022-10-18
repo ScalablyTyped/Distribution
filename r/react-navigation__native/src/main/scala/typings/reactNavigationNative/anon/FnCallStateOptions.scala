@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallStateOptions extends StObject {
   
-  def apply[ParamList /* <: js.Object */](state: typings.reactNavigationCore.getPathFromStateMod.State): String = js.native
+  def apply[ParamList /* <: js.Object */](state: typings.reactNavigationCore.libTypescriptSrcGetPathFromStateMod.State): String = js.native
   def apply[ParamList /* <: js.Object */](
-    state: typings.reactNavigationCore.getPathFromStateMod.State,
-    options: typings.reactNavigationCore.getPathFromStateMod.Options[ParamList]
+    state: typings.reactNavigationCore.libTypescriptSrcGetPathFromStateMod.State,
+    options: typings.reactNavigationCore.libTypescriptSrcGetPathFromStateMod.Options[ParamList]
   ): String = js.native
 }

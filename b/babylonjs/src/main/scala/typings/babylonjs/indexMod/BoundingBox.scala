@@ -16,13 +16,13 @@ open class BoundingBox protected ()
     * @param worldMatrix defines the new world matrix
     */
   def this(
-    min: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    max: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
+    min: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    max: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3]
   ) = this()
   def this(
-    min: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    max: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    worldMatrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]
+    min: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    max: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    worldMatrix: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Matrix]
   ) = this()
 }
 /* static members */
@@ -39,8 +39,8 @@ object BoundingBox {
     * @returns true if there is an intersection
     */
   inline def Intersects(
-    box0: DeepImmutable[typings.babylonjs.boundingBoxMod.BoundingBox],
-    box1: DeepImmutable[typings.babylonjs.boundingBoxMod.BoundingBox]
+    box0: DeepImmutable[typings.babylonjs.cullingBoundingBoxMod.BoundingBox],
+    box1: DeepImmutable[typings.babylonjs.cullingBoundingBoxMod.BoundingBox]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Intersects")(box0.asInstanceOf[js.Any], box1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
@@ -52,9 +52,9 @@ object BoundingBox {
     * @returns true if there is an intersection
     */
   inline def IntersectsSphere(
-    minPoint: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    maxPoint: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    sphereCenter: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    minPoint: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    maxPoint: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    sphereCenter: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
     sphereRadius: Double
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IntersectsSphere")(minPoint.asInstanceOf[js.Any], maxPoint.asInstanceOf[js.Any], sphereCenter.asInstanceOf[js.Any], sphereRadius.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -65,8 +65,8 @@ object BoundingBox {
     * @returns true if there is an inclusion
     */
   inline def IsCompletelyInFrustum(
-    boundingVectors: js.Array[DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]],
-    frustumPlanes: js.Array[DeepImmutable[typings.babylonjs.mathPlaneMod.Plane]]
+    boundingVectors: js.Array[DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3]],
+    frustumPlanes: js.Array[DeepImmutable[typings.babylonjs.mathsMathDotplaneMod.Plane]]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsCompletelyInFrustum")(boundingVectors.asInstanceOf[js.Any], frustumPlanes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
@@ -76,8 +76,8 @@ object BoundingBox {
     * @returns true if there is an intersection
     */
   inline def IsInFrustum(
-    boundingVectors: js.Array[DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]],
-    frustumPlanes: js.Array[DeepImmutable[typings.babylonjs.mathPlaneMod.Plane]]
+    boundingVectors: js.Array[DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3]],
+    frustumPlanes: js.Array[DeepImmutable[typings.babylonjs.mathsMathDotplaneMod.Plane]]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsInFrustum")(boundingVectors.asInstanceOf[js.Any], frustumPlanes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("babylonjs/index", "BoundingBox._TmpVector3")

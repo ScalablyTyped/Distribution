@@ -1,6 +1,6 @@
 package typings.awsSdk.mod
 
-import typings.awsSdk.metadataServiceMod.MetadataServiceOptions
+import typings.awsSdk.libMetadataServiceMod.MetadataServiceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new MetadataService object with a given set of options.
   */
 open class MetadataService ()
-  extends typings.awsSdk.coreMod.MetadataService {
+  extends typings.awsSdk.libCoreMod.MetadataService {
   def this(options: MetadataServiceOptions) = this()
 }
 /* static members */

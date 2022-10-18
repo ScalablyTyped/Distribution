@@ -1,16 +1,16 @@
 package typings.mendixmodelsdk.mod.webservices
 
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
-import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenWebservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "webservices.PublishedServiceBase")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "webservices.PublishedServiceBase")
 @js.native
-abstract class PublishedServiceBase protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.webservices.PublishedServiceBase {
+open class PublishedServiceBase protected ()
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.webservices.PublishedServiceBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,

@@ -1,20 +1,20 @@
 package typings.mapboxMapboxSdk
 
-import typings.mapboxMapboxSdk.directionsMod.DirectionsAnnotation
-import typings.mapboxMapboxSdk.directionsMod.DirectionsClass
-import typings.mapboxMapboxSdk.directionsMod.DirectionsGeometry
-import typings.mapboxMapboxSdk.directionsMod.DirectionsMode
-import typings.mapboxMapboxSdk.directionsMod.DirectionsOverview
-import typings.mapboxMapboxSdk.directionsMod.DirectionsSide
-import typings.mapboxMapboxSdk.directionsMod.DirectionsUnits
-import typings.mapboxMapboxSdk.directionsMod.ManeuverModifier
-import typings.mapboxMapboxSdk.directionsMod.ManeuverType
-import typings.mapboxMapboxSdk.geocodingMod.GeocodeMode
-import typings.mapboxMapboxSdk.geocodingMod.GeocodeQueryType
-import typings.mapboxMapboxSdk.mapiRequestMod.DirectionsApproach
-import typings.mapboxMapboxSdk.mapiRequestMod.MapboxProfile
-import typings.mapboxMapboxSdk.optimizationMod.OptimizationAnnotation
-import typings.mapboxMapboxSdk.tilequeryMod.GeometryType
+import typings.mapboxMapboxSdk.libClassesMapiRequestMod.DirectionsApproach
+import typings.mapboxMapboxSdk.libClassesMapiRequestMod.MapboxProfile
+import typings.mapboxMapboxSdk.servicesDirectionsMod.DirectionsAnnotation
+import typings.mapboxMapboxSdk.servicesDirectionsMod.DirectionsClass
+import typings.mapboxMapboxSdk.servicesDirectionsMod.DirectionsGeometry
+import typings.mapboxMapboxSdk.servicesDirectionsMod.DirectionsMode
+import typings.mapboxMapboxSdk.servicesDirectionsMod.DirectionsOverview
+import typings.mapboxMapboxSdk.servicesDirectionsMod.DirectionsSide
+import typings.mapboxMapboxSdk.servicesDirectionsMod.DirectionsUnits
+import typings.mapboxMapboxSdk.servicesDirectionsMod.ManeuverModifier
+import typings.mapboxMapboxSdk.servicesDirectionsMod.ManeuverType
+import typings.mapboxMapboxSdk.servicesGeocodingMod.GeocodeMode
+import typings.mapboxMapboxSdk.servicesGeocodingMod.GeocodeQueryType
+import typings.mapboxMapboxSdk.servicesOptimizationMod.OptimizationAnnotation
+import typings.mapboxMapboxSdk.servicesTilequeryMod.GeometryType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,17 +1,17 @@
 package typings.globStream
 
 import typings.glob.mod.IOptions
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(glob: String): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
-  inline def apply(glob: String, options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
-  inline def apply(glob: js.Array[String]): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
-  inline def apply(glob: js.Array[String], options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def apply(glob: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def apply(glob: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def apply(glob: js.Array[String]): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def apply(glob: js.Array[String], options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
   @JSImport("glob-stream", JSImport.Namespace)
   @js.native

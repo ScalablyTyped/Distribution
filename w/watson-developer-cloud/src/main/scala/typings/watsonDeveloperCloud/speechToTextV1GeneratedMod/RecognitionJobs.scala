@@ -21,6 +21,6 @@ object RecognitionJobs {
     
     inline def setRecognitions(value: js.Array[RecognitionJob]): Self = StObject.set(x, "recognitions", value.asInstanceOf[js.Any])
     
-    inline def setRecognitionsVarargs(value: RecognitionJob*): Self = StObject.set(x, "recognitions", js.Array(value :_*))
+    inline def setRecognitionsVarargs(value: RecognitionJob*): Self = StObject.set(x, "recognitions", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 package typings.victoryBar
 
-import typings.victoryBar.mod.VictoryBarAlignmentType
-import typings.victoryBar.mod.VictoryBarTTargetType
+import typings.victoryBar.libMod.VictoryBarAlignmentType
+import typings.victoryBar.libMod.VictoryBarTTargetType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,8 +2,10 @@ package typings.makeDir.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.makeDir.makeDirStrings.buffer
-import typings.node.anon.Encoding
+import typings.node.NodeJS.ArrayBufferView
+import typings.node.NodeJS.ErrnoException
 import typings.node.anon.EncodingFlag
+import typings.node.anon.EncodingWithFileTypes
 import typings.node.anon.Flag
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
@@ -55,7 +57,7 @@ import typings.node.fsMod.WatchOptions
 import typings.node.fsMod.WriteFileOptions
 import typings.node.fsMod.WriteStream
 import typings.node.fsMod.symlink.Type
-import typings.node.nodeUrlMod.URL
+import typings.node.nodeColonurlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,73 +106,33 @@ trait Typeoffs extends StObject {
   def copyFileSync(src: PathLike, dest: PathLike): Unit = js.native
   def copyFileSync(src: PathLike, dest: PathLike, mode: Double): Unit = js.native
   
-  def cp(
-    source: String,
-    destination: String,
-    callback: js.Function1[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      Unit
-    ]
-  ): Unit = js.native
+  def cp(source: String, destination: String, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
   def cp(
     source: String,
     destination: String,
     opts: CopyOptions,
-    callback: js.Function1[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      Unit
-    ]
+    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
   ): Unit = js.native
-  def cp(
-    source: String,
-    destination: URL,
-    callback: js.Function1[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      Unit
-    ]
-  ): Unit = js.native
+  def cp(source: String, destination: URL, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
   def cp(
     source: String,
     destination: URL,
     opts: CopyOptions,
-    callback: js.Function1[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      Unit
-    ]
+    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
   ): Unit = js.native
-  def cp(
-    source: URL,
-    destination: String,
-    callback: js.Function1[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      Unit
-    ]
-  ): Unit = js.native
+  def cp(source: URL, destination: String, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
   def cp(
     source: URL,
     destination: String,
     opts: CopyOptions,
-    callback: js.Function1[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      Unit
-    ]
+    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
   ): Unit = js.native
-  def cp(
-    source: URL,
-    destination: URL,
-    callback: js.Function1[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      Unit
-    ]
-  ): Unit = js.native
+  def cp(source: URL, destination: URL, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
   def cp(
     source: URL,
     destination: URL,
     opts: CopyOptions,
-    callback: js.Function1[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      Unit
-    ]
+    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
   ): Unit = js.native
   
   def cpSync(source: String, destination: String): Unit = js.native
@@ -307,24 +269,18 @@ trait Typeoffs extends StObject {
   @JSName("readFileSync")
   def readFileSync_Union(path: PathOrFileDescriptor, options: BufferEncoding): String | Buffer = js.native
   
-  def readSync(fd: Double, buffer: js.typedarray.ArrayBufferView): Double = js.native
-  def readSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Double): Double = js.native
-  def readSync(
-    fd: Double,
-    buffer: js.typedarray.ArrayBufferView,
-    offset: Double,
-    length: Double,
-    position: ReadPosition
-  ): Double = js.native
-  def readSync(fd: Double, buffer: js.typedarray.ArrayBufferView, opts: ReadSyncOptions): Double = js.native
+  def readSync(fd: Double, buffer: ArrayBufferView): Double = js.native
+  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
+  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: ReadPosition): Double = js.native
+  def readSync(fd: Double, buffer: ArrayBufferView, opts: ReadSyncOptions): Double = js.native
   
   val readdir: Typeofreaddir = js.native
   
   def readdirSync(path: PathLike): js.Array[String] = js.native
-  def readdirSync(path: PathLike, options: Encoding): js.Array[Buffer] = js.native
+  def readdirSync(path: PathLike, options: EncodingWithFileTypes): js.Array[String] = js.native
   def readdirSync(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = js.native
   def readdirSync(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[Dirent] = js.native
-  def readdirSync(path: PathLike, options: WithFileTypes): js.Array[String] = js.native
+  def readdirSync(path: PathLike, options: WithFileTypes): js.Array[Buffer] = js.native
   def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = js.native
   @JSName("readdirSync")
   def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = js.native
@@ -341,8 +297,8 @@ trait Typeoffs extends StObject {
   
   val readv: Typeofreadv = js.native
   
-  def readvSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView]): Double = js.native
-  def readvSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView], position: Double): Double = js.native
+  def readvSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = js.native
+  def readvSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = js.native
   
   val realpath: Typeofrealpath = js.native
   
@@ -443,29 +399,23 @@ trait Typeoffs extends StObject {
   
   def writeFileSync(file: PathOrFileDescriptor, data: String): Unit = js.native
   def writeFileSync(file: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit = js.native
-  def writeFileSync(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView): Unit = js.native
-  def writeFileSync(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView, options: WriteFileOptions): Unit = js.native
+  def writeFileSync(file: PathOrFileDescriptor, data: ArrayBufferView): Unit = js.native
+  def writeFileSync(file: PathOrFileDescriptor, data: ArrayBufferView, options: WriteFileOptions): Unit = js.native
   
-  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView): Double = js.native
-  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double): Double = js.native
-  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Double): Double = js.native
-  def writeSync(
-    fd: Double,
-    buffer: js.typedarray.ArrayBufferView,
-    offset: Double,
-    length: Double,
-    position: Double
-  ): Double = js.native
-  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Unit, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Double): Double = js.native
-  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Unit, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Double): Double = js.native
-  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Double, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Null, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Unit, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Unit, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Null, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = js.native
   def writeSync(fd: Double, string: String): Double = js.native
   def writeSync(fd: Double, string: String, position: Double): Double = js.native
   def writeSync(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = js.native
@@ -474,6 +424,6 @@ trait Typeoffs extends StObject {
   
   val writev: Typeofwritev = js.native
   
-  def writevSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView]): Double = js.native
-  def writevSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView], position: Double): Double = js.native
+  def writevSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = js.native
+  def writevSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = js.native
 }

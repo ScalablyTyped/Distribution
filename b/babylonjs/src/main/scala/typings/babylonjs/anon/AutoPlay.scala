@@ -20,7 +20,7 @@ trait AutoPlay extends StObject {
   
   var loop: js.UndefOr[Boolean] = js.undefined
   
-  var mesh: js.UndefOr[typings.babylonjs.meshMod.Mesh] = js.undefined
+  var mesh: js.UndefOr[typings.babylonjs.meshesMeshMod.Mesh] = js.undefined
   
   var poster: js.UndefOr[String] = js.undefined
   
@@ -67,7 +67,7 @@ object AutoPlay {
     
     inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    inline def setMesh(value: typings.babylonjs.meshMod.Mesh): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
+    inline def setMesh(value: typings.babylonjs.meshesMeshMod.Mesh): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
     
     inline def setMeshUndefined: Self = StObject.set(x, "mesh", js.undefined)
     

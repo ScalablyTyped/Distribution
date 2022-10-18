@@ -1,7 +1,7 @@
 package typings.expoFont
 
-import typings.expoFont.fontTypesMod.FontSource
-import typings.expoFont.fontTypesMod.UnloadFontOptions
+import typings.expoFont.buildFontDottypesMod.FontSource
+import typings.expoFont.buildFontDottypesMod.UnloadFontOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,17 +18,17 @@ object mod {
   object FontDisplay extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.expoFont.fontTypesMod.FontDisplay & String] = js.native
+    def apply(value: String): js.UndefOr[typings.expoFont.buildFontDottypesMod.FontDisplay & String] = js.native
     
-    /* "auto" */ val AUTO: typings.expoFont.fontTypesMod.FontDisplay.AUTO & String = js.native
+    /* "auto" */ val AUTO: typings.expoFont.buildFontDottypesMod.FontDisplay.AUTO & String = js.native
     
-    /* "block" */ val BLOCK: typings.expoFont.fontTypesMod.FontDisplay.BLOCK & String = js.native
+    /* "block" */ val BLOCK: typings.expoFont.buildFontDottypesMod.FontDisplay.BLOCK & String = js.native
     
-    /* "fallback" */ val FALLBACK: typings.expoFont.fontTypesMod.FontDisplay.FALLBACK & String = js.native
+    /* "fallback" */ val FALLBACK: typings.expoFont.buildFontDottypesMod.FontDisplay.FALLBACK & String = js.native
     
-    /* "optional" */ val OPTIONAL: typings.expoFont.fontTypesMod.FontDisplay.OPTIONAL & String = js.native
+    /* "optional" */ val OPTIONAL: typings.expoFont.buildFontDottypesMod.FontDisplay.OPTIONAL & String = js.native
     
-    /* "swap" */ val SWAP: typings.expoFont.fontTypesMod.FontDisplay.SWAP & String = js.native
+    /* "swap" */ val SWAP: typings.expoFont.buildFontDottypesMod.FontDisplay.SWAP & String = js.native
   }
   
   inline def isLoaded(fontFamily: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoaded")(fontFamily.asInstanceOf[js.Any]).asInstanceOf[Boolean]

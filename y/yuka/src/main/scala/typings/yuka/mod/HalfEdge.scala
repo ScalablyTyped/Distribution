@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [vertex=Vector3(0,0,0)] - The vertex of this half-edge. It represents the head/destination of the respective full edge.
   */
 open class HalfEdge ()
-  extends typings.yuka.yukaMod.HalfEdge {
-  def this(vertex: typings.yuka.vector3Mod.Vector3) = this()
+  extends typings.yuka.srcYukaMod.HalfEdge {
+  def this(vertex: typings.yuka.srcMathVector3Mod.Vector3) = this()
 }

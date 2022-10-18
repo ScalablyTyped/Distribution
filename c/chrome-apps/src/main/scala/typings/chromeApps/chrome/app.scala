@@ -32,36 +32,9 @@ import typings.chromeApps.chromeAppsStrings.SYSTEM_TRAY
 import typings.chromeApps.chromeAppsStrings.TEST
 import typings.chromeApps.chromeAppsStrings.UNTRACKED
 import typings.chromeApps.chromeAppsStrings.URL_HANDLER
-import typings.chromeApps.chromeAppsStrings.about_page_
-import typings.chromeApps.chromeAppsStrings.app_launcher_
-import typings.chromeApps.chromeAppsStrings.background_
-import typings.chromeApps.chromeAppsStrings.chrome_internal_
-import typings.chromeApps.chromeAppsStrings.command_line_
-import typings.chromeApps.chromeAppsStrings.context_menu_
-import typings.chromeApps.chromeAppsStrings.ephemeral_app_
-import typings.chromeApps.chromeAppsStrings.extensions_page_
-import typings.chromeApps.chromeAppsStrings.file_handler_
-import typings.chromeApps.chromeAppsStrings.fullscreen_
-import typings.chromeApps.chromeAppsStrings.installed_notification_
-import typings.chromeApps.chromeAppsStrings.keyboard_
-import typings.chromeApps.chromeAppsStrings.kiosk_
-import typings.chromeApps.chromeAppsStrings.load_and_launch_
-import typings.chromeApps.chromeAppsStrings.management_api_
-import typings.chromeApps.chromeAppsStrings.maximized_
-import typings.chromeApps.chromeAppsStrings.minimized_
-import typings.chromeApps.chromeAppsStrings.new_note_
-import typings.chromeApps.chromeAppsStrings.new_tab_page_
 import typings.chromeApps.chromeAppsStrings.none_
-import typings.chromeApps.chromeAppsStrings.normal_
-import typings.chromeApps.chromeAppsStrings.reload_
-import typings.chromeApps.chromeAppsStrings.restart_
 import typings.chromeApps.chromeAppsStrings.shell
-import typings.chromeApps.chromeAppsStrings.system_tray_
-import typings.chromeApps.chromeAppsStrings.test_
-import typings.chromeApps.chromeAppsStrings.untracked_
-import typings.chromeApps.chromeAppsStrings.url_handler_
 import typings.filesystem.FileEntry
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -570,10 +543,7 @@ object app {
         ToStringLiteral[
           FULLSCREEN, 
           /* keyof chrome-apps.anon.FULLSCREEN */ NORMAL | typings.chromeApps.chromeAppsStrings.FULLSCREEN | MAXIMIZED | MINIMIZED, 
-          Exclude[
-            /* keyof chrome-apps.anon.FULLSCREEN */ NORMAL | typings.chromeApps.chromeAppsStrings.FULLSCREEN | MAXIMIZED | MINIMIZED, 
-            normal_ | fullscreen_ | maximized_ | minimized_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NORMAL :'normal',   FULLSCREEN :'fullscreen',   MAXIMIZED :'maximized',   MINIMIZED :'minimized'} extends keyof {  NORMAL :'normal',   FULLSCREEN :'fullscreen',   MAXIMIZED :'maximized',   MINIMIZED :'minimized'} ? std.Exclude<keyof {  NORMAL :'normal',   FULLSCREEN :'fullscreen',   MAXIMIZED :'maximized',   MINIMIZED :'minimized'}, 'normal' | 'fullscreen' | 'maximized' | 'minimized'> : never */ js.Any
         ]
       ] = js.undefined
     
@@ -674,10 +644,7 @@ object app {
         value: ToStringLiteral[
               FULLSCREEN, 
               /* keyof chrome-apps.anon.FULLSCREEN */ NORMAL | typings.chromeApps.chromeAppsStrings.FULLSCREEN | MAXIMIZED | MINIMIZED, 
-              Exclude[
-                /* keyof chrome-apps.anon.FULLSCREEN */ NORMAL | typings.chromeApps.chromeAppsStrings.FULLSCREEN | MAXIMIZED | MINIMIZED, 
-                normal_ | fullscreen_ | maximized_ | minimized_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NORMAL :'normal',   FULLSCREEN :'fullscreen',   MAXIMIZED :'maximized',   MINIMIZED :'minimized'} extends keyof {  NORMAL :'normal',   FULLSCREEN :'fullscreen',   MAXIMIZED :'maximized',   MINIMIZED :'minimized'} ? std.Exclude<keyof {  NORMAL :'normal',   FULLSCREEN :'fullscreen',   MAXIMIZED :'maximized',   MINIMIZED :'minimized'}, 'normal' | 'fullscreen' | 'maximized' | 'minimized'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
@@ -822,7 +789,13 @@ object app {
         * |____________________|____________|____________________________________________|
         * @since Chrome 54.
         */
-      var actionData: js.UndefOr[ToStringLiteral[NEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]] = js.undefined
+      var actionData: js.UndefOr[
+            ToStringLiteral[
+              NEWNOTE, 
+              NEW_NOTE, 
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NEW_NOTE :'new_note'} extends keyof {  NEW_NOTE :'new_note'} ? std.Exclude<keyof {  NEW_NOTE :'new_note'}, 'new_note'> : never */ js.Any
+            ]
+          ] = js.undefined
       
       /**
         * The ID of the file or URL handler that the app is being invoked with.
@@ -859,10 +832,7 @@ object app {
             ToStringLiteral[
               ABOUTPAGE, 
               /* keyof chrome-apps.anon.ABOUTPAGE */ ABOUT_PAGE | APP_LAUNCHER | BACKGROUND | CHROME_INTERNAL | COMMAND_LINE | CONTEXT_MENU | EPHEMERAL_APP | EXTENSIONS_PAGE | FILE_HANDLER | INSTALLED_NOTIFICATION | KEYBOARD | KIOSK | LOAD_AND_LAUNCH | MANAGEMENT_API | NEW_TAB_PAGE | RELOAD | RESTART | SYSTEM_TRAY | TEST | UNTRACKED | URL_HANDLER, 
-              Exclude[
-                /* keyof chrome-apps.anon.ABOUTPAGE */ ABOUT_PAGE | APP_LAUNCHER | BACKGROUND | CHROME_INTERNAL | COMMAND_LINE | CONTEXT_MENU | EPHEMERAL_APP | EXTENSIONS_PAGE | FILE_HANDLER | INSTALLED_NOTIFICATION | KEYBOARD | KIOSK | LOAD_AND_LAUNCH | MANAGEMENT_API | NEW_TAB_PAGE | RELOAD | RESTART | SYSTEM_TRAY | TEST | UNTRACKED | URL_HANDLER, 
-                command_line_ | background_ | url_handler_ | system_tray_ | context_menu_ | chrome_internal_ | installed_notification_ | kiosk_ | restart_ | reload_ | new_tab_page_ | test_ | extensions_page_ | file_handler_ | management_api_ | about_page_ | load_and_launch_ | untracked_ | app_launcher_ | keyboard_ | ephemeral_app_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ABOUT_PAGE :'about_page',   APP_LAUNCHER :'app_launcher',   BACKGROUND :'background',   CHROME_INTERNAL :'chrome_internal',   COMMAND_LINE :'command_line',   CONTEXT_MENU :'context_menu',   EPHEMERAL_APP :'ephemeral_app',   EXTENSIONS_PAGE :'extensions_page',   FILE_HANDLER :'file_handler',   INSTALLED_NOTIFICATION :'installed_notification',   KEYBOARD :'keyboard',   KIOSK :'kiosk',   LOAD_AND_LAUNCH :'load_and_launch',   MANAGEMENT_API :'management_api',   NEW_TAB_PAGE :'new_tab_page',   RELOAD :'reload',   RESTART :'restart',   SYSTEM_TRAY :'system_tray',   TEST :'test',   UNTRACKED :'untracked',   URL_HANDLER :'url_handler'} extends keyof {  ABOUT_PAGE :'about_page',   APP_LAUNCHER :'app_launcher',   BACKGROUND :'background',   CHROME_INTERNAL :'chrome_internal',   COMMAND_LINE :'command_line',   CONTEXT_MENU :'context_menu',   EPHEMERAL_APP :'ephemeral_app',   EXTENSIONS_PAGE :'extensions_page',   FILE_HANDLER :'file_handler',   INSTALLED_NOTIFICATION :'installed_notification',   KEYBOARD :'keyboard',   KIOSK :'kiosk',   LOAD_AND_LAUNCH :'load_and_launch',   MANAGEMENT_API :'management_api',   NEW_TAB_PAGE :'new_tab_page',   RELOAD :'reload',   RESTART :'restart',   SYSTEM_TRAY :'system_tray',   TEST :'test',   UNTRACKED :'untracked',   URL_HANDLER :'url_handler'} ? std.Exclude<keyof {  ABOUT_PAGE :'about_page',   APP_LAUNCHER :'app_launcher',   BACKGROUND :'background',   CHROME_INTERNAL :'chrome_internal',   COMMAND_LINE :'command_line',   CONTEXT_MENU :'context_menu',   EPHEMERAL_APP :'ephemeral_app',   EXTENSIONS_PAGE :'extensions_page',   FILE_HANDLER :'file_handler',   INSTALLED_NOTIFICATION :'installed_notification',   KEYBOARD :'keyboard',   KIOSK :'kiosk',   LOAD_AND_LAUNCH :'load_and_launch',   MANAGEMENT_API :'management_api',   NEW_TAB_PAGE :'new_tab_page',   RELOAD :'reload',   RESTART :'restart',   SYSTEM_TRAY :'system_tray',   TEST :'test',   UNTRACKED :'untracked',   URL_HANDLER :'url_handler'}, 'command_line' | 'background' | 'url_handler' | 'system_tray' | 'context_menu' | 'chrome_internal' | 'installed_notification' | 'kiosk' | 'restart' | 'reload' | 'new_tab_page' | 'test' | 'extensions_page' | 'file_handler' | 'management_api' | 'about_page' | 'load_and_launch' | 'untracked' | 'app_launcher' | 'keyboard' | 'ephemeral_app'> : never */ js.Any
             ]
           ] = js.undefined
       
@@ -880,7 +850,13 @@ object app {
       
       extension [Self <: LaunchData](x: Self) {
         
-        inline def setActionData(value: ToStringLiteral[NEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]): Self = StObject.set(x, "actionData", value.asInstanceOf[js.Any])
+        inline def setActionData(
+          value: ToStringLiteral[
+                  NEWNOTE, 
+                  NEW_NOTE, 
+                  /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NEW_NOTE :'new_note'} extends keyof {  NEW_NOTE :'new_note'} ? std.Exclude<keyof {  NEW_NOTE :'new_note'}, 'new_note'> : never */ js.Any
+                ]
+        ): Self = StObject.set(x, "actionData", value.asInstanceOf[js.Any])
         
         inline def setActionDataUndefined: Self = StObject.set(x, "actionData", js.undefined)
         
@@ -910,10 +886,7 @@ object app {
           value: ToStringLiteral[
                   ABOUTPAGE, 
                   /* keyof chrome-apps.anon.ABOUTPAGE */ ABOUT_PAGE | APP_LAUNCHER | BACKGROUND | CHROME_INTERNAL | COMMAND_LINE | CONTEXT_MENU | EPHEMERAL_APP | EXTENSIONS_PAGE | FILE_HANDLER | INSTALLED_NOTIFICATION | KEYBOARD | KIOSK | LOAD_AND_LAUNCH | MANAGEMENT_API | NEW_TAB_PAGE | RELOAD | RESTART | SYSTEM_TRAY | TEST | UNTRACKED | URL_HANDLER, 
-                  Exclude[
-                    /* keyof chrome-apps.anon.ABOUTPAGE */ ABOUT_PAGE | APP_LAUNCHER | BACKGROUND | CHROME_INTERNAL | COMMAND_LINE | CONTEXT_MENU | EPHEMERAL_APP | EXTENSIONS_PAGE | FILE_HANDLER | INSTALLED_NOTIFICATION | KEYBOARD | KIOSK | LOAD_AND_LAUNCH | MANAGEMENT_API | NEW_TAB_PAGE | RELOAD | RESTART | SYSTEM_TRAY | TEST | UNTRACKED | URL_HANDLER, 
-                    command_line_ | background_ | url_handler_ | system_tray_ | context_menu_ | chrome_internal_ | installed_notification_ | kiosk_ | restart_ | reload_ | new_tab_page_ | test_ | extensions_page_ | file_handler_ | management_api_ | about_page_ | load_and_launch_ | untracked_ | app_launcher_ | keyboard_ | ephemeral_app_
-                  ]
+                  /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ABOUT_PAGE :'about_page',   APP_LAUNCHER :'app_launcher',   BACKGROUND :'background',   CHROME_INTERNAL :'chrome_internal',   COMMAND_LINE :'command_line',   CONTEXT_MENU :'context_menu',   EPHEMERAL_APP :'ephemeral_app',   EXTENSIONS_PAGE :'extensions_page',   FILE_HANDLER :'file_handler',   INSTALLED_NOTIFICATION :'installed_notification',   KEYBOARD :'keyboard',   KIOSK :'kiosk',   LOAD_AND_LAUNCH :'load_and_launch',   MANAGEMENT_API :'management_api',   NEW_TAB_PAGE :'new_tab_page',   RELOAD :'reload',   RESTART :'restart',   SYSTEM_TRAY :'system_tray',   TEST :'test',   UNTRACKED :'untracked',   URL_HANDLER :'url_handler'} extends keyof {  ABOUT_PAGE :'about_page',   APP_LAUNCHER :'app_launcher',   BACKGROUND :'background',   CHROME_INTERNAL :'chrome_internal',   COMMAND_LINE :'command_line',   CONTEXT_MENU :'context_menu',   EPHEMERAL_APP :'ephemeral_app',   EXTENSIONS_PAGE :'extensions_page',   FILE_HANDLER :'file_handler',   INSTALLED_NOTIFICATION :'installed_notification',   KEYBOARD :'keyboard',   KIOSK :'kiosk',   LOAD_AND_LAUNCH :'load_and_launch',   MANAGEMENT_API :'management_api',   NEW_TAB_PAGE :'new_tab_page',   RELOAD :'reload',   RESTART :'restart',   SYSTEM_TRAY :'system_tray',   TEST :'test',   UNTRACKED :'untracked',   URL_HANDLER :'url_handler'} ? std.Exclude<keyof {  ABOUT_PAGE :'about_page',   APP_LAUNCHER :'app_launcher',   BACKGROUND :'background',   CHROME_INTERNAL :'chrome_internal',   COMMAND_LINE :'command_line',   CONTEXT_MENU :'context_menu',   EPHEMERAL_APP :'ephemeral_app',   EXTENSIONS_PAGE :'extensions_page',   FILE_HANDLER :'file_handler',   INSTALLED_NOTIFICATION :'installed_notification',   KEYBOARD :'keyboard',   KIOSK :'kiosk',   LOAD_AND_LAUNCH :'load_and_launch',   MANAGEMENT_API :'management_api',   NEW_TAB_PAGE :'new_tab_page',   RELOAD :'reload',   RESTART :'restart',   SYSTEM_TRAY :'system_tray',   TEST :'test',   UNTRACKED :'untracked',   URL_HANDLER :'url_handler'}, 'command_line' | 'background' | 'url_handler' | 'system_tray' | 'context_menu' | 'chrome_internal' | 'installed_notification' | 'kiosk' | 'restart' | 'reload' | 'new_tab_page' | 'test' | 'extensions_page' | 'file_handler' | 'management_api' | 'about_page' | 'load_and_launch' | 'untracked' | 'app_launcher' | 'keyboard' | 'ephemeral_app'> : never */ js.Any
                 ]
         ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         

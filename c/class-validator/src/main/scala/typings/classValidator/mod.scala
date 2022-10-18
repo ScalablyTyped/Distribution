@@ -5,19 +5,19 @@ import typings.classValidator.anon.Async
 import typings.classValidator.anon.Get
 import typings.classValidator.anon.Instantiable
 import typings.classValidator.anon.Nullable
-import typings.classValidator.arrayUniqueMod.ArrayUniqueIdentifier
 import typings.classValidator.classValidatorStrings.any
-import typings.classValidator.containerMod.UseContainerOptions
-import typings.classValidator.isIPMod.IsIpVersion
-import typings.classValidator.isISBNMod.IsISBNVersion
-import typings.classValidator.isNumberMod.IsNumberOptions
-import typings.classValidator.isUUIDMod.UUIDVersion
-import typings.classValidator.registerDecoratorMod.ValidationDecoratorOptions
-import typings.classValidator.validateByMod.ValidateByOptions
-import typings.classValidator.validationArgumentsMod.ValidationArguments
-import typings.classValidator.validationOptionsMod.ValidationOptions
-import typings.classValidator.validationSchemaMod.ValidationSchema
-import typings.classValidator.validatorOptionsMod.ValidatorOptions
+import typings.classValidator.typesContainerMod.UseContainerOptions
+import typings.classValidator.typesDecoratorArrayArrayUniqueMod.ArrayUniqueIdentifier
+import typings.classValidator.typesDecoratorCommonValidateByMod.ValidateByOptions
+import typings.classValidator.typesDecoratorStringIsIPMod.IsIpVersion
+import typings.classValidator.typesDecoratorStringIsISBNMod.IsISBNVersion
+import typings.classValidator.typesDecoratorStringIsUUIDMod.UUIDVersion
+import typings.classValidator.typesDecoratorTypecheckerIsNumberMod.IsNumberOptions
+import typings.classValidator.typesDecoratorValidationOptionsMod.ValidationOptions
+import typings.classValidator.typesRegisterDecoratorMod.ValidationDecoratorOptions
+import typings.classValidator.typesValidationSchemaValidationSchemaMod.ValidationSchema
+import typings.classValidator.typesValidationValidationArgumentsMod.ValidationArguments
+import typings.classValidator.typesValidationValidatorOptionsMod.ValidatorOptions
 import typings.libphonenumberJs.typesMod.CountryCode
 import typings.std.PropertyDecorator
 import typings.validator.mod.validator.AlphaLocale
@@ -789,7 +789,7 @@ object mod {
   @JSImport("class-validator", "MetadataStorage")
   @js.native
   open class MetadataStorage ()
-    extends typings.classValidator.metadataStorageMod.MetadataStorage
+    extends typings.classValidator.typesMetadataMetadataStorageMod.MetadataStorage
   
   inline def MinDate_(date: js.Date): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("MinDate")(date.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def MinDate_(date: js.Date, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MinDate")(date.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
@@ -838,12 +838,12 @@ object mod {
   @JSImport("class-validator", "ValidationError")
   @js.native
   open class ValidationError ()
-    extends typings.classValidator.validationErrorMod.ValidationError
+    extends typings.classValidator.typesValidationValidationErrorMod.ValidationError
   
   @JSImport("class-validator", "ValidationTypes")
   @js.native
   open class ValidationTypes ()
-    extends typings.classValidator.validationTypesMod.ValidationTypes
+    extends typings.classValidator.typesValidationValidationTypesMod.ValidationTypes
   /* static members */
   object ValidationTypes {
     
@@ -890,7 +890,7 @@ object mod {
   @JSImport("class-validator", "Validator")
   @js.native
   open class Validator ()
-    extends typings.classValidator.validatorMod.Validator
+    extends typings.classValidator.typesValidationValidatorMod.Validator
   
   inline def ValidatorConstraint(): js.Function1[/* target */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidatorConstraint")().asInstanceOf[js.Function1[/* target */ js.Function, Unit]]
   inline def ValidatorConstraint(options: Async): js.Function1[/* target */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidatorConstraint")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ js.Function, Unit]]
@@ -921,7 +921,7 @@ object mod {
   inline def getFromContainer[T](someClass: js.Function): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getFromContainer")(someClass.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def getFromContainer[T](someClass: Instantiable[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getFromContainer")(someClass.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def getMetadataStorage(): typings.classValidator.metadataStorageMod.MetadataStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataStorage")().asInstanceOf[typings.classValidator.metadataStorageMod.MetadataStorage]
+  inline def getMetadataStorage(): typings.classValidator.typesMetadataMetadataStorageMod.MetadataStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataStorage")().asInstanceOf[typings.classValidator.typesMetadataMetadataStorageMod.MetadataStorage]
   
   inline def isAlpha(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlpha")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isAlpha(value: Any, locale: AlphaLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlpha")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -1141,18 +1141,34 @@ object mod {
   inline def useContainer(iocContainer: Get): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useContainer")(iocContainer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def useContainer(iocContainer: Get, options: UseContainerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useContainer")(iocContainer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def validate(`object`: js.Object): js.Promise[js.Array[typings.classValidator.validationErrorMod.ValidationError]] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.classValidator.validationErrorMod.ValidationError]]]
-  inline def validate(`object`: js.Object, validatorOptions: ValidatorOptions): js.Promise[js.Array[typings.classValidator.validationErrorMod.ValidationError]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(`object`.asInstanceOf[js.Any], validatorOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.classValidator.validationErrorMod.ValidationError]]]
-  inline def validate(schemaName: String, `object`: js.Object): js.Promise[js.Array[typings.classValidator.validationErrorMod.ValidationError]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schemaName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.classValidator.validationErrorMod.ValidationError]]]
-  inline def validate(schemaName: String, `object`: js.Object, validatorOptions: ValidatorOptions): js.Promise[js.Array[typings.classValidator.validationErrorMod.ValidationError]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schemaName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], validatorOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.classValidator.validationErrorMod.ValidationError]]]
+  inline def validate(`object`: js.Object): js.Promise[
+    js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError]
+  ]]
+  inline def validate(`object`: js.Object, validatorOptions: ValidatorOptions): js.Promise[
+    js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(`object`.asInstanceOf[js.Any], validatorOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError]
+  ]]
+  inline def validate(schemaName: String, `object`: js.Object): js.Promise[
+    js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schemaName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError]
+  ]]
+  inline def validate(schemaName: String, `object`: js.Object, validatorOptions: ValidatorOptions): js.Promise[
+    js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schemaName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], validatorOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError]
+  ]]
   
   inline def validateOrReject(`object`: js.Object): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOrReject")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def validateOrReject(`object`: js.Object, validatorOptions: ValidatorOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOrReject")(`object`.asInstanceOf[js.Any], validatorOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def validateOrReject(schemaName: String, `object`: js.Object): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOrReject")(schemaName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def validateOrReject(schemaName: String, `object`: js.Object, validatorOptions: ValidatorOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOrReject")(schemaName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], validatorOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def validateSync(`object`: js.Object): js.Array[typings.classValidator.validationErrorMod.ValidationError] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSync")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.classValidator.validationErrorMod.ValidationError]]
-  inline def validateSync(`object`: js.Object, validatorOptions: ValidatorOptions): js.Array[typings.classValidator.validationErrorMod.ValidationError] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSync")(`object`.asInstanceOf[js.Any], validatorOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.classValidator.validationErrorMod.ValidationError]]
-  inline def validateSync(schemaName: String, `object`: js.Object): js.Array[typings.classValidator.validationErrorMod.ValidationError] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSync")(schemaName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.classValidator.validationErrorMod.ValidationError]]
-  inline def validateSync(schemaName: String, `object`: js.Object, validatorOptions: ValidatorOptions): js.Array[typings.classValidator.validationErrorMod.ValidationError] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSync")(schemaName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], validatorOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.classValidator.validationErrorMod.ValidationError]]
+  inline def validateSync(`object`: js.Object): js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSync")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError]]
+  inline def validateSync(`object`: js.Object, validatorOptions: ValidatorOptions): js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSync")(`object`.asInstanceOf[js.Any], validatorOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError]]
+  inline def validateSync(schemaName: String, `object`: js.Object): js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSync")(schemaName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError]]
+  inline def validateSync(schemaName: String, `object`: js.Object, validatorOptions: ValidatorOptions): js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSync")(schemaName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], validatorOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.classValidator.typesValidationValidationErrorMod.ValidationError]]
 }

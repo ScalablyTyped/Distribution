@@ -1,7 +1,7 @@
 package typings.naja.anon
 
-import typings.naja.snippetCacheMod.SnippetCacheKey
-import typings.naja.snippetCacheMod.SnippetCacheStorageType
+import typings.naja.distCoreSnippetCacheMod.SnippetCacheKey
+import typings.naja.distCoreSnippetCacheMod.SnippetCacheStorageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

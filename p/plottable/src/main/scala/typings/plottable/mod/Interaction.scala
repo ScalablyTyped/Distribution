@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("plottable", "Interaction")
 @js.native
 open class Interaction ()
-  extends typings.plottable.interactionMod.Interaction
+  extends typings.plottable.buildSrcInteractionsInteractionMod.Interaction

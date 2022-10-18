@@ -1,8 +1,8 @@
 package typings.tensorflowModelsFaceDetection
 
-import typings.tensorflowModelsFaceDetection.commonInterfacesMod.Keypoint
-import typings.tensorflowModelsFaceDetection.commonInterfacesMod.PixelInput
-import typings.tensorflowModelsFaceDetection.shapeInterfacesMod.BoundingBox
+import typings.tensorflowModelsFaceDetection.distSharedCalculatorsInterfacesCommonInterfacesMod.Keypoint
+import typings.tensorflowModelsFaceDetection.distSharedCalculatorsInterfacesCommonInterfacesMod.PixelInput
+import typings.tensorflowModelsFaceDetection.distSharedCalculatorsInterfacesShapeInterfacesMod.BoundingBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

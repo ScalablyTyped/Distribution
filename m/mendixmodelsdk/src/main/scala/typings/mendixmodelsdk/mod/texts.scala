@@ -1,51 +1,51 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
-import typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn
-import typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.StaticLabel
-import typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.Title
-import typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationDeleteBehavior
-import typings.mendixmodelsdk.domainmodelsMod.domainmodels.ValidationRule
-import typings.mendixmodelsdk.enumerationsMod.enumerations.EnumerationValue
-import typings.mendixmodelsdk.menusMod.menus.MenuItem
-import typings.mendixmodelsdk.microflowsMod.microflows.Microflow
-import typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate
-import typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem
-import typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile
-import typings.mendixmodelsdk.pagesMod.pages.AttributeWidget
-import typings.mendixmodelsdk.pagesMod.pages.AttributeWidgetWithPlaceholder
-import typings.mendixmodelsdk.pagesMod.pages.Button
-import typings.mendixmodelsdk.pagesMod.pages.CallNanoflowClientAction
-import typings.mendixmodelsdk.pagesMod.pages.ClientTemplate
-import typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo
-import typings.mendixmodelsdk.pagesMod.pages.ControlBarButton
-import typings.mendixmodelsdk.pagesMod.pages.DataView
-import typings.mendixmodelsdk.pagesMod.pages.DropDown
-import typings.mendixmodelsdk.pagesMod.pages.DropDownButtonItem
-import typings.mendixmodelsdk.pagesMod.pages.GridColumn
-import typings.mendixmodelsdk.pagesMod.pages.InputWidget
-import typings.mendixmodelsdk.pagesMod.pages.Label
-import typings.mendixmodelsdk.pagesMod.pages.LoginTextBox
-import typings.mendixmodelsdk.pagesMod.pages.MasterDetailDetailRegion
-import typings.mendixmodelsdk.pagesMod.pages.MicroflowSettings
-import typings.mendixmodelsdk.pagesMod.pages.Page
-import typings.mendixmodelsdk.pagesMod.pages.PageSettings
-import typings.mendixmodelsdk.pagesMod.pages.ReferenceSelector
-import typings.mendixmodelsdk.pagesMod.pages.SearchField
-import typings.mendixmodelsdk.pagesMod.pages.TabPage
-import typings.mendixmodelsdk.pagesMod.pages.TextArea
-import typings.mendixmodelsdk.pagesMod.pages.WidgetValidation
-import typings.mendixmodelsdk.projectsMod.projects.IProject
-import typings.mendixmodelsdk.reportsMod.reports.BasicReportAggregate
-import typings.mendixmodelsdk.reportsMod.reports.BasicReportColumn
-import typings.mendixmodelsdk.reportsMod.reports.ReportButton
-import typings.mendixmodelsdk.reportsMod.reports.ReportChart
-import typings.mendixmodelsdk.reportsMod.reports.ReportChartSeries
-import typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeField
-import typings.mendixmodelsdk.reportsMod.reports.ReportDateRangeSelector
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.WidgetValue
+import typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DataGridColumn
+import typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.StaticLabel
+import typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.Title
+import typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AssociationDeleteBehavior
+import typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.ValidationRule
+import typings.mendixmodelsdk.srcGenEnumerationsMod.enumerations.EnumerationValue
+import typings.mendixmodelsdk.srcGenMenusMod.menus.MenuItem
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.Microflow
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.TextTemplate
+import typings.mendixmodelsdk.srcGenNativepagesMod.nativepages.BottomBarItem
+import typings.mendixmodelsdk.srcGenNavigationMod.navigation.NavigationProfile
+import typings.mendixmodelsdk.srcGenPagesMod.pages.AttributeWidget
+import typings.mendixmodelsdk.srcGenPagesMod.pages.AttributeWidgetWithPlaceholder
+import typings.mendixmodelsdk.srcGenPagesMod.pages.Button
+import typings.mendixmodelsdk.srcGenPagesMod.pages.CallNanoflowClientAction
+import typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate
+import typings.mendixmodelsdk.srcGenPagesMod.pages.ConfirmationInfo
+import typings.mendixmodelsdk.srcGenPagesMod.pages.ControlBarButton
+import typings.mendixmodelsdk.srcGenPagesMod.pages.DataView
+import typings.mendixmodelsdk.srcGenPagesMod.pages.DropDown
+import typings.mendixmodelsdk.srcGenPagesMod.pages.DropDownButtonItem
+import typings.mendixmodelsdk.srcGenPagesMod.pages.GridColumn
+import typings.mendixmodelsdk.srcGenPagesMod.pages.InputWidget
+import typings.mendixmodelsdk.srcGenPagesMod.pages.Label
+import typings.mendixmodelsdk.srcGenPagesMod.pages.LoginTextBox
+import typings.mendixmodelsdk.srcGenPagesMod.pages.MasterDetailDetailRegion
+import typings.mendixmodelsdk.srcGenPagesMod.pages.MicroflowSettings
+import typings.mendixmodelsdk.srcGenPagesMod.pages.Page
+import typings.mendixmodelsdk.srcGenPagesMod.pages.PageSettings
+import typings.mendixmodelsdk.srcGenPagesMod.pages.ReferenceSelector
+import typings.mendixmodelsdk.srcGenPagesMod.pages.SearchField
+import typings.mendixmodelsdk.srcGenPagesMod.pages.TabPage
+import typings.mendixmodelsdk.srcGenPagesMod.pages.TextArea
+import typings.mendixmodelsdk.srcGenPagesMod.pages.WidgetValidation
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IProject
+import typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReportAggregate
+import typings.mendixmodelsdk.srcGenReportsMod.reports.BasicReportColumn
+import typings.mendixmodelsdk.srcGenReportsMod.reports.ReportButton
+import typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChart
+import typings.mendixmodelsdk.srcGenReportsMod.reports.ReportChartSeries
+import typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeField
+import typings.mendixmodelsdk.srcGenReportsMod.reports.ReportDateRangeSelector
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,14 +58,14 @@ object texts {
   @JSImport("mendixmodelsdk", "texts.SystemText")
   @js.native
   open class SystemText protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.texts.SystemText {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.texts.SystemText {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object SystemText {
@@ -80,7 +80,7 @@ object texts {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.textsMod.texts.SystemText = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.SystemText]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenTextsMod.texts.SystemText = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.SystemText]
     
     /**
       * Creates and returns a new SystemText instance in the SDK and on the server.
@@ -88,7 +88,7 @@ object texts {
       * of the parent SystemTextCollection element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.textsMod.texts.SystemTextCollection): typings.mendixmodelsdk.textsMod.texts.SystemText = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.SystemText]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenTextsMod.texts.SystemTextCollection): typings.mendixmodelsdk.srcGenTextsMod.texts.SystemText = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.SystemText]
     
     /* static member */
     @JSImport("mendixmodelsdk", "texts.SystemText.structureTypeName")
@@ -99,8 +99,8 @@ object texts {
     /* static member */
     @JSImport("mendixmodelsdk", "texts.SystemText.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.textsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.textsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenTextsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenTextsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -109,9 +109,9 @@ object texts {
   @JSImport("mendixmodelsdk", "texts.SystemTextCollection")
   @js.native
   open class SystemTextCollection protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.texts.SystemTextCollection {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.texts.SystemTextCollection {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
@@ -129,7 +129,7 @@ object texts {
       * Expects one argument, the projects.IProject in which this unit is contained.
       */
     /* static member */
-    inline def createIn(container: IProject): typings.mendixmodelsdk.textsMod.texts.SystemTextCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.SystemTextCollection]
+    inline def createIn(container: IProject): typings.mendixmodelsdk.srcGenTextsMod.texts.SystemTextCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.SystemTextCollection]
     
     /* static member */
     @JSImport("mendixmodelsdk", "texts.SystemTextCollection.structureTypeName")
@@ -140,8 +140,8 @@ object texts {
     /* static member */
     @JSImport("mendixmodelsdk", "texts.SystemTextCollection.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.textsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.textsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenTextsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenTextsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -150,14 +150,14 @@ object texts {
   @JSImport("mendixmodelsdk", "texts.Text")
   @js.native
   open class Text protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.texts.Text {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.texts.Text {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object Text {
@@ -172,7 +172,7 @@ object texts {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -180,7 +180,7 @@ object texts {
       * of the parent domainmodels.AssociationDeleteBehavior element passed as argument.
       */
     /* static member */
-    inline def createInAssociationDeleteBehaviorUnderChildErrorMessage(container: AssociationDeleteBehavior): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationDeleteBehaviorUnderChildErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInAssociationDeleteBehaviorUnderChildErrorMessage(container: AssociationDeleteBehavior): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationDeleteBehaviorUnderChildErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -188,7 +188,7 @@ object texts {
       * of the parent domainmodels.AssociationDeleteBehavior element passed as argument.
       */
     /* static member */
-    inline def createInAssociationDeleteBehaviorUnderParentErrorMessage(container: AssociationDeleteBehavior): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationDeleteBehaviorUnderParentErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInAssociationDeleteBehaviorUnderParentErrorMessage(container: AssociationDeleteBehavior): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationDeleteBehaviorUnderParentErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -199,7 +199,7 @@ object texts {
       *  6.0.0 to 7.5.0
       */
     /* static member */
-    inline def createInAttributeWidgetUnderRequiredMessage(container: AttributeWidget): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderRequiredMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInAttributeWidgetUnderRequiredMessage(container: AttributeWidget): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderRequiredMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -207,7 +207,7 @@ object texts {
       * of the parent pages.AttributeWidgetWithPlaceholder element passed as argument.
       */
     /* static member */
-    inline def createInAttributeWidgetWithPlaceholderUnderPlaceholder(container: AttributeWidgetWithPlaceholder): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetWithPlaceholderUnderPlaceholder")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInAttributeWidgetWithPlaceholderUnderPlaceholder(container: AttributeWidgetWithPlaceholder): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetWithPlaceholderUnderPlaceholder")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -215,7 +215,7 @@ object texts {
       * of the parent reports.BasicReportAggregate element passed as argument.
       */
     /* static member */
-    inline def createInBasicReportAggregateUnderCaption(container: BasicReportAggregate): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicReportAggregateUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInBasicReportAggregateUnderCaption(container: BasicReportAggregate): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicReportAggregateUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -223,7 +223,7 @@ object texts {
       * of the parent reports.BasicReportColumn element passed as argument.
       */
     /* static member */
-    inline def createInBasicReportColumnUnderCaption(container: BasicReportColumn): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicReportColumnUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInBasicReportColumnUnderCaption(container: BasicReportColumn): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicReportColumnUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -234,7 +234,7 @@ object texts {
       *  8.0.0 and higher
       */
     /* static member */
-    inline def createInBottomBarItemUnderCaption(container: BottomBarItem): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInBottomBarItemUnderCaption(container: BottomBarItem): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -242,7 +242,7 @@ object texts {
       * of the parent pages.Button element passed as argument.
       */
     /* static member */
-    inline def createInButtonUnderTooltip(container: Button): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInButtonUnderTooltip")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInButtonUnderTooltip(container: Button): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInButtonUnderTooltip")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -253,7 +253,7 @@ object texts {
       *  7.8.0 and higher
       */
     /* static member */
-    inline def createInCallNanoflowClientActionUnderProgressMessage(container: CallNanoflowClientAction): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallNanoflowClientActionUnderProgressMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInCallNanoflowClientActionUnderProgressMessage(container: CallNanoflowClientAction): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallNanoflowClientActionUnderProgressMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -264,7 +264,7 @@ object texts {
       *  8.3.0 and higher
       */
     /* static member */
-    inline def createInClientTemplateUnderFallback(container: ClientTemplate): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateUnderFallback")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInClientTemplateUnderFallback(container: ClientTemplate): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateUnderFallback")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -272,7 +272,7 @@ object texts {
       * of the parent pages.ClientTemplate element passed as argument.
       */
     /* static member */
-    inline def createInClientTemplateUnderTemplate(container: ClientTemplate): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateUnderTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInClientTemplateUnderTemplate(container: ClientTemplate): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateUnderTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -280,7 +280,7 @@ object texts {
       * of the parent pages.ConfirmationInfo element passed as argument.
       */
     /* static member */
-    inline def createInConfirmationInfoUnderCancelButtonCaption(container: ConfirmationInfo): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConfirmationInfoUnderCancelButtonCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInConfirmationInfoUnderCancelButtonCaption(container: ConfirmationInfo): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConfirmationInfoUnderCancelButtonCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -288,7 +288,7 @@ object texts {
       * of the parent pages.ConfirmationInfo element passed as argument.
       */
     /* static member */
-    inline def createInConfirmationInfoUnderProceedButtonCaption(container: ConfirmationInfo): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConfirmationInfoUnderProceedButtonCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInConfirmationInfoUnderProceedButtonCaption(container: ConfirmationInfo): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConfirmationInfoUnderProceedButtonCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -296,7 +296,7 @@ object texts {
       * of the parent pages.ConfirmationInfo element passed as argument.
       */
     /* static member */
-    inline def createInConfirmationInfoUnderQuestion(container: ConfirmationInfo): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConfirmationInfoUnderQuestion")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInConfirmationInfoUnderQuestion(container: ConfirmationInfo): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConfirmationInfoUnderQuestion")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -304,7 +304,7 @@ object texts {
       * of the parent pages.ControlBarButton element passed as argument.
       */
     /* static member */
-    inline def createInControlBarButtonUnderTooltip(container: ControlBarButton): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderTooltip")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInControlBarButtonUnderTooltip(container: ControlBarButton): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderTooltip")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -312,7 +312,7 @@ object texts {
       * of the parent documenttemplates.DataGridColumn element passed as argument.
       */
     /* static member */
-    inline def createInDataGridColumnUnderCaption(container: DataGridColumn): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInDataGridColumnUnderCaption(container: DataGridColumn): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -320,7 +320,7 @@ object texts {
       * of the parent pages.DataView element passed as argument.
       */
     /* static member */
-    inline def createInDataViewUnderNoEntityMessage(container: DataView): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderNoEntityMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInDataViewUnderNoEntityMessage(container: DataView): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderNoEntityMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -328,7 +328,7 @@ object texts {
       * of the parent pages.DropDownButtonItem element passed as argument.
       */
     /* static member */
-    inline def createInDropDownButtonItemUnderCaption(container: DropDownButtonItem): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropDownButtonItemUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInDropDownButtonItemUnderCaption(container: DropDownButtonItem): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropDownButtonItemUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -339,7 +339,7 @@ object texts {
       *  7.2.0 and higher
       */
     /* static member */
-    inline def createInDropDownUnderEmptyOptionCaption(container: DropDown): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropDownUnderEmptyOptionCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInDropDownUnderEmptyOptionCaption(container: DropDown): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropDownUnderEmptyOptionCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -347,7 +347,7 @@ object texts {
       * of the parent enumerations.EnumerationValue element passed as argument.
       */
     /* static member */
-    inline def createInEnumerationValueUnderCaption(container: EnumerationValue): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEnumerationValueUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInEnumerationValueUnderCaption(container: EnumerationValue): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEnumerationValueUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -355,7 +355,7 @@ object texts {
       * of the parent pages.GridColumn element passed as argument.
       */
     /* static member */
-    inline def createInGridColumnUnderAggregateCaption(container: GridColumn): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderAggregateCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInGridColumnUnderAggregateCaption(container: GridColumn): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderAggregateCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -363,7 +363,7 @@ object texts {
       * of the parent pages.GridColumn element passed as argument.
       */
     /* static member */
-    inline def createInGridColumnUnderCaption(container: GridColumn): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInGridColumnUnderCaption(container: GridColumn): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -374,7 +374,7 @@ object texts {
       *  6.0.0 to 7.17.0
       */
     /* static member */
-    inline def createInInputWidgetUnderLabel(container: InputWidget): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderLabel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInInputWidgetUnderLabel(container: InputWidget): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderLabel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -382,7 +382,7 @@ object texts {
       * of the parent pages.Label element passed as argument.
       */
     /* static member */
-    inline def createInLabelUnderCaption(container: Label): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLabelUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInLabelUnderCaption(container: Label): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLabelUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -393,7 +393,7 @@ object texts {
       *  7.0.2 and higher
       */
     /* static member */
-    inline def createInLoginTextBoxUnderLabel(container: LoginTextBox): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLoginTextBoxUnderLabel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInLoginTextBoxUnderLabel(container: LoginTextBox): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLoginTextBoxUnderLabel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -404,7 +404,7 @@ object texts {
       *  7.0.2 and higher
       */
     /* static member */
-    inline def createInLoginTextBoxUnderPlaceholder(container: LoginTextBox): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLoginTextBoxUnderPlaceholder")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInLoginTextBoxUnderPlaceholder(container: LoginTextBox): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLoginTextBoxUnderPlaceholder")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -415,7 +415,7 @@ object texts {
       *  7.1.0 to 7.14.0
       */
     /* static member */
-    inline def createInMasterDetailDetailRegionUnderTitle(container: MasterDetailDetailRegion): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailDetailRegionUnderTitle")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInMasterDetailDetailRegionUnderTitle(container: MasterDetailDetailRegion): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailDetailRegionUnderTitle")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -426,7 +426,7 @@ object texts {
       *  8.12.0 and higher
       */
     /* static member */
-    inline def createInMenuItemUnderAlternativeText(container: MenuItem): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInMenuItemUnderAlternativeText(container: MenuItem): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -434,7 +434,7 @@ object texts {
       * of the parent menus.MenuItem element passed as argument.
       */
     /* static member */
-    inline def createInMenuItemUnderCaption(container: MenuItem): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInMenuItemUnderCaption(container: MenuItem): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -442,7 +442,7 @@ object texts {
       * of the parent pages.MicroflowSettings element passed as argument.
       */
     /* static member */
-    inline def createInMicroflowSettingsUnderProgressMessage(container: MicroflowSettings): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowSettingsUnderProgressMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInMicroflowSettingsUnderProgressMessage(container: MicroflowSettings): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowSettingsUnderProgressMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -450,7 +450,7 @@ object texts {
       * of the parent microflows.Microflow element passed as argument.
       */
     /* static member */
-    inline def createInMicroflowUnderConcurrencyErrorMessage(container: Microflow): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowUnderConcurrencyErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInMicroflowUnderConcurrencyErrorMessage(container: Microflow): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowUnderConcurrencyErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -461,7 +461,7 @@ object texts {
       *  8.12.0 and higher
       */
     /* static member */
-    inline def createInNavigationProfileUnderAppTitle(container: NavigationProfile): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationProfileUnderAppTitle")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInNavigationProfileUnderAppTitle(container: NavigationProfile): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationProfileUnderAppTitle")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -472,7 +472,7 @@ object texts {
       *  6.0.0 to 8.11.0
       */
     /* static member */
-    inline def createInPageSettingsUnderFormTitle(container: PageSettings): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageSettingsUnderFormTitle")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInPageSettingsUnderFormTitle(container: PageSettings): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageSettingsUnderFormTitle")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -480,7 +480,7 @@ object texts {
       * of the parent pages.Page element passed as argument.
       */
     /* static member */
-    inline def createInPageUnderTitle(container: Page): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageUnderTitle")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInPageUnderTitle(container: Page): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageUnderTitle")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -491,7 +491,7 @@ object texts {
       *  7.2.0 and higher
       */
     /* static member */
-    inline def createInReferenceSelectorUnderEmptyOptionCaption(container: ReferenceSelector): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderEmptyOptionCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInReferenceSelectorUnderEmptyOptionCaption(container: ReferenceSelector): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderEmptyOptionCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -502,7 +502,7 @@ object texts {
       *  6.0.0 to 7.5.0
       */
     /* static member */
-    inline def createInReferenceSelectorUnderRequiredMessage(container: ReferenceSelector): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderRequiredMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInReferenceSelectorUnderRequiredMessage(container: ReferenceSelector): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderRequiredMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -510,7 +510,7 @@ object texts {
       * of the parent reports.ReportButton element passed as argument.
       */
     /* static member */
-    inline def createInReportButtonUnderCaption(container: ReportButton): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInReportButtonUnderCaption(container: ReportButton): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -521,7 +521,7 @@ object texts {
       *  6.0.0 to 9.0.0
       */
     /* static member */
-    inline def createInReportChartSeriesUnderCaption(container: ReportChartSeries): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartSeriesUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInReportChartSeriesUnderCaption(container: ReportChartSeries): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartSeriesUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -532,7 +532,7 @@ object texts {
       *  6.0.0 to 9.0.0
       */
     /* static member */
-    inline def createInReportChartUnderXAxisCaption(container: ReportChart): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartUnderXAxisCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInReportChartUnderXAxisCaption(container: ReportChart): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartUnderXAxisCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -543,7 +543,7 @@ object texts {
       *  6.0.0 to 9.0.0
       */
     /* static member */
-    inline def createInReportChartUnderYAxisCaption(container: ReportChart): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartUnderYAxisCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInReportChartUnderYAxisCaption(container: ReportChart): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartUnderYAxisCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -551,7 +551,7 @@ object texts {
       * of the parent reports.ReportDateRangeField element passed as argument.
       */
     /* static member */
-    inline def createInReportDateRangeFieldUnderCaption(container: ReportDateRangeField): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportDateRangeFieldUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInReportDateRangeFieldUnderCaption(container: ReportDateRangeField): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportDateRangeFieldUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -559,7 +559,7 @@ object texts {
       * of the parent reports.ReportDateRangeSelector element passed as argument.
       */
     /* static member */
-    inline def createInReportDateRangeSelectorUnderFromCaption(container: ReportDateRangeSelector): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportDateRangeSelectorUnderFromCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInReportDateRangeSelectorUnderFromCaption(container: ReportDateRangeSelector): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportDateRangeSelectorUnderFromCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -567,7 +567,7 @@ object texts {
       * of the parent reports.ReportDateRangeSelector element passed as argument.
       */
     /* static member */
-    inline def createInReportDateRangeSelectorUnderToCaption(container: ReportDateRangeSelector): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportDateRangeSelectorUnderToCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInReportDateRangeSelectorUnderToCaption(container: ReportDateRangeSelector): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportDateRangeSelectorUnderToCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -575,7 +575,7 @@ object texts {
       * of the parent pages.SearchField element passed as argument.
       */
     /* static member */
-    inline def createInSearchFieldUnderCaption(container: SearchField): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSearchFieldUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInSearchFieldUnderCaption(container: SearchField): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSearchFieldUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -586,7 +586,7 @@ object texts {
       *  7.21.0 and higher
       */
     /* static member */
-    inline def createInSearchFieldUnderPlaceholder(container: SearchField): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSearchFieldUnderPlaceholder")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInSearchFieldUnderPlaceholder(container: SearchField): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSearchFieldUnderPlaceholder")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -594,7 +594,7 @@ object texts {
       * of the parent documenttemplates.StaticLabel element passed as argument.
       */
     /* static member */
-    inline def createInStaticLabelUnderCaption(container: StaticLabel): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticLabelUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInStaticLabelUnderCaption(container: StaticLabel): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticLabelUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -602,7 +602,7 @@ object texts {
       * of the parent SystemText element passed as argument.
       */
     /* static member */
-    inline def createInSystemTextUnderText(container: typings.mendixmodelsdk.textsMod.texts.SystemText): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSystemTextUnderText")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInSystemTextUnderText(container: typings.mendixmodelsdk.srcGenTextsMod.texts.SystemText): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSystemTextUnderText")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -610,7 +610,7 @@ object texts {
       * of the parent pages.TabPage element passed as argument.
       */
     /* static member */
-    inline def createInTabPageUnderCaption(container: TabPage): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInTabPageUnderCaption(container: TabPage): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -618,7 +618,7 @@ object texts {
       * of the parent pages.TextArea element passed as argument.
       */
     /* static member */
-    inline def createInTextAreaUnderCounterMessage(container: TextArea): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextAreaUnderCounterMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInTextAreaUnderCounterMessage(container: TextArea): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextAreaUnderCounterMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -626,7 +626,7 @@ object texts {
       * of the parent pages.TextArea element passed as argument.
       */
     /* static member */
-    inline def createInTextAreaUnderTextTooLongMessage(container: TextArea): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextAreaUnderTextTooLongMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInTextAreaUnderTextTooLongMessage(container: TextArea): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextAreaUnderTextTooLongMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -634,7 +634,7 @@ object texts {
       * of the parent microflows.TextTemplate element passed as argument.
       */
     /* static member */
-    inline def createInTextTemplateUnderText(container: TextTemplate): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextTemplateUnderText")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInTextTemplateUnderText(container: TextTemplate): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextTemplateUnderText")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -642,7 +642,7 @@ object texts {
       * of the parent documenttemplates.Title element passed as argument.
       */
     /* static member */
-    inline def createInTitleUnderCaption(container: Title): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTitleUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInTitleUnderCaption(container: Title): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTitleUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -650,7 +650,7 @@ object texts {
       * of the parent domainmodels.ValidationRule element passed as argument.
       */
     /* static member */
-    inline def createInValidationRuleUnderErrorMessage(container: ValidationRule): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValidationRuleUnderErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInValidationRuleUnderErrorMessage(container: ValidationRule): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValidationRuleUnderErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -661,7 +661,7 @@ object texts {
       *  7.6.0 and higher
       */
     /* static member */
-    inline def createInWidgetValidationUnderMessage(container: WidgetValidation): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInWidgetValidationUnderMessage(container: WidgetValidation): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderMessage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
@@ -669,7 +669,7 @@ object texts {
       * of the parent customwidgets.WidgetValue element passed as argument.
       */
     /* static member */
-    inline def createInWidgetValueUnderTranslatableValue(container: WidgetValue): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderTranslatableValue")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
+    inline def createInWidgetValueUnderTranslatableValue(container: WidgetValue): typings.mendixmodelsdk.srcGenTextsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderTranslatableValue")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Text]
     
     /* static member */
     @JSImport("mendixmodelsdk", "texts.Text.structureTypeName")
@@ -680,21 +680,21 @@ object texts {
     /* static member */
     @JSImport("mendixmodelsdk", "texts.Text.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.textsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.textsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenTextsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenTextsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "texts.Translation")
   @js.native
   open class Translation protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.texts.Translation {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.texts.Translation {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object Translation {
@@ -709,7 +709,7 @@ object texts {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.textsMod.texts.Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Translation]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenTextsMod.texts.Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Translation]
     
     /**
       * Creates and returns a new Translation instance in the SDK and on the server.
@@ -717,7 +717,7 @@ object texts {
       * of the parent Text element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.textsMod.texts.Text): typings.mendixmodelsdk.textsMod.texts.Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Translation]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenTextsMod.texts.Text): typings.mendixmodelsdk.srcGenTextsMod.texts.Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenTextsMod.texts.Translation]
     
     /* static member */
     @JSImport("mendixmodelsdk", "texts.Translation.structureTypeName")
@@ -728,7 +728,7 @@ object texts {
     /* static member */
     @JSImport("mendixmodelsdk", "texts.Translation.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.textsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.textsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenTextsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenTextsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
 }

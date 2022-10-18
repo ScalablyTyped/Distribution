@@ -3,7 +3,6 @@ package typings.refStructDi
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
 import typings.node.bufferMod.global.Buffer
 import typings.refNapi.mod.AlignofRegistry
 import typings.refNapi.mod.Pointer
@@ -111,10 +110,16 @@ object mod {
   /**
     * Converts a {@link StructTypeDefinitionBase} into a set of fields for use with {@link StructType.fields}.
     */
-  type StructFields[T /* <: StructTypeDefinitionBase */] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  // catches T extends never/any (since `0` doesn't overlap with our constraint)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T] extends [never] | [0] ? std.Record<string, ref-struct-di.ref-struct-di.Field<any>> : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: ref-struct-di.ref-struct-di.Field<ref-napi.ref-napi.UnderlyingType<T[P]>>}
-    */ typings.refStructDi.refStructDiStrings.StructFields & TopLevel[T]) | (Record[String, Field[Any]])
+    }}}
+    */
+  @js.native
+  trait StructFields[T /* <: StructTypeDefinitionBase */] extends StObject
   
   /**
     * Represents the instance type of a struct type.
@@ -174,10 +179,16 @@ object mod {
   /**
     * Converts a {@link StructTypeDefinitionBase} into a an object type representing the runtime shape of a {@link StructType}.
     */
-  type StructObjectProperties[T /* <: StructTypeDefinitionBase */] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  // catches T extends never/any (since `0` doesn't overlap with our constraint)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T] extends [never] | [0] ? std.Record<string, any> : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: ref-napi.ref-napi.UnderlyingType<T[P]>}
-    */ typings.refStructDi.refStructDiStrings.StructObjectProperties & TopLevel[T]) | (Record[String, Any])
+    }}}
+    */
+  @js.native
+  trait StructObjectProperties[T /* <: StructTypeDefinitionBase */] extends StObject
   
   /**
     * This is the `constructor` of the Struct type that gets returned.
@@ -247,10 +258,16 @@ object mod {
     * Converts a {@link StructTypeObjectDefinitionBase} into a consistent subtype of {@link StructTypeDefinitionBase}. If `any` is used, it is passed along
     * to be interpreted to use a fallback definition for a struct.
     */
-  type StructTypeObjectDefinitionToStructTypeDefinition[T /* <: StructTypeObjectDefinitionBase */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  // catches T extends never/any (since `0` doesn't overlap with our constraint)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T] extends [never] | [0] ? any : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: ref-napi.ref-napi.Type<ref-napi.ref-napi.UnderlyingType<T[P]>>}
-    */ typings.refStructDi.refStructDiStrings.StructTypeObjectDefinitionToStructTypeDefinition & TopLevel[T]
+    }}}
+    */
+  @js.native
+  trait StructTypeObjectDefinitionToStructTypeDefinition[T /* <: StructTypeObjectDefinitionBase */] extends StObject
   
   /**
     * Base constraint for an array-based struct type definition.
@@ -267,8 +284,14 @@ object mod {
     * Converts a {@link StructTypeTupleDefinitionBase} into a consistent subtype of {@link StructTypeDefinitionBase}. If `any` is used, it is passed along
     * to be interpreted to use a fallback definition for a struct.
     */
-  type StructTypeTupleDefinitionToStructTypeDefinition[T /* <: StructTypeTupleDefinitionBase */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  // catches T extends never/any (since `0` doesn't overlap with our constraint)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T] extends [never] | [0] ? any : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in std.Extract<keyof T, / * template literal string: ${number} * / string> as std.Extract<T[P], [ref-napi.ref-napi.TypeLike, string]>[1] ]: ref-napi.ref-napi.Type<ref-napi.ref-napi.UnderlyingType<std.Extract<T[P], [ref-napi.ref-napi.TypeLike, string]>[0]>>}
-    */ typings.refStructDi.refStructDiStrings.StructTypeTupleDefinitionToStructTypeDefinition & TopLevel[T]
+    }}}
+    */
+  @js.native
+  trait StructTypeTupleDefinitionToStructTypeDefinition[T /* <: StructTypeTupleDefinitionBase */] extends StObject
 }

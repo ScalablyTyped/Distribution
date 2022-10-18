@@ -1,7 +1,7 @@
 package typings.babylonjs.enginesIndexMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babylonjs.shaderLanguageMod.ShaderLanguage
+import typings.babylonjs.materialsShaderLanguageMod.ShaderLanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Engines/index", "ShaderStore")
 @js.native
 open class ShaderStore ()
-  extends typings.babylonjs.shaderStoreMod.ShaderStore
+  extends typings.babylonjs.enginesShaderStoreMod.ShaderStore
 /* static members */
 object ShaderStore {
   

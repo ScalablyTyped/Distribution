@@ -115,7 +115,7 @@ trait TextStyle extends StObject {
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle
     */
-  var textStyle: js.UndefOr[TextShadowOffsetX] = js.undefined
+  var textStyle: js.UndefOr[TextShadowBlur] = js.undefined
 }
 object TextStyle {
   
@@ -162,7 +162,7 @@ object TextStyle {
     
     inline def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
     
-    inline def setTextStyle(value: TextShadowOffsetX): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: TextShadowBlur): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }

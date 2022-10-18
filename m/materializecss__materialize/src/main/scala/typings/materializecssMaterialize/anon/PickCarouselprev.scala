@@ -7,19 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@materializecss/materialize.M.Carousel, 'prev'> */
 trait PickCarouselprev extends StObject {
   
-  var prev: js.UndefOr[Any] = js.undefined
+  def prev(): Unit
+  def prev(n: Double): Unit
+  @JSName("prev")
+  var prev_Original: js.Function1[/* n */ js.UndefOr[Double], Unit]
 }
 object PickCarouselprev {
   
-  inline def apply(): PickCarouselprev = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(prev: /* n */ js.UndefOr[Double] => Unit): PickCarouselprev = {
+    val __obj = js.Dynamic.literal(prev = js.Any.fromFunction1(prev))
     __obj.asInstanceOf[PickCarouselprev]
   }
   
   extension [Self <: PickCarouselprev](x: Self) {
     
-    inline def setPrev(value: Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
-    
-    inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+    inline def setPrev(value: /* n */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction1(value))
   }
 }

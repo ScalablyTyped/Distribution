@@ -1,7 +1,6 @@
 package typings.cliTable
 
 import typings.cliTable.anon.Border
-import typings.cliTable.anon.Head
 import typings.cliTable.anon.kintoptopmidtoplefttoprig
 import typings.cliTable.cliTableStrings.left
 import typings.cliTable.cliTableStrings.middle
@@ -25,8 +24,7 @@ object mod {
   open class ^[T /* <: TableRow */] ()
     extends StObject
        with Table[T] {
-    def this(options: TableOptions[T] & Head) = this()
-    def this(options: TableOptions[T]) = this()
+    def this(options: /* import warning: importer.ImportType#apply Failed type conversion: T extends cli-table.cli-table.CrossTableRow ? never : cli-table.cli-table.TableOptions<T> */ js.Any) = this()
   }
   
   /* static member */

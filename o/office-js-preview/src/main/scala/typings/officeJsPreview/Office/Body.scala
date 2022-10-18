@@ -94,7 +94,7 @@ trait Body extends StObject {
     * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` but the message body is in plain text.
     *
     * @param data - The string to be added to the end of the body. The string is limited to 5,000 characters.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     *        `coercionType`: The desired format for the data to be appended. The string in the `data` parameter will be converted to this format.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -154,7 +154,7 @@ trait Body extends StObject {
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param coercionType - The format for the returned body.
-    * @param options - An object literal that contains one or more of the following properties:
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                             of type Office.AsyncResult. The body is provided in the requested format in the `asyncResult.value` property.
@@ -192,7 +192,7 @@ trait Body extends StObject {
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                             of type `Office.AsyncResult`.
@@ -263,7 +263,7 @@ trait Body extends StObject {
     * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.
     *
     * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     *        `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -337,7 +337,7 @@ trait Body extends StObject {
     * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.
     *
     * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     *        `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -357,7 +357,7 @@ trait Body extends StObject {
     * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the
     * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
     *
-    * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP"
+    * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
     * (see the **Examples** section for a sample).
     *
     * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
@@ -388,7 +388,7 @@ trait Body extends StObject {
     * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the
     * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
     *
-    * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP"
+    * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
     * (see the **Examples** section for a sample).
     *
     * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
@@ -407,7 +407,7 @@ trait Body extends StObject {
     * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.
     *
     * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     *        `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -477,7 +477,7 @@ trait Body extends StObject {
     * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.
     *
     * @param data - The string that represents the signature to be set in the body of the mail. This string is limited to 30,000 characters.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     *        `coercionType`: The format the signature should be set to. If Text, the method sets the signature to plain text,
     *                        removing any HTML tags present. If Html, the method sets the signature to HTML.

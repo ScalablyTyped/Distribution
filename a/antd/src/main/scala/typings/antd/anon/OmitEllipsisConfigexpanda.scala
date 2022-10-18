@@ -1,6 +1,6 @@
 package typings.antd.anon
 
-import typings.antd.tooltipMod.TooltipProps
+import typings.antd.libTooltipMod.TooltipProps
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

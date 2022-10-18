@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait FirebaseProject extends StObject {
     * client-side tools Firebase services will not mutate this annotation set.
     */
   var annotations: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFirebase.maximMazurokGapiClientFirebaseStrings.FirebaseProject & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The user-assigned display name of the Project. */
@@ -64,9 +61,7 @@ object FirebaseProject {
   extension [Self <: FirebaseProject](x: Self) {
     
     inline def setAnnotations(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFirebase.maximMazurokGapiClientFirebaseStrings.FirebaseProject & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)

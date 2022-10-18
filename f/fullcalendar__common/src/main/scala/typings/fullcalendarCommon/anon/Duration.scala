@@ -6,27 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Duration extends StObject {
   
-  var duration: typings.fullcalendarCommon.mod.Duration | Null
+  var duration: Any
   
-  var typeData: Any
+  var range: Any
   
-  var typeId: Double
+  var unit: Any
 }
 object Duration {
   
-  inline def apply(typeData: Any, typeId: Double): Duration = {
-    val __obj = js.Dynamic.literal(typeData = typeData.asInstanceOf[js.Any], typeId = typeId.asInstanceOf[js.Any], duration = null)
+  inline def apply(duration: Any, range: Any, unit: Any): Duration = {
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Duration]
   }
   
   extension [Self <: Duration](x: Self) {
     
-    inline def setDuration(value: typings.fullcalendarCommon.mod.Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setDurationNull: Self = StObject.set(x, "duration", null)
+    inline def setRange(value: Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    inline def setTypeData(value: Any): Self = StObject.set(x, "typeData", value.asInstanceOf[js.Any])
-    
-    inline def setTypeId(value: Double): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
+    inline def setUnit(value: Any): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }
 }

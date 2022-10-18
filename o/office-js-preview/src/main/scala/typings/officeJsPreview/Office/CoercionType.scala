@@ -75,7 +75,7 @@ object CoercionType extends StObject {
        with CoercionType
   
   /**
-    * Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides. For example,
+    * Return a JSON object that contains an array of the IDs, titles, and indexes of the selected slides. For example,
     * `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.
     *
     * **Note**: Only applies to data in PowerPoint when calling the {@link Office.Document | Document}.getSelectedData method to get the current

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-jsonrpc", "LRUCache")
 @js.native
 open class LRUCache[K, V] protected ()
-  extends typings.vscodeJsonrpc.linkedMapMod.LRUCache[K, V] {
+  extends typings.vscodeJsonrpc.libCommonLinkedMapMod.LRUCache[K, V] {
   def this(limit: Double) = this()
   def this(limit: Double, ratio: Double) = this()
 }

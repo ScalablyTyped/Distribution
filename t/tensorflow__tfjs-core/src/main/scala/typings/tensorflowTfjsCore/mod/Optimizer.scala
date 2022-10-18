@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core", "Optimizer")
+/* note: abstract class */ @JSImport("@tensorflow/tfjs-core", "Optimizer")
 @js.native
-abstract class Optimizer ()
-  extends typings.tensorflowTfjsCore.baseMod.Optimizer
+open class Optimizer ()
+  extends typings.tensorflowTfjsCore.distBaseMod.Optimizer

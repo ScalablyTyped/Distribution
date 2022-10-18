@@ -1,11 +1,11 @@
 package typings.interactjsTypes.anon
 
+import typings.interactjsTypes.coreScopeMod.Scope
+import typings.interactjsTypes.coreTypesMod.ActionProps
 import typings.interactjsTypes.interactjsTypesStrings.drag
 import typings.interactjsTypes.interactjsTypesStrings.drop
 import typings.interactjsTypes.interactjsTypesStrings.gesture
 import typings.interactjsTypes.interactjsTypesStrings.resize
-import typings.interactjsTypes.scopeMod.Scope
-import typings.interactjsTypes.typesMod.ActionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

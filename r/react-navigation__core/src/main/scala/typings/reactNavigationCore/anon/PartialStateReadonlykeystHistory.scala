@@ -1,7 +1,7 @@
 package typings.reactNavigationCore.anon
 
 import typings.reactNavigationCore.reactNavigationCoreBooleans.`true`
-import typings.reactNavigationRouters.typesMod.PartialRoute
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.PartialRoute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ trait PartialStateReadonlykeystHistory extends StObject {
   
   val routes: js.Array[
     PartialRoute[
-      typings.reactNavigationRouters.typesMod.Route[
+      typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route[
         /* import warning: importer.ImportType#apply Failed type conversion: std.Readonly<@react-navigation/core.anon.History>['routeNames'][number] */ js.Any, 
         js.UndefOr[js.Object]
       ]
@@ -35,7 +35,7 @@ object PartialStateReadonlykeystHistory {
   inline def apply(
     routes: js.Array[
       PartialRoute[
-        typings.reactNavigationRouters.typesMod.Route[
+        typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route[
           /* import warning: importer.ImportType#apply Failed type conversion: std.Readonly<@react-navigation/core.anon.History>['routeNames'][number] */ js.Any, 
           js.UndefOr[js.Object]
         ]
@@ -71,7 +71,7 @@ object PartialStateReadonlykeystHistory {
     inline def setRoutes(
       value: js.Array[
           PartialRoute[
-            typings.reactNavigationRouters.typesMod.Route[
+            typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route[
               /* import warning: importer.ImportType#apply Failed type conversion: std.Readonly<@react-navigation/core.anon.History>['routeNames'][number] */ js.Any, 
               js.UndefOr[js.Object]
             ]
@@ -81,7 +81,7 @@ object PartialStateReadonlykeystHistory {
     
     inline def setRoutesVarargs(
       value: (PartialRoute[
-          typings.reactNavigationRouters.typesMod.Route[
+          typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route[
             /* import warning: importer.ImportType#apply Failed type conversion: std.Readonly<@react-navigation/core.anon.History>['routeNames'][number] */ js.Any, 
             js.UndefOr[js.Object]
           ]

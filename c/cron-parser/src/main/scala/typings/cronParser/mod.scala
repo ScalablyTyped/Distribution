@@ -1,6 +1,6 @@
 package typings.cronParser
 
-import typings.cronParser.commonMod.ParserOptions
+import typings.cronParser.typesCommonMod.ParserOptions
 import typings.cronParser.typesMod.CronExpression
 import typings.cronParser.typesMod.CronFields
 import typings.cronParser.typesMod.StringResult

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "EngineView")
 @js.native
 open class EngineView ()
-  extends typings.babylonjs.legacyMod.EngineView
+  extends typings.babylonjs.legacyLegacyMod.EngineView

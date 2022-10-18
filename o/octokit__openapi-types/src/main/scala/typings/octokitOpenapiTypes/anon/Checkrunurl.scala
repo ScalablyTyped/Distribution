@@ -121,7 +121,7 @@ trait Checkrunurl extends StObject {
   var status: queued_ | in_progress | completed
   
   /** @description Steps in this job. */
-  var steps: js.UndefOr[js.Array[Startedat]] = js.undefined
+  var steps: js.UndefOr[js.Array[Completedat]] = js.undefined
   
   /** @example https://api.github.com/repos/github/hello-world/actions/jobs/21 */
   var url: String
@@ -201,11 +201,11 @@ object Checkrunurl {
     
     inline def setStatus(value: queued_ | in_progress | completed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setSteps(value: js.Array[Startedat]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[Completedat]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    inline def setStepsVarargs(value: Startedat*): Self = StObject.set(x, "steps", js.Array(value*))
+    inline def setStepsVarargs(value: Completedat*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

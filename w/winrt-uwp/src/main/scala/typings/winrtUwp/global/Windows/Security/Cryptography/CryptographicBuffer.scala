@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains static methods that implement data management functionality common to cryptographic operations. */
-@JSGlobal("Windows.Security.Cryptography.CryptographicBuffer")
+/* note: abstract class */ @JSGlobal("Windows.Security.Cryptography.CryptographicBuffer")
 @js.native
-abstract class CryptographicBuffer ()
+open class CryptographicBuffer ()
   extends StObject
      with typings.winrtUwp.Windows.Security.Cryptography.CryptographicBuffer
 object CryptographicBuffer {

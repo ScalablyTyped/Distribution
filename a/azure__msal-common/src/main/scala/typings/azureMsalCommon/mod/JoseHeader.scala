@@ -1,6 +1,6 @@
 package typings.azureMsalCommon.mod
 
-import typings.azureMsalCommon.joseHeaderMod.JoseHeaderOptions
+import typings.azureMsalCommon.distCryptoJoseHeaderMod.JoseHeaderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "JoseHeader")
 @js.native
 open class JoseHeader protected ()
-  extends typings.azureMsalCommon.joseHeaderMod.JoseHeader {
+  extends typings.azureMsalCommon.distCryptoJoseHeaderMod.JoseHeader {
   def this(options: JoseHeaderOptions) = this()
 }
 /* static members */

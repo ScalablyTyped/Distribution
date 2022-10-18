@@ -15,8 +15,7 @@ trait StructureTower
   extends StObject
      with OwnedStructure[STRUCTURE_TOWER]
      with AnyOwnedStructure
-     with AnyStoreStructure
-     with ConcreteStructure[Any] {
+     with AnyStoreStructure {
   
   /**
     * Remotely attack any creep or structure in the room. Consumes 10 energy units per tick. Attack power depends on the distance to the target: from 600 hits at range 10 to 300 hits at range 40.

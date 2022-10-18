@@ -7,12 +7,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DateSchema
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.joi.mod.Schema because Already inherited */ @js.native
+trait DateSchema[TSchema]
   extends StObject
-     with AnySchema[Any]
-     with _ObjectPropertiesSchema[Any]
-     with _Schema[Any] {
+     with AnySchema[TSchema] {
   
   def greater(date: String): this.type = js.native
   /**

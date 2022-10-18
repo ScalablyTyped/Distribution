@@ -1,7 +1,7 @@
 package typings.three.global.THREE
 
-import typings.three.webGLBindingStatesMod.WebGLBindingStates
-import typings.three.webGLCubeMapsMod.WebGLCubeMaps
+import typings.three.srcRenderersWebglWebGLBindingStatesMod.WebGLBindingStates
+import typings.three.srcRenderersWebglWebGLCubeMapsMod.WebGLCubeMaps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class WebGLPrograms protected ()
   extends typings.three.mod.WebGLPrograms {
   def this(
-    renderer: typings.three.webGLRendererMod.WebGLRenderer,
+    renderer: typings.three.srcRenderersWebGLRendererMod.WebGLRenderer,
     cubemaps: WebGLCubeMaps,
-    extensions: typings.three.webGLExtensionsMod.WebGLExtensions,
-    capabilities: typings.three.webGLCapabilitiesMod.WebGLCapabilities,
+    extensions: typings.three.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions,
+    capabilities: typings.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities,
     bindingStates: WebGLBindingStates,
-    clipping: typings.three.webGLClippingMod.WebGLClipping
+    clipping: typings.three.srcRenderersWebglWebGLClippingMod.WebGLClipping
   ) = this()
 }

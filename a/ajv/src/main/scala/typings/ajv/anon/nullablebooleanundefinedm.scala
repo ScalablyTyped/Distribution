@@ -1,6 +1,6 @@
 package typings.ajv.anon
 
-import typings.ajv.typesJtdSchemaMod.SomeJTDSchemaType
+import typings.ajv.distTypesJtdSchemaMod.SomeJTDSchemaType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.three.global.THREE
 
-import typings.three.shaderLibMod.Shader
+import typings.three.srcRenderersShadersShaderLibMod.Shader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

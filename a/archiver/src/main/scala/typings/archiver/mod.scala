@@ -1,7 +1,6 @@
 package typings.archiver
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import typings.archiver.anon.PartialEntryData
 import typings.archiver.anon.Processed
 import typings.archiver.anon.ProcessedBytes
@@ -231,9 +230,14 @@ object mod {
     inline def zip: typings.archiver.archiverStrings.zip = "zip".asInstanceOf[typings.archiver.archiverStrings.zip]
   }
   
-  type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? T[P]}
-    */ typings.archiver.archiverStrings.Partial & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * This translation is imprecise and ignores the effect of the type mapping. 
+    * TS definition: {{{
+    {[ P in keyof T ]:? T[P]}
+    }}}
+    */
+  type Partial[T] = T
   
   trait ProgressData extends StObject {
     

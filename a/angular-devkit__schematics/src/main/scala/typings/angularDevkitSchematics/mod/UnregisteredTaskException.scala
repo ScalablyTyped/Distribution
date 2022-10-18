@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "UnregisteredTaskException")
 @js.native
 open class UnregisteredTaskException protected ()
-  extends typings.angularDevkitSchematics.engineMod.UnregisteredTaskException {
+  extends typings.angularDevkitSchematics.srcEngineMod.UnregisteredTaskException {
   def this(name: String) = this()
   def this(name: String, schematic: SchematicDescription) = this()
 }

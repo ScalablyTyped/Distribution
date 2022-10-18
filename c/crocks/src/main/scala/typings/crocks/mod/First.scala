@@ -9,7 +9,7 @@ object First {
   @JSImport("crocks", "First.default")
   @js.native
   open class default ()
-    extends typings.crocks.crocksFirstMod.default
+    extends typings.crocks.firstMod.default
   object default {
     
     inline def apply(`val`: scala.Any): typings.crocks.firstFirstMod.First = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.crocks.firstFirstMod.First]

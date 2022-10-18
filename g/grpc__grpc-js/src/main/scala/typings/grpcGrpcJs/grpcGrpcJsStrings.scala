@@ -1,7 +1,8 @@
 package typings.grpcGrpcJs
 
-import typings.grpcGrpcJs.channelzMod.TraceSeverity
-import typings.grpcGrpcJs.serverCallMod.HandlerType
+import typings.grpcGrpcJs.buildSrcChannelzMod.TraceSeverity
+import typings.grpcGrpcJs.buildSrcLoadBalancingCallMod.RpcProgress
+import typings.grpcGrpcJs.buildSrcServerCallMod.HandlerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,8 +34,40 @@ object grpcGrpcJsStrings {
   inline def CT_WARNING: CT_WARNING = "CT_WARNING".asInstanceOf[CT_WARNING]
   
   @js.native
-  sealed trait ServiceDefinition extends StObject
-  inline def ServiceDefinition: ServiceDefinition = "ServiceDefinition".asInstanceOf[ServiceDefinition]
+  sealed trait DROP
+    extends StObject
+       with RpcProgress
+  inline def DROP: DROP = "DROP".asInstanceOf[DROP]
+  
+  @js.native
+  sealed trait ERROR extends StObject
+  inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
+  
+  @js.native
+  sealed trait NONE extends StObject
+  inline def NONE: NONE = "NONE".asInstanceOf[NONE]
+  
+  @js.native
+  sealed trait NOT_STARTED
+    extends StObject
+       with RpcProgress
+  inline def NOT_STARTED: NOT_STARTED = "NOT_STARTED".asInstanceOf[NOT_STARTED]
+  
+  @js.native
+  sealed trait PROCESSED
+    extends StObject
+       with RpcProgress
+  inline def PROCESSED: PROCESSED = "PROCESSED".asInstanceOf[PROCESSED]
+  
+  @js.native
+  sealed trait REFUSED
+    extends StObject
+       with RpcProgress
+  inline def REFUSED: REFUSED = "REFUSED".asInstanceOf[REFUSED]
+  
+  @js.native
+  sealed trait SUCCESS extends StObject
+  inline def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
   
   @js.native
   sealed trait bidi
@@ -45,10 +78,6 @@ object grpcGrpcJsStrings {
   @js.native
   sealed trait channel extends StObject
   inline def channel: channel = "channel".asInstanceOf[channel]
-  
-  @js.native
-  sealed trait channel_ref extends StObject
-  inline def channel_ref: channel_ref = "channel_ref".asInstanceOf[channel_ref]
   
   @js.native
   sealed trait clientStream
@@ -65,18 +94,6 @@ object grpcGrpcJsStrings {
   inline def metadata: metadata = "metadata".asInstanceOf[metadata]
   
   @js.native
-  sealed trait other extends StObject
-  inline def other: other = "other".asInstanceOf[other]
-  
-  @js.native
-  sealed trait other_address extends StObject
-  inline def other_address: other_address = "other_address".asInstanceOf[other_address]
-  
-  @js.native
-  sealed trait other_name extends StObject
-  inline def other_name: other_name = "other_name".asInstanceOf[other_name]
-  
-  @js.native
   sealed trait server extends StObject
   inline def server: server = "server".asInstanceOf[server]
   
@@ -91,32 +108,12 @@ object grpcGrpcJsStrings {
   inline def socket: socket = "socket".asInstanceOf[socket]
   
   @js.native
-  sealed trait standard_name extends StObject
-  inline def standard_name: standard_name = "standard_name".asInstanceOf[standard_name]
-  
-  @js.native
   sealed trait status extends StObject
   inline def status: status = "status".asInstanceOf[status]
   
   @js.native
   sealed trait subchannel extends StObject
   inline def subchannel: subchannel = "subchannel".asInstanceOf[subchannel]
-  
-  @js.native
-  sealed trait subchannel_ref extends StObject
-  inline def subchannel_ref: subchannel_ref = "subchannel_ref".asInstanceOf[subchannel_ref]
-  
-  @js.native
-  sealed trait tcpip_address extends StObject
-  inline def tcpip_address: tcpip_address = "tcpip_address".asInstanceOf[tcpip_address]
-  
-  @js.native
-  sealed trait tls extends StObject
-  inline def tls: tls = "tls".asInstanceOf[tls]
-  
-  @js.native
-  sealed trait uds_address extends StObject
-  inline def uds_address: uds_address = "uds_address".asInstanceOf[uds_address]
   
   @js.native
   sealed trait unary

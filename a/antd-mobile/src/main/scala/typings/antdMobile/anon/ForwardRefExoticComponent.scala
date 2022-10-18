@@ -1,6 +1,6 @@
 package typings.antdMobile.anon
 
-import typings.antdMobile.methodsMod.ImageViewerShowHandler
+import typings.antdMobile.esComponentsImageViewerMethodsMod.ImageViewerShowHandler
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

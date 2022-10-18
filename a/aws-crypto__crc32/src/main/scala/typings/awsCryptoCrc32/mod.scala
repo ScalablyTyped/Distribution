@@ -13,7 +13,7 @@ object mod {
   @JSImport("@aws-crypto/crc32", "AwsCrc32")
   @js.native
   open class AwsCrc32 ()
-    extends typings.awsCryptoCrc32.awsCrc32Mod.AwsCrc32
+    extends typings.awsCryptoCrc32.buildAwsCrc32Mod.AwsCrc32
   
   @JSImport("@aws-crypto/crc32", "Crc32")
   @js.native

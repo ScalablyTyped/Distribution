@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object WrapperSKU extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.azureMsalBrowser.browserConstantsMod.WrapperSKU & String] = js.native
+  def apply(value: String): js.UndefOr[typings.azureMsalBrowser.distUtilsBrowserConstantsMod.WrapperSKU & String] = js.native
   
-  /* "@azure/msal-angular" */ val Angular: typings.azureMsalBrowser.browserConstantsMod.WrapperSKU.Angular & String = js.native
+  /* "@azure/msal-angular" */ val Angular: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.WrapperSKU.Angular & String = js.native
   
-  /* "@azure/msal-react" */ val React: typings.azureMsalBrowser.browserConstantsMod.WrapperSKU.React & String = js.native
+  /* "@azure/msal-react" */ val React: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.WrapperSKU.React & String = js.native
 }

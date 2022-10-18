@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.avatarMod.AvatarProps
+import typings.primereact.avatarAvatarMod.AvatarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Avatar")
 @js.native
 open class Avatar protected ()
-  extends typings.primereact.avatarMod.Avatar {
+  extends typings.primereact.avatarAvatarMod.Avatar {
   def this(props: AvatarProps) = this()
   /**
     * @deprecated

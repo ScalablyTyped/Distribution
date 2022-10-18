@@ -1,12 +1,12 @@
 package typings.xstate.anon
 
-import typings.xstate.typegenTypesMod.AllImplementationsProvided
-import typings.xstate.typegenTypesMod.AllowAllEvents
-import typings.xstate.typegenTypesMod.TypegenConstraint
-import typings.xstate.typegenTypesMod.TypegenDisabled
-import typings.xstate.typesMod.BaseActionObject
-import typings.xstate.typesMod.EventObject
-import typings.xstate.typesMod.ServiceMap
+import typings.xstate.libTypegenTypesMod.AllImplementationsProvided
+import typings.xstate.libTypegenTypesMod.AllowAllEvents
+import typings.xstate.libTypegenTypesMod.TypegenConstraint
+import typings.xstate.libTypegenTypesMod.TypegenDisabled
+import typings.xstate.libTypesMod.BaseActionObject
+import typings.xstate.libTypesMod.EventObject
+import typings.xstate.libTypesMod.ServiceMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,7 +2,7 @@ package typings.reactNativeElements.anon
 
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
-import typings.reactNativeElements.textMod.TextProps
+import typings.reactNativeElements.distTextTextMod.TextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

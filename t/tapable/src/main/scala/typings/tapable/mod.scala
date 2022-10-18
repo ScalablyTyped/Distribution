@@ -1,7 +1,6 @@
 package typings.tapable
 
 import typings.std.Omit
-import typings.tapable.anon.`0`
 import typings.tapable.tapableBooleans.`false`
 import typings.tapable.tapableBooleans.`true`
 import typings.tapable.tapableStrings.async
@@ -122,14 +121,22 @@ object mod {
           AdditionalOptions
         ]
   
-  type Append[T /* <: js.Array[Any] */, U] = /* import warning: importer.ImportType#apply Failed type conversion: tapable.anon.1<U, T>[tapable.tapable.Measure<T['length']>] */ js.Any
+  type Append[T /* <: js.Array[Any] */, U] = /* import warning: importer.ImportType#apply Failed type conversion: tapable.anon.0<U, T>[tapable.tapable.Measure<T['length']>] */ js.Any
   
   type ArgumentNames[T /* <: js.Array[Any] */] = FixedSizeArray[
     /* import warning: importer.ImportType#apply Failed type conversion: T['length'] */ js.Any, 
     String
   ]
   
-  type AsArray[T] = js.Array[T] | T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<any> ? T : [T]
+    }}}
+    */
+  @js.native
+  trait AsArray[T] extends StObject
   
   @js.native
   trait AsyncHook[T, R, AdditionalOptions]
@@ -148,7 +155,15 @@ object mod {
   
   type Callback[E, T] = js.Function2[/* error */ E | Null, /* result */ js.UndefOr[T], Unit]
   
-  type FixedSizeArray[T /* <: Double */, U] = (js.Array[U] & (`0`[U, T])) | js.Array[Unit]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends 0 ? std.Array<void> : std.ReadonlyArray<U> & {  0 :U,   length :T}
+    }}}
+    */
+  @js.native
+  trait FixedSizeArray[T /* <: Double */, U] extends StObject
   
   trait FullTap
     extends StObject
@@ -283,11 +298,27 @@ object mod {
     }
   }
   
-  type IfSet[X] = X | js.Object
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    X extends tapable.tapable.UnsetAdditionalOptions ? {} : X
+    }}}
+    */
+  @js.native
+  trait IfSet[X] extends StObject
   
   type InnerCallback[E, T] = js.Function2[/* error */ js.UndefOr[E | Null | `false`], /* result */ js.UndefOr[T], Unit]
   
-  type Measure[T /* <: Double */] = T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 ? T : never
+    }}}
+    */
+  @js.native
+  trait Measure[T /* <: Double */] extends StObject
   
   trait Tap
     extends StObject

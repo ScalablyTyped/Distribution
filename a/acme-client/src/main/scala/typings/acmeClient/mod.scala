@@ -13,13 +13,13 @@ import typings.acmeClient.acmeClientStrings.revoked
 import typings.acmeClient.acmeClientStrings.valid
 import typings.acmeClient.anon.Production
 import typings.acmeClient.anon.ProductionString
-import typings.acmeClient.rfc8555Mod.Account
-import typings.acmeClient.rfc8555Mod.AccountCreateRequest
-import typings.acmeClient.rfc8555Mod.AccountUpdateRequest
-import typings.acmeClient.rfc8555Mod.CertificateRevocationRequest
-import typings.acmeClient.rfc8555Mod.Challenge
-import typings.acmeClient.rfc8555Mod.Identifier
-import typings.acmeClient.rfc8555Mod.OrderCreateRequest
+import typings.acmeClient.typesRfc8555Mod.Account
+import typings.acmeClient.typesRfc8555Mod.AccountCreateRequest
+import typings.acmeClient.typesRfc8555Mod.AccountUpdateRequest
+import typings.acmeClient.typesRfc8555Mod.CertificateRevocationRequest
+import typings.acmeClient.typesRfc8555Mod.Challenge
+import typings.acmeClient.typesRfc8555Mod.Identifier
+import typings.acmeClient.typesRfc8555Mod.OrderCreateRequest
 import typings.axios.mod.AxiosInstance
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
@@ -120,7 +120,7 @@ object mod {
   
   trait Authorization
     extends StObject
-       with typings.acmeClient.rfc8555Mod.Authorization {
+       with typings.acmeClient.typesRfc8555Mod.Authorization {
     
     var url: String
   }
@@ -517,7 +517,7 @@ object mod {
   
   trait Order
     extends StObject
-       with typings.acmeClient.rfc8555Mod.Order {
+       with typings.acmeClient.typesRfc8555Mod.Order {
     
     var url: String
   }

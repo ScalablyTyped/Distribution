@@ -2,7 +2,7 @@ package typings.fundamentalReact.mod
 
 import typings.fundamentalReact.anon.PartialButtonProps
 import typings.fundamentalReact.anon.WeakValidationMapButtonPr
-import typings.fundamentalReact.buttonMod.ButtonProps
+import typings.fundamentalReact.libButtonButtonMod.ButtonProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

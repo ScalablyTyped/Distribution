@@ -1,6 +1,6 @@
 package typings.matrixJsSdk.mod
 
-import typings.matrixJsSdk.anon.Presence
+import typings.matrixJsSdk.anon.PresenceMatrixEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ open class User protected () extends StObject {
   var displayName: String = js.native
   
   // Whether we should consider lastActiveAgo to be an approximation and that the user should be seen as active 'now'
-  var events: Presence = js.native
+  var events: PresenceMatrixEvent = js.native
   
   def getLastActiveTs(): Double = js.native
   

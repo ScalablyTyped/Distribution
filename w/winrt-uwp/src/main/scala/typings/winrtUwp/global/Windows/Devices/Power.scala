@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Power {
   
   /** Provides information about a battery controller that is currently connected to the device. For more info, see Get battery information. */
-  @JSGlobal("Windows.Devices.Power.Battery")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Power.Battery")
   @js.native
-  abstract class Battery ()
+  open class Battery ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Power.Battery
   object Battery {
@@ -45,9 +45,9 @@ object Power {
   }
   
   /** Provides properties that indicate the charge, capacity, and status of the battery. For more info, see Get battery information. */
-  @JSGlobal("Windows.Devices.Power.BatteryReport")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Power.BatteryReport")
   @js.native
-  abstract class BatteryReport ()
+  open class BatteryReport ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Power.BatteryReport {
     

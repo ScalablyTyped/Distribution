@@ -2,8 +2,8 @@ package typings.semanticUiReact.mod
 
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.cardCardMod.CardComponent
-import typings.semanticUiReact.cardCardMod.CardProps
+import typings.semanticUiReact.distCommonjsViewsCardCardMod.CardComponent
+import typings.semanticUiReact.distCommonjsViewsCardCardMod.CardProps
 import typings.semanticUiReact.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

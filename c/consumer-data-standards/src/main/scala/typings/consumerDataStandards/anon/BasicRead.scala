@@ -29,15 +29,15 @@ trait BasicRead
   /**
     * Meter id/serial number as it appears in customer’s bill. ID permanence rules do not apply.
     */
-  var meterID: js.UndefOr[String | Null] = js.undefined
+  var meterId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Date time when the meter reads end.  If absent then assumed to be equal to readStartDate.  In this case the entry represents data for a single date specified by readStartDate
+    * Date when the meter reads end in AEST.  If absent then assumed to be equal to readStartDate.  In this case the entry represents data for a single date specified by readStartDate.
     */
   var readEndDate: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Date time when the meter reads start
+    * Date when the meter reads start in AEST and assumed to start from 12:00 am AEST.
     */
   var readStartDate: String
   
@@ -98,11 +98,11 @@ object BasicRead {
     
     inline def setIntervalReadUndefined: Self = StObject.set(x, "intervalRead", js.undefined)
     
-    inline def setMeterID(value: String): Self = StObject.set(x, "meterID", value.asInstanceOf[js.Any])
+    inline def setMeterId(value: String): Self = StObject.set(x, "meterId", value.asInstanceOf[js.Any])
     
-    inline def setMeterIDNull: Self = StObject.set(x, "meterID", null)
+    inline def setMeterIdNull: Self = StObject.set(x, "meterId", null)
     
-    inline def setMeterIDUndefined: Self = StObject.set(x, "meterID", js.undefined)
+    inline def setMeterIdUndefined: Self = StObject.set(x, "meterId", js.undefined)
     
     inline def setReadEndDate(value: String): Self = StObject.set(x, "readEndDate", value.asInstanceOf[js.Any])
     

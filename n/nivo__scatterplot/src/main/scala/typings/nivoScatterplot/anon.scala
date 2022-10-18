@@ -1,35 +1,35 @@
 package typings.nivoScatterplot
 
 import typings.d3Scale.mod.NumberValue
-import typings.nivoAnnotations.typesMod.AnnotationMatcher
-import typings.nivoAxes.typesMod.AxisProps
-import typings.nivoAxes.typesMod.GridValues
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoAnnotations.distTypesTypesMod.AnnotationMatcher
+import typings.nivoAxes.distTypesTypesMod.AxisProps
+import typings.nivoAxes.distTypesTypesMod.GridValues
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoCore.mod.Theme
 import typings.nivoCore.mod.ValueFormat
-import typings.nivoLegends.typesTypesMod.LegendProps
-import typings.nivoScales.computeMod.ComputedSerie
-import typings.nivoScales.typesMod.ScaleBand
-import typings.nivoScales.typesMod.ScaleLinear
-import typings.nivoScales.typesMod.ScaleLog
-import typings.nivoScales.typesMod.ScalePoint
-import typings.nivoScales.typesMod.ScaleSpec
-import typings.nivoScales.typesMod.ScaleSymlog
-import typings.nivoScales.typesMod.ScaleTime
+import typings.nivoLegends.distTypesTypesMod.LegendProps
+import typings.nivoScales.distTypesComputeMod.ComputedSerie
+import typings.nivoScales.distTypesTypesMod.ScaleBand
+import typings.nivoScales.distTypesTypesMod.ScaleLinear
+import typings.nivoScales.distTypesTypesMod.ScaleLog
+import typings.nivoScales.distTypesTypesMod.ScalePoint
+import typings.nivoScales.distTypesTypesMod.ScaleSpec
+import typings.nivoScales.distTypesTypesMod.ScaleSymlog
+import typings.nivoScales.distTypesTypesMod.ScaleTime
+import typings.nivoScatterplot.distTypesTypesMod.ScatterPlotCustomCanvasLayer
+import typings.nivoScatterplot.distTypesTypesMod.ScatterPlotDatum
+import typings.nivoScatterplot.distTypesTypesMod.ScatterPlotLayerId
+import typings.nivoScatterplot.distTypesTypesMod.ScatterPlotMouseHandler
+import typings.nivoScatterplot.distTypesTypesMod.ScatterPlotNodeData
+import typings.nivoScatterplot.distTypesTypesMod.ScatterPlotNodeDynamicSizeSpec
+import typings.nivoScatterplot.distTypesTypesMod.ScatterPlotRawSerie
+import typings.nivoScatterplot.distTypesTypesMod.ScatterPlotTooltip
+import typings.nivoScatterplot.distTypesTypesMod.ScatterPlotValue
 import typings.nivoScatterplot.nivoScatterplotStrings.color
 import typings.nivoScatterplot.nivoScatterplotStrings.id
 import typings.nivoScatterplot.nivoScatterplotStrings.size
-import typings.nivoScatterplot.typesMod.ScatterPlotCustomCanvasLayer
-import typings.nivoScatterplot.typesMod.ScatterPlotDatum
-import typings.nivoScatterplot.typesMod.ScatterPlotLayerId
-import typings.nivoScatterplot.typesMod.ScatterPlotMouseHandler
-import typings.nivoScatterplot.typesMod.ScatterPlotNodeData
-import typings.nivoScatterplot.typesMod.ScatterPlotNodeDynamicSizeSpec
-import typings.nivoScatterplot.typesMod.ScatterPlotRawSerie
-import typings.nivoScatterplot.typesMod.ScatterPlotTooltip
-import typings.nivoScatterplot.typesMod.ScatterPlotValue
 import typings.react.mod.Key
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -149,14 +149,6 @@ object anon {
             ]
       ): Self = StObject.set(x, "xFormat", value.asInstanceOf[js.Any])
       
-      inline def setXFormatFunction1(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: RawDatum['x'] */ js.Any => String
-      ): Self = StObject.set(x, "xFormat", js.Any.fromFunction1(value))
-      
-      inline def setXFormatFunction2(
-        value: (/* import warning: importer.ImportType#apply Failed type conversion: RawDatum['x'] */ js.Any, Unit) => String
-      ): Self = StObject.set(x, "xFormat", js.Any.fromFunction2(value))
-      
       inline def setXFormatUndefined: Self = StObject.set(x, "xFormat", js.undefined)
       
       inline def setXScaleSpec(value: ScaleSpec): Self = StObject.set(x, "xScaleSpec", value.asInstanceOf[js.Any])
@@ -167,14 +159,6 @@ object anon {
               Unit
             ]
       ): Self = StObject.set(x, "yFormat", value.asInstanceOf[js.Any])
-      
-      inline def setYFormatFunction1(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: RawDatum['y'] */ js.Any => String
-      ): Self = StObject.set(x, "yFormat", js.Any.fromFunction1(value))
-      
-      inline def setYFormatFunction2(
-        value: (/* import warning: importer.ImportType#apply Failed type conversion: RawDatum['y'] */ js.Any, Unit) => String
-      ): Self = StObject.set(x, "yFormat", js.Any.fromFunction2(value))
       
       inline def setYFormatUndefined: Self = StObject.set(x, "yFormat", js.undefined)
       
@@ -477,13 +461,9 @@ object anon {
       
       inline def setGridXValuesUndefined: Self = StObject.set(x, "gridXValues", js.undefined)
       
-      inline def setGridXValuesVarargs(value: (js.Date | Double | String)*): Self = StObject.set(x, "gridXValues", js.Array(value*))
-      
       inline def setGridYValues(value: GridValues[ScatterPlotValue]): Self = StObject.set(x, "gridYValues", value.asInstanceOf[js.Any])
       
       inline def setGridYValuesUndefined: Self = StObject.set(x, "gridYValues", js.undefined)
-      
-      inline def setGridYValuesVarargs(value: (js.Date | Double | String)*): Self = StObject.set(x, "gridYValues", js.Array(value*))
       
       inline def setIsInteractive(value: Boolean): Self = StObject.set(x, "isInteractive", value.asInstanceOf[js.Any])
       
@@ -589,10 +569,6 @@ object anon {
       
       inline def setXFormat(value: ValueFormat[ScatterPlotValue, Unit]): Self = StObject.set(x, "xFormat", value.asInstanceOf[js.Any])
       
-      inline def setXFormatFunction1(value: ScatterPlotValue => String): Self = StObject.set(x, "xFormat", js.Any.fromFunction1(value))
-      
-      inline def setXFormatFunction2(value: (ScatterPlotValue, Unit) => String): Self = StObject.set(x, "xFormat", js.Any.fromFunction2(value))
-      
       inline def setXFormatUndefined: Self = StObject.set(x, "xFormat", js.undefined)
       
       inline def setXScale(value: ScaleSpec): Self = StObject.set(x, "xScale", value.asInstanceOf[js.Any])
@@ -600,10 +576,6 @@ object anon {
       inline def setXScaleUndefined: Self = StObject.set(x, "xScale", js.undefined)
       
       inline def setYFormat(value: ValueFormat[ScatterPlotValue, Unit]): Self = StObject.set(x, "yFormat", value.asInstanceOf[js.Any])
-      
-      inline def setYFormatFunction1(value: ScatterPlotValue => String): Self = StObject.set(x, "yFormat", js.Any.fromFunction1(value))
-      
-      inline def setYFormatFunction2(value: (ScatterPlotValue, Unit) => String): Self = StObject.set(x, "yFormat", js.Any.fromFunction2(value))
       
       inline def setYFormatUndefined: Self = StObject.set(x, "yFormat", js.undefined)
       
@@ -918,13 +890,9 @@ object anon {
       
       inline def setGridXValuesUndefined: Self = StObject.set(x, "gridXValues", js.undefined)
       
-      inline def setGridXValuesVarargs(value: (js.Date | Double | String)*): Self = StObject.set(x, "gridXValues", js.Array(value*))
-      
       inline def setGridYValues(value: GridValues[ScatterPlotValue]): Self = StObject.set(x, "gridYValues", value.asInstanceOf[js.Any])
       
       inline def setGridYValuesUndefined: Self = StObject.set(x, "gridYValues", js.undefined)
-      
-      inline def setGridYValuesVarargs(value: (js.Date | Double | String)*): Self = StObject.set(x, "gridYValues", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -1034,10 +1002,6 @@ object anon {
       
       inline def setXFormat(value: ValueFormat[ScatterPlotValue, Unit]): Self = StObject.set(x, "xFormat", value.asInstanceOf[js.Any])
       
-      inline def setXFormatFunction1(value: ScatterPlotValue => String): Self = StObject.set(x, "xFormat", js.Any.fromFunction1(value))
-      
-      inline def setXFormatFunction2(value: (ScatterPlotValue, Unit) => String): Self = StObject.set(x, "xFormat", js.Any.fromFunction2(value))
-      
       inline def setXFormatUndefined: Self = StObject.set(x, "xFormat", js.undefined)
       
       inline def setXScale(value: ScaleSpec): Self = StObject.set(x, "xScale", value.asInstanceOf[js.Any])
@@ -1045,10 +1009,6 @@ object anon {
       inline def setXScaleUndefined: Self = StObject.set(x, "xScale", js.undefined)
       
       inline def setYFormat(value: ValueFormat[ScatterPlotValue, Unit]): Self = StObject.set(x, "yFormat", value.asInstanceOf[js.Any])
-      
-      inline def setYFormatFunction1(value: ScatterPlotValue => String): Self = StObject.set(x, "yFormat", js.Any.fromFunction1(value))
-      
-      inline def setYFormatFunction2(value: (ScatterPlotValue, Unit) => String): Self = StObject.set(x, "yFormat", js.Any.fromFunction2(value))
       
       inline def setYFormatUndefined: Self = StObject.set(x, "yFormat", js.undefined)
       

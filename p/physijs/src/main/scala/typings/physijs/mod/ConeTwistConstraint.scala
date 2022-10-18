@@ -1,10 +1,10 @@
 package typings.physijs.mod
 
-import typings.three.eventDispatcherMod.Event
 import typings.three.mod.Euler
 import typings.three.mod.Matrix4
 import typings.three.mod.Object3D
 import typings.three.mod.Vector3
+import typings.three.srcCoreEventDispatcherMod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

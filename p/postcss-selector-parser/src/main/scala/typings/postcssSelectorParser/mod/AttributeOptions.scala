@@ -1,7 +1,7 @@
 package typings.postcssSelectorParser.mod
 
-import typings.postcssSelectorParser.anon.Attribute
-import typings.postcssSelectorParser.anon.Operator
+import typings.postcssSelectorParser.anon.Before
+import typings.postcssSelectorParser.anon.Insensitive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,14 +21,14 @@ trait AttributeOptions
   /** @deprecated Use quoteMark instead. */
   var quoted: js.UndefOr[Boolean] = js.undefined
   
-  var raws: Operator
+  var raws: Insensitive
   
   @JSName("spaces")
-  var spaces_AttributeOptions: js.UndefOr[Attribute] = js.undefined
+  var spaces_AttributeOptions: js.UndefOr[Before] = js.undefined
 }
 object AttributeOptions {
   
-  inline def apply(attribute: String, raws: Operator): AttributeOptions = {
+  inline def apply(attribute: String, raws: Insensitive): AttributeOptions = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], raws = raws.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeOptions]
   }
@@ -55,9 +55,9 @@ object AttributeOptions {
     
     inline def setQuotedUndefined: Self = StObject.set(x, "quoted", js.undefined)
     
-    inline def setRaws(value: Operator): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
+    inline def setRaws(value: Insensitive): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
     
-    inline def setSpaces(value: Attribute): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+    inline def setSpaces(value: Before): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
     inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
   }

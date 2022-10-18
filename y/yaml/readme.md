@@ -1,7 +1,7 @@
 
 # Scala.js typings for yaml
 
-Typings are for version 2.1.1
+Typings are for version 2.1.3
 
 ## Library description:
 JavaScript parser and stringifier for YAML

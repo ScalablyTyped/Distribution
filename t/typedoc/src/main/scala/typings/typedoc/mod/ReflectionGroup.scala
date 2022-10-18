@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "ReflectionGroup")
 @js.native
 open class ReflectionGroup protected ()
-  extends typings.typedoc.modelsMod.ReflectionGroup {
+  extends typings.typedoc.distLibModelsMod.ReflectionGroup {
   /**
     * Create a new ReflectionGroup instance.
     *

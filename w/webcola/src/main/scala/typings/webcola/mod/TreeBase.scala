@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "TreeBase")
 @js.native
 open class TreeBase ()
-  extends typings.webcola.rbtreeMod.TreeBase
+  extends typings.webcola.distSrcRbtreeMod.TreeBase

@@ -1,10 +1,10 @@
 package typings.agenda
 
-import typings.agenda.agendaMod.Agenda
-import typings.agenda.jobMod.Job
-import typings.agenda.jobMod.JobAttributesData
+import typings.agenda.distAgendaMod.Agenda
+import typings.agenda.distJobMod.Job
+import typings.agenda.distJobMod.JobAttributesData
+import typings.bson.mod.ObjectId
 import typings.mongodb.mod.MongoClientOptions
-import typings.mongodb.mod.ObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

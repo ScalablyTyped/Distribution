@@ -1,6 +1,6 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

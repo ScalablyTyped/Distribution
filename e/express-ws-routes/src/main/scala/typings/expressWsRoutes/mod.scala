@@ -6,7 +6,7 @@ import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.IRouter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.std.Record
 import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject

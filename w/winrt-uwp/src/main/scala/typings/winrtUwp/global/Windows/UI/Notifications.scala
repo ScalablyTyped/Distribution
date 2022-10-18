@@ -51,9 +51,9 @@ object Notifications {
   }
   
   /** Creates BadgeUpdater objects that you use to manipulate a tile's badge overlay. This class also provides access to the XML content of the system-provided badge templates so that you can customize that content for use in updating your badges. */
-  @JSGlobal("Windows.UI.Notifications.BadgeUpdateManager")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.BadgeUpdateManager")
   @js.native
-  abstract class BadgeUpdateManager ()
+  open class BadgeUpdateManager ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.BadgeUpdateManager
   object BadgeUpdateManager {
@@ -94,9 +94,9 @@ object Notifications {
   }
   
   /** Updates a badge overlay on the specific tile that the updater is bound to. */
-  @JSGlobal("Windows.UI.Notifications.BadgeUpdater")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.BadgeUpdater")
   @js.native
-  abstract class BadgeUpdater ()
+  open class BadgeUpdater ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.BadgeUpdater
   
@@ -226,9 +226,9 @@ object Notifications {
     var tag: String = js.native
   }
   
-  @JSGlobal("Windows.UI.Notifications.TileFlyoutNotification")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.TileFlyoutNotification")
   @js.native
-  abstract class TileFlyoutNotification ()
+  open class TileFlyoutNotification ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.TileFlyoutNotification {
     
@@ -252,9 +252,9 @@ object Notifications {
     inline def tileFlyoutTemplate01_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tileFlyoutTemplate01")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdateManager")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdateManager")
   @js.native
-  abstract class TileFlyoutUpdateManager ()
+  open class TileFlyoutUpdateManager ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.TileFlyoutUpdateManager
   object TileFlyoutUpdateManager {
@@ -284,9 +284,9 @@ object Notifications {
     inline def getTemplateContent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getTemplateContent")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdater")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdater")
   @js.native
-  abstract class TileFlyoutUpdater ()
+  open class TileFlyoutUpdater ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.TileFlyoutUpdater {
     
@@ -597,9 +597,9 @@ object Notifications {
   }
   
   /** Creates TileUpdater objects used to change and update Start menu tiles. This class also provides access to the XML content of the system-provided tile templates so that you can customize that content for use in updating your tiles. */
-  @JSGlobal("Windows.UI.Notifications.TileUpdateManager")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.TileUpdateManager")
   @js.native
-  abstract class TileUpdateManager ()
+  open class TileUpdateManager ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.TileUpdateManager
   object TileUpdateManager {
@@ -640,16 +640,16 @@ object Notifications {
   }
   
   /** Changes the content of the specific tile that the updater is bound to. */
-  @JSGlobal("Windows.UI.Notifications.TileUpdater")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.TileUpdater")
   @js.native
-  abstract class TileUpdater ()
+  open class TileUpdater ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.TileUpdater
   
   /** Exposes a method that retrieves the arguments associated with a toast action initiated by the user. This lets the app tell which action was taken when multiple actions were exposed. */
-  @JSGlobal("Windows.UI.Notifications.ToastActivatedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.ToastActivatedEventArgs")
   @js.native
-  abstract class ToastActivatedEventArgs ()
+  open class ToastActivatedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.ToastActivatedEventArgs {
     
@@ -674,9 +674,9 @@ object Notifications {
   }
   
   /** Provides the reason that a toast notification is no longer displayed on-screen. */
-  @JSGlobal("Windows.UI.Notifications.ToastDismissedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.ToastDismissedEventArgs")
   @js.native
-  abstract class ToastDismissedEventArgs ()
+  open class ToastDismissedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.ToastDismissedEventArgs {
     
@@ -686,9 +686,9 @@ object Notifications {
   }
   
   /** Provides the error code that was generated in the process of raising a toast notification. */
-  @JSGlobal("Windows.UI.Notifications.ToastFailedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.ToastFailedEventArgs")
   @js.native
-  abstract class ToastFailedEventArgs ()
+  open class ToastFailedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.ToastFailedEventArgs {
     
@@ -727,9 +727,9 @@ object Notifications {
     def this(content: XmlDocument) = this()
   }
   
-  @JSGlobal("Windows.UI.Notifications.ToastNotificationActionTriggerDetail")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.ToastNotificationActionTriggerDetail")
   @js.native
-  abstract class ToastNotificationActionTriggerDetail ()
+  open class ToastNotificationActionTriggerDetail ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.ToastNotificationActionTriggerDetail {
     
@@ -742,16 +742,16 @@ object Notifications {
   }
   
   /** Manages the toast notifications for an app including the ability the clear all toast history and removing individual toasts. */
-  @JSGlobal("Windows.UI.Notifications.ToastNotificationHistory")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.ToastNotificationHistory")
   @js.native
-  abstract class ToastNotificationHistory ()
+  open class ToastNotificationHistory ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.ToastNotificationHistory
   
   /** Represents the details of a toast history changed trigger. */
-  @JSGlobal("Windows.UI.Notifications.ToastNotificationHistoryChangedTriggerDetail")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.ToastNotificationHistoryChangedTriggerDetail")
   @js.native
-  abstract class ToastNotificationHistoryChangedTriggerDetail ()
+  open class ToastNotificationHistoryChangedTriggerDetail ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.ToastNotificationHistoryChangedTriggerDetail {
     
@@ -761,9 +761,9 @@ object Notifications {
   }
   
   /** Creates ToastNotifier objects that you use to raise toast notifications. This class also provides access to the XML content of the system-provided toast templates so that you can customize that content for use in your notifications. */
-  @JSGlobal("Windows.UI.Notifications.ToastNotificationManager")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.ToastNotificationManager")
   @js.native
-  abstract class ToastNotificationManager ()
+  open class ToastNotificationManager ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.ToastNotificationManager
   object ToastNotificationManager {
@@ -803,9 +803,9 @@ object Notifications {
   }
   
   /** Raises a toast notification to the specific app to which the ToastNotifier is bound. This class also lets you schedule and remove toast notifications. */
-  @JSGlobal("Windows.UI.Notifications.ToastNotifier")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Notifications.ToastNotifier")
   @js.native
-  abstract class ToastNotifier ()
+  open class ToastNotifier ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.ToastNotifier {
     

@@ -1,6 +1,6 @@
 package typings.vueDevtoolsApi.anon
 
-import typings.vueDevtoolsApi.hooksMod.EditStatePayload
+import typings.vueDevtoolsApi.libEsmApiHooksMod.EditStatePayload
 import typings.vueDevtoolsApi.vueDevtoolsApiBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

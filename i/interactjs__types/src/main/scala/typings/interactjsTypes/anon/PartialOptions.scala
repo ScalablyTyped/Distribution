@@ -1,20 +1,20 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.dropPluginMod.DropzoneOptions
-import typings.interactjsTypes.gesturePluginMod.GesturableOptions
-import typings.interactjsTypes.interactjsAutoScrollPluginMod.AutoScrollOptions
-import typings.interactjsTypes.interactjsDevToolsPluginMod.DevToolsOptions
-import typings.interactjsTypes.interactjsModifiersTypesMod.Modifier
+import typings.interactjsTypes.actionsDragPluginMod.DraggableOptions
+import typings.interactjsTypes.actionsDropPluginMod.DropzoneOptions
+import typings.interactjsTypes.actionsGesturePluginMod.GesturableOptions
+import typings.interactjsTypes.actionsResizePluginMod.ResizableOptions
+import typings.interactjsTypes.autoScrollPluginMod.AutoScrollOptions
+import typings.interactjsTypes.coreTypesMod.ListenerMap
+import typings.interactjsTypes.coreTypesMod.Point
+import typings.interactjsTypes.devToolsPluginMod.DevToolsOptions
 import typings.interactjsTypes.interactjsTypesInts.`16`
 import typings.interactjsTypes.interactjsTypesInts.`8`
 import typings.interactjsTypes.interactjsTypesStrings.auto
 import typings.interactjsTypes.interactjsTypesStrings.client
 import typings.interactjsTypes.interactjsTypesStrings.never
 import typings.interactjsTypes.interactjsTypesStrings.page
-import typings.interactjsTypes.pluginMod.DraggableOptions
-import typings.interactjsTypes.resizePluginMod.ResizableOptions
-import typings.interactjsTypes.typesMod.ListenerMap
-import typings.interactjsTypes.typesMod.Point
+import typings.interactjsTypes.modifiersTypesMod.Modifier
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +25,7 @@ trait PartialOptions extends StObject {
   
   var actionChecker: js.UndefOr[Any] = js.undefined
   
-  var allowFrom: js.UndefOr[String | typings.interactjsTypes.typesMod.Element] = js.undefined
+  var allowFrom: js.UndefOr[String | typings.interactjsTypes.coreTypesMod.Element] = js.undefined
   
   var autoScroll: js.UndefOr[AutoScrollOptions] = js.undefined
   
@@ -49,11 +49,11 @@ trait PartialOptions extends StObject {
   
   var hold: js.UndefOr[Double] = js.undefined
   
-  var ignoreFrom: js.UndefOr[String | typings.interactjsTypes.typesMod.Element] = js.undefined
+  var ignoreFrom: js.UndefOr[String | typings.interactjsTypes.coreTypesMod.Element] = js.undefined
   
   var inertia: js.UndefOr[AllowResume] = js.undefined
   
-  var listeners: js.UndefOr[typings.interactjsTypes.typesMod.Listeners] = js.undefined
+  var listeners: js.UndefOr[typings.interactjsTypes.coreTypesMod.Listeners] = js.undefined
   
   var manualStart: js.UndefOr[Boolean] = js.undefined
   
@@ -67,9 +67,9 @@ trait PartialOptions extends StObject {
     typings.interactjsTypes.interactjsTypesInts.`0` | typings.interactjsTypes.interactjsTypesInts.`1` | typings.interactjsTypes.interactjsTypesInts.`2` | typings.interactjsTypes.interactjsTypesInts.`4` | `8` | `16`
   ] = js.undefined
   
-  var origin: js.UndefOr[Point | String | typings.interactjsTypes.typesMod.Element] = js.undefined
+  var origin: js.UndefOr[Point | String | typings.interactjsTypes.coreTypesMod.Element] = js.undefined
   
-  var pointerEvents: js.UndefOr[Partial[typings.interactjsTypes.optionsMod.Options]] = js.undefined
+  var pointerEvents: js.UndefOr[Partial[typings.interactjsTypes.coreOptionsMod.Options]] = js.undefined
   
   var preventDefault: js.UndefOr[auto | never | String] = js.undefined
   
@@ -90,7 +90,7 @@ object PartialOptions {
     
     inline def setActionCheckerUndefined: Self = StObject.set(x, "actionChecker", js.undefined)
     
-    inline def setAllowFrom(value: String | typings.interactjsTypes.typesMod.Element): Self = StObject.set(x, "allowFrom", value.asInstanceOf[js.Any])
+    inline def setAllowFrom(value: String | typings.interactjsTypes.coreTypesMod.Element): Self = StObject.set(x, "allowFrom", value.asInstanceOf[js.Any])
     
     inline def setAllowFromUndefined: Self = StObject.set(x, "allowFrom", js.undefined)
     
@@ -138,7 +138,7 @@ object PartialOptions {
     
     inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
     
-    inline def setIgnoreFrom(value: String | typings.interactjsTypes.typesMod.Element): Self = StObject.set(x, "ignoreFrom", value.asInstanceOf[js.Any])
+    inline def setIgnoreFrom(value: String | typings.interactjsTypes.coreTypesMod.Element): Self = StObject.set(x, "ignoreFrom", value.asInstanceOf[js.Any])
     
     inline def setIgnoreFromUndefined: Self = StObject.set(x, "ignoreFrom", js.undefined)
     
@@ -146,7 +146,7 @@ object PartialOptions {
     
     inline def setInertiaUndefined: Self = StObject.set(x, "inertia", js.undefined)
     
-    inline def setListeners(value: typings.interactjsTypes.typesMod.Listeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: typings.interactjsTypes.coreTypesMod.Listeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
     inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     
@@ -176,11 +176,11 @@ object PartialOptions {
     
     inline def setMouseButtonsUndefined: Self = StObject.set(x, "mouseButtons", js.undefined)
     
-    inline def setOrigin(value: Point | String | typings.interactjsTypes.typesMod.Element): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Point | String | typings.interactjsTypes.coreTypesMod.Element): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    inline def setPointerEvents(value: Partial[typings.interactjsTypes.optionsMod.Options]): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    inline def setPointerEvents(value: Partial[typings.interactjsTypes.coreOptionsMod.Options]): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     

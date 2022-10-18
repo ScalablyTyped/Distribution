@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "OverflowMenu")
 @js.native
 open class OverflowMenu protected ()
-  extends typings.carbonComponents.componentsMod.OverflowMenu {
+  extends typings.carbonComponents.globalsJsComponentsMod.OverflowMenu {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialOverflowMenuOption) = this()
 }

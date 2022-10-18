@@ -1,8 +1,8 @@
 package typings.creditCardType
 
-import typings.creditCardType.typesMod.CreditCardTypeCardBrandId
-import typings.creditCardType.typesMod.CreditCardTypeCardBrandNiceType
-import typings.creditCardType.typesMod.CreditCardTypeSecurityCodeLabel
+import typings.creditCardType.distTypesMod.CreditCardTypeCardBrandId
+import typings.creditCardType.distTypesMod.CreditCardTypeCardBrandNiceType
+import typings.creditCardType.distTypesMod.CreditCardTypeSecurityCodeLabel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

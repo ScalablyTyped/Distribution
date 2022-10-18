@@ -1,7 +1,5 @@
 package typings.antvG2plot.mod
 
-import typings.antvG2plot.adaptorMod.Params
-import typings.antvG2plot.annotationMod.Annotation
 import typings.antvG2plot.anon.Fn0
 import typings.antvG2plot.anon.Fn1
 import typings.antvG2plot.anon.Fn2
@@ -14,8 +12,10 @@ import typings.antvG2plot.anon.PickOptionslegendcolorFie
 import typings.antvG2plot.anon.PickOptionsmeta
 import typings.antvG2plot.anon.PickOptionstheme
 import typings.antvG2plot.anon.PickOptionstooltip
-import typings.antvG2plot.axisMod.Axis
-import typings.antvG2plot.metaMod.Meta
+import typings.antvG2plot.libCoreAdaptorMod.Params
+import typings.antvG2plot.libTypesAnnotationMod.Annotation
+import typings.antvG2plot.libTypesAxisMod.Axis
+import typings.antvG2plot.libTypesMetaMod.Meta
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -16,13 +16,13 @@ object NotebookCell {
   val ^ : js.Any = js.native
   
   inline def create(
-    kind: typings.vscodeLanguageserverProtocol.protocolNotebookMod.NotebookCellKind,
+    kind: typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.NotebookCellKind,
     document: typings.vscodeLanguageserverTypes.mod.DocumentUri
-  ): typings.vscodeLanguageserverProtocol.protocolNotebookMod.NotebookCell = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(kind.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverProtocol.protocolNotebookMod.NotebookCell]
+  ): typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.NotebookCell = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(kind.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.NotebookCell]
   
   inline def diff(
-    one: typings.vscodeLanguageserverProtocol.protocolNotebookMod.NotebookCell,
-    two: typings.vscodeLanguageserverProtocol.protocolNotebookMod.NotebookCell
+    one: typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.NotebookCell,
+    two: typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.NotebookCell
   ): Set[
     /* keyof vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.notebook.NotebookCell */ kind | document | metadata | executionSummary
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(one.asInstanceOf[js.Any], two.asInstanceOf[js.Any])).asInstanceOf[Set[

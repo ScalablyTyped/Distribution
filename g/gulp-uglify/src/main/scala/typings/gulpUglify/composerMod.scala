@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.gulpUglify.anon.FnCall
 import typings.gulpUglify.mod.Options
+import typings.node.NodeJS.ReadWriteStream
 import typings.uglifyJs.mod.MinifyOptions
 import typings.uglifyJs.mod.MinifyOutput
 import org.scalablytyped.runtime.StObject
@@ -19,10 +20,7 @@ object composerMod extends Shortcut {
   type Composer = js.Function2[
     /* uglify */ Uglify, 
     /* log */ Logger, 
-    js.Function1[
-      /* options */ js.UndefOr[Options], 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-    ]
+    js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
   ]
   
   trait Logger extends StObject {

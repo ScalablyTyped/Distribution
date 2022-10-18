@@ -1176,7 +1176,15 @@ object mod {
     }
   }
   
-  type EventListenerThisType[T /* <: EventTarget | WindowEventTargets */] = T | (/* import warning: importer.ImportType#apply Failed type conversion: std.Window[T] */ js.Any)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends 'clientInformation' | 'closed' | 'customElements' | 'devicePixelRatio' | 'document' | 'event' | 'external' | 'frameElement' | 'frames' | 'history' | 'innerHeight' | 'innerWidth' | 'length' | 'locationbar' | 'menubar' | 'name' | 'navigator' | 'ondevicemotion' | 'ondeviceorientation' | 'onorientationchange' | 'opener' | 'orientation' | 'outerHeight' | 'outerWidth' | 'pageXOffset' | 'pageYOffset' | 'parent' | 'personalbar' | 'screen' | 'screenLeft' | 'screenTop' | 'screenX' | 'screenY' | 'scrollX' | 'scrollY' | 'scrollbars' | 'self' | 'speechSynthesis' | 'status' | 'statusbar' | 'toolbar' | 'top' | 'visualViewport' | 'window' ? std.Window[T] : T
+    }}}
+    */
+  @js.native
+  trait EventListenerThisType[T /* <: EventTarget | WindowEventTargets */] extends StObject
   
   /* Inlined parent std.Pick<std.AddEventListenerOptions, 'capture' | 'passive'> */
   trait EventOptions extends StObject {
@@ -1204,56 +1212,17 @@ object mod {
     }
   }
   
-  type OnErrorEventHandlerArgs = js.Array[Any]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    std.OnErrorEventHandlerNonNull extends (args : infer A): any ? A : []
+    }}}
+    */
+  @js.native
+  trait OnErrorEventHandlerArgs extends StObject
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactEventListener.reactEventListenerStrings.locationbar
-    - typings.reactEventListener.reactEventListenerStrings.opener
-    - typings.reactEventListener.reactEventListenerStrings.window
-    - typings.reactEventListener.reactEventListenerStrings.frames
-    - typings.reactEventListener.reactEventListenerStrings.speechSynthesis
-    - typings.reactEventListener.reactEventListenerStrings.scrollX
-    - typings.reactEventListener.reactEventListenerStrings.innerHeight
-    - typings.reactEventListener.reactEventListenerStrings.screen
-    - typings.reactEventListener.reactEventListenerStrings.frameElement
-    - scala.Unit
-    - typings.reactEventListener.reactEventListenerStrings.statusbar
-    - typings.reactEventListener.reactEventListenerStrings.history
-    - typings.reactEventListener.reactEventListenerStrings.status
-    - typings.reactEventListener.reactEventListenerStrings.orientation
-    - typings.reactEventListener.reactEventListenerStrings.screenTop
-    - typings.reactEventListener.reactEventListenerStrings.name
-    - typings.reactEventListener.reactEventListenerStrings.menubar
-    - typings.reactEventListener.reactEventListenerStrings.self
-    - typings.reactEventListener.reactEventListenerStrings.outerWidth
-    - typings.reactEventListener.reactEventListenerStrings.ondevicemotion
-    - typings.reactEventListener.reactEventListenerStrings.outerHeight
-    - typings.reactEventListener.reactEventListenerStrings.scrollbars
-    - typings.reactEventListener.reactEventListenerStrings.clientInformation
-    - typings.reactEventListener.reactEventListenerStrings.devicePixelRatio
-    - typings.reactEventListener.reactEventListenerStrings.pageXOffset
-    - typings.reactEventListener.reactEventListenerStrings.pageYOffset
-    - typings.reactEventListener.reactEventListenerStrings.length
-    - typings.reactEventListener.reactEventListenerStrings.toolbar
-    - typings.reactEventListener.reactEventListenerStrings.onorientationchange
-    - typings.reactEventListener.reactEventListenerStrings.scrollY
-    - typings.reactEventListener.reactEventListenerStrings.navigator
-    - typings.reactEventListener.reactEventListenerStrings.event
-    - typings.reactEventListener.reactEventListenerStrings.screenY
-    - typings.reactEventListener.reactEventListenerStrings.innerWidth
-    - typings.reactEventListener.reactEventListenerStrings.parent
-    - typings.reactEventListener.reactEventListenerStrings.customElements
-    - typings.reactEventListener.reactEventListenerStrings.document
-    - typings.reactEventListener.reactEventListenerStrings.screenX
-    - typings.reactEventListener.reactEventListenerStrings.external
-    - typings.reactEventListener.reactEventListenerStrings.ondeviceorientation
-    - typings.reactEventListener.reactEventListenerStrings.top
-    - typings.reactEventListener.reactEventListenerStrings.closed
-    - typings.reactEventListener.reactEventListenerStrings.personalbar
-    - typings.reactEventListener.reactEventListenerStrings.visualViewport
-    - typings.reactEventListener.reactEventListenerStrings.screenLeft
-  */
-  type WindowEventTargets = js.UndefOr[_WindowEventTargets]
-  
-  trait _WindowEventTargets extends StObject
+  type WindowEventTargets = js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.BarProp extends std.EventTarget ? 'locationbar' : never */ js.Any
+  ]
 }

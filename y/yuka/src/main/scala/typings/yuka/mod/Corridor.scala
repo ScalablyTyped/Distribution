@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "Corridor")
 @js.native
 open class Corridor ()
-  extends typings.yuka.yukaMod.Corridor
+  extends typings.yuka.srcYukaMod.Corridor

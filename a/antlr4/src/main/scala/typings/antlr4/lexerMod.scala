@@ -1,6 +1,6 @@
 package typings.antlr4
 
-import typings.antlr4.errorsMod.RecognitionException
+import typings.antlr4.errorErrorsMod.RecognitionException
 import typings.antlr4.recognizerMod.Recognizer
 import typings.antlr4.tokenMod.Token
 import org.scalablytyped.runtime.StObject

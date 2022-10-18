@@ -1,6 +1,6 @@
 package typings.reactThreeFiber.anon
 
-import typings.reactThreeFiber.eventsMod.ThreeEvent
+import typings.reactThreeFiber.distDeclarationsSrcCoreEventsMod.ThreeEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
 import typings.std.WheelEvent

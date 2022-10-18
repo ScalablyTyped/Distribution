@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ImageCoverStyle extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageCoverStyle & Double
+  ] = js.native
   
-  /* 0 */ val landscape: typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle.landscape & Double = js.native
+  /* 0 */ val landscape: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageCoverStyle.landscape & Double = js.native
   
-  /* 1 */ val portrait: typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle.portrait & Double = js.native
+  /* 1 */ val portrait: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageCoverStyle.portrait & Double = js.native
 }

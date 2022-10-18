@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/private", "QueryConstraint")
+/* note: abstract class */ @JSImport("@firebase/firestore/dist/private", "QueryConstraint")
 @js.native
-abstract class QueryConstraint () extends StObject {
+open class QueryConstraint () extends StObject {
   
   /**
     * Takes the provided {@link Query} and returns a copy of the {@link Query} with this

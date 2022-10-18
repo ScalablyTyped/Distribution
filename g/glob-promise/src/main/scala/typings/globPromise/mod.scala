@@ -23,7 +23,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("glob-promise", "Glob")
   @js.native
-  open class Glob protected () extends IGlob {
+  open class Glob protected ()
+    extends StObject
+       with IGlob {
     def this(pattern: String) = this()
     def this(pattern: String, cb: js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit]) = this()
     def this(pattern: String, options: IOptions) = this()

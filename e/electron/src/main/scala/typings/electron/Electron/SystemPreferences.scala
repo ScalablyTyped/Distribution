@@ -163,7 +163,9 @@ trait SystemPreferences
     *
     * @platform win32,darwin
     */
-  def getColor(color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): String = js.native
+  def getColor(
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.electron.electronStrings.`3d-dark-shadow`, typings.electron.electronStrings.`3d-face`, typings.electron.electronStrings.`3d-highlight` */ Any
+  ): String = js.native
   
   /**
     * Can be `dark`, `light` or `unknown`.

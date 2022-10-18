@@ -57,8 +57,7 @@ trait TableColumnCollection
     Unlike `add()`, `addAsJson()` takes any type of cell value, such as image or entity data types.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     *
     * @param index Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.
     * @param values Optional. A 2D array of cell values of the table column.

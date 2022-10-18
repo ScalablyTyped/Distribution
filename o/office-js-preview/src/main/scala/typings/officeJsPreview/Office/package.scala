@@ -68,7 +68,7 @@ type Message = Item
 /**
   * Represents a bound text selection in the document.
   *
-  * The TextBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from the {@link Office.Binding}
+  * The TextBinding object inherits the `id` property, type property, getDataAsync method, and setDataAsync method from the {@link Office.Binding}
   * object. It does not implement any additional properties or methods of its own.
   */
 type TextBinding = Binding

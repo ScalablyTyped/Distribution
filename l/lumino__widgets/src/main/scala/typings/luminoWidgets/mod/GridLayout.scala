@@ -1,8 +1,8 @@
 package typings.luminoWidgets.mod
 
 import typings.luminoWidgets.anon.PartialICellConfig
-import typings.luminoWidgets.gridlayoutMod.GridLayout.ICellConfig
-import typings.luminoWidgets.gridlayoutMod.GridLayout.IOptions
+import typings.luminoWidgets.typesGridlayoutMod.GridLayout.ICellConfig
+import typings.luminoWidgets.typesGridlayoutMod.GridLayout.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options - The options for initializing the layout.
   */
 open class GridLayout ()
-  extends typings.luminoWidgets.gridlayoutMod.GridLayout {
+  extends typings.luminoWidgets.typesGridlayoutMod.GridLayout {
   def this(options: IOptions) = this()
 }
 object GridLayout {
@@ -31,7 +31,7 @@ object GridLayout {
     *
     * @returns The cell config for the widget.
     */
-  inline def getCellConfig(widget: typings.luminoWidgets.widgetMod.Widget): ICellConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellConfig")(widget.asInstanceOf[js.Any]).asInstanceOf[ICellConfig]
+  inline def getCellConfig(widget: typings.luminoWidgets.typesWidgetMod.Widget): ICellConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellConfig")(widget.asInstanceOf[js.Any]).asInstanceOf[ICellConfig]
   
   /**
     * Set the cell config for the given widget.
@@ -40,5 +40,5 @@ object GridLayout {
     *
     * @param value - The value for the cell config.
     */
-  inline def setCellConfig(widget: typings.luminoWidgets.widgetMod.Widget, value: PartialICellConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCellConfig")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setCellConfig(widget: typings.luminoWidgets.typesWidgetMod.Widget, value: PartialICellConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCellConfig")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

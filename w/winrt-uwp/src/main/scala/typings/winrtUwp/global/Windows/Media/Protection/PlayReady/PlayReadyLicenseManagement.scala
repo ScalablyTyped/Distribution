@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Performs license management operations. */
-@JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyLicenseManagement")
+/* note: abstract class */ @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyLicenseManagement")
 @js.native
-abstract class PlayReadyLicenseManagement ()
+open class PlayReadyLicenseManagement ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyLicenseManagement
 object PlayReadyLicenseManagement {

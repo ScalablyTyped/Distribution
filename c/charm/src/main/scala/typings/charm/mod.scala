@@ -14,10 +14,10 @@ import typings.charm.charmStrings.screen
 import typings.charm.charmStrings.start
 import typings.charm.charmStrings.underscore
 import typings.charm.charmStrings.up
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.processMod.global.NodeJS.Process
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type CharmAnyStream = WritableStream[Any] | ReadableStream[Any] | Process
+  type CharmAnyStream = WritableStream | ReadableStream | Process
   
   type CharmColor = CharmColorName | CharmColorHex
   
@@ -78,7 +78,7 @@ object mod {
   @js.native
   trait CharmInstance
     extends StObject
-       with WritableStream[Any] {
+       with WritableStream {
     
     /**
       * Set the background color with the string `color`, which can be:
@@ -131,9 +131,6 @@ object mod {
     /** Move the cursor down by `y` rows. */
     def down(y: Double): this.type = js.native
     
-    /** Emit an "end" event downstream. */
-    def end(): Any = js.native
-    
     /**
       * Erase a region defined by the string `s`.
       *
@@ -178,7 +175,7 @@ object mod {
     def move(x: Double, y: Double): this.type = js.native
     
     /** Pipes the output of Charm to a writeable stream `stream` */
-    def pipe(stream: WritableStream[Any]): Unit = js.native
+    def pipe(stream: WritableStream): Unit = js.native
     
     /** Pop the cursor state and optionally the attribute state. */
     def pop(): this.type = js.native
@@ -205,11 +202,6 @@ object mod {
     /** Move the cursor up by `y` rows. */
     def up(y: Double): this.type = js.native
     
-    /**
-      * Pass along `msg` to the output stream.
-      * @param cb Unused by charm, only there to comply to the WritableStream interface
-      */
-    def write(msg: String): Boolean = js.native
     def write(msg: String, cb: js.Function): Boolean = js.native
     def write(msgs: String, encoding: String): Boolean = js.native
     def write(msgs: String, encoding: String, cb: js.Function): Boolean = js.native

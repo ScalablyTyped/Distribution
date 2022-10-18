@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "NotAFormulaError")
 @js.native
 open class NotAFormulaError ()
-  extends typings.hyperformula.errorsMod.NotAFormulaError
+  extends typings.hyperformula.typingsErrorsMod.NotAFormulaError

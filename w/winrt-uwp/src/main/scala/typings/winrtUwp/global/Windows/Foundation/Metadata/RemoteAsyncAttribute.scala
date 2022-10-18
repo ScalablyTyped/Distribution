@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates that an interface can be delivered using an asynchronous form of the Async pattern. */
-@JSGlobal("Windows.Foundation.Metadata.RemoteAsyncAttribute")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.Metadata.RemoteAsyncAttribute")
 @js.native
-abstract class RemoteAsyncAttribute ()
+open class RemoteAsyncAttribute ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Metadata.RemoteAsyncAttribute

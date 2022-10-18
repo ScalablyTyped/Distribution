@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides basic properties for the input pointer associated with a single mouse, pen/stylus, or touch contact. */
-@JSGlobal("Windows.UI.Input.PointerPoint")
+/* note: abstract class */ @JSGlobal("Windows.UI.Input.PointerPoint")
 @js.native
-abstract class PointerPoint ()
+open class PointerPoint ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.PointerPoint {
   

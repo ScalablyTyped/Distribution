@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "AndOrNotEvaluator")
 @js.native
 open class AndOrNotEvaluator ()
-  extends typings.babylonjs.andOrNotEvaluatorMod.AndOrNotEvaluator
+  extends typings.babylonjs.miscAndOrNotEvaluatorMod.AndOrNotEvaluator
 /* static members */
 object AndOrNotEvaluator {
   

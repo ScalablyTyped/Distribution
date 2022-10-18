@@ -14,27 +14,27 @@ import typings.antvGLite.antvGLiteStrings.visible
 import typings.antvGLite.antvGLiteStrings.visiblefill
 import typings.antvGLite.antvGLiteStrings.visiblepainted
 import typings.antvGLite.antvGLiteStrings.visiblestroke
-import typings.antvGLite.colorMod.Pattern
-import typings.antvGLite.cssInterfacesMod.PropertyMetadata
-import typings.antvGLite.cssInterfacesMod.StyleValueRegistry
+import typings.antvGLite.distCssInterfacesMod.PropertyMetadata
+import typings.antvGLite.distCssInterfacesMod.StyleValueRegistry
+import typings.antvGLite.distCssParserColorMod.Pattern
+import typings.antvGLite.distCssStyleValueRegistryMod.CSSGlobalKeywords
 import typings.antvGLite.distTypesMod.CanvasLike
 import typings.antvGLite.mod.^
-import typings.antvGLite.styleValueRegistryMod.CSSGlobalKeywords
-import typings.antvUtil.pathTypesMod.AbsoluteArray
-import typings.antvUtil.pathTypesMod.PathArray
+import typings.antvUtil.libPathTypesMod.AbsoluteArray
+import typings.antvUtil.libPathTypesMod.PathArray
 import typings.glMatrix.mod.mat3
 import typings.glMatrix.mod.mat4
 import typings.glMatrix.mod.quat
 import typings.glMatrix.mod.vec2
 import typings.glMatrix.mod.vec3
 import typings.glMatrix.mod.vec4
-import typings.manaSyringe.containerMod.Container
-import typings.manaSyringe.coreMod.Decorator
-import typings.manaSyringe.coreMod.Syringe.DecoratorOption
-import typings.manaSyringe.coreMod.Syringe.Registry
-import typings.manaSyringe.coreMod.Syringe.Token
+import typings.manaSyringe.libContainerMod.Container
+import typings.manaSyringe.libCoreMod.Decorator
+import typings.manaSyringe.libCoreMod.Syringe.DecoratorOption
+import typings.manaSyringe.libCoreMod.Syringe.Registry
+import typings.manaSyringe.libCoreMod.Syringe.Token
+import typings.manaSyringe.libModuleSyringeModuleMod.SyringeModule
 import typings.manaSyringe.mod.Syringe.DefinedToken
-import typings.manaSyringe.syringeModuleMod.SyringeModule
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -86,20 +86,20 @@ inline def computeLinearGradient(width: Double, height: Double, angle: Double): 
 
 inline def computeRadialGradient(width: Double, height: Double, cx: Double, cy: Double): R = (^.asInstanceOf[js.Dynamic].applyDynamic("computeRadialGradient")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any])).asInstanceOf[R]
 
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Circle): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Circle, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Ellipse): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Ellipse, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Line): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Line, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Path): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Path, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Polygon): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Polygon, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Polyline): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Polyline, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Rect): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
-inline def convertToPath(`object`: typings.antvGLite.displayObjectsMod.Rect, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Circle): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Circle, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Ellipse): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Ellipse, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Line): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Line, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Path): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Path, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Polygon): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Polygon, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Polyline): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Polyline, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Rect): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def convertToPath(`object`: typings.antvGLite.distDisplayObjectsMod.Rect, applyLocalTransform: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPath")(`object`.asInstanceOf[js.Any], applyLocalTransform.asInstanceOf[js.Any])).asInstanceOf[String]
 
 inline def createVec3(x: vec2 | vec3 | vec4): vec3 = ^.asInstanceOf[js.Dynamic].applyDynamic("createVec3")(x.asInstanceOf[js.Any]).asInstanceOf[vec3]
 inline def createVec3(x: vec2 | vec3 | vec4, y: Double): vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("createVec3")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[vec3]
@@ -118,14 +118,14 @@ inline def deg2rad(deg: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynami
 
 inline def deg2turn(deg: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("deg2turn")(deg.asInstanceOf[js.Any]).asInstanceOf[Double]
 
-inline def findClosestClipPathTarget(`object`: typings.antvGLite.displayObjectsMod.DisplayObject[Any, Any]): typings.antvGLite.displayObjectsMod.DisplayObject[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("findClosestClipPathTarget")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.antvGLite.displayObjectsMod.DisplayObject[Any, Any]]
+inline def findClosestClipPathTarget(`object`: typings.antvGLite.distDisplayObjectsMod.DisplayObject[Any, Any]): typings.antvGLite.distDisplayObjectsMod.DisplayObject[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("findClosestClipPathTarget")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.antvGLite.distDisplayObjectsMod.DisplayObject[Any, Any]]
 
 inline def getAngle(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getAngle")().asInstanceOf[Double]
 inline def getAngle(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getAngle")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
 
 inline def getEuler(out: vec3, quat: mat4 | quat): vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("getEuler")(out.asInstanceOf[js.Any], quat.asInstanceOf[js.Any])).asInstanceOf[vec3]
 
-inline def getOrCalculatePathTotalLength(path: typings.antvGLite.displayObjectsMod.Path): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCalculatePathTotalLength")(path.asInstanceOf[js.Any]).asInstanceOf[Double]
+inline def getOrCalculatePathTotalLength(path: typings.antvGLite.distDisplayObjectsMod.Path): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCalculatePathTotalLength")(path.asInstanceOf[js.Any]).asInstanceOf[Double]
 
 inline def grad2deg(grads: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("grad2deg")(grads.asInstanceOf[js.Any]).asInstanceOf[Double]
 
@@ -142,37 +142,56 @@ inline def isFillOrStrokeAffected(
 ): js.Tuple2[Boolean, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
   pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
-  fill: js.Array[typings.antvGLite.cssMod.CSSGradientValue]
+  fill: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
   pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
-  fill: js.Array[typings.antvGLite.cssMod.CSSGradientValue],
-  stroke: js.Array[typings.antvGLite.cssMod.CSSGradientValue]
+  fill: js.Array[typings.antvGLite.distCssMod.CSSGradientValue],
+  stroke: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
   pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
-  fill: js.Array[typings.antvGLite.cssMod.CSSGradientValue],
-  stroke: Pattern
+  fill: js.Array[typings.antvGLite.distCssMod.CSSGradientValue],
+  stroke: typings.antvGLite.distCssMod.CSSRGB
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
   pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
-  fill: js.Array[typings.antvGLite.cssMod.CSSGradientValue],
-  stroke: typings.antvGLite.cssMod.CSSRGB
-): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(
-  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
-  fill: Unit,
-  stroke: js.Array[typings.antvGLite.cssMod.CSSGradientValue]
-): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(
-  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
-  fill: Unit,
+  fill: js.Array[typings.antvGLite.distCssMod.CSSGradientValue],
   stroke: Pattern
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
   pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
   fill: Unit,
-  stroke: typings.antvGLite.cssMod.CSSRGB
+  stroke: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]
+): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(
+  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
+  fill: Unit,
+  stroke: typings.antvGLite.distCssMod.CSSRGB
+): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(
+  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
+  fill: Unit,
+  stroke: Pattern
+): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(
+  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
+  fill: typings.antvGLite.distCssMod.CSSRGB
+): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(
+  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
+  fill: typings.antvGLite.distCssMod.CSSRGB,
+  stroke: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]
+): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(
+  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
+  fill: typings.antvGLite.distCssMod.CSSRGB,
+  stroke: typings.antvGLite.distCssMod.CSSRGB
+): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(
+  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
+  fill: typings.antvGLite.distCssMod.CSSRGB,
+  stroke: Pattern
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
   pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
@@ -181,130 +200,108 @@ inline def isFillOrStrokeAffected(
 inline def isFillOrStrokeAffected(
   pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
   fill: Pattern,
-  stroke: js.Array[typings.antvGLite.cssMod.CSSGradientValue]
+  stroke: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]
+): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(
+  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
+  fill: Pattern,
+  stroke: typings.antvGLite.distCssMod.CSSRGB
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
   pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
   fill: Pattern,
   stroke: Pattern
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
-  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
-  fill: Pattern,
-  stroke: typings.antvGLite.cssMod.CSSRGB
+  pointerEvents: Unit,
+  fill: js.Array[typings.antvGLite.distCssMod.CSSGradientValue],
+  stroke: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
-  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
-  fill: typings.antvGLite.cssMod.CSSRGB
-): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(
-  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
-  fill: typings.antvGLite.cssMod.CSSRGB,
-  stroke: js.Array[typings.antvGLite.cssMod.CSSGradientValue]
+  pointerEvents: Unit,
+  fill: js.Array[typings.antvGLite.distCssMod.CSSGradientValue],
+  stroke: typings.antvGLite.distCssMod.CSSRGB
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
-  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
-  fill: typings.antvGLite.cssMod.CSSRGB,
+  pointerEvents: Unit,
+  fill: js.Array[typings.antvGLite.distCssMod.CSSGradientValue],
   stroke: Pattern
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(
-  pointerEvents: none | auto | stroke | fill | painted | visible | visiblestroke | visiblefill | visiblepainted | all,
-  fill: typings.antvGLite.cssMod.CSSRGB,
-  stroke: typings.antvGLite.cssMod.CSSRGB
-): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: js.Array[typings.antvGLite.cssMod.CSSGradientValue]): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(
-  pointerEvents: Unit,
-  fill: js.Array[typings.antvGLite.cssMod.CSSGradientValue],
-  stroke: js.Array[typings.antvGLite.cssMod.CSSGradientValue]
-): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: js.Array[typings.antvGLite.cssMod.CSSGradientValue], stroke: Pattern): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(
-  pointerEvents: Unit,
-  fill: js.Array[typings.antvGLite.cssMod.CSSGradientValue],
-  stroke: typings.antvGLite.cssMod.CSSRGB
-): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: Unit, stroke: js.Array[typings.antvGLite.cssMod.CSSGradientValue]): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: Unit, stroke: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: Unit, stroke: typings.antvGLite.distCssMod.CSSRGB): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: Unit, stroke: Pattern): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: Unit, stroke: typings.antvGLite.cssMod.CSSRGB): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: typings.antvGLite.distCssMod.CSSRGB): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(
+  pointerEvents: Unit,
+  fill: typings.antvGLite.distCssMod.CSSRGB,
+  stroke: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]
+): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(
+  pointerEvents: Unit,
+  fill: typings.antvGLite.distCssMod.CSSRGB,
+  stroke: typings.antvGLite.distCssMod.CSSRGB
+): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: typings.antvGLite.distCssMod.CSSRGB, stroke: Pattern): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: Pattern): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: Pattern, stroke: js.Array[typings.antvGLite.cssMod.CSSGradientValue]): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(
+  pointerEvents: Unit,
+  fill: Pattern,
+  stroke: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]
+): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: Pattern, stroke: typings.antvGLite.distCssMod.CSSRGB): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: Pattern, stroke: Pattern): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: Pattern, stroke: typings.antvGLite.cssMod.CSSRGB): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: typings.antvGLite.cssMod.CSSRGB): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(
-  pointerEvents: Unit,
-  fill: typings.antvGLite.cssMod.CSSRGB,
-  stroke: js.Array[typings.antvGLite.cssMod.CSSGradientValue]
-): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(pointerEvents: Unit, fill: typings.antvGLite.cssMod.CSSRGB, stroke: Pattern): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(
-  pointerEvents: Unit,
-  fill: typings.antvGLite.cssMod.CSSRGB,
-  stroke: typings.antvGLite.cssMod.CSSRGB
-): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords): js.Tuple2[Boolean, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords, fill: js.Array[typings.antvGLite.cssMod.CSSGradientValue]): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords, fill: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
   pointerEvents: CSSGlobalKeywords,
-  fill: js.Array[typings.antvGLite.cssMod.CSSGradientValue],
-  stroke: js.Array[typings.antvGLite.cssMod.CSSGradientValue]
+  fill: js.Array[typings.antvGLite.distCssMod.CSSGradientValue],
+  stroke: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
   pointerEvents: CSSGlobalKeywords,
-  fill: js.Array[typings.antvGLite.cssMod.CSSGradientValue],
+  fill: js.Array[typings.antvGLite.distCssMod.CSSGradientValue],
+  stroke: typings.antvGLite.distCssMod.CSSRGB
+): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(
+  pointerEvents: CSSGlobalKeywords,
+  fill: js.Array[typings.antvGLite.distCssMod.CSSGradientValue],
   stroke: Pattern
-): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(
-  pointerEvents: CSSGlobalKeywords,
-  fill: js.Array[typings.antvGLite.cssMod.CSSGradientValue],
-  stroke: typings.antvGLite.cssMod.CSSRGB
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
   pointerEvents: CSSGlobalKeywords,
   fill: Unit,
-  stroke: js.Array[typings.antvGLite.cssMod.CSSGradientValue]
+  stroke: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords, fill: Unit, stroke: typings.antvGLite.distCssMod.CSSRGB): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords, fill: Unit, stroke: Pattern): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords, fill: Unit, stroke: typings.antvGLite.cssMod.CSSRGB): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords, fill: typings.antvGLite.distCssMod.CSSRGB): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(
+  pointerEvents: CSSGlobalKeywords,
+  fill: typings.antvGLite.distCssMod.CSSRGB,
+  stroke: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]
+): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(
+  pointerEvents: CSSGlobalKeywords,
+  fill: typings.antvGLite.distCssMod.CSSRGB,
+  stroke: typings.antvGLite.distCssMod.CSSRGB
+): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords, fill: typings.antvGLite.distCssMod.CSSRGB, stroke: Pattern): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords, fill: Pattern): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(
   pointerEvents: CSSGlobalKeywords,
   fill: Pattern,
-  stroke: js.Array[typings.antvGLite.cssMod.CSSGradientValue]
+  stroke: js.Array[typings.antvGLite.distCssMod.CSSGradientValue]
 ): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
+inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords, fill: Pattern, stroke: typings.antvGLite.distCssMod.CSSRGB): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords, fill: Pattern, stroke: Pattern): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords, fill: Pattern, stroke: typings.antvGLite.cssMod.CSSRGB): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords, fill: typings.antvGLite.cssMod.CSSRGB): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(
-  pointerEvents: CSSGlobalKeywords,
-  fill: typings.antvGLite.cssMod.CSSRGB,
-  stroke: js.Array[typings.antvGLite.cssMod.CSSGradientValue]
-): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(pointerEvents: CSSGlobalKeywords, fill: typings.antvGLite.cssMod.CSSRGB, stroke: Pattern): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
-inline def isFillOrStrokeAffected(
-  pointerEvents: CSSGlobalKeywords,
-  fill: typings.antvGLite.cssMod.CSSRGB,
-  stroke: typings.antvGLite.cssMod.CSSRGB
-): js.Tuple2[Boolean, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isFillOrStrokeAffected")(pointerEvents.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], stroke.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Boolean, Boolean]]
 
 inline def isPattern(`object`: Any): /* is @antv/g-lite.@antv/g-lite/dist/css/parser/color.Pattern */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPattern")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is @antv/g-lite.@antv/g-lite/dist/css/parser/color.Pattern */ Boolean]
 
 inline def mergeColors(
-  left: js.Array[typings.antvGLite.cssomMod.CSSGradientValue],
-  right: js.Array[typings.antvGLite.cssomMod.CSSGradientValue]
+  left: js.Array[typings.antvGLite.distCssCssomMod.CSSGradientValue],
+  right: js.Array[typings.antvGLite.distCssCssomMod.CSSGradientValue]
 ): js.UndefOr[
-js.Tuple3[
-  js.Array[Double], 
-  js.Array[Double], 
-  js.Function1[/* color */ js.Array[Double], String]
-]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeColors")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
-js.Tuple3[
-  js.Array[Double], 
-  js.Array[Double], 
-  js.Function1[/* color */ js.Array[Double], String]
-]]]
-inline def mergeColors(left: js.Array[typings.antvGLite.cssomMod.CSSGradientValue], right: Pattern): js.UndefOr[
 js.Tuple3[
   js.Array[Double], 
   js.Array[Double], 
@@ -316,8 +313,8 @@ js.Tuple3[
   js.Function1[/* color */ js.Array[Double], String]
 ]]]
 inline def mergeColors(
-  left: js.Array[typings.antvGLite.cssomMod.CSSGradientValue],
-  right: typings.antvGLite.cssomMod.CSSRGB
+  left: js.Array[typings.antvGLite.distCssCssomMod.CSSGradientValue],
+  right: typings.antvGLite.distCssCssomMod.CSSRGB
 ): js.UndefOr[
 js.Tuple3[
   js.Array[Double], 
@@ -329,7 +326,65 @@ js.Tuple3[
   js.Array[Double], 
   js.Function1[/* color */ js.Array[Double], String]
 ]]]
-inline def mergeColors(left: Pattern, right: js.Array[typings.antvGLite.cssomMod.CSSGradientValue]): js.UndefOr[
+inline def mergeColors(left: js.Array[typings.antvGLite.distCssCssomMod.CSSGradientValue], right: Pattern): js.UndefOr[
+js.Tuple3[
+  js.Array[Double], 
+  js.Array[Double], 
+  js.Function1[/* color */ js.Array[Double], String]
+]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeColors")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+js.Tuple3[
+  js.Array[Double], 
+  js.Array[Double], 
+  js.Function1[/* color */ js.Array[Double], String]
+]]]
+inline def mergeColors(
+  left: typings.antvGLite.distCssCssomMod.CSSRGB,
+  right: js.Array[typings.antvGLite.distCssCssomMod.CSSGradientValue]
+): js.UndefOr[
+js.Tuple3[
+  js.Array[Double], 
+  js.Array[Double], 
+  js.Function1[/* color */ js.Array[Double], String]
+]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeColors")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+js.Tuple3[
+  js.Array[Double], 
+  js.Array[Double], 
+  js.Function1[/* color */ js.Array[Double], String]
+]]]
+inline def mergeColors(left: typings.antvGLite.distCssCssomMod.CSSRGB, right: typings.antvGLite.distCssCssomMod.CSSRGB): js.UndefOr[
+js.Tuple3[
+  js.Array[Double], 
+  js.Array[Double], 
+  js.Function1[/* color */ js.Array[Double], String]
+]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeColors")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+js.Tuple3[
+  js.Array[Double], 
+  js.Array[Double], 
+  js.Function1[/* color */ js.Array[Double], String]
+]]]
+inline def mergeColors(left: typings.antvGLite.distCssCssomMod.CSSRGB, right: Pattern): js.UndefOr[
+js.Tuple3[
+  js.Array[Double], 
+  js.Array[Double], 
+  js.Function1[/* color */ js.Array[Double], String]
+]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeColors")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+js.Tuple3[
+  js.Array[Double], 
+  js.Array[Double], 
+  js.Function1[/* color */ js.Array[Double], String]
+]]]
+inline def mergeColors(left: Pattern, right: js.Array[typings.antvGLite.distCssCssomMod.CSSGradientValue]): js.UndefOr[
+js.Tuple3[
+  js.Array[Double], 
+  js.Array[Double], 
+  js.Function1[/* color */ js.Array[Double], String]
+]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeColors")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+js.Tuple3[
+  js.Array[Double], 
+  js.Array[Double], 
+  js.Function1[/* color */ js.Array[Double], String]
+]]]
+inline def mergeColors(left: Pattern, right: typings.antvGLite.distCssCssomMod.CSSRGB): js.UndefOr[
 js.Tuple3[
   js.Array[Double], 
   js.Array[Double], 
@@ -351,56 +406,9 @@ js.Tuple3[
   js.Array[Double], 
   js.Function1[/* color */ js.Array[Double], String]
 ]]]
-inline def mergeColors(left: Pattern, right: typings.antvGLite.cssomMod.CSSRGB): js.UndefOr[
-js.Tuple3[
-  js.Array[Double], 
-  js.Array[Double], 
-  js.Function1[/* color */ js.Array[Double], String]
-]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeColors")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
-js.Tuple3[
-  js.Array[Double], 
-  js.Array[Double], 
-  js.Function1[/* color */ js.Array[Double], String]
-]]]
-inline def mergeColors(
-  left: typings.antvGLite.cssomMod.CSSRGB,
-  right: js.Array[typings.antvGLite.cssomMod.CSSGradientValue]
-): js.UndefOr[
-js.Tuple3[
-  js.Array[Double], 
-  js.Array[Double], 
-  js.Function1[/* color */ js.Array[Double], String]
-]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeColors")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
-js.Tuple3[
-  js.Array[Double], 
-  js.Array[Double], 
-  js.Function1[/* color */ js.Array[Double], String]
-]]]
-inline def mergeColors(left: typings.antvGLite.cssomMod.CSSRGB, right: Pattern): js.UndefOr[
-js.Tuple3[
-  js.Array[Double], 
-  js.Array[Double], 
-  js.Function1[/* color */ js.Array[Double], String]
-]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeColors")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
-js.Tuple3[
-  js.Array[Double], 
-  js.Array[Double], 
-  js.Function1[/* color */ js.Array[Double], String]
-]]]
-inline def mergeColors(left: typings.antvGLite.cssomMod.CSSRGB, right: typings.antvGLite.cssomMod.CSSRGB): js.UndefOr[
-js.Tuple3[
-  js.Array[Double], 
-  js.Array[Double], 
-  js.Function1[/* color */ js.Array[Double], String]
-]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeColors")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
-js.Tuple3[
-  js.Array[Double], 
-  js.Array[Double], 
-  js.Function1[/* color */ js.Array[Double], String]
-]]]
 
-inline def parsePath(path: String, `object`: typings.antvGLite.displayObjectsMod.DisplayObject[Any, Any]): AbsolutePath = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[AbsolutePath]
-inline def parsePath(path: PathArray, `object`: typings.antvGLite.displayObjectsMod.DisplayObject[Any, Any]): AbsolutePath = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[AbsolutePath]
+inline def parsePath(path: String, `object`: typings.antvGLite.distDisplayObjectsMod.DisplayObject[Any, Any]): AbsolutePath = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[AbsolutePath]
+inline def parsePath(path: PathArray, `object`: typings.antvGLite.distDisplayObjectsMod.DisplayObject[Any, Any]): AbsolutePath = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[AbsolutePath]
 
 inline def propertyMetadataCache: Record[String, PropertyMetadata] = ^.asInstanceOf[js.Dynamic].selectDynamic("propertyMetadataCache").asInstanceOf[Record[String, PropertyMetadata]]
 

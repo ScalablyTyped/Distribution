@@ -1,6 +1,5 @@
 package typings.snapchatLensStudio
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,17 +19,6 @@ type BrowsRaisedEvent = FaceTrackingEvent
 
 /** Triggered when eyebrows are returned to normal on the tracked face. */
 type BrowsReturnedToNormalEvent = FaceTrackingEvent
-
-/**
-  * Expression names used with FaceRenderObjectProvider.getExpressionWeightByName() and returned by FaceRenderObjectProvider.getExpressionNames().
-  * ```
-  * // @input Asset.RenderMesh faceMesh
-  * var mouthCloseWeight = script.faceMesh.control.getExpressionWeightByName(Expressions.MouthClose);
-  * ```
-  */
-type Expressions = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ E in / * template literal string: Brows${Down${Left|Right}|Up${Center|Left|Right}} * / string | 'Puff' ]: E}
-  */ typings.snapchatLensStudio.snapchatLensStudioStrings.Expressions & TopLevel[Any]
 
 /** Triggered when a new face is detected and starts being tracked. */
 type FaceFoundEvent = FaceTrackingEvent

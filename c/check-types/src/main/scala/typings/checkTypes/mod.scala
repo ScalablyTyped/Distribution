@@ -2,8 +2,7 @@ package typings.checkTypes
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.checkTypes.anon.ExtendWithAssertCheckTypeCall
+import typings.checkTypes.anon.ExtendWithAssertCheckType
 import typings.checkTypes.anon.Instantiable
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -78,7 +77,7 @@ object mod extends Shortcut {
     def assert[T](possibleFalsy: T, message: String, errorType: Instantiable): T = js.native
     def assert[T](possibleFalsy: T, message: Unit, errorType: Instantiable): T = js.native
     @JSName("assert")
-    var assert_Original: ExtendWithAssertCheckTypeCall = js.native
+    var assert_Original: ExtendWithAssertCheckType = js.native
     
     def assigned(a: Any): Boolean = js.native
     
@@ -154,14 +153,10 @@ object mod extends Shortcut {
     def map[T /* <: StringDictionary[Any] */](
       arr: T,
       predicates: Partial[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]: (args : ...any): boolean}
-      */ typings.checkTypes.checkTypesStrings.CheckType & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]: (args : ...any): boolean} */ js.Any
         ]
     ): Partial[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]: any}
-      */ typings.checkTypes.checkTypesStrings.CheckType & TopLevel[Any]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]: any} */ js.Any
       ] = js.native
     
     def `match`(a: String, b: js.RegExp): Boolean = js.native
@@ -504,9 +499,15 @@ object mod extends Shortcut {
     }
   }
   
-  type ExtendWithAssert[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K] extends (a : infer U): infer R? check-types.check-types.AssertExtended<any, any> & check-types.check-types.ExtendWithAssert<T[K]> : check-types.check-types.ExtendWithAssert<T[K]>}
-    */ typings.checkTypes.checkTypesStrings.ExtendWithAssert & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]: T[K] extends (a : infer U): infer R? check-types.check-types.AssertExtended<U, R> & check-types.check-types.ExtendWithAssert<T[K]> : check-types.check-types.ExtendWithAssert<T[K]>}
+    }}}
+    */
+  @js.native
+  trait ExtendWithAssert[T] extends StObject
   
   @js.native
   trait IterableFunction extends StObject {

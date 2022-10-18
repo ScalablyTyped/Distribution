@@ -1,7 +1,7 @@
 package typings.meteorSjobs
 
-import typings.meteorSjobs.mod.JobState
-import typings.meteorSjobs.mod.State
+import typings.meteorSjobs.meteorMsavinColonsjobsMod.JobState
+import typings.meteorSjobs.meteorMsavinColonsjobsMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

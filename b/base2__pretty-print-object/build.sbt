@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "base2__pretty-print-object"
-version := "1.0.2-4f8034"
+version := "1.0.2-2ecd49"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,9 +24,7 @@ trait Source extends StObject {
     * that file.
     */
   var fileHashes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.FileHashes}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Source & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.FileHashes} */ js.Any
   ] = js.undefined
 }
 object Source {
@@ -54,9 +51,7 @@ object Source {
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     inline def setFileHashes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.FileHashes}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Source & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.FileHashes} */ js.Any
     ): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
     
     inline def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)

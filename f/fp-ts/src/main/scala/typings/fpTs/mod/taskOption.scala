@@ -1,35 +1,32 @@
 package typings.fpTs.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.altMod.Alt1
-import typings.fpTs.alternativeMod.Alternative1
-import typings.fpTs.applicativeMod.Applicative1
-import typings.fpTs.applyMod.Apply1
-import typings.fpTs.chainMod.Chain1
-import typings.fpTs.compactableMod.Compactable1
-import typings.fpTs.eitherMod.Either_
-import typings.fpTs.filterableMod.Filterable1
-import typings.fpTs.fromEitherMod.FromEither1
-import typings.fpTs.fromIOMod.FromIO1
-import typings.fpTs.fromTaskMod.FromTask1
-import typings.fpTs.functionMod.Lazy
-import typings.fpTs.functorMod.Functor1
-import typings.fpTs.iOMod.IO_
-import typings.fpTs.monadIOMod.MonadIO1
-import typings.fpTs.monadMod.Monad1
-import typings.fpTs.monadTaskMod.MonadTask1
-import typings.fpTs.naturalTransformationMod.NaturalTransformation11
-import typings.fpTs.naturalTransformationMod.NaturalTransformation21
-import typings.fpTs.optionMod.Option_
-import typings.fpTs.pointedMod.Pointed1
-import typings.fpTs.predicateMod.Predicate
-import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
-import typings.fpTs.refinementMod.Refinement
-import typings.fpTs.separatedMod.Separated_
-import typings.fpTs.taskMod.Task_
-import typings.fpTs.taskOptionMod.TaskOption
-import typings.fpTs.taskOptionMod.URI
-import typings.fpTs.zeroMod.Zero1
+import typings.fpTs.libAltMod.Alt1
+import typings.fpTs.libAlternativeMod.Alternative1
+import typings.fpTs.libApplicativeMod.Applicative1
+import typings.fpTs.libApplyMod.Apply1
+import typings.fpTs.libChainMod.Chain1
+import typings.fpTs.libCompactableMod.Compactable1
+import typings.fpTs.libEitherMod.Either_
+import typings.fpTs.libFilterableMod.Filterable1
+import typings.fpTs.libFromEitherMod.FromEither1
+import typings.fpTs.libFromIOMod.FromIO1
+import typings.fpTs.libFromTaskMod.FromTask1
+import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctorMod.Functor1
+import typings.fpTs.libIOMod.IO_
+import typings.fpTs.libMonadIOMod.MonadIO1
+import typings.fpTs.libMonadMod.Monad1
+import typings.fpTs.libMonadTaskMod.MonadTask1
+import typings.fpTs.libOptionMod.Option_
+import typings.fpTs.libPointedMod.Pointed1
+import typings.fpTs.libPredicateMod.Predicate
+import typings.fpTs.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
+import typings.fpTs.libRefinementMod.Refinement
+import typings.fpTs.libSeparatedMod.Separated_
+import typings.fpTs.libTaskEitherMod.TaskEither_
+import typings.fpTs.libTaskMod.Task_
+import typings.fpTs.libTaskOptionMod.TaskOption
+import typings.fpTs.libZeroMod.Zero1
 import typings.std.Exclude
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -44,11 +41,11 @@ object taskOption {
   
   @JSImport("fp-ts", "taskOption.Alt")
   @js.native
-  val Alt_ : Alt1[URI] = js.native
+  val Alt_ : Alt1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.Alternative")
   @js.native
-  val Alternative: Alternative1[URI] = js.native
+  val Alternative: Alternative1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.ApT")
   @js.native
@@ -56,27 +53,27 @@ object taskOption {
   
   @JSImport("fp-ts", "taskOption.ApplicativePar")
   @js.native
-  val ApplicativePar: Applicative1[URI] = js.native
+  val ApplicativePar: Applicative1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.ApplicativeSeq")
   @js.native
-  val ApplicativeSeq: Applicative1[URI] = js.native
+  val ApplicativeSeq: Applicative1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.ApplyPar")
   @js.native
-  val ApplyPar: Apply1[URI] = js.native
+  val ApplyPar: Apply1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.ApplySeq")
   @js.native
-  val ApplySeq: Apply1[URI] = js.native
+  val ApplySeq: Apply1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.Chain")
   @js.native
-  val Chain_ : Chain1[URI] = js.native
+  val Chain_ : Chain1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.Compactable")
   @js.native
-  val Compactable: Compactable1[URI] = js.native
+  val Compactable: Compactable1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.Do")
   @js.native
@@ -84,43 +81,47 @@ object taskOption {
   
   @JSImport("fp-ts", "taskOption.Filterable")
   @js.native
-  val Filterable: Filterable1[URI] = js.native
+  val Filterable: Filterable1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.FromEither")
   @js.native
-  val FromEither_ : FromEither1[URI] = js.native
+  val FromEither_ : FromEither1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.FromIO")
   @js.native
-  val FromIO_ : FromIO1[URI] = js.native
+  val FromIO_ : FromIO1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.FromTask")
   @js.native
-  val FromTask_ : FromTask1[URI] = js.native
+  val FromTask_ : FromTask1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.Functor")
   @js.native
-  val Functor: Functor1[URI] = js.native
+  val Functor: Functor1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.Monad")
   @js.native
-  val Monad: Monad1[URI] = js.native
+  val Monad: Monad1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.MonadIO")
   @js.native
-  val MonadIO: MonadIO1[URI] = js.native
+  val MonadIO: MonadIO1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.MonadTask")
   @js.native
-  val MonadTask: MonadTask1[URI] = js.native
+  val MonadTask: MonadTask1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   @JSImport("fp-ts", "taskOption.Pointed")
   @js.native
-  val Pointed: Pointed1[URI] = js.native
+  val Pointed: Pointed1[typings.fpTs.libTaskOptionMod.URI] = js.native
+  
+  @JSImport("fp-ts", "taskOption.URI")
+  @js.native
+  val URI: /* "TaskOption" */ String = js.native
   
   @JSImport("fp-ts", "taskOption.Zero")
   @js.native
-  val Zero_ : Zero1[URI] = js.native
+  val Zero_ : Zero1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
   inline def alt[A](second: Lazy[TaskOption[A]]): js.Function1[/* first */ TaskOption[A], TaskOption[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ TaskOption[A], TaskOption[A]]]
   
@@ -133,16 +134,12 @@ object taskOption {
   inline def apS[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], fb: TaskOption[B]): js.Function1[
     /* fa */ TaskOption[A], 
     TaskOption[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apS")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ TaskOption[A], 
     TaskOption[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -151,32 +148,24 @@ object taskOption {
   inline def bind[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, TaskOption[B]]): js.Function1[
     /* ma */ TaskOption[A], 
     TaskOption[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* ma */ TaskOption[A], 
     TaskOption[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
   inline def bindTo[N /* <: String */](name: N): js.Function1[
     /* fa */ TaskOption[Any], 
     TaskOption[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindTo")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* fa */ TaskOption[Any], 
     TaskOption[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ]]
   
@@ -221,15 +210,11 @@ object taskOption {
   
   inline def foldW[B, C, A](onNone: js.Function0[Task_[B]], onSome: js.Function1[/* a */ A, Task_[C]]): js.Function1[/* ma */ TaskOption[A], Task_[B | C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldW")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ TaskOption[A], Task_[B | C]]]
   
-  @JSImport("fp-ts", "taskOption.fromEither")
-  @js.native
-  val fromEither: NaturalTransformation21[typings.fpTs.eitherMod.URI, URI] = js.native
+  inline def fromEither[A](fa: Either_[Any, A]): TaskOption[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEither")(fa.asInstanceOf[js.Any]).asInstanceOf[TaskOption[A]]
   
   inline def fromEitherK[E, A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[/* a */ A, TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskOption[B]]]
   
-  @JSImport("fp-ts", "taskOption.fromIO")
-  @js.native
-  val fromIO: NaturalTransformation11[typings.fpTs.iOMod.URI, URI] = js.native
+  inline def fromIO[A](fa: IO_[A]): TaskOption[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIO")(fa.asInstanceOf[js.Any]).asInstanceOf[TaskOption[A]]
   
   inline def fromIOK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* a */ A, TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskOption[B]]]
   
@@ -237,9 +222,7 @@ object taskOption {
   
   inline def fromNullableK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, js.UndefOr[B | Null]]): js.Function1[/* a */ A, TaskOption[NonNullable[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullableK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskOption[NonNullable[B]]]]
   
-  @JSImport("fp-ts", "taskOption.fromOption")
-  @js.native
-  val fromOption: NaturalTransformation11[typings.fpTs.optionMod.URI, URI] = js.native
+  inline def fromOption[A](fa: Option_[A]): TaskOption[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(fa.asInstanceOf[js.Any]).asInstanceOf[TaskOption[A]]
   
   inline def fromOptionK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* a */ A, TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptionK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskOption[B]]]
   
@@ -247,13 +230,9 @@ object taskOption {
   
   inline def fromPredicate_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* a */ A, TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskOption[B]]]
   
-  @JSImport("fp-ts", "taskOption.fromTask")
-  @js.native
-  val fromTask: NaturalTransformation11[typings.fpTs.taskMod.URI, URI] = js.native
+  inline def fromTask[A](fa: Task_[A]): TaskOption[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTask")(fa.asInstanceOf[js.Any]).asInstanceOf[TaskOption[A]]
   
-  @JSImport("fp-ts", "taskOption.fromTaskEither")
-  @js.native
-  val fromTaskEither: NaturalTransformation21[typings.fpTs.taskEitherMod.URI, URI] = js.native
+  inline def fromTaskEither[A](fa: TaskEither_[Any, A]): TaskOption[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTaskEither")(fa.asInstanceOf[js.Any]).asInstanceOf[TaskOption[A]]
   
   inline def fromTaskK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, Task_[B]]): js.Function1[/* a */ A, TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTaskK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskOption[B]]]
   
@@ -262,6 +241,18 @@ object taskOption {
   inline def getOrElseW[B](onNone: Lazy[Task_[B]]): js.Function1[/* ma */ TaskOption[Any], Task_[Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElseW")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskOption[Any], Task_[Any | B]]]
   
   inline def guard(b: Boolean): TaskOption[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("guard")(b.asInstanceOf[js.Any]).asInstanceOf[TaskOption[Unit]]
+  
+  inline def let[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, B]): js.Function1[
+    /* fa */ TaskOption[A], 
+    TaskOption[
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("let")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* fa */ TaskOption[A], 
+    TaskOption[
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ]]
   
   inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ TaskOption[A], TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskOption[A], TaskOption[B]]]
   
@@ -277,12 +268,7 @@ object taskOption {
   @js.native
   val none: TaskOption[scala.Nothing] = js.native
   
-  @JSImport("fp-ts", "taskOption.of")
-  @js.native
-  val of: js.Function1[
-    /* a */ Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
-  ] = js.native
+  inline def of[A](a: A): TaskOption[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any]).asInstanceOf[TaskOption[A]]
   
   inline def partition[A](predicate: Predicate[A]): js.Function1[/* fb */ TaskOption[A], Separated_[TaskOption[A], TaskOption[A]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ TaskOption[A], Separated_[TaskOption[A], TaskOption[A]]]]
   
@@ -326,12 +312,9 @@ object taskOption {
   
   inline def tryCatchK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, js.Promise[B]]): js.Function1[/* a */ A, TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCatchK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskOption[B]]]
   
-  @JSImport("fp-ts", "taskOption.zero")
-  @js.native
-  val zero: js.Function0[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
-  ] = js.native
+  inline def zero[A](): TaskOption[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[TaskOption[A]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native

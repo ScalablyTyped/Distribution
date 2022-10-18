@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "StepBlock")
 @js.native
 open class StepBlock protected ()
-  extends typings.babylonjs.legacyMod.StepBlock {
+  extends typings.babylonjs.legacyLegacyMod.StepBlock {
   /**
     * Creates a new StepBlock
     * @param name defines the block name

@@ -1,7 +1,7 @@
 package typings.reactNativeElements
 
-import typings.reactNativeElements.iconMod._IconType
-import typings.reactNativeElements.socialIconMod.SocialMediaType
+import typings.reactNativeElements.distIconsIconMod._IconType
+import typings.reactNativeElements.distSocialSocialIconMod.SocialMediaType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,10 +27,6 @@ object reactNativeElementsStrings {
   @js.native
   sealed trait ModalComponent extends StObject
   inline def ModalComponent: ModalComponent = "ModalComponent".asInstanceOf[ModalComponent]
-  
-  @js.native
-  sealed trait RecursivePartial extends StObject
-  inline def RecursivePartial: RecursivePartial = "RecursivePartial".asInstanceOf[RecursivePartial]
   
   @js.native
   sealed trait TouchableComponent extends StObject

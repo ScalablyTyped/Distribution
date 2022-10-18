@@ -27,10 +27,10 @@ object pluginIsBetweenMod extends Shortcut {
     trait Dayjs extends StObject {
       
       def isBetween(a: ConfigType, b: ConfigType): Boolean = js.native
-      def isBetween(a: ConfigType, b: ConfigType, c: Null, d: String | `[]`): Boolean = js.native
-      def isBetween(a: ConfigType, b: ConfigType, c: Unit, d: String | `[]`): Boolean = js.native
+      def isBetween(a: ConfigType, b: ConfigType, c: Null, d: (/* () */ String) | `[]`): Boolean = js.native
+      def isBetween(a: ConfigType, b: ConfigType, c: Unit, d: (/* () */ String) | `[]`): Boolean = js.native
       def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType): Boolean = js.native
-      def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: String | `[]`): Boolean = js.native
+      def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: (/* () */ String) | `[]`): Boolean = js.native
     }
   }
 }

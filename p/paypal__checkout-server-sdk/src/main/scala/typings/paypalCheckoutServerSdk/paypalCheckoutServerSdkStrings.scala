@@ -1,8 +1,8 @@
 package typings.paypalCheckoutServerSdk
 
-import typings.paypalCheckoutServerSdk.ordersLibMod.CheckoutPaymentIntent
-import typings.paypalCheckoutServerSdk.ordersLibMod.ShippingPreference
-import typings.paypalCheckoutServerSdk.ordersLibMod.UserAction
+import typings.paypalCheckoutServerSdk.libOrdersLibMod.CheckoutPaymentIntent
+import typings.paypalCheckoutServerSdk.libOrdersLibMod.ShippingPreference
+import typings.paypalCheckoutServerSdk.libOrdersLibMod.UserAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

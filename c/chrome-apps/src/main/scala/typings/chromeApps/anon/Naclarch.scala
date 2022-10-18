@@ -5,12 +5,6 @@ import typings.chromeApps.chromeAppsStrings.MIPS
 import typings.chromeApps.chromeAppsStrings.MIPS64
 import typings.chromeApps.chromeAppsStrings.X86_32
 import typings.chromeApps.chromeAppsStrings.X86_64
-import typings.chromeApps.chromeAppsStrings.`x86-32`
-import typings.chromeApps.chromeAppsStrings.`x86-64`
-import typings.chromeApps.chromeAppsStrings.arm_
-import typings.chromeApps.chromeAppsStrings.mips64_
-import typings.chromeApps.chromeAppsStrings.mips_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,10 +14,7 @@ trait Naclarch extends StObject {
   var nacl_arch: ToStringLiteral[
     ARM, 
     /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-    Exclude[
-      /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-      mips64_ | arm_ | `x86-64` | `x86-32` | mips_
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} extends keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} ? std.Exclude<keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'}, 'mips64' | 'arm' | 'x86-64' | 'x86-32' | 'mips'> : never */ js.Any
   ]
   
   var sub_package_path: String
@@ -34,10 +25,7 @@ object Naclarch {
     nacl_arch: ToStringLiteral[
       ARM, 
       /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-      Exclude[
-        /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-        mips64_ | arm_ | `x86-64` | `x86-32` | mips_
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} extends keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} ? std.Exclude<keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'}, 'mips64' | 'arm' | 'x86-64' | 'x86-32' | 'mips'> : never */ js.Any
     ],
     sub_package_path: String
   ): Naclarch = {
@@ -51,10 +39,7 @@ object Naclarch {
       value: ToStringLiteral[
           ARM, 
           /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-          Exclude[
-            /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
-            mips64_ | arm_ | `x86-64` | `x86-32` | mips_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} extends keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'} ? std.Exclude<keyof {  ARM :'arm',   X86_32 :'x86-32',   X86_64 :'x86-64',   MIPS :'mips',   MIPS64 :'mips64'}, 'mips64' | 'arm' | 'x86-64' | 'x86-32' | 'mips'> : never */ js.Any
         ]
     ): Self = StObject.set(x, "nacl_arch", value.asInstanceOf[js.Any])
     

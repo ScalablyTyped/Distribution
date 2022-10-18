@@ -1,5 +1,6 @@
 package typings.node
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.eventsMod.Abortable
@@ -894,12 +895,7 @@ object dgramMod {
         js.Function3[
           /* hostname */ String, 
           /* options */ LookupOneOptions, 
-          /* callback */ js.Function3[
-            /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-            /* address */ String, 
-            /* family */ Double, 
-            Unit
-          ], 
+          /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -927,12 +923,7 @@ object dgramMod {
       inline def setIpv6OnlyUndefined: Self = StObject.set(x, "ipv6Only", js.undefined)
       
       inline def setLookup(
-        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-              /* address */ String, 
-              /* family */ Double, 
-              Unit
-            ]) => Unit
+        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
       ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
       
       inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)

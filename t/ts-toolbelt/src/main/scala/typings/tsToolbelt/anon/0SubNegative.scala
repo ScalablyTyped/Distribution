@@ -1,8 +1,8 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.iterationMod.Iteration
-import typings.tsToolbelt.nextMod.Next
-import typings.tsToolbelt.subMod._SubNegative
+import typings.tsToolbelt.outIterationIterationMod.Iteration
+import typings.tsToolbelt.outIterationNextMod.Next
+import typings.tsToolbelt.outNumberSubMod._SubNegative
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

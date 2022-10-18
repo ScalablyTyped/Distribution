@@ -1,15 +1,14 @@
 package typings.serverlessJestPlugin
 
-import org.scalablytyped.runtime.TopLevel
 import typings.awsLambda.handlerMod.Callback
 import typings.lambdaWrapper.anon.Handler
 import typings.lambdaWrapper.anon.LambdaFunction
 import typings.lambdaWrapper.anon.PartialContext
 import typings.lambdaWrapper.mod.Wrapped
+import typings.serverless.classesPluginMod.Commands
+import typings.serverless.classesPluginMod.Hooks
+import typings.serverless.classesPluginMod.Plugin
 import typings.serverless.mod.Options
-import typings.serverless.pluginMod.Commands
-import typings.serverless.pluginMod.Hooks
-import typings.serverless.pluginMod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,14 +49,10 @@ object mod {
     inline def wrap(mod: LambdaFunction): Wrapped[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(mod.asInstanceOf[js.Any]).asInstanceOf[Wrapped[Any, Any]]
     inline def wrap(mod: LambdaFunction, options: js.Object): Wrapped[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(mod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapped[Any, Any]]
     inline def wrap[TEvent, TResult, THandlerName /* <: String */](
-      mod: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>}
-      */ typings.serverlessJestPlugin.serverlessJestPluginStrings.wrap & TopLevel[Any]
+      mod: /* import warning: importer.ImportType#apply Failed type conversion: {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>} */ js.Any
     ): Wrapped[TEvent, TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(mod.asInstanceOf[js.Any]).asInstanceOf[Wrapped[TEvent, TResult]]
     inline def wrap[TEvent, TResult, THandlerName /* <: String */](
-      mod: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>}
-      */ typings.serverlessJestPlugin.serverlessJestPluginStrings.wrap & TopLevel[Any],
+      mod: /* import warning: importer.ImportType#apply Failed type conversion: {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>} */ js.Any,
       options: Handler[THandlerName]
     ): Wrapped[TEvent, TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(mod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapped[TEvent, TResult]]
   }

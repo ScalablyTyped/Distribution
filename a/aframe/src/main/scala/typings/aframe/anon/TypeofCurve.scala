@@ -2,7 +2,7 @@ package typings.aframe.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.three.mod.Curve
-import typings.three.vector2Mod.Vector
+import typings.three.srcMathVector2Mod.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

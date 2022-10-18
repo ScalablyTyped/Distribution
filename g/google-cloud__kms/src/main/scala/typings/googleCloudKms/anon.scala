@@ -3,7 +3,7 @@ package typings.googleCloudKms
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudKms.mod.v1.CryptoKeyVersion
 import typings.googleCloudKms.mod.v1.CryptoKeyVersionTemplate
-import typings.googleProtobuf.timestampPbMod.Timestamp.AsObject
+import typings.googleProtobuf.googleProtobufTimestampPbMod.Timestamp.AsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

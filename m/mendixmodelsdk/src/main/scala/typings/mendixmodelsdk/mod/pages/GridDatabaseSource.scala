@@ -1,13 +1,13 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.WidgetValue
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.GridDatabaseSource")
 @js.native
 open class GridDatabaseSource protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.GridDatabaseSource {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.GridDatabaseSource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,7 +37,7 @@ object GridDatabaseSource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.GridDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridDatabaseSource]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.GridDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GridDatabaseSource]
   
   /**
     * Creates and returns a new GridDatabaseSource instance in the SDK and on the server.
@@ -48,7 +48,7 @@ object GridDatabaseSource {
     *  6.0.0 to 8.2.0
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.EntityWidget): typings.mendixmodelsdk.pagesMod.pages.GridDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridDatabaseSource]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenPagesMod.pages.EntityWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.GridDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GridDatabaseSource]
   
   /**
     * Creates and returns a new GridDatabaseSource instance in the SDK and on the server.
@@ -56,7 +56,7 @@ object GridDatabaseSource {
     * of the parent EntityWidget element passed as argument.
     */
   /* static member */
-  inline def createInEntityWidgetUnderDataSource(container: typings.mendixmodelsdk.pagesMod.pages.EntityWidget): typings.mendixmodelsdk.pagesMod.pages.GridDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridDatabaseSource]
+  inline def createInEntityWidgetUnderDataSource(container: typings.mendixmodelsdk.srcGenPagesMod.pages.EntityWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.GridDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GridDatabaseSource]
   
   /**
     * Creates and returns a new GridDatabaseSource instance in the SDK and on the server.
@@ -67,7 +67,7 @@ object GridDatabaseSource {
     *  8.3.0 and higher
     */
   /* static member */
-  inline def createInWidgetValueUnderDataSource(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.GridDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridDatabaseSource]
+  inline def createInWidgetValueUnderDataSource(container: WidgetValue): typings.mendixmodelsdk.srcGenPagesMod.pages.GridDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.GridDatabaseSource]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.GridDatabaseSource.structureTypeName")

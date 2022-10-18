@@ -1,8 +1,8 @@
 package typings.redisClient.anon
 
-import typings.redisClient.genericTransformersMod.ZMember
-import typings.redisClient.libCommandsMod.RedisCommandArgument
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsGenericTransformersMod.ZMember
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

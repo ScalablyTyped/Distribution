@@ -270,9 +270,9 @@ object Streams {
   }
   
   /** Loads data from an input stream. */
-  @JSGlobal("Windows.Storage.Streams.DataReaderLoadOperation")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Streams.DataReaderLoadOperation")
   @js.native
-  abstract class DataReaderLoadOperation ()
+  open class DataReaderLoadOperation ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.DataReaderLoadOperation {
     
@@ -327,9 +327,9 @@ object Streams {
   }
   
   /** Commits data in a buffer to a backing store. */
-  @JSGlobal("Windows.Storage.Streams.DataWriterStoreOperation")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Streams.DataWriterStoreOperation")
   @js.native
-  abstract class DataWriterStoreOperation ()
+  open class DataWriterStoreOperation ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.DataWriterStoreOperation {
     
@@ -370,9 +370,9 @@ object Streams {
   }
   
   /** Reads data from a file. */
-  @JSGlobal("Windows.Storage.Streams.FileInputStream")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Streams.FileInputStream")
   @js.native
-  abstract class FileInputStream ()
+  open class FileInputStream ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.FileInputStream {
     
@@ -392,9 +392,9 @@ object Streams {
   }
   
   /** Writes data to a file. */
-  @JSGlobal("Windows.Storage.Streams.FileOutputStream")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Streams.FileOutputStream")
   @js.native
-  abstract class FileOutputStream ()
+  open class FileOutputStream ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.FileOutputStream {
     
@@ -419,9 +419,9 @@ object Streams {
   }
   
   /** Supports reading and writing to a file at a specified position. */
-  @JSGlobal("Windows.Storage.Streams.FileRandomAccessStream")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Streams.FileRandomAccessStream")
   @js.native
-  abstract class FileRandomAccessStream ()
+  open class FileRandomAccessStream ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.FileRandomAccessStream {
     
@@ -601,9 +601,9 @@ object Streams {
   }
   
   /** Provides a Windows Runtime input stream for an IStream base implementation. */
-  @JSGlobal("Windows.Storage.Streams.InputStreamOverStream")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Streams.InputStreamOverStream")
   @js.native
-  abstract class InputStreamOverStream ()
+  open class InputStreamOverStream ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.InputStreamOverStream {
     
@@ -623,9 +623,9 @@ object Streams {
   }
   
   /** Provides a Windows Runtime output stream for an IStream base implementation. */
-  @JSGlobal("Windows.Storage.Streams.OutputStreamOverStream")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Streams.OutputStreamOverStream")
   @js.native
-  abstract class OutputStreamOverStream ()
+  open class OutputStreamOverStream ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.OutputStreamOverStream {
     
@@ -650,9 +650,9 @@ object Streams {
   }
   
   /** Provides random access of data in input and output streams. */
-  @JSGlobal("Windows.Storage.Streams.RandomAccessStream")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Streams.RandomAccessStream")
   @js.native
-  abstract class RandomAccessStream ()
+  open class RandomAccessStream ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.RandomAccessStream
   object RandomAccessStream {
@@ -690,9 +690,9 @@ object Streams {
   }
   
   /** Provides a Windows Runtime random access stream for an IStream base implementation. */
-  @JSGlobal("Windows.Storage.Streams.RandomAccessStreamOverStream")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Streams.RandomAccessStreamOverStream")
   @js.native
-  abstract class RandomAccessStreamOverStream ()
+  open class RandomAccessStreamOverStream ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamOverStream {
     
@@ -773,9 +773,9 @@ object Streams {
   }
   
   /** Provides random access of data in input and output streams for a file. */
-  @JSGlobal("Windows.Storage.Streams.RandomAccessStreamReference")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Streams.RandomAccessStreamReference")
   @js.native
-  abstract class RandomAccessStreamReference ()
+  open class RandomAccessStreamReference ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference {
     

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "CreateEvent")
 @js.native
 open class CreateEvent protected ()
-  extends typings.matrixBotSdk.createEventMod.CreateEvent {
+  extends typings.matrixBotSdk.libModelsEventsCreateEventMod.CreateEvent {
   def this(event: Any) = this()
 }

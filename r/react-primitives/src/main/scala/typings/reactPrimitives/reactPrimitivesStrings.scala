@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactPrimitivesStrings {
   
   @js.native
-  sealed trait PlatformStatic extends StObject
-  inline def PlatformStatic: PlatformStatic = "PlatformStatic".asInstanceOf[PlatformStatic]
-  
-  @js.native
   sealed trait disk extends StObject
   inline def disk: disk = "disk".asInstanceOf[disk]
   

@@ -17,7 +17,7 @@ open class RecastJSCrowd protected ()
     * @returns the crowd you can add agents to
     */
   def this(
-    plugin: typings.babylonjs.recastJSPluginMod.RecastJSPlugin,
+    plugin: typings.babylonjs.navigationPluginsRecastJSPluginMod.RecastJSPlugin,
     maxAgents: Double,
     maxAgentRadius: Double,
     scene: typings.babylonjs.sceneMod.Scene

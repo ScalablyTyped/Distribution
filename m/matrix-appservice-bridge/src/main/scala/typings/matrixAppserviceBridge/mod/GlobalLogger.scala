@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "GlobalLogger")
 @js.native
 open class GlobalLogger ()
-  extends typings.matrixAppserviceBridge.loggingMod.GlobalLogger
+  extends typings.matrixAppserviceBridge.libComponentsLoggingMod.GlobalLogger

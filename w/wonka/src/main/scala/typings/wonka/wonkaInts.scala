@@ -1,7 +1,7 @@
 package typings.wonka
 
-import typings.wonka.typesMod.SignalKind
-import typings.wonka.typesMod.TalkbackKind
+import typings.wonka.distTypesTypesMod.SignalKind
+import typings.wonka.distTypesTypesMod.TalkbackKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

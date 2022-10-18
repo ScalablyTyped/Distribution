@@ -30,7 +30,7 @@ import typings.adhan.adhanStrings.shafi
 import typings.adhan.adhanStrings.sunrise
 import typings.adhan.adhanStrings.twilightangle
 import typings.adhan.adhanStrings.up
-import typings.adhan.calculationParametersMod.default
+import typings.adhan.libTypesCalculationParametersMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -192,7 +192,7 @@ object mod {
   @JSImport("adhan", "Coordinates")
   @js.native
   open class Coordinates protected ()
-    extends typings.adhan.coordinatesMod.default {
+    extends typings.adhan.libTypesCoordinatesMod.default {
     def this(latitude: Double, longitude: Double) = this()
   }
   
@@ -214,7 +214,7 @@ object mod {
     @js.native
     val TwilightAngle: twilightangle = js.native
     
-    inline def recommended(coordinates: typings.adhan.coordinatesMod.default): middleofthenight | seventhofthenight = ^.asInstanceOf[js.Dynamic].applyDynamic("recommended")(coordinates.asInstanceOf[js.Any]).asInstanceOf[middleofthenight | seventhofthenight]
+    inline def recommended(coordinates: typings.adhan.libTypesCoordinatesMod.default): middleofthenight | seventhofthenight = ^.asInstanceOf[js.Dynamic].applyDynamic("recommended")(coordinates.asInstanceOf[js.Any]).asInstanceOf[middleofthenight | seventhofthenight]
   }
   
   object Madhab {
@@ -277,11 +277,15 @@ object mod {
   @JSImport("adhan", "PrayerTimes")
   @js.native
   open class PrayerTimes protected ()
-    extends typings.adhan.prayerTimesMod.default {
-    def this(coordinates: typings.adhan.coordinatesMod.default, date: js.Date, calculationParameters: default) = this()
+    extends typings.adhan.libTypesPrayerTimesMod.default {
+    def this(
+      coordinates: typings.adhan.libTypesCoordinatesMod.default,
+      date: js.Date,
+      calculationParameters: default
+    ) = this()
   }
   
-  inline def Qibla(coordinates: typings.adhan.coordinatesMod.default): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Qibla")(coordinates.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def Qibla(coordinates: typings.adhan.libTypesCoordinatesMod.default): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Qibla")(coordinates.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   object Rounding {
     
@@ -316,7 +320,7 @@ object mod {
   @JSImport("adhan", "SunnahTimes")
   @js.native
   open class SunnahTimes protected ()
-    extends typings.adhan.sunnahTimesMod.default {
-    def this(prayerTimes: typings.adhan.prayerTimesMod.default) = this()
+    extends typings.adhan.libTypesSunnahTimesMod.default {
+    def this(prayerTimes: typings.adhan.libTypesPrayerTimesMod.default) = this()
   }
 }

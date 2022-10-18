@@ -203,9 +203,9 @@ object mod extends Shortcut {
     
     def toEuler(): Pitch = js.native
     
-    def toMatrix[T /* <: Boolean */](twoD: T): Matrix3 | Matrix32D = js.native
+    def toMatrix[T /* <: Boolean */](twoD: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? quaternion.quaternion.Matrix3_2D : quaternion.quaternion.Matrix3 */ js.Any = js.native
     
-    def toMatrix4[T /* <: Boolean */](twoD: T): Matrix4 | Matrix42D = js.native
+    def toMatrix4[T /* <: Boolean */](twoD: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? quaternion.quaternion.Matrix4_2D : quaternion.quaternion.Matrix4 */ js.Any = js.native
     
     def toVector(): js.Tuple4[Double, Double, Double, Double] = js.native
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__dragdrop
 
-Typings are for version 1.14.1
+Typings are for version 1.14.2
 
 ## Library description:
 Lumino Drag and Drop

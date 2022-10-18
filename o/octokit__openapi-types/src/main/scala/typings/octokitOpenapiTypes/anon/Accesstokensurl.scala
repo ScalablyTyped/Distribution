@@ -15,7 +15,7 @@ trait Accesstokensurl extends StObject {
     */
   var access_tokens_url: String
   
-  var account: (Partial[Avatarurl] & Partial[Htmlurl]) | Null
+  var account: (Partial[Avatarurl] & Partial[Createdat]) | Null
   
   /** @example 1 */
   var app_id: Double
@@ -46,7 +46,7 @@ trait Accesstokensurl extends StObject {
     */
   var id: Double
   
-  var permissions: Administration
+  var permissions: Actions
   
   /**
     * Format: uri
@@ -95,7 +95,7 @@ object Accesstokensurl {
     events: js.Array[String],
     html_url: String,
     id: Double,
-    permissions: Administration,
+    permissions: Actions,
     repositories_url: String,
     repository_selection: all | selected,
     target_id: Double,
@@ -110,7 +110,7 @@ object Accesstokensurl {
     
     inline def setAccess_tokens_url(value: String): Self = StObject.set(x, "access_tokens_url", value.asInstanceOf[js.Any])
     
-    inline def setAccount(value: Partial[Avatarurl] & Partial[Htmlurl]): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: Partial[Avatarurl] & Partial[Createdat]): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
     inline def setAccountNull: Self = StObject.set(x, "account", null)
     
@@ -138,7 +138,7 @@ object Accesstokensurl {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setPermissions(value: Administration): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Actions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setRepositories_url(value: String): Self = StObject.set(x, "repositories_url", value.asInstanceOf[js.Any])
     

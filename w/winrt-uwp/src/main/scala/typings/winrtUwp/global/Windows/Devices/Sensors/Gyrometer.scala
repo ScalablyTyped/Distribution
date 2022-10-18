@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a gyrometer sensor. */
-@JSGlobal("Windows.Devices.Sensors.Gyrometer")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.Gyrometer")
 @js.native
-abstract class Gyrometer ()
+open class Gyrometer ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.Gyrometer
 object Gyrometer {

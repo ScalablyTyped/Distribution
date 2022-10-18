@@ -1,12 +1,12 @@
 package typings.blueprintjsIcons
 
-import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
-import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Key
-import typings.blueprintjsIcons.blueprintIcons20Mod.BlueprintIcons20Id
-import typings.blueprintjsIcons.blueprintIcons20Mod.BlueprintIcons20Key
-import typings.blueprintjsIcons.sourceUtilitiesMod.StringDigit
-import typings.blueprintjsIcons.sourceUtilitiesMod.UpperCaseCharacters
-import typings.blueprintjsIcons.sourceUtilitiesMod.WordSeparators
+import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Key
+import typings.blueprintjsIcons.libEsmGenerated20pxBlueprintIcons20Mod.BlueprintIcons20Id
+import typings.blueprintjsIcons.libEsmGenerated20pxBlueprintIcons20Mod.BlueprintIcons20Key
+import typings.blueprintjsIcons.libEsmTypeUtilsSourceUtilitiesMod.StringDigit
+import typings.blueprintjsIcons.libEsmTypeUtilsSourceUtilitiesMod.UpperCaseCharacters
+import typings.blueprintjsIcons.libEsmTypeUtilsSourceUtilitiesMod.WordSeparators
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -224,6 +224,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Key
        with BlueprintIcons20Key
   inline def AlignmentVerticalCenter: AlignmentVerticalCenter = "AlignmentVerticalCenter".asInstanceOf[AlignmentVerticalCenter]
+  
+  @js.native
+  sealed trait Anchor
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def Anchor: Anchor = "Anchor".asInstanceOf[Anchor]
   
   @js.native
   sealed trait Annotation
@@ -3023,6 +3030,13 @@ object blueprintjsIconsStrings {
   inline def Refresh: Refresh = "Refresh".asInstanceOf[Refresh]
   
   @js.native
+  sealed trait Regex
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def Regex: Regex = "Regex".asInstanceOf[Regex]
+  
+  @js.native
   sealed trait RegressionChart
     extends StObject
        with BlueprintIcons16Key
@@ -4148,10 +4162,6 @@ object blueprintjsIconsStrings {
   inline def ZoomToFit: ZoomToFit = "ZoomToFit".asInstanceOf[ZoomToFit]
   
   @js.native
-  sealed trait _empty extends StObject
-  inline def _empty: _empty = "".asInstanceOf[_empty]
-  
-  @js.native
   sealed trait _underscore
     extends StObject
        with WordSeparators
@@ -4296,6 +4306,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Id
        with BlueprintIcons20Id
   inline def `alignment-vertical-center`: `alignment-vertical-center` = "alignment-vertical-center".asInstanceOf[`alignment-vertical-center`]
+  
+  @js.native
+  sealed trait anchor_
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def anchor_ : anchor_ = "anchor".asInstanceOf[anchor_]
   
   @js.native
   sealed trait annotation_
@@ -6991,6 +7008,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Id
        with BlueprintIcons20Id
   inline def refresh_ : refresh_ = "refresh".asInstanceOf[refresh_]
+  
+  @js.native
+  sealed trait regex_
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def regex_ : regex_ = "regex".asInstanceOf[regex_]
   
   @js.native
   sealed trait `regression-chart`

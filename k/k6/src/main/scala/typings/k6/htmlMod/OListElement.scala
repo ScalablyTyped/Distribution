@@ -4,6 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "OListElement")
+/* note: abstract class */ @JSImport("k6/html", "OListElement")
 @js.native
-abstract class OListElement () extends Element
+open class OListElement () extends Element

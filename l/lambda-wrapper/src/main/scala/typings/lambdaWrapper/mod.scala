@@ -1,6 +1,5 @@
 package typings.lambdaWrapper
 
-import org.scalablytyped.runtime.TopLevel
 import typings.awsLambda.handlerMod.Callback
 import typings.lambdaWrapper.anon.Handler
 import typings.lambdaWrapper.anon.LambdaFunction
@@ -23,14 +22,10 @@ object mod {
   inline def wrap(mod: LambdaFunction): Wrapped[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(mod.asInstanceOf[js.Any]).asInstanceOf[Wrapped[Any, Any]]
   inline def wrap(mod: LambdaFunction, options: js.Object): Wrapped[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(mod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapped[Any, Any]]
   inline def wrap[TEvent, TResult, THandlerName /* <: String */](
-    mod: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>}
-    */ typings.lambdaWrapper.lambdaWrapperStrings.wrap & TopLevel[Any]
+    mod: /* import warning: importer.ImportType#apply Failed type conversion: {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>} */ js.Any
   ): Wrapped[TEvent, TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(mod.asInstanceOf[js.Any]).asInstanceOf[Wrapped[TEvent, TResult]]
   inline def wrap[TEvent, TResult, THandlerName /* <: String */](
-    mod: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>}
-    */ typings.lambdaWrapper.lambdaWrapperStrings.wrap & TopLevel[Any],
+    mod: /* import warning: importer.ImportType#apply Failed type conversion: {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>} */ js.Any,
     options: Handler[THandlerName]
   ): Wrapped[TEvent, TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(mod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapped[TEvent, TResult]]
   

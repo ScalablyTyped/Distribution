@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsRocketFilledMod.RocketFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rocketFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/RocketFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/RocketFilled", JSImport.Default)
   @js.native
   val default: RocketFilledIconType = js.native
-  
-  @js.native
-  trait RocketFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_RocketFilledIconType: String = js.native
-  }
   
   type _To = RocketFilledIconType
   

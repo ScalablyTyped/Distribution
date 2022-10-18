@@ -2,9 +2,9 @@ package typings.rcMentions
 
 import typings.rcMentions.anon.PartialMentionsPropsRefAt
 import typings.rcMentions.anon.WeakValidationMapMentions
-import typings.rcMentions.mentionsMod.MentionsProps
-import typings.rcMentions.mentionsMod.MentionsRef
-import typings.rcMentions.optionMod.OptionProps
+import typings.rcMentions.esMentionsMod.MentionsProps
+import typings.rcMentions.esMentionsMod.MentionsRef
+import typings.rcMentions.esOptionMod.OptionProps
 import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes

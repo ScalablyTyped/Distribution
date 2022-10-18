@@ -1,7 +1,7 @@
 package typings.dwt.anon
 
 import typings.dwt.dwtBooleans.`false`
-import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTImageType
+import typings.dwt.dynamsoftDotEnumMod.DynamsoftEnums.EnumDWTImageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

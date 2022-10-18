@@ -2,6 +2,8 @@ package typings.postcssLess
 
 import typings.postcss.anon.PickProcessOptionsmapfrom
 import typings.postcss.anon.ToString
+import typings.postcss.libNodeMod.AnyNode
+import typings.postcss.libRootMod.default
 import typings.postcss.mod.AtRule_
 import typings.postcss.mod.Builder
 import typings.postcss.mod.Comment_
@@ -10,8 +12,6 @@ import typings.postcss.mod.Parser
 import typings.postcss.mod.Root_
 import typings.postcss.mod.Rule_
 import typings.postcss.mod.Stringifier
-import typings.postcss.nodeMod.AnyNode
-import typings.postcss.rootMod.default
 import typings.postcssLess.postcssLessBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,12 +31,12 @@ object mod {
     */
   @JSImport("postcss-less", "parse")
   @js.native
-  def parse: js.UndefOr[Parser[Root_ | default | typings.postcss.documentMod.default]] = js.native
+  def parse: js.UndefOr[Parser[Root_ | default | typings.postcss.libDocumentMod.default]] = js.native
   inline def parse(css: String): Root_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(css.asInstanceOf[js.Any]).asInstanceOf[Root_]
   inline def parse(css: String, opts: PickProcessOptionsmapfrom): Root_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(css.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Root_]
   inline def parse(css: ToString): Root_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(css.asInstanceOf[js.Any]).asInstanceOf[Root_]
   inline def parse(css: ToString, opts: PickProcessOptionsmapfrom): Root_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(css.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Root_]
-  inline def parse_=(x: js.UndefOr[Parser[Root_ | default | typings.postcss.documentMod.default]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
+  inline def parse_=(x: js.UndefOr[Parser[Root_ | default | typings.postcss.libDocumentMod.default]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
   
   /**
     * Class to generate string by AST.

@@ -1,13 +1,13 @@
 package typings.reactBulmaComponents.anon
 
 import typings.react.mod.ReactElement
-import typings.reactBulmaComponents.componentsMod.BulmaComponent
-import typings.reactBulmaComponents.componentsMod.ElementProps
-import typings.reactBulmaComponents.modalMod.ModalCardHeaderProps
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.footer
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.header
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.p
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.section
+import typings.reactBulmaComponents.srcComponentsMod.BulmaComponent
+import typings.reactBulmaComponents.srcComponentsMod.ElementProps
+import typings.reactBulmaComponents.srcComponentsModalMod.ModalCardHeaderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

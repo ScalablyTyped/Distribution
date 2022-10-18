@@ -2,15 +2,15 @@ package typings.ol
 
 import org.scalablytyped.runtime.Instantiable6
 import typings.ol.extentMod.Extent
-import typings.ol.olFeatureMod.FeatureLike
-import typings.ol.olTileMod.LoadFunction
-import typings.ol.olTileMod.Tile
-import typings.ol.olTileMod.UrlFunction
+import typings.ol.featureMod.FeatureLike
 import typings.ol.pluggableMapMod.FrameState
 import typings.ol.projMod.ProjectionLike
 import typings.ol.sizeMod.Size
 import typings.ol.sourceSourceMod.AttributionLike
-import typings.ol.stateMod.State
+import typings.ol.sourceStateMod.State
+import typings.ol.tileMod.LoadFunction
+import typings.ol.tileMod.Tile
+import typings.ol.tileMod.UrlFunction
 import typings.ol.tileStateMod.TileState
 import typings.ol.tilecoordMod.TileCoord
 import org.scalablytyped.runtime.StObject
@@ -29,7 +29,7 @@ object sourceVectorTileMod {
     def this(options: Options) = this()
   }
   
-  inline def defaultLoadFunction(tile: typings.ol.olVectorTileMod.default, url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLoadFunction")(tile.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defaultLoadFunction(tile: typings.ol.vectorTileMod.default, url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLoadFunction")(tile.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -41,7 +41,7 @@ object sourceVectorTileMod {
     
     var extent: js.UndefOr[Extent] = js.undefined
     
-    var format: js.UndefOr[typings.ol.featureMod.default] = js.undefined
+    var format: js.UndefOr[typings.ol.formatFeatureMod.default] = js.undefined
     
     var maxResolution: js.UndefOr[Double] = js.undefined
     
@@ -60,10 +60,10 @@ object sourceVectorTileMod {
           /* tileCoord */ TileCoord, 
           /* state */ TileState, 
           /* src */ String, 
-          /* format */ typings.ol.featureMod.default, 
+          /* format */ typings.ol.formatFeatureMod.default, 
           /* tileLoadFunction */ LoadFunction, 
-          /* opt_options */ js.UndefOr[typings.ol.olTileMod.Options], 
-          typings.ol.olVectorTileMod.default
+          /* opt_options */ js.UndefOr[typings.ol.tileMod.Options], 
+          typings.ol.vectorTileMod.default
         ]
       ] = js.undefined
     
@@ -114,7 +114,7 @@ object sourceVectorTileMod {
       
       inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      inline def setFormat(value: typings.ol.featureMod.default): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: typings.ol.formatFeatureMod.default): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
@@ -147,10 +147,10 @@ object sourceVectorTileMod {
               /* tileCoord */ TileCoord, 
               /* state */ TileState, 
               /* src */ String, 
-              /* format */ typings.ol.featureMod.default, 
+              /* format */ typings.ol.formatFeatureMod.default, 
               /* tileLoadFunction */ LoadFunction, 
-              /* opt_options */ js.UndefOr[typings.ol.olTileMod.Options], 
-              typings.ol.olVectorTileMod.default
+              /* opt_options */ js.UndefOr[typings.ol.tileMod.Options], 
+              typings.ol.vectorTileMod.default
             ]
       ): Self = StObject.set(x, "tileClass", value.asInstanceOf[js.Any])
       
@@ -169,7 +169,7 @@ object sourceVectorTileMod {
       inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
       
       inline def setTileUrlFunction(
-        value: (/* p0 */ TileCoord, /* p1 */ Double, /* p2 */ typings.ol.projectionMod.default) => js.UndefOr[String]
+        value: (/* p0 */ TileCoord, /* p1 */ Double, /* p2 */ typings.ol.projProjectionMod.default) => js.UndefOr[String]
       ): Self = StObject.set(x, "tileUrlFunction", js.Any.fromFunction3(value))
       
       inline def setTileUrlFunctionUndefined: Self = StObject.set(x, "tileUrlFunction", js.undefined)
@@ -200,7 +200,7 @@ object sourceVectorTileMod {
   
   @js.native
   trait VectorTile
-    extends typings.ol.urlTileMod.default {
+    extends typings.ol.sourceUrlTileMod.default {
     
     /**
       * Get features whose bounding box intersects the provided extent. Only features for cached
@@ -215,18 +215,18 @@ object sourceVectorTileMod {
     
     def getSourceTiles(
       pixelRatio: Double,
-      projection: typings.ol.projectionMod.default,
+      projection: typings.ol.projProjectionMod.default,
       tile: typings.ol.vectorRenderTileMod.default
-    ): js.Array[typings.ol.olVectorTileMod.default] = js.native
+    ): js.Array[typings.ol.vectorTileMod.default] = js.native
     
     /* protected */ var tileClass: Instantiable6[
         /* tileCoord */ TileCoord, 
         /* state */ TileState, 
         /* src */ String, 
-        /* format */ typings.ol.featureMod.default, 
+        /* format */ typings.ol.formatFeatureMod.default, 
         /* tileLoadFunction */ LoadFunction, 
-        /* opt_options */ js.UndefOr[typings.ol.olTileMod.Options], 
-        typings.ol.olVectorTileMod.default
+        /* opt_options */ js.UndefOr[typings.ol.tileMod.Options], 
+        typings.ol.vectorTileMod.default
       ] = js.native
   }
 }

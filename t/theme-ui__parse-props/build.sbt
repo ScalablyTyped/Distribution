@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "theme-ui__parse-props"
-version := "0.14.7-e5ca74"
+version := "0.14.7-dc4840"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

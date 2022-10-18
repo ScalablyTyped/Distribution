@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IKeyboardEvent
   extends StObject
-     with IUIEvent
-     with DeviceSourceEvent[Any] {
+     with IUIEvent {
   
   /**
     * Status of Alt key being pressed

@@ -1,8 +1,8 @@
 package typings.mangopay2NodejsSdk.anon
 
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANK_WIRE
-import typings.mangopay2NodejsSdk.moneyMod.money.MoneyData
-import typings.mangopay2NodejsSdk.payOutMod.payOut.PayoutModeRequestedType
+import typings.mangopay2NodejsSdk.typingsModelsMoneyMod.money.MoneyData
+import typings.mangopay2NodejsSdk.typingsModelsPayOutMod.payOut.PayoutModeRequestedType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

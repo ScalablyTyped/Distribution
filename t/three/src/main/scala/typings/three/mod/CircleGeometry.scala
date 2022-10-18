@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [thetaLength=Math.PI * 2]
   */
 open class CircleGeometry ()
-  extends typings.three.threeMod.CircleGeometry {
+  extends typings.three.srcThreeMod.CircleGeometry {
   def this(radius: Double) = this()
   def this(radius: Double, segments: Double) = this()
   def this(radius: Unit, segments: Double) = this()
@@ -37,5 +37,5 @@ object CircleGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.circleGeometryMod.CircleGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.circleGeometryMod.CircleGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesCircleGeometryMod.CircleGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesCircleGeometryMod.CircleGeometry]
 }

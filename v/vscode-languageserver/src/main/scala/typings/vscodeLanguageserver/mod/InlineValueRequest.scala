@@ -1,8 +1,8 @@
 package typings.vscodeLanguageserver.mod
 
 import typings.vscodeLanguageserver.vscodeLanguageserverStrings.textDocumentSlashinlineValue
-import typings.vscodeLanguageserverProtocol.protocolInlineValueMod.InlineValueParams
-import typings.vscodeLanguageserverProtocol.protocolInlineValueMod.InlineValueRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotinlineValueMod.InlineValueParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotinlineValueMod.InlineValueRegistrationOptions
 import typings.vscodeLanguageserverTypes.mod.InlineValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ object InlineValueRequest {
   
   @JSImport("vscode-languageserver", "InlineValueRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver", "InlineValueRequest.method")
   @js.native
@@ -20,7 +20,7 @@ object InlineValueRequest {
   
   @JSImport("vscode-languageserver", "InlineValueRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     InlineValueParams, 
     js.Array[InlineValue] | Null, 
     js.Array[InlineValue], 

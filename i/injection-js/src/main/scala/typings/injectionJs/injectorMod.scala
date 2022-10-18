@@ -1,16 +1,16 @@
 package typings.injectionJs
 
+import typings.injectionJs.facadeTypeMod.Type
 import typings.injectionJs.injectionTokenMod.InjectionToken
-import typings.injectionJs.typeMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object injectorMod {
   
-  @JSImport("injection-js/injector", "Injector")
+  /* note: abstract class */ @JSImport("injection-js/injector", "Injector")
   @js.native
-  abstract class Injector () extends StObject {
+  open class Injector () extends StObject {
     
     /**
       * @deprecated from v4.0.0 use Type<T> or InjectionToken<T>
@@ -18,8 +18,6 @@ object injectorMod {
       */
     def get(token: Any): Any = js.native
     def get(token: Any, notFoundValue: Any): Any = js.native
-    def get[T](token: InjectionToken[T]): T = js.native
-    def get[T](token: InjectionToken[T], notFoundValue: T): T = js.native
     /**
       * Retrieves an instance from the injector based on the provided token.
       * If not found:
@@ -29,6 +27,8 @@ object injectorMod {
       */
     def get[T](token: Type[T]): T = js.native
     def get[T](token: Type[T], notFoundValue: T): T = js.native
+    def get[T](token: InjectionToken[T]): T = js.native
+    def get[T](token: InjectionToken[T], notFoundValue: T): T = js.native
   }
   /* static members */
   object Injector {

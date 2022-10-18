@@ -1,5 +1,6 @@
 package typings.wkhtmltopdf
 
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.processMod.global.NodeJS.ReadStream
 import typings.wkhtmltopdf.wkhtmltopdfStrings.A0
@@ -54,26 +55,18 @@ object mod {
     * @param html HTML to convert to PDF
     * @param [options] Options
     */
-  inline def apply(html: String): Any = ^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(html: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   inline def apply(
     html: String,
     options: Unit,
-    callback: js.Function2[
-      /* err */ js.Error, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ /* stream */ Any, 
-      Unit
-    ]
-  ): Any = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def apply(html: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    callback: js.Function2[/* err */ js.Error, /* stream */ ReadWriteStream, Unit]
+  ): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(html: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   inline def apply(
     html: String,
     options: Options,
-    callback: js.Function2[
-      /* err */ js.Error, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ /* stream */ Any, 
-      Unit
-    ]
-  ): Any = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+    callback: js.Function2[/* err */ js.Error, /* stream */ ReadWriteStream, Unit]
+  ): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   /**
     * Call wkhtmltopdf and write PDF
     * If options.output is defined the file will be returned in the stream
@@ -82,8 +75,8 @@ object mod {
     * @param [options] Options
     * @param [callback] Callback
     */
-  inline def apply(inputStream: ReadStream): Any = ^.asInstanceOf[js.Dynamic].apply(inputStream.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def apply(inputStream: ReadStream, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(inputStream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(inputStream: ReadStream): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(inputStream.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(inputStream: ReadStream, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(inputStream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   @JSImport("wkhtmltopdf", JSImport.Namespace)
   @js.native

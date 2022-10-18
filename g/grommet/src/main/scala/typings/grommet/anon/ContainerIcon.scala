@@ -1,6 +1,6 @@
 package typings.grommet.anon
 
-import typings.grommet.boxMod.BoxProps
+import typings.grommet.componentsBoxMod.BoxProps
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ContainerIcon extends StObject {
   
-  var container: js.UndefOr[BoxProps | `4` | `34`] = js.undefined
+  var container: js.UndefOr[BoxProps | `7` | `33`] = js.undefined
   
   var icon: js.UndefOr[ReactNode | typings.grommetIcons.iconsMod.Icon] = js.undefined
   
-  var size: js.UndefOr[Large] = js.undefined
+  var size: js.UndefOr[Small] = js.undefined
 }
 object ContainerIcon {
   
@@ -23,7 +23,7 @@ object ContainerIcon {
   
   extension [Self <: ContainerIcon](x: Self) {
     
-    inline def setContainer(value: BoxProps | `4` | `34`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: BoxProps | `7` | `33`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
@@ -31,7 +31,7 @@ object ContainerIcon {
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    inline def setSize(value: Large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }

@@ -1,16 +1,16 @@
 package typings.blueprintjsCore
 
-import typings.blueprintjsCore.alignmentMod.Alignment
-import typings.blueprintjsCore.boundaryMod.Boundary
-import typings.blueprintjsCore.handlePropsMod.HandleInteractionKind
-import typings.blueprintjsCore.handlePropsMod.HandleType
-import typings.blueprintjsCore.intentMod.Intent
-import typings.blueprintjsCore.multistepDialogMod.MultistepDialogNavPosition
-import typings.blueprintjsCore.popoverMod.PopoverInteractionKind
-import typings.blueprintjsCore.popoverSharedPropsMod.PopoverPosition
-import typings.blueprintjsCore.positionMod.Position
-import typings.blueprintjsCore.tagInputMod.TagInputAddMethod
-import typings.blueprintjsCore.toasterMod.ToasterPosition
+import typings.blueprintjsCore.libEsmCommonAlignmentMod.Alignment
+import typings.blueprintjsCore.libEsmCommonBoundaryMod.Boundary
+import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
+import typings.blueprintjsCore.libEsmCommonPositionMod.Position
+import typings.blueprintjsCore.libEsmComponentsDialogMultistepDialogMod.MultistepDialogNavPosition
+import typings.blueprintjsCore.libEsmComponentsPopoverPopoverMod.PopoverInteractionKind
+import typings.blueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition
+import typings.blueprintjsCore.libEsmComponentsSliderHandlePropsMod.HandleInteractionKind
+import typings.blueprintjsCore.libEsmComponentsSliderHandlePropsMod.HandleType
+import typings.blueprintjsCore.libEsmComponentsTagInputTagInputMod.TagInputAddMethod
+import typings.blueprintjsCore.libEsmComponentsToastToasterMod.ToasterPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,10 +38,6 @@ object blueprintjsCoreStrings {
   @js.native
   sealed trait REMOVE_HOTKEYS extends StObject
   inline def REMOVE_HOTKEYS: REMOVE_HOTKEYS = "REMOVE_HOTKEYS".asInstanceOf[REMOVE_HOTKEYS]
-  
-  @js.native
-  sealed trait ValidationMap extends StObject
-  inline def ValidationMap: ValidationMap = "ValidationMap".asInstanceOf[ValidationMap]
   
   @js.native
   sealed trait _empty extends StObject
@@ -957,10 +953,6 @@ object blueprintjsCoreStrings {
   @js.native
   sealed trait rect extends StObject
   inline def rect: rect = "rect".asInstanceOf[rect]
-  
-  @js.native
-  sealed trait refHandler extends StObject
-  inline def refHandler: refHandler = "refHandler".asInstanceOf[refHandler]
   
   @js.native
   sealed trait removals extends StObject

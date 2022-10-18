@@ -1,5 +1,6 @@
 package typings.node.tlsMod
 
+import typings.node.NodeJS.Dict
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +16,7 @@ trait PeerCertificate extends StObject {
   
   var fingerprint256: String
   
-  var infoAccess: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<Array<string>> */ Any
+  var infoAccess: Dict[js.Array[String]]
   
   var issuer: Certificate
   
@@ -40,7 +41,7 @@ object PeerCertificate {
     ext_key_usage: js.Array[String],
     fingerprint: String,
     fingerprint256: String,
-    infoAccess: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<Array<string>> */ Any,
+    infoAccess: Dict[js.Array[String]],
     issuer: Certificate,
     modulus: String,
     raw: Buffer,
@@ -66,9 +67,7 @@ object PeerCertificate {
     
     inline def setFingerprint256(value: String): Self = StObject.set(x, "fingerprint256", value.asInstanceOf[js.Any])
     
-    inline def setInfoAccess(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<Array<string>> */ Any
-    ): Self = StObject.set(x, "infoAccess", value.asInstanceOf[js.Any])
+    inline def setInfoAccess(value: Dict[js.Array[String]]): Self = StObject.set(x, "infoAccess", value.asInstanceOf[js.Any])
     
     inline def setIssuer(value: Certificate): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     

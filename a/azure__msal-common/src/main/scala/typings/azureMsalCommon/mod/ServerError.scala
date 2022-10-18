@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "ServerError")
 @js.native
 open class ServerError ()
-  extends typings.azureMsalCommon.serverErrorMod.ServerError {
+  extends typings.azureMsalCommon.distErrorServerErrorMod.ServerError {
   def this(errorCode: String) = this()
   def this(errorCode: String, errorMessage: String) = this()
   def this(errorCode: Unit, errorMessage: String) = this()

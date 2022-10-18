@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "QuinticEase")
 @js.native
 open class QuinticEase ()
-  extends typings.babylonjs.legacyMod.QuinticEase
+  extends typings.babylonjs.legacyLegacyMod.QuinticEase

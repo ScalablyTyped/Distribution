@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object MapMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.webgpuConstantsMod.MapMode & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.MapMode & Double] = js.native
   
-  /* 1 */ val Read: typings.babylonjs.webgpuConstantsMod.MapMode.Read & Double = js.native
+  /* 1 */ val Read: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.MapMode.Read & Double = js.native
   
-  /* 2 */ val Write: typings.babylonjs.webgpuConstantsMod.MapMode.Write & Double = js.native
+  /* 2 */ val Write: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.MapMode.Write & Double = js.native
 }

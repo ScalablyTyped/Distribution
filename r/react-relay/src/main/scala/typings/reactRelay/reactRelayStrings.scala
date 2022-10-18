@@ -1,7 +1,7 @@
 package typings.reactRelay
 
-import typings.reactRelay.entryPointTypesMod.PreloadFetchPolicy
-import typings.reactRelay.useLoadMoreFunctionMod.Direction
+import typings.reactRelay.relayHooksEntryPointTypesMod.PreloadFetchPolicy
+import typings.reactRelay.relayHooksUseLoadMoreFunctionMod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,32 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactRelayStrings {
   
   @js.native
-  sealed trait MappedFragmentProps extends StObject
-  inline def MappedFragmentProps: MappedFragmentProps = "MappedFragmentProps".asInstanceOf[MappedFragmentProps]
-  
-  @js.native
   sealed trait PreloadableConcreteRequest extends StObject
   inline def PreloadableConcreteRequest: PreloadableConcreteRequest = "PreloadableConcreteRequest".asInstanceOf[PreloadableConcreteRequest]
   
   @js.native
-  sealed trait PreloadedEntryPoints extends StObject
-  inline def PreloadedEntryPoints: PreloadedEntryPoints = "PreloadedEntryPoints".asInstanceOf[PreloadedEntryPoints]
-  
-  @js.native
-  sealed trait PreloadedQueries extends StObject
-  inline def PreloadedQueries: PreloadedQueries = "PreloadedQueries".asInstanceOf[PreloadedQueries]
-  
-  @js.native
   sealed trait PreloadedQuery extends StObject
   inline def PreloadedQuery: PreloadedQuery = "PreloadedQuery".asInstanceOf[PreloadedQuery]
-  
-  @js.native
-  sealed trait ThinNestedEntryPointParamsObject extends StObject
-  inline def ThinNestedEntryPointParamsObject: ThinNestedEntryPointParamsObject = "ThinNestedEntryPointParamsObject".asInstanceOf[ThinNestedEntryPointParamsObject]
-  
-  @js.native
-  sealed trait ThinQueryParamsObject extends StObject
-  inline def ThinQueryParamsObject: ThinQueryParamsObject = "ThinQueryParamsObject".asInstanceOf[ThinQueryParamsObject]
   
   @js.native
   sealed trait a extends StObject

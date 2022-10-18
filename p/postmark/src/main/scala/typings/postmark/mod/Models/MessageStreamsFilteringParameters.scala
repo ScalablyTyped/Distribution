@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postmark", "Models.MessageStreamsFilteringParameters")
 @js.native
 open class MessageStreamsFilteringParameters ()
-  extends typings.postmark.modelsMod.MessageStreamsFilteringParameters {
+  extends typings.postmark.distClientModelsMod.MessageStreamsFilteringParameters {
   def this(messageStreamType: String) = this()
   def this(messageStreamType: String, includeArchivedStreams: Boolean) = this()
   def this(messageStreamType: Unit, includeArchivedStreams: Boolean) = this()

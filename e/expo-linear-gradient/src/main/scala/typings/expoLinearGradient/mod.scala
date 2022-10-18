@@ -1,7 +1,7 @@
 package typings.expoLinearGradient
 
 import typings.expoLinearGradient.anon.X
-import typings.expoLinearGradient.nativeLinearGradientTypesMod.NativeLinearGradientPoint
+import typings.expoLinearGradient.buildNativeLinearGradientDottypesMod.NativeLinearGradientPoint
 import typings.react.mod.Component
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject

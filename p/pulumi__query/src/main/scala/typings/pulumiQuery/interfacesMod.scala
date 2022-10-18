@@ -70,8 +70,14 @@ object interfacesMod {
     /**
       * Averages the numbers of a sequence.
       */
-    def average(): js.Promise[Double] = js.native
+    def average(): /* import warning: importer.ImportType#apply Failed type conversion: TSource extends number ? std.Promise<number> : never */ js.Any = js.native
     def average(selector: js.Function1[/* t */ TSource, Double | js.Promise[Double]]): js.Promise[Double] = js.native
+    /**
+      * Applies `selector` to each element in a sequence, and then averages the resulting numbers.
+      * @param selector Function mapping elements of a sequence to numbers.
+      */
+    @JSName("average")
+    def average_Promise(): js.Promise[Double] = js.native
     
     /**
       * Concatenates two sequences.
@@ -258,14 +264,28 @@ object interfacesMod {
     /**
       * Finds the maximum number in a sequence.
       */
-    def max(): js.Promise[Double] = js.native
+    def max(): /* import warning: importer.ImportType#apply Failed type conversion: TSource extends number ? std.Promise<number> : never */ js.Any = js.native
     def max(selector: js.Function1[/* t */ TSource, Double | js.Promise[Double]]): js.Promise[Double] = js.native
+    /**
+      * Applies `selector` to each element in a sequence, and then finds the maximum of the resulting
+      * numbers.
+      * @param selector Function mapping elements of a sequence to numbers.
+      */
+    @JSName("max")
+    def max_Promise(): js.Promise[Double] = js.native
     
     /**
       * Finds the minimum number in a sequence.
       */
-    def min(): js.Promise[Double] = js.native
+    def min(): /* import warning: importer.ImportType#apply Failed type conversion: TSource extends number ? std.Promise<number> : never */ js.Any = js.native
     def min(selector: js.Function1[/* t */ TSource, Double | js.Promise[Double]]): js.Promise[Double] = js.native
+    /**
+      * Applies `selector` to each element in a sequence, and then finds the minimum of the resulting
+      * numbers.
+      * @param selector Function mapping elements of a sequence to numbers.
+      */
+    @JSName("min")
+    def min_Promise(): js.Promise[Double] = js.native
     
     /**
       * Filter out everything in the sequence that is not of type `TResult`, returning a sequence of
@@ -397,8 +417,14 @@ object interfacesMod {
     /**
       * Sums all the numbers in a sequence.
       */
-    def sum(): js.Promise[Double] = js.native
+    def sum(): /* import warning: importer.ImportType#apply Failed type conversion: TSource extends number ? std.Promise<number> : never */ js.Any = js.native
     def sum(selector: js.Function1[/* t */ TSource, Double | js.Promise[Double]]): js.Promise[Double] = js.native
+    /**
+      * Applies `selector` to each element in a sequence, and then sums the resulting numbers.
+      * @param selector Function mapping elements of a sequence to numbers.
+      */
+    @JSName("sum")
+    def sum_Promise(): js.Promise[Double] = js.native
     
     /**
       * Takes `n` elements of a sequence, then skips the remainder of the sequence.

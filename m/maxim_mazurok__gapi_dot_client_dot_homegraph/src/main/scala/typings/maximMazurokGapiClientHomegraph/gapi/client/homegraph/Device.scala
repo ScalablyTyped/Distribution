@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait Device extends StObject {
   
   /** Attributes for the traits supported by the device. */
   var attributes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -20,9 +17,7 @@ trait Device extends StObject {
     * limited to Personally Identifiable Information.
     */
   var customData: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Device manufacturer, model, hardware version, and software version. */
@@ -71,17 +66,13 @@ object Device {
   extension [Self <: Device](x: Self) {
     
     inline def setAttributes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     inline def setCustomData(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)

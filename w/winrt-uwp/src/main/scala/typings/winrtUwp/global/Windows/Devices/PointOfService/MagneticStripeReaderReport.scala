@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains data from the recently swiped card. */
-@JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderReport")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderReport")
 @js.native
-abstract class MagneticStripeReaderReport ()
+open class MagneticStripeReaderReport ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReaderReport {
   

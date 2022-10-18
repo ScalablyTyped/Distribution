@@ -1,18 +1,18 @@
 package typings.expressValidator
 
-import typings.expressValidator.baseMod.Location
-import typings.expressValidator.optionsMod.AlphaLocale
-import typings.expressValidator.optionsMod.AlphanumericLocale
-import typings.expressValidator.optionsMod.HashAlgorithm
-import typings.expressValidator.optionsMod.IdentityCardLocale
-import typings.expressValidator.optionsMod.IsLicensePlateLocale
-import typings.expressValidator.optionsMod.MobilePhoneLocale
-import typings.expressValidator.optionsMod.PassportCountryCode
-import typings.expressValidator.optionsMod.PostalCodeLocale
-import typings.expressValidator.optionsMod.TaxIDLocale
-import typings.expressValidator.optionsMod.UUIDVersion
-import typings.expressValidator.optionsMod.VATCountryCode
-import typings.expressValidator.optionsMod._URLProtocol
+import typings.expressValidator.srcBaseMod.Location
+import typings.expressValidator.srcOptionsMod.AlphaLocale
+import typings.expressValidator.srcOptionsMod.AlphanumericLocale
+import typings.expressValidator.srcOptionsMod.HashAlgorithm
+import typings.expressValidator.srcOptionsMod.IdentityCardLocale
+import typings.expressValidator.srcOptionsMod.IsLicensePlateLocale
+import typings.expressValidator.srcOptionsMod.MobilePhoneLocale
+import typings.expressValidator.srcOptionsMod.PassportCountryCode
+import typings.expressValidator.srcOptionsMod.PostalCodeLocale
+import typings.expressValidator.srcOptionsMod.TaxIDLocale
+import typings.expressValidator.srcOptionsMod.UUIDVersion
+import typings.expressValidator.srcOptionsMod.VATCountryCode
+import typings.expressValidator.srcOptionsMod._URLProtocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -739,10 +739,6 @@ object expressValidatorStrings {
        with MobilePhoneLocale
        with TaxIDLocale
   inline def `bg-BG`: `bg-BG` = "bg-BG".asInstanceOf[`bg-BG`]
-  
-  @js.native
-  sealed trait bindAll extends StObject
-  inline def bindAll: bindAll = "bindAll".asInstanceOf[bindAll]
   
   @js.native
   sealed trait blacklist extends StObject

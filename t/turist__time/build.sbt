@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "turist__time"
-version := "0.0.2-965517"
+version := "0.0.2-c10cc6"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

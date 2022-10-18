@@ -8,11 +8,33 @@ import typings.nivoScales.anon.All
 import typings.nivoScales.anon.Format
 import typings.nivoScales.anon.GetValue
 import typings.nivoScales.anon.Series
-import typings.nivoScales.anon.X
-import typings.nivoScales.computeMod.NestedSerie
-import typings.nivoScales.computeMod.Serie
-import typings.nivoScales.computeMod.SerieDatum
-import typings.nivoScales.computeMod.StackedXY
+import typings.nivoScales.anon.Y
+import typings.nivoScales.distTypesComputeMod.NestedSerie
+import typings.nivoScales.distTypesComputeMod.Serie
+import typings.nivoScales.distTypesComputeMod.SerieDatum
+import typings.nivoScales.distTypesComputeMod.StackedXY
+import typings.nivoScales.distTypesTimeHelpersMod.TIME_PRECISION
+import typings.nivoScales.distTypesTypesMod.AnyScale
+import typings.nivoScales.distTypesTypesMod.ComputedSerieAxis
+import typings.nivoScales.distTypesTypesMod.ScaleAxis
+import typings.nivoScales.distTypesTypesMod.ScaleBand
+import typings.nivoScales.distTypesTypesMod.ScaleBandSpec
+import typings.nivoScales.distTypesTypesMod.ScaleLinear
+import typings.nivoScales.distTypesTypesMod.ScaleLinearSpec
+import typings.nivoScales.distTypesTypesMod.ScaleLog
+import typings.nivoScales.distTypesTypesMod.ScaleLogSpec
+import typings.nivoScales.distTypesTypesMod.ScalePoint
+import typings.nivoScales.distTypesTypesMod.ScalePointSpec
+import typings.nivoScales.distTypesTypesMod.ScaleSpec
+import typings.nivoScales.distTypesTypesMod.ScaleSymlog
+import typings.nivoScales.distTypesTypesMod.ScaleSymlogSpec
+import typings.nivoScales.distTypesTypesMod.ScaleTime
+import typings.nivoScales.distTypesTypesMod.ScaleTimeSpec
+import typings.nivoScales.distTypesTypesMod.ScaleValue
+import typings.nivoScales.distTypesTypesMod.ScaleWithBandwidth
+import typings.nivoScales.distTypesTypesMod.SerieAxis
+import typings.nivoScales.distTypesTypesMod.StringValue
+import typings.nivoScales.distTypesTypesMod.TicksSpec
 import typings.nivoScales.nivoScalesStrings.day
 import typings.nivoScales.nivoScalesStrings.hour
 import typings.nivoScales.nivoScalesStrings.millisecond
@@ -20,28 +42,6 @@ import typings.nivoScales.nivoScalesStrings.minute
 import typings.nivoScales.nivoScalesStrings.month
 import typings.nivoScales.nivoScalesStrings.second
 import typings.nivoScales.nivoScalesStrings.year
-import typings.nivoScales.timeHelpersMod.TIME_PRECISION
-import typings.nivoScales.typesMod.AnyScale
-import typings.nivoScales.typesMod.ComputedSerieAxis
-import typings.nivoScales.typesMod.ScaleAxis
-import typings.nivoScales.typesMod.ScaleBand
-import typings.nivoScales.typesMod.ScaleBandSpec
-import typings.nivoScales.typesMod.ScaleLinear
-import typings.nivoScales.typesMod.ScaleLinearSpec
-import typings.nivoScales.typesMod.ScaleLog
-import typings.nivoScales.typesMod.ScaleLogSpec
-import typings.nivoScales.typesMod.ScalePoint
-import typings.nivoScales.typesMod.ScalePointSpec
-import typings.nivoScales.typesMod.ScaleSpec
-import typings.nivoScales.typesMod.ScaleSymlog
-import typings.nivoScales.typesMod.ScaleSymlogSpec
-import typings.nivoScales.typesMod.ScaleTime
-import typings.nivoScales.typesMod.ScaleTimeSpec
-import typings.nivoScales.typesMod.ScaleValue
-import typings.nivoScales.typesMod.ScaleWithBandwidth
-import typings.nivoScales.typesMod.SerieAxis
-import typings.nivoScales.typesMod.StringValue
-import typings.nivoScales.typesMod.TicksSpec
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -117,7 +117,7 @@ object mod {
     hasGetValueSetValue: GetValue[Axis, Value]
   ): All = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeriesAxis")(series.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], scaleSpec.asInstanceOf[js.Any], hasGetValueSetValue.asInstanceOf[js.Any])).asInstanceOf[All]
   
-  inline def generateSeriesXY[S, D /* <: SerieDatum */](series: js.Array[NestedSerie[S, D]], xScaleSpec: ScaleSpec, yScaleSpec: ScaleSpec): X = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeriesXY")(series.asInstanceOf[js.Any], xScaleSpec.asInstanceOf[js.Any], yScaleSpec.asInstanceOf[js.Any])).asInstanceOf[X]
+  inline def generateSeriesXY[S, D /* <: SerieDatum */](series: js.Array[NestedSerie[S, D]], xScaleSpec: ScaleSpec, yScaleSpec: ScaleSpec): Y = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeriesXY")(series.asInstanceOf[js.Any], xScaleSpec.asInstanceOf[js.Any], yScaleSpec.asInstanceOf[js.Any])).asInstanceOf[Y]
   
   inline def getOtherAxis(axis: ScaleAxis): ScaleAxis = ^.asInstanceOf[js.Dynamic].applyDynamic("getOtherAxis")(axis.asInstanceOf[js.Any]).asInstanceOf[ScaleAxis]
   

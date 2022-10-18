@@ -1,7 +1,7 @@
 package typings.expoConfigPlugins.anon
 
-import typings.expoConfigPlugins.createBaseModMod.BaseModProviderMethods
-import typings.expoConfigPlugins.pluginTypesMod.ModPlatform
+import typings.expoConfigPlugins.buildPluginDottypesMod.ModPlatform
+import typings.expoConfigPlugins.buildPluginsCreateBaseModMod.BaseModProviderMethods
 import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject

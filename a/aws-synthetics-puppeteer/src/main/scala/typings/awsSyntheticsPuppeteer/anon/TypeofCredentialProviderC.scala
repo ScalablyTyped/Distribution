@@ -1,7 +1,7 @@
 package typings.awsSyntheticsPuppeteer.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.awsSdk.credentialProviderChainMod.provider
+import typings.awsSdk.libCredentialsCredentialProviderChainMod.provider
 import typings.awsSdk.mod.CredentialProviderChain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

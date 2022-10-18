@@ -3,8 +3,8 @@ package typings.semanticUiReact.mod
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.semanticUiReact.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps
 import typings.semanticUiReact.mod.^
-import typings.semanticUiReact.visibilityVisibilityMod.VisibilityProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

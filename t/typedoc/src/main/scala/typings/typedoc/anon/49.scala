@@ -1,23 +1,23 @@
 package typings.typedoc.anon
 
-import typings.typedoc.typedocStrings.categoryOrder
+import typings.typedoc.typedocStrings.blockTags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `49` extends StObject {
   
-  var name: categoryOrder
+  var name: blockTags
 }
 object `49` {
   
   inline def apply(): `49` = {
-    val __obj = js.Dynamic.literal(name = "categoryOrder")
+    val __obj = js.Dynamic.literal(name = "blockTags")
     __obj.asInstanceOf[`49`]
   }
   
   extension [Self <: `49`](x: Self) {
     
-    inline def setName(value: categoryOrder): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: blockTags): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

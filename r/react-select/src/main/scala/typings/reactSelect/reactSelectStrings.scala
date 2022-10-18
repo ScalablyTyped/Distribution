@@ -1,25 +1,21 @@
 package typings.reactSelect
 
-import typings.reactSelect.accessibilityMod.GuidanceContext
-import typings.reactSelect.accessibilityMod.OptionContext
-import typings.reactSelect.selectMod.FormatOptionLabelContext
-import typings.reactSelect.typesMod.CoercedMenuPlacement
-import typings.reactSelect.typesMod.FocusDirection
-import typings.reactSelect.typesMod.InputAction
-import typings.reactSelect.typesMod.MenuPlacement
-import typings.reactSelect.typesMod.MenuPosition
-import typings.reactSelect.typesMod.SetValueAction
-import typings.reactSelect.useAsyncMod.AsyncManagedPropKeys
-import typings.reactSelect.useStateManagerMod.StateManagedPropKeys
+import typings.reactSelect.distDeclarationsSrcAccessibilityMod.GuidanceContext
+import typings.reactSelect.distDeclarationsSrcAccessibilityMod.OptionContext
+import typings.reactSelect.distDeclarationsSrcSelectMod.FormatOptionLabelContext
+import typings.reactSelect.distDeclarationsSrcTypesMod.CoercedMenuPlacement
+import typings.reactSelect.distDeclarationsSrcTypesMod.FocusDirection
+import typings.reactSelect.distDeclarationsSrcTypesMod.InputAction
+import typings.reactSelect.distDeclarationsSrcTypesMod.MenuPlacement
+import typings.reactSelect.distDeclarationsSrcTypesMod.MenuPosition
+import typings.reactSelect.distDeclarationsSrcTypesMod.SetValueAction
+import typings.reactSelect.distDeclarationsSrcUseAsyncMod.AsyncManagedPropKeys
+import typings.reactSelect.distDeclarationsSrcUseStateManagerMod.StateManagedPropKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactSelectStrings {
-  
-  @js.native
-  sealed trait Collapse extends StObject
-  inline def Collapse: Collapse = "Collapse".asInstanceOf[Collapse]
   
   @js.native
   sealed trait absolute

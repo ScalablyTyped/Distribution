@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "Converter")
 @js.native
 open class Converter protected ()
-  extends typings.typedoc.converterMod.Converter {
-  def this(owner: typings.typedoc.applicationMod.Application) = this()
+  extends typings.typedoc.distLibConverterMod.Converter {
+  def this(owner: typings.typedoc.distLibApplicationMod.Application) = this()
 }
 /* static members */
 object Converter {

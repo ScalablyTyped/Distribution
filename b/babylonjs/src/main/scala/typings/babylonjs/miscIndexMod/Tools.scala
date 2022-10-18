@@ -4,12 +4,12 @@ import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.Window
 import typings.babylonjs.anon.CrossOrigin
 import typings.babylonjs.anon.Handler
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.fileRequestMod.IFileRequest
-import typings.babylonjs.iofflineproviderMod.IOfflineProvider
-import typings.babylonjs.screenshotSizeMod.IScreenshotSize
-import typings.babylonjs.toolsMod.IColor4Like
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.mathsMathDotlikeMod.IColor4Like
+import typings.babylonjs.miscFileRequestMod.IFileRequest
+import typings.babylonjs.miscInterfacesScreenshotSizeMod.IScreenshotSize
+import typings.babylonjs.offlineIofflineproviderMod.IOfflineProvider
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Blob
 import typings.std.EventTarget
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "Tools")
 @js.native
 open class Tools ()
-  extends typings.babylonjs.toolsMod.Tools
+  extends typings.babylonjs.miscToolsMod.Tools
 /* static members */
 object Tools {
   
@@ -1160,7 +1160,7 @@ object Tools {
     offlineProvider: Unit,
     useArrayBuffer: Boolean,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       /* exception */ js.UndefOr[Any], 
       Unit
     ]
@@ -1176,7 +1176,7 @@ object Tools {
     offlineProvider: Unit,
     useArrayBuffer: Unit,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       /* exception */ js.UndefOr[Any], 
       Unit
     ]
@@ -1213,7 +1213,7 @@ object Tools {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       /* exception */ js.UndefOr[Any], 
       Unit
     ]
@@ -1229,7 +1229,7 @@ object Tools {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Unit,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       /* exception */ js.UndefOr[Any], 
       Unit
     ]
@@ -1256,7 +1256,7 @@ object Tools {
     offlineProvider: Unit,
     useArrayBuffer: Boolean,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       /* exception */ js.UndefOr[Any], 
       Unit
     ]
@@ -1272,7 +1272,7 @@ object Tools {
     offlineProvider: Unit,
     useArrayBuffer: Unit,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       /* exception */ js.UndefOr[Any], 
       Unit
     ]
@@ -1309,7 +1309,7 @@ object Tools {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       /* exception */ js.UndefOr[Any], 
       Unit
     ]
@@ -1325,7 +1325,7 @@ object Tools {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Unit,
     onError: js.Function2[
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       /* exception */ js.UndefOr[Any], 
       Unit
     ]
@@ -1566,14 +1566,14 @@ object Tools {
     onSuccess: js.Function1[/* data */ Any, Unit],
     onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
     useArrayBuffer: Boolean,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def ReadFile(
     file: File,
     onSuccess: js.Function1[/* data */ Any, Unit],
     onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
     useArrayBuffer: Unit,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def ReadFile(
     file: File,
@@ -1586,14 +1586,14 @@ object Tools {
     onSuccess: js.Function1[/* data */ Any, Unit],
     onProgress: Unit,
     useArrayBuffer: Boolean,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def ReadFile(
     file: File,
     onSuccess: js.Function1[/* data */ Any, Unit],
     onProgress: Unit,
     useArrayBuffer: Unit,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   
   /**

@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.paginatorMod.PaginatorProps
+import typings.primereact.paginatorPaginatorMod.PaginatorProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Paginator")
 @js.native
 open class Paginator protected ()
-  extends typings.primereact.paginatorMod.Paginator {
+  extends typings.primereact.paginatorPaginatorMod.Paginator {
   def this(props: PaginatorProps) = this()
   /**
     * @deprecated

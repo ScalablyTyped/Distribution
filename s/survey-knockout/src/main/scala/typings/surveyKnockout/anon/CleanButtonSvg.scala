@@ -14,6 +14,12 @@ trait CleanButtonSvg extends StObject {
   
   var control: String
   
+  var controlInputFieldComponent: String
+  
+  var controlValue: String
+  
+  var filterStringInput: String
+  
   var other: String
   
   var root: String
@@ -27,11 +33,14 @@ object CleanButtonSvg {
     cleanButtonIconId: String,
     cleanButtonSvg: String,
     control: String,
+    controlInputFieldComponent: String,
+    controlValue: String,
+    filterStringInput: String,
     other: String,
     root: String,
     selectWrapper: String
   ): CleanButtonSvg = {
-    val __obj = js.Dynamic.literal(cleanButton = cleanButton.asInstanceOf[js.Any], cleanButtonIconId = cleanButtonIconId.asInstanceOf[js.Any], cleanButtonSvg = cleanButtonSvg.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], selectWrapper = selectWrapper.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cleanButton = cleanButton.asInstanceOf[js.Any], cleanButtonIconId = cleanButtonIconId.asInstanceOf[js.Any], cleanButtonSvg = cleanButtonSvg.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], controlInputFieldComponent = controlInputFieldComponent.asInstanceOf[js.Any], controlValue = controlValue.asInstanceOf[js.Any], filterStringInput = filterStringInput.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], selectWrapper = selectWrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[CleanButtonSvg]
   }
   
@@ -44,6 +53,12 @@ object CleanButtonSvg {
     inline def setCleanButtonSvg(value: String): Self = StObject.set(x, "cleanButtonSvg", value.asInstanceOf[js.Any])
     
     inline def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    
+    inline def setControlInputFieldComponent(value: String): Self = StObject.set(x, "controlInputFieldComponent", value.asInstanceOf[js.Any])
+    
+    inline def setControlValue(value: String): Self = StObject.set(x, "controlValue", value.asInstanceOf[js.Any])
+    
+    inline def setFilterStringInput(value: String): Self = StObject.set(x, "filterStringInput", value.asInstanceOf[js.Any])
     
     inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     

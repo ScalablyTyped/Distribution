@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.splitterMod.SplitterProps
+import typings.primereact.splitterSplitterMod.SplitterProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Splitter")
 @js.native
 open class Splitter protected ()
-  extends typings.primereact.splitterMod.Splitter {
+  extends typings.primereact.splitterSplitterMod.Splitter {
   def this(props: SplitterProps) = this()
   /**
     * @deprecated

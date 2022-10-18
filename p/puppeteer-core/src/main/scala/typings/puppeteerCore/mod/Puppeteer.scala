@@ -1,6 +1,5 @@
 package typings.puppeteerCore.mod
 
-import typings.puppeteerCore.anon.ReadonlySlow3GNetworkCondSlow3G
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,16 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("puppeteer-core", "Puppeteer")
 @js.native
 open class Puppeteer () extends StObject {
-  
-  /**
-    * @deprecated Import directly puppeteer.
-    * @example
-    *
-    * ```ts
-    * import {clearCustomQueryHandlers} from 'puppeteer';
-    * ```
-    */
-  def clearCustomQueryHandlers(): Unit = js.native
   
   /* Excluded from this release type: _isPuppeteerCore */
   /* Excluded from this release type: _changedProduct */
@@ -31,64 +20,50 @@ open class Puppeteer () extends StObject {
     * @returns Promise which resolves to browser instance.
     */
   def connect(options: ConnectOptions): js.Promise[Browser] = js.native
+}
+/* static members */
+object Puppeteer {
+  
+  @JSImport("puppeteer-core", "Puppeteer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
-    * @deprecated Import directly puppeteer.
-    * @example
-    *
-    * ```ts
-    * import {customQueryHandlerNames} from 'puppeteer';
-    * ```
+    * Unregisters all custom query handlers.
     */
-  def customQueryHandlerNames(): js.Array[String] = js.native
+  inline def clearCustomQueryHandlers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCustomQueryHandlers")().asInstanceOf[Unit]
   
   /**
-    * @deprecated Import directly puppeteer.
-    * @example
-    *
-    * ```ts
-    * import {devices} from 'puppeteer';
-    * ```
+    * Gets the names of all custom query handlers.
     */
-  def devices: DevicesMap = js.native
+  inline def customQueryHandlerNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("customQueryHandlerNames")().asInstanceOf[js.Array[String]]
   
   /**
-    * @deprecated Import directly puppeteer.
+    * Registers a {@link CustomQueryHandler | custom query handler}.
+    *
+    * @remarks
+    * After registration, the handler can be used everywhere where a selector is
+    * expected by prepending the selection string with `<name>/`. The name is only
+    * allowed to consist of lower- and upper case latin letters.
+    *
     * @example
     *
-    * ```ts
-    * import {errors} from 'puppeteer';
     * ```
+    * puppeteer.registerCustomQueryHandler('text', { … });
+    * const aHandle = await page.$('text/…');
+    * ```
+    *
+    * @param name - The name that the custom query handler will be registered
+    * under.
+    * @param queryHandler - The {@link CustomQueryHandler | custom query handler}
+    * to register.
+    *
+    * @public
     */
-  def errors: PuppeteerErrors = js.native
+  inline def registerCustomQueryHandler(name: String, queryHandler: CustomQueryHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCustomQueryHandler")(name.asInstanceOf[js.Any], queryHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
-    * @deprecated Import directly puppeteer.
-    * @example
-    *
-    * ```ts
-    * import {networkConditions} from 'puppeteer';
-    * ```
+    * Unregisters a custom query handler for a given name.
     */
-  def networkConditions: ReadonlySlow3GNetworkCondSlow3G = js.native
-  
-  /**
-    * @deprecated Import directly puppeteer.
-    * @example
-    *
-    * ```ts
-    * import {registerCustomQueryHandler} from 'puppeteer';
-    * ```
-    */
-  def registerCustomQueryHandler(name: String, queryHandler: CustomQueryHandler): Unit = js.native
-  
-  /**
-    * @deprecated Import directly puppeteer.
-    * @example
-    *
-    * ```ts
-    * import {unregisterCustomQueryHandler} from 'puppeteer';
-    * ```
-    */
-  def unregisterCustomQueryHandler(name: String): Unit = js.native
+  inline def unregisterCustomQueryHandler(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterCustomQueryHandler")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

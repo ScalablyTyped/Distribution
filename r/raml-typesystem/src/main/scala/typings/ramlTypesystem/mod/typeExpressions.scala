@@ -1,6 +1,6 @@
 package typings.ramlTypesystem.mod
 
-import typings.ramlTypesystem.typeExpressionUtilMod.BaseNode
+import typings.ramlTypesystem.distSrcTypeExpressionUtilMod.BaseNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

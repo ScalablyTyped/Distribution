@@ -1,5 +1,7 @@
 package typings.ssh2SftpClient
 
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.bufferMod.global.Buffer
 import typings.ssh2.mod.ConnectConfig
 import typings.ssh2.mod.ReadStream
@@ -11,8 +13,6 @@ import typings.ssh2SftpClient.ssh2SftpClientStrings.`-_`
 import typings.ssh2SftpClient.ssh2SftpClientStrings.a
 import typings.ssh2SftpClient.ssh2SftpClientStrings.r
 import typings.ssh2SftpClient.ssh2SftpClientStrings.w
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -404,10 +404,10 @@ object mod {
   @js.native
   trait sftp extends StObject {
     
+    def append(input: ReadableStream, remotePath: String): js.Promise[String] = js.native
+    def append(input: ReadableStream, remotePath: String, options: WriteStreamOptions): js.Promise[String] = js.native
     def append(input: Buffer, remotePath: String): js.Promise[String] = js.native
     def append(input: Buffer, remotePath: String, options: WriteStreamOptions): js.Promise[String] = js.native
-    def append(input: ReadableStream[Any], remotePath: String): js.Promise[String] = js.native
-    def append(input: ReadableStream[Any], remotePath: String, options: WriteStreamOptions): js.Promise[String] = js.native
     
     def chmod(remotePath: String, mode: String): js.Promise[String] = js.native
     def chmod(remotePath: String, mode: Double): js.Promise[String] = js.native
@@ -439,12 +439,12 @@ object mod {
     def fastPut(localPath: String, remoteFilePath: String): js.Promise[String] = js.native
     def fastPut(localPath: String, remoteFilePath: String, options: FastPutTransferOptions): js.Promise[String] = js.native
     
-    def get(path: String): js.Promise[String | WritableStream[Any] | Buffer] = js.native
-    def get(path: String, dst: String): js.Promise[String | WritableStream[Any] | Buffer] = js.native
-    def get(path: String, dst: String, options: TransferOptions): js.Promise[String | WritableStream[Any] | Buffer] = js.native
-    def get(path: String, dst: Unit, options: TransferOptions): js.Promise[String | WritableStream[Any] | Buffer] = js.native
-    def get(path: String, dst: WritableStream[Any]): js.Promise[String | WritableStream[Any] | Buffer] = js.native
-    def get(path: String, dst: WritableStream[Any], options: TransferOptions): js.Promise[String | WritableStream[Any] | Buffer] = js.native
+    def get(path: String): js.Promise[String | WritableStream | Buffer] = js.native
+    def get(path: String, dst: String): js.Promise[String | WritableStream | Buffer] = js.native
+    def get(path: String, dst: String, options: TransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
+    def get(path: String, dst: Unit, options: TransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
+    def get(path: String, dst: WritableStream): js.Promise[String | WritableStream | Buffer] = js.native
+    def get(path: String, dst: WritableStream, options: TransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
     
     def list(remoteFilePath: String): js.Promise[js.Array[FileInfo]] = js.native
     def list(remoteFilePath: String, pattern: String): js.Promise[js.Array[FileInfo]] = js.native
@@ -459,10 +459,10 @@ object mod {
     
     def put(input: String, remoteFilePath: String): js.Promise[String] = js.native
     def put(input: String, remoteFilePath: String, options: TransferOptions): js.Promise[String] = js.native
+    def put(input: ReadableStream, remoteFilePath: String): js.Promise[String] = js.native
+    def put(input: ReadableStream, remoteFilePath: String, options: TransferOptions): js.Promise[String] = js.native
     def put(input: Buffer, remoteFilePath: String): js.Promise[String] = js.native
     def put(input: Buffer, remoteFilePath: String, options: TransferOptions): js.Promise[String] = js.native
-    def put(input: ReadableStream[Any], remoteFilePath: String): js.Promise[String] = js.native
-    def put(input: ReadableStream[Any], remoteFilePath: String, options: TransferOptions): js.Promise[String] = js.native
     
     def rcopy(srcPath: String, dstPath: String): js.Promise[String] = js.native
     

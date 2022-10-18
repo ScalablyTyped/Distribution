@@ -3,9 +3,9 @@ package typings.reactNativeElements.anon
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.buttonMod.ButtonProps
-import typings.reactNativeElements.pricingCardMod.ButtonInformation
-import typings.reactNativeElements.themeMod.RecursivePartial
+import typings.reactNativeElements.distButtonsButtonMod.ButtonProps
+import typings.reactNativeElements.distConfigThemeMod.RecursivePartial
+import typings.reactNativeElements.distPricingPricingCardMod.ButtonInformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

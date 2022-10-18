@@ -1,17 +1,18 @@
 package typings.cbor
 
 import typings.buffer.mod.Buffer
-import typings.cbor.commentedMod.CommentOptions
-import typings.cbor.commentedMod.commentCallback
-import typings.cbor.decoderMod.BufferLike
-import typings.cbor.decoderMod.DecoderOptions
-import typings.cbor.decoderMod.ExtendedResults
-import typings.cbor.decoderMod.decodeCallback
-import typings.cbor.diagnoseMod.DiagnoseOptions
-import typings.cbor.diagnoseMod.diagnoseCallback
-import typings.cbor.encoderMod.Encoder
-import typings.cbor.encoderMod.EncodingOptions
-import typings.cbor.simpleMod.Simple
+import typings.cbor.typesLibCommentedMod.CommentOptions
+import typings.cbor.typesLibCommentedMod.commentCallback
+import typings.cbor.typesLibDecoderMod.BufferLike
+import typings.cbor.typesLibDecoderMod.DecoderOptions
+import typings.cbor.typesLibDecoderMod.ExtendedResults
+import typings.cbor.typesLibDecoderMod.decodeCallback
+import typings.cbor.typesLibDiagnoseMod.DiagnoseOptions
+import typings.cbor.typesLibDiagnoseMod.diagnoseCallback
+import typings.cbor.typesLibEncoderMod.Encoder
+import typings.cbor.typesLibEncoderMod.EncodingOptions
+import typings.cbor.typesLibSimpleMod.Simple
+import typings.node.NodeJS.TypedArray
 import typings.node.streamMod.Readable
 import typings.nofilter.mod.^
 import typings.std.Map
@@ -229,14 +230,18 @@ object anon {
       * @returns {Promise} If callback not specified.
       */
     /* static member */
-    def diagnose(input: typings.cbor.diagnoseMod.BufferLike): js.Promise[Any] = js.native
-    def diagnose(input: typings.cbor.diagnoseMod.BufferLike, options: String): js.Promise[Any] = js.native
-    def diagnose(input: typings.cbor.diagnoseMod.BufferLike, options: String, cb: diagnoseCallback): js.Promise[Any] = js.native
-    def diagnose(input: typings.cbor.diagnoseMod.BufferLike, options: Unit, cb: diagnoseCallback): js.Promise[Any] = js.native
-    def diagnose(input: typings.cbor.diagnoseMod.BufferLike, options: DiagnoseOptions): js.Promise[Any] = js.native
-    def diagnose(input: typings.cbor.diagnoseMod.BufferLike, options: DiagnoseOptions, cb: diagnoseCallback): js.Promise[Any] = js.native
-    def diagnose(input: typings.cbor.diagnoseMod.BufferLike, options: diagnoseCallback): js.Promise[Any] = js.native
-    def diagnose(input: typings.cbor.diagnoseMod.BufferLike, options: diagnoseCallback, cb: diagnoseCallback): js.Promise[Any] = js.native
+    def diagnose(input: typings.cbor.typesLibDiagnoseMod.BufferLike): js.Promise[Any] = js.native
+    def diagnose(input: typings.cbor.typesLibDiagnoseMod.BufferLike, options: String): js.Promise[Any] = js.native
+    def diagnose(input: typings.cbor.typesLibDiagnoseMod.BufferLike, options: String, cb: diagnoseCallback): js.Promise[Any] = js.native
+    def diagnose(input: typings.cbor.typesLibDiagnoseMod.BufferLike, options: Unit, cb: diagnoseCallback): js.Promise[Any] = js.native
+    def diagnose(input: typings.cbor.typesLibDiagnoseMod.BufferLike, options: DiagnoseOptions): js.Promise[Any] = js.native
+    def diagnose(input: typings.cbor.typesLibDiagnoseMod.BufferLike, options: DiagnoseOptions, cb: diagnoseCallback): js.Promise[Any] = js.native
+    def diagnose(input: typings.cbor.typesLibDiagnoseMod.BufferLike, options: diagnoseCallback): js.Promise[Any] = js.native
+    def diagnose(
+      input: typings.cbor.typesLibDiagnoseMod.BufferLike,
+      options: diagnoseCallback,
+      cb: diagnoseCallback
+    ): js.Promise[Any] = js.native
   }
   
   @js.native
@@ -322,10 +327,7 @@ object anon {
       * @ignore
       */
     /* static member */
-    def _pushTypedArray(
-      gen: Encoder,
-      obj: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any
-    ): Boolean = js.native
+    def _pushTypedArray(gen: Encoder, obj: TypedArray): Boolean = js.native
     
     /**
       * @param {Encoder} gen Encoder.

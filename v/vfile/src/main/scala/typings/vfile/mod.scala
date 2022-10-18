@@ -1,6 +1,5 @@
 package typings.vfile
 
-import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import typings.vfile.libMod.Compatible
 import org.scalablytyped.runtime.StObject
@@ -44,7 +43,15 @@ object mod {
   // @ts-ignore It’s important to preserve this ignore statement. This makes sure
   // it works both with and without node types.
   // eslint-disable-next-line n/prefer-global/buffer
-  type MaybeBuffer = Buffer
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    any extends node.buffer.<global>.Buffer ? never : node.buffer.<global>.Buffer
+    }}}
+    */
+  @js.native
+  trait MaybeBuffer extends StObject
   
   type Value = String | MaybeBuffer
 }

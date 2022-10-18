@@ -2,7 +2,7 @@ package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
-import typings.ol.projectionMod.default
+import typings.ol.projProjectionMod.default
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +26,7 @@ object reprojMod {
     sourceExtent: Extent,
     targetResolution: Double,
     targetExtent: Extent,
-    triangulation: typings.ol.triangulationMod.default,
+    triangulation: typings.ol.reprojTriangulationMod.default,
     sources: js.Array[Any],
     gutter: Double
   ): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any], sourceResolution.asInstanceOf[js.Any], sourceExtent.asInstanceOf[js.Any], targetResolution.asInstanceOf[js.Any], targetExtent.asInstanceOf[js.Any], triangulation.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], gutter.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
@@ -38,7 +38,7 @@ object reprojMod {
     sourceExtent: Extent,
     targetResolution: Double,
     targetExtent: Extent,
-    triangulation: typings.ol.triangulationMod.default,
+    triangulation: typings.ol.reprojTriangulationMod.default,
     sources: js.Array[Any],
     gutter: Double,
     opt_renderEdges: Boolean
@@ -51,7 +51,7 @@ object reprojMod {
     sourceExtent: Extent,
     targetResolution: Double,
     targetExtent: Extent,
-    triangulation: typings.ol.triangulationMod.default,
+    triangulation: typings.ol.reprojTriangulationMod.default,
     sources: js.Array[Any],
     gutter: Double,
     opt_renderEdges: Boolean,
@@ -65,7 +65,7 @@ object reprojMod {
     sourceExtent: Extent,
     targetResolution: Double,
     targetExtent: Extent,
-    triangulation: typings.ol.triangulationMod.default,
+    triangulation: typings.ol.reprojTriangulationMod.default,
     sources: js.Array[Any],
     gutter: Double,
     opt_renderEdges: Unit,

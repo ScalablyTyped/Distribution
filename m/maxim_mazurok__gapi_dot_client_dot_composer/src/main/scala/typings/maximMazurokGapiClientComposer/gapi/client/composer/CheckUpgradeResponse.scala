@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientComposer.gapi.client.composer
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,7 @@ trait CheckUpgradeResponse extends StObject {
   
   /** Pypi dependencies specified in the environment configuration, at the time when the build was triggered. */
   var pypiDependencies: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.CheckUpgradeResponse & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object CheckUpgradeResponse {
@@ -52,9 +49,7 @@ object CheckUpgradeResponse {
     inline def setPypiConflictBuildLogExtractUndefined: Self = StObject.set(x, "pypiConflictBuildLogExtract", js.undefined)
     
     inline def setPypiDependencies(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.CheckUpgradeResponse & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "pypiDependencies", value.asInstanceOf[js.Any])
     
     inline def setPypiDependenciesUndefined: Self = StObject.set(x, "pypiDependencies", js.undefined)

@@ -34,6 +34,11 @@ trait Entry extends StObject {
   var directory: Boolean
   
   /**
+    * The number of the disk where the entry data starts.
+    */
+  var diskNumberStart: Double
+  
+  /**
     * `true` if the content of the entry is encrypted.
     */
   var encrypted: Boolean
@@ -160,6 +165,7 @@ object Entry {
     commentUTF8: Boolean,
     compressedSize: Double,
     directory: Boolean,
+    diskNumberStart: Double,
     encrypted: Boolean,
     externalFileAttribute: Double,
     filename: String,
@@ -178,7 +184,7 @@ object Entry {
     versionMadeBy: Double,
     zip64: Boolean
   ): Entry = {
-    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], commentUTF8 = commentUTF8.asInstanceOf[js.Any], compressedSize = compressedSize.asInstanceOf[js.Any], directory = directory.asInstanceOf[js.Any], encrypted = encrypted.asInstanceOf[js.Any], externalFileAttribute = externalFileAttribute.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], filenameUTF8 = filenameUTF8.asInstanceOf[js.Any], internalFileAttribute = internalFileAttribute.asInstanceOf[js.Any], lastModDate = lastModDate.asInstanceOf[js.Any], msDosCompatible = msDosCompatible.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], rawComment = rawComment.asInstanceOf[js.Any], rawExtraField = rawExtraField.asInstanceOf[js.Any], rawFilename = rawFilename.asInstanceOf[js.Any], rawLastModDate = rawLastModDate.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], uncompressedSize = uncompressedSize.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], versionMadeBy = versionMadeBy.asInstanceOf[js.Any], zip64 = zip64.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], commentUTF8 = commentUTF8.asInstanceOf[js.Any], compressedSize = compressedSize.asInstanceOf[js.Any], directory = directory.asInstanceOf[js.Any], diskNumberStart = diskNumberStart.asInstanceOf[js.Any], encrypted = encrypted.asInstanceOf[js.Any], externalFileAttribute = externalFileAttribute.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], filenameUTF8 = filenameUTF8.asInstanceOf[js.Any], internalFileAttribute = internalFileAttribute.asInstanceOf[js.Any], lastModDate = lastModDate.asInstanceOf[js.Any], msDosCompatible = msDosCompatible.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], rawComment = rawComment.asInstanceOf[js.Any], rawExtraField = rawExtraField.asInstanceOf[js.Any], rawFilename = rawFilename.asInstanceOf[js.Any], rawLastModDate = rawLastModDate.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], uncompressedSize = uncompressedSize.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], versionMadeBy = versionMadeBy.asInstanceOf[js.Any], zip64 = zip64.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entry]
   }
   
@@ -195,6 +201,8 @@ object Entry {
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     inline def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+    
+    inline def setDiskNumberStart(value: Double): Self = StObject.set(x, "diskNumberStart", value.asInstanceOf[js.Any])
     
     inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     

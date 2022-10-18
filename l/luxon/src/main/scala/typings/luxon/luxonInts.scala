@@ -1,15 +1,15 @@
 package typings.luxon
 
-import typings.luxon.datetimeMod.DayNumbers
-import typings.luxon.datetimeMod.HourNumbers
-import typings.luxon.datetimeMod.MonthNumbers
-import typings.luxon.datetimeMod.PossibleDaysInMonth
-import typings.luxon.datetimeMod.PossibleDaysInYear
-import typings.luxon.datetimeMod.PossibleWeeksInYear
-import typings.luxon.datetimeMod.QuarterNumbers
-import typings.luxon.datetimeMod.SecondNumbers
-import typings.luxon.datetimeMod.WeekNumbers
-import typings.luxon.datetimeMod.WeekdayNumbers
+import typings.luxon.srcDatetimeMod.DayNumbers
+import typings.luxon.srcDatetimeMod.HourNumbers
+import typings.luxon.srcDatetimeMod.MonthNumbers
+import typings.luxon.srcDatetimeMod.PossibleDaysInMonth
+import typings.luxon.srcDatetimeMod.PossibleDaysInYear
+import typings.luxon.srcDatetimeMod.PossibleWeeksInYear
+import typings.luxon.srcDatetimeMod.QuarterNumbers
+import typings.luxon.srcDatetimeMod.SecondNumbers
+import typings.luxon.srcDatetimeMod.WeekNumbers
+import typings.luxon.srcDatetimeMod.WeekdayNumbers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

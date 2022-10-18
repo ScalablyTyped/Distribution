@@ -1,19 +1,15 @@
 package typings.muiDatatables.anon
 
-import typings.muiDatatables.mod.MUIDataTableColumn
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabelsBody> */
+/* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabelsViewColumns> */
 trait PartialMUIDataTableTextLa extends StObject {
   
-  var columnHeaderTooltip: js.UndefOr[js.Function1[/* column */ MUIDataTableColumn, String]] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
   
-  var noMatch: js.UndefOr[String | ReactNode] = js.undefined
-  
-  var toolTip: js.UndefOr[String] = js.undefined
+  var titleAria: js.UndefOr[String] = js.undefined
 }
 object PartialMUIDataTableTextLa {
   
@@ -24,16 +20,12 @@ object PartialMUIDataTableTextLa {
   
   extension [Self <: PartialMUIDataTableTextLa](x: Self) {
     
-    inline def setColumnHeaderTooltip(value: /* column */ MUIDataTableColumn => String): Self = StObject.set(x, "columnHeaderTooltip", js.Any.fromFunction1(value))
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setColumnHeaderTooltipUndefined: Self = StObject.set(x, "columnHeaderTooltip", js.undefined)
+    inline def setTitleAria(value: String): Self = StObject.set(x, "titleAria", value.asInstanceOf[js.Any])
     
-    inline def setNoMatch(value: String | ReactNode): Self = StObject.set(x, "noMatch", value.asInstanceOf[js.Any])
+    inline def setTitleAriaUndefined: Self = StObject.set(x, "titleAria", js.undefined)
     
-    inline def setNoMatchUndefined: Self = StObject.set(x, "noMatch", js.undefined)
-    
-    inline def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
-    
-    inline def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

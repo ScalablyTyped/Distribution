@@ -72,7 +72,7 @@ object global {
       * Redux behaviour changed by middleware, so overloads here
       */
     /* augmented module */
-    object mod {
+    object reduxMod {
       
       /*
         * Overload to add api middleware support to Redux's dispatch() function.

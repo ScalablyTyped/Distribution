@@ -2,9 +2,9 @@ package typings.cassandraDriver.mod
 
 import typings.cassandraDriver.anon.Consistency
 import typings.cassandraDriver.anon.Language
-import typings.cassandraDriver.policiesMod.policies.loadBalancing.LoadBalancingPolicy
-import typings.cassandraDriver.policiesMod.policies.retry.RetryPolicy
-import typings.cassandraDriver.typesMod.types.consistencies
+import typings.cassandraDriver.libPoliciesMod.policies.loadBalancing.LoadBalancingPolicy
+import typings.cassandraDriver.libPoliciesMod.policies.retry.RetryPolicy
+import typings.cassandraDriver.libTypesMod.types.consistencies
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

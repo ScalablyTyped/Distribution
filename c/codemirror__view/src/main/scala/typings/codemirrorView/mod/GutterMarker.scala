@@ -11,9 +11,9 @@ A gutter marker represents a bit of information attached to a line
 in a specific gutter. Your own custom markers have to extend this
 class.
 */
-@JSImport("@codemirror/view", "GutterMarker")
+/* note: abstract class */ @JSImport("@codemirror/view", "GutterMarker")
 @js.native
-abstract class GutterMarker () extends RangeValue {
+open class GutterMarker () extends RangeValue {
   
   /**
     Called if the marker has a `toDOM` method and its representation

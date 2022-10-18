@@ -5,10 +5,10 @@ import typings.rbx.anon.ColumnGroupPropsBackgroundColor
 import typings.rbx.anon.Desktop
 import typings.rbx.anon.Fullhd
 import typings.rbx.anon.PickBadgeHelpersPropsFloa
-import typings.rbx.columnMod.ColumnBreakpointOptions
-import typings.rbx.exoticMod.ForwardRefAsExoticComponent
-import typings.rbx.exoticMod.FromReactType
-import typings.rbx.helpersMod.HelpersPropsOverrides
+import typings.rbx.baseExoticMod.ForwardRefAsExoticComponent
+import typings.rbx.baseHelpersMod.HelpersPropsOverrides
+import typings.rbx.gridColumnsColumnMod.ColumnBreakpointOptions
+import typings.rbx.gridTilesTileMod.TileProps
 import typings.rbx.rbxStrings.as
 import typings.rbx.rbxStrings.backgroundColor
 import typings.rbx.rbxStrings.badge
@@ -52,7 +52,6 @@ import typings.rbx.rbxStrings.tooltipResponsive
 import typings.rbx.rbxStrings.touch
 import typings.rbx.rbxStrings.unselectable
 import typings.rbx.rbxStrings.widescreen
-import typings.rbx.tileMod.TileProps
 import typings.react.mod.ComponentProps
 import typings.react.mod.ElementType
 import typings.react.mod.RefAttributes
@@ -76,7 +75,9 @@ object gridMod {
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 
             hidden | overlay | size | italic | relative | tooltip | touch | as | mobile | tablet | desktop | widescreen | fullhd | className | badge | badgeColor | badgeOutlined | badgeRounded | badgeSize | clearfix | pull | marginless | paddingless | radiusless | shadowless | unselectable | clipped | responsive | textAlign | textSize | tooltipActive | tooltipColor | tooltipMultiline | tooltipPosition | tooltipResponsive | backgroundColor | textColor | textTransform | textWeight | invisible | srOnly | narrow | offset
           ]
-        ]) & (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
+        ]) & (RefAttributes[
+          /* import warning: importer.ImportType#apply Failed type conversion: TAsComponent extends 'symbol' | 'object' | 'big' | 'link' | 'small' | 'sub' | 'sup' | 'track' | 'progress' | 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'label' | 'legend' | 'li' | 'main' | 'map' | 'mark' | 'menu' | 'meta' | 'meter' | 'nav' | 'noscript' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'script' | 'section' | 'select' | 'source' | 'span' | 'strong' | 'style' | 'summary' | 'table' | 'tbody' | 'td' | 'template' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'svg' | 'switch' | 'text' | 'textPath' | 'tspan' | 'use' | 'view' | 'menuitem' | 'keygen' | 'noindex' | 'webview' | 'animate' | 'animateMotion' | 'animateTransform' | 'feDropShadow' | 'mpath' ? rbx.rbx/base/exotic.FromReactType<TAsComponent> : TAsComponent */ js.Any
+        ])
     ): Element | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
     
     @JSImport("rbx/grid", "Column")

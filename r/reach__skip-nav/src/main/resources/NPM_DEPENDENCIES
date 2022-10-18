@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@reach/skip-nav" : "0.17.0"
+      "@reach/skip-nav" : "0.18.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@reach/skip-nav" : "0.17.0"
+      "@reach/skip-nav" : "0.18.0"
     }
   ],
   "compile-devDependencies" : [

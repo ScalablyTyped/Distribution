@@ -15,7 +15,7 @@ trait Options extends StObject {
   /**
     * Configure Ajv, which is used to evaluate conditional schemas and combined (anyOf) schemas
     */
-  var ajv: js.UndefOr[typings.ajv.coreMod.Options] = js.undefined
+  var ajv: js.UndefOr[typings.ajv.distCoreMod.Options] = js.undefined
   
   /**
     * @deprecated 
@@ -47,7 +47,7 @@ object Options {
   
   extension [Self <: Options](x: Self) {
     
-    inline def setAjv(value: typings.ajv.coreMod.Options): Self = StObject.set(x, "ajv", value.asInstanceOf[js.Any])
+    inline def setAjv(value: typings.ajv.distCoreMod.Options): Self = StObject.set(x, "ajv", value.asInstanceOf[js.Any])
     
     inline def setAjvUndefined: Self = StObject.set(x, "ajv", js.undefined)
     

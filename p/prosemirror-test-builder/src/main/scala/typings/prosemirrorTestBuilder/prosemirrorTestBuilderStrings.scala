@@ -9,14 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object prosemirrorTestBuilderStrings {
   
   @js.native
-  sealed trait Builder extends StObject
-  inline def Builder: Builder = "Builder".asInstanceOf[Builder]
-  
-  @js.native
-  sealed trait ProsemirrorTestBuilder extends StObject
-  inline def ProsemirrorTestBuilder: ProsemirrorTestBuilder = "ProsemirrorTestBuilder".asInstanceOf[ProsemirrorTestBuilder]
-  
-  @js.native
   sealed trait a
     extends StObject
        with TestMarksUnion

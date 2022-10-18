@@ -1,15 +1,15 @@
 package typings.awsSdkMiddlewareSerde
 
-import typings.awsSdkMiddlewareSerde.serdePluginMod.V1OrV2Endpoint
-import typings.awsSdkTypes.middlewareMod.DeserializeHandlerOptions
-import typings.awsSdkTypes.middlewareMod.DeserializeMiddleware
-import typings.awsSdkTypes.middlewareMod.Pluggable
-import typings.awsSdkTypes.middlewareMod.SerializeHandlerOptions
-import typings.awsSdkTypes.middlewareMod.SerializeMiddleware
-import typings.awsSdkTypes.responseMod.MetadataBearer
-import typings.awsSdkTypes.serdeMod.EndpointBearer
-import typings.awsSdkTypes.serdeMod.RequestSerializer
-import typings.awsSdkTypes.serdeMod.ResponseDeserializer
+import typings.awsSdkMiddlewareSerde.distTypesSerdePluginMod.V1OrV2Endpoint
+import typings.awsSdkTypes.distTypesMiddlewareMod.DeserializeHandlerOptions
+import typings.awsSdkTypes.distTypesMiddlewareMod.DeserializeMiddleware
+import typings.awsSdkTypes.distTypesMiddlewareMod.Pluggable
+import typings.awsSdkTypes.distTypesMiddlewareMod.SerializeHandlerOptions
+import typings.awsSdkTypes.distTypesMiddlewareMod.SerializeMiddleware
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typings.awsSdkTypes.distTypesSerdeMod.EndpointBearer
+import typings.awsSdkTypes.distTypesSerdeMod.RequestSerializer
+import typings.awsSdkTypes.distTypesSerdeMod.ResponseDeserializer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

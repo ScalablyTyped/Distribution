@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "CanvasElement")
+/* note: abstract class */ @JSImport("k6/html", "CanvasElement")
 @js.native
-abstract class CanvasElement () extends Element {
+open class CanvasElement () extends Element {
   
   /** Coordinate space height in CSS pixels. */
   def height(): Double = js.native

@@ -37,7 +37,7 @@ trait ChartData extends StObject {
     * [Api set: ExcelApi 1.7]
     */
   var chartType: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84, starting with typings.officeJs.Excel.ChartType, typings.officeJs.officeJsStrings.Invalid, typings.officeJs.officeJsStrings.ColumnClustered */ Any
   ] = js.undefined
   
   /**
@@ -219,7 +219,9 @@ object ChartData {
     
     inline def setCategoryLabelLevelUndefined: Self = StObject.set(x, "categoryLabelLevel", js.undefined)
     
-    inline def setChartType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84 */ Any): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
+    inline def setChartType(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84, starting with typings.officeJs.Excel.ChartType, typings.officeJs.officeJsStrings.Invalid, typings.officeJs.officeJsStrings.ColumnClustered */ Any
+    ): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
     
     inline def setChartTypeUndefined: Self = StObject.set(x, "chartType", js.undefined)
     

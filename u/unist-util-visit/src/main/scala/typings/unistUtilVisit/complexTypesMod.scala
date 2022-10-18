@@ -24,12 +24,20 @@ object complexTypesMod {
   
   type BuildVisitorFromMatch[Visited /* <: Node[Data] */, Ancestor /* <: Parent[Node[Data], NodeData[Node[Data]]] */] = Visitor[Visited, ParentsOf[Ancestor, Visited]]
   
-  type ParentsOf[Ancestor /* <: Node[Data] */, Child /* <: Node[Data] */] = Ancestor
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Ancestor extends unist.unist.Parent<unist.unist.Node<unist.unist.Data>, unist.unist.NodeData<unist.unist.Node<unist.unist.Data>>> ? Child extends Ancestor['children'][number] ? Ancestor : never : never
+    }}}
+    */
+  @js.native
+  trait ParentsOf[Ancestor /* <: Node[Data] */, Child /* <: Node[Data] */] extends StObject
   
   type Visitor[Visited /* <: Node[Data] */, Ancestor /* <: Parent[Node[Data], NodeData[Node[Data]]] */] = js.Function3[
     /* node */ Visited, 
-    /* index */ Double | Null, 
-    /* parent */ Ancestor | Null, 
+    /* import warning: importer.ImportType#apply Failed type conversion: Visited extends unist.unist.Node<unist.unist.Data> ? number | null : never */ /* index */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: Ancestor extends unist.unist.Node<unist.unist.Data> ? Ancestor | null : Ancestor */ /* parent */ js.Any, 
     VisitorResult
   ]
 }

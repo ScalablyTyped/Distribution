@@ -1,6 +1,6 @@
 package typings.rdflib.anon
 
-import typings.rdflib.tfTypesMod.Term
+import typings.rdflib.libTfTypesMod.Term
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

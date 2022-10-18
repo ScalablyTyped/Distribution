@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Omit
 import typings.zustand.anon.Dispatch
 import typings.zustand.anon.Immutable
-import typings.zustand.anon.`2`
-import typings.zustand.zustandVanillaMod.StateCreator
-import typings.zustand.zustandVanillaMod.StoreMutatorIdentifier
+import typings.zustand.vanillaMod.StateCreator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,37 +83,21 @@ object middlewareDevtoolsMod {
     }
   }
   
-  @js.native
-  trait Devtools_ extends StObject {
-    
-    def apply[T, Mps /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */, Mcs /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */](
-      initializer: StateCreator[
-          T, 
-          /* import warning: importer.ImportType#apply c repeated non-array type: Mps */ js.Array[Mps], 
-          Mcs, 
-          T
-        ]
-    ): StateCreator[
-        T, 
-        Mps, 
-        /* import warning: importer.ImportType#apply c repeated non-array type: Mcs */ js.Array[Mcs], 
-        T
-      ] = js.native
-    def apply[T, Mps /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */, Mcs /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */](
-      initializer: StateCreator[
-          T, 
-          /* import warning: importer.ImportType#apply c repeated non-array type: Mps */ js.Array[Mps], 
-          Mcs, 
-          T
-        ],
-      devtoolsOptions: DevtoolsOptions
-    ): StateCreator[
-        T, 
-        Mps, 
-        /* import warning: importer.ImportType#apply c repeated non-array type: Mcs */ js.Array[Mcs], 
-        T
-      ] = js.native
-  }
+  type Devtools_ = js.Function2[
+    /* initializer */ StateCreator[
+      Any, 
+      /* import warning: importer.ImportType#apply c repeated non-array type: [] */ js.Array[js.Array[Any]], 
+      js.Array[Any], 
+      Any
+    ], 
+    /* devtoolsOptions */ js.UndefOr[DevtoolsOptions], 
+    StateCreator[
+      Any, 
+      js.Array[Any], 
+      /* import warning: importer.ImportType#apply c repeated non-array type: [] */ js.Array[js.Array[Any]], 
+      Any
+    ]
+  ]
   
   trait EnhancerOptions extends StObject {
     
@@ -274,9 +256,25 @@ object middlewareDevtoolsMod {
   
   type NamedSet[T] = /* import warning: importer.ImportType#apply Failed type conversion: zustand.zustand/middleware/devtools.WithDevtools<zustand.zustand/vanilla.StoreApi<T>>['setState'] */ js.Any
   
-  type StoreDevtools[S] = `2`
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S extends {setState (a : infer Sa): infer Sr} ? {setState <A extends string | {  type :unknown}>(a : [a: ...zustand.zustand/middleware/devtools.TakeTwo<Sa>, action: A | undefined]): Sr} : never
+    }}}
+    */
+  @js.native
+  trait StoreDevtools[S] extends StObject
   
-  type TakeTwo[T] = (js.Tuple2[js.UndefOr[Any | Unit], js.UndefOr[Any | Unit]]) | T | (/* import warning: importer.ImportType#apply c repeated non-array type: T */ /* a0 */ js.Array[T])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends [] ? [undefined, undefined] : T extends [unknown] ? [a0: ...T, a1: undefined] : T extends [unknown | undefined] ? [a0: ...T, a1: undefined] : T extends [unknown, unknown] ? T : T extends [unknown, unknown | undefined] ? T : T extends [unknown | undefined, unknown | undefined] ? T : T extends [infer A0, infer A1, ...std.Array<unknown>] ? [A0, A1] : T extends [infer A0, infer A1 | undefined, ...std.Array<unknown>] ? [A0, A1 | undefined] : T extends [infer A0 | undefined, infer A1 | undefined, ...std.Array<unknown>] ? [A0 | undefined, A1 | undefined] : never
+    }}}
+    */
+  @js.native
+  trait TakeTwo[T] extends StObject
   
   type WithDevtools[S] = Write[S, StoreDevtools[S]]
   

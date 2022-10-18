@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This class represents marker, which offers a means of identifying a location on the map with an icon.
   */
-@JSGlobal("H.map.AbstractMarker")
+/* note: abstract class */ @JSGlobal("H.map.AbstractMarker")
 @js.native
-abstract class AbstractMarker protected ()
+open class AbstractMarker protected ()
   extends StObject
      with typings.heremaps.H.map.AbstractMarker {
   /**

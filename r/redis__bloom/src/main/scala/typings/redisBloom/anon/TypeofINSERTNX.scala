@@ -1,7 +1,7 @@
 package typings.redisBloom.anon
 
-import typings.redisBloom.cuckooMod.InsertOptions
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisBloom.distCommandsCuckooMod.InsertOptions
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

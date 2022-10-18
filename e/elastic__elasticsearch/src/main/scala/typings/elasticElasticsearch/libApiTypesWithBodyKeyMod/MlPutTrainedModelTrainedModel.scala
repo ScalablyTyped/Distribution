@@ -1,0 +1,36 @@
+package typings.elasticElasticsearch.libApiTypesWithBodyKeyMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait MlPutTrainedModelTrainedModel extends StObject {
+  
+  var ensemble: js.UndefOr[MlPutTrainedModelEnsemble] = js.undefined
+  
+  var tree: js.UndefOr[MlPutTrainedModelTrainedModelTree] = js.undefined
+  
+  var tree_node: js.UndefOr[MlPutTrainedModelTrainedModelTreeNode] = js.undefined
+}
+object MlPutTrainedModelTrainedModel {
+  
+  inline def apply(): MlPutTrainedModelTrainedModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[MlPutTrainedModelTrainedModel]
+  }
+  
+  extension [Self <: MlPutTrainedModelTrainedModel](x: Self) {
+    
+    inline def setEnsemble(value: MlPutTrainedModelEnsemble): Self = StObject.set(x, "ensemble", value.asInstanceOf[js.Any])
+    
+    inline def setEnsembleUndefined: Self = StObject.set(x, "ensemble", js.undefined)
+    
+    inline def setTree(value: MlPutTrainedModelTrainedModelTree): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    
+    inline def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
+    
+    inline def setTree_node(value: MlPutTrainedModelTrainedModelTreeNode): Self = StObject.set(x, "tree_node", value.asInstanceOf[js.Any])
+    
+    inline def setTree_nodeUndefined: Self = StObject.set(x, "tree_node", js.undefined)
+  }
+}

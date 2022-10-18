@@ -1,7 +1,7 @@
 package typings.firebaseApp
 
-import typings.firebaseApp.typesMod.HeartbeatsByUserAgent
-import typings.firebaseApp.typesMod.SingleDateHeartbeat
+import typings.firebaseApp.distAppSrcTypesMod.HeartbeatsByUserAgent
+import typings.firebaseApp.distAppSrcTypesMod.SingleDateHeartbeat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,15 +93,15 @@ object anon {
   
   trait UnsentEntries extends StObject {
     
-    var heartbeatsToSend: js.Array[typings.firebaseApp.srcTypesMod.HeartbeatsByUserAgent]
+    var heartbeatsToSend: js.Array[typings.firebaseApp.distEsmAppSrcTypesMod.HeartbeatsByUserAgent]
     
-    var unsentEntries: js.Array[typings.firebaseApp.srcTypesMod.SingleDateHeartbeat]
+    var unsentEntries: js.Array[typings.firebaseApp.distEsmAppSrcTypesMod.SingleDateHeartbeat]
   }
   object UnsentEntries {
     
     inline def apply(
-      heartbeatsToSend: js.Array[typings.firebaseApp.srcTypesMod.HeartbeatsByUserAgent],
-      unsentEntries: js.Array[typings.firebaseApp.srcTypesMod.SingleDateHeartbeat]
+      heartbeatsToSend: js.Array[typings.firebaseApp.distEsmAppSrcTypesMod.HeartbeatsByUserAgent],
+      unsentEntries: js.Array[typings.firebaseApp.distEsmAppSrcTypesMod.SingleDateHeartbeat]
     ): UnsentEntries = {
       val __obj = js.Dynamic.literal(heartbeatsToSend = heartbeatsToSend.asInstanceOf[js.Any], unsentEntries = unsentEntries.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnsentEntries]
@@ -109,13 +109,13 @@ object anon {
     
     extension [Self <: UnsentEntries](x: Self) {
       
-      inline def setHeartbeatsToSend(value: js.Array[typings.firebaseApp.srcTypesMod.HeartbeatsByUserAgent]): Self = StObject.set(x, "heartbeatsToSend", value.asInstanceOf[js.Any])
+      inline def setHeartbeatsToSend(value: js.Array[typings.firebaseApp.distEsmAppSrcTypesMod.HeartbeatsByUserAgent]): Self = StObject.set(x, "heartbeatsToSend", value.asInstanceOf[js.Any])
       
-      inline def setHeartbeatsToSendVarargs(value: typings.firebaseApp.srcTypesMod.HeartbeatsByUserAgent*): Self = StObject.set(x, "heartbeatsToSend", js.Array(value*))
+      inline def setHeartbeatsToSendVarargs(value: typings.firebaseApp.distEsmAppSrcTypesMod.HeartbeatsByUserAgent*): Self = StObject.set(x, "heartbeatsToSend", js.Array(value*))
       
-      inline def setUnsentEntries(value: js.Array[typings.firebaseApp.srcTypesMod.SingleDateHeartbeat]): Self = StObject.set(x, "unsentEntries", value.asInstanceOf[js.Any])
+      inline def setUnsentEntries(value: js.Array[typings.firebaseApp.distEsmAppSrcTypesMod.SingleDateHeartbeat]): Self = StObject.set(x, "unsentEntries", value.asInstanceOf[js.Any])
       
-      inline def setUnsentEntriesVarargs(value: typings.firebaseApp.srcTypesMod.SingleDateHeartbeat*): Self = StObject.set(x, "unsentEntries", js.Array(value*))
+      inline def setUnsentEntriesVarargs(value: typings.firebaseApp.distEsmAppSrcTypesMod.SingleDateHeartbeat*): Self = StObject.set(x, "unsentEntries", js.Array(value*))
     }
   }
 }

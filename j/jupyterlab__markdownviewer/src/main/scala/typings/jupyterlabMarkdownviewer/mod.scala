@@ -1,8 +1,8 @@
 package typings.jupyterlabMarkdownviewer
 
-import typings.jupyterlabDocregistry.defaultMod.DocumentWidget.IOptions
-import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
-import typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer.IConfig
+import typings.jupyterlabDocregistry.libDefaultMod.DocumentWidget.IOptions
+import typings.jupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
+import typings.jupyterlabMarkdownviewer.libWidgetMod.MarkdownViewer.IConfig
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,23 +12,23 @@ object mod {
   
   @JSImport("@jupyterlab/markdownviewer", "IMarkdownViewerTracker")
   @js.native
-  val IMarkdownViewerTracker: Token[typings.jupyterlabMarkdownviewer.tokensMod.IMarkdownViewerTracker] = js.native
+  val IMarkdownViewerTracker: Token[typings.jupyterlabMarkdownviewer.libTokensMod.IMarkdownViewerTracker] = js.native
   
   @JSImport("@jupyterlab/markdownviewer", "MarkdownDocument")
   @js.native
-  class MarkdownDocument protected ()
-    extends typings.jupyterlabMarkdownviewer.widgetMod.MarkdownDocument {
-    def this(options: IOptions[typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer, IModel]) = this()
+  open class MarkdownDocument protected ()
+    extends typings.jupyterlabMarkdownviewer.libWidgetMod.MarkdownDocument {
+    def this(options: IOptions[typings.jupyterlabMarkdownviewer.libWidgetMod.MarkdownViewer, IModel]) = this()
   }
   
   @JSImport("@jupyterlab/markdownviewer", "MarkdownViewer")
   @js.native
-  class MarkdownViewer protected ()
-    extends typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer {
+  open class MarkdownViewer protected ()
+    extends typings.jupyterlabMarkdownviewer.libWidgetMod.MarkdownViewer {
     /**
       * Construct a new markdown viewer widget.
       */
-    def this(options: typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewer.IOptions) = this()
+    def this(options: typings.jupyterlabMarkdownviewer.libWidgetMod.MarkdownViewer.IOptions) = this()
   }
   object MarkdownViewer {
     
@@ -42,11 +42,11 @@ object mod {
   
   @JSImport("@jupyterlab/markdownviewer", "MarkdownViewerFactory")
   @js.native
-  class MarkdownViewerFactory protected ()
-    extends typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewerFactory {
+  open class MarkdownViewerFactory protected ()
+    extends typings.jupyterlabMarkdownviewer.libWidgetMod.MarkdownViewerFactory {
     /**
       * Construct a new markdown viewer widget factory.
       */
-    def this(options: typings.jupyterlabMarkdownviewer.widgetMod.MarkdownViewerFactory.IOptions) = this()
+    def this(options: typings.jupyterlabMarkdownviewer.libWidgetMod.MarkdownViewerFactory.IOptions) = this()
   }
 }

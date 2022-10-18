@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.MinuteStep
-import typings.antDesignReactNative.datePickerViewMod.default
+import typings.antDesignReactNative.libDatePickerViewMod.default
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

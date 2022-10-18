@@ -1,6 +1,7 @@
 package typings.gulpNgAnnotate
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : NgAnnotate = js.native
   
-  type NgAnnotate = js.Function1[
-    /* option */ js.UndefOr[Option], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ]
+  type NgAnnotate = js.Function1[/* option */ js.UndefOr[Option], ReadWriteStream]
   
   //TODO: Should be on ng-annotate module
   trait Option extends StObject {

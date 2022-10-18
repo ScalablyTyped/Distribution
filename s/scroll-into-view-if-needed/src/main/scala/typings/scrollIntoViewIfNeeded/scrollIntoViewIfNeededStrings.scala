@@ -1,8 +1,8 @@
 package typings.scrollIntoViewIfNeeded
 
-import typings.scrollIntoViewIfNeeded.typesMod.ScrollBehavior
-import typings.scrollIntoViewIfNeeded.typesMod.ScrollLogicalPosition
-import typings.scrollIntoViewIfNeeded.typesMod.ScrollMode
+import typings.scrollIntoViewIfNeeded.typingsTypesMod.ScrollBehavior
+import typings.scrollIntoViewIfNeeded.typingsTypesMod.ScrollLogicalPosition
+import typings.scrollIntoViewIfNeeded.typingsTypesMod.ScrollMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

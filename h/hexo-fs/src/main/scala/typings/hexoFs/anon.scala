@@ -10,45 +10,43 @@ object anon {
   
   trait `0` extends StObject {
     
-    var encoding: buffer
+    var encoding: BufferEncoding | Null
   }
   object `0` {
     
     inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal(encoding = "buffer")
+      val __obj = js.Dynamic.literal(encoding = null)
       __obj.asInstanceOf[`0`]
     }
     
     extension [Self <: `0`](x: Self) {
       
-      inline def setEncoding(value: buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
     }
   }
   
   trait `1` extends StObject {
     
-    var encoding: js.UndefOr[String | Null] = js.undefined
+    var encoding: buffer
   }
   object `1` {
     
     inline def apply(): `1` = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(encoding = "buffer")
       __obj.asInstanceOf[`1`]
     }
     
     extension [Self <: `1`](x: Self) {
       
-      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
-      
-      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
-      
-      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncoding(value: buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
   
   trait `2` extends StObject {
     
-    var encoding: js.UndefOr[BufferEncoding | Null] = js.undefined
+    var encoding: js.UndefOr[String | Null] = js.undefined
   }
   object `2` {
     
@@ -58,6 +56,27 @@ object anon {
     }
     
     extension [Self <: `2`](x: Self) {
+      
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    }
+  }
+  
+  trait `3` extends StObject {
+    
+    var encoding: js.UndefOr[BufferEncoding | Null] = js.undefined
+  }
+  object `3` {
+    
+    inline def apply(): `3` = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[`3`]
+    }
+    
+    extension [Self <: `3`](x: Self) {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -236,39 +255,20 @@ object anon {
   
   trait Encoding extends StObject {
     
-    var encoding: BufferEncoding | Null
-  }
-  object Encoding {
-    
-    inline def apply(): Encoding = {
-      val __obj = js.Dynamic.literal(encoding = null)
-      __obj.asInstanceOf[Encoding]
-    }
-    
-    extension [Self <: Encoding](x: Self) {
-      
-      inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
-      
-      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
-    }
-  }
-  
-  trait Escape extends StObject {
-    
     var encoding: js.UndefOr[String] = js.undefined
     
     var escape: js.UndefOr[Boolean] = js.undefined
     
     var flag: js.UndefOr[String] = js.undefined
   }
-  object Escape {
+  object Encoding {
     
-    inline def apply(): Escape = {
+    inline def apply(): Encoding = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Escape]
+      __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Escape](x: Self) {
+    extension [Self <: Encoding](x: Self) {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

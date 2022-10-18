@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "Toolkit")
 @js.native
 open class Toolkit ()
-  extends typings.stormReactDiagrams.toolkitMod.Toolkit
+  extends typings.stormReactDiagrams.distSrcToolkitMod.Toolkit
 /* static members */
 object Toolkit {
   
@@ -41,19 +41,19 @@ object Toolkit {
   inline def closest(element: Element, selector: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def generateCurvePath(
-    firstPoint: typings.stormReactDiagrams.pointModelMod.PointModel,
-    lastPoint: typings.stormReactDiagrams.pointModelMod.PointModel
+    firstPoint: typings.stormReactDiagrams.distSrcModelsPointModelMod.PointModel,
+    lastPoint: typings.stormReactDiagrams.distSrcModelsPointModelMod.PointModel
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCurvePath")(firstPoint.asInstanceOf[js.Any], lastPoint.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateCurvePath(
-    firstPoint: typings.stormReactDiagrams.pointModelMod.PointModel,
-    lastPoint: typings.stormReactDiagrams.pointModelMod.PointModel,
+    firstPoint: typings.stormReactDiagrams.distSrcModelsPointModelMod.PointModel,
+    lastPoint: typings.stormReactDiagrams.distSrcModelsPointModelMod.PointModel,
     curvy: Double
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCurvePath")(firstPoint.asInstanceOf[js.Any], lastPoint.asInstanceOf[js.Any], curvy.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def generateDynamicPath(pathCoords: js.Array[js.Array[Double]]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateDynamicPath")(pathCoords.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def generateLinePath(
-    firstPoint: typings.stormReactDiagrams.pointModelMod.PointModel,
-    lastPoint: typings.stormReactDiagrams.pointModelMod.PointModel
+    firstPoint: typings.stormReactDiagrams.distSrcModelsPointModelMod.PointModel,
+    lastPoint: typings.stormReactDiagrams.distSrcModelsPointModelMod.PointModel
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateLinePath")(firstPoint.asInstanceOf[js.Any], lastPoint.asInstanceOf[js.Any])).asInstanceOf[String]
 }

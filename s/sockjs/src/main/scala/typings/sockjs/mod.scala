@@ -2,10 +2,11 @@ package typings.sockjs
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.sockjs.anon.Address
 import typings.sockjs.sockjsStrings.close
 import typings.sockjs.sockjsStrings.connection
@@ -23,9 +24,10 @@ object mod {
   inline def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
   inline def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream * / any */ @js.native
-  trait Connection extends StObject {
+  @js.native
+  trait Connection
+    extends StObject
+       with ReadWriteStream {
     
     var address: StringDictionary[Address] = js.native
     

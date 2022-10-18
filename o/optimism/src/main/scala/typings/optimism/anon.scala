@@ -1,6 +1,6 @@
 package typings.optimism
 
-import typings.optimism.depMod.EntryMethodName
+import typings.optimism.libDepMod.EntryMethodName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

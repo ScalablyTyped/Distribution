@@ -6,11 +6,6 @@ import typings.chromeApps.chromeAppsStrings.CHROME_UPDATE
 import typings.chromeApps.chromeAppsStrings.INSTALL
 import typings.chromeApps.chromeAppsStrings.SHARED_MODULE_UPDATE
 import typings.chromeApps.chromeAppsStrings.UPDATE
-import typings.chromeApps.chromeAppsStrings.chrome_update_
-import typings.chromeApps.chromeAppsStrings.install_
-import typings.chromeApps.chromeAppsStrings.shared_module_update_
-import typings.chromeApps.chromeAppsStrings.update_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,10 +32,7 @@ trait InstalledDetails extends StObject {
   var reason: ToStringLiteral[
     CHROMEUPDATE, 
     /* keyof chrome-apps.anon.CHROMEUPDATE */ INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
-    Exclude[
-      /* keyof chrome-apps.anon.CHROMEUPDATE */ INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
-      install_ | update_ | chrome_update_ | shared_module_update_
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'} extends keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'} ? std.Exclude<keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'}, 'install' | 'update' | 'chrome_update' | 'shared_module_update'> : never */ js.Any
   ]
 }
 object InstalledDetails {
@@ -49,10 +41,7 @@ object InstalledDetails {
     reason: ToStringLiteral[
       CHROMEUPDATE, 
       /* keyof chrome-apps.anon.CHROMEUPDATE */ INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
-      Exclude[
-        /* keyof chrome-apps.anon.CHROMEUPDATE */ INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
-        install_ | update_ | chrome_update_ | shared_module_update_
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'} extends keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'} ? std.Exclude<keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'}, 'install' | 'update' | 'chrome_update' | 'shared_module_update'> : never */ js.Any
     ]
   ): InstalledDetails = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
@@ -73,10 +62,7 @@ object InstalledDetails {
       value: ToStringLiteral[
           CHROMEUPDATE, 
           /* keyof chrome-apps.anon.CHROMEUPDATE */ INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
-          Exclude[
-            /* keyof chrome-apps.anon.CHROMEUPDATE */ INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
-            install_ | update_ | chrome_update_ | shared_module_update_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'} extends keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'} ? std.Exclude<keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'}, 'install' | 'update' | 'chrome_update' | 'shared_module_update'> : never */ js.Any
         ]
     ): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

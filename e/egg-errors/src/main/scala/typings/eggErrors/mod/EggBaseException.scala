@@ -1,6 +1,6 @@
 package typings.eggErrors.mod
 
-import typings.eggErrors.errorOptionsMod.default
+import typings.eggErrors.libErrorOptionsMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("egg-errors", "EggBaseException")
 @js.native
 open class EggBaseException[T /* <: default */] ()
-  extends typings.eggErrors.baseExceptionMod.default[T] {
+  extends typings.eggErrors.libBaseExceptionMod.default[T] {
   def this(options: T) = this()
 }

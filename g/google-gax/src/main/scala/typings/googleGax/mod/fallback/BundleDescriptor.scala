@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.BundleDescriptor")
 @js.native
 open class BundleDescriptor protected ()
-  extends typings.googleGax.fallbackMod.BundleDescriptor {
+  extends typings.googleGax.buildSrcFallbackMod.BundleDescriptor {
   /**
     * Describes the structure of bundled call.
     *

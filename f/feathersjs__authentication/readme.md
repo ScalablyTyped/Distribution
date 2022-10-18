@@ -10,10 +10,10 @@ Add Authentication to your FeathersJS app.
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/authentication |
 | Keywords           | feathers, feathers-plugin |
-| # releases         | 39 |
-| # dependents       | 73 |
-| # downloads        | 867513 |
-| # stars            | 0 |
+| # releases         | 35 |
+| # dependents       | 0.0 |
+| # downloads        | 133571.33333333334 |
+| # stars            | 14155.0 |
 
 ## Links
 - [Homepage](https://feathersjs.com)

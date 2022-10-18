@@ -1,9 +1,9 @@
 package typings.workboxRouting
 
-import typings.workboxRouting.httpmethodMod.HTTPMethod
-import typings.workboxRouting.routeHandlerMod.RouteHandler
-import typings.workboxRouting.routeMatchCallbackMod.RouteMatchCallback
-import typings.workboxRouting.routeMatchCallbackMod.RouteMatchCallbackOptions
+import typings.workboxRouting.typesHttpmethodMod.HTTPMethod
+import typings.workboxRouting.typesRouteHandlerMod.RouteHandler
+import typings.workboxRouting.typesRouteMatchCallbackMod.RouteMatchCallback
+import typings.workboxRouting.typesRouteMatchCallbackMod.RouteMatchCallbackOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

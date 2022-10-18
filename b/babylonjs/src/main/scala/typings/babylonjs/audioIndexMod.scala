@@ -1,9 +1,9 @@
 package typings.babylonjs
 
-import typings.babylonjs.isoundoptionsMod.ISoundOptions
-import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.audioInterfacesIsoundoptionsMod.ISoundOptions
+import typings.babylonjs.audioSoundTrackMod.ISoundTrackOptions
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.soundTrackMod.ISoundTrackOptions
 import typings.babylonjs.typesMod.Nullable
 import typings.std.AudioContext
 import typings.std.AudioDestinationNode
@@ -22,7 +22,7 @@ object audioIndexMod {
     * @param scene defines hosting scene
     */
   open class Analyser ()
-    extends typings.babylonjs.analyserMod.Analyser {
+    extends typings.babylonjs.audioAnalyserMod.Analyser {
     def this(scene: Nullable[Scene]) = this()
   }
   
@@ -38,7 +38,7 @@ object audioIndexMod {
     * @param audioDestination defines the audio destination node to be used by audio engine
     */
   open class AudioEngine ()
-    extends typings.babylonjs.audioEngineMod.AudioEngine {
+    extends typings.babylonjs.audioAudioEngineMod.AudioEngine {
     def this(hostElement: Nullable[HTMLElement]) = this()
     def this(hostElement: Unit, audioContext: Nullable[AudioContext]) = this()
     def this(hostElement: Nullable[HTMLElement], audioContext: Nullable[AudioContext]) = this()
@@ -71,7 +71,7 @@ object audioIndexMod {
     * @param scene Defines the scene to register the component in
     */
   open class AudioSceneComponent ()
-    extends typings.babylonjs.audioSceneComponentMod.AudioSceneComponent {
+    extends typings.babylonjs.audioAudioSceneComponentMod.AudioSceneComponent {
     def this(scene: Nullable[Scene]) = this()
   }
   /* static members */
@@ -90,7 +90,7 @@ object audioIndexMod {
   @JSImport("babylonjs/Audio/index", "Sound")
   @js.native
   open class Sound protected ()
-    extends typings.babylonjs.soundMod.Sound {
+    extends typings.babylonjs.audioSoundMod.Sound {
     /**
       * Create a sound and attach it to a scene
       * @param name Name of your sound
@@ -157,8 +157,13 @@ object audioIndexMod {
       * @param sourceSound Define a sound place holder if do not need to instantiate a new one
       * @returns the newly parsed sound
       */
-    inline def Parse(parsedSound: Any, scene: Scene, rootUrl: String): typings.babylonjs.soundMod.Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.soundMod.Sound]
-    inline def Parse(parsedSound: Any, scene: Scene, rootUrl: String, sourceSound: typings.babylonjs.soundMod.Sound): typings.babylonjs.soundMod.Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sourceSound.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.soundMod.Sound]
+    inline def Parse(parsedSound: Any, scene: Scene, rootUrl: String): typings.babylonjs.audioSoundMod.Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.audioSoundMod.Sound]
+    inline def Parse(
+      parsedSound: Any,
+      scene: Scene,
+      rootUrl: String,
+      sourceSound: typings.babylonjs.audioSoundMod.Sound
+    ): typings.babylonjs.audioSoundMod.Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sourceSound.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.audioSoundMod.Sound]
     
     /**
       * @internal
@@ -175,7 +180,7 @@ object audioIndexMod {
     * @param options
     */
   open class SoundTrack ()
-    extends typings.babylonjs.soundTrackMod.SoundTrack {
+    extends typings.babylonjs.audioSoundTrackMod.SoundTrack {
     def this(scene: Nullable[Scene]) = this()
     def this(scene: Unit, options: ISoundTrackOptions) = this()
     def this(scene: Nullable[Scene], options: ISoundTrackOptions) = this()
@@ -184,14 +189,14 @@ object audioIndexMod {
   @JSImport("babylonjs/Audio/index", "WeightedSound")
   @js.native
   open class WeightedSound protected ()
-    extends typings.babylonjs.weightedsoundMod.WeightedSound {
+    extends typings.babylonjs.audioWeightedsoundMod.WeightedSound {
     /**
       * Creates a new WeightedSound from the list of sounds given.
       * @param loop When true a Sound will be selected and played when the current playing Sound completes.
       * @param sounds Array of Sounds that will be selected from.
       * @param weights Array of number values for selection weights; length must equal sounds, values will be normalized to 1
       */
-    def this(loop: Boolean, sounds: js.Array[typings.babylonjs.soundMod.Sound], weights: js.Array[Double]) = this()
+    def this(loop: Boolean, sounds: js.Array[typings.babylonjs.audioSoundMod.Sound], weights: js.Array[Double]) = this()
   }
   
   /* augmented module */
@@ -202,7 +207,7 @@ object audioIndexMod {
       /**
         * The list of sounds used in the scene.
         */
-      var sounds: Nullable[js.Array[typings.babylonjs.soundMod.Sound]]
+      var sounds: Nullable[js.Array[typings.babylonjs.audioSoundMod.Sound]]
     }
     object AbstractScene {
       
@@ -213,11 +218,11 @@ object audioIndexMod {
       
       extension [Self <: AbstractScene](x: Self) {
         
-        inline def setSounds(value: Nullable[js.Array[typings.babylonjs.soundMod.Sound]]): Self = StObject.set(x, "sounds", value.asInstanceOf[js.Any])
+        inline def setSounds(value: Nullable[js.Array[typings.babylonjs.audioSoundMod.Sound]]): Self = StObject.set(x, "sounds", value.asInstanceOf[js.Any])
         
         inline def setSoundsNull: Self = StObject.set(x, "sounds", null)
         
-        inline def setSoundsVarargs(value: typings.babylonjs.soundMod.Sound*): Self = StObject.set(x, "sounds", js.Array(value*))
+        inline def setSoundsVarargs(value: typings.babylonjs.audioSoundMod.Sound*): Self = StObject.set(x, "sounds", js.Array(value*))
       }
     }
   }
@@ -231,7 +236,7 @@ object audioIndexMod {
         * @internal
         * Backing field
         */
-      var _mainSoundTrack: typings.babylonjs.soundTrackMod.SoundTrack
+      var _mainSoundTrack: typings.babylonjs.audioSoundTrackMod.SoundTrack
       
       /**
         * Gets or sets if audio support is enabled
@@ -255,7 +260,7 @@ object audioIndexMod {
         * @param name defines the name to search for
         * @returns the found sound or null if not found at all.
         */
-      def getSoundByName(name: String): Nullable[typings.babylonjs.soundMod.Sound]
+      def getSoundByName(name: String): Nullable[typings.babylonjs.audioSoundMod.Sound]
       
       /**
         * Gets or sets if audio will be output to headphones
@@ -267,23 +272,23 @@ object audioIndexMod {
         * The main sound track played by the scene.
         * It contains your primary collection of sounds.
         */
-      var mainSoundTrack: typings.babylonjs.soundTrackMod.SoundTrack
+      var mainSoundTrack: typings.babylonjs.audioSoundTrackMod.SoundTrack
       
       /**
         * The list of sound tracks added to the scene
         * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
         */
-      var soundTracks: Nullable[js.Array[typings.babylonjs.soundTrackMod.SoundTrack]]
+      var soundTracks: Nullable[js.Array[typings.babylonjs.audioSoundTrackMod.SoundTrack]]
     }
     object Scene {
       
       inline def apply(
-        _mainSoundTrack: typings.babylonjs.soundTrackMod.SoundTrack,
+        _mainSoundTrack: typings.babylonjs.audioSoundTrackMod.SoundTrack,
         audioEnabled: Boolean,
         audioPositioningRefreshRate: Double,
-        getSoundByName: String => Nullable[typings.babylonjs.soundMod.Sound],
+        getSoundByName: String => Nullable[typings.babylonjs.audioSoundMod.Sound],
         headphone: Boolean,
-        mainSoundTrack: typings.babylonjs.soundTrackMod.SoundTrack
+        mainSoundTrack: typings.babylonjs.audioSoundTrackMod.SoundTrack
       ): typings.babylonjs.audioIndexMod.babylonjsSceneAugmentingMod.Scene = {
         val __obj = js.Dynamic.literal(_mainSoundTrack = _mainSoundTrack.asInstanceOf[js.Any], audioEnabled = audioEnabled.asInstanceOf[js.Any], audioPositioningRefreshRate = audioPositioningRefreshRate.asInstanceOf[js.Any], getSoundByName = js.Any.fromFunction1(getSoundByName), headphone = headphone.asInstanceOf[js.Any], mainSoundTrack = mainSoundTrack.asInstanceOf[js.Any], audioListenerPositionProvider = null, soundTracks = null)
         __obj.asInstanceOf[typings.babylonjs.audioIndexMod.babylonjsSceneAugmentingMod.Scene]
@@ -299,19 +304,19 @@ object audioIndexMod {
         
         inline def setAudioPositioningRefreshRate(value: Double): Self = StObject.set(x, "audioPositioningRefreshRate", value.asInstanceOf[js.Any])
         
-        inline def setGetSoundByName(value: String => Nullable[typings.babylonjs.soundMod.Sound]): Self = StObject.set(x, "getSoundByName", js.Any.fromFunction1(value))
+        inline def setGetSoundByName(value: String => Nullable[typings.babylonjs.audioSoundMod.Sound]): Self = StObject.set(x, "getSoundByName", js.Any.fromFunction1(value))
         
         inline def setHeadphone(value: Boolean): Self = StObject.set(x, "headphone", value.asInstanceOf[js.Any])
         
-        inline def setMainSoundTrack(value: typings.babylonjs.soundTrackMod.SoundTrack): Self = StObject.set(x, "mainSoundTrack", value.asInstanceOf[js.Any])
+        inline def setMainSoundTrack(value: typings.babylonjs.audioSoundTrackMod.SoundTrack): Self = StObject.set(x, "mainSoundTrack", value.asInstanceOf[js.Any])
         
-        inline def setSoundTracks(value: Nullable[js.Array[typings.babylonjs.soundTrackMod.SoundTrack]]): Self = StObject.set(x, "soundTracks", value.asInstanceOf[js.Any])
+        inline def setSoundTracks(value: Nullable[js.Array[typings.babylonjs.audioSoundTrackMod.SoundTrack]]): Self = StObject.set(x, "soundTracks", value.asInstanceOf[js.Any])
         
         inline def setSoundTracksNull: Self = StObject.set(x, "soundTracks", null)
         
-        inline def setSoundTracksVarargs(value: typings.babylonjs.soundTrackMod.SoundTrack*): Self = StObject.set(x, "soundTracks", js.Array(value*))
+        inline def setSoundTracksVarargs(value: typings.babylonjs.audioSoundTrackMod.SoundTrack*): Self = StObject.set(x, "soundTracks", js.Array(value*))
         
-        inline def set_mainSoundTrack(value: typings.babylonjs.soundTrackMod.SoundTrack): Self = StObject.set(x, "_mainSoundTrack", value.asInstanceOf[js.Any])
+        inline def set_mainSoundTrack(value: typings.babylonjs.audioSoundTrackMod.SoundTrack): Self = StObject.set(x, "_mainSoundTrack", value.asInstanceOf[js.Any])
       }
     }
   }

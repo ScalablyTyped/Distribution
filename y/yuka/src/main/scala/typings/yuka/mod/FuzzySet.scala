@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [representativeValue] - The maximum of the set's membership function.
   */
 open class FuzzySet ()
-  extends typings.yuka.yukaMod.FuzzySet {
+  extends typings.yuka.srcYukaMod.FuzzySet {
   def this(representativeValue: Double) = this()
 }

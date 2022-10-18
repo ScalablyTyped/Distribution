@@ -1,7 +1,7 @@
 package typings.reactSketchapp.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.reactSketchapp.svgPatternMod.Pattern
+import typings.reactSketchapp.libModuleComponentsSvgPatternMod.Pattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

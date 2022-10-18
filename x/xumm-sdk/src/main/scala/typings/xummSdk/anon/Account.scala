@@ -1,6 +1,6 @@
 package typings.xummSdk.anon
 
-import typings.xummSdk.xummApiMod.XummTransactionApprovalType
+import typings.xummSdk.distSrcTypesXummApiMod.XummTransactionApprovalType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,11 +32,13 @@ trait Account extends StObject {
   var signer: String | Null
   
   var txid: String | Null
+  
+  var user: String | Null
 }
 object Account {
   
   inline def apply(): Account = {
-    val __obj = js.Dynamic.literal(account = null, dispatched_nodetype = null, dispatched_result = null, dispatched_to = null, dispatched_to_node = null, environment_nodetype = null, environment_nodeuri = null, hex = null, multisign_account = null, resolved_at = null, signer = null, txid = null)
+    val __obj = js.Dynamic.literal(account = null, dispatched_nodetype = null, dispatched_result = null, dispatched_to = null, dispatched_to_node = null, environment_nodetype = null, environment_nodeuri = null, hex = null, multisign_account = null, resolved_at = null, signer = null, txid = null, user = null)
     __obj.asInstanceOf[Account]
   }
   
@@ -93,5 +95,9 @@ object Account {
     inline def setTxid(value: String): Self = StObject.set(x, "txid", value.asInstanceOf[js.Any])
     
     inline def setTxidNull: Self = StObject.set(x, "txid", null)
+    
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    
+    inline def setUserNull: Self = StObject.set(x, "user", null)
   }
 }

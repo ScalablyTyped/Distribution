@@ -9,9 +9,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webcrypto-core", "HmacProvider")
+/* note: abstract class */ @JSImport("webcrypto-core", "HmacProvider")
 @js.native
-abstract class HmacProvider () extends ProviderCrypto {
+open class HmacProvider () extends ProviderCrypto {
   
   def checkGenerateKeyParams(algorithm: HmacKeyGenParams): Unit = js.native
   

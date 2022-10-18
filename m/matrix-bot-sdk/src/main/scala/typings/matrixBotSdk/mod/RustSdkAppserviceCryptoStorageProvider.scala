@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "RustSdkAppserviceCryptoStorageProvider")
 @js.native
 open class RustSdkAppserviceCryptoStorageProvider protected ()
-  extends typings.matrixBotSdk.rustSdkCryptoStorageProviderMod.RustSdkAppserviceCryptoStorageProvider {
+  extends typings.matrixBotSdk.libStorageRustSdkCryptoStorageProviderMod.RustSdkAppserviceCryptoStorageProvider {
   /**
     * Creates a new rust-sdk storage provider.
     * @param {string} baseStoragePath The *directory* to persist database details to.

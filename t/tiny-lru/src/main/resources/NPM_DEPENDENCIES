@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tiny-lru" : "8.0.2"
+      "tiny-lru" : "9.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "tiny-lru" : "8.0.2"
+      "tiny-lru" : "9.0.3"
     }
   ],
   "compile-devDependencies" : [

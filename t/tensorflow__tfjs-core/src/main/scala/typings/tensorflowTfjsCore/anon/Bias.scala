@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Bias[T /* <: Tensor3D | Tensor4D */] extends StObject {
   
-  var activation: js.UndefOr[typings.tensorflowTfjsCore.fusedTypesMod.Activation] = js.undefined
+  var activation: js.UndefOr[typings.tensorflowTfjsCore.distOpsFusedTypesMod.Activation] = js.undefined
   
   var bias: js.UndefOr[Tensor[Rank] | TensorLike] = js.undefined
   
@@ -54,7 +54,7 @@ object Bias {
   
   extension [Self <: Bias[?], T /* <: Tensor3D | Tensor4D */](x: Self & Bias[T]) {
     
-    inline def setActivation(value: typings.tensorflowTfjsCore.fusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+    inline def setActivation(value: typings.tensorflowTfjsCore.distOpsFusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     
     inline def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
     

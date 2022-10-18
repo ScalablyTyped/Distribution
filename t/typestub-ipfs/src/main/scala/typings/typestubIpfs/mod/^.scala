@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typestub-ipfs", JSImport.Namespace)
 @js.native
-class ^ () extends IPFS {
+open class ^ () extends IPFS {
   def this(options: Options) = this()
 }
 @JSImport("typestub-ipfs", JSImport.Namespace)

@@ -2,14 +2,14 @@ package typings.fullcalendarCore.vdomMod.global.FullCalendarVDom.createElement
 
 import typings.fullcalendarCore.fullcalendarCoreStrings.input
 import typings.fullcalendarCore.vdomMod.global.FullCalendarVDom.createElement.^
-import typings.preact.jsxMod.JSXInternal.DOMAttributes
-import typings.preact.jsxMod.JSXInternal.HTMLAttributes
-import typings.preact.jsxMod.JSXInternal.SVGAttributes
 import typings.preact.mod.Attributes
 import typings.preact.mod.ClassAttributes
 import typings.preact.mod.ComponentChildren
 import typings.preact.mod.ComponentType
 import typings.preact.mod.VNode
+import typings.preact.srcJsxMod.JSXInternal.DOMAttributes
+import typings.preact.srcJsxMod.JSXInternal.HTMLAttributes
+import typings.preact.srcJsxMod.JSXInternal.SVGAttributes
 import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -34,12 +34,12 @@ inline def apply[T /* <: HTMLElement */](`type`: String, props: Null, children: 
 inline def apply[P](`type`: ComponentType[P], props: Attributes & P, children: ComponentChildren*): VNode[Any] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]
 inline def apply[P](`type`: ComponentType[P], props: Null, children: ComponentChildren*): VNode[Any] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]
 inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165, starting with typings.fullcalendarCore.fullcalendarCoreStrings.a, typings.fullcalendarCore.fullcalendarCoreStrings.abbr, typings.fullcalendarCore.fullcalendarCoreStrings.address */ Any,
   props: ClassAttributes[T] & P,
   children: ComponentChildren*
 ): VNode[Any] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]
 inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165, starting with typings.fullcalendarCore.fullcalendarCoreStrings.a, typings.fullcalendarCore.fullcalendarCoreStrings.abbr, typings.fullcalendarCore.fullcalendarCoreStrings.address */ Any,
   props: Null,
   children: ComponentChildren*
 ): VNode[Any] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]

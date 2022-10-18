@@ -1,7 +1,7 @@
 
 # Scala.js typings for cesium
 
-Typings are for version 1.97.0
+Typings are for version 1.98.1
 
 ## Library description:
 CesiumJS is a JavaScript library for creating 3D globes and 2D maps in a web browser without a plugin.

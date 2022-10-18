@@ -1,7 +1,7 @@
 
 # Scala.js typings for esfx__async-canceltoken
 
-Typings are for version 1.0.0-pre.13
+Typings are for version 1.0.0-pre.41
 
 ## Library description:
 CancelToken async coordination primitive.
@@ -10,10 +10,10 @@ CancelToken async coordination primitive.
 | ------------------ | :-------------: |
 | Full name          | @esfx/async-canceltoken |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 4 |
-| # downloads        | 22316 |
-| # stars            | 0 |
+| # releases         | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 8401.333333333334 |
+| # stars            | 161.0 |
 
 ## Links
 - [Homepage](https://github.com/esfx/esfx#readme)

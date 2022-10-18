@@ -1,7 +1,7 @@
 package typings.crocks
 
+import typings.crocks.internalTypesMod.UnaryFunction
 import typings.crocks.stateStateMod.State
-import typings.crocks.typesMod.UnaryFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

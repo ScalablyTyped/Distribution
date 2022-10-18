@@ -2,19 +2,19 @@ package typings.awsLambdaFastify
 
 import typings.awsLambda.handlerMod.Callback
 import typings.awsLambda.handlerMod.Context
-import typings.fastify.instanceMod.FastifyInstance
-import typings.fastify.loggerMod.FastifyBaseLogger
-import typings.fastify.replyMod.FastifyReply
-import typings.fastify.requestMod.FastifyRequest
-import typings.fastify.routeMod.RouteGenericInterface
-import typings.fastify.schemaMod.FastifySchema
-import typings.fastify.typeProviderMod.FastifyTypeProviderDefault
-import typings.fastify.typeProviderMod.ResolveFastifyReplyType
-import typings.fastify.typeProviderMod.ResolveFastifyRequestType
-import typings.fastify.utilsMod.ContextConfigDefault
-import typings.fastify.utilsMod.RawReplyDefaultExpression
-import typings.fastify.utilsMod.RawRequestDefaultExpression
-import typings.fastify.utilsMod.RawServerDefault
+import typings.fastify.typesInstanceMod.FastifyInstance
+import typings.fastify.typesLoggerMod.FastifyBaseLogger
+import typings.fastify.typesReplyMod.FastifyReply
+import typings.fastify.typesRequestMod.FastifyRequest
+import typings.fastify.typesRouteMod.RouteGenericInterface
+import typings.fastify.typesSchemaMod.FastifySchema
+import typings.fastify.typesTypeProviderMod.FastifyTypeProviderDefault
+import typings.fastify.typesTypeProviderMod.ResolveFastifyReplyType
+import typings.fastify.typesTypeProviderMod.ResolveFastifyRequestType
+import typings.fastify.typesUtilsMod.ContextConfigDefault
+import typings.fastify.typesUtilsMod.RawReplyDefaultExpression
+import typings.fastify.typesUtilsMod.RawRequestDefaultExpression
+import typings.fastify.typesUtilsMod.RawServerDefault
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

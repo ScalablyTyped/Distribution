@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DocumentCardType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardDottypesMod.DocumentCardType & Double
+  ] = js.native
   
-  /* 1 */ val compact: typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType.compact & Double = js.native
+  /* 1 */ val compact: typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardDottypesMod.DocumentCardType.compact & Double = js.native
   
-  /* 0 */ val normal: typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType.normal & Double = js.native
+  /* 0 */ val normal: typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardDottypesMod.DocumentCardType.normal & Double = js.native
 }

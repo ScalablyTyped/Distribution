@@ -1,11 +1,11 @@
 package typings.puppeteer.anon
 
-import typings.puppeteer.inputMod.MouseButton
+import typings.puppeteer.mod.MouseButton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined puppeteer.puppeteer/lib/cjs/puppeteer/common/Input.MouseOptions & {  delay :number | undefined} */
+/* Inlined puppeteer.puppeteer.MouseOptions & {  delay :number | undefined} */
 trait MouseOptionsdelaynumberun extends StObject {
   
   var button: js.UndefOr[MouseButton] = js.undefined

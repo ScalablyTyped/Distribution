@@ -40,8 +40,8 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.checkboxCheckboxMod.CheckboxRef
-import typings.antdMobile.checkboxCheckboxMod.CheckboxValue
+import typings.antdMobile.esComponentsCheckboxCheckboxMod.CheckboxRef
+import typings.antdMobile.esComponentsCheckboxCheckboxMod.CheckboxValue
 import typings.react.mod.Booleanish
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
@@ -175,7 +175,7 @@ trait Partialcheckedbooleanunde extends StObject {
   
   var ref: js.UndefOr[Ref[CheckboxRef]] = js.undefined
   
-  var style: js.UndefOr[CSSPropertiesPartialRecorAnimationComposition] = js.undefined
+  var style: js.UndefOr[CSSPropertiesPartialRecorAnimation] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
@@ -438,7 +438,7 @@ object Partialcheckedbooleanunde {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    inline def setStyle(value: CSSPropertiesPartialRecorAnimationComposition): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSPropertiesPartialRecorAnimation): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

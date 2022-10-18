@@ -4,19 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/database/bulk-api.html#post--db-_bulk_docs
+/** Bulk API response.
+  * @see Docs: {@link http://docs.couchdb.org/en/latest/api/database/bulk-api.html#post--db-_bulk_docs} */
 trait DocumentBulkResponse extends StObject {
   
-  // Error type. Available if response code is 4xx
+  /** Error type. Available if response code is 4xx */
   var error: js.UndefOr[String] = js.undefined
   
-  // Document ID. Available in all cases
+  /** Document ID. Available in all cases */
   var id: String
   
-  // Error reason. Available if response code is 4xx
+  /** Error reason. Available if response code is 4xx */
   var reason: js.UndefOr[String] = js.undefined
   
-  // New document revision token. Available if document has saved without errors.
+  /** New document revision token. Available if document has saved without errors. */
   var rev: js.UndefOr[String] = js.undefined
 }
 object DocumentBulkResponse {

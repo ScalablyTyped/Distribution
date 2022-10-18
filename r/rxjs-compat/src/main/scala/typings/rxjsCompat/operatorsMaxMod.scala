@@ -1,0 +1,16 @@
+package typings.rxjsCompat
+
+import typings.rxjs.distTypesInternalTypesMod.MonoTypeOperatorFunction
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object operatorsMaxMod {
+  
+  @JSImport("rxjs-compat/operators/max", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def max[T](): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def max[T](comparer: js.Function2[/* x */ T, /* y */ T, Double]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(comparer.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
+}

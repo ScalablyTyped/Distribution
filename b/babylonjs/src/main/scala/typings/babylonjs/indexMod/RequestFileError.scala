@@ -13,5 +13,5 @@ open class RequestFileError protected ()
     * @param message defines the message of the error
     * @param request defines the optional web request
     */
-  def this(message: String, request: typings.babylonjs.webRequestMod.WebRequest) = this()
+  def this(message: String, request: typings.babylonjs.miscWebRequestMod.WebRequest) = this()
 }

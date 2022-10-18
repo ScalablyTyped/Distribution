@@ -6,27 +6,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `596` extends StObject {
   
-  var incomplete_results: Boolean
-  
-  var items: js.Array[Following]
-  
-  var total_count: Double
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['referrer-traffic'] */ js.Any
+  ]
 }
 object `596` {
   
-  inline def apply(incomplete_results: Boolean, items: js.Array[Following], total_count: Double): `596` = {
-    val __obj = js.Dynamic.literal(incomplete_results = incomplete_results.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
+  inline def apply(
+    applicationSlashjson: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['referrer-traffic'] */ js.Any
+    ]
+  ): `596` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`596`]
   }
   
   extension [Self <: `596`](x: Self) {
     
-    inline def setIncomplete_results(value: Boolean): Self = StObject.set(x, "incomplete_results", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['referrer-traffic'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setItems(value: js.Array[Following]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
-    
-    inline def setItemsVarargs(value: Following*): Self = StObject.set(x, "items", js.Array(value*))
-    
-    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjsonVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['referrer-traffic'] */ js.Any)*
+    ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

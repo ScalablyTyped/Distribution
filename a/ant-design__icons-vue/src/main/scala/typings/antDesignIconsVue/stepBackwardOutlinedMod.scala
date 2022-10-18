@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsStepBackwardOutlinedMod.StepBackwardOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepBackwardOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/StepBackwardOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/StepBackwardOutlined", JSImport.Default)
   @js.native
   val default: StepBackwardOutlinedIconType = js.native
-  
-  @js.native
-  trait StepBackwardOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_StepBackwardOutlinedIconType: String = js.native
-  }
   
   type _To = StepBackwardOutlinedIconType
   

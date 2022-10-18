@@ -1,6 +1,6 @@
 package typings.tokeyCssSelectorParser
 
-import typings.tokeyCssSelectorParser.astTypesMod.Comment
+import typings.tokeyCssSelectorParser.distAstTypesMod.Comment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

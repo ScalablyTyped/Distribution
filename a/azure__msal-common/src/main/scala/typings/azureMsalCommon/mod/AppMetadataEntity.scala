@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "AppMetadataEntity")
 @js.native
 open class AppMetadataEntity ()
-  extends typings.azureMsalCommon.appMetadataEntityMod.AppMetadataEntity
+  extends typings.azureMsalCommon.distCacheEntitiesAppMetadataEntityMod.AppMetadataEntity
 /* static members */
 object AppMetadataEntity {
   
@@ -21,8 +21,8 @@ object AppMetadataEntity {
     * @param environment
     * @param familyId
     */
-  inline def createAppMetadataEntity(clientId: String, environment: String): typings.azureMsalCommon.appMetadataEntityMod.AppMetadataEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAppMetadataEntity")(clientId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.appMetadataEntityMod.AppMetadataEntity]
-  inline def createAppMetadataEntity(clientId: String, environment: String, familyId: String): typings.azureMsalCommon.appMetadataEntityMod.AppMetadataEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAppMetadataEntity")(clientId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.appMetadataEntityMod.AppMetadataEntity]
+  inline def createAppMetadataEntity(clientId: String, environment: String): typings.azureMsalCommon.distCacheEntitiesAppMetadataEntityMod.AppMetadataEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAppMetadataEntity")(clientId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAppMetadataEntityMod.AppMetadataEntity]
+  inline def createAppMetadataEntity(clientId: String, environment: String, familyId: String): typings.azureMsalCommon.distCacheEntitiesAppMetadataEntityMod.AppMetadataEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAppMetadataEntity")(clientId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAppMetadataEntityMod.AppMetadataEntity]
   
   /**
     * Generate AppMetadata Cache Key

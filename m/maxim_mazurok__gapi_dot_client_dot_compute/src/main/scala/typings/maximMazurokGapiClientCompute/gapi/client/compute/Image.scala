@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
-import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientCompute.anon.ContainerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -54,9 +53,7 @@ trait Image extends StObject {
   
   /** Labels to apply to this image. These can be later modified by the setLabels method. */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.Image & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Integer license codes indicating which licenses are attached to this image. */
@@ -198,9 +195,7 @@ object Image {
     inline def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.Image & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

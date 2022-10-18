@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Timer")
 @js.native
 open class Timer ()
-  extends typings.blackEngine.timerMod.Timer {
+  extends typings.blackEngine.timersTimerMod.Timer {
   def this(interval: Double) = this()
   def this(interval: Double, ticksCount: Double) = this()
   def this(interval: Unit, ticksCount: Double) = this()

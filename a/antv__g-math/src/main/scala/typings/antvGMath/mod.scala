@@ -2,9 +2,9 @@ package typings.antvGMath
 
 import typings.antvGMath.anon.MaxX
 import typings.antvGMath.anon.X
-import typings.antvGMath.typesMod.BBox
-import typings.antvGMath.typesMod.Point
-import typings.antvGMath.typesMod.PointTuple
+import typings.antvGMath.distTypesMod.BBox
+import typings.antvGMath.distTypesMod.Point
+import typings.antvGMath.distTypesMod.PointTuple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

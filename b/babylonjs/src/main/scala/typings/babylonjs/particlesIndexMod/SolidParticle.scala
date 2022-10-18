@@ -1,6 +1,6 @@
 package typings.babylonjs.particlesIndexMod
 
-import typings.babylonjs.boundingInfoMod.BoundingInfo
+import typings.babylonjs.cullingBoundingInfoMod.BoundingInfo
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Particles/index", "SolidParticle")
 @js.native
 open class SolidParticle protected ()
-  extends typings.babylonjs.solidParticleMod.SolidParticle {
+  extends typings.babylonjs.particlesSolidParticleMod.SolidParticle {
   /**
     * Creates a Solid Particle object.
     * Don't create particles manually, use instead the Solid Particle System internal tools like _addParticle()
@@ -29,20 +29,20 @@ open class SolidParticle protected ()
     particleId: Double,
     positionIndex: Double,
     indiceIndex: Double,
-    model: Nullable[typings.babylonjs.solidParticleMod.ModelShape],
+    model: Nullable[typings.babylonjs.particlesSolidParticleMod.ModelShape],
     shapeId: Double,
     idxInShape: Double,
-    sps: typings.babylonjs.solidParticleSystemMod.SolidParticleSystem
+    sps: typings.babylonjs.particlesSolidParticleSystemMod.SolidParticleSystem
   ) = this()
   def this(
     particleIndex: Double,
     particleId: Double,
     positionIndex: Double,
     indiceIndex: Double,
-    model: Nullable[typings.babylonjs.solidParticleMod.ModelShape],
+    model: Nullable[typings.babylonjs.particlesSolidParticleMod.ModelShape],
     shapeId: Double,
     idxInShape: Double,
-    sps: typings.babylonjs.solidParticleSystemMod.SolidParticleSystem,
+    sps: typings.babylonjs.particlesSolidParticleSystemMod.SolidParticleSystem,
     modelBoundingInfo: Nullable[BoundingInfo]
   ) = this()
   def this(
@@ -50,10 +50,10 @@ open class SolidParticle protected ()
     particleId: Double,
     positionIndex: Double,
     indiceIndex: Double,
-    model: Nullable[typings.babylonjs.solidParticleMod.ModelShape],
+    model: Nullable[typings.babylonjs.particlesSolidParticleMod.ModelShape],
     shapeId: Double,
     idxInShape: Double,
-    sps: typings.babylonjs.solidParticleSystemMod.SolidParticleSystem,
+    sps: typings.babylonjs.particlesSolidParticleSystemMod.SolidParticleSystem,
     modelBoundingInfo: Unit,
     materialIndex: Nullable[Double]
   ) = this()
@@ -62,10 +62,10 @@ open class SolidParticle protected ()
     particleId: Double,
     positionIndex: Double,
     indiceIndex: Double,
-    model: Nullable[typings.babylonjs.solidParticleMod.ModelShape],
+    model: Nullable[typings.babylonjs.particlesSolidParticleMod.ModelShape],
     shapeId: Double,
     idxInShape: Double,
-    sps: typings.babylonjs.solidParticleSystemMod.SolidParticleSystem,
+    sps: typings.babylonjs.particlesSolidParticleSystemMod.SolidParticleSystem,
     modelBoundingInfo: Nullable[BoundingInfo],
     materialIndex: Nullable[Double]
   ) = this()

@@ -1,11 +1,11 @@
 package typings.winston
 
-import typings.winston.configMod.CliConfigSetColors
-import typings.winston.configMod.CliConfigSetLevels
-import typings.winston.configMod.NpmConfigSetColors
-import typings.winston.configMod.NpmConfigSetLevels
-import typings.winston.configMod.SyslogConfigSetColors
-import typings.winston.configMod.SyslogConfigSetLevels
+import typings.winston.libWinstonConfigMod.CliConfigSetColors
+import typings.winston.libWinstonConfigMod.CliConfigSetLevels
+import typings.winston.libWinstonConfigMod.NpmConfigSetColors
+import typings.winston.libWinstonConfigMod.NpmConfigSetLevels
+import typings.winston.libWinstonConfigMod.SyslogConfigSetColors
+import typings.winston.libWinstonConfigMod.SyslogConfigSetLevels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

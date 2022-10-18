@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@storybook/csf-tools" : "6.5.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@storybook/csf-tools" : "6.5.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

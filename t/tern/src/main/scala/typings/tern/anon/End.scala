@@ -1,6 +1,6 @@
 package typings.tern.anon
 
-import typings.tern.ternMod.Position
+import typings.tern.libTernMod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

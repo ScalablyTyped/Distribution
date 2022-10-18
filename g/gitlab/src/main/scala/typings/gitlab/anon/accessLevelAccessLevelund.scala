@@ -1,6 +1,6 @@
 package typings.gitlab.anon
 
-import typings.gitlab.resourceAccessRequestsMod.AccessLevel
+import typings.gitlab.distTypesCoreTemplatesResourceAccessRequestsMod.AccessLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

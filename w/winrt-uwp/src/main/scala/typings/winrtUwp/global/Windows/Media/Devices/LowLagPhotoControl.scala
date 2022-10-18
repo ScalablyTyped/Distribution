@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for managing the low shutter lag photo capture mode on the capture device. */
-@JSGlobal("Windows.Media.Devices.LowLagPhotoControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.LowLagPhotoControl")
 @js.native
-abstract class LowLagPhotoControl ()
+open class LowLagPhotoControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.LowLagPhotoControl {
   

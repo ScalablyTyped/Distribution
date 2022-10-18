@@ -1,20 +1,14 @@
 package typings.reactSpringTypes
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentProps
 import typings.react.mod.ComponentState
 import typings.react.mod.MutableRefObject
-import typings.react.mod.PropsWithRef
-import typings.react.mod.PropsWithoutRef
 import typings.react.mod.ReactElement
-import typings.react.mod.RefAttributes
 import typings.reactSpringTypes.reactSpringTypesBooleans.`false`
 import typings.reactSpringTypes.reactSpringTypesStrings.prototype
 import typings.std.Exclude
 import typings.std.Extract
-import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,19 +19,59 @@ object utilMod {
   @js.native
   open class Any () extends StObject
   
-  type AllKeys[T] = /* keyof T */ String
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends any ? keyof T : never
+    }}}
+    */
+  @js.native
+  trait AllKeys[T] extends StObject
   
   type AnyFn[In /* <: js.Array[scala.Any] */, Out] = js.Function1[/* args */ In, Out]
   
-  type Arrify[T] = js.Array[scala.Any]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T, T] extends [infer T, infer DT] ? DT extends std.ReadonlyArray<any> ? std.Array<DT[number]> extends DT ? std.ReadonlyArray<T extends std.ReadonlyArray<infer U> ? U : T> : DT : std.ReadonlyArray<T extends std.ReadonlyArray<infer U> ? U : T> : never
+    }}}
+    */
+  @js.native
+  trait Arrify[T] extends StObject
   
-  type AssignableKeys[T, U] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in std.Extract<keyof T, keyof U> ]: T[P] extends U[P]? P : never}[std.Extract<keyof T, keyof U>] */ js.Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends object ? U extends object ? {[ P in std.Extract<keyof T, keyof U> ]: T[P] extends U[P]? P : never}[std.Extract<keyof T, keyof U>] : never : never
+    }}}
+    */
+  @js.native
+  trait AssignableKeys[T, U] extends StObject
   
-  type ComponentPropsWithRef[T /* <: ElementType[scala.Any] */] = PropsWithRef[ComponentProps[T]] | (PropsWithoutRef[scala.Any] & RefAttributes[InstanceType[T]])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends react.react.ComponentClass<infer P, react.react.ComponentState> ? react.react.PropsWithoutRef<P> & react.react.RefAttributes<std.InstanceType<T>> : react.react.PropsWithRef<react.react.ComponentProps<T>>
+    }}}
+    */
+  @js.native
+  trait ComponentPropsWithRef[T /* <: ElementType[scala.Any] */] extends StObject
   
   type ComponentType[P] = (ComponentClass[P, ComponentState]) | LeafFunctionComponent[P]
   
-  type Constrain[T, U] = U | T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T] extends [@react-spring/types.@react-spring/types/util.Any] ? U : [T] extends [U] ? T : U
+    }}}
+    */
+  @js.native
+  trait Constrain[T, U] extends StObject
   
   trait Disposable extends StObject {
     
@@ -58,14 +92,28 @@ object utilMod {
   
   type ElementType[P] = typings.react.mod.ElementType[P] | LeafFunctionComponent[P]
   
-  type Exclusive[T] = Remap[
-    (LoosePick[T, scala.Any]) & typings.reactSpringTypes.reactSpringTypesStrings.Exclusive & TopLevel[scala.Any]
-  ]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    @react-spring/types.@react-spring/types/util.AllKeys<T> extends infer K ? T extends any ? @react-spring/types.@react-spring/types/util.Remap<@react-spring/types.@react-spring/types/util.LoosePick<T, K> & {[ P in std.Exclude<K & keyof any, keyof T> ]:? undefined}> : never : never
+    }}}
+    */
+  @js.native
+  trait Exclusive[T] extends StObject
   
   type Falsy = js.UndefOr[`false` | Null]
   
   /** Convert a union to an intersection */
-  type Intersect[U] = scala.Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    U extends any ? (k : U): void : never extends (k : infer I): void ? I : never
+    }}}
+    */
+  @js.native
+  trait Intersect[U] extends StObject
   
   // Function component without children
   @js.native
@@ -81,7 +129,7 @@ object utilMod {
   type LoosePick[T, K] = js.Object & (Pick[T, K & (/* keyof T */ String)])
   
   type Merge[A, B] = Remap[
-    typings.reactSpringTypes.reactSpringTypesStrings.Merge & TopLevel[scala.Any] & (Omit[B, /* keyof A */ String])
+    (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof A ]: P extends keyof B? B[P] : A[P]} */ js.Any) & (Omit[B, /* keyof A */ String])
   ]
   
   type MergeDefaults[T /* <: js.Object */, U /* <: Partial[T] */] = Remap[
@@ -93,12 +141,18 @@ object utilMod {
   type NoInfer[T] = /* import warning: importer.ImportType#apply Failed type conversion: [T][T extends any ? 0 : never] */ js.Any
   
   type ObjectFromUnion[T /* <: js.Object */] = Remap[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof @react-spring/types.@react-spring/types/util.Intersect<T> ]: T extends infer U? P extends keyof any? any[P] : never : never}
-    */ typings.reactSpringTypes.reactSpringTypesStrings.ObjectFromUnion & TopLevel[scala.Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof @react-spring/types.@react-spring/types/util.Intersect<T> ]: T extends infer U? P extends keyof U? U[P] : never : never} */ js.Any
   ]
   
-  type ObjectType[T] = js.Object | T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends object ? T : {}
+    }}}
+    */
+  @js.native
+  trait ObjectType[T] extends StObject
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   
@@ -106,13 +160,13 @@ object utilMod {
   
   type Overwrite[T, U] = Remap[(Omit[T, /* keyof U */ String]) & U]
   
-  type Partial[T] = js.Object & typings.reactSpringTypes.reactSpringTypesStrings.Partial & TopLevel[T]
+  type Partial[T] = js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? T[P] | undefined} */ js.Any)
   
-  type Pick[T, K /* <: /* keyof T */ String */] = js.Object & typings.reactSpringTypes.reactSpringTypesStrings.Pick & TopLevel[T]
+  type Pick[T, K /* <: /* keyof T */ String */] = js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: T[P]} */ js.Any)
   
   type RefProp[T] = MutableRefObject[js.UndefOr[T | Null]]
   
-  type Remap[T] = js.Object & typings.reactSpringTypes.reactSpringTypesStrings.Remap & TopLevel[T]
+  type Remap[T] = js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P]} */ js.Any)
   
   type StaticProps[T] = Omit[T, (/* keyof T */ String) & prototype]
   

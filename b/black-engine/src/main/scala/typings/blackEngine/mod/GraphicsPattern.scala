@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "GraphicsPattern")
 @js.native
 open class GraphicsPattern protected ()
-  extends typings.blackEngine.graphicsPatternMod.GraphicsPattern {
+  extends typings.blackEngine.displayGraphicsPatternMod.GraphicsPattern {
   def this(image: Any, repetition: Any) = this()
 }

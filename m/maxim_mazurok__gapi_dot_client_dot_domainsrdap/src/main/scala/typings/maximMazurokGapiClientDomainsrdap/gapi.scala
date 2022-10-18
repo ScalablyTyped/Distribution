@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDomainsrdap
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDomainsrdap.anon.Accesstoken
 import typings.maximMazurokGapiClientDomainsrdap.anon.Alt
@@ -53,9 +52,7 @@ object gapi {
         /** Application specific response metadata. Must be set in the first response for streaming APIs. */
         var extensions: js.UndefOr[
                 js.Array[
-                  /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody & TopLevel[Any]
+                  /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
                 ]
               ] = js.undefined
       }
@@ -78,18 +75,14 @@ object gapi {
           
           inline def setExtensions(
             value: js.Array[
-                      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody & TopLevel[Any]
+                      /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
                     ]
           ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
           
           inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
           
           inline def setExtensionsVarargs(
-            value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody & TopLevel[Any])*
+            value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any)*
           ): Self = StObject.set(x, "extensions", js.Array(value*))
         }
       }

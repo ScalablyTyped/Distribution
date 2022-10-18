@@ -1,8 +1,6 @@
 package typings.jssip
 
 import typings.debug.mod.Debug
-import typings.jssip.constantsMod.causes
-import typings.jssip.grammarMod.Grammar
 import typings.jssip.jssipInts.`300`
 import typings.jssip.jssipInts.`301`
 import typings.jssip.jssipInts.`302`
@@ -24,10 +22,12 @@ import typings.jssip.jssipInts.`600`
 import typings.jssip.jssipInts.`603`
 import typings.jssip.jssipInts.`604`
 import typings.jssip.jssipInts.`606`
-import typings.jssip.uAMod.UAConfiguration
-import typings.jssip.uriMod.Headers
-import typings.jssip.uriMod.Parameters
-import typings.jssip.uriMod.URIScheme
+import typings.jssip.libConstantsMod.causes
+import typings.jssip.libGrammarMod.Grammar
+import typings.jssip.libUAMod.UAConfiguration
+import typings.jssip.libUriMod.Headers
+import typings.jssip.libUriMod.Parameters
+import typings.jssip.libUriMod.URIScheme
 import typings.std.MediaStream
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -71,11 +71,11 @@ object mod {
     object DTMF_TRANSPORT extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.jssip.constantsMod.DTMF_TRANSPORT & String] = js.native
+      def apply(value: String): js.UndefOr[typings.jssip.libConstantsMod.DTMF_TRANSPORT & String] = js.native
       
-      /* "INFO" */ val INFO: typings.jssip.constantsMod.DTMF_TRANSPORT.INFO & String = js.native
+      /* "INFO" */ val INFO: typings.jssip.libConstantsMod.DTMF_TRANSPORT.INFO & String = js.native
       
-      /* "RFC2833" */ val RFC2833: typings.jssip.constantsMod.DTMF_TRANSPORT.RFC2833 & String = js.native
+      /* "RFC2833" */ val RFC2833: typings.jssip.libConstantsMod.DTMF_TRANSPORT.RFC2833 & String = js.native
     }
     
     @JSImport("jssip", "C.INFO")
@@ -194,53 +194,53 @@ object mod {
     object causes extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.jssip.constantsMod.causes & String] = js.native
+      def apply(value: String): js.UndefOr[typings.jssip.libConstantsMod.causes & String] = js.native
       
-      /* "Address Incomplete" */ val ADDRESS_INCOMPLETE: typings.jssip.constantsMod.causes.ADDRESS_INCOMPLETE & String = js.native
+      /* "Address Incomplete" */ val ADDRESS_INCOMPLETE: typings.jssip.libConstantsMod.causes.ADDRESS_INCOMPLETE & String = js.native
       
-      /* "Authentication Error" */ val AUTHENTICATION_ERROR: typings.jssip.constantsMod.causes.AUTHENTICATION_ERROR & String = js.native
+      /* "Authentication Error" */ val AUTHENTICATION_ERROR: typings.jssip.libConstantsMod.causes.AUTHENTICATION_ERROR & String = js.native
       
-      /* "Bad Media Description" */ val BAD_MEDIA_DESCRIPTION: typings.jssip.constantsMod.causes.BAD_MEDIA_DESCRIPTION & String = js.native
+      /* "Bad Media Description" */ val BAD_MEDIA_DESCRIPTION: typings.jssip.libConstantsMod.causes.BAD_MEDIA_DESCRIPTION & String = js.native
       
-      /* "Busy" */ val BUSY: typings.jssip.constantsMod.causes.BUSY & String = js.native
+      /* "Busy" */ val BUSY: typings.jssip.libConstantsMod.causes.BUSY & String = js.native
       
-      /* "Terminated" */ val BYE: typings.jssip.constantsMod.causes.BYE & String = js.native
+      /* "Terminated" */ val BYE: typings.jssip.libConstantsMod.causes.BYE & String = js.native
       
-      /* "Canceled" */ val CANCELED: typings.jssip.constantsMod.causes.CANCELED & String = js.native
+      /* "Canceled" */ val CANCELED: typings.jssip.libConstantsMod.causes.CANCELED & String = js.native
       
-      /* "Connection Error" */ val CONNECTION_ERROR: typings.jssip.constantsMod.causes.CONNECTION_ERROR & String = js.native
+      /* "Connection Error" */ val CONNECTION_ERROR: typings.jssip.libConstantsMod.causes.CONNECTION_ERROR & String = js.native
       
-      /* "Dialog Error" */ val DIALOG_ERROR: typings.jssip.constantsMod.causes.DIALOG_ERROR & String = js.native
+      /* "Dialog Error" */ val DIALOG_ERROR: typings.jssip.libConstantsMod.causes.DIALOG_ERROR & String = js.native
       
-      /* "Expires" */ val EXPIRES: typings.jssip.constantsMod.causes.EXPIRES & String = js.native
+      /* "Expires" */ val EXPIRES: typings.jssip.libConstantsMod.causes.EXPIRES & String = js.native
       
-      /* "Incompatible SDP" */ val INCOMPATIBLE_SDP: typings.jssip.constantsMod.causes.INCOMPATIBLE_SDP & String = js.native
+      /* "Incompatible SDP" */ val INCOMPATIBLE_SDP: typings.jssip.libConstantsMod.causes.INCOMPATIBLE_SDP & String = js.native
       
-      /* "Internal Error" */ val INTERNAL_ERROR: typings.jssip.constantsMod.causes.INTERNAL_ERROR & String = js.native
+      /* "Internal Error" */ val INTERNAL_ERROR: typings.jssip.libConstantsMod.causes.INTERNAL_ERROR & String = js.native
       
-      /* "Missing SDP" */ val MISSING_SDP: typings.jssip.constantsMod.causes.MISSING_SDP & String = js.native
+      /* "Missing SDP" */ val MISSING_SDP: typings.jssip.libConstantsMod.causes.MISSING_SDP & String = js.native
       
-      /* "Not Found" */ val NOT_FOUND: typings.jssip.constantsMod.causes.NOT_FOUND & String = js.native
+      /* "Not Found" */ val NOT_FOUND: typings.jssip.libConstantsMod.causes.NOT_FOUND & String = js.native
       
-      /* "No ACK" */ val NO_ACK: typings.jssip.constantsMod.causes.NO_ACK & String = js.native
+      /* "No ACK" */ val NO_ACK: typings.jssip.libConstantsMod.causes.NO_ACK & String = js.native
       
-      /* "No Answer" */ val NO_ANSWER: typings.jssip.constantsMod.causes.NO_ANSWER & String = js.native
+      /* "No Answer" */ val NO_ANSWER: typings.jssip.libConstantsMod.causes.NO_ANSWER & String = js.native
       
-      /* "Redirected" */ val REDIRECTED: typings.jssip.constantsMod.causes.REDIRECTED & String = js.native
+      /* "Redirected" */ val REDIRECTED: typings.jssip.libConstantsMod.causes.REDIRECTED & String = js.native
       
-      /* "Rejected" */ val REJECTED: typings.jssip.constantsMod.causes.REJECTED & String = js.native
+      /* "Rejected" */ val REJECTED: typings.jssip.libConstantsMod.causes.REJECTED & String = js.native
       
-      /* "Request Timeout" */ val REQUEST_TIMEOUT: typings.jssip.constantsMod.causes.REQUEST_TIMEOUT & String = js.native
+      /* "Request Timeout" */ val REQUEST_TIMEOUT: typings.jssip.libConstantsMod.causes.REQUEST_TIMEOUT & String = js.native
       
-      /* "RTP Timeout" */ val RTP_TIMEOUT: typings.jssip.constantsMod.causes.RTP_TIMEOUT & String = js.native
+      /* "RTP Timeout" */ val RTP_TIMEOUT: typings.jssip.libConstantsMod.causes.RTP_TIMEOUT & String = js.native
       
-      /* "SIP Failure Code" */ val SIP_FAILURE_CODE: typings.jssip.constantsMod.causes.SIP_FAILURE_CODE & String = js.native
+      /* "SIP Failure Code" */ val SIP_FAILURE_CODE: typings.jssip.libConstantsMod.causes.SIP_FAILURE_CODE & String = js.native
       
-      /* "Unavailable" */ val UNAVAILABLE: typings.jssip.constantsMod.causes.UNAVAILABLE & String = js.native
+      /* "Unavailable" */ val UNAVAILABLE: typings.jssip.libConstantsMod.causes.UNAVAILABLE & String = js.native
       
-      /* "User Denied Media Access" */ val USER_DENIED_MEDIA_ACCESS: typings.jssip.constantsMod.causes.USER_DENIED_MEDIA_ACCESS & String = js.native
+      /* "User Denied Media Access" */ val USER_DENIED_MEDIA_ACCESS: typings.jssip.libConstantsMod.causes.USER_DENIED_MEDIA_ACCESS & String = js.native
       
-      /* "WebRTC Error" */ val WEBRTC_ERROR: typings.jssip.constantsMod.causes.WEBRTC_ERROR & String = js.native
+      /* "WebRTC Error" */ val WEBRTC_ERROR: typings.jssip.libConstantsMod.causes.WEBRTC_ERROR & String = js.native
     }
   }
   
@@ -249,7 +249,7 @@ object mod {
     @JSImport("jssip", "Exceptions.ConfigurationError")
     @js.native
     open class ConfigurationError protected ()
-      extends typings.jssip.exceptionsMod.ConfigurationError {
+      extends typings.jssip.libExceptionsMod.ConfigurationError {
       def this(parameter: String) = this()
       def this(parameter: String, value: Any) = this()
     }
@@ -257,21 +257,21 @@ object mod {
     @JSImport("jssip", "Exceptions.InvalidStateError")
     @js.native
     open class InvalidStateError protected ()
-      extends typings.jssip.exceptionsMod.InvalidStateError {
+      extends typings.jssip.libExceptionsMod.InvalidStateError {
       def this(status: Double) = this()
     }
     
     @JSImport("jssip", "Exceptions.NotReadyError")
     @js.native
     open class NotReadyError protected ()
-      extends typings.jssip.exceptionsMod.NotReadyError {
+      extends typings.jssip.libExceptionsMod.NotReadyError {
       def this(message: String) = this()
     }
     
     @JSImport("jssip", "Exceptions.NotSupportedError")
     @js.native
     open class NotSupportedError protected ()
-      extends typings.jssip.exceptionsMod.NotSupportedError {
+      extends typings.jssip.libExceptionsMod.NotSupportedError {
       def this(message: String) = this()
     }
   }
@@ -282,8 +282,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def parse(input: String): typings.jssip.grammarMod.Grammar = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.jssip.grammarMod.Grammar]
-    inline def parse(input: String, startRule: String): typings.jssip.grammarMod.Grammar = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], startRule.asInstanceOf[js.Any])).asInstanceOf[typings.jssip.grammarMod.Grammar]
+    inline def parse(input: String): typings.jssip.libGrammarMod.Grammar = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.jssip.libGrammarMod.Grammar]
+    inline def parse(input: String, startRule: String): typings.jssip.libGrammarMod.Grammar = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], startRule.asInstanceOf[js.Any])).asInstanceOf[typings.jssip.libGrammarMod.Grammar]
     
     inline def toSource(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toSource")().asInstanceOf[Any]
   }
@@ -291,11 +291,11 @@ object mod {
   @JSImport("jssip", "NameAddrHeader")
   @js.native
   open class NameAddrHeader protected ()
-    extends typings.jssip.nameAddrHeaderMod.NameAddrHeader {
-    def this(uri: typings.jssip.uriMod.URI) = this()
-    def this(uri: typings.jssip.uriMod.URI, display_name: String) = this()
-    def this(uri: typings.jssip.uriMod.URI, display_name: String, parameters: Parameters) = this()
-    def this(uri: typings.jssip.uriMod.URI, display_name: Unit, parameters: Parameters) = this()
+    extends typings.jssip.libNameAddrHeaderMod.NameAddrHeader {
+    def this(uri: typings.jssip.libUriMod.URI) = this()
+    def this(uri: typings.jssip.libUriMod.URI, display_name: String) = this()
+    def this(uri: typings.jssip.libUriMod.URI, display_name: String, parameters: Parameters) = this()
+    def this(uri: typings.jssip.libUriMod.URI, display_name: Unit, parameters: Parameters) = this()
   }
   /* static members */
   object NameAddrHeader {
@@ -310,19 +310,19 @@ object mod {
   @JSImport("jssip", "Socket")
   @js.native
   open class Socket ()
-    extends typings.jssip.webSocketInterfaceMod.Socket
+    extends typings.jssip.libWebSocketInterfaceMod.Socket
   
   @JSImport("jssip", "UA")
   @js.native
   open class UA protected ()
-    extends typings.jssip.uAMod.UA {
+    extends typings.jssip.libUAMod.UA {
     def this(configuration: UAConfiguration) = this()
   }
   
   @JSImport("jssip", "URI")
   @js.native
   open class URI protected ()
-    extends typings.jssip.uriMod.URI {
+    extends typings.jssip.libUriMod.URI {
     def this(scheme: URIScheme, user: String, host: String) = this()
     def this(scheme: URIScheme, user: String, host: String, port: Double) = this()
     def this(scheme: URIScheme, user: String, host: String, port: Double, parameters: Parameters) = this()
@@ -392,10 +392,10 @@ object mod {
     
     inline def newUUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newUUID")().asInstanceOf[String]
     
-    inline def normalizeTarget(target: String): js.UndefOr[typings.jssip.uriMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")(target.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.jssip.uriMod.URI]]
-    inline def normalizeTarget(target: String, domain: String): js.UndefOr[typings.jssip.uriMod.URI] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")(target.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.jssip.uriMod.URI]]
-    inline def normalizeTarget(target: typings.jssip.uriMod.URI): js.UndefOr[typings.jssip.uriMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")(target.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.jssip.uriMod.URI]]
-    inline def normalizeTarget(target: typings.jssip.uriMod.URI, domain: String): js.UndefOr[typings.jssip.uriMod.URI] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")(target.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.jssip.uriMod.URI]]
+    inline def normalizeTarget(target: String): js.UndefOr[typings.jssip.libUriMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")(target.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.jssip.libUriMod.URI]]
+    inline def normalizeTarget(target: String, domain: String): js.UndefOr[typings.jssip.libUriMod.URI] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")(target.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.jssip.libUriMod.URI]]
+    inline def normalizeTarget(target: typings.jssip.libUriMod.URI): js.UndefOr[typings.jssip.libUriMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")(target.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.jssip.libUriMod.URI]]
+    inline def normalizeTarget(target: typings.jssip.libUriMod.URI, domain: String): js.UndefOr[typings.jssip.libUriMod.URI] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")(target.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.jssip.libUriMod.URI]]
     
     inline def sipErrorCause(status_code: Double): causes = ^.asInstanceOf[js.Dynamic].applyDynamic("sipErrorCause")(status_code.asInstanceOf[js.Any]).asInstanceOf[causes]
     
@@ -405,7 +405,7 @@ object mod {
   @JSImport("jssip", "WebSocketInterface")
   @js.native
   open class WebSocketInterface protected ()
-    extends typings.jssip.webSocketInterfaceMod.WebSocketInterface {
+    extends typings.jssip.libWebSocketInterfaceMod.WebSocketInterface {
     def this(url: String) = this()
   }
   

@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Target extends StObject {
   
-  var target: js.UndefOr[typings.officeUiFabricReact.contextualMenuBaseMod.Target] = js.undefined
+  var target: js.UndefOr[
+    typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuDotbaseMod.Target
+  ] = js.undefined
 }
 object Target {
   
@@ -17,7 +19,7 @@ object Target {
   
   extension [Self <: Target](x: Self) {
     
-    inline def setTarget(value: typings.officeUiFabricReact.contextualMenuBaseMod.Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuDotbaseMod.Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetNull: Self = StObject.set(x, "target", null)
     

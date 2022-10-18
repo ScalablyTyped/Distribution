@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the flash settings on a capture device. */
-@JSGlobal("Windows.Media.Devices.FlashControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.FlashControl")
 @js.native
-abstract class FlashControl ()
+open class FlashControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.FlashControl {
   

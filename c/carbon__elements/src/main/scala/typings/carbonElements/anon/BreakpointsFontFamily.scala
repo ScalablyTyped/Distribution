@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BreakpointsFontFamily extends StObject {
   
-  var breakpoints: MaxMd
+  var breakpoints: MdXlg
   
-  var fontFamily: String
+  var fontFamily: /* 'IBM Plex Serif', 'Georgia', Times, serif */ String
   
   var fontSize: `1Dot25rem`
   
@@ -23,16 +23,16 @@ trait BreakpointsFontFamily extends StObject {
 }
 object BreakpointsFontFamily {
   
-  inline def apply(breakpoints: MaxMd): BreakpointsFontFamily = {
+  inline def apply(breakpoints: MdXlg): BreakpointsFontFamily = {
     val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any], fontFamily = "'IBM Plex Serif', 'Georgia', Times, serif", fontSize = "1.25rem", fontWeight = 400, letterSpacing = 0, lineHeight = 1.3d)
     __obj.asInstanceOf[BreakpointsFontFamily]
   }
   
   extension [Self <: BreakpointsFontFamily](x: Self) {
     
-    inline def setBreakpoints(value: MaxMd): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setBreakpoints(value: MdXlg): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
-    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: /* 'IBM Plex Serif', 'Georgia', Times, serif */ String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     inline def setFontSize(value: `1Dot25rem`): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     

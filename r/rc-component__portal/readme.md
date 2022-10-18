@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-component__portal
 
-Typings are for version 1.0.0-8
+Typings are for version 1.0.0-9
 
 
 

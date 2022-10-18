@@ -1,12 +1,13 @@
 package typings.angularForms.mod
 
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/forms", "AbstractControlDirective")
+/* note: abstract class */ @JSImport("@angular/forms", "AbstractControlDirective")
 @js.native
-abstract class AbstractControlDirective () extends StObject {
+open class AbstractControlDirective () extends StObject {
   
   /**
     * Contains the result of merging asynchronous validators into a single validator function
@@ -179,7 +180,7 @@ abstract class AbstractControlDirective () extends StObject {
     * Returns a multicasting observable that emits a validation status whenever it is
     * calculated for the control. If the control is not present, null is returned.
     */
-  def statusChanges: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any) | Null = js.native
+  def statusChanges: Observable_[Any] | Null = js.native
   
   /**
     * @description
@@ -222,5 +223,5 @@ abstract class AbstractControlDirective () extends StObject {
     * value of the control changes in the UI or programmatically.
     * If the control is not present, null is returned.
     */
-  def valueChanges: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any) | Null = js.native
+  def valueChanges: Observable_[Any] | Null = js.native
 }

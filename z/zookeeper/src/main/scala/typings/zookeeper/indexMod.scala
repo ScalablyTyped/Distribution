@@ -15,7 +15,7 @@ object indexMod {
   @JSImport("index", JSImport.Namespace)
   @js.native
   open class ^ protected ()
-    extends typings.zookeeper.zookeeperMod.^ {
+    extends typings.zookeeper.mod.^ {
     def this(config: Any) = this()
   }
   
@@ -25,5 +25,5 @@ object indexMod {
     * @extends {ZooKeeper}
     */
   /* was `typeof imported_zookeeper` */
-  type ZooKeeper = typings.zookeeper.zookeeperMod.^
+  type ZooKeeper = typings.zookeeper.mod.^
 }

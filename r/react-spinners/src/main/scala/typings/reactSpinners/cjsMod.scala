@@ -1,10 +1,10 @@
 package typings.reactSpinners
 
 import typings.react.mod.global.JSX.Element
-import typings.reactSpinners.propsMod.LoaderHeightWidthProps
-import typings.reactSpinners.propsMod.LoaderHeightWidthRadiusProps
-import typings.reactSpinners.propsMod.LoaderSizeMarginProps
-import typings.reactSpinners.propsMod.LoaderSizeProps
+import typings.reactSpinners.cjsHelpersPropsMod.LoaderHeightWidthProps
+import typings.reactSpinners.cjsHelpersPropsMod.LoaderHeightWidthRadiusProps
+import typings.reactSpinners.cjsHelpersPropsMod.LoaderSizeMarginProps
+import typings.reactSpinners.cjsHelpersPropsMod.LoaderSizeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

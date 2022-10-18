@@ -1,9 +1,9 @@
 package typings.blueprintjsCore.anon
 
 import typings.blueprintjsCore.blueprintjsCoreBooleans.`false`
-import typings.blueprintjsCore.intentMod.Intent
-import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
+import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
+import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,7 +29,7 @@ trait PartialIconProps extends StObject {
   var style: js.UndefOr[CSSProperties] = js.undefined
   
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
   ] = js.undefined
   
   var title: js.UndefOr[String | `false` | Null] = js.undefined
@@ -77,7 +77,9 @@ object PartialIconProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+    ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     

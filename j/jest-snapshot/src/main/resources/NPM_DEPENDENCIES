@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-snapshot" : "29.1.2"
+      "jest-snapshot" : "29.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-snapshot" : "29.1.2"
+      "jest-snapshot" : "29.2.0"
     }
   ],
   "compile-devDependencies" : [

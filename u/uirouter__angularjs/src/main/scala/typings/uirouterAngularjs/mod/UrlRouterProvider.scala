@@ -1,7 +1,7 @@
 package typings.uirouterAngularjs.mod
 
-import typings.uirouterCore.commonCommonMod.IInjectable
-import typings.uirouterCore.urlInterfaceMod.UrlRuleHandlerFn
+import typings.uirouterCore.libCommonCommonMod.IInjectable
+import typings.uirouterCore.libUrlInterfaceMod.UrlRuleHandlerFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@uirouter/angularjs", "UrlRouterProvider")
 @js.native
 open class UrlRouterProvider protected ()
-  extends typings.uirouterAngularjs.urlRouterProviderMod.UrlRouterProvider {
+  extends typings.uirouterAngularjs.libUrlRouterProviderMod.UrlRouterProvider {
   /** @hidden */
   def this(/** @hidden */ router: typings.uirouterCore.mod.UIRouter) = this()
 }

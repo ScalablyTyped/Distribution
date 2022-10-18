@@ -9,22 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object seamlessImmutableStrings {
   
   @js.native
-  sealed trait DeepPartial extends StObject
-  inline def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
-  
-  @js.native
-  sealed trait ImmutableObject extends StObject
-  inline def ImmutableObject: ImmutableObject = "ImmutableObject".asInstanceOf[ImmutableObject]
-  
-  @js.native
-  sealed trait ImmutableObjectMixin extends StObject
-  inline def ImmutableObjectMixin: ImmutableObjectMixin = "ImmutableObjectMixin".asInstanceOf[ImmutableObjectMixin]
-  
-  @js.native
-  sealed trait asMutable extends StObject
-  inline def asMutable: asMutable = "asMutable".asInstanceOf[asMutable]
-  
-  @js.native
   sealed trait concat extends StObject
   inline def concat: concat = "concat".asInstanceOf[concat]
   

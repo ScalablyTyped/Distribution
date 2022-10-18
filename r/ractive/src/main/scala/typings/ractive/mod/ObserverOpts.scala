@@ -16,7 +16,7 @@ trait ObserverOpts
   /**
   	 * The function called to get an old value for the observer. This can be used to do things like freeze the initial value as the old value for all future callbacks.
   	 */
-  var old: js.UndefOr[ObserverCallback[Ractive[Ractive[Any]]]] = js.undefined
+  var old: js.UndefOr[ObserverCallback[Ractive[/* ractive.ractive.Ractive<any> */ Any]]] = js.undefined
   
   /**
   	 * Whether or not to use strict equality when checking to see if a value has changed. Defaults to false.
@@ -36,7 +36,7 @@ object ObserverOpts {
     
     inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    inline def setOld(value: ObserverCallback[Ractive[Ractive[Any]]]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
+    inline def setOld(value: ObserverCallback[Ractive[/* ractive.ractive.Ractive<any> */ Any]]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
     
     inline def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
     

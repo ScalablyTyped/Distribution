@@ -158,6 +158,10 @@ object mod {
   @js.native
   val VERCEL: Boolean = js.native
   
+  @JSImport("ci-info", "WOODPECKER")
+  @js.native
+  val WOODPECKER: Boolean = js.native
+  
   @JSImport("ci-info", "XCODE_CLOUD")
   @js.native
   val XCODE_CLOUD: Boolean = js.native

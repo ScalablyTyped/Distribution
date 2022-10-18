@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,47 +20,56 @@ open class BlackAndWhitePostProcess protected ()
     * @param engine The engine which the post process will be applied. (default: current engine)
     * @param reusable If the post process can be reused on the same frame. (default: false)
     */
-  def this(name: String, options: Double, camera: typings.babylonjs.cameraMod.Camera) = this()
-  def this(name: String, options: PostProcessOptions, camera: typings.babylonjs.cameraMod.Camera) = this()
-  def this(name: String, options: Double, camera: typings.babylonjs.cameraMod.Camera, samplingMode: Double) = this()
+  def this(name: String, options: Double, camera: Nullable[typings.babylonjs.camerasCameraMod.Camera]) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera]
+  ) = this()
+  def this(
+    name: String,
+    options: Double,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
+    samplingMode: Double
+  ) = this()
+  def this(
+    name: String,
+    options: PostProcessOptions,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double
   ) = this()
   def this(
     name: String,
     options: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine
+    engine: typings.babylonjs.enginesEngineMod.Engine
   ) = this()
   def this(
     name: String,
     options: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine
+    engine: typings.babylonjs.enginesEngineMod.Engine
   ) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine
+    engine: typings.babylonjs.enginesEngineMod.Engine
   ) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine
+    engine: typings.babylonjs.enginesEngineMod.Engine
   ) = this()
   def this(
     name: String,
     options: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
     engine: Unit,
     reusable: Boolean
@@ -68,15 +77,15 @@ open class BlackAndWhitePostProcess protected ()
   def this(
     name: String,
     options: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
     options: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
     engine: Unit,
     reusable: Boolean
@@ -84,15 +93,15 @@ open class BlackAndWhitePostProcess protected ()
   def this(
     name: String,
     options: Double,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
     engine: Unit,
     reusable: Boolean
@@ -100,15 +109,15 @@ open class BlackAndWhitePostProcess protected ()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
     engine: Unit,
     reusable: Boolean
@@ -116,9 +125,9 @@ open class BlackAndWhitePostProcess protected ()
   def this(
     name: String,
     options: PostProcessOptions,
-    camera: typings.babylonjs.cameraMod.Camera,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     reusable: Boolean
   ) = this()
 }
@@ -134,8 +143,12 @@ object BlackAndWhitePostProcess {
     */
   inline def _Parse(
     parsedPostProcess: Any,
-    targetCamera: typings.babylonjs.cameraMod.Camera,
+    targetCamera: typings.babylonjs.camerasCameraMod.Camera,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String
-  ): Nullable[typings.babylonjs.blackAndWhitePostProcessMod.BlackAndWhitePostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.blackAndWhitePostProcessMod.BlackAndWhitePostProcess]]
+  ): Nullable[
+    typings.babylonjs.postProcessesBlackAndWhitePostProcessMod.BlackAndWhitePostProcess
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[
+    typings.babylonjs.postProcessesBlackAndWhitePostProcessMod.BlackAndWhitePostProcess
+  ]]
 }

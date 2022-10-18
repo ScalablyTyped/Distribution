@@ -1,7 +1,7 @@
 package typings.cliHighlight
 
-import typings.cliHighlight.themeMod.JsonTheme
-import typings.cliHighlight.themeMod.Theme
+import typings.cliHighlight.distThemeMod.JsonTheme
+import typings.cliHighlight.distThemeMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

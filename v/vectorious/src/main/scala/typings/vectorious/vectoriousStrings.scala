@@ -1,6 +1,6 @@
 package typings.vectorious
 
-import typings.vectorious.typesMod.DType
+import typings.vectorious.distTypesMod.DType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

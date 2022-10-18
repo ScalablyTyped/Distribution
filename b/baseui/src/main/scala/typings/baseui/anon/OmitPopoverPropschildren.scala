@@ -66,7 +66,7 @@ trait OmitPopoverPropschildren extends StObject {
   
   var overrides: js.UndefOr[PopoverOverrides] = js.undefined
   
-  var placement: TetherPlacement
+  var placement: js.UndefOr[TetherPlacement] = js.undefined
   
   var popoverMargin: js.UndefOr[Double] = js.undefined
   
@@ -80,12 +80,12 @@ trait OmitPopoverPropschildren extends StObject {
   
   var showArrow: js.UndefOr[Boolean] = js.undefined
   
-  var triggerType: TriggerType
+  var triggerType: js.UndefOr[TriggerType] = js.undefined
 }
 object OmitPopoverPropschildren {
   
-  inline def apply(isOpen: Boolean, placement: TetherPlacement, triggerType: TriggerType): OmitPopoverPropschildren = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
+  inline def apply(isOpen: Boolean): OmitPopoverPropschildren = {
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitPopoverPropschildren]
   }
   
@@ -177,6 +177,8 @@ object OmitPopoverPropschildren {
     
     inline def setPlacement(value: TetherPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    
     inline def setPopoverMargin(value: Double): Self = StObject.set(x, "popoverMargin", value.asInstanceOf[js.Any])
     
     inline def setPopoverMarginUndefined: Self = StObject.set(x, "popoverMargin", js.undefined)
@@ -200,5 +202,7 @@ object OmitPopoverPropschildren {
     inline def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
     
     inline def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
   }
 }

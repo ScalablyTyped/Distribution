@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@cucumber/messages", "JavaStackTraceElement")
 @js.native
 open class JavaStackTraceElement ()
-  extends typings.cucumberMessages.messagesMod.JavaStackTraceElement
+  extends typings.cucumberMessages.distCjsSrcMessagesMod.JavaStackTraceElement

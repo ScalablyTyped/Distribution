@@ -1,9 +1,10 @@
 package typings.sawtoothSdk
 
+import typings.node.NodeJS.TypedArray
 import typings.node.bufferMod.global.Buffer
-import typings.sawtoothSdk.coreMod.Context
-import typings.sawtoothSdk.coreMod.PrivateKey
-import typings.sawtoothSdk.coreMod.PublicKey
+import typings.sawtoothSdk.signingCoreMod.Context
+import typings.sawtoothSdk.signingCoreMod.PrivateKey
+import typings.sawtoothSdk.signingCoreMod.PublicKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,5 +75,5 @@ object signingMod {
   
   inline def createContext(algorithmName: String): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(algorithmName.asInstanceOf[js.Any]).asInstanceOf[Context]
   
-  type message = String | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView
+  type message = String | Buffer | TypedArray | js.typedarray.DataView
 }

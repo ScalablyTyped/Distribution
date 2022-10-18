@@ -1,6 +1,6 @@
 package typings.metamaskUtils.anon
 
-import typings.metamaskUtils.jsonMod.Json
+import typings.metamaskUtils.distJsonMod.Json
 import typings.metamaskUtils.metamaskUtilsStrings.`2Dot0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

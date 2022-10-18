@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "TangentVisibilityGraph")
 @js.native
 open class TangentVisibilityGraph protected ()
-  extends typings.webcola.geomMod.TangentVisibilityGraph {
-  def this(P: js.Array[js.Array[typings.webcola.geomMod.TVGPoint]]) = this()
-  def this(P: js.Array[js.Array[typings.webcola.geomMod.TVGPoint]], g0: E) = this()
+  extends typings.webcola.distSrcGeomMod.TangentVisibilityGraph {
+  def this(P: js.Array[js.Array[typings.webcola.distSrcGeomMod.TVGPoint]]) = this()
+  def this(P: js.Array[js.Array[typings.webcola.distSrcGeomMod.TVGPoint]], g0: E) = this()
 }

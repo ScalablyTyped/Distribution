@@ -1,11 +1,11 @@
 package typings.jimpCustom
 
-import typings.jimpCore.etcMod.Image
-import typings.jimpCore.jimpMod.JimpConstructors
-import typings.jimpCore.pluginsMod.JimpPlugin
-import typings.jimpCore.pluginsMod.JimpType
-import typings.jimpCore.utilsMod.FunctionRet
-import typings.jimpCore.utilsMod.GetIntersectionFromPluginsStatics
+import typings.jimpCore.typesEtcMod.Image
+import typings.jimpCore.typesJimpMod.JimpConstructors
+import typings.jimpCore.typesPluginsMod.JimpPlugin
+import typings.jimpCore.typesPluginsMod.JimpType
+import typings.jimpCore.typesUtilsMod.FunctionRet
+import typings.jimpCore.typesUtilsMod.GetIntersectionFromPluginsStatics
 import typings.jimpCustom.anon.Plugins
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject

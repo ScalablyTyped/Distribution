@@ -559,7 +559,7 @@ object mod {
   
   @JSImport("@vue/compiler-dom", "helperNameMap")
   @js.native
-  val helperNameMap: Any = js.native
+  val helperNameMap: Record[js.Symbol, String] = js.native
   
   inline def injectProp(node: RenderSlotCall, prop: Property, context: TransformContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectProp")(node.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def injectProp(node: VNodeCall, prop: Property, context: TransformContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectProp")(node.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -677,7 +677,7 @@ object mod {
   
   inline def processSlotOutlet(node: SlotOutletNode, context: TransformContext): SlotOutletProcessResult = (^.asInstanceOf[js.Dynamic].applyDynamic("processSlotOutlet")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[SlotOutletProcessResult]
   
-  inline def registerRuntimeHelpers(helpers: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRuntimeHelpers")(helpers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerRuntimeHelpers(helpers: Record[js.Symbol, String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRuntimeHelpers")(helpers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def resolveComponentType(node: ComponentNode, context: TransformContext): String | js.Symbol | CallExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponentType")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String | js.Symbol | CallExpression]
   inline def resolveComponentType(node: ComponentNode, context: TransformContext, ssr: Boolean): String | js.Symbol | CallExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponentType")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any], ssr.asInstanceOf[js.Any])).asInstanceOf[String | js.Symbol | CallExpression]

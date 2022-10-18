@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information for an application that is a target for share operations. */
-@JSGlobal("Windows.UI.WebUI.WebUIShareTargetActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUIShareTargetActivatedEventArgs")
 @js.native
-abstract class WebUIShareTargetActivatedEventArgs ()
+open class WebUIShareTargetActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUIShareTargetActivatedEventArgs {
   

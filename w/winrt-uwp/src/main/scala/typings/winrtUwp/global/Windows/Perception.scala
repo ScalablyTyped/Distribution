@@ -8,9 +8,9 @@ object Perception {
   
   object People {
     
-    @JSGlobal("Windows.Perception.People.HeadPose")
+    /* note: abstract class */ @JSGlobal("Windows.Perception.People.HeadPose")
     @js.native
-    abstract class HeadPose ()
+    open class HeadPose ()
       extends StObject
          with typings.winrtUwp.Windows.Perception.People.HeadPose {
       
@@ -27,9 +27,9 @@ object Perception {
     }
   }
   
-  @JSGlobal("Windows.Perception.PerceptionTimestamp")
+  /* note: abstract class */ @JSGlobal("Windows.Perception.PerceptionTimestamp")
   @js.native
-  abstract class PerceptionTimestamp ()
+  open class PerceptionTimestamp ()
     extends StObject
        with typings.winrtUwp.Windows.Perception.PerceptionTimestamp {
     
@@ -41,9 +41,9 @@ object Perception {
     var targetTime: Any = js.native
   }
   
-  @JSGlobal("Windows.Perception.PerceptionTimestampHelper")
+  /* note: abstract class */ @JSGlobal("Windows.Perception.PerceptionTimestampHelper")
   @js.native
-  abstract class PerceptionTimestampHelper ()
+  open class PerceptionTimestampHelper ()
     extends StObject
        with typings.winrtUwp.Windows.Perception.PerceptionTimestampHelper
   object PerceptionTimestampHelper {
@@ -61,9 +61,9 @@ object Perception {
   
   object Spatial {
     
-    @JSGlobal("Windows.Perception.Spatial.SpatialAnchor")
+    /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.SpatialAnchor")
     @js.native
-    abstract class SpatialAnchor ()
+    open class SpatialAnchor ()
       extends StObject
          with typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchor {
       
@@ -100,9 +100,9 @@ object Perception {
       inline def tryCreateRelativeTo_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tryCreateRelativeTo")(x.asInstanceOf[js.Any])
     }
     
-    @JSGlobal("Windows.Perception.Spatial.SpatialAnchorManager")
+    /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.SpatialAnchorManager")
     @js.native
-    abstract class SpatialAnchorManager ()
+    open class SpatialAnchorManager ()
       extends StObject
          with typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchorManager
     object SpatialAnchorManager {
@@ -118,9 +118,9 @@ object Perception {
       inline def requestStoreAsync_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestStoreAsync")(x.asInstanceOf[js.Any])
     }
     
-    @JSGlobal("Windows.Perception.Spatial.SpatialAnchorRawCoordinateSystemAdjustedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.SpatialAnchorRawCoordinateSystemAdjustedEventArgs")
     @js.native
-    abstract class SpatialAnchorRawCoordinateSystemAdjustedEventArgs ()
+    open class SpatialAnchorRawCoordinateSystemAdjustedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchorRawCoordinateSystemAdjustedEventArgs {
       
@@ -128,9 +128,9 @@ object Perception {
       var oldRawCoordinateSystemToNewRawCoordinateSystemTransform: Any = js.native
     }
     
-    @JSGlobal("Windows.Perception.Spatial.SpatialAnchorStore")
+    /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.SpatialAnchorStore")
     @js.native
-    abstract class SpatialAnchorStore ()
+    open class SpatialAnchorStore ()
       extends StObject
          with typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchorStore {
       
@@ -150,9 +150,9 @@ object Perception {
       var trySave: Any = js.native
     }
     
-    @JSGlobal("Windows.Perception.Spatial.SpatialAnchorTransferManager")
+    /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.SpatialAnchorTransferManager")
     @js.native
-    abstract class SpatialAnchorTransferManager ()
+    open class SpatialAnchorTransferManager ()
       extends StObject
          with typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchorTransferManager
     object SpatialAnchorTransferManager {
@@ -182,9 +182,9 @@ object Perception {
       inline def tryImportAnchorsAsync_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tryImportAnchorsAsync")(x.asInstanceOf[js.Any])
     }
     
-    @JSGlobal("Windows.Perception.Spatial.SpatialBoundingVolume")
+    /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.SpatialBoundingVolume")
     @js.native
-    abstract class SpatialBoundingVolume ()
+    open class SpatialBoundingVolume ()
       extends StObject
          with typings.winrtUwp.Windows.Perception.Spatial.SpatialBoundingVolume
     object SpatialBoundingVolume {
@@ -221,9 +221,9 @@ object Perception {
       inline def fromSphere_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromSphere")(x.asInstanceOf[js.Any])
     }
     
-    @JSGlobal("Windows.Perception.Spatial.SpatialCoordinateSystem")
+    /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.SpatialCoordinateSystem")
     @js.native
-    abstract class SpatialCoordinateSystem ()
+    open class SpatialCoordinateSystem ()
       extends StObject
          with typings.winrtUwp.Windows.Perception.Spatial.SpatialCoordinateSystem {
       
@@ -267,9 +267,9 @@ object Perception {
       inline def unavailable_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unavailable")(x.asInstanceOf[js.Any])
     }
     
-    @JSGlobal("Windows.Perception.Spatial.SpatialLocation")
+    /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.SpatialLocation")
     @js.native
-    abstract class SpatialLocation ()
+    open class SpatialLocation ()
       extends StObject
          with typings.winrtUwp.Windows.Perception.Spatial.SpatialLocation {
       
@@ -297,9 +297,9 @@ object Perception {
       var position: Any = js.native
     }
     
-    @JSGlobal("Windows.Perception.Spatial.SpatialLocator")
+    /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.SpatialLocator")
     @js.native
-    abstract class SpatialLocator ()
+    open class SpatialLocator ()
       extends StObject
          with typings.winrtUwp.Windows.Perception.Spatial.SpatialLocator {
       
@@ -348,9 +348,9 @@ object Perception {
       inline def getDefault_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefault")(x.asInstanceOf[js.Any])
     }
     
-    @JSGlobal("Windows.Perception.Spatial.SpatialLocatorAttachedFrameOfReference")
+    /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.SpatialLocatorAttachedFrameOfReference")
     @js.native
-    abstract class SpatialLocatorAttachedFrameOfReference ()
+    open class SpatialLocatorAttachedFrameOfReference ()
       extends StObject
          with typings.winrtUwp.Windows.Perception.Spatial.SpatialLocatorAttachedFrameOfReference {
       
@@ -374,9 +374,9 @@ object Perception {
       var tryGetRelativeHeadingAtTimestamp: Any = js.native
     }
     
-    @JSGlobal("Windows.Perception.Spatial.SpatialLocatorPositionalTrackingDeactivatingEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.SpatialLocatorPositionalTrackingDeactivatingEventArgs")
     @js.native
-    abstract class SpatialLocatorPositionalTrackingDeactivatingEventArgs ()
+    open class SpatialLocatorPositionalTrackingDeactivatingEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Perception.Spatial.SpatialLocatorPositionalTrackingDeactivatingEventArgs {
       
@@ -414,9 +414,9 @@ object Perception {
       inline def unspecified_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unspecified")(x.asInstanceOf[js.Any])
     }
     
-    @JSGlobal("Windows.Perception.Spatial.SpatialStationaryFrameOfReference")
+    /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.SpatialStationaryFrameOfReference")
     @js.native
-    abstract class SpatialStationaryFrameOfReference ()
+    open class SpatialStationaryFrameOfReference ()
       extends StObject
          with typings.winrtUwp.Windows.Perception.Spatial.SpatialStationaryFrameOfReference {
       
@@ -426,9 +426,9 @@ object Perception {
     
     object Surfaces {
       
-      @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo")
+      /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo")
       @js.native
-      abstract class SpatialSurfaceInfo ()
+      open class SpatialSurfaceInfo ()
         extends StObject
            with typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo {
         
@@ -448,9 +448,9 @@ object Perception {
         var updateTime: Any = js.native
       }
       
-      @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh")
+      /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh")
       @js.native
-      abstract class SpatialSurfaceMesh ()
+      open class SpatialSurfaceMesh ()
         extends StObject
            with typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh {
         
@@ -478,9 +478,9 @@ object Perception {
         var vertexPositions: Any = js.native
       }
       
-      @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshBuffer")
+      /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshBuffer")
       @js.native
-      abstract class SpatialSurfaceMeshBuffer ()
+      open class SpatialSurfaceMeshBuffer ()
         extends StObject
            with typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshBuffer {
         
@@ -500,9 +500,9 @@ object Perception {
         var stride: Any = js.native
       }
       
-      @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshOptions")
+      /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshOptions")
       @js.native
-      abstract class SpatialSurfaceMeshOptions ()
+      open class SpatialSurfaceMeshOptions ()
         extends StObject
            with typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshOptions {
         
@@ -549,9 +549,9 @@ object Perception {
         inline def supportedVertexPositionFormats_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedVertexPositionFormats")(x.asInstanceOf[js.Any])
       }
       
-      @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver")
+      /* note: abstract class */ @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver")
       @js.native
-      abstract class SpatialSurfaceObserver ()
+      open class SpatialSurfaceObserver ()
         extends StObject
            with typings.winrtUwp.Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver {
         

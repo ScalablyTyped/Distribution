@@ -1,7 +1,7 @@
 package typings.workboxStreams
 
 import typings.std.ReadableStream
-import typings.workboxStreams.streamSourceMod.StreamSource
+import typings.workboxStreams.typesStreamSourceMod.StreamSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

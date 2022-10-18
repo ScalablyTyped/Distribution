@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "BabylonFileLoaderConfiguration")
 @js.native
 open class BabylonFileLoaderConfiguration ()
-  extends typings.babylonjs.legacyMod.BabylonFileLoaderConfiguration
+  extends typings.babylonjs.legacyLegacyMod.BabylonFileLoaderConfiguration
 /* static members */
 object BabylonFileLoaderConfiguration {
   

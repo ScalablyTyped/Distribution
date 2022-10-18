@@ -1,21 +1,27 @@
 package typings.contractProxyKit.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.StringDictionary
-import typings.ethers.utilsMod.Logger
-import typings.ethersprojectNetworks.typesMod.Network
-import typings.ethersprojectProviders.baseProviderMod.BaseProvider
-import typings.ethersprojectWordlists.wordlistMod.Wordlist
+import org.scalablytyped.runtime.Instantiable2
+import typings.ethers.libUtilsMod.Logger
+import typings.ethersprojectContracts.mod.ContractInterface
+import typings.ethersprojectNetworks.libTypesMod.Networkish
+import typings.ethersprojectProviders.libBaseProviderMod.BaseProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofethers extends js.Object {
+trait Typeofethers extends StObject {
+  
+  var BaseContract: TypeofBaseContract = js.native
   
   var BigNumber: TypeofBigNumber = js.native
   
-  var Contract: TypeofContract = js.native
+  var Contract: Instantiable2[
+    /* addressOrName */ String, 
+    /* contractInterface */ ContractInterface, 
+    typings.ethers.mod.ethers.Contract
+  ] = js.native
   
   var ContractFactory: TypeofContractFactory = js.native
   
@@ -32,11 +38,9 @@ trait Typeofethers extends js.Object {
   val constants: Typeofconstants = js.native
   
   def getDefaultProvider(): BaseProvider = js.native
-  def getDefaultProvider(network: js.UndefOr[scala.Nothing], options: js.Any): BaseProvider = js.native
-  def getDefaultProvider(network: String): BaseProvider = js.native
-  def getDefaultProvider(network: String, options: js.Any): BaseProvider = js.native
-  def getDefaultProvider(network: Network): BaseProvider = js.native
-  def getDefaultProvider(network: Network, options: js.Any): BaseProvider = js.native
+  def getDefaultProvider(network: Unit, options: Any): BaseProvider = js.native
+  def getDefaultProvider(network: Networkish): BaseProvider = js.native
+  def getDefaultProvider(network: Networkish, options: Any): BaseProvider = js.native
   
   val logger: Logger = js.native
   
@@ -44,7 +48,7 @@ trait Typeofethers extends js.Object {
   
   val utils: Typeofutils = js.native
   
-  val version: /* "ethers/5.0.21" */ String = js.native
+  val version: /* "ethers/5.7.1" */ String = js.native
   
-  val wordlists: StringDictionary[Wordlist] = js.native
+  val wordlists: Any = js.native
 }

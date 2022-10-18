@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class TransitionService protected ()
   extends typings.uirouterCore.mod.TransitionService {
   /** @internal */
-  def this(_router: typings.uirouterCore.routerMod.UIRouter) = this()
+  def this(_router: typings.uirouterCore.libRouterMod.UIRouter) = this()
 }

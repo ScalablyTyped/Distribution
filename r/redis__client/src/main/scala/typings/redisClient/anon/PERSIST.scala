@@ -1,6 +1,6 @@
 package typings.redisClient.anon
 
-import typings.redisClient.getexMod.GetExModes
+import typings.redisClient.distLibCommandsGetexMod.GetExModes
 import typings.redisClient.redisClientBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

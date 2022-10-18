@@ -4,7 +4,7 @@ import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
 import typings.antDesignProLayout.antDesignProLayoutStrings.group
 import typings.antDesignProLayout.antDesignProLayoutStrings.sub
 import typings.std.Record
-import typings.umijsRouteUtils.typesMod.MenuDataItem
+import typings.umijsRouteUtils.distTypesMod.MenuDataItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

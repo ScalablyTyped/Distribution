@@ -5,19 +5,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Mango response.
+  * @see Docs: {@link https://docs.couchdb.org/en/latest/api/database/find.html#db-find}  */
 trait MangoResponse[D] extends StObject {
   
-  // A string that enables you to specify which page of results you require. Used for paging through result sets.
+  /** A string that enables you to specify which page of results you require.
+    *
+    * Used for paging through result sets. */
   var bookmark: js.UndefOr[String] = js.undefined
   
-  // Array of documents matching the search. In each matching document, the fields specified in
-  // the fields part of the request body are listed, along with their values.
+  /** Array of documents matching the search.
+    * 
+    * In each matching document, the fields specified in the fields part of the request body are listed, along with
+    * their values. */
   var docs: js.Array[D & IdRev]
   
-  // Basic execution statistics for a specific request.
+  /** Basic execution statistics for a specific request. */
   var execution_stats: js.UndefOr[MangoExecutionStats] = js.undefined
   
-  // Execution warnings
+  /** Execution warnings */
   var warning: js.UndefOr[String] = js.undefined
 }
 object MangoResponse {
@@ -35,7 +41,7 @@ object MangoResponse {
     
     inline def setDocs(value: js.Array[D & IdRev]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
-    inline def setDocsVarargs(value: (D & IdRev)*): Self = StObject.set(x, "docs", js.Array(value :_*))
+    inline def setDocsVarargs(value: (D & IdRev)*): Self = StObject.set(x, "docs", js.Array(value*))
     
     inline def setExecution_stats(value: MangoExecutionStats): Self = StObject.set(x, "execution_stats", value.asInstanceOf[js.Any])
     

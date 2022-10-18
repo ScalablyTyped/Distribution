@@ -29,9 +29,9 @@ object Audio {
   val ^ : js.Any = js.native
   
   /** Represents an audio device input node. */
-  @JSGlobal("Windows.Media.Audio.AudioDeviceInputNode")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.AudioDeviceInputNode")
   @js.native
-  abstract class AudioDeviceInputNode ()
+  open class AudioDeviceInputNode ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.AudioDeviceInputNode
   
@@ -55,9 +55,9 @@ object Audio {
   }
   
   /** Represents an audio device output node. */
-  @JSGlobal("Windows.Media.Audio.AudioDeviceOutputNode")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.AudioDeviceOutputNode")
   @js.native
-  abstract class AudioDeviceOutputNode ()
+  open class AudioDeviceOutputNode ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.AudioDeviceOutputNode {
     
@@ -113,9 +113,9 @@ object Audio {
   }
   
   /** Represents an audio file input node. */
-  @JSGlobal("Windows.Media.Audio.AudioFileInputNode")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.AudioFileInputNode")
   @js.native
-  abstract class AudioFileInputNode ()
+  open class AudioFileInputNode ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.AudioFileInputNode
   
@@ -139,9 +139,9 @@ object Audio {
   }
   
   /** Represents an audio file output node. */
-  @JSGlobal("Windows.Media.Audio.AudioFileOutputNode")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.AudioFileOutputNode")
   @js.native
-  abstract class AudioFileOutputNode ()
+  open class AudioFileOutputNode ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.AudioFileOutputNode {
     
@@ -208,9 +208,9 @@ object Audio {
   }
   
   /** Represents arguments for an AudioFrameCompleted event. */
-  @JSGlobal("Windows.Media.Audio.AudioFrameCompletedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.AudioFrameCompletedEventArgs")
   @js.native
-  abstract class AudioFrameCompletedEventArgs ()
+  open class AudioFrameCompletedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.AudioFrameCompletedEventArgs {
     
@@ -220,16 +220,16 @@ object Audio {
   }
   
   /** Represents an audio frame input node. */
-  @JSGlobal("Windows.Media.Audio.AudioFrameInputNode")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.AudioFrameInputNode")
   @js.native
-  abstract class AudioFrameInputNode ()
+  open class AudioFrameInputNode ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.AudioFrameInputNode
   
   /** Represents an audio frame output node. */
-  @JSGlobal("Windows.Media.Audio.AudioFrameOutputNode")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.AudioFrameOutputNode")
   @js.native
-  abstract class AudioFrameOutputNode ()
+  open class AudioFrameOutputNode ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.AudioFrameOutputNode {
     
@@ -288,9 +288,9 @@ object Audio {
   }
   
   /** Represents an audio graph of connected input, output, and submix nodes that manipulate and route audio. */
-  @JSGlobal("Windows.Media.Audio.AudioGraph")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.AudioGraph")
   @js.native
-  abstract class AudioGraph ()
+  open class AudioGraph ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.AudioGraph
   object AudioGraph {
@@ -309,9 +309,9 @@ object Audio {
   }
   
   /** Represents a connection within an audio graph. */
-  @JSGlobal("Windows.Media.Audio.AudioGraphConnection")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.AudioGraphConnection")
   @js.native
-  abstract class AudioGraphConnection ()
+  open class AudioGraphConnection ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.AudioGraphConnection {
     
@@ -396,9 +396,9 @@ object Audio {
   }
   
   /** Represents arguments for an UnrecoverableErrorOccurred event. */
-  @JSGlobal("Windows.Media.Audio.AudioGraphUnrecoverableErrorOccurredEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.AudioGraphUnrecoverableErrorOccurredEventArgs")
   @js.native
-  abstract class AudioGraphUnrecoverableErrorOccurredEventArgs ()
+  open class AudioGraphUnrecoverableErrorOccurredEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.AudioGraphUnrecoverableErrorOccurredEventArgs {
     
@@ -408,16 +408,16 @@ object Audio {
   }
   
   /** Represents an audio submix node that mixes the output of one or more nodes into single output that can be connected to output nodes or other submix nodes. */
-  @JSGlobal("Windows.Media.Audio.AudioSubmixNode")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.AudioSubmixNode")
   @js.native
-  abstract class AudioSubmixNode ()
+  open class AudioSubmixNode ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.AudioSubmixNode
   
   /** Represents the result of creating an audio device input node. */
-  @JSGlobal("Windows.Media.Audio.CreateAudioDeviceInputNodeResult")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.CreateAudioDeviceInputNodeResult")
   @js.native
-  abstract class CreateAudioDeviceInputNodeResult ()
+  open class CreateAudioDeviceInputNodeResult ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.CreateAudioDeviceInputNodeResult {
     
@@ -431,9 +431,9 @@ object Audio {
   }
   
   /** Represents the result of creating an audio device output node. */
-  @JSGlobal("Windows.Media.Audio.CreateAudioDeviceOutputNodeResult")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.CreateAudioDeviceOutputNodeResult")
   @js.native
-  abstract class CreateAudioDeviceOutputNodeResult ()
+  open class CreateAudioDeviceOutputNodeResult ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.CreateAudioDeviceOutputNodeResult {
     
@@ -447,9 +447,9 @@ object Audio {
   }
   
   /** Represents the result of creating an audio file input node. */
-  @JSGlobal("Windows.Media.Audio.CreateAudioFileInputNodeResult")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.CreateAudioFileInputNodeResult")
   @js.native
-  abstract class CreateAudioFileInputNodeResult ()
+  open class CreateAudioFileInputNodeResult ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.CreateAudioFileInputNodeResult {
     
@@ -463,9 +463,9 @@ object Audio {
   }
   
   /** Represents the result of creating an audio file output node. */
-  @JSGlobal("Windows.Media.Audio.CreateAudioFileOutputNodeResult")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.CreateAudioFileOutputNodeResult")
   @js.native
-  abstract class CreateAudioFileOutputNodeResult ()
+  open class CreateAudioFileOutputNodeResult ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.CreateAudioFileOutputNodeResult {
     
@@ -479,9 +479,9 @@ object Audio {
   }
   
   /** Represents the result of creating an audio graph. */
-  @JSGlobal("Windows.Media.Audio.CreateAudioGraphResult")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.CreateAudioGraphResult")
   @js.native
-  abstract class CreateAudioGraphResult ()
+  open class CreateAudioGraphResult ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.CreateAudioGraphResult {
     
@@ -528,9 +528,9 @@ object Audio {
   }
   
   /** Represents an equalizer band for the equalizer effect. */
-  @JSGlobal("Windows.Media.Audio.EqualizerBand")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.EqualizerBand")
   @js.native
-  abstract class EqualizerBand ()
+  open class EqualizerBand ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.EqualizerBand {
     
@@ -573,9 +573,9 @@ object Audio {
   }
   
   /** Provides data for the AudioFrameInputNode::QuantumStarted event. This event is raised when the audio graph containing the audio frame input node is ready to begin processing a new quantum of data. */
-  @JSGlobal("Windows.Media.Audio.FrameInputNodeQuantumStartedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Audio.FrameInputNodeQuantumStartedEventArgs")
   @js.native
-  abstract class FrameInputNodeQuantumStartedEventArgs ()
+  open class FrameInputNodeQuantumStartedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.FrameInputNodeQuantumStartedEventArgs {
     

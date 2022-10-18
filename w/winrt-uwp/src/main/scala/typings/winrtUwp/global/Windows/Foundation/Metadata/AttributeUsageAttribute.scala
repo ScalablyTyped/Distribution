@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the use of another attribute. */
-@JSGlobal("Windows.Foundation.Metadata.AttributeUsageAttribute")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.Metadata.AttributeUsageAttribute")
 @js.native
-abstract class AttributeUsageAttribute ()
+open class AttributeUsageAttribute ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Metadata.AttributeUsageAttribute

@@ -14,7 +14,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : js.Array[Coin] & CoinsAPI = js.native
   
-  type Coin = typings.coinlist.coinsJsonMod.Coin
+  type Coin = typings.coinlist.srcCoinsDotjsonMod.Coin
   
   @js.native
   trait CoinsAPI extends StObject {

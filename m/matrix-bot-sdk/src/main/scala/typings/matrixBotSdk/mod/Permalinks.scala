@@ -1,6 +1,6 @@
 package typings.matrixBotSdk.mod
 
-import typings.matrixBotSdk.permalinksMod.PermalinkParts
+import typings.matrixBotSdk.libHelpersPermalinksMod.PermalinkParts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "Permalinks")
 @js.native
 /* private */ open class Permalinks ()
-  extends typings.matrixBotSdk.permalinksMod.Permalinks
+  extends typings.matrixBotSdk.libHelpersPermalinksMod.Permalinks
 /* static members */
 object Permalinks {
   

@@ -1,8 +1,8 @@
 package typings.rcMotion
 
-import typings.rcMotion.diffMod.DiffStatus
-import typings.rcMotion.interfaceMod.MotionStatus
-import typings.rcMotion.interfaceMod.StepStatus
+import typings.rcMotion.esInterfaceMod.MotionStatus
+import typings.rcMotion.esInterfaceMod.StepStatus
+import typings.rcMotion.esUtilDiffMod.DiffStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

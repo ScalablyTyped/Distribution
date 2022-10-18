@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5WordCount
 
-import typings.ckeditorCkeditor5WordCount.wordcountMod.default
+import typings.ckeditorCkeditor5WordCount.srcWordcountMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.antvG2plot
 
-import typings.antvG2plot.layoutMod._NodeAlign
-import typings.antvG2plot.stateMod.StateName
-import typings.antvG2plot.transformWordCloudMod._FontWeight
+import typings.antvG2plot.libPlotsSankeyLayoutMod._NodeAlign
+import typings.antvG2plot.libTypesStateMod.StateName
+import typings.antvG2plot.libUtilsTransformWordCloudMod._FontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +14,6 @@ object antvG2plotStrings {
     extends StObject
        with StateName
   inline def default: default = "default".asInstanceOf[default]
-  
-  @js.native
-  sealed trait Writable extends StObject
-  inline def Writable: Writable = "Writable".asInstanceOf[Writable]
   
   @js.native
   sealed trait absolute extends StObject
@@ -49,14 +45,14 @@ object antvG2plotStrings {
   sealed trait bold
     extends StObject
        with _FontWeight
-       with typings.antvG2plot.wordCloudTypesMod._FontWeight
+       with typings.antvG2plot.libPlotsWordCloudTypesMod._FontWeight
   inline def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
   sealed trait bolder
     extends StObject
        with _FontWeight
-       with typings.antvG2plot.wordCloudTypesMod._FontWeight
+       with typings.antvG2plot.libPlotsWordCloudTypesMod._FontWeight
   inline def bolder: bolder = "bolder".asInstanceOf[bolder]
   
   @js.native
@@ -211,7 +207,7 @@ object antvG2plotStrings {
   sealed trait lighter
     extends StObject
        with _FontWeight
-       with typings.antvG2plot.wordCloudTypesMod._FontWeight
+       with typings.antvG2plot.libPlotsWordCloudTypesMod._FontWeight
   inline def lighter: lighter = "lighter".asInstanceOf[lighter]
   
   @js.native
@@ -242,7 +238,7 @@ object antvG2plotStrings {
   sealed trait normal
     extends StObject
        with _FontWeight
-       with typings.antvG2plot.wordCloudTypesMod._FontWeight
+       with typings.antvG2plot.libPlotsWordCloudTypesMod._FontWeight
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native

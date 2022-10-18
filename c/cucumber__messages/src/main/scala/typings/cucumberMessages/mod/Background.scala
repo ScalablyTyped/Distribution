@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@cucumber/messages", "Background")
 @js.native
 open class Background ()
-  extends typings.cucumberMessages.messagesMod.Background
+  extends typings.cucumberMessages.distCjsSrcMessagesMod.Background

@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.NanoflowParameterMapping")
 @js.native
 open class NanoflowParameterMapping protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.NanoflowParameterMapping {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.NanoflowParameterMapping {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object NanoflowParameterMapping {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.NanoflowParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.NanoflowParameterMapping]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.NanoflowParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.NanoflowParameterMapping]
   
   /**
     * Creates and returns a new NanoflowParameterMapping instance in the SDK and on the server.
@@ -50,7 +50,7 @@ object NanoflowParameterMapping {
     *  7.19.0 and higher
     */
   /* static member */
-  inline def createInCallNanoflowClientActionUnderParameterMappings(container: typings.mendixmodelsdk.pagesMod.pages.CallNanoflowClientAction): typings.mendixmodelsdk.pagesMod.pages.NanoflowParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallNanoflowClientActionUnderParameterMappings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.NanoflowParameterMapping]
+  inline def createInCallNanoflowClientActionUnderParameterMappings(container: typings.mendixmodelsdk.srcGenPagesMod.pages.CallNanoflowClientAction): typings.mendixmodelsdk.srcGenPagesMod.pages.NanoflowParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallNanoflowClientActionUnderParameterMappings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.NanoflowParameterMapping]
   
   /**
     * Creates and returns a new NanoflowParameterMapping instance in the SDK and on the server.
@@ -61,7 +61,7 @@ object NanoflowParameterMapping {
     *  7.19.0 and higher
     */
   /* static member */
-  inline def createInNanoflowSourceUnderParameterMappings(container: typings.mendixmodelsdk.pagesMod.pages.NanoflowSource): typings.mendixmodelsdk.pagesMod.pages.NanoflowParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowSourceUnderParameterMappings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.NanoflowParameterMapping]
+  inline def createInNanoflowSourceUnderParameterMappings(container: typings.mendixmodelsdk.srcGenPagesMod.pages.NanoflowSource): typings.mendixmodelsdk.srcGenPagesMod.pages.NanoflowParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowSourceUnderParameterMappings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.NanoflowParameterMapping]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.NanoflowParameterMapping.structureTypeName")

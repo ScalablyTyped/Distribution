@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "TransformNode")
 @js.native
 open class TransformNode protected ()
-  extends typings.babylonjs.babylonjsIndexMod.TransformNode {
+  extends typings.babylonjs.meshesIndexMod.TransformNode {
   def this(name: String) = this()
   def this(name: String, scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
   def this(name: String, scene: Unit, isPure: Boolean) = this()
@@ -70,13 +70,21 @@ object TransformNode {
   inline def BILLBOARDMODE_Z_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BILLBOARDMODE_Z")(x.asInstanceOf[js.Any])
   
   /**
+    * Child transform with Billboard flags should or should not apply parent rotation (default if off)
+    */
+  @JSImport("babylonjs/index", "TransformNode.BillboardUseParentOrientation")
+  @js.native
+  def BillboardUseParentOrientation: Boolean = js.native
+  inline def BillboardUseParentOrientation_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BillboardUseParentOrientation")(x.asInstanceOf[js.Any])
+  
+  /**
     * Returns a new TransformNode object parsed from the source provided.
     * @param parsedTransformNode is the source.
     * @param scene the scene the object belongs to
     * @param rootUrl is a string, it's the root URL to prefix the `delayLoadingFile` property with
     * @returns a new TransformNode object parsed from the source provided.
     */
-  inline def Parse(parsedTransformNode: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTransformNode.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
+  inline def Parse(parsedTransformNode: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.meshesTransformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTransformNode.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesTransformNodeMod.TransformNode]
   
   @JSImport("babylonjs/index", "TransformNode._LookAtVectorCache")
   @js.native

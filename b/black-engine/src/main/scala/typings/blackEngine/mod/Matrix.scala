@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Matrix")
 @js.native
 open class Matrix protected ()
-  extends typings.blackEngine.matrixMod.Matrix {
+  extends typings.blackEngine.geomMatrixMod.Matrix {
   def this(
     a: js.UndefOr[Double],
     b: js.UndefOr[Double],
@@ -21,13 +21,13 @@ object Matrix {
   
   @JSImport("black-engine", "Matrix.__cache")
   @js.native
-  val cache: typings.blackEngine.matrixMod.Matrix = js.native
+  val cache: typings.blackEngine.geomMatrixMod.Matrix = js.native
   
   @JSImport("black-engine", "Matrix.__identity")
   @js.native
-  val identity: typings.blackEngine.matrixMod.Matrix = js.native
+  val identity: typings.blackEngine.geomMatrixMod.Matrix = js.native
   
   @JSImport("black-engine", "Matrix.pool")
   @js.native
-  val pool: typings.blackEngine.objectPoolMod.ObjectPool = js.native
+  val pool: typings.blackEngine.utilsObjectPoolMod.ObjectPool = js.native
 }

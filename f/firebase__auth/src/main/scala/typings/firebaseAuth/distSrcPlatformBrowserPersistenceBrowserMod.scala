@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcPlatformBrowserPersistenceBrowserMod {
   
-  @JSImport("@firebase/auth/dist/src/platform_browser/persistence/browser", "BrowserPersistenceClass")
+  /* note: abstract class */ @JSImport("@firebase/auth/dist/src/platform_browser/persistence/browser", "BrowserPersistenceClass")
   @js.native
-  abstract class BrowserPersistenceClass protected () extends StObject {
+  open class BrowserPersistenceClass protected () extends StObject {
     /* protected */ def this(storageRetriever: js.Function0[Storage], `type`: PersistenceType) = this()
     
     def _get[T /* <: PersistenceValue */](key: String): js.Promise[T | Null] = js.native

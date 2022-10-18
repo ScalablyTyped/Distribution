@@ -2,27 +2,20 @@ package typings.react.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
-import typings.propTypes.mod.InferProps
 import typings.react.anon.Default
 import typings.react.anon.UNDEFINEDVOIDONLY
-import typings.react.anon.`1`
 import typings.react.mod.^
 import typings.react.reactStrings.input
 import typings.react.reactStrings.mount
-import typings.react.reactStrings.ref
 import typings.react.reactStrings.update
 import typings.scheduler.tracingMod.Interaction
 import typings.std.Element
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.Exclude
-import typings.std.Extract
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
-import typings.std.InstanceType
 import typings.std.Partial
-import typings.std.Pick
 import typings.std.SVGElement
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -94,17 +87,17 @@ inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], pro
 inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
 inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
 inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
   props: ClassAttributes[T] & P,
   children: ReactNode*
 ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
 inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
   props: Null,
   children: ReactNode*
 ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
 inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
   props: Unit,
   children: ReactNode*
 ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
@@ -118,17 +111,17 @@ inline def createElement_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Elem
 inline def createElement_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
 
 inline def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.react.reactStrings.animate, typings.react.reactStrings.circle, typings.react.reactStrings.clipPath */ Any,
   props: ClassAttributes[T] & P,
   children: ReactNode*
 ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
 inline def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.react.reactStrings.animate, typings.react.reactStrings.circle, typings.react.reactStrings.clipPath */ Any,
   props: Null,
   children: ReactNode*
 ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
 inline def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.react.reactStrings.animate, typings.react.reactStrings.circle, typings.react.reactStrings.clipPath */ Any,
   props: Unit,
   children: ReactNode*
 ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
@@ -147,7 +140,9 @@ inline def createElement_input(
 inline def createElement_input(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
 inline def createElement_input(`type`: input, props: Unit, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
 
-inline def createFactory(`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any): SVGFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[SVGFactory]
+inline def createFactory(
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.react.reactStrings.animate, typings.react.reactStrings.circle, typings.react.reactStrings.clipPath */ Any
+): SVGFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[SVGFactory]
 inline def createFactory[P](`type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]]): CFactory[P, ClassicComponent[P, ComponentState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CFactory[P, ClassicComponent[P, ComponentState]]]
 inline def createFactory[P](`type`: ComponentClass[P, ComponentState]): Factory[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[Factory[P]]
 // Custom components
@@ -160,7 +155,9 @@ inline def createFactory_PTC_CFactory[P, T /* <: Component[P, ComponentState, An
 // Top Level API
 // ----------------------------------------------------------------------
 // DOM Elements
-inline def createFactory_T_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any): HTMLFactory[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[HTMLFactory[T]]
+inline def createFactory_T_HTMLFactory[T /* <: HTMLElement */](
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any
+): HTMLFactory[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[HTMLFactory[T]]
 
 inline def createRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRef")().asInstanceOf[RefObject[T]]
 
@@ -296,7 +293,14 @@ inline def useMemo[T](factory: js.Function0[T], deps: DependencyList): T = (^.as
   * @version 16.8.0
   * @see https://reactjs.org/docs/hooks-reference.html#usereducer
   */
-// overload where dispatch could accept 0 arguments.
+// I'm not sure if I keep this 2-ary or if I make it (2,3)-ary; it's currently (2,3)-ary.
+// The Flow types do have an overload for 3-ary invocation with undefined initializer.
+// NOTE: without the ReducerState indirection, TypeScript would reduce S to be the most common
+// supertype between the reducer's return type and the initialState (or the initializer's return type),
+// which would prevent autocompletion from ever working.
+// TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
+// in older versions, or a regression in newer versions of the typescript completion service.
+inline def useReducer[R /* <: Reducer[Any, Any] */](reducer: R, initialState: ReducerState[R], initializer: Unit): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]]]
 /**
   * An alternative to `useState`.
   *
@@ -307,14 +311,8 @@ inline def useMemo[T](factory: js.Function0[T], deps: DependencyList): T = (^.as
   * @version 16.8.0
   * @see https://reactjs.org/docs/hooks-reference.html#usereducer
   */
-// I'm not sure if I keep this 2-ary or if I make it (2,3)-ary; it's currently (2,3)-ary.
-// The Flow types do have an overload for 3-ary invocation with undefined initializer.
-// NOTE: without the ReducerState indirection, TypeScript would reduce S to be the most common
-// supertype between the reducer's return type and the initialState (or the initializer's return type),
-// which would prevent autocompletion from ever working.
-// TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
-// in older versions, or a regression in newer versions of the typescript completion service.
-inline def useReducer[R /* <: ReducerWithoutAction[Any] */](reducer: R, initializerArg: ReducerState[R] | ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction]]
+// overload where dispatch could accept 0 arguments.
+inline def useReducer[R /* <: ReducerWithoutAction[Any] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction]]
 /**
   * An alternative to `useState`.
   *
@@ -512,17 +510,7 @@ type ClassicFactory[P] = CFactory[P, ClassicComponent[P, ComponentState]]
 
 type ClipboardEventHandler[T] = EventHandler[ClipboardEvent[T]]
 
-/**
-  * NOTE: prefer ComponentPropsWithRef, if the ref is forwarded,
-  * or ComponentPropsWithoutRef when refs are not supported.
-  */
-type ComponentProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)
-
-type ComponentPropsWithRef[T /* <: ElementType[Any] */] = PropsWithRef[ComponentProps[T]] | (PropsWithoutRef[Any] & RefAttributes[InstanceType[T]])
-
 type ComponentPropsWithoutRef[T /* <: ElementType[Any] */] = PropsWithoutRef[ComponentProps[T]]
-
-type ComponentRef[T /* <: ElementType[Any] */] = Any
 
 type ComponentState = Any
 
@@ -531,14 +519,6 @@ type ComponentType[P] = (ComponentClass[P, ComponentState]) | FunctionComponent[
 type CompositionEventHandler[T] = EventHandler[CompositionEvent[T]]
 
 type Consumer[T] = ExoticComponent[ConsumerProps[T]]
-
-type ContextType[C /* <: Context[Any] */] = Any
-
-// Any prop that has a default prop becomes optional, but its type is unchanged
-// Undeclared default props are augmented into the resulting allowable attributes
-// If declared props have indexed properties, ignore default props entirely as keyof gets widened
-// Wrap in an outer-level conditional type to allow distribution over props that are unions
-type Defaultize[P, D] = ((Pick[P, Exclude[/* keyof P */ String, /* keyof D */ String]]) & (InexactPartial[Pick[P, Extract[/* keyof P */ String, /* keyof D */ String]]]) & (InexactPartial[Pick[D, Exclude[/* keyof D */ String, /* keyof P */ String]]])) | P
 
 type DependencyList = js.Array[Any]
 
@@ -558,25 +538,6 @@ type DragEventHandler[T] = EventHandler[DragEvent[T]]
 
 // NOTE: callbacks are _only_ allowed to return either void, or a destructor.
 type EffectCallback = js.Function0[Unit | Destructor]
-
-/**
-  * Gets the instance type for a React element. The instance will be different for various component types:
-  *
-  * - React class components will be the class instance. So if you had `class Foo extends React.Component<{}> {}`
-  *   and used `React.ElementRef<typeof Foo>` then the type would be the instance of `Foo`.
-  * - React stateless functional components do not have a backing instance and so `React.ElementRef<typeof Bar>`
-  *   (when `Bar` is `function Bar() {}`) will give you the `undefined` type.
-  * - JSX intrinsics like `div` will give you their DOM instance. For `React.ElementRef<'div'>` that would be
-  *   `HTMLDivElement`. For `React.ElementRef<'input'>` that would be `HTMLInputElement`.
-  * - React stateless functional components that forward a `ref` will give you the `ElementRef` of the forwarded
-  *   to component.
-  *
-  * `C` must be the type _of_ a React component so you need to use typeof as in `React.ElementRef<typeof MyComponent>`.
-  *
-  * @todo In Flow, this works a little different with forwarded refs and the `AbstractComponent` that
-  *       `React.forwardRef()` returns.
-  */
-type ElementRef[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178 */ Any */] = Any
 
 //
 // React Elements
@@ -656,10 +617,6 @@ type HTMLFactory[T /* <: HTMLElement */] = DetailedHTMLFactory[AllHTMLAttributes
 */
 type HTMLInputTypeAttribute = _HTMLInputTypeAttribute | String
 
-type InexactPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? T[K] | undefined}
-  */ typings.react.reactStrings.InexactPartial & TopLevel[T]
-
 type JSXElementConstructor[P] = (js.Function1[/* props */ P, ReactElement | Null]) | (Instantiable1[/* props */ P, Component[Any, Any, Any]])
 
 type Key = String | Double
@@ -667,9 +624,6 @@ type Key = String | Double
 type KeyboardEventHandler[T] = EventHandler[KeyboardEvent[T]]
 
 type LegacyRef[T] = String | Ref[T]
-
-// Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
-type MergePropTypes[P, T] = ((Pick[P, NotExactlyAnyPropertyKeys[P]]) & (Pick[T, Exclude[/* keyof T */ String, NotExactlyAnyPropertyKeys[P]]]) & (Pick[P, Exclude[/* keyof P */ String, /* keyof T */ String]])) | P | T
 
 type MouseEventHandler[T] = EventHandler[MouseEvent[T, NativeMouseEvent]]
 
@@ -716,12 +670,6 @@ Unit]
 
 type PropsWithChildren[P] = P & typings.react.anon.Children
 
-/** Ensures that the props do not include string ref, which cannot be forwarded */
-type PropsWithRef[P] = P | (PropsWithoutRef[P] & `1`)
-
-/** Ensures that the props do not include ref at all */
-type PropsWithoutRef[P] = P | (Pick[P, Exclude[/* keyof P */ String, ref]])
-
 // NOTE: only the Context object itself can get a displayName
 // https://github.com/facebook/react-devtools/blob/e0b854e4c/backend/attachRendererFiber.js#L310-L325
 type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
@@ -731,7 +679,7 @@ type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
   */
 type ReactChild = ReactElement | String | Double
 
-type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */, P] = ReactElement
+type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any */, P] = ReactElement
 
 type ReactEventHandler[T] = EventHandler[SyntheticEvent[T, Event]]
 
@@ -744,8 +692,6 @@ type ReactHTMLElement[T /* <: HTMLElement */] = DetailedReactHTMLElement[AllHTML
 // Component API
 // ----------------------------------------------------------------------
 type ReactInstance = (Component[Any, js.Object, Any]) | Element
-
-type ReactManagedAttributes[C, P] = P | (Defaultize[(MergePropTypes[P, InferProps[Any]]) | P, Any]) | (MergePropTypes[P, InferProps[Any]])
 
 /* Rewritten from type alias, can be one of: 
   - typings.react.mod.ReactElement
@@ -765,15 +711,6 @@ type ReactText = String | Double
 
 // Unlike redux, the actions _can_ be anything
 type Reducer[S, A] = js.Function2[/* prevState */ S, /* action */ A, S]
-
-type ReducerAction[R /* <: Reducer[Any, Any] */] = Any
-
-// types used to try and prevent the compiler from reducing S
-// to a supertype common with the second argument to useReducer()
-type ReducerState[R /* <: Reducer[Any, Any] */] = Any
-
-// The identity check is done with the SameValue algorithm (Object.is), which is stricter than ===
-type ReducerStateWithoutAction[R /* <: ReducerWithoutAction[Any] */] = Any
 
 // If useReducer accepts a reducer without action, dispatch may be called without any parameters.
 type ReducerWithoutAction[S] = js.Function1[/* prevState */ S, S]
@@ -829,9 +766,5 @@ type ValidationMap[T] = typings.propTypes.mod.ValidationMap[T]
 type Validator[T] = typings.propTypes.mod.Validator[T]
 
 type VoidOrUndefinedOnly = Unit | UNDEFINEDVOIDONLY
-
-type WeakValidationMap[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? null extends T[K]? react.react.Validator<T[K] | null | undefined> : undefined extends T[K]? react.react.Validator<T[K] | null | undefined> : react.react.Validator<T[K]>}
-  */ typings.react.reactStrings.WeakValidationMap & TopLevel[Any]
 
 type WheelEventHandler[T] = EventHandler[WheelEvent[T]]

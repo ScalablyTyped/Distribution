@@ -10,11 +10,11 @@ sealed trait ProjectResourceFields extends StObject
   * Specifies the resource fields that are available as a parameter for the {@link Office.Document | Document}.getResourceFieldAsync method.
   *
   * @remarks
-  * 
+  *
   * A ProjectResourceFields constant can be used as a parameter of the {@link Office.Document | Document}.getResourceFieldAsync method.
   *
-  * For more information about working with fields in Project, see 
-  * {@link https://support.microsoft.com/office/615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. In 
+  * For more information about working with fields in Project, see
+  * {@link https://support.microsoft.com/office/615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. In
   * Project Help, search for Available fields.
   */
 @JSGlobal("Office.ProjectResourceFields")
@@ -22,7 +22,7 @@ sealed trait ProjectResourceFields extends StObject
 object ProjectResourceFields extends StObject {
   
   /**
-    * The accrual method that defines how a task accrues the cost of the resource: Accrues when the task starts = 1, 
+    * The accrual method that defines how a task accrues the cost of the resource: Accrues when the task starts = 1,
     * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
     */
   @js.native

@@ -1,9 +1,9 @@
 package typings.canvg.mod.elements
 
 import typings.canvg.anon.TypeofStyleElement
-import typings.canvg.documentDocumentMod.Document
+import typings.canvg.distDocumentDocumentMod.Document
+import typings.canvg.distDocumentStyleElementMod.StyleElement
 import typings.canvg.mod.elements.^
-import typings.canvg.styleElementMod.StyleElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

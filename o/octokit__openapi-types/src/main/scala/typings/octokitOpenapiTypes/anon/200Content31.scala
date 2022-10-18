@@ -6,20 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200Content31` extends StObject {
   
-  /** Success */
+  /** Response */
   var `200`: Content31
   
-  var `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['code_scanning_forbidden_read'] */ js.Any
+  var `401`: Content6
 }
 object `200Content31` {
   
-  inline def apply(
-    `200`: Content31,
-    `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['code_scanning_forbidden_read'] */ js.Any
-  ): `200Content31` = {
+  inline def apply(`200`: Content31, `401`: Content6): `200Content31` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
+    __obj.updateDynamic("401")(`401`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content31`]
   }
   
@@ -27,8 +24,6 @@ object `200Content31` {
     
     inline def set200(value: Content31): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set403(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['code_scanning_forbidden_read'] */ js.Any
-    ): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set401(value: Content6): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
   }
 }

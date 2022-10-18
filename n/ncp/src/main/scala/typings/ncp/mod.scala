@@ -3,10 +3,10 @@ package typings.ncp
 import typings.ncp.anon.OptionserrsPathLike
 import typings.ncp.anon.Optionserrsundefined
 import typings.ncp.anon.OptionsstopOnErrtrue
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.WriteStream
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,7 +106,7 @@ object mod {
     var stopOnErr: js.UndefOr[Boolean] = js.undefined
     
     var transform: js.UndefOr[
-        js.Function3[/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File, Unit]
+        js.Function3[/* read */ ReadableStream, /* write */ WritableStream, /* file */ File, Unit]
       ] = js.undefined
   }
   object Options {
@@ -144,7 +144,7 @@ object mod {
       
       inline def setStopOnErrUndefined: Self = StObject.set(x, "stopOnErr", js.undefined)
       
-      inline def setTransform(value: (/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
+      inline def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }

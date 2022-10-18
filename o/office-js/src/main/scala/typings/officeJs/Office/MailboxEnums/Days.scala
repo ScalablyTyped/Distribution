@@ -11,7 +11,7 @@ sealed trait Days extends StObject
   *
   * @remarks
   * [Api set: Mailbox 1.7]
-  * 
+  *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.Days")

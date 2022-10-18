@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait EndpointConfig extends StObject {
   
   /** Output only. The map of port descriptions to URLs. Will only be populated if enable_http_port_access is true. */
   var httpPorts: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.EndpointConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object EndpointConfig {
@@ -31,9 +28,7 @@ object EndpointConfig {
     inline def setEnableHttpPortAccessUndefined: Self = StObject.set(x, "enableHttpPortAccess", js.undefined)
     
     inline def setHttpPorts(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.EndpointConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "httpPorts", value.asInstanceOf[js.Any])
     
     inline def setHttpPortsUndefined: Self = StObject.set(x, "httpPorts", js.undefined)

@@ -1,8 +1,8 @@
 package typings.postcssReporter
 
 import org.scalablytyped.runtime.Shortcut
+import typings.postcss.libResultMod.Message
 import typings.postcss.mod.PluginCreator
-import typings.postcss.resultMod.Message
 import typings.postcssReporter.anon.Messages
 import typings.postcssReporter.postcssReporterStrings.any
 import typings.postcssReporter.postcssReporterStrings.first

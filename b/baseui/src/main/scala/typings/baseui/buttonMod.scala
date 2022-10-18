@@ -10,7 +10,7 @@ import typings.baseui.baseuiStrings.span
 import typings.baseui.buttonButtonMod.ButtonComponentType
 import typings.baseui.buttonTypesMod.CustomColors
 import typings.baseui.buttonTypesMod.SharedStyleProps
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
-import typings.jupyterlabTranslation.tokensMod.ITranslator
+import typings.jupyterlabTranslation.libTokensMod.ITranslator
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

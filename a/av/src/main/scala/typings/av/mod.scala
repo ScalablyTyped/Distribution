@@ -157,9 +157,9 @@ object mod {
     def this(input: BufferFormats) = this()
   }
   
-  @JSImport("av", "Decoder")
+  /* note: abstract class */ @JSImport("av", "Decoder")
   @js.native
-  abstract class Decoder ()
+  open class Decoder ()
     extends StObject
        with typings.av.AV.Decoder
   object Decoder {
@@ -175,9 +175,9 @@ object mod {
     inline def register(id: String, decoder: Instantiable0[typings.av.AV.Decoder]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(id.asInstanceOf[js.Any], decoder.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("av", "Demuxer")
+  /* note: abstract class */ @JSImport("av", "Demuxer")
   @js.native
-  abstract class Demuxer ()
+  open class Demuxer ()
     extends StObject
        with typings.av.AV.Demuxer
   object Demuxer {

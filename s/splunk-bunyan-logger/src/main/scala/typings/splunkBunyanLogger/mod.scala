@@ -1,11 +1,11 @@
 package typings.splunkBunyanLogger
 
 import typings.bunyan.mod.Stream
+import typings.node.NodeJS.WritableStream
 import typings.splunkLogging.mod.Config
 import typings.splunkLogging.mod.EventFormatter
 import typings.splunkLogging.mod.Logger
 import typings.splunkLogging.mod.SendContext
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +37,7 @@ object mod {
   @js.native
   trait SplunkStream
     extends StObject
-       with WritableStream[Any] {
+       with WritableStream {
     
     var logger: Logger = js.native
   }

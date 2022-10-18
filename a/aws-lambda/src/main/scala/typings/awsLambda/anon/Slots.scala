@@ -1,7 +1,7 @@
 package typings.awsLambda.anon
 
-import typings.awsLambda.lexV2Mod.LexV2IntentState
-import typings.awsLambda.lexV2Mod.LexV2Slots
+import typings.awsLambda.triggerLexV2Mod.LexV2IntentState
+import typings.awsLambda.triggerLexV2Mod.LexV2Slots
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

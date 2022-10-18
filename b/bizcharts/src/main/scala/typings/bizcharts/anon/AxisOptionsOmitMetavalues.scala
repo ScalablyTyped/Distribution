@@ -1,17 +1,17 @@
 package typings.bizcharts.anon
 
-import typings.antvComponent.typesMod.AxisSubTickLineCfg
+import typings.antvComponent.libTypesMod.AxisSubTickLineCfg
 import typings.antvG2.libInterfaceMod.ComponentAnimateOption
 import typings.bizcharts.bizchartsStrings.bottom
 import typings.bizcharts.bizchartsStrings.left
 import typings.bizcharts.bizchartsStrings.right
 import typings.bizcharts.bizchartsStrings.top
-import typings.bizcharts.coreInterfaceMod.AxisAPIOptions
-import typings.bizcharts.coreInterfaceMod.AxisGrid
-import typings.bizcharts.coreInterfaceMod.AxisLabel
-import typings.bizcharts.coreInterfaceMod.AxisLine
-import typings.bizcharts.coreInterfaceMod.AxisTickLine
-import typings.bizcharts.coreInterfaceMod.AxisTitle
+import typings.bizcharts.libPlotsCoreInterfaceMod.AxisAPIOptions
+import typings.bizcharts.libPlotsCoreInterfaceMod.AxisGrid
+import typings.bizcharts.libPlotsCoreInterfaceMod.AxisLabel
+import typings.bizcharts.libPlotsCoreInterfaceMod.AxisLine
+import typings.bizcharts.libPlotsCoreInterfaceMod.AxisTickLine
+import typings.bizcharts.libPlotsCoreInterfaceMod.AxisTitle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

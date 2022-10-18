@@ -4,10 +4,10 @@ import typings.react.mod.PureComponent
 import typings.react.mod.global.JSX.Element
 import typings.reactVega.anon.Data
 import typings.reactVega.anon.Mode
-import typings.reactVega.createClassFromSpecMod.Constructor
-import typings.reactVega.createClassFromSpecMod.FixedVegaChartProps
-import typings.reactVega.vegaLiteMod.VegaLiteProps
-import typings.reactVega.vegaMod.default
+import typings.reactVega.libCreateClassFromSpecMod.Constructor
+import typings.reactVega.libCreateClassFromSpecMod.FixedVegaChartProps
+import typings.reactVega.libVegaLiteMod.VegaLiteProps
+import typings.reactVega.libVegaMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

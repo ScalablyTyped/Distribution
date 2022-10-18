@@ -3,28 +3,28 @@ package typings.angularUiRouter.mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularUiRouter.angularUiRouterStrings.uiDotrouter
-import typings.angularUiRouter.interfaceMod.Ng1ViewDeclaration
+import typings.angularUiRouter.libInterfaceMod.Ng1ViewDeclaration
 import typings.angularUiRouter.mod.^
 import typings.uirouterCore.anon.Configuration
 import typings.uirouterCore.anon.Hash
 import typings.uirouterCore.anon.Instantiable
 import typings.uirouterCore.anon.InstantiableLocationConfig
-import typings.uirouterCore.commonCommonMod.IInjectable
-import typings.uirouterCore.commonCommonMod.Mapper
-import typings.uirouterCore.commonCommonMod.Obj
-import typings.uirouterCore.commonCommonMod.Predicate
-import typings.uirouterCore.commonCommonMod.TypedMap
-import typings.uirouterCore.coreservicesMod.CoreServices
-import typings.uirouterCore.coreservicesMod.InjectorLike
-import typings.uirouterCore.coreservicesMod.LocationServices
-import typings.uirouterCore.coreservicesMod.QLike
-import typings.uirouterCore.resolveInterfaceMod.ResolvePolicy
-import typings.uirouterCore.transitionInterfaceMod.HookMatchCriterion
-import typings.uirouterCore.transitionInterfaceMod.IHookRegistry
-import typings.uirouterCore.transitionInterfaceMod.TransitionOptions
-import typings.uirouterCore.vanillaInterfaceMod.LocationPlugin
-import typings.uirouterCore.vanillaInterfaceMod.ServicesPlugin
-import typings.uirouterCore.viewViewMod.ViewConfigFactory
+import typings.uirouterCore.libCommonCommonMod.IInjectable
+import typings.uirouterCore.libCommonCommonMod.Mapper
+import typings.uirouterCore.libCommonCommonMod.Obj
+import typings.uirouterCore.libCommonCommonMod.Predicate
+import typings.uirouterCore.libCommonCommonMod.TypedMap
+import typings.uirouterCore.libCommonCoreservicesMod.CoreServices
+import typings.uirouterCore.libCommonCoreservicesMod.InjectorLike
+import typings.uirouterCore.libCommonCoreservicesMod.LocationServices
+import typings.uirouterCore.libCommonCoreservicesMod.QLike
+import typings.uirouterCore.libResolveInterfaceMod.ResolvePolicy
+import typings.uirouterCore.libTransitionInterfaceMod.HookMatchCriterion
+import typings.uirouterCore.libTransitionInterfaceMod.IHookRegistry
+import typings.uirouterCore.libTransitionInterfaceMod.TransitionOptions
+import typings.uirouterCore.libVanillaInterfaceMod.LocationPlugin
+import typings.uirouterCore.libVanillaInterfaceMod.ServicesPlugin
+import typings.uirouterCore.libViewViewMod.ViewConfigFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,9 +50,9 @@ inline def all(fn1: Predicate[Any]): js.Function1[/* arr */ js.Array[Any], Boole
 inline def allTrueR(memo: Boolean, elem: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("allTrueR")(memo.asInstanceOf[js.Any], elem.asInstanceOf[js.Any])).asInstanceOf[Any]
 
 inline def ancestors(
-  first: typings.uirouterCore.stateObjectMod.StateObject,
-  second: typings.uirouterCore.stateObjectMod.StateObject
-): js.Array[typings.uirouterCore.stateObjectMod.StateObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("ancestors")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.stateObjectMod.StateObject]]
+  first: typings.uirouterCore.libStateStateObjectMod.StateObject,
+  second: typings.uirouterCore.libStateStateObjectMod.StateObject
+): js.Array[typings.uirouterCore.libStateStateObjectMod.StateObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("ancestors")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.libStateStateObjectMod.StateObject]]
 
 inline def and(fn1: Predicate[Any], fn2: Predicate[Any]): Predicate[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any])).asInstanceOf[Predicate[Any]]
 
@@ -130,7 +130,7 @@ inline def getNg1ViewConfigFactory(): ViewConfigFactory = ^.asInstanceOf[js.Dyna
 
 inline def getParams(queryString: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getParams")(queryString.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def hashLocationPlugin(router: typings.uirouterCore.routerMod.UIRouter): LocationPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("hashLocationPlugin")(router.asInstanceOf[js.Any]).asInstanceOf[LocationPlugin]
+inline def hashLocationPlugin(router: typings.uirouterCore.libRouterMod.UIRouter): LocationPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("hashLocationPlugin")(router.asInstanceOf[js.Any]).asInstanceOf[LocationPlugin]
 
 inline def hostRegex: js.RegExp = ^.asInstanceOf[js.Dynamic].selectDynamic("hostRegex").asInstanceOf[js.RegExp]
 
@@ -186,12 +186,12 @@ inline def locationPluginFactory(
   isHtml5: Boolean,
   serviceClass: Instantiable,
   configurationClass: InstantiableLocationConfig
-): js.Function1[/* uiRouter */ typings.uirouterCore.routerMod.UIRouter, Configuration] = (^.asInstanceOf[js.Dynamic].applyDynamic("locationPluginFactory")(name.asInstanceOf[js.Any], isHtml5.asInstanceOf[js.Any], serviceClass.asInstanceOf[js.Any], configurationClass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* uiRouter */ typings.uirouterCore.routerMod.UIRouter, Configuration]]
+): js.Function1[/* uiRouter */ typings.uirouterCore.libRouterMod.UIRouter, Configuration] = (^.asInstanceOf[js.Dynamic].applyDynamic("locationPluginFactory")(name.asInstanceOf[js.Any], isHtml5.asInstanceOf[js.Any], serviceClass.asInstanceOf[js.Any], configurationClass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* uiRouter */ typings.uirouterCore.libRouterMod.UIRouter, Configuration]]
 
 inline def makeEvent(
   registry: IHookRegistry,
-  transitionService: typings.uirouterCore.transitionServiceMod.TransitionService,
-  eventType: typings.uirouterCore.transitionEventTypeMod.TransitionEventType
+  transitionService: typings.uirouterCore.libTransitionTransitionServiceMod.TransitionService,
+  eventType: typings.uirouterCore.libTransitionTransitionEventTypeMod.TransitionEventType
 ): js.Function3[/* matchObject */ Any, /* callback */ Any, /* options */ js.UndefOr[js.Object], Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEvent")(registry.asInstanceOf[js.Any], transitionService.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* matchObject */ Any, /* callback */ Any, /* options */ js.UndefOr[js.Object], Any]]
 
 inline def makeStub[T](service: String, methods: js.Array[/* keyof T */ String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStub")(service.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -234,14 +234,14 @@ inline def mapObj_=(
 ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapObj")(x.asInstanceOf[js.Any])
 
 inline def matchState(
-  state: typings.uirouterCore.stateObjectMod.StateObject,
+  state: typings.uirouterCore.libStateStateObjectMod.StateObject,
   criterion: HookMatchCriterion,
-  transition: typings.uirouterCore.transitionTransitionMod.Transition
+  transition: typings.uirouterCore.libTransitionTransitionMod.Transition
 ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchState")(state.asInstanceOf[js.Any], criterion.asInstanceOf[js.Any], transition.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def maxLength(max: Double, str: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(max.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def memoryLocationPlugin(router: typings.uirouterCore.routerMod.UIRouter): LocationPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryLocationPlugin")(router.asInstanceOf[js.Any]).asInstanceOf[LocationPlugin]
+inline def memoryLocationPlugin(router: typings.uirouterCore.libRouterMod.UIRouter): LocationPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryLocationPlugin")(router.asInstanceOf[js.Any]).asInstanceOf[LocationPlugin]
 
 inline def mergeR(memo: Obj, item: Obj): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeR")(memo.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Any]
 
@@ -278,7 +278,7 @@ inline def propEq: js.Function = ^.asInstanceOf[js.Dynamic].selectDynamic("propE
 
 inline def pushR(arr: js.Array[Any], obj: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pushR")(arr.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
 
-inline def pushStateLocationPlugin(router: typings.uirouterCore.routerMod.UIRouter): LocationPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("pushStateLocationPlugin")(router.asInstanceOf[js.Any]).asInstanceOf[LocationPlugin]
+inline def pushStateLocationPlugin(router: typings.uirouterCore.libRouterMod.UIRouter): LocationPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("pushStateLocationPlugin")(router.asInstanceOf[js.Any]).asInstanceOf[LocationPlugin]
 
 inline def pushTo[T](arr: js.Array[T]): js.Function1[/* val */ T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("pushTo")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* val */ T, T]]
 inline def pushTo[T](arr: js.Array[T], `val`: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pushTo")(arr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -288,13 +288,13 @@ inline def q: QLike = ^.asInstanceOf[js.Dynamic].selectDynamic("$q").asInstanceO
 inline def removeFrom[T](array: js.Array[T]): js.Function1[/* obj */ T, js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFrom")(array.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ T, js.Array[T]]]
 inline def removeFrom[T](array: js.Array[T], obj: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFrom")(array.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 
-inline def resolvablesBuilder(state: typings.uirouterCore.stateObjectMod.StateObject): js.Array[typings.uirouterCore.resolvableMod.Resolvable] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvablesBuilder")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.resolvableMod.Resolvable]]
+inline def resolvablesBuilder(state: typings.uirouterCore.libStateStateObjectMod.StateObject): js.Array[typings.uirouterCore.libResolveResolvableMod.Resolvable] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvablesBuilder")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.libResolveResolvableMod.Resolvable]]
 
 inline def root: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("root").asInstanceOf[Any]
 
 inline def services: CoreServices = ^.asInstanceOf[js.Dynamic].selectDynamic("services").asInstanceOf[CoreServices]
 
-inline def servicesPlugin(router: typings.uirouterCore.routerMod.UIRouter): ServicesPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("servicesPlugin")(router.asInstanceOf[js.Any]).asInstanceOf[ServicesPlugin]
+inline def servicesPlugin(router: typings.uirouterCore.libRouterMod.UIRouter): ServicesPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("servicesPlugin")(router.asInstanceOf[js.Any]).asInstanceOf[ServicesPlugin]
 
 inline def silenceUncaughtInPromise(promise: js.Promise[Any]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("silenceUncaughtInPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 
@@ -325,7 +325,7 @@ inline def toJson: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("toJson").asIn
   * trace.enable(1, 5);
   * ```
   */
-inline def trace: typings.uirouterCore.traceMod.Trace_ = ^.asInstanceOf[js.Dynamic].selectDynamic("trace").asInstanceOf[typings.uirouterCore.traceMod.Trace_]
+inline def trace: typings.uirouterCore.libCommonTraceMod.Trace_ = ^.asInstanceOf[js.Dynamic].selectDynamic("trace").asInstanceOf[typings.uirouterCore.libCommonTraceMod.Trace_]
 
 inline def trimHashVal(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trimHashVal")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 

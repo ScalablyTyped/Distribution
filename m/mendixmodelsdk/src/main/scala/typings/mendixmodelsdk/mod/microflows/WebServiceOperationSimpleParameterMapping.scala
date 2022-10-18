@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.microflows
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "microflows.WebServiceOperationSimpleParameterMapping")
 @js.native
 open class WebServiceOperationSimpleParameterMapping protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.microflows.WebServiceOperationSimpleParameterMapping {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.microflows.WebServiceOperationSimpleParameterMapping {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object WebServiceOperationSimpleParameterMapping {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationSimpleParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationSimpleParameterMapping]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.WebServiceOperationSimpleParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.WebServiceOperationSimpleParameterMapping]
   
   /**
     * Creates and returns a new WebServiceOperationSimpleParameterMapping instance in the SDK and on the server.
@@ -44,7 +44,7 @@ object WebServiceOperationSimpleParameterMapping {
     * of the parent SimpleRequestHandling element passed as argument.
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.SimpleRequestHandling): typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationSimpleParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationSimpleParameterMapping]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.SimpleRequestHandling): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.WebServiceOperationSimpleParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.WebServiceOperationSimpleParameterMapping]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.WebServiceOperationSimpleParameterMapping.structureTypeName")

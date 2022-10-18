@@ -1,9 +1,9 @@
 package typings.redisClient.anon
 
-import typings.redisClient.geoaddMod.GeoAddOptions
-import typings.redisClient.geoaddMod.GeoMember
-import typings.redisClient.libCommandsMod.RedisCommandArgument
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsGeoaddMod.GeoAddOptions
+import typings.redisClient.distLibCommandsGeoaddMod.GeoMember
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

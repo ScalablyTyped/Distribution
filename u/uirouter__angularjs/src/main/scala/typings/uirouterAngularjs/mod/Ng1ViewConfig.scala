@@ -1,7 +1,7 @@
 package typings.uirouterAngularjs.mod
 
-import typings.uirouterAngularjs.interfaceMod.Ng1ViewDeclaration
-import typings.uirouterAngularjs.templateFactoryMod.TemplateFactory
+import typings.uirouterAngularjs.libInterfaceMod.Ng1ViewDeclaration
+import typings.uirouterAngularjs.libTemplateFactoryMod.TemplateFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@uirouter/angularjs", "Ng1ViewConfig")
 @js.native
 open class Ng1ViewConfig protected ()
-  extends typings.uirouterAngularjs.viewsMod.Ng1ViewConfig {
+  extends typings.uirouterAngularjs.libStatebuildersViewsMod.Ng1ViewConfig {
   def this(
     path: js.Array[typings.uirouterCore.mod.PathNode],
     viewDecl: Ng1ViewDeclaration,

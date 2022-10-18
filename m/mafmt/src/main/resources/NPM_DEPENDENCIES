@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mafmt" : "8.0.1"
+      "mafmt" : "10.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "mafmt" : "8.0.1"
+      "mafmt" : "10.0.0"
     }
   ],
   "compile-devDependencies" : [

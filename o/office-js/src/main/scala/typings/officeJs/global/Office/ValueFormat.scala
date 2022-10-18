@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their formatting applied.
   *
   * @remarks
-  * 
-  * For example, if the valueFormat parameter is specified as "formatted", a number formatted as currency, or a date formatted as mm/dd/yy in the 
-  * host application will have its formatting preserved. If the valueFormat parameter is specified as "unformatted", a date will be returned in its 
+  *
+  * For example, if the valueFormat parameter is specified as "formatted", a number formatted as currency, or a date formatted as mm/dd/yy in the
+  * Office application will have its formatting preserved. If the valueFormat parameter is specified as "unformatted", a date will be returned in its
   * underlying sequential serial number form.
   */
 @JSGlobal("Office.ValueFormat")

@@ -9,6 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tabScroller {
   
+  @JSImport("material-components-web", "tabScroller.default")
+  @js.native
+  open class default ()
+    extends typings.materialTabScroller.mod.default {
+    def this(adapter: PartialMDCTabScrollerAdap) = this()
+  }
+  
   @JSImport("material-components-web", "tabScroller.MDCTabScroller")
   @js.native
   open class MDCTabScroller protected ()

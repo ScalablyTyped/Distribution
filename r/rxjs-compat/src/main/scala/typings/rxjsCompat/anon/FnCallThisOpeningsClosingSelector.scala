@@ -1,5 +1,7 @@
 package typings.rxjsCompat.anon
 
+import typings.rxjs.distTypesInternalTypesMod.SubscribableOrPromise
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FnCallThisOpeningsClosingSelector extends StObject {
   
   def apply[T, O](
-    openings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<O> */ Any,
-    closingSelector: js.Function1[
-      /* openValue */ O, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
-    ]
-  ): Any = js.native
+    openings: SubscribableOrPromise[O],
+    closingSelector: js.Function1[/* value */ O, SubscribableOrPromise[Any]]
+  ): Observable_[js.Array[T]] = js.native
 }

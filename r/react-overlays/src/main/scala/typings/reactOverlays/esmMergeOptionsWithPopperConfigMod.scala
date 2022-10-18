@@ -1,7 +1,7 @@
 package typings.reactOverlays
 
+import typings.reactOverlays.anon.PartialModifieranyany
 import typings.reactOverlays.anon.PartialModifieranyanyData
-import typings.reactOverlays.anon.PartialModifieranyanyEffect
 import typings.reactOverlays.anon.Popper
 import typings.reactOverlays.esmUsePopperMod.Modifiers
 import typings.reactOverlays.esmUsePopperMod.Offset
@@ -22,11 +22,11 @@ object esmMergeOptionsWithPopperConfigMod {
   
   inline def default(hasEnabledEnableEventsPlacementFlipOffsetFixedContainerPaddingArrowElementPopperConfig: Config): UsePopperOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasEnabledEnableEventsPlacementFlipOffsetFixedContainerPaddingArrowElementPopperConfig.asInstanceOf[js.Any]).asInstanceOf[UsePopperOptions]
   
-  inline def toModifierArray(): js.Array[PartialModifieranyanyData] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")().asInstanceOf[js.Array[PartialModifieranyanyData]]
-  inline def toModifierArray(map: Modifiers): js.Array[PartialModifieranyanyData] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[PartialModifieranyanyData]]
+  inline def toModifierArray(): js.Array[PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")().asInstanceOf[js.Array[PartialModifieranyany]]
+  inline def toModifierArray(map: Modifiers): js.Array[PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[PartialModifieranyany]]
   
-  inline def toModifierMap(): Record[String, PartialModifieranyanyEffect] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierMap")().asInstanceOf[Record[String, PartialModifieranyanyEffect]]
-  inline def toModifierMap(modifiers: Modifiers): Record[String, PartialModifieranyanyEffect] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierMap")(modifiers.asInstanceOf[js.Any]).asInstanceOf[Record[String, PartialModifieranyanyEffect]]
+  inline def toModifierMap(): Record[String, PartialModifieranyanyData] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierMap")().asInstanceOf[Record[String, PartialModifieranyanyData]]
+  inline def toModifierMap(modifiers: Modifiers): Record[String, PartialModifieranyanyData] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierMap")(modifiers.asInstanceOf[js.Any]).asInstanceOf[Record[String, PartialModifieranyanyData]]
   
   trait Config extends StObject {
     

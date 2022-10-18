@@ -1,7 +1,7 @@
 package typings.tanemSvgInjector
 
-import typings.tanemSvgInjector.svgInjectorMod.Elements
-import typings.tanemSvgInjector.svgInjectorMod.OptionalArgs
+import typings.tanemSvgInjector.distSvgInjectorMod.Elements
+import typings.tanemSvgInjector.distSvgInjectorMod.OptionalArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

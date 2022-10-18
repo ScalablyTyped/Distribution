@@ -1,6 +1,6 @@
 package typings.webdriverio.anon
 
-import typings.wdioTypes.servicesMod.ServiceEntry
+import typings.wdioTypes.buildServicesMod.ServiceEntry
 import typings.webdriverio.webdriverioStrings.`object`
 import typings.webdriverio.webdriverioStrings.boolean
 import typings.webdriverio.webdriverioStrings.function

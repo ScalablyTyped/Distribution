@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +15,7 @@ trait PushConfig extends StObject {
     * in the v1 Pub/Sub API. For example: attributes { "x-goog-version": "v1" }
     */
   var attributes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.PushConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** If specified, Pub/Sub will generate and attach an OIDC JWT token as an `Authorization` header in the HTTP request for every pushed message. */
@@ -37,9 +34,7 @@ object PushConfig {
   extension [Self <: PushConfig](x: Self) {
     
     inline def setAttributes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.PushConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)

@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-windows/rntypes", "Animated.AnimatedInterpolation")
 @js.native
-open class AnimatedInterpolation ()
-  extends AnimatedWithChildren
-     with _WithAnimatedValue[Any] {
+open class AnimatedInterpolation () extends AnimatedWithChildren {
   
   def interpolate(config: InterpolationConfigType): AnimatedInterpolation = js.native
 }

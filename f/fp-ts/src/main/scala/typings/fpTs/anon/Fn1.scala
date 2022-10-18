@@ -1,7 +1,7 @@
 package typings.fpTs.anon
 
-import typings.fpTs.predicateMod.Predicate
-import typings.fpTs.separatedMod.Separated_
+import typings.fpTs.libPredicateMod.Predicate
+import typings.fpTs.libSeparatedMod.Separated_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

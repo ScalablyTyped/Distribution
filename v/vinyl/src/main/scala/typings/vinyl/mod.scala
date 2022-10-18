@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.Stats
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import typings.vinyl.anon.ConstructorOptionscontent
 import typings.vinyl.anon.ConstructorOptionscontentBase
 import typings.vinyl.anon.ConstructorOptionscontentDictcustomOption
@@ -56,7 +56,7 @@ object mod extends Shortcut {
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: js.UndefOr[Buffer | ReadableStream[Any] | Null] = js.undefined
+    var contents: js.UndefOr[Buffer | ReadableStream | Null] = js.undefined
     
     /**
       * The current working directory of the file. Default: process.cwd()
@@ -96,7 +96,7 @@ object mod extends Shortcut {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setContents(value: Buffer | ReadableStream[Any]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Buffer | ReadableStream): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       inline def setContentsNull: Self = StObject.set(x, "contents", null)
       
@@ -180,7 +180,7 @@ object mod extends Shortcut {
       *
       * Throws when set to any value other than a `Stream`, a `Buffer` or `null`.
       */
-    var contents: Buffer | ReadableStream[Any] | Null = js.native
+    var contents: Buffer | ReadableStream | Null = js.native
     
     /**
       * Gets and sets current working directory. Will always be normalized and have trailing
@@ -314,8 +314,8 @@ object mod extends Shortcut {
       * If file.contents is a Stream, it will pipe it to the stream.
       * If file.contents is null, it will do nothing.
       */
-    def pipe[T /* <: WritableStream[Any] */](stream: T): T = js.native
-    def pipe[T /* <: WritableStream[Any] */](stream: T, opts: End): T = js.native
+    def pipe[T /* <: WritableStream */](stream: T): T = js.native
+    def pipe[T /* <: WritableStream */](stream: T, opts: End): T = js.native
     
     /**
       * Gets the result of `path.relative(file.base, file.path)`.
@@ -406,7 +406,7 @@ object mod extends Shortcut {
        with File {
     
     @JSName("contents")
-    var contents_StreamFile: ReadableStream[Any] = js.native
+    var contents_StreamFile: ReadableStream = js.native
   }
   
   @js.native

@@ -1,6 +1,6 @@
 package typings.paypalPaypalJs.anon
 
-import typings.paypalPaypalJs.subscriptionsMod.SubscriptionDetail
+import typings.paypalPaypalJs.typesApisSubscriptionsSubscriptionsMod.SubscriptionDetail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

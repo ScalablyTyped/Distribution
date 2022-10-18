@@ -1,8 +1,8 @@
 package typings.rrule
 
-import typings.rrule.typesMod.ByWeekday
-import typings.rrule.typesMod.Frequency
-import typings.rrule.weekdayMod.Weekday
+import typings.rrule.distEsmTypesMod.ByWeekday
+import typings.rrule.distEsmTypesMod.Frequency
+import typings.rrule.distEsmWeekdayMod.Weekday
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -233,18 +233,18 @@ object anon {
   
   trait ParsedOptions extends StObject {
     
-    var parsedOptions: typings.rrule.typesMod.ParsedOptions
+    var parsedOptions: typings.rrule.distEsmTypesMod.ParsedOptions
   }
   object ParsedOptions {
     
-    inline def apply(parsedOptions: typings.rrule.typesMod.ParsedOptions): ParsedOptions = {
+    inline def apply(parsedOptions: typings.rrule.distEsmTypesMod.ParsedOptions): ParsedOptions = {
       val __obj = js.Dynamic.literal(parsedOptions = parsedOptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedOptions]
     }
     
     extension [Self <: ParsedOptions](x: Self) {
       
-      inline def setParsedOptions(value: typings.rrule.typesMod.ParsedOptions): Self = StObject.set(x, "parsedOptions", value.asInstanceOf[js.Any])
+      inline def setParsedOptions(value: typings.rrule.distEsmTypesMod.ParsedOptions): Self = StObject.set(x, "parsedOptions", value.asInstanceOf[js.Any])
     }
   }
   

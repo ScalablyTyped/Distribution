@@ -1,8 +1,8 @@
 package typings.pgPromise.mod
 
 import typings.pgPromise.anon.Binary
-import typings.pgPromise.pgSubsetMod.IColumn
-import typings.pgPromise.pgSubsetMod.IResult
+import typings.pgPromise.typescriptPgSubsetMod.IColumn
+import typings.pgPromise.typescriptPgSubsetMod.IResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

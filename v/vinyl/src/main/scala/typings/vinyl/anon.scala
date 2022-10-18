@@ -1,9 +1,9 @@
 package typings.vinyl
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.Stats
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +25,7 @@ object anon {
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & Null
+    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Null
     
     /**
       * The current working directory of the file. Default: process.cwd()
@@ -54,7 +54,7 @@ object anon {
   }
   object ConstructorOptionscontent {
     
-    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & Null): ConstructorOptionscontent = {
+    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Null): ConstructorOptionscontent = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstructorOptionscontent]
     }
@@ -65,7 +65,7 @@ object anon {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & Null): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & Null): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -87,7 +87,7 @@ object anon {
     }
   }
   
-  /* Inlined vinyl.vinyl.ConstructorOptions & {  contents :std.ReadableStream<any>} */
+  /* Inlined vinyl.vinyl.ConstructorOptions & {  contents :node.NodeJS.ReadableStream} */
   trait ConstructorOptionscontentBase
     extends StObject
        with /* customProperty */ StringDictionary[Any] {
@@ -102,7 +102,7 @@ object anon {
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & ReadableStream[Any]
+    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream
     
     /**
       * The current working directory of the file. Default: process.cwd()
@@ -131,7 +131,7 @@ object anon {
   }
   object ConstructorOptionscontentBase {
     
-    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & ReadableStream[Any]): ConstructorOptionscontentBase = {
+    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream): ConstructorOptionscontentBase = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstructorOptionscontentBase]
     }
@@ -142,7 +142,7 @@ object anon {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & ReadableStream[Any]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -179,7 +179,7 @@ object anon {
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & Buffer
+    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer
     
     /**
       * The current working directory of the file. Default: process.cwd()
@@ -208,7 +208,7 @@ object anon {
   }
   object ConstructorOptionscontentDictcustomOption {
     
-    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & Buffer): ConstructorOptionscontentDictcustomOption = {
+    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer): ConstructorOptionscontentDictcustomOption = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstructorOptionscontentDictcustomOption]
     }
@@ -219,7 +219,7 @@ object anon {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

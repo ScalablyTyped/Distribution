@@ -1,6 +1,6 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.selectMod.Option
+import typings.fundamentalReact.libSelectSelectMod.Option
 import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.NativeMouseEvent

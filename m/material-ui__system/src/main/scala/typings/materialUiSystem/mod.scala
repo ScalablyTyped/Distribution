@@ -1,6 +1,5 @@
 package typings.materialUiSystem
 
-import org.scalablytyped.runtime.TopLevel
 import typings.materialUiSystem.anon.Css
 import typings.materialUiSystem.anon.Sx
 import typings.materialUiSystem.anon.ThemeTheme
@@ -235,9 +234,9 @@ object mod {
   ] = js.native
   
   inline def style[PropKey /* <: String */, Theme /* <: js.Object */](options: StyleOptions[PropKey, Theme]): StyleFunction[
-    typings.materialUiSystem.materialUiSystemStrings.style & TopLevel[Any] & ThemeTheme[Theme]
+    (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in PropKey ]:? unknown} */ js.Any) & ThemeTheme[Theme]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(options.asInstanceOf[js.Any]).asInstanceOf[StyleFunction[
-    typings.materialUiSystem.materialUiSystemStrings.style & TopLevel[Any] & ThemeTheme[Theme]
+    (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in PropKey ]:? unknown} */ js.Any) & ThemeTheme[Theme]
   ]]
   
   inline def styleFunctionSx[Props](styleFunction: StyleFunction[Props]): StyleFunction[Props & Sx[Props]] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleFunctionSx")(styleFunction.asInstanceOf[js.Any]).asInstanceOf[StyleFunction[Props & Sx[Props]]]
@@ -270,7 +269,15 @@ object mod {
     * If `firstFn` requires { color: string } and `secondFn` requires { spacing: number }
     * their composed function requires { color: string, spacing: number }
     */
-  type ComposedArg[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<(arg : infer P): any> ? P : never
+    }}}
+    */
+  @js.native
+  trait ComposedArg[T] extends StObject
   
   type ComposedStyleFunction[T /* <: js.Array[StyleFunction[Any]] */] = StyleFunction[ComposedStyleProps[T]]
   
@@ -327,7 +334,15 @@ object mod {
   
   type PositionsProps = PropsFor[SimpleStyleFunction[zIndex | position | top | right | bottom | left]]
   
-  type PropsFor[SomeStyleFunction] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    SomeStyleFunction extends @material-ui/system.@material-ui/system.StyleFunction<infer Props> ? Props : never
+    }}}
+    */
+  @js.native
+  trait PropsFor[SomeStyleFunction] extends StObject
   
   type ShadowsProps = PropsFor[SimpleStyleFunction[boxShadow]]
   
@@ -350,7 +365,7 @@ object mod {
   trait StyleOptions[PropKey, Theme /* <: js.Object */] extends StObject {
     
     var cssProperty: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 791 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 791, starting with PropKey, typings.materialUiSystem.materialUiSystemStrings.accentColor, typings.materialUiSystem.materialUiSystemStrings.alignContent */ Any
       ] = js.undefined
     
     var prop: PropKey
@@ -371,7 +386,9 @@ object mod {
     
     extension [Self <: StyleOptions[?, ?], PropKey, Theme /* <: js.Object */](x: Self & (StyleOptions[PropKey, Theme])) {
       
-      inline def setCssProperty(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 791 */ Any): Self = StObject.set(x, "cssProperty", value.asInstanceOf[js.Any])
+      inline def setCssProperty(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 791, starting with PropKey, typings.materialUiSystem.materialUiSystemStrings.accentColor, typings.materialUiSystem.materialUiSystemStrings.alignContent */ Any
+      ): Self = StObject.set(x, "cssProperty", value.asInstanceOf[js.Any])
       
       inline def setCssPropertyUndefined: Self = StObject.set(x, "cssProperty", js.undefined)
       

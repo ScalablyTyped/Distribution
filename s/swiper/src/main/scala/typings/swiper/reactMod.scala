@@ -2,9 +2,9 @@ package typings.swiper
 
 import typings.react.mod.FunctionComponent
 import typings.react.mod.VoidFunctionComponent
-import typings.swiper.swiperReactMod.SlideData
-import typings.swiper.swiperReactMod.SwiperProps
-import typings.swiper.swiperReactMod.SwiperSlideProps
+import typings.swiper.reactSwiperReactMod.SlideData
+import typings.swiper.reactSwiperReactMod.SwiperProps
+import typings.swiper.reactSwiperReactMod.SwiperSlideProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

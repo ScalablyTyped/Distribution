@@ -1,14 +1,14 @@
 package typings.babylonjs
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
-import typings.babylonjs.mathPlaneMod.Plane
-import typings.babylonjs.mathVectorMod.Matrix
-import typings.babylonjs.mathVectorMod.Vector3
-import typings.babylonjs.octreeBlockMod.IOctreeContainer
-import typings.babylonjs.pickingInfoMod.PickingInfo
-import typings.babylonjs.rayMod.TrianglePickingPredicate
+import typings.babylonjs.collisionsPickingInfoMod.PickingInfo
+import typings.babylonjs.cullingOctreesOctreeBlockMod.IOctreeContainer
+import typings.babylonjs.cullingRayMod.TrianglePickingPredicate
+import typings.babylonjs.mathsMathDotplaneMod.Plane
+import typings.babylonjs.mathsMathDotvectorMod.Matrix
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
+import typings.babylonjs.meshesSubMeshMod.SubMesh
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.DeepImmutable
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -20,7 +20,7 @@ object cullingIndexMod {
   @JSImport("babylonjs/Culling/index", "BoundingBox")
   @js.native
   open class BoundingBox protected ()
-    extends typings.babylonjs.boundingBoxMod.BoundingBox {
+    extends typings.babylonjs.cullingBoundingBoxMod.BoundingBox {
     /**
       * Creates a new bounding box
       * @param min defines the minimum vector (in local space)
@@ -44,8 +44,8 @@ object cullingIndexMod {
       * @returns true if there is an intersection
       */
     inline def Intersects(
-      box0: DeepImmutable[typings.babylonjs.boundingBoxMod.BoundingBox],
-      box1: DeepImmutable[typings.babylonjs.boundingBoxMod.BoundingBox]
+      box0: DeepImmutable[typings.babylonjs.cullingBoundingBoxMod.BoundingBox],
+      box1: DeepImmutable[typings.babylonjs.cullingBoundingBoxMod.BoundingBox]
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Intersects")(box0.asInstanceOf[js.Any], box1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
@@ -87,7 +87,7 @@ object cullingIndexMod {
   @JSImport("babylonjs/Culling/index", "BoundingInfo")
   @js.native
   open class BoundingInfo protected ()
-    extends typings.babylonjs.boundingInfoMod.BoundingInfo {
+    extends typings.babylonjs.cullingBoundingInfoMod.BoundingInfo {
     /**
       * Constructs bounding info
       * @param minimum min vector of the bounding box/sphere
@@ -112,7 +112,7 @@ object cullingIndexMod {
   @JSImport("babylonjs/Culling/index", "BoundingSphere")
   @js.native
   open class BoundingSphere protected ()
-    extends typings.babylonjs.boundingSphereMod.BoundingSphere {
+    extends typings.babylonjs.cullingBoundingSphereMod.BoundingSphere {
     /**
       * Creates a new bounding sphere
       * @param min defines the minimum vector (in local space)
@@ -136,8 +136,8 @@ object cullingIndexMod {
       * @param matrix Optional worldMatrix
       * @returns The sphere
       */
-    inline def CreateFromCenterAndRadius(center: DeepImmutable[Vector3], radius: Double): typings.babylonjs.boundingSphereMod.BoundingSphere = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromCenterAndRadius")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.boundingSphereMod.BoundingSphere]
-    inline def CreateFromCenterAndRadius(center: DeepImmutable[Vector3], radius: Double, matrix: DeepImmutable[Matrix]): typings.babylonjs.boundingSphereMod.BoundingSphere = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromCenterAndRadius")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.boundingSphereMod.BoundingSphere]
+    inline def CreateFromCenterAndRadius(center: DeepImmutable[Vector3], radius: Double): typings.babylonjs.cullingBoundingSphereMod.BoundingSphere = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromCenterAndRadius")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cullingBoundingSphereMod.BoundingSphere]
+    inline def CreateFromCenterAndRadius(center: DeepImmutable[Vector3], radius: Double, matrix: DeepImmutable[Matrix]): typings.babylonjs.cullingBoundingSphereMod.BoundingSphere = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromCenterAndRadius")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cullingBoundingSphereMod.BoundingSphere]
     
     /**
       * Checks if two sphere intersect
@@ -146,8 +146,8 @@ object cullingIndexMod {
       * @returns true if the spheres intersect
       */
     inline def Intersects(
-      sphere0: DeepImmutable[typings.babylonjs.boundingSphereMod.BoundingSphere],
-      sphere1: DeepImmutable[typings.babylonjs.boundingSphereMod.BoundingSphere]
+      sphere0: DeepImmutable[typings.babylonjs.cullingBoundingSphereMod.BoundingSphere],
+      sphere1: DeepImmutable[typings.babylonjs.cullingBoundingSphereMod.BoundingSphere]
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Intersects")(sphere0.asInstanceOf[js.Any], sphere1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("babylonjs/Culling/index", "BoundingSphere._TmpVector3")
@@ -158,7 +158,7 @@ object cullingIndexMod {
   @JSImport("babylonjs/Culling/index", "Octree")
   @js.native
   open class Octree[T] protected ()
-    extends typings.babylonjs.octreesIndexMod.Octree[T] {
+    extends typings.babylonjs.cullingOctreesIndexMod.Octree[T] {
     /**
       * Creates a octree
       * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
@@ -166,19 +166,35 @@ object cullingIndexMod {
       * @param maxBlockCapacity defines the maximum number of meshes you want on your octree's leaves (default: 64)
       * @param maxDepth defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.)
       */
-    def this(creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit]) = this()
+    def this(creationFunc: js.Function2[
+            /* entry */ T, 
+            /* block */ typings.babylonjs.cullingOctreesOctreeBlockMod.OctreeBlock[T], 
+            Unit
+          ]) = this()
     def this(
-      creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit],
+      creationFunc: js.Function2[
+            /* entry */ T, 
+            /* block */ typings.babylonjs.cullingOctreesOctreeBlockMod.OctreeBlock[T], 
+            Unit
+          ],
       maxBlockCapacity: Double
     ) = this()
     def this(
-      creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit],
+      creationFunc: js.Function2[
+            /* entry */ T, 
+            /* block */ typings.babylonjs.cullingOctreesOctreeBlockMod.OctreeBlock[T], 
+            Unit
+          ],
       maxBlockCapacity: Double,
       /** Defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.) */
     maxDepth: Double
     ) = this()
     def this(
-      creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit],
+      creationFunc: js.Function2[
+            /* entry */ T, 
+            /* block */ typings.babylonjs.cullingOctreesOctreeBlockMod.OctreeBlock[T], 
+            Unit
+          ],
       maxBlockCapacity: Unit,
       /** Defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.) */
     maxDepth: Double
@@ -196,20 +212,23 @@ object cullingIndexMod {
       * @param entry
       * @param block
       */
-    inline def CreationFuncForMeshes(entry: AbstractMesh, block: typings.babylonjs.octreeBlockMod.OctreeBlock[AbstractMesh]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def CreationFuncForMeshes(
+      entry: AbstractMesh,
+      block: typings.babylonjs.cullingOctreesOctreeBlockMod.OctreeBlock[AbstractMesh]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Adds a submesh into the octree block if it intersects the block
       * @param entry
       * @param block
       */
-    inline def CreationFuncForSubMeshes(entry: SubMesh, block: typings.babylonjs.octreeBlockMod.OctreeBlock[SubMesh]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForSubMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def CreationFuncForSubMeshes(entry: SubMesh, block: typings.babylonjs.cullingOctreesOctreeBlockMod.OctreeBlock[SubMesh]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreationFuncForSubMeshes")(entry.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/Culling/index", "OctreeBlock")
   @js.native
   open class OctreeBlock[T] protected ()
-    extends typings.babylonjs.octreesIndexMod.OctreeBlock[T] {
+    extends typings.babylonjs.cullingOctreesIndexMod.OctreeBlock[T] {
     /**
       * Creates a new block
       * @param minPoint defines the minimum vector (in world space) of the block's bounding box
@@ -225,7 +244,11 @@ object cullingIndexMod {
       capacity: Double,
       depth: Double,
       maxDepth: Double,
-      creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit]
+      creationFunc: js.Function2[
+            /* entry */ T, 
+            /* block */ typings.babylonjs.cullingOctreesOctreeBlockMod.OctreeBlock[T], 
+            Unit
+          ]
     ) = this()
   }
   /* static members */
@@ -246,7 +269,11 @@ object cullingIndexMod {
       currentDepth: Double,
       maxDepth: Double,
       target: IOctreeContainer[T],
-      creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.octreeBlockMod.OctreeBlock[T], Unit]
+      creationFunc: js.Function2[
+          /* entry */ T, 
+          /* block */ typings.babylonjs.cullingOctreesOctreeBlockMod.OctreeBlock[T], 
+          Unit
+        ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateBlocks")(worldMin.asInstanceOf[js.Any], worldMax.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], maxBlockCapacity.asInstanceOf[js.Any], currentDepth.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], target.asInstanceOf[js.Any], creationFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
@@ -257,14 +284,14 @@ object cullingIndexMod {
     * @param scene Defines the scene to register the component in
     */
   open class OctreeSceneComponent ()
-    extends typings.babylonjs.octreesIndexMod.OctreeSceneComponent {
+    extends typings.babylonjs.cullingOctreesIndexMod.OctreeSceneComponent {
     def this(scene: Scene) = this()
   }
   
   @JSImport("babylonjs/Culling/index", "Ray")
   @js.native
   open class Ray protected ()
-    extends typings.babylonjs.rayMod.Ray {
+    extends typings.babylonjs.cullingRayMod.Ray {
     /**
       * Creates a new ray
       * @param origin origin point
@@ -309,7 +336,7 @@ object cullingIndexMod {
       world: DeepImmutable[Matrix],
       view: DeepImmutable[Matrix],
       projection: DeepImmutable[Matrix]
-    ): typings.babylonjs.rayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], viewportWidth.asInstanceOf[js.Any], viewportHeight.asInstanceOf[js.Any], world.asInstanceOf[js.Any], view.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rayMod.Ray]
+    ): typings.babylonjs.cullingRayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], viewportWidth.asInstanceOf[js.Any], viewportHeight.asInstanceOf[js.Any], world.asInstanceOf[js.Any], view.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cullingRayMod.Ray]
     
     /**
       * Function will create a new transformed ray starting from origin and ending at the end point. Ray's length will be set, and ray will be
@@ -319,8 +346,8 @@ object cullingIndexMod {
       * @param world a matrix to transform the ray to. Default is the identity matrix.
       * @returns the new ray
       */
-    inline def CreateNewFromTo(origin: Vector3, end: Vector3): typings.babylonjs.rayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromTo")(origin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rayMod.Ray]
-    inline def CreateNewFromTo(origin: Vector3, end: Vector3, world: DeepImmutable[Matrix]): typings.babylonjs.rayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromTo")(origin.asInstanceOf[js.Any], end.asInstanceOf[js.Any], world.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rayMod.Ray]
+    inline def CreateNewFromTo(origin: Vector3, end: Vector3): typings.babylonjs.cullingRayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromTo")(origin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cullingRayMod.Ray]
+    inline def CreateNewFromTo(origin: Vector3, end: Vector3, world: DeepImmutable[Matrix]): typings.babylonjs.cullingRayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromTo")(origin.asInstanceOf[js.Any], end.asInstanceOf[js.Any], world.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cullingRayMod.Ray]
     
     /**
       * Transforms a ray by a matrix
@@ -328,7 +355,7 @@ object cullingIndexMod {
       * @param matrix matrix to apply
       * @returns the resulting new ray
       */
-    inline def Transform(ray: DeepImmutable[typings.babylonjs.rayMod.Ray], matrix: DeepImmutable[Matrix]): typings.babylonjs.rayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(ray.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rayMod.Ray]
+    inline def Transform(ray: DeepImmutable[typings.babylonjs.cullingRayMod.Ray], matrix: DeepImmutable[Matrix]): typings.babylonjs.cullingRayMod.Ray = (^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(ray.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cullingRayMod.Ray]
     
     /**
       * Transforms a ray by a matrix
@@ -337,16 +364,16 @@ object cullingIndexMod {
       * @param result ray to store result in
       */
     inline def TransformToRef(
-      ray: DeepImmutable[typings.babylonjs.rayMod.Ray],
+      ray: DeepImmutable[typings.babylonjs.cullingRayMod.Ray],
       matrix: DeepImmutable[Matrix],
-      result: typings.babylonjs.rayMod.Ray
+      result: typings.babylonjs.cullingRayMod.Ray
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformToRef")(ray.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a ray with origin and direction of 0,0,0
       * @returns the new ray
       */
-    inline def Zero(): typings.babylonjs.rayMod.Ray = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.rayMod.Ray]
+    inline def Zero(): typings.babylonjs.cullingRayMod.Ray = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.cullingRayMod.Ray]
     
     @JSImport("babylonjs/Culling/index", "Ray._RayDistant")
     @js.native
@@ -378,7 +405,7 @@ object cullingIndexMod {
         * @internal
         * Backing Field
         */
-      var _submeshesOctree: typings.babylonjs.octreeMod.Octree[SubMesh] = js.native
+      var _submeshesOctree: typings.babylonjs.cullingOctreesOctreeMod.Octree[SubMesh] = js.native
       
       /**
         * This function will create an octree to help to select the right submeshes for rendering, picking and collision computations.
@@ -389,10 +416,10 @@ object cullingIndexMod {
         * @see https://www.babylonjs-playground.com/#NA4OQ#12
         * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
         */
-      def createOrUpdateSubmeshesOctree(): typings.babylonjs.octreeMod.Octree[SubMesh] = js.native
-      def createOrUpdateSubmeshesOctree(maxCapacity: Double): typings.babylonjs.octreeMod.Octree[SubMesh] = js.native
-      def createOrUpdateSubmeshesOctree(maxCapacity: Double, maxDepth: Double): typings.babylonjs.octreeMod.Octree[SubMesh] = js.native
-      def createOrUpdateSubmeshesOctree(maxCapacity: Unit, maxDepth: Double): typings.babylonjs.octreeMod.Octree[SubMesh] = js.native
+      def createOrUpdateSubmeshesOctree(): typings.babylonjs.cullingOctreesOctreeMod.Octree[SubMesh] = js.native
+      def createOrUpdateSubmeshesOctree(maxCapacity: Double): typings.babylonjs.cullingOctreesOctreeMod.Octree[SubMesh] = js.native
+      def createOrUpdateSubmeshesOctree(maxCapacity: Double, maxDepth: Double): typings.babylonjs.cullingOctreesOctreeMod.Octree[SubMesh] = js.native
+      def createOrUpdateSubmeshesOctree(maxCapacity: Unit, maxDepth: Double): typings.babylonjs.cullingOctreesOctreeMod.Octree[SubMesh] = js.native
     }
   }
   
@@ -403,120 +430,200 @@ object cullingIndexMod {
     trait Scene extends StObject {
       
       /** @internal */
-      var _cachedRayForTransform: typings.babylonjs.rayMod.Ray = js.native
+      var _cachedRayForTransform: typings.babylonjs.cullingRayMod.Ray = js.native
       
       /** @internal */
       def _internalMultiPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray]
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ]
       ): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]
       ): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
         trianglePredicate: TrianglePickingPredicate
       ): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: Unit,
         trianglePredicate: TrianglePickingPredicate
       ): Nullable[js.Array[PickingInfo]] = js.native
       
       /** @internal */
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray]
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ]
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
         fastCheck: Boolean
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
         fastCheck: Boolean,
         onlyBoundingInfo: Boolean
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
         fastCheck: Boolean,
         onlyBoundingInfo: Boolean,
         trianglePredicate: TrianglePickingPredicate
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
         fastCheck: Boolean,
         onlyBoundingInfo: Unit,
         trianglePredicate: TrianglePickingPredicate
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
         fastCheck: Unit,
         onlyBoundingInfo: Boolean
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
         fastCheck: Unit,
         onlyBoundingInfo: Boolean,
         trianglePredicate: TrianglePickingPredicate
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
         fastCheck: Unit,
         onlyBoundingInfo: Unit,
         trianglePredicate: TrianglePickingPredicate
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: Unit,
         fastCheck: Boolean
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: Unit,
         fastCheck: Boolean,
         onlyBoundingInfo: Boolean
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: Unit,
         fastCheck: Boolean,
         onlyBoundingInfo: Boolean,
         trianglePredicate: TrianglePickingPredicate
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: Unit,
         fastCheck: Boolean,
         onlyBoundingInfo: Unit,
         trianglePredicate: TrianglePickingPredicate
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: Unit,
         fastCheck: Unit,
         onlyBoundingInfo: Boolean
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: Unit,
         fastCheck: Unit,
         onlyBoundingInfo: Boolean,
         trianglePredicate: TrianglePickingPredicate
       ): Nullable[PickingInfo] = js.native
       def _internalPick(
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         predicate: Unit,
         fastCheck: Unit,
         onlyBoundingInfo: Unit,
@@ -526,20 +633,32 @@ object cullingIndexMod {
       /** @internal */
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Boolean
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Boolean,
@@ -547,7 +666,11 @@ object cullingIndexMod {
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Boolean,
@@ -557,7 +680,11 @@ object cullingIndexMod {
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Boolean,
@@ -566,7 +693,11 @@ object cullingIndexMod {
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Boolean,
@@ -576,7 +707,11 @@ object cullingIndexMod {
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Boolean,
@@ -586,7 +721,11 @@ object cullingIndexMod {
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Boolean,
@@ -595,7 +734,11 @@ object cullingIndexMod {
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Boolean,
@@ -605,7 +748,11 @@ object cullingIndexMod {
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Unit,
@@ -613,7 +760,11 @@ object cullingIndexMod {
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Unit,
@@ -623,7 +774,11 @@ object cullingIndexMod {
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Unit,
@@ -632,7 +787,11 @@ object cullingIndexMod {
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Unit,
@@ -642,7 +801,11 @@ object cullingIndexMod {
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Unit,
@@ -652,7 +815,11 @@ object cullingIndexMod {
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Unit,
@@ -661,7 +828,11 @@ object cullingIndexMod {
       ): Nullable[PickingInfo] = js.native
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
-        rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
+        rayFunction: js.Function2[
+              /* world */ Matrix, 
+              /* enableDistantPicking */ Boolean, 
+              typings.babylonjs.cullingRayMod.Ray
+            ],
         mesh: AbstractMesh,
         world: Matrix,
         fastCheck: Unit,
@@ -677,10 +848,10 @@ object cullingIndexMod {
         * @internal
         * Backing Filed
         */
-      var _selectionOctree: typings.babylonjs.octreeMod.Octree[AbstractMesh] = js.native
+      var _selectionOctree: typings.babylonjs.cullingOctreesOctreeMod.Octree[AbstractMesh] = js.native
       
       /** @internal */
-      var _tempPickingRay: Nullable[typings.babylonjs.rayMod.Ray] = js.native
+      var _tempPickingRay: Nullable[typings.babylonjs.cullingRayMod.Ray] = js.native
       
       /**
         * Creates or updates the octree used to boost selection (picking)
@@ -689,16 +860,16 @@ object cullingIndexMod {
         * @param maxDepth defines the maximum depth of the octree
         * @returns an octree of AbstractMesh
         */
-      def createOrUpdateSelectionOctree(): typings.babylonjs.octreeMod.Octree[AbstractMesh] = js.native
-      def createOrUpdateSelectionOctree(maxCapacity: Double): typings.babylonjs.octreeMod.Octree[AbstractMesh] = js.native
-      def createOrUpdateSelectionOctree(maxCapacity: Double, maxDepth: Double): typings.babylonjs.octreeMod.Octree[AbstractMesh] = js.native
-      def createOrUpdateSelectionOctree(maxCapacity: Unit, maxDepth: Double): typings.babylonjs.octreeMod.Octree[AbstractMesh] = js.native
+      def createOrUpdateSelectionOctree(): typings.babylonjs.cullingOctreesOctreeMod.Octree[AbstractMesh] = js.native
+      def createOrUpdateSelectionOctree(maxCapacity: Double): typings.babylonjs.cullingOctreesOctreeMod.Octree[AbstractMesh] = js.native
+      def createOrUpdateSelectionOctree(maxCapacity: Double, maxDepth: Double): typings.babylonjs.cullingOctreesOctreeMod.Octree[AbstractMesh] = js.native
+      def createOrUpdateSelectionOctree(maxCapacity: Unit, maxDepth: Double): typings.babylonjs.cullingOctreesOctreeMod.Octree[AbstractMesh] = js.native
       
       /**
         * Gets the octree used to boost mesh selection (picking)
         * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
         */
-      var selectionOctree: typings.babylonjs.octreeMod.Octree[AbstractMesh] = js.native
+      var selectionOctree: typings.babylonjs.cullingOctreesOctreeMod.Octree[AbstractMesh] = js.native
     }
   }
 }

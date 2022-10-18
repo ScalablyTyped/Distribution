@@ -1,7 +1,7 @@
 package typings.nextServer.anon
 
-import typings.nextServer.routerMod.RouteInfo
-import typings.nextServer.routerMod.Subscription
+import typings.nextServer.distLibRouterRouterMod.RouteInfo
+import typings.nextServer.distLibRouterRouterMod.Subscription
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

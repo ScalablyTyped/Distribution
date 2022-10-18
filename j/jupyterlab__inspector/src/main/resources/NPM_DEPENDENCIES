@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/inspector" : "2.2.4"
+      "@jupyterlab/inspector" : "3.4.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/inspector" : "2.2.4"
+      "@jupyterlab/inspector" : "3.4.8"
     }
   ],
   "compile-devDependencies" : [

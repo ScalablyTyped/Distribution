@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialFunnelOptions
-import typings.antvG2plot.funnelTypesMod.FunnelOptions
+import typings.antvG2plot.libPlotsFunnelTypesMod.FunnelOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Funnel")
 @js.native
 open class Funnel protected ()
-  extends typings.antvG2plot.funnelMod.Funnel {
+  extends typings.antvG2plot.libPlotsFunnelMod.Funnel {
   def this(container: String, options: FunnelOptions) = this()
   def this(container: HTMLElement, options: FunnelOptions) = this()
 }

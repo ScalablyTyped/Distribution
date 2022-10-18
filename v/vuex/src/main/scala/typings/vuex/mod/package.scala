@@ -2,20 +2,20 @@ package typings.vuex.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.vueRuntimeCore.mod.InjectionKey
-import typings.vuex.helpersMod.ActionMethod
-import typings.vuex.helpersMod.Computed
-import typings.vuex.helpersMod.Mapper
-import typings.vuex.helpersMod.MapperForAction
-import typings.vuex.helpersMod.MapperForActionWithNamespace
-import typings.vuex.helpersMod.MapperForMutation
-import typings.vuex.helpersMod.MapperForMutationWithNamespace
-import typings.vuex.helpersMod.MapperForState
-import typings.vuex.helpersMod.MapperForStateWithNamespace
-import typings.vuex.helpersMod.MapperWithNamespace
-import typings.vuex.helpersMod.MutationMethod
-import typings.vuex.helpersMod.NamespacedMappers
-import typings.vuex.loggerMod.LoggerOption
 import typings.vuex.mod.^
+import typings.vuex.typesHelpersMod.ActionMethod
+import typings.vuex.typesHelpersMod.Computed
+import typings.vuex.typesHelpersMod.Mapper
+import typings.vuex.typesHelpersMod.MapperForAction
+import typings.vuex.typesHelpersMod.MapperForActionWithNamespace
+import typings.vuex.typesHelpersMod.MapperForMutation
+import typings.vuex.typesHelpersMod.MapperForMutationWithNamespace
+import typings.vuex.typesHelpersMod.MapperForState
+import typings.vuex.typesHelpersMod.MapperForStateWithNamespace
+import typings.vuex.typesHelpersMod.MapperWithNamespace
+import typings.vuex.typesHelpersMod.MutationMethod
+import typings.vuex.typesHelpersMod.NamespacedMappers
+import typings.vuex.typesLoggerMod.LoggerOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Pdf {
   
   /** Represents a Portable Document Format (PDF) document. */
-  @JSGlobal("Windows.Data.Pdf.PdfDocument")
+  /* note: abstract class */ @JSGlobal("Windows.Data.Pdf.PdfDocument")
   @js.native
-  abstract class PdfDocument ()
+  open class PdfDocument ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Pdf.PdfDocument {
     
@@ -75,16 +75,16 @@ object Pdf {
   }
   
   /** Represents a single page in a Portable Document Format (PDF) document. */
-  @JSGlobal("Windows.Data.Pdf.PdfPage")
+  /* note: abstract class */ @JSGlobal("Windows.Data.Pdf.PdfPage")
   @js.native
-  abstract class PdfPage ()
+  open class PdfPage ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Pdf.PdfPage
   
   /** Represents the dimensions of a single page in a Portable Document Format (PDF) document. */
-  @JSGlobal("Windows.Data.Pdf.PdfPageDimensions")
+  /* note: abstract class */ @JSGlobal("Windows.Data.Pdf.PdfPageDimensions")
   @js.native
-  abstract class PdfPageDimensions ()
+  open class PdfPageDimensions ()
     extends StObject
        with typings.winrtUwp.Windows.Data.Pdf.PdfPageDimensions {
     

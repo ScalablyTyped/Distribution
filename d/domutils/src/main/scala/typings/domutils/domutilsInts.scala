@@ -1,6 +1,6 @@
 package typings.domutils
 
-import typings.domutils.helpersMod.DocumentPosition
+import typings.domutils.libEsmHelpersMod.DocumentPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

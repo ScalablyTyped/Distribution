@@ -1,8 +1,8 @@
 package typings.builderUtil
 
-import typings.builderUtil.archMod.Arch
 import typings.builderUtil.builderUtilStrings._empty
-import typings.builderUtil.logMod.Logger
+import typings.builderUtil.outArchMod.Arch
+import typings.builderUtil.outLogMod.Logger
 import typings.builderUtilRuntime.mod.CancellationToken
 import typings.debug.mod.Debugger
 import typings.node.childProcessMod.ChildProcess
@@ -26,30 +26,30 @@ object mod {
   object Arch extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.builderUtil.archMod.Arch & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.builderUtil.outArchMod.Arch & Double] = js.native
     
-    /* 3 */ val arm64: typings.builderUtil.archMod.Arch.arm64 & Double = js.native
+    /* 3 */ val arm64: typings.builderUtil.outArchMod.Arch.arm64 & Double = js.native
     
-    /* 2 */ val armv7l: typings.builderUtil.archMod.Arch.armv7l & Double = js.native
+    /* 2 */ val armv7l: typings.builderUtil.outArchMod.Arch.armv7l & Double = js.native
     
-    /* 0 */ val ia32: typings.builderUtil.archMod.Arch.ia32 & Double = js.native
+    /* 0 */ val ia32: typings.builderUtil.outArchMod.Arch.ia32 & Double = js.native
     
-    /* 4 */ val universal: typings.builderUtil.archMod.Arch.universal & Double = js.native
+    /* 4 */ val universal: typings.builderUtil.outArchMod.Arch.universal & Double = js.native
     
-    /* 1 */ val x64: typings.builderUtil.archMod.Arch.x64 & Double = js.native
+    /* 1 */ val x64: typings.builderUtil.outArchMod.Arch.x64 & Double = js.native
   }
   
   @JSImport("builder-util", "AsyncTaskManager")
   @js.native
   open class AsyncTaskManager protected ()
-    extends typings.builderUtil.asyncTaskManagerMod.AsyncTaskManager {
+    extends typings.builderUtil.outAsyncTaskManagerMod.AsyncTaskManager {
     def this(cancellationToken: CancellationToken) = this()
   }
   
   @JSImport("builder-util", "DebugLogger")
   @js.native
   open class DebugLogger ()
-    extends typings.builderUtil.debugLoggerMod.DebugLogger {
+    extends typings.builderUtil.outDebugLoggerMod.DebugLogger {
     def this(isEnabled: Boolean) = this()
   }
   

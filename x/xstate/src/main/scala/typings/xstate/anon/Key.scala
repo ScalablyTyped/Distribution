@@ -1,6 +1,6 @@
 package typings.xstate.anon
 
-import typings.xstate.stateNodeMod.StateNode
+import typings.xstate.libStateNodeMod.StateNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

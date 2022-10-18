@@ -1,6 +1,6 @@
 package typings.storybookCoreCommon
 
-import typings.storybookCoreCommon.typesMod._BuilderName
+import typings.storybookCoreCommon.distTs3Dot9TypesMod._BuilderName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

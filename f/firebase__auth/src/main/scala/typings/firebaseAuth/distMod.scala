@@ -1525,22 +1525,23 @@ object distMod {
   
   inline def verifyPasswordResetCode(auth: Auth, code: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyPasswordResetCode")(auth.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {
       
-      var auth: typings.firebaseAuth.publicTypesMod.Auth
+      var auth: Auth
     }
     object NameServiceMapping {
       
-      inline def apply(auth: typings.firebaseAuth.publicTypesMod.Auth): NameServiceMapping = {
+      inline def apply(auth: Auth): NameServiceMapping = {
         val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
       extension [Self <: NameServiceMapping](x: Self) {
         
-        inline def setAuth(value: typings.firebaseAuth.publicTypesMod.Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       }
     }
   }

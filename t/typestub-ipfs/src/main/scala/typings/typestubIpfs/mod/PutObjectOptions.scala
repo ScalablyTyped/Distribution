@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PutObjectOptions extends StObject {
   
-  var enc: js.UndefOr[js.Any] = js.undefined
+  var enc: js.UndefOr[Any] = js.undefined
 }
 object PutObjectOptions {
   
@@ -17,7 +17,7 @@ object PutObjectOptions {
   
   extension [Self <: PutObjectOptions](x: Self) {
     
-    inline def setEnc(value: js.Any): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
+    inline def setEnc(value: Any): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
     
     inline def setEncUndefined: Self = StObject.set(x, "enc", js.undefined)
   }

@@ -32,5 +32,5 @@ object MultiMaterial {
     * @param scene defines the hosting scene
     * @returns a new MultiMaterial
     */
-  inline def ParseMultiMaterial(parsedMultiMaterial: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.multiMaterialMod.MultiMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseMultiMaterial")(parsedMultiMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.multiMaterialMod.MultiMaterial]
+  inline def ParseMultiMaterial(parsedMultiMaterial: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.materialsMultiMaterialMod.MultiMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseMultiMaterial")(parsedMultiMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsMultiMaterialMod.MultiMaterial]
 }

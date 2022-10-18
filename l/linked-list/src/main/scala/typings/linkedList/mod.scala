@@ -31,9 +31,7 @@ object mod {
        with Iterable[T] {
     def this(items: T*) = this()
     
-    def apply(): js.Iterator[T] = js.native
-    
-    def append[T](item: T): /* import warning: importer.ImportType#apply Failed type conversion: T[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.iterator * / any] */ js.Any = js.native
+    def append[T](item: T): T = js.native
     
     var head: T | Null = js.native
     

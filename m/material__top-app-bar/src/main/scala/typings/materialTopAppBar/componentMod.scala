@@ -3,7 +3,7 @@ package typings.materialTopAppBar
 import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialRipple.componentMod.MDCRippleFactory
-import typings.materialTopAppBar.materialTopAppBarMod.MDCTopAppBarBaseFoundation
+import typings.materialTopAppBar.foundationMod.MDCTopAppBarBaseFoundation
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

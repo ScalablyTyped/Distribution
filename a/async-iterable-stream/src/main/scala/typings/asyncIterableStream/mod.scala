@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("async-iterable-stream", JSImport.Namespace)
+  /* note: abstract class */ @JSImport("async-iterable-stream", JSImport.Namespace)
   @js.native
-  abstract class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with AsyncIterableStream[T] {
     

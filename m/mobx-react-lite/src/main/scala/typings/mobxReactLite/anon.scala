@@ -7,40 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait DisplayName extends StObject {
-    
-    var displayName: String
-  }
-  object DisplayName {
-    
-    inline def apply(displayName: String): DisplayName = {
-      val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DisplayName]
-    }
-    
-    extension [Self <: DisplayName](x: Self) {
-      
-      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ForwardRef extends StObject {
-    
-    var forwardRef: `true`
-  }
-  object ForwardRef {
-    
-    inline def apply(): ForwardRef = {
-      val __obj = js.Dynamic.literal(forwardRef = true)
-      __obj.asInstanceOf[ForwardRef]
-    }
-    
-    extension [Self <: ForwardRef](x: Self) {
-      
-      inline def setForwardRef(value: `true`): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
-    }
-  }
-  
   /* Inlined mobx-react-lite.mobx-react-lite/dist/observer.IObserverOptions & {  forwardRef :true} */
   trait IObserverOptionsforwardRe extends StObject {
     

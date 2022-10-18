@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SinglePropertySchema[T] extends StObject {
+trait SinglePropertySchema[T]
+  extends StObject
+     with Schema_[T] {
   
   var default: js.UndefOr[T] = js.undefined
   

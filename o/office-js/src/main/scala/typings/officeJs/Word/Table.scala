@@ -578,7 +578,7 @@ trait Table
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149 */ Any = js.native
+  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJs.Word.Style, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any = js.native
   
   /**
     * Gets and sets whether the table has a first column with a special style.

@@ -1,8 +1,8 @@
 package typings.twilioVideo
 
-import typings.twilioVideo.loglevelMod.Log.LogLevelDesc
-import typings.twilioVideo.loglevelMod.Log.LogLevelNumbers
-import typings.twilioVideo.typesMod.NetworkQualityVerbosity
+import typings.twilioVideo.tsdefLoglevelMod.Log.LogLevelDesc
+import typings.twilioVideo.tsdefLoglevelMod.Log.LogLevelNumbers
+import typings.twilioVideo.tsdefTypesMod.NetworkQualityVerbosity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

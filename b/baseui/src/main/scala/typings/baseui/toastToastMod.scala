@@ -2,7 +2,7 @@ package typings.baseui
 
 import typings.baseui.anon.IsRendered
 import typings.baseui.anon.PartialSharedStylePropsAr
-import typings.baseui.anon.`262`
+import typings.baseui.anon.`259`
 import typings.baseui.toastTypesMod.ToastPrivateState
 import typings.baseui.toastTypesMod.ToastProps
 import typings.baseui.toastTypesMod.ToastPropsShape
@@ -59,7 +59,7 @@ object toastToastMod {
     
     def clearTimeout(): Unit = js.native
     
-    var closeRef: js.UndefOr[`262` | Null] = js.native
+    var closeRef: js.UndefOr[`259` | Null] = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MToast(): Unit = js.native

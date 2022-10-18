@@ -1,6 +1,6 @@
 package typings.useSidecar
 
-import typings.useSidecar.typesMod.SideCarMedium
+import typings.useSidecar.distEs5TypesMod.SideCarMedium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

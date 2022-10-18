@@ -1,6 +1,6 @@
 package typings.angularDevkitCore.mod
 
-import typings.angularDevkitCore.literalsMod.TemplateTag
+import typings.angularDevkitCore.srcUtilsLiteralsMod.TemplateTag
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

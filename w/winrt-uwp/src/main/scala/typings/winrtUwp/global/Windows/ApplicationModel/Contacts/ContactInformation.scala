@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the information about a contact. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactInformation")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactInformation")
 @js.native
-abstract class ContactInformation ()
+open class ContactInformation ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactInformation {
   

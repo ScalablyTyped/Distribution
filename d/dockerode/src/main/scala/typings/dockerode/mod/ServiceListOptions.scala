@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ServiceListOptions extends StObject {
   
-  var Filters: Id
-  
   var abortSignal: js.UndefOr[AbortSignal] = js.undefined
+  
+  var filters: Id
 }
 object ServiceListOptions {
   
-  inline def apply(Filters: Id): ServiceListOptions = {
-    val __obj = js.Dynamic.literal(Filters = Filters.asInstanceOf[js.Any])
+  inline def apply(filters: Id): ServiceListOptions = {
+    val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceListOptions]
   }
   
@@ -25,6 +25,6 @@ object ServiceListOptions {
     
     inline def setAbortSignalUndefined: Self = StObject.set(x, "abortSignal", js.undefined)
     
-    inline def setFilters(value: Id): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Id): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
   }
 }

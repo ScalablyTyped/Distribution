@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * The object that is returned when `UI.displayDialogAsync` is called. It exposes methods for registering event handlers and closing the dialog.
-  * 
+  *
   * @remarks
-  * 
+  *
   * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
   */
 @js.native
@@ -41,7 +41,7 @@ trait Dialog extends StObject {
     *
     * @remarks
     *
-    * **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.9), PowerPoint, Word
+    * **Applications**: Excel, Outlook (Minimum requirement set: Mailbox 1.9), PowerPoint, Word
     *
     * **Requirement sets**:
     *

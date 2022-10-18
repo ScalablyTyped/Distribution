@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-paper" : "4.12.4"
+      "react-native-paper" : "4.12.5"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-paper" : "4.12.4"
+      "react-native-paper" : "4.12.5"
     }
   ],
   "compile-devDependencies" : [

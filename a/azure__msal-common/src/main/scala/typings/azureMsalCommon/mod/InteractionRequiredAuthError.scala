@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "InteractionRequiredAuthError")
 @js.native
 open class InteractionRequiredAuthError ()
-  extends typings.azureMsalCommon.interactionRequiredAuthErrorMod.InteractionRequiredAuthError {
+  extends typings.azureMsalCommon.distErrorInteractionRequiredAuthErrorMod.InteractionRequiredAuthError {
   def this(errorCode: String) = this()
   def this(errorCode: String, errorMessage: String) = this()
   def this(errorCode: Unit, errorMessage: String) = this()
@@ -27,12 +27,12 @@ object InteractionRequiredAuthError {
     * Creates an error thrown when the native broker returns ACCOUNT_UNAVAILABLE status, indicating that the account was removed and interactive sign-in is required
     * @returns
     */
-  inline def createNativeAccountUnavailableError(): typings.azureMsalCommon.interactionRequiredAuthErrorMod.InteractionRequiredAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNativeAccountUnavailableError")().asInstanceOf[typings.azureMsalCommon.interactionRequiredAuthErrorMod.InteractionRequiredAuthError]
+  inline def createNativeAccountUnavailableError(): typings.azureMsalCommon.distErrorInteractionRequiredAuthErrorMod.InteractionRequiredAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNativeAccountUnavailableError")().asInstanceOf[typings.azureMsalCommon.distErrorInteractionRequiredAuthErrorMod.InteractionRequiredAuthError]
   
   /**
     * Creates an error thrown when the authorization code required for a token request is null or empty.
     */
-  inline def createNoTokensFoundError(): typings.azureMsalCommon.interactionRequiredAuthErrorMod.InteractionRequiredAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoTokensFoundError")().asInstanceOf[typings.azureMsalCommon.interactionRequiredAuthErrorMod.InteractionRequiredAuthError]
+  inline def createNoTokensFoundError(): typings.azureMsalCommon.distErrorInteractionRequiredAuthErrorMod.InteractionRequiredAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoTokensFoundError")().asInstanceOf[typings.azureMsalCommon.distErrorInteractionRequiredAuthErrorMod.InteractionRequiredAuthError]
   
   /**
     * Helper function used to determine if an error thrown by the server requires interaction to resolve

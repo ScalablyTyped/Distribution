@@ -1,6 +1,6 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.createBreakpointsMod.Breakpoint
+import typings.materialUiCore.stylesCreateBreakpointsMod.Breakpoint
 import typings.materialUiCore.withWidthWithWidthMod.WithWidth
 import typings.materialUiCore.withWidthWithWidthMod.WithWidthOptions
 import typings.materialUiCore.withWidthWithWidthMod.WithWidthProps

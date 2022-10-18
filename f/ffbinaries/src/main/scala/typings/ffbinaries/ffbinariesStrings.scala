@@ -69,10 +69,6 @@ object ffbinariesStrings {
   inline def `linux-armhf`: `linux-armhf` = "linux-armhf".asInstanceOf[`linux-armhf`]
   
   @js.native
-  sealed trait locateBinariesSync extends StObject
-  inline def locateBinariesSync: locateBinariesSync = "locateBinariesSync".asInstanceOf[locateBinariesSync]
-  
-  @js.native
   sealed trait `osx-64`
     extends StObject
        with Platform

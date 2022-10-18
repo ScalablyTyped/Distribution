@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postmark", "Models.UpdateSignatureRequest")
 @js.native
 open class UpdateSignatureRequest protected ()
-  extends typings.postmark.modelsMod.UpdateSignatureRequest {
+  extends typings.postmark.distClientModelsMod.UpdateSignatureRequest {
   def this(Name: String) = this()
   def this(Name: String, ReplyToEmail: String) = this()
   def this(Name: String, ReplyToEmail: String, ReturnPathDomain: String) = this()

@@ -9,6 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Response extends StObject {
   
   /**
+    * The reason why Chrome uses a specific transport protocol for HTTP semantics.
+    */
+  var alternateProtocolUsage: js.UndefOr[AlternateProtocolUsage] = js.undefined
+  
+  /**
     * Cache Storage Cache Name.
     */
   var cacheStorageCacheName: js.UndefOr[String] = js.undefined
@@ -141,6 +146,10 @@ object Response {
   }
   
   extension [Self <: Response](x: Self) {
+    
+    inline def setAlternateProtocolUsage(value: AlternateProtocolUsage): Self = StObject.set(x, "alternateProtocolUsage", value.asInstanceOf[js.Any])
+    
+    inline def setAlternateProtocolUsageUndefined: Self = StObject.set(x, "alternateProtocolUsage", js.undefined)
     
     inline def setCacheStorageCacheName(value: String): Self = StObject.set(x, "cacheStorageCacheName", value.asInstanceOf[js.Any])
     

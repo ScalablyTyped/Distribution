@@ -1,7 +1,7 @@
 
 # Scala.js typings for jwks-rsa
 
-Typings are for version 2.1.4
+Typings are for version 2.1.5
 
 ## Library description:
 Library to retrieve RSA public keys from a JWKS endpoint

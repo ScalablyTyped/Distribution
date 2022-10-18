@@ -1,10 +1,10 @@
 package typings.sucrase
 
-import typings.sucrase.cjsimportprocessorMod.default
-import typings.sucrase.computeSourceMapMod.RawSourceMap
-import typings.sucrase.helperManagerMod.HelperManager
-import typings.sucrase.optionsMod.Transform
-import typings.sucrase.stateMod.Scope
+import typings.sucrase.distTypesCjsimportprocessorMod.default
+import typings.sucrase.distTypesComputeSourceMapMod.RawSourceMap
+import typings.sucrase.distTypesHelperManagerMod.HelperManager
+import typings.sucrase.distTypesOptionsMod.Transform
+import typings.sucrase.distTypesParserTokenizerStateMod.Scope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +21,9 @@ object mod {
   
   inline def transform(code: String, options: Options): TransformResult = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransformResult]
   
-  type Options = typings.sucrase.optionsMod.Options
+  type Options = typings.sucrase.distTypesOptionsMod.Options
   
-  type SourceMapOptions = typings.sucrase.optionsMod.SourceMapOptions
+  type SourceMapOptions = typings.sucrase.distTypesOptionsMod.SourceMapOptions
   
   trait SucraseContext extends StObject {
     
@@ -31,19 +31,19 @@ object mod {
     
     var importProcessor: default | Null
     
-    var nameManager: typings.sucrase.nameManagerMod.default
+    var nameManager: typings.sucrase.distTypesNameManagerMod.default
     
     var scopes: js.Array[Scope]
     
-    var tokenProcessor: typings.sucrase.tokenProcessorMod.default
+    var tokenProcessor: typings.sucrase.distTypesTokenProcessorMod.default
   }
   object SucraseContext {
     
     inline def apply(
       helperManager: HelperManager,
-      nameManager: typings.sucrase.nameManagerMod.default,
+      nameManager: typings.sucrase.distTypesNameManagerMod.default,
       scopes: js.Array[Scope],
-      tokenProcessor: typings.sucrase.tokenProcessorMod.default
+      tokenProcessor: typings.sucrase.distTypesTokenProcessorMod.default
     ): SucraseContext = {
       val __obj = js.Dynamic.literal(helperManager = helperManager.asInstanceOf[js.Any], nameManager = nameManager.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], tokenProcessor = tokenProcessor.asInstanceOf[js.Any], importProcessor = null)
       __obj.asInstanceOf[SucraseContext]
@@ -57,13 +57,13 @@ object mod {
       
       inline def setImportProcessorNull: Self = StObject.set(x, "importProcessor", null)
       
-      inline def setNameManager(value: typings.sucrase.nameManagerMod.default): Self = StObject.set(x, "nameManager", value.asInstanceOf[js.Any])
+      inline def setNameManager(value: typings.sucrase.distTypesNameManagerMod.default): Self = StObject.set(x, "nameManager", value.asInstanceOf[js.Any])
       
       inline def setScopes(value: js.Array[Scope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
       inline def setScopesVarargs(value: Scope*): Self = StObject.set(x, "scopes", js.Array(value*))
       
-      inline def setTokenProcessor(value: typings.sucrase.tokenProcessorMod.default): Self = StObject.set(x, "tokenProcessor", value.asInstanceOf[js.Any])
+      inline def setTokenProcessor(value: typings.sucrase.distTypesTokenProcessorMod.default): Self = StObject.set(x, "tokenProcessor", value.asInstanceOf[js.Any])
     }
   }
   

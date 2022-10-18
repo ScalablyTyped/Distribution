@@ -1,9 +1,9 @@
 package typings.floatingUiDom.anon
 
-import typings.floatingUiCore.typesMod.Alignment
-import typings.floatingUiCore.typesMod.ElementContext
-import typings.floatingUiCore.typesMod.Padding
-import typings.floatingUiCore.typesMod.Placement
+import typings.floatingUiCore.srcTypesMod.Alignment
+import typings.floatingUiCore.srcTypesMod.ElementContext
+import typings.floatingUiCore.srcTypesMod.Padding
+import typings.floatingUiCore.srcTypesMod.Placement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,13 +19,13 @@ trait PartialAutoPlacementOptio extends StObject {
   
   var autoAlignment: js.UndefOr[Boolean] = js.undefined
   
-  var boundary: js.UndefOr[typings.floatingUiDom.typesMod.Boundary] = js.undefined
+  var boundary: js.UndefOr[typings.floatingUiDom.srcTypesMod.Boundary] = js.undefined
   
   var elementContext: js.UndefOr[ElementContext] = js.undefined
   
   var padding: js.UndefOr[Padding] = js.undefined
   
-  var rootBoundary: js.UndefOr[typings.floatingUiCore.typesMod.RootBoundary] = js.undefined
+  var rootBoundary: js.UndefOr[typings.floatingUiCore.srcTypesMod.RootBoundary] = js.undefined
 }
 object PartialAutoPlacementOptio {
   
@@ -56,7 +56,7 @@ object PartialAutoPlacementOptio {
     
     inline def setAutoAlignmentUndefined: Self = StObject.set(x, "autoAlignment", js.undefined)
     
-    inline def setBoundary(value: typings.floatingUiDom.typesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: typings.floatingUiDom.srcTypesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
@@ -70,7 +70,7 @@ object PartialAutoPlacementOptio {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setRootBoundary(value: typings.floatingUiCore.typesMod.RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
+    inline def setRootBoundary(value: typings.floatingUiCore.srcTypesMod.RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
     
     inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
   }

@@ -1,5 +1,12 @@
 package typings.reachAlertDialog
 
+import typings.reachAlertDialog.reachAlertDialogStrings.div
+import typings.reachDialog.mod.DialogContentProps
+import typings.reachDialog.mod.DialogProps
+import typings.reachPolymorphic.mod.ForwardRefComponent
+import typings.react.mod.ReactNode
+import typings.react.mod.RefObject
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +23,7 @@ object mod {
     */
   @JSImport("@reach/alert-dialog", "AlertDialog")
   @js.native
-  val AlertDialog: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'div', AlertDialogProps> */ Any = js.native
+  val AlertDialog: ForwardRefComponent[div, AlertDialogProps] = js.native
   
   /**
     * AlertDialogContent
@@ -34,7 +41,7 @@ object mod {
     */
   @JSImport("@reach/alert-dialog", "AlertDialogContent")
   @js.native
-  val AlertDialogContent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'div', AlertDialogContentProps> */ Any = js.native
+  val AlertDialogContent: ForwardRefComponent[div, AlertDialogContentProps] = js.native
   
   /**
     * AlertDialogDescription
@@ -48,7 +55,7 @@ object mod {
     */
   @JSImport("@reach/alert-dialog", "AlertDialogDescription")
   @js.native
-  val AlertDialogDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'div', AlertDialogDescriptionProps> */ Any = js.native
+  val AlertDialogDescription: ForwardRefComponent[div, AlertDialogDescriptionProps] = js.native
   
   /**
     * AlertDialogLabel
@@ -63,8 +70,39 @@ object mod {
     */
   @JSImport("@reach/alert-dialog", "AlertDialogLabel")
   @js.native
-  val AlertDialogLabel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'div', AlertDialogLabelProps> */ Any = js.native
+  val AlertDialogLabel: ForwardRefComponent[div, AlertDialogLabelProps] = js.native
   
+  /**
+    * Welcome to @reach/alert-dialog!
+    *
+    * A modal dialog that interrupts the user's workflow to get a response, usually
+    * some sort of confirmation. This is different than a typical Dialog in that it
+    * requires some user response, like "Save", or "Cancel", etc.
+    *
+    * Most of the time you'll use `AlertDialog`, `AlertDialogLabel`, and
+    * `AlertDialogDescription` together. If you need more control over the styling
+    * of the modal you can drop down a level and use `AlertDialogOverlay` and
+    * `AlertDialogContent` instead of `AlertDialog`.
+    *
+    * When a Dialog opens, the _least destructive_ action should be focused so that
+    * if a user accidentally hits enter when the dialog opens no damage is done.
+    * This is accomplished with the `leastDestructiveRef` prop.
+    *
+    * Every dialog must render an `AlertDialogLabel` so the screen reader knows
+    * what to say about the dialog. If an `AlertDialogDescription` is also
+    * rendered, the screen reader will also announce that. If you render more than
+    * these two elements and some buttons, the screen reader might not announce it
+    * so it's important to keep the content inside of `AlertDialogLabel` and
+    * `AlertDialogDescription`.
+    *
+    * This is built on top of [Dialog](/dialog), so `AlertDialog` spreads its props
+    * and renders a `Dialog`, same for `AlertDialogOverlay` to `DialogOverlay`, and
+    * `AlertDialogContent` to `DialogContent`.
+    *
+    * @see Docs     https://reach.tech/alert-dialog
+    * @see Source https://github.com/reach/reach-ui/tree/main/packages/alert-dialog
+    * @see WAI-ARIA https://www.w3.org/TR/wai-aria-practices-1.2/#alertdialog
+    */
   /**
     * AlertDialogOverlay
     *
@@ -78,5 +116,91 @@ object mod {
     */
   @JSImport("@reach/alert-dialog", "AlertDialogOverlay")
   @js.native
-  val AlertDialogOverlay: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'div', AlertDialogProps> */ Any = js.native
+  val AlertDialogOverlay: ForwardRefComponent[div, AlertDialogProps] = js.native
+  
+  /**
+    * @see Docs https://reach.tech/alert-dialog#alertdialogcontent-props
+    */
+  trait AlertDialogContentProps
+    extends StObject
+       with DialogContentProps {
+    
+    /**
+      * Accepts any renderable content but should generally be restricted to
+      * `AlertDialogLabel`, `AlertDialogDescription` and action buttons, other
+      * content might not be announced to the user by the screen reader.
+      *
+      * @see Docs https://reach.tech/alert-dialog#alertdialogcontent-children
+      */
+    @JSName("children")
+    var children_AlertDialogContentProps: ReactNode
+  }
+  object AlertDialogContentProps {
+    
+    inline def apply(): AlertDialogContentProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AlertDialogContentProps]
+    }
+    
+    extension [Self <: AlertDialogContentProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    }
+  }
+  
+  trait AlertDialogDescriptionProps extends StObject
+  
+  trait AlertDialogLabelProps extends StObject
+  
+  /**
+    * @see Docs https://reach.tech/alert-dialog#alertdialog-props
+    */
+  trait AlertDialogProps
+    extends StObject
+       with DialogProps {
+    
+    /**
+      * Accepts any renderable content but should generally be restricted to
+      * `AlertDialogLabel`, `AlertDialogDescription` and action buttons, other
+      * content might not be announced to the user by the screen reader.
+      *
+      * @see Docs: https://reach.tech/alert-dialog#alertdialog-children
+      */
+    @JSName("children")
+    var children_AlertDialogProps: ReactNode
+    
+    var id: js.UndefOr[String] = js.undefined
+    
+    /**
+      * To prevent accidental data loss, an alert dialog should focus the least
+      * destructive action button when it opens.
+      *
+      * @see Docs: https://reach.tech/alert-dialog#alertdialog-leastdestructiveref
+      */
+    var leastDestructiveRef: js.UndefOr[RefObject[HTMLElement]] = js.undefined
+  }
+  object AlertDialogProps {
+    
+    inline def apply(): AlertDialogProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AlertDialogProps]
+    }
+    
+    extension [Self <: AlertDialogProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setLeastDestructiveRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "leastDestructiveRef", value.asInstanceOf[js.Any])
+      
+      inline def setLeastDestructiveRefUndefined: Self = StObject.set(x, "leastDestructiveRef", js.undefined)
+    }
+  }
 }

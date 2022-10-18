@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SpritePackedManager")
 @js.native
 open class SpritePackedManager protected ()
-  extends typings.babylonjs.legacyMod.SpritePackedManager {
+  extends typings.babylonjs.legacyLegacyMod.SpritePackedManager {
   /**
     * Creates a new sprite manager from a packed sprite sheet
     * @param name defines the manager's name

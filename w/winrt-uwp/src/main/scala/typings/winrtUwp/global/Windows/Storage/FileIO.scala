@@ -12,9 +12,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides helper methods for reading and writing files that are represented by objects of type IStorageFile . */
-@JSGlobal("Windows.Storage.FileIO")
+/* note: abstract class */ @JSGlobal("Windows.Storage.FileIO")
 @js.native
-abstract class FileIO ()
+open class FileIO ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.FileIO
 object FileIO {

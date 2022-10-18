@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.SelectedIndex
-import typings.officeUiFabricReact.swatchColorPickerBaseMod.ISwatchColorPickerState
-import typings.officeUiFabricReact.swatchColorPickerTypesMod.ISwatchColorPickerProps
+import typings.officeUiFabricReact.libComponentsSwatchColorPickerSwatchColorPickerDotbaseMod.ISwatchColorPickerState
+import typings.officeUiFabricReact.libComponentsSwatchColorPickerSwatchColorPickerDottypesMod.ISwatchColorPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

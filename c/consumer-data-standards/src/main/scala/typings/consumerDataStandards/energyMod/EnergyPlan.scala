@@ -2,7 +2,7 @@ package typings.consumerDataStandards.energyMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.consumerDataStandards.anon.BundleUri
-import typings.consumerDataStandards.anon.ExcludedPostcodes
+import typings.consumerDataStandards.anon.Distributors
 import typings.consumerDataStandards.consumerDataStandardsStrings.BUSINESS
 import typings.consumerDataStandards.consumerDataStandardsStrings.DUAL
 import typings.consumerDataStandards.consumerDataStandardsStrings.ELECTRICITY
@@ -72,7 +72,7 @@ trait EnergyPlan
   /**
     * Describes the geographical area that the plan is available for.  If absent then it is assumed the plan is not geographically limited
     */
-  var geography: js.UndefOr[ExcludedPostcodes | Null] = js.undefined
+  var geography: js.UndefOr[Distributors | Null] = js.undefined
   
   /**
     * The last date and time that the information for this plan was changed (or the creation date for the plan if it has never been altered)
@@ -154,7 +154,7 @@ object EnergyPlan {
     
     inline def setFuelType(value: ELECTRICITY | GAS | DUAL): Self = StObject.set(x, "fuelType", value.asInstanceOf[js.Any])
     
-    inline def setGeography(value: ExcludedPostcodes): Self = StObject.set(x, "geography", value.asInstanceOf[js.Any])
+    inline def setGeography(value: Distributors): Self = StObject.set(x, "geography", value.asInstanceOf[js.Any])
     
     inline def setGeographyNull: Self = StObject.set(x, "geography", null)
     

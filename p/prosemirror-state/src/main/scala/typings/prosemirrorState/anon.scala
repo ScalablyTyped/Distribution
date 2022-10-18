@@ -1,58 +1,15 @@
 package typings.prosemirrorState
 
 import typings.prosemirrorModel.mod.Node
-import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorState.mod.AllSelection
 import typings.prosemirrorState.mod.EditorState
 import typings.prosemirrorState.mod.Plugin
-import typings.prosemirrorState.mod.Selection
 import typings.prosemirrorState.mod.Transaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait `0` extends StObject {
-    
-    /**
-      New set of active plugins.
-      */
-    var plugins: js.UndefOr[js.Array[Plugin[Any]]] = js.undefined
-  }
-  object `0` {
-    
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setPlugins(value: js.Array[Plugin[Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
-      
-      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
-      
-      inline def setPluginsVarargs(value: Plugin[Any]*): Self = StObject.set(x, "plugins", js.Array(value*))
-    }
-  }
-  
-  trait FromJSON extends StObject {
-    
-    def fromJSON(doc: Node, json: Any): Selection
-  }
-  object FromJSON {
-    
-    inline def apply(fromJSON: (Node, Any) => Selection): FromJSON = {
-      val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction2(fromJSON))
-      __obj.asInstanceOf[FromJSON]
-    }
-    
-    extension [Self <: FromJSON](x: Self) {
-      
-      inline def setFromJSON(value: (Node, Any) => Selection): Self = StObject.set(x, "fromJSON", js.Any.fromFunction2(value))
-    }
-  }
   
   trait Map extends StObject {
     
@@ -78,19 +35,14 @@ object anon {
   trait Plugins extends StObject {
     
     /**
-      The set of active plugins.
+      New set of active plugins.
       */
     var plugins: js.UndefOr[js.Array[Plugin[Any]]] = js.undefined
-    
-    /**
-      The schema to use.
-      */
-    var schema: Schema[Any, Any]
   }
   object Plugins {
     
-    inline def apply(schema: Schema[Any, Any]): Plugins = {
-      val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
+    inline def apply(): Plugins = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Plugins]
     }
     
@@ -101,8 +53,6 @@ object anon {
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
       inline def setPluginsVarargs(value: Plugin[Any]*): Self = StObject.set(x, "plugins", js.Array(value*))
-      
-      inline def setSchema(value: Schema[Any, Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }
   }
   

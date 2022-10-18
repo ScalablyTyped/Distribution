@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "RemoteRoom")
 @js.native
 open class RemoteRoom protected ()
-  extends typings.matrixAppserviceBridge.remoteMod.RemoteRoom {
+  extends typings.matrixAppserviceBridge.libModelsRoomsRemoteMod.RemoteRoom {
   /**
     * Create a remote room.
     * @param identifier The ID for this room

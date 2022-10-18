@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "SceneSerializer")
 @js.native
 open class SceneSerializer ()
-  extends typings.babylonjs.sceneSerializerMod.SceneSerializer
+  extends typings.babylonjs.miscSceneSerializerMod.SceneSerializer
 /* static members */
 object SceneSerializer {
   

@@ -1,7 +1,6 @@
 package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.node.bufferMod.global.Buffer
 import typings.sequelize.anon.As
 import typings.sequelize.anon.Through
@@ -452,15 +451,6 @@ StringDictionary[String | DataTypeAbstract | DefineAttributeColumnOptions]
 type DefineGetterMethodsOptions = StringDictionary[js.Function0[Any]]
 
 /**
-  * Interface for Attributes provided for a column
-  *
-  * @see Sequelize.define
-  */
-type DefineModelAttributes[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: string | sequelize.sequelize.DataTypeAbstract | sequelize.sequelize.DefineAttributeColumnOptions}
-  */ typings.sequelize.sequelizeStrings.DefineModelAttributes & TopLevel[Any]
-
-/**
   * Interface for Define Scope Options
   *
   * @see DefineOptions
@@ -906,7 +896,3 @@ type TransactionTypeDeferred = DEFERRED
 type TransactionTypeExclusive = EXCLUSIVE
 
 type TransactionTypeImmediate = IMMEDIATE
-
-type WhereOptions[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]:? sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.Primitives> | sequelize.sequelize.WhereLogic | T[P] extends sequelize.sequelize.Primitives? null : sequelize.sequelize.WhereOptions<T[P]> | sequelize.sequelize.col | sequelize.sequelize.and | sequelize.sequelize.or | sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.WhereNested | sequelize.sequelize.where | null}
-  */ typings.sequelize.sequelizeStrings.WhereOptions & TopLevel[Any]

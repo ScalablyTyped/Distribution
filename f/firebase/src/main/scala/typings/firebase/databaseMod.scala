@@ -13,36 +13,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object databaseMod {
   
-  @JSImport("firebase/analytics/dist/database", JSImport.Namespace)
+  @JSImport("firebase/database", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("firebase/analytics/dist/database", "DataSnapshot")
+  @JSImport("firebase/database", "DataSnapshot")
   @js.native
   /* private */ open class DataSnapshot ()
-    extends typings.firebaseDatabase.mod.DataSnapshot
+    extends typings.firebase.databaseDistDatabaseMod.DataSnapshot
   
-  @JSImport("firebase/analytics/dist/database", "Database")
+  @JSImport("firebase/database", "Database")
   @js.native
   /* private */ open class Database ()
-    extends typings.firebaseDatabase.mod.Database
+    extends typings.firebase.databaseDistDatabaseMod.Database
   
-  @JSImport("firebase/analytics/dist/database", "OnDisconnect")
+  @JSImport("firebase/database", "OnDisconnect")
   @js.native
   /* private */ open class OnDisconnect_ ()
-    extends typings.firebaseDatabase.mod.OnDisconnect_
+    extends typings.firebase.databaseDistDatabaseMod.OnDisconnect_
   
-  @JSImport("firebase/analytics/dist/database", "QueryConstraint")
+  /* note: abstract class */ @JSImport("firebase/database", "QueryConstraint")
   @js.native
-  abstract class QueryConstraint ()
-    extends typings.firebaseDatabase.mod.QueryConstraint
+  open class QueryConstraint ()
+    extends typings.firebase.databaseDistDatabaseMod.QueryConstraint
   
-  @JSImport("firebase/analytics/dist/database", "TransactionResult")
+  @JSImport("firebase/database", "TransactionResult")
   @js.native
   /* private */ open class TransactionResult ()
-    extends typings.firebaseDatabase.mod.TransactionResult
+    extends typings.firebase.databaseDistDatabaseMod.TransactionResult
   
   inline def child(parent: DatabaseReference, path: String): DatabaseReference = (^.asInstanceOf[js.Dynamic].applyDynamic("child")(parent.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[DatabaseReference]
   

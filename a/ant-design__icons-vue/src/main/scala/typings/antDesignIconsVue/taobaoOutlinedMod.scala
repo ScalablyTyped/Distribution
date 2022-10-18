@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsTaobaoOutlinedMod.TaobaoOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taobaoOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/TaobaoOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/TaobaoOutlined", JSImport.Default)
   @js.native
   val default: TaobaoOutlinedIconType = js.native
-  
-  @js.native
-  trait TaobaoOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_TaobaoOutlinedIconType: String = js.native
-  }
   
   type _To = TaobaoOutlinedIconType
   

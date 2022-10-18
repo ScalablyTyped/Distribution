@@ -1,7 +1,7 @@
 package typings.webpackMerge
 
-import typings.webpackMerge.typesMod.Customize
-import typings.webpackMerge.typesMod.Key
+import typings.webpackMerge.distTypesMod.Customize
+import typings.webpackMerge.distTypesMod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

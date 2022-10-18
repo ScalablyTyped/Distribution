@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CompareFunction extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.CompareFunction & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CompareFunction & String] = js.native
   
-  /* "always" */ val Always: typings.babylonjs.webgpuConstantsMod.CompareFunction.Always & String = js.native
+  /* "always" */ val Always: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CompareFunction.Always & String = js.native
   
-  /* "equal" */ val Equal: typings.babylonjs.webgpuConstantsMod.CompareFunction.Equal & String = js.native
+  /* "equal" */ val Equal: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CompareFunction.Equal & String = js.native
   
-  /* "greater" */ val Greater: typings.babylonjs.webgpuConstantsMod.CompareFunction.Greater & String = js.native
+  /* "greater" */ val Greater: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CompareFunction.Greater & String = js.native
   
-  /* "greater-equal" */ val GreaterEqual: typings.babylonjs.webgpuConstantsMod.CompareFunction.GreaterEqual & String = js.native
+  /* "greater-equal" */ val GreaterEqual: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CompareFunction.GreaterEqual & String = js.native
   
-  /* "less" */ val Less: typings.babylonjs.webgpuConstantsMod.CompareFunction.Less & String = js.native
+  /* "less" */ val Less: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CompareFunction.Less & String = js.native
   
-  /* "less-equal" */ val LessEqual: typings.babylonjs.webgpuConstantsMod.CompareFunction.LessEqual & String = js.native
+  /* "less-equal" */ val LessEqual: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CompareFunction.LessEqual & String = js.native
   
-  /* "never" */ val Never: typings.babylonjs.webgpuConstantsMod.CompareFunction.Never & String = js.native
+  /* "never" */ val Never: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CompareFunction.Never & String = js.native
   
-  /* "not-equal" */ val NotEqual: typings.babylonjs.webgpuConstantsMod.CompareFunction.NotEqual & String = js.native
+  /* "not-equal" */ val NotEqual: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CompareFunction.NotEqual & String = js.native
 }

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListProps
+import typings.officeUiFabricReact.libComponentsDetailsListShimmeredDetailsListDottypesMod.IShimmeredDetailsListProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object libShimmeredDetailsListMod {
   @JSImport("office-ui-fabric-react/lib/ShimmeredDetailsList", "ShimmeredDetailsListBase")
   @js.native
   open class ShimmeredDetailsListBase protected ()
-    extends typings.officeUiFabricReact.shimmeredDetailsListBaseMod.ShimmeredDetailsListBase {
+    extends typings.officeUiFabricReact.libComponentsDetailsListShimmeredDetailsListDotbaseMod.ShimmeredDetailsListBase {
     def this(props: IShimmeredDetailsListProps) = this()
   }
 }

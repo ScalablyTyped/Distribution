@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "LongestCommonSubsequence")
 @js.native
 open class LongestCommonSubsequence[T] protected ()
-  extends typings.webcola.gridrouterMod.LongestCommonSubsequence[T] {
+  extends typings.webcola.distSrcGridrouterMod.LongestCommonSubsequence[T] {
   def this(s: js.Array[T], t: js.Array[T]) = this()
 }
 /* static members */

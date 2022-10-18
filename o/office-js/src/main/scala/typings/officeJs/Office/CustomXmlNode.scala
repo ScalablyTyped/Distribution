@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Represents an XML node in a tree in a document.
-  * 
+  *
   * @remarks
-  * 
-  * **Hosts**: Word
+  *
+  * **Applications**: Word
   */
 @js.native
 trait CustomXmlNode extends StObject {
@@ -23,7 +23,7 @@ trait CustomXmlNode extends StObject {
     * Gets the node value.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -40,7 +40,7 @@ trait CustomXmlNode extends StObject {
     * Gets the nodes associated with the XPath expression.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xPath The XPath expression that specifies the nodes to get. Required.
@@ -66,7 +66,7 @@ trait CustomXmlNode extends StObject {
     * Gets the text of an XML node in a custom XML part.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -83,7 +83,7 @@ trait CustomXmlNode extends StObject {
     * Gets the node's XML.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -110,7 +110,7 @@ trait CustomXmlNode extends StObject {
     * Sets the node value.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param value The value to be set on the node
@@ -131,7 +131,7 @@ trait CustomXmlNode extends StObject {
     * Asynchronously sets the text of an XML node in a custom XML part.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param text Required. The text value of the XML node.
@@ -152,7 +152,7 @@ trait CustomXmlNode extends StObject {
     * Sets the node XML.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xml The XML to be set on the node

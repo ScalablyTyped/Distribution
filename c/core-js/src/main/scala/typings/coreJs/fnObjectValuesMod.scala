@@ -9,7 +9,7 @@ object fnObjectValuesMod {
   /* was `typeof core.Object.values` */
   inline def apply(`object`: Any): Array[Any] = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[Array[Any]]
   
-  @JSImport("core-js/library/fn/object/values", JSImport.Namespace)
+  @JSImport("core-js/fn/object/values", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
 }

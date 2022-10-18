@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ibm-cloud-sdk-core" : "0.1.2"
+      "ibm-cloud-sdk-core" : "3.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ibm-cloud-sdk-core" : "0.1.2"
+      "ibm-cloud-sdk-core" : "3.1.0"
     }
   ],
   "compile-devDependencies" : [

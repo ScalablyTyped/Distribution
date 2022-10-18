@@ -1,13 +1,13 @@
 package typings.mendixmodelsdk.mod.javaactions
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.codeactionsMod.codeactions.CodeAction
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.CodeAction
+import typings.mendixmodelsdk.srcGenJavaactionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "javaactions.JavaActionParameter")
 @js.native
 open class JavaActionParameter protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.javaactions.JavaActionParameter {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.javaactions.JavaActionParameter {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,7 +37,7 @@ object JavaActionParameter {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.JavaActionParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.JavaActionParameter]
   
   /**
     * Creates and returns a new JavaActionParameter instance in the SDK and on the server.
@@ -48,7 +48,7 @@ object JavaActionParameter {
     *  7.21.0 and higher
     */
   /* static member */
-  inline def createInCodeActionUnderActionParameters(container: CodeAction): typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionParameters")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter]
+  inline def createInCodeActionUnderActionParameters(container: CodeAction): typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.JavaActionParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionParameters")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.JavaActionParameter]
   
   /**
     * Creates and returns a new JavaActionParameter instance in the SDK and on the server.
@@ -59,7 +59,7 @@ object JavaActionParameter {
     *  6.0.0 to 7.20.0
     */
   /* static member */
-  inline def createInJavaActionUnderParameters(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction): typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter]
+  inline def createInJavaActionUnderParameters(container: typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.JavaAction): typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.JavaActionParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.JavaActionParameter]
   
   /* static member */
   @JSImport("mendixmodelsdk", "javaactions.JavaActionParameter.structureTypeName")

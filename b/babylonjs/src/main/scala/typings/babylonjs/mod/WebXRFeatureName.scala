@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXRFeatureName")
 @js.native
 open class WebXRFeatureName ()
-  extends typings.babylonjs.legacyMod.WebXRFeatureName
+  extends typings.babylonjs.legacyLegacyMod.WebXRFeatureName
 /* static members */
 object WebXRFeatureName {
   

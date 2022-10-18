@@ -2,9 +2,9 @@ package typings.reactNavigationStack.anon
 
 import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRoute
-import typings.reactNavigationStack.cardStackMod.GestureValues
-import typings.reactNavigationStack.vendorTypesMod.Scene
-import typings.reactNavigationStack.vendorTypesMod.StackDescriptorMap
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.Scene
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackDescriptorMap
+import typings.reactNavigationStack.libTypescriptSrcVendorViewsStackCardStackMod.GestureValues
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

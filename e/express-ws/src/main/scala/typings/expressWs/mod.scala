@@ -17,7 +17,7 @@ import typings.expressServeStaticCore.mod.Response
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.std.Record
 import typings.ws.mod.ServerOptions
 import typings.ws.mod.WebSocket
@@ -53,20 +53,20 @@ object mod {
   inline def apply(
     app: Application_,
     server: typings.node.httpsMod.Server[
-      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
       Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ]
     ]
   ): Instance = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Instance]
   inline def apply(
     app: Application_,
     server: typings.node.httpsMod.Server[
-      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
       Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
       ]
     ],
     options: Options

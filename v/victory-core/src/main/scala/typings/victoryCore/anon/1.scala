@@ -1,26 +1,27 @@
 package typings.victoryCore.anon
 
+import typings.victoryCore.libTypesPropTypesMod._CategoryPropType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `1` extends StObject {
+trait `1`
+  extends StObject
+     with _CategoryPropType {
   
-  var x: Double | js.Date
-  
-  var y: Double | js.Date
+  var x: js.Array[String]
 }
 object `1` {
   
-  inline def apply(x: Double | js.Date, y: Double | js.Date): `1` = {
-    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  inline def apply(x: js.Array[String]): `1` = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1`]
   }
   
   extension [Self <: `1`](x: Self) {
     
-    inline def setX(value: Double | js.Date): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Array[String]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setY(value: Double | js.Date): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setXVarargs(value: String*): Self = StObject.set(x, "x", js.Array(value*))
   }
 }

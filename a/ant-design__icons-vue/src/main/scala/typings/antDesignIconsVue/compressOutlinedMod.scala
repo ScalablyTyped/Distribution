@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCompressOutlinedMod.CompressOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compressOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CompressOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CompressOutlined", JSImport.Default)
   @js.native
   val default: CompressOutlinedIconType = js.native
-  
-  @js.native
-  trait CompressOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CompressOutlinedIconType: String = js.native
-  }
   
   type _To = CompressOutlinedIconType
   

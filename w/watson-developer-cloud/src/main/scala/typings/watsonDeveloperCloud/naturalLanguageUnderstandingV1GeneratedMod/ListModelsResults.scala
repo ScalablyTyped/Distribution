@@ -23,6 +23,6 @@ object ListModelsResults {
     
     inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    inline def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value*))
   }
 }

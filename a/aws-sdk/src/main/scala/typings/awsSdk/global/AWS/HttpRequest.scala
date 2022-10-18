@@ -11,5 +11,5 @@ open class HttpRequest protected ()
   /**
     * Constructs HttpRequest object with provided endpoint and region
     */
-  def this(endpoint: typings.awsSdk.endpointMod.Endpoint, region: String) = this()
+  def this(endpoint: typings.awsSdk.libEndpointMod.Endpoint, region: String) = this()
 }

@@ -1,14 +1,14 @@
 package typings.reactSpinners
 
 import typings.react.mod.global.JSX.Element
-import typings.reactSpinners.propsMod.LoaderSizeMarginProps
+import typings.reactSpinners.helpersPropsMod.LoaderSizeMarginProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syncLoaderMod {
   
-  @JSImport("react-spinners/cjs/SyncLoader", JSImport.Namespace)
+  @JSImport("react-spinners/SyncLoader", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

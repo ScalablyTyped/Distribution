@@ -1,7 +1,7 @@
 package typings.auth0.mod
 
-import typings.auth0.anon.EmailString
-import typings.auth0.anon.NameString
+import typings.auth0.anon.Email
+import typings.auth0.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +22,9 @@ trait OrganizationInvitation extends StObject {
   
   var invitation_url: String
   
-  var invitee: EmailString
+  var invitee: Email
   
-  var inviter: NameString
+  var inviter: Name
   
   var organization_id: String
   
@@ -42,8 +42,8 @@ object OrganizationInvitation {
     expires_at: String,
     id: String,
     invitation_url: String,
-    invitee: EmailString,
-    inviter: NameString,
+    invitee: Email,
+    inviter: Name,
     organization_id: String,
     ticket_id: String
   ): OrganizationInvitation = {
@@ -71,9 +71,9 @@ object OrganizationInvitation {
     
     inline def setInvitation_url(value: String): Self = StObject.set(x, "invitation_url", value.asInstanceOf[js.Any])
     
-    inline def setInvitee(value: EmailString): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
+    inline def setInvitee(value: Email): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
     
-    inline def setInviter(value: NameString): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
+    inline def setInviter(value: Name): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
     
     inline def setOrganization_id(value: String): Self = StObject.set(x, "organization_id", value.asInstanceOf[js.Any])
     

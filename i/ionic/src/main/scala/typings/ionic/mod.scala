@@ -5,7 +5,7 @@ import typings.ionic.definitionsMod.IPCMessage
 import typings.ionic.definitionsMod.IntegrationName
 import typings.ionic.definitionsMod.IonicContext
 import typings.ionic.definitionsMod.ProjectType
-import typings.ionic.executorMod.Executor
+import typings.ionic.libExecutorMod.Executor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

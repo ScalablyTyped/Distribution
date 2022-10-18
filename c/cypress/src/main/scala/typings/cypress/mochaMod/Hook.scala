@@ -1,8 +1,8 @@
 package typings.cypress.mochaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Runner untyped events
 /**
@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("mocha", "Hook")
 @js.native
-class Hook ()
-  extends typings.cypress.Mocha.Hook
-
+open class Hook ()
+  extends StObject
+     with typings.cypress.Mocha.Hook

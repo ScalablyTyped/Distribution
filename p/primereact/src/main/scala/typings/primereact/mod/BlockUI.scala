@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.blockuiMod.BlockUIProps
+import typings.primereact.blockuiBlockuiMod.BlockUIProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "BlockUI")
 @js.native
 open class BlockUI protected ()
-  extends typings.primereact.blockuiMod.BlockUI {
+  extends typings.primereact.blockuiBlockuiMod.BlockUI {
   def this(props: BlockUIProps) = this()
   /**
     * @deprecated

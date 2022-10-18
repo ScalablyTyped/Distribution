@@ -44,9 +44,9 @@ trait DateTimeFormatOptions extends StObject {
   /* standard es5 */
   var era: js.UndefOr[long | short | narrow] = js.undefined
   
-  /* standard es2021.intl */
   /* standard es5 */
-  var formatMatcher: (js.UndefOr[basic | (`best fit`)]) & (js.UndefOr[(`best fit`) | basic])
+  /* standard es2021.intl */
+  var formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])
   
   /* standard es2021.intl */
   var fractionalSecondDigits: js.UndefOr[`1` | `2` | `3`] = js.undefined
@@ -93,7 +93,7 @@ trait DateTimeFormatOptions extends StObject {
 }
 object DateTimeFormatOptions {
   
-  inline def apply(formatMatcher: (js.UndefOr[basic | (`best fit`)]) & (js.UndefOr[(`best fit`) | basic])): DateTimeFormatOptions = {
+  inline def apply(formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])): DateTimeFormatOptions = {
     val __obj = js.Dynamic.literal(formatMatcher = formatMatcher.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeFormatOptions]
   }
@@ -120,7 +120,7 @@ object DateTimeFormatOptions {
     
     inline def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
     
-    inline def setFormatMatcher(value: (js.UndefOr[basic | (`best fit`)]) & (js.UndefOr[(`best fit`) | basic])): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
+    inline def setFormatMatcher(value: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
     
     inline def setFractionalSecondDigits(value: `1` | `2` | `3`): Self = StObject.set(x, "fractionalSecondDigits", value.asInstanceOf[js.Any])
     

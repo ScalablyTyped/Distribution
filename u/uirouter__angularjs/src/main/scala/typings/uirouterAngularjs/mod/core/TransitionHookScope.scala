@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TransitionHookScope extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.uirouterCore.transitionInterfaceMod.TransitionHookScope & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.uirouterCore.libTransitionInterfaceMod.TransitionHookScope & Double] = js.native
   
-  /* 1 */ val STATE: typings.uirouterCore.transitionInterfaceMod.TransitionHookScope.STATE & Double = js.native
+  /* 1 */ val STATE: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookScope.STATE & Double = js.native
   
-  /* 0 */ val TRANSITION: typings.uirouterCore.transitionInterfaceMod.TransitionHookScope.TRANSITION & Double = js.native
+  /* 0 */ val TRANSITION: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookScope.TRANSITION & Double = js.native
 }

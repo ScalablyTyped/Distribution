@@ -1,7 +1,5 @@
 package typings.useGestureCore.anon
 
-import typings.useGestureCore.handlersMod.GetEventType
-import typings.useGestureCore.useGestureCoreStrings.onPause
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +34,7 @@ trait SharedGestureStateeventunArgsButtonsCtrlKeyDownDraggingEventHoveringLocked
     */
   var dragging: js.UndefOr[Boolean] = js.undefined
   
-  var event: js.UndefOr[Any | GetEventType[onPause]] = js.undefined
+  var event: /* import warning: importer.ImportType#apply Failed type conversion: undefined extends any | undefined ? @use-gesture/core.@use-gesture/core/dist/declarations/src/types/handlers.GetEventType<'onPause'> : any | undefined */ js.Any
   
   /**
     * True if the element is being hovered.
@@ -96,13 +94,14 @@ object SharedGestureStateeventunArgsButtonsCtrlKeyDownDraggingEventHoveringLocke
     buttons: Double,
     ctrlKey: Boolean,
     down: Boolean,
+    event: /* import warning: importer.ImportType#apply Failed type conversion: undefined extends any | undefined ? @use-gesture/core.@use-gesture/core/dist/declarations/src/types/handlers.GetEventType<'onPause'> : any | undefined */ js.Any,
     locked: Boolean,
     metaKey: Boolean,
     pressed: Boolean,
     shiftKey: Boolean,
     touches: Double
   ): SharedGestureStateeventunArgsButtonsCtrlKeyDownDraggingEventHoveringLockedMetaKeyMoving = {
-    val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], down = down.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], pressed = pressed.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], down = down.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], pressed = pressed.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedGestureStateeventunArgsButtonsCtrlKeyDownDraggingEventHoveringLockedMetaKeyMoving]
   }
   
@@ -122,9 +121,9 @@ object SharedGestureStateeventunArgsButtonsCtrlKeyDownDraggingEventHoveringLocke
     
     inline def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
     
-    inline def setEvent(value: Any | GetEventType[onPause]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
-    
-    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEvent(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: undefined extends any | undefined ? @use-gesture/core.@use-gesture/core/dist/declarations/src/types/handlers.GetEventType<'onPause'> : any | undefined */ js.Any
+    ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setHovering(value: Boolean): Self = StObject.set(x, "hovering", value.asInstanceOf[js.Any])
     

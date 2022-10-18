@@ -1,6 +1,6 @@
 package typings.uiRouterExtras
 
-import typings.uiRouterExtras.mod.ui.IRedirectParams
+import typings.uiRouterExtras.angularMod.ui.IRedirectParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.rangeSliderMod.RangeSliderProps
+import typings.blueprintjsCore.libEsmComponentsSliderRangeSliderMod.RangeSliderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "RangeSlider")
 @js.native
 open class RangeSlider protected ()
-  extends typings.blueprintjsCore.componentsMod.RangeSlider {
+  extends typings.blueprintjsCore.libEsmComponentsMod.RangeSlider {
   def this(props: RangeSliderProps) = this()
   def this(props: RangeSliderProps, context: Any) = this()
 }

@@ -1,10 +1,10 @@
 package typings.peculiarJsonSchema
 
-import typings.peculiarJsonSchema.decoratorsMod.IJsonPropOptions
-import typings.peculiarJsonSchema.keyErrorMod.IKeyErrors
-import typings.peculiarJsonSchema.parserMod.IJsonParserOptions
-import typings.peculiarJsonSchema.schemaMod.IJsonSchema
-import typings.peculiarJsonSchema.serializerMod.IJsonSerializerOptions
+import typings.peculiarJsonSchema.buildTypesDecoratorsMod.IJsonPropOptions
+import typings.peculiarJsonSchema.buildTypesErrorsKeyErrorMod.IKeyErrors
+import typings.peculiarJsonSchema.buildTypesParserMod.IJsonParserOptions
+import typings.peculiarJsonSchema.buildTypesSchemaMod.IJsonSchema
+import typings.peculiarJsonSchema.buildTypesSerializerMod.IJsonSerializerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object mod {
   @JSImport("@peculiar/json-schema", "JsonError")
   @js.native
   open class JsonError protected ()
-    extends typings.peculiarJsonSchema.errorsMod.JsonError {
+    extends typings.peculiarJsonSchema.buildTypesErrorsMod.JsonError {
     def this(message: String) = this()
     def this(message: String, innerError: js.Error) = this()
   }
@@ -26,7 +26,7 @@ object mod {
   @JSImport("@peculiar/json-schema", "JsonParser")
   @js.native
   open class JsonParser ()
-    extends typings.peculiarJsonSchema.parserMod.JsonParser
+    extends typings.peculiarJsonSchema.buildTypesParserMod.JsonParser
   /* static members */
   object JsonParser {
     
@@ -59,21 +59,21 @@ object mod {
   object JsonPropTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.peculiarJsonSchema.propTypesMod.JsonPropTypes & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.peculiarJsonSchema.buildTypesPropTypesMod.JsonPropTypes & Double] = js.native
     
-    /* 0 */ val Any: typings.peculiarJsonSchema.propTypesMod.JsonPropTypes.Any & Double = js.native
+    /* 0 */ val Any: typings.peculiarJsonSchema.buildTypesPropTypesMod.JsonPropTypes.Any & Double = js.native
     
-    /* 1 */ val Boolean: typings.peculiarJsonSchema.propTypesMod.JsonPropTypes.Boolean & Double = js.native
+    /* 1 */ val Boolean: typings.peculiarJsonSchema.buildTypesPropTypesMod.JsonPropTypes.Boolean & Double = js.native
     
-    /* 2 */ val Number: typings.peculiarJsonSchema.propTypesMod.JsonPropTypes.Number & Double = js.native
+    /* 2 */ val Number: typings.peculiarJsonSchema.buildTypesPropTypesMod.JsonPropTypes.Number & Double = js.native
     
-    /* 3 */ val String: typings.peculiarJsonSchema.propTypesMod.JsonPropTypes.String & Double = js.native
+    /* 3 */ val String: typings.peculiarJsonSchema.buildTypesPropTypesMod.JsonPropTypes.String & Double = js.native
   }
   
   @JSImport("@peculiar/json-schema", "JsonSerializer")
   @js.native
   open class JsonSerializer ()
-    extends typings.peculiarJsonSchema.serializerMod.JsonSerializer
+    extends typings.peculiarJsonSchema.buildTypesSerializerMod.JsonSerializer
   /* static members */
   object JsonSerializer {
     
@@ -125,7 +125,7 @@ object mod {
   @JSImport("@peculiar/json-schema", "KeyError")
   @js.native
   open class KeyError protected ()
-    extends typings.peculiarJsonSchema.errorsMod.KeyError {
+    extends typings.peculiarJsonSchema.buildTypesErrorsMod.KeyError {
     def this(schema: IJsonSchema, keys: js.Array[String]) = this()
     def this(schema: IJsonSchema, keys: js.Array[String], errors: IKeyErrors) = this()
   }
@@ -133,7 +133,7 @@ object mod {
   @JSImport("@peculiar/json-schema", "ParserError")
   @js.native
   open class ParserError protected ()
-    extends typings.peculiarJsonSchema.errorsMod.ParserError {
+    extends typings.peculiarJsonSchema.buildTypesErrorsMod.ParserError {
     def this(schema: IJsonSchema, message: String) = this()
     def this(schema: IJsonSchema, message: String, innerError: js.Error) = this()
   }
@@ -141,7 +141,7 @@ object mod {
   @JSImport("@peculiar/json-schema", "SerializerError")
   @js.native
   open class SerializerError protected ()
-    extends typings.peculiarJsonSchema.errorsMod.SerializerError {
+    extends typings.peculiarJsonSchema.buildTypesErrorsMod.SerializerError {
     def this(schemaName: String, message: String) = this()
     def this(schemaName: String, message: String, innerError: js.Error) = this()
   }
@@ -149,7 +149,7 @@ object mod {
   @JSImport("@peculiar/json-schema", "TransformError")
   @js.native
   open class TransformError protected ()
-    extends typings.peculiarJsonSchema.errorsMod.TransformError {
+    extends typings.peculiarJsonSchema.buildTypesErrorsMod.TransformError {
     def this(schema: IJsonSchema, message: String) = this()
     def this(schema: IJsonSchema, message: String, innerError: js.Error) = this()
   }
@@ -157,7 +157,7 @@ object mod {
   @JSImport("@peculiar/json-schema", "ValidationError")
   @js.native
   open class ValidationError protected ()
-    extends typings.peculiarJsonSchema.errorsMod.ValidationError {
+    extends typings.peculiarJsonSchema.buildTypesErrorsMod.ValidationError {
     def this(message: String) = this()
     def this(message: String, innerError: js.Error) = this()
   }

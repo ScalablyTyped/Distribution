@@ -1,6 +1,6 @@
 package typings.vsoNodeApi.anon
 
-import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemTypeColor
+import typings.vsoNodeApi.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

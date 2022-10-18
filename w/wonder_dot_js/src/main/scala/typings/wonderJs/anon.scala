@@ -1,9 +1,9 @@
 package typings.wonderJs
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.wonderJs.escreensizeMod.EScreenSize
-import typings.wonderJs.face3Mod.Face3
-import typings.wonderJs.mainMod.Main
+import typings.wonderJs.distEs2015CoreMainMod.Main
+import typings.wonderJs.distEs2015DeviceEscreensizeMod.EScreenSize
+import typings.wonderJs.distEs2015StructureFace3Mod.Face3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

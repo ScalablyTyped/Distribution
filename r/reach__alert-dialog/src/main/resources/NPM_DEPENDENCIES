@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@reach/alert-dialog" : "0.17.0"
+      "@reach/alert-dialog" : "0.18.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@reach/alert-dialog" : "0.17.0"
+      "@reach/alert-dialog" : "0.18.0"
     }
   ],
   "compile-devDependencies" : [

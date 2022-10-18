@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "StructuredList")
 @js.native
 open class StructuredList protected ()
-  extends typings.carbonComponents.componentsMod.StructuredList {
+  extends typings.carbonComponents.globalsJsComponentsMod.StructuredList {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialStructuredListOpti) = this()
 }

@@ -19,9 +19,9 @@ import typings.jestWatcher.anon.Stdin
 import typings.jestWatcher.anon.Stdout
 import typings.jestWatcher.jestWatcherStrings.watch
 import typings.jestWatcher.jestWatcherStrings.watchAll
+import typings.node.NodeJS.WritableStream
 import typings.node.processMod.global.NodeJS.ReadStream
 import typings.node.processMod.global.NodeJS.WriteStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,9 +32,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("jest-watcher", "BaseWatchPlugin")
+  /* note: abstract class */ @JSImport("jest-watcher", "BaseWatchPlugin")
   @js.native
-  abstract class BaseWatchPlugin protected ()
+  open class BaseWatchPlugin protected ()
     extends StObject
        with WatchPlugin {
     def this(hasStdinStdout: Stdin) = this()
@@ -60,11 +60,11 @@ object mod {
   @js.native
   open class JestHook () extends StObject {
     
-    /* private */ var _emitter: Any = js.native
+    /* private */ val _emitter: Any = js.native
     
-    /* private */ var _listeners: Any = js.native
+    /* private */ val _listeners: Any = js.native
     
-    /* private */ var _subscriber: Any = js.native
+    /* private */ val _subscriber: Any = js.native
     
     def getEmitter(): ReadonlyJestHookEmitter = js.native
     
@@ -130,11 +130,11 @@ object mod {
     inline def ESCAPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ESCAPE")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("jest-watcher", "PatternPrompt")
+  /* note: abstract class */ @JSImport("jest-watcher", "PatternPrompt")
   @js.native
-  abstract class PatternPrompt protected () extends StObject {
-    def this(_pipe: WritableStream[Any], _prompt: Prompt) = this()
-    def this(_pipe: WritableStream[Any], _prompt: Prompt, _entityName: String) = this()
+  open class PatternPrompt protected () extends StObject {
+    def this(_pipe: WritableStream, _prompt: Prompt) = this()
+    def this(_pipe: WritableStream, _prompt: Prompt, _entityName: String) = this()
     
     /* protected */ var _currentUsageRows: Double = js.native
     
@@ -142,7 +142,7 @@ object mod {
     
     /* protected */ def _onChange(_pattern: String, _options: ScrollOptions2): Unit = js.native
     
-    /* protected */ var _pipe: WritableStream[Any] = js.native
+    /* protected */ var _pipe: WritableStream = js.native
     
     /* protected */ var _prompt: Prompt = js.native
     
@@ -162,7 +162,7 @@ object mod {
     
     /* private */ var _onChange: Any = js.native
     
-    /* private */ var _onResize: Any = js.native
+    /* private */ val _onResize: Any = js.native
     
     /* private */ var _onSuccess: Any = js.native
     
@@ -195,7 +195,7 @@ object mod {
   open class TestWatcher protected () extends StObject {
     def this(hasIsWatchMode: IsWatchMode) = this()
     
-    /* private */ var _isWatchMode: Any = js.native
+    /* private */ val _isWatchMode: Any = js.native
     
     def isInterrupted(): Boolean = js.native
     
@@ -206,9 +206,9 @@ object mod {
     var state: State = js.native
   }
   
-  inline def printPatternCaret(pattern: String, pipe: WritableStream[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printPatternCaret")(pattern.asInstanceOf[js.Any], pipe.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def printPatternCaret(pattern: String, pipe: WritableStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printPatternCaret")(pattern.asInstanceOf[js.Any], pipe.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def printRestoredPatternCaret(pattern: String, currentUsageRows: Double, pipe: WritableStream[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printRestoredPatternCaret")(pattern.asInstanceOf[js.Any], currentUsageRows.asInstanceOf[js.Any], pipe.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def printRestoredPatternCaret(pattern: String, currentUsageRows: Double, pipe: WritableStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printRestoredPatternCaret")(pattern.asInstanceOf[js.Any], currentUsageRows.asInstanceOf[js.Any], pipe.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Inlined std.Partial<std.Pick<@jest/types.@jest/types.GlobalConfig, 'bail' | 'changedSince' | 'collectCoverage' | 'collectCoverageFrom' | 'coverageDirectory' | 'coverageReporters' | 'findRelatedTests' | 'nonFlagArgs' | 'notify' | 'notifyMode' | 'onlyFailures' | 'reporters' | 'testNamePattern' | 'testPathPattern' | 'updateSnapshot' | 'verbose'> & {  mode :'watch' | 'watchAll'}> */
   trait AllowedConfigOptions extends StObject {

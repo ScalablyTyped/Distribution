@@ -1,9 +1,9 @@
 package typings.browserfs.anon
 
-import typings.browserfs.fileSystemMod.BFSOneArgCallback
-import typings.browserfs.fileSystemMod.FileSystem
-import typings.browserfs.fileSystemMod.FileSystemConstructor
-import typings.browserfs.utilMod.Arrayish
+import typings.browserfs.distNodeCoreFileSystemMod.BFSOneArgCallback
+import typings.browserfs.distNodeCoreFileSystemMod.FileSystem
+import typings.browserfs.distNodeCoreFileSystemMod.FileSystemConstructor
+import typings.browserfs.distNodeCoreUtilMod.Arrayish
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

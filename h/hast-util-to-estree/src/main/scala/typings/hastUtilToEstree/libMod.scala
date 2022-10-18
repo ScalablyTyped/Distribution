@@ -13,7 +13,7 @@ import typings.estreeJsx.mod.JSXFragment
 import typings.estreeJsx.mod.JSXOpeningElement
 import typings.estreeJsx.mod.JSXSpreadAttribute
 import typings.hastUtilToEstree.hastUtilToEstreeStrings.children
-import typings.propertyInformation.schemaMod.Schema
+import typings.propertyInformation.libUtilSchemaMod.Schema
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

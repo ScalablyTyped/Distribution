@@ -1,33 +1,32 @@
 package typings.fpTs.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.altMod.Alt1
 import typings.fpTs.anon.Fn26
-import typings.fpTs.applicativeMod.Applicative1
-import typings.fpTs.applyMod.Apply1
-import typings.fpTs.chainMod.Chain1
-import typings.fpTs.comonadMod.Comonad1
-import typings.fpTs.endomorphismMod.Endomorphism
-import typings.fpTs.eqMod.Eq
-import typings.fpTs.foldableMod.Foldable1
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndex1
-import typings.fpTs.functionMod.Lazy
-import typings.fpTs.functorMod.Functor1
-import typings.fpTs.functorWithIndexMod.FunctorWithIndex1
-import typings.fpTs.monadMod.Monad1
-import typings.fpTs.optionMod.Option_
-import typings.fpTs.ordMod.Ord_
-import typings.fpTs.pointedMod.Pointed1
-import typings.fpTs.predicateMod.Predicate
-import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
-import typings.fpTs.refinementMod.Refinement
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.showMod.Show
-import typings.fpTs.traversableMod.PipeableTraverse1
-import typings.fpTs.traversableMod.Sequence1
-import typings.fpTs.traversableMod.Traversable1
-import typings.fpTs.traversableWithIndexMod.PipeableTraverseWithIndex1
-import typings.fpTs.traversableWithIndexMod.TraversableWithIndex1
+import typings.fpTs.libAltMod.Alt1
+import typings.fpTs.libApplicativeMod.Applicative1
+import typings.fpTs.libApplyMod.Apply1
+import typings.fpTs.libChainMod.Chain1
+import typings.fpTs.libComonadMod.Comonad1
+import typings.fpTs.libEndomorphismMod.Endomorphism
+import typings.fpTs.libEqMod.Eq
+import typings.fpTs.libFoldableMod.Foldable1
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex1
+import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctorMod.Functor1
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndex1
+import typings.fpTs.libMonadMod.Monad1
+import typings.fpTs.libOptionMod.Option_
+import typings.fpTs.libOrdMod.Ord_
+import typings.fpTs.libPointedMod.Pointed1
+import typings.fpTs.libPredicateMod.Predicate
+import typings.fpTs.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
+import typings.fpTs.libRefinementMod.Refinement
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libShowMod.Show
+import typings.fpTs.libTraversableMod.PipeableTraverse1
+import typings.fpTs.libTraversableMod.Sequence1
+import typings.fpTs.libTraversableMod.Traversable1
+import typings.fpTs.libTraversableWithIndexMod.PipeableTraverseWithIndex1
+import typings.fpTs.libTraversableWithIndexMod.TraversableWithIndex1
 import typings.std.Exclude
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -42,23 +41,23 @@ object readonlyNonEmptyArray {
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.Alt")
   @js.native
-  val Alt_ : Alt1[typings.fpTs.readonlyNonEmptyArrayMod.URI] = js.native
+  val Alt_ : Alt1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.Applicative")
   @js.native
-  val Applicative: Applicative1[typings.fpTs.readonlyNonEmptyArrayMod.URI] = js.native
+  val Applicative: Applicative1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.Apply")
   @js.native
-  val Apply: Apply1[typings.fpTs.readonlyNonEmptyArrayMod.URI] = js.native
+  val Apply: Apply1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.Chain")
   @js.native
-  val Chain_ : Chain1[typings.fpTs.readonlyNonEmptyArrayMod.URI] = js.native
+  val Chain_ : Chain1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.Comonad")
   @js.native
-  val Comonad: Comonad1[typings.fpTs.readonlyNonEmptyArrayMod.URI] = js.native
+  val Comonad: Comonad1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.Do")
   @js.native
@@ -66,35 +65,35 @@ object readonlyNonEmptyArray {
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.Foldable")
   @js.native
-  val Foldable: Foldable1[typings.fpTs.readonlyNonEmptyArrayMod.URI] = js.native
+  val Foldable: Foldable1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.FoldableWithIndex")
   @js.native
-  val FoldableWithIndex: FoldableWithIndex1[typings.fpTs.readonlyNonEmptyArrayMod.URI, Double] = js.native
+  val FoldableWithIndex: FoldableWithIndex1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI, Double] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.Functor")
   @js.native
-  val Functor: Functor1[typings.fpTs.readonlyNonEmptyArrayMod.URI] = js.native
+  val Functor: Functor1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.FunctorWithIndex")
   @js.native
-  val FunctorWithIndex: FunctorWithIndex1[typings.fpTs.readonlyNonEmptyArrayMod.URI, Double] = js.native
+  val FunctorWithIndex: FunctorWithIndex1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI, Double] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.Monad")
   @js.native
-  val Monad: Monad1[typings.fpTs.readonlyNonEmptyArrayMod.URI] = js.native
+  val Monad: Monad1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.Pointed")
   @js.native
-  val Pointed: Pointed1[typings.fpTs.readonlyNonEmptyArrayMod.URI] = js.native
+  val Pointed: Pointed1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.Traversable")
   @js.native
-  val Traversable: Traversable1[typings.fpTs.readonlyNonEmptyArrayMod.URI] = js.native
+  val Traversable: Traversable1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.TraversableWithIndex")
   @js.native
-  val TraversableWithIndex: TraversableWithIndex1[typings.fpTs.readonlyNonEmptyArrayMod.URI, Double] = js.native
+  val TraversableWithIndex: TraversableWithIndex1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI, Double] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.URI")
   @js.native
@@ -117,16 +116,12 @@ object readonlyNonEmptyArray {
   inline def apS[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], fb: ReadonlyNonEmptyArray_[B]): js.Function1[
     /* fa */ ReadonlyNonEmptyArray_[A], 
     ReadonlyNonEmptyArray_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apS")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ ReadonlyNonEmptyArray_[A], 
     ReadonlyNonEmptyArray_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -135,32 +130,24 @@ object readonlyNonEmptyArray {
   inline def bind[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, ReadonlyNonEmptyArray_[B]]): js.Function1[
     /* ma */ ReadonlyNonEmptyArray_[A], 
     ReadonlyNonEmptyArray_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* ma */ ReadonlyNonEmptyArray_[A], 
     ReadonlyNonEmptyArray_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
   inline def bindTo[N /* <: String */](name: N): js.Function1[
     /* fa */ ReadonlyNonEmptyArray_[Any], 
     ReadonlyNonEmptyArray_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindTo")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* fa */ ReadonlyNonEmptyArray_[Any], 
     ReadonlyNonEmptyArray_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ]]
   
@@ -268,6 +255,18 @@ object readonlyNonEmptyArray {
   
   inline def last[A](as: ReadonlyNonEmptyArray_[A]): A = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(as.asInstanceOf[js.Any]).asInstanceOf[A]
   
+  inline def let[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, B]): js.Function1[
+    /* fa */ ReadonlyNonEmptyArray_[A], 
+    ReadonlyNonEmptyArray_[
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("let")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* fa */ ReadonlyNonEmptyArray_[A], 
+    ReadonlyNonEmptyArray_[
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ]]
+  
   inline def makeBy[A](f: js.Function1[/* i */ Double, A]): js.Function1[/* n */ Double, ReadonlyNonEmptyArray_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBy")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* n */ Double, ReadonlyNonEmptyArray_[A]]]
   
   inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], ReadonlyNonEmptyArray_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], ReadonlyNonEmptyArray_[B]]]
@@ -288,12 +287,7 @@ object readonlyNonEmptyArray {
   
   inline def modifyLast[A](f: Endomorphism[A]): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], ReadonlyNonEmptyArray_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("modifyLast")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], ReadonlyNonEmptyArray_[A]]]
   
-  @JSImport("fp-ts", "readonlyNonEmptyArray.of")
-  @js.native
-  val of: js.Function1[
-    /* a */ Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
-  ] = js.native
+  inline def of[A](a: A): ReadonlyNonEmptyArray_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any]).asInstanceOf[ReadonlyNonEmptyArray_[A]]
   
   inline def prependAll[A](middle: A): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], ReadonlyNonEmptyArray_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("prependAll")(middle.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], ReadonlyNonEmptyArray_[A]]]
   
@@ -303,7 +297,7 @@ object readonlyNonEmptyArray {
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.readonlyNonEmptyArray")
   @js.native
-  val readonlyNonEmptyArray: Monad1[typings.fpTs.readonlyNonEmptyArrayMod.URI] & Comonad1[typings.fpTs.readonlyNonEmptyArrayMod.URI] & (TraversableWithIndex1[typings.fpTs.readonlyNonEmptyArrayMod.URI, Double]) & (FunctorWithIndex1[typings.fpTs.readonlyNonEmptyArrayMod.URI, Double]) & (FoldableWithIndex1[typings.fpTs.readonlyNonEmptyArrayMod.URI, Double]) & Alt1[typings.fpTs.readonlyNonEmptyArrayMod.URI] = js.native
+  val readonlyNonEmptyArray: Monad1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] & Comonad1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] & (TraversableWithIndex1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI, Double]) & (FunctorWithIndex1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI, Double]) & (FoldableWithIndex1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI, Double]) & Alt1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] = js.native
   
   inline def reduce[A, B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], B]]
   
@@ -321,7 +315,7 @@ object readonlyNonEmptyArray {
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.sequence")
   @js.native
-  val sequence: Sequence1[typings.fpTs.readonlyNonEmptyArrayMod.URI] = js.native
+  val sequence: Sequence1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] = js.native
   
   inline def snoc[A](init: js.Array[A], end: A): ReadonlyNonEmptyArray_[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("snoc")(init.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[ReadonlyNonEmptyArray_[A]]
   
@@ -341,11 +335,11 @@ object readonlyNonEmptyArray {
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.traverse")
   @js.native
-  val traverse: PipeableTraverse1[typings.fpTs.readonlyNonEmptyArrayMod.URI] = js.native
+  val traverse: PipeableTraverse1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyNonEmptyArray.traverseWithIndex")
   @js.native
-  val traverseWithIndex: PipeableTraverseWithIndex1[typings.fpTs.readonlyNonEmptyArrayMod.URI, Double] = js.native
+  val traverseWithIndex: PipeableTraverseWithIndex1[typings.fpTs.libReadonlyNonEmptyArrayMod.URI, Double] = js.native
   
   inline def unappend[A](as: ReadonlyNonEmptyArray_[A]): js.Tuple2[js.Array[A], A] = ^.asInstanceOf[js.Dynamic].applyDynamic("unappend")(as.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[A], A]]
   
@@ -382,6 +376,7 @@ object readonlyNonEmptyArray {
     f: js.Function2[/* a */ A, /* b */ B, C]
   ): ReadonlyNonEmptyArray_[C] = (^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(as.asInstanceOf[js.Any], bs.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[ReadonlyNonEmptyArray_[C]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the accelerometer reading–changed event. */
-@JSGlobal("Windows.Devices.Sensors.AccelerometerReadingChangedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.AccelerometerReadingChangedEventArgs")
 @js.native
-abstract class AccelerometerReadingChangedEventArgs ()
+open class AccelerometerReadingChangedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.AccelerometerReadingChangedEventArgs {
   

@@ -1,8 +1,8 @@
 package typings.broadcastChannel
 
 import typings.broadcastChannel.broadcastChannelBooleans.`false`
-import typings.broadcastChannel.broadcastChannelMod.BroadcastChannelOptions
-import typings.broadcastChannel.leaderElectionMod.CreateFunction
+import typings.broadcastChannel.typesBroadcastChannelMod.BroadcastChannelOptions
+import typings.broadcastChannel.typesLeaderElectionMod.CreateFunction
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +17,7 @@ object mod {
   @JSImport("broadcast-channel", "BroadcastChannel")
   @js.native
   open class BroadcastChannel[T] protected ()
-    extends typings.broadcastChannel.broadcastChannelMod.BroadcastChannel[T] {
+    extends typings.broadcastChannel.typesBroadcastChannelMod.BroadcastChannel[T] {
     def this(name: String) = this()
     def this(name: String, opts: BroadcastChannelOptions) = this()
   }
@@ -25,11 +25,11 @@ object mod {
   @JSImport("broadcast-channel", "LeaderElector")
   @js.native
   open class LeaderElector ()
-    extends typings.broadcastChannel.leaderElectionMod.LeaderElector
+    extends typings.broadcastChannel.typesLeaderElectionMod.LeaderElector
   
   @JSImport("broadcast-channel", "OPEN_BROADCAST_CHANNELS")
   @js.native
-  val OPEN_BROADCAST_CHANNELS: Set[typings.broadcastChannel.broadcastChannelMod.BroadcastChannel[Any]] = js.native
+  val OPEN_BROADCAST_CHANNELS: Set[typings.broadcastChannel.typesBroadcastChannelMod.BroadcastChannel[Any]] = js.native
   
   inline def clearNodeFolder(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearNodeFolder")().asInstanceOf[js.Promise[Boolean]]
   inline def clearNodeFolder(opts: BroadcastChannelOptions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearNodeFolder")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]

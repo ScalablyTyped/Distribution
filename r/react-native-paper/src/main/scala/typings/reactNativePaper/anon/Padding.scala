@@ -33,7 +33,7 @@ trait Padding extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * Type of the helper text.
@@ -48,7 +48,7 @@ trait Padding extends StObject {
 object Padding {
   
   inline def apply(
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme,
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme,
     `type`: error | info
   ): Padding = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
@@ -76,7 +76,7 @@ object Padding {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setType(value: error | info): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

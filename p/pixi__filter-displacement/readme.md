@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__filter-displacement
 
-Typings are for version 6.5.4
+Typings are for version 6.5.6
 
 ## Library description:
 Filter that allows offsetting of pixel values to create warping effects

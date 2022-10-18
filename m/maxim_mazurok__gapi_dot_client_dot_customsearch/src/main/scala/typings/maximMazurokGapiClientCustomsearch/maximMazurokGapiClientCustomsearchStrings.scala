@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientCustomsearchStrings {
   
   @js.native
-  sealed trait Result extends StObject
-  inline def Result: Result = "Result".asInstanceOf[Result]
-  
-  @js.native
-  sealed trait Search extends StObject
-  inline def Search: Search = "Search".asInstanceOf[Search]
-  
-  @js.native
   sealed trait customsearch extends StObject
   inline def customsearch: customsearch = "customsearch".asInstanceOf[customsearch]
   

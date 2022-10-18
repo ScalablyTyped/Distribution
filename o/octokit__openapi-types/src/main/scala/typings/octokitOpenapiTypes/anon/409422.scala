@@ -7,52 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `409422` extends StObject {
   
   /** Response */
-  var `200`: Content220
+  var `200`: ContentApplicationjsonCommitContent
   
-  var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+  /** Response */
+  var `201`: ContentApplicationjsonCommitContent
   
-  var `409`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['conflict'] */ js.Any
+  var `404`: Content6
   
-  var `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
+  var `409`: Content6
   
-  var `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
+  var `422`: Content8
 }
 object `409422` {
   
   inline def apply(
-    `200`: Content220,
-    `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any,
-    `409`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['conflict'] */ js.Any,
-    `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any,
-    `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
+    `200`: ContentApplicationjsonCommitContent,
+    `201`: ContentApplicationjsonCommitContent,
+    `404`: Content6,
+    `409`: Content6,
+    `422`: Content8
   ): `409422` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+    __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
     __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
     __obj.updateDynamic("409")(`409`.asInstanceOf[js.Any])
     __obj.updateDynamic("422")(`422`.asInstanceOf[js.Any])
-    __obj.updateDynamic("503")(`503`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`409422`]
   }
   
   extension [Self <: `409422`](x: Self) {
     
-    inline def set200(value: Content220): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: ContentApplicationjsonCommitContent): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set404(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
-    ): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set201(value: ContentApplicationjsonCommitContent): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
-    inline def set409(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['conflict'] */ js.Any
-    ): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
+    inline def set404(value: Content6): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set422(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
-    ): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set409(value: Content6): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
     
-    inline def set503(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
-    ): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
+    inline def set422(value: Content8): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

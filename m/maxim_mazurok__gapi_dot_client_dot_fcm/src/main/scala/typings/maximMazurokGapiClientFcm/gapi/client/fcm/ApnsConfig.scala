@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +15,7 @@ trait ApnsConfig extends StObject {
     * `apns-expiration` and `apns-priority`.
     */
   var headers: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -28,9 +25,7 @@ trait ApnsConfig extends StObject {
     * `apns-priority` of 10 if not explicitly set.
     */
   var payload: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object ApnsConfig {
@@ -47,17 +42,13 @@ object ApnsConfig {
     inline def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
     
     inline def setHeaders(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     inline def setPayload(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)

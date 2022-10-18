@@ -15,7 +15,7 @@ trait Static[T /* <: Ractive[T] */]
      with Instantiable1[/* opts */ InitOpts[T], T] {
   
   /** The parent constructor used to create this constructor. */
-  var Parent: Static[Ractive[Ractive[Any]]] = js.native
+  var Parent: Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
   
   /** The Ractive constructor used to create this constructor. */
   var Ractive: Instantiable = js.native
@@ -40,7 +40,7 @@ trait Static[T /* <: Ractive[T] */]
   def extend[A /* <: ExtendOpts[T] & ValueMap */, U /* <: js.Array[ExtendOpts[T] & ValueMap] */](
     opts: A,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param more because its type U is not an array type */ more: U
-  ): Static[T & (Merge[A, U, ExtendOpts[Ractive[Ractive[Any]]]])] = js.native
+  ): Static[T & (Merge[A, U, ExtendOpts[Ractive[/* ractive.ractive.Ractive<any> */ Any]]])] = js.native
   
   /** Create a new component with this constructor as a starting point using the given constructor. */
   def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V]): Static[Ractive[U] & U] = js.native
@@ -84,5 +84,5 @@ trait Static[T /* <: Ractive[T] */]
   var transitions: Registry[Transition] = js.native
   
   /** Install one or more plugins on the component.  */
-  def use(plugins: Plugin*): Static[Ractive[Ractive[Any]]] = js.native
+  def use(plugins: Plugin*): Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
 }

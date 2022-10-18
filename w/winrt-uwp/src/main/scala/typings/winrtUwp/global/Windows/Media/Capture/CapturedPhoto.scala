@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a photo taken from a capture device such as a webcam attached. */
-@JSGlobal("Windows.Media.Capture.CapturedPhoto")
+/* note: abstract class */ @JSGlobal("Windows.Media.Capture.CapturedPhoto")
 @js.native
-abstract class CapturedPhoto ()
+open class CapturedPhoto ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.CapturedPhoto {
   

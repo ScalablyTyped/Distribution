@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
+import typings.fluentuiReactFocus.libComponentsFocusZoneFocusZoneDottypesMod.IFocusZoneProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

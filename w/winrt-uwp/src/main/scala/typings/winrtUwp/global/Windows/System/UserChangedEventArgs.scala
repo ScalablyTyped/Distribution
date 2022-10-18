@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a user changed event. */
-@JSGlobal("Windows.System.UserChangedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.System.UserChangedEventArgs")
 @js.native
-abstract class UserChangedEventArgs ()
+open class UserChangedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.System.UserChangedEventArgs {
   

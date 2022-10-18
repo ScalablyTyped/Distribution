@@ -1,6 +1,6 @@
 package typings.jupyterlabCells
 
-import typings.jupyterlabCells.celldragutilsMod.CellDragUtils.ICellTargetArea
+import typings.jupyterlabCells.libCelldragutilsMod.CellDragUtils.ICellTargetArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.awsSdkSha256TreeHash
 
-import typings.awsSdkTypes.cryptoMod.Hash
-import typings.awsSdkTypes.cryptoMod.HashConstructor
-import typings.awsSdkTypes.utilMod.Decoder
+import typings.awsSdkTypes.distTypesCryptoMod.Hash
+import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
+import typings.awsSdkTypes.distTypesUtilMod.Decoder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

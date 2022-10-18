@@ -2,7 +2,6 @@ package typings.reactPrimitives
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.reactNative.anon.TypeofImage
 import typings.reactNative.anon.Typeof_View
@@ -324,8 +323,8 @@ object mod {
     inline def create[T /* <: NamedStyles[Any | T] */](styles: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(styles.asInstanceOf[js.Any]).asInstanceOf[T]
     inline def create[T /* <: NamedStyles[Any | T] */](styles: NamedStyles[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(styles.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    inline def flatten[T](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[T]
-    inline def flatten[T](style: StyleProp[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(style.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def flatten[T](): /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any]
+    inline def flatten[T](style: StyleProp[T]): /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(style.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any]
     
     @JSImport("react-primitives", "StyleSheet.hairlineWidth")
     @js.native
@@ -395,9 +394,7 @@ object mod {
     
     @JSName("select")
     def select_default[T](
-      specifics: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T}
-      */ typings.reactPrimitives.reactPrimitivesStrings.PlatformStatic & TopLevel[Any]
+      specifics: /* import warning: importer.ImportType#apply Failed type conversion: {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T} */ js.Any
     ): T
   }
   object PlatformStatic {
@@ -405,9 +402,7 @@ object mod {
     inline def apply(
       OS: PlatformOSType,
       Version: Double | String,
-      select: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T}
-      */ typings.reactPrimitives.reactPrimitivesStrings.PlatformStatic & TopLevel[Any] => Any
+      select: /* import warning: importer.ImportType#apply Failed type conversion: {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T} */ js.Any => Any
     ): PlatformStatic = {
       val __obj = js.Dynamic.literal(OS = OS.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], select = js.Any.fromFunction1(select))
       __obj.asInstanceOf[PlatformStatic]
@@ -418,9 +413,7 @@ object mod {
       inline def setOS(value: PlatformOSType): Self = StObject.set(x, "OS", value.asInstanceOf[js.Any])
       
       inline def setSelect(
-        value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T}
-        */ typings.reactPrimitives.reactPrimitivesStrings.PlatformStatic & TopLevel[Any] => Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T} */ js.Any => Any
       ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setVersion(value: Double | String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])

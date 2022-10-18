@@ -3,7 +3,7 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.requestParametersMod.RequestParameters
+import typings.octokitTypes.distTypesRequestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,7 +29,7 @@ trait AddCollaborator extends StObject {
     * Adds a collaborator to an organization project and sets their permission level. You must be an organization owner or a project `admin` to add a collaborator.
     */
   @JSName("addCollaborator")
-  var addCollaborator_Original: `442`
+  var addCollaborator_Original: `456`
   
   def createCard(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /projects/columns/{column_id}/cards']['response'] */ js.Any
@@ -43,7 +43,7 @@ trait AddCollaborator extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /projects/columns/{column_id}/cards']['response'] */ js.Any
   ]
   @JSName("createCard")
-  var createCard_Original: `443`
+  var createCard_Original: `457`
   
   def createColumn(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /projects/{project_id}/columns']['response'] */ js.Any
@@ -57,7 +57,7 @@ trait AddCollaborator extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /projects/{project_id}/columns']['response'] */ js.Any
   ]
   @JSName("createColumn")
-  var createColumn_Original: `444`
+  var createColumn_Original: `458`
   
   /**
     * Creates a user project board. Returns a `410 Gone` status if the user does not have existing classic projects. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
@@ -77,7 +77,7 @@ trait AddCollaborator extends StObject {
     * Creates a user project board. Returns a `410 Gone` status if the user does not have existing classic projects. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("createForAuthenticatedUser")
-  var createForAuthenticatedUser_Original: `445`
+  var createForAuthenticatedUser_Original: `459`
   
   /**
     * Creates an organization project board. Returns a `410 Gone` status if projects are disabled in the organization or if the organization does not have existing classic projects. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
@@ -97,7 +97,7 @@ trait AddCollaborator extends StObject {
     * Creates an organization project board. Returns a `410 Gone` status if projects are disabled in the organization or if the organization does not have existing classic projects. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("createForOrg")
-  var createForOrg_Original: `446`
+  var createForOrg_Original: `460`
   
   /**
     * Creates a repository project board. Returns a `410 Gone` status if projects are disabled in the repository or if the repository does not have existing classic projects. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
@@ -117,7 +117,7 @@ trait AddCollaborator extends StObject {
     * Creates a repository project board. Returns a `410 Gone` status if projects are disabled in the repository or if the repository does not have existing classic projects. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("createForRepo")
-  var createForRepo_Original: `447`
+  var createForRepo_Original: `461`
   
   /**
     * Deletes a project board. Returns a `404 Not Found` status if projects are disabled.
@@ -146,7 +146,7 @@ trait AddCollaborator extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /projects/columns/cards/{card_id}']['response'] */ js.Any
   ]
   @JSName("deleteCard")
-  var deleteCard_Original: `449`
+  var deleteCard_Original: `463`
   
   def deleteColumn(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /projects/columns/{column_id}']['response'] */ js.Any
@@ -160,13 +160,13 @@ trait AddCollaborator extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /projects/columns/{column_id}']['response'] */ js.Any
   ]
   @JSName("deleteColumn")
-  var deleteColumn_Original: `450`
+  var deleteColumn_Original: `464`
   
   /**
     * Deletes a project board. Returns a `404 Not Found` status if projects are disabled.
     */
   @JSName("delete")
-  var delete_Original: `448`
+  var delete_Original: `462`
   
   /**
     * Gets a project by its `id`. Returns a `404 Not Found` status if projects are disabled. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
@@ -195,7 +195,7 @@ trait AddCollaborator extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /projects/columns/cards/{card_id}']['response'] */ js.Any
   ]
   @JSName("getCard")
-  var getCard_Original: `452`
+  var getCard_Original: `466`
   
   def getColumn(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /projects/columns/{column_id}']['response'] */ js.Any
@@ -209,7 +209,7 @@ trait AddCollaborator extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /projects/columns/{column_id}']['response'] */ js.Any
   ]
   @JSName("getColumn")
-  var getColumn_Original: `453`
+  var getColumn_Original: `467`
   
   /**
     * Returns the collaborator's permission level for an organization project. Possible values for the `permission` key: `admin`, `write`, `read`, `none`. You must be an organization owner or a project `admin` to review a user's permission level.
@@ -229,13 +229,13 @@ trait AddCollaborator extends StObject {
     * Returns the collaborator's permission level for an organization project. Possible values for the `permission` key: `admin`, `write`, `read`, `none`. You must be an organization owner or a project `admin` to review a user's permission level.
     */
   @JSName("getPermissionForUser")
-  var getPermissionForUser_Original: `454`
+  var getPermissionForUser_Original: `468`
   
   /**
     * Gets a project by its `id`. Returns a `404 Not Found` status if projects are disabled. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("get")
-  var get_Original: `451`
+  var get_Original: `465`
   
   def listCards(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /projects/columns/{column_id}/cards']['response'] */ js.Any
@@ -249,7 +249,7 @@ trait AddCollaborator extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /projects/columns/{column_id}/cards']['response'] */ js.Any
   ]
   @JSName("listCards")
-  var listCards_Original: `455`
+  var listCards_Original: `469`
   
   /**
     * Lists the collaborators for an organization project. For a project, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners. You must be an organization owner or a project `admin` to list collaborators.
@@ -269,7 +269,7 @@ trait AddCollaborator extends StObject {
     * Lists the collaborators for an organization project. For a project, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners. You must be an organization owner or a project `admin` to list collaborators.
     */
   @JSName("listCollaborators")
-  var listCollaborators_Original: `456`
+  var listCollaborators_Original: `470`
   
   def listColumns(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /projects/{project_id}/columns']['response'] */ js.Any
@@ -283,7 +283,7 @@ trait AddCollaborator extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /projects/{project_id}/columns']['response'] */ js.Any
   ]
   @JSName("listColumns")
-  var listColumns_Original: `457`
+  var listColumns_Original: `471`
   
   /**
     * Lists the projects in an organization. Returns a `404 Not Found` status if projects are disabled in the organization. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
@@ -303,7 +303,7 @@ trait AddCollaborator extends StObject {
     * Lists the projects in an organization. Returns a `404 Not Found` status if projects are disabled in the organization. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("listForOrg")
-  var listForOrg_Original: `458`
+  var listForOrg_Original: `472`
   
   /**
     * Lists the projects in a repository. Returns a `404 Not Found` status if projects are disabled in the repository. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
@@ -323,7 +323,7 @@ trait AddCollaborator extends StObject {
     * Lists the projects in a repository. Returns a `404 Not Found` status if projects are disabled in the repository. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("listForRepo")
-  var listForRepo_Original: `459`
+  var listForRepo_Original: `473`
   
   def listForUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/projects']['response'] */ js.Any
@@ -337,7 +337,7 @@ trait AddCollaborator extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/projects']['response'] */ js.Any
   ]
   @JSName("listForUser")
-  var listForUser_Original: `460`
+  var listForUser_Original: `474`
   
   def moveCard(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /projects/columns/cards/{card_id}/moves']['response'] */ js.Any
@@ -351,7 +351,7 @@ trait AddCollaborator extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /projects/columns/cards/{card_id}/moves']['response'] */ js.Any
   ]
   @JSName("moveCard")
-  var moveCard_Original: `461`
+  var moveCard_Original: `475`
   
   def moveColumn(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /projects/columns/{column_id}/moves']['response'] */ js.Any
@@ -365,7 +365,7 @@ trait AddCollaborator extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /projects/columns/{column_id}/moves']['response'] */ js.Any
   ]
   @JSName("moveColumn")
-  var moveColumn_Original: `462`
+  var moveColumn_Original: `476`
   
   /**
     * Removes a collaborator from an organization project. You must be an organization owner or a project `admin` to remove a collaborator.
@@ -385,7 +385,7 @@ trait AddCollaborator extends StObject {
     * Removes a collaborator from an organization project. You must be an organization owner or a project `admin` to remove a collaborator.
     */
   @JSName("removeCollaborator")
-  var removeCollaborator_Original: `463`
+  var removeCollaborator_Original: `477`
   
   /**
     * Updates a project board's information. Returns a `404 Not Found` status if projects are disabled. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
@@ -414,7 +414,7 @@ trait AddCollaborator extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /projects/columns/cards/{card_id}']['response'] */ js.Any
   ]
   @JSName("updateCard")
-  var updateCard_Original: `465`
+  var updateCard_Original: `479`
   
   def updateColumn(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /projects/columns/{column_id}']['response'] */ js.Any
@@ -428,42 +428,42 @@ trait AddCollaborator extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /projects/columns/{column_id}']['response'] */ js.Any
   ]
   @JSName("updateColumn")
-  var updateColumn_Original: `466`
+  var updateColumn_Original: `480`
   
   /**
     * Updates a project board's information. Returns a `404 Not Found` status if projects are disabled. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("update")
-  var update_Original: `464`
+  var update_Original: `478`
 }
 object AddCollaborator {
   
   inline def apply(
-    addCollaborator: `442`,
-    createCard: `443`,
-    createColumn: `444`,
-    createForAuthenticatedUser: `445`,
-    createForOrg: `446`,
-    createForRepo: `447`,
-    delete: `448`,
-    deleteCard: `449`,
-    deleteColumn: `450`,
-    get: `451`,
-    getCard: `452`,
-    getColumn: `453`,
-    getPermissionForUser: `454`,
-    listCards: `455`,
-    listCollaborators: `456`,
-    listColumns: `457`,
-    listForOrg: `458`,
-    listForRepo: `459`,
-    listForUser: `460`,
-    moveCard: `461`,
-    moveColumn: `462`,
-    removeCollaborator: `463`,
-    update: `464`,
-    updateCard: `465`,
-    updateColumn: `466`
+    addCollaborator: `456`,
+    createCard: `457`,
+    createColumn: `458`,
+    createForAuthenticatedUser: `459`,
+    createForOrg: `460`,
+    createForRepo: `461`,
+    delete: `462`,
+    deleteCard: `463`,
+    deleteColumn: `464`,
+    get: `465`,
+    getCard: `466`,
+    getColumn: `467`,
+    getPermissionForUser: `468`,
+    listCards: `469`,
+    listCollaborators: `470`,
+    listColumns: `471`,
+    listForOrg: `472`,
+    listForRepo: `473`,
+    listForUser: `474`,
+    moveCard: `475`,
+    moveColumn: `476`,
+    removeCollaborator: `477`,
+    update: `478`,
+    updateCard: `479`,
+    updateColumn: `480`
   ): AddCollaborator = {
     val __obj = js.Dynamic.literal(addCollaborator = addCollaborator.asInstanceOf[js.Any], createCard = createCard.asInstanceOf[js.Any], createColumn = createColumn.asInstanceOf[js.Any], createForAuthenticatedUser = createForAuthenticatedUser.asInstanceOf[js.Any], createForOrg = createForOrg.asInstanceOf[js.Any], createForRepo = createForRepo.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], deleteCard = deleteCard.asInstanceOf[js.Any], deleteColumn = deleteColumn.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getCard = getCard.asInstanceOf[js.Any], getColumn = getColumn.asInstanceOf[js.Any], getPermissionForUser = getPermissionForUser.asInstanceOf[js.Any], listCards = listCards.asInstanceOf[js.Any], listCollaborators = listCollaborators.asInstanceOf[js.Any], listColumns = listColumns.asInstanceOf[js.Any], listForOrg = listForOrg.asInstanceOf[js.Any], listForRepo = listForRepo.asInstanceOf[js.Any], listForUser = listForUser.asInstanceOf[js.Any], moveCard = moveCard.asInstanceOf[js.Any], moveColumn = moveColumn.asInstanceOf[js.Any], removeCollaborator = removeCollaborator.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], updateCard = updateCard.asInstanceOf[js.Any], updateColumn = updateColumn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCollaborator]
@@ -471,54 +471,54 @@ object AddCollaborator {
   
   extension [Self <: AddCollaborator](x: Self) {
     
-    inline def setAddCollaborator(value: `442`): Self = StObject.set(x, "addCollaborator", value.asInstanceOf[js.Any])
+    inline def setAddCollaborator(value: `456`): Self = StObject.set(x, "addCollaborator", value.asInstanceOf[js.Any])
     
-    inline def setCreateCard(value: `443`): Self = StObject.set(x, "createCard", value.asInstanceOf[js.Any])
+    inline def setCreateCard(value: `457`): Self = StObject.set(x, "createCard", value.asInstanceOf[js.Any])
     
-    inline def setCreateColumn(value: `444`): Self = StObject.set(x, "createColumn", value.asInstanceOf[js.Any])
+    inline def setCreateColumn(value: `458`): Self = StObject.set(x, "createColumn", value.asInstanceOf[js.Any])
     
-    inline def setCreateForAuthenticatedUser(value: `445`): Self = StObject.set(x, "createForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setCreateForAuthenticatedUser(value: `459`): Self = StObject.set(x, "createForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setCreateForOrg(value: `446`): Self = StObject.set(x, "createForOrg", value.asInstanceOf[js.Any])
+    inline def setCreateForOrg(value: `460`): Self = StObject.set(x, "createForOrg", value.asInstanceOf[js.Any])
     
-    inline def setCreateForRepo(value: `447`): Self = StObject.set(x, "createForRepo", value.asInstanceOf[js.Any])
+    inline def setCreateForRepo(value: `461`): Self = StObject.set(x, "createForRepo", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: `448`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: `462`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setDeleteCard(value: `449`): Self = StObject.set(x, "deleteCard", value.asInstanceOf[js.Any])
+    inline def setDeleteCard(value: `463`): Self = StObject.set(x, "deleteCard", value.asInstanceOf[js.Any])
     
-    inline def setDeleteColumn(value: `450`): Self = StObject.set(x, "deleteColumn", value.asInstanceOf[js.Any])
+    inline def setDeleteColumn(value: `464`): Self = StObject.set(x, "deleteColumn", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: `451`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `465`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setGetCard(value: `452`): Self = StObject.set(x, "getCard", value.asInstanceOf[js.Any])
+    inline def setGetCard(value: `466`): Self = StObject.set(x, "getCard", value.asInstanceOf[js.Any])
     
-    inline def setGetColumn(value: `453`): Self = StObject.set(x, "getColumn", value.asInstanceOf[js.Any])
+    inline def setGetColumn(value: `467`): Self = StObject.set(x, "getColumn", value.asInstanceOf[js.Any])
     
-    inline def setGetPermissionForUser(value: `454`): Self = StObject.set(x, "getPermissionForUser", value.asInstanceOf[js.Any])
+    inline def setGetPermissionForUser(value: `468`): Self = StObject.set(x, "getPermissionForUser", value.asInstanceOf[js.Any])
     
-    inline def setListCards(value: `455`): Self = StObject.set(x, "listCards", value.asInstanceOf[js.Any])
+    inline def setListCards(value: `469`): Self = StObject.set(x, "listCards", value.asInstanceOf[js.Any])
     
-    inline def setListCollaborators(value: `456`): Self = StObject.set(x, "listCollaborators", value.asInstanceOf[js.Any])
+    inline def setListCollaborators(value: `470`): Self = StObject.set(x, "listCollaborators", value.asInstanceOf[js.Any])
     
-    inline def setListColumns(value: `457`): Self = StObject.set(x, "listColumns", value.asInstanceOf[js.Any])
+    inline def setListColumns(value: `471`): Self = StObject.set(x, "listColumns", value.asInstanceOf[js.Any])
     
-    inline def setListForOrg(value: `458`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
+    inline def setListForOrg(value: `472`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListForRepo(value: `459`): Self = StObject.set(x, "listForRepo", value.asInstanceOf[js.Any])
+    inline def setListForRepo(value: `473`): Self = StObject.set(x, "listForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListForUser(value: `460`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
+    inline def setListForUser(value: `474`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
     
-    inline def setMoveCard(value: `461`): Self = StObject.set(x, "moveCard", value.asInstanceOf[js.Any])
+    inline def setMoveCard(value: `475`): Self = StObject.set(x, "moveCard", value.asInstanceOf[js.Any])
     
-    inline def setMoveColumn(value: `462`): Self = StObject.set(x, "moveColumn", value.asInstanceOf[js.Any])
+    inline def setMoveColumn(value: `476`): Self = StObject.set(x, "moveColumn", value.asInstanceOf[js.Any])
     
-    inline def setRemoveCollaborator(value: `463`): Self = StObject.set(x, "removeCollaborator", value.asInstanceOf[js.Any])
+    inline def setRemoveCollaborator(value: `477`): Self = StObject.set(x, "removeCollaborator", value.asInstanceOf[js.Any])
     
-    inline def setUpdate(value: `464`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: `478`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    inline def setUpdateCard(value: `465`): Self = StObject.set(x, "updateCard", value.asInstanceOf[js.Any])
+    inline def setUpdateCard(value: `479`): Self = StObject.set(x, "updateCard", value.asInstanceOf[js.Any])
     
-    inline def setUpdateColumn(value: `466`): Self = StObject.set(x, "updateColumn", value.asInstanceOf[js.Any])
+    inline def setUpdateColumn(value: `480`): Self = StObject.set(x, "updateColumn", value.asInstanceOf[js.Any])
   }
 }

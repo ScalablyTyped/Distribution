@@ -1,7 +1,7 @@
 package typings.relayRuntime.anon
 
-import typings.relayRuntime.relayStoreTypesMod.OperationLoader
-import typings.relayRuntime.relayStoreTypesMod.Scheduler
+import typings.relayRuntime.libStoreRelayStoreTypesMod.OperationLoader
+import typings.relayRuntime.libStoreRelayStoreTypesMod.Scheduler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

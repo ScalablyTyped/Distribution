@@ -1,14 +1,14 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.srcTimeunitMod.TimeUnitParams
-import typings.vegaLite.srcTypeMod.Type
+import typings.vegaLite.buildSrcTimeunitMod.TimeUnitParams
+import typings.vegaLite.buildSrcTypeMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TimeUnit extends StObject {
   
-  var timeUnit: typings.vegaLite.srcTimeunitMod.TimeUnit | TimeUnitParams
+  var timeUnit: typings.vegaLite.buildSrcTimeunitMod.TimeUnit | TimeUnitParams
   
   var `type`: js.UndefOr[Type] = js.undefined
   
@@ -18,14 +18,14 @@ trait TimeUnit extends StObject {
 }
 object TimeUnit {
   
-  inline def apply(timeUnit: typings.vegaLite.srcTimeunitMod.TimeUnit | TimeUnitParams): TimeUnit = {
+  inline def apply(timeUnit: typings.vegaLite.buildSrcTimeunitMod.TimeUnit | TimeUnitParams): TimeUnit = {
     val __obj = js.Dynamic.literal(timeUnit = timeUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeUnit]
   }
   
   extension [Self <: TimeUnit](x: Self) {
     
-    inline def setTimeUnit(value: typings.vegaLite.srcTimeunitMod.TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: typings.vegaLite.buildSrcTimeunitMod.TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     
     inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -21,14 +21,6 @@ object monacoEditorStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait IStandaloneCodeEditor extends StObject
-  inline def IStandaloneCodeEditor: IStandaloneCodeEditor = "IStandaloneCodeEditor".asInstanceOf[IStandaloneCodeEditor]
-  
-  @js.native
-  sealed trait IStandaloneDiffEditor extends StObject
-  inline def IStandaloneDiffEditor: IStandaloneDiffEditor = "IStandaloneDiffEditor".asInstanceOf[IStandaloneDiffEditor]
-  
-  @js.native
   sealed trait _os extends StObject
   inline def _os: _os = "_os".asInstanceOf[_os]
   

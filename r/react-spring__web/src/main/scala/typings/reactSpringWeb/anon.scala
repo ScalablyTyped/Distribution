@@ -1,6 +1,6 @@
 package typings.reactSpringWeb
 
-import typings.reactSpringWeb.animatedMod.StyleProps
+import typings.reactSpringWeb.distDeclarationsSrcAnimatedMod.StyleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

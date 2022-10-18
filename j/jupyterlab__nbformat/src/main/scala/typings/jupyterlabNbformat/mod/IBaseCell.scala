@@ -1,6 +1,6 @@
 package typings.jupyterlabNbformat.mod
 
-import typings.luminoCoreutils.jsonMod.PartialJSONObject
+import typings.luminoCoreutils.typesJsonMod.PartialJSONObject
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

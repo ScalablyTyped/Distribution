@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.EncapsulatedX509CertificateCollection")
 @js.native
 open class EncapsulatedX509CertificateCollection ()
-  extends typings.xadesjs.typesXmlMod.EncapsulatedX509CertificateCollection {
+  extends typings.xadesjs.buildTypesXmlMod.EncapsulatedX509CertificateCollection {
   def this(properties: js.Object) = this()
 }

@@ -8,8 +8,6 @@ trait ItemChecked extends StObject {
   
   var clearButton: String
   
-  var column: String
-  
   var image: String
   
   var item: String
@@ -30,7 +28,6 @@ object ItemChecked {
   
   inline def apply(
     clearButton: String,
-    column: String,
     image: String,
     item: String,
     itemChecked: String,
@@ -40,15 +37,13 @@ object ItemChecked {
     label: String,
     root: String
   ): ItemChecked = {
-    val __obj = js.Dynamic.literal(clearButton = clearButton.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], itemText = itemText.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clearButton = clearButton.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], itemText = itemText.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemChecked]
   }
   
   extension [Self <: ItemChecked](x: Self) {
     
     inline def setClearButton(value: String): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
-    
-    inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

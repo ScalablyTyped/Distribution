@@ -1,7 +1,7 @@
 package typings.builderUtil
 
-import typings.builderUtil.archMod.ArchType
-import typings.builderUtil.logMod.LogLevel
+import typings.builderUtil.outArchMod.ArchType
+import typings.builderUtil.outLogMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

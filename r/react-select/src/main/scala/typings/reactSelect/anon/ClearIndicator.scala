@@ -1,28 +1,27 @@
 package typings.reactSelect.anon
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.emotionReact.emotionReactMod.jsx.JSX.Element
-import typings.reactSelect.componentsInputMod.InputProps
-import typings.reactSelect.componentsMultiValueMod.MultiValueGenericProps
-import typings.reactSelect.componentsMultiValueMod.MultiValueProps
-import typings.reactSelect.componentsPlaceholderMod.PlaceholderProps
-import typings.reactSelect.componentsSingleValueMod.SingleValueProps
-import typings.reactSelect.containersMod.ContainerProps
-import typings.reactSelect.containersMod.IndicatorsContainerProps
-import typings.reactSelect.containersMod.ValueContainerProps
-import typings.reactSelect.controlMod.ControlProps
-import typings.reactSelect.groupMod.GroupHeadingProps
-import typings.reactSelect.groupMod.GroupProps
-import typings.reactSelect.indicatorsMod.ClearIndicatorProps
-import typings.reactSelect.indicatorsMod.CrossIconProps
-import typings.reactSelect.indicatorsMod.DownChevronProps
-import typings.reactSelect.indicatorsMod.DropdownIndicatorProps
-import typings.reactSelect.indicatorsMod.IndicatorSeparatorProps
-import typings.reactSelect.menuMod.MenuListProps
-import typings.reactSelect.menuMod.MenuPortal
-import typings.reactSelect.menuMod.MenuProps
-import typings.reactSelect.optionMod.OptionProps
-import typings.reactSelect.typesMod.GroupBase
+import typings.emotionReact.mod.jsx.JSX.Element
+import typings.reactSelect.distDeclarationsSrcComponentsContainersMod.ContainerProps
+import typings.reactSelect.distDeclarationsSrcComponentsContainersMod.IndicatorsContainerProps
+import typings.reactSelect.distDeclarationsSrcComponentsContainersMod.ValueContainerProps
+import typings.reactSelect.distDeclarationsSrcComponentsControlMod.ControlProps
+import typings.reactSelect.distDeclarationsSrcComponentsGroupMod.GroupHeadingProps
+import typings.reactSelect.distDeclarationsSrcComponentsGroupMod.GroupProps
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.ClearIndicatorProps
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.CrossIconProps
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.DownChevronProps
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.DropdownIndicatorProps
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.IndicatorSeparatorProps
+import typings.reactSelect.distDeclarationsSrcComponentsInputMod.InputProps
+import typings.reactSelect.distDeclarationsSrcComponentsMenuMod.MenuListProps
+import typings.reactSelect.distDeclarationsSrcComponentsMenuMod.MenuPortalProps
+import typings.reactSelect.distDeclarationsSrcComponentsMenuMod.MenuProps
+import typings.reactSelect.distDeclarationsSrcComponentsMultiValueMod.MultiValueGenericProps
+import typings.reactSelect.distDeclarationsSrcComponentsMultiValueMod.MultiValueProps
+import typings.reactSelect.distDeclarationsSrcComponentsOptionMod.OptionProps
+import typings.reactSelect.distDeclarationsSrcComponentsPlaceholderMod.PlaceholderProps
+import typings.reactSelect.distDeclarationsSrcComponentsSingleValueMod.SingleValueProps
+import typings.reactSelect.distDeclarationsSrcTypesMod.GroupBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,33 +68,29 @@ trait ClearIndicator extends StObject {
   
   def MenuList[Option_11, IsMulti_11 /* <: Boolean */, Group_11 /* <: GroupBase[Option_11] */](props: MenuListProps[Option_11, IsMulti_11, Group_11]): Element
   
-  var MenuPortal: Instantiable0[
-    typings.reactSelect.menuMod.MenuPortal[
-      js.Object, 
-      Boolean, 
-      GroupBase[/* import warning: RewrittenClass.unapply cls was tparam Option */ Any]
-    ]
-  ]
+  def MenuPortal[Option_12, IsMulti_12 /* <: Boolean */, Group_12 /* <: GroupBase[Option_12] */](
+    hasAppendToChildrenClassNameControlElementCxInnerPropsMenuPlacementMenuPositionGetStyles: MenuPortalProps[Option_12, IsMulti_12, Group_12]
+  ): Element | Null
   
-  def MultiValue[Option_14, IsMulti_14 /* <: Boolean */, Group_14 /* <: GroupBase[Option_14] */](props: MultiValueProps[Option_14, IsMulti_14, Group_14]): Element
+  def MultiValue[Option_15, IsMulti_15 /* <: Boolean */, Group_15 /* <: GroupBase[Option_15] */](props: MultiValueProps[Option_15, IsMulti_15, Group_15]): Element
   
-  def MultiValueContainer[Option_15, IsMulti_15 /* <: Boolean */, Group_15 /* <: GroupBase[Option_15] */](hasChildrenInnerProps: MultiValueGenericProps[Option_15, IsMulti_15, Group_15]): Element
+  def MultiValueContainer[Option_16, IsMulti_16 /* <: Boolean */, Group_16 /* <: GroupBase[Option_16] */](hasChildrenInnerProps: MultiValueGenericProps[Option_16, IsMulti_16, Group_16]): Element
   
-  def MultiValueLabel[Option_15, IsMulti_15 /* <: Boolean */, Group_15 /* <: GroupBase[Option_15] */](hasChildrenInnerProps: MultiValueGenericProps[Option_15, IsMulti_15, Group_15]): Element
+  def MultiValueLabel[Option_16, IsMulti_16 /* <: Boolean */, Group_16 /* <: GroupBase[Option_16] */](hasChildrenInnerProps: MultiValueGenericProps[Option_16, IsMulti_16, Group_16]): Element
   
   var MultiValueRemove: FnCall
   
   var NoOptionsMessage: CallDefaultProps
   
-  def Option[Option_16, IsMulti_16 /* <: Boolean */, Group_16 /* <: GroupBase[Option_16] */](props: OptionProps[Option_16, IsMulti_16, Group_16]): Element
+  def Option[Option_17, IsMulti_17 /* <: Boolean */, Group_17 /* <: GroupBase[Option_17] */](props: OptionProps[Option_17, IsMulti_17, Group_17]): Element
   
-  def Placeholder[Option_17, IsMulti_17 /* <: Boolean */, Group_17 /* <: GroupBase[Option_17] */](props: PlaceholderProps[Option_17, IsMulti_17, Group_17]): Element
+  def Placeholder[Option_18, IsMulti_18 /* <: Boolean */, Group_18 /* <: GroupBase[Option_18] */](props: PlaceholderProps[Option_18, IsMulti_18, Group_18]): Element
   
-  def SelectContainer[Option_18, IsMulti_18 /* <: Boolean */, Group_18 /* <: GroupBase[Option_18] */](props: ContainerProps[Option_18, IsMulti_18, Group_18]): Element
+  def SelectContainer[Option_19, IsMulti_19 /* <: Boolean */, Group_19 /* <: GroupBase[Option_19] */](props: ContainerProps[Option_19, IsMulti_19, Group_19]): Element
   
-  def SingleValue[Option_19, IsMulti_19 /* <: Boolean */, Group_19 /* <: GroupBase[Option_19] */](props: SingleValueProps[Option_19, IsMulti_19, Group_19]): Element
+  def SingleValue[Option_20, IsMulti_20 /* <: Boolean */, Group_20 /* <: GroupBase[Option_20] */](props: SingleValueProps[Option_20, IsMulti_20, Group_20]): Element
   
-  def ValueContainer[Option_20, IsMulti_20 /* <: Boolean */, Group_20 /* <: GroupBase[Option_20] */](props: ValueContainerProps[Option_20, IsMulti_20, Group_20]): Element
+  def ValueContainer[Option_21, IsMulti_21 /* <: Boolean */, Group_21 /* <: GroupBase[Option_21] */](props: ValueContainerProps[Option_21, IsMulti_21, Group_21]): Element
 }
 object ClearIndicator {
   
@@ -114,13 +109,7 @@ object ClearIndicator {
     LoadingMessage: DefaultProps,
     Menu: MenuProps[Any, Any, Any] => Element,
     MenuList: MenuListProps[Any, Any, Any] => Element,
-    MenuPortal: Instantiable0[
-      MenuPortal[
-        js.Object, 
-        Boolean, 
-        GroupBase[/* import warning: RewrittenClass.unapply cls was tparam Option */ Any]
-      ]
-    ],
+    MenuPortal: MenuPortalProps[Any, Any, Any] => Element | Null,
     MultiValue: MultiValueProps[Any, Any, Any] => Element,
     MultiValueContainer: MultiValueGenericProps[Any, Any, Any] => Element,
     MultiValueLabel: MultiValueGenericProps[Any, Any, Any] => Element,
@@ -132,7 +121,7 @@ object ClearIndicator {
     SingleValue: SingleValueProps[Any, Any, Any] => Element,
     ValueContainer: ValueContainerProps[Any, Any, Any] => Element
   ): ClearIndicator = {
-    val __obj = js.Dynamic.literal(ClearIndicator = js.Any.fromFunction1(ClearIndicator), Control = js.Any.fromFunction1(Control), CrossIcon = js.Any.fromFunction1(CrossIcon), DownChevron = js.Any.fromFunction1(DownChevron), DropdownIndicator = js.Any.fromFunction1(DropdownIndicator), Group = js.Any.fromFunction1(Group), GroupHeading = js.Any.fromFunction1(GroupHeading), IndicatorSeparator = js.Any.fromFunction1(IndicatorSeparator), IndicatorsContainer = js.Any.fromFunction1(IndicatorsContainer), Input = js.Any.fromFunction1(Input), LoadingIndicator = LoadingIndicator.asInstanceOf[js.Any], LoadingMessage = LoadingMessage.asInstanceOf[js.Any], Menu = js.Any.fromFunction1(Menu), MenuList = js.Any.fromFunction1(MenuList), MenuPortal = MenuPortal.asInstanceOf[js.Any], MultiValue = js.Any.fromFunction1(MultiValue), MultiValueContainer = js.Any.fromFunction1(MultiValueContainer), MultiValueLabel = js.Any.fromFunction1(MultiValueLabel), MultiValueRemove = MultiValueRemove.asInstanceOf[js.Any], NoOptionsMessage = NoOptionsMessage.asInstanceOf[js.Any], Option = js.Any.fromFunction1(Option), Placeholder = js.Any.fromFunction1(Placeholder), SelectContainer = js.Any.fromFunction1(SelectContainer), SingleValue = js.Any.fromFunction1(SingleValue), ValueContainer = js.Any.fromFunction1(ValueContainer))
+    val __obj = js.Dynamic.literal(ClearIndicator = js.Any.fromFunction1(ClearIndicator), Control = js.Any.fromFunction1(Control), CrossIcon = js.Any.fromFunction1(CrossIcon), DownChevron = js.Any.fromFunction1(DownChevron), DropdownIndicator = js.Any.fromFunction1(DropdownIndicator), Group = js.Any.fromFunction1(Group), GroupHeading = js.Any.fromFunction1(GroupHeading), IndicatorSeparator = js.Any.fromFunction1(IndicatorSeparator), IndicatorsContainer = js.Any.fromFunction1(IndicatorsContainer), Input = js.Any.fromFunction1(Input), LoadingIndicator = LoadingIndicator.asInstanceOf[js.Any], LoadingMessage = LoadingMessage.asInstanceOf[js.Any], Menu = js.Any.fromFunction1(Menu), MenuList = js.Any.fromFunction1(MenuList), MenuPortal = js.Any.fromFunction1(MenuPortal), MultiValue = js.Any.fromFunction1(MultiValue), MultiValueContainer = js.Any.fromFunction1(MultiValueContainer), MultiValueLabel = js.Any.fromFunction1(MultiValueLabel), MultiValueRemove = MultiValueRemove.asInstanceOf[js.Any], NoOptionsMessage = NoOptionsMessage.asInstanceOf[js.Any], Option = js.Any.fromFunction1(Option), Placeholder = js.Any.fromFunction1(Placeholder), SelectContainer = js.Any.fromFunction1(SelectContainer), SingleValue = js.Any.fromFunction1(SingleValue), ValueContainer = js.Any.fromFunction1(ValueContainer))
     __obj.asInstanceOf[ClearIndicator]
   }
   
@@ -166,15 +155,7 @@ object ClearIndicator {
     
     inline def setMenuList(value: MenuListProps[Any, Any, Any] => Element): Self = StObject.set(x, "MenuList", js.Any.fromFunction1(value))
     
-    inline def setMenuPortal(
-      value: Instantiable0[
-          MenuPortal[
-            js.Object, 
-            Boolean, 
-            GroupBase[/* import warning: RewrittenClass.unapply cls was tparam Option */ Any]
-          ]
-        ]
-    ): Self = StObject.set(x, "MenuPortal", value.asInstanceOf[js.Any])
+    inline def setMenuPortal(value: MenuPortalProps[Any, Any, Any] => Element | Null): Self = StObject.set(x, "MenuPortal", js.Any.fromFunction1(value))
     
     inline def setMultiValue(value: MultiValueProps[Any, Any, Any] => Element): Self = StObject.set(x, "MultiValue", js.Any.fromFunction1(value))
     

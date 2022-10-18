@@ -1,6 +1,6 @@
 package typings.antvGLite.mod
 
-import typings.antvGLite.domInterfacesMod.IElement
+import typings.antvGLite.distDomInterfacesMod.IElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "MutationEvent")
 @js.native
 open class MutationEvent protected ()
-  extends typings.antvGLite.domMod.MutationEvent {
+  extends typings.antvGLite.distDomMod.MutationEvent {
   def this(
-    typeArg: typings.antvGLite.domInterfacesMod.ElementEvent,
+    typeArg: typings.antvGLite.distDomInterfacesMod.ElementEvent,
     relatedNode: IElement[Any, Any],
     prevValue: Any,
     newValue: Any,

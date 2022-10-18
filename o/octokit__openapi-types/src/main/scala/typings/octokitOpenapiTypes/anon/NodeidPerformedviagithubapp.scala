@@ -20,9 +20,9 @@ trait NodeidPerformedviagithubapp extends StObject {
   
   var node_id: String
   
-  var performed_via_github_app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
+  var performed_via_github_app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['integration'] */ js.Any
   
-  var rename: From
+  var project_card: js.UndefOr[Projectid] = js.undefined
   
   var url: String
 }
@@ -34,11 +34,10 @@ object NodeidPerformedviagithubapp {
     event: String,
     id: Double,
     node_id: String,
-    performed_via_github_app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any,
-    rename: From,
+    performed_via_github_app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['integration'] */ js.Any,
     url: String
   ): NodeidPerformedviagithubapp = {
-    val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], performed_via_github_app = performed_via_github_app.asInstanceOf[js.Any], rename = rename.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], commit_id = null, commit_url = null)
+    val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], performed_via_github_app = performed_via_github_app.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], commit_id = null, commit_url = null)
     __obj.asInstanceOf[NodeidPerformedviagithubapp]
   }
   
@@ -65,10 +64,12 @@ object NodeidPerformedviagithubapp {
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     inline def setPerformed_via_github_app(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['integration'] */ js.Any
     ): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
     
-    inline def setRename(value: From): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+    inline def setProject_card(value: Projectid): Self = StObject.set(x, "project_card", value.asInstanceOf[js.Any])
+    
+    inline def setProject_cardUndefined: Self = StObject.set(x, "project_card", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

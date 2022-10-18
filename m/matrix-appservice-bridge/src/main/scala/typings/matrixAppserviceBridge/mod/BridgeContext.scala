@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "BridgeContext")
 @js.native
 open class BridgeContext protected ()
-  extends typings.matrixAppserviceBridge.bridgeContextMod.BridgeContext {
+  extends typings.matrixAppserviceBridge.libComponentsBridgeContextMod.BridgeContext {
   /**
     * @param ctx Event related data
     * @param ctx.sender Matrix user ID of the sender.

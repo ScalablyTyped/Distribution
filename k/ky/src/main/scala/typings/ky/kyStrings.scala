@@ -1,6 +1,6 @@
 package typings.ky
 
-import typings.ky.optionsMod.HttpMethod
+import typings.ky.distributionTypesOptionsMod.HttpMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +10,6 @@ object kyStrings {
   @js.native
   sealed trait AsteriskSlashAsterisk extends StObject
   inline def AsteriskSlashAsterisk: AsteriskSlashAsterisk = "*/*".asInstanceOf[AsteriskSlashAsterisk]
-  
-  @js.native
-  sealed trait Mutable extends StObject
-  inline def Mutable: Mutable = "Mutable".asInstanceOf[Mutable]
-  
-  @js.native
-  sealed trait Required extends StObject
-  inline def Required: Required = "Required".asInstanceOf[Required]
   
   @js.native
   sealed trait applicationSlashjson extends StObject

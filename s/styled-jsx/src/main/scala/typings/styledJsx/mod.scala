@@ -1,37 +1,34 @@
 package typings.styledJsx
 
-import typings.react.mod.HTMLAttributes
+import typings.react.mod.global.JSX.Element
+import typings.styledJsx.anon.Children
+import typings.styledJsx.anon.Nonce
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* augmented module */
 object mod {
   
-  trait StyleHTMLAttributes[T]
-    extends StObject
-       with HTMLAttributes[T] {
+  @JSImport("styled-jsx", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def StyleRegistry(hasChildrenRegistry: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StyleRegistry")(hasChildrenRegistry.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def createStyleRegistry(): StyledJsxStyleRegistry = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleRegistry")().asInstanceOf[StyledJsxStyleRegistry]
+  
+  inline def useStyleRegistry(): StyledJsxStyleRegistry = ^.asInstanceOf[js.Dynamic].applyDynamic("useStyleRegistry")().asInstanceOf[StyledJsxStyleRegistry]
+  
+  @js.native
+  trait StyledJsxStyleRegistry extends StObject {
     
-    var global: js.UndefOr[Boolean] = js.undefined
+    def add(props: Any): Unit = js.native
     
-    var jsx: js.UndefOr[Boolean] = js.undefined
-  }
-  object StyleHTMLAttributes {
+    def flush(): Unit = js.native
     
-    inline def apply[T](): StyleHTMLAttributes[T] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StyleHTMLAttributes[T]]
-    }
+    def remove(props: Any): Unit = js.native
     
-    extension [Self <: StyleHTMLAttributes[?], T](x: Self & StyleHTMLAttributes[T]) {
-      
-      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
-      
-      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
-      
-      inline def setJsx(value: Boolean): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
-      
-      inline def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
-    }
+    def styles(): js.Array[Element] = js.native
+    def styles(options: Nonce): js.Array[Element] = js.native
   }
 }

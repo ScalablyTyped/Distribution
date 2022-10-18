@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PowerPreference extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.PowerPreference & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.PowerPreference & String] = js.native
   
-  /* "high-performance" */ val HighPerformance: typings.babylonjs.webgpuConstantsMod.PowerPreference.HighPerformance & String = js.native
+  /* "high-performance" */ val HighPerformance: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.PowerPreference.HighPerformance & String = js.native
   
-  /* "low-power" */ val LowPower: typings.babylonjs.webgpuConstantsMod.PowerPreference.LowPower & String = js.native
+  /* "low-power" */ val LowPower: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.PowerPreference.LowPower & String = js.native
 }

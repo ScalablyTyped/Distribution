@@ -118,9 +118,9 @@ object Advertisement {
   }
   
   /** Some of the Bluetooth LE advertisement types defined in the Generic Access Profile (GAP) by the Bluetooth Special Interest Group (SIG). */
-  @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes")
   @js.native
-  abstract class BluetoothLEAdvertisementDataTypes ()
+  open class BluetoothLEAdvertisementDataTypes ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes
   object BluetoothLEAdvertisementDataTypes {
@@ -364,9 +364,9 @@ object Advertisement {
   }
   
   /** Provides data for a StatusChanged event on a BluetoothLEAdvertisementPublisher . */
-  @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatusChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatusChangedEventArgs")
   @js.native
-  abstract class BluetoothLEAdvertisementPublisherStatusChangedEventArgs ()
+  open class BluetoothLEAdvertisementPublisherStatusChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatusChangedEventArgs {
     
@@ -380,9 +380,9 @@ object Advertisement {
   }
   
   /** Provides data for a Received event on a BluetoothLEAdvertisementWatcher . */
-  @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementReceivedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementReceivedEventArgs")
   @js.native
-  abstract class BluetoothLEAdvertisementReceivedEventArgs ()
+  open class BluetoothLEAdvertisementReceivedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementReceivedEventArgs {
     
@@ -464,9 +464,9 @@ object Advertisement {
   }
   
   /** Provides data for a Stopped event on a BluetoothLEAdvertisementWatcher . */
-  @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcherStoppedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcherStoppedEventArgs")
   @js.native
-  abstract class BluetoothLEAdvertisementWatcherStoppedEventArgs ()
+  open class BluetoothLEAdvertisementWatcherStoppedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcherStoppedEventArgs {
     

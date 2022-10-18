@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "XRGripSpace")
 @js.native
 open class XRGripSpace ()
-  extends typings.three.threeMod.XRGripSpace
+  extends typings.three.srcThreeMod.XRGripSpace

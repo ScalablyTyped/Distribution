@@ -1,0 +1,95 @@
+package typings.orbitUiReactComponents
+
+import typings.orbitUiReactComponents.anon.Content
+import typings.orbitUiReactComponents.anon.IsLoading
+import typings.orbitUiReactComponents.anon.Style
+import typings.orbitUiReactComponents.anon.StyleHeight
+import typings.orbitUiReactComponents.distCollectionSrcItemMod.InnerItemProps
+import typings.orbitUiReactComponents.distCollectionSrcSectionMod.InnerSectionProps
+import typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.CollectionItem
+import typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.CollectionNode
+import typings.orbitUiReactComponents.distCollectionSrcUseCollectionSearchMod.UseCollectionSearchOptions
+import typings.orbitUiReactComponents.distCollectionSrcUseScrollableCollectionMod.UseScrollableCollectionOptions
+import typings.orbitUiReactComponents.distSharedSrcForwardRefMod.OrbitComponent
+import typings.react.mod.ReactNode
+import typings.react.mod.RefObject
+import typings.react.mod.SyntheticEvent
+import typings.react.mod.global.JSX.Element
+import typings.std.AbortSignal
+import typings.std.Event
+import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distCollectionMod {
+  
+  @JSImport("@orbit-ui/react-components/dist/collection", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@orbit-ui/react-components/dist/collection", "CollectionBuilder")
+  @js.native
+  open class CollectionBuilder ()
+    extends typings.orbitUiReactComponents.distCollectionSrcMod.CollectionBuilder
+  
+  inline def InnerItem(props: InnerItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerItem")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def InnerSection(props: InnerSectionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerSection")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @JSImport("@orbit-ui/react-components/dist/collection", "Item")
+  @js.native
+  val Item: OrbitComponent[HTMLElement, InnerItemProps] = js.native
+  
+  @JSImport("@orbit-ui/react-components/dist/collection", "NodeType")
+  @js.native
+  object NodeType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[
+        typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.NodeType & String
+      ] = js.native
+    
+    /* "divider" */ val divider: typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.NodeType.divider & String = js.native
+    
+    /* "item" */ val item: typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.NodeType.item & String = js.native
+    
+    /* "section" */ val section: typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.NodeType.section & String = js.native
+  }
+  
+  @JSImport("@orbit-ui/react-components/dist/collection", "Section")
+  @js.native
+  val Section: OrbitComponent[HTMLElement, InnerSectionProps] = js.native
+  
+  inline def createCollectionItem(hasKeyIndexElementTypeRefContentProps: CollectionItem): Content = ^.asInstanceOf[js.Dynamic].applyDynamic("createCollectionItem")(hasKeyIndexElementTypeRefContentProps.asInstanceOf[js.Any]).asInstanceOf[Content]
+  
+  inline def getItemText(item: CollectionNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemText")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def isDivider(node: CollectionNode): /* is @orbit-ui/react-components.@orbit-ui/react-components/dist/collection/src/useCollection.CollectionDivider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDivider")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @orbit-ui/react-components.@orbit-ui/react-components/dist/collection/src/useCollection.CollectionDivider */ Boolean]
+  
+  inline def isItem(node: CollectionNode): /* is @orbit-ui/react-components.@orbit-ui/react-components/dist/collection/src/useCollection.CollectionItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItem")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @orbit-ui/react-components.@orbit-ui/react-components/dist/collection/src/useCollection.CollectionItem */ Boolean]
+  
+  inline def isSection(node: CollectionNode): /* is @orbit-ui/react-components.@orbit-ui/react-components/dist/collection/src/useCollection.CollectionSection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSection")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @orbit-ui/react-components.@orbit-ui/react-components/dist/collection/src/useCollection.CollectionSection */ Boolean]
+  
+  inline def reduceCollection(nodes: js.Array[CollectionNode], acceptItem: js.Function1[/* item */ CollectionItem, Boolean]): js.Array[CollectionItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceCollection")(nodes.asInstanceOf[js.Any], acceptItem.asInstanceOf[js.Any])).asInstanceOf[js.Array[CollectionItem]]
+  
+  inline def useAsyncSearch[T](load: js.Function2[/* query */ String, /* signal */ AbortSignal, js.Promise[js.Array[T]]]): IsLoading[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsyncSearch")(load.asInstanceOf[js.Any]).asInstanceOf[IsLoading[T]]
+  
+  inline def useCollection(children: ReactNode): js.Array[CollectionNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCollection")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[CollectionNode]]
+  
+  inline def useCollectionSearch(children: ReactNode, hasOnSearch: UseCollectionSearchOptions): js.Tuple2[
+    js.Array[CollectionNode], 
+    js.Function2[/* event */ SyntheticEvent[typings.std.Element, Event], /* query */ String, Unit]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCollectionSearch")(children.asInstanceOf[js.Any], hasOnSearch.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
+    js.Array[CollectionNode], 
+    js.Function2[/* event */ SyntheticEvent[typings.std.Element, Event], /* query */ String, Unit]
+  ]]
+  
+  inline def useOnlyCollectionItems(nodes: js.Array[CollectionNode]): js.Array[CollectionItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("useOnlyCollectionItems")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[CollectionItem]]
+  
+  inline def useScrollableCollection(containerRef: RefObject[typings.std.Element]): Style | StyleHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any]).asInstanceOf[Style | StyleHeight]
+  inline def useScrollableCollection(
+    containerRef: RefObject[typings.std.Element],
+    hasMaxHeightBorderHeightPaddingHeightItemSelectorSectionSelectorDividerSelectorDisabled: UseScrollableCollectionOptions
+  ): Style | StyleHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any], hasMaxHeightBorderHeightPaddingHeightItemSelectorSectionSelectorDividerSelectorDisabled.asInstanceOf[js.Any])).asInstanceOf[Style | StyleHeight]
+}

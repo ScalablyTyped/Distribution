@@ -1,8 +1,8 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.cloudformationMod.NextToken
-import typings.awsSdk.cloudformationMod.StackName
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsCloudformationMod.NextToken
+import typings.awsSdk.clientsCloudformationMod.StackName
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,12 +16,12 @@ trait DescribeStacksInputwaiter extends StObject {
   /**
     * A string that identifies the next page of stacks that you want to retrieve.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsSdk.clientsCloudformationMod.NextToken] = js.undefined
   
   /**
     * The name or the unique stack ID that's associated with the stack, which aren't always interchangeable:   Running stacks: You can specify either the stack's name or its unique stack ID.   Deleted stacks: You must specify the unique stack ID.   Default: There is no default value.
     */
-  var StackName: js.UndefOr[typings.awsSdk.cloudformationMod.StackName] = js.undefined
+  var StackName: js.UndefOr[typings.awsSdk.clientsCloudformationMod.StackName] = js.undefined
 }
 object DescribeStacksInputwaiter {
   

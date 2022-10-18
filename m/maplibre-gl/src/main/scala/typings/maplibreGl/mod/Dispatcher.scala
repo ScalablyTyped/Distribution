@@ -1,6 +1,6 @@
 package typings.maplibreGl.mod
 
-import typings.maplibreGl.anon.Instantiable
+import typings.maplibreGl.anon.InstantiableActor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,6 +42,6 @@ object Dispatcher {
   
   @JSImport("maplibre-gl", "Dispatcher.Actor")
   @js.native
-  def Actor: Instantiable = js.native
-  inline def Actor_=(x: Instantiable): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Actor")(x.asInstanceOf[js.Any])
+  def Actor: InstantiableActor = js.native
+  inline def Actor_=(x: InstantiableActor): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Actor")(x.asInstanceOf[js.Any])
 }

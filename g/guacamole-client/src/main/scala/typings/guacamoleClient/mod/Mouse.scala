@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "Mouse")
 @js.native
 open class Mouse protected ()
-  extends typings.guacamoleClient.mouseMod.Mouse {
+  extends typings.guacamoleClient.libMouseMod.Mouse {
   /**
     * @param element The Element to use to provide mouse events.
     */
@@ -21,7 +21,7 @@ object Mouse {
   @JSImport("guacamole-client", "Mouse.GuacTouchDevice")
   @js.native
   open class GuacTouchDevice protected ()
-    extends typings.guacamoleClient.mouseMod.Mouse.GuacTouchDevice {
+    extends typings.guacamoleClient.libMouseMod.Mouse.GuacTouchDevice {
     /**
       * @param element The Element to use to provide touch events.
       */
@@ -31,7 +31,7 @@ object Mouse {
   @JSImport("guacamole-client", "Mouse.State")
   @js.native
   open class State protected ()
-    extends typings.guacamoleClient.mouseMod.Mouse.State {
+    extends typings.guacamoleClient.libMouseMod.Mouse.State {
     /**
       * @param x The X position of the mouse pointer in pixels.
       * @param y The Y position of the mouse pointer in pixels.
@@ -47,7 +47,7 @@ object Mouse {
   @JSImport("guacamole-client", "Mouse.Touchpad")
   @js.native
   open class Touchpad protected ()
-    extends typings.guacamoleClient.mouseMod.Mouse.Touchpad {
+    extends typings.guacamoleClient.libMouseMod.Mouse.Touchpad {
     /**
       * @param element The Element to use to provide touch events.
       */
@@ -57,7 +57,7 @@ object Mouse {
   @JSImport("guacamole-client", "Mouse.Touchscreen")
   @js.native
   open class Touchscreen protected ()
-    extends typings.guacamoleClient.mouseMod.Mouse.Touchscreen {
+    extends typings.guacamoleClient.libMouseMod.Mouse.Touchscreen {
     /**
       * @param element The Element to use to provide touch events.
       */

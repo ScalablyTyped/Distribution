@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "ResourceNotFoundException")
 @js.native
 open class ResourceNotFoundException protected ()
-  extends typings.awsSdkClientCognitoIdentity.modelsMod.ResourceNotFoundException {
+  extends typings.awsSdkClientCognitoIdentity.distTypesModelsMod.ResourceNotFoundException {
   /**
     * @internal
     */

@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.ScrollContainerRegion")
 @js.native
 open class ScrollContainerRegion protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.ScrollContainerRegion {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.ScrollContainerRegion {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object ScrollContainerRegion {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion]
   
   /**
     * Creates and returns a new ScrollContainerRegion instance in the SDK and on the server.
@@ -44,7 +44,7 @@ object ScrollContainerRegion {
     * of the parent ScrollContainer element passed as argument.
     */
   /* static member */
-  inline def createInScrollContainerUnderBottom(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainer): typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderBottom")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion]
+  inline def createInScrollContainerUnderBottom(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainer): typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderBottom")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion]
   
   /**
     * Creates and returns a new ScrollContainerRegion instance in the SDK and on the server.
@@ -52,7 +52,7 @@ object ScrollContainerRegion {
     * of the parent ScrollContainer element passed as argument.
     */
   /* static member */
-  inline def createInScrollContainerUnderCenter(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainer): typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderCenter")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion]
+  inline def createInScrollContainerUnderCenter(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainer): typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderCenter")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion]
   
   /**
     * Creates and returns a new ScrollContainerRegion instance in the SDK and on the server.
@@ -60,7 +60,7 @@ object ScrollContainerRegion {
     * of the parent ScrollContainer element passed as argument.
     */
   /* static member */
-  inline def createInScrollContainerUnderLeft(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainer): typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion]
+  inline def createInScrollContainerUnderLeft(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainer): typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion]
   
   /**
     * Creates and returns a new ScrollContainerRegion instance in the SDK and on the server.
@@ -68,7 +68,7 @@ object ScrollContainerRegion {
     * of the parent ScrollContainer element passed as argument.
     */
   /* static member */
-  inline def createInScrollContainerUnderRight(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainer): typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion]
+  inline def createInScrollContainerUnderRight(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainer): typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion]
   
   /**
     * Creates and returns a new ScrollContainerRegion instance in the SDK and on the server.
@@ -76,7 +76,7 @@ object ScrollContainerRegion {
     * of the parent ScrollContainer element passed as argument.
     */
   /* static member */
-  inline def createInScrollContainerUnderTop(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainer): typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderTop")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion]
+  inline def createInScrollContainerUnderTop(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainer): typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderTop")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollContainerRegion]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ScrollContainerRegion.structureTypeName")

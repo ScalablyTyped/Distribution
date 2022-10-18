@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "CombineAction")
 @js.native
 open class CombineAction protected ()
-  extends typings.babylonjs.legacyMod.CombineAction {
+  extends typings.babylonjs.legacyLegacyMod.CombineAction {
   /**
     * Instantiate the action
     * @param triggerOptions defines the trigger options
@@ -15,22 +15,22 @@ open class CombineAction protected ()
     * @param condition defines the trigger related conditions
     * @param enableChildrenConditions defines if the children actions conditions should be check before execution
     */
-  def this(triggerOptions: Any, children: js.Array[typings.babylonjs.actionMod.Action]) = this()
+  def this(triggerOptions: Any, children: js.Array[typings.babylonjs.actionsActionMod.Action]) = this()
   def this(
     triggerOptions: Any,
-    children: js.Array[typings.babylonjs.actionMod.Action],
-    condition: typings.babylonjs.conditionMod.Condition
+    children: js.Array[typings.babylonjs.actionsActionMod.Action],
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
   def this(
     triggerOptions: Any,
-    children: js.Array[typings.babylonjs.actionMod.Action],
+    children: js.Array[typings.babylonjs.actionsActionMod.Action],
     condition: Unit,
     enableChildrenConditions: Boolean
   ) = this()
   def this(
     triggerOptions: Any,
-    children: js.Array[typings.babylonjs.actionMod.Action],
-    condition: typings.babylonjs.conditionMod.Condition,
+    children: js.Array[typings.babylonjs.actionsActionMod.Action],
+    condition: typings.babylonjs.actionsConditionMod.Condition,
     enableChildrenConditions: Boolean
   ) = this()
 }

@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object jestWorkerStrings {
   
   @js.native
-  sealed trait WorkerModule extends StObject
-  inline def WorkerModule: WorkerModule = "WorkerModule".asInstanceOf[WorkerModule]
-  
-  @js.native
   sealed trait end
     extends StObject
        with ReservedKeys

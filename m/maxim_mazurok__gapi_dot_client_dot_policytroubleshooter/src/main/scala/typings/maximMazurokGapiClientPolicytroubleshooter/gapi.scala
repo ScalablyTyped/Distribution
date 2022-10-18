@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientPolicytroubleshooter
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientPolicytroubleshooter.anon.Accesstoken
 import typings.maximMazurokGapiClientPolicytroubleshooter.anon.Alt
@@ -81,9 +80,7 @@ object gapi {
           * `MEMBERSHIP_INCLUDED`.
           */
         var memberships: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: @maxim_mazurok/gapi.client.policytroubleshooter.gapi.client.policytroubleshooter.GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership}
-          */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleCloudPolicytroubleshooterV1BindingExplanation & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.policytroubleshooter.gapi.client.policytroubleshooter.GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership} */ js.Any
               ] = js.undefined
         
         /** The relevance of this binding to the overall determination for the entire policy. */
@@ -119,9 +116,7 @@ object gapi {
           inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
           
           inline def setMemberships(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: @maxim_mazurok/gapi.client.policytroubleshooter.gapi.client.policytroubleshooter.GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership}
-            */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleCloudPolicytroubleshooterV1BindingExplanation & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.policytroubleshooter.gapi.client.policytroubleshooter.GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership} */ js.Any
           ): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
           
           inline def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
@@ -483,9 +478,7 @@ object gapi {
         /** A list of messages that carry the error details. There is a common set of message types for APIs to use. */
         var details: js.UndefOr[
                 js.Array[
-                  /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleRpcStatus & TopLevel[Any]
+                  /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
                 ]
               ] = js.undefined
         
@@ -510,18 +503,14 @@ object gapi {
           
           inline def setDetails(
             value: js.Array[
-                      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleRpcStatus & TopLevel[Any]
+                      /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
                     ]
           ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
           
           inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
           
           inline def setDetailsVarargs(
-            value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleRpcStatus & TopLevel[Any])*
+            value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any)*
           ): Self = StObject.set(x, "details", js.Array(value*))
           
           inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.rbx.anon
 
-import typings.rbx.columnMod.ColumnBreakpointOptions
+import typings.rbx.gridColumnsColumnMod.ColumnBreakpointOptions
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

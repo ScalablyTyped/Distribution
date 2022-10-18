@@ -10,6 +10,7 @@ trait FrameAttachedEvent extends StObject {
   /**
     * Identifies the bottom-most script which caused the frame to be labelled
     * as an ad. Only sent if frame is labelled as an ad and id is available.
+    * Deprecated: use Page.getAdScriptId instead.
     */
   var adScriptId: js.UndefOr[AdScriptId] = js.undefined
   

@@ -2,7 +2,6 @@ package typings.rosie
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -159,14 +158,10 @@ object mod {
       */
     def attributes(): T = js.native
     def attributes(
-      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactory & TopLevel[T]
+      attributes: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]:? T[k]} */ js.Any
     ): T = js.native
     def attributes(
-      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactory & TopLevel[T],
+      attributes: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]:? T[k]} */ js.Any,
       options: Any
     ): T = js.native
     def attributes(attributes: Unit, options: Any): T = js.native
@@ -187,9 +182,7 @@ object mod {
       * @return {Factory}
       */
     def attrs[Keys /* <: /* keyof T */ String */](
-      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in Keys ]: T[K] | (opts : any | undefined): T[K]}
-      */ typings.rosie.rosieStrings.IFactory & TopLevel[Any]
+      attributes: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]: T[K] | (opts : any | undefined): T[K]} */ js.Any
     ): IFactory[T] = js.native
     
     /**
@@ -202,14 +195,10 @@ object mod {
       */
     def build(): T = js.native
     def build(
-      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactory & TopLevel[T]
+      attributes: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]:? T[k]} */ js.Any
     ): T = js.native
     def build(
-      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactory & TopLevel[T],
+      attributes: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]:? T[k]} */ js.Any,
       options: Any
     ): T = js.native
     def build(attributes: Unit, options: Any): T = js.native
@@ -217,15 +206,11 @@ object mod {
     def buildList(size: Double): js.Array[T] = js.native
     def buildList(
       size: Double,
-      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactory & TopLevel[T]
+      attributes: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]:? T[k]} */ js.Any
     ): js.Array[T] = js.native
     def buildList(
       size: Double,
-      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactory & TopLevel[T],
+      attributes: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]:? T[k]} */ js.Any,
       options: Any
     ): js.Array[T] = js.native
     def buildList(size: Double, attributes: Unit, options: Any): js.Array[T] = js.native
@@ -343,15 +328,11 @@ object mod {
     def build[T](name: String): T = js.native
     def build[T](
       name: String,
-      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactoryStatic & TopLevel[T]
+      attributes: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]:? T[k]} */ js.Any
     ): T = js.native
     def build[T](
       name: String,
-      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactoryStatic & TopLevel[T],
+      attributes: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]:? T[k]} */ js.Any,
       options: Any
     ): T = js.native
     def build[T](name: String, attributes: Unit, options: Any): T = js.native
@@ -369,16 +350,12 @@ object mod {
     def buildList[T](
       name: String,
       size: Double,
-      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]:? T[k] | boolean}
-      */ typings.rosie.rosieStrings.IFactoryStatic & TopLevel[T]
+      attributes: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]:? T[k] | boolean} */ js.Any
     ): js.Array[T] = js.native
     def buildList[T](
       name: String,
       size: Double,
-      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof T ]:? T[k] | boolean}
-      */ typings.rosie.rosieStrings.IFactoryStatic & TopLevel[T],
+      attributes: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]:? T[k] | boolean} */ js.Any,
       options: Any
     ): js.Array[T] = js.native
     def buildList[T](name: String, size: Double, attributes: Unit, options: Any): js.Array[T] = js.native

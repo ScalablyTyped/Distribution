@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `8` extends StObject {
   
-  var capacity: typings.screeps.screepsInts.`3`
+  var OH: typings.screeps.screepsStrings.KHO2
 }
 object `8` {
   
   inline def apply(): `8` = {
-    val __obj = js.Dynamic.literal(capacity = 3)
+    val __obj = js.Dynamic.literal(OH = "KHO2")
     __obj.asInstanceOf[`8`]
   }
   
   extension [Self <: `8`](x: Self) {
     
-    inline def setCapacity(value: typings.screeps.screepsInts.`3`): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setOH(value: typings.screeps.screepsStrings.KHO2): Self = StObject.set(x, "OH", value.asInstanceOf[js.Any])
   }
 }

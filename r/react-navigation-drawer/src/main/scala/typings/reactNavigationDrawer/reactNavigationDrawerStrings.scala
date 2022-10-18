@@ -1,6 +1,6 @@
 package typings.reactNavigationDrawer
 
-import typings.reactNavigationDrawer.typesMod.DrawerLockMode
+import typings.reactNavigationDrawer.libTypescriptSrcTypesMod.DrawerLockMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.awsGreengrassCoreSdk.mod.StreamManager
 
-import typings.awsGreengrassCoreSdk.dataMod.S3ExportTaskDefinitionMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.S3ExportTaskDefinitionMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,5 +35,5 @@ object S3ExportTaskDefinition {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromMap(d: S3ExportTaskDefinitionMap): typings.awsGreengrassCoreSdk.dataMod.S3ExportTaskDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.S3ExportTaskDefinition]
+  inline def fromMap(d: S3ExportTaskDefinitionMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.S3ExportTaskDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.S3ExportTaskDefinition]
 }

@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsNotificationOutlinedMod.NotificationOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/NotificationOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/NotificationOutlined", JSImport.Default)
   @js.native
   val default: NotificationOutlinedIconType = js.native
-  
-  @js.native
-  trait NotificationOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_NotificationOutlinedIconType: String = js.native
-  }
   
   type _To = NotificationOutlinedIconType
   

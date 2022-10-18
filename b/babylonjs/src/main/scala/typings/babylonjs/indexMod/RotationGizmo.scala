@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.rotationGizmoMod.RotationGizmoOptions
+import typings.babylonjs.gizmosRotationGizmoMod.RotationGizmoOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +19,11 @@ open class RotationGizmo protected ()
     * @param options More options
     */
   def this(
-    gizmoLayer: js.UndefOr[typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer],
+    gizmoLayer: js.UndefOr[typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer],
     tessellation: js.UndefOr[Double],
     useEulerRotation: js.UndefOr[Boolean],
     thickness: js.UndefOr[Double],
-    gizmoManager: js.UndefOr[typings.babylonjs.gizmoManagerMod.GizmoManager],
+    gizmoManager: js.UndefOr[typings.babylonjs.gizmosGizmoManagerMod.GizmoManager],
     options: js.UndefOr[RotationGizmoOptions]
   ) = this()
 }

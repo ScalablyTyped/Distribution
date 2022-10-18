@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SimplificationType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.meshSimplificationMod.SimplificationType & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.meshesMeshSimplificationMod.SimplificationType & Double] = js.native
   
-  /* 0 */ val QUADRATIC: typings.babylonjs.meshSimplificationMod.SimplificationType.QUADRATIC & Double = js.native
+  /* 0 */ val QUADRATIC: typings.babylonjs.meshesMeshSimplificationMod.SimplificationType.QUADRATIC & Double = js.native
 }

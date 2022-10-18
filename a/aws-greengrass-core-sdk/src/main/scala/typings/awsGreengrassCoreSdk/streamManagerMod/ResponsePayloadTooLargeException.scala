@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "ResponsePayloadTooLargeException")
 @js.native
 open class ResponsePayloadTooLargeException ()
-  extends typings.awsGreengrassCoreSdk.clientMod.ResponsePayloadTooLargeException
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.ResponsePayloadTooLargeException

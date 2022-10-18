@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudscheduler.gapi.client.cloudscheduler
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait PubsubTarget extends StObject {
   
   /** Attributes for PubsubMessage. Pubsub message must contain either non-empty data, or at least one attribute. */
   var attributes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudscheduler.maximMazurokGapiClientCloudschedulerStrings.PubsubTarget & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The message payload for PubsubMessage. Pubsub message must contain either non-empty data, or at least one attribute. */
@@ -34,9 +31,7 @@ object PubsubTarget {
   extension [Self <: PubsubTarget](x: Self) {
     
     inline def setAttributes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudscheduler.maximMazurokGapiClientCloudschedulerStrings.PubsubTarget & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)

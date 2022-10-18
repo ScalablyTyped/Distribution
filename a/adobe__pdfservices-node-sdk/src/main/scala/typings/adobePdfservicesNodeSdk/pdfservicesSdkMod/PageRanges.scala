@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@adobe/pdfservices-node-sdk/pdfservices-sdk", "PageRanges")
 @js.native
 open class PageRanges ()
-  extends typings.adobePdfservicesNodeSdk.pageRangesMod.PageRanges
+  extends typings.adobePdfservicesNodeSdk.operationOptionPageRangesMod.PageRanges

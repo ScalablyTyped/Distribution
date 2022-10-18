@@ -1,7 +1,7 @@
 
 # Scala.js typings for sentry__webpack-plugin
 
-Typings are for version 1.19.0
+Typings are for version 1.19.1
 
 ## Library description:
 Official webpack plugin for Sentry

@@ -3,7 +3,7 @@ package typings.blueprintjsCore.mod
 import typings.blueprintjsCore.anon.PartialTabsProps
 import typings.blueprintjsCore.anon.SelectedTabId
 import typings.blueprintjsCore.anon.TypeofTab
-import typings.blueprintjsCore.tabsMod.TabsProps
+import typings.blueprintjsCore.libEsmComponentsTabsTabsMod.TabsProps
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Tabs")
 @js.native
 open class Tabs protected ()
-  extends typings.blueprintjsCore.componentsMod.Tabs {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Tabs {
   def this(props: TabsProps) = this()
 }
 /* static members */

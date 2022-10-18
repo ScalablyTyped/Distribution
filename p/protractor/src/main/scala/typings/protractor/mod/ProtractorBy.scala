@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("protractor", "ProtractorBy")
 @js.native
 open class ProtractorBy ()
-  extends typings.protractor.locatorsMod.ProtractorBy
+  extends typings.protractor.builtLocatorsMod.ProtractorBy

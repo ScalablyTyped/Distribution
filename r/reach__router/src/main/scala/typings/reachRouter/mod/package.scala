@@ -1,6 +1,5 @@
 package typings.reachRouter.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.reachRouter.anon.Default
 import typings.reachRouter.anon.Dictparam
 import typings.reachRouter.anon.State
@@ -43,9 +42,7 @@ inline def useMatch(pathname: String): Null | Dictparam = ^.asInstanceOf[js.Dyna
 
 inline def useNavigate(): NavigateFn = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigate")().asInstanceOf[NavigateFn]
 
-inline def useParams[TParams /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ Param in keyof TParams ]:? string}
-  */ typings.reachRouter.reachRouterStrings.useParams & TopLevel[Any] */](): TParams = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[TParams]
+inline def useParams[TParams /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ Param in keyof TParams ]:? string} */ js.Any */](): TParams = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[TParams]
 
 type HistoryListener = js.Function1[/* parameter */ HistoryListenerParameter, Unit]
 

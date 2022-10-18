@@ -1,8 +1,8 @@
 package typings.typeformEmbed
 
-import typings.typeformEmbed.behavioralTypeMod.BehavioralType
-import typings.typeformEmbed.embedTypesMod.EmbedType
-import typings.typeformEmbed.loadOptionsFromAttributesMod.Transformation
+import typings.typeformEmbed.typesBaseBehavioralTypeMod.BehavioralType
+import typings.typeformEmbed.typesBaseEmbedTypesMod.EmbedType
+import typings.typeformEmbed.typesUtilsLoadOptionsFromAttributesMod.Transformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

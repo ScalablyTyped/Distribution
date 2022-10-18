@@ -21,8 +21,8 @@ trait NodeDeletedEventArgs extends StObject {
   
   /**
     * Gets the node which was just deleted from the {@link Office.CustomXmlPart} object.
-    * 
-    * Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a "disconnected" node in 
+    *
+    * Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a "disconnected" node in
     * that you can query down from the node, but you cannot query up the tree - the node appears to exist alone.
     */
   var oldNode: CustomXmlNode

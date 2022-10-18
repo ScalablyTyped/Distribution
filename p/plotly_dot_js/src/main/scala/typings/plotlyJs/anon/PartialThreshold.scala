@@ -1,5 +1,7 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.mod.GaugeLine
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<plotly.js.plotly.js.Threshold> */
 trait PartialThreshold extends StObject {
   
-  var line: js.UndefOr[PartialGaugeLine] = js.undefined
+  var line: js.UndefOr[Partial[GaugeLine]] = js.undefined
   
   var thickness: js.UndefOr[Double] = js.undefined
   
@@ -22,7 +24,7 @@ object PartialThreshold {
   
   extension [Self <: PartialThreshold](x: Self) {
     
-    inline def setLine(value: PartialGaugeLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Partial[GaugeLine]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     

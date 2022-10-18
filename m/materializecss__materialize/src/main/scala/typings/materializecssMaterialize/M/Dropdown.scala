@@ -5,8 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<DropdownOptions> * / any */ trait Dropdown extends StObject {
+trait Dropdown
+  extends StObject
+     with Component[DropdownOptions] {
   
   /**
     * Close dropdown
@@ -52,15 +53,18 @@ object Dropdown {
   
   inline def apply(
     close: () => Unit,
+    destroy: () => Unit,
     dropdownEl: Element,
+    el: Element,
     focusedIndex: Double,
     id: String,
     isOpen: Boolean,
     isScrollable: Boolean,
     open: () => Unit,
+    options: DropdownOptions,
     recalculateDimensions: () => Unit
   ): Dropdown = {
-    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), dropdownEl = dropdownEl.asInstanceOf[js.Any], focusedIndex = focusedIndex.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], isScrollable = isScrollable.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), recalculateDimensions = js.Any.fromFunction0(recalculateDimensions))
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), dropdownEl = dropdownEl.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any], focusedIndex = focusedIndex.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], isScrollable = isScrollable.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any], recalculateDimensions = js.Any.fromFunction0(recalculateDimensions))
     __obj.asInstanceOf[Dropdown]
   }
   

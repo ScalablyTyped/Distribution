@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait AuditLog extends StObject {
   
   /** Other service-specific data about the request, response, and other information associated with the current audited event. */
   var metadata: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -37,9 +34,7 @@ trait AuditLog extends StObject {
     * include user-generated data, such as file contents. When the JSON object represented here has a proto equivalent, the proto name will be indicated in the `@‍type` property.
     */
   var request: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Metadata about the operation. */
@@ -60,9 +55,7 @@ trait AuditLog extends StObject {
     * equivalent, the proto name will be indicated in the `@‍type` property.
     */
   var resourceOriginalState: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -70,16 +63,12 @@ trait AuditLog extends StObject {
     * include user-generated data, such as file contents. When the JSON object represented here has a proto equivalent, the proto name will be indicated in the `@‍type` property.
     */
   var response: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Deprecated. Use the `metadata` field instead. Other service-specific data about the request, response, and other activities. */
   var serviceData: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** The name of the API service performing the operation. For example, `"compute.googleapis.com"`. */
@@ -108,9 +97,7 @@ object AuditLog {
     inline def setAuthorizationInfoVarargs(value: AuthorizationInfo*): Self = StObject.set(x, "authorizationInfo", js.Array(value*))
     
     inline def setMetadata(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -128,9 +115,7 @@ object AuditLog {
     inline def setPolicyViolationInfoUndefined: Self = StObject.set(x, "policyViolationInfo", js.undefined)
     
     inline def setRequest(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     inline def setRequestMetadata(value: RequestMetadata): Self = StObject.set(x, "requestMetadata", value.asInstanceOf[js.Any])
@@ -148,25 +133,19 @@ object AuditLog {
     inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     inline def setResourceOriginalState(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "resourceOriginalState", value.asInstanceOf[js.Any])
     
     inline def setResourceOriginalStateUndefined: Self = StObject.set(x, "resourceOriginalState", js.undefined)
     
     inline def setResponse(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     inline def setServiceData(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
     
     inline def setServiceDataUndefined: Self = StObject.set(x, "serviceData", js.undefined)

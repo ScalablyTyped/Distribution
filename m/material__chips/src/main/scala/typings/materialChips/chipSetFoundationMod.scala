@@ -1,12 +1,12 @@
 package typings.materialChips
 
 import typings.materialBase.foundationMod.MDCFoundation
+import typings.materialChips.actionConstantsMod.MDCChipActionType
 import typings.materialChips.anon.PartialMDCChipSetAdapter
 import typings.materialChips.chipSetAdapterMod.MDCChipSetAdapter
 import typings.materialChips.chipSetTypesMod.ChipAnimationEvent
 import typings.materialChips.chipSetTypesMod.ChipInteractionEvent
 import typings.materialChips.chipSetTypesMod.ChipNavigationEvent
-import typings.materialChips.constantsMod.MDCChipActionType
 import typings.std.ReadonlySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -10,12 +10,12 @@ object KeyboardSpinDirection extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection & Double
+    typings.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection & Double
   ] = js.native
   
-  /* -1 */ val down: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.down & Double = js.native
+  /* -1 */ val down: typings.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection.down & Double = js.native
   
-  /* 0 */ val notSpinning: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.notSpinning & Double = js.native
+  /* 0 */ val notSpinning: typings.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection.notSpinning & Double = js.native
   
-  /* 1 */ val up: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.up & Double = js.native
+  /* 1 */ val up: typings.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection.up & Double = js.native
 }

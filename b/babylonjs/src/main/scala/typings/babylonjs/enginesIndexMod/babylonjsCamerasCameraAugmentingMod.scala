@@ -1,6 +1,6 @@
 package typings.babylonjs.enginesIndexMod
 
-import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
+import typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

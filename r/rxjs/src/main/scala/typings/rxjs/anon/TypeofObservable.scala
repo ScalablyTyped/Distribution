@@ -2,9 +2,9 @@ package typings.rxjs.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.rxjs.internalObservableMod.Observable
-import typings.rxjs.internalTypesMod.TeardownLogic
-import typings.rxjs.subscriberMod.Subscriber
+import typings.rxjs.distTypesInternalObservableMod.Observable
+import typings.rxjs.distTypesInternalSubscriberMod.Subscriber
+import typings.rxjs.distTypesInternalTypesMod.TeardownLogic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

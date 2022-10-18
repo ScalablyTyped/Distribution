@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait Revision extends StObject {
   
   /** Links for exporting Docs Editors files to specific formats. */
   var exportLinks: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.Revision & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The ID of the revision. */
@@ -67,9 +64,7 @@ object Revision {
   extension [Self <: Revision](x: Self) {
     
     inline def setExportLinks(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.Revision & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "exportLinks", value.asInstanceOf[js.Any])
     
     inline def setExportLinksUndefined: Self = StObject.set(x, "exportLinks", js.undefined)

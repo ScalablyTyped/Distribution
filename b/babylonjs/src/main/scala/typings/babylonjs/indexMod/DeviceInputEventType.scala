@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DeviceInputEventType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.deviceInputEventsMod.DeviceInputEventType & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.eventsDeviceInputEventsMod.DeviceInputEventType & Double] = js.native
   
-  /* 1 */ val PointerDown: typings.babylonjs.deviceInputEventsMod.DeviceInputEventType.PointerDown & Double = js.native
+  /* 1 */ val PointerDown: typings.babylonjs.eventsDeviceInputEventsMod.DeviceInputEventType.PointerDown & Double = js.native
   
-  /* 0 */ val PointerMove: typings.babylonjs.deviceInputEventsMod.DeviceInputEventType.PointerMove & Double = js.native
+  /* 0 */ val PointerMove: typings.babylonjs.eventsDeviceInputEventsMod.DeviceInputEventType.PointerMove & Double = js.native
   
-  /* 2 */ val PointerUp: typings.babylonjs.deviceInputEventsMod.DeviceInputEventType.PointerUp & Double = js.native
+  /* 2 */ val PointerUp: typings.babylonjs.eventsDeviceInputEventsMod.DeviceInputEventType.PointerUp & Double = js.native
 }

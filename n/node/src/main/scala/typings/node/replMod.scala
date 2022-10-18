@@ -1,5 +1,8 @@
 package typings.node
 
+import typings.node.NodeJS.ReadOnlyDict
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.anon.Options
 import typings.node.nodeStrings.SIGCONT
 import typings.node.nodeStrings.SIGINT
@@ -15,8 +18,6 @@ import typings.node.readlineMod.Completer
 import typings.node.readlineMod.CompleterResult
 import typings.node.vmMod.Context
 import typings.std.Error
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,7 +99,7 @@ object replMod {
     /**
       * The commands registered via `replServer.defineCommand()`.
       */
-    val commands: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadOnlyDict<REPLCommand> */ Any = js.native
+    val commands: ReadOnlyDict[REPLCommand] = js.native
     
     /**
       * Specified in the REPL options, this is the function to use for custom Tab auto-completion.
@@ -216,12 +217,12 @@ object replMod {
     /**
       * The `Readable` stream from which REPL input will be read.
       */
-    val input: ReadableStream[Any] = js.native
+    val input: ReadableStream = js.native
     
     /**
       * @deprecated since v14.3.0 - Use `input` instead.
       */
-    val inputStream: ReadableStream[Any] = js.native
+    val inputStream: ReadableStream = js.native
     
     /**
       * The last evaluation result from the REPL (assigned to the `_` variable inside of the REPL).
@@ -281,12 +282,12 @@ object replMod {
     /**
       * The `Writable` stream to which REPL output will be written.
       */
-    val output: WritableStream[Any] = js.native
+    val output: WritableStream = js.native
     
     /**
       * @deprecated since v14.3.0 - Use `output` instead.
       */
-    val outputStream: WritableStream[Any] = js.native
+    val outputStream: WritableStream = js.native
     
     def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependListener")
@@ -534,13 +535,13 @@ object replMod {
       * The `Readable` stream from which REPL input will be read.
       * @default process.stdin
       */
-    var input: js.UndefOr[ReadableStream[Any]] = js.undefined
+    var input: js.UndefOr[ReadableStream] = js.undefined
     
     /**
       * The `Writable` stream to which REPL output will be written.
       * @default process.stdout
       */
-    var output: js.UndefOr[WritableStream[Any]] = js.undefined
+    var output: js.UndefOr[WritableStream] = js.undefined
     
     /**
       * Defines if the repl prints output previews or not.
@@ -631,11 +632,11 @@ object replMod {
       
       inline def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
       
-      inline def setInput(value: ReadableStream[Any]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: ReadableStream): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
       inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      inline def setOutput(value: WritableStream[Any]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: WritableStream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
       inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       

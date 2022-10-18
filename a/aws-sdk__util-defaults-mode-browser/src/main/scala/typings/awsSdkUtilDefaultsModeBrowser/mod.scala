@@ -1,8 +1,8 @@
 package typings.awsSdkUtilDefaultsModeBrowser
 
-import typings.awsSdkSmithyClient.defaultsModeMod.ResolvedDefaultsMode
-import typings.awsSdkTypes.utilMod.Provider
-import typings.awsSdkUtilDefaultsModeBrowser.resolveDefaultsModeConfigMod.ResolveDefaultsModeConfigOptions
+import typings.awsSdkSmithyClient.distTypesDefaultsModeMod.ResolvedDefaultsMode
+import typings.awsSdkTypes.distTypesUtilMod.Provider
+import typings.awsSdkUtilDefaultsModeBrowser.distTypesResolveDefaultsModeConfigMod.ResolveDefaultsModeConfigOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

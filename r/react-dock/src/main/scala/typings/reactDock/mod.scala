@@ -2,7 +2,7 @@ package typings.reactDock
 
 import typings.reactDock.anon.DefaultSize
 import typings.reactDock.anon.DimMode
-import typings.reactDock.dockMod.default
+import typings.reactDock.libTypesDockMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

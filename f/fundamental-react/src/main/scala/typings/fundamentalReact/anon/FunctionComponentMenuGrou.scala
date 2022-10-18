@@ -1,7 +1,7 @@
 package typings.fundamentalReact.anon
 
 import typings.fundamentalReact.fundamentalReactStrings.MenuDotGroup
-import typings.fundamentalReact.menuMod.MenuGroupProps
+import typings.fundamentalReact.libMenuMenuMod.MenuGroupProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

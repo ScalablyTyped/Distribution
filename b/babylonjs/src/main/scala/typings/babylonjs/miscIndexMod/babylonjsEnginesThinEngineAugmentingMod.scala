@@ -1,6 +1,6 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.internalTextureMod.InternalTexture
+import typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject

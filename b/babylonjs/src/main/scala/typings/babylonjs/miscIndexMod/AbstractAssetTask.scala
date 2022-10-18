@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/index", "AbstractAssetTask")
+/* note: abstract class */ @JSImport("babylonjs/Misc/index", "AbstractAssetTask")
 @js.native
-abstract class AbstractAssetTask protected ()
-  extends typings.babylonjs.assetsManagerMod.AbstractAssetTask {
+open class AbstractAssetTask protected ()
+  extends typings.babylonjs.miscAssetsManagerMod.AbstractAssetTask {
   /**
     * Creates a new AssetsManager
     * @param name defines the name of the task

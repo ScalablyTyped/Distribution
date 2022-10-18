@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object performanceDistFunctionsMod {
   
-  @JSImport("firebase/compat/performance/dist/functions", JSImport.Namespace)
+  @JSImport("firebase/performance/dist/functions", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

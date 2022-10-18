@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsDiffOutlinedMod.DiffOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diffOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/DiffOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/DiffOutlined", JSImport.Default)
   @js.native
   val default: DiffOutlinedIconType = js.native
-  
-  @js.native
-  trait DiffOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_DiffOutlinedIconType: String = js.native
-  }
   
   type _To = DiffOutlinedIconType
   

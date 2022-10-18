@@ -1,7 +1,7 @@
 package typings.blueprintjsTable.mod
 
 import typings.blueprintjsTable.anon.Truncated
-import typings.blueprintjsTable.editableCellMod.IEditableCellProps
+import typings.blueprintjsTable.libEsmCellEditableCellMod.IEditableCellProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "EditableCell")
 @js.native
 open class EditableCell protected ()
-  extends typings.blueprintjsTable.editableCellMod.EditableCell {
+  extends typings.blueprintjsTable.libEsmCellEditableCellMod.EditableCell {
   def this(props: IEditableCellProps) = this()
 }
 /* static members */

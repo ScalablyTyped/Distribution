@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCopyrightOutlinedMod.CopyrightOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object copyrightOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CopyrightOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CopyrightOutlined", JSImport.Default)
   @js.native
   val default: CopyrightOutlinedIconType = js.native
-  
-  @js.native
-  trait CopyrightOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CopyrightOutlinedIconType: String = js.native
-  }
   
   type _To = CopyrightOutlinedIconType
   

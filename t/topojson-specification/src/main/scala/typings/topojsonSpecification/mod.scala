@@ -1,7 +1,6 @@
 package typings.topojsonSpecification
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.geojson.mod.BBox
 import typings.geojson.mod.GeoJsonGeometryTypes
 import typings.geojson.mod.GeoJsonProperties
@@ -276,9 +275,15 @@ object mod {
   
   type Objects[P /* <: Properties */] = StringDictionary[GeometryObject[P]]
   
-  type OrNull[T /* <: Objects[js.Object] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: T[P] | topojson-specification.topojson-specification.NullObject}
-    */ typings.topojsonSpecification.topojsonSpecificationStrings.OrNull & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: T[P] | topojson-specification.topojson-specification.NullObject}
+    }}}
+    */
+  @js.native
+  trait OrNull[T /* <: Objects[js.Object] */] extends StObject
   
   trait Point[P /* <: Properties */]
     extends StObject

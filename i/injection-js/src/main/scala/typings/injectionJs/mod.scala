@@ -1,7 +1,6 @@
 package typings.injectionJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.injectionJs.decoratorsMod.ClassDefinition
 import typings.injectionJs.forwardRefMod.ForwardRefFn
 import typings.injectionJs.metadataMod.HostDecorator
 import typings.injectionJs.metadataMod.InjectDecorator
@@ -12,7 +11,8 @@ import typings.injectionJs.metadataMod.SkipSelfDecorator
 import typings.injectionJs.providerMod.Provider
 import typings.injectionJs.reflectiveProviderMod.ReflectiveDependency
 import typings.injectionJs.reflectiveProviderMod.ResolvedReflectiveProvider
-import typings.injectionJs.resolveDependenciesMod.Constructor
+import typings.injectionJs.utilDecoratorsMod.ClassDefinition
+import typings.injectionJs.utilResolveDependenciesMod.Constructor
 import typings.std.FunctionConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +24,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Class(clsDef: ClassDefinition): typings.injectionJs.typeMod.Type[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Class")(clsDef.asInstanceOf[js.Any]).asInstanceOf[typings.injectionJs.typeMod.Type[Any]]
+  inline def Class(clsDef: ClassDefinition): typings.injectionJs.facadeTypeMod.Type[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Class")(clsDef.asInstanceOf[js.Any]).asInstanceOf[typings.injectionJs.facadeTypeMod.Type[Any]]
   
   @JSImport("injection-js", "Host")
   @js.native
@@ -71,9 +71,9 @@ object mod {
     def this(desc: String) = this()
   }
   
-  @JSImport("injection-js", "Injector")
+  /* note: abstract class */ @JSImport("injection-js", "Injector")
   @js.native
-  abstract class Injector ()
+  open class Injector ()
     extends typings.injectionJs.injectorMod.Injector
   /* static members */
   object Injector {
@@ -111,9 +111,9 @@ object mod {
     extends StObject
        with typings.injectionJs.metadataMod.Optional
   
-  @JSImport("injection-js", "ReflectiveInjector")
+  /* note: abstract class */ @JSImport("injection-js", "ReflectiveInjector")
   @js.native
-  abstract class ReflectiveInjector ()
+  open class ReflectiveInjector ()
     extends typings.injectionJs.reflectiveInjectorMod.ReflectiveInjector
   /* static members */
   object ReflectiveInjector {
@@ -290,7 +290,7 @@ object mod {
     def this(args: String*) = this()
   }
   
-  inline def forwardRef(forwardRefFn: ForwardRefFn): typings.injectionJs.typeMod.Type[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("forwardRef")(forwardRefFn.asInstanceOf[js.Any]).asInstanceOf[typings.injectionJs.typeMod.Type[Any]]
+  inline def forwardRef(forwardRefFn: ForwardRefFn): typings.injectionJs.facadeTypeMod.Type[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("forwardRef")(forwardRefFn.asInstanceOf[js.Any]).asInstanceOf[typings.injectionJs.facadeTypeMod.Type[Any]]
   
   inline def isType(v: Any): /* is injection-js.injection-js/facade/type.Type<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isType")(v.asInstanceOf[js.Any]).asInstanceOf[/* is injection-js.injection-js/facade/type.Type<any> */ Boolean]
   

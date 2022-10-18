@@ -33,9 +33,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object EnterpriseData {
   
   /** Contains information about the result from protecting or unprotecting an enterprise protected buffer. */
-  @JSGlobal("Windows.Security.EnterpriseData.BufferProtectUnprotectResult")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.BufferProtectUnprotectResult")
   @js.native
-  abstract class BufferProtectUnprotectResult ()
+  open class BufferProtectUnprotectResult ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.BufferProtectUnprotectResult {
     
@@ -49,9 +49,9 @@ object EnterpriseData {
   }
   
   /** Contains information about an enterprise protected buffer or stream. */
-  @JSGlobal("Windows.Security.EnterpriseData.DataProtectionInfo")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.DataProtectionInfo")
   @js.native
-  abstract class DataProtectionInfo ()
+  open class DataProtectionInfo ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo {
     
@@ -65,9 +65,9 @@ object EnterpriseData {
   }
   
   /** Provides access to operations that manage buffers and streams that are protected to an enterprise identity. */
-  @JSGlobal("Windows.Security.EnterpriseData.DataProtectionManager")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.DataProtectionManager")
   @js.native
-  abstract class DataProtectionManager ()
+  open class DataProtectionManager ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionManager
   object DataProtectionManager {
@@ -168,9 +168,9 @@ object EnterpriseData {
   }
   
   /** Contains information about an enterprise protected file. */
-  @JSGlobal("Windows.Security.EnterpriseData.FileProtectionInfo")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.FileProtectionInfo")
   @js.native
-  abstract class FileProtectionInfo ()
+  open class FileProtectionInfo ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.FileProtectionInfo {
     
@@ -188,9 +188,9 @@ object EnterpriseData {
   }
   
   /** Provides access to operations that manage files that are protected to an enterprise identity. */
-  @JSGlobal("Windows.Security.EnterpriseData.FileProtectionManager")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.FileProtectionManager")
   @js.native
-  abstract class FileProtectionManager ()
+  open class FileProtectionManager ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.FileProtectionManager
   object FileProtectionManager {
@@ -322,9 +322,9 @@ object EnterpriseData {
   }
   
   /** Provides access to Selective Wipe operations. */
-  @JSGlobal("Windows.Security.EnterpriseData.FileRevocationManager")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.FileRevocationManager")
   @js.native
-  abstract class FileRevocationManager ()
+  open class FileRevocationManager ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.FileRevocationManager
   object FileRevocationManager {
@@ -368,9 +368,9 @@ object EnterpriseData {
   }
   
   /** Provides data when content protection is resumed. */
-  @JSGlobal("Windows.Security.EnterpriseData.ProtectedAccessResumedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.ProtectedAccessResumedEventArgs")
   @js.native
-  abstract class ProtectedAccessResumedEventArgs ()
+  open class ProtectedAccessResumedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedAccessResumedEventArgs {
     
@@ -380,9 +380,9 @@ object EnterpriseData {
   }
   
   /** Provides data when content protection is being suspended. */
-  @JSGlobal("Windows.Security.EnterpriseData.ProtectedAccessSuspendingEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.ProtectedAccessSuspendingEventArgs")
   @js.native
-  abstract class ProtectedAccessSuspendingEventArgs ()
+  open class ProtectedAccessSuspendingEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedAccessSuspendingEventArgs {
     
@@ -403,9 +403,9 @@ object EnterpriseData {
   }
   
   /** Represents the result of an enterprise protected file that has been exported to a container file. */
-  @JSGlobal("Windows.Security.EnterpriseData.ProtectedContainerExportResult")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.ProtectedContainerExportResult")
   @js.native
-  abstract class ProtectedContainerExportResult ()
+  open class ProtectedContainerExportResult ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerExportResult {
     
@@ -419,9 +419,9 @@ object EnterpriseData {
   }
   
   /** Represents the result of an enterprise protected file that has been imported from a container file. */
-  @JSGlobal("Windows.Security.EnterpriseData.ProtectedContainerImportResult")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.ProtectedContainerImportResult")
   @js.native
-  abstract class ProtectedContainerImportResult ()
+  open class ProtectedContainerImportResult ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerImportResult {
     
@@ -435,9 +435,9 @@ object EnterpriseData {
   }
   
   /** Provides data when content protection has been revoked. */
-  @JSGlobal("Windows.Security.EnterpriseData.ProtectedContentRevokedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.ProtectedContentRevokedEventArgs")
   @js.native
-  abstract class ProtectedContentRevokedEventArgs ()
+  open class ProtectedContentRevokedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContentRevokedEventArgs {
     
@@ -447,9 +447,9 @@ object EnterpriseData {
   }
   
   /** Contains information about a newly created enterprise protected file. */
-  @JSGlobal("Windows.Security.EnterpriseData.ProtectedFileCreateResult")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.ProtectedFileCreateResult")
   @js.native
-  abstract class ProtectedFileCreateResult ()
+  open class ProtectedFileCreateResult ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedFileCreateResult {
     
@@ -511,9 +511,9 @@ object EnterpriseData {
   }
   
   /** Manages enterprise-protection policy on protected content. */
-  @JSGlobal("Windows.Security.EnterpriseData.ProtectionPolicyManager")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.ProtectionPolicyManager")
   @js.native
-  abstract class ProtectionPolicyManager ()
+  open class ProtectionPolicyManager ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.ProtectionPolicyManager {
     
@@ -713,9 +713,9 @@ object EnterpriseData {
   }
   
   /** A protected network context for an enterprise identity. The creation of the context tags all network connections made thereafter on the current thread with the identity, and allows access to enterprise resources that are access controlled by the enterprise's policy. */
-  @JSGlobal("Windows.Security.EnterpriseData.ThreadNetworkContext")
+  /* note: abstract class */ @JSGlobal("Windows.Security.EnterpriseData.ThreadNetworkContext")
   @js.native
-  abstract class ThreadNetworkContext ()
+  open class ThreadNetworkContext ()
     extends StObject
        with typings.winrtUwp.Windows.Security.EnterpriseData.ThreadNetworkContext {
     

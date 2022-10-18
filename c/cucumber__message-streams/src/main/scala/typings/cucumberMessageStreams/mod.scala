@@ -1,6 +1,6 @@
 package typings.cucumberMessageStreams
 
-import typings.cucumberMessageStreams.messageToNdjsonStreamMod.default
+import typings.cucumberMessageStreams.distCjsSrcMessageToNdjsonStreamMod.default
 import typings.cucumberMessages.mod.Envelope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +20,7 @@ object mod {
     * @param parseLine a function that parses a line. This function may ignore a line by returning null.
     */
   open class NdjsonToMessageStream ()
-    extends typings.cucumberMessageStreams.ndjsonToMessageStreamMod.default {
+    extends typings.cucumberMessageStreams.distCjsSrcNdjsonToMessageStreamMod.default {
     def this(parseLine: js.Function1[/* line */ String, Envelope | Null]) = this()
   }
 }

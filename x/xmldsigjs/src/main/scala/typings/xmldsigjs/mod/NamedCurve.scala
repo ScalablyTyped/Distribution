@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xmldsigjs", "NamedCurve")
 @js.native
 open class NamedCurve ()
-  extends typings.xmldsigjs.keyInfosMod.NamedCurve {
+  extends typings.xmldsigjs.buildTypesXmlKeyInfosMod.NamedCurve {
   def this(properties: js.Object) = this()
 }

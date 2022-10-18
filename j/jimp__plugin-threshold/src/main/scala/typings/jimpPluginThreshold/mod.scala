@@ -1,6 +1,6 @@
 package typings.jimpPluginThreshold
 
-import typings.jimpCore.etcMod.ImageCallback
+import typings.jimpCore.typesEtcMod.ImageCallback
 import typings.jimpPluginThreshold.anon.AutoGreyscale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

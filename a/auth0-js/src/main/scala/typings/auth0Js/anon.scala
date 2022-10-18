@@ -315,59 +315,20 @@ object anon {
     /** how the AuthN response is encoded and redirected back to the client. */
     var responseMode: js.UndefOr[query | fragment] = js.undefined
     
-    /** type of the response used. It can be any of the values `code` and `token` */
-    var responseType: js.UndefOr[String] = js.undefined
-    
-    /** scopes to be requested during AuthN. e.g. `openid email` */
-    var scope: String
-  }
-  object RedirectUri {
-    
-    inline def apply(scope: String): RedirectUri = {
-      val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RedirectUri]
-    }
-    
-    extension [Self <: RedirectUri](x: Self) {
-      
-      inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
-      
-      inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
-      
-      inline def setResponseMode(value: query | fragment): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
-      
-      inline def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
-      
-      inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
-      
-      inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
-      
-      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ResponseMode extends StObject {
-    
-    /** url that the Auth0 will redirect after Auth with the Authorization Response */
-    var redirectUri: js.UndefOr[String] = js.undefined
-    
-    /** how the AuthN response is encoded and redirected back to the client. */
-    var responseMode: js.UndefOr[query | fragment] = js.undefined
-    
     /** type of the response used. */
     var responseType: js.UndefOr[code | token] = js.undefined
     
     /** scopes to be requested during AuthN. e.g. `openid email` */
     var scope: js.UndefOr[String] = js.undefined
   }
-  object ResponseMode {
+  object RedirectUri {
     
-    inline def apply(): ResponseMode = {
+    inline def apply(): RedirectUri = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ResponseMode]
+      __obj.asInstanceOf[RedirectUri]
     }
     
-    extension [Self <: ResponseMode](x: Self) {
+    extension [Self <: RedirectUri](x: Self) {
       
       inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       
@@ -384,6 +345,45 @@ object anon {
       inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    }
+  }
+  
+  trait ResponseMode extends StObject {
+    
+    /** url that the Auth0 will redirect after Auth with the Authorization Response */
+    var redirectUri: js.UndefOr[String] = js.undefined
+    
+    /** how the AuthN response is encoded and redirected back to the client. */
+    var responseMode: js.UndefOr[query | fragment] = js.undefined
+    
+    /** type of the response used. It can be any of the values `code` and `token` */
+    var responseType: js.UndefOr[String] = js.undefined
+    
+    /** scopes to be requested during AuthN. e.g. `openid email` */
+    var scope: String
+  }
+  object ResponseMode {
+    
+    inline def apply(scope: String): ResponseMode = {
+      val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ResponseMode]
+    }
+    
+    extension [Self <: ResponseMode](x: Self) {
+      
+      inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+      
+      inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+      
+      inline def setResponseMode(value: query | fragment): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
+      
+      inline def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
+      
+      inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      
+      inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+      
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   

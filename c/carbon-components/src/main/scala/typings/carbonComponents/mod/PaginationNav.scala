@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "PaginationNav")
 @js.native
 open class PaginationNav protected ()
-  extends typings.carbonComponents.componentsMod.PaginationNav {
+  extends typings.carbonComponents.globalsJsComponentsMod.PaginationNav {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialPaginationNavOptio) = this()
 }

@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A frame source that provides depth frames. */
-@JSGlobal("Windows.Devices.Perception.PerceptionDepthFrameSource")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.PerceptionDepthFrameSource")
 @js.native
-abstract class PerceptionDepthFrameSource ()
+open class PerceptionDepthFrameSource ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.PerceptionDepthFrameSource
 object PerceptionDepthFrameSource {

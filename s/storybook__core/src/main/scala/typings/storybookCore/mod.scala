@@ -1,15 +1,20 @@
 package typings.storybookCore
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.storybookClientApi.anon.Channel
-import typings.storybookClientApi.typesMod.ClientApiParams
-import typings.storybookCore.anon.DecorateStory
-import typings.storybookCore.typesMod.RenderStoryFunction
+import org.scalablytyped.runtime.Instantiable0
+import typings.std.Element
+import typings.storybookCoreClient.anon.Configure
+import typings.storybookCoreClient.anon.DecorateStory
+import typings.storybookCoreClient.anon.FnCall
+import typings.storybookStore.distTs3Dot9TypesMod.RenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@storybook/core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -20,70 +25,81 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@storybook/core", "default.ClientApi")
     @js.native
-    class ClientApi protected ()
-      extends typings.storybookClientApi.mod.ClientApi {
-      def this(hasStoryStoreDecorateStoryNoStoryModuleAddMethodHotDispose: ClientApiParams) = this()
-    }
+    open class ClientApi[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] ()
+      extends typings.storybookClientApi.mod.ClientApi[TFramework]
     @JSImport("@storybook/core", "default.ClientApi")
     @js.native
-    def ClientApi: Instantiable1[
-        /* hasStoryStoreDecorateStoryNoStoryModuleAddMethodHotDispose */ ClientApiParams, 
-        typings.storybookClientApi.mod.ClientApi
+    def ClientApi: Instantiable0[
+        typings.storybookClientApi.mod.ClientApi[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any
+        ]
       ] = js.native
     inline def ClientApi_=(
-      x: Instantiable1[
-          /* hasStoryStoreDecorateStoryNoStoryModuleAddMethodHotDispose */ ClientApiParams, 
-          typings.storybookClientApi.mod.ClientApi
+      x: Instantiable0[
+          typings.storybookClientApi.mod.ClientApi[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any
+          ]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClientApi")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("@storybook/core", "default.ConfigApi")
+    @JSImport("@storybook/core", "default.StoryStore")
     @js.native
-    class ConfigApi protected ()
-      extends typings.storybookClientApi.mod.ConfigApi {
-      def this(hasStoryStore: typings.storybookClientApi.anon.StoryStore) = this()
-    }
-    @JSImport("@storybook/core", "default.ConfigApi")
+    open class StoryStore[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] ()
+      extends typings.storybookStore.mod.StoryStore[TFramework]
+    @JSImport("@storybook/core", "default.StoryStore")
     @js.native
-    def ConfigApi: Instantiable1[
-        /* hasStoryStore */ typings.storybookClientApi.anon.StoryStore, 
-        typings.storybookClientApi.mod.ConfigApi
-      ] = js.native
-    inline def ConfigApi_=(
-      x: Instantiable1[
-          /* hasStoryStore */ typings.storybookClientApi.anon.StoryStore, 
-          typings.storybookClientApi.mod.ConfigApi
+    def StoryStore: Instantiable0[
+        typings.storybookStore.mod.StoryStore[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any
         ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConfigApi")(x.asInstanceOf[js.Any])
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("@storybook/core", "default.StoryStore")
-    @js.native
-    class StoryStore protected ()
-      extends typings.storybookClientApi.mod.StoryStore {
-      def this(params: Channel) = this()
-    }
-    @JSImport("@storybook/core", "default.StoryStore")
-    @js.native
-    def StoryStore: Instantiable1[/* params */ Channel, typings.storybookClientApi.mod.StoryStore] = js.native
-    inline def StoryStore_=(x: Instantiable1[/* params */ Channel, typings.storybookClientApi.mod.StoryStore]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StoryStore")(x.asInstanceOf[js.Any])
+      ] = js.native
+    inline def StoryStore_=(
+      x: Instantiable0[
+          typings.storybookStore.mod.StoryStore[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any
+          ]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StoryStore")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/core", "default.start")
     @js.native
-    def start: js.Function2[
-        /* render */ RenderStoryFunction, 
-        /* hasDecorateStory */ js.UndefOr[DecorateStory], 
-        typings.storybookCore.anon.Channel
-      ] = js.native
-    inline def start_=(
-      x: js.Function2[
-          /* render */ RenderStoryFunction, 
-          /* hasDecorateStory */ js.UndefOr[DecorateStory], 
-          typings.storybookCore.anon.Channel
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
+    def start: FnCall = js.native
+    inline def start_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
     
+    inline def toId(kind: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toId")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def toId(kind: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toId")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
   }
+  
+  @JSImport("@storybook/core", "ClientApi")
+  @js.native
+  open class ClientApi[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] ()
+    extends typings.storybookCoreClient.mod.ClientApi[TFramework] {
+    def this(hasStoryStore: typings.storybookClientApi.anon.StoryStore[TFramework]) = this()
+  }
+  
+  @JSImport("@storybook/core", "StoryStore")
+  @js.native
+  open class StoryStore[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] ()
+    extends typings.storybookCoreClient.mod.StoryStore[TFramework]
+  
+  inline def start[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](): typings.storybookCoreClient.anon.ClientApi | Configure[TFramework] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[typings.storybookCoreClient.anon.ClientApi | Configure[TFramework]]
+  inline def start[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](
+    renderToDOM: js.Function2[
+      /* context */ RenderContext[TFramework], 
+      /* element */ Element, 
+      js.Promise[Unit] | Unit
+    ]
+  ): typings.storybookCoreClient.anon.ClientApi | Configure[TFramework] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(renderToDOM.asInstanceOf[js.Any]).asInstanceOf[typings.storybookCoreClient.anon.ClientApi | Configure[TFramework]]
+  inline def start[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](
+    renderToDOM: js.Function2[
+      /* context */ RenderContext[TFramework], 
+      /* element */ Element, 
+      js.Promise[Unit] | Unit
+    ],
+    hasDecorateStoryRender: DecorateStory[TFramework]
+  ): typings.storybookCoreClient.anon.ClientApi | Configure[TFramework] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(renderToDOM.asInstanceOf[js.Any], hasDecorateStoryRender.asInstanceOf[js.Any])).asInstanceOf[typings.storybookCoreClient.anon.ClientApi | Configure[TFramework]]
+  inline def start[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](renderToDOM: Unit, hasDecorateStoryRender: DecorateStory[TFramework]): typings.storybookCoreClient.anon.ClientApi | Configure[TFramework] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(renderToDOM.asInstanceOf[js.Any], hasDecorateStoryRender.asInstanceOf[js.Any])).asInstanceOf[typings.storybookCoreClient.anon.ClientApi | Configure[TFramework]]
+  
+  inline def toId(kind: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toId")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -1,42 +1,43 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.channelMod.NonPositionScaleChannel
-import typings.vegaLite.legendMod.LegendInternal
+import typings.vegaLite.buildSrcLegendMod.LegendConfig
+import typings.vegaTypings.typesSpecLegendMod.LegendOrient
+import typings.vegaTypings.typesSpecLegendMod.LegendType
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Legend extends StObject {
   
-  var channel: NonPositionScaleChannel
+  var legend: typings.vegaLite.buildSrcLegendMod.Legend[SignalRef]
   
-  var legend: LegendInternal
+  var legendConfig: LegendConfig[SignalRef]
   
-  var scaleType: typings.vegaLite.scaleMod.ScaleType
+  var legendType: LegendType
   
-  var timeUnit: js.UndefOr[typings.vegaLite.srcTimeunitMod.TimeUnit] = js.undefined
+  var orient: LegendOrient
 }
 object Legend {
   
   inline def apply(
-    channel: NonPositionScaleChannel,
-    legend: LegendInternal,
-    scaleType: typings.vegaLite.scaleMod.ScaleType
+    legend: typings.vegaLite.buildSrcLegendMod.Legend[SignalRef],
+    legendConfig: LegendConfig[SignalRef],
+    legendType: LegendType,
+    orient: LegendOrient
   ): Legend = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], scaleType = scaleType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(legend = legend.asInstanceOf[js.Any], legendConfig = legendConfig.asInstanceOf[js.Any], legendType = legendType.asInstanceOf[js.Any], orient = orient.asInstanceOf[js.Any])
     __obj.asInstanceOf[Legend]
   }
   
   extension [Self <: Legend](x: Self) {
     
-    inline def setChannel(value: NonPositionScaleChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setLegend(value: typings.vegaLite.buildSrcLegendMod.Legend[SignalRef]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
-    inline def setLegend(value: LegendInternal): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegendConfig(value: LegendConfig[SignalRef]): Self = StObject.set(x, "legendConfig", value.asInstanceOf[js.Any])
     
-    inline def setScaleType(value: typings.vegaLite.scaleMod.ScaleType): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
+    inline def setLegendType(value: LegendType): Self = StObject.set(x, "legendType", value.asInstanceOf[js.Any])
     
-    inline def setTimeUnit(value: typings.vegaLite.srcTimeunitMod.TimeUnit): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
-    
-    inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
+    inline def setOrient(value: LegendOrient): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
   }
 }

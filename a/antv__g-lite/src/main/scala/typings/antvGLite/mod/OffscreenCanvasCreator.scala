@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "OffscreenCanvasCreator")
 @js.native
 open class OffscreenCanvasCreator ()
-  extends typings.antvGLite.servicesMod.OffscreenCanvasCreator
+  extends typings.antvGLite.distServicesMod.OffscreenCanvasCreator

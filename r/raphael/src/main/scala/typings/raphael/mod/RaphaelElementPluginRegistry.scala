@@ -1,47 +1,5 @@
 package typings.raphael.mod
 
-import typings.raphael.anon.PartialRaphaelAttributes
-import typings.raphael.anon.PartialRaphaelGlowSetting
-import typings.raphael.raphaelStrings.SVG
-import typings.raphael.raphaelStrings.VML
-import typings.raphael.raphaelStrings.`arrow-end`
-import typings.raphael.raphaelStrings.`clip-rect`
-import typings.raphael.raphaelStrings.`fill-opacity`
-import typings.raphael.raphaelStrings.`font-family`
-import typings.raphael.raphaelStrings.`font-size`
-import typings.raphael.raphaelStrings.`font-weight`
-import typings.raphael.raphaelStrings.`stroke-dasharray`
-import typings.raphael.raphaelStrings.`stroke-linecap`
-import typings.raphael.raphaelStrings.`stroke-linejoin`
-import typings.raphael.raphaelStrings.`stroke-miterlimit`
-import typings.raphael.raphaelStrings.`stroke-opacity`
-import typings.raphael.raphaelStrings.`stroke-width`
-import typings.raphael.raphaelStrings.`text-anchor`
-import typings.raphael.raphaelStrings.cursor
-import typings.raphael.raphaelStrings.cx
-import typings.raphael.raphaelStrings.cy
-import typings.raphael.raphaelStrings.fill
-import typings.raphael.raphaelStrings.font
-import typings.raphael.raphaelStrings.height
-import typings.raphael.raphaelStrings.href
-import typings.raphael.raphaelStrings.opacity
-import typings.raphael.raphaelStrings.path
-import typings.raphael.raphaelStrings.r_
-import typings.raphael.raphaelStrings.rx
-import typings.raphael.raphaelStrings.ry
-import typings.raphael.raphaelStrings.src
-import typings.raphael.raphaelStrings.stroke
-import typings.raphael.raphaelStrings.target
-import typings.raphael.raphaelStrings.text
-import typings.raphael.raphaelStrings.title
-import typings.raphael.raphaelStrings.transform
-import typings.raphael.raphaelStrings.width
-import typings.raphael.raphaelStrings.x
-import typings.raphael.raphaelStrings.y
-import typings.std.MouseEvent
-import typings.std.Parameters
-import typings.std.ReturnType
-import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,1647 +7,211 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined {[ P in keyof raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> ]: raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>[P] extends (args : any): any? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>[P]>, std.ReturnType<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>[P]>> : never} */
 trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] extends StObject {
   
-  var animate: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function4[
-        /* targetAttributes */ PartialRaphaelAttributes, 
-        /* durationMilliseconds */ Double, 
-        /* easing */ js.UndefOr[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula], 
-        /* onAnimationComplete */ js.UndefOr[RaphaelOnAnimationCompleteHandler[this.type]], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function4[
-        /* targetAttributes */ PartialRaphaelAttributes, 
-        /* durationMilliseconds */ Double, 
-        /* easing */ js.UndefOr[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula], 
-        /* onAnimationComplete */ js.UndefOr[RaphaelOnAnimationCompleteHandler[this.type]], 
-        this.type
-      ]
-    ]
-  ]
+  var animate: /* import warning: importer.ImportType#apply Failed type conversion: (targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+  {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+  {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this>, std.ReturnType<(targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+  {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this>> : never */ js.Any
   
-  var animateWith: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function6[
-        /* otherElement */ RaphaelElement[
-          TTechnology, 
-          /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-        ], 
-        /* otherAnimation */ RaphaelAnimation, 
-        /* targetAttributes */ PartialRaphaelAttributes, 
-        /* durationMilliseconds */ Double, 
-        /* easing */ js.UndefOr[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula], 
-        /* onAnimationComplete */ js.UndefOr[RaphaelOnAnimationCompleteHandler[this.type]], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function6[
-        /* otherElement */ RaphaelElement[
-          TTechnology, 
-          /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-        ], 
-        /* otherAnimation */ RaphaelAnimation, 
-        /* targetAttributes */ PartialRaphaelAttributes, 
-        /* durationMilliseconds */ Double, 
-        /* easing */ js.UndefOr[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula], 
-        /* onAnimationComplete */ js.UndefOr[RaphaelOnAnimationCompleteHandler[this.type]], 
-        this.type
-      ]
-    ]
-  ]
+  var animateWith: /* import warning: importer.ImportType#apply Failed type conversion: (otherElement : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>, otherAnimation : raphael.raphael.RaphaelAnimation, targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+  {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(otherElement : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>, otherAnimation : raphael.raphael.RaphaelAnimation, targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+  {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this>, std.ReturnType<(otherElement : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>, otherAnimation : raphael.raphael.RaphaelAnimation, targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+  {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this>> : never */ js.Any
   
-  var attr: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function2[
-        /* attributeName */ `arrow-end` | `clip-rect` | cursor | cx | cy | fill | `fill-opacity` | font | `font-family` | `font-size` | `font-weight` | height | href | opacity | path | r_ | rx | ry | src | stroke | `stroke-dasharray` | `stroke-linecap` | `stroke-linejoin` | `stroke-miterlimit` | `stroke-opacity` | `stroke-width` | target | text | `text-anchor` | title | transform | width | x | y, 
-        /* attributeValue */ js.UndefOr[
-          /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelAttributes['arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'] */ js.Any
-        ], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function2[
-        /* attributeName */ `arrow-end` | `clip-rect` | cursor | cx | cy | fill | `fill-opacity` | font | `font-family` | `font-size` | `font-weight` | height | href | opacity | path | r_ | rx | ry | src | stroke | `stroke-dasharray` | `stroke-linecap` | `stroke-linejoin` | `stroke-miterlimit` | `stroke-opacity` | `stroke-width` | target | text | `text-anchor` | title | transform | width | x | y, 
-        /* attributeValue */ js.UndefOr[
-          /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelAttributes['arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'] */ js.Any
-        ], 
-        this.type
-      ]
-    ]
-  ]
+  var attr: /* import warning: importer.ImportType#apply Failed type conversion: <K extends 'arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'>(attributeName : K, attributeValue : raphael.raphael.RaphaelAttributes[K] | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<<K extends 'arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'>(attributeName : K, attributeValue : raphael.raphael.RaphaelAttributes[K] | undefined): this>, std.ReturnType<<K extends 'arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'>(attributeName : K, attributeValue : raphael.raphael.RaphaelAttributes[K] | undefined): this>> : never */ js.Any
   
-  var click: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var click: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
   @JSName("clone")
-  var clone_FRaphaelElementPluginRegistry: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function0[this.type]], 
-    ReturnType[js.Function0[this.type]]
-  ]
+  var clone_FRaphaelElementPluginRegistry: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any
   
-  var data: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function1[/* key */ String, Any]], 
-    ReturnType[js.Function1[/* key */ String, Any]]
-  ]
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: (key : string): any extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(key : string): any>, std.ReturnType<(key : string): any>> : never */ js.Any
   
-  var dblclick: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var dblclick: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
-  var drag: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function6[
-        /* onMoveHandler */ RaphaelDragOnMoveHandler[RaphaelUnwrapElement[TTechnology, this.type]], 
-        /* onStartHandler */ RaphaelDragOnStartHandler[RaphaelUnwrapElement[TTechnology, this.type]], 
-        /* onEndHandler */ RaphaelDragOnEndHandler[RaphaelUnwrapElement[TTechnology, this.type]], 
-        /* moveThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, this.type]], 
-        /* startThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, this.type]], 
-        /* endThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, this.type]], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function6[
-        /* onMoveHandler */ RaphaelDragOnMoveHandler[RaphaelUnwrapElement[TTechnology, this.type]], 
-        /* onStartHandler */ RaphaelDragOnStartHandler[RaphaelUnwrapElement[TTechnology, this.type]], 
-        /* onEndHandler */ RaphaelDragOnEndHandler[RaphaelUnwrapElement[TTechnology, this.type]], 
-        /* moveThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, this.type]], 
-        /* startThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, this.type]], 
-        /* endThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, this.type]], 
-        this.type
-      ]
-    ]
-  ]
+  var drag: /* import warning: importer.ImportType#apply Failed type conversion: <MoveThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, StartThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, EndThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onMoveHandler : raphael.raphael.RaphaelDragOnMoveHandler<MoveThisContext>, onStartHandler : raphael.raphael.RaphaelDragOnStartHandler<StartThisContext>, onEndHandler : raphael.raphael.RaphaelDragOnEndHandler<EndThisContext>, moveThisContext : MoveThisContext | undefined, startThisContext : StartThisContext | undefined, endThisContext : EndThisContext | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<<MoveThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, StartThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, EndThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onMoveHandler : raphael.raphael.RaphaelDragOnMoveHandler<MoveThisContext>, onStartHandler : raphael.raphael.RaphaelDragOnStartHandler<StartThisContext>, onEndHandler : raphael.raphael.RaphaelDragOnEndHandler<EndThisContext>, moveThisContext : MoveThisContext | undefined, startThisContext : StartThisContext | undefined, endThisContext : EndThisContext | undefined): this>, std.ReturnType<<MoveThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, StartThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, EndThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onMoveHandler : raphael.raphael.RaphaelDragOnMoveHandler<MoveThisContext>, onStartHandler : raphael.raphael.RaphaelDragOnStartHandler<StartThisContext>, onEndHandler : raphael.raphael.RaphaelDragOnEndHandler<EndThisContext>, moveThisContext : MoveThisContext | undefined, startThisContext : StartThisContext | undefined, endThisContext : EndThisContext | undefined): this>> : never */ js.Any
   
-  var getBBox: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], RaphaelAxisAlignedBoundingBox]
-    ], 
-    ReturnType[
-      js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], RaphaelAxisAlignedBoundingBox]
-    ]
-  ]
+  var getBBox: /* import warning: importer.ImportType#apply Failed type conversion: (isWithoutTransform : boolean | undefined): raphael.raphael.RaphaelAxisAlignedBoundingBox extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(isWithoutTransform : boolean | undefined): raphael.raphael.RaphaelAxisAlignedBoundingBox>, std.ReturnType<(isWithoutTransform : boolean | undefined): raphael.raphael.RaphaelAxisAlignedBoundingBox>> : never */ js.Any
   
-  var glow: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[/* glow */ js.UndefOr[PartialRaphaelGlowSetting], RaphaelSet[TTechnology]]
-    ], 
-    ReturnType[
-      js.Function1[/* glow */ js.UndefOr[PartialRaphaelGlowSetting], RaphaelSet[TTechnology]]
-    ]
-  ]
+  var glow: /* import warning: importer.ImportType#apply Failed type conversion: (glow : / * Inlined std.Partial<raphael.raphael.RaphaelGlowSettings> * /
+  {  width :number | undefined,   fill :boolean | undefined,   color :string | undefined,   offsety :number | undefined,   offsetx :number | undefined,   opacity :number | undefined} | undefined): raphael.raphael.RaphaelSet<TTechnology> extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(glow : / * Inlined std.Partial<raphael.raphael.RaphaelGlowSettings> * /
+  {  width :number | undefined,   fill :boolean | undefined,   color :string | undefined,   offsety :number | undefined,   offsetx :number | undefined,   opacity :number | undefined} | undefined): raphael.raphael.RaphaelSet<TTechnology>>, std.ReturnType<(glow : / * Inlined std.Partial<raphael.raphael.RaphaelGlowSettings> * /
+  {  width :number | undefined,   fill :boolean | undefined,   color :string | undefined,   offsety :number | undefined,   offsetx :number | undefined,   opacity :number | undefined} | undefined): raphael.raphael.RaphaelSet<TTechnology>>> : never */ js.Any
   
-  var hide: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function0[this.type]], 
-    ReturnType[js.Function0[this.type]]
-  ]
+  var hide: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any
   
-  var hover: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function4[
-        /* onHoverInHandler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        /* onHoverOutHandler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        /* hoverInThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, this.type]], 
-        /* hoverOutThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, this.type]], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function4[
-        /* onHoverInHandler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        /* onHoverOutHandler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        /* hoverInThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, this.type]], 
-        /* hoverOutThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, this.type]], 
-        this.type
-      ]
-    ]
-  ]
+  var hover: /* import warning: importer.ImportType#apply Failed type conversion: <HoverInThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, HoverOutThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<HoverInThisContext, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<HoverOutThisContext, std.MouseEvent>, hoverInThisContext : HoverInThisContext | undefined, hoverOutThisContext : HoverOutThisContext | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<<HoverInThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, HoverOutThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<HoverInThisContext, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<HoverOutThisContext, std.MouseEvent>, hoverInThisContext : HoverInThisContext | undefined, hoverOutThisContext : HoverOutThisContext | undefined): this>, std.ReturnType<<HoverInThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, HoverOutThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<HoverInThisContext, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<HoverOutThisContext, std.MouseEvent>, hoverInThisContext : HoverInThisContext | undefined, hoverOutThisContext : HoverOutThisContext | undefined): this>> : never */ js.Any
   
-  var id: RaphaelElementPluginMethod[TTechnology, Parameters[Double], ReturnType[Double]]
+  var id: /* import warning: importer.ImportType#apply Failed type conversion: number extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<number>, std.ReturnType<number>> : never */ js.Any
   
-  var insertAfter: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* element */ RaphaelElement[
-          TTechnology, 
-          /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-        ], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* element */ RaphaelElement[
-          TTechnology, 
-          /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-        ], 
-        this.type
-      ]
-    ]
-  ]
+  var insertAfter: /* import warning: importer.ImportType#apply Failed type conversion: (element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this>, std.ReturnType<(element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this>> : never */ js.Any
   
-  var insertBefore: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* element */ RaphaelElement[
-          TTechnology, 
-          /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-        ], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* element */ RaphaelElement[
-          TTechnology, 
-          /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-        ], 
-        this.type
-      ]
-    ]
-  ]
+  var insertBefore: /* import warning: importer.ImportType#apply Failed type conversion: (element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this>, std.ReturnType<(element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this>> : never */ js.Any
   
-  var isPointInside: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function2[/* x */ Double, /* y */ Double, Boolean]], 
-    ReturnType[js.Function2[/* x */ Double, /* y */ Double, Boolean]]
-  ]
+  var isPointInside: /* import warning: importer.ImportType#apply Failed type conversion: (x : number, y : number): boolean extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(x : number, y : number): boolean>, std.ReturnType<(x : number, y : number): boolean>> : never */ js.Any
   
-  var matrix: RaphaelElementPluginMethod[TTechnology, Parameters[RaphaelMatrix], ReturnType[RaphaelMatrix]]
+  var matrix: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelMatrix extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelMatrix>, std.ReturnType<raphael.raphael.RaphaelMatrix>> : never */ js.Any
   
-  var mousedown: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var mousedown: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
-  var mousemove: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var mousemove: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
-  var mouseout: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var mouseout: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
-  var mouseover: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var mouseover: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
-  var mouseup: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var mouseup: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
   var next: js.UndefOr[
-    RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        (RaphaelElement[
-          TTechnology, 
-          /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-        ]) | Null
-      ], 
-      ReturnType[
-        (RaphaelElement[
-          TTechnology, 
-          /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-        ]) | Null
-      ]
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> | null extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> | null>, std.ReturnType<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> | null>> : never */ js.Any
   ] = js.undefined
   
-  var node: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-    ], 
-    ReturnType[
-      /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-    ]
-  ]
+  var node: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>, std.ReturnType<raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>> : never */ js.Any
   
-  var onDragOver: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* onDragOverHandler */ RaphaelDragOnOverHandler[TTechnology, RaphaelUnwrapElement[TTechnology, this.type]], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* onDragOverHandler */ RaphaelDragOnOverHandler[TTechnology, RaphaelUnwrapElement[TTechnology, this.type]], 
-        this.type
-      ]
-    ]
-  ]
+  var onDragOver: /* import warning: importer.ImportType#apply Failed type conversion: (onDragOverHandler : raphael.raphael.RaphaelDragOnOverHandler<TTechnology, raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(onDragOverHandler : raphael.raphael.RaphaelDragOnOverHandler<TTechnology, raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>): this>, std.ReturnType<(onDragOverHandler : raphael.raphael.RaphaelDragOnOverHandler<TTechnology, raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>): this>> : never */ js.Any
   
-  var paper: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[RaphaelPaper[TTechnology]], 
-    ReturnType[RaphaelPaper[TTechnology]]
-  ]
+  var paper: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelPaper<TTechnology> extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelPaper<TTechnology>>, std.ReturnType<raphael.raphael.RaphaelPaper<TTechnology>>> : never */ js.Any
   
-  var pause: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], this.type]], 
-    ReturnType[js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], this.type]]
-  ]
+  var pause: /* import warning: importer.ImportType#apply Failed type conversion: (anim : raphael.raphael.RaphaelAnimation | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(anim : raphael.raphael.RaphaelAnimation | undefined): this>, std.ReturnType<(anim : raphael.raphael.RaphaelAnimation | undefined): this>> : never */ js.Any
   
   var prev: js.UndefOr[
-    RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        (RaphaelElement[
-          TTechnology, 
-          /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-        ]) | Null
-      ], 
-      ReturnType[
-        (RaphaelElement[
-          TTechnology, 
-          /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-        ]) | Null
-      ]
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> | null extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> | null>, std.ReturnType<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> | null>> : never */ js.Any
   ] = js.undefined
   
   var raphael: js.UndefOr[
-    RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[js.UndefOr[RaphaelStatic[SVG | VML]]], 
-      ReturnType[js.UndefOr[RaphaelStatic[SVG | VML]]]
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelStatic<'SVG' | 'VML'> | undefined extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelStatic<'SVG' | 'VML'> | undefined>, std.ReturnType<raphael.raphael.RaphaelStatic<'SVG' | 'VML'> | undefined>> : never */ js.Any
   ] = js.undefined
   
-  var remove: RaphaelElementPluginMethod[TTechnology, Parameters[js.Function0[Unit]], ReturnType[js.Function0[Unit]]]
+  var remove: /* import warning: importer.ImportType#apply Failed type conversion: (): void extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): void>, std.ReturnType<(): void>> : never */ js.Any
   
-  var removeData: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function1[/* key */ js.UndefOr[String], this.type]], 
-    ReturnType[js.Function1[/* key */ js.UndefOr[String], this.type]]
-  ]
+  var removeData: /* import warning: importer.ImportType#apply Failed type conversion: (key : string | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(key : string | undefined): this>, std.ReturnType<(key : string | undefined): this>> : never */ js.Any
   
-  var resume: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], this.type]], 
-    ReturnType[js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], this.type]]
-  ]
+  var resume: /* import warning: importer.ImportType#apply Failed type conversion: (anim : raphael.raphael.RaphaelAnimation | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(anim : raphael.raphael.RaphaelAnimation | undefined): this>, std.ReturnType<(anim : raphael.raphael.RaphaelAnimation | undefined): this>> : never */ js.Any
   
-  var rotate: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function3[/* degrees */ Double, /* centerX */ Double, /* centerY */ Double, this.type]
-    ], 
-    ReturnType[
-      js.Function3[/* degrees */ Double, /* centerX */ Double, /* centerY */ Double, this.type]
-    ]
-  ]
+  var rotate: /* import warning: importer.ImportType#apply Failed type conversion: (degrees : number, centerX : number, centerY : number): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(degrees : number, centerX : number, centerY : number): this>, std.ReturnType<(degrees : number, centerX : number, centerY : number): this>> : never */ js.Any
   
-  var scale: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function4[
-        /* scaleFactorX */ Double, 
-        /* scaleFactorY */ Double, 
-        /* centerX */ Double, 
-        /* centerY */ Double, 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function4[
-        /* scaleFactorX */ Double, 
-        /* scaleFactorY */ Double, 
-        /* centerX */ Double, 
-        /* centerY */ Double, 
-        this.type
-      ]
-    ]
-  ]
+  var scale: /* import warning: importer.ImportType#apply Failed type conversion: (scaleFactorX : number, scaleFactorY : number, centerX : number, centerY : number): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(scaleFactorX : number, scaleFactorY : number, centerX : number, centerY : number): this>, std.ReturnType<(scaleFactorX : number, scaleFactorY : number, centerX : number, centerY : number): this>> : never */ js.Any
   
-  var setTime: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function2[/* animation */ RaphaelAnimation, /* value */ Double, this.type]], 
-    ReturnType[js.Function2[/* animation */ RaphaelAnimation, /* value */ Double, this.type]]
-  ]
+  var setTime: /* import warning: importer.ImportType#apply Failed type conversion: (animation : raphael.raphael.RaphaelAnimation, value : number): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(animation : raphael.raphael.RaphaelAnimation, value : number): this>, std.ReturnType<(animation : raphael.raphael.RaphaelAnimation, value : number): this>> : never */ js.Any
   
-  var show: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function0[this.type]], 
-    ReturnType[js.Function0[this.type]]
-  ]
+  var show: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any
   
-  var status: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function0[js.Array[RaphaelAnimationStatus]]], 
-    ReturnType[js.Function0[js.Array[RaphaelAnimationStatus]]]
-  ]
+  var status: /* import warning: importer.ImportType#apply Failed type conversion: (): std.Array<raphael.raphael.RaphaelAnimationStatus> extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): std.Array<raphael.raphael.RaphaelAnimationStatus>>, std.ReturnType<(): std.Array<raphael.raphael.RaphaelAnimationStatus>>> : never */ js.Any
   
-  var stop: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function1[/* animation */ js.UndefOr[RaphaelAnimation], this.type]], 
-    ReturnType[js.Function1[/* animation */ js.UndefOr[RaphaelAnimation], this.type]]
-  ]
+  var stop: /* import warning: importer.ImportType#apply Failed type conversion: (animation : raphael.raphael.RaphaelAnimation | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(animation : raphael.raphael.RaphaelAnimation | undefined): this>, std.ReturnType<(animation : raphael.raphael.RaphaelAnimation | undefined): this>> : never */ js.Any
   
-  var toBack: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function0[this.type]], 
-    ReturnType[js.Function0[this.type]]
-  ]
+  var toBack: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any
   
-  var toFront: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function0[this.type]], 
-    ReturnType[js.Function0[this.type]]
-  ]
+  var toFront: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any
   
-  var touchcancel: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var touchcancel: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
   
-  var touchend: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var touchend: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
   
-  var touchmove: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var touchmove: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
   
-  var touchstart: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var touchstart: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
   
-  var transform: RaphaelElementPluginMethod[TTechnology, Parameters[js.Function0[String]], ReturnType[js.Function0[String]]]
+  var transform: /* import warning: importer.ImportType#apply Failed type conversion: (): string extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): string>, std.ReturnType<(): string>> : never */ js.Any
   
-  var translate: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function2[/* deltaX */ Double, /* deltaY */ Double, this.type]], 
-    ReturnType[js.Function2[/* deltaX */ Double, /* deltaY */ Double, this.type]]
-  ]
+  var translate: /* import warning: importer.ImportType#apply Failed type conversion: (deltaX : number, deltaY : number): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(deltaX : number, deltaY : number): this>, std.ReturnType<(deltaX : number, deltaY : number): this>> : never */ js.Any
   
-  var `type`: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[RaphaelShapeType | String], 
-    ReturnType[RaphaelShapeType | String]
-  ]
+  var `type`: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelShapeType | string extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelShapeType | string>, std.ReturnType<raphael.raphael.RaphaelShapeType | string>> : never */ js.Any
   
-  var unclick: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var unclick: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
-  var undblclick: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var undblclick: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
-  var undrag: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[js.Function0[this.type]], 
-    ReturnType[js.Function0[this.type]]
-  ]
+  var undrag: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any
   
-  var unhover: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function2[
-        /* onHoverInHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
-        /* onHoverOutHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function2[
-        /* onHoverInHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
-        /* onHoverOutHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var unhover: /* import warning: importer.ImportType#apply Failed type conversion: (onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>): this>, std.ReturnType<(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>): this>> : never */ js.Any
   
-  var unmousedown: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var unmousedown: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
-  var unmousemove: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var unmousemove: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
-  var unmouseout: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var unmouseout: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
-  var unmouseover: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var unmouseover: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
-  var unmouseup: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], MouseEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var unmouseup: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
   
-  var untouchcancel: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var untouchcancel: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
   
-  var untouchend: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var untouchend: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
   
-  var untouchmove: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var untouchmove: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
   
-  var untouchstart: RaphaelElementPluginMethod[
-    TTechnology, 
-    Parameters[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ], 
-    ReturnType[
-      js.Function1[
-        /* handler */ RaphaelBasicEventHandler[RaphaelUnwrapElement[TTechnology, this.type], TouchEvent], 
-        this.type
-      ]
-    ]
-  ]
+  var untouchstart: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
 }
 object RaphaelElementPluginRegistry {
   
   inline def apply[TTechnology /* <: RaphaelTechnology */](
-    animate: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function4[
-          /* targetAttributes */ PartialRaphaelAttributes, 
-          /* durationMilliseconds */ Double, 
-          /* easing */ js.UndefOr[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula], 
-          /* onAnimationComplete */ js.UndefOr[RaphaelOnAnimationCompleteHandler[RaphaelElementPluginRegistry[TTechnology]]], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function4[
-          /* targetAttributes */ PartialRaphaelAttributes, 
-          /* durationMilliseconds */ Double, 
-          /* easing */ js.UndefOr[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula], 
-          /* onAnimationComplete */ js.UndefOr[RaphaelOnAnimationCompleteHandler[RaphaelElementPluginRegistry[TTechnology]]], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    animateWith: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function6[
-          /* otherElement */ RaphaelElement[
-            TTechnology, 
-            /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-          ], 
-          /* otherAnimation */ RaphaelAnimation, 
-          /* targetAttributes */ PartialRaphaelAttributes, 
-          /* durationMilliseconds */ Double, 
-          /* easing */ js.UndefOr[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula], 
-          /* onAnimationComplete */ js.UndefOr[RaphaelOnAnimationCompleteHandler[RaphaelElementPluginRegistry[TTechnology]]], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function6[
-          /* otherElement */ RaphaelElement[
-            TTechnology, 
-            /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-          ], 
-          /* otherAnimation */ RaphaelAnimation, 
-          /* targetAttributes */ PartialRaphaelAttributes, 
-          /* durationMilliseconds */ Double, 
-          /* easing */ js.UndefOr[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula], 
-          /* onAnimationComplete */ js.UndefOr[RaphaelOnAnimationCompleteHandler[RaphaelElementPluginRegistry[TTechnology]]], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    attr: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function2[
-          /* attributeName */ `arrow-end` | `clip-rect` | cursor | cx | cy | fill | `fill-opacity` | font | `font-family` | `font-size` | `font-weight` | height | href | opacity | path | r_ | rx | ry | src | stroke | `stroke-dasharray` | `stroke-linecap` | `stroke-linejoin` | `stroke-miterlimit` | `stroke-opacity` | `stroke-width` | target | text | `text-anchor` | title | transform | width | x | y, 
-          /* attributeValue */ js.UndefOr[
-            /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelAttributes['arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'] */ js.Any
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function2[
-          /* attributeName */ `arrow-end` | `clip-rect` | cursor | cx | cy | fill | `fill-opacity` | font | `font-family` | `font-size` | `font-weight` | height | href | opacity | path | r_ | rx | ry | src | stroke | `stroke-dasharray` | `stroke-linecap` | `stroke-linejoin` | `stroke-miterlimit` | `stroke-opacity` | `stroke-width` | target | text | `text-anchor` | title | transform | width | x | y, 
-          /* attributeValue */ js.UndefOr[
-            /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelAttributes['arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'] */ js.Any
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    click: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    clone_ : RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
-      ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
-    ],
-    data: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[js.Function1[/* key */ String, Any]], 
-      ReturnType[js.Function1[/* key */ String, Any]]
-    ],
-    dblclick: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    drag: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function6[
-          /* onMoveHandler */ RaphaelDragOnMoveHandler[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          /* onStartHandler */ RaphaelDragOnStartHandler[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          /* onEndHandler */ RaphaelDragOnEndHandler[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          /* moveThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          /* startThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          /* endThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function6[
-          /* onMoveHandler */ RaphaelDragOnMoveHandler[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          /* onStartHandler */ RaphaelDragOnStartHandler[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          /* onEndHandler */ RaphaelDragOnEndHandler[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          /* moveThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          /* startThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          /* endThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    getBBox: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], RaphaelAxisAlignedBoundingBox]
-      ], 
-      ReturnType[
-        js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], RaphaelAxisAlignedBoundingBox]
-      ]
-    ],
-    glow: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[/* glow */ js.UndefOr[PartialRaphaelGlowSetting], RaphaelSet[TTechnology]]
-      ], 
-      ReturnType[
-        js.Function1[/* glow */ js.UndefOr[PartialRaphaelGlowSetting], RaphaelSet[TTechnology]]
-      ]
-    ],
-    hide: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
-      ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
-    ],
-    hover: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function4[
-          /* onHoverInHandler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          /* onHoverOutHandler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          /* hoverInThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          /* hoverOutThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function4[
-          /* onHoverInHandler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          /* onHoverOutHandler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          /* hoverInThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          /* hoverOutThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    id: RaphaelElementPluginMethod[TTechnology, Parameters[Double], ReturnType[Double]],
-    insertAfter: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* element */ RaphaelElement[
-            TTechnology, 
-            /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* element */ RaphaelElement[
-            TTechnology, 
-            /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    insertBefore: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* element */ RaphaelElement[
-            TTechnology, 
-            /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* element */ RaphaelElement[
-            TTechnology, 
-            /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    isPointInside: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[js.Function2[/* x */ Double, /* y */ Double, Boolean]], 
-      ReturnType[js.Function2[/* x */ Double, /* y */ Double, Boolean]]
-    ],
-    matrix: RaphaelElementPluginMethod[TTechnology, Parameters[RaphaelMatrix], ReturnType[RaphaelMatrix]],
-    mousedown: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    mousemove: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    mouseout: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    mouseover: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    mouseup: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    node: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-      ], 
-      ReturnType[
-        /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-      ]
-    ],
-    onDragOver: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* onDragOverHandler */ RaphaelDragOnOverHandler[
-            TTechnology, 
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* onDragOverHandler */ RaphaelDragOnOverHandler[
-            TTechnology, 
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    paper: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[RaphaelPaper[TTechnology]], 
-      ReturnType[RaphaelPaper[TTechnology]]
-    ],
-    pause: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], RaphaelElementPluginRegistry[TTechnology]]
-      ], 
-      ReturnType[
-        js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], RaphaelElementPluginRegistry[TTechnology]]
-      ]
-    ],
-    remove: RaphaelElementPluginMethod[TTechnology, Parameters[js.Function0[Unit]], ReturnType[js.Function0[Unit]]],
-    removeData: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[/* key */ js.UndefOr[String], RaphaelElementPluginRegistry[TTechnology]]
-      ], 
-      ReturnType[
-        js.Function1[/* key */ js.UndefOr[String], RaphaelElementPluginRegistry[TTechnology]]
-      ]
-    ],
-    resume: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], RaphaelElementPluginRegistry[TTechnology]]
-      ], 
-      ReturnType[
-        js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], RaphaelElementPluginRegistry[TTechnology]]
-      ]
-    ],
-    rotate: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function3[
-          /* degrees */ Double, 
-          /* centerX */ Double, 
-          /* centerY */ Double, 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function3[
-          /* degrees */ Double, 
-          /* centerX */ Double, 
-          /* centerY */ Double, 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    scale: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function4[
-          /* scaleFactorX */ Double, 
-          /* scaleFactorY */ Double, 
-          /* centerX */ Double, 
-          /* centerY */ Double, 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function4[
-          /* scaleFactorX */ Double, 
-          /* scaleFactorY */ Double, 
-          /* centerX */ Double, 
-          /* centerY */ Double, 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    setTime: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function2[
-          /* animation */ RaphaelAnimation, 
-          /* value */ Double, 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function2[
-          /* animation */ RaphaelAnimation, 
-          /* value */ Double, 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    show: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
-      ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
-    ],
-    status: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[js.Function0[js.Array[RaphaelAnimationStatus]]], 
-      ReturnType[js.Function0[js.Array[RaphaelAnimationStatus]]]
-    ],
-    stop: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* animation */ js.UndefOr[RaphaelAnimation], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* animation */ js.UndefOr[RaphaelAnimation], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    toBack: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
-      ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
-    ],
-    toFront: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
-      ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
-    ],
-    touchcancel: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    touchend: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    touchmove: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    touchstart: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    transform: RaphaelElementPluginMethod[TTechnology, Parameters[js.Function0[String]], ReturnType[js.Function0[String]]],
-    translate: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function2[/* deltaX */ Double, /* deltaY */ Double, RaphaelElementPluginRegistry[TTechnology]]
-      ], 
-      ReturnType[
-        js.Function2[/* deltaX */ Double, /* deltaY */ Double, RaphaelElementPluginRegistry[TTechnology]]
-      ]
-    ],
-    `type`: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[RaphaelShapeType | String], 
-      ReturnType[RaphaelShapeType | String]
-    ],
-    unclick: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    undblclick: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    undrag: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
-      ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
-    ],
-    unhover: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function2[
-          /* onHoverInHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
-          /* onHoverOutHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function2[
-          /* onHoverInHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
-          /* onHoverOutHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    unmousedown: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    unmousemove: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    unmouseout: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    unmouseover: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    unmouseup: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            MouseEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    untouchcancel: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    untouchend: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    untouchmove: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ],
-    untouchstart: RaphaelElementPluginMethod[
-      TTechnology, 
-      Parameters[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ], 
-      ReturnType[
-        js.Function1[
-          /* handler */ RaphaelBasicEventHandler[
-            RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-            TouchEvent
-          ], 
-          RaphaelElementPluginRegistry[TTechnology]
-        ]
-      ]
-    ]
+    animate: /* import warning: importer.ImportType#apply Failed type conversion: (targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+  {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+  {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this>, std.ReturnType<(targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+  {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this>> : never */ js.Any,
+    animateWith: /* import warning: importer.ImportType#apply Failed type conversion: (otherElement : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>, otherAnimation : raphael.raphael.RaphaelAnimation, targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+  {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(otherElement : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>, otherAnimation : raphael.raphael.RaphaelAnimation, targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+  {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this>, std.ReturnType<(otherElement : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>, otherAnimation : raphael.raphael.RaphaelAnimation, targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+  {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this>> : never */ js.Any,
+    attr: /* import warning: importer.ImportType#apply Failed type conversion: <K extends 'arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'>(attributeName : K, attributeValue : raphael.raphael.RaphaelAttributes[K] | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<<K extends 'arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'>(attributeName : K, attributeValue : raphael.raphael.RaphaelAttributes[K] | undefined): this>, std.ReturnType<<K extends 'arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'>(attributeName : K, attributeValue : raphael.raphael.RaphaelAttributes[K] | undefined): this>> : never */ js.Any,
+    click: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    clone_ : /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any,
+    data: /* import warning: importer.ImportType#apply Failed type conversion: (key : string): any extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(key : string): any>, std.ReturnType<(key : string): any>> : never */ js.Any,
+    dblclick: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    drag: /* import warning: importer.ImportType#apply Failed type conversion: <MoveThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, StartThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, EndThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onMoveHandler : raphael.raphael.RaphaelDragOnMoveHandler<MoveThisContext>, onStartHandler : raphael.raphael.RaphaelDragOnStartHandler<StartThisContext>, onEndHandler : raphael.raphael.RaphaelDragOnEndHandler<EndThisContext>, moveThisContext : MoveThisContext | undefined, startThisContext : StartThisContext | undefined, endThisContext : EndThisContext | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<<MoveThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, StartThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, EndThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onMoveHandler : raphael.raphael.RaphaelDragOnMoveHandler<MoveThisContext>, onStartHandler : raphael.raphael.RaphaelDragOnStartHandler<StartThisContext>, onEndHandler : raphael.raphael.RaphaelDragOnEndHandler<EndThisContext>, moveThisContext : MoveThisContext | undefined, startThisContext : StartThisContext | undefined, endThisContext : EndThisContext | undefined): this>, std.ReturnType<<MoveThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, StartThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, EndThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onMoveHandler : raphael.raphael.RaphaelDragOnMoveHandler<MoveThisContext>, onStartHandler : raphael.raphael.RaphaelDragOnStartHandler<StartThisContext>, onEndHandler : raphael.raphael.RaphaelDragOnEndHandler<EndThisContext>, moveThisContext : MoveThisContext | undefined, startThisContext : StartThisContext | undefined, endThisContext : EndThisContext | undefined): this>> : never */ js.Any,
+    getBBox: /* import warning: importer.ImportType#apply Failed type conversion: (isWithoutTransform : boolean | undefined): raphael.raphael.RaphaelAxisAlignedBoundingBox extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(isWithoutTransform : boolean | undefined): raphael.raphael.RaphaelAxisAlignedBoundingBox>, std.ReturnType<(isWithoutTransform : boolean | undefined): raphael.raphael.RaphaelAxisAlignedBoundingBox>> : never */ js.Any,
+    glow: /* import warning: importer.ImportType#apply Failed type conversion: (glow : / * Inlined std.Partial<raphael.raphael.RaphaelGlowSettings> * /
+  {  width :number | undefined,   fill :boolean | undefined,   color :string | undefined,   offsety :number | undefined,   offsetx :number | undefined,   opacity :number | undefined} | undefined): raphael.raphael.RaphaelSet<TTechnology> extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(glow : / * Inlined std.Partial<raphael.raphael.RaphaelGlowSettings> * /
+  {  width :number | undefined,   fill :boolean | undefined,   color :string | undefined,   offsety :number | undefined,   offsetx :number | undefined,   opacity :number | undefined} | undefined): raphael.raphael.RaphaelSet<TTechnology>>, std.ReturnType<(glow : / * Inlined std.Partial<raphael.raphael.RaphaelGlowSettings> * /
+  {  width :number | undefined,   fill :boolean | undefined,   color :string | undefined,   offsety :number | undefined,   offsetx :number | undefined,   opacity :number | undefined} | undefined): raphael.raphael.RaphaelSet<TTechnology>>> : never */ js.Any,
+    hide: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any,
+    hover: /* import warning: importer.ImportType#apply Failed type conversion: <HoverInThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, HoverOutThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<HoverInThisContext, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<HoverOutThisContext, std.MouseEvent>, hoverInThisContext : HoverInThisContext | undefined, hoverOutThisContext : HoverOutThisContext | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<<HoverInThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, HoverOutThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<HoverInThisContext, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<HoverOutThisContext, std.MouseEvent>, hoverInThisContext : HoverInThisContext | undefined, hoverOutThisContext : HoverOutThisContext | undefined): this>, std.ReturnType<<HoverInThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, HoverOutThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<HoverInThisContext, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<HoverOutThisContext, std.MouseEvent>, hoverInThisContext : HoverInThisContext | undefined, hoverOutThisContext : HoverOutThisContext | undefined): this>> : never */ js.Any,
+    id: /* import warning: importer.ImportType#apply Failed type conversion: number extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<number>, std.ReturnType<number>> : never */ js.Any,
+    insertAfter: /* import warning: importer.ImportType#apply Failed type conversion: (element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this>, std.ReturnType<(element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this>> : never */ js.Any,
+    insertBefore: /* import warning: importer.ImportType#apply Failed type conversion: (element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this>, std.ReturnType<(element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this>> : never */ js.Any,
+    isPointInside: /* import warning: importer.ImportType#apply Failed type conversion: (x : number, y : number): boolean extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(x : number, y : number): boolean>, std.ReturnType<(x : number, y : number): boolean>> : never */ js.Any,
+    matrix: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelMatrix extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelMatrix>, std.ReturnType<raphael.raphael.RaphaelMatrix>> : never */ js.Any,
+    mousedown: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    mousemove: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    mouseout: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    mouseover: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    mouseup: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    node: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>, std.ReturnType<raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>> : never */ js.Any,
+    onDragOver: /* import warning: importer.ImportType#apply Failed type conversion: (onDragOverHandler : raphael.raphael.RaphaelDragOnOverHandler<TTechnology, raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(onDragOverHandler : raphael.raphael.RaphaelDragOnOverHandler<TTechnology, raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>): this>, std.ReturnType<(onDragOverHandler : raphael.raphael.RaphaelDragOnOverHandler<TTechnology, raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>): this>> : never */ js.Any,
+    paper: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelPaper<TTechnology> extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelPaper<TTechnology>>, std.ReturnType<raphael.raphael.RaphaelPaper<TTechnology>>> : never */ js.Any,
+    pause: /* import warning: importer.ImportType#apply Failed type conversion: (anim : raphael.raphael.RaphaelAnimation | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(anim : raphael.raphael.RaphaelAnimation | undefined): this>, std.ReturnType<(anim : raphael.raphael.RaphaelAnimation | undefined): this>> : never */ js.Any,
+    remove: /* import warning: importer.ImportType#apply Failed type conversion: (): void extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): void>, std.ReturnType<(): void>> : never */ js.Any,
+    removeData: /* import warning: importer.ImportType#apply Failed type conversion: (key : string | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(key : string | undefined): this>, std.ReturnType<(key : string | undefined): this>> : never */ js.Any,
+    resume: /* import warning: importer.ImportType#apply Failed type conversion: (anim : raphael.raphael.RaphaelAnimation | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(anim : raphael.raphael.RaphaelAnimation | undefined): this>, std.ReturnType<(anim : raphael.raphael.RaphaelAnimation | undefined): this>> : never */ js.Any,
+    rotate: /* import warning: importer.ImportType#apply Failed type conversion: (degrees : number, centerX : number, centerY : number): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(degrees : number, centerX : number, centerY : number): this>, std.ReturnType<(degrees : number, centerX : number, centerY : number): this>> : never */ js.Any,
+    scale: /* import warning: importer.ImportType#apply Failed type conversion: (scaleFactorX : number, scaleFactorY : number, centerX : number, centerY : number): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(scaleFactorX : number, scaleFactorY : number, centerX : number, centerY : number): this>, std.ReturnType<(scaleFactorX : number, scaleFactorY : number, centerX : number, centerY : number): this>> : never */ js.Any,
+    setTime: /* import warning: importer.ImportType#apply Failed type conversion: (animation : raphael.raphael.RaphaelAnimation, value : number): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(animation : raphael.raphael.RaphaelAnimation, value : number): this>, std.ReturnType<(animation : raphael.raphael.RaphaelAnimation, value : number): this>> : never */ js.Any,
+    show: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any,
+    status: /* import warning: importer.ImportType#apply Failed type conversion: (): std.Array<raphael.raphael.RaphaelAnimationStatus> extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): std.Array<raphael.raphael.RaphaelAnimationStatus>>, std.ReturnType<(): std.Array<raphael.raphael.RaphaelAnimationStatus>>> : never */ js.Any,
+    stop: /* import warning: importer.ImportType#apply Failed type conversion: (animation : raphael.raphael.RaphaelAnimation | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(animation : raphael.raphael.RaphaelAnimation | undefined): this>, std.ReturnType<(animation : raphael.raphael.RaphaelAnimation | undefined): this>> : never */ js.Any,
+    toBack: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any,
+    toFront: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any,
+    touchcancel: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any,
+    touchend: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any,
+    touchmove: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any,
+    touchstart: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any,
+    transform: /* import warning: importer.ImportType#apply Failed type conversion: (): string extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): string>, std.ReturnType<(): string>> : never */ js.Any,
+    translate: /* import warning: importer.ImportType#apply Failed type conversion: (deltaX : number, deltaY : number): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(deltaX : number, deltaY : number): this>, std.ReturnType<(deltaX : number, deltaY : number): this>> : never */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelShapeType | string extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelShapeType | string>, std.ReturnType<raphael.raphael.RaphaelShapeType | string>> : never */ js.Any,
+    unclick: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    undblclick: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    undrag: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any,
+    unhover: /* import warning: importer.ImportType#apply Failed type conversion: (onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>): this>, std.ReturnType<(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>): this>> : never */ js.Any,
+    unmousedown: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    unmousemove: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    unmouseout: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    unmouseover: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    unmouseup: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any,
+    untouchcancel: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any,
+    untouchend: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any,
+    untouchmove: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any,
+    untouchstart: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
   ): RaphaelElementPluginRegistry[TTechnology] = {
     val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], animateWith = animateWith.asInstanceOf[js.Any], attr = attr.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], getBBox = getBBox.asInstanceOf[js.Any], glow = glow.asInstanceOf[js.Any], hide = hide.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], insertAfter = insertAfter.asInstanceOf[js.Any], insertBefore = insertBefore.asInstanceOf[js.Any], isPointInside = isPointInside.asInstanceOf[js.Any], matrix = matrix.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], onDragOver = onDragOver.asInstanceOf[js.Any], paper = paper.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], removeData = removeData.asInstanceOf[js.Any], resume = resume.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], setTime = setTime.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], toBack = toBack.asInstanceOf[js.Any], toFront = toFront.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any], unclick = unclick.asInstanceOf[js.Any], undblclick = undblclick.asInstanceOf[js.Any], undrag = undrag.asInstanceOf[js.Any], unhover = unhover.asInstanceOf[js.Any], unmousedown = unmousedown.asInstanceOf[js.Any], unmousemove = unmousemove.asInstanceOf[js.Any], unmouseout = unmouseout.asInstanceOf[js.Any], unmouseover = unmouseover.asInstanceOf[js.Any], unmouseup = unmouseup.asInstanceOf[js.Any], untouchcancel = untouchcancel.asInstanceOf[js.Any], untouchend = untouchend.asInstanceOf[js.Any], untouchmove = untouchmove.asInstanceOf[js.Any], untouchstart = untouchstart.asInstanceOf[js.Any])
     __obj.updateDynamic("clone")(clone_.asInstanceOf[js.Any])
@@ -1700,1089 +222,258 @@ object RaphaelElementPluginRegistry {
   extension [Self <: RaphaelElementPluginRegistry[?], TTechnology /* <: RaphaelTechnology */](x: Self & RaphaelElementPluginRegistry[TTechnology]) {
     
     inline def setAnimate(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function4[
-              /* targetAttributes */ PartialRaphaelAttributes, 
-              /* durationMilliseconds */ Double, 
-              /* easing */ js.UndefOr[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula], 
-              /* onAnimationComplete */ js.UndefOr[RaphaelOnAnimationCompleteHandler[RaphaelElementPluginRegistry[TTechnology]]], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function4[
-              /* targetAttributes */ PartialRaphaelAttributes, 
-              /* durationMilliseconds */ Double, 
-              /* easing */ js.UndefOr[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula], 
-              /* onAnimationComplete */ js.UndefOr[RaphaelOnAnimationCompleteHandler[RaphaelElementPluginRegistry[TTechnology]]], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+    {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+    {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this>, std.ReturnType<(targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+    {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this>> : never */ js.Any
     ): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateWith(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function6[
-              /* otherElement */ RaphaelElement[
-                TTechnology, 
-                /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-              ], 
-              /* otherAnimation */ RaphaelAnimation, 
-              /* targetAttributes */ PartialRaphaelAttributes, 
-              /* durationMilliseconds */ Double, 
-              /* easing */ js.UndefOr[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula], 
-              /* onAnimationComplete */ js.UndefOr[RaphaelOnAnimationCompleteHandler[RaphaelElementPluginRegistry[TTechnology]]], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function6[
-              /* otherElement */ RaphaelElement[
-                TTechnology, 
-                /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-              ], 
-              /* otherAnimation */ RaphaelAnimation, 
-              /* targetAttributes */ PartialRaphaelAttributes, 
-              /* durationMilliseconds */ Double, 
-              /* easing */ js.UndefOr[RaphaelBuiltinEasingFormula | RaphaelCustomEasingFormula], 
-              /* onAnimationComplete */ js.UndefOr[RaphaelOnAnimationCompleteHandler[RaphaelElementPluginRegistry[TTechnology]]], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (otherElement : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>, otherAnimation : raphael.raphael.RaphaelAnimation, targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+    {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(otherElement : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>, otherAnimation : raphael.raphael.RaphaelAnimation, targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+    {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this>, std.ReturnType<(otherElement : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>, otherAnimation : raphael.raphael.RaphaelAnimation, targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /
+    {  target :string | undefined,   title :string | undefined,   rx :number | undefined,   width :number | undefined,   y :number | undefined,   height :number | undefined,   fill :string | undefined,   stroke-width :number | undefined,   path :string | undefined,   font-size :number | string | undefined,   cursor :string | undefined,   stroke-dasharray :raphael.raphael.RaphaelDashArrayType | undefined,   ry :number | undefined,   stroke-linejoin :raphael.raphael.RaphaelLineJoinType | undefined,   stroke-miterlimit :number | undefined,   font-family :string | undefined,   arrow-end :string | undefined,   stroke-opacity :number | undefined,   src :string | undefined,   x :number | undefined,   text :string | undefined,   font :string | undefined,   r :number | undefined,   stroke-linecap :raphael.raphael.RaphaelLineCapType | undefined,   transform :string | raphael.raphael.RaphaelTransformSegment | std.Array<raphael.raphael.RaphaelTransformSegment> | undefined,   clip-rect :string | undefined,   text-anchor :raphael.raphael.RaphaelTextAnchorType | undefined,   stroke :string | undefined,   fill-opacity :number | undefined,   cy :number | undefined,   href :string | undefined,   cx :number | undefined,   opacity :number | undefined,   font-weight :string | undefined}, durationMilliseconds : number, easing : raphael.raphael.RaphaelBuiltinEasingFormula | raphael.raphael.RaphaelCustomEasingFormula | undefined, onAnimationComplete : raphael.raphael.RaphaelOnAnimationCompleteHandler<this> | undefined): this>> : never */ js.Any
     ): Self = StObject.set(x, "animateWith", value.asInstanceOf[js.Any])
     
     inline def setAttr(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function2[
-              /* attributeName */ `arrow-end` | `clip-rect` | cursor | cx | cy | fill | `fill-opacity` | font | `font-family` | `font-size` | `font-weight` | height | href | opacity | path | r_ | rx | ry | src | stroke | `stroke-dasharray` | `stroke-linecap` | `stroke-linejoin` | `stroke-miterlimit` | `stroke-opacity` | `stroke-width` | target | text | `text-anchor` | title | transform | width | typings.raphael.raphaelStrings.x | y, 
-              /* attributeValue */ js.UndefOr[
-                /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelAttributes['arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'] */ js.Any
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function2[
-              /* attributeName */ `arrow-end` | `clip-rect` | cursor | cx | cy | fill | `fill-opacity` | font | `font-family` | `font-size` | `font-weight` | height | href | opacity | path | r_ | rx | ry | src | stroke | `stroke-dasharray` | `stroke-linecap` | `stroke-linejoin` | `stroke-miterlimit` | `stroke-opacity` | `stroke-width` | target | text | `text-anchor` | title | transform | width | typings.raphael.raphaelStrings.x | y, 
-              /* attributeValue */ js.UndefOr[
-                /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelAttributes['arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'] */ js.Any
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: <K extends 'arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'>(attributeName : K, attributeValue : raphael.raphael.RaphaelAttributes[K] | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<<K extends 'arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'>(attributeName : K, attributeValue : raphael.raphael.RaphaelAttributes[K] | undefined): this>, std.ReturnType<<K extends 'arrow-end' | 'clip-rect' | 'cursor' | 'cx' | 'cy' | 'fill' | 'fill-opacity' | 'font' | 'font-family' | 'font-size' | 'font-weight' | 'height' | 'href' | 'opacity' | 'path' | 'r' | 'rx' | 'ry' | 'src' | 'stroke' | 'stroke-dasharray' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-opacity' | 'stroke-width' | 'target' | 'text' | 'text-anchor' | 'title' | 'transform' | 'width' | 'x' | 'y'>(attributeName : K, attributeValue : raphael.raphael.RaphaelAttributes[K] | undefined): this>> : never */ js.Any
     ): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     inline def setClick(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     inline def setClone_(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
-          ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any
     ): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
     
     inline def setData(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[js.Function1[/* key */ String, Any]], 
-          ReturnType[js.Function1[/* key */ String, Any]]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (key : string): any extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(key : string): any>, std.ReturnType<(key : string): any>> : never */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDblclick(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     inline def setDrag(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function6[
-              /* onMoveHandler */ RaphaelDragOnMoveHandler[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              /* onStartHandler */ RaphaelDragOnStartHandler[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              /* onEndHandler */ RaphaelDragOnEndHandler[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              /* moveThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              /* startThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              /* endThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function6[
-              /* onMoveHandler */ RaphaelDragOnMoveHandler[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              /* onStartHandler */ RaphaelDragOnStartHandler[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              /* onEndHandler */ RaphaelDragOnEndHandler[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              /* moveThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              /* startThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              /* endThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: <MoveThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, StartThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, EndThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onMoveHandler : raphael.raphael.RaphaelDragOnMoveHandler<MoveThisContext>, onStartHandler : raphael.raphael.RaphaelDragOnStartHandler<StartThisContext>, onEndHandler : raphael.raphael.RaphaelDragOnEndHandler<EndThisContext>, moveThisContext : MoveThisContext | undefined, startThisContext : StartThisContext | undefined, endThisContext : EndThisContext | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<<MoveThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, StartThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, EndThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onMoveHandler : raphael.raphael.RaphaelDragOnMoveHandler<MoveThisContext>, onStartHandler : raphael.raphael.RaphaelDragOnStartHandler<StartThisContext>, onEndHandler : raphael.raphael.RaphaelDragOnEndHandler<EndThisContext>, moveThisContext : MoveThisContext | undefined, startThisContext : StartThisContext | undefined, endThisContext : EndThisContext | undefined): this>, std.ReturnType<<MoveThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, StartThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, EndThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onMoveHandler : raphael.raphael.RaphaelDragOnMoveHandler<MoveThisContext>, onStartHandler : raphael.raphael.RaphaelDragOnStartHandler<StartThisContext>, onEndHandler : raphael.raphael.RaphaelDragOnEndHandler<EndThisContext>, moveThisContext : MoveThisContext | undefined, startThisContext : StartThisContext | undefined, endThisContext : EndThisContext | undefined): this>> : never */ js.Any
     ): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     
     inline def setGetBBox(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], RaphaelAxisAlignedBoundingBox]
-          ], 
-          ReturnType[
-            js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], RaphaelAxisAlignedBoundingBox]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (isWithoutTransform : boolean | undefined): raphael.raphael.RaphaelAxisAlignedBoundingBox extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(isWithoutTransform : boolean | undefined): raphael.raphael.RaphaelAxisAlignedBoundingBox>, std.ReturnType<(isWithoutTransform : boolean | undefined): raphael.raphael.RaphaelAxisAlignedBoundingBox>> : never */ js.Any
     ): Self = StObject.set(x, "getBBox", value.asInstanceOf[js.Any])
     
     inline def setGlow(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[/* glow */ js.UndefOr[PartialRaphaelGlowSetting], RaphaelSet[TTechnology]]
-          ], 
-          ReturnType[
-            js.Function1[/* glow */ js.UndefOr[PartialRaphaelGlowSetting], RaphaelSet[TTechnology]]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (glow : / * Inlined std.Partial<raphael.raphael.RaphaelGlowSettings> * /
+    {  width :number | undefined,   fill :boolean | undefined,   color :string | undefined,   offsety :number | undefined,   offsetx :number | undefined,   opacity :number | undefined} | undefined): raphael.raphael.RaphaelSet<TTechnology> extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(glow : / * Inlined std.Partial<raphael.raphael.RaphaelGlowSettings> * /
+    {  width :number | undefined,   fill :boolean | undefined,   color :string | undefined,   offsety :number | undefined,   offsetx :number | undefined,   opacity :number | undefined} | undefined): raphael.raphael.RaphaelSet<TTechnology>>, std.ReturnType<(glow : / * Inlined std.Partial<raphael.raphael.RaphaelGlowSettings> * /
+    {  width :number | undefined,   fill :boolean | undefined,   color :string | undefined,   offsety :number | undefined,   offsetx :number | undefined,   opacity :number | undefined} | undefined): raphael.raphael.RaphaelSet<TTechnology>>> : never */ js.Any
     ): Self = StObject.set(x, "glow", value.asInstanceOf[js.Any])
     
     inline def setHide(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
-          ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any
     ): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     inline def setHover(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function4[
-              /* onHoverInHandler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              /* onHoverOutHandler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              /* hoverInThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              /* hoverOutThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function4[
-              /* onHoverInHandler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              /* onHoverOutHandler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              /* hoverInThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              /* hoverOutThisContext */ js.UndefOr[RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: <HoverInThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, HoverOutThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<HoverInThisContext, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<HoverOutThisContext, std.MouseEvent>, hoverInThisContext : HoverInThisContext | undefined, hoverOutThisContext : HoverOutThisContext | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<<HoverInThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, HoverOutThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<HoverInThisContext, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<HoverOutThisContext, std.MouseEvent>, hoverInThisContext : HoverInThisContext | undefined, hoverOutThisContext : HoverOutThisContext | undefined): this>, std.ReturnType<<HoverInThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, HoverOutThisContext = raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<HoverInThisContext, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<HoverOutThisContext, std.MouseEvent>, hoverInThisContext : HoverInThisContext | undefined, hoverOutThisContext : HoverOutThisContext | undefined): this>> : never */ js.Any
     ): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    inline def setId(value: RaphaelElementPluginMethod[TTechnology, Parameters[Double], ReturnType[Double]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: number extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<number>, std.ReturnType<number>> : never */ js.Any
+    ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setInsertAfter(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* element */ RaphaelElement[
-                TTechnology, 
-                /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* element */ RaphaelElement[
-                TTechnology, 
-                /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this>, std.ReturnType<(element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this>> : never */ js.Any
     ): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
     
     inline def setInsertBefore(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* element */ RaphaelElement[
-                TTechnology, 
-                /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* element */ RaphaelElement[
-                TTechnology, 
-                /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this>, std.ReturnType<(element : raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>): this>> : never */ js.Any
     ): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
     
     inline def setIsPointInside(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[js.Function2[/* x */ Double, /* y */ Double, Boolean]], 
-          ReturnType[js.Function2[/* x */ Double, /* y */ Double, Boolean]]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (x : number, y : number): boolean extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(x : number, y : number): boolean>, std.ReturnType<(x : number, y : number): boolean>> : never */ js.Any
     ): Self = StObject.set(x, "isPointInside", value.asInstanceOf[js.Any])
     
     inline def setMatrix(
-      value: RaphaelElementPluginMethod[TTechnology, Parameters[RaphaelMatrix], ReturnType[RaphaelMatrix]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelMatrix extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelMatrix>, std.ReturnType<raphael.raphael.RaphaelMatrix>> : never */ js.Any
     ): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
     inline def setMousedown(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
     
     inline def setMousemove(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
     
     inline def setMouseout(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
     
     inline def setMouseover(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
     
     inline def setMouseup(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
     
     inline def setNext(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            (RaphaelElement[
-              TTechnology, 
-              /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-            ]) | Null
-          ], 
-          ReturnType[
-            (RaphaelElement[
-              TTechnology, 
-              /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-            ]) | Null
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> | null extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> | null>, std.ReturnType<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> | null>> : never */ js.Any
     ): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     inline def setNode(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-          ], 
-          ReturnType[
-            /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>, std.ReturnType<raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>> : never */ js.Any
     ): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     inline def setOnDragOver(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* onDragOverHandler */ RaphaelDragOnOverHandler[
-                TTechnology, 
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* onDragOverHandler */ RaphaelDragOnOverHandler[
-                TTechnology, 
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]]
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (onDragOverHandler : raphael.raphael.RaphaelDragOnOverHandler<TTechnology, raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(onDragOverHandler : raphael.raphael.RaphaelDragOnOverHandler<TTechnology, raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>): this>, std.ReturnType<(onDragOverHandler : raphael.raphael.RaphaelDragOnOverHandler<TTechnology, raphael.raphael.RaphaelUnwrapElement<TTechnology, this>>): this>> : never */ js.Any
     ): Self = StObject.set(x, "onDragOver", value.asInstanceOf[js.Any])
     
     inline def setPaper(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[RaphaelPaper[TTechnology]], 
-          ReturnType[RaphaelPaper[TTechnology]]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelPaper<TTechnology> extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelPaper<TTechnology>>, std.ReturnType<raphael.raphael.RaphaelPaper<TTechnology>>> : never */ js.Any
     ): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
     
     inline def setPause(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], RaphaelElementPluginRegistry[TTechnology]]
-          ], 
-          ReturnType[
-            js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], RaphaelElementPluginRegistry[TTechnology]]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (anim : raphael.raphael.RaphaelAnimation | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(anim : raphael.raphael.RaphaelAnimation | undefined): this>, std.ReturnType<(anim : raphael.raphael.RaphaelAnimation | undefined): this>> : never */ js.Any
     ): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
     inline def setPrev(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            (RaphaelElement[
-              TTechnology, 
-              /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-            ]) | Null
-          ], 
-          ReturnType[
-            (RaphaelElement[
-              TTechnology, 
-              /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-            ]) | Null
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> | null extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> | null>, std.ReturnType<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> | null>> : never */ js.Any
     ): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
     inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
     inline def setRaphael(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[js.UndefOr[RaphaelStatic[SVG | VML]]], 
-          ReturnType[js.UndefOr[RaphaelStatic[SVG | VML]]]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelStatic<'SVG' | 'VML'> | undefined extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelStatic<'SVG' | 'VML'> | undefined>, std.ReturnType<raphael.raphael.RaphaelStatic<'SVG' | 'VML'> | undefined>> : never */ js.Any
     ): Self = StObject.set(x, "raphael", value.asInstanceOf[js.Any])
     
     inline def setRaphaelUndefined: Self = StObject.set(x, "raphael", js.undefined)
     
     inline def setRemove(
-      value: RaphaelElementPluginMethod[TTechnology, Parameters[js.Function0[Unit]], ReturnType[js.Function0[Unit]]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): void extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): void>, std.ReturnType<(): void>> : never */ js.Any
     ): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     inline def setRemoveData(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[/* key */ js.UndefOr[String], RaphaelElementPluginRegistry[TTechnology]]
-          ], 
-          ReturnType[
-            js.Function1[/* key */ js.UndefOr[String], RaphaelElementPluginRegistry[TTechnology]]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (key : string | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(key : string | undefined): this>, std.ReturnType<(key : string | undefined): this>> : never */ js.Any
     ): Self = StObject.set(x, "removeData", value.asInstanceOf[js.Any])
     
     inline def setResume(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], RaphaelElementPluginRegistry[TTechnology]]
-          ], 
-          ReturnType[
-            js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], RaphaelElementPluginRegistry[TTechnology]]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (anim : raphael.raphael.RaphaelAnimation | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(anim : raphael.raphael.RaphaelAnimation | undefined): this>, std.ReturnType<(anim : raphael.raphael.RaphaelAnimation | undefined): this>> : never */ js.Any
     ): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
     
     inline def setRotate(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function3[
-              /* degrees */ Double, 
-              /* centerX */ Double, 
-              /* centerY */ Double, 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function3[
-              /* degrees */ Double, 
-              /* centerX */ Double, 
-              /* centerY */ Double, 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (degrees : number, centerX : number, centerY : number): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(degrees : number, centerX : number, centerY : number): this>, std.ReturnType<(degrees : number, centerX : number, centerY : number): this>> : never */ js.Any
     ): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     inline def setScale(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function4[
-              /* scaleFactorX */ Double, 
-              /* scaleFactorY */ Double, 
-              /* centerX */ Double, 
-              /* centerY */ Double, 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function4[
-              /* scaleFactorX */ Double, 
-              /* scaleFactorY */ Double, 
-              /* centerX */ Double, 
-              /* centerY */ Double, 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (scaleFactorX : number, scaleFactorY : number, centerX : number, centerY : number): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(scaleFactorX : number, scaleFactorY : number, centerX : number, centerY : number): this>, std.ReturnType<(scaleFactorX : number, scaleFactorY : number, centerX : number, centerY : number): this>> : never */ js.Any
     ): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     inline def setSetTime(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function2[
-              /* animation */ RaphaelAnimation, 
-              /* value */ Double, 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function2[
-              /* animation */ RaphaelAnimation, 
-              /* value */ Double, 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (animation : raphael.raphael.RaphaelAnimation, value : number): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(animation : raphael.raphael.RaphaelAnimation, value : number): this>, std.ReturnType<(animation : raphael.raphael.RaphaelAnimation, value : number): this>> : never */ js.Any
     ): Self = StObject.set(x, "setTime", value.asInstanceOf[js.Any])
     
     inline def setShow(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
-          ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any
     ): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     inline def setStatus(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[js.Function0[js.Array[RaphaelAnimationStatus]]], 
-          ReturnType[js.Function0[js.Array[RaphaelAnimationStatus]]]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): std.Array<raphael.raphael.RaphaelAnimationStatus> extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): std.Array<raphael.raphael.RaphaelAnimationStatus>>, std.ReturnType<(): std.Array<raphael.raphael.RaphaelAnimationStatus>>> : never */ js.Any
     ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStop(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* animation */ js.UndefOr[RaphaelAnimation], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* animation */ js.UndefOr[RaphaelAnimation], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (animation : raphael.raphael.RaphaelAnimation | undefined): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(animation : raphael.raphael.RaphaelAnimation | undefined): this>, std.ReturnType<(animation : raphael.raphael.RaphaelAnimation | undefined): this>> : never */ js.Any
     ): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
     inline def setToBack(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
-          ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any
     ): Self = StObject.set(x, "toBack", value.asInstanceOf[js.Any])
     
     inline def setToFront(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
-          ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any
     ): Self = StObject.set(x, "toFront", value.asInstanceOf[js.Any])
     
     inline def setTouchcancel(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     inline def setTouchend(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     inline def setTouchmove(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     inline def setTouchstart(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     inline def setTransform(
-      value: RaphaelElementPluginMethod[TTechnology, Parameters[js.Function0[String]], ReturnType[js.Function0[String]]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): string extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): string>, std.ReturnType<(): string>> : never */ js.Any
     ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     inline def setTranslate(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function2[/* deltaX */ Double, /* deltaY */ Double, RaphaelElementPluginRegistry[TTechnology]]
-          ], 
-          ReturnType[
-            js.Function2[/* deltaX */ Double, /* deltaY */ Double, RaphaelElementPluginRegistry[TTechnology]]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (deltaX : number, deltaY : number): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(deltaX : number, deltaY : number): this>, std.ReturnType<(deltaX : number, deltaY : number): this>> : never */ js.Any
     ): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     inline def setType(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[RaphaelShapeType | String], 
-          ReturnType[RaphaelShapeType | String]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelShapeType | string extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelShapeType | string>, std.ReturnType<raphael.raphael.RaphaelShapeType | string>> : never */ js.Any
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUnclick(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "unclick", value.asInstanceOf[js.Any])
     
     inline def setUndblclick(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "undblclick", value.asInstanceOf[js.Any])
     
     inline def setUndrag(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
-          ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(): this>, std.ReturnType<(): this>> : never */ js.Any
     ): Self = StObject.set(x, "undrag", value.asInstanceOf[js.Any])
     
     inline def setUnhover(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function2[
-              /* onHoverInHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
-              /* onHoverOutHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function2[
-              /* onHoverInHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
-              /* onHoverOutHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>): this>, std.ReturnType<(onHoverInHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>, onHoverOutHandler : raphael.raphael.RaphaelBasicEventHandler<any, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "unhover", value.asInstanceOf[js.Any])
     
     inline def setUnmousedown(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "unmousedown", value.asInstanceOf[js.Any])
     
     inline def setUnmousemove(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "unmousemove", value.asInstanceOf[js.Any])
     
     inline def setUnmouseout(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "unmouseout", value.asInstanceOf[js.Any])
     
     inline def setUnmouseover(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "unmouseover", value.asInstanceOf[js.Any])
     
     inline def setUnmouseup(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                MouseEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.MouseEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "unmouseup", value.asInstanceOf[js.Any])
     
     inline def setUntouchcancel(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "untouchcancel", value.asInstanceOf[js.Any])
     
     inline def setUntouchend(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "untouchend", value.asInstanceOf[js.Any])
     
     inline def setUntouchmove(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "untouchmove", value.asInstanceOf[js.Any])
     
     inline def setUntouchstart(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ], 
-          ReturnType[
-            js.Function1[
-              /* handler */ RaphaelBasicEventHandler[
-                RaphaelUnwrapElement[TTechnology, RaphaelElementPluginRegistry[TTechnology]], 
-                TouchEvent
-              ], 
-              RaphaelElementPluginRegistry[TTechnology]
-            ]
-          ]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this extends (args : any): any ? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>, std.ReturnType<(handler : raphael.raphael.RaphaelBasicEventHandler<raphael.raphael.RaphaelUnwrapElement<TTechnology, this>, std.TouchEvent>): this>> : never */ js.Any
     ): Self = StObject.set(x, "untouchstart", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,6 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.shaderLanguageMod.ShaderLanguage
+import typings.babylonjs.materialsShaderLanguageMod.ShaderLanguage
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

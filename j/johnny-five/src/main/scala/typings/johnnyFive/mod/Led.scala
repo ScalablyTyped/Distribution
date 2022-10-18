@@ -31,7 +31,7 @@ open class Led protected () extends StObject {
   
   def pulse(ms: Double): Unit = js.native
   
-  def stop(ms: Double): Unit = js.native
+  def stop(): Unit = js.native
   
   def strobe(ms: Double): Unit = js.native
   

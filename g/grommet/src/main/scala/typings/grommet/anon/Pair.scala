@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Pair extends StObject {
   
-  var gap: js.UndefOr[ColumnRow] = js.undefined
+  var gap: js.UndefOr[Row] = js.undefined
   
   var name: js.UndefOr[WidthString] = js.undefined
   
-  var pair: js.UndefOr[`33`] = js.undefined
+  var pair: js.UndefOr[`30`] = js.undefined
   
   var value: js.UndefOr[WidthString] = js.undefined
 }
@@ -23,7 +23,7 @@ object Pair {
   
   extension [Self <: Pair](x: Self) {
     
-    inline def setGap(value: ColumnRow): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setGap(value: Row): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
@@ -31,7 +31,7 @@ object Pair {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setPair(value: `33`): Self = StObject.set(x, "pair", value.asInstanceOf[js.Any])
+    inline def setPair(value: `30`): Self = StObject.set(x, "pair", value.asInstanceOf[js.Any])
     
     inline def setPairUndefined: Self = StObject.set(x, "pair", js.undefined)
     

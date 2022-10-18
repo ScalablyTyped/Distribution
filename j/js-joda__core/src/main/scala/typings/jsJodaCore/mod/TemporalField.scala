@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@js-joda/core", "TemporalField")
+/* note: abstract class */ @JSImport("@js-joda/core", "TemporalField")
 @js.native
-abstract class TemporalField () extends StObject {
+open class TemporalField () extends StObject {
   
   /** Returns a copy of the specified temporal object with the value of this field set. */
   def adjustInto[R /* <: Temporal */](temporal: R, newValue: Double): R = js.native

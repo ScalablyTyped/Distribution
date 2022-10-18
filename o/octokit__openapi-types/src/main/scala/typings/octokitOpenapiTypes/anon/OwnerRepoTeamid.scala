@@ -7,27 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OwnerRepoTeamid extends StObject {
   
   /** The account owner of the repository. The name is not case sensitive. */
-  var owner: String
+  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
   
   /** The name of the repository. The name is not case sensitive. */
-  var repo: String
+  var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
   
   /** The unique identifier of the team. */
-  var team_id: Double
+  var team_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
 }
 object OwnerRepoTeamid {
   
-  inline def apply(owner: String, repo: String, team_id: Double): OwnerRepoTeamid = {
+  inline def apply(
+    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any,
+    repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any,
+    team_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
+  ): OwnerRepoTeamid = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[OwnerRepoTeamid]
   }
   
   extension [Self <: OwnerRepoTeamid](x: Self) {
     
-    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
+    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
+    ): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
+    ): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

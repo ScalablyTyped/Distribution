@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.officeUiFabricReact.anon.AddMeasurementToCache
 import typings.officeUiFabricReact.anon.GetInitialResizeGroupState
 import typings.officeUiFabricReact.anon.IsMeasured
-import typings.officeUiFabricReact.resizeGroupTypesMod.IResizeGroupProps
+import typings.officeUiFabricReact.libComponentsResizeGroupResizeGroupDottypesMod.IResizeGroupProps
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,20 +24,20 @@ object libResizeGroupMod {
   @JSImport("office-ui-fabric-react/lib/ResizeGroup", "ResizeGroup")
   @js.native
   open class ResizeGroup protected ()
-    extends typings.officeUiFabricReact.resizeGroupBaseMod.ResizeGroupBase {
+    extends typings.officeUiFabricReact.libComponentsResizeGroupResizeGroupDotbaseMod.ResizeGroupBase {
     def this(props: IResizeGroupProps) = this()
   }
   @JSImport("office-ui-fabric-react/lib/ResizeGroup", "ResizeGroup")
   @js.native
   val ResizeGroup: Instantiable1[
     /* props */ IResizeGroupProps, 
-    typings.officeUiFabricReact.resizeGroupBaseMod.ResizeGroupBase
+    typings.officeUiFabricReact.libComponentsResizeGroupResizeGroupDotbaseMod.ResizeGroupBase
   ] = js.native
   
   @JSImport("office-ui-fabric-react/lib/ResizeGroup", "ResizeGroupBase")
   @js.native
   open class ResizeGroupBase protected ()
-    extends typings.officeUiFabricReact.resizeGroupMod.ResizeGroupBase {
+    extends typings.officeUiFabricReact.libComponentsResizeGroupMod.ResizeGroupBase {
     def this(props: IResizeGroupProps) = this()
   }
   
@@ -46,11 +46,13 @@ object libResizeGroupMod {
   object ResizeGroupDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsResizeGroupResizeGroupDottypesMod.ResizeGroupDirection & Double
+      ] = js.native
     
-    /* 0 */ val horizontal: typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection.horizontal & Double = js.native
+    /* 0 */ val horizontal: typings.officeUiFabricReact.libComponentsResizeGroupResizeGroupDottypesMod.ResizeGroupDirection.horizontal & Double = js.native
     
-    /* 1 */ val vertical: typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection.vertical & Double = js.native
+    /* 1 */ val vertical: typings.officeUiFabricReact.libComponentsResizeGroupResizeGroupDottypesMod.ResizeGroupDirection.vertical & Double = js.native
   }
   
   inline def getMeasurementCache(): AddMeasurementToCache = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeasurementCache")().asInstanceOf[AddMeasurementToCache]

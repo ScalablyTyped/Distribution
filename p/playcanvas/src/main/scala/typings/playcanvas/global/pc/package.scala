@@ -17,6 +17,11 @@ import typings.playcanvas.anon.LatitudeBands
 import typings.playcanvas.anon.RingRadius
 import typings.playcanvas.anon.TypeofScriptType
 import typings.playcanvas.global.pc.^
+import typings.playcanvas.mod.AppBase
+import typings.playcanvas.mod.Http_
+import typings.playcanvas.mod.ScriptType
+import typings.playcanvas.mod.Texture
+import typings.playcanvas.mod.Vec4
 import typings.playcanvas.playcanvasInts.`0`
 import typings.playcanvas.playcanvasInts.`1024`
 import typings.playcanvas.playcanvasInts.`10`
@@ -4097,42 +4102,6 @@ inline def createPlane(device: typings.playcanvas.mod.GraphicsDevice): typings.p
 inline def createPlane(device: typings.playcanvas.mod.GraphicsDevice, opts: HalfExtents): typings.playcanvas.mod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlane")(device.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Mesh]
 
 /**
-  * Create and register a new {@link ScriptType}. It returns new class type (constructor function),
-  * which is auto-registered to {@link ScriptRegistry} using its name. This is the main interface to
-  * create Script Types, to define custom logic using JavaScript, that is used to create interaction
-  * for entities.
-  *
-  * @param {string} name - Unique Name of a Script Type. If a Script Type with the same name has
-  * already been registered and the new one has a `swap` method defined in its prototype, then it
-  * will perform hot swapping of existing Script Instances on entities using this new Script Type.
-  * Note: There is a reserved list of names that cannot be used, such as list below as well as some
-  * starting from `_` (underscore): system, entity, create, destroy, swap, move, scripts, onEnable,
-  * onDisable, onPostStateChange, has, on, off, fire, once, hasEvent.
-  * @param {AppBase} [app] - Optional application handler, to choose which {@link ScriptRegistry}
-  * to add a script to. By default it will use `Application.getApplication()` to get current
-  * {@link AppBase}.
-  * @returns {typeof ScriptType|null} A class type (constructor function) that inherits {@link ScriptType},
-  * which the developer is meant to further extend by adding attributes and prototype methods.
-  * Returns null if there was an error.
-  * @example
-  * var Turning = pc.createScript('turn');
-  *
-  * // define `speed` attribute that is available in Editor UI
-  * Turning.attributes.add('speed', {
-  *     type: 'number',
-  *     default: 180,
-  *     placeholder: 'deg/s'
-  * });
-  *
-  * // runs every tick
-  * Turning.prototype.update = function (dt) {
-  *     this.entity.rotate(0, this.speed * dt, 0);
-  * };
-  */
-inline def createScript(name: String): (TypeofScriptType & (Instantiable1[/* args */ App, typings.playcanvas.mod.ScriptType])) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("createScript")(name.asInstanceOf[js.Any]).asInstanceOf[(TypeofScriptType & (Instantiable1[/* args */ App, typings.playcanvas.mod.ScriptType])) | Null]
-inline def createScript(name: String, app: typings.playcanvas.mod.AppBase): (TypeofScriptType & (Instantiable1[/* args */ App, typings.playcanvas.mod.ScriptType])) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createScript")(name.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[(TypeofScriptType & (Instantiable1[/* args */ App, typings.playcanvas.mod.ScriptType])) | Null]
-
-/**
   * Create a shader from named shader chunks.
   *
   * @param {GraphicsDevice} device - The graphics device.
@@ -4287,7 +4256,7 @@ inline def drawFullscreenQuad(
   target: typings.playcanvas.mod.RenderTarget,
   vertexBuffer: typings.playcanvas.mod.VertexBuffer,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4
+  rect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawFullscreenQuad")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], vertexBuffer.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def drawQuadWithShader(device: typings.playcanvas.mod.GraphicsDevice, target: Unit, shader: typings.playcanvas.mod.Shader): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -4304,27 +4273,27 @@ inline def drawQuadWithShader(
   target: Unit,
   shader: typings.playcanvas.mod.Shader,
   rect: Unit,
-  scissorRect: typings.playcanvas.mod.Vec4
+  scissorRect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawQuadWithShader(
   device: typings.playcanvas.mod.GraphicsDevice,
   target: Unit,
   shader: typings.playcanvas.mod.Shader,
   rect: Unit,
-  scissorRect: typings.playcanvas.mod.Vec4,
+  scissorRect: Vec4,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawQuadWithShader(
   device: typings.playcanvas.mod.GraphicsDevice,
   target: Unit,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4
+  rect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawQuadWithShader(
   device: typings.playcanvas.mod.GraphicsDevice,
   target: Unit,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4,
+  rect: Vec4,
   scissorRect: Unit,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -4332,15 +4301,15 @@ inline def drawQuadWithShader(
   device: typings.playcanvas.mod.GraphicsDevice,
   target: Unit,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4,
-  scissorRect: typings.playcanvas.mod.Vec4
+  rect: Vec4,
+  scissorRect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawQuadWithShader(
   device: typings.playcanvas.mod.GraphicsDevice,
   target: Unit,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4,
-  scissorRect: typings.playcanvas.mod.Vec4,
+  rect: Vec4,
+  scissorRect: Vec4,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 /**
@@ -4375,27 +4344,27 @@ inline def drawQuadWithShader(
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader,
   rect: Unit,
-  scissorRect: typings.playcanvas.mod.Vec4
+  scissorRect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawQuadWithShader(
   device: typings.playcanvas.mod.GraphicsDevice,
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader,
   rect: Unit,
-  scissorRect: typings.playcanvas.mod.Vec4,
+  scissorRect: Vec4,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawQuadWithShader(
   device: typings.playcanvas.mod.GraphicsDevice,
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4
+  rect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawQuadWithShader(
   device: typings.playcanvas.mod.GraphicsDevice,
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4,
+  rect: Vec4,
   scissorRect: Unit,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -4403,15 +4372,15 @@ inline def drawQuadWithShader(
   device: typings.playcanvas.mod.GraphicsDevice,
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4,
-  scissorRect: typings.playcanvas.mod.Vec4
+  rect: Vec4,
+  scissorRect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawQuadWithShader(
   device: typings.playcanvas.mod.GraphicsDevice,
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4,
-  scissorRect: typings.playcanvas.mod.Vec4,
+  rect: Vec4,
+  scissorRect: Vec4,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
@@ -4429,10 +4398,10 @@ inline def drawQuadWithShader(
   * to fullscreen (`0, 0, target.width, target.height`).
   * @param {boolean} [useBlend] - True to enable blending. Defaults to false, disabling blending.
   */
-inline def drawTexture(device: typings.playcanvas.mod.GraphicsDevice, texture: typings.playcanvas.mod.Texture): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def drawTexture(device: typings.playcanvas.mod.GraphicsDevice, texture: Texture): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: Unit,
   rect: Unit,
@@ -4441,63 +4410,63 @@ inline def drawTexture(
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: Unit,
   rect: Unit,
-  scissorRect: typings.playcanvas.mod.Vec4
+  scissorRect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: Unit,
   rect: Unit,
-  scissorRect: typings.playcanvas.mod.Vec4,
+  scissorRect: Vec4,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: Unit,
-  rect: typings.playcanvas.mod.Vec4
+  rect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: Unit,
-  rect: typings.playcanvas.mod.Vec4,
+  rect: Vec4,
   scissorRect: Unit,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: Unit,
-  rect: typings.playcanvas.mod.Vec4,
-  scissorRect: typings.playcanvas.mod.Vec4
+  rect: Vec4,
+  scissorRect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: Unit,
-  rect: typings.playcanvas.mod.Vec4,
-  scissorRect: typings.playcanvas.mod.Vec4,
+  rect: Vec4,
+  scissorRect: Vec4,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: typings.playcanvas.mod.Shader
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: typings.playcanvas.mod.Shader,
   rect: Unit,
@@ -4506,62 +4475,62 @@ inline def drawTexture(
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: typings.playcanvas.mod.Shader,
   rect: Unit,
-  scissorRect: typings.playcanvas.mod.Vec4
+  scissorRect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: typings.playcanvas.mod.Shader,
   rect: Unit,
-  scissorRect: typings.playcanvas.mod.Vec4,
+  scissorRect: Vec4,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4
+  rect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4,
+  rect: Vec4,
   scissorRect: Unit,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4,
-  scissorRect: typings.playcanvas.mod.Vec4
+  rect: Vec4,
+  scissorRect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: Unit,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4,
-  scissorRect: typings.playcanvas.mod.Vec4,
+  rect: Vec4,
+  scissorRect: Vec4,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: Unit,
   rect: Unit,
@@ -4570,63 +4539,63 @@ inline def drawTexture(
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: Unit,
   rect: Unit,
-  scissorRect: typings.playcanvas.mod.Vec4
+  scissorRect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: Unit,
   rect: Unit,
-  scissorRect: typings.playcanvas.mod.Vec4,
+  scissorRect: Vec4,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: Unit,
-  rect: typings.playcanvas.mod.Vec4
+  rect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: Unit,
-  rect: typings.playcanvas.mod.Vec4,
+  rect: Vec4,
   scissorRect: Unit,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: Unit,
-  rect: typings.playcanvas.mod.Vec4,
-  scissorRect: typings.playcanvas.mod.Vec4
+  rect: Vec4,
+  scissorRect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: Unit,
-  rect: typings.playcanvas.mod.Vec4,
-  scissorRect: typings.playcanvas.mod.Vec4,
+  rect: Vec4,
+  scissorRect: Vec4,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader,
   rect: Unit,
@@ -4635,52 +4604,52 @@ inline def drawTexture(
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader,
   rect: Unit,
-  scissorRect: typings.playcanvas.mod.Vec4
+  scissorRect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader,
   rect: Unit,
-  scissorRect: typings.playcanvas.mod.Vec4,
+  scissorRect: Vec4,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4
+  rect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4,
+  rect: Vec4,
   scissorRect: Unit,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4,
-  scissorRect: typings.playcanvas.mod.Vec4
+  rect: Vec4,
+  scissorRect: Vec4
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: typings.playcanvas.mod.GraphicsDevice,
-  texture: typings.playcanvas.mod.Texture,
+  texture: Texture,
   target: typings.playcanvas.mod.RenderTarget,
   shader: typings.playcanvas.mod.Shader,
-  rect: typings.playcanvas.mod.Vec4,
-  scissorRect: typings.playcanvas.mod.Vec4,
+  rect: Vec4,
+  scissorRect: Vec4,
   useBlend: Boolean
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
@@ -4724,7 +4693,7 @@ inline def getTouchTargetCoords(
   touch: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.Touch */ Any
 ): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getTouchTargetCoords")(touch.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 
-inline def http: typings.playcanvas.mod.Http_ = ^.asInstanceOf[js.Dynamic].selectDynamic("http").asInstanceOf[typings.playcanvas.mod.Http_]
+inline def http: Http_ = ^.asInstanceOf[js.Dynamic].selectDynamic("http").asInstanceOf[Http_]
 
 inline def inherits(Self: Any, Super: Any): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("inherits")(Self.asInstanceOf[js.Any], Super.asInstanceOf[js.Any])).asInstanceOf[Call]
 
@@ -4787,28 +4756,12 @@ inline def prefilterCubemap(options: Any): Unit = ^.asInstanceOf[js.Dynamic].app
   * // declare script attributes (Must be after pc.registerScript())
   * PlayerController.attributes.add('attribute1', {type: 'number'});
   */
-inline def registerScript(script: TypeofScriptType & (Instantiable1[/* args */ App, typings.playcanvas.mod.ScriptType])): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerScript")(script.asInstanceOf[js.Any]).asInstanceOf[Unit]
-inline def registerScript(
-  script: TypeofScriptType & (Instantiable1[/* args */ App, typings.playcanvas.mod.ScriptType]),
-  name: String
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerScript")(script.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def registerScript(
-  script: TypeofScriptType & (Instantiable1[/* args */ App, typings.playcanvas.mod.ScriptType]),
-  name: String,
-  app: typings.playcanvas.mod.AppBase
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerScript")(script.asInstanceOf[js.Any], name.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def registerScript(
-  script: TypeofScriptType & (Instantiable1[/* args */ App, typings.playcanvas.mod.ScriptType]),
-  name: Unit,
-  app: typings.playcanvas.mod.AppBase
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerScript")(script.asInstanceOf[js.Any], name.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def registerScript(script: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType])): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerScript")(script.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def registerScript(script: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType]), name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerScript")(script.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def registerScript(script: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType]), name: String, app: AppBase): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerScript")(script.asInstanceOf[js.Any], name.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def registerScript(script: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType]), name: Unit, app: AppBase): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerScript")(script.asInstanceOf[js.Any], name.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def reprojectTexture(
-  source: typings.playcanvas.mod.Texture,
-  target: typings.playcanvas.mod.Texture,
-  options: Unit,
-  args: Any*
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reprojectTexture")((scala.List(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def reprojectTexture(source: Texture, target: Texture, options: Unit, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reprojectTexture")((scala.List(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 /**
   * This function reprojects textures between cubemap, equirectangular and octahedral formats. The
   * function can read and write textures with pixel data in RGBE, RGBM, linear and sRGB formats.
@@ -4828,12 +4781,7 @@ inline def reprojectTexture(
   * @param {Vec4} [options.rect] - Optional viewport rectangle.
   * @param {number} [options.seamPixels] - Optional number of seam pixels to render
   */
-inline def reprojectTexture(
-  source: typings.playcanvas.mod.Texture,
-  target: typings.playcanvas.mod.Texture,
-  options: Distribution,
-  args: Any*
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reprojectTexture")((scala.List(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def reprojectTexture(source: Texture, target: Texture, options: Distribution, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reprojectTexture")((scala.List(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 
 inline def revision: $_CURRENT_SDK_REVISION = ^.asInstanceOf[js.Dynamic].selectDynamic("revision").asInstanceOf[$_CURRENT_SDK_REVISION]
 

@@ -2,6 +2,8 @@ package typings.webpackEnv
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeModule
+import typings.node.NodeRequire
 import typings.webpackEnv.webpackEnvStrings.`accept-errored`
 import typings.webpackEnv.webpackEnvStrings.`lazy-once`
 import typings.webpackEnv.webpackEnvStrings.`lazy`

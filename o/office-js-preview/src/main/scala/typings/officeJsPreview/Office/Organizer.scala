@@ -52,7 +52,7 @@ trait Organizer extends StObject {
     * **Important**: A `recipientType` property value isn't returned by the getAsync method.
     * The appointment organizer is always a user whose email address is on the Exchange server.
     * 
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                  `asyncResult`, which is an `AsyncResult` object. The `value` property of the result is the appointment's organizer value,

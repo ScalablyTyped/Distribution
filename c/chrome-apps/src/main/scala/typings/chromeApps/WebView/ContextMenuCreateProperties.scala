@@ -6,11 +6,6 @@ import typings.chromeApps.chrome.integer
 import typings.chromeApps.chromeAppsStrings.NORMAL
 import typings.chromeApps.chromeAppsStrings.RADIO
 import typings.chromeApps.chromeAppsStrings.SEPARATOR
-import typings.chromeApps.chromeAppsStrings.checkbox_
-import typings.chromeApps.chromeAppsStrings.normal_
-import typings.chromeApps.chromeAppsStrings.radio_
-import typings.chromeApps.chromeAppsStrings.separator_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,10 +70,7 @@ trait ContextMenuCreateProperties extends StObject {
     ToStringLiteral[
       CHECKBOX, 
       /* keyof chrome-apps.anon.CHECKBOX */ NORMAL | typings.chromeApps.chromeAppsStrings.CHECKBOX | RADIO | SEPARATOR, 
-      Exclude[
-        /* keyof chrome-apps.anon.CHECKBOX */ NORMAL | typings.chromeApps.chromeAppsStrings.CHECKBOX | RADIO | SEPARATOR, 
-        normal_ | checkbox_ | radio_ | separator_
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'} extends keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'} ? std.Exclude<keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'}, 'normal' | 'checkbox' | 'radio' | 'separator'> : never */ js.Any
     ]
   ] = js.undefined
 }
@@ -137,10 +129,7 @@ object ContextMenuCreateProperties {
       value: ToStringLiteral[
           CHECKBOX, 
           /* keyof chrome-apps.anon.CHECKBOX */ NORMAL | typings.chromeApps.chromeAppsStrings.CHECKBOX | RADIO | SEPARATOR, 
-          Exclude[
-            /* keyof chrome-apps.anon.CHECKBOX */ NORMAL | typings.chromeApps.chromeAppsStrings.CHECKBOX | RADIO | SEPARATOR, 
-            normal_ | checkbox_ | radio_ | separator_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'} extends keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'} ? std.Exclude<keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'}, 'normal' | 'checkbox' | 'radio' | 'separator'> : never */ js.Any
         ]
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

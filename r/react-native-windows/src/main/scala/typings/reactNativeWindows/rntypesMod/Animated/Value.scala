@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-windows/rntypes", "Animated.Value")
 @js.native
-open class Value protected ()
-  extends AnimatedWithChildren
-     with _WithAnimatedValue[Any] {
+open class Value protected () extends AnimatedWithChildren {
   def this(value: Double) = this()
   
   /**

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents add-in level functionality for operating or configuring various aspects of the add-in.
   * 
   * @remarks
+  *
   * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
   */
 trait Addin extends StObject {

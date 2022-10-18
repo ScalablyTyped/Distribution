@@ -39,11 +39,11 @@ trait Bincheckname extends StObject {
   
   var maskedpan: String
   
-  var name_on_card: Any
+  var name_on_card: String
   
   var send_to: Any
   
-  var state: Any
+  var state: String
   
   var zip_code: String
 }
@@ -65,9 +65,9 @@ object Bincheckname {
     expiration: String,
     id: String,
     maskedpan: String,
-    name_on_card: Any,
+    name_on_card: String,
     send_to: Any,
-    state: Any,
+    state: String,
     zip_code: String
   ): Bincheckname = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], address_1 = address_1.asInstanceOf[js.Any], address_2 = address_2.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], bin_check_name = bin_check_name.asInstanceOf[js.Any], card_hash = card_hash.asInstanceOf[js.Any], card_type = card_type.asInstanceOf[js.Any], cardpan = cardpan.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], cvv = cvv.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_active = true, maskedpan = maskedpan.asInstanceOf[js.Any], name_on_card = name_on_card.asInstanceOf[js.Any], send_to = send_to.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], zip_code = zip_code.asInstanceOf[js.Any])
@@ -108,11 +108,11 @@ object Bincheckname {
     
     inline def setMaskedpan(value: String): Self = StObject.set(x, "maskedpan", value.asInstanceOf[js.Any])
     
-    inline def setName_on_card(value: Any): Self = StObject.set(x, "name_on_card", value.asInstanceOf[js.Any])
+    inline def setName_on_card(value: String): Self = StObject.set(x, "name_on_card", value.asInstanceOf[js.Any])
     
     inline def setSend_to(value: Any): Self = StObject.set(x, "send_to", value.asInstanceOf[js.Any])
     
-    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setZip_code(value: String): Self = StObject.set(x, "zip_code", value.asInstanceOf[js.Any])
   }

@@ -1,7 +1,10 @@
 package typings.jupyterlabCodemirrorExtension
 
 import org.scalablytyped.runtime.Shortcut
-import typings.jupyterlabApplication.frontendMod.JupyterFrontEndPlugin
+import typings.jupyterlabApplication.libFrontendMod.JupyterFrontEnd.IShell
+import typings.jupyterlabApplication.libFrontendMod.JupyterFrontEndPlugin
+import typings.jupyterlabCodemirrorExtension.jupyterlabCodemirrorExtensionStrings.desktop
+import typings.jupyterlabCodemirrorExtension.jupyterlabCodemirrorExtensionStrings.mobile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +16,14 @@ object mod extends Shortcut {
     */
   @JSImport("@jupyterlab/codemirror-extension", JSImport.Default)
   @js.native
-  val default: js.Array[JupyterFrontEndPlugin[js.Any]] = js.native
+  val default: js.Array[JupyterFrontEndPlugin[Any, IShell, desktop | mobile]] = js.native
   
   @JSImport("@jupyterlab/codemirror-extension", "editorSyntaxStatus")
   @js.native
-  val editorSyntaxStatus: JupyterFrontEndPlugin[Unit] = js.native
+  val editorSyntaxStatus: JupyterFrontEndPlugin[Unit, IShell, desktop | mobile] = js.native
   
-  type _To = js.Array[JupyterFrontEndPlugin[js.Any]]
+  type _To = js.Array[JupyterFrontEndPlugin[Any, IShell, desktop | mobile]]
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: js.Array[JupyterFrontEndPlugin[js.Any]] = default
+  override def _to: js.Array[JupyterFrontEndPlugin[Any, IShell, desktop | mobile]] = default
 }

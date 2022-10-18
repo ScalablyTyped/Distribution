@@ -23,24 +23,7 @@ import typings.std.ImageData
 import typings.std.WebGLBuffer
 import typings.std.WebGLRenderingContext
 import typings.std.WebGLShader
-import typings.three.animationClipMod.AnimationClip
-import typings.three.animationMixerMod.AnimationMixer
 import typings.three.anon.Bind
-import typings.three.audioListenerMod.AudioListener
-import typings.three.audioMod.Audio
-import typings.three.boneMod.Bone
-import typings.three.box3Mod.Box3
-import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.cameraMod.Camera
-import typings.three.directionalLightMod.DirectionalLight
-import typings.three.eventDispatcherMod.BaseEvent
-import typings.three.eventDispatcherMod.Event
-import typings.three.hemisphereLightMod.HemisphereLight
-import typings.three.interleavedBufferMod.InterleavedBuffer
-import typings.three.lightMod.Light
-import typings.three.loaderUtilsMod.LoaderUtils
-import typings.three.loadingManagerMod.LoadingManager
-import typings.three.materialMod.Material
 import typings.three.mod.AmbientLight
 import typings.three.mod.AmbientLightProbe
 import typings.three.mod.AnimationAction
@@ -223,9 +206,11 @@ import typings.three.mod.WireframeGeometry
 import typings.three.mod.XRGripSpace
 import typings.three.mod.XRHandSpace
 import typings.three.mod.XRTargetRaySpace
-import typings.three.object3DMod.Object3D
-import typings.three.planeMod.Plane
-import typings.three.pointLightMod.PointLight
+import typings.three.srcAnimationAnimationClipMod.AnimationClip
+import typings.three.srcAnimationAnimationMixerMod.AnimationMixer
+import typings.three.srcAudioAudioListenerMod.AudioListener
+import typings.three.srcAudioAudioMod.Audio
+import typings.three.srcCamerasCameraMod.Camera
 import typings.three.srcConstantsMod.AnimationActionLoopStyles
 import typings.three.srcConstantsMod.AnimationBlendMode
 import typings.three.srcConstantsMod.Blending
@@ -254,25 +239,40 @@ import typings.three.srcConstantsMod.ToneMapping
 import typings.three.srcConstantsMod.TrianglesDrawModes
 import typings.three.srcConstantsMod.Usage
 import typings.three.srcConstantsMod.Wrapping
-import typings.three.uniformsGroupMod.UniformsGroup
-import typings.three.utilsMod.ColorRepresentation
-import typings.three.vector2Mod.Vector
-import typings.three.vector2Mod.Vector2
-import typings.three.vector3Mod.Vector3
-import typings.three.webGLAttributesMod.WebGLAttributes
-import typings.three.webGLBindingStatesMod.WebGLBindingStates
-import typings.three.webGLCapabilitiesMod.WebGLCapabilities
-import typings.three.webGLCapabilitiesMod.WebGLCapabilitiesParameters
-import typings.three.webGLClippingMod.WebGLClipping
-import typings.three.webGLCubeMapsMod.WebGLCubeMaps
-import typings.three.webGLCubeRenderTargetMod.WebGLCubeRenderTarget
-import typings.three.webGLExtensionsMod.WebGLExtensions
-import typings.three.webGLInfoMod.WebGLInfo
-import typings.three.webGLObjectsMod.WebGLObjects
-import typings.three.webGLPropertiesMod.WebGLProperties
-import typings.three.webGLRendererMod.WebGLRenderer
-import typings.three.webGLStateMod.WebGLState
-import typings.three.webGLUtilsMod.WebGLUtils
+import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreEventDispatcherMod.BaseEvent
+import typings.three.srcCoreEventDispatcherMod.Event
+import typings.three.srcCoreInterleavedBufferMod.InterleavedBuffer
+import typings.three.srcCoreObject3DMod.Object3D
+import typings.three.srcCoreUniformsGroupMod.UniformsGroup
+import typings.three.srcLightsDirectionalLightMod.DirectionalLight
+import typings.three.srcLightsHemisphereLightMod.HemisphereLight
+import typings.three.srcLightsLightMod.Light
+import typings.three.srcLightsPointLightMod.PointLight
+import typings.three.srcLoadersLoaderUtilsMod.LoaderUtils
+import typings.three.srcLoadersLoadingManagerMod.LoadingManager
+import typings.three.srcMaterialsMaterialMod.Material
+import typings.three.srcMathBox3Mod.Box3
+import typings.three.srcMathPlaneMod.Plane
+import typings.three.srcMathVector2Mod.Vector
+import typings.three.srcMathVector2Mod.Vector2
+import typings.three.srcMathVector3Mod.Vector3
+import typings.three.srcObjectsBoneMod.Bone
+import typings.three.srcRenderersWebGLCubeRenderTargetMod.WebGLCubeRenderTarget
+import typings.three.srcRenderersWebGLRendererMod.WebGLRenderer
+import typings.three.srcRenderersWebglWebGLAttributesMod.WebGLAttributes
+import typings.three.srcRenderersWebglWebGLBindingStatesMod.WebGLBindingStates
+import typings.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities
+import typings.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilitiesParameters
+import typings.three.srcRenderersWebglWebGLClippingMod.WebGLClipping
+import typings.three.srcRenderersWebglWebGLCubeMapsMod.WebGLCubeMaps
+import typings.three.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions
+import typings.three.srcRenderersWebglWebGLInfoMod.WebGLInfo
+import typings.three.srcRenderersWebglWebGLObjectsMod.WebGLObjects
+import typings.three.srcRenderersWebglWebGLPropertiesMod.WebGLProperties
+import typings.three.srcRenderersWebglWebGLStateMod.WebGLState
+import typings.three.srcRenderersWebglWebGLUtilsMod.WebGLUtils
+import typings.three.srcUtilsMod.ColorRepresentation
 import typings.threeTdsLoader.threeTdsLoaderInts.`1`
 import typings.threeTdsLoader.threeTdsLoaderInts.`2`
 import typings.threeTdsLoader.threeTdsLoaderInts.`4`
@@ -885,7 +885,7 @@ trait TypeofTHREE extends StObject {
   
   var Loader: Instantiable0[typings.three.mod.Loader]
   
-  val LoaderUtils: typings.three.loaderUtilsMod.LoaderUtils
+  val LoaderUtils: typings.three.srcLoadersLoaderUtilsMod.LoaderUtils
   
   var LoadingManager: Instantiable0[typings.three.mod.LoadingManager]
   
@@ -1402,7 +1402,7 @@ trait TypeofTHREE extends StObject {
   var WebGLCubeRenderTarget: Instantiable1[/* size */ Double, typings.three.mod.WebGLCubeRenderTarget]
   
   var WebGLCubeUVMaps: Instantiable1[
-    /* renderer */ typings.three.threeMod.WebGLRenderer, 
+    /* renderer */ typings.three.srcThreeMod.WebGLRenderer, 
     typings.three.mod.WebGLCubeUVMaps
   ]
   
@@ -3127,7 +3127,7 @@ object TypeofTHREE {
     
     inline def setWebGLCubeRenderTarget(value: Instantiable1[/* size */ Double, typings.three.mod.WebGLCubeRenderTarget]): Self = StObject.set(x, "WebGLCubeRenderTarget", value.asInstanceOf[js.Any])
     
-    inline def setWebGLCubeUVMaps(value: Instantiable1[/* renderer */ typings.three.threeMod.WebGLRenderer, WebGLCubeUVMaps]): Self = StObject.set(x, "WebGLCubeUVMaps", value.asInstanceOf[js.Any])
+    inline def setWebGLCubeUVMaps(value: Instantiable1[/* renderer */ typings.three.srcThreeMod.WebGLRenderer, WebGLCubeUVMaps]): Self = StObject.set(x, "WebGLCubeUVMaps", value.asInstanceOf[js.Any])
     
     inline def setWebGLDepthBuffer(value: Instantiable0[WebGLDepthBuffer]): Self = StObject.set(x, "WebGLDepthBuffer", value.asInstanceOf[js.Any])
     

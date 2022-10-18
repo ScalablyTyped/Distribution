@@ -1,18 +1,12 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.curryMod._SplitParams
-import typings.tsToolbelt.tailMod.Tail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `1PSplit`[P /* <: typings.tsToolbelt.listMod.List[Any] */, PRest /* <: typings.tsToolbelt.listMod.List[Any] */, PSplit /* <: js.Array[typings.tsToolbelt.listMod.List[Any]] */] extends StObject {
+trait `1PSplit`[P /* <: typings.tsToolbelt.outListListMod.List[Any] */, PRest /* <: typings.tsToolbelt.outListListMod.List[Any] */, PSplit /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */] extends StObject {
   
-  var `0`: _SplitParams[
-    Tail[P], 
-    /* import warning: importer.ImportType#apply c repeated non-array type: PSplit */ js.Array[PSplit], 
-    Tail[PRest]
-  ]
+  var `0`: /* import warning: importer.ImportType#apply Failed type conversion: P extends [...infer A, ...PRest] ? ts-toolbelt.ts-toolbelt/out/Function/Curry._SplitParams<ts-toolbelt.ts-toolbelt/out/List/Tail.Tail<P>, [...PSplit, A], ts-toolbelt.ts-toolbelt/out/List/Tail.Tail<PRest>> : never */ js.Any
   
   var `1`: PSplit
   
@@ -24,12 +18,8 @@ trait `1PSplit`[P /* <: typings.tsToolbelt.listMod.List[Any] */, PRest /* <: typ
 }
 object `1PSplit` {
   
-  inline def apply[P /* <: typings.tsToolbelt.listMod.List[Any] */, PRest /* <: typings.tsToolbelt.listMod.List[Any] */, PSplit /* <: js.Array[typings.tsToolbelt.listMod.List[Any]] */](
-    `0`: _SplitParams[
-      Tail[P], 
-      /* import warning: importer.ImportType#apply c repeated non-array type: PSplit */ js.Array[PSplit], 
-      Tail[PRest]
-    ],
+  inline def apply[P /* <: typings.tsToolbelt.outListListMod.List[Any] */, PRest /* <: typings.tsToolbelt.outListListMod.List[Any] */, PSplit /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */](
+    `0`: /* import warning: importer.ImportType#apply Failed type conversion: P extends [...infer A, ...PRest] ? ts-toolbelt.ts-toolbelt/out/Function/Curry._SplitParams<ts-toolbelt.ts-toolbelt/out/List/Tail.Tail<P>, [...PSplit, A], ts-toolbelt.ts-toolbelt/out/List/Tail.Tail<PRest>> : never */ js.Any,
     `1`: PSplit,
     `2`: js.Array[
       js.Array[
@@ -44,14 +34,10 @@ object `1PSplit` {
     __obj.asInstanceOf[`1PSplit`[P, PRest, PSplit]]
   }
   
-  extension [Self <: `1PSplit`[?, ?, ?], P /* <: typings.tsToolbelt.listMod.List[Any] */, PRest /* <: typings.tsToolbelt.listMod.List[Any] */, PSplit /* <: js.Array[typings.tsToolbelt.listMod.List[Any]] */](x: Self & (`1PSplit`[P, PRest, PSplit])) {
+  extension [Self <: `1PSplit`[?, ?, ?], P /* <: typings.tsToolbelt.outListListMod.List[Any] */, PRest /* <: typings.tsToolbelt.outListListMod.List[Any] */, PSplit /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */](x: Self & (`1PSplit`[P, PRest, PSplit])) {
     
     inline def set0(
-      value: _SplitParams[
-          Tail[P], 
-          /* import warning: importer.ImportType#apply c repeated non-array type: PSplit */ js.Array[PSplit], 
-          Tail[PRest]
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: P extends [...infer A, ...PRest] ? ts-toolbelt.ts-toolbelt/out/Function/Curry._SplitParams<ts-toolbelt.ts-toolbelt/out/List/Tail.Tail<P>, [...PSplit, A], ts-toolbelt.ts-toolbelt/out/List/Tail.Tail<PRest>> : never */ js.Any
     ): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
     inline def set1(value: PSplit): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])

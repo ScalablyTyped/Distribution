@@ -19,9 +19,9 @@ open class CloudPoint protected ()
     */
   def this(
     particleIndex: Double,
-    group: typings.babylonjs.cloudPointMod.PointsGroup,
+    group: typings.babylonjs.particlesCloudPointMod.PointsGroup,
     groupId: Double,
     idxInGroup: Double,
-    pcs: typings.babylonjs.pointsCloudSystemMod.PointsCloudSystem
+    pcs: typings.babylonjs.particlesPointsCloudSystemMod.PointsCloudSystem
   ) = this()
 }

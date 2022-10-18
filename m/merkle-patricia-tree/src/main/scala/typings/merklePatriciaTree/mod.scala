@@ -3,9 +3,9 @@ package typings.merklePatriciaTree
 import typings.abstractLeveldown.mod.AbstractIterator
 import typings.abstractLeveldown.mod.AbstractLevelDOWN
 import typings.levelup.mod.LevelUp
-import typings.merklePatriciaTree.baseTrieMod.FoundNodeFunction
-import typings.merklePatriciaTree.baseTrieMod.Proof
-import typings.merklePatriciaTree.baseTrieMod.Trie
+import typings.merklePatriciaTree.distBaseTrieMod.FoundNodeFunction
+import typings.merklePatriciaTree.distBaseTrieMod.Proof
+import typings.merklePatriciaTree.distBaseTrieMod.Trie
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -144,14 +144,14 @@ object mod {
   @JSImport("merkle-patricia-tree", "CheckpointTrie")
   @js.native
   open class CheckpointTrie protected ()
-    extends typings.merklePatriciaTree.checkpointTrieMod.CheckpointTrie {
+    extends typings.merklePatriciaTree.distCheckpointTrieMod.CheckpointTrie {
     def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any) = this()
   }
   
   @JSImport("merkle-patricia-tree", "SecureTrie")
   @js.native
   open class SecureTrie protected ()
-    extends typings.merklePatriciaTree.secureMod.SecureTrie {
+    extends typings.merklePatriciaTree.distSecureMod.SecureTrie {
     def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any) = this()
   }
   /* static members */
@@ -166,7 +166,7 @@ object mod {
       * @param trie
       * @param key
       */
-    inline def createProof(trie: typings.merklePatriciaTree.secureMod.SecureTrie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProof")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
+    inline def createProof(trie: typings.merklePatriciaTree.distSecureMod.SecureTrie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProof")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
     
     /**
       * prove has been renamed to {@link SecureTrie.createProof}.
@@ -174,7 +174,7 @@ object mod {
       * @param trie
       * @param key
       */
-    inline def prove(trie: typings.merklePatriciaTree.secureMod.SecureTrie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("prove")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
+    inline def prove(trie: typings.merklePatriciaTree.distSecureMod.SecureTrie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("prove")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
     
     /**
       * Verifies a proof.
@@ -254,7 +254,7 @@ object mod {
     * @param poolSize - The size of the task queue.
     */
   /* private */ open class WalkController ()
-    extends typings.merklePatriciaTree.walkControllerMod.WalkController
+    extends typings.merklePatriciaTree.distUtilWalkControllerMod.WalkController
   /* static members */
   object WalkController {
     

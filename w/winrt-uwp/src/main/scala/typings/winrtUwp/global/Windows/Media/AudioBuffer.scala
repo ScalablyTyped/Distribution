@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a buffer containing audio data. */
-@JSGlobal("Windows.Media.AudioBuffer")
+/* note: abstract class */ @JSGlobal("Windows.Media.AudioBuffer")
 @js.native
-abstract class AudioBuffer ()
+open class AudioBuffer ()
   extends StObject
      with typings.winrtUwp.Windows.Media.AudioBuffer {
   

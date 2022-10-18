@@ -1,6 +1,6 @@
 package typings.sassEmbedded.anon
 
-import typings.sassEmbedded.legacyImporterMod._LegacyImporterResult
+import typings.sassEmbedded.distTypesLegacyImporterMod._LegacyImporterResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

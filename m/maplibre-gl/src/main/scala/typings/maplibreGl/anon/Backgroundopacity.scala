@@ -1,8 +1,8 @@
 package typings.maplibreGl.anon
 
-import typings.maplibreGl.styleSpecMod.ColorSpecification
-import typings.maplibreGl.styleSpecMod.PropertyValueSpecification
-import typings.maplibreGl.styleSpecMod.ResolvedImageSpecification
+import typings.maplibreGl.distStyleSpecMod.ColorSpecification
+import typings.maplibreGl.distStyleSpecMod.PropertyValueSpecification
+import typings.maplibreGl.distStyleSpecMod.ResolvedImageSpecification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

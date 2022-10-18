@@ -1,21 +1,21 @@
 package typings.imageQ.mod
 
-import typings.imageQ.distanceCalculatorMod.AbstractDistanceCalculator
+import typings.imageQ.distTypesSrcDistanceDistanceCalculatorMod.AbstractDistanceCalculator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object palette {
   
-  @JSImport("image-q", "palette.AbstractPaletteQuantizer")
+  /* note: abstract class */ @JSImport("image-q", "palette.AbstractPaletteQuantizer")
   @js.native
-  abstract class AbstractPaletteQuantizer ()
-    extends typings.imageQ.paletteMod.AbstractPaletteQuantizer
+  open class AbstractPaletteQuantizer ()
+    extends typings.imageQ.distTypesSrcPaletteMod.AbstractPaletteQuantizer
   
   @JSImport("image-q", "palette.ColorHistogram")
   @js.native
   open class ColorHistogram protected ()
-    extends typings.imageQ.paletteMod.ColorHistogram {
+    extends typings.imageQ.distTypesSrcPaletteMod.ColorHistogram {
     def this(method: Double, colors: Double) = this()
   }
   /* static members */
@@ -44,7 +44,7 @@ object palette {
   @JSImport("image-q", "palette.NeuQuant")
   @js.native
   open class NeuQuant protected ()
-    extends typings.imageQ.paletteMod.NeuQuant {
+    extends typings.imageQ.distTypesSrcPaletteMod.NeuQuant {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
     def this(colorDistanceCalculator: AbstractDistanceCalculator, colors: Double) = this()
   }
@@ -139,7 +139,7 @@ object palette {
   @JSImport("image-q", "palette.NeuQuantFloat")
   @js.native
   open class NeuQuantFloat protected ()
-    extends typings.imageQ.paletteMod.NeuQuantFloat {
+    extends typings.imageQ.distTypesSrcPaletteMod.NeuQuantFloat {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
     def this(colorDistanceCalculator: AbstractDistanceCalculator, colors: Double) = this()
   }
@@ -234,7 +234,7 @@ object palette {
   @JSImport("image-q", "palette.RGBQuant")
   @js.native
   open class RGBQuant protected ()
-    extends typings.imageQ.paletteMod.RGBQuant {
+    extends typings.imageQ.distTypesSrcPaletteMod.RGBQuant {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
     def this(colorDistanceCalculator: AbstractDistanceCalculator, colors: Double) = this()
     def this(colorDistanceCalculator: AbstractDistanceCalculator, colors: Double, method: Double) = this()
@@ -244,12 +244,12 @@ object palette {
   @JSImport("image-q", "palette.WuColorCube")
   @js.native
   open class WuColorCube ()
-    extends typings.imageQ.paletteMod.WuColorCube
+    extends typings.imageQ.distTypesSrcPaletteMod.WuColorCube
   
   @JSImport("image-q", "palette.WuQuant")
   @js.native
   open class WuQuant protected ()
-    extends typings.imageQ.paletteMod.WuQuant {
+    extends typings.imageQ.distTypesSrcPaletteMod.WuQuant {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
     def this(colorDistanceCalculator: AbstractDistanceCalculator, colors: Double) = this()
     def this(

@@ -5,9 +5,9 @@ import typings.node.bufferMod.global.BufferEncoding
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
 import typings.node.netMod.SocketConnectOpts
+import typings.telnetClient.libUtilsMod.Callback
+import typings.telnetClient.libUtilsMod.Stream
 import typings.telnetClient.telnetClientBooleans.`false`
-import typings.telnetClient.utilsMod.Callback
-import typings.telnetClient.utilsMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,10 +32,10 @@ object mod {
     
     def exec(cmd: String): js.Promise[String] = js.native
     def exec(cmd: String, opts: Unit, callback: Callback[String]): js.Promise[String] = js.native
-    def exec(cmd: String, opts: ExecOptions): js.Promise[String] = js.native
-    def exec(cmd: String, opts: ExecOptions, callback: Callback[String]): js.Promise[String] = js.native
     def exec(cmd: String, opts: Callback[String]): js.Promise[String] = js.native
     def exec(cmd: String, opts: Callback[String], callback: Callback[String]): js.Promise[String] = js.native
+    def exec(cmd: String, opts: ExecOptions): js.Promise[String] = js.native
+    def exec(cmd: String, opts: ExecOptions, callback: Callback[String]): js.Promise[String] = js.native
     
     def getSocket(): Socket | Null = js.native
     
@@ -62,16 +62,16 @@ object mod {
     
     def send(data: String): js.Promise[String] = js.native
     def send(data: String, opts: Unit, callback: Callback[String]): js.Promise[String] = js.native
-    def send(data: String, opts: SendOptions): js.Promise[String] = js.native
-    def send(data: String, opts: SendOptions, callback: Callback[String]): js.Promise[String] = js.native
     def send(data: String, opts: Callback[String]): js.Promise[String] = js.native
     def send(data: String, opts: Callback[String], callback: Callback[String]): js.Promise[String] = js.native
+    def send(data: String, opts: SendOptions): js.Promise[String] = js.native
+    def send(data: String, opts: SendOptions, callback: Callback[String]): js.Promise[String] = js.native
     def send(data: Buffer): js.Promise[String] = js.native
     def send(data: Buffer, opts: Unit, callback: Callback[String]): js.Promise[String] = js.native
-    def send(data: Buffer, opts: SendOptions): js.Promise[String] = js.native
-    def send(data: Buffer, opts: SendOptions, callback: Callback[String]): js.Promise[String] = js.native
     def send(data: Buffer, opts: Callback[String]): js.Promise[String] = js.native
     def send(data: Buffer, opts: Callback[String], callback: Callback[String]): js.Promise[String] = js.native
+    def send(data: Buffer, opts: SendOptions): js.Promise[String] = js.native
+    def send(data: Buffer, opts: SendOptions, callback: Callback[String]): js.Promise[String] = js.native
     
     def shell(): js.Promise[Stream] = js.native
     def shell(callback: Callback[Stream]): js.Promise[Stream] = js.native

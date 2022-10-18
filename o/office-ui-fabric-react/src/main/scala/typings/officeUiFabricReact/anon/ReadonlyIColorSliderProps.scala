@@ -1,9 +1,9 @@
 package typings.officeUiFabricReact.anon
 
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.colorSliderTypesMod.IColorSlider
-import typings.officeUiFabricReact.colorSliderTypesMod.IColorSliderStyleProps
-import typings.officeUiFabricReact.colorSliderTypesMod.IColorSliderStyles
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsColorPickerColorSliderColorSliderDottypesMod.IColorSlider
+import typings.officeUiFabricReact.libComponentsColorPickerColorSliderColorSliderDottypesMod.IColorSliderStyleProps
+import typings.officeUiFabricReact.libComponentsColorPickerColorSliderColorSliderDottypesMod.IColorSliderStyles
 import typings.officeUiFabricReact.officeUiFabricReactStrings.alpha
 import typings.officeUiFabricReact.officeUiFabricReactStrings.hue
 import typings.officeUiFabricReact.officeUiFabricReactStrings.transparency
@@ -12,9 +12,9 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.Element
-import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricUtilities.createRefMod.IRefObject
+import typings.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricUtilities.libCreateRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

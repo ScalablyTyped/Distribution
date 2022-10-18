@@ -678,7 +678,7 @@ object mod {
     
     inline def `Patorjk-HeX`: typings.figlet.figletStrings.`Patorjk-HeX` = "Patorjk-HeX".asInstanceOf[typings.figlet.figletStrings.`Patorjk-HeX`]
     
-    inline def `PatorjkApostrophes Cheese`: String = String.asInstanceOf[String]
+    inline def `PatorjkApostrophes Cheese`: /* Patorjk's Cheese */ String = ("Patorjk's Cheese").asInstanceOf[/* Patorjk's Cheese */ String]
     
     inline def Pawp: typings.figlet.figletStrings.Pawp = "Pawp".asInstanceOf[typings.figlet.figletStrings.Pawp]
     
@@ -1059,7 +1059,7 @@ object mod {
     - typings.figlet.figletStrings.Ogre
     - typings.figlet.figletStrings.`Old Banner`
     - typings.figlet.figletStrings.Pagga
-    - java.lang.String
+    - / * Patorjk's Cheese * / java.lang.String
     - typings.figlet.figletStrings.`Patorjk-HeX`
     - typings.figlet.figletStrings.Pawp
     - typings.figlet.figletStrings.`Peaks Slant`
@@ -1153,7 +1153,7 @@ object mod {
     - typings.figlet.figletStrings.Whimsy
     - typings.figlet.figletStrings.Wow
   */
-  type Fonts_ = _Fonts_ | String
+  type Fonts_ = _Fonts_ | (/* Patorjk's Cheese */ String)
   
   /* Rewritten from type alias, can be one of: 
     - typings.figlet.figletStrings.default

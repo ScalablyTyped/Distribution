@@ -3,8 +3,8 @@ package typings.reactNativePaper.anon
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.bottomNavigationMod.NavigationState
-import typings.reactNativePaper.bottomNavigationMod.TouchableProps
+import typings.reactNativePaper.libTypescriptComponentsBottomNavigationBottomNavigationMod.NavigationState
+import typings.reactNativePaper.libTypescriptComponentsBottomNavigationBottomNavigationMod.TouchableProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

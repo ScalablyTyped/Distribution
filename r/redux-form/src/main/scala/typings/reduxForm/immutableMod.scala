@@ -1,27 +1,27 @@
 package typings.reduxForm
 
 import typings.react.mod.FunctionComponent
-import typings.reduxForm.actionsMod.FormAction
 import typings.reduxForm.anon.PartialInitializeOptions
-import typings.reduxForm.fieldArrayMod.BaseFieldArrayProps
-import typings.reduxForm.fieldMod.BaseFieldProps
-import typings.reduxForm.fieldMod.GenericFieldHTMLAttributes
-import typings.reduxForm.fieldsMod.BaseFieldsProps
-import typings.reduxForm.formMod.FormProps
-import typings.reduxForm.formNameMod.FormNameProps
-import typings.reduxForm.formSectionMod.FormSectionProps
+import typings.reduxForm.libActionsMod.FormAction
+import typings.reduxForm.libFieldArrayMod.BaseFieldArrayProps
+import typings.reduxForm.libFieldMod.BaseFieldProps
+import typings.reduxForm.libFieldMod.GenericFieldHTMLAttributes
+import typings.reduxForm.libFieldsMod.BaseFieldsProps
+import typings.reduxForm.libFormMod.FormProps
+import typings.reduxForm.libFormNameMod.FormNameProps
+import typings.reduxForm.libFormSectionMod.FormSectionProps
+import typings.reduxForm.libReducerMod.FormReducer
+import typings.reduxForm.libReducerMod.FormStateMap
+import typings.reduxForm.libReduxFormMod.ConfigProps
+import typings.reduxForm.libReduxFormMod.FormDecorator
+import typings.reduxForm.libSelectorsMod.BooleanSelector
+import typings.reduxForm.libSelectorsMod.DataSelector
+import typings.reduxForm.libSelectorsMod.ErrorSelector
+import typings.reduxForm.libSelectorsMod.FormOrFieldsBooleanSelector
+import typings.reduxForm.libSelectorsMod.NamesSelector
 import typings.reduxForm.mod.FieldType
 import typings.reduxForm.mod.FormErrors
 import typings.reduxForm.mod.FormWarnings
-import typings.reduxForm.reducerMod.FormReducer
-import typings.reduxForm.reducerMod.FormStateMap
-import typings.reduxForm.reduxFormMod.ConfigProps
-import typings.reduxForm.reduxFormMod.FormDecorator
-import typings.reduxForm.selectorsMod.BooleanSelector
-import typings.reduxForm.selectorsMod.DataSelector
-import typings.reduxForm.selectorsMod.ErrorSelector
-import typings.reduxForm.selectorsMod.FormOrFieldsBooleanSelector
-import typings.reduxForm.selectorsMod.NamesSelector
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -219,8 +219,7 @@ object immutableMod {
   @js.native
   val reducer: FormReducer = js.native
   
-  inline def reduxForm[FormData, P, ErrorType](config: ConfigProps[FormData, P, ErrorType]): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("reduxForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
-  inline def reduxForm[FormData, P, ErrorType](config: Partial[ConfigProps[FormData, P, ErrorType]]): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("reduxForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
+  inline def reduxForm[FormData, P, ErrorType](config: (ConfigProps[FormData, P, ErrorType]) | (Partial[ConfigProps[FormData, P, ErrorType]])): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("reduxForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
   
   inline def registerField(form: String, name: String, `type`: FieldType): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("registerField")(form.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   

@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.protobufMinimal.Field")
 @js.native
 open class Field protected ()
-  extends typings.googleGax.fallbackMod.protobufMinimal.Field {
+  extends typings.googleGax.buildSrcFallbackMod.protobufMinimal.Field {
   /**
     * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
     * @param name Unique name within its namespace

@@ -1,8 +1,6 @@
 package typings.pSettle
 
-import org.scalablytyped.runtime.TopLevel
 import typings.pReflect.mod.PromiseResult
-import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,22 +12,14 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default[ValueType /* <: js.Array[Any] */](array: ValueType): js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {-readonly [ P in keyof ValueType ]: p-reflect.p-reflect.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>}
-    */ typings.pSettle.pSettleStrings.default & TopLevel[ValueType]
+    /* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ P in keyof ValueType ]: p-reflect.p-reflect.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(array.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {-readonly [ P in keyof ValueType ]: p-reflect.p-reflect.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>}
-    */ typings.pSettle.pSettleStrings.default & TopLevel[ValueType]
+    /* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ P in keyof ValueType ]: p-reflect.p-reflect.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>} */ js.Any
   ]]
   inline def default[ValueType /* <: js.Array[Any] */](array: ValueType, options: Options): js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {-readonly [ P in keyof ValueType ]: p-reflect.p-reflect.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>}
-    */ typings.pSettle.pSettleStrings.default & TopLevel[ValueType]
+    /* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ P in keyof ValueType ]: p-reflect.p-reflect.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>} */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(array.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {-readonly [ P in keyof ValueType ]: p-reflect.p-reflect.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>}
-    */ typings.pSettle.pSettleStrings.default & TopLevel[ValueType]
+    /* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ P in keyof ValueType ]: p-reflect.p-reflect.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>} */ js.Any
   ]]
   
   inline def isFulfilled[T](promiseResult: PromiseResult[T]): /* is p-reflect.p-reflect.PromiseFulfilledResult<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFulfilled")(promiseResult.asInstanceOf[js.Any]).asInstanceOf[/* is p-reflect.p-reflect.PromiseFulfilledResult<T> */ Boolean]
@@ -37,7 +27,15 @@ object mod {
   inline def isRejected[T](promiseResult: PromiseResult[T]): /* is p-reflect.p-reflect.PromiseRejectedResult */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRejected")(promiseResult.asInstanceOf[js.Any]).asInstanceOf[/* is p-reflect.p-reflect.PromiseRejectedResult */ Boolean]
   
   // TODO: Use the native version in the next major version of this package.
-  type Awaited[T] = T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends undefined ? T : T extends std.PromiseLike<infer U> ? U : T
+    }}}
+    */
+  @js.native
+  trait Awaited[T] extends StObject
   
   trait Options extends StObject {
     
@@ -64,5 +62,13 @@ object mod {
     }
   }
   
-  type ReturnValue[T] = T | ReturnType[T]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends (args : any): any ? std.ReturnType<T> : T
+    }}}
+    */
+  @js.native
+  trait ReturnValue[T] extends StObject
 }

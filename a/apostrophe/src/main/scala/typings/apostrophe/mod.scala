@@ -1,7 +1,6 @@
 package typings.apostrophe
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.apostrophe.anon.Form
 import typings.apostrophe.anon.Id
 import typings.apostrophe.anon.Projection
@@ -239,9 +238,7 @@ object mod {
     
     var initFailed: js.UndefOr[js.Function1[/* error */ Any, Unit]] = js.undefined
     
-    var modules: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O}
-      */ typings.apostrophe.apostropheStrings.AposConstructor & TopLevel[Any]
+    var modules: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O} */ js.Any
     
     var prefix: js.UndefOr[String] = js.undefined
     
@@ -254,9 +251,7 @@ object mod {
   object AposConstructor {
     
     inline def apply[M, O](
-      modules: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O}
-      */ typings.apostrophe.apostropheStrings.AposConstructor & TopLevel[Any],
+      modules: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O} */ js.Any,
       shortName: String
     ): AposConstructor[M, O] = {
       val __obj = js.Dynamic.literal(modules = modules.asInstanceOf[js.Any], shortName = shortName.asInstanceOf[js.Any])
@@ -282,9 +277,7 @@ object mod {
       inline def setInitFailedUndefined: Self = StObject.set(x, "initFailed", js.undefined)
       
       inline def setModules(
-        value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O}
-        */ typings.apostrophe.apostropheStrings.AposConstructor & TopLevel[Any]
+        value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O} */ js.Any
       ): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])

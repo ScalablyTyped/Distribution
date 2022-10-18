@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides static properties of infrared frame sources. */
-@JSGlobal("Windows.Devices.Perception.KnownPerceptionInfraredFrameSourceProperties")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.KnownPerceptionInfraredFrameSourceProperties")
 @js.native
-abstract class KnownPerceptionInfraredFrameSourceProperties ()
+open class KnownPerceptionInfraredFrameSourceProperties ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.KnownPerceptionInfraredFrameSourceProperties
 object KnownPerceptionInfraredFrameSourceProperties {

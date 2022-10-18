@@ -4,7 +4,7 @@ import typings.baseui.anon.Cursor
 import typings.baseui.anon.GridColumn
 import typings.baseui.anon.GridTemplateColumns
 import typings.baseui.baseuiStrings.div
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

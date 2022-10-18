@@ -2,9 +2,9 @@ package typings.awsSdkClientKinesisBrowser
 
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMS
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.NONE
-import typings.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkClientKinesisBrowser.typesOutputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientKinesisBrowser.typesPutRecordsResultEntryMod.UnmarshalledPutRecordsResultEntry
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

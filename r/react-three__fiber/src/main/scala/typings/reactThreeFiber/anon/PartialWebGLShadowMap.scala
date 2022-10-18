@@ -1,12 +1,12 @@
 package typings.reactThreeFiber.anon
 
-import typings.three.cameraMod.Camera
-import typings.three.lightMod.Light
-import typings.three.sceneMod.Scene
+import typings.three.srcCamerasCameraMod.Camera
 import typings.three.srcConstantsMod.ShadowMapType
-import typings.three.webGLCapabilitiesMod.WebGLCapabilities
-import typings.three.webGLObjectsMod.WebGLObjects
-import typings.three.webGLRendererMod.WebGLRenderer
+import typings.three.srcLightsLightMod.Light
+import typings.three.srcRenderersWebGLRendererMod.WebGLRenderer
+import typings.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities
+import typings.three.srcRenderersWebglWebGLObjectsMod.WebGLObjects
+import typings.three.srcScenesSceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

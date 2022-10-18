@@ -5,22 +5,23 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// https://docs.couchdb.org/en/latest/partitioned-dbs/index.html
+/** Partitioned database info response.
+  * @see Docs: {@link https://docs.couchdb.org/en/latest/partitioned-dbs/index.html} */
 trait PartitionInfoResponse extends StObject {
   
-  // Database name
+  /** Database name */
   var db_name: String
   
-  // Document count
+  /** Document count */
   var doc_count: Double
   
-  // Deleted document count
+  /** Deleted document count */
   var doc_del_count: Double
   
-  // Partition name
+  /** Partition name */
   var partition: String
   
-  // Partition sizes
+  /** Partition sizes */
   var sizes: External
 }
 object PartitionInfoResponse {

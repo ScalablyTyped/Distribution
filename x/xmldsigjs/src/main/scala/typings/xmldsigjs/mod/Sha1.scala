@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xmldsigjs", "Sha1")
 @js.native
 open class Sha1 ()
-  extends typings.xmldsigjs.algorithmsMod.Sha1
+  extends typings.xmldsigjs.buildTypesAlgorithmsMod.Sha1

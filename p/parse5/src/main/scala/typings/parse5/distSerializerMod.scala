@@ -1,7 +1,7 @@
 package typings.parse5
 
-import typings.parse5.treeAdaptersInterfaceMod.TreeAdapter
-import typings.parse5.treeAdaptersInterfaceMod.TreeAdapterTypeMap
+import typings.parse5.distTreeAdaptersInterfaceMod.TreeAdapter
+import typings.parse5.distTreeAdaptersInterfaceMod.TreeAdapterTypeMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,15 +1,15 @@
 package typings.wixUiTestUtils
 
 import typings.react.mod.ReactElement
-import typings.wixUiTestUtils.baseDriverMod.BaseUniDriver
-import typings.wixUiTestUtils.createUniDriverFactoryMod.UniDriverFactory
+import typings.wixUiTestUtils.distSrcBaseDriverMod.BaseUniDriver
+import typings.wixUiTestUtils.distSrcUniDriverFactoryCreateUniDriverFactoryMod.UniDriverFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uniDriverFactoryMod {
   
-  @JSImport("wix-ui-test-utils/dist/src/uni-driver-factory", JSImport.Namespace)
+  @JSImport("wix-ui-test-utils/uni-driver-factory", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

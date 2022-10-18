@@ -1,10 +1,10 @@
 package typings.nivoPie
 
-import typings.nivoPie.hooksMod.MayHaveLabel
+import typings.nivoPie.distTypesHooksMod.MayHaveLabel
+import typings.nivoPie.distTypesTypesMod.ComputedDatum
+import typings.nivoPie.distTypesTypesMod.DatumId
 import typings.nivoPie.nivoPieStrings.arc
 import typings.nivoPie.nivoPieStrings.fill
-import typings.nivoPie.typesMod.ComputedDatum
-import typings.nivoPie.typesMod.DatumId
 import typings.react.mod.Dispatch
 import typings.react.mod.SetStateAction
 import typings.std.Omit
@@ -90,7 +90,7 @@ object anon {
   
   trait ArcGenerator[RawDatum] extends StObject {
     
-    var arcGenerator: typings.nivoArcs.typesTypesMod.ArcGenerator
+    var arcGenerator: typings.nivoArcs.distTypesTypesMod.ArcGenerator
     
     var dataWithArc: js.Array[Omit[ComputedDatum[RawDatum], fill]]
     
@@ -103,7 +103,7 @@ object anon {
   object ArcGenerator {
     
     inline def apply[RawDatum](
-      arcGenerator: typings.nivoArcs.typesTypesMod.ArcGenerator,
+      arcGenerator: typings.nivoArcs.distTypesTypesMod.ArcGenerator,
       dataWithArc: js.Array[Omit[ComputedDatum[RawDatum], fill]],
       legendData: js.Array[Omit[ComputedDatum[RawDatum], fill | arc]],
       setActiveId: SetStateAction[DatumId | Null] => Unit,
@@ -115,7 +115,7 @@ object anon {
     
     extension [Self <: ArcGenerator[?], RawDatum](x: Self & ArcGenerator[RawDatum]) {
       
-      inline def setArcGenerator(value: typings.nivoArcs.typesTypesMod.ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
+      inline def setArcGenerator(value: typings.nivoArcs.distTypesTypesMod.ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
       
       inline def setDataWithArc(value: js.Array[Omit[ComputedDatum[RawDatum], fill]]): Self = StObject.set(x, "dataWithArc", value.asInstanceOf[js.Any])
       
@@ -160,7 +160,7 @@ object anon {
   
   trait CenterX[RawDatum] extends StObject {
     
-    var arcGenerator: typings.nivoArcs.typesTypesMod.ArcGenerator
+    var arcGenerator: typings.nivoArcs.distTypesTypesMod.ArcGenerator
     
     var centerX: Double
     
@@ -183,7 +183,7 @@ object anon {
   object CenterX {
     
     inline def apply[RawDatum](
-      arcGenerator: typings.nivoArcs.typesTypesMod.ArcGenerator,
+      arcGenerator: typings.nivoArcs.distTypesTypesMod.ArcGenerator,
       centerX: Double,
       centerY: Double,
       dataWithArc: js.Array[Omit[ComputedDatum[RawDatum], fill]],
@@ -199,7 +199,7 @@ object anon {
     
     extension [Self <: CenterX[?], RawDatum](x: Self & CenterX[RawDatum]) {
       
-      inline def setArcGenerator(value: typings.nivoArcs.typesTypesMod.ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
+      inline def setArcGenerator(value: typings.nivoArcs.distTypesTypesMod.ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
       
       inline def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
       

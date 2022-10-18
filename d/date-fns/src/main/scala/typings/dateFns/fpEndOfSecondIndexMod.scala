@@ -9,7 +9,7 @@ object fpEndOfSecondIndexMod {
   
   object default extends Shortcut {
     
-    @JSImport("date-fns/esm/fp/endOfSecond/index", JSImport.Default)
+    @JSImport("date-fns/fp/endOfSecond/index", JSImport.Default)
     @js.native
     val ^ : CurriedFn1[js.Date | Double, js.Date] = js.native
     

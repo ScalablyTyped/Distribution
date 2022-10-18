@@ -1,10 +1,10 @@
 package typings.webdriverio.anon
 
-import typings.puppeteerCore.commonConnectionMod.CDPSession
+import typings.puppeteerCore.libCjsPuppeteerCommonConnectionMod.CDPSession
 import typings.std.Record
-import typings.webdriverio.interceptionTypesMod.Matches
-import typings.webdriverio.interceptionTypesMod.MockOverwrite
-import typings.webdriverio.interceptionTypesMod.MockResponseParams
+import typings.webdriverio.buildUtilsInterceptionTypesMod.Matches
+import typings.webdriverio.buildUtilsInterceptionTypesMod.MockOverwrite
+import typings.webdriverio.buildUtilsInterceptionTypesMod.MockResponseParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

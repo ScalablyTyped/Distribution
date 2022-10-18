@@ -2,8 +2,7 @@ package typings.zustand
 
 import typings.std.Omit
 import typings.zustand.anon.GetOptions
-import typings.zustand.zustandVanillaMod.StateCreator
-import typings.zustand.zustandVanillaMod.StoreMutatorIdentifier
+import typings.zustand.vanillaMod.StateCreator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -136,37 +135,21 @@ object middlewarePersistMod {
     }
   }
   
-  @js.native
-  trait Persist_ extends StObject {
-    
-    def apply[T, Mps /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */, Mcs /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */, U](
-      initializer: StateCreator[
-          T, 
-          /* import warning: importer.ImportType#apply c repeated non-array type: Mps */ js.Array[Mps], 
-          Mcs, 
-          T
-        ]
-    ): StateCreator[
-        T, 
-        Mps, 
-        /* import warning: importer.ImportType#apply c repeated non-array type: Mcs */ js.Array[Mcs], 
-        T
-      ] = js.native
-    def apply[T, Mps /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */, Mcs /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */, U](
-      initializer: StateCreator[
-          T, 
-          /* import warning: importer.ImportType#apply c repeated non-array type: Mps */ js.Array[Mps], 
-          Mcs, 
-          T
-        ],
-      options: PersistOptions[T, U]
-    ): StateCreator[
-        T, 
-        Mps, 
-        /* import warning: importer.ImportType#apply c repeated non-array type: Mcs */ js.Array[Mcs], 
-        T
-      ] = js.native
-  }
+  type Persist_ = js.Function2[
+    /* initializer */ StateCreator[
+      Any, 
+      /* import warning: importer.ImportType#apply c repeated non-array type: [] */ js.Array[js.Array[Any]], 
+      js.Array[Any], 
+      Any
+    ], 
+    /* options */ js.UndefOr[PersistOptions[Any, Any]], 
+    StateCreator[
+      Any, 
+      js.Array[Any], 
+      /* import warning: importer.ImportType#apply c repeated non-array type: [] */ js.Array[js.Array[Any]], 
+      Any
+    ]
+  ]
   
   trait StateStorage extends StObject {
     
@@ -237,7 +220,15 @@ object middlewarePersistMod {
     }
   }
   
-  type WithPersist[S, A] = Write[S, StorePersist[Any, A]]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S extends {getState (): infer T} ? zustand.zustand/middleware/persist.Write<S, zustand.zustand/middleware/persist.StorePersist<T, A>> : never
+    }}}
+    */
+  @js.native
+  trait WithPersist[S, A] extends StObject
   
   type Write[T, U] = (Omit[T, /* keyof U */ String]) & U
   

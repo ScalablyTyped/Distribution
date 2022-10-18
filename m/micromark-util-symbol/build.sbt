@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "micromark-util-symbol"
-version := "1.0.1-025d3f"
+version := "1.0.1-faa7c5"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

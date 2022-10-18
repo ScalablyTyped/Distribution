@@ -1,12 +1,15 @@
 package typings.fpTs.mod
 
 import typings.fpTs.anon.Fn35
+import typings.fpTs.anon.Fn36
+import typings.fpTs.anon.Fn37
 import typings.fpTs.anon.FnCallF
-import typings.fpTs.applicativeMod.Applicative
-import typings.fpTs.traversableMod.Traversable
-import typings.fpTs.traversableMod.Traversable1
-import typings.fpTs.traversableMod.TraversableComposition
-import typings.fpTs.traversableMod.TraversableComposition11
+import typings.fpTs.libApplicativeMod.Applicative
+import typings.fpTs.libTraversableMod.Traversable
+import typings.fpTs.libTraversableMod.Traversable1
+import typings.fpTs.libTraversableMod.Traversable2
+import typings.fpTs.libTraversableMod.TraversableComposition
+import typings.fpTs.libTraversableMod.TraversableComposition11
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +24,7 @@ object traversable {
   inline def getTraversableComposition[F, G](F: Traversable[F], G: Traversable[G]): TraversableComposition[F, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTraversableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[TraversableComposition[F, G]]
   
   inline def sequence[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](T: Traversable1[T], G: Traversable1[G]): Fn35 = (^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(T.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[Fn35]
+  inline def sequence[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](T: Traversable1[T], G: Traversable2[G]): FnCallF = (^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(T.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[FnCallF]
   inline def sequence[T, G](T: Traversable[T], G: Traversable[G]): js.Function1[
     /* F */ Applicative[Any], 
     js.Function1[
@@ -35,7 +39,8 @@ object traversable {
     ]
   ]]
   
-  inline def traverse[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](T: Traversable1[T], G: Traversable1[G]): FnCallF = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(T.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[FnCallF]
+  inline def traverse[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](T: Traversable1[T], G: Traversable1[G]): Fn37 = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(T.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[Fn37]
+  inline def traverse[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](T: Traversable1[T], G: Traversable2[G]): Fn36 = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(T.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[Fn36]
   inline def traverse[T, G](T: Traversable[T], G: Traversable[G]): js.Function1[
     /* F */ Applicative[Any], 
     js.Function1[

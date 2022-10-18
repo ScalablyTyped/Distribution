@@ -21,8 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the value of a cell containing a #BLOCKED! error.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait BlockedErrorCellValue
   extends StObject
@@ -32,8 +31,7 @@ trait BlockedErrorCellValue
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: js.UndefOr[error | Error] = js.undefined
   
@@ -43,8 +41,7 @@ trait BlockedErrorCellValue
     * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: js.UndefOr[NumbersignBLOCKEDExclamationmark | String] = js.undefined
   
@@ -52,8 +49,7 @@ trait BlockedErrorCellValue
     * Represents the type of `BlockedErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var errorSubType: js.UndefOr[
     BlockedErrorCellValueSubType | Unknown_ | DataTypeRestrictedDomain | DataTypePrivacySetting | DataTypeUnsupportedApp | ExternalLinksGeneric | RichDataLinkDisabled | SignInError | NoLicense
@@ -63,8 +59,7 @@ trait BlockedErrorCellValue
     * Represents the type of `ErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var errorType: js.UndefOr[blocked | Blocked] = js.undefined
   
@@ -72,8 +67,7 @@ trait BlockedErrorCellValue
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: typings.officeJsPreview.Excel.CellValueType.error | Error
 }

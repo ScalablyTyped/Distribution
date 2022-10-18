@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CameraType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.antvGLite.interfacesMod.CameraType & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.antvGLite.distCameraInterfacesMod.CameraType & Double] = js.native
   
-  /* 1 */ val EXPLORING: typings.antvGLite.interfacesMod.CameraType.EXPLORING & Double = js.native
+  /* 1 */ val EXPLORING: typings.antvGLite.distCameraInterfacesMod.CameraType.EXPLORING & Double = js.native
   
-  /* 0 */ val ORBITING: typings.antvGLite.interfacesMod.CameraType.ORBITING & Double = js.native
+  /* 0 */ val ORBITING: typings.antvGLite.distCameraInterfacesMod.CameraType.ORBITING & Double = js.native
   
-  /* 2 */ val TRACKING: typings.antvGLite.interfacesMod.CameraType.TRACKING & Double = js.native
+  /* 2 */ val TRACKING: typings.antvGLite.distCameraInterfacesMod.CameraType.TRACKING & Double = js.native
 }

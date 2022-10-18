@@ -1,7 +1,6 @@
 package typings.d3Dsv
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -221,9 +220,15 @@ object mod {
     var columns: js.Array[/* keyof T */ String] = js.native
   }
   
-  type DSVRaw[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]: string | undefined}
-    */ typings.d3Dsv.d3DsvStrings.DSVRaw & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ key in keyof T ]: string | undefined}
+    }}}
+    */
+  @js.native
+  trait DSVRaw[T /* <: js.Object */] extends StObject
   
   type DSVRowAny = StringDictionary[Any]
   
@@ -238,7 +243,13 @@ object mod {
     var columns: js.Array[Columns] = js.native
   }
   
-  type DSVRowString[Columns /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in Columns ]: string | undefined}
-    */ typings.d3Dsv.d3DsvStrings.DSVRowString & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ key in Columns ]: string | undefined}
+    }}}
+    */
+  @js.native
+  trait DSVRowString[Columns /* <: String */] extends StObject
 }

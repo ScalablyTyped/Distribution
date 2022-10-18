@@ -1,6 +1,6 @@
 package typings.glidejsGlide
 
-import typings.glidejsGlide.glideModularEsmMod.OptionalComponentNames
+import typings.glidejsGlide.distGlideDotmodularDotesmMod.OptionalComponentNames
 import typings.glidejsGlide.mod.Events
 import typings.glidejsGlide.mod.RunEvents
 import typings.glidejsGlide.mod.Type

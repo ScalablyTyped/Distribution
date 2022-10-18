@@ -1,38 +1,95 @@
 package typings.cypress.Chai
 
 import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChaiStatic extends js.Object {
-  var Assertion: AssertionStatic = js.native
+trait ChaiStatic extends StObject {
+  
+  var Assertion: AssertionStatic
+  
   var AssertionError: Instantiable3[
     /* message */ String, 
-    js.UndefOr[/* _props */ js.Any], 
-    js.UndefOr[/* ssf */ js.Function], 
+    /* _props */ js.UndefOr[Any], 
+    /* ssf */ js.UndefOr[js.Function], 
     typings.cypress.Chai.AssertionError
-  ] = js.native
-  @JSName("assert")
-  var assert_Original: AssertStatic = js.native
-  var config: Config = js.native
-  @JSName("expect")
-  var expect_Original: ExpectStatic = js.native
-  var util: ChaiUtils = js.native
-  var version: String = js.native
+  ]
+  
   /**
     * @param expression    Expression to test for truthiness.
     * @param message    Message to display on error.
     */
-  def assert(expression: js.Any): Unit = js.native
-  def assert(expression: js.Any, message: String): Unit = js.native
-  def expect(`val`: js.Any): Assertion = js.native
-  def expect(`val`: js.Any, message: String): Assertion = js.native
-  def should(): Should = js.native
+  def assert(expression: Any): Unit
+  def assert(expression: Any, message: String): Unit
+  @JSName("assert")
+  var assert_Original: AssertStatic
+  
+  var config: Config
+  
+  def expect(`val`: Any): Assertion
+  def expect(`val`: Any, message: String): Assertion
+  @JSName("expect")
+  var expect_Original: ExpectStatic
+  
+  def should(): Should
+  
   /**
     * Provides a way to extend the internals of Chai
     */
-  def use(fn: ChaiPlugin): ChaiStatic = js.native
+  def use(fn: ChaiPlugin): ChaiStatic
+  
+  var util: ChaiUtils
+  
+  var version: String
 }
-
+object ChaiStatic {
+  
+  inline def apply(
+    Assertion: AssertionStatic,
+    AssertionError: Instantiable3[
+      /* message */ String, 
+      /* _props */ js.UndefOr[Any], 
+      /* ssf */ js.UndefOr[js.Function], 
+      AssertionError
+    ],
+    assert: AssertStatic,
+    config: Config,
+    expect: ExpectStatic,
+    should: () => Should,
+    use: ChaiPlugin => ChaiStatic,
+    util: ChaiUtils,
+    version: String
+  ): ChaiStatic = {
+    val __obj = js.Dynamic.literal(Assertion = Assertion.asInstanceOf[js.Any], AssertionError = AssertionError.asInstanceOf[js.Any], assert = assert.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], expect = expect.asInstanceOf[js.Any], should = js.Any.fromFunction0(should), use = js.Any.fromFunction1(use), util = util.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChaiStatic]
+  }
+  
+  extension [Self <: ChaiStatic](x: Self) {
+    
+    inline def setAssert(value: AssertStatic): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+    
+    inline def setAssertion(value: AssertionStatic): Self = StObject.set(x, "Assertion", value.asInstanceOf[js.Any])
+    
+    inline def setAssertionError(
+      value: Instantiable3[
+          /* message */ String, 
+          /* _props */ js.UndefOr[Any], 
+          /* ssf */ js.UndefOr[js.Function], 
+          AssertionError
+        ]
+    ): Self = StObject.set(x, "AssertionError", value.asInstanceOf[js.Any])
+    
+    inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    
+    inline def setExpect(value: ExpectStatic): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
+    
+    inline def setShould(value: () => Should): Self = StObject.set(x, "should", js.Any.fromFunction0(value))
+    
+    inline def setUse(value: ChaiPlugin => ChaiStatic): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
+    
+    inline def setUtil(value: ChaiUtils): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+  }
+}

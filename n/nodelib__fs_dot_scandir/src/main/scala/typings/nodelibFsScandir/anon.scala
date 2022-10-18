@@ -1,12 +1,12 @@
 package typings.nodelibFsScandir
 
 import typings.node.fsMod.Stats
-import typings.nodelibFsScandir.fsMod.ReaddirAsynchronousMethod
-import typings.nodelibFsScandir.fsMod.ReaddirSynchronousMethod
 import typings.nodelibFsScandir.nodelibFsScandirBooleans.`true`
-import typings.nodelibFsStat.fsMod.StatAsynchronousMethod
-import typings.nodelibFsStat.fsMod.StatSynchronousMethod
-import typings.nodelibFsStat.typesMod.ErrnoException
+import typings.nodelibFsScandir.outAdaptersFsMod.ReaddirAsynchronousMethod
+import typings.nodelibFsScandir.outAdaptersFsMod.ReaddirSynchronousMethod
+import typings.nodelibFsStat.outAdaptersFsMod.StatAsynchronousMethod
+import typings.nodelibFsStat.outAdaptersFsMod.StatSynchronousMethod
+import typings.nodelibFsStat.outTypesMod.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

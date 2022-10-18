@@ -1,6 +1,6 @@
 package typings.ajv.distTypesMod
 
-import typings.ajv.validateMod.KeywordCxt
+import typings.ajv.distCompileValidateMod.KeywordCxt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

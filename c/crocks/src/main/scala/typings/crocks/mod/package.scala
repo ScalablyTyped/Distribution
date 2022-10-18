@@ -1,13 +1,12 @@
 package typings.crocks.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.crocks.internalTypesMod.BinaryFunction
+import typings.crocks.internalTypesMod.PredicateFunction
+import typings.crocks.internalTypesMod.TernaryFunction
+import typings.crocks.internalTypesMod.UnaryFunction
+import typings.crocks.internalTypesMod.VariadicFunction
 import typings.crocks.mod.^
-import typings.crocks.predMod.default
-import typings.crocks.typesMod.BinaryFunction
-import typings.crocks.typesMod.PredicateFunction
-import typings.crocks.typesMod.TernaryFunction
-import typings.crocks.typesMod.UnaryFunction
-import typings.crocks.typesMod.VariadicFunction
 import typings.std.Exclude
 import typings.std.Omit
 import typings.std.Pick
@@ -16,19 +15,27 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def and[A](p: default): js.Function1[/* q */ PredicateFunction[A] | default, js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* q */ PredicateFunction[A] | default, js.Function1[/* x */ A, Boolean]]]
-inline def and[A](p: default, q: default): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
-inline def and[A](p: default, q: default, x: A): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-inline def and[A](p: default, q: PredicateFunction[A]): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
-inline def and[A](p: default, q: PredicateFunction[A], x: A): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-inline def and[A](p: PredicateFunction[A]): js.Function1[/* q */ PredicateFunction[A] | default, js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* q */ PredicateFunction[A] | default, js.Function1[/* x */ A, Boolean]]]
-inline def and[A](p: PredicateFunction[A], q: default): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
-inline def and[A](p: PredicateFunction[A], q: default, x: A): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def and[A](p: PredicateFunction[A]): js.Function1[
+/* q */ PredicateFunction[A] | typings.crocks.predMod.default, 
+js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+/* q */ PredicateFunction[A] | typings.crocks.predMod.default, 
+js.Function1[/* x */ A, Boolean]]]
 inline def and[A](p: PredicateFunction[A], q: PredicateFunction[A]): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
 /**
   * and :: ((a -> Boolean) | Pred a) -> ((a -> Boolean) | Pred a) -> a -> Boolean
   */
 inline def and[A](p: PredicateFunction[A], q: PredicateFunction[A], x: A): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def and[A](p: PredicateFunction[A], q: typings.crocks.predMod.default): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
+inline def and[A](p: PredicateFunction[A], q: typings.crocks.predMod.default, x: A): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def and[A](p: typings.crocks.predMod.default): js.Function1[
+/* q */ PredicateFunction[A] | typings.crocks.predMod.default, 
+js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+/* q */ PredicateFunction[A] | typings.crocks.predMod.default, 
+js.Function1[/* x */ A, Boolean]]]
+inline def and[A](p: typings.crocks.predMod.default, q: PredicateFunction[A]): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
+inline def and[A](p: typings.crocks.predMod.default, q: PredicateFunction[A], x: A): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def and[A](p: typings.crocks.predMod.default, q: typings.crocks.predMod.default): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
+inline def and[A](p: typings.crocks.predMod.default, q: typings.crocks.predMod.default, x: A): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def applyTo[A, B](`val`: A): js.Function1[/* fn */ js.Function1[/* x */ A, B], B] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyTo")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fn */ js.Function1[/* x */ A, B], B]]
 inline def applyTo[A, B](`val`: A, fn: js.Function1[/* x */ A, B]): B = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTo")(`val`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[B]
@@ -145,13 +152,6 @@ inline def hasProps(props: js.Array[String | Double], `val`: scala.Any): Boolean
 
 inline def identity[A](x: A): A = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(x.asInstanceOf[js.Any]).asInstanceOf[A]
 
-inline def ifElse[A, C](p: default): js.Function1[
-/* f */ js.Function1[/* x */ A, scala.Any], 
-js.Function1[/* g */ js.Function1[/* x */ A, C], js.Function1[/* x */ A, A | C]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifElse")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-/* f */ js.Function1[/* x */ A, scala.Any], 
-js.Function1[/* g */ js.Function1[/* x */ A, C], js.Function1[/* x */ A, A | C]]]]
-inline def ifElse[A, C](p: default, f: js.Function1[/* x */ A, scala.Any]): js.Function1[/* g */ js.Function1[/* x */ A, C], js.Function1[/* x */ A, A | C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifElse")(p.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* g */ js.Function1[/* x */ A, C], js.Function1[/* x */ A, A | C]]]
-inline def ifElse[A, C](p: default, f: js.Function1[/* x */ A, scala.Any], g: js.Function1[/* x */ A, C]): js.Function1[/* x */ A, A | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifElse")(p.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, A | C]]
 inline def ifElse[A, C](p: PredicateFunction[A]): js.Function1[
 /* f */ js.Function1[/* x */ A, scala.Any], 
 js.Function1[/* g */ js.Function1[/* x */ A, C], js.Function1[/* x */ A, A | C]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifElse")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -162,16 +162,35 @@ inline def ifElse[A, C](p: PredicateFunction[A], f: js.Function1[/* x */ A, scal
   * ifElse :: ((a -> Boolean) | Pred a) -> (a -> b) -> (a -> b) -> a -> b
   */
 inline def ifElse[A, C](p: PredicateFunction[A], f: js.Function1[/* x */ A, scala.Any], g: js.Function1[/* x */ A, C]): js.Function1[/* x */ A, A | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifElse")(p.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, A | C]]
+inline def ifElse[A, C](p: typings.crocks.predMod.default): js.Function1[
+/* f */ js.Function1[/* x */ A, scala.Any], 
+js.Function1[/* g */ js.Function1[/* x */ A, C], js.Function1[/* x */ A, A | C]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifElse")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+/* f */ js.Function1[/* x */ A, scala.Any], 
+js.Function1[/* g */ js.Function1[/* x */ A, C], js.Function1[/* x */ A, A | C]]]]
+inline def ifElse[A, C](p: typings.crocks.predMod.default, f: js.Function1[/* x */ A, scala.Any]): js.Function1[/* g */ js.Function1[/* x */ A, C], js.Function1[/* x */ A, A | C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifElse")(p.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* g */ js.Function1[/* x */ A, C], js.Function1[/* x */ A, A | C]]]
+inline def ifElse[A, C](
+  p: typings.crocks.predMod.default,
+  f: js.Function1[/* x */ A, scala.Any],
+  g: js.Function1[/* x */ A, C]
+): js.Function1[/* x */ A, A | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("ifElse")(p.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, A | C]]
 
-inline def implies[A](p: default): js.Function1[/* q */ PredicateFunction[A] | default, js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("implies")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* q */ PredicateFunction[A] | default, js.Function1[/* x */ A, Boolean]]]
-inline def implies[A](p: default, q: default): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("implies")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
-inline def implies[A](p: default, q: PredicateFunction[A]): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("implies")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
-inline def implies[A](p: PredicateFunction[A]): js.Function1[/* q */ PredicateFunction[A] | default, js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("implies")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* q */ PredicateFunction[A] | default, js.Function1[/* x */ A, Boolean]]]
-inline def implies[A](p: PredicateFunction[A], q: default): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("implies")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
+inline def implies[A](p: PredicateFunction[A]): js.Function1[
+/* q */ PredicateFunction[A] | typings.crocks.predMod.default, 
+js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("implies")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+/* q */ PredicateFunction[A] | typings.crocks.predMod.default, 
+js.Function1[/* x */ A, Boolean]]]
 /**
   * implies :: ((a -> Boolean) | Pred a) -> ((a -> Boolean) | Pred a) -> a -> Boolean
   */
 inline def implies[A](p: PredicateFunction[A], q: PredicateFunction[A]): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("implies")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
+inline def implies[A](p: PredicateFunction[A], q: typings.crocks.predMod.default): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("implies")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
+inline def implies[A](p: typings.crocks.predMod.default): js.Function1[
+/* q */ PredicateFunction[A] | typings.crocks.predMod.default, 
+js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("implies")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+/* q */ PredicateFunction[A] | typings.crocks.predMod.default, 
+js.Function1[/* x */ A, Boolean]]]
+inline def implies[A](p: typings.crocks.predMod.default, q: PredicateFunction[A]): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("implies")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
+inline def implies[A](p: typings.crocks.predMod.default, q: typings.crocks.predMod.default): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("implies")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
 
 inline def isAlt(`val`: scala.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlt")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
@@ -327,11 +346,11 @@ inline def nAry(n: Double): js.Function1[/* fn */ VariadicFunction, VariadicFunc
   */
 inline def nAry(n: Double, fn: VariadicFunction): VariadicFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("nAry")(n.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[VariadicFunction]
 
-inline def not[A](p: default): js.Function1[/* x */ A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* x */ A, Boolean]]
 /**
   * not :: ((a -> Boolean) | Pred) -> a -> Boolean
   */
 inline def not[A](p: PredicateFunction[A]): js.Function1[/* x */ A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* x */ A, Boolean]]
+inline def not[A](p: typings.crocks.predMod.default): js.Function1[/* x */ A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* x */ A, Boolean]]
 
 inline def objOf[A](k: String): js.Function1[/* a */ A, StringDictionary[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("objOf")(k.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, StringDictionary[A]]]
 inline def objOf[A](k: String, a: A): StringDictionary[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("objOf")(k.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[A]]
@@ -344,15 +363,23 @@ inline def omit[O, K /* <: String */](ks: js.Array[K], o: O): Omit[O, K] = (^.as
   */
 inline def once(fn: VariadicFunction): VariadicFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(fn.asInstanceOf[js.Any]).asInstanceOf[VariadicFunction]
 
-inline def or[A](p: default): js.Function1[/* q */ PredicateFunction[A] | default, js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* q */ PredicateFunction[A] | default, js.Function1[/* x */ A, Boolean]]]
-inline def or[A](p: default, q: default): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
-inline def or[A](p: default, q: PredicateFunction[A]): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
-inline def or[A](p: PredicateFunction[A]): js.Function1[/* q */ PredicateFunction[A] | default, js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* q */ PredicateFunction[A] | default, js.Function1[/* x */ A, Boolean]]]
-inline def or[A](p: PredicateFunction[A], q: default): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
+inline def or[A](p: PredicateFunction[A]): js.Function1[
+/* q */ PredicateFunction[A] | typings.crocks.predMod.default, 
+js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+/* q */ PredicateFunction[A] | typings.crocks.predMod.default, 
+js.Function1[/* x */ A, Boolean]]]
 /**
   * or :: ((a -> Boolean) | Pred) -> ((a -> Boolean) | Pred) -> a -> Boolean
   */
 inline def or[A](p: PredicateFunction[A], q: PredicateFunction[A]): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
+inline def or[A](p: PredicateFunction[A], q: typings.crocks.predMod.default): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
+inline def or[A](p: typings.crocks.predMod.default): js.Function1[
+/* q */ PredicateFunction[A] | typings.crocks.predMod.default, 
+js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+/* q */ PredicateFunction[A] | typings.crocks.predMod.default, 
+js.Function1[/* x */ A, Boolean]]]
+inline def or[A](p: typings.crocks.predMod.default, q: PredicateFunction[A]): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
+inline def or[A](p: typings.crocks.predMod.default, q: typings.crocks.predMod.default): js.Function1[/* x */ A, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, Boolean]]
 
 /**
   * partial :: (((*) -> c), *) -> (*) -> c
@@ -364,14 +391,17 @@ inline def pathEq(path: js.Array[String | Double], `val`: scala.Any): js.Functio
 inline def pathEq(path: js.Array[String | Double], `val`: scala.Any, obj: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pathEq")(path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def pathSatisfies(path: js.Array[String | Double]): js.Function1[
-/* pred */ js.Function1[/* val */ scala.Any, Boolean | default], 
+/* pred */ js.Function1[/* val */ scala.Any, Boolean | typings.crocks.predMod.default], 
 js.Function1[/* obj */ js.Object, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pathSatisfies")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-/* pred */ js.Function1[/* val */ scala.Any, Boolean | default], 
+/* pred */ js.Function1[/* val */ scala.Any, Boolean | typings.crocks.predMod.default], 
 js.Function1[/* obj */ js.Object, Boolean]]]
-inline def pathSatisfies(path: js.Array[String | Double], pred: js.Function1[/* val */ scala.Any, Boolean | default]): js.Function1[/* obj */ js.Object, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("pathSatisfies")(path.asInstanceOf[js.Any], pred.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* obj */ js.Object, Boolean]]
 inline def pathSatisfies(
   path: js.Array[String | Double],
-  pred: js.Function1[/* val */ scala.Any, Boolean | default],
+  pred: js.Function1[/* val */ scala.Any, Boolean | typings.crocks.predMod.default]
+): js.Function1[/* obj */ js.Object, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("pathSatisfies")(path.asInstanceOf[js.Any], pred.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* obj */ js.Object, Boolean]]
+inline def pathSatisfies(
+  path: js.Array[String | Double],
+  pred: js.Function1[/* val */ scala.Any, Boolean | typings.crocks.predMod.default],
   obj: js.Object
 ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pathSatisfies")(path.asInstanceOf[js.Any], pred.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
@@ -410,22 +440,30 @@ inline def propEq(prop: Double, `val`: scala.Any): js.Function1[/* obj */ js.Obj
 inline def propEq(prop: Double, `val`: scala.Any, obj: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("propEq")(prop.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def propSatisfies(prop: String): js.Function1[
-/* pred */ js.Function1[/* val */ scala.Any, Boolean | default], 
+/* pred */ js.Function1[/* val */ scala.Any, Boolean | typings.crocks.predMod.default], 
 js.Function1[/* obj */ js.Object, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("propSatisfies")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-/* pred */ js.Function1[/* val */ scala.Any, Boolean | default], 
+/* pred */ js.Function1[/* val */ scala.Any, Boolean | typings.crocks.predMod.default], 
 js.Function1[/* obj */ js.Object, Boolean]]]
-inline def propSatisfies(prop: String, pred: js.Function1[/* val */ scala.Any, Boolean | default]): js.Function1[/* obj */ js.Object, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("propSatisfies")(prop.asInstanceOf[js.Any], pred.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* obj */ js.Object, Boolean]]
+inline def propSatisfies(prop: String, pred: js.Function1[/* val */ scala.Any, Boolean | typings.crocks.predMod.default]): js.Function1[/* obj */ js.Object, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("propSatisfies")(prop.asInstanceOf[js.Any], pred.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* obj */ js.Object, Boolean]]
 /**
   * propSatisfies :: (String | Integer) -> ((a -> Boolean) | Pred) -> Object -> Boolean
   */
-inline def propSatisfies(prop: String, pred: js.Function1[/* val */ scala.Any, Boolean | default], obj: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("propSatisfies")(prop.asInstanceOf[js.Any], pred.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def propSatisfies(
+  prop: String,
+  pred: js.Function1[/* val */ scala.Any, Boolean | typings.crocks.predMod.default],
+  obj: js.Object
+): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("propSatisfies")(prop.asInstanceOf[js.Any], pred.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def propSatisfies(prop: Double): js.Function1[
-/* pred */ js.Function1[/* val */ scala.Any, Boolean | default], 
+/* pred */ js.Function1[/* val */ scala.Any, Boolean | typings.crocks.predMod.default], 
 js.Function1[/* obj */ js.Object, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("propSatisfies")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-/* pred */ js.Function1[/* val */ scala.Any, Boolean | default], 
+/* pred */ js.Function1[/* val */ scala.Any, Boolean | typings.crocks.predMod.default], 
 js.Function1[/* obj */ js.Object, Boolean]]]
-inline def propSatisfies(prop: Double, pred: js.Function1[/* val */ scala.Any, Boolean | default]): js.Function1[/* obj */ js.Object, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("propSatisfies")(prop.asInstanceOf[js.Any], pred.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* obj */ js.Object, Boolean]]
-inline def propSatisfies(prop: Double, pred: js.Function1[/* val */ scala.Any, Boolean | default], obj: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("propSatisfies")(prop.asInstanceOf[js.Any], pred.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def propSatisfies(prop: Double, pred: js.Function1[/* val */ scala.Any, Boolean | typings.crocks.predMod.default]): js.Function1[/* obj */ js.Object, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("propSatisfies")(prop.asInstanceOf[js.Any], pred.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* obj */ js.Object, Boolean]]
+inline def propSatisfies(
+  prop: Double,
+  pred: js.Function1[/* val */ scala.Any, Boolean | typings.crocks.predMod.default],
+  obj: js.Object
+): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("propSatisfies")(prop.asInstanceOf[js.Any], pred.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def psi[A, B, C](f: js.Function2[/* x */ B, /* y */ B, C]): js.Function1[
 /* g */ js.Function1[/* a */ A, B], 
@@ -462,13 +500,13 @@ inline def unary(fn: VariadicFunction): UnaryFunction = ^.asInstanceOf[js.Dynami
 
 inline def unit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unit")().asInstanceOf[Unit]
 
-inline def unless[A, B](p: default): js.Function1[/* f */ js.Function1[/* x */ A, B], js.Function1[/* x */ A, A | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("unless")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* f */ js.Function1[/* x */ A, B], js.Function1[/* x */ A, A | B]]]
-inline def unless[A, B](p: default, f: js.Function1[/* x */ A, B]): js.Function1[/* x */ A, A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("unless")(p.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, A | B]]
 inline def unless[A, B](p: PredicateFunction[A]): js.Function1[/* f */ js.Function1[/* x */ A, B], js.Function1[/* x */ A, A | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("unless")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* f */ js.Function1[/* x */ A, B], js.Function1[/* x */ A, A | B]]]
 /**
   * unless :: ((a -> Boolean) | Pred) -> (a -> a) -> a -> a
   */
 inline def unless[A, B](p: PredicateFunction[A], f: js.Function1[/* x */ A, B]): js.Function1[/* x */ A, A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("unless")(p.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, A | B]]
+inline def unless[A, B](p: typings.crocks.predMod.default): js.Function1[/* f */ js.Function1[/* x */ A, B], js.Function1[/* x */ A, A | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("unless")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* f */ js.Function1[/* x */ A, B], js.Function1[/* x */ A, A | B]]]
+inline def unless[A, B](p: typings.crocks.predMod.default, f: js.Function1[/* x */ A, B]): js.Function1[/* x */ A, A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("unless")(p.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, A | B]]
 
 inline def unsetPath(path: js.Array[String | Double]): js.Function1[/* obj */ js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("unsetPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Object, js.Object]]
 inline def unsetPath(path: js.Array[String | Double], obj: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("unsetPath")(path.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Object]
@@ -478,10 +516,10 @@ inline def unsetProp(prop: String, obj: js.Object): js.Object = (^.asInstanceOf[
 inline def unsetProp(prop: Double): js.Function1[/* obj */ js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("unsetProp")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Object, js.Object]]
 inline def unsetProp(prop: Double, obj: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("unsetProp")(prop.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Object]
 
-inline def when[A, B](p: default): js.Function1[/* f */ js.Function1[/* x */ A, B], js.Function1[/* x */ A, A | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* f */ js.Function1[/* x */ A, B], js.Function1[/* x */ A, A | B]]]
-inline def when[A, B](p: default, f: js.Function1[/* x */ A, B]): js.Function1[/* x */ A, A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(p.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, A | B]]
 inline def when[A, B](p: PredicateFunction[A]): js.Function1[/* f */ js.Function1[/* x */ A, B], js.Function1[/* x */ A, A | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* f */ js.Function1[/* x */ A, B], js.Function1[/* x */ A, A | B]]]
 /**
   * when :: ((a -> Boolean) | Pred) -> (a -> a) -> a -> a
   */
 inline def when[A, B](p: PredicateFunction[A], f: js.Function1[/* x */ A, B]): js.Function1[/* x */ A, A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(p.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, A | B]]
+inline def when[A, B](p: typings.crocks.predMod.default): js.Function1[/* f */ js.Function1[/* x */ A, B], js.Function1[/* x */ A, A | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* f */ js.Function1[/* x */ A, B], js.Function1[/* x */ A, A | B]]]
+inline def when[A, B](p: typings.crocks.predMod.default, f: js.Function1[/* x */ A, B]): js.Function1[/* x */ A, A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(p.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, A | B]]

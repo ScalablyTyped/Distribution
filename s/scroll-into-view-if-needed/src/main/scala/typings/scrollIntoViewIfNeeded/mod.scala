@@ -1,8 +1,8 @@
 package typings.scrollIntoViewIfNeeded
 
-import typings.scrollIntoViewIfNeeded.typesMod.CustomScrollAction
-import typings.scrollIntoViewIfNeeded.typesMod.CustomScrollBehaviorCallback
-import typings.scrollIntoViewIfNeeded.typesMod.ScrollBehavior
+import typings.scrollIntoViewIfNeeded.typingsTypesMod.CustomScrollAction
+import typings.scrollIntoViewIfNeeded.typingsTypesMod.CustomScrollBehaviorCallback
+import typings.scrollIntoViewIfNeeded.typingsTypesMod.ScrollBehavior
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +21,7 @@ object mod {
   
   trait CustomBehaviorOptions[T]
     extends StObject
-       with typings.scrollIntoViewIfNeeded.typesMod.Options {
+       with typings.scrollIntoViewIfNeeded.typingsTypesMod.Options {
     
     def behavior(actions: js.Array[CustomScrollAction]): T
     @JSName("behavior")
@@ -42,7 +42,7 @@ object mod {
   
   trait Options[T]
     extends StObject
-       with typings.scrollIntoViewIfNeeded.typesMod.Options {
+       with typings.scrollIntoViewIfNeeded.typingsTypesMod.Options {
     
     var behavior: js.UndefOr[ScrollBehavior | CustomScrollBehaviorCallback[T]] = js.undefined
   }
@@ -65,7 +65,7 @@ object mod {
   
   trait StandardBehaviorOptions
     extends StObject
-       with typings.scrollIntoViewIfNeeded.typesMod.Options {
+       with typings.scrollIntoViewIfNeeded.typingsTypesMod.Options {
     
     var behavior: js.UndefOr[ScrollBehavior] = js.undefined
   }

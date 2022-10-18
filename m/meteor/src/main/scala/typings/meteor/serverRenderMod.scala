@@ -1,10 +1,10 @@
 package typings.meteor
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadableStream
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.IncomingMessage
 import typings.std.HTMLElement
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +50,7 @@ object serverRenderMod {
   
   // NodeJS.ReadableStream only works on server.
   // HTMLElement only works on client.
-  type Content = String | js.Array[Any] | ReadableStream[Any] | HTMLElement
+  type Content = String | js.Array[Any] | ReadableStream | HTMLElement
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.meteor.serverRenderMod.Sink because Already inherited */ @js.native

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Line")
 @js.native
 open class Line protected ()
-  extends typings.blackEngine.lineMod.Line {
-  def this(start: typings.blackEngine.vectorMod.Vector, end: typings.blackEngine.vectorMod.Vector) = this()
+  extends typings.blackEngine.geomLineMod.Line {
+  def this(start: typings.blackEngine.geomVectorMod.Vector, end: typings.blackEngine.geomVectorMod.Vector) = this()
 }
 object Line {
   
   @JSImport("black-engine", "Line.__cache")
   @js.native
-  val cache: typings.blackEngine.lineMod.Line = js.native
+  val cache: typings.blackEngine.geomLineMod.Line = js.native
 }

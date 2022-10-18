@@ -53,6 +53,7 @@ object mod {
     def removeTokenListener(listener: AppCheckTokenListener): Unit = js.native
   }
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {

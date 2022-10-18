@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param plugins PostCSS plugins
   */
 open class Processor ()
-  extends typings.postcss.processorMod.default {
+  extends typings.postcss.libProcessorMod.default {
   def this(plugins: js.Array[AcceptedPlugin]) = this()
 }

@@ -1,7 +1,7 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.hdrMod.HDRInfo
-import typings.babylonjs.panoramaToCubemapMod.CubeMapInfo
+import typings.babylonjs.miscHighDynamicRangeHdrMod.HDRInfo
+import typings.babylonjs.miscHighDynamicRangePanoramaToCubemapMod.CubeMapInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

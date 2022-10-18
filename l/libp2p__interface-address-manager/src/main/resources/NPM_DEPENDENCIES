@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@libp2p/interface-address-manager" : "1.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@libp2p/interface-address-manager" : "1.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

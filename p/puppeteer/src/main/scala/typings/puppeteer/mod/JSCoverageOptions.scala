@@ -20,6 +20,13 @@ trait JSCoverageOptions extends StObject {
     * Whether to reset coverage on every navigation.
     */
   var resetOnNavigation: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether to collect coverage information at the block level.
+    * If true, coverage will be collected at the block level (this is the default).
+    * If false, coverage will be collected at the function level.
+    */
+  var useBlockCoverage: js.UndefOr[Boolean] = js.undefined
 }
 object JSCoverageOptions {
   
@@ -41,5 +48,9 @@ object JSCoverageOptions {
     inline def setResetOnNavigation(value: Boolean): Self = StObject.set(x, "resetOnNavigation", value.asInstanceOf[js.Any])
     
     inline def setResetOnNavigationUndefined: Self = StObject.set(x, "resetOnNavigation", js.undefined)
+    
+    inline def setUseBlockCoverage(value: Boolean): Self = StObject.set(x, "useBlockCoverage", value.asInstanceOf[js.Any])
+    
+    inline def setUseBlockCoverageUndefined: Self = StObject.set(x, "useBlockCoverage", js.undefined)
   }
 }

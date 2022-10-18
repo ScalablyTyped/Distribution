@@ -1,14 +1,14 @@
 package typings.redisJson
 
-import typings.redisClient.libCommandsMod.RedisCommandArguments
-import typings.redisJson.commandsMod.RedisJSON
-import typings.redisJson.getMod.GetOptions
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisJson.distCommandsGetMod.GetOptions
+import typings.redisJson.distCommandsMod.RedisJSON
+import typings.redisJson.distCommandsRespMod.RESPReply
+import typings.redisJson.distCommandsSetMod.NX
+import typings.redisJson.distCommandsSetMod.XX
+import typings.redisJson.distCommandsStrappendMod.AppendArguments
+import typings.redisJson.distCommandsStrappendMod.AppendWithPathArguments
 import typings.redisJson.redisJsonStrings.OK
-import typings.redisJson.respMod.RESPReply
-import typings.redisJson.setMod.NX
-import typings.redisJson.setMod.XX
-import typings.redisJson.strappendMod.AppendArguments
-import typings.redisJson.strappendMod.AppendWithPathArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -10,7 +10,7 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.redux.mod.Action
 import typings.redux.mod.StoreEnhancer
-import typings.reduxDevtools.createDevToolsMod.Props
+import typings.reduxDevtools.libCreateDevToolsMod.Props
 import typings.reduxDevtoolsInstrument.mod.EnhancedStore
 import typings.reduxDevtoolsInstrument.mod.InstrumentExt
 import typings.reduxDevtoolsInstrument.mod.LiftedStore
@@ -100,6 +100,8 @@ object anon {
     def render(): Element | Null = js.native
     
     def setState[K /* <: scala.Nothing */](): Unit = js.native
+    def setState[K /* <: scala.Nothing */](state: js.Object | (Pick[js.Object, K])): Unit = js.native
+    def setState[K /* <: scala.Nothing */](state: js.Object | (Pick[js.Object, K]), callback: js.Function0[Unit]): Unit = js.native
     def setState[K /* <: scala.Nothing */](
       state: js.Function2[
           /* prevState */ js.Object, 
@@ -115,11 +117,7 @@ object anon {
         ],
       callback: js.Function0[Unit]
     ): Unit = js.native
-    def setState[K /* <: scala.Nothing */](state: js.Object): Unit = js.native
-    def setState[K /* <: scala.Nothing */](state: js.Object, callback: js.Function0[Unit]): Unit = js.native
     def setState[K /* <: scala.Nothing */](state: Null, callback: js.Function0[Unit]): Unit = js.native
-    def setState[K /* <: scala.Nothing */](state: Pick[js.Object, K]): Unit = js.native
-    def setState[K /* <: scala.Nothing */](state: Pick[js.Object, K], callback: js.Function0[Unit]): Unit = js.native
     
     var shouldComponentUpdate: js.UndefOr[
         js.Function3[

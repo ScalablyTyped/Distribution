@@ -1,6 +1,6 @@
 package typings.azureMsalCommon.mod
 
-import typings.azureMsalCommon.clientConfigurationMod.ClientConfiguration
+import typings.azureMsalCommon.distConfigClientConfigurationMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "OnBehalfOfClient")
 @js.native
 open class OnBehalfOfClient protected ()
-  extends typings.azureMsalCommon.onBehalfOfClientMod.OnBehalfOfClient {
+  extends typings.azureMsalCommon.distClientOnBehalfOfClientMod.OnBehalfOfClient {
   def this(configuration: ClientConfiguration) = this()
 }

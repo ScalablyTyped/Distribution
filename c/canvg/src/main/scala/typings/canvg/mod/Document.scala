@@ -1,7 +1,7 @@
 package typings.canvg.mod
 
-import typings.canvg.documentDocumentMod.IDocumentOptions
-import typings.canvg.elementsMod.AnyElement
+import typings.canvg.distDocumentDocumentMod.IDocumentOptions
+import typings.canvg.distDocumentElementsMod.AnyElement
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.Record
@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "Document")
 @js.native
 open class Document protected ()
-  extends typings.canvg.documentMod.Document {
-  def this(canvg: typings.canvg.canvgMod.Canvg) = this()
+  extends typings.canvg.distDocumentMod.Document {
+  def this(canvg: typings.canvg.distCanvgMod.Canvg) = this()
   def this(
-    canvg: typings.canvg.canvgMod.Canvg,
+    canvg: typings.canvg.distCanvgMod.Canvg,
     hasRootEmSizeEmSizeCreateCanvasCreateImageAnonymousCrossOrigin: IDocumentOptions
   ) = this()
 }

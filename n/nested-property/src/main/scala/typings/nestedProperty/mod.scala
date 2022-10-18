@@ -18,7 +18,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("nested-property", "ObjectPrototypeMutationError")
   @js.native
-  /* standard es2022.error */
+  /* standard es5 */
   open class ObjectPrototypeMutationError ()
     extends StObject
        with Error {
@@ -36,8 +36,8 @@ object mod {
   }
   object ObjectPrototypeMutationError {
     
-    /* standard es2022.error */
     /* standard es5 */
+    /* standard es2022.error */
     inline def apply(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ObjectPrototypeMutationError")().asInstanceOf[js.Error]
     inline def apply(message: String): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ObjectPrototypeMutationError")(message.asInstanceOf[js.Any]).asInstanceOf[js.Error]
     inline def apply(message: String, options: ErrorOptions): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("ObjectPrototypeMutationError")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Error]

@@ -1,8 +1,8 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialLineOptions
-import typings.antvG2plot.lineTypesMod.LineOptions
-import typings.antvG2plot.plotsLineMod.Line
+import typings.antvG2plot.libPlotsLineMod.Line
+import typings.antvG2plot.libPlotsLineTypesMod.LineOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

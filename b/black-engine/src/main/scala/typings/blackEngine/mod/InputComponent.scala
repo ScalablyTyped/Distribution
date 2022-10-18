@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "InputComponent")
 @js.native
 open class InputComponent ()
-  extends typings.blackEngine.inputComponentMod.InputComponent
+  extends typings.blackEngine.inputInputComponentMod.InputComponent

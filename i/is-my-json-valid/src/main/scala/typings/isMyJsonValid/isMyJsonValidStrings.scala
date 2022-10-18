@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object isMyJsonValidStrings {
   
   @js.native
-  sealed trait ObjectFromSchema extends StObject
-  inline def ObjectFromSchema: ObjectFromSchema = "ObjectFromSchema".asInstanceOf[ObjectFromSchema]
-  
-  @js.native
   sealed trait array extends StObject
   inline def array: array = "array".asInstanceOf[array]
   

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object RenderMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.blueprintjsTable.renderModeMod.RenderMode & String] = js.native
+  def apply(value: String): js.UndefOr[typings.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode & String] = js.native
   
-  /* "batch" */ val BATCH: typings.blueprintjsTable.renderModeMod.RenderMode.BATCH & String = js.native
+  /* "batch" */ val BATCH: typings.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode.BATCH & String = js.native
   
-  /* "batch-on-update" */ val BATCH_ON_UPDATE: typings.blueprintjsTable.renderModeMod.RenderMode.BATCH_ON_UPDATE & String = js.native
+  /* "batch-on-update" */ val BATCH_ON_UPDATE: typings.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode.BATCH_ON_UPDATE & String = js.native
   
-  /* "none" */ val NONE: typings.blueprintjsTable.renderModeMod.RenderMode.NONE & String = js.native
+  /* "none" */ val NONE: typings.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode.NONE & String = js.native
 }

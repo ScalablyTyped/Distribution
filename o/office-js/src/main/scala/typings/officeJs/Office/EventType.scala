@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait EventType extends StObject
 /**
   * Specifies the kind of event that was raised. Returned by the `type` property of an `*EventArgs` object.
-  * 
-  * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and 
+  *
+  * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and
   * `Office.EventType.ViewSelectionChanged` event types.
-  * 
+  *
   * Only task pane add-ins for Outlook support Mailbox API set event types.
-  * 
+  *
   * @remarks
-  * 
-  * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.
-  * 
+  *
+  * **`BindingDataChanged` and `BindingSelectionChanged` applications**: Excel, Word.
+  *
   */
 @JSGlobal("Office.EventType")
 @js.native
@@ -25,10 +25,10 @@ object EventType extends StObject {
   
   /**
     * A Document.ActiveViewChanged event was raised in PowerPoint.
-    * 
-    * @remarks 
-    * 
-    * **Hosts**: PowerPoint
+    *
+    * @remarks
+    *
+    * **Applications**: PowerPoint
     */
   @js.native
   sealed trait ActiveViewChanged
@@ -38,11 +38,11 @@ object EventType extends StObject {
   /**
     * Occurs when any date or time of the selected appointment or series is changed in Outlook.
     * **Important**: Only available with task pane implementation.
-    * 
+    *
     * To add an event handler for the `AppointmentTimeChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
     * {@link https://learn.microsoft.com/javascript/api/outlook/office.appointmenttimechangedeventargs?view=outlook-js-1.7 | Office.AppointmentTimeChangedEventArgs}.
-    * 
+    *
     * [Api set: Mailbox 1.7]
     */
   @js.native
@@ -52,11 +52,11 @@ object EventType extends StObject {
   
   /**
     * Occurs when an attachment is added to or removed from an item. **Important**: Only available with task pane implementation.
-    * 
+    *
     * To add an event handler for the `AttachmentsChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
     * {@link https://learn.microsoft.com/javascript/api/outlook/office.attachmentschangedeventargs?view=outlook-js-1.8 | Office.AttachmentsChangedEventArgs}.
-    * 
+    *
     * [Api set: Mailbox 1.8]
     */
   @js.native
@@ -65,13 +65,13 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Occurs when data within the binding is changed. 
-    * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object. 
+    * Occurs when data within the binding is changed.
+    * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object.
     * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
-    * 
-    * @remarks 
-    * 
-    * **Hosts**: Excel, Word
+    *
+    * @remarks
+    *
+    * **Applications**: Excel, Word
     */
   @js.native
   sealed trait BindingDataChanged
@@ -79,12 +79,12 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged event of a binding, use 
+    * Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged event of a binding, use
     * the addHandlerAsync method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
-    * 
-    * @remarks 
-    * 
-    * **Hosts**: Excel, Word 
+    *
+    * @remarks
+    *
+    * **Applications**: Excel, Word
     */
   @js.native
   sealed trait BindingSelectionChanged
@@ -117,10 +117,10 @@ object EventType extends StObject {
   
   /**
     * Triggers when a document-level selection happens.
-    * 
-    * @remarks 
-    * 
-    * **Hosts**: Excel, Word
+    *
+    * @remarks
+    *
+    * **Applications**: Excel, Word
     */
   @js.native
   sealed trait DocumentSelectionChanged
@@ -129,11 +129,11 @@ object EventType extends StObject {
   
   /**
     * Occurs when the appointment location is changed in Outlook. **Important**: Only available with task pane implementation.
-    * 
+    *
     * To add an event handler for the `EnhancedLocationsChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
     * {@link https://learn.microsoft.com/javascript/api/outlook/office.enhancedlocationschangedeventargs?view=outlook-js-1.8 | Office.EnhancedLocationsChangedEventArgs}.
-    * 
+    *
     * [Api set: Mailbox 1.8]
     */
   @js.native
@@ -199,11 +199,11 @@ object EventType extends StObject {
   /**
     * Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
     * **Important**: Only available with task pane implementation.
-    * 
+    *
     * To add an event handler for the `RecipientsChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
     * {@link https://learn.microsoft.com/javascript/api/outlook/office.recipientschangedeventargs?view=outlook-js-1.7 | Office.RecipientsChangedEventArgs}.
-    * 
+    *
     * [Api set: Mailbox 1.7]
     */
   @js.native
@@ -214,11 +214,11 @@ object EventType extends StObject {
   /**
     * Occurs when the recurrence pattern of the selected series is changed in Outlook.
     * **Important**: Only available with task pane implementation.
-    * 
+    *
     * To add an event handler for the `RecurrenceChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
     * {@link https://learn.microsoft.com/javascript/api/outlook/office.recurrencechangedeventargs?view=outlook-js-1.7 | Office.RecurrenceChangedEventArgs}.
-    * 
+    *
     * [Api set: Mailbox 1.7]
     */
   @js.native
@@ -236,10 +236,10 @@ object EventType extends StObject {
   
   /**
     * A Settings.settingsChanged event was raised.
-    * 
-    * @remarks 
-    * 
-    * **Hosts**: Excel, PowerPoint, Word
+    *
+    * @remarks
+    *
+    * **Applications**: Excel, PowerPoint, Word
     */
   @js.native
   sealed trait SettingsChanged

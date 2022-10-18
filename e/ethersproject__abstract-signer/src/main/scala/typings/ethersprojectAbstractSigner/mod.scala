@@ -6,7 +6,7 @@ import typings.ethersprojectAbstractProvider.mod.Provider
 import typings.ethersprojectAbstractProvider.mod.TransactionRequest
 import typings.ethersprojectAbstractProvider.mod.TransactionResponse
 import typings.ethersprojectAbstractSigner.anon.DeferrableTransactionRequ
-import typings.ethersprojectBignumber.bignumberMod.BigNumberish
+import typings.ethersprojectBignumber.libBignumberMod.BigNumberish
 import typings.ethersprojectBignumber.mod.BigNumber
 import typings.ethersprojectBytes.mod.Bytes
 import typings.ethersprojectBytes.mod.BytesLike
@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@ethersproject/abstract-signer", "Signer")
+  /* note: abstract class */ @JSImport("@ethersproject/abstract-signer", "Signer")
   @js.native
-  abstract class Signer () extends StObject {
+  open class Signer () extends StObject {
     
     def _checkProvider(): Unit = js.native
     def _checkProvider(operation: String): Unit = js.native

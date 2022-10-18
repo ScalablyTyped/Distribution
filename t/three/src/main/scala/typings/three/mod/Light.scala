@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Light")
 @js.native
 open class Light ()
-  extends typings.three.threeMod.Light {
+  extends typings.three.srcThreeMod.Light {
   def this(hex: String) = this()
   def this(hex: Double) = this()
   def this(hex: String, intensity: Double) = this()

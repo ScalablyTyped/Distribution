@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonRestrictedtoworkflows extends StObject {
   
-  var parameters: PathOrg
+  var parameters: PathEnterprise
   
   var requestBody: ContentApplicationjsonRestrictedtoworkflows
   
-  var responses: `201Content69`
+  var responses: `201ContentApplicationjsonAllowspublicrepositories`
 }
 object RequestBodyContentApplicationjsonRestrictedtoworkflows {
   
   inline def apply(
-    parameters: PathOrg,
+    parameters: PathEnterprise,
     requestBody: ContentApplicationjsonRestrictedtoworkflows,
-    responses: `201Content69`
+    responses: `201ContentApplicationjsonAllowspublicrepositories`
   ): RequestBodyContentApplicationjsonRestrictedtoworkflows = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonRestrictedtoworkflows]
@@ -25,10 +25,10 @@ object RequestBodyContentApplicationjsonRestrictedtoworkflows {
   
   extension [Self <: RequestBodyContentApplicationjsonRestrictedtoworkflows](x: Self) {
     
-    inline def setParameters(value: PathOrg): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PathEnterprise): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonRestrictedtoworkflows): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201Content69`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201ContentApplicationjsonAllowspublicrepositories`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

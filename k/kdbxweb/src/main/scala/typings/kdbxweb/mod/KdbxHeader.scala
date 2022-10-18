@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("kdbxweb", "KdbxHeader")
 @js.native
 open class KdbxHeader ()
-  extends typings.kdbxweb.kdbxHeaderMod.KdbxHeader
+  extends typings.kdbxweb.distTypesFormatKdbxHeaderMod.KdbxHeader
 /* static members */
 object KdbxHeader {
   
@@ -20,7 +20,10 @@ object KdbxHeader {
   @js.native
   val MaxFileVersion: `4` = js.native
   
-  inline def create(): typings.kdbxweb.kdbxHeaderMod.KdbxHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.kdbxweb.kdbxHeaderMod.KdbxHeader]
+  inline def create(): typings.kdbxweb.distTypesFormatKdbxHeaderMod.KdbxHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.kdbxweb.distTypesFormatKdbxHeaderMod.KdbxHeader]
   
-  inline def read(stm: typings.kdbxweb.binaryStreamMod.BinaryStream, ctx: typings.kdbxweb.kdbxContextMod.KdbxContext): typings.kdbxweb.kdbxHeaderMod.KdbxHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(stm.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[typings.kdbxweb.kdbxHeaderMod.KdbxHeader]
+  inline def read(
+    stm: typings.kdbxweb.distTypesUtilsBinaryStreamMod.BinaryStream,
+    ctx: typings.kdbxweb.distTypesFormatKdbxContextMod.KdbxContext
+  ): typings.kdbxweb.distTypesFormatKdbxHeaderMod.KdbxHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(stm.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[typings.kdbxweb.distTypesFormatKdbxHeaderMod.KdbxHeader]
 }

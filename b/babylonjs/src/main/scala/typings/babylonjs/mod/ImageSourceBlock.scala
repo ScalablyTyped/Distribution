@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ImageSourceBlock")
 @js.native
 open class ImageSourceBlock protected ()
-  extends typings.babylonjs.legacyMod.ImageSourceBlock {
+  extends typings.babylonjs.legacyLegacyMod.ImageSourceBlock {
   /**
     * Creates a new ImageSourceBlock
     * @param name defines the block name

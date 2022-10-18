@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "NativeXRRenderTarget")
 @js.native
 open class NativeXRRenderTarget protected ()
-  extends typings.babylonjs.legacyMod.NativeXRRenderTarget {
-  def this(_xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager) = this()
+  extends typings.babylonjs.legacyLegacyMod.NativeXRRenderTarget {
+  def this(_xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager) = this()
 }

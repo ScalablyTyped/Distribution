@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A generic class representing an image layer. This class can be extended to provide support for making export requests from ArcGIS REST services.
   */
-@JSImport("esri-leaflet", "RasterLayer")
+/* note: abstract class */ @JSImport("esri-leaflet", "RasterLayer")
 @js.native
-abstract class RasterLayer protected ()
+open class RasterLayer protected ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.RasterLayer {
   def this(imageUrl: String, bounds: LatLngBoundsExpression) = this()
   def this(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions) = this()

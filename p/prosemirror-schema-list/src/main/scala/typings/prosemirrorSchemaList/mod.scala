@@ -1,7 +1,6 @@
 package typings.prosemirrorSchemaList
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.prosemirrorModel.mod.NodeSpec
 import typings.prosemirrorModel.mod.NodeType
 import typings.prosemirrorModel.mod.Schema
@@ -18,43 +17,23 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def addListNodes[N /* <: String */](
-    nodes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorSchemaList.prosemirrorSchemaListStrings.addListNodes & TopLevel[Any],
+    nodes: /* import warning: importer.ImportType#apply Failed type conversion: {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any,
     itemContent: String
-  ): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorSchemaList.prosemirrorSchemaListStrings.addListNodes & TopLevel[Any]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorSchemaList.prosemirrorSchemaListStrings.addListNodes & TopLevel[Any]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any)]
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any)]
   inline def addListNodes[N /* <: String */](
-    nodes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorSchemaList.prosemirrorSchemaListStrings.addListNodes & TopLevel[Any],
+    nodes: /* import warning: importer.ImportType#apply Failed type conversion: {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any,
     itemContent: String,
     listGroup: String
-  ): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorSchemaList.prosemirrorSchemaListStrings.addListNodes & TopLevel[Any]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any], listGroup.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorSchemaList.prosemirrorSchemaListStrings.addListNodes & TopLevel[Any]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any)]
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any], listGroup.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any)]
   inline def addListNodes[N /* <: String */](
     nodes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any,
     itemContent: String
-  ): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorSchemaList.prosemirrorSchemaListStrings.addListNodes & TopLevel[Any]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorSchemaList.prosemirrorSchemaListStrings.addListNodes & TopLevel[Any]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any)]
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any)]
   inline def addListNodes[N /* <: String */](
     nodes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any,
     itemContent: String,
     listGroup: String
-  ): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorSchemaList.prosemirrorSchemaListStrings.addListNodes & TopLevel[Any]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any], listGroup.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorSchemaList.prosemirrorSchemaListStrings.addListNodes & TopLevel[Any]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any)]
+  ): (/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any], listGroup.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any)]
   
   @JSImport("prosemirror-schema-list", "bulletList")
   @js.native

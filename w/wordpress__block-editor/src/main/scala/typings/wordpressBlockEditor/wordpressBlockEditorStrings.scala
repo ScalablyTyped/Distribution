@@ -1,7 +1,7 @@
 package typings.wordpressBlockEditor
 
-import typings.wordpressBlockEditor.blockAlignmentToolbarMod.BlockAlignmentToolbar.Control
-import typings.wordpressBlockEditor.blockVerticalAlignmentToolbarMod.BlockVerticalAlignmentToolbar._Value
+import typings.wordpressBlockEditor.componentsBlockAlignmentToolbarMod.BlockAlignmentToolbar.Control
+import typings.wordpressBlockEditor.componentsBlockVerticalAlignmentToolbarMod.BlockVerticalAlignmentToolbar._Value
 import typings.wordpressBlockEditor.mod.EditorBlockMode
 import typings.wordpressBlockEditor.mod.EditorMode
 import typings.wordpressBlockEditor.mod.EditorTemplateLock
@@ -10,10 +10,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wordpressBlockEditorStrings {
-  
-  @js.native
-  sealed trait UseBlockProps extends StObject
-  inline def UseBlockProps: UseBlockProps = "UseBlockProps".asInstanceOf[UseBlockProps]
   
   @js.native
   sealed trait a extends StObject
@@ -151,10 +147,6 @@ object wordpressBlockEditorStrings {
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
-  sealed trait colors extends StObject
-  inline def colors: colors = "colors".asInstanceOf[colors]
-  
-  @js.native
   sealed trait copy extends StObject
   inline def copy: copy = "copy".asInstanceOf[copy]
   
@@ -209,10 +201,6 @@ object wordpressBlockEditorStrings {
   @js.native
   sealed trait dialog extends StObject
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
-  
-  @js.native
-  sealed trait disableCustomColors extends StObject
-  inline def disableCustomColors: disableCustomColors = "disableCustomColors".asInstanceOf[disableCustomColors]
   
   @js.native
   sealed trait div extends StObject
@@ -307,10 +295,6 @@ object wordpressBlockEditorStrings {
   @js.native
   sealed trait h6 extends StObject
   inline def h6: h6 = "h6".asInstanceOf[h6]
-  
-  @js.native
-  sealed trait hasColorsToChoose extends StObject
-  inline def hasColorsToChoose: hasColorsToChoose = "hasColorsToChoose".asInstanceOf[hasColorsToChoose]
   
   @js.native
   sealed trait head extends StObject

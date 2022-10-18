@@ -9,7 +9,6 @@ import typings.braintree.anon.CallId
 import typings.braintree.anon.CardType
 import typings.braintree.anon.CardholderName
 import typings.braintree.anon.CountryCodeAlpha3
-import typings.braintree.anon.CountryOfIssuance
 import typings.braintree.anon.CustomFields
 import typings.braintree.anon.FullInformation
 import typings.braintree.anon.Held
@@ -30,7 +29,7 @@ open class Transaction () extends StObject {
   
   var amount: String = js.native
   
-  var androidPayCard: js.UndefOr[typings.braintree.anon.Commercial] = js.native
+  var androidPayCard: js.UndefOr[typings.braintree.anon.Debit] = js.native
   
   var applePayCard: js.UndefOr[CardType] = js.native
   
@@ -82,7 +81,7 @@ open class Transaction () extends StObject {
   
   var lineItems: js.UndefOr[js.Array[TransactionLineItem]] = js.native
   
-  var masterpassCardDetails: js.UndefOr[CountryOfIssuance] = js.native
+  var masterpassCardDetails: js.UndefOr[typings.braintree.anon.CustomerLocation] = js.native
   
   var merchantAccountId: js.UndefOr[String] = js.native
   
@@ -119,7 +118,7 @@ open class Transaction () extends StObject {
   
   var riskData: js.UndefOr[TransactionRiskData] = js.native
   
-  var samsungPayCardDetails: js.UndefOr[typings.braintree.anon.CustomerLocation] = js.native
+  var samsungPayCardDetails: js.UndefOr[typings.braintree.anon.DurbinRegulated] = js.native
   
   var serviceFeeAmount: js.UndefOr[String] = js.native
   

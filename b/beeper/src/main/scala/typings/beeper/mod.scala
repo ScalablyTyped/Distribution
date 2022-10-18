@@ -10,7 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[Unit]]
-  inline def default(count: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(count.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def default(melody: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(melody.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

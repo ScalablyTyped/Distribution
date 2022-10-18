@@ -4,7 +4,15 @@ import typings.geolib.anon.Altitude
 import typings.geolib.anon.AltitudeLatitude
 import typings.geolib.anon.Latitude
 import typings.geolib.anon.Longitude
-import typings.geolib.constantsMod.unitObject
+import typings.geolib.esConstantsMod.unitObject
+import typings.geolib.esGetCompassDirectionMod.BearingFunction
+import typings.geolib.esGetPathLengthMod.DistanceFn
+import typings.geolib.esTypesMod.AltitudeKeys
+import typings.geolib.esTypesMod.GeolibDistanceFn
+import typings.geolib.esTypesMod.GeolibInputCoordinates
+import typings.geolib.esTypesMod.GeolibInputCoordinatesWithTime
+import typings.geolib.esTypesMod.LatitudeKeys
+import typings.geolib.esTypesMod.LongitudeKeys
 import typings.geolib.geolibBooleans.`false`
 import typings.geolib.geolibStrings.E
 import typings.geolib.geolibStrings.ENE
@@ -22,14 +30,6 @@ import typings.geolib.geolibStrings.SW
 import typings.geolib.geolibStrings.W
 import typings.geolib.geolibStrings.WNW
 import typings.geolib.geolibStrings.WSW
-import typings.geolib.getCompassDirectionMod.BearingFunction
-import typings.geolib.getPathLengthMod.DistanceFn
-import typings.geolib.typesMod.AltitudeKeys
-import typings.geolib.typesMod.GeolibDistanceFn
-import typings.geolib.typesMod.GeolibInputCoordinates
-import typings.geolib.typesMod.GeolibInputCoordinatesWithTime
-import typings.geolib.typesMod.LatitudeKeys
-import typings.geolib.typesMod.LongitudeKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -189,7 +189,7 @@ object mod {
   inline def orderByDistance(
     point: GeolibInputCoordinates,
     coords: js.Array[GeolibInputCoordinates],
-    distanceFn: typings.geolib.orderByDistanceMod.DistanceFn
+    distanceFn: typings.geolib.esOrderByDistanceMod.DistanceFn
   ): js.Array[GeolibInputCoordinates] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderByDistance")(point.asInstanceOf[js.Any], coords.asInstanceOf[js.Any], distanceFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[GeolibInputCoordinates]]
   
   @JSImport("geolib", "sexagesimalPattern")

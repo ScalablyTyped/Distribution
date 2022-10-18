@@ -1,10 +1,10 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.docdbMod.Filter
-import typings.awsSdk.docdbMod.FilterList
-import typings.awsSdk.docdbMod.IntegerOptional
-import typings.awsSdk.docdbMod.String
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsDocdbMod.Filter
+import typings.awsSdk.clientsDocdbMod.FilterList
+import typings.awsSdk.clientsDocdbMod.IntegerOptional
+import typings.awsSdk.clientsDocdbMod.String
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

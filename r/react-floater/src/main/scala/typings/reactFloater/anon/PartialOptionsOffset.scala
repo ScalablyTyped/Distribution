@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/modifiers/offset.Options> */
 trait PartialOptionsOffset extends StObject {
   
-  var offset: js.UndefOr[typings.popperjsCore.offsetMod.Offset] = js.undefined
+  var offset: js.UndefOr[typings.popperjsCore.libModifiersOffsetMod.Offset] = js.undefined
 }
 object PartialOptionsOffset {
   
@@ -19,7 +19,7 @@ object PartialOptionsOffset {
   
   extension [Self <: PartialOptionsOffset](x: Self) {
     
-    inline def setOffset(value: typings.popperjsCore.offsetMod.Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: typings.popperjsCore.libModifiersOffsetMod.Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetFunction1(value: /* arg0 */ Placement => js.Tuple2[js.UndefOr[Double | Null], js.UndefOr[Double | Null]]): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
     

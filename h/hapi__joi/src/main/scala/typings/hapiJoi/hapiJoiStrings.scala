@@ -26,10 +26,6 @@ object hapiJoiStrings {
   inline def NFKD: NFKD = "NFKD".asInstanceOf[NFKD]
   
   @js.native
-  sealed trait SchemaMap extends StObject
-  inline def SchemaMap: SchemaMap = "SchemaMap".asInstanceOf[SchemaMap]
-  
-  @js.native
   sealed trait ValidationError extends StObject
   inline def ValidationError: ValidationError = "ValidationError".asInstanceOf[ValidationError]
   

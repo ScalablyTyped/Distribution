@@ -1,7 +1,7 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.ispritesMod.ISpriteJSONAtlas
-import typings.babylonjs.spriteMapMod.ISpriteMapOptions
+import typings.babylonjs.spritesIspritesMod.ISpriteJSONAtlas
+import typings.babylonjs.spritesSpriteMapMod.ISpriteMapOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SpriteMap")
 @js.native
 open class SpriteMap protected ()
-  extends typings.babylonjs.legacyMod.SpriteMap {
+  extends typings.babylonjs.legacyLegacyMod.SpriteMap {
   /**
     * Creates a new SpriteMap
     * @param name defines the SpriteMaps Name
@@ -21,7 +21,7 @@ open class SpriteMap protected ()
   def this(
     name: String,
     atlasJSON: ISpriteJSONAtlas,
-    spriteSheet: typings.babylonjs.textureMod.Texture,
+    spriteSheet: typings.babylonjs.materialsTexturesTextureMod.Texture,
     options: ISpriteMapOptions,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()

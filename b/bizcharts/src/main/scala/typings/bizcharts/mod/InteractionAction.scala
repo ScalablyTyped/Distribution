@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Action 的基类
   */
-@JSImport("bizcharts", "InteractionAction")
+/* note: abstract class */ @JSImport("bizcharts", "InteractionAction")
 @js.native
-abstract class InteractionAction[T] protected ()
-  extends typings.bizcharts.coreMod.InteractionAction[T] {
+open class InteractionAction[T] protected ()
+  extends typings.bizcharts.libCoreMod.InteractionAction[T] {
   def this(context: IInteractionContext) = this()
   def this(context: IInteractionContext, cfg: T) = this()
 }

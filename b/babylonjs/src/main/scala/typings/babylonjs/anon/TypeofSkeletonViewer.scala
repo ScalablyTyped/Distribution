@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.Instantiable6
-import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.bonesSkeletonMod.Skeleton
+import typings.babylonjs.debugIskeletonviewerMod.IBoneWeightShaderOptions
+import typings.babylonjs.debugIskeletonviewerMod.ISkeletonMapShaderOptions
 import typings.babylonjs.indexMod.SkeletonViewer
-import typings.babylonjs.iskeletonviewerMod.IBoneWeightShaderOptions
-import typings.babylonjs.iskeletonviewerMod.ISkeletonMapShaderOptions
+import typings.babylonjs.materialsShaderMaterialMod.ShaderMaterial
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.shaderMaterialMod.ShaderMaterial
-import typings.babylonjs.skeletonMod.Skeleton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

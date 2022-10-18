@@ -1,10 +1,10 @@
 package typings.raml1Parser.mod
 
-import typings.raml1Parser.lowLevelASTMod.ICompilationUnit
-import typings.raml1Parser.schemaMod.IncludeReference
-import typings.raml1Parser.schemaMod.Schema
-import typings.raml1Parser.schemaModelGenApiMod.ModelToSchemaGenerator
-import typings.raml1Parser.schemaModelGenApiMod.SchemaToModelGenerator
+import typings.raml1Parser.distParserLowLevelASTMod.ICompilationUnit
+import typings.raml1Parser.distParserToolsSchemaModelGenApiMod.ModelToSchemaGenerator
+import typings.raml1Parser.distParserToolsSchemaModelGenApiMod.SchemaToModelGenerator
+import typings.raml1Parser.distSchemaMod.IncludeReference
+import typings.raml1Parser.distSchemaMod.Schema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

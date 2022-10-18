@@ -1,8 +1,8 @@
 package typings.reactDocgenTypescript
 
-import typings.reactDocgenTypescript.parserMod.ComponentDoc
-import typings.reactDocgenTypescript.parserMod.FileParser
-import typings.reactDocgenTypescript.parserMod.ParserOptions
+import typings.reactDocgenTypescript.libParserMod.ComponentDoc
+import typings.reactDocgenTypescript.libParserMod.FileParser
+import typings.reactDocgenTypescript.libParserMod.ParserOptions
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.Program
 import typings.typescript.mod.SourceFile
@@ -19,7 +19,7 @@ object mod {
   @JSImport("react-docgen-typescript", "Parser")
   @js.native
   open class Parser protected ()
-    extends typings.reactDocgenTypescript.parserMod.Parser {
+    extends typings.reactDocgenTypescript.libParserMod.Parser {
     def this(program: Program, opts: ParserOptions) = this()
   }
   

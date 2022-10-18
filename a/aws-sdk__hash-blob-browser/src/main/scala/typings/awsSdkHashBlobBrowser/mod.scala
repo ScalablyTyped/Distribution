@@ -1,6 +1,6 @@
 package typings.awsSdkHashBlobBrowser
 
-import typings.awsSdkTypes.cryptoMod.StreamHasher
+import typings.awsSdkTypes.distTypesCryptoMod.StreamHasher
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -2,8 +2,8 @@ package typings.semanticUiReact.mod
 
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.messageMessageMod.MessageComponent
-import typings.semanticUiReact.messageMessageMod.MessageProps
+import typings.semanticUiReact.distCommonjsCollectionsMessageMessageMod.MessageComponent
+import typings.semanticUiReact.distCommonjsCollectionsMessageMessageMod.MessageProps
 import typings.semanticUiReact.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

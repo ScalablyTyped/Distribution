@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.CompactCardHeight
-import typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardProps
+import typings.officeUiFabricReact.libComponentsHoverCardExpandingCardDottypesMod.IExpandingCardProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientGenomics.gapi.client.genomics
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,9 +50,7 @@ trait VirtualMachine extends StObject {
     * Labels applied at creation time to the VM. Applied on a best-effort basis to attached disk resources shortly after VM creation.
     */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.VirtualMachine & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -128,9 +125,7 @@ object VirtualMachine {
     inline def setEnableStackdriverMonitoringUndefined: Self = StObject.set(x, "enableStackdriverMonitoring", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.VirtualMachine & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

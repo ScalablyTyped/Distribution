@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-reporting-protobuf" : "3.3.2"
+      "apollo-reporting-protobuf" : "3.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-reporting-protobuf" : "3.3.2"
+      "apollo-reporting-protobuf" : "3.3.3"
     }
   ],
   "compile-devDependencies" : [

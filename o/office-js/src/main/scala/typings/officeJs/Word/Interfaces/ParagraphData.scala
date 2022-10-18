@@ -165,7 +165,7 @@ trait ParagraphData extends StObject {
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJs.Word.Style, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any
   ] = js.undefined
   
   /**
@@ -267,7 +267,9 @@ object ParagraphData {
     
     inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    inline def setStyleBuiltIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ Any): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
+    inline def setStyleBuiltIn(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJs.Word.Style, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any
+    ): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
     inline def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
     

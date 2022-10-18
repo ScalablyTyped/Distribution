@@ -1,7 +1,6 @@
 package typings.valvelet
 
 import typings.std.Parameters
-import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,8 +50,20 @@ object mod {
     * // 8 - 2016-06-02T20:07:37.851Z
     * // 9 - 2016-06-02T20:07:37.851Z
     */
-  inline def apply[TFn /* <: js.Function1[/* repeated */ Any, Any] */](fn: TFn, limit: Double, interval: Double): js.Function1[/* args */ Parameters[TFn], js.Promise[Any | ReturnType[TFn]]] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[TFn], js.Promise[Any | ReturnType[TFn]]]]
-  inline def apply[TFn /* <: js.Function1[/* repeated */ Any, Any] */](fn: TFn, limit: Double, interval: Double, size: Double): js.Function1[/* args */ Parameters[TFn], js.Promise[Any | ReturnType[TFn]]] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[TFn], js.Promise[Any | ReturnType[TFn]]]]
+  inline def apply[TFn /* <: js.Function1[/* repeated */ Any, Any] */](fn: TFn, limit: Double, interval: Double): js.Function1[
+    /* args */ Parameters[TFn], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<TFn> extends std.PromiseLike<infer TRetVal> ? std.Promise<TRetVal> : std.Promise<std.ReturnType<TFn>> */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* args */ Parameters[TFn], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<TFn> extends std.PromiseLike<infer TRetVal> ? std.Promise<TRetVal> : std.Promise<std.ReturnType<TFn>> */ js.Any
+  ]]
+  inline def apply[TFn /* <: js.Function1[/* repeated */ Any, Any] */](fn: TFn, limit: Double, interval: Double, size: Double): js.Function1[
+    /* args */ Parameters[TFn], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<TFn> extends std.PromiseLike<infer TRetVal> ? std.Promise<TRetVal> : std.Promise<std.ReturnType<TFn>> */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* args */ Parameters[TFn], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<TFn> extends std.PromiseLike<infer TRetVal> ? std.Promise<TRetVal> : std.Promise<std.ReturnType<TFn>> */ js.Any
+  ]]
   
   @JSImport("valvelet", JSImport.Namespace)
   @js.native

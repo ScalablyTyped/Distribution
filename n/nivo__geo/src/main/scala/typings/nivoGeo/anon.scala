@@ -9,35 +9,35 @@ object anon {
   
   trait Feature extends StObject {
     
-    var feature: Any
+    var feature: ChoroplethBoundFeature
   }
   object Feature {
     
-    inline def apply(feature: Any): Feature = {
+    inline def apply(feature: ChoroplethBoundFeature): Feature = {
       val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any])
       __obj.asInstanceOf[Feature]
     }
     
     extension [Self <: Feature](x: Self) {
       
-      inline def setFeature(value: Any): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: ChoroplethBoundFeature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     }
   }
   
-  trait FeatureChoroplethBoundFeature extends StObject {
+  trait FeatureAny extends StObject {
     
-    var feature: ChoroplethBoundFeature
+    var feature: Any
   }
-  object FeatureChoroplethBoundFeature {
+  object FeatureAny {
     
-    inline def apply(feature: ChoroplethBoundFeature): FeatureChoroplethBoundFeature = {
+    inline def apply(feature: Any): FeatureAny = {
       val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FeatureChoroplethBoundFeature]
+      __obj.asInstanceOf[FeatureAny]
     }
     
-    extension [Self <: FeatureChoroplethBoundFeature](x: Self) {
+    extension [Self <: FeatureAny](x: Self) {
       
-      inline def setFeature(value: ChoroplethBoundFeature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: Any): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     }
   }
   

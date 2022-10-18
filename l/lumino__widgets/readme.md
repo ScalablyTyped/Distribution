@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__widgets
 
-Typings are for version 1.34.0
+Typings are for version 1.34.1
 
 ## Library description:
 Lumino Widgets

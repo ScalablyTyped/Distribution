@@ -13,7 +13,7 @@ trait ActiveConfig extends StObject {
   var active: js.UndefOr[Boolean] = js.undefined
   
   /** @description Key/value pairs to provide settings for this webhook. [These are defined below](https://docs.github.com/rest/reference/orgs#create-hook-config-params). */
-  var config: InsecuresslPassword
+  var config: Password
   
   /**
     * @description Determines what [events](https://docs.github.com/webhooks/event-payloads) the hook is triggered for.
@@ -28,7 +28,7 @@ trait ActiveConfig extends StObject {
 }
 object ActiveConfig {
   
-  inline def apply(config: InsecuresslPassword, name: String): ActiveConfig = {
+  inline def apply(config: Password, name: String): ActiveConfig = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveConfig]
   }
@@ -39,7 +39,7 @@ object ActiveConfig {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setConfig(value: InsecuresslPassword): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Password): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

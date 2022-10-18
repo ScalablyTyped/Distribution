@@ -52,7 +52,12 @@ trait FieldTemplateProps[T, F] extends StObject {
   var label: String
   
   /** The value change event handler; Can be called with a new value to change the value for this field */
-  def onChange(value: T): Unit
+  var onChange: js.Function3[
+    /* newFormData */ Any, 
+    /* es */ js.UndefOr[ErrorSchema[Any]], 
+    /* id */ js.UndefOr[String], 
+    Any
+  ]
   
   /** The property drop/removal event handler; Called when a field is removed in an additionalProperty context */
   def onDropPropertyClick(value: String): js.Function0[Unit]
@@ -94,14 +99,14 @@ object FieldTemplateProps {
     formData: T,
     id: String,
     label: String,
-    onChange: T => Unit,
+    onChange: (/* newFormData */ Any, /* es */ js.UndefOr[ErrorSchema[Any]], /* id */ js.UndefOr[String]) => Any,
     onDropPropertyClick: String => js.Function0[Unit],
     onKeyChange: String => js.Function0[Unit],
     readonly: Boolean,
     registry: Registry[T, F],
     schema: RJSFSchema
   ): FieldTemplateProps[T, F] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), onDropPropertyClick = js.Any.fromFunction1(onDropPropertyClick), onKeyChange = js.Any.fromFunction1(onKeyChange), readonly = readonly.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], onChange = js.Any.fromFunction3(onChange), onDropPropertyClick = js.Any.fromFunction1(onDropPropertyClick), onKeyChange = js.Any.fromFunction1(onKeyChange), readonly = readonly.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldTemplateProps[T, F]]
   }
   
@@ -149,7 +154,9 @@ object FieldTemplateProps {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setOnChange(value: T => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(
+      value: (/* newFormData */ Any, /* es */ js.UndefOr[ErrorSchema[Any]], /* id */ js.UndefOr[String]) => Any
+    ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
     
     inline def setOnDropPropertyClick(value: String => js.Function0[Unit]): Self = StObject.set(x, "onDropPropertyClick", js.Any.fromFunction1(value))
     

@@ -10,15 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify typeSystem.ITypeDefinition * / any */ @JSImport("raml-1-parser", "ds.NodeClass")
 @js.native
 open class NodeClass protected ()
-  extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.NodeClass {
+  extends typings.ramlDefinitionSystem.mod.NodeClass {
+  def this(_name: String, universe: typings.ramlDefinitionSystem.mod.Universe, path: String) = this()
   def this(
     _name: String,
-    universe: typings.ramlDefinitionSystem.ramlDefinitionSystemMod.Universe,
-    path: String
-  ) = this()
-  def this(
-    _name: String,
-    universe: typings.ramlDefinitionSystem.ramlDefinitionSystemMod.Universe,
+    universe: typings.ramlDefinitionSystem.mod.Universe,
     path: String,
     _description: String
   ) = this()

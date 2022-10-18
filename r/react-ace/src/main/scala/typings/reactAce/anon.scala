@@ -10,11 +10,11 @@ import typings.aceBuilds.mod.Ace.Range
 import typings.aceBuilds.mod.Ace.SyntaxMode
 import typings.propTypes.mod.Validator
 import typings.react.mod.CSSProperties
-import typings.reactAce.typesMod.IAceOptions
-import typings.reactAce.typesMod.IAnnotation
-import typings.reactAce.typesMod.ICommand
-import typings.reactAce.typesMod.IEditorProps
-import typings.reactAce.typesMod.IMarker
+import typings.reactAce.libTypesMod.IAceOptions
+import typings.reactAce.libTypesMod.IAnnotation
+import typings.reactAce.libTypesMod.ICommand
+import typings.reactAce.libTypesMod.IEditorProps
+import typings.reactAce.libTypesMod.IMarker
 import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject

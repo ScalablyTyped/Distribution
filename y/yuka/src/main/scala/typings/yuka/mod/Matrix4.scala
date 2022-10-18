@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new 4x4 identity matrix.
   */
 open class Matrix4 ()
-  extends typings.yuka.yukaMod.Matrix4
+  extends typings.yuka.srcYukaMod.Matrix4

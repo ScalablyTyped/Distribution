@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.alertMod.AlertProps
+import typings.blueprintjsCore.libEsmComponentsAlertAlertMod.AlertProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Alert")
 @js.native
 open class Alert protected ()
-  extends typings.blueprintjsCore.componentsMod.Alert {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Alert {
   def this(props: AlertProps) = this()
   def this(props: AlertProps, context: Any) = this()
 }

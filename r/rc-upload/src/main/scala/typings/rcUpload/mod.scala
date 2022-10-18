@@ -9,7 +9,7 @@ object mod {
   @JSImport("rc-upload", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.rcUpload.uploadMod.default
+    extends typings.rcUpload.esUploadMod.default
   object default {
     
     /* static member */

@@ -2,8 +2,8 @@ package typings.reactInlinesvg
 
 import typings.react.mod.PureComponent
 import typings.reactInlinesvg.anon.CacheRequests
-import typings.reactInlinesvg.typesMod.Props
-import typings.reactInlinesvg.typesMod.State
+import typings.reactInlinesvg.esmTypesMod.Props
+import typings.reactInlinesvg.esmTypesMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

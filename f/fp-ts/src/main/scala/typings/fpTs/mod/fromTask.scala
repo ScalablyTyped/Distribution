@@ -1,20 +1,20 @@
 package typings.fpTs.mod
 
-import typings.fpTs.chainMod.Chain
-import typings.fpTs.chainMod.Chain1
-import typings.fpTs.chainMod.Chain2
-import typings.fpTs.chainMod.Chain2C
-import typings.fpTs.chainMod.Chain3
-import typings.fpTs.chainMod.Chain3C
-import typings.fpTs.chainMod.Chain4
-import typings.fpTs.fromTaskMod.FromTask
-import typings.fpTs.fromTaskMod.FromTask1
-import typings.fpTs.fromTaskMod.FromTask2
-import typings.fpTs.fromTaskMod.FromTask2C
-import typings.fpTs.fromTaskMod.FromTask3
-import typings.fpTs.fromTaskMod.FromTask3C
-import typings.fpTs.fromTaskMod.FromTask4
-import typings.fpTs.taskMod.Task_
+import typings.fpTs.libChainMod.Chain
+import typings.fpTs.libChainMod.Chain1
+import typings.fpTs.libChainMod.Chain2
+import typings.fpTs.libChainMod.Chain2C
+import typings.fpTs.libChainMod.Chain3
+import typings.fpTs.libChainMod.Chain3C
+import typings.fpTs.libChainMod.Chain4
+import typings.fpTs.libFromTaskMod.FromTask
+import typings.fpTs.libFromTaskMod.FromTask1
+import typings.fpTs.libFromTaskMod.FromTask2
+import typings.fpTs.libFromTaskMod.FromTask2C
+import typings.fpTs.libFromTaskMod.FromTask3
+import typings.fpTs.libFromTaskMod.FromTask3C
+import typings.fpTs.libFromTaskMod.FromTask4
+import typings.fpTs.libTaskMod.Task_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

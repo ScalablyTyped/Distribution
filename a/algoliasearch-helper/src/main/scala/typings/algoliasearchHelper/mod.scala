@@ -44,10 +44,6 @@ import typings.algoliasearchHelper.algoliasearchHelperStrings.searchQueueEmpty
 import typings.algoliasearchHelper.algoliasearchHelperStrings.singleWordSynonym
 import typings.algoliasearchHelper.algoliasearchHelperStrings.tagRefinements
 import typings.algoliasearchHelper.algoliasearchHelperStrings.word
-import typings.algoliasearchHelper.algoliasearchMod.FindAnswersResponse
-import typings.algoliasearchHelper.algoliasearchMod.SearchClient
-import typings.algoliasearchHelper.algoliasearchMod.SearchOptions
-import typings.algoliasearchHelper.algoliasearchMod.SearchResponse
 import typings.algoliasearchHelper.anon.AttributesForPrediction
 import typings.algoliasearchHelper.anon.Avg
 import typings.algoliasearchHelper.anon.Content
@@ -67,6 +63,10 @@ import typings.algoliasearchHelper.mod.SearchParameters.Operator
 import typings.algoliasearchHelper.mod.SearchParameters.OperatorList
 import typings.algoliasearchHelper.mod.SearchResults.FacetValue
 import typings.algoliasearchHelper.mod.SearchResults.Refinement
+import typings.algoliasearchHelper.typesAlgoliasearchMod.FindAnswersResponse
+import typings.algoliasearchHelper.typesAlgoliasearchMod.SearchClient
+import typings.algoliasearchHelper.typesAlgoliasearchMod.SearchOptions
+import typings.algoliasearchHelper.typesAlgoliasearchMod.SearchResponse
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -1794,8 +1794,8 @@ object mod {
   type ISearchResponse[T] = (Omit[SearchResponse[T], facets | params]) & SearchResultsOptions
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientV5 extends algoliasearch-helper.algoliasearch-helper/types/algoliasearch.SearchClientShape ? algoliasearch-helper.anon.V3V4V5['v5'] : // @ts-ignore
-  algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientV3_4 extends algoliasearch-helper.algoliasearch-helper/types/algoliasearch.SearchClientV4Shape ? algoliasearch-helper.anon.V3V4V5['v4'] : algoliasearch-helper.anon.V3V4V5['v3'] */ trait PlainSearchParameters extends StObject {
+  - Dropped algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientV5 extends algoliasearch-helper.algoliasearch-helper/types/algoliasearch.SearchClientShape ? algoliasearch-helper.anon.V4SearchOptions['v5'] : // @ts-ignore
+  algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientV3_4 extends algoliasearch-helper.algoliasearch-helper/types/algoliasearch.SearchClientV4Shape ? algoliasearch-helper.anon.V4SearchOptions['v4'] : algoliasearch-helper.anon.V4SearchOptions['v3'] */ trait PlainSearchParameters extends StObject {
     
     /**
       * This attribute contains the list of all the disjunctive facets

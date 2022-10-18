@@ -1,7 +1,6 @@
 package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.baiduApp.anon.Cursor
 import typings.baiduApp.anon.Instantiable
 import typings.baiduApp.anon.Value
@@ -37,19 +36,6 @@ type CompassOptions = BaseOptions[Any, Any]
 
 type CustomEvent[T /* <: String */, Detail] = BaseEvent[T, Detail]
 
-/**
-  * There are two valid ways to define the type of data / properties:
-  *
-  * 1. { name: valueType }
-  * 2. { name: { type: valueType, value?: value } }
-  *
-  * and this conditional type will extract that out so the call-site will typecheck.
-  *
-  * Note this is different from PropOptions as it is the definitions you passed to Component function
-  * whereas this type is for call-site.
-  */
-type DataValueType[Def] = Any
-
 // #endregion
 // #region Compontent组件
 type DefaultData[V] = js.Object | (js.ThisFunction0[/* this */ V, js.Object])
@@ -73,10 +59,6 @@ type Prop[T] = js.Function0[T] | Instantiable[T]
 type PropValidator[T] = PropOptions[T] | Prop[T] | js.Array[Prop[T]]
 
 type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]
-
-type RecordPropsDefinition[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: baidu-app.swan.PropValidator<T[K]>}
-  */ typings.baiduApp.baiduAppStrings.RecordPropsDefinition & TopLevel[T]
 
 // #endregion
 // #region 网络API列表

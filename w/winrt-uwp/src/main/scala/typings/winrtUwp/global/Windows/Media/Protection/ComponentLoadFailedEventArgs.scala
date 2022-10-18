@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for a MediaProtectionManager object when the load of binary data fails. */
-@JSGlobal("Windows.Media.Protection.ComponentLoadFailedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.Protection.ComponentLoadFailedEventArgs")
 @js.native
-abstract class ComponentLoadFailedEventArgs ()
+open class ComponentLoadFailedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.ComponentLoadFailedEventArgs {
   

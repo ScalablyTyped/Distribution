@@ -23,7 +23,7 @@ trait TypeofDefaultValueAccesso
   
   var ɵdir: ɵɵDirectiveDeclaration[
     DefaultValueAccessor, 
-    String, 
+    /* input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl] */ String, 
     scala.Nothing, 
     js.Object, 
     js.Object, 

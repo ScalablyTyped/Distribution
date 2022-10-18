@@ -1,9 +1,9 @@
 package typings.tootallnateOnce
 
 import typings.node.eventsMod.EventEmitter
-import typings.tootallnateOnce.typesMod.AbortSignal
-import typings.tootallnateOnce.typesMod.EventListenerParameters
-import typings.tootallnateOnce.typesMod.EventNames
+import typings.tootallnateOnce.distTypesMod.AbortSignal
+import typings.tootallnateOnce.distTypesMod.EventListenerParameters
+import typings.tootallnateOnce.distTypesMod.EventNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

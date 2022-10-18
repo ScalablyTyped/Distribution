@@ -4,7 +4,6 @@ import typings.chromeApps.anon.READ
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.integer
 import typings.chromeApps.chromeAppsStrings.WRITE
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,10 +20,7 @@ trait OpenedFileInfo extends StObject {
   var mode: ToStringLiteral[
     READ, 
     /* keyof chrome-apps.anon.READ */ typings.chromeApps.chromeAppsStrings.READ | WRITE, 
-    Exclude[
-      /* keyof chrome-apps.anon.READ */ typings.chromeApps.chromeAppsStrings.READ | WRITE, 
-      typings.chromeApps.chromeAppsStrings.READ | WRITE
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: keyof {  READ :'READ',   WRITE :'WRITE'} extends keyof {  READ :'READ',   WRITE :'WRITE'} ? std.Exclude<keyof {  READ :'READ',   WRITE :'WRITE'}, 'READ' | 'WRITE'> : never */ js.Any
   ]
   
   /** A request ID to be be used by consecutive read/write and close requests. */
@@ -37,10 +33,7 @@ object OpenedFileInfo {
     mode: ToStringLiteral[
       READ, 
       /* keyof chrome-apps.anon.READ */ typings.chromeApps.chromeAppsStrings.READ | WRITE, 
-      Exclude[
-        /* keyof chrome-apps.anon.READ */ typings.chromeApps.chromeAppsStrings.READ | WRITE, 
-        typings.chromeApps.chromeAppsStrings.READ | WRITE
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  READ :'READ',   WRITE :'WRITE'} extends keyof {  READ :'READ',   WRITE :'WRITE'} ? std.Exclude<keyof {  READ :'READ',   WRITE :'WRITE'}, 'READ' | 'WRITE'> : never */ js.Any
     ],
     openRequestId: integer
   ): OpenedFileInfo = {
@@ -56,10 +49,7 @@ object OpenedFileInfo {
       value: ToStringLiteral[
           READ, 
           /* keyof chrome-apps.anon.READ */ typings.chromeApps.chromeAppsStrings.READ | WRITE, 
-          Exclude[
-            /* keyof chrome-apps.anon.READ */ typings.chromeApps.chromeAppsStrings.READ | WRITE, 
-            typings.chromeApps.chromeAppsStrings.READ | WRITE
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  READ :'READ',   WRITE :'WRITE'} extends keyof {  READ :'READ',   WRITE :'WRITE'} ? std.Exclude<keyof {  READ :'READ',   WRITE :'WRITE'}, 'READ' | 'WRITE'> : never */ js.Any
         ]
     ): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

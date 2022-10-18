@@ -13,8 +13,8 @@ open class PlaneHelper protected ()
     * @param [size=1]
     * @param [hex=0xffff00]
     */
-  def this(plane: typings.three.planeMod.Plane) = this()
-  def this(plane: typings.three.planeMod.Plane, size: Double) = this()
-  def this(plane: typings.three.planeMod.Plane, size: Double, hex: Double) = this()
-  def this(plane: typings.three.planeMod.Plane, size: Unit, hex: Double) = this()
+  def this(plane: typings.three.srcMathPlaneMod.Plane) = this()
+  def this(plane: typings.three.srcMathPlaneMod.Plane, size: Double) = this()
+  def this(plane: typings.three.srcMathPlaneMod.Plane, size: Double, hex: Double) = this()
+  def this(plane: typings.three.srcMathPlaneMod.Plane, size: Unit, hex: Double) = this()
 }

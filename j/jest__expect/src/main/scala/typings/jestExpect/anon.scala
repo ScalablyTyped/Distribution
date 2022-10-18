@@ -11,15 +11,25 @@ object anon {
   /* Inlined std.Omit<expect.expect.AsymmetricMatchers, 'any' | 'anything'> */
   trait OmitAsymmetricMatchersany extends StObject {
     
-    var arrayContaining: js.Function1[/* sample */ js.Array[Any], AsymmetricMatcher2]
+    def arrayContaining(sample: js.Array[Any]): AsymmetricMatcher2
+    @JSName("arrayContaining")
+    var arrayContaining_Original: js.Function1[/* sample */ js.Array[Any], AsymmetricMatcher2]
     
-    var closeTo: js.Function1[/* sample */ Double, AsymmetricMatcher2]
+    def closeTo(sample: Double): AsymmetricMatcher2
+    @JSName("closeTo")
+    var closeTo_Original: js.Function1[/* sample */ Double, AsymmetricMatcher2]
     
-    var objectContaining: js.Function1[/* sample */ Record[String, Any], AsymmetricMatcher2]
+    def objectContaining(sample: Record[String, Any]): AsymmetricMatcher2
+    @JSName("objectContaining")
+    var objectContaining_Original: js.Function1[/* sample */ Record[String, Any], AsymmetricMatcher2]
     
-    var stringContaining: js.Function1[/* sample */ String, AsymmetricMatcher2]
+    def stringContaining(sample: String): AsymmetricMatcher2
+    @JSName("stringContaining")
+    var stringContaining_Original: js.Function1[/* sample */ String, AsymmetricMatcher2]
     
-    var stringMatching: js.Function1[/* sample */ String, AsymmetricMatcher2]
+    def stringMatching(sample: String): AsymmetricMatcher2
+    @JSName("stringMatching")
+    var stringMatching_Original: js.Function1[/* sample */ String, AsymmetricMatcher2]
   }
   object OmitAsymmetricMatchersany {
     

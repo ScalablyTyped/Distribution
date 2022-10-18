@@ -2,8 +2,8 @@ package typings.handsontable
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.handsontable.baseEditorMod.BaseEditor
 import typings.handsontable.coreMod.default
+import typings.handsontable.editorsBaseEditorMod.BaseEditor
 import typings.handsontable.renderersBaseMod.BaseRenderer
 import typings.handsontable.settingsMod.CellProperties
 import typings.handsontable.settingsMod.GridSettings

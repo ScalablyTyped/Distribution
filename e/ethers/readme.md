@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethers
 
-Typings are for version 5.0.21
+Typings are for version 5.7.1
 
 ## Library description:
 Umbrella package for most common Ethers libraries.
@@ -10,10 +10,10 @@ Umbrella package for most common Ethers libraries.
 | ------------------ | :-------------: |
 | Full name          | ethers |
 | Keywords           | Ethereum, ethers |
-| # releases         | 128 |
-| # dependents       | 977 |
-| # downloads        | 7734752 |
-| # stars            | 2 |
+| # releases         | 66 |
+| # dependents       | 0.0 |
+| # downloads        | 3716665.6666666665 |
+| # stars            | 5723.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

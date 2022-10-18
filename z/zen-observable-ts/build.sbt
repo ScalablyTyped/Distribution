@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "zen-observable-ts"
-version := "1.1.0-fcff8a"
+version := "1.1.0-d8e7d3"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
-  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20211202Z-3d8bf5")
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20211202Z-beef2b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

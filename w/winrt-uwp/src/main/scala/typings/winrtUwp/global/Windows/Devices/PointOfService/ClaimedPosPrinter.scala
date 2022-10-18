@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represent a point-of-service printer that has been claimed for use. */
-@JSGlobal("Windows.Devices.PointOfService.ClaimedPosPrinter")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.ClaimedPosPrinter")
 @js.native
-abstract class ClaimedPosPrinter ()
+open class ClaimedPosPrinter ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.ClaimedPosPrinter

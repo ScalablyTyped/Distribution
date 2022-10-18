@@ -1,8 +1,8 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.internalTextureMod.InternalTexture
+import typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture
+import typings.babylonjs.materialsTexturesTextureMod.Texture
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.textureMod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "RGBDTextureTools")
 @js.native
 open class RGBDTextureTools ()
-  extends typings.babylonjs.rgbdTextureToolsMod.RGBDTextureTools
+  extends typings.babylonjs.miscRgbdTextureToolsMod.RGBDTextureTools
 /* static members */
 object RGBDTextureTools {
   

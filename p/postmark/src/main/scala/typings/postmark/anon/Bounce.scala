@@ -1,9 +1,9 @@
 package typings.postmark.anon
 
-import typings.postmark.webhookMod.BounceWebhookTrigger
-import typings.postmark.webhookMod.OpenWebhookTrigger
-import typings.postmark.webhookMod.SpamWebhookTrigger
-import typings.postmark.webhookMod.WebhookTrigger
+import typings.postmark.distClientModelsWebhooksWebhookMod.BounceWebhookTrigger
+import typings.postmark.distClientModelsWebhooksWebhookMod.OpenWebhookTrigger
+import typings.postmark.distClientModelsWebhooksWebhookMod.SpamWebhookTrigger
+import typings.postmark.distClientModelsWebhooksWebhookMod.WebhookTrigger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

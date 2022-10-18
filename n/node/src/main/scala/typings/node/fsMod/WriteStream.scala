@@ -1,7 +1,8 @@
 package typings.node.fsMod
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeStreamMod.Readable
+import typings.node.nodeColonstreamMod.Readable
 import typings.node.nodeStrings.drain
 import typings.node.nodeStrings.error
 import typings.node.nodeStrings.finish
@@ -56,14 +57,7 @@ open class WriteStream () extends StObject {
     * @since v0.9.4
     */
   def close(): Unit = js.native
-  def close(
-    callback: js.Function1[
-      /* err */ js.UndefOr[
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
-      ], 
-      Unit
-    ]
-  ): Unit = js.native
+  def close(callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): Unit = js.native
   
   def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native

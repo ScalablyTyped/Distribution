@@ -10,8 +10,7 @@ sealed trait BlockedErrorCellValueSubType extends StObject
   * Represents types of #BLOCKED! errors.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 @JSGlobal("Excel.BlockedErrorCellValueSubType")
 @js.native
@@ -21,8 +20,7 @@ object BlockedErrorCellValueSubType extends StObject {
     * An error caused by privacy settings. Displays as error type #BLOCKED! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait dataTypePrivacySetting
@@ -33,8 +31,7 @@ object BlockedErrorCellValueSubType extends StObject {
     * An error caused by a service not supporting a linked data type. Displays as error type #BLOCKED! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait dataTypeRestrictedDomain
@@ -45,8 +42,7 @@ object BlockedErrorCellValueSubType extends StObject {
     * An error caused by an unsupported data type. Displays as error type #BLOCKED! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait dataTypeUnsupportedApp
@@ -57,8 +53,7 @@ object BlockedErrorCellValueSubType extends StObject {
     * An error caused by external links. Displays as error type #BLOCKED! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait externalLinksGeneric
@@ -69,8 +64,7 @@ object BlockedErrorCellValueSubType extends StObject {
     * An error caused by a license verification failure. Displays as error type #BLOCKED! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait noLicense
@@ -81,8 +75,7 @@ object BlockedErrorCellValueSubType extends StObject {
     * An error caused by disabled rich data links. Displays as error type #BLOCKED! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait richDataLinkDisabled
@@ -93,8 +86,7 @@ object BlockedErrorCellValueSubType extends StObject {
     * An error caused by sign in failure. Displays as error type #BLOCKED! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait signInError
@@ -105,8 +97,7 @@ object BlockedErrorCellValueSubType extends StObject {
     * An unknown type of error. Displays as error type #BLOCKED! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait unknown

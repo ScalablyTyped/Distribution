@@ -1,12 +1,15 @@
 package typings.rollup.mod
 
 import typings.rollup.rollupStrings.`no-treeshake`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<rollup.rollup.PartialNull<rollup.rollup.ModuleOptions>> */
 trait SourceDescription extends StObject {
+  
+  var assertions: js.UndefOr[(Record[String, String]) | Null] = js.undefined
   
   var ast: js.UndefOr[AcornNode] = js.undefined
   
@@ -28,6 +31,12 @@ object SourceDescription {
   }
   
   extension [Self <: SourceDescription](x: Self) {
+    
+    inline def setAssertions(value: Record[String, String]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
+    
+    inline def setAssertionsNull: Self = StObject.set(x, "assertions", null)
+    
+    inline def setAssertionsUndefined: Self = StObject.set(x, "assertions", js.undefined)
     
     inline def setAst(value: AcornNode): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     

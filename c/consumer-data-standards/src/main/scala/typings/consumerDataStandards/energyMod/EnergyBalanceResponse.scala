@@ -2,7 +2,6 @@ package typings.consumerDataStandards.energyMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.consumerDataStandards.anon.DictkBalance
-import typings.consumerDataStandards.anon.Self
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +12,13 @@ trait EnergyBalanceResponse
   
   var data: DictkBalance
   
-  var links: Self
+  var links: Links
   
-  var meta: StringDictionary[Any]
+  var meta: Meta
 }
 object EnergyBalanceResponse {
   
-  inline def apply(data: DictkBalance, links: Self, meta: StringDictionary[Any]): EnergyBalanceResponse = {
+  inline def apply(data: DictkBalance, links: Links, meta: Meta): EnergyBalanceResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnergyBalanceResponse]
   }
@@ -28,8 +27,8 @@ object EnergyBalanceResponse {
     
     inline def setData(value: DictkBalance): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setLinks(value: typings.consumerDataStandards.anon.Self): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: Links): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    inline def setMeta(value: StringDictionary[Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
   }
 }

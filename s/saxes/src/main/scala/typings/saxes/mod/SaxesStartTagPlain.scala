@@ -6,9 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<saxes.saxes.SaxesStartTag, 'name' | 'attributes'> */
-trait SaxesStartTagPlain
-  extends StObject
-     with StartTagForOptions[Any] {
+trait SaxesStartTagPlain extends StObject {
   
   var attributes: Record[String, SaxesAttributeNS | String]
   

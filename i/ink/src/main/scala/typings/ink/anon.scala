@@ -1,7 +1,8 @@
 package typings.ink
 
-import typings.ink.domMod.DOMElement
-import typings.ink.domMod.NodeNames
+import typings.ink.buildDomMod.DOMElement
+import typings.ink.buildDomMod.NodeNames
+import typings.ink.buildRenderNodeToOutputMod.OutputTransformer
 import typings.ink.inkStrings.`column-reverse`
 import typings.ink.inkStrings.`flex-end`
 import typings.ink.inkStrings.`flex-start`
@@ -25,33 +26,15 @@ import typings.ink.inkStrings.row
 import typings.ink.inkStrings.single
 import typings.ink.inkStrings.singleDouble
 import typings.ink.inkStrings.stretch
-import typings.ink.renderNodeToOutputMod.OutputTransformer
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.typeFest.literalUnionMod.LiteralUnion
+import typings.typeFest.sourceLiteralUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait `0` extends StObject {
-    
-    var nodeName: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-  }
-  object `0` {
-    
-    inline def apply(nodeName: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): `0` = {
-      val __obj = js.Dynamic.literal(nodeName = nodeName.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setNodeName(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
-    }
-  }
   
   trait ActiveFocusId extends StObject {
     

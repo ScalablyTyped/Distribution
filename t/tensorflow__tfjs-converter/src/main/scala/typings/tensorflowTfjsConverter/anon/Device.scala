@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Device extends StObject {
   
-  var attr: Shape
+  var attr: N
   
   var device: Unit
   
@@ -18,14 +18,14 @@ trait Device extends StObject {
 }
 object Device {
   
-  inline def apply(attr: Shape, device: Unit, input: Unit, name: String, op: String): Device = {
+  inline def apply(attr: N, device: Unit, input: Unit, name: String, op: String): Device = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }
   
   extension [Self <: Device](x: Self) {
     
-    inline def setAttr(value: Shape): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: N): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     inline def setDevice(value: Unit): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     

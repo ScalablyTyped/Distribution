@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.positionMod.PositionStickiness
+import typings.ckeditorCkeditor5Engine.srcModelPositionMod.PositionStickiness
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

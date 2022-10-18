@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.CompletionParams
-import typings.vscodeLanguageserverProtocol.protocolMod.CompletionRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.CompletionParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.CompletionRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashcompletion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object CompletionRequest {
   
   @JSImport("vscode-languageserver-protocol", "CompletionRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "CompletionRequest.method")
   @js.native
@@ -19,7 +19,7 @@ object CompletionRequest {
   
   @JSImport("vscode-languageserver-protocol", "CompletionRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     CompletionParams, 
     typings.vscodeLanguageserverTypes.mod.CompletionList | js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem] | Null, 
     js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem], 

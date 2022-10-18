@@ -60,9 +60,9 @@ object upgradeMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275mod")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@angular/common/upgrade", "UrlCodec")
+  /* note: abstract class */ @JSImport("@angular/common/upgrade", "UrlCodec")
   @js.native
-  abstract class UrlCodec () extends StObject {
+  open class UrlCodec () extends StObject {
     
     /**
       * Checks whether the two strings are equal

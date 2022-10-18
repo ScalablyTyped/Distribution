@@ -2,7 +2,7 @@ package typings.googleMaps.google.maps.journeySharing
 
 import typings.googleMaps.google.maps.Map
 import typings.googleMaps.google.maps.MapOptions
-import typings.googleMaps.google.maps.Marker
+import typings.googleMaps.google.maps.Marker_
 import typings.googleMaps.google.maps.Polyline
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -62,7 +62,7 @@ trait JourneySharingMapView extends StObject {
   /**
     * Returns the destination markers, if any.
     */
-  var destinationMarkers: js.Array[Marker]
+  var destinationMarkers: js.Array[Marker_]
   
   /**
     * This Field is read-only. The DOM element backing the view.
@@ -109,7 +109,7 @@ trait JourneySharingMapView extends StObject {
   /**
     * Returns the origin markers, if any.
     */
-  var originMarkers: js.Array[Marker]
+  var originMarkers: js.Array[Marker_]
   
   /**
     * Configures options for a ping location marker. Invoked whenever a new
@@ -147,7 +147,7 @@ trait JourneySharingMapView extends StObject {
   /**
     * Returns the successful task markers, if any.
     */
-  var successfulTaskMarkers: js.Array[Marker]
+  var successfulTaskMarkers: js.Array[Marker_]
   
   /**
     * Configures options for a taken route polyline. Invoked whenever a new
@@ -191,7 +191,7 @@ trait JourneySharingMapView extends StObject {
   /**
     * Returns the task outcome markers, if any.
     */
-  var taskOutcomeMarkers: js.Array[Marker]
+  var taskOutcomeMarkers: js.Array[Marker_]
   
   /**
     * Configures options for an unsuccessful task location marker. Invoked
@@ -213,7 +213,7 @@ trait JourneySharingMapView extends StObject {
   /**
     * Returns the unsuccessful task markers, if any.
     */
-  var unsuccessfulTaskMarkers: js.Array[Marker]
+  var unsuccessfulTaskMarkers: js.Array[Marker_]
   
   /**
     * Configures options for a vehicle location marker. Invoked whenever a new
@@ -234,7 +234,7 @@ trait JourneySharingMapView extends StObject {
   /**
     * Returns the vehicle markers, if any.
     */
-  var vehicleMarkers: js.Array[Marker]
+  var vehicleMarkers: js.Array[Marker_]
   
   /**
     * Configures options for a waypoint location marker. Invoked whenever a new
@@ -256,7 +256,7 @@ trait JourneySharingMapView extends StObject {
   /**
     * Returns the waypoint markers, if any.
     */
-  var waypointMarkers: js.Array[Marker]
+  var waypointMarkers: js.Array[Marker_]
 }
 object JourneySharingMapView {
   
@@ -265,27 +265,27 @@ object JourneySharingMapView {
     anticipatedRoutePolylines: js.Array[Polyline],
     automaticViewportMode: AutomaticViewportMode,
     destinationMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]),
-    destinationMarkers: js.Array[Marker],
+    destinationMarkers: js.Array[Marker_],
     element: Element,
     enableTraffic: Boolean,
     locationProvider: LocationProvider,
     map: Map,
     mapOptions: MapOptions,
     originMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]),
-    originMarkers: js.Array[Marker],
+    originMarkers: js.Array[Marker_],
     pingMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]),
     successfulTaskMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]),
-    successfulTaskMarkers: js.Array[Marker],
+    successfulTaskMarkers: js.Array[Marker_],
     takenRoutePolylineSetup: PolylineSetupOptions | (js.Function1[/* a */ DefaultPolylineSetupOptions, PolylineSetupOptions]),
     takenRoutePolylines: js.Array[Polyline],
     taskOutcomeMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]),
-    taskOutcomeMarkers: js.Array[Marker],
+    taskOutcomeMarkers: js.Array[Marker_],
     unsuccessfulTaskMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]),
-    unsuccessfulTaskMarkers: js.Array[Marker],
+    unsuccessfulTaskMarkers: js.Array[Marker_],
     vehicleMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]),
-    vehicleMarkers: js.Array[Marker],
+    vehicleMarkers: js.Array[Marker_],
     waypointMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]),
-    waypointMarkers: js.Array[Marker]
+    waypointMarkers: js.Array[Marker_]
   ): JourneySharingMapView = {
     val __obj = js.Dynamic.literal(anticipatedRoutePolylineSetup = anticipatedRoutePolylineSetup.asInstanceOf[js.Any], anticipatedRoutePolylines = anticipatedRoutePolylines.asInstanceOf[js.Any], automaticViewportMode = automaticViewportMode.asInstanceOf[js.Any], destinationMarkerSetup = destinationMarkerSetup.asInstanceOf[js.Any], destinationMarkers = destinationMarkers.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], enableTraffic = enableTraffic.asInstanceOf[js.Any], locationProvider = locationProvider.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mapOptions = mapOptions.asInstanceOf[js.Any], originMarkerSetup = originMarkerSetup.asInstanceOf[js.Any], originMarkers = originMarkers.asInstanceOf[js.Any], pingMarkerSetup = pingMarkerSetup.asInstanceOf[js.Any], successfulTaskMarkerSetup = successfulTaskMarkerSetup.asInstanceOf[js.Any], successfulTaskMarkers = successfulTaskMarkers.asInstanceOf[js.Any], takenRoutePolylineSetup = takenRoutePolylineSetup.asInstanceOf[js.Any], takenRoutePolylines = takenRoutePolylines.asInstanceOf[js.Any], taskOutcomeMarkerSetup = taskOutcomeMarkerSetup.asInstanceOf[js.Any], taskOutcomeMarkers = taskOutcomeMarkers.asInstanceOf[js.Any], unsuccessfulTaskMarkerSetup = unsuccessfulTaskMarkerSetup.asInstanceOf[js.Any], unsuccessfulTaskMarkers = unsuccessfulTaskMarkers.asInstanceOf[js.Any], vehicleMarkerSetup = vehicleMarkerSetup.asInstanceOf[js.Any], vehicleMarkers = vehicleMarkers.asInstanceOf[js.Any], waypointMarkerSetup = waypointMarkerSetup.asInstanceOf[js.Any], waypointMarkers = waypointMarkers.asInstanceOf[js.Any])
     __obj.asInstanceOf[JourneySharingMapView]
@@ -309,9 +309,9 @@ object JourneySharingMapView {
     
     inline def setDestinationMarkerSetupFunction1(value: /* a */ DefaultMarkerSetupOptions => MarkerSetupOptions): Self = StObject.set(x, "destinationMarkerSetup", js.Any.fromFunction1(value))
     
-    inline def setDestinationMarkers(value: js.Array[Marker]): Self = StObject.set(x, "destinationMarkers", value.asInstanceOf[js.Any])
+    inline def setDestinationMarkers(value: js.Array[Marker_]): Self = StObject.set(x, "destinationMarkers", value.asInstanceOf[js.Any])
     
-    inline def setDestinationMarkersVarargs(value: Marker*): Self = StObject.set(x, "destinationMarkers", js.Array(value*))
+    inline def setDestinationMarkersVarargs(value: Marker_ *): Self = StObject.set(x, "destinationMarkers", js.Array(value*))
     
     inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
@@ -327,9 +327,9 @@ object JourneySharingMapView {
     
     inline def setOriginMarkerSetupFunction1(value: /* a */ DefaultMarkerSetupOptions => MarkerSetupOptions): Self = StObject.set(x, "originMarkerSetup", js.Any.fromFunction1(value))
     
-    inline def setOriginMarkers(value: js.Array[Marker]): Self = StObject.set(x, "originMarkers", value.asInstanceOf[js.Any])
+    inline def setOriginMarkers(value: js.Array[Marker_]): Self = StObject.set(x, "originMarkers", value.asInstanceOf[js.Any])
     
-    inline def setOriginMarkersVarargs(value: Marker*): Self = StObject.set(x, "originMarkers", js.Array(value*))
+    inline def setOriginMarkersVarargs(value: Marker_ *): Self = StObject.set(x, "originMarkers", js.Array(value*))
     
     inline def setPingMarkerSetup(value: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions])): Self = StObject.set(x, "pingMarkerSetup", value.asInstanceOf[js.Any])
     
@@ -339,9 +339,9 @@ object JourneySharingMapView {
     
     inline def setSuccessfulTaskMarkerSetupFunction1(value: /* a */ DefaultMarkerSetupOptions => MarkerSetupOptions): Self = StObject.set(x, "successfulTaskMarkerSetup", js.Any.fromFunction1(value))
     
-    inline def setSuccessfulTaskMarkers(value: js.Array[Marker]): Self = StObject.set(x, "successfulTaskMarkers", value.asInstanceOf[js.Any])
+    inline def setSuccessfulTaskMarkers(value: js.Array[Marker_]): Self = StObject.set(x, "successfulTaskMarkers", value.asInstanceOf[js.Any])
     
-    inline def setSuccessfulTaskMarkersVarargs(value: Marker*): Self = StObject.set(x, "successfulTaskMarkers", js.Array(value*))
+    inline def setSuccessfulTaskMarkersVarargs(value: Marker_ *): Self = StObject.set(x, "successfulTaskMarkers", js.Array(value*))
     
     inline def setTakenRoutePolylineSetup(
       value: PolylineSetupOptions | (js.Function1[/* a */ DefaultPolylineSetupOptions, PolylineSetupOptions])
@@ -357,32 +357,32 @@ object JourneySharingMapView {
     
     inline def setTaskOutcomeMarkerSetupFunction1(value: /* a */ DefaultMarkerSetupOptions => MarkerSetupOptions): Self = StObject.set(x, "taskOutcomeMarkerSetup", js.Any.fromFunction1(value))
     
-    inline def setTaskOutcomeMarkers(value: js.Array[Marker]): Self = StObject.set(x, "taskOutcomeMarkers", value.asInstanceOf[js.Any])
+    inline def setTaskOutcomeMarkers(value: js.Array[Marker_]): Self = StObject.set(x, "taskOutcomeMarkers", value.asInstanceOf[js.Any])
     
-    inline def setTaskOutcomeMarkersVarargs(value: Marker*): Self = StObject.set(x, "taskOutcomeMarkers", js.Array(value*))
+    inline def setTaskOutcomeMarkersVarargs(value: Marker_ *): Self = StObject.set(x, "taskOutcomeMarkers", js.Array(value*))
     
     inline def setUnsuccessfulTaskMarkerSetup(value: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions])): Self = StObject.set(x, "unsuccessfulTaskMarkerSetup", value.asInstanceOf[js.Any])
     
     inline def setUnsuccessfulTaskMarkerSetupFunction1(value: /* a */ DefaultMarkerSetupOptions => MarkerSetupOptions): Self = StObject.set(x, "unsuccessfulTaskMarkerSetup", js.Any.fromFunction1(value))
     
-    inline def setUnsuccessfulTaskMarkers(value: js.Array[Marker]): Self = StObject.set(x, "unsuccessfulTaskMarkers", value.asInstanceOf[js.Any])
+    inline def setUnsuccessfulTaskMarkers(value: js.Array[Marker_]): Self = StObject.set(x, "unsuccessfulTaskMarkers", value.asInstanceOf[js.Any])
     
-    inline def setUnsuccessfulTaskMarkersVarargs(value: Marker*): Self = StObject.set(x, "unsuccessfulTaskMarkers", js.Array(value*))
+    inline def setUnsuccessfulTaskMarkersVarargs(value: Marker_ *): Self = StObject.set(x, "unsuccessfulTaskMarkers", js.Array(value*))
     
     inline def setVehicleMarkerSetup(value: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions])): Self = StObject.set(x, "vehicleMarkerSetup", value.asInstanceOf[js.Any])
     
     inline def setVehicleMarkerSetupFunction1(value: /* a */ DefaultMarkerSetupOptions => MarkerSetupOptions): Self = StObject.set(x, "vehicleMarkerSetup", js.Any.fromFunction1(value))
     
-    inline def setVehicleMarkers(value: js.Array[Marker]): Self = StObject.set(x, "vehicleMarkers", value.asInstanceOf[js.Any])
+    inline def setVehicleMarkers(value: js.Array[Marker_]): Self = StObject.set(x, "vehicleMarkers", value.asInstanceOf[js.Any])
     
-    inline def setVehicleMarkersVarargs(value: Marker*): Self = StObject.set(x, "vehicleMarkers", js.Array(value*))
+    inline def setVehicleMarkersVarargs(value: Marker_ *): Self = StObject.set(x, "vehicleMarkers", js.Array(value*))
     
     inline def setWaypointMarkerSetup(value: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions])): Self = StObject.set(x, "waypointMarkerSetup", value.asInstanceOf[js.Any])
     
     inline def setWaypointMarkerSetupFunction1(value: /* a */ DefaultMarkerSetupOptions => MarkerSetupOptions): Self = StObject.set(x, "waypointMarkerSetup", js.Any.fromFunction1(value))
     
-    inline def setWaypointMarkers(value: js.Array[Marker]): Self = StObject.set(x, "waypointMarkers", value.asInstanceOf[js.Any])
+    inline def setWaypointMarkers(value: js.Array[Marker_]): Self = StObject.set(x, "waypointMarkers", value.asInstanceOf[js.Any])
     
-    inline def setWaypointMarkersVarargs(value: Marker*): Self = StObject.set(x, "waypointMarkers", js.Array(value*))
+    inline def setWaypointMarkersVarargs(value: Marker_ *): Self = StObject.set(x, "waypointMarkers", js.Array(value*))
   }
 }

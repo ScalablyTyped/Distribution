@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "EngineInstrumentation")
 @js.native
 open class EngineInstrumentation protected ()
-  extends typings.babylonjs.legacyMod.EngineInstrumentation {
+  extends typings.babylonjs.legacyLegacyMod.EngineInstrumentation {
   /**
     * Instantiates a new engine instrumentation.
     * This class can be used to get instrumentation data from a Babylon engine
@@ -17,5 +17,5 @@ open class EngineInstrumentation protected ()
   def this(/**
     * Define the instrumented engine.
     */
-  engine: typings.babylonjs.engineMod.Engine) = this()
+  engine: typings.babylonjs.enginesEngineMod.Engine) = this()
 }

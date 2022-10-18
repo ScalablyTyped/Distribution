@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the ManipulationUpdated event. */
-@JSGlobal("Windows.UI.Input.ManipulationUpdatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.Input.ManipulationUpdatedEventArgs")
 @js.native
-abstract class ManipulationUpdatedEventArgs ()
+open class ManipulationUpdatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.ManipulationUpdatedEventArgs {
   

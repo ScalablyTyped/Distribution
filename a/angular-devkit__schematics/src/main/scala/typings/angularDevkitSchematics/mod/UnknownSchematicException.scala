@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "UnknownSchematicException")
 @js.native
 open class UnknownSchematicException protected ()
-  extends typings.angularDevkitSchematics.engineMod.UnknownSchematicException {
+  extends typings.angularDevkitSchematics.srcEngineMod.UnknownSchematicException {
   def this(name: String, collection: CollectionDescription) = this()
 }

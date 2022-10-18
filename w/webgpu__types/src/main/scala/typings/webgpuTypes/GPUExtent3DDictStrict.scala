@@ -11,7 +11,7 @@ trait GPUExtent3DDictStrict
   extends StObject
      with GPUExtent3DDict {
   
-  /** @deprecated use depthOrArrayLayers instead */
+  /** @deprecated The correct name is `depthOrArrayLayers`. */
   var depth: Unit
 }
 object GPUExtent3DDictStrict {

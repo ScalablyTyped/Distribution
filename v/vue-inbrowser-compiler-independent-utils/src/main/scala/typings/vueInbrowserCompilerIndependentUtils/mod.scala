@@ -1,6 +1,6 @@
 package typings.vueInbrowserCompilerIndependentUtils
 
-import typings.vueInbrowserCompilerIndependentUtils.typesMod.ComponentDoc
+import typings.vueInbrowserCompilerIndependentUtils.libTypesMod.ComponentDoc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

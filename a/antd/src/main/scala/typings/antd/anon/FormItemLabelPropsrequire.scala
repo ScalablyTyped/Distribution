@@ -1,8 +1,8 @@
 package typings.antd.anon
 
-import typings.antd.formInterfaceMod.FormLabelAlign
-import typings.antd.formItemLabelMod.LabelTooltipType
-import typings.antd.gridColMod.ColProps
+import typings.antd.libFormFormItemLabelMod.LabelTooltipType
+import typings.antd.libFormInterfaceMod.FormLabelAlign
+import typings.antd.libGridColMod.ColProps
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +25,7 @@ trait FormItemLabelPropsrequire extends StObject {
   
   var required: js.UndefOr[Boolean] = js.undefined
   
-  var requiredMark: js.UndefOr[typings.antd.formFormMod.RequiredMark] = js.undefined
+  var requiredMark: js.UndefOr[typings.antd.libFormFormMod.RequiredMark] = js.undefined
   
   var tooltip: js.UndefOr[LabelTooltipType] = js.undefined
 }
@@ -62,7 +62,7 @@ object FormItemLabelPropsrequire {
     
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    inline def setRequiredMark(value: typings.antd.formFormMod.RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
+    inline def setRequiredMark(value: typings.antd.libFormFormMod.RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
     
     inline def setRequiredMarkUndefined: Self = StObject.set(x, "requiredMark", js.undefined)
     

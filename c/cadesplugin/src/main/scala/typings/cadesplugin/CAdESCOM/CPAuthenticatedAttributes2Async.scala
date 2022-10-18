@@ -1,46 +1,40 @@
 package typings.cadesplugin.CAdESCOM
 
-import org.scalablytyped.runtime.TopLevel
-import typings.cadesplugin.CADESCommon.PromisifiedFunction
-import typings.cadesplugin.CADESCommon.Unpacked
-import typings.cadesplugin.CADESCommon._Unpacked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAdESCOM.CPAuthenticatedAttributes2> */
-trait CPAuthenticatedAttributes2Async
-  extends StObject
-     with _Unpacked[Any] {
+trait CPAuthenticatedAttributes2Async extends StObject {
   
-  val Add: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function1[/* attribute */ CPAttribute, Unit]]]) | (PromisifiedFunction[js.Function1[/* attribute */ CPAttribute, Unit]])
+  val Add: /* import warning: importer.ImportType#apply Failed type conversion: (attribute : cadesplugin.CAdESCOM.CPAttribute): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(attribute : cadesplugin.CAdESCOM.CPAttribute): void> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(attribute : cadesplugin.CAdESCOM.CPAttribute): void>> */ js.Any
   
-  val Clear: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[Unit]]]) | PromisifiedFunction[js.Function0[Unit]]
+  val Clear: /* import warning: importer.ImportType#apply Failed type conversion: (): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): void> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): void>> */ js.Any
   
-  val Count: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+  val Count: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
   
-  val Item: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function1[/* index */ Double, CPAttribute]]]) | (PromisifiedFunction[js.Function1[/* index */ Double, CPAttribute]])
+  val Item: /* import warning: importer.ImportType#apply Failed type conversion: (index : number): cadesplugin.CAdESCOM.CPAttribute extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(index : number): cadesplugin.CAdESCOM.CPAttribute> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(index : number): cadesplugin.CAdESCOM.CPAttribute>> */ js.Any
   
-  val Remove: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function1[/* index */ Double, Unit]]]) | (PromisifiedFunction[js.Function1[/* index */ Double, Unit]])
+  val Remove: /* import warning: importer.ImportType#apply Failed type conversion: (index : number): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(index : number): void> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(index : number): void>> */ js.Any
 }
 object CPAuthenticatedAttributes2Async {
   
   inline def apply(
-    Add: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function1[/* attribute */ CPAttribute, Unit]]]) | (PromisifiedFunction[js.Function1[/* attribute */ CPAttribute, Unit]]),
-    Clear: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[Unit]]]) | PromisifiedFunction[js.Function0[Unit]],
-    Count: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double],
-    Item: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function1[/* index */ Double, CPAttribute]]]) | (PromisifiedFunction[js.Function1[/* index */ Double, CPAttribute]]),
-    Remove: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function1[/* index */ Double, Unit]]]) | (PromisifiedFunction[js.Function1[/* index */ Double, Unit]])
+    Add: /* import warning: importer.ImportType#apply Failed type conversion: (attribute : cadesplugin.CAdESCOM.CPAttribute): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(attribute : cadesplugin.CAdESCOM.CPAttribute): void> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(attribute : cadesplugin.CAdESCOM.CPAttribute): void>> */ js.Any,
+    Clear: /* import warning: importer.ImportType#apply Failed type conversion: (): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): void> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(): void>> */ js.Any,
+    Count: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any,
+    Item: /* import warning: importer.ImportType#apply Failed type conversion: (index : number): cadesplugin.CAdESCOM.CPAttribute extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(index : number): cadesplugin.CAdESCOM.CPAttribute> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(index : number): cadesplugin.CAdESCOM.CPAttribute>> */ js.Any,
+    Remove: /* import warning: importer.ImportType#apply Failed type conversion: (index : number): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(index : number): void> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(index : number): void>> */ js.Any
   ): CPAuthenticatedAttributes2Async = {
     val __obj = js.Dynamic.literal(Add = Add.asInstanceOf[js.Any], Clear = Clear.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any], Remove = Remove.asInstanceOf[js.Any])
     __obj.asInstanceOf[CPAuthenticatedAttributes2Async]
@@ -49,60 +43,28 @@ object CPAuthenticatedAttributes2Async {
   extension [Self <: CPAuthenticatedAttributes2Async](x: Self) {
     
     inline def setAdd(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[js.Function1[/* attribute */ CPAttribute, Unit]]]) | (PromisifiedFunction[js.Function1[/* attribute */ CPAttribute, Unit]])
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (attribute : cadesplugin.CAdESCOM.CPAttribute): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(attribute : cadesplugin.CAdESCOM.CPAttribute): void> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(attribute : cadesplugin.CAdESCOM.CPAttribute): void>> */ js.Any
     ): Self = StObject.set(x, "Add", value.asInstanceOf[js.Any])
     
-    inline def setAddFunction1(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any]) | (/* attribute */ CPAttribute) => js.Promise[Unpacked[Any]] | Unit
-    ): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
-    
     inline def setClear(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[js.Function0[Unit]]]) | PromisifiedFunction[js.Function0[Unit]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): void> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(): void>> */ js.Any
     ): Self = StObject.set(x, "Clear", value.asInstanceOf[js.Any])
     
-    inline def setClearFunction0(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
-    
-    inline def setClearFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Clear", js.Any.fromFunction1(value))
-    
     inline def setCount(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
     ): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setCountFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Count", js.Any.fromFunction1(value))
-    
     inline def setItem(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[js.Function1[/* index */ Double, CPAttribute]]]) | (PromisifiedFunction[js.Function1[/* index */ Double, CPAttribute]])
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (index : number): cadesplugin.CAdESCOM.CPAttribute extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(index : number): cadesplugin.CAdESCOM.CPAttribute> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(index : number): cadesplugin.CAdESCOM.CPAttribute>> */ js.Any
     ): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    inline def setItemFunction1(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any]) | (/* index */ Double) => CPAttribute | js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
-    
     inline def setRemove(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[js.Function1[/* index */ Double, Unit]]]) | (PromisifiedFunction[js.Function1[/* index */ Double, Unit]])
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (index : number): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(index : number): void> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(index : number): void>> */ js.Any
     ): Self = StObject.set(x, "Remove", value.asInstanceOf[js.Any])
-    
-    inline def setRemoveFunction1(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any]) | (/* index */ Double) => js.Promise[Unpacked[Any]] | Unit
-    ): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

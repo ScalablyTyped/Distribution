@@ -7,10 +7,10 @@ import typings.nivoAnnotations.anon.Data
 import typings.nivoAnnotations.anon.GetDimensions
 import typings.nivoAnnotations.anon.Height
 import typings.nivoAnnotations.anon.NoteTextOffset
-import typings.nivoAnnotations.typesMod.AnnotationInstructions
-import typings.nivoAnnotations.typesMod.AnnotationSpec
-import typings.nivoAnnotations.typesMod.BoundAnnotation
-import typings.nivoAnnotations.typesMod.Note
+import typings.nivoAnnotations.distTypesTypesMod.AnnotationInstructions
+import typings.nivoAnnotations.distTypesTypesMod.AnnotationSpec
+import typings.nivoAnnotations.distTypesTypesMod.BoundAnnotation
+import typings.nivoAnnotations.distTypesTypesMod.Note
 import typings.react.mod.global.JSX.Element
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject

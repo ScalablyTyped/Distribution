@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("watson-developer-cloud/text-to-speech/v1-generated", JSImport.Namespace)
 @js.native
-class ^ protected () extends TextToSpeechV1 {
+open class ^ protected () extends TextToSpeechV1 {
   /**
     * Construct a TextToSpeechV1 object.
     *

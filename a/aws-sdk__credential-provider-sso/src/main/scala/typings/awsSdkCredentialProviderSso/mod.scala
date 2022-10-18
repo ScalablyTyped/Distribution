@@ -1,9 +1,9 @@
 package typings.awsSdkCredentialProviderSso
 
 import typings.awsSdkCredentialProviderSso.anon.FromSSOInitPartialSsoCred
-import typings.awsSdkCredentialProviderSso.typesMod.SsoProfile
-import typings.awsSdkTypes.credentialsMod.CredentialProvider
-import typings.awsSdkTypes.profileMod.Profile
+import typings.awsSdkCredentialProviderSso.distTypesTypesMod.SsoProfile
+import typings.awsSdkTypes.distTypesCredentialsMod.CredentialProvider
+import typings.awsSdkTypes.distTypesProfileMod.Profile
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -8,9 +8,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/platform-browser", "DomSanitizer")
+/* note: abstract class */ @JSImport("@angular/platform-browser", "DomSanitizer")
 @js.native
-abstract class DomSanitizer () extends Sanitizer {
+open class DomSanitizer () extends Sanitizer {
   
   /**
     * Bypass security and trust the given value to be safe HTML. Only use this when the bound HTML

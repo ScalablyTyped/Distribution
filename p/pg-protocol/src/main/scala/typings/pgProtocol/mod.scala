@@ -1,13 +1,13 @@
 package typings.pgProtocol
 
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
-import typings.pgProtocol.messagesMod.MessageName
-import typings.pgProtocol.parserMod.MessageCallback
-import typings.pgProtocol.serializerMod.BindOpts
-import typings.pgProtocol.serializerMod.ExecOpts
-import typings.pgProtocol.serializerMod.ParseOpts
-import typings.pgProtocol.serializerMod.PortalOpts
-import typings.std.ReadableStream
+import typings.pgProtocol.distMessagesMod.MessageName
+import typings.pgProtocol.distParserMod.MessageCallback
+import typings.pgProtocol.distSerializerMod.BindOpts
+import typings.pgProtocol.distSerializerMod.ExecOpts
+import typings.pgProtocol.distSerializerMod.ParseOpts
+import typings.pgProtocol.distSerializerMod.PortalOpts
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,11 +22,11 @@ object mod {
   @JSImport("pg-protocol", "DatabaseError")
   @js.native
   open class DatabaseError protected ()
-    extends typings.pgProtocol.messagesMod.DatabaseError {
+    extends typings.pgProtocol.distMessagesMod.DatabaseError {
     def this(message: String, length: Double, name: MessageName) = this()
   }
   
-  inline def parse(stream: ReadableStream[Any], callback: MessageCallback): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def parse(stream: ReadableStream, callback: MessageCallback): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   object serialize {
     

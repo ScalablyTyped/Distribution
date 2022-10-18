@@ -1,13 +1,13 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.CustomWidget
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.ConditionalVisibilitySettings")
 @js.native
 open class ConditionalVisibilitySettings protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.ConditionalVisibilitySettings {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.ConditionalVisibilitySettings {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,7 +37,7 @@ object ConditionalVisibilitySettings {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -45,7 +45,7 @@ object ConditionalVisibilitySettings {
     * of the parent ConditionallyVisibleWidget element passed as argument.
     */
   /* static member */
-  inline def createInConditionallyVisibleWidgetUnderConditionalVisibilitySettings(container: typings.mendixmodelsdk.pagesMod.pages.ConditionallyVisibleWidget): typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionallyVisibleWidgetUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings]
+  inline def createInConditionallyVisibleWidgetUnderConditionalVisibilitySettings(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionallyVisibleWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionallyVisibleWidgetUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -53,7 +53,7 @@ object ConditionalVisibilitySettings {
     * of the parent ControlBarButton element passed as argument.
     */
   /* static member */
-  inline def createInControlBarButtonUnderConditionalVisibilitySettings(container: typings.mendixmodelsdk.pagesMod.pages.ControlBarButton): typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings]
+  inline def createInControlBarButtonUnderConditionalVisibilitySettings(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ControlBarButton): typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -64,7 +64,7 @@ object ConditionalVisibilitySettings {
     *  8.1.0 and higher
     */
   /* static member */
-  inline def createInCustomWidgetUnderConditionalVisibilitySettings(container: CustomWidget): typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings]
+  inline def createInCustomWidgetUnderConditionalVisibilitySettings(container: CustomWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -72,7 +72,7 @@ object ConditionalVisibilitySettings {
     * of the parent LayoutGridRow element passed as argument.
     */
   /* static member */
-  inline def createInLayoutGridRowUnderConditionalVisibilitySettings(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridRow): typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridRowUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings]
+  inline def createInLayoutGridRowUnderConditionalVisibilitySettings(container: typings.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridRow): typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridRowUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -80,7 +80,7 @@ object ConditionalVisibilitySettings {
     * of the parent NavigationListItem element passed as argument.
     */
   /* static member */
-  inline def createInNavigationListItemUnderConditionalVisibilitySettings(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings]
+  inline def createInNavigationListItemUnderConditionalVisibilitySettings(container: typings.mendixmodelsdk.srcGenPagesMod.pages.NavigationListItem): typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -88,7 +88,7 @@ object ConditionalVisibilitySettings {
     * of the parent TabPage element passed as argument.
     */
   /* static member */
-  inline def createInTabPageUnderConditionalVisibilitySettings(container: typings.mendixmodelsdk.pagesMod.pages.TabPage): typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings]
+  inline def createInTabPageUnderConditionalVisibilitySettings(container: typings.mendixmodelsdk.srcGenPagesMod.pages.TabPage): typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -96,7 +96,7 @@ object ConditionalVisibilitySettings {
     * of the parent TableRow element passed as argument.
     */
   /* static member */
-  inline def createInTableRowUnderConditionalVisibilitySettings(container: typings.mendixmodelsdk.pagesMod.pages.TableRow): typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableRowUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings]
+  inline def createInTableRowUnderConditionalVisibilitySettings(container: typings.mendixmodelsdk.srcGenPagesMod.pages.TableRow): typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableRowUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ConditionalVisibilitySettings.structureTypeName")

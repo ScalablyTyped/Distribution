@@ -129,7 +129,7 @@ trait FormProps[T] extends StObject {
   
   /** Used to change the default `form` tag into a different HTML tag */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactJsonschemaForm.reactJsonschemaFormStrings.a, typings.reactJsonschemaForm.reactJsonschemaFormStrings.abbr, typings.reactJsonschemaForm.reactJsonschemaFormStrings.address */ Any
   ] = js.undefined
   
   /** The value that will be passed to `target` HTML attribute of form  */
@@ -288,7 +288,9 @@ object FormProps {
     
     inline def setShowErrorListUndefined: Self = StObject.set(x, "showErrorList", js.undefined)
     
-    inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactJsonschemaForm.reactJsonschemaFormStrings.a, typings.reactJsonschemaForm.reactJsonschemaFormStrings.abbr, typings.reactJsonschemaForm.reactJsonschemaFormStrings.address */ Any
+    ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     

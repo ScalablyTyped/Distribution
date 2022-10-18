@@ -31,7 +31,7 @@ object Plane {
     * @param array the array to create a plane from
     * @returns a new Plane from the given array.
     */
-  inline def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathPlaneMod.Plane = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathPlaneMod.Plane]
+  inline def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathsMathDotplaneMod.Plane = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotplaneMod.Plane]
   
   /**
     * Creates a plane from three points
@@ -41,10 +41,10 @@ object Plane {
     * @returns a new Plane defined by the three given points.
     */
   inline def FromPoints(
-    point1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    point2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    point3: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
-  ): typings.babylonjs.mathPlaneMod.Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("FromPoints")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any], point3.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPlaneMod.Plane]
+    point1: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    point2: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    point3: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3]
+  ): typings.babylonjs.mathsMathDotplaneMod.Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("FromPoints")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any], point3.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotplaneMod.Plane]
   
   /**
     * Creates a plane from an origin point and a normal
@@ -54,9 +54,9 @@ object Plane {
     * Note : the vector "normal" is updated because normalized.
     */
   inline def FromPositionAndNormal(
-    origin: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    normal: typings.babylonjs.mathVectorMod.Vector3
-  ): typings.babylonjs.mathPlaneMod.Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("FromPositionAndNormal")(origin.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPlaneMod.Plane]
+    origin: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    normal: typings.babylonjs.mathsMathDotvectorMod.Vector3
+  ): typings.babylonjs.mathsMathDotplaneMod.Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("FromPositionAndNormal")(origin.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotplaneMod.Plane]
   
   /**
     * Calculates the distance from a plane and a point
@@ -66,9 +66,9 @@ object Plane {
     * @returns the signed distance between the plane defined by the normal vector at the "origin"" point and the given other point.
     */
   inline def SignedDistanceToPlaneFromPositionAndNormal(
-    origin: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    normal: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
-    point: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
+    origin: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    normal: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    point: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3]
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("SignedDistanceToPlaneFromPositionAndNormal")(origin.asInstanceOf[js.Any], normal.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("babylonjs/index", "Plane._TmpMatrix")

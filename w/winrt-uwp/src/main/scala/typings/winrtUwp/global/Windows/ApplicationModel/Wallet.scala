@@ -37,16 +37,16 @@ object Wallet {
     }
     
     /** Defines a set of asynchronous actions and operations that manage the wallet items in the system wallet database. These can be used to read the existing items, or to add and remove items. */
-    @JSGlobal("Windows.ApplicationModel.Wallet.System.WalletItemSystemStore")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Wallet.System.WalletItemSystemStore")
     @js.native
-    abstract class WalletItemSystemStore ()
+    open class WalletItemSystemStore ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Wallet.System.WalletItemSystemStore
     
     /** Provides a static method to get an instance of the system wallet store for this app. */
-    @JSGlobal("Windows.ApplicationModel.Wallet.System.WalletManagerSystem")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Wallet.System.WalletManagerSystem")
     @js.native
-    abstract class WalletManagerSystem ()
+    open class WalletManagerSystem ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Wallet.System.WalletManagerSystem
     object WalletManagerSystem {
@@ -379,16 +379,16 @@ object Wallet {
   }
   
   /** Defines a set of asynchronous actions and operations that manage the wallet items in the wallet database. These can be used to read the existing items, or to add and remove items. */
-  @JSGlobal("Windows.ApplicationModel.Wallet.WalletItemStore")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Wallet.WalletItemStore")
   @js.native
-  abstract class WalletItemStore ()
+  open class WalletItemStore ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletItemStore
   
   /** Provides a static method to get an instance of the default wallet store for this app. */
-  @JSGlobal("Windows.ApplicationModel.Wallet.WalletManager")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Wallet.WalletManager")
   @js.native
-  abstract class WalletManager ()
+  open class WalletManager ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletManager
   object WalletManager {

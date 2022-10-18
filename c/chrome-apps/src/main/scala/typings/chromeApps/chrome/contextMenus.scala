@@ -17,23 +17,9 @@ import typings.chromeApps.chromeAppsStrings.RADIO
 import typings.chromeApps.chromeAppsStrings.SELECTION
 import typings.chromeApps.chromeAppsStrings.SEPARATOR
 import typings.chromeApps.chromeAppsStrings.VIDEO
-import typings.chromeApps.chromeAppsStrings.all__
 import typings.chromeApps.chromeAppsStrings.audio_
-import typings.chromeApps.chromeAppsStrings.browser_action_
-import typings.chromeApps.chromeAppsStrings.checkbox_
-import typings.chromeApps.chromeAppsStrings.editable_
-import typings.chromeApps.chromeAppsStrings.frame_
 import typings.chromeApps.chromeAppsStrings.image_
-import typings.chromeApps.chromeAppsStrings.launcher_
-import typings.chromeApps.chromeAppsStrings.link_
-import typings.chromeApps.chromeAppsStrings.normal_
-import typings.chromeApps.chromeAppsStrings.page_
-import typings.chromeApps.chromeAppsStrings.page_action_
-import typings.chromeApps.chromeAppsStrings.radio_
-import typings.chromeApps.chromeAppsStrings.selection_
-import typings.chromeApps.chromeAppsStrings.separator_
 import typings.chromeApps.chromeAppsStrings.video_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,10 +68,7 @@ object contextMenus {
           ToStringLiteral[
             ALL, 
             /* keyof chrome-apps.anon.ALL */ typings.chromeApps.chromeAppsStrings.ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
-            Exclude[
-              /* keyof chrome-apps.anon.ALL */ typings.chromeApps.chromeAppsStrings.ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
-              browser_action_ | selection_ | video_ | launcher_ | image_ | editable_ | page_action_ | page_ | audio_ | frame_ | all__ | link_
-            ]
+            /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'} extends keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'} ? std.Exclude<keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'}, 'browser_action' | 'selection' | 'video' | 'launcher' | 'image' | 'editable' | 'page_action' | 'page' | 'audio' | 'frame' | 'all' | 'link'> : never */ js.Any
           ]
         ]
       ] = js.undefined
@@ -148,10 +131,7 @@ object contextMenus {
         ToStringLiteral[
           CHECKBOX, 
           /* keyof chrome-apps.anon.CHECKBOX */ NORMAL | typings.chromeApps.chromeAppsStrings.CHECKBOX | RADIO | SEPARATOR, 
-          Exclude[
-            /* keyof chrome-apps.anon.CHECKBOX */ NORMAL | typings.chromeApps.chromeAppsStrings.CHECKBOX | RADIO | SEPARATOR, 
-            normal_ | checkbox_ | radio_ | separator_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'} extends keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'} ? std.Exclude<keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'}, 'normal' | 'checkbox' | 'radio' | 'separator'> : never */ js.Any
         ]
       ] = js.undefined
     
@@ -179,10 +159,7 @@ object contextMenus {
               ToStringLiteral[
                 ALL, 
                 /* keyof chrome-apps.anon.ALL */ typings.chromeApps.chromeAppsStrings.ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
-                Exclude[
-                  /* keyof chrome-apps.anon.ALL */ typings.chromeApps.chromeAppsStrings.ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
-                  browser_action_ | selection_ | video_ | launcher_ | image_ | editable_ | page_action_ | page_ | audio_ | frame_ | all__ | link_
-                ]
+                /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'} extends keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'} ? std.Exclude<keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'}, 'browser_action' | 'selection' | 'video' | 'launcher' | 'image' | 'editable' | 'page_action' | 'page' | 'audio' | 'frame' | 'all' | 'link'> : never */ js.Any
               ]
             ]
       ): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
@@ -193,10 +170,7 @@ object contextMenus {
         value: (ToStringLiteral[
               ALL, 
               /* keyof chrome-apps.anon.ALL */ typings.chromeApps.chromeAppsStrings.ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
-              Exclude[
-                /* keyof chrome-apps.anon.ALL */ typings.chromeApps.chromeAppsStrings.ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
-                browser_action_ | selection_ | video_ | launcher_ | image_ | editable_ | page_action_ | page_ | audio_ | frame_ | all__ | link_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'} extends keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'} ? std.Exclude<keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'}, 'browser_action' | 'selection' | 'video' | 'launcher' | 'image' | 'editable' | 'page_action' | 'page' | 'audio' | 'frame' | 'all' | 'link'> : never */ js.Any
             ])*
       ): Self = StObject.set(x, "contexts", js.Array(value*))
       
@@ -236,10 +210,7 @@ object contextMenus {
         value: ToStringLiteral[
               CHECKBOX, 
               /* keyof chrome-apps.anon.CHECKBOX */ NORMAL | typings.chromeApps.chromeAppsStrings.CHECKBOX | RADIO | SEPARATOR, 
-              Exclude[
-                /* keyof chrome-apps.anon.CHECKBOX */ NORMAL | typings.chromeApps.chromeAppsStrings.CHECKBOX | RADIO | SEPARATOR, 
-                normal_ | checkbox_ | radio_ | separator_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'} extends keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'} ? std.Exclude<keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'}, 'normal' | 'checkbox' | 'radio' | 'separator'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -411,10 +382,7 @@ object contextMenus {
           ToStringLiteral[
             ALL, 
             /* keyof chrome-apps.anon.ALL */ typings.chromeApps.chromeAppsStrings.ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
-            Exclude[
-              /* keyof chrome-apps.anon.ALL */ typings.chromeApps.chromeAppsStrings.ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
-              browser_action_ | selection_ | video_ | launcher_ | image_ | editable_ | page_action_ | page_ | audio_ | frame_ | all__ | link_
-            ]
+            /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'} extends keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'} ? std.Exclude<keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'}, 'browser_action' | 'selection' | 'video' | 'launcher' | 'image' | 'editable' | 'page_action' | 'page' | 'audio' | 'frame' | 'all' | 'link'> : never */ js.Any
           ]
         ]
       ] = js.undefined
@@ -441,10 +409,7 @@ object contextMenus {
         ToStringLiteral[
           CHECKBOX, 
           /* keyof chrome-apps.anon.CHECKBOX */ NORMAL | typings.chromeApps.chromeAppsStrings.CHECKBOX | RADIO | SEPARATOR, 
-          Exclude[
-            /* keyof chrome-apps.anon.CHECKBOX */ NORMAL | typings.chromeApps.chromeAppsStrings.CHECKBOX | RADIO | SEPARATOR, 
-            normal_ | checkbox_ | radio_ | separator_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'} extends keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'} ? std.Exclude<keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'}, 'normal' | 'checkbox' | 'radio' | 'separator'> : never */ js.Any
         ]
       ] = js.undefined
     
@@ -472,10 +437,7 @@ object contextMenus {
               ToStringLiteral[
                 ALL, 
                 /* keyof chrome-apps.anon.ALL */ typings.chromeApps.chromeAppsStrings.ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
-                Exclude[
-                  /* keyof chrome-apps.anon.ALL */ typings.chromeApps.chromeAppsStrings.ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
-                  browser_action_ | selection_ | video_ | launcher_ | image_ | editable_ | page_action_ | page_ | audio_ | frame_ | all__ | link_
-                ]
+                /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'} extends keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'} ? std.Exclude<keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'}, 'browser_action' | 'selection' | 'video' | 'launcher' | 'image' | 'editable' | 'page_action' | 'page' | 'audio' | 'frame' | 'all' | 'link'> : never */ js.Any
               ]
             ]
       ): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
@@ -486,10 +448,7 @@ object contextMenus {
         value: (ToStringLiteral[
               ALL, 
               /* keyof chrome-apps.anon.ALL */ typings.chromeApps.chromeAppsStrings.ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
-              Exclude[
-                /* keyof chrome-apps.anon.ALL */ typings.chromeApps.chromeAppsStrings.ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
-                browser_action_ | selection_ | video_ | launcher_ | image_ | editable_ | page_action_ | page_ | audio_ | frame_ | all__ | link_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'} extends keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'} ? std.Exclude<keyof {  ALL :'all',   PAGE :'page',   FRAME :'frame',   SELECTION :'selection',   LINK :'link',   EDITABLE :'editable',   IMAGE :'image',   VIDEO :'video',   AUDIO :'audio',   LAUNCHER :'launcher',   BROWSER_ACTION :'browser_action',   PAGE_ACTION :'page_action'}, 'browser_action' | 'selection' | 'video' | 'launcher' | 'image' | 'editable' | 'page_action' | 'page' | 'audio' | 'frame' | 'all' | 'link'> : never */ js.Any
             ])*
       ): Self = StObject.set(x, "contexts", js.Array(value*))
       
@@ -525,10 +484,7 @@ object contextMenus {
         value: ToStringLiteral[
               CHECKBOX, 
               /* keyof chrome-apps.anon.CHECKBOX */ NORMAL | typings.chromeApps.chromeAppsStrings.CHECKBOX | RADIO | SEPARATOR, 
-              Exclude[
-                /* keyof chrome-apps.anon.CHECKBOX */ NORMAL | typings.chromeApps.chromeAppsStrings.CHECKBOX | RADIO | SEPARATOR, 
-                normal_ | checkbox_ | radio_ | separator_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'} extends keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'} ? std.Exclude<keyof {  NORMAL :'normal',   CHECKBOX :'checkbox',   RADIO :'radio',   SEPARATOR :'separator'}, 'normal' | 'checkbox' | 'radio' | 'separator'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

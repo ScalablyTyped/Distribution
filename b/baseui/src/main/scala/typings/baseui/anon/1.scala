@@ -6,17 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `1` extends StObject {
   
-  var ref: /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any
+  val date: js.UndefOr[Any | Null | (js.Array[js.UndefOr[Any | Null]])] = js.undefined
 }
 object `1` {
   
-  inline def apply(ref: /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any): `1` = {
-    val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
+  inline def apply(): `1` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`1`]
   }
   
   extension [Self <: `1`](x: Self) {
     
-    inline def setRef(value: /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setDate(value: Any | (js.Array[js.UndefOr[Any | Null]])): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDateNull: Self = StObject.set(x, "date", null)
+    
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setDateVarargs(value: (js.UndefOr[Any | Null])*): Self = StObject.set(x, "date", js.Array(value*))
   }
 }

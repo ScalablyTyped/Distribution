@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "TextFileAssetTask")
 @js.native
 open class TextFileAssetTask protected ()
-  extends typings.babylonjs.assetsManagerMod.TextFileAssetTask {
+  extends typings.babylonjs.miscAssetsManagerMod.TextFileAssetTask {
   /**
     * Creates a new TextFileAssetTask object
     * @param name defines the name of the task

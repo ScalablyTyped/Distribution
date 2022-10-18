@@ -8,10 +8,8 @@ import typings.react.mod.LazyExoticComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes
 import typings.react.mod.global.JSX.Element
-import typings.reactRouter.componentsMod.IndexRouteProps
-import typings.reactRouter.componentsMod.LayoutRouteProps
-import typings.reactRouter.componentsMod.PathRouteProps
-import typings.reactRouter.componentsMod.RouterProps
+import typings.reactRouter.distLibComponentsMod.RouteProps
+import typings.reactRouter.distLibComponentsMod.RouterProps
 import typings.reactRouterDom.mod.BrowserRouterProps
 import typings.reactRouterDom.mod.LinkProps
 import typings.reactRouterDom.mod.NavLinkProps
@@ -37,9 +35,7 @@ object mod {
   @js.native
   val NavLink: ForwardRefExoticComponent[NavLinkProps & RefAttributes[HTMLAnchorElement]] = js.native
   
-  inline def Route(_props: IndexRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def Route(_props: LayoutRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def Route(_props: PathRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Route(_props: RouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   inline def Router(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp: RouterProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   

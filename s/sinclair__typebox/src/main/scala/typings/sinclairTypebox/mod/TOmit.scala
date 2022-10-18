@@ -11,10 +11,7 @@ trait TOmit[T /* <: TObject[TProperties] */, Properties /* <: js.Array[ObjectPro
      with TObject[TProperties] {
   
   @JSName("properties")
-  var properties_TOmit: Omit[
-    /* import warning: importer.ImportType#apply Failed type conversion: T['properties'] */ js.Any, 
-    /* import warning: importer.ImportType#apply Failed type conversion: Properties[number] */ js.Any
-  ] = js.native
+  var properties_TOmit: /* import warning: importer.ImportType#apply Failed type conversion: T extends @sinclair/typebox.@sinclair/typebox.TObject<@sinclair/typebox.@sinclair/typebox.TProperties> ? std.Omit<T['properties'], Properties[number]> : never */ js.Any = js.native
   
   @JSName("static")
   var static_TOmit: Omit[

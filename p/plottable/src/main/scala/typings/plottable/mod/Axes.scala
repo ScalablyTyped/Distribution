@@ -1,5 +1,6 @@
 package typings.plottable.mod
 
+import typings.plottable.buildSrcAxesTimeAxisMod.TimeAxisOrientation
 import typings.plottable.plottableStrings.between
 import typings.plottable.plottableStrings.bottom
 import typings.plottable.plottableStrings.center
@@ -11,7 +12,6 @@ import typings.plottable.plottableStrings.second
 import typings.plottable.plottableStrings.top
 import typings.plottable.plottableStrings.week
 import typings.plottable.plottableStrings.year
-import typings.plottable.timeAxisMod.TimeAxisOrientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ object Axes {
   @JSImport("plottable", "Axes.Category")
   @js.native
   open class Category protected ()
-    extends typings.plottable.axesMod.Category {
+    extends typings.plottable.buildSrcAxesMod.Category {
     /**
       * Constructs a Category Axis.
       *
@@ -31,10 +31,10 @@ object Axes {
       * @param {Scales.Category} scale
       * @param {AxisOrientation} [orientation="bottom"] Orientation of this Category Axis.
       */
-    def this(scale: typings.plottable.scalesMod.Category) = this()
+    def this(scale: typings.plottable.buildSrcScalesMod.Category) = this()
     def this(
-      scale: typings.plottable.scalesMod.Category,
-      orientation: typings.plottable.axisMod.AxisOrientation
+      scale: typings.plottable.buildSrcScalesMod.Category,
+      orientation: typings.plottable.buildSrcAxesAxisMod.AxisOrientation
     ) = this()
   }
   /* static members */
@@ -56,7 +56,7 @@ object Axes {
   @JSImport("plottable", "Axes.Numeric")
   @js.native
   open class Numeric protected ()
-    extends typings.plottable.axesMod.Numeric {
+    extends typings.plottable.buildSrcAxesMod.Numeric {
     /**
       * Constructs a Numeric Axis.
       *
@@ -67,8 +67,8 @@ object Axes {
       * @param {AxisOrientation} orientation Orientation of this Numeric Axis.
       */
     def this(
-      scale: typings.plottable.quantitativeScaleMod.QuantitativeScale[Double],
-      orientation: typings.plottable.axisMod.AxisOrientation
+      scale: typings.plottable.buildSrcScalesQuantitativeScaleMod.QuantitativeScale[Double],
+      orientation: typings.plottable.buildSrcAxesAxisMod.AxisOrientation
     ) = this()
   }
   
@@ -92,7 +92,7 @@ object Axes {
   @JSImport("plottable", "Axes.Time")
   @js.native
   open class Time protected ()
-    extends typings.plottable.axesMod.Time {
+    extends typings.plottable.buildSrcAxesMod.Time {
     /**
       * Constructs a Time Axis.
       *
@@ -104,8 +104,8 @@ object Axes {
       * @param {boolean} useUTC Displays date object in UTC if true, local time if false. Defaults to false.
       * orientations.
       */
-    def this(scale: typings.plottable.scalesMod.Time, orientation: TimeAxisOrientation) = this()
-    def this(scale: typings.plottable.scalesMod.Time, orientation: TimeAxisOrientation, useUTC: Boolean) = this()
+    def this(scale: typings.plottable.buildSrcScalesMod.Time, orientation: TimeAxisOrientation) = this()
+    def this(scale: typings.plottable.buildSrcScalesMod.Time, orientation: TimeAxisOrientation, useUTC: Boolean) = this()
   }
   /* static members */
   object Time {

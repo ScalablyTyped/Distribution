@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Shortcut
 import typings.firebaseAppCompat.anon.Call
 import typings.firebaseAppCompat.anon.Dictindex
-import typings.firebaseLogger.srcLoggerMod.LogCallback
-import typings.firebaseLogger.srcLoggerMod.LogLevelString
-import typings.firebaseLogger.srcLoggerMod.LogOptions
+import typings.firebaseLogger.distSrcLoggerMod.LogCallback
+import typings.firebaseLogger.distSrcLoggerMod.LogLevelString
+import typings.firebaseLogger.distSrcLoggerMod.LogOptions
 import typings.firebaseUtil.mod.Compat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

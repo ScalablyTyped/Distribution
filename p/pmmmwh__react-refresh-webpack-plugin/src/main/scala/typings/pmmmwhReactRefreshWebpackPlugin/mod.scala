@@ -1,7 +1,7 @@
 package typings.pmmmwhReactRefreshWebpackPlugin
 
-import typings.pmmmwhReactRefreshWebpackPlugin.typesMod.NormalizedPluginOptions
-import typings.pmmmwhReactRefreshWebpackPlugin.typesMod.ReactRefreshPluginOptions
+import typings.pmmmwhReactRefreshWebpackPlugin.typesLibTypesMod.NormalizedPluginOptions
+import typings.pmmmwhReactRefreshWebpackPlugin.typesLibTypesMod.ReactRefreshPluginOptions
 import typings.webpack.mod.Compiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

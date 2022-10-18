@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object storybookRouterStrings {
   
   @js.native
-  sealed trait Params extends StObject
-  inline def Params: Params = "Params".asInstanceOf[Params]
-  
-  @js.native
   sealed trait additions extends StObject
   inline def additions: additions = "additions".asInstanceOf[additions]
   

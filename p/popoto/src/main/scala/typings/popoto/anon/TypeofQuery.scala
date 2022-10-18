@@ -1,8 +1,8 @@
 package typings.popoto.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.popoto.linkMod.Link
-import typings.popoto.nodeMod.Node
+import typings.popoto.graphLinkMod.Link
+import typings.popoto.graphNodeMod.Node
 import typings.popoto.queryMod.QueryStructure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

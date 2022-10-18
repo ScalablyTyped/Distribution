@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("XRWebGLSubImage")
+/* note: abstract class */ @JSGlobal("XRWebGLSubImage")
 @js.native
-abstract class XRWebGLSubImage ()
+open class XRWebGLSubImage ()
   extends StObject
      with typings.webxr.XRWebGLSubImage {
   

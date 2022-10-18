@@ -4,11 +4,11 @@ import typings.bodyParser.mod.OptionsJson
 import typings.bodyParser.mod.OptionsText
 import typings.bodyParser.mod.OptionsUrlencoded
 import typings.express.mod.CookieOptions
-import typings.server.commonMod.LogFn
-import typings.server.commonMod.LogLevel
-import typings.server.optionsMod.CsurfOptions
-import typings.server.optionsMod.DataParserOptions
 import typings.server.serverBooleans.`false`
+import typings.server.typingsCommonMod.LogFn
+import typings.server.typingsCommonMod.LogLevel
+import typings.server.typingsOptionsMod.CsurfOptions
+import typings.server.typingsOptionsMod.DataParserOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

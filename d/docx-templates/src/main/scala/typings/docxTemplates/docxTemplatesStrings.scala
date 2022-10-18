@@ -1,7 +1,7 @@
 package typings.docxTemplates
 
-import typings.docxTemplates.typesMod.BuiltInCommand
-import typings.docxTemplates.typesMod.ImageExtension
+import typings.docxTemplates.libBundledMod.BuiltInCommand
+import typings.docxTemplates.libTypesMod.ImageExtension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,14 +12,14 @@ object docxTemplatesStrings {
   sealed trait ALIAS
     extends StObject
        with BuiltInCommand
-       with typings.docxTemplates.bundledMod.BuiltInCommand
+       with typings.docxTemplates.libTypesMod.BuiltInCommand
   inline def ALIAS: ALIAS = "ALIAS".asInstanceOf[ALIAS]
   
   @js.native
   sealed trait CMD_NODE
     extends StObject
        with BuiltInCommand
-       with typings.docxTemplates.bundledMod.BuiltInCommand
+       with typings.docxTemplates.libTypesMod.BuiltInCommand
   inline def CMD_NODE: CMD_NODE = "CMD_NODE".asInstanceOf[CMD_NODE]
   
   @js.native
@@ -56,56 +56,56 @@ object docxTemplatesStrings {
   sealed trait `END-FOR`
     extends StObject
        with BuiltInCommand
-       with typings.docxTemplates.bundledMod.BuiltInCommand
+       with typings.docxTemplates.libTypesMod.BuiltInCommand
   inline def `END-FOR`: `END-FOR` = "END-FOR".asInstanceOf[`END-FOR`]
   
   @js.native
   sealed trait `END-IF`
     extends StObject
        with BuiltInCommand
-       with typings.docxTemplates.bundledMod.BuiltInCommand
+       with typings.docxTemplates.libTypesMod.BuiltInCommand
   inline def `END-IF`: `END-IF` = "END-IF".asInstanceOf[`END-IF`]
   
   @js.native
   sealed trait EXEC
     extends StObject
        with BuiltInCommand
-       with typings.docxTemplates.bundledMod.BuiltInCommand
+       with typings.docxTemplates.libTypesMod.BuiltInCommand
   inline def EXEC: EXEC = "EXEC".asInstanceOf[EXEC]
   
   @js.native
   sealed trait FOR
     extends StObject
        with BuiltInCommand
-       with typings.docxTemplates.bundledMod.BuiltInCommand
+       with typings.docxTemplates.libTypesMod.BuiltInCommand
   inline def FOR: FOR = "FOR".asInstanceOf[FOR]
   
   @js.native
   sealed trait HTML
     extends StObject
        with BuiltInCommand
-       with typings.docxTemplates.bundledMod.BuiltInCommand
+       with typings.docxTemplates.libTypesMod.BuiltInCommand
   inline def HTML: HTML = "HTML".asInstanceOf[HTML]
   
   @js.native
   sealed trait IF
     extends StObject
        with BuiltInCommand
-       with typings.docxTemplates.bundledMod.BuiltInCommand
+       with typings.docxTemplates.libTypesMod.BuiltInCommand
   inline def IF: IF = "IF".asInstanceOf[IF]
   
   @js.native
   sealed trait IMAGE
     extends StObject
        with BuiltInCommand
-       with typings.docxTemplates.bundledMod.BuiltInCommand
+       with typings.docxTemplates.libTypesMod.BuiltInCommand
   inline def IMAGE: IMAGE = "IMAGE".asInstanceOf[IMAGE]
   
   @js.native
   sealed trait INS
     extends StObject
        with BuiltInCommand
-       with typings.docxTemplates.bundledMod.BuiltInCommand
+       with typings.docxTemplates.libTypesMod.BuiltInCommand
   inline def INS: INS = "INS".asInstanceOf[INS]
   
   @js.native
@@ -116,14 +116,14 @@ object docxTemplatesStrings {
   sealed trait LINK
     extends StObject
        with BuiltInCommand
-       with typings.docxTemplates.bundledMod.BuiltInCommand
+       with typings.docxTemplates.libTypesMod.BuiltInCommand
   inline def LINK: LINK = "LINK".asInstanceOf[LINK]
   
   @js.native
   sealed trait QUERY
     extends StObject
        with BuiltInCommand
-       with typings.docxTemplates.bundledMod.BuiltInCommand
+       with typings.docxTemplates.libTypesMod.BuiltInCommand
   inline def QUERY: QUERY = "QUERY".asInstanceOf[QUERY]
   
   @js.native

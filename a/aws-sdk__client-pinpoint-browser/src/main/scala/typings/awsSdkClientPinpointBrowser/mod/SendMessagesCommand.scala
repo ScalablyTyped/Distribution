@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-pinpoint-browser", "SendMessagesCommand")
 @js.native
 open class SendMessagesCommand protected ()
-  extends typings.awsSdkClientPinpointBrowser.sendMessagesCommandMod.SendMessagesCommand {
+  extends typings.awsSdkClientPinpointBrowser.commandsSendMessagesCommandMod.SendMessagesCommand {
   def this(input: SendMessagesInput) = this()
 }

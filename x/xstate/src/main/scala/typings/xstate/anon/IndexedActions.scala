@@ -1,13 +1,13 @@
 package typings.xstate.anon
 
-import typings.xstate.typegenTypesMod.GenerateServiceEvents
-import typings.xstate.typegenTypesMod.MergeWithInternalEvents
-import typings.xstate.typegenTypesMod.TypegenConstraint
-import typings.xstate.typesMod.BaseActionObject
-import typings.xstate.typesMod.EventObject
-import typings.xstate.typesMod.IndexByType
-import typings.xstate.typesMod.Prop
-import typings.xstate.typesMod.ServiceMap
+import typings.xstate.libTypegenTypesMod.GenerateServiceEvents
+import typings.xstate.libTypegenTypesMod.MergeWithInternalEvents
+import typings.xstate.libTypegenTypesMod.TypegenConstraint
+import typings.xstate.libTypesMod.BaseActionObject
+import typings.xstate.libTypesMod.EventObject
+import typings.xstate.libTypesMod.IndexByType
+import typings.xstate.libTypesMod.Prop
+import typings.xstate.libTypesMod.ServiceMap
 import typings.xstate.xstateStrings.internalEvents
 import typings.xstate.xstateStrings.invokeSrcNameMap
 import org.scalablytyped.runtime.StObject
@@ -20,7 +20,7 @@ trait IndexedActions[TAction /* <: BaseActionObject */, TEvent /* <: EventObject
   
   var indexedEvents: MergeWithInternalEvents[
     IndexByType[
-      TEvent | (GenerateServiceEvents[TServiceMap, Prop[TTypesMeta, invokeSrcNameMap]])
+      (/* import warning: importer.ImportType#apply Failed type conversion: string extends TEvent['type'] ? never : TEvent */ js.Any) | (GenerateServiceEvents[TServiceMap, Prop[TTypesMeta, invokeSrcNameMap]])
     ], 
     Prop[TTypesMeta, internalEvents]
   ]
@@ -31,7 +31,7 @@ object IndexedActions {
     indexedActions: IndexByType[TAction],
     indexedEvents: MergeWithInternalEvents[
       IndexByType[
-        TEvent | (GenerateServiceEvents[TServiceMap, Prop[TTypesMeta, invokeSrcNameMap]])
+        (/* import warning: importer.ImportType#apply Failed type conversion: string extends TEvent['type'] ? never : TEvent */ js.Any) | (GenerateServiceEvents[TServiceMap, Prop[TTypesMeta, invokeSrcNameMap]])
       ], 
       Prop[TTypesMeta, internalEvents]
     ]
@@ -47,7 +47,7 @@ object IndexedActions {
     inline def setIndexedEvents(
       value: MergeWithInternalEvents[
           IndexByType[
-            TEvent | (GenerateServiceEvents[TServiceMap, Prop[TTypesMeta, invokeSrcNameMap]])
+            (/* import warning: importer.ImportType#apply Failed type conversion: string extends TEvent['type'] ? never : TEvent */ js.Any) | (GenerateServiceEvents[TServiceMap, Prop[TTypesMeta, invokeSrcNameMap]])
           ], 
           Prop[TTypesMeta, internalEvents]
         ]

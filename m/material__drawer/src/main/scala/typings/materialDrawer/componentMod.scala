@@ -2,7 +2,7 @@ package typings.materialDrawer
 
 import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
-import typings.materialDrawer.foundationMod.MDCDismissibleDrawerFoundation
+import typings.materialDrawer.dismissibleFoundationMod.MDCDismissibleDrawerFoundation
 import typings.materialDrawer.utilMod.MDCDrawerFocusTrapFactory
 import typings.materialList.componentMod.MDCList
 import typings.materialList.componentMod.MDCListFactory

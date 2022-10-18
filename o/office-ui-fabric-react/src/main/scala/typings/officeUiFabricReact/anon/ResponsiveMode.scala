@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResponsiveMode extends StObject {
   
-  var responsiveMode: js.UndefOr[typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode] = js.undefined
+  var responsiveMode: js.UndefOr[
+    typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
+  ] = js.undefined
 }
 object ResponsiveMode {
   
@@ -17,7 +19,7 @@ object ResponsiveMode {
   
   extension [Self <: ResponsiveMode](x: Self) {
     
-    inline def setResponsiveMode(value: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode): Self = StObject.set(x, "responsiveMode", value.asInstanceOf[js.Any])
+    inline def setResponsiveMode(value: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode): Self = StObject.set(x, "responsiveMode", value.asInstanceOf[js.Any])
     
     inline def setResponsiveModeUndefined: Self = StObject.set(x, "responsiveMode", js.undefined)
   }

@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * class, and for actual class definitions, please see the
   * Events_* interfaces above.
   */
-@JSImport("backbone", "EventsMixin")
+/* note: abstract class */ @JSImport("backbone", "EventsMixin")
 @js.native
-abstract class EventsMixin () extends StObject {
+open class EventsMixin () extends StObject {
   
   def bind(eventMap: EventMap): this.type = js.native
   def bind(eventMap: EventMap, context: Any): this.type = js.native

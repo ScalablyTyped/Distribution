@@ -2,7 +2,7 @@ package typings.ckeditorCkeditor5Highlight
 
 import typings.ckeditorCkeditor5Highlight.anon.TypeofHighlightEditing
 import typings.ckeditorCkeditor5Highlight.anon.TypeofHighlightUI
-import typings.ckeditorCkeditor5Highlight.highlightMod.default
+import typings.ckeditorCkeditor5Highlight.srcHighlightMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-highlight", "HighlightEditing")
   @js.native
   open class HighlightEditing ()
-    extends typings.ckeditorCkeditor5Highlight.highlighteditingMod.default
+    extends typings.ckeditorCkeditor5Highlight.srcHighlighteditingMod.default
   /* static members */
   object HighlightEditing {
     
@@ -39,7 +39,7 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-highlight", "HighlightUI")
   @js.native
   open class HighlightUI ()
-    extends typings.ckeditorCkeditor5Highlight.highlightuiMod.default
+    extends typings.ckeditorCkeditor5Highlight.srcHighlightuiMod.default
   /* static members */
   object HighlightUI {
     

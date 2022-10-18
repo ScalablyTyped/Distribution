@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a method for displaying a UI, by which the UI contains options for the capture of photos, audio recordings and videos. */
-@JSGlobal("Windows.Media.Capture.CameraOptionsUI")
+/* note: abstract class */ @JSGlobal("Windows.Media.Capture.CameraOptionsUI")
 @js.native
-abstract class CameraOptionsUI ()
+open class CameraOptionsUI ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.CameraOptionsUI
 object CameraOptionsUI {

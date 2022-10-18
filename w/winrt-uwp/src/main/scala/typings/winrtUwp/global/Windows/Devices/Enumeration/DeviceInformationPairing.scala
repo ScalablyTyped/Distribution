@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information and enables pairing for a device. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceInformationPairing")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.DeviceInformationPairing")
 @js.native
-abstract class DeviceInformationPairing ()
+open class DeviceInformationPairing ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationPairing
 object DeviceInformationPairing {

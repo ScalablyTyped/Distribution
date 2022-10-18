@@ -14,8 +14,8 @@ import typings.achingbrainSsdp.achingbrainSsdpStrings.ssdpColonbyebye
 import typings.achingbrainSsdp.achingbrainSsdpStrings.ssdpColonnotify
 import typings.achingbrainSsdp.achingbrainSsdpStrings.udp4
 import typings.achingbrainSsdp.achingbrainSsdpStrings.udp6
-import typings.achingbrainSsdp.advertsMod.CachedAdvert
 import typings.achingbrainSsdp.anon.PartialSSDPOptions
+import typings.achingbrainSsdp.distSrcAdvertsMod.CachedAdvert
 import typings.node.bufferMod.global.Buffer
 import typings.node.dgramMod.Socket
 import typings.std.AsyncIterable

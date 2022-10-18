@@ -9,7 +9,7 @@ import typings.chartJs.chartJsStrings.middle
 import typings.chartJs.chartJsStrings.right
 import typings.chartJs.chartJsStrings.start
 import typings.chartJs.chartJsStrings.top
-import typings.chartJs.colorMod.Color
+import typings.chartJs.typesColorMod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

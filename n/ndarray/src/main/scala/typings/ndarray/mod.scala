@@ -20,23 +20,24 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Data[T] = GenericArray[T] | js.Array[T] | MaybeBigInt64Array | MaybeBigUint64Array | TypedArray
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends number ? ndarray.ndarray.GenericArray<T> | std.Array<T> | ndarray.ndarray.TypedArray : T extends bigint ? ndarray.ndarray.GenericArray<T> | std.Array<T> | ndarray.ndarray.MaybeBigInt64Array | ndarray.ndarray.MaybeBigUint64Array : ndarray.ndarray.GenericArray<T> | std.Array<T>
+    }}}
+    */
+  @js.native
+  trait Data[T] extends StObject
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.ndarray.ndarrayStrings.array
-    - typings.ndarray.ndarrayStrings.generic
-    - typings.ndarray.ndarrayStrings.biguint64
-    - typings.ndarray.ndarrayStrings.bigint64
-    - typings.ndarray.ndarrayStrings.float64
-    - typings.ndarray.ndarrayStrings.float32
-    - typings.ndarray.ndarrayStrings.uint32
-    - typings.ndarray.ndarrayStrings.uint16
-    - typings.ndarray.ndarrayStrings.uint8_clamped
-    - typings.ndarray.ndarrayStrings.uint8
-    - typings.ndarray.ndarrayStrings.int32
-    - typings.ndarray.ndarrayStrings.int16
-    - typings.ndarray.ndarrayStrings.int8
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    D extends std.Int8Array ? 'int8' : D extends std.Int16Array ? 'int16' : D extends std.Int32Array ? 'int32' : D extends std.Uint8Array ? 'uint8' : D extends std.Uint8ClampedArray ? 'uint8_clamped' : D extends std.Uint16Array ? 'uint16' : D extends std.Uint32Array ? 'uint32' : D extends std.Float32Array ? 'float32' : D extends std.Float64Array ? 'float64' : D extends ndarray.ndarray.MaybeBigInt64Array ? 'bigint64' : D extends ndarray.ndarray.MaybeBigUint64Array ? 'biguint64' : D extends ndarray.ndarray.GenericArray<unknown> ? 'generic' : 'array'
+    }}}
+    */
+  @js.native
   trait DataType[D /* <: Data[Any] */] extends StObject
   
   trait GenericArray[T] extends StObject {
@@ -64,9 +65,13 @@ object mod {
     }
   }
   
-  type MaybeBigInt64Array = InstanceType[Any]
+  type MaybeBigInt64Array = InstanceType[
+    /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  BigInt64Array :infer T} ? T : never */ js.Any
+  ]
   
-  type MaybeBigUint64Array = InstanceType[Any]
+  type MaybeBigUint64Array = InstanceType[
+    /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  BigUint64Array :infer T} ? T : never */ js.Any
+  ]
   
   trait NdArray[D /* <: Data[Any] */] extends StObject {
     
@@ -175,5 +180,13 @@ object mod {
   
   type TypedArray = js.typedarray.Int8Array | js.typedarray.Int16Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray | js.typedarray.Uint16Array | js.typedarray.Uint32Array | js.typedarray.Float32Array | js.typedarray.Float64Array
   
-  type Value[D /* <: Data[Any] */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    D extends ndarray.ndarray.GenericArray<infer T> | std.Record<number, infer T> ? T : never
+    }}}
+    */
+  @js.native
+  trait Value[D /* <: Data[Any] */] extends StObject
 }

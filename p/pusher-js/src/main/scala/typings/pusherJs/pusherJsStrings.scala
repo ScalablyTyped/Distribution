@@ -1,7 +1,7 @@
 package typings.pusherJs
 
-import typings.pusherJs.configMod.AuthTransport
-import typings.pusherJs.configMod.Transport
+import typings.pusherJs.typesSrcCoreConfigMod.AuthTransport
+import typings.pusherJs.typesSrcCoreConfigMod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

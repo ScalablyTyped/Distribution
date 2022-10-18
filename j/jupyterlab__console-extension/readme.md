@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__console-extension
 
-Typings are for version 2.2.7
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Code Console Extension
@@ -10,10 +10,10 @@ JupyterLab - Code Console Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/console-extension |
 | Keywords           | - |
-| # releases         | 129 |
-| # dependents       | 1 |
-| # downloads        | 1460960 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 193365.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

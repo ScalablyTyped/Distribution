@@ -74,7 +74,7 @@ object mod {
   @js.native
   trait JoiPasswordComplexity
     extends StObject
-       with StringSchema {
+       with StringSchema[String] {
     
     def passwordComplexity(): this.type = js.native
   }

@@ -143,7 +143,7 @@ object NodeJS {
     @JSName("Date")
     var Date_Original: DateConstructor
     
-    /* standard es2022.error */
+    /* standard es5 */
     def Error(): js.Error
     def Error(message: String): js.Error
     def Error(message: String, options: ErrorOptions): js.Error
@@ -151,12 +151,12 @@ object NodeJS {
     @JSName("Error")
     var Error_Original: ErrorConstructor
     
-    /* standard es2022.error */
+    /* standard es5 */
     def EvalError(): js.Error
     def EvalError(message: String): js.Error
     def EvalError(message: String, options: ErrorOptions): js.Error
     def EvalError(message: Unit, options: ErrorOptions): js.Error
-    /* standard es2022.error */
+    /* standard es5 */
     @JSName("EvalError")
     def EvalError_EvalError(): js.EvalError
     @JSName("EvalError")
@@ -212,12 +212,12 @@ object NodeJS {
     
     var Promise: js.Function
     
-    /* standard es2022.error */
+    /* standard es5 */
     def RangeError(): js.RangeError
     def RangeError(message: String): js.RangeError
     def RangeError(message: String, options: ErrorOptions): js.RangeError
     def RangeError(message: Unit, options: ErrorOptions): js.RangeError
-    /* standard es2022.error */
+    /* standard es5 */
     @JSName("RangeError")
     def RangeError_Error(): js.Error
     @JSName("RangeError")
@@ -229,14 +229,14 @@ object NodeJS {
     @JSName("RangeError")
     var RangeError_Original: RangeErrorConstructor
     
-    /* standard es2022.error */
+    /* standard es5 */
     def ReferenceError(): js.Error
     def ReferenceError(message: String): js.Error
     def ReferenceError(message: String, options: ErrorOptions): js.Error
     def ReferenceError(message: Unit, options: ErrorOptions): js.Error
     @JSName("ReferenceError")
     var ReferenceError_Original: ReferenceErrorConstructor
-    /* standard es2022.error */
+    /* standard es5 */
     @JSName("ReferenceError")
     def ReferenceError_ReferenceError(): js.ReferenceError
     @JSName("ReferenceError")
@@ -248,7 +248,7 @@ object NodeJS {
     
     def RegExp(pattern: String): js.RegExp
     def RegExp(pattern: String, flags: String): js.RegExp
-    /* standard es2015.core */
+    /* standard es5 */
     def RegExp(pattern: js.RegExp): js.RegExp
     def RegExp(pattern: js.RegExp, flags: String): js.RegExp
     @JSName("RegExp")
@@ -264,12 +264,12 @@ object NodeJS {
     
     var Symbol: js.Function
     
-    /* standard es2022.error */
+    /* standard es5 */
     def SyntaxError(): js.SyntaxError
     def SyntaxError(message: String): js.SyntaxError
     def SyntaxError(message: String, options: ErrorOptions): js.SyntaxError
     def SyntaxError(message: Unit, options: ErrorOptions): js.SyntaxError
-    /* standard es2022.error */
+    /* standard es5 */
     @JSName("SyntaxError")
     def SyntaxError_Error(): js.Error
     @JSName("SyntaxError")
@@ -281,14 +281,14 @@ object NodeJS {
     @JSName("SyntaxError")
     var SyntaxError_Original: SyntaxErrorConstructor
     
-    /* standard es2022.error */
+    /* standard es5 */
     def TypeError(): js.Error
     def TypeError(message: String): js.Error
     def TypeError(message: String, options: ErrorOptions): js.Error
     def TypeError(message: Unit, options: ErrorOptions): js.Error
     @JSName("TypeError")
     var TypeError_Original: TypeErrorConstructor
-    /* standard es2022.error */
+    /* standard es5 */
     @JSName("TypeError")
     def TypeError_TypeError(): js.TypeError
     @JSName("TypeError")
@@ -298,12 +298,12 @@ object NodeJS {
     @JSName("TypeError")
     def TypeError_TypeError(message: Unit, options: ErrorOptions): js.TypeError
     
-    /* standard es2022.error */
+    /* standard es5 */
     def URIError(): js.URIError
     def URIError(message: String): js.URIError
     def URIError(message: String, options: ErrorOptions): js.URIError
     def URIError(message: Unit, options: ErrorOptions): js.URIError
-    /* standard es2022.error */
+    /* standard es5 */
     @JSName("URIError")
     def URIError_Error(): js.Error
     @JSName("URIError")

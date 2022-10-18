@@ -1,8 +1,8 @@
 package typings.reactRelay.anon
 
-import typings.reactRelay.entryPointContainerReactMod.GetComponentFromPreloadedEntryPoint
-import typings.reactRelay.entryPointContainerReactMod.GetRuntimePropsFromComponent
-import typings.reactRelay.entryPointTypesMod.PreloadedEntryPoint
+import typings.reactRelay.relayHooksEntryPointContainerDotreactMod.GetComponentFromPreloadedEntryPoint
+import typings.reactRelay.relayHooksEntryPointContainerDotreactMod.GetRuntimePropsFromComponent
+import typings.reactRelay.relayHooksEntryPointTypesMod.PreloadedEntryPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

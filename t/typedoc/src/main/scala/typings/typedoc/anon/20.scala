@@ -1,23 +1,23 @@
 package typings.typedoc.anon
 
-import typings.typedoc.typedocStrings.entryPoints
+import typings.typedoc.typedocStrings.defaultCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `20` extends StObject {
   
-  var name: entryPoints
+  var name: defaultCategory
 }
 object `20` {
   
   inline def apply(): `20` = {
-    val __obj = js.Dynamic.literal(name = "entryPoints")
+    val __obj = js.Dynamic.literal(name = "defaultCategory")
     __obj.asInstanceOf[`20`]
   }
   
   extension [Self <: `20`](x: Self) {
     
-    inline def setName(value: entryPoints): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: defaultCategory): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

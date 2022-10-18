@@ -77,7 +77,7 @@ object RequiredValidator {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     RequiredValidator, 
-    String, 
+    /* :not([type=checkbox])[required][formControlName],:not([type=checkbox])[required][formControl],:not([type=checkbox])[required][ngModel] */ String, 
     scala.Nothing, 
     Required, 
     js.Object, 
@@ -88,7 +88,7 @@ object RequiredValidator {
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       RequiredValidator, 
-      String, 
+      /* :not([type=checkbox])[required][formControlName],:not([type=checkbox])[required][formControl],:not([type=checkbox])[required][ngModel] */ String, 
       scala.Nothing, 
       Required, 
       js.Object, 

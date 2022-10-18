@@ -1,5 +1,6 @@
 package typings.pinoMultiStream
 
+import typings.node.NodeJS.WritableStream
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.streamMod.Writable
@@ -15,7 +16,6 @@ import typings.pinoStdSerializers.mod.SerializedError
 import typings.pinoStdSerializers.mod.SerializedRequest
 import typings.pinoStdSerializers.mod.SerializedResponse
 import typings.std.Record
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,7 +106,7 @@ object mod {
   /* Inlined parent std.Pick<pino.pino.LoggerOptions, 'prettyPrint'> */
   trait PrettyStreamOptions extends StObject {
     
-    var dest: js.UndefOr[DestinationStream | WritableStream[Any]] = js.undefined
+    var dest: js.UndefOr[DestinationStream | WritableStream] = js.undefined
     
     /**
       * Allows to optionally define which prettifier module to use
@@ -125,7 +125,7 @@ object mod {
     
     extension [Self <: PrettyStreamOptions](x: Self) {
       
-      inline def setDest(value: DestinationStream | WritableStream[Any]): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: DestinationStream | WritableStream): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
       inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       

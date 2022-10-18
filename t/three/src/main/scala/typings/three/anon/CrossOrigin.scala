@@ -1,8 +1,8 @@
 package typings.three.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.three.ktx2loaderMod.KTX2Loader
-import typings.three.threeMod.LoadingManager
+import typings.three.examplesJsmLoadersKtx2loaderMod.KTX2Loader
+import typings.three.srcThreeMod.LoadingManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

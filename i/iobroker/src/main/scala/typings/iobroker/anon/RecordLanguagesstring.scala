@@ -25,6 +25,8 @@ trait RecordLanguagesstring extends StObject {
   
   var ru: String
   
+  var uk: String
+  
   var `zh-cn`: String
 }
 object RecordLanguagesstring {
@@ -39,9 +41,10 @@ object RecordLanguagesstring {
     pl: String,
     pt: String,
     ru: String,
+    uk: String,
     `zh-cn`: String
   ): RecordLanguagesstring = {
-    val __obj = js.Dynamic.literal(de = de.asInstanceOf[js.Any], en = en.asInstanceOf[js.Any], es = es.asInstanceOf[js.Any], fr = fr.asInstanceOf[js.Any], it = it.asInstanceOf[js.Any], nl = nl.asInstanceOf[js.Any], pl = pl.asInstanceOf[js.Any], pt = pt.asInstanceOf[js.Any], ru = ru.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(de = de.asInstanceOf[js.Any], en = en.asInstanceOf[js.Any], es = es.asInstanceOf[js.Any], fr = fr.asInstanceOf[js.Any], it = it.asInstanceOf[js.Any], nl = nl.asInstanceOf[js.Any], pl = pl.asInstanceOf[js.Any], pt = pt.asInstanceOf[js.Any], ru = ru.asInstanceOf[js.Any], uk = uk.asInstanceOf[js.Any])
     __obj.updateDynamic("zh-cn")(`zh-cn`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordLanguagesstring]
   }
@@ -65,6 +68,8 @@ object RecordLanguagesstring {
     inline def setPt(value: String): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
     inline def setRu(value: String): Self = StObject.set(x, "ru", value.asInstanceOf[js.Any])
+    
+    inline def setUk(value: String): Self = StObject.set(x, "uk", value.asInstanceOf[js.Any])
     
     inline def `setZh-cn`(value: String): Self = StObject.set(x, "zh-cn", value.asInstanceOf[js.Any])
   }

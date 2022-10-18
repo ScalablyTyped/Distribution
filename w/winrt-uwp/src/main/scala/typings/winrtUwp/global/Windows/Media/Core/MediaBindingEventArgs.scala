@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Core.MediaBindingEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.MediaBindingEventArgs")
 @js.native
-abstract class MediaBindingEventArgs ()
+open class MediaBindingEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.MediaBindingEventArgs

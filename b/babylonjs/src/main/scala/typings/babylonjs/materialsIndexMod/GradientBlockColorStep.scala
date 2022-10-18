@@ -1,6 +1,6 @@
 package typings.babylonjs.materialsIndexMod
 
-import typings.babylonjs.mathColorMod.Color3
+import typings.babylonjs.mathsMathDotcolorMod.Color3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "GradientBlockColorStep")
 @js.native
 open class GradientBlockColorStep protected ()
-  extends typings.babylonjs.nodeIndexMod.GradientBlockColorStep {
+  extends typings.babylonjs.materialsNodeIndexMod.GradientBlockColorStep {
   /**
     * Creates a new GradientBlockColorStep
     * @param step defines a value indicating which step this color is associated with (between 0 and 1)

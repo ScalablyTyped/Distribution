@@ -2,7 +2,7 @@ package typings.reactThreeFiber.anon
 
 import typings.react.mod.Dispatch
 import typings.react.mod.SetStateAction
-import typings.reactThreeFiber.utilsMod.SetBlock
+import typings.reactThreeFiber.distDeclarationsSrcCoreUtilsMod.SetBlock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

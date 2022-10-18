@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "MentionPill")
 @js.native
 /* private */ open class MentionPill ()
-  extends typings.matrixBotSdk.mentionPillMod.MentionPill
+  extends typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill
 /* static members */
 object MentionPill {
   
@@ -21,8 +21,8 @@ object MentionPill {
     * @param {MatrixClient} client Optional client for creating a more pleasing mention.
     * @returns {Promise<MentionPill>} Resolves to the room's mention.
     */
-  inline def forRoom(roomIdOrAlias: String): js.Promise[typings.matrixBotSdk.mentionPillMod.MentionPill] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoom")(roomIdOrAlias.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.matrixBotSdk.mentionPillMod.MentionPill]]
-  inline def forRoom(roomIdOrAlias: String, client: typings.matrixBotSdk.matrixClientMod.MatrixClient): js.Promise[typings.matrixBotSdk.mentionPillMod.MentionPill] = (^.asInstanceOf[js.Dynamic].applyDynamic("forRoom")(roomIdOrAlias.asInstanceOf[js.Any], client.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.matrixBotSdk.mentionPillMod.MentionPill]]
+  inline def forRoom(roomIdOrAlias: String): js.Promise[typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoom")(roomIdOrAlias.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill]]
+  inline def forRoom(roomIdOrAlias: String, client: typings.matrixBotSdk.libMatrixClientMod.MatrixClient): js.Promise[typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill] = (^.asInstanceOf[js.Dynamic].applyDynamic("forRoom")(roomIdOrAlias.asInstanceOf[js.Any], client.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill]]
   
   /**
     * Creates a new mention for a user in an optional room.
@@ -31,10 +31,10 @@ object MentionPill {
     * @param {MatrixClient} client Optional client for creating a more pleasing mention.
     * @returns {Promise<MentionPill>} Resolves to the user's mention.
     */
-  inline def forUser(userId: String): js.Promise[typings.matrixBotSdk.mentionPillMod.MentionPill] = ^.asInstanceOf[js.Dynamic].applyDynamic("forUser")(userId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.matrixBotSdk.mentionPillMod.MentionPill]]
-  inline def forUser(userId: String, inRoomId: String): js.Promise[typings.matrixBotSdk.mentionPillMod.MentionPill] = (^.asInstanceOf[js.Dynamic].applyDynamic("forUser")(userId.asInstanceOf[js.Any], inRoomId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.matrixBotSdk.mentionPillMod.MentionPill]]
-  inline def forUser(userId: String, inRoomId: String, client: typings.matrixBotSdk.matrixClientMod.MatrixClient): js.Promise[typings.matrixBotSdk.mentionPillMod.MentionPill] = (^.asInstanceOf[js.Dynamic].applyDynamic("forUser")(userId.asInstanceOf[js.Any], inRoomId.asInstanceOf[js.Any], client.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.matrixBotSdk.mentionPillMod.MentionPill]]
-  inline def forUser(userId: String, inRoomId: Unit, client: typings.matrixBotSdk.matrixClientMod.MatrixClient): js.Promise[typings.matrixBotSdk.mentionPillMod.MentionPill] = (^.asInstanceOf[js.Dynamic].applyDynamic("forUser")(userId.asInstanceOf[js.Any], inRoomId.asInstanceOf[js.Any], client.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.matrixBotSdk.mentionPillMod.MentionPill]]
+  inline def forUser(userId: String): js.Promise[typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill] = ^.asInstanceOf[js.Dynamic].applyDynamic("forUser")(userId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill]]
+  inline def forUser(userId: String, inRoomId: String): js.Promise[typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill] = (^.asInstanceOf[js.Dynamic].applyDynamic("forUser")(userId.asInstanceOf[js.Any], inRoomId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill]]
+  inline def forUser(userId: String, inRoomId: String, client: typings.matrixBotSdk.libMatrixClientMod.MatrixClient): js.Promise[typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill] = (^.asInstanceOf[js.Dynamic].applyDynamic("forUser")(userId.asInstanceOf[js.Any], inRoomId.asInstanceOf[js.Any], client.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill]]
+  inline def forUser(userId: String, inRoomId: Unit, client: typings.matrixBotSdk.libMatrixClientMod.MatrixClient): js.Promise[typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill] = (^.asInstanceOf[js.Dynamic].applyDynamic("forUser")(userId.asInstanceOf[js.Any], inRoomId.asInstanceOf[js.Any], client.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill]]
   
   /**
     * Creates a mention from static information.
@@ -42,5 +42,5 @@ object MentionPill {
     * @param {string} displayName The user's display name.
     * @returns {MentionPill} The mention for the user.
     */
-  inline def withDisplayName(userId: String, displayName: String): typings.matrixBotSdk.mentionPillMod.MentionPill = (^.asInstanceOf[js.Dynamic].applyDynamic("withDisplayName")(userId.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[typings.matrixBotSdk.mentionPillMod.MentionPill]
+  inline def withDisplayName(userId: String, displayName: String): typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill = (^.asInstanceOf[js.Dynamic].applyDynamic("withDisplayName")(userId.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[typings.matrixBotSdk.libHelpersMentionPillMod.MentionPill]
 }

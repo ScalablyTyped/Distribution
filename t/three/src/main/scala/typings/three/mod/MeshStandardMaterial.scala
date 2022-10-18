@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.meshStandardMaterialMod.MeshStandardMaterialParameters
+import typings.three.srcMaterialsMeshStandardMaterialMod.MeshStandardMaterialParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "MeshStandardMaterial")
 @js.native
 open class MeshStandardMaterial ()
-  extends typings.three.threeMod.MeshStandardMaterial {
+  extends typings.three.srcThreeMod.MeshStandardMaterial {
   def this(parameters: MeshStandardMaterialParameters) = this()
 }

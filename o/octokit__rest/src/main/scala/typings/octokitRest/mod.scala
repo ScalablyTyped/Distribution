@@ -1,6 +1,6 @@
 package typings.octokitRest
 
-import typings.octokitCore.typesMod.Constructor
+import typings.octokitCore.distTypesTypesMod.Constructor
 import typings.octokitRest.anon.TypeofCore
 import typings.octokitRest.anon.paginatePaginateInterface
 import typings.std.InstanceType

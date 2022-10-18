@@ -11,10 +11,6 @@ object petitDomStrings {
   inline def `2d`: `2d` = "2d".asInstanceOf[`2d`]
   
   @js.native
-  sealed trait DOMElementProps extends StObject
-  inline def DOMElementProps: DOMElementProps = "DOMElementProps".asInstanceOf[DOMElementProps]
-  
-  @js.native
   sealed trait _empty extends StObject
   inline def _empty: _empty = "".asInstanceOf[_empty]
   

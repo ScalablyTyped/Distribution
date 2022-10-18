@@ -1,6 +1,6 @@
 package typings.babylonjs.renderingIndexMod
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Rendering/index", "LineEdgesRenderer")
 @js.native
 open class LineEdgesRenderer protected ()
-  extends typings.babylonjs.edgesRendererMod.LineEdgesRenderer {
+  extends typings.babylonjs.renderingEdgesRendererMod.LineEdgesRenderer {
   /**
     * This constructor turns off auto generating edges line in Edges Renderer to make it here.
     * @param  source LineMesh used to generate edges

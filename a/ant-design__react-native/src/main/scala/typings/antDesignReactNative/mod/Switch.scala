@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.switchSwitchMod.SwitchProps
+import typings.antDesignReactNative.libSwitchSwitchMod.SwitchProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

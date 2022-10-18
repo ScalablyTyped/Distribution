@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "ArcRotateCameraGamepadInput")
 @js.native
 open class ArcRotateCameraGamepadInput ()
-  extends typings.babylonjs.babylonjsMod.ArcRotateCameraGamepadInput
+  extends typings.babylonjs.camerasIndexMod.ArcRotateCameraGamepadInput

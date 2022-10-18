@@ -4,24 +4,24 @@ import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.HTMLVideoElement
 import typings.babylonjs.OffscreenCanvas
 import typings.babylonjs.anon.PartialRenderTargetCreati
-import typings.babylonjs.computeEffectMod.ComputeEffect
-import typings.babylonjs.computeEffectMod.IComputeEffectCreationOptions
-import typings.babylonjs.dataBufferMod.DataBuffer
-import typings.babylonjs.engineComputeShaderMod.ComputeBindingList
-import typings.babylonjs.engineComputeShaderMod.ComputeBindingMapping
-import typings.babylonjs.externalTextureMod.ExternalTexture
-import typings.babylonjs.icanvasMod.ICanvas
-import typings.babylonjs.icomputecontextMod.IComputeContext
-import typings.babylonjs.icomputepipelinecontextMod.IComputePipelineContext
-import typings.babylonjs.internalTextureMod.InternalTexture
-import typings.babylonjs.ipipelinecontextMod.IPipelineContext
-import typings.babylonjs.multiRenderTargetMod.IMultiRenderTargetOptions
+import typings.babylonjs.buffersDataBufferMod.DataBuffer
+import typings.babylonjs.buffersStorageBufferMod.StorageBuffer
+import typings.babylonjs.computeComputeEffectMod.ComputeEffect
+import typings.babylonjs.computeComputeEffectMod.IComputeEffectCreationOptions
+import typings.babylonjs.computeIcomputecontextMod.IComputeContext
+import typings.babylonjs.computeIcomputepipelinecontextMod.IComputePipelineContext
+import typings.babylonjs.enginesExtensionsEngineDotcomputeShaderMod.ComputeBindingList
+import typings.babylonjs.enginesExtensionsEngineDotcomputeShaderMod.ComputeBindingMapping
+import typings.babylonjs.enginesIcanvasMod.ICanvas
+import typings.babylonjs.enginesIpipelinecontextMod.IPipelineContext
+import typings.babylonjs.materialsTexturesExternalTextureMod.ExternalTexture
+import typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture
+import typings.babylonjs.materialsTexturesMultiRenderTargetMod.IMultiRenderTargetOptions
+import typings.babylonjs.materialsTexturesTextureCreationOptionsMod.DepthTextureCreationOptions
+import typings.babylonjs.materialsTexturesTextureCreationOptionsMod.RenderTargetCreationOptions
+import typings.babylonjs.materialsTexturesTextureCreationOptionsMod.TextureSize
+import typings.babylonjs.materialsTexturesTextureSamplerMod.TextureSampler
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.storageBufferMod.StorageBuffer
-import typings.babylonjs.textureCreationOptionsMod.DepthTextureCreationOptions
-import typings.babylonjs.textureCreationOptionsMod.RenderTargetCreationOptions
-import typings.babylonjs.textureCreationOptionsMod.TextureSize
-import typings.babylonjs.textureSamplerMod.TextureSampler
 import typings.babylonjs.typesMod.DataArray
 import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.IndicesArray
@@ -93,18 +93,18 @@ object babylonjsEnginesThinEngineAugmentingMod {
     def _createDepthStencilCubeTexture(
       size: Double,
       options: DepthTextureCreationOptions,
-      rtWrapper: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
+      rtWrapper: typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper
     ): InternalTexture = js.native
     
     /** @internal */
     def _createDepthStencilTexture(
       size: TextureSize,
       options: DepthTextureCreationOptions,
-      rtWrapper: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
+      rtWrapper: typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper
     ): InternalTexture = js.native
     
     /** @internal */
-    def _createHardwareRenderTargetWrapper(isMulti: Boolean, isCube: Boolean, size: TextureSize): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
+    def _createHardwareRenderTargetWrapper(isMulti: Boolean, isCube: Boolean, size: TextureSize): typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper = js.native
     
     /** @internal */
     def _debugFlushPendingCommands(): Unit = js.native
@@ -599,7 +599,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
     def createDepthStencilTexture(
       size: TextureSize,
       options: DepthTextureCreationOptions,
-      rtWrapper: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
+      rtWrapper: typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper
     ): InternalTexture = js.native
     
     /**
@@ -635,8 +635,8 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
       * @returns a new render target wrapper ready to render textures
       */
-    def createMultipleRenderTarget(size: TextureSize, options: IMultiRenderTargetOptions): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
-    def createMultipleRenderTarget(size: TextureSize, options: IMultiRenderTargetOptions, initializeBuffers: Boolean): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
+    def createMultipleRenderTarget(size: TextureSize, options: IMultiRenderTargetOptions): typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper = js.native
+    def createMultipleRenderTarget(size: TextureSize, options: IMultiRenderTargetOptions, initializeBuffers: Boolean): typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper = js.native
     
     /**
       * Creates a new raw cube texture
@@ -891,8 +891,8 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @param options defines the options used to create the texture
       * @returns a new render target cube wrapper
       */
-    def createRenderTargetCubeTexture(size: Double): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
-    def createRenderTargetCubeTexture(size: Double, options: PartialRenderTargetCreati): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
+    def createRenderTargetCubeTexture(size: Double): typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper = js.native
+    def createRenderTargetCubeTexture(size: Double, options: PartialRenderTargetCreati): typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper = js.native
     
     /**
       * Creates a new render target texture
@@ -900,8 +900,8 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @param options defines the options used to create the texture
       * @returns a new render target wrapper ready to render texture
       */
-    def createRenderTargetTexture(size: TextureSize, options: Boolean): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
-    def createRenderTargetTexture(size: TextureSize, options: RenderTargetCreationOptions): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
+    def createRenderTargetTexture(size: TextureSize, options: Boolean): typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper = js.native
+    def createRenderTargetTexture(size: TextureSize, options: RenderTargetCreationOptions): typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper = js.native
     
     def createStorageBuffer(data: Double, creationFlags: Double): DataBuffer = js.native
     /**
@@ -1020,11 +1020,11 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @param onBeforeUnbind defines a function which will be called before the effective unbind
       */
     def unBindMultiColorAttachmentFramebuffer(
-      rtWrapper: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper,
+      rtWrapper: typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper,
       disableGenerateMipMaps: Boolean
     ): Unit = js.native
     def unBindMultiColorAttachmentFramebuffer(
-      rtWrapper: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper,
+      rtWrapper: typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper,
       disableGenerateMipMaps: Boolean,
       onBeforeUnbind: js.Function0[Unit]
     ): Unit = js.native
@@ -1078,9 +1078,12 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
       * @returns the effective sample count (could be 0 if multisample render targets are not supported)
       */
-    def updateMultipleRenderTargetTextureSampleCount(rtWrapper: Nullable[typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper], samples: Double): Double = js.native
     def updateMultipleRenderTargetTextureSampleCount(
-      rtWrapper: Nullable[typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper],
+      rtWrapper: Nullable[typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper],
+      samples: Double
+    ): Double = js.native
+    def updateMultipleRenderTargetTextureSampleCount(
+      rtWrapper: Nullable[typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper],
       samples: Double,
       initializeBuffers: Boolean
     ): Double = js.native
@@ -1239,7 +1242,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @param samples defines the sample count to set
       * @returns the effective sample count (could be 0 if multisample render targets are not supported)
       */
-    def updateRenderTargetTextureSampleCount(rtWrapper: Nullable[typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper], samples: Double): Double = js.native
+    def updateRenderTargetTextureSampleCount(
+      rtWrapper: Nullable[typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper],
+      samples: Double
+    ): Double = js.native
     
     /**
       * Updates a storage buffer

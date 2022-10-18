@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "BoxCollider")
 @js.native
 open class BoxCollider protected ()
-  extends typings.blackEngine.boxColliderMod.BoxCollider {
+  extends typings.blackEngine.collidersBoxColliderMod.BoxCollider {
   def this(x: Double, y: Double, width: Double, height: Double) = this()
 }

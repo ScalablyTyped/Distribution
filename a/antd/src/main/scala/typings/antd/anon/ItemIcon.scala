@@ -1,6 +1,5 @@
 package typings.antd.anon
 
-import typings.antd.iconUtilMod.RenderNode
 import typings.react.mod.ReactFragment
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ItemIcon extends StObject {
   
-  var clearIcon: RenderNode
+  var clearIcon: String | Double | Boolean | ReactFragment | Element | (js.Function1[/* props */ Any, ReactNode])
   
   var itemIcon: String | Double | Boolean | ReactFragment | Element | (js.Function1[/* props */ Any, ReactNode]) | Null
   
@@ -20,18 +19,21 @@ trait ItemIcon extends StObject {
 }
 object ItemIcon {
   
-  inline def apply(suffixIcon: Element | (js.Function1[/* hasOpenShowSearch */ Open, Element])): ItemIcon = {
-    val __obj = js.Dynamic.literal(suffixIcon = suffixIcon.asInstanceOf[js.Any], itemIcon = null, removeIcon = null)
+  inline def apply(
+    clearIcon: String | Double | Boolean | ReactFragment | Element | (js.Function1[/* props */ Any, ReactNode]),
+    suffixIcon: Element | (js.Function1[/* hasOpenShowSearch */ Open, Element])
+  ): ItemIcon = {
+    val __obj = js.Dynamic.literal(clearIcon = clearIcon.asInstanceOf[js.Any], suffixIcon = suffixIcon.asInstanceOf[js.Any], itemIcon = null, removeIcon = null)
     __obj.asInstanceOf[ItemIcon]
   }
   
   extension [Self <: ItemIcon](x: Self) {
     
-    inline def setClearIcon(value: RenderNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
+    inline def setClearIcon(
+      value: String | Double | Boolean | ReactFragment | Element | (js.Function1[/* props */ Any, ReactNode])
+    ): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     
     inline def setClearIconFunction1(value: /* props */ Any => ReactNode): Self = StObject.set(x, "clearIcon", js.Any.fromFunction1(value))
-    
-    inline def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
     
     inline def setItemIcon(
       value: String | Double | Boolean | ReactFragment | Element | (js.Function1[/* props */ Any, ReactNode])

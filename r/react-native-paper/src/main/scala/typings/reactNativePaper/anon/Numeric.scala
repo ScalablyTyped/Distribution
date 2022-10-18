@@ -10,14 +10,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Numeric extends StObject {
   
+  /**
+    * Content of the `DataTableCell`.
+    */
   var children: ReactNode
   
+  /**
+    * Align the text to the right. Generally monetary or number fields are aligned to right.
+    */
   var numeric: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Function to execute on press.
+    */
   var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * Text content style of the `DataTableCell`.
+    */
   var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object Numeric {

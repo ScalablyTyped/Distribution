@@ -14,7 +14,7 @@ object mod {
     def this(value: Any) = this()
     
     /* private */ /* CompleteClass */
-    var _finalizationRegistry: Any = js.native
+    override val _finalizationRegistry: Any = js.native
     
     /* private */ /* CompleteClass */
     var _isReferenceBeingHeld: Any = js.native
@@ -28,7 +28,7 @@ object mod {
   
   trait LeakDetector extends StObject {
     
-    /* private */ var _finalizationRegistry: Any
+    /* private */ val _finalizationRegistry: Any
     
     /* private */ var _isReferenceBeingHeld: Any
     

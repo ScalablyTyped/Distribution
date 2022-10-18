@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "DMs")
 @js.native
 open class DMs protected ()
-  extends typings.matrixBotSdk.dmsMod.DMs {
+  extends typings.matrixBotSdk.libDmsMod.DMs {
   /**
     * Creates a new DM map.
     * @param {MatrixClient} client The client the DM map is for.
     */
-  def this(client: typings.matrixBotSdk.matrixClientMod.MatrixClient) = this()
+  def this(client: typings.matrixBotSdk.libMatrixClientMod.MatrixClient) = this()
 }

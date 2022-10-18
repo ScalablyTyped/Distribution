@@ -1,5 +1,6 @@
 package typings.nodeIp2region
 
+import typings.node.NodeJS.ErrnoException
 import typings.nodeIp2region.anon.City
 import typings.nodeIp2region.anon.DbPath
 import org.scalablytyped.runtime.StObject
@@ -170,11 +171,7 @@ object mod {
     }
   }
   
-  type SearchCallback = js.Function2[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-    /* result */ SearchResult, 
-    Unit
-  ]
+  type SearchCallback = js.Function2[/* err */ ErrnoException, /* result */ SearchResult, Unit]
   
   type SearchResult = City | Null
 }

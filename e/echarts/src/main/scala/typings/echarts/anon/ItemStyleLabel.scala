@@ -14,7 +14,7 @@ trait ItemStyleLabel extends StObject {
   /**
     * @see https://echarts.apache.org/en/option.html#series-effectScatter.emphasis.label
     */
-  var label: js.UndefOr[BorderRadius] = js.undefined
+  var label: js.UndefOr[BorderColor] = js.undefined
 }
 object ItemStyleLabel {
   
@@ -29,7 +29,7 @@ object ItemStyleLabel {
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: BorderColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }

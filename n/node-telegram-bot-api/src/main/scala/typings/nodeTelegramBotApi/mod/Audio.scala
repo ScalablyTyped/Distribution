@@ -20,8 +20,8 @@ trait Audio
 }
 object Audio {
   
-  inline def apply(duration: Double, file_id: String): Audio = {
-    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], file_id = file_id.asInstanceOf[js.Any])
+  inline def apply(duration: Double, file_id: String, file_unique_id: String): Audio = {
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], file_id = file_id.asInstanceOf[js.Any], file_unique_id = file_unique_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Audio]
   }
   

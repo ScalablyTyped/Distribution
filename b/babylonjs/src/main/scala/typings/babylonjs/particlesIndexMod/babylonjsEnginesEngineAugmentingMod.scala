@@ -1,8 +1,8 @@
 package typings.babylonjs.particlesIndexMod
 
-import typings.babylonjs.effectFallbacksMod.EffectFallbacks
-import typings.babylonjs.effectMod.Effect
-import typings.babylonjs.iparticlesystemMod.IParticleSystem
+import typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks
+import typings.babylonjs.materialsEffectMod.Effect
+import typings.babylonjs.particlesIparticlesystemMod.IParticleSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

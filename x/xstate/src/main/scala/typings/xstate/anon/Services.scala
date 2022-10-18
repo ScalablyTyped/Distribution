@@ -1,7 +1,7 @@
 package typings.xstate.anon
 
-import typings.xstate.typesMod.MachineOptionsServices
-import typings.xstate.typesMod.Prop
+import typings.xstate.libTypesMod.MachineOptionsServices
+import typings.xstate.libTypesMod.Prop
 import typings.xstate.xstateStrings.eventsCausingServices
 import typings.xstate.xstateStrings.indexedEvents
 import typings.xstate.xstateStrings.invokeSrcNameMap

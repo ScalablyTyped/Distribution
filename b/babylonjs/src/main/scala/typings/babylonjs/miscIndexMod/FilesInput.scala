@@ -1,7 +1,7 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.sceneLoaderMod.ISceneLoaderProgressEvent
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.loadingSceneLoaderMod.ISceneLoaderProgressEvent
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import typings.std.File
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "FilesInput")
 @js.native
 open class FilesInput protected ()
-  extends typings.babylonjs.filesInputMod.FilesInput {
+  extends typings.babylonjs.miscFilesInputMod.FilesInput {
   /**
     * Creates a new FilesInput
     * @param engine defines the rendering engine

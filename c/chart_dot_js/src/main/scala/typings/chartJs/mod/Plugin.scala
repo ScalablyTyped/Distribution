@@ -9,8 +9,8 @@ import typings.chartJs.anon.Meta
 import typings.chartJs.anon.Mode
 import typings.chartJs.anon.Size
 import typings.chartJs.anon.`2`
-import typings.chartJs.basicMod.EmptyObject
 import typings.chartJs.chartJsBooleans.`false`
+import typings.chartJs.typesBasicMod.EmptyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

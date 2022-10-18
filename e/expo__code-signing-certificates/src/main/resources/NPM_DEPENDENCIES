@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@expo/code-signing-certificates" : "0.0.2"
+      "@expo/code-signing-certificates" : "0.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@expo/code-signing-certificates" : "0.0.2"
+      "@expo/code-signing-certificates" : "0.0.3"
     }
   ],
   "compile-devDependencies" : [

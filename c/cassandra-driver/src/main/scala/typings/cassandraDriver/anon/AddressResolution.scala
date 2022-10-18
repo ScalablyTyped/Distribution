@@ -1,11 +1,11 @@
 package typings.cassandraDriver.anon
 
-import typings.cassandraDriver.policiesMod.policies.addressResolution.AddressTranslator
-import typings.cassandraDriver.policiesMod.policies.loadBalancing.LoadBalancingPolicy
-import typings.cassandraDriver.policiesMod.policies.reconnection.ReconnectionPolicy
-import typings.cassandraDriver.policiesMod.policies.retry.RetryPolicy
-import typings.cassandraDriver.policiesMod.policies.speculativeExecution.SpeculativeExecutionPolicy
-import typings.cassandraDriver.policiesMod.policies.timestampGeneration.TimestampGenerator
+import typings.cassandraDriver.libPoliciesMod.policies.addressResolution.AddressTranslator
+import typings.cassandraDriver.libPoliciesMod.policies.loadBalancing.LoadBalancingPolicy
+import typings.cassandraDriver.libPoliciesMod.policies.reconnection.ReconnectionPolicy
+import typings.cassandraDriver.libPoliciesMod.policies.retry.RetryPolicy
+import typings.cassandraDriver.libPoliciesMod.policies.speculativeExecution.SpeculativeExecutionPolicy
+import typings.cassandraDriver.libPoliciesMod.policies.timestampGeneration.TimestampGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

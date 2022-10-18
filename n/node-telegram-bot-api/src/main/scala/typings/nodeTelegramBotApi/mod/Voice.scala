@@ -14,8 +14,8 @@ trait Voice
 }
 object Voice {
   
-  inline def apply(duration: Double, file_id: String): Voice = {
-    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], file_id = file_id.asInstanceOf[js.Any])
+  inline def apply(duration: Double, file_id: String, file_unique_id: String): Voice = {
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], file_id = file_id.asInstanceOf[js.Any], file_unique_id = file_unique_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Voice]
   }
   

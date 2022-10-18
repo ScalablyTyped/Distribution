@@ -1,8 +1,8 @@
 package typings.pngImg
 
 import typings.node.bufferMod.global.Buffer
-import typings.pngImg.typesMod.Color
-import typings.pngImg.typesMod.Size
+import typings.pngImg.distTypesMod.Color
+import typings.pngImg.distTypesMod.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

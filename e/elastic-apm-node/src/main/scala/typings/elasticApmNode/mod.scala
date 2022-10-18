@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.elasticApmNode.anon.Connect
 import typings.elasticApmNode.anon.Name
 import typings.elasticApmNode.anon.Spanid
-import typings.elasticApmNode.anon.SpanidTraceid
 import typings.elasticApmNode.anon.Traceid
-import typings.elasticApmNode.awsLambdaMod.AwsLambda.Handler
+import typings.elasticApmNode.anon.Transactionid
+import typings.elasticApmNode.typesAwsLambdaMod.AwsLambda.Handler
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
@@ -275,6 +275,8 @@ object mod extends Shortcut {
     
     var disableSend: js.UndefOr[Boolean] = js.undefined
     
+    var elasticsearchCaptureBodyUrls: js.UndefOr[js.Array[String]] = js.undefined
+    
     var environment: js.UndefOr[String] = js.undefined
     
     var errorMessageMaxLength: js.UndefOr[String] = js.undefined
@@ -476,6 +478,12 @@ object mod extends Shortcut {
       inline def setDisableSend(value: Boolean): Self = StObject.set(x, "disableSend", value.asInstanceOf[js.Any])
       
       inline def setDisableSendUndefined: Self = StObject.set(x, "disableSend", js.undefined)
+      
+      inline def setElasticsearchCaptureBodyUrls(value: js.Array[String]): Self = StObject.set(x, "elasticsearchCaptureBodyUrls", value.asInstanceOf[js.Any])
+      
+      inline def setElasticsearchCaptureBodyUrlsUndefined: Self = StObject.set(x, "elasticsearchCaptureBodyUrls", js.undefined)
+      
+      inline def setElasticsearchCaptureBodyUrlsVarargs(value: String*): Self = StObject.set(x, "elasticsearchCaptureBodyUrls", js.Array(value*))
       
       inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
@@ -742,6 +750,13 @@ object mod extends Shortcut {
     
     var message: js.UndefOr[String] = js.undefined
     
+    /**
+      * A Transaction or Span instance to make the parent of this error. If not
+      * given (undefined), then the current span or transaction will be used. If
+      * `null` is given, then no span or transaction will be used.
+      */
+    var parent: js.UndefOr[Transaction | Span | Null] = js.undefined
+    
     var request: js.UndefOr[IncomingMessage] = js.undefined
     
     var response: js.UndefOr[ServerResponse[IncomingMessage]] = js.undefined
@@ -782,6 +797,12 @@ object mod extends Shortcut {
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      
+      inline def setParent(value: Transaction | Span): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      inline def setParentNull: Self = StObject.set(x, "parent", null)
+      
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
       inline def setRequest(value: IncomingMessage): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -980,7 +1001,7 @@ object mod extends Shortcut {
     def end(): Unit = js.native
     def end(endTime: Double): Unit = js.native
     
-    var ids: SpanidTraceid = js.native
+    var ids: Traceid = js.native
     
     var name: String = js.native
     
@@ -990,6 +1011,12 @@ object mod extends Shortcut {
     def setLabel(name: String, value: LabelValue, stringify: Boolean): Boolean = js.native
     
     def setOutcome(outcome: Outcome): Unit = js.native
+    
+    def setServiceTarget(): Unit = js.native
+    def setServiceTarget(`type`: String): Unit = js.native
+    def setServiceTarget(`type`: String, name: String): Unit = js.native
+    def setServiceTarget(`type`: Null, name: String): Unit = js.native
+    def setServiceTarget(`type`: Unit, name: String): Unit = js.native
     
     def setType(): Unit = js.native
     def setType(`type`: String): Unit = js.native
@@ -1093,7 +1120,7 @@ object mod extends Shortcut {
     
     def ensureParentId(): String = js.native
     
-    var ids: Traceid = js.native
+    var ids: Transactionid = js.native
     
     // The following properties and methods are currently not documented as their API isn't considered official:
     // - timestamp, ended, id, traceId, parentId, sampled, duration()

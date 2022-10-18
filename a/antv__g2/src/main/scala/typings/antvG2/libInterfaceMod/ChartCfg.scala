@@ -1,7 +1,7 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvG2.paddingCalMod.PaddingCalCtor
-import typings.antvG2.viewMod.View
+import typings.antvG2.libChartLayoutPaddingCalMod.PaddingCalCtor
+import typings.antvG2.libChartViewMod.View
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

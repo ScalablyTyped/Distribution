@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "FreeCameraInputsManager")
 @js.native
 open class FreeCameraInputsManager protected ()
-  extends typings.babylonjs.legacyMod.FreeCameraInputsManager {
+  extends typings.babylonjs.legacyLegacyMod.FreeCameraInputsManager {
   /**
     * Instantiates a new FreeCameraInputsManager.
     * @param camera Defines the camera the inputs belong to
     */
-  def this(camera: typings.babylonjs.freeCameraMod.FreeCamera) = this()
+  def this(camera: typings.babylonjs.camerasFreeCameraMod.FreeCamera) = this()
 }

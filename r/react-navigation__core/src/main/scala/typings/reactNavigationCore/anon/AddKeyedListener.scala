@@ -5,7 +5,7 @@ import typings.reactNavigationCore.reactNavigationCoreStrings.action
 import typings.reactNavigationCore.reactNavigationCoreStrings.beforeRemove
 import typings.reactNavigationCore.reactNavigationCoreStrings.focus
 import typings.reactNavigationCore.reactNavigationCoreStrings.getState
-import typings.reactNavigationRouters.typesMod.NavigationAction
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.NavigationAction
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,9 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AddKeyedListener extends StObject {
   
-  var addKeyedListener: js.UndefOr[typings.reactNavigationCore.navigationBuilderContextMod.AddKeyedListener] = js.undefined
+  var addKeyedListener: js.UndefOr[
+    typings.reactNavigationCore.libTypescriptSrcNavigationBuilderContextMod.AddKeyedListener
+  ] = js.undefined
   
-  var addListener: js.UndefOr[typings.reactNavigationCore.navigationBuilderContextMod.AddListener] = js.undefined
+  var addListener: js.UndefOr[
+    typings.reactNavigationCore.libTypescriptSrcNavigationBuilderContextMod.AddListener
+  ] = js.undefined
   
   var onAction: js.UndefOr[
     js.Function2[

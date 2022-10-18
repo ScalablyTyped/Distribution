@@ -1,15 +1,15 @@
 package typings.reactMdForm
 
-import typings.reactMdForm.formThemeProviderMod.FormTheme
-import typings.reactMdForm.formThemeProviderMod.FormUnderlineDirection
-import typings.reactMdForm.getErrorMessageMod._ChangeValidationBehavior
-import typings.reactMdForm.textAreaMod.TextAreaResize
-import typings.reactMdForm.textFieldTextFieldMod.SupportedInputTypes
-import typings.reactMdForm.typesMod.SliderEventHandlerNames
-import typings.reactMdForm.typesMod._SliderDraggingBy
-import typings.reactMdForm.useNumberFieldMod._FixNumberOnBlur
-import typings.reactMdForm.utilsMod.FileReaderParser
-import typings.reactMdForm.utilsMod.FileUploadStatus
+import typings.reactMdForm.typesFileInputUtilsMod.FileReaderParser
+import typings.reactMdForm.typesFileInputUtilsMod.FileUploadStatus
+import typings.reactMdForm.typesFormThemeProviderMod.FormTheme
+import typings.reactMdForm.typesFormThemeProviderMod.FormUnderlineDirection
+import typings.reactMdForm.typesSliderTypesMod.SliderEventHandlerNames
+import typings.reactMdForm.typesSliderTypesMod._SliderDraggingBy
+import typings.reactMdForm.typesTextFieldGetErrorMessageMod._ChangeValidationBehavior
+import typings.reactMdForm.typesTextFieldTextAreaMod.TextAreaResize
+import typings.reactMdForm.typesTextFieldTextFieldMod.SupportedInputTypes
+import typings.reactMdForm.typesTextFieldUseNumberFieldMod._FixNumberOnBlur
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

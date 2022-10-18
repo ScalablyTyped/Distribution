@@ -1,6 +1,6 @@
 package typings.antdMobile.anon
 
-import typings.antdMobile.renderToContainerMod.GetContainer
+import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject

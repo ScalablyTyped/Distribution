@@ -11,10 +11,6 @@ object idbStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait KeyToKeyNoIndex extends StObject
-  inline def KeyToKeyNoIndex: KeyToKeyNoIndex = "KeyToKeyNoIndex".asInstanceOf[KeyToKeyNoIndex]
-  
-  @js.native
   sealed trait abort extends StObject
   inline def abort: abort = "abort".asInstanceOf[abort]
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "KeyframeTrack")
 @js.native
 open class KeyframeTrack protected ()
-  extends typings.three.threeMod.KeyframeTrack {
+  extends typings.three.srcThreeMod.KeyframeTrack {
   /**
     * @param name
     * @param times
@@ -30,5 +30,5 @@ object KeyframeTrack {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def toJSON(track: typings.three.keyframeTrackMod.KeyframeTrack): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(track.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def toJSON(track: typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(track.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

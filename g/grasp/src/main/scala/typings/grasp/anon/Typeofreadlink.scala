@@ -1,5 +1,6 @@
 package typings.grasp.anon
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.BufferEncodingOption
 import typings.node.fsMod.EncodingOption
@@ -13,28 +14,16 @@ trait Typeofreadlink extends StObject {
   
   def apply(
     path: PathLike,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* linkString */ String, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     options: BufferEncodingOption,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* linkString */ Buffer, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ Buffer, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     options: EncodingOption,
-    callback: js.Function2[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      Buffer | (/* linkString */ String), 
-      Unit
-    ]
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* linkString */ String), Unit]
   ): Unit = js.native
 }

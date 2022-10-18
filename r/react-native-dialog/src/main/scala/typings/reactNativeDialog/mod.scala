@@ -2,11 +2,11 @@ package typings.reactNativeDialog
 
 import typings.react.mod.FC
 import typings.reactNative.mod.TextProps
-import typings.reactNativeDialog.buttonMod.DialogButtonProps
-import typings.reactNativeDialog.codeInputMod.DialogCodeInputProps
-import typings.reactNativeDialog.containerMod.DialogContainerProps
-import typings.reactNativeDialog.inputMod.DialogInputProps
-import typings.reactNativeDialog.switchMod.DialogSwitchProps
+import typings.reactNativeDialog.libButtonMod.DialogButtonProps
+import typings.reactNativeDialog.libCodeInputMod.DialogCodeInputProps
+import typings.reactNativeDialog.libContainerMod.DialogContainerProps
+import typings.reactNativeDialog.libInputMod.DialogInputProps
+import typings.reactNativeDialog.libSwitchMod.DialogSwitchProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

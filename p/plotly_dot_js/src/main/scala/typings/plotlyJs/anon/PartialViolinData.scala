@@ -1,5 +1,6 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.libTracesScatterMod.ScatterSelectedMarker
 import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.Datum
 import typings.plotlyJs.mod.TypedArray
@@ -21,7 +22,6 @@ import typings.plotlyJs.plotlyJsStrings.v
 import typings.plotlyJs.plotlyJsStrings.violin
 import typings.plotlyJs.plotlyJsStrings.violins
 import typings.plotlyJs.plotlyJsStrings.width
-import typings.plotlyJs.scatterMod.ScatterSelectedMarker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +49,7 @@ trait PartialViolinData
   
   var line: js.UndefOr[PartialcolorColorwidthnumColor] = js.undefined
   
-  var marker: js.UndefOr[PartialBoxPlotMarkerColor] = js.undefined
+  var marker: js.UndefOr[PartialBoxPlotMarker] = js.undefined
   
   var meanline: js.UndefOr[Partialvisiblebooleancolo] = js.undefined
   
@@ -148,7 +148,7 @@ object PartialViolinData {
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    inline def setMarker(value: PartialBoxPlotMarkerColor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PartialBoxPlotMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     

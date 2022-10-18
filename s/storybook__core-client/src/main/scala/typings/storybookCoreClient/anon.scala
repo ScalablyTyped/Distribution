@@ -1,11 +1,11 @@
 package typings.storybookCoreClient
 
+import typings.node.NodeModule
 import typings.std.Element
 import typings.std.Map
 import typings.std.Record
-import typings.storybookCoreClient.typesMod.Loadable
-import typings.storybookStore.ts39TypesMod.RenderContext
-import typings.webpackEnv.NodeModule
+import typings.storybookCoreClient.distTs3Dot9PreviewTypesMod.Loadable
+import typings.storybookStore.distTs3Dot9TypesMod.RenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

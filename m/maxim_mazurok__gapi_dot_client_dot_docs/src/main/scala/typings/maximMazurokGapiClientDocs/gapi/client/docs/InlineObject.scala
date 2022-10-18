@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,7 @@ trait InlineObject extends StObject {
   
   /** The suggested changes to the inline object properties, keyed by suggestion ID. */
   var suggestedInlineObjectPropertiesChanges: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedInlineObjectProperties}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.InlineObject & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedInlineObjectProperties} */ js.Any
   ] = js.undefined
   
   /** The suggested insertion ID. If empty, then this is not a suggested insertion. */
@@ -50,9 +47,7 @@ object InlineObject {
     inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
     
     inline def setSuggestedInlineObjectPropertiesChanges(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedInlineObjectProperties}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.InlineObject & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedInlineObjectProperties} */ js.Any
     ): Self = StObject.set(x, "suggestedInlineObjectPropertiesChanges", value.asInstanceOf[js.Any])
     
     inline def setSuggestedInlineObjectPropertiesChangesUndefined: Self = StObject.set(x, "suggestedInlineObjectPropertiesChanges", js.undefined)

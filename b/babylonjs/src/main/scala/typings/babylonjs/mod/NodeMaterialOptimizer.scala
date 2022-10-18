@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "NodeMaterialOptimizer")
 @js.native
 open class NodeMaterialOptimizer ()
-  extends typings.babylonjs.legacyMod.NodeMaterialOptimizer
+  extends typings.babylonjs.legacyLegacyMod.NodeMaterialOptimizer

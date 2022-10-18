@@ -1,6 +1,6 @@
 package typings.reactNativeNavigation.anon
 
-import typings.reactNativeNavigation.optionsMod.Interpolation
+import typings.reactNativeNavigation.libDistSrcInterfacesOptionsMod.Interpolation
 import typings.reactNativeNavigation.reactNativeNavigationStrings.decelerate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

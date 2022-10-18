@@ -3,10 +3,10 @@ package typings.routeRecognizer
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.routeRecognizer.anon.As
-import typings.routeRecognizer.dslMod.Delegate
-import typings.routeRecognizer.dslMod.MatchCallback
-import typings.routeRecognizer.dslMod.Opaque
-import typings.routeRecognizer.dslMod.Route
+import typings.routeRecognizer.distRouteRecognizerDslMod.Delegate
+import typings.routeRecognizer.distRouteRecognizerDslMod.MatchCallback
+import typings.routeRecognizer.distRouteRecognizerDslMod.Opaque
+import typings.routeRecognizer.distRouteRecognizerDslMod.Route
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

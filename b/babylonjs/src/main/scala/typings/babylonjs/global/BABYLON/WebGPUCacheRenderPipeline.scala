@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BABYLON.WebGPUCacheRenderPipeline")
+/* note: abstract class */ @JSGlobal("BABYLON.WebGPUCacheRenderPipeline")
 @js.native
-abstract class WebGPUCacheRenderPipeline protected ()
+open class WebGPUCacheRenderPipeline protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebGPUCacheRenderPipeline {
   def this(

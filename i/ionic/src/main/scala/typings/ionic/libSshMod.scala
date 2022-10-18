@@ -11,7 +11,7 @@ import typings.ionic.definitionsMod.ResourceClientLoad
 import typings.ionic.definitionsMod.ResourceClientPaginate
 import typings.ionic.definitionsMod.Response
 import typings.ionic.definitionsMod.SSHKey
-import typings.ionic.httpMod.ResourceClient
+import typings.ionic.libHttpMod.ResourceClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

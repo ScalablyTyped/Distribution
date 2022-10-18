@@ -2,10 +2,10 @@ package typings.chartJs.mod
 
 import typings.chartJs.anon.Max
 import typings.chartJs.anon.MaxDefined
-import typings.chartJs.basicMod.AnyObject
-import typings.chartJs.elementMod.Element
-import typings.chartJs.geometricMod.ChartArea
-import typings.chartJs.layoutMod.LayoutItem
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesElementMod.Element
+import typings.chartJs.typesGeometricMod.ChartArea
+import typings.chartJs.typesLayoutMod.LayoutItem
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

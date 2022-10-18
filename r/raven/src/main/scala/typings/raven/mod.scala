@@ -187,9 +187,9 @@ object mod {
       var options: HTTPTransportOptions = js.native
     }
     
-    @JSImport("raven", "transports.Transport")
+    /* note: abstract class */ @JSImport("raven", "transports.Transport")
     @js.native
-    abstract class Transport () extends EventEmitter {
+    open class Transport () extends EventEmitter {
       def this(options: EventEmitterOptions) = this()
       
       def send(client: Client, message: Any, headers: OutgoingHttpHeaders, eventId: String, cb: CaptureCallback): Unit = js.native

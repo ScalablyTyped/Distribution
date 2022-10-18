@@ -874,27 +874,9 @@ object mod {
     def get(key: String): NodePath[Node] | js.Array[NodePath[Node]] = js.native
     def get(key: String, context: Boolean): NodePath[Node] | js.Array[NodePath[Node]] = js.native
     def get(key: String, context: TraversalContext): NodePath[Node] | js.Array[NodePath[Node]] = js.native
-    def get[K /* <: /* keyof T */ String */](key: K): (NodePath[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-      ]) | (js.Array[
-        NodePath[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[K][number] */ js.Any
-        ]
-      ]) = js.native
-    def get[K /* <: /* keyof T */ String */](key: K, context: Boolean): (NodePath[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-      ]) | (js.Array[
-        NodePath[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[K][number] */ js.Any
-        ]
-      ]) = js.native
-    def get[K /* <: /* keyof T */ String */](key: K, context: TraversalContext): (NodePath[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-      ]) | (js.Array[
-        NodePath[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[K][number] */ js.Any
-        ]
-      ]) = js.native
+    def get[K /* <: /* keyof T */ String */](key: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends std.Array<babel-traverse.babel-traverse.Node | null | undefined> ? std.Array<babel-traverse.babel-traverse.NodePath<T[K][number]>> : T[K] extends babel-traverse.babel-traverse.Node | null | undefined ? babel-traverse.babel-traverse.NodePath<T[K]> : never */ js.Any = js.native
+    def get[K /* <: /* keyof T */ String */](key: K, context: Boolean): /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends std.Array<babel-traverse.babel-traverse.Node | null | undefined> ? std.Array<babel-traverse.babel-traverse.NodePath<T[K][number]>> : T[K] extends babel-traverse.babel-traverse.Node | null | undefined ? babel-traverse.babel-traverse.NodePath<T[K]> : never */ js.Any = js.native
+    def get[K /* <: /* keyof T */ String */](key: K, context: TraversalContext): /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends std.Array<babel-traverse.babel-traverse.Node | null | undefined> ? std.Array<babel-traverse.babel-traverse.NodePath<T[K][number]>> : T[K] extends babel-traverse.babel-traverse.Node | null | undefined ? babel-traverse.babel-traverse.NodePath<T[K]> : never */ js.Any = js.native
     
     def getAllNextSiblings(): js.Array[NodePath[Node]] = js.native
     
@@ -1671,7 +1653,7 @@ object mod {
     def traverse(visitor: Visitor[Node]): Unit = js.native
     def traverse[T](visitor: Visitor[T], state: T): Unit = js.native
     
-    var `type`: String | Null = js.native
+    var `type`: /* import warning: importer.ImportType#apply Failed type conversion: T extends undefined | null ? string | null : string */ js.Any = js.native
     
     var typeAnnotation: js.Object = js.native
     
@@ -1821,17 +1803,6 @@ object mod {
     @JSName("traverse")
     def traverse_S[S](node: Node, opts: TraverseOptions[S], state: S): Unit = js.native
   }
-  
-  inline def default_S[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default_S[S](
-    parent: js.Array[Node],
-    opts: TraverseOptions[S],
-    scope: Scope,
-    state: S,
-    parentPath: NodePath[Node]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default_S[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default_S[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Node = typings.babelTypes.mod.Node
   

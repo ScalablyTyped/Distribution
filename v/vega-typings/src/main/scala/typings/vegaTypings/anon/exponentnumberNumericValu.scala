@@ -1,6 +1,6 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.encodeMod.NumericValueRef
+import typings.vegaTypings.typesSpecEncodeMod.NumericValueRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

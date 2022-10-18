@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.csstransitionMod.CSSTransitionProps
+import typings.primereact.csstransitionCsstransitionMod.CSSTransitionProps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "CSSTransition")
 @js.native
 open class CSSTransition[Ref /* <: js.UndefOr[HTMLElement] */] protected ()
-  extends typings.primereact.csstransitionMod.CSSTransition[Ref] {
+  extends typings.primereact.csstransitionCsstransitionMod.CSSTransition[Ref] {
   def this(props: CSSTransitionProps[Ref]) = this()
   /**
     * @deprecated

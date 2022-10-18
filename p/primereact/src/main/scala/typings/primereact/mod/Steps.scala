@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.stepsMod.StepsProps
+import typings.primereact.stepsStepsMod.StepsProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Steps")
 @js.native
 open class Steps protected ()
-  extends typings.primereact.stepsMod.Steps {
+  extends typings.primereact.stepsStepsMod.Steps {
   def this(props: StepsProps) = this()
   /**
     * @deprecated

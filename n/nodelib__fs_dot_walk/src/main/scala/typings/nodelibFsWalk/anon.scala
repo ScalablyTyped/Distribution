@@ -2,14 +2,13 @@ package typings.nodelibFsWalk
 
 import typings.node.fsMod.Stats
 import typings.nodelibFsScandir.anon.WithFileTypes
-import typings.nodelibFsScandir.mod.AsyncCallback
-import typings.nodelibFsScandir.settingsMod.Options
-import typings.nodelibFsScandir.settingsMod.default
-import typings.nodelibFsScandir.typesMod.Dirent
-import typings.nodelibFsScandir.typesMod.Entry
-import typings.nodelibFsScandir.typesMod.ErrnoException
-import typings.nodelibFsStat.fsMod.StatAsynchronousMethod
-import typings.nodelibFsStat.fsMod.StatSynchronousMethod
+import typings.nodelibFsScandir.outSettingsMod.Options
+import typings.nodelibFsScandir.outSettingsMod.default
+import typings.nodelibFsScandir.outTypesMod.Dirent
+import typings.nodelibFsScandir.outTypesMod.Entry
+import typings.nodelibFsScandir.outTypesMod.ErrnoException
+import typings.nodelibFsStat.outAdaptersFsMod.StatAsynchronousMethod
+import typings.nodelibFsStat.outAdaptersFsMod.StatSynchronousMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +58,7 @@ object anon {
       
       inline def setLstat(
         value: (/* path */ String, /* callback */ js.Function2[
-              /* error */ typings.nodelibFsStat.typesMod.ErrnoException | Null, 
+              /* error */ typings.nodelibFsStat.outTypesMod.ErrnoException | Null, 
               /* stats */ Stats, 
               Unit
             ]) => Unit
@@ -83,7 +82,7 @@ object anon {
       
       inline def setStat(
         value: (/* path */ String, /* callback */ js.Function2[
-              /* error */ typings.nodelibFsStat.typesMod.ErrnoException | Null, 
+              /* error */ typings.nodelibFsStat.outTypesMod.ErrnoException | Null, 
               /* stats */ Stats, 
               Unit
             ]) => Unit
@@ -95,13 +94,5 @@ object anon {
       
       inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
     }
-  }
-  
-  @js.native
-  trait Typeofscandir extends StObject {
-    
-    def apply(path: String, callback: AsyncCallback): Unit = js.native
-    def apply(path: String, optionsOrSettings: Options, callback: AsyncCallback): Unit = js.native
-    def apply(path: String, optionsOrSettings: default, callback: AsyncCallback): Unit = js.native
   }
 }

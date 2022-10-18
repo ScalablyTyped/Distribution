@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "Toolbar")
 @js.native
 open class Toolbar protected ()
-  extends typings.carbonComponents.componentsMod.Toolbar {
+  extends typings.carbonComponents.globalsJsComponentsMod.Toolbar {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialToolbarOptions) = this()
 }

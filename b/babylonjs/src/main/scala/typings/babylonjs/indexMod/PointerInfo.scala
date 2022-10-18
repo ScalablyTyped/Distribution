@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.deviceInputEventsMod.IMouseEvent
+import typings.babylonjs.eventsDeviceInputEventsMod.IMouseEvent
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,6 +22,6 @@ open class PointerInfo protected ()
     /**
     * Defines the picking info associated to the info (if any)\
     */
-  pickInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo]
+  pickInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]
   ) = this()
 }

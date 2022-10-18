@@ -20,13 +20,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object webMod {
   
-  @JSImport("core-js/library/web", JSImport.Namespace)
+  @JSImport("core-js/web", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   object Array {
     
-    @JSImport("core-js/library/web", "Array")
+    @JSImport("core-js/web", "Array")
     @js.native
     val ^ : js.Any = js.native
     
@@ -268,7 +268,7 @@ object webMod {
   
   object Date {
     
-    @JSImport("core-js/library/web", "Date")
+    @JSImport("core-js/web", "Date")
     @js.native
     val ^ : js.Any = js.native
     
@@ -283,13 +283,13 @@ object webMod {
     inline def toISOString(date: typings.coreJs.Date): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("toISOString")(date.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   }
   
-  @JSImport("core-js/library/web", "Dict")
+  @JSImport("core-js/web", "Dict")
   @js.native
   val Dict: DictConstructor = js.native
   
   object Function {
     
-    @JSImport("core-js/library/web", "Function")
+    @JSImport("core-js/web", "Function")
     @js.native
     val ^ : js.Any = js.native
     
@@ -299,7 +299,7 @@ object webMod {
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("core-js/library/web", "Map")
+  @JSImport("core-js/web", "Map")
   @js.native
   /* standard es2015.collection */
   open class Map[K, V] ()
@@ -308,13 +308,13 @@ object webMod {
     def this(entries: js.Array[js.Tuple2[K, V]]) = this()
     def this(iterable: js.Iterable[js.Tuple2[K, V]]) = this()
   }
-  @JSImport("core-js/library/web", "Map")
+  @JSImport("core-js/web", "Map")
   @js.native
   val Map: MapConstructor = js.native
   
   object Math {
     
-    @JSImport("core-js/library/web", "Math")
+    @JSImport("core-js/web", "Math")
     @js.native
     val ^ : js.Any = js.native
     
@@ -355,21 +355,21 @@ object webMod {
   
   object Number {
     
-    @JSImport("core-js/library/web", "Number")
+    @JSImport("core-js/web", "Number")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("core-js/library/web", "Number.EPSILON")
+    @JSImport("core-js/web", "Number.EPSILON")
     @js.native
     def EPSILON: Double = js.native
     inline def EPSILON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPSILON")(x.asInstanceOf[js.Any])
     
-    @JSImport("core-js/library/web", "Number.MAX_SAFE_INTEGER")
+    @JSImport("core-js/web", "Number.MAX_SAFE_INTEGER")
     @js.native
     def MAX_SAFE_INTEGER: Double = js.native
     inline def MAX_SAFE_INTEGER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_SAFE_INTEGER")(x.asInstanceOf[js.Any])
     
-    @JSImport("core-js/library/web", "Number.MIN_SAFE_INTEGER")
+    @JSImport("core-js/web", "Number.MIN_SAFE_INTEGER")
     @js.native
     def MIN_SAFE_INTEGER: Double = js.native
     inline def MIN_SAFE_INTEGER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_SAFE_INTEGER")(x.asInstanceOf[js.Any])
@@ -427,7 +427,7 @@ object webMod {
   
   object Object {
     
-    @JSImport("core-js/library/web", "Object")
+    @JSImport("core-js/web", "Object")
     @js.native
     val ^ : js.Any = js.native
     
@@ -483,7 +483,7 @@ object webMod {
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("core-js/library/web", "Promise")
+  @JSImport("core-js/web", "Promise")
   @js.native
   open class Promise[T] protected ()
     extends StObject
@@ -501,13 +501,13 @@ object webMod {
             Unit
           ]) = this()
   }
-  @JSImport("core-js/library/web", "Promise")
+  @JSImport("core-js/web", "Promise")
   @js.native
   val Promise: PromiseConstructor = js.native
   
   object Reflect {
     
-    @JSImport("core-js/library/web", "Reflect")
+    @JSImport("core-js/web", "Reflect")
     @js.native
     val ^ : js.Any = js.native
     
@@ -760,7 +760,7 @@ object webMod {
   
   object RegExp {
     
-    @JSImport("core-js/library/web", "RegExp")
+    @JSImport("core-js/web", "RegExp")
     @js.native
     val ^ : js.Any = js.native
     
@@ -768,7 +768,7 @@ object webMod {
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("core-js/library/web", "Set")
+  @JSImport("core-js/web", "Set")
   @js.native
   /* standard es2015.collection */
   open class Set[T] ()
@@ -776,13 +776,13 @@ object webMod {
        with typings.std.Set[T] {
     def this(values: js.Array[T]) = this()
   }
-  @JSImport("core-js/library/web", "Set")
+  @JSImport("core-js/web", "Set")
   @js.native
   val Set: SetConstructor = js.native
   
   object String {
     
-    @JSImport("core-js/library/web", "String")
+    @JSImport("core-js/web", "String")
     @js.native
     val ^ : js.Any = js.native
     
@@ -816,12 +816,12 @@ object webMod {
     inline def unescapeHTML(text: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeHTML")(text.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   }
   
-  @JSImport("core-js/library/web", "Symbol")
+  @JSImport("core-js/web", "Symbol")
   @js.native
   val Symbol: SymbolConstructor = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("core-js/library/web", "WeakMap")
+  @JSImport("core-js/web", "WeakMap")
   @js.native
   /* standard es2015.collection */
   open class WeakMap[K /* <: js.Object */, V] ()
@@ -829,12 +829,12 @@ object webMod {
        with typings.std.WeakMap[K, V] {
     def this(entries: js.Array[js.Tuple2[K, V]]) = this()
   }
-  @JSImport("core-js/library/web", "WeakMap")
+  @JSImport("core-js/web", "WeakMap")
   @js.native
   val WeakMap: WeakMapConstructor = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("core-js/library/web", "WeakSet")
+  @JSImport("core-js/web", "WeakSet")
   @js.native
   /* standard es2015.collection */
   open class WeakSet[T /* <: js.Object */] ()
@@ -844,11 +844,11 @@ object webMod {
     def this(iterable: js.Iterable[T]) = this()
     def this(values: js.Array[T]) = this()
   }
-  @JSImport("core-js/library/web", "WeakSet")
+  @JSImport("core-js/web", "WeakSet")
   @js.native
   val WeakSet: WeakSetConstructor = js.native
   
-  @JSImport("core-js/library/web", "_")
+  @JSImport("core-js/web", "_")
   @js.native
   val _underscore: Boolean = js.native
   
@@ -862,7 +862,7 @@ object webMod {
   
   inline def getIterator[T](iterable: js.Iterable[T]): js.Iterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIterator")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Iterator[T]]
   
-  @JSImport("core-js/library/web", "global")
+  @JSImport("core-js/web", "global")
   @js.native
   val global: Any = js.native
   
@@ -879,7 +879,7 @@ object webMod {
   inline def setTimeout(handler: Any, timeout: Any, args: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
   inline def setTimeout(handler: Any, timeout: Unit, args: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
   
-  @JSImport("core-js/library/web", "version")
+  @JSImport("core-js/web", "version")
   @js.native
   val version: java.lang.String = js.native
 }

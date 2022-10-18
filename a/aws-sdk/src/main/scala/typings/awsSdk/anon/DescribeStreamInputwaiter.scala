@@ -1,9 +1,9 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.kinesisMod.DescribeStreamInputLimit
-import typings.awsSdk.kinesisMod.ShardId
-import typings.awsSdk.kinesisMod.StreamName
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsKinesisMod.DescribeStreamInputLimit
+import typings.awsSdk.clientsKinesisMod.ShardId
+import typings.awsSdk.clientsKinesisMod.StreamName
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ trait DescribeStreamInputwaiter extends StObject {
   /**
     * The name of the stream to describe.
     */
-  var StreamName: typings.awsSdk.kinesisMod.StreamName
+  var StreamName: typings.awsSdk.clientsKinesisMod.StreamName
 }
 object DescribeStreamInputwaiter {
   

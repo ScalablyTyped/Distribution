@@ -1,8 +1,8 @@
 package typings.tuyaPanelKit.anon
 
 import typings.std.Extract
-import typings.tuyaPanelKit.commonActionsMod._ResetState
-import typings.tuyaPanelKit.routersTypesMod.PartialRoute
+import typings.tuyaPanelKit.`@reactNavigationRoutersCommonActionsMod`._ResetState
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.PartialRoute
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,7 +30,7 @@ trait PartialStateNavigationSta
   
   val routes: js.Array[
     PartialRoute[
-      typings.tuyaPanelKit.routersTypesMod.Route[
+      typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[
         /* import warning: importer.ImportType#apply Failed type conversion: std.Array<std.Extract<keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase, string>>[number] */ js.Any, 
         js.UndefOr[js.Object]
       ]
@@ -46,7 +46,7 @@ object PartialStateNavigationSta {
   inline def apply(
     routes: js.Array[
       PartialRoute[
-        typings.tuyaPanelKit.routersTypesMod.Route[
+        typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[
           /* import warning: importer.ImportType#apply Failed type conversion: std.Array<std.Extract<keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase, string>>[number] */ js.Any, 
           js.UndefOr[js.Object]
         ]
@@ -94,7 +94,7 @@ object PartialStateNavigationSta {
     inline def setRoutes(
       value: js.Array[
           PartialRoute[
-            typings.tuyaPanelKit.routersTypesMod.Route[
+            typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[
               /* import warning: importer.ImportType#apply Failed type conversion: std.Array<std.Extract<keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase, string>>[number] */ js.Any, 
               js.UndefOr[js.Object]
             ]
@@ -104,7 +104,7 @@ object PartialStateNavigationSta {
     
     inline def setRoutesVarargs(
       value: (PartialRoute[
-          typings.tuyaPanelKit.routersTypesMod.Route[
+          typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[
             /* import warning: importer.ImportType#apply Failed type conversion: std.Array<std.Extract<keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase, string>>[number] */ js.Any, 
             js.UndefOr[js.Object]
           ]

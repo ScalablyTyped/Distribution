@@ -1,6 +1,6 @@
 package typings.ethersprojectContracts
 
-import typings.ethersprojectBignumber.bignumberMod.BigNumberish
+import typings.ethersprojectBignumber.libBignumberMod.BigNumberish
 import typings.ethersprojectBignumber.mod.BigNumber
 import typings.ethersprojectBytes.mod.BytesLike
 import org.scalablytyped.runtime.StObject

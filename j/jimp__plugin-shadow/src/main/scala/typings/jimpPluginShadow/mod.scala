@@ -1,6 +1,6 @@
 package typings.jimpPluginShadow
 
-import typings.jimpCore.etcMod.ImageCallback
+import typings.jimpCore.typesEtcMod.ImageCallback
 import typings.jimpPluginShadow.anon.Blur
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

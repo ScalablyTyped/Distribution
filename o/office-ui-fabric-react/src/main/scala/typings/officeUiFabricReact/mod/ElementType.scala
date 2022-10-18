@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ElementType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.buttonTypesMod.ElementType & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ElementType & Double
+  ] = js.native
   
-  /* 1 */ val anchor: typings.officeUiFabricReact.buttonTypesMod.ElementType.anchor & Double = js.native
+  /* 1 */ val anchor: typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ElementType.anchor & Double = js.native
   
-  /* 0 */ val button: typings.officeUiFabricReact.buttonTypesMod.ElementType.button & Double = js.native
+  /* 0 */ val button: typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ElementType.button & Double = js.native
 }

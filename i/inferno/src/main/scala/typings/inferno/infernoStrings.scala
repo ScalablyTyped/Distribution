@@ -1,9 +1,9 @@
 package typings.inferno
 
-import typings.inferno.typesMod.Inferno.HTMLAttributeReferrerPolicy
-import typings.inferno.typesMod.Inferno._AriaRole
-import typings.inferno.typesMod.Inferno._HTMLAttributeAnchorTarget
-import typings.inferno.typesMod.Inferno._HTMLInputTypeAttribute
+import typings.inferno.distCoreTypesMod.Inferno.HTMLAttributeReferrerPolicy
+import typings.inferno.distCoreTypesMod.Inferno._AriaRole
+import typings.inferno.distCoreTypesMod.Inferno._HTMLAttributeAnchorTarget
+import typings.inferno.distCoreTypesMod.Inferno._HTMLInputTypeAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

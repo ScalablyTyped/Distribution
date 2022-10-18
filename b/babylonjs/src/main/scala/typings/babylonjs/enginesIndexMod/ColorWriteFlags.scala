@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ColorWriteFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.webgpuConstantsMod.ColorWriteFlags & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ColorWriteFlags & Double] = js.native
   
-  /* 15 */ val All: typings.babylonjs.webgpuConstantsMod.ColorWriteFlags.All & Double = js.native
+  /* 15 */ val All: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ColorWriteFlags.All & Double = js.native
   
-  /* 8 */ val Alpha: typings.babylonjs.webgpuConstantsMod.ColorWriteFlags.Alpha & Double = js.native
+  /* 8 */ val Alpha: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ColorWriteFlags.Alpha & Double = js.native
   
-  /* 4 */ val Blue: typings.babylonjs.webgpuConstantsMod.ColorWriteFlags.Blue & Double = js.native
+  /* 4 */ val Blue: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ColorWriteFlags.Blue & Double = js.native
   
-  /* 2 */ val Green: typings.babylonjs.webgpuConstantsMod.ColorWriteFlags.Green & Double = js.native
+  /* 2 */ val Green: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ColorWriteFlags.Green & Double = js.native
   
-  /* 1 */ val Red: typings.babylonjs.webgpuConstantsMod.ColorWriteFlags.Red & Double = js.native
+  /* 1 */ val Red: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ColorWriteFlags.Red & Double = js.native
 }

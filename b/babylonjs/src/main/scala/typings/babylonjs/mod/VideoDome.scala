@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "VideoDome")
 @js.native
 open class VideoDome protected ()
-  extends typings.babylonjs.legacyMod.VideoDome {
+  extends typings.babylonjs.legacyLegacyMod.VideoDome {
   /**
     * Create an instance of this class and pass through the parameters to the relevant classes- Texture, StandardMaterial, and Mesh.
     * @param name Element's name, child elements will append suffixes for their own names.

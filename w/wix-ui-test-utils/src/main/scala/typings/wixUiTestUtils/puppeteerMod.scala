@@ -3,15 +3,15 @@ package typings.wixUiTestUtils
 import typings.unidriverCore.mod.UniDriver
 import typings.wixUiTestUtils.anon.DataHookPage
 import typings.wixUiTestUtils.anon.Page
-import typings.wixUiTestUtils.baseDriverMod.BaseUniDriver
-import typings.wixUiTestUtils.puppeteerPuppeteerMod.DriverFactoryOptions
+import typings.wixUiTestUtils.distSrcBaseDriverMod.BaseUniDriver
+import typings.wixUiTestUtils.distSrcPuppeteerPuppeteerMod.DriverFactoryOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object puppeteerMod {
   
-  @JSImport("wix-ui-test-utils/dist/src/puppeteer", JSImport.Namespace)
+  @JSImport("wix-ui-test-utils/puppeteer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

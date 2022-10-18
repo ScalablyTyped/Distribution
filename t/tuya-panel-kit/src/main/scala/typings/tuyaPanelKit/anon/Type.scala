@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Type
   extends StObject
-     with typings.tuyaPanelKit.commonActionsMod.Action {
+     with typings.tuyaPanelKit.`@reactNavigationRoutersCommonActionsMod`.Action {
   
   /**
     * List of previously visited route keys.

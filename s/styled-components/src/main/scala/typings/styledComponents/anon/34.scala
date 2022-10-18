@@ -1,13 +1,8 @@
 package typings.styledComponents.anon
 
 import typings.std.ReturnType
-import typings.styledComponents.distTypesMod.IStyledComponentFactory
-import typings.styledComponents.distTypesMod.IStyledNativeComponentFactory
-import typings.styledComponents.distTypesMod.Interpolation
-import typings.styledComponents.distTypesMod.StyledNativeOptions
-import typings.styledComponents.distTypesMod.StyledOptions
-import typings.styledComponents.distTypesMod.Styles
-import typings.styledComponents.styledComponentsStrings.h3
+import typings.styledComponents.nativeDistDistTypesMod.Interpolation
+import typings.styledComponents.nativeDistDistTypesMod.Styles
 import typings.styledComponents.styledComponentsStrings.native
 import typings.styledComponents.styledComponentsStrings.web
 import org.scalablytyped.runtime.StObject
@@ -19,13 +14,15 @@ trait `34`[OuterProps, Environment /* <: web | native */, // used for styled<{}>
 OuterStatics] extends StObject {
   
   def apply[Props, Statics](initialStyles: Styles[OuterProps & Props], interpolations: (Interpolation[OuterProps & Props])*): ReturnType[
-    (IStyledNativeComponentFactory[h3, OuterProps & Props, OuterStatics & Statics]) | (IStyledComponentFactory[h3, OuterProps & Props, OuterStatics & Statics])
+    /* import warning: importer.ImportType#apply Failed type conversion: Environment extends 'web' ? styled-components.styled-components/native/dist/dist/types.IStyledComponentFactory<'h3', OuterProps & Props, OuterStatics & Statics> : styled-components.styled-components/native/dist/dist/types.IStyledNativeComponentFactory<'h3', OuterProps & Props, OuterStatics & Statics> */ js.Any
   ] = js.native
   
-  def attrs(attrs: typings.styledComponents.distTypesMod.Attrs[OuterProps]): Any = js.native
+  def attrs(attrs: typings.styledComponents.nativeDistDistTypesMod.Attrs[OuterProps]): Any = js.native
   
   /**
     * If config methods are called, wrap up a new template function and merge options */
   @JSName("withConfig")
-  def withConfig_web(config: StyledNativeOptions[OuterProps] | StyledOptions[OuterProps]): Any = js.native
+  def withConfig_web(
+    config: /* import warning: importer.ImportType#apply Failed type conversion: Environment extends 'web' ? styled-components.styled-components/native/dist/dist/types.StyledOptions<OuterProps> : styled-components.styled-components/native/dist/dist/types.StyledNativeOptions<OuterProps> */ js.Any
+  ): Any = js.native
 }

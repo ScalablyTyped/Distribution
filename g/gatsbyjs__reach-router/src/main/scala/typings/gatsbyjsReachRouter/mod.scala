@@ -1,6 +1,5 @@
 package typings.gatsbyjsReachRouter
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gatsbyjsReachRouter.anon.ReadonlyLocationProps
 import typings.gatsbyjsReachRouter.anon.ReadonlyLocationProviderP
 import typings.gatsbyjsReachRouter.anon.ReadonlyRouterPropsHTMLPr
@@ -137,7 +136,5 @@ object mod {
   
   inline def useNavigate(): NavigateFn = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigate")().asInstanceOf[NavigateFn]
   
-  inline def useParams[TParams /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ Param in keyof TParams ]:? string}
-    */ typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.useParams & TopLevel[Any] */](): TParams = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[TParams]
+  inline def useParams[TParams /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ Param in keyof TParams ]:? string} */ js.Any */](): TParams = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[TParams]
 }

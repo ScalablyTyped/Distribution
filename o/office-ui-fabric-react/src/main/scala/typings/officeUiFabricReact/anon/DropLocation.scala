@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.anon
 
-import typings.officeUiFabricReact.detailsListTypesMod.ColumnDragEndLocation
+import typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnDragEndLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

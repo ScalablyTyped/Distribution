@@ -1,7 +1,7 @@
 package typings.awsSdkClientS3Node
 
-import typings.awsSdkClientS3Node.inputTypesUnionMod._InputTypesUnion
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientS3Node.typesInputTypesUnionMod._InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

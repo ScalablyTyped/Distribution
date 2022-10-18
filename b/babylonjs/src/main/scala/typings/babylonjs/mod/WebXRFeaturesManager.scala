@@ -1,7 +1,7 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.webXRFeaturesManagerMod.IWebXRFeature
-import typings.babylonjs.webXRFeaturesManagerMod.WebXRFeatureConstructor
+import typings.babylonjs.xRWebXRFeaturesManagerMod.IWebXRFeature
+import typings.babylonjs.xRWebXRFeaturesManagerMod.WebXRFeatureConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXRFeaturesManager")
 @js.native
 open class WebXRFeaturesManager protected ()
-  extends typings.babylonjs.legacyMod.WebXRFeaturesManager {
+  extends typings.babylonjs.legacyLegacyMod.WebXRFeaturesManager {
   /**
     * constructs a new features manages.
     *
     * @param _xrSessionManager an instance of WebXRSessionManager
     */
-  def this(_xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager) = this()
+  def this(_xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager) = this()
 }
 /* static members */
 object WebXRFeaturesManager {
@@ -55,23 +55,23 @@ object WebXRFeaturesManager {
   inline def ConstructFeature(
     featureName: String,
     version: Double,
-    xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
+    xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager
   ): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
   inline def ConstructFeature(
     featureName: String,
     version: Double,
-    xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     options: Any
   ): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
   inline def ConstructFeature(
     featureName: String,
     version: Unit,
-    xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
+    xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager
   ): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
   inline def ConstructFeature(
     featureName: String,
     version: Unit,
-    xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     options: Any
   ): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
   

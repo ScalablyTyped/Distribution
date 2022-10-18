@@ -1,7 +1,7 @@
 package typings.formatjsIntl
 
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptions
-import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
+import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
 import typings.formatjsIntl.formatjsIntlStrings.date
 import typings.formatjsIntl.formatjsIntlStrings.number
 import typings.formatjsIntl.formatjsIntlStrings.relative

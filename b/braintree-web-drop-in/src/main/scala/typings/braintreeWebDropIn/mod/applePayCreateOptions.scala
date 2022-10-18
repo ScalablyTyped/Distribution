@@ -1,6 +1,6 @@
 package typings.braintreeWebDropIn.mod
 
-import typings.braintreeWeb.applePayMod.ApplePayPaymentRequest
+import typings.braintreeWeb.modulesApplePayMod.ApplePayPaymentRequest
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.`white-outline`
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.black
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.white

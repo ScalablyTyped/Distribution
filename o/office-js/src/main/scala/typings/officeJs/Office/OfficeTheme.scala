@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Provides access to the properties for Office theme colors.
   *
-  * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with File \> 
-  * Office Account \> Office Theme UI, which is applied across all Office host applications. Using Office theme colors is appropriate for mail and 
+  * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with **File** \>
+  * **Office Account** \> **Office Theme UI**, which is applied across all Office applications. Using Office theme colors is appropriate for mail and
   * task pane add-ins.
-  * 
+  *
   * @remarks
-  * 
-  * **Hosts**: Excel, Outlook (in preview), PowerPoint, Word
-  * 
+  *
+  * **Applications**: Excel, Outlook (in preview), PowerPoint, Word
+  *
   * `OfficeTheme` is only supported in Office on Windows, Mac, and the web.
   */
 trait OfficeTheme extends StObject {

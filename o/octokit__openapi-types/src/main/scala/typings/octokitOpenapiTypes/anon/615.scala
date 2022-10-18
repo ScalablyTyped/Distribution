@@ -6,21 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `615` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[CreatedatIdKey]
+  /** The handle for the GitHub user account. */
+  var username: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
 }
 object `615` {
   
-  inline def apply(applicationSlashjson: js.Array[CreatedatIdKey]): `615` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+  inline def apply(
+    username: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
+  ): `615` = {
+    val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[`615`]
   }
   
   extension [Self <: `615`](x: Self) {
     
-    inline def setApplicationSlashjson(value: js.Array[CreatedatIdKey]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonVarargs(value: CreatedatIdKey*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setUsername(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
+    ): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

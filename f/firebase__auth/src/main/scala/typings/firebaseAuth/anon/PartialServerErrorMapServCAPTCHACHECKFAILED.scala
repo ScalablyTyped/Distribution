@@ -1,6 +1,6 @@
 package typings.firebaseAuth.anon
 
-import typings.firebaseAuth.nodeEsmSrcCoreErrorsMod.AuthErrorCode
+import typings.firebaseAuth.distNodeEsmSrcCoreErrorsMod.AuthErrorCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

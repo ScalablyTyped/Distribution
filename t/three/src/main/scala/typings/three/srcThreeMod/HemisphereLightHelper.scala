@@ -1,0 +1,18 @@
+package typings.three.srcThreeMod
+
+import typings.three.srcUtilsMod.ColorRepresentation
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("three/src/Three", "HemisphereLightHelper")
+@js.native
+open class HemisphereLightHelper protected ()
+  extends typings.three.srcHelpersHemisphereLightHelperMod.HemisphereLightHelper {
+  def this(light: typings.three.srcLightsHemisphereLightMod.HemisphereLight, size: Double) = this()
+  def this(
+    light: typings.three.srcLightsHemisphereLightMod.HemisphereLight,
+    size: Double,
+    color: ColorRepresentation
+  ) = this()
+}

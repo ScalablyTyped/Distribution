@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "WebGLTextures")
 @js.native
 open class WebGLTextures protected ()
-  extends typings.three.threeMod.WebGLTextures {
+  extends typings.three.srcThreeMod.WebGLTextures {
   def this(
     gl: WebGLRenderingContext,
-    extensions: typings.three.webGLExtensionsMod.WebGLExtensions,
-    state: typings.three.webGLStateMod.WebGLState,
-    properties: typings.three.webGLPropertiesMod.WebGLProperties,
-    capabilities: typings.three.webGLCapabilitiesMod.WebGLCapabilities,
-    utils: typings.three.webGLUtilsMod.WebGLUtils,
-    info: typings.three.webGLInfoMod.WebGLInfo
+    extensions: typings.three.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions,
+    state: typings.three.srcRenderersWebglWebGLStateMod.WebGLState,
+    properties: typings.three.srcRenderersWebglWebGLPropertiesMod.WebGLProperties,
+    capabilities: typings.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities,
+    utils: typings.three.srcRenderersWebglWebGLUtilsMod.WebGLUtils,
+    info: typings.three.srcRenderersWebglWebGLInfoMod.WebGLInfo
   ) = this()
 }

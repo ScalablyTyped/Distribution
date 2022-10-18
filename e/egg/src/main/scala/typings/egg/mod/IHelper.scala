@@ -32,7 +32,7 @@ trait IHelper extends BaseContextClass {
     * @return {String} url path(without host)
     */
   def pathFor(name: String): String = js.native
-  def pathFor(name: String, params: PlainObject[js.Any]): String = js.native
+  def pathFor(name: String, params: PlainObject[Any]): String = js.native
   
   /**
     * Generate full URL(with host) for route. Takes the route name and a map of named params.
@@ -48,5 +48,5 @@ trait IHelper extends BaseContextClass {
     * @return {String} full url(with host)
     */
   def urlFor(name: String): String = js.native
-  def urlFor(name: String, params: PlainObject[js.Any]): String = js.native
+  def urlFor(name: String, params: PlainObject[Any]): String = js.native
 }

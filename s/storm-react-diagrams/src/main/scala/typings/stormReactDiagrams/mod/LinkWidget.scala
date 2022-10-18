@@ -1,6 +1,6 @@
 package typings.stormReactDiagrams.mod
 
-import typings.stormReactDiagrams.linkWidgetMod.LinkProps
+import typings.stormReactDiagrams.distSrcWidgetsLinkWidgetMod.LinkProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "LinkWidget")
 @js.native
 open class LinkWidget protected ()
-  extends typings.stormReactDiagrams.linkWidgetMod.LinkWidget {
+  extends typings.stormReactDiagrams.distSrcWidgetsLinkWidgetMod.LinkWidget {
   def this(props: LinkProps) = this()
 }

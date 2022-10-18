@@ -1,24 +1,24 @@
 package typings.antvScale
 
-import typings.antvScale.typesMod.BandOptions
-import typings.antvScale.typesMod.BaseOptions
-import typings.antvScale.typesMod.ConstantOptions
-import typings.antvScale.typesMod.ContinuousOptions
-import typings.antvScale.typesMod.DivergingOptions
-import typings.antvScale.typesMod.IdentityOptions
-import typings.antvScale.typesMod.Interpolate
-import typings.antvScale.typesMod.LinearOptions
-import typings.antvScale.typesMod.LogOptions
-import typings.antvScale.typesMod.OrdinalOptions
-import typings.antvScale.typesMod.PointOptions
-import typings.antvScale.typesMod.PowOptions
-import typings.antvScale.typesMod.QuantileOptions
-import typings.antvScale.typesMod.QuantizeOptions
-import typings.antvScale.typesMod.SequentialOptions
-import typings.antvScale.typesMod.SqrtOptions
-import typings.antvScale.typesMod.ThresholdOptions
-import typings.antvScale.typesMod.TickMethod
-import typings.antvScale.typesMod.TimeOptions
+import typings.antvScale.libTypesMod.BandOptions
+import typings.antvScale.libTypesMod.BaseOptions
+import typings.antvScale.libTypesMod.ConstantOptions
+import typings.antvScale.libTypesMod.ContinuousOptions
+import typings.antvScale.libTypesMod.DivergingOptions
+import typings.antvScale.libTypesMod.IdentityOptions
+import typings.antvScale.libTypesMod.Interpolate
+import typings.antvScale.libTypesMod.LinearOptions
+import typings.antvScale.libTypesMod.LogOptions
+import typings.antvScale.libTypesMod.OrdinalOptions
+import typings.antvScale.libTypesMod.PointOptions
+import typings.antvScale.libTypesMod.PowOptions
+import typings.antvScale.libTypesMod.QuantileOptions
+import typings.antvScale.libTypesMod.QuantizeOptions
+import typings.antvScale.libTypesMod.SequentialOptions
+import typings.antvScale.libTypesMod.SqrtOptions
+import typings.antvScale.libTypesMod.ThresholdOptions
+import typings.antvScale.libTypesMod.TickMethod
+import typings.antvScale.libTypesMod.TimeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,18 +28,18 @@ object mod {
   @JSImport("@antv/scale", "Band")
   @js.native
   open class Band[O /* <: BandOptions */] ()
-    extends typings.antvScale.bandMod.Band[O] {
+    extends typings.antvScale.libScalesBandMod.Band[O] {
     def this(options: BandOptions) = this()
   }
   
-  @JSImport("@antv/scale", "Base")
+  /* note: abstract class */ @JSImport("@antv/scale", "Base")
   @js.native
   /**
     * 构造函数，根据自定义的选项和默认选项生成当前选项
     * @param options 需要自定义配置的选项
     */
-  abstract class Base[O /* <: BaseOptions */] ()
-    extends typings.antvScale.baseMod.Base[O] {
+  open class Base[O /* <: BaseOptions */] ()
+    extends typings.antvScale.libScalesBaseMod.Base[O] {
     def this(options: O) = this()
   }
   
@@ -50,18 +50,18 @@ object mod {
     * @param options 需要自定义配置的选项
     */
   open class Constant ()
-    extends typings.antvScale.constantMod.Constant {
+    extends typings.antvScale.libScalesConstantMod.Constant {
     def this(options: ConstantOptions) = this()
   }
   
-  @JSImport("@antv/scale", "Continuous")
+  /* note: abstract class */ @JSImport("@antv/scale", "Continuous")
   @js.native
   /**
     * 构造函数，根据自定义的选项和默认选项生成当前选项
     * @param options 需要自定义配置的选项
     */
-  abstract class Continuous[O /* <: ContinuousOptions */] ()
-    extends typings.antvScale.continuousMod.Continuous[O] {
+  open class Continuous[O /* <: ContinuousOptions */] ()
+    extends typings.antvScale.libScalesContinuousMod.Continuous[O] {
     def this(options: O) = this()
   }
   
@@ -96,7 +96,7 @@ object mod {
   @JSImport("@antv/scale", "Diverging")
   @js.native
   open class Diverging ()
-    extends typings.antvScale.divergingMod.Diverging {
+    extends typings.antvScale.libScalesDivergingMod.Diverging {
     def this(options: DivergingOptions) = this()
   }
   
@@ -107,7 +107,7 @@ object mod {
     * @param options 需要自定义配置的选项
     */
   open class Identity ()
-    extends typings.antvScale.identityMod.Identity {
+    extends typings.antvScale.libScalesIdentityMod.Identity {
     def this(options: IdentityOptions) = this()
   }
   
@@ -118,7 +118,7 @@ object mod {
     * @param options 需要自定义配置的选项
     */
   open class Linear ()
-    extends typings.antvScale.linearMod.Linear {
+    extends typings.antvScale.libScalesLinearMod.Linear {
     def this(options: LinearOptions) = this()
   }
   
@@ -129,63 +129,63 @@ object mod {
     * @param options 需要自定义配置的选项
     */
   open class Log ()
-    extends typings.antvScale.logMod.Log {
+    extends typings.antvScale.libScalesLogMod.Log {
     def this(options: LogOptions) = this()
   }
   
   @JSImport("@antv/scale", "Ordinal")
   @js.native
   open class Ordinal[O /* <: OrdinalOptions */] ()
-    extends typings.antvScale.ordinalMod.Ordinal[O] {
+    extends typings.antvScale.libScalesOrdinalMod.Ordinal[O] {
     def this(options: OrdinalOptions) = this()
   }
   
   @JSImport("@antv/scale", "Point")
   @js.native
   open class Point ()
-    extends typings.antvScale.pointMod.Point {
+    extends typings.antvScale.libScalesPointMod.Point {
     def this(options: PointOptions) = this()
   }
   
   @JSImport("@antv/scale", "Pow")
   @js.native
   open class Pow[O /* <: PowOptions */] ()
-    extends typings.antvScale.powMod.Pow[O] {
+    extends typings.antvScale.libScalesPowMod.Pow[O] {
     def this(options: PowOptions) = this()
   }
   
   @JSImport("@antv/scale", "Quantile")
   @js.native
   open class Quantile ()
-    extends typings.antvScale.quantileMod.Quantile {
+    extends typings.antvScale.libScalesQuantileMod.Quantile {
     def this(options: QuantileOptions) = this()
   }
   
   @JSImport("@antv/scale", "Quantize")
   @js.native
   open class Quantize ()
-    extends typings.antvScale.quantizeMod.Quantize {
+    extends typings.antvScale.libScalesQuantizeMod.Quantize {
     def this(options: QuantizeOptions) = this()
   }
   
   @JSImport("@antv/scale", "Sequential")
   @js.native
   open class Sequential ()
-    extends typings.antvScale.sequentialMod.Sequential {
+    extends typings.antvScale.libScalesSequentialMod.Sequential {
     def this(options: SequentialOptions) = this()
   }
   
   @JSImport("@antv/scale", "Sqrt")
   @js.native
   open class Sqrt ()
-    extends typings.antvScale.sqrtMod.Sqrt {
+    extends typings.antvScale.libScalesSqrtMod.Sqrt {
     def this(options: SqrtOptions) = this()
   }
   
   @JSImport("@antv/scale", "Threshold")
   @js.native
   open class Threshold[O /* <: ThresholdOptions */] ()
-    extends typings.antvScale.thresholdMod.Threshold[O] {
+    extends typings.antvScale.libScalesThresholdMod.Threshold[O] {
     def this(options: ThresholdOptions) = this()
   }
   
@@ -196,7 +196,7 @@ object mod {
     * @param options 需要自定义配置的选项
     */
   open class Time ()
-    extends typings.antvScale.timeMod.Time {
+    extends typings.antvScale.libScalesTimeMod.Time {
     def this(options: TimeOptions) = this()
   }
   

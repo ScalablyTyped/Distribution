@@ -2,10 +2,10 @@ package typings.probeImageSize
 
 import org.scalablytyped.runtime.Instantiable3
 import typings.needle.mod.NeedleOptions
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.probeImageSize.probeImageSizeStrings.ECONTENT
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,8 +17,8 @@ object mod {
     */
   inline def apply(source: String): js.Promise[ProbeResult] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProbeResult]]
   inline def apply(source: String, opts: NeedleOptions): js.Promise[ProbeResult] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProbeResult]]
-  inline def apply(source: ReadableStream[Any]): js.Promise[ProbeResult] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProbeResult]]
-  inline def apply(source: ReadableStream[Any], keepOpen: Boolean): js.Promise[ProbeResult] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], keepOpen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProbeResult]]
+  inline def apply(source: ReadableStream): js.Promise[ProbeResult] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProbeResult]]
+  inline def apply(source: ReadableStream, keepOpen: Boolean): js.Promise[ProbeResult] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], keepOpen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProbeResult]]
   
   @JSImport("probe-image-size", JSImport.Namespace)
   @js.native

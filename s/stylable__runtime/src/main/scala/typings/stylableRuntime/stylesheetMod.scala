@@ -1,10 +1,10 @@
 package typings.stylableRuntime
 
 import typings.std.Record
-import typings.stylableRuntime.typesMod.ClassesMap
-import typings.stylableRuntime.typesMod.RuntimeStVar
-import typings.stylableRuntime.typesMod.STFunction
-import typings.stylableRuntime.typesMod.StateMap
+import typings.stylableRuntime.distTypesMod.ClassesMap
+import typings.stylableRuntime.distTypesMod.RuntimeStVar
+import typings.stylableRuntime.distTypesMod.STFunction
+import typings.stylableRuntime.distTypesMod.StateMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

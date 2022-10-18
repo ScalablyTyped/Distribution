@@ -72,7 +72,7 @@ trait AppointmentForm extends StObject {
   var location: Location | String
   
   /**
-    * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
+    * Provides access to the optional attendees of an event. The type of object and level of access depend on the mode of the current item.
     *
     * *Read mode*
     *

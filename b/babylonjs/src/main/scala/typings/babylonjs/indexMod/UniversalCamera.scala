@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "UniversalCamera")
 @js.native
 open class UniversalCamera protected ()
-  extends typings.babylonjs.babylonjsMod.UniversalCamera {
+  extends typings.babylonjs.camerasIndexMod.UniversalCamera {
   /**
     * The Universal Camera is the one to choose for first person shooter type games, and works with all the keyboard, mouse, touch and gamepads. This replaces the earlier Free Camera,
     * which still works and will still be found in many Playgrounds.
@@ -16,10 +16,10 @@ open class UniversalCamera protected ()
     * @param position Define the start position of the camera in the scene
     * @param scene Define the scene the camera belongs to
     */
-  def this(name: String, position: typings.babylonjs.mathVectorMod.Vector3) = this()
+  def this(name: String, position: typings.babylonjs.mathsMathDotvectorMod.Vector3) = this()
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
 }

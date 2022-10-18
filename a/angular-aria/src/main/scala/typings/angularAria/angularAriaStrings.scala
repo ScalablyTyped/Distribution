@@ -1,6 +1,6 @@
 package typings.angularAria
 
-import typings.angularAria.mod.aria.IAriaAttribute
+import typings.angularAria.angularMod.aria.IAriaAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

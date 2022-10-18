@@ -2,8 +2,8 @@ package typings.rrule
 
 import typings.rrule.anon.PartialOptions
 import typings.rrule.anon.PartialRRuleStrOptions
-import typings.rrule.i18nMod.Language
-import typings.rrule.weekdayMod.WeekdayStr
+import typings.rrule.distEsmNlpI18nMod.Language
+import typings.rrule.distEsmWeekdayMod.WeekdayStr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,27 +19,27 @@ object mod {
   object Frequency extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.rrule.typesMod.Frequency & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.rrule.distEsmTypesMod.Frequency & Double] = js.native
     
-    /* 3 */ val DAILY: typings.rrule.typesMod.Frequency.DAILY & Double = js.native
+    /* 3 */ val DAILY: typings.rrule.distEsmTypesMod.Frequency.DAILY & Double = js.native
     
-    /* 4 */ val HOURLY: typings.rrule.typesMod.Frequency.HOURLY & Double = js.native
+    /* 4 */ val HOURLY: typings.rrule.distEsmTypesMod.Frequency.HOURLY & Double = js.native
     
-    /* 5 */ val MINUTELY: typings.rrule.typesMod.Frequency.MINUTELY & Double = js.native
+    /* 5 */ val MINUTELY: typings.rrule.distEsmTypesMod.Frequency.MINUTELY & Double = js.native
     
-    /* 1 */ val MONTHLY: typings.rrule.typesMod.Frequency.MONTHLY & Double = js.native
+    /* 1 */ val MONTHLY: typings.rrule.distEsmTypesMod.Frequency.MONTHLY & Double = js.native
     
-    /* 6 */ val SECONDLY: typings.rrule.typesMod.Frequency.SECONDLY & Double = js.native
+    /* 6 */ val SECONDLY: typings.rrule.distEsmTypesMod.Frequency.SECONDLY & Double = js.native
     
-    /* 2 */ val WEEKLY: typings.rrule.typesMod.Frequency.WEEKLY & Double = js.native
+    /* 2 */ val WEEKLY: typings.rrule.distEsmTypesMod.Frequency.WEEKLY & Double = js.native
     
-    /* 0 */ val YEARLY: typings.rrule.typesMod.Frequency.YEARLY & Double = js.native
+    /* 0 */ val YEARLY: typings.rrule.distEsmTypesMod.Frequency.YEARLY & Double = js.native
   }
   
   @JSImport("rrule", "RRule")
   @js.native
   open class RRule ()
-    extends typings.rrule.rruleMod.RRule {
+    extends typings.rrule.distEsmRruleMod.RRule {
     def this(options: PartialOptions) = this()
     def this(options: Unit, noCache: Boolean) = this()
     def this(options: PartialOptions, noCache: Boolean) = this()
@@ -57,7 +57,7 @@ object mod {
     
     @JSImport("rrule", "RRule.FR")
     @js.native
-    val FR: typings.rrule.weekdayMod.Weekday = js.native
+    val FR: typings.rrule.distEsmWeekdayMod.Weekday = js.native
     
     @JSImport("rrule", "RRule.FREQUENCIES")
     @js.native
@@ -75,7 +75,7 @@ object mod {
     
     @JSImport("rrule", "RRule.MO")
     @js.native
-    val MO: typings.rrule.weekdayMod.Weekday = js.native
+    val MO: typings.rrule.distEsmWeekdayMod.Weekday = js.native
     
     @JSImport("rrule", "RRule.MONTHLY")
     @js.native
@@ -83,7 +83,7 @@ object mod {
     
     @JSImport("rrule", "RRule.SA")
     @js.native
-    val SA: typings.rrule.weekdayMod.Weekday = js.native
+    val SA: typings.rrule.distEsmWeekdayMod.Weekday = js.native
     
     @JSImport("rrule", "RRule.SECONDLY")
     @js.native
@@ -91,19 +91,19 @@ object mod {
     
     @JSImport("rrule", "RRule.SU")
     @js.native
-    val SU: typings.rrule.weekdayMod.Weekday = js.native
+    val SU: typings.rrule.distEsmWeekdayMod.Weekday = js.native
     
     @JSImport("rrule", "RRule.TH")
     @js.native
-    val TH: typings.rrule.weekdayMod.Weekday = js.native
+    val TH: typings.rrule.distEsmWeekdayMod.Weekday = js.native
     
     @JSImport("rrule", "RRule.TU")
     @js.native
-    val TU: typings.rrule.weekdayMod.Weekday = js.native
+    val TU: typings.rrule.distEsmWeekdayMod.Weekday = js.native
     
     @JSImport("rrule", "RRule.WE")
     @js.native
-    val WE: typings.rrule.weekdayMod.Weekday = js.native
+    val WE: typings.rrule.distEsmWeekdayMod.Weekday = js.native
     
     @JSImport("rrule", "RRule.WEEKLY")
     @js.native
@@ -113,10 +113,10 @@ object mod {
     @js.native
     val YEARLY: String | Double = js.native
     
-    inline def fromString(str: String): typings.rrule.rruleMod.RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.rruleMod.RRule]
+    inline def fromString(str: String): typings.rrule.distEsmRruleMod.RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.distEsmRruleMod.RRule]
     
-    inline def fromText(text: String): typings.rrule.rruleMod.RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.rruleMod.RRule]
-    inline def fromText(text: String, language: Language): typings.rrule.rruleMod.RRule = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.rrule.rruleMod.RRule]
+    inline def fromText(text: String): typings.rrule.distEsmRruleMod.RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.distEsmRruleMod.RRule]
+    inline def fromText(text: String, language: Language): typings.rrule.distEsmRruleMod.RRule = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.rrule.distEsmRruleMod.RRule]
     
     @JSImport("rrule", "RRule.optionsToString")
     @js.native
@@ -143,14 +143,14 @@ object mod {
     * @constructor
     */
   open class RRuleSet ()
-    extends typings.rrule.rrulesetMod.RRuleSet {
+    extends typings.rrule.distEsmRrulesetMod.RRuleSet {
     def this(noCache: Boolean) = this()
   }
   
   @JSImport("rrule", "Weekday")
   @js.native
   open class Weekday protected ()
-    extends typings.rrule.weekdayMod.Weekday {
+    extends typings.rrule.distEsmWeekdayMod.Weekday {
     def this(weekday: Double) = this()
     def this(weekday: Double, n: Double) = this()
   }
@@ -161,9 +161,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromStr(str: WeekdayStr): typings.rrule.weekdayMod.Weekday = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStr")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.weekdayMod.Weekday]
+    inline def fromStr(str: WeekdayStr): typings.rrule.distEsmWeekdayMod.Weekday = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStr")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.distEsmWeekdayMod.Weekday]
   }
   
-  inline def rrulestr(s: String): typings.rrule.rruleMod.RRule | typings.rrule.rrulesetMod.RRuleSet = ^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.rruleMod.RRule | typings.rrule.rrulesetMod.RRuleSet]
-  inline def rrulestr(s: String, options: PartialRRuleStrOptions): typings.rrule.rruleMod.RRule | typings.rrule.rrulesetMod.RRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.rrule.rruleMod.RRule | typings.rrule.rrulesetMod.RRuleSet]
+  inline def rrulestr(s: String): typings.rrule.distEsmRruleMod.RRule | typings.rrule.distEsmRrulesetMod.RRuleSet = ^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.distEsmRruleMod.RRule | typings.rrule.distEsmRrulesetMod.RRuleSet]
+  inline def rrulestr(s: String, options: PartialRRuleStrOptions): typings.rrule.distEsmRruleMod.RRule | typings.rrule.distEsmRrulesetMod.RRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("rrulestr")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.rrule.distEsmRruleMod.RRule | typings.rrule.distEsmRrulesetMod.RRuleSet]
 }

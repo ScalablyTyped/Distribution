@@ -1,10 +1,10 @@
 package typings.reactSelect.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.reactSelect.selectMod.Props
-import typings.reactSelect.selectMod.Select
-import typings.reactSelect.selectMod.State
-import typings.reactSelect.typesMod.GroupBase
+import typings.reactSelect.distDeclarationsSrcSelectMod.Props
+import typings.reactSelect.distDeclarationsSrcSelectMod.Select
+import typings.reactSelect.distDeclarationsSrcSelectMod.State
+import typings.reactSelect.distDeclarationsSrcTypesMod.GroupBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

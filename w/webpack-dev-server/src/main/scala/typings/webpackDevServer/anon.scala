@@ -5,18 +5,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.anymatch.mod.AnymatchMatcher
 import typings.anymatch.mod.AnymatchPattern
 import typings.chokidar.mod.AwaitWriteFinishOptions
-import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
+import typings.node.anon.End
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.sockjs.anon.Address
 import typings.sockjs.mod.Connection
 import typings.sockjs.mod.ServerOptions
 import typings.std.ArrayBufferLike
 import typings.std.Blob
+import typings.webpack.mod.WebpackLogger
 import typings.webpackDevServer.mod.ExpressErrorRequestHandler
 import typings.webpackDevServer.mod.ExpressRequestHandler
 import typings.webpackDevServer.webpackDevServerStrings.close
@@ -33,6 +36,13 @@ object anon {
   @js.native
   trait ConnectionsendWebSocketse extends StObject {
     
+    /**
+      * Alias for `emitter.on(eventName, listener)`.
+      * @since v0.1.26
+      */
+    def addListener(eventName: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def addListener(eventName: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    
     var address: StringDictionary[Address] = js.native
     
     def close(): Boolean = js.native
@@ -42,19 +52,196 @@ object anon {
     
     def destroy(): Unit = js.native
     
+    /**
+      * Synchronously calls each of the listeners registered for the event named`eventName`, in the order they were registered, passing the supplied arguments
+      * to each.
+      *
+      * Returns `true` if the event had listeners, `false` otherwise.
+      *
+      * ```js
+      * const EventEmitter = require('events');
+      * const myEmitter = new EventEmitter();
+      *
+      * // First listener
+      * myEmitter.on('event', function firstListener() {
+      *   console.log('Helloooo! first listener');
+      * });
+      * // Second listener
+      * myEmitter.on('event', function secondListener(arg1, arg2) {
+      *   console.log(`event with parameters ${arg1}, ${arg2} in second listener`);
+      * });
+      * // Third listener
+      * myEmitter.on('event', function thirdListener(...args) {
+      *   const parameters = args.join(', ');
+      *   console.log(`event with parameters ${parameters} in third listener`);
+      * });
+      *
+      * console.log(myEmitter.listeners('event'));
+      *
+      * myEmitter.emit('event', 1, 2, 3, 4, 5);
+      *
+      * // Prints:
+      * // [
+      * //   [Function: firstListener],
+      * //   [Function: secondListener],
+      * //   [Function: thirdListener]
+      * // ]
+      * // Helloooo! first listener
+      * // event with parameters 1, 2 in second listener
+      * // event with parameters 1, 2, 3, 4, 5 in third listener
+      * ```
+      * @since v0.1.26
+      */
+    def emit(eventName: String, args: Any*): Boolean = js.native
+    def emit(eventName: js.Symbol, args: Any*): Boolean = js.native
+    
+    def end(): this.type = js.native
+    def end(cb: js.Function0[Unit]): this.type = js.native
+    def end(data: String): this.type = js.native
+    def end(data: String, cb: js.Function0[Unit]): this.type = js.native
+    def end(data: js.typedarray.Uint8Array): this.type = js.native
+    def end(data: js.typedarray.Uint8Array, cb: js.Function0[Unit]): this.type = js.native
+    def end(str: String, encoding: Unit, cb: js.Function0[Unit]): this.type = js.native
+    def end(str: String, encoding: BufferEncoding): this.type = js.native
+    def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): this.type = js.native
+    
+    /**
+      * Returns an array listing the events for which the emitter has registered
+      * listeners. The values in the array are strings or `Symbol`s.
+      *
+      * ```js
+      * const EventEmitter = require('events');
+      * const myEE = new EventEmitter();
+      * myEE.on('foo', () => {});
+      * myEE.on('bar', () => {});
+      *
+      * const sym = Symbol('symbol');
+      * myEE.on(sym, () => {});
+      *
+      * console.log(myEE.eventNames());
+      * // Prints: [ 'foo', 'bar', Symbol(symbol) ]
+      * ```
+      * @since v6.0.0
+      */
+    def eventNames(): js.Array[String | js.Symbol] = js.native
+    
+    /**
+      * Returns the current max listener value for the `EventEmitter` which is either
+      * set by `emitter.setMaxListeners(n)` or defaults to {@link defaultMaxListeners}.
+      * @since v1.0.0
+      */
+    def getMaxListeners(): Double = js.native
+    
     var headers: StringDictionary[String] = js.native
     
     var id: String = js.native
     
     var isAlive: js.UndefOr[Boolean] = js.native
     
+    def isPaused(): Boolean = js.native
+    
+    /**
+      * Returns the number of listeners listening to the event named `eventName`.
+      * @since v3.2.0
+      * @param eventName The name of the event being listened for
+      */
+    def listenerCount(eventName: String): Double = js.native
+    def listenerCount(eventName: js.Symbol): Double = js.native
+    
+    /**
+      * Returns a copy of the array of listeners for the event named `eventName`.
+      *
+      * ```js
+      * server.on('connection', (stream) => {
+      *   console.log('someone connected!');
+      * });
+      * console.log(util.inspect(server.listeners('connection')));
+      * // Prints: [ [Function] ]
+      * ```
+      * @since v0.1.26
+      */
+    def listeners(eventName: String): js.Array[js.Function] = js.native
+    def listeners(eventName: js.Symbol): js.Array[js.Function] = js.native
+    
+    /**
+      * Alias for `emitter.removeListener()`.
+      * @since v10.0.0
+      */
+    def off(eventName: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def off(eventName: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    
+    /**
+      * Adds the `listener` function to the end of the listeners array for the
+      * event named `eventName`. No checks are made to see if the `listener` has
+      * already been added. Multiple calls passing the same combination of `eventName`and `listener` will result in the `listener` being added, and called, multiple
+      * times.
+      *
+      * ```js
+      * server.on('connection', (stream) => {
+      *   console.log('someone connected!');
+      * });
+      * ```
+      *
+      * Returns a reference to the `EventEmitter`, so that calls can be chained.
+      *
+      * By default, event listeners are invoked in the order they are added. The`emitter.prependListener()` method can be used as an alternative to add the
+      * event listener to the beginning of the listeners array.
+      *
+      * ```js
+      * const myEE = new EventEmitter();
+      * myEE.on('foo', () => console.log('a'));
+      * myEE.prependListener('foo', () => console.log('b'));
+      * myEE.emit('foo');
+      * // Prints:
+      * //   b
+      * //   a
+      * ```
+      * @since v0.1.101
+      * @param eventName The name of the event.
+      * @param listener The callback function
+      */
+    def on(eventName: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def on(eventName: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def on(event: String, listener: js.Function): this.type = js.native
     @JSName("on")
     def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
     def on_data(event: data, listener: js.Function1[/* message */ String, Any]): this.type = js.native
     
+    /**
+      * Adds a **one-time**`listener` function for the event named `eventName`. The
+      * next time `eventName` is triggered, this listener is removed and then invoked.
+      *
+      * ```js
+      * server.once('connection', (stream) => {
+      *   console.log('Ah, we have our first user!');
+      * });
+      * ```
+      *
+      * Returns a reference to the `EventEmitter`, so that calls can be chained.
+      *
+      * By default, event listeners are invoked in the order they are added. The`emitter.prependOnceListener()` method can be used as an alternative to add the
+      * event listener to the beginning of the listeners array.
+      *
+      * ```js
+      * const myEE = new EventEmitter();
+      * myEE.once('foo', () => console.log('a'));
+      * myEE.prependOnceListener('foo', () => console.log('b'));
+      * myEE.emit('foo');
+      * // Prints:
+      * //   b
+      * //   a
+      * ```
+      * @since v0.3.0
+      * @param eventName The name of the event.
+      * @param listener The callback function
+      */
+    def once(eventName: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def once(eventName: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    
     var pathname: String = js.native
+    
+    def pause(): this.type = js.native
     
     def ping(): Unit = js.native
     def ping(data: Any): Unit = js.native
@@ -67,15 +254,191 @@ object anon {
     @JSName("ping")
     var ping_Original: FnCallDataMaskCb = js.native
     
+    def pipe[T /* <: WritableStream */](destination: T): T = js.native
+    def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+    
     var prefix: String = js.native
     
+    /**
+      * Adds the `listener` function to the _beginning_ of the listeners array for the
+      * event named `eventName`. No checks are made to see if the `listener` has
+      * already been added. Multiple calls passing the same combination of `eventName`and `listener` will result in the `listener` being added, and called, multiple
+      * times.
+      *
+      * ```js
+      * server.prependListener('connection', (stream) => {
+      *   console.log('someone connected!');
+      * });
+      * ```
+      *
+      * Returns a reference to the `EventEmitter`, so that calls can be chained.
+      * @since v6.0.0
+      * @param eventName The name of the event.
+      * @param listener The callback function
+      */
+    def prependListener(eventName: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def prependListener(eventName: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    
+    /**
+      * Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
+      * listener is removed, and then invoked.
+      *
+      * ```js
+      * server.prependOnceListener('connection', (stream) => {
+      *   console.log('Ah, we have our first user!');
+      * });
+      * ```
+      *
+      * Returns a reference to the `EventEmitter`, so that calls can be chained.
+      * @since v6.0.0
+      * @param eventName The name of the event.
+      * @param listener The callback function
+      */
+    def prependOnceListener(eventName: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def prependOnceListener(eventName: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    
     var protocol: String = js.native
+    
+    /**
+      * Returns a copy of the array of listeners for the event named `eventName`,
+      * including any wrappers (such as those created by `.once()`).
+      *
+      * ```js
+      * const emitter = new EventEmitter();
+      * emitter.once('log', () => console.log('log once'));
+      *
+      * // Returns a new Array with a function `onceWrapper` which has a property
+      * // `listener` which contains the original listener bound above
+      * const listeners = emitter.rawListeners('log');
+      * const logFnWrapper = listeners[0];
+      *
+      * // Logs "log once" to the console and does not unbind the `once` event
+      * logFnWrapper.listener();
+      *
+      * // Logs "log once" to the console and removes the listener
+      * logFnWrapper();
+      *
+      * emitter.on('log', () => console.log('log persistently'));
+      * // Will return a new Array with a single function bound by `.on()` above
+      * const newListeners = emitter.rawListeners('log');
+      *
+      * // Logs "log persistently" twice
+      * newListeners[0]();
+      * emitter.emit('log');
+      * ```
+      * @since v9.4.0
+      */
+    def rawListeners(eventName: String): js.Array[js.Function] = js.native
+    def rawListeners(eventName: js.Symbol): js.Array[js.Function] = js.native
+    
+    def read(): String | Buffer = js.native
+    def read(size: Double): String | Buffer = js.native
+    
+    var readable: Boolean = js.native
     
     var readyState: Double = js.native
     
     var remoteAddress: String = js.native
     
     var remotePort: Double = js.native
+    
+    /**
+      * Removes all listeners, or those of the specified `eventName`.
+      *
+      * It is bad practice to remove listeners added elsewhere in the code,
+      * particularly when the `EventEmitter` instance was created by some other
+      * component or module (e.g. sockets or file streams).
+      *
+      * Returns a reference to the `EventEmitter`, so that calls can be chained.
+      * @since v0.1.26
+      */
+    def removeAllListeners(): this.type = js.native
+    def removeAllListeners(event: String): this.type = js.native
+    def removeAllListeners(event: js.Symbol): this.type = js.native
+    
+    /**
+      * Removes the specified `listener` from the listener array for the event named`eventName`.
+      *
+      * ```js
+      * const callback = (stream) => {
+      *   console.log('someone connected!');
+      * };
+      * server.on('connection', callback);
+      * // ...
+      * server.removeListener('connection', callback);
+      * ```
+      *
+      * `removeListener()` will remove, at most, one instance of a listener from the
+      * listener array. If any single listener has been added multiple times to the
+      * listener array for the specified `eventName`, then `removeListener()` must be
+      * called multiple times to remove each instance.
+      *
+      * Once an event is emitted, all listeners attached to it at the
+      * time of emitting are called in order. This implies that any`removeListener()` or `removeAllListeners()` calls _after_ emitting and _before_ the last listener finishes execution
+      * will not remove them from`emit()` in progress. Subsequent events behave as expected.
+      *
+      * ```js
+      * const myEmitter = new MyEmitter();
+      *
+      * const callbackA = () => {
+      *   console.log('A');
+      *   myEmitter.removeListener('event', callbackB);
+      * };
+      *
+      * const callbackB = () => {
+      *   console.log('B');
+      * };
+      *
+      * myEmitter.on('event', callbackA);
+      *
+      * myEmitter.on('event', callbackB);
+      *
+      * // callbackA removes listener callbackB but it will still be called.
+      * // Internal listener array at time of emit [callbackA, callbackB]
+      * myEmitter.emit('event');
+      * // Prints:
+      * //   A
+      * //   B
+      *
+      * // callbackB is now removed.
+      * // Internal listener array [callbackA]
+      * myEmitter.emit('event');
+      * // Prints:
+      * //   A
+      * ```
+      *
+      * Because listeners are managed using an internal array, calling this will
+      * change the position indices of any listener registered _after_ the listener
+      * being removed. This will not impact the order in which listeners are called,
+      * but it means that any copies of the listener array as returned by
+      * the `emitter.listeners()` method will need to be recreated.
+      *
+      * When a single function has been added as a handler multiple times for a single
+      * event (as in the example below), `removeListener()` will remove the most
+      * recently added instance. In the example the `once('ping')`listener is removed:
+      *
+      * ```js
+      * const ee = new EventEmitter();
+      *
+      * function pong() {
+      *   console.log('pong');
+      * }
+      *
+      * ee.on('ping', pong);
+      * ee.once('ping', pong);
+      * ee.removeListener('ping', pong);
+      *
+      * ee.emit('ping');
+      * ee.emit('ping');
+      * ```
+      *
+      * Returns a reference to the `EventEmitter`, so that calls can be chained.
+      * @since v0.1.26
+      */
+    def removeListener(eventName: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def removeListener(eventName: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    
+    def resume(): this.type = js.native
     
     def send(data: String): Unit = js.native
     def send(data: js.typedarray.ArrayBufferView): Unit = js.native
@@ -88,11 +451,48 @@ object anon {
     @JSName("send")
     var send_Original: FnCall = js.native
     
+    def setEncoding(encoding: BufferEncoding): this.type = js.native
+    
+    /**
+      * By default `EventEmitter`s will print a warning if more than `10` listeners are
+      * added for a particular event. This is a useful default that helps finding
+      * memory leaks. The `emitter.setMaxListeners()` method allows the limit to be
+      * modified for this specific `EventEmitter` instance. The value can be set to`Infinity` (or `0`) to indicate an unlimited number of listeners.
+      *
+      * Returns a reference to the `EventEmitter`, so that calls can be chained.
+      * @since v0.3.5
+      */
+    def setMaxListeners(n: Double): this.type = js.native
+    
     def terminate(): Unit = js.native
     @JSName("terminate")
     var terminate_Original: js.Function0[Unit] = js.native
     
+    def unpipe(): this.type = js.native
+    def unpipe(destination: WritableStream): this.type = js.native
+    
+    def unshift(chunk: String): Unit = js.native
+    def unshift(chunk: String, encoding: BufferEncoding): Unit = js.native
+    def unshift(chunk: js.typedarray.Uint8Array): Unit = js.native
+    def unshift(chunk: js.typedarray.Uint8Array, encoding: BufferEncoding): Unit = js.native
+    
     var url: String = js.native
+    
+    def wrap(oldStream: ReadableStream): this.type = js.native
+    
+    var writable: Boolean = js.native
+    
+    def write(buffer: String): Boolean = js.native
+    def write(buffer: String, cb: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Boolean = js.native
+    def write(buffer: js.typedarray.Uint8Array): Boolean = js.native
+    def write(buffer: js.typedarray.Uint8Array, cb: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Boolean = js.native
+    def write(str: String, encoding: Unit, cb: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Boolean = js.native
+    def write(str: String, encoding: BufferEncoding): Boolean = js.native
+    def write(
+      str: String,
+      encoding: BufferEncoding,
+      cb: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
+    ): Boolean = js.native
   }
   
   trait Errors extends StObject {
@@ -153,6 +553,13 @@ object anon {
     def apply(data: Unit, mask: Unit, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   }
   
+  @js.native
+  trait FnCallName extends StObject {
+    
+    def apply(name: String): WebpackLogger = js.native
+    def apply(name: js.Function0[String]): WebpackLogger = js.native
+  }
+  
   trait IsAlive extends StObject {
     
     var isAlive: js.UndefOr[Boolean] = js.undefined
@@ -211,10 +618,6 @@ object anon {
     extension [Self <: Middleware](x: Self) {
       
       inline def setMiddleware(value: ExpressRequestHandler | ExpressErrorRequestHandler): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
-      
-      inline def setMiddlewareFunction3(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "middleware", js.Any.fromFunction3(value))
-      
-      inline def setMiddlewareFunction4(value: (/* err */ Any, /* req */ Request, /* res */ Response, /* next */ NextFunction) => Any): Self = StObject.set(x, "middleware", js.Any.fromFunction4(value))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

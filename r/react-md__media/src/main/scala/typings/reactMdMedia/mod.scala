@@ -2,9 +2,9 @@ package typings.reactMdMedia
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdMedia.mediaContainerMod.MediaContainerProps
-import typings.reactMdMedia.mediaContainerMod.MediaContainerWithAspectRatioProps
-import typings.reactMdMedia.mediaOverlayMod.MediaOverlayProps
+import typings.reactMdMedia.typesMediaContainerMod.MediaContainerProps
+import typings.reactMdMedia.typesMediaContainerMod.MediaContainerWithAspectRatioProps
+import typings.reactMdMedia.typesMediaOverlayMod.MediaOverlayProps
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

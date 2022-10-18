@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-sdk", "HttpRequest")
 @js.native
 open class HttpRequest protected ()
-  extends typings.awsSdk.coreMod.HttpRequest {
+  extends typings.awsSdk.libCoreMod.HttpRequest {
   /**
     * Constructs HttpRequest object with provided endpoint and region
     */
-  def this(endpoint: typings.awsSdk.endpointMod.Endpoint, region: String) = this()
+  def this(endpoint: typings.awsSdk.libEndpointMod.Endpoint, region: String) = this()
 }

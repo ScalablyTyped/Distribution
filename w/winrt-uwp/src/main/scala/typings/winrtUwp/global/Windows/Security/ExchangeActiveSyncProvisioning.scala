@@ -116,9 +116,9 @@ object ExchangeActiveSyncProvisioning {
   }
   
   /** Provides the mail app with the results of the evaluation of the EAS security policies. Every policy being evaluated returns an enumerated value indicating the evaluation results against the policy. The evaluations results are encapsulated in the EasComplianceResults object for the caller app to retrieve. */
-  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults")
+  /* note: abstract class */ @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults")
   @js.native
-  abstract class EasComplianceResults ()
+  open class EasComplianceResults ()
     extends StObject
        with typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults {
     

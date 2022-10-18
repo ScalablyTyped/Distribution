@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hex-rgb"
-version := "5.0.0-a8eab0"
+version := "5.0.0-cc7bbc"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

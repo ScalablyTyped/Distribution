@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object olStrings {
   
   @js.native
-  sealed trait default extends StObject
-  inline def default: default = "default".asInstanceOf[default]
-  
-  @js.native
-  sealed trait BuilderGroup extends StObject
-  inline def BuilderGroup: BuilderGroup = "BuilderGroup".asInstanceOf[BuilderGroup]
-  
-  @js.native
   sealed trait add extends StObject
   inline def add: add = "add".asInstanceOf[add]
   
@@ -231,10 +223,6 @@ object olStrings {
   inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait createEditingStyle extends StObject
-  inline def createEditingStyle: createEditingStyle = "createEditingStyle".asInstanceOf[createEditingStyle]
-  
-  @js.native
   sealed trait dblclick extends StObject
   inline def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   
@@ -277,10 +265,6 @@ object olStrings {
   @js.native
   sealed trait float extends StObject
   inline def float: float = "float".asInstanceOf[float]
-  
-  @js.native
-  sealed trait getValues extends StObject
-  inline def getValues: getValues = "getValues".asInstanceOf[getValues]
   
   @js.native
   sealed trait imageloadend extends StObject

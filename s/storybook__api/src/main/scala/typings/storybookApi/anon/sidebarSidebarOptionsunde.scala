@@ -1,10 +1,10 @@
 package typings.storybookApi.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.storybookApi.providerMod.SidebarOptions
-import typings.storybookApi.refsMod.ComposedRef
-import typings.storybookApi.refsMod.Refs
-import typings.storybookApi.storiesMod.StoryInput
+import typings.storybookApi.distTs3Dot9LibStoriesMod.StoryInput
+import typings.storybookApi.distTs3Dot9ModulesProviderMod.SidebarOptions
+import typings.storybookApi.distTs3Dot9ModulesRefsMod.ComposedRef
+import typings.storybookApi.distTs3Dot9ModulesRefsMod.Refs
 import typings.storybookTheming.mod.ThemeVars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait sidebarSidebarOptionsunde
   extends StObject
      with /* key */ StringDictionary[Any] {
   
-  var StoryMapper: js.UndefOr[typings.storybookApi.refsMod.StoryMapper] = js.undefined
+  var StoryMapper: js.UndefOr[typings.storybookApi.distTs3Dot9ModulesRefsMod.StoryMapper] = js.undefined
   
   var addonPanelInRight: js.UndefOr[Boolean] = js.undefined
   

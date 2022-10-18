@@ -1,6 +1,6 @@
 package typings.reactNavigationNative.anon
 
-import typings.reactNavigationNative.createMemoryHistoryMod.HistoryRecord
+import typings.reactNavigationNative.libTypescriptSrcCreateMemoryHistoryMod.HistoryRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

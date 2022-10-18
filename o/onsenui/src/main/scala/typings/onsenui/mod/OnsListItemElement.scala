@@ -26,6 +26,11 @@ trait OnsListItemElement
   var animation: String = js.native
   
   /**
+    * @description Clear backgroundColor changed on tap or click. This method is helpful when `keep-tap-background-color` is `true`.
+    */
+  def clearTapBackgroundColor(): Unit = js.native
+  
+  /**
     * @description Whether the list item is expandable or not.
     **/
   var expandable: Boolean = js.native
@@ -39,6 +44,11 @@ trait OnsListItemElement
     * @description Hide the expandable content if element is expandable
     */
   def hideExpansion(): Unit = js.native
+  
+  /**
+    * @description Prevent from clearing the background color on `"touchmove"`, `"touchcancel"`, `"touchend"`, `"touchleave"`, `"mouseup"`, and `"mouseout"`. For this to work, the attribute "tappable" needs to be set.
+    */
+  var keepTapBackgroundColor: Boolean = js.native
   
   /**
     * @description Prevent vertical scrolling when the user drags horizontally.

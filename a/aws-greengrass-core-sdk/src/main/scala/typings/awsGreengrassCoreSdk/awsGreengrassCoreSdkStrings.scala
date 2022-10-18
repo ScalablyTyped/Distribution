@@ -1,8 +1,8 @@
 package typings.awsGreengrassCoreSdk
 
-import typings.awsGreengrassCoreSdk.dataMod.ExportFormatValue
-import typings.awsGreengrassCoreSdk.dataMod.PersistenceValue
-import typings.awsGreengrassCoreSdk.dataMod.StrategyOnFullValue
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ExportFormatValue
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.PersistenceValue
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StrategyOnFullValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

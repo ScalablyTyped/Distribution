@@ -1,29 +1,31 @@
 package typings.tokeyCssSelectorParser
 
-import typings.tokeyCore.typesMod.Token
+import typings.tokeyCore.distTypesMod.Token
 import typings.tokeyCssSelectorParser.anon.PartialParseConfig
-import typings.tokeyCssSelectorParser.astTypesMod.Attribute
-import typings.tokeyCssSelectorParser.astTypesMod.Class
-import typings.tokeyCssSelectorParser.astTypesMod.Combinator
-import typings.tokeyCssSelectorParser.astTypesMod.Comment
-import typings.tokeyCssSelectorParser.astTypesMod.CompoundSelector
-import typings.tokeyCssSelectorParser.astTypesMod.Id
-import typings.tokeyCssSelectorParser.astTypesMod.ImmutableNthSelectorList
-import typings.tokeyCssSelectorParser.astTypesMod.ImmutableSelector
-import typings.tokeyCssSelectorParser.astTypesMod.ImmutableSelectorList
-import typings.tokeyCssSelectorParser.astTypesMod.ImmutableSelectorNode
-import typings.tokeyCssSelectorParser.astTypesMod.Nesting
-import typings.tokeyCssSelectorParser.astTypesMod.Nth
-import typings.tokeyCssSelectorParser.astTypesMod.NthBase
-import typings.tokeyCssSelectorParser.astTypesMod.PseudoClass
-import typings.tokeyCssSelectorParser.astTypesMod.PseudoElement
-import typings.tokeyCssSelectorParser.astTypesMod.Selector
-import typings.tokeyCssSelectorParser.astTypesMod.SelectorList
-import typings.tokeyCssSelectorParser.astTypesMod.SelectorNode
-import typings.tokeyCssSelectorParser.astTypesMod.Type
-import typings.tokeyCssSelectorParser.astTypesMod.Universal
-import typings.tokeyCssSelectorParser.compoundMod.GroupCompoundOptions
-import typings.tokeyCssSelectorParser.specificityMod.Specificity
+import typings.tokeyCssSelectorParser.distAstToolsCompoundMod.GroupCompoundOptions
+import typings.tokeyCssSelectorParser.distAstToolsSpecificityMod.Specificity
+import typings.tokeyCssSelectorParser.distAstToolsWalkMod.WalkOptions
+import typings.tokeyCssSelectorParser.distAstToolsWalkMod.WalkVisitor
+import typings.tokeyCssSelectorParser.distAstTypesMod.Attribute
+import typings.tokeyCssSelectorParser.distAstTypesMod.Class
+import typings.tokeyCssSelectorParser.distAstTypesMod.Combinator
+import typings.tokeyCssSelectorParser.distAstTypesMod.Comment
+import typings.tokeyCssSelectorParser.distAstTypesMod.CompoundSelector
+import typings.tokeyCssSelectorParser.distAstTypesMod.Id
+import typings.tokeyCssSelectorParser.distAstTypesMod.ImmutableNthSelectorList
+import typings.tokeyCssSelectorParser.distAstTypesMod.ImmutableSelector
+import typings.tokeyCssSelectorParser.distAstTypesMod.ImmutableSelectorList
+import typings.tokeyCssSelectorParser.distAstTypesMod.ImmutableSelectorNode
+import typings.tokeyCssSelectorParser.distAstTypesMod.Nesting
+import typings.tokeyCssSelectorParser.distAstTypesMod.Nth
+import typings.tokeyCssSelectorParser.distAstTypesMod.NthBase
+import typings.tokeyCssSelectorParser.distAstTypesMod.PseudoClass
+import typings.tokeyCssSelectorParser.distAstTypesMod.PseudoElement
+import typings.tokeyCssSelectorParser.distAstTypesMod.Selector
+import typings.tokeyCssSelectorParser.distAstTypesMod.SelectorList
+import typings.tokeyCssSelectorParser.distAstTypesMod.SelectorNode
+import typings.tokeyCssSelectorParser.distAstTypesMod.Type
+import typings.tokeyCssSelectorParser.distAstTypesMod.Universal
 import typings.tokeyCssSelectorParser.tokeyCssSelectorParserInts.`-1`
 import typings.tokeyCssSelectorParser.tokeyCssSelectorParserInts.`0`
 import typings.tokeyCssSelectorParser.tokeyCssSelectorParserInts.`1`
@@ -32,8 +34,6 @@ import typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.nth_dash
 import typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.nth_of
 import typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.nth_offset
 import typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.nth_step
-import typings.tokeyCssSelectorParser.walkMod.WalkOptions
-import typings.tokeyCssSelectorParser.walkMod.WalkVisitor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,31 +48,30 @@ object mod {
   
   inline def compareSpecificity(a: Specificity, b: Specificity): `-1` | `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareSpecificity")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`-1` | `0` | `1`]
   
-  inline def groupCompoundSelectors[AST /* <: ImmutableSelectorList */](input: AST): ImmutableSelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("groupCompoundSelectors")(input.asInstanceOf[js.Any]).asInstanceOf[ImmutableSelectorList]
-  inline def groupCompoundSelectors[AST /* <: ImmutableSelectorList */](input: AST, options: GroupCompoundOptions): ImmutableSelectorList = (^.asInstanceOf[js.Dynamic].applyDynamic("groupCompoundSelectors")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ImmutableSelectorList]
+  inline def groupCompoundSelectors[AST /* <: SelectorList */](input: AST): SelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("groupCompoundSelectors")(input.asInstanceOf[js.Any]).asInstanceOf[SelectorList]
+  inline def groupCompoundSelectors[AST /* <: SelectorList */](input: AST, options: GroupCompoundOptions): SelectorList = (^.asInstanceOf[js.Dynamic].applyDynamic("groupCompoundSelectors")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SelectorList]
   
   inline def groupCompoundSelectors_AST_ImmutableSelector[AST /* <: ImmutableSelector */](input: AST): ImmutableSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("groupCompoundSelectors")(input.asInstanceOf[js.Any]).asInstanceOf[ImmutableSelector]
   inline def groupCompoundSelectors_AST_ImmutableSelector[AST /* <: ImmutableSelector */](input: AST, options: GroupCompoundOptions): ImmutableSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("groupCompoundSelectors")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ImmutableSelector]
   
+  inline def groupCompoundSelectors_AST_ImmutableSelectorList[AST /* <: ImmutableSelectorList */](input: AST): ImmutableSelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("groupCompoundSelectors")(input.asInstanceOf[js.Any]).asInstanceOf[ImmutableSelectorList]
+  inline def groupCompoundSelectors_AST_ImmutableSelectorList[AST /* <: ImmutableSelectorList */](input: AST, options: GroupCompoundOptions): ImmutableSelectorList = (^.asInstanceOf[js.Dynamic].applyDynamic("groupCompoundSelectors")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ImmutableSelectorList]
+  
   inline def groupCompoundSelectors_AST_Selector[AST /* <: Selector */](input: AST): Selector = ^.asInstanceOf[js.Dynamic].applyDynamic("groupCompoundSelectors")(input.asInstanceOf[js.Any]).asInstanceOf[Selector]
   inline def groupCompoundSelectors_AST_Selector[AST /* <: Selector */](input: AST, options: GroupCompoundOptions): Selector = (^.asInstanceOf[js.Dynamic].applyDynamic("groupCompoundSelectors")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Selector]
-  
-  inline def groupCompoundSelectors_AST_SelectorList[AST /* <: SelectorList */](input: AST): SelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("groupCompoundSelectors")(input.asInstanceOf[js.Any]).asInstanceOf[SelectorList]
-  inline def groupCompoundSelectors_AST_SelectorList[AST /* <: SelectorList */](input: AST, options: GroupCompoundOptions): SelectorList = (^.asInstanceOf[js.Dynamic].applyDynamic("groupCompoundSelectors")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SelectorList]
   
   inline def parseCssSelector(source: String): SelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCssSelector")(source.asInstanceOf[js.Any]).asInstanceOf[SelectorList]
   inline def parseCssSelector(source: String, options: PartialParseConfig): SelectorList = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCssSelector")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SelectorList]
   
-  inline def splitCompoundSelectors[AST /* <: ImmutableSelectorList */](input: AST): ImmutableSelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCompoundSelectors")(input.asInstanceOf[js.Any]).asInstanceOf[ImmutableSelectorList]
+  inline def splitCompoundSelectors[AST /* <: SelectorList */](input: AST): SelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCompoundSelectors")(input.asInstanceOf[js.Any]).asInstanceOf[SelectorList]
   
   inline def splitCompoundSelectors_AST_ImmutableSelector[AST /* <: ImmutableSelector */](input: AST): ImmutableSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCompoundSelectors")(input.asInstanceOf[js.Any]).asInstanceOf[ImmutableSelector]
   
+  inline def splitCompoundSelectors_AST_ImmutableSelectorList[AST /* <: ImmutableSelectorList */](input: AST): ImmutableSelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCompoundSelectors")(input.asInstanceOf[js.Any]).asInstanceOf[ImmutableSelectorList]
+  
   inline def splitCompoundSelectors_AST_Selector[AST /* <: Selector */](input: AST): Selector = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCompoundSelectors")(input.asInstanceOf[js.Any]).asInstanceOf[Selector]
   
-  inline def splitCompoundSelectors_AST_SelectorList[AST /* <: SelectorList */](input: AST): SelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCompoundSelectors")(input.asInstanceOf[js.Any]).asInstanceOf[SelectorList]
-  
-  inline def stringifySelectorAst(value: ImmutableSelectorList | ImmutableSelectorNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifySelectorAst")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stringifySelectorAst(value: ImmutableNthSelectorList): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifySelectorAst")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifySelectorAst(value: ImmutableNthSelectorList | ImmutableSelectorList | ImmutableSelectorNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifySelectorAst")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object walk {
     

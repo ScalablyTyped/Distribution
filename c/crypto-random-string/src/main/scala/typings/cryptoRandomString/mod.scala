@@ -7,7 +7,7 @@ import typings.cryptoRandomString.cryptoRandomStringStrings.base64
 import typings.cryptoRandomString.cryptoRandomStringStrings.distinguishable
 import typings.cryptoRandomString.cryptoRandomStringStrings.hex
 import typings.cryptoRandomString.cryptoRandomStringStrings.numeric
-import typings.typeFest.mergeExclusiveMod.MergeExclusive
+import typings.typeFest.sourceMergeExclusiveMod.MergeExclusive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

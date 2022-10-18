@@ -1,6 +1,6 @@
 package typings.luminoWidgets.mod
 
-import typings.luminoWidgets.dockpanelMod.DockPanel.IOptions
+import typings.luminoWidgets.typesDockpanelMod.DockPanel.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options - The options for initializing the panel.
   */
 open class DockPanel ()
-  extends typings.luminoWidgets.dockpanelMod.DockPanel {
+  extends typings.luminoWidgets.typesDockpanelMod.DockPanel {
   def this(options: IOptions) = this()
 }
 object DockPanel {
@@ -29,7 +29,7 @@ object DockPanel {
     * Construct a new overlay.
     */
   open class Overlay ()
-    extends typings.luminoWidgets.dockpanelMod.DockPanel.Overlay
+    extends typings.luminoWidgets.typesDockpanelMod.DockPanel.Overlay
   
   /**
     * The default implementation of `IRenderer`.
@@ -37,12 +37,12 @@ object DockPanel {
   @JSImport("@lumino/widgets", "DockPanel.Renderer")
   @js.native
   open class Renderer ()
-    extends typings.luminoWidgets.dockpanelMod.DockPanel.Renderer
+    extends typings.luminoWidgets.typesDockpanelMod.DockPanel.Renderer
   
   /**
     * The default `Renderer` instance.
     */
   @JSImport("@lumino/widgets", "DockPanel.defaultRenderer")
   @js.native
-  val defaultRenderer: typings.luminoWidgets.dockpanelMod.DockPanel.Renderer = js.native
+  val defaultRenderer: typings.luminoWidgets.typesDockpanelMod.DockPanel.Renderer = js.native
 }

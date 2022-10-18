@@ -1,38 +1,30 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.internalMod.DocumentSnapshot
-import typings.firebaseFirestore.internalMod.FirestoreError
+import typings.firebaseFirestore.mod.FieldPath
+import typings.firebaseFirestore.mod.SetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `4`[T] extends StObject {
+trait `4`
+  extends StObject
+     with SetOptions {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
-  
-  var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.undefined
-  
-  var next: js.UndefOr[js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]] = js.undefined
+  val mergeFields: js.UndefOr[js.Array[String | FieldPath]] = js.undefined
 }
 object `4` {
   
-  inline def apply[T](): `4`[T] = {
+  inline def apply(): `4` = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`4`[T]]
+    __obj.asInstanceOf[`4`]
   }
   
-  extension [Self <: `4`[?], T](x: Self & `4`[T]) {
+  extension [Self <: `4`](x: Self) {
     
-    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setMergeFields(value: js.Array[String | FieldPath]): Self = StObject.set(x, "mergeFields", value.asInstanceOf[js.Any])
     
-    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setMergeFieldsUndefined: Self = StObject.set(x, "mergeFields", js.undefined)
     
-    inline def setError(value: /* error */ FirestoreError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
-    
-    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
-    
-    inline def setNext(value: /* snapshot */ DocumentSnapshot[T] => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
-    
-    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setMergeFieldsVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "mergeFields", js.Array(value*))
   }
 }

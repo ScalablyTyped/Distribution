@@ -2,9 +2,9 @@ package typings.babylonjs.anon
 
 import typings.babylonjs.XRHandedness
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.webXRControllerPointerSelectionMod.WebXRControllerPointerSelection
-import typings.babylonjs.webXRInputMod.WebXRInput
-import typings.babylonjs.webXRNearInteractionMod.WebXRNearControllerMode
+import typings.babylonjs.xRFeaturesWebXRControllerPointerSelectionMod.WebXRControllerPointerSelection
+import typings.babylonjs.xRFeaturesWebXRNearInteractionMod.WebXRNearControllerMode
+import typings.babylonjs.xRWebXRInputMod.WebXRInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ trait PartialIWebXRNearInteract extends StObject {
   
   var farInteractionFeature: js.UndefOr[WebXRControllerPointerSelection] = js.undefined
   
-  var motionControllerOrbMaterial: js.UndefOr[typings.babylonjs.materialMod.Material] = js.undefined
+  var motionControllerOrbMaterial: js.UndefOr[typings.babylonjs.materialsMaterialMod.Material] = js.undefined
   
   var nearInteractionControllerMode: js.UndefOr[WebXRNearControllerMode] = js.undefined
   
@@ -55,7 +55,7 @@ object PartialIWebXRNearInteract {
     
     inline def setFarInteractionFeatureUndefined: Self = StObject.set(x, "farInteractionFeature", js.undefined)
     
-    inline def setMotionControllerOrbMaterial(value: typings.babylonjs.materialMod.Material): Self = StObject.set(x, "motionControllerOrbMaterial", value.asInstanceOf[js.Any])
+    inline def setMotionControllerOrbMaterial(value: typings.babylonjs.materialsMaterialMod.Material): Self = StObject.set(x, "motionControllerOrbMaterial", value.asInstanceOf[js.Any])
     
     inline def setMotionControllerOrbMaterialUndefined: Self = StObject.set(x, "motionControllerOrbMaterial", js.undefined)
     

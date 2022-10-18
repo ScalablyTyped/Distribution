@@ -1,9 +1,7 @@
 package typings.pdfImage
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pdfImage.anon.CombinedImageCombinedImage
 import typings.pdfImage.anon.ReadonlyConvertOptions
-import typings.pdfImage.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +26,9 @@ object mod {
     
     def constructGetInfoCommand(): String = js.native
     
-    def convertFile(): js.Promise[js.Array[String] | String] = js.native
+    def convertFile(): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: CombinedImage extends true ? string : std.Array<string> */ js.Any
+      ] = js.native
     
     def convertPage(pageNumber: Double): js.Promise[String] = js.native
     
@@ -2248,9 +2248,15 @@ object mod {
     }
   }
   
-  type OptionalSpread[CombinedImage /* <: Boolean */] = js.Array[
-    (Options & `0`[CombinedImage]) | (Options & CombinedImageCombinedImage[CombinedImage]) | Any
-  ]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    CombinedImage extends true ? [pdf-image.pdf-image.Options & {  combinedImage :CombinedImage}] : [] | [pdf-image.pdf-image.Options & {  combinedImage :CombinedImage | undefined}]
+    }}}
+    */
+  @js.native
+  trait OptionalSpread[CombinedImage /* <: Boolean */] extends StObject
   
   trait Options extends StObject {
     

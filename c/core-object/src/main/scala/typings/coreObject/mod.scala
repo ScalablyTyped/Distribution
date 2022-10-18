@@ -1,9 +1,8 @@
 package typings.coreObject
 
-import org.scalablytyped.runtime.TopLevel
 import typings.coreObject.anon.Super
-import typings.coreObject.utilsMod.Constructor
-import typings.coreObject.utilsMod.Mix
+import typings.coreObject.privateUtilsMod.Constructor
+import typings.coreObject.privateUtilsMod.Mix
 import typings.std.InstanceType
 import typings.std.Record
 import typings.std.ThisType
@@ -34,7 +33,7 @@ object mod {
   }
   
   /** The type of options allowed to be passed to `Base.extend()` */
-  type ExtendOptions[Base] = typings.coreObject.coreObjectStrings.ExtendOptions & TopLevel[Base] & (Record[String, Any])
+  type ExtendOptions[Base] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Base ]:? Base[K]} */ js.Any) & (Record[String, Any])
   
   /** The `this` type for any methods on the options passed to `Base.extend()` */
   type ExtendThisType[Base, Ext] = ThisType[(Mix[Base, Ext]) & Super[Base]]

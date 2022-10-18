@@ -1,6 +1,6 @@
 package typings.fastPrintf
 
-import typings.fastPrintf.typesMod.Flag
+import typings.fastPrintf.distSrcTypesMod.Flag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

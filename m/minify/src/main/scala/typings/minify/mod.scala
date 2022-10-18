@@ -1,6 +1,6 @@
 package typings.minify
 
-import typings.minify.minifyMod.Minify_
+import typings.minify.libMinifyMod.Minify_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.lambdaMod.NamespacedFunctionName
-import typings.awsSdk.lambdaMod.Qualifier
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsLambdaMod.NamespacedFunctionName
+import typings.awsSdk.clientsLambdaMod.Qualifier
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ trait GetFunctionRequestwaiterW extends StObject {
   /**
     * Specify a version or alias to get details about a published version of the function.
     */
-  var Qualifier: js.UndefOr[typings.awsSdk.lambdaMod.Qualifier] = js.undefined
+  var Qualifier: js.UndefOr[typings.awsSdk.clientsLambdaMod.Qualifier] = js.undefined
 }
 object GetFunctionRequestwaiterW {
   

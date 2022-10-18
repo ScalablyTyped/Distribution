@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Specifies the kind of event that was raised. Returned by the `type` property of an `*EventArgs` object.
-  * 
-  * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and 
+  *
+  * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and
   * `Office.EventType.ViewSelectionChanged` event types.
-  * 
+  *
   * Only task pane add-ins for Outlook support Mailbox API set event types.
-  * 
+  *
   * @remarks
-  * 
-  * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.
-  * 
+  *
+  * **`BindingDataChanged` and `BindingSelectionChanged` applications**: Excel, Word.
+  *
   */
 @JSGlobal("Office.EventType")
 @js.native

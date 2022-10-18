@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.Instantiable7
-import typings.firebaseDatabase.realtimeWebSocketConnectionMod.WebSocketConnection
+import typings.firebaseDatabase.distSrcRealtimeWebSocketConnectionMod.WebSocketConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,25 +16,25 @@ trait TypeofWebSocketConnectionInstantiable
   extends StObject
      with Instantiable2[
       /* connId */ String, 
-      /* repoInfo */ typings.firebaseDatabase.coreRepoInfoMod.RepoInfo, 
+      /* repoInfo */ typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo, 
       WebSocketConnection
     ]
      with Instantiable3[
       /* connId */ String, 
-      /* repoInfo */ typings.firebaseDatabase.coreRepoInfoMod.RepoInfo, 
+      /* repoInfo */ typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo, 
       /* applicationId */ String, 
       WebSocketConnection
     ]
      with Instantiable4[
       /* connId */ String, 
-      /* repoInfo */ typings.firebaseDatabase.coreRepoInfoMod.RepoInfo, 
+      /* repoInfo */ typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo, 
       (/* applicationId */ String) | (/* applicationId */ Unit), 
       /* appCheckToken */ String, 
       WebSocketConnection
     ]
      with Instantiable5[
       /* connId */ String, 
-      /* repoInfo */ typings.firebaseDatabase.coreRepoInfoMod.RepoInfo, 
+      /* repoInfo */ typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo, 
       (/* applicationId */ String) | (/* applicationId */ Unit), 
       (/* appCheckToken */ String) | (/* appCheckToken */ Unit), 
       /* authToken */ String, 
@@ -42,7 +42,7 @@ trait TypeofWebSocketConnectionInstantiable
     ]
      with Instantiable6[
       /* connId */ String, 
-      /* repoInfo */ typings.firebaseDatabase.coreRepoInfoMod.RepoInfo, 
+      /* repoInfo */ typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo, 
       (/* applicationId */ String) | (/* applicationId */ Unit), 
       (/* appCheckToken */ String) | (/* appCheckToken */ Unit), 
       (/* authToken */ String) | (/* authToken */ Unit), 
@@ -51,7 +51,7 @@ trait TypeofWebSocketConnectionInstantiable
     ]
      with Instantiable7[
       /* connId */ String, 
-      /* repoInfo */ typings.firebaseDatabase.coreRepoInfoMod.RepoInfo, 
+      /* repoInfo */ typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo, 
       (/* applicationId */ String) | (/* applicationId */ Unit), 
       (/* appCheckToken */ String) | (/* appCheckToken */ Unit), 
       (/* authToken */ String) | (/* authToken */ Unit), 

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [properties] Properties to set
   */
 open class Message[T /* <: js.Object */] ()
-  extends typings.googleGax.fallbackMod.protobufMinimal.Message[T] {
+  extends typings.googleGax.buildSrcFallbackMod.protobufMinimal.Message[T] {
   def this(properties: Properties[T]) = this()
 }
 /* static members */

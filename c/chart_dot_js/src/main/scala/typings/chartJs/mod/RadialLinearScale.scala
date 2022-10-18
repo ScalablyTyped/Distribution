@@ -1,9 +1,9 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.anon.AngleX
-import typings.chartJs.basicMod.AnyObject
-import typings.chartJs.geometricMod.ChartArea
+import typings.chartJs.anon.Y
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesGeometricMod.ChartArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RadialLinearScale[O /* <: RadialLinearScaleOptions */] extends Scale[O] {
   
-  def getBasePosition(index: Double): AngleX = js.native
+  def getBasePosition(index: Double): Y = js.native
   
   def getDistanceFromCenterForValue(value: Double): Double = js.native
   
@@ -19,9 +19,9 @@ trait RadialLinearScale[O /* <: RadialLinearScaleOptions */] extends Scale[O] {
   
   def getPointLabelPosition(index: Double): ChartArea = js.native
   
-  def getPointPosition(index: Double, distanceFromCenter: Double): AngleX = js.native
+  def getPointPosition(index: Double, distanceFromCenter: Double): Y = js.native
   
-  def getPointPositionForValue(index: Double, value: Double): AngleX = js.native
+  def getPointPositionForValue(index: Double, value: Double): Y = js.native
   
   def getValueForDistanceFromCenter(distance: Double): Double = js.native
   

@@ -4,10 +4,10 @@ import typings.std.HTMLSourceElement
 import typings.std.HTMLVideoElement
 import typings.tensorflowTfjs.tensorflowTfjsDoubles.`0.001`
 import typings.tensorflowTfjs.tensorflowTfjsDoubles.`0.1`
+import typings.tensorflowTfjsCore.distTestUtilMod.DoneFn
 import typings.tensorflowTfjsCore.distTypesMod.RecursiveArray
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
-import typings.tensorflowTfjsCore.testUtilMod.DoneFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -114,9 +114,6 @@ trait ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors extends StObject
     */
   var accessible: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Content of the `Surface`.
-    */
   var children: js.UndefOr[ReactNode] & ReactNode
   
   /**
@@ -413,10 +410,7 @@ trait ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors extends StObject
     */
   var testID: js.UndefOr[String] = js.undefined
   
-  /**
-    * @optional
-    */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
@@ -461,7 +455,7 @@ object ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors {
         ViewStyle | Falsy | RegisteredStyle[ViewStyle] | (RecursiveArray[ViewStyle | Falsy | RegisteredStyle[ViewStyle]]) | (js.Array[ViewStyle | Falsy | RegisteredStyle[ViewStyle]])
       ]) | Null
     ]),
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   ): ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors]
@@ -739,7 +733,7 @@ object ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     

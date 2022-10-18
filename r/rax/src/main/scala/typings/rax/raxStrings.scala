@@ -15,20 +15,8 @@ object raxStrings {
   inline def A: A = "A".asInstanceOf[A]
   
   @js.native
-  sealed trait Fn1 extends StObject
-  inline def Fn1: Fn1 = "Fn1".asInstanceOf[Fn1]
-  
-  @js.native
   sealed trait I extends StObject
   inline def I: I = "I".asInstanceOf[I]
-  
-  @js.native
-  sealed trait RaxPropTypes extends StObject
-  inline def RaxPropTypes: RaxPropTypes = "RaxPropTypes".asInstanceOf[RaxPropTypes]
-  
-  @js.native
-  sealed trait WeakValidationMap extends StObject
-  inline def WeakValidationMap: WeakValidationMap = "WeakValidationMap".asInstanceOf[WeakValidationMap]
   
   @js.native
   sealed trait _empty extends StObject
@@ -897,10 +885,6 @@ object raxStrings {
   @js.native
   sealed trait `recycle-list` extends StObject
   inline def `recycle-list`: `recycle-list` = "recycle-list".asInstanceOf[`recycle-list`]
-  
-  @js.native
-  sealed trait ref extends StObject
-  inline def ref: ref = "ref".asInstanceOf[ref]
   
   @js.native
   sealed trait refresh extends StObject

@@ -17,96 +17,99 @@ open class AxisScaleGizmo protected ()
     * @param parent
     * @param thickness display gizmo axis thickness
     */
-  def this(dragAxis: typings.babylonjs.mathVectorMod.Vector3) = this()
-  def this(dragAxis: typings.babylonjs.mathVectorMod.Vector3, color: typings.babylonjs.mathColorMod.Color3) = this()
+  def this(dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     color: Unit,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: Unit,
-    gizmoLayer: Unit,
-    parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]
-  ) = this()
-  def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: Unit,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]
-  ) = this()
-  def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: Unit,
-    parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]
-  ) = this()
-  def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]
-  ) = this()
-  def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     color: Unit,
     gizmoLayer: Unit,
-    parent: Unit,
-    thickness: Double
+    parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo]
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     color: Unit,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo]
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
     gizmoLayer: Unit,
-    parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo],
-    thickness: Double
+    parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo]
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo]
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     color: Unit,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    parent: Unit,
-    thickness: Double
-  ) = this()
-  def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: Unit,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo],
-    thickness: Double
-  ) = this()
-  def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
     gizmoLayer: Unit,
     parent: Unit,
     thickness: Double
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: Unit,
     gizmoLayer: Unit,
-    parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo],
+    parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo],
     thickness: Double
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: Unit,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
     parent: Unit,
     thickness: Double
   ) = this()
   def this(
-    dragAxis: typings.babylonjs.mathVectorMod.Vector3,
-    color: typings.babylonjs.mathColorMod.Color3,
-    gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
-    parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo],
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: Unit,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo],
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
+    gizmoLayer: Unit,
+    parent: Unit,
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
+    gizmoLayer: Unit,
+    parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo],
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    parent: Unit,
+    thickness: Double
+  ) = this()
+  def this(
+    dragAxis: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3,
+    gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
+    parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo],
     thickness: Double
   ) = this()
 }

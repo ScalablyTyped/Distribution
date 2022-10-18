@@ -1,8 +1,6 @@
 package typings.fnandoSparkline
 
-import typings.fnandoSparkline.anon.Index
 import typings.fnandoSparkline.anon.Value
-import typings.fnandoSparkline.anon.X
 import typings.std.MouseEvent
 import typings.std.Partial
 import typings.std.SVGSVGElement
@@ -17,14 +15,28 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def default[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def default[TEntry](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNonNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default[TEntry](
+    svg: SVGSVGElement,
+    entries: js.Array[TEntry],
+    options: SparklineNativeOptions[TEntry] | SparklineNonNativeOptions[TEntry]
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def sparkline[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def sparkline[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def sparkline[TEntry](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNonNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sparkline[TEntry /* <: SparklineNativeEntry */](
+    svg: SVGSVGElement,
+    entries: js.Array[TEntry],
+    options: SparklineNativeOptions[TEntry] | SparklineNonNativeOptions[TEntry]
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  type SparklineDatapoint[TEntry] = (TEntry & X) | Index
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TEntry extends number ? {  x :number,   y :number,   index :number,   value :number} : TEntry & {  x :number,   y :number,   index :number}
+    }}}
+    */
+  @js.native
+  trait SparklineDatapoint[TEntry] extends StObject
   
   type SparklineNativeEntry = Double | Value
   

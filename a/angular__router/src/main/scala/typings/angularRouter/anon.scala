@@ -336,7 +336,16 @@ object anon {
           RouterLink
         ] {
     
-    var ɵdir: ɵɵDirectiveDeclaration[RouterLink, String, scala.Nothing, Fragment, js.Object, scala.Nothing, scala.Nothing, `true`] = js.native
+    var ɵdir: ɵɵDirectiveDeclaration[
+        RouterLink, 
+        /* :not(a):not(area)[routerLink] */ String, 
+        scala.Nothing, 
+        Fragment, 
+        js.Object, 
+        scala.Nothing, 
+        scala.Nothing, 
+        `true`
+      ] = js.native
     
     var ɵfac: ɵɵFactoryDeclaration[RouterLink, js.Tuple5[Null, Null, Attribute, Null, Null]] = js.native
   }

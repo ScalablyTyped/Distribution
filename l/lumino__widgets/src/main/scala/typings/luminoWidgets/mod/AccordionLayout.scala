@@ -1,6 +1,6 @@
 package typings.luminoWidgets.mod
 
-import typings.luminoWidgets.accordionlayoutMod.AccordionLayout.IOptions
+import typings.luminoWidgets.typesAccordionlayoutMod.AccordionLayout.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@lumino/widgets", "AccordionLayout")
 @js.native
 open class AccordionLayout protected ()
-  extends typings.luminoWidgets.accordionlayoutMod.AccordionLayout {
+  extends typings.luminoWidgets.typesAccordionlayoutMod.AccordionLayout {
   /**
     * Construct a new accordion layout.
     *

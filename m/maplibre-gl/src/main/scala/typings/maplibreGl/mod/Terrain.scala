@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.glMatrix.mod.mat4
 import typings.mapboxPointGeometry.mod.^
-import typings.maplibreGl.anon.Matrix
+import typings.maplibreGl.anon.Coord
 import typings.maplibreGl.anon.MaxElevation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +19,7 @@ open class Terrain protected () extends StObject {
   
   var _coordsTextureSize: Double = js.native
   
-  var _demMatrixCache: StringDictionary[Matrix] = js.native
+  var _demMatrixCache: StringDictionary[Coord] = js.native
   
   var _emptyDemMatrix: mat4 = js.native
   

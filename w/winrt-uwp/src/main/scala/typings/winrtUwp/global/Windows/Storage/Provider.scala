@@ -43,9 +43,9 @@ object Provider {
   }
   
   /** Manages files so that they can be updated in real-time by an app that participates in the Cached File Updater contract. */
-  @JSGlobal("Windows.Storage.Provider.CachedFileUpdater")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Provider.CachedFileUpdater")
   @js.native
-  abstract class CachedFileUpdater ()
+  open class CachedFileUpdater ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Provider.CachedFileUpdater
   object CachedFileUpdater {
@@ -73,16 +73,16 @@ object Provider {
   }
   
   /** Used to interact with the file picker if your app provides file updates through the Cached File Updater contract. */
-  @JSGlobal("Windows.Storage.Provider.CachedFileUpdaterUI")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Provider.CachedFileUpdaterUI")
   @js.native
-  abstract class CachedFileUpdaterUI ()
+  open class CachedFileUpdaterUI ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Provider.CachedFileUpdaterUI
   
   /** Provides information about a requested file update so that the app can complete the request. */
-  @JSGlobal("Windows.Storage.Provider.FileUpdateRequest")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Provider.FileUpdateRequest")
   @js.native
-  abstract class FileUpdateRequest ()
+  open class FileUpdateRequest ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequest {
     
@@ -118,9 +118,9 @@ object Provider {
   }
   
   /** Use to complete an update asynchronously. */
-  @JSGlobal("Windows.Storage.Provider.FileUpdateRequestDeferral")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Provider.FileUpdateRequestDeferral")
   @js.native
-  abstract class FileUpdateRequestDeferral ()
+  open class FileUpdateRequestDeferral ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequestDeferral {
     
@@ -130,9 +130,9 @@ object Provider {
   }
   
   /** Provides information about a FileUpdateRequested event. */
-  @JSGlobal("Windows.Storage.Provider.FileUpdateRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.Provider.FileUpdateRequestedEventArgs")
   @js.native
-  abstract class FileUpdateRequestedEventArgs ()
+  open class FileUpdateRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequestedEventArgs {
     

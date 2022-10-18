@@ -10,7 +10,7 @@ object collisionsIndexMod {
   @JSImport("babylonjs/Collisions/index", "Collider")
   @js.native
   open class Collider ()
-    extends typings.babylonjs.colliderMod.Collider
+    extends typings.babylonjs.collisionsColliderMod.Collider
   /* static members */
   object Collider {
     
@@ -30,22 +30,22 @@ object collisionsIndexMod {
   @JSImport("babylonjs/Collisions/index", "DefaultCollisionCoordinator")
   @js.native
   open class DefaultCollisionCoordinator ()
-    extends typings.babylonjs.collisionCoordinatorMod.DefaultCollisionCoordinator
+    extends typings.babylonjs.collisionsCollisionCoordinatorMod.DefaultCollisionCoordinator
   
   @JSImport("babylonjs/Collisions/index", "IntersectionInfo")
   @js.native
   open class IntersectionInfo protected ()
-    extends typings.babylonjs.intersectionInfoMod.IntersectionInfo {
+    extends typings.babylonjs.collisionsIntersectionInfoMod.IntersectionInfo {
     def this(bu: Nullable[Double], bv: Nullable[Double], distance: Double) = this()
   }
   
   @JSImport("babylonjs/Collisions/index", "_MeshCollisionData")
   @js.native
   open class MeshCollisionData ()
-    extends typings.babylonjs.meshCollisionDataMod.MeshCollisionData
+    extends typings.babylonjs.collisionsMeshCollisionDataMod.MeshCollisionData
   
   @JSImport("babylonjs/Collisions/index", "PickingInfo")
   @js.native
   open class PickingInfo ()
-    extends typings.babylonjs.pickingInfoMod.PickingInfo
+    extends typings.babylonjs.collisionsPickingInfoMod.PickingInfo
 }

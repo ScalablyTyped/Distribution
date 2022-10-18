@@ -40,11 +40,11 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.cascaderCascaderMod.CascaderActions
-import typings.antdMobile.cascaderViewCascaderViewMod.CascaderOption
-import typings.antdMobile.cascaderViewCascaderViewMod.CascaderValueExtend
-import typings.antdMobile.renderToContainerMod.GetContainer
-import typings.antdMobile.withStopPropagationMod.PropagationEvent
+import typings.antdMobile.esComponentsCascaderCascaderMod.CascaderActions
+import typings.antdMobile.esComponentsCascaderViewCascaderViewMod.CascaderOption
+import typings.antdMobile.esComponentsCascaderViewCascaderViewMod.CascaderValueExtend
+import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
+import typings.antdMobile.esUtilsWithStopPropagationMod.PropagationEvent
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
@@ -59,7 +59,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  options :std.Array<antd-mobile.antd-mobile/es/components/cascader-view.CascaderOption>,   value :std.Array<string> | undefined,   defaultValue :std.Array<string> | undefined,   placeholder :string | undefined,   onSelect :(value : std.Array<string>, extend : antd-mobile.antd-mobile/es/components/cascader-view.CascaderValueExtend): void | undefined,   onConfirm :(value : std.Array<string>, extend : antd-mobile.antd-mobile/es/components/cascader-view.CascaderValueExtend): void | undefined,   onCancel :(): void | undefined,   onClose :(): void | undefined,   visible :boolean | undefined,   title :react.react.ReactNode | undefined,   confirmText :react.react.ReactNode | undefined,   cancelText :react.react.ReactNode | undefined,   children :(items : std.Array<antd-mobile.antd-mobile/es/components/cascader-view.CascaderOption | null>, actions : antd-mobile.antd-mobile/es/components/cascader/cascader.CascaderActions): react.react.ReactNode | undefined,   onTabsChange :(index : number): void | undefined,   activeIcon :react.react.ReactNode | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<never, string>> | undefined,   tabIndex :number | undefined} & std.Pick<antd-mobile.antd-mobile/es/components/popup.PopupProps, 'onClick' | 'destroyOnClose' | 'forceRender' | 'getContainer' | 'afterShow' | 'afterClose' | 'stopPropagation'> & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/cascader/cascader.CascaderActions> */
+/* Inlined {  options :std.Array<antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderOption>,   value :std.Array<string> | undefined,   defaultValue :std.Array<string> | undefined,   placeholder :string | undefined,   onSelect :(value : std.Array<string>, extend : antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderValueExtend): void | undefined,   onConfirm :(value : std.Array<string>, extend : antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderValueExtend): void | undefined,   onCancel :(): void | undefined,   onClose :(): void | undefined,   visible :boolean | undefined,   title :react.react.ReactNode | undefined,   confirmText :react.react.ReactNode | undefined,   cancelText :react.react.ReactNode | undefined,   children :(items : std.Array<antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderOption | null>, actions : antd-mobile.antd-mobile/es/components/cascader/cascader.CascaderActions): react.react.ReactNode | undefined,   onTabsChange :(index : number): void | undefined,   activeIcon :react.react.ReactNode | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<never, string>> | undefined,   tabIndex :number | undefined} & std.Pick<antd-mobile.antd-mobile/es/components/popup.PopupProps, 'onClick' | 'destroyOnClose' | 'forceRender' | 'getContainer' | 'afterShow' | 'afterClose' | 'stopPropagation'> & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/cascader/cascader.CascaderActions> */
 trait optionsArrayCascaderOptioActiveIcon extends StObject {
   
   var activeIcon: js.UndefOr[ReactNode] = js.undefined

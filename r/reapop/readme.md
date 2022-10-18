@@ -1,7 +1,7 @@
 
 # Scala.js typings for reapop
 
-Typings are for version 4.0.5
+Typings are for version 4.2.0
 
 ## Library description:
 A simple & customizable notifications system for React

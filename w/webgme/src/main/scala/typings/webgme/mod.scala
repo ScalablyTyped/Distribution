@@ -1,42 +1,31 @@
 package typings.webgme
 
-import typings.webgme.Core.DataObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Based on examination of
+// Example: https://github.com/typed-typings/env-node/blob/master/0.12/node.d.ts
+// Source: https://raw.githubusercontent.com/phreed/typed-npm-webgme/master/webgme.d.ts
+// Documentation: https://editor.webgme.org/docs/source/index.html
+// https://github.com/webgme/webgme/tree/master/config
 object mod {
   
-  @JSImport("blob/BlobMetadata", JSImport.Default)
+  @JSImport("webgme", JSImport.Namespace)
   @js.native
-  open class default ()
-    extends StObject
-       with BlobMetadata {
+  val ^ : js.Any = js.native
+  
+  @JSImport("webgme", "Standalone")
+  @js.native
+  open class Standalone protected () extends StObject {
+    def this(config: Any) = this()
     
-    /* CompleteClass */
-    var contentType: String = js.native
+    def start(fn: Any): Unit = js.native
     
-    /* CompleteClass */
-    var context: DataObject = js.native
-    
-    /* CompleteClass */
-    var mime: String = js.native
-    
-    /* CompleteClass */
-    var name: String = js.native
-    
-    /* CompleteClass */
-    var size: Double = js.native
+    def stop(): Unit = js.native
   }
   
-  trait BlobMetadata
-    extends StObject
-       with typings.webgme.Blobs.BlobMetadata
-  object BlobMetadata {
-    
-    inline def apply(contentType: String, context: DataObject, mime: String, name: String, size: Double): BlobMetadata = {
-      val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-      __obj.asInstanceOf[BlobMetadata]
-    }
-  }
+  inline def addToRequireJsPaths(config: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addToRequireJsPaths")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def standaloneServer(config: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("standaloneServer")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

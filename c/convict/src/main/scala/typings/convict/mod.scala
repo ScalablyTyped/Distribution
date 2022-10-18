@@ -2,7 +2,6 @@ package typings.convict
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
@@ -22,17 +21,17 @@ object mod extends Shortcut {
       * @returns the default value of the name property. name can use dot
       * notation to reference nested values
       */
-    def default(): (PathValue[T, Null]) | T = js.native
-    def default[K /* <: /* keyof T */ String */](name: K): (PathValue[T, K]) | T = js.native
+    def default(): /* import warning: importer.ImportType#apply Failed type conversion: null extends null | undefined ? T : null extends convict.convict.Path<T> ? convict.convict.PathValue<T, null> : never */ js.Any = js.native
+    def default[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T extends string ? T[keyof T] extends std.Record<string, any> ? T[keyof T] extends std.ArrayLike<any> ? keyof T | / * template literal string: ${K}.${PathImpl<T[K],Exclude<keyofT[K],keyofany[]>>} * / string : keyof T | / * template literal string: ${K}.${PathImpl<T[K],keyofT[K]>} * / string : keyof T : never */ js.Any */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: K extends null | undefined ? T : K extends convict.convict.Path<T> ? convict.convict.PathValue<T, K> : never */ js.Any = js.native
     @JSName("default")
-    def default_K[K /* <: /* keyof T */ String */](): (PathValue[T, K]) | T = js.native
+    def default_K[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T extends string ? T[keyof T] extends std.Record<string, any> ? T[keyof T] extends std.ArrayLike<any> ? keyof T | / * template literal string: ${K}.${PathImpl<T[K],Exclude<keyofT[K],keyofany[]>>} * / string : keyof T | / * template literal string: ${K}.${PathImpl<T[K],keyofT[K]>} * / string : keyof T : never */ js.Any */](): /* import warning: importer.ImportType#apply Failed type conversion: K extends null | undefined ? T : K extends convict.convict.Path<T> ? convict.convict.PathValue<T, K> : never */ js.Any = js.native
     
     /**
       * @returns the current value of the name property. name can use dot
       * notation to reference nested values
       */
-    def get(): (PathValue[T, Null]) | T = js.native
-    def get[K /* <: /* keyof T */ String */](name: K): (PathValue[T, K]) | T = js.native
+    def get(): /* import warning: importer.ImportType#apply Failed type conversion: null extends null | undefined ? T : null extends convict.convict.Path<T> ? convict.convict.PathValue<T, null> : never */ js.Any = js.native
+    def get[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T extends string ? T[keyof T] extends std.Record<string, any> ? T[keyof T] extends std.ArrayLike<any> ? keyof T | / * template literal string: ${K}.${PathImpl<T[K],Exclude<keyofT[K],keyofany[]>>} * / string : keyof T | / * template literal string: ${K}.${PathImpl<T[K],keyofT[K]>} * / string : keyof T : never */ js.Any */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: K extends null | undefined ? T : K extends convict.convict.Path<T> ? convict.convict.PathValue<T, K> : never */ js.Any = js.native
     
     /**
       * Gets the array of process arguments, using the override passed to the
@@ -65,12 +64,12 @@ object mod extends Shortcut {
     def getSchemaString(): String = js.native
     
     @JSName("get")
-    def get_K[K /* <: /* keyof T */ String */](): (PathValue[T, K]) | T = js.native
+    def get_K[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T extends string ? T[keyof T] extends std.Record<string, any> ? T[keyof T] extends std.ArrayLike<any> ? keyof T | / * template literal string: ${K}.${PathImpl<T[K],Exclude<keyofT[K],keyofany[]>>} * / string : keyof T | / * template literal string: ${K}.${PathImpl<T[K],keyofT[K]>} * / string : keyof T : never */ js.Any */](): /* import warning: importer.ImportType#apply Failed type conversion: K extends null | undefined ? T : K extends convict.convict.Path<T> ? convict.convict.PathValue<T, K> : never */ js.Any = js.native
     
     /**
       * @returns true if the property name is defined, or false otherwise
       */
-    def has[K /* <: /* keyof T */ String */](name: K): Boolean = js.native
+    def has[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T extends string ? T[keyof T] extends std.Record<string, any> ? T[keyof T] extends std.ArrayLike<any> ? keyof T | / * template literal string: ${K}.${PathImpl<T[K],Exclude<keyofT[K],keyofany[]>>} * / string : keyof T | / * template literal string: ${K}.${PathImpl<T[K],keyofT[K]>} * / string : keyof T : never */ js.Any */](name: K): Boolean = js.native
     
     /**
       * Loads and merges a JavaScript object into config
@@ -88,8 +87,14 @@ object mod extends Shortcut {
       * nested values, e.g. "database.port". If objects in the chain don't yet
       * exist, they will be initialized to empty objects
       */
-    def set(name: String, value: PathValue[T, String]): Config[T] = js.native
-    def set[K /* <: /* keyof T */ String */](name: K, value: PathValue[T, K]): Config[T] = js.native
+    def set(
+      name: String,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: string extends convict.convict.Path<T> ? convict.convict.PathValue<T, string> : any */ js.Any
+    ): Config[T] = js.native
+    def set[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T extends string ? T[keyof T] extends std.Record<string, any> ? T[keyof T] extends std.ArrayLike<any> ? keyof T | / * template literal string: ${K}.${PathImpl<T[K],Exclude<keyofT[K],keyofany[]>>} * / string : keyof T | / * template literal string: ${K}.${PathImpl<T[K],keyofT[K]>} * / string : keyof T : never */ js.Any */](
+      name: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: K extends convict.convict.Path<T> ? convict.convict.PathValue<T, K> : any */ js.Any
+    ): Config[T] = js.native
     
     /**
       * Validates config against the schema used to initialize it
@@ -131,16 +136,12 @@ object mod extends Shortcut {
   
   trait InternalSchema[T] extends StObject {
     
-    var properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]: T[K] extends object? convict.convict.InternalSchema<T[K]> : {  default :T[K]}}
-      */ typings.convict.convictStrings.InternalSchema & TopLevel[Any]
+    var properties: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends object? convict.convict.InternalSchema<T[K]> : {  default :T[K]}} */ js.Any
   }
   object InternalSchema {
     
     inline def apply[T](
-      properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]: T[K] extends object? convict.convict.InternalSchema<T[K]> : {  default :T[K]}}
-      */ typings.convict.convictStrings.InternalSchema & TopLevel[Any]
+      properties: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends object? convict.convict.InternalSchema<T[K]> : {  default :T[K]}} */ js.Any
     ): InternalSchema[T] = {
       val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[InternalSchema[T]]
@@ -149,9 +150,7 @@ object mod extends Shortcut {
     extension [Self <: InternalSchema[?], T](x: Self & InternalSchema[T]) {
       
       inline def setProperties(
-        value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ K in keyof T ]: T[K] extends object? convict.convict.InternalSchema<T[K]> : {  default :T[K]}}
-        */ typings.convict.convictStrings.InternalSchema & TopLevel[Any]
+        value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends object? convict.convict.InternalSchema<T[K]> : {  default :T[K]}} */ js.Any
       ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
@@ -184,7 +183,7 @@ object mod extends Shortcut {
   }
   
   // Taken from https://github.com/Microsoft/TypeScript/issues/12215#issuecomment-307871458
-  type Overwrite[T, U] = typings.convict.convictStrings.Overwrite & TopLevel[T] & U
+  type Overwrite[T, U] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in std.Exclude<keyof T, keyof U> ]: T[P]} */ js.Any) & U
   
   trait Parser extends StObject {
     
@@ -213,9 +212,25 @@ object mod extends Shortcut {
   type Path[T] = (PathImpl[T, /* keyof T */ String]) | (/* keyof T */ String)
   
   // Taken from https://twitter.com/diegohaz/status/1309489079378219009
-  type PathImpl[T, K /* <: /* keyof T */ String */] = K | (/* template literal string: ${K}.${PathImpl<T[K],keyofT[K]>} */ String)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    K extends string ? T[K] extends std.Record<string, any> ? T[K] extends std.ArrayLike<any> ? K | / * template literal string: ${K}.${PathImpl<T[K],Exclude<keyofT[K],keyofany[]>>} * / string : K | / * template literal string: ${K}.${PathImpl<T[K],keyofT[K]>} * / string : K : never
+    }}}
+    */
+  @js.native
+  trait PathImpl[T, K /* <: /* keyof T */ String */] extends StObject
   
-  type PathValue[T, P /* <: Path[T] */] = (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any) | Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    P extends / * template literal string: ${inferK}.${inferRest} * / string ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify K * / any extends keyof T ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Rest * / any extends convict.convict.Path<T[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify K * / any]> ? convict.convict.PathValue<T[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify K * / any], / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Rest * / any> : never : never : P extends keyof T ? T[P] : never
+    }}}
+    */
+  @js.native
+  trait PathValue[T, P /* <: Path[T] */] extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.convict.convictStrings.Asterisk
@@ -237,9 +252,15 @@ object mod extends Shortcut {
   */
   type PredefinedFormat = _PredefinedFormat | String | js.Object | Number | js.RegExp | Boolean
   
-  type Schema[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: convict.convict.Schema<T[P]> | convict.convict.SchemaObj<T[P]>}
-    */ typings.convict.convictStrings.Schema & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: convict.convict.Schema<T[P]> | convict.convict.SchemaObj<T[P]>}
+    }}}
+    */
+  @js.native
+  trait Schema[T] extends StObject
   
   trait SchemaObj[T]
     extends StObject

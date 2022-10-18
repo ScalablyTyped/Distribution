@@ -1,6 +1,6 @@
 package typings.tuyaPanelKit.anon
 
-import typings.tuyaPanelKit.stackRouterMod.StackActionType
+import typings.tuyaPanelKit.`@reactNavigationRoutersStackRouterMod`.StackActionType
 import typings.tuyaPanelKit.tuyaPanelKitStrings.POP_TO_TOP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

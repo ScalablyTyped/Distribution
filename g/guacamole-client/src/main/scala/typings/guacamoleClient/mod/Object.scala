@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "Object")
 @js.native
 open class Object protected ()
-  extends typings.guacamoleClient.objectMod.Object {
+  extends typings.guacamoleClient.libObjectMod.Object {
   /**
     * @param client The client owning this object.
     * @param index The index of this object.
     */
-  def this(client: typings.guacamoleClient.clientMod.Client, index: Double) = this()
+  def this(client: typings.guacamoleClient.libClientMod.Client, index: Double) = this()
 }
 /* static members */
 object Object {

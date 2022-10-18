@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.DidOpenTextDocumentParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.DidOpenTextDocumentParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashdidOpen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object DidOpenTextDocumentNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidOpenTextDocumentNotification.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "DidOpenTextDocumentNotification.method")
   @js.native
@@ -18,8 +18,8 @@ object DidOpenTextDocumentNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidOpenTextDocumentNotification.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[
     DidOpenTextDocumentParams, 
-    typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
+    typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentRegistrationOptions
   ] = js.native
 }

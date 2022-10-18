@@ -7,23 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Payload extends StObject {
-    
-    var payload: Any
-  }
-  object Payload {
-    
-    inline def apply(payload: Any): Payload = {
-      val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Payload]
-    }
-    
-    extension [Self <: Payload](x: Self) {
-      
-      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Type[T /* <: String & (/* import warning: importer.ImportType#apply Failed type conversion: AppAction['type'] */ js.Any) */, AppAction /* <: Action[Any] */] extends StObject {
     
     var `type`: T

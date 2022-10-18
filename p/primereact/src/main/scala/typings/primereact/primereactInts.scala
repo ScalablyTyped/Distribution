@@ -1,9 +1,9 @@
 package typings.primereact
 
-import typings.primereact.columnMod._ColumnSortOrderType
-import typings.primereact.datatableMod._DataTableSortOrderType
-import typings.primereact.dataviewMod._DataViewSortOrderType
-import typings.primereact.treetableMod._TreeTableSortOrderType
+import typings.primereact.columnColumnMod._ColumnSortOrderType
+import typings.primereact.datatableDatatableMod._DataTableSortOrderType
+import typings.primereact.dataviewDataviewMod._DataViewSortOrderType
+import typings.primereact.treetableTreetableMod._TreeTableSortOrderType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

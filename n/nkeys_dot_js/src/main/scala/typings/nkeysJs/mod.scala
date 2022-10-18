@@ -1,8 +1,8 @@
 package typings.nkeysJs
 
-import typings.nkeysJs.nkeysMod.KeyPair
-import typings.nkeysJs.nkeysMod.NKeysErrorCode
-import typings.nkeysJs.nkeysMod.Prefix
+import typings.nkeysJs.libNkeysMod.KeyPair
+import typings.nkeysJs.libNkeysMod.NKeysErrorCode
+import typings.nkeysJs.libNkeysMod.Prefix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object mod {
   @JSImport("nkeys.js", "NKeysError")
   @js.native
   open class NKeysError protected ()
-    extends typings.nkeysJs.modMod.NKeysError {
+    extends typings.nkeysJs.libModMod.NKeysError {
     /**
       * @param {NKeysErrorCode} code
       * @param {Error} [chainedError]
@@ -33,33 +33,33 @@ object mod {
   object NKeysErrorCode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.nkeysJs.nkeysMod.NKeysErrorCode & String] = js.native
+    def apply(value: String): js.UndefOr[typings.nkeysJs.libNkeysMod.NKeysErrorCode & String] = js.native
     
-    /* "nkeys: api error" */ val ApiError: typings.nkeysJs.nkeysMod.NKeysErrorCode.ApiError & String = js.native
+    /* "nkeys: api error" */ val ApiError: typings.nkeysJs.libNkeysMod.NKeysErrorCode.ApiError & String = js.native
     
-    /* "nkeys: cannot sign, no private key available" */ val CannotSign: typings.nkeysJs.nkeysMod.NKeysErrorCode.CannotSign & String = js.native
+    /* "nkeys: cannot sign, no private key available" */ val CannotSign: typings.nkeysJs.libNkeysMod.NKeysErrorCode.CannotSign & String = js.native
     
-    /* "nkeys: pair is cleared" */ val ClearedPair: typings.nkeysJs.nkeysMod.NKeysErrorCode.ClearedPair & String = js.native
+    /* "nkeys: pair is cleared" */ val ClearedPair: typings.nkeysJs.libNkeysMod.NKeysErrorCode.ClearedPair & String = js.native
     
-    /* "nkeys: invalid checksum" */ val InvalidChecksum: typings.nkeysJs.nkeysMod.NKeysErrorCode.InvalidChecksum & String = js.native
+    /* "nkeys: invalid checksum" */ val InvalidChecksum: typings.nkeysJs.libNkeysMod.NKeysErrorCode.InvalidChecksum & String = js.native
     
-    /* "nkeys: invalid encoded key" */ val InvalidEncoding: typings.nkeysJs.nkeysMod.NKeysErrorCode.InvalidEncoding & String = js.native
+    /* "nkeys: invalid encoded key" */ val InvalidEncoding: typings.nkeysJs.libNkeysMod.NKeysErrorCode.InvalidEncoding & String = js.native
     
-    /* "nkeys: invalid key" */ val InvalidKey: typings.nkeysJs.nkeysMod.NKeysErrorCode.InvalidKey & String = js.native
+    /* "nkeys: invalid key" */ val InvalidKey: typings.nkeysJs.libNkeysMod.NKeysErrorCode.InvalidKey & String = js.native
     
-    /* "nkeys: invalid prefix byte" */ val InvalidPrefixByte: typings.nkeysJs.nkeysMod.NKeysErrorCode.InvalidPrefixByte & String = js.native
+    /* "nkeys: invalid prefix byte" */ val InvalidPrefixByte: typings.nkeysJs.libNkeysMod.NKeysErrorCode.InvalidPrefixByte & String = js.native
     
-    /* "nkeys: invalid public key" */ val InvalidPublicKey: typings.nkeysJs.nkeysMod.NKeysErrorCode.InvalidPublicKey & String = js.native
+    /* "nkeys: invalid public key" */ val InvalidPublicKey: typings.nkeysJs.libNkeysMod.NKeysErrorCode.InvalidPublicKey & String = js.native
     
-    /* "nkeys: invalid seed" */ val InvalidSeed: typings.nkeysJs.nkeysMod.NKeysErrorCode.InvalidSeed & String = js.native
+    /* "nkeys: invalid seed" */ val InvalidSeed: typings.nkeysJs.libNkeysMod.NKeysErrorCode.InvalidSeed & String = js.native
     
-    /* "nkeys: invalid seed length" */ val InvalidSeedLen: typings.nkeysJs.nkeysMod.NKeysErrorCode.InvalidSeedLen & String = js.native
+    /* "nkeys: invalid seed length" */ val InvalidSeedLen: typings.nkeysJs.libNkeysMod.NKeysErrorCode.InvalidSeedLen & String = js.native
     
-    /* "nkeys: signature verification failed" */ val InvalidSignature: typings.nkeysJs.nkeysMod.NKeysErrorCode.InvalidSignature & String = js.native
+    /* "nkeys: signature verification failed" */ val InvalidSignature: typings.nkeysJs.libNkeysMod.NKeysErrorCode.InvalidSignature & String = js.native
     
-    /* "nkeys: no seed or private key available" */ val PublicKeyOnly: typings.nkeysJs.nkeysMod.NKeysErrorCode.PublicKeyOnly & String = js.native
+    /* "nkeys: no seed or private key available" */ val PublicKeyOnly: typings.nkeysJs.libNkeysMod.NKeysErrorCode.PublicKeyOnly & String = js.native
     
-    /* "nkeys: serialization error" */ val SerializationError: typings.nkeysJs.nkeysMod.NKeysErrorCode.SerializationError & String = js.native
+    /* "nkeys: serialization error" */ val SerializationError: typings.nkeysJs.libNkeysMod.NKeysErrorCode.SerializationError & String = js.native
   }
   
   @JSImport("nkeys.js", "Prefix")
@@ -67,21 +67,21 @@ object mod {
   object Prefix extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.nkeysJs.nkeysMod.Prefix & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.nkeysJs.libNkeysMod.Prefix & Double] = js.native
     
-    /* 0 */ val Account: typings.nkeysJs.nkeysMod.Prefix.Account & Double = js.native
+    /* 0 */ val Account: typings.nkeysJs.libNkeysMod.Prefix.Account & Double = js.native
     
-    /* 16 */ val Cluster: typings.nkeysJs.nkeysMod.Prefix.Cluster & Double = js.native
+    /* 16 */ val Cluster: typings.nkeysJs.libNkeysMod.Prefix.Cluster & Double = js.native
     
-    /* 112 */ val Operator: typings.nkeysJs.nkeysMod.Prefix.Operator & Double = js.native
+    /* 112 */ val Operator: typings.nkeysJs.libNkeysMod.Prefix.Operator & Double = js.native
     
-    /* 120 */ val Private: typings.nkeysJs.nkeysMod.Prefix.Private & Double = js.native
+    /* 120 */ val Private: typings.nkeysJs.libNkeysMod.Prefix.Private & Double = js.native
     
-    /* 144 */ val Seed: typings.nkeysJs.nkeysMod.Prefix.Seed & Double = js.native
+    /* 144 */ val Seed: typings.nkeysJs.libNkeysMod.Prefix.Seed & Double = js.native
     
-    /* 104 */ val Server: typings.nkeysJs.nkeysMod.Prefix.Server & Double = js.native
+    /* 104 */ val Server: typings.nkeysJs.libNkeysMod.Prefix.Server & Double = js.native
     
-    /* 160 */ val User: typings.nkeysJs.nkeysMod.Prefix.User & Double = js.native
+    /* 160 */ val User: typings.nkeysJs.libNkeysMod.Prefix.User & Double = js.native
   }
   
   inline def createAccount(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")().asInstanceOf[KeyPair]

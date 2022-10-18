@@ -3,7 +3,7 @@ package typings.reactNativeDraggableFlatlist.anon
 import typings.react.mod.Dispatch
 import typings.react.mod.RefObject
 import typings.react.mod.SetStateAction
-import typings.reactNativeGestureHandler.gestureComponentsMod.ScrollView
+import typings.reactNativeGestureHandler.libTypescriptComponentsGestureComponentsMod.ScrollView
 import typings.reactNativeReanimated.mod.Animated.Value
 import typings.reactNativeReanimated.mod.Animated.View
 import org.scalablytyped.runtime.StObject

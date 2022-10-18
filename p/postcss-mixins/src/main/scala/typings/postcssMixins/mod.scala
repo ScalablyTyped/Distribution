@@ -1,9 +1,9 @@
 package typings.postcssMixins
 
 import org.scalablytyped.runtime.Shortcut
+import typings.postcss.libNodeMod.ChildNode
 import typings.postcss.mod.Container
 import typings.postcss.mod.PluginCreator
-import typings.postcss.nodeMod.ChildNode
 import typings.std.Exclude
 import typings.std.Record
 import org.scalablytyped.runtime.StObject

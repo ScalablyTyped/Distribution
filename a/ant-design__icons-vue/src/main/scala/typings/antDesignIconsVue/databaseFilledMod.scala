@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsDatabaseFilledMod.DatabaseFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object databaseFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/DatabaseFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/DatabaseFilled", JSImport.Default)
   @js.native
   val default: DatabaseFilledIconType = js.native
-  
-  @js.native
-  trait DatabaseFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_DatabaseFilledIconType: String = js.native
-  }
   
   type _To = DatabaseFilledIconType
   

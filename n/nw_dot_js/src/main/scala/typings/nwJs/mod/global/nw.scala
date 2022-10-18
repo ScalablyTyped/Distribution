@@ -299,7 +299,7 @@ object nw {
     /**
       * Get or set the `label` of a `MenuItem`
       */
-    var lable: String = js.native
+    var label: String = js.native
     
     /**
       * A string to specify the modifier keys for the shortcut of the menu item.

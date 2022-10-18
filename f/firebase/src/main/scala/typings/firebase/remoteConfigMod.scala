@@ -9,9 +9,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object remoteConfigMod {
   
-  @JSImport("firebase/analytics/dist/remote-config", JSImport.Namespace)
+  @JSImport("firebase/remote-config", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

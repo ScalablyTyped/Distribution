@@ -1,6 +1,6 @@
 package typings.ethSigUtil
 
-import typings.ethSigUtil.mod.Version
+import typings.ethSigUtil.distMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
